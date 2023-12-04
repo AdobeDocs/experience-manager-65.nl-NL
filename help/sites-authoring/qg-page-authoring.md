@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1540'
 ht-degree: 4%
 
 ---
@@ -102,17 +102,17 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
 1. Kolomweergave:
 
-   * Tik/klik op de miniatuur voor de vereiste bron - de miniatuur wordt bedekt met een verdeelstreepje om aan te geven dat deze is geselecteerd.
+   * Klik op de miniatuur voor de vereiste bron. De miniatuur wordt met een vinkje bedekt om aan te geven dat deze is geselecteerd.
 
 1. Lijstweergave:
 
-   * Tik/klik op de miniatuur voor de vereiste bron - de miniatuur wordt bedekt met een verdeelstreepje om aan te geven dat deze is geselecteerd.
+   * Klik op de miniatuur voor de vereiste bron. De miniatuur wordt met een vinkje bedekt om aan te geven dat deze is geselecteerd.
 
 1. Kaartweergave:
 
    * Selectiemodus openen met [de vereiste bron selecteren](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) met:
 
-      * Mobiel apparaat: tikken en vasthouden
+      * Mobiel apparaat: selecteren en vasthouden
       * Desktop: de [snelle actie](/help/sites-authoring/basic-handling.md#quick-actions) - tik pictogram:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -158,24 +158,24 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
    * [De inhoud van een bestaande component bewerken](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) op de pagina:
 
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Bewerken** (potlood) pictogram om het dialoogvenster te openen.
-      * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
+      * Open de componentwerkbalk met een van de twee klikken. Gebruik de **Bewerken** (potlood) pictogram om het dialoogvenster te openen.
+      * Open de op plaats-editor voor de component met select-and-hold of een dubbelklik. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
       * Als u alle beschikbare acties wilt weergeven, opent u de modus Volledig scherm met:
 
      ![Modus Volledig scherm](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [De eigenschappen van een bestaande component configureren](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Configureren** (moersleutel) om het dialoogvenster te openen.
+      * Open de componentwerkbalk met een van de twee klikken. Gebruik de **Configureren** (moersleutel) om het dialoogvenster te openen.
 
    * [Een component verplaatsen](/help/sites-authoring/editing-content.md#moving-a-component) ofwel:
 
       * Sleep de vereiste component naar de nieuwe locatie.
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen, indien nodig.
+      * Open de componentwerkbalk met een van de twee klikken. Gebruik de **Knippen** dan **Plakken** pictogrammen, indien nodig.
 
    * [Kopiëren (en Plakken)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component:
 
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Kopiëren** dan **Plakken** pictogrammen naar wens.
+      * Open de componentwerkbalk met een van de twee klikken. Gebruik de **Kopiëren** dan **Plakken** pictogrammen naar wens.
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
    * [Verwijderen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component:
 
-      * Open de werkbalk van de component met Tik of klik en gebruik vervolgens de knop **Verwijderen** pictogram.
+      * Open de werkbalk van de component met een van de klikken en gebruik vervolgens de knop **Verwijderen** pictogram.
 
    * [Annotaties toevoegen](/help/sites-authoring/annotations.md#annotations) op de pagina:
 
@@ -305,7 +305,7 @@ Het slotpictogram ziet er bijvoorbeeld als volgt uit:
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Tik/klik op het gewenste type verwijzing om meer details weer te geven en (indien van toepassing) verdere acties te ondernemen.
+1. Klik op het gewenste type verwijzing om meer details weer te geven en (indien van toepassing) verdere acties te ondernemen.
 
 ### Een versie van uw pagina maken {#creating-a-version-of-your-page}
 
@@ -315,7 +315,7 @@ Een [versie](/help/sites-authoring/working-with-page-versions.md) van uw pagina:
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Tik/klik op de pijl-omhoog rechtsonder in de kolom Tijdlijn om extra knoppen weer te geven, waaronder **Opslaan als versie**.
+1. Klik op de pijl-omhoog rechtsonder in de kolom Tijdlijn om extra knoppen weer te geven, waaronder **Opslaan als versie**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -331,7 +331,7 @@ Hetzelfde basismechanisme wordt gebruikt bij het herstellen en/of vergelijken va
 
    Als er al een versie van de pagina is opgeslagen, wordt deze weergegeven in de tijdlijn.
 
-1. Tik/klik op de versie die u wilt herstellen. Hier worden extra actieknoppen weergegeven:
+1. Klik op de versie die u wilt herstellen. Hier worden extra knoppen voor handelingen weergegeven:
 
    * **Deze versie herstellen**
 

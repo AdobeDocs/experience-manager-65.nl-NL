@@ -7,9 +7,9 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: f2d8fd17787e756e9ee5a8fc6eaea726de6b66ba
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1755'
 ht-degree: 0%
 
 ---
@@ -51,17 +51,17 @@ AEM Forms-gebruikers kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA
 
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**. Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
    1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
-      1. In Browser van de Configuratie, selecteer **[!UICONTROL global]** map en tik **[!UICONTROL Properties]**.
+      1. In Browser van de Configuratie, selecteer **[!UICONTROL global]** map en selecteer **[!UICONTROL Properties]**.
       1. Schakel in het dialoogvenster Configuratieeigenschappen de optie **[!UICONTROL Cloud Configurations]**.
-      1. Tikken **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+      1. Selecteren **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
-   1. Tik in de configuratiebrowser op **[!UICONTROL Create]**.
+   1. In Browser van de Configuratie, selecteer **[!UICONTROL Create]**.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map en schakel **[!UICONTROL Cloud Configurations]**.
-   1. Tikken **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
+   1. Selecteren **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
 1. Configureer de cloudservice voor reCAPTCHA Enterprise.
 
    1. Ga naar de Experience Manager authentieke instantie ![gereedschappen-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
-   1. Tik op **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die u in de vorige stap hebt gemaakt en tik op **[!UICONTROL Create]**.
+   1. Selecteer **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die in de vorige stap is gemaakt en selecteer **[!UICONTROL Create]**.
    1. Selecteer versie als reCAPTCHA Enterprise en geef Naam; Project ID, Site Key en API-sleutel (verkregen in stap 2 en 3) op voor de reCAPTCHA Enterprise-service.
    1. Selecteer sleuteltype, zou het zeer belangrijke type moeten zijn zoals de plaatssleutel die in het Google wolkenproject wordt gevormd, bijvoorbeeld **Sitetoets selectievakje** of **Score-gebaseerde sitesleutel**.
    1. Geef een drempelscore op in het bereik 0-1 ([Klik voor meer informatie over de score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
@@ -70,9 +70,9 @@ AEM Forms-gebruikers kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA
       >
       > * Formulierauteurs kunnen een score opgeven in het bereik dat geschikt is voor ononderbroken formulierverzending.
 
-   1. Tikken **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
+   1. Selecteren **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
 
-   1. Geef in het dialoogvenster Component bewerken de naam, de project-id, de sitetoets en de API-sleutel op (verkregen in stap 2 en 3), selecteer het toetstype en voer de drempelscore in. Tikken **[!UICONTROL Save Settings]** en tikt u vervolgens op **[!UICONTROL OK]** de configuratie voltooien.
+   1. Geef in het dialoogvenster Component bewerken de naam, de project-id, de sitetoets en de API-sleutel op (verkregen in stap 2 en 3), selecteer het toetstype en voer de drempelscore in. Selecteren **[!UICONTROL Save Settings]** en selecteer vervolgens **[!UICONTROL OK]** de configuratie voltooien.
 
 Zodra de reCAPTCHA Enterprise-service is ingeschakeld, is deze beschikbaar voor gebruik in adaptieve formulieren. Zie [gebruik van CAPTCHA in adaptieve vormen](#using-reCAPTCHA).
 
@@ -86,21 +86,21 @@ Zodra de reCAPTCHA Enterprise-service is ingeschakeld, is deze beschikbaar voor 
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**. Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
    1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
-      1. In Browser van de Configuratie, selecteer **[!UICONTROL global]** map en tik **[!UICONTROL Properties]**.
+      1. In Browser van de Configuratie, selecteer **[!UICONTROL global]** map en selecteer **[!UICONTROL Properties]**.
 
       1. Schakel in het dialoogvenster Configuratieeigenschappen de optie **[!UICONTROL Cloud Configurations]**.
-      1. Tikken **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+      1. Selecteren **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
-   1. Tik in de configuratiebrowser op **[!UICONTROL Create]**.
+   1. In Browser van de Configuratie, selecteer **[!UICONTROL Create]**.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map en schakel **[!UICONTROL Cloud Configurations]**.
-   1. Tikken **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
+   1. Selecteren **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
 
 1. Configureer de cloudservice voor reCAPTCHA v2.
 
    1. Ga naar de AEM ![gereedschappen-1](assets/tools-1.png) > **Cloud Servicen**.
-   1. Tik op **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die u in de vorige stap hebt gemaakt en tik op **[!UICONTROL Create]**.
-   1. Selecteer versie als reCAPTCHA v2, geef Naam, Sitetoets en Geheime sleutel voor de service reCAPTCHA op (verkregen in stap 1) en tik **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
-   1. Geef in het dialoogvenster Component bewerken de site en de geheime sleutels op die in stap 1 zijn verkregen. Tikken **[!UICONTROL Save Settings]** en tikt u vervolgens op **OK** de configuratie voltooien.
+   1. Selecteer **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die in de vorige stap is gemaakt en selecteer **[!UICONTROL Create]**.
+   1. Selecteer versie als reCAPTCHA v2, geef Naam, Sitetoets en Geheime sleutel voor de service reCAPTCHA op (verkregen in stap 1) en selecteer **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
+   1. Geef in het dialoogvenster Component bewerken de site en de geheime sleutels op die in stap 1 zijn verkregen. Selecteren **[!UICONTROL Save Settings]** en selecteer vervolgens **OK** de configuratie voltooien.
 
    Zodra de reCAPTCHA-service is geconfigureerd, is deze beschikbaar voor gebruik in adaptieve formulieren. Zie voor meer informatie [gebruik van CAPTCHA in adaptieve vormen](#using-captcha).
 
@@ -127,7 +127,7 @@ ReCAPTCHA in adaptieve vorm gebruiken:
    >
    >Captcha is tijdgevoelig en verloopt over ongeveer een minuut. Daarom wordt aangeraden de component Captcha vlak voor de knop Verzenden in het aangepaste formulier te plaatsen.
 
-1. Selecteer de Captcha-component die u hebt toegevoegd en tik op ![cmppr](assets/cmppr.png) om de eigenschappen te bewerken.
+1. Selecteer de component Captcha die u hebt toegevoegd en selecteer ![cmppr](assets/cmppr.png) om de eigenschappen te bewerken.
 1. Geef een titel op voor de CAPTCHA-widget. De standaardwaarde is **Captcha**. Selecteren **Titel verbergen** als u de titel niet wilt weergeven.
 1. Van de **Captcha-service** vervolgkeuzelijst, selecteert u **reCAPTCHA** om de dienst reCAPTCHA toe te laten als u het zoals die in vormde [reCAPTCHA-service van Google](#google-reCAPTCHA).
 1. Selecteer een configuratie in het keuzemenu Instellingen.
@@ -226,11 +226,11 @@ ReCAPTCHA in adaptieve vorm gebruiken:
 
 ### CAPTCHA-component tonen of verbergen op basis van regels {#show-hide-captcha}
 
-U kunt de component CAPTCHA weergeven of verbergen op basis van de regels die u toepast op een component in een adaptief formulier. Tik op de component en selecteer ![regels bewerken](assets/edit-rules-icon.svg)en tikken **[!UICONTROL Create]** om een regel te maken. Zie voor meer informatie over het maken van regels [Regeleditor](rule-editor.md).
+U kunt de component CAPTCHA weergeven of verbergen op basis van de regels die u toepast op een component in een adaptief formulier. Selecteer de component ![regels bewerken](assets/edit-rules-icon.svg)en selecteert u **[!UICONTROL Create]** om een regel te maken. Zie voor meer informatie over het maken van regels [Regeleditor](rule-editor.md).
 
 De component CAPTCHA moet bijvoorbeeld alleen in een adaptief formulier worden weergegeven als het veld Waarde valuta in het formulier een waarde heeft van meer dan 25000.
 
-Tik op de knop **[!UICONTROL Currency Value]** in het formulier en stel de volgende regels in:
+Selecteer de **[!UICONTROL Currency Value]** in het formulier en stel de volgende regels in:
 
 ![Regels tonen of verbergen](assets/rules-show-hide-captcha.png)
 
@@ -246,17 +246,17 @@ U kunt CAPTCHA valideren in een adaptief formulier wanneer u het formulier verze
 
 Een CAPTCHA automatisch valideren wanneer u een adaptief formulier verzendt:
 
-1. Tik op de component CAPTCHA en selecteer ![cmppr](assets/configure-icon.svg) om de componenteigenschappen weer te geven.
+1. Selecteer de component CAPTCHA en selecteer ![cmppr](assets/configure-icon.svg) om de componenteigenschappen weer te geven.
 1. In de **[!UICONTROL Validate CAPTCHA]** sectie, selecteert u **[!UICONTROL Validate CAPTCHA at form submission]**.
-1. Tikken ![Gereed](assets/save_icon.svg) om de componenteigenschappen op te slaan.
+1. Selecteren ![Gereed](assets/save_icon.svg) om de componenteigenschappen op te slaan.
 
 #### CAPTCHA bij gebruikershandelingen en -voorwaarden valideren {#validate-captcha-user-action}
 
 Een CAPTCHA valideren op basis van voorwaarden en gebruikersacties:
 
-1. Tik op de component CAPTCHA en selecteer ![cmppr](assets/configure-icon.svg) om de componenteigenschappen weer te geven.
+1. Selecteer de component CAPTCHA en selecteer ![cmppr](assets/configure-icon.svg) om de componenteigenschappen weer te geven.
 1. In de **[!UICONTROL Validate CAPTCHA]** sectie, selecteert u **[!UICONTROL Validate CAPTCHA on a user action]**.
-1. Tikken ![Gereed](assets/save_icon.svg) om de componenteigenschappen op te slaan.
+1. Selecteren ![Gereed](assets/save_icon.svg) om de componenteigenschappen op te slaan.
 
    >[!NOTE]
    >
@@ -287,7 +287,7 @@ Voer de volgende stappen uit om de `ValidateCAPTCHA` API om CAPTCHA te valideren
 
 1. Voeg het script toe dat het `ValidateCAPTCHA` API voor aangepaste verzendhandeling. Zie voor meer informatie over aangepaste verzendhandelingen [Een aangepaste verzendactie maken voor Adaptieve Forms](custom-submit-action-form.md).
 1. Selecteer de naam van de aangepaste handeling Verzenden in het menu **[!UICONTROL Submit Action]** vervolgkeuzelijst in **[!UICONTROL Submission]** eigenschappen van een adaptief formulier.
-1. Tik op **[!UICONTROL Submit]**. De CAPTCHA wordt gevalideerd op basis van de in `ValidateCAPTCHA` API van de aangepaste handeling Verzenden.
+1. Selecteer **[!UICONTROL Submit]**. De CAPTCHA wordt gevalideerd op basis van de in `ValidateCAPTCHA` API van de aangepaste handeling Verzenden.
 
 **Optie 2: Gebruik [!DNL Experience Manager Forms] De API van ValidateCAPTCHA om CAPTCHA op een gebruikersactie te bevestigen alvorens de vorm voor te leggen**
 

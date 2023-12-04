@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,9 @@ Naast JBoss® server, kunt u - Dabtesting.enabled=true jvm argument in het serve
 
 Met AEM kunt u een publiek maken en dit gebruiken voor een A/B-test. Het publiek dat u binnen AEM maakt, is beschikbaar in AEM Forms. Ga als volgt te werk om een publiek binnen AEM te maken:
 
-1. Tik in ontwerpinstantie op **Adobe Experience Manager** > **Personalisatie** > **Soorten publiek**.
+1. Selecteer in ontwerpinstantie **Adobe Experience Manager** > **Personalisatie** > **Soorten publiek**.
 
-1. Tik op de pagina Soorten publiek op **Publiek maken > Doelpubliek maken**.
+1. Selecteer op de pagina Soorten publiek de optie **Publiek maken > Doelpubliek maken**.
 1. Selecteer een doelconfiguratie in het dialoogvenster Adobe Target-configuratie en klik op **OK**.
 1. Maak regels op de pagina Nieuw publiek maken. Met regels kunt u het publiek indelen. U wilt bijvoorbeeld soorten publiek categoriseren op basis van het besturingssysteem. Uw publiek A komt van Vensters, en publiek B komt van Linux®.
 

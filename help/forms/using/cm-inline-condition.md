@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 >
 >Als uw bestaande activa oude voorwaarde/herhaalde uitdrukkingen (pre 6.2 SP1 GFP 4) omvatten, tonen de activa oude syntaxis van voorwaarde en herhalen. De oude voorwaarde/herhaling werkt echter wel. De nieuwe en oude voorwaarde/herhalingsexpressies zijn compatibel met elkaar om een geneste mix van oude en nieuwe voorwaarde/herhalingsexpressies te maken.
 
-1. Selecteer in de relevante tekstmodule het tekstgedeelte dat u wilt conditionaliseren en tikken **Voorwaarde**.
+1. Selecteer in de relevante tekstmodule het tekstgedeelte dat u wilt conditionaliseren en selecteer **Voorwaarde**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -60,9 +60,9 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
    >
    >Lege of ongeldige voorwaardelijke expressie kan niet worden opgeslagen. Er moet een geldige voorwaardelijke expressie in voorkomen `${}` om de expressie op te slaan.
 
-1. Ga als volgt te werk om een voorwaarde te maken voor het evalueren of de geselecteerde/geconditioneerde tekst in de letter staat en tik vervolgens op het vinkje om de expressie op te slaan:
+1. Ga als volgt te werk om een voorwaarde te maken voor het evalueren of de geselecteerde/geconditioneerde tekst in de letter staat en selecteer vervolgens het vinkje om de expressie op te slaan:
 
-   Dubbeltik op een DD-element om dit in de voorwaarde in te voegen. Voeg de juiste operator in en stel de volgende voorwaarde in het dialoogvenster samen.
+   Dubbelselecteer een DD-element om dit in de voorwaarde in te voegen. Voeg de juiste operator in en stel de volgende voorwaarde in het dialoogvenster samen.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
@@ -70,7 +70,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
    Zie voor meer informatie over het maken van de expressie **Expressies en externe functies maken met expressiebuilder** in [Expressiebouwer](../../forms/using/expression-builder.md). De waarde die in de expressie wordt opgegeven, moet worden ondersteund voor het element in het gegevenswoordenboek. Zie voor meer informatie [Gegevenswoordenboek](../../forms/using/data-dictionary.md).
 
-   Nadat de voorwaarde is ingevoegd, kunt u de muisaanwijzer boven de greep aan de linkerkant van de voorwaarde houden om de voorwaarde weer te geven. Tik op de handgreep om het pop-upmenu van de voorwaarde weer te geven. Hiermee kunt u de voorwaarde bewerken of verwijderen.
+   Nadat de voorwaarde is ingevoegd, kunt u de muisaanwijzer boven de greep aan de linkerkant van de voorwaarde houden om de voorwaarde weer te geven. U kunt de handgreep selecteren om het pop-upmenu van de voorwaarde weer te geven. Hiermee kunt u de voorwaarde bewerken of verwijderen.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -111,13 +111,13 @@ Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling om de
 
    ![2_selectie](assets/2_selection.png)
 
-1. Tik op Herhalen.
+1. Selecteer Herhalen.
 
    Het dialoogvenster Herhalen wordt weergegeven.
 
    ![3_herhaaldialoogvenster](assets/3_repeatdialog.png)
 
-1. Selecteer Regeleinde als scheidingsteken en tik, indien nodig, op Voorwaarde toevoegen om een regel te maken. U kunt tekst ook als scheidingsteken gebruiken en de teksttekens opgeven die als scheidingsteken moeten worden gebruikt.
+1. Selecteer Regeleinde als scheidingsteken en selecteer, indien nodig, Voorwaarde toevoegen om een regel te maken. U kunt tekst ook als scheidingsteken gebruiken en de teksttekens opgeven die als scheidingsteken moeten worden gebruikt.
 
    Het dialoogvenster Regel maken wordt weergegeven.
 
@@ -172,7 +172,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Tikken **Herhalen**. Het dialoogvenster Herhalen wordt weergegeven met een lege inline voorwaarde.
+1. Selecteren **Herhalen**. Het dialoogvenster Herhalen wordt weergegeven met een lege inline voorwaarde.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -184,7 +184,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    Als u de informatie niet selectief hoeft te renderen (hier transacties), laat u de voorwaarde leeg door het volgende te verwijderen uit het dialoogvenster: `${}`. Het opslaan van een herhalingsexpressie wordt ingeschakeld wanneer het venster met de herhalingsexpressie leeg is (zonder ${} (wanneer geen herhaling nodig is) of wanneer het een geldige voorwaarde voor herhaling bevat.
 
-1. Selecteer een scheidingsteken voor de opmaak van de dynamische tekst en tik op het vinkje dat u wilt opslaan:
+1. Selecteer een scheidingsteken voor de opmaak van de dynamische tekst en selecteer het vinkje dat u wilt opslaan:
 
    * **Regeleinde**: Voegt een regeleinde in na elk transactieitem in de uitvoerletter.
    * **Tekst**: Voegt het opgegeven tekstteken in na elk transactie-item in de uitvoerletter.
@@ -193,7 +193,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   Tik op de handgreep om het pop-upmenu van de herhaling weer te geven. Hiermee kunt u de herhalingsconstructie bewerken of verwijderen.
+   U kunt de handgreep selecteren om het pop-upmenu van de herhaling weer te geven. Hiermee kunt u de herhalingsconstructie bewerken of verwijderen.
 
    ![5_herhaaleditremove](assets/5_repeateditremove.png)
 

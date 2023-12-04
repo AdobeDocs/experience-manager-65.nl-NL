@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,8 @@ Samenvattend kunt u met Inbox een toepassing maken en toegewezen taken beheren.
 ## Toepassing maken {#create-application}
 
 1. Ga naar AEM Postvak IN op https://&#39;[server]:[poort]&#39;/aem/inbox.
-1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Create > Application]**. De pagina Selecteer toepassing wordt weergegeven.
-1. Selecteer een toepassing en klik op **[!UICONTROL Create]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de gegevens in het adaptieve formulier in en tik op **[!UICONTROL Submit]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
+1. Selecteer in de gebruikersinterface van het Postvak IN de optie **[!UICONTROL Create > Application]**. De pagina Selecteer toepassing wordt weergegeven.
+1. Selecteer een toepassing en klik op **[!UICONTROL Create]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de gegevens in het adaptieve formulier in en selecteer **[!UICONTROL Submit]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
 
 ## Taken beheren {#manage-tasks}
 
@@ -45,17 +45,17 @@ Wanneer een Forms-workflow wordt geactiveerd en u bent een ontvanger of onderdee
 
 De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groepsleden. Om het even welk groepslid kan die taak beweren of het aan een ander groepslid delegeren. Daartoe:
 
-1. Tik om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de taak worden bovenaan weergegeven.
+1. Selecteer deze optie om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de taak worden bovenaan weergegeven.
 
    ![selecteren-taak](assets/select-task.png)
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Delegate]**. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en tik op **[!UICONTROL OK]**.
+   * Als u de taak wilt delegeren, selecteert u **[!UICONTROL Delegate]**. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en selecteer **[!UICONTROL OK]**.
 
    ![gedelegeerde](assets/delegate.png)
 
-   * Tik op **[!UICONTROL Open]**. Het dialoogvenster Toewijzen aan zelf wordt geopend. Tikken **[!UICONTROL Proceed]** om de taak op te eisen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
+   * Selecteer **[!UICONTROL Open]**. Het dialoogvenster Toewijzen aan zelf wordt geopend. Selecteren **[!UICONTROL Proceed]** om de taak op te eisen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
 
    ![vordering](assets/claim.png)
 
@@ -63,8 +63,8 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 
 Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende Forms-workflow.
 
-1. Tik om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de geselecteerde taak worden bovenaan weergegeven.
-1. Tikken **Openen** om taakdetails te bekijken. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en aan de taak werken.
+1. Selecteer deze optie om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de geselecteerde taak worden bovenaan weergegeven.
+1. Selecteren **Openen** om taakdetails te bekijken. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en aan de taak werken.
 
    >[!NOTE]
    >
@@ -91,7 +91,7 @@ Op het tabblad Formulier in het hoofdinhoudsgebied worden het verzonden formulie
 
 Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De fasen van een workflow worden gedefinieerd in het dialoogvenster [Taakstap toewijzen](/help/sites-developing/workflows-step-ref.md) van de bijbehorende workflow.
 
-Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. U kunt tikken **[!UICONTROL View Details]** voor een voltooide fase om details over die fase te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
+Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. U kunt **[!UICONTROL View Details]** voor een voltooide fase om details over die fase te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
 
 ![workflowdetails](assets/workflow-details.png)
 
@@ -105,12 +105,12 @@ Terwijl u aan de taak werkt, gaat het verder in de workflow.
 
 AEM In Postvak In worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status en begin- en einddatum. Voltooide taken weergeven:
 
-1. Tik in AEM Postvak IN ![aan de zijkant schakelen1](assets/toggle-side-panel1.png) om de filterkiezer te openen.
-1. Tikken **[!UICONTROL Task Status]** accordeon en selecteer **[!UICONTROL Complete]**. Alle voltooide taken worden weergegeven.
+1. Selecteer in AEM Postvak IN de optie ![aan de zijkant schakelen1](assets/toggle-side-panel1.png) om de filterkiezer te openen.
+1. Selecteren **[!UICONTROL Task Status]** accordeon en selecteer **[!UICONTROL Complete]**. Alle voltooide taken worden weergegeven.
 
    ![filter](assets/filter.png)
 
-1. Tik om een taak te selecteren en klik op **[!UICONTROL Open]**.
+1. Selecteer een taak en klik op **[!UICONTROL Open]**.
 
 De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor een adaptief formulier wordt het alleen-lezen adaptieve formulier of het bijbehorende PDF-document met record weergegeven, zoals geconfigureerd op het tabblad Formulier/Document van het dialoogvenster [Workflowstap Toewijzen](/help/sites-developing/workflows-step-ref.md).
 
@@ -118,7 +118,7 @@ In de sectie met taakdetails wordt informatie weergegeven zoals de ondernomen ac
 
 ![voltooide taak](assets/completed-task.png)
 
-De **[!UICONTROL Workflow Details]** wordt elke stap van de workflow weergegeven. Tikken **[!UICONTROL View details]** voor een stap voor gedetailleerde informatie.
+De **[!UICONTROL Workflow Details]** wordt elke stap van de workflow weergegeven. Selecteren **[!UICONTROL View details]** voor een stap voor gedetailleerde informatie.
 
 ![voltooid-taak-werkschema](assets/completed-task-workflow.png)
 

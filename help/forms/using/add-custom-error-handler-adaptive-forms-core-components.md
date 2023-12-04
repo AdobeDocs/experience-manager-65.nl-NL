@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2304'
+source-wordcount: '2251'
 ht-degree: 0%
 
 ---
@@ -191,8 +191,8 @@ Gebruikend de Redacteur van de Regel, kunt u:
 Een standaardfouthandler wordt ondersteund voor het weergeven van foutberichten in velden als de foutreactie in het standaardschema of bij een validatiefout op de server staat.
 Als u wilt weten hoe u een standaardfouthandler gebruikt met de functie [Invoke-service van de Rule Editor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) handeling, neem een voorbeeld van een eenvoudig adaptief formulier met twee velden. **Huisdier-id** en **Naam huisdier** en gebruik een standaardfouthandler bij de **Huisdier-id** gebied om diverse fouten te controleren die door het REST eindpunt zijn teruggekeerd dat wordt gevormd om een externe dienst, bijvoorbeeld aan te halen, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Om een standaardfoutenmanager toe te voegen gebruikend de Actie van de Dienst van de Redacteur van de Regel Invoke, voer de volgende stappen uit:
 
-1. Open een adaptief formulier in de ontwerpmodus, selecteer een formulieronderdeel en tik op **[!UICONTROL Rule Editor]** om de regeleditor te openen.
-1. Tik op **[!UICONTROL Create]**.
+1. Open een adaptief formulier in de ontwerpmodus, selecteer een formulieronderdeel en selecteer **[!UICONTROL Rule Editor]** om de regeleditor te openen.
+1. Selecteren **[!UICONTROL Create]**.
 1. Een voorwaarde maken in het dialoogvenster **Wanneer** van de regel. Bijvoorbeeld: **Wanneer[Naam van veld Dierenid]** is gewijzigd. Selecteren wordt gewijzigd in het menu **Frame selecteren** vervolgkeuzelijst.
 1. In de **Vervolgens** sectie, selecteert u **[!UICONTROL Invoke Service]** van de **Handeling selecteren** vervolgkeuzelijst.
 1. Selecteer een **Postservice** en de overeenkomstige gegevensbindingen van de **Invoer** sectie. Bijvoorbeeld om te bevestigen **Huisdier-id** selecteert u een **Postservice** als **GET /pet/{petId}** en selecteert u **Huisdier-id** in de **Invoer** sectie.
@@ -295,8 +295,8 @@ In dit geval wordt de naam van de clientbibliotheek opgegeven zoals `customfunct
 
 Als u een aangepaste fouthandler wilt gebruiken met de **[!UICONTROL Rule Editor's Invoke Service]** handeling:
 
-1. Open een adaptief formulier in de ontwerpmodus, selecteer een formulieronderdeel en tik op **[!UICONTROL Rule Editor]** om de regeleditor te openen.
-1. Tik op **[!UICONTROL Create]**.
+1. Open een adaptief formulier in de ontwerpmodus, selecteer een formulieronderdeel en selecteer **[!UICONTROL Rule Editor]** om de regeleditor te openen.
+1. Selecteren **[!UICONTROL Create]**.
 1. Een voorwaarde maken in het dialoogvenster **Wanneer** van de regel. Bijvoorbeeld wanneer **[Naam van veld Dierenid]** is gewijzigd, selecteert u **is gewijzigd** van de **Frame selecteren** vervolgkeuzelijst.
 1. In de **Vervolgens** sectie, selecteert u **[!UICONTROL Invoke Service]** van de **Handeling selecteren** vervolgkeuzelijst.
 1. Selecteer een **Postservice** en de overeenkomstige gegevensbindingen van de **Invoer** sectie. Bijvoorbeeld om te bevestigen **Huisdier-id** selecteert u een **Postservice** als **GET /pet/{petId}** en selecteert u **Huisdier-id** in de **Invoer** sectie.

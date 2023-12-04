@@ -2,14 +2,14 @@
 title: Uw Postvak In om taken te beheren
 description: Uw taken beheren met de Postvak IN Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 7%
+source-wordcount: '1155'
+ht-degree: 6%
 
 ---
 
-# Uw inbox{#your-inbox}
+# Uw Postvak IN{#your-inbox}
 
 U kunt meldingen ontvangen van verschillende AEM, zoals workflows en projecten, bijvoorbeeld over:
 
@@ -65,7 +65,7 @@ Uit-van-de-doos AEM wordt voorgeladen met vier taken die aan de groep van de beh
 
 U opent als volgt het AEM-vak:
 
-1. Klik/tik op de indicator in de werkbalk.
+1. Klik op de indicator op de werkbalk.
 
 1. Selecteer **Alles bekijken**. De **AEM Inbox** wordt geopend. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
@@ -138,8 +138,8 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
 
 * **Kolomaanpassing**: Pas een AEM Inbox aan om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven op basis van de gegevens van een workflow.
    * **Kolom toevoegen**: Selecteer een kolom die u wilt toevoegen in AEM Postvak IN.
-   * **Kolom bewerken**: Houd de muis boven de kolomtitel en tik op ![bewerken](assets/edit.svg) om een kolomweergavenaam in te voeren.
-   * **Kolom verwijderen**: Tik op de knop ![delete](assets/delete_updated.svg) pictogram om de kolom uit AEM Inbox te verwijderen.
+   * **Kolom bewerken**: Plaats de muisaanwijzer op de kolomtitel en selecteer ![bewerken](assets/edit.svg) om een kolomweergavenaam in te voeren.
+   * **Kolom verwijderen**: Selecteer de ![delete](assets/delete_updated.svg) pictogram om de kolom uit AEM Inbox te verwijderen.
    * **Kolom verplaatsen**: Sleep de ![move](assets/move_updated.svg) pictogram om een kolom naar een nieuwe positie in AEM Inbox te verplaatsen.
 
   ![beheer](assets/admin-control-column-customize.png)
@@ -152,7 +152,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
 
 * **Gebruikersnavigatie**
    * **Navigatieopties verbergen:** Selecteer deze optie om de beschikbare navigatieopties in de koptekst te verbergen. De navigatieopties omvatten verbindingen aan andere oplossingen, de verbinding van de Hulp, en de auteursopties beschikbaar op het Tikken van het embleem of de tekst van Adobe Experience Manager.
-* **Opslaan:** Tik/klik op deze optie om de instellingen op te slaan.
+* **Opslaan:** Klik deze optie om de montages te bewaren.
 
 ## Actie ondernemen op een item {#taking-action-on-an-item}
 

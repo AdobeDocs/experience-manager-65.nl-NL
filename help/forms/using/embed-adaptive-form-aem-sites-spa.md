@@ -10,16 +10,16 @@ discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier of interactieve communicatie insluiten in AEM Sites-toepassing voor één pagina{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -36,7 +36,7 @@ Als u een adaptief formulier of interactieve communicatie wilt insluiten in AEM 
 * Java SE Development Kit 8 of hoger
 * Apache Maven 3.3.1 of hoger
 * AEM
-* [AEM Forms 6.4.2-invoegtoepassing](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op auteurinstantie
+* [AEM Forms 6.4.2-invoegtoepassing](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op instantie van auteur
 
 ## AEM Forms SPA Container-component installeren {#install-aem-forms-spa-container-component}
 
@@ -57,28 +57,28 @@ Voer de volgende stappen uit om de AEM Forms SPA Container-component te installe
 Een adaptief formulier of interactieve communicatie insluiten met AEM Forms for SPA Container-component:
 
 1. Open de pagina AEM sites in de bewerkingsmodus waarin u een adaptief formulier of interactieve communicatie wilt insluiten.
-1. Voeg de **Formulier AEM voor SPA** op de pagina met een van de volgende opties:
+1. Voeg de **AEM formulier voor SPA** op de pagina met een van de volgende opties:
 
-   * Tik op de lay-outcontainer op de pagina Sites en tik op **+** en selecteert u de **Formulier AEM voor SPA** component.
+   * Selecteer de lay-outcontainer op de pagina van Plaatsen, selecteer **+** en selecteert u de **AEM formulier voor SPA** component.
 
-   * Sleep vanuit het deelvenster Componentbrowser de knop **Formulier AEM voor SPA** op de pagina.
+   * Sleep vanuit het deelvenster Componentbrowser de **AEM formulier voor SPA** op de pagina.
    * Zoek een adaptief formulier of interactieve communicatie in de middelenbrowser en sleep het naar de sitepagina. Het formulier wordt ingesloten in een AEM Forms voor SPA componentcontainer.
 
    >[!NOTE]
    >
    >Het weergeven van meerdere AEM Forms SPA Container-componenten op een pagina wordt niet ondersteund. U kunt meerdere AEM Forms SPA Container op een pagina plaatsen, maar er wordt slechts één component tegelijk gerenderd. Zorg ervoor dat slechts één component zichtbaar is op een pagina om discrepanties te voorkomen.
 
-1. Tik op de ingesloten AEM Forms SPA Container-component op de sitepagina en tik vervolgens op ![settings_icon](assets/settings_icon.png) op de actiebalk. De **AEM Forms SPA-container bewerken** wordt geopend.
+1. Selecteer de ingesloten AEM Forms SPA Container-component op de sitepagina en selecteer vervolgens ![settings_icon](assets/settings_icon.png) op de actiebalk. De **AEM Forms SPA-container bewerken** wordt geopend.
 1. In de **AEM Forms-container bewerken** geeft u het volgende op:
 
    * **Type element:** Selecteer het type element dat u wilt insluiten. De opties zijn **Adaptief formulier** en **Interactieve communicatie**
 
    * **Middelpad**: Blader en selecteer het adaptieve formulier of de interactieve communicatie die u wilt insluiten. Het veld wordt automatisch ingevuld als een adaptief formulier of interactieve communicatie wordt ingevoegd met de middelenbrowser.
-   * **Kanaal** (Alleen interactieve communicatie): Selecteer het type interactief kanaal dat u wilt insluiten. De opties zijn **Webkanaal** en **Afdrukkanaal**.
+   * **Kanaal** (Alleen interactieve communicatie): selecteer het type interactief kanaal dat u wilt insluiten. De opties zijn **Webkanaal** en **Afdrukkanaal**.
 
    * **Thema**: Selecteer een thema waarmee u opmaak definieert voor componenten van uw adaptieve formulier of Interactieve communicatie. Stijlen omvat vormgevingseigenschappen zoals letterstijl, achtergrondkleur, afmetingen en uitlijning.
 
-1. Tikken ![done_icon](assets/done_icon.png) om de instellingen op te slaan. Het adaptieve formulier of de interactieve communicatie is nu ingesloten in de pagina.
+1. Selecteren ![done_icon](assets/done_icon.png) om de instellingen op te slaan. Het adaptieve formulier of de interactieve communicatie is nu ingesloten in de pagina.
 
 ## Ingesloten adaptief formulier en interactieve communicatie publiceren {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -95,7 +95,7 @@ AEM sitepagina bevat een verwijzing naar het adaptieve formulier en de interacti
 Voer een van de volgende handelingen uit als u een configuratie of eigenschap van het ingesloten adaptieve formulier en interactieve communicatie wilt wijzigen.
 
 * Open het oorspronkelijke formulier in adaptieve formulieren of Interactieve communicatie in de respectievelijke editors en wijzig deze.
-* Tik in de bewerkingsmodus op het adaptieve formulier of de interactieve communicatie vanuit de sitepagina en tik vervolgens op **Bewerken in een nieuw venster**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus.
+* Selecteer het adaptieve formulier of de interactieve communicatie vanuit de sitepagina in de bewerkingsmodus en selecteer **Bewerken in een nieuw venster**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus.
 
 ## Overwegingen en beste praktijken {#considerations-and-best-practices}
 

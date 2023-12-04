@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '9826'
+source-wordcount: '9797'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Bij het organiseren van een verzameling elementen, bijvoorbeeld alle `Nature` af
 >* Een [!DNL Assets] map met het type `sling:OrderedFolder` wordt niet ondersteund bij delen naar Experience Cloud. Selecteer [!UICONTROL Ordered] wanneer u een map maakt.
 >* [!DNL Experience Manager] staat het gebruik van `subassets` woord als de naam van een map. Het is een sleutelwoord dat voor een knoop wordt gereserveerd die subassets voor samengestelde activa bevat.
 
-1. Navigeer naar de plaats in de map met digitale elementen waar u een map wilt maken. Klik op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
+1. Navigeer naar de plaats in de map met digitale elementen waar u een map wilt maken. Klik op **[!UICONTROL Create]**. Selecteren **[!UICONTROL New Folder]**.
 1. In de **[!UICONTROL Title]** veld, geef een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
 1. Klik op **[!UICONTROL Create]**. De map wordt weergegeven in de map met digitale middelen.
 
@@ -645,7 +645,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 1. Publiceer de map en probeer deze vervolgens te openen vanuit de publicatie-instantie. Er wordt een aanmeldingsscherm weergegeven.
 1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven na [!DNL Experience Manager] verklaart u voor authentiek.
 
-## Assets doorzoeken {#assetsearch}
+## Zoeken in middelen {#assetsearch}
 
 Het zoeken naar middelen staat centraal in het gebruik van een digitaal assetmanagementsysteem. Deze functionaliteit is belangrijk voor creatieve medewerkers, voor een robuust beheer van bedrijfsmiddelen door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
@@ -655,7 +655,7 @@ Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activ
 
 De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. Voer afhankelijk van het apparaat de volgende handelingen uit om de snelactiepictogrammen weer te geven:
 
-* Aanraakapparaten: aanraken en vasthouden. Op een iPad kunt u bijvoorbeeld tikken en een element vasthouden, zodat de snelle acties worden weergegeven.
+* Aanraakapparaten: aanraken en vasthouden. Op een iPad kunt u bijvoorbeeld een element selecteren en ingedrukt houden, zodat de snelle acties worden weergegeven.
 * Niet-aanraakapparaten: Aanwijzer aanwijzen. Op een bureaubladapparaat wordt bijvoorbeeld de snelle actiebalk weergegeven als u de aanwijzer boven de elementminiatuur houdt.
 
 ### Navigeren en elementen selecteren {#navigating-and-selecting-assets}

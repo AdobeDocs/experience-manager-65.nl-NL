@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d0768679182567cc7cd618adaa78b6518f902f7c
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -396,7 +396,7 @@ U moet lid zijn van de [form-power-user-group](forms-groups-privileges-tasks.md)
    <td>Valideren</td>
    <td>Ingeschakeld</td>
    <td>Waarde vastleggen</td>
-   <td>Klik op </td>
+   <td>Klikken </td>
    <td>Opties</td>
   </tr>
   <tr>
@@ -736,7 +736,7 @@ Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve F
 
 1. Ga naar Experience Manager webconsole op `https://server:host/system/console/configMgr`.
 1. Zoeken **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**.
-1. Tik om de configuratie te openen in de bewerkingsmodus.
+1. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
 1. Selecteer de **[!UICONTROL Generate Schema Compliant Data]** selectievakje.
 1. Sla de instellingen op.
 

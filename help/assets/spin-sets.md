@@ -1,5 +1,5 @@
 ---
-title: Spin Sets
+title: Sets draaien
 description: Leer hoe u een centrifugeset maakt in Dynamic Media om de echte handeling te simuleren waarbij een object vanuit elke hoek wordt weergegeven, zodat u details kunt zien.
 uuid: 379a20a3-6a17-499a-b0f1-3a835b97aa7b
 contentOwner: Rick Brough
@@ -11,14 +11,14 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1940'
 ht-degree: 8%
 
 ---
 
-# Spin Sets{#spin-sets}
+# Sets draaien{#spin-sets}
 
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek ophalen.
 
@@ -149,9 +149,9 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
    * Selecteer in de linkerbovenhoek van de pagina van de Editor voor centrifugeset de optie **[!UICONTROL Add Asset]**.
 
-   * Selecteer in het midden van de pagina van de Editor voor de centrifugeset de optie **[!UICONTROL Tap to open Asset Selector]**.
+   * Selecteer in het midden van de pagina van de Editor voor de centrifugeset de optie **[!UICONTROL Select to open Asset Selector]**.
 
-   Tik om de elementen te selecteren die u in de centrifugeset wilt opnemen. Geselecteerde assets hebben een vinkje. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Select]**.
+   Selecteer deze optie om de elementen te selecteren die u in de centrifugeset wilt opnemen. Geselecteerde assets hebben een vinkje. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Select]**.
 
    Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het filter **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 

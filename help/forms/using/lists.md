@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6908'
+source-wordcount: '6901'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 ### Tekst maken {#create-text}
 
 1. Selecteren **Forms** > **Documentfragmenten**.
-1. Tikken **Maken** > **Tekst** Of selecteer een tekstelement en tik op **Bewerken**.
+1. Selecteren **Maken** > **Tekst** Of selecteer een tekstelement en selecteer **Bewerken**.
 1. Geef de volgende informatie op voor de tekst:
 
    * **Titel: (optioneel)** Voer de titel in voor het tekstelement. Titels hoeven niet uniek te zijn en kunnen speciale tekens en niet-Engelse tekens bevatten. De teksten worden bedoeld door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
@@ -51,7 +51,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    * **Gegevenswoordenboek**: Selecteer optioneel het gegevenswoordenboek waarin u wilt toewijzen. Met dit kenmerk kunt u verwijzingen naar gegevenswoordenboekelementen in het tekstelement toevoegen.
    * **Tags**: Als u een aangepaste tag wilt maken, typt u een waarde in het tekstveld en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
 
-1. Tikken **Volgende**. Met Correspondentiebeheer wordt de Editor-pagina weergegeven waar u tekstalinea&#39;s en gegevenselementen aan de tekst kunt toevoegen.
+1. Selecteren **Volgende**. Met Correspondentiebeheer wordt de Editor-pagina weergegeven waar u tekstalinea&#39;s en gegevenselementen aan de tekst kunt toevoegen.
 
    De standaardspellingcontrole in uw browser controleert spelling in de redacteur van de Tekst. Als u de spelling en grammatica wilt controleren, kunt u de instellingen voor spellingcontrole van uw browser bewerken of browserinsteekmodules/invoegtoepassingen installeren om de spelling en de grammatica te controleren.
 
@@ -63,7 +63,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    * **Koppeling**: Invoegen [hypertext](#insert-hyperlink) in de tekst.
    * **Herhalen**: Met Herhalen wordt het verzamelingselement in het gegevenswoordenboek afgedrukt met een scheidingsteken.
-   * **Voorwaarde**: Tik om een voorwaarde in te voegen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
+   * **Voorwaarde**: Selecteer deze optie om een voorwaarde in te voegen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
    * **Beschrijving toevoegen**: Voeg annotatie toe aan een stuk tekst. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
    * **Pagina-einde**: Als u het kenmerk Pagina-einden van een tekstmodule instelt op false, wordt de tekstmodule niet over pagina&#39;s verdeeld.
 
@@ -106,13 +106,13 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    Correspondence Management biedt ondersteuning voor 210 speciale tekens. De beheerder kan [Voeg ondersteuning voor meer/aangepaste speciale tekens toe door deze aan te passen](/help/forms/using/custom-special-characters.md).
 
-1. Selecteer de tekst en tik op Markeringskleur om\gedeelten van tekst in een bewerkbare inlinemodule te benadrukken.
+1. Als u\gedeelten van tekst in een bewerkbare inline-module wilt benadrukken, selecteert u de tekst en selecteert u Markeringskleur.
 
    ![textBackgroundColor toegepast](assets/textbackgroundcolorapplied.png)
 
-   U kunt rechtstreeks op een basiskleur tikken `**[A]**` aanwezig in het palet Basiskleuren of tik op **Selecteren** na gebruik van de schuifregelaar `**[B]**` om de juiste tint van de kleur te kiezen.
+   U kunt een basiskleur rechtstreeks selecteren `**[A]**` aanwezig in het palet Basiskleuren of selecteer **Selecteren** na gebruik van de schuifregelaar `**[B]**` om de juiste tint van de kleur te kiezen.
 
-   U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging te selecteren `**[C]**` om de exacte kleur te maken en tik vervolgens op Selecteren `**[D]**` om de kleur toe te passen om de tekst te markeren.
+   U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging te selecteren `**[C]**` om de nauwkeurige kleur tot stand te brengen en dan selecteren Uitgezocht `**[D]**` om de kleur toe te passen om de tekst te markeren.
 
    ![textBackgroundColor-1](assets/textbackgroundcolor-1.png)
 
@@ -120,8 +120,8 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    Aan:
 
-   * Voeg een gegevenswoordenboekelement in de tekst toe, selecteer een gegevenselement in de lijst en tik op Invoegen ( ![insert](assets/insert.png)). Als u Beveiligd selecteert, is het gegevenswoordenboekelement alleen-lezen en wordt het weergegeven in de lettereditor, maar niet in de gebruikersinterface Correspondentie maken of Correspondence Creator.
-   * Voeg een plaatsaanduidingselement toe aan de tekst. Tik in het deelvenster Gegevenselementen op Nieuw maken, voer de details voor het nieuwe gegevenselement in en tik op Maken om het nieuwe element aan de lijst toe te voegen. De nieuwe plaatsaanduiding kan op dezelfde manier in de tekst worden ingevoegd als het gegevenswoordenboekelement. Als u een tijdelijke aanduiding wilt bewerken, selecteert u een tijdelijke aanduiding en tikt u op Bewerken.
+   * Voeg een gegevenswoordenboekelement in de tekst toe, selecteer een gegevenselement in de lijst en selecteer Invoegen ( ![insert](assets/insert.png)). Als u Beveiligd selecteert, is het gegevenswoordenboekelement alleen-lezen en wordt het weergegeven in de lettereditor, maar niet in de gebruikersinterface Correspondentie maken of Correspondence Creator.
+   * Voeg een plaatsaanduidingselement toe aan de tekst. Selecteer in het deelvenster Gegevenselementen de optie Nieuw maken, voer de details voor het nieuwe gegevenselement in en selecteer Maken om het nieuwe element aan de lijst toe te voegen. De nieuwe plaatsaanduiding kan op dezelfde manier in de tekst worden ingevoegd als het gegevenswoordenboekelement. Als u een tijdelijke aanduiding wilt bewerken, selecteert u een tijdelijke aanduiding en kiest u Bewerken.
 
    ![Plaatsaanduidingselementen](assets/placeholder_elements_in_xmldata.png)
 
@@ -134,7 +134,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    Met het @-symbool kunt u ook gegevenswoordenboek en plaatsaanduidingselementen zoeken en toevoegen aan de teksteditor. Plaats de cursor op de plaats waar u het element wilt invoegen. Typ @ gevolgd door de zoekreeks. De teksteditor voert de zoekbewerking uit op alle gegevenswoordenboeken en plaatsaanduidingselementen die beschikbaar zijn in het tekstdocumentfragment. De zoekbewerking haalt de elementen met de zoekreeks op en geeft deze weer als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het element dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
 1. U kunt inline voorwaarden en herhaling gebruiken om uw brief te maken in hoge context en goed gestructureerd. Zie voor meer informatie over inline condition en repeat [Inline voorwaarden en herhalen in letters](/help/forms/using/cm-inline-condition.md).
-1. Tikken **Opslaan**.
+1. Selecteren **Opslaan**.
 
 #### Hyperlink invoegen in tekst {#insert-hyperlink}
 
@@ -142,9 +142,9 @@ Voer de volgende stappen uit om een hyperlink in een tekstelement te maken:
 
 1. Selecteer de tekst of het gegevensmodelobject in de teksteditor.
 
-2. Tik op **[!UICONTROL Link]**. Tikken **[!UICONTROL Alt Text]** veld voor het verwijderen van de bestaande objectnaam of tekst van het gegevensmodel.
+2. Selecteer **[!UICONTROL Link]**. Selecteren **[!UICONTROL Alt Text]** veld voor het verwijderen van de bestaande objectnaam of tekst van het gegevensmodel.
 
-3. Geef de URL op en tik op ![Opslaan](assets/save_icon.svg).
+3. Geef de URL op en selecteer ![Opslaan](assets/save_icon.svg).
 
 ![Hyperlink maken in tekstelement](assets/text-create-hyperlink.png)
 
@@ -158,7 +158,7 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 
 1. Open de tekstmodule in de teksteditor.
 
-1. Tik op Zoeken en vervangen.
+1. Selecteer Zoeken en vervangen.
 1. Typ de tekst die u wilt zoeken in het tekstvak Zoeken en druk op Zoeken. De zoektekst wordt gemarkeerd in de tekstmodule.
 1. Druk nogmaals op Zoeken om naar het volgende exemplaar van de tekst te zoeken.
 
@@ -185,7 +185,7 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 #### Tekst zoeken en vervangen in een tekstmodule {#to-search-and-replace-text-in-a-text-module}
 
 1. Open de tekstmodule in de teksteditor.
-1. Tik op Zoeken en vervangen.
+1. Selecteer Zoeken en vervangen.
 1. Typ de tekst die u wilt zoeken in het tekstvak Zoeken en de tekst waarmee u de zoektekst wilt vervangen en druk op Vervangen.
 1. Als de zoektekst wordt gevonden, wordt de tekst vervangen door de tekst Vervangen.
 
@@ -241,23 +241,23 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
    * **Naam:** De unieke naam voor de lijst. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch gevuld met de waarde in het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Beschrijving (optioneel)**: Typ een beschrijving van het element.
    * **Gegevenswoordenboek (optioneel)**: Selecteer optioneel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de lijst, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste lijst vinden.
-   * **Tags (optioneel)**: Selecteer de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u tikt **Opslaan**.)
+   * **Tags (optioneel)**: Selecteer de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u **Opslaan**.)
 
-1. Tikken **Volgende**.
-1. Tikken **Element toevoegen**.
-1. Als u elementen aan de lijst wilt toevoegen, selecteert u deze op de pagina Elementen selecteren en tikt u op **Gereed**.
+1. Selecteren **Volgende**.
+1. Selecteren **Element toevoegen**.
+1. Als u elementen aan de lijst wilt toevoegen, selecteert u deze op de pagina Elementen selecteren en selecteert u **Gereed**.
 
    ![Elementen selecteren om aan de lijst toe te voegen](assets/selectassets.png)
 
 1. De elementen worden toegevoegd aan de pagina Lijstitems.
-Tik op het pijlpictogram en houd de muisknop ingedrukt ( ![dragndrop](assets/dragndrop.png) ) en slepen en neerzetten. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
+Als u de volgorde van de elementen in de lijst wilt wijzigen, selecteert u het pijlpictogram en houdt u dit ingedrukt ( ![dragndrop](assets/dragndrop.png) ) en slepen en neerzetten. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
 
    ![Elementen in een lijst opnieuw rangschikken en configureren](assets/listitems.png)
 
 1. U kunt de volgende opties selecteren om te specificeren hoe de lijst zich in het CCR gebruikersinterface gedraagt:
 
-   * **Bibliotheektoegang**: Tik op Bibliotheektoegang om bibliotheektoegang voor het toevoegen van elementen in te schakelen. Wanneer de Toegang van de Bibliotheek wordt toegelaten, beweert aanpast of kan meer inhoud aan de lijst toevoegen. Anders is de functie Aanpassing claims beperkt tot de inhoud die u voor de lijst hebt gedefinieerd.
-   * **Vergrendelingsvolgorde**: Tik op Volgorde vergrendelen om de volgorde van de elementen in de lijst te vergrendelen zodat de Aanpasser voor claims de volgorde niet kan wijzigen. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
+   * **Bibliotheektoegang**: Selecteer Bibliotheektoegang als u bibliotheektoegang wilt inschakelen voor het toevoegen van elementen. Wanneer de Toegang van de Bibliotheek wordt toegelaten, beweert aanpast of kan meer inhoud aan de lijst toevoegen. Anders is de functie Aanpassing claims beperkt tot de inhoud die u voor de lijst hebt gedefinieerd.
+   * **Vergrendelingsvolgorde**: Selecteer Volgorde vergrendelen om de volgorde van de elementen in de lijst te vergrendelen zodat de Aanpasser voor claims de volgorde niet kan wijzigen. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
 
    * **Opsommingstekens toevoegen**: Gebruik deze optie om een opsommingsteken of nummeringsstijl toe te passen op de module. U kunt een vooraf ontworpen lijststijl of een aangepaste stijl gebruiken. U kunt ook de tekst opgeven die voor en na elk van de lijstitems moet worden weergegeven.
    * **Pagina-einde**: Selecteer deze optie ( ![break](assets/break.png)) om een pagina-einde toe te voegen tussen de inhoud van de lijst. Wanneer deze optie niet is geselecteerd ( ![noord](assets/nobreak.png)), als de inhoud van de lijst overloopt naar de volgende pagina, wordt de hele lijst verschoven naar de volgende pagina in plaats van de pagina tussen de lijst te breken.
@@ -275,7 +275,7 @@ Tik op het pijlpictogram en houd de muisknop ingedrukt ( ![dragndrop](assets/dra
    * **Lijststijl negeren:** Als de optie Samengestelde nummering is uitgeschakeld, is de optie Lijststijl negeren ingeschakeld. Bij deze selectie wordt de eigen stijl van de geneste lijst genegeerd. De nummering gaat verder vanaf de buitenste lijst. Daarom worden de modules van de genestelde lijst behandeld als deel van de buitenlijst zelf, die om het even welke stijlen veronachtzamen die op de genestelde Lijst worden gespecificeerd. Als de optie Lijststijl negeren is uitgeschakeld voor een geneste lijst, hebben de modules die deel uitmaken van die geneste lijst een eigen nummeringsstijl.
    * **Houden bij: Volgende** Hiermee stelt u het pagina-einde in voor de elementen in een lijst. Als u de eigenschap Houden bij volgende van één element in een lijst instelt op **Aan**, dat element en het volgende element op dezelfde pagina blijven staan. Dit houdt in dat de inhoud van het geselecteerde element en het volgende element niet worden verdeeld over pagina&#39;s.
 
-1. Tikken **Opslaan**.
+1. Selecteren **Opslaan**.
 
 ### Tips en trucs {#best-practices-tips-and-tricks}
 
@@ -313,25 +313,25 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
    * **Naam:** De unieke naam voor de voorwaarde. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Beschrijving (optioneel)** Typ een beschrijving van de voorwaarde.
    * **Gegevenswoordenboek (optioneel)**: Selecteer optioneel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de voorwaarde, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste voorwaarde vinden.
-   * **Tags (optioneel)**: Selecteer optioneel de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u tikt **Opslaan**.)
+   * **Tags (optioneel)**: Selecteer optioneel de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u **Opslaan**.)
 
-1. Tikken **Volgende**.
-1. Tikken **Element toevoegen**.
-1. Als u een element aan de voorwaarde wilt toevoegen, selecteert u het element op de pagina Elementen selecteren en tikt u op **Gereed**. De elementen worden toegevoegd aan het deelvenster Expressie.
+1. Selecteren **Volgende**.
+1. Selecteren **Element toevoegen**.
+1. Als u een element aan de voorwaarde wilt toevoegen, selecteert u het element op de pagina Elementen selecteren en selecteert u **Gereed**. De elementen worden toegevoegd aan het deelvenster Expressie.
 1. U kunt de volgende opties selecteren om op te geven hoe de voorwaarde zich gedraagt bij uitvoering:
 
    * **Meerdere resultaten-evaluatie uitschakelen \nMeerdere resultaten-evaluatie inschakelen**: Wanneer deze optie is ingeschakeld (wordt &#39;&#39;Meerdere inschakelen...&#39;&#39; weergegeven), worden alle voorwaarden geëvalueerd en is het resultaat de som van alle werkelijke voorwaarden. Als deze optie is uitgeschakeld (wordt &#39;&#39;Meerdere uitschakelen...&#39;&#39; weergegeven), wordt alleen de eerste voorwaarde waarvan is vastgesteld dat deze true is, geëvalueerd en wordt deze de uitvoer van de voorwaarde.
    * **Pagina-einde**: Selecteer deze optie ( ![break](assets/break.png)) om een pagina-einde toe te voegen tussen de modules van de voorwaarden. Wanneer deze optie niet is geselecteerd ( ![noord](assets/nobreak.png)), als een voorwaarde overloopt naar de volgende pagina, wordt de hele voorwaarde verplaatst naar de volgende pagina in plaats van de pagina tussen de voorwaarde te verbreken.
 
-1. Tik op het pijlpictogram en houd de muisknop ingedrukt ( ![dragndrop](assets/dragndrop.png) ) en slepen en neerzetten. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
-1. Tikken **Verwijderen** om de rij te verwijderen. Als u op Verwijderen tikt voor de standaardrij, worden alleen de elementgegevens gewist.
-1. Tikken **Kopiëren** om een rij te dupliceren.
-1. Tikken **Bewerken** om het element te wijzigen of de expressie te bewerken.
+1. Als u de volgorde van de elementen binnen de voorwaarde wilt wijzigen, selecteert u het pijlpictogram en houdt u dit ingedrukt ( ![dragndrop](assets/dragndrop.png) ) en slepen en neerzetten. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
+1. Selecteren **Verwijderen** om de rij te verwijderen. Als u Verwijderen selecteert voor de standaardrij, worden alleen de elementgegevens gewist.
+1. Selecteren **Kopiëren** om een rij te dupliceren.
+1. Selecteren **Bewerken** om het element te wijzigen of de expressie te bewerken.
 
    Verder:
 
-   * Tik op het mappictogram onder de kolom Element om het element bij te werken.
-   * Tik op het mappictogram onder de kolom Expressie om de expressiebouwer te openen en een expressie in te voegen. Voor meer informatie over de Bouwer van de Uitdrukking, zie [Expressiebouwer](/help/forms/using/expression-builder.md).
+   * Als u het element wilt bijwerken, selecteert u het mappictogram onder de kolom Element.
+   * Als u de expressiebouwer wilt openen om een expressie in te voegen, selecteert u het mappictogram onder de kolom Expressie. Voor meer informatie over de Bouwer van de Uitdrukking, zie [Expressiebouwer](/help/forms/using/expression-builder.md).
 
 ### Tips en trucs {#best-practices-tips-and-tricks-1}
 
@@ -388,14 +388,14 @@ Houd rekening met de volgende punten bij het ontwerpen van tabellen:
    * kop- en voettekst voor extra kolom
    * breedteverhouding voor elke kolom
 
-U kunt fragmenten in een letter nesten. Dit betekent dat u een fragment kunt toevoegen binnen een fragment. De Correspondence Management-oplossing ondersteunt maximaal vier nestniveaus binnen een letter: **Letter**->**Fragment**->**Fragment**->**Fragment**->**Fragment.**
+U kunt fragmenten in een letter nesten. Dit betekent dat u een fragment kunt toevoegen binnen een fragment. De Correspondence Management-oplossing ondersteunt maximaal vier nestniveaus binnen een letter: **Letter *>*Fragment *>*Fragment *>*Fragment *>*Fragment.**
 
 Zie voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten [Voorbeeld met voorbeeldbestanden: statische en dynamische tabellen in een letter gebruiken](#examplewithsamplefiles).
 
 ### Een lay-outfragment maken {#creating-a-layout-fragment}
 
 1. Selecteren **Maken** > **Lay-outfragment**.
-1. Correspondence Management geeft de beschikbare XDP&#39;s weer. Selecteer de XDP waarop u het lay-outfragment wilt baseren en tik **Volgende**.
+1. Correspondence Management geeft de beschikbare XDP&#39;s weer. Selecteer de XDP waarop u het lay-outfragment wilt baseren en selecteer **Volgende**.
 1. Geef de volgende informatie op voor de lay-out:
 
    * **Titel (optioneel):** Voer de titel in voor het layoutfragment. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten. Indelingsfragmenten worden aangeduid met hun titels (indien beschikbaar), zoals miniaturen en elementeigenschappen.
@@ -403,7 +403,7 @@ Zie voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische
    * **Beschrijving (optioneel)**: Beschrijving die wordt weergegeven in de lijst in de gebruikersinterface Middelen beheren.
    * **Tags (optioneel)**: Selecteer optioneel de tags die op de voorwaarde moeten worden toegepast. U kunt ook de naam van een nieuwe tag typen en deze maken.
 
-1. Tik op de knop **Tabel** en geeft u de volgende informatie op voor de indeling:
+1. Selecteer de **Tabel** en geeft u de volgende informatie op voor de indeling:
 
    * **Configuratie voor**: Selecteer de tabel die wordt geconfigureerd.Als achtervoegsel voor de tabelnaam in het vervolgkeuzemenu is (statisch) als de tabel een statische tabel is of (dynamisch) als de tabel een dynamische tabel is. Statische tabellen bevatten een vast aantal rijen. Statische tabellen kunnen doelgebieden en -velden bevatten. Deze doelgebieden en velden kunnen niet worden gebonden aan herhalende DDE&#39;s. De gegevens die aan tabelcellen zijn gebonden, bepalen het aantal rijen voor dynamische tabellen.
 
@@ -419,7 +419,7 @@ Zie voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische
 
    Zie voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten [Voorbeeld met voorbeeldbestanden: statische en dynamische tabellen in een letter gebruiken](#examplewithsamplefiles).
 
-1. Tikken **Opslaan**.
+1. Selecteren **Opslaan**.
 
 ### Een XDP uploaden naar Correspondentenbeheer {#upload-an-xdp-to-correspondence-management}
 
@@ -433,7 +433,7 @@ Wanneer u doelgebieden maakt in Designer, kunt u de standaardbinding voor alle n
 
 De standaardbinding instellen:
 
-1. Tik in Designer **Gereedschappen** > **Opties** > **Gegevensbindingen** > **Binding subformulier**.
+1. Selecteer in Designer **Gereedschappen** > **Opties** > **Gegevensbindingen** > **Binding subformulier**.
 
 1. Selecteer in de lijst Standaardbinding voor nieuwe subformulieren de optie **Geen gegevensbinding**.
 
@@ -548,7 +548,7 @@ Voor meer informatie over het ontwerpen van lay-outs raadpleegt u [Help bij Desi
 Als u snel een documentfragment wilt maken met eigenschappen en inhoud die vergelijkbaar zijn met een bestaand documentfragment, kunt u dit kopiëren en plakken.
 
 1. Selecteer een of meer documentfragmenten in de lijst met documentfragmenten. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Zie voor meer informatie over mappen [Mappen en elementen ordenen](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Tik op Plakken. Het dialoogvenster Plakken wordt geopend. Als u de documentfragmenten op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
+1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Zie voor meer informatie over mappen [Mappen en elementen ordenen](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Selecteer Plakken. Het dialoogvenster Plakken wordt geopend. Als u de documentfragmenten op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
 1. Bewerk indien nodig de titel en de naam waarmee u de kopie van het documentfragment wilt opslaan.
-1. Tik op Plakken. De kopie van het documentfragment wordt gemaakt.
+1. Selecteer Plakken. De kopie van het documentfragment wordt gemaakt.

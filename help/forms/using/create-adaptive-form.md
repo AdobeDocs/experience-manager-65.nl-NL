@@ -3,9 +3,9 @@ title: 'Lesbestand: een adaptief formulier maken'
 description: Leer een adaptief formulier te maken, in te delen en voor te vertonen. Leer ook verzendhandelingen te configureren.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1257'
 ht-degree: 0%
 
 ---
@@ -35,14 +35,14 @@ Aan het einde van het artikel hebt u een formulier dat vergelijkbaar is met het 
 ## Stap 1: Maak het adaptieve formulier {#step-create-the-adaptive-form}
 
 1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-1. Tikken **[!UICONTROL Create]** en selecteert u **[!UICONTROL Adaptive Form]**. Er verschijnt een optie voor het selecteren van een sjabloon. Tik op de knop **[!UICONTROL Blank]** sjabloon om te selecteren en te tikken **[!UICONTROL Next]**.
+1. Selecteren **[!UICONTROL Create]** en selecteert u **[!UICONTROL Adaptive Form]**. Er verschijnt een optie voor het selecteren van een sjabloon. Selecteer de **[!UICONTROL Blank]** sjabloon om het te selecteren en te selecteren **[!UICONTROL Next]**.
 
 1. Een optie voor **[!UICONTROL Add Properties]** wordt weergegeven. De **[!UICONTROL Title]** en **[!UICONTROL Name]** velden zijn verplicht:
 
    * **Titel:** Opgeven `Add new or update shipping address` in de **[!UICONTROL Title]** veld. In het titelveld wordt de weergavenaam van het formulier opgegeven. Met de titel kunt u het formulier identificeren in de AEM [!DNL Forms] gebruikersinterface.
    * **Naam:** Opgeven `shipping-address-add-update-form` in de **[!UICONTROL Name]** veld. In het veld Naam wordt de naam van het formulier opgegeven. Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
 
-1. Tik op **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking. Tikken **[!UICONTROL Open]** om het nieuwe formulier te openen op een nieuw tabblad. Het formulier wordt geopend voor bewerking. De zijbalk wordt ook weergegeven om het nieuwe formulier aan te passen aan de behoeften.
+1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking. Selecteren **[!UICONTROL Open]** om het nieuwe formulier te openen op een nieuw tabblad. Het formulier wordt geopend voor bewerking. De zijbalk wordt ook weergegeven om het nieuwe formulier aan te passen aan de behoeften.
 
    Voor informatie over de adaptieve interface voor formulierontwerp en de beschikbare componenten raadpleegt u [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/creating-adaptive-form.md).
 
@@ -52,12 +52,12 @@ Aan het einde van het artikel hebt u een formulier dat vergelijkbaar is met het 
 
 AEM [!DNL Forms] biedt veel componenten om informatie weer te geven op een adaptief formulier. De componenten Koptekst en Voettekst geven een formulier een consistent uiterlijk. Een koptekst bevat doorgaans het logo van een bedrijf, de titel van het formulier en het overzicht. Een voettekst bevat doorgaans copyrightinformatie en koppelingen naar andere pagina&#39;s.
 
-1. Tikken ![schakelen tussen zijpaneel](assets/toggle-side-panel.png) > ![uitvouwen](assets/treeexpandall.png). De componentbrowser wordt geopend. Sleep de **[!UICONTROL Header]** van componentbrowser naar het adaptieve formulier.
-1. Tik op **[!UICONTROL Logo]**. De werkbalk wordt weergegeven. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) op de werkbalk typt u **Wij.Detailhandel** en tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteren ![schakelen tussen zijpaneel](assets/toggle-side-panel.png) > ![uitvouwen](assets/treeexpandall.png). De componentbrowser wordt geopend. Sleep de **[!UICONTROL Header]** van componentbrowser naar het adaptieve formulier.
+1. Selecteer **[!UICONTROL Logo]**. De werkbalk wordt weergegeven. Selecteren ![aem_6_3_edit](assets/aem_6_3_edit.png) op de werkbalk typt u **Wij.Detailhandel** en selecteert u ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-1. Tik op de afbeelding. De werkbalk wordt weergegeven. Tikken ![cmppr](assets/cmppr.png). De eigenschappenbrowser wordt links van het scherm geopend. **[!UICONTROL Browse]** en uploadt u de logoafbeelding. Tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). De afbeelding wordt in de koptekst weergegeven.
+1. Selecteer Afbeelding. De werkbalk wordt weergegeven. Selecteren ![cmppr](assets/cmppr.png). De eigenschappenbrowser wordt links van het scherm geopend. **[!UICONTROL Browse]** en uploadt u de logoafbeelding. Selecteren ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). De afbeelding wordt in de koptekst weergegeven.
 
-   Tik op Bestand ophalen om het logo te downloaden dat in dit artikel wordt gebruikt als u er geen hebt.
+   U kunt de optie Bestand ophalen selecteren om het logo te downloaden dat in dit artikel wordt gebruikt als u er geen hebt.
 
 [Bestand ophalen](assets/logo.png)
 
@@ -69,7 +69,7 @@ AEM [!DNL Forms] biedt veel componenten om informatie weer te geven op een adapt
 
 Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt veel componenten voor het vastleggen en weergeven van informatie in een adaptieve vorm. U kunt de componenten slepen vanuit ![uitvouwen](assets/treeexpandall.png) op een formulier. Zie voor meer informatie over beschikbare componenten en de bijbehorende functionaliteit [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md).
 
-1. Sleep de **[!UICONTROL Numeric Box component]** op het adaptieve formulier. Plaats het voor de voettekstcomponent. Eigenschappen van component openen, wijzigen **[!UICONTROL Title]** van de component aan **`Customer ID`**, wijzigen **[!UICONTROL Element Name]** tot **`customer_ID`** de **[!UICONTROL Required Field]** optie, inschakelen **[!UICONTROL Use HTML5 Number Input Type]** en tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sleep de **[!UICONTROL Numeric Box component]** op het adaptieve formulier. Plaats het voor de voettekstcomponent. Eigenschappen van component openen, wijzigen **[!UICONTROL Title]** van de component aan **`Customer ID`**, wijzigen **[!UICONTROL Element Name]** tot **`customer_ID`** de **[!UICONTROL Required Field]** optie, inschakelen **[!UICONTROL Use HTML5 Number Input Type]** en selecteert u ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Sleep drie tekstvakcomponenten naar het aangepaste formulier. Plaats deze voor de voettekstcomponent. Stel de volgende eigenschappen in voor deze tekstvakken.:
 
    <table> 
@@ -107,7 +107,7 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
     </tbody> 
    </table>
 
-1. Sleep een **[!UICONTROL Numeric Box]** voor de voettekstcomponent. Open eigenschappen van de component, stel waarden in die in de onderstaande tabel worden vermeld, en tik ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sleep een **[!UICONTROL Numeric Box]** voor de voettekstcomponent. Open eigenschappen van de component, stel waarden in die in de onderstaande tabel worden vermeld, selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -117,7 +117,7 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
    | Vereist veld | Ingeschakeld |
    | Type weergavepatroon | Geen patroon |
 
-1. Sleep een **[!UICONTROL Email]** voor de voettekstcomponent. Open eigenschappen van de component, stel waarden in die in de onderstaande tabel worden vermeld en tik ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sleep een **[!UICONTROL Email]** voor de voettekstcomponent. Open eigenschappen van de component, stel waarden in die in de onderstaande tabel worden vermeld en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -125,7 +125,7 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
    | Elementnaam | customer_Email |
    | Vereist veld | Ingeschakeld |
 
-1. Sleep een **[!UICONTROL File Attachment]** voor de voettekstcomponent. Open eigenschappen van de component, stel waarden in die in de onderstaande tabel worden vermeld en tik ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sleep een **[!UICONTROL File Attachment]** voor de voettekstcomponent. Open eigenschappen van de component, stel waarden in die in de onderstaande tabel worden vermeld en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -148,7 +148,7 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
     </tbody> 
    </table>
 
-1. Sleep een **[!UICONTROL Submit Button]** aan het adaptieve formulier. Plaats het voor de voettekstcomponent. Eigenschappen van component openen, elementnaam wijzigen in `address_addition_update_submit`, tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). De indeling van het formulier is voltooid en het formulier ziet er als volgt uit:
+1. Sleep een **[!UICONTROL Submit Button]** aan het adaptieve formulier. Plaats het voor de voettekstcomponent. Eigenschappen van component openen, elementnaam wijzigen in `address_addition_update_submit`, selecteert u ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). De indeling van het formulier is voltooid en het formulier ziet er als volgt uit:
 
    ![adaptief-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 
@@ -161,8 +161,8 @@ Met de volgende stappen kunt u de handeling voor het verzenden van e-mail config
 1. De e-mailserver configureren. Zie voor meer informatie [E-mailmelding configureren](/help/sites-administering/notification.md).
 
 
-1. Tikken **[!UICONTROL Form Container]** in de inhoudsbrowser en tik op ![cmppr](assets/cmppr.png). De eigenschappenbrowser wordt aan de linkerkant geopend.
-1. Ga naar **[!UICONTROL Submission]** >  **[!UICONTROL Submit Action]**. Selecteer **[!UICONTROL Send Email]**. Geef de volgende waarden op en tik op ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteren **[!UICONTROL Form Container]** in de Inhoudsbrowser en selecteer ![cmppr](assets/cmppr.png). De eigenschappenbrowser wordt aan de linkerkant geopend.
+1. Ga naar **[!UICONTROL Submission]** >  **[!UICONTROL Submit Action]**. Selecteer **[!UICONTROL Send Email]**. Geef de volgende waarden op en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |--- |--- |
@@ -180,8 +180,8 @@ U kunt de **[!UICONTROL Preview option]** om de weergave en het gedrag van een f
 
 Aangepaste formulieren bieden ook een optie om een formulier voor verschillende apparaten te emuleren. Bijvoorbeeld iPhone, iPad en Desktop. U kunt beide gebruiken **[!UICONTROL Preview]** en **[!UICONTROL Emulator]** ![liniaal](assets/ruler.png) in combinatie met elkaar een voorbeeld van een formulier bekijken voor apparaten van verschillende schermgrootten.
 
-1. Tik op de knop **[!UICONTROL Preview]** aan de rechterkant van de formuliereditor. Het formulier wordt geopend in de voorbeeldmodus. Als u de in de zelfstudie vermelde naam hebt gebruikt, wordt een voorbeeld van de URL van het formulier weergegeven met [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Selecteer de **[!UICONTROL Preview]** aan de rechterkant van de formuliereditor. Het formulier wordt geopend in de voorbeeldmodus. Als u de in de zelfstudie vermelde naam hebt gebruikt, wordt een voorbeeld van de URL van het formulier weergegeven met [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Gebruiken ![liniaal](assets/ruler.png) om te zien hoe het formulier er op verschillende apparaten uitziet.
-1. Vul velden van het formulier in en tik op **[!UICONTROL Submit]**. Het formulier wordt verzonden en u wordt omgeleid naar de standaardversie **Bedankt** pagina. U kunt ook een aangepaste pagina voor bedankt opgeven. Zie voor meer informatie [Omleidingspagina configureren](/help/forms/using/configuring-redirect-page.md).
+1. Vul velden van het formulier in en selecteer **[!UICONTROL Submit]**. Het formulier wordt verzonden en u wordt omgeleid naar de standaardversie **Bedankt** pagina. U kunt ook een aangepaste pagina voor bedankt opgeven. Zie voor meer informatie [Omleidingspagina configureren](/help/forms/using/configuring-redirect-page.md).
 
 Het aangepaste formulier voor het toevoegen van een adres is gereed. Als u de in de zelfstudie vermelde naam hebt gebruikt en het formulier hebt geopend op de computer waarop de AEM Forms-server wordt uitgevoerd, is het formulier beschikbaar op [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

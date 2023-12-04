@@ -5,9 +5,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,8 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 ## Bereid Interactieve Communicatie gebruikend de Agent UI voor {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteer de gewenste interactieve communicatie en tik op **[!UICONTROL Open Agent UI]**.
+1. Selecteren **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteer de gewenste interactieve communicatie en selecteer **[!UICONTROL Open Agent UI]**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte velden met een sterretje (&amp;ast;) in om de optie **Verzenden** knop.
 
-   Tik op de waarde van een gegevensveld in de voorvertoning Interactieve communicatie om het bijbehorende gegevensveld op het tabblad Gegevens te markeren of om de andere reden.
+   Selecteer een waarde voor een gegevensveld in de voorvertoning Interactieve communicatie om het bijbehorende gegevensveld op het tabblad Gegevens te markeren of om de andere reden.
 
 ### Inhoud beheren {#manage-content}
 
@@ -57,7 +57,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Bewerk de documentfragmenten desgewenst op het tabblad Inhoud. Als u het relevante fragment in de inhoudshiërarchie de focus wilt geven, kunt u op de relevante regel of alinea in de voorvertoning Interactieve communicatie tikken of rechtstreeks in de inhoudshiërarchie op het fragment tikken.
+1. Bewerk de documentfragmenten desgewenst op het tabblad Inhoud. Als u het relevante fragment in de inhoudshiërarchie de focus wilt geven, kunt u de desbetreffende regel of alinea in de voorvertoning Interactieve communicatie selecteren of het fragment rechtstreeks in de inhoudshiërarchie selecteren.
 
    Het documentfragment met de regel &quot;Nu online betalen...&quot; wordt bijvoorbeeld geselecteerd in de voorvertoning in de onderstaande afbeelding en hetzelfde documentfragment is geselecteerd op het tabblad Inhoud.
 
@@ -65,7 +65,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    Tik op Geselecteerde modules in inhoud markeren op het tabblad Inhoud of Gegevens ( ![highlightSelectedModesincontentcr](assets/highlightselectedmodulesincontentccr.png)) linksboven in de voorvertoning kunt u de functionaliteit uitschakelen of inschakelen om naar het documentfragment te gaan wanneer in de voorvertoning op de desbetreffende tekst, alinea of gegevensveld wordt getikt of geselecteerd.
 
-   De fragmenten die door de agent terwijl het creëren van de Interactieve Communicatie kunnen worden uitgegeven hebben de Edit Geselecteerde Inhoud ( ![iconeditselected content](assets/iconeditselectedcontent.png)). Tik op het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
+   De fragmenten die door de agent terwijl het creëren van de Interactieve Communicatie kunnen worden uitgegeven hebben de Edit Geselecteerde Inhoud ( ![iconeditselected content](assets/iconeditselectedcontent.png)). Selecteer het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
 
    * [Opmaakopties](#formattingtext)
 
@@ -89,11 +89,11 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 1. Selecteer **[!UICONTROL Attachment]**. De agent UI toont de beschikbare gehechtheid zoals opstelling terwijl het creëren van de Interactieve Communicatie.
 
-   U kunt verkiezen om een gehechtheid samen met de Interactieve Mededeling niet voor te leggen door het meningspictogram te tikken en u kunt het kruis in de gehechtheid tikken om het (als de agent wordt toegestaan om de gehechtheid te schrappen of te verbergen) van de Interactieve Mededeling te schrappen. Voor de bijlagen die verplicht zijn opgegeven tijdens het maken van de interactieve communicatie, zijn de pictogrammen Weergeven en Verwijderen uitgeschakeld.
+   U kunt verkiezen om een gehechtheid samen met de Interactieve Mededeling niet voor te leggen door het meningspictogram te tikken en u kunt het kruis in de gehechtheid selecteren om het (als de agent wordt toegestaan om de gehechtheid te schrappen of te verbergen) van de Interactieve Mededeling te schrappen. Voor de bijlagen die verplicht zijn opgegeven tijdens het maken van de interactieve communicatie, zijn de pictogrammen Weergeven en Verwijderen uitgeschakeld.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Tik op de bibliotheektoegang ( ![bibliotheektoegang](assets/libraryaccess.png)) gebruiken om de inhoudsbibliotheek te openen en DAM-elementen in te voegen als bijlagen.
+1. Selecteer de bibliotheektoegang ( ![bibliotheektoegang](assets/libraryaccess.png)) gebruiken om de inhoudsbibliotheek te openen en DAM-elementen in te voegen als bijlagen.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 1. Als de volgorde van de bijlagen niet is vergrendeld tijdens het maken van de interactieve communicatie, kunt u de bijlagen opnieuw ordenen door een bijlage te selecteren en op de pijl-omlaag en -omhoog te tikken.
 1. Met Webvoorvertoning en Afdrukvoorbeeld kunt u zien of de twee uitvoerbestanden aan uw eisen voldoen.
 
-   Tik op **[!UICONTROL Submit]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
+   Als u de voorvertoningen bevredigend vindt, selecteert u **[!UICONTROL Submit]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
 
 ## Tekst opmaken {#formattingtext}
 
@@ -122,7 +122,7 @@ Lijst, werkbalk
 
 ### Tekstgedeelten markeren/benadrukken {#highlightemphasize}
 
-Selecteer de tekst en tik op Markeringskleur om\gedeelten van tekst in een bewerkbaar fragment te benadrukken.
+Als u\gedeelten van tekst in een bewerkbaar fragment wilt benadrukken, selecteert u de tekst en selecteert u Markeringskleur.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -183,22 +183,22 @@ De functie Opslaan als concept is niet standaard ingeschakeld. Voer de volgende 
    SPI laat u toe om de ontwerp versie van de Interactieve Mededeling aan het gegevensbestand met een ontwerpidentiteitskaart als uniek herkenningsteken te bewaren. Deze instructies veronderstellen dat u vroegere kennis op hoe te om een bundel te bouwen OSGi gebruikend een Geweven project hebt.
 
    Voor voorbeeld-SPI-implementatie raadpleegt u [Voorbeeld crDocumentInstance SPI-implementatie](#sample-ccrDocumentInstance-spi).
-1. Openen `http://<hostname>:<port>/ system/console/bundles` en tikken **[!UICONTROL Install/Update]** om de OSGi-bundel te uploaden. Controleer of de status van het geüploade pakket wordt weergegeven als **Actief**. Start de server opnieuw als de status van het pakket niet wordt weergegeven zoals **Actief**.
+1. Openen `http://<hostname>:<port>/ system/console/bundles` en selecteert u **[!UICONTROL Install/Update]** om de OSGi-bundel te uploaden. Controleer of de status van het geüploade pakket wordt weergegeven als **Actief**. Start de server opnieuw als de status van het pakket niet wordt weergegeven zoals **Actief**.
 1. Ga naar `https://'[server]:[port]'/system/console/configMgr`.
-1. Tik op **[!UICONTROL Create Correspondence Configuration]**.
-1. Selecteren **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** en tikken **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Create Correspondence Configuration]**.
+1. Selecteren **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** en selecteert u **[!UICONTROL Save]**.
 
 ### Een interactieve communicatie opslaan als concept {#save-as-draft-agent-ui}
 
 Voer de volgende stappen uit om een Interactieve Mededeling als ontwerp te bewaren:
 
-1. Selecteer een interactieve communicatie in Forms Manager en tik op **[!UICONTROL Open Agent UI]**.
+1. Selecteer een interactieve communicatie in Forms Manager en selecteer **[!UICONTROL Open Agent UI]**.
 
-1. Breng aangewezen veranderingen in de gebruikersinterface van de Agent aan en tik **[!UICONTROL Save as Draft]**.
+1. Breng aangewezen veranderingen in de Agent UI aan en selecteer **[!UICONTROL Save as Draft]**.
 
-1. Geef de naam van het concept op in het dialoogvenster **[!UICONTROL Name]** veld en tik **[!UICONTROL Done]**.
+1. Geef de naam van het concept op in het dialoogvenster **[!UICONTROL Name]** veld en selecteer **[!UICONTROL Done]**.
 
-Tik op de knop Interactieve communicatie als concept **[!UICONTROL Save Changes]** om eventuele verdere wijzigingen in het concept op te slaan.
+Als u de interactieve communicatie eenmaal als concept hebt opgeslagen, selecteert u **[!UICONTROL Save Changes]** om eventuele verdere wijzigingen in het concept op te slaan.
 
 ### Het concept van een interactieve communicatie ophalen {#retrieve-draft}
 

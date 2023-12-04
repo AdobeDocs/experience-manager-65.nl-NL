@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 6%
+source-wordcount: '1798'
+ht-degree: 5%
 
 ---
 
@@ -120,7 +120,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 1. Als u een specifiek apparaat wilt selecteren om te emuleren, kunt u:
 
    * Gebruik het pictogram Apparaat selecteren en selecteer een keuze in een vervolgkeuzelijst.
-   * Tik/klik op de apparaatindicator op de emulatorwerkbalk.
+   * Klik op de apparaatindicator op de emulatorwerkbalk.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -139,7 +139,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
    * De lijn voor de vouwlijn wordt niet weergegeven als de hoogte van het geëmuleerde apparaat groter is dan de schermgrootte.
    * De vouw wordt getoond voor het gemak van de auteur en niet op de gepubliceerde pagina getoond.
 
-## Een lay-outcontainer en de bijbehorende content toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
+## Een container voor lay-out en de bijbehorende inhoud toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
 
 A **Layout Container** is een alineasysteem dat:
 
@@ -164,7 +164,7 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 >
 >Aangezien een lay-outcontainer een paragraafsysteem is, zal het schrappen van de component zowel het lay-outnet als alle componenten (en hun inhoud) schrappen die binnen de container worden gehouden.
 
-1. Als u de muisaanwijzer boven de tijdelijke aanduiding voor het raster houdt of erop tikt, wordt het menu Handeling weergegeven.
+1. Als u de muisaanwijzer boven de tijdelijke aanduiding voor het raster houdt of deze selecteert, wordt het actiemenu weergegeven.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -216,7 +216,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
   >
   >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
 
-* Klik/tik op een inhoudscomponent, de toolbar laat u:
+* Klik op een inhoudcomponent, laat de toolbar u:
 
    * **Bovenliggend**
 
@@ -232,7 +232,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* In **Layout** modus waarop u kunt tikken of klikken op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk voor deze modus wordt dan weergegeven.
+* In **Layout** in de modus waarop u kunt klikken op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk voor deze modus wordt dan weergegeven.
 
   De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
 

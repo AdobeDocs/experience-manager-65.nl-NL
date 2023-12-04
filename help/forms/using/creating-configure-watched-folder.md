@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Controleer het volgende voordat u een gecontroleerde map configureert:
 
 Voer de volgende stappen uit om een controlemap te maken:
 
-1. Tikken **Adobe Experience Manager** in de linkerbovenhoek van het scherm.
-1. Tikken **Gereedschappen** > **Forms** > **Controlemap configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
-1. Tikken **Nieuw**. Er wordt een lijst weergegeven met velden die vereist zijn om de controlemap te maken:
+1. Selecteren **Adobe Experience Manager** in de linkerbovenhoek van het scherm.
+1. Selecteren **Gereedschappen** > **Forms** > **Controlemap configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
+1. Selecteren **Nieuw**. Er wordt een lijst weergegeven met velden die vereist zijn om de controlemap te maken:
 
    * **Naam**: Identificeert de gecontroleerde map. Gebruik voor de naam alleen alfanumerieke tekens.
    * **Pad**: Geeft de locatie van de gecontroleerde map aan. In een gegroepeerd milieu, moet dit plaatsen aan een gedeelde netwerkomslag richten die voor elke gebruiker toegankelijk is die AEM op verschillende knopen van een cluster in werking stelt.
@@ -59,7 +59,7 @@ Voer de volgende stappen uit om een controlemap te maken:
 
    * **Uitvoerbestandspatroon**: Geef een door puntkomma&#39;s (;) gescheiden lijst met patronen op die een gecontroleerde map gebruikt om de naam en locatie van uitvoerbestanden en -mappen te bepalen. Zie voor meer informatie over bestandspatronen [Bestandspatronen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-1. Tikken **Geavanceerd**. Het geavanceerde tabblad bevat meer velden. De meeste van deze velden bevatten een standaardwaarde.
+1. Selecteren **Geavanceerd**. Het geavanceerde tabblad bevat meer velden. De meeste van deze velden bevatten een standaardwaarde.
 
    * **Filter Payload Mapper:** Wanneer u een controlemap maakt, maakt deze een mappenstructuur in de map die wordt gecontroleerd. De mapstructuur heeft mappen voor werkgebied, resultaat, behoud, invoer en mislukking. De mappenstructuur kan dienen als invoerlading aan het werkschema en output van een werkschema goedkeuren. Het kan ook een lijst van mislukkingspunten maken, als om het even welk. De structuur van een lading is verschillend van de structuur van een gelete op omslag. U kunt aangepaste scripts schrijven om de structuur van een gecontroleerde map toe te wijzen aan de payload. Een dergelijk script wordt een payload mapfilter genoemd. Er zijn twee uitvoeringen beschikbaar voor de payload mapper box. Als u geen [een aangepaste implementatie](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)Gebruik een van de implementaties buiten de box:
 
@@ -113,7 +113,7 @@ Voer de volgende stappen uit om een controlemap te maken:
 
 U kunt niet alleen de naam van de gecontroleerde map wijzigen, maar ook alle eigenschappen van een bestaande controlemap wijzigen. Voer de volgende stappen uit om eigenschappen van een bestaande controlemap te wijzigen:
 
-1. Tik op de knop **Adobe Experience Manager** in de linkerbovenhoek van het scherm.
-1. Tikken **Gereedschappen** > **Forms** > **Controlemap configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
-1. Selecteer links in het scherm Gecontroleerde map de controlemap en tik op **Bewerken.** Er wordt een lijst weergegeven met velden die nodig zijn om de controlemap te maken. De velden in het dialoogvenster **Basis** Tab zijn verplicht. Het geavanceerde tabblad bevat meer velden. De meeste van deze velden bevatten een standaardwaarde. U kunt deze eigenschappen naar wens wijzigen.
-1. Tik na het wijzigen van de eigenschappen op **Bijwerken**. De gewijzigde eigenschappen worden opgeslagen.
+1. Selecteer de **Adobe Experience Manager** in de linkerbovenhoek van het scherm.
+1. Selecteren **Gereedschappen** > **Forms** > **Controlemap configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
+1. Selecteer links in het scherm Controlemap de controlemap en selecteer **Bewerken.** Er wordt een lijst weergegeven met velden die nodig zijn om de controlemap te maken. De velden in het dialoogvenster **Basis** Tab zijn verplicht. Het geavanceerde tabblad bevat meer velden. De meeste van deze velden bevatten een standaardwaarde. U kunt deze eigenschappen naar wens wijzigen.
+1. Selecteer nadat u de eigenschappen hebt gewijzigd **Bijwerken**. De gewijzigde eigenschappen worden opgeslagen.

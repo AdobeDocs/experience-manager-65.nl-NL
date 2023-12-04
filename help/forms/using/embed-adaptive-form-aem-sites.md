@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1141'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Een adaptief formulier of interactieve communicatie insluiten met AEM Forms Cont
    >
    >Meerdere AEM Forms Container-componenten op een pagina worden niet ondersteund.
 
-1. Tik op de ingesloten AEM Forms Container-component op de sitepagina en tik vervolgens op ![settings_icon](assets/settings_icon.png) op de actiebalk. De **[!UICONTROL Edit AEM Forms Container]** wordt geopend.
+1. Selecteer de ingesloten AEM Forms Container-component op de sitepagina en selecteer vervolgens ![settings_icon](assets/settings_icon.png) op de actiebalk. De **[!UICONTROL Edit AEM Forms Container]** wordt geopend.
 1. Geef het volgende op in het dialoogvenster AEM Forms-container bewerken.
 
    * **Type element:** Selecteer het type element dat u wilt insluiten. De opties zijn adaptieve vorm en interactieve communicatie
@@ -88,7 +88,7 @@ AEM sitepagina bevat een verwijzing naar het adaptieve formulier en de interacti
 Voer een van de volgende handelingen uit als u een configuratie of eigenschap van het ingesloten adaptieve formulier en interactieve communicatie wilt wijzigen.
 
 * Open het oorspronkelijke formulier in adaptieve formulieren of interactieve communicatie in de respectievelijke editors en wijzig deze.
-* Tik in de bewerkingsmodus op het aangepaste formulier of de interactieve communicatie vanuit de sitepagina en tik vervolgens op **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
+* Selecteer het aangepaste formulier of de interactieve communicatie vanuit de sitepagina in de bewerkingsmodus en selecteer **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
 
 >[!NOTE]
 >

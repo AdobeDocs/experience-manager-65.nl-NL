@@ -1,13 +1,13 @@
 ---
-title: Android&trade instellen; studioproject en bouw de Android&handel; app
-description: Stappen voor het instellen van de Android&trade. Studio-project en bouw het installatieprogramma voor de Adobe Experience Manager (AEM) Forms-app
+title: Android&trade instellen; studio-project en Android&trade ontwikkelen; app
+description: Stappen voor het instellen van Android&trade; Studio-project en het installatieprogramma voor de Adobe Experience Manager (AEM) Forms-app
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -16,22 +16,22 @@ ht-degree: 0%
 
 Dit artikel is bedoeld voor het maken van de AEM Forms App 6.3.1.1 en latere versies. Voor het maken van een app op basis van de broncode van de AEM Forms App 6.3 raadpleegt u [Het Eclipse-project instellen en de Android™-app ontwikkelen](/help/forms/using/setup-eclipse-project-build-installer.md).
 
-AEM Forms geeft de volledige broncode van de AEM Forms-app op. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over softwaredistributie.
+AEM Forms geeft de volledige broncode van de AEM Forms-app op. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het broncodearchief, `adobe-lc-mobileworkspace-src-<version>.zip` maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over Softwaredistributie.
 
 Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de **[!UICONTROL Filters]** sectie:
    1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
    2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Tik op de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en tikken **[!UICONTROL Download]**.
+1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
 In de volgende afbeelding wordt de geëxtraheerde inhoud van de `adobe-lc-mobileworkspace-src-<version>.zip`.
 
-![Geëxtraheerde inhoud van de gecomprimeerde Android™-bron](assets/mws-content-1.png)
+![Inhoud van de gecomprimeerde Android™-bron extraheren](assets/mws-content-1.png)
 
 In de volgende afbeelding wordt de mapstructuur van de `android`in de `src`map.
 
@@ -75,7 +75,7 @@ In de volgende afbeelding wordt de mapstructuur van de `android`in de `src`map.
 
    ![project verduisteren nadat de app is gemaakt](assets/eclipsebuildmws.png)
 
-1. Selecteer in Android™ Studio de optie **[!UICONTROL Import Project (Eclipse ADT, Gradle, Etc.)]**.
+1. Selecteer in Android™ Studio **[!UICONTROL Import Project (Eclipse ADT, Gradle, Etc.)]**.
 1. In de projectverkenner, selecteer de wortelfolder van het project dat u in wilt bouwen **Hoofdmap** tekstvak:
 
    **Voor Mac-gebruikers:** [Gebruiker_startpunt]/Projecten/MobileWorkspace/src/android

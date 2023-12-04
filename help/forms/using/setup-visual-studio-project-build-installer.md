@@ -8,25 +8,25 @@ topic-tags: forms-app
 discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
 
 # Opstelling het project van Visual Studio en bouwt Windows app{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een toepassing van de douanewerkruimte te bouwen. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip`maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over softwaredistributie.
+AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een toepassing van de douanewerkruimte te bouwen. Het broncodearchief, `adobe-lc-mobileworkspace-src-<version>.zip`maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over Softwaredistributie.
 
 Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de **[!UICONTROL Filters]** sectie:
    1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
    2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Tik op de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en tikken **[!UICONTROL Download]**.
+1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
@@ -53,7 +53,7 @@ Voor Windows-apparaten hebt u het volgende nodig:
 
 Voer de volgende stappen aan opstelling uit AEM Forms app project in Visual Studio.
 
-1. Kopieer de `adobe-lc-mobileworkspace-src-<version>.zip` archiveren naar `%HOMEPATH%\Projects` map in Windows 8.1 of Windows 10 met Visual Studio 2015 geïnstalleerd en geconfigureerd.
+1. De `adobe-lc-mobileworkspace-src-<version>.zip` archiveren naar `%HOMEPATH%\Projects` map in Windows 8.1 of Windows 10 met Visual Studio 2015 geïnstalleerd en geconfigureerd.
 1. Het archief in het dialoogvenster `%HOMEPATH%\Projects\MobileWorkspace` directory.
 1. Ga naar de `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` directory.
 1. Open de `CordovaApp.sln` dossier gebruikend Visual Studio 2015 en ga aan de bouw van AEM Forms app te werk.
@@ -64,9 +64,9 @@ Voer de volgende stappen uit om AEM Forms-app te maken en te implementeren.
 
 >[!NOTE]
 >
->Gegevens die zijn opgeslagen in het Windows-bestandssysteem voor de AEM Forms-toepassing, worden niet gecodeerd. Men adviseert dat u een derdehulpmiddel zoals de Encryptie van de Aandrijving van Windows BitLocker gebruikt om schijfgegevens te coderen.
+>Gegevens die zijn opgeslagen in het Windows-bestandssysteem voor de AEM Forms-toepassing, worden niet gecodeerd. Het wordt geadviseerd dat u een derdehulpmiddel zoals de Encryptie van de Aandrijving van Windows BitLocker gebruikt om schijfgegevens te coderen.
 
-1. Selecteer in de werkbalk Standaard van Visual Studio de optie **Geen** in het keuzemenu voor de constructiemodus.
+1. In de StandaardToolbar van Visual Studio, selecteer **Geen** in het keuzemenu voor de constructiemodus.
 
 1. Selecteer Windows-AnyCPU, Windows-x64 of Windows-x86 op basis van uw platform. Windows-AnyCPU wordt aanbevolen.
 1. In de Ontdekkingsreiziger van de Oplossing van Visual Studio, klik het project met de rechtermuisknop aan **CordovaApp.Windows** en selecteert u **Store > Create AppPackages**.
@@ -77,17 +77,17 @@ Voer de volgende stappen uit om AEM Forms-app te maken en te implementeren.
 
    Het installatiebestand van CordovaApp.Windows_3.0.2.0_anycpu.appx wordt gemaakt in de map platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test.
 
-   Als de fout optreedt `Retarget to windows 8.1 required`, klikt u met de rechtermuisknop op de fout en selecteert u in het pop-upmenu de optie **Opnieuw toewijzen aan Windows 8.1**.
+   Als u de fout tegenkomt `Retarget to windows 8.1 required`, klikt u met de rechtermuisknop op de fout en selecteert u in het pop-upmenu de optie **Opnieuw toewijzen aan Windows 8.1**.
 
    ![retarget-oplossing](assets/retarget-solution.png)
 
-1. Selecteer in de wizard App Packages maken het weer of u uw app niet wilt uploaden naar de Windows Store en klik vervolgens op **Volgende**.
+1. Selecteer in de wizard App Packages maken het weer of u de app niet naar de winkel Windows wilt uploaden en klik vervolgens op **Volgende**.
 
-   ![createapppackageswizard1](assets/createapppackageswizard1.png)
+   ![createAppPackageswizard1](assets/createapppackageswizard1.png)
 
 1. Breng de gewenste wijzigingen aan in de parameters, zoals de versie en uitvoerlocatie van de build van de app.
 
-   ![createapppackageswizard2](assets/createapppackageswizard2.png)
+   ![createAppPackageswizard2](assets/createapppackageswizard2.png)
 
 1. Nadat het project is gemaakt, kunt u de app installeren met:
 
@@ -106,8 +106,6 @@ Voer de volgende stappen uit om AEM Forms-app te maken en te implementeren.
    1. Certificaat (momenteel is het een zelfondertekend certificaat van Apache Cordova)
    1. Afhankelijkheidsmap
    1. PowerShell-bestand (.ps1-extensie)
-
-
 
 ## Het opstellen van een app die Vensters PowerShell gebruikt {#deploying-an-app-using-windows-powershell}
 
@@ -138,7 +136,7 @@ De app implementeren:
 
 1. Voer de handeling uit op uw apparaat `gpedit.msc`.
 1. Navigeren naar **Computerconfiguratie > Systeembeheersjablonen > Windows-component > Implementatie toepassingspakket**.
-1. Klikken met rechtermuisknop aan op **Alle vertrouwde toepassingen installeren**.
+1. Klikken met rechtermuisknop **Alle vertrouwde toepassingen installeren**.
 1. Klikken **Bewerken** en selecteert u **Ingeschakeld**.
 
 1. Klikken **OK**.

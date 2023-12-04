@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,8 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 #### Voor iOS {#for-ios}
 
 1. Open de `Capture.xcodeproj` project in Xcode.
-1. (***Pictogram voor aanpassen***) Navigeer in de navigatorweergave van Vastleggen naar **[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**. Klik op de vervolgkeuzelijst naast de pictogrambestanden. Geef de naam van het pictogrambestand (.png) op en upload het bestand op **[!UICONTROL Capture > Capture > Resources > icons]**. Momenteel ondersteunde dimesies zijn: 29x29, 50x50, 58x58, 72x72, 100x100 en 144x144.
-1. (***Voor het aanpassen van opstartafbeeldingen***) Zorg ervoor dat de bestandsnamen van de afbeeldingen als volgt zijn:
+1. (***Pictogram voor aanpassen***) Navigeer in de navigatorweergave van Vastleggen naar **[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**. Klik op de vervolgkeuzelijst naast de pictogrambestanden. Geef de naam van het pictogrambestand (.png) op en upload het bestand op **[!UICONTROL Capture > Capture > Resources > icons]**. Ondersteunde afmetingen zijn: 29x29, 50x50, 58x58, 72x72, 100x100 en 144x144.
+1. (***Startafbeeldingen aanpassen***) Zorg ervoor dat de bestandsnamen van de afbeeldingen als volgt zijn:
 
    * Voor staand: `Default-Portrait~ipad.png` en `Default-Portrait@2x~ipad.png`
    * Voor liggend: `Default-Landscape~ipad.png` en `Default-Landscape@2x~ipad.png`
@@ -119,7 +119,7 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Werk de waarde in de `<name>...</name>` tag.
+1. Werk de waarde in het dialoogvenster `<name>...</name>` -tag.
 1. Maak de AEM Forms-app opnieuw.
 
    Ga voor meer informatie over het ontwikkelen van de app voor Windows naar [Opstelling het project van Visual Studio en bouwt Windows app](/help/forms/using/setup-visual-studio-project-build-installer.md).
@@ -181,7 +181,7 @@ Zorg ervoor dat u de volgende afbeeldingen hebt:
 
 ## Het logo aanpassen in het app-menu {#customizing_images_on_the_login_page-1}
 
-Nadat u zich hebt aangemeld bij de AEM Forms-app en op de menuknop hebt getikt, ziet u het logo boven het menu. Voer de volgende stappen uit om het standaardlogo aan te passen:
+Nadat u zich hebt aangemeld bij de AEM Forms-app en de menuknop hebt geselecteerd, ziet u het logo boven het menu. Voer de volgende stappen uit om het standaardlogo aan te passen:
 
 **Voordat u begint**
 

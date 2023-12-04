@@ -11,9 +11,9 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3085'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
 
   Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen worden gewijzigd op basis van een component. Eigenschappen van de adaptieve formuliercontainer weergeven:
 
-  Selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+  Selecteer een component en selecteer vervolgens ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en selecteer vervolgens ![cmppr](assets/cmppr.png).
 
 * **Bandenbrowser**
 
@@ -281,16 +281,16 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
 
 U kunt de volgende tips en trucs gebruiken bij het werken met adaptieve formuliercomponenten:
 
-* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Tik op de component en tik om de eigenschappen van een component te configureren ![cmppr](assets/cmppr.png) om de componenteigenschappen in de browser van Eigenschappen te openen.
-* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u tikt ![cmppr](assets/cmppr.png)kunt u de naam van de component wijzigen door de **[!UICONTROL Element Name]** in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
+* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Selecteer de component en selecteer ![cmppr](assets/cmppr.png) om de componenteigenschappen in de browser van Eigenschappen te openen.
+* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![cmppr](assets/cmppr.png)kunt u de naam van de component wijzigen door de **[!UICONTROL Element Name]** in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
 
 * U kunt de eigenschap Titel van een adaptieve formuliercomponent inline wijzigen in de formuliereditor zonder de browser Eigenschappen te openen, zolang de titel maar zichtbaar is op het formulier. Daartoe:
 
-   1. Tik om een component te selecteren die een **[!UICONTROL Title]** eigendom en waarvan **[!UICONTROL Hide title]** eigenschap is uitgeschakeld.
+   1. Selecteer een component met een **[!UICONTROL Title]** eigendom en waarvan **[!UICONTROL Hide title]** eigenschap is uitgeschakeld.
 
-   1. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
+   1. Selecteren ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
 
-   1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op de toets Esc om de wijzigingen te verwijderen.
+   1. Wijzig de titel en selecteer de Return-toets of selecteer een willekeurige locatie buiten de component om de wijzigingen op te slaan. Selecteer de sleutel van Esc om de veranderingen te verwerpen.
 
 * Sommige adaptieve formuliercomponenten, zoals E-mail en Telefoon, bevatten validatiepatronen die niet in de verpakking staan. U kunt echter aangepaste validatie opgeven door het dialoogvenster **[!UICONTROL Validation Pattern]** onder de accordeon Patronen in de eigenschappen van de component. Zie de componentbeschrijvingen in de bovenstaande tabel voor meer informatie over standaardvalidaties.
 
@@ -304,7 +304,7 @@ U kunt de volgende tips en trucs gebruiken bij het werken met adaptieve formulie
 * Met de component Bestandsbijlage kan een gebruiker standaard slechts één bestand bijvoegen. U kunt de componenteigenschappen echter configureren om meerdere bijlagen te ondersteunen. Als een gebruiker meerdere bestanden met dezelfde bestandsnaam bijvoegt, kunnen er bovendien problemen optreden in de bijlagen. Daarom wordt aanbevolen een unieke id te koppelen voor elke verzonden bijlage bij het verzenden van het formulier. Daartoe:
 
    1. Ga op uw AEM Forms-server naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-   1. Zoeken en tikken **[!UICONTROL Adaptive Forms Configuration Service]**.
+   1. Zoeken en selecteren **[!UICONTROL Adaptive Forms Configuration Service]**.
    1. Schakel in het dialoogvenster Adaptive Forms Configuration Service de optie **[!UICONTROL Make File Names Unique]**. Standaard is dit uitgeschakeld.
 
 * Om gebruikers in staat te stellen een PDF vast te maken gebruikend browser Safari, zorg ervoor dat **application/pdf** wordt toegevoegd aan de eigenschap Ondersteunde bestandstypen van de component Bestandsbijlage. Aangepaste formulieren die zijn gemaakt met een eerdere AEM Forms-versie kunnen **.pdf** in plaats van **application/pdf** in de eigenschap Ondersteunde bestandstypen.
@@ -345,7 +345,7 @@ De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van 
 
 Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt bewerken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
-A.**Configureren**: Wanneer u tikt **[!UICONTROL Configure]**, zijn componenteigenschappen zichtbaar in de zijbalk. Als u deze eigenschappen configureert, kunt u de ervaring voor het vastleggen van gegevens aanpassen. U kunt de elementnaam van de component wijzigen en de labeltekst opgeven in het veld Titel van de component. Met elementnaam kunt u waarden vastleggen die gebruikers invoeren met de component. In de componenteigenschappen geeft u het gedrag van de component op en beheert u de gebruikersinvoer. Configureer eigenschappen in de zijbalk om gebruikersgegevens vast te leggen en te gebruiken voor verdere verwerking. Met eigenschappen voor adaptieve formuliercontainers kunt u clientbibliotheken, indelingen, thema&#39;s, Document of Record-instellingen, opslaginstellingen, verzendinstellingen en metagegevensinstellingen opgeven.
+A.**Configureren**: Wanneer u **[!UICONTROL Configure]**, zijn componenteigenschappen zichtbaar in de zijbalk. Als u deze eigenschappen configureert, kunt u de ervaring voor het vastleggen van gegevens aanpassen. U kunt de elementnaam van de component wijzigen en de labeltekst opgeven in het veld Titel van de component. Met elementnaam kunt u waarden vastleggen die gebruikers invoeren met de component. In de componenteigenschappen geeft u het gedrag van de component op en beheert u de gebruikersinvoer. Configureer eigenschappen in de zijbalk om gebruikersgegevens vast te leggen en te gebruiken voor verdere verwerking. Met eigenschappen voor adaptieve formuliercontainers kunt u clientbibliotheken, indelingen, thema&#39;s, Document of Record-instellingen, opslaginstellingen, verzendinstellingen en metagegevensinstellingen opgeven.
 
 B.**Kopiëren**: Met de optie Kopiëren kunt u een component kopiëren en op andere plaatsen in het formulier plakken. Wanneer u een component plakt, krijgt de geplakte component een nieuwe elementnaam maar behoudt deze de eigenschappen van de gekopieerde component.
 
@@ -363,7 +363,7 @@ H. **Groep**: Hiermee kunt u meerdere componenten selecteren als u meerdere comp
 
 I. **Bovenliggend**: Hiermee kunt u het bovenliggende element van een component selecteren. Een tekstveld bevindt zich bijvoorbeeld binnen een subsectie, die zich in een sectie bevindt. De sectie bevindt zich in het hoofddeelvenster van de hulplijn en de adaptieve formuliercontainer is het bovenliggende element van een hoofddeelvenster van de hulplijn. Voor een component, kunt u alle opties zien met hiërarchie gesorteerd onderaan-op.
 
-Als u bijvoorbeeld tikt **[!UICONTROL Parent]** voor een tekstvak ziet u :
+Als u bijvoorbeeld **[!UICONTROL Parent]** voor een tekstvak ziet u :
 
 * Onderafdeling
 * Sectie

@@ -10,9 +10,9 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ U kunt [adaptieve formulieren](../../forms/using/creating-adaptive-form.md) en [
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tik om uit te breiden **[!UICONTROL Select Form Data Model]**. Alle beschikbare formuliergegevensmodellen worden weergegeven.
+1. Selecteren om uit te breiden **[!UICONTROL Select Form Data Model]**. Alle beschikbare formuliergegevensmodellen worden weergegeven.
 
    Selecteer een gegevensmodel.
 
@@ -93,19 +93,19 @@ Zie voor meer informatie:
 
 ## Voorvertonen met voorbeeldgegevens {#preview-ic}
 
-Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten in het formuliergegevensmodel genereren en bewerken. U kunt deze gegevens gebruiken om interactieve communicatie en adaptieve formulieren voor te vertonen en te testen. U moet de voorbeeldgegevens genereren voordat u een voorvertoning weergeeft zoals beschreven in [Werken met formuliergegevensmodel](../../forms/using/work-with-form-data-model.md#sample).
+Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten in het formuliergegevensmodel genereren en bewerken. U kunt deze gegevens gebruiken om interactieve communicatie en adaptieve formulieren voor te vertonen en te testen. Voorbeeldgegevens genereren voor voorvertoning zoals beschreven in [Werken met formuliergegevensmodel](../../forms/using/work-with-form-data-model.md#sample).
 
 Een voorvertoning weergeven van een interactieve communicatie met voorbeeldgegevens van het formuliergegevensmodel:
 
 1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms > Forms & Documents]**.
-1. Selecteer een interactieve communicatie en tik op **[!UICONTROL Preview]** in de werkbalk om **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, of **[!UICONTROL Both Channels]** om een voorvertoning van de interactieve communicatie te bekijken.
-1. In de voorvertoning [*kanaal*] ervoor te zorgen dat **[!UICONTROL Test Data of Form Data Model]** is geselecteerd en tikt **[!UICONTROL Preview]**.
+1. Selecteer een interactieve communicatie en selecteer **[!UICONTROL Preview]** in de werkbalk om **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, of **[!UICONTROL Both Channels]** om een voorvertoning van de interactieve communicatie te bekijken.
+1. In de voorvertoning [*kanaal*] ervoor te zorgen dat **[!UICONTROL Test Data of Form Data Model]** is geselecteerd en selecteert **[!UICONTROL Preview]**.
 
 De interactieve communicatie wordt geopend met vooraf ingevulde voorbeeldgegevens.
 
 ![webvoorvertoning](assets/web-preview.png)
 
-Als u een voorbeeld van een adaptief formulier wilt bekijken met voorbeeldgegevens, opent u het adaptieve adaptieve formulier in de modus Ontwerpen en tikt u op **[!UICONTROL Preview]**.
+Als u een voorbeeld van een adaptief formulier met voorbeeldgegevens wilt bekijken, opent u het adaptieve adaptieve formulier in de modus Ontwerpen en selecteert u **[!UICONTROL Preview]**.
 
 ## Vooraf invullen met service voor formuliergegevensmodellen {#prefill}
 
@@ -135,10 +135,10 @@ U kunt ook formulierbijlagen verzenden naar een gegevensbron met binaire objecte
 
 1. Voeg een gegevensmodelobject dat een binaire eigenschap bevat toe aan het formuliergegevensmodel.
 1. Sleep de **[!UICONTROL File Attachment]** van de Componentbrowser naar het adaptieve formulier.
-1. Tik om de toegevoegde component te selecteren en tik ![settings_icon](assets/settings_icon.png) om de browser van Eigenschappen voor de component te openen.
-1. Tik in het veld Bindverwijzing op ![mapSearch_18](assets/foldersearch_18.png) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
+1. Selecteer de toegevoegde component en selecteer ![settings_icon](assets/settings_icon.png) om de browser van Eigenschappen voor de component te openen.
+1. Selecteer in het veld Bindverwijzing de optie ![mapSearch_18](assets/foldersearch_18.png) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
 
-   Tikken ![knop controleren](assets/check-button.png) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
+   Selecteren ![knop controleren](assets/check-button.png) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
 
 1. Schakel in het gedeelte Verzending van de eigenschappen van de container van adaptieve formulieren de optie **[!UICONTROL Submit Form Attachments]**. De bijlage in het binaire-eigenschapveld wordt naar de gegevensbron verzonden bij het verzenden van het formulier.
 

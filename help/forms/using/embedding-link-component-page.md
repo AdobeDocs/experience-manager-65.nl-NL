@@ -1,7 +1,7 @@
 ---
 title: Koppelingscomponent insluiten in een pagina
 seo-title: Embedding link component in a page
-description: Met de koppelingscomponent kunt u een adaptief document of een adaptief formulier van een willekeurige pagina koppelen.
+description: U kunt de koppelingscomponent gebruiken om een adaptief document of een adaptief formulier van een willekeurige pagina te koppelen.
 seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.
 uuid: 22f488fc-bb1a-40aa-a5f4-6d04d7250f29
 content-type: reference
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -25,17 +25,17 @@ De koppelingscomponent is een lid van de categorie Document Services. Zorg ervoo
 
 ## Component koppelen {#link-component}
 
-Met de component Koppeling kunnen auteurs van formulierportaalpagina&#39;s vanaf elke locatie op een pagina een koppeling naar een adaptief formulier maken. De component van de Verbinding is beschikbaar in de sectie van de Diensten van het Document in componentenbrowser.
+Met de component Koppeling kunnen auteurs van formulierportaalpagina&#39;s vanaf elke locatie op een pagina een koppeling naar een adaptief formulier maken. De component Link is beschikbaar in de sectie Document Services in de componentbrowser.
 
 Voer de volgende stappen uit om een component van de Verbinding aan de pagina toe te voegen:
 
-1. Sleep de **Koppeling** op de pagina. Selecteer de component en tik op ![cmppr](assets/cmppr.png). Het dialoogvenster Koppelingscomponent bewerken wordt geopend.
+1. Sleep de **Koppeling** op de pagina. Selecteer de component en selecteer ![cmppr](assets/cmppr.png). Het dialoogvenster Koppelingscomponent bewerken wordt geopend.
 
    ![edit-link-component](assets/edit-link-component.png)
 
 1. In de **Weergave** kunt u het volgende opgeven:
 
-   * **Bijschrift koppelen**: Tekst of bijschrift voor de koppeling koppelen.
+   * **Bijschrift koppelen**: Koppel tekst of bijschrift voor de koppeling.
    * **Knopinfo koppeling**: Knopinfo voor de koppeling.
    * **Lay-outsjabloon**: Sjabloon voor de lay-out van de component Koppeling.
 
@@ -45,12 +45,12 @@ Voer de volgende stappen uit om een component van de Verbinding aan de pagina to
 
    * **Rendertype**: De renderindeling—PDF, HTML of Automatisch. Met het rendertype Automatisch wordt de gebruikersomgeving gedetecteerd en wordt het formulier dienovereenkomstig weergegeven als HTML of als PDF. Als het formulier bijvoorbeeld wordt geopend vanaf een mobiel apparaat, geeft het rendertype Automatisch het formulier weer in HTML.
    * **URL verzenden:**  URL aan servlet waar de vormgegevens worden voorgelegd.
-   * **HTML-profiel**: Profiel voor weergave van het formulier als HTML.
+   * **HTML-profiel**: Profiel voor het weergeven van het formulier als HTML.
    * **PDF-profiel**: Profiel voor het weergeven van het formulier als PDF-document.
 
 1. Open de **Geavanceerd** tab. U kunt de extra parameters in het sleutel-waarde paarformaat specificeren. Wanneer op de koppeling wordt geklikt, worden deze aanvullende parameters doorgegeven en samen met het formulier doorgegeven.
 
-   Tikken **Gereed** om de configuratie op te slaan.
+   Selecteren **Gereed** om de configuratie op te slaan.
 
 ## Aanbevolen procedures voor het gebruik van de component Koppeling {#best-practices-for-using-link-component-br}
 

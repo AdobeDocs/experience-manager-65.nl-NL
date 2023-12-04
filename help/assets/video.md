@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '11138'
 ht-degree: 1%
@@ -329,10 +329,10 @@ In de volgende tabel wordt beschreven hoe de resultaten van de formule worden om
 
 | Formulerresultaat | Hoogte-breedteverhouding |
 |--- |--- |
-| 1.33 | 4:3 |
-| 0.75 | 3:4 |
-| 1.78 | 16:9 |
-| 0.56 | 9:16 |
+| 1,33 | 4:3 |
+| 0,75 | 3:4 |
+| 1,78 | 16:9 |
+| 0,56 | 9:16 |
 
 Een video van 1440 x 1080 hoogte heeft bijvoorbeeld een hoogte-breedteverhouding van 1440/1080 of 1,33. In dit geval kiest u een voorinstelling voor videocodering met een hoogte-breedteverhouding van 4:3 om het videobestand te coderen.
 
@@ -374,8 +374,8 @@ Resolutie en gegevenssnelheid zijn twee geïntegreerde gekoppelde factoren die d
 
 | Resolutie | Pixels per frame |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 x 240 | 76.800 |
+| 640 x 480 | 307.200 |
 
 Het bestand van 640 x 480 heeft vier keer zoveel pixels per frame. Als u voor deze twee voorbeeldresoluties dezelfde gegevenssnelheid wilt bereiken, past u viermaal de compressie toe op het bestand van 640 x 480, waardoor de kwaliteit van de video kan afnemen. Daarom levert een videogegevenssnelheid van 250 Kbps beelden van hoge kwaliteit bij een resolutie van 320 x 240, maar niet bij een resolutie van 640 x 480.
 
@@ -463,7 +463,7 @@ Tegelijkertijd maakt u een Adobe Support-case zodat DASH kan worden ingeschakeld
 
 1. Schakel links van de naam het selectievakje in om DASH in te schakelen (inschakelen).
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 1. Nu [de Admin Console gebruiken om een nieuwe steunzaak te beginnen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
@@ -496,7 +496,7 @@ Videorapporten geven verschillende statistische gegevens over een bepaalde tijd 
 
 Een tabel met alle *gepubliceerd* de video&#39;s worden ook vermeld, zodat u de bovenste weergegeven video&#39;s op uw website kunt bijhouden op basis van het totale aantal video&#39;s dat wordt gestart.
 
-Wanneer u op een videonaam in de lijst tikt, ziet u het rapport voor het behoud van het publiek van de video (drop-off) in de vorm van een lijndiagram. Het diagram toont het aantal weergaven voor een bepaald tijdstip tijdens het afspelen van video. Wanneer u de video afspeelt, wordt de verticale balk gesynchroniseerd met de tijdindicator in de speler. De vallen in de gegevens van het lijndiagram wijzen op waar uw publiek van oninteresse wegvalt.
+Wanneer u een videonaam in de lijst selecteert, wordt het rapport voor het vasthouden van het publiek van de video (drop-off) weergegeven in de vorm van een lijndiagram. Het diagram toont het aantal weergaven voor een bepaald tijdstip tijdens het afspelen van video. Wanneer u de video afspeelt, wordt de verticale balk gesynchroniseerd met de tijdindicator in de speler. De vallen in de gegevens van het lijndiagram wijzen op waar uw publiek van oninteresse wegvalt.
 
 Als de video buiten Adobe Experience Manager Dynamic Media is gecodeerd, zijn het diagram voor het vasthouden van het publiek (drop-off) en de gegevens voor het afspeelpercentage in de tabel niet beschikbaar.
 
@@ -508,22 +508,22 @@ Zie ook [Dynamic Media-Cloud Servicen configureren](/help/assets/config-dynamic.
 
 Door gebrek, de eerste keer u VideoRapporten ingaat, toont het rapport videogegevens die bij de eerste van de huidige maand beginnen en met de datum van de huidige maand beëindigen. U kunt het standaarddatumbereik echter overschrijven door uw eigen datumbereik op te geven. De volgende keer dat u Video-rapporten invoert, wordt het opgegeven datumbereik gebruikt.
 
-Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Cloud Servicen van Dynamic Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter wel vereist dat de publicatieserver al is ingesteld. Als de publicatieserver niet is ingesteld, kunt u toch publiceren om het videoverslag te zien. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en tikken **[!UICONTROL OK]**.
+Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Cloud Servicen van Dynamic Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter wel vereist dat de publicatieserver al is ingesteld. Als de publicatieserver niet is ingesteld, kunt u toch publiceren om het videoverslag te zien. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en **[!UICONTROL OK]**.
 
 **Videorapporten weergeven:**
 
-1. Tik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en tik vervolgens in de linkerrails op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
+1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer vervolgens in de linkerspoorstaaf de optie **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
 1. Voer een van de volgende handelingen uit op de pagina Videorapporten:
 
-   * Tik in de rechterbovenhoek op de knop **Videorapport vernieuwen** pictogram.
+   * Selecteer in de rechterbovenhoek de optie **Videorapport vernieuwen** pictogram.
 Gebruik alleen Vernieuwen als de einddatum van het rapport de huidige dag is. Dit zorgt ervoor dat u de video het volgen ziet die sinds de laatste tijd is voorgekomen u het rapport in werking stelde.
 
-   * Tik in de rechterbovenhoek op de knop **Datumkiezer** pictogram.
-Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en tik vervolgens op **[!UICONTROL Run Report]**.
+   * Selecteer in de rechterbovenhoek de optie **Datumkiezer** pictogram.
+Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en selecteer **[!UICONTROL Run Report]**.
 
    Het groepsvak Bovenste metagegevens identificeert verschillende samengestelde metingen voor alle *gepubliceerd* video&#39;s op uw site.
 
-1. Tik in de tabel met de bovenste gepubliceerde video&#39;s op een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
+1. Selecteer in de tabel met de bovenste gepubliceerde video&#39;s een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
 
 ### Videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de SDK van de Dynamic Media HTML5 Viewer {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
@@ -542,7 +542,7 @@ Gebruik de [Referentiehandleiding voor Adobe Dynamic Media Viewers](https://expe
 
    De `config2` schakelt het bijhouden van gegevens in HTML5 Viewers in. Het is ook een bedrijf-specifieke vooraf ingesteld die de configuratieinformatie voor Video die, en voor klant-specifieke configuraties van Adobe Analytics bevat meldt.
 
-   De correcte waarde voor de config2-parameter vindt u in zowel de functie **[!UICONTROL Embed Code]** als in de functie voor het kopiëren van de **[!UICONTROL URL]**. In de URL van de opdracht voor het kopiëren van de **[!UICONTROL URL]**, zoekt u naar de parameter `&config2=<value>`. De waarde is bijna altijd `companypreset`, maar in sommige gevallen ook `companypreset-1`, `companypreset-2`, enz.
+   De correcte waarde voor de config2 parameter wordt gevonden in zowel **[!UICONTROL Embed Code]** en in de kopie **[!UICONTROL URL]** functie. In de URL vanuit de kopie **[!UICONTROL URL]** bevel, de parameter om te zoeken is `&config2=<value>` . De waarde is bijna altijd `companypreset`, maar in sommige gevallen ook `companypreset-1`, `companypreset-2`, enz.
 
 1. Voeg in uw aangepaste videoviewercode AppMeasurementBridge .jsp als volgt toe aan de viewerpagina:
 
@@ -646,7 +646,7 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
    ![Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen.](assets-dm/msma-audiotracks.png)*Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van de video.*
 
 1. (Optioneel) Ga als volgt te werk om een of meer ondertitelingsbestanden (of bijschriftbestanden) aan een video toe te voegen:
-   * Selecteer **[!UICONTROL Upload Subtitles]**.
+   * Selecteren **[!UICONTROL Upload Subtitles]**.
    * Navigeer naar en selecteer een of meer .vtt-bestanden (videoteksttracks) en open deze.
    * Als ondertitels zichtbaar moeten zijn op de mediaspeler, kunt u *moet* vereiste details (metagegevens) toevoegen over *elk* ondertitelingsbestand dat u hebt geüpload. Selecteer het potloodpictogram rechts van de bestandsnaam van een ondertitel. In de **Ondertitel bewerken** voert u de volgende vereiste gegevens over het bestand in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk ondertitelbestand dat u hebt geüpload:
 
@@ -655,12 +655,12 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra ondertitelingsbestanden en audiotrackbestanden. |
      | Taal | Selecteer de taal van de ondertitel. |
      | Type | Selecteer het type ondertitel dat u gebruikt.<br>**Ondertitel** - De ondertiteltekst die wordt weergegeven met de video die het dialoogvenster vertaalt of transcripeert.<br>**Bijschrift** - De bijschrifttekst bevat ook achtergrondgeluiden, sprekersdifferentiatie en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, waardoor de inhoud toegankelijker wordt voor doven of slechthorenden. |
-     | Label | De tekst die voor de naam van de ondertitel wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld, `English (CC)`. |
+     | Label | De tekst die voor de naam van de ondertitel wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld: `English (CC)`. |
 
      U kunt metagegevens van ondertitels indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
 1. (Optioneel) Ga als volgt te werk om een of meer audiotracks aan een video toe te voegen:
-   * Selecteer **[!UICONTROL Upload Audio Tracks]**.
+   * Selecteren **[!UICONTROL Upload Audio Tracks]**.
    * Navigeer naar en selecteer een of meer MP3-bestanden en open deze.
    * Voor audiotracks die zichtbaar moeten zijn in het dialoogvenster **[!UICONTROL Select audio or caption]** op de mediaspeler, kunt u *moet* vereiste gegevens toevoegen over *elk* audiotrackbestand dat u hebt toegevoegd. Selecteer het potloodpictogram rechts van de bestandsnaam van een audiotrack. In de **Audiotrack bewerken** voert u de volgende vereiste gegevens in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk audiospoordossier dat u uploadde.
 
@@ -669,7 +669,7 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra audiotrackbestanden of ondertitelingsbestanden. |
      | Taal | Selecteer de taal van de audiotrack. |
      | Type | Selecteer het type audiotrack dat u gebruikt.<br>**Origineel** - De audiotrack die oorspronkelijk aan de video was gekoppeld en die werd weergegeven als `[Original]` op het etiket met `English` taal die standaard is geselecteerd. while **[!UICONTROL Label]** en **[!UICONTROL Language]** kan worden gewijzigd in het dialoogvenster **[!UICONTROL Edit Audio Track]** de oorspronkelijke waarden als de primaire video opnieuw wordt verwerkt.<br>**Standaard** - Een add-on audiotrack voor een andere taal dan het origineel.<br>**Audiobeschrijving** - Een audiotrack die ook een beschrijvende beschrijving van niet-verbale handelingen en bewegingen in de video bevat, waardoor inhoud toegankelijker wordt voor personen met een visuele handicap. |
-     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld, `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original|` standaard. |
+     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld: `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original|` standaard. |
 
      U kunt deze metagegevens van de audiotrack indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
@@ -753,7 +753,7 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
 1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
 1. Onder de **Audiotracks** Selecteer het audiotrackbestand dat u wilt instellen als de standaardnaam van de video.
-1. Selecteer **[!UICONTROL Set as default]**.
+1. Selecteren **[!UICONTROL Set as default]**.
 In de **Instellen als standaard** dialoogvenster selecteert u **[!UICONTROL Replace]**.
 
    ![De kop Audiotracks bevat een geselecteerde naam voor het audiotrackbestand en de gemarkeerde knop &quot;Instellen als standaard&quot;.](assets-dm/msma-defaultaudiotrack.png)*De standaardaudiotrack voor een video instellen.*
@@ -840,7 +840,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
    | Een aparte map maken voor elk element | Maak een map voor elk ondertitelbestand of audiotrackbestand dat u hebt geselecteerd om te downloaden. |
    | E-mail | Gebruik uw standaard e-mailprogramma om het .zip-bestand naar een opgegeven e-mailadres te verzenden. |
    | Assets | Hiermee geeft u het aantal bestanden op dat u downloadt en de gecombineerde totale grootte van alle geselecteerde bestanden. Als u deze optie uitschakelt, wordt het dialoogvenster **[!UICONTROL Download]** , zodat u geen bestanden kunt downloaden. |
-1. Selecteer **[!UICONTROL Download]**.
+1. Selecteren **[!UICONTROL Download]**.
 1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
 
@@ -901,13 +901,13 @@ Zie [Statische (niet-grafische) inhoud serveren](https://experienceleague.adobe.
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL URL]**. Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord en passeer de URL naar een eenvoudige teksteditor. Voeg de gekopieerde URL van de video toe met de volgende syntaxis:
+   * Voor een pop-upviewerervaring voor video selecteert u **[!UICONTROL URL]**. Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord en passeer de URL naar een eenvoudige teksteditor. Voeg de gekopieerde URL van de video toe met de volgende syntaxis:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
      Noteer de `,1` aan het einde van het bijschriftpad. Onmiddellijk na de `.vtt` bestandsnaamextensie in het pad, kunt u optioneel de knop voor een gesloten bijschrift op de balk van de videospeler in- of uitschakelen (uitschakelen) door in te stellen op `,1` of `,0`, respectievelijk.
 
-   * Tik voor een ingesloten video-viewer op **[!UICONTROL Embed Code]**. Selecteer in het dialoogvenster Code insluiten de insluitcode en kopieer deze naar het klembord. Plak de code vervolgens in een eenvoudige teksteditor. Voeg de gekopieerde insluitcode toe met de volgende syntaxis:
+   * Voor een ingesloten videoviewerervaring selecteert u **[!UICONTROL Embed Code]**. Selecteer in het dialoogvenster Code insluiten de insluitcode en kopieer deze naar het klembord. Plak de code vervolgens in een eenvoudige teksteditor. Voeg de gekopieerde insluitcode toe met de volgende syntaxis:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -971,8 +971,8 @@ Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/)
        <td>
        <ol>
        <li>Ga naar de <i>gepubliceerd </i>video-element dat u wilt koppelen aan het hoofdstukbestand dat u hebt geüpload. Houd er rekening mee dat URL's alleen beschikbaar zijn om te kopiëren <i>nadat</i> u de assets eerst hebt <i>gepubliceerd</i>. Zie <a href="/help/assets/publishing-dynamicmedia-assets.md">Middelen publiceren.</a></li>
-       <li>Klik of tik in het keuzemenu op <strong>Viewers</strong>.</li>
-       <li>Tik of klik in de linkertrack op de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li>
+       <li>Klik in het keuzemenu op <strong>Viewers</strong>.</li>
+       <li>Klik in de linkertrack op de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li>
        <li>Klik in de linkerrails onderaan op <strong>URL</strong>.</li>
        <li>Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord. Plak vervolgens de URL in een eenvoudige teksteditor.</li>
        <li>Voeg de gekopieerde URL van de video toe aan de volgende syntaxis, zodat u deze kunt koppelen aan de gekopieerde URL naar het hoofdstukbestand:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
@@ -983,8 +983,8 @@ Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/)
        <td>
        <ol>
        <li>Ga naar de <i>gepubliceerd </i>video-element dat u wilt koppelen aan het hoofdstukbestand dat u hebt geüpload. Houd er rekening mee dat URL's alleen beschikbaar zijn om te kopiëren <i>nadat</i> u de assets eerst hebt <i>gepubliceerd</i>. Zie <a href="/help/assets/publishing-dynamicmedia-assets.md">Middelen publiceren.</a></li>
-       <li>Klik of tik in het keuzemenu op <strong>Viewers</strong>.</li>
-       <li>Tik of klik in de linkertrack op de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li>
+       <li>Klik in het keuzemenu op <strong>Viewers</strong>.</li>
+       <li>Klik in de linkertrack op de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li>
        <li>Klik in de linkerrails onderaan op <strong>Insluiten</strong>.</li>
        <li>Selecteer in het dialoogvenster Code insluiten de gehele code en kopieer deze naar het klembord. Plak de code vervolgens in een eenvoudige teksteditor.</li>
        <li>Voeg de insluitcode van de video toe aan de volgende syntaxis, zodat u deze kunt koppelen aan de gekopieerde URL naar het hoofdstukbestand:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
@@ -1021,25 +1021,25 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
    * [Uw video&#39;s zijn geüpload naar de map](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigeer naar een geüpload video-element waarvan u de miniatuurafbeelding wilt wijzigen.
-1. In de modus voor selectie van middelen **[!UICONTROL List View]** of **[!UICONTROL Card View]** tikt u op het video-element.
-1. Tik op de werkbalk op **[!UICONTROL Properties]** pictogram (een cirkel met een &quot;i&quot; erin).
-1. Tik op de pagina Eigenschappen van video op **[!UICONTROL Change Thumbnail]**.
+1. In de modus voor selectie van middelen **[!UICONTROL List View]** of **[!UICONTROL Card View]** selecteert u het video-element.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Properties]** pictogram (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Change Thumbnail]**.
 1. Voer een van de volgende handelingen uit op de pagina Miniatuur wijzigen:
 
    * Een frame uit de video gebruiken als de nieuwe miniatuur:
 
-      * Tik op de werkbalk op **[!UICONTROL Select Frame from video]**.
-      * Tik op de knop Afspelen en tik vervolgens op de knop Pauzeren op het frame dat u wilt vastleggen als de nieuwe miniatuur van de video.
+      * Selecteer op de werkbalk de optie **[!UICONTROL Select Frame from video]**.
+      * Selecteer de knop Afspelen en selecteer vervolgens de knop Pauzeren in het frame dat u wilt vastleggen als de nieuwe miniatuur van de video.
 
    * Een afbeeldingselement gebruiken als de nieuwe miniatuur:
 
-      * Tik op de werkbalk op **[!UICONTROL Select Thumbnail from Assets]**.
-      * Tik op **[!UICONTROL Select Thumbnail]**.
+      * Selecteer op de werkbalk de optie **[!UICONTROL Select Thumbnail from Assets]**.
+      * Selecteren **[!UICONTROL Select Thumbnail]**.
       * Navigeer naar een eerder geüpload en gepubliceerd afbeeldingselement dat u wilt gebruiken. De grootte van het element wordt automatisch gewijzigd om te dienen als miniatuurafbeelding voor de video.
-      * Selecteer het afbeeldingselement en tik vervolgens op **[!UICONTROL Select]**.
+      * Selecteer het afbeeldingselement en selecteer vervolgens **[!UICONTROL Select]**.
 
-1. Tik op de pagina Miniatuur wijzigen op **[!UICONTROL Save Change]**.
-1. Tik in de rechterbovenhoek op de pagina Eigenschappen van video op **[!UICONTROL Save & Close]**.
+1. Selecteer op de pagina Miniatuur wijzigen de optie **[!UICONTROL Save Change]**.
+1. Selecteer in de rechterbovenhoek van de pagina Eigenschappen van video de optie **[!UICONTROL Save & Close]**.
 
 ## Informatie over videominiaturen in Dynamic Media - hybride modus {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
@@ -1060,15 +1060,15 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 **Een videominiatuur toevoegen:**
 
 1. Navigeer naar een geüpload video-element waaraan u een videominiatuur wilt toevoegen.
-1. Tik in de modus voor middelenselectie in de lijstweergave of de kaartweergave op het video-element.
-1. Tik op de werkbalk op **[!UICONTROL View Properties]** pictogram (een cirkel met een &quot;i&quot; erin).
-1. Tik op de pagina Eigenschappen van video op **[!UICONTROL Change Thumbnail]**.
-1. Tik op de pagina Miniatuur wijzigen op de werkbalk op **[!UICONTROL Select Frame]**.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Selecteer op de werkbalk de optie **[!UICONTROL View Properties]** pictogram (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Change Thumbnail]**.
+1. Selecteer op de pagina Miniatuur wijzigen op de werkbalk de optie **[!UICONTROL Select Frame]**.
 
    Dynamic Media genereert een reeks miniatuurafbeeldingen van uw video op basis van het standaardtijdinterval of -interval dat u hebt aangepast.
 
 1. Geef een voorvertoning van de gegenereerde miniatuurafbeeldingen weer en selecteer de miniatuurafbeelding die u aan de video wilt toevoegen.
-1. Tik op **[!UICONTROL Save Change]**.
+1. Selecteren **[!UICONTROL Save Change]**.
 
    De miniatuurafbeelding van de video wordt bijgewerkt zodat deze de geselecteerde miniatuur gebruikt. Als u later besluit om de miniatuurafbeelding te wijzigen, kunt u terugkeren naar de **[!UICONTROL Change Thumbnail]** en selecteer een nieuwe pagina.
 
@@ -1084,21 +1084,21 @@ Zie [Een videominiatuur toevoegen](#adding-a-video-thumbnail).
 
 **U configureert als volgt het standaardtijdsinterval dat videominiaturen worden gegenereerd:**
 
-1. Tik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Selecteer in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
 1. Navigeer op de pagina CRXDE Lite in het mappenvenster aan de linkerkant naar de pagina `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   Als het mappenvenster niet zichtbaar is, tikt u op het pictogram >> links van het tabblad Start.
+   als het mappendeelvenster niet zichtbaar is, selecteert u het pictogram >> links van het tabblad Start.
 
-1. Dubbeltik op het tabblad Eigenschappen in het deelvenster rechtsonder op het tabblad Eigenschappen `thumbnailtime`.
+1. Dubbelselecteer in het deelvenster rechtsonder op het tabblad Eigenschappen `thumbnailtime`.
 1. In de **[!UICONTROL Edit thumbnailtime]** gebruikt u de tekstvelden om intervalwaarden in te voeren als percentages.
 
-   * Tik op het plusteken (+) als u een of meer velden voor intervalwaarden wilt toevoegen. Blader zo nodig naar de onderkant van het dialoogvenster om het pictogram weer te geven.
-   * Tik op het minteken (-) rechts van een veld voor de intervalwaarde als u dit wilt verwijderen uit de lijst.
-   * Tik op het pictogram pijl-omhoog en pijl-omlaag als u de intervalwaarden opnieuw wilt rangschikken.
+   * Selecteer het plusteken (+) pictogram als u één of meerdere gebieden van de intervalwaarde wilt toevoegen. Blader zo nodig naar de onderkant van het dialoogvenster om het pictogram weer te geven.
+   * Selecteer het minteken (-) rechts van een veld voor de intervalwaarde als u het uit de lijst wilt verwijderen.
+   * Selecteer het pictogram pijl-omhoog en pijl-omlaag als u de intervalwaarden opnieuw wilt rangschikken.
 
-1. Tikken **[!UICONTROL OK]** en ga terug naar het tabblad Eigenschappen.
-1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All]** tikt u vervolgens op het pictogram Startpagina terug in de linkerbovenhoek om terug te keren naar de Experience Manager.
+1. Selecteren **[!UICONTROL OK]** en ga terug naar het tabblad Eigenschappen.
+1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **[!UICONTROL Save All]** en selecteert u vervolgens het pictogram Terug naar startpunt in de linkerbovenhoek om terug te keren naar de Experience Manager.
 
    Zie [Een videominiatuur toevoegen](#adding-a-video-thumbnail).
 
@@ -1109,12 +1109,12 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 **Een aangepaste videominiatuur toevoegen:**
 
 1. Navigeer naar een geüpload video-element waaraan u een aangepaste miniatuur voor video wilt toevoegen.
-1. Tik in de modus voor middelenselectie in de lijstweergave of de kaartweergave op het video-element.
-1. Tik op de werkbalk op **[!UICONTROL View Properties]** pictogram (een cirkel met een &quot;i&quot; erin).
-1. Tik op de pagina Eigenschappen van video op **[!UICONTROL Change Thumbnail]**.
-1. Tik op de pagina Miniatuur wijzigen op de werkbalk op **[!UICONTROL Upload New Thumbnail]**.
-1. Navigeer naar een miniatuurafbeelding die u wilt gebruiken, selecteer deze en tik vervolgens op **[!UICONTROL Open]** om de afbeelding naar de Experience Manager te uploaden. Na het uploaden moet u de afbeelding publiceren.
-1. Tik op **[!UICONTROL Save Changes]**.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Selecteer op de werkbalk de optie **[!UICONTROL View Properties]** pictogram (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Change Thumbnail]**.
+1. Selecteer op de pagina Miniatuur wijzigen op de werkbalk de optie **[!UICONTROL Upload New Thumbnail]**.
+1. Navigeer naar een miniatuurafbeelding die u wilt gebruiken, selecteer deze en selecteer vervolgens **[!UICONTROL Open]** om de afbeelding naar de Experience Manager te uploaden. Na het uploaden moet u de afbeelding publiceren.
+1. Nadat u de afbeelding hebt geüpload en gepubliceerd, selecteert u op de pagina Miniatuur wijzigen de optie **[!UICONTROL Save Changes]**.
 
    De aangepaste miniatuur wordt toegevoegd aan uw video.
 

@@ -7,9 +7,9 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1318'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ In de inhoudbrowser, kunt u objecten hiërarchie van het document voor het gesel
 
 * **Eigenschappenbrowser**
 
-  Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van de component. Als u bijvoorbeeld de eigenschappen van de documentcontainer wilt zien: selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **Documentcontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+  Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van de component. Als u bijvoorbeeld de eigenschappen van de documentcontainer wilt zien: selecteer een component en selecteer vervolgens ![op veldniveau](assets/field-level.png) > **Documentcontainer** en selecteer vervolgens ![cmppr](assets/cmppr.png).
 
 * **Bandenbrowser**
 Hiermee kunt u verschillende typen inhoud segmenteren, zoals lay-outfragmenten, afbeeldingen, documenten, pagina&#39;s, video&#39;s. Auteurs kunnen elementen naar de interactieve communicatie slepen.
@@ -82,14 +82,14 @@ Browser van Gegevensbronnen toont de beschikbare gegevensbronnen in het model va
 
 De belangrijkste punten wanneer het werken met interactieve communicatie componenten zijn als volgt:
 
-* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Tik op de component en tik om de eigenschappen van een component te configureren ![cmppr](assets/cmppr.png) om de componenteigenschappen in de browser van Eigenschappen te openen.
-* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u tikt ![cmppr](assets/cmppr.png)kunt u de naam van de component wijzigen door de waarde van het veld Elementnaam te wijzigen in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
+* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Selecteer de component en selecteer ![cmppr](assets/cmppr.png) om de componenteigenschappen in de browser van Eigenschappen te openen.
+* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![cmppr](assets/cmppr.png)kunt u de naam van de component wijzigen door de waarde van het veld Elementnaam te wijzigen in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
 * U kunt het bezit van de Titel van een Interactieve Component van de Communicatie inline in de redacteur wijzigen zonder browser van Eigenschappen te openen zolang de titel op Interactieve Mededeling zichtbaar is. Daartoe:
 
-   1. Tik om een component te selecteren die een eigenschap Titel heeft en waarvan de eigenschap Titel verbergen is uitgeschakeld.
-   1. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
+   1. Selecteer deze optie om een component te selecteren die een eigenschap Titel heeft en waarvan de eigenschap Titel verbergen is uitgeschakeld.
+   1. Selecteren ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
 
-   1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op de toets Esc om de wijzigingen te verwijderen.
+   1. Wijzig de titel en selecteer de Return-toets of selecteer een willekeurige locatie buiten de component om de wijzigingen op te slaan. Selecteer de sleutel van Esc om de veranderingen te verwerpen.
 
 ## Component, werkbalk {#component-toolbar}
 
@@ -97,9 +97,9 @@ De belangrijkste punten wanneer het werken met interactieve communicatie compone
 
 Wanneer u een component selecteert, ziet u een werkbalk waarmee u ermee kunt werken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
-A.**Configureren**: Wanneer u tikt **Configureren**, zijn componenteigenschappen zichtbaar in de zijbalk.
+A.**Configureren**: Wanneer u **Configureren**, zijn componenteigenschappen zichtbaar in de zijbalk.
 
-B.**Regels bewerken**: Wanneer u op Regels bewerken tikt, wordt de Regeleditor weergegeven waarin u regels voor de geselecteerde component kunt bewerken en maken. In de Regeleditor kunt u ook andere formulierobjecten (componenten) selecteren en regels voor die formulierobjecten bewerken/maken.
+B.**Regels bewerken**: Wanneer u Regels bewerken selecteert, wordt de Regeleditor weergegeven waarin u regels voor de geselecteerde component kunt bewerken en maken. In de Regeleditor kunt u ook andere formulierobjecten (componenten) selecteren en regels voor die formulierobjecten bewerken/maken.
 
 C.**Kopiëren**: U kunt de kopieeroptie gebruiken om een component te kopiëren en het in andere plaatsen in de Interactieve Mededeling te kleven.
 

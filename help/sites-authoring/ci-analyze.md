@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Open de [Inhoudsinzicht](/help/sites-authoring/content-insights.md) pagina om de
 Gebruik de volgende procedure om de Analytics en Recommendations voor een pagina te zien:
 
 1. Navigeer naar de pagina die u wilt analyseren.
-1. Klik of tik in de werkbalk op **Analytics en Recommendations**.
+1. Klik op de werkbalk op **Analytics en Recommendations**.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Wijzig de rapportageperiode van de pagina Inhoudscontrole om uw analyse van de p
 
 Om de rapportageperiode van een pagina Inhoudscontrole te wijzigen:
 
-1. Als de tijdlijn niet boven aan de pagina wordt weergegeven, klikt of tikt u op het pictogram Tijdlijn in-/uitschakelen.
+1. Als de tijdlijn niet boven aan de pagina wordt weergegeven, klikt u op het pictogram Tijdlijn in-/uitschakelen.
 
    ![Tijdschema in-/uitschakelen](do-not-localize/chlimage_1-22.png)
 
@@ -70,11 +70,11 @@ Verander de hoeveelheid tijd dat elk gegevenspunt in een rapport overspant. Wann
 
 De granulariteit beïnvloedt de rapporten die gegevens tegen tijd, zoals de Meningen en de Pagina Gemiddelde Bewerkte Minerapporten plotten. Korreligheid is ook van invloed op de schaal van de tijdlijn.
 
-1. Als het besturingselement voor granulariteit niet wordt weergegeven, klikt of tikt u op het pictogram Korreligheid in-/uitschakelen.
+1. Als het besturingselement voor granulariteit niet wordt weergegeven, klikt u op het pictogram Korreligheid in-/uitschakelen.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. Klik of tik op de gewenste granulariteit. Zodra geselecteerd, werkt het rapport automatisch bij om op granulariteit te wijzen.
+1. Klik op de gewenste granulariteit. Zodra geselecteerd, werkt het rapport automatisch bij om op granulariteit te wijzen.
 
 ### Taken toewijzen voor SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
@@ -90,7 +90,7 @@ Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de ge
 
 Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
-1. Klik of tik het informatiepictogram voor de aanbeveling SEO.
+1. Klik op het informatiepictogram voor de SEO-aanbeveling.
 
    ![Onformatiepictogram](do-not-localize/chlimage_1-23.png)
 
@@ -98,15 +98,15 @@ Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Vul de formuliervelden die worden weergegeven en tik op Maken:
+1. Vul de formuliervelden die worden weergegeven en selecteer vervolgens Maken:
 
-   * Project: Selecteer het project waarin u de taak wilt maken.
+   * Project: selecteer het project waarin u de taak wilt maken.
    * Naam: De naam die de taak identificeert. De standaardnaam is de titel van de SEO aanbeveling.
-   * Toewijzen aan: Selecteer de gebruiker aan wie de taak wordt toegewezen. Typ de naam van de gebruiker om de lijst te filteren.
-   * Omschrijving: Een beschrijving van de activiteit die wordt vereist om de taak te voltooien. De standaardbeschrijving is de informatie die bij de SEO-aanbeveling is gevoegd.
-   * Taakprioriteit: De prioriteit van de taak.
-   * Vervaldatum: De datum waarop de taak moet zijn voltooid.
+   * Toewijzen aan: selecteer de gebruiker aan wie de taak wordt toegewezen. Typ de naam van de gebruiker om de lijst te filteren.
+   * Beschrijving: Een beschrijving van de activiteit die vereist is om de taak te voltooien. De standaardbeschrijving is de informatie die bij de SEO-aanbeveling is gevoegd.
+   * Taakprioriteit: de prioriteit van de taak.
+   * Vervaldatum: de datum waarop de taak moet zijn voltooid.
 
    **Opmerking:** De taak die wordt gecreeerd omvat ook de weg aan de pagina waarop de aanbeveling SEO van toepassing is.
 
-1. Klik op Gereed of tik op Gereed om het bericht Taak gemaakt te sluiten.
+1. Klik op Gereed om het bericht Taak gemaakt te sluiten.

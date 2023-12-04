@@ -1,6 +1,6 @@
 ---
 title: Variabelen in AEM werkstromen
-description: Maak een variabele, stel een waarde voor de variabele in en gebruik deze in de workflowstappen OR Splitsen en Ga naar AEM.
+description: Maak een variabele, stel een waarde voor de variabele in en gebruik deze in de workflowstappen OR Split en Ga AEM.
 uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '1929'
 ht-degree: 0%
 
 ---
@@ -44,13 +44,13 @@ U maakt variabelen aan de hand van de sectie Variabelen die beschikbaar is in de
 >
 >Workflows ondersteunen alleen de ISO8601-indeling voor variabelen van het type Date.
 
-Voor extra complexe gegevenstypen die beschikbaar zijn in AEM Forms-workflows raadpleegt u [Variabelen in AEM Forms-workflows](/help/forms/using/variable-in-aem-workflows.md). Het gegevenstype ArrayList van het gebruik om veranderlijke inzamelingen tot stand te brengen. U kunt een variabele ArrayList maken voor alle primitieve en complexe gegevenstypen. Maak bijvoorbeeld een variabele ArrayList en selecteer String als subtype om meerdere tekenreekswaarden op te slaan met de variabele.
+Voor extra complexe gegevenstypen die beschikbaar zijn in AEM Forms-workflows raadpleegt u [Variabelen in AEM Forms-workflows](/help/forms/using/variable-in-aem-workflows.md). Gebruik het gegevenstype ArrayList om variabele verzamelingen te maken. U kunt een variabele ArrayList maken voor alle primitieve en complexe gegevenstypen. Maak bijvoorbeeld een variabele ArrayList en selecteer String als subtype om meerdere tekenreekswaarden op te slaan met de variabele.
 
 Als u een variabele wilt maken,
 
 1. Navigeer in een AEM naar Extra > Workflow > Modellen.
-1. Tikken **[!UICONTROL Create]** en geeft u de titel en een optionele naam voor het workflowmodel op. Selecteer het model en tik op **[!UICONTROL Edit]**.
-1. Tik op het pictogram Variabelen dat beschikbaar is in de assistent van het workflowmodel en tik op **[!UICONTROL Add Variable]**.
+1. Selecteren **[!UICONTROL Create]** en geeft u de titel en een optionele naam voor het workflowmodel op. Selecteer het model en selecteer **[!UICONTROL Edit]**.
+1. Selecteer het pictogram Variabelen dat beschikbaar is in de assistent van het workflowmodel en selecteer **[!UICONTROL Add Variable]**.
 
    ![Variabele toevoegen](assets/variables_add_variable_new.png)
 
@@ -62,7 +62,7 @@ Als u een variabele wilt maken,
    * Formuliergegevensmodel - Geef een formuliergegevensmodelpad op.
    * ArrayList - Geef een subtype op voor de verzameling.
 
-1. Geef een optionele beschrijving op voor de variabele en tik op ![Het pictogram Opslaan dat wordt aangegeven door een vinkje in een vak.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan. De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
+1. Geef een optionele beschrijving voor de variabele op en selecteer ![Het pictogram Opslaan dat wordt aangegeven door een vinkje in een vak.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
 
 Houd rekening met de volgende werkwijzen wanneer u variabelen maakt:
 
@@ -74,7 +74,7 @@ Houd rekening met de volgende werkwijzen wanneer u variabelen maakt:
 
 Met de stap Variabele instellen kunt u de waarde van een variabele instellen en de volgorde definiëren waarin de waarden worden ingesteld. De variabele wordt geplaatst in de orde dat de veranderlijke toewijzingen in de vastgestelde veranderlijke stap vermeld zijn.
 
-Wijzigingen in waarden van variabelen zijn alleen van invloed op de instantie van het proces waarin de wijziging plaatsvindt. Wanneer bijvoorbeeld een workflow wordt gestart en variabele gegevens worden gewijzigd, hebben de wijzigingen alleen invloed op dat exemplaar van de workflow. De wijzigingen zijn niet van invloed op andere versies van de workflow die eerder zijn gestart of later zijn gestart.
+Wijzigingen in waarden van variabelen zijn alleen van invloed op de instantie van het proces waarin de wijziging plaatsvindt. Wanneer bijvoorbeeld een werkstroom wordt gestart en variabele gegevens worden gewijzigd, hebben de wijzigingen alleen invloed op dat exemplaar van de werkstroom. De wijzigingen zijn niet van invloed op andere versies van de workflow die eerder zijn gestart of later zijn gestart.
 
 Afhankelijk van het gegevenstype van de variabele kunt u de volgende opties gebruiken om de waarde van een variabele in te stellen:
 
@@ -91,25 +91,25 @@ U kunt ook specifieke elementen van een variabele van het type JSON of XML bijwe
 
 Ga als volgt te werk om toewijzingen tussen variabelen toe te voegen:
 
-1. Tik op de pagina voor workflowbewerking op het pictogram Stappen dat beschikbaar is in de assistent van het workflowmodel.
-1. Sleep de **Variabele instellen** stap naar de werkstroomeditor, tik op de stap en selecteer ![Configureer het pictogram dat door een moersleutel wordt aangegeven.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configureren).
+1. Selecteer op de pagina voor workflowbewerking het pictogram Stappen dat beschikbaar is in de assistent van het workflowmodel.
+1. Sleep de **Variabele instellen** stap naar de werkstroomeditor, selecteer de stap en selecteer ![Configureer het pictogram dat door een moersleutel wordt aangegeven.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configureren).
 1. Selecteer in het dialoogvenster Variabele instellen de optie **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. In de **Kaartvariabele** selecteert u de variabele die u wilt opslaan, selecteert u de toewijzingsmodus en geeft u een waarde op die u in de variabele wilt opslaan. De toewijzingsmodi variëren op basis van het type variabele.
-1. Wijs meer variabelen toe zodat u een zinvolle uitdrukking kunt maken. Tikken ![Het pictogram Opslaan dat wordt aangegeven door een vinkje in een vak.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan.
+1. Wijs meer variabelen toe zodat u een zinvolle uitdrukking kunt maken. Selecteren ![Het pictogram Opslaan dat wordt aangegeven door een vinkje in een vak.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan
 
-### Voorbeeld 1: Vraag een variabele van XML om waarde voor een koordvariabele te plaatsen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
+### Voorbeeld 1: Vraag een XML-variabele naar een waarde voor een tekenreeksvariabele {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
 Selecteer een variabele van het type van XML die u een dossier van XML wilt opslaan. Vraag de variabele van XML om de waarde voor een koordvariabele voor het bezit te plaatsen beschikbaar in het dossier van XML. Gebruiken **XPATH opgeven voor de XML-variabele** veld om de eigenschap te definiëren die in de tekenreeksvariabele moet worden opgeslagen.
 
-Selecteer in dit voorbeeld een **formdata** XML-variabele om de **cc-app.xml** bestand. Vraag de **formdata** variabele zodat u de waarde voor de **e-mailadres** tekenreeksvariabele die de waarde voor de **emailAddress** eigenschap beschikbaar in de **cc-app.xml** bestand.
+Selecteer in dit voorbeeld een **formatiegegevens** XML-variabele om de **cc-app.xml** bestand. Vraag de **formatiegegevens** variabele zodat u de waarde voor de **e-mailadres** tekenreeksvariabele die de waarde voor de **emailAddress** eigenschap beschikbaar in de **cc-app.xml** bestand.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Waarde van een variabele instellen")
 
-### Voorbeeld 2: Een expressie gebruiken om waarde op te slaan op basis van andere variabelen {#example2}
+### Voorbeeld 2: een expressie gebruiken om waarde op te slaan op basis van andere variabelen {#example2}
 
 Gebruik een expressie om de som van de variabelen te berekenen en sla het resultaat op in een variabele.
 
-In dit voorbeeld gebruikt u de expressie-editor om een expressie te definiëren die de som van **assetkosten** en **saldobedrag** variabelen en sla het resultaat op in **totalvalue** variabele.
+In dit voorbeeld gebruikt u de expressie-editor om een expressie te definiëren die de som van **assetkosten** en **saldi** variabelen en sla het resultaat op in **totalvalue** variabele.
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
@@ -134,8 +134,8 @@ De editor is gebaseerd op de regel voor aangepaste formulieren. De volgende wijz
 * Biedt geen interface voor het weergeven van een overzicht van regels
 * Heeft geen code-editor.
 * Hiermee wordt het in- en uitschakelen van de waarde van een object niet ondersteund.
-* Hiermee wordt het instellen van de eigenschap van een object niet ondersteund.
-* Het aanroepen van een webservice wordt niet ondersteund.
+* Hiermee wordt eigenschap instellen van een object niet ondersteund.
+* Biedt geen ondersteuning voor het oproepen van een webservice.
 
 Zie voor meer informatie [regel-editor voor aangepaste formulieren](/help/forms/using/rule-editor.md).
 
@@ -164,7 +164,7 @@ In dit voorbeeld, alvorens de verpletterende uitdrukking te bepalen, gebruik [vo
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Op dezelfde manier selecteer een externe manuscriptweg of specificeer het manuscript ECMA voor het verpletteren van uitdrukkingen om de actieve tak te evalueren. Tikken **[!UICONTROL Rename Branch]** om een alternatieve naam voor de vertakking op te geven.
+Op dezelfde manier selecteer een externe manuscriptweg of specificeer het manuscript ECMA voor het verpletteren van uitdrukkingen om de actieve tak te evalueren. Selecteren **[!UICONTROL Rename Branch]** een alternatieve naam voor de vertakking opgeven.
 
 Zie voor meer voorbeelden [Een workflowmodel maken](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -182,7 +182,7 @@ In dit voorbeeld wordt in de stap Ga naar de toepassing Creditcard controleren o
 
 Voor meer voorbeelden bij het gebruiken van regeldefinitie in de stap Ga naar, zie [Een lus For simuleren](/help/sites-developing/workflows-step-ref.md#simulateforloop).
 
-#### Forms-workflowgerichte workflowstappen {#forms-workflow-centric-workflow-steps}
+#### Forms-workflowgerichte stappen {#forms-workflow-centric-workflow-steps}
 
 Alle AEM Forms Workflowstappen ondersteunen variabelen. Zie voor meer informatie [Forms-centric workflow op OSGi](/help/forms/using/aem-forms-workflow-step-reference.md).
 
@@ -200,7 +200,7 @@ Gebruik de volgende API&#39;s in het ECMA-script om waarden voor bestaande varia
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
 | JSON | Packages.com.google.get.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Voor informatie over API&#39;s voor extra complexe gegevenstypen die beschikbaar zijn in AEM Forms-workflows, raadpleegt u [Variabelen in AEM Forms-workflows](/help/forms/using/variable-in-aem-workflows.md).
+Zie voor informatie over API&#39;s voor extra complexe gegevenstypen die beschikbaar zijn in AEM Forms-workflows [Variabelen in AEM Forms-workflows](/help/forms/using/variable-in-aem-workflows.md).
 
 **Voorbeeld**
 
@@ -228,7 +228,7 @@ Hiermee werkt u de waarde voor de **salaris** variabel tot 50000.
 
 ### Variabelen instellen om workflows aan te roepen {#apiinvokeworkflow}
 
-U kunt een API gebruiken om variabelen in te stellen en door te geven om workflowinstanties aan te roepen.
+U kunt een API gebruiken om variabelen in te stellen en deze door te geven om workflowinstanties aan te roepen.
 
 [workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) gebruikt model, wfData, en metaData als argumenten. Gebruik MetaDataMap om de waarde voor de variabele in te stellen.
 
@@ -249,9 +249,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## Een variabele bewerken {#edit-a-variable}
 
-1. Tik op de pagina voor de bewerkingsworkflow op het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
-1. Tik op de knop ![Het pictogram Bewerken dat wordt aangegeven door een potloodsymbool.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
-1. Bewerk de variabelegegevens en tik op ![Het pictogram Opslaan dat wordt aangegeven met een vinkje.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan. U kunt de **[!UICONTROL Name]** en **[!UICONTROL Type]** velden voor een variabele.
+1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
+1. Selecteer de ![Het pictogram Bewerken dat wordt aangegeven door een potloodsymbool.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
+1. Bewerk de variabelegegevens en selecteer ![Het pictogram Opslaan dat wordt aangegeven met een vinkje.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan U kunt de **[!UICONTROL Name]** en **[!UICONTROL Type]** velden voor een variabele.
 
 ## Een variabele verwijderen {#delete-a-variable}
 
@@ -259,6 +259,6 @@ Voordat u de variabele verwijdert, verwijdert u alle referenties van de variabel
 
 Om een variabele te schrappen,
 
-1. Tik op de pagina voor de bewerkingsworkflow op het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
-1. Tik op het pictogram Verwijderen naast de naam van de variabele die u wilt verwijderen.
-1. Tikken ![Gereed pictogram aangegeven met een vinkje.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de variabele te bevestigen en te schrappen.
+1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
+1. Selecteer het pictogram Verwijderen naast de naam van de variabele die u wilt verwijderen.
+1. Selecteren ![Gereed pictogram aangegeven met een vinkje.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de variabele te bevestigen en te schrappen.

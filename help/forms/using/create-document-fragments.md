@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Het fragment Document Bill Details bevat de volgende velden:
 
 Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterface van de Agent als gegevensbron, statische tekst te maken en elementen van het formuliergegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Selecteren **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 
 1. Selecteren **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
@@ -68,16 +68,16 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
 
    1. Selecteren **Formuliergegevensmodel** van de **Gegevensmodel** sectie.
 
-   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
+   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en selecteer **Selecteren**.
 
-   1. Tikken **Volgende**.
+   1. Selecteren **Volgende**.
 
-1. Selecteer de **Variabelen** in het linkervenster en tikt u op **Maken**.
+1. Selecteer de **Variabelen** in het linkerdeelvenster en selecteert u **Maken**.
 1. In de **Variabele maken** sectie:
 
    1. Enter **Factuurnummer** als de naam van de variabele.
    1. Selecteren **String** als het type.
-   1. Tikken **Maken**.
+   1. Selecteren **Maken**.
 
    ![Een variabele van het type String maken](assets/variable_create_string_new.png)
 
@@ -124,7 +124,7 @@ Het fragment Document met klantgegevens bevat de volgende velden:
 
 Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterface van de Agent als gegevensbron, statische tekst te maken en elementen van het formuliergegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Selecteren **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Selecteren **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
@@ -132,16 +132,16 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
 
    1. Selecteren **Formuliergegevensmodel** van de **Gegevensmodel** sectie.
 
-   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
+   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en selecteer **Selecteren**.
 
-   1. Tikken **Volgende**.
+   1. Selecteren **Volgende**.
 
-1. Selecteer de **Variabelen** in het linkervenster en tikt u op **Maken**.
+1. Selecteer de **Variabelen** in het linkerdeelvenster en selecteert u **Maken**.
 1. In de **Variabele maken** sectie:
 
    1. Enter **Plaatslevering** als de naam van de variabele.
    1. Selecteren **String** als het type.
-   1. Tikken **Maken**.
+   1. Selecteren **Maken**.
 
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
@@ -187,7 +187,7 @@ Het fragment Bill Summary Document bevat de volgende velden:
 
 Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterface van de Agent als gegevensbron, statische tekst te maken en elementen van het formuliergegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Selecteren **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Selecteren **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
@@ -195,16 +195,16 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
 
    1. Selecteren **Formuliergegevensmodel** van de **Gegevensmodel** sectie.
 
-   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
+   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en selecteer **Selecteren**.
 
-   1. Tikken **Volgende**.
+   1. Selecteren **Volgende**.
 
-1. Selecteer de **Variabelen** in het linkervenster en tikt u op **Maken**.
+1. Selecteer de **Variabelen** in het linkerdeelvenster en selecteert u **Maken**.
 1. In de **Variabele maken** sectie:
 
    1. Enter **Vorige balans** als de naam van de variabele.
    1. Selecteren **Getal** als type.
-   1. Tikken **Maken**.
+   1. Selecteren **Maken**.
 
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
@@ -254,7 +254,7 @@ Het fragment Overzicht van ladingen Document bevat de volgende velden:
 
 Ga als volgt te werk om statische tekst te maken en elementen van het formuliergegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Selecteren **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Selecteren **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
@@ -262,9 +262,9 @@ Ga als volgt te werk om statische tekst te maken en elementen van het formulierg
 
    1. Selecteren **Formuliergegevensmodel** van de **Gegevensmodel** sectie.
 
-   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
+   1. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en selecteer **Selecteren**.
 
-   1. Tikken **Volgende**.
+   1. Selecteren **Volgende**.
 
 1. Maak statische tekst voor de volgende velden met behulp van het rechterdeelvenster:
 
@@ -293,7 +293,7 @@ Ga als volgt te werk om statische tekst te maken en elementen van het formulierg
 
    ![Overzicht van heffingen](assets/summary_charges_static_fdm_new.png)
 
-1. Selecteer de tekst in het dialoogvenster **Kosten voor toegevoegde services** rij en tik **Regel maken** om een voorwaarde tot stand te brengen die waarop de rij in Interactieve Mededeling wordt getoond:
+1. Selecteer de tekst in het dialoogvenster **Kosten voor toegevoegde services** rij en selecteer **Regel maken** om een voorwaarde tot stand te brengen die waarop de rij in Interactieve Mededeling wordt getoond:
 1. Op de **Regel maken** pop-upvenster:
 
    1. Selecteren **Gegevensmodellen en variabelen** en vervolgens **biljet** > **opvragingskosten**.

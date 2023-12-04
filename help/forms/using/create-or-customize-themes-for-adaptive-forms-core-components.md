@@ -7,9 +7,9 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1927'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ U hebt de flexibiliteit om individuele componenten aan te passen of thema-vlakke
 De `variable.scss` bevat de algemene variabelen van het thema. Door deze variabelen bij te werken, kunt u op themaniveau op stijl betrekking hebbende veranderingen aanbrengen. Voer de volgende stappen uit om stijlen op themaniveau toe te passen:
 
 1. Open de `<your-theme-sources>/src/site/_variables.scss` bestand voor bewerking.
-1. Wijzig de waarde van een willekeurige eigenschap. De standaardfoutkleur is bijvoorbeeld rood. Als u de kleur van de fout wilt wijzigen van rood in blauw, wijzigt u de hexadecimale kleurcode van het dialoogvenster `$error`variabele. Bijvoorbeeld, `$error: #196ee5`.
+1. Wijzig de waarde van een willekeurige eigenschap. De standaardfoutkleur is bijvoorbeeld rood. Als u de kleur van de fout wilt wijzigen van rood in blauw, wijzigt u de hexadecimale kleurcode van het dialoogvenster `$error`variabele. Bijvoorbeeld: `$error: #196ee5`.
 
    ![Voorbeeld: Foutkleur ingesteld op blauw](/help/forms/using/assets/theme-level-changes.png)
 
@@ -187,7 +187,7 @@ U kunt ook het lettertype, de kleur, de grootte en andere CSS-eigenschappen aanp
 Om een thema in een AEM instantie op te stellen, moet het in een Bibliotheek van de Cliënt worden omgezet. Ga als volgt te werk om het thema om te zetten in een clientbibliotheek:
 
 1. Open de opdrachtprompt of het terminalvenster.
-1. Ga naar de `<your-theme-sources>` map. Bijvoorbeeld, `C:\aem-forms-theme-canvas`
+1. Ga naar de `<your-theme-sources>` map. Bijvoorbeeld: `C:\aem-forms-theme-canvas`
 1. Voer de volgende opdracht uit:
 
    ```
@@ -233,7 +233,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -247,7 +247,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -283,7 +283,7 @@ Nadat het pakket is geïnstalleerd, is het thema beschikbaar voor selectie.
 De stappen voor het toepassen van een thema op een adaptief formulier zijn:
 
 1. Meld u aan bij de lokale AEM auteur.
-1. Ga uw geloofsbrieven op de Experience Manager login pagina in. Tikken **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+1. Ga uw geloofsbrieven op de Experience Manager login pagina in. Selecteren **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
 1. Klikken **Maken** > **Adaptieve Forms**.
 1. Selecteer een adaptieve Forms Core Components-sjabloon en klik op **Volgende**. De **Eigenschappen toevoegen** lijkt
 1. Geef de **Naam** voor uw adaptieve formulier.
@@ -303,8 +303,8 @@ De thema&#39;s Adaptief formulier worden gebruikt als onderdeel van een adaptiev
 Ongebruikte of ongewenste thema&#39;s verwijderen:
 
 1. Meld u aan bij de instantie Auteur.
-1. Open `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
-1. Ga naar `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
+1. Openen `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
+1. Navigeren naar `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Verwijder de themamap en sla de wijzigingen op.
 
 

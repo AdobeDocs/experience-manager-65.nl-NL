@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6102'
-ht-degree: 2%
+source-wordcount: '6121'
+ht-degree: 1%
 
 ---
 
@@ -95,7 +95,7 @@ Zie [Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen](
 1. Selecteer in het linkerdeelvenster van de Dynamic Media Configuration Browser-pagina de optie **[!UICONTROL global]** (selecteer het mappictogram niet links van **[!UICONTROL global]**), selecteert u vervolgens **[!UICONTROL Create]**.
 1. Op de **[!UICONTROL Create Dynamic Media Configuration]** Voer een titel, het e-mailadres van de Dynamic Media-account en het wachtwoord in en selecteer vervolgens uw regio. Deze informatie wordt u per Adobe verstrekt in de levering e-mail. Neem contact op met de klantenondersteuning van de Adobe als u het e-mailbericht niet hebt ontvangen.
 
-   Selecteer **[!UICONTROL Connect to Dynamic Media]**.
+   Selecteren **[!UICONTROL Connect to Dynamic Media]**.
 
 1. In de **[!UICONTROL Change Password]** in het dialoogvenster **[!UICONTROL New Password]** voert u een nieuw wachtwoord in dat uit 8-25 tekens bestaat. Het wachtwoord moet ten minste een van de volgende elementen bevatten:
 
@@ -156,7 +156,7 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
    >
    Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 1. Om Dynamic Media-inhoud veilig voor te vertonen voordat deze wordt gepubliceerd, gebruikt de auteur van de Experience Manager een op token gebaseerde validatie en wordt daarom standaard de Dynamic Media-inhoud voorvertoond door de auteur van de Experience Manager. Nochtans, kunt u &quot;lijst van gewenste personen&quot;meer IPs om gebruikers toegang tot veilig voorproefinhoud te verlenen. Als u deze handeling wilt instellen in Experience Manager, raadpleegt u [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren - tabblad Beveiliging](/help/assets/dm-publish-settings.md#security-tab).
 
 Als u uw configuratie verder wilt aanpassen, zoals toelatend ACL (de Lijst van het Toegangsbeheer) toestemmingen, kunt u naar keuze om het even welke taken voltooien onder [(Optioneel) Geavanceerde instellingen configureren in de modus Dynamic Media - Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
@@ -276,7 +276,7 @@ Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebr
 
    * Kopieer en plak het pad boven in het veld CRXDE Lite-pad onder de werkbalk en druk vervolgens op `Enter`.
 
-1. Klik in het linkerspoor met de rechtermuisknop op `fileupload`selecteert u vervolgens in het pop-upmenu de optie **[!UICONTROL Overlay Node]**.
+1. Klik met de rechtermuisknop in het linkerspoor `fileupload`selecteert u vervolgens in het pop-upmenu de optie **[!UICONTROL Overlay Node]**.
 
    ![Overlayknooppunt, optie](/help/assets/assets-dm/uploadassets15gb_a.png)
 
@@ -321,13 +321,13 @@ U kunt een waarde invoeren tot 15 GB (`2013265920` bytes). In dit geval worden g
    *Stel nu de time-out voor de stap voor het Scene7 Direct Binary Upload-proces in door het volgende te doen:*
 
 1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Selecteer op de pagina Workflowmodellen de optie **[!UICONTROL Dynamic Media Encode Video]**.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Edit]**.
 1. Dubbelklik op de pagina met workflows op de knop **[!UICONTROL Scene7 Direct Binary Upload]** processtap.
 1. In de **[!UICONTROL Step Properties]** onder de **[!UICONTROL Common]** onder de **[!UICONTROL Advanced Settings]** in de **[!UICONTROL Timeout]** veld, voert u een waarde in van `18000` seconden (vijf uur). De standaardwaarde is `3600` seconden (één uur).
-1. Selecteer **[!UICONTROL OK]**.
-1. Selecteer **[!UICONTROL Sync]**.
+1. Selecteren **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL Sync]**.
 1. Herhaal stap 14-21 voor de **[!UICONTROL DAM Update Asset]** workflowmodel en de **[!UICONTROL Dynamic Media Reprocess]** workflowmodel.
 
 ### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
@@ -388,7 +388,7 @@ Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
 
    * Dubbelklik op de knop **[!UICONTROL enabled]** veld. Standaard zijn alle elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de activa voor verwerking naar Dynamic Media worden gesynchroniseerd. Als u wilt uitsluiten dat dit type asset mime wordt verwerkt, wijzigt u deze instelling in **[!UICONTROL false]**.
 
-   * Dubbeltikken **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/assets-formats.md#supported-mime-types) voor een lijst van toegestane waarden van de verwerkingsparameters die u voor een bepaald mime type kunt gebruiken.
+   * Dubbelselecteren **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/assets-formats.md#supported-mime-types) voor een lijst van toegestane waarden van de verwerkingsparameters die u voor een bepaald mime type kunt gebruiken.
 
 1. Voer een van de volgende handelingen uit:
 
@@ -442,7 +442,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Met het mime-type `image_vnd.dwg` nog steeds geselecteerd, uit de **[!UICONTROL Properties]** tabblad, in de **[!UICONTROL enabled]** rij, onder de **[!UICONTROL Value]** kolomkop, dubbeltikt u op de waarde om de **[!UICONTROL Value]** vervolgkeuzelijst.
+1. Met het mime-type `image_vnd.dwg` nog steeds geselecteerd, uit de **[!UICONTROL Properties]** tabblad, in de **[!UICONTROL enabled]** rij, onder de **[!UICONTROL Value]** kolomkop, dubbelselecteer de waarde om de **[!UICONTROL Value]** vervolgkeuzelijst.
 1. Type `false` in het veld (of selecteer **[!UICONTROL false]** in de vervolgkeuzelijst).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -670,7 +670,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 #### De wachtrij met een graniet-workflow bijwerken {#updating-the-granite-workflow-queue}
 
@@ -690,7 +690,7 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 #### De Dynamic Media Classic-uploadverbinding bijwerken {#updating-the-scene-upload-connection}
 
@@ -698,7 +698,7 @@ Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-e
 
 **De Dynamic Media Classic-uploadverbinding bijwerken:**
 
-1. Ga naar `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navigeren naar `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. In de **[!UICONTROL Number of connections]** en/of **[!UICONTROL Active job timeout]** veld, wijzigt u het nummer naar wens.
 
    De **[!UICONTROL Number of connections]** Met deze instelling bepaalt u het maximum aantal HTTP-verbindingen dat Experience Manager naar Dynamic Media-upload is toegestaan. De vooraf gedefinieerde waarde van tien verbindingen is doorgaans voldoende.
@@ -709,7 +709,7 @@ Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-e
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 ### (Optioneel) Filter elementen voor replicatie {#optional-filtering-assets-for-replication}
 
@@ -763,7 +763,7 @@ Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie h
    | + | Bevat elementen voor replicatie |
    | - | Sluit elementen van replicatie uit |
 
-   Ga naar `content/dam/<locate your asset>/jcr:content/renditions`.
+   Navigeren naar `content/dam/<locate your asset>/jcr:content/renditions`.
 
    De volgende afbeelding is een voorbeeld van de uitvoeringen van een element.
 

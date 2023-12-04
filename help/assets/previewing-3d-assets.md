@@ -7,9 +7,9 @@ feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -37,8 +37,8 @@ Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
 | GLTF | GL-indeling voor verzending | model/gltf+json | Zie **Opmerking** hieronder. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif | |
 | STL | Stereolithografie | application/vnd.ms-pki.stl | |
-| DN | Adobe Dimension | model/x-adobe-dn | Alleen ondersteuning voor inname; voorvertoning niet beschikbaar. |
-| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | Alleen ondersteuning voor inname; voorvertoning niet beschikbaar. |
+| DN | Adobe Dimension | model/x-adobe-dn | Alleen ondersteuning voor inslikken; voorvertoning niet beschikbaar. |
+| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | Alleen ondersteuning voor inslikken; voorvertoning niet beschikbaar. |
 
 >[!NOTE]
 >
@@ -76,13 +76,13 @@ Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-ass
    _Interactieve voorvertoning van een 3D-element op de pagina met de elementdetails._
 1. Voer een van de volgende handelingen uit op de pagina met de elementdetails voor het 3D-element:
 
-   | Weergave | Beschrijving | Muishandeling | Handeling op aanraakscherm |
+   | Weergave | Beschrijving | Muishandeling | Handeling op het aanraakscherm |
    | --- | --- | --- | --- |
    | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
-   | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
-   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
+   | **Uw camera zoomen** | Ga in- en uit gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
+   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbelselecteren. |
    | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
-   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |   |   |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, klikt u op het pictogram Volledig scherm rechtsonder op de pagina. |   |   |
 
 1. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Close]**.

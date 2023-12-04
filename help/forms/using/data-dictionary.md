@@ -10,9 +10,9 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3840'
+source-wordcount: '3842'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 >Voor meerdere letters met vergelijkbare elementen kunt u een algemeen gegevenswoordenboek maken. Een groot gegevenswoordenboek met een groot aantal elementen kan echter prestatieproblemen veroorzaken bij het gebruik van het gegevenswoordenboek en het laden van de elementen, zoals letters en documentfragmenten. Als u problemen ondervindt met de prestaties, kunt u verschillende gegevenswoordenboeken voor verschillende letters maken.
 
 1. Selecteren **Forms** > **Gegevenswoordenboeken**.
-1. Tikken **Gegevenswoordenboek maken**.
+1. Selecteren **Gegevenswoordenboek maken**.
 1. Voeg het volgende toe in het scherm Eigenschappen:
 
    * **Titel:** (Optioneel) Voer de titel in voor het gegevenswoordenboek. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten. Letters en andere documentfragmenten worden met hun titel bedoeld (indien beschikbaar), zoals in miniaturen en elementeigenschappen. Er wordt naar gegevenswoordenboeken verwezen met hun naam en niet met titels.
@@ -59,11 +59,11 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 
    * **Beschrijving**: (Optioneel) Beschrijving van het gegevenswoordenboek.
    * **Tags:** (Optioneel) Als u een aangepaste tag wilt maken, voert u een waarde in het tekstveld in en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
-   * **Uitgebreide eigenschappen**: (Optioneel) Tikken **Veld toevoegen** om metagegevenskenmerken voor uw gegevenswoordenboek op te geven. Voer in de kolom Naam eigenschap een unieke eigenschapnaam in. Voer in de kolom Waarde een waarde in die u aan de eigenschap wilt koppelen.
+   * **Uitgebreide eigenschappen**: (Optioneel) Selecteer **Veld toevoegen** om metagegevenskenmerken voor uw gegevenswoordenboek op te geven. Voer in de kolom Naam eigenschap een unieke eigenschapnaam in. Voer in de kolom Waarde een waarde in die u aan de eigenschap wilt koppelen.
 
    ![Eigenschappen voor gegevenswoordenboeken, zoals in het Duits gespecificeerd](do-not-localize/1_ddproperties.png)
 
-1. (Optioneel) Als u een XSD-schemadefinitie voor uw gegevenswoordenboek wilt uploaden, tikt u onder het deelvenster Structuur gegevenswoordenboek op **XML-schema uploaden**. Blader naar het XSD-bestand, selecteer het en tik op **Openen**. Er wordt een gegevenswoordenboek gemaakt op basis van het geüploade XML-schema. U moet de weergavenamen en beschrijvingen van de elementen in het gegevenswoordenboek aanpassen. U doet dit door de namen van de elementen te selecteren door erop te tikken en de beschrijvingen, weergavenamen en andere details in de velden in het rechterdeelvenster te bewerken.
+1. (Optioneel) Als u een XSD-schemadefinitie voor het gegevenswoordenboek wilt uploaden, selecteert u onder het deelvenster Structuur gegevenswoordenboek de optie **XML-schema uploaden**. Blader naar het XSD-bestand, selecteer het en selecteer **Openen**. Er wordt een gegevenswoordenboek gemaakt op basis van het geüploade XML-schema. U moet de weergavenamen en beschrijvingen van de elementen in het gegevenswoordenboek aanpassen. U doet dit door de namen van de elementen te selecteren door erop te tikken en de beschrijvingen, weergavenamen en andere details in de velden in het rechterdeelvenster te bewerken.
 
    Voor meer informatie over Berekende DD-elementen raadpleegt u [Berekende gegevenswoordenboekelementen](#computedddelements).
 
@@ -71,10 +71,10 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    >
    >U kunt het uploaden van het schemadossier overslaan en uw gegevenswoordenboek van kras bouwen gebruikend het gebruikersinterface. U doet dit door deze stap over te slaan en door te gaan met de volgende stappen.
 
-1. Tikken **Volgende**.
+1. Selecteren **Volgende**.
 1. Voeg in het scherm Eigenschappen toevoegen de elementen toe aan het gegevenswoordenboek. U kunt ook elementen toevoegen/verwijderen en de details ervan bewerken als u een schema hebt geüpload voor een basisstructuur van het gegevenswoordenboek.
 
-   U kunt op de drie punten aan de rechterkant van een element tikken en een element toevoegen aan de gegevenswoordenboekstructuur.
+   U kunt de drie stippen aan de rechterkant van een element selecteren en een element toevoegen aan de gegevenswoordenboekstructuur.
 
    ![1_2_element maken](assets/1_2_createanelement.png)
 
@@ -98,7 +98,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optioneel) Nadat u een element hebt geselecteerd, kunt u op het tabblad Geavanceerd eigenschappen (kenmerken) toevoegen. U kunt ook tikken **Veld toevoegen** en de eigenschappen van een DD-element uitbreiden.
+1. (Optioneel) Nadat u een element hebt geselecteerd, kunt u op het tabblad Geavanceerd eigenschappen (kenmerken) toevoegen. U kunt ook **Veld toevoegen** en de eigenschappen van een DD-element uitbreiden.
 
    ![3_addPropertyAdvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -111,17 +111,17 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    >Als u een samengesteld element/verzamelingselement met onderliggende knooppunten verwijdert, worden ook de onderliggende knooppunten verwijderd.
 
 1. (Optioneel) Selecteer een element in het deelvenster Structuur gegevenswoordenboek en in het deelvenster Lijst met velden en variabelen. Wijzig de vereiste kenmerken die aan het element zijn gekoppeld of voeg deze toe.
-1. Tikken **Opslaan**.
+1. Selecteren **Opslaan**.
 
 ### Kopieën maken van een of meer gegevenswoordenboeken {#create-copies-of-one-or-more-data-dictionary}
 
 Als u snel een of meer gegevenswoordenboeken wilt maken met eigenschappen en elementen die lijken op bestaande gegevenswoordenboeken, kunt u deze kopiëren en plakken.
 
 1. Selecteer de juiste gegevenswoordenboeken in de lijst met gegevenswoordenboeken. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven.
-1. Tik op Plakken. Het dialoogvenster Plakken wordt geopend. Het systeem wijst automatisch namen en titels toe aan de nieuwe gegevenswoordenboeken.
+1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven.
+1. Selecteer Plakken. Het dialoogvenster Plakken wordt geopend. Het systeem wijst automatisch namen en titels toe aan de nieuwe gegevenswoordenboeken.
 1. Bewerk indien nodig de titel en naam waarmee u de kopie van het gegevenswoordenboek wilt opslaan.
-1. Tik op Plakken. De kopie van het gegevenswoordenboek wordt gemaakt. Nu kunt u de vereiste wijzigingen aanbrengen in het nieuwe gegevenswoordenboek.
+1. Selecteer Plakken. De kopie van het gegevenswoordenboek wordt gemaakt. Nu kunt u de vereiste wijzigingen aanbrengen in het nieuwe gegevenswoordenboek.
 
 ## Zie documentfragmenten of documenten die naar een element van het Woordenboek van Gegevens verwijzen {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
@@ -129,32 +129,32 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
 
 1. Voer een van de volgende handelingen uit om het gegevenswoordenboek te bewerken:
 
-   * Houd de cursor boven een gegevenswoordenboek en tik op Bewerken.
-   * Selecteer een gegevenswoordenboek en tik vervolgens op Bewerken in de koptekst.
-   * Houd de cursor boven een gegevenswoordenboek en tik op Selecteren. Tik vervolgens op Bewerken in de koptekst.
+   * Houd de cursor boven een gegevenswoordenboek en selecteer Bewerken.
+   * Selecteer een gegevenswoordenboek en selecteer vervolgens Bewerken in de koptekst.
+   * Houd de cursor boven een gegevenswoordenboek en selecteer Selecteren. Selecteer vervolgens Bewerken in de koptekst.
 
-   Of tik op een gegevenswoordenboek om dit weer te geven.
+   Of selecteer een gegevenswoordenboek om dit weer te geven.
 
-1. Tik in het gegevenswoordenboek op een eenvoudig element om dit te selecteren. Samengestelde elementen en verzamelingselementen hebben geen verwijzingen.
+1. Selecteer in het gegevenswoordenboek een eenvoudig element om het te selecteren. Samengestelde elementen en verzamelingselementen hebben geen verwijzingen.
 
    Naast de eigenschappen Standaard en Geavanceerd van het element wordt ook de eigenschap Lent Content weergegeven.
 
-1. Tik op Inhoud lent.
+1. Selecteer Inhoud uitlijnen.
 
    Het tabblad Inhoud van de regel wordt weergegeven met de volgende tekst: Teksten, Voorwaarden, Letters en Interactieve communicatie. In elk van deze koppen wordt ook het aantal verwijzingen naar het geselecteerde element weergegeven.
 
-1. Tik op een kop om de naam weer te geven van de elementen die naar het element verwijzen.
+1. Selecteer een kop om de naam weer te geven van de elementen die naar het element verwijzen.
 
    ![lentininhoud](assets/lentcontent.png)
 
-1. Tik op het element om de inhoud van de bovenliggende inhoud voor een ander element weer te geven.
-1. Tik op de naam van een element om een element weer te geven dat naar het element verwijst. De browser geeft het element, de letter of de interactieve communicatie weer.
+1. Selecteer het element om de inhoud van de bovenliggende inhoud voor een ander element weer te geven.
+1. Als u een element wilt weergeven dat naar het element verwijst, selecteert u het op naam. De browser geeft het element, de letter of de interactieve communicatie weer.
 
 ## Werken met testgegevens {#working-with-test-data}
 
-1. Tik op de pagina Gegevenswoordenboeken op **Selecteren**.
-1. Tik op een gegevenswoordenboek waarvoor u testgegevens wilt downloaden en tik vervolgens op **Voorbeeld-XML-gegevens downloaden**.
-1. Tikken **OK** in het waarschuwingsbericht. Een XML-bestand wordt gedownload.
+1. Selecteer op de pagina Gegevenswoordenboeken de optie **Selecteren**.
+1. Selecteer een gegevenswoordenboek waarvoor u testgegevens wilt downloaden en selecteer vervolgens **Voorbeeld-XML-gegevens downloaden**.
+1. Selecteren **OK** in het waarschuwingsbericht. Een XML-bestand wordt gedownload.
 1. Open het XML-bestand met Kladblok of een andere XML-editor. Het XML-bestand heeft dezelfde structuur als het gegevenswoordenboek en de plaatsaanduidingstekenreeksen in de elementen. Vervang de tekenreeksen voor plaatsaanduidingen door de gegevens waarmee u een letter wilt testen.
 
    ```xml
@@ -200,7 +200,7 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
 
 1. Nadat u de gegevensinvoer hebt gemaakt, kunt u dit XML-bestand gebruiken wanneer u een voorbeeld van een letter weergeeft met testgegevens.
 
-   U kunt deze testgegevens toevoegen met DD (Selecteer DD en tik op Testgegevens uploaden en upload dit XML-bestand). Als u de standaardvoorvertoning van de brief (niet de aangepaste versie) selecteert, worden deze XML-gegevens gebruikt in letter. U kunt ook op Aangepast tikken en deze XML uploaden.
+   U kunt deze testgegevens toevoegen met DD (Selecteer DD en selecteer Testgegevens uploaden en upload dit XML-bestand). Als u de standaardbrief (niet de aangepaste) voorvertoont, worden deze XML-gegevens gebruikt in letter. U kunt ook Aangepast selecteren en deze XML uploaden.
 
 ## Voorbeelden {#samples}
 
@@ -413,9 +413,9 @@ Voor het exporteren van een XSD-bestand zijn specifieke gegevenstoewijzingen nod
 
 Nadat u een gegevenswoordenboek hebt gemaakt, kunt u dit downloaden als een XML-voorbeeldgegevensbestand om er tekstgegevens in te maken.
 
-1. Tik op de pagina Gegevenswoordenboeken op **Selecteren** tikt u vervolgens op een gegevenswoordenboek om het te selecteren.
+1. Selecteer op de pagina Gegevenswoordenboeken de optie **Selecteren** en selecteer vervolgens een gegevenswoordenboek om het te selecteren.
 1. Selecteren **Voorbeeld-XML-gegevens downloaden**.
-1. Tikken **OK** in het waarschuwingsbericht.
+1. Selecteren **OK** in het waarschuwingsbericht.
 
    Correspondence Management maakt een XML-bestand op basis van de structuur van het geselecteerde gegevenswoordenboek en downloadt het bestand met de naam naar de computer &lt;data-dictionary-name>-SampleData. Nu kunt u dit bestand in een XML- of teksteditor bewerken om gegevensinvoer te maken terwijl [een letter maken](../../forms/using/create-letter.md).
 
@@ -425,9 +425,9 @@ Wanneer u dezelfde letter in verschillende talen naar uw klanten wilt verzenden,
 
 ### Gegevenswoordenboek lokaliseren {#localize-data-dictionary}
 
-1. Tik op de pagina Gegevenswoordenboeken op **Selecteren** tikt u vervolgens op een gegevenswoordenboek om het te selecteren.
-1. Tikken **Locatiegegevens downloaden**.
-1. Tikken **OK** in de waarschuwing. Correspondentenbeheer downloadt een ZIP-bestand naar de computer met de naam DataDictionary-&lt;ddname>.zip.
+1. Selecteer op de pagina Gegevenswoordenboeken de optie **Selecteren** en selecteer vervolgens een gegevenswoordenboek om het te selecteren.
+1. Selecteren **Locatiegegevens downloaden**.
+1. Selecteren **OK** in de waarschuwing. Correspondentenbeheer downloadt een ZIP-bestand naar de computer met de naam DataDictionary-&lt;ddname>.zip.
 1. Het Zip-bestand bevat een .properties-bestand. In dit bestand wordt het gedownloade gegevenswoordenboek gedefinieerd. De inhoud van het eigenschappenbestand is vergelijkbaar met het volgende:
 
    ```ini
@@ -565,7 +565,7 @@ In het volgende voorbeeld ziet u het schema voor een notitie.
    <td>/note/to</td>
   </tr>
   <tr>
-   <td>Van</td>
+   <td>van</td>
    <td>/note/from</td>
   </tr>
   <tr>

@@ -12,9 +12,9 @@ discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,14 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
 
    >[!NOTE]
    >
-   >Dimension van het veld dat is geselecteerd in Forms Designer, worden weergegeven wanneer het veld wordt weergegeven. De afmeting van het weergegeven handtekeningvak wordt echter berekend op basis van de hoogte-breedteverhouding van het veld en niet op basis van de afmeting die is opgegeven in Forms Designer.
+   >Dimensionen van het veld dat is geselecteerd in Forms Designer, worden weergegeven wanneer het veld wordt weergegeven. De afmeting van het weergegeven handtekeningvak wordt echter berekend op basis van de hoogte-breedteverhouding van het veld en niet op basis van de afmeting die is opgegeven in Forms Designer.
 
 1. Configureer het veld Ondertekeningskrabbelen.
 
    In het veld Ondertekeningskrabbelveld wordt informatie over de geolocatie standaard gemarkeerd als verplicht tijdens het ondertekeningsproces op iPad (en is optioneel voor andere apparaten). Dit standaardgedrag kan worden overschreven door de waarde van de optie `geoLocMandatoryOnIpad` eigenschap. Deze eigenschap wordt als extra&#39;s weergegeven in het veld Ondertekeningskrabbelen. De volgende stappen moeten worden gewijzigd:
 
    1. Selecteer in het formulier het veld Scripting handtekening.
-   1. Selecteer **XML-bron** tab.
+   1. Selecteer de **XML-bron** tab.
 
       >[!NOTE]
       >
@@ -53,7 +53,7 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
       </extras>
       ```
 
-   1. Selecteer **Ontwerpweergave** tab. Klik in het bevestigingsvak op **Ja**.
+   1. Selecteer de **Ontwerpweergave** tab. Klik in het bevestigingsvak op **Ja**.
    1. Sla het formulier op.
 
 1. Het formulier weergeven op een ondersteund apparaat/desktopbrowser.
@@ -73,6 +73,7 @@ Nadat een veld Handtekeningenkrabbels aan het formulier is toegevoegd en het is 
 Wanneer u tijdens het maken van de krabbelmodule op het pictogram voor de geolocatie klikt, worden geografische locatie- en tijdgegevens in het veld ingesloten.
 
 >[!NOTE]
+>
 Op de iPad is het standaard verplicht om geolocatiegegevens in te sluiten.
 
 Op de iPad wordt het geolocatiepictogram niet standaard weergegeven en worden de geolocatiegegevens automatisch ingesloten wanneer u op **OK**.
@@ -96,11 +97,11 @@ Als u op het veld Krabbelen tikt of erop klikt, wordt het dialoogvenster geopend
 
 ### Pengte selecteren {#selecting-pen-size}
 
-Klik op de knop **Penselen** om een lijst weer te geven met beschikbare penformaten. Klik of tik op een pengrootte om de bijbehorende pen te gebruiken.
+Klik op de knop **Penselen** om een lijst weer te geven met beschikbare penformaten. Klik op een pengrootte om de bijbehorende pen te gebruiken.
 
 ### Handtekeningen uit het formulier verwijderen {#delete-signatures-from-the-form}
 
 De handtekeningen uit het formulier verwijderen:
 
-* (Mobiele apparaten) Druk lang op het handtekeningveld en tik in het bevestigingsvenster op **Ja**.
+* (Mobiele apparaten) Druk lang op het handtekeningveld en selecteer in het bevestigingsvenster **Ja**.
 * (Computer) Houd de muisaanwijzer boven het handtekeningveld en klik op de knop **Annuleren** en klikt u in het bevestigingsvenster op **Ja**.

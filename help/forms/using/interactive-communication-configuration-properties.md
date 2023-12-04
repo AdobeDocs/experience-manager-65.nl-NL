@@ -12,10 +12,10 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 1%
+source-wordcount: '610'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Open de **Configuratie Adobe Experience Manager-webconsole** pagina met de volge
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
-De configuratie-eigenschappen omvatten:
+De configuratie-eigenschappen zijn onder andere:
 
 * [Configuratie van documentfragmenten](#document-fragments-configuration)
 * [Correspondentenconfiguratie maken](#create-correspondence-configuration)
@@ -36,7 +36,7 @@ De configuratie-eigenschappen omvatten:
 
 ## Configuratie van documentfragmenten {#document-fragments-configuration}
 
-Tikken **Configuratie van documentfragmenten** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratie-eigenschappen voor documentfragmenten weer te geven.
+Selecteren **Configuratie van documentfragmenten** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratie-eigenschappen voor documentfragmenten weer te geven.
 
 <table>
  <tbody> 
@@ -62,19 +62,19 @@ Tikken **Configuratie van documentfragmenten** op de **Configuratie Adobe Experi
   <tr> 
    <td>Inspringing</td> 
    <td>De breedte van één inspringingseenheid die wordt toegepast op tekst in documentfragmenten van de lijst.</td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Getal</td> 
   </tr> 
   <tr> 
    <td>Roman Numbers Minimum Width</td> 
    <td>Minimumbreedte die moet worden toegepast op het opsommingsteken of nummerveld bij gebruik van Romeinse nummers in documentfragmenten van de lijst. </td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Getal</td> 
   </tr> 
   <tr> 
    <td>Minimumbreedte aantal</td> 
-   <td>Minimumbreedte die op het opsommingsteken of nummerveld moet worden toegepast wanneer u genummerde lijsten gebruikt, met uitzondering van Romeinse nummers in documentfragmenten van de lijst.</td> 
-   <td>8.0mm</td> 
+   <td>Minimumbreedte die moet worden toegepast op het opsommingsteken of nummerveld bij het gebruik van genummerde lijsten behalve Romeinse nummers in documentfragmenten van de lijst.</td> 
+   <td>8,0 mm</td> 
    <td>Getal</td> 
   </tr> 
  </tbody> 
@@ -82,7 +82,7 @@ Tikken **Configuratie van documentfragmenten** op de **Configuratie Adobe Experi
 
 ## Correspondentenconfiguratie maken {#create-correspondence-configuration}
 
-Tikken **Correspondentenconfiguratie maken** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Agent UI te bekijken.
+Selecteren **Correspondentenconfiguratie maken** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Agent UI te bekijken.
 
 <table>
  <tbody> 
@@ -106,7 +106,7 @@ Tikken **Correspondentenconfiguratie maken** op de **Configuratie Adobe Experien
   </tr> 
   <tr> 
    <td>Lettertype insluiten in PDF inschakelen</td> 
-   <td><p>Schakel het selectievakje in om het insluiten van lettertypen in de PDF-documenten in te schakelen. Nadat u deze optie hebt geselecteerd, kunt u nieuwe lettertypen insluiten nadat u de PDF-documenten hebt gegenereerd of een voorvertoning ervan hebt weergegeven met de gebruikersinterface van de Agent. Gebruik het kanaal van de Druk van Interactieve Communicatie om PDF documenten te produceren en voor te proef.</p> <p>Het insluiten van lettertypen in een PDF-document is handig als een lettertype beschikbaar is op een computer die wordt gebruikt om de PDF te genereren en die niet beschikbaar is op de clientcomputer die de PDF benadert.</p> <p>Voor meer informatie over het insluiten van lettertypen raadpleegt u <a href="../../forms/using/customize-text-editor.md" target="_blank">Teksteditor aanpassen</a>.</p> </td> 
+   <td><p>Schakel het selectievakje in om het insluiten van lettertypen in de PDF-documenten in te schakelen. Nadat u deze optie hebt geselecteerd, kunt u nieuwe lettertypen insluiten nadat u de PDF-documenten hebt gegenereerd of een voorvertoning ervan hebt weergegeven met de gebruikersinterface van de Agent. Gebruik het kanaal van de Druk van Interactieve Communicatie om PDF documenten te produceren en voor te proef.</p> <p>Het insluiten van lettertypen in een PDF-document is handig als een lettertype beschikbaar is op een computer die wordt gebruikt om de PDF te genereren en die niet beschikbaar is op de clientcomputer die de PDF benadert.</p> <p>Zie voor meer informatie over het insluiten van lettertypen <a href="../../forms/using/customize-text-editor.md" target="_blank">Teksteditor aanpassen</a>.</p> </td> 
    <td>Niet geselecteerd</td> 
    <td>Niet van toepassing</td> 
   </tr> 
@@ -115,17 +115,17 @@ Tikken **Correspondentenconfiguratie maken** op de **Configuratie Adobe Experien
 
 ## Adaptieve vorm en interactieve communicatie Webkanaalconfiguratie {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tikken **Adaptieve vorm en interactieve communicatie Webkanaalconfiguratie** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Adaptief Forms en Interactive Communications Web channel weer te geven. De volgende lijst beschrijft de eigenschappen met betrekking tot Interactieve Mededelingen:
+Selecteren **Adaptieve vorm en interactieve communicatie Webkanaalconfiguratie** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Adaptief Forms en Interactive Communications Web channel weer te geven. De volgende lijst beschrijft de eigenschappen met betrekking tot Interactieve Mededelingen:
 
 | Eigenschap | Beschrijving | Standaard | Acceptabele waarden |
 |---|---|---|---|
 | Tijdelijke aanduiding tonen | Schakel het selectievakje in om de weergave van plaatsaanduidingen in te schakelen voor velden die zijn opgenomen in adaptieve formulieren en interactieve communicatie. | Geselecteerd | Niet van toepassing |
-| Maximum aantal cacheitems | Stel het maximumaantal adaptieve formulieren en interactieve communicatie in dat kan worden opgehaald met behulp van het cachegeheugen. | 100 | Getal |
+| Maximum aantal cacheitems | Stel het maximumaantal adaptieve formulieren en interactieve communicatie in dat kan worden opgehaald met het cachegeheugen. | 100 | Getal |
 | Bestandsnaam uniek maken | Schakel het selectievakje in om unieke namen te hebben voor bestanden die als bijlagen zijn opgenomen in Adaptieve Forms en Interactieve communicatie. | Niet geselecteerd | Niet van toepassing |
 
 ## Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tikken **Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Adaptieve Forms en Interactieve Communicatie de kanaalthema&#39;s van het Web te bekijken.
+Selecteren **Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Adaptieve Forms en Interactieve Communicatie de kanaalthema&#39;s van het Web te bekijken.
 
 <table>
  <tbody> 
@@ -139,7 +139,7 @@ Tikken **Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie*
    <td>Naam lettertypenlijst</td> 
    <td>Lijst met lettertypen die beschikbaar zijn voor gebruik tijdens het maken van Adaptieve Forms en Interactieve communicatie.</td> 
    <td><p>Georgia</p> <p>Boek-antiaqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Gevolgen</p> <p>Palatino Linotype</p> </td> 
-   <td>Alle geldige Adobe-serverlettertypen</td> 
+   <td>Alle geldige serverlettertypen voor Adobe</td> 
   </tr> 
  </tbody> 
 </table>

@@ -8,9 +8,9 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2684'
 ht-degree: 0%
 
 ---
@@ -120,14 +120,14 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 1. Installeer het JDBC-stuurprogramma voor MySQL-database als een OSGi-bundel:
 
    1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
-   1. Tikken **Installeren/bijwerken**. An **Bundels uploaden/installeren** wordt weergegeven.
+   1. Selecteren **Installeren/bijwerken**. An **Bundels uploaden/installeren** wordt weergegeven.
 
-   1. Tikken **Bestand kiezen** om te doorbladeren en de MySQL JDBC bestuurder OSGi bundel te selecteren. Selecteren **Bundel starten** en **Pakketten vernieuwen** en tikken **Installeren** of **Bijwerken**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van de Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
+   1. Selecteren **Bestand kiezen** om te doorbladeren en de MySQL JDBC bestuurder OSGi bundel te selecteren. Selecteren **Bundel starten** en **Pakketten vernieuwen** en selecteert u **Installeren** of **Bijwerken**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van de Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
 
 1. MySQL-database configureren als gegevensbron:
 
    1. Ga naar AEM webconsole op [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Zoeken **Apache Sling Connection Pooled DataSource** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
+   1. Zoeken **Apache Sling Connection Pooled DataSource** configuratie. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
       * **Naam gegevensbron:** U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **MySQL**.
@@ -147,7 +147,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
 
-   Andere eigenschappen standaard laten staan [waarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en tikken **Opslaan**.
+   Andere eigenschappen standaard laten staan [waarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en selecteert u **Opslaan**.
 
    Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
 
@@ -160,9 +160,9 @@ AEM Forms biedt een intuïtieve gebruikersinterface voor [Een modus voor formuli
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
 1. Navigeer in AEM auteurinstantie naar **Forms** > **Gegevensintegratie**.
-1. Tikken **Maken** > **Formuliergegevensmodel**.
-1. Geef in de wizard Formuliergegevensmodel maken een **name** voor het formuliergegevensmodel. Bijvoorbeeld: **FDM_Create_First_IC**. Tikken **Volgende**.
-1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteren **MySQL** gegevensbron en tik **Maken**.
+1. Selecteren **Maken** > **Formuliergegevensmodel**.
+1. Geef in de wizard Formuliergegevensmodel maken een **name** voor het formuliergegevensmodel. Bijvoorbeeld: **FDM_Create_First_IC**. Selecteren **Volgende**.
+1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteren **MySQL** gegevensbron en selecteer **Maken**.
 
    ![MYSQL-gegevensbron](assets/fdm_mysql_data_source_new.png)
 
@@ -181,7 +181,7 @@ Het formuliergegevensmodel configureren omvat:
 ### Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
 1. Navigeer in AEM auteurinstantie naar **Forms** > **Gegevensintegratie**. De standaard-URL is [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. De **FDM_Create_First_IC** Hier wordt het formuliergegevensmodel weergegeven dat u eerder hebt gemaakt. Selecteer het en tik **Bewerken**.
+1. De **FDM_Create_First_IC** Hier wordt het formuliergegevensmodel weergegeven dat u eerder hebt gemaakt. Selecteer het en selecteer **Bewerken**.
 
    De geselecteerde gegevensbron **MySQL** wordt weergegeven in het dialoogvenster **Gegevensbronnen** venster.
 
@@ -200,7 +200,7 @@ Het formuliergegevensmodel configureren omvat:
       * get
       * update
 
-   Tikken **Geselecteerde toevoegen** Hiermee voegt u geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
+   Selecteren **Geselecteerde toevoegen** Hiermee voegt u geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
 
    ![Objectservices voor gegevensmodellen selecteren](assets/select_data_model_object_services_new.png)
 
@@ -218,29 +218,29 @@ Maak op basis van het gebruiksgeval de **gebruikskosten** onderliggende berekend
 
 Voer de volgende stappen uit om berekende onderliggende eigenschappen voor het modelobject van rekeningen te maken:
 
-1. Schakel het selectievakje boven aan het dialoogvenster **biljet** gegevensmodelobject selecteren en tikken **Eigenschap voor onderliggende elementen maken**.
+1. Schakel het selectievakje boven aan het dialoogvenster **biljet** gegevensmodelobject om het te selecteren en te selecteren **Eigenschap voor onderliggende elementen maken**.
 1. In de **Eigenschap voor onderliggende elementen maken** deelvenster:
 
    1. Enter **gebruikskosten** als de naam van de onderliggende eigenschap.
    1. Inschakelen **Berekend**.
-   1. Selecteren **Float** als type en tik **Gereed** om de eigenschap child toe te voegen aan de **biljet** gegevensmodelobject.
+   1. Selecteren **Float** als het type en selecteer **Gereed** om de eigenschap child toe te voegen aan de **biljet** gegevensmodelobject.
 
    ![Eigenschap voor onderliggende elementen maken](assets/create_child_property_new.png)
 
-1. Tikken **Regel bewerken** om de Regeleditor te openen.
-1. Tikken **Maken**. De **Waarde instellen** regelvenster wordt geopend.
+1. Selecteren **Regel bewerken** om de Regeleditor te openen.
+1. Selecteer **Maken**. De **Waarde instellen** regelvenster wordt geopend.
 1. Selecteer in het keuzemenu Optie selecteren de optie **Wiskundige expressie**.
 
    ![Redacteur voor gebruiksrechten](assets/usage_charges_rule_editor_new.png)
 
-1. Selecteer in de wiskundige expressie **opvragingskosten** en **samenvattingskosten** als respectievelijk eerste en tweede object. Selecteren **plus** als de operator. Tik binnen de wiskundige expressie en tik op **Expressie uitbreiden** toevoegen **schaarste**, **onderlinge verbinding**, **landelijk**, **roamingintnl**, en **vas** objecten naar de expressie.
+1. Selecteer in de wiskundige expressie **opvragingskosten** en **samenvattingskosten** als respectievelijk eerste en tweede object. Selecteren **plus** als de operator. Selecteren in de wiskundige expressie en selecteren **Expressie uitbreiden** toevoegen **schaarste**, **onderlinge verbinding**, **landelijk**, **roamingintnl**, en **vas** objecten naar de expressie.
 
    De volgende afbeelding toont de wiskundige expressie in de regeleditor:
 
    ![regel voor gebruiksrechten](assets/usage_charges_rule_all_new.png)
 
-1. Tikken **Gereed**. De regel wordt gecreeerd in de Redacteur van de Regel.
-1. Tikken **Sluiten** om het venster van de Redacteur van de Regel te sluiten.
+1. Selecteren **Gereed**. De regel wordt gecreeerd in de Redacteur van de Regel.
+1. Selecteren **Sluiten** om het venster van de Redacteur van de Regel te sluiten.
 
 ### Koppelingen tussen gegevensmodelobjecten toevoegen {#add-associations-between-data-model-objects}
 
@@ -257,7 +257,7 @@ Op basis van het gebruiksgeval kunt u de volgende koppelingen maken tussen de ge
 
 Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecten:
 
-1. Schakel het selectievakje boven aan het dialoogvenster **klant** gegevensmodelobject selecteren en tikken **Koppeling toevoegen**. De **Koppeling toevoegen** eigenschappenvenster wordt geopend.
+1. Schakel het selectievakje boven aan het dialoogvenster **klant** gegevensmodelobject om het te selecteren en te selecteren **Koppeling toevoegen**. De **Koppeling toevoegen** eigenschappenvenster wordt geopend.
 1. In de **Koppeling toevoegen** deelvenster:
 
    * Geef een titel op voor de koppeling. Het is een optioneel veld.
@@ -267,7 +267,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
 
    * Selecteren **get** van de **Service** vervolgkeuzelijst.
 
-   * Tikken **Toevoegen** om de **klant** gegevensmodelobject naar **oproepen** gegevensmodelobject dat een eigenschap gebruikt. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het voorwerp van het klantengegevensmodel worden verbonden. De **Argument toevoegen** wordt geopend.
+   * Selecteren **Toevoegen** om de **klant** gegevensmodelobject naar **oproepen** gegevensmodelobject dat een eigenschap gebruikt. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het voorwerp van het klantengegevensmodel worden verbonden. De **Argument toevoegen** wordt geopend.
 
    ![Koppeling toevoegen](assets/add_association_new.png)
 
@@ -281,7 +281,7 @@ Voor elk mobiel aantal beschikbaar in het modelvoorwerp van klantengegevens, zij
 
    * Selecteren **mobilenum** van de **Bindingswaarde** vervolgkeuzelijst.
 
-   * Tikken **Toevoegen**.
+   * Selecteren **Toevoegen**.
 
    ![Koppeling toevoegen voor een argument](assets/add_association_argument_new.png)
 
@@ -289,11 +289,11 @@ Voor elk mobiel aantal beschikbaar in het modelvoorwerp van klantengegevens, zij
 
    ![Woordkoppeling toevoegen](assets/add_argument_association_new.png)
 
-1. Tikken **Gereed** om een verbinding 1:n tussen klant en roept gegevensmodelvoorwerpen tot stand te brengen.
+1. Selecteren **Gereed** om een verbinding 1:n tussen klant en roept gegevensmodelvoorwerpen tot stand te brengen.
 
    Zodra u een vereniging tussen klant en vraag de modelvoorwerpen van gegevens hebt gecreeerd, creeer een 1:1 vereniging tussen de klant en de modelvoorwerpen van rekeningen.
 
-1. Schakel het selectievakje boven aan het dialoogvenster **klant** gegevensmodelobject selecteren en tikken **Koppeling toevoegen**. De **Koppeling toevoegen** eigenschappenvenster wordt geopend.
+1. Schakel het selectievakje boven aan het dialoogvenster **klant** gegevensmodelobject om het te selecteren en te selecteren **Koppeling toevoegen**. De **Koppeling toevoegen** eigenschappenvenster wordt geopend.
 1. In de **Koppeling toevoegen** deelvenster:
 
    * Geef een titel op voor de koppeling. Het is een optioneel veld.
@@ -308,7 +308,7 @@ De rekeningen en de objecten van het klantengegevensmodel zijn verbonden gebruik
 
    * Selecteren **klantplan** van de **Bindingswaarde** vervolgkeuzelijst.
 
-   * Tikken **Gereed** om een band tussen het billplan en de eigenschappen van het klantplan te creëren.
+   * Selecteren **Gereed** om een band tussen het billplan en de eigenschappen van het klantplan te creëren.
 
    ![Koppeling toevoegen aan klantrekening](assets/add_association_customer_bills_new.png)
 
@@ -320,7 +320,7 @@ De rekeningen en de objecten van het klantengegevensmodel zijn verbonden gebruik
 
 Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het gegevensmodel, geef de klanteneigenschappen uit om het bezit te bepalen dat wordt gebaseerd waarop de gegevens van het voorwerp van het gegevensmodel worden teruggewonnen. Gebaseerd op het gebruiksgeval, wordt het mobiele aantal gebruikt als bezit om gegevens van het voorwerp van het klantengegevensmodel terug te winnen.
 
-1. Schakel het selectievakje boven aan het dialoogvenster **klant** gegevensmodelobject selecteren en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
+1. Schakel het selectievakje boven aan het dialoogvenster **klant** gegevensmodelobject om het te selecteren en te selecteren **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
 1. Opgeven **klant** als de **Model op hoofdniveau, object**.
 1. Selecteren **get** van de **Leesservice** vervolgkeuzelijst.
 1. In de **Argumenten** sectie:
@@ -336,37 +336,37 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
 
    * Selecteren **mobilenum** van de **Bindingswaarde** vervolgkeuzelijst.
 
-1. Tikken **Gereed** om de eigenschappen op te slaan.
+1. Selecteren **Gereed** om de eigenschappen op te slaan.
 
    ![Services configureren](assets/configure_services_customer_new.png)
 
-1. Schakel het selectievakje boven aan het dialoogvenster **oproepen** gegevensmodelobject selecteren en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
+1. Schakel het selectievakje boven aan het dialoogvenster **oproepen** gegevensmodelobject om het te selecteren en te selecteren **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
 1. Schakel het dialoogvenster **Model op hoofdniveau, object** for **oproepen** gegevensmodelobject.
-1. Tikken **Gereed**.
+1. Selecteren **Gereed**.
 
    Herhaal stap 8 - 10 om de eigenschappen voor te configureren **biljet** gegevensmodelobject.
 
 ### Services configureren {#configure-services}
 
 1. Ga naar de **Services** tab.
-1. Selecteer de **get** service en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
+1. Selecteer de **get** service en selecteer **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
 1. In de **Eigenschappen bewerken** deelvenster:
 
    * Voer een optionele titel en beschrijving in.
    * Selecteren **klant** van de **Uitvoermodelobject** vervolgkeuzelijst.
 
-   * Tikken **Gereed** om de eigenschappen op te slaan.
+   * Selecteren **Gereed** om de eigenschappen op te slaan.
 
    ![Eigenschappen bewerken](assets/edit_properties_get_details_new.png)
 
-1. Selecteer de **update** service en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
+1. Selecteer de **update** service en selecteer **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
 1. In de **Eigenschappen bewerken** deelvenster:
 
    * Voer een optionele titel en beschrijving in.
    * Selecteren **klant** van de **Invoermodelobject** vervolgkeuzelijst.
 
-   * Tikken **Gereed**.
-   * Tikken **Opslaan** om het formuliergegevensmodel op te slaan.
+   * Selecteren **Gereed**.
+   * Selecteren **Opslaan** om het formuliergegevensmodel op te slaan.
 
    ![Service-eigenschappen bijwerken](assets/update_service_properties_new.png)
 
@@ -376,17 +376,17 @@ U kunt het gegevensmodelobject en de services testen om te controleren of het fo
 
 Voer de volgende handelingen uit om de test uit te voeren:
 
-1. Ga naar de **Model** selecteert u de **klant** gegevensmodelobject en tik **Model-object testen**.
+1. Ga naar de **Model** selecteert u de **klant** gegevensmodelobject en selecteer **Model-object testen**.
 1. In de **Formuliergegevensmodel testen** venster, selecteert u **Model-object lezen** van de **Model/service selecteren** vervolgkeuzelijst.
-1. In de **Invoer** -sectie, geeft u een waarde op voor de **mobilenum** bezit dat in het gevormde gegevensbestand MySQL bestaat en tikt **Testen**.
+1. In de **Invoer** -sectie, geeft u een waarde op voor de **mobilenum** bezit dat in het gevormde gegevensbestand MySQL bestaat en uitgezocht **Testen**.
 
    De klantgegevens die aan de opgegeven eigenschap mobileEnum zijn gekoppeld, worden opgehaald en weergegeven in de sectie Uitvoer, zoals hieronder wordt weergegeven. Sluit het dialoogvenster.
 
    ![Testgegevensmodel](assets/test_data_model_new.png)
 
 1. Ga naar de **Services** tab.
-1. Selecteer de **get** service en tikken **Testservice.**
-1. In de **Invoer** -sectie, geeft u een waarde op voor de **mobilenum** bezit dat in het gevormde gegevensbestand MySQL bestaat en tikt **Testen**.
+1. Selecteer de **get** service en selecteer **Testservice.**
+1. In de **Invoer** -sectie, geeft u een waarde op voor de **mobilenum** bezit dat in het gevormde gegevensbestand MySQL bestaat en uitgezocht **Testen**.
 
    De klantgegevens die aan de opgegeven eigenschap mobileEnum zijn gekoppeld, worden opgehaald en weergegeven in de sectie Uitvoer, zoals hieronder wordt weergegeven. Sluit het dialoogvenster.
 
@@ -398,8 +398,8 @@ Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens genereren voor alle
 
 Voer de volgende handelingen uit om voorbeeldgegevens te genereren, te bewerken en op te slaan:
 
-1. Tik op de pagina met het formuliergegevensmodel op **Voorbeeldgegevens bewerken**. De voorbeeldgegevens worden gegenereerd en weergegeven in het venster Voorbeeldgegevens bewerken.
+1. Selecteer op de pagina met het formuliergegevensmodel **Voorbeeldgegevens bewerken**. De voorbeeldgegevens worden gegenereerd en weergegeven in het venster Voorbeeldgegevens bewerken.
 
    ![Voorbeeldgegevens bewerken](assets/edit_sample_data_new.png)
 
-1. In **Voorbeeldgegevens bewerken** venster, gegevens naar wens bewerken en tikken **Opslaan**. Sluit het venster.
+1. In **Voorbeeldgegevens bewerken** venster, gegevens naar wens bewerken en **Opslaan**. Sluit het venster.

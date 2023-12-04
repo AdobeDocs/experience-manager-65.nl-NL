@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -19,14 +19,14 @@ Wanneer u de Adobe Experience Manager (AEM) Forms-app start, moet u eerst uw aan
 
 ## De app starten {#to-start-the-app}
 
-1. Tik op het AEM Forms-app-pictogram op uw mobiele apparaat.
+1. Selecteer het AEM Forms-app-pictogram op uw mobiele apparaat.
 1. Als u zich wilt aanmelden bij de app, voert u een gebruikersnaam, wachtwoord en URL voor de AEM Forms-server in.
 
    >[!NOTE]
    >
-   >De toepassing Mobile plaatst alle AEM Forms Server-URL&#39;s die u invoert in cache.
+   >De toepassing Mobile plaatst alle AEM Forms Server-URL&#39;s die u invoert in de cache.
    >
-   >    * Als u de lijst met server-URL&#39;s wilt weergeven, klikt u op de lijstpijl in de rechterhoek van het tekstvak Server-URL.
+   >    * Als u de lijst met server-URL&#39;s wilt weergeven, klikt u op de lijstpijl rechts in het tekstvak Server-URL.
    >    * Selecteer een AEM Forms Server-URL waarnaar u zich via de app wilt aanmelden.
 
 Wanneer u zich aanmeldt bij de app, wordt u naar de [**Home** scherm](../../forms/using/home-screen.md).

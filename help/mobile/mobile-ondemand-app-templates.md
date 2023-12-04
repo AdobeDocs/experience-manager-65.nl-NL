@@ -1,17 +1,13 @@
 ---
 title: Sjablonen en componenten maken en toevoegen
-seo-title: Creating and Adding Templates and Components
 description: Volg deze pagina voor meer informatie over het maken en toevoegen van sjablonen en componenten aan uw app. De pagina gebruikt Geometrixx Unlimited App als app die een sjabloon en paginasjablonen voor de voorbeeldapp bevat.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -45,7 +41,7 @@ Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u ee
 Stappen voor het maken van een app op basis van een toepassingssjabloon:
 
 1. Ga naar de AEM Mobile-toepassingscatalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Selecteren **Maken** —> **App** zoals hieronder weergegeven
+1. Selecteren **Maken** -> **App** zoals hieronder weergegeven
 
 Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Als u artikelen, banners en verzamelingen opnieuw wilt bekijken, gaat u naar [Handelingen voor inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -145,7 +141,7 @@ Wanneer de component al op een AEM pagina is opgenomen, kunt u samen met enkele 
 **Een bestaande component bewerken:**
 
 1. Kies die pagina en zorg ervoor dat u zich in **Bewerken** en selecteert u de component
-1. Tik op het moersleutelpictogram om de component te configureren
+1. Selecteer het moersleutelpictogram om de component te configureren
 
 >[!NOTE]
 >

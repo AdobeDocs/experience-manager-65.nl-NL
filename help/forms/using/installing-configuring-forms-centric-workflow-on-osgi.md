@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ AEM Forms is een krachtig platform op bedrijfsniveau. Forms-gerichte workflow op
 
 >[!NOTE]
 >
->Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Bekijk een [vergelijking](capabilities-osgi-jee-workflows.md) van de op formulieren gebaseerde AEM-workflows op OSGi en Procesbeheer op JEE om meer te weten te komen over de verschillen en overeenkomsten tussen de mogelijkheden.
+>Met de op formulieren gebaseerde workflow op OSGi kunt u snel workflows voor verschillende taken bouwen en implementeren op de OSGi-stapel, zonder dat u de volwaardige procesbeheerfunctie op de JEE-stapel hoeft te installeren. Bekijk een [vergelijking](capabilities-osgi-jee-workflows.md) van de op formulieren gebaseerde AEM-workflows op OSGi en Procesbeheer op JEE om meer te weten te komen over de verschillen en overeenkomsten tussen de mogelijkheden.
 >
 >Als u na de vergelijking de procesbeheerfunctie op de JEE-stapel wilt installeren, raadpleegt [u AEM-formulieren installeren of upgraden op JEE](/help/forms/home.md) voor meer informatie over het installeren en configureren van de JEE-stapel en de mogelijkheden voor procesbeheer.
 
@@ -99,11 +99,11 @@ Voordat u begint met het installeren en configureren van een op Forms gerichte w
 AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat een op Forms gerichte workflow voor OSGi en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de **[!UICONTROL Filters]** sectie:
    1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
    2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Tik op de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en tikken **[!UICONTROL Download]**.
+1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 

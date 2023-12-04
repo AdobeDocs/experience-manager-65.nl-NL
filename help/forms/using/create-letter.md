@@ -9,9 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3976'
+source-wordcount: '3979'
 ht-degree: 0%
 
 ---
@@ -245,11 +245,11 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
    ![aanmaken](assets/create-letter.png)
 
-1. Selecteer een lay-out door erop te tikken en er op te tikken **Volgende**.
+1. Selecteer een lay-out door erop te tikken en selecteer **Volgende**.
 
    ![Lay-out selecteren om een letter te maken](assets/selectlayout.png)
 
-1. Voer de eigenschappen voor de correspondentie in en tik op **Opslaan:**
+1. Voer de eigenschappen voor de correspondentie in en selecteer **Opslaan:**
 
    * **Titel (optioneel):** Voer de titel voor de letter in. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten.
    * **Naam:** De unieke naam voor de letter. Geen twee letters in een staat kunnen bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
@@ -260,21 +260,21 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
    ![Correspondentie-eigenschappen](assets/createcorrespondenceproperties.png)
 
-1. Het systeem geeft een bericht weer: &quot;Letter created successfully.&quot; (in het waarschuwingsbericht) Tik **Openen** om de gegevensmodules en lay-outfragmenten in het te vormen. Of tik **Gereed** om terug te gaan naar de vorige pagina.
+1. Het systeem geeft een bericht weer: &quot;Letter created successfully.&quot; (in het waarschuwingsbericht) Selecteer **Openen** om de gegevensmodules en lay-outfragmenten in het te vormen. Of selecteer **Gereed** om terug te gaan naar de vorige pagina.
 
    ![Waarschuwingsbericht: de letter is gemaakt](assets/createcorrespondencecreated.png)
 
-   **Volgende**: Wanneer u tikt **Openen** In Correspondence Management wordt een voorstelling van de layout weergegeven met alle componenten in de weergegeven layout (XDP). Ga verder met het invoegen van de [De Modules van gegevens en de Fragmenten van de Lay-out en het Vormen hen](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Volgende**: Wanneer u **Openen** In Correspondence Management wordt een voorstelling van de layout weergegeven met alle componenten in de weergegeven layout (XDP). Ga verder met het invoegen van de [De Modules van gegevens en de Fragmenten van de Lay-out en het Vormen hen](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Gegevensmodules en lay-outfragmenten in een brief opnemen en hen vormen {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Correspondence Management een weergave van de indeling weer met alle subformulieren/doelgebieden in de indeling (XDP). In elk van de doelgebieden kunt u een gegevensmodule of een layoutfragment invoegen (en vervolgens gegevensmodules in het lay-outfragment).
+Wanneer u een correspondentie hebt gemaakt, selecteert u Openen, wordt in Correspondentiebeheer een weergave weergegeven van de indeling met alle subformulieren/doelgebieden in de indeling (XDP). In elk van de doelgebieden kunt u een gegevensmodule of een layoutfragment invoegen (en vervolgens gegevensmodules in het lay-outfragment).
 
 >[!NOTE]
 >
->U kunt er ook voor kiezen om op het pictogram Bewerken te tikken voor een letter op de pagina Letters om gegevensmodules en lay-outfragmenten in een letter in te voegen en ze te configureren.
+>U kunt er ook voor kiezen om het pictogram Bewerken te selecteren voor een letter op de pagina Letters om gegevensmodules en lay-outfragmenten in een letter in te voegen en ze te configureren.
 
-1. Tikken **Invoegen** voor elk subformulier en selecteer Gegevensmodules of een indelingsfragment dat u in elk subformulier wilt invoegen.
+1. Selecteren **Invoegen** voor elk subformulier en selecteer Gegevensmodules of een indelingsfragment dat u in elk subformulier wilt invoegen.
 
    ![Gegevensmodules en lay-outfragmenten invoegen](assets/insertdmandlf.png)
 
@@ -283,7 +283,7 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
    ![nestedlf](assets/nestedlf.png)
 
 1. Als u een indelingsfragment invoegt, wordt de naam van het indelingsfragment in het subformulier weergegeven. En volgens het geselecteerde fragment worden geneste subformulieren weergegeven in het subformulier.
-1. Nadat de gekozen Modules van Gegevens in de lay-out worden opgenomen, kunt u klikken vormt wijze en het volgende plaatsen nadat het Edit pictogram voor elk van de modules tikt:
+1. Nadat de gekozen Modules van Gegevens in de lay-out worden opgenomen, kunt u vormen wijze selecteren en het volgende plaatsen nadat het Tikken van het Edit pictogram voor elk van de modules:
 
    1. **Bewerkbaar**: Als deze optie is geselecteerd, kan de inhoud worden bewerkt in de gebruikersinterface Correspondentie maken. Inhoud alleen als bewerkbaar markeren als de zakelijke gebruiker deze hoeft te wijzigen (bijvoorbeeld Aanpassingen).
    1. **Verplicht**: Als deze optie is geselecteerd, is de inhoud vereist in de gebruikersinterface Correspondentie maken.
@@ -294,20 +294,20 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
 
    ![Ingevoegde gegevensmodules en lay-outfragmenten](assets/insertdmandlf2.png)
 
-1. Tik op het pictogram Bewerken naast een module om deze te bewerken. Tik na het bewerken van de modules **Opslaan**.
+1. Als u een module wilt bewerken, selecteert u het pictogram Bewerken naast de module. Nadat u de modules hebt bewerkt, selecteert u **Opslaan**.
 
    Op deze pagina kunt u ook het volgende doen voor de subformulieren:
 
-   1. **Vrije tekst toestaan**: Als de optie Vrije tekst toestaan is ingeschakeld, kan de gebruiker inline tekst in letter toevoegen in de CCR-weergave. In de CCR-weergave is de actie &#39;T&#39; ingeschakeld voor de doelgebieden waarvoor de optie Vrije tekst toestaan is ingeschakeld. Als de gebruiker hierop tikt, wordt om de naam en beschrijving van de tekst gevraagd en wordt vervolgens bij het tikken de tekst geopend in de bewerkingsmodus waar de gebruiker tekst kan toevoegen. Dit werkt dus net als andere tekstmodules
+   1. **Vrije tekst toestaan**: Als de optie Vrije tekst toestaan is ingeschakeld, kan de gebruiker inline tekst in letter toevoegen in de CCR-weergave. In de CCR-weergave is de actie &#39;T&#39; ingeschakeld voor de doelgebieden waarvoor de optie Vrije tekst toestaan is ingeschakeld. Wanneer de gebruiker deze optie selecteert, wordt om de naam en beschrijving van de tekst gevraagd en wordt bij het tikken de tekst geopend in de bewerkingsmodus waar de gebruiker tekst kan toevoegen. Dit werkt dus net als andere tekstmodules
    1. **Vergrendelingsvolgorde**: Hiermee vergrendelt u de volgorde van de subformulieren in de letter. De auteur mag de subformulieren/componenten niet opnieuw ordenen tijdens het maken van de letter.
 
    Op deze pagina kunt u ook het volgende doen voor elk element in de subformulieren:
 
    1. **De volgorde van de elementen wijzigen**: een element slepen en neerzetten met het pictogram voor opnieuw ordenen van een element ( ![dragndrop](assets/dragndrop.png)).
-   1. **Elementen verwijderen**: Tik op het pictogram Verwijderen naast een element om het te verwijderen.
-   1. **Elementen voorvertonen**: Tik op het voorvertoningspictogram ( ![showpreview](assets/showpreview.png)) naast een element.
+   1. **Elementen verwijderen**: Selecteer het pictogram Verwijderen naast een element om het te verwijderen.
+   1. **Elementen voorvertonen**: Selecteer het voorvertoningspictogram ( ![showpreview](assets/showpreview.png)) naast een element.
 
-1. Tikken **Volgende**.
+1. Selecteren **Volgende**.
 1. Op de gegevenspagina ziet u hoe gegevensvelden en variabelen in de sjabloon worden gebruikt. Gegevens kunnen worden gekoppeld aan gegevensbronnen zoals een gegevenswoordenboek of gebruikersinvoer. Elk veld definieert eigenschappen waarvan gegevens in gegevenswoordenboeken worden toegewezen of welk bijschrift wordt weergegeven voor invoervelden van gebruikers.
 
    Koppeling:
@@ -337,19 +337,19 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
 
    ![koppelingen](assets/linkages.png)
 
-1. Tik na het opgeven van de koppeling op **Volgende**. Correspondentiebeheer geeft het scherm Bijlagen weer.
+1. Selecteer **Volgende**. Correspondentiebeheer geeft het scherm Bijlagen weer.
 
 ### De bijlagen instellen {#set-up-the-attachments}
 
 1. Selecteren **Element toevoegen**.
-1. Tik in het scherm Element selecteren op de elementen die u bij de letter wilt voegen en tik op **Gereed**. U moet de elementen eerst naar Elementen uploaden. U kunt het beste alleen PDF- en Microsoft Office-documenten bijvoegen, maar ook afbeeldingen. Zie voor meer informatie over het uploaden van middelen in DAM [Elementen uploaden](/help/assets/manage-assets.md).
-1. Tik op **Vergrendelingsvolgorde**. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
+1. Selecteer in het scherm Element selecteren de elementen die u bij de letter wilt voegen en selecteer **Gereed**. U moet de elementen eerst naar Elementen uploaden. U kunt het beste alleen PDF- en Microsoft Office-documenten bijvoegen, maar ook afbeeldingen. Zie voor meer informatie over het uploaden van middelen in DAM [Elementen uploaden](/help/assets/manage-assets.md).
+1. Selecteer **Vergrendelingsvolgorde**. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
 1. Als u de volgorde van de elementen wilt wijzigen, sleept u een element met het pictogram voor herschikking van een element ( ![dragndrop](assets/dragndrop.png)).
-1. Tikken **Bewerken** vóór een bijlage en geef een bijlage als verplicht op als u niet wilt dat de auteur deze kan verwijderen. Specificeer een gehechtheid zoals Geselecteerd als u het in de interface wilt vooraf worden geselecteerd CCR.
+1. Selecteren **Bewerken** vóór een bijlage en geef een bijlage als verplicht op als u niet wilt dat de auteur deze kan verwijderen. Specificeer een gehechtheid zoals Geselecteerd als u het in de interface wilt vooraf worden geselecteerd CCR.
 1. Selecteren **Bibliotheektoegang** om de bibliotheek te openen. Als Bibliotheektoegang is ingeschakeld, heeft de Aanpasser voor claims toegang tot de inhoudsbibliotheek terwijl een brief wordt gemaakt en bijlagen worden ingevoegd.
 1. Selecteren **Configuratie bijlagen** en geeft u het maximumaantal bijlagen op.
 
-1. Tikken **Opslaan**. Uw correspondentie wordt gecreeerd en op de pagina van Letters vermeld.
+1. Selecteren **Opslaan**. Uw correspondentie wordt gecreeerd en op de pagina van Letters vermeld.
 
 Nadat een brievenmalplaatje in het Beheer van de Correspondentie wordt gecreeerd, kan het eind - gebruiker/agent/bewering aanpast de brief in het gebruikersinterface openen CCR en een correspondentie tot stand brengen door gegevens in te gaan, inhoud te plaatsen, en gehechtheid te beheren. Zie voor meer informatie [Correspondentie maken](/help/forms/using/create-correspondence.md).
 
@@ -446,7 +446,7 @@ De volgende waarden in de tabel
    <td>NVT</td> 
   </tr> 
   <tr> 
-   <td><strong>afbeelding</strong></td> 
+   <td><strong>image</strong></td> 
    <td>Nee</td> 
    <td>alleen afbeelding</td> 
    <td>Nee</td> 
@@ -473,7 +473,7 @@ De volgende waarden in de tabel
 Met een bestaande lettertypesjabloon kunt u snel een lettertypesjabloon maken met vergelijkbare eigenschappen, inhoud en overgeërfde elementen, zoals documentfragmenten en gegevenswoordenboek. Kopieer en plak een brief om dit te doen.
 
 1. Selecteer een of meer letters op de pagina Letters. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Zie voor meer informatie over mappen [Mappen en elementen ordenen](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Tik op Plakken. Het dialoogvenster Plakken wordt geopend. Als u de letters op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
+1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Zie voor meer informatie over mappen [Mappen en elementen ordenen](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Selecteer Plakken. Het dialoogvenster Plakken wordt geopend. Als u de letters op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
 1. Bewerk indien nodig de titel en de naam waarmee u de kopie van de brief wilt opslaan.
-1. Tik op Plakken. De kopie van de brief wordt gemaakt. Nu kunt u de vereiste wijzigingen aanbrengen in uw nieuwe brief.
+1. Selecteer Plakken. De kopie van de brief wordt gemaakt. Nu kunt u de vereiste wijzigingen aanbrengen in uw nieuwe brief.

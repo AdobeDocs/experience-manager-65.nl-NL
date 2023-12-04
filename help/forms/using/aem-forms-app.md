@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2380'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ Uw formulier synchroniseren in AEM Forms-app:
 1. Selecteer een formulier in de ontwerpversie en klik op **[!UICONTROL View Properties]**.
 
 1. Klik op de pagina met eigenschappen **[!UICONTROL Advanced]**.
-1. Schakel onder Geavanceerd de optie in: **[!UICONTROL Sync with AEM Forms App]** en tikken **[!UICONTROL Save]**.
+1. Schakel onder Geavanceerd de optie in: **[!UICONTROL Sync with AEM Forms App]** en selecteert u **[!UICONTROL Save]**.
 
-Wanneer het formulier wordt gepubliceerd, wordt de app gesynchroniseerd met de server en wordt het formulier opgehaald. Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en tikt u op **[!UICONTROL Sync with AEM Forms App]**.
+Wanneer het formulier wordt gepubliceerd, wordt de app gesynchroniseerd met de server en wordt het formulier opgehaald. Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en selecteert u **[!UICONTROL Sync with AEM Forms App]**.
 
 ## Ondersteuning voor mobiele apparaten {#mobile-device-support}
 
@@ -183,11 +183,11 @@ De broncode voor de AEM Forms-toepassing kan uit het dialoogvenster `adobe-lc-mo
 Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de **[!UICONTROL Filters]** sectie:
    1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
    2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Tik op de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en tikken **[!UICONTROL Download]**.
+1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 

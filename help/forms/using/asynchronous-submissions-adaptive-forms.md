@@ -7,9 +7,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -33,14 +33,14 @@ Lees verder voor meer informatie over asynchrone verzending in adaptieve formuli
 
 Om asynchrone voorlegging voor een adaptief formulier te configureren:
 
-1. Selecteer in de modus Aangepast formulier voor het schrijven van programmacode het object Form Container en tik op ![cmppr1](assets/cmppr1.png) om de eigenschappen te openen.
+1. Selecteer in de ontwerpmodus het object Form Container en selecteer ![cmppr1](assets/cmppr1.png) om de eigenschappen te openen.
 1. In de **[!UICONTROL Submission]** eigenschappensectie, inschakelen **[!UICONTROL Use asynchronous submission]**.
 1. In de **[!UICONTROL On Submit]** selecteert u een van de volgende opties voor het verzenden van formulieren.
 
    * **[!UICONTROL Redirect to URL]**: leidt bij het verzenden van het formulier naar de opgegeven URL of pagina. U kunt een URL opgeven of bladeren naar het pad naar een pagina in het dialoogvenster **[!UICONTROL Redirect URL/Path]** veld.
    * **[!UICONTROL Show Message]**: geeft een bericht weer bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de optie Bericht tonen. Het tekstveld ondersteunt RTF-opmaak.
 
-1. Tikken ![check-button1](assets/check-button1.png) om de eigenschappen op te slaan.
+1. Selecteren ![check-button1](assets/check-button1.png) om de eigenschappen op te slaan.
 
 ## Hoe asynchrone verzending werkt {#how-asynchronous-submission-works}
 
@@ -102,9 +102,9 @@ Formulierontwikkelaars en auteurs kunnen regels schrijven op formulierniveau in 
 
 Voer de volgende stappen uit om regels in coderedacteur te schrijven om succes en foutengebeurtenissen te behandelen.
 
-1. Open het adaptieve formulier in de ontwerpmodus, selecteer een willekeurig formulierobject en tik op ![edit-rules1](assets/edit-rules1.png) om de regeleditor te openen.
-1. Selecteren **[!UICONTROL Form]** in de structuur Formulierobjecten en tik op **[!UICONTROL Create]**.
+1. Open het adaptieve formulier in de ontwerpmodus, selecteer een willekeurig formulierobject en selecteer ![edit-rules1](assets/edit-rules1.png) om de regeleditor te openen.
+1. Selecteren **[!UICONTROL Form]** in de structuur Formulierobjecten en selecteer **[!UICONTROL Create]**.
 1. Selecteren **[!UICONTROL Code Editor]** in het vervolgkeuzemenu Modus selecteren.
-1. Tik in de code-editor op **[!UICONTROL Edit Code]**. Tikken **[!UICONTROL Edit]** in het bevestigingsdialoogvenster.
+1. Selecteer in de code-editor de optie **[!UICONTROL Edit Code]**. Selecteren **[!UICONTROL Edit]** in het bevestigingsdialoogvenster.
 1. Kies **[!UICONTROL Successful Submission]** of **[!UICONTROL Error in Submission]** van de **[!UICONTROL Event]** vervolgkeuzelijst.
-1. Schrijf een regel voor de geselecteerde gebeurtenis en tik op **[!UICONTROL Done]** om de regel op te slaan.
+1. Schrijf een regel voor de geselecteerde gebeurtenis en selecteer **[!UICONTROL Done]** om de regel op te slaan.

@@ -7,9 +7,9 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6106'
+source-wordcount: '6084'
 ht-degree: 0%
 
 ---
@@ -365,7 +365,7 @@ Wanneer u een component selecteert in het canvas, ziet u de componentwerkbalk er
 * **Widget Numeriek vak**: Hiermee kunt u de component selecteren om het uiterlijk in het zijpaneel aan te passen.
 * **Widget veld**: Hiermee kunt u de algemene component voor opmaak selecteren. In dit voorbeeld worden alle tekstinvoercomponenten (tekstvak/numeriek vak/numerieke stepper/datum-invoer) geselecteerd voor opmaak.
 
-* ![op veldniveau](assets/field-level.png): Hiermee kunt u overschakelen op een algemene component voor opmaken. Als u een numeriek vak selecteert en op dit pictogram tikt, wordt de veldcomponent geselecteerd. Als u een veldcomponent selecteert en op dit pictogram tikt, wordt het deelvenster geselecteerd. Als u op dit pictogram blijft tikken om het te selecteren, selecteert u uiteindelijk de lay-out voor opmaak.
+* ![op veldniveau](assets/field-level.png): Hiermee kunt u overschakelen op een algemene component voor opmaken. Als u een numeriek vak selecteert en dit pictogram selecteert, wordt de veldcomponent geselecteerd. Als u een veldcomponent selecteert en dit pictogram selecteert, wordt het deelvenster geselecteerd. Als u op dit pictogram blijft tikken om het te selecteren, selecteert u uiteindelijk de lay-out voor opmaak.
 
 >[!NOTE]
 >
@@ -590,7 +590,7 @@ Voer de volgende stappen uit om een thema te kopiëren:
 
 1. Navigeer in ontwerpinstantie naar **Adobe Experience Manager > Forms > Thema&#39;s**.
 1. Open de map Themabibliotheek.
-1. Houd de aanwijzer in de map Themabibliotheek boven het corresponderende, uit-de-box thema en tik **Kopiëren**.
+1. Houd de aanwijzer in de map Themabibliotheek boven het overeenkomende thema dat buiten de keuzelijst valt en selecteer **Kopiëren**.
 1. Plak het gekopieerde thema buiten de map Themabibliotheek.
 1. Pas het gekopieerde thema aan.
 

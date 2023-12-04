@@ -11,9 +11,9 @@ topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -30,16 +30,16 @@ Wanneer u online bent met de AEM Forms-server, wordt uw app standaard elke 15 mi
 
 **De app handmatig synchroniseren**
 
-Tik op de knop Synchroniseren ![sync-app](assets/sync-app.png) in de rechterbenedenhoek van het beginscherm.
+Selecteer de knop Synchroniseren ![sync-app](assets/sync-app.png) in de rechterbenedenhoek van het beginscherm.
 
 **De synchronisatiefrequentie wijzigen**
 
-1. Tik op de menuknop linksboven in het scherm Home om naar het scherm Instelling te gaan. Tik vervolgens op **Instellingen**.
-1. Tik in het scherm Instellingen op het tabblad Algemeen.
+1. Als u naar het scherm Instelling wilt gaan, selecteert u de menuknop in de linkerbovenhoek van het scherm Home en selecteert u **Instellingen**.
+1. Selecteer het tabblad Algemeen in het scherm Instellingen.
 
    ![Frequentie-instelling synchroniseren in venster Algemene instellingen](assets/gen-settings-2.png)
 
-1. Tik in de optie Synchronisatiefrequentie op de waarde rechts van Synchronisatiefrequentie.
+1. Selecteer bij de optie Synchronisatiefrequentie de waarde rechts van Synchronisatiefrequentie.
 1. Selecteer de nieuwe synchronisatiefrequentie in de vervolgkeuzelijst.
 
 ### Technische specificaties {#technical-specifications}

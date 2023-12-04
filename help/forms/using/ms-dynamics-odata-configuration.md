@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -117,8 +117,8 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
 De **MS Dynamics OData Cloud Service (OData Service)** de configuratie komt met standaard configuratie OData. Ga als volgt te werk om de instantie te configureren voor verbinding met uw Microsoft Dynamics.
 
-1. Navigeren naar **[!UICONTROL Tools > Cloud Services > Data Sources]** en tik op de knop `global` configuratiemap.
-1. Selecteren **MS Dynamics OData Cloud Service (OData Service)** configuratie en tikken **[!UICONTROL Properties]**. Het dialoogvenster voor de configuratie-eigenschap van de cloudservice wordt geopend.
+1. Navigeren naar **[!UICONTROL Tools > Cloud Services > Data Sources]** en selecteert u de `global` configuratiemap.
+1. Selecteren **MS Dynamics OData Cloud Service (OData Service)** configuratie en selecteer **[!UICONTROL Properties]**. Het dialoogvenster voor de configuratie-eigenschap van de cloudservice wordt geopend.
 
    In de **Verificatie-instellingen** tab:
 

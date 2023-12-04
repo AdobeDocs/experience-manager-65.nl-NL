@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2096'
 ht-degree: 0%
 
 ---
@@ -81,8 +81,8 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
 
 1. Een [Gecontroleerde map](/help/forms/using/creating-configure-watched-folder.md) en configureer deze voor gebruik van de Batch-API:
    1. Meld u aan bij de auteur van AEM Forms.
-   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
-   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Selecteren **[!UICONTROL New]**.
+   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld: `c:\batchprocessing`.
    1. Selecteer de **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
    1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
    1. Geef een **[!UICONTROL Output File Pattern]**. Bijvoorbeeld de %F/ [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) Hiermee geeft u aan dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap\n van de gecontroleerde map.
@@ -97,7 +97,7 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
       | batchType | String | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
       | landinstelling | String | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL |
 
-   1. Tikken **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
+   1. Selecteren **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:
    1. Open de gecontroleerde map. Navigeer naar de invoermap.
    1. Maak een map in de invoermap en plaats het JSON-bestand in de nieuwe map.
@@ -113,9 +113,9 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
 
 1. Configureer het formuliergegevensmodel van de sjabloon:
    1. Open het formuliergegevensmodel dat is gekoppeld aan de interactieve communicatiesjabloon.
-   1. Selecteer het MODEL BOVENSTE NIVEAU en tik op Eigenschappen bewerken.
+   1. Selecteer het MODEL BOVENSTE NIVEAU en selecteer Eigenschappen bewerken.
    1. Selecteer de ophaalfunctie of ontvang de service in het veld Leesservice onder Eigenschappen bewerken.
-   1. Tik op het potloodpictogram voor het argument van de leesservice om het argument aan een kenmerk Request te binden en de bindingswaarde op te geven. Het bindt het de dienstargument aan de gespecificeerde bindende attributen of letterlijke waarde, die tot de dienst als argument wordt overgegaan om details te halen verbonden aan de gespecificeerde waarde uit de gegevensbron.
+   1. Selecteer het potloodpictogram voor het argument van de leesdienst om het argument aan een Attribuut van het Verzoek te binden en de bindende waarde te specificeren. Het bindt het de dienstargument aan de gespecificeerde bindende attributen of letterlijke waarde, die tot de dienst als argument wordt overgegaan om details te halen verbonden aan de gespecificeerde waarde uit de gegevensbron.
 
       <br>
         In dit voorbeeld neemt het id-argument de waarde van het id-kenmerk van het gebruikersprofiel en geeft dit als een argument door aan de leesservice. Het zal waarden van bijbehorende eigenschappen van het voorwerp van het werknemersgegevensmodel voor gespecificeerde identiteitskaart lezen en terugkeren. Dus als u 00250 opgeeft in het veld Id in het formulier, leest de leestoepassing details van de werknemer met 00250 werknemer-id.
@@ -143,8 +143,8 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
 
 1. Een [Gecontroleerde map](/help/forms/using/creating-configure-watched-folder.md) en configureer deze zo dat de Batch API-service wordt gebruikt:
    1. Meld u aan bij de auteur van AEM Forms.
-   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
-   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Selecteren **[!UICONTROL New]**.
+   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld: `c:\batchprocessing`.
    1. Selecteer de **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
    1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
    1. Geef een **[!UICONTROL Output File Pattern]**. Bijvoorbeeld de %F/ [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) Hiermee geeft u aan dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap\n van de gecontroleerde map.
@@ -159,7 +159,7 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
       | batchType | String | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
       | landinstelling | String | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL. |
 
-   1. Tikken **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
+   1. Selecteren **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:
    1. Open de gecontroleerde map. Navigeer naar de invoermap.
    1. Maak een map in de invoermap. Plaats het JSON-bestand dat in Stap 2 is gemaakt in de nieuwe map.
@@ -177,7 +177,7 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
 
 1. Meld u aan bij uw AEM en maak een interactieve communicatie. De interactieve communicatie in de voorbeeldcode hieronder gebruiken: [klik hier](assets/SimpleMediumIC.zip).
 1. [Een AEM project maken en implementeren met Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) op uw AEM.
-1. Toevoegen [AEM Forms Client SDK versie 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) of later in gebiedenlijst van POM- dossier van uw AEM project. Bijvoorbeeld,
+1. Toevoegen [AEM Forms Client SDK versie 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) of later in gebiedenlijst van POM- dossier van uw AEM project. Bijvoorbeeld:
 
    ```xml
        <dependency>

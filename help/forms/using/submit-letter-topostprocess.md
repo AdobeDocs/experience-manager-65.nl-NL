@@ -11,7 +11,7 @@ discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Om postprocessen met brieven of interactieve mededelingen te associëren, moet u
 1. Zoek op deze pagina AEM Forms Client SDK Configuration en vouw deze uit door erop te klikken.
 1. Voer in Server-URL de naam van uw AEM Forms in op JEE-server, aanmeldingsgegevens en klik vervolgens op **Opslaan**.
 
-   ![Geef een naam op voor de LiveCycle-server](assets/1cofigmanager.png)
+   ![Geef een naam op voor de server met LiveCycles](assets/1cofigmanager.png)
 
 1. Geef de gebruikersnaam en het wachtwoord op.
 1. Zorg ervoor dat sun.util.agenda wordt toegevoegd aan Configuratie van de Firewall Deserialization.
@@ -116,10 +116,10 @@ Opgeslagen letterinstanties kunnen verder worden gemanipuleerd, zoals het ophale
 
 Voer in de CCR-gebruikersinterface de volgende stappen uit om een postproces aan een letter te koppelen:
 
-1. Houd de muis boven een letter en tik **Eigenschappen weergeven**.
+1. Houd de muisaanwijzer boven een letter en selecteer **Eigenschappen weergeven**.
 1. Selecteren **Bewerken**.
-1. Selecteer in de basiseigenschappen met de vervolgkeuzelijst Nabewerking het postproces dat u aan de letter wilt koppelen. Zowel de AEM als Forms-gerelateerde postprocessen worden vermeld in de vervolgkeuzelijst.
-1. Tikken **Opslaan**.
+1. Selecteer in de basiseigenschappen met de vervolgkeuzelijst Nabewerking het postproces dat u aan de letter wilt koppelen. In de vervolgkeuzelijst worden zowel de AEM- als Forms-gerelateerde postprocessen vermeld.
+1. Selecteren **Opslaan**.
 1. Na het vormen van de brief met het Proces van de Post, publiceer de brief en naar keuze op het publicatiegeval, specificeer de verwerkings URL in AEM dienst van Montages DS. Dit zorgt ervoor dat het postproces op de verwerkingsinstantie in werking wordt gesteld.
 
 ## Een ontwerpbrief opnieuw laden  {#reloaddraft}

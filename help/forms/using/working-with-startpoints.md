@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Als u een proces wilt starten vanuit de Adobe Experience Manager (AEM) Forms-app
 1. Ga naar [Startscherm](../../forms/using/home-screen.md).
 1. Op de **[!UICONTROL Home]** het scherm, door gebrek **[!UICONTROL All Forms]** wordt weergegeven.
 
-   Het startpunt is gekoppeld aan een formulier. Tik op het aan het formulier gekoppelde startpunt in de lijst om het te openen.
+   Het startpunt is gekoppeld aan een formulier. Selecteer het startpunt voor het formulier in de lijst om het te openen.
 
    Het formulier dat aan het startpunt is gekoppeld, wordt geopend.
 
@@ -38,7 +38,7 @@ Als u een proces wilt starten vanuit de Adobe Experience Manager (AEM) Forms-app
 
    U kunt annotaties toevoegen aan deze taak met de opdracht [bijlage](../../forms/using/add-attachments.md) knop.
 
-1. Tik op de knop **[!UICONTROL Submit]** knop.
+1. Nadat u het formulier hebt ingevuld, selecteert u het **[!UICONTROL Submit]** knop.
 
 Als de app offline is, worden het formulier en de bijbehorende gegevens opgeslagen in de map Outbox.
 

@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -30,15 +30,15 @@ De onderdelen van de portal Formulieren zijn niet beschikbaar voor gebruik. Voer
 
 1. Voer de volgende stappen uit voor de pagina&#39;s die een statische sjabloon gebruiken:
 
-   1. Tik in de paginakoptekst op ![canvas-drop-down](assets/canvas-drop-down.png) > **Ontwerp** om de pagina in de ontwerpmodus te openen.
-   1. Tik op een component (met een blauwe rand) en tik vervolgens op ![op veldniveau](assets/field-level.png) om het alineasysteem te selecteren dat de huidige component bevat.
-   1. Tik in het alineasysteem op ![settings_icon](assets/settings_icon.png) om het dialoogvenster Bewerken voor het alineasysteem te openen.
-   1. Uit de lijst met **[!UICONTROL Allowed Components]** Schakel selectievakjes in voor **[!UICONTROL Document Services]** en **[!UICONTROL Document Services Predicates]** componenten. Tik op **[!UICONTROL OK]**.
+   1. Selecteer in de koptekst van de pagina de optie ![canvas-drop-down](assets/canvas-drop-down.png) > **Ontwerp** om de pagina in de ontwerpmodus te openen.
+   1. Selecteer een component (met een blauwe rand) en selecteer vervolgens ![op veldniveau](assets/field-level.png) om het alineasysteem te selecteren dat de huidige component bevat.
+   1. Selecteer in het alineasysteem ![settings_icon](assets/settings_icon.png) om het dialoogvenster Bewerken voor het alineasysteem te openen.
+   1. Uit de lijst met **[!UICONTROL Allowed Components]** Schakel selectievakjes in voor **[!UICONTROL Document Services]** en **[!UICONTROL Document Services Predicates]** componenten. Selecteren **[!UICONTROL OK]**.
 
 1. Voer de volgende stappen uit voor de pagina&#39;s die een dynamische sjabloon gebruiken:
 
-   1. Tik in de paginakoptekst op ![eigenschappen](assets/properties.png) > **Sjabloon bewerken** om de sjabloon van de pagina te openen.
-   1. Tikken **Layout Container** en tikken ![FeedManagement](/help/forms/using/assets/feedmanagement.png). In de **Toegestane componenten** tab, inschakelen **Documentservices en prognoses voor documentservices** en tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Selecteer in de koptekst van de pagina de optie ![eigenschappen](assets/properties.png) > **Sjabloon bewerken** om de sjabloon van de pagina te openen.
+   1. Selecteren **Layout Container** en selecteert u ![FeedManagement](/help/forms/using/assets/feedmanagement.png). In de **Toegestane componenten** tabblad, schakelt u de **Documentservices en prognoses voor documentservices** en selecteert u ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

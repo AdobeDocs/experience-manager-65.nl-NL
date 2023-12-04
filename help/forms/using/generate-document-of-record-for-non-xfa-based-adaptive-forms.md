@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3404'
 ht-degree: 0%
 
 ---
@@ -266,7 +266,7 @@ Voer de volgende stappen uit om een document van verslag voor adaptieve vormen t
 
 1. Klik in AEM auteurinstantie op **Forms > Forms en Documenten.**
 1. Selecteer een formulier en klik op **Eigenschappen weergeven**.
-1. Tik in het venster Eigenschappen op **Formuliermodel**.
+1. Selecteer in het venster Eigenschappen de optie **Formuliermodel**.
 U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
 
    >[!NOTE]
@@ -302,8 +302,8 @@ Tijdens het genereren van een recorddocument kunt u de brandinggegevens voor het
 
 Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt lokaliseren, moet u ervoor zorgen dat de landinstelling van de browser correct is ingesteld. Voer de volgende stappen uit als u de brandinggegevens van een recorddocument wilt aanpassen:
 
-1. Selecteer een deelvenster (hoofddeelvenster) in het document met records en tik vervolgens op ![vormen](assets/configure.png).
-1. Tikken ![dortab](/help/forms/using/assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
+1. Selecteer een deelvenster (hoofddeelvenster) in het recorddocument en selecteer vervolgens ![vormen](assets/configure.png).
+1. Selecteren ![dortab](/help/forms/using/assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het document met records. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het recorddocument weergegeven onder de vervolgkeuzelijst Sjabloon.
 
    ![brandingsjabloon](/help/forms/using/assets/brandingtemplate.png)
@@ -348,7 +348,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
    </proto>
    ```
 
-1. Tik op Gereed om de merkwijzigingen op te slaan.
+1. Selecteer Gereed om de wijzigingen in de branding op te slaan.
 
 ## Tabel- en kolomindelingen voor deelvensters in document van record {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -409,12 +409,12 @@ U kunt pagina-einden in een Document van Verslag toepassen gebruikend veelvoudig
 
 Een pagina-einde toepassen op een document met records:
 
-1. Tik op het deelvenster en selecteer ![Configureren](/help/forms/using/assets/configure.png)
+1. Selecteer het deelvenster en selecteer ![Configureren](/help/forms/using/assets/configure.png)
 1. Uitbreiden **[!UICONTROL Document of Record]** om de eigenschappen weer te geven.
 
-1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL Place]** veld.
-1. Tikken **[!UICONTROL Top of Next page]** en tikken **[!UICONTROL Select]**. U kunt ook tikken **[!UICONTROL Top of Page]**, selecteert u de basispagina en tikt u op **[!UICONTROL Select]** om het pagina-einde toe te passen.
-1. Tikken ![Opslaan](/help/forms/using/assets/save_icon.png) om de eigenschappen op te slaan.
+1. In de **[!UICONTROL Pagination]** sectie, selecteert u ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL Place]** veld.
+1. Selecteren **[!UICONTROL Top of Next page]** en selecteert u **[!UICONTROL Select]**. U kunt ook **[!UICONTROL Top of Page]** selecteert u de basispagina en selecteert u **[!UICONTROL Select]** om het pagina-einde toe te passen.
+1. Selecteren ![Opslaan](/help/forms/using/assets/save_icon.png) om de eigenschappen op te slaan.
 
 Het geselecteerde deelvenster gaat naar de volgende pagina.
 
@@ -428,13 +428,13 @@ Hieronder ziet u hoe u meerdere stramienpagina&#39;s kunt toepassen op een docum
 
 Voer de volgende stappen uit om de eigenschappen van de tweede basispagina toe te passen op een deelvenster en de derde basispagina op de volgende deelvensters:
 
-1. Tik op het deelvenster om de tweede basispagina toe te passen en selecteer ![Configureren](assets/cmppr.png).
-1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL Place]** veld.
-1. Tikken **[!UICONTROL On page]**, selecteert u de tweede basispagina en tikt u op **[!UICONTROL Select]**.
+1. Selecteer het deelvenster om de tweede basispagina toe te passen en selecteer ![Configureren](assets/cmppr.png).
+1. In de **[!UICONTROL Pagination]** sectie, selecteert u ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL Place]** veld.
+1. Selecteren **[!UICONTROL On page]** selecteert u de tweede basispagina en selecteert u **[!UICONTROL Select]**.
 AEM Forms past de tweede basispagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
-1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL After]** veld.
-1. Tikken **[!UICONTROL Go To page]**, selecteert u de derde basispagina en tikt u op **[!UICONTROL Select]**.
-1. Tikken ![Opslaan](/help/forms/using/assets/save_icon.png) om de eigenschappen op te slaan.
+1. In de **[!UICONTROL Pagination]** sectie, selecteert u ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL After]** veld.
+1. Selecteren **[!UICONTROL Go To page]**, selecteert u de derde basispagina en selecteert u **[!UICONTROL Select]**.
+1. Selecteren ![Opslaan](/help/forms/using/assets/save_icon.png) om de eigenschappen op te slaan.
 AEM Forms past de derde basispagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
 
 

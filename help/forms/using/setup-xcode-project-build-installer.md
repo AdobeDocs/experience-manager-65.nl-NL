@@ -10,25 +10,25 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
 
 # Het Xcode-project instellen en de iOS-app ontwikkelen{#set-up-the-xcode-project-and-build-the-ios-app}
 
-AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over softwaredistributie.
+AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het broncodearchief, `adobe-lc-mobileworkspace-src-<version>.zip` maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over Softwaredistributie.
 
 Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de **[!UICONTROL Filters]** sectie:
    1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
    2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Tik op de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en tikken **[!UICONTROL Download]**.
+1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
@@ -74,17 +74,17 @@ Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen v
 
    Meld u aan bij uw Mac-computer waarop Xcode en iOS SDK zijn geïnstalleerd en geconfigureerd.
 
-1. Kopieer de `adobe-lc-mobileworkspace-src-<version>.zip` archiveren van de map Downloads naar `[User_Home]/Projects/`.
+1. De `adobe-lc-mobileworkspace-src-<version>.zip` archiveren van de map Downloads naar `[User_Home]/Projects/`.
 1. Het archief in het dialoogvenster `[User_Home]/Projects/[your-project]`directory.
 1. Ga naar de ` [User_Home]/Projects/ `[uw project]`/adobe-lc-mobileworkspace-src-[version]/ios` directory.
 1. Open de `AEM Forms.xcodeproj` project in Xcode.
-1. Klikken **AEM Forms**, onder **DOELSTELLINGEN**, selecteert u **AEM Forms**. Selecteer **Instellingen samenstellen** tabblad, zoekt u de **Code Signing Entitlement** en voert u in de velden Foutopsporing en Geen een van de volgende handelingen uit:
+1. Klikken **AEM Forms**, onder **DOELSTELLINGEN**, selecteert u **AEM Forms**. Selecteer de **Build-instellingen** tabblad, zoekt u de **Code Signing Entitlement** en voert u in de velden Foutopsporing en Geen een van de volgende handelingen uit:
 
    * Laat de velden ongespecificeerd om een standaard mobiele werkruimte-app te maken
    * Geef de velden op die u wilt opgeven zoals wordt uitgelegd in [Een Secure AEM Forms-app voor iOS maken](/help/forms/using/building-secure-mobile-workspace-app.md) om een veilige AEM Forms-app te maken.
 
-1. In de **Instellingen samenstellen** tabblad, klikt u op **Alles** en klik vervolgens op **Gecombineerd**.
-1. Van de **Instellingen** lijst, uitvouwen **Code-ondertekening**.
+1. In de **Build-instellingen** tabblad, klikt u op **Alles** en klik vervolgens op **Gecombineerd**.
+1. Van de **Instellingen** lijst, uitbreiden **Code-ondertekening**.
 1. Voor **Identiteit ondertekening code** selecteert u de gewenste handtekening. Voor meer informatie over het maken van nieuwe handtekeningen raadpleegt u [Ontwikkelinrichtingsprofielen maken en downloaden](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
 1. Zorg ervoor dat dezelfde handtekening is geselecteerd voor **Foutopsporing**, **Geen**, en **Willekeurige iOS SDK**.
 1. Vervang de volgende code in de `AEM Forms-info.plist` bestand:
@@ -153,15 +153,15 @@ U moet het Xcode-project archiveren om het installatieprogramma (een .ipa-bestan
 1. Selecteren **Product** > **Opbouwen**.
 1. Selecteren **Product** > **Archief**.
 1. Selecteer in de Organizer - Archieven het meest recente archief van uw project en klik op **Distribueren**.
-1. Selecteren **Opslaan voor Enterprise- of ad-hocimplementatie** als verspreidingsmethode en klik op **Volgende**.
+1. Selecteren **Opslaan voor Enterprise- of ad-hocimplementatie** als de verspreidingsmethode en klik op **Volgende**.
 1. Selecteer de juiste **Identiteit ondertekening code** en klik op **Volgende**. Klikken **Toestaan** om de handtekening toe te passen.
 1. Geef een naam op voor de app en selecteer **Opslaan voor Enterprise Distribution**.
 1. Geef de **Toepassings-URL** voor de app. Geef bijvoorbeeld een URL op om de toepassing op een CRX-server te hosten `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
-1. In de **Titel** -veld, geef AEM Forms op.
+1. In de **Titel** -veld, geeft u AEM Forms op.
 1. Klikken **Opslaan** en sluit Xcode.
 
    een installatiebestand, `AEM Forms.ipa`en het eigenschappenlijstbestand, `AEM Forms-info.plist`, worden op de opgegeven locatie gemaakt.
 
 1. Open de `AEM Forms-info.plist` in een editor.
 1. Vervang alle spaties in de URL van het .ipa-bestand door %20.
-1. Sla het bestand op en sluit het `AEM Forms-info.plist` bestand.
+1. Opslaan en het dialoogvenster sluiten `AEM Forms-info.plist` bestand.

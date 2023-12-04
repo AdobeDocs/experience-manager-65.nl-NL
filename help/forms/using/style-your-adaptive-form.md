@@ -4,10 +4,10 @@ description: Leer een aangepast thema te maken, afzonderlijke onderdelen op te m
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1944'
-ht-degree: 1%
+source-wordcount: '1872'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +53,7 @@ De adaptieve vormenredacteur verstrekt veelvoudige uit-van-de-doos thema&#39;s. 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Open eigenschappen van **[!UICONTROL Adaptive Form container]**. Blader in de eigenschappenbrowser naar **[!UICONTROL Basic]** > **[!UICONTROL Adaptive Form Theme]**. De **[!UICONTROL Adaptive Form Theme]** worden alle kant-en-klare thema&#39;s en aangepaste thema&#39;s weergegeven. Standaard wordt het thema Canvas toegepast.
-1. Selecteer een thema in het menu **[!UICONTROL Adaptive Form Theme]** veld. Bijvoorbeeld: **Onderzoeken**. Tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) zodat u het geselecteerde thema kunt toepassen.
+1. Selecteer een thema in het menu **[!UICONTROL Adaptive Form Theme]** veld. Bijvoorbeeld: **Onderzoeken**. Selecteren ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) zodat u het geselecteerde thema kunt toepassen.
 
    ![Aangepast formulier met het standaardthema](assets/default-adaptive-form.png)
 
@@ -75,17 +75,17 @@ Voor het hierboven weergegeven ontwerp zijn wijzigingen vereist in de plaatsaand
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Tik op de afbeelding met het logo in het dialoogvenster [!UICONTROL header] component en tik ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. In de [!UICONTROL image] tikt u op X om de bestaande logoafbeelding te verwijderen.
-   1. Tikken **[!UICONTROL upload]** selecteert u het bestand logo.png en tikt u op ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan De afbeelding is gedownload in het dialoogvenster [Voordat u begint](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie.
-   1. Tikkoptekst, `We.Retail`en tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Koptekst wijzigen in `we retail`. Alleen vette opmaak toepassen op `we`in `we retail`.
+   1. Logoafbeelding selecteren in het dialoogvenster [!UICONTROL header] en selecteert u ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. In de [!UICONTROL image] selecteert u X om de bestaande logoafbeelding te verwijderen.
+   1. Selecteren **[!UICONTROL upload]** selecteert u het bestand logo.png en selecteert u ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan De afbeelding is gedownload in het dialoogvenster [Voordat u begint](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie.
+   1. Koptekst selecteren `We.Retail`en selecteert u ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Koptekst wijzigen in `we retail`. Alleen vette opmaak toepassen op `we`in `we retail`.
 
       ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Titel verwijderen en plaatsaanduidingstekst toevoegen:
 
-   1. Tik op het veld Customer ID en tik op ![cmppr](assets/cmppr.png) eigenschappen.
+   1. Selecteer het veld Customer ID en selecteer ![cmppr](assets/cmppr.png) eigenschappen.
    1. Kopieer de inhoud van de **[!UICONTROL Title]** aan de **[!UICONTROL Placeholder Text]** veld.
-   1. De inhoud van het dialoogvenster **[!UICONTROL Title]** veld en tik ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. De inhoud van het dialoogvenster **[!UICONTROL Title]** veld en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Herhaal de vorige drie stappen voor alle tekstvakken, het numerieke vak en het e-mailveld in het formulier.
 
       ![aangepast-vorm](assets/updated-adaptive-form.png)
@@ -101,16 +101,16 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 ### Een thema maken {#create-a-theme}
 
 1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Themes]**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Tikken **[!UICONTROL Create]** en selecteert u **[!UICONTROL Theme]**. De [!UICONTROL Create Theme] Er verschijnt een pagina met de velden die u nodig hebt om een thema te maken. De **[!UICONTROL Title]** en **[!UICONTROL Name]** velden zijn verplicht:
+1. Selecteren **[!UICONTROL Create]** en selecteert u **[!UICONTROL Theme]**. De [!UICONTROL Create Theme] Er verschijnt een pagina met de velden die u nodig hebt om een thema te maken. De **[!UICONTROL Title]** en **[!UICONTROL Name]** velden zijn verplicht:
 
    * **Titel:** Geef een titel van het thema op. Bijvoorbeeld: **Globaal thema.** Met de titel kunt u het thema herkennen aan de lijst met thema&#39;s.
    * **Naam:** Geef de naam van het thema op. Bijvoorbeeld: **Globaal thema.** Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch de waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
 
-1. Tik op **[!UICONTROL Create]**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Tikken **[!UICONTROL Open]** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor het opmaken gebruikt de themaeditor een adaptief formulier dat niet in de doos is meegeleverd en dat wordt geleverd met AEM [!DNL Forms].
+1. Selecteer **[!UICONTROL Create]**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Selecteren **[!UICONTROL Open]** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor het opmaken gebruikt de themaeditor een adaptief formulier dat niet in de doos is meegeleverd en dat wordt geleverd met AEM [!DNL Forms].
 
    Voor informatie over het gebruiken van de interface van de themaredacteur, zie [Informatie over de themaeditor](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Tikken **[!UICONTROL Theme Options]** ![thema-opties](assets/theme-options.png) > **[!UICONTROL Configure]**. In de **[!UICONTROL Preview Form]** veld selecteert u de **verzendadres-add-update-form** adaptief formulier, tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), tikken **[!UICONTROL Save]**. De themaeditor is nu geconfigureerd voor het gebruik van uw eigen adaptieve formulier in plaats van het standaard adaptieve formulier. Tikken **[!UICONTROL Cancel]** om terug te keren naar de themaeditor.
+1. Selecteren **[!UICONTROL Theme Options]** ![thema-opties](assets/theme-options.png) > **[!UICONTROL Configure]**. In de **[!UICONTROL Preview Form]** veld selecteert u de **verzendadres-add-update-form** adaptief formulier, selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), selecteert u **[!UICONTROL Save]**. De themaeditor is nu geconfigureerd voor het gebruik van uw eigen adaptieve formulier in plaats van het standaard adaptieve formulier. Selecteren **[!UICONTROL Cancel]** om terug te keren naar de themaeditor.
 
    ![aangepast thema](assets/custom-theme.png)
 
@@ -124,9 +124,9 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
 Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief formulier. Over het algemeen bevat de koptekst het logo en de naam van de organisatie, bevat de voettekst copyrightinformatie en deze blijven in meerdere vormen van een organisatie identiek. De kop- en voettekst van het adaptieve formulier voor het verzendadres-add-update-formulier opmaken:
 
-1. Navigeren door de **[!UICONTROL Header]** > **[!UICONTROL Text]** in het deelvenster Kiezers. Het deelvenster Kiezers bevindt zich links van de themaeditor. Tik op ![schakelen tussen zijpaneel](assets/toggle-side-panel.png) Zijpaneel in-/uitschakelen.
+1. Navigeren door de **[!UICONTROL Header]** > **[!UICONTROL Text]** in het deelvenster Kiezers. Het deelvenster Kiezers bevindt zich links van de themaeditor. Als het deelvenster niet zichtbaar is, selecteert u ![schakelen tussen zijpaneel](assets/toggle-side-panel.png) Zijpaneel in-/uitschakelen.
 
-1. Stel de volgende eigenschappen in in de **[!UICONTROL Text]** accordeon en tik ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Stel de volgende eigenschappen in in de **[!UICONTROL Text]** accordeon en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -134,18 +134,18 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
    | Lettertypekleur | FFFFFF |
    | Tekengrootte | 54 px |
 
-1. Tik op de knop [!UICONTROL header] widget en tik **[!UICONTROL Header]**. De opties voor het opmaken van de koptekstwidget worden aan de linkerkant weergegeven. Breid uit **[!UICONTROL Dimensions & Position]** accordeon instellen **[!UICONTROL Height]** tot `120px`en tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteer de [!UICONTROL header] widget en selecteer **[!UICONTROL Header]**. De opties voor het opmaken van de koptekstwidget worden aan de linkerkant weergegeven. Breid uit **[!UICONTROL Dimensions & Position]** accordeon instellen **[!UICONTROL Height]** tot `120px`en selecteert u ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Breid uit **[!UICONTROL Background]** stelt de accordeon van de koptekstwidget in **[!UICONTROL Background Color]** tot `F6921E.`
 
-   Overslaan **[!UICONTROL Image & Gradient]** > **[!UICONTROL + Add]**, tikken **[!UICONTROL Image]**. Stel de volgende eigenschappen in en tik op ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Overslaan **[!UICONTROL Image & Gradient]** > **[!UICONTROL + Add]**, selecteert u **[!UICONTROL Image]**. Stel de volgende eigenschappen in en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
-   | afbeelding | Upload header-style.png. De afbeelding is gedownload in het dialoogvenster [Voordat u begint](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie. |
+   | image | Upload header-style.png. De afbeelding is gedownload in het dialoogvenster [Voordat u begint](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie. |
    | Positie | Rechts onder |
    | Naast elkaar | Niet herhalen |
 
-1. Tik in de themaeditor op het logo in de koptekst en tik op **[!UICONTROL Header Logo]**. Breid de Dimensionen en Positie accordeon uit, plaats de volgende eigenschappen en tik ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteer in de themaeditor het logo in de koptekst en selecteer **[!UICONTROL Header Logo]**. Breid de Dimensionen &amp; de accordeon van de Positie uit, plaats de volgende eigenschappen en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -160,22 +160,22 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
         <li>Boven: 1,5 rem</li> 
         <li>Onder: -35 px</li> 
         <li>Links: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Tip:</strong> Tik op de knop <img src="assets/link.png"> koppelingspictogram als u voor elk veld een andere waarde wilt opgeven.<br /> </p> </td> 
+       </ul> <p><strong>Tip:</strong> Selecteer de <img src="assets/link.png"> koppelingspictogram als u voor elk veld een andere waarde wilt opgeven.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Hoogte</td> 
-      <td>4.75rem</td> 
+      <td>4.75 rem</td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Tik op de voettekstwidget en tik op **[!UICONTROL Footer]**. Breid uit **[!UICONTROL Background]** accordeon instellen **[!UICONTROL Background Color]** tot `F6921E`en tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteer de voettekstwidget en selecteer **[!UICONTROL Footer]**. Breid uit **[!UICONTROL Background]** accordeon instellen **[!UICONTROL Background Color]** tot `F6921E`en selecteert u ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### De component voor gegevensvastlegging opmaken en een achtergrond op het adaptieve formulier toepassen {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast te leggen. Bijvoorbeeld tekstvak en numeriek vak. U kunt voor elke component een identieke stijl opgeven voor alle componenten voor het vastleggen van gegevens of een aparte stijl. In deze zelfstudie wordt een identieke stijl toegepast op numerieke vakken (Customer ID, ZIP Code) en tekstvakken (Customer ID, Name, Shipping Address, State, Email). De componenten voor gegevensvastlegging opmaken:
 
-1. Tik op de knop **[!UICONTROL Customer ID]** en tik op **[!UICONTROL Field Widget]** -optie. Stel de volgende eigenschappen in en tik op ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteer de **[!UICONTROL Customer ID]** en selecteer de **[!UICONTROL Field Widget]** -optie. Stel de volgende eigenschappen in en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -231,7 +231,7 @@ U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast
     </tbody> 
     </table>
 
-1. Tik op het lege gebied boven de **[!UICONTROL Customer ID]** veld en tik **[!UICONTROL Responsive Panel Container]**. Stel de **[!UICONTROL Background]** > **[!UICONTROL Background Color]** tot F1F2F2. Tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteer het lege gebied boven de **[!UICONTROL Customer ID]** veld en selecteer **[!UICONTROL Responsive Panel Container]**. Stel de **[!UICONTROL Background]** > **[!UICONTROL Background Color]** tot F1F2F2. Selecteren ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Container voor responsief deelvenster](do-not-localize/responsive-panel-container.png)
 
@@ -239,7 +239,7 @@ U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast
 
 U kunt een aangepast thema gebruiken om een identieke stijl toe te passen op alle knoppen van het aangepaste formulier en [inline styling](/help/forms/using/inline-style-adaptive-forms.md) om een stijl op een specifieke knoop toe te passen. U kunt als volgt de knoppen opmaken:
 
-1. Tik op de knop **[!UICONTROL Submit]** en tikt u op **[!UICONTROL Button]** -optie. Stel de volgende eigenschappen in en tik op ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Selecteer de **[!UICONTROL Submit]** en selecteert u de **[!UICONTROL Button]** -optie. Stel de volgende eigenschappen in en selecteer ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -300,14 +300,14 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
 
    ![style-option](assets/style-option.png)
 
-1. Tik op de knop **[!UICONTROL Attach]** en tikt u op ![aem_6_3_edit](assets/aem_6_3_edit.png)pictogram. Stel de volgende eigenschappen in in de **[!UICONTROL Dimensions and Position]** accordeon:
+1. Selecteer de **[!UICONTROL Attach]** en selecteert u de ![aem_6_3_edit](assets/aem_6_3_edit.png)pictogram. Stel de volgende eigenschappen in in de **[!UICONTROL Dimensions and Position]** accordeon:
 
    | Eigenschap | Waarde |
    |---|---|
    | Float | Links |
    | Breedte | 10% |
 
-1. Tik op de knop **[!UICONTROL Government approved address proof]** tikken en tikken op de ![aem_6_3_edit](assets/aem_6_3_edit.png)pictogram. Stel de volgende eigenschappen in:
+1. Selecteer de **[!UICONTROL Government approved address proof]** en selecteert u de ![aem_6_3_edit](assets/aem_6_3_edit.png)pictogram. Stel de volgende eigenschappen in:
 
    <table> 
     <tbody> 
@@ -397,7 +397,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
     </tbody> 
    </table>
 
-1. Tik op de knop **[!UICONTROL Submit]** en tikt u op ![aem_6_3_edit](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in:
+1. Selecteer de **[!UICONTROL Submit]** en selecteert u de ![aem_6_3_edit](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in:
 
    <table> 
     <tbody> 

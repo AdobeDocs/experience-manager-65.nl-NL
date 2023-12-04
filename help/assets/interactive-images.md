@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4240'
+source-wordcount: '4096'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
    Nadat u de titel hebt opgeslagen, wordt deze weergegeven in de lijstpagina Voorinstelling viewer.
 
 1. Selecteer in het vervolgkeuzemenu Uitgebreid mediatype de optie **[!UICONTROL Interactive Image]**.
-1. Selecteer **[!UICONTROL Create]**.
+1. Selecteren **[!UICONTROL Create]**.
 1. Selecteer op de pagina Voorinstelling viewer bewerken de optie **[!UICONTROL Appearance]** tab.
 1. Voer een van de volgende handelingen uit:
 
@@ -265,7 +265,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
    * Selecteer de afbeelding zodat u deze kunt openen op de pagina Gedetailleerde weergave. Selecteer op de werkbalk de optie **[!UICONTROL Edit]**.
 
-1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Add Hotspot]** (Tikpictogram van vinger) om de pagina Hotspot-beheer te openen.
+1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Add Hotspot]** (vinger selecteren pictogram) om de pagina Hotspot-beheer te openen.
 1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Hotspot]**.
 
    1. Selecteer in de linkerbovenhoek van de pagina Hotspot-beheer de optie **[!UICONTROL Hotspot]**.
@@ -276,7 +276,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 1. Typ in het tekstveld Naam de naam van de hotspot. Deze naam wordt ook weergegeven in de vervolgkeuzelijst Geselecteerde hotspot.
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer **[!UICONTROL Quickview]**.
+   * Selecteren **[!UICONTROL Quickview]**.
 
       * Als u een Experience Manager Sites- of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product dat u wilt gebruiken en selecteer **[!UICONTROL Select]** in de rechterbovenhoek van de pagina, zodat u kunt terugkeren naar de pagina Hotspot-beheer.
       * Als u *niet* een Experience Manager Sites- of eCommerce-klant
@@ -285,7 +285,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
          * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geselecteerde hotspot met een bepaalde mening van SKU te associëren Quickview.
          * (Optioneel) Als de Snelle weergave andere variabelen bevat die u moet gebruiken om een product verder te identificeren, selecteert u **[!UICONTROL Add Generic Variable]**. Geef in het tekstveld een extra variabele op. Bijvoorbeeld: `category=Males` is een toegevoegde variabele.
 
-   * Selecteer **[!UICONTROL Hyperlink]**.
+   * Selecteren **[!UICONTROL Hyperlink]**.
 
       * Als u een Experience Manager Sites-klant bent, selecteert u het pictogram Sitekiezer (map) om naar een URL te navigeren. De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
       * Als u een zelfstandige klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.
@@ -294,7 +294,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie .
 
-   * Selecteer **[!UICONTROL Experience Fragment]**.
+   * Selecteren **[!UICONTROL Experience Fragment]**.
 
       * Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken en selecteer **[!UICONTROL Select]** in de rechterbovenhoek van de pagina, zodat u kunt terugkeren naar de pagina Hotspot-beheer.
 Zie [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md).

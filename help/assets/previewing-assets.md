@@ -11,9 +11,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
       <li><p><strong>De 3D-camera draaien</strong> - Draai de weergave rond de 3D-scène en -objecten.</p> Muis: Linkerklik + Slepen </p> Aanraakscherm: Pers + slepen</p></li>
       <li><p><strong>Uw camera pannen</strong> - Verschuif uw weergave naar links, rechts, omhoog en omlaag.</p> Muis: rechtsklikken + slepen </p> Aanraakscherm: druk met twee vingers + sleep</p></li>
       <li><p><strong>Uw camera zoomen</strong> - Zoom de camera in en uit zodat u in- en uitzoomgebieden in de 3D-scène kunt verplaatsen.</p> Muis: schuifwiel </p> Aanraakscherm: vingerknijp</p></li>
-      <li><p><strong>De camera opnieuw opnemen</strong> - Draai de weergave rond de 3D-scène en -objecten.</p> Muis: dubbelklikken </p> Aanraakscherm: dubbeltikken</li></ul></td>
+      <li><p><strong>De camera opnieuw opnemen</strong> - Draai de weergave rond de 3D-scène en -objecten.</p> Muis: dubbelklikken </p> Aanraakscherm: dubbel selecteren</li></ul></td>
       </tr>
       <tr>
       <td><p>Afbeelding</p> </td>
@@ -79,7 +79,7 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
       </ul> <p><strong>Een voorvertoning van elementen weergeven in een bepaalde viewer</strong></p>
       <ul>
       <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Selecteren <strong>Viewers</strong> Selecteer in de lijst een viewer die u op het element wilt toepassen.</li>
-      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
+      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbelselecteert u de afbeelding om stap voor stap in te zoomen. Wanneer u het maximale zoomniveau hebt bereikt, dubbelselecteert u de afbeelding opnieuw om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -100,7 +100,7 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
       <td><p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p>
       <ul>
       <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Selecteren <strong>Viewers</strong> Selecteer in de lijst een viewer die u op het element wilt toepassen.</li>
-      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen, zodat u respectievelijk de zoomfactor van de geselecteerde afbeelding kunt verhogen of verlagen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
+      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen, zodat u respectievelijk de zoomfactor van de geselecteerde afbeelding kunt verhogen of verlagen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbelselecteert u de afbeelding om stap voor stap in te zoomen. Wanneer u het maximale zoomniveau hebt bereikt, dubbelselecteert u de afbeelding opnieuw om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
       </tr>
       <tr>
       <td>Set draaien</td>
@@ -109,7 +109,7 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
       <td><p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p>
       <ul>
       <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Selecteren <strong>Viewers</strong> Selecteer in de lijst een viewer die u op het element wilt toepassen.</li>
-      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
+      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbelselecteert u de afbeelding om stap voor stap in te zoomen. Wanneer u het maximale zoomniveau hebt bereikt, dubbelselecteert u de afbeelding opnieuw om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
       </tr>
       <tr>
       <td>Gemengde mediaset</td>
@@ -118,7 +118,7 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
       <td><p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p>
       <ul>
       <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Selecteren <strong>Viewers</strong> Selecteer in de lijst een viewer die u op het element wilt toepassen.</li>
-      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
+      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbelselecteert u de afbeelding om stap voor stap in te zoomen. Wanneer u het maximale zoomniveau hebt bereikt, dubbelselecteert u de afbeelding opnieuw om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
       </tr>
       <tr>
       <td>Carousel-set</td>
@@ -139,7 +139,7 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
       </ul> <p><strong>Een voorvertoning van elementen weergeven in een bepaalde viewer</strong></p>
       <ul>
       <li>Selecteer het pictogram in de linkerbovenhoek van de pagina, zodat de vervolgkeuzelijst wordt weergegeven. Selecteren <strong>Viewers</strong>Selecteer vervolgens een viewer die u op het element wilt toepassen.</li>
-      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
+      </ul> <p>Gebruik de <strong>+</strong> en <strong>-</strong> pictogrammen om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Selecteren <strong>Herstellen</strong> als u de oorspronkelijke zoomwaarde van de afbeelding wilt herstellen.<br /> Als u op een aanraakscherm bent, dubbelselecteert u de afbeelding om stap voor stap in te zoomen. Wanneer u het maximale zoomniveau hebt bereikt, dubbelselecteert u de afbeelding opnieuw om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> </td>
       </tr>
     </tbody>
     </table>

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -28,34 +28,34 @@ Adobe Target configureren in AEM voor gebruik met adaptieve formulieren en inter
 >
 >Het richten werkt wanneer uw adaptieve vorm of interactieve mededeling gebruikend een gastheernaam of IP adres wordt teruggegeven. Dit mislukt wanneer uw adaptieve formulier of interactieve communicatie wordt gegenereerd met localhost.
 
-## Doelactiviteit maken {#creating-a-target-activity}
+## Een doelactiviteit maken {#creating-a-target-activity}
 
-1. Tikken **Adobe Experience Manager > Persoonlijkheid > Activiteiten**.
+1. Selecteren **Adobe Experience Manager > Persoonlijkheid > Activiteiten**.
 
    `https://<hostname>:<port>/libs/cq/personalization/touch-ui/content/v2/activities.html`
 
-1. Tik op de pagina Activiteiten op **Maken > Merk maken**.
+1. Selecteer op de pagina Activiteiten de optie **Maken > Merk maken**.
 1. U wordt gevraagd een sjabloon te kiezen en eigenschappen in te voeren.
 
-   Selecteer een sjabloon, tik **Volgende.** Voer in de sectie Eigenschappen de titel van uw merk in en tik op **Maken.**
+   Selecteer een sjabloon en selecteer **Volgende.** Voer in de sectie Eigenschappen de titel van uw merk in en selecteer **Maken.**
 Uw merk wordt nu vermeld op de pagina Activiteiten.
 
-1. Tik op uw merk op de pagina Activiteiten.
-1. Tik in Master gebied van uw merk op **Maken** > **Activiteit maken**.
+1. Selecteer uw merk op de pagina Activiteiten.
+1. Selecteer in Hoofdgebied van uw merk de optie **Maken** > **Activiteit maken**.
 
    Wanneer u een activiteit creeert, specificeert u zijn details, doel, en montages.
 
-   De sectie Details bevat naam, doelengine en doel. Wanneer u Adobe Target selecteert als de doelengine, wordt de optie voor de configuratie van de doelcloud ingeschakeld. Kies uw doelwolkenconfiguratie, kies Type Activiteit, verstrek het doel van de activiteit, en tik **Volgende**. De interactieve Communicatie steunt slechts Ervaring richtend het type van Activiteit.
+   De sectie Details bevat de naam, de doelengine en het doel. Wanneer u Adobe Target selecteert als de doelengine, wordt de optie voor de configuratie van de doelcloud ingeschakeld. Kies uw doelwolkenconfiguratie, kies Type Activiteit, verstrek het doel van de activiteit, en selecteer **Volgende**. De interactieve Communicatie steunt slechts Ervaring richtend het type van Activiteit.
 
-   In de sectie Doel kunt u gebruikerservaring toevoegen en deze een naam geven. Klikken **Ervaring toevoegen** de **Publiek selecteren** en **Naamervaring** opties. Tikken **Publiek selecteren** om een lijst met doelgroepen en hun bron te zien. Selecteer een publiek in de lijst Audience Name. Tikken **Ervaring toevoegen** om de ervaring een naam te geven en op **Volgende**.
+   In de sectie Doel kunt u gebruikerservaring toevoegen en deze een naam geven. Klikken **Ervaring toevoegen** de **Publiek selecteren** en **Naamervaring** opties. Selecteren **Publiek selecteren** om een lijst met doelgroepen en hun bron te zien. Selecteer een publiek in de lijst Audience Name. Selecteren **Ervaring toevoegen** om de ervaring een naam te geven en selecteer **Volgende**.
 
-   In het gedeelte Doelen en instellingen kunt u uw activiteiten plannen en er een prioriteit van maken. Plaats de begindatum, einddatum, en prioriteit van de activiteit, doel metrisch, extra metrisch en tikt **Opslaan**.
+   In het gedeelte Doelen en instellingen kunt u uw activiteiten plannen en er een prioriteit van maken. Plaats de begindatum, einddatum, en prioriteit van de activiteit, doel metrisch, extra metrisch en uitgezocht **Opslaan**.
 
    De activiteit wordt nu vermeld in je merkpagina.
 
    >[!NOTE]
    >
-   >U kunt de fout negeren &quot;Uw activiteit is opgeslagen maar niet gesynchroniseerd met Doel. Reden: De volgende ervaring heeft geen voorstellen&quot;, indien aangetroffen bij het opslaan van de activiteit.
+   >U kunt de fout negeren &quot;Uw activiteit is opgeslagen maar niet gesynchroniseerd met Doel. Reden: de volgende ervaring heeft geen aanbiedingen&quot;, indien aangetroffen bij het opslaan van de activiteit.
 
 1. Als u doel wilt inschakelen, bewerkt u het .jsp-bestand zodat clientbibliotheken worden opgenomen die in de sjabloon voor aangepaste formulieren worden gebruikt.
 
@@ -73,12 +73,12 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
 
 1. Als u het doelframework voor adaptieve formulieren wilt inschakelen, navigeert u naar het formulier of de interactieve communicatie en opent u het in de bewerkingsmodus.
 
-   Tik op een formulier of interactieve communicatie in de bewerkingsmodus om een formulier of interactieve communicatie te openen **Selecteren** en tik vervolgens op **Openen**.
+   Als u een formulier of interactieve communicatie wilt openen in de bewerkingsmodus, selecteert u **Selecteren** en selecteer vervolgens **Openen**.
 
-   U kunt ook vier knoppen weergeven wanneer u de muisaanwijzer op het formulier of het interactieve communicatiepictogram plaatst zonder dat u dit selecteert. U kunt tikken op de knop **Bewerken** om het formulier te openen in de bewerkingsmodus.
+   U kunt ook vier knoppen weergeven wanneer u de muisaanwijzer op het formulier of het interactieve communicatiepictogram plaatst zonder dat u dit selecteert. U kunt de **Bewerken** om het formulier te openen in de bewerkingsmodus.
 
-1. Tik op de pagina-werkbalk op **Pagina-informatie** ![thema-opties](assets/theme-options.png) > **Eigenschappen openen**.
-1. Kies op het tabblad Algemeen een configuratie voor het dialoogvenster **Adobe Target** veld. Tikken **Opslaan en sluiten**.
+1. Selecteer op de werkbalk Pagina de optie **Pagina-informatie** ![thema-opties](assets/theme-options.png) > **Eigenschappen openen**.
+1. Kies op het tabblad Algemeen een configuratie voor de **Adobe Target** veld. Selecteren **Opslaan en sluiten**.
 
 ## Gecreeerde activiteit toepassen op een adaptieve formulierafbeelding of een interactieve communicatieafbeelding {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 
@@ -90,12 +90,12 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
    >
    >AEM Forms biedt alleen ondersteuning voor afbeeldingscomponenten. Zorg ervoor dat het deelvenster dat als host fungeert voor de afbeeldingscomponent geen andere component bevat en dat het aantal kolommen voor het deelvenster is ingesteld op 1.
 
-1. Overschakelen van **Bewerken** tot **Doelstelling** in. De optie voor het schakelen tussen modi bevindt zich in de rechterbovenhoek.
-1. Selecteer een **BRAND**, selecteert u **ACTIVITEIT** en tikken **Doelstelling starten**. De **Soorten publiek** wordt rechts van de editor weergegeven.
+1. Overschakelen van **Bewerken** tot **Targeting** -modus. De optie voor het schakelen tussen modi bevindt zich in de rechterbovenhoek.
+1. Selecteer een **BRAND**, selecteert u **ACTIVITEIT** en selecteert u **Doelstelling starten**. De **Soorten publiek** wordt rechts van de editor weergegeven.
 
-   ![gericht](assets/targeting-menu.png)
+   ![gericht menu](assets/targeting-menu.png)
 
-1. Selecteer een publiek in het menu **Soorten publiek** en tik op de afbeelding om deze te activeren. Er wordt een menu weergegeven. Tik in het menu op **Doel**. Tik op de afbeelding en tik op **Configureren**. Selecteer in het eigenschappenvenster de afbeelding die u voor het geselecteerde publiek wilt weergeven. Herhaal de stap voor alle doelgroepen. De doelgerichte ervaring wordt ingeschakeld voor de afbeelding in de interactieve communicatie of het adaptieve formulier.
+1. Selecteer een publiek in het menu **Soorten publiek** en selecteert u de afbeelding die u als doel wilt instellen. Er wordt een menu weergegeven. Selecteer in het menu **Doel**. Selecteer de afbeelding en selecteer **Configureren**. Selecteer in het eigenschappenvenster de afbeelding die u voor het geselecteerde publiek wilt weergeven. Herhaal de stap voor alle doelgroepen. De doelgerichte ervaring wordt ingeschakeld voor de afbeelding in de interactieve communicatie of het adaptieve formulier.
 
 ## Controleren of de gemaakte activiteit synchroon is met de doelserver {#check-if-the-created-activity-syncs-with-the-target-server}
 

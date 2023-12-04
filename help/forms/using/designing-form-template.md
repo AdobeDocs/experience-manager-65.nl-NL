@@ -7,9 +7,9 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ Het belangrijkste doel voor HTML5-formulieren is aanraakapparaten. Daarom wordt 
 
 #### RTF-indeling {#rich-text-format}
 
-U kunt een tekstveld omzetten in een RTF-veld. Er wordt een lijst met opmaakopties toegevoegd aan het tekstveld. Als u wilt converteren, opent u Forms Designer en tikt u op het tekstveld in **[!UICONTROL Design View]**. In de **[!UICONTROL Field]** tab, selecteert u **[!UICONTROL Rich Text]** van de **[!UICONTROL Field Format]** vervolgkeuzelijst. Wanneer het XFA-formulier nu wordt weergegeven als een HTML5-formulier, wordt het veld weergegeven als een RTF-veld. Tikken ![Maximaliseren](assets/maximize_icon.svg) om extra opmaakopties weer te geven.
+U kunt een tekstveld omzetten in een RTF-veld. Er wordt een lijst met opmaakopties toegevoegd aan het tekstveld. Als u wilt converteren, opent u Forms Designer en selecteert u het tekstveld in **[!UICONTROL Design View]**. In de **[!UICONTROL Field]** tab, selecteert u **[!UICONTROL Rich Text]** van de **[!UICONTROL Field Format]** vervolgkeuzelijst. Wanneer het XFA-formulier nu wordt weergegeven als een HTML5-formulier, wordt het veld weergegeven als een RTF-veld. Selecteren ![Maximaliseren](assets/maximize_icon.svg) om extra opmaakopties weer te geven.

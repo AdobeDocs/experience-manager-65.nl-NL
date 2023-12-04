@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ De conceptfunctionaliteit is uit het vak ingeschakeld. Wanneer een gebruiker kli
 Voer de volgende stappen uit om een component Concepten en verzendingen toe te voegen en te configureren:
 
 1. Sleep de **Concepten en verzendingen** onder de categorie Document Services in de componentenbrowser op de pagina.
-1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png) om het dialoogvenster Bewerken voor de component te openen.
+1. Selecteer de component en selecteer vervolgens ![settings_icon](assets/settings_icon.png) om het dialoogvenster Bewerken voor de component te openen.
 
    ![Concepten en verzendingscomponent](assets/drafts-submissions-edit.png)
 
-1. Geef in het dialoogvenster Bewerken de volgende gegevens op en tik op **Gereed** om de instellingen op te slaan.
+1. Geef in het dialoogvenster Bewerken de volgende details op en selecteer **Gereed** om de instellingen op te slaan.
 
 <table>
  <tbody>

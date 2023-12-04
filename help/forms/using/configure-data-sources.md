@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: d39b4b1d921fc93a4871b74469953f2dfc5c470b
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1896'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Gegevensintegratie ondersteunt OAuth2.0([Autorisatiecode](https://oauth.net/2/gr
 U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van de Console van het Web. Ga als volgt te werk:
 
 1. Ga naar AEM webconsole op `https://server:host/system/console/configMgr`.
-1. Zoeken naar **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
+1. Zoeken naar **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuratie. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
 1. In de configuratiedialoog, specificeer de details voor het gegevensbestand u, zoals wilt vormen:
 
    * Naam van de gegevensbron
@@ -52,7 +52,7 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
    >Zorg ervoor dat u gevoelige informatie zoals wachtwoorden codeert alvorens de gegevensbron te vormen. Coderen:
    >
    > 1. Ga naar https://&#39;[server]:[poort]&quot;/systeem/console/crypto.
-   > 1. In de **[!UICONTROL Plain Text]** veld, geeft u het wachtwoord of een willekeurige tekenreeks op die u wilt versleutelen en tikken **[!UICONTROL Protect]**.
+   > 1. In de **[!UICONTROL Plain Text]** veld, geef het wachtwoord of een tekenreeks op die u wilt versleutelen en selecteer **[!UICONTROL Protect]**.
    >
    >De gecodeerde tekst wordt weergegeven in het veld Beveiligde tekst dat u in de configuratie kunt opgeven.
 
@@ -62,7 +62,7 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
    * SELECT 1 (MySQL en MS SQL)
    * SELECTEER 1 uit twee items (Oracle)
 
-1. Tikken **[!UICONTROL Save]** om de configuratie op te slaan.
+1. Selecteren **[!UICONTROL Save]** om de configuratie op te slaan.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
 U kunt AEM gebruikersprofiel vormen gebruikend de Configuratie van de Verbinding van het Profiel van de Gebruiker in AEM Console van het Web. Ga als volgt te werk:
 
 1. Ga naar AEM webconsole op https://&#39;[server]:[poort]&#39;system/console/configMgr.
-1. Zoeken naar **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** en tik om de configuratie te openen in de bewerkingsmodus.
+1. Zoeken naar **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** en selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
 1. In het dialoogvenster Configuratie gebruikersprofiel-aansluiting kunt u eigenschappen van gebruikersprofielen toevoegen, verwijderen of bijwerken. De opgegeven eigenschappen zijn beschikbaar voor gebruik in het formuliergegevensmodel. Gebruik de volgende indeling om gebruikersprofieleigenschappen op te geven:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -87,7 +87,7 @@ U kunt AEM gebruikersprofiel vormen gebruikend de Configuratie van de Verbinding
    >
    >De **&#42;** in het bovenstaande voorbeeld worden alle knooppunten onder de `profile/empLocation/` knooppunt in AEM gebruikersprofiel in CRXDE-structuur. Dit betekent dat het formuliergegevensmodel toegang heeft tot het dialoogvenster `city` eigenschap of type `string` aanwezig in een knooppunt onder `profile/empLocation/` knooppunt. Nochtans, moeten de knopen die het gespecificeerde bezit bevatten een verenigbare structuur volgen.
 
-1. Tikken **[!UICONTROL Save]** om de configuratie op te slaan.
+1. Selecteren **[!UICONTROL Save]** om de configuratie op te slaan.
 
 ## Map configureren voor configuraties van cloudservices {#cloud-folder}
 
@@ -103,15 +103,15 @@ De map configureren voor configuraties van cloudservices:
    * Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
-   1. In de **[!UICONTROL Configuration Browser]**, selecteert u de `global` map en tik **[!UICONTROL Properties]**.
+   1. In de **[!UICONTROL Configuration Browser]**, selecteert u de `global` map en selecteer **[!UICONTROL Properties]**.
 
    1. In de **[!UICONTROL Configuration Properties]** dialoogvenster, inschakelen **[!UICONTROL Cloud Configurations]**.
 
-   1. Tikken **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+   1. Selecteren **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
-1. In de **[!UICONTROL Configuration Browser]**, tikken **[!UICONTROL Create]**.
+1. In de **[!UICONTROL Configuration Browser]**, selecteert u **[!UICONTROL Create]**.
 1. In de **[!UICONTROL Create Configuration]** een titel voor de map opgeven en inschakelen **[!UICONTROL Cloud Configurations]**.
-1. Tikken **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
+1. Selecteren **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
@@ -119,11 +119,11 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 
 Doe het volgende de diensten RESTful vormen:
 
-1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
+1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
    Zie [Map configureren voor configuraties van cloudservices](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het maken en configureren van een map voor cloudserviceconfiguraties.
 
-1. Tikken **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL RESTful Service]** van de **[!UICONTROL Service Type]** keuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en tikt u op **[!UICONTROL Next]**.
+1. Selecteren **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL RESTful Service]** van de **[!UICONTROL Service Type]** vervolgkeuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en selecteert u **[!UICONTROL Next]**.
 1. Specificeer de volgende details voor de RESTful dienst:
 
    * Selecteer URL of Dossier van de Bron van de Wagger drop-down, en specificeer dienovereenkomstig Swagger URL aan het de definitiedossier van de Swagger of upload het dossier van de Swagger van uw lokaal dossiersysteem.
@@ -140,7 +140,7 @@ Doe het volgende de diensten RESTful vormen:
 
    Als u **[!UICONTROL Mutual Authentication]** als authentificatietype, zie [Op certificaten gebaseerde wederzijdse verificatie voor RESTful- en SOAP-webservices](#mutual-authentication).
 
-1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst te creëren.
+1. Selecteren **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst te creëren.
 
 ### Het model van de gegevens van de vormHTTP cliëntconfiguratie om prestaties te optimaliseren {#fdm-http-client-configuration}
 
@@ -149,7 +149,7 @@ Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te
 
 1. Aanmelden bij [!DNL Experience Manager Forms] Instantie van auteur als beheerder en ga naar [!DNL Experience Manager] bundels voor webconsoles. De standaard-URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
-1. Tik op **[!UICONTROL Form Data Model Http Client Configuration for REST data source]**.
+1. Selecteren **[!UICONTROL Form Data Model Http Client Configuration for REST data source]**.
 
 1. In de [!UICONTROL Form Data Model Http Client Configuration for REST data source] dialoogvenster:
 
@@ -167,11 +167,11 @@ Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te
 
 SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)-specificaties](https://www.w3.org/TR/wsdl). Als u op SOAP gebaseerde webservice wilt configureren in AEM cloudservices, moet u ervoor zorgen dat u over de WSDL-URL voor de webservice beschikt en het volgende doen:
 
-1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
+1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
    Zie [Map configureren voor configuraties van cloudservices](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het maken en configureren van een map voor cloudserviceconfiguraties.
 
-1. Tikken **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL SOAP Web Service]** van de **[!UICONTROL Service Type]** keuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en tikt u op **[!UICONTROL Next]**.
+1. Selecteren **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL SOAP Web Service]** van de **[!UICONTROL Service Type]** vervolgkeuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en selecteert u **[!UICONTROL Next]**.
 1. Geef het volgende op voor de SOAP-webservice:
 
    * WSDL-URL voor de webservice.
@@ -183,7 +183,7 @@ Geef de alias KeyStore voor het X509-certificaat op in het dialoogvenster **[!UI
 
      Als u **[!UICONTROL Mutual Authentication]** als authentificatietype, zie [Op certificaten gebaseerde wederzijdse verificatie voor RESTful- en SOAP-webservices](#mutual-authentication).
 
-1. Tikken **[!UICONTROL Create]** om de cloudconfiguratie voor de SOAP-webservice te maken.
+1. Selecteren **[!UICONTROL Create]** om de cloudconfiguratie voor de SOAP-webservice te maken.
 
 ## OData-services configureren {#config-odata}
 
@@ -194,11 +194,11 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 >Formuliergegevensmodel ondersteunt [OData versie 4](https://www.odata.org/documentation/).
 >Voor geleidelijke gids om Dynamica 365 van Microsoft, online of op-gebouw te vormen, zie [Configuratie Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
+1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
    Zie [Map configureren voor configuraties van cloudservices](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het maken en configureren van een map voor cloudserviceconfiguraties.
 
-1. Tikken **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL OData Service]** van de **[!UICONTROL Service Type]** keuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en tikt u op **[!UICONTROL Next]**.
+1. Selecteren **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL OData Service]** van de **[!UICONTROL Service Type]** vervolgkeuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en selecteert u **[!UICONTROL Next]**.
 1. Specificeer de volgende details voor de dienst OData:
 
    * Service Root URL voor de OData-service die moet worden geconfigureerd.
@@ -206,9 +206,9 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 
    >[!NOTE]
    >
-   >U moet OAuth 2.0 authentificatietype selecteren om met de diensten van de Dynamiek van Microsoft te verbinden gebruikend eindpunt OData als de dienstwortel.
+   >Selecteer OAuth 2.0 authentificatietype om met de diensten van de Dynamiek van Microsoft te verbinden gebruikend eindpunt OData als de de dienstwortel.
 
-1. Tikken **Maken** om de wolkenconfiguratie voor de dienst te creëren OData.
+1. Selecteren **Maken** om de wolkenconfiguratie voor de dienst te creëren OData.
 
 ## Op certificaten gebaseerde wederzijdse verificatie voor RESTful- en SOAP-webservices {#mutual-authentication}
 
@@ -216,11 +216,11 @@ Wanneer u wederzijdse verificatie inschakelt voor het gegevensmodel van het form
 
 1. De persoonlijke sleutel (certificaat) uploaden naar [!DNL AEM Forms] server. De persoonlijke sleutel uploaden:
    1. Aanmelden bij uw [!DNL AEM Forms] als beheerder.
-   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Selecteer de `fd-cloudservice` gebruiker en tik **[!UICONTROL Properties]**.
-   1. Open de **[!UICONTROL Keystore]** tabblad, vouwt u de **[!UICONTROL Add Private Key from KeyStore file]** , uploadt u het KeyStore-bestand, geeft u de aliassen, wachtwoorden en tikt **[!UICONTROL Submit]**. Het certificaat wordt geüpload.  De alias van de persoonlijke sleutel wordt vermeld in het certificaat en ingesteld tijdens het maken van het certificaat.
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Selecteer de `fd-cloudservice` gebruiker en selecteer **[!UICONTROL Properties]**.
+   1. Open de **[!UICONTROL Keystore]** tabblad, vouwt u de **[!UICONTROL Add Private Key from KeyStore file]** , uploadt u het KeyStore-bestand, geeft u de aliassen, wachtwoorden en selecteert u **[!UICONTROL Submit]**. Het certificaat wordt geüpload.  De alias van de persoonlijke sleutel wordt vermeld in het certificaat en ingesteld tijdens het maken van het certificaat.
 1. Upload vertrouwenscertificaat naar Global Trust Store. Het certificaat uploaden:
-   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
-   1. Breid uit **[!UICONTROL Add Certificate from CER file]** optie, tikken **[!UICONTROL Select Certificate File]**, uploadt u het certificaat en tikt u op **[!UICONTROL Submit]**.
+   1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
+   1. Breid uit **[!UICONTROL Add Certificate from CER file]** selecteert u **[!UICONTROL Select Certificate File]**, uploadt u het certificaat en selecteert u **[!UICONTROL Submit]**.
 1. Configureren [SOAP](#configure-soap-web-services) of [RESTful](#configure-restful-web-services) webservices als gegevensbron en selecteer **[!UICONTROL Mutual authentication]** als het verificatietype. Als u meerdere zelfondertekende certificaten configureert voor `fd-cloudservice` -gebruiker, geeft u de naam van de sleutelalias voor het certificaat op.
 
 ## Volgende stappen {#next-steps}

@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2575'
+source-wordcount: '2588'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Terwijl het creëren van een Interactieve Communicatie, kunt u grafieken toevoeg
 
 Voer de volgende stappen uit om een grafiek in een Interactieve Mededeling toe te voegen en te vormen:
 
-1. Tikken **Componenten** van de assistent van de interactieve communicatie.
+1. Selecteren **Componenten** van de assistent van de interactieve communicatie.
 1. Sleep de **Diagram** aan een van de volgende componenten:
 
    * Kanaal afdrukken: doelgebied of afbeeldingsveld
    * Webkanaal: Deelvenster of Doelgebied
 
-1. Tik de grafiekcomponent in de Interactieve Communicatie redacteur en selecteer **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)) van de werkbalk Component.
+1. Selecteer de grafiekcomponent in de Interactieve Communicatie redacteur en selecteer **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)) van de werkbalk Component.
 
    De grafiekeigenschappen worden in het linkerdeelvenster weergegeven.
 
@@ -47,13 +47,13 @@ Voer de volgende stappen uit om een grafiek in een Interactieve Mededeling toe t
    Basiseigenschappen van een lijntekstdiagram in een webkanaal
 
 1. Vorm [grafiekeigenschappen](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) op basis van het kanaaltype.
-1. (Alleen kanaal afdrukken) In het dialoogvenster **[!UICONTROL Agent Settings]**, specificeer als het voor de agent verplicht is om deze grafiek te gebruiken. Indien i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** Deze optie is niet geselecteerd. De agent kan op het oogpictogram voor het diagram in het dialoogvenster **[!UICONTROL Content]** lusje van Agent UI om de grafiek te tonen of te verbergen.
+1. (Alleen kanaal afdrukken) In het dialoogvenster **[!UICONTROL Agent Settings]**, specificeer als het voor de agent verplicht is om deze grafiek te gebruiken. Indien i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** de optie is niet geselecteerd, kan de agent het oogpictogram voor de grafiek in het **[!UICONTROL Content]** lusje van Agent UI om de grafiek te tonen of te verbergen.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Tikken ![done_icon](assets/done_icon.png) om de eigenschappen van het diagram op te slaan.
+1. Selecteren ![done_icon](assets/done_icon.png) om de eigenschappen van het diagram op te slaan.
 
-   Tikken **[!UICONTROL Preview]** om de weergave en de gegevens weer te geven die aan het diagram zijn gekoppeld. Tikken **[!UICONTROL Edit]** om de eigenschappen van de grafiek aan te passen.
+   Selecteren **[!UICONTROL Preview]** om de weergave en de gegevens weer te geven die aan het diagram zijn gekoppeld. Selecteren **[!UICONTROL Edit]** om de eigenschappen van de grafiek aan te passen.
 
 ## Eigenschappen van diagram configureren {#configure-chart-properties}
 

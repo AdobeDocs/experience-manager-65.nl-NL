@@ -10,16 +10,16 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 1%
+source-wordcount: '592'
+ht-degree: 0%
 
 ---
 
 # Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -32,8 +32,8 @@ U kunt de algemene weergave en stijl van een adaptief formulier definiëren door
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op de pagina op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
-1. Selecteer een component op de pagina en tik op de knop Bewerken ![bewerken, knop](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Als u de modus wilt wijzigen in de opmaakmodus, selecteert u op de pagina-werkbalk de optie ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
+1. Selecteer een component op de pagina en selecteer de knop Bewerken ![bewerken, knop](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
@@ -43,7 +43,7 @@ Inline stijlen toevoegen aan een component:
 
 1. Klik op een tabblad in de zijbalk om CSS-eigenschappen op te geven. U kunt eigenschappen opgeven, zoals:
 
-   * Dimension en positie (weergave-instelling, opvulling, hoogte, breedte, marge, positie, z-index, zwevend, wissen, overloop)
+   * Dimensionen en positie (weergave-instelling, opvulling, hoogte, breedte, marge, positie, z-index, zwevend, wissen, overloop)
    * Tekst (lettertypefamilie, dikte, kleur, grootte, lijnhoogte en uitlijning)
    * Achtergrond (afbeelding en verloop, achtergrondkleur)
    * Rand (breedte, stijl, kleur, straal)
@@ -51,7 +51,7 @@ Inline stijlen toevoegen aan een component:
    * Geavanceerd (hiermee kunt u aangepaste CSS voor de component schrijven)
 
 1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals Widget, Bijschrift en Help.
-1. Tikken **Gereed** om de wijzigingen te bevestigen of **Annuleren** om de wijzigingen te verwijderen.
+1. Selecteren **Gereed** om de wijzigingen te bevestigen of **Annuleren** om de wijzigingen te verwijderen.
 
 ## Voorbeeld: inline stijlen voor een veldcomponent {#example-inline-styles-for-a-field-component}
 
@@ -81,19 +81,19 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
    <td><p>Tekstvak</p> </td>
    <td><p>background-color</p> </td>
    <td><p>#6495ED</p> </td>
-   <td><p>Hiermee wijzigt u de achtergrondkleur in CornflowerBlue (#6495ED)</p> <p>Opmerking: U kunt een kleurnaam of de hexadecimale code opgeven in het waardeveld.</p> </td>
+   <td><p>Hiermee wijzigt u de achtergrondkleur in CornflowerBlue (#6495ED)</p> <p>Opmerking: u kunt een kleurnaam of de hexadecimale code opgeven in het waardeveld.</p> </td>
   </tr>
   <tr>
    <td><p>Label</p> </td>
    <td><p>Afmetingen en positie &gt; breedte</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td>
   </tr>
   <tr>
-   <td>Pictogram Help-veld</td>
-   <td>Tekst &gt; Lettertypekleur</td>
+   <td>Help-pictogram Veld</td>
+   <td>Tekst &gt; Tekstkleur</td>
    <td>#2ECC40</td>
-   <td>Hiermee wijzigt u de kleur van het gezicht van het Help-pictogram.</td>
+   <td>Hiermee wijzigt u de kleur van het Help-pictogram.</td>
   </tr>
   <tr>
    <td><p>Lange beschrijving</p> </td>

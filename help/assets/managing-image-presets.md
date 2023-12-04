@@ -13,16 +13,16 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3693'
+source-wordcount: '3650'
 ht-degree: 6%
 
 ---
 
 # Dynamic Media-voorinstellingen voor afbeeldingen beheren{#managing-image-presets}
 
-Met voorinstellingen voor afbeeldingen kunnen Adobe Experience Manager-elementen dynamisch afbeeldingen van verschillende grootten, in verschillende indelingen of met andere afbeeldingseigenschappen leveren die dynamisch worden gegenereerd. Elke voorinstelling voor afbeeldingen vertegenwoordigt een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van afbeeldingen. Wanneer u een voorinstelling voor afbeeldingen maakt, kiest u een grootte voor het leveren van de afbeelding. U kiest ook opmaakopdrachten, zodat de weergave van de afbeelding wordt geoptimaliseerd wanneer de afbeelding wordt geleverd voor weergave.
+Met voorinstellingen voor afbeeldingen kan Adobe Experience Manager Assets dynamisch afbeeldingen van verschillende grootten, in verschillende indelingen of met andere afbeeldingseigenschappen leveren die dynamisch worden gegenereerd. Elke voorinstelling voor afbeeldingen vertegenwoordigt een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van afbeeldingen. Wanneer u een voorinstelling voor afbeeldingen maakt, kiest u een grootte voor het leveren van de afbeelding. U kiest ook opmaakopdrachten, zodat de weergave van de afbeelding wordt geoptimaliseerd wanneer de afbeelding wordt geleverd voor weergave.
 
 Beheerders kunnen voorinstellingen maken voor het exporteren van elementen. Gebruikers kunnen bij het exporteren van afbeeldingen een voorinstelling kiezen die de afbeeldingen opnieuw opmaakt volgens de specificaties die de beheerder heeft opgegeven.
 
@@ -81,11 +81,11 @@ Adobe Illustrator-bestandsindeling is een variant van PDF. De belangrijkste vers
 * Adobe Illustrator-documenten bestaan uit één pagina met meerdere lagen. Elke laag wordt geëxtraheerd als een PNG-subelement onder het Illustrator-hoofdelement.
 * PDF-documenten bestaan uit een of meer pagina&#39;s. Elke pagina wordt geëxtraheerd als een PDF-subelement van één pagina onder het PDF-hoofddocument met meerdere pagina&#39;s.
 
-De subassets worden gemaakt door de `Create Sub Asset process` binnen het algemene `DAM Update Asset` workflow. Tik op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+De subassets worden gemaakt door de `Create Sub Asset process` binnen het algemene `DAM Update Asset` workflow. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 
 Zie ook [Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-U kunt de submiddelen of de pagina&#39;s weergeven wanneer u het element opent, tikt op het menu Inhoud en selecteert **[!UICONTROL Subassets]** of **[!UICONTROL Pages]**. De subelementen zijn echte elementen. Met andere woorden: PDF-pagina&#39;s worden door de `Create Sub Asset` workflowcomponent. Zij worden dan opgeslagen zoals `page1.pdf`, `page2.pdf`, enzovoort, onder het hoofdactief. Nadat ze zijn opgeslagen, `DAM Update Asset` deze werkstromen verwerken.
+U kunt de submiddelen of de pagina&#39;s bekijken wanneer u het element opent, het menu Inhoud selecteert en **[!UICONTROL Subassets]** of **[!UICONTROL Pages]**. De subelementen zijn echte elementen. Met andere woorden: PDF-pagina&#39;s worden door de `Create Sub Asset` workflowcomponent. Zij worden dan opgeslagen zoals `page1.pdf`, `page2.pdf`, enzovoort, onder het hoofdactief. Nadat ze zijn opgeslagen, `DAM Update Asset` deze werkstromen verwerken.
 
 Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of PDF-bestanden voor te vertonen en te genereren, moet u de volgende verwerkingsstappen uitvoeren:
 
@@ -106,7 +106,7 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 
 U hebt toegang `Rasterize PDF/AI Image Preview Rendition` procescomponentopties als `DAM Update Asset` workflow.
 
-Tik op Adobe Experience Manager linksboven en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Selecteer op de pagina Workflowmodellen de optie **[!UICONTROL DAM Update Asset]**, tikt u vervolgens op de werkbalk **[!UICONTROL Edit]**. Op de [!UICONTROL DAM Update Asset] werkstroompagina, dubbeltikken op de `Rasterize PDF/AI Image Preview Rendition` procescomponent om het dialoogvenster Step Properties te openen.
+Selecteer in de linkerbovenhoek Adobe Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Selecteer op de pagina Workflowmodellen de optie **[!UICONTROL DAM Update Asset]** selecteert u vervolgens op de werkbalk **[!UICONTROL Edit]**. Op de [!UICONTROL DAM Update Asset] werkstroompagina, selecteert u de `Rasterize PDF/AI Image Preview Rendition` procescomponent om het dialoogvenster Step Properties te openen.
 
 #### Opties van PDF/AI-voorvertoning van afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -208,18 +208,18 @@ Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **[!UICONTROL width
 
 **De grootte van afbeeldingsminiaturen configureren:**
 
-1. Tikken **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
-1. Tik op de knop **[!UICONTROL Dynamic Media Process Image Assets]** stap en tik of klik op **[!UICONTROL Thumbnails]** tab. Wijzig desgewenst de miniatuurgrootte en tik op **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Selecteer de **[!UICONTROL Dynamic Media Process Image Assets]** en klik op de knop **[!UICONTROL Thumbnails]** tab. Wijzig desgewenst de miniatuurgrootte en selecteer **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tik op de stap **[!UICONTROL Process Thumbnails]** en tik vervolgens op het tabblad **[!UICONTROL Thumbnails]**. Wijzig desgewenst de miniatuurgrootte en tik op **[!UICONTROL OK]**.
+1. Selecteer de **[!UICONTROL Process Thumbnails]** stap selecteert u vervolgens de **[!UICONTROL Thumbnails]** tab. Wijzig desgewenst de miniatuurgrootte en selecteer **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >De waarden in het argument voor miniaturen in de stap **[!UICONTROL Process Thumbnails]** moeten overeenkomen met het argument voor miniaturen in de stap **[!UICONTROL Dynamic Media Process Image Assets]**.
 
-1. Tikken **[!UICONTROL Save]** om de wijzigingen in de workflow op te slaan.
+1. Selecteren **[!UICONTROL Save]** om de wijzigingen in de workflow op te slaan.
 
 ### Het aantal Dynamic Media-voorinstellingen voor afbeeldingen dat wordt weergegeven verhogen of verlagen {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -238,7 +238,7 @@ Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoer
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tik op **[!UICONTROL Save All]**.
+1. Selecteren **[!UICONTROL Save All]**.
 
 ## Een Dynamic Media-voorinstelling voor afbeeldingen maken {#creating-image-presets}
 
@@ -260,7 +260,7 @@ Zie [InDesign-bestandsindeling (INDD)](#indesign-indd-file-format).
 
 **Een Dynamic Media-voorinstelling voor afbeeldingen maken:**
 
-1. Tik in Experience Manager op het logo van de Experience Manager om de globale navigatieconsole te openen en tik vervolgens op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan selecteer **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Klik op **[!UICONTROL Create]**. De **[!UICONTROL Edit Image Preset]** wordt geopend.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -395,7 +395,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     <ul>
      <li>Selecteren <strong>Geen</strong> als u verscherpen wilt uitschakelen.</li>
      <li>Selecteren <strong>Verscherpen</strong> als u een standaard verscherpingsfilter wilt toepassen op de afbeelding nadat alle schaling heeft plaatsgevonden. Verscherpen kan helpen de vervaging te compenseren die kan optreden wanneer u een afbeelding met een andere grootte weergeeft. </li>
-     <li>Selecteren<strong> Onscherp masker</strong> als u een verscherpingsfiltereffect wilt perfectioneren op de uiteindelijke gedownsampelde afbeelding. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop.</li>
+     <li>Selecteren<strong> Onscherp masker</strong> als u een verscherpingsfiltereffect wilt perfectioneren op de uiteindelijke gedownsampelde afbeelding. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker in Photoshop.</li>
     </ul> <p>In <strong>Onscherp masker</strong>hebt u de volgende opties:</p>
     <ul>
      <li><strong>Hoeveelheid</strong> - Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde voor het reële getal is 1,0. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot 5,0. Beschouw Hoeveelheid als een maat voor de filterintensiteit.</li>
@@ -492,7 +492,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
 ## Voorinstellingen voor afbeeldingen bewerken {#modifying-image-presets}
 
-1. Tik in Experience Manager op het logo van de Experience Manager om de globale navigatieconsole te openen en tik vervolgens op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan selecteer **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -507,14 +507,14 @@ Als u de modus Dynamic Media - Hybride gebruikt, moet u de voorinstellingen voor
 
 **Voorinstellingen voor afbeeldingen publiceren in Dynamic Media - hybride modus:**
 
-1. Tik of klik in Experience Manager op het logo van de Experience Manager om de algemene navigatieconsole te openen en tik op het pictogram Gereedschappen of klik op dit pictogram om naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Selecteer de afbeeldingsvoorinstelling of meerdere afbeeldingsvoorinstellingen in de lijst met voorinstellingen voor afbeeldingen en klik of tik op **[!UICONTROL Publish]**.
+1. Klik in Experience Manager op het logo van de Experience Manager voor toegang tot de algemene navigatieconsole, klik op het pictogram Gereedschappen en navigeer naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. Selecteer de afbeeldingsvoorinstelling of meerdere afbeeldingsvoorinstellingen in de lijst met voorinstellingen voor afbeeldingen en klik op **[!UICONTROL Publish]**.
 1. Nadat de voorinstelling voor de afbeelding is gepubliceerd, verandert de status van niet-gepubliceerd in gepubliceerd.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Dynamic Media-voorinstellingen voor afbeeldingen verwijderen {#deleting-image-presets}
 
-1. Tik of klik in Experience Manager op het logo van de Experience Manager om de globale navigatieconsole te openen.
-1. Tik op de knop **[!UICONTROL Tools]** pictogram, navigeer vervolgens naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat je het wilt verwijderen. Tikken **[!UICONTROL Delete]** verwijderen of tikken **[!UICONTROL Cancel]** om af te breken.
+1. In Experience Manager, klik het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
+1. Selecteer de **[!UICONTROL Tools]** pictogram, navigeer vervolgens naar **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat je het wilt verwijderen. Selecteren **[!UICONTROL Delete]** verwijderen of selecteren **[!UICONTROL Cancel]** om af te breken.

@@ -11,9 +11,9 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1655'
 ht-degree: 0%
 
 ---
@@ -58,13 +58,13 @@ Component zoeken en labelen op een pagina met rasterlay-out
 
 Het deelvenster Lijst is een gebied waarin uw formulieren worden weergegeven. De component Zoeken en register bevat verschillende configuratieopties waarmee u de weergave van formulieren in het deelvenster Lijst kunt bepalen.
 
-Tik op de component Search and Lister om het deelvenster Lijst te configureren. Tik vervolgens op ![settings_icon](assets/settings_icon.png). De **[!UICONTROL  Edit Component]** wordt geopend.
+Om de ruit van de Lijst te vormen, selecteer de component van het Onderzoek en van de Registratie en selecteer dan ![settings_icon](assets/settings_icon.png). De **[!UICONTROL  Edit Component]** wordt geopend.
 
 ![Het deelvenster Lijst in de bewerkingsmodus](assets/edit-list.png)
 
 Het deelvenster Lijst in de bewerkingsmodus
 
-De **Bewerken** bevat verschillende tabbladen met configuratieopties die in de onderstaande tabel worden beschreven. Tikken **OK** om de configuratie te bewaren, wanneer gedaan.
+De **Bewerken** bevat verschillende tabbladen met configuratieopties die in de onderstaande tabel worden beschreven. Selecteren **OK** om de configuratie te bewaren, wanneer gedaan.
 
 <table>
  <tbody>
@@ -177,7 +177,7 @@ Met de component Datumvoorspelling kunt u zoeken op de weergegeven formulieren d
 
 De component Date Predicate configureren:
 
-1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de component en selecteer vervolgens ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Geef het volgende op:
 
    * **Type:** De enige beschikbare optie is **Datum van laatste wijziging**
@@ -188,7 +188,7 @@ De component Date Predicate configureren:
    * **Label einddatum:** Label of bijschrift voor einddatumveld
    * **Verbergen:** Standaarddatumfilter toepassen op lijstformulieren
 
-1. Tikken **OK**
+1. Selecteren **OK**
 
 #### Voorspelling van volledige tekst {#full-text-predicate}
 
@@ -196,9 +196,9 @@ De component Full Text Predicate implementeert het zoeken naar volledige tekst o
 
 De component Full Text Predicate configureren:
 
-1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de component en selecteer vervolgens ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Geef de titel op in het dialoogvenster **Hoofdtitel** veld.
-1. Tikken **OK**
+1. Selecteren **OK**
 
 #### Predicate eigenschappen {#properties-predicate}
 
@@ -206,15 +206,15 @@ De component Properties Predicate implementeert het zoeken naar formulieren op b
 
 De component Properties Predicate configureren:
 
-1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de component en selecteer vervolgens ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Geef op het tabblad Algemeen het zoeklabel op. De standaardwaarde is **Eigenschappen**
 
-1. Tik op het tabblad Opties op **Item toevoegen.**
+1. Selecteer op het tabblad Opties de optie **Item toevoegen.**
 1. Selecteer een eigenschap in de vervolgkeuzelijst en geef een zoeklabel voor de eigenschap op in het veld onder de vervolgkeuzelijst.
 1. Herhaal stap 4 om meer eigenschappen toe te voegen. U kunt ook een standaardfilterwaarde opgeven om formulieren weer te geven op basis van de opgegeven criteria en de eigenschap verbergen om door eindgebruikers te worden gezocht. Schakel het selectievakje Verbergen voor een eigenschap in en geef de standaardwaarde voor het filter op.
 Als u bijvoorbeeld formulieren met &quot;Reizen&quot; in de titels wilt weergeven, selecteert u Verbergen naast de eigenschap Titel. Geef bovendien het tekstvak Reizen op als standaardfilterwaarde.
 
-1. Tikken **OK**
+1. Selecteren **OK**
 
 #### Voorspelfunctie voor tags {#tags-predicate}
 
@@ -222,10 +222,10 @@ De component Voorspelfunctie voor tags implementeert het zoeken naar formulieren
 
 U configureert als volgt de component Tags voorspellen:
 
-1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
-1. Tik op de pijl-omlaag naast het veld Codes.
+1. Selecteer de component en selecteer vervolgens ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de knop met de pijl omlaag naast het veld Codes.
 1. Selecteer de juiste tags
-1. Tikken **OK**
+1. Selecteren **OK**
 
 De geselecteerde labels worden samen met de selectievakjes voor selectie weergegeven in het deelvenster Zoeken. Gebruikers kunnen hun zoekopdracht nu beperken op basis van de tags.
 

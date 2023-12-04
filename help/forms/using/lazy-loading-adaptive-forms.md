@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -52,8 +52,8 @@ Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebrui
 Voer de volgende stappen uit om het laden van een adaptief formulierfragment in te schakelen:
 
 1. Open het adaptieve formulier in de ontwerpmodus dat het fragment bevat dat u wilt inschakelen voor wazig laden.
-1. Selecteer het adaptieve formulierfragment en tik op ![cmppr](assets/cmppr.png).
-1. Schakel in de zijbalk de optie **[!UICONTROL Load fragment lazily]** en tikken **Gereed**.
+1. Selecteer het adaptieve formulierfragment en selecteer ![cmppr](assets/cmppr.png).
+1. Schakel in de zijbalk de optie **[!UICONTROL Load fragment lazily]** en selecteert u **Gereed**.
 
    ![Lazy loading inschakelen voor het adaptieve formulierfragment](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om het laden van een adaptief formulierfragment in 
 U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren, zodat deze beschikbaar zijn voor gebruik in scripts wanneer het bevattende fragment niet is geladen. Ga als volgt te werk:
 
 1. Open het adaptieve formulierfragment in de ontwerpmodus.
-1. Tik op het veld waarvan u de waarde als globaal wilt markeren en tik vervolgens op ![cmppr](assets/cmppr.png).
+1. Selecteer het veld waarvan u de waarde als globaal wilt markeren en selecteer vervolgens ![cmppr](assets/cmppr.png).
 1. Schakel in de zijbalk de optie **Waarde gebruiken tijdens laden van item**.
 
    ![Lazy loading field in sidebar](assets/enable-lazy-loading.png)

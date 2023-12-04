@@ -4,9 +4,9 @@ description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4588'
+source-wordcount: '4486'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Dit pakket is gemaakt voor **AEM Forms 6.4 OSGI-auteur**, is getest en wordt daa
 
 | AEM VERSIE | AEM FORMS PACKAGE VERSION | STATUS |
 |---|---|---|
-| 6.4 | 5.0.86 | **Ondersteund** |
-| 6.5 | 6.0.80 | **Ondersteund** |
-| 6.5.3 | 6.0.122 | **Ondersteund** |
+| 6,4 | 5,0,86 | **Ondersteund** |
+| 6,5 | 6,0,80 | **Ondersteund** |
+| 6.5.3. | 6,0,122 | **Ondersteund** |
 
 Dit pakket bevat cloudconfiguratie die de volgende platformversies ondersteunt:
 
@@ -79,11 +79,11 @@ Deze sectie bevat informatie over het installeren van het demopakket.
 ### Van softwaredistributie {#from-software-distribution}
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de **[!UICONTROL Filters]** sectie:
    1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
    2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Tik op de knop **we-gov-formulieren.pkg.all-&lt;version>.zip** pakketnaam, selecteren **[!UICONTROL Accept EULA Terms]** en tikken **[!UICONTROL Download]**.
+1. Selecteer de **we-gov-formulieren.pkg.all-&lt;version>.zip** pakketnaam, selecteren **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
@@ -184,7 +184,7 @@ Deze sectie bevat informatie over het configureren van SSL op de AEM om de Adobe
    1. password value of &quot;password&quot;
 1. De persoonlijke sleutel is *localhostprivate.der*.
 1. Het certificaat is *localhost.crt*.
-1. Klik op Next.
+1. Klik op Volgende.
 1. HTTPS Hostname zou moeten worden geplaatst aan *localhost*.
 1. De haven zou aan een haven moeten worden geplaatst die het systeem heeft blootgesteld.
 
@@ -199,7 +199,7 @@ Deze sectie bevat informatie en instructies over de Adobe Sign Cloud Configurati
 #### Cloud-configuratie {#cloud-configuration}
 
 1. Controleer de voorwaarden. Zie [SSL-configuratie AEM](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) voor de vereiste SSL-configuratie.
-1. Ga naar:
+1. Navigeren naar:
 
    *https://&lt;aemserver>:&lt;port>/libs/adobesign/cloudservices/adobesign.html/conf/we-gov*
 
@@ -226,7 +226,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 
 #### MS® Dynamics OData cloudservice {#ms-dynamics-odata-cloud-service}
 
-1. Ga naar:
+1. Navigeren naar:
 
    https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
@@ -289,7 +289,7 @@ De stappen die in dit gedeelte worden beschreven, zijn inbegrepen om u te helpen
 
 Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van het formulier testen.
 
-1. Ga naar
+1. Navigeren naar
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
@@ -448,7 +448,7 @@ AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-config
 >
 AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als de `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
 
-1. Ga naar
+1. Navigeren naar
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
@@ -566,7 +566,7 @@ Nadat de IMS-configuratie is voltooid, kunt u de wolkenconfiguratie in AEM contr
 
 1. URL thema: */content/dam/formsanddocuments-themes/adobe-gov-forms-themes/we-gov-theme*
 
-1. Klik op Next.
+1. Klik op Volgende.
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
@@ -596,7 +596,7 @@ Zodra de configuratie IMS volledig is, kunnen wij te werk gaan om de wolkenconfi
 
 1. URL thema: */content/dam/formsanddocuments-themes/adobe-finance-forms-themes/we-finance-theme*
 
-1. Klik op Next.
+1. Klik op Volgende.
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
@@ -686,7 +686,7 @@ Wanneer u de pagina- en formuliersjablonen bewerkt, kunt u de logo&#39;s van een
 
 Zie Pagina-inhoud bewerken voor meer informatie:
 
-[Paginacontent bewerken](../../sites-authoring/editing-content.md)
+[Pagina-inhoud bewerken](../../sites-authoring/editing-content.md)
 
 ### Aanpassing sitepagina&#39;s {#sites-pages-customization}
 

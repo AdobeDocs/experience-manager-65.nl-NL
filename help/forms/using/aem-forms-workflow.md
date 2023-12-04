@@ -5,9 +5,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3591'
+source-wordcount: '3579'
 ht-degree: 0%
 
 ---
@@ -65,8 +65,8 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
 1. Open de console Workflowmodellen. De standaard-URL is `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Selecteren **Maken** vervolgens **Model maken**. Het dialoogvenster Workflowmodel toevoegen wordt weergegeven.
-1. Voer de **Titel** en **Naam** (optioneel). Bijvoorbeeld een hypotheekaanvraag. Tikken **Gereed**.
-1. Selecteer het nieuwe workflowmodel en tik op **Bewerken**. Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit:
+1. Voer de **Titel** en **Naam** (optioneel). Bijvoorbeeld een hypotheekaanvraag. Selecteren **Gereed**.
+1. Selecteer het nieuwe workflowmodel en selecteer **Bewerken**. Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit:
 
    * De stappen: Start en Einde stroom. Deze stappen vertegenwoordigen het begin en het einde van de workflow. Deze stappen zijn vereist en kunnen niet worden bewerkt of verwijderd.
    * Een stap van de voorbeelddeelnemer genoemd Stap 1. Deze stap wordt gevormd om een het werkpunt aan de admin gebruiker toe te wijzen. Verwijder deze stap.
@@ -79,7 +79,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
 1. Workflowfasen maken. Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het AEM Inbox en de voortgang van de workflow rapporteren.
 
-   Tik op de knop ![info-circle](assets/info-circle.png) om eigenschappen van workflowmodellen te openen, opent u het dialoogvenster **Staven** tabblad, fasen voor het workflowmodel toevoegen en tikken **Opslaan en sluiten**. Voor het voorbeeld van de hypotheektoepassing kunt u fasen maken: aanvraag voor een lening, status van de leningaanvraag, te ondertekenen documenten en ondertekend leningdocument.
+   Als u een werkgebied wilt definiëren, selecteert u de ![info-circle](assets/info-circle.png) om eigenschappen van workflowmodellen te openen, opent u het dialoogvenster **Staven** , voegt fasen toe voor het workflowmodel en selecteert u **Opslaan en sluiten**. Voor het voorbeeld van de hypotheektoepassing kunt u fasen maken: aanvraag voor een lening, status van de leningaanvraag, te ondertekenen documenten en ondertekend leningdocument.
 
 1. Sleep de **Taak toewijzen** stappen browser aan het werkschemamodel. Maak van het de eerste stap van het model.
 
@@ -214,7 +214,7 @@ U kunt een adaptief formulier configureren voor synchronisatie, verzending en ac
 Een beheerder (een lid van de groep van fd-beheerders) kan een netwerkomslag vormen om een pre-gevormde werkschema in werking te stellen wanneer een gebruiker een dossier (zoals een dossier van PDF) in de omslag plaatst. Nadat de workflow is voltooid, kan het resulterende bestand worden opgeslagen in een opgegeven uitvoermap. Een dergelijke map wordt ook wel [Gecontroleerde map](../../forms/using/watched-folder-in-aem-forms.md). Voer de volgende procedure uit om een gecontroleerde omslag te vormen om een werkschema te lanceren:
 
 1. Ga naar de AEM ![gereedschappen-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
-1. Tik op **[!UICONTROL New]**. Er wordt een lijst met velden weergegeven. Geef een waarde op voor de volgende velden om een gecontroleerde map voor een workflow te configureren:
+1. Selecteer **[!UICONTROL New]**. Er wordt een lijst met velden weergegeven. Geef een waarde op voor de volgende velden om een gecontroleerde map voor een workflow te configureren:
 
 <table>
  <tbody>
@@ -245,7 +245,7 @@ Een beheerder (een lid van de groep van fd-beheerders) kan een netwerkomslag vor
  </tbody>
 </table>
 
-1. Tikken **Geavanceerd**. Geef een waarde op voor het volgende veld en tikken **Maken**. De gecontroleerde map is geconfigureerd om een workflow te starten. Wanneer nu een bestand in de invoermap van de Gecontroleerde map wordt geplaatst, wordt de opgegeven workflow geactiveerd.
+1. Selecteren **Geavanceerd**. Geef een waarde op voor het volgende veld en tikken **Maken**. De gecontroleerde map is geconfigureerd om een workflow te starten. Wanneer nu een bestand in de invoermap van de Gecontroleerde map wordt geplaatst, wordt de opgegeven workflow geactiveerd.
 
    | Veld | Beschrijving |
    |---|---|
@@ -321,13 +321,13 @@ Hier volgen de doeleinden (en voorbeelden) van deze eigenschappen:
 
 Een AEM workflowmodel configureren voor externe gegevensopslag:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
 1. Selecteer een modelnaam en selecteer **[!UICONTROL Edit]**.
 
 1. Selecteer het pictogram Pagina-informatie en selecteer **[!UICONTROL Open Properties]**.
 
-1. Selecteer **[!UICONTROL Externalize workflow data storage]**.
+1. Selecteren **[!UICONTROL Externalize workflow data storage]**.
 
 1. Selecteren **[!UICONTROL Save & Close]** om de eigenschappen op te slaan.
 

@@ -4,9 +4,9 @@ description: Leer hoe u de Microsoft&reg gebruikt; Dynamics 365 services via ada
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -37,17 +37,17 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
    `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Schuif omlaag naar de rekenmachine voor de beginmeter.
-1. Markeer het deelvenster van de rechterkolom (rekenmachine) en tik om het pop-upmenu weer te geven. Tik in het pop-upmenu op Configureren. Het dialoogvenster AEM Forms-container bewerken wordt geopend.
+1. Markeer het deelvenster van de rechterkolom (rekenmachine) en selecteer dit om het pop-upmenu weer te geven. Selecteer Configureren in het pop-upmenu. Het dialoogvenster AEM Forms-container bewerken wordt geopend.
 
    ![calculatorConfigurpanel](assets/calculatorconfigurepanel.png)
 
-1. Blader in het dialoogvenster AEM Forms-container bewerken door het middelenpad en selecteer Home-hypotheekcalculator op het volgende pad en tik **Bevestigen**:
+1. Blader in het dialoogvenster AEM Forms-container bewerken door het middelenpad en selecteer de rekenmachine voor de hypotheek op de thuisbasis op het volgende pad en selecteer **Bevestigen**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
    ![selectassetpath](assets/selectassetpath.png)
 
-1. Tikken **Gereed**.
+1. Selecteren **Gereed**.
 1. De bewerkte pagina publiceren.
 
    >[!NOTE]
@@ -60,7 +60,7 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importeer het oplossingspakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Instellingen** > **Oplossingen** en tikt u vervolgens op **Importeren**.
+   1. Importeer het oplossingspakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Instellingen** > **Oplossingen** en selecteer vervolgens **Importeren**.
 
 1. Als u de contactgegevens van de gebruiker wilt instellen die worden gebruikt in de terugzetsite, importeert u het pakket Sarah Rose Contact.CSV naar de instantie Microsoft® Dynamics:
 
@@ -68,4 +68,4 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importeer het pakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Verkoop** > **Contactpersonen** en tikt u vervolgens op **Gegevens importeren**.
+   1. Importeer het pakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Verkoop** > **Contactpersonen** en selecteer vervolgens **Gegevens importeren**.

@@ -1,18 +1,18 @@
 ---
-title: "Lesbestand: formuliergegevensmodel maken"
-description: Leer hoe u MySQL configureert als gegevensbron, een formuliergegevensmodel (FDM) maakt, dit configureert en test voor AEM Forms.
+title: "Zelfstudie: Formuliergegevensmodel maken"
+description: Leer hoe u MySQL als gegevensbron configureert, FDM (form data model) maakt, configureert en test voor AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 1%
+source-wordcount: '1421'
+ht-degree: 0%
 
 ---
 
-# Lesbestand: formuliergegevensmodel maken {#tutorial-create-form-data-model}
+# Zelfstudie: Formuliergegevensmodel maken {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
@@ -51,58 +51,58 @@ U kunt verschillende typen gegevensbronnen configureren om een formuliergegevens
 
 Doe het volgende uw vormen [!DNL MySQL] database:
 
-1. Installeer het JDBC-stuurprogramma voor [!DNL MySQL] database als een OSGi-bundel:
+1. JDBC-stuurprogramma installeren voor [!DNL MySQL] database als een OSGi-bundel:
 
-   1. Download [!DNL MySQL] JDBC Driver OSGi Bundle van `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
-   1. Aanmelden bij AEM [!DNL Forms] Instantie van auteur als beheerder en ga naar AEM bundels van de Webconsole. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Downloaden [!DNL MySQL] JDBC Driver OSGi Bundle van `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. Meld u aan bij AEM [!DNL Forms] Author Instance als beheerder en ga naar bundels met AEM-webconsoles. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-   1. Tik op **[!UICONTROL Install/Update]**. An [!UICONTROL Upload / Install Bundles] wordt weergegeven.
+   1. Selecteer **[!UICONTROL Install/Update]**. Er wordt een [!UICONTROL Upload / Install Bundles] dialoogvenster weergegeven.
 
-   1. Tikken **[!UICONTROL Choose File]** om te bladeren en selecteren [!DNL MySQL] JDBC-stuurprogramma OSGi-bundel. Selecteren **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** en tikken **[!UICONTROL Install or Update]**. Controleer of het [!DNL Oracle Corporation's] JDBC-stuurprogramma voor [!DNL MySQL] actief is. Het stuurprogramma is geïnstalleerd.
+   1. Selecteren **[!UICONTROL Choose File]** om te bladeren en selecteren [!DNL MySQL] JDBC-stuurprogramma OSGi-bundel. Selecteren **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** en selecteert u **[!UICONTROL Install or Update]**. Zorg ervoor dat de [!DNL Oracle Corporation's] JDBC-stuurprogramma voor [!DNL MySQL] is actief. Het stuurprogramma is geïnstalleerd.
 
-1. Database configureren [!DNL MySQL] als een gegevensbron:
+1. Configureren [!DNL MySQL] database als gegevensbron:
 
-   1. Ga naar de AEM-webconsole op [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Zoek naar **een configuratie voor gegroepeerde gegevensbron** voor Apache Sling Connection. Tik om de configuratie in de bewerkingsmodus te openen.
+   1. Ga naar AEM webconsole op [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Zoeken **Apache Sling Connection Pooled DataSource** configuratie. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
       * **Naam gegevensbron:** U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **WeRetailMySQL**.
       * **Eigenschapnaam van DataSource-service**: Geef een naam op van de eigenschap service die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld: **datasource.name**.
-      * **JDBC-stuurprogrammaklasse**: Geef de Java™-klassenaam van het JDBC-stuurprogramma op. Voor [!DNL MySQL] database, specificeren **com.mysql.jdbc.Driver**.
-      * **URI** van JDBC-verbinding: geef de verbindings-URL van de database op. Voor [!DNL MySQL] database die op poort 3306 en schema `weretail`wordt uitgevoerd, is de URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC-stuurprogrammaklasse**: Geef de Java™-klassenaam van het JDBC-stuurprogramma op. Geef [!DNL MySQL] **voor database com.mysql.jdbc.Driver op**.
+      * **URI voor JDBC-verbinding**: Geef de verbindings-URL van de database op. Voor [!DNL MySQL] database die wordt uitgevoerd op poort 3306 en schema `weretail`, is de URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Wanneer de [!DNL MySQL] database zich achter een firewall bevindt, is de databasehostname geen openbare DNS. Het IP-adres van de database moet worden toegevoegd aan het */etc/hosts-bestand* van de AEM-hostcomputer.
+      > Wanneer de [!DNL MySQL] database bevindt zich achter een firewall, maar de hostnaam van de database is geen openbare DNS. Het IP-adres van de database moet worden toegevoegd aan het */etc/hosts-bestand* van de AEM-hostcomputer.
 
-      * **Gebruikersnaam:** Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
+      * **Gebruikersnaam:** Gebruikersnaam van de database. U moet het JDBC-stuurprogramma inschakelen om een verbinding met de database tot stand te brengen.
       * **Wachtwoord:** Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
 
       >[!NOTE]
       >
-      >AEM Forms ondersteunt geen NT-verificatie voor [!DNL MySQL]. Ga naar de AEM-webconsole in [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek &quot;Apache Sling Connection Pooled Datasource&quot;. Stel voor de eigenschap &quot;JDBC connection URI&quot; de waarde van &quot;integratedSecurity&quot; in op False en gebruik gemaakte gebruikersnaam en wachtwoord om verbinding te maken met [!DNL MySQL] de database.
+      >AEM Forms ondersteunt geen NT-verificatie voor [!DNL MySQL]. Ga naar AEM webconsole op [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek &quot;Apache Sling Connection Pooled Datasource&quot;. Voor de eigenschap &quot;JDBC connection URI&quot; stelt u de waarde van &quot;IntegratedSecurity&quot; in op False en gebruikt u de gemaakte gebruikersnaam en het wachtwoord voor verbinding met [!DNL MySQL] database.
 
-      * **Test op Uitlenen:** Schakel de **[!UICONTROL Test on Borrow]** optie in.
-      * **Test bij terugkeer:** Schakel de **[!UICONTROL Test on Return]** optie in.
+      * **Testen op lenen:** De optie **[!UICONTROL Test on Borrow]** -optie.
+      * **Testen op rendement:** De optie **[!UICONTROL Test on Return]** -optie.
       * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld: **selecteren &#42; van klantgegevens**.
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
 
-        Andere eigenschappen standaard laten staan [waarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en tikken **[!UICONTROL Save]**.
+        Andere eigenschappen standaard laten staan [waarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en selecteert u **[!UICONTROL Save]**.
 
         Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
 
         ![relationele database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
-## Stap 2: Een formuliergegevensmodel maken {#create-fdm}
+## Stap 2: Formuliergegevensmodel maken {#create-fdm}
 
-AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface voor [een formuliergegevensmodel maken](data-integration.md) van gevormde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor dit gebruiksgeval, kunt u gevormde gebruiken [!DNL MySQL] gegevensbron.
+AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface om een formuliergegevensmodel](data-integration.md) te [maken op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen in een formuliergegevensmodel gebruiken. In dit geval kunt u de geconfigureerde [!DNL MySQL] gegevensbron gebruiken.
 
-Ga als volgt te werk om het formuliergegevensmodel te maken:
+Ga als volgt te werk om een formuliergegevensmodel te maken:
 
 1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
-1. Tik op **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
-1. Geef in het dialoogvenster Formuliergegevensmodel maken een **name** voor het formuliergegevensmodel. Bijvoorbeeld: **klant-verzendkosten-factureringsgegevens**. Tik op **[!UICONTROL Next]**.
-1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteren **WeRetailMySQL** gegevensbron en tik **[!UICONTROL Create]**.
+1. Selecteren **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
+1. Geef in het dialoogvenster Formuliergegevensmodel maken een **name** voor het formuliergegevensmodel. Bijvoorbeeld: **klant-verzendkosten-factureringsgegevens**. Selecteren **[!UICONTROL Next]**.
+1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteren **WeRetailMySQL** gegevensbron en selecteer **[!UICONTROL Create]**.
 
    ![gegevensbron-selectie](assets/data-source-selection.png)
 
@@ -131,16 +131,16 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
       * id
       * name
       * ShippingAddress
-      * Stad
-      * Staat
-      * postcode
+      * stad
+      * state
+      * Postcode
 
-   * **Services:**
+   * **Diensten:**
 
-      * get
-      * update
+      * Toevoegen
+      * Update
 
-   Tikken **Geselecteerde toevoegen** Hiermee voegt u geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
+   Selecteren **Geselecteerde toevoegen** Hiermee voegt u geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
 
    ![WeRetail-schema](assets/weretail_schema_new.png)
 
@@ -150,8 +150,8 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
 1. Configureer lees- en schrijfservices voor het gegevensmodelobject.
 
-   1. Selecteer de **klantgegevens** gegevensmodelobject en tik **[!UICONTROL Edit Properties]**.
-   1. Selecteren **[!UICONTROL get]** in de vervolgkeuzelijst Leesservice. De **id** argument, de primaire sleutel in het gegevensmodelobject van de klant is, wordt automatisch toegevoegd. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) en configureer het argument als volgt.
+   1. Selecteer de **klantgegevens** gegevensmodelobject en selecteer **[!UICONTROL Edit Properties]**.
+   1. Selecteren **[!UICONTROL get]** in de vervolgkeuzelijst Leesservice. De **id** argument, de primaire sleutel in het gegevensmodelobject van de klant is, wordt automatisch toegevoegd. Selecteren ![aem_6_3_edit](assets/aem_6_3_edit.png) en configureer het argument als volgt.
 
       ![standaard lezen](assets/read-default.png)
 
@@ -159,22 +159,22 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
       ![standaard schrijven](assets/write-default.png)
 
-      Voeg het id-argument **toe en configureer het** als volgt.
+      Voeg en vorm toe **id** als volgt.
 
       ![id-arg](assets/id-arg.png)
 
-   1. Tik **[!UICONTROL Done]** om de eigenschappen van het gegevensmodelobject op te slaan. Tik vervolgens op **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
+   1. Selecteren **[!UICONTROL Done]** om de eigenschappen van het gegevensmodel op te slaan. Selecteer **[!UICONTROL Save]** vervolgens om het formuliergegevensmodel op te slaan.
 
-      De **[!UICONTROL get]** en **[!UICONTROL update]** de diensten worden toegevoegd als standaarddiensten voor het voorwerp van het gegevensmodel.
+      De **[!UICONTROL get]** en **[!UICONTROL update]** services worden toegevoegd als standaardservices voor het gegevensmodelobject.
 
       ![data-model-object](assets/data-model-object.png)
 
 1. Ga naar de **[!UICONTROL Services]** tab en configure **[!UICONTROL get]** en **[!UICONTROL update]** diensten.
 
-   1. Selecteer de **[!UICONTROL get]** service en tikken **[!UICONTROL Edit Properties]**. Het dialoogvenster Eigenschappen wordt geopend.
-   1. Geef in het dialoogvenster Eigenschappen bewerken het volgende op:
+   1. Selecteer de **[!UICONTROL get]** service en selecteer **[!UICONTROL Edit Properties]**. Het dialoogvenster Eigenschappen wordt geopend.
+   1. Geef het volgende op in het dialoogvenster Eigenschappen bewerken:
 
-      * **Titel**: geef de titel van de service op. Bijvoorbeeld Verzendadres ophalen.
+      * **Titel**: Geef de titel van de service op. Bijvoorbeeld: Verzendadres ophalen.
       * **Beschrijving**: Geef een beschrijving op met een gedetailleerde werking van de service. Bijvoorbeeld:
 
         Met deze service haalt u het verzendadres en andere klantgegevens op van de [!DNL MySQL] database
@@ -184,13 +184,13 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
         klantdetailschema
 
       * **Retourarray**: Schakel het dialoogvenster **Retourarray** -optie.
-      * **Argumenten**: Benoemd argument selecteren **ID**.
+      * **Argumenten**: selecteer het argument id ****.
 
-      Tik op **[!UICONTROL Done]**. De dienst om klantendetails van het gegevensbestand terug te winnen MySQL wordt gevormd.
+      Selecteer **[!UICONTROL Done]**. De service voor het ophalen van klantgegevens uit de MySQL-database is geconfigureerd.
 
       ![verzendadres-herwinning](assets/shiiping-address-retrieval.png)
 
-   1. Selecteer de **[!UICONTROL update]** service en tikken **[!UICONTROL Edit Properties]**. Het dialoogvenster Eigenschappen wordt geopend.
+   1. Selecteer de **[!UICONTROL update]** service en selecteer **[!UICONTROL Edit Properties]**. Het dialoogvenster Eigenschappen wordt geopend.
 
    1. Geef het volgende op in het dialoogvenster [!UICONTROL Edit Properties] dialoogvenster:
 
@@ -207,7 +207,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
       * **Argumenten**: Selecteer argumentnaam **ID** en **klantgegevens**.
 
-      Tik op **[!UICONTROL Done]**. De **[!UICONTROL update]** service voor het bijwerken van klantgegevens in de [!DNL MySQL] database is geconfigureerd.
+      Selecteer **[!UICONTROL Done]**. De **[!UICONTROL update]** service voor het bijwerken van klantgegevens in de [!DNL MySQL] database is geconfigureerd.
 
       ![send-address-update](assets/shiiping-address-update.png)
 
@@ -219,9 +219,9 @@ U kunt het gegevensmodelobject en de services testen om te controleren of het fo
 
 Voer de volgende handelingen uit om de test uit te voeren:
 
-1. Ga naar de **[!UICONTROL Model]** selecteert u de **klantgegevens** gegevensmodelobject en tik **[!UICONTROL Test Model Object]**.
+1. Ga naar de **[!UICONTROL Model]** selecteert u de **klantgegevens** gegevensmodelobject en selecteer **[!UICONTROL Test Model Object]**.
 1. In de [!UICONTROL Test Model/Service] venster, selecteert u **[!UICONTROL Read model object]** van de **[!UICONTROL Select Model/Service]** vervolgkeuzelijst.
-1. In de **klantgegevens** -sectie, geeft u een waarde op voor de **id** argument dat in gevormd bestaat [!DNL MySQL] database en tik **[!UICONTROL Test]**.
+1. In de **klantgegevens** -sectie, geeft u een waarde op voor de **id** argument dat in gevormd bestaat [!DNL MySQL] database en selecteer **[!UICONTROL Test]**.
 
    De klantdetails verbonden aan gespecificeerde identiteitskaart worden gehaald en in getoond **[!UICONTROL Output]** zoals hieronder weergegeven.
 

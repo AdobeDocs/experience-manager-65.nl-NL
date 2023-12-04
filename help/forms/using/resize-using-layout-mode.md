@@ -3,9 +3,9 @@ title: Gebruik de modus Indeling om het formaat van componenten voor adaptieve f
 description: De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Selecteren **Layout** in de vervolgkeuzelijst die boven aan de aangepaste ontwer
 
 ## Formaat van componenten wijzigen {#resize-components}
 
-1. Tik in de modus Lay-out op de component om de grootte te wijzigen. De blauwe stippen worden weergegeven aan het begin en einde van het responsieve raster.
+1. Selecteer in de modus Lay-out de component waarvan u het formaat wilt wijzigen. De blauwe stippen worden weergegeven aan het begin en einde van het responsieve raster.
 1. Sleep de blauwe stippen om de positie van de component in het responsieve raster te definiëren.
 
    ![Vergroten/verkleinen met de modus Lay-out](assets/layout_mode_resize_new_updated1.png)
@@ -58,7 +58,7 @@ Selecteren **Layout** in de vervolgkeuzelijst die boven aan de aangepaste ontwer
 **Doel:** U wilt een tabelcomponent en een afbeeldingscomponent invoegen en deze parallel aan elkaar plaatsen in een adaptieve vorm.
 
 1. Voeg de tabel- en afbeeldingscomponenten in met de modus Bewerken in het adaptieve formulier. De component image wordt weergegeven na de tabelcomponent.
-1. Schakel over naar de modus Lay-out en tik op de component Tabel. De blauwe stippen om het formaat van de componentweergave te wijzigen in kolom 1 en 12.
+1. Schakel over naar de modus Lay-out en selecteer de component Tabel. De blauwe stippen om het formaat van de componentweergave te wijzigen in kolom 1 en 12.
 1. Sleep de blauwe stip in kolom 12 naar kolom 6 van het responsieve raster en zet deze neer.
 
    ![Het eindpunt van de tabel definiëren](assets/layout_mode_end_point_table_new.png)
@@ -67,13 +67,13 @@ Selecteren **Layout** in de vervolgkeuzelijst die boven aan de aangepaste ontwer
 
    ![Tabel en afbeelding parallel in de modus Lay-out](assets/table_image_parallel_new.png)
 
-   U kunt de component Image selecteren en op de knop **Zweven naar nieuwe regel** beschikbaar in de werkbalk om de component Afbeelding naar de volgende regel te verplaatsen.
+   U kunt de component Image selecteren en **Zweven naar nieuwe regel** beschikbaar in de werkbalk om de component Afbeelding naar de volgende regel te verplaatsen.
 
 ## Deelvensters vergroten/verkleinen {#resize-panels-layout-mode}
 
 Voer de volgende stappen uit als u het formaat van het hele deelvenster wilt wijzigen in plaats van de afzonderlijke componenten:
 
-1. Tik op de componenten in het deelvenster waarvan u het formaat wilt wijzigen en selecteer ![Bovenliggend element selecteren](assets/select_parent_icon.svg)en selecteert u de eerste optie in de vervolgkeuzelijst als het deelvenster het directe bovenliggende element van de component is.
+1. Selecteer de componenten in het deelvenster waarvan u het formaat wilt wijzigen. Selecteer ![Bovenliggend element selecteren](assets/select_parent_icon.svg)en selecteert u de eerste optie in de vervolgkeuzelijst als het deelvenster het directe bovenliggende element van de component is.
 
    De blauwe stippen worden weergegeven aan het begin en einde van het responsieve raster.
 
@@ -84,13 +84,13 @@ U kunt de stappen 1 en 2 herhalen en ![Bovenliggend element selecteren](assets/f
 
 Voer de volgende stappen uit om het aantal kolommen voor een deelvenster te definiëren:
 
-1. In **[!UICONTROL Edit]** tikken op het deelvenster, selecteren ![Configureren](assets/configure_icon.png)en selecteert u **[!UICONTROL Responsive - everything on the page without navigation]** van de **[!UICONTROL Panel Layout]** vervolgkeuzelijst.
+1. In **[!UICONTROL Edit]** , selecteert u het deelvenster en selecteert u ![Configureren](assets/configure_icon.png)en selecteert u **[!UICONTROL Responsive - everything on the page without navigation]** van de **[!UICONTROL Panel Layout]** vervolgkeuzelijst.
 
-1. Tikken ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Selecteren ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
 
-1. In de **[!UICONTROL Layout]** , tikt u op een van de componenten in het deelvenster en selecteert u ![Bovenliggend element selecteren](assets/select_parent_icon.svg)en selecteert u het deelvenster.
+1. In de **[!UICONTROL Layout]** , selecteert u een van de componenten in het deelvenster en selecteert u ![Bovenliggend element selecteren](assets/select_parent_icon.svg)en selecteert u het deelvenster.
 
-1. Tikken ![meerdere kolommen](assets/multi-column.svg) en selecteert u het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan variëren van 1 tot 12. Het deelvenster wordt verdeeld in een lay-out met meerdere kolommen.
+1. Selecteren ![meerdere kolommen](assets/multi-column.svg) en selecteert u het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan variëren van 1 tot 12. Het deelvenster wordt verdeeld in een lay-out met meerdere kolommen.
 
 ![meerdere kolommen in de lay-outmodus](assets/multi-column-layout.png)
 
@@ -105,7 +105,7 @@ Schakel het nieuwe responsieve raster in voor formulieren die u maakt met AEM Fo
 Voer de volgende stappen uit om het nieuwe responsieve raster in te schakelen:
 
 1. Selecteren **Layout** in de vervolgkeuzelijst die boven aan het dialoogvenster **Voorvertoning** -optie. Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
-1. Tikken **Ja** de **Layout** voor het formulier.
+1. Selecteren **Ja** de **Layout** voor het formulier.
 
 ### Een oud fragment insluiten in een adaptief formulier met nieuwe responsieve indeling {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -115,7 +115,7 @@ Met de nieuwe responsieve indeling voor het adaptieve formulier kunt u een adapt
 
 Als u een fragment met de nieuwe responsieve indeling insluit in een adaptief formulier met een oude responsieve indeling, wordt u gevraagd de modus Indeling in te schakelen voor het formulier en het fragment opnieuw in te sluiten.
 
-Selecteer **Layout** in de vervolgkeuzelijst die boven aan het dialoogvenster **Voorvertoning** tikken **Ja** ter bevestiging. Selecteren **Bewerken** om het fragment opnieuw in te sluiten.
+Selecteer **Layout** in de vervolgkeuzelijst die boven aan het dialoogvenster **Voorvertoning** en selecteert u **Ja** ter bevestiging. Selecteren **Bewerken** om het fragment opnieuw in te sluiten.
 
 ## Lay-outmodus uitschakelen voor formulieren met oude responsieve indeling {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -124,9 +124,9 @@ U kunt de modus Indeling uitschakelen voor formulieren met een oude responsieve 
 Voer de volgende stappen uit om de modus Lay-out uit te schakelen:
 
 1. Selecteren **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** en opent u de sjabloon die in het formulier wordt gebruikt **[!UICONTROL Edit]** -modus.
-1. Selecteer de documentcontainer in het linkervenster en tik op **[!UICONTROL Policy.]**
+1. Selecteer de Documentcontainer in het linkerdeelvenster en selecteer **[!UICONTROL Policy.]**
 
    ![Lay-outmodus uitschakelen](assets/policy_disable_layout_mode.png)
 
-1. Tik op de knop **[!UICONTROL Layout Settings]** en selecteert u **[!UICONTROL Disable Layout Mode]**.
-1. Tikken ![Wijzigingen opslaan](assets/save_icon.png) de sjablooneigenschappen opslaan.
+1. Selecteer de **[!UICONTROL Layout Settings]** en selecteert u **[!UICONTROL Disable Layout Mode]**.
+1. Selecteren ![Wijzigingen opslaan](assets/save_icon.png) de sjablooneigenschappen opslaan.

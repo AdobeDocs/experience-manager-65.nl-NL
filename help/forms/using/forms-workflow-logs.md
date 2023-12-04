@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -80,13 +80,13 @@ Ga als volgt te werk, zodat u foutopsporingslogbestanden kunt inschakelen voor A
 
    https://&#39;[server]:[poort]&#39;/system/console/configMgr
 
-1. Selecteer **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
-1. Tik op **[!UICONTROL Add new Logger.]**
+1. Selecteren **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
+1. Selecteren **[!UICONTROL Add new Logger.]**
 1. Selecteren **[!UICONTROL Debug]** als de **[!UICONTROL Log Level]**.
 1. Geef de locatie van het logbestand op. De standaardlocatie voor het logbestand is: *logs\error.log*
 1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de **[!UICONTROL Logger]** kolom.
 
-   Als u deze stappen uitvoert, worden de logbestanden voor foutopsporing opgeslagen voor de **com.adobe.granite.workflow.core** pakket. Tikken **[!UICONTROL +]** en voeg de volgende pakketnamen aan de lijst toe:
+   Als u deze stappen uitvoert, worden de logbestanden voor foutopsporing opgeslagen voor de **com.adobe.granite.workflow.core** pakket. Selecteren **[!UICONTROL +]** en voeg de volgende pakketnamen aan de lijst toe:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

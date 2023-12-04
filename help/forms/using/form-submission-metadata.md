@@ -10,9 +10,9 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,8 @@ Een ander voorbeeld van een formulier waarin e-mailadres en telefoonnummer worde
 Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
 
 1. Open het adaptieve formulier in de bewerkingsmodus.\
-   Als u het formulier wilt openen in de bewerkingsmodus, selecteert u het formulier in het formulierbeheer en tikt u op **Openen**.
-1. Selecteer in de bewerkingsmodus een component en tik op ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+   Als u het formulier wilt openen in de bewerkingsmodus, selecteert u in het formulierbeheer het gewenste formulier en selecteert u **Openen**.
+1. Selecteer in de bewerkingsmodus een component en selecteer ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en selecteer vervolgens ![cmppr](assets/cmppr.png).
 1. Klik in de zijbalk op **Metagegevens**.
 1. Klik in het gedeelte Metagegevens op **Toevoegen**.
 1. Voeg scripts toe in het veld Waarde van het tabblad Metagegevens. Met de scripts die u toevoegt, worden gegevens verzameld uit elementen op het formulier en worden waarden berekend die worden doorgegeven aan de metagegevens.

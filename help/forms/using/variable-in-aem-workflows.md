@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -56,8 +56,8 @@ U hebt [AEM Forms-invoegtoepassing](https://helpx.adobe.com/aem-forms/kb/aem-for
 Voer de volgende stappen uit om een variabele te maken:
 
 1. Navigeer in een AEM naar Gereedschappen ![Gereedschappen](/help/forms/using/assets/hammer.png) > Workflow > Modellen.
-1. Tikken **[!UICONTROL Create]** en geeft u de titel en een optionele naam voor het workflowmodel op. Selecteer het model en tik op **[!UICONTROL Edit]**.
-1. Tik op het pictogram Variabelen dat beschikbaar is in de assistent van het workflowmodel en tik op **[!UICONTROL Add Variable]**.
+1. Selecteren **[!UICONTROL Create]** en geeft u de titel en een optionele naam voor het workflowmodel op. Selecteer het model en selecteer **[!UICONTROL Edit]**.
+1. Selecteer het pictogram Variabelen dat beschikbaar is in de assistent van het workflowmodel en selecteer **[!UICONTROL Add Variable]**.
 
    ![Variabele toevoegen](assets/variables_add_variable_new.png)
 
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om een variabele te maken:
    * Formuliergegevensmodel - Geef een formuliergegevensmodelpad op.
    * ArrayList - Geef een subtype op voor de verzameling.
 
-1. Geef een optionele beschrijving op voor de variabele en tik op ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
+1. Geef een optionele beschrijving voor de variabele op en selecteer ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
 
 Houd rekening met de volgende werkwijzen wanneer u variabelen maakt:
 
@@ -102,11 +102,11 @@ U kunt ook specifieke elementen van een variabele van het type JSON of XML bijwe
 
 Voer de volgende stappen uit om toewijzingen tussen variabelen toe te voegen:
 
-1. Tik op de pagina voor workflowbewerking op het pictogram Stappen dat beschikbaar is in de assistent van het workflowmodel.
-1. Sleep de **Variabele instellen** stap naar de werkstroomeditor, tik op de stap en selecteer ![configure_icon](assets/configure_icon.png) (Configureren).
+1. Selecteer op de pagina voor workflowbewerking het pictogram Stappen dat beschikbaar is in de assistent van het workflowmodel.
+1. Sleep de **Variabele instellen** stap naar de werkstroomeditor, selecteer de stap en selecteer ![configure_icon](assets/configure_icon.png) (Configureren).
 1. Selecteer in het dialoogvenster Variabele instellen de optie **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. In de **Kaartvariabele** selecteert u de variabele die u wilt opslaan, selecteert u de toewijzingsmodus en geeft u een waarde op die u in de variabele wilt opslaan. De toewijzingsmodi variëren op basis van het type variabele.
-1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Tikken ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan
+1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Selecteren ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan
 
 ### Voorbeeld 1: Vraag een XML-variabele naar een waarde voor een tekenreeksvariabele {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -175,7 +175,7 @@ In dit voorbeeld, alvorens de verpletterende uitdrukking te bepalen, gebruik [vo
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Op dezelfde manier selecteer een externe manuscriptweg of specificeer het manuscript ECMA voor het verpletteren van uitdrukkingen om de actieve tak te evalueren. Tikken **[!UICONTROL Rename Branch]** een alternatieve naam voor de vertakking opgeven.
+Op dezelfde manier selecteer een externe manuscriptweg of specificeer het manuscript ECMA voor het verpletteren van uitdrukkingen om de actieve tak te evalueren. Selecteren **[!UICONTROL Rename Branch]** een alternatieve naam voor de vertakking opgeven.
 
 Zie voor meer voorbeelden [Een workflowmodel maken](../../forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -287,9 +287,9 @@ Gegevens die met Forms Workflow worden verwerkt, kunnen gevoelige gebruikersgege
 
 ## Een variabele bewerken {#edit-a-variable}
 
-1. Tik op de pagina voor de bewerkingsworkflow op het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
-1. Tik op de knop ![bewerken](assets/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
-1. Bewerk de variabelegegevens en tik op ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan U kunt de **[!UICONTROL Name]** en **[!UICONTROL Type]** velden voor een variabele.
+1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
+1. Selecteer de ![bewerken](assets/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
+1. Bewerk de variabelegegevens en selecteer ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan U kunt de **[!UICONTROL Name]** en **[!UICONTROL Type]** velden voor een variabele.
 
 ## Een variabele verwijderen {#delete-a-variable}
 
@@ -297,9 +297,9 @@ Voordat u de variabele verwijdert, verwijdert u alle referenties van de variabel
 
 Voer de volgende stappen uit om een variabele te verwijderen:
 
-1. Tik op de pagina voor de bewerkingsworkflow op het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
-1. Tik op het pictogram Verwijderen naast de naam van de variabele die u wilt verwijderen.
-1. Tikken ![done_icon](assets/done_icon.png) om de variabele te bevestigen en te schrappen.
+1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
+1. Selecteer het pictogram Verwijderen naast de naam van de variabele die u wilt verwijderen.
+1. Selecteren ![done_icon](assets/done_icon.png) om de variabele te bevestigen en te schrappen.
 
 ## Verwijzingen {#references}
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -30,8 +30,8 @@ Ga als volgt te werk om een aangepaste indeling toe te passen op een veld:
 
 ### Lay-out van één veld aanpassen {#customize-layout-of-a-single-field}
 
-1. Open het formulier in **Stijl** -modus. Als u het formulier in de stijlmodus wilt openen, tikt u op de paginaboolbalk ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
-1. In de zijbalk, onder **Formulierobjecten**, selecteert u het veld en tikt u op de knop Bewerken ![bewerken, knop](assets/edit-button.png).
+1. Open het formulier in **Stijl** -modus. Als u het formulier in de stijlmodus wilt openen, selecteert u op de paginaboolbalk de optie ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
+1. In de zijbalk, onder **Formulierobjecten**, selecteert u het veld en selecteert u de knop Bewerken ![bewerken, knop](assets/edit-button.png).
 1. Selecteer de status van het veld dat u wilt aanpassen en geef de opmaak voor die status op.
 
    ![Inline opmaak van een veld opgeven](assets/edit-error-state.png)
@@ -43,7 +43,7 @@ Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de
 Maak een thema met de Thema-editor om de indeling van alle velden in het formulier aan te passen. Nadat u een thema hebt gemaakt, voert u de volgende stappen uit om het op een formulier toe te passen:
 
 1. Open het formulier in de bewerkingsmodus.
-1. Selecteer in de bewerkingsmodus een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+1. Selecteer in de bewerkingsmodus een component en selecteer vervolgens ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en selecteer vervolgens ![cmppr](assets/cmppr.png).
 1. Selecteer in het zijpaneel onder Adaptief formulierthema het thema dat u hebt gemaakt met de Thema-editor.
 
 ## Een aangepaste veldindeling maken {#create-a-custom-field-layout}

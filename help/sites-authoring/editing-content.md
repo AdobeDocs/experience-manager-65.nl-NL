@@ -7,14 +7,14 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 3%
+source-wordcount: '3015'
+ht-degree: 2%
 
 ---
 
-# Paginacontent bewerken{#editing-page-content}
+# Pagina-inhoud bewerken{#editing-page-content}
 
 Nadat de pagina is gemaakt (nieuw of als onderdeel van een opstart of live kopie), kunt u de inhoud bewerken om de gewenste updates uit te voeren.
 
@@ -368,7 +368,7 @@ Bijvoorbeeld de **Tekst** component:
 
 Een alinea-component verplaatsen:
 
-1. Selecteer de alinea die u wilt verplaatsen met Tikken en vasthouden of klikken en vasthouden.
+1. Selecteer de alinea die u wilt verplaatsen met de optie voor selecteren en vasthouden of met klikken en vasthouden.
 1. Sleep de alinea naar de nieuwe locatie. AEM geeft aan waar de alinea kan worden geplaatst. Zet het neer op de gewenste plaats.
 
    ![alinea-component verplaatsen](assets/screen_shot_2018-03-22at121821.png)
@@ -387,7 +387,7 @@ In plaats van herhaaldelijk over te schakelen van bewerken naar [lay-outmodus](/
 
    ![Bewerkmodus in formulier](assets/screen_shot_2018-03-22at133756.png)
 
-   Klik of tik op **Layout** handeling zodat u de indeling van de component kunt aanpassen.
+   Klik op de knop **Layout** handeling zodat u de indeling van de component kunt aanpassen.
 
    ![Component, werkbalk](do-not-localize/chlimage_1-21.png)
 

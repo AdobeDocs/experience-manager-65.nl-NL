@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2283'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -127,7 +127,7 @@ Zie ook [Elementen voorvertonen met de software-interface](/help/assets/previewi
    | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | Ga in- en uit gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
-   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
+   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbelselecteren. |
    | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
    | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u in de rechterbenedenhoek van de pagina het pictogram Volledig scherm. |   |   |
 
@@ -160,7 +160,7 @@ Een volledig interactief 3D-element zoals weergegeven in **[!UICONTROL Preview]*
    | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | Ga in- en uit gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
-   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
+   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbelselecteren. |
    | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
    | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u in de rechterbenedenhoek van de pagina het pictogram Volledig scherm. |   |   |
 
@@ -175,12 +175,12 @@ Dynamic Media bevat een Dynamic Media 3D Media-component die u in Adobe Experien
 
 ## De 3D-mediacomponent toevoegen aan de paginasjabloon {#adding-three-d-media-component-to-page-template}
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]**.
 1. Navigeer naar de paginasjabloon waarin u de 3D-component wilt inschakelen en selecteer de sjabloon.
 1. Selecteren **[!UICONTROL Edit]** zodat u de sjabloon kunt openen.
 1. Selecteer in de rechterbovenhoek van de pagina in het keuzemenu de optie **[!UICONTROL Structure]** als deze nog niet actief is.
 
-   ![3d-media-component-structure](/help/assets/assets-dm/3d-media-component-structure.png)
+   ![3d-media-component-structuur](/help/assets/assets-dm/3d-media-component-structure.png)
 
 1. Een leeg gebied selecteren in het dialoogvenster **[!UICONTROL Layout Container]** gebied zodat selecteert u het en opent u de bijbehorende werkbalk.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Policy]** pictogram om het **[!UICONTROL Policy Editor]**.
@@ -206,7 +206,7 @@ Zie ook [Dynamic Media-elementen toevoegen op pagina&#39;s](/help/assets/adding-
 
 1. Selecteer in het zijpaneel het pictogram met het plusteken om het dialoogvenster **[!UICONTROL Components]** lijst.
 
-   ![3d-media-component-drag-drop](/help/assets/assets-dm/3d-assets-filter.png)
+   ![3d-media-component-slepen-neerzetten](/help/assets/assets-dm/3d-assets-filter.png)
 
 1. Sleep de **[!UICONTROL 3D Media]** uit de **[!UICONTROL Components]** Hiermee geeft u een lijst weer naar de locatie op de pagina waar u de 3D-viewer wilt weergeven.
 

@@ -8,9 +8,9 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ Elke klant krijgt een uniek klant-id-nummer toegewezen, waarmee relevante klantg
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Tik op de knop **[!UICONTROL Customer ID]** en tik op **[!UICONTROL Edit Rules]** pictogram. Het venster van de Redacteur van de Regel opent.
-1. Tik op de knop **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
+1. Selecteer de **[!UICONTROL Customer ID]** en selecteer de **[!UICONTROL Edit Rules]** pictogram. Het venster van de Redacteur van de Regel opent.
+1. Selecteer de **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
 
    In de Visuele Redacteur, **[!UICONTROL WHEN]** is standaard geselecteerd. Ook het formulierobject (in dit geval, **[!UICONTROL Customer ID]**) vanaf waar u de regeleditor hebt gestart, opgegeven in het dialoogvenster **[!UICONTROL WHEN]** instructie.
 
-1. Tik op de knop **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is changed]**.
+1. Selecteer de **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is changed]**.
 
    ![onaangenaam](assets/whencustomeridischanged.png)
 
@@ -64,7 +64,7 @@ Elke klant krijgt een uniek klant-id-nummer toegewezen, waarmee relevante klantg
 
    ![dropobjectstooutputfield-retrieve data](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Tikken **[!UICONTROL Done]** om de regel op te slaan. Tik in het regeleditorvenster op **[!UICONTROL Close]**.
+   Selecteren **[!UICONTROL Done]** om de regel op te slaan. Voor het venster van de regeleditor selecteert u **[!UICONTROL Close]**.
 
 1. Geef een voorvertoning weer van het adaptieve formulier. Voer een id in het dialoogvenster **[!UICONTROL Customer ID]** veld. Het formulier kan nu klantgegevens uit de database ophalen.
 
@@ -74,8 +74,8 @@ Elke klant krijgt een uniek klant-id-nummer toegewezen, waarmee relevante klantg
 
 Nadat de klantgegevens uit de database zijn opgehaald, kunt u het verzendadres, de provincie en de postcode bijwerken. Met de onderstaande procedure wordt een service Formuliergegevensmodel aangeroepen om klantgegevens bij te werken naar de database:
 
-1. Selecteer de **[!UICONTROL Submit]** en tik op **[!UICONTROL Edit Rules]** pictogram. Het venster van de Redacteur van de Regel opent.
-1. Selecteer de **[!UICONTROL Submit - Click]** tikken op de **[!UICONTROL Edit]** pictogram. De opties voor het bewerken van de regel Verzenden worden weergegeven.
+1. Selecteer de **[!UICONTROL Submit]** en selecteer de **[!UICONTROL Edit Rules]** pictogram. Het venster van de Redacteur van de Regel opent.
+1. Selecteer de **[!UICONTROL Submit - Click]** en selecteert u de **[!UICONTROL Edit]** pictogram. De opties voor het bewerken van de regel Verzenden worden weergegeven.
 
    ![submit-rule](assets/submit-rule.png)
 
@@ -83,7 +83,7 @@ Nadat de klantgegevens uit de database zijn opgehaald, kunt u het verzendadres, 
 
    ![submit-is-geklikt](assets/submit-is-clicked.png)
 
-1. In de **[!UICONTROL THEN]** tikt u op de knop **[!UICONTROL + Add Statement]** -optie. Selecteren **[!UICONTROL Invoke Service]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst.
+1. In de **[!UICONTROL THEN]** selecteert u de optie **[!UICONTROL + Add Statement]** -optie. Selecteren **[!UICONTROL Invoke Service]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst.
 1. Selecteer de **[!UICONTROL Update Shipping Address]** van de **[!UICONTROL Select]** vervolgkeuzelijst.
 
    ![update-verzend-adres](assets/update-shipping-address.png)
@@ -97,7 +97,7 @@ Nadat de klantgegevens uit de database zijn opgehaald, kunt u het verzendadres, 
    >Sleep de **[!UICONTROL Name]** en **[!UICONTROL Customer ID]** velden naar de overeenkomstige tablename.property (bijvoorbeeld customerdetails.name). Zo voorkomt u per ongeluk dat de naam en id van de klant worden bijgewerkt.
 
 1. Sleep de **[!UICONTROL Customer ID]** veld van de [!UICONTROL Form Objects] aan het id-veld in het dialoogvenster **[!UICONTROL INPUT]** doos. Velden zonder een vooraf ingestelde tabelnaam (bijvoorbeeld klantgegevens in dit geval) fungeren als zoekparameter voor de updateservice. De **[!UICONTROL id]** veld in dit gebruiksgeval een record op unieke wijze identificeert in het  **klantgegevens**  tabel.
-1. Tikken **[!UICONTROL Done]** om de regel op te slaan. Tik in het regeleditorvenster op **[!UICONTROL Close]**.
+1. Selecteren **[!UICONTROL Done]** om de regel op te slaan. Voor het venster van de regeleditor selecteert u **[!UICONTROL Close]**.
 1. Geef een voorvertoning weer van het adaptieve formulier. Haal de gegevens van een klant op, werk het verzendadres bij en verzend het formulier. Wanneer u de details van dezelfde klant opnieuw ophaalt, wordt het bijgewerkte verzendadres weergegeven.
 
 ## Stap 3: (sectie Bonus) Gebruik de code-editor om validaties uit te voeren en foutberichten weer te geven {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -108,12 +108,12 @@ Aangepaste formulieren bieden verschillende componenten ingebouwde validaties, z
 
 De volgende procedure laat zien hoe u een regel maakt om een foutbericht weer te geven als de klant-id die u in het formulier hebt ingevoerd, niet bestaat in de database. De regel brengt ook de focus naar en stelt de **[!UICONTROL Customer ID]** veld. De regel gebruikt [de API dataIntegrationUtils van de service van het formuliergegevensmodel](/help/forms/using/invoke-form-data-model-services.md) om te controleren of de klant-id in de database aanwezig is.
 
-1. Tik op de knop **[!UICONTROL Customer ID]** en tik op `Edit Rules` pictogram. De [!UICONTROL Rule Editor] wordt geopend.
-1. Tik op de knop **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
+1. Selecteer de **[!UICONTROL Customer ID]** en selecteer de `Edit Rules` pictogram. De [!UICONTROL Rule Editor] wordt geopend.
+1. Selecteer de **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
 
    In de Visuele Redacteur, **[!UICONTROL WHEN]** is standaard geselecteerd. Ook het formulierobject (in dit geval, **[!UICONTROL Customer ID]**) vanaf waar u de regeleditor hebt gestart, opgegeven in het dialoogvenster **[!UICONTROL WHEN]** instructie.
 
-1. Tik op de knop **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is changed]**.
+1. Selecteer de **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is changed]**.
 
    ![onaangenaam](assets/whencustomeridischanged.png)
 

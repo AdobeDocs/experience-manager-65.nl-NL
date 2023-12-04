@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4403'
-ht-degree: 7%
+source-wordcount: '4305'
+ht-degree: 6%
 
 ---
 
@@ -348,13 +348,13 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
    <td><p>Pannen</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Selecteer</strong></p> </td>
+   <td><p><strong>Selecteren</strong></p> </td>
    <td><p>Flyout-venster tonen</p> </td>
    <td><p>De gebruikersinterface weergeven of verbergen</p> </td>
    <td><p>De gebruikersinterface weergeven of verbergen</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Dubbeltikken</strong></p> </td>
+   <td><p><strong>Dubbelselecteren</strong></p> </td>
    <td><p>Niet van toepassing</p> </td>
    <td><p>Inzoomen of voorinstellingen</p> </td>
    <td><p>Inzoomen of voorinstellingen</p> </td>
@@ -405,7 +405,7 @@ Experience Manager toont een groot aantal verschillende viewervoorinstellingen w
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Selecteer **[!UICONTROL Save All]**.
+1. Selecteren **[!UICONTROL Save All]**.
 
 ## Een voorinstelling voor viewers maken {#creating-a-new-viewer-preset}
 
@@ -555,7 +555,7 @@ Als u voorinstellingen voor de Carousel Banner-viewer maakt, kunt u de stijl van
 
 | | **Beschrijving** | **Handelingen** |
 |---|---|---|
-| **[!UICONTROL Hotspot Icon]** | Pictogram wijzigen dat wordt gebruikt voor hotspot | Als u de afbeelding van het hotspot-pictogram wilt wijzigen, gaat u naar **[!UICONTROL Appearance]** tab, in **[!UICONTROL Selected Component]**, selecteert u **[!UICONTROL ImageMapEffect]**. Selecteer onder **[!UICONTROL Icon]** de optie **[!UICONTROL Background]** en ga in het veld **[!UICONTROL Image]** naar de gewenste achtergrondafbeelding. |
+| **[!UICONTROL Hotspot Icon]** | Pictogram wijzigen dat wordt gebruikt voor hotspot | Als u de afbeelding van het hotspot-pictogram wilt wijzigen, gaat u naar **[!UICONTROL Appearance]** tab, in **[!UICONTROL Selected Component]**, selecteert u **[!UICONTROL ImageMapEffect]**. Onder **[!UICONTROL Icon]**, selecteert u **[!UICONTROL Background]** en in de **[!UICONTROL Image]** navigeer naar de gewenste achtergrondafbeelding. |
 
 ## Viewer-voorinstellingen activeren of deactiveren {#activating-or-deactivating-viewer-presets}
 
@@ -615,7 +615,7 @@ U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Med
 
 1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en selecteer vervolgens in de linkerspoorstaaf de optie **[!UICONTROL Tools]** (hamerpictogram) **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 1. Controleer op de pagina Voorinstellingen viewer een titel voor voorinstellingen en selecteer vervolgens de knop **[!UICONTROL Trash]** pictogram.
-1. Selecteer **[!UICONTROL Delete]**.
+1. Selecteren **[!UICONTROL Delete]**.
 
 ## Een Viewer-voorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 

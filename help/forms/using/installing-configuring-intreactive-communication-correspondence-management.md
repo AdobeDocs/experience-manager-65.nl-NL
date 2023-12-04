@@ -9,9 +9,9 @@ discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -91,11 +91,11 @@ Voordat u de mogelijkheden voor interactief communicatie- en correspondentiebehe
 AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat interactieve AEM Forms-communicatie, correspondentiebeheer en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Tik op **[!UICONTROL Adobe Experience Manager]** deze optie in het kopmenu.
+1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbare opties in het kopmenu.
 1. In de **[!UICONTROL Filters]** sectie:
-   1. Selecteer **[!UICONTROL Forms]** een keuze in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
    2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Tik op de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en tikken **[!UICONTROL Download]**.
+1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
 1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik om **[!UICONTROL Upload Package]** het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
@@ -170,7 +170,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeli
 
 Uw klanten zullen waarschijnlijk een interactieve mededeling verlaten als de ervaring het levert niet aansprekend is. Hoewel het voor de klanten frustrerend is, keert het ook het steunvolume en de kosten voor uw organisatie terug. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 
-AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Experience Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Adobe Target gebruiken om interactieve communicatie aan te passen, [Adobe Target integreren met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM-formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Experience Cloud-oplossing, voor het leveren van persoonlijke en aantrekkelijke klantervaringen op meerdere digitale kanalen. Adobe Target gebruiken om interactieve communicatie aan te passen, [Adobe Target integreren met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### SSL-communicatie configureren voor formuliergegevensmodel  {#configure-ssl-communcation-for-form-data-model}
 

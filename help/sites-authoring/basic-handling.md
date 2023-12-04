@@ -7,14 +7,14 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 2%
+source-wordcount: '2963'
+ht-degree: 1%
 
 ---
 
-# Basisbewerkingen{#basic-handling}
+# Basisverwerking{#basic-handling}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 ### Een interface met aanraakbediening {#a-touch-enabled-ui}
 
-AEM gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, aanraken en vasthouden en vegen. Dit staat in contrast met de manier waarop een traditionele bureaubladinterface werkt met muishandelingen zoals klikken, dubbelklikken, met de rechtermuisknop klikken en mouseover.
+AEM gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u via aanraking met de software communiceren, bijvoorbeeld door middel van bewegingen voor selecteren, aanraken en vasthouden en vegen. Dit staat in contrast met de manier waarop een traditionele bureaubladinterface werkt met muishandelingen zoals klikken, dubbelklikken, met de rechtermuisknop klikken en mouseover.
 
 Aangezien de AEM UI aanraking-toegelaten is, kunt u de aanrakingsgebaren op uw aanrakingsapparaten (bijvoorbeeld, mobiel of tablet) en de muisacties op een traditioneel Desktopapparaat gebruiken.
 
@@ -42,21 +42,21 @@ Onmiddellijk nadat u zich hebt aangemeld, arriveert u op de [Navigatievenster](#
 >
 >Voor een goed inzicht in het basisgebruik van AEM is dit document gebaseerd op de **Sites** console.
 >
->Klik of tik op **Sites**.
+>Klik op **Sites**.
 
 ### Productnavigatie {#product-navigation}
 
-Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Klik of tik door zodat u een goed overzicht krijgt van de basisbehandeling van AEM.
+Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Klik erdoor zodat krijgt u een goed overzicht van de basisbehandeling van AEM.
 
 ![Productnavigatie](assets/bh-02.png)
 
-Klikken of tikken **Volgende** om naar de volgende pagina van het overzicht te gaan. Klikken of tikken **Sluiten** of klik of tik buiten het overzichtsdialoogvenster om te sluiten.
+Klikken **Volgende** om naar de volgende pagina van het overzicht te gaan. Klikken **Sluiten** of klik buiten het overzichtsdialoogvenster om te sluiten.
 
 Het overzicht begint opnieuw de volgende keer u tot een console toegang hebt tenzij u of alle dia&#39;s bekijkt of de optie controleert **Dit niet meer weergeven**.
 
 ## Algemene navigatie {#global-navigation}
 
-U kunt tussen de consoles navigeren met het algemene navigatievenster. Deze wordt geactiveerd als een vervolgkeuzelijst op volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
+U kunt tussen de consoles navigeren met het algemene navigatievenster. Deze wordt geactiveerd als een vervolgkeuzelijst met volledig scherm wanneer u op de Adobe Experience Manager-koppeling linksboven in het scherm klikt.
 
 U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluiten** om terug te keren naar uw vorige locatie.
 
@@ -90,7 +90,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
    <td><strong>Doel</strong></td>
   </tr>
   <tr>
-   <td>Assets<br /> </td>
+   <td>Activa<br /> </td>
    <td>Met deze consoles kunt u importeren en <a href="/help/assets/home.md">digitale middelen beheren</a> zoals afbeeldingen, video's, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd. </td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
    <td>Hiermee kunt u producten, productcatalogi en bestellingen beheren die gerelateerd zijn aan uw <a href="/help/commerce/cif-classic/administering/ecommerce.md">Handel</a> sites.</td>
   </tr>
   <tr>
-   <td>Ervaringsfragmenten</td>
+   <td>Ervaar fragmenten</td>
    <td>An <a href="/help/sites-authoring/experience-fragments.md">Ervaar fragment</a> is een stand-alone ervaring die tussen kanalen kan worden hergebruikt en variaties heeft, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bewaart.</td>
   </tr>
   <tr>
@@ -316,7 +316,7 @@ Het selecteren van een specifieke bron hangt af van een combinatie van de weerga
  <tbody>
   <tr>
    <td> </td>
-   <td>Selecteer</td>
+   <td>Selecteren</td>
    <td>Selectie opheffen</td>
   </tr>
   <tr>
@@ -324,12 +324,12 @@ Het selecteren van een specifieke bron hangt af van een combinatie van de weerga
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Selecteer de miniatuur</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Selecteer de miniatuur</li>
     </ul> </td>
   </tr>
   <tr>
@@ -337,12 +337,12 @@ Het selecteren van een specifieke bron hangt af van een combinatie van de weerga
    <td>
     <ul>
      <li>Desktop:<br /> Beweging, dan gebruik de controletekens snelle actie</li>
-     <li>Mobiele apparaten:<br /> Tik en houd de kaart ingedrukt</li>
+     <li>Mobiele apparaten:<br /> De kaart selecteren en in de wachtstand houden</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de kaart</li>
-     <li>Mobiele apparaten:<br /> Tik op de kaart</li>
+     <li>Mobiele apparaten:<br /> Selecteer de kaart</li>
     </ul> </td>
   </tr>
   <tr>
@@ -350,12 +350,12 @@ Het selecteren van een specifieke bron hangt af van een combinatie van de weerga
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Selecteer de miniatuur</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Selecteer de miniatuur</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -410,7 +410,7 @@ Als u een bron selecteert in de kolom uiterst links, worden de onderliggende bro
      ![Kolomweergave](assets/bh-17.png)
 
    * De kinderen van het geklikte/geplakte middel worden getoond in de kolom rechts van het aangeklikte/geplakte middel.
-   * Als u tikt of op een middelnaam klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
+   * Als u een middelnaam klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
 
 * Als u op de miniatuur tikt of erop klikt, wordt de bron geselecteerd.
 
@@ -462,12 +462,12 @@ Als u een bron selecteert in de kolom uiterst links, worden de onderliggende bro
 
    * Wanneer alle items in de lijst zijn geselecteerd, wordt dit selectievakje ingeschakeld.
 
-      * Als u alles wilt deselecteren, klikt of tikt u op het selectievakje.
+      * Klik op het selectievakje om de selectie van alles op te heffen.
 
    * Wanneer slechts enkele punten worden geselecteerd, verschijnt het met een minteken.
 
-      * Als u alles wilt selecteren, klikt of tikt u op het selectievakje.
-      * Als u alle selecties wilt opheffen, klikt of tikt u nogmaals op het selectievakje.
+      * Klik op het selectievakje om alles te selecteren.
+      * Klik nogmaals op het selectievakje om de selectie van alles op te heffen.
 
 * Selecteer de kolommen die u wilt weergeven met de **Instellingen weergeven** onder de knop Weergaven. De volgende kolommen zijn beschikbaar voor weergave:
 
@@ -493,7 +493,7 @@ Als u een bron selecteert in de kolom uiterst links, worden de onderliggende bro
 
   ![Volgorde wijzigen](assets/bh-22.png)
 
-  Klik of tik op de verticale selectiebalk en sleep het item naar een nieuwe positie in de lijst.
+  Klik op de verticale selectiebalk en sleep het item naar een nieuwe positie in de lijst.
 
   ![Volgorde wijzigen - Slepen](assets/bh-23.png)
 
@@ -552,7 +552,7 @@ In de tijdlijnkolom kunt u:
 
       * en Alles tonen
 
-* [Opmerkingen over het geselecteerde item toevoegen/weergeven. ](#timelineaddingandviewingcomments) Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Door een opmerking te typen die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
+* [Opmerkingen toevoegen/weergeven](#timelineaddingandviewingcomments) over het geselecteerde item. Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Door een opmerking te typen die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
 
 * Specifieke consoles hebben extra functionaliteit. In de Sites-console kunt u bijvoorbeeld het volgende doen:
 

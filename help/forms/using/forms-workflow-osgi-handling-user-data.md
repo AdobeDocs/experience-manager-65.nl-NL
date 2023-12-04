@@ -8,16 +8,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
 
 # Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
 
-Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
+Met Forms-gerichte AEM-workflows kunt u real-world Forms-gecentreerde bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
 
 Een op formulieren gerichte workflow kan op een van de volgende manieren worden geactiveerd of gestart:
 
@@ -31,7 +31,7 @@ Voor meer informatie over Forms-centric AEM workflows en mogelijkheden raadpleeg
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Wanneer een werkstroom wordt geactiveerd, wordt automatisch een lading gegenereerd voor de werkstroominstantie. Aan elke werkstroominstantie wordt een unieke instantie-id en een bijbehorende ladings-id toegewezen. De payload bevat de opslaglocaties voor gebruikers- en formuliergegevens die zijn gekoppeld aan een workflowexemplaar. Daarnaast worden concepten en historische gegevens voor een werkstroominstantie ook opgeslagen in de AEM opslagplaats.
+Wanneer een werkstroom wordt geactiveerd, wordt automatisch een laadbewerking voor de werkstroominstantie gegenereerd. Aan elke werkstroominstantie wordt een unieke instantie-id en een bijbehorende ladings-id toegewezen. De payload bevat de opslaglocaties voor gebruikers- en formuliergegevens die zijn gekoppeld aan een workflowexemplaar. Daarnaast worden concepten en historische gegevens voor een werkstroominstantie ook opgeslagen in de AEM opslagplaats.
 
 De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werkschemainstantie verblijven zijn als volgt:
 
@@ -82,7 +82,7 @@ U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer
 
 Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benaderen die voor een workflowinstantie zijn opgeslagen:
 
-1. Ga bij AEM auteur naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
+1. Ga bij AEM auteurinstantie naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
 
    Selecteren **[!UICONTROL SQL2]** van de **[!UICONTROL Type]** vervolgkeuzelijst.
 
@@ -138,8 +138,8 @@ U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
 1. Voer deze stap uit voor workflowinstanties in **UITVOEREN**, **GESCHORST**, of **STAAL** status:
 
    1. Ga naar `https://'[server]:[port]'/aem/start.html` en aanmelden met beheerdersreferenties.
-   1. Ga naar **[!UICONTROL Tools > Workflow> Instances]**.
-   1. Selecteer relevante workflowinstanties voor de gebruiker en tik op **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
+   1. Navigeren naar **[!UICONTROL Tools > Workflow> Instances]**.
+   1. Selecteer relevante workflowinstanties voor de gebruiker en selecteer **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
 
       Zie voor meer informatie over het werken met workflowinstanties [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md).
 

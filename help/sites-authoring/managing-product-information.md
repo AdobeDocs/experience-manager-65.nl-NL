@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2989'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvere
 
 ## Een fotofotoproject voor een product maken {#create-a-product-photo-shoot-project}
 
-1. In de **Projecten** console, tikken of klikken **Maken** en kies vervolgens **Project maken** in de lijst.
+1. In de **Projecten** console, klik **Maken** en kies vervolgens **Project maken** in de lijst.
 
    ![Projectknop maken](assets/chlimage_1-132a.png)
 
-1. In de **Project maken** pagina, selecteert u de **Fotoproject van product** sjabloon en tik of klik op **Volgende**.
+1. In de **Project maken** pagina, selecteert u de **Fotoproject van product** sjabloon en klik op **Volgende**.
 
    ![Wizard Project](assets/chlimage_1-133a.png)
 
@@ -51,12 +51,12 @@ Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvere
 
    ![Projectdetails](assets/chlimage_1-134a.png)
 
-1. Tik of klik op **Maken**. Een bevestigingsbericht deelt mee dat het project wordt gecreeerd.
-1. Tik of klik op **Gereed** om terug te keren naar de **Projecten** console. Of tik of klik **Openen** om de activa binnen het project te bekijken.
+1. Klikken **Maken**. Een bevestigingsbericht deelt mee dat het project wordt gecreeerd.
+1. Klikken **Gereed** om terug te keren naar de **Projecten** console. U kunt ook op **Openen** om de activa binnen het project te bekijken.
 
 ## Werken in een fotofotoproject voor producten starten {#starting-work-in-a-product-photo-shoot-project}
 
-Tik op een project of klik op een aanvraag om een fotoopname te starten en tik of klik op **Werk toevoegen** in de pagina met projectdetails om een workflow te starten.
+Als u een aanvraag voor een fotoopname wilt starten, klikt u op een project en vervolgens klikt u op **Werk toevoegen** in de pagina met projectdetails om een workflow te starten.
 
 ![Werk toevoegen](assets/chlimage_1-135a.png)
 
@@ -111,7 +111,7 @@ De taakkaart bevat de volgende gegevens:
 
 ![Taakkaart](assets/chlimage_1-136a.png)
 
-De takenlijst bevat gedetailleerde informatie over de huidige actieve workflowtaak voor het project. Tik of klik op de taakkaart om de lijst weer te geven. In de takenlijst worden ook metagegevens weergegeven, zoals begindatum, vervaldatum, toewijzing, prioriteit en status van de taak.
+De takenlijst bevat gedetailleerde informatie over de huidige actieve workflowtaak voor het project. Klik op de taakkaart om de lijst weer te geven. In de takenlijst worden ook metagegevens weergegeven, zoals begindatum, vervaldatum, toewijzing, prioriteit en status van de taak.
 
 ![Takenlijst](assets/chlimage_1-137a.png)
 
@@ -121,8 +121,8 @@ Deze taak omvat het toewijzen van workflowstappen aan gebruikers op basis van hu
 
 Om te vormen **Fotofoto van product** workflow:
 
-1. Navigeren naar **Gereedschappen** > **Workflows** tikt u vervolgens op de knop **Modellen** tegel om de **Workflowmodellen** pagina.
-1. Selecteer de **Fotofoto van product** en tikken op de **Bewerken** van de werkbalk om deze te openen in de bewerkingsmodus.
+1. Navigeren naar **Gereedschappen** > **Workflows** en selecteert u vervolgens de **Modellen** tegel om de **Workflowmodellen** pagina.
+1. Selecteer de **Fotofoto van product** en selecteert u de **Bewerken** van de werkbalk om deze te openen in de bewerkingsmodus.
 
    ![Fotofotomodel van product](assets/chlimage_1-138a.png)
 
@@ -130,7 +130,7 @@ Om te vormen **Fotofoto van product** workflow:
 
    ![Model bewerken](assets/project-photo-shoot-workflow-model.png)
 
-1. Tik of klik op de knop **Taak** om het volgende te configureren:
+1. Klik op de knop **Taak** om het volgende te configureren:
 
    * Naam van de taak
    * Standaardgebruiker (rol) die de taak ontvangt
@@ -148,17 +148,17 @@ Voer de zelfde stappen uit om de taken in te vormen **Workflow voor het maken va
 
 In deze sectie wordt beschreven hoe u het beheer van productinformatie kunt integreren met uw creatieve project.
 
-1. Navigeer naar een fotoproject voor het product en tik op de knop **Werk toevoegen** pictogram op de **Workflows** kaart.
+1. Navigeer naar een fotofotoproject voor een product en klik op de knop **Werk toevoegen** pictogram op de **Workflows** kaart.
 1. Selecteer de **Fotofoto van product (integratie van handel)** werkstroomkaart om de **Fotofoto van product (integratie van handel)** workflow. Als de productinformatie niet beschikbaar is onder `/etc/commerce`, selecteert u de **Fotofoto van product** workflow en start de **Fotofoto van product** workflow.
 
    ![Workflowwizard](assets/chlimage_1-140a.png)
 
-1. Tik of klik op **Volgende** om de workflow in het project te starten.
+1. Klikken **Volgende** om de workflow in het project te starten.
 1. Voer workflowgegevens in op de volgende pagina.
 
    ![Workflowdetails](assets/chlimage_1-141a.png)
 
-1. Tik of klik op **Verzenden** om de fotoopnamesworkflow te starten. De pagina met projectdetails voor het fotoopnameproject wordt weergegeven.
+1. Klikken **Verzenden** om de fotoopnamesworkflow te starten. De pagina met projectdetails voor het fotoopnameproject wordt weergegeven.
 
    ![Projectpagina met nieuwe workflow](assets/chlimage_1-142a.png)
 
@@ -170,15 +170,15 @@ De workflow voor fotograferen bevat verschillende taken. Elke taak wordt toegewe
 
 De **Opnamelijst maken** Met deze taak kan de eigenaar van het project producten selecteren waarvoor afbeeldingen zijn vereist. Op basis van de optie die de gebruiker heeft geselecteerd, wordt een CSV-bestand gegenereerd dat basisproductinformatie bevat.
 
-1. Tik in de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taken Kaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Klik in de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taken Kaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
 
    ![Taakkaart](assets/chlimage_1-143a.png)
 
-1. Selecteer de **Opnamelijst maken** en tik op de knop **Openen** op de werkbalk.
+1. Selecteer de **Opnamelijst maken** en klik vervolgens op de knop **Openen** op de werkbalk.
 
    ![Opnamelijst openen](assets/chlimage_1-144a.png)
 
-1. Controleer de taakdetails en tik op de knop **Opnamelijst maken** knop.
+1. Controleer de taakdetails en klik op de knop **Opnamelijst maken** knop.
 
    ![Taakdetails van de lijst](assets/chlimage_1-145a.png)
 
@@ -186,23 +186,23 @@ De **Opnamelijst maken** Met deze taak kan de eigenaar van het project producten
 
    ![Producten selecteren](assets/chlimage_1-146a.png)
 
-1. Tik of klik op de knop **Toevoegen aan lijst met opnamen** om een CSV-bestand te maken dat een lijst met dergelijke producten bevat. Een bericht bevestigt dat de opnamelijst voor de geselecteerde producten wordt gecreeerd. Klikken **Sluiten** om de werkstroom te voltooien.
+1. Klik op de knop **Toevoegen aan lijst met opnamen** om een CSV-bestand te maken dat een lijst met dergelijke producten bevat. Een bericht bevestigt dat de opnamelijst voor de geselecteerde producten wordt gecreeerd. Klikken **Sluiten** om de werkstroom te voltooien.
 
-1. Nadat u een opnamelijst hebt gemaakt, **Opnamelijst weergeven** wordt weergegeven. Tik of klik op **Toevoegen aan lijst met opnamen**. In dit geval worden de gegevens toegevoegd aan de oorspronkelijk gemaakte opnamelijst.
+1. Nadat u een opnamelijst hebt gemaakt, **Opnamelijst weergeven** wordt weergegeven. Als u meer producten wilt toevoegen aan de opnamelijst, klikt u op **Toevoegen aan lijst met opnamen**. In dit geval worden de gegevens toegevoegd aan de oorspronkelijk gemaakte opnamelijst.
 
    ![Toevoegen aan lijst met opgenomen items](assets/chlimage_1-147a.png)
 
-1. Tik of klik op **Opnamelijst weergeven** om de nieuwe opnamelijst weer te geven.
+1. Klikken **Opnamelijst weergeven** om de nieuwe opnamelijst weer te geven.
 
    ![Opnamelijst weergeven](assets/chlimage_1-148a.png)
 
-   Tik/klik op **Bewerken** op de werkbalk. Alleen het **product **en **Beschrijving** de velden kunnen worden bewerkt.
+   Klik op **Bewerken** op de werkbalk. Alleen het **product **en **Beschrijving** de velden kunnen worden bewerkt.
 
    ![Opnamelijst bewerken](assets/chlimage_1-149a.png)
 
-   Tik of klik op **Opslaan** op de werkbalk om het bestand op te slaan.
+   Klik op **Opslaan** op de werkbalk om het bestand op te slaan.
 
-1. Tik of klik op de knop **Voltooid** pictogram op de **Opnamelijst maken** pagina met taakdetails om de taak te markeren als voltooid. U kunt een optionele opmerking toevoegen.
+1. Nadat u de producten hebt toegevoegd, klikt u op **Voltooid** pictogram op de **Opnamelijst maken** pagina met taakdetails om de taak te markeren als voltooid. U kunt een optionele opmerking toevoegen.
 
 De voltooiing van de taak brengt de volgende veranderingen in het project met zich mee:
 
@@ -220,23 +220,23 @@ De productlijst of het CSV-bestand kan velden bevatten, zoals **Categorie, Produ
 
 Een product kan tot een bepaalde categorie behoren. De productcategorie kan worden vermeld in de CSV onder de **Categorie** kolom. De **Product** bevat de naam van het product. In de **Beschrijving** Voer de productbeschrijving of de aanwijzingen voor de fotograaf in.
 
-1. Tik in de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taken Kaart](#tracking-project-progress) om de lijst met taken in de workflow weer te geven.
-1. Selecteer de **Opnamelijst uploaden** en tikt of klikt u op **Openen** op de werkbalk.
+1. Klik in de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taken Kaart](#tracking-project-progress) om de lijst met taken in de workflow weer te geven.
+1. Selecteer de **Opnamelijst uploaden** en klik vervolgens op de knop **Openen** op de werkbalk.
 
    ![Lijst met uploads](assets/chlimage_1-150a.png)
 
-1. Controleer de taakdetails en tik of klik op de knop **Opnamelijst uploaden** knop.
+1. Controleer de taakdetails en klik op de knop **Opnamelijst uploaden** knop.
 
    ![Lijst met uploads](assets/chlimage_1-151a.png)
 
-1. Tik of klik op de knop **Opnamelijst uploaden** te uploaden. De workflow herkent dit bestand als een bron die moet worden gebruikt om productgegevens te extraheren voor de volgende taak.
+1. Klik op de knop **Opnamelijst uploaden** te uploaden. De workflow herkent dit bestand als een bron die moet worden gebruikt om productgegevens te extraheren voor de volgende taak.
 1. Upload een CSV-bestand met productinformatie in de juiste indeling. De **Geüploade elementen weergeven** wordt onder de kaart weergegeven nadat het CSV-bestand is geüpload.
 
    ![Productinformatie uploaden](assets/chlimage_1-152a.png)
 
    Klik op de knop **Voltooid** pictogram om de taak te voltooien.
 
-1. Tik/klik op de knop **Voltooid** pictogram om de taak te voltooien.
+1. Klik op de knop **Voltooid** pictogram om de taak te voltooien.
 
 ### Fotoopnametaak uploaden {#upload-photo-shoot-task}
 
@@ -246,24 +246,24 @@ De naam van de te uploaden afbeeldingen moet beginnen met `<ProductId_>` waar `P
 
 U kunt de afbeeldingen rechtstreeks uploaden of een ZIP-bestand met de afbeeldingen uploaden. Op basis van hun namen worden de afbeeldingen in de desbetreffende productmappen in de fotoopnamemap geplaatst.
 
-1. Tik of klik onder de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
-1. Selecteer de **Fotofoto uploaden** en tikt of klikt u op **Openen** op de werkbalk.
+1. Klik onder de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Selecteer de **Fotofoto uploaden** en klik vervolgens op de knop **Openen** op de werkbalk.
 
    ![Fotoopname uploaden](assets/chlimage_1-153a.png)
 
-1. Tik of klik op **Fotofoto uploaden** en uploadt u de foto-opname-afbeeldingen.
-1. Tik of klik op de knop **Voltooid** van de werkbalk om de taak te voltooien.
+1. Klikken **Fotofoto uploaden** en uploadt u de foto-opname-afbeeldingen.
+1. Klik op de knop **Voltooid** van de werkbalk om de taak te voltooien.
 
 ### Fotoopnametaak retoucheren {#retouch-photo-shoot-task}
 
 Als u bewerkingsrechten hebt, voert u de **Fotoopname retoucheren** bewerken van de afbeeldingen die naar de fotomap zijn geüpload.
 
-1. Tik onder de projectmap op de knop voor ovalen of klik op de knop met de ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
-1. Selecteer de **Fotoopname retoucheren** en tik op de knop **Openen** op de werkbalk.
+1. Klik onder de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Selecteer de **Fotoopname retoucheren** en klik vervolgens op de knop **Openen** op de werkbalk.
 
    ![Fotoopname retoucheren](assets/chlimage_1-154a.png)
 
-1. Tik of klik op de knop **Geüploade elementen weergeven** in de **Fotoopname retoucheren** pagina om door de geüploade afbeeldingen te bladeren.
+1. Klik op de knop **Geüploade elementen weergeven** in de **Fotoopname retoucheren** pagina om door de geüploade afbeeldingen te bladeren.
 
    ![Geüploade elementen weergeven](assets/chlimage_1-155a.png)
 
@@ -271,32 +271,32 @@ Als u bewerkingsrechten hebt, voert u de **Fotoopname retoucheren** bewerken van
 
    ![Element bewerken](assets/chlimage_1-156a.png)
 
-1. Tik of klik op de knop **Voltooid** van de werkbalk om de taak te voltooien.
+1. Klik op de knop **Voltooid** van de werkbalk om de taak te voltooien.
 
 ### Taak controleren en goedkeuren {#review-and-approve-task}
 
 In deze taak bekijkt u de foto&#39;s die door een fotograaf zijn geüpload en markeert u de afbeeldingen zoals deze zijn goedgekeurd voor gebruik.
 
-1. Tik of klik onder de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
-1. Selecteer de **Controleren en goedkeuren** en tikt of klikt u op **Openen** op de werkbalk.
+1. Klik onder de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Selecteer de **Controleren en goedkeuren** en klik vervolgens op de knop **Openen** op de werkbalk.
 
    ![Reviseren en goedkeuren](assets/chlimage_1-157a.png)
 
-1. In de **Controleren en goedkeuren** pagina, wijs de overzichtstaak aan een rol toe en tik of klik **Controleren** om de geüploade productafbeeldingen te bekijken.
+1. In de **Controleren en goedkeuren** pagina, wijs de overzichtstaak aan een rol toe en klik dan **Controleren** om de geüploade productafbeeldingen te bekijken.
 
    ![Elementen evalueren](assets/chlimage_1-158a.png)
 
-1. Selecteer een productafbeelding en tik op de **Goedkeuren** op de werkbalk om aan te geven dat het bestand is goedgekeurd. Zodra u een afbeelding hebt goedgekeurd, wordt er een goedgekeurde banner weergegeven.
+1. Selecteer een productafbeelding en klik op de knop **Goedkeuren** op de werkbalk om aan te geven dat het bestand is goedgekeurd. Zodra u een afbeelding hebt goedgekeurd, wordt er een goedgekeurde banner weergegeven.
 
    ![Een afbeelding goedkeuren](assets/chlimage_1-159a.png)
 
-1. Tik of klik op **Voltooid**. De goedgekeurde afbeeldingen zijn gekoppeld aan de lege elementen die zijn gemaakt.
+1. Klikken **Voltooid**. De goedgekeurde afbeeldingen zijn gekoppeld aan de lege elementen die zijn gemaakt.
 
 Het is mogelijk dat u bepaalde producten zonder afbeelding weglaat. Later kunt u de taak opnieuw uitvoeren en markeren dat deze voltooid is.
 
 U kunt naar projectelementen navigeren met behulp van de interface Elementen en de goedgekeurde afbeeldingen controleren.
 
-Tik of klik op het volgende niveau om producten weer te geven volgens de hiërarchie van productgegevens.
+Klik op het volgende niveau om producten weer te geven volgens de hiërarchie van productgegevens.
 
 Creative Project koppelt goedgekeurde elementen aan het product waarnaar wordt verwezen. De metagegevens van de elementen worden bijgewerkt met de productreferentie en basisinformatie in de **Productgegevens** onder de eigenschappen van elementen worden deze weergegeven in de sectie Metagegevens van AEM element.
 
@@ -308,8 +308,8 @@ Creative Project koppelt goedgekeurde elementen aan het product waarnaar wordt v
 
 Met deze taak verplaatst u de goedgekeurde middelen naar de map voor productie, zodat deze beschikbaar zijn voor gebruik.
 
-1. Tik of klik onder de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
-1. Selecteer de **Verplaatsen naar productie** en tikt of klikt u op **Openen** op de werkbalk.
+1. Klik onder de projectmap op de knop voor ovalen rechtsonder in het dialoogvenster [Taakkaart](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Selecteer de **Verplaatsen naar productie** en klik vervolgens op de knop **Openen** op de werkbalk.
 
    ![Verplaatsen naar productie](assets/chlimage_1-160a.png)
 
@@ -321,22 +321,22 @@ Met deze taak verplaatst u de goedgekeurde middelen naar de map voor productie, 
 
    ![Verplaatsen naar pad](assets/chlimage_1-162a.png)
 
-1. Tik of klik op **Verplaatsen naar productie**. Sluit het bevestigingsbericht. De elementen worden naar het genoemde pad verplaatst en er wordt automatisch een centrifugeset gemaakt voor de goedgekeurde elementen voor elk product op basis van de maphiërarchie.
+1. Klikken **Verplaatsen naar productie**. Sluit het bevestigingsbericht. De elementen worden naar het genoemde pad verplaatst en er wordt automatisch een centrifugeset gemaakt voor de goedgekeurde elementen voor elk product op basis van de maphiërarchie.
 
-1. Tik/klik op de knop **Voltooid** op de werkbalk. De workflow wordt voltooid wanneer de laatste stap is gemarkeerd als voltooid.
+1. Klik op de knop **Voltooid** op de werkbalk. De workflow wordt voltooid wanneer de laatste stap is gemarkeerd als voltooid.
 
 ## Metagegevens van DAM-element weergeven {#viewing-dam-asset-metadata}
 
-Nadat u hebt ingestemd, zijn de elementen gekoppeld aan de corresponderende producten. De [Eigenschappenpagina](/help/assets/manage-assets.md#editing-properties) van de goedgekeurde activa beschikt nu over een extra **Productgegevens** (gekoppelde productinformatie) tabblad. Op dit tabblad worden de productdetails, het SKU-nummer en andere productgerelateerde details weergegeven die het element koppelen. Tik of klik op de knop **Bewerken** pictogram om een elementeigenschap bij te werken. De productgerelateerde informatie blijft alleen-lezen.
+Nadat u hebt ingestemd, zijn de elementen gekoppeld aan de corresponderende producten. De [Eigenschappenpagina](/help/assets/manage-assets.md#editing-properties) van de goedgekeurde activa beschikt nu over een extra **Productgegevens** (gekoppelde productinformatie) tabblad. Op dit tabblad worden de productdetails, het SKU-nummer en andere productgerelateerde details weergegeven die het element koppelen. Klik op de knop **Bewerken** pictogram om een elementeigenschap bij te werken. De productgerelateerde informatie blijft alleen-lezen.
 
-Tik of klik op de koppeling die verschijnt om naar de pagina met productdetails te navigeren in de productconsole waaraan het element is gekoppeld.
+Klik op de koppeling die wordt weergegeven om naar de pagina met productdetails in de productconsole te gaan waaraan het element is gekoppeld.
 
 ## De workflows voor fotoopname van projecten aanpassen {#customizing-the-project-photo-shoot-workflows}
 
 U kunt de **Fotofoto van project** workflows op basis van uw vereisten. Dit is een facultatieve, op rol-gebaseerde taak die u uitvoert om de waarde van een variabele binnen het project te plaatsen. Later, kunt u de gevormde waarde dan gebruiken om bij een besluit aan te komen.
 
-1. Klik of tik op het AEM logo en navigeer naar **Gereedschappen** > **Workflow** > **Modellen** om de **Workflowmodellen** pagina.
-1. Selecteer de **Fotofoto van product (integratie van handel)** of de **Fotofoto van product** workflow en klikken of tikken **Bewerken** vanuit de werkbalk om de workflow te openen in de bewerkingsmodus.
+1. Klik op het AEM logo en navigeer naar **Gereedschappen** > **Workflow** > **Modellen** om de **Workflowmodellen** pagina.
+1. Selecteer de **Fotofoto van product (integratie van handel)** of de **Fotofoto van product** workflow en klik op **Bewerken** vanuit de werkbalk om de workflow te openen in de bewerkingsmodus.
 1. Open het zijpaneel en zoek de **Op rol gebaseerde projecttaak maken** en sleep het naar de workflow.
 
    ![Op rol gebaseerde projecttaak maken](assets/project-model-role-based.png)
@@ -346,17 +346,17 @@ U kunt de **Fotofoto van project** workflows op basis van uw vereisten. Dit is e
 
    ![Workflowstap configureren](assets/project-task-step.png)
 
-1. Op de **Routering** de handelingen voor de taak op. Tik of klik op de knop **Item toevoegen** koppeling.
+1. Op de **Routering** de handelingen voor de taak op. Als u meerdere handelingen wilt toevoegen, klikt u op de knop **Item toevoegen** koppeling.
 
    ![Routering, tabblad](assets/project-task-step-routing.png)
 
 1. Klik op **OK** om de wijzigingen aan de stap toe te voegen.
 
-1. Terug in de **Workflowmodel** tikken of klikken op **Sync** om de wijzigingen van de gehele workflow op te slaan. Tikken of klikken **OK** voor de stap worden de wijzigingen in de workflow niet opgeslagen. Tik of klik op **Sync**.
+1. Terug in de **Workflowmodel** vensterklik **Sync** om de wijzigingen van de gehele workflow op te slaan. Tikken of klikken **OK** voor de stap worden de wijzigingen in de workflow niet opgeslagen. Als u wijzigingen in de workflow wilt opslaan, klikt u op **Sync**.
 
 1. Open het zijpaneel en zoek de **Ga naar stap** en sleep deze naar de workflow.
 
-1. Open de **Ga naar** Tik of klik op de knop **Proces** tab.
+1. Open de **Ga naar** en klik op de knop **Proces** tab.
 
 1. Selecteer de **Doelstap** om naar te gaan en te specificeren dat **Routeringsuitdrukking** is ECMA-script. Geef vervolgens de volgende code op in het dialoogvenster **Script** veld:
 
@@ -386,9 +386,9 @@ U kunt de **Fotofoto van project** workflows op basis van uw vereisten. Dit is e
 
    ![Ga naar-script](assets/project-workflow-goto.png)
 
-1. Tik of klik op **OK**.
+1. Klikken **OK**.
 
-1. Tik of klik op **Sync** om de workflow op te slaan.
+1. Klikken **Sync** om de workflow op te slaan.
 
 Er komt nu een nieuwe taak naar voren na de [Naar productietaak gaan](#move-to-production-task) is voltooid en wordt toegewezen aan de eigenaar.
 

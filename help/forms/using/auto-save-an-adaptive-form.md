@@ -9,16 +9,16 @@ topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier automatisch opslaan {#auto-save-an-adaptive-form}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 U kunt een adaptief formulier zodanig configureren dat de inhoud automatisch wordt opgeslagen op basis van een gebeurtenis of een vooraf gedefinieerd tijdsinterval. Standaard wordt de inhoud van een adaptief formulier opgeslagen op een handeling van de gebruiker, bijvoorbeeld wanneer u op de knop Opslaan drukt. De optie Automatisch opslaan is handig in:
 
@@ -29,9 +29,9 @@ U kunt een adaptief formulier zodanig configureren dat de inhoud automatisch wor
 
 ## Automatisch opslaan inschakelen voor een adaptief formulier {#enable-autosave-for-an-adaptive-form}
 
-Voor een adaptief formulier is de optie voor automatisch opslaan niet uitgeschakeld. U kunt de optie Automatisch opslaan inschakelen in het dialoogvenster **Automatisch opslaan** in de eigenschappen van een adaptief formulier. De **Automatisch opslaan** biedt ook diverse andere configuratieopties. Voer de volgende stappen uit om de optie Automatisch opslaan in te schakelen en te configureren voor een adaptief formulier:
+Voor een adaptief formulier is de optie voor automatisch opslaan niet uit het vak ingeschakeld. U kunt de optie Automatisch opslaan inschakelen in het dialoogvenster **Automatisch opslaan** in de eigenschappen van een adaptief formulier. De **Automatisch opslaan** biedt ook diverse andere configuratieopties. Voer de volgende stappen uit om de optie Automatisch opslaan in te schakelen en te configureren voor een adaptief formulier:
 
-1. Als u de sectie Automatisch opslaan wilt openen in de eigenschappen, selecteert u een component en tikt u vervolgens op ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+1. Als u de sectie Automatisch opslaan wilt openen in de eigenschappen, selecteert u een component en selecteert u vervolgens ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en selecteer vervolgens ![cmppr](assets/cmppr.png).
 1. In de **[!UICONTROL Auto Save]** deel **[!UICONTROL Enable]** de optie voor automatisch opslaan.
 1. In de **[!UICONTROL Adaptive Form Event]** geeft u 1 of TRUE op om het formulier automatisch op te slaan wanneer het formulier in de browser wordt geladen. U kunt ook een voorwaardelijke expressie opgeven voor een gebeurtenis die, wanneer deze wordt geactiveerd en waar wordt geretourneerd, de inhoud van het formulier opslaat.
 1. Geef de trigger op. Automatisch opslaan wordt geactiveerd op basis van uw configuratie. U kunt kiezen uit de volgende opties:
@@ -44,7 +44,7 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uitgeschak
    * Geef een tijdsinterval op als u **[!UICONTROL Time based]** trigger.
    * Geef een gebeurtenisnaam op als u **[!UICONTROL Event based]** trigger.
 
-   U kunt ook uw eigen aangepaste strategie maken en aan de lijst toevoegen. Zie voor meer informatie [Een aangepaste strategie implementeren om de formulieren automatisch op te slaan](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
+   U kunt ook uw eigen aangepaste strategie aan de lijst toevoegen. Zie voor meer informatie [Een aangepaste strategie implementeren om de formulieren automatisch op te slaan](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Alleen op tijd gebaseerde automatische opslag) Voer de volgende stappen uit om opties voor op tijd gebaseerde automatische opslag te configureren.
 
@@ -52,7 +52,7 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uitgeschak
 
 1. (Alleen op gebeurtenissen gebaseerde automatische opslag) Voer de volgende stappen uit om opties voor automatisch opslaan op basis van gebeurtenissen te configureren.
 
-   1. In **Automatisch opslaan na deze gebeurtenis** een [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) gebeurtenis. Het formulier wordt opgeslagen telkens wanneer de expressie de waarde TRUE oplevert.
+   1. In **Automatisch opslaan na deze gebeurtenis** vak, geef een [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) gebeurtenis. Het formulier wordt opgeslagen telkens wanneer de expressie de waarde TRUE oplevert.
 
 1. (Optioneel) Als u de inhoud automatisch wilt opslaan voor anonieme gebruikers, selecteert u de optie **Automatisch opslaan inschakelen voor anonieme gebruikers** en klik op **[!UICONTROL OK]**.
 
@@ -68,7 +68,7 @@ U kunt een aangepaste gebeurtenis implementeren om de functie voor automatisch o
 
 1. Maak clientbibliotheek en clientbibliotheekmappen. Voor gedetailleerde stappen raadpleegt u de [Clientzijbibliotheken gebruiken, document](/help/sites-developing/clientlibs.md).
 
-   In het volgende script wordt bijvoorbeeld de aangepaste versie gebruikt `emailFocusChange`gebeurtenis die de functie voor automatisch opslaan activeert:
+   Het volgende script gebruikt bijvoorbeeld de aangepaste versie `emailFocusChange`gebeurtenis die de functie voor automatisch opslaan activeert:
 
    ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
@@ -87,6 +87,6 @@ U kunt een aangepaste gebeurtenis implementeren om de functie voor automatisch o
 
 1. Open het adaptieve formulier in de modus Schrijven.
 
-1. Selecteer in de bewerkingsmodus een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+1. Selecteer in de bewerkingsmodus een component en selecteer vervolgens ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en selecteer vervolgens ![cmppr](assets/cmppr.png).
 1. In de eigenschappen opent u de knop **[!UICONTROL Basic]** sectie. In de **[!UICONTROL Client Library Category]** voert u de waarde in van de categorie-eigenschap die is gedefinieerd tijdens het maken van de clientbibliotheekmappen.
 1. Open de sectie Automatisch opslaan. In de **[!UICONTROL Auto save after this event]** geeft u een aangepaste gebeurtenis op die al in de clientbibliotheek is gedefinieerd. Klik op **[!UICONTROL OK]**.

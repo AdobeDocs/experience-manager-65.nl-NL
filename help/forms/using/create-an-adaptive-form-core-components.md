@@ -10,9 +10,9 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -64,9 +64,9 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 1. Aanmelden bij uw lokale [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
-1. Ga uw geloofsbrieven op de Experience Manager login pagina in. Tik in de linkerbovenhoek nadat u bent aangemeld op **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Ga uw geloofsbrieven op de Experience Manager login pagina in. Nadat u bent aangemeld, selecteert u in de linkerbovenhoek de optie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 
-1. Tik op **[!UICONTROL Create]**  > **[!UICONTROL Create Adaptive Forms]**.
+1. Selecteren **[!UICONTROL Create]**  > **[!UICONTROL Create Adaptive Forms]**.
 
 1. Selecteer een adaptieve Forms Core Components-sjabloon en klik op **[!UICONTROL Next]**.
 
@@ -78,10 +78,10 @@ U hebt het volgende nodig om een adaptief formulier te maken:
    * **[!UICONTROL Theme Client Library]:** Hiermee geeft u het thema voor een adaptief formulier op. Standaard worden de `adaptiveform.theme.canvas3` thema is geselecteerd. U kunt ook een ander thema kiezen in het menu **[!UICONTROL Theme Client Library]** vervolgkeuzelijst.
    * **[!UICONTROL Configuration Container:]**  Definieert een locatie waar configuratiebestanden voor Adaptive Forms worden opgeslagen. Deze configuratiebestanden bevatten instellingen en eigenschappen die verwant zijn aan het gedrag en de weergave van Adaptive Forms.
    * **[!UICONTROL Tags:]** Hiermee geeft u codes op om het adaptieve formulier op unieke wijze te identificeren. Tags helpen u bij het zoeken naar het formulier. Als u tags wilt maken, typt u nieuwe tagnamen in het dialoogvenster **[!UICONTROL Tags]** doos.
-1. Tik op **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking.
+1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking.
 
 
-1. Tikken **[!UICONTROL Edit]** om het nieuwe formulier te openen op een nieuw tabblad. Het formulier wordt geopend voor bewerking en geeft de inhoud weer die beschikbaar is in de sjabloon. De zijbalk wordt ook weergegeven om het nieuwe formulier aan te passen.
+1. Selecteren **[!UICONTROL Edit]** om het nieuwe formulier te openen op een nieuw tabblad. Het formulier wordt geopend voor bewerking en geeft de inhoud weer die beschikbaar is in de sjabloon. De zijbalk wordt ook weergegeven om het nieuwe formulier aan te passen.
 
 
 ## Gebruik Adaptieve Forms Core-componenten om uw formulier te maken
@@ -170,11 +170,11 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
+1. Select the Adaptive Form and select ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
 1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Tap **[!UICONTROL Save]** to save the properties.
+1. Select **[!UICONTROL Save]** to save the properties.
 -->
 
 ## Volgende functies

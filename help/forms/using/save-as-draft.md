@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -25,7 +25,7 @@ U kunt [het formulier bijwerken](/help/forms/using/working-with-form.md), [annot
 Als u de functie Opslaan als concept wilt inschakelen voor formulieren die zijn opgeslagen op de portal Formulieren, raadpleegt u [Een HTML5-formulier opslaan als concept](/help/forms/using/saving-html5-form-draft.md).
 Als u de verzending van adaptieve formulieren wilt configureren, raadpleegt u [Concepten en verzendingen](/help/forms/using/draft-submission-component.md). (Niet geldig voor formulieren die zijn gesynchroniseerd met AEM Forms JEE-server.)
 
-Als u een concept wilt maken, opent u het formulier en tikt u op de knop **Opslaan als concept** ![save-as-concept](assets/save-as-draft.png). Geef de naam van het concept op en tik op **Opslaan**. Het concept wordt opgeslagen in de map Concepten en gesynchroniseerd met de server. De app wordt opgeslagen in de map Outbox als de app offline is.
+Als u een concept wilt maken, opent u het formulier en selecteert u het **Opslaan als concept** ![save-as-concept](assets/save-as-draft.png). Geef de naam van het concept op en selecteer **Opslaan**. Het concept wordt opgeslagen in de map Concepten en gesynchroniseerd met de server. De app wordt opgeslagen in de map Outbox als de app offline is.
 
 Als u het bijbehorende formulier later bijwerkt, worden de wijzigingen direct doorgevoerd. Bij het synchroniseren van de AEM Forms-toepassing met de AEM Forms-server wordt het concept geüpload naar de AEM Forms-server. Bovendien wordt het concept verplaatst van het Postvak UIT naar de map Taken of Concepten. Er verschijnt een bewerkingspictogram naast het pictogram.
 
@@ -43,5 +43,5 @@ Voer de volgende stappen uit om een concept te verwijderen:
 
 1. Navigeer in de AEM Forms-app naar **Forms.**
 1. Selecteren **Concepten** in de vervolgkeuzelijst naast Zoeken.
-1. Een formulier met het bewerkingspictogram ![edit-concept-app](assets/edit-draft-app.png) duidt een concept aan. Tik op de horizontale ellips naast het concept.
-1. Tik in de opties die worden weergegeven wanneer u op de horizontale ellips tikt **Concept verwijderen**.
+1. Een formulier met het pictogram Bewerken ![edit-concept-app](assets/edit-draft-app.png) duidt een concept aan. Selecteer de horizontale ellips naast het concept.
+1. Selecteer in de opties die worden weergegeven wanneer u de horizontale ellips selecteert **Concept verwijderen**.

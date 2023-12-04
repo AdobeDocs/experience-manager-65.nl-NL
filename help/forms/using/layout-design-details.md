@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Nadat u de indeling hebt geanalyseerd die nodig is om uw interactieve communicat
 
 Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
-1. Open Forms Designer en selecteer **Bestand** > **Nieuw** > **Een leeg formulier gebruiken**, tikken **Volgende** en tikt u vervolgens op **Voltooien** om het formulier te openen voor het maken van een sjabloon.
+1. Open Forms Designer en selecteer **Bestand** > **Nieuw** > **Een leeg formulier gebruiken**, selecteert u **Volgende** en selecteer vervolgens **Voltooien** om het formulier te openen voor het maken van een sjabloon.
 
    Zorg ervoor dat de **Objectbibliotheek** en **Object** opties worden geselecteerd in het menu **Venster** -menu.
 
@@ -90,7 +90,7 @@ Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
    1. Navigeer naar de locatie waar u het bestand wilt opslaan en geef een naam op voor de XDP-sjabloon.
    1. Selecteren **.xdp** van de **Opslaan als type** vervolgkeuzelijst.
 
-   1. Tikken **Opslaan**.
+   1. Selecteren **Opslaan**.
 
 ### De component van het Gebied van het Beeld van het Gebruik in een malplaatje XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -124,9 +124,9 @@ Voer de volgende stappen uit om de component Tabel in de XDP-sjabloon te gebruik
 
    1. Geef het aantal rijen en kolommen voor de tabel op.
    1. Selecteer de **Koptekstrij in tabel opnemen** Schakel het selectievakje in om een rij voor de tabelkoptekst op te nemen.
-   1. Tikken **OK**.
+   1. Selecteren **OK**.
 
-1. Tikken **+** Klik in het linkerdeelvenster naast de naam van de tabel met de rechtermuisknop op de celnamen in de koptekst en andere rijen en selecteer **Naam object wijzigen** om de naam van de tabelcellen te wijzigen.
+1. Selecteren **+** Klik in het linkerdeelvenster naast de naam van de tabel met de rechtermuisknop op de celnamen in de koptekst en andere rijen en selecteer **Naam object wijzigen** om de naam van de tabelcellen te wijzigen.
 1. Klik op de tekstvelden voor de tabelkop in het dialoogvenster **Ontwerpweergave** en hernoemen.
 1. Sleep de **Tekstveld** uit de **Objectbibliotheek** naar elke tabelcel in het dialoogvenster **Ontwerpweergave**. Voer deze stap uit om tabelcellen te kunnen binden aan de formuliergegevensmodelobjecten tijdens het ontwerpen van de interactieve communicatie.
 
@@ -141,15 +141,15 @@ Voer de volgende stappen uit om de component Tabel in de XDP-sjabloon te gebruik
    1. Navigeer naar de locatie waar u het bestand wilt opslaan en geef de naam voor de XDP-sjabloon op.
    1. Selecteren **.xdp** van de **Opslaan als type** vervolgkeuzelijst.
 
-   1. Tikken **Opslaan**.
+   1. Selecteren **Opslaan**.
 
 ### XDP-sjabloon uploaden naar de AEM Forms-server {#uploadxdptemplate}
 
 Nadat u een XDP-sjabloon hebt gemaakt met de Forms Designer, moet u de sjabloon uploaden naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van de interactieve communicatie.
 
 1. Selecteren **Forms** > **Forms &amp; Documenten**.
-1. Tikken **Maken** > **Bestand uploaden**.
-1. Navigeer naar de locatie van de XDP-sjabloon op het lokale bestandssysteem en tik op **Openen** om de XDP-sjabloon te importeren naar de AEM Forms-server.
+1. Selecteren **Maken** > **Bestand uploaden**.
+1. Navigeer naar de locatie van de XDP-sjabloon in het lokale bestandssysteem en selecteer **Openen** om de XDP-sjabloon te importeren naar de AEM Forms-server.
 
 ## Schema gebruiken {#using-schema}
 

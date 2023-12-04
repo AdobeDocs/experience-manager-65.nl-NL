@@ -4,9 +4,9 @@ description: Zie de analyse van de website van We.Gov zodat u kunt begrijpen hoe
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Op grond van de Freedom of Information Act vraagt Sarah om een kopie van de &quo
 
 ### Zie het zelf {#see-it-yourself}
 
-In uw browser, open `https://<hostname>:<PublishPort>/wegov`. Tik op de website Web.Gov op Toepassingen > Alle toepassingen. Tik op de pagina Alle toepassingen op Toepassen onder Toepassing voor FOIA-verzoek.
+In uw browser, open `https://<hostname>:<PublishPort>/wegov`. Selecteer Toepassingen > Alle toepassingen op de website Web.Gov. Selecteer Toepassen onder Toepassing voor FOIA-verzoek op de pagina Alle toepassingen.
 
 ## Sarah start haar verzoek om informatie onder FOIA {#sarah-starts-her-application-for-information-under-foia}
 
@@ -54,7 +54,7 @@ Sarah kliks **Toepassen** en op de pagina &quot;Freedom of Information Act Reque
 
 Verzoek om een kopie van het dossier Administratie voor kinderen en gezinnen voor de begrotingsjaren 2013 tot en met 2016
 
-Sarah kan altijd tikken **Opslaan** om een concept van het formulier op te slaan en er later op terug te komen om het formulier in te vullen en te verzenden. Sarah legt het formulier voor.
+Sarah kan altijd selecteren **Opslaan** om een concept van het formulier op te slaan en er later op terug te komen om het formulier in te vullen en te verzenden. Sarah legt het formulier voor.
 
 >[!NOTE]
 >

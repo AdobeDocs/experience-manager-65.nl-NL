@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6865'
+source-wordcount: '6886'
 ht-degree: 0%
 
 ---
@@ -353,13 +353,13 @@ De redacteur van de regel verstrekt een uitvoerige maar eenvoudige gebruikersint
 Om het gebruikersinterface van de regelredacteur te lanceren:
 
 1. Open een adaptief formulier in de ontwerpmodus.
-1. Tik op het formulierobject waarvoor u een regel wilt schrijven en tik op de werkbalk Component ![bewerkingsregels](assets/edit-rules.png). De gebruikersinterface van de regeleditor wordt weergegeven.
+1. Selecteer het formulierobject waarvoor u een regel wilt schrijven en selecteer op de werkbalk Component de optie ![bewerkingsregels](assets/edit-rules.png). De gebruikersinterface van de regeleditor wordt weergegeven.
 
    ![regels creëren](assets/create-rules.png)
 
    Eventuele bestaande regels voor de geselecteerde formulierobjecten worden in deze weergave weergegeven. Voor informatie over het beheren van bestaande regels raadpleegt u [Regels beheren](#manage-rules).
 
-1. Tikken **[!UICONTROL Create]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
+1. Selecteren **[!UICONTROL Create]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
 
    ![Gebruikersinterface van regeleditor](assets/rule-editor-ui.png)
 
@@ -377,7 +377,7 @@ Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle obj
 
 De formulierobjecten waarop een of meer geldige regels zijn toegepast, zijn gemarkeerd met een groene stip. Als een van de regels die op een formulierobject worden toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
 
-Het tabblad Functies bevat een set met ingebouwde functies, zoals de Som van, Min of, Max of, Gemiddelde van, Aantal en Formulier valideren. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en te gebruiken voor actie- en voorwaardeinstructies bij het schrijven van regels. U kunt echter ook aangepaste functies](#custom-functions) maken[.
+Het tabblad Functies bevat een set met ingebouwde functies, zoals de Som van, Min of, Max of, Gemiddelde van, Aantal en Formulier valideren. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en te gebruiken voor actie- en voorwaardeinstructies bij het schrijven van regels. U kunt echter wel [aangepaste functies](#custom-functions) ook.
 
 ![Het tabblad Functies](assets/functions.png)
 
@@ -385,7 +385,7 @@ Het tabblad Functies bevat een set met ingebouwde functies, zoals de Som van, Mi
 >
 >U kunt tekstzoekopdrachten uitvoeren op namen en titels van objecten en functies op de tabbladen Objecten en Functies van Forms.
 
-In de linkerstructuur van de formulierobjecten kunt u op de formulierobjecten tikken om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Zie voor meer informatie [Regels kopiëren en plakken](#copy-paste-rules).
+In de linkerstructuur van de formulierobjecten kunt u de formulierobjecten selecteren om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Zie voor meer informatie [Regels kopiëren en plakken](#copy-paste-rules).
 
 ### C. Schakelen tussen formulierobjecten en -functies {#c-form-objects-and-functions-toggle-br}
 
@@ -436,15 +436,15 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Eerst schrijft u de regel om de zichtbaarheid van het veld Sjabloon bij echtgeno(o)t(e) in te stellen op basis van de optie die de gebruiker selecteert voor het keuzerondje Genderstatus.
 
-   Open het aanvraagformulier voor de lening in de ontwerpmodus. Tik op de knop **Burgerlijke staat** component en tik ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Create]** om de regeleditor te starten.
+   Open het aanvraagformulier voor de lening in de ontwerpmodus. Selecteer de **Burgerlijke staat** en selecteert u ![bewerkingsregels](assets/edit-rules.png). Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    Wanneer u de regelredacteur lanceert, wanneer de regel door gebrek wordt geselecteerd. Bovendien wordt het formulierobject (in dit geval de huwelijksstatus) waaruit u de regeleditor hebt gestart, opgegeven in de instructie When.
 
-   U kunt het geselecteerde object niet wijzigen of wijzigen, maar u kunt een ander regeltype selecteren met de vervolgkeuzelijst Regel, zoals hieronder wordt weergegeven. Als u een regel voor een ander object wilt maken, tikt u op Annuleren om de regeleditor af te sluiten en start u deze opnieuw vanuit het gewenste formulierobject.
+   U kunt het geselecteerde object niet wijzigen of wijzigen, maar u kunt een ander regeltype selecteren met de vervolgkeuzelijst Regel, zoals hieronder wordt weergegeven. Als u een regel voor een ander object wilt maken, selecteert u Annuleren om de regeleditor af te sluiten en opnieuw te starten vanuit het gewenste formulierobject.
 
-1. Tikken **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is equal to]**. De **[!UICONTROL Enter a String]** wordt weergegeven.
+1. Selecteren **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is equal to]**. De **[!UICONTROL Enter a String]** wordt weergegeven.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -462,7 +462,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Sleep de **Echtsalaris** veld op het tabblad Formulierobjecten in het dialoogvenster **Object neerzetten of hier selecteren** veld. Of tik op de knop **Object neerzetten of hier selecteren** en selecteer de **Echtsalaris** in het pop-upmenu waarin alle formulierobjecten in het formulier worden vermeld.
+1. Sleep de **Echtsalaris** veld op het tabblad Formulierobjecten in het dialoogvenster **Object neerzetten of hier selecteren** veld. U kunt ook de **Object neerzetten of hier selecteren** en selecteer de **Echtsalaris** in het pop-upmenu waarin alle formulierobjecten in het formulier worden vermeld.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -470,7 +470,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-   Tikken **Gereed** om de regel op te slaan.
+   Selecteren **Gereed** om de regel op te slaan.
 
 1. Herhaal de stappen 1 tot en met 5 om een andere regel te definiëren waarmee het veld Echtloon wordt verborgen als de staat van het huwelijk een enkele regel is. De regel wordt als volgt weergegeven in de regeleditor.
 
@@ -484,13 +484,13 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Vervolgens schrijft u een regel om het beleenbare bedrag van de lening te berekenen, dat 50% van het totale salaris is, en geeft u dit weer in het veld Beleenbaarheid van de lening. Om dit te bereiken, creeert u **Waarde instellen van** regels betreffende het veld voor de toelaatbaarheid van leningen.
 
-   Tik in de ontwerpmodus op de knop **[!UICONTROL Loan Eligibility]** veld en tik ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Create]** om de regeleditor te starten.
+   Selecteer in de ontwerpmodus de optie **[!UICONTROL Loan Eligibility]** veld en selecteer ![bewerkingsregels](assets/edit-rules.png). Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
 1. Selecteren **[!UICONTROL Set Value Of]** van de regeldrop-down.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Tikken **[!UICONTROL Select Option]** en selecteert u **[!UICONTROL Mathematical Expression]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
+1. Selecteren **[!UICONTROL Select Option]** en selecteert u **[!UICONTROL Mathematical Expression]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -504,7 +504,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Tik vervolgens in het gemarkeerde gebied rond het expressieveld en tik op **Expressie uitbreiden**.
+1. Selecteer vervolgens in het gemarkeerde gebied rond het expressieveld en selecteer **Expressie uitbreiden**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -518,7 +518,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    Maak vervolgens een voorwaarde die, wanneer True wordt geretourneerd, de expressie uitvoert.
 
-1. Tikken **Voorwaarde toevoegen** om een instructie When toe te voegen.
+1. Selecteren **Voorwaarde toevoegen** om een instructie When toe te voegen.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -532,7 +532,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    De regel wordt uiteindelijk als volgt weergegeven in de regeleditor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-   Tikken **Gereed** om de regel op te slaan.
+   Selecteren **Gereed** om de regel op te slaan.
 
 1. Herhaal stap 7 tot en met 12 om een andere regel te definiëren om de beleenbaarheid van de lening te berekenen als de burgerlijke stand eenmalig is. De regel wordt als volgt weergegeven in de regeleditor.
 
@@ -659,15 +659,15 @@ Voer de volgende stappen uit om een clientbibliotheek te maken en deze toe te vo
 Nadat u de clientbibliotheek in de CRX-opslagplaats hebt toegevoegd, gebruikt u deze in uw adaptieve formulier. Hiermee kunt u uw aangepaste functie als regel in uw formulier gebruiken. Voer de volgende stappen uit om de clientbibliotheek in het aangepaste formulier toe te voegen.
 
 1. Open het formulier in de bewerkingsmodus.
-Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en tikt u op **Openen**.
-1. Selecteer in de bewerkingsmodus een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en selecteert u **Openen**.
+1. Selecteer in de bewerkingsmodus een component en selecteer vervolgens ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en selecteer vervolgens ![cmppr](assets/cmppr.png).
 1. Voeg in het zijpaneel, onder Naam van clientbibliotheek, uw clientbibliotheek toe. ( `customfunction` in het voorbeeld.)
 
    ![De aangepaste clientbibliotheek van de functie toevoegen](assets/clientlib.png)
 
-1. Selecteer het invoervak en tik op ![bewerkingsregels](assets/edit-rules.png) om de regeleditor te openen.
-1. Tikken **Regel maken**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
-   [![Aangepaste functies gebruiken om een regel te maken](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Tikken **Gereed**. Uw aangepaste functie wordt toegevoegd.
+1. Selecteer het invoervak en selecteer ![bewerkingsregels](assets/edit-rules.png) om de regeleditor te openen.
+1. Selecteren **Regel maken**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
+   [![Aangepaste functies gebruiken om een regel te maken](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Selecteren **Gereed**. Uw aangepaste functie wordt toegevoegd.
 
 #### Ondersteunde typen functiedeclaratie {#function-declaration-supported-types}
 
@@ -734,22 +734,22 @@ var c = {
 
 ## Regels beheren {#manage-rules}
 
-Eventuele bestaande regels op een formulierobject worden weergegeven wanneer u op het object tikt en vervolgens tikt ![edit-rules1](assets/edit-rules1.png). U kunt de titel en een voorvertoning van het regeloverzicht weergeven. Voorts laat UI u de volledige regelsamenvatting uitbreiden en bekijken, de orde van regels veranderen, regels uitgeven, en regels schrappen.
+Eventuele bestaande regels voor een formulierobject worden weergegeven wanneer u het object selecteert en ![edit-rules1](assets/edit-rules1.png). U kunt de titel en een voorvertoning van het regeloverzicht weergeven. Voorts laat UI u de volledige regelsamenvatting uitbreiden en bekijken, de orde van regels veranderen, regels uitgeven, en regels schrappen.
 
 ![list-rules](assets/list-rules.png)
 
 U kunt de volgende handelingen op regels uitvoeren:
 
-* **Uitvouwen/samenvouwen**: De kolom Inhoud in de lijst met regels geeft de inhoud van de regel weer. Tik op ![expandRule-content](assets/expand-rule-content.png) om het uit te breiden.
+* **Uitvouwen/samenvouwen**: De kolom Inhoud in de lijst met regels geeft de inhoud van de regel weer. Als de volledige regelinhoud niet zichtbaar is in de standaardweergave, selecteert u ![expandRule-content](assets/expand-rule-content.png) om het uit te breiden.
 
 * **Opnieuw**: Nieuwe regels die u maakt, worden onder aan de lijst met regels gestapeld. De regels worden van boven naar beneden uitgevoerd. De regel bij de bovenkant voert eerst gevolgd door andere regels van het zelfde type uit. Bijvoorbeeld, als u hebt wanneer, tonen, toelaten, en wanneer de regels bij eerste, tweede, derde, en vierde posities van bovenkant, respectievelijk, wanneer de regel bij de bovenkant eerst wordt uitgevoerd gevolgd door wanneer de regel bij de vierde positie. Vervolgens worden de regels Tonen en Inschakelen uitgevoerd.
 U kunt de volgorde van een regel wijzigen door te tikken ![sorteerregels](assets/sort-rules.png) of sleep het naar de gewenste volgorde in de lijst.
 
-* **Bewerken**: Als u een regel wilt bewerken, schakelt u het selectievakje naast de regeltitel in. Er verschijnen extra opties voor het bewerken en verwijderen van de regel. Tikken **Bewerken** om de geselecteerde regel op de regelredacteur op visuele of wijze van de coderedacteur afhankelijk van de wijze te openen die wordt gebruikt om de regel tot stand te brengen.
+* **Bewerken**: Als u een regel wilt bewerken, schakelt u het selectievakje naast de regeltitel in. Er verschijnen extra opties voor het bewerken en verwijderen van de regel. Selecteren **Bewerken** om de geselecteerde regel op de regelredacteur op visuele of wijze van de coderedacteur afhankelijk van de wijze te openen die wordt gebruikt om de regel tot stand te brengen.
 
-* **Verwijderen**: Als u een regel wilt verwijderen, selecteert u de regel en tikt u op **Verwijderen**.
+* **Verwijderen**: Als u een regel wilt verwijderen, selecteert u de regel en selecteert u **Verwijderen**.
 
-* **In-/uitschakelen**: Mogelijk moet u het gebruik van een regel tijdelijk opschorten. U kunt een of meer regels selecteren en op Uitschakelen tikken op de werkbalk Handelingen tikken om deze uit te schakelen. Als een regel is uitgeschakeld, wordt deze niet uitgevoerd tijdens de runtime. Als u een uitgeschakelde regel wilt inschakelen, selecteert u deze en tikt u op Inschakelen op de werkbalk Handelingen. De statuskolom van de regel geeft aan of de regel is ingeschakeld of uitgeschakeld.
+* **In-/uitschakelen**: Mogelijk moet u het gebruik van een regel tijdelijk opschorten. U kunt een of meer regels selecteren en Uitschakelen selecteren op de werkbalk Handelingen om deze uit te schakelen. Als een regel is uitgeschakeld, wordt deze niet uitgevoerd tijdens de runtime. Als u een uitgeschakelde regel wilt inschakelen, selecteert u deze en selecteert u Inschakelen op de werkbalk Handelingen. De statuskolom van de regel geeft aan of de regel is ingeschakeld of uitgeschakeld.
 
 ![disableraar](assets/disablerule.png)
 
@@ -759,23 +759,23 @@ U kunt een regel kopiëren-kleven van één gebied aan andere gelijkaardige gebi
 
 Ga als volgt te werk om regels te kopiëren en te plakken:
 
-1. Tik op het formulierobject waarvan u een regel wilt kopiëren en tik op de componentwerkbalk ![editrule](assets/editrule.png). De gebruikersinterface van de regeleditor wordt weergegeven terwijl het formulierobject is geselecteerd en de bestaande regels worden weergegeven.
+1. Selecteer het formulierobject waaruit u een regel wilt kopiëren en selecteer op de werkbalk van het onderdeel ![editrule](assets/editrule.png). De gebruikersinterface van de regeleditor wordt weergegeven terwijl het formulierobject is geselecteerd en de bestaande regels worden weergegeven.
 
    ![copyrule](assets/copyrule.png)
 
    Voor informatie over het beheren van bestaande regels raadpleegt u [Regels beheren](#manage-rules).
 
-1. Schakel het selectievakje naast de regeltitel in. Er verschijnen extra opties voor het beheer van de regel. Tikken **Kopiëren**.
+1. Schakel het selectievakje naast de regeltitel in. Er verschijnen extra opties voor het beheer van de regel. Selecteren **Kopiëren**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Selecteer een ander formulierobject waarop u de regel wilt plakken en tik **Plakken**. Bovendien kunt u de regel bewerken om er wijzigingen in aan te brengen.
+1. Selecteer een ander formulierobject waarop u de regel wilt plakken en selecteer **Plakken**. Bovendien kunt u de regel bewerken om er wijzigingen in aan te brengen.
 
    >[!NOTE]
    >
    >U kunt een regel alleen in een ander formulierobject plakken als dat formulierobject de gebeurtenis van de gekopieerde regel ondersteunt. Een knop ondersteunt bijvoorbeeld de gebeurtenis click. U kunt een regel met een klikgebeurtenis aan een knoop maar niet aan een controledoos kleven.
 
-1. Tikken **Gereed** om de regel op te slaan.
+1. Selecteren **Gereed** om de regel op te slaan.
 
 ## Geneste expressies {#nestedexpressions}
 
@@ -785,7 +785,7 @@ Hieronder ziet u een voorbeeld van een geneste regel die een bericht weergeeft a
 
 ![complexexpressie](assets/complexexpression.png)
 
-U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Tik en houd de muisaanwijzer boven de greep ( ![handgreep](assets/handle.png)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
+U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Selecteren en boven de greep plaatsen ( ![handgreep](assets/handle.png)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
 
 ![slepen en neerzetten](assets/drag-and-drop.png)
 

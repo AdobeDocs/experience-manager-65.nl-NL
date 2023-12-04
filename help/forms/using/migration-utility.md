@@ -9,9 +9,9 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1736'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
 
 1. Voer de volgende handelingen uit om de migratie uit te voeren:
 
-   * Migreren **elementen** tikken op AEM Forms Assets Migration en tikken in het volgende scherm op **Migratie starten**. De volgende code wordt gemigreerd:
+   * Migreren **elementen**, selecteert u AEM Forms Assets Migration en selecteert u in het volgende scherm de optie **Migratie starten**. De volgende code wordt gemigreerd:
 
       * Aangepaste formulieren
       * Documentfragmenten
@@ -103,18 +103,18 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
    >
    >Tijdens de migratie van middelen vindt u mogelijk waarschuwingsberichten zoals &quot;Conflict gevonden voor...&quot;. Dergelijke berichten geven aan dat de regels voor sommige componenten in adaptieve formulieren niet kunnen worden gemigreerd. Als de component bijvoorbeeld een gebeurtenis met zowel regels als scripts had, als regels optreden nadat een script is uitgevoerd, worden de regels voor de component niet gemigreerd. U kunt [dergelijke regels migreren door de regeleditor te openen](#migrate-rules) in adaptieve vorm.
 
-   * Tik op Aangepaste componenten om aangepaste formulieren te migreren **Migratie van aangepaste Forms-componenten** en tikken op de pagina Custom Components Migration **Migratie starten**. De volgende code wordt gemigreerd:
+   * Als u aangepaste componenten wilt migreren, selecteert u **Migratie van aangepaste Forms-componenten** en selecteert u op de pagina Custom Components Migration de optie **Migratie starten**. De volgende code wordt gemigreerd:
 
       * Aangepaste componenten geschreven voor Adaptive Forms
       * Eventuele componentbedekkingen.
 
-   * Tik op Aangepaste formuliersjablonen om deze te migreren **Adaptieve Forms-sjabloonmigratie** en tikken op de pagina Custom Components Migration **Migratie starten**. De volgende code wordt gemigreerd:
+   * Als u aangepaste formuliersjablonen wilt migreren, selecteert u **Adaptieve Forms-sjabloonmigratie** en selecteert u op de pagina Custom Components Migration de optie **Migratie starten**. De volgende code wordt gemigreerd:
 
       * Aangepaste formuliersjablonen die zijn gemaakt onder `/apps` of `/conf` AEM Sjablooneditor gebruiken.
 
    * AEM Forms Cloud Configuration-services migreren om het nieuwe, contextbewuste cloudservicepparadigma te gebruiken, dat de interface voor aanraakbediening bevat (onder `/conf`). Wanneer u AEM Forms Cloud Configuration Services migreert, kunt u de cloudservices in `/etc` worden verplaatst naar `/conf`. Als u geen aanpassingen voor cloudservices hebt die afhankelijk zijn van de verouderde paden (`/etc`), raadt de Adobe aan het migratiehulpprogramma uit te voeren nadat u de upgrade naar 6.5 hebt uitgevoerd; de aanraakinterface voor cloudconfiguratie te gebruiken voor verdere werkzaamheden. Als u een bestaande aanpassing van de cloudservices hebt, blijft u de klassieke interface gebruiken bij de geüpgrade installatie totdat de aanpassingen zijn bijgewerkt en worden uitgelijnd op de gemigreerde paden (`/conf`) en voert u vervolgens het migratiehulpprogramma uit.
 
-   Migreren **AEM Forms-cloudservices** tikken op AEM Forms Cloud Configuration Migration (migratie van cloudconfiguratie is onafhankelijk van het compatibiliteitspakket voor AEMFD). Tik op Migratie van AEM Forms Cloud Configurations en tik vervolgens op de pagina Configuration Migration (Migratie van configuratie) op **Migratie starten**:
+   Migreren **AEM Forms-cloudservices**, die het volgende bevatten, selecteert u Migratie van AEM Forms Cloud Configuration (migratie naar cloudconfiguratie is onafhankelijk van het compatibiliteitspakket AEMFD). Selecteer Migratie van AEM Forms Cloud Configurations en selecteer vervolgens op de pagina Configuration Migration de optie **Migratie starten**:
 
    * Cloudservices formuliergegevensmodel
 
@@ -152,13 +152,13 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
 
 Deze componenten kunnen worden gemigreerd door ze te openen in de Rule Editor in de Adaptive Forms Editor.
 
-* Tik op Adaptive Forms Custom Components Migration en tik in het volgende scherm op Start Migration om regels en scripts te migreren (niet vereist als u vanaf 6.3 een upgrade uitvoert) in aangepaste componenten. De volgende code wordt gemigreerd:
+* Als u regels en scripts wilt migreren (niet vereist als u de upgrade uitvoert vanaf 6.3) in aangepaste componenten, selecteert u Aangepaste Forms-componentmigratie en selecteert u Migratie starten in het volgende scherm. De volgende code wordt gemigreerd:
 
    * Regels en Scripts die zijn gemaakt met een regeleditor (6.1 FP1 en hoger)
 
    * Scripts die zijn gemaakt met het tabblad Script in de gebruikersinterface van 6.1 en eerder
 
-* Tik op Adaptive Forms Template Migration en tik in het volgende scherm op Start Migration om sjablonen te migreren (niet vereist als u een upgrade uitvoert van 6.3 naar 6.4). De volgende code wordt gemigreerd:
+* Als u sjablonen wilt migreren (niet vereist als u een upgrade uitvoert van 6.3 en 6.4), selecteert u Adaptieve Forms-sjabloonmigratie en selecteert u Migratie starten in het volgende scherm. De volgende code wordt gemigreerd:
 
    * Oude sjablonen - de aangepaste formuliersjablonen die zijn gemaakt onder /apps met AEM 6.1 Forms of eerder. Dit geldt ook voor de scripts die zijn gedefinieerd in de sjablooncomponenten.
 

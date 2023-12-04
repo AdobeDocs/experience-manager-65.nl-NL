@@ -7,9 +7,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -37,19 +37,19 @@ U wilt bijvoorbeeld dat alle formulierauteurs bepaalde tekstvakken, navigatiekno
 
 U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan te navigeren **Adobe Experience Manager > Gereedschappen > Sjablonen**. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen. AEM biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Ga voor meer informatie over het maken van mappen naar [Sjabloonmappen](/help/sites-developing/page-templates-editable.md).
 
-Zodra u tikt om een map te openen, ziet u een knop Maken waarmee u een sjabloon voor adaptieve formulieren kunt maken.
+Nadat u hebt opgegeven dat u een map wilt openen, verschijnt er een knop Maken waarmee u een sjabloon voor adaptieve formulieren kunt maken.
 
 ### Een sjabloon maken {#create-template}
 
 Nadat u een map hebt gemaakt, opent u de map en voert u de volgende stappen uit om een sjabloon te maken:
 
-1. Tik in de Sjabloonconsole op **Maken** in de map die u hebt gemaakt.
-1. Selecteer in de sectie Sjabloontype kiezen de optie **Adaptief formuliersjabloon** en tikken **Volgende**.
+1. Selecteer in de Sjabloonconsole de optie **Maken** in de map die u hebt gemaakt.
+1. Selecteer in de sectie Sjabloontype kiezen de optie **Adaptief formuliersjabloon** en selecteert u **Volgende**.
 
-1. Geef in de sectie Sjabloondetails een sjabloontitel op en tik op **Maken**.
+1. Geef in de sectie Sjabloondetails een sjabloontitel op en selecteer **Maken**.
 U kunt een beschrijving en miniatuur opgeven die u kunt zien wanneer u de gemaakte sjabloon kunt selecteren tijdens het ontwerpen van het formulier.
 
-1. Tikken **Gereed** om terug te keren naar de console, of tikken **Openen** om de sjabloon in de editor te openen.
+1. Selecteren **Gereed** om naar de console terug te keren, of selecteer **Openen** om de sjabloon in de editor te openen.
 
 ### UI voor sjablooneditor {#template-editor-ui}
 
@@ -113,7 +113,7 @@ U voegt bijvoorbeeld de koptekstcomponent in de sjabloon toe. Wanneer u de compo
 
 Als de optie Begininhoud is geselecteerd, wordt de container van het adaptieve formulier van de sjabloon geopend als een adaptief formulier voor bewerking. Net als bij het ontwerpen van een adaptief formulier kunt u initiële instellingen opgeven, zoals het selecteren van een thema en het verzenden van handelingen.
 
-Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, tikt u vóór de voorvertoning op de pagina-werkbalk op ![canvas-drop-down](assets/canvas-drop-down.png) **> Eerste inhoud**.
+Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, selecteert u voordat u een voorbeeld weergeeft op de pagina-werkbalk ![canvas-drop-down](assets/canvas-drop-down.png) **> Eerste inhoud**.
 ![Oorspronkelijke inhoudslaag in de Sjablooneditor](assets/initial-content-layer.png)
 
 Oorspronkelijke inhoudslaag in de Sjablooneditor met de adaptieve formuliercontainer geselecteerd voor het opgeven van eigenschappen.
@@ -144,7 +144,7 @@ Wijzig de laag van Structuur in Begininhoud en voeg inhoud toe aan het formulier
 * U kunt de deelvenstercomponent slepen en neerzetten vanuit de deelvensterbrowser in de zijbalk.
 * U kunt een onderliggend deelvenster van het dialoogvenster `guideRootPanel` op de werkbalk van de component.
 
-Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster met onderliggende items van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk te openen. De elementnamen wijzigen als `general-info` en `professional-info`en titels als algemene informatie en beroepsinformatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tikken ![cmppr](assets/cmppr.png) in de componentwerkbalk om de eigenschappen te openen. Selecteer in het veld Indeling van deelvenster de optie **Tabs boven** en tikken **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
+Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster met onderliggende items van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en selecteer ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk te openen. De elementnamen wijzigen als `general-info` en `professional-info`en titels als algemene informatie en beroepsinformatie. Selecteer in het zijpaneel de inhoud die u wilt openen in de inhoudbrowser. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Selecteren ![cmppr](assets/cmppr.png) in de componentwerkbalk om de eigenschappen te openen. Selecteer in het veld Indeling van deelvenster de optie **Tabs boven** en selecteert u **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
 
 #### Inhoud toevoegen op tabbladen {#adding-content-in-tabs}
 
@@ -165,7 +165,7 @@ Wanneer u een sjabloon maakt, wordt deze toegevoegd als concept. Schakel de sjab
 1. Navigeren naar **Adobe Experience Manager > Gereedschappen > Sjablonen** en opent u de map waarin u de sjabloon hebt gemaakt.
 
 1. De sjabloon die u hebt gemaakt, is gemarkeerd als Concept.
-1. Selecteer de sjabloon en tik op **Inschakelen** in de werkbalk.
+1. Selecteer de sjabloon en selecteer **Inschakelen** in de werkbalk.
 Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u wordt gevraagd een sjabloon te kiezen.
 
 ## Een sjabloon importeren of exporteren {#importing-or-exporting-a-template}

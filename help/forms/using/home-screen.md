@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Het volgende cijfer is geannoteerd met vraag-outs aan de essentiële componenten
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **Knop Menu**: Tik op de knop **Menu** om naar Taken, Forms, Postvak UIT en Instellingen te navigeren. Als uw AEM Forms-app is verbonden met een AEM Forms JEE-server, kunt u de optie Taken zien. De optie Taken slaat ook de concepten op die van taken in een proces worden gecreeerd. Voor AEM Forms OSGi-servers is de optie Taken verborgen. De opgeslagen formulieren en concepten worden opgeslagen voordat deze worden gesynchroniseerd met de server. Alle opgeslagen formulieren en concepten in het Postvak UIT worden geüpload naar de AEM Forms-server wanneer de toepassing wordt [gesynchroniseerd met de server](../../forms/using/sync-app.md). Zie voor informatie over Instellingen [Algemene instellingen bijwerken](../../forms/using/update-general-settings.md).
-1. **Taak of formulier**: Tik op de weergegeven taak of het formulier waarmee u wilt werken.
-1. **Horizontale ovaal**: Hiermee geeft u aan dat er acties beschikbaar zijn voor het formulier. Tikken op de ellips geeft de handelingen en beschrijving weer die de auteur heeft opgegeven. De **Concept verwijderen** en **Voltooid** is zichtbaar wanneer u op de ellips tikt.
-1. **Pictogram Vernieuwen**: Tik op het pictogram Vernieuwen zodat u uw toepassing kunt synchroniseren met de AEM Forms-server.
+1. **Knop Menu**: Selecteer de **Menu** om naar Taken, Forms, Postvak UIT en Instellingen te navigeren. Als uw AEM Forms-app is verbonden met een AEM Forms JEE-server, kunt u de optie Taken zien. De optie Taken slaat ook de concepten op die van taken in een proces worden gecreeerd. Voor AEM Forms OSGi-servers is de optie Taken verborgen. De opgeslagen formulieren en concepten worden opgeslagen voordat deze worden gesynchroniseerd met de server. Alle opgeslagen formulieren en concepten in het Postvak UIT worden geüpload naar de AEM Forms-server wanneer de toepassing wordt [gesynchroniseerd met de server](../../forms/using/sync-app.md). Zie voor informatie over Instellingen [Algemene instellingen bijwerken](../../forms/using/update-general-settings.md).
+1. **Taak of formulier**: Selecteer de weergegeven taak of het formulier waarmee u wilt werken.
+1. **Horizontale ovaal**: Hiermee geeft u aan dat er acties beschikbaar zijn voor het formulier. Tikken op de ellips geeft de handelingen en beschrijving weer die de auteur heeft opgegeven. De **Concept verwijderen** en **Voltooid** is zichtbaar wanneer u de ellips selecteert.
+1. **Pictogram Vernieuwen**: Selecteer het vernieuwingspictogram zodat u uw toepassing kunt synchroniseren met de AEM Forms-server.
 
 ### Het startscherm aanpassen {#customizing-the-home-screen}
 

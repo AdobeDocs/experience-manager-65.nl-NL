@@ -6,9 +6,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3807'
+source-wordcount: '3790'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Na een [briefsjabloon is gemaakt in Correspondentenbeheer](../../forms/using/cre
 
 Selecteer de brief aan voorproef gebruikend de volgende stappen:
 
-1. Tik op de pagina Letters **Selecteren**.
+1. Selecteer op de pagina Letters de optie **Selecteren**.
 1. Selecteer de gewenste letter door erop te tikken.
 
    ![Letter selecteren](assets/1_selectletter.png)
 
    Letter selecteren
 
-1. Selecteer bij een op gegevenswoordenboek gebaseerde letter de optie **Voorvertoning** > **Voorvertoning**. Of selecteer bij een op data gebaseerde letter de optie **Voorvertoning**. U kunt de muisaanwijzer ook boven een letter plaatsen (zonder deze te selecteren) en op het pictogram Lettertypevoorvertoning tikken om een voorvertoning van de letter weer te geven.
+1. Selecteer bij een op gegevenswoordenboek gebaseerde letter de optie **Voorvertoning** > **Voorvertoning**. Of selecteer bij een op data gebaseerde letter de optie **Voorvertoning**. U kunt de muisaanwijzer ook boven een letter plaatsen (zonder deze te selecteren) en het pictogram Lettertypevoorvertoning selecteren om een voorvertoning van de letter weer te geven.
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ Vul op het tabblad Gegevens de beschikbare lay-outvelden en plaatsaanduidingen i
 
 1. Voer de vereiste gegevens- en inhoudsvariabelen in de velden in. Vul alle verplichte velden in die zijn gemarkeerd met een sterretje (&#42;) om de **Verzenden** knop.
 
-   Tik op een gegevensveldwaarde in de voorvertoning van de HTML-letter om het desbetreffende gegevensveld op het tabblad Gegevens te markeren.
+   Selecteer een gegevensveldwaarde in de voorvertoning van de HTML letter om het bijbehorende gegevensveld op het tabblad Gegevens te markeren.
 
    ![Gegevens in de letter invoeren](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
@@ -75,7 +75,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    ![Inhoud, tabblad - Markeringsmodule in inhoud](assets/3_content.png)
 
-1. Bewerk desgewenst de inhoudsmodules op het tabblad Inhoud. Als u de relevante inhoudsmodule in de inhoudshiërarchie de focus wilt geven, kunt u op de desbetreffende regel of alinea in de lettervoorvertoning tikken of rechtstreeks in de inhoudshiërarchie op de inhoudsmodule tikken.
+1. Bewerk desgewenst de inhoudsmodules op het tabblad Inhoud. Als u de relevante inhoudsmodule in de inhoudshiërarchie de focus wilt geven, kunt u de desbetreffende regel of alinea in de lettervoorvertoning selecteren of de inhoudsmodule rechtstreeks in de inhoudshiërarchie selecteren.
 
    De regel &#39;&#39;We hebben reviseren...&#39;&#39; wordt bijvoorbeeld geselecteerd in de onderstaande afbeelding en de relevante inhoudsmodule wordt geselecteerd op het tabblad Inhoud.
 
@@ -86,8 +86,8 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
    Voor meer informatie over de acties beschikbaar voor diverse modules in het Create Correspondent gebruikersinterface, zie [Handelingen en informatie beschikbaar in de gebruikersinterface Correspondentie maken](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
 1. Gebruik het veld Zoeken om de inhoudsmodules te zoeken. Voer een volledige of gedeeltelijke naam of titel van de inhoudsmodule in om deze in de correspondentie te zoeken.
-1. Tik op het pictogram Weergave ( ![display](assets/display.png)) vóór een lijst, tekst, voorwaarde, of doelgebied om het in de brief te tonen of te verbergen.
-1. Tik op de betreffende code om een inline of bewerkbare tekstmodule te bewerken **Bewerken** icon ( ![edittextmodule](assets/edittextmodule.png)) of dubbelklik op de relevante tekstmodule in de lettertypevoorvertoning.
+1. Selecteer het weergavepictogram ( ![display](assets/display.png)) vóór een lijst, tekst, voorwaarde, of doelgebied om het in de brief te tonen of te verbergen.
+1. Als u een inline- of bewerkbare tekstmodule wilt bewerken, selecteert u de desbetreffende **Bewerken** icon ( ![edittextmodule](assets/edittextmodule.png)) of dubbelklik op de relevante tekstmodule in de lettertypevoorvertoning.
 
    Het systeem geeft een teksteditor weer om de tekst te bewerken en op te maken.
 
@@ -131,22 +131,22 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    Correspondence Management biedt ondersteuning voor 210 speciale tekens. De beheerder kan [Voeg ondersteuning voor meer/aangepaste speciale tekens toe door deze aan te passen](../../forms/using/custom-special-characters.md).
 
-1. Selecteer de tekst en tik op Markeringskleur om\gedeelten van tekst in een bewerkbare inlinemodule te benadrukken.
+1. Als u\gedeelten van tekst in een bewerkbare inline-module wilt benadrukken, selecteert u de tekst en selecteert u Markeringskleur.
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   U kunt rechtstreeks op een basiskleur tikken `**[A]**` aanwezig in het palet Basiskleuren of tik op **Selecteren** na gebruik van de schuifregelaar `**[B]**` om de juiste tint van de kleur te kiezen.
+   U kunt een basiskleur rechtstreeks selecteren `**[A]**` aanwezig in het palet Basiskleuren of selecteer **Selecteren** na gebruik van de schuifregelaar `**[B]**` om de juiste tint van de kleur te kiezen.
 
-   U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging te selecteren `**[C]**` om de exacte kleur te maken en tik vervolgens op Selecteren `**[D]**` om de kleur toe te passen om de tekst te markeren.
+   U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging te selecteren `**[C]**` om de nauwkeurige kleur tot stand te brengen en dan selecteren Uitgezocht `**[D]**` om de kleur toe te passen om de tekst te markeren.
 
    ![textbackgroundColor](assets/textbackgroundcolor.png)
 
-1. Breng de gewenste wijzigingen in de inhoud en de indeling aan en tik op **Opslaan**. Tik ( ![editnextmodulecr](assets/editnextmoduleccr.png)) om te schakelen tussen bewerkbare tekstmodules of tikken **Opslaan en volgende** om de wijzigingen op te slaan en naar de volgende bewerkbare tekstmodule te gaan.
-1. Het systeem geeft ook de niet-ingevulde variabelen voor elk van de vertakkingen weer. Wanneer er geen niet-gevulde variabelen zijn, worden niet-gevulde variabelen weergegeven als 0. Als er een variabele zonder vulling is, kunt u op een vertakking tikken om deze uit te vouwen en de variabele zonder vulling te zoeken. Gebruik de inhoudwerkbalk om inhoud te verwijderen, de inspringing van de inhoud te vergroten/verkleinen en pagina-einden voor/na de inhoud in te voegen.
+1. Breng de gewenste wijzigingen in de inhoud en opmaak aan en selecteer **Opslaan**. Selecteren ( ![editnextmodulecr](assets/editnextmoduleccr.png)) om te schakelen tussen bewerkbare tekstmodules of selecteer **Opslaan en volgende** om de wijzigingen op te slaan en naar de volgende bewerkbare tekstmodule te gaan.
+1. Het systeem geeft ook de niet-ingevulde variabelen voor elk van de vertakkingen weer. Wanneer er geen niet-gevulde variabelen zijn, worden niet-gevulde variabelen weergegeven als 0. Als er een variabele zonder vulling is, kunt u een vertakking selecteren om deze uit te breiden en de variabele zonder vulling te zoeken. Gebruik de inhoudwerkbalk om inhoud te verwijderen, de inspringing van de inhoud te vergroten/verkleinen en pagina-einden voor/na de inhoud in te voegen.
 
    U kunt pagina-einden boven en onder gegevensmodules invoegen, zelfs als deze deel uitmaken van lijsten en voorwaarden.
 
-1. Inhoudsvariabele openen/sluiten ( ![opencontentVariables](assets/opencontentvariables.png)) om de inhoudsvariabelen te openen en op de juiste wijze te vullen.
+1. Selecteer Inhoudsvariabele openen/sluiten ( ![opencontentVariables](assets/opencontentvariables.png)) om de inhoudsvariabelen te openen en op de juiste wijze te vullen.
 1. Wanneer u de niet-gevulde variabele correct hebt ingevuld, wordt het aantal niet-gevulde variabelen ingesteld op 0.
 
    In het Create de gebruikersinterface van de Correspondentie, wordt het niet gevulde veranderlijke aantal getoond op elk niveau van de hiërarchie van om het even welke module die minstens één variabele bevat. Als een module niet-gevulde variabelen bevat, wordt de telling getoond bij de variabele, de module, het doelgebied, en het niveau van de brievenmalplaatje.
@@ -204,8 +204,8 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 ### Bijlagen beheren {#manage-attachments}
 
 1. Selecteren **Bijlagen**. Met Correspondentiebeheer worden de beschikbare bijlagen weergegeven, zoals ingesteld tijdens het maken van de lettertypesjabloon.
-1. U kunt ervoor kiezen geen bijlage samen met de brief te verzenden door op het weergavepictogram te tikken en u kunt op het kruis in de bijlage tikken om het uit de brief te verwijderen. Voor de opgegeven bijlagen worden tijdens het maken van een lettertypesjabloon (verplicht) de pictogrammen Weergeven en Verwijderen uitgeschakeld.
-1. Tik op de bibliotheektoegang ( ![bibliotheektoegang](assets/libraryaccess.png)) gebruiken om de inhoudsbibliotheek te openen en DAM-elementen in te voegen als bijlagen.
+1. U kunt ervoor kiezen geen bijlage samen met de letter te verzenden door op het weergavepictogram te tikken en u kunt het kruis in de bijlage selecteren om het uit de letter te verwijderen. Voor de opgegeven bijlagen worden tijdens het maken van een lettertypesjabloon (verplicht) de pictogrammen Weergeven en Verwijderen uitgeschakeld.
+1. Selecteer de bibliotheektoegang ( ![bibliotheektoegang](assets/libraryaccess.png)) gebruiken om de inhoudsbibliotheek te openen en DAM-elementen in te voegen als bijlagen.
 
    >[!NOTE]
    >
@@ -219,13 +219,13 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de manier kijkt u het aan en voorlegt aan de diverse postprocessen.
 
-1. Tik op **Bewerkbare secties markeren**.
+1. Selecteer **Bewerkbare secties markeren**.
 
    De bewerkbare inhoud van de letter wordt gemarkeerd met een grijze achtergrond.
 
    ![Bewerkbare inhoud markeren](assets/4_highlightmoduleincontent-1.png)
 
-1. Bewerk desgewenst de inhoudsmodules op het tabblad Inhoud. Als u de relevante inhoudsmodule in de inhoudshiërarchie de focus wilt geven, kunt u op de desbetreffende regel of alinea in de lettervoorvertoning tikken of rechtstreeks in de inhoudshiërarchie op de inhoudsmodule tikken.
+1. Bewerk desgewenst de inhoudsmodules op het tabblad Inhoud. Als u de relevante inhoudsmodule in de inhoudshiërarchie de focus wilt geven, kunt u de desbetreffende regel of alinea in de lettervoorvertoning selecteren of de inhoudsmodule rechtstreeks in de inhoudshiërarchie selecteren.
 
    De regel &quot;Toegang verlenen tot...&quot; wordt bijvoorbeeld in de onderstaande afbeelding geselecteerd en de bijbehorende inhoudsmodule op het tabblad Inhoud geselecteerd.
 
@@ -233,7 +233,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    Voor meer informatie over de acties beschikbaar voor diverse modules in het Create Correspondent gebruikersinterface, zie [Handelingen en informatie beschikbaar in de gebruikersinterface Correspondentie maken](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Als u een pagina-einde aan de letter wilt toevoegen, tikt u op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagebreekervoor](assets/pagebreakbeforeafter.png)).
+1. Als u een pagina-einde aan de letter wilt toevoegen, selecteert u waar u een pagina-einde wilt invoegen en kiest u Pagina-einde voor of Pagina-einde na ( ![pagebreekervoor](assets/pagebreakbeforeafter.png)).
 
    Er wordt een expliciete tijdelijke aanduiding voor een pagina-einde ingevoegd in de letter. Zie de voorvertoning van de afgevlakte PDF als u wilt zien hoe een expliciet pagina-einde de letter beïnvloedt.
 
@@ -243,13 +243,13 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    ![Expliciet pagina-einde](assets/8_pagebreak.png)
 
-1. Tik op Opslaan als concept om de brief als concept op te slaan. U kunt deze later blijven bewerken. Als u deze optie wilt gebruiken, moet uw brief [gepubliceerd](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Zie Conceptinstantie onder voor meer informatie [Concepten opslaan en briefinstanties verzenden](#savingdrafts).
+1. Als u de brief wilt opslaan als een concept, waaraan u later kunt blijven werken, selecteert u Opslaan als concept. Als u deze optie wilt gebruiken, moet uw brief [gepubliceerd](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Zie Conceptinstantie onder voor meer informatie [Concepten opslaan en briefinstanties verzenden](#savingdrafts).
 
    ![saveascript](assets/saveasdraft.png)
 
-   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik vervolgens op **Gereed**. U kunt deze id later gebruiken om [conceptbrief opnieuw laden](submit-letter-topostprocess.md#reloaddraft).
+   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en selecteer **Gereed**. U kunt deze id later gebruiken om [conceptbrief opnieuw laden](submit-letter-topostprocess.md#reloaddraft).
 
-1. Tik op ( ![voorvertoning](assets/preview.png)) Voorvertoning.
+1. Selecteer ( ![voorvertoning](assets/preview.png)) Voorvertoning.
 
    De letter wordt weergegeven als een samengevoegde PDF. De afgevlakte PDF is de exacte weergave van de letter zoals deze wordt verzonden met de juiste lettertypen, onderbrekingen en layout van de letter.
 
@@ -257,13 +257,13 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
    >
    >Als u Mozilla Firefox en het type van de vertoning van HTML gebruikt, om de brief als afgevlakte PDF te voorproef, zorg ervoor dat u de inheemse browser stop-in en niet de stop van Acrobat gebruikt. Als u de eigen browserplug-in wilt selecteren, gaat u naar de instellingen van Mozilla Firefox en selecteert u Voorvertoning in Firefox voor inhoudstype PDF.
 
-1. Tik op PDF als de voorvertoning van de afgevlakte afbeelding naar wens is **Verzenden** om de brief in te dienen. Of tik op **Voorvertoning afsluiten** om terug te gaan naar de gebruikersinterface voor correspondentie maken van de brief om wijzigingen aan te brengen in de brief. Wanneer u op Verzenden tikt en de configuratie Letterinstantie beheren is ingeschakeld in de instantie Publiceren, wordt de instantie Verzendbrief gegenereerd.
+1. Als de voorvertoning van de afgevlakte PDF voldoende is, selecteert u **Verzenden** om de brief in te dienen. Of selecteer **Voorvertoning afsluiten** om terug te gaan naar de gebruikersinterface voor correspondentie maken van de brief om wijzigingen aan te brengen in de brief. Wanneer u Submit selecteert, als de configuratie van de Instantie van de Brief van het Beheer op de Publish instantie wordt toegelaten, wordt de voorgelegde brieveninstantie geproduceerd.
 
    Voor meer informatie, zie de Instantie van het Ontwerp onder het Opslaan van concepten en het voorleggen van brievenexemplaren.
 
    U kunt de brief als ontwerp ook bewaren om de brief later te veranderen.
 
-   Nadat u de vereiste wijzigingen hebt aangebracht, kunt u de letter verzenden vanuit de HTML5-voorvertoning of nogmaals op Voorvertoning tikken om de afgevlakte PDF-uitvoer te bekijken.
+   Nadat u de vereiste wijzigingen hebt aangebracht, kunt u de letter verzenden vanuit de HTML5-voorvertoning of nogmaals Voorvertoning selecteren om de afgevlakte PDF-uitvoer te bekijken.
 
    Zie voor informatie over de verschillen tussen HTML5-formulieren en PDF forms [Verschil tussen HTML5-formulieren en PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -354,10 +354,10 @@ Hieronder vindt u de voordelen en functionaliteit die beschikbaar zijn in de HTM
 
 **Voordelen van mobiele formulieren/HTML-voorbeeld**
 
-* **Tik op een gegevensveldwaarde om het desbetreffende gegevensveld te markeren**: In de gebruikersinterface Correspondentie maken kunt u tikken op een gegevensveldwaarde in de letter om het corresponderende gegevensveld te markeren op het tabblad Gegevens. Zie voor meer informatie [Gegevens invoeren](#enterdata).
+* **Een gegevensveldwaarde selecteren om het desbetreffende gegevensveld te markeren**: In de gebruikersinterface Correspondentie maken kunt u een gegevensveldwaarde in de letter selecteren om het bijbehorende gegevensveld op het tabblad Gegevens te markeren. Zie voor meer informatie [Gegevens invoeren](#enterdata).
 
 * **Browserondersteuning**: Browsers krijgen geleidelijk een intrekkingsondersteuning voor NPAPI, wat invloed heeft op de PDF-voorvertoning van de letter. Dit heeft geen invloed op de voorbeeldweergave van HTML/mobiele formulieren.
-* **Bewerkbare inhoud in een letter markeren**: In de gebruikersinterface Correspondentie maken kunt u op Bewerkbare inhoud markeren tikken om alle bewerkbare inhoud in de letter grijs te markeren. Zie voor meer informatie [Inhoud beheren](#managecontent).
+* **Bewerkbare inhoud in een letter markeren**: In de gebruikersinterface Correspondentie maken kunt u Bewerkbare inhoud markeren selecteren om alle bewerkbare inhoud in de letter grijs te markeren. Zie voor meer informatie [Inhoud beheren](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Voordelen van PDF-voorvertoning**

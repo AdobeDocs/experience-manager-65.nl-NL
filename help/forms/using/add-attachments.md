@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Bijlagen toevoegen in formulieren die zijn gesynchroniseerd met AEM Forms Workflow Server (AEM Forms in JEE) {#adding-annotations}
 
-Met de AEM Forms-app kunt u afbeeldingen, gekrabde notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. U kunt op de knop voor bijlagen tikken ![bijlagen-app](assets/attachments-app.png) om alle bijlagen samen in een formulier te bekijken. In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als het formulier geen bijlagen bevat, tikt u op de knop Bijlagen ![aanhalen](assets/attch.png), kunt u opties voor het bijvoegen van foto&#39;s of krabbels gebruiken.
+Met de AEM Forms-app kunt u afbeeldingen, gekrabde notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. U kunt de knop Bijlage selecteren ![bijlagen-app](assets/attachments-app.png) om alle bijlagen samen in een formulier te bekijken. In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als het formulier geen bijlagen bevat, selecteert u de knop Bijlagen ![aanhalen](assets/attch.png), kunt u opties voor het bijvoegen van foto&#39;s of krabbels gebruiken.
 
 U kunt kiezen uit de volgende opties:
 
@@ -34,7 +34,7 @@ U kunt kiezen uit de volgende opties:
 
 ### Het scherm Bijlagen {#the-attachments-screen}
 
-Tik op ![bijlagen-app](assets/attachments-app.png). U kunt bijlagen hier toevoegen, een andere naam geven en verwijderen.
+Selecteer ![bijlagen-app](assets/attachments-app.png). U kunt bijlagen hier toevoegen, een andere naam geven en verwijderen.
 
 ![Alle bijlagen op een plaats](assets/attachments-screen.png)
 
@@ -44,26 +44,26 @@ U kunt de **+** in het venster Bijlagen om een ander beeld, krabbeltje of tekst 
 
 U kunt de camera van uw mobiele apparaat of opgeslagen afbeeldingen op uw apparaat gebruiken om een afbeelding aan het formulier te koppelen.
 
-1. Tik op de knop Bijlage ![aanhalen](assets/attch.png) onder aan het venster.
-1. Tikken **Galerie** of **Camera** in het pop-upvenster dat wordt weergegeven.
+1. De knop Bijlage selecteren ![aanhalen](assets/attch.png) onder aan het venster.
+1. Selecteren **Galerie** of **Camera** in het pop-upvenster dat wordt weergegeven.
 1. Op basis van de optie die u selecteert, voert u het volgende uit:
 
    1. Als u **Camera**.
 
-      Neem een foto. Tik vervolgens op **Gebruiken** ![use-pic](assets/use-pic.png) knop.
+      Neem een foto. Selecteer vervolgens de optie **Gebruiken** ![use-pic](assets/use-pic.png) knop.
 
-      Of tik op **Opnieuw** ![hernemen](assets/retake.png) om de foto opnieuw op te nemen.
+      Of selecteer de **Opnieuw** ![hernemen](assets/retake.png) om de foto opnieuw op te nemen.
 
    1. Als u **Galerie**.
 
-      De afbeeldingsbrowser van het apparaat wordt weergegeven. Tik in de afbeeldingsbrowser van het apparaat op de afbeelding die u wilt koppelen.
+      De afbeeldingsbrowser van het apparaat wordt weergegeven. Selecteer in de afbeeldingsbrowser van het apparaat de afbeelding die u wilt bijvoegen.
 
 ### Een notitie toevoegen {#adding-a-note}
 
 De **Notities** Met deze optie kunt u uit de vrije hand geschreven scripts en tekstbijlagen toevoegen aan uw formulier.
 
-1. Tik op de knop Bijlage ![aanhalen](assets/attch.png) onder aan het venster.
-1. Tikken **Notities** in het pop-upvenster dat wordt weergegeven.
+1. De knop Bijlage selecteren ![aanhalen](assets/attch.png) onder aan het venster.
+1. Selecteren **Notities** in het pop-upvenster dat wordt weergegeven.
 1. Leg in de gebruikersinterface Notities die wordt gestart een vrij krabbeltje vast.
 
    ![Krabbelinterface](assets/scribble-ui.png)

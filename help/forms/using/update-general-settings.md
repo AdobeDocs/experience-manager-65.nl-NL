@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -31,8 +31,8 @@ Wijzig op het tabblad Algemeen de instellingen voor downloadbijlagen, offline mo
 
 **Ga naar het tabblad Algemeen op het scherm Instellingen**
 
-1. Als u naar het scherm Instelling wilt gaan, tikt u op de knop Menu linksboven in het scherm Home en vervolgens tikt u op **Instellingen**.
-1. Tik in het scherm Instellingen op het tabblad Algemeen.
+1. Als u naar het scherm Instelling wilt gaan, selecteert u de menuknop in de linkerbovenhoek van het scherm Home en selecteert u vervolgens **Instellingen**.
+1. Selecteer het tabblad Algemeen in het scherm Instellingen.
 
    ![Algemene instellingen in de AEM Forms-toepassing](assets/gen-settings-1.png)
 
@@ -48,18 +48,18 @@ U kunt de volgende wijzigingen aanbrengen in de instellingen van uw app.
 
 * **Taakbijlagen ophalen**: Geef op of u de bijbehorende bijlagen wilt downloaden wanneer elke taak naar uw app wordt gedownload.
 * **Offlinemodus**: De offlineservice voor de AEM Forms-app in- of uitschakelen. Zie [Werken in de offlinemodus](/help/forms/using/work-offline-mode.md) voor meer informatie.
-* **Landingsscherm**: De beginlocatie instellen ([Startscherm](../../forms/using/home-screen.md)) voor de app.
+* **Landingsscherm**: De startlocatie instellen ([Startscherm](../../forms/using/home-screen.md)) voor de app.
 Beschikbare opties:
 
    * Forms
    * Taken
    * Favorieten
 
-* **Standaardcategorie**: Hiermee selecteert u de categorie formulieren die u wilt weergeven op het beginscherm. Wanneer u Alles selecteert, kunt u alle formulieren in het beginscherm zien. Categorieën worden ingevuld op basis van de formulieren die in de app zijn geladen. Forms is beschikbaar in de app op basis van de formulierinstellingen die zijn opgegeven op de AEM Forms-server.
+* **Standaardcategorie**: Hiermee kunt u de categorie formulieren selecteren die u wilt weergeven op het beginscherm. Wanneer u Alles selecteert, kunt u alle formulieren in het beginscherm zien. Categorieën worden ingevuld op basis van de formulieren die in de app zijn geladen. Forms is beschikbaar in de app op basis van de formulierinstellingen die zijn opgegeven op de AEM Forms-server.
 
-* **Frequentie automatisch opslaan**: Om de frequentie te plaatsen waarbij uw [mobiele app slaat formuliergegevens op](../../forms/using/autosave-data-app.md) lokaal.
-* **Synchronisatiefrequentie**: Om de frequentie te plaatsen waarbij uw [mobiele app is gesynchroniseerd](../../forms/using/sync-app.md) met de AEM Forms-server in de online modus.
-   **Lokale gegevens wissen**: Wis de database, inclusief instellingen en lokale gegevens voor alle gebruikers en bestandsopslag vanaf het apparaat.
+* **Frequentie automatisch opslaan**: Om de frequentie in te stellen waarmee uw [mobiele app slaat formuliergegevens op](../../forms/using/autosave-data-app.md) lokaal.
+* **Synchronisatiefrequentie**: Om de frequentie in te stellen waarmee uw [mobiele app is gesynchroniseerd](../../forms/using/sync-app.md) met de AEM Forms-server in de online modus.
+  **Lokale gegevens wissen**: Wis de database, inclusief instellingen en lokale gegevens voor alle gebruikers en bestandsopslag vanaf het apparaat.
 
 >[!NOTE]
 >

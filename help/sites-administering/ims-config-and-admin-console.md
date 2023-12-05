@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8c0c2d89fca7a5ba1a834108ae54fed524b3cbab
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 10%
+source-wordcount: '1604'
+ht-degree: 6%
 
 ---
 
@@ -20,17 +20,13 @@ ht-degree: 10%
 >
 >Deze functie is alleen beschikbaar voor Adobe Managed Services-klanten.
 
->[!NOTE]
->
->Adobe Experience Manager (AEM) biedt momenteel geen ondersteuning voor het toewijzen van groepen aan profielen. In plaats daarvan moeten gebruikers afzonderlijk worden toegevoegd.
-
 ## Inleiding {#introduction}
 
 AEM 6.4.3.0 introduceert [!DNL Admin Console] ondersteuning voor AEM en verificatie op basis van Adobe IMS (Identity Management System) voor **AEM Managed Services** klanten.
 
 AEM aan boord [!DNL Admin Console] biedt AEM Managed Services-klanten de mogelijkheid om alle gebruikers van het Experience Cloud in één console te beheren. Gebruikers kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat zij zich bij een bepaalde instantie kunnen aanmelden.
 
-## Belangrijkste kenmerken {#key-highlights}
+## Belangrijkste hooglichten {#key-highlights}
 
 * AEM IMS-verificatieondersteuning is alleen bedoeld voor AEM auteurs, beheerders of ontwikkelaars, niet voor externe eindgebruikers van de site, zoals sitebezoekers
 * De [!DNL Admin Console] zal AEM klanten van Managed Services als organisaties IMS en hun Instanties als Contexten van het Product vertegenwoordigen. Systeem- en productbeheerders van klanten kunnen de toegang tot instanties beheren
@@ -98,7 +94,7 @@ Voor een eenvoudige afhandeling van het maken van gebruikers kan een CSV-bestand
 
 ![image2018-9-23_18-59-57](assets/image2018-9-23_18-59-57.png)
 
-#### User Sync Tool {#user-sync-tool}
+#### Gereedschap Gebruikerssynchronisatie {#user-sync-tool}
 
 Met het Hulpprogramma voor gebruikerssynchronisatie (UST in het kort) kunnen zakelijke klanten Adobe gebruikers maken of beheren die Active Directory of andere geteste OpenLDAP-directoryservices gebruiken. De doelgebruikers zijn de Beheerders van de Identiteit van IT (de Folder van de Onderneming en de Beheerders van het Systeem) die het hulpmiddel zullen kunnen installeren en vormen. Het opensource-hulpprogramma kan worden aangepast, zodat klanten het kunnen aanpassen aan hun eigen specifieke vereisten.
 
@@ -110,7 +106,7 @@ Om Gebruikerssynchronisatie in te stellen, moet de organisatie een set referenti
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 
-De User Sync wordt op deze locatie gedistribueerd via de Adobe Github-repository:
+Gebruikerssynchronisatie wordt gedistribueerd via de gegevensopslagruimte van Adobe Github op deze locatie:
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
@@ -138,7 +134,7 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 >
 >De AEM configuratie IMS zal door het team van Adobe Managed Services worden behandeld. Nochtans, kan de klantenbeheerder het volgens hun vereisten wijzigen (bijvoorbeeld, AutoLidmaatschap van de Groep of de Afbeelding van de Groep). De IMS-client wordt ook geregistreerd door uw Managed Services-team.
 
-## Het gebruik {#how-to-use}
+## Hoe wordt het gebruikt {#how-to-use}
 
 ### Producten en gebruikerstoegang beheren in [!DNL Admin Console] {#managing-products-and-user-access-in-admin-console}
 

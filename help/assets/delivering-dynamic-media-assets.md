@@ -1,20 +1,18 @@
 ---
 title: Dynamic Media-middelen leveren
 description: Leer hoe u Dynamic Media-elementen, zoals video en afbeeldingen, kunt leveren aan uw webpagina's.
-uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 1%
+source-wordcount: '323'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +40,7 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 * [Hotlink-beveiliging activeren in Dynamic Media](/help/assets/hotlink-protection.md)
 * [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](/help/assets/responsive-site.md)
-* [HTTP2-levering van content](/help/assets/http2.md)
+* [HTTP2-levering van inhoud](/help/assets/http2.md)
 * [De CDN-cache ongeldig maken via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Regels gebruiken om URL&#39;s te transformeren](/help/assets/using-rulesets-to-transform-urls.md)
 

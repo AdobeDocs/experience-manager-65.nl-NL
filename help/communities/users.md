@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Wanneer een nieuwe communautaire plaats wordt gecreeerd, worden de nieuwe gebrui
 
 De namen van de groepen worden gegenereerd op basis van de naam die de site tijdens [site maken](sites-console.md#step13asitetemplate). Unieke id&#39;s vermijden naamgevingsconflicten voor sites met dezelfde naam en groepen van gemeenschappen op dezelfde server.
 
-Als de naam van de site bijvoorbeeld &quot;*aangaan*&quot; voor een site met de naam &quot;We.Retail Engage&quot; zou een van de gemaakte gebruikersgroepen het volgende zijn:
+Als de naam van de site bijvoorbeeld &quot;*aangaan*&quot; voor een site met de naam &quot; Inschakelen&quot;, wordt een van de volgende gebruikersgroepen gemaakt:
 
 * Gemeenschap *Inschakelen* Leden
 

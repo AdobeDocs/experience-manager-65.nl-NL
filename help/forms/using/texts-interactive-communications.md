@@ -10,7 +10,7 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2420'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Als u een formuliergegevensmodel hebt opgegeven tijdens het maken van een tekst,
 
 ![insertFDmelementtext](assets/insertfdmelementtext.png)
 
-* Als u een eigenschap van een formuliergegevensmodel in tekst wilt invoegen, plaatst u de cursor op de plaats waar u de eigenschap wilt invoegen en selecteert u vervolgens de eigenschap **[A]** eigenschap in het linkerdeelvenster door erop te tikken en selecteer **[!UICONTROL [B] Add Selected]**. U kunt ook gewoon de eigenschap dubbelselecteren om deze in te voegen in het dialoogvenster **[C]** cursorpositie. Eigenschappen van het formuliergegevensmodel worden gemarkeerd in een bruine achtergrondkleur.
+* Als u een eigenschap van een formuliergegevensmodel in de tekst wilt invoegen, plaatst u de cursor op de plaats waar u de eigenschap wilt invoegen en selecteert u vervolgens de eigenschap **[A]** eigenschap in het linkerdeelvenster door erop te tikken en selecteer **[!UICONTROL [B] Add Selected]**. U kunt ook gewoon de eigenschap dubbelselecteren om deze in te voegen in het dialoogvenster **[C]** cursorpositie. Eigenschappen van het formuliergegevensmodel worden gemarkeerd in een bruine achtergrondkleur.
 
 U kunt ook de eigenschap van het formuliergegevensmodel zoeken en toevoegen met het symbool @ in de teksteditor. Plaats de cursor op de plaats waar u de eigenschap wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel in het documentfragment. De eigenschappen of variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het bezit dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 

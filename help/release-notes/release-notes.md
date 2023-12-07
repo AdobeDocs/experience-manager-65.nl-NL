@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3524'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## Gegevens vrijgeven {#release-information}
 
-| Product | [!DNL Adobe Experience Manager] 6.5 |
+| Product | [!DNL Adobe Experience Manager] 6,5 |
 | -------- | ---------------------------- |
-| Versie | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versie | 6.5.19,0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
 | Datum | Donderdag 30 november 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
@@ -109,7 +109,7 @@ tot
 #### GraphQL Query Editor{#sites-graphql-query-editor-6519}
 
 * In de gebruikersinterface van GraphQL Editor kunt u niet door alle voortgezette query&#39;s bladeren wanneer er een groot aantal query&#39;s is (bijvoorbeeld meer dan 25). (SITES-16008)
-* De GraphQL Editor slaat de publicatiestatus van voortgezette query&#39;s niet op. De knop Publiceren ongedaan maken wordt weergegeven in de GraphQL Editor, maar het pictogram dat aangeeft dat de voortgezette query is gepubliceerd, wordt niet weergegeven. Als u de pagina vernieuwt, ziet u dat de voortgezette query niet eens wordt gepubliceerd. (SITES-15858)
+* De GraphQL Editor slaat de publicatiestatus van doorlopende query&#39;s niet op. De knop Publiceren ongedaan maken wordt weergegeven in de GraphQL Editor, maar het pictogram dat aangeeft dat de voortgezette query is gepubliceerd, wordt niet weergegeven. Als u de pagina vernieuwt, ziet u dat de voortgezette query niet eens wordt gepubliceerd. (SITES-15858)
 
 #### Lanceringen{#sites-launches-6519}
 

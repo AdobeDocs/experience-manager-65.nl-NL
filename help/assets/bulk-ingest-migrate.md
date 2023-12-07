@@ -1,19 +1,17 @@
 ---
 title: Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen
-description: Met Feature Pack 18912 kunt u middelen bulksgewijs innemen via FTP, of elementen van Dynamic Media Classic migreren naar Dynamic Media op Adobe Experience Manager. Dit optionele functiepakket is verkrijgbaar bij Adobe-ondersteuning.
-uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
+description: Met Feature Pack 18912 kunt u middelen bulksgewijs innemen via FTP, of elementen van Dynamic Media Classic migreren naar Dynamic Media op Adobe Experience Manager. Dit optionele functiepakket is beschikbaar via ondersteuning voor Adoben.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -26,24 +24,24 @@ Met Feature Pack 18912 kunt u opgenomen elementen via FTP rechtstreeks in Dynami
 
 >[!IMPORTANT]
 >
->Het is mogelijk dat u het functiepakket gebruikt om afzonderlijke middelen in Experience Manager te migreren van Dynamic Media Classic naar Dynamic Media-Scene7. Het is ook mogelijk om migratieactiva in bulk te migreren gebruikend de eigenschap van FTP in Dynamic Media Classic. Adobe doet dit echter *niet* adviseer dat u één van beide methodes wegens de ingewikkeldheid in kwestie gebruikt.
+>Het is mogelijk dat u het functiepakket gebruikt voor het bulken van uw eigen middelen van Dynamic Media Classic naar Dynamic Media - Scene7 modus in Experience Manager. Het is ook mogelijk om migratieactiva in bulk te migreren gebruikend de eigenschap van FTP in Dynamic Media Classic. Adobe doet dit echter *niet* adviseer dat u één van beide methodes wegens de ingewikkeldheid in kwestie gebruikt.
 >
 >Als zodanig is dit pakket met migratiefuncties *alleen* ondersteund als onderdeel van een migratieproject, indien uitgevoerd via [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
-Alvorens u het eigenschappak installeert, creeer een de dienstgebruiker en verstrek die informatie aan de steun van Adobe.
+Alvorens u het eigenschappak installeert, creeer een de dienstgebruiker en verstrek die informatie aan de steun van de Adobe.
 
 Zie ook [Dynamic Media configureren - Scene7-modus](/help/assets/config-dms7.md).
 
 **Om functiepak 18912 voor migratie van bulkmiddelen te installeren:**
 
-1. Navigeer in uw Experience Manager-instantie naar **[!UICONTROL Tool]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** en selecteert u **[!UICONTROL Create User]**. Deze servicegebruiker moet beschikken over *lezen/schrijven* machtigingen voor `/content/dam.`
-1. In de **[!UICONTROL ID]** en **[!UICONTROL Password]** in velden, een gebruikersnaam en wachtwoord invoeren; bijvoorbeeld: **FTP-gebruiker**. Deze naam wordt in de tijdlijn weergegeven als de gebruiker die het element heeft gemaakt. Wanneer een element wordt geüpload vanaf FTP, wordt een element beschouwd als gemaakt wanneer het naar de FTP-server wordt geüpload en naar de Experience Manager wordt geduwd.
+1. Navigeer in uw Experience Manager-instantie naar **[!UICONTROL Tool]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** en selecteert u **[!UICONTROL Create User]**. Deze servicegebruiker moet *lezen/schrijven* machtigingen voor `/content/dam.`
+1. In de **[!UICONTROL ID]** en **[!UICONTROL Password]** velden, voert u een gebruikersnaam en wachtwoord in, bijvoorbeeld **FTP-gebruiker**. Deze naam wordt in de tijdlijn weergegeven als de gebruiker die het element heeft gemaakt. Wanneer een element wordt geüpload vanaf FTP, wordt een element beschouwd als gemaakt wanneer het naar de FTP-server wordt geüpload en naar de Experience Manager wordt geduwd.
 1. Contact [Adobe Klantenondersteuning voor Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) om toegang te vragen tot functiepak 18912 voor downloaden. U hebt mogelijk de volgende informatie nodig wanneer u contact opneemt met de ondersteuningsafdeling:
 
    * IP van de server adres voor uw instantie van de Auteur, met inbegrip van het havenaantal (door gebrek, is het havenaantal 4502.)
    * Gebruikersnaam en wachtwoord van de Experience Manager-service uit de vorige stap.
 
-1. De klantenondersteuning van Adobe voor Experience Manager biedt u de FTP-referenties en toegang tot functiepak 18912.
+1. De Klantenondersteuning van de Adobe voor Experience Manager biedt u de FTP-referenties en toegang tot functiepak 18912.
 1. Wanneer u het functiepak 18912 ontvangt, installeer het.
 
-   Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het gebruiken van de Distributie van de Software en pakketten in Experience Manager.
+   Zie [Hoe te met Pakketten werken](/help/sites-administering/package-manager.md) voor meer informatie over het gebruiken van de Distributie van de Software en pakketten in Experience Manager.

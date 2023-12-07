@@ -1,22 +1,18 @@
 ---
 title: Mappen publiceren naar Brand Portal
-seo-title: Publish folders to Brand Portal
 description: Leer hoe u mappen publiceert en publiceert naar Brand Portal.
-seo-description: Learn how to publish and unpublish folders to Brand Portal.
-uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 23%
+source-wordcount: '565'
+ht-degree: 20%
 
 ---
 
@@ -43,6 +39,7 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
    * Selecteer op de werkbalk de optie **Snel publiceren**. Selecteer vervolgens in het menu **Publiceren naar Brand Portal**.
 
    * Selecteer op de werkbalk de optie **Publicatie beheren**.
+
    1. Van **Handeling** selecteren **Publiceren naar Brand Portal**, van **Planning** selecteren **Nu** en klik op **Volgende.**
    1. Bevestig uw selectie in **Toepassingsgebied** en klik op **Publiceren naar Brand Portal**.
 
@@ -63,15 +60,13 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
+## Mappen uit Brand Portal verwijderen {#unpublish-folders-from-brand-portal}
 
-
-## De publicatie van mappen op Brand Portal ongedaan maken {#unpublish-folders-from-brand-portal}
-
-U kunt elke map met middelen die naar Brand Portal is gepubliceerd verwijderen door de publicatie ongedaan te maken van de instantie AEM Author. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
+U kunt elke elementmap die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ervan uit AEM instantie Auteur ongedaan te maken. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
 
 U kunt de publicatie van mappen in Brand Portal snel ongedaan maken of deze later plannen. De publicatie van mappen met assets op Brand Portal ongedaan maken:
 
-1. Selecteer in de AEM Assets-interface van de AEM-auteur-instantie de map die u wilt verwijderen.
+1. Selecteer in de AEM Assets-interface in AEM instantie Auteur de map die u wilt verwijderen.
 
    ![publish2bp-1](assets/publish2bp.png)
 
@@ -98,7 +93,6 @@ U kunt de publicatie van mappen in Brand Portal snel ongedaan maken of deze late
    1. Geef een **Titel werkstroom** in **Workflows**. Klikken **Publicatie later ongedaan maken.**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
-
 
 >[!NOTE]
 >

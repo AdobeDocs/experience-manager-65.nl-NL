@@ -1,19 +1,17 @@
 ---
 title: Informatie over het beheren van Dynamic Media-elementen
 description: Leer hoe u na het uploaden met Dynamic Media-middelen, zoals video's en afbeeldingen, werkt. U kunt elementen voorvertonen, downloaden of publiceren.
-uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Asset Management
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 12%
+ht-degree: 0%
 
 ---
 
@@ -27,7 +25,7 @@ Algemene informatie over het beheer van activa vindt u in [Elementen beheren](/h
 
 In de volgende onderwerpen wordt beschreven hoe u Dynamic Media-elementen kunt beheren:
 
-* [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Dynamic Media-assets vooraf bekijken](/help/assets/previewing-assets.md)
+* [Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [Voorvertoning van Dynamic Media-elementen weergeven](/help/assets/previewing-assets.md)
 * [Dynamic Media-middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md)
 * [Werken met kiezers](/help/assets/working-with-selectors.md)

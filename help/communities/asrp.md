@@ -1,20 +1,16 @@
 ---
 title: ASRP - Adobe Storage Resource Provider
-seo-title: ASRP - Adobe Storage Resource Provider
 description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -46,15 +42,15 @@ De consument en geheime sleutels worden gedeeld over alle rapportseries voor een
 
 De [Opslagconfiguratieconsole](/help/communities/srp-config.md) maakt het mogelijk de standaardopslagconfiguratie te selecteren, die aangeeft welke implementatie van SRP moet worden gebruikt.
 
-**Instantie van AEM-auteur:**
+**Op AEM instantie Auteur:**
 
 * Navigeer van globale navigatie naar **[!UICONTROL Tools > Communities > Storage Configuration]** en selecteert u **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
-![asrp-default](assets/asrp-default.png)
+![standaard](assets/asrp-default.png)
 
 De volgende informatie is afkomstig uit het inrichtingsproces:
 
-* **URL datacenter**: Kies het productiecentrum dat door uw accountvertegenwoordiger is geïdentificeerd.
+* **URL datacenter**: Trek de muisknop uit om het datacenter voor productie te selecteren dat door uw accountvertegenwoordiger is geïdentificeerd.
 * **Standaardrapportsuite**: Ga de naam van de standaardrapportreeks in.
 * **Consumentencode**: Voer de sleutel voor de consument in.
 * **Geheim**: Voer het geheim in.
@@ -67,9 +63,9 @@ De publicatie-instanties voorbereiden:
 
 Na het voorleggen van de configuratie, test de verbinding:
 
-* Selecteren **Config. testen**.
+* Selecteren **Config testen**.
 
-   Voor elke auteur en publiceer instantie, test de verbinding aan het gegevenscentrum van de console van de Configuratie van de Opslag.
+  Voor elke auteur en publiceer instantie, test de verbinding aan het gegevenscentrum van de console van de Configuratie van de Opslag.
 
 * Zorg ervoor dat de site-URL&#39;s voor profielgegevens vanuit het datacenter kunnen worden gerouteerd door [externe koppelingen](#externalize-links).
 
@@ -83,7 +79,7 @@ Volg de instructies op [De cryptosleutel dupliceren](/help/communities/deploy-co
 
 Voor correcte profiel- en profielafbeeldingskoppelingen moet u controleren of deze correct zijn [Vorm de Verbinding Externalzer](/help/sites-developing/externalizer.md).
 
-Ben zeker om de domeinen te plaatsen om URLs te zijn die van het Centrum URL van Gegevens (het eindpunt van ASRP) routable zijn.
+Ben zeker om de domeinen te plaatsen om URLs te zijn die van het Centrum URL van Gegevens (eindpunt ASRP) routable zijn.
 
 ### Tijdsynchronisatie {#time-synchronization}
 
@@ -95,11 +91,11 @@ ASRP moet als gemeenschappelijke opslag op alle auteur en publiceer instanties w
 
 De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
-Instantie van AEM-auteur:
+Op AEM instantie Auteur:
 
 * Navigeren van hoofdmenu naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
 * Selecteren **Boom activeren**
-* **Startpad**: bladeren naar `/conf/global/settings/communities/srpc/`
+* **Startpad**: blader naar `/conf/global/settings/communities/srpc/`
 * Deselecteren **Alleen gewijzigd**
 * Selecteren **Activeren**
 
@@ -111,7 +107,7 @@ Instantie van AEM-auteur:
 
 **`AEM Communities Extension`** werd eerder in AEM 6.0 sociale gemeenschappen geïntroduceerd als cloudservice. Vanaf AEM 6.1 Gemeenschappen is geen wolkenconfiguratie noodzakelijk, eenvoudig uitgezocht ASRP van [opslagconfiguratieconsole](/help/communities/srp-config.md).
 
-Gezien de nieuwe opslagstructuur is het noodzakelijk de [upgrade](/help/communities/upgrade.md#adobe-cloud-storage) instructies bij de opwaardering van sociale gemeenschappen naar gemeenschappen.
+Gezien de nieuwe opslagstructuur is het noodzakelijk de [upgrade](/help/communities/upgrade.md#adobe-cloud-storage) instructies bij de opwaardering van de sociale gemeenschappen naar de Gemeenschappen.
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
@@ -134,7 +130,7 @@ Een gereedschap zoals de [Netwerktijdprotocol (NTP)](https://www.ntp.org/) om al
 
 ### Nieuwe inhoud wordt niet weergegeven in zoekopdrachten {#new-content-does-not-appear-in-searches}
 
-De Adobe-cloudopslaginfrastructuur gebruikt *uiteindelijke consistentie* de schaalings- en prestatiedoelstellingen te bereiken. Daarom is nieuwe inhoud niet direct beschikbaar en duurt het enkele seconden voordat deze in de zoekresultaten wordt weergegeven.
+De Adobe-infrastructuur voor cloudopslag gebruikt *uiteindelijke consistentie* de schaalings- en prestatiedoelstellingen te bereiken. Daarom is nieuwe inhoud niet direct beschikbaar en duurt het enkele seconden voordat deze in de zoekresultaten wordt weergegeven.
 
 Terwijl het interval dat invloed heeft op de uiteindelijke consistentie wordt gecontroleerd, neemt u contact op met uw accountvertegenwoordiger als het langer dan een paar seconden duurt voordat nieuwe inhoud in zoekopdrachten wordt weergegeven.
 

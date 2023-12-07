@@ -1,22 +1,18 @@
 ---
 title: Verzamelingen publiceren naar Brand Portal
-seo-title: Publish collections to Brand Portal
 description: Leer hoe u verzamelingen publiceert en publiceert naar Brand Portal.
-seo-description: Learn how to publish and unpublish collections to Brand Portal.
-uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 26%
+source-wordcount: '321'
+ht-degree: 22%
 
 ---
 
@@ -28,9 +24,9 @@ Als u de oorspronkelijke verzameling in AEM Assets daarna wijzigt, worden de wij
 
 >[!NOTE]
 >
->Contentfragmenten kunnen niet naar Brand Portal worden gepubliceerd. Als u daarom inhoudsfragment(en) selecteert op AEM-auteur, dan **Publiceren naar Brand Portal** actie is niet beschikbaar.
+>Contentfragmenten kunnen niet naar Brand Portal worden gepubliceerd. Als u daarom inhoudsfragment(en) selecteert bij AEM auteur, dan **Publiceren naar Brand Portal** actie is niet beschikbaar.
 >
->Als verzamelingen met inhoudsfragmenten worden gepubliceerd van AEM Author naar Brand Portal, wordt alle inhoud van de map, met uitzondering van inhoudsfragmenten, gerepliceerd naar de Brand Portal-interface.
+>Als verzamelingen met inhoudsfragmenten worden gepubliceerd van AEM Auteur naar Brand Portal, wordt alle inhoud van de map, met uitzondering van inhoudsfragmenten, gerepliceerd naar de Brand Portal-interface.
 
 ## Een verzameling publiceren naar Brand Portal {#publish-a-collection-to-brand-portal}
 
@@ -47,7 +43,7 @@ Als u de oorspronkelijke verzameling in AEM Assets daarna wijzigt, worden de wij
 
    ![published collection](assets/published_collection.png)
 
-## De publicatie van verzamelingen ongedaan maken {#unpublish-collections}
+## Publicatie van verzamelingen ongedaan maken {#unpublish-collections}
 
 U kunt de publicatie van verzamelingen die u van AEM Assets naar Brand Portal publiceert, ongedaan maken. Nadat u de publicatie van de oorspronkelijke verzameling hebt ongedaan gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
 
@@ -56,5 +52,5 @@ U kunt de publicatie van verzamelingen die u van AEM Assets naar Brand Portal pu
    ![select_collection-1](assets/select_collection-1.png)
 
 1. Klik op de werkbalk op **Verwijderen uit Brand Portal** pictogram.
-1. Klik in het dialoogvenster op **Publiceren ongedaan maken**.
+1. Klik op **Publiceren ongedaan maken**.
 1. Sluit het bevestigingsbericht. De verzameling wordt verwijderd uit de Brand Portal-interface.

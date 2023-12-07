@@ -1,32 +1,30 @@
 ---
 title: 360/VR-video
 description: Leer hoe u met 360 en VR-video (Virtual Reality) werkt in Dynamic Media.
-uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: c0a60ec39e35fa8113ce9e1795561709b9c7e289
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
 
 # 360/VR-video {#vr-video}
 
-Bij video&#39;s van 360 graden wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; Voor afspeelapparatuur op mobiele apparaten worden doorgaans de ingebouwde gyroscopische besturingselementen gebruikt.
+Bij video&#39;s van 360 graden wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; afspeelapparatuur op mobiele apparaten gebruikt doorgaans de ingebouwde gyroscopische besturingselementen.
 
 De Dynamic Media-Scene7-modus biedt native ondersteuning voor de levering van 360 video-elementen. Standaard is geen aanvullende configuratie nodig voor weergave of afspelen. U levert 360 Video gebruikend standaardvideouitbreidingen zoals .mp4, .mkv, en .mov. De meest algemene codec is H.264.
 
 In deze sectie wordt beschreven hoe u met de 360/VR Video-viewer werkt om equirechthoekige video te renderen voor een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap, medische procedure, enzovoort.
 
-Ruimtelijke audio wordt momenteel niet ondersteund. als audio in stereo wordt gemengd, verandert de balans (L/R) niet aangezien de klant de kijkhoek van de camera verandert.
+Ruimtelijke audio wordt momenteel niet ondersteund. Als audio in stereo wordt gemengd, verandert de balans (L/R) niet omdat de klant de kijkhoek van de camera wijzigt.
 
 Zie ook [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md).
 
@@ -63,11 +61,13 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
       * 1080p - 1920 x 1080, bekend als Full HD- of FHD-resolutie of,
       * 2160p - 3840 x 2160, bekend als 4k, UHD of Ultra HD-resolutie. Deze grote weergaveresolutie wordt meestal aangetroffen op hoogwaardige televisies en computermonitoren. De resolutie van 2160p wordt vaak &#39;4k&#39; genoemd omdat de breedte dichtbij 4000 pixels ligt. Met andere woorden, het biedt vier keer de pixels van 1080p.
+
    * [Een aangepast adaptief videoprofiel maken](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) met uitvoeringen van hogere kwaliteit. Maak bijvoorbeeld een adaptief videoprofiel met de volgende drie instellingen:
 
-      * width=auto; height=720; bitsnelheid=2500 kbps
-      * width=auto; height=1080; bitsnelheid=5000 kbps
-      * width=auto; height=1440; bitsnelheid=6600 kbps
+      * width=auto; height=720; bitrate=2500 kbps
+      * width=auto; height=1080; bitrate=5000 kbps
+      * width=auto; height=1440; bitrate=6600 kbps
+
    * Verwerk 360-video-inhoud in een map die exclusief is bestemd voor 360 video-elementen.
 
    Deze benadering plaatst grotere eisen op het netwerk en cpu van het eind - gebruiker.
@@ -93,7 +93,7 @@ Begin met het uploaden van 360 video&#39;s.
 
 ## Voorvertoning 360-video {#previewing-video}
 
-Met Voorvertoning kunt u zien hoe uw 360-video er uitziet voor klanten en kunt u controleren of deze zich gedraagt zoals u had verwacht.
+Met Voorvertoning kunt u zien hoe uw 360-video er uitziet voor klanten en kunt u controleren of deze goed functioneert.
 
 Zie ook [Voorinstellingen voor viewers bewerken](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
 
@@ -111,7 +111,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
    Selecteer het 360-video-element zodat u een voorvertoning van de video kunt bekijken.
 
-1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer vervolgens **[!UICONTROL Viewers]**.
+1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
 
    ![6_5_360video-voorvertoning-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -124,7 +124,8 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
    * Selecteer in de lijst Viewers de optie **[!UICONTROL Video360VR]**.
 
-      VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360 graden.
+     VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360 graden.
+
    ![Een schermafbeelding van een close-up van het internationale ruimtestation dat in de ruimte zweeft, waarbij de aarde en de zon gedeeltelijk op de achtergrond zichtbaar zijn](assets/6_5_360video-preview-video360vr.png)
    *Een videoschermafbeelding van 360 VR.*
 

@@ -1,21 +1,19 @@
 ---
 title: Videoprofielen
 description: Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. U kunt ook slimme uitsnijdingen toevoegen aan uw video's.
-uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3550'
-ht-degree: 7%
+source-wordcount: '3588'
+ht-degree: 6%
 
 ---
 
@@ -333,7 +331,7 @@ Zie voor meer informatie over het definiëren van geavanceerde verwerkingsparame
 1. Controleer één videoprofielnaam op de pagina Videoprofielen.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Edit]**.
 1. Bewerk de naam en beschrijving op de pagina Profiel videocodering.
-1. U kunt het beste het selectievakje **[!UICONTROL Encode for adaptive bitrate streaming]** inschakelen.
+1. Als beste praktijken ervoor zorgen dat **[!UICONTROL Encode for adaptive bitrate streaming]** is geselecteerd.
 Selecteer het informatiepictogram voor een beschrijving van adaptieve bitsnelheidstreaming. (Schakel dit selectievakje niet in als u een progressief videoprofiel bewerkt.)
 1. Onder de kop Voorinstellingen videocodering kunt u voorinstellingen voor videocodering die het profiel vormen, toevoegen, bewerken of verwijderen.
 
@@ -361,7 +359,7 @@ Selecteer het informatiepictogram voor een beschrijving van adaptieve bitsnelhei
 1. Selecteer het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Controleer een of meer namen van videoprofielen op de pagina Videoprofielen.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Delete]**.
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 
 ## Een videoprofiel toepassen op mappen {#applying-a-video-profile-to-folders}
 
@@ -389,7 +387,7 @@ Zie ook [Elementen in een map opnieuw verwerken nadat u het verwerkingsprofiel h
 
 1. Selecteer het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Selecteer het videoprofiel dat u wilt toepassen op een of meerdere mappen.
-1. Selecteren **[!UICONTROL Apply Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven wanneer u zich in **[!UICONTROL Card View]** bevindt.
+1. Selecteren **[!UICONTROL Apply Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven terwijl u zich aanmeldt **[!UICONTROL Card View]**.
 U kunt [de voortgang van een videoprofielverwerkingstaak controleren](#monitoring-the-progress-of-an-encoding-job).
 
 #### Een videoprofiel vanuit Eigenschappen toepassen op mappen {#applying-video-profiles-to-folders-from-properties}

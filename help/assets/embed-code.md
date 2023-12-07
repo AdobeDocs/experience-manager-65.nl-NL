@@ -1,18 +1,16 @@
 ---
 title: De Dynamic Media Video-, Image Viewer- of Dimensional-viewer insluiten op een webpagina
 description: Leer hoe u Dynamic Media-video, -afbeeldingen of -3D-afbeeldingen op een webpagina insluit
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '374'
 ht-degree: 20%
 
 ---
@@ -51,8 +49,8 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive
 
 1. Selecteer in de linkertrack het vervolgkeuzemenu en selecteer **[!UICONTROL Viewers]**.
 1. Selecteer in het linkerspoor een naam voor de viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
-1. Selecteer **[!UICONTROL Embed]**.
-1. In de **[!UICONTROL Embed Code]** , kopieert u de volledige code naar het klembord en selecteert u **[!UICONTROL Close]**.
+1. Selecteren **[!UICONTROL Embed]**.
+1. In de **[!UICONTROL Embed Code]** de volledige code naar het klembord kopiëren en vervolgens **[!UICONTROL Close]**.
 1. Plak de insluitcode in uw webpagina&#39;s.
 
 ## HTTP/2 gebruiken om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}

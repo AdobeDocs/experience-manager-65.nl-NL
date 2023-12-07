@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
-source-git-commit: 664e22cc4c6acd74f285a4ec1a0dbd7d301240b7
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
 * [Elementen selectief publiceren naar Dynamic Media of Experience Manager met Publicatie beheren](#selective-publish-manage-publication).
 * [Publicatie van middelen van Dynamic Media of Experience Manager selectief ongedaan maken met Publicatie beheren](#selective-unpublish-manage-publication).
 * [Elementen publiceren naar Dynamic Media of Experience Manager met Snel publiceren](#quick-publish-aem-dm).
-* [Elementen selectief publiceren of de publicatie ervan ongedaan maken door middel van zoekresultaten](#selective-publish-unpublish-search-results).
+* [Elementen selectief publiceren of de publicatie ervan ongedaan maken via zoekresultaten](#selective-publish-unpublish-search-results).
 
 **Selectieve publicatie op mapniveau in Dynamic Media configureren:**
 
@@ -59,13 +59,13 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
 
    | Synchronisatiemodus | Beschrijving |
    | --- | --- |
-   | **[!UICONTROL Inherited]** | Geen expliciete synchronisatiewaarde in de map; in plaats daarvan, erft de omslag de synchronisatiewaarde van één van zijn voorouderomslagen of de standaardwijze die in uw wordt geplaatst **[!UICONTROL Dynamic Media Configuration]**. Gedetailleerde status voor **[!UICONTROL Inherited]** wordt weergegeven als knopinfo. |
+   | **[!UICONTROL Inherited]** | Er staat geen expliciete synchronisatiewaarde in de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus die in de map is ingesteld **[!UICONTROL Dynamic Media Configuration]**. Gedetailleerde status voor **[!UICONTROL Inherited]** wordt weergegeven als knopinfo. |
    | **[!UICONTROL Sync everything in this folder subtree to Dynamic Media]** | Voor het publiceren naar Dynamic Media moet u de middelen synchroniseren met Dynamic Media. Als u deze optie selecteert, worden alle elementen in deze substructuur opgenomen die u kunt synchroniseren met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardinstelling in het dialoogvenster **[!UICONTROL Dynamic Media Configuration]**. |
    | **[!UICONTROL Exclude everything in this folder subtree from Dynamic Media sync]** | Sluit alle elementen in deze substructuur uit van synchroniseren naar Dynamic Media. |
 
    ![Selectieve publicatie op mapniveau](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. In de **[!UICONTROL Dynamic Media Publish mode]** Selecteer een optie in de vervolgkeuzelijst. De **[!UICONTROL Dynamic Media Publish mode]** Deze optie is altijd standaard ingesteld op de waarde die is ingesteld in het dialoogvenster **[!UICONTROL Dynamic Media Configuration]**. U kunt deze standaardinstelling echter handmatig overschrijven **[!UICONTROL Dynamic Media Configuration]** door een van de volgende opties te gebruiken.
+1. In de **[!UICONTROL Dynamic Media Publish mode]** een optie. De **[!UICONTROL Dynamic Media Publish mode]** Deze optie is altijd standaard ingesteld op de waarde die is ingesteld in het dialoogvenster **[!UICONTROL Dynamic Media Configuration]**. U kunt deze standaardinstelling echter handmatig overschrijven **[!UICONTROL Dynamic Media Configuration]** door een van de volgende opties te gebruiken.
 
    >[!IMPORTANT]
    >
@@ -77,16 +77,16 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
    | --- | --- |
    | **[!UICONTROL Immediately]** | Wanneer elementen naar deze map worden geüpload, worden de elementen door het systeem in de Experience Manager ingevoerd en wordt de URL/Embed onmiddellijk weergegeven. Deze optie is alleen gekoppeld aan publicatie door Experience Managers en er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.<br>Deze optie is *niet* beschikbaar als u **[!UICONTROL Exclude everything in this folder subtree from Dynamic Media sync]** in **[!UICONTROL Sync mode]** in de vorige stap. |
    | **[!UICONTROL Upon Activation]** | Wanneer elementen naar deze map worden geüpload, moet u het element eerst expliciet publiceren voordat een koppeling URL/Embed wordt opgegeven. Deze optie is alleen gekoppeld aan publiceren via Experience Manager.<br>Deze optie is *niet* beschikbaar als u **[!UICONTROL Exclude everything in this folder subtree from Dynamic Media sync]** in **[!UICONTROL Sync mode]** in de vorige stap. |
-   | **[!UICONTROL Selective Publish]** | De activa worden gepubliceerd aan uw keuze van of Experience Manager of aan Dynamic Media voor levering in het openbare domein. Beide publicatiemethoden sluiten elkaar uit. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies zoals Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. U kunt ook uitsluitend elementen publiceren naar Experience Manager voor een veilige voorvertoning. dezelfde activa *niet* gepubliceerd aan DMS7 voor levering in het publieke domein. Deze optie is niet beschikbaar als u **[!UICONTROL Exclude everything in this folder subtree from Dynamic Media sync]** in **[!UICONTROL Sync mode]** in de vorige stap. |
+   | **[!UICONTROL Selective Publish]** | De activa worden gepubliceerd aan uw keuze van of Experience Manager of aan Dynamic Media voor levering in het openbare domein. Beide publicatiemethoden sluiten elkaar uit. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies zoals Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. U kunt ook uitsluitend elementen publiceren naar Experience Manager voor een beveiligde voorvertoning. Dezelfde elementen zijn *niet* gepubliceerd aan DMS7 voor levering in het publieke domein. Deze optie is niet beschikbaar als u **[!UICONTROL Exclude everything in this folder subtree from Dynamic Media sync]** in **[!UICONTROL Sync mode]** in de vorige stap. |
 
-1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save & Close]** selecteert u vervolgens **[!UICONTROL OK]** om terug te keren naar Experience Manager Assets.
+1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save & Close]** selecteert u vervolgens **[!UICONTROL OK]** terug naar Experience Manager Assets.
 
 ## Elementen selectief publiceren naar Dynamic Media of Experience Manager met Publicatie beheren{#selective-publish-manage-publication}
 
-Voordat u **[!UICONTROL Manage Publication]** als u elementen selectief wilt publiceren naar Dynamic Media of Experience Manager, moet u een van de volgende instellingen hebben ingesteld:
+Wat u moet doen **[!UICONTROL Manage Publication]** als u elementen selectief wilt publiceren naar Dynamic Media of Experience Manager, moet u een van de volgende instellingen hebben ingesteld:
 
 * De **[!UICONTROL Publish Assets]** optie in **[!UICONTROL Dynamic Media Configuration]** tot **[!UICONTROL Selective Publish]**
-* Configureerde selectief publiceren op mapniveau.
+* Configureerde selectieve publicatie op mapniveau.
 
 Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-services) of [Selectieve publicatie op mapniveau in Dynamic Media configureren](#selective-publish-configure-folder)
 
@@ -102,12 +102,12 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 
 1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben. Selecteer links het navigatiepictogram (net boven het pictogram Gereedschappen) en selecteer vervolgens **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, of **[!UICONTROL List View]** Voer een van de volgende handelingen uit:
-   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en selecteer vervolgens op de werkbalk **[!UICONTROL Manage Publication]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
+   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en selecteer vervolgens op de werkbalk **[!UICONTROL Manage Publication]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map gemakkelijker kunt controleren.
    * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Selecteer op de werkbalk de optie **[!UICONTROL Manage Publication]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaald middel gemakkelijker kunt controleren.
 
-      >[!NOTE]
-      >
-      >Indien **[!UICONTROL Manage Publication]** niet zichtbaar is op de werkbalk, selecteert u in plaats daarvan de knop voor ovaal en selecteert u **[!UICONTROL Manage Publication]** in het lijstmenu.
+     >[!NOTE]
+     >
+     >Indien **[!UICONTROL Manage Publication]** niet zichtbaar is op de werkbalk, selecteert u in plaats daarvan de knop Ovaal. Selecteer vervolgens **[!UICONTROL Manage Publication]** in het lijstmenu.
 
 1. In de **[!UICONTROL Manage Publication - Options]** pagina, onder **[!UICONTROL Action]**, selecteert u het gewenste activeringstype.
 
@@ -128,18 +128,18 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 
    * Selecteer zo nodig een of meer elementen die u uit publicatie wilt verwijderen.
    * In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Manage Publication - Scope]** pagina, selecteert u **[!UICONTROL Publish]** of **[!UICONTROL Publish to Dynamic Media]**.
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 
 ### Publicatie van middelen van Dynamic Media of Experience Manager selectief ongedaan maken met Publicatie beheren {#selective-unpublish-manage-publication}
 
 1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben. Selecteer links het navigatiepictogram (net boven het pictogram Gereedschappen) en selecteer vervolgens **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, of **[!UICONTROL List View]** Voer een van de volgende handelingen uit:
-   * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Selecteer de map en selecteer vervolgens op de werkbalk **[!UICONTROL Manage Publication]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
+   * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Selecteer de map en selecteer vervolgens op de werkbalk **[!UICONTROL Manage Publication]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map gemakkelijker kunt controleren.
    * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Open de map en selecteer vervolgens een of meer elementen. Selecteer op de werkbalk de optie **[!UICONTROL Manage Publication]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaald middel gemakkelijker kunt controleren.
 
-      >[!NOTE]
-      >
-      >Indien **[!UICONTROL Manage Publication]** niet zichtbaar is op de werkbalk, selecteert u in plaats daarvan de knop voor ovaal en selecteert u **[!UICONTROL Manage Publication]** in het lijstmenu.
+     >[!NOTE]
+     >
+     >Indien **[!UICONTROL Manage Publication]** niet zichtbaar is op de werkbalk, selecteert u in plaats daarvan de knop Ovaal. Selecteer vervolgens **[!UICONTROL Manage Publication]** in het lijstmenu.
 
 1. In de **[!UICONTROL Manage Publication - Options]** pagina, onder **[!UICONTROL Action]** Selecteer het gewenste type deactivering.
 
@@ -159,7 +159,7 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 1. In de **[!UICONTROL Manage Publication - Scope]** pagina, voer een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u uit het ongedaan maken van de publicatie wilt verwijderen.
    * In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Manage Publication - Scope]** pagina, selecteert u **[!UICONTROL Unpublish]** of **[!UICONTROL Unpublish from Dynamic Media]**.
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 
 ## Elementen publiceren naar Dynamic Media of Experience Manager met Snel publiceren {#quick-publish-aem-dm}
 
@@ -173,18 +173,18 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
 
 1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben. Selecteer links op de pagina het navigatiepictogram (net boven het pictogram Gereedschappen) en selecteer vervolgens aan de rechterkant van de pagina **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, of **[!UICONTROL List View]** Voer een van de volgende handelingen uit:
-   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en selecteer vervolgens op de werkbalk **[!UICONTROL Quick Publish]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
+   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en selecteer vervolgens op de werkbalk **[!UICONTROL Quick Publish]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaalde map gemakkelijker kunt controleren.
    * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Selecteer op de werkbalk de optie **[!UICONTROL Quick Publish]**. Gebruiken **[!UICONTROL List View]** zodat u de publicatiestatus van een bepaald middel gemakkelijker kunt controleren.
 
-      >[!NOTE]
-      >
-      >Indien **[!UICONTROL Quick Publish]** niet zichtbaar is op de werkbalk, selecteert u in plaats daarvan de knop voor ovaal en selecteert u **[!UICONTROL Quick Publish]** in het lijstmenu.
+     >[!NOTE]
+     >
+     >Indien **[!UICONTROL Quick Publish]** niet zichtbaar is op de werkbalk, selecteert u in plaats daarvan de knop Ovaal. Selecteer vervolgens **[!UICONTROL Quick Publish]** in het lijstmenu.
 
-      ![Snel publiceren op mapniveau naar Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+     ![Snel publiceren op mapniveau naar Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
 
-1. Selecteer een van de volgende opties in het menu **[!UICONTROL Quick Publish]** menulijst.
+1. Selecteer een van de volgende opties in het menu **[!UICONTROL Quick Publish]** lijst.
 
-   | Snel publiceren, optie | Wat het doet |
+   | Snel publiceren, optie | Wat doet het? |
    | --- | --- | 
    | Publiceren naar Experience Manager | Hiermee publiceert u de geselecteerde elementen direct naar de Experience Manager. |
    | Publiceren naar Brand Portal | Hiermee publiceert u de geselecteerde elementen direct naar **[!UICONTROL Brand Portal]**.<br>Deze optie is alleen beschikbaar als uw Experience Manager Assets-exemplaar **[!UICONTROL Brand Portal]** al geconfigureerd. |
@@ -192,7 +192,7 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
 
 1. Selecteren **[!UICONTROL OK]** selecteert u vervolgens **[!UICONTROL Close]**.
 
-## Elementen selectief publiceren of de publicatie ervan ongedaan maken door middel van zoekresultaten {#selective-publish-unpublish-search-results}
+## Elementen selectief publiceren of de publicatie ervan ongedaan maken via zoekresultaten {#selective-publish-unpublish-search-results}
 
 In de zoekresultaten kunt u elementen uit verschillende middelenmappen met verschillende Dynamic Media-publicatie-instellingen weergeven. Wanneer u meerdere elementen selecteert in zoekresultaten en elk element verschillende Dynamic Media-instellingen voor de publicatiemodus heeft, kunt u een trigger **[!UICONTROL Manage Publication]** op de werkbalk om te publiceren of om de publicatie ongedaan te maken.
 
@@ -201,26 +201,26 @@ Zie ook [Middelen zoeken in Experience Manager](/help/assets/search-assets.md).
 **Elementen selectief publiceren of verwijderen via zoekresultaten:**
 
 1. In Experience Manager, in de upper-left hoek van de pagina, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben. Selecteer links op de pagina het navigatiepictogram (net boven het pictogram Gereedschappen) en selecteer vervolgens **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
-1. Selecteer in de werkbalk, rechtsboven in de pagina, het pictogram Zoeken (vergrootglas).
+1. Selecteer in de werkbalk rechtsboven op de pagina het pictogram Zoeken (vergrootglas).
 1. In de **[!UICONTROL Type to search]** tekstveld, voer een trefwoord in en druk op **[!UICONTROL Enter]**.
 1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL List View]** pictogram.
 1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Filters]** pictogram.
 
    ![Lijstweergave en filters in zoekresultaten](/help/assets/assets-dm/select-publish-search-result.png)
 
-1. Vouw in het linkerdeelvenster uit **[!UICONTROL Status]** Vouw vervolgens de **[!UICONTROL Dynamic Media]** zoekvoorspelling.
+1. Vouw in het linkerdeelvenster uit **[!UICONTROL Status]** en breid vervolgens de **[!UICONTROL Dynamic Media]** zoekvoorspelling.
 1. Gebruik de **[!UICONTROL Published]** en **[!UICONTROL Unpublished]** selectievakjes om de zoekresultaten verder te verfijnen op basis van de gepubliceerde status van Dynamic Media-elementen.
-U kunt deze selectievakjes desgewenst ook gebruiken met de **[!UICONTROL Publish]** zoekvoorspelling om de zoekresultaten te verfijnen van **[!UICONTROL Published]** en **[!UICONTROL Unpublished]** Experience Manager-elementen.
+U kunt deze selectievakjes desgewenst ook gebruiken met de **[!UICONTROL Publish]** zoekvoorspelling om de zoekresultaten van **[!UICONTROL Published]** en **[!UICONTROL Unpublished]** Experience Manager-elementen.
 1. Voer een van de volgende handelingen uit:
-   * Selecteer een of meer elementen die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken.
+   * Selecteer een of meer elementen die u wilt publiceren of maak de publicatie ongedaan.
    * In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Search Results]** pagina, selecteert u **[!UICONTROL Select All]**.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Manage Publication]**. Selecteer het ellipsiepictogram op de werkbalk zodat u het dialoogvenster kunt openen **[!UICONTROL Manage Publication]**.
 1. Op de **[!UICONTROL Manage Publication - Options]** selecteert u de gewenste actie.
 
    | Geselecteerde actie | Instelling Middelen publiceren in Dynamic Media-configuratie | Elementen zijn |
    | --- | --- | --- |
-   | Publicatie | Onmiddellijk of bij activering | Gepubliceerd aan Experience Manager en Dynamic Media. |
-   | Publicatie | Selectieve publicatie | Alleen gepubliceerd naar Experience Manager. |
+   | Publiceren | Onmiddellijk of bij activering | Gepubliceerd aan Experience Manager en Dynamic Media. |
+   | Publiceren | Selectieve publicatie | Alleen gepubliceerd naar Experience Manager. |
    | Publiceren ongedaan maken | Onmiddellijk of bij activering | Niet gepubliceerd vanuit Experience Manager en Dynamic Media. |
    | Publiceren ongedaan maken | Selectieve publicatie | Niet gepubliceerd alleen vanuit Experience Manager. |
    | Publiceren naar Dynamic Media | Onmiddellijk of bij activering | Niet gepubliceerd naar Experience Manager, Dynamic Media of beide. |
@@ -240,19 +240,19 @@ U kunt deze selectievakjes desgewenst ook gebruiken met de **[!UICONTROL Publish
 
    | Instelling Middelen publiceren in Dynamic Media-configuratie | Geselecteerde actie | Publicatiedoel |
    | --- | --- | --- |
-   | Onmiddellijk of <br>Bij activering | Publicatie | Experience Manager en Dynamic Media |
+   | Onmiddellijk of <br>Bij activering | Publiceren | Experience Manager en Dynamic Media |
    | Onmiddellijk of <br>Bij activering | Publiceren naar Dynamic Media | Geen |
-   | Selectieve publicatie | Publicatie | Experience Manager |
-   | Selectieve publicatie | Publiceren naar Dynamic Media |  Dynamic Media  |
+   | Selectieve publicatie | Publiceren | Experience Manager |
+   | Selectieve publicatie | Publiceren naar Dynamic Media | Dynamic Media |
    | Onmiddellijk of <br>Bij activering | Publiceren ongedaan maken | Experience Manager en Dynamic Media |
    | Onmiddellijk of <br>Bij activering | Publiceren vanuit Dynamic Media ongedaan maken | Geen |
    | Selectieve publicatie | Publiceren ongedaan maken | Experience Manager |
-   | Selectieve publicatie | Publiceren vanuit Dynamic Media ongedaan maken |  Dynamic Media  |
+   | Selectieve publicatie | Publiceren vanuit Dynamic Media ongedaan maken | Dynamic Media |
 
 1. In de **[!UICONTROL Manage Publication - Scope]** pagina, voer een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u uit publiceren of verwijderen.
    * In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Manage Publication - Scope]** pagina, selecteert u **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** om de handeling te starten.
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 
 ## De publicatiestatus van een element controleren {#check-publish-status-of-asset}
 
@@ -267,7 +267,7 @@ U kunt **[!UICONTROL Timeline]** with **[!UICONTROL Card view]**, **[!UICONTROL 
 Wanneer u **[!UICONTROL List View]**, een extra kolom voor **[!UICONTROL Dynamic Media]** publicatiestatus wordt weergegeven.
    * In een map die is geconfigureerd voor synchronisatie met Dynamic Media, wordt het dialoogvenster **[!UICONTROL Dynamic Media]** kolom standaard.
    * Een map die *niet* geconfigureerd voor synchronisatie met Dynamic Media, geeft de Dynamic Media-kolom niet weer.
-      ![Lijstweergave en tijdlijn](/help/assets/assets-dm/selective-publish-status-timeline.png)
+     ![Lijstweergave en tijdlijn](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Problemen met selectief publiceren oplossen {#selective-publish-troubleshoot}
 

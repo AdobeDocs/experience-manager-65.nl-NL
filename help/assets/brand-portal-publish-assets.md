@@ -1,27 +1,23 @@
 ---
-title: Assets publiceren naar Brand Portal
-seo-title: Publish assets to Brand Portal
+title: Elementen publiceren naar Brand Portal
 description: Leer hoe u middelen publiceert en publiceert naar Brand Portal.
-seo-description: Learn how to publish and unpublish assets to Brand Portal.
-uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 43%
+source-wordcount: '328'
+ht-degree: 39%
 
 ---
 
-# Assets publiceren naar Brand Portal {#publish-assets-to-brand-portal}
+# Elementen publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -44,9 +40,9 @@ Nadat de replicatie is gelukt, kunt u elementen, mappen en verzamelingen publice
 
 1. Voor het publiceren van de elementen naar Brand Portal zijn de volgende twee opties beschikbaar:
    * [Elementen direct publiceren](#publish-to-bp-now)
-   * [Assets later publiceren](#publish-to-bp-now)
+   * [Elementen later publiceren](#publish-to-bp-now)
 
-## Assets nu publiceren {#publish-to-bp-now}
+## Elementen nu publiceren {#publish-to-bp-now}
 
 Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand Portal te publiceren:
 
@@ -60,7 +56,7 @@ Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand P
 
 Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken.
 
-## Assets later publiceren {#publish-to-bp-later}
+## Elementen later publiceren {#publish-to-bp-later}
 
 Voer de volgende handelingen uit om het publiceren van de assets naar Brand Portal op een latere datum of tijd te plannen:
 

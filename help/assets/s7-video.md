@@ -1,26 +1,24 @@
 ---
 title: Video
 description: In deze video's leert u over het gecentraliseerde beheer van video-elementen in Adobe Experience Manager Assets, waar u video's voor automatische codering kunt uploaden naar Dynamic Media Classic en rechtstreeks vanuit Experience Manager Assets toegang kunt krijgen tot Dynamic Media Classic-video's. Door Dynamic Media Classic-video-integratie wordt het bereik van geoptimaliseerde video uitgebreid naar alle schermen.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
 
 # Video {#video}
 
-Adobe Experience Manager Assets biedt gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en Dynamic Media Classic-video&#39;s rechtstreeks kunt openen vanuit Middelen voor het ontwerpen van pagina&#39;s.
+Adobe Experience Manager Assets biedt gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Dynamic Media Classic-video&#39;s voor het ontwerpen van pagina&#39;s.
 
 Dynamic Media Classic-videointegratie breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische detectie van apparaat en bandbreedte).
 

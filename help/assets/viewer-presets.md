@@ -1,18 +1,16 @@
 ---
 title: Voorinstellingen voor Dynamic Media-viewers toepassen
 description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Viewer Presets
 role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '215'
 ht-degree: 14%
 
 ---
@@ -37,7 +35,7 @@ Alle problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media oplo
    * De knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** worden weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
    * Het systeem bevat een groot aantal viewervoorinstellingen wanneer u Viewers selecteert in **[!UICONTROL Detail View]** van een asset. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen vergroten](managing-viewer-presets.md).
 
-1. Selecteer een viewer in het linkerdeelvenster, zodat u deze kunt toepassen op het element, zoals in het rechterdeelvenster. U kunt ook [kopiëren naar gedeelde URL](linking-urls-to-yourwebapplication.md) met andere gebruikers.
+1. Selecteer een viewer in het linkerdeelvenster, zodat u deze kunt toepassen op het element, zoals in het rechterdeelvenster. U kunt [de URL kopiëren die u wilt delen](linking-urls-to-yourwebapplication.md) met andere gebruikers.
 
 ## URL&#39;s met voorinstellingen van viewer verkrijgen {#obtaining-viewer-preset-urls}
 

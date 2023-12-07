@@ -1,25 +1,23 @@
 ---
 title: Geoptimaliseerde afbeeldingen voor een responsieve site leveren
 description: De functie voor responsieve code gebruiken om geoptimaliseerde afbeeldingen te leveren
-uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Asset Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 9%
+source-wordcount: '330'
+ht-degree: 8%
 
 ---
 
 # Geoptimaliseerde afbeeldingen leveren voor een responsieve site {#delivering-optimized-images-for-a-responsive-site}
 
-Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsieve serving met uw webontwikkelaar. U kopieert de responsieve (**[!UICONTROL RESS]**) naar het klembord zodat u deze kunt delen met de webontwikkelaar.
+Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsieve functies in uw webontwikkelaar. U kopieert de responsieve (**[!UICONTROL RESS]**) naar het klembord zodat u deze kunt delen met de webontwikkelaar.
 
 Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw website zich echter op Adobe Experience Manager bevindt, wordt de afbeelding door een externe afbeeldingsserver gerenderd en aan de webpagina geleverd.
 
@@ -43,7 +41,7 @@ Zie ook [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplica
    >
    >Dynamic Media - Voor de hybride modus moet u voorinstellingen voor afbeeldingen publiceren. In de modus Dynamic Media - Scene7 worden automatisch voorinstellingen voor afbeeldingen gepubliceerd.
 
-1. Selecteer **[!UICONTROL RESS]**.
+1. Selecteren **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 

@@ -1,19 +1,17 @@
 ---
 title: Dynamic Media Classic-functies toevoegen aan pagina's
 description: Dynamic Media Classic-functies en -componenten toevoegen aan een pagina in Adobe Experience Manager.
-uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: managing-assets
-discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
@@ -75,7 +73,7 @@ Nadat ze beschikbaar zijn gesteld in **[!UICONTROL Design]** kunt u de component
 >
 >Als u aangepaste viewers maakt en ontwikkelt en de Inhoudszoeker gebruikt, moet u de opdracht `allowfullscreen` parameter.
 
-### Kennisgeving over de gebruiksduur van Flash-viewers {#flash-viewers-end-of-life-notice}
+### Eindbericht voor Flash Viewers {#flash-viewers-end-of-life-notice}
 
 Met ingang van 31 januari 2017 is Adobe Dynamic Media Classic gestopt met ondersteuning voor het viewerplatform voor Flash.
 
@@ -235,7 +233,7 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 
 ### Video-component {#video-component}
 

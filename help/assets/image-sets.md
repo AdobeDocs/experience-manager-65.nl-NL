@@ -1,24 +1,22 @@
 ---
-title: Image Sets
+title: Afbeeldingssets
 description: Leer hoe u met Afbeeldingssets werkt in Dynamic Media
-uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 6%
+source-wordcount: '2129'
+ht-degree: 5%
 
 ---
 
-# Image Sets {#image-sets}
+# Afbeeldingssets {#image-sets}
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door een miniatuurafbeelding te selecteren. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 
@@ -30,13 +28,13 @@ In de Afbeeldingsset kunt u ook stalen maken door een Afbeeldingsset te maken en
 
 Deze toepassing is handig wanneer u een item in een andere kleur, in een ander patroon of in een ander patroon wilt weergeven. Als u een afbeeldingsset met kleurstalen wilt maken, hebt u één afbeelding nodig voor elke andere kleur, elk patroon of elke afwerking die u aan de gebruikers wilt presenteren. Voor elke kleur, elk patroon of elke afwerking hebt u ook één kleur-, patroon- of eindstaal nodig.
 
-Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt weergeven. de rekeningen zijn rood , groen en blauw . In dit geval hebt u drie opnamen van hetzelfde kapje nodig. Je hebt een opname nodig met een rood, een met een groen en een met een blauwe rekening. U hebt ook een rood, groen en blauw kleurenstaal nodig. De kleurstalen fungeren als de miniaturen die gebruikers in de Staalset-viewer selecteren om de rode, groene of blauwe rechthoek te zien.
+Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt weergeven. De rekeningen zijn rood, groen en blauw. In dit geval hebt u drie opnamen van hetzelfde kapje nodig. Je hebt een opname nodig met een rood, een met een groen en een met een blauwe rekening. U hebt ook een rood, groen en blauw kleurenstaal nodig. De kleurstalen fungeren als de miniaturen die gebruikers in de Staalset-viewer selecteren om de rode, groene of blauwe rechthoek te zien.
 
 >[!NOTE]
 >
 >Voor informatie over de gebruikersinterface van Middelen raadpleegt u [Elementen beheren](/help/assets/manage-assets.md).
 
-Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
+Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste praktijken aan en handhaaft de volgende grenzen:
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
@@ -61,14 +59,14 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
    In de Reeksen van het Beeld, selecteren de gebruikers duimnagelbeelden in de Vastgestelde Kijker van het Beeld.
 
-   Ga naar **[!UICONTROL Create]** > **[!UICONTROL Image Sets]**. Voeg vervolgens afbeeldingen toe en selecteer **[!UICONTROL Save]**.
+   Als u een Afbeeldingsset in elementen wilt maken, gaat u naar **[!UICONTROL Create]** > **[!UICONTROL Image Sets]**. Voeg vervolgens afbeeldingen toe en selecteer **[!UICONTROL Save]**.
 
    U kunt ook automatisch afbeeldingssets maken via [voorinstellingen voor batchsets](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
    >Batchsets worden gemaakt door het IPS (Image Production System) als onderdeel van het opnemen van elementen en zijn alleen beschikbaar in de Dynamic Media-Scene7-modus.
 
-   Zie [Afbeeldingsset-elementen voorbereiden voor het uploaden en uploaden van uw bestanden](#uploading-assets-in-image-sets).
+   Zie [Afbeeldingssets voorbereiden voor het uploaden en uploaden van uw bestanden](#uploading-assets-in-image-sets).
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md).
 
@@ -93,17 +91,17 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
    Selecteer de Afbeeldingset en selecteer vervolgens in de vervolgkeuzelijst voor het linkerspoor **[!UICONTROL Viewers]**.
 
-   Zie [Een afbeeldingsset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
+   Zie [Een Afbeeldingsset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
 
-Als u Afbeeldingssets wilt bewerken, raadpleegt u [Afbeeldingssets bewerken](#editing-image-sets). Bovendien kunt u [Eigenschappen van Afbeeldingsset](/help/assets/manage-assets.md#editing-properties).
+Zie voor informatie over het bewerken van afbeeldingssets [Afbeeldingssets bewerken](#editing-image-sets). Bovendien kunt u [Eigenschappen van Afbeeldingsset](/help/assets/manage-assets.md#editing-properties).
 
 Als u problemen ondervindt bij het maken van sets, raadpleegt u Afbeeldingen en sets in [Problemen oplossen in de modus Dynamic Media - Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
 ## Elementen uploaden in afbeeldingssets {#uploading-assets-in-image-sets}
 
-Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Wanneer u afbeeldingen kiest, moet u niet vergeten dat uw klanten op afbeeldingen kunnen zoomen in de viewer voor de afbeeldingsset. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie. Afbeeldingssets ondersteunen veel indelingen voor afbeeldingsbestanden, maar afbeeldingen zonder verlies van TIFF, PNG en EPS worden aanbevolen.
+Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Wanneer u afbeeldingen kiest, moet u niet vergeten dat uw klanten op afbeeldingen kunnen zoomen in de viewer voor de afbeeldingsset. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn. Afbeeldingssets ondersteunen veel indelingen voor afbeeldingsbestanden, maar afbeeldingen zonder verlies van de indelingen TIFF, PNG en EPS worden aanbevolen.
 
-U kunt afbeeldingen voor Afbeeldingssets uploaden zoals u [andere elementen in Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
+U kunt afbeeldingen voor afbeeldingssets uploaden zoals u dat zou doen [andere elementen in Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
 
 Zie [Dynamic Media - Ondersteunde rasterafbeeldingsindelingen](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) voor een lijst met indelingen die worden ondersteund door Afbeeldingssets.
 
@@ -124,10 +122,9 @@ Omdat gebruikers kunnen inzoomen op afbeeldingen in Afbeeldingssets, moet u ervo
 >* Een zwarte, bruine en groene opname van hetzelfde jasje.
 >* Een zwarte, bruine en groene kleurminiatuur.
 
-
 ## Een afbeeldingsset maken {#creating-image-sets}
 
-U kunt Afbeeldingssets maken via de gebruikersinterface of via de API. In deze sectie wordt beschreven hoe u afbeeldingssets maakt in de gebruikersinterface.
+U kunt Afbeeldingssets maken via de gebruikersinterface of via de API. In deze sectie wordt beschreven hoe u Afbeeldingssets maakt in de gebruikersinterface.
 
 >[!NOTE]
 >
@@ -140,7 +137,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 >
 >Afbeeldingssets worden niet ondersteund voor elementen met &quot;,&quot; (komma) in de bestandsnaam.
 
-Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
+Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste praktijken aan en handhaaft de volgende grenzen:
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
@@ -151,13 +148,13 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 **Een afbeeldingsset maken:**
 
-1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan ga naar **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigeer naar de plaats waar u een Reeks van het Beeld wilt tot stand brengen, dan ga naar **[!UICONTROL Create]** > **[!UICONTROL Image Set]** om de pagina van de Editor van de set Afbeeldingen te openen.
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan ga **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigeer naar de plaats waar u een Reeks van het Beeld wilt tot stand brengen, dan ga naar **[!UICONTROL Create]** > **[!UICONTROL Image Set]** om de pagina van de Editor van de set Afbeeldingen te openen.
 
-   U kunt de set ook maken vanuit een map die uw assets bevat.
+   U kunt de set ook maken vanuit een map die uw elementen bevat.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. Op de pagina van de Editor voor de set afbeeldingen, in het dialoogvenster **[!UICONTROL Title]** voert u een naam in voor de afbeeldingsset. De naam wordt weergegeven in de banner in de Afbeeldingsset. Voer eventueel een beschrijving in.
+1. Op de pagina van de Editor voor de set afbeeldingen, in het dialoogvenster **[!UICONTROL Title]** voert u een naam in voor de Afbeeldingsset. De naam wordt weergegeven in de banner in de Afbeeldingsset. Voer eventueel een beschrijving in.
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
@@ -166,9 +163,10 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
    * Selecteer in de linkerbovenhoek van de pagina Editor afbeeldingsset de optie **[!UICONTROL Add Asset]**.
 
    * Selecteer in het midden van de pagina Editor afbeeldingsset de optie **[!UICONTROL Tap to open Asset Selector]**.
+
    Selecteer de elementen die u in de afbeeldingsset wilt opnemen. Geselecteerde assets hebben een vinkje. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Select]**.
 
-   Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
+   Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het filter **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md).
 
@@ -180,16 +178,17 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
-   Als u een miniatuur of staal wilt wijzigen, selecteert u de optie **+** **miniatuur** naast de afbeelding en navigeer naar de gewenste miniatuur of staal. Wanneer u klaar bent met het selecteren van alle afbeeldingen, selecteert u **[!UICONTROL Save]**.
+   Als u een miniatuur of staal wilt wijzigen, selecteert u de optie **+** **miniatuur** naast de afbeelding en navigeer naar de gewenste miniatuur of staal. Selecteer alle afbeeldingen als u klaar bent **[!UICONTROL Save]**.
 
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
-   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en selecteert u **[!UICONTROL Delete Asset]**.
+   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en **[!UICONTROL Delete Asset]**.
 
-   * Als u een voorinstelling wilt toepassen, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Preset]** Selecteer vervolgens een voorinstelling die u op alle elementen tegelijk wilt toepassen.
+   * Selecteer **[!UICONTROL Preset]** Selecteer vervolgens een voorinstelling die u op alle elementen tegelijk wilt toepassen.
+
    >[!NOTE]
    >
-   >Wanneer u de Afbeeldingsset maakt, kunt u de miniatuur van de afbeeldingsset wijzigen of Experience Manager toestaan de miniatuur automatisch te selecteren op basis van de elementen in de Afbeeldingsset. Als u een miniatuur wilt selecteren, selecteert u **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor afbeeldingsset selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd en vervolgens wilt dat Experience Manager een miniatuur genereert uit de Afbeeldingsset, selecteert u **[!UICONTROL Switch to]** > **[!UICONTROL Automatic thumbnail]**.
+   >Wanneer u de Afbeeldingsset maakt, kunt u de miniatuur van de afbeeldingsset wijzigen of Experience Manager toestaan de miniatuur automatisch te selecteren op basis van de elementen in de Afbeeldingsset. Selecteer een miniatuur door **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor afbeeldingsset selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd en vervolgens besluit dat Experience Manager een miniatuur moet genereren in de Afbeeldingsset, selecteert u **[!UICONTROL Switch to]** > **[!UICONTROL Automatic thumbnail]**.
 
 1. Selecteer **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
@@ -201,21 +200,21 @@ U kunt afbeeldingssets maken in de gebruikersinterface of automatisch met [voori
 >
 >De reeksen van de partij worden gecreeerd door IPS [Afbeeldingsproductiesysteem] als onderdeel van het opnemen van activa en zijn alleen beschikbaar in de Dynamic Media-Scene7-modus.)
 
-sets die zijn gemaakt met voorinstellingen voor batchsets, doen *niet* worden weergegeven in de gebruikersinterface. U kunt deze sets op drie verschillende manieren weergeven. (Deze methoden zijn ook beschikbaar als u de afbeeldingssets in de gebruikersinterface hebt gemaakt.)
+sets die zijn gemaakt met voorinstellingen voor batchsets, doen *niet* in de gebruikersinterface. U kunt deze sets op drie verschillende manieren weergeven. (Deze methoden zijn beschikbaar, zelfs als u de afbeeldingssets in de gebruikersinterface hebt gemaakt.)
 
 * Open de eigenschappen van een afzonderlijk element. Eigenschappen geven aan naar welke sets van het geselecteerde element wordt verwezen of een lid van. Selecteer de naam van de set als u de volledige set wilt zien.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* Van een lidafbeelding van om het even welke set. Selecteer **[!UICONTROL Sets]** om de sets weer te geven waarvan het element lid is.
+* Van een lidafbeelding van om het even welke set. Selecteer de **[!UICONTROL Sets]** om de sets weer te geven waarvan het element lid is.
 
-   ![6_5_imageset-set-pushDownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-set-pushDownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * Van onderzoek, kunt u selecteren **[!UICONTROL Filter]** vervolgens uitvouwen **[!UICONTROL Dynamic Media]** en selecteert u **[!UICONTROL Sets]**.
 
-   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend &quot;Begint met&quot;onderzoekscriteria die van het onderzoek van de Experience Manager verschillend zijn die op het gebruiken van &quot;bevat&quot;onderzoekscriteria gebaseerd is. Het filter instellen op **[!UICONTROL Sets]** Dit is de enige manier om geautomatiseerde sets te zoeken.
+  De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend &quot;Begint met&quot;onderzoekscriteria die van het onderzoek van de Experience Manager verschillend zijn die op het gebruiken van &quot;bevat&quot;onderzoekscriteria gebaseerd is. Het filter instellen op **[!UICONTROL Sets]** Dit is de enige manier om geautomatiseerde sets te zoeken.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -236,7 +235,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 1. Voer een van de volgende handelingen uit:
 
    * Houd de cursor boven een afbeeldingsset-element en selecteer **[!UICONTROL Edit]** (potloodpictogram).
-   * Houd de cursor boven een afbeeldingsset-element en selecteer **[!UICONTROL Select]** (vinkje pictogram), selecteer dan **[!UICONTROL Edit]** op de werkbalk.
+   * Als u de cursor op een afbeeldingsset plaatst, selecteert u **[!UICONTROL Select]** (vinkje pictogram), selecteer dan **[!UICONTROL Edit]** op de werkbalk.
    * Selecteer een afbeeldingsset en selecteer vervolgens **[!UICONTROL Edit]** (potloodpictogram) op de werkbalk.
 
 1. Voer een van de volgende handelingen uit om de afbeeldingen in de Afbeeldingsset te bewerken:
@@ -244,12 +243,11 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
    * Als u elementen opnieuw wilt rangschikken, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, selecteert u de kolomkop.
    * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, selecteert u de optie **[!UICONTROL Add Asset]**. Navigeer naar een element, selecteer het en selecteer het **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
-
-      >[!NOTE]
-      >
-      >Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
+     >[!NOTE]
+     >
+     >Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
    * Als u een element wilt verwijderen, selecteert u het en selecteert u het **[!UICONTROL Delete Asset]**.
-   * Als u een voorinstelling wilt toepassen, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Preset]** selecteert u vervolgens een viewervoorinstelling.
+   * Selecteer **[!UICONTROL Preset]** selecteert u vervolgens een viewervoorinstelling.
    * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe stalenelement, selecteer het en selecteer het **[!UICONTROL Select]**.
    * Als u een hele afbeeldingsset wilt verwijderen, navigeert u naar de afbeeldingsset, selecteert u deze en selecteert u **[!UICONTROL Delete]**.
 

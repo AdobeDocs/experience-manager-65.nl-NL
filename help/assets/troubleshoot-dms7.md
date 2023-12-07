@@ -1,20 +1,18 @@
 ---
 title: Problemen met Dynamic Media oplossen - Scene7-modus
 description: Leer hoe u installatie-, configuratie- en algemene problemen in Dynamic Media kunt oplossen en oplossen wanneer deze in de Scene7-modus worden uitgevoerd.
-uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---

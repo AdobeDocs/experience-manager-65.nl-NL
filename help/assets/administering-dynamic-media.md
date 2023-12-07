@@ -1,16 +1,14 @@
 ---
 title: Dynamic Media instellen
 description: Als u Dynamic Media wilt instellen, moet u Dynamic Media configureren en voorinstellingen voor afbeeldingen en viewers beheren.
-uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuration
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -30,7 +28,7 @@ Als u Dynamic Media beheert, zijn de volgende onderwerpen van belang:
 * [Dynamic Media configureren - Scene7-modus](config-dms7.md) - Gebruik deze configuratie als u een nieuwe Dynamic Media-klant bent.
 * [Dynamic Media configureren - hybride modus](config-dynamic.md) - Gebruik deze configuratie als u een bestaande Dynamic Media-Experience Manager voor klantenupgrade bent.
 * [Afbeeldingsvoorinstellingen beheren](managing-image-presets.md)
-* [Viewervoorinstellingen beheren](managing-viewer-presets.md)
+* [Voorinstellingen voor viewers beheren](managing-viewer-presets.md)
 * [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)
 
 Zie ook de volgende onderwerpen:
@@ -43,6 +41,5 @@ Zie ook de volgende onderwerpen:
 >**Als u een upgrade uitvoert:**
 >
 >* Nadat u de Experience Manager hebt uitgevoerd, wordt Dynamic Media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een geüpgrade exemplaar van Experience Manager en nieuw aan Dynamic Media bent, moet u uw activa opnieuw verwerken om hen Dynamic Media-Toegelaten te maken.
-
 
 

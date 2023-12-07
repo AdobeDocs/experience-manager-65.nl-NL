@@ -5,7 +5,7 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u ee
 Stappen voor het maken van een app op basis van een toepassingssjabloon:
 
 1. Ga naar de AEM Mobile-toepassingscatalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Selecteren **Maken** -> **App** zoals hieronder weergegeven
+1. Selecteren **Maken** > **App** zoals hieronder weergegeven
 
 Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Als u artikelen, banners en verzamelingen opnieuw wilt bekijken, gaat u naar [Handelingen voor inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 

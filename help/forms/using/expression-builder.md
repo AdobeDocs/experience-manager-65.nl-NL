@@ -1,19 +1,15 @@
 ---
 title: Externe functies in Expression Builder
-seo-title: Expression Builder
 description: Met Expression Builder in Correspondence Management kunt u expressies en externe functies maken.
-seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -43,7 +39,7 @@ Hier zijn een paar algemeen gebruikte JSP EL voorbeelden die u in uw oplossing v
 Meer informatie vindt u in het gedeelte [JSP EL-specificatie](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
 
 * Indexen en kaarttoetsen voor verzamelingen (met de [] notatie) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
-* Hieronder volgen de parametertypen of retourneringstypen van functies die in expressies worden gebruikt:
+* Hieronder ziet u de parametertypen of retourneringstypen van functies die in expressies worden gebruikt:
 
    * java.lang.String
    * java.lang.Character
@@ -80,7 +76,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
 1. Bepaal een interface voor de dienst OSGi die methodes bevat die voor gebruik door de Manager van de Uitdrukking worden uitgevoerd.
 1. Declareer methodes op interface A en annoteer hen met de @ServiceMethod annotation (com.adobe.exm.expeval.ServiceMethod). Expression Manager negeert methoden zonder annotatie. De annotatie ServiceMethod heeft de volgende facultatieve attributen die ook kunnen worden gespecificeerd:
 
-   1. **Ingeschakeld**: Hiermee wordt bepaald of deze methode is ingeschakeld. Expressiebeheer negeert uitgeschakelde methoden.
+   1. **Ingeschakeld**: hiermee wordt bepaald of deze methode is ingeschakeld. Expressiebeheer negeert uitgeschakelde methoden.
    1. **familyId**: Geeft de familie (groep) van de methode aan. Als dit leeg is, gaat Expression Manager ervan uit dat de methode tot de standaardfamilie behoort. Er is geen register van families (behalve het standaardregister) waaruit functies worden gekozen. De Manager van de uitdrukking leidt dynamisch tot de registratie door een vereniging van alle familie IDs te nemen die door alle functies wordt gespecificeerd die door de diverse bundels worden uitgevoerd. Zorg ervoor dat de id die ze hier opgeven redelijk leesbaar is, aangezien deze ook wordt weergegeven in de gebruikersinterface voor het schrijven van expressies.
    1. **displayName**: Een door de mens leesbare naam voor de functie. Deze naam wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardnaam samengesteld met het voorvoegsel en de lokale naam van de functie.
    1. **Beschrijving**: Een uitgebreide beschrijving van de functie. Deze beschrijving wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardbeschrijving gemaakt met het voorvoegsel en de lokale naam van de functie.
@@ -118,7 +114,6 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
    * java.util.Calendar
    * java.util.Date
    * java.util.List
-
 
 1. Bepaal de implementatie van de interface, vorm het als dienst OSGI en bepaal de volgende de diensteigenschappen:
 

@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,64 @@ U kunt een adaptief formulier configureren om een Microsoft® Power Automate Clo
 De Adaptive Forms-editor biedt de **Een Microsoft® Power Automate-flow aanroepen** verzenden actie om adaptieve formuliergegevens, bijlagen en Document of Record naar Power Automate Cloud Flow te verzenden. De handeling Verzenden gebruiken om vastgelegde gegevens naar Microsoft® Power Automate te verzenden, [Sluit uw AEM Forms-instantie aan met Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
 Na een succesvolle configuratie, gebruik [Een Microsoft® Power Automate-flow aanroepen](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) verzenden actie om gegevens naar een Power Automate Flow te verzenden.
+
+## Verzenden naar Microsoft® SharePoint List{#submit-to-sharedrive}
+
+<span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+De **[!UICONTROL Submit to SharePoint]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
+
+### Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst {#connect-af-sharepoint-list}
+
+Als u de opdracht [!UICONTROL Submit to SharePoint List] Actie verzenden in een adaptieve vorm:
+
+1. [Een SharePoint List-configuratie maken](#create-sharepoint-list-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint List Storage.
+1. [Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken](#use-submit-using-fdm): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
+
+#### Een SharePoint List-configuratie maken {#create-sharepoint-list-configuration}
+
+AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
+
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Klikken **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
+1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft® Azure-portal.
+   * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
+   * API-machtigingen toevoegen `offline_access` en `Sites.Manage.All` in de **Microsoft® Graph** om lees-/schrijfmachtigingen te bieden. Toevoegen `AllSites.Manage` toestemming in de **Sharepoint** -tabbladen gebruiken om op afstand te werken met SharePoint-gegevens.
+   * OAuth-URL gebruiken: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervangen `<tenant-id>` met de `tenant-id` van uw app via de Microsoft® Azure-portal.
+
+     >[!NOTE]
+     >
+     De **clientgeheim** het gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
+
+1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
+1. Selecteren **[!UICONTROL SharePoint Site]** en **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst.
+1. Tikken **[!UICONTROL Create]** om de cloudconfiguratie voor de Microsoft® SharePointList te maken.
+
+#### Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken {#use-submit-using-fdm}
+
+U kunt de gemaakte SharePoint List-configuratie in een adaptief formulier gebruiken om gegevens of het gegenereerde Document of Record in een SharePoint-lijst op te slaan. Voer de volgende stappen uit om een SharePoint List-opslagconfiguratie in een adaptief formulier te gebruiken als:
+
+1. [Een formuliergegevensmodel maken met de configuratie Microsoft® SharePoint List](/help/forms/using/create-form-data-model.md)
+1. [Het formuliergegevensmodel configureren voor het ophalen en verzenden van gegevens](/help/forms/using/work-with-form-data-model.md#configure-services)
+1. [Een adaptief formulier maken](/help/forms/using/create-adaptive-form.md).
+1. [Verzendactie configureren met een formuliergegevensmodel](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
+
+Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint List Storage.
+
+>[!NOTE]
+>
+In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
+* afbeeldingskolom
+* metagegevenskolom
+* persoonlijke kolom
+* kolom externe gegevens
+
+
+>[!NOTE]
+>
+Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [stel de configuratie op](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) naar de instantie Cloud Service.
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 

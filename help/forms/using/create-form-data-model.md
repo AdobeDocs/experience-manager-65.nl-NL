@@ -5,9 +5,9 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -236,3 +236,8 @@ Voer de volgende handelingen uit om de test uit te voeren:
    Nu, als u de gelezen modeldienst opnieuw voor identiteitskaart 7107215 test, haalt het en toont de bijgewerkte klantendetails zoals hieronder getoond.
 
    ![lezen-bijgewerkt](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> U kunt de configuratie SharePoint List maken en gebruiken met het formuliergegevensmodel in een adaptief formulier, om gegevens of gegenereerd document met record op te slaan in een SharePoint-lijst. Zie [Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)voor gedetailleerde stappen.

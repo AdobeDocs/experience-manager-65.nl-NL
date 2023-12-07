@@ -7,9 +7,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1888'
 ht-degree: 0%
 
 ---
@@ -63,28 +63,38 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
    >
    Zorg ervoor dat URL van de Pagina van de Configuratie van Cloud Servicen met begint **HTTPS**. Zo niet, [SSL inschakelen](/help/sites-administering/ssl-by-default.md) voor AEM [!DNL Forms] server.
 
-1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Adobe Sign] configuratie AEM [!DNL Forms].
-1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create Adobe Sign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie en selecteer **[!UICONTROL Next]**. U kunt desgewenst een titel opgeven en naar een miniatuur voor de configuratie bladeren.
 
-1. Kopieer de URL in het huidige browservenster naar een laptop. Het is vereist om te configureren [!DNL Adobe Sign] toepassing met AEM[!DNL Forms].
+1. Tik op de configuratiepagina **[!UICONTROL Create]** om [!DNL Adobe Sign] configuratie AEM [!DNL Forms].
+1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create Adobe Sign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie en tikken **[!UICONTROL Next]**. U kunt desgewenst een titel opgeven en naar een miniatuur voor de configuratie bladeren.
+1. Nu kunt u **[!UICONTROL Select solution]** om [!DNL Adobe Acrobat Sign].
 
-1. In de **[!UICONTROL Settings]** de **[!UICONTROL OAuth URL]** bevat de standaard-URL. De opmaak van de URL is:
+   ![Adobe Acrobat Sign Solutions](/help/forms/using/assets/adobe-sign-solution.png)
 
-   `https://<shard>/public/oAuth/v2`
+1. Kopieer de URL in het huidige browservenster naar een laptop en verwijder het onderdeel /`ui#/aem` via de URL. De gewijzigde URL wordt dan vereist om te vormen [!DNL Adobe Acrobat Sign] toepassing met [!DNL AEM Forms], in een latere stap. Tikken [!UICONTROL Next].
 
-   Bijvoorbeeld:
-   `https://secure.na1.echosign.com/public/oauth/v2`
+1. In de **[!UICONTROL Settings]** tab,
+   * de **[!UICONTROL OAuth URL]** bevat het veld de standaard-URL die het Adobe Sign-databasespoor bevat. De opmaak van de URL is:
+
+     `https://<shard>/public/oauth/v2`
+
+     Bijvoorbeeld:
+     `https://secure.na1.echosign.com/public/oauth/v2`
+
+   * de **[!UICONTROL Access token URL]** bevat het veld de standaard-URL die het Adobe Sign-databasespoor bevat. De opmaak van de URL is:
+
+     `https://<shard>/oauth/v2/token`
+
+     Bijvoorbeeld:
+     `https://api.na1.echosign.com/oauth/v2/token`
 
    waarbij:
 
-   **nl1** verwijst naar de standaard databasedeelt. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Sign] Cloud Configurations verwijzen naar de [correcte Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
-
-   Als u een andere [!DNL Adobe Sign] configuratie voor een Adobe Experience Manager-functie of -component, zorg ervoor dat alle [!DNL Adobe Sign] Cloud Configurations verwijzen naar hetzelfde segment.
+   **nl1** verwijst naar de standaard databasedeelt. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Cloud Configurations verwijzen naar de [correcte Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
-   Houd de **Adobe Sign-configuratie maken** pagina geopend. Sluit het bestand niet. U kunt **Client-id** en **Clientgeheim** na het configureren van OAuth-instellingen voor de [!DNL Adobe Sign] zoals beschreven in volgende stappen.
-
+   * Houd de **Adobe Acrobat Sign-configuratie maken** pagina geopend. Sluit het bestand niet. U kunt **Client-id** en **Clientgeheim** na het configureren van OAuth-instellingen voor de [!DNL Adobe Acrobat Sign] zoals beschreven in volgende stappen.
+   * Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie over Adobe Sign OAuth URL en Access Token URL.
 
 1. OAuth-instellingen configureren voor de [!DNL Adobe Sign] toepassing:
 
@@ -104,22 +114,23 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. Ga terug naar de **[!UICONTROL Create Adobe Sign Configuration]** pagina. In de **[!UICONTROL Settings]** de **[!UICONTROL OAuth URL]** in het veld wordt de standaard-URL vermeld. De opmaak van de URL is:
+<!--
+1. Go back to the **[!UICONTROL Create Adobe Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, the **[!UICONTROL OAuth URL]** field mentions the  default URL. The format of the URL is:
 
    `https://<shard>/public/oAuth/v2`
 
-   Bijvoorbeeld:
+   For example: 
    `https://secure.na1.echosign.com/public/oauth/v2`
 
-   waarbij:
+   where:
 
-   **nl1** verwijst naar de standaard databasedeelt.
+   **na1** refers to the default database shard.
 
-   U kunt de waarde voor het delen van de database wijzigen. Start de server opnieuw om de nieuwe waarde voor de databaseschijf te kunnen gebruiken.
+   You can modify the value for the database shard. Restart the server to be able to use the new value for the database shard.
 
    >[!NOTE]
    >
-   Zorg ervoor dat de auteur en de publicatie van instantieconfiguraties naar hetzelfde niveau verwijzen. Als u meerdere Adobe Sign-configuraties voor een organisatie maakt, moet u ervoor zorgen dat alle configuraties hetzelfde segment gebruiken.
+   >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard. -->
 
 1. Ga terug naar de **[!UICONTROL Create Adobe Sign Configuration]** pagina. In de **[!UICONTROL Settings]** tabblad, geeft u de **Client-id** (ook toepassings-id genoemd) en **Clientgeheim**. Gebruik de [Client-id en clientgeheim van Adobe Sign-toepassing](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) gemaakt voor AEM Forms.
 
@@ -127,8 +138,9 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 
 1. Selecteer **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt tijdens het maken van [!DNL Adobe Sign] toepassing.
 
-1. Selecteren **[!UICONTROL Create]** om de [!DNL Adobe Sign] configuratie.
+   ![Adobe Acrobat Sign Cloud-configuratie gelukt](assets/adobe-sign-cloud-configuration-success.png)
 
+1. Tikken **[!UICONTROL Create]** om de [!DNL Adobe Sign] configuratie.
 1. Open AEM webconsole. De URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Openen **[!UICONTROL Forms Common Configuration Service].**
 1. In de **[!UICONTROL Allow]** veld, **selecteren** Alle gebruikers - Alle gebruikers, anoniem of aangemeld, kunnen een voorbeeld van bijlagen bekijken, formulieren verifiëren en ondertekenen en op **[!UICONTROL Save].** Auteur-instantie is geconfigureerd voor gebruik [!DNL Adobe Sign].
@@ -136,6 +148,10 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 1. Gebruiken [replicatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op overeenkomstige te creëren publiceer instanties.
 
 Nu, [!DNL Adobe Sign] is geïntegreerd met AEM [!DNL Forms] en klaar voor gebruik in adaptieve vormen. Naar [Adobe Sign-service in een adaptieve vorm gebruiken](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), geeft u de hierboven gemaakte configuratiecontainer op in adaptieve formuliereigenschappen.
+
+>[!NOTE]
+>
+Als u de Adobe Sign-sandbox wilt configureren, kunt u dezelfde configuratiestappen volgen als in [Adobe Sign](#adobe-sign).
 
 ## Connect AEM Forms met Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
@@ -203,9 +219,30 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
    ![Adobe Acrobat Sign Solutions for Government](/help/forms/using/assets/adobe-sign-for-govt.png)
 
-1. In de **[!UICONTROL Email]** opgegeven, geeft u het e-mailadres op dat aan uw Adobe Acrobat Sign Solutions for Government-account is gekoppeld.
+1. In de **[!UICONTROL Email]** Geef het e-mailadres op dat aan uw Adobe Acrobat Sign Solutions for Government-account is gekoppeld.
 
-1. De **[!UICONTROL OAuth URL]** in het veld wordt de Adobe Sign-databaseschijf opgegeven. Het veld bevat de standaard-URL. Wijzig de URL niet.
+1. In de **[!UICONTROL Settings]** tab,
+   * de **[!UICONTROL OAuth URL]** bevat het veld de standaard-URL die het Adobe Sign-databasespoor bevat. De opmaak van de URL is:
+
+     `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
+
+     Bijvoorbeeld:
+     `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
+
+   * de **[!UICONTROL Access token URL]** bevat het veld de standaard-URL die het Adobe Sign-databasespoor bevat. De opmaak van de URL is:
+
+     `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
+
+     Bijvoorbeeld:
+     `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
+
+   waarbij:
+
+   **nl1** verwijst naar de standaard databasedeelt. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Cloud Configurations verwijzen naar de [correcte Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+
+   >[!NOTE]
+   >
+   * Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie met betrekking tot Adobe Sign Auth URL en Access Token URL.
 
 1. Gebruik de gegevens die worden gedeeld door de vertegenwoordiger van Adobe Acrobat Sign for Government Solution ([Adobe Professional Services-teamlid]) in de vorige sectie als [**[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]**].
 

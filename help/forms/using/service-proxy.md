@@ -1,17 +1,13 @@
 ---
 title: HTML5-serviceproxy voor formulieren
-seo-title: HTML5 forms service proxy
 description: De Proxy van de Dienst van HTML5 vormen is een configuratie om een volmacht voor de voorleggingsdienst te registreren. Om de Volmacht van de Dienst te vormen, specificeer URL van de voorleggingsdienst door request parameter submissionServiceProxy.
-seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
-uuid: 42d6c1da-3945-469d-b429-c33e563ed70c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 feature: Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -128,11 +124,11 @@ Als u op de knop Verzenden klikt, sturen HTML5-formulieren gegevens naar de serv
 
 #### Hoe werkt de verzendproxy? {#how-nbsp-the-nbsp-submit-proxy-works}
 
-De verzendserviceproxy fungeert als een pass through als de verzender niet aanwezig is in de parameter request. Het fungeert als een doorbraak. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar XFA runtime.
+De verzendserviceproxy fungeert als een pass through als de verzender niet aanwezig is in de parameter request. Het fungeert als een doorbraak. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar runtime XFA.
 
 De voorgelegde de dienstvolmacht selecteert een topologie als voorlegger in de verzoekparameter aanwezig is.
 
-* Als AEM servers de gegevens posten, dienst van de volmacht als ervaart. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar XFA runtime.
+* Als AEM servers de gegevens posten, dienst van de volmacht als ervaart. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar runtime XFA.
 * Als de volmacht de gegevens post, gaat de volmachtsdienst alle parameters behalve submitUrl tot over */bin/xfaforms/submit* eindpunt en ontvangt xml bytes in response stream. Dan, post de volmachtsdienst de gegevens xml bytes aan submitUrl voor verwerking.
 
 * Voordat u gegevens (verzoek om POST) naar een server verzendt, controleren HTML5-formulieren de connectiviteit en beschikbaarheid van de server. Om connectiviteit en beschikbaarheid te verifiëren, verzenden de vormen van HTML een leeg hoofdverzoek naar de server. Als de server beschikbaar is, verzendt het formulier HTML5 gegevens (verzoek van de POST) naar de server. Als de server niet beschikbaar is, een foutbericht *Kan geen verbinding maken met de server.* wordt weergegeven. De detectie vooraf voorkomt dat gebruikers het formulier kunnen bijvullen. De volmachtsservlet behandelt hoofdverzoek en werpen geen uitzondering.

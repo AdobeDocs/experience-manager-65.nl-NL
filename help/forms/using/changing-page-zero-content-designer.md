@@ -1,19 +1,15 @@
 ---
 title: Pagina-nulinhoud wijzigen in Designer
-seo-title: Changing Page Zero content in Designer
 description: Weet u hoe u het bericht kunt wijzigen dat wordt weergegeven op Pagina Nul van een XFA-PDF wanneer u het weergeeft in een niet-Adobe PDF-viewer?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
 feature: Adaptive Forms
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 2%
 
 Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer, zoals de standaard PDF-viewer in [!DNL Chrome] of [!DNL Firefox], kan de inhoud van het PDF/XFA-formulier niet lezen. Het standaardbericht Pagina Nul wordt hieronder weergegeven.
 
-![defaultpage0message](assets/defaultpage0message.png)
+![defaultPage0message](assets/defaultpage0message.png)
 
 [!DNL AEM Forms] Met de versie van Designer kunt u het bericht wijzigen dat wordt weergegeven op Pagina Nul. Voer de volgende stappen uit om het bericht Pagina nul te wijzigen:
 
@@ -29,7 +25,7 @@ Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 
 1. Open het formulier waarvoor u de inhoud Pagina nul wilt wijzigen.
 
-1. Klik op **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
+1. Klikken **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
 
 1. In de [!UICONTROL Form Properties] dialoogvenster, klikt u op ![plus](assets/plus.png) (Plus-pictogram) om een aangepaste eigenschap toe te voegen.
 

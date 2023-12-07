@@ -1,18 +1,14 @@
 ---
 title: Overzicht van uitvoerservice
-seo-title: Overview of output service
 description: Met Uitvoer kunt u XML-formuliergegevens samenvoegen met een formulierontwerp dat in Designer is gemaakt, om een uitvoerstroom van het document in verschillende indelingen te maken.
-seo-description: Output lets you merge XML form data with a form design created in Designer to create a document output stream in various formats.
-uuid: 7890b0a6-bae5-4ad5-ae41-503b988ba3da
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ Met Uitvoer kunt u XML-formuliergegevens samenvoegen met een formulierontwerp da
 
 U kunt de pagina van de Output in beleidsconsole gebruiken om de dienst van de Output te beheren. De instellingen die u configureert, worden tijdens runtime gebruikt wanneer de equivalente instellingen niet zijn opgegeven via de API voor AEM formulieren. De configuratie die door de AEM vormen SDK wordt gedaan treedt de montages met behulp van beleidsconsole wordt gevormd met voeten.
 
-Voor meer informatie over de dienst van de Output, zie [Servicereferentie](https://www.adobe.com/go/learn_aemforms_services_61).
+Zie voor meer informatie over de service Uitvoer [Servicereferentie](https://www.adobe.com/go/learn_aemforms_services_61).
 
 Op de pagina&#39;s van de Output in beleidsconsole, kunt u verscheidene taken uitvoeren:
 

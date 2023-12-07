@@ -1,20 +1,16 @@
 ---
 title: Designer installeren en configureren
-seo-title: Installing and configuring Designer
 description: Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld met Workbench. Leer hoe u zelfstandige Designer installeert.
-seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -31,7 +27,7 @@ ht-degree: 0%
 Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld met WorkBench. Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM Forms Designer gebruikt:
 
 1. Verwijder de vorige versie van AEM Forms Designer als deze al is geïnstalleerd.
-1. Designer downloaden van [Adobe-website voor licentieverlening](https://licensing.adobe.com/).
+1. Designer downloaden van [Licentiewebsite voor Adobe](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
@@ -40,19 +36,19 @@ Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld
 1. Start het installatieprogramma van AEM Forms Designer door te dubbelklikken op setup.exe.
 1. Ga verder en geef uw gegevens en het serienummer op het scherm Personaliseren op.
 1. Als u de licentieovereenkomst accepteert, klikt u op Volgende om door te gaan.
-1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een door u gekozen locatie wilt installeren. Klik op Next.
+1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een door u gekozen locatie wilt installeren. Klik op Volgende.
 1. Klik op Vorige om voorkeuren te wijzigen. Klik op Installeren om Designer te installeren.
 1. Klik op Voltooien als de installatie is voltooid.
 
 U kunt de AEM Forms Designer ook via de opdrachtregel installeren in de passieve of stille modus.
 
-* Passieve opdrachtregelinstallatie: In het installatieprogramma wordt een voortgangsbalk weergegeven die aangeeft dat de installatie wordt uitgevoerd, maar er worden geen aanwijzingen of foutberichten weergegeven. Nadat de installatie is gestart, kunt u de installatie niet annuleren.
+* Passieve opdrachtregelinstallatie: in het installatieprogramma wordt een voortgangsbalk weergegeven die aangeeft dat de installatie wordt uitgevoerd, maar dat er geen aanwijzingen of foutberichten worden weergegeven. Nadat de installatie is gestart, kunt u de installatie niet annuleren.
 
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
 ```
 
-* Stille opdrachtregelinstallatie: Het installatieprogramma voert de installatie uit zonder een gebruikersinterface weer te geven. Er worden geen aanwijzingen, berichten of dialoogvensters weergegeven. Nadat de installatie is gestart, kunt u de installatie niet annuleren.
+* Stille opdrachtregelinstallatie: het installatieprogramma voert de installatie uit zonder een gebruikersinterface weer te geven. Er worden geen aanwijzingen, berichten of dialoogvensters weergegeven. Nadat de installatie is gestart, kunt u de installatie niet annuleren.
 
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
@@ -62,8 +58,8 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 
 Er zijn twee gevallen bij het bijwerken van de nieuwste versie van AEM Forms Designer 6.5.16.0:
 
-* **Zaak 1**: Wanneer de gebruiker een AEM Forms Designer-versie heeft die ouder is dan 6.5.15.0.
-* **Zaak 2**: Wanneer de gebruiker de versie 6.5.15.0 van AEM Forms Designer heeft.
+* **Geval 1**: Als de gebruiker een AEM Forms Designer-versie heeft die ouder is dan 6.5.15.0.
+* **Zaak 2**: Als de gebruiker de versie 6.5.15.0 van AEM Forms Designer heeft.
 
 +++**Wanneer de gebruiker een AEM Forms Designer-versie heeft die ouder is dan 6.5.15.0.**
 

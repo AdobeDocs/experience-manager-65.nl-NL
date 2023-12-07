@@ -1,19 +1,15 @@
 ---
 title: Ondersteuning voor afbeeldingsclausules voor HTML5-formulieren
-seo-title: Picture clause support for HTML5 forms
 description: HTML5-formulieren ondersteunen de XFA-afbeeldingsvoorwaarde voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen.
-seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
-uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -101,7 +97,7 @@ In **PDF forms**, wordt een getal opgemaakt ongeacht het aantal symbolen in de a
 
 In **HTML Forms**, wordt een getal alleen opgemaakt als het getal cijfers bevat die kleiner zijn dan het aantal symbolen in de Fotocomponent.
 
-**Voorbeeld**: Neem bijvoorbeeld een afbeeldingsvoorwaarde: num{zzz,zzz,zz9}.
+**Voorbeeld**: Overweeg een afbeeldingsvoorwaarde: num{zzz,zzz,zz9}.
 
 Het getal **10000** is opgemaakt als **10 000** zowel in HTML als in PDF forms.
 
@@ -124,7 +120,7 @@ Ondersteunde expressies voor de component Numeriek beeld in **HTML Forms** zijn:
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor het cijfer nul als de invoergegevens leeg zijn of een ruimte op de corresponderende positie.<br /> </td>
+   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor het cijfer nul als de invoergegevens leeg zijn of een spatie op de corresponderende positie.<br /> </td>
    <td>Eén cijfer</td>
   </tr>
   <tr>
@@ -139,7 +135,7 @@ Ondersteunde expressies voor de component Numeriek beeld in **HTML Forms** zijn:
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Uitvoeropmaak</strong>: het exponentgedeelte van een drijvende-kommagetal bestaande uit het exponentiële symbool (E). gevolgd door een optioneel plus- of minteken. Wordt gevolgd door de exponentwaarde.<br /> </td>
+   <td><strong>Uitvoeropmaak</strong>: het exponentgedeelte van een drijvende-kommagetal dat bestaat uit het exponentiële symbool (E). gevolgd door een optioneel plus- of minteken. Wordt gevolgd door de exponentwaarde.<br /> </td>
    <td>Hetzelfde als voor uitvoeropmaak</td>
   </tr>
   <tr>
@@ -149,7 +145,7 @@ Ondersteunde expressies voor de component Numeriek beeld in **HTML Forms** zijn:
   </tr>
   <tr>
    <td>S of s<br /> </td>
-   <td>Uitvoeropmaak: een minteken als het getal negatief is. Anders ruimte.<br /> </td>
+   <td>Uitvoeropmaak: een minteken als het een negatief getal is. Anders spatie.<br /> </td>
    <td>Min teken als het getal negatief is. plusteken als het getal positief is</td>
   </tr>
   <tr>
@@ -184,12 +180,12 @@ Ondersteunde expressies voor de component Numeriek beeld in **HTML Forms** zijn:
   </tr>
   <tr>
    <td>( (U+FF08)</td>
-   <td>haakje openen als het getal negatief is. Anders ruimte.</td>
+   <td>haakje openen als het getal negatief is. Anders spatie.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>) (U+FF09)</td>
-   <td>Haakje rechts als het getal negatief is. Anders ruimte.</td>
+   <td>Haakje rechts als het getal negatief is. Anders spatie.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>

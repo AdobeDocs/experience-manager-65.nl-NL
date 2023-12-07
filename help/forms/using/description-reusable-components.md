@@ -1,16 +1,12 @@
 ---
 title: Beschrijving van herbruikbare onderdelen
-seo-title: Description of reusable components
 description: Een volledige lijst met herbruikbare componenten met bestandsnamen en afhankelijkheden, waarmee u de AEM Forms-werkruimtecomponent kunt integreren in uw webtoepassingen.
-seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
-uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 0%
@@ -47,7 +43,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
     </ul></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td>
     <ul>
      <li><p>taakmodel</p></li>
@@ -91,7 +87,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td>
     <ul>
      <li><p>taaklijstmodel</p></li>
@@ -134,7 +130,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>NA</p></td>
   </tr>
   <tr>
@@ -168,13 +164,13 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td>
     <ul>
      <li><p>Veld: wachtrij: { name, qid, isDefault, type}</p> </li>
-     <li><p>Veld: query: string</p> </li>
+     <li><p>Veld: query: tekenreeks</p> </li>
      <li><p>Veld: parentView: filterlijstweergave</p> </li>
-     <li><p>Veld: parentModel: taaklijstmodel</p> </li>
+     <li><p>Veld: bovenliggendModel: taaklijstmodel</p> </li>
      <li><p>Veld: nut</p> </li>
     </ul> </td>
   </tr>
@@ -206,7 +202,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>NA</p></td>
   </tr>
   <tr>
@@ -243,15 +239,15 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td>
     <ul>
      <li><p>Breidt uit: filterweergave</p> </li>
-     <li><p>Veld: queue :{ name, qid, isDefault, type }</p> </li>
-     <li><p>Veld: query: string</p> </li>
-     <li><p>Veld: parentView: filterlijstweergave</p> </li>
-     <li><p>Veld: parentModel : taaklijstmodel</p> </li>
-     <li><p>Veld: nut</p> </li>
+     <li><p>Field : queue :{ name, qid, isDefault, type }</p> </li>
+     <li><p>Field : query : string</p> </li>
+     <li><p>Field: parentView : filterlist view</p> </li>
+     <li><p>Field: parentModel : tasklist model</p> </li>
+     <li><p>Field: utility</p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -286,12 +282,12 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>De meeste klassen van het Nut</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td>
     <ul>
      <li><p>processinstancehistory.html</p> </li>
      <li><p>hulpprogramma voor formrendering</p> </li>
-     <li><p>hulpprogramma voor notities</p> </li>
+     <li><p>hulpprogramma notes</p> </li>
      <li><p>hulpprogramma voor bijlagen</p> </li>
      <li><p>hulpprogramma taskactions</p> </li>
      <li><p>historiehulpprogramma</p> </li>
@@ -344,7 +340,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>Categorie</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td>
     <ul>
      <li><p>gunstig architectuurmodel</p></li>
@@ -387,7 +383,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td>
     <ul>
      <li><p>categorielijstmodel</p></li>
@@ -427,7 +423,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td>
     <ul>
      <li><p>categoriemodel</p></li>
@@ -478,7 +474,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>taakmodel</p></td>
   </tr>
   <tr>
@@ -513,14 +509,14 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
     </ul> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td>
     <ul>
      <li><p>categoriemodel</p> </li>
      <li><p>gunstig architectuurmodel</p> </li>
      <li><p>categoriemodel</p> </li>
      <li><p>hulpprogramma voor formrendering</p> </li>
-     <li><p>hulpprogramma voor notities</p> </li>
+     <li><p>hulpprogramma notes</p> </li>
      <li><p>hulpprogramma voor bijlagen</p> </li>
      <li><p>hulpprogramma taskactions</p> </li>
     </ul> </td>
@@ -572,14 +568,14 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>procesnaammodel</p></td>
   </tr>
   <tr>
    <td><p>Gebeurtenissen waarnaar wordt geluisterd (naam gebeurtenis - activering)</p></td>
    <td>
     <ul>
-     <li><p>add - procesnamelist-model </p></li>
+     <li><p>add - procesnamelist model </p></li>
      <li><p>opgehaald:procesnamen - procesnamelist, model </p></li>
      <li><p>change - model van procesnamelist </p></li>
     </ul></td>
@@ -612,7 +608,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>procesinstancelist-model</p></td>
   </tr>
   <tr>
@@ -643,7 +639,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>procesnaammodel</p></td>
   </tr>
   <tr>
@@ -682,7 +678,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>taaklijstmodel</p></td>
   </tr>
   <tr>
@@ -713,7 +709,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td>
     <ul>
      <li><p>procesnaammodel</p></li>
@@ -757,14 +753,14 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>UserSearch</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td><p>gebruikerszoekweergave</p> </td>
   </tr>
   <tr>
    <td><p>Gebeurtenissen waarnaar wordt geluisterd (naam gebeurtenis - activering)</p> </td>
    <td>
     <ul>
-     <li><p>outOfOfficeSettingsFetched - outoffice-model</p> </li>
+     <li><p>outOfOfficeSettingsFetched - uitvoermodel</p> </li>
      <li><p>outOfOfficeSettingsSaved - outoffice-model</p> </li>
      <li><p>processenFetched - outtofoffice model</p> </li>
      <li><p>principalSelected - principiële zoekweergave</p> </li>
@@ -798,7 +794,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>UserSearch</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td><p>gebruikerszoekweergave</p> </td>
   </tr>
   <tr>
@@ -842,7 +838,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>NA</p></td>
   </tr>
   <tr>
@@ -881,7 +877,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>NA</p></td>
   </tr>
   <tr>
@@ -916,7 +912,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td><p>NA</p> </td>
   </tr>
   <tr>
@@ -956,12 +952,12 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p></td>
+   <td><p>JS-afhankelijke</p></td>
    <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>Gebeurtenissen waarnaar wordt geluisterd (naam gebeurtenis - activering)</p></td>
-   <td><p>newWsError - wserror-model </p></td>
+   <td><p>newWsError - fout-model </p></td>
   </tr>
  </tbody>
 </table>
@@ -987,7 +983,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td><p>NA</p> </td>
   </tr>
   <tr>
@@ -1022,7 +1018,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td><p>NA</p> </td>
   </tr>
   <tr>
@@ -1053,7 +1049,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td><p>searchtemplate-model</p> </td>
   </tr>
   <tr>
@@ -1084,7 +1080,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>JS-afhankelijkheden</p> </td>
+   <td><p>JS-afhankelijke</p> </td>
    <td>NA<br /> </td>
   </tr>
   <tr>

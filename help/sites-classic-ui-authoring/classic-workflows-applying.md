@@ -1,17 +1,15 @@
 ---
 title: Workflows toepassen op pagina's
-description: Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagina bewerkt, vanuit Sidetrap.
-uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
+description: Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagina bewerkt, vanuit de Sidekick.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '249'
+ht-degree: 8%
 
 ---
 
@@ -21,10 +19,10 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 * De workflow die moet worden toegepast.
 
-   U kunt elke workflow toepassen (waartoe u toegang hebt, zoals is toegewezen door uw AEM-beheerder).
+  U kunt elke workflow toepassen (waartoe u toegang hebt, zoals is toegewezen door uw AEM-beheerder).
 * Optioneel:
 
-   * Een opmerking met informatie over de reden waarom u de workflow hebt gestart.
+   * Een opmerking die informatie bevat over de reden waarom u de workflow hebt gestart.
    * Een titel die helpt de werkstroominstantie in Inbox van een gebruiker identificeren.
 
 >[!NOTE]
@@ -33,7 +31,7 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 ## Workflows toepassen {#applying-workflows}
 
-Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagina bewerkt, vanuit Sidetrap.
+Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagina bewerkt, vanuit de Sidekick.
 
 De **Status** in de **Websites** De console wijst erop of een werkschema op een pagina is toegepast:
 
@@ -46,11 +44,11 @@ De **Status** in de **Websites** De console wijst erop of een werkschema op een 
 1. Selecteer de pagina in de paginalijst en klik op Workflow.
 1. Selecteer in het dialoogvenster Workflow starten de workflow die u wilt toepassen. Voer eventueel een opmerking en een titel in. Klik vervolgens op Start.
 
-### Workflow starten met Sidetrap {#starting-a-workflow-using-sidekick}
+### Een workflow starten met Sidekick {#starting-a-workflow-using-sidekick}
 
 1. Open de websiteconsole.
 1. Open de gewenste pagina.
-1. Selecteer het tabblad Workflow in de Sidetrap.
+1. Selecteer het tabblad Werkstroom in de Sidekick.
 1. Breid uit **Workflow** , zodat u het dialoogvenster **Workflow** en naar keuze **Werkstroomtitel** en **Opmerking**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)

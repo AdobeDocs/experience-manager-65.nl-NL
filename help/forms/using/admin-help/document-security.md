@@ -1,20 +1,16 @@
 ---
 title: Wat is documentbeveiliging?
-seo-title: About document security
 description: Leer hoe u vooraf gedefinieerde instellingen voor vertrouwelijkheid kunt maken, opslaan en toepassen en uw gegevens veilig kunt verspreiden met documentbeveiliging.
-seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3219'
 ht-degree: 0%
 
 ---
@@ -28,9 +24,9 @@ Documentbeveiliging zorgt ervoor dat alleen geautoriseerde gebruikers uw documen
 
 Zie voor meer informatie over hoe ondersteunde bestandstypen door beleid worden beveiligd [meer informatie over documentbeveiliging](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
 
-Met documentbeveiliging kunt u eenvoudig vooraf gedefinieerde instellingen voor vertrouwelijkheid maken, opslaan en toepassen op uw documenten. Als u wilt voorkomen dat informatie buiten uw bereik wordt verspreid, kunt u ook controleren en bepalen hoe ontvangers uw documenten gebruiken nadat u ze hebt verspreid.
+Met documentbeveiliging kunt u eenvoudig vooraf gedefinieerde instellingen voor vertrouwelijkheid maken, opslaan en toepassen op uw documenten. Als u wilt voorkomen dat gegevens buiten uw bereik worden verspreid, kunt u ook controleren en bepalen hoe ontvangers uw documenten gebruiken nadat u ze hebt verspreid.
 
-U kunt documenten beschermen door beleid te gebruiken. A *beleid* is een verzameling informatie met vertrouwelijkheidsinstellingen en een lijst met geautoriseerde gebruikers. De vertrouwelijkheidsmontages die u in een beleid specificeert bepalen hoe een ontvanger een document kan gebruiken waarop u het beleid toepast. U kunt bijvoorbeeld opgeven of ontvangers tekst kunnen afdrukken of kopiëren, tekst kunnen bewerken of handtekeningen en opmerkingen kunnen toevoegen aan beveiligde documenten.
+U kunt documenten beschermen door beleid te gebruiken. A *beleid* is een verzameling informatie met vertrouwelijkheidsinstellingen en een lijst met gemachtigde gebruikers. De vertrouwelijkheidsmontages die u in een beleid specificeert bepalen hoe een ontvanger een document kan gebruiken waarop u het beleid toepast. U kunt bijvoorbeeld opgeven of ontvangers tekst kunnen afdrukken of kopiëren, tekst kunnen bewerken of handtekeningen en opmerkingen kunnen toevoegen aan beveiligde documenten.
 
 Gebruikers met documentbeveiliging maken beleid via de webpagina&#39;s van eindgebruikers. Beheerders gebruiken de webpagina&#39;s voor documentbeveiliging om beleidssets te maken die gedeeld beleid bevatten dat beschikbaar is voor alle geautoriseerde gebruikers.
 
@@ -38,7 +34,7 @@ Hoewel het beleid in documentveiligheid wordt opgeslagen, past u hen op document
 
 Wanneer u een beleid op een document toepast, beschermen de vertrouwelijkheidsmontages die in het beleid worden gespecificeerd de informatie die het document bevat. Met de instellingen voor vertrouwelijkheid worden ook bestanden (tekst, audio of video) in een PDF-document beveiligd. U kunt het document dat met een beleid is beveiligd, verspreiden onder ontvangers die door het beleid zijn gemachtigd.
 
-**Documenttoegangsbeheer en -controle**
+**Toegangsbeheer en controle van documenten**
 
 Als u een beleid gebruikt om een document te beschermen, hebt u controle over dat document, zelfs nadat u het hebt verspreid. U kunt het document controleren, het beleid wijzigen, voorkomen dat gebruikers het document blijven openen en het beleid wijzigen dat op het document wordt toegepast.
 
@@ -67,15 +63,15 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
 
 * De systeembeheerder of andere informatiesystemen (IS) persoon installeert en vormt documentveiligheid. Deze persoon kan ook verantwoordelijk zijn voor het configureren van algemene instellingen voor de server, webpagina&#39;s en beleidsregels en documenten.
 
-   Deze instellingen kunnen bijvoorbeeld een URL voor de beveiliging van basisdocumenten, audits en privacymeldingen, kennisgevingen voor de registratie van uitgenodigde gebruikers en standaardleaseperioden voor offline gebruikers bevatten.
+  Deze instellingen kunnen bijvoorbeeld een URL voor de beveiliging van basisdocumenten, audits en privacymeldingen, kennisgevingen voor de registratie van uitgenodigde gebruikers en standaardleaseperioden voor offline gebruikers bevatten.
 
 * De beheerders van de veiligheid van het document creëren beleid en beleidsreeksen, en beheren beleid-beschermde documenten voor gebruikers zoals vereist. Zij creëren ook uitgenodigde gebruikersrekeningen, en monitorsysteem, document, gebruiker, beleid, beleidsreeks, en douanegebeurtenissen. Zij kunnen ook verantwoordelijk voor het vormen van de globale server, en Web-pagina en beleidsmontages met een systeembeheerder zijn.
 
-   De beheerders kunnen gebruikers de volgende rollen op het gebied van het Beheer van de Gebruiker van beleidsconsole toewijzen. De gebruikers die deze rollen worden toegewezen voeren hun taken op het gebied van het gebruikersinterface van de documentveiligheid van beleidsconsole uit.
+  De beheerders kunnen gebruikers de volgende rollen op het gebied van het Beheer van de Gebruiker van beleidsconsole toewijzen. De gebruikers die deze rollen worden toegewezen voeren hun taken op het gebied van het gebruikersinterface van de documentveiligheid van beleidsconsole uit.
 
-   **Hoofdbeheerder documentbeveiliging**
+  **Hoofdbeheerder documentbeveiliging**
 
-   Gebruikers met deze rol hebben toegang tot alle beveiligingsinstellingen van het document in de beheerconsole. Deze machtigingen zijn gekoppeld aan de rol:
+  Gebruikers met deze rol hebben toegang tot alle beveiligingsinstellingen van het document in de beheerconsole. Deze machtigingen zijn gekoppeld aan de rol:
 
    * Configuratie beheren
    * Beleid beheren
@@ -87,17 +83,17 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
    * Delegeren
    * Externe gebruikers uitnodigen
 
-   **Documentbeveiligingsbeheerder**
+  **Documentbeveiligingsbeheerder**
 
-   De gebruikers met deze rol kunnen de server van de documentveiligheid vormen, gebruikend de pagina van de Configuratie in de sectie van de documentveiligheid van beleidsconsole. Deze toestemming wordt geassocieerd met de rol, leidt Configuratie.
+  De gebruikers met deze rol kunnen de server van de documentveiligheid vormen, gebruikend de pagina van de Configuratie in de sectie van de documentveiligheid van beleidsconsole. Deze toestemming wordt geassocieerd met de rol, leidt Configuratie.
 
-   >[!NOTE]
-   >
-   >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
+  >[!NOTE]
+  >
+  >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
 
-   **Beheerder voor beveiligingsbeleid voor documenten**
+  **Beheerder voor beveiligingsbeleid voor documenten**
 
-   De gebruikers met deze rol kunnen de sectie van de documentveiligheid van beleidsconsole gebruiken om het beleid van andere gebruikers uit te geven en, beleidsreeksen tot stand te brengen uit te geven en te schrappen. Wanneer een beheerder van een beleidsreeks een beleidsreeks creeert, kunnen zij een coördinator van de beleidsreeks aan die beleidsreeks toewijzen. Deze machtigingen zijn gekoppeld aan de rol:
+  De gebruikers met deze rol kunnen de sectie van de documentveiligheid van beleidsconsole gebruiken om het beleid van andere gebruikers uit te geven en, beleidsreeksen tot stand te brengen uit te geven en te schrappen. Wanneer een beheerder van een beleidsreeks een beleidsreeks creeert, kunnen zij een coördinator van de beleidsreeks aan die beleidsreeks toewijzen. Deze machtigingen zijn gekoppeld aan de rol:
 
    * Beleid beheren
    * Beleidssets beheren
@@ -106,32 +102,32 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
    * Gebeurtenissen weergeven
    * Delegeren
 
-   >[!NOTE]
-   >
-   >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
+  >[!NOTE]
+  >
+  >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
 
-   **Documentbeveiliging beheert uitgenodigde en lokale gebruikers**
+  **Documentbeveiliging beheert uitgenodigde en lokale gebruikers**
 
-   Gebruikers met deze rol kunnen de taken uitvoeren die nodig zijn om alle uitgenodigde en lokale gebruikers op de relevante webpagina&#39;s voor documentbeveiliging te beheren. Deze machtigingen zijn gekoppeld aan de rol:
+  Gebruikers met deze rol kunnen de taken uitvoeren die nodig zijn om alle uitgenodigde en lokale gebruikers op de relevante webpagina&#39;s voor documentbeveiliging te beheren. Deze machtigingen zijn gekoppeld aan de rol:
 
    * Uitgenodigde en lokale gebruikers beheren
    * Externe gebruikers uitnodigen
    * Webpagina&#39;s voor eindgebruikers openen
 
-   >[!NOTE]
-   >
-   >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
+  >[!NOTE]
+  >
+  >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
 
-   **Gebruikers voor uitnodigen voor documentbeveiliging**
+  **Gebruikers voor uitnodigen voor documentbeveiliging**
 
-   Gebruikers met deze rol kunnen gebruikers uitnodigen. Deze machtigingen zijn gekoppeld aan de rol:
+  Gebruikers met deze rol kunnen gebruikers uitnodigen. Deze machtigingen zijn gekoppeld aan de rol:
 
    * Externe gebruikers uitnodigen
    * Webpagina&#39;s voor eindgebruikers openen
 
-   **Eindgebruiker van documentbeveiliging**
+  **Eindgebruiker van documentbeveiliging**
 
-   Gebruikers met deze rol hebben toegang tot webpagina&#39;s van eindgebruikers met documentbeveiliging. Deze rol kan ook aan beheerders worden toegewezen om beheerders toe te staan om beleid tot stand te brengen gebruikend de eindgebruikerpagina&#39;s. Deze toestemming wordt geassocieerd met de rol de eindgebruikerWeb-pagina&#39;s van de Toegang.
+  Gebruikers met deze rol hebben toegang tot webpagina&#39;s van eindgebruikers met documentbeveiliging. Deze rol kan ook aan beheerders worden toegewezen om beheerders toe te staan om beleid tot stand te brengen gebruikend de eindgebruikerpagina&#39;s. Deze toestemming wordt geassocieerd met de rol de eindgebruikerWeb-pagina&#39;s van de Toegang.
 
 * De gebruikers binnen de organisatie die geldige rekeningen van de documentveiligheid hebben creëren hun eigen beleid, gebruiken beleid om documenten te beschermen, hun beleid-beschermde documenten te volgen en te beheren, en gebeurtenissen te controleren die met hun documenten verwant zijn.
 * Coördinatoren van beleidssets beheren documenten, gebeurtenissen weergeven en andere beleidssetcoördinatoren beheren (op basis van hun machtigingen). Beheerders wijzen gebruikers aan als beleidssetcoördinatoren voor bepaalde beleidssets.
@@ -203,7 +199,7 @@ U kunt een document onder de volgende omstandigheden blijven gebruiken:
 
 U kunt documenten die met een beleid zijn beveiligd ook offline gebruiken (zonder internet- of netwerkverbinding) als het beleid offline toegang toestaat. Meld u eerst aan bij de documentbeveiliging om het document te synchroniseren. Vervolgens kunt u het document gebruiken tijdens de offline leaseperiode die in het beleid is opgegeven.
 
-Wanneer de offline leaseperiode afloopt, synchroniseert u het document opnieuw met documentbeveiliging door online te gaan en een document te openen dat met een beleid is beveiligd of door een opdracht te gebruiken in de clienttoepassing. Zie *Acrobat Help* of *Help bij Acrobat Reader DC Extensions* voor meer informatie.
+Wanneer de offline leaseperiode afloopt, synchroniseert u het document opnieuw met documentbeveiliging door online te gaan en een document te openen dat met een beleid is beveiligd of door een opdracht te gebruiken in de clienttoepassing. Zie *Acrobat Help* of de passende *Help bij Acrobat Reader DC Extensions* voor meer informatie.
 
 Als u een kopie van een document dat met een beleid is beveiligd opslaat met de opdracht Opslaan of Opslaan als, wordt het beleid automatisch toegepast en afgedwongen voor het nieuwe document. Gebeurtenissen zoals pogingen om het nieuwe document te openen, worden ook gecontroleerd en geregistreerd voor het oorspronkelijke document.
 
@@ -235,9 +231,9 @@ Als documentbeveiliging is geïnstalleerd, wordt een standaardbeleidsset gemaakt
 
 ## Aanbevolen procedures {#best-practices}
 
-Het beleid is herbruikbare reeksen toestemmingen en gebruikersgroepen die op diverse documenten kunnen worden toegepast. Voor de beveiligde documenten. Dit beleid zorgt ervoor dat alleen geautoriseerde gebruikers de toegestane functies kunnen gebruiken. Het aantal beleid en beleidsreeksen zullen naar verwachting met een toename in verschillende gebruikersrollen en documenten binnen een afdeling groeien. Om beleid tot stand te brengen en te beheren, zijn sommige overwegingen en beste praktijken:
+Het beleid is herbruikbare reeksen toestemmingen en gebruikersgroepen die op diverse documenten kunnen worden toegepast. Voor de beveiligde documenten. Met dit beleid zorgt u ervoor dat alleen geautoriseerde gebruikers de toegestane functies kunnen gebruiken. Het aantal beleid en beleidsreeksen zullen naar verwachting met een toename in verschillende gebruikersrollen en documenten binnen een afdeling groeien. Om beleid tot stand te brengen en te beheren, zijn sommige overwegingen en beste praktijken:
 
-* **Herbruikbaar beleid maken:** Adobe raadt aan het beleid in verschillende documenten te hergebruiken. Het helpt het aantal beleidsregels tot een minimum te beperken, biedt optimale prestaties en maakt het eenvoudiger om het beleid te beheren. Een herbruikbaar beleid maken:
+* **Herbruikbaar beleid maken:** Adobe beveelt aan het beleid in verschillende documenten te hergebruiken. Het helpt het aantal beleidsregels tot een minimum te beperken, biedt optimale prestaties en maakt het eenvoudiger om het beleid te beheren. Een herbruikbaar beleid maken:
 
 1. Identificeer en bepaal de vereisten van de toegangscontrole op afdelingen en organisatieniveau.
 
@@ -251,29 +247,30 @@ Voeg gebruikersgroepen aan beleid in plaats van individuele gebruikers toe. Het 
 
 * **Aangepaste beleidssets maken:** Een beleidsset combineert meerdere beleidsregels tot een beheerbare entiteit. Creeer de reeksen van het douanebeleid voor uw organisatie of afdeling, gebruik hen om verwant beleid te groeperen, en hen ter beschikking te stellen van een ondergroep van gebruikers in het systeem.
 
-   Het gebruiken van beleidsreeksen maakt het gemakkelijker om verwant beleid aan specifieke gebruikers in een organisatie of een afdeling toe te wijzen en te beheren. Zo kunnen afzonderlijke beleidssets voor de afdeling financiën en personeel u helpen bij het eenvoudig beheren en toepassen van gerelateerde beleidslijnen op documenten die zijn aangewezen voor de overeenkomstige afdelingen.
+  Het gebruiken van beleidsreeksen maakt het gemakkelijker om verwant beleid aan specifieke gebruikers in een organisatie of een afdeling toe te wijzen en te beheren. Zo kunnen afzonderlijke beleidssets voor de afdeling financiën en personeel u helpen bij het eenvoudig beheren en toepassen van gerelateerde beleidslijnen op documenten die zijn aangewezen voor de overeenkomstige afdelingen.
 
 * **Gebruik een externe autorisator om machtigingen dynamisch toe te passen:** U kunt [externe autorisator](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) om toestemmingen te evalueren en dynamisch toe te passen die op externe voorwaarde worden gebaseerd. Wanneer de toestemmingen dynamisch, gebaseerd op externe voorwaarde worden geëvalueerd, dan kunt u:
 
-   * Centrale toegangscontrole bieden voor documenten in uw organisatie.
+   * Zorg voor gecentraliseerde toegangscontrole voor documenten in uw organisatie.
 
    * De toegang tot beleid-beschermde documenten door dynamisch te bepalen of een gebruiker tot een beleid-beschermd document kan toegang hebben. Hiermee wordt bijvoorbeeld dynamisch bepaald of een gebruiker een document kan afdrukken dat met een beleid is beveiligd.
 
    * Gebruik een toegangsbeheermechanisme dat uw inhoudsbeheersysteem, naast het standaardproces van de beleidsevaluatie gebruikt. Bijvoorbeeld, wanneer de dienst bepaalt of een gebruiker een beleid-beschermd document kan drukken, kan het het standaardproces van de beleidsevaluatie gebruiken. En, kan het het toegangsbeheermechanisme ook gebruiken dat uw inhoudsbeheersysteem gebruikt.
-   Hoewel het mogelijk is om het de beleidsevaluatieproces van de Veiligheid van het Document met een externe toestemmingsmanager volledig te vervangen, adviseert men dat u een externe vergunningsmanager met het proces van de beleidsevaluatie gebruikt. Hierdoor kan de toegang tot documenten worden beheerd met hetzelfde besturingsmechanisme als het contentbeheersysteem. Wanneer de documentbeveiligingsservice bijvoorbeeld bepaalt of een gebruiker een document kan afdrukken dat met een beleid is beveiligd, wordt het standaardproces voor beleidsevaluatie gebruikt. Het gebruikt ook het toegangsbeheermechanisme dat uw inhoudsbeheersysteem gebruikt. Zie voor meer informatie [Externe autorisatiehandlers maken](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+
+  Hoewel het mogelijk is om het de beleidsevaluatieproces van de Veiligheid van het Document met een externe toestemmingsmanager volledig te vervangen, adviseert men dat u een externe vergunningsmanager met het proces van de beleidsevaluatie gebruikt. Hierdoor kan de toegang tot documenten worden beheerd met hetzelfde besturingsmechanisme als het contentbeheersysteem. Wanneer de documentbeveiligingsservice bijvoorbeeld bepaalt of een gebruiker een document kan afdrukken dat met een beleid is beveiligd, wordt het standaardproces voor beleidsevaluatie gebruikt. Het gebruikt ook het toegangsbeheermechanisme dat uw inhoudsbeheersysteem gebruikt. Zie voor meer informatie [Externe autorisatiehandlers maken](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Houd de beleidssets op een beperkt aantal:** Verschillende factoren leiden tot een constante groei van beleid en beleidsvormen. Enkele gangbare factoren zijn:
 
    * De verhoging van gebruikersrollen, afdelingen, en documenten binnen een organisatie over een periode.
    * De afdelingen van een organisatie werken afzonderlijk en houden een strenge controle op het departementspecifieke beleid. Het leidt tot identieke beleidsvormen binnen een organisatie.
 
-   Adobe beveelt aan het aantal beleidslijnen en beleidsvormen tot een minimum te beperken. Het helpt beleid en beleidsreeksen gemakkelijk te beheren en betere prestaties te verstrekken. Het aantal tot een minimum beperken:
+  Adobe beveelt aan het aantal beleidslijnen en beleidsreeksen tot een minimum te beperken. Het helpt beleid en beleidsreeksen gemakkelijk te beheren en betere prestaties te verstrekken. Het aantal tot een minimum beperken:
 
    * Maak herbruikbaar beleid. Dit beleid kan over veelvoudige afdelingen worden gedeeld.
    * Overweeg het creëren van organisatie-brede beleidsreeksen, als sommige beleid op veelvoudige afdelingen in plaats van een individueel beleid van toepassing is dat voor elke afdeling wordt geplaatst.
    * Groepsgerelateerd beleid in een beleidsset. Maak geen aparte beleidsset voor elk beleid.
    * Gebruik een externe autorisator om gebruikerstoestemmingen dynamisch te controleren.
 
-   >[!NOTE]
-   >
-   >U kunt de [getAllPolicySetNames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API om een maximum van 1000 namen van beleidsreeksen terug te winnen. Intern, wint API een maximum van 1000 beleid terug waarvoor de API aanroeper de toestemming van de documentuitgever heeft en creeert en keert dan een lijst van unieke vastgestelde namen verbonden aan teruggewonnen beleid aan u terug. Wanneer de API bijvoorbeeld 1000 beleidsregels ophaalt en het opgehaalde beleid is gekoppeld aan 200 beleidssets in totaal, retourneert de API slechts 200 beleidssetnamen.
+  >[!NOTE]
+  >
+  >U kunt de [getAllPolicySetNames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API om een maximum van 1000 namen van beleidsreeksen terug te winnen. Intern, wint API een maximum van 1000 beleid terug waarvoor de API aanroeper de toestemming van de documentuitgever heeft en creeert en keert dan een lijst van unieke vastgestelde namen verbonden aan teruggewonnen beleid aan u terug. Wanneer de API bijvoorbeeld 1000 beleidsregels ophaalt en het opgehaalde beleid is gekoppeld aan 200 beleidssets in totaal, retourneert de API slechts 200 beleidssetnamen.

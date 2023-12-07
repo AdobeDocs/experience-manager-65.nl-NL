@@ -1,17 +1,13 @@
 ---
 title: PDF-documenten versleutelen en ontsleutelen
-seo-title: Encrypting and Decrypting PDF Documents
 description: Met de coderingsservice kunt u documenten versleutelen en ontsleutelen. De de diensttaken van de Encryptie omvatten het coderen van een document van de PDF met een wachtwoord, het coderen van een document van de PDF met een certificaat, het verwijderen van op wachtwoord-gebaseerde encryptie uit een document van de PDF, het verwijderen van op certificaat-gebaseerde encryptie uit een document van de PDF, het ontgrendelen van het document van de PDF zodat andere de dienstverrichtingen kunnen worden uitgevoerd, en het bepalen van het encryptietype van een beveiligd PDF.
-seo-description: Use the Encryption service to encrypt and decrypt documents. The Encryption service tasks include encrypting a PDF document with a password, encrypting a PDF document with a certificate, removing password-based encryption from a PDF document, removing certificate-based encryption from a PDF document, unlocking the PDF document so that other service operations can be performed, and determining the encryption type of a secured PDF document.
-uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 0%

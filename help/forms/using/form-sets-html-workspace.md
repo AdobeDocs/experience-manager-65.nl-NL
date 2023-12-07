@@ -1,26 +1,22 @@
 ---
 title: Werken met indelingen in de AEM Forms-werkruimte
-seo-title: Working with Formsets in AEM Forms workspace
 description: Een formulierset is een verzameling van HTML5-formulieren die zijn gegroepeerd en gepresenteerd als één set formulieren voor eindgebruikers. Leer hoe u in de AEM Forms-werkruimte met formsets kunt werken.
-seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
-uuid: 1a5f3ce8-1d6a-497e-90d0-49765e40cf3b
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: f550b747-2def-4317-9ef7-dc6c1e7bb404
 docset: aem65
 exl-id: 76a8f93f-eb8a-4e68-8626-efa6dc67668f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
 
 # Werken met indelingen in de AEM Forms-werkruimte{#working-with-formsets-in-aem-forms-workspace}
 
-Een formulierset is een verzameling van HTML5-formulieren die zijn gegroepeerd en gepresenteerd als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Voor meer informatie over formsets en hoe u deze instelt, raadpleegt u [Opmaak in AEM Forms](../../forms/using/formset-in-aem-forms.md).
+Een formulierset is een verzameling van HTML5-formulieren die zijn gegroepeerd en gepresenteerd als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Ga voor meer informatie over formsets en hoe u deze instelt naar [Opmaak in AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
 De AEM Forms-werkruimte ondersteunt formsets. Met formsets kunnen meerdere formulieren die betrekking hebben op een service of proces worden gegroepeerd om een bedrijfsproces te automatiseren en aan de eindgebruikers worden gepresenteerd. In dat geval kunnen de gebruikers de gehele set als één geheel invullen en hoeven afzonderlijke formulieren of processen niet te worden opgeslagen, verzonden en bijgehouden.
 
@@ -57,4 +53,4 @@ De volgende bewerkingen worden ondersteund in de indeling in de AEM Forms-werkru
 
 >[!NOTE]
 >
->Voor prestatieverbetering tijdens het verplaatsen van vorige en volgende formulieren in een indeling, worden alle werkruimteknoppen (Vorige, Volgende, Opslaan, Verzenden en ... (Meer)) worden uitgeschakeld totdat het desbetreffende formulier volledig wordt weergegeven.
+>Voor prestatieverbetering tijdens de verplaatsing van vorige en volgende formulieren in een formset, worden alle werkruimteknoppen (Vorige, Volgende, Opslaan, Verzenden en ... (Meer)) uitgeschakeld totdat het desbetreffende formulier volledig wordt weergegeven.

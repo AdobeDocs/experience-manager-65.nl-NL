@@ -1,18 +1,14 @@
 ---
 title: Groepen maken en configureren
-seo-title: Creating and configuring groups
 description: Leer hoe u groepen handmatig of dynamisch maakt, een groep bewerkt, details over een groep weergeeft of een groep verwijdert.
-seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
-uuid: 8532d72b-270a-4fcf-b7a5-56fca979a5fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
@@ -46,15 +42,15 @@ Als u de (Vervangen) Diensten van de Inhoud gebruikt, kunt u Uitgezochte Deze Op
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op Zoeken.
    * Selecteer in de zoekresultaten de selectievakjes voor de gebruikers en groepen die u aan deze nieuwe groep wilt toevoegen en klik op OK.
 
-1. Klik op Next.
+1. Klik op Volgende.
 1. Als u deze nieuwe groep wilt toevoegen aan andere bestaande groepen, klikt u op Groepen zoeken en voert u de volgende taken uit:
 
    * Typ uw zoekcriteria in het vak Zoeken.
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op Zoeken.
    * Selecteer in de zoekresultaten de selectievakjes voor de groepen waartoe de nieuwe groep behoort en klik op OK.
 
-1. Klik op Next.
-1. Als u rollen wilt toewijzen aan de groep, klikt u op Rollen zoeken, schakelt u de selectievakjes in voor elke rol die u wilt toewijzen aan de groep en klikt u op OK. De gebruikers in de groep erven rollen die op het groepsniveau worden toegewezen.
+1. Klik op Volgende.
+1. Als u rollen wilt toewijzen aan de groep, klikt u op Rollen zoeken. Schakel de selectievakjes in voor elke rol die u wilt toewijzen aan de groep en klikt u op OK. De gebruikers in de groep erven rollen die op het groepsniveau worden toegewezen.
 1. Klik op Voltooien.
 
 ## Een dynamische groep maken {#create-a-dynamic-group}
@@ -63,8 +59,8 @@ In een dynamische groep selecteert u niet afzonderlijk de gebruikers die tot de 
 
 U kunt op een van de volgende twee manieren dynamische groepen maken:
 
-* Schakel het automatisch maken van dynamische groepen in op basis van e-maildomeinen, zoals @adobe.com. Wanneer u deze functie inschakelt, maakt Gebruikersbeheer een dynamische groep voor elk uniek e-maildomein in de database met AEM formulieren. Gebruik een uitsnijdexpressie om op te geven hoe vaak gebruikersbeheer de database met AEM formulieren doorzoekt naar nieuwe e-maildomeinen. Deze dynamische groepen worden toegevoegd aan het lokale domein DefaultDom en worden genoemd &quot;Alle gebruikers met een *`[email domain]`* e-mailadres.&quot;
-* Maak een dynamische groep op basis van opgegeven criteria, zoals het e-maildomein, de beschrijving, de canonieke naam en de domeinnaam van de gebruiker. Een gebruiker moet aan alle opgegeven criteria voldoen om tot de dynamische groep te kunnen behoren. Als u een voorwaarde &quot;of&quot; wilt instellen, maakt u twee aparte dynamische groepen en voegt u deze twee groepen toe aan een lokale groep. U kunt deze methode bijvoorbeeld gebruiken om een groep gebruikers te maken die tot het e-maildomein @adobe.com behoren of waarvan de canonieke naam ou=adobe.com bevat. De gebruikers hoeven echter niet noodzakelijkerwijs aan beide voorwaarden te voldoen.
+* Schakel het automatisch maken van dynamische groepen in op basis van e-maildomeinen, zoals @adobe.com. Wanneer u deze functie inschakelt, maakt Gebruikersbeheer een dynamische groep voor elk uniek e-maildomein in de database met AEM formulieren. Gebruik een uitsnijdexpressie om op te geven hoe vaak gebruikersbeheer de database met AEM formulieren doorzoekt naar nieuwe e-maildomeinen. Deze dynamische groepen worden toegevoegd aan het lokale domein DefaultDom en worden genoemd &quot;Alle gebruikers met een *`[email domain]`* mailadres.&quot;
+* Maak een dynamische groep op basis van opgegeven criteria, zoals het e-maildomein, de beschrijving, de canonieke naam en de domeinnaam van de gebruiker. Een gebruiker moet aan alle opgegeven criteria voldoen om tot de dynamische groep te kunnen behoren. Als u een voorwaarde &quot;of&quot; wilt instellen, maakt u twee aparte dynamische groepen en voegt u deze twee groepen toe aan een lokale groep. Gebruik bijvoorbeeld deze methode om een groep gebruikers te maken die tot het @adobe.com-e-maildomein behoren of waarvan de canonieke naam ou=adobe.com bevat. De gebruikers hoeven echter niet noodzakelijkerwijs aan beide voorwaarden te voldoen.
 
 Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatten. Een dynamische groep kan echter tot een bovenliggende groep behoren.
 
@@ -75,9 +71,9 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
 1. Geef op wanneer Gebruikersbeheer controleert op nieuwe e-maildomeinen. Deze tijd zou na de tijd van de domeinsynchronisatie moeten zijn omdat de verwezenlijking van dynamische groepen logisch slechts is als de domeinsynchronisatie wordt voltooid.
 
    * Om automatische synchronisatie op een dagelijkse basis toe te laten, typ de tijd in het formaat van 24 uur in Occurs Daily bij doos. Wanneer u uw instellingen opslaat, wordt deze waarde omgezet in een uitsnijdexpressie, die in het onderstaande vak wordt weergegeven.
-   * Als u synchronisatie wilt plannen op een bepaalde dag van de week of maand, of in een bepaalde maand, selecteert u de gewenste uitsnijdexpressie in het vak. De standaardwaarde is `0 00 4 ? * *`(d.w.z. controle om 4 A.M. elke dag).
+   * Als u synchronisatie wilt plannen op een bepaalde dag van de week of de maand, of in een bepaalde maand, selecteert u de gewenste uitsnijdexpressie in het vak. De standaardwaarde is `0 00 4 ? * *`(d.w.z. elke dag om 4.00 uur controleren).
 
-      Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
+     Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
 1. Klik op Opslaan.
 
@@ -108,7 +104,7 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op Zoeken.
    * Selecteer in de zoekresultaten de selectievakjes voor groepen waartoe de dynamische groep behoort en klik op OK.
 
-1. Klik op Next.
+1. Klik op Volgende.
 1. Als u rollen wilt toewijzen aan de dynamische groep, klikt u op Rollen zoeken, schakelt u de selectievakjes in voor elke rol die u wilt toewijzen aan de groep en klikt u op OK. De gebruikers in de groep erven rollen die op het groepsniveau worden toegewezen.
 1. Klik op Voltooien.
 
@@ -116,7 +112,7 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Gebruikers en groepen.
 1. Selecteer Groep in de lijst In en klik vervolgens op Zoeken. De resultaten van de zoekopdracht worden onder aan de pagina weergegeven. U kunt de lijst sorteren door op een van de kolomkoppen te klikken.
-1. Klik op de naam van de groep om details weer te geven over de groep. De pagina Groepdetails wordt weergegeven.
+1. Klik op de naam van de groep om details weer te geven. De pagina Groepdetails wordt weergegeven.
 1. Klik op Onderliggende principes om de directe leden van de groep weer te geven.
 
 ## Een groep bewerken {#edit-a-group}

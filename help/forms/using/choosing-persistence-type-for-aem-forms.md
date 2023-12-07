@@ -1,24 +1,20 @@
 ---
-title: Een type persistentie kiezen voor een AEM Forms-installatie
-seo-title: Choosing a persistence type for an AEM Forms installation
+title: Een persistentietype kiezen voor een AEM Forms-installatie
 description: Kies verstandig een persistentietype. Het helpt u een efficiënte en schaalbare AEM Forms-omgeving op te bouwen.
-seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
-uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
 
 ---
 
-# Een type persistentie kiezen voor een AEM Forms-installatie {#choosing-a-persistence-type-for-an-aem-forms-installation}
+# Een persistentietype kiezen voor een AEM Forms-installatie {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 Kies verstandig een persistentietype. Het helpt u een efficiënte en schaalbare AEM Forms-omgeving op te bouwen.
 
@@ -59,7 +55,7 @@ De volgende tabel bevat een lijst met alle ondersteunde typen persistentie en di
  </tbody>
 </table>
 
-TarMK is ontworpen voor prestaties, terwijl MongoMK en RDBMK zijn ontworpen voor schaalbaarheid. Adobe adviseert hoogst TarMK als standaardpersistentietechnologie voor alle de plaatsingsscenario&#39;s van AEM Forms, voor zowel Auteur als Publish instanties, behalve in de gebruiksgevallen die in sectie worden geschetst [Mongo of een relationele database-microkernel kiezen boven TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK is ontworpen voor prestaties, terwijl MongoMK en RDBMK zijn ontworpen voor schaalbaarheid. De Adobe adviseert hoogst TarMK als standaardpersistentietechnologie voor alle de plaatsingsscenario&#39;s van AEM Forms, voor zowel auteur als Publish instanties, behalve in de gebruiksgevallen die in sectie worden geschetst [Mongo of een relationele database-microkernel kiezen boven TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
 Voor de lijst met ondersteunde microkorrels raadpleegt u [AEM Forms inzake technische vereisten voor OSGi](/help/sites-deploying/technical-requirements.md) of [Door AEM Forms ondersteunde platformcombinaties op JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) artikelen.
 

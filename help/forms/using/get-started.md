@@ -1,18 +1,14 @@
 ---
 title: Aan de slag met HTML5-formulieren
-seo-title: Getting started with HTML5 forms
 description: Om aan de slag te gaan, implementeert u het AEM Forms-add-onpakket en importeert u bestaande HTML5-formulieren naar AEM.
-seo-description: To get started, deploy AEM Forms add-on package and import existing HTML5 forms to AEM.
-uuid: e85e57ab-fe32-4b6f-819e-322047ae3240
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 HTML5-formulieren bieden talrijke mogelijkheden die geschikt zijn voor mobiele apparaten. Het helpt u uw huidige oplossingen en werkschema&#39;s aan tablets of smartphones apparaten met HTML5 browsers uit te breiden. Enkele mogelijkheden omvatten:
 
-* **Op HTML gebaseerde rendering van XFA-formuliersjablonen:** Naast gewone PDF forms kunt u uw bestaande XFA-formulieren nu weergeven in de HTML5-indeling. Het helpt u om uw clientplatform uit te breiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML 5 ondersteunen en geen Adobe Reader met XFA Forms ondersteunen. Voor meer informatie over op HTML-gebaseerde het teruggeven mogelijkheden, zie [Inleiding tot HTML5-formulieren](/help/forms/using/introduction.md).
+* **Op HTML gebaseerde rendering van XFA-formuliersjablonen:** Naast gewone PDF forms kunt u uw bestaande op XFA gebaseerde formulieren nu weergeven in de HTML5-indeling. Het helpt u om uw clientplatform uit te breiden naar mobiele apparaten (Apple iPad, Android-tablet, smartphones enzovoort) die HTML 5 ondersteunen en geen Adobe Reader met XFA Forms ondersteunen. Voor meer informatie over op HTML-gebaseerde het teruggeven mogelijkheden, zie [Inleiding tot HTML5-formulieren](/help/forms/using/introduction.md).
 
 * **Forms beheren:** Daarnaast bevat AEM nieuwe mogelijkheden om het organiseren en beheren van formulieren te vereenvoudigen. U kunt formulieren activeren, deactiveren, publiceren en hiervan een voorbeeld weergeven. Zie voor meer informatie [Inleiding tot het beheren van formulieren](/help/forms/using/introduction-managing-forms.md).
 

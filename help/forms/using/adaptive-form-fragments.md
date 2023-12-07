@@ -1,18 +1,14 @@
 ---
 title: Adaptieve formulierfragmenten
-seo-title: Adaptive form fragments
 description: Aangepaste formulieren bieden een mechanisme om een formuliersegment te maken, zoals een deelvenster of een groep velden, zoals het in elk adaptief formulier wordt gebruikt. U kunt een bestaand deelvenster ook opslaan als fragment.
-seo-description: Adaptive forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any adaptive form. You can also save an existing panel as fragment.
-uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2101'
 ht-degree: 0%
 
 ---
@@ -172,7 +168,7 @@ U kunt het fragmentelement en de bijbehorende bindingen wijzigen in het dialoogv
 
 >[!NOTE]
 >
->U kunt een gebonden adaptief formulierfragment ook slepen en neerzetten vanuit de bibliotheek met adaptief formulierfragment in AEM zoekfunctie voor inhoud en de juiste bindingsverwijzing opgeven in het dialoogvenster Component bewerken van het adaptieve deelvenster voor formulierfragmenten.
+>U kunt ook een gebonden, adaptief formulierfragment uit de bibliotheek Adaptief formulierfragment in AEM-inhoud finder slepen en de juiste bindverwijzing weergeven vanuit het dialoogvenster Component bewerken van het deelvenster adaptief formulierfragment.
 
 ## Fragmenten beheren {#manage-fragments}
 
@@ -189,7 +185,7 @@ U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met 
    <td><p><strong>Beschrijving</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Open</p> </td>
+   <td><p>Openen</p> </td>
    <td><p>Hiermee opent u het geselecteerde adaptieve formulierfragment in de bewerkingsmodus.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -202,7 +198,7 @@ U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met 
   </tr>
   <tr>
    <td><p>Downloaden</p> </td>
-   <td><p>Hiermee downloadt u het geselecteerde fragment.<br /> <br /> </p> </td>
+   <td><p>Het geselecteerde fragment downloaden.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Voorvertoning</p> </td>

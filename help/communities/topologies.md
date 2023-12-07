@@ -1,18 +1,14 @@
 ---
 title: Aanbevolen topologieën voor Gemeenschappen
-seo-title: Recommended Topologies for Communities
 description: Hoe te om de behandeling van user-generated inhoud (UGC) te benaderen
-seo-description: How to approach the handling of user-generated content (UGC)
-uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: b6658330-d862-44e3-aac0-824fb91cd087
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -37,9 +33,10 @@ Het vereisen van een gemeenschappelijke opslagresultaten in de volgende geadvise
 
 >[!NOTE]
 >
->Voor AEM Communities: [UGC wordt nooit gerepliceerd](working-with-srp.md#ugc-never-replicated).
+>Voor AEM Communities: [UGC wordt nooit herhaald](working-with-srp.md#ugc-never-replicated).
 >
 >Wanneer de implementatie geen [gemeenschappelijk archief](working-with-srp.md), is UGC alleen zichtbaar op de AEM publicatie- of auteurinstantie waarop het is ingevoerd.
+>
 
 >[!NOTE]
 >
@@ -74,7 +71,7 @@ Wanneer de topologie publiceer landbouwbedrijf is, zijn de relevante onderwerpen
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | alle | JCR | MySQL | DSRP | Ja |
 | alle | JCR | MongoDB | MSRP | Ja |
-| alle | JCR | Adobe on-demand-opslag | ASRP | Ja |
+| alle | JCR | Adobe op verzoek | ASRP | Ja |
 
 ### JSRP {#jsrp}
 
@@ -94,20 +91,20 @@ Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie is het 
 
 * [Gebruikerssynchronisatie](sync.md)
 
-   Bespreekt scynchronisatie van gebruikersgegevens onder publiceer landbouwbedrijfinstanties.
+  Bespreekt scynchronisatie van gebruikersgegevens onder publiceer landbouwbedrijfinstanties.
 
 * [Gebruikers en gebruikersgroepen beheren](users.md)
 
-   Bespreekt de rollen van gebruikers en gebruikersgroepen in de auteur en publicatiemilieu&#39;s.
+  Bespreekt de rollen van gebruikers en gebruikersgroepen in de auteur en publicatiemilieu&#39;s.
 
 * UGC [gemeenschappelijk archief](working-with-srp.md)
 
-   Beschrijft de opslag van communautaire inhoud afzonderlijk van plaatsinhoud.
+  Beschrijft de opslag van communautaire inhoud afzonderlijk van plaatsinhoud.
 
 * [Node Stores and Data Stores](../../help/sites-deploying/data-store-config.md)
 
-   Inhoud van de site wordt in feite opgeslagen in een nodenarchief. Voor Middelen, kan een gegevensopslag worden gevormd om binaire gegevens op te slaan. Voor Gemeenschappen, moet een gemeenschappelijke opslag worden gevormd om SRP te selecteren.
+  Inhoud van de site wordt in feite opgeslagen in een nodenarchief. Voor Middelen, kan een gegevensopslag worden gevormd om binaire gegevens op te slaan. Voor Gemeenschappen, moet een gemeenschappelijke opslag worden gevormd om SRP te selecteren.
 
 * [Opslagelementen](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Beschrijft de twee implementaties van de knoopopslag: Tar en MongoDB.
+  Beschrijft de twee implementaties van de knoopopslag: Tar en MongoDB.

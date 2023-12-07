@@ -1,18 +1,14 @@
 ---
 title: Vooraf gedefinieerde rapporten in procesrapportage
-seo-title: Pre-defined reports in Process Reporting
 description: Vraag naar AEM Forms over JEE-procesgegevens om rapporten te maken over langdurige processen, procesduur en workflowvolume
-seo-description: Query for AEM Forms on JEE process data to create reports on long running processes, Process duration, and Workflow volume
-uuid: 704a8886-90ea-4793-a3fc-f998f878c928
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 exl-id: 34e55676-6332-4616-aecc-bcc8cc1e8a29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ AEM Forms Process Reporting biedt de volgende mogelijkheden: *uit-van-de-doos* r
 
 * **[Lange processen](#long-running-processes)**: Een rapport van alle AEM Forms-processen die meer dan een opgegeven tijd hebben geduurd om te worden voltooid
 * **[Procesduur](#process-duration-report)**: Een rapport van een opgegeven AEM Forms-proces per tijdsduur
-* **[Volume werkstroom](#workflow-volume-report)**: Een rapport van de lopende en voltooide instanties van gespecificeerd proces door datum
+* **[Volume werkstroom](#workflow-volume-report)**: Een rapport van de actieve en voltooide exemplaren van het opgegeven proces per datum
 
 ## Lange processen {#long-running-processes}
 
@@ -56,9 +52,9 @@ Het rapport Lange actieve processen geeft de AEM Forms-processen weer die meer d
 
    Gebruik de opties in de rechterbovenhoek van het dialoogvenster **Rapport** om de volgende bewerkingen op het rapport uit te voeren.
 
-   * **Vernieuwen**: Verfrist het rapport met de recentste gegevens die in de opslag liggen
-   * **De legendarische kleur wijzigen**: De kleur van de legenda van het rapport selecteren en wijzigen
-   * **Exporteren naar CSV**: De gegevens van het rapport exporteren en downloaden naar een bestand met komma&#39;s als scheidingsteken
+   * **Vernieuwen**: Hiermee vernieuwt u het rapport met de meest recente gegevens in de opslagruimte
+   * **De legenda wijzigen**: Selecteer en wijzig de kleur van de legenda van het rapport
+   * **Exporteren naar CSV**: Exporteer en download de gegevens uit het rapport naar een bestand met komma&#39;s als scheidingsteken
 
 ## Rapport Procesduur  {#process-duration-report}
 
@@ -87,15 +83,15 @@ In het rapport Procesduur wordt het aantal instanties van een Forms-proces weerg
 
    Gebruik de opties in de rechterbovenhoek van het dialoogvenster **Rapport** om de volgende bewerkingen op het rapport uit te voeren.
 
-   * **Vernieuwen**: Verfrist het rapport met de recentste gegevens die in de opslag liggen
-   * **De legendarische kleur wijzigen**: De kleur van de legenda van het rapport selecteren en wijzigen
-   * **Exporteren naar CSV**: De gegevens van het rapport exporteren en downloaden naar een bestand met komma&#39;s als scheidingsteken
+   * **Vernieuwen**: Hiermee vernieuwt u het rapport met de meest recente gegevens in de opslagruimte
+   * **De legenda wijzigen**: Selecteer en wijzig de kleur van de legenda van het rapport
+   * **Exporteren naar CSV**: Exporteer en download de gegevens uit het rapport naar een bestand met komma&#39;s als scheidingsteken
 
 ## Workflow Volume-rapport {#workflow-volume-report}
 
 Het workflowvolutrapport geeft het aantal exemplaren van een AEM Forms-proces dat momenteel wordt uitgevoerd en voltooid, per kalenderdag weer.
 
-### Om een rapport van het Volume van het Werkschema uit te voeren {#to-execute-a-workflow-volume-report}
+### Een workflowvolutrapport uitvoeren {#to-execute-a-workflow-volume-report}
 
 1. Als u de vooraf gedefinieerde rapporten wilt weergeven in Process Reporting, gaat u naar de **Procesrapportage** boomstructuurweergave, klik op de knop **Rapporten** knooppunt.
 1. Klik op de knop **Volume werkstroom** rapportknooppunt.
@@ -122,6 +118,6 @@ Het workflowvolutrapport geeft het aantal exemplaren van een AEM Forms-proces da
 
    Gebruik de opties in de rechterbovenhoek van het dialoogvenster **Rapport** om de volgende bewerkingen op het rapport uit te voeren.
 
-   * **Vernieuwen**: Verfrist het rapport met de recentste gegevens die in de opslag liggen
-   * **De legendarische kleur wijzigen**: De kleur van de legenda van het rapport selecteren en wijzigen
-   * **Exporteren naar CSV**: De gegevens van het rapport exporteren en downloaden naar een bestand met komma&#39;s als scheidingsteken
+   * **Vernieuwen**: Hiermee vernieuwt u het rapport met de meest recente gegevens in de opslagruimte
+   * **De legenda wijzigen**: Selecteer en wijzig de kleur van de legenda van het rapport
+   * **Exporteren naar CSV**: Exporteer en download de gegevens uit het rapport naar een bestand met komma&#39;s als scheidingsteken

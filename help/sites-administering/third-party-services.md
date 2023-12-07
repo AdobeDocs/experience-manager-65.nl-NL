@@ -1,16 +1,12 @@
 ---
 title: Integreren met services van derden
-seo-title: Integrating with Third-Party Services
 description: Leer hoe u AEM kunt integreren met services van derden.
-seo-description: Learn how to integrate AEM with third party services.
-uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -37,7 +33,7 @@ Bovendien kunt u AEM integreren met de [Adobe Creative Cloud](/help/assets/aem-c
 
 ## Integratie met Salesforce {#integrating-with-salesforce}
 
-Salesforce.com is het bedrijf voor cloud computing op bedrijfsniveau dat de overstap naar de sociale onderneming leidt.
+Salesforce.com is het bedrijf voor cloud computing op bedrijfsniveau dat de overstap naar de Social Enterprise leidt.
 
 Voor informatie over het integreren van uw AEM en Salesforce raadpleegt u [Integratie met Salesforce](/help/sites-administering/salesforce.md).
 
@@ -60,7 +56,7 @@ Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie [Exact
 
 ## Integratie met Facebook en Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook en Twitter zijn populaire sociale netwerkservices. AEM integratie met Facebook en Twitter stelt organisaties in staat een Facebook- of Twitter-aanmeldingsoptie voor digitale eigenschappen in eigendom te bieden en de gebruikerservaring aan te passen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
+Facebook en Twitter zijn populaire sociale netwerkdiensten. AEM integratie met Facebook en Twitter stelt organisaties in staat een aanmeldingsoptie voor Facebook of Twitter te bieden voor digitale eigenschappen in eigendom, en de gebruikerservaring vervolgens aan te passen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
 
 Zie [Sociale aanmelding](/help/communities/social-login.md) voor meer informatie .
 

@@ -1,17 +1,13 @@
 ---
 title: Voorbeeld voor het integreren van concepten en verzendingen in de database
-seo-title: Sample for integrating drafts & submissions component with database
 description: Referentie-implementatie van aangepaste gegevens- en metagegevensservices om concepten en verzendingscomponenten te integreren in een database.
-seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -30,7 +26,6 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 >* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst met beschikbare pakketten raadpleegt u de [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
 >* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptive Forms.
 
-
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}
 
 Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de steekproef te installeren en te vormen:
@@ -45,7 +40,7 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
 1. Klik op **[!UICONTROL Upload Package]**.
 
 1. Bladeren om de **aem-fp-db-integration-sample-pkg-6.1.2.zip** verpakken en klikken **[!UICONTROL OK]**.
-1. Klikken **[!UICONTROL Install]** naast het pakket om het pakket te installeren.
+1. Klikken **[!UICONTROL Install]** naast het pakket te installeren.
 1. Ga naar **[!UICONTROL AEM Web Console Configuration]**
 pagina op https://[*host*]:[*poort*]/system/console/configMgr.
 1. Klik om te openen **[!UICONTROL Forms Portal Draft and Submission Configuration]** in bewerkingsmodus.
@@ -81,6 +76,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    Een andere naam voor de gegevenstabel opgeven:
 
    * Zoek en klik in de webconsoleconfiguratie op Voorbeeldimplementatie van Forms Portal Data Service. U kunt de waarden van gegevensbron en naam van de gegevenslijst veranderen.
+
    >[!NOTE]
    >
    >Als u de tabelnamen wijzigt, geeft u deze op in de configuratie Formulierportal.
@@ -163,7 +159,6 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
 >
 >* Het JDBC-stuurprogramma voor MySQL wordt niet bij het voorbeeld geleverd. Zorg ervoor dat u daarvoor de provisioned hebt en verstrek de vereiste informatie om de JDBC verbindingspool te vormen.
 >* Wijs de auteur aan en publiceer instanties om het zelfde gegevensbestand te gebruiken. De waarde van het veld URI van de JDBC-verbinding moet gelijk zijn voor alle auteur- en publicatie-instanties.
-
 
 1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
 
@@ -328,11 +323,11 @@ De implementatie van de database van Forms Portal maakt gebruik van extra metage
 Voer de volgende stappen uit om te maken [een clientbibliotheek](/help/sites-developing/clientlibs.md) en gebruik het script:
 
 1. Meld u aan bij CRXDE en navigeer naar /etc/clientlibs/
-1. Een knooppunt van het type maken **cq:ClientLibraryFolder** en geef de naam van het knooppunt op. Bijvoorbeeld, `validation`.
+1. Een knooppunt van het type maken **cq:ClientLibraryFolder** en geef de naam van het knooppunt op. Bijvoorbeeld: `validation`.
 
    Klik op **[!UICONTROL Save All]**.
 
-1. Klik met de rechtermuisknop op het knooppunt, klik op **[!UICONTROL create new file]** en maakt u een bestand met de extensie .txt. Bijvoorbeeld: `js.txt`Voeg de volgende code toe aan het nieuwe .txt-bestand en klik op **[!UICONTROL Save All]**.
+1. Klik met de rechtermuisknop op het knooppunt, klik op **[!UICONTROL create new file]** en maakt u een bestand met de extensie .txt. Bijvoorbeeld: `js.txt`Voeg de volgende code toe aan het nieuwe .txt dossier en klik **[!UICONTROL Save All]**.
 
    ```javascript
    #base=util
@@ -410,7 +405,7 @@ Voer de volgende stappen uit om te maken [een clientbibliotheek](/help/sites-dev
 
    * **[!UICONTROL multi option:]** Ingeschakeld
 
-1. Navigeren naar `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg de `fp.validation` waarde voor de eigenschap embed.
+1. Navigeren naar `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg de `fp.validation` de waarde voor de eigenschap embed.
 
 1. Navigeer naar /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA en voeg de `fp.validation` waarde die moet worden ingesloten.
 

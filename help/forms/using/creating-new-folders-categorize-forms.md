@@ -1,18 +1,14 @@
 ---
 title: Nieuwe mappen maken om formulieren te categoriseren
-seo-title: Create new folders to categorize forms
 description: Gebruik mappen om uw formuliersjablonen, PDF, bronnen en aangepaste formulieren te ordenen.
-seo-description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
-uuid: 63fcb807-c9cf-49ae-ad69-6b1187543470
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -44,7 +40,7 @@ U kunt op een van de volgende manieren een map maken in AEM Forms:
    >
    >Standaard wordt de waarde van het naamveld automatisch ingevuld vanuit de titel. De naam mag alleen alfanumerieke tekens bevatten of speciale tekens voor het koppelteken (-) en het onderstrepingsteken (_). Eventuele andere speciale tekens die in de titel worden ingevoerd, worden automatisch vervangen door een afbreekstreepje en u wordt gevraagd de nieuwe naam te bevestigen. U kunt doorgaan met de voorgestelde naam of deze verder bewerken.
 
-1. Klik op **[!UICONTROL Submit].**
+1. Klikken **[!UICONTROL Submit].**
 
    Er wordt een nieuwe map met de door u gedefinieerde titel weergegeven op de huidige locatie in de lijst met elementen.
 
@@ -55,4 +51,4 @@ U kunt op een van de volgende manieren een map maken in AEM Forms:
 1. Selecteer de map waarvan u de titel wilt bewerken.
 1. Klik op Bewerken ![aem6forms_edit](assets/aem6forms_edit.png) in de werkbalk.
 1. Voer de nieuwe titel in. Het tekstveld wordt vooraf gevuld met de huidige waarde van de maptitel. U kunt de waarde wijzigen in een nieuwe waarde.
-1. Klik op **[!UICONTROL Submit].**
+1. Klikken **[!UICONTROL Submit].**

@@ -1,18 +1,14 @@
 ---
 title: Op certificaten gebaseerde verificatie configureren
-seo-title: Configuring certificate-based authentication
 description: Importeer een certificaat van certificeringsinstanties (CA) in het vertrouwde archief en maak een certificaattoewijzing voor verificatie op basis van een certificaat.
-seo-description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
-uuid: 9802a969-6d29-4b80-a4ed-06eb6e66e046
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -57,30 +53,31 @@ Wanneer u een certificaat test, uploadt Gebruikersbeheer de certificaatcontroles
    U kunt de volgende tekens in de regex gebruiken:
 
    * . (om het even welk karakter)
-   * &amp;asteren; (0 of meer exemplaren)
+   * &amp;ast; (0 of meer exemplaren)
    * () (geef de groep tussen haakjes op)
    * \ (wordt gebruikt om een regex-teken te verwijderen uit een normaal teken)
    * $n (wordt gebruikt om naar de negende groep te verwijzen)
 
    Voorbeelden van reguliere expressies:
 
-   * Om &quot;Alex Pink&quot; te extraheren uit &quot;Alex Pink (Authentication)&quot;
+   * &quot;Alex Pink&quot; uit &quot;Alex Pink (Authentication)&quot; extraheren
 
-      **Regex:** (.&amp;ast;) \(Authentificatie\)
+     **Regex:** (.&amp;ast;) \(Authentificatie\)
 
    * &quot;Alex Pink&quot; uit &quot;Alex (Authentication) Pink&quot; extraheren
 
-      **Regex:** (.&amp;ast;)\(Authentificatie\) (.&amp;last;)
+     **Regex:** (.&amp;ast;)\(Authentificatie\) (.&amp;last;)
 
-   * Om &quot;Roze Alex&quot; te extraheren uit &quot;Alex (Authentication) Pink&quot;
+   * &quot;Roze Alex&quot; extraheren uit &quot;Alex (Authentication) Pink&quot;
 
-      **Regex:** (.&amp;ast;)\(Authentificatie\) (.&amp;last;)
+     **Regex:** (.&amp;ast;)\(Authentificatie\) (.&amp;last;)
 
-      Aangepaste volgorde: $2 $1 (tweede groep retourneren, samengevoegd met eerste groep, vastgelegd door teken voor witruimte)
+     Aangepaste volgorde: $2 $1 (tweede groep retourneren, samengevoegd met eerste groep, vastgelegd door teken voor witruimte)
 
    * &quot;apink@sampleorg.com&quot; extraheren uit &quot;smtp:apink@sampleorg.com&quot;
 
-      **Regex:** smtp:(.&amp;last;)
+     **Regex:** smtp:(.&amp;last;)
+
    Zie voor meer informatie over het gebruik van reguliere expressies [Java-zelfstudie over reguliere expressies](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
 1. Selecteer in de lijst Voor domein het domein van de gebruiker.

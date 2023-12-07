@@ -1,21 +1,17 @@
 ---
 title: Logboek inschakelen voor HTML5-formulieren
-seo-title: Enable logging for HTML5 forms
 description: Met het hulpprogramma Logger kunt u zich aanmelden voor een formulier en kunt u fouten in formuliergerelateerde problemen opsporen.
-seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
-uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 4%
+source-wordcount: '629'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +23,7 @@ U kunt het hulpprogramma Logger configureren om logbestanden voor HTML5-formulie
 
 Voer de volgende stappen uit om logbestanden aan de serverzijde te configureren:
 
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr`. Zoek en open de *Configuratie van logboek van Apace Sling-logboekregistratie* optie. Er wordt een dialoogvenster weergegeven:
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr`. Zoek en open de *Configuratie van logboek van Apace Sling-logboekregistratie* -optie. Er wordt een dialoogvenster weergegeven:
 
    ![ Het dialoogvenster voor het instellen van de optie Apace Sling-logboekregistratie](assets/logconfig.png)
 
@@ -170,10 +166,10 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->Het standaardlogniveau voor elke logcategorie a (xfa), b (xfaView), en c (xfaPerf) is 2 (ERROR). Dienovereenkomstig, voor logboekconfiguratie: 2-b6, de logboekniveaus voor verschillende categorieën zijn:
->a (xfa): 2 (FOUT OP standaardniveau)
+>Het standaardlogniveau voor elke logcategorie a (xfa), b (xfaView), en c (xfaPerf) is 2 (ERROR). Voor logconfiguratie 2-b6 zijn de logniveaus voor de verschillende categorieën dienovereenkomstig:
+>a (xfa): 2 (standaardniveauFOUT)
 >b (xfaView): 6 (door gebruiker opgegeven TRACE)
->a (xfaPerf): 2 (FOUT OP standaardniveau)
+>a (xfaPerf): 2 (standaardniveauFOUT)
 
 ### Registreren inschakelen met Configuratiebeheer {#enabling-logging-using-configuration-manager}
 

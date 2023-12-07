@@ -1,17 +1,15 @@
 ---
 title: Componenten configureren in ontwerpmodus
 description: Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in sidekick. Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten in- en uit te schakelen.
-uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -57,7 +55,7 @@ In de ontwerpmodus wordt het hulpprogramma geminimaliseerd en kunt u de componen
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. De Sidekick minimaliseert in de ontwerpmodus. Door op de pijl te klikken kunt u de Sidetrap maximaliseren en terugkeren naar de bewerkingsmodus:
+1. De Sidekick minimaliseert in de ontwerpmodus. Klik op de pijl om de Sidekick te maximaliseren en terug te keren naar de bewerkingsmodus:
 
    ![Sidekick geminimaliseerd](do-not-localize/sidekick-collapsed.png)
 
@@ -71,12 +69,12 @@ In de ontwerpmodus kunt u ook kenmerken configureren voor de afzonderlijke compo
 
 1. U kunt het ontwerp van componenten configureren.
 
-   Als u bijvoorbeeld op **Bewerken** op de component Image (**Ontwerp van afbeelding**) kunt u de componentspecifieke parameters configureren:
+   Als u bijvoorbeeld op **Bewerken** op de component Image (**Ontwerp van de afbeelding**) kunt u de componentspecifieke parameters configureren:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
 1. Klikken **OK** om uw wijzigingen op te slaan.
 
-1. De Sidekick minimaliseert in de ontwerpmodus. Door op de pijl te klikken kunt u de Sidetrap maximaliseren en terugkeren naar de bewerkingsmodus:
+1. De Sidekick minimaliseert in de ontwerpmodus. Klik op de pijl om de Sidekick te maximaliseren en terug te keren naar de bewerkingsmodus:
 
    ![Sidekick geminimaliseerd](do-not-localize/sidekick-collapsed-1.png)

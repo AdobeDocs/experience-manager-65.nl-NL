@@ -1,23 +1,19 @@
 ---
-title: API's voor het werken met verzonden formulieren op een formulierportal
-seo-title: APIs to work with submitted forms on forms portal
-description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren.
-seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
-uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
+title: API's voor het werken met verzonden formulieren op het formulierportaal
+description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de formulierportal.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
-discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '538'
 ht-degree: 1%
 
 ---
 
-# API&#39;s voor het werken met verzonden formulieren op een formulierportal {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API&#39;s voor het werken met verzonden formulieren op het formulierportaal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
 
@@ -78,11 +74,11 @@ Geef de volgende parameters op in de aanvraag-URL:
    <td>Hiermee geeft u het CRX-opslagpad op waar het formulier zich bevindt. Als u het formulierpad niet opgeeft, wordt een leeg antwoord geretourneerd.<br /> </td>
   </tr>
   <tr>
-   <td><code>offset</code> (optioneel)</td>
-   <td>Geeft het beginpunt op in de index van de resultatenset. De standaardwaarde is <strong>0</strong>.</td>
+   <td><code>offset</code><br /> (optioneel)</td>
+   <td>Geeft het beginpunt op in de index van de resultaatset. De standaardwaarde is <strong>0</strong>.</td>
   </tr>
   <tr>
-   <td><code>limit</code> (optioneel)</td>
+   <td><code>limit</code><br /> (optioneel)</td>
    <td>Hiermee beperkt u het aantal resultaten. De standaardwaarde is <strong>30</strong>.</td>
   </tr>
   <tr>
@@ -210,7 +206,7 @@ Geef de volgende parameters op in de aanvraag-URL:
 |---|---|
 | `submitID` | Hiermee wordt de metagegevens-id opgegeven die aan een verzendinstantie is gekoppeld. |
 | `property` | Hiermee geeft u de formuliereigenschap op die moet worden bijgewerkt. |
-| `value` | Hiermee wordt de waarde opgegeven van de eigenschap form die moet worden bijgewerkt. |
+| `value` | Specifies the value of the form property to be updated. |
 
 ### Antwoord {#response-4}
 

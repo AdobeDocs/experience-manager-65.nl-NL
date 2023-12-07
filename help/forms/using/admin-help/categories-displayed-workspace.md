@@ -1,18 +1,14 @@
 ---
 title: De categorieën beheren die worden weergegeven in Workspace
-seo-title: Managing the categories displayed in Workspace
 description: In Workspace worden de processen die een gebruiker kan starten, weergegeven in categorieën in het linkernavigatievenster. Leer hoe u deze categorieën kunt beheren die in Workspace worden weergegeven.
-seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
-uuid: c2a275f5-872e-467f-9f07-4b130631e8a8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -34,9 +30,9 @@ Als u MySQL als uw AEM formulierdatabase gebruikt, kan de beheerconsole geen ond
 ## Een categorie toevoegen {#add-a-category}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Categoriebeheer.
-1. Klik op Toevoegen. Als u een subcategorie wilt toevoegen, selecteert u een categorie en klikt u op Toevoegen.
+1. Klik toevoegen. Als u een subcategorie wilt toevoegen, selecteert u een categorie en klikt u op Toevoegen.
 1. Typ in het vak Naam een naam voor de categorie en typ in het vak Beschrijving een beschrijving van de categorie.
-1. Klik op Toevoegen. De categorie wordt getoond op de pagina van het Beheer van de Categorie.
+1. Klik toevoegen. De categorie wordt getoond op de pagina van het Beheer van de Categorie.
 
    ***notitie **: U kunt maximaal vijf hiërarchische niveaus toevoegen wanneer u categorieën maakt.*
 

@@ -1,18 +1,14 @@
 ---
 title: Prestaties van toepassingsservers verbeteren
-seo-title: Enhancing application server performance
 description: In dit document worden optionele instellingen beschreven die u kunt configureren om de prestaties van de toepassingsserver voor AEM formulieren te verbeteren.
-seo-description: This document describes optional settings that you can configure to improve the performance of your AEM forms application server.
-uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1870'
 ht-degree: 0%
 
 ---
@@ -67,21 +63,21 @@ Wanneer de beheerder van de toepassingsserver de correcte montages van de verbin
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de gegevensbron die u hebt gemaakt: DB2 Universal JDBC Driver Provider of LiveCycle - db2 - IDP_DS.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
-1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
+1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar hoofdconfiguratie.
 
 ### Verbindingspool-instellingen voor WebSphere voor Oracle configureren {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de JDBC-gegevensbron voor het Oracle-stuurprogramma die u hebt gemaakt.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
-1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
+1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar hoofdconfiguratie.
 
 ### Verbindingspool-instellingen voor WebSphere voor SqlServer configureren {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers en klik in het rechterdeelvenster op de door de gebruiker gedefinieerde JDBC-gegevensbron voor stuurprogramma&#39;s die u hebt gemaakt.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in:
-1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
+1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar hoofdconfiguratie.
 
 ## Inline documenten optimaliseren en invloed hebben op JVM-geheugen {#optimizing-inline-documents-and-impact-on-jvm-memory}
 
@@ -96,7 +92,7 @@ De maximale inlinegrootte en de opslagdirectory&#39;s (de map met tijdelijke bes
 
 Wanneer een document dat voor verwerking door AEM formulieren wordt verzonden kleiner is dan of gelijk is aan de standaardgrootte voor inline documenten, wordt het document inline opgeslagen op de server en wordt het document geserialiseerd als een Adobe Document-object. Het inline opslaan van documenten kan aanzienlijke prestatievoordelen hebben. Als u echter de formulierworkflow gebruikt, kan de inhoud ook in de database worden opgeslagen voor traceringsdoeleinden. Daarom kan het verhogen van de maximum gealigneerde grootte de gegevensbestandgrootte beïnvloeden.
 
-Een document dat groter is dan de maximale inline-grootte wordt opgeslagen in het lokale bestandssysteem. Het Adobe Document-object dat van en naar de server wordt overgedragen, is slechts een aanwijzer naar dat bestand.
+Een document dat groter is dan de maximale inline-grootte wordt opgeslagen in het lokale bestandssysteem. Het object Document Adoben dat van en naar de server wordt overgedragen, is slechts een aanwijzer naar dat bestand.
 
 Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlinegrootte), wordt de inhoud in de database opgeslagen als onderdeel van de serialisatielading van het document. Daarom kan het verhogen van de maximum gealigneerde grootte de gegevensbestandgrootte beïnvloeden.
 
@@ -121,7 +117,7 @@ Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlin
 >
 >De standaard maximale inline grootte is 65536 bytes.
 
-### JVM maximale heapgrootte {#jvm-maximum-heap-size}
+### Maximale heapgrootte voor JVM {#jvm-maximum-heap-size}
 
 Als u de maximale inline-grootte verhoogt, hebt u meer geheugen nodig om de geserialiseerde documenten op te slaan. Daarom is in het algemeen ook een toename van de maximale heap-grootte van de JVM vereist.
 
@@ -141,7 +137,7 @@ De vereiste toename van de maximale heap-grootte van de JVM wordt berekend met b
 
 De maximale heapgrootte van JVM moet met 50 MB worden verhoogd voor een totaal van 562 MB.
 
-**Dekkingsfragmentatie overwegen**
+**Samenvatting van heapfragmentatie**
 
 Het plaatsen van de grootte van gealigneerde documenten aan grote waarden verhoogt het risico van een OutOfMemoryError op systemen die aan heapfragmentatie gevoelig zijn. Als u een document inline wilt opslaan, moet het JVM-heapgeheugen voldoende aaneengesloten ruimte hebben. Sommige besturingssystemen, JVM&#39;s en algoritmen voor het opruimen van ongewenste details zijn vatbaar voor heapfragmentatie. De fragmentatie vermindert de hoeveelheid aaneengesloten heapruimte en kan tot een OutOfMemoryError leiden zelfs wanneer voldoende totale vrije ruimte bestaat.
 

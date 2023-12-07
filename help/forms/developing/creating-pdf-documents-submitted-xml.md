@@ -1,20 +1,16 @@
 ---
 title: PDF-documenten maken met VerzondenXML-gegevens
-seo-title: Creating PDF Documents with SubmittedXML Data
 description: Gebruik de Forms-service om de formuliergegevens op te halen die de gebruiker in een interactief formulier heeft ingevoerd. Geef de formuliergegevens door aan een andere AEM Forms-servicebewerking en maak een PDF-document met de gegevens.
-seo-description: Use the Forms service to retrieve the form data that the user entered into an interactive form. Pass the form data to another AEM Forms service operation and create a PDF document using the data.
-uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -42,7 +38,7 @@ Het volgende diagram biedt een visuele weergave van deze workflow.
 
 ![cd_cd_finsrv_architectuur_xml_pdf1](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
-Nadat de gebruiker het formulier vanuit de webbrowser van de client heeft verzonden, wordt het niet-interactieve PDF-document opgeslagen in Content Services (afgekeurd). In de volgende afbeelding ziet u een PDF-document dat is opgeslagen in Content Services (afgekeurd).
+Nadat de gebruiker het formulier vanuit de clientwebbrowser heeft verzonden, wordt het niet-interactieve PDF-document opgeslagen in Content Services (afgekeurd). In de volgende afbeelding ziet u een PDF-document dat is opgeslagen in Content Services (afgekeurd).
 
 ![cd_cd_cs_gui](assets/cd_cd_cs_gui.png)
 
@@ -95,9 +91,9 @@ Maak een PDF-document met verzonden XML-gegevens met de API voor Forms, Output e
 1. Forms-, Output- en Document Management-objecten maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
-   * Een `DocumentManagementServiceClientImpl` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Een `DocumentManagementServiceClientImpl` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Formuliergegevens ophalen met de Forms-service
 
@@ -108,16 +104,15 @@ Maak een PDF-document met verzonden XML-gegevens met de API voor Forms, Output e
       * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` -object dat uitvoeringsopties opslaat.
 
-      De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
+     De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
 
-   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door het aanroepen van de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `0`De gegevens zijn klaar om te worden verwerkt.
+   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `0`De gegevens zijn klaar om te worden verwerkt.
    * Formuliergegevens ophalen door een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object `getOutputContent` methode. (Dit object bevat formuliergegevens die naar de service Uitvoer kunnen worden verzonden.)
    * Een `java.io.InputStream` door het object aan te roepen `java.io.DataInputStream` aannemer en het overgaan van `com.adobe.idp.Document` object.
    * Een `org.w3c.dom.DocumentBuilderFactory` object door het statische object aan te roepen `org.w3c.dom.DocumentBuilderFactory` object `newInstance` methode.
    * Een `org.w3c.dom.DocumentBuilder` door het object aan te roepen `org.w3c.dom.DocumentBuilderFactory` object `newDocumentBuilder` methode.
    * Een `org.w3c.dom.Document` door het object aan te roepen `org.w3c.dom.DocumentBuilder` object `parse` en het doorgeven van de `java.io.InputStream` object.
-   * Hiermee wordt de waarde van elk knooppunt in het XML-document opgehaald. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: de `org.w3c.dom.Document` -object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
-
+   * Haal de waarde van elk knooppunt in het XML-document op. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: de `org.w3c.dom.Document` -object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
 
 1. Maak een niet-interactief PDF-document met de uitvoerservice.
 
@@ -146,7 +141,7 @@ Maak een PDF-document met verzonden XML-gegevens met de API voor Forms, Output e
    * A `java.util.List` instantie die aspecten met betrekking tot de inhoud specificeert. Deze waarde is een optionele parameter en u kunt `null`.
    * A `java.util.Map` object waarin inhoudskenmerken zijn opgeslagen.
 
-   De `storeContent` methode retourneert een `CRCResult` object dat de inhoud beschrijft. Een `CRCResult` kunt u bijvoorbeeld de unieke id-waarde van de inhoud ophalen. Om deze taak uit te voeren, roep `CRCResult` object `getNodeUuid` methode.
+   De `storeContent` methode retourneert een `CRCResult` -object dat de inhoud beschrijft. Een `CRCResult` kunt u bijvoorbeeld de unieke id-waarde van de inhoud ophalen. Om deze taak uit te voeren, roep `CRCResult` object `getNodeUuid` methode.
 
 **Zie ook**
 

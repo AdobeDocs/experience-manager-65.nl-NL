@@ -1,16 +1,12 @@
 ---
 title: Compatibiliteitsmatrix voor AEM Screens Player
-seo-title: Compatibility Matrix for AEM Screens Player
-description: Op deze pagina worden de AEM Screens Players weergegeven met hun respectievelijke AEM Screens versie.
-seo-description: This page lists the AEM Screens Players with their respective AEM Screens version.
+description: Deze pagina bevat een lijst met de AEM Screens Players met hun respectievelijke versie van AEM Screens.
 page-status-flag: never-activated
-uuid: d5bf1eee-d22a-4962-8289-fd56a54d85ae
 contentOwner: jsyal
-discoiquuid: dbc16a51-74c4-43bb-9501-081de1eb2f7d
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 3%
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 
@@ -37,11 +33,11 @@ In de volgende sectie worden de Adobe Experience Manager (AEM) Screens Players m
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Schermen FP2(1.0.298)</strong></strong></td> 
-   <td><p><strong>3.3.0</strong> </p> <p> </p> </td> 
+   <td><p><strong>3.3.0.</strong> </p> <p> </p> </td> 
   </tr>
   <tr>
    <td><strong>AEM 6,4</strong></td> 
-   <td><strong>3.3.0</strong> </td> 
+   <td><strong>3.3.0.</strong> </td> 
   </tr>
  </tbody>
 </table>
@@ -64,15 +60,15 @@ aem-screens-player-ios-3.3.0.ipa.zip
   </tr>
   <tr>
    <td><strong>AEM 6.3+SP1+Schermen FP1(1.0.64_B002)</strong></td> 
-   <td><strong>1.0.12</strong><br /> </td> 
+   <td><strong>1.0.12.</strong><br /> </td> 
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Schermen FP2(1.0.298)</strong></strong></td> 
-   <td><strong>1.0.48 </strong></td> 
+   <td><strong>1,0,48 </strong></td> 
   </tr>
   <tr>
    <td><strong>AEM 6,4</strong></td> 
-   <td><p><strong>1.0.48 </strong></p> </td> 
+   <td><p><strong>1,0,48 </strong></p> </td> 
   </tr>
  </tbody>
 </table>
@@ -90,8 +86,8 @@ aem-screens-player-windows-1.0.48-signed.exe.zip
 | **Versie AEM** | **Android-speler** |
 |---|---|
 | **AEM 6.3+SP1+Schermen FP1(1.0.64_B002)** | **3.2.68 -** (Beschikbaar op Macromedia Site) en Google Play Store |
-| **AEM 6.3+SP1+Schermen FP2(1.0.298)** | **3.3.0** |
-| **AEM 6,4** | **3.3.0** |
+| **AEM 6.3+SP1+Schermen FP2(1.0.298)** | **3.3.0.** |
+| **AEM 6,4** | **3.3.0.** |
 
 ### Koppeling downloaden {#download-link-2}
 

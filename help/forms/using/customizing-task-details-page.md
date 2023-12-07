@@ -1,15 +1,11 @@
 ---
 title: De pagina met taakdetails aanpassen
-seo-title: Customizing the task details page
 description: Hoe te om de pagina van taakdetails in de werkruimte van AEM Forms aan te passen om de standaardinformatie te wijzigen die over een taak wordt getoond.
-seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
-uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -27,10 +23,10 @@ U kunt de volgende informatie toevoegen aan de pagina met taakdetails:
 
 De pagina met taakdetails aanpassen:
 
-1. Volg [Algemene stappen voor aanpassing van de AEM Forms-werkruimte.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Als u aanvullende informatie wilt weergeven, voegt u de corresponderende sleutel-waardeparen toe aan de `translation.json` bestand bij `todo`blok > `details`blok > `app`blok > [ `required`blok].
+1. Volgen [Algemene stappen voor aanpassing van de AEM Forms-werkruimte.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Als u aanvullende informatie wilt weergeven, voegt u de corresponderende sleutel-waardeparen toe aan de `translation.json` bestand bij `todo`blok > `details`blok > `app`blok > [`required`blok].
 
-   De [ `required`blok] verwijst naar beschikbare blokken, zoals het taakblok voor taakinformatie, procesblok voor procesinformatie, en het huidige het taakblok voor lopende taakinformatie.
+   De [`required`blok] verwijst naar beschikbare blokken, zoals het taakblok voor taakinformatie, procesblok voor procesinformatie, en het huidige het taakblok voor lopende taakinformatie.
 
    Bijvoorbeeld, om informatie over de Selectie van de Route toe te voegen Vereist in de pagina van taakdetails, kunt u het volgende zeer belangrijk-waardepaar in het taakblok toevoegen:
 

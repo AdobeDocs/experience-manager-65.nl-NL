@@ -1,16 +1,12 @@
 ---
 title: Een gebruiker of groep dynamisch selecteren voor workflowstappen die op AEM Forms zijn gericht
-seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: Leer hoe u tijdens runtime een gebruiker of groep selecteert voor een AEM Forms-workflow.
-seo-description: Learn how to select a user or group for an AEM Forms workflow at the runtime.
-uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
-discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -120,7 +116,7 @@ U kunt de [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/refer
 
 U hebt [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
-1. Open Eclipse IDE. Ga naar **[!UICONTROL File]**> **[!UICONTROL New Project]**.
+1. Open Eclipse IDE. Navigeren naar **[!UICONTROL File]**> **[!UICONTROL New Project]**.
 1. Selecteer in het scherm Selecteer een wizard de optie **[!UICONTROL Maven Project]** en klik op **[!UICONTROL Next]**.
 1. Voor het Nieuwe Maven project, houd gebreken, en klik **[!UICONTROL Next]**. Selecteer een archetype en klik op **[!UICONTROL Next]**. Bijvoorbeeld maven-archetype-quickstart. Opgeven **[!UICONTROL Group Id]**, **[!UICONTROL Artifact Id]**, **[!UICONTROL version]**, en **[!UICONTROL package]** voor het project en klik op **[!UICONTROL Finish]**. Het project wordt gemaakt.
 1. Open het bestand pom.xml voor bewerking en vervang alle inhoud van het bestand door:

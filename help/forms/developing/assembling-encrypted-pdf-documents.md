@@ -1,20 +1,16 @@
 ---
 title: Gecodeerde PDF-documenten samenstellen
-seo-title: Assembling Encrypted PDF Documents
 description: Stel gecodeerde PDF-documenten samen met de Java API en Web Service API.
-seo-description: Assemble encrypted PDF documents using the Java API and Web Service API.
-uuid: d0948ec9-ab67-4fe4-9062-1c4938460b43
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
 exl-id: 2caaca74-640a-4257-a81b-3e8b295cd182
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt een document van de PDF met een wachtwoord coderen door de dienst van de Assembler te gebruiken. Nadat een PDF-document met een wachtwoord is versleuteld, moet een gebruiker het wachtwoord opgeven om het PDF-document in Adobe Reader of Acrobat weer te geven. Als u een PDF-document met een wachtwoord wilt versleutelen, moet het DDX-document waarden voor versleuteling bevatten die vereist zijn voor het versleutelen van een PDF-document.
+U kunt een document van de PDF met een wachtwoord coderen door de dienst van de Assembler te gebruiken. Nadat een PDF-document met een wachtwoord is versleuteld, moet de gebruiker het wachtwoord opgeven om het PDF-document in Adobe Reader of Acrobat weer te geven. Als u een PDF-document met een wachtwoord wilt versleutelen, moet het DDX-document waarden voor versleuteling bevatten die vereist zijn voor het versleutelen van een PDF-document.
 
 Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
 
@@ -41,7 +37,7 @@ Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt
 
 Binnen dit DDX-document wordt de waarde toegewezen aan het bronkenmerk `inDoc`. In situaties waarin slechts één invoerdocument van de PDF wordt overgegaan tot de dienst van de Assembler en één document van de PDF wordt teruggekeerd, en u roept `invokeOneDocument` bewerking, wijs de waarde toe `inDoc` naar het PDF-bronkenmerk. Wanneer het aanhalen van `invokeOneDocument` de `inDoc` waarde is een vooraf gedefinieerde sleutel die in het DDX-document moet worden opgegeven.
 
-Wanneer u daarentegen twee of meer invoerdocumenten van de PDF naar de Assembler-service doorgeeft, kunt u de `invokeDDX` bewerking. In dit geval wijst u de bestandsnaam van het invoerdocument PDF toe aan het `source` kenmerk.
+Wanneer u daarentegen twee of meer invoerdocumenten van de PDF naar de Assembler-service doorgeeft, kunt u de `invokeDDX` -bewerking. In dit geval wijst u de bestandsnaam van het invoerdocument PDF toe aan het `source` kenmerk.
 
 De versleutelingsservice hoeft geen onderdeel uit te maken van de installatie van uw AEM om een PDF-document met een wachtwoord te versleutelen. Zie [PDF-documenten versleutelen en ontsleutelen](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
 
@@ -51,7 +47,7 @@ De versleutelingsservice hoeft geen onderdeel uit te maken van de installatie va
 
 >[!NOTE]
 >
->Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -85,7 +81,7 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, moe
 
 **Verwijzen naar een bestaand DDX-document**
 
-Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Neem bijvoorbeeld het DDX-document dat in deze sectie is geïntroduceerd. Als u een PDF-document wilt versleutelen, moet het DDX-document het volgende bevatten: `PasswordEncryptionProfile` element.
+Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Neem bijvoorbeeld het DDX-document dat in deze sectie is geïntroduceerd. Als u een PDF-document wilt versleutelen, moet het DDX-document de `PasswordEncryptionProfile` element.
 
 **Verwijzen naar een onbeveiligd PDF-document**
 
@@ -97,7 +93,7 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Het document versleutelen**
 
-Nadat u de de dienstcliënt van de Assembler creeert, verwijs het DX- document dat encryptieinformatie bevat, een onbeveiligd document van de PDF van verwijzingen voorziet, en runtime opties plaatst, kunt u aanhalen `invokeOneDocument` bewerking. Omdat slechts één document van de inputPDF wordt overgegaan tot de dienst van de Assembler (en één document wordt teruggegeven), kunt u gebruiken `invokeOneDocument` in plaats van de `invokeDDX` bewerking.
+Nadat u de de dienstcliënt van de Assembler creeert, verwijs het DX- document dat encryptieinformatie bevat, een onbeveiligd document van de PDF van verwijzingen voorziet, en runtime opties plaatst, kunt u aanhalen `invokeOneDocument` -bewerking. Omdat slechts één document van de inputPDF wordt overgegaan tot de dienst van de Assembler (en één document wordt teruggegeven), kunt u gebruiken `invokeOneDocument` in plaats van de `invokeDDX` -bewerking.
 
 **Het gecodeerde PDF-document opslaan**
 
@@ -120,12 +116,12 @@ Als slechts één enkel document van PDF wordt overgegaan tot de dienst van de A
 1. Maak een Assembler-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Verwijs naar een onbeveiligd PDF-document.
 
@@ -150,11 +146,11 @@ Als slechts één enkel document van PDF wordt overgegaan tot de dienst van de A
 1. Sla het gecodeerde PDF-document op.
 
    * Een `java.io.File` en zorg ervoor dat de bestandsnaamextensie .pdf is.
-   * De `Document` object `copyToFile` methode om de inhoud van de `Document` naar het bestand. Zorg ervoor dat u de `Document` object dat `invokeOneDocument` geretourneerde methode.
+   * De `Document` object `copyToFile` methode om de inhoud van de `Document` naar het bestand. Zorg ervoor dat u de `Document` het object dat `invokeOneDocument` geretourneerde methode.
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een versleuteld PDF-document samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een gecodeerd PDF-document samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
 ## Een gecodeerd PDF-document samenstellen met de webservice-API {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 
@@ -169,7 +165,7 @@ Als slechts één enkel document van PDF wordt overgegaan tot de dienst van de A
 1. Maak een Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -182,7 +178,7 @@ Als slechts één enkel document van PDF wordt overgegaan tot de dienst van de A
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
    * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
    * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
@@ -213,7 +209,7 @@ Als slechts één enkel document van PDF wordt overgegaan tot de dienst van de A
 1. Sla het gecodeerde PDF-document op.
 
    * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het gecodeerde PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van de `BLOB` object dat `invokeOneDocument` geretourneerde methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` lid.
+   * Maak een bytearray waarin de inhoud van de `BLOB` het object dat `invokeOneDocument` geretourneerde methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` lid.
    * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
    * Schrijf de inhoud van de bytearray naar een PDF-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
 

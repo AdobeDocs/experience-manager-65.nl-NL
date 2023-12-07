@@ -1,26 +1,24 @@
 ---
 title: AEM-moderniseringstools
-seo-title: AEM Modernization Tools
-description: AEM-moderniseringstools help u bij het omzetten van uw oude AEM naar de nieuwste technologie
-seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
+description: AEM Moderniseringsgereedschappen helpen u bij het omzetten van uw oude AEM naar de nieuwste technologie
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 66%
+source-wordcount: '78'
+ht-degree: 29%
 
 ---
 
 # AEM-moderniseringstools {#modernization-tools}
 
-[Met de AEM-moderniseringstools kunt u eenvoudig de volgende taken uitvoeren:](https://opensource.adobe.com/aem-modernize-tools/)
+[AEM moderniseringsinstrumenten](https://opensource.adobe.com/aem-modernize-tools/) de gemakkelijke omzetting van:
 
-* [](page-templates-static.md)Statische sjablonen converteren naar bewerkbare sjablonen[](page-templates-editable.md)
-* [](page-templates-static.md)Ontwerpconfiguraties omzetten naar beleid[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Elementaire componenten omzetten naar kerncomponenten[](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [](website.md)De klassieke interface converteren naar een interface met aanraakbediening[](touch-ui-concepts.md)
+* [Statische sjablonen](page-templates-static.md) tot [bewerkbare sjablonen](page-templates-editable.md)
+* [Ontwerpconfiguraties](page-templates-static.md) tot [beleid](page-templates-editable.md)
+* [Elementaire componenten](/help/sites-authoring/default-components-foundation.md) tot [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Klassieke interface](website.md) tot [Interface met aanraakbediening](touch-ui-concepts.md)
 
 Voor meer informatie over het gebruik van deze instrumenten, [zie de documentatie](https://opensource.adobe.com/aem-modernize-tools/).
 

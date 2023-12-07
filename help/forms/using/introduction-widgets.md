@@ -1,30 +1,26 @@
 ---
 title: Vormgevingskader voor adaptieve en HTML5-formulieren
-seo-title: Appearance framework for adaptive and HTML5 forms
 description: Mobile Forms geeft formuliersjablonen weer als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen.
-seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
-uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1152'
 ht-degree: 1%
 
 ---
 
 # Vormgevingskader voor adaptieve en HTML5-formulieren {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms (adaptieve formulieren en HTML5-formulieren) gebruiken [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) en [Underscore.js](https://underscorejs.org/) bibliotheken voor weergave en scripts. De formulieren gebruiken ook de [jQuery-gebruikersinterface](https://jqueryui.com/) **Widgets** architectuur voor alle interactieve elementen (zoals velden en knoppen) in het formulier. Met deze architectuur kunnen formulierontwikkelaars een uitgebreide set beschikbare jQuery-widgets en -plug-ins in Forms gebruiken. U kunt ook formulierspecifieke logica implementeren terwijl u gegevens vastlegt van gebruikers, zoals beperkingen voor leadDigits/trailDigits of afbeeldingsclausules. Formulierontwikkelaars kunnen aangepaste toepassingen maken en gebruiken om de ervaring op het gebied van gegevensvastlegging te verbeteren en gebruikersvriendelijker te maken.
+Forms (adaptieve formulieren en HTML5 formulieren) gebruiken [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) en [Underscore.js](https://underscorejs.org/) bibliotheken voor weergave en scripts. De formulieren gebruiken ook de [jQuery-gebruikersinterface](https://jqueryui.com/) **Widgets** architectuur voor alle interactieve elementen (zoals velden en knoppen) in het formulier. Met deze architectuur kunnen formulierontwikkelaars een uitgebreide set beschikbare jQuery-widgets en -plug-ins in Forms gebruiken. U kunt ook formulierspecifieke logica implementeren terwijl u gegevens vastlegt van gebruikers, zoals beperkingen voor leadDigits/trailDigits of afbeeldingsclausules. Formulierontwikkelaars kunnen aangepaste toepassingen maken en gebruiken om de ervaring op het gebied van gegevensvastlegging te verbeteren en gebruikersvriendelijker te maken.
 
 Dit artikel is bedoeld voor ontwikkelaars met voldoende kennis van jQuery- en jQuery-widgets. Het biedt inzicht in het weergaveframework en stelt ontwikkelaars in staat een alternatieve weergave voor een formulierveld te maken.
 
 Het weergaveframework is afhankelijk van verschillende opties, gebeurtenissen (triggers) en functies om gebruikersinteracties met het formulier vast te leggen en reageert op modelwijzigingen om de eindgebruiker te informeren. Daarnaast:
 
-* Het framework biedt een set opties voor de weergave van een veld. Deze opties zijn sleutelwaardeparen en worden in twee categorieën verdeeld: algemene opties en veldtype-specifieke opties.
+* Het framework biedt een set opties voor de weergave van een veld. Deze opties zijn sleutelwaardeparen en zijn verdeeld in twee categorieën: algemene opties en veldtypespecifieke opties.
 * De verschijning, als deel van het contract, brengt een reeks gebeurtenissen zoals binnen en uitgang teweeg.
 * De vormgeving is vereist voor het implementeren van een set functies. Sommige functies komen vaak voor, andere zijn specifiek voor veldtypefuncties.
 
@@ -52,7 +48,7 @@ Hier volgen de ingestelde globale opties. Deze opties zijn beschikbaar voor elk 
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Readers in het scherm gebruiken deze waarde om informatie over het veld van commentaar te voorzien. Het formulier bevat de waarde en u kunt de waarde overschrijven.<br /> </td>
+   <td>Readers in het scherm gebruiken deze waarde om informatie over het veld te vertellen. Het formulier bevat de waarde en u kunt de waarde overschrijven.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -80,7 +76,7 @@ Hier volgen de ingestelde globale opties. Deze opties zijn beschikbaar voor elk 
   </tr>
   <tr>
    <td>dir</td>
-   <td>De richting van de tekst. De mogelijke waarden zijn ltr (van links naar rechts) en rtl (van rechts naar links).</td>
+   <td>De richting van de tekst. De mogelijke waarden zijn ltr (links naar rechts) en rtl (rechts naar links).</td>
   </tr>
  </tbody>
 </table>
@@ -118,14 +114,14 @@ Voor interactie met formulierframework activeert een widget bepaalde gebeurtenis
  </tbody>
 </table>
 
-#### API&#39;s die door widget zijn geïmplementeerd {#apis-implemented-by-widget}
+#### API&#39;s geïmplementeerd door widget {#apis-implemented-by-widget}
 
 Het weergaveframework roept enkele functies van de widget aan die in de aangepaste widgets zijn geïmplementeerd. De widget moet de volgende functies implementeren:
 
 <table>
  <tbody>
   <tr>
-   <th>-functie</th>
+   <th>Functie</th>
    <th>Beschrijving</th>
   </tr>
   <tr>
@@ -133,7 +129,7 @@ Het weergaveframework roept enkele functies van de widget aan die in de aangepas
    <td>Hiermee wordt de focus op het veld geplaatst.</td>
   </tr>
   <tr>
-   <td>klikken: function()</td>
+   <td>click: function()</td>
    <td>Hiermee wordt de focus op het veld geplaatst en wordt XFA_CLICK_EVENT aangeroepen.</td>
   </tr>
   <tr>
@@ -151,7 +147,7 @@ Het weergaveframework roept enkele functies van de widget aan die in de aangepas
 
 Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u de functies van verschillende velden wilt gebruiken, moet de widget voldoen aan de richtlijnen voor dat veld.
 
-### TextEdit: Tekstveld {#textedit-text-field}
+### TextEdit: Text Field {#textedit-text-field}
 
 <table>
  <tbody>
@@ -188,7 +184,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Array met objecten die als opties moeten worden weergegeven. Elk object bevat twee eigenschappen -<br /> opslaan: op te slaan waarde, weergave: waarde die moet worden weergegeven.<br /> <br /> </td>
+   <td>Array met objecten die als opties moeten worden weergegeven. Elk object bevat twee eigenschappen -<br /> opslaan: waarde om op te slaan, weergave: waarde om weer te geven.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>bewerkbaar</p> <p><strong>Opmerking</strong>: Alleen van toepassing op HTML5-formulieren.<br /> </p> </td>
@@ -210,7 +206,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
 <table>
  <tbody>
   <tr>
-   <th>-functie</th>
+   <th>Functie</th>
    <th>Beschrijving</th>
   </tr>
   <tr>
@@ -218,7 +214,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
    <td>Hiermee wordt een item aan de lijst toegevoegd.</td>
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: index van het item dat uit de lijst moet worden verwijderd<br /> </em><br /> <br /> </td>
+   <td>deleteItem<em>: functie(nIndex)<br /> nIndex: index van het item dat uit de lijst moet worden verwijderd<br /> </em><br /> <br /> </td>
    <td>Hiermee verwijdert u een optie uit de lijst.</td>
   </tr>
   <tr>
@@ -247,7 +243,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td>values</td>
+   <td>waarden</td>
    <td><p>Array van waarden (aan/uit/neutraal).</p> <p>Het is een array van waarden voor de verschillende toestanden van de checkButton. values[0] is de waarde wanneer de status ON is, values[1] is de waarde wanneer de status OFF is.<br /> values[2] is the value when the state is NEUTRAL. De lengte van de waardenarray is gelijk aan de waarde van de statusoptie.<br /> </p> </td>
   </tr>
   <tr>

@@ -1,16 +1,12 @@
 ---
 title: Formuliersjabloon weergeven voor HTML5-formulieren
-seo-title: Rendering form template for HTML5 forms
 description: HTML5-formulierprofielen zijn gekoppeld aan profielrenderingen. Profielweergave is JSP-pagina's die verantwoordelijk zijn voor het genereren van een HTML-weergave van het formulier door de Forms OSGi-service aan te roepen.
-seo-description: HTML5 forms profiles are associated with profile renders. Profile Renders are JSP pages responsible for generating HTML representation of the form by calling the Forms OSGi service.
-uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -25,7 +21,7 @@ HTML5-formulieren hebben het begrip **Profielen** die als REST Endpoints worden 
 
 https://&lt;*host*>:&lt;*poort*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*pad van de map met formulier xdp*>&amp;template=&lt;*naam van het xdp*>
 
-Bijvoorbeeld, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
+Bijvoorbeeld: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
 Voor een douaneprofiel, verandert het eindpunt dienovereenkomstig. Het eindpunt voor het aangepaste profiel met de naam Transform is bijvoorbeeld:
 
@@ -83,4 +79,4 @@ HTML5-formulieren ondersteunen drie methoden voor het doorgeven van renderparame
 
 ### Parameters verzenden {#submit-parameters}
 
-HTML5-formulieren dienen gegevens in; serverscripts en webservices uitvoeren op AEM servers. Voor gedetailleerde informatie over parameters die worden gebruikt om serverscripts en webservices uit te voeren op AEM servers, raadpleegt u [HTML5-formulieren Service Proxy](/help/forms/using/service-proxy.md).
+HTML5-formulieren verzenden gegevens; uitvoeren serverscripts en webservices op AEM servers. Voor gedetailleerde informatie over parameters die worden gebruikt om serverscripts en webservices uit te voeren op AEM servers, raadpleegt u [HTML5-formulieren Service Proxy](/help/forms/using/service-proxy.md).

@@ -1,17 +1,13 @@
 ---
 title: Door gebruiker gegenereerde inhoud labelen
-seo-title: Tagging User Generated Content
 description: Door tags toe te wijzen aan door gebruikers gegenereerde inhoud (UGC) kunnen leden van de gebruikersgemeenschap andere leden helpen bij het zoeken naar inhoud
-seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
-uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -44,7 +40,7 @@ Zie [Tags beheren](../../help/sites-administering/tags.md#tagging-console) voor 
 
 Zie [Grondbeginselen van tags](tag.md) voor informatie over ontwikkelaars.
 
-Zie [Sociale tagcloud gebruiken](tagcloud.md) voor het toevoegen van een component Social Tag Cloud aan een pagina om het zoeken naar geposte UGC te vergemakkelijken met behulp van de toegepaste tags.
+Zie [Sociale tagcloud gebruiken](tagcloud.md) voor het toevoegen van een component Social Tag Cloud aan een pagina om het zoeken naar geposte UGC te vergemakkelijken met de toegepaste tags.
 
 ### Tagmachtigingen {#tag-permissions}
 

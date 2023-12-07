@@ -1,16 +1,12 @@
 ---
 title: Component Sideloading
-seo-title: Component Sideloading
 description: sideloading in een Community-component is handig wanneer een webpagina is ontworpen als een eenvoudige app van één pagina die dynamisch wijzigt wat wordt weergegeven, afhankelijk van wat de bezoeker van de site heeft geselecteerd
-seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
-uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 960e132c-b370-43d1-bd8f-e7d0ded7c0b3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -54,11 +50,11 @@ Welk label ook wordt gebruikt, het element moet minstens voldoen aan het normale
 
 * **data-component-id**
 
-   Het effectieve pad naar de toegevoegde component.
+  Het effectieve pad naar de toegevoegde component.
 
 * **data-scf-component**
 
-   The resourceType of the component.
+  The resourceType of the component.
 
 Hieronder ziet u een voorbeeld van een component voor toegevoegde opmerkingen:
 

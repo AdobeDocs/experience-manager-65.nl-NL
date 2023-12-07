@@ -1,31 +1,27 @@
 ---
 title: De documentbeveiligingsserver installeren en configureren
-seo-title: Installing and configuring the document security server
-description: Met documentbeveiliging kunt u alle gegevens die u in een ondersteunde indeling hebt opgeslagen, veilig verspreiden. Alleen geautoriseerde gebruikers hebben toegang tot beveiligde documenten.
-seo-description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents.
-uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
+description: Met documentbeveiliging kunt u alle gegevens die u in een ondersteunde indeling hebt opgeslagen, veilig verspreiden. Alleen gemachtigde gebruikers hebben toegang tot beveiligde documenten.
 contentOwner: khsingh
-discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
 # De documentbeveiligingsserver installeren en configureren {#installing-and-configuring-the-document-security-server}
 
-Met documentbeveiliging kunt u alle gegevens die u in een ondersteunde indeling hebt opgeslagen, veilig verspreiden. Alleen geautoriseerde gebruikers hebben toegang tot beveiligde documenten.
+Met documentbeveiliging kunt u alle gegevens die u in een ondersteunde indeling hebt opgeslagen, veilig verspreiden. Alleen gemachtigde gebruikers hebben toegang tot beveiligde documenten.
 
-Met de beveiliging van Adobe Experience Manager Forms-documenten kunt u ervoor zorgen dat alleen geautoriseerde gebruikers uw documenten kunnen gebruiken. Met documentbeveiliging kunt u veilig alle informatie verspreiden die u in een ondersteunde indeling hebt opgeslagen. Tot de ondersteunde bestandsindelingen behoren de bestanden Adobe Portable Document Format (PDF) en Microsoft Word, Excel en PowerPoint.
+Met de beveiliging van Adobe Experience Manager Forms-documenten kunt u ervoor zorgen dat alleen geautoriseerde gebruikers uw documenten kunnen gebruiken. Met documentbeveiliging kunt u veilig alle informatie verspreiden die u in een ondersteunde indeling hebt opgeslagen. Ondersteunde bestandsindelingen zijn onder andere PDF (Portable Document Format) en Microsoft Word-, Excel- en PowerPoint-bestanden.
 
 U kunt documenten beschermen door beleid te gebruiken. De vertrouwelijkheidsmontages u in een beleid specificeert bepalen hoe een ontvanger een document kan gebruiken waarop u het beleid toepast. U kunt bijvoorbeeld opgeven of ontvangers tekst kunnen afdrukken of kopiëren, tekst kunnen bewerken of handtekeningen en opmerkingen kunnen toevoegen aan beveiligde documenten.
 
-Het beleid wordt opgeslagen op de server van de Veiligheid van het Document; u past het beleid op documenten toe door uw cliënttoepassing. Wanneer u een beleid op een document toepast, beschermen de vertrouwelijkheidsmontages die in het beleid worden gespecificeerd de informatie die het document bevat. U kunt het document dat met een beleid is beveiligd, verspreiden onder ontvangers die door het beleid zijn gemachtigd.
+Het beleid wordt opgeslagen op de server van de Veiligheid van het Document; u past het beleid op documenten door uw cliënttoepassing toe. Wanneer u een beleid op een document toepast, beschermen de vertrouwelijkheidsmontages die in het beleid worden gespecificeerd de informatie die het document bevat. U kunt het document dat met een beleid is beveiligd, verspreiden onder ontvangers die door het beleid zijn gemachtigd.
 
-Documentbeveiliging biedt ook clients, viewers en indexeerders om documenten te beveiligen, beveiligde documenten weer te geven en beveiligde documenten te indexeren. Voor gedetailleerde informatie over documentbeveiliging raadpleegt u [over documentbeveiliging](/help/forms/using/admin-help/document-security.md).
+Documentbeveiliging biedt ook clients, viewers en indexeerders om documenten te beveiligen, beveiligde documenten weer te geven en beveiligde documenten te indexeren. Zie voor meer informatie over documentbeveiliging [over documentbeveiliging](/help/forms/using/admin-help/document-security.md).
 
 ## Implementatietopologie  {#deployment-topology}
 
@@ -44,9 +40,9 @@ In het volgende diagram ziet u de typische architectuur voor AEM Forms Document 
 Voer de volgende stappen uit om AEM Forms op JEE te installeren en te configureren:
 
 1. Download de AEM 6.5 Forms op het JEE-installatieprogramma van de [Adobe Licensing Website (LWS)](https://licensing.adobe.com/). U hebt een geldig onderhouds- en ondersteuningscontract nodig om het installatieprogramma te downloaden.
-1. Lees de [AEM Forms on JEE Supported Platforms Document](/help/forms/using/aem-forms-jee-supported-platforms.md) en zorgen dat de software, hardware, besturingssystemen, toepassingsserver, databases, JDK&#39;s en andere infrastructuren klaar zijn om AEM Forms op JEE te installeren.
+1. Lees de [Document AEM Forms on JEE Supported Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md) en zorgen dat de software, hardware, besturingssystemen, toepassingsserver, databases, JDK&#39;s en andere infrastructuren klaar zijn om AEM Forms op JEE te installeren.
 1. (Alleen niet-kant-en-klare installaties) Lees de [Installatie van één AEM Forms-server voorbereiden](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) of [Installatie van AEM Forms-servercluster voorbereiden](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) en klaar voor uw omgeving om AEM Forms op JEE te installeren en te configureren.
-1. Afhankelijk van uw omgeving en toepassingsserver kiest u een van de volgende documenten en volgt u de instructies om de installatie te voltooien
+1. Kies afhankelijk van uw omgeving en toepassingsserver een van de volgende documenten en volg de instructies om de installatie te voltooien
 
    * [AEM Forms installeren en implementeren op JEE met JBoss turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
    * [AEM Forms installeren en implementeren op JEE voor JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64)

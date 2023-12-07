@@ -1,16 +1,12 @@
 ---
 title: Werken met stilstaande bewerkingen en vertakkingen
-seo-title: Working with stalled operations and branches
 description: De gestalte pagina van Verrichtingen en de Geroepen pagina van Trappen tonen de processen die hebben vastgezet.
-seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
-uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
@@ -77,7 +73,7 @@ U kunt opgezette bewerkingen ook beëindigen of opnieuw proberen en opgezette ve
 
 De fouten komen voor wanneer de Assign verrichting van de Taak in de dienst van de Gebruiker van de AEM vormen wordt gevormd om de taak aan een andere gebruiker na een specifieke periode te escaleren, en de escalatiegebruiker wordt geschrapt nadat de Assign verrichting van de Taak uitvoert maar alvorens de escalatie voorkomt.
 
-Wanneer deze situatie voorkomt, verandert de staat van het proces en de taak niet in de gevormde escalatietijd, en de escalatie komt niet voor maar het proces stagneert niet. Het volgende bericht wordt weergegeven in het serverlogboek:
+Wanneer deze situatie voorkomt, verandert de staat van het proces en de taak niet in de gevormde escalatietijd, en de escalatie komt niet voor maar het proces stagneert niet. Het volgende bericht wordt weergegeven in het serverlogbestand:
 
 &quot;Het hoofd dat voor escalatie wordt gespecificeerd is ongeldig, voor taskID: *getal*, opgegeven wachtrij: *getal*.&quot;
 

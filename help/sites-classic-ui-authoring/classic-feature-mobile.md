@@ -1,14 +1,12 @@
 ---
 title: Pagina's voor mobiele apparaten ontwerpen
 description: Wanneer u een mobiele pagina ontwerpt, wordt de pagina weergegeven op een manier die het mobiele apparaat emuleert. Wanneer u de pagina ontwerpt, kunt u schakelen tussen verschillende emulators om te zien wat de eindgebruiker ziet wanneer hij of zij de pagina opent.
-uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -29,16 +27,16 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
-1. Ga in uw browser naar **Siteadmin** console.
+1. Ga in uw browser naar de **Siteadmin** console.
 1. Open de **Producten** pagina hieronder **Websites** >> **Site voor mobiele demo** >> **Engels**.
 
 1. Schakel over naar een andere emulator. Hiervoor kunt u:
 
    * Klik op het apparaatpictogram boven aan de pagina.
-   * Klik op de knop **Bewerken** in de **Sidetrap** en selecteert u het apparaat in het keuzemenu.
+   * Klik op de knop **Bewerken** in de **Sidekick** en selecteert u het apparaat in het keuzemenu.
 
-1. Sleep de **Tekst en afbeelding** van het tabblad Mobiel van de Sidetrap naar de pagina.
-1. Bewerk de component en voeg wat tekst toe. Klikken **OK** om de wijzigingen op te slaan.
+1. Sleep de **Tekst en afbeelding** van het tabblad Mobiel van de Sidekick naar de pagina.
+1. Bewerk de component en voeg wat tekst toe. Klikken **OK** om de wijzigingen op te slaan
 
 De pagina ziet er hetzelfde uit als:
 

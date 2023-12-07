@@ -1,15 +1,13 @@
 ---
 title: AEM Mobile On-Demand
 description: Volg deze pagina als uitgangspunt voor het ontwikkelen van de app On-Demand Services met AEM (Adobe Experience Manager). De pagina behandelt de onderwerpen die relevant zijn voor een ontwikkelaar van een app.
-uuid: 35b64823-9451-44bf-b254-3b6767f0d109
 contentOwner: JYOTIKA SYAL
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 exl-id: a2134afd-4c0e-4a93-ac58-013b98fd9a09
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -28,9 +26,9 @@ ht-degree: 0%
 >
 >Voordat u met AEM Mobile gaat werken en de stappen in deze gids voor aan de slag gaat, moeten gebruikers vertrouwd zijn met [AEM](/help/sites-deploying/deploy.md).
 >
->Ga naar [AEM Mobile Application Dashboard of Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Ga voor informatie over het instellen van uw omgeving voor AEM Mobile On-demand Services naar [AEM Mobile Application Dashboard of Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-An **AEM ontwikkelaar** breidt en creeert douanefalplaatjes en componenten van het Web uit om toe te laten *AEM-auteur* om prachtige en boeiende mobiele ervaringen te creëren. Deze sjablonen en componenten zijn niet alleen geoptimaliseerd voor mobiele apps; maar communiceer zowel aan het apparaat als aan de AEM server (om het even welke verre server) aan de eindpunten van de netwerkdienst. AEM ingebouwde inhoudeditor wordt gebruikt door *AEM-auteurs* rijke en relevante ervaringen in de app te creëren, met inbegrip van integratie met de rest van de Adobe Marketing Cloud.
+An **AEM ontwikkelaar** breidt en creeert douanefalplaatjes en componenten van het Web uit om toe te laten *AEM auteur* om prachtige en boeiende mobiele ervaringen te creëren. Deze sjablonen en componenten zijn niet alleen geoptimaliseerd voor de wereld van de mobiele app, maar communiceren zowel naar het apparaat als naar de AEM server (elke externe server) naar de eindpunten van de lokale service. AEM ingebouwde inhoudeditor wordt gebruikt door *Auteurs AEM* rijke en relevante ervaringen in de app te creëren, met inbegrip van integratie met de rest van de Adobe Marketing Cloud.
 
 Een AEM ontwikkelaar is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On-demand Services:
 
@@ -42,7 +40,7 @@ Zie [AEM Mobile Content Services ontwikkelen](/help/mobile/developing-content-se
 
 >[!NOTE]
 >
->An *AEM ontwikkelaars* rol begint en eindigt niet met de ontwikkeling van sjablonen en componenten. An *AEM ontwikkelaar* U kunt een geheel nieuwe app maken in plaats van de voorbeeldcode voor de implementatie van de naslaggids uit te breiden.
+>An *AEM ontwikkelaars* de rol begint en eindigt niet met de ontwikkeling van sjablonen en componenten. An *AEM ontwikkelaar* U kunt een geheel nieuwe app maken in plaats van de voorbeeldcode voor de implementatie van de naslaggids uit te breiden.
 
 ## Aanvullende bronnen {#additional-resources}
 

@@ -1,17 +1,13 @@
 ---
 title: Referentiethema's
-seo-title: Reference Themes
-description: AEM Forms biedt adaptieve formulierthema's die u kunt ophalen bij Softwaredistributie en gebruiken om een formulier op te maken.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
+description: AEM Forms biedt adaptieve formulierthema's die u kunt ophalen bij Softwaredistributie en die u kunt gebruiken om een formulier op te maken.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -59,7 +55,7 @@ Met het thema Exec vermijdt u effen achtergrondvullingen om formuliercomponenten
 
 ## Exec Light {#exec-light}
 
-Het thema Exec Light gebruikt witruimte voor een naadloze ervaring. Met de knoppen Volgende en Verzenden krijgt u een effen vulling en 3D-schaduw. Met de linkertabbladen krijgt u een pijl in plaats van dubbele markeringen.
+Bij het thema Exec Light wordt witruimte gebruikt voor een naadloze ervaring. Met de knoppen Volgende en Verzenden krijgt u een effen vulling en 3D-schaduw. Met de linkertabbladen krijgt u een pijl in plaats van dubbele markeringen.
 
 ![Exec light theme](assets/exec-light.png)
 
@@ -69,7 +65,7 @@ Het thema Exec Light gebruikt witruimte voor een naadloze ervaring. Met de knopp
 
 ## Vrijheid {#liberty}
 
-Bij het thema van de vrijheid wordt de nadruk gelegd op het belang met een minimalistische benadering. De fontkleur van het bezochte tabblad wordt bijvoorbeeld groen. U kunt alleen de onderomtrek van het tekstvak zien waarin de weergave van een formulier op papier met lijnen wordt geëmuleerd. Het actieve tekstvak heeft een zwarte onderomtrek, terwijl andere een lichtgrijze onderomtrek krijgen.
+Bij het thema van de vrijheid wordt de nadruk gelegd op het belang met een minimalistische benadering. De fontkleur van het bezochte tabblad wordt bijvoorbeeld groen. U kunt alleen de onderomtrek van het tekstvak zien waarin de vormgeving van een formulier op papier met lijnen wordt geëmuleerd. Het actieve tekstvak heeft een zwarte onderomtrek, terwijl andere een lichtgrijze onderomtrek krijgen.
 
 ![Vrije thema](assets/liberty.png)
 

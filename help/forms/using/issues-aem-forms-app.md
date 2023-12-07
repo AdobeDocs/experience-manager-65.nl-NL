@@ -1,22 +1,18 @@
 ---
-title: Problemen met AEM Forms-app oplossen
-seo-title: Troubleshoot AEM Forms app
+title: Problemen met de AEM Forms-toepassing oplossen
 description: Meer informatie over algemene problemen met de AEM Forms-app en hoe u deze kunt oplossen.
-seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
-uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
 
-# Problemen met AEM Forms-app oplossen {#troubleshoot-aem-forms-app}
+# Problemen met de AEM Forms-toepassing oplossen {#troubleshoot-aem-forms-app}
 
 In dit artikel worden de foutberichten beschreven die kunnen worden weergegeven tijdens het ontwikkelen van de AEM Forms-app en de stappen die moeten worden uitgevoerd om deze op te lossen.
 
@@ -33,7 +29,7 @@ De volgende secties in dit artikel zijn beschikbaar:
 
 AEM Forms-app voor iOS die is geconfigureerd voor synchronisatie met AEM Forms op OSGi ondersteunt alleen bijlagen op veldniveau. Alle bijlagen moeten unieke namen hebben. Als meerdere bijlagen dezelfde naam hebben, wordt slechts één bijlage bewaard en gaan alle andere bijlagen met dezelfde naam verloren. Voer de volgende stappen uit om te voorkomen dat gebruikers op iOS-apparaten gegevensverlies ervaren:
 
-1. Navigeer op de verbonden server naar **Adobe Experience Manager > Gereedschappen > Bewerkingen > Webconsole**.
+1. Navigeer op de verbonden server naar **Adobe Experience Manager > Tools > Operations > Web Console**.
 1. Zoeken en klikken **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]**.
 1. In de [!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration] dialoogvenster, inschakelen **Bestandsnamen uniek maken**.
 
@@ -43,7 +39,7 @@ AEM Forms-app voor iOS die is geconfigureerd voor synchronisatie met AEM Forms o
 
 ## Concepten van HTML5-formulieren die door gebruikers van werkruimten worden verzonden, zijn niet zichtbaar op de portal {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Voor HTML5-formulieren ingeschakeld in de AEM Forms-app met **Opslaan als concept** HTML Renderprofiel, zijn de opgeslagen concepten niet zichtbaar voor gebruikers in de werkruimte. Voer de volgende stappen uit als u opgeslagen concepten van HTML5-formulieren wilt weergeven die door werkruimtegebruikers zijn verzonden op de portal:
+Voor HTML5-formulieren ingeschakeld in de AEM Forms-app met **Opslaan als concept** HTML Renderprofiel, zijn de opgeslagen concepten niet zichtbaar voor gebruikers in de werkruimte. Voer de volgende stappen uit als u opgeslagen concepten van HTML5-formulieren wilt weergeven die door werkruimtegebruikers op de portal zijn verzonden:
 
 1. Open CRXDE en login met beheerdergeloofsbrieven.
 
@@ -66,12 +62,12 @@ Wanneer de AEM Forms-app is verbonden met een oudere versie van de AEM Forms-ser
 Voer de volgende stappen uit om het probleem op te lossen:
 
 1. Ga in de auteur naar **Adobe Experience Manager > Tools > Configure Workspace App Offline Service > Configure Now**.
-1. In **Workspace App Offline Service** pagina, klikt u op **Handmatige broncache**.
+1. In **Workspace App Offline Service** pagina, klikt u **Handmatige broncache**.
 
    URL: https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
 
 1. In de **Handmatige broncache** klikt u op de knop **+** om een CRX-pad toe te voegen.
-1. In de **Een nieuwe bron toevoegen** veld, type: /etc.clientlibs/fd/xfaforms/I18N/en_US.js en klik op **Toevoegen**.
+1. In de **Een nieuwe bron toevoegen** field, type: /etc.clientlibs/fd/xfaforms/I18N/en_US.js en klik **Toevoegen**.
 1. Klikken **Opslaan**.
 
 ## AEM Forms synchroniseert niet in Windows {#aem-forms-do-not-sync-on-windows}

@@ -1,18 +1,14 @@
 ---
 title: De gebruikersavatar weergeven
-seo-title: Displaying the user avatar
 description: De AEM Forms-werkruimte aanpassen om de afbeelding van een aangemelde gebruiker weer te geven.
-seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
-uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
@@ -25,8 +21,8 @@ Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste 
 >
 >De ondersteunde hoogte-breedteverhouding van de gebruikersafbeeldingen is 1:1.
 
-1. Maak een DSC met de details die in de volgende stap worden vermeld. Voor meer informatie, zie het onderwerp van &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;in [Programmeren met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) hulplijn.
-1. Definieer in de DSC een nieuwe SPI die de methoden getCurrentUserImageUrl en getUserImageUrl beschikbaar maakt om een afbeeldings-URL voor een AEM Forms-gebruiker op te halen. Hier volgt een voorbeeld van een Java™-codefragment:
+1. Maak een DSC met de details die in de volgende stap worden vermeld. Zie het onderwerp &#39;Componenten ontwikkelen voor AEM Forms&#39; in voor meer informatie [Programmeren met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) hulplijn.
+1. Definieer in de DSC een nieuwe SPI die de methoden getCurrentUserImageUrl en getUserImageUrl beschikbaar maakt voor het ophalen van een afbeeldings-URL voor een AEM Forms-gebruiker. Hier volgt een voorbeeld van een Java™-codefragment:
 
    ```java
    public class DemoUserImageURLProviderService {

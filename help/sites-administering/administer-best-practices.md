@@ -1,21 +1,19 @@
 ---
 title: Tips en trucs om beheerders te helpen aan de slag te gaan
 description: Vind beste praktijken die door de ingenieurs van de Adobe en het raadplegen teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 2%
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
-# Best practices voor{#best-practices}
+# Aanbevolen procedures{#best-practices}
 
 De beste praktijken beschrijven hoe te om, AEM op de meest efficiënte en meest efficiënte manier te ontwikkelen te beheren of te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -45,7 +43,7 @@ De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Med
   </tr>
   <tr>
    <td>Uw inhoud ordenen (maphiërarchie)</td>
-   <td><a href="/help/assets/organize-assets.md">Aanbevolen procedures voor bestandsbeheer</a></td>
+   <td><a href="/help/assets/organize-assets.md">Aanbevolen werkwijzen voor bestandsbeheer</a></td>
    <td>De meeste verwerkingsprofielen zijn gebaseerd op mappen, zoals video, metagegevens en afbeeldingsverwerking. In dit document met aanbevolen procedures wordt beschreven hoe u de mappenhiërarchie definieert en instelt, aangezien de hiërarchie een grote invloed heeft op de manier waarop inhoud wordt verwerkt. </td>
   </tr>
   <tr>

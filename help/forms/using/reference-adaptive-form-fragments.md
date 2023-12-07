@@ -1,24 +1,20 @@
 ---
 title: Referentie adaptieve formulierfragmenten
-seo-title: Reference adaptive form fragments
 description: AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken.
-seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
-uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
 # Referentie adaptieve formulierfragmenten{#reference-adaptive-form-fragments}
 
-[Adaptief formulierfragment](../../forms/using/adaptive-form-fragments.md) Dit is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
+[Adaptief formulierfragment](../../forms/using/adaptive-form-fragments.md) Dit is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het vervolgens bewerken in de formuliereditor.
 
 Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in de [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Het bevat de volgende fragmenten:
 
@@ -26,7 +22,7 @@ Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in d
 * Contactgegevens
 * Creditcardgegevens
 * Huidige werkgelegenheid
-* Afhankelijke informatie
+* Informatie over afhankelijke personen
 * Werkgelegenheidsgeschiedenis
 * Inkomsten en uitgaven
 * Naam
@@ -49,7 +45,7 @@ Bevat velden voor het opgeven van het mailadres. De beschikbare velden zijn adre
 
 ## Contactgegevens {#contact-information}
 
-Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres.
+Bevat velden voor het vastleggen van telefoonnummer en e-mailadres.
 
 ![Fragment met contactgegevens](assets/contact-info.png)
 
@@ -60,7 +56,7 @@ Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres.
 ## Creditcardgegevens {#credit-card-information}
 
 Bevat velden voor het vastleggen van creditcardgegevens die kunnen worden gebruikt voor het verwerken van betalingen.
-[ ![Creditcardgegevensfragment](assets/cc-info.png)](assets/cc-info-1.png)
+[![Creditcardgegevensfragment](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Huidige werkgelegenheid {#current-employment}
 
@@ -72,7 +68,7 @@ Bevat velden waarin actuele werkgelegenheidsdetails worden opgenomen, zoals arbe
 
 ](assets/current-emp-1.png)-->
 
-## Afhankelijke informatie {#dependents-information}
+## Informatie over afhankelijke personen {#dependents-information}
 
 Omvat gebieden om informatie over één of meerdere gebiedsdelen, zoals hun naam, verhouding, en leeftijd in een tabelvorm te specificeren.
 

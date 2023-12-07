@@ -1,24 +1,22 @@
 ---
 title: Revisies maken en beheren in formulieren
-seo-title: Creating and managing reviews in forms
 description: Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op een formulier kunnen plaatsen.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
 
 # Revisies maken en beheren op formulieren{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -35,10 +33,10 @@ Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op formu
 1. Als het formulier geen revisie heeft, wordt een **Revisie starten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) wordt weergegeven op de actiebalk. Klik op de knop **Revisie starten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) pictogram.
 1. Voer de volgende gegevens in:
 
-   * **Titel**: Verplicht, kan alfanumerieke karakters, koppelteken, en onderstrepingsteken bevatten.
-   * **Beschrijving**: Optioneel, beschrijving van het doel/de inhoud ter controle.
-   * **Deadline**: Facultatief, de datum waarop de herbeoordeling beëindigt. Als de deadline is verstreken, wordt de taak weergegeven als &#39;Achterstallig&#39;.
-   * **Naam revisor**: Een minimum van één is verplicht. gebruik de keuzelijst met invoervak om controleurs toe te voegen en typ een naamlijst van alle overeenkomende namen; Selecteer een naam en klik op **Toevoegen**. In het volgende gedeelte van het dialoogvenster **Revisoren** wordt de naam van alle controleurs weergegeven.
+   * **Titel**: Verplicht, kan alfanumerieke tekens, afbreekstreepje en onderstrepingsteken bevatten.
+   * **Beschrijving**: Optioneel, beschrijving van het doel/de inhoud voor revisie.
+   * **Deadline**: Optioneel, de datum waarop de revisie wordt beëindigd. Als de deadline is verstreken, wordt de taak weergegeven als &#39;Achterstallig&#39;.
+   * **Naam revisor**: Een minimum van één is verplicht. Voeg revisoren toe in het keuzemenu met het invoervak, typ een naamlijst van alle overeenkomende namen. Selecteer een naam en klik op **Toevoegen**. In het volgende gedeelte van het dialoogvenster **Revisoren** wordt de naam van alle controleurs weergegeven.
 
 1. Klik op de knop **Start** om een revisie te starten.
 
@@ -52,7 +50,7 @@ Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op formu
 In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt of ingesteld.
 
 1. Er wordt een nieuwe revisietaak gemaakt en toegewezen aan de geselecteerde revisor.
-1. Aan alle revisoren wordt een controletaak toegewezen. De taak wordt weergegeven in de sectie Meldingen. Een revisor kan op een melding klikken of naar het Postvak In gaan om de taak te bekijken. Een revisor kan op deze knop klikken om de revisietaak te openen, het formulier te bekijken en opmerkingen toe te voegen.
+1. Aan alle revisoren wordt een controletaak toegewezen. De taak wordt weergegeven in de sectie Meldingen. Een revisor kan op een melding klikken of naar het Postvak In gaan om de taak te bekijken. Een revisor kan op deze knop klikken om de revisietaak te openen, het formulier weer te geven en opmerkingen toe te voegen.
 
    ![Waarschuwing revisormelding](assets/review-notification-img.png)
 
@@ -85,7 +83,7 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 
    * **Revisoren**: Beschikbaar voor bewerken. U kunt revisoren toevoegen of verwijderen. Als een taak te laat is, kunt u revisoren pas toevoegen nadat de deadline is verlengd na de huidige datum.
 
-1. Als u de revisie wilt beëindigen, klikt u op **Einde**.
+1. Klik op **Einde**.
 
 ### Handelingen die worden uitgevoerd wanneer een revisie wordt gewijzigd {#actions-that-occur-when-a-review-is-modified}
 

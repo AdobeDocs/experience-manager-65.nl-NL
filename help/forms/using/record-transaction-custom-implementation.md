@@ -1,17 +1,13 @@
 ---
 title: Een transactie opnemen voor aangepaste implementaties
-seo-title: Record a transaction for custom implementations
 description: Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
-seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
-uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -20,11 +16,11 @@ ht-degree: 0%
 
 Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
 
-U kunt aangepaste code gebruiken om een PDF-formulier te verzenden of om de gebruikersinterface van de agent voor voorbeeldweergave naar eindgebruikers te sturen voor een voorvertoning van een interactieve communicatie. U kunt ook een formulier verzenden met aangepaste methoden in plaats van verzendmethoden te gebruiken die bij AEM Forms worden geleverd. Alle eerder genoemde acties en aangepaste implementaties van AEM Forms API&#39;s worden niet als transacties beschouwd. AEM Forms verstrekt een API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke handelingen op te nemen als transacties.
+U kunt aangepaste code gebruiken om een PDF-formulier te verzenden of om de gebruikersinterface van de agent voor voorbeeldweergave naar eindgebruikers te sturen voor een voorvertoning van een interactieve communicatie. U kunt ook een formulier verzenden met aangepaste methoden in plaats van verzendmethoden te gebruiken die bij AEM Forms worden geleverd. Alle eerder genoemde acties en aangepaste implementaties van AEM Forms API&#39;s worden niet als transacties beschouwd. AEM Forms verstrekt een API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke handelingen als transacties op te nemen.
 
 Om een transactie op te nemen, schrijf [standaardslingerservlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) en roep het servlet van een cliënt aan om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
 
-## Voorbeeld van code op de server {#sample-server-sided-code}
+## Voorbeeld van servercode {#sample-server-sided-code}
 
 U kunt de onderstaande voorbeeldcode gebruiken om de TransactionRecorder-API uit te voeren vanuit een Java™-klasse met behulp van een aangepaste OSGi-bundel.
 

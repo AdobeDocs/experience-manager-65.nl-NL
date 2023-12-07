@@ -1,18 +1,14 @@
 ---
 title: Onbetaalde e-mails bijhouden
-seo-title: Tracking Bounced Emails
 description: Wanneer u een nieuwsbrief naar veel gebruikers verzendt, bevat de lijst meestal enkele ongeldige e-mailadressen. Het verzenden van nieuwsbrieven naar die adressen stuitert terug. AEM kan die grenzen beheren en kan ophouden verzendend nieuwsbrieven naar die adressen te verzenden nadat de gevormde stuiterteller wordt overschreden.
-seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
-uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe is niet van plan om het bijhouden van geopende/aangekondigde e-mails die door AEM SMTP-service worden verzonden, verder te verbeteren.
+>De Adobe is niet van plan om het bijhouden van geopende/aangekondigde e-mails die door AEM SMTP-service worden verzonden, verder te verbeteren.
 >
 >De aanbeveling is: [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
 
@@ -53,7 +49,7 @@ Ga als volgt te werk om de importmodule voor teruggestuurde e-mailberichten te c
 
    **POP3-configuratie-eigenschappen:**
 
-   `pop3.leave.on.server`: Bepaalt of om berichten op server al dan niet te verlaten. Ingesteld op true om berichten op de server te laten, anders false. Heeft als standaardwaarde true.
+   `pop3.leave.on.server`: Definieert of berichten op de server moeten worden achtergelaten. Ingesteld op true om berichten op de server te laten, anders false. Heeft als standaardwaarde true.
 
    **POP3-voorbeelden:**
 
@@ -94,7 +90,7 @@ Om de nieuwsbrief dienst te vormen:
 
    | Maximum voor stuitteller (max.bounce.count) | Hiermee definieert u het aantal instanties totdat een gebruiker wordt weggelaten bij het verzenden van een nieuwsbrief. Als u deze waarde instelt op 0, wordt de stuiteringscontrole volledig uitgeschakeld. |
    |---|---|
-   | Activiteit geen cache (sent.activity.nocache) | Definieert de cache-instelling die moet worden gebruikt voor de verzonden activiteit van de nieuwsbrief |
+   | Activiteit geen Geheime voorgeheugen (sent.activity.nocache) | Definieert de cache-instelling die moet worden gebruikt voor de verzonden activiteit van de nieuwsbrief |
 
    Zodra bewaard, doet de nieuwsbriefMCM dienst het volgende:
 

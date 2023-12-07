@@ -1,31 +1,27 @@
 ---
-title: "IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud"
-seo-title: "IBM DB2 database: Running commands for regular maintenance"
+title: "IBM DB2-database: opdrachten uitvoeren voor regelmatig onderhoud"
 description: Dit document bevat een lijst met IBM DB2-opdrachten die worden aanbevolen voor regelmatig onderhoud van de database met AEM formulieren.
-seo-description: This document lists IBM DB2 commands that are recommended for regular maintenance of your AEM forms database.
-uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-# IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud {#ibm-db-database-running-commands-for-regular-maintenance}
+# IBM DB2-database: opdrachten voor regelmatig onderhoud uitvoeren {#ibm-db-database-running-commands-for-regular-maintenance}
 
 De volgende IBM DB2-opdrachten worden aanbevolen voor regelmatig onderhoud van de database met AEM formulieren. Voor gedetailleerde informatie over onderhoud en prestaties het stemmen voor uw gegevensbestand DB2, zie *IBM DB2 Administration Guide*.
 
-* **runframes:** Dit bevel werkt statistieken bij die de fysieke kenmerken van een gegevensbestandlijst, samen met zijn bijbehorende indexen beschrijven. Dynamische SQL-instructies die door AEM formulieren worden gegenereerd, gebruiken automatisch deze bijgewerkte statistieken, maar statische SQL-instructies die in een database zijn gemaakt, vereisen dat de `db2rbind` ook worden uitgevoerd.
-* **db2rbind:** Deze opdracht koppelt alle pakketten in de database. Gebruik deze opdracht nadat u de opdracht `runstats` nut om alle pakketten in het gegevensbestand opnieuw te bevestigen.
+* **runstats:** Dit bevel werkt statistieken bij die de fysieke kenmerken van een gegevensbestandlijst, samen met zijn bijbehorende indexen beschrijven. Dynamische SQL-instructies die door AEM formulieren worden gegenereerd, gebruiken automatisch deze bijgewerkte statistieken, maar statische SQL-instructies die in een database zijn gemaakt, vereisen dat de `db2rbind` ook worden uitgevoerd.
+* **db2rbind:** Deze opdracht koppelt alle pakketten in de database. Gebruik deze opdracht nadat u de opdracht `runstats` gebruiken om alle pakketten in de database opnieuw te valideren.
 * **reorg tabel of index:** Dit bevel controleert of een reorganisatie van sommige lijsten en indexen wordt vereist.
 
-   Aangezien uw gegevensbestanden groeien en veranderen, is het opnieuw berekenen van lijststatistieken kritiek aan het verbeteren van gegevensbestandprestaties en zou regelmatig moeten worden gedaan. Deze opdrachten kunnen handmatig worden uitgevoerd met behulp van scripts of met behulp van een uitsnijdtaak.
+  Aangezien uw gegevensbestanden groeien en veranderen, is het opnieuw berekenen van lijststatistieken kritiek aan het verbeteren van gegevensbestandprestaties en zou regelmatig moeten worden gedaan. Deze opdrachten kunnen handmatig worden uitgevoerd met behulp van scripts of met behulp van een uitsnijdtaak.
 
 >[!NOTE]
 >
@@ -41,7 +37,7 @@ Voer de `runstats` gebruiken in de volgende AEM formulierdatabasetabellen en -in
 
 >[!NOTE]
 >
->De `runstats` bevel moet slechts tijdens de eerste gegevensbestandsynchronisatie in werking worden gesteld. Tijdens dat proces moet het echter twee keer worden uitgevoerd: eenmaal tijdens de synchronisatie van gebruikers en groepen en vervolgens tijdens de synchronisatie van groepsleden. Zorg ervoor dat het script volledig wordt uitgevoerd wanneer u het uitvoert.
+>De `runstats` bevel moet slechts tijdens de eerste gegevensbestandsynchronisatie in werking worden gesteld. Nochtans, moet het tweemaal tijdens dat proces in werking worden gesteld: eens tijdens de synchronisatie van Gebruikers en Groepen en dan tijdens de synchronisatie van de Leden van de Groep. Zorg ervoor dat het script volledig wordt uitgevoerd wanneer u het uitvoert.
 
 Raadpleeg de documentatie van de fabrikant van de database voor de juiste syntaxis en het juiste gebruik. Onder, `<schema>` wordt gebruikt om het schema aan te duiden dat aan uw DB2 gebruikersnaam wordt geassocieerd. Als u een eenvoudige installatie standaardDB2 hebt, is dit de naam van het gegevensbestandschema.
 

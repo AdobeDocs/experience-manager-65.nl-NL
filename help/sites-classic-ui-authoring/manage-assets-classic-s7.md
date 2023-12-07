@@ -1,17 +1,15 @@
 ---
 title: Dynamic Media Classic-functies (Scene7) toevoegen aan uw pagina
 description: Adobe Dynamic Media Classic (Scene7) is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan Web, mobiel, e-mail en displays en drukwerk via internet.
-uuid: dc463e2d-a452-490e-88af-f79bdaa3b089
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3409'
 ht-degree: 0%
 
 ---
@@ -105,9 +103,9 @@ Adobe raadt u aan elementen alleen naar Dynamic Media Classic (Scene7) te public
 
 1. Selecteer in het zijpaneel de optie **[!UICONTROL Page]** pictogram en selecteer **[!UICONTROL Page Properties]**.
 
-1. Selecteer **[!UICONTROL Cloud Services]**.
-1. Selecteer **[!UICONTROL Add services]**.
-1. Selecteer **[!UICONTROL Dynamic Media Classic (Scene7)]**.
+1. Selecteren **[!UICONTROL Cloud Services]**.
+1. Selecteren **[!UICONTROL Add services]**.
+1. Selecteren **[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. In de **[!UICONTROL Adobe Dynamic Media Classic (Scene7)]** vervolgkeuzelijst, selecteert u de gewenste configuratie en selecteert u **[!UICONTROL OK]**.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
@@ -147,7 +145,7 @@ Nadat ze in de ontwerpmodus beschikbaar zijn gemaakt, kunt u de componenten net 
 >
 >Als u de kijkers van douane S7 creeert en ontwikkelt en de Vinder van de Inhoud gebruikt, moet u uitdrukkelijk toevoegen `allowfullscreen` parameter.
 
-### Kennisgeving over de gebruiksduur van Flash-viewers {#flash-viewers-end-of-life-notice}
+### Eindbericht voor Flash Viewers {#flash-viewers-end-of-life-notice}
 
 Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (Scene7) de ondersteuning voor het viewerplatform voor Flash officieel beëindigd.
 
@@ -299,7 +297,7 @@ U kunt van de Dynamic Media Classic (Scene7) beeldmalplaatjecomponent een klikba
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 
 ### Video-component {#video-component}
 

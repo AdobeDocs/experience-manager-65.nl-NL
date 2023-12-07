@@ -1,15 +1,11 @@
 ---
 title: Werken in de offlinemodus
-seo-title: Working in the offline mode
 description: Maak uw mobiele apparaat offline buiten het AEM Forms-netwerkbereik of in een volledig offline modus en werk aan de AEM Forms-app
-seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
-uuid: b900a0f8-90ce-486a-bde6-6cdf11bd2801
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%
@@ -36,7 +32,7 @@ Aangezien het downloaden van gegevens op het mobiele apparaat de prestaties van 
 
 De offlineservice van de AEM Forms-app identificeert de bronnen die in een formulier worden gebruikt. De AEM Forms-app is afhankelijk van deze service voor informatie over formulierafhankelijkheden. Informatie over formulierafhankelijkheden is vereist om offline functies in te schakelen. De AEM Forms-app offline service plaatst de paden of URL&#39;s van de bronnen die in een formulier worden gebruikt in cache. Het cachegeheugen wordt bijgewerkt op basis van de wijzigingen in het formulier en de geldigheidsperiode die voor de offlineservice zijn geconfigureerd. Het in cache plaatsen van paden of URL&#39;s van de bronnen die in een formulier worden gebruikt, verbetert de prestaties op de server.
 
-U configureert als volgt de offline servercomponent van de AEM Forms-app:
+U configureert als volgt de offline component aan de serverzijde van de AEM Forms-app:
 
 1. Navigeer in de auteurinstantie naar **Adobe Experience Manager** >**Gereedschappen** > **Forms** > **Forms App Offline Service configureren**.
 
@@ -46,7 +42,7 @@ U configureert als volgt de offline servercomponent van de AEM Forms-app:
 
    * **Cache wissen**: Hiermee wist u de cache aan serverzijde van de formulierafhankelijkheden.
    * **Configuratie opnieuw instellen**: Hiermee herstelt u de offlineconfiguratie van de AEM Forms-toepassing.
-   * **Geldigheid cache**: Geeft de geldigheidsperiode aan voor de offlinecache aan de serverzijde.
-   * **Paden voor middelenwaarneming**: Specificeert wegen waar de off-line dienst voor middelveranderingen controleert. Als er wijzigingen optreden in de opgegeven paden, wordt de offlinecache van alle afhankelijke formulieren bijgewerkt. Bijvoorbeeld, `/etc/clientlibs/fd,/content/dam/images`.
+   * **Geldigheid cache**: Geeft de geldigheidsperiode aan voor de offline cache aan de serverzijde.
+   * **Paden voor middelenwaarneming**: Geeft paden aan waar de offlineservice de bron controleert. Als er wijzigingen optreden in de opgegeven paden, wordt de offlinecache van alle afhankelijke formulieren bijgewerkt. Bijvoorbeeld: `/etc/clientlibs/fd,/content/dam/images`.
 
 1. In de **Handmatige broncache** kunt u opgeven welke afhankelijkheden van formulieren niet kunnen worden geïdentificeerd door de offlineservice. U kunt bronnen opgeven, zoals afbeeldingen die vanuit JavaScript zijn geladen. De AEM Forms-app downloadt deze bronnen ook voor de offline modus.

@@ -1,18 +1,14 @@
 ---
 title: Backbone-interactie
-seo-title: Backbone interaction
 description: Conceptuele informatie over het gebruik van backbone-JavaScript-modellen in de AEM Forms-werkruimte.
-seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
-uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -35,13 +31,13 @@ Enkele belangrijke concepten zijn:
 * Dit kan een verzameling van vergelijkbare componenten zijn.
 * Opgemaakt uit het model van de Backbone, de mening van de Backbone, en malplaatje van de HTML.
 * Bevat verwijzing naar de dienst.
-* Bevat een verwijzing naar vereiste hulpprogramma&#39;s.
+* Bevat een verwijzing naar de vereiste hulpprogramma&#39;s.
 
 Wanneer een component wordt geïnitialiseerd, worden de volgende objecten gemaakt:
 
 * Er wordt een nieuwe instantie van het backbonemodel voor de component gemaakt. De service wordt in het model geïnjecteerd.
 * Er wordt een nieuw exemplaar van de backboneweergave gemaakt.
-* Instantie van het bijbehorende model, de HTML-sjabloon en de hulpprogramma&#39;s worden in de weergave geïnjecteerd.
+* Instantie van het bijbehorende model, de HTML-sjabloon en Hulpmiddelen worden in de weergave geïnjecteerd.
 
 In de backboneweergave is er een gebeurteniskaart die de verschillende gebeurtenissen in kaart brengt die zich als gevolg van gebruikersinterfaceinteractie met een overeenkomstige manager kunnen voordoen. Deze toewijzing wordt in werking gesteld zodra een component wordt geïnitialiseerd.
 

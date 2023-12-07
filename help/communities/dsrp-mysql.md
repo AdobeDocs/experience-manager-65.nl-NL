@@ -1,19 +1,15 @@
 ---
 title: MySQL-configuratie voor DSRP
-seo-title: MySQL Configuration for DSRP
 description: Hoe te met de server te verbinden MySQL en het gegevensbestand te vestigen UGC
-seo-description: How to connect to the MySQL server and establish the UGC database
-uuid: c058cc88-7ca2-4aed-9a36-b080e603f886
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -200,4 +196,4 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 
    * **[!UICONTROL Datasource name]**: naam ingevoerd voor de [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &quot;gemeenschappen&quot;.
 
-* Selecteer **[!UICONTROL Save]**
+* Selecteren **[!UICONTROL Save]**

@@ -1,19 +1,15 @@
 ---
 title: Lijst met verouderde bundels die na de upgrade zijn verwijderd
-seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: Een lijst met de bundels die automatisch worden verwijderd bij de upgrade naar AEM 6.3.
-seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
-uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als uw code op deze bundels vertrouwt, zorg ervoor u Adobe Steun contacteert en om een verenigbaarheidspakket voor het beïnvloede gebied vraagt.
+>Als uw code op deze bundels vertrouwt, zorg ervoor u de Steun van de Adobe contacteert en om een verenigbaarheidspakket voor het beïnvloede gebied vraagt.
 
 Bij de upgrade naar AEM 6.3 worden de volgende bundels automatisch verwijderd, afhankelijk van AEM versie die de upgrade is uitgevoerd:
 
@@ -48,7 +44,7 @@ Bij de upgrade naar AEM 6.3 worden de volgende bundels automatisch verwijderd, a
 * com.adobe.granite.installer.patch, versie 0.4.0, Active
 * biz.aQute.bndlib, versie 1.43.0, Actief
 * com.day.cq.cq-job-core, versie 5.4.0, Active
-* com.day.cq.cq-opensocial, versie 5.7.2, Actief
+* com.day.cq.cq, versie 5.7.2, Actief
 * com.day.cq.cq-pinauthhandler, versie 1.1.2, Actief
 * com.day.cq.dam.commons.nekohtml, versie 0.9.5, Actief
 * com.day.cq.mcm.cq-mcm-silverpop-integration, versie 1.1.6, Active

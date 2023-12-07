@@ -1,18 +1,14 @@
 ---
 title: Startprocessen
-seo-title: Starting processes
-description: 'Hoe u de LiveCycle AEM Forms-werkruimte gebruikt: processen selecteren, notities en bijlagen toevoegen, conceptkopieën opslaan en toevoegen aan favorieten.'
-seo-description: How to use LiveCycle AEM Forms workspace--select processes, add notes and attachments, save draft copies, and add to favorites.
-uuid: a61da785-25b4-4482-bd72-02e250d35dc7
+description: Hoe te om LiveCycle AEM Forms werkruimte-uitgezochte processen te gebruiken, nota's en gehechtheid toe te voegen, ontwerp te bewaren exemplaren, en aan favorieten toe te voegen.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 exl-id: b2a6ba3a-0f4c-44b1-8f9a-c15c6fb8c305
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -79,9 +75,9 @@ U kunt meerdere notities toevoegen, de geschreven notities bewerken en deze verw
 * Lezen/Verwijderen
 * Geen toegang
 
-1. Open een taak en klik op de knop **Notities** als dit mogelijk is.
+1. Open een taak en klik op de knop **Notities** , als dit tijdens het proces mogelijk is.
 1. Typ een titel voor de notitie in het dialoogvenster **Titel** en typ de tekst van de notitie in het dialoogvenster **Opmerking** doos.
-1. Selecteer **Machtigingen** niveau voor de nota voor andere gebruikers die aan het proces deelnemen.
+1. Selecteer de **Machtigingen** niveau voor de nota voor andere gebruikers die aan het proces deelnemen.
 1. Klikken **OK**. Een tekstbestand dat uw notitie bevat, wordt aan het formulier gekoppeld. U kunt een notitie bijwerken door erop te klikken en de tekst rechtstreeks te wijzigen. U kunt een notitie verwijderen door op de knop **Verwijderen** knop ![Afbeelding van een prullenbak](assets/icondelete.png) naast de notitie.
 
 ### Een bijlage toevoegen {#add-an-attachment}
@@ -96,7 +92,7 @@ U kunt ook opmerkingen over de bijlage toevoegen. U kunt een van de volgende toe
 
 1. Klik op de knop **Bijlagen** en selecteert u **Bijlage**.
 1. Klikken **Bladeren** om het bestand te selecteren dat u wilt bijvoegen.
-1. Selecteer **Machtigingen** niveau voor de bijlage voor andere gebruikers die aan het proces deelnemen. Als u **Lezen**, kunnen andere gebruikers het bestand lokaal opslaan. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
+1. Selecteer de **Machtigingen** niveau voor de bijlage voor andere gebruikers die aan het proces deelnemen. Als u **Lezen**, kunnen andere gebruikers het bestand lokaal opslaan. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
 1. Klikken **OK**. Het bestand wordt aan het formulier gekoppeld. U kunt een bestand verwijderen door op de knop **Verwijderen** knop ![Afbeelding van een prullenbak](assets/icondelete.png) naast de bijlage.
 
 ## Concepten van formulieren opslaan {#saving-draft-copies-of-forms}

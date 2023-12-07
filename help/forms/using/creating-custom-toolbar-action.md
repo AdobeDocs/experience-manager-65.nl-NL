@@ -1,16 +1,12 @@
 ---
 title: Een aangepaste werkbalkactie maken
-seo-title: Creating a custom toolbar action
 description: Formulierontwikkelaars kunnen aangepaste werkbalkacties maken voor adaptieve formulieren in AEM Forms. Het gebruik van aangepaste handelingen door formulierauteurs kan hun eindgebruikers meer workflows en opties bieden.
-seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
-uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
 exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -23,7 +19,7 @@ ht-degree: 0%
 
 Voordat u een aangepaste werkbalkactie maakt, moet u [Clientzijbibliotheken gebruiken](/help/sites-developing/clientlibs.md) en [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Wat is een handeling? {#what-is-an-action-br}
+## Wat is een handeling {#what-is-an-action-br}
 
 Een adaptief formulier biedt een werkbalk waarmee een auteur van een formulier een set opties kan configureren. Deze opties worden gedefinieerd als handelingen voor het aangepaste formulier. Klik op de knop Bewerken op de werkbalk voor het deelvenster om de acties in te stellen die worden ondersteund door adaptieve formulieren.
 

@@ -1,20 +1,16 @@
 ---
 title: MPEG voor Gemeenschappen
-seo-title: FFmpeg for Communities
 description: Mpeg for Communities installeren en configureren
-seo-description: How to install and configure FFmpeg for Communities
-uuid: ef2f821c-70e9-4889-a8d7-a93b10a1d428
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 1%
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +35,7 @@ Fmpeg moet worden geïnstalleerd op de server(s) die als host fungeert voor de A
 
    U moet Mpeg vanuit elke map in uw systeem kunnen uitvoeren.
 
-   * Bijvoorbeeld, `ffmpeg -version`.
+   * Bijvoorbeeld: `ffmpeg -version`.
 
 ## MPEG Transcoding Service configureren {#configure-ffmpeg-transcoding-service}
 
@@ -54,15 +50,15 @@ Als u de [!UICONTROL DAM Update Asset] workflow en in dit voorbeeld om transcode
 * Zoeken **[!UICONTROL DAM Update Asset]**.
 * Dubbelklik om de workflow voor bewerking te openen in de klassieke gebruikersinterface.
 
-   Resulterende locatie: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Resulterende locatie: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * Dubbelklik op de knop **[!UICONTROL FFmpeg transcoding]** om het dialoogvenster Step Properties te openen.
 * Onder de **[!UICONTROL Process]** tab:
 
-   * **[!UICONTROL Arugments]**: Wis alle ingangen om transcoderende Standaardwaarden onbruikbaar te maken: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+   * **[!UICONTROL Arugments]**: Wis alle items om transcoderingsstandaardwaarden uit te schakelen: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-   ![configure-ffmpeg](assets/configure-ffmpeg.png)
+  ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
-* Selecteren **[!UICONTROL OK]** om de `Step Properties` .
+* Selecteren **[!UICONTROL OK]** om de `Step Properties` in.
 
 * Selecteren **[!UICONTROL Save]** om de `DAM Update Asset` workflow.

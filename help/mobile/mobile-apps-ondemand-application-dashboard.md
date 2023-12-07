@@ -1,19 +1,15 @@
 ---
 title: AEM Mobile-toepassingsdashboard
-seo-title: AEM Mobile Application Dashboard
 description: U kunt uw toepassing en inhoud van mobiele apps beheren vanuit het AEM Mobile-toepassingsdashboard of het Control Center. Volg deze pagina voor meer informatie.
-seo-description: You can manage your application and mobile app content from AEM Mobile Application Dashboard or the Control Center. Follow this page to learn more.
-uuid: 0d182989-eb83-4207-a8e0-050edbf98ff9
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 1%
+source-wordcount: '603'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +75,7 @@ Elke tegel kan worden uitgebreid om een gedetailleerdere lijstmening te verstrek
 
 De **Banners beheren** Met de tegel kunt u de inhoud van een banner beheren. De volgende informatie wordt weergegeven voor een banner:
 
-* afbeelding
+* image
 * **TITEL**: naam van de banner
 * **GEWIJZIGD**: laatst gewijzigd in AEM
 * **GEÜPLOAD**: laatst geüpload vanaf AEM
@@ -98,7 +94,7 @@ In de volgende afbeelding wordt de **Banners beheren** tegel in AEM Mobile-toepa
 
 De **Artikelen beheren** Met de tegel kunt u de inhoud van een artikel beheren. De volgende informatie wordt weergegeven voor een artikel:
 
-* afbeelding
+* image
 * **TITEL**: naam van het artikel
 * **GEWIJZIGD**: laatst gewijzigd in AEM
 * **GEÜPLOAD**: laatst geüpload vanaf AEM
@@ -117,7 +113,7 @@ In de volgende afbeelding wordt de **Artikelen beheren** tegel in AEM Mobile-toe
 
 De **Verzamelingen beheren** Met de tegel kunt u de inhoud voor een verzameling beheren. De volgende informatie wordt getoond voor een inzameling:
 
-* afbeelding
+* image
 * **TITEL**: naam van de verzameling
 * **GEWIJZIGD**: laatst gewijzigd in AEM
 * **GEÜPLOAD**: laatst geüpload vanaf AEM

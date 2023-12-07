@@ -1,18 +1,14 @@
 ---
 title: App-metagegevens bewerken
-seo-title: Editing App Metadata
 description: Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Volg deze pagina voor meer informatie over het bewerken van toepassingsgegevens.
-seo-description: App metadata is required details for releasing an application to a vendor's store. Follow this page to learn about editing app data.
-uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 De **App beheren** de tegel en de pagina &quot;App beheren&quot; bieden een manier om toepassingsmetagegevens weer te geven en te bewerken. Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Dit kunnen algemene metagegevens, iOS-metagegevens en schermafbeeldingen zijn. Zie de [App-tegel beheren](/help/mobile/phonegap-app-details-tile.md) voor meer informatie over algemene en iOS-metagegevens.
 
@@ -33,7 +29,7 @@ De metagegevens van de app bewerken:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Als u details wilt weergeven of bewerken door op de knop &#39;..&#39; te klikken. in de rechterbenedenhoek van het dialoogvenster **App beheren** tegel.
+1. Als u details wilt weergeven of bewerken door te klikken op &#39;..&#39; in de rechterbenedenhoek van het dialoogvenster **App beheren** tegel.
 
 1. Ga of bekijk de details in om het even welke vijf beschikbare lusjes zoals aangetoond in het hieronder cijfer in.
 
@@ -43,14 +39,14 @@ De metagegevens van de app bewerken:
 
 U kunt de algemene en IOS-metagegevens bewerken:
 
-* Selecteer **Geavanceerd** op de pagina met toepassingsbeschrijving.
+* Selecteer de **Geavanceerd** op de pagina met toepassingsbeschrijving.
 * Bewerk of bekijk de algemene en IOS-metagegevens. Zie de onderstaande afbeeldingen voor meer informatie.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
 
 ## Schermafbeeldingen toevoegen en verwijderen {#add-and-remove-screenshots}
 
-U kunt schermafbeeldingen van de app opnemen in de lijst met metagegevens. Sommige leveranciers hebben nauwkeurige schermafbeeldingen nodig wanneer ze een app naar hun app-winkel verzenden. Deze afbeeldingen moeten al in Elementen voorkomen. Zie [Asset Picker](../assets/search-assets.md#assetpicker) om uw schermafbeeldingen te uploaden.
+U kunt schermafbeeldingen van de app opnemen in de lijst met metagegevens. Sommige leveranciers hebben nauwkeurige schermafbeeldingen nodig wanneer ze een app naar hun app-winkel verzenden. Deze afbeeldingen moeten al in Elementen voorkomen. Zie [Asset Picker](../assets/search-assets.md#assetpicker) om uw screenshots te uploaden.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 

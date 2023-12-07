@@ -1,25 +1,21 @@
 ---
 title: Bewerkbare sjablonen uitproberen in We.Detailhandel
-seo-title: Trying out Editable Templates in We.Retail
 description: Leer hoe u bewerkbare sjablonen kunt uitproberen in Adobe Experience Manager met We.Retail.
-seo-description: null
-uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 8%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
 # Bewerkbare sjablonen uitproberen in We.Detailhandel{#trying-out-editable-templates-in-we-retail}
 
-Met de bewerkbare sjablonen is het maken en onderhouden van sjablonen niet langer alleen een taak voor ontwikkelaars. Een type van macht-gebruiker, die een malplaatjeauteur wordt genoemd, kan malplaatjes nu tot stand brengen. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de maker van sjablonen sjablonen maken en configureren zonder een ontwikkelingsproject.
+Met de bewerkbare sjablonen is het maken en onderhouden van sjablonen niet langer alleen een taak voor ontwikkelaars. Een type van macht-gebruiker, die een malplaatjeauteur wordt genoemd, kan malplaatjes nu tot stand brengen. Ontwikkelaars moeten de omgeving nog steeds instellen, clientbibliotheken maken en de componenten maken die moeten worden gebruikt, maar als deze basisbeginselen eenmaal zijn ingesteld, beschikt de sjabloonauteur over de flexibiliteit om sjablonen zonder ontwikkelingsproject te maken en te configureren.
 
 Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor niet-ontwikkelaars de sjablonen kunnen aanpassen en aanpassen.
 

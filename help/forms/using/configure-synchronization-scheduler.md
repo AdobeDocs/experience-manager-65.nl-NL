@@ -1,19 +1,15 @@
 ---
 title: De synchronisatieplanner configureren
-seo-title: Configuring the synchronization scheduler
 description: Leer hoe u elementen kunt migreren en synchroniseren, synchronisatieplanner kunt configureren en mappen kunt gebruiken om elementen te rangschikken.
-seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
-uuid: b2c89feb-2947-418a-b343-4c01e453602b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 role: Admin
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -30,7 +26,7 @@ Voer de volgende stappen uit om het interval van de synchronisatieplanner te ver
 
 1. Zoek en open de **FormsManagerConfiguration** bundel.
 
-1. Geef een nieuwe waarde op voor de **Frequentie synchronisatieplanning** optie.
+1. Geef een nieuwe waarde op voor de **Frequentie synchronisatieplanning** -optie.
 
    De eenheid van de frequentie is minuten. Bijvoorbeeld, om de planner te vormen om na elke 60 minuten te lopen, specificeer 60.
 
@@ -52,7 +48,7 @@ U kunt de **Elementen synchroniseren vanuit gegevensopslagruimte** om de element
 
 ## Synchronisatiefout voor probleemoplossing {#troubleshooting-synchronization-error}
 
-U kunt nieuwe toepassingen maken in de werkstroomontwerper (LiveCycle Workbench).
+U kunt nieuwe toepassingen in de werkschemaontwerper (LiveCycle Workbench) tot stand brengen.
 
 Als de nieuwe toepassing en een map in /content/dam/formsanddocuments dezelfde naam hebben, wordt een fout &quot;*Middelen met dezelfde naam als deze toepassing bestaan al op hoofdniveau.*&quot; is geregistreerd.
 

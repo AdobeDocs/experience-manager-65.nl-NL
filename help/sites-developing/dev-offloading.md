@@ -1,18 +1,14 @@
 ---
 title: Banen voor offloaden maken en consumeren
-seo-title: Creating and Consuming Jobs for Offloading
 description: De Apache Sling Discovery-functie biedt een Java API waarmee u JobManager-taken en JobConsumer-services kunt maken die deze gebruiken
-seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
-uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -23,9 +19,9 @@ De Apache Sling Discovery-functie biedt een Java API waarmee u JobManager-taken 
 
 Voor informatie over het creëren van het ontladen van topologieën en het vormen onderwerpconsumptie, zie [Taken verschuiven](/help/sites-deploying/offloading.md).
 
-## Lasten van taken afhandelen {#handling-job-payloads}
+## Taaktaken verwerken {#handling-job-payloads}
 
-Het offloading-framework definieert twee taakeigenschappen die u gebruikt om de taaklading te identificeren. De het ontladen replicatieagenten gebruiken deze eigenschappen om de middelen te identificeren aan de instanties in de topologie te herhalen:
+Het offloading-framework definieert twee taakeigenschappen die u gebruikt om de taaklading te identificeren. De het ontladen replicatieagenten gebruiken deze eigenschappen om de middelen te identificeren om aan de instanties in de topologie te herhalen:
 
 * `offloading.job.input.payload`: Een door komma&#39;s gescheiden lijst met inhoudspaden. De inhoud wordt gerepliceerd naar de instantie die de taak uitvoert.
 * `offloading.job.output.payload`: Een door komma&#39;s gescheiden lijst met inhoudspaden. Wanneer de uitvoering van de taak is voltooid, wordt de taaklading gerepliceerd naar deze paden in de instantie die de taak heeft gemaakt.
@@ -42,8 +38,8 @@ Taken vereisen geen nuttige taken. De payload is echter noodzakelijk als de taak
 Maak een client die de methode JobManager.addJob aanroept om een taak te maken die automatisch wordt uitgevoerd door een JobConsumer. Geef de volgende informatie op om de taak te maken:
 
 * Onderwerp: Het taakonderwerp.
-* Naam: (Optioneel)
-* Eigenschappen toewijzen: A `Map<String, Object>` object dat een aantal eigenschappen bevat, zoals de invoerlaadpaden en uitvoerpaden voor Payload. Dit object Map is beschikbaar voor het object JobConsumer dat de taak uitvoert.
+* Naam: (optioneel)
+* Eigenschappenoverzicht: A `Map<String, Object>` object dat een aantal eigenschappen bevat, zoals de invoerlaadpaden en uitvoerpaden voor Payload. Dit object Map is beschikbaar voor het object JobConsumer dat de taak uitvoert.
 
 De volgende voorbeelddienst leidt tot een baan voor een bepaald onderwerp en een weg van de inputlading.
 

@@ -1,19 +1,15 @@
 ---
 title: Het lettertype in de interface wijzigen
-seo-title: Changing the font on the interface
 description: Hoe u de lettertypen in de gebruikersinterface selectief kunt wijzigen.
-seo-description: How to change the fonts on the user interface selectively.
-uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -30,7 +26,7 @@ Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../for
 
 Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de bovenste navigatiebalk wilt wijzigen in Courier New:
 
-1. Aanmelden bij CRXDE Lite via toegang `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Log in bij CRXDE Lite door toegang te krijgen `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Voer een van de volgende handelingen uit:
 
    1. Als u de lettertypefamilie wilt wijzigen in een bestaande stijl, voegt u het volgende toe in het bestand newStyle.css op /apps/ws/css.
@@ -52,7 +48,7 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Het bestand /apps/ws/js/registry.js openen om te bewerken en te vervangen `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` with `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Het bestand /apps/ws/js/registry.js openen voor bewerken en vervangen `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` with `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
    1. Als u een stijl wilt toevoegen die de lettertypefamilie definieert, voegt u het volgende toe in het bestand newStyle.css op /apps/ws/css.
 

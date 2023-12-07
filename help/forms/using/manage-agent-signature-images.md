@@ -1,24 +1,20 @@
 ---
-title: Handtekeningafbeeldingen van agent beheren
-seo-title: Manage agent signature images
+title: Afbeeldingen van handtekeningen van agent beheren
 description: Nadat u een lettertypesjabloon hebt gemaakt, kunt u dit gebruiken om correspondentie te maken in AEM Forms door gegevens, inhoud en bijlagen te beheren.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48b2697e-6065-4e23-9aa8-333e7b11ede1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
 
 ---
 
-# Handtekeningafbeeldingen van agent beheren{#manage-agent-signature-images}
+# Afbeeldingen van handtekeningen van agent beheren{#manage-agent-signature-images}
 
 ## Overzicht {#overview}
 
@@ -33,7 +29,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
 ## Handtekeningafbeelding voor agent toevoegen {#adding-agent-signature-image}
 
-1. Zorg ervoor dat de afbeelding met de handtekening van de agent dezelfde naam heeft als de AEM gebruikersnaam van de gebruiker. (Extensie is niet nodig voor de bestandsnaam van de afbeelding.)
+1. Zorg ervoor dat de afbeelding met de handtekening van de agent dezelfde naam heeft als de gebruikersnaam AEM gebruiker. (Extensie is niet nodig voor de bestandsnaam van de afbeelding.)
 1. Maak in CRX een map met de naam `cmUserRoot` in de inhoudsmap.
 
    1. Ga naar `https://'[server]:[port]'/crx/de`. Meld u indien nodig aan als beheerder.
@@ -51,7 +47,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 1. In de Ontdekkingsreiziger van de Inhoud, navigeer aan de omslag cmUserRoot en voeg het beeld van de agentenhandtekening in het toe.
 
    1. Ga naar `https://'[server]:[port]'/crx/explorer/index.jsp`. Meld u indien nodig aan als beheerder.
-   1. Klikken **Content Explorer**. De Content Explorer wordt in een nieuw venster geopend.
+   1. Klikken **Content Explorer**. De Inhoudsverkenner wordt in een nieuw venster geopend.
    1. Navigeer in Content Explorer naar de map cmUserRoot en selecteer deze. Klik met de rechtermuisknop op de knop **cmUserRoot** map en selecteer **Nieuw knooppunt**.
 
       ![Nieuw knooppunt in cmUserRoot](assets/2_cmuserroot_newnode.png)
@@ -75,6 +71,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
       Een van de subeigenschappen van jcr:content is jcr:data, die grijs wordt weergegeven. Dubbelklik op jcr:data. De eigenschap wordt bewerkbaar en de knop Bestand kiezen wordt weergegeven in de vermelding. Klikken **Bestand kiezen** en selecteert u het afbeeldingsbestand dat u als logo wilt gebruiken. Het afbeeldingsbestand hoeft geen extensie te hebben.
 
       ![JCR-gegevens](assets/5_jcrdata.png)
+
    Klikken **Alles opslaan**.
 
 1. Zorg ervoor dat de XDP\layout die u in de letter gebruikt, een afbeeldingsveld linksonder heeft (of een andere geschikte plaats in de layout waar u de handtekening wilt weergeven) om de afbeelding van de handtekening te renderen.

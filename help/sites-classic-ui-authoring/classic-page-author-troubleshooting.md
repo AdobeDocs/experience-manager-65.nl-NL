@@ -1,17 +1,15 @@
 ---
 title: Problemen met AEM tijdens het ontwerpen oplossen
 description: De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
-uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 7%
+ht-degree: 0%
 
 ---
 
@@ -46,7 +44,7 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
      `http://localhost:4502/sites.html/content?`
 
-     Hiermee wordt de pagina rechtstreeks bij AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
+     Hiermee wordt de pagina rechtstreeks vanaf AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
 
    * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 

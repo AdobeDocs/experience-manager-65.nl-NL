@@ -1,17 +1,13 @@
 ---
 title: Beleid maken en beheren
-seo-title: Creating and managing policies
 description: Een beleid is een reeks vertrouwelijkheidsmontages en gebruikers die tot een document kunnen toegang hebben waarop het beleid wordt toegepast. U kunt verschillende soorten beleid maken en beheren met behulp van AEM.
-seo-description: A policy is a set of confidentiality settings and users who can access a document to which the policy is applied. You can create and manage various types of policies using AEM forms.
-uuid: 72be06f3-3e90-495e-8425-72380d95704a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '4713'
 ht-degree: 0%

@@ -1,35 +1,31 @@
 ---
-title: PDF-Portfolio samenstellen
-seo-title: Assembling PDF Portfolios
+title: PDF-Portfolio's samenstellen
 description: U kunt een PDF-portfolio samenstellen om verschillende typen documenten te combineren, zoals tekstbestanden, afbeeldingsbestanden en PDF-documenten. U kunt een PDF-portfolio samenstellen met een Java API en een webservice-API.
-seo-description: Assemble a PDF portfolio to combine several documents of various types, including word file, image files, and PDF documents. You can assemble a PDF portfolio using a Java API and a Web Service API.
-uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 role: Developer
 exl-id: d2bd7c3e-4f75-4234-a7aa-ee8524430493
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1815'
 ht-degree: 0%
 
 ---
 
-# PDF-Portfolio samenstellen {#assembling-pdf-portfolios}
+# PDF-Portfolio&#39;s samenstellen {#assembling-pdf-portfolios}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt een PDF-Portfolio samenstellen met gebruik van de API voor Java samenstellen en webservices. In een portfolio kunnen diverse typen documenten worden gecombineerd, zoals tekstbestanden, afbeeldingsbestanden (bijvoorbeeld een JPEG-bestand) en PDF-documenten. De indeling van het portfolio kan worden ingesteld op verschillende stijlen, zoals de *Raster met voorvertoning* de *Op een afbeelding* lay-out of even *Draaien*.
+U kunt een PDF-Portfolio samenstellen met de API voor Java samenstellen en webservices. In een portfolio kunnen diverse typen documenten worden gecombineerd, zoals tekstbestanden, afbeeldingsbestanden (bijvoorbeeld een JPEG-bestand) en PDF-documenten. De indeling van het portfolio kan worden ingesteld op verschillende stijlen, zoals de *Raster met voorvertoning* de *Op een afbeelding* lay-out of even *Draaien*.
 
-De volgende afbeelding is een schermafbeelding van een portfolio met *Op een afbeelding* stijllay-out.
+De volgende afbeelding is een schermafbeelding van een portfolio met *Op een afbeelding* stijllayout.
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
-Het maken van een PDF-Portfolio dient als een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM Forms kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document dat een PDF-Portfolio maakt.
+Het maken van een PDF-Portfolio is een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM Forms kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document dat een PDF-Portfolio maakt.
 
 ```xml
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -53,7 +49,7 @@ Het maken van een PDF-Portfolio dient als een papierloos alternatief voor het do
  </DDX>
 ```
 
-Het DXX-document moet een `Portfolio` tag met een genest `Navigator` tag. De tag noteren `<Resource name="navigator/image.xxx" source="myImage.png"/>` is alleen nodig als `myNavigator` wordt toegewezen als de lay-outnavigator onImage: `AdobeOnImage.nav`. Met deze tag kan de Assembler-service de afbeelding selecteren die u wilt gebruiken als de portfolioachtergrond. Inclusief `PackageFiles` en `File` -tags om de bestandsnaam en het MIME-type van het pakketbestand te definiëren.
+Het DXX-document moet een `Portfolio` tag met een genest `Navigator` -tag. De tag noteren `<Resource name="navigator/image.xxx" source="myImage.png"/>` is alleen nodig als `myNavigator` wordt toegewezen als de lay-outnavigator onImage: `AdobeOnImage.nav`. Met deze tag kan de Assembler-service de afbeelding selecteren die u wilt gebruiken als de portfolioachtergrond. Inclusief `PackageFiles` en `File` -tags om de bestandsnaam en het MIME-type van het pakketbestand te definiëren.
 
 >[!NOTE]
 >
@@ -61,11 +57,11 @@ Het DXX-document moet een `Portfolio` tag met een genest `Navigator` tag. De tag
 
 >[!NOTE]
 >
->Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
-Voer de volgende taken uit om een PDF Portfolio te maken:
+Voer de volgende taken uit om een PDF-Portfolio te maken:
 
 1. Inclusief projectbestanden.
 1. Maak een PDF Assembler-client.
@@ -99,7 +95,7 @@ Er moet naar een DDX-document worden verwezen om een PDF-Portfolio samen te stel
 
 Als u een PDF-Portfolio wilt samenstellen, verwijst u naar alle bestanden die de samen te stellen documenten vertegenwoordigen. Geef bijvoorbeeld alle afbeeldingsbestanden die in het DDX-document zijn opgegeven, door aan de Assembler-service. U ziet dat naar deze bestanden wordt verwezen in het DDX-document dat in deze sectie is opgegeven: *myImage.png* en *saint_bernard.jpg*.
 
-Wanneer het assembleren van een Portfolio van PDF, geef een NAV- dossier (een navigatordossier) tot de dienst van de Assembler over. Het NAV-bestand dat u doorgeeft aan de Assembler-service, is afhankelijk van het type PDF Portfolio dat u maakt. Als u bijvoorbeeld een *Op een afbeelding* geeft u de indeling door aan het bestand AdobeOnImage.nav. U kunt NAV-bestanden zoeken in de volgende map:
+Wanneer het assembleren van een Portfolio van PDF, geef een NAV- dossier (een navigatordossier) tot de dienst van de Assembler over. Het NAV-bestand dat u doorgeeft aan de Assembler-service, is afhankelijk van het type PDF-Portfolio dat u wilt maken. Als u bijvoorbeeld een *Op een afbeelding* geeft u de indeling door aan het bestand AdobeOnImage.nav. U kunt NAV-bestanden zoeken in de volgende map:
 
 `<Install folder>\Acrobat 9.0\Acrobat\Navigators`
 
@@ -107,7 +103,7 @@ Kopieer het NAV-bestand uit de installatiemap van Acrobat 9 (of hoger). Plaats h
 
 >[!NOTE]
 >
->De snelle start die bij het samenstellen van PDF-Portfolio hoort, gebruikt AdobeOnImage.nav.
+>De snelle start die bij het samenstellen van PDF-Portfolio&#39;s hoort, gebruikt AdobeOnImage.nav.
 
 **Uitvoeringsopties instellen**
 
@@ -115,11 +111,11 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Het portfolio samenstellen**
 
-Als u een PDF-Portfolio wilt samenstellen, roept u de `invokeDDX` bewerking. De dienst van de Assembler keert de Portfolio van de PDF binnen een inzamelingsvoorwerp terug.
+Als u een PDF-Portfolio wilt samenstellen, roept u de `invokeDDX` -bewerking. De dienst van de Assembler keert het Portfolio van de PDF binnen een inzamelingsvoorwerp terug.
 
 **De geassembleerde portfolio opslaan**
 
-Een PDF-Portfolio wordt geretourneerd binnen een verzamelingsobject. Doorloop het verzamelingsobject en sla PDF Portfolio op als een PDF-bestand.
+Een PDF-Portfolio wordt geretourneerd binnen een verzamelingsobject. Doorloop het verzamelingsobject en sla het PDF-Portfolio op als een PDF-bestand.
 
 **Zie ook**
 
@@ -135,7 +131,7 @@ Een PDF-Portfolio wordt geretourneerd binnen een verzamelingsobject. Doorloop he
 
 ## Een PDF-Portfolio samenstellen met de Java API {#assemble-a-pdf-portfolio-using-the-java-api}
 
-U kunt een PDF-Portfolio samenstellen met de API (Java) voor vergaderingsservice:
+U kunt een PDF-Portfolio samenstellen met de API (Java) voor de Assembler-service:
 
 1. Inclusief projectbestanden.
 
@@ -144,12 +140,12 @@ U kunt een PDF-Portfolio samenstellen met de API (Java) voor vergaderingsservice
 1. Maak een PDF Assembler-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Verwijs naar de vereiste documenten.
 
@@ -174,19 +170,19 @@ U kunt een PDF-Portfolio samenstellen met de API (Java) voor vergaderingsservice
    * A `java.util.Map` -object dat de bestanden bevat die vereist zijn om een PDF-Portfolio te maken.
    * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het taaklogniveau
 
-   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de geassembleerde PDF Portfolio en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat het geassembleerde PDF-Portfolio en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla het samengevoegde portfolio op.
 
-   Voer de volgende handelingen uit om de PDF Portfolio te verkrijgen:
+   Voer de volgende handelingen uit om het PDF-Portfolio te verkrijgen:
 
    * De `AssemblerResult` object `getDocuments` methode. Deze methode retourneert een `java.util.Map` object.
    * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object.
-   * De `com.adobe.idp.Document` object `copyToFile` methode om de Portfolio van de PDF te extraheren.
+   * De `com.adobe.idp.Document` object `copyToFile` methode om het PDF-Portfolio te extraheren.
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): PDF-Portfolio samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Snel starten (SOAP-modus): PDF-Portfolio&#39;s samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -194,7 +190,7 @@ U kunt een PDF-Portfolio samenstellen met de API (Java) voor vergaderingsservice
 
 ## Een PDF-Portfolio samenstellen met de webservice-API {#assemble-a-pdf-portfolio-using-the-web-service-api}
 
-U kunt een PDF-Portfolio samenstellen met behulp van de API (webservice) voor de Assembler-service:
+U kunt een PDF-Portfolio samenstellen met behulp van de API (webservice) voor vergaderingsservice:
 
 1. Inclusief projectbestanden.
 
@@ -207,7 +203,7 @@ U kunt een PDF-Portfolio samenstellen met behulp van de API (webservice) voor de
 1. Maak een PDF Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -255,9 +251,9 @@ U kunt een PDF-Portfolio samenstellen met behulp van de API (webservice) voor de
 
 1. Sla het samengevoegde portfolio op.
 
-   Voer de volgende handelingen uit om de nieuwe PDF Portfolio te verkrijgen:
+   Voer de volgende handelingen uit om het nieuwe PDF-Portfolio te verkrijgen:
 
-   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
+   * Toegang krijgen tot de `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
    * Doorlopen `Map` om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` een `BLOB`.
    * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 

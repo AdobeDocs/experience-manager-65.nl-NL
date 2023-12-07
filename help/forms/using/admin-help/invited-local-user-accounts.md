@@ -1,17 +1,13 @@
 ---
 title: Uitgenodigde en lokale gebruikersaccounts beheren
-seo-title: Managing invited and local user accounts
 description: Met documentbeveiliging kunt u uitgenodigde en lokale gebruikersaccounts zoeken, weergeven, bewerken, vergrendelen, ontgrendelen en verwijderen.
-seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
-uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 0%
@@ -27,7 +23,7 @@ Gebruik de pagina Uitgenodigde en lokale gebruikers om uw uitgenodigde en lokale
 
 De pagina Uitgenodigde en Lokale gebruikers bevat twee tabbladen waarmee u uitgenodigde en lokale gebruikersaccounts kunt zoeken, weergeven, bewerken, vergrendelen, ontgrendelen en verwijderen.
 
-U kunt ook handmatig e-mails sturen naar uitgenodigde gebruikers. U kunt dit bijvoorbeeld doen als de registratieperiode die is toegestaan door het e-mailadres eindigt en de gebruiker de URL niet kan gebruiken om zich te registreren. In dit geval kunt u een registratiebericht opnieuw verzenden naar de uitgenodigde gebruiker. Wanneer de uitgenodigde gebruiker zich registreert en de rekening activeert, wordt de gebruiker een lokale gebruiker.
+U kunt ook handmatig e-mails sturen naar uitgenodigde gebruikers. U kunt dit bijvoorbeeld doen als de registratieperiode die door de e-mail is geautoriseerd, eindigt en de gebruiker de URL niet kan gebruiken om zich te registreren. In dit geval kunt u een registratiebericht opnieuw verzenden naar de uitgenodigde gebruiker. Wanneer de uitgenodigde gebruiker zich registreert en de rekening activeert, wordt de gebruiker een lokale gebruiker.
 
 >[!NOTE]
 >
@@ -55,7 +51,7 @@ U kunt informatie weergeven over lokale gebruikers, zoals naam, e-mailadres, org
 
 ## Een e-mail verzenden naar een niet-geregistreerde externe gebruiker {#send-an-email-to-an-unregistered-external-user}
 
-Wanneer u een uitgenodigde gebruiker toevoegt, verzendt de documentveiligheid automatisch een registratie-e-mailverzoek. U kunt ook handmatig een registratie-e-mail genereren om te verzenden naar een uitgenodigde gebruiker die zich nog niet heeft geregistreerd. U kunt dit bijvoorbeeld doen om een nieuwe uitnodiging te verzenden als de registratie-e-mail van een uitgenodigde gebruiker verloopt.
+Wanneer u een uitgenodigde gebruiker toevoegt, verzendt de documentveiligheid automatisch een registratie-e-mailverzoek. U kunt ook handmatig een registratie-e-mailbericht genereren dat wordt verzonden naar een uitgenodigde gebruiker die zich nog niet heeft geregistreerd. U kunt dit bijvoorbeeld doen om een nieuwe uitnodiging te verzenden als de registratie-e-mail van een uitgenodigde gebruiker verloopt.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers.
 1. Schakel in de gebruikerslijst het selectievakje in waarnaar elke gebruiker een registratiebericht verzendt en klik op Uitnodiging-e-mail opnieuw verzenden.

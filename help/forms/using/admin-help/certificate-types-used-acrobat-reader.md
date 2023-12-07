@@ -1,19 +1,15 @@
 ---
 title: Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies
-seo-title: Certificate types used by Acrobat Reader DC extensions
 description: Meer informatie over de certificaattypen die worden gebruikt door Acrobat Reader DC-extensies.
-seo-description: Learn about the certificate types used by Acrobat Reader DC extensions.
-uuid: 93c02abc-2d5a-44ed-b93c-981afbd0553d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '944'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +38,7 @@ De tekenreeks bevat de volgende elementen:
 
 **Profielcode:** De profielcode is een korte beschrijving van volledige certificaateigenschappen, zoals bijvoorbeeld P8. Zie de kolom Profielcode in de tabel in de sectie Certificaatprofielen voor een lijst met profielcodes die aan elk bestandstype zijn gekoppeld.
 
-**Serienummer:** Aan elk door Adobe afgegeven certificaat wordt een serienummer toegekend, bijvoorbeeld 0002054. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
+**Serienummer:** Aan elk Adobe afgegeven certificaat wordt een serienummer toegekend, bijvoorbeeld 0002054. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
 
 ## Certificaatprofielen {#certificate-profiles}
 
@@ -78,7 +74,7 @@ In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegen
   </tr>
   <tr>
    <td><p>P4</p></td>
-   <td><p>Acrobat Reader DC-extensies, intern Adobe gebruiken</p></td>
+   <td><p>Acrobat Reader DC-extensies, intern gebruik van Adobe</p></td>
    <td><p>2 jaar</p></td>
    <td><p>Productie</p></td>
   </tr>
@@ -108,37 +104,37 @@ In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegen
   </tr>
   <tr>
    <td><p>I10</p></td>
-   <td><p>Forms; mogen door OEM's worden gebruikt</p></td>
+   <td><p>Forms; kan door OEM's worden gebruikt</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
-   <td><p>Forms; mogen door OEM's worden gebruikt</p></td>
+   <td><p>Forms; kan door OEM's worden gebruikt</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
-   <td><p>Alleen handtekening; mogen door OEM's worden gebruikt</p></td>
+   <td><p>Alleen handtekening; mag door OEM's worden gebruikt</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
-   <td><p>alleen offlineopmerkingen; mogen door OEM's worden gebruikt</p></td>
+   <td><p>Offline opmerkingen alleen; kan door OEM's worden gebruikt</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
-   <td><p>alleen opmerkingen; mogen door OEM's worden gebruikt</p></td>
+   <td><p>Alleen opmerkingen; kan door OEM's worden gebruikt</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
-   <td><p>volledige machtigingen; mogen door OEM's worden gebruikt</p></td>
+   <td><p>Volledige machtigingen; kunnen worden gebruikt door OEM's</p></td>
    <td><p>Max</p></td>
    <td><p>Productie en evaluatie</p></td>
   </tr>
@@ -149,9 +145,9 @@ In de volgende tabel worden de certificaatprofielen weergegeven die u kunt tegen
 
 De certificaten van de evaluatie worden uitgegeven aan klanten en ontwikkelaars zodat zij steekproeftoepassingen voor producten kunnen evalueren en ontwikkelen. De geldigheidsduur van deze certificaten ligt tussen 60 en 90 dagen. Zij verstrijken aan het einde van de tweede maand volgende op de uitgiftegegevens.
 
-De certificaten van de Integratie van de partner worden uitgegeven aan Adobe bedrijfspartners om softwareontwikkeling, integratie, prototyping, en demonstratie te steunen. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
+De certificaten van de Integratie van de partner worden uitgegeven aan Adobe partners om softwareontwikkeling, integratie, prototyping, en demonstratie te steunen. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
 
-Adobe De certificaten van het Intern Gebruik worden gebruikt binnen Adobe om softwareontwikkeling, integratie, prototyping en demonstratie te steunen. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
+Adobe-certificaten voor intern gebruik worden binnen de Adobe gebruikt ter ondersteuning van softwareontwikkeling, -integratie, -prototypen en -demonstratie. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
 
 Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig gedurende de maximale periode die is toegestaan door de certificeringsinstantie (CA), weergegeven als *Max* in de tabel Certificaatprofielen.
 
@@ -193,7 +189,7 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
   </tr>
   <tr>
    <td><p>Ondertekenen</p></td>
-   <td><p>U kunt PDF-documenten digitaal ondertekenen en opslaan en digitale handtekeningen wissen.</p></td>
+   <td><p>U kunt PDF-documenten digitaal ondertekenen en opslaan, en digitale handtekeningen wissen.</p></td>
   </tr>
   <tr>
    <td><p>AnnotModify</p></td>
@@ -224,4 +220,4 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
 
 >[!NOTE]
 >
->Gebruiksrechten voor Acrobat Reader DC-extensies kunnen alleen in licentie worden gegeven door Adobe in bepaalde combinaties die samenwerken. Het is niet mogelijk om deze mogelijkheden onafhankelijk te verlenen. Neem voor informatie over de beschikbare combinaties van gebruiksrechten contact op met een accountvertegenwoordiger voor AEM formulieren.
+>Gebruiksrechten voor Acrobat Reader DC-extensies kunnen alleen in bepaalde combinaties die samenwerken in licentie worden gegeven door Adobe. Het is niet mogelijk om deze mogelijkheden onafhankelijk te verlenen. Neem voor informatie over de beschikbare combinaties van gebruiksrechten contact op met een accountvertegenwoordiger voor AEM formulieren.

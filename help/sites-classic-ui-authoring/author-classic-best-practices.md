@@ -1,23 +1,19 @@
 ---
-title: Best practices voor
-seo-title: Best Practices
+title: Aanbevolen procedures
 description: De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
-seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
-uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
-# Best practices voor{#best-practices}
+# Aanbevolen procedures{#best-practices}
 
 De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -33,7 +29,7 @@ Voor beste praktijken bij het beheren, het opstellen en het handhaven, of het on
 * [Aanbevolen werkwijzen ontwikkelen](/help/sites-developing/best-practices.md)
 * [Tips en trucs implementeren](/help/sites-deploying/best-practices.md)
 
-Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
+In de volgende tabellen worden specifieke documenten beschreven en aan deze documenten gekoppeld.
 
 ## Assets {#assets}
 
@@ -48,17 +44,17 @@ De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Med
   </tr>
   <tr>
    <td>Videocodering</td>
-   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Aanbevolen werkwijzen voor codering</a></td>
+   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best practices voor codering</a></td>
    <td>Beschrijft beste praktijken uiteinden rond het coderen van bronvideodossiers.</td>
   </tr>
   <tr>
    <td>Dynamic Imaging</td>
-   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Aanbevolen werkwijzen voor Dynamic Imaging</a></td>
+   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Aanbevolen werkwijzen voor Dynamics Imaging</a></td>
    <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de functionaliteit van Dynamic Media gebruikt of met Dynamic Media Classic integreert. </p> </td>
   </tr>
   <tr>
    <td>Meertalige activa</td>
-   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Beste werkwijzen voor vertaling</a></td>
+   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Aanbevolen werkwijzen voor vertaling</a></td>
    <td>Beschrijft beste praktijken rond efficiënt het vertalen van AEM activa.</td>
   </tr>
  </tbody>

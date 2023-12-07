@@ -1,17 +1,15 @@
 ---
 title: Pagina-eigenschappen bewerken
 description: De eigenschappen van een pagina kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina's kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is op de juiste wijze beschikbaar.
-uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -144,9 +142,9 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
      Upload een afbeelding die u als miniatuur wilt gebruiken.
 
-### Cloud Services {#cloud-services}
+### Cloud Servicen {#cloud-services}
 
-* **Cloud Services**
+* **Cloud Servicen**
 
   Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
 

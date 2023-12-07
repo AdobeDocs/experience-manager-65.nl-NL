@@ -1,25 +1,21 @@
 ---
 title: Een adaptief formulier maken met behulp van een set adaptieve formulieren
-seo-title: Create an adaptive form using a set of adaptive forms
 description: Met AEM Forms kunt u adaptieve formulieren samenvoegen tot één groot adaptief formulier en de functies ervan begrijpen.
-seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
-uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier maken met behulp van een set adaptieve formulieren{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -103,7 +99,7 @@ Als u een ander formulier invoegt waarmee uw klanten huisadres kunnen opgeven, k
 
 Als u dezelfde subhoofdnaam wilt behouden als de hoofdmap van het schema ( `Address`in dit voorbeeld), gebruik geïndexeerde bindrefs.
 
-Bijvoorbeeld, pas bindrefs toe `/application/address[1]` of `/address[1]` en `/application/address[2]` of `/address[2]`. De XML van het formulier is:
+Bijvoorbeeld bindrefs toepassen `/application/address[1]` of `/address[1]` en `/application/address[2]` of `/address[2]`. De XML van het formulier is:
 
 ```xml
 <afData>

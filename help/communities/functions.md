@@ -1,20 +1,16 @@
 ---
 title: Communautaire functies
-seo-title: Community Functions
 description: Leer hoe u toegang krijgt tot de Community Function Console
-seo-description: Learn how to access the Community Functions console
-uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
@@ -33,7 +29,7 @@ Nadat een communitysite is gemaakt, kan inhoud aan de resulterende pagina&#39;s 
 
 Om de console van communautaire functies in het auteursmilieu te bereiken:
 
-* Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
+* Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
 
 ![communautaire functies](assets/community-functions.png)
 

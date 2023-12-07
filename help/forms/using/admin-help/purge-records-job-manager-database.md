@@ -1,18 +1,14 @@
 ---
 title: Records uit de taakbeheerdatabase wissen
-seo-title: Purge records from the Job Manager database
 description: Grote procesgegevens kunnen resulteren in lagere AEM formulierprestaties. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
-seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
-uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde reco
 
 **De pagina Job Purge Scheduler openen**
 
-1. Klik in de beheerconsole op Health Monitor in de rechterbovenhoek van de pagina.
+1. Klik in de beheerconsole op Health Monitor rechtsboven op de pagina.
 1. Klik op het tabblad Planfunctie voor taakverwijdering.
 
 De informatie over om het even welke momenteel geplande zuiveringen wordt getoond in de doos van de Informatie van de Planner van de Woorden van de Weg.

@@ -1,20 +1,16 @@
 ---
 title: Richtlijnen voor prestaties
-seo-title: Performance Guidelines
 description: Dit artikel bevat algemene richtlijnen voor het optimaliseren van de prestaties van uw AEM-implementatie.
-seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2914'
-ht-degree: 1%
+source-wordcount: '2935'
+ht-degree: 0%
 
 ---
 
@@ -144,7 +140,7 @@ Hieronder ziet u de implementatieopties die beschikbaar zijn voor AEM (schuiven 
    <td><p>Activering</p> </td>
   </tr>
   <tr>
-   <td><p> Dynamic Media </p> </td>
+   <td><p>Dynamic Media</p> </td>
    <td><p>JSRP</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -584,7 +580,7 @@ Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moet
   <tr>
    <td>DocumentNodeStoreService</td>
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
-   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
+   <td><p>2048</p> <p>(25)</p> <p>20</p> <p>30 (5)</p> <p>10</p> <p>4</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
    <td><p>De standaardgrootte van de cache is ingesteld op 256 MB.</p> <p>Heeft invloed op de tijd die nodig is om cachevalidatie uit te voeren.</p> </td>
   </tr>
   <tr>

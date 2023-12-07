@@ -1,17 +1,13 @@
 ---
-title: Een PDF-document dempen met behulp van de webservice-API
-seo-title: Disassemble a PDF document usingthe web service API
+title: Een PDF-document dempen met de API voor webservices
 description: Een PDF-document dempen met de API voor vergaderingsservice
-seo-description: Disassemble a PDF document using the Assembler Service API
-uuid: d6283dc5-e333-49d0-abde-1d390662f4fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/programmatically_disassembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 role: Developer
 exl-id: de2f90ad-5dea-40a0-8c6d-d6b08228310d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
@@ -35,7 +31,7 @@ U kunt een PDF-document desassembleren met de API (webservice) van de Assembler-
 1. Maak een PDF Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -79,13 +75,13 @@ U kunt een PDF-document desassembleren met de API (webservice) van de Assembler-
    * De `MyMapOf_xsd_string_To_xsd_anyType` object dat het te demonteren PDF-document bevat
    * An `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
 
-   De `invokeDDX` methode retourneert een `AssemblerResult` object dat de taakresultaten en eventuele uitzonderingen bevat die zijn opgetreden.
+   De `invokeDDX` methode retourneert een `AssemblerResult` -object dat de taakresultaten en eventuele uitzonderingen bevat die zijn opgetreden.
 
 1. Sla de gedemonteerde PDF-documenten op.
 
    Voer de volgende handelingen uit om de nieuwe PDF-documenten te verkrijgen:
 
-   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de gedemonteerde PDF-documenten bevat.
+   * Toegang krijgen tot de `AssemblerResult` object `documents` veld, dat een `Map` -object dat de gedemonteerde PDF-documenten bevat.
    * Doorlopen `Map` om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` een `BLOB`.
    * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 

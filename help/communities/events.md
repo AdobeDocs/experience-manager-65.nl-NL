@@ -1,19 +1,15 @@
 ---
 title: OSGi Events for Communities Components
-seo-title: OSGi Events for Communities Components
 description: OSGi-gebeurtenissen worden verzonden die asynchrone listeners kunnen activeren
-seo-description: OSGi events are sent that can trigger asynchronous listeners
-uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 exl-id: 8049d797-e758-44c2-a89b-51d2b2fca8dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 1%
+source-wordcount: '592'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +31,7 @@ SocialEvent `topic`= com/adobe/cq/social/agenda
 | **Verb** | **Beschrijving** |
 |---|---|
 | POST | Lid maakt een kalendergebeurtenis |
-| TOEVOEGEN | Opmerkingen van de lidstaten over een kalendergebeurtenis |
+| ADD | Opmerkingen van de lidstaten over een kalendergebeurtenis |
 | BIJWERKEN | De agendagebeurtenis of de opmerking van het lid wordt bewerkt |
 | DELETE | De agendagebeurtenis of de opmerking van het lid wordt verwijderd |
 
@@ -45,7 +41,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | **Verb** | **Beschrijving** |
 |---|---|
 | POST | Lid maakt een opmerking |
-| TOEVOEGEN | Antwoorden van de lidstaten op opmerkingen |
+| ADD | Antwoorden van de lidstaten op opmerkingen |
 | BIJWERKEN | Opmerking van lid wordt bewerkt |
 | DELETE | Opmerking van lid wordt verwijderd |
 
@@ -65,9 +61,9 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | **Verb** | **Beschrijving** |
 |---|---|
 | POST | Lid maakt het forum |
-| TOEVOEGEN | Antwoorden van de lidstaten op het forum |
+| ADD | Antwoorden van de lidstaten op het forum |
 | BIJWERKEN | Het onderwerp of antwoord van het forum van het lid wordt bewerkt |
-| DELETE | Het onderwerp of antwoord van het lid in het forum wordt verwijderd |
+| DELETE | Het onderwerp of de reactie van het lid in het forum wordt geschrapt |
 
 [Journal-component](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journaal
@@ -75,7 +71,7 @@ SocialEvent `topic`= com/adobe/cq/social/journaal
 | **Verb** | **Beschrijving** |
 |---|---|
 | POST | Lid maakt een blogartikel |
-| TOEVOEGEN | Opmerkingen van leden over blogartikelen |
+| ADD | Opmerkingen van leden over blogartikelen |
 | BIJWERKEN | Blogartikel of commentaar van lid wordt bewerkt |
 | DELETE | Blogartikel of commentaar van lid wordt verwijderd |
 
@@ -85,7 +81,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | **Verb** | **Beschrijving** |
 |---|---|
 | POST | Lid maakt een QnA-vraag |
-| TOEVOEGEN | Lid maakt een antwoord op vraag |
+| ADD | Lid maakt een antwoord op vraag |
 | BIJWERKEN | Vraag of antwoord van lid wordt bewerkt |
 | SELECT | Antwoord van lid is geselecteerd |
 | SELECTEREN OPHEFFEN | Het antwoord van het lid is niet geselecteerd |
@@ -122,7 +118,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 | **Verb** | **Beschrijving** |
 |---|---|
 | DENKEN | De inhoud van het lid wordt geweigerd |
-| VLAG ALS ONJUIST | De inhoud van het lid is gemarkeerd |
+| VLAG ALS ONJUIST | Inhoud van lid is gemarkeerd |
 | ONGESCHIKTE LAG ALS ONJUIST | Inhoud van lid is niet gemarkeerd |
 | ACCEPTEREN | De inhoud van het lid wordt goedgekeurd door moderator |
 | SLUITEN | Lid sluit commentaar op bewerkingen en reacties |

@@ -1,18 +1,14 @@
 ---
 title: De welkomstconsole aanpassen (klassieke gebruikersinterface)
-seo-title: Customizing the Welcome Console (Classic UI)
 description: De welkomstconsole biedt een lijst met koppelingen naar de verschillende consoles en functies in AEM
-seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
-uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -64,7 +60,7 @@ Bijvoorbeeld:
 
 * De toegang beperken tot **Gereedschappen**, leestoegang verwijderen uit
 
-   `/libs/wcm/core/content/misc`
+  `/libs/wcm/core/content/misc`
 
 Zie de [Beveiligingssectie](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
 
@@ -85,7 +81,7 @@ Er zijn drie secties (die iets uit elkaar liggen) die standaard worden opgegeven
    <td> </td>
   </tr>
   <tr>
-   <td> Cloud Services</td>
+   <td> Cloud Servicen</td>
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>
@@ -153,7 +149,7 @@ Er zijn drie secties (die iets uit elkaar liggen) die standaard worden opgegeven
    <td><code>/libs/cq/core/content/welcome/features/config</code></td>
   </tr>
   <tr>
-   <td> Status van webconsole<br /> </td>
+   <td> Status van webconsole instellen<br /> </td>
    <td><code>/libs/cq/core/content/welcome/features/statusdump</code></td>
   </tr>
  </tbody>
@@ -165,25 +161,25 @@ Het is mogelijk om een koppeling te verbergen voor specifieke gebruikers of groe
 
 * Bronnen - toegang verwijderen tot:
 
-   `/libs/cq/core/content/welcome/resources/<link-target>`
+  `/libs/cq/core/content/welcome/resources/<link-target>`
 
 * Docs - toegang verwijderen tot:
 
-   `/libs/cq/core/content/welcome/docs/<link-target>`
+  `/libs/cq/core/content/welcome/docs/<link-target>`
 
 * Functies - toegang verwijderen tot:
 
-   `/libs/cq/core/content/welcome/features/<link-target>`
+  `/libs/cq/core/content/welcome/features/<link-target>`
 
 Bijvoorbeeld:
 
 * De koppeling verwijderen naar **Rapporten**, leestoegang verwijderen uit
 
-   `/libs/cq/core/content/welcome/resources/reports`
+  `/libs/cq/core/content/welcome/resources/reports`
 
 * De koppeling verwijderen naar **Pakketten**, leestoegang verwijderen uit
 
-   `/libs/cq/core/content/welcome/features/packages`
+  `/libs/cq/core/content/welcome/features/packages`
 
 Zie de [Beveiligingssectie](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
 
@@ -199,7 +195,6 @@ In `/libs/cq/core/components/welcome/welcome.jsp` gebruik is gemaakt van [Consol
 >
 >* `select * from cq:Console`
 >
-
 
 Wanneer een gebruiker of groep geen leesmachtigingen heeft voor een knooppunt met de mix `cq:Console`, wordt dat knooppunt niet opgehaald door de `ConsoleUtil` zoeken, zodat het niet vermeld op de console is.
 

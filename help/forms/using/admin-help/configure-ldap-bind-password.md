@@ -1,23 +1,19 @@
 ---
-title: Het wachtwoord voor LDAP-binding configureren
-seo-title: Configure the LDAP bind password
+title: Het LDAP-wachtwoord voor binden configureren
 description: Leer hoe te om het bind wachtwoordgebied te vormen alvorens u het configuratiedossier in een ander systeem invoert.
-seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
-uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-# Het wachtwoord voor LDAP-binding configureren{#configure-the-ldap-bind-password}
+# Het LDAP-wachtwoord voor binden configureren{#configure-the-ldap-bind-password}
 
 Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het uitgevoerde configuratiedossier (config.xml) niet wordt gevormd. Alvorens u het configuratiedossier in een ander systeem invoert, zorg ervoor dat u dit wachtwoord vormt. Dit wachtwoord negeert een bestaand wachtwoord dat in het gegevensbestand wordt opgeslagen. Een null-wachtwoord negeert een bestaande wachtwoordwaarde die niet gelijk is aan null.
 

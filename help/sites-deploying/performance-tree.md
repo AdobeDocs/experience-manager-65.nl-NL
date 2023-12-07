@@ -1,17 +1,14 @@
 ---
 title: Prestatieschema
-seo-title: Performance Tree
 description: Leer over de stappen die moeten nemen om prestatieskwesties in AEM problemen op te lossen.
-uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1088'
 ht-degree: 0%
 
 ---
@@ -42,7 +39,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
 
 ![chlimage_1-105](assets/chlimage_1-105.png)
 
-### Afdeling 4 {#section-3}
+### Sectie 4 {#section-3}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -77,7 +74,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 4</strong></td>
    <td>Zijn verzoeken afkomstig van de Dispatcher?</td>
-   <td><p>Om te zien of zijn de verzoeken behoorlijk in het voorgeheugen ondergebracht, controleer <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Foutopsporingsdocumentatie voor Dispatcher</a>.<br /> </p> </td>
+   <td><p>Om te zien of zijn de verzoeken behoorlijk in het voorgeheugen ondergebracht, controleer <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Debugging van de afzender documentatie</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 5</strong></td>
@@ -97,7 +94,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 8</strong></td>
    <td>Is de traagheid reproduceerbaar met een lokale instantie?</td>
-   <td><br /> <p>Gebruiken <a href="/help/sites-developing/tough-day.md">Dag</a> om "echte" omstandigheden van de productie-instanties te repliceren. Als dit scenario voor de ruimte van uw ontwikkeling niet realistisch is, zorg ervoor om de productieinstantie (of identieke het opvoeren) in een verschillende netwerkcontext te testen.<br /> </p> </td>
+   <td><br /> <p>Gebruiken <a href="/help/sites-developing/tough-day.md">Grove dag</a> om "echte" omstandigheden van de productie-instanties te repliceren. Als dit scenario voor de ruimte van uw ontwikkeling niet realistisch is, zorg ervoor om de productieinstantie (of identieke het opvoeren) in een verschillende netwerkcontext te testen.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 9</strong></td>
@@ -107,7 +104,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stappen 10 en 29</strong></td>
    <td>Onderzoek netwerklaag</td>
-   <td><p>Onderzoek de netwerklaag voor verzadiging en latentiekwesties.</p> <p>Voor de auteurslaag, adviseert men dat de latentie 100 milliseconden niet overschrijdt.</p> <p>Voor meer informatie over tips voor het optimaliseren van prestaties raadpleegt u <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">deze pagina</a>.</p> </td>
+   <td><p>Onderzoek de netwerklaag voor verzadiging en latentiekwesties.</p> <p>Voor de auteurslaag, adviseert men dat de latentie 100 milliseconden niet overschrijdt.</p> <p>Zie voor meer informatie over tips voor het optimaliseren van prestaties <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">deze pagina</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Stap 11</strong></td>
@@ -242,7 +239,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
     <ol>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Algemene configuratie van verzender</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">De Dispatcher Cache configureren</a></li>
-    </ol> <p>Hoe te om geheim voorgeheugenverhouding te verbeteren; aanvragen in cache kunnen plaatsen (best practices voor Dispatcher)</p> <p>Overweeg ook de onderstaande instellingen om uw cacheconfiguraties te optimaliseren<br /> </p>
+    </ol> <p>Hoe te om geheim voorgeheugenverhouding te verbeteren; maak verzoeken geheim voorgeheugen-geschikt (de beste praktijken van de Verzender)</p> <p>Overweeg ook de onderstaande instellingen om uw cacheconfiguraties te optimaliseren<br /> </p>
     <ol>
      <li>Een no-cache-regel instellen voor een HTTP-aanvraag die geen GET is</li>
      <li>Vraagtekenreeksen configureren om niet cacheable te zijn</li>
@@ -287,7 +284,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stappen 45<br /> en 47</strong><br /> </td>
    <td>HTTP/2 gebruiken</td>
-   <td>Zie de Gem-sessie voor de stappen 37,38 en 39. Ook uitchecken <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">dit</a> forumbericht over HTTP/2-ondersteuning.<br /> </td>
+   <td>Zie de Gem-sessie voor de stappen 37,38 en 39. Ook, uitchecken <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">dit</a> forumbericht over HTTP/2-ondersteuning.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 49</strong></td>

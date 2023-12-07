@@ -1,19 +1,15 @@
 ---
 title: MSRP - MongoDB Storage Resource Provider
-seo-title: MSRP - MongoDB Storage Resource Provider
 description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -41,7 +37,7 @@ Zie ook [Kenmerken van SRP-opties](working-with-srp.md#characteristics-of-srp-op
    * Solr vereist Java 1.7 of hoger
    * Er is geen service nodig
    * Keuze van uitvoeringsmodi:
-      * Standalone modus
+      * Stand-alone modus
       * [SolrCloud-modus](solr.md#solrcloud-mode) (aanbevolen voor productieomgevingen)
    * Keuze van meertalig zoeken (MLS):
       * [Standaard MLS installeren](solr.md#installing-standard-mls)
@@ -59,7 +55,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
 ![msrp](assets/msrp.png)
 
-* Selecteer **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
+* Selecteren **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
 * **[!UICONTROL mongoDB Configuration]**
 
    * **[!UICONTROL mongoDB URI]**
@@ -91,14 +87,14 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
       * **[!UICONTROL Solr URL]**
 De URL die wordt gebruikt om te communiceren met Solr in zelfstandige modus.
-Leeg laten als deze wordt uitgevoerd in de SolrCloud-modus.
+Leeg laten als u de SolrCloud-modus gebruikt.
         *Standaard*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr Collection]**
 De naam van de Solr-verzameling.
-        *Standaard*: verzameling1
+        *Standaard*: collection1
 
-* Selecteer **[!UICONTROL Submit]**
+* Selecteren **[!UICONTROL Submit]**
 
 >[!NOTE]
 >
@@ -108,7 +104,7 @@ De naam van de Solr-verzameling.
 
 Voor het productiemilieu, wordt het sterk geadviseerd om een replicaset, een cluster van servers te installeren MongoDB die primaire-secundaire replicatie en geautomatiseerde failover uitvoert.
 
-Ga voor meer informatie over replicasets naar MongoDB&#39;s [Replicatie](https://docs.mongodb.org/manual/replication/) documentatie.
+Ga voor meer informatie over replicasets naar MongoDB [Replicatie](https://docs.mongodb.org/manual/replication/) documentatie.
 
 Als u met replicasets wilt werken en wilt leren hoe u verbindingen tussen toepassingen en MongoDB-instanties kunt definiëren, gaat u naar MongoDB [URI-indeling verbindingstekenreeks](https://docs.mongodb.org/manual/reference/connection-string/) documentatie.
 
@@ -149,10 +145,10 @@ MSRP moet als gemeenschappelijke opslag op alle auteur worden geïdentificeerd e
 Meld u aan bij de auteur en voer de volgende stappen uit om de identieke configuratie beschikbaar te maken in de publicatieomgeving:
 
 * Navigeren van hoofdmenu naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
-* Selecteer **[!UICONTROL Activate Tree]**
+* Selecteren **[!UICONTROL Activate Tree]**
 * **[!UICONTROL Start Path]**:
    * Bladeren naar `/etc/socialconfig/srpc/`
-* Selecteer **[!UICONTROL Activate]**
+* Selecteren **[!UICONTROL Activate]**
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
@@ -165,7 +161,7 @@ Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*,
 
 Er is een eindpunt van HTTP voor het opnieuw indexeren van Solr voor MSRP wanneer het installeren van nieuwe configuratiedossiers of het herstellen van een beschadigde index van Solr.
 
-Met dit gereedschap is MongoDB de bron van *waarheid* voor MSRP; Er hoeven alleen back-ups van MongoDB te worden gemaakt.
+Met dit gereedschap is MongoDB de bron van *waarheid* voor MSRP; de steunen hoeven slechts van MongoDB worden genomen.
 
 De volledige UGC-structuur kan opnieuw worden gedecodeerd, of alleen een specifieke substructuur, zoals opgegeven door de parameter *path *data.
 
@@ -220,7 +216,7 @@ Om MSRP voor een demonstratie of ontwikkelomgeving te plaatsen, zie [MongoDB voo
 
 ### UGC niet zichtbaar in MongoDB {#ugc-not-visible-in-mongodb}
 
-Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Standaard is de leverancier van de opslagbron JSRP.
+Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Standaard is de opslagbronprovider JSRP.
 
 Ga bij alle auteurs en publiceer AEM [Opslagconfiguratieconsole](srp-config.md) of controleer de AEM opslagplaats:
 
@@ -253,14 +249,14 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-Om de fout op te lossen, wanneer het volgen van de instructies voor [Standaard MLS installeren](solr.md#installing-standard-mls), zorgt ervoor dat:
+Als u de fout wilt oplossen, moet u de instructies voor [Standaard MLS installeren](solr.md#installing-standard-mls), zorgt ervoor dat:
 
 * De XML-configuratiebestanden zijn naar de juiste Solr-locatie gekopieerd.
 * Solr werd opnieuw begonnen nadat de nieuwe configuratiedossiers bestaande degenen vervingen.
 
 ### Beveiligde verbinding met MongoDB mislukt {#secure-connection-to-mongodb-fails}
 
-Als een poging om een beveiligde verbinding te maken met de MongoDB-server mislukt als gevolg van een ontbrekende klassedefinitie, moet de MongoDB-stuurprogrammabundel worden bijgewerkt. `mongo-java-driver`, beschikbaar bij de openbare databank.
+Als een poging om een beveiligde verbinding te maken met de MongoDB-server mislukt als gevolg van een ontbrekende klassedefinitie, moet de MongoDB-stuurprogrammabundel worden bijgewerkt. `mongo-java-driver`, beschikbaar bij de openbare gegevensopslagplaats.
 
 1. Download het stuurprogramma van [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versie 2.13.2 of hoger).
 1. Kopieer de bundel naar de map &quot;crx-quickstart/install&quot; voor een AEM.

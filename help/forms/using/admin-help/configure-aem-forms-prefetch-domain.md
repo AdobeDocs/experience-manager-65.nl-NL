@@ -1,18 +1,14 @@
 ---
 title: Formulieren configureren AEM Prefetchdomain-informatie
-seo-title: Configure AEM forms to prefetchdomain information
 description: Vorm AEM vormen om domeininformatie vooraf in te stellen als u een langzamere reactietijd wegens diep genestelde groepen ervaart of als u een lid van vele groepen bent.
-seo-description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups.
-uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen (bijvoorbeeld, 500 of meer) behoren of als de groepen diep worden genesteld (bijvoorbeeld, 30 niveaus). Als dit probleem optreedt, kunt u AEM formulieren zo configureren dat de gegevens in bepaalde domeinen vooraf worden opgehaald.
 
 1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Configuration > Import And Export Configuration Files]**.
-1. Als u de huidige configuratie-instelling wilt exporteren naar een bestand, klikt u op **[!UICONTROL Export]** en sla het configuratiebestand op een andere locatie op.
+1. Klik op **[!UICONTROL Export]** en sla het configuratiebestand op een andere locatie op.
 1. Voeg het volgende knooppunt toe (vet gemarkeerd):
 
    ```xml

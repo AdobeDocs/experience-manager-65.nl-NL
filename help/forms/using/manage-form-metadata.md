@@ -1,19 +1,15 @@
 ---
 title: Metagegevens van formulieren beheren
-seo-title: Manage form metadata
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
-seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
-uuid: d982df6f-a256-4bad-868f-74fcd08350f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -255,7 +251,7 @@ AEM Forms stelt de metagegevensschema&#39;s van de ondersteunde formuliertypen i
 
 ### Navigeren door de editor voor het metagegevensschema {#navigate-the-metadata-schema-editor}
 
-1. Ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**.
+1. Navigeren naar **[!UICONTROL Tools > Assets > Metadata Schemas]**.
 
 1. Klikken **[!UICONTROL forms]** uit de weergegeven schema-formulieren.
 

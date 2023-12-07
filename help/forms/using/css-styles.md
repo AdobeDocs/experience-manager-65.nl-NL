@@ -1,17 +1,13 @@
 ---
 title: CSS-stijlen maken voor HTML5-formulieren
-seo-title: Creating CSS styles for HTML5 forms
 description: Leer hoe u de weergave van HTML5-formulieren wijzigt door de CSS-klasse te wijzigen die is gekoppeld aan het HTML-formulierelement.
-seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
-uuid: 43c689b4-243c-43de-a8be-1eef10d75295
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -49,8 +45,8 @@ Het veldelement bevat twee geneste elementen: widget en bijschrift.
 Het widgetelement bevat het interface-element voor interactie met gebruikers. De klasse heeft drie CSS-klassen:
 
 * **Widget**: Elke widget heeft deze klasse.
-* **name**: Alle widgets die bij AEM worden geleverd, bevatten de widgetnaamklasse. Voor aangepaste widgets biedt de widgetontwikkelaar de widgetnaamklasse.
-* **type**: Elke widget heeft een interface-element. Deze klasse definieert het type van het interface-element.
+* **name**: Alle widgets die bij AEM worden geleverd, bevatten de klasse Widget-naam. Voor aangepaste widgets biedt de widgetontwikkelaar de widgetnaamklasse.
+* **type**: Elke widget heeft een gebruikersinterface-element. Deze klasse definieert het type van het interface-element.
 
 ```xml
 <!--field with caption-->
@@ -69,7 +65,7 @@ Het widgetelement bevat het interface-element voor interactie met gebruikers. De
 </div>
 ```
 
-Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met de naam **subtype**. Een subtype geeft aan welk type veld het is, bijvoorbeeld NumericField, DateField, TextField. U kunt de subtypeklasse overschrijven om de opmaak van alle velden met tekst en subtype te wijzigen.
+Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met de naam **subtype**. Een subtype geeft aan welk type veld het is, bijvoorbeeld NumericField, DateField, TextField. U kunt de subtypeklasse overschrijven om de opmaak van alle velden van het type, subtype, te wijzigen.
 
 ## CSS-klassen voor verschillende componenten {#css-classes-for-different-components}
 
@@ -232,7 +228,7 @@ Met AEM Forms Designer kunt u statische tekenelementen, zoals tekst en afbeeldin
 | **Type tekenen** | **CSS-klasse** |
 |---|---|
 | Tekst | text |
-| Afbeelding | afbeelding |
+| Afbeelding | image |
 | Rechthoek | rechthoek |
 | Lijn | line |
 

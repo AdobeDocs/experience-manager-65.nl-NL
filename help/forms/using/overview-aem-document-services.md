@@ -1,18 +1,14 @@
 ---
 title: Overzicht van AEM Document Services
-seo-title: Overview of AEM Document Services
 description: AEM Document Services is een set OSGi Services voor het maken, samenstellen en beveiligen van PDF-documenten.
-seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
-uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -46,11 +42,11 @@ Als u de Output-service gebruikt om XML-gegevens samen te voegen met een formuli
 
 De volgende vier de dienstverrichtingen van de Output zijn beschikbaar voor gebruik:
 
-* **generatePDFOuput**: Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te genereren
-* **generatePrintedOutput**: Hiermee voegt u een formulierontwerp samen met formuliergegevens om een document te genereren dat naar een laser- of labelnetwerkprinter wordt verzonden
+* **generatePDFOuput**: Voegt een formulierontwerp samen met gegevens om een PDF-document te genereren
+* **generatePrintedOutput**: Voegt een formulierontwerp samen met formuliergegevens om een document te genereren dat naar een laser- of labelnetwerkprinter wordt verzonden
 
-* **generatePDFOutputBatch**: Hiermee voegt u meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch PDF-bestanden te genereren. Er is ook een mogelijkheid om één PDF te genereren door alle PDF te combineren
-* **generatePrintedOutputBatch**: Hiermee voegt u meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch afdrukdocumenten te genereren (PS, PCL, ZPL, DPL, IPL, TPCL). U kunt ook één afdrukdocument genereren.
+* **generatePDFOutputBatch**: Voegt meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch PDF-bestanden te genereren. Er is ook een mogelijkheid om één PDF te genereren door alle PDF te combineren
+* **generatePrintedOutputBatch**: Voegt meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch gedrukte documenten te genereren (PS, PCL, ZPL, DPL, IPL, TPCL). U kunt ook één afdrukdocument genereren.
 
 ## Assembler-service {#assembler-service}
 
@@ -71,11 +67,11 @@ In het DDX-document kunnen resultaatdocumenten met de volgende kenmerken worden 
 
 * PDF-document dat is samengesteld uit meerdere PDF-documenten
 * Meerdere PDF-documenten die zijn gesplitst van één PDF-document
-* PDF Portfolio die een zelfstandige gebruikersinterface en veelvoudige PDF en niet-PDF documenten omvat
+* PDF Portfolio dat een op zichzelf staand gebruikersinterface en veelvoudige PDF en niet-PDF documenten omvat
 * XDP-document dat is samengesteld uit meerdere XDP-documenten
 * XDP-document dat XML-fragmenten bevat die dynamisch in een XDP-document worden ingevoegd
 * PDF-document dat een XDP-document verpakt
-* XML-bestanden die de kenmerken van een PDF-document rapporteren. Tot de gerapporteerde kenmerken behoren tekst, opmerkingen, formuliergegevens, bestandsbijlagen, bestanden die worden gebruikt in PDF-Portfolio, bladwijzers en PDF-eigenschappen. PDF-eigenschappen zijn onder andere formuliereigenschappen, pagina-rotatie en documentauteur.
+* XML-bestanden die de kenmerken van een PDF-document rapporteren. Tot de gerapporteerde kenmerken behoren tekst, opmerkingen, formuliergegevens, bestandsbijlagen, bestanden die worden gebruikt in PDF-Portfolio&#39;s, bladwijzers en PDF-eigenschappen. PDF-eigenschappen zijn onder andere formuliereigenschappen, pagina-rotatie en documentauteur.
 
 U kunt DDX gebruiken om de documenten van PDF als deel van documentassemblage of demontage te verhogen. U kunt een willekeurige combinatie van de volgende effecten opgeven:
 
@@ -101,7 +97,7 @@ U kunt een eenvoudige invoerkaart gebruiken om de locaties van de bron en de res
 
 Met de Doc Assurance Service kunt u documenten versleutelen en ontsleutelen, de functionaliteit van Adobe Reader uitbreiden met extra gebruiksrechten en digitale handtekeningen toevoegen aan uw documenten. Uw gebruikers kunnen gemakkelijk met PDF forms en documenten in wisselwerking staan, terwijl uw organisatie veiligheid, archivering, en naleving verbetert.
 
-De dienst van de Verzekering van Doc bevat drie diensten: handtekening, versleuteling en reader-extensie.
+De Doc Assurance-service bevat drie services: handtekening, versleuteling en reader-extensie.
 
 ### Handtekeningenservice {#signature-service}
 

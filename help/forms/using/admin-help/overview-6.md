@@ -1,16 +1,12 @@
 ---
 title: Overzicht van het configureren van SSL
-seo-title: Overview of configuring SSL
 description: Leer over hoe te om veiligheid van mededeling te verbeteren door SSL te vormen.
-seo-description: Learn about how to enhance security of communication by configuring SSL.
-uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 exl-id: fbe1487e-c830-4be8-9841-6022e6a98ae7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -23,7 +19,7 @@ U kunt SSL-referenties (Secure Sockets Layer) maken en SSL op de toepassingsserv
 
 Als beveiligingsproduct vereist Rights Management de configuratie van SSL. Wanneer het vormen van SSL certificaten, zorg ervoor dat u slechts sleutels RSA gebruikt. SSL-certificaten met DSA-sleutels worden niet ondersteund.
 
-De verstrekte informatie is van toepassing op kant-en-klare, automatische en handmatige installaties. Het biedt een voorbeeld van een methode voor het vormen van SSL aan. U kunt andere methodes ook gebruiken die voor uw netwerk of organisatie geschikter zijn.
+De verstrekte informatie is van toepassing op kant-en-klare, automatische en handmatige installaties. Het biedt een voorbeeld van een methode om SSL te vormen. U kunt andere methodes ook gebruiken die voor uw netwerk of organisatie geschikter zijn.
 
 >[!NOTE]
 >

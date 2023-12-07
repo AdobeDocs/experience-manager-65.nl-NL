@@ -1,26 +1,24 @@
 ---
-title: Lanceringen maken
+title: Starten maken
 description: Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina.
-uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 14%
+source-wordcount: '368'
+ht-degree: 13%
 
 ---
 
-# Lanceringen maken{#creating-launches}
+# Starten maken{#creating-launches}
 
 Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina&#39;s voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina:
 
-* De titel wordt weergegeven in het dialoogvenster **Sidetrap**, van waaruit auteurs toegang hebben om aan hen te werken.
+* De titel wordt weergegeven in het dialoogvenster **Sidekick**, van waaruit auteurs toegang hebben om aan hen te werken.
 * De onderliggende pagina&#39;s van de bronpagina worden standaard in de opstart opgenomen. U kunt desgewenst alleen de bronpagina gebruiken.
 * Standaard, [Live kopie](/help/sites-administering/msm.md) werkt automatisch de startpagina&#39;s bij terwijl de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
 
@@ -36,9 +34,9 @@ De volgende procedure leidt tot een lancering.
 
    * **Titel starten**: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
    * **Bronpagina**: Het pad naar de pagina waarvoor de introductie moet worden gemaakt. Standaard worden alle onderliggende pagina&#39;s opgenomen.
-   * **Subpagina&#39;s uitsluiten**: Selecteer deze optie als u alleen de startpagina wilt starten en niet de onderliggende pagina&#39;s. Deze optie is standaard niet geselecteerd.
+   * **Subpagina&#39;s uitsluiten**: Selecteer deze optie als u alleen de startpagina en niet de onderliggende pagina&#39;s wilt starten. Deze optie is standaard niet geselecteerd.
    * **Synchronisatie behouden**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Dit wordt bereikt door de lancering van [live kopie](/help/sites-administering/msm.md).
-   * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Opstartdatum**: De datum en tijd waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** markering; zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-99](assets/chlimage_1-99a.png)
 

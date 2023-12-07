@@ -1,26 +1,22 @@
 ---
 title: Tags maken in een AEM toepassing
-seo-title: Building Tagging into an AEM Application
 description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
-seo-description: Programmatically work with tags or extending tags within a custom AEM application
-uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: 325af649564d93beedfc762a8f5beacec47b1641
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---
 
 # Tags maken in een AEM toepassing{#building-tagging-into-an-aem-application}
 
-Voor het programmatisch werken met tags of het uitbreiden van tags binnen een aangepaste AEM toepassing, wordt op deze pagina het gebruik van de
+Voor het programmatisch werken met tags of het uitbreiden van tags binnen een aangepaste AEM toepassing, wordt op deze pagina het gebruik van de optie
 
 * [Tags-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -43,7 +39,7 @@ De uitvoering van de [coderingskader](/help/sites-developing/framework.md) in AE
 
 ### Een op JCR gebaseerde tagbeheer ophalen {#getting-a-jcr-based-tagmanager}
 
-U moet een JCR hebben om een instantie TagManager op te halen `Session` en om `getTagManager(Session)`:
+U moet een JCR hebben om een instantie TagManager op te halen `Session` en te bellen `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -142,7 +138,7 @@ De opschoonfunctie voor tags wordt standaard eenmaal per dag uitgevoerd. U kunt 
 http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector
 ```
 
-## Zoeken en taglijst {#tag-search-and-tag-listing}
+## Zoeken naar tags en taglijst {#tag-search-and-tag-listing}
 
 De zoekopdracht naar tags en het tagoverzicht werkt als volgt:
 
@@ -163,7 +159,7 @@ De server-side API heeft gelokaliseerd `title`-gerelateerde methoden:
    * getLocalizedTitle(Locale locale)
    * getLocalizedTitlePaths()
    * getLocalizedTitles()
-   * getTitle(landinstelling van landinstelling)
+   * getTitle(landinstelling)
    * getTitlePath(landinstelling)
 
 * [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
@@ -182,7 +178,7 @@ In AEM kan de taal worden verkregen via de paginataal of via de taal van de gebr
 
    * `slingRequest.getLocale()`
 
-De `currentPage` en `slingRequest` zijn beschikbaar in een JSP via [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) tag.
+De `currentPage` en `slingRequest` zijn beschikbaar in een JSP via [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) -tag.
 
 Bij het labelen is lokalisatie afhankelijk van de context als tag `titles`kan worden weergegeven in de paginataal, in de gebruikerstaal of in een andere taal.
 
@@ -198,7 +194,7 @@ De nieuwe taal (Fins) is nu beschikbaar in het tagdialoogvenster van de pagina-e
 
 >[!NOTE]
 >
->De nieuwe taal moet een van de AEM erkende talen zijn. Dit wil zeggen dat het bestand beschikbaar moet zijn als een van de onderstaande knooppunten `/libs/wcm/core/resources/languages`.
+>De nieuwe taal moet een van de AEM erkende talen zijn. Dit wil zeggen dat het bestand beschikbaar moet zijn als een hieronder opgegeven knooppunt `/libs/wcm/core/resources/languages`.
 
 >[!CAUTION]
 >

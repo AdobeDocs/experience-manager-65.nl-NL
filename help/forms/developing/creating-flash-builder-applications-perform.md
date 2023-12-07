@@ -1,19 +1,15 @@
 ---
 title: Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren
-seo-title: Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens
 description: Creeer een cliënttoepassing gebruikend Flash Builder die enig-sign op (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Verifieer een gebruiker voor een verrichting eens en gebruik die authentificatie om veelvoudige verrichtingen van AEM Forms uit te voeren.
-seo-description: Create a client application using Flash Builder that performs single-sign on (SSO) authentication using HTTP tokens. Authenticate a user for an operation once and use that authentication to perform multiple AEM Forms operations.
-uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1783'
 ht-degree: 0%
 
 ---
@@ -71,7 +67,7 @@ De veiligheidsserver die bij wordt gevormd `/um/login` reageert met de opdracht 
 
 **Aanmeldingsproces**
 
-Wanneer een clienttoepassing wordt gestart, kunt u een verzoek van een POST indienen bij de `/um/login` beveiligingsservlet. Bijvoorbeeld, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Wanneer het verzoek de veiligheidsserver van de Manager van de Gebruiker bereikt, voert het de volgende stappen uit:
+Wanneer een clienttoepassing wordt gestart, kunt u een verzoek van een POST indienen bij de `/um/login` beveiligingsservlet. Bijvoorbeeld: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Wanneer het verzoek de veiligheidsserver van de Manager van de Gebruiker bereikt, voert het de volgende stappen uit:
 
 1. Er wordt gezocht naar een cookie met de naam `lcAuthToken`. Als de gebruiker zich al heeft aangemeld bij een andere Forms-toepassing, is deze cookie aanwezig. Als het cookie wordt gevonden, wordt de inhoud gevalideerd.
 1. Als op Kopbal gebaseerde SSO wordt toegelaten, dan zoekt servlet gevormde kopballen om de identiteit van de gebruiker te bepalen.

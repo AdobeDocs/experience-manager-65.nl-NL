@@ -1,17 +1,15 @@
 ---
 title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager-gereedheid
 description: Meer informatie over Adobe Experience Manager-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations. Het omvat de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en hoe te om te voldoen wanneer het uitvoeren van een nieuw AEM project.
-uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---

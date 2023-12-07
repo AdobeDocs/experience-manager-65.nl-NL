@@ -1,18 +1,14 @@
 ---
 title: Tekenreeksen uitnemen voor vertaling
-seo-title: Extracting Strings for Translating
 description: Met de Xgettext-maven-plug-in kunt u tekenreeksen uit uw broncode extraheren die moeten worden vertaald
-seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
-uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -55,7 +51,7 @@ Configureer hoe de functie voor het insteekmodule xgettext-maven tekenreeksen vo
 
 ### De te parseren bestanden identificeren {#identifying-the-files-to-parse}
 
-Het /filter gedeelte van het i18n.any-bestand identificeert de bestanden die met het gereedschap Xgettext-maven-plugin worden geparseerd. Voeg verschillende include- en uitsluitingsregels toe die respectievelijk geparseerde en genegeerde bestanden identificeren. Neem alle bestanden op en sluit de bestanden uit die u niet wilt parseren. Gewoonlijk sluit u bestandstypen uit die geen bijdrage leveren aan de interface, of bestanden die wel UI definiëren maar niet worden omgezet. De regels include en exclude hebben de volgende indeling:
+Het /filter gedeelte van het i18n.any-bestand identificeert de bestanden die met het gereedschap Xgettext-maven-plugin worden geparseerd. Voeg verschillende include- en uitsluitingsregels toe die respectievelijk geparseerde en genegeerde bestanden identificeren. Neem alle bestanden op en sluit de bestanden uit die u niet wilt parseren. Gewoonlijk sluit u bestandstypen uit die geen bijdrage leveren aan de gebruikersinterface, of bestanden die wel UI definiëren maar niet worden omgezet. De regels include en exclude hebben de volgende indeling:
 
 ```
 { /include "pattern" }
@@ -70,7 +66,7 @@ Het patroongedeelte van een regel wordt gebruikt om de namen van de bestanden di
 | &amp;asteren; | Geeft een normaal bestand op het bestandssysteem aan. |
 | none | Geen voorvoegsel of patroon dat begint met een map of bestandsnaam, geeft een normaal bestand op het bestandssysteem aan. |
 
-Bij gebruik in een patroon geeft /-teken een submap en de &amp;laatste aan; alle tekens. In de volgende tabel staan verschillende voorbeeldregels.
+Bij gebruik in een patroon geeft /-teken een submap en de &amp;laatste aan;-teken komt overeen met alles. In de volgende tabel staan verschillende voorbeeldregels.
 
 <table>
  <tbody>
@@ -107,7 +103,7 @@ geen POM:
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-Met POM: Dit toevoegen aan POM:
+Met POM: dit toevoegen aan POM:
 
 ```xml
 <build>
@@ -136,9 +132,9 @@ mvn xgettext:extract
 ### Uitvoerbestanden {#output-files}
 
 * `raw.xliff`: geëxtraheerde tekenreeksen
-* `warn.log`: eventuele waarschuwingen, indien `CQ.I18n.getMessage()` API wordt onjuist gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
+* `warn.log`: eventuele waarschuwingen, indien van toepassing `CQ.I18n.getMessage()` API wordt onjuist gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
 
-* `parserwarn.log`: parser waarschuwingen (indien aanwezig), bijvoorbeeld problemen met js-parser
-* `potentials.xliff`: &quot;potentiële&quot; kandidaten die niet worden geëxtraheerd, maar leesbare tekenreeksen kunnen zijn die vertaald moeten worden (kan worden genegeerd, levert nog steeds een enorme hoeveelheid valse positieven op)
+* `parserwarn.log`: parserwaarschuwingen (indien aanwezig), bijvoorbeeld bij parserproblemen
+* `potentials.xliff`: &quot;potentiële&quot; kandidaten die niet worden geëxtraheerd, maar leesbare tekenreeksen kunnen zijn die vertaald moeten worden (genegeerd, levert nog steeds een enorme hoeveelheid valse positieven op)
 * `strings.xliff`: afgevlakt xliff-bestand, te importeren in ALF
-* `backrefs.txt`: staat voor snelle raadpleging van broncodeplaatsen voor een bepaalde koord toe
+* `backrefs.txt`: hiermee kunt u snel broncodelocaties zoeken voor een bepaalde tekenreeks

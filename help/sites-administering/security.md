@@ -1,18 +1,16 @@
 ---
 title: Gebruikersbeheer en beveiliging
 description: Meer informatie over gebruikersbeheer en beveiliging in AEM.
-uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5398'
 ht-degree: 0%
 
 ---
@@ -363,7 +361,7 @@ Met deze functie kunnen imitatoraccounts alle taken uitvoeren alsof ze het accou
 >
 >Pagina&#39;s kunnen niet worden ontgrendeld door zich voor te doen als de gebruiker die de pagina heeft vergrendeld.
 
-### Best practices voor {#best-practices}
+### Aanbevolen procedures {#best-practices}
 
 Hieronder worden de aanbevolen procedures beschreven wanneer u werkt met machtigingen en bevoegdheden:
 

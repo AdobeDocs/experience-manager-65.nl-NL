@@ -1,18 +1,14 @@
 ---
 title: Certificaten beheren
-seo-title: Managing certificates
 description: Leer hoe u een certificaat importeert en exporteert en de vertrouwensinstellingen ervan bewerkt.
-seo-description: Learn how to import and export a certificate and edit its trust settings.
-uuid: 46b1dbe5-517c-4294-bb52-cc6700a768e8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ Met het Betrouwbaarheidsopslagbeheer kunt u certificaten die u op de server vert
 * **Vertrouwen voor certificaatverificatie met CA:** Selecteer bij CRL-validatie ook Vertrouwd op identiteit.
 * **Vertrouwen voor certificaatverificatie met ICA:** Selecteer alleen Vertrouwd op identiteit. Een ICA zou niet voor CertificaatAuthentificatie moeten worden vertrouwd. Als u ICA voor de Authentificatie van het Certificaat vertrouwt, wordt ICA CA voor wegbouw. Als ICA voor zowel CertificaatAuthentificatie als Identiteit wordt vertrouwd, wordt het de verkoperscertificaat van CA genegeerd omdat ICA CA wordt.
 * **Vertrouwen voor OCSP Server met HTTPs:** Als de OSCP geënquêteerde server bij een plaats van HTTPs verblijft, moet u ook Vertrouwen voor SSL Verbindingen selecteren. Als de OSCP-geënquêteerde CRL-validatie vereist, moet u ook Vertrouwd op identiteit selecteren.
-* **Adobe root:** Selecteer geen SSL-verbindingen of OCSP Server Trust Store-typen. Adobe Root wordt niet vertrouwd voor SSL-verbindingen en OCSP-server. Adobe geeft geen OCSP- en SSL-certificaten uit. Adobe Root wordt impliciet vertrouwd met een alias name=&quot;ADOBEROOT&quot;.
+* **Hoofdmap Adobe:** Selecteer geen SSL-verbindingen of OCSP Server Trust Store-typen. Hoofdmap van Adobe wordt niet vertrouwd voor SSL-verbindingen en OCSP-server. Adobe geeft geen OCSP- en SSL-certificaten uit. Adobe Root wordt impliciet vertrouwd met een alias name=&quot;ADOBEROOT&quot;.
 
 Alleen X509v3-certificaten worden ondersteund. Dit certificaattype kan in een binair DER-Gecodeerd dossier (.cer dossier) of een tekstdossier worden geleverd dat een Base64-Gecodeerde versie van het zelfde DER-Gecodeerde certificaat bevat (met inbegrip van X509 certificaten in het formaat van de Verbeterde Post van de Privacy (PEM)).
 
@@ -39,14 +35,14 @@ U kunt certificaten ook importeren en verwijderen met de Betrouwbaarheidsbeheer-
 
    * **Vertrouwen op SSL-verbindingen:** Hiermee geeft u op dat AEM formulieren certificaten kunnen gebruiken om via SSL verbinding te maken met externe systemen.
    * **Vertrouwen voor handtekening certificeren:** Hiermee geeft u op dat certificaten worden vertrouwd in bewerkingen voor het ondertekenen van documenten voor het certificeren van de auteur van digitale handtekeningen.
-   * **Vertrouwen voor handtekening:** Hiermee geeft u op dat certificaten worden vertrouwd in bewerkingen voor het ondertekenen van documenten voor digitale handtekeningen die niet van de auteur afkomstig zijn.
+   * **Vertrouwd op handtekening:** Hiermee geeft u op dat certificaten worden vertrouwd in bewerkingen voor het ondertekenen van documenten voor digitale handtekeningen die niet van de auteur afkomstig zijn.
    * **Vertrouwen voor certificaatverificatie:** Hiermee geeft u op AEM formulieren certificaten gebruiken voor het verifiëren van gebruikers met behulp van certificaten of smartcardverificatie.
    * **Vertrouwen voor OCSP-server:** Hiermee geeft u op dat AEM formulieren certificaten kunnen gebruiken om verbinding te maken met externe OCSP-responders
    * **Vertrouwen voor identiteit:** Specificeert dat de certificaten kunnen worden gebruikt om informatie buiten hierboven gespecificeerde types te vertrouwen.
 
    >[!NOTE]
    >
-   >De vertrouwde opslag vertrouwt impliciet een Adobe-basiscertificaat voor certificaatverificatie, ondertekening, certificatie van handtekening en identiteit.
+   >De vertrouwde opslag vertrouwt impliciet een Adobe basiscertificaat voor certificaatverificatie, ondertekening, certificatie handtekening en identiteit.
 
 1. Typ in het vak Alias de id voor het certificaat.
 1. Klikken **[!UICONTROL Browse]** om het certificaat te zoeken en klik vervolgens op **[!UICONTROL OK]**.
@@ -63,7 +59,7 @@ U kunt certificaten ook importeren en verwijderen met de Betrouwbaarheidsbeheer-
 1. Klik op de aliasnaam van het certificaat dat u wilt bewerken.
 1. Klik op **[!UICONTROL Update Certificate]**.
 1. Als u de naam van de alias van het certificaat wilt wijzigen, typt u een nieuwe naam in het vak Alias.
-1. Als u het vertrouwde opslagtype voor het certificaat wilt bijwerken, selecteert u het juiste type vertrouwde opslag.
+1. Als u het vertrouwensarchieftype voor het certificaat wilt bijwerken, selecteert u het juiste vertrouwensarchieftype.
 1. Als u de beleidsbeperkingen wilt bijwerken, typt u de beleidsinformatie in het vak Certificaatbeleid en klikt u vervolgens op **[!UICONTROL OK]**.
 
 ## Een certificaat verwijderen {#delete-a-certificate}

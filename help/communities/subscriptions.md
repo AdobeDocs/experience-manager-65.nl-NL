@@ -1,17 +1,13 @@
 ---
 title: Communityabonnementen
-seo-title: Communities Subscriptions
 description: Communautaire leden communiceren via e-mail met andere leden
-seo-description: Community members interact with other members through email
-uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -48,11 +44,11 @@ Componenten moeten worden geconfigureerd om abonnementen in te schakelen *en* vo
 
 ![abonnement-volgende](assets/subscription-following.png)
 
-De **Volg** biedt een manier om vermeldingen als activiteiten, abonnementen en/of meldingen te volgen. Elke keer als **Volg** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen.
+De **Volgen** biedt een manier om vermeldingen als activiteiten, abonnementen en/of meldingen te volgen. Elke keer als **Volgen** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen.
 
-Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **volgende**. Voor het gemak is het mogelijk om `Unfollow All` om alle methoden uit te schakelen.
+Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **volgende**. Voor het gemak is het mogelijk `Unfollow All` om alle methoden uit te schakelen.
 
-De **Volg** bevat de knop `Email Subscriptions` optie slechts wanneer een forum, QnA, of blog wordt gevormd om e-mailabonnementen toe te laten. Deze knop wordt weergegeven:
+De **Volgen** bevat de knop `Email Subscriptions` optie slechts wanneer een forum, QnA, of blog wordt gevormd om e-mailabonnementen toe te laten. Deze knop wordt weergegeven:
 
 * Op de hoofdpagina met functies voor het ingeschakelde forum, stuurt QnA of blog een e-mail voor alle activiteiten onder die functie.
 

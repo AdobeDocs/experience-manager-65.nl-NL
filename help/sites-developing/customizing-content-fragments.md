@@ -1,21 +1,19 @@
 ---
-title: Contentfragmenten aanpassen en uitbreiden
-seo-title: Customizing and Extending Content Fragments
+title: Inhoudsfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit. Leer hoe u ze kunt aanpassen.
-seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2794'
+source-wordcount: '2728'
 ht-degree: 0%
 
 ---
 
 
-# Contentfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
+# Inhoudsfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
 Een inhoudsfragment breidt een standaardelement uit. Zie:
 
@@ -45,7 +43,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
 >
 >Sjablonen voor inhoudsfragmenten zijn nu afgekeurd. Ze kunnen nog steeds worden gebruikt voor het maken van fragmenten, maar het gebruik van Content Fragment Models wordt aangeraden. Er worden geen nieuwe functies toegevoegd aan fragmentsjablonen en deze worden in een toekomstige versie verwijderd.
 
-* Modellen van contentfragmenten:
+* Modellen van inhoudsfragmenten:
 
    * Wordt gebruikt voor het definiëren van inhoudsfragmenten die gestructureerde inhoud bevatten.
    * Inhoudsfragmentmodellen definiëren de structuur van een inhoudsfragment wanneer dit wordt gemaakt.

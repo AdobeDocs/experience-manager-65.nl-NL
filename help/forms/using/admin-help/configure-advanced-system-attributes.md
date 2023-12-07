@@ -1,18 +1,14 @@
 ---
 title: Geavanceerde systeemkenmerken configureren
-seo-title: Configure advanced system attributes
 description: Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om bepaalde montages in het configuratiedossier te wijzigen zonder de behoefte om, het dossier uit te voeren uit te geven en in te voeren.
-seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
-uuid: 6bcfbaa9-f492-46aa-97d2-00fc3e67d0d7
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -28,7 +24,7 @@ Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om be
 
    >[!NOTE]
    >
-   >U moet de time-outlimiet voor sessies niet instellen op minder dan 10 minuten, omdat het systeem zich mogelijk niet correct gedraagt. De aanbevolen waarde is 10-120 (minuten).
+   >U moet de time-outlimiet voor sessies niet instellen op minder dan 10 minuten, omdat het systeem zich mogelijk niet correct gedraagt. De aanbevolen waarde is 10-120 minuten.
 
    **Drempel bevestiging (seconden):** Een buffertijd om vertragingen als gevolg van systeemtijdverschillen tussen AEM formuliertoepassingsserver in een cluster te compenseren. AEM formulieren werken terug op de aanmeldtijd van een gebruiker met de hoeveelheid tijd (in seconden) die in deze eigenschap is opgegeven. Geldige waarden zijn `0` tot `3600`. De standaardwaarde is `60`. Deze instelling werkt de `SAML/Producer/assertionThresholdInSeconds` ingangstoets in het configuratiebestand.
 

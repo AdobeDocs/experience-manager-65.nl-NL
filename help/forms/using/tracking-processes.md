@@ -1,16 +1,12 @@
 ---
 title: Traceringsprocessen
-seo-title: Tracking processes
 description: Hoe te om uw processen te volgen door naar hen te zoeken en hun details te bekijken.
-seo-description: How to track your processes by searching for them and viewing their details.
-uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -38,7 +34,7 @@ U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
 ### Een taak zoeken met een zoeksjabloon {#search-for-a-task-using-a-search-template}
 
-1. Selecteer in de lijst aan de linkerkant op de pagina Tekstspatiëring de optie **Sjablonen zoeken** en selecteer een zoeksjabloon.
+1. Selecteer in de lijst aan de linkerkant op de pagina Volgen de optie **Sjablonen zoeken** en selecteer een zoeksjabloon.
 1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden in en klikt u op **Zoeken**. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
 
 ## Procesdetails weergeven {#view-process-details}

@@ -1,16 +1,12 @@
 ---
 title: Extra gegevens weergeven in de lijst ToDo
-seo-title: Displaying additional data in ToDo list
 description: Hoe te om de vertoning van de te doen lijst van de werkruimte van AEM Forms van het LiveCycle aan te passen om meer informatie naast het gebrek te tonen.
-seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
-uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -141,7 +137,7 @@ Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan d
 
 1. Kopiëren `task.html`:
 
-   * Van: `/libs/ws/js/runtime/templates/`
+   * van: `/libs/ws/js/runtime/templates/`
    * tot: `/apps/ws/js/runtime/templates/`
 
 1. Nieuwe informatie toevoegen aan `/apps/ws/js/runtime/templates/task.html`.

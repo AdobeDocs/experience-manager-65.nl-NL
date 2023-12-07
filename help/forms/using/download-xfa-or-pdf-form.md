@@ -1,18 +1,14 @@
 ---
 title: XFA of een PDF-formuliersjabloon downloaden
-seo-title: Download an XFA or a PDF form template
 description: U kunt formulieren vanuit de gegevensopslagruimte exporteren naar het lokale systeem en de gedownloade formulieren migreren naar een nieuwe gegevensopslagruimte.
-seo-description: You can export forms from the repository to the local system and migrate the downloaded forms to new repository.
-uuid: 5f7fbd14-cb9d-4749-8708-7efe49df89d7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 role: Admin
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -43,7 +39,7 @@ Naast deze elementen kunt u de opdracht `Resource` type element als dit voorkomt
    >
    >U kunt slechts één formulier selecteren om te downloaden. Als u meerdere formulieren wilt downloaden, moet u deze downloaden als een map.
 
-1. Klik in het dialoogvenster dat wordt weergegeven op **[!UICONTROL Download]**.
+1. Klik op **[!UICONTROL Download]**.
 
    AEM Forms genereert een ZIP-bestand met het geselecteerde bestand of de geselecteerde map.
 

@@ -1,14 +1,12 @@
 ---
 title: Aan de slag met Adobe Experience Manager Mobile
 description: Deze pagina fungeert als bestemmingspagina voor Adobe Experience Manager Mobile. Volg deze pagina als beginpunt zodat u meer kunt leren over de drie verschillende manieren om apps te maken.
-uuid: a5398216-f9bb-4009-a9f8-a4f0135db67c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -19,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
->Klanten met bestaande Adobe Experience Manager (AEM) Mobile Apps die migreren van AEM 6.2 of 6.3 naar AEM 6.5, kunnen AEM Mobile Apps blijven gebruiken door een pakket te downloaden van Package Share. Nieuwe installaties van AEM 6.5 bieden echter geen ondersteuning voor de functionaliteit van AEM Mobile Apps.
+>Klanten met bestaande Adobe Experience Manager (AEM) Mobile Apps die migreren van AEM 6.2 of 6.3 naar AEM 6.5, kunnen AEM Mobile Apps blijven gebruiken door een pakket te downloaden van Package Share. Nieuwe installaties van AEM 6.5 ondersteunen echter de functionaliteit van AEM Mobile Apps niet.
 
 AEM Mobile maakt deel uit van het Adobe Experience Manager multi-channel digitale platform dat ook AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms gebruikt. AEM Mobile biedt een opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
 

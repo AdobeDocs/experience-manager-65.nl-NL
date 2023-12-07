@@ -1,18 +1,14 @@
 ---
 title: Connector configureren voor Microsoft SharePoint
-seo-title: Configuring Connector for Microsoft SharePoint
 description: Configureer Connector voor Microsoft SharePoint om communicatie tussen AEM formulieren en Microsoft SharePoint mogelijk te maken.
-seo-description: Configure Connector for Microsoft SharePoint to enable communication between AEM forms and Microsoft SharePoint.
-uuid: f1561b41-da20-4220-b13a-e78472a9449f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ Connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM formu
 
    **Hostnaam SharePoint-server:** Het poortnummer van de hostnaam van de webtoepassing op de SharePoint-server, in de notatie `[hostname]:'port'`.
 
-   **Gebruikersnaam:** De gebruikersaccount die wordt gebruikt om verbinding te maken met de SharePoint-server.
+   **Gebruikersnaam:** De gebruikersaccount waarmee verbinding wordt gemaakt met de SharePoint-server.
 
    **Wachtwoord:** Wachtwoord voor de gebruikersaccount waarmee verbinding wordt gemaakt met de SharePoint-server
 
@@ -36,7 +32,7 @@ Connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM formu
 
 ## Microsoft SharePoint-configuratieservice {#microsoft-sharepoint-configuration-service}
 
-De Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` Hiermee kunt u referenties opgeven voor de gebruiker van AEM formulier die imitatierechten heeft. Voor informatie over imitatierechten raadpleegt u [Connector configureren voor Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Voer de volgende stappen uit om instellingen op te geven voor `MSSharePointConfigService`:
+De Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` Hiermee kunt u referenties opgeven voor de gebruiker van AEM formulier die imitatierechten heeft. Zie voor informatie over imitatierechten [Connector configureren voor Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Voer de volgende stappen uit om instellingen op te geven voor `MSSharePointConfigService`:
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Navigeer in de lijst met services en klik op `MSSharePointConfigService`.

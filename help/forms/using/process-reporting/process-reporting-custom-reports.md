@@ -1,18 +1,14 @@
 ---
 title: Aangepaste rapporten in procesrapportage
-seo-title: Custom Reports in Process Reporting
 description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan AEM Forms op het Proces van JEE meldt UI.
-seo-description: You can create custom reports and add these reports to the AEM Forms on JEE Process Reporting UI.
-uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
-discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
-source-git-commit: bd33c0884be55b76ef526c8c938236e743dc3dc6
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -21,11 +17,11 @@ ht-degree: 0%
 
 U kunt REST interface van QueryBuilder gebruiken of de dienst tot stand brengen OSGi gebruikend QueryBuilder API om een douanerapport tot stand te brengen.
 
-## Algemene stappen om een aangepast rapport te maken {#generic-steps-to-build-a-custom-report}
+## Algemene stappen voor het samenstellen van een aangepast rapport {#generic-steps-to-build-a-custom-report}
 
 Alvorens om het even welk douanerapport toe te voegen, voer de volgende malplaatjeprocedure uit:
 
-1. Gegevens die worden gebruikt in aangepaste rapporten, moeten beschikbaar zijn in Process Reporting. Om de beschikbaarheid van gegevens te verzekeren, plant een bouwbaan of gebruik **[Synchroniseren](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** optie op het Proces Meldend UI.
+1. Gegevens die worden gebruikt in aangepaste rapporten, moeten beschikbaar zijn in Process Reporting. Om de beschikbaarheid van gegevens te verzekeren, plant een bouwbaan of gebruik **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** optie op het Proces Meldend UI.
 1. Het URL-verzoek (de gewenste query wordt ingekapseld) moet een geschikt queryresultaatobject retourneren. Als u een query wilt maken, kunt u de REST-interface gebruiken van [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) om een dienst te creëren OSGi gebruikend QueryBuilder API. U kunt dynamische of statische query&#39;s maken.
 
 1. Maak een aangepaste gebruikersinterface om de resultaten weer te geven. U kunt een stand-alone gebruikersinterface tot stand brengen of resultaat met bestaand Proces opnemen die UI meldt.
@@ -69,7 +65,7 @@ De eerste vereiste voor het maken van een service met de Query Builder-API is [C
 
    Voor statische rapporten hardcode de predikaten, terwijl voor dynamische rapporten, de predikaten van het verzoek halen.
 
-   Voorbeeldcode voor alle instanties van een proces is:
+   Voorbeeldcode om alle instanties van een proces op te halen is:
 
    ```java
    Predicate predicate;

@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5 Klassieke UI Authoring User Guide
-seo-title: AEM 6.5 Classic UI Authoring User Guide
 description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
-seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 16%
+source-wordcount: '280'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +13,7 @@ ht-degree: 16%
 
 In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 
-## AEM
+## Belangrijke AEM
 
 * [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
@@ -30,14 +28,14 @@ In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikers
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Gids voor beheerders](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
-| [Handleiding voor authoring](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
+| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
+| [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
 | [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
-| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer weten over Commerce integration framework op AEM? |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 
 ## Belangrijke AEM
@@ -47,6 +45,6 @@ In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikers
 * [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
-* [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
+* [GDPR gereedheid](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

@@ -1,18 +1,14 @@
 ---
 title: Richtlijnen voor het oplossen van problemen in de AEM Forms-werkruimte
-seo-title: Troubleshooting guidelines for AEM Forms workspace
 description: Logboeken inschakelen en foutopsporing gebruiken in browser om problemen in de AEM Forms-werkruimte op te lossen.
-seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
-uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -155,9 +151,9 @@ In de AEM Forms-werkruimte:
 
 Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
-* **Foutopsporing in IE**: Ga als volgt te werk om fouten op te sporen in de AEM Forms-werkruimte in IE: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **Foutopsporing in IE**: Ga voor foutopsporing in de AEM Forms-werkruimte in IE naar: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets: Ctrl+Shift+I. Zie voor meer informatie: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets Ctrl+Shift+I. Zie voor meer informatie: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Foutopsporing in Firefox**: Er zijn verschillende invoegtoepassingen beschikbaar voor foutopsporing in scripts en stijlen in Firefox. Firebug is bijvoorbeeld een van deze hulpprogramma&#39;s voor foutopsporing ([https://getfirebug.com](https://getfirebug.com)).
 
@@ -173,7 +169,7 @@ Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
    1. Open chrome://plugins in Chrome om beschikbare plug-ins weer te geven.
    1. Zie details voor Adobe Flash® Player plug-in.
-   1. PepperFlash uitschakelen onder Adobe Flash Player-plug-in.
+   1. PepperFlash uitschakelen onder Adobe Flash Player plug-in.
 
 1. Ik heb de werkruimte van AEM Forms aangepast, maar ik kan de wijzigingen niet zien.
 

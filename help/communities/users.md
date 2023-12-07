@@ -1,17 +1,13 @@
 ---
 title: Gebruikers en gebruikersgroepen beheren
-seo-title: Managing Users and User Groups
 description: Gebruikers van AEM Communities kunnen zichzelf registreren en hun profielen bewerken
-seo-description: Users of AEM Communities can self-register and edit their profiles
-uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%

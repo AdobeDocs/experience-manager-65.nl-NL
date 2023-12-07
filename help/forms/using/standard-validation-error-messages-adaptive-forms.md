@@ -1,17 +1,13 @@
 ---
 title: Standaardvalidatiefoutenberichten voor adaptieve formulieren
-seo-title: Standard validation error messages for adaptive forms
 description: Transformeer de foutberichten voor validatie van adaptieve formulieren naar de standaardnotatie met behulp van aangepaste fouthandlers
-seo-description: Transform the validation error messages for adaptive forms into standard format using custom error handlers
-uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
 contentOwner: anujkapo
 content-type: reference
 keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanager toe, voeg een foutenmanager in vorm toe, gebruik de toepassing roept dienst van de redacteur om een douanefoutenmanager toe te voegen, regel redacteur te vormen om een manager van de douanefout toe te voegen, douanefoutafhandeling toe gebruikend regelredacteur
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '2326'
 ht-degree: 0%

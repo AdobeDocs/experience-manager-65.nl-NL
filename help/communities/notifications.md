@@ -1,18 +1,14 @@
 ---
 title: Publikaties
-seo-title: Communities Notifications
 description: AEM Communities heeft meldingen die gebeurtenissen weergeven die van belang zijn voor het aanmeldingscommunity-lid
-seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
-uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -25,7 +21,7 @@ ht-degree: 0%
 
 AEM Communities biedt een meldingssectie waarin gebeurtenissen worden weergegeven die van belang zijn voor de ondertekenaars in het community-lid.
 
-Meldingen lijken op [activiteiten](/help/communities/essentials-activities.md) en [abonnementen](/help/communities/subscriptions.md) als gevolg van:
+Meldingen lijken op [activiteiten](/help/communities/essentials-activities.md) en [abonnementen](/help/communities/subscriptions.md) die kunnen voortvloeien uit:
 
 * Het lid dat inhoud plaatst.
 * Het lid dat ervoor kiest een ander lid te volgen.
@@ -69,13 +65,13 @@ Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functi
 
 * Gebruikersprofielen zijn al zo geconfigureerd dat andere leden deze kunnen volgen.
 
-## Meldingen van: {#notifications-from-following}
+## Meldingen van de volgende {#notifications-from-following}
 
 ![meldingen](assets/notifications.png)
 
 De **[!UICONTROL Follow]** biedt een manier om vermeldingen als activiteiten, abonnementen en/of meldingen te volgen. Elke keer als **[!UICONTROL Follow]** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen. De `Email Subscriptions` selectie is alleen aanwezig als dit is geconfigureerd.
 
-Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **[!UICONTROL Following]**. Voor het gemak is het mogelijk om `Unfollow All` om alle methoden uit te schakelen.
+Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **[!UICONTROL Following]**. Voor het gemak is het mogelijk `Unfollow All` om alle methoden uit te schakelen.
 
 De **[!UICONTROL Follow]** wordt weergegeven:
 
@@ -94,7 +90,7 @@ Als u de koppeling Instellingen kennisgeving op de pagina Meldingen selecteert, 
 
 Het webkanaal is altijd ingeschakeld.
 
-![notifications14](assets/notifications1.png)
+![meldingen14](assets/notifications1.png)
 
 Het e-mailkanaal, dat afhankelijk is van de juiste [configuratie van e-mail](/help/communities/email.md)biedt dezelfde instellingen als voor het webkanaal.
 
@@ -114,13 +110,13 @@ A [wizard heeft een communitysite gemaakt](/help/communities/sites-console.md) b
 
 Als u de gepubliceerde site wilt bezoeken, selecteert u de optie `Notifications` via de koppeling worden alle meldingen voor het lid weergegeven .
 
-![notifications4](assets/notifications4.png)
+![meldingen4](assets/notifications4.png)
 
 ### E-mailmeldingen {#email-notifications}
 
 Wanneer het e-mailkanaal is ingeschakeld, ontvangt het lid een e-mail met een koppeling naar de inhoud op het web.
 
-![notifications5](assets/notifications5.png)
+![meldingen5](assets/notifications5.png)
 
 ## E-mailberichten aanpassen {#customize-email-notifications}
 

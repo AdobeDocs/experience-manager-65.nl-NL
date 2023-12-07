@@ -1,16 +1,14 @@
 ---
 title: Best practices voor het testen van prestaties
 description: Leer meer over de algemene strategieën en methoden die worden gebruikt voor het testen van de prestaties en enkele gereedschappen die beschikbaar zijn om het proces te helpen.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1790'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 
 Het testen van prestaties is een belangrijk deel van om het even welke AEM plaatsing. Afhankelijk van de vereisten van de klant kunnen de prestaties worden getest op de publicatie-instanties, de auteur-instanties of beide.
 
-In deze documentatie worden algemene strategieën en methoden beschreven voor het uitvoeren van prestatietests en een aantal van de hulpmiddelen die door Adobe beschikbaar worden gesteld om het proces te helpen. Tot slot lees een analyse van de hulpmiddelen die in AEM 6 beschikbaar zijn om met prestaties het stemmen, zowel vanuit een codeanalyse als perspectief van de systeemconfiguratie te helpen.
+In deze documentatie worden algemene strategieën en methodologieën beschreven voor het uitvoeren van prestatietests en een aantal van de hulpmiddelen die door de Adobe beschikbaar worden gesteld om het proces te helpen. Tot slot lees een analyse van de hulpmiddelen die in AEM 6 beschikbaar zijn om met prestaties het stemmen, zowel vanuit een codeanalyse als perspectief van de systeemconfiguratie te helpen.
 
 ### Realiteit simuleren {#simulating-reality}
 
@@ -49,18 +47,18 @@ Voordat wordt begonnen met het testen van de prestaties, moeten niet-functionele
 
 ### Gereedschappen {#tools}
 
-Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestaties op de markt. Wanneer het runnen van een lading die hulpmiddel produceert, is het belangrijk om ervoor te zorgen dat de computers die de tests uitvoeren voldoende netwerkbandbreedte hebben. Anders wordt, zodra de testmachine de grenzen van zijn verbinding bereikt, geen extra belasting op de testomgeving gegenereerd.
+Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestaties op de markt. Wanneer het runnen van een lading die hulpmiddel produceert, is het belangrijk om ervoor te zorgen dat de computers die de tests uitvoeren voldoende netwerkbandbreedte hebben. Anders wordt, zodra de testmachine de grenzen van zijn verbinding bereikt, geen extra belasting opgewekt op de testomgeving.
 
 #### Testgereedschappen {#testing-tools}
 
-* Adobe **Dag** kan worden gebruikt om belasting te genereren op AEM instanties en prestatiegegevens te verzamelen. Adobe gebruikt het gereedschap om het AEM zelf te testen. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Zie voor meer informatie de [Tough Day-documentatie](/help/sites-developing/tough-day.md).
+* Adobe **Grove dag** kan worden gebruikt om belasting te genereren op AEM instanties en prestatiegegevens te verzamelen. Het technische team van de Adobe gebruikt AEM het gereedschap om het AEM product zelf te testen. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Zie de klasse [Tough Day-documentatie](/help/sites-developing/tough-day.md).
 
-* AEM verstrekt uit de vakhulpmiddelen om problematische vragen, verzoeken, en foutenmeldingen snel te zien. Zie voor meer informatie de [Diagnosemiddelen](/help/sites-administering/operations-dashboard.md#diagnosis-tools) sectie van de documentatie van het vluchthandboek.
+* AEM verstrekt uit de vakhulpmiddelen om problematische vragen, verzoeken, en foutenmeldingen snel te zien. Zie de klasse [Diagnosemiddelen](/help/sites-administering/operations-dashboard.md#diagnosis-tools) sectie van de documentatie van het vluchthandboek.
 * Apache levert een product genaamd **JMeter** die kunnen worden gebruikt voor het testen van de prestaties en de belasting, en voor functioneel gedrag. Het is open-sourcesoftware en vrij te gebruiken, maar heeft een kleinere functieset dan bedrijfsproducten en een steile leercurve. JMeter is te vinden op de website van Apache op [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Runner laden** is een belastingstestproduct voor bedrijven. Er is een gratis evaluatieversie beschikbaar. Meer informatie vindt u op [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
+* **Runner laden** is een belastingstestproduct voor bedrijven. Er is een gratis evaluatieversie beschikbaar. Meer informatie is te vinden op [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* Testprogramma&#39;s voor het laden van websites, zoals [Vercara](https://vercara.com/website-performance-management) kan ook worden gebruikt.
+* Testen van websites, zoals [Vercara](https://vercara.com/website-performance-management) kan ook worden gebruikt.
 * Bij het testen van mobiele of responsieve websites moet een aparte set gereedschappen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Tot de meer gebruikte gereedschappen behoren onder meer:
 
    * **[Netwerkkoppelingsvoorwaarde](https://nshipster.com/network-link-conditioner/)** - het verstrekt gemakkelijk om UI te gebruiken en werkt op vrij laag niveau op de voorzien van een netwerkstapel. Dit omvat versies voor OS X en iOS;
@@ -68,7 +66,7 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 
 #### Optimalisatieprogramma&#39;s {#optimization-tools}
 
-**Bewaking**
+**Toezicht**
 
 De [Monitorprestaties](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) documentatie is een goede bron voor hulpmiddelen en methodes die kunnen worden gebruikt om kwestie en puntgebieden voor het stemmen te diagnostiseren.
 
@@ -107,13 +105,13 @@ Op systemen met MongoDB-backends biedt AEM verschillende [JMX](/help/sites-admin
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Voor de genoemde cache **Document-Diff**, moet het percentage treffers worden overschreden `.90`. Als de treffer lager is dan 90%, is het waarschijnlijk dat u uw `DocumentNodeStoreService` configuratie. Ondersteuning van Adobe-producten kan optimale instellingen voor uw omgeving aanbevelen.
+Voor de genoemde cache **Document-Diff**, moet het percentage treffers worden overschreden `.90`. Als de treffer lager is dan 90%, is het waarschijnlijk dat u uw `DocumentNodeStoreService` configuratie. Ondersteuning van Adoben van producten kan aanbevolen worden voor optimale instellingen voor uw omgeving.
 
 * De **Statistieken opslagplaats eik** Bon. Het kan direct worden betreden door te gaan:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-De **ObservationQueueMaxLength** toont het aantal gebeurtenissen in de waarnemingswachtrij van Oak gedurende de laatste uren, minuten, seconden en weken. Zoek het grootste aantal gebeurtenissen in de sectie &#39;per uur&#39;. Vergelijk dit aantal met `oak.observation.queue-length` instellen. Als het hoogste getal dat voor de waarnemingswachtrij wordt weergegeven, groter is dan `queue-length` instellen:
+De **ObservationQueueMaxLength** toont het aantal gebeurtenissen in de waarnemingswachtrij van Oak gedurende de laatste uren, minuten, seconden en weken. Zoek het grootste aantal gebeurtenissen in de sectie &quot;per uur&quot;. Vergelijk dit aantal met `oak.observation.queue-length` instellen. Als het hoogste getal dat voor de waarnemingswachtrij wordt weergegeven, groter is dan `queue-length` instellen:
 
 1. Maak een bestand met de naam: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` met de parameter `oak.observation.queue‐length=50000`
 1. Plaats de toepassing onder de map /crx-quickstart/install.
@@ -135,7 +133,7 @@ De meeste productiewebsites beschikken over optimalisaties, zoals het in cache p
 
 Op een systeem dat geen hoog niveau van verpersoonlijking vereist, zou de Dispatcher de meeste verzoeken in het voorgeheugen onderbrengen. Als gevolg hiervan moet de belasting op het publicatieexemplaar relatief vlak blijven. Als een hoog niveau van verpersoonlijking wordt vereist, wordt het geadviseerd om technologieën zoals iFrames of AJAX verzoeken om de gepersonaliseerde inhoud te gebruiken om zoveel mogelijk het caching van de Verzender toe te staan.
 
-Voor basistests kan Apache Bench worden gebruikt om responstijden van webservers te meten en om belasting te creëren voor het meten van zaken zoals geheugenlekken. Zie het voorbeeld in het dialoogvenster [Controledocumentatie](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
+Voor basistests kan Apache Bench worden gebruikt om responstijden van webservers te meten en om belasting te creëren voor het meten van zaken zoals geheugenlekken. Zie het voorbeeld in het dialoogvenster [Monitoringdocumentatie](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
 ## Problemen met prestaties oplossen {#troubleshooting-performance-issues}
 

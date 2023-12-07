@@ -1,17 +1,13 @@
 ---
 title: Afbeeldingen aanpassen die worden gebruikt in routehandelingen
-seo-title: Customize images used in route actions
-description: Hoe kan ik-om-de beelden aan te passen die in routeacties in de werkruimte van LiveCycle AEM Forms worden gebruikt.
-seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
-uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
+description: Hoe-om de beelden aan te passen die in routeacties in de werkruimte van AEM Forms van het LiveCycle worden gebruikt.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ Voer de in [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-ht
 
    `/apps/ws/css/newStyle.css`
 
-   Bijvoorbeeld: Een nieuwe stijl toevoegen met de naam `myStyle1`zoals hieronder wordt getoond en uploadt het beelddossier `myStyleIcon1.png` aan de `/apps/ws/image`s met een WebDAV-client.
+   Bijvoorbeeld: voeg een nieuwe stijl toe genoemd `myStyle1`zoals hieronder wordt getoond en uploadt het beelddossier `myStyleIcon1.png` aan de `/apps/ws/image`s met een WebDAV-client.
 
    >[!NOTE]
    >
@@ -34,7 +30,7 @@ Voer de in [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-ht
 
    >[!NOTE]
    >
-   >Voorkeur om de stijlnaam te gebruiken om het zelfde als de naam van de routeactie te zijn.
+   >Voorkeur om de stijlnaam te gebruiken om de naam van de routeactie te zijn.
 
    ```css
    .myStyle1{

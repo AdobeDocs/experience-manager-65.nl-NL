@@ -1,16 +1,14 @@
 ---
 title: Instellingen voor bestandstypen configureren
 description: Leer hoe u instellingen voor bestandstypen configureert. In PDF Generator kunt u de toepassingsinstelling voor ondersteunde bestandstypen instellen om instellingen voor bestandstypen te configureren.
-uuid: ab037659-c6ff-4de9-9417-f5a6fc8122cb
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
-discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '5876'
+source-wordcount: '5889'
 ht-degree: 0%
 
 ---

@@ -1,18 +1,14 @@
 ---
 title: Inleiding tot het beheren van formulieren
-seo-title: Introduction to managing forms
-description: AEM Forms biedt tools voor het beheer van Adaptive Forms en gerelateerde middelen. In dit artikel worden de belangrijkste mogelijkheden voor formulierbeheer en gebruikersinterface-elementen besproken.
-seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
-uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
+description: AEM Forms biedt tools voor het beheer van Adaptive Forms en gerelateerde middelen. In dit artikel wordt uitgelegd wat de belangrijkste mogelijkheden voor formulierbeheer en gebruikersinterface-elementen zijn.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager, introduction
-discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ AEM [!DNL Forms] biedt een vereenvoudigde maar toch krachtige gebruikersinterfac
 
 >[!NOTE]
 >
->Voor gedetailleerde informatie over andere AEM gereedschappen en opties raadpleegt u [Authoring](/help/sites-authoring/author.md).
+>Zie voor meer informatie over andere AEM gereedschappen en opties [Authoring](/help/sites-authoring/author.md).
 
 ## AEM Forms-componenten openen {#access-aem-forms-components}
 
@@ -38,15 +34,15 @@ AEM biedt naast opties voor het maken van formulieren, documenten en gerelateerd
 * Documentfragmenten
 * Gegevenswoordenboeken
 
-   ![AEM Forms Console](assets/aem_forms_console_new.png)
+  ![AEM Forms Console](assets/aem_forms_console_new.png)
 
 ### Forms &amp; Documenten  {#forms-documents}
 
-Forms &amp; Documents biedt opties voor het maken van interactieve communicatie, adaptief formulier, adaptief formulierfragment en formulierset. Alleen voor AEM [!DNL Forms] in JEE biedt Forms &amp; Documents een optie voor het importeren van bestanden van lokale opslag en het synchroniseren van AEM [!DNL Forms] middelen met Workbench.
+Forms &amp; Documents biedt opties voor het maken van interactieve communicatie, adaptief formulier, adaptief formulierfragment en formulierset. Alleen voor AEM [!DNL Forms] in JEE biedt Forms &amp; Documents een optie om bestanden te importeren van lokale opslag en AEM te synchroniseren [!DNL Forms] middelen met Workbench.
 
-De knop Maken is het beginpunt van het maken of uploaden van AEM [!DNL Forms] activa. U hebt de volgende opties:
+De knop Maken is het beginpunt van het maken of uploaden van AEM [!DNL Forms] activa. U hebt de volgende opties om te maken:
 
-* **Interactieve communicatie**: Een interactieve communicatie is een gepersonaliseerde, interactieve, en apparaat-vriendelijke digitale correspondentie op HTML-Gebaseerde, verklaring, of document. De interactieve Mededelingen zijn ontvankelijk in aard en veranderingslay-out en ontwerp automatisch gebaseerd op gebruikersapparaat en montages. Zie voor meer informatie [Interactieve communicatie - overzicht](/help/forms/using/interactive-communications-overview.md)
+* **Interactieve communicatie**: Een interactieve communicatie is een gepersonaliseerde, interactieve en apparaatvriendelijke digitale HTML-correspondentie, -instructie of -document. De interactieve Mededelingen zijn ontvankelijk in aard en veranderingslay-out en ontwerp automatisch gebaseerd op gebruikersapparaat en montages. Zie voor meer informatie [Interactieve communicatie - overzicht](/help/forms/using/interactive-communications-overview.md)
 
 * **Adaptief formulier:** Een adaptief formulier is een aantrekkelijke en responsieve vorm. U kunt een adaptief formulier ontwerpen om het dynamisch aan te passen aan de invoer van de gebruiker door formuliersecties toe te voegen of te verwijderen op basis van gebruikersreactie, apparaat of werkomgeving. De [Inleiding tot het ontwerpen van adaptieve formulieren](../../forms/using/introduction-forms-authoring.md) artikel bevat gedetailleerde informatie over de adaptieve formulieren .
 
@@ -54,35 +50,35 @@ De knop Maken is het beginpunt van het maken of uploaden van AEM [!DNL Forms] ac
 
 * **Formulierset:** Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen in te vullen, worden de formulieren naadloos van het ene naar het andere formulier overgebracht. Uiteindelijk kan een gebruiker alle formulieren als één entiteit met één klik verzenden. Zie voor meer informatie [Formulierset in AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
-* **Map:** AEM [!DNL Forms] gebruikersinterface gebruikt mappen om elementen te rangschikken. Twee soorten mappen worden ondersteund:
+* **Map:** AEM [!DNL Forms] gebruikersinterface gebruikt mappen om elementen te rangschikken. Er worden twee soorten mappen ondersteund:
 
    * **Algemene map:** Deze mappen worden gebruikt voor elementen die zijn gemaakt in AEM [!DNL Forms] gebruikersinterface. Deze mappen hebben geen strikte mapstructuur. U kunt de namen van submappen wijzigen, submappen maken en adaptieve formulieren, interactieve communicatie, adaptieve formulierfragmenten, formuliersjablonen (XDP&#39;s), PDF forms, documenten en gerelateerde elementen in deze mappen opslaan.
-   * **Map Forms Workflow:** Forms-workflowmappen worden gemaakt wanneer Workbench-processen (LiveCycle-archieven) worden gemigreerd en gesynchroniseerd met AEM [!DNL Forms] gebruikersinterface. Het is niet toegestaan de naam te wijzigen, een submap te maken, een interactieve communicatie, een adaptief formulierfragment of een interactieve communicatie te maken. Het is ook niet toegestaan om een versiemap te verwijderen of een adaptief formulier, een adaptief formulierfragment of een interactieve communicatie te maken en te uploaden parallel aan de versiemap.
+   * **Map Forms Workflow:** Forms-workflowmappen worden gemaakt wanneer Workbench-processen (archiefbestanden voor LiveCycles) worden gemigreerd en gesynchroniseerd met AEM [!DNL Forms] gebruikersinterface. U mag de naam niet wijzigen, geen submap maken, een interactieve communicatie, een adaptief formulierfragment of een interactieve communicatie maken. Het is ook niet toegestaan om een versiemap te verwijderen of een adaptief formulier, een adaptief formulierfragment of een interactieve communicatie te maken en te uploaden parallel aan de versiemap.
 
-   ![mappen](assets/folders.png)
+  ![mappen](assets/folders.png)
 
-   **A.** Algemene map **B.** Map Forms Workflow
+  **A.** Algemene map **B.** Map Forms Workflow
 
 Het deelvenster Forms en het deelvenster Document bevatten ook opties voor:
 
-* **Bestanden importeren van lokale opslag:** U kunt PDF forms en documenten, formuliersjablonen (XFA-formulieren) en andere bronnen (Afbeelding en XML-schema voor XSD&#39;s) importeren. Voor stapsgewijze instructies raadpleegt u [Elementen importeren en exporteren naar AEM Forms](../../forms/using/import-export-forms-templates.md).
+* **Bestanden importeren van lokale opslag:** U kunt PDF forms en documenten, formuliersjablonen (XFA-formulieren) en andere bronnen (Afbeelding en XML-schema voor XSD&#39;s) importeren. Zie voor stapsgewijze instructies [Elementen importeren en exporteren naar AEM Forms](../../forms/using/import-export-forms-templates.md).
 * **AEM Forms-middelen synchroniseren met Workbench:** Met de optie Bestanden van Workbench kunt u elementen synchroniseren tussen de AEM Forms-gebruikersinterface en Workbench. Het zorgt ervoor dat alle activa in AEM beschikbaar zijn [!DNL Forms] gebruikersinterface en selectie van crx-repository&#39;s van Workbench.
 
 ### Thema&#39;s  {#themes}
 
 Een thema bevat opmaakgegevens voor componenten en deelvensters. Thema&#39;s hebben een onafhankelijke identiteit. U kunt een thema dus opnieuw gebruiken op meerdere adaptieve formulieren. U kunt stijlen voor een component opgeven of CSS-eigenschappen wijzigen voor verschillende componenten die in de verschillende formulieren worden gebruikt. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie en grootte. U kunt aanpassingen in een thema opslaan en deze als een voorinstelling op componenten van het formulier importeren. Wanneer u het thema aan uw formulier toevoegt, weerspiegelt de opgegeven stijl de corresponderende componenten van het formulier. Met AEM 6.2 [!DNL Forms]kunt u thema&#39;s maken en deze toepassen op uw formulieren.
 
-Voor informatie over het maken en gebruiken van thema&#39;s raadpleegt u [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
+Zie voor informatie over het maken en gebruiken van thema&#39;s [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
 
 ### Letters  {#letters}
 
-Een AEM [!DNL Forms] brief is een veilige, gepersonaliseerde, en interactieve correspondentie. U kunt AEM [!DNL Forms] om in een gestroomlijnd proces snel letters (ook wel correspondentie genoemd) samen te stellen op basis van zowel vooraf goedgekeurde als aangepaste inhoud.
+Een AEM [!DNL Forms] letter is een veilige, persoonlijke en interactieve correspondentie. U kunt AEM [!DNL Forms] om in een gestroomlijnd proces snel letters (ook wel correspondentie genoemd) samen te stellen op basis van zowel vooraf goedgekeurde als aangepaste inhoud.
 
-Voor informatie over het maken en gebruiken van letters raadpleegt u [Letter maken](../../forms/using/create-letter.md).
+Zie voor informatie over het maken en gebruiken van letters [Letter maken](../../forms/using/create-letter.md).
 
 ### Documentfragmenten {#document-fragments}
 
-Documentfragmenten zijn herbruikbare onderdelen of onderdelen van een correspondentie waarmee u letters kunt samenstellen. De documentfragmenten zijn van het type tekst, lijst, voorwaarde en lay-outfragment. Voor informatie over het maken en gebruiken van documentfragmenten raadpleegt u [maken, documentfragmenten](/help/forms/using/document-fragments.md).
+Documentfragmenten zijn herbruikbare onderdelen of onderdelen van een correspondentie waarmee u letters kunt samenstellen. De documentfragmenten zijn van het type tekst, lijst, voorwaarde en lay-outfragment. Zie voor informatie over het maken en gebruiken van documentfragmenten [maken, documentfragmenten](/help/forms/using/document-fragments.md).
 
 ### Gegevenswoordenboeken {#data-dictionaries}
 
@@ -92,16 +88,16 @@ Voor informatie over het creëren van en het gebruiken van gegevenswoordenboeken
 
 ## Toegang tot AEM [!DNL Forms] Configuraties {#accessing-aem-forms-configurations}
 
-AEM deelvenster Gereedschappen bevat gereedschappen voor diverse componenten. Als u naar AEM Forms-specifieke gereedschappen wilt navigeren, klikt u op het logo van de Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) > Gereedschappen ![hamer](assets/hammer.png) > **[!UICONTROL Forms]**. De hulpmiddelen om de volgende functies uit te voeren worden getoond:
+AEM deelvenster Gereedschappen bevat gereedschappen voor diverse componenten. Om naar AEM Forms-specifieke hulpmiddelen te navigeren, klik het embleem van de Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) > Gereedschappen ![hamer](assets/hammer.png) > **[!UICONTROL Forms]**. De hulpmiddelen om de volgende functies uit te voeren worden getoond:
 
 * **Controlemap configureren:** Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de gecontroleerde map plaatst, een vooraf geconfigureerde bewerking wordt gestart en het bestand wordt gemanipuleerd. Zie voor meer informatie [Een gecontroleerde map maken en configureren](/help/forms/using/creating-configure-watched-folder.md).
 * **Forms App Offline Service configureren:** De AEM [!DNL Forms] de app offline service plaatst de paden of URL&#39;s van de bronnen die in een formulier worden gebruikt in cache. Het in cache plaatsen van paden of URL&#39;s van de bronnen die in een formulier worden gebruikt, verbetert de prestaties op de server. Als u de offline servercomponent van de AEM Forms-app wilt configureren, raadpleegt u [Werken in de offlinemodus](/help/forms/using/work-offline-mode.md).
 
-   ![AEM Forms-gereedschappen](assets/aem_forms_tools_new.png)
+  ![AEM Forms-gereedschappen](assets/aem_forms_tools_new.png)
 
-* **PDF Generator configureren:** Een beheerder kan AEM configureren [!DNL Forms] PDF Generator-instellingen, gebruikersaccounts toevoegen en configuratie importeren of exporteren naar de PDF Generator.
+* **PDF Generator configureren:** Een beheerder kan AEM configureren [!DNL Forms] De montages van de PDF Generator, voegen gebruikersrekeningen toe, en de invoer of de uitvoerconfiguratie aan de PDF Generator.
 * **Correspondentiebeheermiddelen publiceren:** AEM [!DNL Forms] Hiermee kunt u alle letters, documentfragmenten en gegevenswoordenboeken en verwante afhankelijkheden van een auteur tegelijk publiceren. De gepubliceerde activa omvatten alle activa van het Beheer van de Correspondentie en verwante gebiedsdelen. Zie voor meer informatie [Formulieren en documenten publiceren en de publicatie ervan opheffen](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Correspondentenbeheermiddelen exporteren:** U kunt alle middelen van het Beheer van de Correspondentie en verwante gebiedsdelen als pakket van een AEM downloaden [!DNL Forms] -instantie. Voor gedetailleerde stappen raadpleegt u [Elementen importeren en exporteren naar AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Correspondentenbeheermiddelen exporteren:** U kunt alle Correspondentenbeheermiddelen en gerelateerde afhankelijkheden als een pakket downloaden van een AEM [!DNL Forms] -instantie. Zie voor meer informatie [Elementen importeren en exporteren naar AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Algemene elementen van de gebruikersinterface {#commonelements}
 
@@ -114,14 +110,14 @@ AEM deelvenster Gereedschappen bevat gereedschappen voor diverse componenten. Al
 * **Weergaveswitcher:** U kunt klikken op het pictogram Weergaveswitcher ![weergaveoverzicht](assets/viewlist.png) of ![viewcard](assets/viewcard.png) om snel tussen lijst en kaartmening te schakelen. Voor meer informatie over gemeenschappelijke gebruikersinterfacecomponenten, zie [Authoring](/help/sites-authoring/author.md).
 * **Zoeken:** De zoekoptie ![zoeken](assets/search.png) biedt mogelijkheden om snel naar de gewenste inhoud en gereedschappen te zoeken en deze te gebruiken. Typ de naam van de inhoud of de productmogelijkheden en selecteer een van de suggesties. Typ bijvoorbeeld &quot;Documenten&quot; om snel te zoeken en naar **[!UICONTROL Forms & Documents]** of de Document Fragments console. Zie AEM 6.2 voor meer informatie over zoeken. [zoeken](/help/sites-authoring/search.md) artikel
 
-* **Werkbalk Handelingen**: Als u een element selecteert, verschijnt de werkbalk Handelingen boven de lijst met elementen. Het bevat alle beheerhulpmiddelen voor het geselecteerde element. U kunt de muisaanwijzer boven een gereedschapspictogram plaatsen om de knopinfo met een beschrijving van de functionaliteit weer te geven
+* **Werkbalk Handelingen**: Als u een element selecteert, wordt de werkbalk Handelingen boven de lijst met elementen weergegeven. Het bevat alle beheerhulpmiddelen voor het geselecteerde element. U kunt de muisaanwijzer boven een gereedschapspictogram plaatsen om de knopinfo met een beschrijving van de functionaliteit weer te geven
 
 >[!NOTE]
 >
 >Wanneer een gebruiker een zoekconsole van Forms &amp; Documents uitvoert, bevat de rail alleen **Filters en opties**. U kunt Filters en Opties gebruiken om geavanceerd zoeken uit te voeren.
 
-* **Werkbalk Handelingen**: Als u een element selecteert, verschijnt de werkbalk Handelingen boven de lijst met elementen. Het bevat alle beheerhulpmiddelen voor het geselecteerde element. U kunt de muisaanwijzer boven een gereedschapspictogram plaatsen om de knopinfo met een beschrijving van de functionaliteit weer te geven
+* **Werkbalk Handelingen**: Als u een element selecteert, wordt de werkbalk Handelingen boven de lijst met elementen weergegeven. Het bevat alle beheerhulpmiddelen voor het geselecteerde element. U kunt de muisaanwijzer boven een gereedschapspictogram plaatsen om de knopinfo met een beschrijving van de functionaliteit weer te geven
 
-   ![Werkbalk voor acties voor een adaptief formulier](assets/action_toolbar_new.png)
+  ![Werkbalk voor acties voor een adaptief formulier](assets/action_toolbar_new.png)
 
-   Werkbalk voor acties voor een adaptief formulier
+  Werkbalk voor acties voor een adaptief formulier

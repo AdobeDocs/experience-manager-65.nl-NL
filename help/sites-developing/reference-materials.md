@@ -1,20 +1,16 @@
 ---
 title: API-hulplijnen
-seo-title: API Guides
 description: Documentatie voor de API's die AEM voor het ontwikkelen van toepassingen
-seo-description: Documentation for the APIs that AEM provides for developing applications
-uuid: d998b23c-5b0a-462f-a733-02cf979de2d0
 contentOwner: Guillaume Carlino
 topic-tags: introduction
 audience: developing
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
-source-git-commit: d6c875e85d553b8ef557b811c9fa43f46824f297
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -27,13 +23,13 @@ Adobe Experience Manager (AEM) biedt verschillende API&#39;s voor het ontwikkele
 * [Granite UI (Touch-enabled) API-documentatie](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 * [Hulplijn koraalinterface](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 * [Widgets API-documentatie (Classic UI)](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [UI-testframework JavaScript API-naslaggids](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
+* [UI-testframework JavaScript API-referentie](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
 * [Referentie voor kern-JavaScript API van de Editor](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor SDK framework JavaScript API-referenties:
 
 * [Componenttoewijzing](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
-* [Paginamodellenbeheer](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [Paginamodel](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Bewerkbare componenten Reageren](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Bewerkbare angulars](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
@@ -45,9 +41,9 @@ API&#39;s voor levering en inhoudsbeheer AEM:
    * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
    * Zie de [De sectie Componenten in de Handleiding voor ontwikkelaars](/help/sites-developing/home.md) voor meer informatie
 
-* **Activa**: Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-update-delete) maken op Elementen, zoals binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
+* **Activa**: Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-update-delete) maken op Elementen, waaronder binaire gegevens, metagegevens, uitvoeringen en opmerkingen. Zie [AEM ASSETS HTTP API](/help/assets/mac-api-assets.md)
 
-* **Inhoudsfragmenten** (CF&#39;s): [CF-ondersteuning in HTTP-API voor middelen](/help/assets/assets-api-content-fragments.md) en [AEM Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **Inhoudsfragmenten** (CF): [CF-ondersteuning in HTTP-API voor middelen](/help/assets/assets-api-content-fragments.md) en [AEM Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 De volgende externe bronnen dienen slechts ter referentie:
 

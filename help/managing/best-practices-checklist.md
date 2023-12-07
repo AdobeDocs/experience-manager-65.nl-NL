@@ -1,18 +1,14 @@
 ---
 title: De checklist
-seo-title: The Checklist
 description: De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status.
-seo-description: The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
-uuid: e8ab9042-4d54-445d-b104-23d5d38f58b6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---

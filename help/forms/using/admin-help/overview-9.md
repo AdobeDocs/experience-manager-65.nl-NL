@@ -1,16 +1,12 @@
 ---
 title: Overzicht van de Forms-workflow
-seo-title: Overview of Forms workflow
-description: Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
-seo-description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
-uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
+description: Met de Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 exl-id: 68a9d95a-d51c-4a97-ae36-d4cb16c6fac0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 # Overzicht van de Forms-workflow {#overview-of-forms-workflow}
 
-Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
+Met de Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
 
 Op elke Forms-workflowpagina in de beheerconsole kunt u een andere set taken uitvoeren, zoals in deze tabel wordt beschreven.
 
@@ -44,7 +40,7 @@ Op elke Forms-workflowpagina in de beheerconsole kunt u een andere set taken uit
    <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Serverinstellingen configureren</a></p></td>
   </tr>
   <tr>
-   <td><p>formulierworkflow</p></td>
+   <td><p>formulierwerkstroom</p></td>
    <td>
     <ul>
      <li><p>Actieve processen weergeven</p></li>

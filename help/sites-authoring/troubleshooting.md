@@ -1,17 +1,15 @@
 ---
 title: Problemen bij het ontwerpen in AEM oplossen
 description: Sommige problemen die u bij het gebruik van AEM kunt tegenkomen.
-uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 10%
+ht-degree: 0%
 
 ---
 
@@ -45,7 +43,7 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
    * Toevoegen `?` tot het einde van de pagina-URL. Bijvoorbeeld:
 
       * `http://localhost:4502/sites.html/content?`
-      * Hiermee wordt de pagina rechtstreeks bij AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
+      * Hiermee wordt de pagina rechtstreeks vanaf AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
 
    * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 

@@ -1,17 +1,13 @@
 ---
 title: Formulieren met API's op een webpagina weergeven
-seo-title: Listing forms on a web page using APIs
 description: U kunt via programmacode vragen in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
-seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
-uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ AEM Forms biedt een REST-API voor zoekopdrachten die webontwikkelaars kunnen geb
 
 Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de GET naar de server op `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met query-parameters die hieronder worden beschreven.
 
-## Parameters query {#query-parameters}
+## Query-parameters {#query-parameters}
 
 <table>
  <tbody>
@@ -32,17 +28,17 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde in van de optie <code>func </code>kenmerk naar <code>searchForms</code>.</p> <p>Bijvoorbeeld, <code class="code">
+   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde in van de optie <code>func </code>kenmerk naar <code>searchForms</code>.</p> <p>Bijvoorbeeld: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking:</strong> <em>Deze parameter is verplicht.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Hier geeft u het toepassingspad op dat u wilt gebruiken om formulieren te zoeken. Standaard zoekt het kenmerk appPath alle toepassingen die beschikbaar zijn op het niveau van de hoofdnode.<br /> </p> <p>U kunt meerdere toepassingspaden opgeven in één zoekquery. Scheid meerdere paden van elkaar met verticale streep (|). </p> </td>
+   <td><p>Hier geeft u het toepassingspad op dat u wilt gebruiken om formulieren te zoeken. Standaard zoekt het kenmerk appPath alle toepassingen die beschikbaar zijn op het niveau van de hoofdnode.<br /> </p> <p>U kunt meerdere toepassingspaden opgeven in één zoekquery. Scheid meerdere paden met verticale streep (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Geeft de eigenschappen aan die met de elementen moeten worden opgehaald. U kunt sterretje (*) gebruiken om alle eigenschappen tegelijk op te halen. Gebruik de verticale operator (|) om meerdere eigenschappen op te geven. </p> <p>Bijvoorbeeld, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Opmerking</strong>: </p>
+   <td><p>Geeft de eigenschappen aan die met de elementen moeten worden opgehaald. U kunt sterretje (*) gebruiken om alle eigenschappen tegelijk op te halen. Gebruik de verticale operator (|) om meerdere eigenschappen op te geven. </p> <p>Bijvoorbeeld: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Opmerking</strong>: </p>
     <ul>
      <li><em>Eigenschappen zoals id, path en name worden altijd opgehaald. </em></li>
      <li><em>Elk element heeft een andere set eigenschappen. Eigenschappen zoals formUrl, pdfUrl en guideUrl zijn niet afhankelijk van het kenmerk cutpoints. Deze eigenschappen zijn afhankelijk van het type element en worden dienovereenkomstig opgehaald. </em></li>
@@ -52,7 +48,7 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
    <td>relatie<br /> </td>
    <td>Hiermee geeft u de verwante elementen op die samen met de zoekresultaten moeten worden opgehaald. U kunt een van de volgende opties kiezen om gerelateerde elementen op te halen:
     <ul>
-     <li><strong>NO_RELATION</strong>: Verwante elementen niet ophalen.</li>
+     <li><strong>NO_RELATION</strong>: Haal gerelateerde elementen niet op.</li>
      <li><strong>ONMIDDELLIJK</strong>: Hiermee zoekt u elementen die rechtstreeks gerelateerd zijn aan zoekresultaten.</li>
      <li><strong>ALLES</strong>: Rechtstreeks en indirect verband houdende activa ophalen.</li>
     </ul> </td>
@@ -71,13 +67,13 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
   </tr>
   <tr>
    <td>instructies</td>
-   <td><p>Hier geeft u de lijst met instructies op. De query's worden uitgevoerd in de lijst met instructies die in de JSON-indeling zijn opgegeven. </p> <p>Bijvoorbeeld,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Hier geeft u de lijst met instructies op. De query's worden uitgevoerd in de lijst met instructies die in de JSON-indeling zijn opgegeven. </p> <p>Bijvoorbeeld:</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>In het bovenstaande voorbeeld: </p>
     <ul>
-     <li><strong>name</strong>: Hiermee wordt de naam opgegeven van de eigenschap waarnaar moet worden gezocht.</li>
+     <li><strong>name</strong>: geeft de naam op van de eigenschap waarnaar moet worden gezocht.</li>
      <li><strong>value</strong>: geeft de waarde aan van de eigenschap waarnaar moet worden gezocht.</li>
      <li><strong>operator</strong>: geeft de operator aan die moet worden toegepast tijdens het zoeken. De volgende operatoren worden ondersteund:
       <ul>
@@ -98,15 +94,15 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
   </tr>
   <tr>
    <td>bestellingen<br /> </td>
-   <td><p>Hiermee geeft u de volgordecriteria voor de zoekresultaten op. De criteria worden gedefinieerd in de JSON-indeling. U kunt zoekresultaten sorteren op meerdere velden. De resultaten worden gesorteerd in de volgorde waarin de velden in de query worden weergegeven.</p> <p>Bijvoorbeeld,</p> <p>Voeg de volgende parameter toe om queryresultaten op te halen die zijn geordend door eigenschap title in oplopende volgorde: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Hiermee geeft u de volgordecriteria voor de zoekresultaten op. De criteria worden gedefinieerd in de JSON-indeling. U kunt zoekresultaten sorteren op meerdere velden. De resultaten worden gesorteerd in de volgorde waarin de velden in de query worden weergegeven.</p> <p>Bijvoorbeeld:</p> <p>Voeg de volgende parameter toe om queryresultaten op te halen die zijn geordend door eigenschap title in oplopende volgorde: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>name</strong>: Hiermee geeft u de naam op van de eigenschap die moet worden gebruikt om de zoekresultaten te ordenen.</li>
-     <li><strong>criteria</strong>: Hiermee geeft u de volgorde van de resultaten op. Het kenmerk order accepteert de volgende waarden:
+     <li><strong>name</strong>: Geeft de naam op van de eigenschap die moet worden gebruikt om de zoekresultaten te bestellen.</li>
+     <li><strong>criteria</strong>: Geeft de volgorde van de resultaten aan. Het kenmerk order accepteert de volgende waarden:
       <ul>
        <li>ASC - Gebruik ASC om resultaten in oplopende volgorde te rangschikken.<br /> </li>
        <li>DES - Gebruik DES om resultaten in dalende orde te rangschikken.</li>

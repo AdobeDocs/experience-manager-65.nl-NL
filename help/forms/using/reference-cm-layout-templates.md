@@ -1,17 +1,13 @@
 ---
 title: Referentielettersjablonen
-seo-title: Reference letter templates
 description: AEM Forms biedt lay-outsjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken.
-seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
-uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
-discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 In Correspondence Management bevat een lettertypesjabloon typische formuliervelden, indelingsfuncties zoals een kop- en voettekst en lege &quot;doelgebieden&quot; voor de plaatsing van inhoud.
 
-Correspondentenbeheer bevat lettertypesjablonen in de [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
+Correspondentenbeheer bevat lettertypesjablonen in het dialoogvenster [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
 
 * Klassiek
 * Klassiek eenvoudig
@@ -55,7 +51,7 @@ PDF voorbeeld van een letter die is gemaakt met de klassieke sjabloon
 
 ## Klassiek eenvoudig {#classic-simple}
 
-Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres. Een klassieke eenvoudige sjabloon lijkt op de klassieke sjabloon, behalve dat er geen velden zijn waarin u het adres van de ontvanger kunt invoeren.
+Bevat velden voor het vastleggen van telefoonnummer en e-mailadres. Een klassieke eenvoudige sjabloon lijkt op de klassieke sjabloon, behalve dat er geen velden zijn waarin u het adres van de ontvanger kunt invoeren.
 
 ![Fragment met contactgegevens](assets/classicsimple.png)
 
@@ -89,7 +85,7 @@ PDF voorproef van een gemaakte brief gebruikend het Visuele Linkermalplaatje
 
 Het visuele Bovenste malplaatje heeft visuele marge op de bovenkant. Het Visuele Top malplaatje heeft een gebied om het adres van de ontvanger op de pagina zelf in te gaan. De visuele Top malplaatje heeft het onderwerpgebied en een footer die voor brieven opnieuw stroomt die tot veelvoudige pagina&#39;s uitbreiden.
 
-![visualtop](assets/visualtop.png)
+![visuaal](assets/visualtop.png)
 
 PDF voorproef van een gemaakte brief gebruikend het Visuele Top malplaatje
 

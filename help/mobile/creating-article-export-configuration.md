@@ -1,18 +1,14 @@
 ---
 title: Artikel-exportconfiguratie maken
-seo-title: Creating Article Export Configuration
 description: Volg deze pagina voor meer informatie over het exporteren van inhoud van Adobe Experience Manager (AEM) voor uploaden naar AEM Mobile.
-seo-description: Follow this page to learn about exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
-uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -46,7 +42,7 @@ De ContentSync-configuratie gevonden op **&lt;dps-exporttemplate>/dps-article>**
 >U kunt de onderstaande stappen uitvoeren om voorbeelden van gedeelde bronnen weer te geven, alleen als u beschikt over:
 >
 >* de voorbeeldinhoud geïnstalleerd
->* uitvoeren, AEM
+>* AEM uitvoeren
 >* geen gevormde douanecontext of een verschillende haven
 >
 

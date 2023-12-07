@@ -1,18 +1,14 @@
 ---
 title: Strategie voor back-up en herstel in een geclusterde omgeving
-seo-title: Strategy for backup and restore in a clustered environment
 description: Als in de implementatie van uw AEM aanvullende aangepaste gegevens worden opgeslagen in een andere database, moet u een strategie implementeren voor het maken van back-ups van deze gegevens, zodat deze consistent blijven met de AEM formuliergegevens.
-seo-description: If your AEM forms implementation stores additional custom data in a different database, you must implement a strategy to back up this data ensuring that it remains in sync with the AEM forms data.
-uuid: c29b989c-30ed-4a8e-bab8-9b7746291a33
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 98c96349-f253-475f-b646-352269814a38
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---
@@ -40,7 +36,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
 * Offline back-up met downtime
 * Offlineback-up zonder downtime (back-up van een tweede knooppunt dat is afgesloten)
 * Onlineback-up zonder downtime maar vertraging in reactie
-* Een back-up maken van het eigenschappenbestand Bootstrap
+* Een back-up maken van het eigenschappenbestand voor Bootstrappen
 
 ### Offline back-up met downtime {#offline-backup-with-downtime}
 
@@ -52,7 +48,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van de opslagplaats/systeem-id van elk clusterknooppunt afzonderlijk.
 
-   Voor gedetailleerde stappen raadpleegt u [Back-up en herstel](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Zie voor meer informatie [Back-up en herstel](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
@@ -71,7 +67,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van repository/system.id van elk clusterknooppunt afzonderlijk.
 
-   Voor gedetailleerde stappen raadpleegt u [Back-up en herstel](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Zie voor meer informatie [Back-up en herstel](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
@@ -93,11 +89,11 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
 
-### Een back-up maken van het eigenschappenbestand Bootstrap {#back-up-the-bootstrap-properties-file}
+### Een back-up maken van het eigenschappenbestand voor Bootstrappen {#back-up-the-bootstrap-properties-file}
 
-Wanneer wij een AEM cluster creëren, wordt een bezitsdossier gecreeerd in de toepassingsserver voor alle secundaire knopen. Het wordt aanbevolen een back-up te maken van het eigenschappenbestand Bootstrap. U kunt het bestand op de volgende locatie op uw toepassingsserver vinden:
+Wanneer wij een AEM cluster creëren, wordt een bezitsdossier gecreeerd in de toepassingsserver voor alle secundaire knopen. Het wordt aanbevolen een back-up te maken van het eigenschappenbestand van de Bootstrap. U kunt het bestand op de volgende locatie op uw toepassingsserver vinden:
 
-* JBoss®: in de directory BIN
+* JBoss®: in de BIN-directory
 * WebLogic: in de domeinmap
 * WebSphere®: in de profielmap
 
@@ -134,7 +130,7 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
    1. Verwijder het bestand clusterNode/revision.log op het knooppunt.
    1. Verwijder de .lock op het knooppunt, indien aanwezig.
    1. Verwijder de map repository/system.id op het knooppunt, indien aanwezig.
-   1. De bestanden &amp;voorst verwijderen;&amp;ast;/listener.properties op het knooppunt, indien aanwezig.
+   1. De bestanden &amp;voorst verwijderen;&amp;ast;/listener.properties, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]
@@ -163,8 +159,8 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
    1. Kopieer alle bestanden van het herstelde clusterknooppunt naar alle andere clusterknooppunten. Zodra gedaan, bevat elke clusterknoop de zelfde gegevens.
    1. Verwijder het bestand clusterNode/revision.log op alle clusterknooppunten.
    1. Verwijder de .lock op alle clusterknooppunten, indien aanwezig.
-   1. Verwijder de eventuele repository/system.id.
-   1. De bestanden &amp;voorst verwijderen;&amp;ast;/listener.properties op alle clusterknooppunten, indien aanwezig.
+   1. Verwijder repository/system.id alle clusterknooppunten, indien aanwezig.
+   1. De bestanden &amp;voorst verwijderen;&amp;ast;/listener.properties, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]

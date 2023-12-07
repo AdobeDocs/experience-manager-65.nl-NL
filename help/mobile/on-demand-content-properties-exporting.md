@@ -1,18 +1,14 @@
 ---
 title: Inhoud-eigenschappen gebruiken om inhoud te exporteren
-seo-title: Using Content Properties to Export Content
 description: Op de volgende pagina worden App-eigenschappen en -knooppunten weergegeven.
-seo-description: The following page shows App Properties and Nodes.
-uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -21,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Apps worden weergegeven als *cq:pagina&#39;s* in AEM.
 
-Ze delen dezelfde gemeenschappelijke eigenschappen die in *cq:pagina* naast de hieronder getoonde andere die integratie ondersteunende eigenschappen vertegenwoordigen.
+Ze delen dezelfde gemeenschappelijke eigenschappen die in *cq:pagina* naast de hieronder getoonde andere eigenschappen die integratieondersteunende eigenschappen vertegenwoordigen.
 
 ## App-eigenschappen {#app-properties}
 
@@ -46,7 +42,7 @@ De volgende tabel toont **Eigenschappen en knooppunten van app**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>String:Path</td>
-   <td><p>Pad naar de exportconfiguraties van de app. De exportconfiguratie is een map met 2 onderliggende ContentSync-exportconfiguratiesjablonen;</p> <p><i>dps-artikel</i>: ContentSync exportconfiguratie om artikelinhoud te exporteren</p> <p><i>dps-HTMLResources</i>: ContentSync exportconfiguratie voor het exporteren van gedeelde app/artikel-bronnen</p> </td>
+   <td><p>Pad naar de exportconfiguraties van de app. De exportconfiguratie is een map met 2 onderliggende ContentSync-exportconfiguratiesjablonen;</p> <p><i>dps-artikel</i>: ContentSync exportconfiguratie voor het exporteren van artikelinhoud</p> <p><i>dps-HTMLResources</i>: ContentSync-exportconfiguratie voor het exporteren van gedeelde bronnen in app/article</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>

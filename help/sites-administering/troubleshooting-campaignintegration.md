@@ -1,16 +1,14 @@
 ---
 title: Problemen met de Adobe Campaign Classic-integratie oplossen
 description: Leer hoe u problemen met de Adobe Campaign Classic-integratie kunt oplossen.
-uuid: 835ac2c3-ef2f-4963-9047-aeda3647b114
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -122,14 +120,14 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 
 Wanneer u probeert inhoud te synchroniseren in Adobe Campaign Classic-levering, wordt AEM een lijst met nieuwsbrieven geretourneerd. De URL&#39;s naar de nieuwsbrieven in de lijst kunnen echter HTTP-adressen zijn in plaats van HTTPS. Als u een van de items in de lijst selecteert, treedt er een fout op. Deze fout kan met de volgende opstelling gebeuren.
 
-* Gehoste Adobe Campaign die https gebruikt voor communicatie met AEM Author
+* Gehoste Adobe Campaign die https gebruikt voor communicatie met AEM auteur
 * Reverse proxy die SSL beëindigt
-* AEM-auteurinstantie op locatie
+* Instantie AEM auteur op locatie
 
 Ga als volgt te werk om dit probleem op te lossen:
 
 * De AEM Dispatcher of reverse-proxy moet zijn geconfigureerd om het oorspronkelijke protocol als een header door te geven.
-* De **Apache Felix Http Service SSL-filter** in de configuratie OSGi van AEM moet met de vereiste kopbalmontages worden gevormd.
+* De **Apache Felix HTTP Service SSL-filter** in de configuratie OSGi van AEM moet met de vereiste kopbalmontages worden gevormd.
    * `https://<host>:<port>/system/console/configMgr`
    * Zie [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 

@@ -1,15 +1,11 @@
 ---
 title: "Lesbestand: interactieve communicatie plannen"
-seo-title: Plan your Interactive Communication
 description: Plan de anatomie voor uw Interactieve Communicatie
-seo-description: Plan the anatomy for your Interactive Communication
-uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -94,7 +90,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
      <li>Statuscode</li>
      <li>Aantal verbindingen</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Bill Summary</td>
@@ -108,7 +104,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
      <li>Te betalen bedrag</li>
      <li>Vervaldatum</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Overzicht van kosten</td>
@@ -126,7 +122,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
      <li>TOTAAL BETAALBAAR (veld gebruiksrechten berekend)</li>
     </ul> <p>Tabel - rekeningen</p> </td>
    <td>Geen velden</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Gespecialiseerde vraag - Uitgaand</td>
@@ -140,20 +136,20 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
     </ul> </td>
    <td><p>Alle waarden</p> <p>Tabel - aanroepen</p> </td>
    <td>Geen velden</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Nu betalen</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>Nu betalen</td>
   </tr>
   <tr>
    <td>Services voor toegevoegde waarde</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

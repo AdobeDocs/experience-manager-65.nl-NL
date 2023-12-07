@@ -1,19 +1,15 @@
 ---
 title: Essentiële elementen activiteitsstroom
-seo-title: Activity Stream Essentials
 description: Lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud worden uitgevoerd
-seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
-uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -73,7 +69,7 @@ A *[sociale grafiek](/help/communities/essentials-socialgraph.md)* vangt de volg
 
 * [Activity Streams-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [Activity Streams Listener-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [Listener-API voor activiteitsstromen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Aanpassingen op de server](/help/communities/server-customize.md)
 

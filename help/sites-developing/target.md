@@ -1,19 +1,15 @@
 ---
 title: Ontwikkelen voor gerichte inhoud
-seo-title: Developing for Targeted Content
 description: Onderwerpen over het ontwikkelen van componenten voor gebruik met inhoud die richten
-seo-description: Topics about developing components for use with content targeting
-uuid: 2449347e-7e1c-427b-a5b0-561055186934
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -80,7 +76,7 @@ De set bibliotheken die wordt geladen, is afhankelijk van het type doelclientbib
 
 >[!NOTE]
 >
->Alleen de versie van `at.js` wordt ondersteund. De versie van `at.js` samen met het product te worden geleverd, kan worden verkregen door `at.js` bestand op locatie:
+>Alleen de versie van `at.js` wordt ondersteund bij verzending met het product. De versie van `at.js` samen met het product te worden geleverd, kan worden verkregen door `at.js` bestand op locatie:
 >
 >**/libs/cq/testandtarget/clientlibs/testandtarget/atjs/source/at.js**.
 
@@ -195,7 +191,7 @@ Het JSP manuscript van deze component produceert vraag aan het Doel javascript A
 
 >[!NOTE]
 >
->De vakken zijn standaard verborgen. De klasse mboxDefault bepaalt dit gedrag. Verborgen vakken zorgen ervoor dat bezoekers de standaardinhoud niet zien voordat deze wordt omgewisseld. het verbergen van vakken heeft echter invloed op waargenomen prestaties .
+>De vakken zijn standaard verborgen. De klasse mboxDefault bepaalt dit gedrag. Verborgen vakken zorgen ervoor dat bezoekers de standaardinhoud niet zien voordat deze wordt omgewisseld. Het verbergen van vakken heeft echter invloed op de waargenomen prestaties.
 
 Het standaard mbox.js- dossier dat wordt gebruikt om dozen tot stand te brengen wordt gevestigd in /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Als u een bestand mbox.js van de klant wilt gebruiken, voegt u het bestand toe aan de configuratie van de doelcloud. Als u het bestand wilt toevoegen, moet het bestand mbox.js beschikbaar zijn op het bestandssysteem.
 
@@ -205,7 +201,7 @@ Als u bijvoorbeeld de opdracht [Marketing Cloud-id-service](https://experiencele
 >
 >Als een douanembox in een configuratie van het Doel wordt bepaald, moet iedereen gelezen toegang hebben tot **/etc/cloudservices** op publicatieservers. Zonder deze toegang leidt het laden van mbox.js-bestanden op de publicatiewebsite tot een fout van 404.
 
-1. Ga naar de CQ **Gereedschappen** pagina en selecteer **Cloud Services**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Ga naar de CQ **Gereedschappen** pagina en selecteer **Cloud Servicen**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. Selecteer Adobe Target in de boomstructuur en dubbelklik in de lijst met configuraties op de doelconfiguratie.
 1. Klik op Bewerken op de configuratiepagina.
 1. Voor het bezit van Custom mbox.js, doorbladert de klik en selecteert het dossier.
@@ -223,7 +219,7 @@ Als u de opdracht Doel uit het contextmenu wilt verwijderen, voegt u de volgende
 
 * Naam: cq:disableTargeting
 * Type: Boolean
-* Waarde: Waar
+* Waarde: waar
 
 Als u bijvoorbeeld het aanwijzen van doelen voor de titelcomponenten van de Geometrixx Demo-sitepagina&#39;s wilt uitschakelen, voegt u de eigenschap toe aan het knooppunt /apps/geometrixx/components/title/cq:editConfig.
 
@@ -235,11 +231,11 @@ Als u bijvoorbeeld het aanwijzen van doelen voor de titelcomponenten van de Geom
 >
 >Als u DTM niet gebruikt, stuurt u een bevestiging van de bestelling naar Adobe Target.
 
-Als u de prestaties van uw website wilt volgen, stuurt u aankoopgegevens van de bevestigingspagina van uw bestelling naar Adobe Target. (Zie [Een orderConfirmPage Mbox maken](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) en [Mbox met orderbevestiging - aangepaste parameters toevoegen.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target herkent mbox-gegevens als orderbevestigingsgegevens wanneer uw MBox-naam `orderConfirmPage` en gebruikt de volgende specifieke parameternamen:
+Als u de prestaties van uw website wilt volgen, stuurt u aankoopgegevens van de bevestigingspagina van uw bestelling naar Adobe Target. (Zie [Een orderConfirmPage Mbox maken](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) en [Mbox met orderbevestiging - Aangepaste parameters toevoegen.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target herkent mbox-gegevens als orderbevestigingsgegevens wanneer uw MBox-naam `orderConfirmPage` en gebruikt de volgende specifieke parameternamen:
 
-* productPurchasedId: Een lijst met id&#39;s die de aangeschafte producten identificeren.
+* productPurchasedId: een lijst met id&#39;s die de aangekochte producten identificeren.
 * orderId: De id van de bestelling.
-* orderTotal: Het totale bedrag van de aankoop.
+* ordertotaal: het totale bedrag van de aankoop.
 
 De code op de gerenderde pagina van de HTML die tot mbox leidt is gelijkaardig aan het volgende voorbeeld:
 
@@ -319,20 +315,20 @@ Wanneer de component is opgenomen in de uitcheckpagina in het vorige voorbeeld, 
 
 ## De doelcomponent begrijpen {#understanding-the-target-component}
 
-Met de component Target kunnen auteurs dynamische vakken maken op basis van CQ-inhoudscomponenten. (Zie [Inhoud instellen](/help/sites-authoring/content-targeting-touch.md).) De doelcomponent bevindt zich op /libs/cq/personalization/components/target.
+Met de component Target kunnen auteurs dynamische vakken maken op basis van CQ-inhoudscomponenten. (Zie [Inhoudsgericht](/help/sites-authoring/content-targeting-touch.md).) De doelcomponent bevindt zich op /libs/cq/personalization/components/target.
 
 Het target.jsp manuscript toegang tot de paginaeigenschappen om de het richten motor te bepalen voor de component te gebruiken, en voert dan het aangewezen manuscript uit:
 
 * Adobe Target: /libs/cq/personalization/components/target/engine_tnt.jsp
 * [Adobe Target met AT.JS](/help/sites-administering/target.md): /libs/cq/personalization/components/target/engine_atjs.jsp
 * [Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md): /libs/cq/personalization/components/target/engine_cq_campaign.jsp
-* Client-side regels/ContextHub: /libs/cq/personalization/components/target/engine_cq.jsp
+* Client-kant Rules/ContextHub: /libs/cq/personalization/components/target/engine_cq.jsp
 
 ### Maken van dozen {#the-creation-of-mboxes}
 
 >[!NOTE]
 >
->De vakken zijn standaard verborgen. De klasse mboxDefault bepaalt dit gedrag. Verborgen vakken zorgen ervoor dat bezoekers de standaardinhoud niet zien voordat deze wordt omgewisseld. het verbergen van vakken heeft echter invloed op waargenomen prestaties .
+>De vakken zijn standaard verborgen. De klasse mboxDefault bepaalt dit gedrag. Verborgen vakken zorgen ervoor dat bezoekers de standaardinhoud niet zien voordat deze wordt omgewisseld. Het verbergen van vakken heeft echter invloed op de waargenomen prestaties.
 
 Als Adobe Target de doelinhoud aanstuurt, maakt het script engine_tnt.jsp vakken die de inhoud van de beoogde ervaring bevatten:
 
@@ -343,7 +339,7 @@ Als Adobe Target de doelinhoud aanstuurt, maakt het script engine_tnt.jsp vakken
 Na de `mboxDefault` div-element, wordt het javascript dat de mbox maakt, ingevoegd:
 
 * De naam, de id en de locatie van de box zijn gebaseerd op het opslagpad van de component.
-* Het manuscript verkrijgt de parameternamen en waarden van de Context van de Cliënt.
+* Het script verkrijgt namen en waarden van parameters voor de clientcontext.
 * De aanroepen worden gemaakt aan de functies die mbox.js en andere cliëntbibliotheken bepalen om dozen tot stand te brengen.
 
 #### Clientbibliotheken voor doelinhoud {#client-libraries-for-content-targeting}

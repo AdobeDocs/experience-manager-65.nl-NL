@@ -1,19 +1,15 @@
 ---
 title: AEM inschakelen om te zoeken naar met documentbeveiliging beveiligde PDF- en Microsoft Office-documenten
-seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
 description: Leer hoe u native AEM zoekopdracht kunt inschakelen voor het uitvoeren van full-text zoekopdrachten op DRM-beveiligde PDF-documenten.
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
-uuid: dba882f8-bad4-4122-a0df-03cf087afb23
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -43,7 +39,7 @@ Een veilige verbinding laat naadloze stroom van informatie tussen AEM Forms op J
 1. Zoek en open de AEM Forms Client SDK-bundel. Geef waarde op voor de volgende eigenschappen:
 
    * **Server-URL:** Geef de HTTP-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM Forms op de JEE-server opnieuw met de -Djavax.net.ssl.trustStore=&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> parameter.
-   * **Servicenaam**: Voeg RightsManagementService aan de lijst van de gespecificeerde diensten toe.
+   * **Servicenaam**: Voeg de RightsManagementService toe aan de lijst met opgegeven services.
    * **Gebruikersnaam:** Geef de gebruikersnaam van de AEM Forms op de JEE-account op die moet worden gebruikt om aanroepen vanuit AEM Forms op de JEE-server te starten. De opgegeven account moet gemachtigd zijn om documentservices aan te roepen op de AEM Forms op de JEE-server.
    * **Wachtwoord**: Geef het wachtwoord van de AEM Forms op voor de JEE-account die in het veld Gebruikersnaam wordt vermeld.
 
@@ -61,9 +57,9 @@ Een veilige verbinding laat naadloze stroom van informatie tussen AEM Forms op J
    * **TrustStore-bestands-URL**: Geef de URL van het bestand truststore op.
    * **KeyStore-wachtwoord**: Geef het wachtwoord voor het sleutelarchiefbestand op.
    * **TrustStorePassword**: Geef het wachtwoord voor het bestand truststore op.
-   * **Servicenaam**: Voeg RightsManagementService aan de lijst van de gespecificeerde diensten toe.
+   * **Servicenaam**: Voeg de RightsManagementService toe aan de lijst met opgegeven services.
 
-   Klikken **Opslaan**. AEM is ingeschakeld om te zoeken in documenten met beveiliging van PDF en Microsoft Office-documenten
+   Klikken **Opslaan**. AEM is ingeschakeld om te zoeken in documenten met beveiliging van PDF en Microsoft Office
 
 ## Een voorbeelddocument met een beleid beveiligde PDF of Microsoft Office-document indexeren {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

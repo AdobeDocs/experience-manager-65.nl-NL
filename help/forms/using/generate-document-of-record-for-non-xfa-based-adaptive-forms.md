@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3404'
+source-wordcount: '3454'
 ht-degree: 0%
 
 ---
 
-# Document met record genereren voor adaptieve formulieren{#generate-document-of-record-for-adaptive-forms}
+# Document met record genereren voor adaptieve formulieren of adaptieve formulierfragmenten {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 Nadat u een formulier hebt verzonden, willen uw klanten doorgaans de informatie die zij in het formulier hebben ingevuld, afdrukken of in documentindeling bewaren voor toekomstig gebruik. Dit wordt bedoeld als document van verslag.
 
-In dit artikel wordt uitgelegd hoe u een recorddocument kunt genereren voor adaptieve formulieren.
+In dit artikel wordt uitgelegd hoe u een recorddocument kunt genereren voor adaptief Forms- of adaptief formulierfragment.
 
 >[!NOTE]
 >
@@ -68,6 +68,8 @@ Automatisch gegenereerde recorddocumenten hebben de volgende voordelen:
 Voor het genereren van een recorddocument voor adaptieve formulieren hebt u de volgende componenten nodig:
 
 **Aangepast formulier** Aangepast formulier waarvoor u een document met records wilt genereren.
+
+**Adaptief formulierfragment** Adaptief formulierfragment waarvoor u een document met records wilt genereren.
 
 **Basissjabloon (aanbevolen)** XFA-sjabloon (XDP-bestand) gemaakt in AEM Designer. De malplaatje van de basis wordt gebruikt om het stileren en het brandmerken informatie voor document van verslagmalplaatje te specificeren.
 
@@ -273,7 +275,7 @@ U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
    >
    >Selecteer op het tabblad Formuliermodel de optie **Schema** of **Geen** van de **Selecteren uit** vervolgkeuzelijst. **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
 
-1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel een van de volgende opties.
+1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel een van de volgende opties:
 
    **Geen** Selecteer deze optie als u geen document van verslag voor de vorm wilt vormen.
 
@@ -396,6 +398,10 @@ Het document met recordinstellingen van een component is beschikbaar onder de ei
    * **[!UICONTROL Overflow]** > **[!UICONTROL Go to Content Area]** > Naam van inhoudsgebied: begint het opgegeven inhoudsgebied te vullen.
    * **[!UICONTROL Overflow]** > **[!UICONTROL Go To Page]** > Naam van pagina: begint de opgegeven pagina te vullen.
 
+  >[!NOTE]
+  >
+  > Pagineringseigenschap is niet beschikbaar voor adaptieve formulierfragmenten.
+
 Voor informatie over het toepassen van pagina-einden en het toepassen van meerdere stramienpagina&#39;s in een document met records raadpleegt u [Pagina-einde toepassen in een document van record](#apply-page-breaks-in-dor) en [Meerdere stramienpagina&#39;s toepassen op een document met records](#apply-multiple-master-pages-dor).
 
 **Instellingen voor formulierniveau**
@@ -437,6 +443,9 @@ AEM Forms past de tweede basispagina toe op het deelvenster en alle volgende dee
 1. Selecteren ![Opslaan](/help/forms/using/assets/save_icon.png) om de eigenschappen op te slaan.
 AEM Forms past de derde basispagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
 
+>[!NOTE]
+>
+> U kunt geen meerdere basispagina&#39;s toepassen op een Document of Record voor een adaptief formulierfragment.
 
 ## Belangrijke overwegingen bij het werken met een document {#key-considerations-when-working-with-document-of-record}
 

@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3984'
 ht-degree: 0%
 
 ---
@@ -242,12 +242,12 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
    <td><p><strong>Ondersteunde patchdefinities</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Afgekeurd)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Afgekeurd) <sup>[9]</sup></td>
    <td>A: Ondersteund</td>
    <td>Servicepack en kritieke updates</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A: Ondersteund</td>
    <td>Servicepack en kritieke updates</td>
   </tr>
@@ -355,6 +355,9 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 1. AEM Forms op JEE biedt geen ondersteuning voor WebSphere®-toepassingsserver op CentOS.
 1. AEM Forms on JEE biedt geen ondersteuning voor JBoss® op rollen gebaseerde toegangsbeheer (RBAC).
 1. AEM Forms on JEE biedt alleen ondersteuning voor Oracle Java™ SE 11 (64-bits) SDK voor de toepassingsserver JBoss® EAP 7.4.
+1. JDK-versies hoger dan 1.8.0_281 worden niet ondersteund voor WebLogic-server. (FORMS-8498)
+1. [!DNL Microsoft® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
+
 
 Houd rekening met de volgende punten wanneer u software kiest voor de Adobe van AEM Forms bij JEE-implementaties:
 
@@ -407,11 +410,11 @@ Houd rekening met de volgende punten wanneer u software kiest voor de Adobe van 
   </tr>
   <tr>
    <td>EMC Documentum®</td>
-   <td>7.3</td>
+   <td>7,3</td>
   </tr>
   <tr>
    <td>IBM® FileNet</td>
-   <td>5.5.2</td>
+   <td>5.5.2.</td>
   </tr>
   <tr>
    <td>IBM® Content Manager Server (afgekeurd) </td>
@@ -419,10 +422,10 @@ Houd rekening met de volgende punten wanneer u software kiest voor de Adobe van 
   </tr>
   <tr>
    <td> IBM® Content Manager Client (afgekeurd)</td>
-   <td>8.5 </td>
+   <td>8,5 </td>
   </tr>
    <td>Microsoft® Sharepoint </td>
-   <td>2019<br /> </td>
+   <td>19<br /> </td>
   </tr>
  </tbody>
 </table>

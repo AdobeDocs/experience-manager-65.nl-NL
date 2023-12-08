@@ -4,9 +4,9 @@ description: Installeer AEM Forms-documentservices voor het maken, samenstellen,
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '5342'
+source-wordcount: '5442'
 ht-degree: 0%
 
 ---
@@ -556,6 +556,16 @@ De dienst van de Assembler hangt van de dienst van de Uitbreidingen van de Reade
   </tr>
  </tbody>
 </table>
+
+### (Alleen Windows) Registervermelding configureren voor Microsoft® Project {#configure-registry-entry-for-microsoft-project}
+
+Nadat u de invoegtoepassing AEM Forms en het Microsoft®-project op uw computer hebt geïnstalleerd, registreert u een vermelding voor het Microsoft®-project op de 64-bits locatie. Het vergemakkelijkt de uitvoering van project aan PDFG omzettingstests. Hieronder volgen de stappen waarin het registratieproces wordt beschreven:
+
+1. Open de Register-editor van Microsoft® Windows (regedit), ga naar Start > Uitvoeren om de registereditor te openen, typ regedit en klik op OK.
+1. Navigeren naar `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`en een nieuwe **Binaire waarde** registreren en naam ervan wijzigen in **Project**.
+1. Wijzig de gegevenswaarde van gecreeerd Binair register in 01 en klik O.K.
+1. Sluit de registervermelding.
+
 
 ## Bekende problemen en problemen oplossen {#known-issues-and-troubleshooting}
 

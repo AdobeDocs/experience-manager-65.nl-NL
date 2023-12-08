@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '4205'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | Versie | 6.5.19,0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
-| Datum | Donderdag 30 november 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Datum | Donderdag 7 december 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Wat is inbegrepen in [!DNL Experience Manager] 6.5.19,0 {#what-is-included-in-aem-6519}
@@ -38,12 +38,30 @@ ht-degree: 0%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-**Belangrijke functies en verbeteringen**
+## Belangrijke functies en verbeteringen
 
 Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * Gebruikers van de Pagina-editor/afbeeldingscomponent van Sites konden naar elementen van de Cloud Service voor externe middelen verwijzen. (SITES-13448, SITES-13433)
 * AEM ondersteunt nu sorteren op de server voor snellere projectnavigatie in de lijstweergave. Projectknooppunten worden gesorteerd op basis van de door de gebruiker geselecteerde kolom voordat ze in de interface worden weergegeven.
+
+### [!DNL Forms]
+
+* **Nieuwe adaptieve Core-componenten van het formulier**: De verticale tabbladen, Algemene voorwaarden en Selectievakje worden toegevoegd om de schaalbaarheid van formulieren te verbeteren.
+   * **[Component CheckBox](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptieve Forms op basis van Core Components kan nu een component checkbox bevatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
+
+   * **[Component Voorwaarden en bepalingen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptieve Forms op basis van kerncomponenten kan nu een component Voorwaarden en Voorwaarden bevatten. Hiermee kunnen auteurs van formulieren een specifieke sectie in het formulier invoeren waarin gebruikers de voorwaarden, juridische overeenkomsten of het gebruik van een service, product of platform krijgen aangeboden. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
+
+     ![Verticale tabbladen, Algemene voorwaarden en componenten Selectievakje](/help/forms/using/assets/forms-components.png)
+
+   * **[De component Verticale tabbladen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Adaptieve Forms op basis van Core Components kan nu formulierinhoud ordenen in een verticale lijst met tabbladen, zodat u over een gestructureerde en navigeerbare indeling beschikt. Het gebruik van verticale tabbladen in een formulier kan de algehele gebruikerservaring verbeteren door de navigatie te vereenvoudigen en de organisatie van formulierinhoud te verbeteren, met name in situaties waarin een formulier meerdere secties of complexe informatie bevat.
+
+* **[64-bits versie van AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: De 64-bits versie van AEM Forms Designer biedt verbeterde prestaties, schaalbaarheid en geheugenbeheer, zodat u meer mogelijkheden hebt om formulieren te maken. Met de 64-bits architectuur kunt u nog grotere en complexere projecten eenvoudig aanpakken, zodat u kunt zorgen voor naadloze ontwerpworkflows en geoptimaliseerde efficiëntie. Verhoog uw mogelijkheden voor formulierontwerp en omarm de toekomst van AEM Forms Designer met deze geavanceerde release.
+
+* **[Een adaptieve Forms verbinden met de Microsoft® SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms biedt een OOTB-integratie voor het rechtstreeks verzenden van formuliergegevens naar de SharePoint List, zodat u de mogelijkheden van SharePoint List kunt gebruiken. U kunt de Microsoft SharePoint-lijst configureren als gegevensbron voor een formuliergegevensmodel en de verzendactie Verzenden met het formuliergegevensmodel gebruiken om een adaptief formulier te verbinden met de SharePoint-lijst.
+
+* **[Ondersteuning voor het configureren van Document of Record-eigenschappen voor adaptieve formulierfragmenten](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: U kunt de fragmenten van het adaptieve formulier en de bijbehorende velden nu gemakkelijk aanpassen in de Adaptieve formuliereditor.
+
 
 **Verouderde functie**
 
@@ -149,9 +167,11 @@ tot
 
 ### [!DNL Forms]{#forms-6519}
 
-Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande levering geleverd via een afzonderlijk invoegpakket [!DNL Experience Manager] Releasedatum van Service Pack. In dit geval is de AEM 6.5.19.0 Forms add-on pakketrelease gepland voor donderdag 30 november 2023. Na de release wordt een lijst met Forms-correcties en -verbeteringen toegevoegd aan deze sectie.
+#### [!DNL Adaptive Forms]
 
-* Toegangsbeheerlijst toevoegen voor `fd-cloudservice` gebruiker in staat te stellen de Microsoft® configuraties te lezen of bij te werken onder `cloudconfigs/microsoftoffice`. (FORMS-11142)
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.-->
+
+<!--* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) -->
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -166,6 +186,32 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 <!--### Commerce{#commerce-6519}
 
 * A -->
+
+* Wanneer een gebruiker een werkbalk toevoegt aan Adaptief formulier, vertoont het Label van de formuliercontainer een onjuist gedrag omdat dit niet verandert in de voorkeurstaal die de auteur voor Forms heeft geselecteerd. (FORMS-11371)
+* In AEM Forms Workspace selecteert het vervolgkeuzeveld standaard de eerste optie in de gebruikersinterface. (FORMS-11346)
+* De taalconfiguratie in AEM lijkt geen effect te hebben als u landinstellingen met vijf tekens gebruikt en het decimale scheidingsteken niet correct in de letter wordt weergegeven. (FORMS-11344)
+* Wanneer een gebruiker de XML-uitvoer genereert met behulp van het workbench-proces, mislukt dit voor een aantal bestanden. (FORMS-11314)
+* Wanneer een gebruiker voorvertoning voor Document of Record (DOR) genereert in andere talen dan Engels, werkt dit niet. (FORMS-11106)
+* Wanneer een gebruiker sommige afbeeldingsbestanden met PDFG omzet in een OSGI-instantie op basis van Linux met JDK11, wordt deze niet omgezet. (FORMS-11105)
+* Wanneer de gebruiker de invoegtoepassing AEM Forms installeert, wordt het deelvenster voor de inhoudsstructuur in AEM Sites verbroken. (FORMS-10912)
+* Wanneer een gebruiker datums kopieert met gebruik van de NVDA-schermlezer van de Date Picker-component, wordt deze niet correct gelezen. (FORMS-10805) 
+* In de Forms-regeleditor kan de gebruiker de waarde van het keuzerondje/selectievakje niet instellen wanneer het gegevenstype Boolean is. (FORMS-10713)
+* Wanneer een gebruiker items toevoegt aan een adaptief formulier, wordt deze in omgekeerde volgorde toegevoegd aan een vervolgkeuzelijst. (FORMS-10456)
+* Wanneer een dropdown gebruikend de regelredacteur wordt ontruimd, verschijnt de eerste verstrekte waarde nog alhoewel de waarde is ontruimd. (FORMS-9963) 
+* Gebruikers hebben geen toegang tot de functie Formulier Titel met behulp van schermlezers, zoals NVDA. (FORMS-8815) 
+* Gebruikers hebben met schermlezers, zoals NVDA, geen toegang tot de subtitel in een formulier. (FORMS-8814) 
+* In de paginabron van het HTML-formulier is het kenmerk access key leeg en werkt het niet. (FORMS-5753) 
+* In het dialoogvenster Info over werkruimte wordt de tekst &quot;Adobe Experience Manager - Forms&quot; weergegeven als tekst. (FORMS-5748)
+
+#### [!DNL Forms Designer]{#forms-designer-6519}
+
+* Wanneer een gebruiker niet-interactieve PDF forms probeert te lezen via schermlezers, worden sommige lijstitems niet gelezen of overgeslagen. (LC-3921645) 
+* Wanneer een gebruiker met de Tab-toets door de bewerkbare velden gaat, worden niet alle PDF-formuliervelden consistent doorlopen. (LC-3921631) 
+* De volgorde van de labels wordt willekeurig gewijzigd in PDF, zelfs als de labels in Forms Designer zijn ingesteld, is juist. (LC-3921313) 
+* Een lijst wordt niet correct weergegeven in de tags in Adobe Acrobat Reader of Adobe Acrobat DC. (LC-3921306)
+* Kop-niveaus die correct zijn toegewezen in Forms Designer, worden willekeurig gewijzigd in een `<P>` -tag in Adobe Acrobat. (LC-3921305) 
+* In een tabel kan de id van een object niet worden gewijzigd nadat deze is toegewezen. (LC-3921134) 
+* Als samengevoegde cellen in de tabel staan, is er geen GUI beschikbaar voor het instellen van het bereik (rij en kolom) en het bereik in een complexe tabel in AEM Forms Designer. (LC-3919532) 
 
 ### Stichting{#foundation-6519}
 
@@ -418,8 +464,6 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
 #### Ondersteunde platforms
 
-* JDK-versies hoger dan 1.8.0_281 worden niet ondersteund voor WebLogic JEE-server. (FORMS-8498, CQDOC-20383)
-* Als [!DNL Microsoft® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 wordt niet ondersteund voor de installatie van AEM Forms op JEE Installer. Alleen JDK 11.0.19 of eerdere versies worden ondersteund voor de installatie van AEM Forms op JEE Installer. (FORMS-10659)
 
 #### Installatie
@@ -467,13 +511,10 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 
 * Wanneer een adaptief formulier wordt gepubliceerd, worden alle afhankelijkheden, inclusief het beleid, opnieuw gepubliceerd, zelfs als er geen wijzigingen in zijn aangebracht. (FORMS-10454)
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
-* Wanneer een omleidings-URL wordt ingesteld in de hulplijncontainer van een adaptief formulier, werkt de inlinehandtekening niet meer. (FORMS-10493) U kunt het probleem oplossen door het te downloaden en installeren [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* Niet alle Document of Record (DoR)-sjablonen publiceren. Alleen Engelse, op landinstellingen gebaseerde DoR-sjablonen en de bijbehorende op Forms gebaseerde DoR-sjablonen worden gepubliceerd. (FORMS-10535) Als u het probleem wilt oplossen, downloadt en installeert u het [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Wanneer gebruikers de verzendactie uitvoeren, mislukt de verzending met een fout:
+  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java en Sright opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
-
-#### Interactieve communicatie
-
-* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om de Interactieve Communicatie met grote gealigneerde beelden op Edit wijze te openen. (FORMS-10578) Installeer de [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

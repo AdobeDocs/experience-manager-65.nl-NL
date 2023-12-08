@@ -1,6 +1,7 @@
 ---
 title: Designer installeren en configureren
 description: Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld met Workbench. Leer hoe u zelfstandige Designer installeert.
+uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
@@ -8,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -19,22 +20,41 @@ ht-degree: 0%
 
 ## Voorwaarden {#pre-requisites}
 
-* 32-bits versie van  [Visuele C++ 2019 Redistributable (x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Zorg ervoor dat de eerder vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start.
++++ Voor 64-bits AEM Forms Designer (aanbevolen)
+
+* 64-bits versie van  [Visuele C++ 2019 Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Zorg ervoor dat de eerder vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start.
 * Een gebruiker met beheerdersrechten om AEM Forms Designer te installeren of verwijderen.
+
++++
+
++++ Voor 32-bits AEM Forms Designer
+
+* 32-bits versie van  [Visuele C++ 2019 Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Zorg ervoor dat de eerder vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start.
+* Een gebruiker met beheerdersrechten om AEM Forms Designer te installeren of verwijderen.
+
++++
+
 
 ## AEM Forms Designer installeren {#install-designer}
 
 Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld met WorkBench. Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM Forms Designer gebruikt:
 
 1. Verwijder de vorige versie van AEM Forms Designer als deze al is geïnstalleerd.
-1. Designer downloaden van [Licentiewebsite voor Adobe](https://licensing.adobe.com/).
+1. Download op basis van uw vereisten 64-bits AEM Forms Designer (aanbevolen) of 32-bits AEM Forms Designer.
 
    >[!NOTE]
-   >
-   > * Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) vanaf de versie van Forms Designer bevat ook de versie Service Pack. Voor Service Pack 15 is het versienummer bijvoorbeeld 6.5.15.20221112.1.0. In dit voorbeeld, is 6.5.15 de versie van het de dienstpak.
+   > 
+   >* 32-bits Forms Designer wordt vervangen door AEM 6.5 Forms Service Packs 20 (6.5.20.0). Adobe raadt u aan een upgrade uit te voeren naar de 64-bits Forms-ontwerper.
+   >* 64-bits Forms Designer is alleen beschikbaar voor AEM 6.5 Forms Service Packs 19 (6.5.19.0) of hoger.
+   >* Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) vanaf de versie van Forms Designer bevat ook de versie Service Pack. Voor Service Pack 15 is het versienummer bijvoorbeeld 6.5.15.20221112.1.0. In dit voorbeeld, is 6.5.15 de versie van het de dienstpak.
 
 1. Start het installatieprogramma van AEM Forms Designer door te dubbelklikken op setup.exe.
 1. Ga verder en geef uw gegevens en het serienummer op het scherm Personaliseren op.
+
+   >[!NOTE]
+   >
+   >* Verkrijg je Forms Designer-licentiecode van [Licentiewebsite voor Adobe](https://licensing.adobe.com/).
+
 1. Als u de licentieovereenkomst accepteert, klikt u op Volgende om door te gaan.
 1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een door u gekozen locatie wilt installeren. Klik op Volgende.
 1. Klik op Vorige om voorkeuren te wijzigen. Klik op Installeren om Designer te installeren.

@@ -9,9 +9,9 @@ breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
 feature: Forms Service
-source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3762'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 + [AEM 6.5 Forms Guide](home.md)
 + Opmerkingen bij de release {#release-notes-new-features}
    + [Releaseopmerkingen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-   + [Overzicht van nieuwe functies](using/whats-new.md)
+   + [Nieuwe functies](/help/forms/using/whats-new.md)
    + [Veelgestelde vragen](/help/forms/using/frequently-asked-questions-faq.md)
    + [Verouderde functies](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Aan de slag {#getting-started}
@@ -699,11 +699,13 @@ ht-degree: 0%
    + [Kan CRX Repository niet herstellen](/help/forms/using/restore-crx-repository.md)
    + [Service niet-beschikbare fouten na installatie van AEM servicepack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Probleem met installatie van AEM Forms JEE 6.5.15.0-servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [Meerdere services uitvoeren, zelfs als AEM Forms nog niet volledig is gestart](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [Kan de Output-service, Forms-service of Document of Record-service (DoR) niet gebruiken](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)
    + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](developing/configure-server-cluster.md)
    + [Hashes genereren en werken met dynamische PDF forms](developing/hashing-forms.md)
    + [Gegevens doorgeven met WS-beveiligingskoppen](developing/passing-credentials.md)
-   + [Kan de Output-service, Forms-service of Document of Record-service (DoR) niet gebruiken](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+
 

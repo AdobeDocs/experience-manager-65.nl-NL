@@ -9,9 +9,9 @@ breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
 feature: Forms Service
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3752'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Adobe Experience Manager 6.5 Handleiding voor formulieren {#forms}
 
 + [AEM 6.5 Forms Guide](home.md)
-+ Releaseopmerkingen {#release-notes-new-features}
++ Opmerkingen bij de release {#release-notes-new-features}
    + [Releaseopmerkingen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
    + [Overzicht van nieuwe functies](using/whats-new.md)
    + [Veelgestelde vragen](/help/forms/using/frequently-asked-questions-faq.md)
@@ -705,4 +705,5 @@ ht-degree: 0%
    + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](developing/configure-server-cluster.md)
    + [Hashes genereren en werken met dynamische PDF forms](developing/hashing-forms.md)
    + [Gegevens doorgeven met WS-beveiligingskoppen](developing/passing-credentials.md)
+   + [Kan de Output-service, Forms-service of Document of Record-service (DoR) niet gebruiken](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 

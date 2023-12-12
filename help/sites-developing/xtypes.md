@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 25c444e2093d118259925034e0d630ab0effc473
 workflow-type: tm+mt
-source-wordcount: '6381'
+source-wordcount: '3865'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [CQ.Ext.chart.Chart](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart)
 
-  Het pakket CQ.Ext.chart biedt de mogelijkheid om gegevens te visualiseren met flash-opschriften. Elke grafiek bindt direct aan een CQ.Ext.data.Store toelatend automatische updates van de grafiek. Als u het uiterlijk van een diagram wilt wijzigen, raadpleegt u de [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) en [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) configuratieopties.
+  Het pakket CQ.Ext.chart biedt de mogelijkheid om gegevens te visualiseren met flash-gebaseerde grafieken. Elke grafiek bindt direct aan een CQ.Ext.data.Store toelatend automatische updates van de grafiek. Als u het uiterlijk van een diagram wilt wijzigen, raadpleegt u de [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) en [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) configuratieopties.
 
 * selectievakje
 
@@ -251,7 +251,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  Het CustomContentPanel is een speciaal soort deelvenster dat kan worden gebruikt in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): De inhoud wordt opgehaald van en verzonden naar een andere URL dan de andere velden in het dialoogvenster.
+  Het CustomContentPanel is een speciaal deelvenster voor gebruik in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): De inhoud wordt opgehaald van en verzonden naar een andere URL dan de andere velden in het dialoogvenster.
 
 * cyclus
 
@@ -463,7 +463,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView is een snelle en lichtgewichtimplementatie van een [Raster](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) zoals de weergave.
+  CQ.Ext.list.ListView is een snelle en lichtgewichtimplementatie van een [Raster](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) weergeven.
 
 * livecopyeigenschappen
 
@@ -793,7 +793,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [CQ.wcm.Statistieken](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-  De Statistieken tonen de paginamonpressies als grafiek. Met de widget kunt u een punt selecteren. De statistieken moeten dan worden weergegeven.
+  De Statistieken tonen de paginamonpressies als grafiek. Met de widget kunt u een periode selecteren waarvoor de statistieken moeten worden weergegeven.
 
 * winkel
 

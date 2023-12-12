@@ -3,7 +3,7 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 1c3df6ea88f1dfbab5d9df2dcd4907e72829287a
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
 source-wordcount: '4204'
 ht-degree: 0%
@@ -63,7 +63,6 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 * **[Ondersteuning voor het configureren van Document of Record-eigenschappen voor adaptieve formulierfragmenten](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: U kunt de fragmenten van het adaptieve formulier en de bijbehorende velden nu gemakkelijk aanpassen in de Adaptieve formuliereditor.
 
 * **64-bits XMLFM**: De 64-bits iteratie van XMLFM introduceert verhoogde prestaties, schaalbaarheid en verfijnd geheugenbeheer. Het is de eerste inheemse dienst met 64 bits die op server-kant wordt opgesteld. Met XMLFM 64-bits kan een naadloze afhandeling van grotere renderingwerklasten worden bewerkstelligd door gebruik te maken van zijn inherente mogelijkheden om toegang te krijgen tot aanzienlijk grotere geheugenbronnen in vergelijking met zijn 32-bits tegenhanger. Deze mijlpaal betekent niet alleen een prestatiesprong, maar introduceert ook belangrijke verbeteringen aan het native serviceframework binnen de AEM Forms-server. Deze update zorgt ervoor dat AEM Forms-server naadloos ondersteuning biedt voor elke 64-bits native service.
-
 
 **Verouderde functie**
 

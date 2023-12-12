@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 302a76fb9470e2ef177f60aea10312d6091becb9
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2540'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 
 U kunt de gemaakte SharePoint List-configuratie in een adaptief formulier gebruiken om gegevens of het gegenereerde Document of Record in een SharePoint-lijst op te slaan. Voer de volgende stappen uit om een SharePoint List-opslagconfiguratie in een adaptief formulier te gebruiken als:
 
-1. [Een formuliergegevensmodel maken met de configuratie Microsoft® SharePoint List](/help/forms/using/create-form-data-model.md)
+1. [Een formuliergegevensmodel maken met Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Het formuliergegevensmodel configureren voor het ophalen en verzenden van gegevens](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Een adaptief formulier maken](/help/forms/using/create-adaptive-form.md).
 1. [Verzendactie configureren met een formuliergegevensmodel](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)

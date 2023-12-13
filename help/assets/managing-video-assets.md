@@ -6,9 +6,9 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8a9ab052f649b1ee74b5b418ecbe2ebe70dddc26
 workflow-type: tm+mt
-source-wordcount: '5000'
+source-wordcount: '4999'
 ht-degree: 6%
 
 ---
@@ -114,8 +114,7 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
 Google Cloud-instellingen configureren:
 
-1. Maak een Google-account.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
+1. [Een Google-account maken](https://accounts.google.com/lifecycle/flows/signup?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp&amp;dsh=S1828858835%3A1702491860449385&amp;theme=glif).
 
    Als u al een Google-account hebt, gaat u verder met de volgende stap.
 

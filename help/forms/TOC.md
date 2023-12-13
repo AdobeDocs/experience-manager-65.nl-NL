@@ -9,9 +9,9 @@ breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
 feature: Forms Service
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3762'
+source-wordcount: '3765'
 ht-degree: 0%
 
 ---
@@ -699,7 +699,7 @@ ht-degree: 0%
    + [Kan CRX Repository niet herstellen](/help/forms/using/restore-crx-repository.md)
    + [Service niet-beschikbare fouten na installatie van AEM servicepack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Probleem met installatie van AEM Forms JEE 6.5.15.0-servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [Meerdere services uitvoeren, zelfs als AEM Forms nog niet volledig is gestart](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+   + [Documenten verwerken, zelfs als de AEM Forms-server niet volledig wordt uitgevoerd](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [Kan de Output-service, Forms-service of Document of Record-service (DoR) niet gebruiken](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)

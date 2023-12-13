@@ -3,9 +3,9 @@ title: Technische vereisten
 description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3624'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 |---|---|---|
 | **Bestandssysteem met TAR-bestanden** `[1]` | Bewaarplaats | A: Ondersteund |
 | **Bestandssysteem met Datastore** `[1]` | Binden | A: Ondersteund |
-| Binaire bestanden opslaan in TAR-bestanden op het bestandssysteem `[1]` | Binaries | Z: wordt niet ondersteund voor productie |
+| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `[1]` | Binaries | Z: wordt niet ondersteund voor productie |
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft® Azure Blob Storage | Binden | A: Ondersteund |
 | MongoDB Enterprise 4.4 | Bewaarplaats | A: Ondersteund `[2, 3, 4]` |
@@ -162,7 +162,7 @@ Om AEM 6.5 met een gesteunde relationele gegevensbestand in werking te stellen, 
 >
 **De meeste relationele gegevensbanken worden momenteel ondersteund in niveau-R op AEM 6.5, dat vergezeld gaat van steuncriteria en een steunprogramma zoals vermeld in de bovenstaande beschrijving van niveau-R.**
 
-### Servlet-engines en toepassingsservers {#servlet-engines-application-servers}
+### Servlet-engines/toepassingsservers {#servlet-engines-application-servers}
 
 Adobe Experience Manager kan als zelfstandige server (het snelstart JAR-bestand) of als een webtoepassing binnen een toepassingsserver van een derde partij (het WAR-bestand) worden uitgevoerd.
 
@@ -203,8 +203,9 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 1. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
 1. Linux®-distributie ondersteund door Adobe Managed Services.
 
-   >[OPMERKING!]
-Voor Linux-gebaseerde servers (OSGI- en JEE-stack) vereist de invoegtoepassing AEM Forms runtime-afhankelijkheden, zoals:
+   >[!NOTE]
+   >
+   Voor Linux-gebaseerde servers (OSGI- en JEE-stack) vereist de invoegtoepassing AEM Forms runtime-afhankelijkheden, zoals:
    * glibc.x86_64 (2.17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
@@ -212,14 +213,14 @@ Voor Linux-gebaseerde servers (OSGI- en JEE-stack) vereist de invoegtoepassing A
    * libXau.x86_64 (1.0.8-2.1.el7)
 
 1. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
-1. AEM-formulieren worden ondersteund op Microsoft® Window Server zonder beperkingen op ondersteuningsniveau R.
+1. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
 1. AEM Forms heeft de ondersteuning voor Microsoft® Windows Server 2016 verwijderd.
 
 >[!NOTE]
 >
 Als u AEM Forms 6.5 installeert, controleert u of u de volgende 32-bits versie van Microsoft® Visual C++ hebt geïnstalleerd.
 >
-* Microsoft® Visual C++ 2008 herdistribueerbaar
+* Herdistribueerbare microsoft® Visual C++ 2008
 * Microsoft® Visual C++ 2010 herdistribueerbaar
 * Microsoft® Visual C++ 2012 herdistribueerbaar
 * Microsoft® Visual C++ 2013 herdistribueerbaar
@@ -234,9 +235,9 @@ Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM productl
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid om AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden voor het implementeren en gebruiken van AEM in deze cloud computing-omgevingen. Zie [aanvullende documentatie over Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-In alle andere gevallen waarin AEM wordt gedistribueerd op Azure, AWS of een andere cloud computing-omgeving, is de ondersteuning van Adobe beperkt tot de virtuele rekenomgeving. De virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM die in een van deze cloudomgevingen worden uitgevoerd, moet onafhankelijk van eventuele cloudservices die specifiek zijn voor de cloud computing-omgeving kunnen worden gereproduceerd. Tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten op deze pagina, bijvoorbeeld Azure Blob-opslag of AWS S3.
+In alle andere gevallen van implementatie van AEM op Azure of AWS, of in elke andere cloudcomputeromgeving, is ondersteuning van Adobe beperkt tot de virtuele computeromgeving. De virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM dat wordt uitgevoerd in een van deze cloudomgevingen moet reproduceerbaar zijn, onafhankelijk van elke cloudservice die specifiek is voor de cloud computing-omgeving. Tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten op deze pagina, bijvoorbeeld Azure Blob-opslag of AWS S3.
 
-Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan rechtstreeks met de cloud provider te werken. Of u werkt samen met Adobe partners die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur, om aan uw specifieke prestaties, lading, scalability, en veiligheidsvereisten te voldoen.
+Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan rechtstreeks met de cloud provider te werken. Of werk samen met Adobe-partners die de distributie van AEM ondersteunen in de cloudomgeving van uw keuze. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur, om aan uw specifieke prestaties, lading, scalability, en veiligheidsvereisten te voldoen.
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
@@ -250,9 +251,9 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 | Microsoft® IIS 10 (Internet Information Server) | A: Ondersteund |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: wordt niet ondersteund |
 
-1. Webservers die zijn gebouwd op basis van de Apache httpd-broncode, bieden net zoveel ondersteuning als de versie van httpd waarop deze is gebaseerd. In geval van twijfel, vraag Adobe om bevestiging van het steunniveau met betrekking tot het respectieve serverproduct. De volgende gevallen:
+1. Webservers die zijn gebouwd op basis van de Apache httpd-broncode, bieden net zoveel ondersteuning als de versie van httpd waarop deze is gebaseerd. Vraag Bij twijfel Adobe om bevestiging van het ondersteuningsniveau voor het respectievelijke serverproduct. De volgende gevallen:
 
-   1. De HTTP-server is gebouwd met behulp van alleen officiële Apache-brondistributies, of
+   1. De HTTP-server is gemaakt met alleen officiële Apache-brondistributies, of
    1. De HTTP-server is geleverd als onderdeel van het besturingssysteem waarop deze wordt uitgevoerd. Voorbeelden: IBM® HTTP Server, Oracle HTTP Server
 
 1. Dispatcher is niet beschikbaar voor Apache 2.4.x voor Windows-besturingssystemen.
@@ -331,7 +332,7 @@ De release van Mozilla Firefox, Google Chrome en Microsoft® Edge wordt elke paa
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
 
-Over het algemeen is browserondersteuning voor websites die door AEM Sites worden weergegeven afhankelijk van de implementatie van AEM paginasjablonen, het ontwerp en de uitvoer van componenten. Deze ondersteuning is daarom in handen van de partij die deze onderdelen implementeert.
+In het algemeen is browserondersteuning voor websites die door AEM Sites worden gerenderd, afhankelijk van de implementatie van AEM-paginasjablonen en van het ontwerp en de uitvoer van componenten, en is dit dus in de controle van de partij die deze onderdelen implementeert.
 
 ### WebDAV-clients {#webdav-clients}
 
@@ -409,11 +410,11 @@ Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF
 >
 De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
 >
-Daarom raadt Adobe aan dat als u een dergelijk systeem uitvoert dat u NUMA uitschakelt met de **optie numa=off** boot om te voorkomen dat de kernel deze processen doodt.
+Daarom adviseert de Adobe dat als u zulk een systeem in werking stelt dat u NUMA gebruikend **numa=off** laarsoptie om de kernel te vermijden die deze processen doden.
 
 >[!NOTE]
 >
-**Serverhostnaam moet oplossen:** zorg ervoor dat de hostnaam van de server kan worden omgezet in een IP-adres. Als dat niet mogelijk is, voeg je de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
+**Serverhostnaam moet worden opgelost:** Zorg ervoor dat de hostnaam van de server kan worden omgezet naar een IP-adres. Als dat niet mogelijk is, voeg je de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
 >
 `<ip address> <fully qualified hostname>`
 

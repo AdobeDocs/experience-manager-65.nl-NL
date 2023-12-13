@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
 workflow-type: tm+mt
-source-wordcount: '4204'
+source-wordcount: '4197'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 * **Nieuwe adaptieve Core-componenten van het formulier**: De verticale tabbladen, Algemene voorwaarden en Selectievakje worden toegevoegd om de schaalbaarheid van formulieren te verbeteren.
    * **[Component CheckBox](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptieve Forms op basis van Core Components kan nu een component checkbox bevatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
 
-   * **[Component Voorwaarden en bepalingen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptieve Forms op basis van kerncomponenten kan nu een component Voorwaarden en Voorwaarden bevatten. Hiermee kunnen auteurs van formulieren een specifieke sectie in het formulier invoeren waarin gebruikers de voorwaarden, juridische overeenkomsten of het gebruik van een service, product of platform krijgen aangeboden. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
+   * **[Component Voorwaarden en bepalingen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptieve Forms op basis van kerncomponenten kan nu een component Voorwaarden en Voorwaarden bevatten. Hiermee kunnen Forms-auteurs een specifieke sectie in het formulier introduceren waarin gebruikers de voorwaarden, juridische overeenkomsten of het gebruik van een service, product of platform krijgen aangeboden. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
 
      ![Verticale tabbladen, Algemene voorwaarden en componenten Selectievakje](/help/forms/using/assets/forms-components.png)
 
@@ -58,11 +58,11 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * **[64-bits versie van AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: De 64-bits versie van AEM Forms Designer biedt verbeterde prestaties, schaalbaarheid en geheugenbeheer, zodat u meer mogelijkheden hebt om formulieren te maken. Met de 64-bits architectuur kunt u nog grotere en complexere projecten eenvoudig aanpakken, zodat u kunt zorgen voor naadloze ontwerpworkflows en geoptimaliseerde efficiëntie. Verhoog uw mogelijkheden voor formulierontwerp en omarm de toekomst van AEM Forms Designer met deze geavanceerde release.
 
-* **[Een adaptieve Forms verbinden met de Microsoft® SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms biedt een OOTB-integratie voor het rechtstreeks verzenden van formuliergegevens naar de SharePoint List, zodat u de mogelijkheden van SharePoint List kunt gebruiken. U kunt de Microsoft SharePoint-lijst configureren als gegevensbron voor een formuliergegevensmodel en de verzendactie Verzenden met het formuliergegevensmodel gebruiken om een adaptief formulier te verbinden met de SharePoint-lijst.
+* **[Een adaptieve Forms verbinden met de Microsoft® SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms biedt een OOTB-integratie om formuliergegevens rechtstreeks naar de SharePoint List te verzenden, zodat u de mogelijkheden van SharePoint List kunt gebruiken. U kunt de Microsoft® SharePoint-lijst configureren als gegevensbron voor een formuliergegevensmodel en de verzendactie Verzenden met het formuliergegevensmodel gebruiken om een adaptief formulier te verbinden met de SharePoint-lijst.
 
 * **[Ondersteuning voor het configureren van Document of Record-eigenschappen voor adaptieve formulierfragmenten](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: U kunt de fragmenten van het adaptieve formulier en de bijbehorende velden nu gemakkelijk aanpassen in de Adaptieve formuliereditor.
 
-* **64-bits XMLFM**: De 64-bits iteratie van XMLFM introduceert verhoogde prestaties, schaalbaarheid en verfijnd geheugenbeheer. Het is de eerste inheemse dienst met 64 bits die op server-kant wordt opgesteld. Met XMLFM 64-bits kan een naadloze afhandeling van grotere renderingwerklasten worden bewerkstelligd door gebruik te maken van zijn inherente mogelijkheden om toegang te krijgen tot aanzienlijk grotere geheugenbronnen in vergelijking met zijn 32-bits tegenhanger. Deze mijlpaal betekent niet alleen een prestatiesprong, maar introduceert ook belangrijke verbeteringen aan het native serviceframework binnen de AEM Forms-server. Deze update zorgt ervoor dat AEM Forms-server naadloos ondersteuning biedt voor elke 64-bits native service.
+* **64-bits XMLFM**: De 64-bits iteratie van XMLFM introduceert verhoogde prestaties, schaalbaarheid en verfijnd geheugenbeheer. Het is de eerste inheemse dienst met 64 bits die op server-kant wordt opgesteld. Met XMLFM 64-bits kan een naadloze afhandeling van grotere renderingwerklasten worden bewerkstelligd door gebruik te maken van de inherente mogelijkheid om toegang te krijgen tot grotere geheugenbronnen in vergelijking met de 32-bits tegenhanger. Deze mijlpaal betekent niet alleen een prestatiesprong, maar introduceert ook belangrijke verbeteringen aan het native servicekader binnen de AEM Forms Server. Deze update zorgt ervoor dat AEM Forms Server naadloos elke 64-bits native service ondersteunt.
 
 **Verouderde functie**
 
@@ -190,17 +190,17 @@ tot
 
 * Wanneer een gebruiker een werkbalk toevoegt aan Adaptief formulier, vertoont het Label van de formuliercontainer een onjuist gedrag omdat dit niet verandert in de voorkeurstaal die de auteur voor Forms heeft geselecteerd. (FORMS-11371)
 * In AEM Forms Workspace selecteert het vervolgkeuzeveld standaard de eerste optie in de gebruikersinterface. (FORMS-11346)
-* De taalconfiguratie in AEM lijkt geen effect te hebben als u landinstellingen met vijf tekens gebruikt en het decimale scheidingsteken niet correct in de letter wordt weergegeven. (FORMS-11344)
+* De taalconfiguratie in AEM wordt niet beïnvloed als u landinstellingen met vijf karakters gebruikt en het decimale separator niet correct in de brief wordt teruggegeven. (FORMS-11344)
 * Wanneer een gebruiker de XML-uitvoer genereert met behulp van het workbench-proces, mislukt dit voor een aantal bestanden. (FORMS-11314)
 * Wanneer een gebruiker voorvertoning voor Document of Record (DOR) genereert in andere talen dan Engels, werkt dit niet. (FORMS-11106)
-* Wanneer een gebruiker sommige afbeeldingsbestanden met PDFG omzet in een OSGI-instantie op basis van Linux met JDK11, wordt deze niet omgezet. (FORMS-11105)
+* Wanneer een gebruiker sommige afbeeldingsbestanden met PDFG omzet in een OSGI-instantie op basis van Linux® met JDK11, wordt deze niet omgezet. (FORMS-11105)
 * Wanneer de gebruiker de invoegtoepassing AEM Forms installeert, wordt het deelvenster voor de inhoudsstructuur in AEM Sites verbroken. (FORMS-10912)
 * Wanneer een gebruiker datums kopieert met gebruik van de NVDA-schermlezer van de Date Picker-component, wordt deze niet correct gelezen. (FORMS-10805) 
 * In de Forms-regeleditor kan de gebruiker de waarde van het keuzerondje/selectievakje niet instellen wanneer het gegevenstype Boolean is. (FORMS-10713)
 * Wanneer een gebruiker items toevoegt aan een adaptief formulier, wordt deze in omgekeerde volgorde toegevoegd aan een vervolgkeuzelijst. (FORMS-10456)
 * Wanneer een dropdown gebruikend de regelredacteur wordt ontruimd, verschijnt de eerste verstrekte waarde nog alhoewel de waarde is ontruimd. (FORMS-9963) 
 * Gebruikers hebben geen toegang tot de functie Formulier Titel met behulp van schermlezers, zoals NVDA. (FORMS-8815) 
-* Gebruikers hebben met schermlezers, zoals NVDA, geen toegang tot de subtitel in een formulier. (FORMS-8814) 
+* Gebruikers hebben geen toegang tot `Sub Title` in een formulier met behulp van schermlezers, zoals NVDA. (FORMS-8814) 
 * In de paginabron van het HTML-formulier is het kenmerk access key leeg en werkt het niet. (FORMS-5753) 
 * In het dialoogvenster Info over werkruimte wordt de tekst &quot;Adobe Experience Manager - Forms&quot; weergegeven als tekst. (FORMS-5748)
 
@@ -518,7 +518,7 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
 * Wanneer gebruikers de verzendactie uitvoeren, mislukt de verzending met een fout:
   ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java en Sright opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java™ en Sighy opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}

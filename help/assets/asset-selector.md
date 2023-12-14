@@ -5,9 +5,10 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+hide: true
+source-git-commit: 477c62b857ab98d8617c7bd8ba226019d42d330d
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->De Asset-kiezer is aangeroepen [Elementkiezer](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in eerdere versies van [!DNL Experience Manager].
+>De [Elementkiezer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) is gebeld [Elementkiezer](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in eerdere versies van [!DNL Experience Manager].
 
 Met de elementkiezer kunt u elementen zoeken, zoeken en filteren in [!DNL Adobe Experience Manager] Elementen. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
 
@@ -58,3 +59,7 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
 1. Klik op **[!UICONTROL Select]** op de werkbalk.
+
+>[!MORELIKETHIS]
+>
+>* [Micro-Frontend Asset Selector in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4197'
+source-wordcount: '4242'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,8 @@ tot
 * Een lijst wordt niet correct weergegeven in de tags in Adobe Acrobat Reader of Adobe Acrobat DC. (LC-3921306)
 * Kop-niveaus die correct zijn toegewezen in Forms Designer, worden willekeurig gewijzigd in een `<P>` -tag in Adobe Acrobat. (LC-3921305) 
 * In een tabel kan de id van een object niet worden gewijzigd nadat deze is toegewezen. (LC-3921134) 
-* Als samengevoegde cellen in de tabel staan, is er geen GUI beschikbaar voor het instellen van het bereik (rij en kolom) en het bereik in een complexe tabel in AEM Forms Designer. (LC-3919532) 
+* Als samengevoegde cellen in de tabel staan, is er geen GUI beschikbaar voor het instellen van het bereik (rij en kolom) en het bereik in een complexe tabel in AEM Forms Designer. (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Stichting{#foundation-6519}
 
@@ -517,8 +518,9 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 * Wanneer een adaptief formulier wordt gepubliceerd, worden alle afhankelijkheden, inclusief het beleid, opnieuw gepubliceerd, zelfs als er geen wijzigingen in zijn aangebracht. (FORMS-10454)
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
 * Wanneer gebruikers de verzendactie uitvoeren, mislukt de verzending met een fout:
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java™ en Sighy opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java en Sright opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* Wanneer een gebruiker een lettertype voor zijn PDF-documenten probeert te selecteren in Adminui onder het pad Home > Services > PDF Generator > Adobe PDF-instellingen, wordt de lettertypenlijst leeg weergegeven. De gebruiker kan geen lettertypen toevoegen aan de lijsten Altijd insluiten en Nooit insluiten. (FORMS-12095)
 
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}

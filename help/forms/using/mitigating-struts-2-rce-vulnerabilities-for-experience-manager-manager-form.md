@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+source-git-commit: 762da8c5e1d82b179f64d14f966397c8c3b90e9d
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -53,56 +53,49 @@ U kunt de handmatige matigingsstappen gebruiken om de kwestie op AEM 6.5 Server 
 
 >[!TAB Windows]
 
-1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven:
+1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven. Voordat u de opdracht uitvoert, vervangt u het pad in de bovenstaande opdracht door het pad van de AEM formulierserver:
 
+       &quot;javascript
+       
+       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+       
        &quot;
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\. ..\export -pattern=.*struts2-core-2,5.   30.jar$
-       
-       &quot;
-       
-       Vervang het pad in de bovenstaande opdracht door het pad van de AEM formulierserver.
    
-1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie:
+1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht Vervang het pad in de bovenstaande opdracht door het pad van de AEM formulierserver en de `struts2-core-2.5.33.jar` bestand.
 
+
+       &quot;javascript
+       
+       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
+       
+       
+       patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
+       
        &quot;
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\. ..\export -pattern=.*struts2-core-2,5.   30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
-       
-       
-       patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.         *struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.   jar-action=replace C:\Users\labuser\Desktop\struts2-core.jar
-       
-       &quot;
-       
-       Vervang het pad in de bovenstaande opdracht door het pad van de AEM Form-server en het bestand &quot;struts2-core-2.5.33.jar&quot;.
    
 1. Start uw AEM Forms-server.
 
 
 >[!TAB Linux]
 
-1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven:
+1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven. Voordat u de opdracht uitvoert, vervangt u het pad in de bovenstaande opdracht door het pad van de AEM formulierserver:
 
+       &quot;javascript
+       
+       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+       
        &quot;
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Man ager_Forms\...\export -pattern=.         *struts2-core-2.5.30.jar$
-       
-       &quot;
-       
-       Vervang het pad in de bovenstaande opdracht door het pad van de AEM formulierserver.
    
-1. Voer de volgende opdrachten uit voor recursieve vervanging op locatie:
+1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht Vervang het pad in de bovenstaande opdracht door het pad van de AEM formulierserver en de `struts2-core-2.5.33.jar` bestand.
 
+       &quot;javascript
+       
+       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
+       
+       
+       patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
+       
        &quot;
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Man ager_Forms\...\export -pattern=.         *struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.   33,jar
-       
-       
-       patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.   *struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.   jar-action=replace \Users\labuser\Desktop\struts2-core.jar
-       
-       &quot;
-       
-       Vervang het pad in de bovenstaande opdracht door het pad van de AEM Form-server en het bestand &quot;struts2-core-2.5.33.jar&quot;.
    
 1. Start uw AEM Forms-server.
 

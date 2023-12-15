@@ -2,9 +2,9 @@
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatie-instructies voor OSGi- en JEE-omgeving
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
+source-git-commit: b9c204955a9858a70a8c3286dcc3e58c3666f88f
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1690'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 | Product | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versie | 6.5.19.0 (OSGi) |
+| Versie | 6.5.19.0 (OSGi) 6.5.19.1 (PB L |
 | Type | Service Pack-release |
 | Datum | 8 december 2023 |
 | URL downloaden | [Nieuwste AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
@@ -65,9 +65,6 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. De vereiste software downloaden
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-
-Er zijn kritieke beveiligingskwetsbaarheden gemeld voor Struts 2 RCE, een populair en open-source webtoepassingsframework voor het ontwikkelen van Java EE-webtoepassingen. Adobe heeft AEM 6.5 Service Pack 19.1 (6.5.19.1) uitgebracht om de kwetsbaarheid in AEM Forms op JEE te verhelpen.
-
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [Fragmentserver](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)

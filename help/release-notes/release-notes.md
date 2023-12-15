@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
+source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
 workflow-type: tm+mt
-source-wordcount: '4242'
+source-wordcount: '4231'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ tot
 * De selectie van meerdere documentfiletypen op het filter voor elementtype werkt niet op de paginaconsole. Er worden geen resultaten gevonden, zelfs niet als de resultaten van een bepaald bestandstype beschikbaar zijn. Auteurs kunnen daarom niet meerdere documenten filteren. Zij moeten veelvoudige documenttypes gebruiken en zij moeten het tegelijkertijd filtreren. (SITES-14047)
 * Nadat u een exemplaar van AEM 6.5.17 en AEM 6.5.18 hebt bijgewerkt, vanuit de Pagina-editor, indien u deze optie hebt geselecteerd **[!UICONTROL Publish Page]**, wordt u omgeleid naar een URL die niet bestaat. De gebruiker moet worden omgeleid naar de wizard Publiceren. (SITES-15856)
 * Overbodige kopie van AEM klembord tijdens plakken vanaf het klembord van het besturingssysteem. (SITES-15704)
-* In elementen selecteren **[!UICONTROL Documents]** vervolgens onder **[!UICONTROL Filtertype]**, selecteren **[!UICONTROL Microsoft® Word]** of **[!UICONTROL Microsoft® Excel]** geeft geen resultaten weer, ook al bestaan er bestanden van beide typen. (SITES-14837)
+* In elementen selecteren **[!UICONTROL Documents]** vervolgens onder **[!UICONTROL Filtertype]**, selecteren **[!UICONTROL Microsoft®® Word]** of **[!UICONTROL Microsoft®® Excel]** geeft geen resultaten weer, ook al bestaan er bestanden van beide typen. (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -519,9 +519,9 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
 * Wanneer gebruikers de verzendactie uitvoeren, mislukt de verzending met een fout:
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java en Sright opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
-* Wanneer een gebruiker een lettertype voor zijn PDF-documenten probeert te selecteren in Adminui onder het pad Home > Services > PDF Generator > Adobe PDF-instellingen, wordt de lettertypenlijst leeg weergegeven. De gebruiker kan geen lettertypen toevoegen aan de lijsten Altijd insluiten en Nooit insluiten. (FORMS-12095)
-
+Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java™ en Sighy opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* Na het installeren van AEM Service Pack 6.5.14.0 en daarna, kunnen de gebruikers geen doopvont van JEE Admin UI voor de documenten van PDF selecteren wanneer het navigeren aan `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, omdat de lettertypenlijst leeg lijkt. (FORMS-12095)
+  <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

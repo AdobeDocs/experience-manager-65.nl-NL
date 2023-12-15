@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
+source-git-commit: e67d7aa9ab1dd00daad3518904bded258e31128c
 workflow-type: tm+mt
-source-wordcount: '4231'
+source-wordcount: '4260'
 ht-degree: 0%
 
 ---
@@ -213,7 +213,8 @@ tot
 * Kop-niveaus die correct zijn toegewezen in Forms Designer, worden willekeurig gewijzigd in een `<P>` -tag in Adobe Acrobat. (LC-3921305) 
 * In een tabel kan de id van een object niet worden gewijzigd nadat deze is toegewezen. (LC-3921134) 
 * Als samengevoegde cellen in de tabel staan, is er geen GUI beschikbaar voor het instellen van het bereik (rij en kolom) en het bereik in een complexe tabel in AEM Forms Designer. (LC-3919532)
-  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
+* Wanneer een gebruiker PDF-documenten probeert te genereren nadat hij het formulierinvoegpakket op AEM Forms Service Pack 6.5.15.0 heeft geïnstalleerd, mislukt dit periodiek en wordt de fout weergegeven:
+   * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
 
 ### Stichting{#foundation-6519}
 

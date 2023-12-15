@@ -3,7 +3,7 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: e67d7aa9ab1dd00daad3518904bded258e31128c
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
 source-wordcount: '4260'
 ht-degree: 0%

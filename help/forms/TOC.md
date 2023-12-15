@@ -9,9 +9,9 @@ breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
 feature: Forms Service
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
-source-wordcount: '3765'
+source-wordcount: '3774'
 ht-degree: 0%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 0%
    + [Probleem met installatie van AEM Forms JEE 6.5.15.0-servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
    + [Documenten verwerken, zelfs als de AEM Forms-server niet volledig wordt uitgevoerd](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [Kan de Output-service, Forms-service of Document of Record-service (DoR) niet gebruiken](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+     [Oplossing voor problemen met RCE-kwetsbaarheden 2 voor Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)

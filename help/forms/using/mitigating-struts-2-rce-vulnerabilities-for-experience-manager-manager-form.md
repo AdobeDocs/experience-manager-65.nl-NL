@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
+source-git-commit: e42d01f1e5e44b12b755c20f826331ddbad8ab58
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Probleem
 
-Er zijn kritieke beveiligingskwetsbaarheden gemeld voor Struts 2 RCE, een populair en open-source webtoepassingsframework voor het ontwikkelen van Java EE-webtoepassingen. De volgende kwetsbaarheden zijn geanalyseerd:
+Er zijn kritieke beveiligingskwetsbaarheden gemeld voor Struts 2, een populair en open-source webtoepassingsframework voor het ontwikkelen van Java EE-webtoepassingen. De volgende kwetsbaarheden zijn geanalyseerd:
 
 | Kwetsbaarheid | Wat heeft dat effect? | Wat heeft dit niet tot gevolg? |
 |---|---|---|
@@ -48,48 +48,62 @@ U kunt de handmatige matigingsstappen gebruiken om de kwestie op AEM 6.5 Server 
 1. Open het terminalvenster en navigeer naar de map met de geëxtraheerde bestanden.
 1. Gebruik het handmatige patchgereedschap om alle struts2-jar-bestanden te zoeken, weer te geven en te vervangen. Het hulpprogramma vereist internetverbinding omdat afhankelijkheden tijdens runtime worden gedownload. Zorg er dus voor dat u verbinding hebt met internet voordat u het hulpprogramma uitvoert.
 
-U kunt als volgt het jar-bestand struts2-core-2.5.30 en struts2-core.jar zoeken en vervangen:
+Als u de opdracht `struts2-core-2.5.30.jar` en `struts2-core.jar` bestanden:
+
 
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van uw AEM Forms-server:
+1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server:
+
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht uitvoert. Vervang het pad in de opdracht door het pad van de AEM Forms-server en het pad naar de `struts2-core-2.5.33.jar` bestand.
+1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server en de `struts2-core-2.5.33.jar` bestand.
+
 
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
    
    
-   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
+   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar        
    ```
+
+   In de bovenstaande stappen worden de EAR-bestanden met de `struts2-core-2.5.30.jar` en `struts2-core.jar` bestanden.
+
+1. Verwijder het oudere EAR en implementeer het gepatcheerde EAR-bestand op uw toepassingsserver.
+
 
 1. Start uw AEM Forms-server.
 
 
 >[!TAB Linux]
 
-1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van uw AEM Forms-server:
+1. Voer de volgende opdracht uit om alle struts2 jar-bestanden weer te geven. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server:
+
 
    ```
-   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   patch-archive.sh -root=/Users/labuser/Adobe.Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
 1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server en de `struts2-core-2.5.33.jar` bestand.
 
+
    ```
-   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
+   patch-archive.sh -root=/Users/labuser/Adobe/Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$ -action=replace /temp/struts2-core-2.5.33.jar
    
    
-   patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
+   patch-archive.sh -root=/Users/labuser/Desktop/check -pattern=.*struts2-core.jar$ -action=replace /Users/labuser/Desktop/struts2-core.jar
    ```
+
+   In de bovenstaande stappen worden de EAR-bestanden met de `struts2-core-2.5.30.jar` en `struts2-core.jar` bestanden.
+
+1. Verwijder het oudere EAR en implementeer het gepatcheerde EAR-bestand op uw toepassingsserver.
 
 1. Start uw AEM Forms-server.
 

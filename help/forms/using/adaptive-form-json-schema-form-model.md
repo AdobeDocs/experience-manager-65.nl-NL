@@ -1,11 +1,11 @@
 ---
 title: Hoe maakt u een adaptieve Forms met JSON-schema?
 description: Leer hoe u adaptieve formulieren maakt met JSON-schema als formuliermodel. Met bestaande JSON-schema's kunt u adaptieve formulieren maken. Dig dieper met een voorbeeld van een JSON-schema, configureer velden vooraf in JSON-schemadefinitie, beperk acceptabele waarden voor een adaptieve formuliercomponent en leer niet-ondersteunde constructies.
-feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 0%

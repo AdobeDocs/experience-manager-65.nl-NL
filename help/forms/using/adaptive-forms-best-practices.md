@@ -3,11 +3,11 @@ title: Aanbevolen werkwijzen voor het werken met adaptieve formulieren
 description: Hierin worden de beste praktijken beschreven voor het opzetten van een AEM Forms-project, het ontwikkelen van adaptieve formulieren en het optimaliseren van de prestaties voor het AEM Forms-systeem.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4666'
 ht-degree: 0%
 
 ---
@@ -127,11 +127,11 @@ AEM Forms biedt een [regeleditor](/help/forms/using/rule-editor.md) Hiermee kunt
 De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur voor het schrijven van regels. Overweeg het volgende wanneer het schrijven van regels gebruikend de wijze van de coderedacteur:
 
 * Gebruik betekenisvolle en unieke namen voor formuliervelden en componenten om mogelijke conflicten te voorkomen tijdens het schrijven van regels.
-* Gebruiken `this` operator voor een component om naar zichzelf te verwijzen in een regelexpressie. Het zorgt ervoor dat de regel geldig blijft zelfs als de componentennaam verandert. Bijvoorbeeld, `field1.valueCommit script: this.value > 10`.
+* Gebruiken `this` operator voor een component om naar zichzelf te verwijzen in een regelexpressie. Het zorgt ervoor dat de regel geldig blijft zelfs als de componentennaam verandert. Bijvoorbeeld: `field1.valueCommit script: this.value > 10`.
 
-* Gebruik componentnamen wanneer u naar andere formuliercomponenten verwijst. Gebruik de `value` eigenschap om de waarde van een veld of component op te halen. Bijvoorbeeld, `field1.value`.
+* Gebruik componentnamen wanneer u naar andere formuliercomponenten verwijst. Gebruik de `value` eigenschap om de waarde van een veld of component op te halen. Bijvoorbeeld: `field1.value`.
 
-* Verwijs componenten door relatieve unieke hiërarchie om het even welk conflict te vermijden. Bijvoorbeeld, `parentName.fieldName`.
+* Verwijs componenten door relatieve unieke hiërarchie om het even welk conflict te vermijden. Bijvoorbeeld: `parentName.fieldName`.
 
 * Wanneer u complexe of veelgebruikte regels afhandelt, kunt u bedrijfslogica als functies in een aparte clientbibliotheek schrijven die u kunt opgeven en hergebruiken voor adaptieve formulieren. De clientbibliotheek moet een zelfstandige bibliotheek zijn en mag geen externe afhankelijkheden hebben, behalve op jQuery en Underscore.js. U kunt ook de clientbibliotheek gebruiken om te controleren [servervalidatie](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) van de ingediende formuliergegevens.
 * Adaptieve formulieren bieden een set API&#39;s waarmee u kunt communiceren en waarmee u handelingen kunt uitvoeren op adaptieve formulieren. Enkele belangrijke API&#39;s zijn als volgt. Zie voor meer informatie [JavaScript Library API-referentie voor Adaptive Forms](https://adobe.com/go/learn_aemforms_documentation_63).

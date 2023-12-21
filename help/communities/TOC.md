@@ -7,10 +7,11 @@ breadcrumb-title: Handleiding Communities
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 feature: Communities
 role: User
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+hide: true
+source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 5%
+source-wordcount: '423'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +22,6 @@ ht-degree: 5%
 + Inleiding tot AEM Communities {#introduction}
    + [Communitysites](administer-landing.md)
    + [AEM Communities - Overzicht](overview.md)
-   + [Opmerkingen bij de release van AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Aan de slag met AEM Communities](getting-started.md)
    + [Eerste instelling](setup.md)
    + [Auteur van een nieuwe communautaire site](create-site.md)
@@ -34,7 +34,6 @@ ht-degree: 5%
    + [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
 + Beheer {#administer}
    + [Gebruikers- en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
-   + [Communitysites](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Communityconsoles](consoles.md)
    + [Analytische configuratie voor functies van Gemeenschappen](analytics.md)
    + [Berichten configureren](messaging.md)
@@ -153,4 +152,3 @@ ht-degree: 5%
    + [Activiteitendensen](trends.md)
    + [Sociale tagcloud gebruiken](tagcloud.md)
    + [Stemmen gebruiken](voting.md)
-   + [Een voorbeeldpagina maken](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)

@@ -7,9 +7,10 @@ breadcrumb-title: Gids voor mobiele apparaten
 user-guide-description: Maak en beheer content voor mobiele apps.
 feature: Mobile
 role: User
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+hide: true
+source-git-commit: 829eadb61062f20be74e36b52175627f1f377c50
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '322'
 ht-degree: 5%
 
 ---
@@ -41,7 +42,7 @@ ht-degree: 5%
    + [Eigenschappen en knooppunten van inhoud](content-properties.md)
    + [Configuratie voor gedeelde bronnen exporteren](creating-shared-resources-export-configuration.md)
    + [Sjablonen en componenten maken en toevoegen](mobile-ondemand-app-templates.md)
-   + [Best practices voor](best-practices-aem-mobile.md)
+   + [Aanbevolen procedures](best-practices-aem-mobile.md)
    + [Artikel-exportconfiguratie maken](creating-article-export-configuration.md)
    + [Mobiel met inhoudssynchronisatie](mobile-ondemand-contentsync.md)
    + [Paginasjablonen voor mobiele apps](apps-architecture.md)
@@ -83,7 +84,6 @@ ht-degree: 5%
    + [Paginasjablonen voor mobiele apps](phonegap-apps-arch-page-templates.md)
    + [Adobe Target-Cloud Service configureren](aem-mobile-configuring-cloud-service.md)
    + [Toepassingen voor één pagina](phonegap-single-page-applications.md)
-   + [Modellen in opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
    + [AEM PhoneGap starten](starting-aem-phonegap-app.md)
    + [Mobiele apps testen](develop-mobile-apps-testing.md)
    + [Een app structureren](phonegap-structure-an-app.md)

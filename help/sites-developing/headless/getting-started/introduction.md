@@ -2,7 +2,7 @@
 title: Aan de slag met koploze gids
 description: Met deze snelstartgids leert u de basisprincipes van de krachtige headless mogelijkheden van Adobe Experience Manager (AEM) 6.5, zoals Content Models, Content Fragments, en GraphQL API.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -23,7 +23,7 @@ De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren
 >
 >Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
 >
->Als u niet bekend bent met AEM of zonder kop, raadpleegt u de [Documentatiereizen zonder kop](/help/journey-headless/home.md) voor een introductie van begin tot eind, zowel in de vorm van kranten als in de manier waarop AEM dit ondersteunt.
+>Als u niet bekend bent met AEM of zonder kop, raadpleegt u de [Documentatiereizen zonder kop](/help/journey-headless/overview.md) voor een introductie van begin tot eind, zowel in de vorm van kranten als in de manier waarop AEM dit ondersteunt.
 
 ## Publiek {#audience}
 

@@ -4,10 +4,10 @@ description: Lijst met functies voor dynamische ervaringen
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Adobe Experience Manager Fluid Experience maakt gebruik van de krachtige functiesets van AEM Sites, AEM Dynamic Media en AEM Assets om een robuuste oplossing te bieden voor het leveren van inhoud zonder kop.
 
-AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. Belangrijke creatie en levering van inhoud en AEM krachtige ondersteuning voor hybride gebruiksscenario&#39;s zijn beschikbaar bij de [volledige AEM Sites-, Assets- en Dynamic Media-oplossingen.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. Belangrijke creatie en levering van inhoud en AEM krachtige ondersteuning voor hybride gebruiksscenario&#39;s zijn beschikbaar bij de [volledige oplossingen voor AEM Sites, Assets en Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)
 
 In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefinieerd en wordt een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
 
@@ -54,7 +54,7 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 | HTTP API voor gestructureerde inhoud (lezen) |
 | HTTP-API voor gestructureerde inhoud (CRUD) |
 | [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
-| [ Dynamic Media ](/help/assets/dynamic-media.md) |
+| [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Functies voor beheer en integratie {#admin-and-integration-features}
 
@@ -64,7 +64,7 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 | [Meertalig beheer van bedrijfsmiddelen](/help/assets/multilingual-assets.md) |
 | [Internationalisatie](/help/sites-developing/i18n.md) |
 | [Inhoud omzetten](/help/sites-administering/translation.md) |
-| [Bewaking](/help/sites-deploying/monitoring-and-maintaining.md) |
+| [Toezicht](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Back-up](/help/sites-administering/backup-and-restore.md) |
 | [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
 | [PIM-integratie](/help/sites-authoring/managing-product-information.md) |
@@ -83,8 +83,6 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 ## Meer informatie {#learn-more}
 
 * [Vochtervaring in gevallen zonder hoofdtelefoon](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
-* [AEM Content Service: Wat, waarom en hoe?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
-* [Inhoudsservices gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
-* [Mobiele app ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
+* [AEM Inhoudsservice: Wat, Waarom en Hoe?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
 * [Veelgestelde vragen over toegang van derden](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
 * [Sling-API&#39;s gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 75ac5b860e8456e6113de22677926e75d84f8715
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 5%
@@ -243,7 +243,7 @@ De volgende Dynamic Media-instelling bewerken door **[!UICONTROL Edit]** in de c
 
   U kunt de volgende geavanceerde instellingen bewerken door **[!UICONTROL Edit]** in de component.
 
-* **[!UICONTROL Enable Aspect Ration match]** - Selecteer deze optie als u wilt dat Dynamic Media een slimme uitsnijdvertoning kiest met een hoogte-breedteverhouding die het beste overeenkomt met de hoogte-breedteverhouding van de oorspronkelijke afbeelding.
+* **[!UICONTROL Enable Aspect Ratio match]** - Selecteer deze optie als u wilt dat Dynamic Media een slimme uitsnijdvertoning kiest met een hoogte-breedteverhouding die het beste overeenkomt met de hoogte-breedteverhouding van de oorspronkelijke afbeelding.
 
 * **[!UICONTROL Optimize for higher resolution devices]** - Schakel het selectievakje (standaard) in om DPR (Device Pixel Ratio)-optimalisatie toe te staan.
 

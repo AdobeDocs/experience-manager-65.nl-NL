@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
+source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
 workflow-type: tm+mt
 source-wordcount: '7328'
 ht-degree: 1%
@@ -260,7 +260,7 @@ ht-degree: 1%
          + [Aanbevolen werkwijzen voor vertaling](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
          + [Aanbevolen MSM-procedures](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
-         + [Behandeling van GDPR-verzoeken aan de AEM Stichting](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/security/handling-gdpr-requests-for-aem-platform.html)
+         + [Behandeling van GDPR-verzoeken aan de AEM Stichting](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM handel - gereedheid van de GDPR](/help/sites-administering/gdpr-compliance-commerce.md)
       + Inhoud beheren {#contentmanagement}
          + [Pakketbeheer](/help/sites-administering/package-manager.md)
@@ -1359,21 +1359,21 @@ ht-degree: 1%
          + [Koploos en AEM](/help/sites-developing/headless/introduction.md)
          + Reizen zonder hoofd {#journeys}
             + Headless Developer Journey {#developer}
-               + [Doorschijnend begrijpen in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/overview.html)
-               + [Meer informatie over CMS Headless Development](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/learn-about.html)
-               + [Aan de slag met AEM headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/getting-started.html)
-               + [Pad naar uw eerste ervaring met AEM zonder kop](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/path-to-first-experience.html)
-               + [Hoe te om uw inhoud als Modellen van de Inhoud te modelleren AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/model-your-content.html)
-               + [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/access-your-content.html)
-               + [Inhoud bijwerken via AEM Assets API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/update-your-content.html)
-               + [Hoe kan ik het allemaal samenbrengen?](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/put-it-all-together.html)
-               + [Live gaan met uw toepassing zonder kop](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/go-live.html)
-               + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/create-spa.html)
+               + [Doorschijnend begrijpen in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
+               + [Meer informatie over CMS Headless Development](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html)
+               + [Aan de slag met AEM headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html)
+               + [Pad naar uw eerste ervaring met AEM zonder kop](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html)
+               + [Hoe te om uw inhoud als Modellen van de Inhoud te modelleren AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
+               + [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html)
+               + [Inhoud bijwerken via AEM Assets API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html)
+               + [Hoe kan ik het allemaal samenbrengen?](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html)
+               + [Live gaan met uw toepassing zonder kop](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html)
+               + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html)
             + Reis voor architect zonder hoofdinhoud {#architect}
-               + [Reis van architect zonder hoofdinhoud AEM overzicht](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/overview.html)
-               + [Content Modeling for Headless with AEM - Een introductie](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/introduction.html)
-               + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/basics.html)
-               + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/model-structure.html)
+               + [Reis van architect zonder hoofdinhoud AEM overzicht](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
+               + [Content Modeling for Headless with AEM - Een introductie](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
+               + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
+               + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html)
          + Aan de slag - hulplijnen {#getting-started}
             + [Inleiding](/help/sites-developing/headless/getting-started/introduction.md)
             + [Een configuratie maken](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1396,14 +1396,14 @@ ht-degree: 1%
          + Leverings-API{#delivery-api}
             + [HTTP-API voor assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/mac-api-assets.html)
             + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)
-            + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphql-api-content-fragments.html)
+            + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-api-content-fragments.html)
             + [GraphQL-eindpunten beheren](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphiql-ide.html)
-            + [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/persisted-queries.html)
+            + [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html)
+            + [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/persisted-queries.html)
             + [GraphQL-query&#39;s optimaliseren](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
-            + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/content-fragments-graphql-samples.html)
+            + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
+            + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
       + Ontwikkeling van hybride en SPA AEM {#spas}
          + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [SPA Inleiding en Analyse](/help/sites-developing/spa-walkthrough.md)

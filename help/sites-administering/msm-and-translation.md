@@ -1,19 +1,19 @@
 ---
-title: Websitebeheer
-description: Leer hoe u meertalige websites beheert met Adobe Experience Manager.
+title: Beheer en vertaling van meerdere sites
+description: Leer hoe u uw inhoud kunt hergebruiken in uw project en meertalige websites in Adobe Experience Manager kunt beheren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
-# Websitebeheer{#website-administration}
+# Beheer en vertaling van meerdere sites {#msm-and-translation}
 
 De volgende beheergereedschappen zijn beschikbaar voor het beheer van websites en pagina&#39;s:
 

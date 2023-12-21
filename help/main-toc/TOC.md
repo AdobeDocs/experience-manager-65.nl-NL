@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 097bded5ed2d1db6426dcb9ac4fa9582cdc213bf
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '7327'
+source-wordcount: '7328'
 ht-degree: 1%
 
 ---
@@ -154,7 +154,7 @@ ht-degree: 1%
    + Beheer {#administering}
       + [Overzicht van de gebruikershandleiding beheren](/help/sites-administering/home.md)
       + Sitefuncties {#introduction}
-         + [Websitebeheer](/help/sites-administering/msm-and-translation.md)
+         + [MSM en vertaling](/help/sites-administering/msm-and-translation.md)
          + [Asynchrone taken](/help/sites-administering/asynchronous-jobs.md)
          + [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](/help/sites-administering/msm.md)
          + [Console voor live kopiëren](/help/sites-administering/msm-livecopy-overview.md)

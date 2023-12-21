@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 9f88eeb6770c59f7a52db30f19f3a1a78cbc401b
+source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
@@ -169,14 +169,14 @@ Na een succesvolle configuratie, gebruik [Een Microsoft® Power Automate-flow aa
 
 ## Verzenden naar Microsoft® SharePoint List{#submit-to-sharedrive}
 
-De **[!UICONTROL Submit to SharePoint]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
+De **[!UICONTROL Submit to SharePoint]** Met de verzendactie wordt een adaptief formulier verbonden met een Microsoft® SharePoint Storage. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
 
 ### Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst {#connect-af-sharepoint-list}
 
-Als u de opdracht [!UICONTROL Submit to SharePoint List] Actie verzenden in een adaptieve vorm:
+Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst:
 
 1. [Een SharePoint List-configuratie maken](#create-sharepoint-list-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint List Storage.
-1. [Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken](#use-submit-using-fdm): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
+1. [Gebruik de **Verzenden met gebruik van formuliergegevensmodel** actie verzenden in een adaptief formulier](#use-submit-using-fdm): Het verzendt uw Adaptive Form-gegevens naar de geconfigureerde Microsoft® SharePoint.
 
 #### Een SharePoint List-configuratie maken {#create-sharepoint-list-configuration}
 

@@ -5,9 +5,10 @@ contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-source-git-commit: 4a4a75018e960733908f40c631a24203290be55c
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -95,7 +96,7 @@ De alias bevat alle parameters die een HSM of token vereist. Voer de onderstaand
 1. Open de **Configuratieservice HSM Credentials** en geef waarden op voor de volgende velden:
 
    * **Credentiële alias**: Geef een tekenreeks op die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-   * **DLL-pad**: Geef het pad op van uw HSM- of toepassingsbibliotheek op de server. Bijvoorbeeld, `C:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet u ervoor zorgen dat alle servers in de cluster een identiek pad gebruiken.
+   * **DLL-pad**: Geef het pad op van uw HSM- of toepassingsbibliotheek op de server. Bijvoorbeeld: `C:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet u ervoor zorgen dat alle servers in de cluster een identiek pad gebruiken.
    * **HSM-punt**: Geef het wachtwoord op dat nodig is voor toegang tot de apparaattoets.
    * **HSM-sleuf-id**: Geef een slot-id op van het type geheel getal. De groef ID wordt geplaatst op een cliënt-door-cliënt basis. Het wordt gebruikt om de groef op HSM te identificeren die de privé sleutel voor teken/certificatie bevat.
 

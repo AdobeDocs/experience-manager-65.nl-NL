@@ -1,17 +1,17 @@
 ---
-title: Hotfix voor AEM Form Service Pack
-description: Geeft informatie over het downloaden en installeren van de hotfix voor AEM Forms Service Pack
-source-git-commit: 169d407835098add0312b0d12c2c80035b525762
+title: Hotfixes voor AEM Forms
+description: Hier vindt u informatie over het downloaden en installeren van een hotfix voor AEM Forms.
+exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
+source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
+# Adobe Experience Manager Forms Hotfixes{#aem-form-hotfix}
 
-# Adobe Experience Manager Hotfixes{#aem-form-hotfix}
-
-De installatie van de [AEM Service Pack](/help/release-notes/release-notes.md) wordt aanbevolen dat beveiliging, prestaties, stabiliteit en belangrijke correcties en verbeteringen voor klanten omvat die zijn uitgebracht sinds Adobe Experience Manager 6.5 algemeen beschikbaar is.
+Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplementeerd om bekende problemen aan te pakken, de stabiliteit van het systeem te verbeteren en de algehele prestaties van AEM Forms te verbeteren.
 
 ## Hotfixes voor adaptieve Forms {#hotfix-for-adaptive-forms}
 
@@ -19,8 +19,8 @@ De installatie van de [AEM Service Pack](/help/release-notes/release-notes.md) w
   <tbody>
   <tr>
     <td><strong>Datum</strong></td>
-    <td><strong>Hotfix-namen</strong></td>
-    <td><strong>Oplossingen</strong></td>
+    <td><strong>Hotfix-downloadkoppeling (AEM koppeling Softwaredistributie)</strong></td>
+    <td><strong>Opgeloste problemen</strong></td>
    </tr>
    <tr>
     <td>20 november 2023</td>
@@ -42,11 +42,11 @@ De installatie van de [AEM Service Pack](/help/release-notes/release-notes.md) w
     <tbody>
      </table>
 
-## Hotfix downloaden en installeren {#download-install-hotfix}
+## Een hotfix downloaden en installeren {#download-install-hotfix}
 
 Voer de volgende stappen uit om de hotfix te downloaden en installeren:
 
-1. Downloaden [Hotfix](#hotfix-for-adaptive-forms) via de SD-koppeling.
+1. Downloaden [Hotfix](#hotfix-for-adaptive-forms) via de koppeling Software Distribition.
 1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.
-1. Upload en installeer het pakket (.zip) via Package Manager.
-1. De configuratiemanager-bundels openen `https://server:host/system/console/bundles`, uploadt en installeert de bundel (.jar).
+1. Upload en installeer het pakket (.zip) via de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. De configuratiemanager-bundels openen `https://server:host/system/console/bundles`, uploadt en installeert de bundel (.jar). De hotfix is geïnstalleerd.

@@ -2,9 +2,9 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
+source-git-commit: 5c10c5d20338b696fdab2291c714a7d6313cca8a
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1684'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,6 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | Gebied | Functie | Vervanging | Versie (SP) |
 |---|---|---|---|
 | Sites | De **Adobe AEM beheerde opiniepeilingconfiguratie** service: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | De **Adobe AEM Analytics Report Sling Importer** service. Zie Verbinding maken met Adobe Analytics en Frameworks maken - [Het Interval van de Invoer vormen](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19,0 |
-| Schermen | ActiveMQ in AEM. ActiveMQ is gebruikt voor communicatie tussen twee AEM Publish-instanties. | Adobe raadt klanten aan een taakverdelingsmechanisme te gebruiken. |  |
 | [!DNL Sites] | Eigenschappen van Experience Fragments voor **Status van sociale media**. |   | 6.5.11.0. |
 | [!DNL Sites] | Inhoudsfragmentsjablonen voor het maken van eenvoudige inhoudsfragmenten. | [Op modellen gebaseerde gestructureerde inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) nu. | 6.5.11.0. |
 | Integratie van Creative Cloud | AEM naar het Delen van de Omslag van het Creative Cloud werd geïntroduceerd in AEM 6.2. Het biedt een manier om creatieve gebruikers toegang te geven tot middelen van AEM, zodat ze ze kunnen openen in [!DNL Creative Cloud] en uploadt u nieuwe bestanden of slaat u wijzigingen op in AEM. Een nieuw vermogen dat in de toepassing van het Creative Cloud, de Verbinding van de Activa van de Adobe wordt vrijgegeven, verstrekt een betere gebruikerservaring en krachtigere toegang tot activa van AEM direct van binnen Photoshop, InDesign, en Illustrator. De Adobe is niet van plan om verdere verhogingen aan de AEM aan het Delen van de Omslag van het Creative Cloud te maken. Terwijl de eigenschap in AEM inbegrepen is, worden de klanten geadviseerd om vervangingsoplossingen te gebruiken. | Klanten wordt aangeraden over te schakelen op nieuwe integratiemogelijkheden voor Creatives Cloud, waaronder Adobe Asset Link of AEM desktop app. |  |
@@ -76,7 +75,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Ontwikkelaars | Verwijderen `customJavaScriptPath` ondersteuning in HTML Client Library Manager. | Geen vervanging |  |
 | [!DNL Assets] | De functie voor het offloaden van elementen is verwijderd uit [!DNL Adobe Experience Manager] 6.5 | Er is geen vervanging beschikbaar. |  |
 | Cache | `system/console/slingjsp` verwijderd en niet meer beschikbaar in AEM 6.5. | Klassen en de cache wordt iets opgeslagen onder de bundel FileSystem ClassLoader van Apache Sling Commons. U kunt het bundelnummer in de AEM webconsole controleren en de cachemap rechtstreeks uit het bestandssysteem verwijderen (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
-| Schermen | De Adobe is niet van plan om de bundel com.adobe.cq.screens.mq.activemq en verwante configuraties verder te onderhouden en bij te werken. | Er is geen vervanging beschikbaar. |  |
+| Schermen | Ondersteuning voor activeremq-bundels en de bijbehorende configuraties zijn verwijderd. |  |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 

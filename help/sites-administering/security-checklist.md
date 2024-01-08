@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Het inschakelen van de HTTPS-transportlaag op zowel auteur- als publicatieinstan
 
 ### Beveiligingshotfixes installeren {#install-security-hotfixes}
 
-Zorg ervoor dat u de nieuwste [Beveiligingshotfixes verstrekt door Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en).
+Zorg ervoor dat u de nieuwste [Beveiligingshotfixes verstrekt door Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### Standaardwachtwoorden voor de AEM- en OSGi-console-beheeraccounts wijzigen {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -108,11 +108,11 @@ Adobe raadt aan aangepaste fouthandlerpagina&#39;s te definiëren, met name voor
 
 >[!NOTE]
 >
->Zie [Hoe kan ik aangepaste scripts of fouthandlers maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) voor meer informatie .
+>Zie [Hoe kan ik aangepaste scripts of fouthandlers maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) voor meer informatie .
 
 ### Volledige lijst voor beveiligingscontrole voor verzending {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. Adobe raadt u aan de [Controlelijst voor beveiliging van verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
+AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. Adobe raadt u aan de [Controlelijst voor beveiliging van verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >

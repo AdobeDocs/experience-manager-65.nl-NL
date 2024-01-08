@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2092'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,7 @@ Voor gebruikersbeheer binnen AEM (inclusief toewijzing van toegangsrechten) raad
 
 Dispatcher is een Adobe Experience Manager-programma voor caching, taakverdeling of beide. Het kan met een onderneming-klasse Webserver worden gebruikt.
 
-Zie [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) voor volledige informatie, met name [De Dispatcher configureren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en) voor meer configuratiedetails.
+Zie [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor volledige informatie, met name [De Dispatcher configureren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) voor meer configuratiedetails.
 
 ### Configuratie van AEM LiveCycle-connector {#configuring-aem-livecycle-connector}
 

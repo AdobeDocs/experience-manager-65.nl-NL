@@ -8,9 +8,9 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3354'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ De volgende agenten zijn beschikbaar in een standaard AEM installatie:
 * [Standaardagent](#replication-author-to-publish)
 Wordt gebruikt voor het repliceren van Auteur naar Publiceren.
 
-* Dispatcher Flush Dit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [Dispatcher Cache van de ontwerpomgeving ongeldig maken](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment) en [Dispatcher Cache van een publicatie-instantie ongeldig maken](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie .
+* Dispatcher Flush Dit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [Dispatcher Cache van de ontwerpomgeving ongeldig maken](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) en [Dispatcher Cache van een publicatie-instantie ongeldig maken](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie .
 
 * [Replicatie omkeren](#reverse-replication-publish-to-author)
 Wordt gebruikt voor het repliceren van Publiceren naar Auteur. Reverse-replicatie wordt niet gebruikt voor functies van Gemeenschappen, zoals forums, blogs en opmerkingen. De optie is in feite uitgeschakeld omdat de Postvak UIT niet is ingeschakeld. Het gebruik van omgekeerde replicatie zou douaneconfiguratie vereisen.
@@ -352,7 +352,7 @@ Van het lusje van Hulpmiddelen in het milieu van de Auteur, kunt u replicatieage
 
 >[!NOTE]
 >
->Wanneer een Dispatcher HTTP- verzoeken om Auteur of Publish instanties behandelt, moet het HTTP- verzoek van de replicatieagent de kopbal van de PAD omvatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de lijst van de Verzender van cliëntkopballen toevoegen. Zie [/clientheaders (clientheaders)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders).
+>Wanneer een Dispatcher HTTP- verzoeken om Auteur of Publish instanties behandelt, moet het HTTP- verzoek van de replicatieagent de kopbal van de PAD omvatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de lijst van de Verzender van cliëntkopballen toevoegen. Zie [/clientheaders (clientheaders)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Toegang krijgen tot de **Gereedschappen** in AEM.

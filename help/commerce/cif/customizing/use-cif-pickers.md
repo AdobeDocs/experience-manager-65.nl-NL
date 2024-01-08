@@ -1,6 +1,6 @@
 ---
-title: Gebruik van CIF-product en rubriekkiezer
-description: Leer hoe te om het product en de categoriekiezer van CIF in uw componenten van de klantenhandel te gebruiken om auteurs en verkopers te steunen om met handelsproduct en catalogusgegevens efficiënt te werken.
+title: Gebruik van CIF product- en rubriekkiezer
+description: Leer hoe te om CIF product & categoriekiezer in uw componenten van de klantenhandel te gebruiken om auteurs en verkopers te steunen om met handelsproduct en catalogusgegevens efficiënt te werken.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -8,16 +8,16 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
 
 # AEM Content &amp; Commerce Authoring Pickers {#cif-pickers}
 
-AEM Content &amp; Commerce Authoring biedt een reeks ontwerpgereedschappen waarmee AEM auteurs en marketers efficiënt kunnen werken met handelsproductgegevens en -catalogi. De productkiezer en de categoriekiezer maken deel uit van de CIF-invoegtoepassing en worden gebruikt door de CIF Core-componenten. Projecten kunnen deze kiezers in elk dialoogvenster gebruiken om producten of categorieën te selecteren.
+AEM Content &amp; Commerce Authoring biedt een reeks ontwerpgereedschappen waarmee AEM auteurs en marketers efficiënt kunnen werken met handelsproductgegevens en -catalogi. De productkiezer en de rubriekkiezer maken deel uit van CIF invoegtoepassing en worden gebruikt door de CIF Core Components. Projecten kunnen deze kiezers in elk dialoogvenster gebruiken om producten of categorieën te selecteren.
 
 ## Productkiezer {#product-picker}
 
@@ -49,9 +49,9 @@ Ook standaarddialoogveldeigenschappen, zoals `name`, `fieldLabel`, of `fieldDesc
 >De `cifproductfield` component vereist de `cif.shell.picker` clientlib. Als u een clientlib aan een dialoogvenster wilt toevoegen, kunt u de eigenschap extraClientlibs gebruiken.
 >[!CAUTION]
 >
->Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Adobe raadt u aan `sku` of `slug` als product-id. Adobe blijft ondersteuning bieden `id` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
+>Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Adobe raadt u aan `sku` of `slug` als product-id. Adobe blijft steun verlenen `id` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
 
-Een volledig werkend voorbeeld van het `cifproductfield` kunt u vinden in het dialoogvenster [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. Zie ook [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de AEM Core Components documentatie.
+Een volledig werkend voorbeeld van het `cifproductfield` kunt u vinden in het dialoogvenster [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. Zie ook [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) van de AEM Core Components documentatie.
 
 ## Categoriekiezer {#category-picker}
 
@@ -76,9 +76,9 @@ Ook standaarddialoogveldeigenschappen, zoals `name`, `fieldLabel`, of `fieldDesc
 
 >[!CAUTION]
 >
->Gelijk aan de `cifproductfield` de component `cifcategoryfield` de component vereist ook `cif.shell.picker` clientlib. Als u een clientlib aan een dialoogvenster wilt toevoegen, kunt u de opdracht `extraClientlibs` eigenschap. Zie [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de AEM Core Components documentatie.
+>Gelijk aan de `cifproductfield` de component `cifcategoryfield` vereist ook `cif.shell.picker` clientlib. Als u een clientlib aan een dialoogvenster wilt toevoegen, kunt u de opdracht `extraClientlibs` eigenschap. Zie [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) van de AEM Core Components documentatie.
 >[!CAUTION]
 >
->Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Adobe raadt u aan `uid` of `urlPath` als categorie-id. Adobe blijft ondersteuning bieden `id` &amp; `idAndUrlPath` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
+>Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Adobe raadt u aan `uid` of `urlPath` als categorie-id. Adobe blijft steun verlenen `id` &amp; `idAndUrlPath` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
 
-Een volledig werkend voorbeeld van het `cifcategoryfield` kunt u vinden in het dialoogvenster [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.
+Een volledig werkend voorbeeld van het `cifcategoryfield` kunt u vinden in het dialoogvenster [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.

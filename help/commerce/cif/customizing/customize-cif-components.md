@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2306'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Adobe Experience Manager CIF Core-componenten aanpassen {#customize-cif-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U leert ook meer over de GraphQL-integratie tussen Adobe Experience Manager (AEM) en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
+De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U leert ook meer over de GraphQL-integratie tussen Adobe Experience Manager (AEM) en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
 
 >[!TIP]
 >
@@ -190,7 +190,7 @@ Daarna, zult u de bedrijfslogica van de Teaser van het Product uitbreiden door e
 
 Sling Models worden geïmplementeerd als Java™ en zijn te vinden in het dialoogvenster **kern** module van het gegenereerde project.
 
-Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#set-up-the-development-ide) het Venia-project in te voeren. De gebruikte screenshots zijn afkomstig van de [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
+Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) het Venia-project in te voeren. De gebruikte screenshots zijn afkomstig van de [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
 1. In uw winde, navigeer onder **kern** module naar: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
@@ -497,7 +497,7 @@ Controleer de functionaliteit van de **Nieuw** badge die al is geïmplementeerd 
 ## Aanvullende bronnen {#additional-resources}
 
 - [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-- [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
+- [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components)
 - [Aanpassen AEM kerncomponenten](https://github.com/adobe/aem-core-cif-components)
 - [Kerncomponenten aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)

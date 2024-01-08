@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ U kunt ook de apparaatbron downloaden om lokaal te bouwen via de PhoneGap CLI (`
 >
 >Zie [Vorm uw Cloud Service van de Diensten van de Adobe Mobiele](/help/mobile/configure-adobe-mobile-cloud-service.md) voor meer informatie.
 
-AEM Mobile integreert met Adobe Analytics via [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS)
+AEM Mobile integreert met Adobe Analytics via [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS)
 
 Het controlecentrum **Metrische tegel** geeft een overzichtsanalyse weer die door AMS voor uw toepassing is gemaakt. U kunt naar het dashboard Analytics gaan door op &#39;...&#39; in de rechterbenedenhoek te klikken.
 

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1653'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ AEM 6.5 Communautaire algemene vergadering omvat het communautaire pakket. Meer 
 
 Vanaf AEM 6.4 worden updates aan de Gemeenschappen geleverd als onderdeel van AEM Cumulative Fix Packs en Service Packs.
 
-Voor de meest recente updates van AEM 6.5 raadpleegt u [Adobe Experience Manager 6.4 Cumulatief repareren van pakketten en servicepacks](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en).
+Voor de meest recente updates van AEM 6.5 raadpleegt u [Adobe Experience Manager 6.4 Cumulatief repareren van pakketten en servicepacks](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### Versiehistorie {#version-history}
 
@@ -108,7 +108,7 @@ De noodzakelijke stappen zijn:
 1. Gebruik de webconsole om de bundel te installeren en te starten:
 
    * Bijvoorbeeld https://localhost:4502/system/console/bundles
-   * Selecteer **`Install/Update`**
+   * Selecteren **`Install/Update`**
    * Blader naar.. om de bundel te selecteren die u uit het gedownloade ZIP-archief hebt opgehaald
    * Controleren of *JDBC-stuurprogramma van oracle Corporation voor MySQLcom.mysql.jdbc* is actief en start deze als dit niet het geval is (of controleer de logboeken)
 
@@ -116,7 +116,7 @@ De noodzakelijke stappen zijn:
    * Bijvoorbeeld https://localhost:4502/system/console/configMgr
    * Zoeken `Day Commons JDBC Connections Pool` configuratie
    * Selecteren om te openen
-   * Selecteer `Save`
+   * Selecteren `Save`
 
 1. De stappen 3 en 4 op alle auteur herhalen en instanties publiceren
 
@@ -309,9 +309,9 @@ Met het belangrijkste materiaal dat in de bewaarplaats wordt opgeslagen, is de m
 Gebruiken [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Bladeren naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Selecteer `/etc/key`
+* Selecteren `/etc/key`
 * Openen `Replication` tab
-* Selecteer `Replicate`
+* Selecteren `Replicate`
 
 * [De graniet-cryptobundel vernieuwen](#refresh-the-granite-crypto-bundle)
 
@@ -358,8 +358,8 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
 
 Als u een Dispatcher gebruikt, raadpleegt u:
 
-* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) documentatie
-* [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) documentatie
+* [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Dispatcher configureren voor Gemeenschappen](/help/communities/dispatcher.md)
 * [Bekende problemen](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

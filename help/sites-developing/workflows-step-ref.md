@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3229'
 ht-degree: 0%
@@ -185,7 +185,7 @@ De **OF Splitsen** maakt een splitsing in de workflow, waarna slechts één vert
 
 >[!NOTE]
 >
->Zie [OF stap Splitsen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=en#use-a-variable)
+>Zie [OF stap Splitsen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
 
 ![Vertakken met OF splitsen](assets/variables_orsplit_new.png)
 

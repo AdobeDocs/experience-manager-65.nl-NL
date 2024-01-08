@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -83,6 +83,6 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 ## Aanvullende informatie {#further-information}
 
-Raadpleeg het ontwerpdocument voor meer informatie over de kerncomponenten [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) voor een technisch overzicht.
+Raadpleeg het ontwerpdocument voor meer informatie over de kerncomponenten [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor een technisch overzicht.
 
 Mogelijk wilt u verder onderzoek uitvoeren [bewerkbare sjablonen](/help/sites-developing/we-retail-editable-templates.md). Verwijs naar het auteursdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige details over bewerkbare sjablonen.

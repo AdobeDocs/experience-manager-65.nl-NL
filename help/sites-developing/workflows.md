@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 0%
@@ -37,7 +37,7 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >
 >* Deelnemen aan workflows, zie [Workflows gebruiken](/help/sites-authoring/workflows.md).
 >* Workflows en workflowinstanties beheren, zie [Workflows beheren](/help/sites-administering/workflows.md).
->* Voor een end-to-end communautair artikel raadpleegt u [Digitale middelen aanpassen met Adobe Experience Manager Workflows.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=en)
+>* Voor een end-to-end communautair artikel raadpleegt u [Digitale middelen aanpassen met Adobe Experience Manager Workflows.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)
 >* Zie de [Vraag het AEM webinar van experts over workflows](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Wijzigingen in de locaties van de informatie zie [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) en [Best practices voor workflow - Locaties](/help/sites-developing/workflows-best-practices.md#locations).
 >
@@ -203,7 +203,7 @@ Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
 
 ### Workflows en Forms {#workflows-and-forms}
 
-Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan bij de [kerncomponenten van componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=en) beschikbaar in een standaardinstelling AEM [AEM Forms-oplossing](/help/forms/using/aem-forms-workflow.md).
+Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan bij de [kerncomponenten van componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) beschikbaar in een standaardinstelling AEM [AEM Forms-oplossing](/help/forms/using/aem-forms-workflow.md).
 
 Bij het maken van een formulier kan het verzenden van het formulier eenvoudig worden gekoppeld aan een workflowmodel. Bijvoorbeeld om de inhoud op een bepaalde locatie van de gegevensopslagruimte op te slaan of om een gebruiker op de hoogte te stellen van het verzenden van het formulier en de inhoud ervan.
 

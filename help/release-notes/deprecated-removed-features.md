@@ -2,7 +2,7 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 5c10c5d20338b696fdab2291c714a7d6313cca8a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Gebied | Functie | Vervanging | Versie (SP) |
 |--- |--- |--- |--- |
 | Integratie met [!DNL Experience Cloud] | U kunt uw elementen synchroniseren met [!DNL Experience Cloud] configureren via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] vroeger werd geroepen [!DNL Adobe Experience Cloud]. | Als u vragen hebt, [contact opnemen met de Adobe Klantenondersteuning](https://experienceleague.adobe.com/?support-solution=General#support). |  |
-| Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. Gebruik de [ActivityMap-plug-in van Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=en). |  |
+| Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. Gebruik de [ActivityMap-plug-in van Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |  |
 | Integrations | De integratie ExactTarget is verwijderd uit de standaarddistributie (QuickStart) en het is niet meer beschikbaar. | Geen vervanging. |  |
 | Integrations | De integratie met de Salesforce-API is verwijderd uit de standaarddistributie (QuickStart) en is nu een extra pakket voor installatie vanaf [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | De functie is nog steeds beschikbaar. |
 | Forms | De ondersteuning voor de Adobe Central Migration Bridge-service is verwijderd omdat het Adobe Central-product niet meer wordt ondersteund. | Geen vervanging. |  |

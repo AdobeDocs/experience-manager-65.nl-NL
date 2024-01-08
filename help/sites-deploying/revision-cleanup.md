@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5752'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Bij elke update van de opslagplaats wordt een inhoudsrevisie gemaakt. Als gevolg
 
 Met AEM 6.3 en hoger werd een onlineversie van deze functie genaamd Online Revision Cleanup geïntroduceerd. In vergelijking met de offlinerevisie Cleanup, waarbij de AEM instantie moet worden afgesloten, kan Online revisie Cleanup worden uitgevoerd terwijl de AEM online is. Onlinerevisie opschonen is standaard ingeschakeld en is de aanbevolen manier om een revisie op te schonen.
 
-**Opmerking**: [Bekijk de video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) voor een inleiding en hoe te om Online Correctie van de Revisie te gebruiken.
+**Opmerking**: [Bekijk de video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) voor een inleiding en hoe te om Online Correctie van de Revisie te gebruiken.
 
 Het opschoningsproces van de revisie bestaat uit drie fasen: **schatting**, **samenpersen**, en **opruimen**. Schatting bepaalt of de volgende fase (compensatie) al dan niet wordt uitgevoerd op basis van hoeveel huisvuil kan worden verzameld. Tijdens de samenstellingsfase worden de segmenten en de teerdossiers herschreven verlaten om het even welke ongebruikte inhoud. De opschoningsfase verwijdert vervolgens de oude segmenten, inclusief eventuele ongewenste details die deze bevatten. In de offlinemodus kan doorgaans meer ruimte worden vrijgemaakt, omdat in de onlinemodus rekening moet worden gehouden met AEM werkset, waarbij extra segmenten niet worden verzameld.
 

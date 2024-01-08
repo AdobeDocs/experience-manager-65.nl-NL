@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -182,7 +182,7 @@ Een ervaringsfragment van AEM naar doel exporteren (nadat u de Cloud-configurati
 
 ## Uw ervaringsfragmenten in Adobe Target gebruiken {#using-your-experience-fragments-in-adobe-target}
 
-Nadat u de voorgaande taken hebt uitgevoerd, wordt het Experience Fragment weergegeven op de pagina Offers in Adobe Target. Kijk naar de [specifieke doeldocumentatie](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en) voor meer informatie over wat je daar kunt bereiken.
+Nadat u de voorgaande taken hebt uitgevoerd, wordt het Experience Fragment weergegeven op de pagina Offers in Adobe Target. Kijk naar de [specifieke doeldocumentatie](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) voor meer informatie over wat je daar kunt bereiken.
 
 >[!NOTE]
 >

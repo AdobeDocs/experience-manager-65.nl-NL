@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Een gedwongen sluiting resulteert in AEM het opschorten van asynchrone indexerin
 
 >[!NOTE]
 >
->Voor AEM 6.1 moet u ervoor zorgen dat [AEM 6.1 GVB 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) is geïnstalleerd.
+>Voor AEM 6.1 moet u ervoor zorgen dat [AEM 6.1 GVB 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) is geïnstalleerd.
 
 In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asynchrone indexering te beheren overbelast worden. Om het indexeren proces te isoleren, kan een draadpool worden gevormd om ander AEM werk te verhinderen met de capaciteit van het Eak om inhoud op geschikte wijze te indexeren. Voer in dergelijke gevallen de volgende handelingen uit:
 

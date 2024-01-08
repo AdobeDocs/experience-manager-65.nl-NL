@@ -2,9 +2,9 @@
 title: Toegang tot uw inhoud via AEM levering-API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u GraphQL-query's kunt gebruiken om toegang te krijgen tot de inhoud van Content Fragments.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1332'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Inhoudsfragmenten kunnen worden gebruikt als basis voor GraphQL voor AEM schema&
 * Ze zijn gebaseerd op een Content Fragment Model, dat de structuur voor het resulterende fragment vooraf definieert met behulp van een selectie van gegevenstypen.
 * Er kunnen extra structuurlagen worden bereikt met het gegevenstype Fragmentverwijzing, dat beschikbaar is wanneer u een model definieert.
 
-### Modellen van contentfragmenten {#content-fragments-models}
+### Modellen van inhoudsfragmenten {#content-fragments-models}
 
 Deze modellen van inhoudsfragmenten:
 
@@ -371,10 +371,10 @@ Nu u hebt geleerd hoe u toegang kunt krijgen tot inhoud zonder kop en deze kunt 
    * [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
    * [Voorbeeldquery - Alle steden met een benoemde variatie](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 * [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
-   * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
+   * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
 * [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van AEM functies zonder kop, zoals het modelleren van inhoud en GraphQL.
 
 <!--

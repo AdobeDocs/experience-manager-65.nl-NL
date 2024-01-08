@@ -2,10 +2,10 @@
 title: Eigenschappen van inhoudspagina bewerken
 description: Definieer de vereiste eigenschappen voor een pagina in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 2%
+source-wordcount: '1855'
+ht-degree: 1%
 
 ---
 
@@ -187,16 +187,16 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **Delen via sociale media**
 
-  Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee worden de opties beschikbaar voor de [De kerncomponent delen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
+  Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee worden de opties beschikbaar voor de [De kerncomponent delen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **Delen door gebruikers voor Facebook inschakelen**
    * **Delen door gebruikers voor Pinterest inschakelen**
    * **Voorkeurswijziging XF**
 Variatie van ervaringsfragment definiëren die wordt gebruikt voor het genereren van metagegevens voor een pagina
 
-### Cloud Services {#cloud-services}
+### Cloud Servicen {#cloud-services}
 
-* **Cloud Services**
+* **Cloud Servicen**
 
   Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
 

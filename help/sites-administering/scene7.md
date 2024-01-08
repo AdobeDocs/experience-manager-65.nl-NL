@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5236'
 ht-degree: 0%
@@ -418,7 +418,7 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 Voordat u elementen naar Dynamic Media Classic kunt duwen zonder ze te publiceren, moet u het volgende instellen:
 
 1. [Gebruik de Admin Console om een steungeval te creëren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). In het geval van ondersteuning kunt u vragen of een beveiligde voorvertoning voor uw Dynamic Media Classic-account is ingeschakeld.
-1. [Beveiligde voorvertoning voor uw Dynamic Media Classic-account instellen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en).
+1. [Beveiligde voorvertoning voor uw Dynamic Media Classic-account instellen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Dit zijn dezelfde stappen die u zou volgen om een veilige testinstallatie in Dynamic Media Classic te maken.
 

@@ -2,7 +2,7 @@
 title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de lagen worden in het voorgeheugen ondergebracht Dispatcher en CDN, uiteindelijk verbeterend de prestaties van de cliënttoepassingen.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 0%
@@ -260,7 +260,7 @@ Let op: `%3B` is de UTF-8-codering voor `;` en `%3D` is de codering voor `=`. De
 
 ## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
 
-De blijvende vragen worden geadviseerd aangezien zij in het voorgeheugen onder kunnen brengen bij [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) en de lagen van het Netwerk van de Levering van de Inhoud (CDN), uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
+De blijvende vragen worden geadviseerd aangezien zij in het voorgeheugen onder kunnen brengen bij [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) en de lagen van het Netwerk van de Levering van de Inhoud (CDN), uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
 
 AEM maakt de cache standaard ongeldig op basis van de definitie Tijd tot live (TTL). Deze TTLs kan door de volgende parameters worden bepaald. Deze parameters zijn op verschillende manieren toegankelijk, waarbij de namen variëren volgens het gebruikte mechanisme:
 

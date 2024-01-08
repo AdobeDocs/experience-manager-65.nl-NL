@@ -1,15 +1,15 @@
 ---
 title: JSON-exportfunctie voor services voor inhoud
-description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt.
+description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt.
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 2%
+source-wordcount: '411'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
 
-Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina&#39;s zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt. Deze kanalen kunnen zijn:
+Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina&#39;s zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt. Deze kanalen kunnen zijn:
 
 * [Toepassingen voor één pagina](spa-walkthrough.md)
 * Systeemeigen mobiele toepassingen
@@ -27,13 +27,13 @@ Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdie
 
 >[!NOTE]
 >
->De hier beschreven functionaliteit is beschikbaar voor alle Core Components aangezien [release 1.1.0 van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+>De hier beschreven functionaliteit is beschikbaar voor alle Core Components aangezien [release 1.1.0 van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 ## JSON-exportfunctie met kerncomponenten van inhoudsfragment {#json-exporter-with-content-fragment-core-components}
 
-Met de AEM JSON-exportfunctie kunt u de inhoud van elke AEM pagina in JSON-indeling voor gegevensmodellen leveren. Deze methode kan vervolgens door uw eigen toepassingen worden gebruikt.
+Met de AEM JSON-exportfunctie kunt u de inhoud van elke AEM pagina leveren in de indeling van het JSON-gegevensmodel. Deze methode kan vervolgens door uw eigen toepassingen worden gebruikt.
 
-Binnen AEM wordt de levering bereikt met behulp van de kiezer `model` en `.json` extensie.
+Binnen AEM wordt de levering bereikt met de kiezer `model` en `.json` extensie.
 
 `.model.json`
 
@@ -49,7 +49,7 @@ Binnen AEM wordt de levering bereikt met behulp van de kiezer `model` en `.json`
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
-Het volledige pad naar het fragment gebruiken (als `jcr:content`); bijvoorbeeld met een achtervoegsel zoals .
+Het volledige pad naar het fragment gebruiken (als `jcr:content`), bijvoorbeeld met een achtervoegsel zoals
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -71,19 +71,19 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
   >[!NOTE]
   >
-  >Hoewel het geen standaardimplementatie is, [meerdere kiezers worden ondersteund,](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
+  >Hoewel geen standaardimplementatie, [meerdere kiezers worden ondersteund,](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
 
 ### Aanvullende informatie {#further-information}
 
 Zie ook:
 
-* HTTP-API voor assets
+* Elementen HTTP-API
 
-   * [HTTP-API voor assets](/help/assets/mac-api-assets.md)
+   * [Elementen HTTP-API](/help/assets/mac-api-assets.md)
 
 * Modellen voor verkopen:
 
-   * [Sling Models - het associëren van een modelklasse met een middeltype sinds 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling Models - Associerend een modelklasse met een middeltype sinds 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM met JSON:
 
@@ -95,8 +95,8 @@ Zie voor meer informatie:
 
 * De [Het onderwerp Inhoudsfragmenten in de gebruikershandleiding voor middelen](/help/assets/content-fragments/content-fragments.md)
 
-* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+* [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
 
-* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)

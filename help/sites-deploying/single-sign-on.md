@@ -7,9 +7,9 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Wanneer een waarde wordt gevonden, is het onderzoek gebeëindigd en deze waarde 
 Vorm de volgende twee diensten om de naam van de attributen te erkennen die SSID opslaat:
 
 * De aanmeldingsmodule.
-* De SSO-verificatieservice.
+* De service SSO-verificatie.
 
 Geef dezelfde kenmerknaam op voor beide services. Het kenmerk is opgenomen in de `SimpleCredentials` die worden verstrekt aan `Repository.login`. De waarde van het kenmerk is irrelevant en wordt genegeerd, de aanwezigheid ervan is alleen belangrijk en geverifieerd.
 
@@ -41,7 +41,7 @@ Om SSO voor een AEM instantie te vormen, vormt u [SSO-verificatiehandler](/help/
 
    Bijvoorbeeld voor NTLM-set:
 
-   * **Pad:** indien nodig; bijvoorbeeld: `/`
+   * **Pad:** zoals vereist, bijvoorbeeld `/`
    * **Namen van koptekst**: `LOGON_USER`
    * **ID-indeling**: `^<DOMAIN>\\(.+)$`
 
@@ -49,17 +49,17 @@ Om SSO voor een AEM instantie te vormen, vormt u [SSO-verificatiehandler](/help/
 
    Voor CoSign:
 
-   * **Pad:** indien nodig; bijvoorbeeld: `/`
+   * **Pad:** zoals vereist, bijvoorbeeld `/`
    * **Namen van koptekst**: remote_user
    * **ID-indeling:** asIs
 
    Voor SiteMinder:
 
-   * **Pad:** indien nodig; bijvoorbeeld: `/`
+   * **Pad:** zoals vereist, bijvoorbeeld `/`
    * **Naam koptekst:** SM_USER
    * **ID-indeling**: asIs
 
-1. Bevestig dat Single Sign On naar wens werkt. met inbegrip van de vergunning.
+1. Bevestig dat Single Sign On naar wens werkt, inclusief autorisatie.
 
 >[!CAUTION]
 >
@@ -78,12 +78,12 @@ Om SSO voor een AEM instantie te vormen, vormt u [SSO-verificatiehandler](/help/
 
 >[!NOTE]
 >
->Als u ook de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) met de Microsoft® Internet Information Server (IIS), dan wordt de extra configuratie vereist in:
+>Als u ook de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) met de Microsoft® Internet Information Server (IIS), dan wordt de extra configuratie vereist in:
 >
 * `disp_iis.ini`
 * IIS
 >
-In `disp_iis.ini` set: (zie [Dispatcher installeren met de Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) voor volledige informatie)
+In `disp_iis.ini` set: (zie [Dispatcher installeren met de Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) voor volledige informatie)
 >
 * `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
 * `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
@@ -95,7 +95,7 @@ In IIS:
 * enable **Geïntegreerde Windows-verificatie**
 >
 
-U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door te gebruiken **Authenticator** optie van de Felix Console; bijvoorbeeld:
+U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door te gebruiken **Authenticator** optie van de Console van Felix; bijvoorbeeld:
 
 `http://localhost:4502/system/console/slingauth`
 
@@ -105,7 +105,7 @@ De handler die het beste overeenkomt met het pad wordt als eerste gevraagd. Bijv
 
 ### Voorbeeld {#example}
 
-Voor een cookieaanvraag (via de URL) `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Voor een cookieverzoek (het gebruiken van URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1

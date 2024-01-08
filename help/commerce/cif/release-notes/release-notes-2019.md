@@ -2,22 +2,22 @@
 title: Opmerkingen bij de release AEM inhoud en handel 2019
 description: Opmerkingen bij de release van Adobe Experience Manager Content and Commerce 2019.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 6%
+source-wordcount: '946'
+ht-degree: 4%
 
 ---
 
-# GitHub-releaseoverzicht van het Commerce Integration Framework
+# Commerce integration framework GitHub Release-overzicht
 
 ## Releasedatum: november 2019
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0.7.1 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0.6.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.6.2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF | 0,7,1 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF kerncomponenten | 0,6,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0,6,2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-november}
 
@@ -41,15 +41,15 @@ ht-degree: 6%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0.6.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0.5.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.5.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF | 0,6,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF kerncomponenten | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-october}
 
 * Volledig bruikbare sjablonen voor de pagina met productdetails en de pagina met productlijsten. Auteurs kunnen nu sjablonen maken en de productlijst en productdetailcomponenten naar deze sjablonen slepen en neerzetten. Naast het toevoegen van andere componenten, kunnen de auteurs de lay-out van deze malplaatjes nu veranderen, die hen onbeperkte vrijheid geven om verbazende ervaringen tot stand te brengen die marketing en handelsinhoud combineren.
 
-* Alle auteurvriendelijke CIF core-components zijn uitgebreid om te ondersteunen [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
+* Alle auteurvriendelijke CIF core-components zijn uitgebreid om te ondersteunen [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
 
 * React-based cliënt-zijcomponenten voor rekeningsbeheer. Deze release ondersteunt de volgende functies: Aanmelden, Wachtwoord vergeten en Account maken.
 
@@ -63,9 +63,9 @@ ht-degree: 6%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0.5.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0.4.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.4.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF kerncomponenten | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-september}
 
@@ -85,15 +85,15 @@ ht-degree: 6%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0.4.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0.3.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.3.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF kerncomponenten | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-august}
 
 * Het insluiten CIF Connector in CIF Archetype wordt facultatief gemaakt om ontwikkelaars meer flexibiliteit te verstrekken.
 
-* CIF-componenten losgekoppeld van &quot;Venia&quot;-specifieke CSS-stijlen, zodat ontwikkelaars naar keuze CSS-stijlen kunnen toepassen.
+* CIF Componenten losgekoppeld van specifieke CSS-stijlen voor &quot;Venia&quot;, zodat ontwikkelaars naar keuze CSS-stijlen kunnen toepassen.
 
 * Multistore/site functie om het gebruik van CIF Core Components op meerdere AEM sitestructuren toe te staan en de onderliggende GraphQL client-implementatie in staat te stellen verbinding te maken met verschillende Adobe Commerce store/store-weergaven.
 
@@ -113,13 +113,13 @@ ht-degree: 6%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0.3.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0.2.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.2.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF kerncomponenten | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-july}
 
-* Eerste CIF Archetype om ontwikkelaars van verscheidene plaatsingsopties te voorzien: 1.Deploy AEM Venia storefront 2. Stel steigers voor een nieuw project 3 op. CIF gebruiken in een bestaand project
+* Eerste CIF Archetype om ontwikkelaars verschillende implementatieopties te bieden: 1.Implementeer AEM Venia storefront 2. Stel steigers voor een nieuw project 3 op. CIF gebruiken in een bestaand project
 
 * Catalogusnavigatie op meerdere niveaus ter ondersteuning van navigatie door categorieën en subcategorieën.
 
@@ -139,14 +139,14 @@ ht-degree: 6%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0.2.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0.1.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF kerncomponenten | 0,1,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 
 ### Wat is er nieuw? {#what-is-new-june}
 
 * AEM B2C-winkel met de eerste mobiele Venia CSS-stijl, openingspagina, dynamische catalogusnavigatie via product- en categoriepagina&#39;s, productzoekpagina en de mogelijkheid om winkelwagentjes te gebruiken om handelsprojecten snel te starten en te versnellen.
 
-* CIF-aansluiting en -ontwerpgereedschappen (Productconsole, Productkiezer en Categoriekiezer) waarmee auteurs ervaringen kunnen creëren in AEM met commerciële inhoud.
+* CIF Connector- en ontwerpgereedschappen (Productconsole, Productkiezer en Categoriekiezer) om auteurs in staat te stellen ervaringen in AEM met commerciële inhoud te maken.
 
 * Eerste versie van CIF Core Components compatible met Adobe Commerce 2.3.1:
    * Productgegevens

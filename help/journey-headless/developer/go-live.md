@@ -2,9 +2,9 @@
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 
 Nadat de lokale ontwikkelomgeving is ingesteld, kunt u inhoud die in de React-app wordt gebruikt, simuleren door een statische Node-server lokaal te implementeren.
 
-Zie voor een diepgaander overzicht van het instellen van een lokale ontwikkelomgeving en alle afhankelijkheden die nodig zijn voor voorvertoning van inhoud [Implementatiedocumentatie voor productie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=en).
+Zie voor een diepgaander overzicht van het instellen van een lokale ontwikkelomgeving en alle afhankelijkheden die nodig zijn voor voorvertoning van inhoud [Implementatiedocumentatie voor productie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Uw AEM toepassing zonder koppen voorbereiden voor Go-Live {#prepare-your-aem-headless-application-for-golive}
 
@@ -141,7 +141,7 @@ Het opstellen aan Productie kan afhangen van of u hebt *traditioneel* AEM instan
 
 ## Distribueren naar productie met Maven {#deploy-to-production-maven}
 
-Voor een *traditioneel* implementatie (niet-AMS) met behulp van Maven, raadpleegt u de [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) voor een overzicht.
+Voor een *traditioneel* implementatie (niet-AMS) met behulp van Maven, raadpleegt u de [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) voor een overzicht.
 
 ## Distribueren naar productie met gebruik van Cloud Manager {#deploy-to-production-cloud-manager}
 
@@ -214,11 +214,11 @@ Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga aan het facult
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Handleiding voor AEM ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [Handleiding voor AEM ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
-* [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+* [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* [Cloud Manager voor AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=en)
+* [Cloud Manager voor AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 * CDN-cache
 

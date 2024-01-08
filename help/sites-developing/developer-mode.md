@@ -1,5 +1,5 @@
 ---
-title: Ontwerpmodus
+title: Modus voor ontwikkelaars
 description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,14 @@ topic-tags: components
 content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
 
-# Ontwerpmodus{#developer-mode}
+# Modus voor ontwikkelaars{#developer-mode}
 
 Tijdens het bewerken van pagina&#39;s in Adobe Experience Manager (AEM), diverse [modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) zijn beschikbaar, inclusief de modus Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
 
@@ -24,9 +24,9 @@ Tijdens het bewerken van pagina&#39;s in Adobe Experience Manager (AEM), diverse
 
 Deze hulp een ontwikkelaar om:
 
-* Detecteren: waaruit bestaan de pagina&#39;s?
-* Foutopsporing: waar en wanneer gebeurt dat , wat op zijn beurt helpt om problemen op te lossen .
-* Testen: gedraagt de toepassing zich zoals verwacht.
+* Detecteren: waaruit de pagina&#39;s bestaan.
+* Foutopsporing: waar en wanneer gebeurt, wat op zijn beurt helpt om problemen op te lossen.
+* Test: gedraagt de toepassing zich zoals verwacht.
 
 >[!CAUTION]
 >
@@ -54,12 +54,12 @@ Deze hulp een ontwikkelaar om:
 >Zie het volgende:
 >
 >* artikel in de kennisbank; [Problemen AEM TouchUI oplossen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)voor meer tips en hulpmiddelen.
->* AEM Gems-sessie over [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
+>* AEM Gems-sessie over [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Ontwerpmodus openen {#opening-developer-mode}
 
-De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Selecteer **Ontwikkelaar** in de moduskiezer op de werkbalk van de pagina-editor:
+De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Als u het deelvenster wilt openen, selecteert u **Ontwikkelaar** in de moduskiezer op de werkbalk van de pagina-editor:
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -77,7 +77,7 @@ Dit toont een componentenboom die:
 
 * Hiermee wordt de keten van componenten en sjablonen die op de pagina worden weergegeven (SLY, JSP enzovoort) omlijnd. De structuur kan worden uitgebreid om de context binnen de hiërarchie te tonen.
 * Geeft de computertijd aan de serverzijde weer om de component te renderen.
-* Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails; zoals:
+* Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails, zoals:
 
    * Pad naar opslagplaats
    * Koppelingen naar scripts (geopend in CRXDE Lite)

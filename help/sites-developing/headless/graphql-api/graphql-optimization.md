@@ -2,9 +2,9 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst a
 
 Zie:
 
-* [CDN gebruiken in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn)
+* [CDN gebruiken in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### HTTP-cachebeheerkoppen instellen {#set-http-cache-control-headers}
 
@@ -220,7 +220,7 @@ Zie:
 
 * [Voorbeeldquery met filtering op _tags-id en exclusief variaties, en sorteren op naam](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-filtering-tag-not-variations)
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 Het belangrijkste doel van alle optimaliseringsaanbevelingen is het verminderen van de aanvankelijke resultaatreeks. De hier vermelde beste praktijken verstrekken manieren om dit te doen. Zij kunnen (en moeten) worden gecombineerd.
 

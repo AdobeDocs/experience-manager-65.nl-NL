@@ -2,9 +2,9 @@
 title: Elementaire componenten
 description: Leer over de Componenten van de Stichting in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '6872'
 ht-degree: 0%
 
 ---
@@ -210,7 +210,7 @@ Optioneel. Het maximumaantal items dat u in de carrousel wilt gebruiken.
 
 >[!NOTE]
 >
->U kunt een aangepaste carrouselcomponent voor Adobe Experience Manager maken die digitale elementen weergeeft in de AEM DAM. Zie [Aangepaste carrouselcomponenten maken voor Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>U kunt een aangepaste carrouselcomponent voor Adobe Experience Manager maken die digitale elementen weergeeft in de AEM DAM. Zie [Aangepaste carrouselcomponenten maken voor Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ### Diagram {#chart}
 
@@ -245,7 +245,7 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 
 >[!NOTE]
 >
->U kunt een aangepast AEM grafiekbesturingselement maken waarmee gegevens in de AEM JCR worden weergegeven. Zie voor meer informatie [Adobe Experience Manager-gegevens in een diagram weergeven](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>U kunt een aangepast AEM grafiekbesturingselement maken waarmee gegevens in de AEM JCR worden weergegeven. Zie voor meer informatie [Adobe Experience Manager-gegevens in een diagram weergeven](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ### Inhoudsfragment {#content-fragment}
 
@@ -878,7 +878,7 @@ In het volgende voorbeeld ziet u een component Tekstafbeelding waarmee de afbeel
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Title Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Title Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) in plaats daarvan.
 
 De component title kan:
 

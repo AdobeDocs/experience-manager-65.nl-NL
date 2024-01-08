@@ -2,9 +2,9 @@
 title: Hoe te om AEM Projecten te bouwen gebruikend Apache Maven
 description: In dit document wordt beschreven hoe u een AEM project instelt op basis van Apache Maven
 exl-id: 451913bf-bb1e-4444-aee5-968ac30b5c9d
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ AEM 6.5 houdt zich aan de meest recente beste praktijken voor pakketbeheer en pr
 >
 >* De [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel in de AEM as a Cloud Service documentatie over de structuur van moderne AEM .
 >* De [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie voor hoe te om een nieuw AEM project te beginnen gebruikend archetype.
->* De [Insteekmodule Adobe-inhoudspakket](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) artikel in de AEM as a Cloud Service documentatie voor hoe te om AEM toepassingen op te stellen.
+>* De [Insteekmodule Adobe-inhoudspakket](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) artikel in de AEM as a Cloud Service documentatie voor hoe te om AEM toepassingen op te stellen.
 >
 >Alle drie de documenten zijn van toepassing op AEM 6.5.

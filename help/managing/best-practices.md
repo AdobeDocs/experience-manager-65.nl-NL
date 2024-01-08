@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3238'
+source-wordcount: '3214'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
    * Processen voor elke omgeving, bijvoorbeeld vereisten voor implementatie en onderhoud
    * Onderhoudsactiviteiten (GC voor datastore, TarPM-optimalisatie, enzovoort)
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) caching
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) caching
    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publiceren/delen
    * Prestaties voor de client-side (JS minify, concat, css sprites, totaal aantal http-aanvragen, enzovoort)
 

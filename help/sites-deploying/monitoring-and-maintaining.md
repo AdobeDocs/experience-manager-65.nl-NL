@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5793'
 ht-degree: 0%
@@ -1096,9 +1096,9 @@ Hieronder volgt een lijst met suggesties voor het controleren of er bepaalde pre
 >
 Zie ook de volgende artikelen voor meer informatie:
 >
-* [Draad-dumpen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [Geheugenproblemen analyseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [Analyseren met ingebouwde analyse](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [Draad-dumpen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+* [Geheugenproblemen analyseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+* [Analyseren met ingebouwde analyse](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 * [Langzame en geblokkeerde processen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ Controleer in deze gevallen:
 * De JVM-instellingen die worden gebruikt voor [AEM starten](/help/sites-deploying/deploy.md#getting-started)
 * De Knowledge Base:
 
-   * [Geheugenproblemen analyseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [Geheugenproblemen analyseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### I/O schijf {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem, of als u merkt dat
 * Of en hoe u Versie zuiveren [hebt geconfigureerd](/help/sites-deploying/version-purging.md)
 * De Knowledge Base:
 
-   * [Te veel geopende bestanden](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [Te veel geopende bestanden](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
    * [Dagboek verbruikt te veel schijfruimte](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Regelmatige afbraak van prestaties {#regular-performance-degradation}

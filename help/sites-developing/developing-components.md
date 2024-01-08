@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3246'
 ht-degree: 0%
@@ -91,11 +91,11 @@ Het mechanisme om logica en verschijning te scheiden helpt verduidelijken wat vo
 
 ### Java gebruiken {#using-java}
 
-[Met de HTML Java Use-API kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Hiermee kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+[Met de HTML Java Use-API kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Hiermee kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 
 ### JavaScript gebruiken {#using-javascript}
 
-[Met de HTML JavaScript Use-API kan een HTML-bestand toegang krijgen tot hulplijncode die in JavaScript is geschreven](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Hiermee kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+[Met de HTML JavaScript Use-API kan een HTML-bestand toegang krijgen tot hulplijncode die in JavaScript is geschreven](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Hiermee kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 
 ### Client-Side HTML-bibliotheken gebruiken {#using-client-side-html-libraries}
 
@@ -194,7 +194,7 @@ Zie voor voorbeelden:
 >
 >Zie:
 >
->* de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>* de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* de desbetreffende steekproefcode die onder [Codevoorbeeld - Hoe te om de Gebieden van de Dialoog aan te passen](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -460,9 +460,9 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
    * Maak een dialoogvenster voor gebruik in de interface met aanraakbediening. Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening echter gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
    * De [AEM moderniseringsinstrumenten](/help/sites-developing/modernization-tools.md) worden geleverd om u te helpen bestaande componenten uit te breiden.
    * [ExtJS toewijzen aan UI-componenten voor graniet](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) verstrekt een geschikt overzicht van xtypes ExtJS en knooptypes van hun gelijkwaardige middeltypes van Granite UI.
-   * Velden aanpassen, raadpleeg de sessie AEM Gems over voor meer informatie [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * Velden aanpassen, raadpleeg de sessie AEM Gems over voor meer informatie [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
    * Migreren van typen naar [Graniet UI-validatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * JS-listeners gebruiken, zie voor meer informatie [Veldgebeurtenissen afhandelen](#handling-field-events) en de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * JS-listeners gebruiken, zie voor meer informatie [Veldgebeurtenissen afhandelen](#handling-field-events) en de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### cq:listenercode migreren {#migrating-cq-listener-code}
 

@@ -2,9 +2,9 @@
 title: Authoring
 description: Concepten van ontwerpen en publiceren in Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 AEM biedt u twee omgevingen:
 
 * Auteur
-* Publicatie
+* Publiceren
 
 Met deze interacties kunt u inhoud op uw website beschikbaar maken, zodat uw bezoekers de inhoud kunnen lezen.
 
@@ -81,4 +81,4 @@ Wanneer de AEM-site een [community-site](/help/communities/overview.md), of omva
 
 #### Dispatcher {#dispatcher}
 
-Om de prestaties voor bezoekers van uw website te optimaliseren, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)** implementeert taakverdeling en caching.
+Om de prestaties voor bezoekers van uw website te optimaliseren, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** implementeert taakverdeling en caching.

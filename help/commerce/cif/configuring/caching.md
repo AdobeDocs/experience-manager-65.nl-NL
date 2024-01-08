@@ -2,9 +2,9 @@
 title: Caching en prestaties
 description: Leer over de verschillende beschikbare configuraties om GraphQL en inhoud het in cache plaatsen toe te laten om de prestaties van uw handelsimplementatie te optimaliseren.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Pagina&#39;s of fragmenten in cache AEM in het deelvenster [AEM Dispatcher](http
 
 Naast zuivere AEM beheerde inhoud CIF een pagina kan typisch handelsgegevens tonen die dynamisch van Adobe Commerce via GraphQL wordt opgehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud veranderen, bijvoorbeeld, als sommige productgegevens (zoals naam of prijs) in Adobe Commerce veranderen.
 
-Om ervoor te zorgen dat CIF pagina&#39;s gedurende een beperkte periode in de AEM Dispatcher in cache kunnen worden opgeslagen, raden we u daarom aan om het volgende te doen: [Op tijd gebaseerde invalidatie van cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) (ook wel op TTL gebaseerd in cache plaatsen genoemd) wanneer het in cache plaatsen van CIF pagina&#39;s in de AEM Dispatcher. Deze functie kan worden geconfigureerd in AEM met de extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket.
+Om ervoor te zorgen dat CIF pagina&#39;s gedurende een beperkte periode in de AEM Dispatcher in cache kunnen worden opgeslagen, raden we u daarom aan om het volgende te doen: [Op tijd gebaseerde invalidatie van cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (ook wel op TTL gebaseerd in cache plaatsen genoemd) wanneer het in cache plaatsen van CIF pagina&#39;s in de AEM Dispatcher. Deze functie kan worden geconfigureerd in AEM met de extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket.
 
 Met op TTL gebaseerde caching, bepaalt een ontwikkelaar typisch één of veelvoudige caching duur voor geselecteerde AEM pagina&#39;s. Dit zorgt ervoor dat CIF pagina&#39;s slechts in het voorgeheugen ondergebracht in de AEM Dispatcher tot de gevormde duur zijn en dat de inhoud vaak zal worden bijgewerkt.
 

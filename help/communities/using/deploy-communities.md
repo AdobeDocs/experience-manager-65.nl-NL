@@ -3,10 +3,10 @@ title: Gemeenschappen inzetten
 description: AEM Communities implementeren
 content-type: reference
 topic-tags: deploying
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 1%
+source-wordcount: '1705'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +106,7 @@ De noodzakelijke stappen zijn:
 1. Gebruik de webconsole om de bundel te installeren en te starten:
 
    * Bijvoorbeeld https://localhost:4502/system/console/bundles
-   * Selecteer **`Install/Update`**
+   * Selecteren **`Install/Update`**
    * Blader naar.. om de bundel te selecteren die u uit het gedownloade ZIP-archief hebt opgehaald
    * Controleren of *JDBC-stuurprogramma van oracle Corporation voor MySQLcom.mysql.jdbc* is actief en start deze als dit niet het geval is (of controleer de logboeken)
 
@@ -114,7 +114,7 @@ De noodzakelijke stappen zijn:
 
    * Bijvoorbeeld https://localhost:4502/system/console/configMgr
    * Zoeken `Day Commons JDBC Connections Pool` en selecteer deze om de configuratie te openen.
-   * Selecteer `Save`.
+   * Selecteren `Save`.
 
 1. Herhaal stap 3 en 4 op alle auteur en publiceer instanties.
 
@@ -268,7 +268,7 @@ Om het belangrijkste materiaal van Auteur aan alle andere instanties te kopiëre
 
    * Zoek de `com.adobe.granite.crypto.file` bundelen in het lokale bestandssysteem
 
-     Bijvoorbeeld,
+     Bijvoorbeeld:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * De `bundle.info` bestand identificeert de bundel
@@ -307,9 +307,9 @@ Met het zeer belangrijke materiaal dat in de bewaarplaats wordt opgeslagen, is d
 Gebruiken [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * Bladeren naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Selecteer `/etc/key`
+* Selecteren `/etc/key`
 * Openen `Replication` tab
-* Selecteer `Replicate`
+* Selecteren `Replicate`
 
 * [De Granite Crypto-bundel vernieuwen](#refresh-the-granite-crypto-bundle)
 
@@ -356,8 +356,8 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
 
 Als u een Dispatcher gebruikt, raadpleegt u:
 
-* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) documentatie
-* [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) documentatie
+* [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Dispatcher configureren voor Gemeenschappen](/help/communities/dispatcher.md)
 * [Bekende problemen](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

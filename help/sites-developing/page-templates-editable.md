@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
 ht-degree: 0%
@@ -46,7 +46,7 @@ In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewe
 >[!NOTE]
 >
 >De volgende zelfstudie kan ook van belang zijn voor het instellen van een bewerkbare paginasjabloon in een nieuw project:
->[Aan de slag met AEM Sites Deel 2 - Een basispagina en sjabloon maken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
+>[Aan de slag met AEM Sites Deel 2 - Een basispagina en sjabloon maken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Een nieuwe sjabloon maken {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Met de structuur kunt u componenten en inhoud voor de sjabloon definiëren.
    * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 
-      * Als u een sjabloon maakt in een aangepaste map buiten de map `We.Retail` voorbeeldinhoud, kunt u de Componenten van de Stichting kiezen of gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+      * Als u een sjabloon maakt in een aangepaste map buiten de map `We.Retail` voorbeeldinhoud, kunt u de Componenten van de Stichting kiezen of gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.

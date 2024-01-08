@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2795'
+source-wordcount: '2843'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Terwijl alle systemen actief zijn, zijn er betere computerprestaties beschikbaar
 De schatting van het aantal clusterknooppunten dat nodig is, is gebaseerd op de basisvereisten en de specifieke gebruiksgevallen van het specifieke webproject:
 
 * Vanuit het perspectief van mislukken-veiligheid, is het noodzakelijk om, voor alle milieu&#39;s te bepalen hoe kritieke mislukking en de tijd van de mislukkingscompensatie is gebaseerd op hoe lang het voor een clusterknoop vergt om terug te krijgen.
-* Voor het aspect van scalability, is het aantal schrijfverrichtingen fundamenteel de belangrijkste factor; zie [Auteurs die parallel werken](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) voor de auteursomgeving en [Sociale samenwerking](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) voor de publicatieomgeving. Er kan een taakverdeling worden ingesteld voor bewerkingen die alleen toegang hebben tot het systeem om leesbewerkingen te verwerken; zie [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) voor meer informatie.
+* Voor het aspect van scalability, is het aantal schrijfverrichtingen fundamenteel de belangrijkste factor; zie [Auteurs die parallel werken](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) voor de auteursomgeving en [Sociale samenwerking](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) voor de publicatieomgeving. Er kan een taakverdeling worden ingesteld voor bewerkingen die alleen toegang hebben tot het systeem om leesbewerkingen te verwerken; zie [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie.
 
 ## Omgevingsspecifieke berekeningen van auteur {#author-environment-specific-calculations}
 
@@ -200,12 +200,12 @@ Efficiëntie van de cache is van cruciaal belang voor de snelheid van de website
 
 | Cacheverhouding | Pagina&#39;s/s (piek) | Miljoen pagina&#39;s/dag (gemiddeld) |
 |---|---|---|
-| 100% | 1000-2000 | 35-70 |
+| 100% | 1000 - 2000 | 35-70 |
 | 99% | 910 | 32 |
 | 95% | 690 | 25 |
 | 90% | 520 | 18 |
 | 60% | 220 | 8 |
-| 0% | 100 | 3.5 |
+| 0% | 100 | 3,5 |
 
 >[!CAUTION]
 >

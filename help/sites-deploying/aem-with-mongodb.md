@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6184'
 ht-degree: 0%
@@ -592,7 +592,7 @@ Omdat de Dispatcher geen status heeft, kan deze eenvoudig horizontaal worden ges
 
 Wanneer AEM zonder Dispatcher wordt uitgevoerd, moeten SSL-beëindiging en taakverdeling door een andere toepassing worden uitgevoerd. Dit is vereist omdat sessies de affiniteit moeten hebben met de AEM instantie waarop ze zijn gemaakt, een concept dat sticky connections wordt genoemd. De reden hiervoor is dat updates van de inhoud minimale vertraging vertonen.
 
-Controleer de [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) voor meer informatie over hoe te om het te vormen.
+Controleer de [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over hoe te om het te vormen.
 
 ### Aanvullende configuratie {#additional-configuration}
 

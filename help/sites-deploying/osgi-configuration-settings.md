@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3360'
 ht-degree: 0%
@@ -35,7 +35,7 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 >[!NOTE]
 >
->Het hulpprogramma OSGi Configuration Diff, een onderdeel van het [AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en), kan worden gebruikt om van de standaardOSGi configuraties een lijst te maken.
+>Het hulpprogramma OSGi Configuration Diff, een onderdeel van het [AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kan worden gebruikt om van de standaardOSGi configuraties een lijst te maken.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats 
 
 >[!CAUTION]
 >
->Wanneer u de instelling voor een van de **Minieren** of **Gzip**, verwijdert u de inhoud van clientlibs cache. Zie [Kennisbank, artikel](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) voor meer informatie.
+>Wanneer u de instelling voor een van de **Minieren** of **Gzip**, verwijdert u de inhoud van clientlibs cache. Zie [Kennisbank, artikel](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) voor meer informatie.
 
 >[!NOTE]
 >

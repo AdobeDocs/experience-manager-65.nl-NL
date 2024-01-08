@@ -2,7 +2,7 @@
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 | Versie | 6,5 |
 | Type | Grote release |
 | Algemene beschikbaarheidsdatum | 8 april 2019 |
-| Aanbevolen updates | Zie [Recente updates AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en). |
+| Aanbevolen updates | Zie [Recente updates AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html). |
 
 ### Trivia {#trivia}
 
@@ -115,7 +115,7 @@ De eerste verscheepte als deel van AEM 6.4 SP2, met AEM 6.5 de SPA steun krijgt 
 
 #### Beheer van inhoud zonder hoofd {#headless-content-management}
 
-AEM kan de inhoud in verschillende indelingen en op verschillende niveaus van de stapel leveren. Sommige zijn sinds 2008 met de [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) en [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Inhoudsservices ([Verkoopmodel exporteren](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en)) is geïntroduceerd in AEM 6.3 en is de methode die wordt gebruikt door de AEM SJ SDK voor het hydreren van apps van één pagina. De [HTTP-API voor middelen](/help/assets/mac-api-assets.md) is een CRUD API, die is uitgebreid voor AEM 6.5.
+AEM kan de inhoud in verschillende indelingen en op verschillende niveaus van de stapel leveren. Sommige zijn sinds 2008 met de [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) en [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Inhoudsservices ([Verkoopmodel exporteren](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)) is geïntroduceerd in AEM 6.3 en is de methode die wordt gebruikt door de AEM SJ SDK voor het hydreren van apps van één pagina. De [HTTP-API voor middelen](/help/assets/mac-api-assets.md) is een CRUD API, die is uitgebreid voor AEM 6.5.
 
 Nieuwe HTTP API-mogelijkheden:
 
@@ -137,7 +137,7 @@ Efficiënt ontwerpen, leveren en optimaliseren van ervaringen op alle digitale s
 * Personaliseer door plaats of configuratie van gegevens teweeggebrachte inhoud door dynamische placeholders te gebruiken.
 * Verenigde inzichten gedreven door de integratie van Adobe Analytics in AEM Screens Player
 
-Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen bij de release in de [AEM Screens-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen bij de release in de [AEM Screens-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 #### Component- en sjabloonontwikkeling {#component-amp-template-development}
 
@@ -357,7 +357,7 @@ Zie voor meer informatie [Adobe Stock-middelen gebruiken in Experience Manager A
 
 [!DNL Experience Manager Assets Brand Portal] helpt u de goedgekeurde middelen eenvoudig te verwerven, effectief te controleren en veilig te distribueren aan externe leveranciers/agentschappen en interne zakelijke gebruikers over verschillende apparaten. Het helpt de efficiëntie van het delen van bedrijfsmiddelen te verbeteren, versnelt de tijd tot aan de markt voor bedrijfsmiddelen en voorkomt het risico van niet-conform gebruik en ongeoorloofde toegang.
 
-Zie voor meer informatie [Nieuwe functies in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=en).
+Zie voor meer informatie [Nieuwe functies in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Verbonden elementen {#connectedassets}
 
@@ -596,4 +596,4 @@ De volgende sites zijn alleen beschikbaar voor klanten. Als u een klant bent en 
 
 * Productupdates, patches en pakketten voor extra functionaliteit op [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe voor klantenondersteuning](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).
+* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe voor klantenondersteuning](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

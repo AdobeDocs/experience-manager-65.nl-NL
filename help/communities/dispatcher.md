@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
 * Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
 
-Zie ook het hoofdgedeelte [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
+Zie ook het hoofdgedeelte [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ## Caching van Dispatcher {#dispatcher-caching}
 
@@ -39,7 +39,7 @@ Wanneer gevormd om het caching van de Verzender te steunen, wordt een op TTL-Geb
 
 ### Vereisten {#requirements}
 
-* Dispatcher versie 4.1.2 of hoger [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) voor de meest recente versie)
+* Dispatcher versie 4.1.2 of hoger [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) voor de meest recente versie)
 * [ACS AEM Commons-pakket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versie 3.3.2 of hoger
@@ -59,14 +59,14 @@ De OSGi-configuratie **ACS AEM Commons - de Kopbal van de Controle van het Gehei
   ![verzender](assets/dispatcher.png)
 
 * **Filterpatronen**
-  *(vereist)* Een of meer paden naar gemeenschapspagina&#39;s. Bijvoorbeeld, `/content/sites/engage/(.*)`.
+  *(vereist)* Een of meer paden naar gemeenschapspagina&#39;s. Bijvoorbeeld: `/content/sites/engage/(.*)`.
 
 * **Besturingselement voor cache maximaal pagina**
   *(vereist)* De maximumleeftijd (in seconden) om aan de kopbal van de Controle van het Geheime voorgeheugen toe te voegen. De waarde moet groter zijn dan 0.
 
 ## Verzendfilters {#dispatcher-filters}
 
-Het gedeelte /filter van het dialoogvenster `dispatcher.any` bestand wordt gedocumenteerd in [Toegang tot inhoud configureren - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
+Het gedeelte /filter van het dialoogvenster `dispatcher.any` bestand wordt gedocumenteerd in [Toegang tot inhoud configureren - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 In deze sectie worden vermeldingen beschreven die waarschijnlijk nodig zijn voor het goed functioneren van functies van Gemeenschappen.
 
@@ -76,7 +76,7 @@ De volgende voorbeelden gebruiken eigenschapnamen die waarschijnlijk moeten word
 
 Zie ook:
 
-* [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
+* [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >

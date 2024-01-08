@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -72,7 +72,7 @@ De [Monitorprestaties](/help/sites-deploying/monitoring-and-maintaining.md#monit
 
 **Modus voor ontwikkelaars in Touch UI**
 
-Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie dit [CQ Gems-presentatie](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie dit [CQ Gems-presentatie](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Het gebruiken van rlog.jar om de verzoeklogboeken te lezen**
 
@@ -117,7 +117,7 @@ De **ObservationQueueMaxLength** toont het aantal gebeurtenissen in de waarnemin
 1. Plaats de toepassing onder de map /crx-quickstart/install.
 
 >[!NOTE]
->Zie [AEM 6,x | Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>Zie [AEM 6,x | Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 De standaardinstelling is 10.000, maar de meeste implementaties moeten deze verhogen tot 20.000 of 50.000.
 
@@ -145,7 +145,7 @@ Nadat u prestatietests op de auteur hebt uitgevoerd, moeten eventuele problemen 
 * Bekijk het foutenlogboek voor fouten of waarschuwingen. Zie voor meer informatie [Logboekregistratie](/help/sites-deploying/configure-logging.md).
 * Hardwarebronnen van het systeem controleren, zoals geheugen- en CPU-gebruik, schijf-I/O of netwerk-I/O. Deze middelen zijn vaak de oorzaken van prestatiesknelpunten.
 * Optimaliseer de architectuur van de pagina&#39;s en hoe zij worden gericht om het gebruik van URL parameters te minimaliseren om voor zoveel mogelijk caching mogelijk toe te staan.
-* Volg de [Optimalisatie van prestaties](/help/sites-deploying/configuring-performance.md) en [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en) documentatie.
+* Volg de [Optimalisatie van prestaties](/help/sites-deploying/configuring-performance.md) en [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) documentatie.
 
 * Als er problemen optreden bij het bewerken van bepaalde pagina&#39;s of componenten op auteur-instanties, gebruikt u de TouchUI-ontwikkelaarsmodus om de pagina in kwestie te inspecteren. Dit geeft een indeling van elk inhoudsgebied op de pagina en de laadtijd.
 * Alle JS en CSS op de site miniaturen. Zie dit [blogbericht](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

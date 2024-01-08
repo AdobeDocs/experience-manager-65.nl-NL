@@ -1,6 +1,6 @@
 ---
 title: Componenten voor inhoudsfragmenten
-description: Inhoudsfragmenten van Adobe Experience Manager (AEM) worden gemaakt en beheerd als paginaonafhankelijke assets
+description: Adobe Experience Manager (AEM)-inhoudsfragmenten worden gemaakt en beheerd als pagina-onafhankelijke elementen
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 2%
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Zie de [Content Fragment Management API - Client-kant](/help/sites-developing/cu
 
 >[!CAUTION]
 >
->De [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) wordt nu aanbevolen. Zie [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) voor meer informatie .
+>De [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) wordt nu aanbevolen. Zie [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer informatie .
 >
 >In deze sectie wordt de oorspronkelijke component beschreven die is geleverd voor gebruik met inhoudsfragmenten (**Inhoudsfragment** in de **Algemeen** groep).
 
@@ -37,7 +37,7 @@ Zie de [Content Fragment Management API - Client-kant](/help/sites-developing/cu
 >
 >Zie ook [Inhoudsfragmenten die componenten voor rendering configureren](/help/sites-developing/content-fragments-config-components-rendering.md) voor nadere informatie.
 
-Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s](/help/sites-authoring/content-fragments.md). U kunt ook een bestaand inhoudsfragmentelement gebruiken door [het slepen van middelenbrowser naar pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (zoals voor andere op activa-gebaseerde componenten, zoals het stichtingscomponentenbeeld). De inhoud van het inhoudsfragmentcomponent uit de doos toont slechts één [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het inhoudsfragment waarnaar wordt verwezen. Met behulp van het componentdialoogvenster kunt u het dialoogvenster [element, variatie en bereik van fragmentalinea&#39;s](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) die u op de pagina wilt weergeven.
+Adobe Experience Manager (AEM)-inhoudsfragmenten zijn [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s](/help/sites-authoring/content-fragments.md). U kunt ook een bestaand inhoudsfragmentelement gebruiken door [het slepen van middelenbrowser naar pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (zoals voor andere op activa-gebaseerde componenten, zoals het stichtingscomponentenbeeld). De inhoud van het inhoudsfragmentcomponent uit de doos toont slechts één [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het inhoudsfragment waarnaar wordt verwezen. Met behulp van het componentdialoogvenster kunt u het dialoogvenster [element, variatie en bereik van fragmentalinea&#39;s](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) die u op de pagina wilt weergeven.
 
 >[!NOTE]
 >

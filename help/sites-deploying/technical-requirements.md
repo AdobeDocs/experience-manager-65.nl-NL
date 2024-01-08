@@ -3,7 +3,7 @@ title: Technische vereisten
 description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Als u AEM Forms 6.5 installeert, controleert u of u de volgende 32-bits versie v
 
 Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn onder andere Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van de Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM productlijn: Adobe Experience Manager as a Cloud Service. Zie [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) voor meer informatie.
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM productlijn: Adobe Experience Manager as a Cloud Service. Zie [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor meer informatie.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid om AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden voor het implementeren en gebruiken van AEM in deze cloud computing-omgevingen. Zie [aanvullende documentatie over Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -241,7 +241,7 @@ Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe M
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [Download de nieuwste versie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
+De Dispatcher is de component voor caching en taakverdeling. [Download de nieuwste versie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 

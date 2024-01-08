@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -74,7 +74,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 4</strong></td>
    <td>Zijn verzoeken afkomstig van de Dispatcher?</td>
-   <td><p>Om te zien of zijn de verzoeken behoorlijk in het voorgeheugen ondergebracht, controleer <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Debugging van de afzender documentatie</a>.<br /> </p> </td>
+   <td><p>Om te zien of zijn de verzoeken behoorlijk in het voorgeheugen ondergebracht, controleer <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#debugging">Debugging van de afzender documentatie</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 5</strong></td>
@@ -158,7 +158,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Onvoldoende geheugen</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">Mijn toepassing genereert fouten vanwege onvoldoende geheugen</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">Geheugenproblemen analyseren.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html">Geheugenproblemen analyseren.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -225,20 +225,20 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 31</strong></td>
    <td>CDN vóór Dispatcher gebruiken</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 32</strong></td>
    <td>Als u de AEM server wilt offloaden, gebruikt u sessiebeheer op Dispatcher-niveau</td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement">Beveiligde sessies inschakelen</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Beveiligde sessies inschakelen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Stap 33</strong></td>
    <td>Verzoeken in cache plaatsen</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Algemene configuratie van verzender</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">De Dispatcher Cache configureren</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html">Algemene configuratie van verzender</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">De Dispatcher Cache configureren</a></li>
     </ol> <p>Hoe te om geheim voorgeheugenverhouding te verbeteren; maak verzoeken geheim voorgeheugen-geschikt (de beste praktijken van de Verzender)</p> <p>Overweeg ook de onderstaande instellingen om uw cacheconfiguraties te optimaliseren<br /> </p>
     <ol>
      <li>Een no-cache-regel instellen voor een HTTP-aanvraag die geen GET is</li>
@@ -250,26 +250,26 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 34</strong></td>
    <td>Versie van Dispatcher upgraden</td>
-   <td><p>U kunt de meest recente versie van Dispatcher downloaden op deze locatie:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en">Koppeling volgen</a></p> </td>
+   <td><p>U kunt de meest recente versie van Dispatcher downloaden op deze locatie:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html">Koppeling volgen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Stap 35</strong></td>
    <td>Dispatcher configureren</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en">De Dispatcher configureren</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html">De Dispatcher configureren</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 36</strong></td>
    <td>Onvalidatie van cache controleren</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidatie van cache voor de auteurslaag;</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance">Cachevalidatie voor de publicatielaag.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidatie van cache voor de auteurslaag;</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Cachevalidatie voor de publicatielaag.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Stappen 37 en 38</strong></td>
    <td>Lazy-loading</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">Zie Gem-sessie over AEM webprestaties.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">Zie Gem-sessie over AEM webprestaties.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 39</strong></td>
@@ -289,7 +289,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 49</strong></td>
    <td>Belastingsgrootte verkleinen</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Gzip inschakelen</a> en <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">de afbeeldingsgrootte verkleinen</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Gzip inschakelen</a> en <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">de afbeeldingsgrootte verkleinen</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stappen 42 en 43</strong></td>
@@ -321,7 +321,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stappen 50 en 51</strong></td>
    <td>JS-code blokkeren</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html</a></td>
   </tr>
  </tbody>
 </table>

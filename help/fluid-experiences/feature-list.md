@@ -4,7 +4,7 @@ description: Lijst met functies voor dynamische ervaringen
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -49,7 +49,7 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 |---|
 | [HTTP-API](/help/assets/mac-api-assets.md) |
 | [Gestructureerde inhoudsmodellen](/help/assets/content-fragments/content-fragments.md) |
-| [Inhoudsservices](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en) |
+| [Inhoudsservices](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) |
 | [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md) |
 | HTTP API voor gestructureerde inhoud (lezen) |
 | HTTP-API voor gestructureerde inhoud (CRUD) |
@@ -82,7 +82,7 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 
 ## Meer informatie {#learn-more}
 
-* [Vochtervaring in gevallen zonder hoofdtelefoon](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
-* [AEM Inhoudsservice: Wat, Waarom en Hoe?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
-* [Veelgestelde vragen over toegang van derden](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
+* [Vochtervaring in gevallen zonder hoofdtelefoon](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [AEM Inhoudsservice: Wat, Waarom en Hoe?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [Veelgestelde vragen over toegang van derden](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
 * [Sling-API&#39;s gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

@@ -3,7 +3,7 @@ title: Configureer de Rich Text Editor voor het schrijven van inhoud in Adobe Ex
 description: Leer hoe u de Adobe Experience Manager Rich Text Editor configureert voor het schrijven van inhoud in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2883'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om de sto
 
 >[!NOTE]
 >
->De [Tekstcomponent Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) staat malplaatjeredacteurs toe om vele steekmodules van RTE in GUI als inhoudsbeleid te vormen, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven.
+>De [Tekstcomponent Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) staat malplaatjeredacteurs toe om vele steekmodules van RTE in GUI als inhoudsbeleid te vormen, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven.
 >
 >Zie de klasse [De montages van de UI van RTE en inhoudsbeleid](/help/sites-administering/rich-text-editor.md) van dit document en [Paginasjablonen maken](/help/sites-authoring/templates.md) en de [Documentatie voor ontwikkelaars van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
@@ -258,7 +258,7 @@ De beschikbare opties in RTE stromen stroomafwaarts van de configuraties van het
 * Als de gebruikersinterfaceconfiguratie van RTE verwijderde of geen punt toelaat, kan het inhoudsbeleid niet het vormen.
 * Een auteur heeft toegang tot slechts dergelijke functionaliteit die door de gebruikersinterfaceconfiguraties en het inhoudsbeleid ter beschikking wordt gesteld.
 
-Als voorbeeld kunt u de [Documentatie van de component Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
+Als voorbeeld kunt u de [Documentatie van de component Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Toewijzing aanpassen tussen werkbalkpictogrammen en -opdrachten {#iconstoolbar}
 

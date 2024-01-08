@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5 Community Guide
 description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. Blader door deze gids die verklaart hoe te om op te stellen, te beheren, te ontwikkelen, en auteursgemeenschappen.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 6%
@@ -17,7 +17,7 @@ Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere s
 
 * [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
-* [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5-gebruikershandleidingen
@@ -39,10 +39,10 @@ Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere s
 ## Belangrijke AEM
 
 * [Zelfstudies AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
+* [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=en)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR gereedheid](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/#home)
 * [AEM-communityforum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

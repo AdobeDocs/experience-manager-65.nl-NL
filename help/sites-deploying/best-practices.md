@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   </tr>
   <tr>
    <td>Dispatcher gebruiken met een CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a></td>
    <td>Een CDN (Content Delivery Network), zoals Akamai Edge Delivery of Amazon Cloud Front, levert inhoud op een locatie die dicht bij de eindgebruiker ligt.</td>
   </tr>
   <tr>

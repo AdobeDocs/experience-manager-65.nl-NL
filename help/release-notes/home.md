@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Experience Manager 6.5
 description: De aanvullende opmerkingen voor AEM belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 28%
@@ -30,7 +30,7 @@ De aanvullende opmerkingen voor AEM belangrijke informatie over de nieuwste vers
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
 | [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
-| [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
+| [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |

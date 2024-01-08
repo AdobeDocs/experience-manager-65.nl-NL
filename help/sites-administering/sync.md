@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2502'
-ht-degree: 1%
+source-wordcount: '2434'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +74,7 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
 
 1. Controleer of de laatste code is geïnstalleerd:
 
-* [AEM platformupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en)
+* [AEM platformupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 * [AEM Communities-updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}

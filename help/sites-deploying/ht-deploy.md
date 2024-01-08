@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
@@ -21,6 +21,6 @@ De volgende onderwerpen beschrijven hoe te om specifieke AEM plaatsingstaken te 
 * [De Log Viewer gebruiken](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [Workflows en het auditlogboek wissen](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+* [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 * [Functies uit het welkomstscherm verwijderen](/help/sites-developing/customizing-the-welcome-console.md)
 * [De functie Locatiebeheer uitschakelen](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6469'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >
 >Voor meer informatie over het oplossen van problemen en het bevestigen van prestatieskwesties, zie ook [Prestatiestructuur](/help/sites-deploying/performance-tree.md).
 >
->U kunt ook een Knowledge Base-artikel bekijken op [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>U kunt ook een Knowledge Base-artikel bekijken op [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 Een belangrijk probleem is de tijd die uw website nodig heeft om te reageren op bezoekersverzoeken. Hoewel deze waarde voor elke aanvraag varieert, kan een gemiddelde doelwaarde worden bepaald. Zodra deze waarde zowel haalbaar als houdbaar is, kan deze worden gebruikt om de prestaties van de website te controleren en de ontwikkeling van potentiële problemen aan te geven.
 
@@ -39,7 +39,7 @@ Deze omgeving bevat inhoud die u beschikbaar maakt voor uw gebruikers. Hier is h
 >[!NOTE]
 >
 >* Nadat u de configuratie hebt geconfigureerd voor optimalisatie van de prestaties, volgt u de procedures in [Grove dag](/help/sites-developing/tough-day.md) het milieu onder zware belasting te testen.
->* Zie ook [Tips voor afstemmen van prestaties.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* Zie ook [Tips voor afstemmen van prestaties.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 ## Methode voor optimalisatie van prestaties {#performance-optimization-methodology}
 
@@ -201,7 +201,7 @@ Bepaalde aspecten van AEM (en/of de onderliggende opslagplaats) kunnen worden ge
 
 >[!NOTE]
 >
->Zie [Optimalisatie van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Zie [Optimalisatie van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 ### Indexering zoeken {#search-indexing}
 
@@ -476,7 +476,7 @@ Nadat alle tests zijn afgerond, rapporteren over het volgende:
 
 ## Prestaties optimaliseren bij gebruik van Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-De [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) is het gereedschap van de Adobe voor het in cache plaatsen en/of taakverdeling. Als u Dispatcher gebruikt, kunt u uw website optimaliseren voor cacheprestaties.
+De [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is het gereedschap van de Adobe voor het in cache plaatsen en/of taakverdeling. Als u Dispatcher gebruikt, kunt u uw website optimaliseren voor cacheprestaties.
 
 >[!NOTE]
 >
@@ -492,7 +492,7 @@ De Dispatcher biedt verschillende ingebouwde mechanismen die u kunt gebruiken om
 >
 >In het algemeen, impliceren vele caching strategieën het selecteren van goede URLs en het verlaten van deze extra gegevens.
 >
->Met Dispatcher versie 4.1.11 kunt u ook responsheaders in cache plaatsen, zie [HTTP-responsheaders in cache plaatsen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>Met Dispatcher versie 4.1.11 kunt u ook responsheaders in cache plaatsen, zie [HTTP-responsheaders in cache plaatsen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### De cacheverhouding van de verzender berekenen {#calculating-the-dispatcher-cache-ratio}
@@ -528,7 +528,7 @@ Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u geen
 
 #### URL-parameters vermijden {#avoid-url-parameters}
 
-Vermijd indien mogelijk URL-parameters voor pagina&#39;s die u in cache wilt plaatsen. Als u bijvoorbeeld een fotogalerie hebt, wordt de volgende URL nooit in de cache opgeslagen (tenzij Dispatcher wordt verzonden) [dienovereenkomstig geconfigureerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)):
+Vermijd indien mogelijk URL-parameters voor pagina&#39;s die u in cache wilt plaatsen. Als u bijvoorbeeld een fotogalerie hebt, wordt de volgende URL nooit in de cache opgeslagen (tenzij Dispatcher wordt verzonden) [dienovereenkomstig geconfigureerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -616,7 +616,7 @@ Wat het mengen van beperkte en openbare inhoud op één pagina betreft, overweeg
 
 #### Vaste verbindingen {#sticky-connections}
 
-[Vaste verbindingen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#the-benefits-of-load-balancing) Zorg ervoor dat de documenten voor één gebruiker allen op de zelfde server samengesteld zijn. Als een gebruiker deze map verlaat en er later weer naar terugkeert, blijft de verbinding behouden. Als u alle documenten wilt bewaren waarvoor kleverige verbindingen voor de website nodig zijn, definieert u één map. Probeer er geen andere documenten in op te nemen. Dit scenario beïnvloedt lading-in evenwicht brengend als u gepersonaliseerde pagina&#39;s en zittingsgegevens gebruikt.
+[Vaste verbindingen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) Zorg ervoor dat de documenten voor één gebruiker allen op de zelfde server samengesteld zijn. Als een gebruiker deze map verlaat en er later weer naar terugkeert, blijft de verbinding behouden. Als u alle documenten wilt bewaren waarvoor kleverige verbindingen voor de website nodig zijn, definieert u één map. Probeer er geen andere documenten in op te nemen. Dit scenario beïnvloedt lading-in evenwicht brengend als u gepersonaliseerde pagina&#39;s en zittingsgegevens gebruikt.
 
 #### MIME-typen {#mime-types}
 

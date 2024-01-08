@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3251'
 ht-degree: 0%
@@ -444,7 +444,7 @@ Met AEM bestaat een productieomgeving vaak uit twee verschillende typen instanti
 
 ## De verzender {#the-dispatcher}
 
-De Dispatcher is het gereedschap van de Adobe voor zowel caching als/of taakverdeling. Nadere informatie is te vinden onder [de verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
+De Dispatcher is het gereedschap van de Adobe voor zowel caching als/of taakverdeling. Nadere informatie is te vinden onder [de verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ## FileVault (systeem voor bronrevisie) {#filevault-source-revision-system}
 

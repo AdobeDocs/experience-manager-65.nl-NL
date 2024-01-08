@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3adf2b03ac4e227af2b33099c24ec177b8ea7e1b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,26 @@ Gebruik de Java™-opdrachtopties om geheugeninstellingen van de JVM te definië
 
 Geef de optie voor het instellen van het geheugen op terwijl u AEM WCM start vanaf de opdrachtregel. De AEM WCM start/stop manuscripten of de douanescripten voor het beheren van AEM opstarten WCM kunnen ook worden gewijzigd om de vereiste geheugenmontages te bepalen.
 
-Als u reeds uw heapsize aan 512 MB hebt bepaald, kunt u de geheugenkwestie verder willen analyseren door een heapstortplaats te creëren:
+Als u reeds uw heapsize aan 512 MB hebt bepaald, kunt u de geheugenkwestie verder willen analyseren door een heapstortplaats te creëren.
 
 Als u automatisch een heapdump wilt maken wanneer er onvoldoende geheugen beschikbaar is, gebruikt u de volgende opdracht:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&amp;ast;.jar
 
-Met deze methode wordt een heap-dump-bestand gegenereerd (**java_...hprof**) als er onvoldoende geheugen beschikbaar is voor het proces. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd. Gewoonlijk is één heap-dump-bestand voldoende om het probleem te analyseren.
+Met deze methode wordt een heap-dump-bestand gegenereerd (**java_...hprof**) als er onvoldoende geheugen beschikbaar is voor het proces. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd.
+
+Vaak zijn drie heap dump-bestanden, verzameld over een bepaalde periode, nodig om het probleem te analyseren:
+
+* Voordat een fout optreedt
+* Tijdens storing 1
+* Tijdens mislukking 2
+* *In het ideale geval zou het ook goed zijn om informatie te verzamelen nadat de gebeurtenis is opgelost.*
+
+Deze kunnen worden vergeleken om de wijzigingen te zien en hoe objecten geheugen gebruiken.
+
+>[!NOTE]
+>
+>Als u dergelijke informatie regelmatig verzamelt, of ervaring hebt met het lezen van heap-dumps, kan één heap-dump-bestand voldoende zijn om het probleem te analyseren.
 
 ### Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 

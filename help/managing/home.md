@@ -2,9 +2,9 @@
 title: AEM 6.5 Gebruikershandleiding voor beheren
 description: Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen en een uitgebreide verzameling van AEM 6.5-gebruikershandleidingen.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 5ee9bc34128738967124855652c7b38c65d8779d
+source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
 workflow-type: tm+mt
-source-wordcount: '84'
+source-wordcount: '90'
 ht-degree: 11%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 11%
 Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen, samen met beste praktijken en richtlijnen.
 
 ## Belangrijkste artikelen
+
+De belangrijkste artikelen in deze handleiding zijn:
 
 * [Projecten beheren - Checklist voor aanbevolen procedures](/help/managing/best-practices.md)
 * [Richtlijnen voor hardwareaanpassing](/help/managing/hardware-sizing-guidelines.md)

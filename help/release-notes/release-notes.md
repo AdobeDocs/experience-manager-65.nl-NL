@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
 workflow-type: tm+mt
-source-wordcount: '4305'
+source-wordcount: '4280'
 ht-degree: 0%
 
 ---
@@ -64,9 +64,6 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * **64-bits XMLFM**: De 64-bits iteratie van XMLFM introduceert verhoogde prestaties, schaalbaarheid en verfijnd geheugenbeheer. Het is de eerste inheemse dienst met 64 bits die op server-kant wordt opgesteld. Met XMLFM 64-bits kan een naadloze afhandeling van grotere renderingwerklasten worden bewerkstelligd door gebruik te maken van de inherente mogelijkheid om toegang te krijgen tot grotere geheugenbronnen in vergelijking met de 32-bits tegenhanger. Deze mijlpaal betekent niet alleen een prestatiesprong, maar introduceert ook belangrijke verbeteringen aan het native servicekader binnen de AEM Forms Server. Deze update zorgt ervoor dat AEM Forms Server naadloos elke 64-bits native service ondersteunt.
 
-**Verouderde functie**
-
-* ActiveMQ in AEM is vervangen. ActiveMQ is gebruikt voor communicatie tussen twee AEM Publish-instanties. Adobe raadt klanten aan een taakverdelingsmechanisme te gebruiken.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 

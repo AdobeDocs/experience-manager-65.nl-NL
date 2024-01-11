@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2963'
 ht-degree: 1%
@@ -91,7 +91,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Activa<br /> </td>
-   <td>Met deze consoles kunt u importeren en <a href="/help/assets/home.md">digitale middelen beheren</a> zoals afbeeldingen, video's, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd. </td>
+   <td>Met deze consoles kunt u importeren en <a href="/help/assets/assets.md">digitale middelen beheren</a> zoals afbeeldingen, video's, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd. </td>
   </tr>
   <tr>
    <td>Gemeenschappen</td>
@@ -107,7 +107,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Forms</td>
-   <td>Met deze console kunt u uw <a href="/help/forms/home.md">formulieren en documenten</a>.</td>
+   <td>Met deze console kunt u uw <a href="/help/forms/using/introduction-aem-forms.md">formulieren en documenten</a>.</td>
   </tr>
   <tr>
    <td>Personalisatie</td>

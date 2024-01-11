@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 1%
+source-wordcount: '1792'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
 * [Webconsole](/help/sites-deploying/web-console.md)
 * [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
-* [Best practices voor](/help/sites-deploying/best-practices.md)
+* [Aanbevolen procedures](/help/sites-deploying/best-practices.md)
 * [Gemeenschappen inzetten](/help/communities/deploy-communities.md)
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
@@ -287,9 +287,9 @@ AEM begint en leidt uw webbrowser automatisch naar de juiste pagina, meestal de 
 
 Nadat u bent aangemeld, hebt u toegang tot AEM. Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw rol:
 
-* [Authoring](/help/sites-authoring/home.md)
+* [Authoring](/help/sites-authoring/first-steps.md)
 * [Beheer](/help/sites-administering/home.md)
-* [Ontwikkeling](/help/sites-developing/home.md)
+* [Ontwikkelen](/help/sites-developing/getting-started.md)
 * [Beheer](/help/managing/best-practices.md)
 
 ## Geavanceerde implementatie {#advanced-deployment}
@@ -308,7 +308,7 @@ In het bovenstaande gedeelte krijgt u een goed inzicht in de grondbeginselen van
 * [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
 * [Webconsole](/help/sites-deploying/web-console.md)
 * [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
-* [Best practices voor](/help/sites-deploying/best-practices.md)
+* [Aanbevolen procedures](/help/sites-deploying/best-practices.md)
 * [Gemeenschappen inzetten](/help/communities/deploy-communities.md)
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)

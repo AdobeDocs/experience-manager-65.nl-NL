@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 3%
@@ -103,7 +103,7 @@ De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat 
 
 ## Browser voor middelen {#assets-browser}
 
-In de middelenbrowser worden alle [elementen](/help/assets/home.md) die beschikbaar zijn voor rechtstreeks gebruik op uw huidige pagina.
+In de middelenbrowser worden alle [elementen](/help/assets/assets.md) die beschikbaar zijn voor rechtstreeks gebruik op uw huidige pagina.
 
 De middelenbrowser is een tab in het zijpaneel samen met de [browse componenten](/help/sites-authoring/author-environment-tools.md#components-browser)r en [inhoudsstructuur](/help/sites-authoring/author-environment-tools.md#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 

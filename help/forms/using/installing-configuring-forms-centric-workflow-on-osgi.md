@@ -5,7 +5,7 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 0%
@@ -28,7 +28,7 @@ AEM Forms is een krachtig platform op bedrijfsniveau. Forms-gerichte workflow op
 >
 >Met de op formulieren gebaseerde workflow op OSGi kunt u snel workflows voor verschillende taken bouwen en implementeren op de OSGi-stapel, zonder dat u de volwaardige procesbeheerfunctie op de JEE-stapel hoeft te installeren. Bekijk een [vergelijking](capabilities-osgi-jee-workflows.md) van de op formulieren gebaseerde AEM-workflows op OSGi en Procesbeheer op JEE om meer te weten te komen over de verschillen en overeenkomsten tussen de mogelijkheden.
 >
->Als u na de vergelijking de procesbeheerfunctie op de JEE-stapel wilt installeren, raadpleegt [u AEM-formulieren installeren of upgraden op JEE](/help/forms/home.md) voor meer informatie over het installeren en configureren van de JEE-stapel en de mogelijkheden voor procesbeheer.
+>Als u na de vergelijking de procesbeheerfunctie op de JEE-stapel wilt installeren, raadpleegt [u AEM-formulieren installeren of upgraden op JEE](/help/forms/using/introduction-aem-forms.md) voor meer informatie over het installeren en configureren van de JEE-stapel en de mogelijkheden voor procesbeheer.
 
 ## Distributietopologie {#deployment-topology}
 

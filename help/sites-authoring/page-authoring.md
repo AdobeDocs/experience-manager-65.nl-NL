@@ -2,7 +2,7 @@
 title: Inhoudspagina's ontwerpen in AEM
 description: De taken die bij het ontwerpen van een inhoudspagina in Adobe Experience Manager 6.5 betrokken zijn.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Hieronder vindt u twee typen overzicht voor het ontwerpen met AEM:
 
 >[!NOTE]
 >
->In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn veel aanvullende functies die nauw verwant zijn aan het ontwerpen van pagina&#39;s en die in andere secties van het dialoogvenster [Ontwerphandleiding](/help/sites-authoring/home.md).
+>In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn veel aanvullende functies die nauw verwant zijn aan het ontwerpen van pagina&#39;s en die in andere secties van het dialoogvenster [Ontwerphandleiding](/help/sites-authoring/first-steps.md).
 
 ## Snel overzicht van de functies die worden gebruikt voor het ontwerpen van pagina&#39;s {#quick-overview-of-features-used-for-authoring-pages}
 

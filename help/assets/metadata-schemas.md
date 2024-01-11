@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3408'
 ht-degree: 5%
@@ -55,7 +55,7 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, gaat u naar [!DNL E
 | | <ul><li>[!UICONTROL video]</li></ul> | Schemaformulier voor video-elementen met MIME-type, zoals `video/avi` en `video/mp4`. |
 | [!UICONTROL collection] | | Schema voor verzamelingen. |
 | [!UICONTROL contentfragment] | | [Schema voor inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] | | Dit schema-formulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] | | Dit schema-formulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
 | [!UICONTROL ugc_contentfragment] | | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in de Experience Manager zijn geïntegreerd. |
 
 >[!NOTE]

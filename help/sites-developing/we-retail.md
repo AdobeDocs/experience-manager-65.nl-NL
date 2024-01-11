@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 1%
+source-wordcount: '727'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ Wij.Detailhandel wordt geleverd als AEM voorbeeldinhoud. Eenvoudig te gebruiken 
 
 >[!CAUTION]
 >
->Wij.Retail is gebaseerd op de nieuwste AEM technologie en ondersteunt daarom niet [klassiek schrijven van gebruikersinterface](/help/sites-classic-ui-authoring/home.md).
+>Wij.Retail is gebaseerd op de nieuwste AEM technologie en ondersteunt daarom niet [klassiek schrijven van gebruikersinterface](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Laatste versie {#latest-version}
 
@@ -78,8 +78,8 @@ De volgende lijst geeft een overzicht van de belangrijkste eigenschappen die in 
 | **Functie** | **Wij.Detailhandel** | **Geometrixx** |
 |---|---|---|
 | Globale sitestructuur | Taalmasters worden live gekopieerd naar landspecifieke sites | Niet beschikbaar |
-| Contentfragmenten | Beschikbaar | Niet beschikbaar |
-| Ervaringsfragmenten | Beschikbaar | Niet beschikbaar |
+| Inhoudsfragmenten | Beschikbaar | Niet beschikbaar |
+| Ervaar fragmenten | Beschikbaar | Niet beschikbaar |
 | Responsieve lay-out | Voor alle pagina&#39;s | Alleen Geometrixx Media |
 | Bewerkbare sjablonen | Voor alle pagina&#39;s | Niet beschikbaar |
 | HTL | Alle componenten | Beperkt |

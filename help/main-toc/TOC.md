@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
+source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
 workflow-type: tm+mt
-source-wordcount: '7328'
+source-wordcount: '7297'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,7 @@ ht-degree: 1%
 # Adobe Experience Manager 6.5-documentatie {#content}
 
 + Opmerkingen bij de release {#release-notes}
-   + [Opmerkingen bij de release AEM 6.5](/help/release-notes/home.md)
-   + [Opmerkingen bij de huidige release](/help/release-notes/release-notes.md)
+   + [Opmerkingen bij de release](/help/release-notes/release-notes.md)
    + Opmerkingen bij vorige release {#service-pack}
       + [6.5.18.](/help/release-notes/previous/6.5.18.md)
       + [6.5.17.](/help/release-notes/previous/6.5.17.md)
@@ -74,7 +73,6 @@ ht-degree: 1%
    + [Ondersteuning voor zelfde site-cookie](/help/sites-administering/same-site-cookie-support.md)
 + Sites {#sites}
    + Authoring {#authoring}
-      + [Overzicht van gebruikershandleiding voor ontwerpen](/help/sites-authoring/home.md)
       + Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
          + [Eerste stappen voor auteurs](/help/sites-authoring/first-steps.md)
          + [Pagina&#39;s ontwerpen](/help/sites-authoring/page-authoring.md)
@@ -270,7 +268,6 @@ ht-degree: 1%
          + [Inhoudsbeheer voor schermen](/help/sites-administering/content-management-screens.md)
          + [WebDAV-toegang](/help/sites-administering/webdav-access.md)
    + Klassieke UI Authoring {#classic-ui}
-      + [Overzicht van de klassieke UI-ontwerpgids](/help/sites-classic-ui-authoring/home.md)
       + Inleiding tot Klassieke UI Authoring {#introduction}
          + [Eerste stappen voor auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
          + [Ontwerpen in de klassieke gebruikersinterface](/help/sites-classic-ui-authoring/classicui.md)
@@ -340,7 +337,6 @@ ht-degree: 1%
          + [Werken met Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [Naamgevingsconventies voor het testen van elementen](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
-   + [[!DNL Assets] gebruikershandleiding](/help/assets/home.md)
    + [Informatie over DAM](/help/assets/assets.md)
    + [Aanbevolen procedures voor elementen](/help/assets/best-practices-for-assets.md)
    + [Toegankelijkheid [!DNL Assets]](/help/assets/accessibility.md)
@@ -504,7 +500,6 @@ ht-degree: 1%
       + [Installeren [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
-   + [AEM 6.5 Forms Guide](/help/forms/home.md)
    + Opmerkingen bij de release {#release-notes-new-features}
       + [Nieuwe functies](/help/forms/using/whats-new.md)
       + [Veelgestelde vragen](/help/forms/using/frequently-asked-questions-faq.md)
@@ -1192,9 +1187,8 @@ ht-degree: 1%
       + [Hashes genereren en werken met dynamische PDF forms](/help/forms/developing/hashing-forms.md)
       + [Gegevens doorgeven met WS-beveiligingskoppen](/help/forms/developing/passing-credentials.md)
 + Inhoud en handel {#commerce}
-   + [AEM Content en Commerce](/help/commerce/home.md)
-   + [Opvallende wijzigingen in AEM inhoud en handel](/help/commerce/cif/changes.md)
    + [Inleiding en overzicht](/help/commerce/cif/introduction.md)
+   + [Opvallende wijzigingen in AEM inhoud en handel](/help/commerce/cif/changes.md)
    + Integraties {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Oplossing voor handel van derden](/help/commerce/cif/integrating/third-party.md)
@@ -1213,8 +1207,8 @@ ht-degree: 1%
          + [Aangepaste HTTP-headers](/help/commerce/cif/configuring/custom-http-headers.md)
       + Ontwikkeling {#developing}
          + [Ontwikkelen met AEM](/help/commerce/cif/develop.md)
-         + [CIF-componenten opmaken](/help/commerce/cif/customizing/style-cif-component.md)
-         + [CIF-componenten aanpassen](/help/commerce/cif/customizing/customize-cif-components.md)
+         + [CIF opmaken](/help/commerce/cif/customizing/style-cif-component.md)
+         + [CIF componenten aanpassen](/help/commerce/cif/customizing/customize-cif-components.md)
          + [CIF cataloguskiezers gebruiken](/help/commerce/cif/customizing/use-cif-pickers.md)
    + [Adobe Commerce PWA Studio](/help/commerce/cif/pwa-studio/getting-started.md)
    + [Migratie](/help/commerce/cif/migration.md)
@@ -1276,7 +1270,6 @@ ht-degree: 1%
    + [Wat is een documentatietraject?](/help/journey-documentation/home.md)
 + Implementatie {#implementing}
    + Ontwikkeling {#developing}
-      + [Overzicht van de gebruikershandleiding voor ontwikkeling](/help/sites-developing/home.md)
       + Inleiding voor ontwikkelaars {#introduction}
          + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](/help/sites-developing/getting-started.md)
          + [AEM kernconcepten](/help/sites-developing/the-basics.md)
@@ -1529,7 +1522,6 @@ ht-degree: 1%
          + [Sites maken voor mobiele apparaten](/help/sites-developing/mobile.md)
          + [Emulators](/help/sites-developing/emulators.md)
    + Implementeren {#deploying}
-      + [Gebruikershandleiding implementeren](/help/sites-deploying/home.md)
       + Inleiding tot het AEM Platform {#introduction}
          + [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
          + [Technische vereisten](/help/sites-deploying/technical-requirements.md)

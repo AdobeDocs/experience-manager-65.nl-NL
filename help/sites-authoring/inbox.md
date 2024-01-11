@@ -2,7 +2,7 @@
 title: Uw Postvak In om taken te beheren
 description: Uw taken beheren met de Postvak IN Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 6%
@@ -39,7 +39,7 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 >* [Projecten](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projecten - werken met taken](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Forms](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Postvak IN van koptekst {#inbox-in-the-header}

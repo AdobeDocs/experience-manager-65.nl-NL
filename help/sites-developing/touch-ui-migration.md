@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Hoewel er niet rechtstreeks verband is met een migratie naar de aanraakinterface
 
 Voor volledige informatie over het ontwikkelen AEM zie de inzameling van middelen onder:
 
-* [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md)
+* [Gebruikershandleiding ontwikkelen](/help/sites-developing/getting-started.md)
 * [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Tutorials en video&#39;s van sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](/help/sites-developing/getting-started.md)

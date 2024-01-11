@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '521'
 ht-degree: 4%
 
 ---
@@ -105,7 +105,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Klassieke ontwerpervaring gebruiken**
 
-  Deze optie schakelt [klassieke gebruikersinterface](/help/sites-classic-ui-authoring/home.md)-based page authoring. Standaard wordt de standaardinterface gebruikt.
+  Deze optie schakelt [klassieke gebruikersinterface](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-based page authoring. Standaard wordt de standaardinterface gebruikt.
 
 * **Introductiepagina van middelen inschakelen**
 

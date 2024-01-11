@@ -1,15 +1,15 @@
 ---
 title: Inleiding tot AEM Forms
-description: Met Adobe Experience Manager Forms kunnen zakelijke gebruikers aantrekkelijke, responsieve en adaptieve formulieren integreren in websites en mobiele sites, waardoor het digitale inschrijfproces wordt vereenvoudigd en de conversietarieven van klanten worden verhoogd.
+description: Met deze handleiding AEM 6.5 kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren van deze formulieren en leer meer over het ontwerpen van adaptieve formulieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---

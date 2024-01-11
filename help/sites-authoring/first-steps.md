@@ -1,18 +1,19 @@
 ---
 title: Eerste stappen voor auteurs bij het maken van inhoud in AEM
-description: Een overzicht van de belangrijkste taken die u gebruikt wanneer het ontwerpen van inhoud met de Managaer van de Ervaring van de Adobe (AEM).
+description: Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5. U vindt ook informatie over tags, sjablonen en andere paginafuncties.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
+
 
 # Eerste stappen voor auteurs{#first-steps-for-authors}
 

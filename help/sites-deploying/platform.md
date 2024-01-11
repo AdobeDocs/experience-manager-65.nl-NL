@@ -1,18 +1,19 @@
 ---
 title: Inleiding tot het AEM Platform
-description: Dit artikel biedt een algemeen overzicht van het AEM en de belangrijkste componenten ervan.
+description: Leer meer over het AEM platform en de belangrijkste onderdelen ervan, zoals de installatie en implementatie van Adobe Experience Manager 6.5, en over de architectuur ervan, inclusief de implementatie van de Adobe Managed Services-cloud.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
+
 
 # Inleiding tot het AEM Platform{#introduction-to-the-aem-platform}
 

@@ -1,18 +1,18 @@
 ---
 title: AEM 6.5 Beheerdershandleiding
-description: Meer informatie over het toedienen van AEM 6.5. Deze gidsen behandelen plaatseigenschappen, plaatsingsverrichtingen, veiligheidseigenschappen, verpersoonlijking, integratie, en meer.
+description: Ontdek meer over het beheren van AEM 6.5. Deze handleidingen behandelen websitefuncties, implementatiebewerkingen, beveiligingseigenschappen, personalisatie, integratie en meer.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 15%
+ht-degree: 73%
 
 ---
 
 
 # AEM 6.5 Beheerdershandleiding
 
-Meer informatie over het toedienen van AEM 6.5. Deze gidsen behandelen plaatseigenschappen, plaatsingsverrichtingen, veiligheidseigenschappen, verpersoonlijking, integratie, en meer.
+Ontdek meer over het beheren van AEM 6.5. Deze handleidingen behandelen websitefuncties, implementatiebewerkingen, beveiligingseigenschappen, personalisatie, integratie en meer.
 
 ## Artikelen voor sleutelbeheer
 

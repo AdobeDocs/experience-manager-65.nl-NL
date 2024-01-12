@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot AEM Forms
-description: Met deze handleiding AEM 6.5 kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren van deze formulieren en leer meer over het ontwerpen van adaptieve formulieren.
+description: Met deze AEM 6.5-handleiding kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren en vind meer informatie over het ontwerpen van adaptieve formulieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
@@ -10,7 +10,7 @@ exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

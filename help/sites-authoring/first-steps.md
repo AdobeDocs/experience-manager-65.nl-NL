@@ -1,6 +1,6 @@
 ---
 title: Eerste stappen voor auteurs bij het maken van inhoud in AEM
-description: Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5. U vindt ook informatie over tags, sjablonen en andere paginafuncties.
+description: Verken de belangrijkste concepten bij het maken van content en ontwerpen in AEM 6.5. U vindt ook informatie over het gebruik van tags, sjablonen en andere paginafuncties.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,7 +10,7 @@ exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 

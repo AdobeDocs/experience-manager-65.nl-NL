@@ -2,9 +2,9 @@
 title: Op OAuth2 gebaseerde verificatie voor Microsoft&reg configureren; Office 365-mailserverprotocollen
 description: Op OAuth2 gebaseerde verificatie voor Microsoft&reg configureren; Office 365-mailserverprotocollen
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ AEM Forms biedt OAuth 2.0-ondersteuning voor integratie met Microsoft® Office 3
 
 1. Aanmelden bij [https://portal.azure.com/](https://portal.azure.com/) en zoek naar **Azure Active Directory** in de zoekbalk en klik op het resultaat.
 U kunt ook rechtstreeks bladeren naar [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. Klikken **Toevoegen** > **Toepassingsregistratie** > **Nieuwe registratie**
+1. Klikken **Toevoegen** > **Toepassingsregistratie** > **Nieuwe registratie**.
 
    ![Toepassingsregistratie](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
@@ -33,7 +33,7 @@ In het bovenstaande geval: **Accounts in any organizational directory (Any Azure
 
    ![Geheime sleutel](/help/forms/using/assets/azure_secretkey.png)
 
-1. Ga voor het toevoegen van machtigingen naar de nieuwe app en selecteer **API-machtigingen** > **Machtiging toevoegen** > **Microsoft® Graph** > **Gedelegeerde machtigingen**
+1. Ga voor het toevoegen van machtigingen naar de nieuwe app en selecteer **API-machtigingen** > **Machtiging toevoegen** > **Microsoft® Graph** > **Gedelegeerde machtigingen**.
 1. Selecteer de selectievakjes voor de onderstaande machtigingen voor de app en klik op **Machtiging toevoegen**:
 
    * `IMAP.AccessUser.All`
@@ -74,14 +74,14 @@ Vervolgens moet u de machtigingscode genereren, zoals in de volgende stappen wor
    >
    Als er de enige huurderstoepassing is, vervang `common` met uw `[tenantid]` in de volgende URL voor het genereren van machtigingscode: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
-1. Als u de bovenstaande URL typt, wordt u omgeleid naar het aanmeldingsscherm:
+1. Wanneer u de bovenstaande URL typt, wordt u omgeleid naar het aanmeldingsscherm:
    ![Aanmeldingsscherm](/help/forms/using/assets/azure_loginscreen.png)
 
 1. Voer het e-mailbericht in en klik op **Volgende** en het toepassingsmachtigingsscherm wordt weergegeven:
 
    ![Machtiging toestaan](/help/forms/using/assets/azure_permission.png)
 
-1. Nadat u toestemming hebt verleend, wordt u omgeleid naar een nieuwe URL als: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
+1. Wanneer u toestemming toestaat, wordt u opnieuw gericht aan een nieuwe URL als: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
 
 1. De waarde kopiëren van `<code>` vanaf de bovenstaande URL vanaf `0.ASY...` tot `&session_state` in de bovenstaande URL.
 
@@ -134,7 +134,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   Als u authentificatie wilt veranderen Auth 2.0 die aan basisauthentificatie voor een bepaald proces in een werkbank plaatst, kunt u plaatsen **OAuth 2.0-verificatie** waarde als &#39;False&#39; onder **Algemene instellingen gebruiken** in de **Verbindingsinstellingen** tab.
+   Indien gewenst, kunt u Auth 2.0 authentificatie veranderen die aan basisauthentificatie voor een bepaald proces in een werkbank plaatst. Stel hiertoe de **OAuth 2.0-verificatie** waarde als &#39;False&#39; onder **Algemene instellingen gebruiken** in de **Verbindingsinstellingen** tab.
 
 ## Taken verifiëren inschakelen {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   Meer informatie over taakmeldingen te verkrijgen, [klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   Meer informatie over taakmeldingen te verkrijgen, [klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Om e-maileindpunt te vormen {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   Klik op voor meer informatie over het configureren van e-maileindpunten [Een e-maileindpunt configureren](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html).
+   Klik op voor meer informatie over het configureren van e-maileindpunten [Een e-maileindpunt configureren](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Problemen oplossen {#troubleshooting}
 

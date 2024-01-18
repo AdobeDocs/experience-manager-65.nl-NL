@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: 75139b4a951269aeacc689baec1da6bf72ce65bc
 workflow-type: tm+mt
-source-wordcount: '3976'
+source-wordcount: '4002'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,12 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 4.4 </p> </td>
+   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p>Repository Microkernel</p> </td>
+   <td><p>Ondersteund</p> </td>
+  </tr>
+    <tr>
+   <td><p> MongoDB Enterprise 6.0 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Ondersteund</p> </td>
   </tr>
@@ -827,6 +832,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Release 6.5.19.1 (15 december 2023)
+
+| Toegevoegde ondersteuning | Verwijderde ondersteuning | Verouderde ondersteuning |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 6.0 | MongoDB Enterprise 4.4 |  |
+| MongoDB Enterprise 5.0 |  |  |
+|  | |  |
+
 ### Release 6.5.18.0 (31 augustus 2023)
 
 | Toegevoegde ondersteuning | Verwijderde ondersteuning | Verouderde ondersteuning |
@@ -913,5 +926,4 @@ Een vervangen platform blijft ondersteuning ontvangen tot de volgende volledige 
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
     -->
-
 

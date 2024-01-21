@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ AEM WCM registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken 
 
 De omwenteling van het dossier van het logboek verwijst naar het proces dat de groei van het dossier door een dossier periodiek te creëren beperkt. In AEM wordt een logbestand met de naam `error.log` eenmaal per dag wordt geroteerd volgens de volgende regels:
 
-* De `error.log` de naam van het bestand wordt gewijzigd volgens het patroon {original_filename} `.yyyy-MM-dd`. Op 11 juli 2010 is de naam van het huidige logbestand bijvoorbeeld gewijzigd `error.log-2010-07-10`, dan een nieuwe `error.og` wordt gemaakt.
+* De `error.log` de naam van het bestand wordt gewijzigd volgens het patroon `{original_filename}.yyyy-MM-dd`. Op 11 juli 2010 is de naam van het huidige logbestand bijvoorbeeld gewijzigd `error.log-2010-07-10`, dan een nieuwe `error.log` wordt gemaakt.
 
 * Vorige logbestanden worden niet verwijderd, dus het is uw verantwoordelijkheid om regelmatig oude logbestanden op te schonen om het gebruik van de schijf te beperken.
 
@@ -435,7 +435,7 @@ In bepaalde omstandigheden, kunt u een dossier van het douanelogboek met een ver
    >
    >De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
    >
-   >Bijvoorbeeld om middernacht op 20 januari 2010 (of wanneer het eerste logboekbericht na deze datum precies wordt weergegeven), .. /logs/error.log heet voortaan .. /logs/error.log.2010-01-20. De aanmelding voor 21 januari wordt uitgevoerd naar (een nieuwe en lege) .. /logs/error.log totdat het wordt overgedragen bij de volgende wijziging van de dag.
+   >Bijvoorbeeld om middernacht op 20 januari 2010 (of wanneer het eerste logboekbericht na deze datum precies wordt weergegeven), .. /logs/error.log heet voortaan .. /logs/error.log.2010-01-20. De aanmelding voor 21 januari wordt uitgevoerd naar (een nieuwe en lege) .. /logs/error.log totdat deze bij de volgende verandering van dag wordt overgedragen.
    >
    >| `'.'yyyy-MM` | Rotatie aan het begin van elke maand |
    >|---|---|

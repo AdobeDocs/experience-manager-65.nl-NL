@@ -1,12 +1,12 @@
 ---
 title: Inleiding en overzicht
-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren, met nuttige artikelen over integratie en hoe te beginnen te gebruiken AEM Storefront.
+description: Leer hoe u AEM Content en Commerce kunt gebruiken en beheren met handige artikelen over integratie, en hoe u kunt beginnen met AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

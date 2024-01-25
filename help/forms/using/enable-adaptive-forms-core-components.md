@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -105,12 +105,11 @@ Een AEM Archetype 41 of [later](https://github.com/adobe/aem-project-archetype) 
 1. Project bijwerken met de nieuwste versie van Forms Core Components:
 
    1. Open de [Projectmap Archetype AEM]/pom.xml voor bewerken.
-   1. Versie instellen van `core.forms.components.version` en `core.forms.components.af.version` tot [nieuwste Forms Core-componenten](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) versie en zorg dat beide dezelfde versie hebben als **Forms Core-componenten** genoemd in de lijst, en vastgestelde versie van `core.wcm.components.version` zoals vermeld in de **WCM Core-componenten**.
+   1. Versie instellen van `core.forms.components.version` en `core.forms.components.af.version` aan de [nieuwste Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) versie en zorg dat beide dezelfde versie hebben als **Forms Core-componenten** genoemd in de lijst, en vastgestelde versie van `core.wcm.components.version` zoals vermeld in de [WCM Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Wanneer u een project Archetype maakt met `version 45`de [Projectmap Archetype AEM]/pom.xml stelt de versie van de kerncomponenten van formulieren aanvankelijk in op `1.1.28`. Voordat u het project Archetype gaat maken of implementeren, moet u de versie van de kerncomponenten van de formulieren bijwerken naar `1.1.26`.
-
+      >* Wanneer u een project Archetype maakt met versie 45, `[AEM Archetype Project Folder]/pom.xml` stelt de versie van de kerncomponenten van formulieren aanvankelijk in op 1.1.28. Voordat u het project Archetype gaat maken of implementeren, moet u de kerncomponentversie van de formulieren bijwerken naar versie 1.1.26. U kunt de nieuwste versie vinden in het dialoogvenster [AEM 6.5 Forms-versiegeschiedenis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >

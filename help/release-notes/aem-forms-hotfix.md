@@ -2,9 +2,9 @@
 title: Hotfixes voor AEM Forms
 description: Hier vindt u informatie over het downloaden en installeren van een hotfix voor AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
+source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Adobe Experience Manager Forms Hotfixes{#aem-form-hotfix}
 
 Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplementeerd om bekende problemen aan te pakken, de stabiliteit van het systeem te verbeteren en de algehele prestaties van AEM Forms te verbeteren.
+
+>[!NOTE]
+>
+> De hotfixes zijn cumulatief ontworpen en omvatten alle voorafgaande fixes. Wanneer u de nieuwste hotfix toepast op een release, wordt niet alleen het meest recente probleem opgelost, maar worden ook alle eerdere correcties en verbeteringen aangebracht.
 
 ## Hotfixes voor adaptieve Forms {#hotfix-for-adaptive-forms}
 
@@ -21,6 +25,34 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <td><strong>Datum</strong></td>
     <td><strong>Hotfix-downloadkoppeling (AEM koppeling voor softwaredistributie)</strong></td>
     <td><strong>Opgeloste problemen</strong></td>
+  </tr>
+  <tr>
+    <td>29 januari 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fforms-foundation-qs-content-4.0.170-FORMS-12692-B0001.zip">Hotfix voor AEM Service Pack 6.5.19.0 voor Vensters op server JEE</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Op AEM Forms op de JEE-server kan de HTML5 Forms die gebruik maakt van het contextpad niet worden gerenderd. (FORMS-12485).</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>29 januari 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-win-pkg-6.0.1016-004.zip">Hotfix voor AEM Service Pack 6.5.18.0 voor Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-linux-pkg-6.0.1016-004.zip">Hotfix voor AEM Service Pack 6.5.18.0 voor Linux</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">Hotfix voor AEM Service Pack 6.5.18.0 voor Apple macOS</a></li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> De component OOTB Krabbelhandtekening kan niet worden gerenderd voor een voorvertoning in een adaptieve vorm. (FORMS-12073).</li>
+    </ul>
+    </td>    
    </tr>
    <tr>
     <td>20 november 2023</td>
@@ -38,9 +70,9 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <li>Interactieve communicatie met grote inline-afbeeldingen kan niet worden geopend in de bewerkingsmodus. (FORMS-10578)</li>
     </ul>
     </td>    
-    </tr>
-    <tbody>
-     </table>
+  </tr>
+  <tbody>
+</table>
 
 ## Een hotfix downloaden en installeren {#download-install-hotfix}
 

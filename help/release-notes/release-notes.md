@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
+source-git-commit: 040170454345df352ed259806193c41c23bf953d
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4387'
 ht-degree: 0%
 
 ---
@@ -552,6 +552,8 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
 Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java™ en Sighy opnieuw](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * Na het installeren van AEM Service Pack 6.5.14.0 en daarna, kunnen de gebruikers geen doopvont van JEE Admin UI voor de documenten van PDF selecteren wanneer het navigeren aan `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, omdat de lettertypenlijst leeg lijkt. (FORMS-12095)
+<!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
+* In AEM Forms op JEE kan de HTML5 Forms die gebruik maakt van het contextpad, niet renderen. (FORMS-12485). Er is een hotfix beschikbaar voor dit probleem. Zie voor informatie over het downloaden en installeren van de hotfix [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
 
 #### AEM Forms op JEE
 

@@ -10,9 +10,9 @@ docset: aem65
 role: Admin
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 77615c5b2fe91f7f1b1017e8d40b744facba4158
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,11 @@ ht-degree: 0%
 * Een gebruiker met beheerdersrechten om AEM Forms Designer te installeren of verwijderen.
 
 +++
+
+>[!NOTE]
+>
+> De 64-bits versie van de ontwerper werd geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
 
 
 ## AEM Forms Designer installeren {#install-designer}

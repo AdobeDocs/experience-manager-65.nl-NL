@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -168,6 +168,10 @@ De Adaptive Forms-editor biedt de **Een Microsoft® Power Automate-flow aanroepe
 Na een succesvolle configuratie, gebruik [Een Microsoft® Power Automate-flow aanroepen](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) verzenden actie om gegevens naar een Power Automate Flow te verzenden.
 
 ## Verzenden naar Microsoft® SharePoint List{#submit-to-sharedrive}
+
+>[!NOTE]
+>
+De functie Verzenden naar Microsoft® SharePoint List is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 De **[!UICONTROL Submit to SharePoint]** Met de verzendactie wordt een adaptief formulier verbonden met een Microsoft® SharePoint Storage. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
 

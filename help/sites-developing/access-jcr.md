@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Ga voor meer informatie over het zoeken naar de Adobe CQ JCR met de JCR Query AP
 
 ## Een instantie Repository maken {#create-a-repository-instance}
 
-Hoewel er verschillende manieren zijn om verbinding te maken met een opslagplaats en een verbinding tot stand te brengen, gebruikt dit ontwikkelingsartikel een statische methode die tot de `org.apache.jackrabbit.commons.JcrUtils` klasse. De methode heet `getRepository`. Deze methode gebruikt een tekenreeksparameter die de URL van de Adobe CQ-server vertegenwoordigt. Bijvoorbeeld, `http://localhost:4503/crx/server`.
+Hoewel er verschillende manieren zijn om verbinding te maken met een opslagplaats en een verbinding tot stand te brengen, gebruikt dit ontwikkelingsartikel een statische methode die tot de `org.apache.jackrabbit.commons.JcrUtils` klasse. De methode heet `getRepository`. Deze methode gebruikt een tekenreeksparameter die de URL van de Adobe CQ-server vertegenwoordigt. Bijvoorbeeld: `http://localhost:4503/crx/server`.
 
-De `getRepository`methode retourneert een `Repository`-instantie, zoals in het volgende codevoorbeeld wordt getoond.
+De `getRepository` methode retourneert een `Repository` -instantie, zoals in het volgende codevoorbeeld wordt getoond.
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
@@ -42,14 +42,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Een instantie Sessie maken {#create-a-session-instance}
 
-De `Repository`-instantie staat voor de CRX-opslagplaats. U gebruikt de `Repository`-instantie om een sessie met de gegevensopslagruimte tot stand te brengen. Als u een sessie wilt maken, roept u de opdracht `Repository`instantie `login`methode en een `javax.jcr.SimpleCredentials` object. De `login`methode retourneert een `javax.jcr.Session` -instantie.
+De `Repository` -instantie staat voor de CRX-opslagplaats. U gebruikt de `Repository` -instantie om een sessie met de gegevensopslagruimte tot stand te brengen. Als u een sessie wilt maken, roept u de opdracht `Repository` instantie `login` methode en een `javax.jcr.SimpleCredentials` object. De `login` methode retourneert een `javax.jcr.Session` -instantie.
 
-U maakt een `SimpleCredentials`object door de constructor ervan te gebruiken en de volgende tekenreekswaarden door te geven:
+U maakt een `SimpleCredentials` object door de constructor ervan te gebruiken en de volgende tekenreekswaarden door te geven:
 
 * de gebruikersnaam;
 * Het bijbehorende wachtwoord
 
-Roep bij het doorgeven van de tweede parameter het object String `toCharArray`methode. De volgende code laat zien hoe u de `login`methode die een `javax.jcr.Sessioninstance`.
+Roep bij het doorgeven van de tweede parameter het object String `toCharArray` methode. De volgende code laat zien hoe u de `login` methode die een `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -58,7 +58,7 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Een Node-instantie maken {#create-a-node-instance}
 
-Een `Session`instantie om een `javax.jcr.Node` -instantie. A `Node`Met instantie kunt u knooppuntbewerkingen uitvoeren. U kunt bijvoorbeeld een knooppunt maken. Als u een knooppunt wilt maken dat het hoofdknooppunt vertegenwoordigt, roept u het `Session`instantie `getRootNode` , zoals in de volgende coderegel wordt getoond.
+Een `Session` instantie om een `javax.jcr.Node` -instantie. A `Node` Met instantie kunt u knooppuntbewerkingen uitvoeren. U kunt bijvoorbeeld een knooppunt maken. Als u een knooppunt wilt maken dat het hoofdknooppunt vertegenwoordigt, roept u het `Session` instantie `getRootNode` , zoals in de volgende coderegel wordt getoond.
 
 ```java
 //Create a Node
@@ -75,7 +75,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Nodewaarden ophalen {#retrieve-node-values}
 
-Om een knoop en zijn waarde terug te winnen, haal `Node`instantie `getNode`methode en geef een koordwaarde door die volledig - gekwalificeerde weg aan de knoop vertegenwoordigt. Overweeg de knoopstructuur die in het vorige codevoorbeeld wordt gecreeerd. Als u het dagknooppunt wilt ophalen, geeft u adobe/day op, zoals in de volgende code wordt getoond:
+Om een knoop en zijn waarde terug te winnen, haal `Node` instantie `getNode` methode en geef een koordwaarde door die volledig - gekwalificeerde weg aan de knoop vertegenwoordigt. Overweeg de knoopstructuur die in het vorige codevoorbeeld wordt gecreeerd. Als u het dagknooppunt wilt ophalen, geeft u adobe/day op, zoals in de volgende code wordt getoond:
 
 ```java
 // Retrieve content
@@ -86,7 +86,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Knooppunten maken in de Adobe CQ Repository {#create-nodes-in-the-adobe-cq-repository}
 
-Het volgende Java™-codevoorbeeld vertegenwoordigt een Java™-klasse die verbinding maakt met Adobe CQ, maakt een `Session`en voegt nieuwe knooppunten toe. Een knoop wordt toegewezen een gegevenswaarde en dan wordt de waarde van de knoop en zijn weg geschreven aan de console. Als u klaar bent met de sessie, moet u zich afmelden.
+Het volgende Java™-codevoorbeeld vertegenwoordigt een Java™-klasse die verbinding maakt met Adobe CQ, maakt een `Session` en voegt nieuwe knooppunten toe. Een knoop wordt toegewezen een gegevenswaarde en dan wordt de waarde van de knoop en zijn weg geschreven aan de console. Als u klaar bent met de sessie, moet u zich afmelden.
 
 ```java
 /*

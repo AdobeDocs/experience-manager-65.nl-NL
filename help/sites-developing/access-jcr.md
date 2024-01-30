@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
+source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Een `Session` instantie om een `javax.jcr.Node` -instantie. A `Node` Met instant
 Node root = session.getRootNode();
 ```
 
-Wanneer u een `Node`kunt u taken uitvoeren, zoals het maken van een ander knooppunt en het toevoegen van een waarde aan dat knooppunt. Met de volgende code worden bijvoorbeeld twee knooppunten gemaakt en een waarde toegevoegd aan het tweede knooppunt.
+Wanneer u een `Node` kunt u taken uitvoeren, zoals het maken van een ander knooppunt en het toevoegen van een waarde aan dat knooppunt. Met de volgende code worden bijvoorbeeld twee knooppunten gemaakt en een waarde toegevoegd aan het tweede knooppunt.
 
 ```java
 // Store content

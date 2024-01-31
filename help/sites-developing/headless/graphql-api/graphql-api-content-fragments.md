@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
 workflow-type: tm+mt
-source-wordcount: '4847'
+source-wordcount: '4697'
 ht-degree: 0%
 
 ---
@@ -705,40 +705,28 @@ Caching van persisted query&#39;s wordt niet standaard ingeschakeld in de Dispat
 
 ### Het in cache plaatsen van doorlopende query&#39;s inschakelen {#enable-caching-persisted-queries}
 
-Om het in cache plaatsen van persistente query&#39;s in te schakelen, definieert u de variabele Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Om het in cache plaatsen van persisted query&#39;s in te schakelen, zijn de volgende updates van de Dispatcher-configuratiebestanden vereist:
 
-1. De variabele toevoegen aan het Dispatcher-bestand `global.vars`:
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->Wanneer het cachegeheugen van de Verzender voor voortgezette vragen door te gebruiken wordt toegelaten `Define CACHE_GRAPHQL_PERSISTED_QUERIES` een `ETag` wordt toegevoegd aan de reactie van de Dispatcher.
->
->Standaard worden de `ETag` header is geconfigureerd met de volgende instructie:
->
->```
->FileETag MTime Size 
->```
->
->Nochtans, kan dit het plaatsen problemen veroorzaken wanneer gebruikt op de voortgezette vraagreacties, omdat het geen rekening voor kleine veranderingen in de reactie houdt.
->
->Om individuele `ETag` berekeningen *elk* unieke reactie `FileETag Digest` instelling moet worden gebruikt in de configuratie van de verzender:
->
->```xml
-><Directory />    
->   ...    
->   FileETag Digest
-></Directory> 
->```
+  >[!NOTE]
+  >
+  >Dispatcher voegt het achtervoegsel toe `.json` aan alle persisted query-URL&#39;s, zodat het resultaat in de cache kan worden opgeslagen.
+  >
+  >Hiermee zorgt u ervoor dat de query voldoet aan de vereisten van de Dispatcher voor documenten die in cache kunnen worden geplaatst.
 
->[!NOTE]
->
->Als u zich aan de [Vereisten van de verzender voor documenten die in cache kunnen worden geplaatst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), voegt de Dispatcher het achtervoegsel toe `.json` aan alle voortgezette vraag URLs, zodat het resultaat in het voorgeheugen kan worden opgeslagen.
->
->Dit achtervoegsel wordt toegevoegd door herschrijft regel, zodra het voortbestaan vraagcaching wordt toegelaten.
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### CORS-configuratie in de Dispatcher {#cors-configuration-in-dispatcher}
 

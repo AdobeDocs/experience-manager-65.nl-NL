@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
+source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4708'
 ht-degree: 0%
 
 ---
@@ -719,7 +719,7 @@ Om het in cache plaatsen van persisted query&#39;s in te schakelen, zijn de volg
   >
   >Dispatcher voegt het achtervoegsel toe `.json` aan alle persisted query-URL&#39;s, zodat het resultaat in de cache kan worden opgeslagen.
   >
-  >Hiermee zorgt u ervoor dat de query voldoet aan de vereisten van de Dispatcher voor documenten die in cache kunnen worden geplaatst.
+  >Hiermee zorgt u ervoor dat de query voldoet aan de vereisten van de Dispatcher voor documenten die in cache kunnen worden geplaatst. Zie voor meer informatie [Hoe retourneert de Dispatcher documenten?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 

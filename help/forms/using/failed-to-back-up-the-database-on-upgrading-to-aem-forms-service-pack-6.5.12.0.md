@@ -1,14 +1,14 @@
 ---
 title: Geen back-up van database tijdens upgrade naar 6.5.12.0 voor MySQL.
 description: Wanneer een gebruiker aan Experience Manager 6.5.12.0 bevordert en "Upgrade MySQL"klikt, ontbreekt de configuratiemanager aan file het vorige Gegevensbestand van Experience Manager Forms.
-source-git-commit: bf974331157e21b28c0daa5b878ac927ce5a2304
+source-git-commit: a6b1e97fd694f0fa1396697c42d84daaa9a6ac68
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '105'
 ht-degree: 0%
 
 ---
 
-# Geen back-up van database tijdens upgrade naar 6.5.12.0 voor MySQL (#issue)
+# Geen back-up van database tijdens upgrade naar 6.5.12.0 voor MySQL {#issue}
 
 Wanneer een gebruiker aan Experience Manager 6.5.12.0 bevordert en &quot;Upgrade MySQL&quot;klikt, ontbreekt de configuratiemanager aan file het vorige Gegevensbestand van Experience Manager Forms, toont het de fout:
 

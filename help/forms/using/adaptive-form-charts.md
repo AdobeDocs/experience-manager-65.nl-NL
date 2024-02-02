@@ -4,9 +4,9 @@ description: Gebruik grafieken in een adaptief formulier om uw formulier informa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 5c117d25a381b2cb85c2bf0715866dd5ad93572c
+source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ![Hero_Image](assets/charts_hero_image.jpg)
 
-Een grafiek of grafiek is een visuele weergave van gegevens. Zo kunt u grote hoeveelheden informatie comprimeren tot een eenvoudig te begrijpen en visueel formaat, zodat u complexe gegevens beter kunt visualiseren, interpreteren en analyseren.
-AEM Forms add-on package biedt een out-of-the-box component Chart. U kunt in uw adaptieve formulieren en documenten gebruiken voor een visuele weergave van tweedimensionale gegevens in herhaalbare deelvensters en tabellen. Met de component Chart kunt u de volgende typen grafieken toevoegen en configureren:
+Een grafiek of grafiek is een visuele weergave van gegevens. Zo kunt u grote hoeveelheden informatie samenvoegen tot een eenvoudig te begrijpen visuele indeling, zodat u complexe gegevens beter kunt visualiseren, interpreteren en analyseren.
+AEM Forms add-on package biedt een out-of-the-box component Chart. U kunt in uw adaptieve formulieren en documenten gebruiken voor een visuele weergave van tweedimensionale gegevens in **herhaalbare deelvensters** en **tabellen**. Met de component Chart kunt u de volgende typen grafieken toevoegen en configureren:
 
 1. Schijf
 1. Kolom
@@ -41,7 +41,7 @@ De component Chart is beschikbaar in AEM zijbalk, door gebrek. U kunt de compone
 > 
 > Alvorens de grafiek te vormen, zorg ervoor dat het paneel of de lijstrij waarvoor u de grafiek vormt aan herhaalbaar wordt geplaatst. U kunt minimum- en maximumwaarden opgeven voor herhaalbare deelvensters of tabelrijen op het tabblad Herhalingsinstellingen van het dialoogvenster Component bewerken.
 
-Als u de grafiek wilt configureren, klikt u met de rechtermuisknop op de component Diagram en klikt u op Bewerken om het dialoogvenster Diagram bewerken te openen. Het dialoogvenster bevat de tabbladen Titel en tekst, Configuratie, Geavanceerde opties en Opmaak waarmee u de grafiek kunt configureren.
+Om de grafiek te vormen, klik de component van de Grafiek en klik ![Instellingen](cmppr1.png) om het dialoogvenster Diagram bewerken te openen. Het dialoogvenster bevat de tabbladen Titel en tekst, Configuratie, Geavanceerde opties en Opmaak waarmee u de grafiek kunt configureren.
 
 ### Basis {#basic}
 
@@ -51,7 +51,7 @@ Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 
 * **Elementnaam**: Een id voor het grafiekelement in de JCR-inhoudsstructuur. Het is niet zichtbaar op de grafiek maar helpt wanneer het verwijzen naar het element van andere componenten, manuscripten, en uitdrukkingen SOM.
 * **Type diagram**: Geeft het type grafiek op dat u wilt genereren. De beschikbare opties zijn Schijf, Donut, Bar, Kolom, Lijn, Lijn en Punt, Punt, en Gebied. In het voorbeeld is het diagramtype Column.
-* **Rijnaam herhalen voor gegevensbron**: Geeft de elementnaam van de tabelrij of het herhaalbare deelvenster aan waaruit de gegevens worden opgehaald. In het voorbeeld, is statementDetails de elementnaam van de herhaalbare rij in de lijst van de Details van de Verklaring.
+* **Naam van rij of deelvenster herhalen voor gegevensbron**: Geeft de elementnaam van de tabelrij of het herhaalbare deelvenster aan waaruit de gegevens worden opgehaald. In het voorbeeld, is statementDetails de elementnaam van de herhaalbare rij in de lijst van de Details van de Verklaring.
 * **X-as > Titel**: Geeft de titel voor de X-as aan. In het voorbeeld is de titel voor de X-as Categorie.
 * **X-as > Veld**: Geeft de elementnaam aan van het veld (of een cel in een tabel) dat moet worden getekend op de X-as. In het voorbeeld worden categorieën geconfigureerd op de X-as. De elementnaam voor de tabelcel in de kolom Categorie van de voorbeeldtabel is een categorie.
 * **X-as > Functie gebruiken**: Geeft de statistische functie op die moet worden gebruikt voor het berekenen van de waarden op de X-as. In het voorbeeld is Geen de geselecteerde optie. Zie Functies in diagram gebruiken voor meer informatie over functies.
@@ -64,7 +64,7 @@ Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 * **Diagramspecifieke configuraties**: Naast gemeenschappelijke configuraties, is de volgende grafiek-specifieke configuratie beschikbaar:
 * **Binnenstraal**: beschikbaar voor Donut-grafieken om de straal (in pixels) van de binnencirkel in het diagram op te geven.
 * **Lijnkleur**: beschikbaar voor diagrammen voor Lijn, Lijn en Punt en Gebied om de hexadecimale waarde van de kleur voor de lijn in de grafiek te specificeren.
-* **Puntkleur**: beschikbaar voor de grafieken van het Punt en van de Lijn en van het Punt om de hexadecimale waarde van de kleur voor de punten in de grafiek te specificeren.
+* **Puntkleur**: beschikbaar voor Punt en Lijn, en de grafieken van het Punt om de hexadecimale waarde van de kleur voor de punten in de grafiek te specificeren.
 * **Gebiedskleur**: beschikbaar voor vlakgrafieken om de hexadecimale waarde van de kleur op te geven voor het gebied onder de regel in het diagram.
 * **CSS-klasse**: Geef de naam van een CSS-klasse op in het veld CSS-klasse om aangepaste opmaak toe te passen op het diagram.
 
@@ -78,7 +78,7 @@ Hiervoor moet u categorieën op de X-as plaatsen en op de Y-as de totale uitgave
 
 ![Details van de verklaring](assets/statement-details.png)
 
-De creditcardverklaring in dit voorbeeld wordt gebruikt is een adaptief document en de sectie van verklaringsdetails is een lijst, die als volgt op de auteurswijze kijkt.
+De creditcardverklaring in dit voorbeeld wordt gebruikt is een adaptief vormdocument en de sectie van verklaringsdetails is een lijst, die als volgt op de auteurswijze kijkt.
 
 ![Ontwerpdetails van instructies](assets/statement-details-authoring.png)
 
@@ -87,7 +87,7 @@ Laten we de volgende vereisten en voorwaarden voor het genereren van het diagram
 * De grafiek toont de totale uitgave in elke categorie in de lijst van de Details van de Verklaring.
 * Het grafiektype is Kolom, hoewel u een ander grafiektype kunt kiezen, zoals aangewezen.
 * De rij van de Lijst in de lijst van de Details van de Verklaring is herhaalbaar. U kunt dit configureren in het veld Herhalingsinstellingen van de tabelrijeigenschappen.
-* De elementnaam voor de rij is statementDetails. U kunt het in de eigenschappen van de Rij van de Lijst vormen.
+* De elementnaam voor de rij is de Details van de Verklaring. U kunt het in de eigenschappen van de Rij van de Lijst vormen.
 * De elementnaam voor de tabelcel in de kolom Categorie is een categorie. U kunt deze inline opgeven. Selecteer de cel en tik op de knop Bewerken.
 * De elementnaam voor de tabelcel in de kolom Bedrag is de hoeveelheid. Bovendien is de tabelcel in de kolom Bedrag een numeriek vak.
 * Met de gespecificeerde configuratie, zal de grafiek van de Kolom in het voorbeeld als volgt verschijnen. Elke kleur vertegenwoordigt een categorie en afzonderlijke regelitems of bedragen voor een categorie worden in het diagram opgeteld.
@@ -108,7 +108,7 @@ Als u wilt overschakelen naar de opmaakmodus, klikt u op de paginaboolbalk **tik
 
 ## Functies in diagram gebruiken {#use-functions}
 
-U kunt een grafiek vormen om statistische functies te gebruiken om waarden van de brongegevens voor het tekenen op de grafiek te berekenen. Terwijl de component van de Grafiek met sommige ingebouwde functies komt, kunt u uw eigen functies schrijven en hen voor gebruik in de grafiekconfiguratie ter beschikking stellen.
+U kunt een grafiek vormen om statistische functies te gebruiken om waarden van de brongegevens voor het tekenen op de grafiek te berekenen. Terwijl de component van de Grafiek sommige ingebouwde functies heeft, kunt u uw eigen functies schrijven en hen voor gebruik in de grafiekconfiguratie ter beschikking stellen.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ De volgende functies zijn standaard beschikbaar met de component Chart:
 
 ### Aangepaste functies {#custom-functions}
 
-Naast het gebruik van de standaardfuncties in grafieken, kunt u douanefuncties in JavaScript schrijven en hen ter beschikking stellen in de lijst van functies in de component van de Grafiek.
+Naast het gebruik van de standaardfuncties in grafieken kunt u schrijven [aangepaste functies](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) in JavaScript en deze beschikbaar maken in de lijst met functies in de component Chart.
 
 Een functie neemt een array of waarden en een categorienaam als invoer en retourneert een waarde. Bijvoorbeeld:
 

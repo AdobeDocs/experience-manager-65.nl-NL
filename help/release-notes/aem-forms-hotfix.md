@@ -2,9 +2,9 @@
 title: Hotfixes voor AEM Forms
 description: Hier vindt u informatie over het downloaden en installeren van een hotfix voor AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
      </td>
     <td>
     <ul>
-    <li>Op AEM Forms op de JEE-server kan de HTML5 Forms die gebruik maakt van het contextpad niet worden gerenderd. (FORMS-12485).</li>
+    <li>Op AEM Forms op de JEE-server kan de HTML5 Forms die gebruik maakt van het contextpad niet worden gerenderd. (FORMS-12485, FORMS-12691).</li>
     </ul>
     </td>    
   </tr>

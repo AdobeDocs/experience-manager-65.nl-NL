@@ -7,14 +7,14 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
 
-# Ervaringsfragmenten{#experience-fragments}
+# Ervaar fragmenten{#experience-fragments}
 
 ## De basisbeginselen {#the-basics}
 
@@ -182,7 +182,7 @@ Voor deze gebruiksgevallen AEM verstrekt de Interface van de Leverancier van de 
 
 >[!NOTE]
 >
->Deze interface is geïntroduceerd in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>Deze interface is geïntroduceerd in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6-5-1.md).
 
 Voor meer gecompliceerde gevallen die niet onder de [default](#default-link-rewriting), AEM biedt de Interface van de Leverancier van de Verbinding Rewriter aan. Dit is een `ConsumerType` interface die u in uw bundels, als dienst kunt uitvoeren. Het omzeilt de aanpassingen AEM op interne verbindingen van een aanbieding van de HTML zoals die van een Fragment van de Ervaring worden teruggegeven uitvoeren. Met deze interface kunt u het herschrijven van interne HTML-koppelingen aanpassen aan uw bedrijfsbehoeften.
 
@@ -216,7 +216,7 @@ Om de interface te gebruiken, moet u eerst een bundel tot stand brengen die een 
 
 Deze service wordt gebruikt om in het dialoogvenster Exporteren van fragment uit ervaring naar doel te plaatsen voor toegang tot de verschillende koppelingen.
 
-Bijvoorbeeld, `ComponentService`:
+Bijvoorbeeld: `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;

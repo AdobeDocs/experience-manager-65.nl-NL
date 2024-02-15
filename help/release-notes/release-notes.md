@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 6a5ff6df3939c6d1576327943b428f374e987bcb
+source-git-commit: fab43458811f70da7f80a23e689dfca54391a84a
 workflow-type: tm+mt
-source-wordcount: '4423'
+source-wordcount: '4425'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ Om het probleem op te lossen, [Compileer de Sling-scripts, zoals JSP, Java™ en
 * Na het installeren van AEM Service Pack 6.5.14.0 en daarna, kunnen de gebruikers geen doopvont van JEE Admin UI voor de documenten van PDF selecteren wanneer het navigeren aan `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, omdat de lettertypenlijst leeg lijkt. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
 * In AEM Forms op JEE kan de HTML5 Forms die gebruik maakt van het contextpad, niet renderen. (FORMS-12485, FORMS-12691). Er is een hotfix beschikbaar voor dit probleem. Zie voor informatie over het downloaden en installeren van de hotfix [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
-* De aangepaste functie ondersteunt functies van ECMAScript versie 5. Als de aangepaste functie functies gebruikt die worden ondersteund door ECMAScript versie 6 of hoger, bijvoorbeeld de functies let, const of arrow, kan de regeleditor niet worden geopend.
+* Met Adaptive Forms kunt u aangepaste functies gebruiken met ECMAScript versie 5 of lager. Wanneer een douanefunctie ECMAScript versie 6 of later, zoals &quot;laat&quot;, &quot;const&quot;, of pijlfuncties gebruikt, zou de regelredacteur niet behoorlijk kunnen openen.
 
 #### AEM Forms op JEE
 

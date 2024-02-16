@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: f41cb88406db23c2af8988f7ee584db95184c6c4
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '7335'
 ht-degree: 1%
@@ -560,7 +560,7 @@ ht-degree: 1%
       + AEM Forms configureren {#configure-aem-forms}
          + [Prestaties afstemmen van AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md)
          + [Cache voor adaptieve formulieren configureren](/help/forms/using/configure-adaptive-forms-cache.md)
-         + [AEM DS-instellingen configureren](/help/forms/using/configuring-the-processing-server-url-.md)
+         + [AEM DS-instellingen configureren](/help/forms/using/configuring-the-processing-server-url.md)
          + [De synchronisatieplanner configureren](/help/forms/using/configure-synchronization-scheduler.md)
          + [De connector voor Microsoft SharePoint configureren](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
          + [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -636,7 +636,7 @@ ht-degree: 1%
       + [Inline styling van adaptieve formuliercomponenten](/help/forms/using/inline-style-adaptive-forms.md)
       + [Inleiding tot een formulierreeks die uit meerdere stappen bestaat](/help/forms/using/introduction-form-sequence.md)
       + [Indelingsmogelijkheden van adaptieve formulieren](/help/forms/using/layout-capabilities-adaptive-forms.md)
-      + [Plaatsaanduidingstekst in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+      + [Plaatsaanduidingstekst in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [Een voorbeeld van een formulier bekijken](/help/forms/using/previewing-forms.md)
       + [Aangepaste formulieren opnieuw gebruiken](/help/forms/using/reusing-adaptive-forms.md)
       + [Scheidingscomponent in adaptieve vormen](/help/forms/using/separator-component-in-adaptive-forms.md)

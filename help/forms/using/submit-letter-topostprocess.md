@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Om postprocessen met brieven of interactieve mededelingen te associëren, moet u
 
 1. aanmelden bij `https://localhost:publishport/aem/forms`.
 1. Navigeren naar **[!UICONTROL Letters]** om de gepubliceerde brief te bekijken die op het publicatiegeval beschikbaar is.
-1. Configureer de AEM DS-instellingen. Zie [AEM DS-instellingen configureren](../../forms/using/configuring-the-processing-server-url-.md).
+1. Configureer de AEM DS-instellingen. Zie [AEM DS-instellingen configureren](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >

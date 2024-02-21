@@ -2,9 +2,9 @@
 title: Veelgestelde vragen AEM
 description: Gebruik deze veelgestelde vragen om algemene workflows of problemen in AEM te begrijpen, te configureren en op te lossen.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,6 @@ Met binair-geen toegelaten wijze, bevatten de verdeelde inhoudspakketten verwijz
 
 Om binair-minder distributie toe te laten, stel met een gedeelde blob opslag op.
 Controleer de `useBinaryReferences` eigenschap in de OSGI-configuratie met de fabriek-PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* dat uw agent gebruikt.
-
-#### Hoe kan ik de foutenmeldingen aanpassen terwijl het navigeren van paginahiërarchie in AEM plaatsenconsole? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
-
-Controleer het deelvenster Netwerk (van de Chrome-browser) waar een persoonlijke setup (JS) niet is geminiateerd.
-
-De weergave `Initiator` kolom om te bepalen wat de initiatiefnemer van een verzoek was. Het verstrekt de dossiers en de lijnaantallen van waar de AJAX vraag wordt gemaakt. Later kunt u de functie voor foutafhandeling overtrekken en het foutbericht naar wens wijzigen.
 
 #### Hoe te om toestemmingen toe te laten terwijl het creëren van het Exemplaar van de Taal voor tevreden-Auteurs in AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 

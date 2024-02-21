@@ -2,9 +2,9 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3443d331815ffb462890282a49e658693f157af0
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,10 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 
 | Gebied | Functie | Vervanging | Versie (SP) |
 |---|---|---|---|
+|   |   |   |   |
 | Sites | De **Adobe AEM beheerde opiniepeilingconfiguratie** service: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | De **Adobe AEM Analytics Report Sling Importer** service. Zie Verbinding maken met Adobe Analytics en Frameworks maken - [Het Interval van de Invoer vormen](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19,0 |
-| [!DNL Sites] | Eigenschappen van Experience Fragments voor **Status van sociale media**. |   | 6.5.11.0. |
+| Schermen | ActiveMQ in Adobe Experience Manager (AEM). ActiveMQ is gebruikt voor communicatie tussen twee AEM Publish-instanties. | Adobe raadt klanten aan een taakverdelingsmechanisme te gebruiken. | 6.5.18.0. |
+| Eigenschappen van Experience Fragments voor **Status van sociale media**. |   | 6.5.11.0. |
 | [!DNL Sites] | Inhoudsfragmentsjablonen voor het maken van eenvoudige inhoudsfragmenten. | [Op modellen gebaseerde gestructureerde inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) nu. | 6.5.11.0. |
 | Integratie van Creative Cloud | AEM naar het Delen van de Omslag van het Creative Cloud werd geïntroduceerd in AEM 6.2. Het biedt een manier om creatieve gebruikers toegang te geven tot middelen van AEM, zodat ze ze kunnen openen in [!DNL Creative Cloud] en uploadt u nieuwe bestanden of slaat u wijzigingen op in AEM. Een nieuw vermogen dat in de toepassing van het Creative Cloud, de Verbinding van de Activa van de Adobe wordt vrijgegeven, verstrekt een betere gebruikerservaring en krachtigere toegang tot activa van AEM direct van binnen Photoshop, InDesign, en Illustrator. De Adobe is niet van plan om verdere verhogingen aan de AEM aan het Delen van de Omslag van het Creative Cloud te maken. Terwijl de eigenschap in AEM inbegrepen is, worden de klanten geadviseerd om vervangingsoplossingen te gebruiken. | Klanten wordt aangeraden over te schakelen op nieuwe integratiemogelijkheden voor Creatives Cloud, waaronder Adobe Asset Link of AEM desktop app. |  |
 | Assets | `AssetDownloadServlet` is standaard uitgeschakeld voor de publicatie-instanties. Zie voor meer informatie [Controlelijst voor AEM](/help/sites-administering/security-checklist.md). | Configuratie beschreven op [Controlelijst voor AEM](/help/sites-administering/security-checklist.md). |  |

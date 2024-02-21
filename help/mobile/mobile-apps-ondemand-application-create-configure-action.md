@@ -1,12 +1,12 @@
 ---
 title: Handelingen voor het maken en configureren van toepassingen
-description: Het maken van een app is vaak de eerste stap naar het maken en beheren van AEM Mobile On-Demand-inhoud. Volg deze pagina voor meer informatie.
+description: Het maken van een app is vaak de eerste stap naar het maken en beheren van AEM Mobile On-Demand-inhoud. Volg deze pagina als u meer wilt leren.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Een toepassing op aanvraag maken {#creating-an-on-demand-application}
 
-Het maken van een app is vaak de eerste stap op weg naar het maken en beheren van AEM Mobile On-Demand-inhoud en wordt vaak uitgevoerd op het niveau van de AEM beheerder. Deze vertegenwoordigt een inhoud die op mobiele apparaten kan worden weergegeven en die door de auteur gemaakte inhoud kan weergeven, zoals artikelen, afbeeldingen, verzamelingen, enzovoort.
+Het maken van een app is vaak de eerste stap op weg naar het maken en beheren van AEM Mobile On-Demand-inhoud en wordt vaak uitgevoerd op het niveau van de AEM beheerder. Deze vertegenwoordigt een inhoud die op mobiele apparaten kan worden weergegeven en die door de auteur gemaakte inhoud, zoals artikelen, afbeeldingen en verzamelingen, kan weergeven.
 
 De details van uw app kunnen worden weergegeven in het dashboard of het AEM Mobile Control Center.
 
@@ -67,7 +67,7 @@ Zie [Uw app koppelen aan de Cloud Configuration](/help/mobile/mobile-on-demand-a
 
 Als u bekend bent met het maken van een toepassing op aanvraag en deze toepassing zo aan een cloudconfiguratie hebt gekoppeld, raadpleegt u [Handelingen voor inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Handelingen voor inhoudsbeheer** betreft het maken en beheren van de volgende inhoud:
+**Handelingen voor inhoudsbeheer** omvat het maken en beheren van de volgende inhoud:
 
 * [Artikelen beheren](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Banners beheren](/help/mobile/mobile-on-demand-managing-banners.md)

@@ -4,9 +4,9 @@ description: De test van de Dag van de Stevige simuleert de dagelijkse lading va
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-Dag 2 van de oude dag heeft geen opschoningsmaatregel. Als gevolg hiervan wordt aangeraden Dag 2 te gebruiken op een gekloonde staging-instantie en niet op de hoofdproductie-instantie. De testinstantie moet na de tests worden verwijderd.
+>Dag 2 van de oude dag heeft geen opschoningsmaatregel. Als gevolg hiervan wordt aangeraden Dag 2 te gebruiken op een gekloonde staging-instantie en niet op de hoofdproductie-instantie. De testinstantie moet na de tests worden verwijderd.
 >
 
 ### Help opvragen {#getting-help}
@@ -330,7 +330,7 @@ of
 
 >[!NOTE]
 >
-Als gevolg van parallelle uitvoeringen is het werkelijke aantal testuitvoeringen niet precies het bedrag dat is geconfigureerd in de `count` parameter. Verwacht een afwijking evenredig aan het aantal lopende draden (die door `concurrency parameter`).
+>Als gevolg van parallelle uitvoeringen is het werkelijke aantal testuitvoeringen niet precies het bedrag dat is geconfigureerd in de `count` parameter. Verwacht een afwijking evenredig aan het aantal lopende draden (die door `concurrency parameter`).
 
 ### Droog {#dry-run}
 

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
 source-wordcount: '5752'
 ht-degree: 0%
@@ -552,7 +552,7 @@ Error.log is breed als er incidenten tijdens het online proces van de revisie sc
   <tr>
     <td>NVT</td>
     <td>TarMK GC #2: De verbinding is mislukt na 5 cycli in 32,902 min (1974140 ms).</td>
-    <td>Dit bericht betekent niet dat er een onherstelbare fout was, maar slechts dat de compensatie na sommige pogingen werd geëindigd. Lees ook de <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">volgende alinea.</a></td>
+    <td>Dit bericht betekent niet dat er een onherstelbare fout is opgetreden, maar alleen dat de compensatie na een aantal pogingen is beëindigd. Lees ook de <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">volgende alinea.</a></td>
     <td>Lees het volgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak-documentatie</a>en de laatste vraag van de sectie Onlinerevisie uitvoeren.</a></td>
   </td>
   </tr>

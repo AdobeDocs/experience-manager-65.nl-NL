@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 2%
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ U kunt het aanmeldingsscherm wijzigen van alle AEM Forms-modules die het AEM For
 
    1. Kopieer de inhoudsmap:
 
-      Van: `/libs/livecycle/core`
+      van: `/libs/livecycle/core`
 
       tot: `/apps/livecycle/core`.
 
@@ -53,7 +53,7 @@ U kunt het aanmeldingsscherm wijzigen van alle AEM Forms-modules die het AEM For
 
 1. In de map `en`, voert u de volgende handelingen uit:
 
-   1. Wijzig de naam van de map in de naam van de landinstelling die u wilt ondersteunen. Bijvoorbeeld, `ar`.
+   1. Wijzig de naam van de map in de naam van de landinstelling die u wilt ondersteunen. Bijvoorbeeld: `ar`.
 
    1. De eigenschap wijzigen `jcr:language` waarde aan `ar`(voor de `ar` map).
 
@@ -290,7 +290,7 @@ css.newLoginContentArea {
 1. Nieuwe afbeeldingen toevoegen in `/apps/livecycle/core/content/login`. Afbeelding toevoegen:
 
    1. WebDAV-client installeren.
-   1. Navigeren naar `/apps/livecycle/core/content/login` met webDAV-client. Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
+   1. Navigeren naar `/apps/livecycle/core/content/login` met webDAV-client. Zie voor meer informatie [WebDAV-toegang](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    1. Voeg nieuwe afbeeldingen toe.
 

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Ontwerp uw filters zodat u combinaties ervan kunt gebruiken om de groepen mogeli
 
 Nadat u een filter hebt gemaakt, kunt u het in het dialoogvenster [groepconfiguratie.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## De Java-klasse Filter {#the-filter-java-class}
+## De Filter Java™-klasse {#the-filter-java-class}
 
-Een filter van de apparatengroep is een component OSGi die uitvoert [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
+Een filter van de apparatengroep is een component OSGi die uitvoert [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
 
-De oplossing die in dit artikel wordt beschreven gebruikt Apache Felix Maven SCR Insteekmodule om de ontwikkeling van de component en de dienst te vergemakkelijken. Daarom gebruikt de voorbeeldklasse Java de `@Component`en `@Service` annotaties. De klasse heeft de volgende structuur:
+De oplossing die in dit artikel wordt beschreven gebruikt Apache Felix Maven SCR Insteekmodule om de ontwikkeling van de component en de dienst te vergemakkelijken. Daarom gebruikt de voorbeeld-Java™-klasse de `@Component`en `@Service` annotaties. De klasse heeft de volgende structuur:
 
 ```java
 package com.adobe.example.myapp;
@@ -63,7 +63,7 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 }
 ```
 
-U moet code opgeven voor de volgende methoden:
+Geef code op voor de volgende methoden:
 
 * `getDescription`: Retourneert de filterbeschrijving. De beschrijving wordt weergegeven in het dialoogvenster Configuratie apparaatgroep.
 * `getTitle`: Retourneert de naam van het filter. De naam wordt weergegeven wanneer u filters voor de apparaatgroep selecteert.
@@ -93,7 +93,7 @@ De `matches` functie retourneert `true` als de mogelijkheden van het apparaat aa
 * De naam van de gebruikersagent
 * Een object Map dat de apparaatmogelijkheden bevat. De sleutels van de Kaart zijn de WURFL™ bezitsnamen en de waarden zijn de overeenkomstige waarden van het WURFL™ gegevensbestand.
 
-De [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface bevat een subset van de WURFL™-capaciteitsnamen in statische velden. Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
+De [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface bevat een subset van de WURFL™-capaciteitsnamen in statische velden. Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
 
 In het volgende codevoorbeeld wordt bijvoorbeeld bepaald of het apparaat CSS ondersteunt:
 
@@ -175,7 +175,7 @@ De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken.
 
 **Insteekmodules:**
 
-* Apache Maven Compiler Plugin: compileert Java-klassen uit broncode.
+* Apache Maven Compiler Plugin: compileert Java™-klassen van broncode.
 * Apache Felix Maven Bundle Plugin: maakt de bundel en het manifest
 * Apache Felix Maven SCR Insteekmodule: Creeert het dossier van de componentenbeschrijver en vormt de dienst-component duidelijke kopbal.
 

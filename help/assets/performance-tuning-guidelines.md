@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '2662'
 ht-degree: 0%
 
 ---
@@ -127,13 +127,13 @@ Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid besc
 
 ### Tijdelijke workflows {#transient-workflows}
 
-Stel, waar mogelijk, de [!UICONTROL DAM Update Asset] workflow naar Overgang. De instelling verlaagt aanzienlijk de overheadkosten die nodig zijn voor het verwerken van workflows, omdat workflows in dit geval niet door de normale tracking- en archiveringsprocessen hoeven te gaan.
+Stel, waar mogelijk, de [!UICONTROL DAM Update Asset] workflow naar Overgang. De instelling verlaagt aanzienlijk de algemene kosten die nodig zijn voor het verwerken van workflows, omdat workflows in dit geval niet door de normale tracking- en archiveringsprocessen hoeven te gaan.
 
 1. Navigeren naar `/miscadmin` in de [!DNL Experience Manager] implementatie bij `https://[aem_server]:[port]/miscadmin`.
 
 1. Uitbreiden **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
-1. Open **[!UICONTROL DAM Update Asset]**. Van het het drijven hulpmiddelpaneel, schakelaar aan **[!UICONTROL Page]** en klikt u op **[!UICONTROL Page Properties]**.
+1. Openen **[!UICONTROL DAM Update Asset]**. Van het het drijven hulpmiddelpaneel, schakelaar aan **[!UICONTROL Page]** en klikt u op **[!UICONTROL Page Properties]**.
 
 1. Selecteren **[!UICONTROL Transient Workflow]** en klik op **[!UICONTROL OK]**.
 

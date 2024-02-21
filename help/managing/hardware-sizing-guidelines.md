@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2832'
 ht-degree: 0%
 
 ---
@@ -147,13 +147,13 @@ In de auteursomgeving is de caching efficiency typisch veel lager, omdat de vera
 
 In de auteursomgeving zijn het aantal auteurs die parallel werken en de lading hun interactie aan het systeem toevoegen de belangrijkste beperkende factoren. Daarom adviseert de Adobe dat u uw systeem schrapt dat op de gedeelde productie van gegevens wordt gebaseerd.
 
-Voor dergelijke scenario&#39;s, de tests van de looppas van de Adobe benchmarktests op een twee knoop delen-niets cluster van auteursinstanties.
+Voor dergelijke scenario&#39;s, stelde de Adobe benchmarktests op een twee knoop gedeeld-niets cluster van auteursinstanties in werking.
 
 * **Benchmarktest 1a**
 Met een actief-actief delen-niets cluster van 2 auteursinstanties, bereken de maximumproductie met een ladingsprofiel waar de gebruikers eenvoudig uitvoeren creeer paginamotie bovenop een basislading van 300 bestaande pagina&#39;s, allen van gelijkaardige aard.
 
    * **Resultaat**
-De maximale doorvoer voor een eenvoudige oefening voor het maken van pagina&#39;s, zoals hierboven, (beschouwd als één transactie), is 2016 transacties/uur. Dit is een stijging van ongeveer 16% in vergelijking met een standalone auteur instantie voor dezelfde benchmarktest.
+De maximale doorvoer voor een eenvoudige oefening voor het maken van pagina&#39;s, zoals hierboven beschouwd als één transactie, blijkt 2016 transacties/uur te zijn. Dit is een stijging van ongeveer 16% in vergelijking met een standalone auteur instantie voor dezelfde benchmarktest.
 
 * **Benchmarktest 2b**
 Met een actief-actief delen-niets cluster van 2 auteursinstanties, bereken de maximumproductie wanneer het ladingsprofiel een mengeling van verse paginverwezenlijking (10%), wijziging van een bestaande pagina (80%) en verwezenlijking en wijziging van een pagina in opeenvolgende (10%) heeft. De complexiteit van de pagina blijft dezelfde als in het profiel van benchmarktest 1. De basiswijziging van de pagina wordt uitgevoerd door een afbeelding toe te voegen en de tekstinhoud te wijzigen. De oefening werd opnieuw uitgevoerd boven op een basislast van 300 pagina&#39;s van complexiteit, zoals gedefinieerd in benchmarktest 1.
@@ -179,7 +179,7 @@ Zie ook [Parallelisatie](/help/managing/hardware-sizing-guidelines.md#paralleliz
 
 ### Hardware Recommendations {#hardware-recommendations}
 
-Gewoonlijk kunt u voor uw auteursomgeving dezelfde hardware gebruiken als voor uw het publiceren milieu wordt geadviseerd. Websiteverkeer is doorgaans veel lager op ontwerpsystemen, maar de efficiëntie van de cache is ook lager. De fundamentele factor hierbij is echter het aantal auteurs dat parallel werkt, en het soort acties dat in het systeem wordt ondernomen. Over het algemeen is AEM clustering (van de auteursomgeving) het meest effectief bij het schalen van leesbewerkingen; met andere woorden, een AEM cluster schaalt goed met auteurs die elementaire bewerkingsbewerkingen uitvoeren.
+Gewoonlijk kunt u voor uw auteursomgeving dezelfde hardware gebruiken als voor uw het publiceren milieu wordt geadviseerd. Websiteverkeer is doorgaans lager bij ontwerpsystemen, maar de efficiëntie van de cache is lager. De fundamentele factor hierbij is echter het aantal auteurs dat parallel werkt, en het soort acties dat in het systeem wordt ondernomen. Over het algemeen is AEM clustering (van de auteursomgeving) het meest effectief bij het schalen van leesbewerkingen; met andere woorden, een AEM cluster schaalt goed met auteurs die elementaire bewerkingsbewerkingen uitvoeren.
 
 De benchmarktests bij Adobe werden uitgevoerd met het Red Hat® 5.5-besturingssysteem, dat werd uitgevoerd op een Hewlett-Packard ProLiant DL380 G5-hardwareplatform met de volgende configuratie:
 
@@ -215,7 +215,7 @@ De cacheverhouding is het percentage pagina&#39;s dat de Dispatcher kan retourne
 
 ### Complexiteit van sjablonen en toepassingen {#complexity-of-templates-and-applications}
 
-Als u complexe sjablonen gebruikt, heeft AEM meer tijd nodig om een pagina te renderen. Dit heeft geen invloed op pagina&#39;s die uit de cache zijn genomen, maar de paginagrootte is nog steeds relevant als u de totale responstijd in aanmerking neemt. Het weergeven van een complexe pagina kan eenvoudig tien keer langer duren dan het weergeven van een eenvoudige pagina.
+Als u complexe sjablonen gebruikt, AEM meer tijd nodig om een pagina te renderen. Dit heeft geen invloed op pagina&#39;s die uit de cache zijn genomen, maar de paginagrootte is nog steeds relevant als u de totale responstijd in aanmerking neemt. Het weergeven van een complexe pagina kan eenvoudig tien keer langer duren dan het weergeven van een eenvoudige pagina.
 
 ### Formule {#formula}
 
@@ -281,7 +281,7 @@ Als u een complexere website hebt, hebt u ook krachtigere webservers nodig, zoda
 
 ## Aanvullende gebruiksspecifieke berekeningen {#additional-use-case-specific-calculations}
 
-Naast de berekening voor een standaardwebtoepassing moet u wellicht rekening houden met specifieke factoren voor de volgende gebruiksgevallen. De berekende waarden moeten aan de standaardberekening worden toegevoegd.
+Naast de berekening voor een standaardwebtoepassing, moet u rekening houden met specifieke factoren voor de volgende gebruiksgevallen. De berekende waarden moeten aan de standaardberekening worden toegevoegd.
 
 ### Specifieke overwegingen voor de activa {#assets-specific-considerations}
 
@@ -291,13 +291,13 @@ minimaal 16 GB heap toewijzen en de [!UICONTROL DAM Update Asset] workflow om de
 
 >[!NOTE]
 >
->Een hogere doorvoer van afbeeldingen betekent dat de computerbronnen gelijke tred moeten kunnen houden met de I/O van het systeem en omgekeerd. Als workflows bijvoorbeeld worden gestart door het importeren van afbeeldingen, kan het uploaden van veel afbeeldingen via WebDAV een achterstand in workflows veroorzaken.
+Een hogere doorvoer van afbeeldingen betekent dat de computerbronnen gelijke tred moeten kunnen houden met de I/O van het systeem en omgekeerd. Als workflows bijvoorbeeld worden gestart door het importeren van afbeeldingen, kan het uploaden van veel afbeeldingen via WebDAV een achterstand in workflows veroorzaken.
 >
->Het gebruik van afzonderlijke schijven voor TarPM, gegevensopslag en zoekindex kan helpen het I/O-gedrag van het systeem te optimaliseren (het is echter doorgaans verstandig om de zoekindex lokaal te houden).
+Het gebruik van afzonderlijke schijven voor TarPM, gegevensopslag en zoekindex kan helpen het I/O-gedrag van het systeem te optimaliseren (het is echter doorgaans verstandig om de zoekindex lokaal te houden).
 
 >[!NOTE]
 >
->Zie ook de [Prestatiehandleiding voor middelen](/help/sites-deploying/assets-performance-sizing.md).
+Zie ook de [Prestatiehandleiding voor middelen](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Beheer van meerdere sites {#multi-site-manager}
 

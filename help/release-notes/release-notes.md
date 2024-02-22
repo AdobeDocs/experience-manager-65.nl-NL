@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 19fe527ce44d8ec5be50ebd32b46f13df96c52cc
+source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2861'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### Gebruikersinterface Admin{#sites-adminui-6520}
 
-* De `Workflow Title` veld is gemarkeerd met `*` , maar er is geen validatie. (SITES-16491) NORMAAL
+* De `Workflow Title` veld is gemarkeerd met `*` , maar er is geen validatie. (SITES-16491)
 
 <!--#### Classic UI{#sites-classicui-6520}
 
@@ -68,12 +68,12 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
 * Geneste configuratiemappen worden niet meer ondersteund en de mappen met het inhoudsfragmentmodel zijn niet meer zichtbaar na de upgrade naar AEM 6.5.18 of naar AEM 6.5.19. (SITES-18110) BELANGRIJK
-* Sommige submappen kunnen niet kiezen uit overerfde modellen voor inhoudsfragmenten. Mappen moeten worden ondersteund zonder een `jcr:content` eigenschap, zelfs als de DAM-mappen die via de gebruikersinterface zijn gemaakt, een dergelijk knooppunt hebben. (SITES-17943) NORMAAL
+* Sommige submappen kunnen niet kiezen uit overerfde modellen voor inhoudsfragmenten. Mappen moeten worden ondersteund zonder een `jcr:content` eigenschap, zelfs als de DAM-mappen die via de gebruikersinterface zijn gemaakt, een dergelijk knooppunt hebben. (SITES-17943)
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6520}
 
 <!-- REMOVED AS PER EMAIL FROM SAMEER DHAWAN FEBRUARY 19, 2024 * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
-* Bij het uitvoeren van een GraphQL-query op [filterresultaten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) met behulp van optionele variabelen, als een specifieke waarde **niet** Wordt opgegeven voor de optionele variabele, dan wordt de variabele genegeerd in de filterevaluatie. (SITES-17051) NORMAAL
+* Bij het uitvoeren van een GraphQL-query op [filterresultaten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) met behulp van optionele variabelen, als een specifieke waarde **niet** Wordt opgegeven voor de optionele variabele, dan wordt de variabele genegeerd in de filterevaluatie. (SITES-17051)
 
 <!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
 
@@ -81,20 +81,20 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6520}
 
-* Met de upgrade van de `org.json` bibliotheek, was er een verandering in hoe de decimale aantallen werden gedeserialiseerd. Voordat ze &#39;standaard&#39; werden omgezet in Dubbels en nu in BigDecimals. In plaats daarvan, zouden de waarden van het meta-gegevensbezit, die door REST API worden opgeslagen, in Dubbel van BigDecimal moeten worden omgezet. (SITES-16857) NORMAAL
+* Met de upgrade van de `org.json` bibliotheek, was er een verandering in hoe de decimale aantallen werden gedeserialiseerd. Voordat ze &#39;standaard&#39; werden omgezet in Dubbels en nu in BigDecimals. In plaats daarvan, zouden de waarden van het meta-gegevensbezit, die door REST API worden opgeslagen, in Dubbel van BigDecimal moeten worden omgezet. (SITES-16857)
 
 #### Core Backend{#sites-core-backend-6520}
 
-* Wanneer Snel publiceren van een inhoudsfragment wordt gebruikt, wordt het verder geladen en niet gepubliceerd. Met andere woorden, Snel publiceren werkt niet voor inhoudsfragmenten na een servicepack-upgrade van AEM 6.5.7 naar AEM 6.5.17. Toen de gebruiker beheerde publicatie probeerde, werkte het. Maar toen ze Snel publiceren probeerden, werd het niet gepubliceerd. Specifiek: `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` heeft het systeem ontstoken. (SITES-17311) BELANGRIJK
-* Inhoudsfragmenten kunnen niet van serienummering worden voorzien met Jackson-exportfunctie: het laden van de pagina wordt onderbroken wanneer er een inhoudsfragment is waarnaar wordt verwezen in een pagina (maakt gebruik van Jackson-exportcode) en elke tag die wordt toegevoegd aan een inhoudsfragment. (SITES-18096) NORMAAL
+* Wanneer Snel publiceren van een inhoudsfragment wordt gebruikt, wordt het verder geladen en niet gepubliceerd. Met andere woorden, Snel publiceren werkt niet voor inhoudsfragmenten na een servicepack-upgrade van AEM 6.5.7 naar AEM 6.5.17. Toen de gebruiker beheerde publicatie probeerde, werkte het. Maar toen ze Snel publiceren probeerden, werd het niet gepubliceerd. Specifiek: `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` heeft het systeem ontstoken. (SITES-17311)
+* Inhoudsfragmenten kunnen niet van serienummering worden voorzien met Jackson-exportfunctie: het laden van de pagina wordt onderbroken wanneer er een inhoudsfragment is waarnaar wordt verwezen in een pagina (maakt gebruik van Jackson-exportcode) en elke tag die wordt toegevoegd aan een inhoudsfragment. (SITES-18096)
 
 #### Kernonderdelen{#sites-core-components-6520}
 
-* Installatie van CIF Core Components-pakket op AEM oorzaken `:type` waarde van bestaande componenten die moeten worden gewijzigd. De wijziging betekent dat ze niet meer worden weergegeven op pagina&#39;s waaraan ze zijn toegevoegd. (SITES-17601) BELANGRIJK
+* Installatie van CIF Core Components-pakket op AEM oorzaken `:type` waarde van bestaande componenten die moeten worden gewijzigd. De wijziging betekent dat ze niet meer worden weergegeven op pagina&#39;s waaraan ze zijn toegevoegd. (SITES-17601)
 
 #### Campagne-integratie{#sites-campaign-integration-6520}
 
-* AEM gebruikte een lijst van gewenste personen-ook gekend als a `whitelist`-vanwege een kwetsbaarheidsrapport. De lijst van gewenste personen verhinderde klanten vereiste functionaliteit te gebruiken. (SITES-16822) KRITIEK
+* AEM gebruikte een lijst van gewenste personen-ook gekend als a `whitelist`-vanwege een kwetsbaarheidsrapport. De lijst van gewenste personen verhinderde klanten vereiste functionaliteit te gebruiken. (SITES-16822)
 
 #### Ervaar fragmenten{#sites-experiencefragments-6520}
 
@@ -110,31 +110,31 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### MSM - Actieve kopieën{#sites-msm-live-copies-6520}
 
-* Een &quot;`Is not modifiable`Er wordt een uitzondering gegenereerd bij het uitrollen van een component. Met name een `org.apache.sling.servlets.post.impl.operations.ModifyOperation` Er is een uitzondering opgetreden tijdens de responsverwerking. (SITES-18809) MAJOR
+* Een &quot;`Is not modifiable`Er wordt een uitzondering gegenereerd bij het uitrollen van een component. Met name een `org.apache.sling.servlets.post.impl.operations.ModifyOperation` Er is een uitzondering opgetreden tijdens de responsverwerking. (SITES-18809)
 * Kan geen wijzigingen doorvoeren in specifieke live kopieën van ervaringsfragmenten. (SITES-17930)
 * Wanneer een gebruiker een annotatie toevoegt aan een component op een blauwdrukpagina en deze vervolgens uitrolt, wordt het aantal annotaties op Live Copy onjuist weergegeven. (SITES-17099)
 * De MSM-uitrolknop van de bovenliggende pagina naar de onderliggende pagina wordt verbroken in de grafische gebruikersinterface met aanraakbediening. Als deze optie is geselecteerd, wordt de volgende fout weergegeven: `Uncaught TypeError: _g.shared is undefined`. (SITES-16991)
 
 #### Pagina-editor{#sites-pageeditor-6520}
 
-* De voorvertoning van de Forms-themaeditor is verbroken. Wanneer Voorvertoning is geselecteerd, is alleen een laadpictogram zichtbaar. (SITES-17164) BLOKKER
+* De voorvertoning van de Forms-themaeditor is verbroken. Wanneer Voorvertoning is geselecteerd, is alleen een laadpictogram zichtbaar. (SITES-17164)
 
 ### [!DNL Assets]{#assets-6520}
 
 * Kan op regels gebaseerde velden niet valideren in de Help van de metagegevenseditor en geeft een foutbericht &quot;Ontbrekende vereiste velden&quot; weer. (ACTIVA-31396)
 * Nadat een PDF naar een andere plaats wordt verplaatst, **[!UICONTROL View Page]** verdwijnt. (ACTIVA-30538)
-* Kan geen afbeelding selecteren met leesmachtigingen. (ACTIVA-32199) NORMAAL
-* Kan de kaartgrootte niet wijzigen in de weergave-instellingen. (ACTIVA-31667) NORMAAL
-* Uploaden mislukt tijdens uploaden van .oft-bestandstype. (ACTIVA-30109) NORMAAL
-* Wanneer u probeert om een gebied van douanemetagegevens als extra kolom aan het rapport toe te voegen, worden checkboxes niet geselecteerd. (ACTIVA-31671) MINDER
-* Het verplaatsen van middelen werkt niet correct in Experience Manager Service Pack 16. (ACTIVA-30598) MINDER
+* Kan geen afbeelding selecteren met leesmachtigingen. (ACTIVA-32199)
+* Kan de kaartgrootte niet wijzigen in de weergave-instellingen. (ACTIVA-31667)
+* Uploaden mislukt tijdens uploaden van .oft-bestandstype. (ACTIVA-30109)
+* Wanneer u probeert om een gebied van douanemetagegevens als extra kolom aan het rapport toe te voegen, worden checkboxes niet geselecteerd. (ACTIVA-31671)
+* Het verplaatsen van middelen werkt niet correct in Experience Manager Service Pack 16. (ACTIVA-30598)
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
 * Wanneer een element naar AEM wordt geüpload, `Update_asset` de workflow wordt geactiveerd. De workflow wordt echter nooit voltooid. De workflow wordt alleen voltooid tot de uploadprocedure voor het product. De volgende stap is de Scene7 batch upload, maar dat proces wordt niet in AEM gehaald. (ACTIVA-30443)
-* U hebt een betere manier nodig om niet-Dynamic Media video&#39;s netjes af te handelen in de Dynamic Media-component. Deze kwestie gaf een uitzondering concretiseren `dynamicmedia_sly.js`. (ACTIVA-31301) BELANGRIJK
-* Voorvertonen werkt voor alle elementen, adaptieve videosets en video&#39;s. Er treedt echter een fout van 403 op voor `.m3u8` bestanden (die overigens nog steeds via openbare koppelingen werken). (ACTIVA-31882) BELANGRIJK
-* De `scene7SmartCropProcessingStatus` status gecorrigeerd. Metagegevens van video voor SmartCrop die worden gebruikt om een fout weer te geven, zelfs wanneer dit gelukt was. (ACTIVA-31255) MINDER
+* U hebt een betere manier nodig om niet-Dynamic Media video&#39;s netjes af te handelen in de Dynamic Media-component. Deze kwestie gaf een uitzondering concretiseren `dynamicmedia_sly.js`. (ACTIVA-31301)
+* Voorvertonen werkt voor alle elementen, adaptieve videosets en video&#39;s. Er treedt echter een fout van 403 op voor `.m3u8` bestanden (die overigens nog steeds via openbare koppelingen werken). (ACTIVA-31882)
+* De `scene7SmartCropProcessingStatus` status gecorrigeerd. Metagegevens van video voor SmartCrop die worden gebruikt om een fout weer te geven, zelfs wanneer dit gelukt was. (ACTIVA-31255)
 
 ### [!DNL Forms]{#forms-6520}
 
@@ -166,7 +166,7 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 
 #### Gemeenschappen {#communities-6520}
 
-* Diagnostische gegevens voor gebruikerssynchronisatie zijn mislukt nadat gebruikerssynchronisatie is voltooid. (NPR-41693) NORMAL
+* Diagnostische gegevens voor gebruikerssynchronisatie zijn mislukt nadat gebruikerssynchronisatie is voltooid. (NPR-41693)
 
 <!-- #### Content distribution{#foundation-content-distribution-6520}
 
@@ -174,12 +174,12 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 
 #### Integrations{#integrations-6520}
 
-* Verwijder alle code en gebiedsdelen van de Search&amp;Promote van de Adobe uit AEM 6.5. (NPR-40856) NORMAL
+* Verwijder alle code en gebiedsdelen van de Search&amp;Promote van de Adobe uit AEM 6.5. (NPR-40856)
 
 #### Lokalisatie{#localization-6520}
 
-* Het label ‘close’ is niet gelokaliseerd in **[!UICONTROL Assets]** > **[!UICONTROL Files]** selecteert u een map en selecteert u vervolgens op de werkbalk de optie **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > lidnaam. (NPR-41705) MAJOR
-* De knopinfo voor de **[!UICONTROL Key Store Password]** op de pagina SSL Setup voor landinstellingen ENG, FRA, KOR, DEU en PTB. (NPR-41367) NORMAL
+* Het label ‘close’ is niet gelokaliseerd in **[!UICONTROL Assets]** > **[!UICONTROL Files]** selecteert u een map en selecteert u vervolgens op de werkbalk de optie **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > lidnaam. (NPR-41705)
+* De knopinfo voor de **[!UICONTROL Key Store Password]** op de pagina SSL Setup voor landinstellingen ENG, FRA, KOR, DEU en PTB. (NPR-41367)
 
 <!-- #### Oak{#oak-6520}
 
@@ -187,7 +187,7 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 
 #### Platform{#foundation-platform-6520}
 
-* Probleem met het integreren van Campagne met AEM die wordt veroorzaakt door /api servlet die niet het correcte schema in href json terugkeert. De reden daarvoor was dat AEM de X-Forward-Proto-header niet ontving, waardoor de aanvraag moest reageren met een HTTP-schema in plaats van met HTTPS. Daarom moet de mogelijkheid worden toegevoegd om de selectie van schema&#39;s op basis van een OSGI-configuratie in- en uit te schakelen. (GRANITE-48454) MAJOR
+* Probleem met het integreren van Campagne met AEM die wordt veroorzaakt door /api servlet die niet het correcte schema in href json terugkeert. De reden daarvoor was dat AEM de X-Forward-Proto-header niet ontving, waardoor de aanvraag moest reageren met een HTTP-schema in plaats van met HTTPS. Daarom moet de mogelijkheid worden toegevoegd om de selectie van schema&#39;s op basis van een OSGI-configuratie in- en uit te schakelen. (GRANITE-48454)
 
 <!-- #### Replication{#foundation-replication-6520}
 
@@ -195,21 +195,21 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 
 #### Sling{#foundation-sling-6520}
 
-* De `org.apache.sling.resourceMerger` bundel 1.4.2 werpt een uitzondering van AEM 6.5, Service Pack 17 en later. The Sling resource merge 1.4.4 should be included in Service Pack 20. (NPR-41630) NORMAL
+* De `org.apache.sling.resourceMerger` bundel 1.4.2 werpt een uitzondering van AEM 6.5, Service Pack 17 en later. The Sling resource merge 1.4.4 should be included in Service Pack 20. (NPR-41630)
 
 #### Vertaling{#foundation-translation-6520}
 
-* Na plaatsing van AEM 6.5 Service Pack 18, was er een kwestie met het lusje van Filters in de Redacteur van de Regels van de Vertaling. Wanneer een Context is geselecteerd en u op Bewerken > Opslaan klikt, verschijnt een dubbel aanhalingsteken als HTML-teken wanneer u dezelfde Context opnieuw opent. In feite werden de vertaalregels niet correct opgeslagen. (NPR-41624) MAJOR
-* Problemen in verband met vertalingen van inhoudsfragmenten, waarbij de vertaalde tekenreeksen van de vertaalprovider worden teruggestuurd naar AEM, maar die bij de `/content/projects` en de inhoudsfragmenten niet bijwerken. (NPR-41516) MAJOR
-* Er wordt een foutbericht weergegeven wanneer u een taalkopie maakt. Deze komt voor op een pagina die een inhoudsfragment heeft dat in een paginabezit van verwijzingen wordt voorzien, gebruikend de modellen van het inhoudsfragment. (NPR-41441) MAJOR
-* De verbindingen in de Fragmenten van de Ervaring worden niet aangepast aan de correcte taal tijdens het Exemplaar van de Taal. In plaats daarvan wijst het fragment van de Ervaring naar de primaire landinstelling. (NPR-41343) NORMAL
+* Na plaatsing van AEM 6.5 Service Pack 18, was er een kwestie met het lusje van Filters in de Redacteur van de Regels van de Vertaling. Wanneer een Context is geselecteerd en u op Bewerken > Opslaan klikt, verschijnt een dubbel aanhalingsteken als HTML-teken wanneer u dezelfde Context opnieuw opent. In feite werden de vertaalregels niet correct opgeslagen. (NPR-41624)
+* Problemen in verband met vertalingen van inhoudsfragmenten, waarbij de vertaalde tekenreeksen van de vertaalprovider worden teruggestuurd naar AEM, maar die bij de `/content/projects` en de inhoudsfragmenten niet bijwerken. (NPR-41516)
+* Er wordt een foutbericht weergegeven wanneer u een taalkopie maakt. Deze komt voor op een pagina die een inhoudsfragment heeft dat in een paginabezit van verwijzingen wordt voorzien, gebruikend de modellen van het inhoudsfragment. (NPR-41441)
+* De verbindingen in de Fragmenten van de Ervaring worden niet aangepast aan de correcte taal tijdens het Exemplaar van de Taal. In plaats daarvan wijst het fragment van de Ervaring naar de primaire landinstelling. (NPR-41343)
 
 #### Gebruikersinterface{#foundation-ui-6520}
 
-* De fout van de console wordt ervaren na een verbetering aan AEM 6.5, Service Pack 18. De fout bevindt zich in de `coralUI3.js` en dit gebeurt wanneer u een vervolgkeuzelijst in AEM selecteert. Het gebeurt met een `onOverlayToggle` gebeurtenis. De fout `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` wordt weergegeven. (NPR-41467) MAJOR
-* In AEM **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Tagging]** > **[!UICONTROL Create]** > **[!UICONTROL Create Tag]**, het invoeren van niet-Latijnse tekens in het dialoogvenster **Titel** veld veroorzaakt de **Naam** veld dat alleen met het afbreekstreepje moet worden gevuld ( `-` ). (NPR-41623) NORMAL
-* Het copyrightjaar is onjuist in het dialoogvenster `About Adobe Experience Manager` in. (NPR-41526) NORMAL
-* Er zijn geen vertalingen **[!UICONTROL Profile Properties]** tekenreeksen bij het bewerken van gebruikersinstellingen. Vindt plaats in alle landinstellingen. (NPR-41365) NORMAL
+* De fout van de console wordt ervaren na een verbetering aan AEM 6.5, Service Pack 18. De fout bevindt zich in de `coralUI3.js` en dit gebeurt wanneer u een vervolgkeuzelijst in AEM selecteert. Het gebeurt met een `onOverlayToggle` gebeurtenis. De fout `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` wordt weergegeven. (NPR-41467)
+* In AEM **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Tagging]** > **[!UICONTROL Create]** > **[!UICONTROL Create Tag]**, het invoeren van niet-Latijnse tekens in het dialoogvenster **Titel** veld veroorzaakt de **Naam** veld dat alleen met het afbreekstreepje moet worden gevuld ( `-` ). (NPR-41623)
+* Het copyrightjaar is onjuist in het dialoogvenster `About Adobe Experience Manager` in. (NPR-41526)
+* Er zijn geen vertalingen **[!UICONTROL Profile Properties]** tekenreeksen bij het bewerken van gebruikersinstellingen. Vindt plaats in alle landinstellingen. (NPR-41365)
 
 <!-- #### WCM{#wcm-6520}
 

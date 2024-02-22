@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
+source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2860'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Geneste configuratiemappen worden niet meer ondersteund en de mappen met het inhoudsfragmentmodel zijn niet meer zichtbaar na de upgrade naar AEM 6.5.18 of naar AEM 6.5.19. (SITES-18110) BELANGRIJK
+* Geneste configuratiemappen worden niet meer ondersteund en de mappen met het inhoudsfragmentmodel zijn niet meer zichtbaar na de upgrade naar AEM 6.5.18 of naar AEM 6.5.19. (SITES-18110)
 * Sommige submappen kunnen niet kiezen uit overerfde modellen voor inhoudsfragmenten. Mappen moeten worden ondersteund zonder een `jcr:content` eigenschap, zelfs als de DAM-mappen die via de gebruikersinterface zijn gemaakt, een dergelijk knooppunt hebben. (SITES-17943)
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6520}
@@ -156,13 +156,7 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Stichting {#foundation-6520}
 
 #### Gemeenschappen {#communities-6520}
 
@@ -181,17 +175,9 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 * Het label ‘close’ is niet gelokaliseerd in **[!UICONTROL Assets]** > **[!UICONTROL Files]** selecteert u een map en selecteert u vervolgens op de werkbalk de optie **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > lidnaam. (NPR-41705)
 * De knopinfo voor de **[!UICONTROL Key Store Password]** op de pagina SSL Setup voor landinstellingen ENG, FRA, KOR, DEU en PTB. (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Platform{#foundation-platform-6520}
 
 * Probleem met het integreren van Campagne met AEM die wordt veroorzaakt door /api servlet die niet het correcte schema in href json terugkeert. De reden daarvoor was dat AEM de X-Forward-Proto-header niet ontving, waardoor de aanvraag moest reageren met een HTTP-schema in plaats van met HTTPS. Daarom moet de mogelijkheid worden toegevoegd om de selectie van schema&#39;s op basis van een OSGI-configuratie in- en uit te schakelen. (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### Sling{#foundation-sling-6520}
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,10 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 >[!NOTE]
 >
+>MSM kan worden gebruikt met zowel pagina&#39;s als [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md) aangezien deze fragmenten onderdeel zijn van een ervaring (pagina).
+
+>[!NOTE]
+>
 >Aspecten van functionaliteit MSM worden gebruikt in verscheidene andere (AEM) eigenschappen van Adobe Experience Manager (bijvoorbeeld, Lanceringen, Catalogus); in deze gevallen wordt het levende exemplaar beheerd door die eigenschap.
 
 ### Gebruikte termen {#terms-used}
@@ -281,7 +285,7 @@ In het vorige voorbeeld: `/content/we-retail/language-masters/en` is de algemene
 
 >[!NOTE]
 >
-De diagrammen en beschrijvingen in deze sectie vertegenwoordigen momentopnamen van potentiële levende exemplaren. Ze zijn niet volledig, maar bieden een overzicht om specifieke kenmerken te benadrukken.
+>De diagrammen en beschrijvingen in deze sectie vertegenwoordigen momentopnamen van potentiële levende exemplaren. Ze zijn niet volledig, maar bieden een overzicht om specifieke kenmerken te benadrukken.
 
 Wanneer u in eerste instantie een live kopie maakt, worden de geselecteerde bronpagina&#39;s in de live kopie op een 1:1-basis weergegeven. Hierna kunnen ook nieuwe bronnen (pagina&#39;s en/of alinea&#39;s) rechtstreeks in de live kopie worden gemaakt. Het is dus handig om op de hoogte te zijn van deze variaties en van de invloed die deze op synchronisatie hebben. Mogelijke composities zijn:
 
@@ -303,7 +307,7 @@ De basisvorm van een kopie van het origineel is:
 
 #### Live kopiëren met pagina&#39;s die niet live zijn gekopieerd {#live-copy-with-non-live-copy-pages}
 
-Wanneer u een live kopie in AEM maakt, kunt u de live kopie van de vertakking zien en door deze vertakking navigeren. Ook kunt u de normale AEM gebruiken voor de live kopie van de vertakking. Dit betekent dat u (of een proces) bronnen (pagina&#39;s, alinea&#39;s of beide) binnen de actieve kopieervertakking kunt maken. Bijvoorbeeld, `myCanadaOnlyProduct`.
+Wanneer u een live kopie in AEM maakt, kunt u de live kopie van de vertakking zien en door deze vertakking navigeren. Ook kunt u de normale AEM gebruiken voor de live kopie van de vertakking. Dit betekent dat u (of een proces) bronnen (pagina&#39;s, alinea&#39;s of beide) binnen de actieve kopieervertakking kunt maken. Bijvoorbeeld: `myCanadaOnlyProduct`.
 
 * Dergelijke bronnen hebben geen live relatie met de bron-/blauwdrukpagina&#39;s en zijn niet gesynchroniseerd.
 * De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in zowel de vertakking van de bron/blauwdruk als de vertakking van de actieve kopie. Voor dergelijke situaties, zie [Conflicten MSM-rollout](/help/sites-administering/msm-rollout-conflicts.md) voor meer informatie .
@@ -323,7 +327,7 @@ Wanneer u (of een proces) een [pagina in een bestaande live kopie](#live-copy-wi
 
 >[!NOTE]
 >
-Als u een pagina binnen de actieve kopieervertakking verplaatst/hernoemt, wordt (intern) dit behandeld als een genestelde levende kopie om AEM toe te laten om de verhoudingen te volgen.
+>Als u een pagina binnen de actieve kopieervertakking verplaatst/hernoemt, wordt (intern) dit behandeld als een genestelde levende kopie om AEM toe te laten om de verhoudingen te volgen.
 
 #### Gestapelde actieve kopieën {#stacked-live-copies}
 
@@ -384,7 +388,7 @@ Een rollout-configuratie bepaalt wanneer en hoe een live kopie wordt gesynchroni
 
   >[!NOTE]
   >
-  U kunt aangepaste handelingen voor uw instantie maken met de Java™ API.
+  >U kunt aangepaste handelingen voor uw instantie maken met de Java™ API.
 
 De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan één levende kopie de zelfde rollout configuratie kan gebruiken. Meerdere [rollout-configuraties](/help/sites-administering/msm-sync.md#installed-rollout-configurations) zijn opgenomen in een standaardinstallatie.
 
@@ -406,13 +410,13 @@ U kunt [een live kopie loskoppelen](/help/sites-administering/msm-livecopy.md#de
 
 >[!CAUTION]
 >
-De handeling Loskoppelen is permanent en niet-omkeerbaar.
+>De handeling Loskoppelen is permanent en niet-omkeerbaar.
 
 Met Loskoppelen verwijdert u permanent de live relatie tussen een live kopie en de bijbehorende blauwdrukpagina. Alle MSM-relevante eigenschappen worden verwijderd uit de live kopie en de live kopieerpagina&#39;s worden een zelfstandige kopie.
 
 >[!NOTE]
 >
-Zie [Een actieve kopie ontkoppelen](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) voor volledige informatie, met inbegrip van de gevolgen voor subpagina&#39;s en bovenliggende pagina&#39;s.
+>Zie [Een actieve kopie ontkoppelen](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) voor volledige informatie, met inbegrip van de gevolgen voor subpagina&#39;s en bovenliggende pagina&#39;s.
 
 ## Standaardstappen voor het gebruik van MSM {#standard-steps-for-using-msm}
 
@@ -440,6 +444,6 @@ MSM verstrekt hulpmiddelen zodat uw implementatie aan de uitzonderlijke ingewikk
 * **Aangepaste synchronisatiehandelingen**
   [Een aangepaste synchronisatiehandeling maken](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) als de geïnstalleerde acties niet voldoen aan uw specifieke toepassingsvereisten. MSM biedt een Java™ API voor het maken van aangepaste synchronisatiehandelingen.
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 De [Aanbevolen MSM-procedures](/help/sites-administering/msm-best-practices.md) Deze pagina bevat belangrijke informatie over uw implementatie.

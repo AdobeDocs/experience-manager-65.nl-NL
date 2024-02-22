@@ -1,15 +1,15 @@
 ---
-title: Ervaringsfragmenten
+title: Ervaar fragmenten
 description: Ervaar fragmenten in Adobe Experience Manager Sites-authoring.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f60795363b977fa74361fb7faa8ba1138c0c4ebf
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 5%
+source-wordcount: '1468'
+ht-degree: 3%
 
 ---
 
-# Ervaringsfragmenten{#experience-fragments}
+# Ervaar fragmenten{#experience-fragments}
 
 Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. Ze kunnen elke gewenste component bevatten.
 
@@ -30,6 +30,7 @@ U kunt Experience Fragments gebruiken:
 
 * Als een auteur onderdelen (een fragment van een ervaring) van een pagina opnieuw wil gebruiken, moet hij of zij dat fragment kopiëren en plakken. Het maken en onderhouden van deze kopiëren/plakken-ervaringen kost veel tijd en is vaak het gevolg van gebruikersfouten. De Fragmenten van de ervaring elimineren de behoefte aan exemplaar/deeg.
 * Om het hoofdloze gebruik-geval CMS te steunen. Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de eindgebruiker.
+* Met [Beheer van meerdere sites (MSM)](/help/sites-administering/msm.md); een ervaringsfragment maakt deel uit van een pagina. Dit geldt zowel voor de afzonderlijke fragmenten als voor de mappen waarin deze zich bevinden.
 
 >[!NOTE]
 >
@@ -37,7 +38,7 @@ U kunt Experience Fragments gebruiken:
 >
 >    `experience-fragments-editors`
 >
-Neem contact op met de systeembeheerder als er problemen optreden.
+>Neem contact op met de systeembeheerder als er problemen optreden.
 
 ## Wanneer moet u ervaringsfragmenten gebruiken? {#when-should-you-use-experience-fragments}
 
@@ -75,13 +76,13 @@ Door mappen te maken kunt u:
 
   >[!NOTE]
   >
-  U hoeft de structuur van uw ervaringsfragmenten niet uit te lijnen met de paginastructuur van uw site.
+  >U hoeft de structuur van uw ervaringsfragmenten niet uit te lijnen met de paginastructuur van uw site.
 
 * [de toegestane sjablonen toewijzen op mapniveau](#configure-allowed-templates-folder)
 
   >[!NOTE]
   >
-  U kunt de [sjablooneditor](/help/sites-authoring/templates.md) om uw eigen sjabloon te maken.
+  >U kunt de [sjablooneditor](/help/sites-authoring/templates.md) om uw eigen sjabloon te maken.
 
 Het WKND-project structureert bepaalde ervaringsfragmenten volgens `Contributors`. De gebruikte structuur illustreert ook hoe andere functies, zoals beheer voor meerdere sites (inclusief taalkopieën), kunnen worden gebruikt.
 
@@ -101,13 +102,13 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 >[!NOTE]
 >
-Het is ook mogelijk om [Toegestane sjablonen voor uw instantie](#configure-allowed-templates-instance), maar deze methode **niet** aanbevolen omdat de waarden tijdens de upgrade kunnen worden overschreven.
+>Het is ook mogelijk om [Toegestane sjablonen voor uw instantie](#configure-allowed-templates-instance), maar deze methode **niet** aanbevolen omdat de waarden tijdens de upgrade kunnen worden overschreven.
 
 ### Configureer de toegestane sjablonen voor uw map {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
-Dit is de aanbevolen methode voor het opgeven van de **Toegestane sjablonen**, omdat de waarden niet worden overschreven bij een upgrade.
+>Dit is de aanbevolen methode voor het opgeven van de **Toegestane sjablonen**, omdat de waarden niet worden overschreven bij een upgrade.
 
 1. Navigeer naar de vereiste **Ervaar fragmenten** map.
 
@@ -125,7 +126,7 @@ Dit is de aanbevolen methode voor het opgeven van de **Toegestane sjablonen**, o
 
    >[!NOTE]
    >
-   Zie [Sjablonen voor ervaringsfragmenten](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor nadere bijzonderheden.
+   >Zie [Sjablonen voor ervaringsfragmenten](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor nadere bijzonderheden.
 
 1. Selecteren **Opslaan en sluiten**.
 
@@ -133,9 +134,9 @@ Dit is de aanbevolen methode voor het opgeven van de **Toegestane sjablonen**, o
 
 >[!CAUTION]
 >
-Het wordt afgeraden de **Toegestane sjablonen** door deze methode, aangezien de gespecificeerde malplaatjes bij verbetering kunnen worden beschreven.
+>Het wordt afgeraden de **Toegestane sjablonen** door deze methode, aangezien de gespecificeerde malplaatjes bij verbetering kunnen worden beschreven.
 >
-Gebruik dit dialoogvenster alleen ter informatie.
+>Gebruik dit dialoogvenster alleen ter informatie.
 
 1. Navigeer naar de vereiste **Ervaar fragmenten** console.
 
@@ -149,7 +150,7 @@ Gebruik dit dialoogvenster alleen ter informatie.
 
    >[!NOTE]
    >
-   Zie [Sjablonen voor ervaringsfragmenten](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor nadere bijzonderheden.
+   >Zie [Sjablonen voor ervaringsfragmenten](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor nadere bijzonderheden.
 
 1. Selecteren **Opslaan**.
 
@@ -179,13 +180,13 @@ Een ervaringsfragment maken:
 
    >[!NOTE]
    >
-   Labels uit de sjabloon Fragmentervaring worden niet samengevoegd met codes op de basispagina van dit ervaringsfragment.
+   >Labels uit de sjabloon Fragmentervaring worden niet samengevoegd met codes op de basispagina van dit ervaringsfragment.
    >
-   Deze zijn volledig gescheiden.
+   >Deze zijn volledig gescheiden.
 
 1. Klikken **Maken**.
 
-   Er wordt een bericht weergegeven. Selecteer:
+   Er wordt een bericht weergegeven. Selecteren:
 
    * **Gereed** om naar de console terug te keren
 
@@ -197,7 +198,7 @@ De Experience Fragment Editor biedt u vergelijkbare mogelijkheden als de normale
 
 >[!NOTE]
 >
-Zie [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md) voor meer informatie over het gebruik van de pagina-editor.
+>Zie [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md) voor meer informatie over het gebruik van de pagina-editor.
 
 De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kunt maken:
 
@@ -259,7 +260,7 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 
    >[!NOTE]
    >
-   Bewerken werkt op de werkbalk van de component als een sneltoets waarmee het fragment in de fragmenteditor wordt geopend.
+   >Bewerken werkt op de werkbalk van de component als een sneltoets waarmee het fragment in de fragmenteditor wordt geopend.
 
 ## Bouwstenen {#building-blocks}
 
@@ -303,7 +304,7 @@ U kunt de bouwsteen naar het alineasysteem van om het even welk fragment slepen,
 
 Details van het fragment kunt u zien:
 
-1. Details worden getoond in alle weergaven van de console voor **Experience-fragmenten**, met de **Lijstweergave**[ inclusief details van een exportbewerking naar het doel](/help/sites-administering/experience-fragments-target.md):
+1. De details worden getoond in alle meningen van **Ervaar fragmenten** console, met de **Lijstweergave** , met inbegrip van nadere gegevens over een [exporteren naar doel](/help/sites-administering/experience-fragments-target.md):
 
    ![ef-03](assets/ef-03.png)
 
@@ -315,10 +316,10 @@ Details van het fragment kunt u zien:
 
    >[!CAUTION]
    >
-   Deze tabbladen worden weergegeven wanneer u **Eigenschappen** van de console van de Fragmenten van de Ervaring.
+   >Deze tabbladen worden weergegeven wanneer u **Eigenschappen** van de console van de Fragmenten van de Ervaring.
    >
    >
-   Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) weergegeven.
+   >Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) weergegeven.
 
    ![ef-05](assets/ef-05.png)
 
@@ -335,7 +336,7 @@ Details van het fragment kunt u zien:
 
       * **Aantal pagina&#39;s dat dit fragment gebruikt** - alleen informatie
 
-   * **Cloud Services**
+   * **Cloud Servicen**
 
       * **Cloud Configuration**
       * **Configuraties van Cloud Servicen**
@@ -356,7 +357,7 @@ Met de `.plain.` in de URL hebt, kunt u vanuit de browser toegang krijgen tot de
 
 >[!NOTE]
 >
-Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, waarbij alleen de URL wordt gebruikt](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+>Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, waarbij alleen de URL wordt gebruikt](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exporteren van ervaringsfragmenten {#exporting-experience-fragments}
 

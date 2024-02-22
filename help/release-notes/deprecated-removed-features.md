@@ -2,7 +2,7 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3443d331815ffb462890282a49e658693f157af0
+source-git-commit: a9b8980a5e6f0488f10c408cd18b83f3ff225058
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 2%
@@ -55,7 +55,8 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | Ontwikkelaars | `Granite.Sling.js` clientbibliotheek. De Adobe is niet van plan om de clientbibliotheek Granite.Sling.js die als onderdeel van de distributie (QuickStart) wordt verzonden, verder te verbeteren. | Adobe raadt klanten die vertrouwen op de mogelijkheid van de bibliotheek om hun code te vernieuwen aan om deze niet meer te gebruiken. |  |
 | Ontwikkelaars | JavaScript-clientbibliotheken comprimeren/beperken met YUI. Adobe is niet van plan de YUI-bibliotheek verder bij te werken. Tot AEM 6.4 was YUI standaard in staat om JavaScript te miniateren met de optie om over te schakelen op Google Closure Compiler (GCC). Vanaf AEM 6.5 is GCC standaard. | Adobe raadt klanten aan die een upgrade naar AEM 6.5 uitvoeren om voor hun implementatie over te schakelen op GCC |  |
 | Ontwikkelaars | Klassieke UI Dialog Editor in CRXDE Lite. De Adobe is niet van plan om de Klassieke Redacteur van de Dialoog UI verder te verbeteren die als deel van de distributie (QuickStart) wordt verscheept | Er is geen vervanging beschikbaar. |  |
-| Forms | AEM Forms-integratie met AEM Mobile is afgekeurd. | Er is geen vervanging beschikbaar. |  | Ontwikkelaars | Klassieke UI Dialog Editor in CRXDE Lite. De Adobe is niet van plan om de Klassieke Redacteur van de Dialoog UI verder te verbeteren die als deel van de distributie (QuickStart) wordt verscheept | Er is geen vervanging beschikbaar. |  |
+| Forms | AEM Forms-integratie met AEM Mobile is afgekeurd. | Er is geen vervanging beschikbaar. |
+| Ontwikkelaars | Klassieke UI Dialog Editor in CRXDE Lite. De Adobe is niet van plan om de Klassieke Redacteur van de Dialoog UI verder te verbeteren die als deel van de distributie (QuickStart) wordt verscheept | Er is geen vervanging beschikbaar. |  |
 | Ontwikkelaars | Lodash-/onderstrepingsclientbibliotheek. De Adobe is niet van plan de Lodash/underscore-clientbibliotheek die als onderdeel van de distributie (QuickStart) wordt verzonden, verder te onderhouden en bij te werken. | De Adobe adviseert klanten die nog Lodash/onderstrepingsteken voor hun code vereisen om het in hun basis van de projectcode toe te voegen. |  |
 
 ## Verwijderde functies {#removed-features}

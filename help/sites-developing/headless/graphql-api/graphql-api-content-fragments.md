@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
+source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
 workflow-type: tm+mt
-source-wordcount: '4708'
+source-wordcount: '4796'
 ht-degree: 0%
 
 ---
@@ -523,6 +523,53 @@ Het volgende voorbeeld toont een volledige vraag aan die alle personen filtert d
     items {
       lastName
       firstName
+    }
+  }
+}
+```
+
+Wanneer u een GraphQL-query uitvoert met behulp van optionele variabelen, als een specifieke waarde **niet** gegeven voor de facultatieve variabele, dan zal de variabele in de filterevaluatie worden genegeerd. Dit betekent dat zoekresultaten alle waarden bevatten, beide `null` en niet `null`, voor de eigenschap met betrekking tot de filtervariabele.
+
+>[!NOTE]
+>
+>Indien een `null` waarde is *expliciet* opgegeven voor een dergelijke variabele, komt het filter alleen overeen `null` waarden voor de bijbehorende eigenschap.
+
+In de query hieronder ziet u bijvoorbeeld waar geen waarde is opgegeven voor de eigenschap `lastName`:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+Alle auteurs worden geretourneerd:
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
     }
   }
 }

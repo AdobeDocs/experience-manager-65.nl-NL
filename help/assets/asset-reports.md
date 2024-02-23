@@ -6,14 +6,14 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1089'
 ht-degree: 7%
 
 ---
 
-# Rapporten over assets {#asset-reports}
+# Elementen rapporteren {#asset-reports}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -47,7 +47,7 @@ Ga als volgt te werk om rapporten te genereren:
 * Downloaden
 * Verlopen
 * Wijziging
-* Publicatie
+* Publiceren
 * [!DNL Brand Portal] publish
 * Schijfgebruik
 * Bestanden
@@ -115,7 +115,8 @@ Ga als volgt te werk om rapporten te genereren:
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 1. Op de [!UICONTROL Asset Reports] pagina, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], of [!UICONTROL Scheduled]. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op **[!UICONTROL View]** op de werkbalk.
 
-   ![Een gegenereerd rapport](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   [Rapportstatus](assets/report-status.JPG)
 
    Klikken **[!UICONTROL Download]** van de toolbar om het rapport in CSV formaat te downloaden.
 
@@ -127,7 +128,7 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 * Downloaden
 * Verlopen
 * Wijziging
-* Publicatie
+* Publiceren
 * [!DNL Brand Portal] publish
 * Bestanden
 

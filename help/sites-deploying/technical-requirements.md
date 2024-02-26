@@ -3,9 +3,9 @@ title: Technische vereisten
 description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: fbf056b6b7dcbfcaa27744672c45a87316c5f761
+source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
@@ -141,29 +141,29 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 >[!NOTE]
 >
-Zie [Gemeenschappen inzetten](/help/communities/deploy-communities.md) voor aanvullende informatie over de AEM Communities-capaciteit.
+>Zie [Gemeenschappen inzetten](/help/communities/deploy-communities.md) voor aanvullende informatie over de AEM Communities-capaciteit.
 
 >[!NOTE]
 >
-MongoDB is een software-programma van derden en is niet opgenomen in het AEM licentiepakket. Zie de klasse [Beleid voor MongoDB-licenties](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
+>MongoDB is een software-programma van derden en is niet opgenomen in het AEM licentiepakket. Zie de klasse [Beleid voor MongoDB-licenties](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
 >
-Om optimaal gebruik te maken van uw AEM implementatie met MongoDB, raadt Adobe aan een licentie te verlenen voor de versie van MongoDB Enterprise om te profiteren van professionele ondersteuning. Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie .
+>Om optimaal gebruik te maken van uw AEM implementatie met MongoDB, raadt Adobe aan een licentie te verlenen voor de versie van MongoDB Enterprise om te profiteren van professionele ondersteuning. Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie .
 >
-De licentie bevat een standaard replicaset, die bestaat uit één primaire en twee secundaire instanties die kunnen worden gebruikt voor de auteur of de publicatieimplementaties.
+>De licentie bevat een standaard replicaset, die bestaat uit één primaire en twee secundaire instanties die kunnen worden gebruikt voor de auteur of de publicatieimplementaties.
 >
-Als u zowel de auteur als de publicatie op MongoDB wilt uitvoeren, moet u twee aparte licenties aanschaffen.
+>Als u zowel de auteur als de publicatie op MongoDB wilt uitvoeren, moet u twee aparte licenties aanschaffen.
 >
-De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM.
+>De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM.
 >
-Zie de [pagina](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) MongoDB voor Adobe Experience Manager voor meer informatie.
+>Zie de [pagina](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) MongoDB voor Adobe Experience Manager voor meer informatie.
 
 >[!NOTE]
 >
-Ondersteunde relationele databases zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM-licentiepakket.
+>Ondersteunde relationele databases zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM-licentiepakket.
 >
-Om AEM 6.5 met een gesteunde relationele gegevensbestand in werking te stellen, wordt een afzonderlijk steuncontract met een gegevensbestandverkoper vereist. De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
+>Om AEM 6.5 met een gesteunde relationele gegevensbestand in werking te stellen, wordt een afzonderlijk steuncontract met een gegevensbestandverkoper vereist. De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
 >
-**De meeste relationele gegevensbanken worden momenteel ondersteund in niveau-R op AEM 6.5, dat vergezeld gaat van steuncriteria en een steunprogramma zoals vermeld in de bovenstaande beschrijving van niveau-R.**
+>**De meeste relationele gegevensbanken worden momenteel ondersteund in niveau-R op AEM 6.5, dat vergezeld gaat van steuncriteria en een steunprogramma zoals vermeld in de bovenstaande beschrijving van niveau-R.**
 
 ### Servlet-engines/toepassingsservers {#servlet-engines-application-servers}
 
@@ -208,12 +208,12 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
    >[!NOTE]
    >
-   Voor Linux-gebaseerde servers (OSGI- en JEE-stack) vereist de invoegtoepassing AEM Forms runtime-afhankelijkheden, zoals:
-   * glibc.x86_64 (2.17-196)
-   * libX11.x86_64 (1.6.7-4)
-   * zlib.x86-64 (1.2.7-17)
-   * libxcb.x86_64 (1.13-1.el7)
-   * libXau.x86_64 (1.0.8-2.1.el7)
+   >Voor Linux-gebaseerde servers (OSGI- en JEE-stack) vereist de invoegtoepassing AEM Forms runtime-afhankelijkheden, zoals:
+   >* glibc.x86_64 (2.17-196)
+   >* libX11.x86_64 (1.6.7-4)
+   >* zlib.x86-64 (1.2.7-17)
+   >* libxcb.x86_64 (1.13-1.el7)
+   >* libXau.x86_64 (1.0.8-2.1.el7)
 
 1. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
 1. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
@@ -221,13 +221,13 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 >[!NOTE]
 >
-Als u AEM Forms 6.5 installeert, zorg ervoor u volgende 32 beetje Microsoft® Visuele C++ redistributable geïnstalleerd hebt.
+>Als u AEM Forms 6.5 installeert, zorg ervoor u volgende 32 beetje Microsoft® Visuele C++ redistributable geïnstalleerd hebt.
 >
-* Microsoft® Visual C++ 2008 herdistribueerbaar
-* Microsoft® Visual C++ 2010 herdistribueerbaar
-* Microsoft® Visual C++ 2012 herdistribueerbaar
-* Microsoft® Visual C++ 2013 herdistribueerbaar
-* Microsoft® Visual C++ 2019 (VC14.28 of groter) herdistribueerbaar
+>* Microsoft® Visual C++ 2008 herdistribueerbaar
+>* Microsoft® Visual C++ 2010 herdistribueerbaar
+>* Microsoft® Visual C++ 2012 herdistribueerbaar
+>* Microsoft® Visual C++ 2013 herdistribueerbaar
+>* Microsoft® Visual C++ 2019 (VC14.28 of groter) herdistribueerbaar
 
 
 ### Virtuele en cloud computeromgevingen {#virtual-cloud-computing-environments}
@@ -271,9 +271,9 @@ De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
 
 >[!NOTE]
 >
-**Ondersteuning voor browsers met snelle releasecycli:**
+>**Ondersteuning voor browsers met snelle releasecycli:**
 >
-De release van Mozilla Firefox, Google Chrome en Microsoft® Edge wordt elke paar maanden bijgewerkt. De Adobe heeft zich ertoe verbonden updates voor Adobe Experience Manager beschikbaar te stellen om het supportniveau te handhaven zoals hieronder vermeld in de komende versies van deze browsers.
+>De release van Mozilla Firefox, Google Chrome en Microsoft® Edge wordt elke paar maanden bijgewerkt. De Adobe heeft zich ertoe verbonden updates voor Adobe Experience Manager beschikbaar te stellen om het supportniveau te handhaven zoals hieronder vermeld in de komende versies van deze browsers.
 
 <table>
  <tbody>
@@ -377,9 +377,9 @@ Als Dynamic Media ingeschakeld is, zijn de volgende aanvullende technische voors
 
 >[!NOTE]
 >
-Deze systeemvereisten **alleen** toepassen als u Dynamic Media - Hybride modus gebruikt; Dynamic Media - Hybride modus heeft een ingebouwde imageserver, die alleen op bepaalde besturingssystemen is gecertificeerd.
+>Deze systeemvereisten **alleen** toepassen als u Dynamic Media - Hybride modus gebruikt; Dynamic Media - Hybride modus heeft een ingebouwde imageserver, die alleen op bepaalde besturingssystemen is gecertificeerd.
 >
-Voor Dynamic Media-klanten die de Dynamic Media-Scene7-modus uitvoeren (dat wil zeggen: **dynamicmedia_scene7** (run mode), zijn er geen extra systeemvereisten; slechts de zelfde systeemvereisten zoals AEM. Dynamic Media - Scene7-modusarchitectuur maakt gebruik van de op cloud gebaseerde beeldservice en niet van de service die is ingesloten in AEM.
+>Voor Dynamic Media-klanten die de Dynamic Media-Scene7-modus uitvoeren (dat wil zeggen: **dynamicmedia_scene7** (run mode), zijn er geen extra systeemvereisten; slechts de zelfde systeemvereisten zoals AEM. Dynamic Media - Scene7-modusarchitectuur maakt gebruik van de op cloud gebaseerde beeldservice en niet van de service die is ingesloten in AEM.
 
 #### Hardware {#hardware}
 
@@ -399,27 +399,27 @@ Als u Dynamic Media op Linux® gebruikt, moet aan de volgende voorwaarden worden
 
 >[!NOTE]
 >
-Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF-8`, werkt Dynamic Media niet. Om te zien wat zijn waarde is, typ &quot;scène&quot;bij de bevelherinnering. Als het niet behoorlijk wordt geplaatst, dan plaats de LC_CTYPE milieuvariabele aan het lege koord door &quot;uitvoer LC_CTYPE=&quot;te typen alvorens AEM in werking te stellen.
+>Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF-8`, werkt Dynamic Media niet. Om te zien wat zijn waarde is, typ &quot;scène&quot;bij de bevelherinnering. Als het niet behoorlijk wordt geplaatst, dan plaats de LC_CTYPE milieuvariabele aan het lege koord door &quot;uitvoer LC_CTYPE=&quot;te typen alvorens AEM in werking te stellen.
 
 >[!NOTE]
 >
-**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. Als u dit probleem wilt verhelpen, bewerkt u de **/etc/selinux/config** en wijzig de SELinux-waarde van:
+>**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. Als u dit probleem wilt verhelpen, bewerkt u de **/etc/selinux/config** en wijzig de SELinux-waarde van:
 >
-`SELINUX=enforcing` **tot** `SELINUX=disabled`
+>`SELINUX=enforcing` **tot** `SELINUX=disabled`
 
 >[!NOTE]
 >
-**NUMA-architectuur:** systemen met processors met AMD64 en Intel® EM64T zijn typisch geconfigureerd als numa-platforms (non-uniform memory architecture). Dat wil dus dat de kernel tijdens het opstarten meerdere geheugenknooppunten bouwt in plaats van één geheugenknooppunt op te bouwen.
+>**NUMA-architectuur:** systemen met processors met AMD64 en Intel® EM64T zijn typisch geconfigureerd als numa-platforms (non-uniform memory architecture). Dat wil dus dat de kernel tijdens het opstarten meerdere geheugenknooppunten bouwt in plaats van één geheugenknooppunt op te bouwen.
 >
-De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
+>De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
 >
-Daarom adviseert de Adobe dat als u zulk een systeem in werking stelt dat u NUMA gebruikend **numa=off** laarsoptie om de kernel te vermijden die deze processen doden.
+>Daarom adviseert de Adobe dat als u zulk een systeem in werking stelt dat u NUMA gebruikend **numa=off** laarsoptie om de kernel te vermijden die deze processen doden.
 
 >[!NOTE]
 >
-**Serverhostnaam moet oplossen:** zorg ervoor dat de hostnaam van de server kan worden omgezet in een IP-adres. Als dat niet mogelijk is, voeg je de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
+>**Serverhostnaam moet oplossen:** zorg ervoor dat de hostnaam van de server kan worden omgezet in een IP-adres. Als dat niet mogelijk is, voeg je de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
 >
-`<ip address> <fully qualified hostname>`
+>`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
@@ -504,25 +504,25 @@ Voor Windows x86:
 
 >[!NOTE]
 >
-PDF Generator ondersteunt alleen de Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+>PDF Generator ondersteunt alleen de Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
 >
-Daarnaast
+>Daarnaast
 >
-* PDF Generator vereist een 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
-* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
-* PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie naar het Windows-besturingssysteem.
-* PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux®-besturingssysteem.
-* PDF Generator biedt geen ondersteuning voor Microsoft® Office 365.
-* De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
-* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. Programmaticaal toegang tot de gebundelde versie slechts met AEM Forms, tijdens de duur van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator. Zie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
-* PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
-* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019. U kunt Microsoft® Visio 2016 blijven gebruiken voor conversie `.VSD` en `.VSDX` bestanden.
-* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019. U kunt Microsoft® Project 2016 blijven gebruiken om te converteren `.VSD` en `.VSDX` bestanden.
+>* PDF Generator vereist een 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
+>* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
+>* PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie naar het Windows-besturingssysteem.
+>* PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux®-besturingssysteem.
+>* PDF Generator biedt geen ondersteuning voor Microsoft® Office 365.
+>* De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
+>* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. Programmaticaal toegang tot de gebundelde versie slechts met AEM Forms, tijdens de duur van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator. Zie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
+>* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019. U kunt Microsoft® Visio 2016 blijven gebruiken voor conversie `.VSD` en `.VSDX` bestanden.
+>* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019. U kunt Microsoft® Project 2016 blijven gebruiken om te converteren `.VSD` en `.VSDX` bestanden.
 >
 
 ### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server of Microsoft® Windows® 10
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 of Windows® 11
 * 1 GHz of snellere processor met ondersteuning voor PAE, NX en SSE2.
 * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
 * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem

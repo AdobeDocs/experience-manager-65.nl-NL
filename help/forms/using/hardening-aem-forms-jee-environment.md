@@ -6,9 +6,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7662'
+source-wordcount: '7608'
 ht-degree: 0%
 
 ---
@@ -464,6 +464,10 @@ U kunt een niet-beheerdergebruiker toelaten om PDF Generator te gebruiken. Norma
 1. Stel waarde van de variabele in op TRUE.
 
 1. Start de AEM Forms-instantie opnieuw.
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ## AEM Forms configureren op JEE voor toegang buiten de onderneming {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

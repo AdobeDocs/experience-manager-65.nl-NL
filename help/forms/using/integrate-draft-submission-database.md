@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1452'
 ht-degree: 0%
 
 ---
@@ -309,6 +309,10 @@ Voer de volgende stappen uit op alle auteur- en publicatieinstanties om het best
 1. Klikken **[!UICONTROL Choose File]** en bladert u om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
 1. Klik op **[!UICONTROL Install or Update]**. Start de server opnieuw als de bewerking is voltooid.
 1. (*Alleen Windows*) Schakel de systeemfirewall van uw besturingssysteem uit.
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ## Voorbeeldcode voor poortgegevens en metagegevensservice voor formulieren {#sample-code-for-forms-portal-data-and-metadata-service}
 

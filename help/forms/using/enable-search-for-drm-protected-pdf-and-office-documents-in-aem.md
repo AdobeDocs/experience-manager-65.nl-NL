@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ Een veilige verbinding laat naadloze stroom van informatie tussen AEM Forms op J
    * **Servicenaam**: Voeg de RightsManagementService toe aan de lijst met opgegeven services.
 
    Klikken **Opslaan**. AEM is ingeschakeld om te zoeken in documenten met beveiliging van PDF en Microsoft Office
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ## Een voorbeelddocument met een beleid beveiligde PDF of Microsoft Office-document indexeren {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

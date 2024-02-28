@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '16882'
+source-wordcount: '16917'
 ht-degree: 0%
 
 ---
@@ -594,6 +594,10 @@ U kunt de volgende configuratiewaarde toevoegen in het cknfastrc-bestand, dat zi
 ```
 
 Nadat u deze configuratiewaarde aan het cknfastrc dossier toevoegt, kan de nieuwe referentie worden gebruikt zonder de J2EE toepassingsserver opnieuw te beginnen.
+
+    >[!OPMERKING]
+    >
+    > U wordt aangeraden de SDK opnieuw te starten met de opdracht Ctrl + C. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 **De handtekening wordt niet vertrouwd**
 

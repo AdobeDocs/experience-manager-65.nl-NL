@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,10 @@ Ga als volgt te werk voordat u de Forms Server opnieuw start na een herstelbewer
 1. Zorg ervoor dat geen processen van of interne of externe bronnen zoals het Web, de ZEEP, of EJB procesinitiators in werking worden gesteld tot de normale verrichting van het systeem wordt bevestigd.
 
 Als de hoofddatabase voor AEM formulieren wordt verplaatst of gewijzigd, raadpleegt u de installatiegidsen die relevant zijn voor uw toepassingsserver voor informatie over het bijwerken van de databaseverbindingsgegevens voor de AEM formuliergegevensbronnen IDP_DS en EDC_DS.
+
+>[!NOTE]
+> 
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ### De hostnaam of het IP-adres van de AEM formulieren wijzigen {#changing-the-aem-forms-hostname-or-ip-address}
 

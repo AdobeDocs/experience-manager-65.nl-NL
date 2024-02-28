@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,10 @@ Zorg ervoor dat u [Compatibiliteitspakket AEM](https://helpx.adobe.com/aem-forms
 
 1. Start de server opnieuw nadat de logbestanden zijn gestabiliseerd.
 1. Gebruik het migratiehulpprogramma om uw middelen compatibel te maken met 6.5.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
    Zie voor meer informatie [migratiehulpprogramma](../../forms/using/migration-utility.md).
 

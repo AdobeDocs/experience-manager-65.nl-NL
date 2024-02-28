@@ -5,13 +5,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
-source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
+exl-id: bd58099c-08cd-4056-afb6-a5935454429a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
-
 
 # Kan de Output-service, Forms-service of Document of Record-service (DoR) niet gebruiken {#unable-to-use-output-service-forms-service-or-document-of-record-service}
 
@@ -26,6 +26,10 @@ Het probleem oplossen:
 1. Stop uw AEM 6.5 Forms-exemplaar.
 1. Download en installeer de [64-bits versie van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waarop AEM 6.5 Forms is geïnstalleerd.
 1. Start de AEM Forms-server opnieuw.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 
 >[!NOTE]

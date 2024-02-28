@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7812'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,13 @@ De service PDF genereren gebruikt native toepassingen om de volgende bestandsind
 
 >[!NOTE]
 >
-De dienst Generate PDF steunt niet de versies met 64 bits van OpenOffice.
+>De dienst Generate PDF steunt niet de versies met 64 bits van OpenOffice.
 
 * Adobe Photoshop® CS2 voor conversie van PSD (alleen Windows)
 
 >[!NOTE]
 >
-Photoshop CS3 en CS4 worden niet ondersteund omdat ze Windows Server 2003 of Windows Server 2008 niet ondersteunen.
+>Photoshop CS3 en CS4 worden niet ondersteund omdat ze Windows Server 2003 of Windows Server 2008 niet ondersteunen.
 
 * Adobe FrameMaker® 7.2 en 8 voor conversie van FM (alleen Windows)
 * Adobe PageMaker® 7.0 om PMD, PM6, P65, en PM (Vensters slechts) om te zetten
@@ -82,7 +82,7 @@ U kunt deze taken verwezenlijken gebruikend de Generate dienst van de PDF:
 
 >[!NOTE]
 >
-Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Word-documenten converteren naar PDF-documenten {#converting-word-documents-to-pdf-documents}
 
@@ -90,11 +90,11 @@ In deze sectie wordt beschreven hoe u met de API PDF genereren een Microsoft Wor
 
 >[!NOTE]
 >
-Zie voor meer informatie over extra bestandsindelingen [Ondersteuning toevoegen voor extra eigen bestandsindelingen](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+>Zie voor meer informatie over extra bestandsindelingen [Ondersteuning toevoegen voor extra eigen bestandsindelingen](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
-Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -202,7 +202,7 @@ Converteer een Microsoft Word-document naar een PDF-document met de Generate PDF
 
    >[!NOTE]
    >
-   Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Generate PDF client.
 
@@ -260,7 +260,7 @@ In deze sectie wordt beschreven hoe u de PDF API genereren kunt gebruiken om HTM
 
 >[!NOTE]
 >
-Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -359,7 +359,7 @@ HTML-inhoud converteren naar een PDF-document met de Generate PDF API (webservic
 
    >[!NOTE]
    >
-   Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Generate PDF client.
 
@@ -410,7 +410,7 @@ In deze sectie wordt beschreven hoe u met de API voor het genereren van PDF Java
 
 >[!NOTE]
 >
-Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst Generate PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -510,7 +510,7 @@ Een PDF-document converteren naar een RTF-bestand met de Generate PDF API (webse
 
    >[!NOTE]
    >
-   Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Generate PDFf client.
 
@@ -845,7 +845,7 @@ Als u een script maakt voor een native toepassing die voorheen niet werd onderst
 
 >[!NOTE]
 >
-In dit verband betekent de term &quot;aanvullend&quot; de inhoud van de `appmon.[applicationname].addition.[locale].xml` bestand. Met een dergelijk bestand worden overschrijvingen en toevoegingen aan het XML-bestand van het dialoogvenster opgegeven.
+>In dit verband betekent de term &quot;aanvullend&quot; de inhoud van de `appmon.[applicationname].addition.[locale].xml` bestand. Met een dergelijk bestand worden overschrijvingen en toevoegingen aan het XML-bestand van het dialoogvenster opgegeven.
 
 U kunt ook het XML-bestand met aanvullende dialoogvensters wijzigen voor een native toepassing voor de volgende doeleinden:
 
@@ -858,7 +858,7 @@ De naam van het XML-bestand van het extra dialoogvenster moet de indeling gebrui
 
 >[!NOTE]
 >
-Geen van de generische toepassingen die in het configuratiebestand native2pdfconfig.xml zijn opgegeven, hebben een primair XML-bestand voor de dialoog. De sectie [Ondersteuning voor een eigen bestandsindeling toevoegen of wijzigen](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) worden deze specificaties beschreven.
+>Geen van de generische toepassingen die in het configuratiebestand native2pdfconfig.xml zijn opgegeven, hebben een primair XML-bestand voor de dialoog. De sectie [Ondersteuning voor een eigen bestandsindeling toevoegen of wijzigen](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) worden deze specificaties beschreven.
 
 Volgorde `windowList` elementen die als onderliggende elementen in een `window` element. (Zie [De elementen window en windowList ordenen](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -878,7 +878,7 @@ Deze procedure verklaart hoe te om het Generate de dienstconfiguratiedossier van
 
 >[!NOTE]
 >
-De naam van de toepassing wordt opgegeven als de waarde van `GenericApp` element `name` kenmerk. Deze waarde moet exact overeenkomen met de corresponderende naam die is opgegeven in het script dat u voor die toepassing ontwikkelt. Evenzo geldt dat de `GenericApp` element `displayName` kenmerk moet exact overeenkomen met het overeenkomstige script `expectedWindow` vensterbijschrift. Deze gelijkwaardigheid wordt geëvalueerd nadat eventuele reguliere expressies in het dialoogvenster `displayName` of `caption` kenmerken.
+>De naam van de toepassing wordt opgegeven als de waarde van `GenericApp` element `name` kenmerk. Deze waarde moet exact overeenkomen met de corresponderende naam die is opgegeven in het script dat u voor die toepassing ontwikkelt. Evenzo geldt dat de `GenericApp` element `displayName` kenmerk moet exact overeenkomen met het overeenkomstige script `expectedWindow` vensterbijschrift. Deze gelijkwaardigheid wordt geëvalueerd nadat eventuele reguliere expressies in het dialoogvenster `displayName` of `caption` kenmerken.
 
 In dit voorbeeld, werden de standaardconfiguratiegegevens die met de Generate dienst van PDF worden verstrekt gewijzigd om te specificeren dat de Blocnote (niet Microsoft Word) zou moeten worden gebruikt om dossiers met de dossier te verwerken - noem uitbreiding .txt. Vóór deze wijziging is Microsoft Word opgegeven als de oorspronkelijke toepassing die dergelijke bestanden moet verwerken.
 
@@ -910,6 +910,10 @@ In dit voorbeeld, werden de standaardconfiguratiegegevens die met de Generate di
 Maak een omgevingsvariabele die de locatie opgeeft van het uitvoerbare bestand van de native toepassing. De variabele moet de notatie gebruiken `[applicationname]_PATH`, waarbij *toepassingsnaam* moet exact overeenkomen met de toepassingsnaam die wordt gebruikt in het XML-configuratiebestand en in het script, en waarbij het pad het pad naar het uitvoerbare bestand bevat met dubbele aanhalingstekens. Een voorbeeld van een dergelijke omgevingsvariabele is `Photoshop_PATH`.
 
 Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opstarten waarop de service PDF genereren is geïmplementeerd.
+
+>[!NOTE]
+>
+> U wordt aangeraden de SDK-server opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK-server met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 **Een systeemvariabele maken in de Windows XP-omgeving**
 

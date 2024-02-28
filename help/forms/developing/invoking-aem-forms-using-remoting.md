@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4593'
+source-wordcount: '4604'
 ht-degree: 0%
 
 ---
@@ -619,7 +619,9 @@ U kunt beheerconsole gebruiken om op te geven of documenten veilig zijn wanneer 
 
 >[!NOTE]
 >
-Als u AEM Forms wilt configureren voor het accepteren van onbeveiligde documenten, selecteert u de optie Niet-beveiligde documenten mogen worden geüpload vanuit Flex-toepassingen. Start vervolgens een toepassing of service opnieuw om ervoor te zorgen dat de instelling van kracht wordt.
+* Als u AEM Forms wilt configureren voor het accepteren van onbeveiligde documenten, selecteert u de optie Niet-beveiligde documenten mogen worden geüpload vanuit Flex-toepassingen. Start vervolgens een toepassing of service opnieuw om ervoor te zorgen dat de instelling van kracht wordt.
+* Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+
 
 ### Snel starten: Een kortstondig proces aanroepen door een beveiligd document door te geven met Verwijderen {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

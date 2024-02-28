@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1368'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Voordat u de mogelijkheden voor interactief communicatie- en correspondentiebehe
   <tr>
    <td>libX11</td>
    <td>libXrender</td>
-   <td>Libxrandr</td>
+   <td>libXrandr</td>
    <td>libXinerama</td>
   </tr>
  </tbody>
@@ -98,6 +98,11 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    U kunt het pakket ook downloaden via de directe koppeling in het [artikel over afstandsverklaringen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) van AEM Forms.
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw op te starten. **Start de server niet meteen opnieuw op.** Voordat u de AEM Forms Server stopt, moet u wachten tot de GEREGISTREERDE en ServiceEvent UNREGISTERED-berichten niet meer voorkomen in het [bestand AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+
 1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
 ## Configuratie na installatie {#post-installation-configurations}
@@ -137,7 +142,7 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Compatibiliteitspakket installeren {#install-compatibility-package}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM 6.5 Forms tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u de [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+Interactieve communicatie is de standaard en aanbevolen methode voor het maken van klantcommunicatie in AEM 6.5-formulieren. Als u een upgrade hebt uitgevoerd of gemigreerd vanuit een vorige versie en van plan bent om brieven te blijven gebruiken (Correspondence Management), installeert u het [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
 Met het AEMFD-compatibiliteitspakket kunt u de volgende assets gebruiken uit AEM 6.4 Forms, AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.5-formulieren:
 
@@ -166,7 +171,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeli
 
 Uw klanten zullen waarschijnlijk een interactieve mededeling verlaten als de ervaring het levert niet aansprekend is. Hoewel het voor de klanten frustrerend is, keert het ook het steunvolume en de kosten voor uw organisatie terug. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 
-AEM-formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Experience Cloud-oplossing, voor het leveren van persoonlijke en aantrekkelijke klantervaringen op meerdere digitale kanalen. Adobe Target gebruiken om interactieve communicatie aan te passen, [Adobe Target integreren met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Experience Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Adobe Target gebruiken om interactieve communicatie aan te passen, [Adobe Target integreren met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### SSL-communicatie configureren voor formuliergegevensmodel  {#configure-ssl-communcation-for-form-data-model}
 
@@ -176,7 +181,7 @@ U kunt SSL-communicatie inschakelen voor het formuliergegevensmodel. Als u SSL-c
 
 ## Volgende stappen {#next-steps}
 
-U hebt een omgeving geconfigureerd voor het gebruik van de mogelijkheden voor interactieve communicatie en correspondentiebeheer. De volgende stappen zijn:
+U hebt een omgeving geconfigureerd voor het gebruik van interactieve communicatie- en correspondentiebeheermogelijkheden. Nu zijn de stappen voor het gebruik van deze mogelijkheid:
 
 * [Overzicht van correspondentiebeheer](/help/forms/using/interactive-communications-overview.md)
 

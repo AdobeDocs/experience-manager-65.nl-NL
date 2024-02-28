@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,7 @@ U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot st
 1. Maak een map in AEM Digital Asset Manager en upload de met beleid beveiligde PDF-documenten naar de nieuwe map.
 
    Nu kunt u de documenten met een beleidsbeveiliging doorzoeken met AEM zoekopdracht.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.

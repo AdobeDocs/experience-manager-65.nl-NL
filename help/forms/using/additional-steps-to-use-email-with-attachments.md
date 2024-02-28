@@ -2,9 +2,9 @@
 title: Extra stappen voor het ophalen van e-mail met bijlagen
 description: Leer hoe u de fout verhelpt wanneer u geen e-mail met bijlagen voor AEM Forms op JEE-platforms kunt ophalen.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ De gebruiker kan geen handelingen uitvoeren zoals PDF verzenden via e-mail of Bi
    * `sling.bootdelegation.activation=javax.activation.*`
 
 1. Opnieuw starten **JBoss®**.
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.

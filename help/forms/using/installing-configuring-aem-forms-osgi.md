@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1867'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,11 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
    U kunt het pakket ook downloaden via de directe koppeling in het dialoogvenster [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het dialoogvenster `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` en het logbestand is stabiel.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+
 1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
 ### (Vensters slechts) Automatische installatie van Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}

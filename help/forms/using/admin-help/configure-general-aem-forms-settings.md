@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1756'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 # Algemene AEM Forms-instellingen {#general-aem-forms-settings}
 
 De pagina Core Configurations in de beheerconsole biedt instellingen die de systeemprestaties kunnen verbeteren. Start de toepassingsserver opnieuw nadat u deze instellingen hebt geconfigureerd of bijgewerkt.
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 Voor informatie over het inschakelen van een veilige back-upmodus raadpleegt u [Beveiligde back-upmodus in- en uitschakelen](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 

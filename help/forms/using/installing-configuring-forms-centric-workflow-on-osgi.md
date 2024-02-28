@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -109,18 +109,23 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
    U kunt het pakket ook downloaden via de directe koppeling in het [artikel over afstandsverklaringen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms.
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw op te starten. **Start de server niet meteen opnieuw op.** Voordat u de AEM Forms-server stopt, moet u wachten totdat de Geregistreerde ServiceEvent- en ServiceEvent UNREGISTERED-berichten niet meer voorkomen in het [bestand AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
-1. Herhaal stap 1-7 voor alle auteurs- en publicatieinstanties.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw op te starten. **Start de server niet meteen opnieuw op.** Voordat u de AEM Forms-server stopt, moet u wachten totdat de GEREGISTREERDE ServiceEvent- en ServiceEvent UNREGISTERED-berichten niet meer voorkomen in het [bestand AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logboek stabiel is.
 
-## Configuraties na de installatie {#post-installation-configurations}
+   >[!NOTE]
+   >
+   > U kunt het beste de opdracht &#39;Ctrl + C&#39; gebruiken om de SDK opnieuw op te starten. Als u de AEM SDK opnieuw start met een alternatieve methode, bijvoorbeeld door Java-processen te stoppen, kan dit leiden tot inconsistenties in de AEM-ontwikkelomgeving.
 
-AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
+1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
+
+## Configuratie na installatie {#post-installation-configurations}
+
+AEM Forms heeft een aantal verplichte en optionele configuraties. Tot de verplichte configuraties behoren de BouncyCastle-bibliotheken en de serienummeringsagent. Tot de optionele configuraties behoren de configuratie van Dispatcher en Adobe Target.
 
 ### Verplichte configuraties na de installatie {#mandatory-post-installation-configurations}
 
 #### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
-Voer de volgende stappen uit op alle ontwerp- en publicatie-instanties om de bibliotheken te delegeren:
+Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
 
 1. Stop de onderliggende AEM instantie.
 1. Open de [AEM installatiemap]\crx-quickstart\conf\sling.properties.

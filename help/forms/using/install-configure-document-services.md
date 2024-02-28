@@ -4,9 +4,9 @@ description: Installeer AEM Forms-documentservices voor het maken, samenstellen,
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '5442'
+source-wordcount: '5476'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Voordat u de documentservices van AEM Forms gaat installeren en configureren, mo
 >[!NOTE]
 >
 >* In Microsoft® Windows ondersteunt PDF Generator WebKit, Acrobat WebCapture en PhantomJS conversieroutes om HTML-bestanden om te zetten in PDF-documenten.
-* Op op UNIX-Gebaseerde werkende systemen, steunt de PDF Generator WebKit en PhantomJS omzettingsroutes om HTML dossiers in de documenten van PDF om te zetten.
+>* Op op UNIX-Gebaseerde werkende systemen, steunt de PDF Generator WebKit en PhantomJS omzettingsroutes om HTML dossiers in de documenten van PDF om te zetten.
 >
 
 ### Extra eisen voor het op UNIX gebaseerde besturingssysteem {#extrarequirements}
@@ -194,11 +194,11 @@ Als u de dienst van de PDF Generator gaat gebruiken om inheemse dossierformaten 
 
 >[!NOTE]
 >
-* Als uw AEM Forms Server zich in een offline- of beveiligde omgeving bevindt en het internet niet beschikbaar is om Adobe Acrobat te activeren, raadpleegt u [Offlineactivering](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) voor instructies om dergelijke instanties van Adobe Acrobat te activeren.
-* Adobe Acrobat, Microsoft® Word, Excel en PowerPoint zijn alleen beschikbaar voor Microsoft® Windows. Als u het op UNIX-Gebaseerde werkende systeem gebruikt, installeer OpenOffice om rijke tekstdossiers en gesteunde dossiers van Microsoft® Office in de documenten van PDF om te zetten.
-* Sluit alle dialoogvensters die na het installeren van Adobe Acrobat en software van derden worden weergegeven voor alle gebruikers die zijn geconfigureerd om de service PDF Generator te gebruiken.
-* Start minstens één keer alle geïnstalleerde software. Alle dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd om de service PDF Generator te gebruiken.
-* [Vervaldatum van je Adobe Acrobat serienummers controleren](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) en een datum voor het bijwerken van de licentie of [serienummer migreren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) op basis van de vervaldatum.
+>* Als uw AEM Forms Server zich in een offline- of beveiligde omgeving bevindt en het internet niet beschikbaar is om Adobe Acrobat te activeren, raadpleegt u [Offlineactivering](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) voor instructies om dergelijke instanties van Adobe Acrobat te activeren.
+>* Adobe Acrobat, Microsoft® Word, Excel en PowerPoint zijn alleen beschikbaar voor Microsoft® Windows. Als u het op UNIX-Gebaseerde werkende systeem gebruikt, installeer OpenOffice om rijke tekstdossiers en gesteunde dossiers van Microsoft® Office in de documenten van PDF om te zetten.
+>* Sluit alle dialoogvensters die na het installeren van Adobe Acrobat en software van derden worden weergegeven voor alle gebruikers die zijn geconfigureerd om de service PDF Generator te gebruiken.
+>* Start minstens één keer alle geïnstalleerde software. Alle dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd om de service PDF Generator te gebruiken.
+>* [Vervaldatum van je Adobe Acrobat serienummers controleren](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) en een datum voor het bijwerken van de licentie of [serienummer migreren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) op basis van de vervaldatum.
 
 Open Microsoft® Word nadat u Acrobat hebt geïnstalleerd. Op de **Acrobat** tabblad, klikt u op **PDF maken** en converteert u een .doc- of .docx-bestand dat op uw computer beschikbaar is naar een PDF-document. Als de conversie succesvol is, is AEM Forms klaar om Acrobat te gebruiken met de service PDF Generator.
 
@@ -238,14 +238,14 @@ Stel omgevingsvariabelen in voor de 64-bits Java Development Kit, toepassingen v
 
 >[!NOTE]
 >
-* Alle omgevingsvariabelen en de respectieve paden zijn hoofdlettergevoelig.
-* JAVA_HOME en Acrobat_PATH (alleen Windows) zijn verplichte omgevingsvariabelen.
-* De omgevingsvariabele OpenOffice_PATH wordt ingesteld op de installatiemap in plaats van op het pad naar het uitvoerbare bestand.
-* Stel geen omgevingsvariabelen in voor Microsoft® Office-toepassingen zoals Word, PowerPoint, Excel en Project, of voor AutoCAD. Als deze toepassingen op de server worden geïnstalleerd, genereert de dienst van de PDF automatisch begint deze toepassingen.
-* Voor op UNIX-Gebaseerde platforms, installeer OpenOffice als /root. Als OpenOffice niet als wortel wordt geïnstalleerd, kan de dienst van de PDF Generator geen documenten OpenOffice in de documenten van PDF omzetten. Als u OpenOffice als niet-wortelgebruiker moet installeren en in werking stellen, dan verstrek sudo rechten aan de niet-wortelgebruiker.
-* Als u OpenOffice op een UNIX-Gebaseerd platform gebruikt, stel het volgende bevel in werking om de wegvariabele te plaatsen:
+>* Alle omgevingsvariabelen en de respectieve paden zijn hoofdlettergevoelig.
+>* JAVA_HOME en Acrobat_PATH (alleen Windows) zijn verplichte omgevingsvariabelen.
+>* De omgevingsvariabele OpenOffice_PATH wordt ingesteld op de installatiemap in plaats van op het pad naar het uitvoerbare bestand.
+>* Stel geen omgevingsvariabelen in voor Microsoft® Office-toepassingen zoals Word, PowerPoint, Excel en Project, of voor AutoCAD. Als deze toepassingen op de server worden geïnstalleerd, genereert de dienst van de PDF automatisch begint deze toepassingen.
+>* Voor op UNIX-Gebaseerde platforms, installeer OpenOffice als /root. Als OpenOffice niet als wortel wordt geïnstalleerd, kan de dienst van de PDF Generator geen documenten OpenOffice in de documenten van PDF omzetten. Als u OpenOffice als niet-wortelgebruiker moet installeren en in werking stellen, dan verstrek sudo rechten aan de niet-wortelgebruiker.
+>* Als u OpenOffice op een UNIX-Gebaseerd platform gebruikt, stel het volgende bevel in werking om de wegvariabele te plaatsen:
 >
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Alleen voor IBM® WebSphere®) Configureer IBM® SSL-socketprovider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -306,6 +306,10 @@ U kunt een niet beheerdergebruiker toelaten om de dienst van de PDF Generator te
 1. Stel de waarde van de omgevingsvariabele in op TRUE.
 1. Start de AEM Forms-instantie opnieuw.
 
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+
 ### (Alleen Windows) Gebruikersaccountbeheer uitschakelen (UAC) {#disable-user-account-control-uac}
 
 1. Ga voor toegang tot het hulpprogramma Systeemconfiguratie naar **[!UICONTROL Start > Run]** en vervolgens voert u **[!UICONTROL MSCONFIG]**.
@@ -332,7 +336,7 @@ De dienst van de PDF Generator verstrekt WebKit, WebCapture, en routes PhantomJS
 
 >[!NOTE]
 >
-Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
+>Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
 
 ### (Alleen op UNIX gebaseerde platforms) Extra configuraties voor conversie van HTML naar PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -352,12 +356,12 @@ Kopieer het Unicode-lettertype naar een van de volgende mappen, afhankelijk van 
 
 >[!NOTE]
 >
-* Op Red Hat® Enterprise Linux® 6.x en hoger zijn de koerierlettertypen niet beschikbaar. Download het zip-archief font-ibm-type1-1.0.3.zip om de koerierlettertypen te installeren. Extraheer het archief op /usr/share/fonts. Maak een symbolische koppeling van /usr/share/X11/fonts naar /usr/share/fonts.
-* Verwijder alle .lst-cachebestanden voor lettertypen uit de mappen HTML2PdfSvc/bin en /usr/share/fonts.
-* Zorg ervoor dat de mappen /usr/lib/X11/fonts en /usr/share/fonts bestaan. Als de mappen niet bestaan, gebruikt u de ln-opdracht om een symbolische koppeling te maken van /usr/share/X11/fonts naar /usr/lib/X11/fonts en een andere symbolische koppeling van /usr/share/fonts naar /usr/share/X11/fonts. Zorg er ook voor dat de koerierlettertypen beschikbaar zijn op /usr/lib/X11/fonts.
-* Zorg ervoor dat alle lettertypen (Unicode en niet-Unicode) beschikbaar zijn in de map /usr/share/fonts of /usr/share/X11/fonts.
-* Wanneer u de dienst van de PDF Generator als niet wortelgebruiker in werking stelt, verstrek de niet wortelgebruiker lees en schrijf toegang tot alle doopvontfolders.
-* Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
+>* Op Red Hat® Enterprise Linux® 6.x en hoger zijn de koerierlettertypen niet beschikbaar. Download het zip-archief font-ibm-type1-1.0.3.zip om de koerierlettertypen te installeren. Extraheer het archief op /usr/share/fonts. Maak een symbolische koppeling van /usr/share/X11/fonts naar /usr/share/fonts.
+>* Verwijder alle .lst-cachebestanden voor lettertypen uit de mappen HTML2PdfSvc/bin en /usr/share/fonts.
+>* Zorg ervoor dat de mappen /usr/lib/X11/fonts en /usr/share/fonts bestaan. Als de mappen niet bestaan, gebruikt u de ln-opdracht om een symbolische koppeling te maken van /usr/share/X11/fonts naar /usr/lib/X11/fonts en een andere symbolische koppeling van /usr/share/fonts naar /usr/share/X11/fonts. Zorg er ook voor dat de koerierlettertypen beschikbaar zijn op /usr/lib/X11/fonts.
+>* Zorg ervoor dat alle lettertypen (Unicode en niet-Unicode) beschikbaar zijn in de map /usr/share/fonts of /usr/share/X11/fonts.
+>* Wanneer u de dienst van de PDF Generator als niet wortelgebruiker in werking stelt, verstrek de niet wortelgebruiker lees en schrijf toegang tot alle doopvontfolders.
+>* Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
 >
 
 ## AEM Forms-invoegtoepassing installeren {#install-aem-forms-add-on-package}
@@ -406,8 +410,8 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
    >[!NOTE]
    >
-   Uw recht om lettertypen te gebruiken die door andere partijen dan Adobe worden verstrekt, wordt geregeld door de licentieovereenkomsten die deze partijen u met die lettertypen verstrekken, en wordt niet gedekt door uw licentie om Adobe software te gebruiken. Adobe raadt u aan na te gaan of u voldoet aan alle toepasselijke licentieovereenkomsten voor niet-Adoben voordat u lettertypen gebruikt die niet van Adobe zijn met Adobe-software, met name voor het gebruik van lettertypen in een serveromgeving.
-Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
+   >Uw recht om lettertypen te gebruiken die door andere partijen dan Adobe worden verstrekt, wordt geregeld door de licentieovereenkomsten die deze partijen u met die lettertypen verstrekken, en wordt niet gedekt door uw licentie om Adobe software te gebruiken. Adobe raadt u aan na te gaan of u voldoet aan alle toepasselijke licentieovereenkomsten voor niet-Adoben voordat u lettertypen gebruikt die niet van Adobe zijn met Adobe-software, met name voor het gebruik van lettertypen in een serveromgeving.
+   >Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
    >
 
 ### Een lokale gebruikersaccount configureren om de service PDF Generator uit te voeren  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
@@ -519,7 +523,7 @@ Voer de volgende stappen uit om de certificaten te configureren:
 
    >[!NOTE]
    >
-   In het productiemilieu, vervang uw evaluatiegeloofsbrieven met productiereferenties. Zorg ervoor dat u uw oude geloofsbrieven van de Uitbreidingen van de Reader schrapt, alvorens een verlopen of evaluatiereferentie bij te werken.
+   >In het productiemilieu, vervang uw evaluatiegeloofsbrieven met productiereferenties. Zorg ervoor dat u uw oude geloofsbrieven van de Uitbreidingen van de Reader schrapt, alvorens een verlopen of evaluatiereferentie bij te werken.
 
 1. Klik op **[!UICONTROL Save & Close]** op de pagina **[!UICONTROL Edit User Settings]**.
 
@@ -599,7 +603,7 @@ De [Gereedschap Systeem](#srt-configuration) controleert of de machine behoorlij
 
    >[!NOTE]
    >
-   * Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
+   >* Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
 
 1. Navigeren naar `[Path_of_reports_folder]`. Open het bestand SystemReadyTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 
@@ -809,7 +813,7 @@ Wanneer u Microsoft Excel 2019 omzet in PDF op de Server 2019 van Microsoft Wind
 * De standaardprinter moet op Adobe PDF worden ingesteld.
 
   >[!NOTE]
-  * Voor Apple macOS en Ubuntu OS hoeft u de bovenstaande instellingen niet te configureren.
+  >* Voor Apple macOS en Ubuntu OS hoeft u de bovenstaande instellingen niet te configureren.
 
 +++
 

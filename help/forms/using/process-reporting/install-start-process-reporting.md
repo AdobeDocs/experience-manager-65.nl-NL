@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1706'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,10 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
 1. Start de AEM Forms Server-instantie opnieuw.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ### Procesgegevensopslagservice {#processdatastorage-service}
 
@@ -275,3 +279,5 @@ Voor meer informatie over de service voor het publiceren van gegevens en hoe u d
 * **[!UICONTROL Sync]**: Synchroniseer de ingesloten Process Reporting-opslagplaats met de AEM Forms-database.
 * **[!UICONTROL Help]**: Bekijk de Help-documentatie over Process Reporting.
 * **[!UICONTROL Logout]**: Afmelden van procesrapportage
+
+

@@ -4,9 +4,9 @@ description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4486'
+source-wordcount: '4520'
 ht-degree: 0%
 
 ---
@@ -313,6 +313,10 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
    >[!NOTE]
    >
    Er is gemeld dat een AEM Server opnieuw opstarten vereist was voor de gegevensbron om met succes aan FDM te binden.
+
+   >[!NOTE]
+   >
+   Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 #### Het Forms-gegevensmodel testen (Derby) {#test-fdm-derby}
 

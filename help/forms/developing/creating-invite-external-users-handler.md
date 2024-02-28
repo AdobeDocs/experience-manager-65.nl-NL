@@ -3,9 +3,9 @@ title: Een Uitnodigingshandler voor externe gebruikers maken
 description: Leer hoe u een Invite External Users Handler maakt. Het laat de dienst van het Rights Management toe om externe gebruikers uit te nodigen om Rights Management gebruikers te worden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,11 @@ Om externe gebruikers toe te voegen om uit te nodigen gebruikend beleidsconsole:
 
 1. Implementeer het JAR-bestand van de uitnodigen van externe gebruikers met Workbench.
 1. Start de toepassingsserver opnieuw.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+
 1. Log in bij de beheerconsole.
 1. Klikken **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Uitgenodigd **[!UICONTROL User Registration]**.
 1. Ingenodigde gebruikersregistratie inschakelen door de optie **[!UICONTROL Enable invited user registration]** doos. Onder **[!UICONTROL Use Built-in registration system]**, klikt u op **[!UICONTROL No]**. Sla uw instellingen op.

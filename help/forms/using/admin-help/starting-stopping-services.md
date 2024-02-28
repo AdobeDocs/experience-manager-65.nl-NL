@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Er zijn twee soorten diensten die deel van AEM vormen uitmaken:
 ## De diensten verbonden aan AEM vormmodules beginnen of tegenhouden {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 AEM formuliermodules (bijvoorbeeld Forms, Rights Management, Output) werken als services. Het kan gebeuren dat u de services voor deze AEM formuliermodules moet stoppen of starten. U moet bijvoorbeeld een AEM formulierservice stoppen en opnieuw starten nadat u een instelling voor de service hebt gewijzigd.
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 1. In beheerconsole klikken **Services** > **Toepassingen en services** > **Servicebeheer**.
 1. Voor de pagina van het Beheer van de Dienst, selecteer de controledoos naast de dienst om te stoppen of te beginnen en Einde of Begin te klikken.

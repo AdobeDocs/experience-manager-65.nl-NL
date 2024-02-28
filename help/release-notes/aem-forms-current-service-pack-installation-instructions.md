@@ -2,9 +2,9 @@
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatie-instructies voor OSGi- en JEE-omgeving
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,8 @@ Navigeer naar de juiste map en van een shell en type `./aem65_cfp_install.bin`.
 
 >[!NOTE]
 >
-> Nadat u AEM Forms op het JEE-servicepack hebt geïnstalleerd, moet u het Forms-add-onpakket verwijderen uit `crx-repository\install` voordat u de toepassingsserver opnieuw start. Download het nieuwste Forms add-on pakket van de [Software Distribution Portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+>* Nadat u AEM Forms op het JEE-servicepack hebt geïnstalleerd, moet u het Forms-add-onpakket verwijderen uit `crx-repository\install` voordat u de toepassingsserver opnieuw start. Download het nieuwste Forms add-on pakket van de [Software Distribution Portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+>* Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 +++
 
@@ -173,7 +174,7 @@ Het pakket wordt automatisch geïnstalleerd.
 
   >[!NOTE]
   >
-  Het de dienstpak van de Experience Manager steunt geen Bootstrap installatie. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Het de dienstpak van de Experience Manager steunt geen Bootstrap installatie. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **De installatie valideren**
 
@@ -205,7 +206,7 @@ Het pakket wordt automatisch geïnstalleerd.
 
 >[!NOTE]
 >
-Als u het de dienstpak van AEM Forms voor relationele gegevensbestand installeert, is het verplicht om steun van DB_schema te nemen.
+> Als u het de dienstpak van AEM Forms voor relationele gegevensbestand installeert, is het verplicht om steun van DB_schema te nemen.
 
 +++
 
@@ -223,7 +224,7 @@ Als u het de dienstpak van AEM Forms voor relationele gegevensbestand installeer
 >[!NOTE]
 >
 >
-Zorg ervoor dat u Redistributable installeert, zelfs als een vorige versie wordt geïnstalleerd, om de beschikbaarheid van de recentste versie te waarborgen.
+> Zorg ervoor dat u Redistributable installeert, zelfs als een vorige versie wordt geïnstalleerd, om de beschikbaarheid van de recentste versie te waarborgen.
 
 +++
 
@@ -244,7 +245,7 @@ Er zijn twee verschillende methoden die u automatisch kunt installeren [!DNL Exp
 
   >[!NOTE]
   >
-  Het de dienstpak van de Experience Manager steunt geen Bootstrap installatie. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Het de dienstpak van de Experience Manager steunt geen Bootstrap installatie. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **De installatie valideren**
 

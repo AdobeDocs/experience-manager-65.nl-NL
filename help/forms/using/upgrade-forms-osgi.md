@@ -7,9 +7,9 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
       >Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het dialoogvenster &lt;crx-repository>Het bestand /error.log en het logbestand zijn stabiel. Houd er rekening mee dat een aantal pakketten in de installatiestatus kunnen blijven staan. U kunt de status van deze verpakkingen veilig negeren.
 
 1. Start de AEM opnieuw.
+
+   >[!NOTE]
+   >
+   Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 1. Nainstallatie uitvoeren.
 

@@ -7,9 +7,9 @@ topic-tags: manage
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,9 @@ AEM desktop app gebruikt WebDAV-protocol op Microsoft® Windows en SMB1 op macOS
 1. Schakel in het dialoogvenster FormsManager AddOn-configuratie de optie **[!UICONTROL Asynchronously Sync Resources]** en klik op **[!UICONTROL Save]**.
 1. Start de AEM Forms-server opnieuw. Nadat u de computer opnieuw hebt opgestart, kan de AEM Forms-server inhoud accepteren en delen met de AEM-bureaubladtoepassing.
 1. Open de toepassing en maak verbinding met de AEM Forms-server.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
    Wanneer de verbinding tot stand is gebracht, wordt de toepassing gevuld met de `content/dam` en `content/dam/formsanddocuments` mappen. Samen met het verplaatsen van bestanden van boven naar lokale mappen en omgekeerd kunt u de app gebruiken om inhoud te verplaatsen tussen automatisch gevulde mappen.

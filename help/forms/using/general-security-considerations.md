@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -218,6 +218,10 @@ JBoss® Application Server gebruikt 8080 als de standaard HTTP-poort. JBoss® he
 
 1. Sla het bestand op en sluit het.
 1. Start de JBoss®-toepassingsserver opnieuw.
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ## AEM Forms over JEE-beveiligingsoverwegingen {#aem-forms-on-jee-security-considerations}
 

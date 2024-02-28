@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Als er tijdens de installatie van het pakket een fout optreedt `javax.jcr.nodety
 1. Ga naar Pakketbeheer. De standaard-URL is `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Zoek en installeer de `adobe-lc-workspace-pkg-[version].zip` pakket.
 1. Start de toepassingsserver opnieuw.
+
+>[!NOTE]
+>
+> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ## Logboek van AEM Forms-werkruimte {#aem-forms-workspace-nbsp-logging}
 

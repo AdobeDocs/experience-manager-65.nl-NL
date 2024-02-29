@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9677c3f08c139518e38d576d6008343fcc07e810
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Het merk Venia is onlangs begonnen met de productie van bepaalde producten met b
 
 ## Vereisten {#prerequisites}
 
-U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. De vereisten en stappen voor [een plaatselijke ontwikkeling opzetten met AEM](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u machtigingen nodig om toe te voegen [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. De vereisten en stappen voor [een plaatselijke ontwikkeling opzetten met AEM](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u toestemming nodig om [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
-U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u de aanvraagheaders kunnen instellen. In Google Chrome: [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is één extensie die de taak kan uitvoeren.
+U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u de aanvraagheaders kunnen instellen. In Google Chrome: _Altair GraphQL Client_ is één extensie die de taak kan uitvoeren.
 
 ## Het Venia-project klonen {#clone-venia-project}
 
@@ -46,7 +46,7 @@ U kloont de [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en ov
 >
 >**U kunt een bestaand project zonder problemen gebruiken** (gebaseerd op het AEM Projectarchetype met CIF inbegrepen) en sla deze sectie over.
 
-1. Voer de volgende git-opdracht uit om het project te klonen:
+1. Voer de volgende git-opdracht uit, zodat u het project kunt klonen:
 
    ```shell
    $ git clone git@github.com:adobe/aem-cif-guides-venia.git
@@ -59,7 +59,7 @@ U kloont de [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en ov
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Voeg de noodzakelijke configuraties OSGi toe om uw AEM instantie met een instantie van Adobe Commerce te verbinden of de configuraties aan het onlangs gecreeerd project toe te voegen.
+1. Voeg de noodzakelijke configuraties OSGi toe zodat kunt u uw AEM instantie met een instantie van Adobe Commerce verbinden of de configuraties toevoegen aan het onlangs gecreeerd project.
 
 1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Ga naar de `US` > `Home` pagina bij: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -91,7 +91,7 @@ De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste
 
 ## Een aangepast kenmerk toevoegen in Adobe Commerce {#add-custom-attribute}
 
-De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Commerce. Voeg vervolgens een nieuw kenmerk toe voor **Eco Friendly** als onderdeel van het kenmerk product dat is ingesteld met de gebruikersinterface van Adobe Commerce.
+De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Commerce. Voeg vervolgens een kenmerk toe voor **Eco Friendly** als onderdeel van het kenmerk product dat is ingesteld met de gebruikersinterface van Adobe Commerce.
 
 >[!TIP]
 >
@@ -99,7 +99,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
 
 1. Meld u aan bij uw Adobe Commerce-exemplaar.
 1. Navigeren naar **Catalogus** > **Producten**.
-1. Werk het zoekfilter bij om de **Configureerbaar product** worden gebruikt wanneer toegevoegd aan de component Teaser in de vorige oefening. Open het product in de bewerkingsmodus.
+1. Werk het zoekfilter bij zodat u het **Configureerbaar product** worden gebruikt wanneer toegevoegd aan de component Teaser in de vorige oefening. Open het product in de bewerkingsmodus.
 
    ![Zoeken naar Valeria-product](../assets/customize-cif-components/search-valeria-product.png)
 
@@ -139,7 +139,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
 
 Voordat u naar AEM code gaat, is het handig om de [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) een GraphQL-IDE gebruiken. De Adobe Commerce-integratie met AEM gebeurt voornamelijk via een reeks GraphQL-query&#39;s. Het begrijpen en wijzigen van de vragen van GraphQL is één van de belangrijkste manieren waarop de Componenten van de CIFKern kunnen worden uitgebreid.
 
-Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de Google Chrome-extensie _Altair GraphQL Client_.
 
 1. GraphQL-IDE openen en URL invoeren `http://<server>/graphql` in de bar URL van uw winde of uitbreiding.
 2. Voeg het volgende toe [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) waar `YOUR_SKU` is de **SKU** van het product dat bij de vorige exercitie werd gebruikt:
@@ -186,7 +186,7 @@ De waarde van **Ja** is een geheel getal van **1**. Dit is handig wanneer u de G
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
-Daarna, zult u de bedrijfslogica van de Teaser van het Product uitbreiden door een het Verkopen Model uit te voeren. [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html), zijn annotatiegestuurde &quot;POJO&#39;s&quot; (normale oude Java™-objecten) die een van de bedrijfslogica implementeren die nodig is voor de component. Sling Models worden gebruikt met de manuscripten HTML als deel van de component. U volgt de [delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) zodat u onderdelen van het bestaande productteammodel kunt uitbreiden.
+Daarna, breidt u de bedrijfslogica van de Teaser van het Product door een het Verkopen Model uit te voeren uit. [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html) zijn annotatiegestuurde &quot;POJO&#39;s&quot; (normale oude Java™-objecten) die een van de bedrijfslogica implementeren die nodig is voor de component. Sling Models worden gebruikt met de manuscripten HTML als deel van de component. Volg de [delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) zodat u onderdelen van het bestaande productteammodel kunt uitbreiden.
 
 Sling Models worden geïmplementeerd als Java™ en zijn te vinden in het dialoogvenster **kern** module van het gegenereerde project.
 
@@ -200,7 +200,7 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
 
    Er is al een nieuwe methode toegevoegd met de naam `isShowBadge()` om een badge weer te geven als het product als &quot;Nieuw&quot; wordt beschouwd.
 
-1. Voeg een nieuwe methode toe, `isEcoFriendly()` aan de interface:
+1. Een methode toevoegen `isEcoFriendly()` aan de interface:
 
    ```java
    @ProviderType
@@ -291,7 +291,7 @@ Dit is een nieuwe methode om de logica in te kapselen om erop te wijzen of het p
    >
    >De `createdAt()` is geïmplementeerd als onderdeel van de [Productinterface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). De meeste algemeen gevonden schemakenmerken zijn uitgevoerd, zo slechts gebruik `addCustomSimpleField` voor werkelijk aangepaste kenmerken.
 
-1. Voeg een logger toe voor foutopsporing in de Java™-code:
+1. Voeg een logger toe zodat u hiermee fouten in de Java™-code kunt opsporen:
 
    ```java
    import org.slf4j.Logger;
@@ -326,17 +326,17 @@ Dit is een nieuwe methode om de logica in te kapselen om erop te wijzen of het p
 
    In de bovenstaande methode worden de `productRetriever` wordt gebruikt om het product en de `getAsInteger()` wordt gebruikt om de waarde van `eco_friendly` kenmerk. Op basis van de GraphQL-query&#39;s die u eerder hebt uitgevoerd, weet u dat de verwachte waarde `eco_friendly` kenmerk is ingesteld op &quot;**Ja**&quot; is eigenlijk een geheel getal van **1**.
 
-   Nu het Sling Model is bijgewerkt, moet de prijsverhoging van de Component worden bijgewerkt om daadwerkelijk een indicator van te tonen van **Eco Friendly** op basis van het verkoopmodel.
+   Nu het Verkoopmodel is bijgewerkt, werkt u de componentmarkering bij om een indicator weer te geven van **Eco Friendly** op basis van het verkoopmodel.
 
 ## De opmaak van de producttaser aanpassen {#customize-markup-product-teaser}
 
 Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Dit wordt gedaan door met voeten te treden [HTML-script](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) dat de component gebruikt om zijn prijsverhoging terug te geven. De Taal van het Malplaatje van de HTML (HTL), is een lichtgewichtmalplaatjetaal die AEM componenten gebruiken om prijsverhoging dynamisch terug te geven die op authored inhoud wordt gebaseerd, toestaand de componenten om worden opnieuw gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
 
-In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat het product &quot;Milieuvriendelijk&quot;gebaseerd op een douaneattribuut is. Het ontwerppatroon voor [de markering aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component is in feite standaard voor alle AEM Componenten, niet alleen voor de AEM CIF Core Components.
+In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat het product &quot;Milieuvriendelijk&quot;gebaseerd op een douaneattribuut is. Het ontwerppatroon voor [de markering aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component is standaard voor alle AEM Componenten, niet alleen voor de AEM CIF Core Components.
 
 >[!NOTE]
 >
->Als u een component aanpast met de CIF product- en categoriekiezers zoals deze Product Teaser of de CIF pagina-component, moet u de vereiste `cif.shell.picker` clientlib voor de componentdialoogvensters. Zie [Gebruik van CIF product- en rubriekkiezer](use-cif-pickers.md) voor meer informatie.
+>Als u een component aanpast met de CIF product- en categoriekiezers zoals deze Product Teaser of de CIF paginacomponent, moet u de vereiste `cif.shell.picker` clientlib voor de componentdialoogvensters. Zie [Gebruik van CIF product- en rubriekkiezer](use-cif-pickers.md) voor meer informatie.
 
 1. In winde, navigeer en breid uit `ui.apps` en breid de maphiërarchie uit naar: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` en inspecteer de `.content.xml` bestand.
 
@@ -369,7 +369,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    Let op: het verkoopmodel voor `MyProductTeaser` wordt gebruikt en toegewezen aan `product` variabele.
 
-1. Wijzigen `productteaser.html` om een oproep te doen aan `isEcoFriendly` in de vorige exercitie toegepaste methode:
+1. Bewerken `productteaser.html` zodat de `isEcoFriendly` in de vorige exercitie toegepaste methode:
 
    ```html
    ...
@@ -430,7 +430,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    >[!CAUTION]
    >
-   >Het kan ook voorkomen dat er enkele stapelsporen worden weergegeven als het in de teaser gebruikte product niet de `eco_friendly` kenmerk als onderdeel van de kenmerkset.
+   >U kunt ook enkele stapelsporen zien als het in de teaser gebruikte product niet de `eco_friendly` kenmerk als onderdeel van de kenmerkset.
 
 ## Stijlen toevoegen voor de milieuvriendelijke badge {#add-styles}
 

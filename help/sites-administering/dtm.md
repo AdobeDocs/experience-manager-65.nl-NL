@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
 
 # Integreren met Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Integreren [Adobe Dynamic Tag Management](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) met AEM, zodat u uw Dynamic Tag Management-wegeigenschappen kunt gebruiken om AEM sites bij te houden. Met Dynamic Tag Management kunnen marketers tags beheren voor het verzamelen van gegevens en gegevens verspreiden over digitale marketingsystemen. Gebruik bijvoorbeeld Dynamic Tag Management om gebruiksgegevens voor uw AEM website te verzamelen en de gegevens voor analyse te verspreiden in Adobe Analytics of Adobe Target.
+Integreren [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) met AEM, zodat u uw Dynamic Tag Management-wegeigenschappen kunt gebruiken om AEM sites bij te houden. Met Dynamic Tag Management kunnen marketers tags beheren voor het verzamelen van gegevens en gegevens verspreiden over digitale marketingsystemen. Gebruik bijvoorbeeld Dynamic Tag Management om gebruiksgegevens voor uw AEM website te verzamelen en de gegevens voor analyse te verspreiden in Adobe Analytics of Adobe Target.
 
-Voordat u gaat integreren, moet u de Dynamic Tag Management maken [web, eigenschap](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) dat het domein van uw AEM site bijhoudt. De [hostopties](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) van het Web bezit moet worden gevormd zodat u AEM kunt vormen om tot de Dynamische bibliotheken van Tag Management toegang te hebben.
+Maak de Dynamic Tag Management voordat u gaat integreren [web, eigenschap](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) dat het domein van uw AEM site bijhoudt. De [hostopties](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) van het Web bezit moet worden gevormd zodat u AEM kunt vormen om tot de Dynamische bibliotheken van Tag Management toegang te hebben.
 
 Nadat u de integratie vormt, vereisen de veranderingen in Dynamische de plaatsingshulpmiddelen en de regels van Tag Management u niet om de Dynamische configuratie van Tag Management in AEM te veranderen. De wijzigingen zijn automatisch beschikbaar voor AEM.
 
 >[!NOTE]
 >
->Als u DTM met een configuratie van de douanevolmacht gebruikt, moet u zowel de volmachtsconfiguraties van de Cliënt van HTTP vormen aangezien sommige functionaliteiten van AEM de 3.x APIs en sommige anderen 4.x APIs gebruiken:
+>Als u DTM met een configuratie van de douanevolmacht gebruikt, vorm zowel de volmachtsconfiguraties van de Cliënt van HTTP aangezien sommige functionaliteiten van AEM de 3.x APIs en sommige anderen 4.x APIs gebruiken:
 >
 >* 3.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
@@ -37,8 +37,8 @@ De volgende plaatsingsopties beïnvloeden de configuratie van de integratie met 
 
 AEM ondersteunt Dynamic Tag Management die wordt gehost in de cloud of wordt gehost op AEM.
 
-* In de cloud gehoste: de dynamische Tag Management-JavaScript-bibliotheken worden opgeslagen in de cloud en de AEM pagina&#39;s verwijzen er rechtstreeks naar.
-* AEM: Dynamic Tag Management genereert javascript-bibliotheken. AEM gebruikt een workflowmodel voor het ophalen en installeren van de bibliotheken.
+* In de cloud gehoste: de Dynamic Tag Management JavaScript-bibliotheken worden opgeslagen in de cloud en de AEM pagina&#39;s verwijzen er rechtstreeks naar.
+* AEM: Dynamic Tag Management genereert JavaScript-bibliotheken. AEM gebruikt een workflowmodel voor het ophalen en installeren van de bibliotheken.
 
 Het type van het ontvangen dat uw implementatie gebruikt bepaalt enkele configuratie en implementatietaken die u uitvoert. Zie voor informatie over de hostingopties [Hosting - Tab insluiten](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) in Dynamic Tag Management Help.
 
@@ -54,7 +54,7 @@ Indien gewenst, kan uw auteurinstantie de productiebibliotheken gebruiken. De br
 
 Wanneer AEM gastheren de Dynamische bibliotheken van Tag Management, kunt u de Dynamic Tag Management plaatsingshakendienst gebruiken om bibliotheekupdates aan AEM automatisch te duwen. De bibliotheekupdates worden geduwd wanneer de veranderingen in de bibliotheken zoals worden aangebracht wanneer de Dynamische eigenschappen van het Web van Tag Management worden uitgegeven.
 
-Om de plaatsingshaak te gebruiken, moet Dynamische Tag Management met de AEM instantie kunnen verbinden die gastheren de bibliotheken. [Toegang tot AEM inschakelen](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) voor de Dynamic Tag Management-servers.
+Om de plaatsingshaak te gebruiken, moet Dynamische Tag Management met de AEM instantie kunnen verbinden die de bibliotheken ontvangt. [Toegang tot AEM inschakelen](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) voor de Dynamic Tag Management-servers.
 
 In sommige omstandigheden AEM onbereikbaar, zoals wanneer AEM achter een firewall ligt. In deze gevallen kunt u de optie voor het importeren van opiniepeilingen AEM gebruiken om de bibliotheken regelmatig op te halen. Een uitsnijdtaakexpressie schrijft het programma voor het downloaden van bibliotheken voor.
 
@@ -83,7 +83,7 @@ Maak een wolkenconfiguratie zodat de AEM-instantie kan worden geverifieerd met D
 
 >[!NOTE]
 >
->Vermijd het opnemen van twee trackingcodes voor Adobe Analytics op uw pagina&#39;s wanneer uw DTM-webeigenschap het Adobe Analytics-gereedschap bevat en u ook [Inhoudsinzicht](/help/sites-authoring/content-insights.md). In uw [Adobe Analytics-cloudconfiguratie](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), selecteert u de optie Code bijhouden niet opnemen.
+>Vermijd het opnemen van twee trackingcodes voor Adobe Analytics op uw pagina&#39;s wanneer uw DTM-webeigenschap het Adobe Analytics-gereedschap bevat en u ook [Inhoudsinzicht](/help/sites-authoring/content-insights.md). In uw [Adobe Analytics Cloud-configuratie](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), selecteert u de optie Code bijhouden niet opnemen.
 
 ### Algemene instellingen {#general-settings}
 
@@ -107,7 +107,7 @@ Maak een wolkenconfiguratie zodat de AEM-instantie kan worden geverifieerd met D
   </tr>
   <tr>
    <td>Productiecode opnemen op auteur</td>
-   <td><p>Selecteer deze optie om ervoor te zorgen dat de AEM auteur en de publicatie instanties de productieversie van de Dynamic Tag Management-bibliotheken gebruiken. </p> <p>Als deze optie niet is geselecteerd, zijn de instellingen voor afspelen van toepassing op de auteurinstantie en zijn de Productie-instellingen van toepassing op de publicatie-instantie.</p> </td>
+   <td><p>Selecteer deze optie zodat de AEM auteur en publiceer instanties de productieversie van de Dynamische bibliotheken van Tag Management gebruiken. </p> <p>Als deze optie niet is geselecteerd, zijn de instellingen voor afspelen van toepassing op de auteurinstantie en zijn de Productie-instellingen van toepassing op de publicatie-instantie.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -144,15 +144,15 @@ Wanneer het ontvangen van de Dynamische bibliotheken van Tag Management op AEM, 
   </tr>
   <tr>
    <td>Domeinhint</td>
-   <td><p>(Optioneel) Het domein van de AEM server die als host fungeert voor de Dynamic Tag Management-bibliotheek. Specificeer een waarde om het standaarddomein met voeten te treden dat voor wordt gevormd <a href="/help/sites-developing/externalizer.md">Day CQ Link ExternalService</a>.</p> <p>Wanneer AEM verbinding maakt met Dynamic Tag Management, gebruikt u deze waarde om het Staging HTTP Path of het Production HTTP Path van de Library Download-eigenschappen voor de Dynamic Tag Management web-eigenschap te configureren.</p> </td>
+   <td><p>(Optioneel) Het domein van de AEM server die als host fungeert voor de Dynamic Tag Management-bibliotheek. Geef een waarde op zodat u het standaarddomein kunt overschrijven dat is geconfigureerd voor de <a href="/help/sites-developing/externalizer.md">Day CQ Link ExternalService</a>.</p> <p>Wanneer AEM verbinding maakt met Dynamic Tag Management, gebruikt u deze waarde om het Staging HTTP Path of het Production HTTP Path van de Library Download-eigenschappen voor de Dynamic Tag Management web-eigenschap te configureren.</p> </td>
   </tr>
   <tr>
    <td>Beveiligde domeintip</td>
-   <td><p>(Optioneel) Het domein van de AEM server die als host fungeert voor de Dynamic Tag Management-bibliotheek via HTTPS. Specificeer een waarde om het standaarddomein met voeten te treden dat voor wordt gevormd <a href="/help/sites-developing/externalizer.md">Day CQ Link ExternalService</a>.</p> <p>Wanneer AEM verbinding maakt met Dynamic Tag Management, gebruikt u deze waarde om het Staging HTTPS-pad of het Production HTTPS-pad van de eigenschappen Library Download voor de Dynamic Tag Management-webeigenschap te configureren.</p> </td>
+   <td><p>(Optioneel) Het domein van de AEM server die als host fungeert voor de Dynamic Tag Management-bibliotheek via HTTPS. Geef een waarde op zodat u het standaarddomein kunt overschrijven dat is geconfigureerd voor de <a href="/help/sites-developing/externalizer.md">Day CQ Link ExternalService</a>.</p> <p>Wanneer AEM verbinding maakt met Dynamic Tag Management, gebruikt u deze waarde om het Staging HTTPS-pad of het Production HTTPS-pad van de eigenschappen Library Download voor de Dynamic Tag Management-webeigenschap te configureren.</p> </td>
   </tr>
   <tr>
    <td>Gedeeld geheim</td>
-   <td><p>(Optioneel) Het gedeelde geheim dat moet worden gebruikt voor het decoderen van de download. Verkrijg deze waarde van het Gedeelde Geheime gebied van de pagina van de Download van de Bibliotheek van Dynamic Tag Management.</p> <p><strong>Opmerking:</strong> U moet beschikken over <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> op de computer waarop AEM is geïnstalleerd, zijn geïnstalleerd zodat AEM de gedownloade bibliotheken kan decoderen.</p> </td>
+   <td><p>(Optioneel) Het gedeelde geheim dat moet worden gebruikt voor het decoderen van de download. Verkrijg deze waarde van het Gedeelde Geheime gebied van de pagina van de Download van de Bibliotheek van Dynamic Tag Management.</p> <p><strong>Opmerking:</strong> U moet de OpenSSL-bibliotheken hebben geïnstalleerd op de computer waarop AEM is geïnstalleerd, zodat AEM de gedownloade bibliotheken kan decoderen.</p> </td>
   </tr>
   <tr>
    <td>Opiniepeilingimportfunctie inschakelen</td>
@@ -197,7 +197,7 @@ U configureert de volgende eigenschappen voor uw dynamische Tag Management-confi
 In de volgende procedure wordt gebruikgemaakt van de geoptimaliseerde interface voor aanrakingen om de integratie met Dynamic Tag Management te configureren.
 
 1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
-1. In het gebied Dynamische Tag Management wordt een van de volgende koppelingen weergegeven voor het toevoegen van een configuratie:
+1. In het gebied Dynamic Tag Management wordt een van de volgende koppelingen weergegeven voor het toevoegen van een configuratie:
 
    * Klik vormen nu als dit de eerste configuratie is die u toevoegt.
    * Klik op Configuraties tonen en klik vervolgens op de koppeling + naast Beschikbare configuraties als er een of meer configuraties zijn gemaakt.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2236'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ De eerste twee classificaties van query&#39;s (indexloos en slecht beperkt) zijn
 
 Het inspecteren van elk mogelijk resultaat is de zogenaamde &quot;Traversing&quot;.
 
-Aangezien elk potentieel resultaat moet worden geïnspecteerd, stijgen de kosten om de feitelijke resultaatreeks te bepalen lineair met het aantal potentiële resultaten.
+Aangezien elk potentieel resultaat moet worden geïnspecteerd, stijgen de kosten om de daadwerkelijke resultaatreeks te bepalen lineair met het aantal potentiële resultaten.
 
 Door querybeperkingen en tuning-indexen toe te voegen, kunnen de indexgegevens worden opgeslagen in een geoptimaliseerde indeling die snelle resultaten ophaalt en, vermindert of verwijdert u de behoefte aan lineaire inspectie van potentiële resultaatsets.
 
@@ -119,7 +119,7 @@ Meer vraagbeperkingen verminderen de in aanmerking komende resultaatreeksen en o
 
 Op dezelfde manier zonder een extra indexregel voor `cq:tags` eigenschap, zelfs een fulltext-query met een beperking op `cq:tags` zou slecht presteren aangezien de resultaten van de index alle fullText gelijken zouden terugkeren. De beperking op cq:tags wordt erna gefilterd.
 
-Een andere oorzaak van post-index-filtreren is de Lijsten van het Toegangsbeheer die vaak tijdens ontwikkeling worden gemist. Controleer of de query geen paden retourneert die ontoegankelijk zijn voor de gebruiker. Dit kan worden gedaan door betere inhoudsstructuur samen met het verstrekken van relevante wegbeperking op de vraag.
+Een andere oorzaak van post-index-filtreren is de Lijsten van het Toegangsbeheer die vaak tijdens ontwikkeling worden gemist. Controleer of de query geen paden retourneert die ontoegankelijk zijn voor de gebruiker. Dit kan worden gedaan door betere inhoudsstructuur samen met het verstrekken van relevante wegbeperkingen op de vraag te doen.
 
 Een nuttige manier om te identificeren als de index van Lucene vele resultaten terugkeert om een kleine ondergroep als vraagresultaat terug te keren, is het toelaten van logboeken DEBUG voor `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Zo kunt u zien hoeveel documenten uit de index worden geladen. Het aantal uiteindelijke resultaten in vergelijking met het aantal geladen documenten mag niet onevenredig zijn. Zie voor meer informatie [Logboekregistratie](/help/sites-deploying/configure-logging.md).
 
@@ -176,7 +176,7 @@ AEM ondersteunt de volgende querytalen:
 * JCR-SQL2
 * XPath
 
-Het volgende voorbeeld gebruikt de Bouwer van de Vraag als zijn gemeenschappelijkste vraagtaal die door AEM ontwikkelaars wordt gebruikt, nochtans zijn de zelfde principes van toepassing op JCR-SQL2 en XPath.
+Het volgende voorbeeld gebruikt de Bouwer van de Vraag omdat het de gemeenschappelijkste vraagtaal is die door AEM ontwikkelaars wordt gebruikt, nochtans zijn de zelfde principes van toepassing op JCR-SQL2 en XPath.
 
 1. Voeg een nodetype beperking toe zodat lost de vraag aan een bestaande Index van het Bezit van Lucene op.
 
@@ -466,7 +466,7 @@ Zorg er daarom voor dat indexen aan query&#39;s voldoen, behalve als de combinat
 
    * Produceer optimale Index van het Bezit van de Geluidseigenschap van XPath of JCR-SQL2 vraagverklaringen.
 
-* **[AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
+* **_AEM Chrome-plug-in_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * De Webbrowser van Google Chrome uitbreiding die per-verzoeklogboekgegevens, met inbegrip van uitgevoerde vragen en hun vraagplannen, in browser de Dev hulpensconsole van hulpmiddelen blootstelt.
-   * Vereisten [Sling Log Tracker 1.0.2+](https://sling.apache.org/downloads.cgi) worden geïnstalleerd en ingeschakeld op AEM.
+   * De _AEM Chrome-plug-in_ is een de Webbrowser van Google Chrome uitbreiding die per-verzoeklogboekgegevens, met inbegrip van looppas vragen en hun vraagplannen, in de browser Dev tools console blootstelt.
+   * U moet installeren en inschakelen [Sling Log Tracker 1.0.2+](https://sling.apache.org/downloads.cgi) op AEM.

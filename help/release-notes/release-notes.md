@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
+source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3361'
 ht-degree: 0%
 
 ---
@@ -46,12 +46,12 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 ### [!DNL Forms]
 
 * **Transactierapportering in AEM Forms op JEE**: Voor AEM Forms is in juni de mogelijkheid tot het rapporteren van transacties geïntroduceerd, waardoor het mogelijk is om alle documenttransacties, zoals omzettingen, uitvoeringen en verzendingen, volledig te registreren. Dit verbetert de efficiëntie en vergemakkelijkt een betere administratie. De functie is standaard uitgeschakeld. U kunt deze inschakelen via de interface van Admin.
-* **Uitgebreide beveiliging met ECDSA-ondersteuning**: AEM Forms biedt nu krachtige ondersteuning voor het Elliptic Curve Digital Signature Algorithm (ECDSA) in zowel JEE- als OSGi-stapels. Gebruikers kunnen nu PDF-documenten ondertekenen, certificeren en verifiëren met verhoogde beveiliging. Tot de ondersteunde EC-curveralgoritmen behoren:
+* **Uitgebreide beveiliging met ECDSA-ondersteuning**: AEM Forms biedt nu krachtige ondersteuning voor het Elliptic Curve Digital Signature Algorithm (ECDSA) voor zowel JEE- als OSGi-stapels. Gebruikers kunnen nu PDF-documenten ondertekenen, certificeren en verifiëren met verhoogde beveiliging. Tot de ondersteunde EC-curveralgoritmen behoren:
    * ECDSA elliptische curve P256 met SHA256-digest-algoritme
    * ECDSA elliptische curve P384 met SHA384-digest-algoritme
    * ECDSA elliptische curve P512 met SHA512-digest-algoritme
 * **Naadloze compatibiliteit met Windows 11 voor Forms Designer**: AEM Forms Designer biedt nu ondersteuning voor Windows 11 en zorgt voor een vloeiende installatie en werking. Gebruikers kunnen met vertrouwen een upgrade naar Windows 11 uitvoeren zonder dat ze zich zorgen hoeven te maken over compatibiliteitsproblemen en een ononderbroken workflow hoeven te installeren.
-* **Verbeterde toegankelijkheid met aangepaste rol &quot;Bijschrift&quot; in AEM Forms Designer**: AEM Forms Designer bevat nu een aangepaste toegankelijkheidsrol met de naam &quot;Bijschrift&quot;, waarmee gebruikers XDP&#39;s kunnen maken met gepersonaliseerde ondertitelingselementen. Deze functie verbetert de toegankelijkheid doordat gebruikers aangepaste bijschriften kunnen integreren in hun documentontwerpen, waardoor de insluiting en gebruikerservaring worden verbeterd.
+* **Verbeterde toegankelijkheid met aangepaste rol &quot;Bijschrift&quot; in AEM Forms Designer**: AEM Forms Designer bevat nu een aangepaste toegankelijkheidsrol met de naam &quot;Bijschrift&quot;, waarmee gebruikers XDP&#39;s kunnen maken met gepersonaliseerde ondertitelingselementen. Deze functie verbetert de toegankelijkheid doordat gebruikers aangepaste bijschriften kunnen integreren in hun documentontwerpen, zodat ze de insluiting en gebruikerservaring kunnen verbeteren.
 
 <!-- ### [!DNL Forms]
 
@@ -152,32 +152,32 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### [!DNL Adaptive Forms]
 
-* Wanneer een gebruiker AEM Forms probeert te integreren in een mailingplatform met een AEM gepubliceerde URL, voegen de AEM formulieren &quot;method=post&quot; niet toe tijdens het weergeven van de pagina, ook al is POST ingesteld in de verzendactie met de URL. Hierdoor herkent het mailingplatform dit als een formulier niet. (FORMS-12614)
-* Wanneer een gebruiker het datumveld selecteert met een weergavepatroon op AEM Form Service Pack 6.5.18.0., kan de gebruiker de huidige datum niet selecteren met het toetsenbord. (FORMS-12736)
+* Wanneer een gebruiker AEM Forms probeert te integreren in een mailplatform met een AEM gepubliceerde URL, voegt AEM Forms niet toe `method=post` tijdens het weergeven van de pagina. Dit probleem doet zich voor ondanks `POST` wordt ingesteld in de verzendactie met de URL. Hierdoor herkent het mailingplatform dit als een formulier niet. (FORMS-12614)
+* Wanneer een gebruiker het datumveld selecteert met een weergavepatroon op AEM Form Service Pack 6.5.18.0, kan de gebruiker de huidige datum niet selecteren met het toetsenbord. (FORMS-12736)
 * Op AEM Forms Service Pack 6.5.17.0 en Service Pack 6.5.18.0, wanneer een gebruiker tussen maanden in de kalenderwidget schakelt, toont de component van de datumkiezer een extra rij. (FORMS-11869)
 * Wanneer een gebruiker op een afbeelding klikt met de optie &#39;Een foto maken&#39; in de bijlage op een iOS-apparaat, worden alle afbeeldingen toegevoegd aan de map met dezelfde naam. (FORMS-1224)
 * Wanneer een gebruiker een bestaande optie in een groep keuzerondjes bijwerkt, worden onjuiste vertaalwaarden gepubliceerd. (FORMS-12575)
-* Wanneer een gebruiker tekens toevoegt aan een adaptief formulier op een Android-apparaat, mag de gebruiker meer dan het gedefinieerde maximum aantal tekens in het tekstveld typen wanneer de gebruiker de focus uitgaat, op Android-apparaten. Dit werkt echter wanneer een gebruiker het invoertype HTML5 selecteert. (FORMS-12748)
-* Omdat de labels Arial en Arial op elkaar zijn afgestemd, kunnen de schermlezers geen onderscheid maken tussen deze twee. Om het probleem op te lossen, wordt het label &quot;aria-labelledby&quot; vervangen door &quot;aria-describe by&quot; voor de formuliervelden. (FORMS-12436)
-* Wanneer een auteur de component &quot;Adaptive Forms - Embed (v2)&quot; gebruikt om een adaptief formulier in te sluiten op zijn sitepagina en het ingesloten formulier daarin een CAPTCHA-component bevat (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), wordt de sitepagina niet weergegeven wanneer de gebruiker de sitepagina probeert weer te geven met de optie &quot;View as Publishing&quot; op de -instantie en de fout wordt weergegeven als (FORMS-11859):
+* Wanneer een gebruiker tekens toevoegt aan een adaptief formulier op een Android™-apparaat, kan de gebruiker meer dan het gedefinieerde maximum aantal tekens in het tekstveld typen wanneer de focus wordt uit, op Android™-apparaten. Het werkt echter wanneer een gebruiker het invoertype HTML5 selecteert. (FORMS-12748)
+* Vanwege de overeenkomende labels Arial® en Arial® kunnen schermlezers geen onderscheid maken tussen deze twee labels. Om het probleem op te lossen, wordt het label &quot;aria-labelledby&quot; vervangen door &quot;aria-describe by&quot; voor de formuliervelden. (FORMS-12436)
+* Wanneer een auteur de component &quot;Adaptive Forms - Embed (v2)&quot; gebruikt om een adaptief formulier in te sluiten op zijn sitepagina en het ingesloten formulier daarin een CAPTCHA-component bevat (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), wordt de sitepagina niet weergegeven wanneer de gebruiker de sitepagina probeert weer te geven met de optie &quot;View as Publishing&quot; op de -instantie. De volgende fout wordt weergegeven als (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * Wanneer een gebruiker de datum probeert te selecteren met de component voor de datumkiezer, wordt de waarde niet bijgewerkt en wordt NULL weergegeven. (FORMS-12742, FORMS-12736)
 
-* Wanneer een gebruiker een upgrade uitvoert naar AEM Form Service Pack 6.5.19.0 en een nieuwe taal bijwerkt naar het bestaande woordenboek, wordt deze niet samengevoegd met de rijen guideContainer om een nieuwe landinstelling aan een formulier toe te voegen. (FORMS-12947)
+* Wanneer een gebruiker een upgrade uitvoert naar AEM Form Service Pack 6.5.19.0 en een nieuwe taal bijwerkt naar het bestaande woordenboek, wordt deze niet samengevoegd met de rijen guideContainer om een landinstelling aan een formulier toe te voegen. (FORMS-12947)
 
-* In AEM Forms Service Pack 6.5.19.0 mislukt de bewerking Webservice aanroepen in Java 11 met de fout (FORMS-12329):
+* In AEM Forms Service Pack 6.5.19.0 mislukt de aangeroepen webservice-bewerking op Java™ 11 met de fout (FORMS-12329):
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
-* Wanneer een gebruiker de bewerking &quot;receive&quot; aanroept voor &quot;EmailService&quot; in AEM Forms Service Pack 6.5.18.0, wordt een uitzondering gegenereerd (FORMS-12050):
+* Wanneer een gebruiker &quot;ontvangt&quot;verrichting voor &quot;EmailService&quot;op AEM Forms Service Pack 6.5.18.0 aanhaalt, wordt een uitzondering geworpen (FORMS-12050):
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-* Wanneer de FIPS-modus is ingeschakeld in AEM Forms Service Pack 6.5.18.0, mislukt het maken van een nieuwe gebruiker onder standaard-DOM met de fout (FORMS-11857):
+* Wanneer de FIPS-modus is ingeschakeld in AEM Forms Service Pack 6.5.18.0, mislukt het maken van een gebruiker onder standaard-DOM met de fout (FORMS-11857):
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-* Wanneer een gebruiker lettertypen selecteert in de beheerinterface onder het pad `Home>Services>PDF Generator>Adobe PDF Settings`, wordt deze niet geselecteerd. Bovendien is in een standaard of gepersonaliseerd profiel het lijstvak met beschikbare lettertypen leeg, zodat het niet mogelijk is de sublijst van **Altijd insluiten** of **Nooit insluiten** De gebruiker kan het lettertype voor zijn PDF echter niet configureren met PDF Generator. In de logboeken worden geen relevante foutberichten weergegeven. (FORMS-12095)
+* Wanneer een gebruiker lettertypen selecteert in de beheerinterface onder het pad `Home>Services>PDF Generator>Adobe PDF Settings`, wordt deze niet geselecteerd. Bovendien is in een standaard of gepersonaliseerd profiel het keuzemenu met beschikbare lettertypen leeg. Het is daarom niet mogelijk de sublijst van **Altijd insluiten** of **Nooit insluiten**. De gebruiker kan het lettertype voor zijn PDF niet configureren met PDF Generator. In de logboeken worden geen relevante foutberichten weergegeven. (FORMS-12095)
 
-* In AEM Forms Service Pack 6.5.18.0 kan de gebruiker geen nieuwe beveiligingsinstellingen maken, wordt geen fout- of serverlogbestand weergegeven, maar wordt een pop-upfoutbericht weergegeven op het scherm. (FORMS-12212)
+* In AEM Forms Service Pack 6.5.18.0 kan de gebruiker geen beveiligingsinstellingen maken, wordt geen fout- of serverlogbestand weergegeven, maar wordt een pop-upfoutbericht weergegeven op het scherm. (FORMS-12212)
 
 * Wanneer een gebruiker met AEM Forms Service Pack 6.5.18.0 een adaptief formulier verzendt via de JEE-workflow, wordt de bijlage in het Adaptief formulier niet verzonden naar het JEE-proces dat toepassingsfouten veroorzaakt. (FORMS-12232, FORMS-12228)
 
@@ -198,14 +198,14 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * In AEM Forms 6.5.18.0 worden, wanneer een adaptief formulier wordt gepubliceerd, alle afhankelijkheden, inclusief het beleid, opnieuw gepubliceerd, zelfs als er geen wijzigingen in zijn aangebracht. (FORMS-10454)
 
-* Wanneer een gebruiker &quot;Microsoft SharePoint&quot;selecteert terwijl het runnen van de configuratiemanager op AEM Forms 6.5.19.1 met JBoss Turnkey opstelling, ontbreekt de installatie van de HAAR van de Livecycle JEAR, en het toont de volgende fout: (FORMS-12463)
+* Wanneer een gebruiker &quot;Microsoft SharePoint&quot; selecteert terwijl de configuratiemanager wordt uitgevoerd op AEM Forms 6.5.19.1 met JBoss® Turnkey-instelling, mislukt de LiveCycle JBoss® EAR-installatie en wordt de volgende fout weergegeven: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
-* Wanneer een gebruiker aan AEM Forms Service Pack 6.5.18.0 upgradet, wegens ontbrekende uitzonderingsbehandeling, XDPs door de outputdienst met toegelaten de geëtiketteerde optie van de PDF ging over. (LC-3921757)
+* Wanneer een gebruiker aan AEM Forms Service Pack 6.5.18.0, wegens ontbrekende uitzonderingsbehandeling upgradet, XDPs door de outputdienst met geëtiketteerde PDF toe:laten optie-toegelaten ontbreken. (LC-3921757)
 
 * Wanneer een gebruiker een PDF genereert met gebruik van AEM Forms Designer, worden de kopniveaus gelabeld in de toegankelijkheidsstructuur, samen met het grafische element, bijvoorbeeld een rechthoekig vak. (LC-3921687)
 

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 60c9a1d9fb03975b70ed1d7d1d65b0bd4017c794
+source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 0%
@@ -217,8 +217,6 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * Wanneer een gebruiker een XDP maakt in AEM Forms Designer, wordt bij PDF-uitvoer wanneer een gebruiker door de formuliercodes navigeert, het achtergrondobject ook gecodeerd. (LC-3921687)
 
-
-<!-- #### [!DNL Adaptive Forms] -->
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
   * text
@@ -229,8 +227,6 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 * **Interactive Communications**
   * text -->
 <!--### Commerce{#commerce-6520} * text -->
-
-
 
 ### Stichting {#foundation-6520}
 

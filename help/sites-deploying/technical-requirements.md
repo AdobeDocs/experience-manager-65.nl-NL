@@ -3,9 +3,9 @@ title: Technische vereisten
 description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
+source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3650'
 ht-degree: 0%
 
 ---
@@ -159,7 +159,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 >[!NOTE]
 >
->Ondersteunde relationele databases zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM-licentiepakket.
+>Ondersteunde relationele databases zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM licentiepakket.
 >
 >Om AEM 6.5 met een gesteunde relationele gegevensbestand in werking te stellen, wordt een afzonderlijk steuncontract met een gegevensbestandverkoper vereist. De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
 >
@@ -527,7 +527,7 @@ Voor Windows x86:
 * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
 * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
-* 2,35 GB beschikbare ruimte op de vaste schijf
+* 2,35 GB beschikbare ruimte op de harde schijf
 * Beeldschermresolutie van 1024 x 768 pixels of hoger
 * Hardwareversnelling voor video (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
@@ -535,7 +535,9 @@ Voor Windows x86:
 * Microsoft Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime voor 32-bits AEM Forms Designer
 * Microsoft Visual C++ 2019 (VC 14.28 of groter) 64-bits runtime voor de Ontwerper van AEM Forms met 64 bits (voor zowel de stapel OSGI als JEE)
 
-### Vereisten voor het terugschrijven van metagegevens van AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
+[AEM Forms-ontwerper installeren en configureren](/help/forms/using/installing-configuring-designer.md)
+
+### Vereisten voor het terugschrijven van XMP-metagegevens voor AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP-terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 
@@ -548,6 +550,6 @@ XMP-terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms 
 
 * **Bestandsindelingen**: JPEG, PNG, TIFF, PDF, INDD, AI en EPS.
 
-### Vereisten voor AEM Assets om zwaar materiaal met metagegevens te verwerken op Linux® {#assetsonlinux}
+### Vereisten voor AEM Assets voor de verwerking van assets met veel metagegevens op Linux® {#assetsonlinux}
 
-Voor het proces XMPFilesProcessor moet de bibliotheek GLIBC_2.14 functioneren. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, ontstaat er een fout in logbestanden die beginnen met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Voor het proces XMPFilesProcessor moet de bibliotheek GLIBC_2.14 functioneren. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logbestanden die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

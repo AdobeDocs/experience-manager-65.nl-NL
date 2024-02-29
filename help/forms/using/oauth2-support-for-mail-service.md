@@ -1,15 +1,15 @@
 ---
-title: Op OAuth2 gebaseerde verificatie voor Microsoft&reg configureren; Office 365-mailserverprotocollen
-description: Op OAuth2 gebaseerde verificatie voor Microsoft&reg configureren; Office 365-mailserverprotocollen
+title: Op OAuth2 gebaseerde verificatie configureren voor Microsoft® (Forms JEE OAuth); Office 365-mailserverprotocollen
+description: Op OAuth2 gebaseerde verificatie configureren voor Microsoft® (Forms JEE OAuth); Office 365-mailserverprotocollen
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
+source-git-commit: 2a67e7e54a72c31a4a0ab0a186be20a914222fa7
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
 
-# Integreer met Microsoft® Office 365-mailserverprotocollen {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# AEM Forms integreren met Microsoft® Office 365-mailserverprotocollen {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 AEM Forms biedt OAuth 2.0-ondersteuning voor integratie met Microsoft® Office 365-mailserverprotocollen zodat organisaties zich kunnen houden aan de vereisten voor e-mail. U kunt de Azure Actieve Folder (Azure AD) OAuth 2.0 authentificatieservice gebruiken, om met diverse protocollen zoals IMAP, POP, of SMTP te verbinden en tot e-mailgegevens voor Bureau 365 toegang te hebben gebruikers. Hieronder vindt u stapsgewijze instructies voor het configureren van de Microsoft® Office 365-mailserverprotocollen voor verificatie via de OAuth 2.0-service:
 
@@ -27,7 +27,7 @@ In het bovenstaande geval: **Accounts in any organizational directory (Any Azure
    >
    > * Voor **Accounts in any organizational directory (Any Azure AD directory - Multihuurder)** toepassing, raadt de Adobe u aan een werkaccount te gebruiken in plaats van een persoonlijke e-mailaccount.
    > * **Alleen persoonlijke Microsoft®-accounts** toepassing wordt niet ondersteund.
-   * Adobe raadt u aan de **Microsoft®-account voor meerdere gebruikers en personen** toepassing.
+   > * Adobe raadt u aan de **Microsoft®-account voor meerdere gebruikers en personen** toepassing.
 
 1. Ga vervolgens naar **Certificaten en geheimen**, klikt u op **Nieuw clientgeheim** en volg de stappen op het scherm om een geheim te maken. Let erop dat u deze waarde van het geheim opneemt voor later gebruik.
 
@@ -56,7 +56,7 @@ In het bovenstaande geval: **Accounts in any organizational directory (Any Azure
 
    >[!NOTE]
    >
-   Het is verplicht **Toegangstokens** en **ID-tokens** selectievakjes.
+   > Het is verplicht **Toegangstokens** en **ID-tokens** selectievakjes.
 
 1. Klikken **Overzicht** in het linkerdeelvenster en kopieer de waarden voor **Toepassings-id (client)**, **Directory (huurder)-id**, en **Clientgeheim** voor later gebruik.
 
@@ -72,7 +72,7 @@ Vervolgens moet u de machtigingscode genereren, zoals in de volgende stappen wor
 
    >[!NOTE]
    >
-   Als er de enige huurderstoepassing is, vervang `common` met uw `[tenantid]` in de volgende URL voor het genereren van machtigingscode: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+   > Als er de enige huurderstoepassing is, vervang `common` met uw `[tenantid]` in de volgende URL voor het genereren van machtigingscode: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. Wanneer u de bovenstaande URL typt, wordt u omgeleid naar het aanmeldingsscherm:
    ![Aanmeldingsscherm](/help/forms/using/assets/azure_loginscreen.png)
@@ -97,8 +97,8 @@ Vervolgens moet u het vernieuwingstoken genereren. Dit wordt in de volgende stap
 
    >[!NOTE]
    >
-   In één huurderstoepassing, om te produceren verfrist me gebruik het volgende cURL bevel en vervangt `common` met de `[tenantid]` in:
-   `curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
+   > In één huurderstoepassing, om te produceren verfrist me gebruik het volgende cURL bevel en vervangt `common` met de `[tenantid]` in:
+   >`curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Noteer het token voor vernieuwen.
 
@@ -110,7 +110,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   Als u Auth 2.0-verificatieservice wilt inschakelen, moet u **Of de server SMTP authentificatie (SMTP voor authentiek verklaart) vereist** selectievakje.
+   > Als u Auth 2.0-verificatieservice wilt inschakelen, moet u **Of de server SMTP authentificatie (SMTP voor authentiek verklaart) vereist** selectievakje.
 
 1. Set **Verificatie-instellingen augustus 2.0** als `True`.
 1. De waarden kopiëren van **Client-id** en **Clientgeheim** vanuit Azure Portal.
@@ -123,8 +123,8 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   * Het protocol van de Veiligheid van het Vervoer heeft de volgende geldige waarden: &quot;leeg&quot;, &quot;SSL&quot;of &quot;TLS&quot;. Waarden instellen voor **SMTP-transportbeveiliging** en **Vervoersbeveiliging ontvangen** tot **TLS** voor het toelaten van de authentificatiedienst van de Auth.
-   * **POP3-protocol** wordt niet ondersteund voor OAuth bij het gebruik van e-maileindpunten.
+   >* Het protocol van de Veiligheid van het Vervoer heeft de volgende geldige waarden: &quot;leeg&quot;, &quot;SSL&quot;of &quot;TLS&quot;. Waarden instellen voor **SMTP-transportbeveiliging** en **Vervoersbeveiliging ontvangen** tot **TLS** voor het toelaten van de authentificatiedienst van de Auth.
+   >* **POP3-protocol** wordt niet ondersteund voor OAuth bij het gebruik van e-maileindpunten.
 
    ![Verbindingsinstellingen](/help/forms/using/assets/oauth_connectionsettings.png)
 
@@ -134,7 +134,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   Indien gewenst, kunt u Auth 2.0 authentificatie veranderen die aan basisauthentificatie voor een bepaald proces in een werkbank plaatst. Stel hiertoe de **OAuth 2.0-verificatie** waarde als &#39;False&#39; onder **Algemene instellingen gebruiken** in de **Verbindingsinstellingen** tab.
+   >Indien gewenst, kunt u Auth 2.0 authentificatie veranderen die aan basisauthentificatie voor een bepaald proces in een werkbank plaatst. Stel hiertoe de **OAuth 2.0-verificatie** waarde als &#39;False&#39; onder **Algemene instellingen gebruiken** in de **Verbindingsinstellingen** tab.
 
 ## Taken verifiëren inschakelen {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   Meer informatie over taakmeldingen te verkrijgen, [klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Meer informatie over taakmeldingen te verkrijgen, [klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Om e-maileindpunt te vormen {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 
    >[!NOTE]
    >
-   Klik op voor meer informatie over het configureren van e-maileindpunten [Een e-maileindpunt configureren](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Klik op voor meer informatie over het configureren van e-maileindpunten [Een e-maileindpunt configureren](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Problemen oplossen {#troubleshooting}
 

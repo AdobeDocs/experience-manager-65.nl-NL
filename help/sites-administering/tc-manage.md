@@ -2,9 +2,9 @@
 title: Vertaalprojecten beheren
 description: Leer hoe u vertaalprojecten beheert in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
 workflow-type: tm+mt
-source-wordcount: '3504'
+source-wordcount: '3506'
 ht-degree: 0%
 
 ---
@@ -420,9 +420,15 @@ Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/site
 1. Selecteren **Kopieën van talen**.
 1. Selecteer de doeltalen die u wilt bijwerken.
 1. Selecteren **Taalkopieën bijwerken**.
+
+   ![bijwerken, taalkopieën](assets/translation-move-to.png)
+
 1. Klikken **Bijwerken**. A [Starten](/help/sites-authoring/launches-promoting.md) wordt gemaakt.
 1. Navigeer naar de vereiste hoofdtaal en selecteer deze.
 1. Met de **Verwijzingen** deelvenster, selecteert u **Starten**.
+
+   ![promoten/vertalen](assets/promote-launch-translation.png)
+
 1. Klik op de Launch die is gemaakt en klik op **Starten bevorderen**.
 
 Nu is de bronpagina verplaatst en de bijbehorende taalkopie.

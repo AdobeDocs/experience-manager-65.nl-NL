@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
+source-git-commit: 348b82f0bd0d99eeb771aa4ed2719ee10d8cee68
 workflow-type: tm+mt
-source-wordcount: '3361'
+source-wordcount: '3440'
 ht-degree: 0%
 
 ---
@@ -461,6 +461,12 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6520}
+
+* Na het bijwerken van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0), ontmoeten de gebruikers een fout van de JSP compilatie. Ze kunnen geen adaptieve formulieren openen of maken en fouten met andere AEM interfaces, zoals de pagina-editor, de AEM Forms-gebruikersinterface en de AEM Workfloweditor. Het foutbericht wordt als volgt weergegeven:
+
+`Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
+
+U kunt contact opnemen met de ondersteuning van de Adobe voor het oplossen van het probleem.
 
 * De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)
 

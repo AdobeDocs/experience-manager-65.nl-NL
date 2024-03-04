@@ -3,8 +3,7 @@ title: Hoe kan ik Adaptief-formuliergegevens verbinden en verzenden naar Microso
 description: Een stapsgewijze gids voor het maken van een verbinding en het verzenden van Adaptief formulier naar Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, Adaptive Forms data verzenden naar Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -85,7 +84,7 @@ Voer de volgende handelingen uit om uw AEM Forms Author-instantie te verbinden m
 
    >[!NOTE]
    >
-   Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
+   >Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
 
 1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Microsoft®® Power Automate Flow Service] in AEM Forms.
 1. Op de **[!UICONTROL Configure Dataverse Service for Microsoft®® Power Automate]** pagina, geeft u de **[!UICONTROL Client ID]** (ook wel toepassings-id genoemd), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** en **[!UICONTROL Dynamic Environment URL]**. Gebruik de client-id, clientgeheim, OAuth-URL en dynamische omgeving-URL van [Microsoft® Azure Active Directory-toepassing](#ms-power-automate-application) die u in de vorige sectie hebt gemaakt. De optie Eindpunten van het gebruik in Microsoft® Azure Actieve de toepassingsUI van de Folder om OAuth URL te vinden
@@ -100,7 +99,7 @@ Voer de volgende handelingen uit om uw AEM Forms Author-instantie te verbinden m
 
    >[!NOTE]
    >
-   Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
+   >Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
 1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Microsoft®® Power Automate Flow Service] in AEM Forms.
 1. Op de **[!UICONTROL Configure Dataverse for Microsoft®® Power Automate]** pagina, geeft u de **[!UICONTROL Client ID]** (ook wel toepassings-id genoemd), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** en **[!UICONTROL Dynamic Environment URL]**. Gebruik identiteitskaart van de Cliënt, Geheime cliënt, OAuth URL, en identiteitskaart van het Milieu van de Dynamiek. Gebruik de optie Eindpunten in de gebruikersinterface van de Microsoft® Azure Active Directory-toepassing om OAuth URL te zoeken. Open de [Mijn stromen](https://us.flow.microsoft.com) en selecteer Mijn stromen gebruiken identiteitskaart die in URL als identiteitskaart van het Milieu van de Dynamiek wordt vermeld.
 1. Selecteer **[!UICONTROL Connect]**. Meld u desgevraagd aan bij uw Microsoft® Azure-account. Selecteren **[!UICONTROL Save]**.
@@ -126,7 +125,7 @@ Na u [Sluit uw AEM Forms Author-instantie aan met Microsoft® Power Automate](#c
 
 >[!NOTE]
 >
-Voordat u het adaptieve formulier verzendt, moet u ervoor zorgen dat de `When an HTTP Request is received` trigger met een JSON-schema wordt toegevoegd aan uw Power Automate-flow.
+> Voordat u het adaptieve formulier verzendt, moet u ervoor zorgen dat de `When an HTTP Request is received` trigger met een JSON-schema wordt toegevoegd aan uw Power Automate-flow.
 
 ```
         {

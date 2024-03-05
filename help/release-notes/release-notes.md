@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3462'
 ht-degree: 0%
 
 ---
@@ -470,11 +470,11 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
    1. Download de hotfix voor uw besturingssysteem:
 
-   * [Hotfix voor Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-   * [Hotfix voor Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [Hotfix voor Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+      * [Hotfix voor Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+      * [Hotfix voor Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [Hotfix voor Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. Upload en installeer het pakket (.zip) via Package Manager.
+   1. Upload en installeer het pakket (.zip) via de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)
 

@@ -2,7 +2,7 @@
 title: Hotfixes voor AEM Forms
 description: Hier vindt u informatie over het downloaden en installeren van een hotfix voor AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
      </td>
     <td>
     <ul>
-    <li> De component OOTB Krabbelhandtekening kan niet worden gerenderd voor een voorvertoning in een adaptieve vorm. (FORMS-12073).</li>
+    <li> De uit-van-de-doos component van de KrabbelHandtekening ontbreekt om voor een voorproef in een adaptieve vorm terug te geven. (FORMS-12073).</li>
     </ul>
     </td>    
    </tr>

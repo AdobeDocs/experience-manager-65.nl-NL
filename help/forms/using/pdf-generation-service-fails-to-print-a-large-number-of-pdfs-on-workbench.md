@@ -1,7 +1,7 @@
 ---
 title: PDF-generatie kan geen groot aantal PDF afdrukken met WorkBench
 description: Wanneer een klant een groot aantal PDF genereert via services die via WorkBench zijn geïmplementeerd, mislukt de afdrukservice.
-source-git-commit: 9cdf22918f08fe505c3efd0ce43235e3442165d5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -42,7 +42,7 @@ De grootste factor die het geheugengebruik beïnvloedt, is de hoeveelheid gegeve
 Bij het ontwerpen van formuliersjablonen moet u rekening houden met extra factoren om het geheugengebruik te verbeteren:
 
 1. Gebruik geen statische tekst om een veld een label te geven. Gebruik in plaats daarvan bijschriften in het tekstveld.
-2. Gebruik niet te veel rechthoeken, lijnen, objecten en tabellen.
+2. Gebruik geen rechthoeken, lijnen, objecten en tabellen.
 3. Gebruik indien mogelijk geen RichText en Choice Subforms.
 4. Gebruik niet te veel subformulieren en geneste subformulieren.
 

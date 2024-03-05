@@ -4,9 +4,9 @@ description: Adaptive Forms biedt een mechanisme om een formuliersegment te make
 topic-tags: author
 keywords: Adaptieve formulierfragmenten, Adaptieve formulierfragmenten, Een formulierfragment maken, Een fragment toevoegen aan een adaptief formulier, Fragmenten beheren
 feature: Adaptive Forms, Core Components
-source-git-commit: 304b1bf2e19942fb728944330512a83a9006cb2a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ U kunt verschillende bewerkingen uitvoeren op Adaptief-formulierfragmenten met d
 ## Belangrijke punten die u moet onthouden wanneer u werkt met fragmenten {#key-points-to-remember-when-working-with-fragments}
 
 * Zorg ervoor dat de fragmentnaam uniek is. Het fragment kan niet worden gemaakt als er een bestaand fragment met dezelfde naam bestaat.
-* Als u in een op XDP gebaseerd adaptief formulier een deelvenster opslaat als fragment dat een ander XDP-fragment bevat, wordt het resulterende fragment automatisch gebonden aan het onderliggende XDP-fragment. In het geval van een op XSD gebaseerde adaptieve vorm, zal het resulterende fragment aan de schemawortel worden gebonden.
+* Als u in een op XDP gebaseerd adaptief formulier een deelvenster opslaat als fragment dat een ander XDP-fragment bevat, wordt het resulterende fragment automatisch gebonden aan het onderliggende XDP-fragment. Als een adaptief formulier op basis van XSD, wordt het resulterende fragment gebonden aan de hoofdmap van het schema.
 * Wanneer u een adaptief formulierfragment maakt, wordt er een fragmentknooppunt gemaakt, dat lijkt op het knooppunt guideContainer voor een adaptief formulier, in CRXDE Lite.
 * Een fragment in een adaptief formulier dat een ander formuliergegevensmodel gebruikt, wordt niet ondersteund. Een XDP-fragment wordt bijvoorbeeld niet ondersteund in een XSD-gebaseerd adaptief formulier en omgekeerd.
 * Adaptieve formulierfragmenten zijn beschikbaar voor gebruik via het tabblad Adaptieve formulierfragmenten in AEM zoekfunctie.

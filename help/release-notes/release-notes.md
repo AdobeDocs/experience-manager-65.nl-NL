@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 5f95281130f0f2cac6d115b59b828946c2f70d33
+source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3461'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
    * ECDSA elliptische curve P384 met SHA384-digest-algoritme
    * ECDSA elliptische curve P512 met SHA512-digest-algoritme
 * **Naadloze compatibiliteit met Windows 11 voor Forms Designer**: AEM Forms Designer biedt nu ondersteuning voor Windows 11 en zorgt voor een vloeiende installatie en werking. Gebruikers kunnen met vertrouwen een upgrade naar Windows 11 uitvoeren zonder dat ze zich zorgen hoeven te maken over compatibiliteitsproblemen en een ononderbroken workflow hoeven te installeren.
-* **Verbeterde toegankelijkheid met aangepaste rol &quot;Bijschrift&quot; in AEM Forms Designer**: AEM Forms Designer bevat nu een aangepaste toegankelijkheidsrol met de naam &quot;Bijschrift&quot; om XDP&#39;s te maken met gepersonaliseerde ondertitelingselementen. Met deze functie verbetert u de toegankelijkheid doordat gebruikers aangepaste bijschriften in hun documentontwerpen kunnen opnemen om de insluiting en gebruikerservaring te verbeteren.
+* **Verbeterde toegankelijkheid met aangepaste rol &quot;Bijschrift&quot; in AEM Forms Designer**: AEM Forms Designer bevat nu een aangepaste toegankelijkheidsrol met de naam &quot;Bijschrift&quot;, waarmee gebruikers XDP&#39;s kunnen maken met gepersonaliseerde ondertitelingselementen. Deze functie verbetert de toegankelijkheid doordat gebruikers aangepaste bijschriften kunnen integreren in hun documentontwerpen, zodat ze de insluiting en gebruikerservaring kunnen verbeteren.
 
 <!-- ### [!DNL Forms]
 
@@ -466,8 +466,15 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
   `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
 
-  U kunt de steun van de Adobe voor hulp bij het oplossen van het probleem oproepen.
+  U lost het probleem als volgt op:
 
+   1. Download de hotfix voor uw besturingssysteem:
+
+   * [Hotfix voor Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+   * [Hotfix voor Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+   * [Hotfix voor Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+
+   1. Upload en installeer het pakket (.zip) via Package Manager.
 
 * De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)
 

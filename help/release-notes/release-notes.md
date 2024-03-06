@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 70f52515fc877ad5f20e14c2a26a934d3dcdfe01
+source-git-commit: f00d2c88ba6727f8f8597fefeb467b612b23dea3
 workflow-type: tm+mt
-source-wordcount: '3462'
+source-wordcount: '3500'
 ht-degree: 0%
 
 ---
@@ -474,6 +474,8 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
       * [Hotfix voor Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. Upload en installeer het pakket (.zip) via de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
+
+   1. Start de AEM Server opnieuw en controleer de activeringsstatus van alle bundels nadat het opnieuw opstarten is voltooid. U kunt de status van de bundels controleren door toegang te krijgen tot: `https://server:host/system/console/bundles`. Zorg ervoor dat alle bundels actief zijn alvorens met verdere taken te werk te gaan.
 
 * De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)
 

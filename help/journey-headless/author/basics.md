@@ -2,10 +2,10 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 1%
+source-wordcount: '1694'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw A
    * Inleiding tot ontwerpen met AEMaaCS
    * Inleiding tot inhoudsfragmenten
 
-## Basisbewerkingen {#basic-handling}
+## Basisverwerking {#basic-handling}
 
 Voordat u de stappen met inhoudsfragmenten gaat beheren, volgt een (zeer) korte inleiding op het gebruik van AEM...maar niets vervangt echt de ervaring van het aanmelden en het proberen om het systeem te gebruiken.
 
@@ -33,7 +33,7 @@ Voordat u de stappen met inhoudsfragmenten gaat beheren, volgt een (zeer) korte 
 Een AEM installatie bestaat meestal uit minstens twee omgevingen:
 
 * Auteur
-* Publicatie
+* Publiceren
 
 U meldt zich aan, en gebruikt het auteursmilieu om uw inhoud te produceren. Wanneer u klaar bent, publiceert u de inhoud zodat deze algemeen beschikbaar wordt. Voor koploze gebruikers is dit voor andere toepassingen, voor webpagina&#39;s is dit voor lezers op het web.
 
@@ -126,7 +126,7 @@ Vervolgens navigeert u door deze mappen om inhoudsfragmenten te maken en te bewe
 
 Alleen voor het geval...
 
-U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit interesseert u waarschijnlijk niet, maar als nodig kunt u controleren **Configuratie** in de **Cloud Servicen** van de map **Eigenschappen**:
+U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit is waarschijnlijk niet in uw belang, maar u kunt indien nodig de **Configuratie** in de **Cloud Servicen** van de map **Eigenschappen**:
 
 ![Mapeigenschappen maken - configuratie](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -227,7 +227,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Authoring van concepten](/help/sites-authoring/author.md)
+* [Concepten ontwerpen](/help/sites-authoring/author.md)
 
 * [Basisverwerking](/help/sites-authoring/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** console, maar veel/de meeste eigenschappen zijn ook relevant voor het ontwerpen **Inhoudsfragmenten** onder de **Activa** console.
 
@@ -243,9 +243,9 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
    * [Spoorwegkiezer](/help/sites-authoring/basic-handling.md#rail-selector)
 
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
-   * [Contentfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
 
       * [De configuratie toepassen op de middelenmap](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
@@ -253,7 +253,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
    * [Variaties - Inhoudsfragmenten ontwerpen](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
       * [Modellen van inhoudsfragmenten - gegevenstypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 

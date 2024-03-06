@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1297'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Het systeem van de Stijl verstrekt een verenigde oplossing aan zowel de vereiste
 * Sjabloonauteurs kunnen stijlklassen definiëren in het inhoudsbeleid van componenten.
 * Inhoudsauteurs kunnen deze klassen vervolgens selecteren in een vervolgkeuzelijst wanneer ze de component op een pagina bewerken om de bijbehorende stijlen toe te passen.
 
-De stijlklasse wordt dan opgenomen op het decoratie omslagelement van de component zodat de componentenontwikkelaar zich niet met de behandeling van de stijlen moet bezighouden voorbij het verstrekken van hun CSS regels.
+De stijlklasse wordt dan opgenomen op het decoratie omslagelement van de component zodat de componentenontwikkelaar zich niet met de behandeling van de stijlen hoeft bezig te houden voorbij het verstrekken van hun CSS regels.
 
 ## Overzicht {#overview}
 

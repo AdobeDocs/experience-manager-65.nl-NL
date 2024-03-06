@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2352'
 ht-degree: 0%
 
 ---
@@ -201,7 +201,7 @@ Afhankelijk van het type, bevatten widgets ook klassen. Vaak bevatten widgets de
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Achtergrondkleur voor widgets (werkt niet voor selectievakje en keuzerondje)</td>
+   <td>Achtergrondkleur voor widgets (werkt niet voor selectievakjes en keuzerondjes)</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -701,7 +701,7 @@ Bovendien zijn er klassen om tabnavigators (zowel links als boven) op te maken o
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Tabnavigatoren (links en boven) zonder geneste/onderliggende/subnavigators</p> </td>
+   <td><p>Tabnavigators (links en boven) die geen geneste/onderliggende/subnavigators hebben</p> </td>
   </tr>
  </tbody>
 </table>

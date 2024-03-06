@@ -5,9 +5,9 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Bent u op zoek naar een mobiele-vriendelijke **ervaring met formulieren** die het inschrijven vereenvoudigt, de betrokkenheid verhoogt en de doorlooptijd verkort, **adaptieve formulieren** is perfect voor je. Adaptieve formulieren bieden een mobiele, automatiserings- en analysevriendelijke ervaring voor formulieren. U kunt eenvoudig formulieren maken die responsief en interactief van aard zijn, geautomatiseerde processen gebruiken om beheertaken en repetitieve taken te beperken en gegevensanalyses gebruiken om de ervaring die klanten met uw formulieren hebben, te verbeteren en aan te passen.
+Bent u op zoek naar een mobiele-vriendelijke **ervaring met formulieren** dat inschrijving vereenvoudigt, de betrokkenheid verhoogt en de doorlooptijd verkort, **adaptieve formulieren** is perfect voor je. Adaptieve formulieren bieden een mobiele, automatiserings- en analysevriendelijke ervaring voor formulieren. U kunt eenvoudig formulieren maken die responsief en interactief van aard zijn, geautomatiseerde processen gebruiken om beheertaken en repetitieve taken te beperken en gegevensanalyses gebruiken om de ervaring die klanten met uw formulieren hebben, te verbeteren en aan te passen.
 
-Deze zelfstudie biedt een end-to-end framework voor het maken van een adaptief formulier. De zelfstudie is ingedeeld in een gebruikscase en meerdere hulplijnen. Met elke handleiding kunt u nieuwe functies toevoegen aan het aangepaste formulier dat in deze zelfstudie wordt gemaakt. U hebt een werkend adaptief formulier na elke hulplijn. De handleiding voor het maken van een adaptief formulier is beschikbaar. Volgende hulplijnen zijn binnenkort beschikbaar. Aan het einde van deze zelfstudie kunt u het volgende doen:
+Deze zelfstudie biedt een end-to-end framework voor het maken van een adaptief formulier. De zelfstudie is ingedeeld in een gebruikscase en meerdere hulplijnen. Met elke handleiding kunt u nieuwe functies toevoegen aan het aangepaste formulier dat in deze zelfstudie wordt gemaakt. U hebt een werkend adaptief formulier na elke hulplijn. De handleiding voor het maken van een adaptief formulier is beschikbaar. Volgende hulplijnen komen binnenkort. Aan het einde van deze zelfstudie moet u het volgende kunnen doen:
 
 * Maak een adaptief formulier- en formuliergegevensmodel.
 * Stijl uw adaptieve formulier.
@@ -43,7 +43,7 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM [!
 
 ### Vereiste {#prerequisite}
 
-* Een [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
+* Een [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installeren [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring-aem-forms-osgi.md) op auteurinstantie.
 * Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. Voorbeelden in de zelfstudie zijn gebaseerd op [!DNL MySQL] database en gebruik [!DNL Oracle's] [MySQL JDBC-databasestuurprogramma](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -59,10 +59,10 @@ Adaptieve formulieren zijn nieuwe generatie, boeiend, responsief, dynamisch en a
 
 Doelstellingen:
 
-* Een adaptief formulier maken waarmee een klant een verzendadres kan toevoegen
-* Indelingsvelden van een adaptief formulier voor het weergeven en accepteren van informatie van een klant
-* Verzendactie maken om een e-mail met formulierinhoud te verzenden
-* Een adaptief formulier voorvertonen en verzenden
+* Maak een adaptief formulier waarmee een klant een verzendadres kan toevoegen.
+* Indelingsvelden van een adaptief formulier voor het weergeven en accepteren van informatie van een klant.
+* Verzendactie maken om een e-mail met formulierinhoud te verzenden.
+* Een voorbeeld bekijken en een adaptief formulier verzenden.
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -74,11 +74,11 @@ Met een formuliergegevensmodel kunt u een adaptief formulier aansluiten op versc
 
 Doelstellingen:
 
-* De database-instantie van de website configureren ([!DNL MySQL] database) als gegevensbronnen
-* Het formuliergegevensmodel maken met [!DNL MySQL] database als gegevensbron
-* Gegevensmodelobjecten toevoegen aan formuliergegevensmodel
-* Lezen- en schrijfservices configureren voor het gegevensmodel van het formulier
-* Formuliergegevensmodel testen en geconfigureerde services met testgegevens
+* De database-instantie van de website configureren ([!DNL MySQL] database) als gegevensbron.
+* Het formuliergegevensmodel maken met [!DNL MySQL] database als gegevensbron.
+* Voeg gegevensmodelvoorwerpen toe zodat kunt u het gegevensmodel vormen.
+* Configureer lees- en schrijfservices voor het model met formuliergegevens.
+* Het model van vormgegevens en de gevormde diensten van de test met testgegevens.
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -90,8 +90,8 @@ Met adaptieve formulieren kunt u in een editor regels schrijven voor adaptieve f
 
 Doelstellingen:
 
-* Regels maken en toepassen op adaptieve formuliervelden
-* Regels gebruiken om services voor formuliergegevensmodellen te activeren voor het bijwerken van gegevens naar een database
+* Maak regels en pas deze toe op adaptieve formuliervelden.
+* Gebruik regels om services van het formuliergegevensmodel te activeren om de gegevens bij te werken naar de database.
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ Adaptieve formulieren bieden thema&#39;s en een [editor](../../forms/using/theme
 
 Doelstellingen:
 
-* Een thema uit het vak toepassen op een adaptief formulier
-* Een thema maken voor een adaptief formulier met de themaeditor
-* Weblettertypen gebruiken in een aangepast thema
+* Pas een uitwendig thema toe op een adaptief formulier.
+* Maak een thema voor een adaptief formulier met de themaeditor.
+* Gebruik Webben Fonts in een aangepast thema.
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ U kunt adaptieve formulieren publiceren als een zelfstandig formulier (toepassin
 
 Doelstellingen:
 
-* Het adaptieve formulier publiceren als een AEM
-* Het adaptieve formulier insluiten in een AEM [!DNL Sites] Pagina
-* Het adaptieve formulier insluiten in een externe webpagina (een niet-AEM webpagina die buiten AEM wordt gehost)
+* Publiceer het adaptieve formulier als een AEM pagina.
+* Het adaptieve formulier insluiten in een AEM [!DNL Sites] Pagina.
+* Sluit het adaptieve formulier in een externe webpagina in (een niet-AEM webpagina die buiten AEM wordt gehost).
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

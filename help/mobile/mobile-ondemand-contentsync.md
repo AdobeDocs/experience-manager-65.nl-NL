@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2971'
 ht-degree: 0%
 
 ---
@@ -38,12 +38,12 @@ Enkele richtlijnen voor het ontwikkelen van Inhoud synchroniseren-handlers zijn 
 
 * Handlers moeten implementeren *com.day.cq.contentsync.handler.ContentUpdateHandler* (rechtstreeks of door een klasse uit te breiden die dit doet)
 * Handlers kunnen *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Handler mag alleen true rapporteren als deze de cache ContentSync bijwerkt. Onjuiste rapportage van true heeft AEM een update gemaakt die niet daadwerkelijk werd uitgevoerd.
+* Handler mag alleen true rapporteren als deze de cache ContentSync bijwerkt. Onjuiste rapportage van true AEM een update maken wanneer er geen update is uitgevoerd.
 * De manager zou slechts het geheime voorgeheugen moeten bijwerken als de inhoud veranderde. Schrijf niet naar de cache als een wit niet nodig is. Hierdoor wordt een onnodige update gemaakt.
 
 >[!NOTE]
 >
->Inschakelen *Foutopsporingsregistratie voor ContentSync* via OSGI-loggerconfiguraties op pakket *com.day.cq.cotentsync*. Dit staat toe om te volgen welke managers in werking stelden en of zij het geheime voorgeheugen bijwerkten en het bijwerken van het geheime voorgeheugen rapporteerden.
+>Inschakelen *Foutopsporingsregistratie voor ContentSync* via OSGI-loggerconfiguraties op pakket *com.day.cq.cotentsync*. Dit laat u volgen welke managers in werking stelden en of zij het geheime voorgeheugen bijwerkten en het bijwerken van het geheime voorgeheugen rapporteerden.
 
 ## Inhoud voor inhoudssynchronisatie configureren {#configuring-the-content-sync-content}
 

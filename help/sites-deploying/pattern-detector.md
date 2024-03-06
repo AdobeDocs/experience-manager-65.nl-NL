@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 1%
+source-wordcount: '500'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Dit zou kunnen dienen als een beoordeling van de ontwikkelingsinspanningen die g
 
 De patroondetector wordt afzonderlijk vrijgegeven als een [één pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) werken aan om het even welke bron AEM versies van 6.1 tot 6.5 richtend AEM 6.5 verbetering. U kunt het programma installeren met de [Pakketbeheer](/help/sites-administering/package-manager.md).
 
-## Het gebruik {#how-to-use}
+## Hoe wordt het gebruikt {#how-to-use}
 
 >[!NOTE]
 >
@@ -210,7 +210,7 @@ Met de uitvoer:
 
 ## Detectiebereik {#scope}
 
-Met de huidige patroondetector kunt u controleren:
+Met de huidige patroondetector kunt u het volgende controleren:
 
 * OSGi bundelt uitvoer en invoer wanverhouding
 * De het verkopen middeltypes en supertypes (met onderzoek-weg inhoudsoverlays) gebruiken

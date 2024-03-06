@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Ontwerpen voor upgrades {#design-for-upgrades}
 
-Bij het uitbreiden van OTB-gedrag is het belangrijk om upgrades in gedachten te houden. Pas altijd aanpassingen in de /apps folder en of bedekking bovenop de overeenkomstige knopen in de /libs folder toe of gebruik het gooien:resourceSuperType om uit het doosgedrag uit te breiden. Hoewel sommige wijzigingen nodig kunnen zijn om een nieuwe AEM te ondersteunen, mag de nieuwe versie uw aanpassingen niet overschrijven als deze praktijk wordt gevolgd.
+Wanneer het uitbreiden van uit-van-de-doos gedrag, is het belangrijk om verbeteringen in mening te houden. Pas altijd aanpassingen in de /apps folder en of bedekking bovenop de overeenkomstige knopen in de /libs folder toe of gebruik het gooien:resourceSuperType om uit het doosgedrag uit te breiden. Hoewel sommige wijzigingen nodig kunnen zijn om een nieuwe AEM te ondersteunen, mag de nieuwe versie uw aanpassingen niet overschrijven als deze praktijk wordt gevolgd.
 
 ### Sjabloon en componenten waar mogelijk opnieuw gebruiken {#reuse-template-and-components-when-possible}
 
@@ -51,7 +51,7 @@ In het Robustness-beginsel staat dat u conservatief moet zijn in wat u verzendt,
 
 ### Voer pieken in hun eigen modules uit {#implement-spikes-in-their-own-modules}
 
-Spikes en testcode maken deel uit van elke Agile-software-implementatie. Nochtans, wilt u ervoor zorgen dat zij niet hun weg naar de basis van de productiecode zonder het aangewezen niveau van toezicht maken. Daarom wordt aangeraden dat spikes in hun eigen module worden gemaakt.
+Spikes en testcode maken deel uit van elke Agile-software-implementatie. U wilt er echter voor zorgen dat ze niet overstappen op de basis van productiecode zonder het juiste niveau van toezicht te hebben. Daarom wordt aangeraden dat spikes in hun eigen module worden gemaakt.
 
 ### Scripts voor gegevensmigratie in hun eigen module implementeren {#implement-data-migration-scripts-in-their-own-module}
 

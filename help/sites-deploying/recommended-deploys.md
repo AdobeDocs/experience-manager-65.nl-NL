@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ De voordelen:
 
 ### Eak-cluster met MongoMK-failover voor hoge beschikbaarheid in één datacenter {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-Deze benadering impliceert veelvoudige instanties van het Eak die tot een replica toegang hebben MongoDB binnen één enkel gegevenscentrum, in feite creërend een actief-actieve cluster voor het AEM auteursmilieu. Replica-sets in MongoDB worden gebruikt om hoge beschikbaarheid en redundantie te bieden in het geval van een hardware- of netwerkstoring.
+Deze benadering impliceert veelvoudige instanties van het Eak die tot een replica toegang hebben MongoDB binnen één enkel gegevenscentrum, in feite creërend een actief-actieve cluster voor het AEM auteursmilieu. Replicasets in MongoDB worden gebruikt om hoge beschikbaarheid en redundantie te bieden in het geval van een hardware- of netwerkstoring.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 

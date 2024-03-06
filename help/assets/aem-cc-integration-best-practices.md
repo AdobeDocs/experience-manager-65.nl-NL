@@ -7,10 +7,10 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3260'
-ht-degree: 14%
+source-wordcount: '3173'
+ht-degree: 9%
 
 ---
 
@@ -86,9 +86,9 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 * **Werk in uitvoering of creatief werk in uitvoering (WIP):** Een fase in de levenscyclus van assets waarbij een asset meerdere wijzigingen ondergaat en doorgaans nog niet klaar is om te worden gedeeld met grotere teams.
 * **Creative-klare middelen:** [!DNL Assets] die klaar zijn om te worden gedeeld met een breder team, of door het creatieve team zijn geselecteerd of goedgekeurd om te worden gedeeld met marketing- of LOB-teams.
 * **Goedkeuring van assets:** Het goedkeuringsproces dat wordt uitgevoerd voor assets die reeds naar DAM zijn geüpload, en dat typisch merkgoedkeuringen, wettelijke goedkeuringen, enz. omvat.
-* **Definitieve asset:** Een asset die alle goedkeuringen/metadatatagging heeft doorlopen en klaar is om door het grotere team te worden gebruikt. Een dergelijke asset wordt opgeslagen in DAM en beschikbaar gesteld aan alle (geïnteresseerde) gebruikers. Deze kan in marketingkanalen of door creatieve teams worden gebruikt om ontwerpen te maken.
-* **Kleine update/wijziging van assets:** Een snelle en kleine wijziging in een digitale asset. Deze wordt vaak uitgevoerd als reactie op een retoucheerverzoek of een verzoek om kleine bewerkingen, een assetrevisie of goedkeuring (bijvoorbeeld om de positie te wijzigen, de tekstgrootte te wijzigen, de verzadiging/helderheid en kleur aan te passen, enz.).
-* **Belangrijke update/wijziging van assets:** Een verandering in een digitale asset die aanzienlijk werk vereist, en soms over een langere periode moet worden uitgevoerd. Dit omvat doorgaans meerdere wijzigingen. De asset moet tijdens het bijwerken meerdere keren worden opgeslagen. De belangrijkste assetupdates leiden er doorgaans toe dat de asset een WIP-status krijgt.
+* **Definitief actief:** Een middel dat door alle goedkeuringen/meta-gegevens het etiketteren is gegaan en klaar is om door het bredere team te worden gebruikt. Een dergelijke asset wordt opgeslagen in DAM en beschikbaar gesteld aan alle (geïnteresseerde) gebruikers. Deze kan in marketingkanalen of door creatieve teams worden gebruikt om ontwerpen te maken.
+* **Kleine update/wijziging van bedrijfsmiddelen:** Een snelle en kleine wijziging in een digitaal middel. Deze wordt vaak uitgevoerd als reactie op een retoucheerverzoek of een verzoek om kleine bewerkingen, een assetrevisie of goedkeuring (bijvoorbeeld om de positie te wijzigen, de tekstgrootte te wijzigen, de verzadiging/helderheid en kleur aan te passen, enz.).
+* **Belangrijke update/wijziging van bedrijfsmiddelen:** Een verandering in een digitaal goed dat aanzienlijk werk vereist, en soms over een langere periode moet gebeuren. Dit omvat doorgaans meerdere wijzigingen. De asset moet tijdens het bijwerken meerdere keren worden opgeslagen. De belangrijkste assetupdates leiden er doorgaans toe dat de asset een WIP-status krijgt.
 * **DAM:** Beheer van digitale assets. In dit document is het synoniem met [!DNL Experience Manager Assets], tenzij uitdrukkelijk anders vermeld.
 * **Creatieve gebruiker:** Een creatieve professional die digitale assets maakt met Creative Cloud-apps en -services. In sommige gevallen is een creatieve gebruiker lid van een creatief team dat mogelijk Creative Cloud gebruikt, maar geen digitale assets maakt (zoals een creatieve directeur of een creatieve teammanager).
 * **DAM-gebruiker:** Een typische gebruiker van een DAM-systeem. Afhankelijk van de organisatie, kan een gebruiker DAM een marketing of een niet-marketing gebruiker, bijvoorbeeld, een lijn-van-Bedrijfs (LOB) gebruiker, bibliothecaris, verkooppersoon, etc. zijn.
@@ -101,12 +101,12 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 
 Dit is een korte samenvatting van beste praktijken voor [!DNL Experience Manager] en [!DNL Creative Cloud] integratie. Lees de rest van dit document voor een gedetailleerd begrip hiervan.
 
-* **Voor creatieve gebruikers die in Photoshop, InDesign of Illustrator werken:** Adobe Asset Link biedt de beste gebruikerservaring, zoals een schone verwerking van het werk in uitvoering op assets die zijn uitgecheckt bij [!DNL Experience Manager].
+* **Voor creatieve gebruikers die in Photoshop, InDesign, of Illustrator werken:** Adobe Asset Link biedt de beste gebruikerservaring, waaronder een schone verwerking van de onderhanden werk op middelen die zijn uitgecheckt van [!DNL Experience Manager].
 * **Voor het vereenvoudigen van de toegang tot middelen van de Desktop voor om het even welke generische dossierformaat of toepassing:** gebruiken [!DNL Experience Manager] bureaubladtoepassing.
-* **Begrijpen waarom en wanneer assets in DAM moeten worden opgeslagen:** Updates die ter beschikking moeten worden gesteld aan een groter team in uw organisatie.
+* **Begrijp waarom en wanneer om activa in DAM op te slaan:** Updates die ter beschikking moeten worden gesteld aan het bredere team in uw organisatie.
 * **Houd rekening met het volume van de gedeelde assets:** Als u gebruikmaakt van assetdistributie, kunnen governance en beveiliging de belangrijkste aspecten zijn. Overweeg om tools te gebruiken die bedoeld zijn om governance en beveiliging op grote schaal toe te passen, zoals de Brand Portal.
 * **De levenscyclus van assets begrijpen:** Begrijp hoe assets in uw organisatie worden verwerkt door verschillende teams
-* **Correct en regelmatig opslaan van assets:** Adobe Asset Link doet dit voor u met PS, AI, ID. Voer voor andere applicaties geen taken in uitvoering uit in een toegewezen/gedeelde map, tenzij u alle wijzigingen in DAM nodig hebt
+* **Correct en regelmatig opslaan van assets:** Adobe Asset Link doet dit voor u met PS, AI, ID. Voer voor andere toepassingen geen actieve taken uit in toegewezen/gedeelde map tenzij u alle wijzigingen in DAM nodig hebt
 
 ### Toegang tot [!DNL Adobe Stock] activa van [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -117,7 +117,7 @@ Een paar belangrijke punten over deze integratie:
 * Wanneer elementen uit voorraad Adobe worden opgeslagen naar [!DNL Experience Manager]worden ze regelmatig [!DNL Assets], met binair bestand opgeslagen op de [!DNL Experience Manager] opslagplaats. Sommige metagegevens die betrekking hebben op [!DNL Adobe Stock] worden opgeslagen voor het element in [!DNL Experience Manager]Anders ziet het innameproces er hetzelfde uit als voor elk ander bestand. Als slimme tags bijvoorbeeld actief zijn, worden de tags bij het opslaan aan deze elementen toegevoegd.
 * Het element dat is opgeslagen naar [!DNL Experience Manager] is een kopie, geen koppeling terug naar [!DNL Adobe Stock].
 
-**Werken met elementen die zijn opgeslagen vanuit [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]**. Deze integratie staat los van [!DNL Adobe Asset Link], maar [!DNL Adobe Asset Link] herkent deze elementen die zijn opgeslagen van [!DNL Stock] op die manier en worden aanvullende metagegevens en een [!DNL Adobe Stock] logo op deze middelen in [!DNL Adobe Asset Link] extensie-UI in [!DNL Photoshop], [!DNL Illustrator], of [!DNL InDesign]. De bestanden zijn beschikbaar voor bladeren, openen, enzovoort, omdat het normale middelen zijn wanneer ze worden opgeslagen naar [!DNL Experience Manager].
+**Werken met elementen die zijn opgeslagen vanuit [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]**. Deze integratie staat los van [!DNL Adobe Asset Link], maar [!DNL Adobe Asset Link] herkent deze elementen die zijn opgeslagen van [!DNL Stock] op die manier en worden aanvullende metagegevens en een [!DNL Adobe Stock] logo op deze middelen in [!DNL Adobe Asset Link] extensie-UI in [!DNL Photoshop], [!DNL Illustrator], of [!DNL InDesign]. De bestanden zijn beschikbaar voor bladeren, openen, enzovoort, omdat het normale elementen zijn wanneer ze worden opgeslagen naar [!DNL Experience Manager].
 Creatieve gebruikers die werken in [!DNL Creative Cloud] apps met [!DNL Adobe Asset Link] de uitbreiding, naast de toegang tot reeds in licentie gegeven activa van [!DNL Adobe Stock] in [!DNL Experience Manager]kan ook [!DNL Creative Cloud] Deelvenster Bibliotheken waarin u kunt zoeken, voorvertonen en licentiëren [!DNL Adobe Stock] activa.
 [!DNL Assets] van [!DNL Adobe Stock] gelicentieerd en opgeslagen in [!DNL Experience Manager] beschikbaar worden voor de bredere teams die toegang hebben tot [!DNL Experience Manager Assets] implementatie, terwijl creatieve klanten hun middelen van [!DNL Adobe Stock] via [!DNL Creative Cloud] Deelvenster Bibliotheken stelt deze alleen standaard beschikbaar in hun [!DNL Creative Cloud] account.
 

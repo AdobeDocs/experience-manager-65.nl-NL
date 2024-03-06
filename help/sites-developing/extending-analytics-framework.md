@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Wanneer u aangepaste JavaScript-code gebruikt om het framework aan te passen, wi
 
 ## Adobe Analytics-eigenschappen configureren {#configuring-adobe-analytics-properties}
 
-Er zijn verscheidene vooraf bepaalde variabelen binnen Adobe Analytics die op een kader configureerbaar zijn. De **charset**, **cookieLifetime**, **currencyCode** en **trackInlineStats** de variabelen worden opgenomen in de **Algemene analytische instellingen** lijst standaard.
+Er zijn verscheidene vooraf bepaalde variabelen binnen Adobe Analytics die op een kader configureerbaar zijn. De **charset**, **cookieLifetime**, **currencyCode**, en **trackInlineStats** de variabelen worden opgenomen in de **Algemene analytische instellingen** lijst standaard.
 
 ![aa-22](assets/aa-22.png)
 
@@ -105,7 +105,7 @@ Gebruik de volgende procedure om variabelen aan de lijst toe te voegen:
 
 >[!CAUTION]
 >
->Sommige variabelen in deze lijst zijn **verplicht** voor Adobe Analytics-aanroepen correct werken, (bijvoorbeeld **currencyCode**, **charSet**)
+>Sommige variabelen in deze lijst zijn **verplicht** voor Adobe Analytics-aanroepen correct werken (bijvoorbeeld **currencyCode**, **charSet**).
 >
 >Dus zelfs als ze uit het framework zelf worden verwijderd, zullen ze nog steeds met een standaardwaarde worden gekoppeld wanneer de Adobe Analytics-oproep wordt gedaan.
 

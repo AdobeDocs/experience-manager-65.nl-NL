@@ -6,10 +6,10 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 2%
+source-wordcount: '1523'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt gecontroleerd, worden de elementen gemakkelijk geïdentificeerd en opgehaald.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt gecontroleerd, worden de elementen gemakkelijk geïdentificeerd en opgehaald.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren van digitale activa die op bedrijfstaxonomie worden gebaseerd hen op de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen.
 
@@ -82,7 +82,7 @@ De service past slimme tags toe op elementuitvoeringen van de volgende MIME-type
 
 De Smart Content Service kan worden aangeschaft als een add-on bij [!DNL Experience Manager]. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar [!DNL Adobe I/O].
 
-De beheerder kan de verbinding volgen om de Slimme Dienst van de Inhoud met te integreren [!DNL Experience Manager]. Om de dienst met te integreren [!DNL Experience Manager Assets], zie [Slimme tags configureren](config-smart-tagging.md).
+De beheerder kan de verbinding volgen om de Slimme Dienst van de Inhoud met te integreren [!DNL Experience Manager]. De service integreren met [!DNL Experience Manager Assets], zie [Slimme tags configureren](config-smart-tagging.md).
 
 Het instapproces is volledig wanneer de beheerder de dienst vormt en gebruikers binnen toevoegt [!DNL Experience Manager].
 
@@ -98,12 +98,11 @@ Voeg de elementen toe aan een map en pas de tags toe op elk element vanaf de eig
 >
 >1. Opleiding is een onherroepelijk proces. Adobe raadt u aan de tags in de gekromde set elementen te controleren voordat u de Smart Content Service op de tags informeert.
 >1. Voor training voor een tag raadpleegt u [Richtlijnen voor training in Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
->1. Wanneer u de Slimme Dienst van de Inhoud voor het eerst opleidt, adviseert Adobe dat u het op minstens twee verschillende markeringen opleidt.
-
+>1. Wanneer u de Slimme Dienst van de Inhoud voor het eerst opleidt, adviseert de Adobe dat u het op minstens twee verschillende markeringen opleidt.
 
 ## Begrijpen [!DNL Experience Manager] zoekresultaten met slimme tags {#understandsearch}
 
-Standaard, [!DNL Experience Manager] zoektermen worden gecombineerd met een `AND` clausule. Het gebruik van slimme tags verandert dit standaardgedrag niet. Met slimme tags voegt u een extra `OR` om een zoekterm te zoeken die verwant is aan de slimme tags. Kijk bijvoorbeeld naar `woman running`. Middelen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat echter is gelabeld met een van de `woman` of `running` het gebruik van slimme tags wordt weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Standaard, [!DNL Experience Manager] zoektermen worden gecombineerd met een `AND` clausule. Het gebruik van slimme tags verandert dit standaardgedrag niet. Met slimme tags voegt u een extra `OR` om een zoekterm te zoeken die verwant is aan de slimme tags. Kijk bijvoorbeeld eens naar `woman running`. Middelen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat echter is gelabeld met een van de `woman` of `running` het gebruik van slimme tags wordt weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
 * Middelen met `woman` en `running` trefwoorden in de metagegevens.
 
@@ -165,7 +164,7 @@ U kunt de tagwerkstroom vanuit de workflowconsole of vanuit de tijdlijn activere
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Selecteer **[!UICONTROL DAM Smart Tag Assets]** en geeft u een titel voor de workflow op.
+1. Selecteer de **[!UICONTROL DAM Smart Tag Assets]** en geeft u een titel voor de workflow op.
 1. Klik op **[!UICONTROL Start]**. De workflow past labels toe op de elementen. Als u wilt controleren of de Smart Content Service uw elementen correct heeft gelabeld, navigeert u naar de map met middelen en controleert u de tags.
 
 >[!NOTE]
@@ -183,7 +182,7 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor
 1. Zoek in het zoekvak naar elementen op basis van een tag als een trefwoord.
 1. Als u een afbeelding wilt identificeren die u niet relevant vindt voor uw zoekopdracht, bekijkt u de zoekresultaten.
 1. Selecteer de afbeelding en klik op **[!UICONTROL Manage Tags]** op de werkbalk.
-1. Van de **[!UICONTROL Manage Tags]** pagina, bekijkt u de tags. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifieke tag, selecteert u de tag en klikt u vervolgens op **[!UICONTROL Delete]** op de werkbalk. U kunt ook op `x` symbool dat naast een tag wordt weergegeven.
+1. Van de **[!UICONTROL Manage Tags]** pagina, bekijkt u de tags. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifieke tag, selecteert u de tag en klikt u op **[!UICONTROL Delete]** op de werkbalk. U kunt ook op `x` wordt weergegeven naast een tag.
 1. Als u een hogere rang aan een tag wilt toewijzen, selecteert u de tag en klikt u op **[!UICONTROL Promote]** op de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
 1. Klikken **[!UICONTROL Save]** en klik vervolgens op **[!UICONTROL OK]**
 1. Ga naar de **[!UICONTROL Properties]** pagina voor de afbeelding. Let erop dat de code die u hebt bevorderd relevanter wordt toegewezen en eerder in de zoekresultaten wordt weergegeven.

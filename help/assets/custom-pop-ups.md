@@ -1,6 +1,6 @@
 ---
 title: Aangepaste pop-ups maken met Snelle weergave
-description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
+description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waardoor pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -8,16 +8,16 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
 # Aangepaste pop-ups maken met Snelle weergave {#using-quickviews-to-create-custom-pop-ups}
 
-De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer kunnen gebruikers met deze functionaliteit een hotspot, miniatuurafbeelding of een afbeelding met hyperlinks selecteren om informatie of verwante inhoud te zien.
+De standaard Snelle mening wordt gebruikt in e-commerceervaringen waardoor pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer kunnen gebruikers met deze functionaliteit een hotspot, miniatuurafbeelding of een afbeelding met hyperlinks selecteren om informatie of verwante inhoud te zien.
 
 QuickView wordt ondersteund door de volgende viewers in Dynamic Media:
 
@@ -163,7 +163,7 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
      Met de variabelen van in kaart gebrachte Snelle mening en de functievraag op zijn plaats, schrijft de browser console de veranderlijke waarde aan de browser console gebruikend de verstrekte steekproeffunctie.
 
 1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een popup.
-1. De pop-up opmaken `DIV` op de volgende wijze. Voeg desgewenst uw eigen aanvullende opmaak toe.
+1. De pop-up opmaken `DIV` op de volgende wijze. Voeg desgewenst uw eigen extra stijlen toe.
 
    ```xml
    <style type="text/css">

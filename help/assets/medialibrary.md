@@ -6,15 +6,15 @@ role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
 
-# Media Library gebruiken voor elementair beheer van bedrijfsmiddelen {#manage-assets-using-media-library}
+# Media Library gebruiken voor elementair middelenbeheer {#manage-assets-using-media-library}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Media Library is een lichte DAM-oplossing (Digital Asset Management) die gratis wordt geleverd met [!DNL Adobe Experience Manager Sites] licentie. [!DNL Sites] is een Web Content Management (WCM)-aanbieding. Media Library werkt met alle mogelijkheden van Experience Manager.
 
-[!DNL Adobe Experience Manager Assets] licentie is apart verkrijgbaar. [!DNL Experience Manager Assets] maakt een robuuste verwerking van bedrijfsmiddelen mogelijk via gevallen voor bedrijfsgebruik, aanpassingen voor metagegevens, schema&#39;s, zoekopdrachten en gebruikersinterface, en vele andere functies die verder gaan dan wat Media Library biedt.
+[!DNL Adobe Experience Manager Assets] licentie is apart verkrijgbaar voor aankoop. [!DNL Experience Manager Assets] maakt een robuuste verwerking van bedrijfsmiddelen mogelijk via gevallen voor bedrijfsgebruik, aanpassingen voor metagegevens, schema&#39;s, zoekopdrachten en gebruikersinterface, en vele andere functies die verder gaan dan wat Media Library biedt.
 
 ## Vergunningsvereisten {#avail-media-library-license}
 
@@ -43,7 +43,7 @@ Als u onbedoeld gebruik van [!DNL Assets] functies waarvoor u geen licentie hebt
 
 Media Library biedt standaard DAM-functies voor de volgende gebruiksgevallen:
 
-* Webpagina&#39;s die zijn gemaakt met [!DNL Adobe Experience Manager Sites].
+* Webpagina&#39;s gemaakt met [!DNL Adobe Experience Manager Sites].
 * Adaptieve formulieren en communicatie die zijn gemaakt met [!DNL Adobe Experience Manager Forms].
 * Ervaringen met digitale schermen die zijn gemaakt met [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] HTTP REST-API&#39;s voor bewerkingen zonder kop.
@@ -74,20 +74,20 @@ Als u de Media Library-functionaliteit wilt gebruiken, kunt u de standaard [!DNL
 * Gebruikersinterface voor middelenbeheer aanpassen en uitbreiden.
 * Heb toegang tot de Bouwer van de Vraag (API) om de onderzoeksfunctionaliteit uit te breiden.
 * Statische tags maken.
-* Ontwerpprojecten en -taken.
+* Projecten en taken van auteurs.
 * Activiteitsstroom (tijdlijn).
 * Opmerkingen en annotaties.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
->Vele geavanceerde gevallen van gebruik van DAM worden vervuld door [!DNL Experience Manager Assets]. Met Media Library-licentie kunt u alleen de vermelde gebruiksgevallen met Media Library afhandelen. Als een gebruiksgeval niet wordt vermeld, gebruik het niet met de vergunning van Media Library. Neem contact op met de Klantenondersteuning van Adobe als u vragen hebt.
+>Vele geavanceerde gevallen van gebruik van DAM worden vervuld door [!DNL Experience Manager Assets]. Met Media Library-licentie kunt u alleen de vermelde gebruiksgevallen met Media Library afhandelen. Als een gebruiksgeval niet wordt vermeld, gebruik het niet met de vergunning van Media Library. Neem contact op met de Klantenondersteuning van de Adobe als u vragen hebt.
 
-U kunt geen slimme tags gebruiken. [!DNL Asset] koppeling, [!DNL Asset] selector, bulksgewijs labelen, workflows voor elementen wijzigen of de standaard [!DNL Adobe Experience Manager] gebruikersinterface voor toegang tot Media Library zonder [!DNL Assets] licentie.
+Let erop dat u geen slimme tags kunt gebruiken. [!DNL Asset] koppeling, [!DNL Asset] selector, bulksgewijs labelen, workflows voor elementen wijzigen of de standaard [!DNL Adobe Experience Manager] gebruikersinterface voor toegang tot Media Library zonder [!DNL Assets] licentie.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
@@ -96,4 +96,3 @@ U kunt geen slimme tags gebruiken. [!DNL Asset] koppeling, [!DNL Asset] selector
 >* [DAM-functies in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)
 >* [[!DNL Experience Manager] 6.5 Managed Services-productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* [[!DNL Experience Manager] 6.5 Productbeschrijving op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
-

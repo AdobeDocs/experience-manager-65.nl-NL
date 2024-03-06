@@ -9,10 +9,10 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 5%
+source-wordcount: '2207'
+ht-degree: 4%
 
 ---
 
@@ -38,8 +38,10 @@ Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste pr
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
-| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Aantal dubbele elementen per set | Geen duplicaten | 20‡ |
 | Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+
+‡ De beste manier is om geen dubbele elementen in een set te hebben. De limiet is 20 duplicaten voor één element. Als u nog een duplicaat voor dat element toevoegt (binnen die set), geeft de aanvraag een fout of wordt het duplicaat genegeerd.
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
@@ -141,8 +143,10 @@ Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste pr
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
-| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Aantal dubbele elementen per set | Geen duplicaten | 20‡ |
 | Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+
+‡ De beste manier is om geen dubbele elementen in een set te hebben. De limiet is 20 duplicaten voor één element. Als u nog een duplicaat voor dat element toevoegt (binnen die set), geeft de aanvraag een fout of wordt het duplicaat genegeerd.
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 

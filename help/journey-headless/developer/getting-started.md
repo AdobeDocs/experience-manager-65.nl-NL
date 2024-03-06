@@ -2,9 +2,9 @@
 title: Aan de slag met AEM Headless
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2999'
 ht-degree: 0%
 
 ---
@@ -258,7 +258,7 @@ Om verkeer en verkeerspatronen te begrijpen begin met het verzamelen van wat u v
 Vaak hebben verschillende secties van ervaringen verschillende frequenties van inhoudsupdates. Het begrip van dit is belangrijk om CDN en geheim voorgeheugenconfiguraties te kunnen verfijnen. Dit is ook belangrijk voor de [Inhoud architecten](#content-architects) terwijl ze modellen ontwerpen voor de weergave van uw inhoud. Overweeg:
 
 * Moeten bepaalde soorten inhoud na een bepaalde periode verlopen?
-* Zijn er elementen die gebruikersspecifiek zijn en daarom niet in het voorgeheugen kunnen worden opgeslagen?
+* Zijn er elementen die gebruikersspecifiek zijn en dus niet in de cache kunnen worden opgeslagen?
 
 ## Volgende functies {#what-is-next}
 

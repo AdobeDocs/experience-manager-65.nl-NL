@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2635'
 ht-degree: 0%
 
 ---
@@ -91,11 +91,11 @@ Word vertrouwd met demoscripts en productfuncties die het vaakst in demo&#39;s w
 
 ### Ontwerpen voor betrouwbaarheid {#design-for-reliability}
 
-We streven ernaar om functies te ontwerpen en te coderen op faalveilige wijze, zodat (bijvoorbeeld) een probleem met één DOM-element er niet toe leidt dat een hele pagina niet wordt weergegeven. Met andere woorden: maak dingen die fataal, fataal zouden moeten zijn. Laat alles overleven. Maak het product &#39;vergeven&#39;.
+We streven ernaar om functies te ontwerpen en te coderen zonder fouten, zodat (bijvoorbeeld) een probleem met één DOM-element er niet toe leidt dat een hele pagina niet wordt weergegeven. Met andere woorden: maak dingen die fataal, fataal zouden moeten zijn. Laat alles overleven. Maak het product &#39;vergeven&#39;.
 
 ### Abnormal is the New Normal {#abnormal-is-the-new-normal}
 
-Vertrouw niet op stophaken, zorg ervoor dat u opschoont bij het opstarten. Abnormale beëindiging is normale beëindiging.
+U moet opruimen bij het opstarten en niet afhankelijk zijn van de afsluithaken. Abnormale beëindiging is normale beëindiging.
 
 `shutdown == kill -9 == power outage`
 
@@ -113,7 +113,7 @@ Bestaande API&#39;s kunnen en moeten worden gemarkeerd als afgekeurd wanneer ze 
 
 Achterwaartse compatibiliteit moet ook in aanmerking worden genomen met betrekking tot de algemene consistentie van de inhoudsstructuur en gebruikerservaring.
 
-## Kernbegrippen {#core-concepts}
+## Basisconcepten {#core-concepts}
 
 **Instantie van auteur** - Gewoonlijk worden instanties van AEM door een productiesite om beveiligings-, bestuurs- en andere redenen opgedeeld in instanties van Auteurs en Publiceren. Voor meer informatie over plaatsingsarchitectuur (met inbegrip van auteur/publiceer instanties), zie documentatie over AEM Instanties.
 

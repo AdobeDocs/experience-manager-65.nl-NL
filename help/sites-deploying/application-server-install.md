@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 0%
@@ -175,7 +175,7 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
    * uncomment sling.home aanvankelijke parameter en reeks dit weg zoals u nodig hebt (zie Algemene Beschrijving)
    * Het bestand web.xml herstellen
 
-* Implementeer AEM oorlogsbestand als een toepassing (voor de andere instellingen worden de standaardinstellingen gebruikt)
+* Implementeer AEM oorlogsbestand als een toepassing (voor de andere instellingen gebruikt u de standaardinstellingen)
 * De installatie kan tijd in beslag nemen...
 * Controleer of de installatie is voltooid zoals hierboven vermeld in de algemene beschrijving (bijvoorbeeld door te tikken op error.log)
 * U kunt de basisinhoud van de context wijzigen op het tabblad Configuratie van de webtoepassing in de WebLogic `/console`

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
@@ -62,11 +62,11 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
    >
    >App Authors extends the default content-authors (Authors) group from AEM, so that they inherit the ability to create content under /content/phonegap
 
-### AEM Mobile Application Administrators Group (app-admins-groep) {#aem-mobile-application-administrators-group-app-admins-group}
+### AEM Mobile Application Administrators Group (groep toepassingsbeheerders) {#aem-mobile-application-administrators-group-app-admins-group}
 
 Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen maken die bij de auteur van de app worden geleverd **EN** voorts zijn ook verantwoordelijk voor :
 
-* Cloudservices voor PhoneGap Build en Adobe Mobile Services configureren in AEM
+* PhoneGap Build en Adobe mobiele services in AEM configureren
 * OTA-updates voor inhoudssynchronisatie van toepassingen opslaan, publiceren en wissen
 
 >[!NOTE]
@@ -78,7 +78,7 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
 #### Groepsconfiguratie - app-beheerders {#group-configuration-app-admins}
 
 1. Maak een groep met de naam app-admins.
-1. Voeg de volgende groepen toe aan uw nieuwe app-admins-groep:
+1. Voeg de volgende groepen toe aan uw nieuwe groep voor toepassingsbeheer:
 
    * content-authors
    * workflowgebruikers
@@ -101,7 +101,7 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
 
    >[!CAUTION]
    >
-   >/var/contentSync toegang wordt geweigerd OOTB.
+   >/var/contentSync toegang wordt geweigerd buiten-van-de-doos.
    >
    >Als u de machtiging LEZEN weglaat, kunnen lege updatepakketten worden gemaakt en gerepliceerd.
 

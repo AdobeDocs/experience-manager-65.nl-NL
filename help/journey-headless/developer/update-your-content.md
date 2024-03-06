@@ -2,10 +2,10 @@
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 1%
+source-wordcount: '1029'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +45,7 @@ Met de HTTP-API voor middelen kunt u **Lezen** uw inhoud, maar het laat u ook **
 
 De REST-API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager-versie die buiten de box valt.
 
-## HTTP-API voor assets {#assets-http-api}
+## Elementen HTTP-API {#assets-http-api}
 
 De HTTP-API voor Middelen omvat:
 
@@ -313,7 +313,7 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Have experience with sample code and know how the API works in practice.
 -->
 
-<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+<!-- The "How to put it all together" page is not going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
@@ -321,12 +321,12 @@ U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Hoe 
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [HTTP-API voor assets](/help/assets/mac-api-assets.md)
+* [Elementen HTTP-API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/assets-api-content-fragments.md)
    * [API-naslag](/help/assets/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
-* [AEM-kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM toegelicht](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * An [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)

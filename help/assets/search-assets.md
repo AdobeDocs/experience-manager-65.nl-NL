@@ -7,10 +7,10 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '5679'
-ht-degree: 4%
+source-wordcount: '5593'
+ht-degree: 3%
 
 ---
 
@@ -155,7 +155,7 @@ Van binnen [!DNL Experience Manager] gebruikersinterface, gebruikers kunnen zoek
 
 ### Dynamic Media-middelen {#dmassets}
 
-U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
+U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filter en toont activa zoals beeldreeksen, carrousels, gemengde media reeksen, en spin reeksen.
 
 ### GQL-zoekopdracht met specifieke waarden in metagegevensvelden {#gql-search}
 
@@ -305,7 +305,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 *Afbeelding: Gedrag zoeken met en zonder aanhalingstekens.*
 
-**Zoeken met jokerteken voor sterretje**: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld,
+**Zoeken met jokerteken voor sterretje**: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld:
 
 * `run` retourneert elementen met trefwoord exact uitvoeren
 * `run*` retourneert elementen met `running`, `run`, `runaway`, enzovoort.
@@ -426,7 +426,7 @@ U kunt het volgende doen met de middelen u hebt gezocht in [!DNL Experience Mana
 
 ### Zoekresultaten sorteren {#sort}
 
-U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten alleen sorteren in de lijstweergave en wanneer u **[[!UICONTROL Files]](#searchui)** van de **[!UICONTROL Filters]** deelvenster. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten alleen sorteren in de lijstweergave en wanneer u **[[!UICONTROL Files]](#searchui)** van de **[!UICONTROL Filters]** deelvenster. [!DNL Assets] gebruikt sorteren op de server om snel alle elementen (hoe talrijk ook) in een map of resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
 In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensionen, Grootte, Classificatie, Gebruik, Gemaakt, Gewijzigd, Gepubliceerd, Workflow en Uitgecheckt.
 

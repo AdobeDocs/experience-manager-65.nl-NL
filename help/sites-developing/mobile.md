@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3722'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ De **We.Retail Mobile Demo Site** gebruikt de volgende mobiele componenten die z
 
 #### Een mobiele component maken {#creating-a-mobile-component}
 
-Met het AEM mobiele framework kunt u componenten ontwikkelen die gevoelig zijn voor het apparaat dat het verzoek doet. De volgende codevoorbeelden laten zien hoe u de AEM mobiele API in een componentspaak kunt gebruiken en vooral hoe u dit kunt doen:
+Met het AEM mobiele framework kunt u componenten ontwikkelen die gevoelig zijn voor het apparaat dat de aanvraag doet. De volgende codevoorbeelden laten zien hoe u de AEM mobiele API in een componentspaak kunt gebruiken en vooral hoe u dit kunt doen:
 
 * Haal het apparaat op uit de aanvraag:
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -355,7 +355,7 @@ AEM ondersteunt apparaatclientdetectie op basis van `BrowserMap`. `BrowserMap` w
 
 >[!NOTE]
 >
-Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
+>Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
 
 ### Alternatieve koppelingen opgeven {#providing-alternate-links}
 
@@ -374,17 +374,17 @@ Wanneer de waarde van de `cq:variantDomain` eigenschap van een `cq:siteVariant` 
 
 >[!NOTE]
 >
-Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 ### Een apparaatgroepspecifieke URL definiëren {#defining-a-device-group-specific-url}
 
-Als u geen alternatieve verbindingen wilt gebruiken, kunt u een globale URL voor elk vormen `DeviceGroup`. Adobe raadt u aan uw eigen clientbibliotheek te maken waarin de `browsermap.standard` clientbibliotheek, maar definieert de apparaatgroepen opnieuw.
+Als u geen alternatieve koppelingen wilt gebruiken, kunt u voor elke koppeling een algemene URL configureren `DeviceGroup`. Adobe raadt u aan uw eigen clientbibliotheek te maken waarin de `browsermap.standard` clientbibliotheek, maar definieert de apparaatgroepen opnieuw.
 
 BrowserMap is zodanig ontworpen dat de definities van apparaatgroepen kunnen worden overschreven door een apparaatgroep met dezelfde naam te maken en aan de `BrowserMap` -object uit uw aangepaste clientbibliotheek.
 
 >[!NOTE]
 >
-Zie voor meer informatie [Aangepaste BrowserMap](#creatingacustomisedbrowsermap).
+>Zie voor meer informatie [Aangepaste BrowserMap](#creatingacustomisedbrowsermap).
 
 ### Op kiezers gebaseerde URL&#39;s definiëren {#defining-selector-based-urls}
 
@@ -410,7 +410,7 @@ Bovendien moet u manueel roepen `BrowserMap.forwardRequest()` in uw `JavaScript`
 
 >[!NOTE]
 >
-Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
+>Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
 
 Nadat u de aangepaste `BrowserMap` clientbibliotheek stelt de Adobe de volgende aanpak voor:
 
@@ -496,7 +496,7 @@ Nadat u de aangepaste `BrowserMap` clientbibliotheek stelt de Adobe de volgende 
 
 ### BrowserMap uitsluiten van bepaalde pagina&#39;s {#excluding-browsermap-from-certain-pages}
 
-Als u de bibliotheek BrowserMap van sommige van uw pagina&#39;s zou willen uitsluiten waar u geen cliënt-opsporing nodig hebt, kunt u een verzoekattribuut toevoegen:
+Als u de BrowserMap-bibliotheek wilt uitsluiten van sommige van uw pagina&#39;s waarvoor geen clientdetectie nodig is, kunt u een aanvraagkenmerk toevoegen:
 
 ```xml
 <%
@@ -520,7 +520,7 @@ U kunt het apparaat van om het even welk verzoek dwingen om een specifieke versi
 
 >[!NOTE]
 >
-De `wcmmode` parameter is ingesteld op `disabled` om het gedrag van een publicatie-instantie te simuleren.
+>De `wcmmode` parameter is ingesteld op `disabled` om het gedrag van een publicatie-instantie te simuleren.
 
 De overschrijvende apparaatwaarde wordt opgeslagen in een cookie, zodat u door uw website kunt bladeren zonder de `device` parameter voor elke `URL`.
 
@@ -528,7 +528,7 @@ Dientengevolge moet u het zelfde roepen `URL` met de `device` instellen op `brow
 
 >[!NOTE]
 >
-BrowserMap slaat de het met voeten treden apparatenwaarde in genoemd koekje op `BMAP_device`. Als u deze cookie verwijdert, zorgt u ervoor dat CQ de juiste versie van de website aanbiedt op basis van uw huidige apparaat (bijvoorbeeld bureaublad of mobiel).
+>BrowserMap slaat de het met voeten treden apparatenwaarde in genoemd koekje op `BMAP_device`. Als u deze cookie verwijdert, zorgt u ervoor dat CQ de juiste versie van de website aanbiedt op basis van uw huidige apparaat (bijvoorbeeld bureaublad of mobiel).
 
 ## Mobiele aanvraagverwerking {#mobile-request-processing}
 
@@ -564,7 +564,7 @@ De **Statistieken** De pagina ziet er als volgt uit:
 
 >[!NOTE]
 >
-De **Statistieken** Deze pagina wordt gemaakt wanneer een mobiel apparaat voor het eerst toegang krijgt tot AEM en wordt gedetecteerd. Daarvoor is het niet beschikbaar.
+>De **Statistieken** Deze pagina wordt gemaakt wanneer een mobiel apparaat voor het eerst toegang krijgt tot AEM en wordt gedetecteerd. Daarvoor is het niet beschikbaar.
 
 Als u een ingang in de statistieken moet produceren, kunt u als volgt te werk gaan:
 

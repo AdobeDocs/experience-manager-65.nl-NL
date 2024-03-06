@@ -2,9 +2,9 @@
 title: Aangepaste HTTP-headers
 description: Leer hoe te om de Kopballen van douaneHTTP in de Handel van Adobe Experience Manager te vormen.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ De componenten die de bovenstaande cloudserviceconfiguratie gebruiken, verzenden
 
 ## Beperkingen {#restrictions}
 
-Terwijl de dienst voor om het even welke kopbalnamen om toestaat worden bepaald, met inbegrip van de standaarddegenen, zullen zij niet voor het vormen beschikbaar zijn. Met andere woorden, u kunt de standaard HTTP-headers niet overschrijven met deze functie. Een lijst met beperkte koptekstnamen vindt u [hier](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Daarnaast zijn er nog twee headers die niet kunnen worden gebruikt:
+Terwijl de dienst voor om het even welke kopbalnamen om toestaat worden bepaald, met inbegrip van de standaarddegenen, zijn zij niet beschikbaar voor het vormen. Met andere woorden, u kunt de standaard HTTP-headers niet overschrijven met deze functie. Een lijst met beperkte koptekstnamen vindt u [hier](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Daarnaast zijn er nog twee headers die niet kunnen worden gebruikt:
 
 * &quot;Winkel&quot; - wordt door CIF gebruikt om de Adobe Commerce-winkel te identificeren
 * &quot;Voorvertoning-versie&quot; - wordt gebruikt door CIF om gefaseerde producten op te halen

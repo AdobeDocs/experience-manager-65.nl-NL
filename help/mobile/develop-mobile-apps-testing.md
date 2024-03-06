@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 2c0e3052e32e32f794faa69177d5fdad95bec72f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Bij het ontwikkelen van een mobiele app zijn er veel nieuwe problemen die specif
 
 * Functioneel - Voldoet uw app aan alle vereisten?
 * Gebruiksmogelijkheden - Is de toepassing gebruiksvriendelijk en begrijpelijk voor uw klant?
-* Prestaties - Wat gebeurt er tijdens een piek in het gebruik? Zijn de app-elementen, zoals vegen en carrousels, snel en trekken ze niet af van de ervaring?
+* Prestaties - Wat gebeurt er tijdens een piek in het gebruik? Zijn de app-elementen, zoals vegen en carrousels, snel en doen ze niets af aan de ervaring?
 * Mislukking of Onderbreking - wat gebeurt wanneer er een inkomende vraag of bericht terwijl uw app loopt is? Wat gebeurt als er een netwerkstroomonderbreking of macht weg is?
 * Installatie en updates - Hoe wordt de installatie uitgevoerd? Hoe worden updates uitgeduwd?
 * Technisch - verbruikt uw app te veel stroom van een apparaat?

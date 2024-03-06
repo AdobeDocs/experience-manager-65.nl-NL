@@ -2,9 +2,9 @@
 title: Pad naar uw eerste ervaring met AEM zonder kop
 description: In dit deel van de AEM Headless Developer Journey zult u de stappen begrijpen voor het implementeren van uw eerste headless ervaring in AEM met planningsoverwegingen en leert u ook best practices om uw pad zo vloeiend mogelijk te maken.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Dit is een overzicht van wat nodig is om uw eerste app zonder koppen te implemen
 1. Inhoudsfragmenten maken
 1. Query-inhoud uitvoeren met GraphQL
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 Een project zonder kop is niet alleen succesvol vanwege de geïmplementeerde technologie, maar ook vanwege goede planning en projectbestuur. Hier volgt een aantal aanbevolen procedures voor auteurs en ontwikkelaars van inhoud om hiermee rekening te houden wanneer u uw project plant.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ In de basis van de AEM code worden de volgende conventies gebruikt:
 * Java™-implementaties worden in een impl-pakket onder de bijbehorende API geplaatst.
 
 
-Deze overeenkomsten zijn niet noodzakelijk op klantenimplementaties van toepassing, maar het is belangrijk dat de overeenkomsten worden bepaald en vastgehouden zodat de code kan handhaven.
+Deze overeenkomsten zijn niet noodzakelijk van toepassing op klantenimplementaties, maar het is belangrijk dat de overeenkomsten worden bepaald en vastgehouden zodat de code houdbaar kan blijven.
 
 In het ideale geval zouden namen hun intentie moeten onthullen. Een gemeenschappelijke codetest voor wanneer de namen niet zo duidelijk zijn aangezien zij zouden moeten zijn de aanwezigheid van commentaren die verklaren wat de variabele of de methode voor zijn:
 

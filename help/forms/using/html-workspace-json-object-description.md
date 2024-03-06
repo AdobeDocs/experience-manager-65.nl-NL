@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2144'
 ht-degree: 0%
 
 ---
@@ -330,7 +330,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
    <td>T</td>
-   <td>Het bevat bevelen zoals slot, ontgrendelen, verlaten, terugkeer, eis, etc. zoals beschikbaar.<br /> </td>
+   <td>Het bevat bevelen zoals slot, ontgrendelen, verlaten, terugkeer, eis, etc., zoals beschikbaar.<br /> </td>
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td>

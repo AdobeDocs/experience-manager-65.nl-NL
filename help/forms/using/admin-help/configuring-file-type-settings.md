@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '5889'
+source-wordcount: '5891'
 ht-degree: 0%
 
 ---
@@ -249,7 +249,7 @@ Voor instructies over het verkrijgen van toegang tot deze instelling raadpleegt 
 
    * Selecteer zo nodig een andere map met lettertypen in het menu **Fontbron** vervolgkeuzelijst. In dit vervolgkeuzemenu worden de mappen met fonts weergegeven die zijn opgegeven in **Home > Settings > Core System > Core Configurations**.
    * Selecteer een of meer lettertypen in het menu **Beschikbare lettertypen** lijst en klik op **Toevoegen**. Deze lettertypen worden toegevoegd aan de **Te verwijderen ingesloten fonts** lijst.
-   * Als u de insluiting van sommige lettertypen die niet op de Forms-server bestaan, ongedaan wilt maken, voert u de namen van die lettertypen in het dialoogvenster **Fonts toevoegen aan niet-insluiting** doos. Klikken **Toevoegen**.
+   * Als u de insluiting van sommige lettertypen die niet op de Forms-server bestaan, ongedaan wilt maken, voert u de namen van deze lettertypen in het dialoogvenster **Fonts toevoegen aan niet-insluiting** doos. Klikken **Toevoegen**.
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ Selecteren **Transparantie** om de transparantie-instellingen te configureren ti
 >
 >Verloop- en netresolutie moet doorgaans worden ingesteld op 150-300 ppi, omdat de kwaliteit van de verlopen, slagschaduwen en doezelaars niet verbetert bij hogere resoluties, maar doordat de afdruktijd en de bestandsgrootte toenemen.
 
-**Alle tekst omzetten in contouren** Hiermee worden alle tekstobjecten (punttekst, vlaktekst en padtekst) omgezet in contouren en wordt alle informatie over tekstglyphs op pagina&#39;s met transparantie genegeerd. Met deze optie blijft de breedte van tekst tijdens het afvlakken consistent. Houd er rekening mee dat kleine lettertypen hierdoor iets dikker worden weergegeven in Acrobat of worden afgedrukt op desktopprinters met een lage resolutie. Het heeft geen invloed op de kwaliteit van de tekst die wordt afgedrukt op printers of imagesetters met hoge resolutie.
+**Alle tekst omzetten in contouren** Hiermee worden alle tekstobjecten (punttekst, vlaktekst en padtekst) omgezet in contouren en wordt alle informatie over tekstglyphs op pagina&#39;s met transparantie genegeerd. Met deze optie blijft de breedte van tekst tijdens het afvlakken consistent. Houd er rekening mee dat kleine lettertypen hierdoor iets dikker worden weergegeven in Acrobat of worden afgedrukt op desktopprinters met een lage resolutie. Dit heeft geen invloed op de kwaliteit van de tekst die wordt afgedrukt op printers of imagesetters met hoge resolutie.
 
 **Alle lijnen converteren naar contouren** Hiermee zet u alle lijnen om in eenvoudige gevulde paden op pagina&#39;s met transparantie. Met deze optie blijft de breedte van lijnen tijdens het afvlakken consistent. Houd er rekening mee dat dunne lijnen hierdoor iets dikker worden weergegeven en dat de prestaties van de afvlakking kunnen afnemen.
 

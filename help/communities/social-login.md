@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ De sociale aanmelding en het voorbeeld van de wij-retail Facebook werden ontwikk
 
 >[!NOTE]
 >
->Voor oudere AEM als u wordt geconfronteerd met een uitzondering in logboeken **Kan hier geen token uit extraheren**, upgrade naar het nieuwste GVB voor die AEM.
+>Voor oudere AEM als u wordt geconfronteerd met een uitzondering in logboeken **Kan geen token uit dit bestand extraheren**, upgrade naar het nieuwste GVB voor die AEM.
 
 Voor de Facebook Graph API-versiegegevens raadpleegt u de [Facebook API-wijziging](https://developers.facebook.com/docs/apps/changelog).
 
@@ -122,9 +122,9 @@ De [Adobe granite OAuth Application and Provider](#adobe-granite-oauth-applicati
 
    >[!NOTE]
    >
-   >Groepen kunnen op elk gewenst moment worden toegevoegd of verwijderd. Maar het lidmaatschap van bestaande gebruikers wordt hierdoor niet beïnvloed. Automatisch lidmaatschap is alleen van toepassing op nieuwe gebruikers die worden gemaakt na deze veldupdate. Voor sites waar anonieme gebruikers zijn uitgeschakeld, kiest u ervoor gebruikers toe te voegen aan de overeenkomende groep met leden van de community die voor die gesloten communitysite is bedoeld.
+   >Groepen kunnen op elk gewenst moment worden toegevoegd of verwijderd. Het lidmaatschap van bestaande gebruikers wordt echter niet beïnvloed. Automatisch lidmaatschap is alleen van toepassing op nieuwe gebruikers die worden gemaakt na deze veldupdate. Voor sites waar anonieme gebruikers zijn uitgeschakeld, kiest u ervoor gebruikers toe te voegen aan de overeenkomende groep met leden van de community die voor die gesloten communitysite is bedoeld.
 
-   * Selecteer **[!UICONTROL SAVE]**.
+   * Selecteren **[!UICONTROL SAVE]**.
    * **[!UICONTROL Publish]**.
 
 Het resultaat is [Adobe granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) instantie die geen verdere wijziging vereist tenzij het toevoegen van extra werkingsgebied (toestemmingen). Het standaardbereik is de standaardmachtigingen voor Facebook-aanmelding. Als extra werkingsgebied wordt gewenst, is het noodzakelijk om de configuratie direct uit te geven OSGI. Als er aanpassingen rechtstreeks via systeem/console worden uitgevoerd, moet u de configuraties van de cloudservice niet via de interface van de aanraakinterface bewerken om te voorkomen dat deze worden overschreven.
@@ -155,11 +155,11 @@ Als bewerken nodig is, wordt op elke AEM-publicatie-instantie het volgende weerg
 
    * **[!UICONTROL Cloud Service Config]**
 
-     De standaardwaarde is `/etc/  cloudservices /  facebookconnect`. Niet bewerken.
+     Standaardwaarde is `/etc/  cloudservices /  facebookconnect`. Niet bewerken.
 
    * **[!UICONTROL OAuth Provider Service Config]**
 
-     De standaardwaarde is `/apps/social/facebookprovider/config/`. Niet bewerken.
+     Standaardwaarde is `/apps/social/facebookprovider/config/`. Niet bewerken.
 
    * **[!UICONTROL Enable Tags]**
 
@@ -229,7 +229,7 @@ In het algemeen:
 
 In de sectie met machtigingen voor toepassingsbeheer van de Twitter:
 
-* **[!UICONTROL Access]**: Selecteer `Read only`.
+* **[!UICONTROL Access]**: Select `Read only`.
 
    * Andere opties worden niet ondersteund
 
@@ -362,7 +362,7 @@ Zodra een wolkendienst wordt gevormd, kan het voor het relevante Sociale Aanmeld
 * Controleer of de site van de community is gepubliceerd.
 * Start de gepubliceerde site in een browser.
 Bijvoorbeeld http://localhost:4503/content/sites/engage/en.html
-* Selecteer **[!UICONTROL Login In]**.
+* Selecteren **[!UICONTROL Login In]**.
 * Selecteer een van beide **[!UICONTROL Sign in with Facebook]** of **[!UICONTROL Sign in with Twitter]**.
 * Als u zich nog niet hebt aangemeld bij Facebook of Twitter, meldt u zich aan met de juiste referenties.
 * Het kan nodig zijn machtigingen te verlenen afhankelijk van het dialoogvenster dat wordt weergegeven door de Facebook- of Twitter-app.
@@ -382,7 +382,7 @@ Om de authentificatiemanager bij toe te laten publiceren, open eenvoudig OSGi co
 Bijvoorbeeld http://localhost:4503/system/console/configMgr
 * Zoeken `Adobe Granite OAuth Authentication Handler`.
 * Selecteer deze optie om de configuratie voor bewerking te openen.
-* Selecteer **[!UICONTROL Save]**.
+* Selecteren **[!UICONTROL Save]**.
 
 ![graniteoauth](assets/graniteoauth.png)
 
@@ -463,9 +463,9 @@ Op een instantie van de auteur, aangemeld met beheerdersrechten:
 
    * Onder knooppunt `/oak:index`
    * Knooppunt selecteren `ntBaseLucene`
-   * Selecteer **[!UICONTROL Copy]**
-   * Selecteer `/oak:index`
-   * Selecteer **[!UICONTROL Paste]**
+   * Selecteren **[!UICONTROL Copy]**
+   * Selecteren `/oak:index`
+   * Selecteren **[!UICONTROL Paste]**
    * Naam van kopie van ntBaseLucene wijzigen in `ntBaseLucene-oauth`
 
 1. Wijzig de eigenschappen van node ntBaseLucene-oauth:
@@ -483,7 +483,7 @@ Op een instantie van de auteur, aangemeld met beheerdersrechten:
 
       * **[!UICONTROL name]**: `oauthid-123****`
 
-   * Selecteer **[!UICONTROL Save All]**.
+   * Selecteren **[!UICONTROL Save All]**.
 
 * Voor de **name** `oauthid-123`vervangen *123* met de Facebook ***Toepassings-id*** of Twitter ***Consumentencode (API)*** dat de waarde van de **Client-id** in de [Adobe granite OAuth Application and Provider](social-login.md#adobe-granite-oauth-application-and-provider) configuratie.
 

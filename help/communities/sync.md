@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 1%
+source-wordcount: '2403'
+ht-degree: 0%
 
 ---
 
@@ -253,7 +253,7 @@ Op elke AEM-publicatie-instantie:
 
    De knooppunttypen die in deze eigenschap worden opgegeven, worden gesynchroniseerd en de meldingen (blogs en configuraties gevolgd) worden gesynchroniseerd tussen verschillende uitgevers.
 
-1. Alle mappen toevoegen om in te synchroniseren **DistributedFolders**. Bijvoorbeeld,
+1. Alle mappen toevoegen om in te synchroniseren **DistributedFolders**. Bijvoorbeeld:
 
    `segments/scoring`
 
@@ -267,7 +267,7 @@ Op elke AEM-publicatie-instantie:
 
    `system`
 
-   `rep:cache` (aangezien wij kleverige zittingen gebruiken, hoeven wij dit knoop niet aan verschillende uitgevers te synchroniseren).
+   `rep:cache` (omdat er kleverige sessies worden gebruikt, hoeft u dit knooppunt niet te synchroniseren met verschillende uitgevers).
 
    ![user-sync-listener](assets/user-sync-listner.png)
 
@@ -275,7 +275,7 @@ Op elke AEM-publicatie-instantie:
 
 AEM auteurinstantie gebruikt Verschuivende identiteitskaart om te identificeren van waar de gegevens komen en aan welke uitgevers het (of niet nodig) het pakket moet terugsturen naar.
 
-Zorg ervoor alle uitgevers in een publicatielandbouwbedrijf een unieke Verkoop identiteitskaart hebben Als het Verdelen identiteitskaart het zelfde voor veelvoudige publiceer instanties in publiceer landbouwbedrijf is, dan ontbreekt de gebruikerssynchronisatie. Aangezien de auteur niet zal weten waar te om het pakket van en te halen waar te om het pakket te installeren.
+Zorg ervoor alle uitgevers in een publicatielandbouwbedrijf een unieke Verkoop identiteitskaart hebben Als het Verdelen identiteitskaart het zelfde voor veelvoudige publiceer instanties in publiceer landbouwbedrijf is, dan ontbreekt de gebruikerssynchronisatie. Aangezien de auteur niet weet waar het pakket moet worden opgehaald en waar het pakket moet worden geïnstalleerd.
 
 Om ervoor te zorgen dat uitgevers in het publicatielandbouwbedrijf unieke verkoopidentiteitskaart van uitgevers, op elke Publish instantie:
 

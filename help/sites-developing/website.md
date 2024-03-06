@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4941'
+source-wordcount: '4920'
 ht-degree: 1%
 
 ---
@@ -861,7 +861,7 @@ Voer de volgende stappen uit om het logo-onderdeel te maken:
 
    * Label: `logo`.
    * Titel: `My Logo Component`.
-   * Beschrijving: `This is My Logo Component`.
+   * Omschrijving: `This is My Logo Component`.
 
 1. Klik op Volgende totdat u het laatste deelvenster van het dialoogvenster bereikt en klik vervolgens op **OK**.
 
@@ -925,9 +925,9 @@ Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerp
    |---|---|---|
    | fileNameParameter | String | ./imageName |
    | fileReferenceParameter | String | ./imageReference |
-   | name | String | ./afbeelding |
+   | name | String | ./image |
    | titel | String | Afbeelding |
-   | xtype | String | html5smartimage |
+   | xtype | String | html5smartImage |
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
@@ -968,7 +968,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 
@@ -1147,7 +1147,7 @@ Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te
 
 In deze sectie wordt beschreven hoe u het afbeeldingsscript maakt.
 
-1. Open `/apps/mywebsite/components/image/` `image.jsp`
+1. Openen `/apps/mywebsite/components/image/` `image.jsp`
 1. Vervang de bestaande code door de volgende code en sla de wijzigingen vervolgens op:
 
    ```xml
@@ -1286,7 +1286,7 @@ Wanneer u klaar bent, ziet uw zoekinvoervak er als volgt uit op het tabblad **En
 1. Kopieer de volgende knooppunten en plak deze naar apps/mywebsite/components/search node:
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &quot; `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

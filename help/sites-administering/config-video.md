@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # De component Video configureren {#configure-the-video-component}
 
-De [Video-component](/help/sites-authoring/default-components-foundation.md#video) Hiermee kunt u een vooraf gedefinieerd, out-of-the-box (OOTB) video-element op uw pagina plaatsen.
+De [Video-component](/help/sites-authoring/default-components-foundation.md#video) Hiermee kunt u een vooraf gedefinieerd, out-of-the-box video-element op uw pagina plaatsen.
 
 Een beheerder installeert FMPEG afzonderlijk om ervoor te zorgen dat de juiste transcodering plaatsvindt. Zie [Mpeg installeren en AEM configureren](#install-ffmpeg). Beheerders [Videoprofielen configureren](#configure-video-profiles) voor gebruik met HTML5-elementen.
 
@@ -81,4 +81,4 @@ Naar **AEM configureren** Voer de volgende stappen uit:
 
 >[!NOTE]
 >
->Wijzigingen in de standaard out-of-the-box (OOTB)-workflowmodellen blijven niet behouden wanneer u een upgrade uitvoert van de AEM. Adobe raadt u aan de gewijzigde workflowmodellen te kopiëren voordat u deze gaat bewerken. Kopieer bijvoorbeeld de OOTB [!UICONTROL DAM Update Asset] model voordat u de coderingsstap MPEG in het dialoogvenster [!UICONTROL DAM Update Asset] model voor het selecteren van namen voor videoprofielen die vóór de upgrade bestonden. Vervolgens kunt u de `/apps` knoop om AEM de douaneveranderingen in het model te laten terugwinnen OTB.
+>Wijzigingen in de standaard out-of-the-box workflowmodellen blijven niet behouden wanneer u een upgrade uitvoert van de AEM. Adobe raadt u aan de gewijzigde workflowmodellen te kopiëren voordat u deze gaat bewerken. Bijvoorbeeld, kopieer uit-van-de-doos [!UICONTROL DAM Update Asset] model voordat u de coderingsstap MPEG in het dialoogvenster [!UICONTROL DAM Update Asset] model voor het selecteren van namen voor videoprofielen die vóór de upgrade bestonden. Vervolgens kunt u de `/apps` knoop om de douaneveranderingen in het uit-van-de-doosmodel AEM terug te winnen.

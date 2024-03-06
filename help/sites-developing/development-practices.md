@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ De Scouten van de Jongen hebben een regel: &quot;Laat het beter dan je vond.&quo
 
 ### Gebruik geen YAGNI-functies {#avoid-implementing-yagni-features}
 
-YAGNI (U hebt het niet nodig) zijn functies die worden geïmplementeerd wanneer we verwachten dat we in de toekomst iets nodig hebben, ook al hebben we het nu niet nodig. In het ideale geval moeten we het eenvoudigste ding implementeren dat vandaag werkt en ononderbroken refactoring gebruiken om ervoor te zorgen dat de architectuur van het systeem in de loop der tijd evolueert met de vereisten. Hierdoor kunnen we ons concentreren op wat er belangrijk is en codeblok en functieschepping voorkomen.
+YAGNI (U zult het niet nodig hebben) zijn kenmerken die worden geïmplementeerd wanneer we verwachten dat we in de toekomst iets nodig hebben, ook al hebben we het nu niet nodig. In het ideale geval moeten we het eenvoudigste ding implementeren dat vandaag werkt en ononderbroken refactoring gebruiken om ervoor te zorgen dat de architectuur van het systeem in de loop der tijd evolueert met de vereisten. Hierdoor kunnen we ons concentreren op wat er belangrijk is en codeblok en functieschepping voorkomen.

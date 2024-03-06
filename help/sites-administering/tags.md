@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1769'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ De tagconsole openen:
 
 Als u een naamruimte wilt maken, selecteert u de **`Create Namespace`** pictogram.
 
-De naamruimte is zelf een tag en hoeft geen subtags te bevatten. Om een taxonomie te blijven creëren, [subtags maken](#creating-tags), die op hun beurt ofwel bladtags of containercodes kunnen zijn.
+De naamruimte is zelf een tag en bevat geen subtags. Om een taxonomie te blijven creëren, [subtags maken](#creating-tags), die op hun beurt ofwel bladtags of containercodes kunnen zijn.
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![maken_tags_naamruimten](assets/creating_tags_andnamespacesa.png)
 
@@ -103,7 +103,7 @@ Als u een naamruimte of andere tag selecteert, worden de volgende bewerkingen be
 * [Bewerken](#editing-tags)
 * [Verplaatsen](#moving-tags)
 * [Samenvoegen](#merging-tags)
-* [Publicatie](#publishing-tags)
+* [Publiceren](#publishing-tags)
 * [Publiceren ongedaan maken](#unpublishing-tags)
 * [Verwijderen](#deleting-tags)
 

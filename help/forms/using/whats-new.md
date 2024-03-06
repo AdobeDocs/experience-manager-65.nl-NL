@@ -5,7 +5,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -44,7 +44,7 @@ De [64-bits versie van AEM Forms Designer](/help/forms/using/installing-configur
 
 #### Een adaptieve Forms verbinden met de Microsoft® SharePoint List
 
-AEM Forms biedt OOTB-integratie voor [formuliergegevens rechtstreeks verzenden naar SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), waarmee u de mogelijkheden van SharePoint-lijsten kunt gebruiken. U kunt de Microsoft® SharePoint-lijst configureren als gegevensbron voor een formuliergegevensmodel en de verzendactie Verzenden met het formuliergegevensmodel gebruiken om een adaptief formulier te verbinden met de SharePoint-lijst.
+AEM Forms biedt een out-of-the-box integratie voor [formuliergegevens rechtstreeks verzenden naar SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), waarmee u de mogelijkheden van SharePoint-lijsten kunt gebruiken. U kunt de Microsoft® SharePoint-lijst configureren als gegevensbron voor een formuliergegevensmodel en de verzendactie Verzenden met het formuliergegevensmodel gebruiken om een adaptief formulier te verbinden met de SharePoint-lijst.
 
 #### Ondersteuning voor het configureren van Document of Record-eigenschappen voor adaptieve formulierfragmenten
 

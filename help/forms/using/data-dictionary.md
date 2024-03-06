@@ -6,7 +6,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 0%
@@ -85,7 +85,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    * Alleen samengestelde typen zijn toegestaan als DDE op hoofdniveau in een gegevenswoordenboek.
    * Naam, referentienaam en elementtype zijn verplichte velden voor een gegevenswoordenboek en DDE&#39;s.
    * De referentienaam moet uniek zijn.
-   * Een ouder DDE (samenstelling) kan twee kinderen met de zelfde naam niet hebben.
+   * Een bovenliggende DDE (composiet) kan geen twee onderliggende elementen met dezelfde naam hebben.
    * Cijfers bevatten alleen primitieve tekenreekstypen.
 
    Voor meer informatie over samengestelde, verzamel- en primitieve elementen en het werken met gegevenswoordenboekelementen raadpleegt u [Gegevenswoordenboekelementen toewijzen aan XML-schema](#mappingddetoschema).
@@ -463,7 +463,7 @@ De Editor gegevenswoordenboek past de volgende validaties toe bij het maken of b
 * Samengestelde elementen en verzamelingselementen zijn niet toegestaan op bladniveau. Alleen primitieve elementen (String, Date, Number, Boolean) zijn toegestaan op bladniveau. Deze bevestiging zorgt ervoor dat er geen samenstelling en inzamelingselement zonder kindDDE is.
 * Tijdens het uploaden van een XSD-bestand om een gegevenswoordenboek te maken, vraagt de Editor gegevenswoordenboek om een element op hoofdniveau, indien meerdere, om het gegevenswoordenboek te maken.
 * De naam is de enige vereiste parameter voor een gegevenswoordenboek.
-* Een ouder DDE (samenstelling) kan twee kinderen met de zelfde naam niet hebben
+* Een bovenliggende DDE (composiet) mag geen twee onderliggende elementen met dezelfde naam hebben
 * Zorgt ervoor dat een DDE wordt gemerkt gegevens verwerkt, slechts als het geen vereiste parameter is. Een vereist element kan niet worden berekend en een berekend element kan niet worden vereist. Verzameling en samengesteld element kunnen ook geen elementen worden berekend.
 * Zorgt ervoor dat een DDE wordt gemerkt vereist, slechts wanneer het niet wordt berekend. Het zorgt er ook voor dat het niet het &#39;collectionElement&#39; is waarmee het type verzameling wordt aangeduid (dat zijn de enige onderliggende elementen van een verzamelingselement).
 * Lege toetsen of Dubbele toetsen zijn niet toegestaan in extendedProperties voor een gegevenswoordenboek of DDE.

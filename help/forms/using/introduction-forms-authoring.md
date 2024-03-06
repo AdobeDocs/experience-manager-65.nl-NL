@@ -7,9 +7,9 @@ topic-tags: introduction, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3085'
+source-wordcount: '3086'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Bestandsbijlage</td>
-   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen. U kunt meerdere bestanden koppelen aan een component Bestandsbijlage. U kunt ook de **[!UICONTROL Maximum File Size]** en **[!UICONTROL Supported File Types]** voor de bijlagen in de eigenschappenbrowser van de component. </p> <p><strong> Opmerking: </strong><ul> <li> De component biedt geen ondersteuning voor het koppelen van bestanden waarvan de bestandsnaam begint met tekens (.) en die de tekens \ / : * ? bevatten " &lt; &gt; | ; % $, of met speciale bestandsnamen die zijn gereserveerd voor Windows-besturingssystemen zoals null, prn, con, lpt of com. </li> <li> Als u meerdere bestanden wilt koppelen aan een bestandsbijlage die is geopend in de Apple Safari-browser, selecteert u de bestanden één voor één en voegt u ze toe. U kunt niet meerdere bestanden tegelijk selecteren en koppelen.</li> <li>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe Sign. Zie voor meer informatie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Ondersteunde bestandsindelingen</a>. </li></ul></p> </td>
+   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen. U kunt meerdere bestanden koppelen aan een component Bestandsbijlage. U kunt ook de **[!UICONTROL Maximum File Size]** en **[!UICONTROL Supported File Types]** voor de bijlagen in de eigenschappenbrowser van de component. </p> <p><strong> Opmerking: </strong><ul> <li> De component biedt geen ondersteuning voor het koppelen van bestanden waarvan de bestandsnaam begint met tekens (.) en die de tekens \ / : * ? bevatten " &lt; &gt; | ; % $ of speciale bestandsnamen die zijn gereserveerd voor Windows-besturingssystemen zoals null, prn, con, lpt of com. </li> <li> Als u meerdere bestanden wilt koppelen aan een bestandsbijlage die is geopend in de Apple Safari-browser, selecteert u de bestanden één voor één en voegt u ze toe. U kunt niet meerdere bestanden tegelijk selecteren en koppelen.</li> <li>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe Sign. Zie voor meer informatie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Ondersteunde bestandsindelingen</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Lijst met bestandsbijlagen</td>

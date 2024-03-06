@@ -6,9 +6,9 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2066'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Mediahandlers zijn services in [!DNL Assets] die specifieke handelingen uitvoere
 
 De volgende media-handlers zijn beschikbaar binnen [!DNL Assets] en verwerkt de meest gangbare MIME-typen:
 
-<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Naam handler | Servicenaam (in de systeemconsole) | Ondersteunde MIME-typen |
@@ -412,7 +412,7 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // We need to keep track of the last character, if we have two whitespaces in a row we do not want to double count.
      // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;
@@ -483,7 +483,7 @@ Installeren [!DNL ImageMagick] op de schijf waarop de [!DNL Experience Manager] 
 
    >[!NOTE]
    >
-   >In sommige versies van Windows kan het zijn dat de opdracht Omzetten niet wordt uitgevoerd omdat er een conflict optreedt met het native hulpprogramma voor conversie dat onderdeel is van [!DNL Windows] installatie. In dat geval moet u het volledige pad voor de [!DNL ImageMagick] software voor het omzetten van afbeeldingsbestanden naar miniaturen. Bijvoorbeeld, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In sommige versies van Windows kan het zijn dat de opdracht Omzetten niet wordt uitgevoerd omdat er een conflict optreedt met het native hulpprogramma voor conversie dat onderdeel is van [!DNL Windows] installatie. In dat geval moet u het volledige pad voor de [!DNL ImageMagick] software voor het omzetten van afbeeldingsbestanden naar miniaturen. Bijvoorbeeld: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
 1. Als u wilt controleren of het gereedschap goed wordt uitgevoerd, voegt u een JPG-afbeelding toe aan de werkmap en voert u de opdracht Omzetten uit `<image-name>.jpg -flip <image-name>-flipped.jpg` op de opdrachtregel. Er wordt een gespiegelde afbeelding aan de map toegevoegd. Voeg vervolgens de processtap van de opdrachtregel toe aan de **[!UICONTROL DAM Update Asset]** workflow.
 1. Ga naar de **[!UICONTROL Workflow]** console.

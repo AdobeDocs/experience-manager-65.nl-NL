@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4120'
 ht-degree: 0%
@@ -282,7 +282,7 @@ U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
 
 1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel een van de volgende opties:
 
-   **Geen** Selecteer deze optie als u geen document van verslag voor de vorm wilt vormen.
+   **Geen** Selecteer deze optie als u het document met records voor het formulier niet wilt configureren.
 
    **Formuliersjabloon koppelen als Document of Record-sjabloon** Selecteer deze optie als u een XDP-bestand hebt dat u als sjabloon voor het recorddocument wilt gebruiken. Als u deze optie selecteert, worden alle XDP-bestanden weergegeven die beschikbaar zijn in de AEM Forms-opslagplaats. Selecteer het juiste bestand.
 
@@ -450,7 +450,7 @@ AEM Forms past de derde basispagina toe op het deelvenster en alle volgende deel
 
 >[!NOTE]
 >
-> U kunt geen meerdere basispagina&#39;s toepassen op een Document of Record voor een adaptief formulierfragment.
+> U kunt geen meerdere basispagina&#39;s toepassen op een document of record voor een adaptief formulierfragment.
 
 ## Belangrijke overwegingen bij het werken met een document {#key-considerations-when-working-with-document-of-record}
 

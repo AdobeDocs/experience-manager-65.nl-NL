@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 De belangrijkste manier om een administratieve zitting of middeloplosser in AEM te krijgen was het gebruiken van `SlingRepository.loginAdministrative()` en `ResourceResolverFactory.getAdministrativeResourceResolver()` door Sling verschafte methoden.
 
-Geen van deze methoden was echter ontworpen rond de [beginsel van het minst bevoorrecht](https://en.wikipedia.org/wiki/Principle_of_least_privilege) en maken het voor een ontwikkelaar te gemakkelijk om niet voor een juiste structuur en overeenkomstige Niveaus van het Toegangsbeheer (ACLs) voor hun inhoud vroegtijdig te plannen. Als een kwetsbaarheid in zo&#39;n dienst aanwezig is, leidt het vaak tot voorrechtescalaties aan `admin` gebruiker, zelfs als de code zelf geen administratieve voorrechten zou vereisen om te werken.
+Geen van deze methoden was echter ontworpen rond de [beginsel van het minst bevoorrecht](https://en.wikipedia.org/wiki/Principle_of_least_privilege). Het maakt het voor een ontwikkelaar te gemakkelijk om niet voor een juiste structuur en de overeenkomstige Niveaus van het Toegangsbeheer (ACLs) voor hun inhoud vroegtijdig te plannen. Als een kwetsbaarheid in zo&#39;n dienst aanwezig is, leidt het vaak tot voorrechtescalaties aan `admin` gebruiker, zelfs als de code zelf geen administratieve voorrechten zou vereisen om te werken.
 
 ## Admin-sessies uitfaseren {#how-to-phase-out-admin-sessions}
 
 ### Prioriteit 0: Is de functie actief/nodig/verwijderd? {#priority-is-the-feature-active-needed-derelict}
 
-Er kunnen zich gevallen voordoen waarin de beheersessie niet wordt gebruikt of de functie volledig is uitgeschakeld. Als dit het geval is met uw implementatie, zorg ervoor u de eigenschap volledig verwijdert of het met past [NOP-code](https://en.wikipedia.org/wiki/NOP).
+Er kunnen zich gevallen voordoen waarin de beheersessie niet wordt gebruikt of de functie volledig is uitgeschakeld. Als dat het geval is met uw implementatie, verwijdert u de functie helemaal of past u deze aan [NOP-code](https://en.wikipedia.org/wiki/NOP).
 
 ### Prioriteit 1: De aanvraagsessie gebruiken {#priority-use-the-request-session}
 
@@ -57,7 +57,7 @@ Ook, zorg ervoor dat om het even welke nieuwe eigenschappen u ontwikkelt zich aa
    * Het beheer van toegangsbeheer moet natuurlijk zijn
    * Toegangscontrole moet worden afgedwongen door de gegevensopslagplaats, niet door de toepassing
 
-* **Gebruik van knooppunten maken**
+* **Nodetypes gebruiken**
 
    * De set eigenschappen beperken die kan worden ingesteld
 
@@ -80,7 +80,7 @@ Of u toegangsbeheer terwijl het herstructureren van inhoud toepast of wanneer u 
 
 ## Gebruikers en toewijzingen van services {#service-users-and-mappings}
 
-Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de Gebruiker van de Dienst aan, die toestaat om een bundel-aan-gebruiker afbeelding en twee overeenkomstige API methodes te vormen:
+Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de Gebruiker van de Dienst aan, die u een bundel-aan-gebruiker afbeelding en twee overeenkomstige API methodes laat vormen:
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -116,7 +116,7 @@ Als u de beheersessie wilt vervangen door een servicegebruiker, moet u de volgen
 
 ## Een servicegebruiker maken {#creating-a-new-service-user}
 
-Nadat u hebt gecontroleerd dat geen gebruiker in de lijst met AEM gebruikers van toepassing is voor uw gebruiksscenario en de bijbehorende RTC-problemen zijn goedgekeurd, kunt u doorgaan en de nieuwe gebruiker toevoegen aan de standaardinhoud.
+Nadat u hebt gecontroleerd dat geen gebruiker in de lijst met AEM gebruikers van toepassing is voor uw gebruiksscenario en de bijbehorende RTC-problemen zijn goedgekeurd, voegt u de nieuwe gebruiker toe aan de standaardinhoud.
 
 De aanbevolen aanpak is om een servicegebruiker te maken die de verkenner van de repository kan gebruiken op *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
@@ -136,7 +136,7 @@ U kunt servicegebruikers maken door:
 
    >[!NOTE]
    >
-   >Er zijn geen mixintypes verbonden aan de dienstgebruikers. Dit betekent dat er geen beleid voor toegangsbeheer voor systeemgebruikers zal zijn.
+   >Er zijn geen mixintypes verbonden aan de dienstgebruikers. Dit betekent dat er geen beleid van de toegangscontrole voor systeemgebruikers is.
 
 Wanneer u het corresponderende .content.xml toevoegt aan de inhoud van uw bundel, moet u ervoor zorgen dat u de `rep:authorizableId` en dat het primaire type `rep:SystemUser`. Het moet er als volgt uitzien:
 
@@ -190,13 +190,13 @@ Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systee
 
    * Ga naar de webconsole op *https://serverhost:serveraddress/system/console/configMgr*
    * Zoeken naar **Wijziging van de Gebruikerstoewijzingsservice Apache Sling Service**
-   * Klik op de koppeling om te zien of de juiste configuratie is geïnstalleerd.
+   * Klik de verbinding zodat kunt u zien of is de juiste configuratie op zijn plaats.
 
 ## Werken met gedeelde sessies in services {#dealing-with-shared-sessions-in-services}
 
 roept aan `loginAdministrative()` worden vaak samen met gedeelde sessies weergegeven. Deze zittingen worden verworven bij de dienstactivering en slechts het programma geopend nadat de dienst wordt tegengehouden. Hoewel dit gebruikelijk is, leidt het tot twee problemen:
 
-* **Veiligheid:** Dergelijke beheersessies worden gebruikt om bronnen of andere objecten die aan de gedeelde sessie zijn gebonden, in cache te plaatsen en terug te sturen. Later in de vraagstapel konden deze voorwerpen aan zittingen of middeloplossers met opgeheven voorrechten worden aangepast, en het is vaak niet duidelijk aan de bezoeker dat het een adminzitting is zij met werken.
+* **Veiligheid:** Dergelijke beheersessies worden gebruikt om bronnen of andere objecten die aan de gedeelde sessie zijn gebonden, in cache te plaatsen en terug te sturen. Later in de vraagstapel konden deze voorwerpen aan zittingen of middeloplossers met opgeheven voorrechten worden aangepast. Het is vaak niet duidelijk aan de bezoeker dat het een adminzitting is waarmee zij werken.
 * **Prestaties:** In eiken kunnen gedeelde sessies prestatieproblemen veroorzaken en het wordt afgeraden deze te gebruiken.
 
 De meest voor de hand liggende oplossing voor het veiligheidsrisico is eenvoudigweg de vervanging van de `loginAdministrative()` bellen met een `loginService()` een voor een gebruiker met beperkte rechten. Dit heeft echter geen invloed op een mogelijke verslechtering van de prestaties. Een mogelijkheid om dat te beperken is alle gevraagde informatie te verpakken in een object dat geen koppeling heeft met de sessie. Maak vervolgens de sessie op verzoek (of vernietigt deze).

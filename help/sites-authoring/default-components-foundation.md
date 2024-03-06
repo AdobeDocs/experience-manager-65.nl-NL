@@ -2,9 +2,9 @@
 title: Elementaire componenten
 description: Leer over de Componenten van de Stichting in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6873'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Hier geeft u op hoe de carrousel werkt:
 
    * **Lijst samenstellen met**
 Er zijn verschillende manieren om een paginalijst samen te stellen: Onderliggende pagina&#39;s, Vaste lijst, Zoeken of Geavanceerd zoeken (allemaal hieronder beschreven).
-Welke methode u ook kiest, aan de pagina&#39;s die u in de lijst opneemt, moet al een afbeelding zijn gekoppeld. Deze afbeelding wordt weergegeven in de carrousel. Als er geen afbeelding is voor een bepaalde pagina onder de Pagina-eigenschappen van die pagina, moet u een afbeelding aan de pagina koppelen voordat u begint. Als u dat niet doet, geeft de carrousel een veelvuldig lege pagina weer. Zie [Pagina-eigenschappen bewerken](/help/sites-authoring/editing-page-properties.md).
+Welke methode u ook kiest, aan de pagina&#39;s die u in de lijst opneemt, moet al een afbeelding zijn gekoppeld. Deze afbeelding wordt weergegeven in de carrousel. Als er geen afbeelding is voor een bepaalde pagina onder de Pagina-eigenschappen van die pagina, moet u een afbeelding aan de pagina koppelen voordat u begint. Als u dat niet doet, wordt in de carrousel een pagina weergegeven die meestal leeg is. Zie [Pagina-eigenschappen bewerken](/help/sites-authoring/editing-page-properties.md).
 Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
       * **Opties voor onderliggende pagina&#39;s**

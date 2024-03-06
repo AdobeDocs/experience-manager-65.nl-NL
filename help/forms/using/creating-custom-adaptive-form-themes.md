@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. U kun
 
    **Minder variabelen**: Dit zijn de bestanden waarin u de variabelen definieert of overschrijft die worden gebruikt bij het definiëren van CSS-stijlen.
 
-   Adaptieve formulieren bieden OTB-variabelen die zijn gedefinieerd in het volgende `.less` bestanden:
+   Adaptieve formulieren bieden variabelen die buiten het vak vallen, zoals gedefinieerd in het volgende `.less` bestanden:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -107,7 +107,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. U kun
 
    **Minder gemengde bestanden:** U kunt de functies definiëren die variabelen als argumenten accepteren. De uitvoer van deze functies is de resulterende stijlen. Gebruik deze combinaties in verschillende stijlen, zodat u niet telkens CSS-stijlen hoeft te herhalen.
 
-   Adaptieve formulieren bieden OTB-mixen die zijn gedefinieerd in:
+   Adaptieve formulieren bieden buitenste mixen die zijn gedefinieerd in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 
@@ -206,7 +206,7 @@ Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen ui
 
 1. Het thema dat is gemaakt in [een adaptief formulierthema maken](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) sectie, een aangepaste pagina van type maken `cq:Component`.
 
-   Bijvoorbeeld, `/apps/myAfCustomizations/myAfPages/forestPage`
+   Bijvoorbeeld: `/apps/myAfCustomizations/myAfPages/forestPage`
 
    1. Voeg een `sling:resourceSuperType` eigenschap en de waarde ervan instellen als `fd/af/components/page/base`.
 

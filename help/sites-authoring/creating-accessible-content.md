@@ -2,21 +2,21 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager maken (WCAG 2.1-compatibiliteit)
 description: AEM gebruiken om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '13806'
-ht-degree: 3%
+source-wordcount: '13636'
+ht-degree: 2%
 
 ---
 
-# Toegankelijke content maken (WCAG 2.1-compatibiliteit) {#creating-accessible-content-wcag-conformance}
+# Toegankelijke inhoud maken (WCAG 2.1-compatibiliteit) {#creating-accessible-content-wcag-conformance}
 
-De [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), opgesteld door [een werkgroep van het World Wide Web Consortium](https://www.w3.org/groepen/#Accessibility_Guidelines_Working_Group), bestaan uit een reeks technologie-onafhankelijke richtsnoeren en succescriteria om ervoor te zorgen dat webinhoud toegankelijk is voor en bruikbaar is voor personen met een handicap.
+De [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), opgesteld door [een werkgroep van het World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), bestaan uit een reeks technologie-onafhankelijke richtsnoeren en succescriteria om ervoor te zorgen dat webinhoud toegankelijk is voor en bruikbaar is voor personen met een handicap.
 
 Als inleiding geeft het consortium een reeks secties en ondersteunende documenten:
 
 * [Nieuwe functies in WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
-* [Voldoen aan WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Hoe te om WCAG 2.1 te ontmoeten](https://www.w3.org/WAI/WCAG21/quickref/)
 * [WCAG 2.1 begrijpen](https://www.w3.org/WAI/WCAG21/Understanding/)
 * [Technieken voor WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/)
 * [De WCAG-documenten](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
@@ -331,7 +331,7 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
 
   >[!NOTE]
   >
-  >Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in toe te voegen **Tabeleigenschappen** dialoogvenster (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
   Als u het dialoogvenster **Tabel** het dialoogvenster waarin u **Tabeleigenschappen** tab:
 
@@ -1191,7 +1191,7 @@ Waar afbeeldingsknoppen worden gebruikt (bijvoorbeeld **Afbeeldingsknop** (onder
 
 In het WKND-project, waar een groep gerelateerde controles bestaat, zoals **Groep keuzerondjes**, kan een titel voor de groep en individuele controles nodig zijn. Wanneer u een set keuzerondjes toevoegt in AEM, wordt in het veld **Titel** deze groepstitel weergegeven, terwijl afzonderlijke titels worden opgegeven wanneer de keuzerondjes (**Items**) worden gemaakt.
 
-Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. De redacteurs van het malplaatje zouden de titel in het noodzakelijke moeten verpakken `fieldset` en `legend` -tags om deze koppeling te maken en dit kan alleen worden gedaan door de broncode van de pagina te bewerken. Een systeembeheerder kan ook ondersteuning voor deze elementen toevoegen, zodat deze worden weergegeven in het dialoogvenster **Veldeigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. De redacteurs van het malplaatje zouden de titel in het noodzakelijke moeten verpakken `fieldset` en `legend` -tags om deze koppeling te maken en dit kan alleen worden gedaan door de broncode van de pagina te bewerken. Alternatief, kan een systeembeheerder steun voor deze elementen toevoegen zodat zij in **Veldeigenschappen** dialoogvenster (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 ###### Aanvullende overwegingen voor Forms {#additional-considerations-for-forms}
 
@@ -1250,7 +1250,7 @@ Dit succescriterium is bedoeld om gebruikers met een handicap te helpen ernstige
 
 Gehandicapte gebruikers kunnen vaker fouten maken. Mensen met een leeshandicap kunnen nummers en letters omzetten en personen met een motorische handicap kunnen per ongeluk de toetsen raken. Door de mogelijkheid te bieden acties om te keren, kunnen gebruikers een fout corrigeren die ernstige gevolgen kan hebben. Het bieden van de capaciteit om informatie te herzien en te verbeteren geeft de gebruiker de kans om een fout te ontdekken alvorens een actie te ondernemen die ernstige gevolgen heeft.
 
-Door de gebruiker te controleren gegevens zijn door de gebruiker te bekijken gegevens die de gebruiker via een opzettelijke handeling kan wijzigen en/of verwijderen. Voorbeelden van de gebruiker die dergelijke gegevens beheert, zijn het bijwerken van het telefoonnummer en het adres van de account van de gebruiker of het verwijderen van een record met facturen uit het verleden van een website. Het verwijst niet naar zaken zoals Internet logboeken en onderzoeksmotor controlegegevens die de gebruiker niet kan bekijken of met direct in wisselwerking staan.
+Door de gebruiker te controleren gegevens zijn door de gebruiker te bekijken gegevens die de gebruiker via een opzettelijke handeling kan wijzigen en/of verwijderen. Voorbeelden van de gebruiker die dergelijke gegevens beheert, zijn het bijwerken van het telefoonnummer en het adres van de account van de gebruiker of het verwijderen van een record met facturen uit het verleden van een website. De code verwijst niet naar zaken als internetlogboeken en controlegegevens van zoekprogramma&#39;s die de gebruiker niet rechtstreeks kan bekijken of gebruiken.
 
 #### Hoe te om te ontmoeten - de Preventie van de Fout (Juridisch, Financieel, Gegevens) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 

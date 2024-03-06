@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2963'
+source-wordcount: '2964'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie 
 
 Klikken **Volgende** om naar de volgende pagina van het overzicht te gaan. Klikken **Sluiten** of klik buiten het overzichtsdialoogvenster om te sluiten.
 
-Het overzicht begint opnieuw de volgende keer u tot een console toegang hebt tenzij u of alle dia&#39;s bekijkt of de optie controleert **Dit niet meer weergeven**.
+Het overzicht begint opnieuw de volgende keer u tot een console toegang hebt tenzij u of alle dia&#39;s bekijkt of de optie controleert **Dit bericht niet meer weergeven**.
 
 ## Algemene navigatie {#global-navigation}
 

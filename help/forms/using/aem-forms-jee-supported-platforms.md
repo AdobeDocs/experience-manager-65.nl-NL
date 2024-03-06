@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3fe9b3d4cf6ddf7d64dbece7d62d7f18dfa183f2
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4057'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ In dit document worden de ondersteunde client- en serverplatforms voor AEM Forms
 
 #### Volledig installatieprogramma
 
-- **Upgrade-ondersteuning voor volledige installatieprogramma&#39;s**: Een volledig installatieprogramma wordt vrijgegeven bij elke 6e AEM Service Pack Release. Er is bijvoorbeeld een volledig installatieprogramma uitgebracht met 6.5.12.0 en 6.5.18.0 SP-releases. AEM Forms staat rechtstreekse upgrades uitsluitend toe vanaf de laatste twee volledige installatieprogramma&#39;s. AEM Forms maakt bijvoorbeeld alleen directe upgrades naar versie 6.5.18.0 mogelijk vanaf de laatste twee volledige installatieprogramma&#39;s, namelijk 6.5.12.0 en 6.5.6.0. Als u van een vroegere verbetering moet bevorderen, kunt u een multi-hop verbetering gebruiken om eerst naar een gesteunde volledige installateursversie en dan aan de recentste versie te gaan.
+- **Upgrade-ondersteuning voor volledige installatieprogramma&#39;s**: Een volledig installatieprogramma wordt vrijgegeven met elke zesde Versie van AEM Service Pack. Er is bijvoorbeeld een volledig installatieprogramma uitgebracht met 6.5.12.0 en 6.5.18.0 SP-releases. AEM Forms staat rechtstreekse upgrades uitsluitend toe vanaf de laatste twee volledige installatieprogramma&#39;s. AEM Forms maakt bijvoorbeeld alleen directe upgrades naar versie 6.5.18.0 mogelijk vanaf de laatste twee volledige installatieprogramma&#39;s, namelijk 6.5.12.0 en 6.5.6.0. Als u van een vroegere verbetering moet bevorderen, kunt u een multi-hop verbetering gebruiken om eerst naar een gesteunde volledige installateursversie en dan aan de recentste versie te gaan.
 
 - **Verdringing en verwijdering**: De platformondersteuning wordt bijgewerkt met elke volledige installerrelease. Alle software die tijdens een volledige installateursrelease in de platformmatrix is afgekeurd, mag in een volgende volledige installateursrelease uit de ondersteunde platformmatrix worden verwijderd, wat het einde van de ondersteuning voor de software aangeeft.
 
@@ -355,7 +355,7 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 1. AEM Forms on JEE biedt geen ondersteuning voor IBM® WebSphere® met MySQL.
 1. AEM Forms op JEE biedt geen ondersteuning voor en JBoss® op SUSE® Linux® Enterprise Server 12. Alleen IBM® WebSphere® wordt ondersteund op SUSE® Linux® Enterprise Server 12.
 1. AEM Forms op JEE biedt geen ondersteuning voor JDK met JBoss® anders dan Oracle Java™ SE.
-1. AEM Forms op JEE ondersteunt geen JDK met IBM® WebSphere® anders dan IBM® JDK.
+1. AEM Forms on JEE biedt geen ondersteuning voor JDK met IBM® WebSphere®, behalve IBM® JDK.
 1. CRX-opslagplaats steunt persistentie van type TarMK, MongoDB, en relationele gegevensbestanden (RDBMK). U kunt geen twee verschillende gegevensbestandsystemen tussen de toepassingsserver en CRX-bewaarplaats hebben. Op een AEM Forms op JEE-omgeving kunt u echter MongoMK gebruiken met CRX-gegevensopslagruimte en een ondersteunde relationele database met toepassingsserver.
 1. AEM Forms op JEE biedt geen ondersteuning voor WebSphere®-toepassingsserver op CentOS.
 1. AEM Forms on JEE biedt geen ondersteuning voor JBoss® op rollen gebaseerde toegangsbeheer (RBAC).
@@ -375,7 +375,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor de Adobe van 
 - AEM Forms on JEE biedt ondersteuning voor platforms die overeenkomen met de ondersteuning van externe leveranciers. Sommige combinaties zijn mogelijk niet toegestaan door externe leveranciers. Veel leveranciers hebben hun toepassingsservers bijvoorbeeld niet met Oracle gecertificeerd. Als gevolg hiervan biedt AEM Forms op JEE ook geen ondersteuning voor deze combinaties. Om ervoor te zorgen dat u de gesteunde softwareversies kiest, controleer de steunmatrijs ook voor de derdeverkopers.
 - AEM Forms op JEE ondersteunt TarMK Cold Standby niet.
 - AEM Forms op JEE biedt geen ondersteuning voor verticale clustering.
-- AEM Forms op JEE biedt geen ondersteuning voor MySQL-database in een geclusterde omgeving.
+- AEM Forms on JEE biedt geen ondersteuning voor MySQL-database in een geclusterde omgeving.
 - Voor de lijst met verwijderde of bijgewerkte platforms raadpleegt u [AEM 6.5 Forms - Overzicht van nieuwe functies](../../forms/using/whats-new.md) document.
 
 ### LDAP-servers (optioneel) {#ldap-servers-optional}

@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -355,7 +355,7 @@ Om de grootte van het interne geheime voorgeheugen WiredTiger aan te passen, zie
 
 Met NUMA (Non-Uniform Memory Access) kan een kernel bepalen hoe geheugen wordt toegewezen aan de processorkernen. Hoewel dit proces probeert om geheugentoegang voor kernen sneller te maken die ervoor zorgen dat zij tot de vereiste gegevens kunnen toegang hebben, mengt NUMA zich in MMAP die extra latentie introduceert aangezien leest niet kan worden voorspeld. Als gevolg hiervan moet NUMA worden uitgeschakeld voor de `mongod` op alle geschikte besturingssystemen.
 
-In wezen wordt het geheugen van een NUMA-architectuur aangesloten op de CPU en worden de CPU&#39;s aangesloten op een bus. In een SMP of een architectuur UMA, wordt het geheugen verbonden met de bus en door cpu&#39;s gedeeld. Wanneer een draad geheugen op NUMA cpu toewijst, wijst het volgens een beleid toe. Standaard wordt geheugen toegewezen dat aan de lokale CPU van de thread is gekoppeld, tenzij er geen vrije processor is. Op dat moment wordt geheugen van een vrije CPU tegen hogere kosten gebruikt. Zodra toegewezen, beweegt het geheugen zich niet tussen cpu&#39;s. De toewijzing wordt uitgevoerd door een beleid dat van de ouderdraad wordt geërft, die uiteindelijk de draad is die het proces begon.
+In wezen wordt het geheugen van een NUMA-architectuur aangesloten op de CPU en worden de CPU&#39;s aangesloten op een bus. In een SMP of een architectuur UMA, wordt het geheugen verbonden met de bus en door cpu&#39;s gedeeld. Wanneer een draad geheugen op NUMA cpu toewijst, wijst het volgens een beleid toe. Standaard wordt geheugen toegewezen dat aan de lokale CPU van de thread is gekoppeld, tenzij er geen vrije processor is. Op dat moment wordt geheugen van een vrije CPU tegen hogere kosten gebruikt. Nadat het geheugen is toegewezen, wordt het niet verplaatst tussen CPU&#39;s. De toewijzing wordt uitgevoerd door een beleid dat van de ouderdraad wordt geërft, die uiteindelijk de draad is die het proces begon.
 
 In vele gegevensbestanden die de computer als multicore eenvormige geheugenarchitectuur zien, leidt dit scenario tot eerste volledige cpu en de secundaire vulling later. Het is vooral waar als een centrale draad voor het toewijzen van geheugenbuffers verantwoordelijk is. De oplossing is het beleid van NUMA van de belangrijkste draad te veranderen die wordt gebruikt om te beginnen `mongod` proces door het volgende bevel in werking te stellen:
 
@@ -543,7 +543,7 @@ De uitvoer van de tweede test moet aanzienlijk hoger zijn dan die van de eerste,
 
 >[!NOTE]
 >
-Controleer bij het uitvoeren van de tests de I/O-gebruiksstatistieken voor de virtuele machines in kwestie in uw besturingssysteem. Als ze waarden aangeven die lager zijn dan 100 procent voor I/O lezen, kan er een probleem zijn met uw virtuele machine.
+>Controleer bij het uitvoeren van de tests de I/O-gebruiksstatistieken voor de virtuele machines in kwestie in uw besturingssysteem. Als ze waarden aangeven die lager zijn dan 100 procent voor I/O lezen, kan er een probleem zijn met uw virtuele machine.
 
 **De schrijfprestaties van de primaire MongoDB-instantie testen**
 
@@ -654,7 +654,7 @@ CSP staat voor het verfijnen van beleid toe. In een complexe toepassing, echter,
 
 >[!NOTE]
 >
-Zie voor meer informatie over hoe dit werkt de [OWASP-pagina over beveiligingsbeleid voor inhoud](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Zie voor meer informatie over hoe dit werkt de [OWASP-pagina over beveiligingsbeleid voor inhoud](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Grootte {#sizing}
 
@@ -678,4 +678,4 @@ Als AEM wordt uitgevoerd op een implementatie van de persistentiebeheersoftware 
 
 >[!NOTE]
 >
-Zie de [MongoDB-documentatie](https://docs.mongodb.com/manual/reference/limits/) zodat u bekend bent met de bekende beperkingen en drempels van MongoDB.
+>Zie de [MongoDB-documentatie](https://docs.mongodb.com/manual/reference/limits/) zodat u bekend bent met de bekende beperkingen en drempels van MongoDB.

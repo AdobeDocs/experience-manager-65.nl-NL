@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 David&#39;s Model werd jaren geleden geschreven door David Nuescheler, maar de ideeën gelden vandaag. De belangrijkste uitgangspunten van David&#39;s Model zijn:
 
 * Gegevens komen als eerste, structuur later. Misschien.
-* Geef de inhoudshiërarchie de drijfveer, laat het niet gebeuren.
+* Geef de inhoudshiërarchie de drijvende kracht en laat deze niet gebeuren.
 * Werkruimten zijn bedoeld voor `clone()`, `merge()`, en `update()`.
 * Let op dat u dezelfde naam hebt als op hetzelfde vel.
 * Verwijzingen worden als schadelijk beschouwd.

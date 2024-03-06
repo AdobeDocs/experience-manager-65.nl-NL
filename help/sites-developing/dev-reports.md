@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0f898fd81d2952b01eac7e6b8aa9970868009b15
 workflow-type: tm+mt
-source-wordcount: '5182'
+source-wordcount: '5177'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Voor de standaardrapporten die bij AEM worden geleverd:
 >  `P:<name> = <value>` : Beschrijft een eigenschap `<name>` die moet worden ingesteld op de waarde van `<value>`.
 >
 >* De inspringing toont de hiërarchische gebiedsdelen tussen de knopen.
->* Items gescheiden door | geeft een lijst aan van mogelijke items, bijvoorbeeld typen of namen; bijvoorbeeld `String|String[]` betekent dat de eigenschap String of String kan zijn[].
+>* Items gescheiden door | geeft een lijst met mogelijke items aan, bijvoorbeeld typen of namen, bijvoorbeeld `String|String[]` betekent dat de eigenschap String of String kan zijn[].
 >
 >* `[]` geeft een array weer, zoals String[] of een array van knooppunten zoals in de [Query-definitie](#query-definition).
 >
@@ -122,7 +122,7 @@ De query:
 
 **Het belangrijkste punt hier is dat elke enige knoop die in de resultaatreeks van de vraag wordt teruggekeerd wordt gebruikt om één enkele rij op het rapport (zo een 1:1 verhouding) te produceren.**
 
-De ontwikkelaar moet ervoor zorgen dat de vraag die voor een rapport wordt bepaald een knoop terugkeert die aangewezen voor dat rapport wordt geplaatst. Nochtans, te hoeven de knoop zelf niet alle vereiste informatie te houden, kan dit ook uit ouder en/of kindknopen worden afgeleid. De query die bijvoorbeeld wordt gebruikt voor de [Gebruikersrapport](/help/sites-administering/reporting.md#user-report) selecteert knooppunten op basis van het knooppunttype (in dit geval `rep:user`). Nochtans, nemen de meeste kolommen op dit rapport hun gegevens niet direct van deze knopen, maar van de kindknopen `profile`.
+De ontwikkelaar moet ervoor zorgen dat de vraag die voor een rapport wordt bepaald een knoop terugkeert die aangewezen voor dat rapport wordt geplaatst. Nochtans, te hoeven de knoop zelf niet om alle vereiste informatie te houden, kan dit ook uit ouder en/of kindknopen worden afgeleid. De query die bijvoorbeeld wordt gebruikt voor de [Gebruikersrapport](/help/sites-administering/reporting.md#user-report) selecteert knooppunten op basis van het knooppunttype (in dit geval `rep:user`). Nochtans, nemen de meeste kolommen op dit rapport hun gegevens niet direct van deze knopen, maar van de kindknopen `profile`.
 
 ### Bezig met verwerken wachtrij {#processing-queue}
 
@@ -332,7 +332,7 @@ N:charting
 
    * `type`
 
-     Het type beschikbare grafiek. Selecteer  vanuit:
+     Het type beschikbare grafiek. Selecteren uit:
 
       * `pie`
 Cirkeldiagram. Alleen gegenereerd op basis van huidige gegevens.

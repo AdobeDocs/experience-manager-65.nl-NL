@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 0%
@@ -60,7 +60,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
   </tr>
   <tr>
    <td>Standaardconfiguratie voor rollout</td>
-   <td>Standaardrollout-configuratie waarmee het implementatieproces kan worden gestart bij rollout-trigger en waarmee handelingen kunnen worden uitgevoerd: maken, bijwerken, inhoud verwijderen en onderliggende knooppunten bestellen.</td>
+   <td>Standaardrollout-configuratie waarmee u het implementatieproces kunt starten bij rollout-trigger en acties kunt uitvoeren: maken, bijwerken, inhoud verwijderen en onderliggende knooppunten ordenen.</td>
    <td>Bij rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -108,7 +108,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
   </tr>
   <tr>
    <td>DPS-configuratie voor publicatie</td>
-   <td>Configuratie voor rollout van DPS-publicatie waarmee het implementatieproces kan worden gestart bij rollout-trigger, maar waarbij bindingseigenschappen van Folio Producer bij de eerste rollout worden uitgesloten</td>
+   <td>Configuratie voor rollout van DPS-publicatie waarmee u het implementatieproces kunt starten bij rollout-trigger en tegelijkertijd bindingseigenschappen van FolioProducer bij de eerste rollout kunt uitsluiten</td>
    <td>Bij rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>

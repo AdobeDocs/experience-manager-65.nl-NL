@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -230,7 +230,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    `key` varchar(255) NOT NULL,
    `id` varchar(60) NOT NULL,
    PRIMARY KEY (`id`,`key`),
-   CONSTRAINT ‘additionalmetadatatable_fk’ FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
+   CONSTRAINT 'additionalmetadatatable_fk' FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
@@ -294,7 +294,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-De voorbeeldimplementatie is nu geconfigureerd, waarmee u concepten en verzendingen kunt weergeven terwijl u alle gegevens en metagegevens in een database opslaat. Laten we nu zien hoe de gegevens- en metagegevensservices zijn geconfigureerd in het voorbeeld.
+De voorbeeldimplementatie is nu geconfigureerd, waarmee u concepten en verzendingen kunt weergeven terwijl u alle gegevens en metagegevens in een database opslaat. Laten wij nu zien hoe de gegevens en de meta-gegevensdiensten in de steekproef worden gevormd.
 
 ## Het bestand mysql-connector-java-5.1.39-bin.jar installeren {#install-mysql-connector-java-bin-jar-file}
 
@@ -397,7 +397,7 @@ Voer de volgende stappen uit om te maken [een clientbibliotheek](/help/sites-dev
 
    >[!NOTE]
    >
-   >Het script is bedoeld voor een component van de box-widget voor bijlagen (OOTB). Als u de OOTB gehechtheidswidget hebt aangepast dan verander het bovengenoemde manuscript om respectieve veranderingen op te nemen.
+   >Het script is bedoeld voor de widgetcomponent voor bijlagen buiten de doos. Als u de uit-van-de-doos gehechtheid widget hebt aangepast dan verander het bovengenoemde manuscript om respectieve veranderingen op te nemen.
 
 1. Voeg de volgende eigenschap toe aan de map die in stap 2 is gemaakt en klik op **[!UICONTROL Save All]**.
 

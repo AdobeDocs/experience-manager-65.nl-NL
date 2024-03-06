@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 6%
+source-wordcount: '2653'
+ht-degree: 5%
 
 ---
 
@@ -134,7 +134,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS - [Universal System met afbeeldingslicentie](https://www.useplus.com).
-* PRISM - [Publicatievereisten voor industriestandaard metagegevens](https://www.idealliance.org/prism-metadata).
+* PRISM - [Publicatievereisten voor industriestandaard metagegevens](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL - PRISM Rights Language.
 * PUR - PRISM-gebruiksrechten.
 * `xmpPlus` - integratie van PLUS met XMP.
@@ -149,7 +149,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 ### Afdrukspecifieke metagegevens {#print-specific-metadata}
 
 * PDF en PDF/X - Adobe PDF en toepassingen van derden.
-* PRISM - [Publicatievereisten voor industriestandaard metagegevens](https://www.idealliance.org/prism-metadata).
+* PRISM - [Publicatievereisten voor industriestandaard metagegevens](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metagegevens voor gepagineerde tekst.
 
@@ -202,7 +202,7 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 * De workflow kan controleren of een copyrightkennisgeving op een middel distributie toestaat of niet. Het systeem verzendt het middel dus naar de ene of de andere server.
 * Een workflow kan controleren op elementen zonder vooraf gedefinieerde, verplichte metagegevens of elementen *ongeldig* metagegevens.
 
-## XMP-metadata {#xmp-metadata}
+## Metagegevens XMP {#xmp-metadata}
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door [!DNL Adobe Experience Manager Assets] voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 

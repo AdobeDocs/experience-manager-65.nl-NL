@@ -3,7 +3,7 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 0%
@@ -327,7 +327,7 @@ Alle tekst die in RTE is geschreven, wordt binnen een bloktag geplaatst, waarbij
 
 >[!NOTE]
 >
->Als een bloktag bijvoorbeeld een &lt;hr> -tag, kan niet aan een alinea worden toegewezen, is dit geen geldig geval voor gebruik van een insteekmodule voor paraformat.
+>Als een bloktag bijvoorbeeld een &lt;hr> -tag niet aan een alinea kan worden toegewezen, is dit geen geldig geval voor gebruik van een insteekmodule voor paraformat.
 
 Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er geen standaardalineaopmaak beschikbaar. De pop-uplijst is leeg. Ga als volgt te werk om de auteurs alinea-indelingen te bieden:
 

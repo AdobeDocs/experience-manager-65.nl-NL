@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Raadpleeg de volgende documenten voor meer informatie over SPA in AEM:
 
 ## Ontwerp {#design}
 
-De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindcomponenten via het JSP of HTML- dossier. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten of modellen wordt opgehaald als een JSON-gegevensstructuur van het JCR. De SPA componenten worden vervolgens volgens die structuur aan de pagina toegevoegd. Dit gedrag onderscheidt de aanvankelijke lichaamssamenstelling van de paginacomponent van niet-SPA tegenhangers.
+De paginacomponent voor een SPA biedt de HTML-elementen van de onderliggende componenten niet via het JSP- of HTML-bestand. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten of modellen wordt opgehaald als een JSON-gegevensstructuur van het JCR. De SPA componenten worden vervolgens volgens die structuur aan de pagina toegevoegd. Dit gedrag onderscheidt de aanvankelijke lichaamssamenstelling van de paginacomponent van niet-SPA tegenhangers.
 
 ### Paginamodel beheren {#page-model-management}
 
@@ -70,7 +70,7 @@ U kunt de stroom van de interactie tussen de SPA en AEM begrijpen door de SPA Re
 * De communicatie tussen de pagina-editor en de SPA wordt gemaakt met JSON in plaats van met HTML.
 * De pagina-editor biedt de meest recente versie van het paginamodel aan de SPA via de iframe- en messaging-API.
 * De manager van het paginamodel brengt de redacteur op de hoogte het klaar voor uitgave is en gaat het paginamodel als structuur JSON over.
-* De editor wijzigt de DOM-structuur van de pagina die wordt gemaakt niet of opent deze zelfs niet, maar biedt het nieuwste paginamodel.
+* De editor wijzigt de DOM-structuur van de pagina die wordt gemaakt niet of opent deze zelfs niet, maar biedt wel het nieuwste paginamodel.
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 

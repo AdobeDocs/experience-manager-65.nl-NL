@@ -1,13 +1,13 @@
 ---
 title: Lichtbak als galerie met persoonlijke afbeeldingen
-description: Meer informatie over Lichtbak als persoonlijke galerie voor afbeeldingen in Adobe Experience Manager Assets].
+description: Meer informatie over Lichtbak als persoonlijke afbeeldingengalerie in Adobe Experience Manager Assets].
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '237'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Als u een [!DNL Adobe Experience Manager Assets] gebruiker, wordt Lichtbak autom
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. Klik in het dialoogvenster op **[!UICONTROL Add]** en sluit het vervolgens om het proces te voltooien. De geselecteerde elementen worden toegevoegd aan Lichtbak.
+1. Klik op **[!UICONTROL Add]** en sluit het vervolgens om het proces te voltooien. De geselecteerde elementen worden toegevoegd aan Lichtbak.
 1. Ga naar de console Verzamelingen om Lichtbak weer te geven.
 1. Klikken **[!UICONTROL Lightbox]** om de elementen in het bestand weer te geven.
 
@@ -38,4 +38,4 @@ Als u een [!DNL Adobe Experience Manager Assets] gebruiker, wordt Lichtbak autom
 1. Navigeer naar de console Verzamelingen en klik op Lichtbak om de bijbehorende elementen weer te geven.
 1. Selecteer de elementen die u wilt verwijderen.
 1. Klik **[!UICONTROL Remove]** op de werkbalk.
-1. Klik in het dialoogvenster op **[!UICONTROL Remove]** om de verwijderactie te bevestigen. De elementen worden verwijderd uit Lichtbak.
+1. Klik op **[!UICONTROL Remove]** om de verwijderactie te bevestigen. De elementen worden verwijderd uit Lichtbak.

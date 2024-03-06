@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 1. Druk op **+** en selecteert u **JSR45 extern**
 1. Selecteer in het dialoogvenster Configuratie **Configureren** naast **Toepassingsserver** en een generieke server configureren
 1. Stel de startpagina in op een geschikte URL als u een browser wilt openen wanneer u de foutopsporing start
-1. Alles verwijderen **Voordat u start** taken als u vlt autosync gebruikt, of aangewezen Gemaakt taken vormen als u niet
+1. Alles verwijderen **Voordat u start** taken als u vlt automatisch synchroniseert gebruikt, of aangewezen Gemaakt taken vormen als u niet
 1. Op de **Opstarten/Verbinding** deelvenster, pas indien nodig de poort aan
 1. Kopieer de opdrachtregelargumenten die IntelliJ IDEA voorstelt
 

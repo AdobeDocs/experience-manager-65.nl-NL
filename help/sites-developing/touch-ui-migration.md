@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Houd tijdens het migreren rekening met de volgende grote verschillen tussen de k
  </tbody>
 </table>
 
-Met andere woorden, wanneer u een gedeelte van de gebruikersinterface van de klassieke gebruikersinterface naar de aanraakinterface migreert, betekent dit dat u een *ExtJS-widget* een *Onderdeel Verdelen*. Om dit te vergemakkelijken, is de aanraak UI gebaseerd op het kader van Granite UI, dat reeds sommige componenten van het Verkopen voor UI (die als componenten van Granite UI wordt bedoeld) verstrekt.
+Met andere woorden, wanneer u een gedeelte van de gebruikersinterface migreert van de klassieke gebruikersinterface naar de aanraakinterface, kunt u een poort *ExtJS-widget* een *Onderdeel Verdelen*. Om dit te vergemakkelijken, is de aanraak UI gebaseerd op het kader van Granite UI, dat reeds sommige componenten van het Verkopen voor UI (die als componenten van Granite UI wordt bedoeld) verstrekt.
 
 Controleer voordat u begint de status en de bijbehorende aanbevelingen:
 

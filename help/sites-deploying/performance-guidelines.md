@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -348,7 +348,7 @@ Ontwikkelen voor AEM gericht op **prestaties en schaalbaarheid**. Hier volgt een
 **NIET**
 
 * Gebruik niet direct JCR-API&#39;s, als dat mogelijk is
-* Wijzig geen /libs, maar gebruik overlays
+* Wijzig /libs niet, maar gebruik overlays
 * Gebruik waar mogelijk geen query&#39;s
 * Gebruik geen Sling Bindings om de diensten OSGi in code te krijgen Java™, maar eerder gebruik:
 

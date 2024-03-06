@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
-Wanneer grote activa van de Experience Manager in Adobe InDesign documenten worden geplaatst, moet een creatieve beroeps op lange termijn wachten [een element plaatsen](https://helpx.adobe.com/indesign/using/placing-graphics.html). Ondertussen wordt de gebruiker verhinderd InDesign te gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in InDesign-documenten plaatsen, zodat deze beginnen. Wanneer de uiteindelijke uitvoer vereist is, bijvoorbeeld voor drukwerk- en publicatieworkflows, vervangen de oorspronkelijke elementen met volledige resolutie de tijdelijke uitvoering op de achtergrond. Deze asynchrone update op de achtergrond versnelt het ontwerpproces om de productiviteit te verbeteren en belemmert het creatieve proces niet.
+Wanneer grote activa van de Experience Manager in Adobe InDesign documenten worden geplaatst, moet een creatieve beroeps op lange termijn wachten [een element plaatsen](https://helpx.adobe.com/indesign/using/placing-graphics.html). Ondertussen wordt de gebruiker verhinderd InDesign te gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in documenten van het InDesign plaatsen om mee te beginnen. Wanneer de uiteindelijke uitvoer vereist is, bijvoorbeeld voor drukwerk- en publicatieworkflows, vervangen de oorspronkelijke elementen met volledige resolutie de tijdelijke uitvoering op de achtergrond. Deze asynchrone update op de achtergrond versnelt het ontwerpproces om de productiviteit te verhogen en belemmert het creatieve proces niet.
 
 Adobe Experience Manager (AEM) biedt uitvoeringen die alleen voor plaatsing worden gebruikt (FPO). Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding. Als een FPO-uitvoering niet beschikbaar is voor een element, gebruikt Adobe InDesign in plaats daarvan het oorspronkelijke element. Dit fallback-mechanisme zorgt ervoor dat de creatieve workflow zonder onderbrekingen doorgaat.
 
@@ -47,7 +47,7 @@ Hier volgen de stappen voor het configureren van het workflowmodel voor DAM Upda
 
 1. Selecteren **[!UICONTROL Process Thumbnails]** stap en klik op **[!UICONTROL Configure]**.
 
-1. Klik op het tabblad **[!UICONTROL FPO Rendition]**. Selecteer **[!UICONTROL Enable FPO rendition creation]**.
+1. Klik op het tabblad **[!UICONTROL FPO Rendition]**. Selecteren **[!UICONTROL Enable FPO rendition creation]**.
 
    ![fpo_rendition_damupdateasset_model](assets/fpo_rendition_damupdateasset_model.png)
 
@@ -83,7 +83,7 @@ In Experience Manager wordt de DAM Update Asset-workflow uitgevoerd wanneer een 
 
    ![imagemagick-mimetype](assets/imagemagick-mimetype.png)
 
-1. In de **[!UICONTROL Arguments]** tabblad, in het dialoogvenster **[!UICONTROL Commands]** een relevante opdracht ImageMagick toevoegen om FPO-uitvoeringen te genereren.
+1. In de **[!UICONTROL Arguments]** tabblad, in de **[!UICONTROL Commands]** , voegt u een relevante opdracht ImageMagick toe om FPO-uitvoeringen te genereren.
 
    Hieronder ziet u een voorbeeld-opdracht waarmee FPO-uitvoeringen worden gegenereerd in de indeling JPEG, gedownsampled naar 72 PPI bij een kwaliteitsinstelling van 10% en waarmee Adobe Photoshop-bestanden met meerdere lagen worden afgehandeld door de uitvoer af te vlakken:
 
@@ -93,13 +93,13 @@ In Experience Manager wordt de DAM Update Asset-workflow uitgevoerd wanneer een 
 
 Voor gedetailleerde informatie over ImageMagick de mogelijkheden van de bevellijn, zie [https://imagemagick.org](https://imagemagick.org).
 
-## Uitvoeringen van bestaande elementen genereren met de workflow Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
+## Uitvoeringen van bestaande elementen genereren met behulp van de workflow Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
 
 Als u een Experience Manager-workflow wilt gebruiken om FPO-uitvoering van de bestaande elementen te genereren, maakt u een speciaal workflowmodel dat gebruikmaakt van de ingebouwde FPO-uitvoeringsoptie.
 
 1. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
-1. Als u een model wilt maken, klikt u op **[!UICONTROL Create]** > **[!UICONTROL Create Model]**.
+1. Als u een model wilt maken, klikt u **[!UICONTROL Create]** > **[!UICONTROL Create Model]**.
 
 1. Voeg een betekenisvolle **[!UICONTROL Title]** en **[!UICONTROL Name]**.
 
@@ -109,7 +109,7 @@ Als u een Experience Manager-workflow wilt gebruiken om FPO-uitvoering van de be
 
 1. Klikken **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek en zoek naar een stap met een procesminiatuur.
 
-1. Selecteren **[!UICONTROL Process Thumbnails]** en klik op **[!UICONTROL Configure]**. Volg de [configuratie om uitvoering van nieuwe elementen te genereren met behulp van de workflow van de Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
+1. Selecteren **[!UICONTROL Process Thumbnails]** en klik op **[!UICONTROL Configure]**. Volg de [configuratie om uitvoering van nieuwe elementen te genereren met de workflow van de Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
 
 1. Klik op **[!UICONTROL Sync]**.
 

@@ -2,9 +2,9 @@
 title: AEM Forms configureren en problemen oplossen in een JEE-servercluster
 description: Leer hoe u een Adobe Experience Manager (AEM) Forms op een JEE-servercluster configureert en problemen oplost.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3959'
+source-wordcount: '3945'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Op de andere knoop, AP-HP7:
 [info 2011/08/05 09:28:10.128 EDT GemfireCacheAdapter <server.startup : 0> tid=0x64] DistributionManager ap-hp7(2821)<v1>:19498/59136 started on 239.192.81.1[33456]. There were 1 other DMs. others: [ap-hp8(4268)<v0>:18763/56449]
 ```
 
-**Wat als GemFire knooppunten vindt die het niet zou moeten?**
+**Wat gebeurt er als GemFire knooppunten vindt die het niet zou mogen?**
 
 Elke afzonderlijke cluster die een collectief netwerk deelt zou een afzonderlijke reeks plaatsbepalers van TCP moeten gebruiken, als de plaatsbepalers van TCP worden gebruikt, of een afzonderlijk UDP havenaantal als de multicastconfiguratie UDP wordt gebruikt. Omdat UDP autodiscovery de standaardconfiguratie voor AEM Forms op JEE is, en zelfde standaardhaven 33456 in gebruik door veelvoudige clusters is, is het mogelijk dat clusters die niet zouden moeten proberen om te communiceren, onverwacht dit doen. De productie- en QA-clusters moeten bijvoorbeeld gescheiden blijven, maar kunnen via UDP-multicast verbinding met elkaar maken.
 
@@ -273,7 +273,7 @@ Als het Kwartz opstelling is om als één enkele knoop in werking te stellen, ma
 
 ```xml
 [1/20/11 10:40:57:584 EST] 00000035 ErrorLogger   E org.quartz.core.ErrorLogger schedulerError An error occured while marking executed job complete. job= 'Asynchronous.TaskFormDataSaved:12955380518320.5650479324757354'
- org.quartz.JobPersistenceException: Couldn't remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
+ org.quartz.JobPersistenceException: Could not remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.removeTrigger(JobStoreSupport.java:1405)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:2888)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport$38.execute(JobStoreSupport.java:2872)

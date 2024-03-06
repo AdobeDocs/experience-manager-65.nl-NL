@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ De volgende eigenschappen zijn beschikbaar voor veel workflowstapcomponenten op 
 
 * **Gebruikers via e-mail op de hoogte stellen**
 
-   * U kunt deelnemers op de hoogte stellen door hen een e-mail te sturen wanneer de werkstroom de stap bereikt.
+   * Deelnemers op de hoogte stellen door hen een e-mail te sturen wanneer de werkstroom de stap bereikt.
    * Indien ingeschakeld, wordt een e-mail verzonden naar de gebruiker die door de eigenschap wordt gedefinieerd **Gebruiker/groep**, of aan elk lid van de groep indien een groep is gedefinieerd.
 
 * **Gebruiker/groep**

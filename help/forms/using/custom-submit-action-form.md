@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
 | AEM 6,5 | Dit artikel |
 
-Voor adaptieve formulieren moeten handelingen worden verzonden om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) omvat [OOTB Handelingen verzenden](../../forms/using/configuring-submit-actions.md) die aangepaste taken demonstreren die u kunt uitvoeren met de door de gebruiker verzonden gegevens. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
+Voor adaptieve formulieren moeten handelingen worden verzonden om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) omvat [Buiten-de-box Acties verzenden](../../forms/using/configuring-submit-actions.md) die aangepaste taken demonstreren die u kunt uitvoeren met de door de gebruiker verzonden gegevens. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
 
 ## Workflow voor een handeling Verzenden {#workflow-for-a-submit-action}
 
@@ -84,7 +84,7 @@ Als de handeling geen voorwaarts pad biedt, leidt de verzendserver de browser om
 
 >[!NOTE]
 >
->Een auteur verstrekt Redirect URL (gebruikend de Dank u Configuratie van de Pagina). [OOTB-verzendhandelingen](../../forms/using/configuring-submit-actions.md) gebruik Redirect URL om browser van het middel om te leiden dat de voorwaartse weg verwijzingen.
+>Een auteur verstrekt Redirect URL (gebruikend de Dank u Configuratie van de Pagina). [Handelingen verzenden buiten de box](../../forms/using/configuring-submit-actions.md) gebruik Redirect URL om browser van het middel om te leiden dat de voorwaartse weg verwijzingen.
 >
 >U kunt een douane schrijven voorlegt actie die een verzoek aan een middel of servlet door:sturen. De Adobe adviseert dat het manuscript dat middelbehandeling voor de voorwaartse weg uitvoert het verzoek aan Redirect URL opnieuw richt wanneer de verwerking voltooit.
 
@@ -99,11 +99,11 @@ Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
    * **guideComponentType** van het type String en value **fd/af/components/guidesubmittype**
    * **guideDataModel** van het type String dat het type adaptief formulier opgeeft waarvoor de handeling Verzenden van toepassing is. **xfa** wordt ondersteund voor op XFA gebaseerde adaptieve formulieren terwijl **xsd** wordt ondersteund voor op XSD gebaseerde adaptieve formulieren. **basis** wordt ondersteund voor adaptieve formulieren zonder XDP of XSD. Voeg de corresponderende tekenreeksen toe om de handeling weer te geven op meerdere typen adaptieve formulieren. Scheid elke tekenreeks door een komma. Als u bijvoorbeeld een handeling zichtbaar wilt maken op op XFA- en XSD gebaseerde adaptieve formulieren, geeft u de waarden op **xfa** en **xsd** respectievelijk.
 
-   * **jcr:beschrijving** van het type String. De waarde van deze eigenschap wordt weergegeven in de actielijst Verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De OOTB-acties zijn aanwezig in de CRX-opslagplaats op de locatie **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:beschrijving** van het type String. De waarde van deze eigenschap wordt weergegeven in de actielijst Verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De acties buiten de box zijn aanwezig in de CRX bewaarplaats op de plaats **/libs/fd/af/components/guidesubmittype**.
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
-Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de OOTB-actie Store Content (afgekeurd) waarmee de gegevens worden opgeslagen in de CRX-opslagplaats. Bovendien biedt CQ een [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) API die kan worden gebruikt om e-mails te verzenden. Voordat u de e-mail-API gebruikt, [vormen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagruimte.
+Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de handeling Verzenden uit de doos Winkelinhoud (afgekeurd) die de gegevens in de CRX-opslagplaats opslaat. Bovendien biedt CQ een [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) API die kan worden gebruikt om e-mails te verzenden. Voordat u de e-mail-API gebruikt, [vormen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagruimte.
 
 1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
 
@@ -139,7 +139,7 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
    Voeg het script post.POST.jsp toe aan uw handeling. (/apps/custom_submit_action/store_and_mail/).
 
-   Voer de actie OOTB Store uit (script post.POST.jsp). Gebruik de [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ in uw code verstrekt om de actie van de Opslag in werking te stellen. Voeg de volgende code in uw JSP dossier toe:
+   Voer de handeling uit van de winkel (het script post.POST.jsp). Gebruik de [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ in uw code verstrekt om de actie van de Opslag in werking te stellen. Voeg de volgende code in uw JSP dossier toe:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

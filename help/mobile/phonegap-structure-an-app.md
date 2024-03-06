@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Aanvaardbare pagina-componenten die AngularJS willen gebruiken, hebben een equiv
 
 In clientbibliotheken zijn er een paar opties beschikbaar voor de ontwikkelaar van waar deze in de opslagplaats moeten worden geplaatst. Het volgende patroon wordt ter begeleiding aangeboden, maar is geen harde eis.
 
-Als uw cliëntside code op zijn kan staan en niet op een specifieke component van uw toepassing betrekking heeft-betekenis kan het in andere toepassing-Adobe worden opnieuw gebruikt adviseert het opslaan in /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. Als de clientlib echter specifiek is voor één toepassing, kunt u deze nesten als een onderliggend element van het ontwerpknooppunt van uw app; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Gebruik de categorie van deze client niet met andere bibliotheken, maar sluit indien nodig andere bibliotheken in. Als u dit patroon volgt, hoeft de ontwikkelaar niet telkens nieuwe configuraties voor Content Sync toe te voegen wanneer een clientbibliotheek aan de app wordt toegevoegd, maar werkt u gewoon de eigenschap &#39;embeds&#39; van de ontwerpclient van de app bij. Kijk bijvoorbeeld naar het configuratieknooppunt voor Geometrixx clientlibs-all Content Sync op /content/phonegap/geometrixx-outdoor/en/jcr:content/pge-app/app-config/clientlibs-all.
+Als uw clientcode zelfstandig kan staan en geen betrekking heeft op een specifieke component van uw toepassing (dit betekent dat de code opnieuw kan worden gebruikt in andere toepassingen), raadt de Adobe aan de code op te slaan in /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. Als de clientlib echter specifiek is voor één toepassing, kunt u deze nesten als een onderliggend element van het ontwerpknooppunt van uw app; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Gebruik de categorie van deze client niet met andere bibliotheken, maar sluit indien nodig andere bibliotheken in. Als u dit patroon volgt, hoeft de ontwikkelaar niet telkens nieuwe configuraties voor Content Sync toe te voegen wanneer een clientbibliotheek aan de app wordt toegevoegd, maar werkt u gewoon de eigenschap &#39;embeds&#39; van de ontwerpclient van de app bij. Kijk bijvoorbeeld naar het configuratieknooppunt voor Geometrixx clientlibs-all Content Sync op /content/phonegap/geometrixx-outdoor/en/jcr:content/pge-app/app-config/clientlibs-all.
 
 Als uw clientcode nauw aan een specifieke component is gekoppeld, plaatst u die code in een clientbibliotheek die onder de locatie van de component is genest in /apps/ en sluit u de categorie in de client lib &#39;design&#39; van uw app in.
 

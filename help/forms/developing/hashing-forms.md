@@ -2,9 +2,9 @@
 title: Hoe te om hakken in dynamische PDF forms te produceren en te werken?
 description: Het produceren van en het werken met Hashes in dynamische PDF forms.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Met AEM Forms on JEE Designer kunt u de verschillende hashfuncties in scriptobje
 
 * SHA-1 en SHA-256 - zoals gedefinieerd door NIST
 
-Het grootste voordeel van het gebruiken van knoeiboel is dat u geen wachtwoorden moet direct vergelijken door duidelijke tekstkoorden te vergelijken; in plaats daarvan, kunt u de twee haken van de twee wachtwoorden vergelijken. Omdat het onwaarschijnlijk is dat twee verschillende koorden de zelfde knoeiboel hebben, als beide knoeiboel identiek zijn, dan kunt u veronderstellen dat de vergeleken koorden (in dit geval, de wachtwoorden) ook identiek zijn.
+Het grootste voordeel van het gebruik van hashes is dat u wachtwoorden niet rechtstreeks hoeft te vergelijken door duidelijke teksttekenreeksen te vergelijken; in plaats daarvan kunt u de twee hashes van de twee wachtwoorden vergelijken. Omdat het onwaarschijnlijk is dat twee verschillende koorden de zelfde knoeiboel hebben, als beide knoeiboel identiek zijn, dan kunt u veronderstellen dat de vergeleken koorden (in dit geval, de wachtwoorden) ook identiek zijn.
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## Hoe verder? {#next-steps}
 
-Waar heb je zoiets nodig? Neem bijvoorbeeld een PDF-formulier met velden die alleen door geautoriseerde personen moeten worden ingevuld. Door die gebieden met een wachtwoord te beveiligen, dat niet in duidelijke teksten overal in het document zoals in Sample_2.pdf kan worden gezien, kunt u ervoor zorgen dat die gebieden slechts voor gebruikers toegankelijk zijn die het wachtwoord kennen.
+Waar heb je zoiets nodig? Neem bijvoorbeeld een PDF-formulier met velden die alleen door geautoriseerde personen moeten worden ingevuld. Als u deze velden beveiligt met een wachtwoord, dat nergens in het document in duidelijke tekst staat, zoals in Sample_2.pdf, kunt u ervoor zorgen dat deze velden alleen toegankelijk zijn voor gebruikers die het wachtwoord weten.
 
 Ik moedig u aan om de twee dossiers van de steekproefPDF verder te onderzoeken.  U kunt nieuwe knoeiboelwaarden met Sample_1.pdf produceren, en de geproduceerde waarden gebruiken om of het wachtwoord of de knoeiboelfunctie te veranderen die in Sample_2.pdf wordt gebruikt.  De bronnen in de sectie Kenmerken bieden ook aanvullende informatie over hashing en de specifieke JavaScript-implementaties die in dit artikel worden gebruikt.
 

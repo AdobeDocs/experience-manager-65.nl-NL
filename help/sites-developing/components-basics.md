@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
+source-wordcount: '4843'
 ht-degree: 0%
 
 ---
@@ -602,9 +602,9 @@ Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar
 
 ### Plaatsaanduidingen voor onderdelen {#component-placeholders}
 
-Componenten moeten altijd HTML renderen die zichtbaar is voor de auteur, zelfs als de component geen inhoud heeft. Anders, zou het van de interface van de redacteur visueel kunnen verdwijnen, makend het technisch aanwezig maar onzichtbaar op de pagina en in de redacteur. In een dergelijk geval kunnen de auteurs de lege component niet selecteren en ermee communiceren.
+Componenten moeten altijd HTML renderen die zichtbaar is voor de auteur, zelfs als de component geen inhoud heeft. Anders, zou het van de interface van de redacteur visueel kunnen verdwijnen, makend het technisch aanwezig maar onzichtbaar op de pagina en in de redacteur. In dat geval kunnen de auteurs de lege component niet selecteren en er geen interactie mee tot stand brengen.
 
-Om deze reden, zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM is `edit` of `preview`).
+Om deze reden zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM is `edit` of `preview`).
 De gebruikelijke HTML-markering voor een tijdelijke aanduiding is:
 
 ```HTML

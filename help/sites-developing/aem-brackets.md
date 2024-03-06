@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ In haakjes&#39;&#39; **Bestand** menu, kiest u **Map openen...** en kies `jcr_ro
 
 >[!NOTE]
 >
->Als u geen eigen project met een content-package hebt, kunt u het [HTL TodoMVC-voorbeeld](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Klik op GitHub **ZIP downloaden**, pakt u de bestanden lokaal uit en opent u de `jcr_root` map in Brackets. Voer vervolgens de onderstaande stappen uit om het **Projectinstellingen** en uploadt u ten slotte het hele pakket naar uw AEM ontwikkelingsinstantie door een **Inhoudspakket exporteren** zoals verder onderaan in de Volledige tevreden-Pakket sectie van de Synchronisatie wordt geïnstrueerd.
+>Als u geen eigen project hebt met een content-package, kunt u het volgende proberen [HTL TodoMVC-voorbeeld](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Klik op GitHub **ZIP downloaden**, pakt u de bestanden lokaal uit en opent u de `jcr_root` map in Brackets. Voer vervolgens de onderstaande stappen uit om het **Projectinstellingen** en uploadt u ten slotte het hele pakket naar uw AEM ontwikkelingsinstantie door een **Inhoudspakket exporteren** zoals verder onderaan in de Volledige tevreden-Pakket sectie van de Synchronisatie wordt geïnstrueerd.
 >
 >Na deze stappen, zou u tot `/content/todo.html` URL op uw AEM ontwikkelingsinstantie en u kunt wijzigingen in de code in Brackets beginnen te doen en zien hoe, na het verfrissen in Webbrowser, de veranderingen onmiddellijk aan de AEM server werden gesynchroniseerd.
 

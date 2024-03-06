@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 
 Hieronder volgen de details van de functies die beschikbaar zijn via verschillende soorten integratie tussen [!DNL Assets] en [!DNL Workfront].
 
-| Functie | Beschrijving | [!DNL Workfront] en [!DNL Assets Essentials] *Geen aansluiting (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Vereist connector* | Workfront en [!DNL Experience Manager as a Cloud Service] *Geen aansluiting (OOTB)* |
+| Functie | Beschrijving | [!DNL Workfront] en [!DNL Assets Essentials] *Geen aansluiting (buiten de box)* | [!DNL Workfront for Experience Manager enhanced connector] *Vereist connector* | Workfront en [!DNL Experience Manager as a Cloud Service] *Geen aansluiting (buiten de box)* |
 |----|----|----|-----|-----|
 | Implementatiemethoden | Geschikt voor [!DNL Assets] aanbieden. | Assets Essentials | Adobe Managed Services, op locatie | Cloud Service |
 | **Algemeen** |

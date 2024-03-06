@@ -2,9 +2,9 @@
 title: De RemotePage-component
 description: De component RemotePage is een aangepaste pagina-component voor het bewerken van SPA op afstand in AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Zie het artikel [Een externe SPA bewerken in AEM](spa-edit-external.md) voor mee
 
 ## Beperkingen {#limitations}
 
-* De component RemotePage verwacht dat de implementatie activa-manifest zoals levert [hier gevonden.](https://github.com/shellscape/webpack-manifest-plugin) De component RemotePage, echter, is slechts getest om met het React kader (en Next.js via ver-pagina-volgende component) te werken, en daarom steunt ver het laden van toepassingen van andere kaders, zoals Angular niet.
+* De component RemotePage verwacht dat de implementatie activa-manifest zoals levert [hier gevonden.](https://github.com/shellscape/webpack-manifest-plugin) De component RemotePage, echter, is slechts getest om met het kader van de Reactie (en Next.js via de ver-pagina-volgende component) te werken, en steunt daarom ver het laden van toepassingen van andere kaders, zoals Angular niet.
 * Interne CSS die is gedefinieerd in het hoofdbestand van de HTML van de toepassing en inline CSS op het basisknooppunt DOM zijn niet beschikbaar bij externe rendering in AEM.
 
 ## Technische details {#technical-details}

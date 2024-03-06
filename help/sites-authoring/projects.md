@@ -2,10 +2,10 @@
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 5%
+source-wordcount: '1360'
+ht-degree: 1%
 
 ---
 
@@ -221,9 +221,9 @@ Voor creatieve projecten worden ook extra rollen zoals fotografen verstrekt. U k
 
 ### Automatische groep maken {#auto-group-creation}
 
-Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren.
+Wanneer u het project creeert en gebruikers aan de diverse rollen toevoegt, worden de groepen verbonden aan het project automatisch gecreeerd om bijbehorende toestemmingen te beheren.
 
-Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**.
+Bijvoorbeeld, zou een project genoemd Mijn project drie groepen hebben **Eigenaars van mijn project**, **Myproject Editors**, **Myproject Observers**.
 
 Als het project wordt geschrapt, worden die groepen slechts geschrapt als u de aangewezen optie selecteert [wanneer u het project verwijdert.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Een beheerder kan ook handmatig de groepen verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
 

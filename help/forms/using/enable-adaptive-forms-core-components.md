@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Een AEM Archetype 41 of [later](https://github.com/adobe/aem-project-archetype) 
 >
 >
 >
-> * Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar, kunt u het pakket installeren via Pakketbeheer. Probeer dan de URL: `http://[Publish Server URL]:[PORT]/system/console` aan login. Hierdoor hebt u toegang tot de aanmeldingspagina op een instantie Publish, zodat u kunt doorgaan met het installatieproces.
+> * Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar, kunt u het pakket installeren via Pakketbeheer. Probeer dan de URL: `http://[Publish Server URL]:[PORT]/system/console` aan login. Hierdoor hebt u toegang tot de aanmeldingspagina op een instantie Publiceren, zodat u verder kunt gaan met het installatieproces.
 > * Verwijder of verwijder het project Archetype niet, nadat u het in uw omgeving hebt geïmplementeerd. Het Archetype-project is vereist om aangepaste en nieuwe Adaptive Forms Core Components-thema&#39;s aan uw omgeving toe te voegen.
 
 De Core Components zijn ingeschakeld voor uw omgeving. Een lege, op componenten gebaseerde adaptieve formuliersjabloon en Canvas 3.0-thema worden geïmplementeerd in uw omgeving, zodat u [op Adaptieve Forms gebaseerde Core Components maken](create-an-adaptive-form-core-components.md).

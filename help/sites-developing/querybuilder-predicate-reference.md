@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2313'
 ht-degree: 0%
 
 ---
@@ -233,7 +233,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex
 
 * **hasPermission**
 
-  JCR-bevoegdheden die door komma&#39;s worden gescheiden en die ALLES voor de huidige gebruikerssessie moet hebben. Bijvoorbeeld, `jcr:write`, `jcr:modifyAccessControl`.
+  JCR-bevoegdheden die door komma&#39;s worden gescheiden en die ALLES voor de huidige gebruikerssessie moet hebben. Bijvoorbeeld: `jcr:write`, `jcr:modifyAccessControl`.
 
 ### taal {#language}
 
@@ -573,7 +573,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 * **alles**
 
-  (bool) Zoek volledige volledige labeltekst, dat wil zeggen alle titels, beschrijving enzovoort (neemt prioriteit over &quot;l `ang`&quot;).
+  (bool) Zoek volledige labeltekst, dat wil zeggen alle titels, beschrijving enzovoort. Heeft voorrang op &quot;l `ang`&quot;.
 
 ### type {#type}
 

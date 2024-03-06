@@ -2,9 +2,9 @@
 title: Een externe SPA bewerken in Adobe Experience Manager
 description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een Adobe Experience Manager-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van het schrijven.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2391'
 ht-degree: 0%
 
 ---
@@ -360,7 +360,7 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 
 ## Kaderbeperkingen {#framework-limitations}
 
-De component RemotePage verwacht dat de implementatie activa-manifest zoals levert [hier gevonden](https://github.com/shellscape/webpack-manifest-plugin). De component RemotePage, echter, is slechts getest om met het React kader (en Next.js via ver-pagina-volgende component) te werken, en daarom steunt ver het laden van toepassingen van andere kaders, zoals Angular niet.
+De component RemotePage verwacht dat de implementatie activa-manifest zoals levert [hier gevonden](https://github.com/shellscape/webpack-manifest-plugin). De component RemotePage, echter, is slechts getest om met het kader van de Reactie (en Next.js via de ver-pagina-volgende component) te werken, en steunt daarom ver het laden van toepassingen van andere kaders, zoals Angular niet.
 
 ## Aanvullende bronnen {#additional-resources}
 

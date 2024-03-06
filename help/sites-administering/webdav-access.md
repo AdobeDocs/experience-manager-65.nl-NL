@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ macOS heeft nu verbinding met AEM via WebDAV en u kunt deze gebruiken als elke a
 
 ### Linux® {#linux}
 
-Het verbinden via WebDAV op Linux® vereist geen configuratie, maar impliceert een paar stappen om de verbinding te maken die afhankelijk van uw Desktopmilieu varieert.
+Voor verbinding via WebDAV op Linux® is geen configuratie vereist, maar het omvat wel een paar stappen om de verbinding tot stand te brengen die afhankelijk is van uw desktopomgeving.
 
 #### GNOME {#gnome}
 

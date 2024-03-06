@@ -2,9 +2,9 @@
 title: Hoe te om de uitvoeren manuscriptdienst in AEM Forms op JEE Workbench te gebruiken om de gegevens van XML te bouwen?
 description: De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Er is bijvoorbeeld veel XML-inhoud met AEM Forms in JEE Process Management-workf
 
 Wanneer u werkt met eenvoudige XML-instellingen, kunt u `Set Value` service, een standaard AEM Forms op JEE-service. Deze dienst plaatst de waarde van één of meerdere gegevenspunten in het model van procesgegevens. Voor eenvoudige voorwaardelijke logica &quot;als dit, dan dat&quot;scenario&#39;s, kan deze dienst het doel aanpassen.
 
-Nochtans, in complexere situaties, is de Vastgestelde dienst van de Waarde niet zo efficiënt. In deze situaties moet u vertrouwen op een robuustere set programmeringsopdrachten, zoals die welke worden geleverd door een programmeertaal zoals Java™. Het gebruik van Java™ om complexe XML te maken kan veel eenvoudiger en duidelijker zijn dan het maken van een XML-document op basis van eenvoudige tekst in de service Waarde instellen. Bovendien is het gemakkelijker om voorwaardelijk programmeren in Java™ dan binnen de Vastgestelde dienst van de Waarde op te nemen.
+In complexere situaties is de service Waarde instellen echter niet zo effectief. In deze situaties moet u vertrouwen op een robuustere set programmeringsopdrachten, zoals die welke worden geleverd door een programmeertaal zoals Java™. Het gebruik van Java™ om complexe XML te maken kan veel eenvoudiger en duidelijker zijn dan het maken van een XML-document op basis van eenvoudige tekst in de service Waarde instellen. Bovendien is het gemakkelijker om voorwaardelijk programmeren in Java™ dan binnen de Vastgestelde dienst van de Waarde op te nemen.
 
 ## Het gebruiken van de Dienst van het Manuscript in een Proces uitvoeren {#using-execute-script-service-in-process}
 

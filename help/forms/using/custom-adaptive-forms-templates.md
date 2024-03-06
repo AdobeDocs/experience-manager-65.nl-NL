@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 0%
@@ -121,7 +121,7 @@ De aangepaste sjabloon heeft dezelfde opmaak als de standaardsjabloon, omdat de 
 
 1. De naam van de gekopieerde component wijzigen in `enrollmentpage`.
 
-1. **(Alleen als u al een inhoudspagina hebt)** Voer de volgende stappen (a-d) uit als u een bestaande `contentpage`component voor uw website. Als u geen bestaande `contentpage`kunt u de component voor uw website `resourceSuperType`eigenschap om naar de OOTB-basispagina te verwijzen.
+1. **(Alleen als u al een inhoudspagina hebt)** Voer de volgende stappen (a-d) uit als u een bestaande `contentpage`component voor uw website. Als u geen bestaande `contentpage`kunt u de component voor uw website `resourceSuperType`eigenschap om naar de basispagina buiten het vak te wijzen.
 
    1. Voor de `enrollmentpage` node, waarde instellen voor eigenschap `sling:resourceSuperType` naar mijnbedrijf/componenten/pagina/inhoudspagina. De `contentpage` is de basispaginacomponent voor uw site. Andere paginacomponenten kunnen het uitbreiden. Scriptbestanden verwijderen onder `enrollmentpage`, behalve `head.jsp`, `content.jsp`, en `library.jsp`. De `sling:resourceSuperType` component, die `contentpage` in dit geval, omvat al dergelijke manuscripten. Kopteksten, waaronder de navigatiebalk en de voettekst, worden overgenomen van de `contentpage` component.
 

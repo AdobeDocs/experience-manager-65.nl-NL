@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Ik zou een eenvoudig blogsysteem als volgt modelleren. Aanvankelijk, geef ik zel
 
 Ik denk dat een van de dingen die duidelijk wordt, is dat de structuur van de inhoud gebaseerd is op het voorbeeld zonder verdere uitleg.
 
-Wat in eerste instantie onverwacht kan zijn, is waarom ik de &quot;commentaren&quot; niet zou opslaan met de &quot;post&quot;, die te wijten is aan toegangscontrole die ik op een redelijk hiërarchische manier zou willen toepassen.
+Wat in eerste instantie onverwachts kan zijn, is waarom ik de &quot;opmerkingen&quot; niet met de &quot;post&quot; zou opslaan, die te wijten is aan toegangscontrole die ik op een redelijk hiërarchische manier zou willen toepassen.
 
 Met behulp van het bovenstaande inhoudsmodel kan ik de &quot;anonieme&quot; gebruiker gemakkelijk toestaan om opmerkingen te maken, maar de anonieme gebruiker op een alleen-lezen basis voor de rest van de werkruimte houden.
 
@@ -164,7 +164,7 @@ Laten we aannemen dat ik &quot;verwijzingen&quot; van een document (a) naar een 
 
 Dus ik zou deze verwijzingen modelleren als &quot;zwakke verwijzingen&quot; (in JCR v1.0 komt dit in feite neer op tekenreekseigenschappen die de uuid van het doelknooppunt bevatten) of eenvoudig een pad gebruiken. Soms is het pad zinvoller om mee te beginnen.
 
-Ik denk dat er gevallen zijn waarin een systeem echt niet kan werken als een verwijzing gevaarlijk is, maar ik kan gewoon niet met een goed &quot;echt&quot; maar simpel voorbeeld komen uit mijn directe ervaring.
+Ik denk dat er gevallen zijn waarin een systeem echt niet werkt als een verwijzing gevaarlijk is, maar ik kan niet met een goed &quot;echt&quot; maar eenvoudig voorbeeld komen uit mijn directe ervaring.
 
 ### Regel 6: Bestanden zijn bestanden. {#rule-files-are-files}
 

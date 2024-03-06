@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '506'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Welke methode u kiest hangt van af hoe comfortabel u de documentatie in GitHub z
 
 ### Een probleem maken {#create-an-issue}
 
-Heeft u een suggestie, een observatie over de huidige documenten of vraagt u zich af hoe iets wordt beschreven? Maak vervolgens een uitgave. De kwesties zijn ook uitstekend als u iets hebt om bij te dragen, maar voel niet comfortabel het uitgeven van de docs of het maken van een trekpleidooi zelf.
+Heeft u een suggestie, een observatie over de huidige documenten of vraagt u zich af hoe iets wordt beschreven? Maak vervolgens een uitgave. De kwesties zijn ook uitstekend als u iets te helpen hebt, maar voel niet comfortabel het uitgeven van de documenten of het maken van een trekpleidooi zelf.
 
 De kwesties laten u uw idee voor verbetering aan de documenten gemakkelijk beschrijven en een lid van het Team van AEM Docs kan het herzien. Klik op de knop **Een probleem aanmelden** Klik boven aan het rechternavigatievenster op een pagina om een uitgave te maken.
 

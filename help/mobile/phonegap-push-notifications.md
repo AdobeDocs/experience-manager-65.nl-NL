@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3156'
 ht-degree: 0%
 
 ---
@@ -355,7 +355,7 @@ Wanneer de **Pushmeldingen** de tegelvertoningen in uw dashboard, gebruiken cree
    >
    >De tekst van de Knoop van de Verbinding is beperkt tot 20 karakters.
    >
-   >Als de eindgebruiker niet over de nieuwste versie van de toepassing beschikt en het gekoppelde pad niet beschikbaar is, wordt de gebruiker door de actie van de diepe koppeling te bevestigen naar de hoofdpagina van de app gebracht.
+   >Als de eindgebruiker niet over de nieuwste versie van de toepassing beschikt en het gekoppelde pad niet beschikbaar is, leidt het bevestigen van de actie van de diepe koppeling de gebruiker naar de hoofdpagina van de app.
 
 1. Voer de **Tekstdetails** in de **Wizard Melding maken** en klik op **Maken**.
 

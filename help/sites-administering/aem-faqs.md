@@ -2,7 +2,7 @@
 title: Veelgestelde vragen AEM
 description: Gebruik deze veelgestelde vragen om algemene workflows of problemen in AEM te begrijpen, te configureren en op te lossen.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -80,11 +80,11 @@ Zie [Redenen voor upgrade-AEM begrijpen](https://helpx.adobe.com/experience-mana
 
 Als de gebruiker, die de filmdossiers uploadt geen toestemmingen onder activaknoop schrapt, ontbreken de schrappingsbrokkenknopen en uploadt opnieuw begint.
 
-#### Wat zijn de standaardmontages voor configuraties OTB terwijl het creëren van het Exemplaar van de Taal? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### Wat zijn de standaardmontages voor uit-van-de-doos configuraties terwijl het creëren van het Exemplaar van de Taal? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Wanneer u een taalkopie maakt via de aanraakinterface (**Verwijzingen** > **Taalkopie bijwerken**), wordt er een nieuwe DAM-map gemaakt onder de nieuwe taal en er wordt naar elementen verwezen.
 
-Dit is de standaardinstelling voor OOTB-configuraties. U kunt instellen **Pagina-elementen vertalen** = **Niet vertalen** in vertaalconfiguraties.
+Dit is standaard het plaatsen voor uit-van-de-doos configuraties. U kunt instellen **Pagina-elementen vertalen** = **Niet vertalen** in vertaalconfiguraties.
 Voor AEM 6.4: **Gereedschappen** > **Cloud Servicen** > **Cloudservices voor vertaling**.
 
 #### Hoe te om een AEM component onbruikbaar te maken die exponentiële groei voor AEM SegmentStore (AEM 6.3.1.1) veroorzaakt? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

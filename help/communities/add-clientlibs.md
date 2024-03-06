@@ -7,9 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ In dit geval, met inbegrip van hen allen en zo de meer basiscliënten SCF die de
 
 * Naam: **`embed`**
 * Type: **`String`**
-* Klik op **`Multi`**
+* Klikken **`Multi`**
 * Waarde: **`cq.social.scf`**
 
    * Hiermee wordt een dialoogvenster weergegeven. Klik op **`+`** na elke vermelding om de volgende clientlib-categorieën toe te voegen:
@@ -123,7 +123,7 @@ De instructie include behoort tot de `head` van de `html` script. De standaardwa
 1. Gebruiken **CRXDE Lite**, selecteert u **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Klik met de rechtermuisknop en selecteer **Kopiëren** (Of selecteer Kopiëren op de werkbalk)
-1. Selecteer **`/apps/an-scf-sandbox/components/playpage`**
+1. Selecteren **`/apps/an-scf-sandbox/components/playpage`**
 1. Klik met de rechtermuisknop en selecteer **Plakken** (of selecteer Plakken op de werkbalk)
 1. Dubbelklikken **`headlibs.jsp`** zodat u het kunt openen
 1. De volgende regel toevoegen aan het einde van het bestand
@@ -151,7 +151,7 @@ Laad uw website in de browser en controleer of de achtergrond geen blauwe tint h
 
 Op dit moment bestaat er een minimalistische zandbak. Het kan de moeite waard zijn om op te slaan als een pakket, zodat u tijdens het afspelen uw server kunt uitschakelen als uw opslagplaats beschadigd raakt en u opnieuw wilt beginnen. Wijzig vervolgens de naam van de map crx-quickstart/ of verwijder deze, schakel de server in, upload en installeer dit opgeslagen pakket en hoef deze basisstappen niet te herhalen.
 
-Dit pakket is beschikbaar op het tabblad [Een voorbeeldpagina maken](/help/communities/create-sample-page.md) zelfstudie voor hen die niet kunnen wachten om binnen te springen en te beginnen met afspelen...
+Dit pakket is beschikbaar op het tabblad [Een voorbeeldpagina maken](/help/communities/create-sample-page.md) zelfstudie voor mensen die niet kunnen wachten om binnen te springen en te beginnen met afspelen.
 
 Een pakket maken:
 

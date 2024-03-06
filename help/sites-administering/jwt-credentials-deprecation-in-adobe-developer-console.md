@@ -1,9 +1,9 @@
 ---
 title: JWT Credentials Deprection in Adobe Developer Console
 description: Meer informatie over de gevolgen van de afschrijving van JWT-gebruikersgegevens in Adobe Developer Console voor AEM
-source-git-commit: 18bee77ab6fcb2d635d389f929c1dd8e2bc25de5
+source-git-commit: 72974d27fecbd9c242f66e203b02463c22b93108
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,6 @@ Dit artikel verstrekt wat extra context over hoe AEM 6.5 klanten de veroudering 
 Het belangrijkste op dit ogenblik weghalen is dat AEM eigenschappen nog niet de nieuwe geloofsbrieven van Server-aan-Server steunen OAuth. De steun zal binnenkort — half april 2024 door een speciaal verenigbaarheidspakket voor AEM 6.5 worden geïnstalleerd, als u het recentste Service Pack 20 of lager in werking stelt (Service Pack 21 en hoger zal automatisch het omvatten). U kunt een e-mail met instructies hebben ontvangen om uw geloofsbrieven van JWT te migreren, maar rust verzekerd dat u op de geloofsbrieven migratie kunt en zou moeten blokkeren tot AEM het nieuwe server-aan-server credentiële type van OAuth steunt.
 
 In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-gegevens (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, zodra AEM deze gegevens medio april ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de geloofsbrieven in de toekomst te vervangen.
-
->[!NOTE]
->
->De [**AEM** Ontwerpconsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#crxde-lite-and-developer-console) (noteer de **AEM** in de naam, die deze onderscheidt van de **Adobe** Developer Console) biedt een hulpprogramma om te genereren [JWT-tokens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) gebruikt voor server-aan-server APIs. Deze gegevens zijn niet afgekeurd en kunnen ook in de toekomst worden gebruikt.
-
 
 ## AEM integreren met andere oplossingen voor Adobe {#integrating-aem-with-other-adobe-solutions}
 

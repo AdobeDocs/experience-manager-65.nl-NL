@@ -2,9 +2,10 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: f00d2c88ba6727f8f8597fefeb467b612b23dea3
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 39261357c17ef565a39ebc441aed356d69b4d8f9
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3536'
 ht-degree: 0%
 
 ---
@@ -478,6 +479,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
    1. Start de AEM Server opnieuw en controleer de activeringsstatus van alle bundels nadat het opnieuw opstarten is voltooid. U kunt de status van de bundels controleren door toegang te krijgen tot: `https://server:host/system/console/bundles`. Zorg ervoor dat alle bundels actief zijn alvorens met verdere taken te werk te gaan.
 
 * De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)
+* Met Adaptive Forms kunt u aangepaste functies gebruiken met ECMAScript versie 5 of lager. Wanneer een douanefunctie ECMAScript versie 6 of later, zoals &quot;laat&quot;, &quot;const&quot;, of pijlfuncties gebruikt, zou de regelredacteur niet behoorlijk kunnen openen.
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 

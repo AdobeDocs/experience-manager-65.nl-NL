@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 1%
+source-wordcount: '1754'
+ht-degree: 0%
 
 ---
 
@@ -117,7 +117,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Bevat informatie over het segment dat bijvoorbeeld, 2 is bekeken:O:4-8 </td>
+   <td>Bevat informatie over het segment dat bijvoorbeeld is bekeken, <code>2:O:4-8</code> </td>
   </tr>
  </tbody>
 </table>
@@ -317,7 +317,7 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, met het verschil dat de 
 
    **Voorbeeldaanroepen** aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit moeten kijken wanneer bekeken met Debugger DigitalPulse:
 
-   ![lmilestones1](assets/lmilestones1.png)
+   ![mijlpalen1](assets/lmilestones1.png)
 
    *De **pev3**De variabele die in de vraag wordt verzonden bevat de volgende informatie:*
 

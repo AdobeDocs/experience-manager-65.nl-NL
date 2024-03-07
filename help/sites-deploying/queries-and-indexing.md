@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3032'
+source-wordcount: '3034'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Speciale tekens zoals *&quot;-&quot;* niet geïndexeerd.
 
 | <b>Token</b> | <b>Document-id&#39;s</b> |
 | --- | --- |
-| 194 | ..., 200,... |
+| 194 | ..., 200... |
 | merk | ..., 100,... |
 | kubus | ..., 200, 300,... |
 | dimensie | 300 |
@@ -222,7 +222,7 @@ Neem de volgende voorbeeldvraag:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Om een Index van het Bezit van Lucene voor de bovengenoemde vraag te bepalen, kunt u de volgende definitie toevoegen door een knoop onder te creëren **eik:index:**
+Om een Index van het Bezit van Lucene voor de bovengenoemde vraag te bepalen, kunt u de volgende definitie toevoegen door een knoop onder te creëren **`oak:index`:**
 
 * **Naam:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`

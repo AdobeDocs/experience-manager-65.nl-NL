@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ De geautoriseerde gebruiker wordt gebruikt in stap 3 om de verkoopdistributie op
    * **Opdrachtgever**: *zoeken naar gebruiker gemaakt voor gebruikerssynchronisatie*
    * **Type**: `Allow`
    * **Rechten**: `jcr:all`
-   * **Beperkingen** rep:glob: `*/activities/*`
+   * **Beperkingen** `rep:glob`: `*/activities/*`
    * selecteren **OK**
 
 * selecteren **Alles opslaan**

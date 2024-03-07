@@ -4,9 +4,9 @@ description: De methodes van de Helper van de bars om het werk met SCF te vergem
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 787e5a87f13498006e2ce897e85ee12704b58f09
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
 * **format**: String
 
-  (Optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18&quot;:17:13-07:00&quot;
+  (Optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; en wordt het resultaat weergegeven als &quot;`2015-03-18T18:17:13-07:00`&quot;
 
 ### Voorbeelden {#examples-1}
 

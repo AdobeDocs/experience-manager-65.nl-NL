@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1541'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
 
 * **addfields.jsp**: Dit script bevat de actievelden die tijdens de uitvoering aan het HTML-bestand worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die zijn vereist tijdens verzending in het script post.POST.jsp.
 * **dialog.xml**: Dit script is vergelijkbaar met het dialoogvenster CQ-component. Het verstrekt configuratieinformatie die de auteur aanpast. De velden worden weergegeven op het tabblad Handelingen verzenden in het dialoogvenster Formulier bewerken Adaptief wanneer u de handeling Verzenden selecteert.
-* **post.POST.jsp**: De verzendserver roept dit script aan met de gegevens die u verzendt en de aanvullende gegevens in de vorige secties. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren met de aangepaste formulieren die moeten worden weergegeven in het dialoogvenster Formulier bewerken, voegt u deze eigenschappen toe aan de lijst:Folder:
+* **post.POST.jsp**: De verzendserver roept dit script aan met de gegevens die u verzendt en de aanvullende gegevens in de vorige secties. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren met de aangepaste formulieren die moeten worden weergegeven in het dialoogvenster Formulier bewerken, voegt u deze eigenschappen toe aan het dialoogvenster `sling:Folder`:
 
    * **guideComponentType** van het type String en value **fd/af/components/guidesubmittype**
    * **guideDataModel** van het type String dat het type adaptief formulier opgeeft waarvoor de handeling Verzenden van toepassing is. **xfa** wordt ondersteund voor op XFA gebaseerde adaptieve formulieren terwijl **xsd** wordt ondersteund voor op XSD gebaseerde adaptieve formulieren. **basis** wordt ondersteund voor adaptieve formulieren zonder XDP of XSD. Voeg de corresponderende tekenreeksen toe om de handeling weer te geven op meerdere typen adaptieve formulieren. Scheid elke tekenreeks door een komma. Als u bijvoorbeeld een handeling zichtbaar wilt maken op op XFA- en XSD gebaseerde adaptieve formulieren, geeft u de waarden op **xfa** en **xsd** respectievelijk.

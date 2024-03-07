@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ De Bulkeditor gebruiken om meerdere items tegelijk te bewerken:
   </tr>
   <tr>
    <td>Hoofdpad</td>
-   <td>Hiermee geeft u het hoofdpad aan dat door de Bulk-editor wordt gezocht.<br /> Bijvoorbeeld, <code>/content/geometrixx/en</code>. De Bulk-editor zoekt naar alle onderliggende knooppunten.</td>
+   <td>Hiermee geeft u het hoofdpad aan dat door de Bulk-editor wordt gezocht.<br /> Bijvoorbeeld: <code>/content/geometrixx/en</code>. De Bulk-editor zoekt naar alle onderliggende knooppunten.</td>
   </tr>
   <tr>
    <td>Zoekparameters</td>
@@ -119,7 +119,8 @@ In het bovenstaande voorbeeld worden alle pagina&#39;s die voldoen aan uw zoekcr
 * **pad:** alleen zoekknooppunten onder dit pad. Als u meer dan één termijn met een wegprefix specificeert, slechts wordt het laatste overwogen.
 * **type:** alleen retourknooppunten van het opgegeven knooppunttype. Dit omvat primaire en mixintypes. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
 * **bestelling:** het resultaat van de opgegeven eigenschappen te bepalen. U kunt meerdere door komma&#39;s gescheiden eigenschapsnamen opgeven. Als u het resultaat in aflopende volgorde wilt rangschikken, plaatst u gewoon een minteken voor de naam van de eigenschap. Bijvoorbeeld de volgorde:-name. Als u een plusteken gebruikt, wordt het resultaat in oplopende volgorde geretourneerd. Dit is ook de standaardinstelling.
-* **limiet:** beperkt het aantal resultaten met een interval. Limiet:10..20 Het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. limit:10 (retourneert de eerste tien resultaten).
+* **limiet:** beperkt het aantal resultaten met een interval. Limiet:10..20 Het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een `interval:limit:10..` of `limit:..20`
+Als de punten worden weggelaten en slechts één waarde wordt gespecificeerd, GQL keert hoogstens dit aantal resultaten terug. Bijvoorbeeld: `limit:10` (retourneert de eerste tien resultaten).
 
 ### Inhoud exporteren {#exporting-content}
 

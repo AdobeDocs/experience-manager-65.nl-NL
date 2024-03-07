@@ -7,9 +7,9 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -143,8 +143,8 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 * **diffTime**: Verschil tussen de huidige tijd en de laatste opslagactie voor het concept. Het verschil tussen de huidige tijd en de laatst ingediende actie voor de indiening.
 * **iconClass**: CSS-klasse die wordt gebruikt om de eerste letter van het concept/de verzending weer te geven. Forms Portal bevat de volgende klassen, die verschillende gekleurde achtergronden bieden.
 * **eigenaar**: Gebruiker die het concept/de verzending heeft gemaakt.
-* **Vandaag**: Datum van opstelling of indiening in DD:MM:YYYY-indeling.
-* **TimeNow**: Tijdstip van aanmaak of indiening van het ontwerp in HH:MM:SS 24-uursnotatie
+* **Vandaag**: Datum van aanmaak of indiening van het ontwerp in `DD:MM:YYYY` gebruiken.
+* **TimeNow**: Tijdstip van aanmaak of indiening van het ontwerp in `HH:MM:SS` 24-uurs formaat
 
 *Opmerking:*
 

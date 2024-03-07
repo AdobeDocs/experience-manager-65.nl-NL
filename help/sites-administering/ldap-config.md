@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 >[!NOTE]
 >
-Als u op het hebben van meer dan één configuratie LDAP met uw AEM instantie van plan bent, moeten de afzonderlijke Leveranciers van de Identiteit en de Managers van de Synchronisatie voor elke configuratie worden gecreeerd.
+>Als u op het hebben van meer dan één configuratie LDAP met uw AEM instantie van plan bent, moeten de afzonderlijke Leveranciers van de Identiteit en de Managers van de Synchronisatie voor elke configuratie worden gecreeerd.
 
 ## LDAP configureren via SSL {#configure-ldap-over-ssl}
 
@@ -277,12 +277,12 @@ Om te toelaten zuivert registreren, moet u het volgende doen:
 
 * Logniveau: Foutopsporing
 * Logbestand logs/ldap.log
-* Berichtpatroon: {0,datum,dd.MM.yyjj HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Berichtpatroon: {0,datum,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Logniveau: Foutopsporing
 * Logbestand: logs/external.log
-* Berichtpatroon: {0,datum,dd.MM.yyjj HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Berichtpatroon: {0,datum,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Een woord over groepsverbinding {#a-word-on-group-affiliation}

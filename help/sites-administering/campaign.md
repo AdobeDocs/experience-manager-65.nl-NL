@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: dac156251ae48e9d83e84ba6a4685689def9e396
+source-git-commit: 3e4d05de6668656ad4a042b7109cfcbc958b0e26
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,6 @@ Er zijn verschillende Adobe Campaign Classic-versies (ACC). De ondersteuning voo
 |---|---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | Ondersteund | Ondersteund |
 | [v8-clientconsole](https://experienceleague.adobe.com/docs/campaign-v8.html) | Ondersteund | Ondersteund |
-| [v8 Web User Interface](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html) | Ondersteund | Ondersteund |
 
 In de volgende documentatie wordt beschreven hoe u AEM kunt integreren met Adobe Campaign Classic.
 
@@ -44,13 +43,6 @@ In de volgende aanvullende documentatie wordt beschreven hoe u de integratie kun
 
 * [E-mailkerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) - Meer informatie over de standaard e-mailcomponenten die u kunt gebruiken voor het schrijven van Campagne-inhoud in AEM.
 * [Problemen met Adobe Campaign Classic-integratie oplossen](/help/sites-administering/troubleshooting-campaignintegration.md) - Leer hoe u de meest voorkomende problemen kunt verhelpen met de AEM-ACC-integratie.
-
-
-In de volgende documentatie wordt beschreven hoe u AEM as a Cloud Service kunt integreren met de gebruikersinterface van Adobe Campaign v8 Web.
-
-* [Sjablonen beheren met Adobe Experience Manager als Cloud-service in Adobe Campaign v8 Web User Interface](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html) - Leer de stapsgewijze details over het configureren en gebruiken van de integratie met AEM sjablonen.
-* [Middelen beheren met Adobe Experience Manager als cloudservice in Adobe Campaign v8 Web User Interface](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) - Leer de stapsgewijze details over het configureren en gebruiken van de integratie met AEM Assets.
-
 
 ## Integreren met Adobe Campaign Standard {#acs}
 

@@ -7,9 +7,9 @@ role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
-source-git-commit: c99d6f3c67c97ea382ace2e102b2cacbbd2e5db5
+source-git-commit: a19f07bc42d2918338b07418bed56ac2bb73ba2d
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -275,17 +275,17 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 | Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden | Typen instellen die deze indeling ondersteunen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | - | - | - | ✓ | - | - |
 | BMP | ✓ | - | - | - | - | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | - | - | - | ✓ | - | - |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | - | - | - | ✓ | - | - |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.

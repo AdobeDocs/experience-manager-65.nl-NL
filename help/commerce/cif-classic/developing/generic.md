@@ -3,9 +3,9 @@ title: Ontwikkelen (algemeen)
 description: Het integratieframework bevat een integratielaag met een API, waarmee u AEM componenten voor eCommerce-mogelijkheden kunt bouwen.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Het eCommerce-kader kan bij elke eCommerce-oplossing worden gebruikt, de motor d
       * Indien gevonden, wordt de waarde gebruikt om de raadpleging van de handelsdienst te filtreren.
       * Indien niet gevonden, wordt de hoogste commerciële dienst gebruikt.
 
-   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk-getypte middelen worden toegevoegd.
+   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk getypte middelen worden toegevoegd.
 
 * De `cq:commerceProvider` eigenschap wordt ook gebruikt om te verwijzen naar de juiste definitie van de handelsfabriek .
 
@@ -471,7 +471,7 @@ Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `
 
    * De ClientContext `SegmentMgr` Hiermee worden segmenten en de ClientContext omgezet `CartMgr` lost bevorderingen op. Elke bevordering die aan minstens één opgelost segment onderworpen is wordt in brand gestoken.
 
-      * Geactiveerde promoties worden teruggestuurd naar de server via een AJAX oproep om het winkelwagentje opnieuw te berekenen.
+      * De gespannen Bevorderingen worden teruggestuurd naar de server door een AJAX vraag om het karretje opnieuw te berekenen.
       * Afgelopen promoties (en toegevoegde vouchers) worden ook weergegeven in het deelvenster ClientContext.
 
 Het toevoegen/verwijderen van een voucher uit een winkelwagentje gebeurt via de `CommerceSession` API:

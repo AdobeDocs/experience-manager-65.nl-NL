@@ -2,7 +2,7 @@
 title: Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten
 description: Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor het zonder kop leveren van inhoud met fragmenten.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhou
 
 ## Een inhoudsfragment afleveren met GraphQL {#how-to-deliver-a-content-fragment}
 
-De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerpen om inhoud te leveren. Deze vragen moeten slechts eens per eindpunt per model worden overwogen. In deze gids Aan de slag hoeft u slechts één gids te maken.
+De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerpen om inhoud te leveren. Deze vragen moeten slechts eens per eindpunt per model worden overwogen. In deze gids Aan de slag mag u er slechts één maken.
 
 1. Meld u aan bij AEM en open de [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Bijvoorbeeld: `http://<host>:<port>/aem/graphiql.html`.
@@ -60,7 +60,7 @@ De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerp
 1. Klik op de knop **Query uitvoeren** (pijl-rechts) of gebruik de `Ctrl-Enter` en de resultaten worden als JSON weergegeven in het rechterdeelvenster.
    ![GraphiQL-resultaten](assets/graphiql-results.png)
 
-1. Klik op:
+1. Klik:
    * **Docs** rechtsboven op de pagina om in-context documentatie te tonen om u te helpen uw vragen bouwen die aan uw eigen modellen aanpassen.
    * **Historie** in de bovenste werkbalk om vorige query&#39;s weer te geven.
    * **Opslaan als** en **Opslaan** om uw vragen te bewaren, waarna u hen van kunt een lijst maken en terugwinnen **Blijvende query&#39;s** en **Publiceren**.

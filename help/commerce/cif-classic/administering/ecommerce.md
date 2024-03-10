@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 * [Concepten](/help/commerce/cif-classic/administering/concepts.md)
 * [Beheer (algemeen)](/help/commerce/cif-classic/administering/generic.md)
 
-De Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
+Adobe biedt twee versies van het Commerce integration framework:
 
 <table>
  <tbody>
   <tr>
    <th><p> </p> </th>
-   <th><p>CIF on prem</p> </th>
+   <th><p>CIF op prem</p> </th>
    <th><p>CIF Cloud</p> </th>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ De Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
  </tbody>
 </table>
 
-eCommerce handelt samen met Product Information Management (PIM) de activiteiten van een website die gericht is op het verkopen van producten via een online-winkel:
+eCommerce handelt samen met Product Information Management (PIM) de activiteiten van een website die gericht is op het verkopen van producten via een onlinewinkel:
 
 * Maken, levensduur en veroudering van een product
 * Prijsbeheer

@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1954'
 ht-degree: 0%
@@ -247,7 +247,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
    * Type: naargelang het geval.
    * Waarde: naar wens.
 
-   U moet slechts eigenschappen voor de parameters tot stand brengen die u wilt vormen, anderen nemen nog de standaardwaarden zoals die door AEM worden geplaatst.
+   U moet eigenschappen voor de parameters slechts tot stand brengen die u wilt vormen, anderen nemen nog de standaardwaarden zoals die door AEM worden geplaatst.
 
 1. Sla alle wijzigingen op.
 

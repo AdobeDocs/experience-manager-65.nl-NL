@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2830'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Voor benchmarkingdoeleinden heeft de Adobe enkele benchmarktests ontwikkeld voor
 Bereken de maximale doorvoer van een laadprofiel waarbij gebruikers een eenvoudige bewerking voor het maken van een pagina uitvoeren boven op een basisbelasting van 300 bestaande pagina&#39;s die allemaal van gelijke aard zijn. De betrokken stappen waren het aanmelden bij de site, het maken van een pagina met een SWF en een afbeelding/tekst, het toevoegen van een tagcloud en het vervolgens activeren van de pagina.
 
    * **Resultaat**
-De maximale doorvoer voor een eenvoudige oefening voor het maken van pagina&#39;s zoals hierboven (beschouwd als één transactie) bleek 1730 transacties/uur te zijn.
+De maximumproductie voor een eenvoudige oefening van de paginaareproductie zoals hierboven-beschouwd als één transactie-wordt gevonden om 1730 transacties/uur te zijn.
 
 * **Benchmarktest 2**
 Bereken de maximale doorvoer wanneer het laadprofiel bestaat uit het maken van nieuwe pagina&#39;s (10%), het wijzigen van een bestaande pagina (80%) en het maken van een opeenvolgende pagina (10%). De complexiteit van de pagina&#39;s blijft dezelfde als in het profiel van benchmarktest 1. De basiswijziging van de pagina wordt uitgevoerd door een afbeelding toe te voegen en de tekstinhoud te wijzigen. Ook hier werd de oefening uitgevoerd boven op een basislast van 300 pagina&#39;s met dezelfde complexiteit als in benchmarktest 1.
@@ -153,7 +153,7 @@ Voor dergelijke scenario&#39;s, stelde de Adobe benchmarktests op een twee knoop
 Met een actief-actief delen-niets cluster van 2 auteursinstanties, bereken de maximumproductie met een ladingsprofiel waar de gebruikers eenvoudig uitvoeren creeer paginamotie bovenop een basislading van 300 bestaande pagina&#39;s, allen van gelijkaardige aard.
 
    * **Resultaat**
-De maximale doorvoer voor een eenvoudige oefening voor het maken van pagina&#39;s, zoals hierboven beschouwd als één transactie, blijkt 2016 transacties/uur te zijn. Dit is een stijging van ongeveer 16% in vergelijking met een standalone auteur instantie voor dezelfde benchmarktest.
+De maximumproductie voor een eenvoudige oefening van de paginaaremaak, zoals hierboven-beschouwd als één transactie-wordt gevonden om 2016 transacties/uur te zijn. Dit is een stijging van ongeveer 16% in vergelijking met een standalone auteur instantie voor dezelfde benchmarktest.
 
 * **Benchmarktest 2b**
 Met een actief-actief delen-niets cluster van 2 auteursinstanties, bereken de maximumproductie wanneer het ladingsprofiel een mengeling van verse paginverwezenlijking (10%), wijziging van een bestaande pagina (80%) en verwezenlijking en wijziging van een pagina in opeenvolgende (10%) heeft. De complexiteit van de pagina blijft dezelfde als in het profiel van benchmarktest 1. De basiswijziging van de pagina wordt uitgevoerd door een afbeelding toe te voegen en de tekstinhoud te wijzigen. De oefening werd opnieuw uitgevoerd boven op een basislast van 300 pagina&#39;s van complexiteit, zoals gedefinieerd in benchmarktest 1.

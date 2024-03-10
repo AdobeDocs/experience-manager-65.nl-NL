@@ -4,10 +4,10 @@ description: Leer hoe u AEM Content Fragments met GraphQL kunt gebruiken voor he
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 1%
+source-wordcount: '669'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Met Adobe Experience Manager (AEM) kunt u Content Fragments gebruiken, samen met
 
 Een CMS (Headless Content Management System) is:
 
-* &quot;*Een CMS, een systeem voor inhoudsbeheer zonder kop, is een back-end alleen inhoudsbeheersysteem (CMS) dat vanaf de basis is ontwikkeld als een opslagplaats voor inhoud die inhoud toegankelijk maakt via een API voor weergave op elk apparaat.*
+* &quot;*Een headless-contentbeheersysteem, of CMS zonder kop, is een back-end alleen contentbeheersysteem (CMS) dat vanaf de basis is ontwikkeld als een opslagplaats voor inhoud die inhoud toegankelijk maakt via een API voor weergave op elk apparaat.*
 
   Zie [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
@@ -68,15 +68,15 @@ De AEM GraphQL API-implementatie is gebaseerd op de [GraphQL Java-bibliotheken](
 
 ![Inhoudsfragmenten voor gebruik met GraphQL](assets/cfm-nested-01.png "Inhoudsfragmenten voor gebruik met GraphQL")
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
-Contentfragmenten:
+Content Fragments:
 
 * Bevat gestructureerde inhoud.
 
 * Zij zijn gebaseerd op een [Inhoudsfragmentmodel](#content-fragments-models), waarin de structuur voor het resulterende fragment vooraf wordt gedefinieerd.
 
-### Modellen van contentfragmenten {#content-fragments-models}
+### Modellen van inhoudsfragmenten {#content-fragments-models}
 
 Deze [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md):
 

@@ -6,9 +6,9 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '726'
 ht-degree: 4%
 
 ---
@@ -87,7 +87,7 @@ Door het filteren van XMP metagegevens via lijst van gewenste personen wordt dit
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
-1. Als u filters wilt toepassen via een lijst van gewenste personen, selecteert u **[!UICONTROL Apply Allowlist to XMP Properties]** en geeft u de eigenschappen op die in het dialoogvenster **[!UICONTROL Allowed XML Names for XMP filtering]** doos.
+1. Als u filteren via een lijst van gewenste personen wilt toepassen, selecteert u **[!UICONTROL Apply Allowlist to XMP Properties]** en geeft u de eigenschappen op die in het dialoogvenster **[!UICONTROL Allowed XML Names for XMP filtering]** doos.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

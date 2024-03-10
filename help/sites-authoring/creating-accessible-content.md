@@ -2,7 +2,7 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager maken (WCAG 2.1-compatibiliteit)
 description: AEM gebruiken om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '13636'
 ht-degree: 2%
@@ -693,8 +693,13 @@ Volg de onderstaande richtlijnen [Voldoen aan criteria 2.2.1](https://www.w3.org
 * Succescriterium 2.2.2
 * Niveau A
 * Pauzeren, Stoppen, Verbergen: voor het verplaatsen, knipperen, schuiven of automatisch bijwerken van gegevens, geldt het volgende:
-   * Verplaatsen, knipperen, schuiven: voor elke bewegende, knipperende of schuivende informatie die a) automatisch start, b) langer dan vijf seconden duurt en c) parallel met andere inhoud wordt weergegeven, is er een mechanisme waarmee de gebruiker deze kan onderbreken, stoppen of verbergen, tenzij de beweging, het knipperen of schuiven deel uitmaakt van een activiteit waar dat essentieel is;
-   * Automatisch bijwerken: voor alle automatisch bij te werken informatie die a) automatisch begint en b) parallel met andere inhoud wordt weergegeven, is er een mechanisme waarmee de gebruiker deze kan onderbreken, stoppen of verbergen of de frequentie van de update kan regelen, tenzij de automatisch bijwerken deel uitmaakt van een activiteit waar dit essentieel is.
+   * Verplaatsen, knipperen, schuiven: voor alle informatie over verplaatsen, knipperen of schuiven die
+      * a) automatisch begint,
+      * b) langer dan vijf seconden duurt, en
+      * (C) parallel met andere inhoud wordt aangeboden, is er een mechanisme dat de gebruiker kan onderbreken, stoppen of verbergen, tenzij de beweging, het knipperen of het schuiven deel uitmaakt van een activiteit waar dat essentieel is;
+   * Automatisch bijwerken: voor automatisch bijwerken van gegevens die
+      * a) automatisch begint, en
+      * b) parallel met andere inhoud wordt aangeboden, is er een mechanisme waarmee de gebruiker het kan onderbreken, stoppen of verbergen of de frequentie van de bijwerking kan regelen, tenzij het automatisch bijwerken deel uitmaakt van een activiteit waar het essentieel is.
 
 Opmerkingen zijn:
 

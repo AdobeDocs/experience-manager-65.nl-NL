@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 1%
+source-wordcount: '828'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
 **Voer de volgende stappen uit om elementen te downloaden:**
 
 1. Klik in de linkerbovenhoek op het logo. Klik in het linkerspoor op **[!UICONTROL Navigation]**.
-1. Ga naar de pagina [!UICONTROL Navigation] en klik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Op de [!UICONTROL Navigation] pagina, klikt u **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigeer naar een map die elementen bevat die u wilt downloaden.
 1. Selecteer de map of selecteer een of meer middelen in de map.
 1. Klik op de werkbalk op **[!UICONTROL Download]**.
@@ -62,7 +62,7 @@ Wanneer u een map selecteert om te downloaden, wordt de volledige elementenhiër
 
 De standaardserver [!DNL Experience Manager] Hiermee kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven voor het maken van ZIP-bestanden met elementen die zichtbaar zijn voor hen die de server en het netwerk kunnen overbelasten. Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, `AssetDownloadServlet` De component OSGi is standaard uitgeschakeld voor publicatie-instanties.
 
-Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaalachtige implementatie, laat manueel servlet via een configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de dagelijkse downloadvereisten. Een hoge waarde kan de prestaties beïnvloeden.
+Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaal-als implementatie, laat manueel servlet als configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de dagelijkse downloadvereisten. Een hoge waarde kan de prestaties beïnvloeden.
 
 1. Een map maken met een naamgevingsconventie die is gericht op de publicatierunmode (`config.publish`): `/apps/<your-app-name>/config.publish`. Om configuratieeigenschappen voor een looppaswijze te bepalen, zie [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. Maak in de configuratiemap een bestandstype `nt:file` benoemd `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.

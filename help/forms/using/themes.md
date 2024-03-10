@@ -7,9 +7,9 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
+source-git-commit: 7c83cdf779fc2b72b73e29064b2feec594e2e4b8
 workflow-type: tm+mt
-source-wordcount: '6084'
+source-wordcount: '6086'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ Wanneer u een component op het canvas selecteert, worden de opmaakeigenschappen 
 
 ### Onlangs gebruikte stijlen in de Thema-editor {#recently-used-styles-in-theme-editor}
 
-In de themaeditor worden maximaal 10 stijlen opgeslagen die op een component zijn toegepast. U kunt de stijlen in de cache gebruiken met een andere component van een thema. Onlangs gebruikte stijlen zijn als keuzelijst direct onder de geselecteerde component in het zijpaneel beschikbaar. In eerste instantie is de lijst met onlangs gebruikte stijlen leeg.
+In de themaeditor worden maximaal 10 stijlen opgeslagen die op een component zijn toegepast. U kunt de stijlen in de cache gebruiken met een andere component van een thema. Onlangs gebruikte stijlen zijn direct onder de geselecteerde component in het zijpaneel beschikbaar als een keuzelijst. In eerste instantie is de lijst met onlangs gebruikte stijlen leeg.
 
 ![asset-library](assets/asset-library.png)
 

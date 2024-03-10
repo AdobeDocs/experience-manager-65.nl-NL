@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '5868'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Het maken van een individuele Health Check omvat twee stappen: het implementeren
 
 Een Composite Health Check heeft als taak verschillende afzonderlijke Health Checks samen te voegen en een reeks gemeenschappelijke kenmerken te delen. Zo groepeert de veiligheidssamengestelde health check alle afzonderlijke gezondheidscontroles die beveiligingsgerelateerde controles uitvoeren. De eerste stap om een samengestelde controle tot stand te brengen is een configuratie toe te voegen OSGI. Opdat het in het Dashboard van Verrichtingen moet worden getoond, moet een nieuw configuratieknooppunt op de zelfde manier worden toegevoegd zoals een eenvoudige controle.
 
-1. Ga naar de Manager van de Configuratie van het Web in de Console OSGI. Ga naar `https://serveraddress:port/system/console/configMgr`
+1. Ga naar de Manager van de Configuratie van het Web in de Console OSGI. Toegang `https://serveraddress:port/system/console/configMgr`
 1. Zoeken naar het opgeroepen item **Apache Sling Composite Health Check**. Nadat u het vindt, merk op dat er twee configuraties reeds beschikbaar zijn: voor de Controles van het Systeem en andere voor de Controles van de Veiligheid.
 1. Creeer een configuratie door &quot;+&quot;knoop op de rechterkant van de configuratie te drukken. Er wordt een nieuw venster weergegeven, zoals hieronder wordt getoond:
 
@@ -199,7 +199,7 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
    <td><p>De Lengte van de Rij van de waarneming herhaalt over alle Lijsten van de Gebeurtenis en Achtergrondwaarnemers, vergelijkt hun <code>queueSize </code>hun <code>maxQueueSize</code> en:</p>
     <ul>
      <li>Hiermee wordt de kritieke status geretourneerd als de <code>queueSize</code> waarde overschrijdt de waarde <code>maxQueueSize</code> waarde (dat wil zeggen wanneer gebeurtenissen worden geannuleerd)</li>
-     <li>retourneert Waarschuwen als de <code>queueSize</code> waarde is groter dan <code>maxQueueSize * WARN_THRESHOLD</code> (de standaardwaarde is 0,75) </li>
+     <li>retourneert een waarschuwing als de <code>queueSize</code> waarde is groter dan <code>maxQueueSize * WARN_THRESHOLD</code> (de standaardwaarde is 0,75) </li>
     </ul> <p>De maximumlengte van elke rij komt uit afzonderlijke configuraties (Eak en AEM), en is niet configureerbaar van deze gezondheidscontrole. De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health check:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -226,9 +226,9 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
      <li>Hiermee wordt de status Kritiek geretourneerd als ten minste één indexstrook mislukt</li>
      <li>controleert de <code>lastIndexedTime</code> voor alle indexeringsstroken en:
       <ul>
-       <li>Hiermee wordt de kritieke status geretourneerd als deze meer dan twee uur geleden is </li>
-       <li>retourneert de waarschuwingsstatus als deze tussen 2 uur en 45 minuten geleden ligt </li>
-       <li>Geeft de status OK als deze minder dan 45 minuten geleden is </li>
+       <li>Hiermee wordt een kritieke status geretourneerd als deze meer dan twee uur geleden is </li>
+       <li>retourneert een waarschuwingsstatus als deze tussen 2 uur en 45 minuten geleden ligt </li>
+       <li>Hiermee wordt de status OK geretourneerd als deze minder dan 45 minuten geleden is </li>
       </ul> </li>
      <li>als aan geen van deze voorwaarden is voldaan, wordt de status OK geretourneerd</li>
     </ul> <p>Zowel zijn de Kritieke als de statusdrempels van de Waarschuwing configureerbaar. De boon voor deze gezondheidscontrole is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health check:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Opmerking: </strong>Deze health check is beschikbaar bij AEM 6.4 en is teruggezet naar AEM 6.3.0.1.</p> </td>
@@ -264,17 +264,17 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
      <code>maxNumQueueJobs</code> drempel, en:
     </div>
     <ul>
-     <li>geeft Kritiek als meer dan <code>maxNumQueueJobs</code> in de wachtrij</li>
-     <li>Geeft Kritiek als er langdurige actieve banen zijn die ouder zijn dan 1 uur</li>
-     <li>Geeft Critical als er banen in de rij zijn, en de laatste gebeëindigde baantijd is ouder dan 1 uur</li>
+     <li>retourneert een Kritiek als meer dan <code>maxNumQueueJobs</code> in de wachtrij</li>
+     <li>Geeft een Critical als er langdurige actieve banen zijn die ouder zijn dan 1 uur</li>
+     <li>Geeft een Critical als er banen in de rij zijn, en de laatste gebeëindigde baantijd is ouder dan 1 uur</li>
     </ul> <p>Slechts is het maximumaantal een rij gevormde baanparameter configureerbaar en het heeft de standaardwaarde van 1000.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Prestaties aanvragen</td>
    <td><p>Met deze controle wordt de <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling-metrisch </a>en:</p>
     <ul>
-     <li>Geeft Critical als de 75e percentielwaarde boven de kritieke drempel is (de standaardwaarde is 500 milliseconden)</li>
-     <li>retourneert Waarschuwen als de waarde van het 75e percentiel boven de waarschuwingsdrempel ligt (de standaardwaarde is 200 milliseconden)</li>
+     <li>Hiermee wordt Kritiek geretourneerd als de waarde van het 75e percentiel boven de kritieke drempel ligt (de standaardwaarde is 500 milliseconden)</li>
+     <li>retourneert een waarschuwing als de waarde van het 75e percentiel boven de waarschuwingsdrempel ligt (de standaardwaarde is 200 milliseconden)</li>
     </ul> <p>De MBean voor deze health check is<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=requestStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -285,8 +285,8 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
    <td>Schijfruimte</td>
    <td><p>De controle van de Ruimte van de Schijf kijkt naar <code>FileStoreStats</code> MBean, wint de grootte van de Opslag van de Knoop en de hoeveelheid bruikbare schijfruimte op de de opslagverdeling van de Knoop terug, en:</p>
     <ul>
-     <li>retourneert Waarschuwen als de bruikbare verhouding tussen schijfruimte en grootte van opslagplaats kleiner is dan de waarschuwingsdrempel (de standaardwaarde is 10)</li>
-     <li>Hiermee wordt Kritiek geretourneerd als de bruikbare verhouding tussen schijfruimte en grootte van opslagruimte kleiner is dan de kritieke drempel (de standaardwaarde is 2)</li>
+     <li>retourneert een waarschuwing als de bruikbare verhouding tussen schijfruimte en grootte van opslagplaats kleiner is dan de waarschuwingsdrempel (de standaardwaarde is 10)</li>
+     <li>Hiermee wordt een 'Critical' geretourneerd als de verhouding tussen bruikbare schijfruimte en opslagruimte kleiner is dan de kritieke drempel (de standaardwaarde is 2)</li>
     </ul> <p>Beide drempels zijn configureerbaar. De controle werkt alleen op instanties met een Segmentarchief.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -309,15 +309,15 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
    <td>Cachecontrole code</td>
    <td><p>Een health check die verschillende JVM-omstandigheden controleert die een CodeCache-bug in Java™ 7 kunnen activeren:</p>
     <ul>
-     <li>retourneert de waarschuwing als de instantie wordt uitgevoerd op Java™ 7, waarbij Cachegeheugen leegmaken is ingeschakeld</li>
-     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd op Java™ 7 en de grootte van de gereserveerde codecache kleiner is dan een minimumdrempel (de standaardwaarde is 90 MB)</li>
+     <li>retourneert een waarschuwing als de instantie wordt uitgevoerd op Java™ 7, waarbij de codecache leegmaken is ingeschakeld</li>
+     <li>retourneert een waarschuwing als de instantie wordt uitgevoerd op Java™ 7 en de grootte van de gereserveerde codecache kleiner is dan een minimumdrempel (de standaardwaarde is 90 MB)</li>
     </ul> <p>De <code>minimum.code.cache.size</code> drempel kan worden geconfigureerd. Zie voor meer informatie over de bug <a href="https://bugs.java.com/bugdatabase/"> en zoek vervolgens op Bug ID 8012547</a>.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Fouten in snijpad van bronnen</td>
    <td><p>Controleert of het pad bronnen bevat <code>/apps/foundation/components/primary</code> en:</p>
     <ul>
-     <li>retourneert Waarschuwen als er onderliggende knooppunten onder zijn <code>/apps/foundation/components/primary</code></li>
+     <li>retourneert een waarschuwing als er onderliggende knooppunten onder zijn <code>/apps/foundation/components/primary</code></li>
     </ul> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>

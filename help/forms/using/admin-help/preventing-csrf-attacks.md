@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Hoe CSRF-aanvallen werken {#how-csrf-attacks-work}
 
-Corsite request forgery (CSRF) is een website-kwetsbaarheid waarbij de browser van een geldige gebruiker wordt gebruikt om een kwaadaardig verzoek te verzenden, mogelijk via een iFrame. Omdat de browser cookies op domeinbasis verzendt, kunnen de gegevens van de gebruiker in gevaar worden gebracht als de gebruiker is aangemeld bij een toepassing.
+Corsite request forgery (CSRF) is een kwetsbaarheid op een website waarbij de browser van een geldige gebruiker wordt gebruikt om een kwaadaardig verzoek te verzenden, mogelijk via een iFrame. Omdat de browser cookies op domeinbasis verzendt, kunnen de gegevens van de gebruiker in gevaar worden gebracht als de gebruiker is aangemeld bij een toepassing.
 
 Neem bijvoorbeeld een scenario waarin u bent aangemeld bij de beheerconsole in een browser. U ontvangt een e-mailbericht met een koppeling. Klik op de koppeling om een nieuw tabblad in uw browser te openen. De pagina die u hebt geopend, bevat een verborgen iFrame die een kwaadaardig verzoek doet aan de Forms Server met behulp van het cookie van uw geverifieerde AEM formuliersessie. Omdat Gebruikersbeheer een geldig cookie ontvangt, geeft het de aanvraag door.
 

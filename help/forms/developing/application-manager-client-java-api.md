@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -34,7 +34,7 @@ De volgende Java™ API Quick Start (SOAP) is beschikbaar voor de Client van de 
 
 [Snel starten (SOAP-modus):het AEM Forms-toepassingsarchief verwijderen met Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -248,7 +248,7 @@ In het volgende Java™-codevoorbeeld wordt een toepassing geïmporteerd met de 
 
 >[!NOTE]
 >
-De Java™ API importApplication() vervangt bestaande toepassingen met dezelfde naam door nieuwere toepassingen. Gebruik API importApplication() in plaats van API updateApplication() om een bestaande toepassing bij te werken.
+>De Java™ API importApplication() vervangt bestaande toepassingen met dezelfde naam door nieuwere toepassingen. Gebruik API importApplication() in plaats van API updateApplication() om een bestaande toepassing bij te werken.
 
 ```java
 /*

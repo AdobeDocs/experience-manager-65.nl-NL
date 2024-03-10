@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Met de versie van de AEM Doc Services en AEM Doc Security kan AEM nu de document
 
 [Verschuiven](/help/sites-deploying/offloading.md) distribueert verwerkingstaken onder de instanties van de Experience Manager in een topologie. Met offloading kunt u specifieke instanties van Experience Managers gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
 
-De technologieën zijn losjes-verbonden clusters van de Experience Manager die aan het ontladen deelnemen. Een cluster bestaat uit een of meer serverinstanties van de Experience Manager (één instantie wordt beschouwd als een cluster).
+De technologieën zijn losjes verbonden clusters van de Experience Manager die aan het ontladen deelnemen. Een cluster bestaat uit een of meer serverinstanties van de Experience Manager (één instantie wordt beschouwd als een cluster).
 
 Voor meer informatie over om topologielidmaatschap te bekijken of te wijzigen, raadpleeg [Onderwerptechnologieën beheren](/help/sites-deploying/offloading.md#administering-topologies) sectie.
 

@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Wanneer u toegangsrechten voor documenten intrekt of weer instelt, wordt de wijz
 
 * Als het document online en gesloten is, wordt de verandering van kracht de volgende tijd de ontvanger met documentveiligheid door een beleid-beschermd document te openen synchroniseert.
 * Als het document online en open is, wordt de wijziging van kracht wanneer de ontvanger het document sluit.
-* Als het document offline is (in gebruik zonder internetverbinding, zoals op een laptop), wordt de wijziging van kracht wanneer de ontvanger opnieuw synchroniseert met documentbeveiliging.
+* Als het document offline is (dus in gebruik zonder internetverbinding, bijvoorbeeld op een laptop), wordt de wijziging van kracht wanneer de ontvanger opnieuw synchroniseert met de documentbeveiliging.
 
 **Toegang tot een document dat met een beleid is beveiligd intrekken**
 

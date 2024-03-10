@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9887'
+source-wordcount: '9814'
 ht-degree: 0%
 
 ---
@@ -755,7 +755,7 @@ Nadat u een Verwijzing van de Dienst creeert, zijn de gegevenstypes verbonden aa
 
 1. Creeer een .NET project gebruikend Microsoft Visual Studio 2008.
 1. In de **Project** menu, selecteert u **Serviceverwijzing toevoegen**.
-1. In de **Adres** geeft u de WSDL op voor de AEM Forms-service. Bijvoorbeeld,
+1. In de **Adres** geeft u de WSDL op voor de AEM Forms-service. Bijvoorbeeld:
 
    ```java
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
@@ -1098,7 +1098,7 @@ U kunt een Forms-service aanroepen met DIME. Neem de `MyApplication/EncryptDocum
 
    * Een koordwaarde die een waarde GUID specificeert. U kunt een waarde verkrijgen GUID door te roepen `System.Guid.NewGuid.ToString` methode.
    * Een tekenreekswaarde die het inhoudstype opgeeft. Omdat dit proces een PDF-document vereist, geeft u `application/pdf`.
-   * A `TypeFormat` opsommingswaarde. Geef het volgende op `TypeFormat.MediaType`.
+   * A `TypeFormat` opsommingswaarde. Opgeven `TypeFormat.MediaType`.
    * Een tekenreekswaarde die de locatie opgeeft van het PDF-document dat aan het AEM Forms-proces moet worden doorgegeven.
 
 1. Een `BLOB` object met behulp van de constructor.
@@ -1491,7 +1491,7 @@ Om ervoor te zorgen dat asynchrone aanroep werkt, wijzigt u de URL-eindpuntwaard
 
 In de volgende lijst worden andere services opgegeven waarvoor een aangepast bindingsbestand nodig is wanneer dit asynchroon wordt aangeroepen:
 
-* PDFG3D
+* PDF3D
 * Taakbeheer
 * Toepassingsbeheer
 * Directorybeheer
@@ -1518,7 +1518,7 @@ De volgende lijst specificeert gegevenstypes die niet tussen veelvoudige dienst 
 * `Roles`
 * `BLOB`
 
-Om dit probleem te voorkomen, wordt u aangeraden de gegevenstypen volledig te kwalificeren. Bijvoorbeeld, overweeg een .NET toepassing die zowel de dienst van Forms als de dienst van de Handtekening gebruikend een de dienstverwijzing van verwijzingen voorziet. Beide de dienstverwijzingen zullen bevatten `BLOB` klasse. Een `BLOB` -instantie volledig te kwalificeren `BLOB` -object wanneer u het declareert. Deze benadering wordt getoond in het volgende codevoorbeeld. Voor informatie over dit codevoorbeeld, zie [Interactieve Forms digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+Om dit probleem te voorkomen, wordt aanbevolen de gegevenstypen volledig te kwalificeren. Bijvoorbeeld, overweeg een .NET toepassing die zowel de dienst van Forms als de dienst van de Handtekening gebruikend een de dienstverwijzing van verwijzingen voorziet. Beide de dienstverwijzingen zullen bevatten `BLOB` klasse. Een `BLOB` -instantie, kwalificeer de `BLOB` -object wanneer u het declareert. Deze benadering wordt getoond in het volgende codevoorbeeld. Voor informatie over dit codevoorbeeld, zie [Interactieve Forms digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 Het volgende C# codevoorbeeld ondertekent een interactief formulier dat door de dienst van Forms wordt teruggegeven. De clienttoepassing heeft twee serviceverwijzingen. De `BLOB` -instantie die aan de Forms-service is gekoppeld, behoort tot de `SignInteractiveForm.ServiceReference2` naamruimte. Evenzo geldt dat de `BLOB` -instantie die is gekoppeld aan de handtekeningservice behoort tot de `SignInteractiveForm.ServiceReference1` naamruimte. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
 
@@ -1553,7 +1553,7 @@ Het volgende C# codevoorbeeld ondertekent een interactief formulier dat door de 
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

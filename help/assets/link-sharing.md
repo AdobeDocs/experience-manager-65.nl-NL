@@ -6,9 +6,9 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '931'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 >* U hebt `Edit ACL` machtigingen voor de map of het middel dat u als koppeling wilt delen.
 >* Om e-mails naar de gebruikers te verzenden, configureert u de SMTP-servergegevens in [Day CQ Mail Service](#configmailservice).
 
-## Assets delen {#share-assets}
+## Elementen delen {#share-assets}
 
 Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u de opdracht [!UICONTROL Link Sharing] in.
 

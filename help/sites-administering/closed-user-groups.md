@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '6650'
 ht-degree: 0%
@@ -322,7 +322,7 @@ while (isSupportedPath(path)) {
 
 #### Het Beleid van de KUG door Hoofd beheren {#managing-cug-policies-by-pincipal}
 
-De extensies die worden gedefinieerd door `JackrabbitAccessControlManager` die toestaan om toegangsbeheerbeleid door hoofd uit te geven wordt niet uitgevoerd met het beheer van de toegangscontrole van de CUG, aangezien een beleid van de KUG altijd alle hoofden beïnvloedt: die vermeld met het `PrincipalSetPolicy` worden verleend lees toegang terwijl alle andere hoofden worden verhinderd om inhoud in de boom te lezen die door de doelknoop wordt bepaald.
+De extensies die worden gedefinieerd door `JackrabbitAccessControlManager` die u het beleid van het toegangsbeheer door hoofd laten uitgeven wordt niet uitgevoerd met het beheer van de toegangscontrole van de CUG, aangezien een beleid van de KUUG altijd alle hoofden beïnvloedt: die vermeld met het `PrincipalSetPolicy` worden verleend lees toegang terwijl alle andere hoofden worden verhinderd om inhoud in de boom te lezen die door de doelknoop wordt bepaald.
 
 De bijbehorende methoden retourneren altijd een lege beleidsarray, maar genereren geen uitzonderingen.
 

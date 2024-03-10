@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Met de Adobe AEM Forms API Quick Start kunt u uw inspanningen versnellen om programma&#39;s te ontwikkelen die met de diensten van AEM Forms communiceren. *Snel starten* s zijn volledige programma&#39;s die u kunt kopiëren en plakken in uw eigen projecten en als uitgangspunt gebruiken. U kunt een Snel Begin in werking stellen om te zien hoe het zich gedraagt en het voor uw eigen behoeften wijzigt.
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
 
-Quick Start van Java™ API&#39;s met sterke typen bevat een lijst met JAR-bestanden die vereist zijn om de Java™-toepassing uit te voeren. De meeste Java™ Quick Start zijn consoletoepassingen die binnen lopen `main`. De Forms Java™ API Quick Start met sterke typen wordt echter geïmplementeerd als een Java™ servlet die wordt uitgevoerd in een webtoepassing.
+Quick Start van de Java™ sterk getypte API biedt een lijst met JAR-bestanden die vereist zijn om de Java™-toepassing uit te voeren. De meeste Java™ Quick Start zijn consoletoepassingen die binnen lopen `main`. De Forms Java™ API met sterke typen Quick Start wordt echter geïmplementeerd als een Java™ servlet die wordt uitgevoerd in een webtoepassing.
 
 De lijst met JAR-bestanden bevindt zich in een opmerkingensectie aan het begin van de Snelle start. De volgende opmerking bevindt zich bijvoorbeeld in een Output quick start en is een typische JAR-bestandenlijst die wordt weergegeven in elke Java™ Quick Start.
 
@@ -85,4 +85,4 @@ Meest snel aan de slag *Programmeren met AEM Forms op JEE* Roep een specifieke s
 
 >[!NOTE]
 >
-De meeste van de Webdienst Snel Begint wordt geschreven in C# en gebruikt het .NET kader. Nochtans, kunt u de logica van de cliënttoepassing tot stand brengen die de diensten van AEM Forms in om het even welke ontwikkelomgeving kan aanhalen die de normen van de ZEEP steunt. (Zie [AEM Forms aanroepen met webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>De meeste van de Webdienst Snel Begint wordt geschreven in C# en gebruikt het .NET kader. Nochtans, kunt u de logica van de cliënttoepassing tot stand brengen die de diensten van AEM Forms in om het even welke ontwikkelomgeving kan aanhalen die de normen van de ZEEP steunt. (Zie [AEM Forms aanroepen met webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)

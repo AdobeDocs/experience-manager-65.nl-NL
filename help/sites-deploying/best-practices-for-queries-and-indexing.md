@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4518'
+source-wordcount: '4520'
 ht-degree: 0%
 
 ---
@@ -403,7 +403,7 @@ De volgende details en resoluties zijn mogelijk:
 
 ### Tekstvoorextractie van binaire tekens {#text-pre-extraction-of-binaries}
 
-De preextractie van de tekst is het proces om tekst uit binaire getallen, direct uit de Opslag van Gegevens via een geïsoleerd proces, te halen en te verwerken, en direct blootstellend de gehaalde tekst aan verdere re/indexeringen van Eak indexen.
+De preextractie van de tekst is het proces om tekst uit binaire getallen, direct uit de Opslag van Gegevens door middel van een geïsoleerd proces, te halen en direct blootstellend de gehaalde tekst aan verdere re/indexeringen van Eak indexen.
 
 * Het vooraf uitpakken van eikentekst wordt aanbevolen voor het opnieuw/indexeren van Lucene-indexen in opslagruimten met grote volumes bestanden (binaire bestanden) die extraheerbare tekst bevatten (bijvoorbeeld PDF, Word Docs, PPT&#39;s, TXT, enzovoort) die in aanmerking komen voor full-text zoeken via geïmplementeerde Oak-indexen, bijvoorbeeld `/oak:index/damAssetLucene`.
 * De pre-extractie van de tekst komt slechts het re/indexeren van indexen van Lucene, en NIET de bezitsindexen van het Eik ten goede, aangezien de bezitsindexen geen tekst uit binaire getallen halen.

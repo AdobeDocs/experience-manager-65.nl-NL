@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de Forms-service:
 
 [Snel starten (SOAP-modus): documenten doorgeven aan de Forms-service met behulp van de Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Toepassingslogica die gebruikmaakt van de Forms service-API wordt geïmplementeerd als Java™-servlets. AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
+Toepassingslogica die gebruikmaakt van de Forms service-API wordt geïmplementeerd als Java™-servlets. AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -1378,7 +1378,7 @@ In het volgende codevoorbeeld wordt een formulier afgehandeld dat als XML wordt 
 
 >[!NOTE]
 >
-Wanneer u een `com.adobe.idp.Document` en `org.w3c.dom.Document` in dezelfde toepassing volledig in aanmerking komen `org.w3c.dom.Document`.
+>Wanneer u een `com.adobe.idp.Document` en `org.w3c.dom.Document` in dezelfde toepassing volledig in aanmerking komen `org.w3c.dom.Document`.
 
 ## Snel starten (SOAP-modus): PDF forms verwerken die als PDF zijn verzonden met de Java™ API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 

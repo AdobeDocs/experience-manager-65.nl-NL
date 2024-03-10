@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '7173'
+source-wordcount: '7192'
 ht-degree: 0%
 
 ---
@@ -239,8 +239,8 @@ De gecontroleerde output van de Omslag kan één enkel document, een lijst van d
 
 Beheerders kunnen het type bestand opgeven dat een service kan aanroepen. Voor elke gecontroleerde map kunnen meerdere bestandspatronen worden ingesteld. Een bestandspatroon kan een van de volgende bestandseigenschappen zijn:
 
-* Bestanden met specifieke bestandsextensies; bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
-* Bestanden met specifieke namen, bijvoorbeeld gegevens.&amp;asteren;
+* Bestanden met specifieke bestandsextensies. &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Bestanden met specifieke namen. Bijvoorbeeld gegevens.&amp;asteren;
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens[0-9][0-9][0-9].[dD][aA]&#39;port&#39;

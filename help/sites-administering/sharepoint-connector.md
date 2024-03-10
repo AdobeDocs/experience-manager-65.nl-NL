@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -203,7 +203,7 @@ Ga naar: [http://localhost:4502/system/console/bundles](http://localhost:4502/sy
 1. Klik op OSGI > Configuration
 1. Zoeken naar &quot;Day JCR Connector for Microsoft Sharepoint&quot;
 1. Klik op &quot;De configuratiewaarden bewerken&quot;
-1. Stel de waarde van &quot;Sharepoint Connection Factory&quot; in op &quot;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&quot;
+1. Stel de waarde van &#39;Sharepoint Connection Factory&#39; in op &#39;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&#39;
 1. Klikken **Opslaan**.
 
 **Basisverificatie configureren (Windows)**
@@ -234,8 +234,8 @@ Een gebruiker maken in AEM:
 De gebruiker toevoegen in de beheergroep:
 
 1. Ga naar Groepsbeheer.
-1. Klik op het knooppunt &quot;a&quot;.
-1. Klik op &quot;beheerders&quot;.
+1. Klik op het knooppunt &#39;a&#39;.
+1. Klik op &#39;beheerders&#39;.
 1. Typ de gebruikers-id die u hierboven hebt gemaakt in het tekstvak ervoor **Bladeren** knop.
 1. Klik op het groene verdeelstreepje om de gebruiker toe te voegen aan de beheergroep.
 

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Als u authentificatie voor een onderneming of een hybride domein vormt en de uit
 
 ## Just-in-Time provisioning van gebruikers {#just-in-time-provisioning-of-users}
 
-De just-in-time levering leidt automatisch tot een gebruiker in het gegevensbestand van het Beheer van de Gebruiker nadat de gebruiker met succes via een authentificatieleverancier wordt verklaard. Relevante rollen en groepen worden ook dynamisch toegewezen aan de nieuwe gebruiker. U kunt just-in-time levering voor onderneming en hybride domeinen toelaten.
+De just-in-time levering leidt automatisch tot een gebruiker in het gegevensbestand van het Beheer van de Gebruiker nadat de gebruiker door middel van een authentificatieleverancier met succes voor authentiek wordt verklaard. Relevante rollen en groepen worden ook dynamisch toegewezen aan de nieuwe gebruiker. U kunt just-in-time levering voor onderneming en hybride domeinen toelaten.
 
 Deze procedure beschrijft de manier de traditionele authentificatie in AEM vormen werkt:
 

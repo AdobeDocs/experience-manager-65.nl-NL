@@ -1,20 +1,20 @@
 ---
-title: Toegankelijke content maken (WCAG 2.0-compatibiliteit)
-description: WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap.
+title: Toegankelijke inhoud maken (WCAG 2.0-compatibiliteit)
+description: WCAG 2.0 bestaat uit een reeks technologie-onafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webinhoud toegankelijk en bruikbaar is voor personen met een handicap.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9148'
-ht-degree: 6%
+source-wordcount: '9070'
+ht-degree: 5%
 
 ---
 
-# Toegankelijke content maken (WCAG 2.0-compatibiliteit){#creating-accessible-content-wcag-conformance}
+# Toegankelijke inhoud maken (WCAG 2.0-compatibiliteit){#creating-accessible-content-wcag-conformance}
 
 >[!CAUTION]
 >
@@ -26,7 +26,7 @@ ht-degree: 6%
 >* [Snelgids voor WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Toegankelijke content maken (WCAG 2.1-compatibiliteit)](/help/sites-authoring/creating-accessible-content.md)
 
-WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap.
+WCAG 2.0 bestaat uit een reeks technologie-onafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webinhoud toegankelijk en bruikbaar is voor personen met een handicap.
 
 >[!NOTE]
 >
@@ -94,11 +94,11 @@ AEM voegt een **Alt-tekst** in uw afbeeldingen. Voor klassieke UI, zijn er twee 
 
 * Bestand:
 
-Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een afbeeldingscomponent aan een pagina toevoegt en vervolgens een afbeelding op de vaste schijf of een andere bron kiest, wordt de standaardwaarde voor **Alt-tekst** is `file`. Deze waarde moet worden gewijzigd in het dialoogvenster **Geavanceerd** tabblad Eigenschappen van afbeelding. Deze waarde wordt opnieuw niet weergegeven in het dialoogvenster **Alt-tekst** , maar als de waarde wordt gewijzigd, wordt de nieuwe waarde in het veld weergegeven.
+  Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een afbeeldingscomponent aan een pagina toevoegt en vervolgens een afbeelding op de vaste schijf of een andere bron kiest, wordt de standaardwaarde voor **Alt-tekst** is `file`. Deze waarde moet worden gewijzigd in het dialoogvenster **Geavanceerd** tabblad Eigenschappen van afbeelding. Deze waarde wordt opnieuw niet weergegeven in het dialoogvenster **Alt-tekst** , maar als de waarde wordt gewijzigd, wordt de nieuwe waarde in het veld weergegeven.
 
 * Element:
 
-Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een afbeelding van de gegevensopslagruimte voor digitale middelen naar een webpagina sleept, **Titel** en **Alt-tekst** worden waarden voor die afbeelding ontleend aan de metagegevens voor die afbeelding.
+  Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een afbeelding van de gegevensopslagruimte voor digitale middelen naar een webpagina sleept, **Titel** en **Alt-tekst** worden waarden voor die afbeelding ontleend aan de metagegevens voor die afbeelding.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale 
 Er zijn verschillende vormen van niet-tekstuele inhoud, zodat de waarde van het tekstoptie afhankelijk is van de rol die de afbeelding in de webpagina speelt. Enkele algemene regels van duim omvatten het volgende:
 
 * Alternatieven voor tekst moeten beknopt zijn, maar toch duidelijk aangeven welke essentiële informatie door de niet-tekstuele inhoud wordt verstrekt.
-* Te lange beschrijvingen (meer dan 100 tekens) moeten worden vermeden. Als een tekstalternatief meer details vereist:
+* Lange beschrijvingen (meer dan 100 tekens) moeten worden vermeden. Als een tekstalternatief meer details vereist:
 
    * een korte beschrijving geven in de alternatieve tekst
    * en hebben een langere beschrijving in tekst elders op dezelfde pagina of in een aparte webpagina. Koppel deze afzonderlijke beschrijving door van de afbeelding een koppeling te maken of door een tekstkoppeling naast de afbeelding te plaatsen.
@@ -129,55 +129,55 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * Illustratieve foto&#39;s:
 
-Dit zijn afbeeldingen van mensen, objecten of plaatsen. Denk na over de rol van de foto op de pagina. Een geschikt tekstequivalent is waarschijnlijk *Foto van [object]*, maar kan afhangen van de omringende tekst.
+  Dit zijn afbeeldingen van mensen, objecten of plaatsen. Denk na over de rol van de foto op de pagina. Een geschikt tekstequivalent is waarschijnlijk *Foto van [object]*, maar kan afhangen van de omringende tekst.
 
 * pictogrammen:
 
-Kleine pictogrammen (afbeeldingen) die specifieke informatie bevatten. Ze moeten consistent worden gebruikt op een pagina en site. Alle exemplaren van het pictogram op een pagina of site moeten hetzelfde korte en korte tekstalternatief hebben, tenzij dit leidt tot onnodige duplicatie van aangrenzende tekst.
+  Kleine pictogrammen (afbeeldingen) die specifieke informatie bevatten. Ze moeten consistent worden gebruikt op een pagina en site. Alle exemplaren van het pictogram op een pagina of site moeten hetzelfde korte en korte tekstalternatief hebben, tenzij dit leidt tot onnodige duplicatie van aangrenzende tekst.
 
 * Grafieken en grafieken:
 
-Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Geef zo nodig ook een meer gedetailleerde beschrijving in de tekst met behulp van de **Beschrijving** in het veld **Geavanceerd** tabblad Eigenschappen van afbeelding. U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
+  Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Geef zo nodig ook een meer gedetailleerde beschrijving in de tekst met behulp van de **Beschrijving** in het veld **Geavanceerd** tabblad Eigenschappen van afbeelding. U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
 
-![Voorbeeld van een grafiek. Hieronder ziet u de beste aanpak om een alternatief te bieden.](assets/chlimage_1-2a.jpeg)
+  ![Voorbeeld van een grafiek. Hieronder ziet u de beste aanpak om een alternatief te bieden.](assets/chlimage_1-2a.jpeg)
 
-Als u een alternatief voor dit voorbeelddiagram wilt opgeven, voegt u een kort `alt` de tekst aan het beeld zelf en dan het beeld met een volledig tekstalternatief te volgen.
+  Als u een alternatief voor dit voorbeelddiagram wilt opgeven, voegt u een kort `alt` de tekst aan het beeld zelf en dan het beeld met een volledig tekstalternatief te volgen.
 
-```xml
-<p><img src="figure1.gif" alt="Figure 1" ></p>
-<p> Figure 1. Distribution of Articles by Journal Category.
-Pie chart: Language=68%, Education=14% and Science=18%.</p>
-```
+  ```xml
+  <p><img src="figure1.gif" alt="Figure 1" ></p>
+  <p> Figure 1. Distribution of Articles by Journal Category.
+  Pie chart: Language=68%, Education=14% and Science=18%.</p>
+  ```
 
->[!NOTE]
->
->Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Gebruik de **Afbeelding** in plaats van de `img src` hierboven gebruikte referentie.
+  >[!NOTE]
+  >
+  >Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Gebruik de **Afbeelding** in plaats van de `img src` hierboven gebruikte referentie.
 
-In AEM kunt u een combinatie van de **Alt-tekst** en **Beschrijving** velden in het configuratiedialoogvenster van de afbeelding - zoals in [Ontmoeten - Niet-tekstuele inhoud (1.1.1)](#how-to-meet-non-text-content).
+  In AEM kunt u een combinatie van de **Alt-tekst** en **Beschrijving** velden in het configuratiedialoogvenster van de afbeelding - zoals in [Ontmoeten - Niet-tekstuele inhoud (1.1.1)](#how-to-meet-non-text-content).
 
 * Kaarten, diagrammen, stroomdiagrammen:
 
-Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten is het onpraktisch om een volledige tekstequivalent te bieden, maar als de kaart wordt verstrekt als een manier om mensen te helpen hun weg naar een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding kort wijzen op *Kaart van X* en geeft u vervolgens aanwijzingen voor die locatie op in tekst elders op de pagina of via de **Beschrijving** in het veld **Geavanceerd** tabblad van het **Afbeelding** component.
+  Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten is het onpraktisch om een volledige tekstequivalent te bieden, maar als de kaart wordt verstrekt als een manier om mensen te helpen hun weg naar een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding kort wijzen op *Kaart van X* en geeft u vervolgens aanwijzingen voor die locatie op in tekst elders op de pagina of via de **Beschrijving** in het veld **Geavanceerd** tabblad van het **Afbeelding** component.
 
 * CAPTCHA&#39;s:
 
-Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te doorstaan. Het is niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus u moet alternatieve niet-grafische oplossingen overwegen.
+  Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te doorstaan. Het is niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus u moet alternatieve niet-grafische oplossingen overwegen.
 
-De W3C biedt verschillende suggesties, zoals de volgende. Elk van deze benaderingen heeft hun eigen verdiensten en nadelen.
+  De W3C biedt verschillende suggesties, zoals de volgende. Elk van deze benaderingen heeft hun eigen verdiensten en nadelen.
 
-    * Logische puzzels
-    * Het gebruik van geluidsuitvoer in plaats van afbeeldingen
-    * Beperkte gebruik accounts en spamfilters.
+   * Logische puzzels
+   * Het gebruik van geluidsuitvoer in plaats van afbeeldingen
+   * Beperkte gebruikaccounts en spamfilters.
 
 * Achtergrondafbeeldingen:
 
-Deze afbeeldingen worden bereikt met CSS (Cascading Style Sheets) in plaats van met HTML. Het is niet mogelijk om een alternatieve tekstwaarde op te geven. Achtergrondafbeeldingen mogen daarom geen belangrijke tekstgegevens opleveren. Als dat het geval is, moet deze informatie ook in de paginatekst worden vermeld.
+  Deze afbeeldingen worden bereikt met CSS (Cascading Style Sheets) in plaats van met HTML. Het is niet mogelijk om een alternatieve tekstwaarde op te geven. Achtergrondafbeeldingen mogen daarom geen belangrijke tekstgegevens opleveren. Als dat het geval is, moet deze informatie ook in de paginatekst worden vermeld.
 
-Het is echter belangrijk dat een andere achtergrond wordt weergegeven wanneer de afbeelding niet kan worden weergegeven.
+  Het is echter belangrijk dat een andere achtergrond wordt weergegeven wanneer de afbeelding niet kan worden weergegeven.
 
->[!NOTE]
->
->Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtekst. Dit contrast wordt nader besproken [Contrast (minimaal) (1.4.3)](#contrast-minimum).
+  >[!NOTE]
+  >
+  >Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtekst. Dit contrast wordt nader besproken [Contrast (minimaal) (1.4.3)](#contrast-minimum).
 
 #### Meer informatie - Niet-tekstuele inhoud (1.1.1) {#more-information-non-text-content}
 
@@ -219,7 +219,7 @@ Als u deze informatie in een andere indeling verstrekt, zoals tekst (of audio vo
 
    * Geef een koppeling voor of na de inhoud op naar een teksttranscriptie van de audio-inhoud.
 
-  De transcriptie moet een HTML-pagina zijn met een tekstequivalent van alle gesproken en belangrijke niet-gesproken inhoud. Het zou ook moeten wijzen wie spreekt, een beschrijving van het plaatsen, stemuitdrukkingen, en een beschrijving van om het even welke andere significante audio.
+     De transcriptie moet een HTML-pagina zijn met een tekstequivalent van alle gesproken en belangrijke niet-gesproken inhoud. Het zou ook moeten wijzen wie spreekt, een beschrijving van het plaatsen, stemuitdrukkingen, en een beschrijving van om het even welke andere significante audio.
 
 * Als de inhoud een animatie of een vooraf opgenomen video zonder audio is:
 
@@ -388,122 +388,122 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
 * **Koppen gebruiken:**
 
-Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [AEM en toegankelijkheid](/help/sites-administering/rte-accessible-content.md)), AEM biedt drie niveaus paginakoppen. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
+  Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [AEM en toegankelijkheid](/help/sites-administering/rte-accessible-content.md)), AEM biedt drie niveaus paginakoppen. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
 
-In de volgende afbeelding ziet u een voorbeeld van de verschillende typen koppen.
+  In de volgende afbeelding ziet u een voorbeeld van de verschillende typen koppen.
 
-![Koppen H1 tot en met H3 weergegeven in de keuzelijst (klassieke UI).](assets/chlimage_1-19a.png)
+  ![Koppen H1 tot en met H3 weergegeven in de keuzelijst (klassieke UI).](assets/chlimage_1-19a.png)
 
 * **Gemarkeerde tekst**:
 
-Gebruik het element of element om de nadruk aan te geven. Gebruik geen koppen om tekst in alinea&#39;s te markeren.
+  Gebruik het element of element om de nadruk aan te geven. Gebruik geen koppen om tekst in alinea&#39;s te markeren.
 
-    * Markeer de tekst die u wilt benadrukken.
-    * Klik op het pictogram **B** (voor &amp;lt;strong&amp;gt;) of het pictogram **I** (voor &amp;lt;em&amp;gt;) dat wordt weergegeven in het deelvenster **Eigenschappen** (controleer of HTML is geselecteerd).
+   * Markeer de tekst die u wilt benadrukken.
+   * Klik op de knop **B** pictogram (voor &lt;strong>) of de **I** pictogram (voor &lt;em>) weergegeven in het dialoogvenster **Eigenschappen** (controleer of HTML is geselecteerd).
 
->[!NOTE]
->
->RTE in een standaard AEM installatie is opstelling aan gebruik:
->
->* &lt;b> for &lt;strong>
-* &lt;i> for &lt;em>
->
-Ze zijn in feite hetzelfde, maar en hebben de voorkeur omdat ze semantisch correct html zijn. Uw ontwikkelingsteam kan RTE vormen aan gebruik en  (in plaats van en ) wanneer het ontwikkelen van uw projectinstantie.
+  >[!NOTE]
+  >
+  >RTE in een standaard AEM installatie is opstelling aan gebruik:
+  >
+  >* &lt;b> for &lt;strong>
+  * &lt;i> for &lt;em>
+  >
+  Ze zijn in feite hetzelfde, maar en hebben de voorkeur omdat ze semantisch correct html zijn. Uw ontwikkelingsteam kan RTE vormen aan gebruik en  (in plaats van en ) wanneer het ontwikkelen van uw projectinstantie.
 
 * **Lijsten gebruiken:** Met HTML kunt u drie verschillende typen lijsten opgeven:
 
    * De `<ul>` element is gebruikt voor *ongeordend* lijsten (met opsommingstekens). Afzonderlijke lijstitems worden geïdentificeerd aan de hand van de `<li>` element.
 
-  in RTE, gebruik **Lijst met opsommingstekens** pictogram.
+     in RTE, gebruik **Lijst met opsommingstekens** pictogram.
 
    * De `<ol>` element is gebruikt voor *genummerd* lijsten. Afzonderlijke lijstitems worden geïdentificeerd aan de hand van de `<li>` element.
 
-  In RTE, gebruik **Genummerde lijst** pictogram.
+     In RTE, gebruik **Genummerde lijst** pictogram.
 
-Als u bestaande inhoud wilt wijzigen in een specifiek lijsttype, markeert u de desbetreffende tekst en selecteert u het gewenste lijsttype. Zoals in het vorige voorbeeld wordt getoond hoe alineatekst wordt ingegaan, worden de aangewezen lijstelementen automatisch toegevoegd aan uw HTML, maar u kunt dit in bron bekijken uitgeeft mening.
+  Als u bestaande inhoud wilt wijzigen in een specifiek lijsttype, markeert u de desbetreffende tekst en selecteert u het gewenste lijsttype. Zoals in het vorige voorbeeld wordt getoond hoe alineatekst wordt ingegaan, worden de aangewezen lijstelementen automatisch toegevoegd aan uw HTML, maar u kunt dit in bron bekijken uitgeeft mening.
 
->[!NOTE]
->
-De `<dl>` element wordt niet gesteund door RTE.
+  >[!NOTE]
+  >
+  De `<dl>` element wordt niet gesteund door RTE.
 
 * **Gebruik tabellen**:
 
-Gegevenstabellen moeten worden geïdentificeerd met behulp van HTML-tabelelementen:
+  Gegevenstabellen moeten worden geïdentificeerd met behulp van HTML-tabelelementen:
 
-    * one `&lt;table>`-element
-    * a `&lt;tr>`-element voor elke rij van de tabel
-    * a `&lt;th>`-element voor elke rij en kolomkop
-    * a `&lt;td>`-element voor elke gegevenscel
+   * één `<table>` element
+   * a `<tr>` element voor elke rij van de tabel
+   * a `<th>` element voor elke rij en kolomkop
+   * a `<td>` element voor elke gegevenscel
 
->[!NOTE]
->
-Tabellen moeten worden gerealiseerd met de **Tabel** component. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
+  >[!NOTE]
+  >
+  Tabellen moeten worden gerealiseerd met de **Tabel** component. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
 
-Toegankelijke tabellen gebruiken ook de volgende elementen en kenmerken:
+  Toegankelijke tabellen gebruiken ook de volgende elementen en kenmerken:
 
-    * The `&lt;caption>Het element ` wordt gebruikt om een zichtbaar titel voor de lijst te verstrekken. Bijschriften worden standaard gecentreerd boven de tabel weergegeven, maar kunnen op de juiste wijze worden geplaatst met CSS. Het bijschrift is via programmacode gekoppeld aan de tabel en is daarom een handige methode om inhoud te introduceren.
-    * The `&lt;h3 class=&quot;summary&quot;>Het element ` helpt niet-waargenomen gebruikers om de informatie gemakkelijker te begrijpen die binnen een lijst wordt voorgesteld, door een synopsis van te verstrekken wat een waargenomen gebruiker kan zien. Dit is met name handig wanneer complexe of onconventionele tabellay-outs worden gebruikt (dit kenmerk wordt niet weergegeven in de browser, het wordt alleen voorgelezen naar ondersteunende hulpmiddelen).
-    * The ` scope` attribute of the `&lt;th>Het element ` wordt gebruikt om erop te wijzen of een cel een kopbal voor een bepaalde rij, of voor een bepaalde kolom vertegenwoordigt. Een vergelijkbare aanpak is het gebruik van de kenmerken header en id in complexe tabellen, waarbij gegevenscellen aan een of meer kopteksten kunnen worden gekoppeld.
+   * De `<caption>` -element wordt gebruikt om een zichtbaar bijschrift voor de tabel te maken. Bijschriften worden standaard gecentreerd boven de tabel weergegeven, maar kunnen op de juiste wijze worden geplaatst met CSS. Het bijschrift is via programmacode gekoppeld aan de tabel en is daarom een handige methode om inhoud te introduceren.
+   * De `<h3 class="summary">` het element helpt niet-waargenomen gebruikers om de informatie gemakkelijker te begrijpen die binnen een lijst wordt voorgesteld, door een synopsis van te verstrekken wat een waargenomen gebruiker kan zien. Dit is met name handig wanneer complexe of onconventionele tabellay-outs worden gebruikt (dit kenmerk wordt niet weergegeven in de browser, het wordt alleen voorgelezen naar ondersteunende hulpmiddelen).
+   * De `scope` kenmerk van de `<th>` -element wordt gebruikt om aan te geven of een cel een koptekst voor een bepaalde rij of voor een bepaalde kolom vertegenwoordigt. Een vergelijkbare aanpak is het gebruik van de kenmerken header en id in complexe tabellen, waarbij gegevenscellen aan een of meer kopteksten kunnen worden gekoppeld.
 
->[!NOTE]
->
-Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in toe te voegen **Tabeleigenschappen** dialoogvenster (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-Wanneer u een **Tabel**, kunt u **Tabeleigenschappen** via het dialoogvenster.
+  Wanneer u een **Tabel**, kunt u **Tabeleigenschappen** via het dialoogvenster.
 
-    * een passend **Bijschrift**.
-    * U kunt het beste standaardwaarden verwijderen voor **Breedte**, **Hoogte**, **Rand**, **Celopvulling**, **Celafstand**. aangezien deze eigenschappen in een globaal opmaakmodel kunnen worden ingesteld.
+   * een passende **Bijschrift**.
+   * U kunt het beste standaardwaarden voor **Breedte**, **Hoogte**, **Rand**, **Celopvulling** en **Celafstand** verwijderen aangezien deze eigenschappen in een globaal opmaakmodel kunnen worden ingesteld.
 
-![Dialoogvenster Tabeleigenschappen](assets/chlimage_1-20a.png)
+  ![Dialoogvenster Tabeleigenschappen](assets/chlimage_1-20a.png)
 
-U kunt dan de **Celeigenschappen** om te kiezen of de cel een gegevens- of kopcel is en, in het geval van een kopcel, of het een rij- of kolomcel of beide betreft:
+  U kunt dan de **Celeigenschappen** om te kiezen of de cel een gegevens- of kopcel is en, in het geval van een kopcel, of het een rij- of kolomcel of beide betreft:
 
-![Dialoogvenster Eigenschappen aanroepen; een rij (meestal de eerste) instellen als koptekstrij.](assets/chlimage_1-21a.png)
+  ![Dialoogvenster Eigenschappen aanroepen; een rij (meestal de eerste) instellen als koptekstrij.](assets/chlimage_1-21a.png)
 
 * **Complexe gegevenstabellen:**
 
-Soms, wanneer er complexe lijsten met twee of meer niveaus van kopballen zijn, dan kunnen de basiseigenschappen van de Lijst niet genoeg zijn om alle noodzakelijke structurele informatie te verstrekken. Voor dit soort complexe tabellen moeten directe relaties worden gemaakt tussen de koppen en de bijbehorende cellen met behulp van de **header** en **id** kenmerken. In de onderstaande tabel worden de koppen en id&#39;s bijvoorbeeld aangepast om een programmatische koppeling te maken voor gebruikers van ondersteunende technologie.
+  Soms, wanneer er complexe lijsten met twee of meer niveaus van kopballen zijn, dan kunnen de basiseigenschappen van de Lijst niet genoeg zijn om alle noodzakelijke structurele informatie te verstrekken. Voor dit soort complexe tabellen moeten directe relaties worden gemaakt tussen de koppen en de bijbehorende cellen met behulp van de **header** en **id** kenmerken. In de onderstaande tabel worden de koppen en id&#39;s bijvoorbeeld aangepast om een programmatische koppeling te maken voor gebruikers van ondersteunende technologie.
 
->[!NOTE]
->
-Het kenmerk id is niet beschikbaar in een installatie buiten de box. Het kan worden toegelaten door de regels van HTML en serializer in RTE te vormen.
+  >[!NOTE]
+  >
+  Het kenmerk id is niet beschikbaar in een installatie buiten de box. Het kan worden toegelaten door de regels van HTML en serializer in RTE te vormen.
 
->[!NOTE]
->
-Tabellen moeten worden gerealiseerd met de **Tabel** component. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
+  >[!NOTE]
+  >
+  Tabellen moeten worden gerealiseerd met de **Tabel** component. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
 
-```xml
-<table>
-   <tr>
-     <th rowspan="2" id="h">Homework</th>
-     <th colspan="3" id="e">Exams</th>
-     <th colspan="3" id="p">Projects</th>
-   </tr>
-   <tr>
-     <th id="e1" headers="e">1</th>
-     <th id="e2" headers="e">2</th>
-     <th id="ef" headers="e">Final</th>
-     <th id="p1" headers="p">1</th>
-     <th id="p2" headers="p">2</th>
-     <th id="pf" headers="p">Final</th>
-   </tr>
-   <tr>
-    <td headers="h">15%</td>
-    <td headers="e e1">15%</td>
-    <td headers="e e2">15%</td>
-    <td headers="e ef">20%</td>
-    <td headers="p p1">10%</td>
-    <td headers="p p2">10%</td>
-    <td headers="p pf">15%</td>
-   </tr>
-  </table>
-```
+  ```xml
+  <table>
+     <tr>
+       <th rowspan="2" id="h">Homework</th>
+       <th colspan="3" id="e">Exams</th>
+       <th colspan="3" id="p">Projects</th>
+     </tr>
+     <tr>
+       <th id="e1" headers="e">1</th>
+       <th id="e2" headers="e">2</th>
+       <th id="ef" headers="e">Final</th>
+       <th id="p1" headers="p">1</th>
+       <th id="p2" headers="p">2</th>
+       <th id="pf" headers="p">Final</th>
+     </tr>
+     <tr>
+      <td headers="h">15%</td>
+      <td headers="e e1">15%</td>
+      <td headers="e e2">15%</td>
+      <td headers="e ef">20%</td>
+      <td headers="p p1">10%</td>
+      <td headers="p p2">10%</td>
+      <td headers="p pf">15%</td>
+     </tr>
+    </table>
+  ```
 
-Om dit in AEM te bereiken, moet u de prijsverhoging direct toevoegen gebruikend de bron uitgeeft wijze.
+  Om dit in AEM te bereiken, moet u de prijsverhoging direct toevoegen gebruikend de bron uitgeeft wijze.
 
->[!NOTE]
->
-Deze functionaliteit is niet onmiddellijk beschikbaar in een standaardinstallatie. Het vereist configuratie van RTE; de regels van HTML en serializer.
+  >[!NOTE]
+  >
+  Deze functionaliteit is niet onmiddellijk beschikbaar in een standaardinstallatie. Het vereist configuratie van RTE; de regels van HTML en serializer.
 
 #### Meer informatie - Informatie en relaties (1.3.1) {#more-information-info-and-relationships}
 
@@ -675,8 +675,13 @@ Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldi
 * Niveau A
 * Pauzeren, Stoppen, Verbergen: voor het verplaatsen, knipperen, schuiven of automatisch bijwerken van gegevens, geldt het volgende:
 
-   * Verplaatsen, knipperen, schuiven: voor elke bewegende, knipperende of schuivende informatie die a) automatisch start, b) langer dan vijf seconden duurt en c) parallel met andere inhoud wordt weergegeven, is er een mechanisme waarmee de gebruiker deze kan onderbreken, stoppen of verbergen, tenzij de beweging, het knipperen of schuiven deel uitmaakt van een activiteit waar dat essentieel is;
-   * Automatisch bijwerken: voor alle automatisch bij te werken informatie die a) automatisch begint en b) parallel met andere inhoud wordt weergegeven, is er een mechanisme waarmee de gebruiker deze kan onderbreken, stoppen of verbergen of de frequentie van de update kan regelen, tenzij de automatisch bijwerken deel uitmaakt van een activiteit waar dit essentieel is.
+   * Verplaatsen, knipperen, schuiven: voor alle informatie over verplaatsen, knipperen of schuiven die
+      * a) automatisch begint,
+      * b) langer dan vijf seconden duurt, en
+      * c) parallel met andere inhoud wordt aangeboden, er is een mechanisme waarmee de gebruiker deze kan onderbreken, stoppen of verbergen, tenzij de beweging, het knipperen of schuiven deel uitmaakt van een activiteit waar dit van essentieel belang is;
+   * Automatisch bijwerken: voor automatisch bijwerken van gegevens die
+      * a) automatisch begint, en
+      * b) parallel met andere inhoud wordt aangeboden, is er een mechanisme dat de gebruiker kan onderbreken, stoppen of verbergen of de frequentie van de bijwerking kan regelen, tenzij de automatische bijwerking deel uitmaakt van een activiteit waar dit van essentieel belang is.
 
 Opmerkingen zijn:
 
@@ -846,11 +851,11 @@ Om aan dit succescriterium te voldoen, kan de standaardtaal van een webpagina wo
 
 * Als een pagina in het Engels (Engels) wordt geschreven, `<html>` Het element moet als volgt worden gelezen:
 
-`<html lang = "en-gb">`
+  `<html lang = "en-gb">`
 
 * Overwegende dat een pagina die als Amerikaans Engels moet worden weergegeven, de volgende norm moet aannemen:
 
-`<html lang = "en-us">`
+  `<html lang = "en-us">`
 
 In AEM wordt de standaardtaal van uw pagina ingesteld bij het maken van de pagina, maar kan deze ook worden gewijzigd bij het bewerken van een pagina. Deze kan worden geopend via **Sidekick** - tabblad **Pagina** - **Pagina-eigenschappen** - tabblad **Geavanceerd**.
 
@@ -941,7 +946,7 @@ Wanneer er een groep gerelateerde controles is, zoals **Groep keuzerondjes**, ka
 
 ![Items toevoegen aan de groep keuzerondjes. De groepstitel is &#39;Contact me door&#39; - bepaald op het gebied van de Titel.](assets/chlimage_1-24a.png)
 
-Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. De redacteurs van het malplaatje moeten de titel in het noodzakelijke verpakken `fieldset` en `legend` -tags om deze koppeling te maken en dit kan alleen worden gedaan door de broncode van de pagina te bewerken. Een systeembeheerder kan ook ondersteuning voor deze elementen toevoegen, zodat deze worden weergegeven in het dialoogvenster **Veldeigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. De redacteurs van het malplaatje moeten de titel in het noodzakelijke verpakken `fieldset` en `legend` -tags om deze koppeling te maken en dit kan alleen worden gedaan door de broncode van de pagina te bewerken. Alternatief, kan een systeembeheerder steun voor deze elementen toevoegen zodat zij in **Veldeigenschappen** dialoogvenster (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Aanvullende overwegingen voor Forms {#additional-considerations-for-forms}
 
@@ -955,11 +960,11 @@ Het positioneren van labels is ook belangrijk, omdat ze hierdoor geschikte velde
 
 * Selectievakjes of keuzerondjes:
 
-De labels worden direct rechts van het veld geplaatst.
+  De labels worden direct rechts van het veld geplaatst.
 
 * Alle andere formuliercomponenten (bijvoorbeeld tekstvakken, keuzelijsten met invoervak):
 
-De labels worden direct boven of direct links van het veld geplaatst.
+  De labels worden direct boven of direct links van het veld geplaatst.
 
 In eenvoudige formulieren met een beperkte functionaliteit, kunt u op de juiste manier een etiket aanbrengen op `Submit` De knop kan fungeren als een label voor het aangrenzende veld (bijvoorbeeld `Search`). Dit is handig in situaties waarin het lastig kan zijn om ruimte te zoeken voor de labeltekst.
 

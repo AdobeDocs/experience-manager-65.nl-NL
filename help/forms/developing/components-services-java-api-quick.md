@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Java™ API Quick Start (SOAP) is beschikbaar voor componenten en services.
 [Snel starten (SOAP-modus): componenten verwijderen met Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
-Als u een douanecomponent hebt en u de protocollen van de ZEEP of EJB gebruikt om DSCs op de zelfde lokale server aan te halen, en die aanroepen werken na een verbetering, dan gebruik in-VM aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en bouw geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
+>Als u een douanecomponent hebt en u de protocollen van de ZEEP of EJB gebruikt om DSCs op de zelfde lokale server aan te halen, en die aanroepen werken na een verbetering, dan gebruik in-VM aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en bouw geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
 
 ## Snel starten (SOAP-modus): een component implementeren met de Java™ API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

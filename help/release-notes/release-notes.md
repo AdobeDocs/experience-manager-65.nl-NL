@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 39261357c17ef565a39ebc441aed356d69b4d8f9
+source-git-commit: a0ad6c5d61a971c5210f7d6dd7ef85e5effab44a
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3741'
 ht-degree: 0%
 
 ---
@@ -469,17 +469,24 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
   U lost het probleem als volgt op:
 
    1. Download de hotfix voor uw besturingssysteem:
-
       * [Hotfix voor Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
       * [Hotfix voor Linux](/help/release-notes/assets/Hotfix-Linux.zip)
       * [Hotfix voor Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. Upload en installeer het pakket (.zip) via de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
-
    1. Start de AEM Server opnieuw en controleer de activeringsstatus van alle bundels nadat het opnieuw opstarten is voltooid. U kunt de status van de bundels controleren door toegang te krijgen tot: `https://server:host/system/console/bundles`. Zorg ervoor dat alle bundels actief zijn alvorens met verdere taken te werk te gaan.
 
 * De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)
 * Met Adaptive Forms kunt u aangepaste functies gebruiken met ECMAScript versie 5 of lager. Wanneer een douanefunctie ECMAScript versie 6 of later, zoals &quot;laat&quot;, &quot;const&quot;, of pijlfuncties gebruikt, zou de regelredacteur niet behoorlijk kunnen openen.
+* Gebruikers kunnen geen correspondentiebeheerbrief maken. Wanneer een gebruiker een letter maakt, wordt een fout met de beschrijving &quot;Object&quot; weergegeven en wordt de letter niet gemaakt. Miniaturen voor lay-outs kunnen ook niet worden geladen op het scherm voor het maken van letters. (FORMS-13496)
+* De interactieve communicatieservice maakt het PDF-document, maar de gegevens van de gebruiker worden niet automatisch ingevuld in de formuliervelden. De Prefill-service werkt niet zoals u had verwacht. (FORMS-13413, FORMS-13493)
+* De controle en Correct (RnC) redacteur van de dienst van de automatede form conversion kan niet laden. (FORMS-13491)
+* Na het bijwerken van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0), ontmoeten de gebruikers een fout van de JSP compilatie. Er kunnen geen adaptieve formulieren worden geopend of gemaakt en er treden fouten op in andere AEM interfaces, zoals de pagina-editor, de AEM Forms-gebruikersinterface en de AEM Workfloweditor. (FORMS-13492)
+
+Klanten kunnen het nieuwste AEM 6.5 Forms Service Pack installeren om de bovengenoemde problemen op te lossen.  Hier volgen de directe koppelingen voor de ondersteunde besturingssystemen:
+* [AEM 6.5 Forms Service Pack 20 voor Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 voor Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 voor Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 

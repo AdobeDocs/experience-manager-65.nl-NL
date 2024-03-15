@@ -5,14 +5,15 @@ topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
 
-# Transactierapporten Billable API&#39;s{#transaction-reports-billable-apis}
+# Transactierapporten Billable API&#39;s voor AEM Forms op OSGi {#transaction-reports-billable-apis}
 
 AEM Forms biedt verschillende API&#39;s voor het verzenden van formulieren, procesdocumenten en het weergeven van documenten. Sommige API&#39;s worden beschouwd als transacties en andere kunnen gratis worden gebruikt. Dit document verstrekt een lijst van alle APIs die als transacties in een transactierapport worden rekenschap gegeven. Hier volgen enkele veelvoorkomende scenario&#39;s waarbij een factureerbare API wordt gebruikt:
 
@@ -500,6 +501,6 @@ Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebrui
 
 ## Verwante artikelen {#related-articles}
 
-* [Overzicht van transactierapporten](../../forms/using/transaction-reports-overview.md)
-* [Transactierapporten weergeven en begrijpen](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Een transactie opnemen voor aangepaste implementaties](/help/forms/using/record-transaction-custom-implementation.md)
+* [Transactierapporten Overzicht voor AEM Forms op OSGi](../../forms/using/transaction-reports-overview.md)
+* [Een transactierapport voor AEM Forms bekijken en begrijpen op OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Registreer een transactie voor douaneimplementaties voor AEM Forms op OSGi](/help/forms/using/record-transaction-custom-implementation.md)

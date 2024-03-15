@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
-# Overzicht van transactierapporten{#transaction-reports-overview}
+# Transactierapporten voor AEM Forms op OSGi {#transaction-reports-overview}
 
-## Inleiding {#introduction}
+<!--## Introduction {#introduction}
 
-Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd. Het doel is informatie te verstrekken over productgebruik en belanghebbenden in het bedrijfsleven te helpen hun digitale verwerkingsvolumes te begrijpen. Voorbeelden van een transactie zijn:
+Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
-* Indiening van een adaptief formulier, een HTML5-formulier of een formulierset
-* Afdruk of webversie van interactieve communicatie
-* Een document omzetten van de ene bestandsindeling naar de andere
+* Submission of an adaptive form, an HTML5 Form, or a form set
+* Rendition of a print or a web version of an interactive communication
+* Conversion of a document from one file format to another
 
-Voor meer informatie over wat als een transactie wordt beschouwd, zie [Aanpasbare API&#39;s](../../forms/using/transaction-reports-billable-apis.md).
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
 Transactieopname is standaard uitgeschakeld. U kunt [transactieregistratie inschakelen](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) van AEM webconsole. U kunt transactierapporten weergeven over auteur-, verwerkings- of publicatieinstanties. Transactierapporten weergeven over auteur- of verwerkingsinstanties voor een geaggregeerde som van alle transacties. De transactierapporten van de mening over publiceer instanties voor een telling van alle transacties die slechts op dat publicatiegeval plaatsvinden van waar het rapport in werking wordt gesteld.
 
@@ -57,6 +57,6 @@ Het aantal transacties wordt omgekeerd herhaald van publicatieinstanties naar au
 
 ## Verwante artikelen {#related-articles}
 
-* [Transactierapporten weergeven en begrijpen](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Transactierapporten Billable API&#39;s](../../forms/using/transaction-reports-billable-apis.md)
-* [Een transactie opnemen voor aangepaste implementaties](/help/forms/using/record-transaction-custom-implementation.md)
+* [Een transactierapport voor AEM Forms bekijken en begrijpen op OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Transactierapporten Billable API&#39;s voor AEM Forms op OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Registreer een transactie voor douaneimplementaties voor AEM Forms op OSGi](/help/forms/using/record-transaction-custom-implementation.md)

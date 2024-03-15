@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
 
-# Transactierapporten weergeven en begrijpen{#viewing-and-understanding-transaction-reports}
+# Transactierapporten voor AEM Forms bekijken en begrijpen op OSGi{#viewing-and-understanding-transaction-reports}
 
 Met transactierapporten kunt u het aantal verzonden formulieren, verwerkte documenten en gerenderde documenten vastleggen en bijhouden. Het doel van het volgen van deze transacties is een geïnformeerde beslissing te nemen over het gebruik van producten en het opnieuw in evenwicht brengen van investeringen in hardware en software. Zie voor meer informatie [Overzicht van AEM Forms-transactierapporten](../../forms/using/transaction-reports-overview.md).
 
@@ -88,6 +88,6 @@ Transactierapportering plaatst alle informatie die in het rapport wordt weergege
 
 ## Verwante artikelen {#related-articles}
 
-* [Overzicht van transactierapporten](../../forms/using/transaction-reports-overview.md)
-* [Transactierapporten Billable API&#39;s](../../forms/using/transaction-reports-billable-apis.md)
-* [Een transactie opnemen voor aangepaste implementaties](/help/forms/using/record-transaction-custom-implementation.md)
+* [Transactierapporten Overzicht voor AEM Forms op OSGi](../../forms/using/transaction-reports-overview.md)
+* [Transactierapporten Billable API&#39;s voor AEM Forms op OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Registreer een transactie voor douaneimplementaties voor AEM Forms op OSGi](/help/forms/using/record-transaction-custom-implementation.md)

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: e39c52bc658e3a286272d1c94106b17a2f5579ad
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '7355'
+source-wordcount: '7397'
 ht-degree: 1%
 
 ---
@@ -890,10 +890,16 @@ ht-degree: 1%
       + [Componenten weergeven die zijn gebaseerd op de gebruikte sjabloon](/help/forms/using/displaying-components-based-on-template.md)
       + [Aangepaste aangepaste formulierthema&#39;s maken](/help/forms/using/creating-custom-adaptive-form-themes.md)
    + Transactierapporten {#transaction-reports}
-      + [Overzicht van transactierapporten](/help/forms/using/transaction-reports-overview.md)
-      + [Transactierapporten weergeven en begrijpen](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-      + [Transactierapporten Billable API&#39;s](/help/forms/using/transaction-reports-billable-apis.md)
-      + [Een transactie opnemen voor aangepaste implementaties](/help/forms/using/record-transaction-custom-implementation.md)
+      + [Overzicht van transactiemeldingen](/help/forms/using/transaction-reports-overview-jee-osgi.md)
+      + Transactierapporten voor AEM Forms op OSGi {#transaction-reports-osgi}
+         + [Transactieverslagen](/help/forms/using/transaction-reports-overview.md)
+         + [Transactierapporten weergeven en begrijpen](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+         + [Lijst met factureerbare API&#39;s voor AEM Forms op OSGi](/help/forms/using/transaction-reports-billable-apis.md)
+         + [Een transactie opnemen voor aangepaste implementaties](/help/forms/using/record-transaction-custom-implementation.md)
+      + Transactierapporten voor AEM Forms op JEE {#transaction-reports-jee}
+         + [Transactierapporten inschakelen en weergeven](/help/forms/using/transaction-report-overview-jee.md)
+         + [Lijst met factureerbare API&#39;s voor AEM Forms op JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+         + [Een transactie voor aangepaste component-API&#39;s opnemen](/help/forms/using/record-transaction-custom-component-jee.md)
    + Beheerderhulp voor AEM Forms op JEE {#administrator-help}
       + Aan de slag {#get-started}
          + [Algemene AEM Forms-instellingen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)

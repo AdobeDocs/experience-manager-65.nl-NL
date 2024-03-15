@@ -5,14 +5,15 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# Een transactie opnemen voor aangepaste implementaties {#record-a-transaction-for-custom-implementations}
+# Registreer een transactie voor douaneimplementaties voor AEM Forms op OSGi {#record-a-transaction-for-custom-implementations}
 
 Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
 
@@ -88,6 +89,6 @@ $.ajax({
 
 ## Verwante artikelen {#related-articles}
 
-* [Overzicht van transactierapporten](/help/forms/using/transaction-reports-overview.md)
-* [Transactierapporten weergeven en begrijpen](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [Transactierapporten Billable API&#39;s](/help/forms/using/transaction-reports-billable-apis.md)
+* [Transactierapporten Overzicht voor AEM Forms op OSGi](/help/forms/using/transaction-reports-overview.md)
+* [Een transactierapport voor AEM Forms bekijken en begrijpen op OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [Transactierapporten Billable API&#39;s voor AEM Forms op OSGi](/help/forms/using/transaction-reports-billable-apis.md)

@@ -3,9 +3,9 @@ title: Technische vereisten
 description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
+source-git-commit: b9a5b6f8f990a9dd0fcf77ea3972ad0c6f401831
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3652'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | Oracle Solaris™ 11 | Z: Niet ondersteund |
 | IBM® AIX® 7.2 | Z: Niet ondersteund |
 
-1. Linux® Kernel 2.6, 3. x, 4. x en 5. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
 1. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
 1. Linux®-distributie ondersteund door Adobe Managed Services.
 
@@ -244,7 +244,7 @@ Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe M
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [Download de nieuwste versie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
+De Dispatcher is de component voor caching en taakverdeling. [Download de nieuwste versie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -254,7 +254,7 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 | Microsoft® IIS 10 (Internet Information Server) | A: Ondersteund |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: wordt niet ondersteund |
 
-1. Webservers die zijn gebouwd op basis van de Apache httpd-broncode, bieden net zoveel ondersteuning als de versie van httpd waarop deze is gebaseerd. In geval van twijfel, vraag Adobe om bevestiging van het steunniveau met betrekking tot het respectieve serverproduct. De volgende gevallen:
+1. Webservers die zijn gebaseerd op de Apache httpd-broncode, worden net zo ondersteund als de httpd-versie waarop deze is gebaseerd. In geval van twijfel, vraag Adobe om bevestiging van het steunniveau met betrekking tot het respectieve serverproduct. De volgende gevallen:
 
    1. De HTTP-server is gemaakt met alleen officiële Apache-brondistributies, of
    1. De HTTP-server is geleverd als onderdeel van het besturingssysteem waarop deze wordt uitgevoerd. Voorbeelden: IBM® HTTP Server, Oracle HTTP Server
@@ -330,7 +330,7 @@ De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
  </tbody>
 </table>
 
-1. Uitgebreide ondersteuningsrelease van Firefox [Meer informatie over mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Uitgebreide ondersteuning voor Firefox [Meer informatie over mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. ondersteuning voor Apple iPad
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
@@ -409,11 +409,11 @@ Als u Dynamic Media op Linux® gebruikt, moet aan de volgende voorwaarden worden
 
 >[!NOTE]
 >
->**NUMA-architectuur:** systemen met processors met AMD64 en Intel® EM64T zijn typisch geconfigureerd als numa-platforms (non-uniform memory architecture). Dat wil dus dat de kernel tijdens het opstarten meerdere geheugenknooppunten bouwt in plaats van één geheugenknooppunt op te bouwen.
+>**NUMA-architectuur:** systemen met processors met AMD64 en Intel® EM64T zijn typisch geconfigureerd als numa-platforms (non-uniform memory architecture). Dat wil zeggen dat de kernel meerdere geheugenknooppunten samenstelt bij opstarttijd in plaats van één geheugenknooppunt te maken.
 >
 >De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
 >
->Daarom adviseert de Adobe dat als u zulk een systeem in werking stelt dat u NUMA gebruikend **numa=off** laarsoptie om de kernel te vermijden die deze processen doden.
+>Daarom raadt Adobe aan dat als u een dergelijk systeem uitvoert dat u NUMA uitschakelt met de **optie numa=off** boot om te voorkomen dat de kernel deze processen doodt.
 
 >[!NOTE]
 >
@@ -438,7 +438,7 @@ Voor Windows x86:
 
 * Microsoft® Visual Studio 2010 opnieuw distribueerbaar bij [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Microsoft® Visual Studio 2013 opnieuw distribueerbaar bij [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Microsoft® Visual Studio 2015 opnieuw distribueerbaar krijgen op [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Herdistribueerbare microsoft® Visual Studio 2015 ophalen bij [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### Macos {#macos}
 
@@ -537,7 +537,7 @@ Voor Windows x86:
 
 [AEM Forms-ontwerper installeren en configureren](/help/forms/using/installing-configuring-designer.md)
 
-### Vereisten voor het terugschrijven van XMP-metagegevens voor AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Vereisten voor het terugschrijven van metagegevens van AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP-terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 
@@ -552,4 +552,4 @@ XMP-terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms 
 
 ### Vereisten voor AEM Assets voor de verwerking van assets met veel metagegevens op Linux® {#assetsonlinux}
 
-Voor het proces XMPFilesProcessor moet de bibliotheek GLIBC_2.14 functioneren. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logbestanden die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logbestanden die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

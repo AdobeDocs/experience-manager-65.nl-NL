@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 31ad82fca920efcb1c5f4b56673928754a2d1763
+source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
 workflow-type: tm+mt
-source-wordcount: '3616'
+source-wordcount: '3664'
 ht-degree: 0%
 
 ---
@@ -202,6 +202,9 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 * Wanneer een gebruiker &quot;Microsoft SharePoint&quot; selecteert terwijl de configuratiemanager wordt uitgevoerd op AEM Forms 6.5.19.1 met JBoss® Turnkey-instelling, mislukt de LiveCycle JBoss® EAR-installatie en wordt de volgende fout weergegeven: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
+
+* Wanneer een gebruiker een documentfragment maakt met het formuliergegevensmodel in AEM Forms Service Pack 6.5.19.0, worden de namen van de variabelen ongedefinieerd weergegeven in het zijpaneel, maar worden de namen van de variabelen weergegeven wanneer ze op het formulierpaneel worden neergezet of wanneer er op wordt geklikt. (FORMS-13238)
+
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 

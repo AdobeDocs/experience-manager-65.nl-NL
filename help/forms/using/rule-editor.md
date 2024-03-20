@@ -7,9 +7,10 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: af30cfed8f039207c0363d1ace5ac2b2a1cf84ba
 workflow-type: tm+mt
-source-wordcount: '6890'
+source-wordcount: '6553'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 * Invoke a form data model service and perform an operation
 * Set property of an object -->
 
-De Regeleditor vervangt de scriptfuncties in AEM 6.1-formulieren en eerdere versies. Uw bestaande scripts blijven echter behouden in de nieuwe regeleditor. Zie voor meer informatie over het werken met bestaande scripts in de regeleditor [Effect van regeleditor op bestaande scripts](#impact-of-rule-editor-on-existing-scripts).
+De Regeleditor vervangt de scriptfuncties in AEM 6.1-formulieren en eerdere versies. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Zie voor meer informatie over het werken met bestaande scripts in de regeleditor [Effect van regeleditor op bestaande scripts](#impact-of-rule-editor-on-existing-scripts).
 
 Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de groep met gebruikers van formulieren kunnen de scripts gebruiken, maar kunnen geen scripts maken of bewerken.
 
@@ -127,7 +128,7 @@ Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens he
 
 ![multivaluefcdisplaysopties](assets/multivaluefcdisplaysoptions.png)
 
-Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Waarde wissen van handeling wist de waarde van het opgegeven object. Als u Waarde wissen als optie hebt in de instructie Wanneer, kunt u complexe voorwaarden met meerdere velden maken.
+Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Waarde wissen van handeling wist de waarde van het opgegeven object. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden.
 
 ![vrijmaking](assets/clearvalueof.png)
 
@@ -218,7 +219,7 @@ Wanneer (optioneel):
 
 
 
-In het volgende voorbeeld wordt de waarde in `dependentid` veld als invoer en stelt de waarde van de `Relation` aan de output van `Relation` argument van de `getDependent` service formuliergegevensmodel.
+In het volgende voorbeeld wordt de waarde in `dependentid` het veld als invoer gebruikt en wordt de waarde van het `Relation` veld ingesteld op de uitvoer van het `Relation` argument van de `getDependent` formuliergegevensmodelservice.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -374,7 +375,7 @@ Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle obj
 
 De formulierobjecten waarop een of meer geldige regels zijn toegepast, zijn gemarkeerd met een groene stip. Als een van de regels die op een formulierobject worden toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
 
-Het tabblad Functies bevat een set met ingebouwde functies, zoals de Som van, Min of, Max of, Gemiddelde van, Aantal en Formulier valideren. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en te gebruiken voor actie- en voorwaardeinstructies bij het schrijven van regels. U kunt echter wel [aangepaste functies](#custom-functions) ook.
+Het tabblad Functies bevat een set met ingebouwde functies, zoals de Som van, Min of, Max of, Gemiddelde van, Aantal en Formulier valideren. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en te gebruiken voor actie- en voorwaardeinstructies bij het schrijven van regels. U kunt echter ook aangepaste functies](#custom-functions) maken[.
 
 ![Het tabblad Functies](assets/functions.png)
 
@@ -640,35 +641,36 @@ Syntaxis: `@this currentComponent`
 >
 >Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. Samenvatting kan tot veelvoudige lijnen worden uitgebreid tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
 
-**Een aangepaste functie toevoegen**
+<!--
+**Adding a custom function**
 
-U wilt bijvoorbeeld een aangepaste functie toevoegen die het gebied van een vierkant berekent. De zijlengte is de gebruikersinvoer naar de aangepaste functie, die wordt geaccepteerd met een numeriek vak in het formulier. De berekende uitvoer wordt weergegeven in een ander numeriek vak in het formulier. Als u een aangepaste functie wilt toevoegen, moet u eerst een clientbibliotheek maken en deze vervolgens toevoegen aan de CRX-opslagplaats.
+For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
 
-Voer de volgende stappen uit om een clientbibliotheek te maken en deze toe te voegen in de CRX-opslagruimte.
+Perform the following steps to create a client library and add it in the CRX repository.
 
-1. Maak een clientbibliotheek. Zie voor meer informatie [Client-Side bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
-1. In CRXDE, voeg een bezit toe `categories`met tekenreekstype als waarde `customfunction` aan de `clientlib` map.
+1. Create a client library. For more information, see [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
-   >`customfunction`is een voorbeeldcategorie. U kunt elke naam kiezen voor de categorie die u maakt in het dialoogvenster `clientlib`map.
+   >`customfunction`is an example category. You can choose any name for the category you create in the `clientlib`folder.
 
-Nadat u de clientbibliotheek in de CRX-opslagplaats hebt toegevoegd, gebruikt u deze in uw adaptieve formulier. Hiermee kunt u uw aangepaste functie als regel in uw formulier gebruiken. Voer de volgende stappen uit om de clientbibliotheek in het aangepaste formulier toe te voegen.
+After you have added your client library in the CRX repository, use it in your adaptive form. It lets you use your custom function as a rule in your form. Perform the following steps to add the client library in your adaptive form.
 
-1. Open het formulier in de bewerkingsmodus.
-Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en selecteert u **Openen**.
-1. Selecteer in de bewerkingsmodus een component en selecteer vervolgens ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en selecteer vervolgens ![cmppr](assets/cmppr.png).
-1. Voeg in het zijpaneel, onder Naam van clientbibliotheek, uw clientbibliotheek toe. ( `customfunction` in het voorbeeld.)
+1. Open your form in edit mode.
+   To open a form in edit mode, select a form and select **Open**.
+1. In the edit mode, select a component, then select ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then select ![cmppr](assets/cmppr.png).
+1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
-   ![De aangepaste clientbibliotheek van de functie toevoegen](assets/clientlib.png)
+   ![Adding the custom function client library](assets/clientlib.png)
 
-1. Selecteer het invoervak en selecteer ![bewerkingsregels](assets/edit-rules.png) om de regeleditor te openen.
-1. Selecteren **Regel maken**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
-   [![Aangepaste functies gebruiken om een regel te maken](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Selecteren **Gereed**. Uw aangepaste functie wordt toegevoegd.
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules.png) to open the rule editor.
+1. Select **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
+   [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Select **Done**. Your custom function is added.
 
-#### Ondersteunde typen functiedeclaratie {#function-declaration-supported-types}
+#### Function declaration supported types {#function-declaration-supported-types}
 
-**Functie, instructie**
+**Function Statement**
 
 ```javascript
 function area(len) {
@@ -676,9 +678,9 @@ function area(len) {
 }
 ```
 
-Deze functie is opgenomen zonder `jsdoc` opmerkingen.
+This function is included without `jsdoc` comments.
 
-**Functie-expressie**
+**Function Expression**
 
 ```javascript
 var area;
@@ -689,7 +691,7 @@ area = function(len) {
 };
 ```
 
-**Functie-expressie en -instructie**
+**Function Expression and Statement**
 
 ```javascript
 var b={};
@@ -699,7 +701,7 @@ b.area = function(len) {
 }
 ```
 
-**Functiedeclaratie als variabele**
+**Function Declaration as Variable**
 
 ```javascript
 /** */
@@ -710,9 +712,9 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-Beperking: een aangepaste functie kiest alleen de eerste functiedeclaratie uit de lijst met variabelen, indien bijeengevoegd. U kunt functie-expressie gebruiken voor elke gedeclareerde functie.
+Limitation: custom function picks only the first function declaration from the variable list, if together. You can use function expression for every function declared.
 
-**Functiedeclaratie als object**
+**Function Declaration as Object**
 
 ```javascript
 var c = {
@@ -727,7 +729,10 @@ var c = {
 
 >[!NOTE]
 >
->Zorg ervoor dat u `jsdoc` voor elke aangepaste functie. Hoewel `jsdoc`opmerkingen worden aangemoedigd, inclusief lege `jsdoc`om uw functie als aangepaste functie te markeren. Het laat standaardbehandeling van uw douanefunctie toe.
+>Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
+
+U kunt douanefuncties in uw regelredacteur ook gebruiken. Raadpleeg het artikel voor instructies over het maken van aangepaste functies [Aangepaste functies in adaptieve Forms](/help/forms/using/create-and-use-custom-functions.md).
 
 ## Regels beheren {#manage-rules}
 

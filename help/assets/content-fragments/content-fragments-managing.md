@@ -1,17 +1,18 @@
 ---
-title: Contentfragmenten beheren
+title: Inhoudsfragmenten beheren
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1712'
 ht-degree: 6%
 
 ---
 
-# Contentfragmenten beheren {#managing-content-fragments}
+# Inhoudsfragmenten beheren {#managing-content-fragments}
 
 Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 
@@ -299,16 +300,16 @@ Naast de standaardopties [Tijdlijn](/help/assets/manage-assets.md#timeline) bied
 
 >[!NOTE]
 >
-Opmerkingen zijn:
+>Opmerkingen zijn:
 >
-* Standaardfunctionaliteit voor alle elementen
-* Gemaakt in tijdlijn
-* Verwant aan het fragmentelement
+>* Standaardfunctionaliteit voor alle elementen
+>* Gemaakt in tijdlijn
+>* Verwant aan het fragmentelement
 >
-Annotaties (voor inhoudsfragmenten) zijn:
+>Annotaties (voor inhoudsfragmenten) zijn:
 >
-* Opgegeven in de fragmenteditor
-* Specifiek voor een geselecteerd tekstsegment binnen het fragment
+>* Opgegeven in de fragmenteditor
+>* Specifiek voor een geselecteerd tekstsegment binnen het fragment
 >
 
 Bijvoorbeeld:
@@ -339,7 +340,7 @@ Zij worden naast elkaar getoond, waarbij:
 
 >[!NOTE]
 >
-U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
+>U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
 ![vergelijking](assets/cfm-managing-06.png)
 
@@ -357,9 +358,9 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
 >[!CAUTION]
 >
-Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+>Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Zij kunnen worden gepubliceerd:
 
@@ -369,7 +370,7 @@ Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgevi
 
 >[!CAUTION]
 >
-Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+>Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 
@@ -380,11 +381,11 @@ Een fragment verwijderen:
 
    >[!NOTE]
    >
-   De **Verwijderen** Handeling is niet beschikbaar als een snelle handeling.
+   >De **Verwijderen** Handeling is niet beschikbaar als een snelle handeling.
 
 3. Selecteren **Verwijderen** op de werkbalk.
 4. Bevestig de **Verwijderen** handeling.
 
    >[!CAUTION]
    >
-   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
+   >Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.

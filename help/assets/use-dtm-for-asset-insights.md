@@ -5,9 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -54,7 +55,7 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
    >* Afhankelijk van de locatie waar Assets Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN, enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* In het geval van door Experience Managers gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
 
-1. Ga naar `https://dtm.adobe.com`. Klikken **[!UICONTROL Overview]** in de webeigenschap en klik op **[!UICONTROL Add Tool]** of open een bestaande Adobe Analytics Tool. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** tot **[!UICONTROL Automatic]**.
+1. Toegang `https://dtm.adobe.com`. Klikken **[!UICONTROL Overview]** in de webeigenschap en klik op **[!UICONTROL Add Tool]** of open een bestaande Adobe Analytics Tool. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** tot **[!UICONTROL Automatic]**.
 
    ![Gereedschap Adobe Analytics toevoegen](assets/Add-Adobe-Analytics-Tool.png)
 

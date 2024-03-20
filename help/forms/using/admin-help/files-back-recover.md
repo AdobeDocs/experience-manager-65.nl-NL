@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 0%
@@ -96,7 +97,7 @@ Vorm uw DB2 gegevensbestand om op de wijze van het archieflogboek te lopen.
 
 >[!NOTE]
 >
-Als de omgeving van uw AEM formulieren is geüpgraded vanaf een eerdere versie van AEM formulieren en DB2 gebruikt, wordt online back-up niet ondersteund. In dit geval moet u AEM formulieren sluiten en een offlineback-up uitvoeren. Toekomstige versies van AEM formulieren ondersteunen online back-ups voor klanten van upgrades.
+>Als de omgeving van uw AEM formulieren is geüpgraded vanaf een eerdere versie van AEM formulieren en DB2 gebruikt, wordt online back-up niet ondersteund. In dit geval moet u AEM formulieren sluiten en een offlineback-up uitvoeren. Toekomstige versies van AEM formulieren ondersteunen online back-ups voor klanten van upgrades.
 
 IBM beschikt over een reeks tools en Help-systemen waarmee databasebeheerders hun back-up- en hersteltaken kunnen beheren:
 
@@ -132,7 +133,7 @@ Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand t
 
 >[!NOTE]
 >
-De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe: `binlog_format=mixed log-bin=logname`
+>De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe: `binlog_format=mixed log-bin=logname`
 
 U kunt het mysqldump-hulpprogramma gebruiken om de volledige back-up van de database te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd duurt langer. Als u een incrementele back-up wilt maken, moet u de server starten met de - `log-bin` zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met dwingen `FLUSH LOGS SQL` gebruiken. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de `flush-logs` gebruiken, waarmee het volgende logbestand wordt gemaakt.
 
@@ -193,6 +194,6 @@ Als u aanvullende lettertypen hebt geïnstalleerd op uw AEM, moet u er een afzon
 
 >[!NOTE]
 >
-De Adobe van lettertypen die met AEM formulieren zijn geïnstalleerd, vindt u standaard in het dialoogvenster `[aem-forms root]/fonts` directory.
+>De Adobe van lettertypen die met AEM formulieren zijn geïnstalleerd, vindt u standaard in het dialoogvenster `[aem-forms root]/fonts` directory.
 
 Als u het besturingssysteem op de hostcomputer opnieuw initialiseert en u de lettertypen van het vorige besturingssysteem wilt gebruiken, moet ook een back-up worden gemaakt van de inhoud van de systeemmap met lettertypen. (Raadpleeg de documentatie bij het besturingssysteem voor specifieke instructies.)

@@ -5,10 +5,11 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 1%
+source-wordcount: '1574'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +39,7 @@ Na de installatie kunt u uw instantie configureren:
 1. **Editor openen** voor de **Sample Solr Configuration for clothescatalog**.
 
 1. Onder **Catalogusversies** gebruiken **Catalogusversie toevoegen** toevoegen `outdoors-Staged` en `outdoors-Online` aan de lijst.
-1. **Sla de configuratie op.**
+1. **Opslaan** de configuratie.
 1. Openen **Soorten SOLR-item** toevoegen **SOLR Sorts** tot `ClothesVariantProduct`:
 
    * relevantie (&quot;Relevance&quot;, score)
@@ -83,7 +84,7 @@ Na de installatie kunt u uw instantie configureren:
 
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
-1. **Sla de wijzigingen op.**
+1. **Opslaan** de wijzigingen.
 1. Opnieuw van **Soorten SOLR-item**, wijzigt u de `price` facet volgens de volgende schermafbeeldingen. Zoals met `category`, dubbelklikken `price` om de **Geïndexeerde eigenschap** tab:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
@@ -92,7 +93,7 @@ Na de installatie kunt u uw instantie configureren:
 
    ![chlimage_1-41](/help/sites-administering/assets/chlimage_1-41a.png)
 
-1. **Sla de wijzigingen op.**
+1. **Opslaan** de wijzigingen.
 1. Openen **Systeem**, **Facet zoeken** vervolgens **Wizard Indexeerbewerking**. Een ronjob starten:
 
    * **Indexeerbewerking**: `full`
@@ -382,12 +383,12 @@ Een of meer producten uit de catalogus verwijderen:
 
    Bijvoorbeeld:
 
-   * Open:
+   * Openen:
 
      [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
    * De `Hybris Base` catalogus
-   * Open:
+   * Openen:
 
      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 

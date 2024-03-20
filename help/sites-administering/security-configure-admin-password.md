@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -63,4 +64,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Als u gewoon de `-nointeractive` parameter zonder `-Dadmin.password.file` systeemeigenschap, AEM het standaardbeheerderswachtwoord gebruikt zonder dat u wordt gevraagd dit te wijzigen, in feite gedrag uit eerdere versies repliceert. Deze niet-interactieve modus kan worden gebruikt voor geautomatiseerde installaties die de opdrachtregel in een installatiescript gebruiken.
+>Als u gewoon de `-nointeractive` parameter zonder de `-Dadmin.password.file` systeemeigenschap, AEM het standaardbeheerderswachtwoord gebruikt zonder dat u wordt gevraagd dit te wijzigen, in feite gedrag uit eerdere versies repliceert. Deze niet-interactieve modus kan worden gebruikt voor geautomatiseerde installaties die de opdrachtregel in een installatiescript gebruiken.

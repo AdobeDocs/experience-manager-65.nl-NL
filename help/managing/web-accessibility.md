@@ -2,10 +2,11 @@
 title: Adobe Experience Manager (AEM) en de Web Accessibility Guidelines
 description: Een inleiding tot Adobe Experience Manager (AEM) en de Web Accessibility Guidelines
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 67%
+source-wordcount: '397'
+ht-degree: 62%
 
 ---
 
@@ -57,6 +58,6 @@ Adobe Experience Manager (AEM) bevat verschillende functies en mogelijkheden die
 >
 >Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
 
-## Toegankelijkheid in Adobe {#accessibility-at-adobe}
+## Toegankelijkheid bij Adobe {#accessibility-at-adobe}
 
 Ga voor meer informatie naar de [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).

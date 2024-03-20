@@ -6,14 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1895'
 ht-degree: 0%
 
 ---
 
-# Pagina&#39;s maken en indelen{#creating-and-organizing-pages}
+# Pagina&#39;s maken en ordenen{#creating-and-organizing-pages}
 
 In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager (AEM), zodat u vervolgens [inhoud maken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) op die pagina&#39;s.
 

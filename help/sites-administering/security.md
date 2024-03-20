@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5398'
 ht-degree: 0%
@@ -414,7 +415,7 @@ De tabbladen bieden toegang tot verschillende configuraties:
 | Eigenschappen | Hier wordt informatie weergegeven over de gebruiker of groep die e-mailgegevens, een beschrijving en naamgegevens kan bevatten. Hiermee kunt u ook het wachtwoord van een gebruiker wijzigen. Zie [Gebruikers en groepen maken](#creating-users-and-groups), [Eigenschappen van gebruikers en groepen wijzigen](#modifying-user-and-group-properties) en [Gebruikerswachtwoord wijzigen](#changing-a-user-password). |
 | Groepen | Hiermee geeft u alle groepen weer waartoe de geselecteerde gebruiker of groep behoort. U kunt de geselecteerde gebruiker of groepen toewijzen aan extra groepen of deze uit groepen verwijderen. Zie [Groepen](#adding-users-or-groups-to-a-group). |
 | Leden | Alleen beschikbaar voor groepen. Hiermee geeft u de leden van een bepaalde groep weer. Zie [Leden](#members-adding-users-or-groups-to-a-group). |
-| Machtigingen | U kunt machtigingen toewijzen aan een gebruiker of groep. Hier kunt u het volgende instellen:<ul><li>Machtigingen voor bepaalde pagina&#39;s/knooppunten. Zie [Machtigingen instellen](#setting-permissions). </li><li>Machtigingen voor het maken en verwijderen van pagina&#39;s en wijzigingen in de hiërarchie. ???? [toewijzen, rechten](#settingprivileges), zoals hiërarchische wijzigingen, waarmee u pagina&#39;s kunt maken en verwijderen,</li><li>Machtigingen in verband met [replicatiebevoegdheden](#setting-replication-privileges) (gewoonlijk van auteur aan publicatie) volgens een weg.</li></ul> |
+| Machtigingen | U kunt machtigingen toewijzen aan een gebruiker of groep. Hier kunt u het volgende instellen:<ul><li>Machtigingen voor bepaalde pagina&#39;s/knooppunten. Zie [Machtigingen instellen](#setting-permissions). </li><li>Machtigingen voor het maken en verwijderen van pagina&#39;s en hiërarchische wijziging. ??? [toewijzen, rechten](#settingprivileges), zoals hiërarchische wijzigingen, waarmee u pagina&#39;s kunt maken en verwijderen,</li><li>Machtigingen in verband met [replicatiebevoegdheden](#setting-replication-privileges) (gewoonlijk van auteur aan publicatie) volgens een weg.</li></ul> |
 | Imitators | Laat een andere gebruiker zich de rekening voorstellen. Nuttig wanneer u een gebruiker nodig hebt om namens een andere gebruiker te handelen. Zie [Gebruikers imiteren](#impersonating-another-user). |
 | Voorkeuren | Sets [voorkeuren voor de groep of gebruiker](#setting-user-and-group-preferences). Bijvoorbeeld taalvoorkeuren. |
 

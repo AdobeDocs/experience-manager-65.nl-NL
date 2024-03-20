@@ -7,9 +7,10 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2027'
 ht-degree: 10%
 
 ---
@@ -267,11 +268,11 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
-1. Open **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. Selecteer een specifieke verzameling als u een workflow op die verzameling wilt uitvoeren.
+1. Openen **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. Selecteer een specifieke verzameling als u een workflow op die verzameling wilt uitvoeren.
 1. Openen **[!UICONTROL Timeline]** spoorwegen. Klikken ![chevron omhoog](assets/do-not-localize/chevron-up-icon.png) en klik op **[!UICONTROL Start Workflow]**.
 1. In de **[!UICONTROL Start Workflow]** selecteert u een workflowmodel in de lijst. Selecteer bijvoorbeeld de **[!UICONTROL DAM Update Asset]** model.
 1. Voer een titel in voor de workflow en klik op **[!UICONTROL Start]**.
-1. Klik in het dialoogvenster op **[!UICONTROL Proceed]**. De workflow verwerkt alle elementen in de geselecteerde verzameling.
+1. Klik op **[!UICONTROL Proceed]**. De workflow verwerkt alle elementen in de geselecteerde verzameling.
 
 >[!MORELIKETHIS]
 >

@@ -3,7 +3,8 @@ title: Hoe kan AEM Forms met Adobe Analytics worden geïntegreerd?
 description: AEM Forms is geïntegreerd met Adobe Analytics om prestatiegegevens voor gepubliceerde formulieren vast te leggen en bij te houden.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%

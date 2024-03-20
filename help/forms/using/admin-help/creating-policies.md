@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4713'
 ht-degree: 0%
@@ -106,7 +107,7 @@ Wanneer u beleid bewerkt, gelden de volgende beperkingen:
 
    >[!NOTE]
    >
-   U kunt een beleidsnaam maken die uitgebreide tekens bevat. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als hetzelfde beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
+   >U kunt een beleidsnaam maken die uitgebreide tekens bevat. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als hetzelfde beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
 
 1. Voeg gebruikers en groepen aan het beleid toe en plaats de aangewezen toestemmingen. (Zie [Gebruikers en groepen](creating-policies.md#users-and-groups).)
 1. Selecteer onder Algemene instellingen de gewenste opties. (Zie [Algemene instellingen](creating-policies.md#general-settings).)
@@ -126,7 +127,7 @@ In het gebied Gebruikers en groepen geeft u de gebruikers op die toegang hebben 
 
 >[!NOTE]
 >
-De uitgever van het document is de gebruiker die het document met het beleid beschermt. Deze gebruiker is altijd inbegrepen door gebrek op een beleid, met volledige toegangsrechten, met inbegrip van herroeping en beleid-omschakeling mogelijkheden. Beheerders kunnen echter de toegangsrechten van de uitgever van het document voor gedeeld beleid wijzigen. De beheerder kan bijvoorbeeld de documentuitgever beperken om de toegang tot het document in te trekken of het beleid te wijzigen.
+>De uitgever van het document is de gebruiker die het document met het beleid beschermt. Deze gebruiker is altijd inbegrepen door gebrek op een beleid, met volledige toegangsrechten, met inbegrip van herroeping en beleid-omschakeling mogelijkheden. Beheerders kunnen echter de toegangsrechten van de uitgever van het document voor gedeeld beleid wijzigen. De beheerder kan bijvoorbeeld de documentuitgever beperken om de toegang tot het document in te trekken of het beleid te wijzigen.
 
 **Gebruiker of groep toevoegen:** Als u een gebruiker of groep gebruikers wilt toevoegen, klikt u op Gebruiker of Groep toevoegen en vervolgens op Geavanceerd zoeken zodat u gebruikers of groepen kunt zoeken. De gebruikers omvatten de interne gebruikers van uw organisatie en uitgenodigde gebruikers die met documentveiligheid hebben geregistreerd. Wanneer u deze optie selecteert, wordt de pagina Gebruiker of Groep toevoegen weergegeven:
 
@@ -138,7 +139,7 @@ De uitgever van het document is de gebruiker die het document met het beleid bes
 
 >[!NOTE]
 >
-Als u een correcte uitgenodigde gebruikersnaam of e-mailadres ingaat en geen resultaat is teruggekeerd, kan de gebruiker nog niet geregistreerd hebben, of de rekening kan worden geschrapt. U kunt proberen de gebruiker toe te voegen als uitgenodigd gebruikerstype of uw beheerder contacteren.
+>Als u een correcte uitgenodigde gebruikersnaam of e-mailadres ingaat en geen resultaat is teruggekeerd, kan de gebruiker nog niet geregistreerd hebben, of de rekening kan worden geschrapt. U kunt proberen de gebruiker toe te voegen als uitgenodigd gebruikerstype of uw beheerder contacteren.
 
 **Nieuwe gebruiker uitnodigen:** Als u een uitgenodigde gebruiker wilt toevoegen, klikt u op Nieuwe gebruiker uitnodigen, typt u het e-mailadres van de gebruiker in het vak dat verschijnt en klikt u op Uitnodigen. Deze optie is alleen beschikbaar als de beheerder deze heeft ingeschakeld. Wanneer u nieuwe uitgenodigde gebruikers aan een beleid toevoegt, verzendt de documentveiligheid een registratieuitnodiging e-mail als de gebruikers niet reeds worden uitgenodigd om zich te registreren. De gebruikers moeten de koppeling in de e-mail gebruiken om een account te maken en vervolgens het account activeren.
 
@@ -148,7 +149,7 @@ Nadat gebruikers zich hebben geregistreerd, kunnen ze met een beleid beveiligde 
 
 >[!NOTE]
 >
-Om anonieme toegang tot een beleid-beschermd document toe te laten dat het momenteel niet heeft, verwijder het bestaande beleid en pas dan een beleid toe dat anonieme toegang toestaat. Als u het bestaande beleid schakelt of wijzigt, moeten de gebruikers zich nog aanmelden om toegang te krijgen tot het document.
+>Om anonieme toegang tot een beleid-beschermd document toe te laten dat het momenteel niet heeft, verwijder het bestaande beleid en pas dan een beleid toe dat anonieme toegang toestaat. Als u het bestaande beleid schakelt of wijzigt, moeten de gebruikers zich nog aanmelden om toegang te krijgen tot het document.
 
 #### Documentmachtigingen opgeven voor gebruikers en groepen {#specify-the-document-permissions-for-users-and-groups}
 
@@ -212,13 +213,13 @@ Het gebied Algemene instellingen bevat de volgende instellingen:
 
 >[!NOTE]
 >
-De geldigheidsdata zijn gebaseerd op de tijdzone van het documentbeveiligingssysteem, niet op de tijdzone van uw lokale computer.
+>De geldigheidsdata zijn gebaseerd op de tijdzone van het documentbeveiligingssysteem, niet op de tijdzone van uw lokale computer.
 
 **Controle:** Het controleren van gebeurtenissen die aan een document met beleidsbeveiliging zijn gekoppeld, in- of uitschakelen. Documentbeveiliging kan bijvoorbeeld gebeurtenissen opnemen, zoals pogingen om een document te openen. Gecontroleerde gebeurtenissen worden weergegeven in de lijst op de pagina Gebeurtenissen. Als u deze optie niet selecteert, worden in documentbeveiliging geen gebeurtenissen vastgelegd voor documenten die aan het beleid zijn gekoppeld.
 
 >[!NOTE]
 >
-De beheerder moet server controle op de de configuratiepagina van de Montages van de Controle en van de Privacy ook toelaten om de controleeigenschap te werken.
+>De beheerder moet server controle op de de configuratiepagina van de Montages van de Controle en van de Privacy ook toelaten om de controleeigenschap te werken.
 
 **Uitgebreide gebruiksregistratie:** Het bijhouden van gebruik in- of uitschakelen. Documentbeveiliging ondersteunt het bijhouden van gebruikersgebeurtenissen die zijn gekoppeld aan verschillende bewerkingen die op een PDF-bestand worden uitgevoerd. U kunt het documenthandbeveiligingsobject openen met behulp van een JavaScript. Een klik op een knop, een multimediabestand dat wordt afgespeeld of het opslaan van een bestand zijn enkele voorbeelden van gebeurtenissen die worden geactiveerd door een PDF die met een beleid is beveiligd. Met behulp van het beveiligingsobject van het document kunt u ook gebruikersgegevens ophalen. Het bijhouden van gebeurtenissen kan op algemeen niveau of op beleidsniveau worden ingeschakeld op de documentbeveiligingsserver.
 
@@ -244,7 +245,7 @@ Als u de globale authentificatiemontages met voeten treedt, kunt u de authentifi
 
 >[!NOTE]
 >
-Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
+>Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
 
 ### Geavanceerde instellingen {#advanced-settings}
 
@@ -258,7 +259,7 @@ Als u een beleid uitgeeft en de beheerder een gevormd watermerk schrapte dat u e
 
 >[!NOTE]
 >
-Voor beleid dat anonieme gebruikerstoegang verleent, worden de gebruikersnaam en het herkenningsteken van een anonieme gebruiker niet getoond als watermerk zelfs als u dit type van watermerk selecteert.
+>Voor beleid dat anonieme gebruikerstoegang verleent, worden de gebruikersnaam en het herkenningsteken van een anonieme gebruiker niet getoond als watermerk zelfs als u dit type van watermerk selecteert.
 
 **Alleen gecertificeerde Acrobat-plug-ins voor PDF gebruiken:** Als deze optie is geselecteerd voor een beleid, moet Acrobat 8.0 en hoger in de gecertificeerde modus worden uitgevoerd wanneer documenten worden geopend die met het beleid zijn beveiligd. Als Acrobat wordt uitgevoerd in de gecertificeerde modus, worden er geen plug-ins van derden geladen.
 
@@ -296,7 +297,7 @@ Er verschijnt een rode X naast een uitgeschakeld beleid.
 
 >[!NOTE]
 >
-Beheerders kunnen persoonlijk beleid niet uitschakelen en gebruikers kunnen hun eigen beleid niet in- en uitschakelen.
+>Beheerders kunnen persoonlijk beleid niet uitschakelen en gebruikers kunnen hun eigen beleid niet in- en uitschakelen.
 
 1. Voor de pagina van de documentveiligheid, klik Beleid en klik dan de Reeksen van het Beleid tabel.
 1. Klik op de naam van de desbetreffende beleidsset en klik op het tabblad Beleid.
@@ -322,7 +323,7 @@ U kunt meer gedetailleerde informatie over een beleid bekijken dat in de lijst v
 
 >[!NOTE]
 >
-Het beleid dat Acrobat automatisch genereert voor de ontvangers van documenten die in Microsoft Outlook zijn gekoppeld aan e-mailberichten, wordt niet weergegeven in de beleidslijst. U kunt dit beleid alleen weergeven door de pagina Documentdetails voor het bijbehorende document te openen.
+>Het beleid dat Acrobat automatisch genereert voor de ontvangers van documenten die in Microsoft Outlook zijn gekoppeld aan e-mailberichten, wordt niet weergegeven in de beleidslijst. U kunt dit beleid alleen weergeven door de pagina Documentdetails voor het bijbehorende document te openen.
 
 1. Voor de pagina van de documentveiligheid, klik Beleid en klik dan het Mijn lusje van Beleid.
 1. Voltooi de zoekgegevens zodat u naar persoonlijk beleid kunt zoeken.
@@ -375,7 +376,7 @@ Externe gebruikers kunnen beleid alleen kopiëren als de beheerder deze mogelijk
 
    >[!NOTE]
    >
-   U kunt een beleidsnaam maken die uitgebreide tekens bevat. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als hetzelfde beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
+   >U kunt een beleidsnaam maken die uitgebreide tekens bevat. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als hetzelfde beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
 
 1. Klik op OK.
 
@@ -392,7 +393,7 @@ Uitgenodigde gebruikers kunnen beleid slechts schrappen als de beheerder dit ver
 
 >[!NOTE]
 >
-Gebruik de clienttoepassing om beleid uit documenten te verwijderen. (Zie de Help bij Acrobat of de desbetreffende Help bij Acrobat Reader DC-extensies.)
+>Gebruik de clienttoepassing om beleid uit documenten te verwijderen. (Zie de Help bij Acrobat of de desbetreffende Help bij Acrobat Reader DC-extensies.)
 
 ## De beleidslijst sorteren {#sort-the-policy-list}
 

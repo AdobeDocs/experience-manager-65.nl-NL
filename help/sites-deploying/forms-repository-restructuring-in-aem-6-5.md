@@ -6,9 +6,10 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: d555422e-dc97-4d45-9525-4299d22315e2
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -42,49 +43,49 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/rte` |
 | **Herstructureringsrichtsnoeren** | Voor de middelen in de cliëntbibliotheken die door absolute wegen kunnen worden bedoeld, moet u nieuwere wegen in verse activa gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/af/authoring/clientlibs` |
 | **Herstructureringsrichtsnoeren** | Voor de middelen in de cliëntbibliotheken die door absolute wegen kunnen worden bedoeld, moet u nieuwere wegen in verse activa gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/xfaforms/clientlibs/` |
 | **Herstructureringsrichtsnoeren** | Voor de middelen in de cliëntbibliotheken die door absolute wegen kunnen worden bedoeld, moet u nieuwere wegen in verse activa gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/af/runtime/clientlibs` |
 | **Herstructureringsrichtsnoeren** | Voor de middelen in de cliëntbibliotheken die door absolute wegen kunnen worden bedoeld, moet u nieuwere wegen in verse activa gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/af/runtime/clientlibs` |
 | **Herstructureringsrichtsnoeren** | Voor de middelen in de cliëntbibliotheken die door absolute wegen kunnen worden bedoeld, moet u nieuwere wegen in verse activa gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/expeditor/clientlibs` |
 | **Herstructureringsrichtsnoeren** | Voor de middelen in de cliëntbibliotheken die door absolute wegen kunnen worden bedoeld, moet u nieuwere wegen in verse activa gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/fmaddon` |
 | **Herstructureringsrichtsnoeren** | Het wijzigen van deze clientlibs is nooit aanbevolen of ondersteund. Als deze clientlibs zijn gewijzigd, moeten ze worden teruggedraaid om de AEM code te gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/aep` |
 |---|---|
 | **Nieuwe locatie** | `/var/fd/content/annotations` |
 | **Herstructureringsrichtsnoeren** | Het wijzigen van deze clientlibs is nooit aanbevolen of ondersteund. Als deze clientlibs zijn gewijzigd, moeten ze worden teruggedraaid om de AEM code te gebruiken. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 ## Voor toekomstige upgrade {#prior-to-upgrade}
 
@@ -94,7 +95,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 |---|---|
 | **Nieuwe locatie** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
 | **Herstructureringsrichtsnoeren** | De [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) te activeren hulpprogramma vanuit de gebruikersinterface van Forms Migration. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 ### Configuraties van Recaptcha-Cloud Servicen {#recaptcha-cloud-service-configurations}
 
@@ -102,7 +103,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 |---|---|
 | **Nieuwe locatie** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
 | **Herstructureringsrichtsnoeren** | De [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) te activeren hulpprogramma vanuit de gebruikersinterface van Forms Migration. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 ### Configuraties van Typekit-Cloud Servicen {#typekit-cloud-service-configurations}
 
@@ -110,7 +111,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 |---|---|
 | **Nieuwe locatie** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
 | **Herstructureringsrichtsnoeren** | De [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) te activeren hulpprogramma vanuit de gebruikersinterface van Forms Migration. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 ### Dic {#misc-1}
 
@@ -118,10 +119,10 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 |---|---|
 | **Nieuwe locatie** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
 | **Herstructureringsrichtsnoeren** | De [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) te activeren hulpprogramma vanuit de gebruikersinterface van Forms Migration. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |
 
 | **Vorige locatie** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nieuwe locatie** | `/libs/fd/fp` |
 | **Herstructureringsrichtsnoeren** | Verwijzingen naar de sjablonen /etc bijwerken om naar de sjablonen te verwijzen `/libs` tegenhangers. |
-| **Notities** | N.v.t. |
+| **Notities** | NVT |

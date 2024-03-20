@@ -3,13 +3,14 @@ title: Hoe kan ik Adaptief-formuliergegevens verbinden en verzenden naar Microso
 description: Een stapsgewijze gids voor het maken van een verbinding en het verzenden van Adaptief formulier naar Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, Adaptive Forms data verzenden naar Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve formuliergegevens verbinden en verzenden naar Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
@@ -192,4 +193,3 @@ Na u [Sluit uw AEM Forms Author-instantie aan met Microsoft® Power Automate](#c
 * [Een adaptief formulier maken](create-an-adaptive-form-core-components.md)
 * [Een verzendhandeling configureren](configuring-submit-actions.md)
 * [Adobe Experience Manager Connector voor Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-

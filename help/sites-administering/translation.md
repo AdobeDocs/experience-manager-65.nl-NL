@@ -4,7 +4,8 @@ description: Leer hoe u inhoud voor meertalige sites vertaalt.
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
-source-git-commit: 3f5173c0c2b17e8cf560753088451f78c6529f5c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -33,6 +34,6 @@ Als uw vertaalservicebureau geen aansluiting voor integratie met AEM biedt, onde
 >
 >Uw gebruiker moet een lid van de project-beheerders groep zijn om de eigenschappen van het Exemplaar van de Taal te gebruiken.
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 De [Aanbevolen werkwijzen voor vertaling](/help/sites-administering/tc-bp.md) Deze pagina bevat belangrijke informatie over uw implementatie.

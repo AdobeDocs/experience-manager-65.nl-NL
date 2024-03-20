@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
+source-wordcount: '18860'
 ht-degree: 0%
 
 ---
@@ -383,7 +384,7 @@ Maak een PDF-document met de Output API (webservice):
 
 Met de service Uitvoer kunt u een PDF/A-document maken. Omdat PDF/A een archiefindeling is voor langdurige bewaring van de inhoud van het document, worden alle lettertypen ingesloten en wordt het bestand niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Bovendien bevat een PDF/A-document geen audio- en video-inhoud. Net als bij andere uitvoerservicetaken kunt u zowel een formulierontwerp als gegevens opgeven die met een formulierontwerp moeten worden samengevoegd om een PDF/A-document te maken.
 
-De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk a en b. Het grootste verschil tussen beide is de logische structuur (toegankelijkheid) die niet vereist is voor niveau b. Ongeacht het compatibiliteitsniveau, dicteert PDF/A-1 dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document.
+De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk a en b. Het grootste verschil tussen beide is met betrekking tot de logische structuur (toegankelijkheid) ondersteuning, die niet is vereist voor compatibiliteitsniveau b. Ongeacht het compatibiliteitsniveau, dicteert PDF/A-1 dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document.
 
 Hoewel PDF/A de norm voor het archiveren van PDF- documenten is, is het niet verplicht dat PDF/A voor het archiveren wordt gebruikt als een standaarddocument van de PDF voldoet aan de behoeften van uw bedrijf. De PDF/A-standaard heeft tot doel een bestand van het type PDF te maken dat gedurende een lange periode kan worden opgeslagen en voldoet aan de vereisten voor documentbewaring. Een URL kan bijvoorbeeld niet worden ingesloten in een PDF/A omdat de URL na verloop van tijd ongeldig kan worden.
 
@@ -903,14 +904,14 @@ Geef een document dat is opgehaald uit de opslagplaats door gebruik te maken van
 
 1. Haal het formulierontwerp op uit de AEM Forms Repository.
 
-   De `ResourceRepositoryClient` object `readResourceContent` methode en geef een tekenreekswaarde door die de URI-locatie opgeeft aan het XDP-bestand. Bijvoorbeeld, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Deze waarde is verplicht. Deze methode retourneert een `com.adobe.idp.Document` -instantie die het XDP-bestand vertegenwoordigt.
+   De `ResourceRepositoryClient` object `readResourceContent` methode en geef een tekenreekswaarde door die de URI-locatie opgeeft aan het XDP-bestand. Bijvoorbeeld: `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Deze waarde is verplicht. Deze methode retourneert een `com.adobe.idp.Document` -instantie die het XDP-bestand vertegenwoordigt.
 
 1. Het niet-interactieve PDF formulier weergeven.
 
    De `OutputClient` object `generatePDFOutput2` en geeft de volgende waarden door:
 
    * A `TransformationFormat` opsommingswaarde. Als u een PDF-document wilt genereren, geeft u `TransformationFormat.PDF`.
-   * Een tekenreekswaarde die de hoofdmap van de inhoud opgeeft waar de extra bronnen, zoals afbeeldingen, zich bevinden. Bijvoorbeeld, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
+   * Een tekenreekswaarde die de hoofdmap van de inhoud opgeeft waar de extra bronnen, zoals afbeeldingen, zich bevinden. Bijvoorbeeld: `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
    * A `com.adobe.idp.Document` object dat het formulierontwerp vertegenwoordigt (gebruik de instantie die door het `ResourceRepositoryClient` object `readResourceContent` methode).
    * A `PDFOutputOptionsSpec` -object dat PDF-runtime-opties bevat.
    * A `RenderOptionsSpec` -object dat renderingopties bevat.

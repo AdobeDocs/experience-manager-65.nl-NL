@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 1%
+source-wordcount: '1523'
+ht-degree: 0%
 
 ---
 
@@ -134,8 +135,7 @@ Als u de **[!UICONTROL Arguments]** tabblad van het **[!UICONTROL Page Extractio
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Handler voor pagina-uitname**: Selecteer in de keuzelijst de handler die u wilt gebruiken. Een extractiehandler werkt op een specifieke uitvoering, die door een verwante `RenditionPicker` (zie de `ExtractionHandler`-API) wordt gekozen.
-Standaard [!DNL Experience Manager] installatie het volgende is beschikbaar:
+* **Handler voor pagina-uitname**: Selecteer in de keuzelijst de handler die u wilt gebruiken. Een extractiemanager werkt op een specifieke uitvoering, gekozen door een verwante `RenditionPicker` (zie de `ExtractionHandler` API). Standaard [!DNL Experience Manager] installatie het volgende is beschikbaar:
    * IDML Handgreep Extractie: werkt op de `IDML` vertoning die in de stap MediaExtract wordt geproduceerd.
 
 * **Paginanaam**: Geef de naam op die u aan de resulterende pagina wilt toewijzen. Als deze optie leeg blijft, is de naam &quot;page&quot; (of een derivaat als &quot;page&quot; al bestaat).

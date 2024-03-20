@@ -4,7 +4,8 @@ description: Leer hoe u bepaalde functionaliteit voor inhoudsfragmenten in de co
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 12%
@@ -24,9 +25,9 @@ Gebruik voordat u Inhoudsfragmenten gebruikt de opdracht **Configuratiebrowser**
 
 >[!CAUTION]
 >
->Als u deze optie niet inschakelt **Modellen van inhoudsfragmenten**:
+>Als u niet inschakelt **Modellen van inhoudsfragmenten**:
 >
->* de **Maken** Deze optie is niet beschikbaar voor het maken van modellen.
+>* de **Maken** is niet beschikbaar voor het maken van modellen.
 >* u kunt [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schakelen:
@@ -47,7 +48,7 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 1. Gebruiken **Maken** om het dialoogvenster te openen, waarin u:
 
    1. Geef een **Titel**.
-   1. Selecteer
+   1. Om hun gebruik toe te laten selecteer
       * **Modellen van contentfragmenten**
       * **Blijvende GraphQL-query&#39;s**
 

@@ -5,7 +5,8 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -111,13 +112,13 @@ Voer de volgende databaseopdrachten uit, zodat u gebruikersbeheergegevens voor e
 >
 >De volgende opdrachten gebruiken databasetabelnamen in My SQL- en IBM® DB2®-databases. Wanneer u deze opdrachten uitvoert voor Oracle- en MS® SQL-databases, vervangt u de volgende tabelnamen in de opdrachten:
 >
-* Vervangen `EdcPrincipalLocalAccountEntity` with `EdcPrincipalLocalAccount`
+>* Vervangen `EdcPrincipalLocalAccountEntity` with `EdcPrincipalLocalAccount`
 >
-* Vervangen `EdcPrincipalEmailAliasEntity` with `EdcPrincipalEmailAliasEn`
+>* Vervangen `EdcPrincipalEmailAliasEntity` with `EdcPrincipalEmailAliasEn`
 >
-* Vervangen `EdcPrincipalMappingEntity` with `EdcPrincipalMappingEntit`
+>* Vervangen `EdcPrincipalMappingEntity` with `EdcPrincipalMappingEntit`
 >
-* Vervangen `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+>* Vervangen `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

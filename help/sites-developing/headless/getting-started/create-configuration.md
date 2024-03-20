@@ -2,7 +2,8 @@
 title: Creërend een Hoofdloze Gids van het Begin van de Configuratie
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloze in AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%

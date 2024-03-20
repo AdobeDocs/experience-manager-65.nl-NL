@@ -7,9 +7,10 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2231'
 ht-degree: 10%
 
 ---
@@ -115,7 +116,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    |:---|:---|
    | [!UICONTROL Batch Size] | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | [!UICONTROL Field Separator] | Standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
-   | [!UICONTROL Multi Value Delimiter] | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|`. |
+   | [!UICONTROL Multi Value Delimiter] | Scheidingsteken voor metagegevenswaarden. Standaardwaarde is `|`. |
    | [!UICONTROL Launch Workflows] | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen zijn van kracht voor de [!UICONTROL DAM Metadata WriteBack] workflow (die metagegevens naar de binaire XMP schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | [!UICONTROL Asset Path Column Name] | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
@@ -150,7 +151,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 1. In de **[!UICONTROL Properties to be exported]** -veld, geeft u op of u alle of specifieke eigenschappen wilt exporteren. Als u Selectieve eigenschappen kiest die u wilt exporteren, voegt u de gewenste eigenschappen toe.
 
-1. Klik **[!UICONTROL Export]** op de werkbalk. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
+1. Klik op de werkbalk op **[!UICONTROL Export]**. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
 
 1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. Klik op **[!UICONTROL CSV Download]** op de werkbalk. Klik op **[!UICONTROL Close]**.
 

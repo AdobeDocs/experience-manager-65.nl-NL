@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 1%
+source-wordcount: '384'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +64,7 @@ Meer specifiek, worden de volgende configuratieveranderingen uitgevoerd wanneer 
 
 1. De **Apache Sling GET Servlet** is standaard ingesteld op ondersteuning van veilige configuraties, zoals hieronder wordt getoond:
 
-| **Configuratie** | **Auteur** | **Publicatie** |
+| **Configuratie** | **Auteur** | **Publiceren** |
 |---|---|---|
 | TXT-uitvoering | uitgeschakeld | uitgeschakeld |
 | HTML-uitvoering | uitgeschakeld | uitgeschakeld |

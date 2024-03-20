@@ -4,9 +4,10 @@ description: Leer hoe te om een project van de Inhoud en van de Handel van de AE
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -53,7 +54,7 @@ De CIF Add-on biedt een GraphQL-proxyservlet op `/api/graphql` die optioneel kun
 
 ## Opslag en catalogi configureren {#catalog}
 
-De invoegtoepassing en de [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) kan op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels opslag (of opslagmeningen, etc.) worden verbonden. Standaard wordt de CIF Add-On geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardopslag en catalogus van Adobe Commerce.
+De invoegtoepassing en de [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components) kan op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels opslag (of opslagmeningen, etc.) worden verbonden. Standaard wordt de CIF Add-On geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardopslag en catalogus van Adobe Commerce.
 
 Deze configuratie kan voor het project via CIF Cloud Service worden aangepast config die deze stappen volgt:
 

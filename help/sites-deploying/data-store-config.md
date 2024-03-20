@@ -6,9 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3549'
+source-wordcount: '3476'
 ht-degree: 0%
 
 ---
@@ -236,7 +237,7 @@ U kunt het configuratiebestand gebruiken met de opties die hieronder worden besc
 | --- | --- | --- | --- |
 | accessKey | Toegang tot sleutel-id voor de IAM-gebruiker met toegang tot het emmertje. | | Ja, wanneer u geen IAM-rollen gebruikt. |
 | geheimeKey | Geheime toegangstoets voor de IAM-gebruiker met toegang tot het emmertje. | | Ja, wanneer u geen IAM-rollen gebruikt. |
-| cacheSize | De grootte (in bytes) van de lokale cache. | 64GB | Nee. |
+| cacheSize | De grootte (in bytes) van de lokale cache. | 64 GB | Nee. |
 | connectionTimeout | Stel de hoeveelheid tijd in die moet worden gewacht (in milliseconden) voordat u de time-out verlaat wanneer u een verbinding maakt. | 10000 | Nee. |
 | maxCachedBinarySize | Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze waarde (in bytes) worden opgeslagen in de geheugencache. | 17408 (17 kB) | Nee. |
 | maxConnections | Stel het maximum aantal toegestane open HTTP-verbindingen in. | 50 | Nee. |

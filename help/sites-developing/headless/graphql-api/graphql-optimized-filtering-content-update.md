@@ -1,17 +1,18 @@
 ---
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager kunt bijwerken voor levering van inhoud zonder kop.
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
 
-
 # Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters {#updating-content-fragments-for-optimized-graphql-filtering}
 
-Voer een procedure uit om de inhoudsfragmenten bij te werken om de prestaties van uw GraphQL-filters te optimaliseren.
+Als u de prestaties van uw GraphQL-filters wilt optimaliseren, voert u een procedure uit om uw Content Fragments bij te werken.
 
 >[!NOTE]
 >

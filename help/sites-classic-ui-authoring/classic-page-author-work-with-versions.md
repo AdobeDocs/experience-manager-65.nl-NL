@@ -7,9 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -171,7 +172,7 @@ In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt ti
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
-1. Klik op:
+1. Klik:
 
    1. **Ga** om de inhoud van de gepubliceerde pagina op het geselecteerde tijdstip weer te geven.
    1. Gebruik bij het weergeven van die inhoud **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.

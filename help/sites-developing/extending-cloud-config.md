@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -104,7 +105,7 @@ Nadat u de sjabloon en de component hebt ingesteld, kunt u de configuratie toevo
 
 `/etc/cloudservices/<service-name>`
 
-### Inhoudsmodel {#content-model}
+### Content Model {#content-model}
 
 Het inhoudsmodel wordt opgeslagen als `cq:Page` onder:
 
@@ -137,7 +138,7 @@ Zie voor documentatie over de API [com.day.cq.wcm.webservicesSupport](https://de
 
 ### AEM integratie {#aem-integration}
 
-Beschikbare services worden vermeld in de **Cloud Services** tabblad van het dialoogvenster **Pagina-eigenschappen** (van elke pagina die overerft van `foundation/components/page` of `wcm/mobile/components/page`).
+Beschikbare services worden vermeld in de **Cloud Servicen** tabblad van het **Pagina-eigenschappen** (van elke pagina die overerft van `foundation/components/page` of `wcm/mobile/components/page`).
 
 Het tabblad bevat ook:
 
@@ -148,7 +149,7 @@ Het tabblad bevat ook:
 
 Wanneer het opslaan van gebruikersgeloofsbrieven voor de dienst, zouden alle wachtwoorden moeten worden gecodeerd.
 
-U kunt dit bereiken door een verborgen formulierveld toe te voegen. Dit veld moet de annotatie hebben `@Encrypted` in de naam van de eigenschap; dat wil zeggen, voor de `password` in het veld zou de naam worden geschreven als:
+U kunt dit bereiken door een verborgen formulierveld toe te voegen. Dit veld moet de annotatie hebben `@Encrypted` in de eigenschapsnaam, dat wil zeggen, voor de `password` in het veld zou de naam worden geschreven als:
 
 `password@Encrypted`
 
@@ -204,7 +205,7 @@ De eigenschap wordt dan automatisch gecodeerd (met de opdracht `CryptoSupport` d
   </tr>
   <tr>
    <td>visible</td>
-   <td>Zichtbaarheid in dialoogvenster Pagina-eigenschappen standaard zichtbaar (optioneel)</td>
+   <td>Zichtbaarheid in dialoogvenster Pagina-eigenschappen; standaard zichtbaar (optioneel)</td>
   </tr>
  </tbody>
 </table>
@@ -217,7 +218,7 @@ Deze services worden standaard geleverd:
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [&amp;Doel testen](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
-* [ Dynamic Media ](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
+* [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >

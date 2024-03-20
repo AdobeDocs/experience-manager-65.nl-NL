@@ -1,15 +1,16 @@
 ---
 title: Concepten van de gebruikersinterface voor Adobe Experience Manager Touch
-description: Met Adobe Experience Manager 5.6 introduceerde Adobe een nieuwe interface die geoptimaliseerd is voor aanraking en responsief ontwerp voor de auteursomgeving
+description: Met Adobe Experience Manager 5.6 introduceerde Adobe een nieuwe, aanraakgeoptimaliseerde interface met responsief ontwerp voor de auteursomgeving
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2147'
 ht-degree: 0%
 
 ---
@@ -27,8 +28,8 @@ De interface met aanraakbediening bevat:
 * De reeksheader die:
    * Het logo tonen
    * Verstrekt een verbinding aan de Globale Navigatie
-   * Verzekert verbinding met andere generische acties; zoals Zoeken, Help, Experience Cloud-oplossingen, meldingen en gebruikersinstellingen.
-* De linkerspoorstaaf (indien nodig getoond en verborgen), die kan aantonen:
+   * Verzekert verbinding met andere generische acties; zoals Onderzoek, Hulp, de Oplossingen van het Experience Cloud, Meldingen, en de Montages van de Gebruiker.
+* De linkerspoorstaaf (indien nodig getoond en verborgen), die het volgende kan aantonen:
    * Tijdlijn
    * Verwijzingen
    * Filters
@@ -50,9 +51,9 @@ De interface met aanraakbediening bevat:
 >
 >Bijna alle AEM functionaliteit is naar de interface met aanraakbediening verzonden. In sommige beperkte gevallen wordt de functionaliteit echter teruggezet naar de klassieke interface. Zie [Status van TouchUI-functie](/help/release-notes/touch-ui-features-status.md) voor meer informatie .
 
-De interface met aanraakbediening is ontworpen door Adobe om consistentie te bieden in de gebruikerservaring van meerdere producten. Het is gebaseerd op:
+De interface met aanraakbediening is ontworpen door Adobe voor consistentie in de gebruikerservaring van meerdere producten. Het is gebaseerd op:
 
-* **Koraalinterface** (CUI) een implementatie van een visuele stijl voor de aanraakinterface. Koral UI verstrekt alles uw product/project/Webtoepassing moet de visuele stijl van UI goedkeuren.
+* **Koraalinterface** (CUI) een implementatie van de visuele stijl van de Adobe voor de interface met aanraakbediening. Koral UI verstrekt alles uw product/project/Webtoepassing moet de visuele stijl van UI goedkeuren.
 * **Graniet-interface** de componenten worden gebouwd met Koral UI.
 
 De basisbeginselen van de interface met aanraakbediening zijn:
@@ -61,11 +62,11 @@ De basisbeginselen van de interface met aanraakbediening zijn:
 * Responsief ontwerp
 * Voor de context relevante weergave
 * Herbruikbaar
-* Ingesloten naslagdocumentatie opnemen
+* Inclusief ingesloten naslagdocumentatie
 * Ingesloten tests opnemen
 * Onderste ontwerp om ervoor te zorgen dat deze beginselen op elk element en elke component worden toegepast
 
-Voor een verder overzicht van de interface met aanraakbediening raadpleegt u [Structuur van de interface voor AEM aanraakbediening](/help/sites-developing/touch-ui-structure.md).
+Voor een verder overzicht van de aanraakinterface raadpleegt u [Structuur van de interface voor AEM aanraakbediening](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM {#aem-technology-stack}
 
@@ -75,7 +76,7 @@ AEM gebruikt het Granite-platform als basis en het Granite-platform bevat onder 
 
 ## Graniet {#granite}
 
-Graniet is Adobe Open Web-stapel, die diverse componenten verstrekt:
+Granite is de Open Web-stapel van de Adobe, die diverse componenten verstrekt die omvatten:
 
 * Een toepassing starten
 * Een kader OSGi waarin alles wordt opgesteld
@@ -87,9 +88,9 @@ Graniet is Adobe Open Web-stapel, die diverse componenten verstrekt:
 
 >[!NOTE]
 >
->Graniet wordt uitgevoerd als een open ontwikkelingsproject binnen Adobe: bijdragen aan de code, besprekingen, en kwesties worden gemaakt van over het hele bedrijf.
+>Granite wordt binnen de Adobe uitgevoerd als een open ontwikkelingsproject: bijdragen aan de code, discussies en problemen worden door het hele bedrijf gemaakt.
 >
->Graniet is echter **niet** een open-source-project. Het is sterk gebaseerd op verschillende open-sourceprojecten (met name Apache Sling, Felix, Jackrabbit en Lucene), maar Adobe tekent een duidelijke lijn tussen wat openbaar en wat intern is.
+>Graniet is echter **niet** een open-source-project. Het is sterk gebaseerd op verschillende open-sourceprojecten (met name Apache Sling, Felix, Jackrabbit en Lucene), maar de Adobe tekent een duidelijke lijn tussen wat openbaar en wat intern is.
 
 ## Graniet-interface {#granite-ui}
 
@@ -117,12 +118,12 @@ De graniet-interface:
 * Biedt een standaard, gestandaardiseerde gebruikersinterface
 * Is uitbreidbaar
 * Is ontworpen voor zowel mobiele apparaten als desktopapparaten (respecteert eerst mobiel)
-* Kan worden gebruikt in elk platform/product/project op basis van graniet; AEM
+* Kan worden gebruikt in elk platform/product/project op basis van graniet, bijvoorbeeld AEM
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
 * [Graniet UI Foundation-componenten](#granite-ui-foundation-components)
-Deze bibliotheek van stichtingscomponenten kan door andere bibliotheken worden gebruikt of worden uitgebreid.
+Deze bibliotheek met basiscomponenten kan door andere bibliotheken worden gebruikt of uitgebreid.
 * [Algemene UI-componenten](#granite-ui-administration-components)
 
 ### Client-kant versus server-kant {#client-side-vs-server-side}
@@ -136,7 +137,7 @@ De cliënt-server mededeling in granite UI bestaat uit hypertext, niet voorwerpe
 
 #### Client-kant {#client-side}
 
-Hierbij wordt een uitbreiding van de woordenlijst HTML gebruikt, op voorwaarde dat de auteur zijn voornemen kenbaar kan maken om een interactieve webapp te maken. Dit is een vergelijkbare aanpak [WAI-ARIA](https://www.w3.org/TR/wai-aria/) en [microformaten](https://microformats.org/).
+Hierbij wordt een uitbreiding van de woordenlijst HTML gebruikt, op voorwaarde dat de auteur zijn voornemen kenbaar kan maken om een interactieve webapp te maken. Dit is een vergelijkbare benadering van [WAI-ARIA](https://www.w3.org/TR/wai-aria/) en [microformaten](https://microformats.org/).
 
 Het bestaat voornamelijk uit een verzameling interactiepatronen (bijvoorbeeld het asynchroon verzenden van een formulier) die worden geïnterpreteerd door JS- en CSS-codes die op de client worden uitgevoerd. De rol van de client-kant bestaat uit het verbeteren van de opmaak (gegeven als de hypermediapliteit van de server) voor interactiviteit.
 
@@ -177,7 +178,7 @@ De verschillen tussen de gebruikersinterface van Granite en ExtJS (die voor de k
    <td>Overgangen naar status</td>
   </tr>
   <tr>
-   <td>Gegevensoverdrachtsobjecten</td>
+   <td>Data Transfer-objecten</td>
    <td>Hypermedia</td>
   </tr>
   <tr>
@@ -197,7 +198,7 @@ De verschillen tussen de gebruikersinterface van Granite en ExtJS (die voor de k
 
 ### Graniet UI Foundation-componenten {#granite-ui-foundation-components}
 
-De [Basiscomponenten van graniet UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verstrekken de basisbouwstenen nodig voor de bouw van om het even welke UI. Deze omvatten onder meer:
+De [Graniet UI-stichtingscomponenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verstrekken de basisbouwstenen nodig voor de bouw van om het even welke UI. Deze omvatten onder meer:
 
 * Knop
 * Hyperlink
@@ -207,7 +208,7 @@ De basiscomponenten zijn te vinden onder:
 
 `/libs/granite/ui/components/foundation`
 
-Deze bibliotheek bevat een graniet UI-component voor elk koraalelement. Een component wordt aangedreven door inhoud, met zijn configuratie die in de bewaarplaats verblijft. Hierdoor is het mogelijk een Granite UI-toepassing samen te stellen zonder handmatig markeringen voor HTML te schrijven.
+Deze bibliotheek bevat een graniet UI-component voor elk koraalelement. Een component wordt gestuurd door inhoud, waarbij de configuratie zich in de repository bevindt. Hierdoor is het mogelijk een Granite UI-toepassing samen te stellen zonder handmatig markeringen voor HTML te schrijven.
 
 Doel:
 
@@ -221,7 +222,7 @@ Implementatie:
 * Gebruik van testfaciliteiten die door het Granite-platform worden geleverd
 * JSP-sjablonen
 
-Deze bibliotheek van stichtingscomponenten kan door andere bibliotheken worden gebruikt of worden uitgebreid.
+Deze bibliotheek met basiscomponenten kan door andere bibliotheken worden gebruikt of uitgebreid.
 
 ### ExtJS en corresponderende UI-componenten voor graniet {#extjs-and-corresponding-granite-ui-components}
 
@@ -262,8 +263,8 @@ De [Graniet UI-beheercomponenten](https://developer.adobe.com/experience-manager
 
 Doel:
 
-* Unified look-and-feel voor beheertoepassingen
-* Rad voor beheertoepassingen
+* Verenigde blik-en-voelen voor beleidstoepassingen
+* RAD voor beheertoepassingen
 
 Implementatie:
 
@@ -275,7 +276,7 @@ Implementatie:
 CoralUI.pdf
 
 [Bestand ophalen](assets/coralui.pdf)
-Koraal UI (koral UI) is een implementatie van CUI (Adobe style) voor aanraking-toegelaten UI die wordt ontworpen om consistentie in de gebruikerservaring over veelvoudige producten te verstrekken. Koraal UI verstrekt alles dat u de visuele stijl moet aannemen die op het auteursmilieu wordt gebruikt.
+CUI (Coral UI) is een implementatie van de visuele stijl van de Adobe voor de interface met aanraakbediening die is ontworpen om consistentie in de gebruikerservaring op meerdere producten te bieden. Koraal UI verstrekt alles dat u de visuele stijl moet aannemen die op het auteursmilieu wordt gebruikt.
 
 >[!CAUTION]
 >
@@ -286,13 +287,13 @@ Koraal UI (koral UI) is een implementatie van CUI (Adobe style) voor aanraking-t
 >
 >* Wanneer het met AEM is verzonden en gebundeld.
 >* Voor gebruik wanneer het uitbreiden van bestaande UI van het auteursmilieu.
->* Adobe zakelijk onderpand, advertenties en presentaties.
->* De gebruikersinterface van toepassingen met Adobe-branding (het lettertype mag niet direct beschikbaar zijn voor andere toepassingen).
+>* Adobe zakelijke zekerheden, advertenties en presentaties.
+>* De gebruikersinterface van toepassingen met het merk Adobe (het lettertype mag niet direct beschikbaar zijn voor andere toepassingen).
 >* Met kleine aanpassingen.
 >
 >Het gebruik van de koraalinterface moet worden vermeden in:
 >
->* Documenten en andere artikelen die geen verband houden met Adobe.
+>* Documenten en andere niet met Adobe verband houdende posten.
 >* Omgevingen voor het maken van inhoud (waar de voorafgaande items door anderen kunnen worden gegenereerd).
 >* Toepassingen/componenten/webpagina&#39;s die niet duidelijk zijn verbonden met Adobe.
 >
@@ -364,7 +365,7 @@ Een insteekmodule is:
 * Ontworpen voor gebruik op een specifiek DOM-element. Een insteekmodule voor het dialoogvenster verwacht bijvoorbeeld dat deze kan worden gevonden `DIV class=dialog`
 * Algemeen in de natuur. Een indelingsmanager biedt bijvoorbeeld een indeling voor elke lijst met `DIV` of `LI` elementen
 
-Het gedrag van de stop kan met parameters worden aangepast, door één van beiden:
+Het gedrag van de insteekmodule kan met parameters worden aangepast, door één van beiden:
 
 * De parameters doorgeven met een JavaScript-aanroep
 * Toegewezen gebruiken `data-*` kenmerken die zijn gekoppeld aan de markering HTML

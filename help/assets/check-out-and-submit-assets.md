@@ -6,14 +6,15 @@ role: User
 feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 2%
+source-wordcount: '424'
+ht-degree: 1%
 
 ---
 
-# Bestanden inchecken en uitchecken in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+# Bestanden in- en uitchecken [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -29,7 +30,7 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 ## Elementen uitchecken {#checking-out-assets}
 
 1. Van de [!DNL Assets] -gebruikersinterface, selecteert u het element dat u wilt uitchecken. U kunt ook meerdere elementen selecteren om uit te checken.
-1. Klik **[!UICONTROL Checkout]** op de werkbalk. De **[!UICONTROL Checkout]** optie schakelt over naar **[!UICONTROL Checkin]**.
+1. Klik op de werkbalk op **[!UICONTROL Checkout]**. De **[!UICONTROL Checkout]** optie schakelt over naar **[!UICONTROL Checkin]**.
 Meld u aan als een andere gebruiker om te controleren of andere gebruikers het uitgecheckte element kunnen bewerken. Er wordt een vergrendelingssymbool weergegeven op de miniatuur van het element dat u hebt uitgecheckt.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -38,7 +39,7 @@ Meld u aan als een andere gebruiker om te controleren of andere gebruikers het u
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Als u de metagegevens voor het vergrendelde element wilt bewerken, klikt u op **[!UICONTROL View Properties]**.
+   Klik op **[!UICONTROL View Properties]**.
 
 1. Klikken **[!UICONTROL Edit]** om het element te openen in de bewerkingsmodus.
 
@@ -61,7 +62,7 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Klik **[!UICONTROL Release Lock]** op de werkbalk. Het element is ingecheckt en kan worden bewerkt aan andere gebruikers.
+1. Klik op de werkbalk op **[!UICONTROL Release Lock]**. Het element is ingecheckt en kan worden bewerkt aan andere gebruikers.
 
 ## Aanbevolen werkwijzen en beperkingen {#tips-limitations}
 
@@ -71,4 +72,3 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 >
 >* [Inchecken en uitchecken begrijpen [!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Videozelfstudie voor meer informatie over inchecken en uitchecken [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
-

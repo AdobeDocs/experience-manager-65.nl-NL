@@ -7,9 +7,10 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ In een video wordt een overzicht gegeven van de opties voor het integreren van m
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM functies voor beheer van meerdere sites van Live Copy en Taal Copy worden gebruikt met het Commerce Integration Framework om sites wereldwijd te beheren in verschillende regio&#39;s en regio&#39;s.
+AEM functies voor beheer van meerdere sites van Live Copy en Taal Copy worden samen met het Commerce integration framework gebruikt om sites wereldwijd te beheren in verschillende regio&#39;s en regio&#39;s.
 
 De aanbevolen setup bestaat uit het gebruik van een 1:1-relatie tussen de AEM site en de Adobe Commerce-winkelweergave.
 
@@ -57,6 +58,6 @@ Voer de onderstaande stappen uit om een AEM-site te verbinden en CIF Core Compon
 ## Aanvullende bronnen
 
 * [Adobe Commerce Websites, winkels en weergaven](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
-* [AEM CIF Core-componenten - Configuratie van meerdere winkels/sites](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [AEM CIF kerncomponenten - Configuratie van meerdere winkels/sites](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [Beheer van meerdere sites gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](/help/sites-administering/msm.md)

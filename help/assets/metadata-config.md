@@ -6,9 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1821'
 ht-degree: 3%
 
 ---
@@ -49,7 +50,7 @@ Om een ontkenning van de dienst (DOS) als situatie te verhinderen, [!DNL Enterpr
 
 Om de grens te veranderen, toegang **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** en wijzigt u de waarde **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi-configuratie.
 
-## Metadataprofielen {#metadata-profiles}
+## Metagegevensprofielen {#metadata-profiles}
 
 Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u later naar de map uploadt, overerft de standaardmetagegevens die u in het metagegevensprofiel hebt geconfigureerd.
 
@@ -145,7 +146,7 @@ To apply a metadata profile globally, follow these steps:
 Met de Forms-editor voor het schema Metagegevens van map kunt u metagegevensschema&#39;s voor mappen maken en bewerken.
 
 1. In [!DNL Experience Manager] interface, ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
-1. Ga naar de pagina [!UICONTROL Folder Metadata Schema Forms] en klik op **[!UICONTROL Create]**.
+1. Op de [!UICONTROL Folder Metadata Schema Forms] pagina, klikt u **[!UICONTROL Create]**.
 1. Geef een naam op voor het formulier en klik op **[!UICONTROL Create]**. Het nieuwe schema wordt weergegeven in het dialoogvenster [!UICONTROL Schema Forms] pagina.
 
 ### Formulieren met metagegevens van mappen bewerken {#edit-folder-metadata-schema-forms}

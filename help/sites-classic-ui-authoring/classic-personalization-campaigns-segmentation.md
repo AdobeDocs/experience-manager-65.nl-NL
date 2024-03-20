@@ -1,19 +1,20 @@
 ---
-title: Inzicht in segmentering
+title: Segmentering begrijpen
 description: Segmentering is een belangrijke overweging bij het maken van een campagne. Gewoonlijk moet u segmenten al hebben gedefinieerd voordat u uw campagne start.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
-source-git-commit: c67aaef1bbda80f355f8a6f23eac4d9e471fd510
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
-# Inzicht in segmentering{#understanding-segmentation}
+# Segmentering begrijpen{#understanding-segmentation}
 
 Segmentering is een belangrijke overweging bij het maken van een campagne. Gewoonlijk moet u segmenten al hebben gedefinieerd voordat u uw campagne start.
 
@@ -25,7 +26,7 @@ Segmentering helpt dit te bereiken door het volgende te analyseren en te karakte
 * profiel
 * activiteiten op andere websites
 
-De inhoud kan dan worden gericht op de behoeften en de interesses van de bezoeker, afhankelijk van de segmenten zij aanpassen.
+De inhoud kan vervolgens worden afgestemd op de behoeften en belangen van de bezoeker, afhankelijk van de segmenten die de bezoeker aanpast.
 
 ## Segmentatie gebruiken {#using-segmentation}
 
@@ -43,11 +44,11 @@ Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
 
 **Segment** - Een segment is een verzameling bezoekers die bepaalde kenmerken delen. Segmenten moeten onderscheidend zijn, met een minimum aan overlapping met andere segmenten.
 
-**Gedragkarakteristieken** - Gedragskenmerken zijn die welke verband houden met het gedrag van een bezoeker op de website. Deze omvatten:
+**Gedragkarakteristieken** - Gedragskenmerken zijn die welke betrekking hebben op het gedrag van een bezoeker op de website. Deze omvatten:
 
-* interesse binnen uw website; inclusief bezochte pagina&#39;s en aangekochte producten.
-* rente op de verwijzende website; inclusief gebruikte zoektermen of aangeklikte advertenties.
-* rente op andere locaties; bepaald met gereedschappen zoals Spyjax.
+* Interesse op uw website, inclusief bezochte pagina&#39;s en aangekochte producten.
+* Interesse op de verwijzende website; inclusief gebruikte zoektermen of aangeklikte advertenties.
+* Belang op andere sites; bepaald met behulp van hulpmiddelen zoals Spyjax.
 * loyaliteit van de bezoeker; duur van het bezoek, frequentie van de bezoeken.
 
 **Demografische kenmerken** - Dit zijn geselecteerde populatiekenmerken, waaronder:

@@ -1,6 +1,6 @@
 ---
 title: Controles en probleemoplossing na upgrade
-description: Leer hoe te om kwesties problemen op te lossen die na een verbetering zouden kunnen verschijnen.
+description: Leer hoe u problemen kunt oplossen die na een upgrade kunnen optreden.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -8,9 +8,10 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1793'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Na de [Upgrade op locatie](/help/sites-deploying/in-place-upgrade.md) de volgend
 
 * [Inspect de map PreUpgradeBackup](#main-pars-header-988995987)
 
-* [Eerste validatie van pagina&#39;s](#main-pars-header-20827371)
+* [Oorspronkelijke validatie van pagina&#39;s](#main-pars-header-20827371)
 * [AEM servicepacks toepassen](#main-pars-header-215142387)
 
 * [AEM migreren](#main-pars-header-1434457709)
@@ -59,7 +60,7 @@ Om dit mogelijk te maken, zijn wijzigingen aangebracht in de manier waarop logbe
 
 Hier is een steekproefrapport dat geen fouten tijdens verbetering toont:
 
-![1487887443006](assets/1487887443006.png)
+![148787443006](assets/1487887443006.png)
 
 Hier is een steekproefrapport dat een bundel toont die niet tijdens het verbeteringsproces werd geïnstalleerd:
 
@@ -75,7 +76,7 @@ Navigeer aan de console OSGi `/system/console/bundles` en controleer of er geen 
 
 ### Oak-versie verifiëren {#verify-oak-version}
 
-Na de upgrade moet u controleren of de eikenversie is bijgewerkt naar **1.10.2.**. Om de versie van de eikel te verifiëren, navigeer aan de console OSGi en bekijk de versie verbonden aan de bundels van de eikel: eiken kern, eiken komma&#39;s, eiken segmentteer.
+Na de upgrade moet u controleren of de eikenversie is bijgewerkt naar **1.10.2.**. Om de versie van het Eak te verifiëren, navigeer aan de console OSGi en bekijk de versie verbonden aan de bundels van het Eak: Eak Kern, Oak Commons, de Tar van het Segment van het Eak.
 
 ### Inspect PreUpgradeBackup-map {#inspect-preupgradebackup-folder}
 
@@ -85,7 +86,7 @@ De map met het tijdstempel moet een eigenschap hebben met de naam `mergeStatus` 
 
 Schakel CRXDE Lite uit na deze bewerking als u een werkgebied of productieomgeving hebt.
 
-### Eerste validatie van pagina&#39;s {#initial-validation-of-pages}
+### Oorspronkelijke validatie van pagina&#39;s {#initial-validation-of-pages}
 
 Voer een eerste validatie uit op meerdere pagina&#39;s in AEM. Als u een auteur-omgeving wilt upgraden, opent u de startpagina en de welkomstpagina ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Open in zowel auteur- als publicatieomgevingen een aantal toepassingspagina&#39;s en rooktests die correct worden weergegeven. Als er problemen optreden raadpleegt u `error.log` om problemen op te lossen.
 
@@ -99,7 +100,7 @@ Verscheidene eigenschappen in AEM vereisen extra stappen na de verbetering. Een 
 
 ### Configuraties voor gepland onderhoud controleren {#verify-scheduled-maintenance-configurations}
 
-#### Opruiming gegevensopslag inschakelen {#enable-data-store-garbage-collection}
+#### Opruiming van gegevensopslag inschakelen {#enable-data-store-garbage-collection}
 
 Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. Instructies worden beschreven [hier](/help/sites-administering/data-store-garbage-collection.md).
 
@@ -147,19 +148,19 @@ Als pakketten niet tijdens de upgrade worden geïnstalleerd, worden de bundels i
 
 Als er bundels zijn die niet beginnen, controleer om het even welke ontevreden gebiedsdelen.
 
-Als dit probleem zich voordoet, maar het is gebaseerd op een mislukte pakketinstallatie die ertoe heeft geleid dat bundels niet werden bijgewerkt, worden zij onverenigbaar geacht voor de nieuwe versie. Voor meer informatie over hoe te om dit problemen op te lossen, zie **Pakketten en pakketten kunnen niet worden bijgewerkt** hierboven.
+Als dit probleem zich voordoet, maar het is gebaseerd op een mislukte pakketinstallatie die ertoe heeft geleid dat bundels niet werden bijgewerkt, worden zij onverenigbaar geacht voor de nieuwe versie. Zie voor meer informatie over het oplossen van problemen met dit **Pakketten en pakketten kunnen niet worden bijgewerkt** hierboven.
 
-Het wordt ook aanbevolen de bundellijst van een nieuwe AEM 6.5-instantie te vergelijken met de bijgewerkte versie om de bundels te detecteren die niet zijn bijgewerkt. Hierdoor wordt het bereik vergroot van wat er in de `error.log`.
+Het wordt ook aanbevolen de bundellijst van een nieuwe AEM 6.5-instantie te vergelijken met de bijgewerkte versie om de bundels te detecteren die niet zijn bijgewerkt. Hierdoor wordt het bereik vergroot van wat er moet worden gezocht in de `error.log`.
 
 ### Aangepaste bundels die niet overschakelen op de actieve staat {#custom-bundles-not-switching-to-the-active-state}
 
 Als de aangepaste bundels niet naar de actieve status overschakelen, is het zeer waarschijnlijk dat er code is die geen wijziging-API importeert. Dit zal meestal leiden tot ontevreden afhankelijkheden.
 
-API die is verwijderd, moet worden gemarkeerd als afgekeurd in een van de vorige releases. In dit bericht vindt u mogelijk instructies over een directe migratie van uw code. Adobe is bedoeld voor semantische versioning waar mogelijk, zodat de versies kunnen aangeven dat er wijzigingen zijn opgetreden.
+API die is verwijderd, moet worden gemarkeerd als afgekeurd in een van de vorige releases. In dit bericht vindt u mogelijk instructies over een directe migratie van uw code. Adobe is bedoeld voor semantische versioning waar mogelijk, zodat de versies kunnen aangeven dat de wijzigingen zijn afgebroken.
 
 Het is ook het beste om te controleren of de verandering die het probleem heeft veroorzaakt noodzakelijk was en het terug te draaien als dat niet het geval is. Controleer ook of de versieverhoging van de pakketexport meer dan nodig is, na strikte semantische versiebewerking.
 
-### Gebruikersinterface van onjuist functionerend Platform {#malfunctioning-platform-ui}
+### Gebruikersinterface van platform met storing {#malfunctioning-platform-ui}
 
 Als er bepaalde functionaliteit UI is die niet behoorlijk na de verbetering werkt, zou u eerst douanecontrole van de interface moeten controleren. Sommige structuren zijn mogelijk gewijzigd en de overlay moet mogelijk worden bijgewerkt of is verouderd.
 
@@ -187,7 +188,7 @@ De beste manier om dit te doen is onderaan error.log door van alle berichten te 
 grep -v UnrelatedErrorString
 ```
 
-Sommige foutberichten zijn mogelijk niet direct expliciet. In dit geval kunt u door de context te bekijken waarin de fouten zich voordoen, beter begrijpen waar de fout is gemaakt. U kunt de fout scheiden met:
+Sommige foutberichten zijn mogelijk niet direct explicatief. In dit geval kunt u door de context te bekijken waarin de fouten zich voordoen, beter begrijpen waar de fout is gemaakt. U kunt de fout scheiden met:
 
 * `grep -B` voor het toevoegen van regels vóór de fout;
 

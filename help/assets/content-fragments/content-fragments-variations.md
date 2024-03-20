@@ -4,7 +4,8 @@ description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 4%
@@ -234,14 +235,14 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 
 >[!CAUTION]
 >
-Engels is beschikbaar buiten de box.
+>Engels is beschikbaar buiten de box.
 >
-Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket:
+>Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket:
 >
-* [Frans (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Duits (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiaans (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spaans (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Frans (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Duits (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiaans (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spaans (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. Selecteren **Master** of de vereiste variatie.
@@ -310,7 +311,7 @@ Annotaties:
 
   >[!NOTE]
   >
-  Er is een keuzekiezer beschikbaar als er meerdere annotaties zijn toegepast op één stuk tekst.
+  >Er is een keuzekiezer beschikbaar als er meerdere annotaties zijn toegepast op één stuk tekst.
 
 * Wanneer u de volledige tekst verwijdert waarop de annotatie is toegepast, wordt de annotatie ook verwijderd.
 
@@ -328,13 +329,13 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. De o
 
 >[!CAUTION]
 >
-Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
+>Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
 >
-De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+>De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
 >
-Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
+>Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
 1. Gebruik het pictogram **Asset invoegen** om het zoekdialoogvenster te openen.
@@ -352,10 +353,10 @@ Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/cont
 
    >[!CAUTION]
    >
-   Als u de indeling wijzigt nadat u de indeling als element hebt toegevoegd aan:
+   >Als u de indeling wijzigt nadat u de indeling als element hebt toegevoegd aan:
    >
-   * **Onbewerkte tekst**: het element gaat verloren door het fragment.
-   * **Markering**: het element is niet zichtbaar, maar blijft hier wanneer u terugkeert naar **RTF**.
+   >* **Onbewerkte tekst**: het element gaat verloren door het fragment.
+   >* **Markering**: het element is niet zichtbaar, maar blijft hier wanneer u terugkeert naar **RTF**.
 
 ### Een inhoudsfragment invoegen in uw fragment {#inserting-content-fragment-into-your-fragment}
 
@@ -365,17 +366,17 @@ Ze worden als referentie toegevoegd op de huidige locatie in het fragment.
 
 >[!NOTE]
 >
-Deze optie is beschikbaar als **Tekst met meerdere regels** is geconfigureerd met **Fragmentverwijzing toestaan**.
+>Deze optie is beschikbaar als **Tekst met meerdere regels** is geconfigureerd met **Fragmentverwijzing toestaan**.
 
 >[!CAUTION]
 >
-Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
+>Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
 >
-De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+>De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
 >
-Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
+>Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u het fragment wilt toevoegen.
 1. Gebruik de **Inhoudsfragment invoegen** om het zoekdialoogvenster te openen.
@@ -393,10 +394,10 @@ Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/cont
 
    >[!CAUTION]
    >
-   Als u de opmaak wijzigt nadat u een verwijzing naar een ander fragment hebt toegevoegd, in:
+   >Als u de opmaak wijzigt nadat u een verwijzing naar een ander fragment hebt toegevoegd, in:
    >
-   * **Onbewerkte tekst**: de verwijzing gaat verloren door het fragment.
-   * **Markering**: de verwijzing blijft behouden.
+   >* **Onbewerkte tekst**: de verwijzing gaat verloren door het fragment.
+   >* **Markering**: de verwijzing blijft behouden.
 
 ## Variaties beheren {#managing-variations}
 
@@ -414,11 +415,11 @@ Een variatie maken:
 
    >[!NOTE]
    >
-   Wanneer u een variatie maakt, is dit altijd de **Master** dat wordt gekopieerd, niet de variatie die open is.
+   >Wanneer u een variatie maakt, is dit altijd de **Master** dat wordt gekopieerd, niet de variatie die open is.
 
    >[!NOTE]
    >
-   Wanneer u een variatie maakt, alles **Tags** momenteel toegewezen aan **Master** variatie wordt naar de nieuwe variatie gekopieerd.
+   >Wanneer u een variatie maakt, alles **Tags** momenteel toegewezen aan **Master** variatie wordt naar de nieuwe variatie gekopieerd.
 
 ### Een variatie bewerken {#editing-a-variation}
 
@@ -443,7 +444,7 @@ Een bestaande variatie een andere naam geven:
 
 >[!NOTE]
 >
-Dit is alleen van invloed op de variatie **Titel**.
+>Dit is alleen van invloed op de variatie **Titel**.
 
 ### Een variatie verwijderen {#deleting-a-variation}
 
@@ -457,7 +458,7 @@ Een bestaande wijziging verwijderen:
 
 >[!NOTE]
 >
-U kunt niet verwijderen **Master**.
+>U kunt niet verwijderen **Master**.
 
 ### Synchroniseren met stramien {#synchronizing-with-master}
 
@@ -467,13 +468,13 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 
 >[!CAUTION]
 >
-De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
+>De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
 >
-Alleen het huidige element van de variatie wordt gesynchroniseerd.
+>Alleen het huidige element van de variatie wordt gesynchroniseerd.
 >
-Synchronisatie werkt alleen op de **Tekst met meerdere regels** gegevenstype.
+>Synchronisatie werkt alleen op de **Tekst met meerdere regels** gegevenstype.
 >
-Het overbrengen van wijzigingen *van een variatie naar **master*** is niet beschikbaar als optie.
+>Het overbrengen van wijzigingen *van een variatie naar **master*** is niet beschikbaar als optie.
 
 <!-- needs new screenshot for synchronize effect -->
 

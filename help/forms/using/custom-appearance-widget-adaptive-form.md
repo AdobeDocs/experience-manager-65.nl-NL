@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -118,7 +119,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
 <table>
  <tbody>
   <tr>
-   <td><strong>-functie</strong></td>
+   <td><strong>Functie</strong></td>
    <td><strong>Beschrijving</strong></td>
   </tr>
   <tr>
@@ -217,7 +218,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
 1. Open het gereedschap Eclipse en voer de volgende handelingen uit om het Eclipse-project te importeren:
 
-   1. Selecteer **[!UICONTROL File > Import > Existing Projects into Workspace]**.
+   1. Selecteren **[!UICONTROL File > Import > Existing Projects into Workspace]**.
 
    1. Blader naar de map waarin u het dialoogvenster `archetype:generate` gebruiken.
 

@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -41,7 +42,7 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In de auteursomgeving kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in te gaan in **Tags/trefwoorden** veld.
 
-Toepassen [vooraf gedefinieerde tags](/help/sites-administering/tags.md)in de **Pagina-eigenschappen** het venster gebruiken **Tags** en de **Labels selecteren** venster. Het tabblad **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` als voorvoegsel is voor de taxonomie.
+Toepassen [vooraf gedefinieerde tags](/help/sites-administering/tags.md)in de **Pagina-eigenschappen** het venster gebruiken **Tags** en de **Labels selecteren** venster. De **Standaardlabels** tab is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` voorafgegaan aan de taxonomie.
 
 ![Selecteer het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen te schrappen](assets/chlimage_1-41.png)
 

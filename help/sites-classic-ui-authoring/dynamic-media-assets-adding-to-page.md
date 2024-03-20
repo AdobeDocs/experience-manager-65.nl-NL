@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -25,12 +26,12 @@ U voegt Dynamic Media-elementen rechtstreeks aan de pagina toe als u Adobe Exper
 
 ## Een Dynamic Media-component aan een pagina toevoegen {#adding-a-dynamic-media-component-to-a-page}
 
-Het toevoegen van [!UICONTROL Dynamic Media] of [!UICONTROL Interactive Media] aan een pagina toevoegen is hetzelfde als een component aan een pagina toevoegen. De [!UICONTROL Dynamic Media] en [!UICONTROL Interactive Media] De componenten worden in de volgende secties uitgebreid beschreven.
+De [!UICONTROL Dynamic Media] of [!UICONTROL Interactive Media] aan een pagina toevoegen is hetzelfde als een component aan een pagina toevoegen. De [!UICONTROL Dynamic Media] en [!UICONTROL Interactive Media] De componenten worden in de volgende secties uitgebreid beschreven.
 
 Een Dynamic Media-component/viewer toevoegen aan een pagina:
 
 1. Open in Experience Manager de pagina waaraan u de Dynamic Media-component wilt toevoegen.
-1. Als er geen Dynamic Media-component beschikbaar is, selecteert u de liniaal in het dialoogvenster [!UICONTROL Sidekick] om binnen te gaan **[!UICONTROL Design]** in.
+1. Als er geen Dynamic Media-component beschikbaar is, selecteert u de liniaal in het dialoogvenster [!UICONTROL Sidekick] om binnen te gaan **[!UICONTROL Design]** -modus.
 1. Selecteren **[!UICONTROL Edit]** parsys.
 1. Selecteren **[!UICONTROL Dynamic Media]** zodat u de Dynamic Media-componenten beschikbaar kunt maken.
 
@@ -60,12 +61,11 @@ De Dynamic Media-component is slim. Afhankelijk van het feit of u een afbeelding
 
 >[!NOTE]
 >
->Wanneer u de [!UICONTROL Dynamic Media] en **[!UICONTROL Dynamic Media Settings]** is leeg of u kunt een element niet correct toevoegen, controleer het volgende:
+>Wanneer u het dialoogvenster [!UICONTROL Dynamic Media] en **[!UICONTROL Dynamic Media Settings]** is leeg of u kunt een element niet correct toevoegen, controleer het volgende:
 >
 >* U hebt [Dynamic Media ingeschakeld](/help/assets/config-dynamic.md). Dynamic Media is standaard uitgeschakeld.
 >* De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die zijn geïmporteerd voordat Dynamic Media is ingeschakeld, hebben geen TIFF-bestand met piramide.
 >
-
 
 #### Wanneer u met afbeeldingen werkt {#when-working-with-images}
 
@@ -139,9 +139,9 @@ In Experience Manager 6.2, wanneer u installeert [FP-13480](https://experience.a
 
 Voor meer informatie over veilige video-levering en het gebruik van de `VideoPlayer.ssl` configuratiekenmerk in uw URL-pad, zie [Beveiligde video-levering](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) in de Referentiehandleiding voor viewers. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
 
-### Interactieve mediacomponent {#interactive-media-component}
+### Interactieve media-component {#interactive-media-component}
 
-De interactieve component van Media is voor die activa die interactiviteit op hen zoals hotspots of beeldkaarten hebben. Als u een interactieve afbeelding, interactieve video of carrouselbanner hebt, gebruikt u de opdracht **[!UICONTROL Interactive Media]** component.
+De interactieve component van Media is voor die activa die interactiviteit op hen zoals hotspots of beeldkaarten hebben. Als u een interactieve afbeelding, interactieve video of carrouselbanner hebt, gebruikt u de **[!UICONTROL Interactive Media]** component.
 
 De [!UICONTROL Interactive Media] is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. Bovendien reageert de viewer snel. De grootte van het scherm verandert dus automatisch op basis van de schermgrootte. Alle viewers zijn op HTML5 gebaseerde viewers.
 

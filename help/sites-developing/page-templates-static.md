@@ -1,15 +1,16 @@
 ---
 title: Paginasjablonen - statisch
-description: Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welke componenten binnen het geselecteerde werkingsgebied kunnen worden gebruikt
+description: Een sjabloon wordt gebruikt om een pagina te maken en bepaalt welke componenten binnen het geselecteerde bereik kunnen worden gebruikt
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -98,7 +99,7 @@ Een sjabloon is een knooppunt van het type cq:Template en heeft de volgende eige
 
 Een sjabloon is de basis van een pagina.
 
-Als u een pagina wilt maken, moet de sjabloon worden gekopieerd (node-tree) `/apps/<myapp>/template/<mytemplate>`) op de corresponderende positie in de sitestructuur: dit gebeurt als een pagina wordt gemaakt met de **Websites** tab.
+Als u een pagina wilt maken, moet de sjabloon worden gekopieerd (node-tree) `/apps/<myapp>/template/<mytemplate>`) op de corresponderende positie in de sitestructuur: dit is wat er gebeurt als een pagina wordt gemaakt met de **Websites** tab.
 
 Deze kopieeractie geeft de pagina ook zijn aanvankelijke inhoud (gewoonlijk Top-Level Inhoud slechts) en het bezit die:resourceType, de weg aan de paginacomponent plaatsen die wordt gebruikt om de pagina (alles in de kindknoop jcr:content) terug te geven.
 
@@ -117,10 +118,10 @@ Een malplaatje wordt gecreeerd onder een knoop van type **cq:sjabloon**.
 
 Er kunnen verschillende eigenschappen worden ingesteld, met name:
 
-* **jcr:titel** - titel van de template; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
-* **jcr:beschrijving** - beschrijving van het model; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
+* **jcr:titel** - titel voor de sjabloon; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
+* **jcr:beschrijving** - beschrijving voor de sjabloon; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
 
-Dit knooppunt bevat een knooppunt jcr:content (cq:PageContent) dat wordt gebruikt als basis voor het inhoudsknooppunt van de resulterende pagina&#39;s. deze verwijzingen, gebruikend sling:resourceType, de component die voor het teruggeven van de daadwerkelijke inhoud van een nieuwe pagina moet worden gebruikt.
+Dit knooppunt bevat een knooppunt jcr:content (cq:PageContent) dat wordt gebruikt als basis voor het inhoudsknooppunt van de resulterende pagina&#39;s. Deze node verwijst met sling:resourceType naar de component die moet worden gebruikt voor het weergeven van de daadwerkelijke inhoud van een nieuwe pagina.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -130,7 +131,7 @@ Deze component wordt gebruikt om de structuur en het ontwerp van de inhoud te be
 
 ### De inhoud die door een sjabloon wordt geproduceerd {#the-content-produced-by-a-template}
 
-Sjablonen worden gebruikt om pagina&#39;s van het type te maken `cq:Page` (zoals eerder vermeld, is een pagina een speciaal type component). Elke AEM pagina heeft een gestructureerd knooppunt `jcr:content`. Dit:
+Sjablonen worden gebruikt om tekstpagina&#39;s te maken `cq:Page` (zoals eerder vermeld, is een pagina een speciaal type component). Elke AEM pagina heeft een gestructureerd knooppunt `jcr:content`. Dit:
 
 * is van het type cq:PageContent
 * is een gestructureerd knooppunttype dat een bepaalde content-definition bezit
@@ -145,7 +146,7 @@ AEM wordt bijvoorbeeld geleverd met verschillende sjablonen, waaronder een inhou
 | **Titel** | **Component** | **Locatie** | **Doel** |
 |---|---|---|---|
 | Startpagina | homepage | geometrixx | De sjabloon voor de startpagina van Geometrixx. |
-| Inhoudspagina | contentpagina | geometrixx | De sjabloon voor de inhoudspagina van Geometrixx. |
+| Inhoud pagina | contentpagina | geometrixx | De sjabloon voor de inhoudspagina van Geometrixx. |
 
 #### Standaardsjablonen weergeven {#displaying-default-templates}
 
@@ -156,13 +157,13 @@ Ga als volgt te werk om een lijst met alle sjablonen in de repository weer te ge
 1. Op het tabblad Query
 1. Als **Type**, selecteert u **XPath**.
 
-1. In de **Query** invoerveld, voer de volgende tekenreeks in: //element(&#42;, cq:Sjabloon)
+1. In de **Query** invoerveld, voer de volgende tekenreeks in: //element(&#42;, cq:sjabloon)
 
 1. Klikken **Uitvoeren**. De lijst wordt weergegeven in het vak Resultaat.
 
 Gewoonlijk gebruikt u een bestaande sjabloon en ontwikkelt u een nieuwe sjabloon voor eigen gebruik. Zie [Paginasjablonen ontwikkelen](#developing-page-templates) voor meer informatie .
 
-Als u een bestaande sjabloon wilt inschakelen voor uw website, moet deze worden weergegeven in het dialoogvenster **Pagina maken** een pagina maken onder **Websites** van de **Websites** console, plaats het allowedPaths bezit van de malplaatjeknoop aan: **/content(/.&#42;)?**
+Als u een bestaande sjabloon wilt inschakelen voor uw website, moet deze worden weergegeven in het dialoogvenster **Pagina maken** een pagina maken die direct onder **Websites** van de **Websites** console, plaats het allowedPaths bezit van de malplaatjeknoop aan: **/content(/.&#42;)?**
 
 ## Hoe sjabloonontwerpen worden toegepast {#how-template-designs-are-applied}
 
@@ -170,7 +171,7 @@ Wanneer stijlen in de gebruikersinterface worden gedefinieerd met [Ontwerpmodus]
 
 >[!CAUTION]
 >
->Adobe raadt u alleen aan ontwerpen toe te passen via [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md).
+>Adobe raadt aan alleen ontwerpen toe te passen via [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md).
 >
 >Het wijzigen van ontwerpen in CRXDE Lite is bijvoorbeeld geen goede praktijk en de toepassing van dergelijke ontwerpen kan afwijken van het verwachte gedrag.
 
@@ -221,7 +222,7 @@ In de volgende tabel wordt beschreven hoe AEM een ontwerp kiest.
    <td><code>leaf</code></td>
    <td><p><code>root</code></p> <p><code>branch</code></p> </td>
    <td><code>branch</code></td>
-   <td>Ga terug naar de dichtstbijzijnde match onder in de boom.</td>
+   <td>Ga terug naar de dichtstbijzijnde match onderaan in de boomstructuur.</td>
   </tr>
   <tr>
    <td><code>leaf</code></td>
@@ -277,11 +278,11 @@ Een sjabloon maken op basis van een bestaande sjabloon:
    >
    >De lijst met beschikbare sjablonen is afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven. Zie [Beschikbaarheid sjabloon](#templateavailibility).
 
-1. Wijzig de **jcr:titel** van het nieuwe sjabloonknooppunt om de nieuwe rol ervan te weerspiegelen. U kunt ook de **jcr:beschrijving** in voorkomend geval. Zorg ervoor dat u de sjabloonbeschikbaarheid van de pagina naar wens wijzigt.
+1. Wijzig de **jcr:titel** van het nieuwe sjabloonknooppunt om de nieuwe rol ervan weer te geven. U kunt ook de **jcr:beschrijving** in voorkomend geval. Zorg ervoor dat u de sjabloonbeschikbaarheid van de pagina naar wens wijzigt.
 
    >[!NOTE]
    >
-   >Als u de sjabloon wilt weergeven in het dialoogvenster **Pagina maken** een pagina maken onder **Websites** van de **Websites** console, stelt de `allowedPaths` eigenschap van het sjabloonknooppunt naar: `/content(/.*)?`
+   >Als u de sjabloon wilt weergeven in het dialoogvenster **Pagina maken** een pagina maken die direct onder **Websites** van de **Websites** console, stelt de `allowedPaths` eigenschap van het sjabloonknooppunt naar: `/content(/.*)?`
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 

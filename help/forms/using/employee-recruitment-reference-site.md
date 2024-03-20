@@ -4,9 +4,10 @@ description: Op de AEM Forms-site wordt uitgelegd hoe organisaties AEM Forms-fun
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ We.Finance is een organisatie die kandidaten in staat stelt om een aanvraag voor
 * Interviewproces
 * Verzameling van kandidaatgegevens
 * Kandidaatachtergrondcontrole
-* Aanbiedingen aan geselecteerde kandidaten uitrollen
+* Uitvoeren van aanbiedingen aan geselecteerde kandidaten
 
 >[!NOTE]
 >
@@ -110,7 +111,7 @@ Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.
 
 Gloria, de huurmanager, ontvangt het geshortlist profiel als taak in haar AEM Inbox. Ze bestudeert het en keurt de kandidaat, Sarah Rose, goed voor het interview.
 
-![gloriainbox](assets/gloriainbox.png)
+![glazen](assets/gloriainbox.png)
 
 Gloria&#39;s AEM Inbox
 
@@ -126,7 +127,7 @@ Als Gloria de kandidaat voor een interview goedkeurt, creëert de workflow een t
 
 Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` en meld u aan met jjacobs/password als gebruikersnaam/wachtwoord voor John Jacobs. Open de Kandidaat-profielbeoordelingstaak en maak een shortlist met de aanvrager.
 
-Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` en meld u aan met gebruik van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios. Open de Kandidaat taak van het Overzicht van het Profiel en klik Interview van het Programma.
+Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` en meld u aan met grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios. Open de Kandidaat taak van het Overzicht van het Profiel en klik Interview van het Programma.
 
 ## John Doe plant een interview {#john-doe-schedules-an-interview}
 
@@ -178,11 +179,11 @@ Sarah Rose ontvangt een e-mail met de kennisgeving dat er meer informatie nodig 
 
 Sarah klikt op de koppeling Details verstrekken in de e-mail. Er wordt een formulier weergegeven. Sarah vult de vereiste onderwijs- en werkgelegenheidsdetails op zoals gevraagd door Jan Smit en klikt op Indienen.
 
-![additionalinformation1](assets/additionalinformation1.png)
+![aanvullende informatie1](assets/additionalinformation1.png)
 
 Sarah opent het formulier met aanvullende informatie door op de koppeling in de e-mail te klikken
 
-![additionalinformation2](assets/additionalinformation2.png)
+![aanvullende informatie2](assets/additionalinformation2.png)
 
 Sarah vult aanvullende informatie in zoals gevraagd door Jan Smit en klikt op Verzenden
 

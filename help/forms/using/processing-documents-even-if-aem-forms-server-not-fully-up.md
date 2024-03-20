@@ -1,7 +1,9 @@
 ---
 title: AEM Forms Server begint de documenten te verwerken, zelfs voordat alle services actief zijn.
 description: De Server van AEM Forms begint de documenten zelfs te verwerken alvorens alle diensten op Server JEE en Server OSGi in werking zijn.
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+exl-id: 1a1bc1cb-e0ce-49a0-9b05-ae59f900cfb2
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%

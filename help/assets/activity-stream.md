@@ -5,10 +5,11 @@ contentOwner: AG
 feature: Asset Management
 role: User, Admin
 exl-id: 28dc0aa5-f2be-4e27-b7d8-415569b7ecd4
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 17%
+source-wordcount: '200'
+ht-degree: 7%
 
 ---
 
@@ -21,13 +22,13 @@ De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 * Maken
 * Verwijderen
 * Downloaden (inclusief uitvoeringen)
-* Publicatie
+* Publiceren
 * Publiceren ongedaan maken
 * Goedkeuren
 * Afwijzen
 * Verplaatsen
 
-De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. Bovendien wordt de tijdlijnactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in gecontroleerd [!DNL Experience Manager] via [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) of [Experience Manager-bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+De activiteitenlogboeken die in de tijdlijn worden weergegeven, worden opgehaald van de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar de logboekdossiers worden opgeslagen. Bovendien wordt de tijdlijnactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in gecontroleerd [!DNL Experience Manager] via [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) of [Experience Manager-bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >

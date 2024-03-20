@@ -5,10 +5,11 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '3677'
-ht-degree: 40%
+source-wordcount: '3524'
+ht-degree: 38%
 
 ---
 
@@ -18,7 +19,7 @@ SEO (Search Engine Optimization, optimalisering van zoekprogramma&#39;s) is een 
 
 In dit document worden eerst enkele [Best practices voor SEO](#seo-best-practices) en aanbevelingen voor een AEM uitvoering. Vervolgens wordt in dit document dieper ingegaan op enkele van de meer [complexe implementatiestappen](#aem-configurations) die in de eerste sectie aan bod komen.
 
-## Best practices voor SEO {#seo-best-practices}
+## SEO Best practices {#seo-best-practices}
 
 In deze sectie worden enkele algemene best practices voor SEO beschreven.
 
@@ -96,11 +97,11 @@ Bij serverconfiguratie kunt u de volgende stappen uitvoeren om ervoor te zorgen 
 * Neem een favicon op voor uw site.
 * Implementeer een XML-sitemap om het voor zoekprogramma&#39;s eenvoudiger te maken om door uw inhoud te kruipen. Neem een mobiele sitemap op voor mobiele en/of responsieve sites.
 
-## AEM-configuraties {#aem-configurations}
+## Configuraties AEM {#aem-configurations}
 
 Deze sectie beschrijft de implementatiestappen om AEM met de volgende aanbevelingen te vormen SEO.
 
-### Sling-selectors gebruiken {#using-sling-selectors}
+### Selectors voor schuiven gebruiken {#using-sling-selectors}
 
 Eerder, was het gebruiken van vraagparameters de erkende praktijk toen het bouwen van een toepassing van het ondernemingsWeb.
 
@@ -119,7 +120,7 @@ AEM biedt ons twee opties bij het schrijven van servlets:
 
 In de volgende voorbeelden ziet u hoe u servlets kunt registreren die zowel deze patronen als het voordeel volgen dat wordt opgedaan door het gebruik van Sling servlets.
 
-#### Bin-servlets (één niveau omlaag) {#bin-servlets-one-level-down}
+#### Bin servlets (één niveau omlaag) {#bin-servlets-one-level-down}
 
 **Bin**-servlets volgen het patroon dat vele ontwikkelaars kennen via J2EE-programmering. De servlet wordt geregistreerd op een specifiek pad dat, in AEM, gewoonlijk onder `/bin`en u extraheert de benodigde aanvraagparameters uit de queryreeks.
 
@@ -146,7 +147,7 @@ Met deze aanpak moeten enkele punten in overweging worden genomen:
 * Als u deze servlet wilt beveiligen, implementeert u uw eigen aangepaste beveiligingslogica in de servlet.
 * Dispatcher moet (zorgvuldig) worden gevormd om bloot te stellen `/bin/myApp/myServlet`. Als `/bin` gewoon beschikbaar wordt gemaakt, is toegang mogelijk tot bepaalde servlets die niet toegankelijk mogen zijn voor bezoekers van de site.
 
-#### Sling-servlets (één niveau omlaag) {#sling-servlets-one-level-down}
+#### Serlets verkopen (één niveau omlaag) {#sling-servlets-one-level-down}
 
 Met **Sling**-servlets kunt u uw servlet op de omgekeerde manier registreren. In plaats van een servlet te richten en de inhoud te specificeren u servlet zou willen teruggeven gebaseerd op de vraagparameters, richt u de inhoud die u wilt. En u geeft de servlet op die de inhoud moet renderen op basis van selectors voor bloeden.
 
@@ -179,7 +180,7 @@ In AEM worden al uw webpagina&#39;s opgeslagen onder `/content/my-brand/my-conte
 
 In deze sectie worden de opties besproken die in AEM beschikbaar zijn voor het beheer van deze URL&#39;s en het op een beter leesbare en meer SEO-vriendelijke manier presenteren van deze URL&#39;s aan gebruikers.
 
-#### Vanity-URL&#39;s {#vanity-urls}
+#### Vanity URL&#39;s {#vanity-urls}
 
 Als een auteur wil dat een pagina voor promotiedoeleinden vanaf een tweede locatie toegankelijk is, kunnen de vanity-URL&#39;s van AEM, die per pagina worden gedefinieerd, nuttig zijn. Als u een vanity-URL voor een pagina wilt toevoegen, gaat u naar deze URL in de **Sites**-console en bewerkt u de pagina-eigenschappen. Onder aan het tabblad **Basic** ziet u een sectie waar vanity-URL&#39;s kunnen worden toegevoegd. Houd er rekening mee dat als de pagina toegankelijk is via meer dan één URL, de SEO-waarde van de pagina wordt gefragmenteerd. Daarom moet een canonieke URL-tag aan de pagina worden toegevoegd om dit probleem te voorkomen.
 
@@ -285,7 +286,7 @@ Er is echter ook een eenvoudigere manier om deze kwestie te beheren:
    }
    ```
 
-#### Apache HTTP Server mod_rewrite {#apache-http-server-mod-rewrite}
+#### Mod Apache HTTP Server_rewrite {#apache-http-server-mod-rewrite}
 
 Tot nu toe hebt u toewijzingen geïmplementeerd samen met de logica in uw componenten om deze toewijzingen te gebruiken wanneer u URL&#39;s op pagina&#39;s uitvoert.
 
@@ -302,7 +303,7 @@ Om deze regels te implementeren, kunt u `RewriteRule`-elementen toevoegen onder 
 </VirtualHost>
 ```
 
-### Canonieke URL-tags {#canonical-url-tags}
+### Canonical URL tags {#canonical-url-tags}
 
 Canonieke URL-tags zijn koppelingstags die in de kop van een HTML-document worden geplaatst om te verduidelijken hoe zoekmachines een pagina moeten behandelen terwijl de content wordt geïndexeerd. Het voordeel dat ze bieden, is ervoor te zorgen dat (verschillende versies van) een pagina als hetzelfde worden geïndexeerd, zelfs als de URL naar de pagina verschillen kan bevatten.
 
@@ -339,7 +340,7 @@ RewriteCond $1 [A-Z]
 RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 ```
 
-### robots.txt implementeren om ontwikkelomgevingen te beschermen {#implementing-robots-txt-to-protect-development-environments}
+### Robots.txt implementeren om ontwikkelomgevingen te beschermen {#implementing-robots-txt-to-protect-development-environments}
 
 Zoekmachines *zouden moeten* controleren of er een bestand `robots.txt` aanwezig is in de hoofdmap van de site voordat uw site wordt verkend. Hoewel dit bestand wordt gerespecteerd door grote zoekprogramma&#39;s zoals Google, Yahoo of Bing, hebben sommige buitenlandse zoekprogramma&#39;s dat niet.
 
@@ -470,7 +471,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 Bovendien kan de functionaliteit die voor de sitemaps van XML wordt uitgevoerd ook voor verschillende gebruiksgevallen worden gebruikt, bijvoorbeeld om de canonieke verbinding of de taalalternatieven aan het hoofd van een pagina toe te voegen. Zie [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface voor meer informatie.
 
-### 301-omleidingen maken voor verouderde URL&#39;s {#creating-redirects-for-legacy-urls}
+### 301 omleidingen maken voor verouderde URL&#39;s {#creating-redirects-for-legacy-urls}
 
 Wanneer u een site met een nieuwe structuur start, is het om twee redenen belangrijk om 301-omleidingen te implementeren en te testen in Apache HTTP Server:
 

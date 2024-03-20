@@ -7,9 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -31,9 +32,9 @@ De configuraties ExactTarget kunnen door middel van de Diensten van de Wolk of H
 
 ### Het vormen ExactTarget door middel van Cloudservices {#configuring-exacttarget-via-cloudservices}
 
-Om een configuratie ExactTarget in Cloud Services te creëren:
+Om een configuratie ExactTarget in Cloud Servicen tot stand te brengen:
 
-1. Klik op de welkomstpagina op **Cloud Services**. (Of rechtstreeks toegang tot `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Klik op de welkomstpagina op **Cloud Servicen**. (Of rechtstreeks toegang tot `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Klikken **ExactTarget** en vervolgens **Configureren**. Het ExactTarget configuratievenster opent.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -53,7 +54,7 @@ Om een configuratie ExactTarget in Cloud Services te creëren:
 
 1. AEM beschikt nu over een functie voor gegevensextensie. U kunt ExactTarget-gegevensextensiekolommen importeren. Het kan worden gevormd door &quot;+&quot;teken te klikken dat behalve met succes tot stand gebrachte configuratie ExactTarget verschijnt. U kunt een van de bestaande gegevensextensies selecteren in de vervolgkeuzelijst. Voor meer informatie over hoe te om gegevensuitbreidingen te vormen, zie [ExactTarget-documentatie](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
 
-   De geïmporteerde kolommen voor gegevensextensies kunnen later worden gebruikt via de **Tekst en personalisatie** component.
+   De ingevoerde kolommen van de gegevensuitbreiding kunnen later door **Tekst en personalisatie** component.
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -62,17 +63,17 @@ Om een configuratie ExactTarget in Cloud Services te creëren:
 Om een configuratie ExactTarget in Hulpmiddelen tot stand te brengen:
 
 1. Klik op de welkomstpagina op **Gereedschappen**. Of navigeer daar rechtstreeks door naar `https://<hostname>:<port>/misadmin#/etc`.
-1. Selecteren **Gereedschappen** vervolgens **Cloud Services-configuraties,** dan **ExactTarget**.
+1. Selecteren **Gereedschappen** vervolgens **configuraties van Cloud Servicen,** dan **ExactTarget**.
 1. Klikken **Nieuw** om het venster **Pagina maken **te openen.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 
 1. Voer de **Titel** en eventueel de **Naam** en klik op **Maken**.
-1. Ga de configuratieinformatie in zoals die in stap 4 in de vorige procedure wordt geschetst. Volg die procedure om het vormen ExactTarget te beëindigen.
+1. Voer de configuratiegegevens in zoals beschreven in stap 4 van de vorige procedure. Volg die procedure om klaar te zijn met het vormen ExactTarget.
 
 ### Meerdere configuraties toevoegen {#adding-multiple-configurations}
 
 Meerdere configuraties toevoegen:
 
-1. Klik op de welkomstpagina op **Cloud Services** en klik op **ExactTarget**. Klikken **Configuraties tonen** die verschijnt als één of meerdere configuraties ExactTarget beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
+1. Klik op de welkomstpagina op **Cloud Servicen** en klik op **ExactTarget**. Klikken **Configuraties tonen** die verschijnt als één of meerdere configuraties ExactTarget beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
 1. Klik op de knop **+** ondertekenen naast Beschikbare configuraties. Hierdoor wordt het **Configuraties maken** venster. Volg de vorige configuratieprocedure om een configuratie tot stand te brengen.

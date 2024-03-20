@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 60%
+source-wordcount: '983'
+ht-degree: 58%
 
 ---
 
@@ -92,7 +93,7 @@ Content die is geactiveerd, wordt in een pakket geplaatst en naar de replicatiew
 
 Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren naar de auteursomgeving, pollt een replicatielistener in de auteuromgeving de publicatieomgeving en haalt u deze inhoud op uit de omgekeerde replicatieoutbox van de publicatieomgeving.
 
-#### Publicatie {#publish}
+#### Publiceren {#publish}
 
 Een publicatieomgeving bevindt zich in de gedemilitariseerde zone (DMZ). Dit is de omgeving waarin bezoekers toegang krijgen tot uw inhoud (bijvoorbeeld via een website of in de vorm van een mobiele toepassing) en ermee communiceren, of het nu gaat om een openbare of intranetfunctie. Een publicatieomgeving:
 
@@ -121,7 +122,7 @@ AEM Projecten activeren vaak de implementatie van code:
 
 ![chlimage_1](assets/chlimage_1.png)
 
-## Content verplaatsen {#content-movement}
+## Inhoud verplaatsen {#content-movement}
 
 Content die is bedoeld voor productie, moet **altijd** worden geschreven op de productieauteurinstantie.
 

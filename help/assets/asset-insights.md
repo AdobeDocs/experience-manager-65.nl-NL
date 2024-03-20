@@ -1,14 +1,15 @@
 ---
 title: Assets Insights
-description: Leer hoe u met behulp van Assets Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
+description: Leer hoe u met de functie Assets Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van de Adobe.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '734'
 ht-degree: 2%
 
 ---
@@ -20,13 +21,13 @@ ht-degree: 2%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
-Met de Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
+Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van de Adobe. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
 
 [!DNL Assets] Met deze inzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keren dat een afbeelding wordt beoordeeld, geklikt en de afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
 Voor [!DNL Assets] Met de inzichten waarmee u gebruiksstatistieken voor afbeeldingen van een website kunt vastleggen, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van Adobe Analytics te halen. Zie voor meer informatie [Elementengegevens configureren](/help/assets/configure-asset-insights.md). Aanschaf als u deze functie wilt gebruiken in een installatie op locatie [!DNL Adobe Analytics] licentie afzonderlijk. Klanten op [!DNL Managed Services] ontvangen [!DNL Analytics] licentie gebundeld met [!DNL Experience Manager]. Zie [Managed Services-productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van Adobe Analytics te halen. Zie voor meer informatie [Elementengegevens configureren](/help/assets/configure-asset-insights.md). Als u deze functie wilt gebruiken in een installatie op locatie, kunt u [!DNL Adobe Analytics] licentie afzonderlijk. Klanten op [!DNL Managed Services] ontvangen [!DNL Analytics] licentie gebundeld met [!DNL Experience Manager]. Zie [Managed Services-productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -57,7 +58,7 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
    >
    >Omdat de functie van de Inzichten van Activa typisch de gegevens van Oplossingen van Adobe Analytics op een periodieke manier haalt, kan de sectie van Oplossingen niet de meest recente gegevens tonen. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa in werking stellen om de gegevens van de Analyse terug te winnen.
 
-1. Als u de prestatiestatistieken voor het actief grafisch wilt weergeven over een tijdsperiode, selecteert u de periode in het dialoogvenster **[!UICONTROL Performance Statistics]** sectie. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
+1. Als u de prestatiestatistieken voor het actief grafisch wilt weergeven over een bepaalde periode, selecteert u de periode in het dialoogvenster **[!UICONTROL Performance Statistics]** sectie. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -65,7 +66,7 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
    >
    >In tegenstelling tot de gegevens in de sectie van Oplossingen, toont de sectie van de Statistieken van Prestaties de meest recente gegevens.
 
-1. Klik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur. Ga voor meer informatie over het opnemen van uw insluitcode in externe webpagina&#39;s naar [Paginanummering gebruiken en code insluiten in webpagina&#39;s](/help/assets/use-page-tracker.md).
+1. Als u de insluitcode wilt verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen, klikt u op **[!UICONTROL Get Embed Code]** onder de elementminiatuur. Voor meer informatie over het opnemen van uw insluitcode in externe webpagina&#39;s raadpleegt u [Paginanummering gebruiken en code insluiten in webpagina&#39;s](/help/assets/use-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 

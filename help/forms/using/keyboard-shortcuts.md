@@ -6,7 +6,8 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -46,10 +47,10 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 >[!NOTE]
 >
->Multi-select op een desktopapparaat:
+Multi-select op een desktopapparaat:
 >
->* Windows: Ctrl + klikken op de vereiste componenten.
->* macOS: Command + klikken op de vereiste componenten.
+* Windows: Ctrl + klikken op de vereiste componenten.
+* macOS: Command + klikken op de vereiste componenten.
 >
 
 ## Thema-editor  {#themeeditor}
@@ -64,7 +65,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 >[!NOTE]
 >
->Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets op macOS.
+Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets op macOS.
 
 ## Content Browser  {#contentbrowser}
 

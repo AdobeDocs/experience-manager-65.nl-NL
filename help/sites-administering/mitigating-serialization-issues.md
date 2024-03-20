@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -73,9 +74,9 @@ De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd do
 
    >[!NOTE]
    >
-   U kunt de configuratiepagina ook direct bereiken door tot URL toegang te hebben bij:
+   >U kunt de configuratiepagina ook direct bereiken door tot URL toegang te hebben bij:
    >
-   * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+   >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 Deze configuratie bevat de lijst van gewenste personen, de lijst van gewezen personen, en deserialization registreren.
 
@@ -107,7 +108,7 @@ Voor meer informatie over het oplossen van problemenkwesties met de agent, zie [
 
 >[!NOTE]
 >
-Als u `org.apache.commons.collections.functors` volgens de lijst van gewenste personen mislukt de gezondheidscontrole altijd .
+>Als u `org.apache.commons.collections.functors` volgens de lijst van gewenste personen mislukt de gezondheidscontrole altijd .
 
 ## Fouten afhandelen met laden van dynamische agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -123,11 +124,11 @@ Ga als volgt te werk om de agent handmatig te laden:
 
    >[!NOTE]
    >
-   Vereist dat u ook de optie -nofork CQ/AEM gebruikt, samen met de juiste JVM-geheugeninstellingen, omdat de agent niet is ingeschakeld op een geforceerde JVM.
+   >Vereist dat u ook de optie -nofork CQ/AEM gebruikt, samen met de juiste JVM-geheugeninstellingen, omdat de agent niet is ingeschakeld op een geforceerde JVM.
 
    >[!NOTE]
    >
-   De distributie van de Adobe van de agent NotSoSerial kan in worden gevonden `crx-quickstart/opt/notsoserial/` van de AEM installatie.
+   >De distributie van de Adobe van de agent NotSoSerial kan in worden gevonden `crx-quickstart/opt/notsoserial/` van de AEM installatie.
 
 1. De JVM stoppen en opnieuw starten;
 

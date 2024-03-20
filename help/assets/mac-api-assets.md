@@ -3,12 +3,13 @@ title: "[!DNL Assets] HTTP-API."
 description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1763'
 ht-degree: 0%
 
 ---
@@ -37,7 +38,7 @@ Na de [!UICONTROL Off Time], een actief en de uitleveringen ervan niet beschikba
 >
 >[HTTP API werkt de eigenschappen van metagegevens bij](#update-asset-metadata) in de `jcr` naamruimte. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van de metagegevens in de `dc` naamruimte.
 
-## Contentfragmenten {#content-fragments}
+## Inhoudsfragmenten {#content-fragments}
 
 A [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op het verwerken van inhoudsfragmenten.
 
@@ -106,8 +107,8 @@ De [!DNL Assets] HTTP API bevat de volgende functies:
 
 **Vereisten**
 
-* Ga naar `https://[aem_server]:[port]/system/console/configMgr`.
-* Ga naar **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Toegang `https://[aem_server]:[port]/system/console/configMgr`.
+* Navigeren naar **[!UICONTROL Adobe Granite CSRF Filter]**.
 * Controleer of de eigenschap **[!UICONTROL Filter Methods]** omvat: `POST`, `PUT`, `DELETE`.
 
 ## Een mappenlijst ophalen {#retrieve-a-folder-listing}

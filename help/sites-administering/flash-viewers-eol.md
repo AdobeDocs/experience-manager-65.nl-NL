@@ -1,21 +1,22 @@
 ---
-title: Kennisgeving over de gebruiksduur van Flash-viewers
-description: Met ingang van 31 januari 2017 is de ondersteuning voor het Flash-viewerplatform officieel beëindigd door Adobe Dynamic Media Claasic.
+title: Eindbericht voor Flash Viewers
+description: Met ingang van 31 januari 2017 heeft de Adobe Dynamic Media Claasic officieel de ondersteuning voor het viewerplatform voor Flash beëindigd.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: bb87898d-252e-4907-af03-11021d0d57fe
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '38'
-ht-degree: 21%
+ht-degree: 0%
 
 ---
 
-# Kennisgeving over de gebruiksduur van Flash-viewers{#flash-viewers-end-of-life-notice}
+# Eindbericht voor Flash Viewers{#flash-viewers-end-of-life-notice}
 
-*Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (voorheen Scene7) officieel de ondersteuning voor het Flash-viewerplatform beëindigd.*
+*Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (voorheen Scene7) officieel de ondersteuning voor het viewerplatform voor Flash beëindigd.*
 
 <!-- *For more information about this important change, see the following FAQ website:*
 

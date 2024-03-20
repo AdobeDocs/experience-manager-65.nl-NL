@@ -9,9 +9,10 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '4636'
+source-wordcount: '4594'
 ht-degree: 2%
 
 ---
@@ -50,7 +51,7 @@ Zo kunt u snel aan de slag met carrouselbanners:
 
 1. [Hotspot- en afbeeldingskaartvariabelen identificeren](#identifying-hotspot-and-image-map-variables) (alleen voor klanten die Experience Manager Assets + Dynamic Media gebruiken)
 
-   Begin door dynamische variabelen te identificeren die door de bestaande implementatie van Quickview worden gebruikt zodat u hotspots en beeldkaartgegevens behoorlijk tijdens het proces van de creatie van de carrouselbanner in de Middelen van Adobe Experience Manager kunt ingaan.
+   Begin door dynamische variabelen te identificeren die door de bestaande implementatie van QuickView worden gebruikt zodat u hotspots en beeldkaartgegevens behoorlijk tijdens het proces van de de bannerverwezenlijking van de carrousel in Adobe Experience Manager Assets kunt ingaan.
 
    >[!NOTE]
    >
@@ -257,11 +258,11 @@ Zie [(Optioneel) Voorvertoning van carrouselbanners bekijken](#optional-previewi
 >
 >Wanneer u hotspots toevoegt aan een afbeelding in een [Interactieve afbeelding](/help/assets/interactive-images.md) Voor een carrouselbanner wordt de hotspot-informatie opgeslagen op dezelfde metagegevenslocatie. Deze locatie is relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
 >
-Houd er echter rekening mee dat carrouselbanners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten; een interactieve afbeelding niet. Onthoud deze regel als u een interactieve afbeeldings- of carrouselbanner wilt maken die dezelfde afbeelding gebruikt. Overweeg interactieve afbeeldingen en carrouselbanners te maken met afzonderlijke kopieën van dezelfde afbeelding.
+>Houd er echter rekening mee dat carrouselbanners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten; een interactieve afbeelding niet. Onthoud deze regel als u een interactieve afbeeldings- of carrouselbanner wilt maken die dezelfde afbeelding gebruikt. Overweeg interactieve afbeeldingen en carrouselbanners te maken met afzonderlijke kopieën van dezelfde afbeelding.
 
 >[!NOTE]
 >
-Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
+>Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
 
 Zie ook [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md).
 
@@ -283,7 +284,7 @@ Zie ook [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md).
 1. Typ in het tekstveld Naam de naam van de hotspot of de afbeelding met hyperlinks. Deze naam wordt ook weergegeven in het dialoogvenster **[!UICONTROL Maps & Hotspot]** vervolgkeuzelijst. Als u een naam opgeeft, kunt u de hotspot of de afbeelding met hyperlinks gemakkelijk herkennen als u deze later wilt wijzigen.
 1. Voer een van de volgende handelingen uit in de **[!UICONTROL Actions]** tab:
 
-   * Selecteer **[!UICONTROL Quickview]**.
+   * Selecteren **[!UICONTROL Quickview]**.
 
       * Als u een Experience Manager Sites- en e-commerceklanten bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product dat u wilt gebruiken en selecteer vervolgens het vinkje in de rechterbovenhoek van de pagina zodat u kunt terugkeren naar de editor voor carrouselbanners.
       * Als u geen klant van Experience Manager Sites of van de Handel bent
@@ -294,12 +295,12 @@ Zie ook [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md).
 
          * Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie .
 
-   * Selecteer **[!UICONTROL Hyperlink]**.
+   * Selecteren **[!UICONTROL Hyperlink]**.
 
       * Als u een Experience Manager Sites-klant bent, selecteert u het pictogram Sitekiezer (map) om naar een URL te navigeren.
         >[!NOTE]
         >
-        De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
+        >De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
 
       * Als u een zelfstandige klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.
 
@@ -307,7 +308,7 @@ Zie ook [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md).
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie .
 
-   * Selecteer **[!UICONTROL Experience Fragment]**.
+   * Selecteren **[!UICONTROL Experience Fragment]**.
 
       * Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken en selecteer **[!UICONTROL Select]** in de rechterbovenhoek van de pagina, zodat u kunt terugkeren naar de pagina voor hotspotbeheer.
 Zie [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md).
@@ -316,15 +317,15 @@ Zie [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md).
 
         >[!NOTE]
         >
-        De gereedschappen voor het delen van sociale media in carrouselbanner worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment.
+        >De gereedschappen voor het delen van sociale media in carrouselbanner worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment.
         >
-        U kunt dit probleem omzeilen door viewervoorinstellingen te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
+        >U kunt dit probleem omzeilen door viewervoorinstellingen te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    U kunt ook een voorvertoning weergeven van de wijze waarop de carrouselbanner wordt weergegeven. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 1. Publiceer de carrouselset. Bij het publiceren wordt de insluitcode of URL gemaakt die u op uw websitepagina kunt gebruiken. Als u een Experience Manager Sites-klant bent, kunt u de carrousel rechtstreeks aan uw webpagina toevoegen.
 
    Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).
@@ -335,7 +336,7 @@ Zie [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
-Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
+>Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
 
 U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 
@@ -368,7 +369,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 
    >[!NOTE]
    >
-   Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
+   >Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
    >
    >
 
@@ -386,12 +387,12 @@ U kunt een voorvertoning van carrouselbanners weergeven via de Carousel Editor (
 **Een voorvertoning weergeven van carrouselbanners:**
 
 1. In **[!UICONTROL Assets]** navigeer naar een bestaande carrouselbanner die u hebt gemaakt en selecteer deze om deze te openen.
-1. Selecteer **[!UICONTROL Edit]**.
+1. Selecteren **[!UICONTROL Edit]**.
 1. Selecteer in de lijst met voorinstellingen voor viewers in de rechterhoek van de werkbalk een viewer voor een voorvertoning van de carrouselbanner.
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Selecteer **[!UICONTROL Preview]**.
+1. Selecteren **[!UICONTROL Preview]**.
 1. Selecteer de hotspots of de afbeeldingen met hyperlinks in de afbeelding, zodat u de bijbehorende handelingen kunt testen.
 
 **Een voorvertoning van carrouselbanners weergeven in de lijst Viewers:**
@@ -407,9 +408,9 @@ Publiceer de carrousel zodat u deze kunt gebruiken. Als u een Carousel-set publi
 
 >[!NOTE]
 >
-Als u een bestaande interactieve afbeelding met hotspots voor uw carrouselbanner gebruikt, moet u de interactieve afbeelding afzonderlijk publiceren nadat u de carrouselbanner hebt gepubliceerd.
+>Als u een bestaande interactieve afbeelding met hotspots voor uw carrouselbanner gebruikt, moet u de interactieve afbeelding afzonderlijk publiceren nadat u de carrouselbanner hebt gepubliceerd.
 >
-Als u een reeds gepubliceerde interactieve afbeelding wijzigt die u in een carrouselbanner gebruikt, moet u de interactieve afbeelding publiceren voordat deze wijzigingen worden weerspiegeld in de carrouselbanner.
+>Als u een reeds gepubliceerde interactieve afbeelding wijzigt die u in een carrouselbanner gebruikt, moet u de interactieve afbeelding publiceren voordat deze wijzigingen worden weerspiegeld in de carrouselbanner.
 
 Zie [Dynamic Media-middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor informatie over het publiceren van carrouselbanners.
 
@@ -419,7 +420,7 @@ Nadat u bannerafbeeldingen hebt geüpload om een carrousel te maken, hotspots en
 
 >[!NOTE]
 >
-Als u een Experience Manager Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
+>Als u een Experience Manager Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Als u echter een zelfstandige Experience Manager bent, kunt u de carrouselbanner handmatig toevoegen aan de bestemmingspagina van uw website, zoals beschreven in deze sectie.
 
@@ -433,7 +434,7 @@ De gekopieerde insluitcode reageert, zodat deze automatisch in het insluitingsge
 
 >[!NOTE]
 >
-Deze stap is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
+>Deze stap is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
 
 De laatste stap in dit proces is het integreren van de carrouselbanner met een bestaande implementatie van QuickView op uw website. Elke implementatie van QuickView is uniek en een specifieke benadering is nodig die de hulp van een front-end IT persoon impliceert.
 

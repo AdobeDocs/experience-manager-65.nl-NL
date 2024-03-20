@@ -5,16 +5,17 @@ contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 # Integreren [!DNL Assets] met activiteitsstroom {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] gebruikers voeren veel handelingen uit, zoals het maken, uploaden en verwijderen van elementen. Deze acties kunnen worden opgenomen zodat u een geschiedenis kunt verstrekken van wat door een gebruiker is gedaan. In deze sectie worden de opnamemogelijkheden van [!DNL Experience Manager] en hoe te vormen [!DNL Experience Manager] om specifieke gebeurtenissen op te nemen.
+[!DNL Adobe Experience Manager Assets] gebruikers voeren veel handelingen uit, zoals het maken, uploaden en verwijderen van elementen. Deze acties kunnen worden opgenomen zodat u een geschiedenis kunt verstrekken van wat door een gebruiker is gedaan. In deze sectie worden de opnamemogelijkheden van [!DNL Experience Manager] en configureren [!DNL Experience Manager] om specifieke gebeurtenissen op te nemen.
 
 ## Prestatieoverwegingen en standaardgedrag {#performance-considerations-and-default-behavior}
 
@@ -52,7 +53,7 @@ De [Webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 
 1. Controleren **[!UICONTROL Enables this service]**.
 
-1. Controleren welke **[!UICONTROL Event Types]** die u in de stroom van de gebruikersactiviteit wilt worden geregistreerd.
+1. Controleren welke **[!UICONTROL Event Types]** die u wilt opnemen in de gebruikersactiviteitsstroom.
 
 1. Klik op **[!UICONTROL Save]**.
 

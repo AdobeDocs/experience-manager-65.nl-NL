@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 20%
+source-wordcount: '1964'
+ht-degree: 18%
 
 ---
 
@@ -59,7 +60,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
 
    **[!UICONTROL Service URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Bijvoorbeeld, `https://smartcontent.adobe.io/apac`. U kunt `na`, `emea`, of `apac` als de gebieden waar uw Experience Manager auteur-instantie wordt gehost.
+   Bijvoorbeeld: `https://smartcontent.adobe.io/apac`. U kunt `na`, `emea`, of `apac` als de gebieden waar uw Experience Manager auteur-instantie wordt gehost.
 
    >[!NOTE]
    >
@@ -88,11 +89,11 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
 
 #### Opnieuw configureren wanneer een certificaat verloopt {#certrenew}
 
-Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een verlopen certificaat niet verlengen. Voer de volgende stappen uit om een certificaat toe te voegen.
+Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een verlopen certificaat niet vernieuwen. Voer de volgende stappen uit om een certificaat toe te voegen.
 
 1. Meld u als beheerder aan bij uw [!DNL Experience Manager]-implementatie. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
-1. Zoek en klik op **[!UICONTROL dam-update-service]**-gebruiker. Klik op het tabblad **[!UICONTROL Keystore]**. 
+1. Zoek en klik op **[!UICONTROL dam-update-service]**-gebruiker. Klikken **[!UICONTROL Keystore]** tab.
 
 1. Verwijder het bestaande **[!UICONTROL similaritysearch]**-sleutelarchief met het verlopen certificaat. Klik op **[!UICONTROL Save & Close]**.
 
@@ -123,7 +124,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 1. Klik op **[!UICONTROL Next]**.
 
-1. Ga naar de pagina **[!UICONTROL Select product profiles]** en selecteer **[!UICONTROL Smart Content Services]**. Klik op **[!UICONTROL Save configured API]**.
+1. Op de **[!UICONTROL Select product profiles]** pagina, selecteert u **[!UICONTROL Smart Content Services]**. Klik op **[!UICONTROL Save configured API]**.
 
    De pagina die verschijnt biedt meer informatie over de configuratie. Laat deze pagina open om deze waarden te kopiëren en toe te voegen in [!UICONTROL Assets Smart Tagging Service Settings] van cloudconfiguratie in [!DNL Experience Manager] slimme tags configureren.
 
@@ -157,7 +158,7 @@ Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de conf
 
 1. Toegang tot uw [!DNL Experience Manager] server op `https://[aem_server]:[port]`.
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** om de OSGi-console te openen. Klik op **[!UICONTROL Main]>[!UICONTROL JMX]**.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** om de OSGi-console te openen. Klikken **[!UICONTROL Main]>[!UICONTROL JMX]**.
 
 1. Klik op `com.day.cq.dam.similaritysearch.internal.impl`. Wordt geopend **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
 
@@ -167,7 +168,7 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
 ### Slimme tags toepassen inschakelen in het dialoogvenster [!UICONTROL DAM Update Asset] workflow (optioneel) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. Ga in [!DNL Experience Manager] naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In [!DNL Experience Manager], ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
 1. Selecteer op de pagina **[!UICONTROL Workflow Models]** het **[!UICONTROL DAM Update Asset]**-workflowmodel.
 
@@ -200,7 +201,7 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
    *Afbeelding: Configureer de DAM Update Asset-workflow om een stap voor slimme tags toe te voegen en selecteer Slim label negeren.*
 
-1. Klik op **[!UICONTROL OK]** om de processtap te sluiten en sla de workflow op.
+1. Klikken **[!UICONTROL OK]** om de processtap te sluiten en vervolgens de workflow op te slaan.
 
 ## De Smart Content Service trainen {#training-the-smart-content-service}
 

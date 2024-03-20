@@ -2,9 +2,10 @@
 title: Beveiliging
 description: De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase. Adobe raadt
 
 ## Aanvraagsessie gebruiken {#use-request-session}
 
-Na het beginsel van minste voorrecht, adviseert Adobe dat elke bewaarplaatstoegang door de zitting te gebruiken verbindend aan het gebruikersverzoek en behoorlijk toegangsbeheer wordt gedaan.
+Na het beginsel van minste voorrecht, adviseert de Adobe dat elke bewaarplaatstoegang wordt gedaan door de zitting te gebruiken verbindend aan het gebruikersverzoek en behoorlijk toegangsbeheer.
 
 ## Protect tegen XSS (Cross-Site Scripting) {#protect-against-cross-site-scripting-xss}
 
@@ -27,11 +28,11 @@ Het door AEM geboden XSS-beveiligingsmechanisme is gebaseerd op [AntiSamy Javaâ„
 
 `/libs/cq/xssprotection/config.xml`
 
-Het is belangrijk dat u deze configuratie aan uw eigen veiligheidsbehoeften aanpast door het configuratiedossier te bedekken. De ambtenaar [AntiSamy-documentatie](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) verstrekt u van alle informatie u uw veiligheidsvereisten moet uitvoeren.
+Het is belangrijk dat u deze configuratie aanpast aan uw eigen veiligheidsbehoeften door het configuratiedossier te bedekken. De ambtenaar [AntiSamy-documentatie](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) verstrekt u van alle informatie u uw veiligheidsvereisten moet uitvoeren.
 
 >[!NOTE]
 >
->Adobe raadt u aan altijd toegang te krijgen tot de XSS-beveiligings-API met behulp van de [XSSAPI verstrekt door AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe raadt u aan om altijd toegang te krijgen tot de XSS-beveiligings-API met de [XSSAPI verstrekt door AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Ook een webtoepassingsfirewall, zoals [mod_security voor Apache](https://www.modsecurity.org), kan betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
 
@@ -39,9 +40,9 @@ Ook een webtoepassingsfirewall, zoals [mod_security voor Apache](https://www.mod
 
 >[!NOTE]
 >
->ACLs voor de Informatie van de Cloud Service en de montages OSGi die worden vereist om uw instantie te beveiligen worden geautomatiseerd als deel van [Productie-klaar-modus](/help/sites-administering/production-ready.md). Terwijl dit betekent dat u niet de configuratie moet manueel veranderen, wordt het nog geadviseerd dat u hen controleert alvorens u met uw plaatsing gaat leven.
+>ACLs voor de Informatie van de Cloud Service en de montages OSGi die worden vereist om uw instantie te beveiligen worden geautomatiseerd als deel van [Productiemodus](/help/sites-administering/production-ready.md). Terwijl dit betekent dat u niet de configuratie moet manueel veranderen, wordt het nog geadviseerd dat u hen controleert alvorens u met uw plaatsing gaat leven.
 
-Wanneer u [uw AEM-exemplaar integreren met de Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), gebruikt u [Cloud Service configuraties](/help/sites-developing/extending-cloud-config.md). Informatie over deze configuraties, samen met alle verzamelde statistieken, wordt opgeslagen in de gegevensopslagruimte. Adobe raadt u aan om, als u deze functionaliteit gebruikt, na te gaan of de standaardbeveiliging op deze gegevens aan uw vereisten voldoet.
+Wanneer u [uw AEM-exemplaar integreren met de Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), gebruikt u [Cloud Service configuraties](/help/sites-developing/extending-cloud-config.md). Informatie over deze configuraties, samen met alle verzamelde statistieken, wordt opgeslagen in de gegevensopslagruimte. Adobe raadt aan dat als u deze functionaliteit gebruikt, u controleert of de standaardbeveiliging van deze informatie aan uw vereisten voldoet.
 
 De module webservicesSupport schrijft statistieken en configuratiegegevens onder:
 

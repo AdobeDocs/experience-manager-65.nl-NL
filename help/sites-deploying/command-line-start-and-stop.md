@@ -1,19 +1,20 @@
 ---
-title: Start en stop opdrachtregel
+title: Start en stop van opdrachtregel
 description: Leer hoe u Adobe Experience Manager start en stopt vanaf de opdrachtregel.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
-# Start en stop opdrachtregel{#command-line-start-and-stop}
+# Start en stop van opdrachtregel{#command-line-start-and-stop}
 
 ## Adobe Experience Manager starten vanaf de opdrachtregel {#starting-adobe-experience-manager-from-the-command-line}
 
@@ -97,7 +98,7 @@ Voer een van de volgende handelingen uit om AEM te stoppen:
 
 ## Adobe Experience Manager stoppen vanaf de opdrachtregel {#stopping-adobe-experience-manager-from-the-command-line}
 
-De `stop` script is beschikbaar onder *de &lt;cq-installation>/bin* directory. Zowel UNIX® als de versies van Vensters worden verstrekt. Het script stopt de actieve instantie die is geïnstalleerd in *&lt;cq-installation>* directory.
+De `stop` script is beschikbaar onder *de &lt;cq-installation>/bin* directory. Zowel UNIX® als de versies van Vensters worden verstrekt. Het script stopt de actieve instantie die in *&lt;cq-installation>* directory.
 
 ### Voorbeeld van UNIX®-platformstop {#unix-platform-stop-script-example}
 
@@ -115,7 +116,7 @@ Als u de repository alleen vooraf wilt configureren (zonder deze te verplaatsen)
 
 * Extraheren `repository.xml` naar de vereiste locatie
 
-* update `repository.xml` vereist
+* update `repository.xml` indien vereist
 
 * maken `bootstrap.properties` en definiëren `repository.config`
 

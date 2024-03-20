@@ -9,16 +9,17 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2338'
 ht-degree: 0%
 
 ---
 
 # Stijl AEM CIF kerncomponenten {#style-aem-cif-core-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM Core-componenten worden gebruikt, zijn geordend. U maakt ook een stijl met CSS om de standaardstijl van het dialoogvenster **Productteam** component.
+De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM Core-componenten worden gebruikt, zijn geordend. U maakt ook een stijl met CSS om de standaardstijl van het dialoogvenster **Productteam** component.
 
 >[!TIP]
 >
@@ -178,7 +179,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    **clientlib-base** - Dit is een lege clientbibliotheek waarin eenvoudig de benodigde afhankelijkheden zijn ingesloten [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). De categorie is `venia.base`.
 
-   **clientlib-cif** - Dit is ook een lege clientbibliotheek die de benodigde afhankelijkheden insluit vanuit [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). De categorie is `venia.cif`.
+   **clientlib-cif** - Dit is ook een lege clientbibliotheek die de benodigde afhankelijkheden insluit vanuit [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components). De categorie is `venia.cif`.
 
    **clientlib-raster** - Dit omvat de CSS nodig om AEM functie Responsief raster in te schakelen. Met het AEM schakelt u [Lay-outmodus](/help/sites-authoring/responsive-layout.md) in de AEM Editor en biedt de auteur van de inhoud de mogelijkheid om de grootte van componenten te wijzigen. De categorie is `venia.grid` en is ingesloten in de `venia.base` bibliotheek.
 
@@ -478,7 +479,7 @@ Gebruik de [Systeem AEM](/help/sites-authoring/style-system.md) om twee stijlen 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
-* [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
+* [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components)
 * [Een lokale AEM ontwikkelomgeving instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Client-Side bibliotheken](/help/sites-developing/clientlibs.md)
 * [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)

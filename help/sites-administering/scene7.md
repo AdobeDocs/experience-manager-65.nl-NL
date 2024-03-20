@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5236'
 ht-degree: 0%
@@ -377,7 +378,7 @@ Wanneer een element aan Experience Manager Assets wordt toegevoegd, wordt het au
 
 >[!NOTE]
 >
-De maximale bestandsgrootte voor automatisch uploaden van Experience Manager Assets naar Dynamic Media Classic is 500 MB.
+>De maximale bestandsgrootte voor automatisch uploaden van Experience Manager Assets naar Dynamic Media Classic is 500 MB.
 
 **To autoupload from Experience Manager Assets:**
 
@@ -387,7 +388,7 @@ De maximale bestandsgrootte voor automatisch uploaden van Experience Manager Ass
 
    >[!NOTE]
    >
-   Zie [De status (gepubliceerd/niet gepubliceerd) van naar Dynamic Media Classic geduwde middelen configureren](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) voor informatie over het ongepubliceerd naar Dynamic Media Classic duwen van activa.
+   >Zie [De status (gepubliceerd/niet gepubliceerd) van naar Dynamic Media Classic geduwde middelen configureren](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) voor informatie over het ongepubliceerd naar Dynamic Media Classic duwen van activa.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +399,8 @@ De maximale bestandsgrootte voor automatisch uploaden van Experience Manager Ass
 
    >[!NOTE]
    >
-   * Wanneer u na het automatiseren elementen toevoegt die niet in de CQ-doelmap staan, worden deze niet naar Dynamic Media Classic geüpload.
-   * Experience Manager sluit alle metagegevens in zoals XMP voordat deze naar Dynamic Media Classic worden geüpload. Alle eigenschappen op het metagegevensknooppunt zijn dus in Dynamic Media Classic als XMP beschikbaar.
+   >* Wanneer u na het automatiseren elementen toevoegt die niet in de CQ-doelmap staan, worden deze niet naar Dynamic Media Classic geüpload.
+   >* Experience Manager sluit alle metagegevens in zoals XMP voordat deze naar Dynamic Media Classic worden geüpload. Alle eigenschappen op het metagegevensknooppunt zijn dus in Dynamic Media Classic als XMP beschikbaar.
 
 ### De status (gepubliceerd/niet gepubliceerd) van aan Dynamic Media Classic geduwde middelen configureren {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +425,7 @@ Dit zijn dezelfde stappen die u zou volgen om een veilige testinstallatie in Dyn
 
 >[!NOTE]
 >
-Als uw installatieomgeving een UNIX® 64-bits besturingssysteem is, raadpleegt u [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) met betrekking tot andere configuratieopties moet u plaatsen.
+>Als uw installatieomgeving een UNIX® 64-bits besturingssysteem is, raadpleegt u [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) met betrekking tot andere configuratieopties moet u plaatsen.
 
 #### Bekende beperkingen voor het doorduwen van elementen in niet-gepubliceerde toestand  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +436,13 @@ Houd rekening met de volgende beperkingen als u deze functie gebruikt:
 
 >[!NOTE]
 >
-Als u elementen direct wilt publiceren, kunt u het beste de volgende methoden gebruiken: **[!UICONTROL Enable Secure Preview]** instellen op **[!UICONTROL Immediately]** en gebruiken de **[!UICONTROL Enable Automatic Upload]** gebruiken.
+>Als u elementen direct wilt publiceren, kunt u het beste de volgende methoden gebruiken: **[!UICONTROL Enable Secure Preview]** instellen op **[!UICONTROL Immediately]** en gebruiken de **[!UICONTROL Enable Automatic Upload]** gebruiken.
 
 ### De status van naar Dynamic Media Classic geduwde elementen instellen als niet-gepubliceerd {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
-Als een gebruiker het element in Experience Manager publiceert, wordt het S7-element automatisch geactiveerd voor de productie/het actieve element (het element bevindt zich niet meer in een beveiligde voorvertoning/is niet gepubliceerd).
+>Als een gebruiker het element in Experience Manager publiceert, wordt het S7-element automatisch geactiveerd voor de productie/het actieve element (het element bevindt zich niet meer in een beveiligde voorvertoning/is niet gepubliceerd).
 
 **De status van aan Dynamic Media Classic geduwde middelen instellen als niet-gepubliceerd:**
 
@@ -513,7 +514,7 @@ Er kan slechts één Dynamic Media Classic-configuratie op een bepaald moment al
 
    >[!NOTE]
    >
-   Als er slechts één configuratie is, selecteert u **[!UICONTROL Default Configuration]** selectievakje heeft geen effect.
+   >Als er slechts één configuratie is, selecteert u **[!UICONTROL Default Configuration]** selectievakje heeft geen effect.
 
 ### De map Ad hoc configureren {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +571,11 @@ Specifiek, vormt u het erkende dossierformaat door MIME type in het OSGi (Open h
 
    >[!NOTE]
    >
-   Als u PSD-bestanden uploadt en u wilt deze als sjablonen met laagextracties verwerken, voert u het volgende in het dialoogvenster **[!UICONTROL jobParam]** waardeveld:
+   >Als u PSD-bestanden uploadt en u wilt deze als sjablonen met laagextracties verwerken, voert u het volgende in het dialoogvenster **[!UICONTROL jobParam]** waardeveld:
    >
-   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   Zorg ervoor dat het PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
+   >Zorg ervoor dat het PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
 
 1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **[!UICONTROL Save All]**.
 
@@ -616,6 +617,6 @@ Als u problemen hebt met het integreren van Experience Manager met Dynamic Media
 
 >[!CAUTION]
 >
-Het importeren van activa van een bestaande Dynamic Media Classic-bedrijfsaccount kan lang duren voordat deze in Experience Manager worden weergegeven. Zorg ervoor dat u een map in Dynamic Media Classic aanwijst die niet te veel elementen bevat. De hoofdmap bevat bijvoorbeeld vaak te veel elementen.
+>Het importeren van activa van een bestaande Dynamic Media Classic-bedrijfsaccount kan lang duren voordat deze in Experience Manager worden weergegeven. Zorg ervoor dat u een map in Dynamic Media Classic aanwijst die niet te veel elementen bevat. De hoofdmap bevat bijvoorbeeld vaak te veel elementen.
 >
-Als u de integratie wilt testen, moet u het hoofdmappunt alleen naar een submap laten verwijzen in plaats van naar het hele bedrijf.
+>Als u de integratie wilt testen, moet u het hoofdmappunt alleen naar een submap laten verwijzen in plaats van naar het hele bedrijf.

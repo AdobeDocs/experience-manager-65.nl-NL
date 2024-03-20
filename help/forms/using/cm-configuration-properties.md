@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 1%
+source-wordcount: '846'
+ht-degree: 0%
 
 ---
 
@@ -30,19 +31,19 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr>
    <td><p>Inspringing</p> </td>
    <td>Inspringing op modules<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Willekeurig getal</p> </td>
   </tr>
   <tr>
    <td>Minimumbreedte aantal</td>
    <td>Minimumbreedte die moet worden toegepast op het veld opsommingsteken/nummer wanneer u genummerde lijsten naast Romeinse nummers gebruikt</td>
-   <td>8.0mm</td>
+   <td>8,0 mm</td>
    <td>Willekeurig getal</td>
   </tr>
   <tr>
    <td><p>Roman Numbers Minimum Width</p> </td>
    <td><p>Minimumbreedte die moet worden toegepast op het veld opsommingsteken/nummer bij gebruik van Romeinse getallen</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Willekeurig getal</p> </td>
   </tr>
   <tr>
@@ -157,7 +158,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
    <td><p>Gegevensbewerkingsindeling</p> </td>
    <td><p>Opmaak voor gegevens bewerken. Dit wordt gebruikt wanneer het schrijven van gegevens als Koord of het ontleden gegevens van Koord</p> </td>
    <td><p>locale=nl_NL; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Lettervarianten beheren bij publicatie</p> </td>
@@ -240,7 +241,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr>
    <td><p>CM-gebruikersbasis</p> </td>
    <td><p>URL van de map met alle Correspondentenbeheergebruikerselementen</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Geldige maplocatie</p> </td>
   </tr>
   <tr>

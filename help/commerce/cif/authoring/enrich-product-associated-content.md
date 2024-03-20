@@ -4,10 +4,11 @@ description: Leer hoe marketers productgegevens kunnen verrijken met de bijbehor
 sub-product: Commerce
 feature: Commerce Integration Framework
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,13 +22,13 @@ Leer hoe marketers productgegevens kunnen verrijken met bijbehorende inhoud uit 
 
 Digitale middelen kunnen aan één of meerdere product SKUs worden geassocieerd. Wanneer het digitale element is gekoppeld, kan het worden gedetecteerd met trefwoordzoekopdrachten op basis van de SKU. Het element wordt automatisch ook weergegeven als gekoppelde inhoud wanneer u een pagina bewerkt die het relevante product bevat, waardoor het nog eenvoudiger wordt om uw volgende digitale ervaring te maken
 
-## Ervaringsfragmenten
+## Ervaar fragmenten
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
 De Fragmenten van de ervaring zijn een eigenschap van Adobe Experience Manager die een prijsmeter toestaat om tot stand te brengen **ongestructureerd** herbruikbare inhoud. De Fragmenten van de ervaring kunnen met een productSKU of catalogusidentiteitskaart worden geassocieerd Zodra verbonden, kunnen de marketers verwante fragmenten gemakkelijk ontdekken die op producten worden gebaseerd die op een pagina worden getoond. Met behulp van een tijdelijke aanduiding en koppeling kunt u ook dynamisch fragmenten uit de ervaringsfragmenten opnemen op een productcataloguspagina.
 
-## Contentfragmenten
+## Inhoudsfragmenten
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -68,14 +69,14 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
+   >U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
    >
-   Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
-   De aanbevolen methode voor configuratie en andere wijzigingen is:
+   >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
-   1. Breng wijzigingen aan in `/apps`
+   >1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
+   >1. Breng wijzigingen aan in `/apps`
 
 1. Stel de `path` eigenschap op `basic` om naar de opheffing van het basislusje te wijzen (zie ook de volgende stap). Bijvoorbeeld:
 
@@ -99,7 +100,7 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
 
 >[!NOTE]
 >
-Zie wanneer u pagina-eigenschappen configureert voor gebruik met live kopieën [MSM-vergrendelingen configureren in pagina-eigenschappen](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) voor meer informatie .
+>Zie wanneer u pagina-eigenschappen configureert voor gebruik met live kopieën [MSM-vergrendelingen configureren in pagina-eigenschappen](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) voor meer informatie .
 
 ## Voorbeeldconfiguratie van pagina-eigenschappen {#sample-configuration-of-page-properties}
 

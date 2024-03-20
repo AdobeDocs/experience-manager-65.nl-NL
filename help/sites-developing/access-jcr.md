@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -23,11 +24,11 @@ U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-op
 
 >[!NOTE]
 >
-Als u de JCR API wilt gebruiken, voegt u de `jackrabbit-standalone-2.4.0.jar` naar het klassepad van uw Java™-toepassing. U kunt dit JAR-bestand verkrijgen via de Java™ JCR API-webpagina op [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Als u de JCR API wilt gebruiken, voegt u de `jackrabbit-standalone-2.4.0.jar` naar het klassepad van uw Java™-toepassing. U kunt dit JAR-bestand verkrijgen via de Java™ JCR API-webpagina op [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
-Ga voor meer informatie over het zoeken naar de Adobe CQ JCR met de JCR Query API [Adobe Experience Manager-gegevens opvragen met de JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>Ga voor meer informatie over het zoeken naar de Adobe CQ JCR met de JCR Query API [Adobe Experience Manager-gegevens opvragen met de JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Een instantie Repository maken {#create-a-repository-instance}
 

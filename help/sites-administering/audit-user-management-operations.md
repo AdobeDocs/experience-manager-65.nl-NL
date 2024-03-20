@@ -8,9 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -31,7 +32,7 @@ Standaard worden de items naar de `error.log` bestand. Om controle gemakkelijker
 
 ## De uitvoer wordt omgeleid naar een afzonderlijk logbestand {#redirecting-the-output-to-a-separate-log-file}
 
-Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, maakt u een **Logboekregistratie voor Apache Sling** configuratie. Laten we gebruiken `useraudit.log` als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
+Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, maakt u een **Logboekregistratie voor Apache Sling** configuratie. Laten we het gebruiken `useraudit.log` als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
 
 1. Ga naar de webconsole door naar *https://serveraddress:serverport/system/console/configMgr*
 1. Zoeken naar **Logboekconfiguratie Apache Sling Logging**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een fabrieksconfiguratie te maken.

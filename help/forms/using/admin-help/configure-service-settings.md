@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 0%
@@ -221,7 +222,7 @@ De volgende instellingen zijn beschikbaar voor de coderingsservice.
 
 >[!NOTE]
 >
-Gebruik alleen eenvoudige verificatie (gebruikersnaam en wachtwoord) wanneer de verbinding is beveiligd via SSL (met LDAPS).
+>Gebruik alleen eenvoudige verificatie (gebruikersnaam en wachtwoord) wanneer de verbinding is beveiligd via SSL (met LDAPS).
 
 **Compatibiliteitsmodus:**
 
@@ -429,7 +430,7 @@ De volgende instellingen zijn beschikbaar voor de Microsoft SharePoint-configura
 
 >[!NOTE]
 >
-Als Offlineondersteuning is ingeschakeld en u deze vervolgens uitschakelt, worden de inrichtingsprofielen van de gebruikers direct of zodra ze online zijn, bijgewerkt. Als een gebruiker offline heeft gewerkt, worden alle hangende taken geretourneerd naar de lijst Taken en worden alle items in de wachtrij, inclusief formulieren, taken en formulieren met validatiefouten die in behandeling zijn, verwijderd uit de wachtrij.
+>Als Offlineondersteuning is ingeschakeld en u deze vervolgens uitschakelt, worden de inrichtingsprofielen van de gebruikers direct of zodra ze online zijn, bijgewerkt. Als een gebruiker offline heeft gewerkt, worden alle hangende taken geretourneerd naar de lijst Taken en worden alle items in de wachtrij, inclusief formulieren, taken en formulieren met validatiefouten die in behandeling zijn, verwijderd uit de wachtrij.
 
 **Android:** Hiermee kunnen Android-apparaten verbinding maken met de server.
 
@@ -731,7 +732,7 @@ Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaa
 
 >[!NOTE]
 >
-Hoe kleiner de resulterende mappen, hoe beter Gecontroleerde mappen. Als de geschatte belasting voor de gecontroleerde map bijvoorbeeld 1000 bestanden per uur is, probeert u een patroon zoals `result/%Y%M%D%H` zodat er elk uur een nieuwe submap wordt gemaakt. Als de belasting kleiner is (bijvoorbeeld 1000 bestanden per dag), kunt u een patroon gebruiken zoals `result/%Y%M%D`.
+>Hoe kleiner de resulterende mappen, hoe beter Gecontroleerde mappen. Als de geschatte belasting voor de gecontroleerde map bijvoorbeeld 1000 bestanden per uur is, probeert u een patroon zoals `result/%Y%M%D%H` zodat er elk uur een nieuwe submap wordt gemaakt. Als de belasting kleiner is (bijvoorbeeld 1000 bestanden per dag), kunt u een patroon gebruiken zoals `result/%Y%M%D`.
 
 **Werkgebiedmap:** De standaardnaam voor de werkgebiedmap in de controlemap.
 
@@ -813,7 +814,7 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
 
    >[!NOTE]
    >
-   De diensten die met xfaForm, de Vorm van het Document, en de variabelen van de Vorm worden gebruikt worden teruggeven en voorleggen altijd uitgevoerd gebruikend de de gebruikersrekening van het Systeem.
+   >De diensten die met xfaForm, de Vorm van het Document, en de variabelen van de Vorm worden gebruikt worden teruggeven en voorleggen altijd uitgevoerd gebruikend de de gebruikersrekening van het Systeem.
 
 1. Klik toevoegen Belangrijker om de toestemmingen te specificeren die de gebruikers en de groepen voor deze dienst hebben.
 1. Het Uitgezochte Belangrijkste scherm toont de gebruikers en de groepen die in het Beheer van de Gebruiker worden gevormd. Als de gewenste gebruiker of groep niet wordt weergegeven, gebruikt u de zoekfunctie om deze te zoeken. Klik op de naam van een gebruiker of groep.

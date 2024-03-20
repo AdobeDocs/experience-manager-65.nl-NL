@@ -5,14 +5,15 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 1%
+source-wordcount: '1902'
+ht-degree: 0%
 
 ---
 
-# Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Ondersteuning voor inhoudsfragmenten in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -218,7 +219,7 @@ De binaire gegevens van een element worden blootgesteld als een verbinding SIREN
 
 Elementen kunnen meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven als onderliggende entiteiten, waarbij één uitzondering een miniatuuruitvoering is die wordt weergegeven als een koppeling van het type `thumbnail` ( `rel="thumbnail"`).
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
 A [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals tekst, getallen, datums.
 
@@ -382,7 +383,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 Zie hier voor gedetailleerde API-referenties:
 
 * [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
-* [HTTP-API voor assets](/help/assets/mac-api-assets.md)
+* [Elementen HTTP-API](/help/assets/mac-api-assets.md)
 
    * [Beschikbare functies](/help/assets/mac-api-assets.md#assets)
 

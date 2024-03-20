@@ -5,16 +5,17 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2942'
+source-wordcount: '2854'
 ht-degree: 0%
 
 ---
 
 # Experience Manager Assets for Adobe Asset Link configureren {#adobe-asset-link}
 
-[Adobe Asset Link (AAL)](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Adobe Experience Manager Assets wordt verbonden met Creative Cloud desktop apps Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die in AEM Assets is opgeslagen en kunnen ze deze inhoud wijzigen zonder dat ze de meest bekende creatieve toepassingen hoeven te gebruiken.
+[Adobe Asset Link (AAL)](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Adobe Experience Manager Assets wordt verbonden met Creative Cloud-bureaubladapps Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die in AEM Assets is opgeslagen en kunnen ze deze inhoud wijzigen zonder dat ze de meest bekende creatieve toepassingen hoeven te gebruiken.
 
 Om Experience Manager Assets te vormen die met de Verbinding van Activa moet worden gebruikt, voer de volgende taken uit. De beheerderrekening van de Experience Manager van het gebruik om de configuratie te doen:
 
@@ -48,7 +49,7 @@ Adobe raadt u aan te installeren [adobe-asset-link-config](https://experience.ad
 
 1. Om de Manager van het Pakket, in de Webinterface van de Experience Manager te openen, toegang **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Package Share]**. Installeren `adobe-asset-link-config` pakket.
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. Zoeken **[!UICONTROL Adobe Granite OAuth IMS Provider]** en klik om deze te bewerken.
+1. Toegang **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. Zoeken **[!UICONTROL Adobe Granite OAuth IMS Provider]** en klik om deze te bewerken.
 
    Stel de volgende eigenschappen in en sla de wijzigingen op.
 
@@ -289,4 +290,4 @@ Als u problemen ondervindt bij het configureren of gebruiken van Adobe Asset Lin
 >
 >* [Over Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Asset Link gebruiken in desktop-app van Creative Cloud en elementen beheren](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [As a Cloud Service Adobe Experience Manager-middelen configureren](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [Adobe Experience Manager Assets as a Cloud Service configureren](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).

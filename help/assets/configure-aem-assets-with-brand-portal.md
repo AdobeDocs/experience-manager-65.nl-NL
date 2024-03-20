@@ -9,10 +9,11 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2013'
-ht-degree: 9%
+source-wordcount: '1951'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +60,7 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 * Een AEM Assets Author-instantie voor meer informatie met het nieuwste Service Pack
 * URL Brand Portal-gebruiker
-* Een gebruiker met systeembeheerdersbevoegdheden op de IMS-organisatie van de Brand Portal-tenant
+* Een gebruiker met systeembeheerdersrechten voor de IMS-organisatie van de Brand Portal-huurder
 
 [Download en installeer AEM 6.5](#aemquickstart)
 
@@ -103,7 +104,7 @@ Voer de volgende stappen in de vermelde reeks uit als u AEM Assets voor het eers
 1. [Verbinding voor serviceaccount (JWT) maken](#createnewintegration)
 1. [Een IMS-account configureren](#create-ims-account-configuration)
 1. [Cloudservice configureren](#configure-the-cloud-service)
-1. [Configuratie testen](#test-integration)
+1. [Testconfiguratie](#test-integration)
 
 ### IMS-configuratie maken {#create-ims-configuration}
 
@@ -274,7 +275,7 @@ De IMS-account configureren:
 
 >[!CAUTION]
 >
->U kunt slechts één IMS-configuratie hebben.
+>U moet slechts één configuratie IMS hebben.
 >
 >Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. Verwijder het bestand en maak een andere geldige configuratie.
 
@@ -341,7 +342,7 @@ De IMS-account configureren:
 
 U kunt nu het volgende doen:
 
-* [Assets publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-assets.md)
+* [Elementen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Elementen publiceren van Brand Portal naar AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Souring in Brand Portal
 * [Mappen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-collection.md)

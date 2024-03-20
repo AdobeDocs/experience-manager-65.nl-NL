@@ -1,5 +1,5 @@
 ---
-title: Lanceringen bewerken
+title: Starten bewerken
 description: Wanneer een startpagina (of een set pagina's) is gemaakt, kunt u de inhoud van de opstartafbeelding van de pagina's bewerken.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,15 @@ content-type: reference
 topic-tags: site-features
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 1%
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
-# Lanceringen bewerken{#editing-launches}
+# Starten bewerken{#editing-launches}
 
 ## Starten van pagina&#39;s bewerken {#editing-launch-pages}
 

@@ -1,5 +1,5 @@
 ---
-title: Uw inbox
+title: Uw Postvak IN
 description: U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u moet uitvoeren op pagina-inhoud.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,15 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
-# Uw inbox{#your-inbox}
+# Uw Postvak IN{#your-inbox}
 
 U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u moet uitvoeren op pagina-inhoud.
 
@@ -27,13 +28,13 @@ U ontvangt deze meldingen in twee Postvakken, die worden gescheiden door het typ
 
 Om uw meldingen weer te geven:
 
-1. Open het inbox van de melding: in de **Websites** -console, klikt u op de gebruikersknop in de rechterbovenhoek en selecteert u **Melding in vak**.
+1. Open de melding in het vak: in het dialoogvenster **Websites** -console, klikt u op de gebruikersknop in de rechterbovenhoek en selecteert u **Melding in vak**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
    >[!NOTE]
    >
-   >U kunt tot de console ook direct in uw browser toegang hebben; bijvoorbeeld:
+   >U kunt de console ook rechtstreeks in uw browser openen, bijvoorbeeld:
    >
    >
    >` https://<host>:<port>/libs/wcm/core/content/inbox.html`
@@ -49,13 +50,13 @@ Om uw meldingen weer te geven:
 
 Abonneren op meldingen:
 
-1. Open het inbox van de melding: in de **Websites** -console, klikt u op de gebruikersknop in de rechterbovenhoek en selecteert u **Melding in vak**.
+1. Open de melding in het vak: in het dialoogvenster **Websites** -console, klikt u op de gebruikersknop in de rechterbovenhoek en selecteert u **Melding in vak**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
    >[!NOTE]
    >
-   >U kunt tot de console ook direct in uw browser toegang hebben; bijvoorbeeld:
+   >U kunt de console ook rechtstreeks in uw browser openen, bijvoorbeeld:
    >
    >
    >`https://<host>:<port>/libs/wcm/core/content/inbox.html`
@@ -77,21 +78,21 @@ Abonneren op meldingen:
 
    * Geactiveerd: wanneer een pagina is geactiveerd.
    * gedeactiveerd: wanneer een pagina is gedeactiveerd.
-   * Verwijderd (syndicatie): wanneer een pagina is verwijderd, dat wil zeggen, wanneer een verwijderactie op een pagina wordt gerepliceerd.
-Wanneer een pagina wordt verwijderd of verplaatst, wordt automatisch een verwijderactie gerepliceerd: de pagina wordt geschrapt op de broninstantie waar de schrappingsactie werd uitgevoerd en op de bestemmingsinstantie die door de replicatieagenten wordt bepaald.
+   * Verwijderd (syndicatie): wanneer een pagina is gerepliceerd met een verwijderactie, dat wil zeggen wanneer een verwijderactie op een pagina wordt gerepliceerd.
+Wanneer een pagina wordt geschrapt of bewogen, wordt een schrappingsactie automatisch herhaald: de pagina wordt geschrapt op de broninstantie waar de schrappingsactie werd uitgevoerd en op de bestemmingsinstantie die door de replicatieagenten wordt bepaald.
 
    * Gewijzigd: wanneer een pagina is gewijzigd.
    * Gemaakt: wanneer een pagina is gemaakt.
    * Verwijderd: wanneer een pagina is verwijderd via de paginaverwijderactie.
-   * Uitgelijnd: wanneer een pagina is uitgerold.
+   * Uitgerold: wanneer een pagina is uitgerold.
 
 1. Definieer de paden van de pagina&#39;s waarvoor u een melding krijgt:
 
    * Klikken **Toevoegen** om een nieuwe rij aan de tabel toe te voegen.
    * Klik op de knop **Pad** tabelcel en voer het pad in, bijvoorbeeld `/content/docs`.
 
-   * Op de hoogte worden gesteld van alle pagina&#39;s die tot de subboomstructuur behoren, set **Precies?** tot **Nee**.
-Alleen een melding ontvangen voor acties op de pagina die door het pad wordt gedefinieerd, stelt u **Precies?** tot **Ja**.
+   * Op de hoogte worden gesteld van alle pagina&#39;s die tot de subboomstructuur behoren, set **Nauwkeurig?** tot **Nee**.
+Alleen een melding ontvangen voor acties op de pagina die door het pad wordt gedefinieerd, stelt u **Nauwkeurig?** tot **Ja**.
 
    * Als u de regel wilt toestaan, stelt u **Regel** tot **Toestaan**. Indien ingesteld op **Weigeren**, wordt de regel geweigerd maar niet verwijderd en kan later worden toegestaan.
 
@@ -103,7 +104,7 @@ Alleen een melding ontvangen voor acties op de pagina die door het pad wordt ged
 
 Als u ervoor hebt gekozen om meldingen te ontvangen in uw AEM Postvak IN, wordt uw postvak IN gevuld met meldingen. U kunt [uw meldingen weergeven](#viewing-your-notifications)Selecteer vervolgens de vereiste meldingen voor:
 
-* Goedkeuren door op **Goedkeuren**: de waarde in de **Lezen** kolom is ingesteld op **true**.
+* Goedkeuren door op **Goedkeuren**: de waarde in het dialoogvenster **Lezen** kolom is ingesteld op **true**.
 
 * Verwijderen door erop te klikken **Verwijderen**.
 

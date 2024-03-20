@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -29,8 +30,8 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
-1. Klik op HSM-connectiviteit testen. Als AEM formulieren verbinding kunnen maken met het HSM-apparaat, wordt een bericht weergegeven met de mededeling dat de HSM beschikbaar is. Klik op Next.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld: `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Klik op HSM-connectiviteit testen. Als AEM formulieren verbinding kunnen maken met het HSM-apparaat, wordt een bericht weergegeven met de mededeling dat de HSM beschikbaar is. Klik op Volgende.
 1. Gebruik of de Symbolische Naam, identiteitskaart van de Slot, of Index van de Lijst van de Slot om te identificeren waar de geloofsbrieven op HSM worden opgeslagen.
 
    * **Tokennaam:** Komt overeen met de naam van de te gebruiken HSM-partitie (bijvoorbeeld HSMPART1).
@@ -44,8 +45,8 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
-1. Schakel het selectievakje Offline profiel maken in. Klik op Next.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld: `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Schakel het selectievakje Offline profiel maken in. Klik op Volgende.
 1. Selecteer in de lijst HSM-apparaat de fabrikant van het HSM-apparaat waar de referentie is opgeslagen.
 1. Selecteer in de lijst Slot-type de optie Groef-id, Slot-index of Token-naam en geef een waarde op in het vak Slot-info. AEM formulieren gebruiken deze instellingen om te bepalen waar de referenties op de HSM worden opgeslagen.
 

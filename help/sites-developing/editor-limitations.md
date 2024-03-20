@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -49,7 +50,7 @@ Absoluut gepositioneerde elementen kunnen problemen veroorzaken in de positie va
 
 Vaste achtergrondafbeeldingen worden mogelijk niet als vast weergegeven tijdens het schuiven omdat deze zijn ingesloten in een iframe.
 
-* Selecteren **Pagina weergeven zoals gepubliceerd** in de koptekstbalk wordt de pagina correct weergegeven.
+* Selecteren **Pagina weergeven zoals gepubliceerd** in de koptekstbalk geeft de actie de pagina correct weer.
 
 ### 100% hoogte {#height}
 

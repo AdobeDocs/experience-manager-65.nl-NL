@@ -1,19 +1,20 @@
 ---
-title: Veelgestelde vragen over HTTP2-levering van content
+title: HTTP2 Veelgestelde vragen over inhoud
 description: Meer informatie over de levering van HTTP2-inhoud en over de manier waarop dit de algemene prestaties van uw webinhoud kan verbeteren.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 1%
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
-# Veelgestelde vragen over HTTP2-levering van content{#http-delivery-of-content-faq}
+# HTTP2 Veelgestelde vragen over inhoud{#http-delivery-of-content-faq}
 
 De Adobe is opgetogen om de beschikbaarheid van HTTP/2 levering van inhoud aan te kondigen. Wanneer u HTTP/2 gebruikt, wordt een algemene prestatiesverhoging opgemerkt.
 

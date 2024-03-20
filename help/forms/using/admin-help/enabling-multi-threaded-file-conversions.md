@@ -7,9 +7,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Standaard kan PDF Generator slechts één OpenOffice-, Microsoft® Word- of Powe
 
 >[!NOTE]
 >
-Bestanden met meerdere threads worden niet ondersteund in Microsoft® Excel, Microsoft® Visio, Microsoft® Project of Microsoft® Publisher.
+>Bestanden met meerdere threads worden niet ondersteund in Microsoft® Excel, Microsoft® Visio, Microsoft® Project of Microsoft® Publisher.
 
 Elke instantie van OpenOffice of PDFMaker wordt gestart met een aparte gebruikersaccount. Elke gebruikersaccount die u toevoegt, moet een geldige gebruiker met beheerdersrechten op de Forms Server-computer zijn. In een gegroepeerd milieu, moet de zelfde reeks gebruikers voor alle knopen van de cluster geldig zijn.
 
@@ -67,7 +68,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
 
    >[!NOTE]
    >
-   Zorg ervoor dat u gebruiker van het systeem en PDFG gebruikersrollen aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om een rol PDFG aan een gebruiker toe te wijzen, zie [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Zorg ervoor dat u gebruiker van het systeem en PDFG gebruikersrollen aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om een rol PDFG aan een gebruiker toe te wijzen, zie [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Zoek en becommentariëer deze regel ook in het bestand /etc/sudoers door een hekje (#) aan het begin van de regel toe te voegen:
 
@@ -88,7 +89,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
 
 >[!NOTE]
 >
-OpenOffice moet zijn geïnstalleerd op een maplocatie waartoe alle PDFG-gebruikers toegang hebben. U kunt dit verifiëren door u aan te melden als gebruiker PDFG en te controleren of u OpenOffice zonder problemen kunt starten.
+>OpenOffice moet zijn geïnstalleerd op een maplocatie waartoe alle PDFG-gebruikers toegang hebben. U kunt dit verifiëren door u aan te melden als gebruiker PDFG en te controleren of u OpenOffice zonder problemen kunt starten.
 
 ### Een gebruikersaccount toevoegen {#add-a-user-account}
 
@@ -97,7 +98,7 @@ OpenOffice moet zijn geïnstalleerd op een maplocatie waartoe alle PDFG-gebruike
 
    >[!NOTE]
    >
-   Als u gebruikers voor OpenOffice vormt, kan het aantal instanties van OpenOffice niet groter zijn dan het aantal gebruikersrekeningen die in deze stap worden gespecificeerd.
+   >Als u gebruikers voor OpenOffice vormt, kan het aantal instanties van OpenOffice niet groter zijn dan het aantal gebruikersrekeningen die in deze stap worden gespecificeerd.
 
 1. Start de Forms-server opnieuw.
 

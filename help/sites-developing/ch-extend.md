@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -31,7 +32,7 @@ De `[storeType]` deel van de categorie is `storeType` waarmee de opslagkandidaat
 
 ### Een ContextHub Store-kandidaat maken {#creating-a-contexthub-store-candidate}
 
-Als u een winkelkandidaat wilt maken, gebruikt u de opdracht [`ContextHub.Utils.inheritance.inherit`](/help/sites-developing/contexthub-api.md#inherit-child-parent) functie om één van de basisopslag uit te breiden:
+Als u een winkelkandidaat wilt maken, gebruikt u de [`ContextHub.Utils.inheritance.inherit`](/help/sites-developing/contexthub-api.md#inherit-child-parent) functie om één van de basisopslag uit te breiden:
 
 * [` ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)
 * [` ContextHub.Store.SessionStore`](/help/sites-developing/contexthub-api.md#contexthub-store-sessionstore)
@@ -40,7 +41,7 @@ Als u een winkelkandidaat wilt maken, gebruikt u de opdracht [`ContextHub.Utils.
 
 Elke basisopslag breidt het [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) opslaan.
 
-In het volgende voorbeeld wordt de eenvoudigste extensie van de `ContextHub.Store.PersistedStore` opslagkandidaat:
+In het volgende voorbeeld wordt de eenvoudigste extensie van de `ContextHub.Store.PersistedStore` Winkelkandidaat:
 
 ```
 myStoreCandidate = function(){};
@@ -74,7 +75,7 @@ Als u een renderer voor een UI-module wilt maken, maakt u een `Class` object dat
 
 * Geef een standaardconfiguratie op. Een `defaultConfig` eigenschap. Deze eigenschap is een object dat de eigenschappen bevat die zijn gedefinieerd voor de [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) UI-module en andere eigenschappen die u nodig hebt.
 
-De bron voor `ContextHub.UI.BaseModuleRenderer` bevindt zich in /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Als u de renderer wilt registreren, gebruikt u de [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) methode `ContextHub.UI` klasse. Geef een naam op voor het moduletype. Wanneer beheerders een UI-module maken op basis van deze renderer, geven ze deze naam op.
+De bron voor `ContextHub.UI.BaseModuleRenderer` bevindt zich in /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Als u de renderer wilt registreren, gebruikt u de [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) van de `ContextHub.UI` klasse. Geef een naam op voor het moduletype. Wanneer beheerders een UI-module maken op basis van deze renderer, geven ze deze naam op.
 
 Maak en registreer de rendererklasse in een automatisch uitgevoerde anonieme functie. Het volgende voorbeeld is gebaseerd op de broncode voor de module van contexthub.browserinfo UI. Deze UI-module is een eenvoudige uitbreiding van de `ContextHub.UI.BaseModuleRenderer` klasse.
 

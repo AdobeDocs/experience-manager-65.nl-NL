@@ -5,7 +5,8 @@ contentOwner: AG
 role: Architect, Admin, Leader
 feature: Collections
 exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Met de functie voor meerdere huurders kunt u inhoud in CRX segregeren op basis v
 
 Als u bijvoorbeeld een map maakt met de naam `Demo`, [!DNL Experience Manager] elementen slaan de map traditioneel op `../content/dam/Demo`. Als multi-tenancy is ingeschakeld, kunt u de gegevens nu opslaan op `../content/dam/<organization prefix>/<organization id>Demo`
 
-Als bijvoorbeeld [!DNL Adobe Marketing Cloud] gebruikers van [!DNL Assets] (op verzoek) die worden toegewezen aan de `aodpremium` organisatie, kunt u de multi-huur eigenschap gebruiken om te vormen `../content/dam/<mac>/<aodpremium>Demo` pad om de inhoud te scheiden. In dit voorbeeld: `mac` is het organisatievoorvoegsel en `aodpremium` is de organisatie-id.
+Als bijvoorbeeld [!DNL Adobe Marketing Cloud] gebruikers van [!DNL Assets] (op verzoek) die aan `aodpremium` organisatie, kunt u de multi-huur eigenschap gebruiken om te vormen `../content/dam/<mac>/<aodpremium>Demo` pad om de inhoud te scheiden. In dit voorbeeld: `mac` is het organisatievoorvoegsel en `aodpremium` is de organisatie-id.
 
 Gebaseerd op de organisatie en identiteitskaart van de gebruiker, wordt dit gekwalificeerde weg getoond in [!DNL Assets] interface en diverse tovenaars, met inbegrip van de Beweging en de verwezenlijking van het Fragment tovenaars om segregatie af te dwingen.
 

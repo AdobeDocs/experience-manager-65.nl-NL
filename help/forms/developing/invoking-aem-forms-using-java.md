@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5393'
+source-wordcount: '5333'
 ht-degree: 0%
 
 ---
@@ -825,7 +826,7 @@ De URL die aan de `com.adobe.idp.Document` object wordt altijd gelezen aan de zi
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-Het bestand c:/temp/input.pdf moet zich op de clientcomputer bevinden (niet op de servercomputer). Het is de clientcomputer waar de URL wordt gelezen en waar het `com.adobe.idp.Document` object is gemaakt.
+Het c:/temp/input.pdf-bestand moet zich op de clientcomputer bevinden (niet op de servercomputer). Het is de clientcomputer waar de URL wordt gelezen en waar het `com.adobe.idp.Document` object is gemaakt.
 
 **Een document maken op basis van inhoud die toegankelijk is via een URL**
 
@@ -970,7 +971,7 @@ Er is een Manager die van de Gebruiker plaatst die het leven van de bevestiging 
 
 U kunt de service Opslagplaats aanroepen door gebruik te maken van een Java-clientbibliotheek en de volgende stappen uit te voeren:
 
-1. Neem jar-bestanden van de client op, zoals adobe-repository-client.jar, in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Neem jar-bestanden van de client op, zoals de adobe-repository-client.jar, in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Stel verbindingseigenschappen in die vereist zijn om een service aan te roepen.
 1. Een `ServiceClientFactory` door het object aan te roepen `ServiceClientFactory` statisch object `createInstance` en het doorgeven van de `java.util.Properties` object dat verbindingseigenschappen bevat.
 1. Maak een `ResourceRepositoryClient` object door de constructor te gebruiken en het object door te `ServiceClientFactory` geven. Gebruik het `ResourceRepositoryClient` object om bewerkingen van de opslagplaatsservice te activeren.

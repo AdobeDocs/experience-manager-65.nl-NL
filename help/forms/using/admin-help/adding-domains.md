@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -70,7 +71,7 @@ Wanneer u MySQL gebruikt als AEM formulierdatabase, gelden de volgende beperking
 
 * Gebruik alleen single-byte (ASCII)-tekens voor de domein-id en domeinnaam. Als u uitgebreide ASCII-tekens gebruikt, zijn AEM niet stabiel en kan er een uitzondering optreden als u probeert het domein te verwijderen. Als u van deze instabiele toestand wilt herstellen, raadpleegt u &quot; [Een domein verwijderen dat uitgebreide of multi-byte tekens bevat](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot;onderwerp op deze pagina.
 * U kunt geen twee domeinen tot stand brengen die de zelfde naam hebben maar in geval verschillen. Zo kunt u bijvoorbeeld een domein maken met de naam *Adobe* wanneer een domein een naam heeft *adobe* bestaat al.
-* Gebruikersbeheer kan geen onderscheid maken tussen twee domeinnamen die alleen verschillen in het gebruik van uitgebreide tekens. Als u bijvoorbeeld een domein maakt met de naam *abcde* en een domein met een naam *âbcdè*, worden zij als hetzelfde beschouwd.
+* Gebruikersbeheer kan geen onderscheid maken tussen twee domeinnamen die alleen verschillen in het gebruik van uitgebreide tekens. Als u bijvoorbeeld een domein maakt met de naam *abcde* en een domein *âbcdè*, worden zij als hetzelfde beschouwd.
 
 ### Een domein verwijderen dat uitgebreide of multi-byte tekens bevat {#remove-a-domain-that-contains-extended-or-multi-byte-characters}
 

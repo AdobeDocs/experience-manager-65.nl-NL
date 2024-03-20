@@ -5,9 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ U kunt de [!DNL Adobe Camera Raw] ondersteuning voor het verwerken van Raw-besta
 Inschakelen [!DNL Camera Raw] ondersteuning in [!DNL Experience Manager Assets]Voer de volgende stappen uit:
 
 1. Download de [[!DNL Camera Raw] package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) van [!DNL Software Distribution].
-1. Ga naar `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
+1. Toegang `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
 1. Bewerk de **[!UICONTROL Process Thumbnails]** stap.
 1. Geef de volgende configuratie op in de **[!UICONTROL Thumbnails]** tab:
 
@@ -32,7 +33,7 @@ Inschakelen [!DNL Camera Raw] ondersteuning in [!DNL Experience Manager Assets]V
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
-1. In de **[!UICONTROL Web Enabled Image]** tabblad, in het dialoogvenster **[!UICONTROL Skip List]** veld, specificeren `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. In de **[!UICONTROL Web Enabled Image]** tabblad, in de **[!UICONTROL Skip List]** veld, specificeren `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
@@ -59,15 +60,15 @@ U kunt nu Camera Raw-bestanden importeren in Elementen. Nadat u het Camera Raw p
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
-*Afbeelding: Opties in het zijpaneel.*
+*Afbeelding: opties in het zijvenster.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*Afbeelding: Gebruik deze optie om lichte bewerkingen uit te voeren op uw afbeeldingen.*
+*Afbeelding: gebruik de optie om foto&#39;s lichtgewichtbewerkingen uit te voeren.*
 
 Nadat u de bewerkingen hebt opgeslagen in een [!DNL Camera Raw] afbeelding, een nieuwe vertoning `AdjustedPreview.jpg` wordt voor de afbeelding gegenereerd. Voor andere afbeeldingstypen, behalve [!DNL Camera Raw], worden de wijzigingen weerspiegeld in alle uitvoeringen.
 
-## Beste werkwijzen, bekende problemen en beperkingen {#best-practices}
+## Tips en trucs, bekende problemen en beperkingen {#best-practices}
 
 De functionaliteit heeft de volgende beperkingen:
 

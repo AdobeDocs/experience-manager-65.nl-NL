@@ -3,10 +3,12 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer hoe u GraphQL met AEM kunt gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 1%
+source-wordcount: '1588'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +23,6 @@ Leer hoe u GraphQL met AEM kunt gebruiken om inhoud zonder problemen te bedienen
 >* [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
 >* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 >* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
-
 
 Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, is het nuttig om enkele praktische voorbeelden te zien.
 
@@ -315,7 +316,7 @@ Deze voorbeeldquery is een query om de details van één fragmentitem te retourn
 
 ### Voorbeeldquery - Alle steden met een benoemde variatie {#sample-cities-named-variation}
 
-Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`), voor de `city` Berlijn, kunt u een vraag gebruiken om details van de variatie terug te keren.
+Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`) voor de `city` Berlijn, kunt u een vraag gebruiken om details van de variatie terug te keren.
 
 **Voorbeeldquery**
 
@@ -361,7 +362,7 @@ Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`)
 Als u:
 
 * verschillende tags maken, met de naam `Tourism` : `Business`, `City Break`, `Holiday`
-* en deze labels toewijzen aan de Master variatie van verschillende `City` instances
+* en wijs deze markeringen aan de Hoofdvariatie van diverse toe `City` instances
 
 Dan kunt u een vraag gebruiken om details van terug te keren `name` en `tags`van alle items die zijn getagd als Stadseinden in het dialoogvenster `city`schema.
 
@@ -928,7 +929,7 @@ query {
 
 ### Voorbeeldquery voor geneste inhoudsfragmenten - Alle bedrijven met ten minste één werknemer met de naam &quot;Smith&quot; {#sample-companies-employee-smith}
 
-Deze vraag illustreert het filtreren voor om het even welk `person` van `name` &quot;Smith&quot;, die informatie van over twee geneste fragmenten terugkeert - `company` en `employee`.
+Deze query illustreert het filteren van alle `person` van `name` &quot;Smith&quot;, die informatie van over twee geneste fragmenten terugkeert - `company` en `employee`.
 
 **Voorbeeldquery**
 
@@ -1149,10 +1150,10 @@ query {
 Deze steekproefvragen zijn gebaseerd op het project WKND. Het heeft het volgende:
 
 * Modellen voor inhoudsfragmenten zijn beschikbaar onder:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Inhoudsfragmenten (en andere inhoud) beschikbaar onder:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1160,7 +1161,7 @@ Deze steekproefvragen zijn gebaseerd op het project WKND. Het heeft het volgende
 
 ### Voorbeeldquery voor alle inhoudsfragmenten van een bepaald model met de opgegeven eigenschappen {#sample-wknd-all-model-properties}
 
-Deze voorbeeldquery vraagt om:
+Met deze voorbeeldquery wordt het volgende gevraagd:
 
 * voor alle inhoudfragmenten van het type `article`
 * met de `path`en `author` eigenschappen.
@@ -1241,7 +1242,7 @@ Deze query vraagt om:
 
 ### Voorbeeldquery voor één inhoudsfragment van een bepaald model {#sample-wknd-single-content-fragment-of-given-model}
 
-Deze voorbeeldquery vraagt om:
+Met deze voorbeeldquery wordt het volgende gevraagd:
 
 * voor één inhoudsfragment van type `article` op een bepaald pad
    * in dat pad, alle indelingen van inhoud:
@@ -1271,7 +1272,7 @@ Deze voorbeeldquery vraagt om:
 
 ### Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model {#sample-wknd-content-fragment-model-from-model}
 
-Deze voorbeeldquery vraagt om:
+Met deze voorbeeldquery wordt het volgende gevraagd:
 
 * voor één inhoudsfragment
    * details van het onderliggende inhoudsfragmentmodel
@@ -1332,7 +1333,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`.
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`, met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`.
 
 ```graphql
 {
@@ -1588,7 +1589,7 @@ query {
 }
 ```
 
-### Voorbeeldquery voor inhoudfragmentvariaties van een bepaald model waaraan een specifieke tag is gekoppeld{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Voorbeeldquery voor variaties van inhoudsfragmenten van een bepaald model waaraan een specifieke tag is gekoppeld{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Deze query vraagt om:
 
@@ -1666,7 +1667,7 @@ De basisvelden voor het bedrijf zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Bedrijfsnaam | Tekst met één regel |  |
+| Bedrijfsnaam | Tekst met één regel | |
 | CEO | Fragmentverwijzing (enkele) | [Persoon](#model-person) |
 | Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
 
@@ -1676,9 +1677,9 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Naam | Tekst met één regel |  |
-| Voornaam | Tekst met één regel |  |
-| Awards | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
+| Naam | Tekst met één regel | |
+| Voornaam | Tekst met één regel | |
+| Uitreiking | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
 
 #### Uitreiking {#model-award}
 
@@ -1686,8 +1687,8 @@ De velden waarin een onderscheiding wordt gedefinieerd, zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Sneltoets/id | Tekst met één regel |  |
-| Titel | Tekst met één regel |  |
+| Sneltoets/id | Tekst met één regel | |
+| Titel | Tekst met één regel | |
 
 #### Plaats {#model-city}
 
@@ -1695,10 +1696,10 @@ De velden voor het definiëren van een stad zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Naam | Tekst met één regel |  |
-| Land | Tekst met één regel |  |
-| Bevolking | Getal |  |
-| Categorieën | Tags |  |
+| Naam | Tekst met één regel | |
+| Land | Tekst met één regel | |
+| Bevolking | Getal | |
+| Categorieën | Tags | |
 
 ### Voorbeeldinhoudsfragmenten {#sample-content-fragments}
 
@@ -1714,9 +1715,9 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 
 #### Persoon {#fragment-person}
 
-| Naam | Voornaam | Awards |
+| Naam | Voornaam | Uitreiking |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
+| Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Tussenruimte |  Gameblitz<br>Gamestar |
 | Marsh |  Duke |   |   |

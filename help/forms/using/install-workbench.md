@@ -5,9 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ Dit document bevat instructies voor het installeren en configureren van AEM Form
 
 Dit document is bedoeld voor beheerders of ontwikkelaars die verantwoordelijk zijn voor het installeren, configureren, beheren of implementeren van Workbench. Hier vindt u ook informatie over het configureren van uw systeem ter ondersteuning van uw geüpgrade AEM Forms-processen. De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die dit document leest vertrouwd is met het Microsoft® Windows® besturingssysteem.
 
-## Extra informatie {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de slag te gaan met AEM Forms.
 <table>
@@ -158,13 +159,13 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 
    >[!NOTE]
    >
-   U kunt Designer dat met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
+   >U kunt Designer dat met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
 
 1. Accepteer de standaardmap zoals deze wordt weergegeven of klik op Kiezen en navigeer naar de map waarin u Workbench wilt installeren. Klik vervolgens op Volgende.
 
    >[!NOTE]
    >
-   Het pad naar de installatiemap mag geen # (pound)- en $ (dollar)-tekens bevatten.
+   >Het pad naar de installatiemap mag geen # (pound)- en $ (dollar)-tekens bevatten.
 
 1. Controleer het overzicht van de voorinstallatie en klik op Installeren. In het installatieprogramma wordt de voortgang van de installatie weergegeven.
 1. Controleer het installatieoverzicht. Selecteer AEM Forms Workbench starten als u Workbench wilt starten en klik vervolgens op Volgende.
@@ -184,7 +185,7 @@ Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meesta
 
 >[!NOTE]
 >
-Als u AEM Forms hebt geconfigureerd voor gebruik van de EMC Documentum® of IBM® FileNet Repository Provider en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in AEM beheerconsole voor formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op als username@Repository.
+>Als u AEM Forms hebt geconfigureerd voor gebruik van de EMC Documentum® of IBM® FileNet Repository Provider en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in AEM beheerconsole voor formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op als username@Repository.
 
 ### Instellingen voor time-out configureren {#configuring-timeout-settings}
 
@@ -196,7 +197,7 @@ Als u Workbench via HTTPS wilt verbinden met een AEM Forms-server, moet u ervoor
 
 >[!NOTE]
 >
-[Workbench_HOME] vertegenwoordigt de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+>[Workbench_HOME] vertegenwoordigt de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in het certificaat is opgegeven. Deze naam is doorgaans de volledig gekwalificeerde hostnaam.
 
@@ -205,7 +206,7 @@ Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in he
 
    >[!NOTE]
    >
-   Als u het certificaat wilt exporteren, opent u een webbrowser en meldt u zich aan bij beheerconsole. Installeer het certificaat in de browser en exporteer het certificaat vanuit de browser naar een tijdelijke opslaglocatie (of rechtstreeks naar de [Workbench_HOME]/workbench/jre/lib/security directory).
+   >Als u het certificaat wilt exporteren, opent u een webbrowser en meldt u zich aan bij beheerconsole. Installeer het certificaat in de browser en exporteer het certificaat vanuit de browser naar een tijdelijke opslaglocatie (of rechtstreeks naar de [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. Het certificaat kopiëren naar de [Workbench_HOME]/workbench/jre/lib/security directory.
 

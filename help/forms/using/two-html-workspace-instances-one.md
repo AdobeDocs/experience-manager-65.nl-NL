@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
@@ -20,9 +21,9 @@ AEM Forms-beheerders passen de werkruimte aan om twee verschillende URL&#39;s te
 
 Voer de volgende stappen uit om de AEM Forms-werkruimte te configureren.
 
-1. Installeer het ontwikkelingspakket van de AEM Forms-werkruimte op uw server. Zie [dev-pakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)voor instructies om deze te maken.
+1. Installeer het ontwikkelingspakket van de AEM Forms-werkruimte op uw server. Zie [dev-pakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), voor instructies om het te creëren.
 1. Meld u als beheerder aan bij CRXDE Lite door toegang te krijgen tot `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. De knooprijen van het exemplaar bij /content en deeg bij /content. Naam knooppunt wijzigen in ws2. Klik op **[!UICONTROL Save all]**. In eigenschappen van dit knooppunt wijzigt u de waarde van `sling:resourceType` tot en met ws2. Klik op **[!UICONTROL Save all]**.
+1. De knooprijen van het exemplaar bij /content en deeg bij /content. Naam knooppunt wijzigen in ws2. Klik op **[!UICONTROL Save all]**. In eigenschappen van dit knooppunt wijzigt u de waarde van `sling:resourceType` naar ws2. Klik op **[!UICONTROL Save all]**.
 
 1. Kopieer de mappenvensters van /libs en plak deze op /apps. Wijzig de naam van de map in ws2. Klik op **[!UICONTROL Save all]**.
 1. In `GET.jsp` om `/apps/ws2`, brengt u de volgende codewijzigingen aan. Vervang het volgende

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 3%
+source-wordcount: '1848'
+ht-degree: 0%
 
 ---
 
@@ -161,10 +162,10 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 * `@prop jcr:description` - Beschrijving van deze pagina.
 * `@prop cq:template` - Pad naar de sjabloon die is gebruikt om de pagina te maken.
 * `@prop cq:allowedTemplates` - Lijst met reguliere expressies die worden gebruikt om de paden naar de toegestane sjabloon te bepalen.
-* `@prop pageTitle` - Titel weergegeven in het dialoogvenster `<title>` tag.
+* `@prop pageTitle` - Titel weergegeven in het dialoogvenster `<title>` -tag.
 * `@prop navTitle` - Titel gebruikt in navigatie.
 * `@prop hideInNav` - Geeft aan of de pagina moet worden verborgen in de navigatie.
-* `@prop onTime` - Tijdstip waarop deze pagina geldig wordt.
+* `@prop onTime` - Tijd waarop deze pagina geldig wordt.
 * `@prop offTime` - Tijd waarop deze pagina ongeldig wordt.
 * `@prop cq:lastModified` - Datum waarop de pagina (of de bijbehorende alinea&#39;s) voor het laatst is gewijzigd.
 * `@prop cq:lastModifiedBy` - Laatste gebruiker om de pagina (of de alinea&#39;s) te wijzigen.
@@ -172,7 +173,7 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 
 >[!NOTE]
 >
->Het gebruik van dit type is niet verplicht voor pagina-inhoud.
+>Het is niet verplicht voor pagina-inhoud om dit type te gebruiken.
 
 **Definitie**
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
@@ -232,7 +233,7 @@ Definieert een CQ-component.
 * `@prop dialogPath` - Primair dialoogvenster (alternatief voor dialoogvenster).
 * `@node design_dialog` - Het dialoogvenster Ontwerpen.
 * `@prop cq:cellName` - Naam van de ontwerpcel.
-* `@prop cq:isContainer` - Geeft aan of het een containercomponent is. Hiermee worden de celnamen van onderliggende componenten gedwongen in plaats van padnamen te worden gebruikt. De `parsys` is een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
+* `@prop cq:isContainer` - Geeft aan of het een containercomponent is. Hiermee worden de celnamen van onderliggende componenten gedwongen in plaats van padnamen te worden gebruikt. Bijvoorbeeld de `parsys` is een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Indien waar (true), geen decoratie `div` -tags worden getekend wanneer deze component wordt opgenomen.
 * `@node cq:editConfig` - De configuratie die de parameters voor de bewerkbalk definieert.
 * `@node cq:childEditConfig` - De bewerkingsconfiguratie die wordt overgeërfd door onderliggende componenten.
@@ -316,7 +317,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 
 Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebruikt als een id voor slepen en neerzetten.
 
-* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijvoorbeeld: `["image/*"]`
+* `@prop accept` - Lijst met MIME-typen die door dit neerzetdoel worden geaccepteerd, bijvoorbeeld `["image/*"]`
 * `@prop groups` - Lijst met slepen- en neerzetgroepen die een bron accepteren.
 * `@prop propertyName` - Naam van de eigenschap die wordt gebruikt om de verwijzing op te slaan.
 
@@ -332,7 +333,7 @@ Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebru
 
 **Beschrijving**
 
-Definieert een virtuele CQ-component. Wordt momenteel alleen gebruikt voor de nieuwe wizard voor slepen en neerzetten van de component.
+Definieert een virtuele CQ-component. Wordt momenteel alleen gebruikt voor de nieuwe wizard voor slepen en neerzetten.
 
 * `@prop jcr:title` - Titel van deze component.
 * `@prop jcr:description` - Beschrijving van dit onderdeel.
@@ -342,7 +343,7 @@ Definieert een virtuele CQ-component. Wordt momenteel alleen gebruikt voor de ni
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
 * `@prop allowedParents` - Reguliere-expressiepatronen om paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
 * `@prop allowedChildren` - Reguliere-expressiepatronen om paden te bepalen van componenten die zijn toegestaan als onderliggende componenten.
-* `@prop componentGroup` - Naam van de componentgroep voor het slepen en neerzetten van de component.
+* `@prop componentGroup` - Naam van de componentengroep voor de componentenbelemmering en daling.
 
 **Definitie**
 
@@ -444,7 +445,7 @@ Containerlijst.
 
 **Beschrijving**
 
-Het knooppunttype `cq:attributes` is voor de ContentBus-versietags. Dit knooppunt heeft alleen een reeks eigenschappen; waarvan er drie vooraf zijn gedefinieerd: &quot;gemaakt&quot;, &quot;csd&quot; en &quot;tijdstempel&quot;.
+Het knooppunttype `cq:attributes` is voor de ContentBus versietags. Dit knooppunt heeft alleen een reeks eigenschappen, waarvan er drie vooraf zijn gedefinieerd: &quot;created&quot;, &quot;csd&quot; en &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Tijdstempel voor het maken van de versiegegevens, meestal het tijdstip van controle van de vorige versie of het tijdstip van het maken van de pagina.
 * `@prop csd (string) mandatory copy` - csd, standaardkenmerk, kopie van de eigenschap cq:csd van het paginaknooppunt
@@ -463,11 +464,11 @@ Het knooppunttype `cq:attributes` is voor de ContentBus-versietags. Dit knooppun
 
 **Beschrijving**
 
-Het knooppunttype `cq:contentPage` bevat de eigenschappen en onderliggende knoopdefinities voor ContentBus-inhoudspagina&#39;s. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
+Het knooppunttype `cq:contentPage` Bevat de eigenschappen en de definities van de kindknoop voor de inhoudspagina&#39;s van ContentBus. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
 
 De items in een `cq:Cq4ContentPage` zijn:
 
-* `@prop cq:csd` - De ContentBus-CSD van de pagina.
+* `@prop cq:csd` - De ContentBi-CSD van de pagina.
 * `@node cq:content` - De inhoud van de pagina. Dit onderliggende knooppunt bestaat niet als het paginaknooppunt de status &quot;Bestaande zonder inhoud&quot; of &quot;Verwijderd&quot; heeft.
 * `@node cq:attributes` - De lijst met paginakenmerken, die voorheen versietags werden genoemd. Dit knooppunt is verplicht voor het type cq:contentPage. Het attributenknooppunt is versioned, wanneer het paginaknooppunt is versioned.
 
@@ -580,7 +581,7 @@ Definieert een LiveSync-mix. Als een knooppunt betrokken is bij een LiveRelation
 
 Definieert een LiveSyncCanceled-mix. Annuleer het gedrag LiveSync van een live copy (gecontroleerd) knooppunt dat mogelijk betrokken is bij een LiveRelationship vanwege een van de bovenliggende knooppunten.
 
-* `@prop cq:isCancelledForChildren` - Hiermee wordt gedefinieerd of een LiveSync wordt geannuleerd. ook voor kinderen.
+* `@prop cq:isCancelledForChildren` - Hiermee wordt gedefinieerd of een LiveSync wordt geannuleerd, ook voor onderliggende objecten.
 
 **Definitie**
 
@@ -650,7 +651,7 @@ Bepaalt de informatie van de replicatiestatus mixin.
 
 * `@prop cq:lastPublished`- De datum waarop de pagina voor het laatst is gepubliceerd (niet meer gebruikt).
 * `@prop cq:lastPublishedBy`- De gebruiker die de pagina als laatste heeft gepubliceerd (niet meer gebruikt).
-* `@prop cq:lastReplicated` - De datum waarop de pagina voor het laatst is gerepliceerd.
+* `@prop cq:lastReplicated` - De datum waarop de pagina voor het laatst is herhaald.
 * `@prop cq:lastReplicatedBy` - De gebruiker die de pagina als laatste heeft gerepliceerd.
 * `@prop cq:lastReplicationAction` - De replicatieactie: activeren of deactiveren.
 * `@prop cq:lastReplicationStatus` - De replicatiestatus (niet meer gebruikt).

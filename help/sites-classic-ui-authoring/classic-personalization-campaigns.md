@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ In dit document worden de verschillende elementen beschreven waaruit campagnes b
 * [Openingspagina&#39;s](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Doelaanbiedingen](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Werken met de manager van de Campagne van de Marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-* [Inzicht in segmentering](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
+* [Segmentering begrijpen](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [Uw campagne instellen](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 Het beheer van campagnes bestaat uit verschillende elementen:

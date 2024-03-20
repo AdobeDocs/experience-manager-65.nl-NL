@@ -1,14 +1,15 @@
 ---
 title: Back-upstrategie voor Connector voor EMC Documentum&reg; gebruikers
-description: Controleren hoe u een back-upstrategie voor Connector voor EMC Documentum&reg maakt. gebruikers.
+description: Controleer hoe u een back-upstrategie maakt voor Connector voor EMC Documentum&reg; gebruikers.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b759b936-5907-4311-a5cc-60f321476368
-source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -25,4 +26,4 @@ Maak een back-up van uw AEM formulieromgeving met behulp van de ECM-opslagplaats
 Herstel AEM formulieromgeving met behulp van ECM-opslagruimte en voer de volgende taken uit:
 
 * Uw respectievelijke ECM-systeem herstellen door de instructies in [De EMC Documentum® Content Server herstellen](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
-* Herstel AEM formulieren door de instructies in dit document op te volgen.
+* U kunt AEM formulieren herstellen door de instructies in dit document op te volgen.

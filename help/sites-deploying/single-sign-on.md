@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -80,19 +81,20 @@ Om SSO voor een AEM instantie te vormen, vormt u [SSO-verificatiehandler](/help/
 >
 >Als u ook de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) met de Microsoft® Internet Information Server (IIS), dan wordt de extra configuratie vereist in:
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-In `disp_iis.ini` set: (zie [Dispatcher installeren met de Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) voor volledige informatie)
+>In `disp_iis.ini` set:
+>(zie [Dispatcher installeren met de Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) voor volledige informatie)
 >
-* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
-* `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
+>* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
+>* `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
 >
-In IIS:
+>In IIS:
 >
-* disable **Anonieme toegang**
+>* disable **Anonieme toegang**
 >
-* enable **Geïntegreerde Windows-verificatie**
+>* enable **Geïntegreerde Windows-verificatie**
 >
 
 U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door te gebruiken **Authenticator** optie van de Console van Felix; bijvoorbeeld:
@@ -151,7 +153,7 @@ Of u kunt de volgende krullingsopdracht gebruiken om de `TestHeader` header naar
 
 >[!NOTE]
 >
-Wanneer u de aanvraagparameter in een browser gebruikt, ziet u slechts een deel van de HTML - zonder CSS. Dit komt omdat alle verzoeken van de HTML zonder de verzoekparameter worden gedaan.
+>Wanneer u de aanvraagparameter in een browser gebruikt, ziet u slechts een deel van de HTML - zonder CSS. Dit komt omdat alle verzoeken van de HTML zonder de verzoekparameter worden gedaan.
 
 ## Koppelingen AEM afmelden verwijderen {#removing-aem-sign-out-links}
 

@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ Om het voor klanten veiliger en gemakkelijker te maken om te begrijpen welke geb
 
 >[!NOTE]
 >
-Dit beleid wordt slechts afgedwongen tegen het Verdelen van zoekpad-gebaseerde mechanismen. Andere gebieden van **/libs** zoals een clientbibliotheek kan worden gemarkeerd als `Internal`, maar kan nog steeds worden gebruikt met standaard clientlib inclusie. Het is belangrijk dat een klant in deze gevallen de interne classificatie blijft respecteren.
+>Dit beleid wordt slechts afgedwongen tegen het Verdelen van zoekpad-gebaseerde mechanismen. Andere gebieden van **/libs** zoals een clientbibliotheek kan worden gemarkeerd als `Internal`, maar kan nog steeds worden gebruikt met standaard clientlib inclusie. Het is belangrijk dat een klant in deze gevallen de interne classificatie blijft respecteren.
 
 #### Type-indicatoren voor CRXDE Lite-inhoud {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ In CRXDE Lite toegepaste mengsels tonen inhoudsknooppunten en bomen die als `INT
 
 >[!NOTE]
 >
-Vanaf AEM 6.5 raadt Adobe u aan de patroondetector te gebruiken om schendingen van de toegang tot inhoud te detecteren. Patroondetectorrapporten zijn gedetailleerder, detecteren meer problemen en verminderen de kans op valse positieven.
+>Vanaf AEM 6.5 raadt Adobe u aan de patroondetector te gebruiken om schendingen van de toegang tot inhoud te detecteren. Patroondetectorrapporten zijn gedetailleerder, detecteren meer problemen en verminderen de kans op valse positieven.
 >
-Zie voor meer informatie [De complexiteit van upgrades beoordelen met de patroondetector](/help/sites-deploying/pattern-detector.md).
+>Zie voor meer informatie [De complexiteit van upgrades beoordelen met de patroondetector](/help/sites-deploying/pattern-detector.md).
 
 AEM 6.5 wordt geleverd met een health check om klanten te waarschuwen als overlay- of referentieinhoud wordt gebruikt op een manier die niet in overeenstemming is met de inhoudclassificatie.
 

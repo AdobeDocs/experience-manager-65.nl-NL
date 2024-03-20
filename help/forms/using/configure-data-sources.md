@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1896'
 ht-degree: 0%
@@ -93,7 +94,7 @@ U kunt AEM gebruikersprofiel vormen gebruikend de Configuratie van de Verbinding
 
 >[!NOTE]
 >
->Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
+Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
 
 Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf` in AEM opslagplaats. Standaard worden de `conf` map bevat de `global` map waar u configuraties voor cloudservices kunt maken. U moet deze optie echter handmatig inschakelen voor cloudconfiguraties. U kunt ook extra mappen maken in `conf` om cloudserviceconfiguraties te maken en te organiseren.
 
@@ -191,8 +192,8 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 
 >[!NOTE]
 >
->Formuliergegevensmodel ondersteunt [OData versie 4](https://www.odata.org/documentation/).
->Voor geleidelijke gids om Dynamica 365 van Microsoft, online of op-gebouw te vormen, zie [Configuratie Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+Formuliergegevensmodel ondersteunt [OData versie 4](https://www.odata.org/documentation/).
+Voor geleidelijke gids om Dynamica 365 van Microsoft, online of op-gebouw te vormen, zie [Configuratie Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -206,7 +207,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 
    >[!NOTE]
    >
-   >Selecteer OAuth 2.0 authentificatietype om met de diensten van de Dynamiek van Microsoft te verbinden gebruikend eindpunt OData als de de dienstwortel.
+   Selecteer OAuth 2.0 authentificatietype om met de diensten van de Dynamiek van Microsoft te verbinden gebruikend eindpunt OData als de de dienstwortel.
 
 1. Selecteren **Maken** om de wolkenconfiguratie voor de dienst te creëren OData.
 

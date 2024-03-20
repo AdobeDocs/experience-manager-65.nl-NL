@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,8 @@ Het Beheer van de correspondentie stelt APIs bloot om brieveninstanties door de 
 
 >[!NOTE]
 >
->LetterInstanceService is een dienst OSGI en zijn instantie kan worden teruggewonnen door @Reference in Klasse Java™ of sling.getService (LetterInstanceService) te gebruiken. Klasse ) in JSP.
+>LetterInstanceService is een OSGI-service en de bijbehorende instantie kan worden opgehaald met @Reference in Java™
+>Class of sling.getService(LetterInstanceService. Klasse ) in JSP.
 
 ### getAllLetterInstances gebruiken {#using-nbsp-getallletterinstances}
 
@@ -145,7 +147,7 @@ CCR UI steunt de parameter cmLetterInstanceId, die kan worden gebruikt om brief 
 
 >[!NOTE]
 >
-U hoeft de CMLetterId of cmLetterName/State/Version niet op te geven wanneer u een correspondentie opnieuw laadt, aangezien de verzonden gegevens al alle details bevatten over de correspondentie die opnieuw wordt geladen. RandomNo wordt gebruikt om browser geheim voorgeheugenkwesties te vermijden, kunt u een timestamp als willekeurig aantal gebruiken.
+>U hoeft de CMLetterId of cmLetterName/State/Version niet op te geven wanneer u een correspondentie opnieuw laadt, aangezien de verzonden gegevens al alle details bevatten over de correspondentie die opnieuw wordt geladen. RandomNo wordt gebruikt om browser geheim voorgeheugenkwesties te vermijden, kunt u een timestamp als willekeurig aantal gebruiken.
 
 ### Ingediende brief openen {#opening-submitted-letter-instance}
 

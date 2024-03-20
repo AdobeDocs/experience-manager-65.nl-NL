@@ -6,9 +6,10 @@ role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -76,6 +77,6 @@ Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructu
 >[!MORELIKETHIS]
 >
 >* [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s](processing-profiles.md).
->* [Metadataprofielen](/help/assets/metadata-config.md#metadata-profiles).
+>* [Metagegevensprofielen](/help/assets/metadata-config.md#metadata-profiles).
 >* [Videoprofielen](video-profiles.md).
 >* [Dynamic Media-afbeeldingsprofielen](image-profiles.md).

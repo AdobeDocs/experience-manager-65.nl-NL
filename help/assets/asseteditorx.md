@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 13%
+source-wordcount: '653'
+ht-degree: 12%
 
 ---
 
@@ -196,7 +197,7 @@ In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagege
    </div>
    ```
 
-1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Een component bewerkbaar maken, in CRXDE Lite, voegt een knooppunt toe `cq:editConfig` van het primaire type `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van `DELETE` toe te voegen.
+1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Een component bewerkbaar maken, in CRXDE Lite, voegt een knooppunt toe `cq:editConfig` van het primaire type `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden toe te voegen `cq:actions` met één waarde van `DELETE`.
 
 1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld `asseteditor.html`) schakelt u over naar de ontwerpmodus en schakelt u de nieuwe component in voor het alineasysteem.
 

@@ -3,9 +3,10 @@ title: Vorm RTE voor veelvoudige op zijn plaats redacteurs.
 description: U kunt meerdere lokale editors maken in Adobe Experience Manager door de Rich Text Editor te configureren.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -68,20 +69,20 @@ Voer de volgende stappen uit om meerdere editors te configureren:
 
 1. Onder `cq:childEditors` knoop, creeer een knoop voor elke op zijn plaats redacteur:
 
-   * Naam: De naam van elke knoop is de naam van het bezit dat het vertegenwoordigt, zoals het geval met dalingsdoelstellingen is. Bijvoorbeeld: `image` en `text`.
+   * Naam: De naam van elk knooppunt is de naam van de eigenschap die het vertegenwoordigt, net als bij neerzetdoelen. Bijvoorbeeld: `image` en `text`.
    * Type: `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Er is een correlatie tussen de gedefinieerde neerzetdoelen en de onderliggende editors. De naam van de `cq:ChildEditorConfig` knooppunt wordt beschouwd als doel-id voor neerzetten, voor gebruik als parameter voor de geselecteerde onderliggende editor. Als het bewerkbare subgebied bijvoorbeeld geen neerzetdoel heeft in een tekstcomponent, wordt de naam van de onderliggende editor nog steeds beschouwd als een id om het overeenkomende bewerkbare gebied te identificeren.
+   >Er is een correlatie tussen de gedefinieerde neerzetdoelen en de onderliggende editors. De naam van `cq:ChildEditorConfig` knooppunt wordt beschouwd als doel-id voor neerzetten, voor gebruik als parameter voor de geselecteerde onderliggende editor. Als het bewerkbare subgebied bijvoorbeeld geen neerzetdoel heeft in een tekstcomponent, wordt de naam van de onderliggende editor nog steeds beschouwd als een id om het overeenkomende bewerkbare gebied te identificeren.
 
-1. Op elk van deze knooppunten (`cq:ChildEditorConfig`) definieert u de eigenschappen:
+1. Op elk van deze knooppunten (`cq:ChildEditorConfig`) de eigenschappen definiëren:
 
    * Naam: `type`.
-   * Waarde: de naam van de geregistreerde interne editor; bijvoorbeeld: `image` en `text`.
+   * Waarde: de naam van de geregistreerde interne editor, bijvoorbeeld `image` en `text`.
 
    * Naam: `title`.
-   * Waarde: De titel die wordt weergegeven in de keuzelijst met componenten van de beschikbare editors. Bijvoorbeeld: `Image` en `Text`.
+   * Waarde: de titel die wordt weergegeven in de keuzelijst met componenten van de beschikbare editors. Bijvoorbeeld: `Image` en `Text`.
 
 ### Aanvullende configuratie voor Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
@@ -102,7 +103,7 @@ De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aang
 
 >[!NOTE]
 >
->Voor RTE geldt echter dat de `configPath` eigenschap wordt ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere gebruikersinterfacedialogen van de component te steunen.
+>Voor RTE geldt echter dat `configPath` eigenschap wordt ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere gebruikersinterfacedialogen van de component te steunen.
 
 >[!CAUTION]
 >
@@ -114,9 +115,8 @@ U kunt de code van deze pagina vinden op [aem-authoring-hybrideditors-project op
 
 ## Een interne editor toevoegen {#add-an-in-place-editor}
 
-Zie het document voor algemene informatie over het toevoegen van een interne editor [pagina&#39;s ontwerpen aanpassen](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Zie het document voor algemene informatie over het toevoegen van een interne editor [paginaontwerp aanpassen](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
 >[!MORELIKETHIS]
 >
 >* [Rich Text Editor in Experience Manager configureren](/help/sites-administering/rich-text-editor.md).
-

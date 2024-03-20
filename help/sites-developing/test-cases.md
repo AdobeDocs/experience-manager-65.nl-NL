@@ -7,9 +7,10 @@ topic-tags: testing
 content-type: reference
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -29,8 +30,8 @@ Uw testgevallen moeten zijn gebaseerd op:
 
 De tests moeten duidelijk omschrijven:
 
-* vereisten; deze kunnen betrekking hebben op specifieke systemen , configuraties of testervaring .
-* te volgen stappen; op een passend niveau van gedetailleerdheid.
+* Vereisten; deze kunnen specifieke systemen, configuraties, of testervaring behandelen.
+* Te volgen stappen, op een passend detailniveau.
 * Verwachte resultaten.
 * Duidelijke criteria voor slagen of zakken.
 
@@ -41,7 +42,7 @@ Het vooruitzicht om testgevallen te automatiseren is aantrekkelijk omdat het her
 Het automatiseren van testgevallen is echter een belangrijke investering, dus moeten bepaalde aspecten in overweging worden genomen:
 
 * Vereis tijd, inspanning, en ervaring aan opstelling en vorm.
-* Als browser wordt gebaseerd, is er een verhoogd risico op problemen wanneer browser updates worden geïnstalleerd; meer tijd nodig hebben om te corrigeren.
+* Als browser wordt gebaseerd, is er een verhoogd risico op problemen wanneer browser updates worden geïnstalleerd; het vereisen van verdere tijd om te verbeteren.
 * Alleen haalbaar voor grote projecten.
 * Goed als er meerdere releases worden gegenereerd voor tests of in het langetermijnreleaseplan.
 

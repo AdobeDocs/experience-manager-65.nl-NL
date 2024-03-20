@@ -10,7 +10,8 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c30630f0cd561256414a2883d29c9ee4be470ce1
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '11027'
 ht-degree: 1%
@@ -744,7 +745,7 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 >Het afspelen van standaardaudio kan ook afhankelijk zijn van de instelling in de volgende browsers:
 >
 >* Chrome - De standaardaudio die in de video is ingesteld, wordt afgespeeld.
-* Safari - Als de standaardtaal in Safari wordt geplaatst, wordt de audio gespeeld met de vastgestelde standaardtaal, als beschikbaar met manifest van de video. Anders wordt de standaardaudio afgespeeld die is ingesteld als onderdeel van de eigenschappen van een video.
+>* Safari - Als de standaardtaal in Safari wordt geplaatst, wordt de audio gespeeld met de vastgestelde standaardtaal, als beschikbaar met manifest van de video. Anders wordt de standaardaudio afgespeeld die is ingesteld als onderdeel van de eigenschappen van een video.
 
 **U kunt als volgt de standaardaudio instellen voor een video met meerdere audiotracks:**
 
@@ -773,7 +774,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
 >[!NOTE]
 >
-Het standaardtabblad voor voorvertoningen van Experience Managers geeft geen meerdere ondertitels en audiotracks weer. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
+>Het standaardtabblad voor voorvertoningen van Experience Managers geeft geen meerdere ondertitels en audiotracks weer. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
 
 **Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks:**
 
@@ -852,7 +853,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 >[!IMPORTANT]
 >
-Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
+>Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
@@ -860,7 +861,7 @@ Ondertiteling met gesloten deuren maakt ook een betere toegankelijkheid mogelijk
 
 >[!NOTE]
 >
-De videospeler die u gebruikt moet de vertoning van titels steunen.
+>De videospeler die u gebruikt moet de vertoning van titels steunen.
 
 Zie ook [Toegankelijkheid in Dynamic Media](/help/assets/accessibility-dm.md).
 
@@ -888,7 +889,7 @@ Zie [Statische (niet-grafische) inhoud serveren](https://experienceleague.adobe.
 
    >[!NOTE]
    >
-   Voor algemene ondersteuning van videoondertitels in meerdere talen, vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u voor elke taal die u wilt ondersteunen, een oproep doet.
+   >Voor algemene ondersteuning van videoondertitels in meerdere talen, vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u voor elke taal die u wilt ondersteunen, een oproep doet.
 
    Over het algemeen wilt u het VTT-bestand van het bijschrift dezelfde naam geven als het videobestand en dit bestand toevoegen met de landinstelling van de taal, zoals -EN, -FR of -DE. Op deze manier kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
 
@@ -919,7 +920,7 @@ U kunt lange-vormvideo&#39;s gemakkelijker bekijken en navigeren door hoofdstukm
 
 >[!NOTE]
 >
-De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
+>De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
 Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Voor instructies over het creëren van uw eigen HTML5 kijker met hoofdstuknavigatie, in de Adobe HTML SDK API van de Kijker SDK, verwijs de rubriek &quot;het Aanpassen van Gedrag Gebruikend Modifiers&quot;onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber`. Zie de [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentatie.
 

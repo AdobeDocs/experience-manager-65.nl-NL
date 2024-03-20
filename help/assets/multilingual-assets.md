@@ -6,9 +6,10 @@ feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '179'
 ht-degree: 2%
 
 ---
@@ -22,11 +23,11 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u vertaalworkflows op assets (inclusief binaire bestanden, metagegevens en tags) automatiseren om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
-Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met [!DNL Experience Manager] en projecten maken voor het vertalen van middelen in meerdere talen. [!DNL Experience Manager] ondersteunt workflows voor het vertalen van mensen en machines.
+Om vertaalworkflows te automatiseren, integreert u vertaalserviceproviders met [!DNL Experience Manager] en projecten maken voor het vertalen van middelen in meerdere talen. [!DNL Experience Manager] ondersteunt workflows voor het vertalen van mensen en machines.
 
-Menselijke vertaling: De vertaalde elementen worden geretourneerd en geïmporteerd in [!DNL Experience Manager]. Wanneer uw vertaalprovider is geïntegreerd met [!DNL Experience Manager], elementen worden automatisch verzonden tussen [!DNL Experience Manager] en de vertaalprovider.
+Menselijke vertaling: de vertaalde middelen worden geretourneerd en geïmporteerd in [!DNL Experience Manager]. Wanneer uw vertaalprovider is geïntegreerd met [!DNL Experience Manager], elementen worden automatisch verzonden tussen [!DNL Experience Manager] en de vertaalprovider.
 
-Machinevertaling: De vertaalservice zet de metagegevens en tags voor elementen direct om.
+Machinevertaling: de service voor machinevertaling zet de metagegevens en tags voor elementen direct om.
 
 Omvat vertaalde activa het volgende:
 

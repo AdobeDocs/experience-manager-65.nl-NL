@@ -4,9 +4,10 @@ description: Leer hoe te om een project van de Inhoud en van de Handel van de AE
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
 
    U kunt meer details over de aanpassing van de component van de Navigatie in vinden [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) en in de [Uitbreidingskader](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentatie van de PWA Studio.
 
-1. De Apollo-client verwacht het eindpunt van AEM GraphQL op `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, pas de configuratie UPWARD van uw toepassing van de PWA Studio aan: a. Naar `pwa-root/.env`, voeg de variabele AEM_CFM_GRAPHQL toe, en pas het aan punt aan uw AEM Punt van de Fragmenten GraphQL van de Inhoud aan.
+1. De Apollo-client verwacht het eindpunt van AEM GraphQL op `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, pas de configuratie UPWARD van uw toepassing van de PWA Studio aan: a. aan `pwa-root/.env`, voeg de variabele AEM_CFM_GRAPHQL toe, en pas het aan punt aan uw AEM Punt van de Fragmenten GraphQL van de Inhoud aan.
 
    Voorbeeld: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -106,7 +107,7 @@ Hier vindt u volledige voorbeelden van beide configuraties: <https://github.com/
 
 Om het eindpunt van GraphQL te tonen, stelde de Adobe sommige modellen van het Fragmentmodel van de steekproefinhoud en gegevens door middel van een inhoudspakket voor. Deze stukken werken samen met de React Components die van de uitbreiding van de PWA Studio wordt voorzien.
 
-## Het gebruik {#how-to-use}
+## Hoe wordt het gebruikt {#how-to-use}
 
 Deze extensie wordt beschouwd als een voorbeeldimplementatie voor het tot stand brengen van een verbinding tussen een PWA Studio-toepassing en AEM om inhoud op te halen en weer te geven via GraphQL.
 

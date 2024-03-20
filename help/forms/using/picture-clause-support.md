@@ -8,7 +8,8 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 HTML5-formulieren ondersteunen de XFA-afbeeldingsvoorwaarde voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen. De volgende uitdrukkingen van de Beeldclausule worden gesteund:
 
-* category (locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
+* category (locale){picture-clause} | category (locale){picture-clause} | category (locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]

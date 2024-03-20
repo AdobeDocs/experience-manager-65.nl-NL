@@ -9,10 +9,11 @@ docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 4%
+source-wordcount: '548'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +23,7 @@ In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige
 
 Zie ook [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panoramisch beeld2](assets/panoramic-image2.png)
 
 ## Elementen uploaden voor gebruik met de Panorama-viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 

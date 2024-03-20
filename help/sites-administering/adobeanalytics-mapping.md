@@ -7,9 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1449'
 ht-degree: 0%
 
 ---
@@ -197,9 +198,9 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, kunt u **AEM** heeft de vo
 >
 >Bijvoorbeeld naast `prop3` u kunt toevoegen:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-om de *titel* van een pagina samengevoegd met de *sitesectie* gebruiken *:* (dubbele punt) en vooraf voorzien van *Adobe* als `prop3`
+>om de *titel* van een pagina samengevoegd met de *sitesectie* gebruiken *:* (dubbele punt) en vooraf voorzien van *Adobe* als `prop3`
 >
 
 >[!CAUTION]
 >
-Er kan slechts één CQ-variabele op elk gewenst moment aan een Adobe Analytics-variabele worden toegewezen.
+>Er kan slechts één CQ-variabele op elk gewenst moment aan een Adobe Analytics-variabele worden toegewezen.

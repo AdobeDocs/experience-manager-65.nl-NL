@@ -7,7 +7,8 @@ topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -116,7 +117,7 @@ Red Hat® Linux® gebruikt een algoritme voor geheugenbeheer met de naam Transpa
 >Raadpleeg de volgende bronnen:
 >
 >* Raadpleeg voor meer informatie over transparante, grote pagina&#39;s op Red Hat® Linux® [artikel](https://access.redhat.com/solutions/46111).
-* Voor Linux® tuning tips raadpleegt u deze [artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>* Voor Linux® tuning tips raadpleegt u deze [artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 >
 
 ## Behoud van de opslagplaats {#maintaining-the-repository}

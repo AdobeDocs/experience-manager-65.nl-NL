@@ -3,12 +3,12 @@ title: Aanbevolen werkwijzen voor het werken met adaptieve formulieren
 description: Hierin worden de beste praktijken beschreven voor het opzetten van een AEM Forms-project, het ontwikkelen van adaptieve formulieren en het optimaliseren van de prestaties voor het AEM Forms-systeem.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 474a14a247afecdd8415f75997279d1ecd394cda
 workflow-type: tm+mt
-source-wordcount: '4668'
+source-wordcount: '5504'
 ht-degree: 0%
 
 ---
@@ -355,5 +355,66 @@ Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk 
 
 * Gebruik een beveiligde externe opslagruimte, zoals een database, om gegevens op te slaan uit concepten en verzonden formulieren. Zie [Externe opslag voor concepten en verzonden formuliergegevens configureren](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Met de component Voorwaarden en Voorwaarden van het gebruik kunt u expliciete toestemming van de gebruiker nemen voordat u automatisch opslaat. In dit geval schakelt u automatisch opslaan alleen in als de gebruiker akkoord gaat met de voorwaarden in de component Voorwaarden.
+
+## Kies de Redacteur van de Regel, de Redacteur van de Code, of de Bibliotheken van de Cliënt van de Douane voor uw Aangepast Vorm {#RuleEditor-CodeEditor-ClientLibs}
+
+### Regeleditor {#rule-editor}
+
+<!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
+
+De AEM Forms Rule Editor biedt een visuele interface voor het maken en beheren van regels, waardoor er minder behoefte is aan uitgebreide codering. Het kan vooral nuttig voor bedrijfsgebruikers of vormontwerpers zijn die geen geavanceerde programmeringsvaardigheden kunnen hebben maar bedrijfsregels binnen de vormen moeten bepalen en handhaven, hier bespreken wij weinig gebruiksgevallen waar de regelredacteur u toestaat:
+
+* <!-- Allows you --> Om bedrijfsregels voor uw vormen zonder de behoefte aan uitgebreide programmering te bepalen.
+* <!-- Use the Rule Editor when you need --> Voorwaardelijke logica implementeren in uw formulieren. Dit omvat het tonen of verbergen van formulierelementen, het wijzigen van veldwaarden op basis van bepaalde voorwaarden of het dynamisch wijzigen van het gedrag van uw formulieren.
+* <!--When you want --> Om de regels van de gegevensbevestiging op vormbijdragen af te dwingen, kan de Redacteur van de Regel worden gebruikt om bevestigingsvoorwaarden te bepalen.
+* <!-- When you need --> Als u uw formulieren wilt integreren met externe gegevensbronnen (FDM) of services, kunt u in de Regeleditor regels definiëren voor het ophalen, weergeven of bewerken van gegevens tijdens formulierinteracties.
+* <!-- If you want -->Als u dynamische en interactieve formulieren wilt maken die reageren op handelingen van gebruikers, kunt u in de Regeleditor regels definiëren die het gedrag van formulierelementen in real-time bepalen.
+
+De Redacteur van de regel is beschikbaar voor zowel de Componenten van de Stichting van AEM Forms als de Componenten van de Kern.
+
+### Code-editor {#code-editor}
+
+De Redacteur van de code is een hulpmiddel binnen Adobe Experience Manager (AEM) Forms dat u toestaat om douanescripts en code voor complexere en geavanceerdere functionaliteit in uw vormen te schrijven, hier bespreken wij weinig gebruiksgevallen:
+
+* Wanneer u aangepaste logica of gedrag aan de clientzijde moet implementeren die verder gaat dan de mogelijkheden van de AEM Forms Rule Editor. Met de Code-editor kunt u JavaScript-code schrijven voor het verwerken van complexe interacties, berekeningen of validaties.
+* Als uw formulier verwerking op de server of integratie met externe systemen vereist, kunt u met de Code-editor een aangepast serverscript schrijven. U kunt tot guideBridge API in code redacteur toegang hebben om het even welke complexe logica op vormgebeurtenissen en voorwerpen uit te voeren.
+* Wanneer u hoogst aangepaste gebruikersinterfaces vereist die voorbij de standaardmogelijkheden van de componenten van AEM Forms gaan, staat de Redacteur van de Code u toe om douanestijlen, gedrag uit te voeren, of zelfs douaneformuliercomponenten tot stand te brengen.
+* Als in uw formulier asynchrone bewerkingen worden uitgevoerd, zoals het laden van asynchrone gegevens, kunt u de Code-editor gebruiken om deze bewerkingen te beheren met behulp van aangepaste asynchrone JavaScript-code.
+
+Het is belangrijk om op te merken dat het gebruiken van de Redacteur van de Code een goed inzicht in architectuur JavaScript en AEM Forms vereist. Bovendien, wanneer het uitvoeren van douanecode, zorg ervoor dat u beste praktijken volgt, zich aan veiligheidsrichtlijnen houdt, en uw code grondig test om potentiële kwesties in productiemilieu&#39;s te verhinderen. U kunt callback voor FDM uitvoeren gebruikend code redacteur.
+
+De Redacteur van de code is beschikbaar voor de Component van de Stichting van AEM Forms slechts. Voor Aangepaste componenten van de Kern van de Vorm, kunt u douanefuncties gebruiken om uw eigen vormregels tot stand te brengen, die in de volgende sectie worden beschreven.
+
+### Aangepaste functies {#custom-client-libs}
+
+Het gebruik van aangepaste clientbibliotheken in AEM Forms (Adobe Experience Manager Forms) kan in verschillende scenario&#39;s nuttig zijn voor het verbeteren van de functionaliteit, de opmaak of het gedrag van uw formulieren. Hier volgen enkele situaties waarin aangepaste clientbibliotheken geschikt kunnen zijn:
+
+* Als u een uniek ontwerp of merk voor uw formulieren moet implementeren die verder gaan dan de mogelijkheden van de standaardopmaakopties van AEM Forms, kunt u aangepaste clientbibliotheken maken om de vormgeving te bepalen.
+* Wanneer u aangepaste logica aan de clientzijde nodig hebt, kunt u methoden in meerdere formulieren opnieuw gebruiken of gedrag dat niet met de standaard AEM Forms-functies kan worden bereikt. Dit kan bestaan uit dynamische formulierinteracties, aangepaste validatie of integratie met bibliotheken van derden.
+* U kunt de prestaties van uw formulieren verbeteren door resources aan de clientzijde te optimaliseren en te miniaturen. Met aangepaste clientbibliotheken kunt u JavaScript- en CSS-bestanden bundelen en comprimeren, waardoor de laadtijd van de pagina afneemt.
+* Wanneer u extra JavaScript-bibliotheken of -frameworks moet integreren die niet zijn opgenomen in de standaard AEM Forms-instellingen. Dit kan nodig zijn voor functies zoals verbeterde datumkiezers, grafieken of andere interactieve componenten.
+
+Voordat u besluit aangepaste clientbibliotheken te gebruiken, is het belangrijk dat u rekening houdt met de overhead voor onderhoud, mogelijke conflicten met toekomstige updates en de naleving van de aanbevolen procedures. Zorg ervoor dat uw aanpassingen goed gedocumenteerd en getest zijn om problemen tijdens upgrades of tijdens het samenwerken met andere ontwikkelaars te voorkomen.
+
+>[!NOTE]
+> De Functie van de douane is beschikbaar voor zowel de Componenten van de Stichting van AEM Forms als Componenten van de Kern.
+
+**Voordelen van Aangepaste functies:**
+
+**Aangepaste functies** een aanzienlijk voordeel bieden ten opzichte van de **Code-editor** omdat het een duidelijke scheiding tussen inhoud en code verstrekt die samenwerking verbetert en werkschema&#39;s stroomlijnt. Aanbevolen wordt om aangepaste functies te gebruiken voor de volgende voordelen:
+
+* **Naadloos versiebeheer gebruiken, zoals Git:**
+   * De isolatie van code van inhoud vermindert de conflicten van de it beduidend tijdens inhoudsbeheer en bevordert een goed georganiseerde bewaarplaats.
+   * De Functies van de douane zijn waardevol voor projecten met veelvoudige contribuanten die gelijktijdig werken.
+
+* **Technische voordelen:**
+   * Aangepaste functies bieden modulariteit en inkapseling.
+   * Modules kunnen onafhankelijk van elkaar worden ontwikkeld, getest en onderhouden.
+   * Verbetert de herbruikbaarheid en het onderhoud van code.
+
+* **Efficiënt ontwikkelingsproces:**
+   * Met modulariteit kunnen ontwikkelaars zich richten op specifieke functies.
+   * Vermindert de last van ontwikkelaars door de ingewikkeldheid van de volledige codebase voor een efficiënter ontwikkelingsproces te verminderen.
+
 
 

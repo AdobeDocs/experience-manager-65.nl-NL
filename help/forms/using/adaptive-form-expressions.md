@@ -7,7 +7,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20fb57a51e47562a290e3608a2fe080a39774998
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Adaptieve formulieren bieden een geoptimaliseerde en vereenvoudigde manier van invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven om verschillende gedragingen toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
 
-JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Zie voor de volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Zie voor de volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s [JavaScript Library API-referentie voor adaptieve formulieren.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
@@ -35,7 +35,7 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 * Als u een herhalend deelvenster wilt maken, opent u in het dialoogvenster van het deelvenster de instellingen en stelt u de waarde van het maximale telveld in op meer dan 1.
 * De minimale telwaarde van de herhalingsinstellingen van het deelvenster kan een of meer zijn, maar mag niet meer zijn dan de maximale telwaarde.
 * Wanneer een expressie verwijst naar een veld van een herhalend deelvenster, worden de veldnamen in de expressie omgezet naar het dichtstbijzijnde herhalende element.
-* Adaptieve formulieren bieden een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Zie voor de volledige lijst met functies [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* Adaptieve formulieren bieden een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Zie voor de volledige lijst met functies [JavaScript Library API-referentie voor adaptieve formulieren](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 * API&#39;s voor het manipuleren van instanties van herhalende deelvensters zijn:
 
    * Een deelvensterinstantie toevoegen: `panel1.instanceManager.addInstance()`
@@ -81,7 +81,7 @@ De expressie calculate wordt gebruikt om de waarde van een veld automatisch te b
 
 ### Klikken op uitdrukking {#click-expression}
 
-De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor een volledige lijst van de API&#39;s raadpleegt u [GuideBridge-API&#39;s](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor een volledige lijst van de API&#39;s raadpleegt u [GuideBridge-API&#39;s.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 **Van toepassing op**: Knopvelden
 
@@ -212,7 +212,7 @@ U kunt de indeling weergeven gebruiken om de gegevens in verschillende indelinge
 
 ### GuideBridge - API&#39;s en gebeurtenissen {#guidebridge-apis-and-events}
 
-GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met adaptieve formulieren in het geheugenmodel in een browser. Zie voor gedetailleerde informatie over Guide Bridge API, klassemethoden, belichte gebeurtenissen [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met adaptieve formulieren in het geheugenmodel in een browser. Zie voor gedetailleerde informatie over Guide Bridge API, klassemethoden, belichte gebeurtenissen [JavaScript Library API-referentie voor adaptieve formulieren.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Als u GuideBridge wilt gebruiken nadat het formulier is geïnitialiseerd (de `br
 
 #### GuideBridge-gebeurtenissen {#guidebridge-events}
 
-GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Zie voor meer informatie over dergelijke gebeurtenissen [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Zie voor meer informatie over dergelijke gebeurtenissen [JavaScript Library API-referentie voor adaptieve formulieren.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 Gebruik de volgende code om handlers te registreren:
 

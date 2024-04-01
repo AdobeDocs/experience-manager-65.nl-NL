@@ -11,9 +11,9 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: cbf8a5ac22049b3372a8282b9c061d7abeacc5dc
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '373'
 ht-degree: 39%
 
 ---
@@ -78,3 +78,15 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 Meld u nu aan bij Brand Portal om te zien of de gepubliceerde middelen beschikbaar zijn op de interface van Brand Portal.
 
 ![bp_landingpage](assets/bp_landingpage.png)
+
+## Gepubliceerd bestand of map weergeven op Brand Portal {#view-published-file-folder}
+
+1. Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken (afhankelijk van uw geplande datum of tijd).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Overschakelen naar lijstweergave ![Lijstweergave](assets/list-view.svg) om de huidige publicatiestatus van het element te zien.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![gegenereerde rapportstatus](assets/report-status.JPG)

@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3711'
 ht-degree: 0%
 
 ---
@@ -462,6 +462,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
 * Vanaf AEM 6.5.15 wordt de Rhino JavaScript Engine geleverd door de ```org.apache.servicemix.bundles.rhino``` bundle heeft een nieuw hoistinggedrag. Scripts die de strikte modus gebruiken (```use strict;```) moeten hun variabelen correct declareren, anders worden ze niet uitgevoerd, maar wordt er een runtimefout gegenereerd.
 
+* De taaleigenschap van het deelvenster `/content/cq:tags` node to default. Daarom is het noodzakelijk om het uit de eigenschappen vóór installatie toe te voegen.
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6520}
 

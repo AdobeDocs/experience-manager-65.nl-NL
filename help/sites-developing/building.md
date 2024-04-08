@@ -8,9 +8,9 @@ content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -199,4 +199,4 @@ De nieuwe taal (Fins) is nu beschikbaar in het tagdialoogvenster van de pagina-e
 
 >[!CAUTION]
 >
->Wanneer u een servicepack installeert, wordt de eigenschap languages van het knooppunt /content/cq:tags opnieuw ingesteld op de standaardwaarde. Daarom is het noodzakelijk om het uit de eigenschappen vóór installatie toe te voegen.
+>De taaleigenschap van het deelvenster `/content/cq:tags` node to default. Daarom is het noodzakelijk om het uit de eigenschappen vóór installatie toe te voegen.

@@ -3,7 +3,9 @@ title: Modellen voor inhoudsfragmenten maken, headless Quick Start Guide
 description: Definieer de structuur van de inhoud die u maakt en gebruikt met behulp van de mogelijkheden zonder kop in Adobe Experience Manager (AEM), met behulp van Content Fragment Models.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%

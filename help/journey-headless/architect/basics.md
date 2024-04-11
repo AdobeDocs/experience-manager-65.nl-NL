@@ -2,10 +2,13 @@
 title: Basisbeginselen van Content Modeling
 description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -149,12 +152,12 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+* [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
    * [Modellen van inhoudsfragmenten - gegevenstypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-* [Authoring van concepten](/help/sites-authoring/author.md)
+* [Concepten ontwerpen](/help/sites-authoring/author.md)
 
 * [Basisverwerking](/help/sites-authoring/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** console, maar veel/de meeste eigenschappen zijn ook relevant voor het ontwerpen **Inhoudsfragmenten** onder de **Activa** console.
 
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)

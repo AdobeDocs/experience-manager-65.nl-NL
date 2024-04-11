@@ -2,10 +2,13 @@
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
 description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -106,9 +109,9 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
-   * [Contentfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
 
       * [De configuratie toepassen op de middelenmap](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
@@ -116,7 +119,7 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
 
    * [Variaties - Inhoudsfragmenten ontwerpen](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
       * [Modellen van inhoudsfragmenten - gegevenstypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 

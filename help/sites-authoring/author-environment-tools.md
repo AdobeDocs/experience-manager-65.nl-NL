@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 3%
@@ -241,7 +243,7 @@ Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties 
 
 * Instanties van geleend en geleend materiaal die gebruikmaken van de **Referentie** component, vanaf hier kunt u naar de pagina waarnaar wordt verwezen of waarnaar wordt verwezen
 
-* [Verwijzingen naar productpagina&#39;s](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (beschikbaar bij de console Handel-Producten)
+* [Verwijzingen naar productpagina&#39;s](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (beschikbaar via de Commerce-Products console)
 * [Starten](/help/sites-authoring/launches.md) verleent toegang tot verwante lanceringen.
 * [Actieve kopieën](/help/sites-administering/msm.md) Hiermee geeft u de paden weer van alle live kopieën die op de geselecteerde bron zijn gebaseerd.
 * [Blauwdruk](/help/sites-administering/msm-best-practices.md) bevat details en diverse acties.

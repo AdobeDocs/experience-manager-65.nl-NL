@@ -1,10 +1,12 @@
 ---
 title: AEM handel - gereedheid van de GDPR
-description: Leer over de procedures om GDPR- verzoeken in AEM Handel te behandelen en hoe te om hen te gebruiken.
+description: Meer informatie over de procedures voor het verwerken van GDPR-aanvragen in AEM Commerce en over het gebruik ervan.
 contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Compliance
+role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -25,15 +27,15 @@ De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de 
 
 ![screen_shot_2018-03-22at111606](assets/screen_shot_2018-03-22at111606.jpg)
 
-Met de integratie van de Handel van de Adobe uit-van-de-doos, is AEM de ervaringslaag, die de diensten verbruikt en gegevens terugstuurt naar het platform van de klantenhandel dat op een headless wijze loopt.
+Met uit-van-de-doos integratie van Commerce van de Adobe, is AEM de ervaringslaag, die de diensten verbruikt en gegevens terug naar het platform van de klantenhandel verzendt dat op een headless wijze loopt.
 
 Voor sommige handelsplatforms, slaat de Adobe profielinformatie op ( `/home/users`) en commerciële tokens (om u aan te melden bij het handelsplatform) in AEM. Voor deze gebruiksgevallen leest u [Behandeling van GDPR-verzoeken voor het AEM Platform](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ![screen_shot_2018-03-22at111621](assets/screen_shot_2018-03-22at111621.jpg)
 
-## Afhandeling van GDPR-verzoeken om AEM handel {#handling-gdpr-requests-for-aem-commerce}
+## Afhandeling van GDPR-verzoeken om AEM Commerce {#handling-gdpr-requests-for-aem-commerce}
 
-Voor de integratie van de Salesforce-Commerce Cloud slaat AEM Commerce geen GDPR-relevante informatie op. Het verzoek doorsturen naar de [Salesforce Cloud](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
+Voor de integratie van de Salesforce-Commerce Cloud slaat AEM Commerce geen relevante GDPR-informatie op. Het verzoek doorsturen naar de [Salesforce Cloud](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
 
 Voor de integratie van hybris en HCL WebSphere® Commerce, zijn er sommige gegevens in AEM. Gebruik de [GDPR-instructies AEM Platform](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) en bedenk de volgende vragen :
 

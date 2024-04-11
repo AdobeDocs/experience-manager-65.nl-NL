@@ -2,10 +2,13 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -108,13 +111,13 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Authoring van concepten](/help/sites-authoring/author.md)
+* [Concepten ontwerpen](/help/sites-authoring/author.md)
 
 * [Basisverwerking](/help/sites-authoring/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Activa** console.
 
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
-   * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
       * [Het model van het inhoudsfragment definiëren](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 

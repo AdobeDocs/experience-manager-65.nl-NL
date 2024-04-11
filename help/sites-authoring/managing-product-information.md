@@ -7,7 +7,9 @@ topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 0%
@@ -59,12 +61,12 @@ Als u een aanvraag voor een fotoopname wilt starten, klikt u op een project en v
 
 A **Fotoproject van product** omvat de volgende out-of-the-box workflows:
 
-* **Workflow voor het maken van foto&#39;s van producten (integratie van handel)**: Deze workflow gebruikt commerciële integratie met het PIM-systeem (Product Information Management) om automatisch een opnamelijst voor de geselecteerde producten (hiërarchie) te genereren. U kunt de productgegevens weergeven als onderdeel van de metagegevens van de elementen nadat de workflow is voltooid.
+* **Product Photo Shoot (Commerce Integration) Workflow**: Deze workflow gebruikt commerciële integratie met het PIM-systeem (Product Information Management) om automatisch een opnamelijst voor de geselecteerde producten (hiërarchie) te genereren. U kunt de productgegevens weergeven als onderdeel van de metagegevens van de elementen nadat de workflow is voltooid.
 * **Workflow voor foto&#39;s van producten**: Met deze workflow kunt u een opnamelijst opgeven in plaats van afhankelijk te zijn van de integratie van de handel. De geüploade afbeeldingen worden toegewezen aan een CSV-bestand in de map met projectelementen.
 
-Gebruik de **Fotofoto van product (integratie van handel)** workflow om afbeeldingselementen toe te wijzen aan de producten in AEM. Deze workflow gebruikt commerciële integratie om de goedgekeurde afbeeldingen te koppelen aan de bestaande productgegevens op de locatie `/etc/commerce`.
+Gebruik de **Fotofoto van product (Commerce-integratie)** workflow om afbeeldingselementen toe te wijzen aan de producten in AEM. Deze workflow gebruikt commerciële integratie om de goedgekeurde afbeeldingen te koppelen aan de bestaande productgegevens op de locatie `/etc/commerce`.
 
-De **Fotofoto van product (integratie van handel)** de workflow omvat de volgende taken :
+De **Fotofoto van product (Commerce-integratie)** de workflow omvat de volgende taken :
 
 * Opnamelijst maken
 * Fotofoto uploaden
@@ -139,14 +141,14 @@ Om te vormen **Fotofoto van product** workflow:
 
 U kunt de extra taken voor de **Fotofoto van product** op dezelfde manier te werken.
 
-Voer de zelfde stappen uit om de taken in te vormen **Workflow voor het maken van foto&#39;s van producten (integratie van handel)**.
+Voer de zelfde stappen uit om de taken in te vormen **Product Photo Shoot (Commerce Integration) Workflow**.
 
 ## Een projectworkflow starten {#starting-a-project-workflow}
 
 In deze sectie wordt beschreven hoe u het beheer van productinformatie kunt integreren met uw creatieve project.
 
 1. Navigeer naar een fotofotoproject voor een product en klik op de knop **Werk toevoegen** pictogram op de **Workflows** kaart.
-1. Selecteer de **Fotofoto van product (integratie van handel)** werkstroomkaart om de **Fotofoto van product (integratie van handel)** workflow. Als de productinformatie niet beschikbaar is onder `/etc/commerce`, selecteert u de **Fotofoto van product** workflow en start de **Fotofoto van product** workflow.
+1. Selecteer de **Fotofoto van product (Commerce-integratie)** werkstroomkaart om de **Fotofoto van product (Commerce-integratie)** workflow. Als de productinformatie niet beschikbaar is onder `/etc/commerce`, selecteert u de **Fotofoto van product** workflow en start de **Fotofoto van product** workflow.
 
    ![Workflowwizard](assets/chlimage_1-140a.png)
 
@@ -333,7 +335,7 @@ Klik op de koppeling die wordt weergegeven om naar de pagina met productdetails 
 U kunt de **Fotofoto van project** workflows op basis van uw vereisten. Dit is een facultatieve, op rol-gebaseerde taak die u uitvoert om de waarde van een variabele binnen het project te plaatsen. Later, kunt u de gevormde waarde dan gebruiken om bij een besluit aan te komen.
 
 1. Klik op het AEM logo en navigeer naar **Gereedschappen** > **Workflow** > **Modellen** om de **Workflowmodellen** pagina.
-1. Selecteer de **Fotofoto van product (integratie van handel)** of de **Fotofoto van product** workflow en klik op **Bewerken** vanuit de werkbalk om de workflow te openen in de bewerkingsmodus.
+1. Selecteer de **Fotofoto van product (Commerce-integratie)** of de **Fotofoto van product** workflow en klik op **Bewerken** vanuit de werkbalk om de workflow te openen in de bewerkingsmodus.
 1. Open het zijpaneel en zoek de **Op rol gebaseerde projecttaak maken** en sleep het naar de workflow.
 
    ![Op rol gebaseerde projecttaak maken](assets/project-model-role-based.png)

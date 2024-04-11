@@ -3,7 +3,9 @@ title: AEM 6.5 Gebruikershandleiding voor beheren
 description: Ontdek hoe u een AEM-project goed kunt beheren met ondersteuning vanuit belangrijke bronnen en een uitgebreide verzameling AEM 6.5-gebruikershandleidingen.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 solution: Experience Manager, Experience Manager 6.5
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Compliance
+role: Admin,Architect,Data Architect,Developer,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 35%

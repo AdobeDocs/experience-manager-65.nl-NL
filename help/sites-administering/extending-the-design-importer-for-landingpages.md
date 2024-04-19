@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -249,7 +249,7 @@ Deze component CTA kan worden gebruikt om een tekstverbinding op de het landen p
 Ondersteunde eigenschappen
 
 * Label, met opties voor vet, cursief en onderstrepen
-* Doel-URL, ondersteunt derden en AEM URL
+* Doel-URL, ondersteunt URL van derden en AEM
 * Renderopties voor pagina (zelfde venster, nieuw venster, enzovoort)
 
 HTML-tag om de component op te nemen, klikt u door de component in de geïmporteerde postcode. Hier ziet u hoe u URL&#39;s als doel instelt, &#39;Productdetails weergeven&#39; verwijst naar label, enzovoort.
@@ -282,7 +282,7 @@ Ondersteunde eigenschappen
 
 * Uitsnijden, roteren van afbeelding
 * Tekst, beschrijving, grootte in px aanwijzen
-* Doel-URL, ondersteunt derden en AEM URL
+* Doel-URL, ondersteunt URL van derden en AEM
 * Renderopties voor pagina (zelfde venster, nieuw venster, enzovoort)
 
 HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zip. Hier wordt href toegewezen aan doel-URL, img src is de renderafbeelding, &quot;titel&quot; wordt als aanwijstekst gebruikt, enzovoort.
@@ -368,11 +368,11 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 
 ### Parsys {#parsys}
 
-De AEM parsys component is een containercomponent die andere AEM componenten kan bevatten. Het is mogelijk om een parsys component in ingevoerde HTML toe te voegen. Hierdoor kan de gebruiker bewerkbare AEM aan de bestemmingspagina toevoegen of verwijderen, zelfs nadat deze is geïmporteerd.
+De AEM component Parsys is een containercomponent die andere AEM componenten kan bevatten. Het is mogelijk om een component Parsys in ingevoerde HTML toe te voegen. Hierdoor kan de gebruiker bewerkbare AEM aan de bestemmingspagina toevoegen of verwijderen, zelfs nadat deze is geïmporteerd.
 
 Het alineasysteem biedt gebruikers de mogelijkheid om componenten toe te voegen met behulp van het hulpwerktuig.
 
-De prijsverhoging van HTML om een component in te voegen parsys ( `foundation/components/parsys`) in de HTML in het ontwerppakket:
+De prijsverhoging van HTML om een component op te nemen Parsys ( `foundation/components/parsys`) in de HTML in het ontwerppakket:
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ De prijsverhoging van HTML om een component in te voegen parsys ( `foundation/co
 
 Als u de bovenstaande markering opneemt in de HTML, gebeurt het volgende:
 
-* Voegt een AEM parsys component (stichting/componenten/parsys) in de landende pagina in die na het invoeren van het ontwerppakket wordt gecreeerd.
-* Initialiseert het hulpdekick met standaardcomponenten. De nieuwe componenten kunnen aan de landende pagina worden toegevoegd door componenten van sidekick op de parsys component te slepen.
-* Twee titelcomponenten maken ook deel uit van parsys.
+* Neemt een AEM component Parsys (stichting/componenten/parsys) in de landende pagina op die na het invoeren van het ontwerppakket wordt gecreeerd.
+* Initialiseert het hulpdekick met standaardcomponenten. De nieuwe componenten kunnen aan de landende pagina worden toegevoegd door componenten van sidekick op de component Parsys te slepen.
+* Twee titelcomponenten zijn ook deel van Parsys.
 
 ### Doel {#target}
 
@@ -441,7 +441,7 @@ Als er geen codering is opgegeven in de geïmporteerde HTML, is UTF-8 de standaa
 
 ### Bezig met overschrijven van sjabloon {#overlaying-template}
 
-De sjabloon Lege landingspagina kan worden overschreven door een sjabloon te maken op: `/apps/<appName>/designimporter/templates/<templateName>`
+De sjabloon Lege landingspagina kan worden verwijderd door een sjabloon te maken op: `/apps/<appName>/designimporter/templates/<templateName>`
 
 De stappen voor het maken van een sjabloon in AEM worden uitgelegd [hier](/help/sites-developing/templates.md).
 
@@ -543,7 +543,7 @@ Bij het importeren van het ontwerppakket kunnen er verschillende fouten optreden
 
 ### Initialisatie van hulpwerkick met relevante onderdelen voor de bestemmingspagina {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-Als het ontwerppakket een parsys componentenprijsverhoging bevat, dan na het invoeren, begint het hulpdekick landend-page relevante componenten te tonen. U kunt nieuwe componenten slepen en neerzetten op de component parsys binnen uw landende pagina. U kunt ook naar de ontwerpmodus gaan en nieuwe componenten aan het hulpstuk toevoegen.
+Als het ontwerppakket een Parsys componentenprijsverhoging bevat, dan na het invoeren, begint het hulpdekick landend-pagina relevante componenten te tonen. U kunt nieuwe componenten op de component Parsys binnen uw het landen pagina slepen en laten vallen. U kunt ook naar de ontwerpmodus gaan en nieuwe componenten aan het hulpstuk toevoegen.
 
 ### Foutberichten tijdens importeren worden weergegeven {#error-messages-displayed-during-import}
 

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 **Voor de [Mogelijkheid van Gemeenschappen](/help/communities/overview.md)**
 
-* Indien het opstellen van een [publicatiebedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [de primaire uitgever identificeren](#primary-publisher)
+* Indien het opstellen van een [uitgeverij](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [de primaire uitgever identificeren](#primary-publisher)
 
 * [De tunnelservice inschakelen](#tunnel-service-on-author)
 * [Sociale aanmelding inschakelen](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
@@ -69,7 +69,7 @@ ht-degree: 0%
 
    * Als JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * Geen gedeeld UGC-archief (door gebruiker gegenereerde inhoud):
+      * Geen gedeeld UGC-archief (door de gebruiker gegenereerde inhoud):
 
          * UGC wordt nooit herhaald
          * UGC is alleen zichtbaar op de AEM instantie of cluster waarin het is ingevoerd
@@ -84,7 +84,7 @@ AEM 6.5 Communautaire algemene vergadering omvat het communautaire pakket. Meer 
 
 Vanaf AEM 6.4 worden updates aan de Gemeenschappen geleverd als onderdeel van AEM Cumulative Fix Packs en Service Packs.
 
-Voor de meest recente updates van AEM 6.5 raadpleegt u [Adobe Experience Manager 6.4 Cumulatief repareren van pakketten en servicepacks](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+Voor de meest recente updates van AEM 6.5 raadpleegt u [Adobe Experience Manager 6.4 Cumulatief repareren van pakketten en servicepacks](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### Versiehistorie {#version-history}
 
@@ -168,7 +168,7 @@ Ga voor meer informatie naar [Werken met pakketten](/help/sites-administering/pa
 
 In AEM Communities wordt een gemeenschappelijke winkel gebruikt om UGC op te slaan en wordt deze vaak de [Storage Resource Provider (SRP)](/help/communities/working-with-srp.md). De geadviseerde plaatsingscentra bij het kiezen van een optie SRP voor de gemeenschappelijke opslag.
 
-De gemeenschappelijke opslag steunt matiging van, en analyses op UGC in het publicatiemilieu terwijl het elimineren van de behoefte aan [replicatie](/help/communities/sync.md) van UGC.
+De gemeenschappelijke opslag steunt matiging van, en analyses op UGC in het het publiceren milieu terwijl het elimineren van de behoefte aan [replicatie](/help/communities/sync.md) van UGC.
 
 * [Community Content Store](/help/communities/working-with-srp.md) : bespreekt de opslagopties voor SRP voor AEM Communities
 
@@ -358,8 +358,8 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
 
 Als u een Dispatcher gebruikt, raadpleegt u:
 
-* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) documentatie
-* [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* AEM [Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) documentatie
+* [Dispatcher installeren](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Dispatcher configureren voor Gemeenschappen](/help/communities/dispatcher.md)
 * [Bekende problemen](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

@@ -7,20 +7,20 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2078'
 ht-degree: 0%
 
 ---
 
 # Toegankelijke adaptieve formulieren maken{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
 
 ## Inleiding {#introduction}
 
-Een toegankelijk formulier is een formulier dat iedereen kan gebruiken, inclusief gebruikers met speciale behoeften. Adaptieve Forms bevat verschillende functies en mogelijkheden die de bruikbaarheid voor gebruikers met verschillende mogelijkheden verbeteren. Door toegankelijkheid in adaptieve formulieren te creëren, kan niet alleen een zo breed mogelijk publiek voor inhoud worden bereikt, maar is het ook een vereiste bij het verstrekken van documenten in geografische gebieden waar naleving van toegankelijkheidsnormen verplicht is. AEM Forms Help-formulierontwikkelaars voldoen aan de toegankelijkheidsstandaarden.
+Een toegankelijk formulier is een formulier dat iedereen kan gebruiken, inclusief gebruikers met speciale behoeften. Adaptieve Forms bevat verschillende functies en mogelijkheden die de bruikbaarheid voor gebruikers met verschillende mogelijkheden verbeteren. Door toegankelijkheid tot adaptieve formulieren te maken, is niet alleen een zo breed mogelijk publiek voor inhoud mogelijk, maar is het ook een vereiste wanneer documenten worden verstrekt in geografische gebieden waar naleving van toegankelijkheidsnormen verplicht is. AEM Forms Help-formulierontwikkelaars voldoen aan de toegankelijkheidsstandaarden.
 
 Tijdens het ontwerpen van een adaptief formulier moet de auteur de volgende punten in overweging nemen om een toegankelijke adaptieve vorm te maken:
 
@@ -43,11 +43,11 @@ Met het hulpprogramma ANDI (Accessible Name and Description Inspector) kunt u co
 * Detecteert problemen met toetsenbordtoegankelijkheid en kleurcontrast
 * Hiermee wordt de inhoud van de schermlezer duidelijk geïdentificeerd in overeenstemming met de normen
 
-ANDI werkt met alle grote internetbrowsers. Zie, [Documentatie van ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) voor gedetailleerde instructies om het hulpmiddel te vormen en te gebruiken.
+ANDI werkt met alle grote internetbrowsers. Zie [Documentatie van ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) voor gedetailleerde instructies op hoe te om het hulpmiddel te vormen en te gebruiken.
 
 ### Download en installeer het Ultramarine-Toegankelijke thema
 
-Het Ultramarijn-Toegankelijke thema is een verwijzingsthema. Hiermee kunt u demonstreren hoe u kleurcontrast en andere toegankelijkheidsgerelateerde problemen in een adaptieve vorm kunt corrigeren. Adobe raadt u aan een aangepast thema voor de productieomgeving te maken op basis van de stijlen die door uw organisatie zijn goedgekeurd. Voer de volgende stappen uit om het thema naar uw AEM-exemplaar te uploaden:
+Het Ultramarijn-Toegankelijke thema is een verwijzingsthema. Het helpt demonstreren hoe u kleurcontrast en andere toegankelijkheidsgerelateerde problemen in een adaptieve vorm kunt oplossen. Adobe raadt u aan een aangepast thema voor de productieomgeving te maken op basis van de stijlen die door uw organisatie zijn goedgekeurd. Voer de volgende stappen uit om het thema naar uw AEM-exemplaar te uploaden:
 
 1. Download het themapakket.
 1. Navigeren naar **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigatie](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM.
@@ -62,7 +62,7 @@ U moet zich richten op vier belangrijke aspecten: toetsenbordnavigatie, kleurcon
 Pas het Ultramarijn-Toegankelijke thema toe op uw bestaande adaptieve vorm. Het thema toepassen:
 
 1. Open het aangepaste formulier voor bewerking.
-1. Selecteer een component en selecteer het bovenliggende pictogram. Selecteer in het contextmenu **[!UICONTROL Adaptive Form Container]** en selecteer dan vormen pictogram.
+1. Selecteer een component en selecteer het bovenliggende pictogram. Selecteer in het contextmenu **[!UICONTROL Adaptive Form Container]** en selecteer dan het Configure pictogram.
 1. Selecteer het Ultramarijn-Toegankelijke thema in eigenschappen browser en selecteer **[!UICONTROL Save]** pictogram.
 1. Vernieuw het browservenster. Het thema wordt toegepast op het adaptieve formulier.
 
@@ -70,11 +70,11 @@ Nadat u een toegankelijk thema hebt toegepast, voert u de onderstaande aanvullen
 
 1. Voeg een betekenisvolle alternatieve tekst voor de logoafbeelding toe in het adaptieve formulier.
 
-   Geef een betekenisvolle alternatieve tekst op voor afbeeldingen in kop- en voettekstcomponenten van de adaptieve formuliersjabloon. Wanneer u de sjabloon herstelt en gebruikt om een adaptief formulier te maken, nemen de adaptieve formulieren alle correcties over die betrekking hebben op toegankelijkheid en die worden toegepast op de kop- en voettekst van de sjabloon.  Breng voor een bestaand adaptief formulier wijzigingen aan op het niveau van het adaptieve formulier. Wijzigingen in een adaptief formuliersjabloon worden niet automatisch doorgevoerd in een bestaand adaptief formulier.
+   Geef een betekenisvolle alternatieve tekst op voor afbeeldingen in kop- en voettekstcomponenten van de adaptieve formuliersjabloon. Wanneer u de sjabloon herstelt en gebruikt om een adaptief formulier te maken, nemen de adaptieve formulieren alle correcties over die betrekking hebben op toegankelijkheid die worden toegepast op de kop- en voettekst van de sjabloon.  Breng voor een bestaand adaptief formulier wijzigingen aan op het adaptieve formulierniveau. Wijzigingen in een adaptief formuliersjabloon worden niet automatisch doorgevoerd in een bestaand adaptief formulier.
 
 1. Voeg een koptekstcomponent met formuliernaam toe aan het adaptieve formulier. Als in uw formulierontwerp een bedrijfsnaam is opgegeven, voegt u ook een aparte kopcomponent voor de bedrijfsnaam toe.
 
-   De meeste toegankelijkheidsfuncties informeren gebruikers over de hiërarchie van de inhoud, zodat ze de structuur van de webpagina beter kunnen begrijpen. Stel verschillende kopniveaus in voor de naam van de organisatie en de tekst voor de naam van het formulier op het adaptieve formulier, zodat deze tekst een hiërarchische structuur krijgt. Gebruik bovendien een tekstcomponent voor elk deelvenster en elke sectie met een geschikt kopniveau om een hiërarchie te maken.
+   De meeste toegankelijkheidsfuncties informeren gebruikers over de hiërarchie van de inhoud, zodat ze de structuur van de webpagina beter kunnen begrijpen. Stel verschillende kopniveaus in voor de naam van de organisatie en de tekst voor de naam van het formulier op het adaptieve formulier om een hiërarchische structuur voor deze teksten te bieden. Gebruik bovendien een tekstcomponent voor elk deelvenster en elke sectie met een geschikt kopniveau om een hiërarchie te maken.
 
    ![Een koptekststijl toepassen](assets/apply-style.gif)
 
@@ -181,7 +181,7 @@ De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adapti
 
 ## Gebruik het gereedschap Toegankelijkheid om resterende toegankelijkheidsproblemen te zoeken
 
-Met de Toegankelijke ANDI (Name and Description Inspector) kunt u problemen met toegankelijkheidseisen in een adaptieve vorm identificeren en corrigeren. Met ANDI de toegankelijkheidsproblemen in een adaptieve vorm zoeken:
+Met de Accessible Name and Description Inspector (ANDI) kunt u compatibiliteitsproblemen met betrekking tot toegankelijkheid in een adaptieve vorm identificeren en corrigeren. Met ANDI de toegankelijkheidsproblemen in een adaptieve vorm zoeken:
 
 1. Open het adaptieve formulier in de voorbeeldmodus.
 1. Klik op het pictogram van het gereedschap ANDI met bladwijzer. Het ANDI-gereedschap analyseert het adaptieve formulier en geeft toegankelijkheidsproblemen weer. Ga voor meer informatie over het gebruik van het gereedschap naar [Documentatie van ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).

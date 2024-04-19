@@ -9,9 +9,9 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -236,17 +236,17 @@ Voordat een implementatie de [Algemene beschrijving](#general-description) hierb
 
 * **AEM webtoepassing implementeren**
 
-   * AEM bestand downloaden
-   * Stel uw configuraties in web.xml indien nodig in (zie hierboven in de Algemene beschrijving)
+   * Download AEM oorlogsbestand.
+   * Maak uw configuraties in web.xml indien nodig (zie hierboven in de Algemene Beschrijving).
 
-      * WEB-INF/web.xml-bestand uitpakken
-      * de parameter sling.run.modes wijzigen om te publiceren
-      * uncomment sling.home aanvankelijke parameter en reeks dit pad aangezien u nodig hebt
-      * Het bestand web.xml herstellen
+      * WEB-INF/web.xml uitpakken.
+      * Wijzig de parameter sling.run.modes die u wilt publiceren.
+      * Verwijder de commentaarmarkering.home, eerste parameter, en stel dit pad naar wens in.
+      * Herhaal het bestand web.xml.
 
-   * Wijzig de naam van AEM oorlogsbestand in ROOT.war als u het wilt gebruiken als hoofdwebapp, wijzig de naam van het bestand in bijvoorbeeld aemauthor.war als u een hoofdmap van de context wilt hebben
-   * kopiëren naar de map met tomcat-webapps
-   * wachten tot AEM is geïnstalleerd
+   * Wijzig de naam AEM oorlogsbestand in ROOT.war als u het wilt implementeren als basiswebapp. Wijzig de naam in aemauthor.war als u een auteur als basis voor de context wilt hebben.
+   * Kopieer het bestand naar de webapps-map van Tomcat.
+   * Wacht tot AEM is geïnstalleerd.
 
 ## Problemen oplossen {#troubleshooting}
 

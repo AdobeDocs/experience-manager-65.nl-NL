@@ -9,9 +9,9 @@ exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2318'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
 
 ### Vertaalde tekenreeksen bewerken {#editing-translated-strings}
 
-Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt [het woordenboek exporteren](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) om de vertaling door een derde te laten vertalen.
+Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt [het woordenboek exporteren](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) door een derde worden vertaald.
 
 1. Selecteren [uw projectspecifiek woordenboek](#creating-a-dictionary) zoals het het pad in de opslagplaats met de vertalingen aangeeft. Selecteer bijvoorbeeld **Woordenboeken** als:
 
@@ -225,7 +225,7 @@ Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertal
 
 ## Vertalers van derden gebruiken {#using-third-party-translators}
 
-Ter ondersteuning van het gebruik van vertaalservices van derden kunt u met het gereedschap Vertaling woordenboeken exporteren en importeren.
+Ter ondersteuning van het gebruik van externe vertaalservices kunt u met het gereedschap Vertaling woordenboeken exporteren en importeren.
 
 ### Woordenboek exporteren {#exporting-a-dictionary}
 

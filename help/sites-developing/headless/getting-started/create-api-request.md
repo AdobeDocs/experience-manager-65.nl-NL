@@ -5,16 +5,16 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
 # Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten {#accessing-delivering-content-fragments}
 
-Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor het zonder kop leveren van inhoud met fragmenten.
+Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor de levering van inhoud zonder kop.
 
 ## Wat zijn GraphQL en Assets REST API&#39;s? {#what-are-the-apis}
 
@@ -28,7 +28,7 @@ De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhou
 
 ## Een inhoudsfragment afleveren met GraphQL {#how-to-deliver-a-content-fragment}
 
-De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerpen om inhoud te leveren. Deze vragen moeten slechts eens per eindpunt per model worden overwogen. In deze gids Aan de slag mag u er slechts één maken.
+De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerpen om inhoud te leveren. Denk slechts eens na deze vragen per eindpunt, per model. Voor deze gids Aan de slag kunt u slechts één gids maken.
 
 1. Meld u aan bij AEM en open de [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Bijvoorbeeld: `http://<host>:<port>/aem/graphiql.html`.

@@ -11,9 +11,9 @@ feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6264'
+source-wordcount: '6263'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 6%
 
 *Dynamic Media Viewers* Met de extensie Experience Platform Tags en Dynamic Media Viewers 5.13 kunnen klanten met Adobe Analytics- en Experience Platform Tags gebeurtenissen en gegevens gebruiken die specifiek zijn voor Dynamic Media Viewers in hun configuratie met Experience Platform Tags.
 
-Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers worden weergegeven, met een andere extensie Experience Platform Tags die afkomstig is van een Adobe of een derde.
+Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers beschikbaar worden gesteld, met elke andere extensie Experience Platform Tags die afkomstig is van een Adobe of een derde.
 
 Zie voor meer informatie over Adobe-extensies of extensies van derden [Extensies Adoben](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) in de gebruikershandleiding voor tags Experience Platform.
 

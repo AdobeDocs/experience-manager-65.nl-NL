@@ -6,7 +6,7 @@ role: Architect, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Paginanummering is een stuk JavaScript-code dat u in code van externe websites opneemt, zodat Adobe Analytics gebruiksgegevens kan vastleggen rond [!DNL Adobe Experience Manager Assets] op deze websites.
 
-Als u gebeurtenissen wilt vastleggen die specifiek zijn voor elementen, zoals klikken, neemt u ook de code Insluiten op in de code van websites van derden.
+Als u gebeurtenissen wilt vastleggen, zoals klikken die specifiek zijn voor elementen, neemt u ook de code Embed op in de code van websites van derden.
 
 De volgende voorbeeldcode toont hoe een webpagina die zowel de code van Paginanummer als de code van Insluiten bevat eruitziet:
 

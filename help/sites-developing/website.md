@@ -1,6 +1,6 @@
 ---
-title: Een volledig functionele website (JSP) maken
-description: Deze zelfstudie leert u hoe u een volledig functionerende website met Adobe Experience Manager (AEM) kunt maken.
+title: Een JSP (Full-Featured Website) maken
+description: Deze zelfstudie leert u hoe u een volledig uitgeruste website met Adobe Experience Manager (AEM) kunt maken.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,14 +10,14 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4920'
+source-wordcount: '4919'
 ht-degree: 1%
 
 ---
 
-# Een volledig functionele website (JSP) maken{#create-a-fully-featured-website-jsp}
+# Een JSP (Full-Featured Website) maken{#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >

@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2043'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Assets] wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld, duimnagelgeneratie of meta-gegevensextractie.
 
-Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd als een reeks van [!DNL Assets] mediahandlers. [!DNL Experience Manager] bevat enkele [ingebouwde handlers,](#default-media-handlers) en aanvullende [aangepast ontwikkeld](#creating-a-new-media-handler) of gedefinieerd door het proces te delegeren aan een [opdrachtregel](#command-line-based-media-handler).
+Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd als een reeks van [!DNL Assets] mediahandlers. [!DNL Experience Manager] bevat enkele [ingebouwde handlers](#default-media-handlers)en extra [aangepast ontwikkeld](#creating-a-new-media-handler) of gedefinieerd door het proces te delegeren aan een [opdrachtregelprogramma](#command-line-based-media-handler).
 
-Mediahandlers zijn services in [!DNL Assets] die specifieke handelingen uitvoeren op elementen. Wanneer u bijvoorbeeld een MP3-audiobestand uploadt naar [!DNL Experience Manager], activeert een workflow een MP3-handler die de metagegevens extraheert en een miniatuur genereert. Meestal worden media-afhandelingen gebruikt in combinatie met workflows. De meeste gangbare MIME-typen worden ondersteund binnen [!DNL Experience Manager]. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden/te maken, media-handlers uit te breiden/te maken of media-handlers uit te schakelen/in te schakelen.
+Mediahandlers zijn services in [!DNL Assets] die specifieke handelingen uitvoeren op elementen. Wanneer u bijvoorbeeld een MP3-audiobestand uploadt naar [!DNL Experience Manager], activeert een workflow een MP3-handler die de metagegevens extraheert en een miniatuur genereert. Mediahandlers worden gebruikt bij workflows. De meeste gangbare MIME-typen worden ondersteund binnen [!DNL Experience Manager]. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden of te maken, media-handlers uit te breiden of te maken of door media-handlers uit te schakelen en in te schakelen.
 
 >[!NOTE]
 >
->Zie de [Ondersteunde indelingen voor middelen](assets-formats.md) pagina voor een beschrijving van alle indelingen die worden ondersteund door [!DNL Assets] en functies die voor elke indeling worden ondersteund.
+>Zie de [Ondersteunde indelingen voor elementen](assets-formats.md) pagina voor een beschrijving van alle indelingen die worden ondersteund door [!DNL Assets] en functies die voor elke indeling worden ondersteund.
 
 ## Standaardmediahandlers {#default-media-handlers}
 
@@ -38,7 +38,7 @@ De volgende media-handlers zijn beschikbaar binnen [!DNL Assets] en verwerkt de 
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>toepassing/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Belangrijk</b> - Wanneer u een MP3-bestand uploadt, wordt [verwerkt met behulp van een externe bibliotheek](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Belangrijk</b> - Een geüpload MP3-bestand is [verwerkt met behulp van een externe bibliotheek](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -65,9 +65,9 @@ De actieve media-handlers weergeven:
 
 ## Mediahandlers gebruiken in workflows om taken uit te voeren op elementen {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-De managers van media zijn de diensten die gewoonlijk in combinatie met werkschema&#39;s worden gebruikt.
+De managers van media zijn de diensten die met werkschema&#39;s worden gebruikt.
 
-[!DNL Experience Manager] heeft enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op de knop **[!UICONTROL Models]** tab: de workflowtitels waarmee wordt begonnen [!DNL Assets] zijn de specifieke activa.
+[!DNL Experience Manager] heeft enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op de knop **[!UICONTROL Models]** tab: de workflowtitels waarmee wordt begonnen [!DNL Assets] zijn de activa-specifieke.
 
 Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden gemaakt om elementen volgens specifieke vereisten te verwerken.
 
@@ -92,7 +92,7 @@ Voor ondersteuning van een nieuw mediatype of voor het uitvoeren van specifieke 
 
 De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: `com.day.cq.dam.core.AbstractAssetHandler` klasse.
 
-Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u overerft van deze klasse en de gemanipuleerde insteekmodule gebruikt, moet u de overervingmarkering instellen op `true`.
+Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u van deze klasse hebt geërfd en de gemanipuleerde insteekmodule gebruikt, moet u de overervingmarkering instellen op `true`.
 
 Voer de volgende methodes uit:
 
@@ -108,18 +108,18 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 De interface en de klassen omvatten:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een nieuw MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: deze klasse dient als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
 * `com.day.cq.dam.core.AbstractSubAssetHandler`-klasse:
-   * Deze klasse fungeert als basis voor alle andere implementaties van asset-handlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van submiddelen.
+   * Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
    * De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: de klasse com.day.cq.dam.core.AbstractAssetHandler.
-   * Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u overerft van deze klasse en de gemaven-sling-plugin gebruikt, zorg ervoor dat u de overervingsvlag aan waar plaatst.
+   * Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u van deze klasse hebt geërfd en de gemaven-sling-plugin gebruikt, zorg ervoor dat u de inherit vlag aan waar plaatst.
 
 De volgende methoden moeten worden toegepast:
 
 * `extractMetadata()`: deze methode extraheert alle beschikbare metagegevens.
 * `getThumbnailImage()`: met deze methode wordt een miniatuurafbeelding gemaakt van het doorgegeven element.
-* `getMimeTypes()`: deze methode retourneert het MIME-type(n) van het element.
+* `getMimeTypes()`: deze methode retourneert de MIME-typen van het element.
 
 Hier volgt een voorbeeldsjabloon:
 
@@ -127,7 +127,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 De interface en de klassen omvatten:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een nieuw MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: deze klasse dient als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` klasse: deze klasse dient als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
 
@@ -144,8 +144,8 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
 1. Maak in Eclipse `myBundle` [!DNL Maven] project:
 
    1. Klik in de menubalk op **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Other]**.
-   1. Vouw in het dialoogvenster het dialoogvenster [!DNL Maven] map, selecteert u [!DNL Maven] project en klik **[!UICONTROL Next]**.
-   1. Controleer Create een eenvoudig projectvakje en het vakje van de Plaatsen van de Werkruimte van het Gebruik standaard, dan klik **[!UICONTROL Next]**.
+   1. Vouw in het dialoogvenster het dialoogvenster [!DNL Maven] map, selecteert u de [!DNL Maven] project, dan klik **[!UICONTROL Next]**.
+   1. Controleer Create een eenvoudig projectvakje en het vakje van de Werkruimte van het Gebruik standaard, dan klik **[!UICONTROL Next]**.
    1. Een [!DNL Maven] project:
 
       * Groep-id: `com.day.cq5.myhandler`.
@@ -155,10 +155,10 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
 
    1. Klik op **[!UICONTROL Finish]**.
 
-1. Stel de [!DNL Java] compiler naar versie 1.5:
+1. Stel de [!DNL Java™] compiler naar versie 1.5:
 
    1. Klik met de rechtermuisknop op de knop `myBundle` project selecteren [!UICONTROL Properties].
-   1. Selecteren [!UICONTROL Java Compiler] en stel de volgende eigenschappen in op 1.5:
+   1. Selecteren [!UICONTROL Java™ Compiler] en stel de volgende eigenschappen in op 1.5:
 
       * Compatibiliteitsniveau compiler
       * Compatibiliteit van gegenereerde .class-bestanden
@@ -283,16 +283,16 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
     </dependencies>
    ```
 
-1. Het pakket maken `com.day.cq5.myhandler` die de [!DNL Java] klassen onder `myBundle/src/main/java`:
+1. Het pakket maken `com.day.cq5.myhandler` die de [!DNL Java™] klassen onder `myBundle/src/main/java`:
 
    1. Klik onder myBundle met de rechtermuisknop `src/main/java`selecteert u Nieuw en vervolgens Pakket maken.
    1. Naam geven `com.day.cq5.myhandler` en klik op Voltooien.
 
-1. Maak de [!DNL Java] class `MyHandler`:
+1. Maak de [!DNL Java™] class `MyHandler`:
 
    1. In [!DNL Eclipse], onder `myBundle/src/main/java`, klikt u met de rechtermuisknop op de knop `com.day.cq5.myhandler` pakket. Selecteren [!UICONTROL New]vervolgens [!UICONTROL Class].
-   1. Geef in het dialoogvenster de naam [!DNL Java] class `MyHandler` en klik op [!UICONTROL Finish]. [!DNL Eclipse] maakt en opent het bestand `MyHandler.java`.
-   1. In `MyHandler.java` Vervang de bestaande code door het volgende en sla de wijzigingen op:
+   1. Geef in het dialoogvenster de naam [!DNL Java™] class `MyHandler` en klik op [!UICONTROL Finish]. [!DNL Eclipse] maakt en opent het bestand `MyHandler.java`.
+   1. In `MyHandler.java`, vervangt u de bestaande code door de volgende code en slaat u de wijzigingen op:
 
    ```java
    package com.day.cq5.myhandler;
@@ -434,7 +434,7 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
    }
    ```
 
-1. Compileer de [!DNL Java] en maak de bundel:
+1. Compileer de [!DNL Java™] en maak de bundel:
 
    1. Klik met de rechtermuisknop op de knop `myBundle` project selecteren **[!UICONTROL Run As]** vervolgens **[!UICONTROL Maven Install]**.
    1. De bundel `myBundle-0.0.1-SNAPSHOT.jar` (met de gecompileerde klasse) wordt gemaakt onder `myBundle/target`.
@@ -445,20 +445,20 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
 
 ## Media-handler op basis van opdrachtregel {#command-line-based-media-handler}
 
-[!DNL Experience Manager] kunt u elk opdrachtregelprogramma binnen een workflow uitvoeren om elementen om te zetten (zoals [!DNL ImageMagick]) en om de nieuwe vertoning aan het element toe te voegen. U hoeft het opdrachtregelprogramma alleen te installeren op de schijf waarop het [!DNL Experience Manager] en om een processtap toe te voegen aan en te configureren voor de workflow. Het aangeroepen proces `CommandLineProcess`, kunt u ook filteren op specifieke MIME-typen en meerdere miniaturen maken op basis van de nieuwe uitvoering.
+[!DNL Experience Manager] kunt u elk opdrachtregelprogramma binnen een workflow uitvoeren om elementen om te zetten (zoals [!DNL ImageMagick]) en om de nieuwe vertoning aan het element toe te voegen. Installeer alleen het opdrachtregelprogramma op de schijf waarop het [!DNL Experience Manager] en om een processtap toe te voegen aan en te configureren voor de workflow. Het aangeroepen proces `CommandLineProcess`, filtert u ook op basis van specifieke MIME-typen en maakt u meerdere miniaturen op basis van de nieuwe uitvoering.
 
 De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen [!DNL Assets]:
 
 * EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/).
 * FLV-videotranscodering gebruiken [FFmpeg](https://ffmpeg.org/).
 * MP3-codering met [LAME](https://lame.sourceforge.io/).
-* Audioverwerking met [SOX](https://sox.sourceforge.io/).
+* Audioverwerking met [SOX](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
 >Op niet-Windows-systemen retourneert het Mpeg-gereedschap een fout tijdens het genereren van uitvoeringen voor een video-element met één aanhalingsteken (&#39;) in de bestandsnaam. Als de naam van het videobestand één aanhalingsteken bevat, verwijdert u het bestand voordat u het uploadt naar [!DNL Experience Manager].
 
-De `CommandLineProcess` Het proces voert de volgende bewerkingen uit in de volgorde waarin deze worden vermeld:
+De `CommandLineProcess` Het proces voert de volgende bewerkingen in de vermelde volgorde uit:
 
 * Hiermee wordt het bestand gefilterd op basis van specifieke MIME-typen, indien opgegeven.
 * Hiermee maakt u een tijdelijke map op de schijf waarop het [!DNL Experience Manager] server.
@@ -470,14 +470,14 @@ De `CommandLineProcess` Het proces voert de volgende bewerkingen uit in de volgo
 
 ### Een voorbeeld met [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-In het volgende voorbeeld ziet u hoe u de processtap van de opdrachtregel instelt, zodat elke keer dat een element met het e-type GIF miMIME of TIFF wordt toegevoegd aan `/content/dam` op de [!DNL Experience Manager] een gespiegelde afbeelding van het origineel wordt gemaakt, samen met drie extra miniaturen (140 x 100, 48 x 48 en 10 x 250).
+Het volgende voorbeeld toont u hoe te opstelling de bevel-lijn processtap zodat telkens als een element met het e-type miMIME GIF of TIFF wordt toegevoegd aan `/content/dam` op de [!DNL Experience Manager] een gespiegelde afbeelding van het origineel wordt gemaakt. Er worden ook nog drie miniaturen van 140 x 100, 48 x 48 en 10 x 250 gemaakt.
 
 Om dit te doen, gebruik [!DNL ImageMagick]. [!DNL ImageMagick] is een gratis opdrachtregelprogramma waarmee u bitmapafbeeldingen kunt maken, bewerken en samenstellen.
 
 Installeren [!DNL ImageMagick] op de schijf waarop de [!DNL Experience Manager] server:
 
 1. Installeren [!DNL ImageMagick]: Zie [ImageMagick-documentatie](https://www.imagemagick.org/script/download.php).
-1. Stel het gereedschap zo in dat u het op de opdrachtregel kunt omzetten.
+1. Stel het gereedschap zo in dat u op een opdrachtregel `convert`.
 1. Voer de volgende opdracht uit om te controleren of het gereedschap correct is geïnstalleerd `convert -h` op de opdrachtregel.
 
    Er wordt een Help-scherm weergegeven met alle mogelijke opties van het gereedschap Omzetten.
@@ -506,15 +506,15 @@ Scheid de waarden van [!UICONTROL Process Arguments] gebruiken en niet beginnen 
 
 | Argument-formaat | Beschrijving |
 |---|---|
-| mime:&lt;mime-type> | Optioneel argument. Het proces wordt toegepast als het element hetzelfde MIME-type heeft als het argument. <br>Er kunnen verschillende MIME-typen worden gedefinieerd. |
+| mime:&lt;mime-type> | Optioneel argument. Het proces wordt toegepast als het element hetzelfde MIME-type heeft als het element in het argument. <br>Er kunnen verschillende MIME-typen worden gedefinieerd. |
 | tn:&lt;width>:&lt;height> | Optioneel argument. Het proces leidt tot een duimnagel met de afmetingen die in het argument worden bepaald. <br>Er kunnen verschillende miniaturen worden gedefinieerd. |
-| cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis is afhankelijk van het opdrachtregelgereedschap. Er kan slechts één opdracht worden gedefinieerd. <br>U kunt de volgende variabelen gebruiken om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: volledige padnaam van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: map van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp` <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld JPG. |
+| cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het bevel-lijn hulpmiddel af. Er kan slechts één opdracht worden gedefinieerd. <br>U kunt de volgende variabelen gebruiken om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: volledige padnaam van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: map van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp` <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld JPG. |
 
 Als [!DNL ImageMagick] is geïnstalleerd op de schijf waarop het [!DNL Experience Manager] en als u een processtap maakt met [!UICONTROL CommandLineProcess] als Implementatie en de volgende waarden als [!UICONTROL Process Arguments]:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-wanneer de workflow wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` als `mime-types`, wordt een gespiegelde afbeelding van het origineel gemaakt, wordt deze omgezet in JPG en worden drie miniaturen gemaakt met de volgende afmetingen: 140 x 100, 48 x 48 en 10 x 250.
+Wanneer de workflow wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` als `mime-types`. Het maakt een gespiegelde afbeelding van het origineel, zet deze om in JPG en maakt drie miniaturen met de afmetingen 140x100, 48x48 en 10x250.
 
 Gebruik het volgende [!UICONTROL Process Arguments] de drie standaardminiaturen maken met [!DNL ImageMagick]:
 

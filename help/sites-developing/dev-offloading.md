@@ -9,9 +9,9 @@ exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Taken vereisen geen nuttige taken. De payload is echter noodzakelijk als de taak
 
 ## Taken maken voor offloaden {#creating-jobs-for-offloading}
 
-Maak een client die de methode JobManager.addJob aanroept om een taak te maken die automatisch wordt uitgevoerd door een JobConsumer. Geef de volgende informatie op om de taak te maken:
+Maak een client die de methode JobManager.addJob aanroept om een taak te maken die automatisch door een geselecteerde JobConsumer wordt uitgevoerd. Geef de volgende informatie op om de taak te maken:
 
 * Onderwerp: Het taakonderwerp.
 * Naam: (optioneel)

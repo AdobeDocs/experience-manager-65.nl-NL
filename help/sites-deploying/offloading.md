@@ -8,9 +8,9 @@ content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2318'
 ht-degree: 0%
 
 ---
@@ -234,7 +234,7 @@ Het offloading-framework gebruikt replicatie om bronnen tussen auteur en worker 
 
 >[!CAUTION]
 >
->Een bekende kwestie met de automatisch-geproduceerde replicatieagenten vereist u om nieuwe replicatieagenten manueel tot stand te brengen.
+>Een bekende kwestie met de automatisch geproduceerde replicatieagenten vereist u om nieuwe replicatieagenten manueel tot stand te brengen.
 
 Creeer de replicatieagenten die baanlading tussen instanties voor het ontladen vervoeren. De volgende illustratie toont de agenten die worden vereist om van de auteur aan een arbeidersinstantie te offloaden. De auteur heeft een Sling-id van 1 en de arbeidersinstantie heeft een Sling-id van 2:
 

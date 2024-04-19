@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 0%
@@ -1019,7 +1019,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *lo
 
 >[!NOTE]
 >
->Vele snelle begin die tonen hoe te om de dienstverrichtingen van AEM Forms uit te voeren omvatten een MTOM codevoorbeeld.
+>Vele snelle begin die tonen hoe te om de dienstverrichtingen van AEM Forms uit te voeren omvat een MTOM codevoorbeeld.
 
 ## Snel starten: Een service aanroepen met SwaRef in een Java-project {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 

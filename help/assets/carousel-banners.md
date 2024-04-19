@@ -10,9 +10,9 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4594'
+source-wordcount: '4596'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Doorloop afspelen ingeschakeld [hoe carrouselbanners worden gemaakt](https://s7d
 
 >[!NOTE]
 >
->Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
+>Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL `dam-users`]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL `dam-users`]** groep.
 
 ## Snel starten: Carousel-banners {#quick-start-carousel-banners}
 
@@ -72,7 +72,7 @@ Zo kunt u snel aan de slag met carrouselbanners:
 
    In de Reeksen van Carrousels, navigeren de gebruikers door bannerbeelden en selecteren hotspots of beeldkaarten om tot relevante inhoud toegang te hebben.
 
-   Als u een Carousel-set in Elementen wilt maken, selecteert u **[!UICONTROL Create]** selecteert u vervolgens **[!UICONTROL Carousel Sets]**. Elementen toevoegen aan dia&#39;s en selecteren **[!UICONTROL Save]**. U kunt de weergave en het gedrag van de carrousel ook rechtstreeks in de editor bewerken.
+   Als u een Carousel-set in Elementen wilt maken, selecteert u **[!UICONTROL Create]** selecteert u vervolgens **[!UICONTROL Carousel Sets]**. Elementen toevoegen aan elke dia en selecteren **[!UICONTROL Save]**. U kunt de weergave en het gedrag van de carrousel ook rechtstreeks in de editor bewerken.
 
 1. [Hotspots of afbeeldingen met hyperlinks toevoegen aan een afbeeldingsbanner](#adding-hotspots-or-image-maps-to-an-image-banner).
 
@@ -98,7 +98,7 @@ Als u Carousel-sets wilt bewerken, raadpleegt u [Carrouselsets bewerken](#editin
 
 Begin door dynamische variabelen te identificeren die door de bestaande implementatie van QuickView worden gebruikt zodat u hotspots of beeldkaartgegevens behoorlijk tijdens het proces van de carrouselreeks creatie in Experience Manager Assets kunt ingaan.
 
-Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeelding in Experience Manager Assets, wijst u een SKU en optionele aanvullende variabelen toe aan elke hotspot of afbeelding met hyperlinks. Dergelijke variabelen worden later gebruikt om hotspots of afbeeldingen met hyperlinks te laten overeenkomen met Quickview-inhoud.
+Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeelding in Experience Manager Assets, wijst u een SKU en optionele extra variabelen toe aan elke hotspot of afbeelding met hyperlinks. Dergelijke variabelen worden later gebruikt om hotspots of afbeeldingen met hyperlinks te laten overeenkomen met Quickview-inhoud.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Tijdens dit proces is het belangrijk om verschillende delen van uw website te be
 
 In het eenvoudigste geval, is het enige veranderlijke deel in Quickview URL productSKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots of afbeeldingen met hyperlinks toe te voegen aan de bannerafbeelding.
 
-In complexe gevallen heeft de URL van de Snelle weergave echter andere variërende elementen naast de SKU, zoals categorie-id, kleurcode en code voor grootte. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
+In complexe gevallen heeft de URL van de Snelle weergave echter verschillende elementen die naast de SKU verschillen, zoals categorie-id, kleurcode en code voor de grootte. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
 
 Bekijk de volgende voorbeelden van URL&#39;s in QuickView en de resulterende hotspot- of afbeeldingskaartvariabelen:
 
@@ -186,7 +186,7 @@ Als u afbeeldingsbanners wilt uploaden, raadpleegt u [Elementen uploaden](/help/
 
 >[!NOTE]
 >
->Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
+>Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL `dam-users`]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL `dam-users`]** groep.
 
 **Carousel-sets maken:**
 
@@ -277,7 +277,7 @@ Zie ook [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md).
    * Voor hotspots: selecteer in de afbeelding de locatie waar u de hotspot wilt weergeven.
    * Voor afbeeldingen met hyperlinks: selecteer de afbeelding in de afbeelding en sleep deze vervolgens van linksboven naar rechtsonder om het gebied voor de afbeelding met hyperlinks te maken. U kunt de grootte van de afbeelding met hyperlinks aanpassen door de hoeken te slepen.
 
-   Sleep indien nodig de hotspot of de afbeelding met hyperlinks naar een nieuwe locatie. Voeg desgewenst extra hotspots of afbeeldingen met hyperlinks toe.
+   Sleep indien nodig de hotspot of de afbeelding met hyperlinks naar een nieuwe locatie. Voeg desgewenst meer hotspots of afbeeldingen met hyperlinks toe.
 
    Als u een hotspot of afbeeldingskaart wilt verwijderen, selecteert u de optie **[!UICONTROL Actions]** tab. Selecteer onder de kop **[!UICONTROL Maps & Hotspots]** in het vervolgkeuzemenu **[!UICONTROL Selected Type]** de naam van de hotspot of de afbeelding met hyperlinks die u wilt verwijderen. Selecteer de **[!UICONTROL Trash]** pictogram naast het menu, dan selecteren **[!UICONTROL Delete]**.
 
@@ -336,7 +336,7 @@ Zie [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
+>Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL `dam-users`]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
 
 U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 
@@ -354,7 +354,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
    * Houd de cursor boven een Carousel-set element en selecteer **[!UICONTROL Edit]** (potloodpictogram).
    * Houd de muisaanwijzer boven een Carousel-set-element en selecteer **[!UICONTROL Select]** (vinkje pictogram), selecteer dan **[!UICONTROL Edit]** op de werkbalk.
 
-   * Selecteer een Carousel-set-element en selecteer vervolgens in de linkerbovenhoek van de pagina **[!UICONTROL Edit]** (potloodpictogram).
+   * Selecteer een Carousel-set-element en selecteer vervolgens in de linkerbovenhoek van de pagina de optie **[!UICONTROL Edit]** (potloodpictogram).
 
 1. Voer een van de volgende handelingen uit om de Carousel-set te bewerken:
 

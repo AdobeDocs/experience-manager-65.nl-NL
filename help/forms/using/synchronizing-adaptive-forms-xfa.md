@@ -7,9 +7,9 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,13 @@ In het artikel wordt een voorbeeld gebruikt om te tonen hoe u het aangepaste for
 
 Nadat u het pakket hebt geüpload, kunt u deze elementen weergeven in de gebruikersinterface van AEM Forms.
 
-Installeer het pakket met behulp van pakketbeheer: `https://<server>:<port>/crx/packmgr/index.jsp`
+Installeer het pakket met gebruik van Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Het pakket bevat de volgende elementen:
 
 1. `sample-form.xdp`: De XFA-formuliersjabloon die als voorbeeld wordt gebruikt
 
-1. `sample-xfa-af`: Het adaptieve formulier op basis van het bestand sample-form.xdp. Dit adaptieve formulier bevat echter geen velden. In de volgende stap voegen we inhoud toe aan dit aangepaste formulier.
+1. `sample-xfa-af`: Het adaptieve formulier op basis van het bestand sample-form.xdp. Dit adaptieve formulier bevat echter geen velden. In de volgende stap voegt u inhoud toe aan dit aangepaste formulier.
 
 ### Inhoud toevoegen aan het aangepaste formulier {#add-content-to-adaptive-form-br}
 
@@ -63,7 +63,7 @@ Het pakket bevat de volgende elementen:
 
 >[!NOTE]
 >
->In de voorgaande stappen is een eigenschap van een veld in het XDP-bestand overschreven. Deze eigenschap wordt daarom niet gesynchroniseerd als de overeenkomende eigenschap in het XDP-bestand later wordt gewijzigd.
+>In de voorgaande stappen overschrijft u een eigenschap van een veld in het XDP-bestand. Deze eigenschap wordt daarom niet gesynchroniseerd als de overeenkomende eigenschap in het XDP-bestand later wordt bewerkt.
 
 ## Wijzigingen detecteren in XDP-bestand {#detecting-changes-in-xdp-file}
 
@@ -133,7 +133,7 @@ Het veld dat is verwijderd, wordt ook gemarkeerd met een pictogram om een fout i
 
 >[!NOTE]
 >
->De velden in het adaptieve formulier met een onjuiste binding (een ongeldige `bindRef` (in het dialoogvenster Bewerken) worden ook als verwijderde velden beschouwd. Als de auteur deze fouten niet corrigeert en het adaptieve formulier niet publiceert, wordt het veld behandeld als een normaal, niet-gebonden adaptief formulierveld en wordt het veld opgenomen in de niet-gebonden sectie van het XML-uitvoerbestand.
+>De velden in het adaptieve formulier met een onjuiste binding (een ongeldige `bindRef` (in het dialoogvenster Bewerken) worden ook als verwijderde velden beschouwd. Als de auteur deze fouten niet corrigeert en het adaptieve formulier niet publiceert, wordt het veld beschouwd als een normaal, niet-gebonden adaptief formulierveld en wordt het veld opgenomen in de niet-gebonden sectie van het XML-uitvoerbestand.
 
 ## Downloads {#downloads}
 

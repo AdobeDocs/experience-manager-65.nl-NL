@@ -10,7 +10,7 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 1%
@@ -173,7 +173,7 @@ U kunt de tijdlijn ook gebruiken om een stap te delegeren en/of toe te wijzen:
 
 ### Stap terug op een Stap van de Deelnemer uitvoeren {#performing-step-back-on-a-participant-step}
 
-Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u achteruit stappen. Hiermee kunt u een stap selecteren die eerder in de workflow is opgetreden voor opwerking. De werkstroom keert aan de stap terug u specificeert, dan gaat van daar te werk.
+Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u achteruit stappen. Hiermee kunt u een stap selecteren die eerder in de workflow is opgetreden, voor opwerking. De werkstroom keert aan de stap terug u specificeert, dan gaat van daar te werk.
 
 Op deze actie kunt u aangeven:
 

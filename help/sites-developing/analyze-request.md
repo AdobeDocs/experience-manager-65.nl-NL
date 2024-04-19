@@ -9,7 +9,7 @@ exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Een aangepast pad op de opdrachtregel kan worden geanalyseerd.
 
 Maak kennis met de opmerking in het bestand die u vertelt hoe u de opmerking moet uitvoeren:
 
-CQ analyseren `access.log` het extrapoleren van diverse informatie en het produceren van een output van de Prijsverlaging op `stdout`.
+CQ analyseren `access.log` extrapolatie van verschillende informatie en het produceren van een output van de Prijsverlaging op `stdout`.
 
 ## Gebruik {#usage}
 

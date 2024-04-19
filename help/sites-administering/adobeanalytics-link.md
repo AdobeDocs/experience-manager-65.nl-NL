@@ -9,7 +9,7 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Configureer uw Adobe Analytics-framework om het bijhouden van ad-hockoppelingen 
 
 >[!NOTE]
 >
->De XSS Antisamy-configuratie bevindt zich nu in SLING onder pad **/libs/sling/xss.config.xml** en de volgende regels moeten worden toegevoegd voor ad-hockoppelingen naar werkzaamheden:
+>De XSS Antisamy-configuratie bevindt zich nu in SLING onder pad **/libs/sling/xss.config.xml** en de volgende regels moeten aan ad hoc worden toegevoegd, zodat de koppeling werkt:
 
 #### Toevoegingsregel ankertag {#anchor-tag-rule-extension}
 

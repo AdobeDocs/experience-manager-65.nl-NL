@@ -10,9 +10,9 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4096'
+source-wordcount: '4098'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Zie [Een afbeeldingsbanner uploaden](#uploading-an-image-banner).
 
 Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u hotspot gegevens kunt ingaan om het interactieve beeld tot stand te brengen.
 
-Wanneer u hotspots toevoegt aan een bannerafbeelding in Experience Manager Assets, moet u een SKU (Stock Keeping Unit en optionele extra variabelen toewijzen aan elke hotspot. Dergelijke hotspotvariabelen worden later gebruikt om hotspots te laten overeenkomen met Quickview-inhoud.
+Wanneer u hotspots toevoegt aan een bannerafbeelding in Experience Manager Assets, moet u een SKU (Stock Keeping Unit en optionele extra variabelen aan elke hotspot toewijzen. Dergelijke hotspotvariabelen worden later gebruikt om hotspots te laten overeenkomen met Quickview-inhoud.
 
 Het is belangrijk om het aantal en het type variabelen correct te identificeren om met hotspot gegevens te associëren. Elke hotspot die aan een bannerafbeelding wordt toegevoegd, moet voldoende informatie bevatten om het product ondubbelzinnig te identificeren in het bestaande back-endsysteem.
 
@@ -113,7 +113,7 @@ Tijdens dit proces is het belangrijk om verschillende delen van uw website te be
 
 In het eenvoudigste geval, is het enige veranderlijke deel in Quickview URL productSKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots toe te voegen aan de bannerafbeelding.
 
-In complexe gevallen heeft de URL van de Snelle weergave echter naast de SKU verschillende elementen, zoals categorie-id, kleurcode en code voor de grootte. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot-gegevens in de functie voor onoverzichtelijke interactieve afbeeldingen in Experience Manager Assets.
+In complexe gevallen heeft de URL van de Snelle weergave echter verschillende elementen die naast de SKU verschillen, zoals categorie-id, kleurcode en code voor de grootte. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot-gegevens in de functie voor onoverzichtelijke interactieve afbeeldingen in Experience Manager Assets.
 
 Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de resulterende hotspot-variabelen:
 
@@ -375,9 +375,9 @@ Integratie is zo eenvoudig als het verwijderen van de `IMG` tags toepassen en de
 
 Als u een &#39;uitsnijding&#39; wilt toepassen op een verwisselbare interactieve afbeelding voor een responsieve omgeving, kunt u het configuratiekenmerk Interactive Image opnemen `ZoomView.iscommand` naar het pad. De component `ZoomView` wordt aangeroepen en `iscommand` Dit is de opdracht voor het uitsnijden van een afbeelding die fungeert als werkafbeelding die u toepast.
 
-Zie [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) configuratiekenmerk.
+Zie [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) configuratiekenmerk.
 
-Zie [uitsnijden](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) opdracht voor het dienen van afbeeldingen.
+Zie [uitsnijden](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) opdracht voor het dienen van afbeeldingen.
 
 U bent nu klaar om de interactieve afbeelding te integreren met een bestaande QuickView op uw website.
 

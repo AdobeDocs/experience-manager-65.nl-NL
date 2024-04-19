@@ -6,7 +6,7 @@ topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 0%
@@ -64,7 +64,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. U kun
 
    * `css`map: bevat de CSS-bestanden waarin u de statische stijlen definieert die in het thema moeten worden gebruikt.
 
-   **Minder variabelen**: Dit zijn de bestanden waarin u de variabelen definieert of overschrijft die worden gebruikt bij het definiëren van CSS-stijlen.
+   **Minder variabele bestanden**: Dit zijn de bestanden waarin u de variabelen definieert of overschrijft die worden gebruikt bij het definiëren van CSS-stijlen.
 
    Adaptieve formulieren bieden variabelen die buiten het vak vallen, zoals gedefinieerd in het volgende `.less` bestanden:
 

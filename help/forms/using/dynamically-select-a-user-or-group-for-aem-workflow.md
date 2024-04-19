@@ -5,7 +5,7 @@ content-type: troubleshooting
 topic-tags: publish
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ECMAScript is een scripttaal. Het wordt gebruikt voor client-side scripting en s
    * (Pad voor taakstap toewijzen) `/apps/fd/dashboard/scripts/participantChooser`
    * (Pad voor stap Handtekening) `/apps/fd/workflow/scripts/adobesign`
 
-1. Voeg ECMAScript, dat de logica aan dynamisch het selecteren van een gebruiker, aan het .ecma dossier heeft. Klik op **[!UICONTROL Save All]**.
+1. Voeg ECMAScript toe dat de logica heeft om een gebruiker dynamisch te selecteren, aan het .ecma dossier. Klik op **[!UICONTROL Save All]**.
 
    Zie voor voorbeeldscripts [Voorbeeld-ECMAScripts voor het dynamisch selecteren van een gebruiker of groep](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 

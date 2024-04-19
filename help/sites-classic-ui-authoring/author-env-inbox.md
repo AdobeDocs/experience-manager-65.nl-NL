@@ -10,7 +10,7 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -106,8 +106,8 @@ Alleen een melding ontvangen voor acties op de pagina die door het pad wordt ged
 
 Als u ervoor hebt gekozen om meldingen te ontvangen in uw AEM Postvak IN, wordt uw postvak IN gevuld met meldingen. U kunt [uw meldingen weergeven](#viewing-your-notifications)Selecteer vervolgens de vereiste meldingen voor:
 
-* Goedkeuren door op **Goedkeuren**: de waarde in het dialoogvenster **Lezen** kolom is ingesteld op **true**.
+* Accepteren door op **Goedkeuren**: de waarde in het dialoogvenster **Lezen** kolom is ingesteld op **true**.
 
-* Verwijderen door erop te klikken **Verwijderen**.
+* Elimineren door op **Verwijderen**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

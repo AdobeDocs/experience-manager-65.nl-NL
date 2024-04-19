@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ U kunt de gebruikersinterface voor gecontroleerde mappen gebruiken voor:
 Controleer het volgende voordat u een gecontroleerde map configureert:
 
 * Gecontroleerde mappen zijn een geavanceerde functie voor AEM formulieren. U kunt hiervoor AEM formulierinvoegpakket gebruiken. Zorg ervoor dat het juiste AEM Forms-invoegtoepassingspakket is geïnstalleerd en geconfigureerd.
-* U kunt de gecontroleerde map maken op een gedeelde of lokale opslaglocatie. Zorg ervoor dat AEM gebruiker die is geconfigureerd om de gecontroleerde map uit te voeren, lees- en schrijfmachtigingen heeft voor de gecontroleerde map.
+* U kunt de controlemap maken op een gedeelde opslag of op een lokale opslaglocatie. Zorg ervoor dat AEM gebruiker die is geconfigureerd om de gecontroleerde map uit te voeren, lees- en schrijfmachtigingen heeft voor de gecontroleerde map.
 * U kunt een service, workflow of script gebruiken om een bewerking met een gecontroleerde map te automatiseren. Zorg ervoor dat de bijbehorende service, workflow of een script is gemaakt en klaar is om te worden uitgevoerd. Voor informatie over het creëren van de Dienst, het Werkschema, en het Manuscript, zie [Verschillende methoden voor het verwerken van bestanden](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Een gecontroleerde map heeft verschillende eigenschappen. Zie [Eigenschappen van gecontroleerde mappen](watched-folder-in-aem-forms.md#watchedfolderproperties).
 

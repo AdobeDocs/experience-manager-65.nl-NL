@@ -5,9 +5,9 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1504'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud
 Een ervaringsfragment:
 
 * Maakt deel uit van een ervaring (pagina).
-* Kan op meerdere pagina&#39;s worden gebruikt.
+* Kan op meerdere pagina&#39;s worden gebruikt (die zijn gebaseerd op bewerkbare sjablonen).
 * Is gebaseerd op een malplaatje (editable slechts) om structuur en componenten te bepalen.
 * Deze sjabloon wordt gebruikt om de *hoofdpagina* van het ervaringsfragment.
 * Bestaat uit een of meer componenten, met layout, in een alineasysteem.
@@ -251,6 +251,10 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pagina&#39;s:
 
 1. Open een pagina om te bewerken.
+
+   >[!NOTE]
+   >
+   >De pagina moet zijn gebaseerd op een bewerkbare sjabloon.
 
    Bijvoorbeeld: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 

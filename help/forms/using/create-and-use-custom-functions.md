@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
-source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
+source-git-commit: a5b48f1f4072f3e10273ec90d6f505815fe584a3
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 0%
@@ -27,7 +27,6 @@ AEM Forms 6.5 introduceerde de capaciteit om functies te bepalen JavaScript die 
 
 De aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken om aan bepaalde vereisten te voldoen. Ze maken het ook mogelijk het formuliergedrag dynamisch te wijzigen op basis van vooraf gedefinieerde criteria.
 In Adaptive Forms kunt u aangepaste functies gebruiken in het dialoogvenster [regel-editor van een adaptief formulier](/help/forms/using/rule-editor.md) specifieke validatieregels voor formuliervelden te maken.
-
 Laten we begrijpen hoe een aangepaste functie wordt gebruikt waarbij gebruikers het e-mailadres invoeren. Bovendien moet het ingevoerde e-mailadres een specifieke notatie hebben (het bevat een &#39;@&#39;-symbool en een domeinnaam). Maak een aangepaste functie als &quot;ValidateEmail&quot;, die het e-mailadres als invoer gebruikt en waar retourneert als het geldig en anders onwaar is.
 
 ```javascript

@@ -9,7 +9,7 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -35,10 +35,10 @@ Als AEM standaardimplementatie van verwijzingen, toont Wij.Retail enkele van de 
 | [Globale sitestructuur](/help/sites-administering/tc-bp.md) | Wij.Retail omvat taalstramienen die live naar landspecifieke sites worden gekopieerd. | [Probeer het!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Responsieve indeling](/help/sites-authoring/responsive-layout.md) | Alle pagina&#39;s hebben een responsieve indeling die dynamisch kan worden aangepast aan de grootte van het scherm en het apparaat. | [Probeer het!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md) | Alle pagina&#39;s zijn gebaseerd op bewerkbare sjablonen, waarmee niet-ontwikkelaars de sjablonen kunnen aanpassen en aanpassen. | [Probeer het!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Sjabloontaal](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Alle componenten zijn gebaseerd op HTML |  |
+| [HTML Sjabloontaal](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | Alle componenten zijn gebaseerd op HTML |  |
 | [eCommerce-mogelijkheden](/help/commerce/cif-classic/developing/ecommerce.md) | Functies van een productcatalogus |  |
 | [Communitysites](/help/communities/overview.md) | Bezoekers toestaan deel te nemen aan discussies binnen gemeenschappen, blogs lezen en nog veel meer |  |
-| [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | Alle componenten zijn gebaseerd op de nieuwe kerncomponenten en zijn bruikbaarder en gebruiker-configureerbaar uit-van-de-doos | [Probeer het!](/help/sites-developing/we-retail-core-components.md) |
+| [Kernonderdelen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | Alle componenten zijn gebaseerd op de nieuwe kerncomponenten en zijn bruikbaarder en gebruiker-configureerbaar uit-van-de-doos | [Probeer het!](/help/sites-developing/we-retail-core-components.md) |
 | [Contentfragmenten](/help/assets/content-fragments/content-fragments.md) | In de sectie We.Retail-ervaringen wordt de kracht getoond om inhoud opnieuw te gebruiken als inhoudsfragmenten. | [Probeer ze!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md) | Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. | [Probeer ze!](/help/sites-developing/we-retail-experience-fragments.md) |
 

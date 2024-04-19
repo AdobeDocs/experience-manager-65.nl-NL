@@ -1,15 +1,16 @@
 ---
 title: Transactierapporten Overzicht voor AEM Forms op JEE
-description: Houd een telling van alle voorgelegde vormen, teruggegeven, documenten die in één formaat aan een andere, en meer worden omgezet
+description: Houd een telling van alle voorgelegde vormen, teruggegeven, documenten die in één formaat aan een andere worden omgezet, en meer.
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Transactierapport inschakelen en weergeven voor AEM Forms op JEE {#transaction-reports-overview}
+# Transactierapporten voor AEM Forms inschakelen en weergeven op JEE {#transaction-reports-overview}
 
 <!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -31,7 +32,7 @@ Standaard is het opnemen van transacties uitgeschakeld. Voer de volgende stappen
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. Start de server opnieuw.
-1. Naast de wijzigingen op de server moet u de `adobe-livecycle-client.jar` als u hetzelfde bestand gebruikt in uw project.
+1. Naast de wijzigingen op de server moet u op de client de `adobe-livecycle-client.jar` als u hetzelfde bestand gebruikt in uw project.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -74,7 +75,7 @@ For Jboss Cluster:
 ```
 
 Voorbeeld van een voorbeeldtransactierecord:
-`[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
+`[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### Transactierecord {#transaction-record-structure-jee}
 
@@ -96,8 +97,8 @@ TransactionRecord
 
 * **service**: Naam van de dienst.
 * **bewerking**: Bewerkingsnaam.
-* **internalService**: Naam van de callee in het geval van een interne vraag, anders het zelfde als de de dienstnaam.
-* **internalOperation**: Naam van de callee in het geval van een interne vraag, anders het zelfde als de verrichtingsnaam.
+* **internalService**: Naam van de callee als er een interne vraag is, anders het zelfde als de de dienstnaam.
+* **internalOperation**: De naam van de callee in daar is een interne vraag, anders het zelfde als de verrichtingsnaam.
 * **transactionOperationType**: Type transactie (Verzenden, Renderen, Omzetten).
 * **transactionCount**: Totaal aantal transacties.
 * **elapsedTime**: Tijd tussen de ontvangen uitnodigingsopening en reactie.
@@ -125,7 +126,7 @@ TransactionRecord
 
 De frequentie van opnametransacties wordt bepaald door de updatebewerkingen op de server voor elk formulier dat met succes is verzonden, gerenderd of geconverteerd.
 
-* In **dashboard** het aantal transacties wordt periodiek bijgewerkt, gebrek wordt geplaatst aan 1 minuut. U kunt de frequentie bijwerken door de systeemeigenschap in te stellen op `"com.adobe.idp.dsc.transaction.recordFrequency"`. Voeg bijvoorbeeld in AEM Forms for JEE op JBoss® het volgende toe `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` om de updatefrequentie in te stellen op 5 minuten.
+* In **dashboard**, wordt het aantal transacties periodiek bijgewerkt, gebrek wordt geplaatst aan 1 minuut. U kunt de frequentie bijwerken door de systeemeigenschap in te stellen op `"com.adobe.idp.dsc.transaction.recordFrequency"`. Voeg bijvoorbeeld in AEM Forms for JEE op JBoss® het volgende toe `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` om de updatefrequentie in te stellen op 5 minuten.
 
 * In **transactielogboeken** De update voor elke transactie vindt onmiddellijk plaats wanneer een formulier correct is verzonden, weergegeven of geconverteerd.
 

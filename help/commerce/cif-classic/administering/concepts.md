@@ -4,7 +4,9 @@ description: Leer de algemene concepten van e-handel met Adobe Experience Manage
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4439'
 ht-degree: 0%
@@ -128,7 +130,7 @@ AEM eCommerce wordt geïmplementeerd met een eCommerce-motor:
 >
 >  De standaard AEM installatie bevat de basisbeginselen van de [algemene implementatie van eCommerce](/help/commerce/cif-classic/administering/generic.md).
 
-### Commerciële aanbieders {#commerce-providers}
+### Commerce-providers {#commerce-providers}
 
 Wanneer het invoeren van gegevens van een handelingsmotor in uw AEM eCommerce plaats, wordt een handelsleverancier gebruikt om de importeurs van gegevens te voorzien. Eén handelsprovider kan meerdere importeurs ondersteunen.
 
@@ -148,7 +150,7 @@ Hoewel gewoonlijk moet een project hun eigen, aangepaste, handelsleverancier ont
 >
 >De Geometrixx-importeurs gebruiken CSV-bestanden. De opmerkingen boven hun implementatie bevatten een beschrijving van het geaccepteerde schema (met aangepaste eigenschappen toegestaan).
 
-De [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) onderhoudt (via [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)een lijst van de uitvoeringen van de [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [CatalogBluprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Deze worden vermeld in de **Importeur/leverancier van handel** dropdown gebied van de tovenaar van de Importeur (het gebruiken van `commerceProvider` eigenschap als een naam).
+De [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) onderhoudt (via [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)een lijst van de uitvoeringen van de [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [CatalogBluprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Deze worden vermeld in de **Importeur/Commerce-provider** dropdown gebied van de tovenaar van de Importeur (het gebruiken van `commerceProvider` eigenschap als een naam).
 
 Wanneer een specifieke importeur/handelsleverancier beschikbaar is in de vervolgkeuzelijst, moeten eventuele aanvullende gegevens die hij nodig heeft, worden gedefinieerd (afhankelijk van het type importeur) in:
 
@@ -454,7 +456,7 @@ De secties van de Catalogus verstrekken u, bijvoorbeeld:
 
 Productpagina&#39;s bevatten uitgebreide informatie over afzonderlijke producten. Dynamische updates van worden ook weerspiegeld, bijvoorbeeld prijswijzigingen die zijn geregistreerd op de eCommerce-engine.
 
-Productpagina&#39;s zijn AEM pagina&#39;s die de **Product** component; bijvoorbeeld binnen de component **Handelsproduct** sjabloon:
+Productpagina&#39;s zijn AEM pagina&#39;s die de **Product** component; bijvoorbeeld binnen de component **Commerce-product** sjabloon:
 
 ![commerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 

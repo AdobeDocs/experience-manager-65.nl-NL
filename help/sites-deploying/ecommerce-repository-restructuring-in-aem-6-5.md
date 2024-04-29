@@ -1,22 +1,23 @@
 ---
-title: Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor e-commerce.
+title: Herstructurering van de opslagplaats van E-Commerce in AEM 6.5
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor E-Commerce.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
 
 ---
 
-# Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
+# Herstructurering van de opslagplaats van E-Commerce in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, zouden de klanten die aan AEM 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatsveranderingen die de AEM E-Commerce Oplossing beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die aan AEM 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatsveranderingen die de AEM E-Commerce Oplossing beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 ## Met 6,5-upgrade {#with-upgrade}
 
@@ -34,7 +35,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>U kunt een <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> taak om gegevens over e-handel te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p>
+   <td><p>U kunt een <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> taak om e-Commerce-gegevens te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p>
     <ul>
      <li>Hiermee wijzigt u verwijzingen naar de oude locatie zodat deze naar de nieuwe locatie verwijzen</li>
      <li>Hiermee wordt inhoud van de oude locatie naar de nieuwe locatie verplaatst</li>

@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ ht-degree: 1%
 
 Op AEM instantie Auteur, van globale navigatie:
 
-* Selecteer **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
+* Selecteren **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 * Selecteren **[!UICONTROL engage folder]** om het te openen.
 * Selecteer de kaart voor de **[!UICONTROL Getting Started Tutorial]** Engelse site.
 
@@ -41,7 +44,7 @@ Deze groep kan worden gemaakt omdat de sitestructuur voor engaging de functie va
 
 Deze consoles zijn gelijkaardig aan de console van Plaatsen van Gemeenschappen.
 
-* Selecteer **[!UICONTROL Create Group]**
+* Selecteren **[!UICONTROL Create Group]**
 
 * **Template voor communautaire groep**:
 
@@ -51,7 +54,7 @@ Deze consoles zijn gelijkaardig aan de console van Plaatsen van Gemeenschappen.
    * **[!UICONTROL Additional Available Community Group Language(s)]**: gebruik het keuzemenu om de beschikbare talen van de groep van de gemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
    * **[!UICONTROL Community Group Name]**: kunsten
    * **[!UICONTROL Template]**: te selecteren vervolgkeuzelijst `Reference Group`
-   * Selecteer **[!UICONTROL Next]**
+   * Selecteren **[!UICONTROL Next]**
 
 ![Geneste groepen van gemeenschappen](assets/parent-to-nestedgroup.png)
 
@@ -60,7 +63,7 @@ Doorloop de andere deelvensters met deze instellingen:
 * **[!UICONTROL Design]**
 
    * Het ontwerp wijzigen of het ontwerp van de standaard bovenliggende site toestaan.
-   * Selecteer **[!UICONTROL Next]**.
+   * Selecteren **[!UICONTROL Next]**.
 
 * **[!UICONTROL Settings]**
 
@@ -77,7 +80,7 @@ Doorloop de andere deelvensters met deze instellingen:
 
       * **[!UICONTROL Select Next]**.
 
-* Selecteer **[!UICONTROL Create]**.
+* Selecteren **[!UICONTROL Create]**.
 
 ### Groepen nesten binnen tekengroep {#nesting-groups-within-arts-group}
 
@@ -123,9 +126,9 @@ Vernieuw de pagina zodat u alle drie geneste groepen (subgemeenschappen) kunt zi
 Om aan de genestelde groepen van de console van Plaatsen van Gemeenschappen te navigeren:
 
 * Selecteer de **[!UICONTROL engage folder]**
-* Selecteer **[!UICONTROL Getting Started Tutorial card]**
+* Selecteren **[!UICONTROL Getting Started Tutorial card]**
 * Selecteer de **[!UICONTROL Groups]** map
-* Selecteer **[!UICONTROL arts card]**
+* Selecteren **[!UICONTROL arts card]**
 * Selecteer de **[!UICONTROL Groups]** map
 
 ![create-new-group2](assets/create-new-group2.png)

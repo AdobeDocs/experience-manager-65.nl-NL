@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -197,13 +200,13 @@ Onder de **[!UICONTROL Resource Types]** tab, specificeer het custom resourceTyp
 
 * **[!UICONTROL Comment Resource Type]**
 
-  Navigeer naar het resourceType van uitgebreid `comment`component (enkele opmerking) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`.
+  Navigeer naar het resourceType van uitgebreid `comment`component (enkele opmerking) in /apps. Bijvoorbeeld: `/apps/social/commons/components/hbs/comments/comment`.
 
   Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
 * **[!UICONTROL Voting Resource Type]**
 
-  Navigeer naar het resourceType van uitgebreid `voting`in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`.
+  Navigeer naar het resourceType van uitgebreid `voting`in /apps. Bijvoorbeeld: `/apps/social/components/hbs/voting`.
 
   Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
 

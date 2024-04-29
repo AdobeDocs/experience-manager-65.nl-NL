@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -24,7 +27,7 @@ Daartoe:
 * Een aangepaste sjabloon maken.
 * Bedek het standaardsjabloonpad van de site.
 * Voeg de aangepaste sjabloon toe aan het overlaypad.
-* Geef de aangepaste sjabloon op door een `page-template` aan de `configuration` knooppunt.
+* Geef de aangepaste sjabloon op door een `page-template` eigenschap aan de `configuration` knooppunt.
 
 **Standaardsjabloon**:
 
@@ -52,7 +55,7 @@ Bijvoorbeeld: `/content/sites/engage/en/configuration`
 
 >[!CAUTION]
 >
->Als de aangepaste sjabloon de naam krijgt *site.hbs*, dan worden alle communautaire plaatsen aangepast.
+>Als de aangepaste sjabloon de naam krijgt *sitepage.hbs*, dan worden alle communautaire plaatsen aangepast.
 
 ### Voorbeeld van aangepaste sitesjabloon {#custom-site-template-example}
 
@@ -75,13 +78,13 @@ Voor het repliceren van aangepaste code wordt het volgende aanbevolen: [een pakk
 
 ## Een communautaire site exporteren {#exporting-a-community-site}
 
-Wanneer een gemeenschapssite is gemaakt, is het mogelijk de site te exporteren als een AEM pakket dat is opgeslagen in Package Manager en dat beschikbaar is voor downloaden en uploaden.
+Wanneer een communitysite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in Package Manager en dat beschikbaar is voor downloaden en uploaden.
 
 Dit is beschikbaar via de [Community Sites-console](sites-console.md#exporting-the-site).
 
 UGC en aangepaste code worden niet opgenomen in het pakket met de communitysite.
 
-Als u UGC wilt exporteren, gebruikt u de opdracht [AEM Communities UGC-migratiehulpprogramma](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), een opensource migratiehulpmiddel beschikbaar op GitHub.
+Als u UGC wilt exporteren, gebruikt u de [AEM Communities UGC-migratiehulpprogramma](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), een opensource migratiehulpmiddel beschikbaar op GitHub.
 
 ## Een Community-site verwijderen {#deleting-a-community-site}
 
@@ -89,11 +92,11 @@ Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen we
 
 * [UGC](#user-generated-content)
 * [Gebruikersgroepen](#community-user-groups)
-* [Databaserecords](#database-records)
+* [Databasegegevens](#database-records)
 
 ### Unieke site-id van community {#community-unique-site-id}
 
-U kunt als volgt de unieke site-id identificeren die aan de gemeenschapssite is gekoppeld met behulp van CRXDE:
+U kunt als volgt de unieke site-id identificeren die is gekoppeld aan de community-site met behulp van CRXDE:
 
 * Ga naar de taalhoofdmap van de site, zoals `/content/sites/*<site name>*/en/rep:policy`.
 
@@ -128,4 +131,4 @@ Op alle auteur en publiceer instanties, van [beveiligingsconsole](../../help/sit
 * Vooraf ingesteld met `community`
 * Gevolgd door [unieke site-id](#community-unique-site-id)
 
-Bijvoorbeeld, `community-engage-x0e11-members`.
+Bijvoorbeeld: `community-engage-x0e11-members`.

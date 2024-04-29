@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 0%
 
 ---
 
@@ -36,9 +38,9 @@ In de auteursomgeving, om de console van de Configuratie van de Opslag te bereik
 
 * Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**
 
-* Selecteer **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+* Selecteren **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
 
-* Selecteer **[!UICONTROL Submit]**
+* Selecteren **[!UICONTROL Submit]**
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
@@ -47,11 +49,11 @@ In de auteursomgeving, om de console van de Configuratie van de Opslag te bereik
 Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke configuratie in het publicatiemilieu wordt geplaatst:
 
 * Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
-* Selecteer **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
+* Selecteren **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
 
    * Bladeren naar `/conf/global/settings/community/srpc/`
 
-* Selecteer **[!UICONTROL Activate]**
+* Selecteren **[!UICONTROL Activate]**
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 1%
+source-wordcount: '454'
+ht-degree: 0%
 
 ---
 
@@ -49,8 +52,8 @@ Nu is er een [paginasjabloon](initial-app.md#createthepagetemplate), kunt u de w
 
    * Titel: `SCF Sandbox Site`
    * Naam: `an-scf-sandbox`
-   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
-   * Klik op **[!UICONTROL Create]**
+   * Selecteren **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klikken **[!UICONTROL Create]**
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
@@ -58,15 +61,15 @@ Nu is er een [paginasjabloon](initial-app.md#createthepagetemplate), kunt u de w
 
    * Titel: `SCF Sandbox`
    * Naam: `en`
-   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
-   * Klik op **[!UICONTROL Create]**
+   * Selecteren **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klikken **[!UICONTROL Create]**
 
 1. Selecteer in het verkenner-venster de pagina die u hebt gemaakt. `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**
 
    * Titel: `SCF Play`
    * Naam: `play`
-   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
-   * Klik op **[!UICONTROL Create]**
+   * Selecteren **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klikken **[!UICONTROL Create]**
 
 1. Zo wordt de website nu weergegeven in de websiteconsole. U ziet dat onderliggende pagina&#39;s van het item dat is geselecteerd in het deelvenster Verkenner, worden weergegeven in het rechterdeelvenster waar ze kunnen worden beheerd.
 
@@ -97,7 +100,7 @@ De gegevensopslagruimte moet er als volgt uitzien:
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
-* Klik op **[!UICONTROL Save All]**
+* Klikken **[!UICONTROL Save All]**
 
 Als er om het even welk probleem is die de configuratie opslaan, login opnieuw en vormen opnieuw.
 

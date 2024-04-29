@@ -2,7 +2,10 @@
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 0%
@@ -250,7 +253,7 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 * `s_code.js` H.27.5 is inbegrepen. Adobe raadt u aan over te schakelen op `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0 is inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) om AppMeasurement.js in de plaats te verstrekken.
 
-#### AEM en handel {#aem-commerce}
+#### AEM en Commerce {#aem-commerce}
 
 Verbeteringen aan het Commerce integration framework verlopen sneller sinds AEM 6.4. [Meer informatie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 

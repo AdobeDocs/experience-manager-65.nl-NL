@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 1%
@@ -39,8 +42,8 @@ De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is 
 >* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;.
 >* Node-namen kunnen afbreekstreepjes en onderstrepingstekens bevatten, maar deze moeten wel worden gecodeerd als er in een Java™-bestand naar wordt verwezen als een pakketnaam. Zowel koppeltekens als onderstrepingstekens worden overgeslagen met een onderstrepingsteken gevolgd door de Unicode-waarde:
 >
-* afbreekstreepje wordt &#39;_002d&#39;
-* onderstrepingsteken wordt &#39;_005f&#39;
+>   * afbreekstreepje wordt &#39;_002d&#39;
+>   * onderstrepingsteken wordt &#39;_005f&#39;
 
 ## De toepassingsmap (/apps) instellen {#setup-the-application-directory-apps}
 
@@ -54,7 +57,7 @@ De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mapp
 
    1. Selecteer de `/apps` map.
    1. Klikken met rechtermuisknop **[!UICONTROL Create]**... of trek de **[!UICONTROL Create...]** -menu.
-   1. Selecteer **[!UICONTROL Create Folder...]**.
+   1. Selecteren **[!UICONTROL Create Folder...]**.
    1. In de **[!UICONTROL Create Folder]** dialoogvenster, enter `an-scf-sandbox`.
    1. Klik op **[!UICONTROL OK]**.
 
@@ -72,7 +75,7 @@ De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mapp
    1. In de **[!UICONTROL Create Folder]** dialoogvenster, enter **[!UICONTROL templates]**.
    1. Klik op **[!UICONTROL OK]**.
    1. Opnieuw selecteren `/apps/an-scf-sandbox`.
-   1. Selecteer **[!UICONTROL Save All]**.
+   1. Selecteren **[!UICONTROL Save All]**.
 
    Net als bij elk bewerkingsproces, moet u deze vaak opslaan. Als u problemen ondervindt met het invoeren van gegevens, kan dit zijn omdat er een time-out is opgetreden bij uw aanmelding of omdat u vorige bewerkingen moet opslaan.
 
@@ -94,7 +97,7 @@ De map /etc/designs bevat de afbeeldingen, scripts en stijlpagina&#39;s die same
 
    * Titel: **[!UICONTROL An SCF Sandbox]**
    * Naam: **[!UICONTROL an-scf-sandbox]**
-   * Selecteer **[!UICONTROL Design Page Template]**
+   * Selecteren **[!UICONTROL Design Page Template]**
 
    Klik op **[!UICONTROL Create]**.
 

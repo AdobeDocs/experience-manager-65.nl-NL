@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -17,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
-An ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een app maken met AEM Mobile *wizard Maken* selecteert u doorgaans een van de gewenste toepassingssjablonen uit de keuzelijst met referentiemonsters of (gewoonlijk) een aangepaste toepassingssjabloon die is gemaakt door *AEM ontwikkelaars.*
+An ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een app maken met AEM Mobile *wizard Maken* selecteert u doorgaans een van de gewenste toepassingssjablonen uit de referentiemonsters van de Adobe voor toepassingen die buiten de box vallen of (gewoonlijk) een aangepaste toepassingssjabloon die is gemaakt door *AEM ontwikkelaars*
 
 Nadat u de mobiele toepassing hebt gemaakt met gebruik van HTML5 en PhoneGap, kunt u deze beheren in het Command Center. U kunt de HTML5-inhoud voor een native toepassing ook beheren in het Command Center met Cordova-webweergaven (zodat PhoneGap-plug-ins toegang hebben tot native functies).
 

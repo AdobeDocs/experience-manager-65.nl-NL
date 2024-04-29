@@ -7,7 +7,9 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2907'
 ht-degree: 0%
@@ -114,7 +116,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
      `/etc/commerce/products/<*store name*>/`
 
-   * **Handelsprovider**
+   * **Commerce-provider**
 
      De importer voor uw [handelsprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); standaard Geometrixx.
 
@@ -633,7 +635,7 @@ Als u de eigenschappen van een voucher of een promotie wilt wijzigen, dubbelklik
 
 ### Vouchers toevoegen aan een winkelwagen {#adding-vouchers-to-a-cart}
 
-Als u gebruikers wilt toestaan vouchers aan hun winkelwagentjes toe te voegen, kunt u de ingebouwde **Vouchers** component (categorie Handel). Voeg dit toe aan dezelfde pagina als waar het winkelwagentje wordt weergegeven (maar dit is niet verplicht). De component vouchers is slechts een formulier waarin de gebruiker een vouchercode kan invoeren. Het is de winkelwagencomponent die de lijst met toegepaste vouchers en de korting daarop weergeeft.
+Als u gebruikers wilt toestaan vouchers aan hun winkelwagentjes toe te voegen, kunt u de ingebouwde **Vouchers** component (categorie Commerce). Voeg dit toe aan dezelfde pagina als waar het winkelwagentje wordt weergegeven (maar dit is niet verplicht). De component vouchers is slechts een formulier waarin de gebruiker een vouchercode kan invoeren. Het is de winkelwagencomponent die de lijst met toegepaste vouchers en de korting daarop weergeeft.
 
 Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de cartpagina, onder het winkelwagentje zelf.
 

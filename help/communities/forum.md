@@ -7,9 +7,12 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -164,7 +167,7 @@ Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum a
 
 * **Menatiepatroon gebruikersinterface**
 
-  Geef de patroontekenreeks op die de geregistreerde gebruiker in een bericht mag labelen (@genoemd). Bijvoorbeeld, `~{{familyName}}{{givenName}}`.
+  Geef de patroontekenreeks op die de geregistreerde gebruiker in een bericht mag labelen (@genoemd). Bijvoorbeeld: `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >

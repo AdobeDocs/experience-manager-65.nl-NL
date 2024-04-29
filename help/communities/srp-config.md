@@ -7,7 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -42,7 +44,7 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
    * Zie details voor [selecteren, DSRP](dsrp.md#select-dsrp)
    * Zie details voor [selecteren van ASRP](asrp.md#select-asrp)
 
-* Selecteer **[!UICONTROL Submit]**.
+* Selecteren **[!UICONTROL Submit]**.
 
 ### Informatie over JCR-opslag {#about-jcr-storage}
 

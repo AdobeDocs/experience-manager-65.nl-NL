@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 1%
+source-wordcount: '270'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -31,7 +34,7 @@ ht-degree: 1%
 
 ## AEM Mobile-auteur {#aem-mobile-author}
 
-An ***AEM-auteur* (of *Marketer*)**gebruikt aangepaste of kant-en-klare sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt dan gebruikt door *AEM-auteurs* het creëren van rijke en relevante ervaringen binnen de app, waaronder integratie met de rest van de Adobe Experience Cloud.
+An ***AEM auteur* (of *Marketer*)**gebruikt aangepaste of kant-en-klare sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt dan gebruikt door *Auteurs AEM* het creëren van rijke en relevante ervaringen binnen de app, waaronder integratie met de rest van de Adobe Experience Cloud.
 
 Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On-demand Services.
 
@@ -42,7 +45,7 @@ Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een 
 * [Cloud Configuration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Inhoud beheren](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
+Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) aan de slag.
 
 >[!NOTE]
 >

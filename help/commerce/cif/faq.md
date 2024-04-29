@@ -1,16 +1,18 @@
 ---
-title: AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
-description: AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
+title: AEM - Commerce Integration using Commerce integration framework FAQ
+description: AEM - Commerce Integration using Commerce integration framework FAQ
 exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
 
 ---
 
-# AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
+# AEM - Commerce Integration using Commerce integration framework FAQ
 
 ## 1. Wordt CIF GraphQL alleen gebruikt voor handel of is het beschikbaar voor het opvragen van inhoud die is geschreven op AEM JCR?
 
@@ -50,7 +52,7 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan om de datum op de client weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenongeldigverklaring, zie [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
 
-## 10. Is er een aanbeveling over een gemeenschappelijke zoekactie in AEM inhoud met de handel?
+## 10. Is er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
 Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is klant-specifiek en beter opgelost op een project-specifiek niveau.
 

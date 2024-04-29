@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 1%
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +20,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Als u Adobe Experience Manage (AEM) niet gebruikt als bron voor inhoudsbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u Adobe Experience Manage (AEM) niet gebruikt als bron voor contentbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## AEM-beheerder {#aem-administrator}
 
@@ -31,7 +34,7 @@ ht-degree: 1%
 >
 >Voordat u aan de slag gaat met het instellen van uw omgeving voor AEM Mobile On-demand Services, raadpleegt u [AEM Mobile Application Dashboard of Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-An ***AEM*** is verantwoordelijk voor het toevoegen van een toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een app maken met AEM Mobile *wizard Maken* Selecteer doorgaans een van de gewenste app-sjablonen uit de keuzelijst met referentiemonsters of (gewoonlijk) een aangepaste app-sjabloon die is gemaakt met *AEM ontwikkelaars.*
+An ***AEM*** is verantwoordelijk voor het toevoegen van een toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een app maken met AEM Mobile *wizard Maken* Selecteer doorgaans een van de gewenste toepassingssjablonen uit de referentiemonsters van de Adobe voor toepassingen die buiten de box vallen of een aangepaste toepassingssjabloon die is gemaakt door *AEM ontwikkelaars*
 
 >[!NOTE]
 >

@@ -1,9 +1,11 @@
 ---
-title: Opmerkingen bij de release AEM inhoud en handel 2019
-description: Opmerkingen bij de release van Adobe Experience Manager Content and Commerce 2019.
+title: Opmerkingen bij de release AEM Content en Commerce 2019
+description: Opmerkingen bij de release Adobe Experience Manager Content en Commerce 2019.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 4%
@@ -102,7 +104,7 @@ ht-degree: 4%
 
 * De mening van de productbeschrijving wordt toegelaten in de console van de Producten van de AEM.
 
-* De Teaser van de handel breidt de Teaser component WCM uit om auteurs toe te staan om CTA- gebieden aan een productdetailpagina of een pagina van de productlijst ook toe te voegen.
+* Commerce Teaser breidt de WCM Teaser-component uit, zodat auteurs ook CTA-velden kunnen toevoegen aan een productdetailpagina of een productlijstpagina.
 
 * Knop om auteurs toe te staan op een AEM pagina te plaatsen en een koppeling te maken naar een AEM pagina, productdetailpagina, productlijstpagina of een externe koppeling.
 

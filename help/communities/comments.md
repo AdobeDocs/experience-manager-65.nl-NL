@@ -7,9 +7,12 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -163,13 +166,13 @@ Onder de **Brontypen** tab, specificeer het custom resourceType voor nieuwe inst
 
 * **Type bron van opmerking**
 
-  Navigeer naar het resourceType van uitgebreid `comment` component (enkele opmerking) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
+  Navigeer naar het resourceType van uitgebreid `comment` component (enkele opmerking) in /apps. Bijvoorbeeld: `/apps/social/commons/components/hbs/comments/comment`
 
   Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
 * **Type stembron**
 
-  Navigeer naar het resourceType van uitgebreid `voting` in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
+  Navigeer naar het resourceType van uitgebreid `voting` in /apps. Bijvoorbeeld: `/apps/social/components/hbs/voting`
 
   Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
 

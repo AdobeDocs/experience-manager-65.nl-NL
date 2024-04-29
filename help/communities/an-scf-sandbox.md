@@ -1,14 +1,17 @@
 ---
 title: Een SCF-sandbox maken
-description: Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geinteresseerd zijn. Het door de verwezenlijking van een zandbakplaats SCF
+description: Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geïnteresseerd zijn. Het door de verwezenlijking van een zandbakplaats SCF
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -21,7 +24,7 @@ Een ander nuttig hulpmiddel voor ontwikkelaars is het [Community Components Guid
 
 Het maken van een website kan nuttig zijn voor het begrijpen van de structuur van een AEM website, die functies van de Gemeenschappen kan bevatten, en voor het verschaffen van eenvoudige pagina&#39;s waarop u kunt zoeken naar het werken met de [Sociaal-componentkader (SCF)](scf.md).
 
-Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geinteresseerd zijn. Het doorloopt de verwezenlijking van een zandbak SCF, gelijkend op het leerprogramma voor [Een volledig aanbevolen internetwebsite maken](../../help/sites-developing/website.md) waarin de nadruk ligt op sitestructuren, zoals navigatie, logo, zoekopdracht, werkbalk en het weergeven van onderliggende pagina&#39;s.
+Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geïnteresseerd zijn. Het doorloopt de verwezenlijking van een zandbak SCF, gelijkend op het leerprogramma voor [Hoe te om een volledig Aanbevolen Website van Internet te creëren](../../help/sites-developing/website.md) waarin de nadruk ligt op sitestructuren, zoals navigatie, logo, zoekopdracht, werkbalk en het weergeven van onderliggende pagina&#39;s.
 
 De ontwikkeling vindt op een auteursgeval plaats, terwijl het experimenteren met de plaats best op een publicatiegeval is.
 
@@ -53,15 +56,15 @@ Hier volgen enkele handige koppelingen voor ontwikkelaars die nog niet vertrouwd
 
 ## CRXDE Lite Development Environment gebruiken {#using-crxde-lite-development-environment}
 
-AEM ontwikkelaars besteden veel tijd aan [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) ontwikkelomgeving op een auteurinstantie. CRXDE Lite biedt minder beperkte toegang tot de CRX-opslagplaats. Klassieke UI-gereedschappen en UI-consoles met aanraakbediening bieden meer gestructureerde toegang tot specifieke delen van de CRX-opslagplaats.
+AEM ontwikkelaars besteden veel tijd in de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) ontwikkelomgeving op een auteurinstantie. CRXDE Lite biedt minder beperkte toegang tot de CRX-opslagplaats. Klassieke UI-gereedschappen en UI-consoles met aanraakbediening bieden meer gestructureerde toegang tot specifieke delen van de CRX-opslagplaats.
 
-Nadat u zich hebt aangemeld met beheerdersrechten, kunt u op verschillende manieren toegang krijgen tot CRXDE Lite:
+Nadat u zich hebt aangemeld met beheerdersrechten, zijn er verschillende manieren om toegang te krijgen tot CRXDE Lite:
 
 1. Selecteer navigatie in globale navigatie **[!UICONTROL Tools > CRXDE Lite]**.
 
    ![crxde-lite](assets/tools-crxde.png)
 
-2. Van de [klassieke UI-welkomstpagina](http://localhost:4502/welcome.html), schuiven omlaag en klikken **[!UICONTROL CRXDE Lite]** in het rechterdeelvenster.
+2. Van de [welkomstpagina voor klassieke gebruikersinterface](http://localhost:4502/welcome.html), schuiven omlaag en klikken **[!UICONTROL CRXDE Lite]** in het rechterdeelvenster.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 

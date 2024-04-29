@@ -7,9 +7,11 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -72,15 +74,15 @@ Om een Vertaalintegratie tot stand te brengen, die een schakelaar van de Vertaal
 
 * Aanmelden als beheerder
 * Van de [hoofdmenu](http://localhost:4502/)
-* Selecteer **[!UICONTROL Tools]**
-* Selecteer **[!UICONTROL Operations]**
-* Selecteer **[!UICONTROL Cloud]**
-* Selecteer **[!UICONTROL Cloud Services]**
+* Selecteren **[!UICONTROL Tools]**
+* Selecteren **[!UICONTROL Operations]**
+* Selecteren **[!UICONTROL Cloud]**
+* Selecteren **[!UICONTROL Cloud Services]**
 * Omlaag schuiven naar **[!UICONTROL Translation Integration]**
 
   ![vertaling-integratie](assets/translation-integration.png)
 
-* Selecteer **[!UICONTROL Show Configurations]**
+* Selecteren **[!UICONTROL Show Configurations]**
 
   ![show-configuration](assets/translation-integration1.png)
 
@@ -102,7 +104,7 @@ Om een Vertaalintegratie tot stand te brengen, die een schakelaar van de Vertaal
 
   (Optioneel) Voer een naam in voor de configuratie. De standaardwaarde is een knooppuntnaam die op de Titel wordt gebaseerd.
 
-* Selecteer **[!UICONTROL Create]**
+* Selecteren **[!UICONTROL Create]**
 
 #### Dialoogvenster Config voor vertaling {#translation-config-dialog}
 
@@ -123,7 +125,7 @@ Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard i
 (Optioneel) Door een landinstelling te selecteren voor het opslaan van UGC, verschijnen publicaties van alle taalkopieën in één algemeen gesprek. Kies bij conventie de landinstelling voor de [basistaal](sites-console.md#translation) voor de website. Kiezen `No Common Store` schakelt algemene vertaling uit. Globale vertaling is standaard uitgeschakeld.
 
 * **[!UICONTROL Assets]** tab: kan als standaardinstellingen worden ingesteld.
-* Selecteer **[!UICONTROL OK]**
+* Selecteren **[!UICONTROL OK]**
 
 #### Activering {#activation}
 

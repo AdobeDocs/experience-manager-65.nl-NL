@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, kunt u de inhoud publiceren. Ook kunt u de publicatie van uw inhoud ongedaan maken.
 
@@ -25,9 +28,9 @@ Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en 
 >
 >Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in online Help.
 
-## De inhoud publiceren/verwijderen {#publishing-unpublishing-the-content}
+## De inhoud publiceren/publiceren ongedaan maken {#publishing-unpublishing-the-content}
 
-Dit verschilt van een &#39;AEM-publicatie&#39;. U duwt geen inhoud aan een AEM publiceren serverinstantie om het openbaar te maken viewable. Hier geeft u een melding weer over Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
+Dit verschilt van &quot;AEM publiceren&quot;. U duwt geen inhoud aan een AEM Publish serverinstantie om het openbaar te maken viewable. Hier geeft u een melding weer over Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
 
 >[!NOTE]
 >

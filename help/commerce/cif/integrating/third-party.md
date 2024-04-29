@@ -1,17 +1,19 @@
 ---
-title: AEM en integratie van derde partijen in de handel met Commerce integration framework
+title: AEM en Commerce Integration van derden die Commerce integration framework gebruiken
 description: Ondernemingen kunnen aanvullende commerciële oplossingen van derden nodig hebben om hun winkel te bedienen. Het Commerce integration framework (CIF) kan in dergelijke integratiescenario's worden gebruikt om een derdehandelsoplossing met Adobe Experience Manager te verbinden gebruikend I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# AEM en de Integratie van de Handel van de derde die Commerce integration framework gebruiken {#aem-third-party}
+# AEM en Commerce-integratie van derden met behulp van Commerce integration framework {#aem-third-party}
 
 De integratie van niet-Adobe Commerce-oplossingen is een algemeen scenario voor CIF. Oplossingen van derden met verschillende API&#39;s en schema&#39;s worden verbonden via een integratielaag.
 
@@ -57,7 +59,7 @@ Deze integratielaag wordt niet vereist als een derdelaag (zoals Mulesoft) beschi
 
 De schakelaars verstrekken een goede aanvang voor projecten. Zij komen met een handel oplossing-specifieke verbinding en gebrek API afbeelding. Deze schakelaars worden gebouwd door derden en niet door Adobe gehandhaafd. Neem contact op met de desbetreffende partner voor meer informatie.
 
-* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), gebouwd door Diconium
+* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), gebouwd door Diconium
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), gebouwd door Diconium
 
 >[!TIP]

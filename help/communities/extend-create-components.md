@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 3%
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -56,16 +59,16 @@ Het verwijderen van het automatisch gemaakte JSP-bestand komt doordat in plaats 
       * **Supertype**: *social/commons/components/hbs/comments*
       * **Groep**: *Aangepast*
 
-   * Selecteer **[!UICONTROL Next]**
-   * Selecteer **[!UICONTROL Next]**
-   * Selecteer **[!UICONTROL Next]**
-   * Selecteer **[!UICONTROL OK]**
+   * Selecteren **[!UICONTROL Next]**
+   * Selecteren **[!UICONTROL Next]**
+   * Selecteren **[!UICONTROL Next]**
+   * Selecteren **[!UICONTROL OK]**
 
 1. Vouw het gemaakte knooppunt uit: `/apps/custom/components/comments`
-1. Selecteer **[!UICONTROL Save All]**
+1. Selecteren **[!UICONTROL Save All]**
 1. Klikken met rechtermuisknop `comments.jsp`
-1. Selecteer **[!UICONTROL Delete]**
-1. Selecteer **[!UICONTROL Save All]**
+1. Selecteren **[!UICONTROL Delete]**
+1. Selecteren **[!UICONTROL Save All]**
 
 ![create-component](assets/create-component.png)
 
@@ -78,7 +81,7 @@ Het verwijderen van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 1. Ga naar de `/apps/custom/components/comments` node
 1. Klik met de rechtermuisknop op het knooppunt
 
-   * Selecteer **[!UICONTROL Create]** > **[!UICONTROL Component...]**
+   * Selecteren **[!UICONTROL Create]** > **[!UICONTROL Component...]**
 
       * **Label**: *opmerking*
       * **Titel**: *Alt-opmerking*
@@ -86,16 +89,16 @@ Het verwijderen van het automatisch gemaakte JSP-bestand komt doordat in plaats 
       * **Supertype**: *social/commons/components/hbs/comments/comment*
       * **Groep**: `*.hidden*`
 
-   * Selecteer **[!UICONTROL Next]**
-   * Selecteer **[!UICONTROL Next]**
-   * Selecteer **[!UICONTROL Next]**
-   * Selecteer **[!UICONTROL OK]**
+   * Selecteren **[!UICONTROL Next]**
+   * Selecteren **[!UICONTROL Next]**
+   * Selecteren **[!UICONTROL Next]**
+   * Selecteren **[!UICONTROL OK]**
 
 1. Vouw het gemaakte knooppunt uit: `/apps/custom/components/comments/comment`
-1. Selecteer **[!UICONTROL Save All]**
+1. Selecteren **[!UICONTROL Save All]**
 1. Klikken met rechtermuisknop `comment.jsp`
-1. Selecteer **[!UICONTROL Delete]**
-1. Selecteer **[!UICONTROL Save All]**
+1. Selecteren **[!UICONTROL Delete]**
+1. Selecteren **[!UICONTROL Save All]**
 
 ![create-child-component](assets/create-child-component.png)
 
@@ -135,7 +138,7 @@ Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
       * Naar `/apps/custom/components/comments/comment`
 
 * Selecteren `/apps/custom` node
-* Selecteer **[!UICONTROL Save All]**
+* Selecteren **[!UICONTROL Save All]**
 
 ## Een clientbibliotheekmap maken {#create-a-client-library-folder}
 
@@ -144,7 +147,7 @@ Als u wilt voorkomen dat deze clientbibliotheek moet worden opgenomen, kunt u de
 Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Selecteren `/apps/custom/components/comments` node
-* Selecteer **[!UICONTROL Create Node]**
+* Selecteren **[!UICONTROL Create Node]**
 
    * **Naam**: `clientlibs`
    * **Type**: `cq:ClientLibraryFolder`
@@ -153,7 +156,7 @@ Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
       * **Naam** `categories` **Type** `String` **Waarde** `cq.social.author.hbs.comments` `Multi`
       * **Naam** `dependencies` **Type** `String` **Waarde** `cq.social.scf` `Multi`
 
-* Selecteer **[!UICONTROL Save All]**
+* Selecteren **[!UICONTROL Save All]**
 * Met `/apps/custom/components/comments/clientlib`Als knoop geselecteerd, creeer drie dossiers:
 
    * **Naam**: `css.txt`
@@ -161,7 +164,7 @@ Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
    * **Naam**: customcommentsystem.js
 
 * Voer &#39;customcommentsystem.js&#39; in als de inhoud van `js.txt`
-* Selecteer **[!UICONTROL Save All]**
+* Selecteren **[!UICONTROL Save All]**
 
 ![commentaarclientlibs](assets/comments-clientlibs.png)
 
@@ -189,7 +192,7 @@ Voer de volgende tekst in als de inhoud van `customcommentsystem.js`:
 })($CQ, _, Backbone, SCF);
 ```
 
-* Selecteer **[!UICONTROL Save All]**
+* Selecteren **[!UICONTROL Save All]**
 
 ## De app publiceren {#publish-the-app}
 
@@ -199,8 +202,8 @@ Een manier om dit te doen is:
 
 * Van globale navigatie,
 
-   * Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
-   * Selecteer **[!UICONTROL Activate Tree]**
+   * Selecteren **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
+   * Selecteren **[!UICONTROL Activate Tree]**
    * Set `Start Path` tot `/apps/custom`
    * Uitschakelen **[!UICONTROL Only Modified]**
    * Selecteren **[!UICONTROL Activate]** knop

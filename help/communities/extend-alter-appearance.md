@@ -7,9 +7,12 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -58,8 +61,8 @@ Een manier om dit te doen is:
 
 * Vanuit het hoofdmenu
 
-   * Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
-   * Selecteer **[!UICONTROL Activate Tree]**.
+   * Selecteren **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
+   * Selecteren **[!UICONTROL Activate Tree]**.
    * Set `Start Path` tot `/apps/custom`.
    * Deselecteren **[!UICONTROL Only Modified]**.
    * Selecteren **[!UICONTROL Activate]** knop.

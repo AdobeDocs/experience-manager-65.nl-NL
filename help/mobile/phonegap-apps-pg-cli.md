@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -88,9 +91,9 @@ phonegap run ios
 >1. Uitvoeren `phonegap create helloWorld`
 >1. Navigeer in helloWorld (cd helloWorld)
 >1. Uitvoeren `phonegap run android` (of vervang Android™ door iOS zoals hierboven beschreven).
-1. Emulator opent het runnen van uw onlangs gecreeerd App PhoneGap, die &quot;Apparaat Klaar&quot;zegt als de Brug JavaScript aan inheems operationeel is.
+>1. Emulator opent het runnen van uw onlangs gecreeerd App PhoneGap, die &quot;Apparaat Klaar&quot;zegt als de Brug JavaScript aan inheems operationeel is.
 >
-Dit het oplossen van problemen verifieert dat uw CLI van PhoneGap ontwikkelomgeving correct loopt.
+>Dit het oplossen van problemen verifieert dat uw CLI van PhoneGap ontwikkelomgeving correct loopt.
 
 ## Foutopsporing in JavaScript met Safari en IOS debuggen {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -151,7 +154,7 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 
 >[!NOTE]
 >
-Als u de waarden van variabelen in de huidige methode wilt zien, plaatst u de muis.
+>Als u de waarden van variabelen in de huidige methode wilt zien, plaatst u de muis.
 
 ## De volgende stappen {#the-next-steps}
 

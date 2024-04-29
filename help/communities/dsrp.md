@@ -7,9 +7,11 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -59,8 +61,8 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 * Van de **hoofdmenu**
 
    * Selecteren **[!UICONTROL Tools]** (uit het linkerdeelvenster)
-   * Selecteer **[!UICONTROL Communities]**
-   * Selecteer **[!UICONTROL Storage Configuration]**
+   * Selecteren **[!UICONTROL Communities]**
+   * Selecteren **[!UICONTROL Storage Configuration]**
 
       * De resulterende locatie is bijvoorbeeld: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
 
@@ -70,7 +72,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
   ![dsrp-config](assets/dsrp-config.png)
 
-* Selecteer **[!UICONTROL Database Storage Resource Provider (DSRP)]**
+* Selecteren **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Databaseconfiguratie**
 
    * **[!UICONTROL JDBC datasource name]**
@@ -101,7 +103,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
      *default*: collection1
 
-* Selecteer **[!UICONTROL Submit]**.
+* Selecteren **[!UICONTROL Submit]**.
 
 ### Nul stappen voor downtime migratie voor standaardconfiguratie {#zerodt-migration-steps}
 
@@ -128,7 +130,7 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
       * Bladeren naar `/etc/socialconfig/srpc/`
 
    * Zorgen `Only Modified` is niet geselecteerd.
-   * Selecteer **[!UICONTROL Activate]**.
+   * Selecteren **[!UICONTROL Activate]**.
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 

@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 [Toepassingen met één pagina](https://en.wikipedia.org/wiki/Single-page_application) (SPA) een kritische massa hebben bereikt, die algemeen wordt beschouwd als het meest effectieve patroon voor het opbouwen van naadloze ervaringen met webtechnologie. Door een SPA te volgen kunt u een toepassing maken die dezelfde prestaties levert als een bureaubladtoepassing of mobiele toepassing, maar die een groot aantal apparaatplatforms en formulierfactoren bereikt vanwege de basis in open webstandaarden.
 
@@ -35,7 +38,7 @@ AEM Apps behandelt veel van de configuratie AngularJS voor u, met inbegrip van h
 
 Een deel van de initialisatie van uw app bestaat uit het opgeven van welke AngularJS-modules de toepassing afhankelijk is. De lijst met modules die door uw app worden gebruikt, is opgegeven door een script op /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp en kan worden bedekt door de paginacomponent van uw eigen apps om extra AngularJS-modules in te schakelen die uw app nodig heeft. Als voorbeeld, vergelijk het bovengenoemde manuscript met de implementatie van de Geometrixx (die in /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp wordt gevestigd).
 
-Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het angular-app-module manuscript door alle afstammende pagina&#39;s van uw top-level app pagina om een reeks &quot;routes&quot;te produceren en elke weg op de dienst van $routeProvider van Angular te vormen. Bekijk voor een voorbeeld van hoe dit er in de praktijk uitziet het angular-app-module script dat is gegenereerd door het voorbeeld van de Geometrixx Outdoors-app: (voor een koppeling is een lokale instantie vereist) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het angular-app-module manuscript door alle afstammende pagina&#39;s van uw top-level app pagina om een reeks &quot;routes&quot;te produceren en elke weg op de dienst van $routeProvider van Angular te vormen. Bekijk voor een voorbeeld van hoe dit er in de praktijk uitziet, het angular-app-module-script dat is gegenereerd door het voorbeeld van de Geometrixx Outdoors-app: (koppeling vereist een lokale instantie) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Door in te schrijven naar de gegenereerde AEMAngularApp, ziet u een reeks routes die als volgt worden opgegeven:
 
@@ -80,7 +83,7 @@ Voor een complexer controllervoorbeeld opent u het script ng-template-page contr
 
 In het bovenstaande voorbeeld wordt de parameter van de `$routeParams` de service wordt uitgevoerd en vervolgens wordt gemaskeerd in de mappenstructuur waarin de JSON-gegevens zijn opgeslagen. Door de SKU te behandelen `id` op deze manier, kunt u één enkel malplaatje van het Product leveren dat de productgegevens voor potentieel duizenden verschillende producten kan teruggeven. Dit is een veel scalable model dat een individuele route voor elk punt in (potentieel) massaal productgegevensbestand vereist.
 
-Er zijn ook twee onderdelen aan het werk: ng-product vergroot het toepassingsgebied met de gegevens die het uit het bovenstaande haalt `$http` vraag. Deze pagina bevat ook een ng-afbeelding die het bereik vergroot met de waarde die het ophaalt uit het antwoord. Op grond van de Angular `$http` de dienst, wacht elke component geduld tot het verzoek wordt gebeëindigd en de belofte het werd gecreeerd wordt voldaan.
+Er zijn hier ook twee componenten aan het werk: ng-product vergroot het toepassingsgebied met de gegevens die het uit het bovenstaande haalt `$http` vraag. Deze pagina bevat ook een ng-afbeelding die het bereik vergroot met de waarde die het ophaalt uit het antwoord. Op grond van de Angular `$http` de dienst, wacht elke component geduld tot het verzoek wordt gebeëindigd en de belofte het werd gecreeerd wordt voldaan.
 
 ## De volgende stappen {#the-next-steps}
 

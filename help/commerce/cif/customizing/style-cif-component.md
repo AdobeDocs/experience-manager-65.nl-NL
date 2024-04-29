@@ -1,6 +1,6 @@
 ---
 title: Stijl Adobe Experience Manager CIF Core-onderdelen
-description: Leer hoe u Adobe Experience Manager CIF Core Components opmaakt. In de zelfstudie wordt uitgelegd hoe bibliotheken of clientlibs aan de clientzijde worden gebruikt voor de implementatie en het beheer van CSS en JavaScript voor een Adobe Experience Manager (AEM) Commerce-implementatie. Deze zelfstudie behandelt ook hoe de module ui.frontend en een webpack-project worden geïntegreerd in het end-to-end buildproces.
+description: Leer hoe u Adobe Experience Manager CIF Core Components opmaakt. In de zelfstudie wordt uitgelegd hoe Client-Side Libraries of clientlibs worden gebruikt om CSS en JavaScript voor een Adobe Experience Manager (AEM) Commerce-implementatie te implementeren en te beheren. Deze zelfstudie behandelt ook hoe de module ui.frontend en een webpack-project worden geïntegreerd in het end-to-end buildproces.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -10,7 +10,8 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 0%
@@ -86,7 +87,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    ![ui.frontend commercemap](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   Er zijn meerdere controles (`.scss`) onder de map. Dit zijn de specifieke stijlen van de Handel voor elk van de componenten van de Handel.
+   Er zijn meerdere controles (`.scss`) onder de map. Dit zijn de Commerce-specifieke stijlen voor elk van de Commerce-componenten.
 
 1. Het bestand openen `_productteaser.scss`.
 

@@ -5,10 +5,13 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige 
 Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een AEM Mobile-toepassing:
 
 * **Beheerder**
-* **Developer**
+* **Ontwikkelaar**
 * **Auteur**
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}

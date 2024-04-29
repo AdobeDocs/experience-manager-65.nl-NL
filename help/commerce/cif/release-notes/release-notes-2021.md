@@ -1,9 +1,11 @@
 ---
-title: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2021
-description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2021.
+title: Opmerkingen bij de release Adobe Experience Manager Content en Commerce 2021
+description: Opmerkingen bij de release Adobe Experience Manager Content en Commerce 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 4%
@@ -32,11 +34,11 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 ### Wat is er nieuw? {#what-is-new-november}
 
-* Uitgebreide myAccount-componenten die zijn gebaseerd op uitbreidbare Peregrine-componenten van de Handel
+* Uitgebreide myAccount-componenten die zijn gebaseerd op uitbreidbare Peregrine-componenten van Commerce
 
 ![Uitgebreide myAccount-componenten](/help/assets/CIF/extended-myAccount-components.png)
 
-* Auteurs kunnen ad-hoc Product Recommendations van de Handel tot stand brengen gebruikend extra advisetypes
+* Auteurs kunnen ad-hoc Commerce Product Recommendations tot stand brengen gebruikend extra advisetypes
 
 * Ondersteuning voor cadeaukaarten in AEM Storefront
 
@@ -50,13 +52,13 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 ### Wat is er nieuw? {#what-is-new-october}
 
-* De CIF add-on biedt ondersteuning voor de nieuwste Commerce v2.4.3 met nieuwe GraphQL API&#39;s en schema&#39;s
+* De CIF invoegtoepassing ondersteunt de nieuwste Commerce v2.4.3 met nieuwe GraphQL API&#39;s en schema&#39;s
 
 * Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
 
 * Bestaande pop-up winkelwagentje en kassa zijn vervangen door speciale AEM winkelwagentje en afhandelingspagina&#39;s. De componenten op deze pagina&#39;s worden samengesteld met behulp van uitbreidbare Peregrine-onderdelen van Adobe Commerce
 
-* Handelaars kunnen bepaalde categorieën van de productcatalogus in de navigatie verbergen gebruikend de achtergrond van de Handel. De CIF component van de Kern van de Navigatie eerbiedigt de handel achterste configuratie &quot;omvat in menu&quot;om categorieën in navigatie te tonen/te verbergen
+* Met de Commerce-backend kunnen verkopers bepaalde productcataloguscategorieën in de navigatie verbergen. De CIF component van de Kern van de Navigatie eerbiedigt de handel achterste configuratie &quot;omvat in menu&quot;om categorieën in navigatie te tonen/te verbergen
 
 * AEM Storefront Venia retourneert de HTTP 404-fout als de categorie of productpagina niet wordt gevonden
 
@@ -142,7 +144,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 ### Wat is er nieuw? {#what-is-new-june}
 
 * Nieuwe CIF product- en categoriereferentietypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
-* New Commerce Content Fragment Core Component
+* Nieuwe Commerce Content Fragment Core-component
 * Full-text zoekopdracht ondersteund in AEM achterkant
 * Commerce Core Components ondersteunt Adobe Commerce Sensei Recs gegevensverzameling
 * Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
@@ -236,7 +238,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 ### Wat is er nieuw? {#what-is-new-january}
 
-* Product Experience Management: Nieuw tabblad Eigenschappen &#39;Commerce&#39; voor Elementen en Ervingfragmenten. Op dit tabblad kunt u elementen en fragmenten uit de ervaring koppelen aan producten en categorieën. Het lusje toont ook gegevens in real time voor verbonden handelsobjecten en een verbinding om details in de productconsole te tonen.
+* Product Experience Management: Nieuw tabblad &#39;Commerce&#39;-eigenschap voor Elementen en Geniet-fragmenten. Op dit tabblad kunt u elementen en fragmenten uit de ervaring koppelen aan producten en categorieën. Het lusje toont ook gegevens in real time voor verbonden handelsobjecten en een verbinding om details in de productconsole te tonen.
 
 ### Verbeterde functies  {#what-is-improved-january}
 

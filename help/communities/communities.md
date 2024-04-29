@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 1%
+source-wordcount: '390'
+ht-degree: 0%
 
 ---
 
@@ -32,15 +35,15 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 ## Aanbevolen implementaties {#recommended-deployments}
 
-* [Opslag van communautaire inhoud](working-with-srp.md): bespreekt de beschikbare Sociale Keuze van de Leverancier van het Middel (SRP) voor een gemeenschappelijk opslag UGC
+* [Opslag van communautaire inhoud](working-with-srp.md): bespreekt de beschikbare opties van de Sociale Leverancier van het Middel (SRP) voor een gemeenschappelijke opslag UGC
 * [Aanbevolen topologieën voor Gemeenschappen](topologies.md): bespreekt topologieën die op gebruiksgeval en keus SRP worden gebaseerd
 
 ## Framework sociale component {#social-component-framework}
 
 * [Framework sociale component](scf.md): overzicht van framework en API&#39;s.
-* [SCF Handlebars Helpers](handlebars-helpers.md): standaardhelpers en hoe aangepaste helpers te schrijven.
-* [Aanpassing aan clientzijde](client-customize.md): aanpassen van code die in browser wordt uitgevoerd.
-* [Aanpassing op de server](server-customize.md): aanpassen van code die op de server wordt uitgevoerd.
+* [SCF Handlebars Helpers](handlebars-helpers.md): standaard helpers en hoe aangepaste helpers te schrijven.
+* [Aanpassing aan clientzijde](client-customize.md): code aanpassen die in de browser wordt uitgevoerd.
+* [Aanpassing op de server](server-customize.md): code aanpassen die op de server wordt uitgevoerd.
 * [Storage Resource Provider (SRP)](srp.md): overzicht van de opslag van community-inhoud.
 * [Codeerrichtlijnen](code-guide.md): richtlijnen, tips en trucs.
 * [Community Components Guide](components-guide.md): interactief ontwikkelingsinstrument.
@@ -53,7 +56,7 @@ AEM Communities-componenten, -functies en -functies bieden de bouwstenen voor [c
 * [Clientlibs voor Community-componenten](clientlibs.md)
 * [Communautaire functies](functions.md)
 * [Gemeenschapsgroepsjablonen](tools-groups.md)
-* [Sjablonen voor communautaire sites](sites.md)
+* [Sjablonen voor community-sites](sites.md)
 
 ## Communautaire leden {#community-members}
 
@@ -79,7 +82,7 @@ AEM Communities-componenten, -functies en -functies bieden de bouwstenen voor [c
 
 * [Zelfstudies op de client](tutorials.md#client-side-customization)
 * [Zelfstudies op de server](tutorials.md#server-side-customization)
-* [Instructies](tutorials.md#how-to-instructions)
+* [Hoe kan ik-instructies](tutorials.md#how-to-instructions)
 
 ## Problemen oplossen {#troubleshooting}
 

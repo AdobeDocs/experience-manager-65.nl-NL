@@ -7,9 +7,12 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -129,7 +132,7 @@ Een referentiegroep maken:
 1. **Het tabblad Instellingen**
 
    * Groepsnaam: `Sports`
-   * Beschrijving : `A parent group for various sporting groups`.
+   * Omschrijving: `A parent group for various sporting groups`.
    * Groepsnaam URL: `sports`
    * Selecteren `Open Group` ( elk lid van de gemeenschap toestaan deel te nemen door lid te worden )
 
@@ -208,8 +211,8 @@ Gebruik de knop Vorige van de browser om terug te keren naar de gepubliceerde si
 
 Nadat u zich hebt afgemeld, kunt u een gebruikersregistratie maken.
 
-* Selecteer `Log In`
-* Selecteer `Sign up for a new account`
+* Selecteren `Log In`
+* Selecteren `Sign up for a new account`
 
 ![registratie](assets/registration.png)
 

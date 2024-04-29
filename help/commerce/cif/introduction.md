@@ -4,7 +4,9 @@ description: Leer hoe u AEM Content en Commerce kunt gebruiken en beheren met ha
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 2%
@@ -14,13 +16,13 @@ ht-degree: 2%
 
 # Inhoud en handel {#content-commerce}
 
-Met Adobe Experience Manager-content en -handel kunnen merken sneller schalen en innoveren om een onderscheid te maken tussen commerciële ervaringen en online uitgaven te versnellen. AEM Content and Commerce combineert de indrukwekkende, omnichannel en gepersonaliseerde ervaringen in de Experience Manager met een aantal handelsoplossingen om verschillende ervaringen te bieden aan alle delen van de winkelreis, waardoor tijd tot waarde wordt gereduceerd en een hogere conversie wordt bevorderd.
+Met Adobe Experience Manager-content en -handel kunnen merken sneller schalen en innoveren om een onderscheid te maken tussen commerciële ervaringen en online uitgaven te versnellen. AEM Content en Commerce combineren de indrukwekkende, omnichannel en gepersonaliseerde ervaringen in de Experience Manager met een aantal handelsoplossingen om verschillende ervaringen te bieden aan alle delen van de winkelreis, waardoor tijd tot waarde wordt gereduceerd en een hogere conversie plaatsvindt.
 
-## Hoe de Inhoud en de Handel klanten helpen succesvol zijn
+## Inhoud en Commerce helpen klanten succesvol te zijn
 
-Door de steeds hogere verwachtingen van klanten voor online handelservaringen worden merken onder druk gezet om gedifferentieerde ervaringen en meer inhoud sneller te bieden. De implementatie van een platform voor contentbeheer vereist echter vaak veel tijd en budgetinvesteringen in de ontwikkeling van basiselementen, zoals aangepaste componenten en ontwerpgereedschappen, en leidt tot hogere kosten voor onderhoud en upgrades. Experience Manager Sites biedt Inhoud en Handel als toe:voegen-op module voor Experience Manager aan die uit-van-de-doos handel kerncomponenten, auteurshulpmiddelen, en een verwijzingsopslag verstrekt om go-live te versnellen, naadloze samenwerking over teams toe te laten, en aandrijvingsomzetting.
+Door de steeds hogere verwachtingen van klanten voor online handelservaringen worden merken onder druk gezet om gedifferentieerde ervaringen en meer inhoud sneller te bieden. De implementatie van een platform voor contentbeheer vereist echter vaak veel tijd en budgetinvesteringen in de ontwikkeling van basiselementen, zoals aangepaste componenten en ontwerpgereedschappen, en leidt tot hogere kosten voor onderhoud en upgrades. Experience Manager Sites biedt Inhoud en Commerce als een add-on module voor Experience Manager aan die uit-van-de-doos handel kerncomponenten, auteurshulpmiddelen, en een verwijzingsopslag verstrekt om go-live te versnellen, naadloze samenwerking over teams toe te laten, en aandrijvingsomzetting.
 
-Merken kunnen Experience Manager met Adobe Commerce, een deel van Adobe Experience Cloud, en om het even welke commerciële motor van keus integreren. Met Inhoud en Handel van de Experience Manager, kunnen de merken:
+Merken kunnen Experience Manager met Adobe Commerce, een deel van Adobe Experience Cloud, en om het even welke commerciële motor van keus integreren. Met Experience Manager Content en Commerce kunnen merken:
 
 * Sneller schalen en innoveren
 * Ervaringen aanpassen om conversie te stimuleren
@@ -60,7 +62,7 @@ De krachtige CIF hulpmiddelen in AEM laten inhoudsscheppers toe om rijke en gepe
 
 ### Tijd-aan-Waarde (TTV)
 
-Versnelt projectontwikkeling met [AEM kerncomponenten](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)en integratiepatronen voor PWA (Headless Content and Commerce).
+Versnelt projectontwikkeling met [AEM kerncomponenten](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)en integratiepatronen voor PWA (Headless Content en Commerce).
 
 CIF wordt gebouwd voor voortdurende innovatie met een altijd bijgewerkte toe:voegen-aan, die klant toestaan om tot nieuwe en betere eigenschappen toegang te hebben.
 

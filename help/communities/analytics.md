@@ -8,9 +8,11 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2644'
 ht-degree: 0%
 
 ---
@@ -113,7 +115,7 @@ Door u aan te melden [Adobe Experience Cloud](https://experienceleague.adobe.com
 
    * Video Core-meetconsole
 
-      * Selecteer `Use Solution Variables`
+      * Selecteren `Use Solution Variables`
       * Selecteer Opslaan
 
 Als u een **nieuwe rapportsuite** Een nieuwe rapportsuite kan slechts 4 gebeurtenissen en 6 gebeurtenisvariabelen bevatten, terwijl 11 gebeurtenissen en 7 gebeurtenislisteners vereist zijn voor de Gemeenschappen.
@@ -184,9 +186,9 @@ Voer bijvoorbeeld *gemeenschappen*
 
 * **Sjabloon**
 
-  Selecteer `Adobe Analytics Configuration`
+  Selecteren `Adobe Analytics Configuration`
 
-* Selecteer **Maken**
+* Selecteren **Maken**
 
    * De configuratiepagina van lanceert en opent `Analytics Settings` dialoogvenster
 
@@ -260,9 +262,9 @@ Voer bijvoorbeeld *gemeenschappen*.
 
 * *Sjabloon*
 
-  Selecteer `Adobe Analytics Framework`.
+  Selecteren `Adobe Analytics Framework`.
 
-* Selecteer **Maken**.
+* Selecteren **Maken**.
 
 Het creëren van het Kader van Analytics opent het kader voor configuratie.
 
@@ -634,7 +636,7 @@ Het forumonderwerp is momenteel het enige voorbeeld van deze aanpassing:
 * Navigeren naar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Bijvoorbeeld: [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Onder de `jcr:content` knooppunt van de hoofdtaal (bijvoorbeeld `/content/sites/engage/en/jcr:content`), navigeert u naar de component die is geconfigureerd voor analytische rapportage.
-Bijvoorbeeld, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+Bijvoorbeeld: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Let op de gemaakte tijdsperiodes:
 

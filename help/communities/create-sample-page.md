@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 1%
+source-wordcount: '399'
+ht-degree: 0%
 
 ---
 
@@ -35,12 +38,12 @@ Van globale navigatie op een auteursinstantie, selecteer **[!UICONTROL Tools]** 
 
 ![create-site-template](assets/create-site-template1.png)
 
-* Selecteer `Create button`
+* Selecteren `Create button`
 * BASISINFO
 
    * `Name`: Sjabloon voor één pagina
    * `Description`: Een sjabloon die bestaat uit een functie Eén pagina.
-   * Selecteer `Enabled`
+   * Selecteren `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
@@ -81,17 +84,17 @@ Nadat u de sitesjabloon hebt gemaakt, selecteert u in globale navigatie **[!UICO
 
      ![create-community-site-template](assets/create-community-site-template.png)
 
-* Selecteer `Next`
+* Selecteren `Next`
 * Stap `2 - Design`
 
    * Elk ontwerp selecteren
 
-* Selecteer `Next`
-* Selecteer `Next`
+* Selecteren `Next`
+* Selecteren `Next`
 
   (Alle standaardinstellingen accepteren)
 
-* Selecteer `Create`
+* Selecteren `Create`
 
   ![create-community-site](assets/create-community-site.png)
 

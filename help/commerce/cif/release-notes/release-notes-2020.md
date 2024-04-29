@@ -1,9 +1,11 @@
 ---
-title: Opmerkingen bij de release AEM Inhoud en Handel 2020
-description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2020.
+title: Opmerkingen bij de release AEM Content en Commerce 2020
+description: Opmerkingen bij de release Adobe Experience Manager Content en Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 6%
@@ -50,7 +52,7 @@ ht-degree: 6%
 
 * Pagina&#39;s met productdetails en productlijsten die zijn uitgebreid om automatisch SEO-metagegevens (zoals titel, meta-beschrijving, metatrefwoorden) te vullen die zijn geconfigureerd vanuit de Adobe Commerce-beheerinterface
 
-* Correctie van de bug in de koopkrachtteaser.
+* Correctie van de bug in de Commerce-teascomponent.
 
 ## Releasedatum: september 2020
 
@@ -90,7 +92,7 @@ ht-degree: 6%
 
 * De component Breadcrumb die wordt toegevoegd om inhoud en handelspagina&#39;s te steunen.
 
-* Het lusje van de Handel dat op de eigenschappen van de Pagina wordt toegevoegd om CIF eigenschappen voor het Aanvoeren van de Fragmenten van de Pagina en van de Ervaring bloot te stellen.
+* Het tabblad Commerce dat is toegevoegd op Pagina-eigenschappen om CIF eigenschappen voor Landing Page en Experience Fragments beschikbaar te maken.
 
 * De component Searchbar wordt verbeterd om de optie te steunen om placeholder tekst te tonen
 

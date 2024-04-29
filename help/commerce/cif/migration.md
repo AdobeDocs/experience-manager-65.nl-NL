@@ -3,7 +3,9 @@ title: Migratie naar het AEM Commerce integration framework (CIF)
 description: Hoe te om aan de AEM (CIF) toe:voegen-on van een oude versie te migreren.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -18,7 +20,7 @@ Deze handleiding helpt u de gebieden te identificeren die u voor de Experience M
 
 CIF invoegtoepassing is beschikbaar voor AEM 6.5 via de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Het is compatibel en verstrekt de zelfde eigenschappen zoals CIF toe:voegen-aan voor as a Cloud Service Experience Manager.
 
-Zie [Aan de slag met AEM Inhoud en Handel](getting-started.md).
+Zie [Aan de slag met AEM Content en Commerce](getting-started.md).
 
 Om projecten te steunen die CIF opstellen, verstrekt de Adobe [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components).
 

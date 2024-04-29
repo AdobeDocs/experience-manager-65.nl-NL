@@ -8,29 +8,30 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 0%
 
 ---
 
-# Ontwikkeling van AEM handel {#develop}
+# Ontwikkeling AEM Commerce {#develop}
 
-Voor de ontwikkeling van AEM op Commerce integration framework (CIF) gebaseerde projecten voor AEM gelden dezelfde regels en beste praktijken als voor andere AEM projecten. Bekijk eerst deze:
+Voor de ontwikkeling AEM Commerce-projecten op basis van Commerce integration framework (CIF) voor AEM gelden dezelfde regels en beste praktijken als voor andere AEM projecten. Bekijk eerst deze:
 
 - [AEM 6.5 Gebruikershandleiding voor ontwikkeling](/help/sites-developing/getting-started.md)
 - [AEM kernconcepten](/help/sites-developing/the-basics.md)
 - [AEM ontwikkeling - Richtsnoeren en beste praktijken](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Hoe te om AEM Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md)
 
-## Lokale ontwikkeling voor AEM handel {#local}
+## Lokale ontwikkeling voor AEM Commerce {#local}
 
 Een lokale ontwikkelomgeving wordt aanbevolen voor CIF projecten.
 
 >[!NOTE]
 >
->De volgende instructies helpen u vestiging een lokale AEM ontwikkelomgeving voor AEM Handel gebruikend CIF met nadruk voor AEM 6.5). Als u AEM as a Cloud Service gebruikt, zie [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) documentatie.
+>De volgende instructies helpen u bij het instellen van een lokale AEM-ontwikkelomgeving voor AEM Commerce die CIF gebruikt met focus voor AEM 6.5). Als u AEM as a Cloud Service gebruikt, zie [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) documentatie.
 
 De AEM Commerce Add-On voor AEM 6.5 ook bekend. CIF Add-On is ook beschikbaar voor lokale ontwikkeling en wordt als een AEM pakket geleverd. Het kan worden gedownload van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als een functiepakket.
 
@@ -80,7 +81,7 @@ Verifieer de opstelling via de console OSGI: `http://localhost:4502/system/cons
 
 ## Projectinstelling {#project}
 
-Er zijn twee manieren om uw AEM Commerce-project te beginnen met CIF.
+Er zijn twee manieren om uw AEM Commerce-project te starten met CIF.
 
 ### Projectarchetype AEM gebruiken
 
@@ -149,7 +150,7 @@ Als u aan de slag wilt gaan met de Venia Reference Store, kloont dan gewoon de [
 >
 >Het project van de Referentieopslag van Venia bevat twee bouwstijlprofielen voor AEM as a Cloud Service en AEM 6.5. Controleer de [project readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) om te zien hoe ze worden gebruikt. Voor AEM 6.5 `classic` profiel.
 
-### AEM aansluiten op het systeem voor handel
+### AEM verbinden met het Commerce-systeem
 
 Om uw project met het handelssysteem te verbinden AEM moet met het eindpunt van GraphQL van uw handelssysteem worden gevormd.
 
@@ -157,7 +158,7 @@ Beide, een project dat door [Projectarchetype AEM](https://github.com/adobe/aem-
 
 Vervang de waarde van de optie `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` met het eindpunt van GraphQL van uw handelsysteem dat door het project wordt gebruikt.
 
-De AEM Commerce Add-On en CIF Core Components verbinden met het handelsGraphQL eindpunt via de AEM server en direct via browser. Client CIF Core Components and CIF Add-On authoring tools maken standaard verbinding met `/api/graphql`. Indien nodig kan dit worden aangepast via de configuratie van de CIF Cloud Service (zie hieronder).
+De AEM toe:voegen-aan en CIFComponenten van de Kern verbinden met het handelsGraphQL eindpunt via de AEM server en direct via browser. Client CIF Core Components and CIF Add-On authoring tools maken standaard verbinding met `/api/graphql`. Indien nodig kan dit worden aangepast via de configuratie van de CIF Cloud Service (zie hieronder).
 
 De CIF add-on biedt een GraphQL-proxyservlet op `/api/graphql`. Als u niet van plan bent om een lokale AEM Dispatcher te gebruiken, wordt het geadviseerd om de volmachtsservlet van GraphQL eveneens te vormen.
 

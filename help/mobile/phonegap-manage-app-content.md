@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Voor het beheren van app-inhoud is een gezamenlijke inspanning vereist van [ontwikkelaars](#developer), inhoud [auteurs](#author), en [beheerders](#administrator). Auteurs bewerken pagina&#39;s op basis van sjablonen en componenten die door ontwikkelaars van apps worden gegenereerd.
 
@@ -57,9 +60,9 @@ Hier, *AEM* kunnen hun apps snel en gemakkelijk bijwerken om boeiende ervaringen
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Eenmaal *AEM-auteurs* inhoud hebben toegevoegd of gewijzigd via de Content Tile beheren, *AEM* kunnen deze wijzigingen doorsturen naar klanten met een Content Packages-update.
+Eenmaal *Auteurs AEM* inhoud hebben toegevoegd of gewijzigd via de Content Tile beheren, *AEM* kunnen deze wijzigingen doorsturen naar klanten met een Content Packages-update.
 
-Met de actie Inhoudspakket kan de *AEM-auteur* om paginacontent tot stand te brengen en uit te geven terwijl het ontwikkelingsteam veranderingen in een ontwerp en implementatie van de Toepassing van de Gastheer met inbegrip van navigatie, stijl, server-zijlogica, malplaatjes, en componenten aanbrengt en dan die veranderingen uit OTA aan klanten duwt zonder aan de diverse opslag voor distributie opnieuw voor te leggen.
+Met de actie Inhoudspakket kan de *AEM auteur* om paginacontent tot stand te brengen en uit te geven terwijl het ontwikkelingsteam veranderingen in een ontwerp en implementatie van de Toepassing van de Gastheer met inbegrip van navigatie, stijl, server-zijlogica, malplaatjes, en componenten aanbrengt en dan die veranderingen uit OTA aan klanten duwt zonder aan de diverse opslag voor distributie opnieuw voor te leggen.
 
 **Nieuwe of bijgewerkte inhoud publiceren**
 

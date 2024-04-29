@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -88,7 +91,7 @@ CRXDE Lite gebruiken:
 
    Instellen voor ontwerpen, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
 
-   1. Ga naar `/apps/an-scf-sandbox/components`.
+   1. Navigeren naar `/apps/an-scf-sandbox/components`.
    1. Selecteer de `playpage` knooppunt.
    1. Klik met de rechtermuisknop en selecteer `Create > Create File...`
 
@@ -169,13 +172,13 @@ In dit voorbeeld wordt de hoofdpagina statisch ingesteld op omleiding naar de En
 Wijzig de URL van de browser in de hoofdpagina: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * Het pictogram Pagina-informatie selecteren
-* Selecteer **[!UICONTROL Open Properties]**
+* Selecteren **[!UICONTROL Open Properties]**
 * Op het tabblad GEAVANCEERD
 
    * Blader voor de Redirect-vermelding naar **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL SCF Sandbox]**
-   * Klik op **[!UICONTROL OK]**
+   * Klikken **[!UICONTROL OK]**
 
-* Klik op **[!UICONTROL OK]**
+* Klikken **[!UICONTROL OK]**
 
 Nadat de site is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 

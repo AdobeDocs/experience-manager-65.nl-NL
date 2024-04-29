@@ -4,7 +4,9 @@ description: Het integratieframework bevat een integratielaag met een API, waarm
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 0%
@@ -49,7 +51,7 @@ Het eCommerce-kader kan bij elke eCommerce-oplossing worden gebruikt, de motor d
 
 * De `cq:commerceProvider` eigenschap wordt ook gebruikt om te verwijzen naar de juiste definitie van de handelsfabriek .
 
-   * Bijvoorbeeld een `cq:commerceProvider` eigenschap met de waarde Geometrixx correleert met de OSGi-configuratie voor **Day CQ Commerce Factory voor Geometrixx-Buiten** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - waar de parameter `commerceProvider` heeft ook de waarde `geometrixx`.
+   * Bijvoorbeeld een `cq:commerceProvider` eigenschap met de waarde Geometrixx correleert met de OSGi-configuratie voor **Day CQ Commerce Factory for Geometrixx-Outdoor** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - waar de parameter `commerceProvider` heeft ook de waarde `geometrixx`.
    * Hier kunnen verdere eigenschappen worden gevormd (wanneer aangewezen en beschikbaar).
 
 In een standaard AEM installatie is een specifieke implementatie vereist, bijvoorbeeld:

@@ -4,7 +4,8 @@ description: AEM algemene eCommerce is beschikbaar als onderdeel van de standaar
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Adobe biedt twee versies van het Commerce integration framework:
 |                         | CIF op prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Ondersteunde AEM | AEM on-prem of AMS 6.x | AEM AMS 6.4 en 6.5 |
-| Terug | - AEM, Java™ <br> - Monolithische integratie, pre-build-toewijzing (sjabloon)<br> - JCR-opslagplaats | - ADOBE COMMERCE <br>- Java en JavaScript <br>- Geen gegevens over handel opgeslagen in de gegevensopslagruimte van het GCO |
+| Terug | - AEM, Java™ <br> - Monolithische integratie, pre-build-toewijzing (sjabloon)<br> - JCR-opslagplaats | - ADOBE COMMERCE <br>- Java en JavaScript <br>- Geen Commerce-gegevens opgeslagen in de JCR-opslagplaats |
 | Voorkant | Gerenderde pagina&#39;s AEM op de server | Toepassing gemengde pagina (hybride rendering) |
 | Productcatalogus | - Producimporteur, redacteur, caching in AEM <br>- Gewone catalogi met AEM- of proxypagina&#39;s | - Geen producten importeren <br>- Algemene sjablonen <br>- Gegevens op aanvraag via connector |
 | Schaalbaarheid | - Kan maximaal een paar miljoen producten ondersteunen (afhankelijk van het gebruiksgeval) <br> - Caching on Dispatcher | - Geen volumebeperking <br>- Caching op Dispatcher of CDN |

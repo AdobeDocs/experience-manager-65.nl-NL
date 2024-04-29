@@ -7,9 +7,11 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -108,7 +110,7 @@ Het lid kan zijn e-mailadres wijzigen bij het bijwerken van zijn profiel.I Als d
 
   (*Optioneel*) Selecteer uit bestaande lidgroepen om het lid aan die groep toe te voegen.
 
-* Selecteer **[!UICONTROL Save]**
+* Selecteren **[!UICONTROL Save]**
 
 ### ALGEMEEN - Accountinstellingen {#general-account-settings}
 
@@ -196,7 +198,7 @@ De vereiste gebieden voor het creëren van een publish-zij lidgroep zijn:
 
   (*Optioneel*) Selecteer leden aan de publiczijde die u wilt opnemen als eerste leden van de groep.
 
-* Selecteer **[!UICONTROL Save]**
+* Selecteren **[!UICONTROL Save]**
 
 ## Geautoriseerde beheerders {#authorized-administrators}
 

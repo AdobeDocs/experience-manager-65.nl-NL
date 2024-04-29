@@ -1,20 +1,21 @@
 ---
-title: Aan de slag met AEM Inhoud en Handel
-description: Leer hoe te om een project van de Inhoud en van de Handel van de AEM op te stellen.
+title: Aan de slag met AEM Content en Commerce
+description: Leer hoe u een AEM Content- en Commerce-project implementeert.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM Inhoud en Handel {#start}
+# Aan de slag met AEM Content en Commerce {#start}
 
-Om met AEM Inhoud en Handel te beginnen, moet u AEM inhoud en Commerce toe:voegen-On voor AEM 6.5 installeren.
+Als u aan de slag wilt met AEM Content en Commerce, moet u de AEM Content and Commerce Add-On voor AEM 6.5 installeren.
 
 ## Minimale softwarevereisten
 
@@ -24,13 +25,13 @@ Om met AEM Inhoud en Handel te beginnen, moet u AEM inhoud en Commerce toe:voege
 
 Het instappen voor AEM Inhoud en Handel is een proces in twee stappen:
 
-1. Installeer de invoegtoepassing AEM inhoud en handel voor AEM 6.5
+1. Installeer de AEM Content en de Commerce Add-on voor AEM 6.5
 
 2. Verbind AEM met uw handelsoplossing
 
-### Installeer de invoegtoepassing AEM inhoud en handel voor AEM 6.5 {#install-add-on}
+### Installeer de AEM Content en de Commerce Add-on voor AEM 6.5 {#install-add-on}
 
-Download en installeer de AEM Commerce Add-On voor AEM 6.5 van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portaal.
+Download en installeer de AEM Commerce Add-on voor AEM 6.5 vanuit de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portaal.
 
 Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren installerend het laatste beschikbare de dienstpak.
 
@@ -38,7 +39,7 @@ Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren installeren
 >
 >Dit zal door CSE voor AEM Beheerde klanten van de Dienst worden gedaan.
 
-### AEM aansluiten op uw systeem voor handel {#connect}
+### AEM aansluiten op uw Commerce-systeem {#connect}
 
 AEM kunnen worden aangesloten op elk handelssysteem dat een toegankelijk GraphQL-eindpunt voor AEM heeft. Deze eindpunten zijn gewoonlijk openbaar beschikbaar, of kunnen via privé VPN of lokale verbindingen afhankelijk van de individuele projectopstelling worden verbonden.
 
@@ -48,7 +49,7 @@ Door de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)en
 
 Vervang de waarde van de optie `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` met het GraphQL-eindpunt van uw handelssysteem. Deze configuratie kan via de console worden gedaan OSGI of door de configuratie OSGI via het project op te stellen. Verschillende configuraties voor staging- en productiesystemen worden ondersteund met verschillende AEM-uitvoeringsmodi.
 
-De AEM Inhoud en de Handel toe:voegen-aan en CIF de Componenten van de Kern gebruiken zowel server-kant als cliënt-zijverbindingen. Client CIF Core Components and CIF Add-on authoring tools maken standaard verbinding met `/api/graphql`. Dit kan worden aangepast via de CIF Cloud Service config indien nodig (zie hieronder).
+De AEM Content en Commerce Add-On en CIF Core Components gebruiken zowel AEM server-side als client-side verbindingen. Client CIF Core Components and CIF Add-on authoring tools maken standaard verbinding met `/api/graphql`. Dit kan worden aangepast via de CIF Cloud Service config indien nodig (zie hieronder).
 
 De CIF Add-on biedt een GraphQL-proxyservlet op `/api/graphql` die optioneel kunnen worden gebruikt voor [lokale ontwikkeling](develop.md). Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het handelsGraphQL eindpunt via de AEMVerzender of bij andere netwerklagen (zoals CDN) te plaatsen.
 
@@ -90,10 +91,10 @@ De volgende eigenschappen kunnen worden geconfigureerd:
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 
-Voor complexere instellingen die meerdere AEM sitestructuren gebruiken die zijn gecombineerd met verschillende handelscatalogi raadpleegt u de [Multi-Store Setup (Commerce)](configuring/multi-store-setup.md) zelfstudie.
+Voor complexere instellingen die meerdere AEM sitestructuren gebruiken die zijn gecombineerd met verschillende handelscatalogi raadpleegt u de [Commerce Multi-Store Setup](configuring/multi-store-setup.md) zelfstudie.
 
 ## Aanvullende bronnen {#additional-resources}
 
 - [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Multi-Store Setup (Commerce)](configuring/multi-store-setup.md)
+- [Commerce Multi-Store Setup](configuring/multi-store-setup.md)

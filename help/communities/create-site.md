@@ -7,9 +7,12 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
@@ -96,10 +99,10 @@ Alle selectievakjes inschakelen voor [Gebruikersbeheer](/help/communities/sites-
 
 De tags die worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via het dialoogvenster [Tagingsconsole](/help/sites-administering/tags.md#tagging-console) (zoals de [Naamruimte voor zelfstudie](/help/communities/setup.md#create-tutorial-tags)).
 
-Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
+Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld:
 
 * Type `tut`
-* Selecteer `Tutorial`
+* Selecteren `Tutorial`
 
 ![labelen](assets/tagging.png)
 
@@ -109,7 +112,7 @@ Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. 
 
 Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als gemeenschapsbeheerder, gebruikt u de typecontrole en selecteert u de naam van het lid of de groep in de keuzelijst.
 
-Bijvoorbeeld,
+Bijvoorbeeld:
 
 * Type `q`
 * Quinn Harper selecteren
@@ -149,7 +152,7 @@ De [Vertaalinstellingen](/help/communities/sites-console.md#translation) de basi
 
 ### Stap 4: Create Communities Site {#step-create-communities-site}
 
-Selecteer **Maken.**
+Selecteren **Maken.**
 
 ![site maken](assets/create-site2.png)
 
@@ -200,12 +203,12 @@ Van links naar rechts zijn ze:
 >In de auteurinstantie, van het belangrijkste menu:
 >
 >1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]** -menu.
->1. Selecteer **[!UICONTROL Agents on author]**.
->1. Selecteer **[!UICONTROL Default Agent (publish)]**.
+>1. Selecteren **[!UICONTROL Agents on author]**.
+>1. Selecteren **[!UICONTROL Default Agent (publish)]**.
 >1. Volgende tot **[!UICONTROL Settings]**, selecteert u **[!UICONTROL Edit]**.
 >1. Selecteer in het pop-updialoogvenster Agent-instellingen de optie **[!UICONTROL Transport]** tab.
 >1. Wijzig in URI het poortnummer 4503 in het gewenste poortnummer. Als u bijvoorbeeld poort 6103 wilt gebruiken: https://localhost:6103/bin/receive?sling:authRequestLogin=1
->1. Selecteer **[!UICONTROL OK]**.
+>1. Selecteren **[!UICONTROL OK]**.
 >1. (Optioneel) Selecteer **[!UICONTROL Clear]** of **[!UICONTROL Force Retry]** om de replicatiewachtrij te herstellen.
 
 ### Publiceren selecteren {#select-publish}

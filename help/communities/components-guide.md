@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -42,7 +45,7 @@ Als de auteur de bewerkingsmodus wil activeren, voegt u een van de volgende twee
 
   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
-* Klassieke interface:
+* Klassieke gebruikersinterface:
 
   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
@@ -64,7 +67,7 @@ De handleiding bevat een lijst met SCF-componenten die beschikbaar zijn voor voo
 
 De Gids van Componenten zoals bekeken op een auteursinstantie op Edit wijze:
 
-![community-component1](assets/community-component1.png)
+![gemeenschapscomponent1](assets/community-component1.png)
 
 ## Componentpagina&#39;s {#component-pages}
 
@@ -75,14 +78,14 @@ Selecteer een component in de lijst links op de pagina.
 De hoofdtekst van de hulplijn wordt weergegeven:
 
 1. Titel: De naam van de geselecteerde component
-1. [Clientbibliotheken](#client-side-libraries): Een lijst van een of meer verplichte categorieën
+1. [Client-Side Llibraries](#client-side-libraries): Een lijst met een of meer verplichte categorieën
 1. [Inclusief](scf.md#add-or-include-a-communities-component): Als de component dynamisch kan worden opgenomen, kunt u in de bewerkingsmodus van de auteur schakelen tussen de statussen:
 
-   * Indien toegevoegd, wordt weergegeven tekst: &quot;Deze component is opgenomen via het pari-knooppunt.&quot;
-   * Indien inbegrepen, wordt weergegeven tekst: &quot;Deze component wordt dynamisch opgenomen.&quot;
+   * Indien toegevoegd, wordt weergegeven tekst: &quot;Deze component is opgenomen via het bijbehorende knooppunt.&quot;
+   * Indien inbegrepen, wordt de getoonde tekst: &quot;Deze component is dynamisch inbegrepen.&quot;
    * Indien niet inbegrepen, dan wordt geen tekst getoond
 
-1. Voorbeeldcomponent of -functie: een actieve instantie van de component of eigenschap. Als een component, kan het met veranderingen worden veranderd die in de malplaatjes, CSS, en gegevens worden aangebracht die in de lusjesectie worden verstrekt.
+1. Voorbeeldcomponent of -functie: een actieve instantie van de component of functie. Als een component, kan het met veranderingen worden veranderd die in de malplaatjes, CSS, en gegevens worden aangebracht die in de lusjesectie worden verstrekt.
 
 >[!NOTE]
 >
@@ -90,25 +93,25 @@ De hoofdtekst van de hulplijn wordt weergegeven:
 
 ### Interacties tussen auteurs {#author-interactions}
 
-Wanneer u de handleiding gebruikt voor een instantie van de auteur, kunt u het configureren van een component ervaren door het dialoogvenster te openen. Informatie voor ontwikkelaars is te vinden in het [Grondbeginselen van componenten en functies](essentials.md) in de documentatie, terwijl de dialoogvensterinstellingen worden beschreven in [Community-componenten](author-communities.md) voor auteurs.
+Wanneer u de handleiding gebruikt voor een instantie van de auteur, kunt u het configureren van een component ervaren door het dialoogvenster te openen. Informatie voor ontwikkelaars is te vinden in het [Grondbeginselen van componenten en functies](essentials.md) van de documentatie, terwijl de dialoogmontages in [Community-componenten](author-communities.md) voor auteurs.
 
 Voor de Community Components-handleiding worden bepaalde instellingen in het dialoogvenster Component geplaatst met de [Inclusief](scf.md#add-or-include-a-communities-component) schakelstatus. Als u wilt schakelen tussen het gebruik van de bestaande bron of een dynamisch opgenomen bron, selecteert u in de bewerkingsmodus zowel de component als de insluitende tekst en dubbelklikt u om het dialoogvenster Bewerken te openen:
 
-![community-component3](assets/community-component3.png)
+![gemeenschapscomponent3](assets/community-component3.png)
 
 Onder de **Sjablonen** tab:
 
-![community-component4](assets/community-component4.png)
+![gemeenschapscomponent4](assets/community-component4.png)
 
 * **Inclusief de onderliggende component met sling:include**
 
   Als deze optie niet is ingeschakeld, gebruikt de Component Guide de bestaande bron in de repository (een jcr-knooppunt dat een onderliggend knooppunt is van een par-knooppunt).
 
-   * weergegeven tekst is: &quot;Deze component is opgenomen via het pari-knooppunt.&quot;
+   * weergegeven tekst is: &quot;Deze component is opgenomen via het bijbehorende knooppunt.&quot;
 
   Indien gecontroleerd, gebruikt de Gids van de Component sling om dynamisch een component van het resourceType van de kindknoop (niet-bestaande middel) te omvatten.
 
-   * weergegeven tekst is: &quot;Deze component wordt dynamisch opgenomen.&quot;
+   * weergegeven tekst is: &quot;Deze component is dynamisch opgenomen.&quot;
 
   De optie Standaard is uitgeschakeld.
 
@@ -128,7 +131,7 @@ Ga voor meer informatie naar [Clientlibs voor Community-componenten](clientlibs.
 
 ## Imitatie {#impersonation}
 
-Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van **[!UICONTROL Impersonate]** om in de gebruikersnaam te typen of een keuze te maken in de keuzelijst en vervolgens op de knop te klikken. Klik op Vorige versie om u af te melden en de imitatie te beëindigen.
+Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van **[!UICONTROL Impersonate]** om in de gebruikersnaam te typen of om een keuze te maken in de keuzelijst en vervolgens op de knop te klikken. Klik op Vorige versie om u af te melden en de imitatie te beëindigen.
 
 De publicatie-instantie hoeft zich niet voor te doen. U gebruikt gewoon de koppeling Aanmelden/Afmelden om verschillende gebruikers na te bootsen, zoals de [demo-gebruikers](tutorials.md#demo-users).
 
@@ -152,7 +155,7 @@ De component comments als voorbeeld gebruiken voor de auteur of de publicatie-in
 
 1. Selecteer de componenten `jcr:content` node
 
-   Bijvoorbeeld, `/content/community-components/en/comments/jcr:content`
+   Bijvoorbeeld: `/content/community-components/en/comments/jcr:content`
 
 1. Een eigenschap toevoegen
 
@@ -160,16 +163,16 @@ De component comments als voorbeeld gebruiken voor de auteur of de publicatie-in
    * **Type** `String`
    * **Waarde** `true`
 
-1. Selecteer **[!UICONTROL Save All]**
+1. Selecteren **[!UICONTROL Save All]**
 1. Laad de pagina Opmerkingen in de handleiding opnieuw
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
 1. Er zijn nu drie tabbladen voor sjablonen, CSS en gegevens.
 
-![community-component5](assets/community-component5.png)
+![communautaire component5](assets/community-component5.png)
 
-![community-component6](assets/community-component6.png)
+![gemeenschapscomponent6](assets/community-component6.png)
 
 ### Tabblad Sjablonen {#templates-tab}
 

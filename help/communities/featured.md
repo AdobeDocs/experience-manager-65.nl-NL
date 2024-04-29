@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: '329'
+ht-degree: 0%
 
 ---
 
@@ -66,7 +69,7 @@ Onder de **[!UICONTROL Settings]** , geeft u aan welke inhoud u wilt gebruiken:
 
 * **[!UICONTROL Location of the Featured Content]**
 
-  *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk wordt weergegeven (componenten van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld, `/content/sites/engage/en/forum`.
+  *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk wordt weergegeven (componenten van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld: `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Display Limit]**
 
@@ -84,7 +87,7 @@ Nadat het als eigenschap wordt gemarkeerd, wordt de moderatiemarkering `Unfeatur
 
 De pagina met de `Featured Content` bevat nu dit bericht.
 
-![site-visitor-experience1](assets/site-visitor-experience1.png)
+![site-bezoeker-ervaring1](assets/site-visitor-experience1.png)
 
 De `Read More` links naar de feitelijke advertentie.
 

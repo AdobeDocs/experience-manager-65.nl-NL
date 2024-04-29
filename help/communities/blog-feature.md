@@ -7,9 +7,12 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1696'
 ht-degree: 0%
 
 ---
@@ -189,7 +192,7 @@ Onder de **Instellingen** -tab, geeft u de basisfuncties van de blog op:
 
 * **Menatiepatroon gebruikersinterface**
 
-  Geef de patroontekenreeks op die de geregistreerde gebruiker in een bericht mag labelen (@genoemd). Bijvoorbeeld, `~{{familyName}}{{givenName}}`.
+  Geef de patroontekenreeks op die de geregistreerde gebruiker in een bericht mag labelen (@genoemd). Bijvoorbeeld: `~{{familyName}}{{givenName}}`.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
@@ -267,7 +270,7 @@ Onder de **Dagboekzijbalkinstellingen** op, geeft u de datumnotatie voor archiev
 
   *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Indien leeg gelaten, gebruikt het de component van resourceType `social/journal/components/hbs/journal` die op dezelfde pagina wordt weergegeven.
 
-   * Bijvoorbeeld, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+   * Bijvoorbeeld: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Suggestiegrenswaarde**
 

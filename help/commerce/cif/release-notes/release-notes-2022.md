@@ -1,9 +1,11 @@
 ---
 title: Opmerkingen bij de release AEM2022
-description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2022.
+description: Opmerkingen bij de release Adobe Experience Manager Content en Commerce 2022.
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 2%
@@ -120,7 +122,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 ### Wat is er nieuw? {#what-is-new-march}
 
-* Bèta: AEM CIF Search Core Component support Commerce LiveSearch
+* Bèta: AEM CIF Search Core Component ondersteuning Commerce LiveSearch
 * Verbeterde SEO voor meerdere opslagscenario&#39;s: URL-indelingen voor PDP / PLP kunnen nu op archiefniveau worden geconfigureerd via de CIF Cloud Config-eigenschappen
 * Productkiezer ondersteunt gefaseerde producten via de nieuwe filteroptie in de gebruikersinterface. Laat inhoudsartsen toe om het beheer van productinhoud voor te bereiden voor de aanstaande productlanceringen
 * Vereenvoudigd CIF configuratiebeheer en foutafhandeling met de naam CIF Cloud Config in plaats van proxyURL te configureren

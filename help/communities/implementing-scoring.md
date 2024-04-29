@@ -9,9 +9,11 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2856'
 ht-degree: 0%
 
 ---
@@ -339,7 +341,7 @@ De `scoringRules` het bezit op een merkingsregel beperkt eenvoudig welke het sch
    <td><em>(vereist)</em> Een tekenreeks met meerdere waarden van het formulier 'number|path'
     <ul>
      <li>number = score</li>
-     <li>| = de verticale lijn (U+007C)</li>
+     <li>| = het verticale lijnteken (U+007C)</li>
      <li>path = full path to badge image resource</li>
     </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen lege ruimte tussen het getal en het pad wordt weergegeven.<br /> Voorbeeld:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
@@ -577,7 +579,7 @@ Het is mogelijk om snel scoring en badge te proberen met de [Zelfstudie Aan de s
    * Selecteren **Multi**
    * Selecteren **Toevoegen**
    * Enter `/libs/settings/community/badging/rules/forums-badging`
-   * Selecteer **+**
+   * Selecteren **+**
    * Enter `/libs/settings/community/badging/rules/comments-badging`
    * Selecteren **OK**
 
@@ -588,7 +590,7 @@ Het is mogelijk om snel scoring en badge te proberen met de [Zelfstudie Aan de s
    * Selecteren **Multi**
    * Selecteren **Toevoegen**
    * Enter `/libs/settings/community/scoring/rules/forums-scoring`
-   * Selecteer **+**
+   * Selecteren **+**
    * Enter `/libs/settings/community/scoring/rules/comments-scoring`
    * Selecteren **OK**
 

@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1254'
 ht-degree: 0%
 
 ---
@@ -33,7 +36,7 @@ Gebruikers die toegang tot de personalisatieconsole nodig hebben, moeten deel ui
 
 Het vergeten om de gebruikers of de groepen toe te voegen die u toegang tot de verpersoonlijking Admin Console aan de doel-activiteit-auteursgroep wilt hebben verhindert gebruikers de verpersoonlijkingsconsole te zien.
 
-## Cloud Services {#cloud-services}
+## Cloud Servicen {#cloud-services}
 
 Om gerichte inhoud te krijgen die voor mobiele toepassingen werkt, zijn er twee diensten die moeten worden gevormd: de Dienst van Adobe Target en de dienst van de Diensten van de Adobe Mobiele. De Adobe Target Service biedt de engine voor het verwerken van clientverzoeken en het retourneren van gepersonaliseerde inhoud. De service Adobe Mobile Services biedt de verbinding tussen de Adobe-services en de mobiele toepassing via het bestand ADBMobileConfig.json dat wordt gebruikt door de insteekmodule AMS Cordova. Vanuit het AEM Mobile-dashboard kunt u de toepassing configureren door de twee services toe te voegen.
 

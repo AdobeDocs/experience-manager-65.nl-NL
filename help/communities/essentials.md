@@ -6,16 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '208'
+ht-degree: 1%
 
 ---
 
 # Componenten, functies en essentiële functies  {#component-function-and-feature-essentials}
 
-Voor de functies van Adobe Experience Manager (AEM Community) moeten bezoekers lid worden van de site en zich aanmelden bij de [community-site](overview.md#communitiessites) voordat u inhoud kunt plaatsen. Daarom [communitysjablonen](sites.md), waarvan een communautaire site [gemaakt](sites-console.md), worden ontworpen om een login eigenschap en gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.
+Voor de functies van Adobe Experience Manager (AEM Community) moeten sitebezoekers lid worden en zich aanmelden bij de [community-site](overview.md#communitiessites) voordat u inhoud kunt plaatsen. Daarom [communitysjablonen](sites.md), waarvan een communautaire site [gemaakt](sites-console.md), worden ontworpen om een login eigenschap en gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.
 
 Een gemeenschapssite ondersteunt leden die gemeenschapsgroepen maken wanneer de [gemeenschapsgroepfunctie](functions.md#groups-function) is opgenomen in het geselecteerde sjabloon voor de communitysite.
 

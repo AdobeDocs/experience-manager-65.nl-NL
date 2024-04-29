@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 1%
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
@@ -61,14 +64,14 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
       * Supertype: `social/commons/components/comments/comment`
       * Groep invoeren: `.hidden`
       * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
-   * Selecteer **[!UICONTROL Save All]**
+   * Selecteren **[!UICONTROL Save All]**
 1. De standaardinstelling verwijderen `comments.jsp`
    * Knooppunt selecteren `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Selecteer **[!UICONTROL Delete]**
+   * Selecteren **[!UICONTROL Delete]**
 1. De standaardcomment.jsp verwijderen
    * Selecteer knooppunt `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Selecteer **[!UICONTROL Delete]**
-   * Selecteer **[!UICONTROL Save All]**
+   * Selecteren **[!UICONTROL Delete]**
+   * Selecteren **[!UICONTROL Save All]**
 
 >[!NOTE]
 >
@@ -87,6 +90,6 @@ De eigen overlay `Type`(eigenschap `sling:resourceType`) moet een relatieve zelf
    * Type: `String`
    * Waarde: `social/commons/components/hbs/comments/comment`
 1. Groen selecteren `[+] Add`
-   * Selecteer **[!UICONTROL Save All]**
+   * Selecteren **[!UICONTROL Save All]**
 
 ![create-nodes](assets/create-nodes.png)

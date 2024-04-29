@@ -6,7 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1574'
 ht-degree: 0%
@@ -103,7 +105,7 @@ Na de installatie kunt u uw instantie configureren:
 
 De **Catalogusversie** ( `hybris.catalog.version`) die wordt ingevoerd kan voor de dienst worden gevormd OSGi:
 
-**Configuratie bedrijfs-hybride van dagelijkse CQ-handel**
+**Day CQ Commerce Hybris Configuration**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
 **Catalogusversie** is ingesteld op `Online` of `Staged` (de standaardwaarde).
@@ -159,7 +161,7 @@ Een dergelijke structuur wordt gecreëerd door de OSGi-dienst `DefaultImportHand
 
 De structuur die bij het importeren moet worden gegenereerd, kan worden geconfigureerd voor:
 
-&quot;**Day CQ Commerce Hybris, standaardimporthandler**
+&quot;**Day CQ Commerce Hybris Default Import Handler**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
 Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
@@ -313,7 +315,7 @@ De hybriscatalogus kan in AEM worden geïmporteerd, waarbij de batchimporter voo
 
 De parameters die door de importeur worden gebruikt, kunnen worden geconfigureerd voor:
 
-**Dag CQ-handel Hybris-catalogus Importeren**
+**Dag CQ Commerce Hybris Catalog Importer**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
 Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
@@ -343,7 +345,7 @@ Het pad waarin de catalogus moet worden geïmporteerd.
 
 Een of meer producten uit de catalogus verwijderen:
 
-1. [Vorm voor de dienst OSGi](/help/sites-deploying/configuring-osgi.md) **Dag CQ-handel Hybris-catalogus Importeren**; zie ook [De importmodule voor catalogi configureren](#configure-the-catalog-importer).
+1. [Vorm voor de dienst OSGi](/help/sites-deploying/configuring-osgi.md) **Dag CQ Commerce Hybris Catalog Importer**; zie ook [De importmodule voor catalogi configureren](#configure-the-catalog-importer).
 
    Activeer de volgende eigenschappen:
 

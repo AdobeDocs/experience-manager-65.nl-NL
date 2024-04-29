@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -28,14 +31,14 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
 1. In het deelvenster Verkenner van CRXDE Lite:
 
-   * Selecteer `/apps/an-scf-sandbox/templates`
+   * Selecteren `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Create]** > **[!UICONTROL Create Template]**
 
 1. Typ in het dialoogvenster Sjabloon maken de volgende waarden en klik vervolgens op **[!UICONTROL Next]**:
 
    * Label: `playpage`
    * Titel: `An SCF Sandbox Play Template`
-   * Beschrijving: `An SCF Sandbox template for play pages`
+   * Omschrijving: `An SCF Sandbox template for play pages`
    * Type bron: `an-scf-sandbox/components/playpage`
    * Rangschikking: &lt;leave as=&quot;&quot; default=&quot;&quot;>
 

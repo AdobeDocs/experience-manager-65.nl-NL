@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3759'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,7 @@ ht-degree: 0%
 
 Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
-* Dynamic Media ondersteunt nu HEIC-afbeeldingsindeling zonder verlies voor Apple iOS/iPadOS. Zie [fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html?lang=en) in de Dynamic Media Image Serving and Rendering API.
-
+* Dynamic Media ondersteunt nu HEIC-afbeeldingsindeling zonder verlies voor Apple iOS/iPadOS. Zie [fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) in de Dynamic Media Image Serving and Rendering API.
 * Multisite Manager (MSM) ondersteunt nu de structuren van het Fragment van de Ervaring met inbegrip van omslagen en subfolders, voor efficiënte bulkimplementatie van de Fragmenten van de Ervaring aan Levende Kopieën.
 
 ### [!DNL Forms]
@@ -145,6 +144,28 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
+* Met ingang van 1 mei 2024 beëindigt Adobe Dynamic Media de ondersteuning voor:
+
+   * SSL (Secure Socket Layer) 2.0
+   * SSL 3.0
+   * TLS (Transport Layer Security) 1.0 en 1.1
+   * De volgende zwakke ciphers in TLS 1.2:
+      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+      * TLS_RSA_WITH_AES_256_GCM_SHA384
+      * TLS_RSA_WITH_AES_256_CBC_SHA256
+      * TLS_RSA_WITH_AES_256_CBC_SHA
+      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+      * TLS_RSA_WITH_AES_128_GCM_SHA256
+      * TLS_RSA_WITH_AES_128_CBC_SHA256
+      * TLS_RSA_WITH_AES_128_CBC_SHA
+      * TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
+      * TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
+      * TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+      * TLS_RSA_WITH_SDES_EDE_CBC_SHA
+
+  Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 * Wanneer een element naar AEM wordt geüpload, `Update_asset` de workflow wordt geactiveerd. De workflow wordt echter nooit voltooid. De workflow wordt alleen voltooid tot de uploadprocedure voor het product. De volgende stap is de Scene7 batch upload, maar dat proces wordt niet in AEM gehaald. (ACTIVA-30443)
 * U hebt een betere manier nodig om niet-Dynamic Media video&#39;s netjes af te handelen in de Dynamic Media-component. Deze kwestie gaf een uitzondering concretiseren `dynamicmedia_sly.js`. (ACTIVA-31301)
 * Voorvertonen werkt voor alle elementen, adaptieve videosets en video&#39;s. Er treedt echter een fout van 403 op voor `.m3u8` bestanden (die overigens nog steeds via openbare koppelingen werken). (ACTIVA-31882)
@@ -163,7 +184,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 * Wanneer een gebruiker een bestaande optie in een groep keuzerondjes bijwerkt, worden onjuiste vertaalwaarden gepubliceerd. (FORMS-12575)
 * Wanneer een gebruiker tekens toevoegt aan een adaptief formulier op een Android™-apparaat, kan de gebruiker meer dan het gedefinieerde maximum aantal tekens in het tekstveld typen wanneer de focus wordt uit, op Android™-apparaten. Het werkt echter wanneer een gebruiker het invoertype HTML5 selecteert. (FORMS-12748)
 * Vanwege de overeenkomende labels Arial® en Arial® kunnen schermlezers geen onderscheid maken tussen deze twee labels. Om het probleem op te lossen, wordt het label &quot;aria-labelledby&quot; vervangen door &quot;aria-describe by&quot; voor de formuliervelden. (FORMS-12436)
-* Wanneer een auteur de component &quot;Adaptive Forms - Embed (v2)&quot; gebruikt om een adaptief formulier in te sluiten op zijn sitepagina en het ingesloten formulier daarin een CAPTCHA-component bevat (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), wordt de sitepagina niet weergegeven wanneer de gebruiker de sitepagina probeert weer te geven met de optie &quot;View as Publishing&quot; op de -instantie. De volgende fout wordt weergegeven als (FORMS-11859):
+* Een auteur gebruikt de component &quot;Adaptive Forms - Embed (v2)&quot; om een adaptief formulier in te sluiten in de sitepagina. Als het ingesloten formulier een CAPTCHA-component bevat (CAPTCHA Service > reCAPTCHA, Settings > reCAPTCHA-v2), wordt de sitepagina niet weergegeven. Dit gebeurt wanneer de gebruiker de sitepagina probeert weer te geven met &quot;Weergeven als gepubliceerd&quot; op de instantie van de auteur. De volgende fout wordt weergegeven als (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * Wanneer een gebruiker de datum probeert te selecteren met de component voor de datumkiezer, wordt de waarde niet bijgewerkt en wordt NULL weergegeven. (FORMS-12742, FORMS-12736)
@@ -202,11 +223,11 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * In AEM Forms 6.5.18.0 worden, wanneer een adaptief formulier wordt gepubliceerd, alle afhankelijkheden, inclusief het beleid, opnieuw gepubliceerd, zelfs als er geen wijzigingen in zijn aangebracht. (FORMS-10454)
 
-* Wanneer een gebruiker &quot;Microsoft SharePoint&quot; selecteert terwijl de configuratiemanager wordt uitgevoerd op AEM Forms 6.5.19.1 met JBoss® Turnkey-instelling, mislukt de LiveCycle JBoss® EAR-installatie en wordt de volgende fout weergegeven: (FORMS-12463)
+* Wanneer een gebruiker &quot;Microsoft® SharePoint&quot; selecteert terwijl de configuratiemanager op AEM Forms 6.5.19.1 wordt uitgevoerd met JBoss® Turnkey setup, mislukt de LiveCycle JBoss® EAR-installatie en wordt de volgende fout weergegeven: (FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
-* Wanneer een gebruiker een documentfragment maakt met het formuliergegevensmodel in AEM Forms Service Pack 6.5.19.0, worden de namen van de variabelen ongedefinieerd weergegeven in het zijpaneel, maar worden de namen van de variabelen weergegeven wanneer ze op het formulierpaneel worden neergezet of wanneer er op wordt geklikt. (FORMS-13238)
+* Wanneer een gebruiker een documentfragment maakt met het formuliergegevensmodel in AEM Forms Service Pack 6.5.19.0, worden de namen van de variabelen ongedefinieerd weergegeven in het zijpaneel. De variabelenamen worden echter weergegeven wanneer ze op het formuliervenster worden neergezet of wanneer er op wordt geklikt. (FORMS-13238)
 
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
@@ -332,7 +353,7 @@ Voor instructies voor het installeren van het servicepakket op Experience Manage
 
 >[!NOTE]
 >
->De functie Adaptive Forms is beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html), is uitsluitend ontworpen voor exploratie en evaluatie. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De functie Adaptive Forms is beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), is uitsluitend ontworpen voor exploratie en evaluatie. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket voor Experience Manager-inhoudsfragmenten installeren{#install-aem-graphql-index-add-on-package}
 
@@ -471,10 +492,10 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
 * De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)
 * Met Adaptive Forms kunt u aangepaste functies gebruiken met ECMAScript versie 5 of lager. Wanneer een douanefunctie ECMAScript versie 6 of later, zoals &quot;laat&quot;, &quot;const&quot;, of pijlfuncties gebruikt, zou de regelredacteur niet behoorlijk kunnen openen.
-* Gebruikers kunnen geen correspondentiebeheerbrief maken. Wanneer een gebruiker een letter maakt, wordt een fout met de beschrijving &quot;Object&quot; weergegeven en wordt de letter niet gemaakt. Miniaturen voor lay-outs kunnen ook niet worden geladen op het scherm voor het maken van letters. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) om het probleem op te lossen. (FORMS-13496)
-* De interactieve communicatieservice maakt het PDF-document, maar de gegevens van de gebruiker worden niet automatisch ingevuld in de formuliervelden. De Prefill-service werkt niet zoals u had verwacht. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) om het probleem op te lossen. (FORMS-13413, FORMS-13493)
-* De controle en Correct (RnC) redacteur van de dienst van de automatede form conversion kan niet laden. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) om het probleem op te lossen. (FORMS-13491)
-* Na het bijwerken van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0), ontmoeten de gebruikers een fout van de JSP compilatie. Er kunnen geen adaptieve formulieren worden geopend of gemaakt en er treden fouten op in andere AEM interfaces, zoals de pagina-editor, de AEM Forms-gebruikersinterface en de AEM Workfloweditor. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) om het probleem op te lossen. (FORMS-13492)
+* Gebruikers kunnen geen correspondentiebeheerbrief maken. Wanneer een gebruiker een brief creeert, een fout met beschrijving &quot;`Object Object`&quot; weergegeven en de letter is niet gemaakt. Miniaturen voor lay-outs kunnen ook niet worden geladen op het scherm voor het maken van letters. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) om het probleem op te lossen. (FORMS-13496)
+* De interactieve communicatieservice maakt het PDF-document, maar de gegevens van de gebruiker worden niet automatisch ingevuld in de formuliervelden. De Prefill-service werkt niet zoals u had verwacht. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) om het probleem op te lossen. (FORMS-13413, FORMS-13493)
+* De controle en Correct (RnC) redacteur van de dienst van de automatede form conversion kan niet laden. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) om het probleem op te lossen. (FORMS-13491)
+* Na het bijwerken van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0), ontmoeten de gebruikers een fout van de JSP compilatie. Ze kunnen geen adaptieve formulieren openen of maken en fouten met andere AEM interfaces, zoals de pagina-editor, de AEM Forms-gebruikersinterface en de AEM Workfloweditor. U kunt de [nieuwste AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) om het probleem op te lossen. (FORMS-13492)
 
 <!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
 * [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
@@ -517,10 +538,10 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Als u een klant bent en toegang nodig hebt, neemt u contact op met uw accountmanager van de Adobe.
 
 * [Productdownload op licensing.adobe.com](https://licensing.adobe.com/)
-* [Contact opnemen met de klantenondersteuning van de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Contact opnemen met de klantenondersteuning van de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] productpagina](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+>* [[!DNL Experience Manager] 6.5 Documentatie](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Abonneren op Adobe prioritaire productupdates](https://www.adobe.com/subscription/priority-product-update.html)

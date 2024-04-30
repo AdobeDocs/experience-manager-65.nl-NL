@@ -5,7 +5,7 @@ exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 36c95ea717a0abcb0b6ef9b0796a94d7b0f66329
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -21,13 +21,13 @@ Adobe die klanten gebruiken [Adobe Developer Console](https://developer.adobe.co
 
 Dit artikel verstrekt wat extra context over hoe AEM 6.5 klanten de veroudering zouden moeten behandelen.
 
-Het belangrijkste op dit ogenblik weghalen is dat AEM eigenschappen nog niet de nieuwe geloofsbrieven van Server-aan-Server steunen OAuth. De steun zal binnenkort komen — tegen eind april 2024 door een speciaal verenigbaarheidspakket voor AEM 6.5 te installeren, als u het recentste Service Pack 20 of lager (Service Pack 21 en hoger zal automatisch het omvatten) in werking stelt. U kunt een e-mail met instructies hebben ontvangen om uw geloofsbrieven van JWT te migreren, maar rust verzekerd dat u op de geloofsbrieven migratie kunt en zou moeten blokkeren tot AEM het nieuwe server-aan-server credentiële type van OAuth steunt.
+Het belangrijkste op dit ogenblik weghalen is dat AEM eigenschappen nog niet de nieuwe geloofsbrieven van Server-aan-Server steunen OAuth. De steun zal binnenkort — tegen medio mei 2024 door een speciaal verenigbaarheidspakket voor AEM 6.5 worden geïnstalleerd, als u het recentste Service Pack 20 of lager (Service Pack 21 en hoger zal automatisch het omvatten) in werking stelt. U kunt een e-mail met instructies hebben ontvangen om uw geloofsbrieven van JWT te migreren, maar rust verzekerd dat u op de geloofsbrieven migratie kunt en zou moeten blokkeren tot AEM het nieuwe server-aan-server credentiële type van OAuth steunt.
 
-In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, zodra AEM deze gegevens eind april ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de geloofsbrieven in de toekomst te vervangen.
+In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, zodra AEM deze gegevens medio mei ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de geloofsbrieven in de toekomst te vervangen.
 
 ## AEM integreren met andere oplossingen voor Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Handeling**: Wacht op migratie tot eind april 2024, wanneer AEM het ondersteunt.
+**Handeling**: Wacht tot medio mei 2024, wanneer AEM het ondersteunt.
 
 **Relevante AEM versies**: Adobe Managed Services (Service Pack 20 en lager).
 
@@ -36,11 +36,11 @@ AEM klanten gebruiken AEM Auteur UI om integratie met alle andere oplossingen va
 
 ![AEM integreren met andere oplossingen](/help/sites-administering/assets/jwt-deprecation.png)
 
-Hier ziet u bijvoorbeeld [de instructies](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en) voor het configureren van de integratie met Adobe Target. De API-sleutel in het dialoogvenster [De IMS-configuratie voltooien in AEM](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html#completing-the-ims-configuration-in-aem) de sectie zou aan het server-aan-Server referentie type van OAuth moeten worden gemigreerd, zodra AEM die geloofsbrieven eind-April steunt. Die instructies zullen eind-april worden herzien om u te helpen de nieuwe geloofsbrieven van Server-aan-Server toepassen OAuth.
+Hier ziet u bijvoorbeeld [de instructies](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) voor het configureren van de integratie met Adobe Target. De API-sleutel in het dialoogvenster [De IMS-configuratie voltooien in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) de sectie zou aan het server-aan-server referentie type van OAuth moeten worden gemigreerd, zodra AEM die geloofsbrieven medio mei steunt. Die instructies zullen half mei worden herzien om u te helpen de nieuwe geloofsbrieven van Server-aan-Server toepassen OAuth.
 
 ## Cloud Manager-API&#39;s {#cloud-manager-apis}
 
-**Handeling**: Wacht op migratie tot eind april 2024, wanneer AEM het ondersteunt.
+**Handeling**: Wacht tot medio mei 2024, wanneer AEM het ondersteunt.
 
 **Relevante AEM versies**: Adobe Managed Services (Service Pack 20 en lager).
 

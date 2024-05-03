@@ -3,7 +3,9 @@ title: Transactierapporten overzicht AEM Forms.
 description: Alle verzonden formulieren, verzonden documenten, interactieve communicatie, documenten die naar een andere indeling zijn geconverteerd, enzovoort, tellen.
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -33,5 +35,3 @@ U kunt het volgende raadplegen voor uitgebreide instructies over het inschakelen
 * [Transactierapporten voor AEM Forms weergeven en begrijpen op OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Lijst met factureerbare API&#39;s voor AEM Forms op OSGi](/help/forms/using/transaction-reports-billable-apis.md)
 * [Registreer een transactie voor douaneimplementatie voor AEM Forms op OSGi](/help/forms/using/record-transaction-custom-implementation.md)
-
-

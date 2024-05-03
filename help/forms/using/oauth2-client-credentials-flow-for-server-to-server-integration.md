@@ -3,7 +3,8 @@ title: Salesforce-integratie met AEM Forms via OAuth 2.0-clientaanmeldingsgegeve
 description: Stappen om de integratie van Salesforce met AEM Forms te integreren gebruikend OAuth 2.0 cliëntgeloofsbrieven stroom
 exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 1%

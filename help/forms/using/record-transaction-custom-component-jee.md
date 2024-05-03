@@ -3,7 +3,8 @@ title: Registreer een transactie voor douane component API voor AEM Forms op JEE
 description: Meer informatie over het gebruik van de API TransactionRecorder om transacties voor een aangepaste component op te nemen.
 feature: Transaction Reports
 exl-id: 33e1868a-2a7f-4785-8571-95651e661e21
-source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

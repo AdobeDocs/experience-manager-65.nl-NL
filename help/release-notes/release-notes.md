@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
+source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3804'
 ht-degree: 0%
 
 ---
@@ -244,6 +244,12 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 * Wanneer een gebruiker een XDP maakt in AEM Forms Designer, wordt bij PDF-uitvoer de knopformuliertag niet genest in de bovenliggende alinealabel (p-tag). (LC-3921719)
 
 * Wanneer een gebruiker een XDP maakt in AEM Forms Designer, wordt bij PDF-uitvoer wanneer een gebruiker door de formuliercodes navigeert, het achtergrondobject ook gecodeerd. (LC-3921687)
+
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (Alleen AEM Forms op JEE) De service PDF Generator kan de fonts die beschikbaar zijn op de server niet opsommen. Daarom blijft het deelvenster voor lettertypeselectie op de pagina Adobe PDF-instellingen in de gebruikersinterface van PDFG Admin leeg, zodat insluiting van gekozen lettertypen niet mogelijk is. (FORMS-12095)
+
+
 
 ### Stichting {#foundation-6520}
 

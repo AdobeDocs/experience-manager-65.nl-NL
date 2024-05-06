@@ -5,9 +5,9 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: d6435255835d91729519f7822b9677608b6b9f1e
+source-git-commit: 14b52e7763c4d83a4dcce593f155cb1bb8f56b97
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## Wat is inbegrepen in [!DNL Experience Manager] 6.5.21.0. {#what-is-included-in-aem-6521}
 
-[!DNL Experience Manager] 6.5.21.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, insectenmoeilijke situaties, en prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 zijn vrijgegeven. [Dit servicepack installeren](#install) op [!DNL Experience Manager] 6.5
+[!DNL Experience Manager] 6.5.21.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, insectenmoeilijke situaties, en prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [Dit Service Pack installeren](#install) op [!DNL Experience Manager] 6.5
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -56,7 +56,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### Toegankelijkheid {#sites-accessibility-6521}
 
-* De **[!UICONTROL Saved Searches]** label is niet blijvend. Plaatsaanduiding wordt gebruikt als het enige visuele label voor een tekstveld.(SITES-3050)
+* De **[!UICONTROL Saved Searches]** label is niet blijvend. De tijdelijke aanduiding wordt gebruikt als het enige visuele label voor een tekstveld. (SITES-3050)
 
 #### Gebruikersinterface Admin{#sites-adminui-6521}
 
@@ -69,7 +69,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 #### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
 * Oplossing voor de dubbele opname van de formulierelementen. (SITES-21109) BLOCKER
-* Wanneer u een inhoudsfragment maakt, reageert de knop Sluiten soms niet meer, waardoor de hele pagina vastloopt en de pagina moet worden vernieuwd om het inhoudsfragment te sluiten. Wat de kwestie van de versieverwezenlijking betreft, leidt het systeem tot een nieuwe versie van een Inhoudsfragment zelfs wanneer de gebruiker geen veranderingen heeft aangebracht, eenvoudig door met RTE of een tekstgebied in wisselwerking te staan. (SITES-21187) BELANGRIJK
+* Wanneer u een inhoudsfragment maakt, reageert de knop Sluiten soms niet meer, waardoor de hele pagina vastloopt en de pagina moet worden vernieuwd om het inhoudsfragment te sluiten. Het systeem maakt momenteel een nieuwe versie van een inhoudsfragment. Dit gebeurt zelfs wanneer de gebruiker geen veranderingen heeft aangebracht, eenvoudig door met RTE of een tekstgebied in wisselwerking te staan. (SITES-21187) BELANGRIJK
 
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6521}
@@ -110,11 +110,11 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### Lanceringen{#sites-launches-6521}
 
-* De `sourceRootResource` die in de configuratie van de Lancering binnen CRXDE Lite worden gevormd richt aan inhoud die niet meer bestaat, die tot een storing leidt wanneer de pogingen worden gemaakt om lanceringen te schrappen. U moet startpagina&#39;s kunnen verwijderen, zelfs als de pagina wordt verwijderd of als het pad niet hetzelfde is. (SITES-20750)
+* De `sourceRootResource` die in de configuratie van de Lancering binnen CRXDE Lite worden gevormd richt aan inhoud die niet meer bestaat, die tot een storing leidt wanneer de pogingen worden gemaakt om lanceringen te schrappen. Verwijderen wordt gestart, zelfs als de pagina wordt verwijderd of als het pad niet hetzelfde is. (SITES-20750)
 
 #### MSM - Actieve kopieën{#sites-msm-live-copies-6521}
 
-* De component Pagina is overschreven zodat tabbladen in pagina-eigenschappen kunnen worden toegevoegd. Een van deze fragmenten is paginaconfiguratie en heeft een eigenschap om een URL van het fragment van de ervaring toe te voegen. De koppeling die in de pagina-eigenschappen voor het ervaringsfragment wordt geconfigureerd, wordt niet gewijzigd voor alle taalkopieën die voor die pagina worden gemaakt. De gevormde verbinding zou met het taalexemplaar URL moeten veranderen. (SITES-19580)
+* Plaats de component Pagina als u tabbladen wilt toevoegen in pagina-eigenschappen. Een van deze fragmenten is paginaconfiguratie en heeft een eigenschap om een URL van het fragment van de ervaring toe te voegen. De koppeling die in de pagina-eigenschappen voor het ervaringsfragment wordt geconfigureerd, wordt niet gewijzigd voor alle taalkopieën die voor die pagina worden gemaakt. De gevormde verbinding zou met het taalexemplaar URL moeten veranderen. (SITES-19580)
 
 #### Pagina-editor{#sites-pageeditor-6521}
 
@@ -163,24 +163,36 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 ### Stichting {#foundation-6521}
 
-
-
 #### Apache Felix {#felix-6521}
 
 * De kwestie van de verbetering met AEM 6.5 Service Pack 19 (SP19) waarin de de servercontext-wortelweg van de Toepassing voor ongeoorloofde verzoeken aan Apache Felix na de installatie van SP19 mist. Update naar Apache Felix Web Management Console 4.9.8. (NPR-41933)
 
 * U
 
+#### Campagne{#campaign-6521}
+
+* AEM 6.5 Service Pack 15 produceert ononderbroken foutenlogboeken met significante ingangen. De volgende problemen zijn gemeld:
+
+   * 404 INFO-fout voor ontbrekende resource op pad `/libs/granite/ui/content/shell/start.html`
+   * Foutlogbestandvermelding voor een niet-afgevangen SlingException vanwege `NullPointerException` om `CampaignsDataSourceServlet.java:147`
+
+  Foutenlogbestanden moeten niet worden gevuld met frequente en omvangrijke foutmeldingen en de AEM instantie moet werken zonder problemen met betrekking tot ontbrekende bronnen of uitzonderingen. (CQ-4357064)
+
 #### Gemeenschappen {#communities-6521}
 
-* T
+* U
 
 #### Inhoudsdistributie{#foundation-content-distribution-6521}
 
 * T
 
+#### Graniet{#granite-6521}
+
+* **Verwijderen** of **Wijzigen** rechten kunnen niet worden geselecteerd zonder **Bladeren** toestemming in browser van de Configuratie. (GRANITE-51002)
+
 #### Integrations{#integrations-6521}
 
+* Betreffende `cq-target-integration`moet niet-testgebruik van Google Guava worden verwijderd. (CQ-4357101)
 * Vervanging van de geloofsbrieven van de Rekening van de Dienst (JSON Web Token of JWT) met OAuth2 server-aan-Server (ook genoemd geworden Belangrijkste die als de Dienst).(NPR-41994) MAJOR
 * Aanvraag voor publiek maken mislukt bij configuratie IMS (Identity Management System). (NPR-41888) MAJOR
 * Wanneer een klant de pagina Payload probeert weer te geven, wordt de inhoud niet correct weergegeven als gevolg van een onjuiste URL. Er wordt een fout van 404 weergegeven. De fout wordt veroorzaakt door het ontbreken van een symbool van het vraagteken in URL, vóór de vraagparameters. Voor dit probleem moet de klant het vraagteken handmatig invoegen om de pagina Payload correct weer te geven. (NPR-41957)
@@ -190,6 +202,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 #### Lokalisatie{#localization-6521}
 
 * In de redacteur van Malplaatjes, het tekstkoord *`No video available.`* is niet gelokaliseerd. (SITES-13190)
+* Tekenreeks na activering of deactivering van een gebruiker wordt niet gelokaliseerd in **Gereedschappen** > **Beveiliging** > **Gebruikers** > *any_user_name* > **Activeren** > **OK** en selecteert u *any_user_name* > **Deactiveren** > **OK**. (NPR-41737)
 
 #### Platform{#foundation-platform-6521}
 
@@ -201,12 +214,17 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### Vertaling{#foundation-translation-6521}
 
+* Een probleem met AEM 6.5.19 uit-van-de-doos vertaalstatus die niet zoals verwacht voor een lancering bijwerkt. Na het importeren van een vertaald bestand in een vertaaltaak die is gekoppeld aan een AEM-opstart, werd verwacht dat de status zou veranderen in `Approved`. In plaats daarvan is de status gewijzigd in `Ready for Review`, wat niet het verwachte gedrag is. (NPR-41756) MAJOR
 * Wanneer het creëren van veelvoudige configuraties en het gaan naar de configuraties van de Cloud Servicen van de Vertaling, niet worden alle elementen getoond in UI. Alleen de eerste 40 elementen/map worden weergegeven. Het laden wordt vertraagd, maar er wordt geen inhoud toegevoegd. (NPR-41829)
+* Het aantal tekens in het geval van Japans op de pagina Machtigingen in de Touch-gebruikersinterface is vervormd. (NPR-41794)
 
 #### Gebruikersinterface{#foundation-ui-6521}
 
+* In Gereedschappen > Beveiliging > Gebruikers > &lt;user_name> > Profielen, in het dialoogvenster **Gebruikersinstellingen bewerken** als u op Annuleren klikt, wordt het dialoogvenster niet gesloten. (NPR-41793) MAJOR
 * Graniet `pathfield` component bij `/libs/granite/ui/components/coral/foundation/form/pathfield` kan de **[!UICONTROL Select]** als een element is geselecteerd. Nadat het padveld is uitgevouwen en de gebruiker het selectievakje voor het element heeft ingeschakeld, wordt het **[!UICONTROL Select]** is niet ingeschakeld, maar verandert niet van grijs in blauw. (NPR-41970)
 * Er is een probleem met het referentieveld CFM (Content Fragment Model) in AEM. Hoewel het CFM-referentieveld is ingesteld als verplicht, kunnen gebruikers met het systeem op Opslaan klikken om inhoud met niet-CFM-waarden in bepaalde scenario&#39;s op te slaan. De knop Opslaan moet grijs worden weergegeven (niet beschikbaar). (NPR-41894)
+* De standaarddialoogvensters van de Coral-gebruikersinterface die de `successresponse` Actie moet een Succesreactie na de actie teweegbrengen. Maar in AEM 6.5 Service Pack 19, wordt de herladenactie niet aangehaald en geen bericht wordt getoond. (NPR-41797)
+* AEM de verbindingen van Berichten werken niet in AEM 6.5 Service Pack 18. Wanneer het bevorderen aan Service Pack 18, werken de verbindingen van de Berichten van de AEM niet wanneer het selecteren van de berichten als berichtenknoop. (NPR-41792)
 
 #### WCM{#wcm-6521}
 
@@ -214,14 +232,14 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### Workflow{#foundation-workflow-6521}
 
-* T
+* In AEM 6.5.18 worden tijdens het leegmaken herhaalde fouten aangetroffen in het verwijderen uit de cache van metagegevens van de gebruiker. (NPR-41762)
 
 ## Installeren [!DNL Experience Manager] 6.5.21.0.{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.21.0 vereist [!DNL Experience Manager] 6.5. Zie [upgradedocumentatie](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het de dienstpak is beschikbaar op Adobe [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
+* De download Service Pack is beschikbaar op Adobe [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
 * Bij een implementatie met MongoDB en meerdere exemplaren, installeert u [!DNL Experience Manager] 6.5.21.0 op één van de instanties van de Auteur die de Manager van het Pakket gebruiken.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -230,13 +248,13 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
-### Installeer het de dienstpak op [!DNL Experience Manager] 6,5{#install-service-pack}
+### Service Pack installeren op [!DNL Experience Manager] 6,5{#install-service-pack}
 
 1. Start de instantie opnieuw vóór de installatie als de updatemodus voor de instantie is geactiveerd (wanneer de instantie is bijgewerkt vanaf een eerdere versie). Adobe raadt aan de toepassing opnieuw te starten als de huidige uptime voor een instantie hoog is.
 
 1. Maak een momentopname of een nieuwe back-up van uw [!DNL Experience Manager] -instantie.
 
-1. Download het servicepack van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download de servicesack van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Pakketbeheer openen en vervolgens selecteren **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie voor meer informatie [Pakketbeheer](/help/sites-administering/package-manager.md).
 
@@ -246,7 +264,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 >[!NOTE]
 >
->De dialoog over de Manager UI van het Pakket bestaat soms tijdens de installatie van het de dienstpak. De Adobe adviseert dat u op foutenlogboeken wacht om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installatie succesvol is. Dit probleem treedt meestal op in het dialoogvenster [!DNL Safari] browser, maar kan soms voorkomen op om het even welke browser.
+>De dialoog over de Manager UI van het Pakket bestaat soms tijdens de installatie van het Service Pack. De Adobe adviseert dat u op foutenlogboeken wacht om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installatie succesvol is. Dit probleem treedt meestal op in het dialoogvenster [!DNL Safari] browser, maar kan soms voorkomen op om het even welke browser.
 
 **Automatische installatie**
 
@@ -271,7 +289,7 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 
 ### Service Pack installeren voor [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
-Voor instructies voor het installeren van het servicepakket op Experience Manager Forms raadpleegt u [Installatie-instructies voor Experience Manager Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Voor instructies voor het installeren van het Service Pack op Experience Manager Forms raadpleegt u [Installatie-instructies voor Experience Manager Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 >[!NOTE]
 >
@@ -394,7 +412,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
   "refresh": true
   ```
 
-* Als u uw [!DNL Experience Manager] -exemplaar van 6.5.0 - 6.5.4 naar het nieuwste servicepakket op Java™ 11, zie `RRD4JReporter` uitzonderingen in de `error.log` bestand. Als u de uitzonderingen wilt stoppen, start u de instantie van [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* Als u uw [!DNL Experience Manager] -exemplaar van 6.5.0 - 6.5.4 naar het nieuwste Service Pack op Java™ 11, zie `RRD4JReporter` uitzonderingen in de `error.log` bestand. Als u de uitzonderingen wilt stoppen, start u de instantie van [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * Gebruikers kunnen de naam wijzigen van een map in een hiërarchie in [!DNL Assets] en publiceer een geneste map naar [!DNL Brand Portal]. De maptitel wordt echter niet bijgewerkt in [!DNL Brand Portal] totdat de hoofdmap opnieuw wordt gepubliceerd.
 

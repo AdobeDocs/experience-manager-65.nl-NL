@@ -5,9 +5,9 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4796'
+source-wordcount: '4984'
 ht-degree: 0%
 
 ---
@@ -1047,6 +1047,39 @@ Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain`
 >Alle GraphQL [schema&#39;s](#schema-generation) (afgeleid van Content Fragment Models die **Ingeschakeld**) zijn leesbaar via het GraphQL-eindpunt.
 >
 >Deze functionaliteit houdt in dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden gelekt. Het bevat bijvoorbeeld informatie die als veldnamen aanwezig kan zijn in de modeldefinitie.
+
+## Beperkingen {#limitations}
+
+Om tegen potentiële problemen te beschermen worden er standaardbeperkingen opgelegd aan uw vragen:
+
+* De query mag niet meer dan 1M (1024 * 1024) tekens bevatten
+* De query mag niet meer dan 15000 tokens bevatten
+* De query mag niet meer dan 200000 whitespace-tokens bevatten
+
+U moet zich ook bewust zijn van:
+
+* Er wordt een fout in een veldconflict geretourneerd wanneer uw GraphQL-query velden met dezelfde naam bevat in twee (of meer) modellen en aan de volgende voorwaarden wordt voldaan:
+
+   * Dus waar:
+
+      * Twee (of meer modellen) worden gebruikt als mogelijke verwijzingen; wanneer zij als toegestaan worden gedefinieerd **Modeltype** in de Content Fragment reference.
+
+     en:
+
+      * Deze twee modellen hebben gebieden met een gemeenschappelijke naam; dat betekent de zelfde naam voorkomt in beide modellen.
+
+     en
+
+      * Deze velden zijn van verschillende gegevenstypen.
+
+   * Bijvoorbeeld:
+
+      * Wanneer twee (of meer) fragmenten met verschillende modellen (bijvoorbeeld `M1`, `M2`) worden gebruikt als mogelijke verwijzingen (Content Reference of Fragment Reference) uit een ander fragment, bijvoorbeeld `Fragment1` `MultiField/List`
+      * Deze twee fragmenten met verschillende modellen (`M1`, `M2`) hebben velden met dezelfde naam, maar verschillende typen.
+Ter illustratie:
+         * `M1.Title` als `Text`
+         * `M2.Title` als `Text/MultiField`
+      * Dan zal een fout van het gebiedsconflict voorkomen als de vraag van GraphQL bevat `Title` veld.
 
 ## Verificatie {#authentication}
 

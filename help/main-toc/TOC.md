@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
+source-git-commit: d5554718d663515d84878ff94555ac6cadcab891
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7408'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 1%
 + Opmerkingen bij de release {#release-notes}
    + [Opmerkingen bij de release](/help/release-notes/release-notes.md)
    + Opmerkingen bij vorige release {#service-pack}
+      + [6.5.20.](/help/release-notes/previous/6-5-20.md)
       + [6.5.19.](/help/release-notes/previous/6-5-19.md)
       + [6.5.18.](/help/release-notes/previous/6-5-18.md)
       + [6.5.17.](/help/release-notes/previous/6-5-17.md)
@@ -1203,10 +1204,10 @@ ht-degree: 1%
       + [Gegevens doorgeven met WS-beveiligingskoppen](/help/forms/developing/passing-credentials.md)
 + Inhoud en handel {#commerce}
    + [Inleiding en overzicht](/help/commerce/cif/introduction.md)
-   + [Opvallende wijzigingen in AEM inhoud en handel](/help/commerce/cif/changes.md)
+   + [Opvallende wijzigingen in AEM inhoud en Commerce](/help/commerce/cif/changes.md)
    + Integraties {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
-      + [Oplossing voor handel van derden](/help/commerce/cif/integrating/third-party.md)
+      + [Commerce-oplossing van derden](/help/commerce/cif/integrating/third-party.md)
    + AEM Storefront {#storefront}
       + [Aan de slag](/help/commerce/cif/getting-started.md)
       + Authoring {#authoring}
@@ -1605,7 +1606,7 @@ ht-degree: 1%
          + [Herstructurering van activa Bewaarinstelling in AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [Dynamic Media Repositoregeling Herstructurering in AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [Forms Repositoregeling Herstructurering in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-         + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+         + [Herstructurering van de opslagplaats van E-Commerce in AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [Repositoregeling voor de herstructurering van AEM Communities in punt 6.5](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
       + Best practices voor {#practices}
          + [Best practices implementeren](/help/sites-deploying/best-practices.md)

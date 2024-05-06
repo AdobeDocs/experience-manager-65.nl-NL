@@ -8,11 +8,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
-exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1729'
 ht-degree: 0%
 
 ---
@@ -166,6 +165,21 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
    ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen om een omleidingspagina of een bedankbericht te configureren](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
 1. Selecteer een formuliergegevensmodel. Open de **[!UICONTROL Basic]** tab. Selecteer in de service Prefill de optie **[!UICONTROL Form Data Model Prefill Service]**.
 1. Klik op **[!UICONTROL Done]**. Uw adaptieve formulier is nu geconfigureerd voor vooraf invullen van formuliergegevensmodel. U kunt nu de [regeleditor](rule-editor.md) om regels te maken voor het vooraf invullen van velden van het formulier.
+
+## Hoe wijzigt u de naam van een AEM adaptief formulier?{#rename-an-AEM-Adaptive-Form}
+
+Voer de volgende stappen uit om de naam van een adaptief formulier te wijzigen:
+
+1. Selecteer een adaptief formulier in uw AEM Forms-gebruikersinterface.
+1. Klik op de knop **Eigenschappen** op de bovenste spoorstaaf.
+
+   ![Eigenschappen](/help/forms/using/assets/rename-form-properties.png)
+
+1. Wijzig de naam van het formulier in het dialoogvenster **Titel** zoals weergegeven in de onderstaande afbeelding.
+1. Klikken **Opslaan en sluiten**.
+
+   ![De naam van een AEM adaptief formulier wijzigen](/help/forms/using/assets/rename-form-title.png)
+
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}

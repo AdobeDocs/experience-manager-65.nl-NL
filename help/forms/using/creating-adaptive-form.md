@@ -4,11 +4,10 @@ description: Leer hoe u een adaptief formulier maakt met [!DNL Experience Manage
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
-exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1889'
 ht-degree: 0%
 
 ---
@@ -210,3 +209,18 @@ De optie Automatisch opslaan is standaard niet ingeschakeld. U kunt de optie Aut
    >Als u de optie Automatisch opslaan wilt gebruiken voor anonieme gebruikers, moet u de Forms Common Configuration Service zodanig configureren dat alle gebruikers formulieren kunnen bekijken, verifiëren en ondertekenen.
    >
    >Ga naar de Adobe Experience Manager-webconsoleconfiguratie op `https://'[server]:[port]'system/console/configMgr` en bewerkt u de **[!UICONTROL Forms Common Configuration Service]** om de **[!UICONTROL All Users]** in de **[!UICONTROL Allow]** en sla de configuratie op.
+
+
+## Hoe wijzigt u de naam van een AEM adaptief formulier? {#rename-an-AEM-Adaptive-Form}
+
+Voer de volgende stappen uit om de naam van een adaptief formulier te wijzigen:
+
+1. Selecteer een adaptief formulier in uw AEM Forms-gebruikersinterface.
+1. Klik op de knop **Eigenschappen** op de bovenste spoorstaaf.
+
+   ![Eigenschappen](/help/forms/using/assets/rename-form-properties.png)
+
+1. Wijzig de naam van het formulier in het dialoogvenster **Titel** zoals weergegeven in de onderstaande afbeelding.
+1. Klikken **Opslaan en sluiten**.
+
+   ![De naam van een AEM adaptief formulier wijzigen](/help/forms/using/assets/rename-form-title.png)

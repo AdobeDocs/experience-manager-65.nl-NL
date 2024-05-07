@@ -5,9 +5,9 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 8672eabadd50dfb5f243a162c205931704d8a6c7
+source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
 workflow-type: tm+mt
-source-wordcount: '3745'
+source-wordcount: '3746'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 ### [!DNL Forms]
 
-* **Transactierapportering in AEM Forms op JEE**: Voor AEM Forms is in juni de mogelijkheid tot het rapporteren van transacties geïntroduceerd, waardoor het mogelijk is om alle documenttransacties, zoals omzettingen, uitvoeringen en verzendingen, volledig te registreren. Dit verbetert de efficiëntie en vergemakkelijkt een betere administratie. De functie is standaard uitgeschakeld. U kunt deze inschakelen via de interface van Admin.
+* **Transactierapportering in AEM Forms op JEE**: Voor AEM Forms is in juni de mogelijkheid tot het rapporteren van transacties geïntroduceerd, waardoor het mogelijk is om alle documenttransacties, zoals omzettingen, uitvoeringen en verzendingen, volledig te registreren. Dit verbetert de efficiëntie en vergemakkelijkt een betere administratie. De functie is standaard uitgeschakeld. U kunt dit inschakelen via de interface voor beheer.
 * **Uitgebreide beveiliging met ECDSA-ondersteuning**: AEM Forms biedt nu krachtige ondersteuning voor het Elliptic Curve Digital Signature Algorithm (ECDSA) voor zowel JEE- als OSGi-stapels. Gebruikers kunnen nu PDF-documenten ondertekenen, certificeren en verifiëren met verhoogde beveiliging. Tot de ondersteunde EC-curveralgoritmen behoren:
    * ECDSA elliptische curve P256 met SHA256-digest-algoritme
    * ECDSA elliptische curve P384 met SHA384-digest-algoritme
@@ -79,8 +79,8 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Geneste configuratiemappen worden niet meer ondersteund en de mappen met het inhoudsfragmentmodel zijn niet meer zichtbaar na de upgrade naar AEM 6.5.18 of naar AEM 6.5.19. (SITES-18110)
-* Sommige submappen kunnen niet kiezen uit overerfde modellen voor inhoudsfragmenten. Mappen moeten worden ondersteund zonder een `jcr:content` eigenschap, zelfs als de DAM-mappen die via de gebruikersinterface zijn gemaakt, een dergelijk knooppunt hebben. (SITES-17943)
+* Geneste configuratiemappen worden niet meer ondersteund en de modelmappen voor inhoudsfragmenten zijn niet meer zichtbaar na de upgrade naar AEM 6.5.18 of naar AEM 6.5.19. (SITES-18110)
+* Sommige submappen kunnen niet kiezen uit overgenomen modellen van inhoudsfragmenten. Mappen moeten worden ondersteund zonder een `jcr:content` eigenschap, zelfs als de DAM-mappen die via de gebruikersinterface zijn gemaakt, een dergelijk knooppunt hebben. (SITES-17943)
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6520}
 
@@ -98,7 +98,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 #### Core Backend{#sites-core-backend-6520}
 
 * Wanneer Snel publiceren van een inhoudsfragment wordt gebruikt, wordt het verder geladen en niet gepubliceerd. Met andere woorden, Snel publiceren werkt niet voor inhoudsfragmenten na een servicepack-upgrade van AEM 6.5.7 naar AEM 6.5.17. Toen de gebruiker beheerde publicatie probeerde, werkte het. Maar toen ze Snel publiceren probeerden, werd het niet gepubliceerd. Specifiek: `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` heeft het systeem ontstoken. (SITES-17311)
-* Inhoudsfragmenten kunnen niet van serienummering worden voorzien met Jackson-exportfunctie: het laden van de pagina wordt onderbroken wanneer er een inhoudsfragment is waarnaar wordt verwezen in een pagina (maakt gebruik van Jackson-exportcode) en elke tag die wordt toegevoegd aan een inhoudsfragment. (SITES-18096)
+* Inhoudsfragmenten kunnen niet van serienummering worden voorzien met Jackson-exportfunctie: het laden van de pagina wordt onderbroken als er een inhoudsfragment is waarnaar wordt verwezen in een pagina (gebruikt Jackson-exportcode) en een tag die wordt toegevoegd aan een inhoudsfragment. (SITES-18096)
 
 #### Kernonderdelen{#sites-core-components-6520}
 
@@ -275,7 +275,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * Na plaatsing van AEM 6.5 Service Pack 18, was er een kwestie met het lusje van Filters in de Redacteur van de Regels van de Vertaling. Wanneer een Context is geselecteerd en u op Bewerken > Opslaan klikt, verschijnt een dubbel aanhalingsteken als HTML-teken wanneer u dezelfde Context opnieuw opent. In feite werden de vertaalregels niet correct opgeslagen. (NPR-41624)
 * Problemen in verband met vertalingen van inhoudsfragmenten, waarbij de vertaalde tekenreeksen van de vertaalprovider worden teruggestuurd naar AEM, maar die bij de `/content/projects` en de inhoudsfragmenten niet bijwerken. (NPR-41516)
-* Er wordt een foutbericht weergegeven wanneer u een taalkopie maakt. Deze komt voor op een pagina die een inhoudsfragment heeft dat in een paginabezit van verwijzingen wordt voorzien, gebruikend de modellen van het inhoudsfragment. (NPR-41441)
+* Er wordt een foutbericht weergegeven wanneer u een taalkopie maakt. Deze pagina wordt weergegeven op een pagina met een inhoudsfragment waarnaar wordt verwezen in een pagina-eigenschap, waarbij modellen van inhoudsfragmenten worden gebruikt. (NPR-41441)
 * De verbindingen in de Fragmenten van de Ervaring worden niet aangepast aan de correcte taal tijdens het Exemplaar van de Taal. In plaats daarvan wijst het fragment van de Ervaring naar de primaire landinstelling. (NPR-41343)
 
 #### Gebruikersinterface{#foundation-ui-6520}

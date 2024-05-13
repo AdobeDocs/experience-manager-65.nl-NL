@@ -3,11 +3,10 @@ title: Documentservices installeren en configureren
 description: Installeer AEM Forms-documentservices voor het maken, samenstellen, distribueren, archiveren van PDF-documenten, toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en decoderen van Barcoded Forms.
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '5476'
+source-wordcount: '5546'
 ht-degree: 0%
 
 ---
@@ -298,6 +297,10 @@ Voor de gebruikersaccount die wordt gebruikt om de toepassingsserver te starten,
 1. Open de Redacteur van het Beleid van de Groep voor Microsoft® Vensters. Om de Redacteur van het Beleid van de Groep te openen, klik **[!UICONTROL Start]**, type **gpedit.msc** in het vak Zoekopdracht starten en klik op **[!UICONTROL Group Policy Editor]**.
 1. Navigeren naar **[!UICONTROL Local Computer Policy]** > **[!UICONTROL Computer Configuration]** > **[!UICONTROL Windows Settings]** > **[!UICONTROL Security Settings]** > **[!UICONTROL Local Policies]** > **[!UICONTROL User Rights Assignment]** en bewerkt u de **[!UICONTROL Replace a process level token]** beleid en omvat de groep van Beheerders.
 1. Voeg de gebruiker toe aan de Replace een Symbolische ingang van het Niveau van het Proces.
+
+>[!NOTE]
+>
+> Als de AEM server als dienst onder LSA loopt, kan uitdrukkelijk het toewijzen van dit voorrecht aan een gebruiker niet noodzakelijk zijn, betekent het als geen andere toepassing/componenten behalve die worden geïnstalleerd die voor PDFG op VM wordt vereist, dan te hoeven u geen andere rekeningen te verlenen **Een token op procesniveau vervangen** en alleen de rekeningen van de lokale dienst en van de netwerkdienst zouden het recht moeten hebben.
 
 ### (Alleen Windows) De service PDF Generator inschakelen voor niet-beheerders {#enable-the-pdf-generator-service-for-non-administrators}
 

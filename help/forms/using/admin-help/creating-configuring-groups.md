@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 55421ab730382eb9aa603f898182865649f66349
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
 
 ### Automatisch dynamische groepen maken op basis van e-maildomeinen {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
+1. Klik op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
 1. Schakel het selectievakje Automatisch maken van dynamische groep in.
 1. Geef op wanneer Gebruikersbeheer controleert op nieuwe e-maildomeinen. Deze tijd zou na de tijd van de domeinsynchronisatie moeten zijn omdat de verwezenlijking van dynamische groepen logisch slechts is als de domeinsynchronisatie wordt voltooid.
 

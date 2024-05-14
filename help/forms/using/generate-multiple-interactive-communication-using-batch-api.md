@@ -9,7 +9,7 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -119,9 +119,7 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
    1. Selecteer de ophaalfunctie of ontvang de service in het veld Leesservice onder Eigenschappen bewerken.
    1. Selecteer het potloodpictogram voor het argument van de leesdienst om het argument aan een Attribuut van het Verzoek te binden en de bindende waarde te specificeren. Het bindt het de dienstargument aan de gespecificeerde bindende attributen of letterlijke waarde, die tot de dienst als argument wordt overgegaan om details te halen verbonden aan de gespecificeerde waarde uit de gegevensbron.
 
-      <br>
-        In dit voorbeeld neemt het id-argument de waarde van het id-kenmerk van het gebruikersprofiel en geeft dit als een argument door aan de leesservice. Het leest en keert waarden van bijbehorende eigenschappen van het voorwerp van het werknemersgegevensmodel voor gespecificeerde identiteitskaart terug. Dus als u 00250 opgeeft in het veld Id in het formulier, leest de leesservice details van de werknemer met 00250 werknemer-id.
-        <br>
+      In dit voorbeeld neemt het id-argument de waarde van het id-kenmerk van het gebruikersprofiel en geeft dit als een argument door aan de leesservice. Het leest en keert waarden van bijbehorende eigenschappen van het voorwerp van het werknemersgegevensmodel voor gespecificeerde identiteitskaart terug. Dus als u 00250 opgeeft in het veld Id in het formulier, leest de leesservice details van de werknemer met 00250 werknemer-id.
 
       ![Aanvraagkenmerk configureren](assets/request-attribute.png)
 

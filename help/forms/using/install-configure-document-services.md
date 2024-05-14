@@ -4,13 +4,13 @@ description: Installeer AEM Forms-documentservices voor het maken, samenstellen,
 topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
 workflow-type: tm+mt
-source-wordcount: '5546'
+source-wordcount: '5503'
 ht-degree: 0%
 
 ---
-
 
 # Documentservices installeren en configureren {#installing-and-configuring-document-services}
 
@@ -300,7 +300,7 @@ Voor de gebruikersaccount die wordt gebruikt om de toepassingsserver te starten,
 
 >[!NOTE]
 >
-> Als de AEM server als dienst onder LSA loopt, kan uitdrukkelijk het toewijzen van dit voorrecht aan een gebruiker niet noodzakelijk zijn, betekent het als geen andere toepassing/componenten behalve die worden geïnstalleerd die voor PDFG op VM wordt vereist, dan te hoeven u geen andere rekeningen te verlenen **Een token op procesniveau vervangen** en alleen de rekeningen van de lokale dienst en van de netwerkdienst zouden het recht moeten hebben.
+> Zoals hierboven geïmpliceerd, als de AEM server als dienst onder de rekening LocalSystem (LSA) loopt, uitdrukkelijk is het toewijzen van dit voorrecht aan een gebruiker niet noodzakelijk.
 
 ### (Alleen Windows) De service PDF Generator inschakelen voor niet-beheerders {#enable-the-pdf-generator-service-for-non-administrators}
 

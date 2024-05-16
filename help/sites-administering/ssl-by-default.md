@@ -10,7 +10,7 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -183,13 +183,13 @@ Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaa
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-Zet de Persoonlijke Sleutel in het formaat van DER om. De reden hiervoor is dat de SSL-wizard vereist dat de sleutel de indeling DER heeft:
+1. Zet de Persoonlijke Sleutel in het formaat van DER om. De reden hiervoor is dat de SSL-wizard vereist dat de sleutel de indeling DER heeft:
 
-```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
-```
+   ```shell
+   openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+   ```
 
-Ten slotte uploadt u de **localhostprivate.der** als persoonlijke sleutel en **localhost.crt** als het SSL/TLS-certificaat in stap 2 van de grafische SSL/TLS-wizard die aan het begin van deze pagina wordt beschreven.
+1. Ten slotte uploadt u de **localhostprivate.der** als persoonlijke sleutel en **localhost.crt** als het SSL/TLS-certificaat in stap 2 van de grafische SSL/TLS-wizard die aan het begin van deze pagina wordt beschreven.
 
 ### De SSL/TLS-configuratie bijwerken via cURL {#updating-the-ssl-tls-configuration-via-curl}
 

@@ -9,20 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Deze pagina legt uit hoe u een aangepaste paginasjabloon kunt maken dat [Adobe Campaign-formulier](/help/sites-authoring/adobe-campaign-components.md) componenten door te onderzoeken hoe de Geometrixx-outdoortemplate ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) is geïmplementeerd en verwijst naar belangrijke informatie die u nodig hebt bij het maken van uw eigen aangepaste sjabloon.
+Deze pagina legt uit hoe u een aangepaste paginasjabloon kunt maken dat [Adobe Campaign-formulier](/help/sites-authoring/adobe-campaign-components.md) componenten door te onderzoeken hoe de Geometrixx-outdoortemplate (`/apps/geometrixx-outdoors/components/page_campaign_profile`) is geïmplementeerd en verwijst naar belangrijke informatie die u nodig hebt bij het maken van uw eigen aangepaste sjabloon.
 
 >[!NOTE]
 >
 >[E-mail- en formuliervoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
+
+>[!CAUTION]
+>
+>De AEM e-mailcomponenten zijn vervangen. Vanwege de aard van e-mail, waarin inhoud en stijl worden samengevoegd, worden de e-mailcomponenten die door AEM buiten de box worden geleverd van beperkte hergebruik voor klanten omdat aangepaste stijlen moeten worden geïmplementeerd in alle componenten die vereist zijn voor projecten.
+>
+>E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Gebruik deze vervangen componenten echter niet voor projecten.
+
 
 Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formuliercomponenten, moet u het volgende doen:
 

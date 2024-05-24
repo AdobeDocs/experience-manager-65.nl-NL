@@ -1,6 +1,6 @@
 ---
 title: Video in Dynamic Media
-description: Leer hoe u in Dynamic Media met video kunt werken, zoals aanbevolen werkwijzen voor het coderen van video's, het toevoegen van meervoudige audio en meerdere bijschriften aan video's en videominiaturen.
+description: Leer hoe u in Dynamic Media met video kunt werken, zoals aanbevolen werkwijzen voor het coderen van video's, het toevoegen van meerdere audio- en bijschrifttracks aan video's en videominiaturen.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '11027'
+source-wordcount: '11053'
 ht-degree: 1%
 
 ---
@@ -425,7 +425,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 Dynamic Media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebruiken. Omdat MP4-bestanden de H.264-videocodec gebruiken, biedt deze video van hoge kwaliteit, maar met een gecomprimeerde bestandsgrootte.
 
-### Ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks inschakelen voor uw Dynamic Media-account {#enable-dash}
+### Ondersteuning voor DASH, meerdere bijschriften en audiotracks inschakelen voor uw Dynamic Media-account {#enable-dash}
 
 **DASH inschakelen voor uw account**
 DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. Of u kunt kiezen voor beide opties met automatische schakeling tussen spelers wanneer **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling Viewer.
@@ -444,15 +444,15 @@ Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
 * Dynamic Media configureren voor gebruik van DASH, wat u eenvoudig kunt doen.
 * Het vormen van Experience Manager 6.5 om DASH te gebruiken die door een geval van de Steun van de Klant van de Adobe wordt gedaan dat u creeert en voorlegt.
 
-**Ondersteuning voor multi-subtitle en multi-audiotracks voor uw account inschakelen**
+**Ondersteuning voor meerdere bijschriften en audiotracks voor uw account inschakelen**
 
-Tegelijkertijd maakt u een Adobe Support-case zodat DASH kan worden ingeschakeld voor uw account, maar u profiteert ook van de automatische ondersteuning voor meervoudige ondertitels en multi-audiotracks. Na deze functie worden alle volgende video&#39;s die u uploadt verwerkt met een nieuwe back-endarchitectuur die ondersteuning voor het toevoegen van multi-subtitle- en multi-audiotracks aan uw video&#39;s bevat.
+Tegelijkertijd maakt u een Adobe Support-case om DASH in te schakelen voor uw account, maar u profiteert ook van het automatisch inschakelen van ondersteuning voor meerdere bijschriften en audiotracks. Nadat u deze optie hebt ingeschakeld, worden alle volgende video&#39;s die u uploadt, verwerkt met een nieuwe back-endarchitectuur die ondersteuning biedt voor het toevoegen van meerdere bijschriften en audiotracks aan uw video&#39;s.
 
 >[!IMPORTANT]
 >
->Alle video&#39;s die u hebt geüpload *voor* ondersteuning voor multi-subtitle en multi-audiotracks inschakelen voor uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+>Alle video&#39;s die u hebt geüpload *voor* het inschakelen van ondersteuning voor meerdere bijschriften en audiotracks op uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
-**U kunt als volgt ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks inschakelen op uw Dynamic Media-account:**
+**U kunt DASH, meerdere bijschriften en ondersteuning voor meerdere audiotracks inschakelen voor uw Dynamic Media-account:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -471,7 +471,7 @@ Tegelijkertijd maakt u een Adobe Support-case zodat DASH kan worden ingeschakeld
 
    * Primaire contactpersoon, e-mail, telefoon.
    * Naam van je Dynamic Media-account.
-   * Geef op of u ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks wilt inschakelen voor uw Dynamic Media-account, op Experience Manager 6.5.
+   * Geef op of u ondersteuning voor DASH, meerdere bijschriften en meerdere audiotracks wilt inschakelen voor uw Dynamic Media-account, op Experience Manager 6.5.
 
 1. De Steun van de Klant van de Adobe voegt u aan de klant toe wachtlijst die op de orde wordt gebaseerd waarin de verzoeken worden voorgelegd.
 1. Wanneer de Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor enablement te coördineren en te plaatsen.
@@ -479,7 +479,7 @@ Tegelijkertijd maakt u een Adobe Support-case zodat DASH kan worden ingeschakeld
 1. U kunt nu een van de volgende twee handelingen uitvoeren:
 
    * Maak uw [videoviewervoorinstelling](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) zoals gebruikelijk.
-   * [Meerdere ondertitels en audiotracks toevoegen](#add-msma) naar uw video.
+   * [Meerdere bijschriften en audiotracks toevoegen](#add-msma) naar uw video.
 
 ## Videorapporten weergeven {#viewing-video-reports}
 
@@ -593,13 +593,13 @@ Gebruik de [Referentiehandleiding voor Adobe Dynamic Media Viewers](https://expe
 
 
 
-## Ondersteuning voor multi-subtitle en multi-audiotracks voor video&#39;s in Dynamic Media{#about-msma}
+## Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in Dynamic Media{#about-msma}
 
-Met de mogelijkheid om meerdere ondertitels en meerdere audiotracks te gebruiken in Dynamic Media, kunt u eenvoudig meerdere ondertitels en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere ondertitels en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
 ![Het tabblad Ondertitels en audiotracks in Dynamic Media en een tabel met geüploade .VTT-ondertitelingsbestanden en geüploade .MP3-audiotrackbestanden voor een video.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
-U kunt onder andere de volgende gebruiksscenario&#39;s gebruiken voor het toevoegen van meerdere ondertitels en audiotracks aan uw primaire video:
+Een aantal van de gebruiksscenario&#39;s die u kunt gebruiken voor het toevoegen van meerdere bijschriften en audiotracks aan uw primaire video zijn onder meer:
 
 | Type | Hoofdletters gebruiken |
 |--- |--- |
@@ -609,28 +609,28 @@ U kunt onder andere de volgende gebruiksscenario&#39;s gebruiken voor het toevoe
 |  | Commentaartracks |
 |  | Beschrijvende audio |
 
-Alles [video-indelingen ondersteund in Dynamic Media](/help/assets/assets-formats.md) en alle Dynamic Media-videoviewers, behalve de Dynamic Media *Video_360* viewer: wordt ondersteund voor gebruik met meerdere ondertitels en audiotracks.
+Alles [video-indelingen ondersteund in Dynamic Media](/help/assets/assets-formats.md) en alle Dynamic Media-videoviewers, behalve de Dynamic Media *Video_360* viewer: wordt ondersteund voor gebruik met meerdere bijschriften en audiotracks.
 
-Mogelijkheid tot meerdere ondertitels en meerdere audiotracks is beschikbaar voor uw Dynamic Media-account via een functiewissel die moet worden ingeschakeld (ingeschakeld) door de Adobe Klantenondersteuning.
+U kunt voor uw Dynamic Media-account meerdere bijschriften en audiotracks gebruiken via een functieschakeloptie die door de Adobe Klantenondersteuning moet worden ingeschakeld.
 
-### Multiondertitels en audiotracks toevoegen aan uw video {#add-msma}
+### Meerdere bijschriften en audiotracks toevoegen aan uw video {#add-msma}
 
-Voordat u multi-subtitle- en multi-audiotracks aan uw video toevoegt, moet u controleren of u al over het volgende beschikt:
+Voordat u meerdere bijschriften en audiotracks aan uw video toevoegt, moet u controleren of u al over het volgende beschikt:
 
 * Dynamic Media wordt ingesteld in een AEM omgeving.
 * A [Dynamic Media-videoprofiel wordt toegepast op de map waarin uw video&#39;s worden opgenomen](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-subtitle en multi-audiotrack is ingeschakeld voor uw Dynamic Media-account](#enable-dash).
+* [Meerdere bijschriften en audiotracks zijn ingeschakeld voor uw Dynamic Media-account](#enable-dash).
 
 Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen WebVTT en Adobe VTT. Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
 
 >[!IMPORTANT]
 >
->Alle video&#39;s die u hebt geüpload *voor* ondersteuning voor multi-subtitle en multi-audiotracks inschakelen voor uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+>Alle video&#39;s die u hebt geüpload *voor* het inschakelen van ondersteuning voor meerdere bijschriften en audiotracks op uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
-**U kunt als volgt meerdere ondertitels en audiotracks toevoegen aan uw video:**
+**Meerdere bijschriften en audiotracks toevoegen aan uw video:**
 
 1. [Uw primaire video uploaden naar een map](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) waaraan al een videoprofiel is toegewezen.
-1. Navigeer naar het geüploade video-element waaraan u nummers voor meerdere ondertitels en audio wilt toevoegen.
+1. Navigeer naar het geüploade video-element waaraan u meerdere bijschriften en audiotracks wilt toevoegen.
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
    ![Geselecteerd video-element met vinkje boven de miniatuurafbeelding van de video en Weergave-eigenschappen gemarkeerd op de werkbalk.](assets-dm/msma-selectedasset-propertiesbutton.png)*Geselecteerd video-element in de kaartweergave.*
@@ -853,7 +853,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 >[!IMPORTANT]
 >
->Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
+>Adobe beveelt aan [mogelijkheid voor meerdere bijschriften en audiotracks inschakelen](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 

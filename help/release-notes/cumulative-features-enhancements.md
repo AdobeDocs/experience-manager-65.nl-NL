@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2335'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Zie ook [Opmerkingen bij de release van Adobe Experience Manager 6.5 Nieuwste Se
 
 ## AEM 6.5, Service Pack 18-augustus 24, 2023
 
-* Middelen, Dynamic Media - [Ondersteuning voor multi-subtitle en multi-audiotrack voor video&#39;s in Dynamic Media](/help/assets/video.md#about-msma)—U kunt nu eenvoudig meerdere ondertitels en meerdere audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+* Middelen, Dynamic Media - [Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in Dynamic Media](/help/assets/video.md#about-msma)—U kunt nu eenvoudig meerdere ondertitels en meerdere audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 * Middelen - Vanuit de zoekresultaten kunt u nu naar de maplocatie navigeren die een element bevat waarmee u verschillende taken voor middelenbeheer kunt uitvoeren.
 * De Plukker van Polaris van Plaatsen in de Fragmenten van de Inhoud heeft betere prestaties.
 * Gebruikers van de Pagina-editor/afbeeldingscomponent van Sites konden naar elementen van de Cloud Service voor externe middelen verwijzen.

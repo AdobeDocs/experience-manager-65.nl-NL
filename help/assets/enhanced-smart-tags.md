@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1539'
 ht-degree: 0%
 
 ---
@@ -194,3 +194,9 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor
 * Het gebruik van Smart Content Services is beperkt tot maximaal 2 miljoen getagde afbeeldingen per jaar. Alle gedupliceerde afbeeldingen die zijn verwerkt en getagd, worden allemaal geteld als een gecodeerde afbeelding.
 * Als u de labelworkflow uitvoert vanuit de tijdlijn, kunt u tags toepassen op maximaal 15 elementen tegelijk.
 * Slimme tags werken alleen voor PNG- en JPG-afbeeldingsindelingen. Dus ondersteunde elementen met uitvoeringen die in deze twee indelingen zijn gemaakt, worden gelabeld met slimme tags.
+
+>[!MORELIKETHIS]
+>
+>* [Overzicht en hoe u slimme tags kunt trainen](enhanced-smart-tags.md)
+>* [Slimme tags configureren](config-smart-tagging.md)
+>* [Videozelfstudie over slimme tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

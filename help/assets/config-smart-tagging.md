@@ -6,10 +6,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 18%
+source-wordcount: '2152'
+ht-degree: 16%
 
 ---
 
@@ -135,6 +135,13 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 ### Slimme-inhoudsservice configureren {#configure-smart-content-service}
 
+>[!CAUTION]
+>
+>Eerder zijn configuraties die zijn gemaakt met JWT Credentials onderhevig aan afschrijving in de Adobe Developer Console. U kunt na 3 juni 2024 geen nieuwe JWT-referenties maken. Dergelijke configuraties kunnen niet meer worden gemaakt of bijgewerkt, maar kunnen worden gemigreerd naar OAuth-configuraties.
+> Zie [IMS-integratie instellen voor AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+>Zie [Stappen om OAuth voor op-premise gebruikers te vormen](#config-oauth-onprem)
+> Zie [Problemen met slimme tags voor OAuth-gebruikersgegevens oplossen](#config-smart-tagging.md)
+
 Om de integratie te vormen, gebruik de waarden van [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET], en [!UICONTROL CLIENT ID] velden van de integratie met Adobe Developer Console. Het creëren van een Slimme wolkenconfiguratie van Markeringen staat authentificatie van API verzoeken van toe [!DNL Experience Manager] implementatie.
 
 1. In [!DNL Experience Manager], navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** om de [!UICONTROL Cloud Services] console.
@@ -151,6 +158,37 @@ Om de integratie te vormen, gebruik de waarden van [!UICONTROL TECHNICAL ACCOUNT
    | [!UICONTROL Technical Account ID] | [!UICONTROL TECHNICAL ACCOUNT ID] |
    | [!UICONTROL Organization ID] | [!UICONTROL ORGANIZATION ID] |
    | [!UICONTROL Client Secret] | [!UICONTROL CLIENT SECRET] |
+
+### OAuth voor gebruikers op locatie configureren {#config-oauth-onprem}
+
+#### Vereisten {#prereqs-config-oauth-onprem}
+
+Een vergunningswerkingsgebied is een koord OAuth dat de volgende eerste vereisten bevat:
+
+* Maak een nieuwe OAuth-integratie in het dialoogvenster [Ontwerpconsole](https://developer.adobe.com/console/user/servicesandapis) gebruiken `ClientID`, `ClientSecretID`, en `OrgID`.
+* De volgende bestanden toevoegen aan dit pad `/apps/system/config in crx/de`:
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+
+#### OAuth voor gebruikers op locatie configureren {#steps-config-oauth-onprem}
+
+1. Hieronder vindt u eigenschappen toevoegen of bijwerken in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
+
+   * `auth.token.provider.authorization.grants="client_credentials"`
+   * `auth.token.provider.orgId="<OrgID>"`
+   * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
+   * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+     `auth.token.validator.type="adobe-ims-similaritysearch"`
+   * Werk de `auth.token.provider.client.id` met identiteitskaart van de Cliënt van de nieuwe configuratie OAuth.
+   * Bijwerken `auth.access.token.request` tot `"https://ims-na1.adobelogin.com/ims/token/v3"`
+2. De naam van het bestand wijzigen in `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+3. Voer de onderstaande stappen uit in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+   * Werk het bezit auth.ims.client.geheime met het Geheim van de Cliënt van de nieuwe integratie OAuth bij.
+   * De naam van het bestand wijzigen in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
+4. Sla alle wijzigingen op in de ontwikkelingsconsole van de inhoudsopslagplaats, bijvoorbeeld CRXDE.
+5. Navigeren naar `/system/console/configMgr` en vervang de OSGi-configuratie vanuit `.<randomnumber>` tot `-<randomnumber>`.
+6. Verwijder de oude configuratie voor `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
+7. Start de console opnieuw.
 
 ### De configuratie valideren {#validate-the-configuration}
 
@@ -299,5 +337,6 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 
 >[!MORELIKETHIS]
 >
->* [Overzicht van slimme tags en hoe deze kunnen worden getraind](enhanced-smart-tags.md)
+>* [Problemen met slimme tags voor OAuth-gebruikersgegevens oplossen](#config-smart-tagging.md)
+>* [Overzicht en hoe u slimme tags kunt trainen](enhanced-smart-tags.md)
 >* [Videozelfstudie over slimme tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

@@ -5,9 +5,9 @@ exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 36c95ea717a0abcb0b6ef9b0796a94d7b0f66329
+source-git-commit: bb4367fa9916a8bafa6255562b2454ddae143351
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -19,29 +19,31 @@ ht-degree: 0%
 
 Adobe die klanten gebruiken [Adobe Developer Console](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 3 juni 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet aan of na 27 jan. 2025 werken. U kunt [lezen over de afgekeurde tekst](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
-Dit artikel verstrekt wat extra context over hoe AEM 6.5 klanten de veroudering zouden moeten behandelen.
+Dit artikel biedt een extra context voor de manier waarop Adobe Experience Manager (AEM) 6.5-klanten de afschrijving moeten afhandelen.
 
-Het belangrijkste op dit ogenblik weghalen is dat AEM eigenschappen nog niet de nieuwe geloofsbrieven van Server-aan-Server steunen OAuth. De steun zal binnenkort — tegen medio mei 2024 door een speciaal verenigbaarheidspakket voor AEM 6.5 worden geïnstalleerd, als u het recentste Service Pack 20 of lager (Service Pack 21 en hoger zal automatisch het omvatten) in werking stelt. U kunt een e-mail met instructies hebben ontvangen om uw geloofsbrieven van JWT te migreren, maar rust verzekerd dat u op de geloofsbrieven migratie kunt en zou moeten blokkeren tot AEM het nieuwe server-aan-server credentiële type van OAuth steunt.
+Het belangrijkste wegnemen is dat AEM nu de nieuwe geloofsbrieven OAuth server-aan-Server voor AEM steunt. U hebt mogelijk een e-mail ontvangen met instructies voor het migreren van uw JWT-gegevens. Deze migratie kan nu worden uitgevoerd.
 
-In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, zodra AEM deze gegevens medio mei ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de geloofsbrieven in de toekomst te vervangen.
+In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, nu AEM hen ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de gegevens te migreren.
 
 ## AEM integreren met andere oplossingen voor Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Handeling**: Wacht tot medio mei 2024, wanneer AEM het ondersteunt.
+**Handeling**: Migreer uw configuratie aangezien AEM nu geloofsbrieven OAuth steunt.
 
-**Relevante AEM versies**: Adobe Managed Services (Service Pack 20 en lager).
+**Relevante AEM versies**: Adobe Managed Services (Service Pack 21 en hoger).
 
-
-AEM klanten gebruiken AEM Auteur UI om integratie met alle andere oplossingen van de Adobe te vormen. Bijvoorbeeld Adobe Target, Adobe Analytics, Adobe Launch, AFCS en nog veel meer.
+AEM klanten gebruiken de AEM om integratie met alle andere oplossingen van de Adobe te vormen. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
 
 ![AEM integreren met andere oplossingen](/help/sites-administering/assets/jwt-deprecation.png)
 
-Hier ziet u bijvoorbeeld [de instructies](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) voor het configureren van de integratie met Adobe Target. De API-sleutel in het dialoogvenster [De IMS-configuratie voltooien in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) de sectie zou aan het server-aan-server referentie type van OAuth moeten worden gemigreerd, zodra AEM die geloofsbrieven medio mei steunt. Die instructies zullen half mei worden herzien om u te helpen de nieuwe geloofsbrieven van Server-aan-Server toepassen OAuth.
+Zie [IMS-integratie instellen voor AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md) voor meer informatie over hoe:
+
+* configuraties maken met OAuth-gebruikersgegevens
+* migreer configuraties, die met geloofsbrieven JWT werden gecreeerd, om geloofsbrieven te gebruiken OAuth
 
 ## Cloud Manager-API&#39;s {#cloud-manager-apis}
 
-**Handeling**: Wacht tot medio mei 2024, wanneer AEM het ondersteunt.
+**Handeling**: Bevestig wanneer deze gegevens kunnen worden gemigreerd van JWT naar OAuth-referenties.
 
-**Relevante AEM versies**: Adobe Managed Services (Service Pack 20 en lager).
+**Relevante AEM versies**: Adobe Managed Services (Service Pack 21 en hoger).
 
-Klanten maken Adobe Developer Console-projecten zodat ze deze kunnen aanroepen [Cloud Manager-API&#39;s](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). De geloofsbrieven in het project van Adobe Developer zouden aan het OAuth server-aan-Server credentietype moeten worden gemigreerd, zodra AEM en de Manager van de Wolk het steunen.
+Klanten maken Adobe Developer Console-projecten zodat ze deze kunnen aanroepen [Cloud Manager-API&#39;s](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). De geloofsbrieven in het project van Adobe Developer zouden aan het server-aan-Server referentie type OAuth moeten worden gemigreerd alvorens de afgekeurde geloofsbrieven JWT in Januari 2025 verlopen.

@@ -10,38 +10,14 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
 
 # Exporteren van ervaringsfragmenten naar Adobe Target{#exporting-experience-fragments-to-adobe-target}
-
->[!CAUTION]
->
->Voor bepaalde functionaliteit op deze pagina is de toepassing van AEM 6.5.3.0 (of hoger) vereist.
->
->6.5.3.0:
->
->* **ExternalAlizer-domeinen** kan nu worden geselecteerd.
->  **Opmerking:** De Domeinen van de externalizer zijn slechts relevant voor de inhoud van het Fragment van de Ervaring dat naar Doel wordt verzonden, en niet meta-gegevens zoals de Inhoud van de Aanbieding van de Mening.
->
->6.5.2.0:
->
->* De Fragmenten van de ervaring kunnen worden uitgevoerd naar:
->
->   * de standaardwerkruimte.
->   * een benoemde werkruimte, opgegeven in de Cloud Configuration.
->   * **Opmerking:** Voor het exporteren naar specifieke werkruimten is Adobe Target Premium vereist.
->
->* AEM moet [geïntegreerd met Adobe Target met IMS](/help/sites-administering/integration-target-ims.md).
->
->AEM 6.5.0.0 en 6.5.1.0:
->
->* De fragmenten AEM Ervaring worden geëxporteerd naar de standaardwerkruimte van Adobe Target.
->* AEM moet in Adobe Target worden geïntegreerd volgens de instructies in [Integreren met Adobe Target](/help/sites-administering/target.md).
 
 U kunt exporteren [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md), gemaakt in Adobe Experience Manager (AEM), naar Adobe Target (Target). Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om, ervaringen op schaal te testen en te personaliseren.
 
@@ -51,7 +27,13 @@ Er zijn drie formaatopties beschikbaar voor het uitvoeren van een Fragment van d
 * JSON: ondersteuning voor levering van inhoud zonder kop
 * HTML en JSON
 
-AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit doet u met de Adobe Developer-console, waarvoor AEM [geïntegreerd met Adobe Target met IMS](/help/sites-administering/integration-target-ims.md).
+AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit doet u met de Adobe Developer-console, waarvoor AEM [geïntegreerd met Adobe Target met IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+>[!NOTE]
+>
+>[IMS-integratie is nu geconfigureerd met S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>
+>Eerdere configuraties zijn gemaakt met [JWT-referenties die nu zijn afgekeurd in de Adobe Developer-console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -71,14 +53,17 @@ AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte
 
 ## Vereisten {#prerequisites}
 
->[!CAUTION]
->
->Voor bepaalde functies op deze pagina is de toepassing van AEM 6.5.3.0 vereist.
-
 Er zijn verschillende acties vereist:
 
-1. U moet [AEM integreren met Adobe Target met IMS](/help/sites-administering/integration-target-ims.md).
-2. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie zodat moet u [Vorm AEM Verbinding Externalzer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) op de auteurinstantie om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
+1. U moet [AEM integreren met Adobe Target met IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+   >[!NOTE]
+   >
+   >[IMS-integratie is nu geconfigureerd met S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >
+   >Eerdere configuraties zijn gemaakt met [JWT-referenties die nu zijn afgekeurd in de Adobe Developer-console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+1. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie zodat moet u [Vorm AEM Verbinding Externalzer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) op de auteurinstantie om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
 
    >[!NOTE]
    >

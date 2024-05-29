@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7400'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 1%
    + [Toewijzing van aangepaste gebruikersgroepen in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Ondersteuning voor zelfde site-cookie](/help/sites-administering/same-site-cookie-support.md)
    + [JWT Credentials Deprection in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [IMS-integratie instellen voor AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Authoring {#authoring}
       + Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
@@ -226,7 +227,6 @@ ht-degree: 1%
          + [Koppeling bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
          + [Componentgegevens toewijzen aan Adobe Analytics-eigenschappen](/help/sites-administering/adobeanalytics-mapping.md)
          + [Video bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-         + [Integratie met Adobe Analytics met IMS](/help/sites-administering/integration-analytics-ims.md)
          + [HTTP2 Veelgestelde vragen over inhoud](/help/sites-administering/scene7-http2faq.md)
          + [Problemen met Adobe Campaign-integratie oplossen](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [SharePoint-connectorlicenties, copyrightberichten en Disclaimers](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 1%
          + [Integratie met de Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
          + [De integratie met Adobe Target handmatig configureren](/help/sites-administering/target-configuring.md)
          + [Vereisten voor integratie met Adobe Target](/help/sites-administering/target-requirements.md)
-         + [Integratie met Adobe Target met IMS](/help/sites-administering/integration-target-ims.md)
          + [Adobe-classificaties](/help/sites-administering/adobeanalytics-classifications.md)
          + [Oplossingsintegratie](/help/sites-administering/integration.md)
          + [Exporteren van ervaringsfragmenten naar Adobe Target](/help/sites-administering/experience-fragments-target.md)

@@ -4,9 +4,9 @@ description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren 
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 109a608db0724050f6e505394da9138855ba992e
+source-git-commit: d8d821a64b39b312168733126de8929c04016ff1
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '884'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,9 @@ Een configuratie OAuth vereist de volgende eerste vereisten:
    * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
-### OAuth voor gebruikers op locatie configureren {#steps-config-oauth-onprem}
+### OAuth-configuratie voor de bestaande AMS- en On prem-gebruikers {#steps-config-oauth-onprem}
+
+De onderstaande stappen kunnen door de systeembeheerder worden uitgevoerd. De klant van AMS kan de vertegenwoordiger van de Adobe bereiken of een steunkaartje indienen na [supportproces](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 1. Hieronder vindt u eigenschappen toevoegen of bijwerken in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -52,14 +54,17 @@ Een configuratie OAuth vereist de volgende eerste vereisten:
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Werk de `auth.token.provider.client.id` met identiteitskaart van de Cliënt van de nieuwe configuratie OAuth.
    * Bijwerken `auth.access.token.request` tot `"https://ims-na1.adobelogin.com/ims/token/v3"`
-2. De naam van het bestand wijzigen in `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
-3. Voer de onderstaande stappen uit in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+1. De naam van het bestand wijzigen in `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+1. Voer de onderstaande stappen uit in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
    * Werk het bezit auth.ims.client.geheime met het Geheim van de Cliënt van de nieuwe integratie OAuth bij.
    * De naam van het bestand wijzigen in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
-4. Sla alle wijzigingen op in de ontwikkelingsconsole van de inhoudsopslagplaats, bijvoorbeeld CRXDE.
-5. Navigeren naar `/system/console/configMgr` en vervang de OSGi-configuratie vanuit `.<randomnumber>` tot `-<randomnumber>`.
-6. Verwijder de oude OSGi-configuratie voor `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
-7. Start de console opnieuw.
+1. Sla alle wijzigingen op in de ontwikkelingsconsole van de inhoudsopslagplaats, bijvoorbeeld CRXDE.
+<!--
+1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
+1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
+-->
+1. In `System/console/configMgr`, verwijder de oude configuraties voor `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` en Toegang tot naam van provider van token `adobe-ims-similaritysearch`.
+1. Start de console opnieuw.
 
 ## De configuratie valideren {#validate-the-configuration}
 

@@ -5,7 +5,7 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
+source-git-commit: ddd411a5dde57cf66cbcb458578b0aa32139b649
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 0%
@@ -50,7 +50,7 @@ U kloont de [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en ov
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Voeg de noodzakelijke configuraties OSGi toe zodat kunt u uw AEM instantie met een instantie van Adobe Commerce verbinden of de configuraties toevoegen aan het onlangs gecreeerd project.
@@ -392,7 +392,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Open een nieuw browservenster en navigeer naar AEM **OSGi-console** > **Status** > **Verkoopmodellen**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -471,7 +471,7 @@ Op dit punt wordt de logica weergegeven voor het weergeven van de **Eco Friendly
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Vernieuwen naar de **Introductiepagina van Venia** om [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) waarbij de producttaser is toegevoegd.

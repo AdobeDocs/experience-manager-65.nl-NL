@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
+source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1545'
 ht-degree: 0%
 
 ---
@@ -199,4 +199,5 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor
 >
 >* [Overzicht en hoe u slimme tags kunt trainen](enhanced-smart-tags.md)
 >* [Slimme tags configureren](config-smart-tagging.md)
+>* [Problemen met slimme tags voor OAuth-gebruikersgegevens oplossen](config-oauth.md)
 >* [Videozelfstudie over slimme tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

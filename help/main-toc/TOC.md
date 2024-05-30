@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
+source-git-commit: 671d35086981b5967c28b399050aef0e070ecddf
 workflow-type: tm+mt
-source-wordcount: '7400'
+source-wordcount: '7406'
 ht-degree: 1%
 
 ---
@@ -351,6 +351,7 @@ ht-degree: 1%
       + [3D-elementen voorvertonen](/help/assets/previewing-3d-assets.md)
       + [Mapelementen en -verzamelingen controleren](/help/assets/bulk-approval.md)
       + [Verbeterde slimme tags](/help/assets/enhanced-smart-tags.md)
+      + [Problemen met slimme tags voor OAuth-gebruikersgegevens oplossen](/help/assets/config-oauth.md)
       + [Activiteitsstroom in tijdlijn](/help/assets/activity-stream.md)
       + [Proceselementen](/help/assets/assets-workflow.md)
       + [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md)

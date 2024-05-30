@@ -6,7 +6,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
+source-git-commit: 17a8dc53d77dfbc3dc3a4dc2f2176eaba3e1cb7c
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 16%
@@ -337,6 +337,6 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 
 >[!MORELIKETHIS]
 >
->* [Problemen met slimme tags voor OAuth-gebruikersgegevens oplossen](#config-smart-tagging.md)
 >* [Overzicht en hoe u slimme tags kunt trainen](enhanced-smart-tags.md)
+>* [Problemen met slimme tags voor OAuth-gebruikersgegevens oplossen](config-smart-tagging.md)
 >* [Videozelfstudie over slimme tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

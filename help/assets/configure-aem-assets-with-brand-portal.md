@@ -10,9 +10,9 @@ role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: ba60ff06097b7f88ad64dda8ad1575bb88743588
+source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '661'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,12 @@ AEM Assets is geconfigureerd met Brand Portal via Adobe Developer Console, die e
 >
 >De Adobe adviseert dat u de bestaande oudere configuratie van de Gateway OAuth blijft gebruiken. Als u problemen met de oudere configuratie van de Gateway OAuth ontmoet, schrap de bestaande configuratie en creeer een configuratie door middel van de Console van Adobe Developer.
 
-In deze Help worden de volgende twee gebruiksgevallen beschreven:
+<!--
+This help describes the following two use-cases:
 
-* [Nieuwe configuratie](#configure-new-integration-65): Als u een nieuwe Brand Portal-gebruiker bent en uw AEM Assets Author-instantie wilt configureren met Brand Portal, kunt u een configuratie maken met de Adobe Developer Console.
-* [Upgradeconfiguratie](#upgrade-integration-65): Als u een bestaande Brand Portal-gebruiker bent met configuratie op een verouderde OAuth Gateway, verwijdert u de bestaande configuratie en maakt u een configuratie via Adobe Developer Console.
-
+* [New configuration](#configure-new-integration-65): If you are a new Brand Portal user and want to configure your AEM Assets Author instance with Brand Portal, you can create a configuration by way of the Adobe Developer Console. 
+* [Upgrade configuration](#upgrade-integration-65): If you are an existing Brand Portal user having configuration on legacy OAuth Gateway, delete the existing configuration and create a configuration by way of Adobe Developer Console.
+-->
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
 
 * Adobe Experience Manager- en AEM-pakketten installeren, configureren en beheren.
@@ -112,7 +113,7 @@ Voor het configureren van AEM Assets met Brand Portal zijn configuraties vereist
 
 Voer de volgende stappen in de vermelde reeks uit als u AEM Assets voor het eerst met Brand Portal configureert:
 
-### Configuratie maken {#create-new-configuration}
+### Een nieuwe configuratie maken {#create-new-configuration}
 
 Voer de volgende stappen in de opgegeven reeks uit om Experience Manager Assets met Brand Portal te configureren.
 

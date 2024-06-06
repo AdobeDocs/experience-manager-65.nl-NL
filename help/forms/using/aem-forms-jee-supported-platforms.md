@@ -8,7 +8,7 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: c49bff425ccbd00480e5b17fa50ca8f25df80d2f
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 0%
@@ -545,6 +545,26 @@ Zie voor aanvullende vereisten:
 - [Systeemvereisten voor AEM Forms op één server bij JEE-implementatie](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
 - [Systeemvereisten voor een geclusterde AEM Forms bij JEE-implementatie](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
+### Adobe Acrobat en Adobe Reader {#adobe-acrobat-and-adobe-reader}
+
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Acrobat en Adobe Reader (basis)</strong></p> </th>
+   <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Acrobat 2020 (klassieke track)</td>
+   <td>Versie 20.004.3006 of hoger<br /> </td>
+  </tr>
+
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>De Acrobat DC productfamilie introduceert twee sporen voor zowel Acrobat als Reader die verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Zie voor meer informatie en een vergelijking van de twee sporen [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+
 ## Ondersteunde clients voor AEM Forms op JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
@@ -591,26 +611,6 @@ Zie voor aanvullende vereisten:
 - Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
 - Beheerdersrechten voor de installatie van Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime
-
-### Adobe Acrobat en Adobe Reader {#adobe-acrobat-and-adobe-reader}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Acrobat en Adobe Reader (basis)</strong></p> </th>
-   <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Acrobat 2020 (klassieke track)</td>
-   <td>Versie 20.004.3006 of hoger<br /> </td>
-  </tr>
-
-</tbody>
-</table>
-
->[!NOTE]
->
->De Acrobat DC productfamilie introduceert twee sporen voor zowel Acrobat als Reader die verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Zie voor meer informatie en een vergelijking van de twee sporen [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### Browsers {#browsers}
 

@@ -10,16 +10,16 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6192'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager met MongoDB{#aem-with-mongodb}
 
-Dit artikel heeft tot doel de kennis over taken en overwegingen te verbeteren die nodig zijn om AEM (Adobe Experience Manager) met MongoDB succesvol te implementeren.
+Dit artikel heeft tot doel de kennis over de taken en overwegingen te verbeteren die nodig zijn om AEM (Adobe Experience Manager) met MongoDB succesvol te implementeren.
 
 Voor meer informatie over implementatie raadpleegt u de [Implementeren en onderhouden](/help/sites-deploying/deploy.md) van de documentatie.
 
@@ -62,7 +62,7 @@ Gevirtualiseerde omgevingen worden ondersteund op voorwaarde dat er goede commun
 
 Er zijn specifieke vereisten voor de I/O-capaciteit van de MongoDB-instanties die moeten worden beheerd door het team dat de gevirtualiseerde omgeving beheert. Als het project een cloudimplementatie gebruikt, zoals Amazon Web Services, moeten instanties zijn voorzien van voldoende I/O-capaciteit en consistentie om de MongoDB-instanties te ondersteunen. Anders functioneren de MongoDB-processen en de Oak-opslagplaats onbetrouwbaar en onregelmatig.
 
-In de gevirtualiseerde omgevingen heeft MongoDB specifieke I/O- en VM-configuraties nodig om ervoor te zorgen dat de opslagengine van MongoDB niet wordt verlamd door het beleid voor VMWare-brontoewijzing. Een geslaagde implementatie zorgt ervoor dat er geen barrières zijn tussen de verschillende teams en iedereen is aangemeld om de vereiste prestaties te leveren.
+In gevirtualiseerde omgevingen heeft MongoDB specifieke I/O- en VM-configuraties nodig om ervoor te zorgen dat de opslagengine van MongoDB niet wordt belemmerd door VMWare-beleid voor brontoewijzing. Een geslaagde implementatie zorgt ervoor dat er geen barrières zijn tussen de verschillende teams en iedereen is aangemeld om de vereiste prestaties te leveren.
 
 ## Overwegingen voor hardware {#hardware-considerations}
 
@@ -113,7 +113,7 @@ Het vereist een agent die op de instantie MongoDB wordt geïnstalleerd die met d
 * Een controleagent die de `mongod` instantie,
 * Een back-upagent die geplande back-ups van de gegevens kan uitvoeren.
 
-Hoewel het gebruik van Cloud Manager voor onderhoudsautomatisering van een MongoDB-cluster veel routinetaken eenvoudiger maakt, is dit niet nodig en wordt het ook niet gebruikt voor back-up. Wanneer u Cloud Manager kiest om te controleren, is bewaking echter vereist.
+Hoewel het gebruik van Cloud Manager voor onderhoudsautomatisering van een MongoDB-cluster veel routinetaken eenvoudiger maakt, is dit niet nodig en wordt het ook niet gebruikt voor back-up. Wanneer u een Cloud Manager kiest om te controleren, is bewaking echter vereist.
 
 Voor meer informatie over MongoDB Cloud Manager raadpleegt u de [MongoDB-documentatie](https://docs.cloud.mongodb.com/).
 
@@ -188,7 +188,7 @@ Als de plaatsing binaire getallen in het gegevensbestand opslaat, maken zij deel
 De cachegrootte in megabytes. Deze ruimte wordt verdeeld over verschillende caches die worden gebruikt in het dialoogvenster `DocumentNodeStore`. De standaardwaarde is 256 MB. Eak-leesprestaties profiteren echter van een grotere cache.
 
 * `blobCacheSize`
-Veelgebruikte blobs kunnen door AEM in de cache worden geplaatst om te voorkomen dat ze opnieuw uit de gegevensopslag worden opgehaald. Dit heeft meer invloed op de prestaties, met name wanneer u lobs opslaat in de MongoDB-database. Alle gegevensopslagsystemen op bestandssysteem profiteren van de schijfcache op besturingssysteemniveau.
+Veelgebruikte blobs kunnen door AEM in de cache worden geplaatst om te voorkomen dat ze opnieuw uit de gegevensopslag worden opgehaald. Dit heeft meer invloed op de prestaties, vooral wanneer u klodders opslaat in de MongoDB-database. Alle gegevensopslagsystemen op bestandssysteem profiteren van de schijfcache op besturingssysteemniveau.
 
 #### Configuratie gegevensopslag {#data-store-configuration}
 
@@ -241,7 +241,7 @@ MongoDB wordt uitgevoerd op verschillende besturingssystemen, waaronder een groo
 
 #### Linux® {#linux}
 
-* Schakel transparante kleurtonen en foutopsporing uit. Zie [Instellingen voor transparante grote pagina&#39;s](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) voor meer informatie .
+* Schakel de transparante kleurtonen en foutopsporing uit. Zie [Instellingen voor transparante grote pagina&#39;s](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) voor meer informatie .
 * [De voorinstellingen aanpassen](https://docs.mongodb.com/manual/administration/production-notes/#readahead) op de apparaten die uw gegevensbestanddossiers opslaan zodat u uw gebruiksgeval past.
 
    * Als de werkset van de MMAPv1-opslagengine groter is dan het beschikbare RAM en het toegangspatroon van het document willekeurig is, kunt u het aflezen naar 32 of 16 verkleinen. U kunt verschillende instellingen evalueren, zodat u een optimale waarde kunt vinden voor een zo groot mogelijk geheugen en een lager aantal paginafouten.
@@ -340,9 +340,9 @@ Beginnend in 3.4, gebruikt het interne geheime voorgeheugen WiredTiger, door geb
 
 Standaard gebruikt WiredTiger de compressie van het Snapy-blok voor alle verzamelingen en de compressie van het voorvoegsel voor alle indexen. De standaardwaarden voor compressie kunnen globaal worden geconfigureerd en kunnen ook per verzameling en per index worden ingesteld tijdens het maken van verzamelingen en indexen.
 
-De verschillende vertegenwoordiging wordt gebruikt voor gegevens in het interne geheime voorgeheugen WiredTiger tegenover het formaat op schijf:
+De verschillende vertegenwoordiging wordt gebruikt voor gegevens in het interne geheime voorgeheugen WiredTiger tegenover in het on-disk formaat:
 
-* De gegevens in het bestandssysteemcachegeheugen zijn gelijk aan de schijfindeling, inclusief de voordelen van compressie voor gegevensbestanden. De cache van het bestandssysteem wordt door het besturingssysteem gebruikt om de I/O van de schijf te verminderen.
+* De gegevens in de bestandssysteemcache zijn gelijk aan de schijfindeling, inclusief de voordelen van compressie voor gegevensbestanden. De cache van het bestandssysteem wordt door het besturingssysteem gebruikt om de I/O van de schijf te verminderen.
 
 De indexen die in het interne geheime voorgeheugen WiredTiger worden geladen hebben een verschillende gegevensvertegenwoordiging aan het formaat op schijf, maar kunnen nog voordeel van de compressie van de indexprefix nemen om het gebruik van RAM te verminderen.
 
@@ -392,7 +392,7 @@ Alleen op de knooppunten uitvoeren. Mongod wordt alleen uitgevoerd op de opgegev
 Alleen uitvoeren op vermelde CPU&#39;s (cores). Mongod voert alleen de CPU&#39;s uit die worden vermeld en gebruikt alleen het geheugen dat beschikbaar is voor die CPU&#39;s.
 
 * `--localalloc`
-Wijs altijd geheugen op de huidige knoop toe, maar gebruik alle knopen de draadlooppas. Als één draad toewijzing uitvoert, dan slechts wordt het geheugen beschikbaar aan die cpu gebruikt.
+Wijs altijd geheugen op de huidige knoop toe, maar gebruik alle knopen de draadlooppas. Als één draad een toewijzing uitvoert, dan slechts wordt het geheugen beschikbaar aan die cpu gebruikt.
 
 * `--preferred=<node>`
 Geeft de voorkeur aan toewijzing aan een knooppunt, maar valt terug naar andere knooppunten als het voorkeurknooppunt vol is. U kunt een relatieve notatie gebruiken voor het definiëren van een knooppunt. Ook, lopen de draden op alle knopen.
@@ -409,7 +409,7 @@ Externe bestandssystemen, zoals NFS, worden niet aanbevolen voor interne gegeven
 
 #### Vooruit lezen {#read-ahead}
 
-Tune Read forward zodat wanneer een pagina binnen gebruikend een willekeurig gelezen wordt gepagineerd, de onnodige blokken niet van schijf worden gelezen. Dergelijke resultaten betekenen een onnodig gebruik van I/O-bandbreedte.
+Tune Read forward zodat wanneer een pagina binnen gebruikend een willekeurig gelezen wordt gepagineerd, de onnodige blokken niet van de schijf worden gelezen. Dergelijke resultaten betekenen een onnodig gebruik van I/O-bandbreedte.
 
 ### Linux®-vereisten {#linux-requirements}
 
@@ -567,13 +567,13 @@ Als u WMWare ESX gebruikt om uw gevirtualiseerde milieu&#39;s te beheren en op t
 1. Geheugenballon uitschakelen
 1. Het geheugen vooraf toewijzen en reserveren voor de virtuele machines die de MongoDB-databases hosten
 1. Gebruik I/O-controle van opslag om voldoende I/O toe te wijzen aan `mongod` proces.
-1. Garandeer CPU-bronnen van de computers die als host fungeren voor MongoDB door de instelling [CPU-reservering](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
+1. Garandeer de CPU-bronnen van de computers die als host fungeren voor MongoDB door [CPU-reservering](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. Overweeg om ParaVirtual I/O-stuurprogramma&#39;s te gebruiken. Zie [knowledgebase, artikel](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
+1. Overweeg om ParaVirtual I/O-stuurprogramma&#39;s te gebruiken. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Services {#amazon-web-services}
 
-Raadpleeg voor meer informatie over het instellen van MongoDB met Amazon Web Services de [AWS-integratie configureren](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) artikel op de MongoDB-website.
+Raadpleeg voor meer informatie over het instellen van MongoDB met Amazon Web Services de [AWS-integratie configureren](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) artikel op de MongoDB-website.
 
 ## MongoDB beveiligen voor implementatie {#securing-mongodb-before-deployment}
 
@@ -595,7 +595,7 @@ Omdat de Dispatcher geen status heeft, kan deze eenvoudig horizontaal worden ges
 
 Wanneer AEM zonder Dispatcher wordt uitgevoerd, moeten SSL-beëindiging en taakverdeling door een andere toepassing worden uitgevoerd. Dit is vereist omdat sessies de affiniteit moeten hebben met de AEM instantie waarop ze zijn gemaakt, een concept dat sticky connections wordt genoemd. De reden hiervoor is dat updates van de inhoud minimale vertraging vertonen.
 
-Controleer de [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor meer informatie over hoe te om het te vormen.
+Controleer de [Documentatie van Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) voor meer informatie over hoe te om het te vormen.
 
 ### Aanvullende configuratie {#additional-configuration}
 

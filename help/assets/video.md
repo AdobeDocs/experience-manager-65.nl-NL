@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+source-git-commit: aeb243421ed2212625e85c3d5b76322e4c33f1d2
 workflow-type: tm+mt
-source-wordcount: '11053'
+source-wordcount: '11041'
 ht-degree: 1%
 
 ---
@@ -452,7 +452,7 @@ Tegelijkertijd maakt u een Adobe Support-case om DASH in te schakelen voor uw ac
 >
 >Alle video&#39;s die u hebt geüpload *voor* het inschakelen van ondersteuning voor meerdere bijschriften en audiotracks op uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
-**U kunt DASH, meerdere bijschriften en ondersteuning voor meerdere audiotracks inschakelen voor uw Dynamic Media-account:**
+**U kunt DASH, ondersteuning voor meerdere bijschriften en audiotracks inschakelen voor uw Dynamic Media-account:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -597,13 +597,13 @@ Gebruik de [Referentiehandleiding voor Adobe Dynamic Media Viewers](https://expe
 
 Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere ondertitels en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
-![Het tabblad Ondertitels en audiotracks in Dynamic Media en een tabel met geüploade .VTT-ondertitelingsbestanden en geüploade .MP3-audiotrackbestanden voor een video.](assets-dm/msma-subtitle-audiotracks-tab.png)
+![Het tabblad Bijschriften en audiotracks in Dynamic Media en een tabel met geüploade .VTT-bijschriftbestanden en geüploade .MP3-audiotrackbestanden voor een video.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
 Een aantal van de gebruiksscenario&#39;s die u kunt gebruiken voor het toevoegen van meerdere bijschriften en audiotracks aan uw primaire video zijn onder meer:
 
 | Type | Hoofdletters gebruiken |
 |--- |--- |
-| **Ondertitels** | Ondersteuning voor meerdere talen |
+| **Bijschriften** | Ondersteuning voor meerdere talen |
 |  | Beschrijvende tekst voor toegankelijkheid |
 | **Audiotracks** | Ondersteuning voor meerdere talen |
 |  | Commentaartracks |
@@ -621,7 +621,7 @@ Voordat u meerdere bijschriften en audiotracks aan uw video toevoegt, moet u con
 * A [Dynamic Media-videoprofiel wordt toegepast op de map waarin uw video&#39;s worden opgenomen](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 * [Meerdere bijschriften en audiotracks zijn ingeschakeld voor uw Dynamic Media-account](#enable-dash).
 
-Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen WebVTT en Adobe VTT. Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
+Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen WebVTT en Adobe VTT. Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
 
 >[!IMPORTANT]
 >
@@ -634,31 +634,31 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
    ![Geselecteerd video-element met vinkje boven de miniatuurafbeelding van de video en Weergave-eigenschappen gemarkeerd op de werkbalk.](assets-dm/msma-selectedasset-propertiesbutton.png)*Geselecteerd video-element in de kaartweergave.*
-1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Captions & Audio Tracks]** tab.
 
    >[!TIP]
-   >Als u het geneesmiddel niet ziet **[!UICONTROL Subtitles & Audio Tracks]** tab, betekent dit een van de volgende twee dingen:
+   >Als u het geneesmiddel niet ziet **[!UICONTROL Captions & Audio Tracks]** tab, betekent dit een van de volgende twee dingen:
    >
    >* Aan de map waarin de geselecteerde video zich bevindt, is geen videoprofiel toegewezen. In dat geval, zie [Een videoprofiel toepassen op de map](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
    >* Of de video moet opnieuw worden verwerkt door Dynamic Media. In dat geval, zie [Elementen in een map opnieuw verwerken](/help/assets/processing-profiles.md#reprocessing-assets).
    >
    >Als u een van de bovenstaande taken hebt uitgevoerd, gaat u terug naar deze stappen.
 
-   ![Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen.](assets-dm/msma-audiotracks.png)*Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van de video.*
+   ![Het tabblad Bijschriften en Audiotracks op de pagina Eigenschappen.](assets-dm/msma-audiotracks.png)*Het tabblad Bijschriften en audiotracks op de pagina Eigenschappen van de video.*
 
-1. (Optioneel) Ga als volgt te werk om een of meer ondertitelingsbestanden (of bijschriftbestanden) aan een video toe te voegen:
-   * Selecteren **[!UICONTROL Upload Subtitles]**.
+1. (Optioneel) Ga als volgt te werk om een of meer bijschriftbestanden aan een video toe te voegen:
+   * Selecteren **[!UICONTROL Upload Captions]**.
    * Navigeer naar en selecteer een of meer .vtt-bestanden (videoteksttracks) en open deze.
-   * Als ondertitels zichtbaar moeten zijn op de mediaspeler, kunt u *moet* vereiste details (metagegevens) toevoegen over *elk* ondertitelingsbestand dat u hebt geüpload. Selecteer het potloodpictogram rechts van de bestandsnaam van een ondertitel. In de **Ondertitel bewerken** voert u de volgende vereiste gegevens over het bestand in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk ondertitelbestand dat u hebt geüpload:
+   * Als bijschriften zichtbaar moeten zijn op de mediaspeler, kunt u *moet* vereiste details (metagegevens) toevoegen over *elk* Het bijschriftbestand dat u hebt geüpload. Selecteer het potloodpictogram rechts van de bestandsnaam van een bijschrift. In de **Bijschrift bewerken** voert u de volgende vereiste gegevens over het bestand in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk bijschriftbestand dat u hebt geüpload:
 
-     | Metagegevens ondertitel | Beschrijving |
+     | Metagegevens bijschrift | Beschrijving |
      |--- |--- |
-     | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra ondertitelingsbestanden en audiotrackbestanden. |
-     | Taal | Selecteer de taal van de ondertitel. |
-     | Type | Selecteer het type ondertitel dat u gebruikt.<br>**Ondertitel** - De ondertiteltekst die wordt weergegeven met de video die het dialoogvenster vertaalt of transcripeert.<br>**Bijschrift** - De bijschrifttekst bevat ook achtergrondgeluiden, sprekersdifferentiatie en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, waardoor de inhoud toegankelijker wordt voor doven of slechthorenden. |
-     | Label | De tekst die voor de naam van de ondertitel wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld: `English (CC)`. |
+     | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra bijschriftbestanden en audiotrackbestanden. |
+     | Taal | Selecteer de taal van het bijschrift. |
+     | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Bijschrift** - De bijschrifttekst die wordt weergegeven bij de video waarmee het dialoogvenster wordt getransformeerd of getransformeerd.<br>**Bijschrift** - De bijschrifttekst bevat ook achtergrondgeluiden, sprekersdifferentiatie en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, waardoor de inhoud toegankelijker wordt voor doven of slechthorenden. |
+     | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een bijschrifttrack correspondeert. Bijvoorbeeld: `English (CC)`. |
 
-     U kunt metagegevens van ondertitels indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
+     U kunt de metagegevens van bijschriften indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
 1. (Optioneel) Ga als volgt te werk om een of meer audiotracks aan een video toe te voegen:
    * Selecteren **[!UICONTROL Upload Audio Tracks]**.
@@ -667,10 +667,10 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
 
      | Metagegevens audiotrack | Beschrijving |
      |--- |--- |
-     | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra audiotrackbestanden of ondertitelingsbestanden. |
+     | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra audiotrackbestanden of bijschriftbestanden. |
      | Taal | Selecteer de taal van de audiotrack. |
      | Type | Selecteer het type audiotrack dat u gebruikt.<br>**Origineel** - De audiotrack die oorspronkelijk aan de video was gekoppeld en die werd weergegeven als `[Original]` op het etiket met `English` taal die standaard is geselecteerd. while **[!UICONTROL Label]** en **[!UICONTROL Language]** kan worden gewijzigd in het dialoogvenster **[!UICONTROL Edit Audio Track]** de oorspronkelijke waarden als de primaire video opnieuw wordt verwerkt.<br>**Standaard** - Een add-on audiotrack voor een andere taal dan het origineel.<br>**Audiobeschrijving** - Een audiotrack die ook een beschrijvende beschrijving van niet-verbale handelingen en bewegingen in de video bevat, waardoor inhoud toegankelijker wordt voor personen met een visuele handicap. |
-     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld: `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original|` standaard. |
+     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld: `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original]` standaard. |
 
      U kunt deze metagegevens van de audiotrack indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
@@ -680,25 +680,25 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
    >
    >Op basis van de cacheinstellingen van uw instantie kan het verwerken van metagegevens enkele minuten duren voordat dit effect wordt weerspiegeld in de voorvertoning en in gepubliceerde URL&#39;s.
 
-1. (Optioneel) Als u **[!UICONTROL Save & Close]** in de vorige stap in plaats van **[!UICONTROL Save]** kunt u nog steeds de verwerkingsstatus van de geüploade bestanden bekijken. Zie [De levenscyclusstatus van geüploade ondertitels en audiotrackbestanden weergeven](#lifecycle-status-video).
-1. (Optioneel) Geef een voorvertoning van de video weer voordat u gaat publiceren om ervoor te zorgen dat de ondertitels en audio naar behoren werken. Zie [Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks](#preview-video-audio-subtitle)
+1. (Optioneel) Als u **[!UICONTROL Save & Close]** in de vorige stap in plaats van **[!UICONTROL Save]** kunt u nog steeds de verwerkingsstatus van de geüploade bestanden bekijken. Zie [De levenscyclusstatus van geüploade bijschriften en audiotrackbestanden weergeven](#lifecycle-status-video).
+1. (Optioneel) Geef een voorvertoning van de video weer voordat u de video publiceert, zodat de bijschriften en audio naar behoren werken. Zie [Een voorvertoning weergeven van een video met meerdere bijschriften en audiotracks](#preview-video-audio-subtitle)
 1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
-#### Subkop- en audiotrackbestanden toevoegen aan een video die al is gepubliceerd
+#### Bijschrift- en audiotrackbestanden toevoegen aan een video die al is gepubliceerd
 
-Wanneer u aanvullende ondertitelingsbestanden of audiotrackbestanden uploadt naar een video die al is gepubliceerd, betekent dit dat deze bestanden een `Processed` status nadat ze zijn voorbereid, na uploaden. Op dat moment kunt u de video voorvertonen in Dynamic Media om de nieuw geüploade bestanden te bekijken of te horen.
+Wanneer u aanvullende bijschriftbestanden of audiotrackbestanden uploadt naar een video die al is gepubliceerd, betekent dit dat deze bestanden een `Processed` status nadat ze zijn voorbereid, na uploaden. Op dat moment kunt u de video voorvertonen in Dynamic Media om de nieuw geüploade bestanden te bekijken of te horen.
 
-Na de voorvertoning moet u echter *publish* de video opnieuw voor de nieuw toegevoegde ondertitel of audiospoordossiers te publiceren. Na publicatie worden de ondertitels of audio beschikbaar via de openbare Dynamic Media-URL.
+Na de voorvertoning moet u echter *publish* de video opnieuw voor de nieuw toegevoegde dossiers van de titel of van het audiospoor te publiceren. Na publicatie worden de bijschriften of audio beschikbaar via de openbare Dynamic Media-URL.
 
 >[!NOTE]
 >
 >Op basis van de cacheinstellingen van uw instantie kunnen updates van metagegevens enkele minuten duren voordat deze worden weergegeven in de voorvertoning en in gepubliceerde URL&#39;s.
 
-In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publiceren, wordt door het uploaden van extra ondertitels of audiobestanden direct een publicatie van de video gestart na het uploaden van ondertitels of audiobestanden.
+In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publiceren, wordt door het uploaden van extra bijschrift- of audiobestanden direct een publicatie van de video gestart na het uploaden van bijschrift- of audiobestanden.
 
 >[!CAUTION]
 >
->Wanneer u ondertitelingsbestanden of audiobestanden uploadt naar een video die gepubliceerd of niet gepubliceerd is, worden de bestanden verwijderd als u [*herverwerken*](/help/assets/processing-profiles.md#reprocessing-assets) de video. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de ondertitelingsbestanden en audiotrackbestanden opnieuw uploaden naar de video.
+>Wanneer u bijschriftbestanden of audiobestanden uploadt naar een video die gepubliceerd of niet gepubliceerd is, worden de bestanden verwijderd als u [*herverwerken*](/help/assets/processing-profiles.md#reprocessing-assets) de video. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de bijschriftbestanden en audiotrackbestanden opnieuw uploaden naar de video.
 
 #### Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie
 
@@ -709,36 +709,36 @@ Meerdere bijschriftwijzigingen hebben voorrang op een bijschrift dat is toegevoe
 **Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie:**
 
 1. Upload het bijschriftbestand dat al als een modifier aan de video is toegevoegd, zodat u het bestand expliciet kunt beheren.
-1. U kunt desgewenst aanvullende bestanden voor ondertitels en bijschriften uploaden.
+1. U kunt desgewenst aanvullende bijschriftbestanden uploaden.
 1. Publiceer de video op de gebruikelijke wijze.
 De bestaande URL met de optie caption kan nu meerdere bijschriften laden.
 
-### De levenscyclusstatus van geüploade ondertitels en audiotrackbestanden weergeven{#lifecycle-status-video}
+### De levenscyclusstatus van geüploade bijschriften en audiotrackbestanden weergeven{#lifecycle-status-video}
 
-U kunt de levenscyclusstatus van elke ondertitel of audiotrackbestand dat naar uw primaire video is geüpload, bekijken via het **Ondertitels en audiotracks** tabblad van **Eigenschappen**.
+U kunt de levenscyclusstatus bekijken van elk bijschrift of audiotrackbestand dat vanuit het **Bijschriften en audiotracks** tabblad van **Eigenschappen**.
 
 **De levenscyclusstatus van een video weergeven:**
 
 1. Navigeer naar het video-element waarvan u de levenscyclusstatus wilt weergeven.
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
-1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab. Noteer in de kolom Status de status van elk ondertitelings- of audiobestand.
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Captions & Audio Tracks]** tab. Noteer in de kolom Status de status van elk bijschrift of audiobestand.
 
-| Status van ondertitel of audiotrack | Beschrijving |
+| Status bijschrift of audiotrack | Beschrijving |
 | --- | --- |
-| Verwerking | Wanneer een nieuwe ondertitel of audiospoordossier wordt toegevoegd en opgeslagen, gaat het in een &quot;Verwerkingsstaat&quot;. Dynamic Media verwerkt het bestand door het streamingmanifest aan de primaire video te koppelen. |
-| Verwerkt | Nadat de verwerking is voltooid, wordt de ondertitel of het audiotrackbestand, of de oorspronkelijke audiotrack die is gekoppeld aan de primaire video, weergegeven in de status &quot;Verwerkt&quot;. U kunt een voorvertoning weergeven van ondertitels en audiotrackbestanden die als &quot;Verwerkt&quot; worden weergegeven *voor* u publiceert de video live. |
+| Verwerking | Wanneer een nieuw bijschrift of audiotrackbestand wordt toegevoegd en opgeslagen, verandert dit in de status &quot;Verwerking&quot;. Dynamic Media verwerkt het bestand door het streamingmanifest aan de primaire video te koppelen. |
+| Verwerkt | Nadat de verwerking is voltooid, wordt het bijschrift of audiotrackbestand, of de oorspronkelijke audiotrack die is gekoppeld aan de primaire video, weergegeven in de status &quot;Verwerkt&quot;. U kunt een voorvertoning weergeven van bijschriften en audiotrackbestanden die als &quot;Verwerkt&quot; worden weergegeven *voor* u publiceert de video live. |
 | Gepubliceerd | De status &quot;Gepubliceerd&quot; vertegenwoordigt een vergelijkbare status als &quot;Gepubliceerd&quot; voor een primaire video. Elementen worden gepubliceerd wanneer de primaire video wordt gepubliceerd en zijn beschikbaar via de openbare URL van Dynamic Media. |
-| Mislukt | De status &quot;Mislukt&quot; betekent dat de verwerking van een ondertitel of audiotrackbestand niet is voltooid. Verwijder de ondertitel of het audiotrackbestand en upload het opnieuw. |
-| Ongepubliceerd | Wanneer een gepubliceerde primaire video niet expliciet wordt gepubliceerd, worden de bestanden in de subtitel of audiotrack die u aan de video hebt toegevoegd, ook niet gepubliceerd. |
+| Mislukt | De status &quot;Mislukt&quot; betekent dat de verwerking van een bijschrift of audiotrackbestand niet is voltooid. Verwijder het bijschrift of het audiotrackbestand en upload het opnieuw. |
+| Ongepubliceerd | Wanneer een gepubliceerde primaire video niet expliciet wordt gepubliceerd, worden alle bijschriften of audiotrackbestanden die u aan de video hebt toegevoegd, ook niet gepubliceerd. |
 
-![De statuskolom is gemarkeerd voor de velden Ondertitels en Audiotracks.](assets-dm/msma-lifecycle-status.png)*Levenscyclusstatus van elke geüploade ondertitel en audiotrackbestand.*
+![De statuskolom die is gemarkeerd voor de velden Bijschriften en Audiotracks.](assets-dm/msma-lifecycle-status.png)*Levenscyclusstatus van elk geüpload bijschrift en audiotrackbestand.*
 
 ### De standaardaudio instellen voor een video met meerdere audiotracks
 
 Standaard wordt de oorspronkelijke audio van een video ingesteld als de standaardaudio die moet worden afgespeeld.
 
-Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardaudio die moet worden afgespeeld nadat een video in de viewer is geladen. In de gebruikersinterface van Eigenschappen, onder **Ondertitels en audiotracks** de `Default` label wordt rechts van het audiotrackbestand toegepast voor het afspelen van video.
+Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardaudio die moet worden afgespeeld nadat een video in de viewer is geladen. In de gebruikersinterface van Eigenschappen, onder **Bijschriften en audiotracks** de `Default` label wordt rechts van het audiotrackbestand toegepast voor het afspelen van video.
 
 >[!NOTE]
 >
@@ -752,7 +752,7 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
-1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Onder de **Audiotracks** Selecteer het audiotrackbestand dat u wilt instellen als de standaardnaam van de video.
 1. Selecteren **[!UICONTROL Set as default]**.
 In de **Instellen als standaard** dialoogvenster selecteert u **[!UICONTROL Replace]**.
@@ -762,9 +762,9 @@ In de **Instellen als standaard** dialoogvenster selecteert u **[!UICONTROL Repl
 1. Selecteer in de rechterbovenhoek de optie **[!UICONTROL Save & Close]**.
 1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
-### Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks{#preview-video-audio-subtitle}
+### Een voorvertoning weergeven van een video met meerdere bijschriften en audiotracks{#preview-video-audio-subtitle}
 
-Nadat ondertitelingsbestanden en audiotrackbestanden naar een video zijn geüpload en zijn verwerkt, kunt u de Dynamic Media-videoviewer (of desgewenst andere viewertypen) gebruiken om een voorvertoning van alle verschillende tracks weer te geven. Door een voorvertoning weer te geven, kunt u zien hoe uw video er uitziet en hoe de video eruit ziet en klinkt. Zo weet u zeker dat de video zich naar behoren gedraagt.
+Nadat bijschriftbestanden en audiotrackbestanden naar een video zijn geüpload en zijn verwerkt, kunt u de Dynamic Media-videoviewer (of andere viewertypen indien gewenst) gebruiken om een voorvertoning van alle verschillende tracks weer te geven. Door een voorvertoning weer te geven, kunt u zien hoe uw video er uitziet en hoe de video eruit ziet en klinkt. Zo weet u zeker dat de video zich naar behoren gedraagt.
 
 Wanneer u tevreden bent met de video, kunt u [publiceren](publishing-dynamicmedia-assets.md) met een van de volgende methoden.
 
@@ -774,11 +774,11 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
 >[!NOTE]
 >
->Het standaardtabblad voor voorvertoningen van Experience Managers geeft geen meerdere ondertitels en audiotracks weer. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
+>Het standaardtabblad voor voorvertoningen van Experience Managers bevat geen bijschrift en audiotracks. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
 
-**Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks:**
+**Een voorvertoning weergeven van een video met meerdere bijschriften en audiotracks:**
 
-1. In **[!UICONTROL Assets]** Navigeer naar een bestaande video waaraan u meerdere ondertitels en audiotracks hebt toegevoegd.
+1. In **[!UICONTROL Assets]** Navigeer naar een bestaande video waaraan u meerdere bijschriften en audiotracks hebt toegevoegd.
 1. Klik op het video-element zodat u dit kunt openen in de voorvertoningsmodus.
 1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
 
@@ -788,49 +788,49 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
    ![Selectie van de videoviewer in de vervolgkeuzelijst Viewers.](assets-dm/msma-dmviewerselected.png)
 
-1. Selecteer bij de rechterbenedenhoek, links van het volumepictogram, het pictogram van de spraakballon en selecteer vervolgens de audio of ondertitel die u wilt horen, of zien of beide. Desgewenst kunt u onder Ondertitels de optie **[!UICONTROL Off]** geen ondertitels of bijschriften weergeven.
+1. Selecteer bij de rechterbenedenhoek, links van het volumepictogram, het pictogram van de spraakballon en selecteer vervolgens de audio of het bijschrift die u wilt horen, of zien of beide. U kunt desgewenst onder Bijschriften de optie **[!UICONTROL Off]** om geen bijschriften weer te geven.
 
-   ![De pop-uplijst Audio en ondertitels in de videoviewer.](assets-dm/msma-selectaudiosubtitle.png)*Simulatie van een gebruiker die de audio en ondertitel voor het afspelen van video selecteert.*
+   ![De pop-uplijst Audio en Bijschriften in de videoviewer.](assets-dm/msma-selectaudiosubtitle.png)*Simulatie van een gebruiker die de audio en het bijschrift voor het afspelen van video selecteert.*
 
 1. Selecteer de video&#39;s om het afspelen te starten **[!UICONTROL Play]** knop.
 Noteer de **[!UICONTROL URL]** en **[!UICONTROL Embed]** in de linkerbenedenhoek. Gebruik deze knoppen om [de URL van de video koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md) of aan [de video insluiten op een webpagina](/help/assets/embed-code.md), respectievelijk.
 1. Selecteer in de rechterbovenhoek van de voorvertoningspagina de optie **[!UICONTROL Close]**.
 
-### Ondertitel- of audiotrackbestanden verwijderen uit een video
+### Bijschrift- of audiotrackbestanden verwijderen uit een video
 
-U kunt ondertitels of audiospoordossiers van een video schrappen. Verwijderen van gepubliceerde ondertitels of audiotrackbestanden wordt automatisch weerspiegeld in de gepubliceerde URL van de video.
+U kunt bijschrift- of audiotrackbestanden verwijderen uit een video. Het verwijderen van gepubliceerde bijschriften of audiotrackbestanden wordt automatisch weerspiegeld in de gepubliceerde URL van de video.
 
 De oorspronkelijke audiotrack die uit een primaire video is geëxtraheerd, kan niet worden verwijderd.
 
-**U kunt als volgt ondertitels of audiotrackbestanden uit een video verwijderen:**
+**Bijschrift- of audiotrackbestanden verwijderen uit een video:**
 
 1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
-1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Voer een van de volgende handelingen uit:
 
-   * Ondertitels—Onder de **Ondertitels** , selecteert u een of meer ondertitelingsbestanden die u uit de video wilt verwijderen en selecteert u vervolgens **[!UICONTROL Delete]**.
+   * Bijschriften—Onder de **Bijschriften** , selecteert u een of meer bijschriftbestanden die u uit de video wilt verwijderen en selecteert u vervolgens **[!UICONTROL Delete]**.
    * Audiotracks—Onder de **Audiotracks** , selecteert u een of meer audiotrackbestanden die u uit de video wilt verwijderen en selecteert u **[!UICONTROL Delete]**.
 
 1. Selecteer in het dialoogvenster Verwijderen **[!UICONTROL OK]**.
 1. Publiceer de video.
 
-### Ondertitel- of audiotrackbestanden downloaden die naar een video zijn geüpload
+### Bijschrift- of audiotrackbestanden downloaden die naar een video zijn geüpload
 
-U kunt een of meer ondertitels of audiotrackbestanden downloaden die u voor gebruik met een video hebt geüpload. U kunt alle geselecteerde bestanden downloaden als ZIP-bestand of een aparte downloadmap maken voor elk bestand.
+U kunt een of meer bijschrift- of audiotrackbestanden downloaden die u hebt geüpload voor gebruik met een video. U kunt alle geselecteerde bestanden downloaden als ZIP-bestand of een aparte downloadmap maken voor elk bestand.
 
 De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet worden gedownload.
 
-**U kunt als volgt ondertitels of audiotrackbestanden downloaden van een video:**
+**Bijschrift- of audiotrackbestanden downloaden van een video:**
 
 1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
-1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Voer een van de volgende handelingen uit:
 
-   * Ondertitels—Onder de **Ondertitels** Selecteer een of meer ondertitelingsbestanden die u van de video wilt downloaden en selecteer vervolgens **[!UICONTROL Download]**.
+   * Bijschriften—Onder de **Bijschriften** , selecteert u een of meer bijschriftbestanden die u van de video wilt downloaden en selecteert u vervolgens **[!UICONTROL Download]**.
    * Audiotracks—Onder de **Audiotracks** Selecteer een of meer audiotrackbestanden die u van de video wilt downloaden en selecteer vervolgens **[!UICONTROL Download]**.
 
 1. Stel in het dialoogvenster Downloaden de volgende opties in:
@@ -838,7 +838,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
    | Optie | Beschrijving |
    |--- |--- |
    | Opslaan als | Gebruik de standaardbestandsnaam die u in het tekstveld Opslaan als hebt opgegeven of geef uw eigen naam op. |
-   | Een aparte map maken voor elk element | Maak een map voor elk ondertitelbestand of audiotrackbestand dat u hebt geselecteerd om te downloaden. |
+   | Een aparte map maken voor elk element | Maak een map voor elk bijschriftbestand of audiotrackbestand dat u hebt geselecteerd om te downloaden. |
    | E-mail | Gebruik uw standaard e-mailprogramma om het .zip-bestand naar een opgegeven e-mailadres te verzenden. |
    | Assets | Hiermee geeft u het aantal bestanden op dat u downloadt en de gecombineerde totale grootte van alle geselecteerde bestanden. Als u deze optie uitschakelt, wordt het dialoogvenster **[!UICONTROL Download]** , zodat u geen bestanden kunt downloaden. |
 1. Selecteren **[!UICONTROL Download]**.
@@ -849,13 +849,13 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 
 
-## Gesloten bijschriften of ondertitels toevoegen aan een video {#adding-captions-to-video}
+## Gesloten bijschriften toevoegen aan een video {#adding-captions-to-video}
 
 >[!IMPORTANT]
 >
 >Adobe beveelt aan [mogelijkheid voor meerdere bijschriften en audiotracks inschakelen](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
-U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
+U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Bijschriften in vreemde talen worden weergegeven zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
 Ondertiteling met gesloten deuren maakt ook een betere toegankelijkheid mogelijk voor doven of slechthorenden.
 
@@ -869,15 +869,15 @@ Dynamic Media converteert bijschriftbestanden naar de indeling JSON (JavaScript 
 
 Zie [Statische (niet-grafische) inhoud serveren](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in de *Help bij Dynamic Media Image Serving and Rendering API* voor meer informatie over het gebruik van de functie JSON in een URL.
 
-**Om gesloten titels of ondertitels aan een video toe te voegen:**
+**Gesloten bijschriften toevoegen aan een video:**
 
-1. U kunt een toepassing of service van derden gebruiken om een ondertitelingsbestand of ondertitelingsbestand voor video te maken.
+1. U kunt een toepassing of service van derden gebruiken om uw videobijschriftbestand te maken.
 
    Zorg ervoor dat het bestand dat u maakt, voldoet aan de WebVTT-standaard (Web Video Text Tracks). De bestandsnaamextensie voor ondertiteling is .vtt. U kunt meer informatie over de WebVTT ondertitelingsnorm leren.
 
    Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/).
 
-   Er zijn veel websites die zowel gratis als premiumtools en -services bieden die u kunt gebruiken voor het schrijven van WebVTT-ondertitelingsbestanden buiten Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Er zijn vele websites die zowel gratis als premiumtools en -services bieden die u kunt gebruiken om WebVTT-bijschriften/bijschriftbestanden buiten Dynamic Media te maken. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -889,7 +889,7 @@ Zie [Statische (niet-grafische) inhoud serveren](https://experienceleague.adobe.
 
    >[!NOTE]
    >
-   >Voor algemene ondersteuning van videoondertitels in meerdere talen, vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u voor elke taal die u wilt ondersteunen, een oproep doet.
+   >Voor algemene ondersteuning van videobijschriften in meerdere talen, vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u elke taal die u wilt ondersteunen, aanroept.
 
    Over het algemeen wilt u het VTT-bestand van het bijschrift dezelfde naam geven als het videobestand en dit bestand toevoegen met de landinstelling van de taal, zoals -EN, -FR of -DE. Op deze manier kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
 

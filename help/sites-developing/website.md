@@ -10,7 +10,7 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 1%
@@ -477,7 +477,7 @@ Het onderwerp opnemen in de component ContentPage:
 
 #### Pagina&#39;s verbeteren met ondertitels {#enhancing-pages-with-subtitles}
 
-De component Pagina definieert eigenschappen waarmee u ondertitels voor pagina&#39;s kunt opgeven. Voeg ondertitels toe die informatie over de pagina-inhoud bevatten.
+De component Pagina definieert eigenschappen waarmee u bijschriften voor pagina&#39;s kunt opgeven. Voeg bijschriften toe die informatie over de pagina-inhoud bevatten.
 
 1. Open in uw browser de **Producten** pagina.
 1. Op de Sidekick **Pagina** tabblad, klikt u op **Pagina-eigenschappen**.

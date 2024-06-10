@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3027'
 ht-degree: 0%
 
 ---
@@ -219,6 +220,12 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 
 * In de redacteur van Malplaatjes, het tekstkoord *`No video available.`* is niet gelokaliseerd. (SITES-13190)
 * Tekenreeks na activering of deactivering van een gebruiker wordt niet gelokaliseerd in **Gereedschappen** > **Beveiliging** > **Gebruikers** > *any_user_name* > **Activeren** > **OK** en selecteert u *any_user_name* > **Deactiveren** > **OK**. (NPR-41737)
+
+#### Eik {#foundation-oak-6521}
+
+* Prestatiegregressiereparatie - Vermijd bereikquery&#39;s op vergelijkbare voorwaarden. (OAK-9481)
+
+* De nieuwe eik-versie is 1.2.20.
 
 #### Platform{#foundation-platform-6521}
 
@@ -484,4 +491,3 @@ Deze websites zijn alleen beschikbaar voor klanten. Als u een klant bent en toeg
 >* [[!DNL Experience Manager] productpagina](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 Documentatie](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Abonneren op Adobe Priority-productupdates](https://www.adobe.com/subscription/priority-product-update.html)
-

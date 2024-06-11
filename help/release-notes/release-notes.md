@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
+source-git-commit: 004cf5b30fa3bd108a45a8b6322f2ee3d3085ee5
 workflow-type: tm+mt
 source-wordcount: '3027'
 ht-degree: 0%
@@ -224,7 +224,6 @@ Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande l
 #### Eik {#foundation-oak-6521}
 
 * Prestatiegregressiereparatie - Vermijd bereikquery&#39;s op vergelijkbare voorwaarden. (OAK-9481)
-
 * De nieuwe eik-versie is 1.2.20.
 
 #### Platform{#foundation-platform-6521}

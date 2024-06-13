@@ -5,7 +5,7 @@ topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
+source-git-commit: 7b0f8222408d43a298fa2036020963721cfbd1f9
 workflow-type: tm+mt
 source-wordcount: '5503'
 ht-degree: 0%
@@ -78,8 +78,8 @@ Voordat u de documentservices van AEM Forms gaat installeren en configureren, mo
 
 >[!NOTE]
 >
->* In Microsoft® Windows ondersteunt PDF Generator WebKit, Acrobat WebCapture en PhantomJS conversieroutes om HTML-bestanden om te zetten in PDF-documenten.
->* Op op UNIX-Gebaseerde werkende systemen, steunt de PDF Generator WebKit en PhantomJS omzettingsroutes om HTML dossiers in de documenten van PDF om te zetten.
+>* In Microsoft® Windows biedt PDF Generator ondersteuning voor WebKit, Acrobat WebCapture en WebToPDF-conversieroutes voor het converteren van HTML-bestanden naar PDF-documenten.
+>* Op UNIX-gebaseerde werkende systemen, steunt de PDF Generator WebKit en WebToPDF omzettingsroutes om HTML dossiers in documenten van PDF om te zetten.
 >
 
 ### Extra eisen voor het op UNIX gebaseerde besturingssysteem {#extrarequirements}
@@ -168,7 +168,7 @@ Als u een op UNIX gebaseerd besturingssysteem gebruikt, installeert u de volgend
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(alleen PDF Generator)** De dienst van de PDF Generator steunt WebKit en routes PhantomJS om de dossiers van HTML in de documenten van PDF om te zetten. Om omzetting voor route PhantomJS toe te laten, installeer hieronder vermelde bibliotheken met 64 bits. Over het algemeen zijn deze bibliotheken al geïnstalleerd. Als er een bibliotheek ontbreekt, installeert u deze handmatig:
+* **(alleen PDF Generator)** De dienst van de PDF Generator steunt WebKit en WebToPDF routes om HTML dossiers in documenten van PDF om te zetten. Als u conversie voor WebToPDF-route wilt inschakelen, installeert u de onderstaande 64-bits bibliotheken. Over het algemeen zijn deze bibliotheken al geïnstalleerd. Als er een bibliotheek ontbreekt, installeert u deze handmatig:
 
    * linux-gate.so.1
    * libz.so.1
@@ -336,7 +336,7 @@ Als u wilt voorkomen dat de fout wordt ontvangen, kunt u de rapportage van foute
 
 ### (Alleen Windows) Conversie van HTML naar PDF configureren {#configure-html-to-pdf-conversion}
 
-De dienst van de PDF Generator verstrekt WebKit, WebCapture, en routes PhantomJS of methodes om de dossiers van HTML in de documenten van PDF om te zetten. Als u in Windows conversie wilt inschakelen voor WebKit- en Acrobat WebCapture-routes, kopieert u het Unicode-font naar de map %windir%\fonts.
+De dienst van de PDF Generator verstrekt WebKit, WebCapture, en WebToPDF routes of methodes om HTML dossiers in de documenten van PDF om te zetten. Als u in Windows conversie wilt inschakelen voor WebKit- en Acrobat WebCapture-routes, kopieert u het Unicode-font naar de map %windir%\fonts.
 
 >[!NOTE]
 >
@@ -344,7 +344,7 @@ De dienst van de PDF Generator verstrekt WebKit, WebCapture, en routes PhantomJS
 
 ### (Alleen op UNIX gebaseerde platforms) Extra configuraties voor conversie van HTML naar PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
-Op op UNIX-Gebaseerde platforms, steunt de dienst van de PDF Generator WebKit en routes PhantomJS om de dossiers van HTML in de documenten van PDF om te zetten. Om HTML aan PDF omzetting toe te laten, voer de volgende configuraties uit, toepasselijk op uw aangewezen omzettingsroute:
+Op UNIX-Gebaseerde platforms, steunt de dienst van de PDF Generator WebKit en WebToPDF routes om de dossiers van HTML naar de documenten van PDF om te zetten. Om HTML aan PDF omzetting toe te laten, voer de volgende configuraties uit, toepasselijk op uw aangewezen omzettingsroute:
 
 ### (Alleen op UNIX gebaseerde platforms) Ondersteuning voor Unicode-lettertypen inschakelen (alleen WebKit) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -485,7 +485,7 @@ In Microsoft® Windows gebruikt de service PDF Generator Adobe Acrobat om onders
 
 ### (Alleen Windows) Vorm primaire route voor conversie van HTML naar PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-De dienst van de PDF Generator verstrekt veelvoudige routes om de dossiers van HTML in de documenten van PDF om te zetten: Webkit, Acrobat WebCapture (Vensters slechts), en PhantomJS. Adobe raadt u aan de PhantomJS-route te gebruiken, omdat deze de mogelijkheid heeft om dynamische inhoud af te handelen en geen afhankelijkheden heeft met 32-bits bibliotheken of geen extra lettertypen nodig heeft. Ook, vereist de route PhantomJS sudo of worteltoegang niet om de omzetting in werking te stellen.
+De dienst van de PDF Generator verstrekt veelvoudige routes om de dossiers van HTML naar PDF- documenten om te zetten: Webkit, Acrobat WebCapture (Vensters slechts), en WebToPDF. Adobe raadt u aan de WebToPDF-route te gebruiken, omdat deze de mogelijkheid biedt om dynamische inhoud af te handelen en geen afhankelijkheden heeft met 32-bits bibliotheken of geen extra lettertypen nodig heeft. Bovendien vereist WebToPDF-route geen sudo- of hoofdtoegang om de conversie uit te voeren.
 
 De standaard primaire route voor HTML aan PDF omzetting is Webkit. De omzettingsroute wijzigen:
 
@@ -583,7 +583,7 @@ Nadat u de invoegtoepassing AEM Forms en het Microsoft®-project op uw computer 
 
 1. Navigeren naar `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
-1. Voer de volgende opdracht uit om alle bibliotheken weer te geven die PhantomJS nodig heeft voor conversie van HTML naar PDF.
+1. Voer de volgende opdracht uit om alle bibliotheken weer te geven die WebToPDF nodig heeft voor conversie van HTML naar PDF.
 
    `ldd phantomjs`
 
@@ -691,11 +691,11 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeem](#SR
 
 * Zorg ervoor dat de folders van doopvonten in PDF Generator config UI worden toegevoegd.
 
-**Linux en Solaris (PhantomJS conversieroute)**
+**Linux en Solaris (WebToPDF-conversieroute)**
 
-* Zorg ervoor dat er een 32-bits bibliotheek beschikbaar is (libicudata.so.42) voor HTMLToPDF-conversie op basis van Webkit en 64-bits (libicudata.so.42 libs zijn beschikbaar voor HTMLToPDF-conversie op basis van PhantomJS.
+* Zorg ervoor dat er een 32-bits bibliotheek beschikbaar is (libicudata.so.42) voor HTMLToPDF-conversie op basis van Webkit en 64-bits (libicudata.so.42 libs zijn beschikbaar voor HTMLToPDF-conversie op basis van WebToPDF.
 
-* Voer de volgende opdracht uit om ontbrekende bibliotheken voor fantoomjs weer te geven:
+* Voer de volgende opdracht uit om ontbrekende bibliotheken voor WebToPDF weer te geven:
 
   ```
   ldd phantomjs | grep not

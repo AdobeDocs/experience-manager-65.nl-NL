@@ -1,17 +1,16 @@
 ---
 title: Document met record genereren voor adaptieve formulieren
-description: Verklaart hoe u een malplaatje voor een document van verslag (DoR) voor adaptieve vormen kunt produceren.
+description: Verklaart hoe u document van verslag (DoR) voor adaptieve vormen kunt produceren.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
 workflow-type: tm+mt
-source-wordcount: '4119'
+source-wordcount: '4155'
 ht-degree: 0%
 
 ---
@@ -315,47 +314,52 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 1. Selecteren ![dortab](/help/forms/using/assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het document met records. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het recorddocument weergegeven onder de vervolgkeuzelijst Sjabloon.
 
-   ![brandingsjabloon](/help/forms/using/assets/brandingtemplate.png)
+   ![brandingsjabloon](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Als u een aangepaste sjabloon wilt selecteren, bladert u naar een geselecteerde XDP op uw AEM Forms-server. Als u een sjabloon wilt gebruiken die nog niet op uw AEM Forms-server staat, moet u de XDP eerst uploaden naar uw AEM Forms-server.
 
-1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele of alle volgende eigenschappen weergegeven op het tabblad Document van record. Geef deze op de juiste manier op:
+### Eigenschappen basispagina (#master-page-properties)
 
-   * **Logoafbeelding**: U kunt kiezen of u het logo wilt gebruiken in het adaptieve formulier, een afbeelding kiezen in DAM of een afbeelding uploaden vanaf uw computer.
-   * **Formuliertitel**
-   * **Koptekst**
-   * **Label voor afwijzing**
-   * **Disclaimer**
-   * **Disclaimtekst**
-   * **Accentkleur**: De kleur waarin koptekst en scheidingslijnen worden gerenderd in het document of de record PDF
-   * **Lettertypefamilie**: Lettertypefamilie van de tekst in het document van record PDF
-   * **Geef voor de componenten Selectievakje en Keuzerondje alleen de geselecteerde waarden weer**
-   * **Scheidingsteken voor meerdere geselecteerde waarden**
-   * **Formulierobjecten opnemen die niet aan het gegevensmodel zijn gebonden**
-   * **Verborgen velden uitsluiten van het recorddocument**
-   * **Beschrijving van deelvensters verbergen**
+Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden sommige of alle volgende eigenschappen van de basispagina weergegeven op het tabblad Document van record, zoals in de bovenstaande afbeelding wordt getoond. Geef deze op de juiste manier op:
 
-   Als de aangepaste XDP-sjabloon die u selecteert meerdere stramienpagina&#39;s bevat, worden de eigenschappen voor deze pagina&#39;s weergegeven in het dialoogvenster **[!UICONTROL content]** van de **[!UICONTROL Document of Record]** tab.
+* **Logoafbeelding**: U kunt kiezen of u het logo wilt gebruiken in het adaptieve formulier, een afbeelding kiezen in DAM of een afbeelding uploaden vanaf uw computer.
+* **Formuliertitel**
+* **Koptekst**
+* **Label voor afwijzing**
+* **Disclaimer**
+* **Disclaimtekst**
 
-   ![Eigenschappen basispagina](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   Tot de eigenschappen van de basispagina behoren Logo Image, Header Text, Form Title, Disclaimer Label en Disclaimer Text. U kunt adaptieve formulier- of XDP-sjablooneigenschappen toepassen op het Document of Record. AEM Forms past de sjablooneigenschappen standaard toe op het Document of Record. U kunt ook aangepaste waarden definiëren voor de eigenschappen van de basispagina. Ga voor informatie over het toepassen van meerdere stramienpagina&#39;s in een document met records naar [Meerdere stramienpagina&#39;s toepassen op een document met records](#apply-multiple-master-pages-dor).
+  Als de aangepaste XDP-sjabloon die u selecteert meerdere stramienpagina&#39;s bevat, worden de eigenschappen voor deze pagina&#39;s weergegeven in het dialoogvenster **[!UICONTROL content]** van de **[!UICONTROL Document of Record]** tab.
 
-   >[!NOTE]
-   >
-   >Als u een adaptieve formuliersjabloon gebruikt die is gemaakt met een versie van Designer die ouder is dan versie 6.3, zodat de eigenschappen Accent Color en Font Family werken, moet u ervoor zorgen dat het volgende aanwezig is in uw adaptieve formuliersjabloon onder het basissubformulier:
+  ![Eigenschappen basispagina](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  Tot de eigenschappen van de basispagina behoren Logo Image, Header Text, Form Title, Disclaimer Label en Disclaimer Text. U kunt adaptieve formulier- of XDP-sjablooneigenschappen toepassen op het Document of Record. AEM Forms past de sjablooneigenschappen standaard toe op het Document of Record. U kunt ook aangepaste waarden definiëren voor de eigenschappen van de basispagina. Ga voor informatie over het toepassen van meerdere stramienpagina&#39;s in een document met records naar [Meerdere stramienpagina&#39;s toepassen op een document met records](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >Als u een adaptieve formuliersjabloon gebruikt die is gemaakt met een versie van Designer die ouder is dan versie 6.3, zodat de eigenschappen Accent Color en Font Family werken, moet u ervoor zorgen dat het volgende aanwezig is in uw adaptieve formuliersjabloon onder het basissubformulier:
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. Selecteer Gereed om de wijzigingen in de branding op te slaan.
 
@@ -413,8 +417,23 @@ Voor informatie over het toepassen van pagina-einden en het toepassen van meerde
 
 **Instellingen voor formulierniveau**
 
-* **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van het op schema gebaseerde adaptieve formulier in het document of record opgenomen. Standaard is dit waar.
-* **Velden uitsluiten van DoR indien verborgen:** De eigenschap instellen om de verborgen velden uit te sluiten [!UICONTROL Document of Record] bij het indienen van het formulier. Wanneer u [Revalidate op server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), worden de verborgen velden opnieuw gecompileerd voordat deze worden uitgesloten van de [!UICONTROL Document of Record].
+* **[!UICONTROL BASIC]**
+   * **Template:** U kunt de sjabloon Standaard of Aangepast selecteren.
+     ![alt-tekst](image.png)
+   * **Accentkleur:** U kunt de sjabloonkleur van het dialoogvenster [!UICONTROL Document of Record].
+   * **Fontfamilie:** Selecteer een lettertype voor het dialoogvenster [!UICONTROL Document of Record] teksten.
+   * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van het op schema gebaseerde adaptieve formulier opgenomen in [!UICONTROL Document of Record]. Standaard is dit waar.
+   * **Velden uitsluiten van DoR indien verborgen:** De eigenschap instellen om de verborgen velden uit te sluiten [!UICONTROL Document of Record] bij het indienen van het formulier. Wanneer u [Revalidate op server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), worden de verborgen velden opnieuw gecompileerd voordat deze worden uitgesloten van de [!UICONTROL Document of Record]
+* **[!UICONTROL FORM FIELD PROPERTIES]**
+   * Als u de optie inschakelt **Geef voor de component Selectievakje en Keuzerondje alleen de geselecteerde waarde(n) weer**, wordt alleen DoR-uitvoer gegenereerd met een of meer geselecteerde waarden.
+   * U kunt Scheidingsteken selecteren voor meerdere geselecteerde waarden of u kunt een ander scheidingsteken kiezen.
+   * Uitlijning opties
+      * verticaal
+      * Horizontaal
+      * Hetzelfde als adaptief formulier
+     >[!NOTE]
+     > De verticale en horizontale uitlijning is alleen van toepassing op keuzerondjes en selectievakje
+* **[!UICONTROL MASTER PAGE PROPERTIES]** Klik voor meer informatie over [Eigenschappen van basispagina](#master-page-properties-master-page-properties)
 
 ## Een pagina-einde toepassen in een document van record {#apply-page-breaks-in-dor}
 

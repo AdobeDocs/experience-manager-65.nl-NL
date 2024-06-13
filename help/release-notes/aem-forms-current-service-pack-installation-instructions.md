@@ -1,13 +1,12 @@
 ---
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatie-instructies voor OSGi- en JEE-omgeving
-exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+role: User, Admin, Architect, Developer
+source-git-commit: c3fd2b1198c7c856d6d68e9b9cfc711c941e657c
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -18,9 +17,9 @@ ht-degree: 0%
 
 | Product | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versie | 6.5.20,0 |
+| Versie | 6.5.21.0. |
 | Type | Service Pack-release |
-| Datum | 29 februari 2024 |
+| Datum | 29 mei 2024 |
 | URL downloaden | [Nieuwste AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -69,9 +68,12 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. De vereiste software downloaden
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+
+* [Fragmentserver](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-* [Fragmentserver](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
 
 +++
 
@@ -137,12 +139,11 @@ Navigeer naar de juiste map en van een shell en type `./aem65_cfp_install.bin`.
 
 +++
 
-+++5. Installeer het serverfragment (AEM Service Pack 6.5.14.0 of eerder)
++++5. Installeer het serverfragment (AEM Service Pack 6.5.14.0 of eerder) (**Verplichte installatie**)
 
 >[!NOTE]
 >
-> * Als u een upgrade uitvoert van **AEM Service Pack 6.5.15.0**, de installatie van de **servlet-fragment** is niet vereist. Voor versies **AEM Service Pack 6.5.14.0** of eerder is het verplicht het servletfragment te installeren.
-> * Het is verplicht om de **servlet-fragment** voor alle toepassingsservers behalve de servers die worden uitgevoerd **JBoss® EAP 7.4.0**.
+> * Als u een upgrade uitvoert van **AEM Service Pack 6.5.15.0**, de installatie van de **servlet-fragment** is niet vereist. Voor versies **AEM Service Pack 6.5.14.0** of eerder, **verplicht te installeren** het servletfragment.
 
 
 U kunt als volgt het serverfragment downloaden en installeren:

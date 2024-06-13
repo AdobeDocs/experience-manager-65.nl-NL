@@ -9,9 +9,9 @@ role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: aa8f8ea6ec3787cd1de76a72fe05f0993c2d6b22
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ AEM 6.5-omgeving biedt de onderstaande thema&#39;s voor op Core Components gebas
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-thema](https://github.com/adobe/aem-forms-theme-easel)
+* [FSI-thema](https://github.com/adobe/aem-forms-theme-fsi)
+* [Thema gezondheidszorg](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Openbaar thema](https://github.com/adobe/aem-forms-theme-public)
+* [Thema voor productie](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Werken met de structuur van de thema&#39;s {#understanding-structure-of-theme}
 
@@ -57,6 +61,8 @@ AEM Forms 6.5 biedt de onderstaande thema&#39;s voor Core Components based Adapt
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-thema](https://github.com/adobe/aem-forms-theme-easel)
+* [Openbaar thema](https://github.com/adobe/aem-forms-theme-public)
+* [Thema voor productie](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 U kunt [al deze thema&#39;s aanpassen om een thema te maken](#customize-a-theme-core-components).
 

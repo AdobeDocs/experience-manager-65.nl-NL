@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 371d325287c9d3d11d154c3121f001dad3f3b986
+source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3796'
 ht-degree: 0%
 
 ---
@@ -47,12 +47,12 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * Verbeteringen in de regeleditor in AEM Forms:
    * Ondersteuning voor de implementatie van geneste voorwaarden met `When-then-else` functionaliteit.
-   * Valideren of opnieuw instellen, deelvensters en formulieren, waaronder velden.
+   * Valideer of stel panelen en formulieren, met inbegrip van gebieden opnieuw in.
    * Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen de aangepaste functies.
 * AutoTag-API voor toegankelijkheid van PDF: AEM Forms op OSGi ondersteunt nu de nieuwe AutoTag-API om de PDF voor toegankelijkheidsnormen te verbeteren door codes toe te voegen: alinea&#39;s en lijsten. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
 * 16-bits PNG-ondersteuning: de ImageToPDF-service van PDF Generator ondersteunt nu de conversie van PNG-bestanden met 16-bits kleurdiepte.
-* Artefacten toepassen op afzonderlijke tekstblokken in XDPs: Een nieuwe eigenschap wordt geïntroduceerd in de Ontwerper van Forms die gebruikers toestaat om montages op individuele tekstblokken in XDP dossiers te vormen om de elementen te controleren die als artefacten in de resulterende PDF, zoals kopballen en footers worden behandeld, om hen voor ondersteunende technologieën toegankelijk te maken. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
-* AEM Forms Designer is gecertificeerd met `GB18030:2022` standaard. Met deze certificering ondersteunt Forms Designer nu Chinese Unicode-tekenset waarmee Chinese tekens kunnen worden ingevoerd in alle bewerkbare velden en dialoogvensters.
+* Artefacten toepassen op afzonderlijke tekstblokken in XDP&#39;s: met Forms Designer kunnen gebruikers nu instellingen configureren voor afzonderlijke tekstblokken in XDP-bestanden. Hierdoor kunt u de elementen beheren die in de resulterende PDF als artefacten worden behandeld. Deze elementen, zoals kop- en voetteksten, zijn toegankelijk voor ondersteunende hulpmiddelen. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
+* AEM Forms Designer is gecertificeerd met `GB18030:2022` standaard. Met deze certificering ondersteunt Forms Designer nu de tekenset Chinese Unicode, waarmee u Chinese tekens kunt invoeren in alle bewerkbare velden en dialoogvensters.
 
 
 ### [!DNL Assets]
@@ -183,29 +183,29 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
 #### [!DNL Adaptive Forms] {#forms-6520}
 
 * Wanneer een adaptief formulier van een Adobe Experience Manager-publicatie-instantie naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet in de workflow worden opgeslagen. (FORMS-14209)
-* Wanneer een gebruiker op de knop Afdrukken naar PDF op AEM Forms Service Pack 15 (6.5.15.0) op OSGi klikt, mislukt de validatie aan de clientzijde, wordt dit duidelijk door de foutberichten die worden getoond in het venster van de Console van Developer Tools. (FORMS-14029)
-* Wanneer een gebruiker een formulier indient op AEM 6.5 Forms Service Pack 17 (6.5.17.0) of AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0), werkt de vertaling van &quot;Dank u&quot;berichten niet correct. Hoewel de berichten correct in het woordenboek worden vertaald. (FORMS-13846)
+* Wanneer een gebruiker klikt **Afdrukken naar PDF** op AEM Forms Service Pack 15 (6.5.15.0) op OSGi, ontbreekt de cliënt-zijbevestiging, is het duidelijk door de foutenmeldingen die in het venster van de Console van Hulpmiddelen van de Ontwikkelaar worden getoond. (FORMS-14029)
+* Wanneer een gebruiker een formulier indient op AEM 6.5 Forms Service Pack 17 (6.5.17.0), of Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0), werkt de vertaling van &quot;Dank-u&quot;berichten niet correct. De berichten worden echter correct vertaald in het woordenboek. (FORMS-13846)
 * Wanneer een gebruiker een voorbeeld weergeeft van een formulier met een Date-Picker-component, wordt het veld voor de datumkiezer verkeerd uitgelijnd op de andere formuliervelden. (FORMS-13763)
-* Wanneer een gebruiker van de milieu AEM Forms Service Pack 19 (6.5.19.0) API aanroept om aantallen te formatteren, worden de geformatteerde aantallen niet gericht aan de respectieve Scènes, en de valutasymbolen worden niet correct getoond. Het probleem blijft bestaan ongeacht de parameter Locale die is ingesteld op &quot;de_DE&quot; of &quot;en_US&quot;. (FORMS-13759)
+* Wanneer een gebruiker van de omgeving AEM Forms Service Pack 19 (6.5.19.0) de API aanroept om getallen op te maken, worden de opgemaakte getallen niet uitgelijnd met de respectievelijke landinstellingen. Hierdoor worden de valutatekens niet correct weergegeven. Het probleem blijft bestaan ongeacht de parameter Locale die is ingesteld op &quot;de_DE&quot; of &quot;en_US&quot;. (FORMS-13759)
 * Wanneer een gebruiker op het milieu AEM Forms Service Pack 19 (6.5.19.0) 16 beetje PNGs in PDF gebruikend de dienst van Img2Pdf PDFG omzet, ontbreekt het en kan de dienst van de Beeld van Acrobat &quot;gebruiken. (FORMS-13754)
-* Wanneer een gebruiker in AEM Forms Service Pack 19 (6.5.19.1) een bestaand JobOptions-bestand uploadt in het gedeelte Services / PDF Generator / Adobe PDF Settings van de beheerwebinterface van AEM Forms JEE (adminui), mislukt de upload en wordt een foutbericht weergegeven (FORMS-13597):
+* Wanneer een gebruiker in AEM Forms Service Pack 19 (6.5.19.1) een bestaand JobOptions-bestand uploadt in de sectie Services / PDF Generator / Adobe PDF Settings van de admini of AEM forms JEE, mislukt het uploaden. Het toont ook het volgende foutbericht (FORMS-13597):
   `"An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page."`
-* Wanneer een gebruiker van AEM Forms Service Pack 15 (6.5.15.0) naar AEM Forms Service Pack (6.5.17.0) of AEM Forms Service Pack (6.5.19.0) migreert, dupliceert de sleutel FD, wat ervoor zorgt dat de formulieren niet correct worden vertaald. (FORMS-13461)
-* Wanneer een gebruiker verzenders vóór de auteurs zet die door de plaatsingstopologie op AMS worden gesteund, hangt de Assign voorlegging van de Taak toe/ontbreekt. (FORMS-8010)
+* Wanneer een gebruiker van AEM Forms Service Pack 15 (6.5.15.0) naar AEM Forms Service Pack (6.5.17.0) of AEM Forms Service Pack (6.5.19.0) migreert, dupliceert de sleutel FD, die de formulieren om correct te vertalen veroorzaken. (FORMS-13461)
+* Wanneer een gebruiker verzenders vóór de auteurs zet die door de plaatsingstopologie op AMS worden gesteund, hangt de Assign voorlegging van de Taak of ontbreekt. (FORMS-8010)
 * Oplossingen met betrekking tot toegankelijkheid:
    * Pictogrammen op de pagina &quot;formsanddocuments&quot; zijn nu toegankelijk volgens de ANDI-standaard. (FORMS-13094)
-   * Gebruikers hebben via het toetsenbord toegang tot de werkbalk om inhoud op de bewerkingspagina op te slaan of te bewerken. De werkbalk wordt dan aangepast aan de ANDI-standaard. (FORMS-13102)
+   * Gebruikers hebben toegang tot de werkbalk via het toetsenbord om inhoud op de bewerkingspagina op te slaan of te bewerken. De werkbalk wordt dan aangepast aan de ANDI-standaard. (FORMS-13102)
    * Formuliervelden &quot;Vereist of verplicht&quot; zijn toegankelijk volgens de ANDI-standaard. (FORMS-13097)
 
 * Wanneer een gebruiker een formulier probeert weer te geven op de pagina die wordt geladen, wordt het formulier niet weergegeven. (FORMS-13594)
 * De component van het datuminvoerveld werkt niet correct in de compatibiliteitsmodus van Microsoft Edge in Internet Explorer. (FORMS-13170)
 * Melding via e-mail met bijlage is niet verzonden wanneer de correctie voor [extra-stappen-aan-gebruik-e-mail-met-gehechtheid](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) wordt uitgevoerd op de server. (FORMS-14227)
 * In AEM Forms Workspace op Service Pack 18 (6.5.18.0), wanneer een gebruiker opmerkingen maakt over een geüpload document, wordt het documentbestand beschadigd. (FORMS-13735)
-* Op AEM Forms Service Pack 18 (6.5.18.0) of AEM Forms Service Pack 19 (6.5.19.0) of AEM Forms Service Pack 20 (6.5.20.0), Wanneer een gebruiker naar een adaptief formulier probeert te zoeken vanuit het zijpaneel (door te schakelen) middelentabblad, mislukt de zoekopdracht binnen de bewerkingsinterface. (FORMS-14117)
+* Op AEM Forms Service Pack 18 (6.5.18.0), of Service Pack 19 (6.5.19.0), of Service Pack 20 (6.5.20.0), wanneer een gebruiker probeert om naar een Aangepast Vorm van het zijpaneel te zoeken, ontbreekt het onderzoek. (FORMS-14117)
 * Wanneer een gebruiker een formulier bewerkt dat in het Duits is gemaakt en in het Engels is vertaald, resulteert dit in inconsistente taalweergaven tussen de modi Voorbeeld en Bewerken. Dit zorgt ervoor dat componenten RadioButton en Checkbox in het Engels worden weergegeven in de modus Bewerken, terwijl deze in het Duits correct worden weergegeven in de modus Voorvertoning. (FORMS-13910)
 * Het gereedschap Procesdoorloopproces werkt niet met de fout `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
-* Wanneer een gebruiker een adaptief formulier (AF) probeert in te sluiten in een externe webpagina of op AEM Sites, met behulp van een insluitcontainer, introduceert de adaptieve formulierhulplijncontainer een ARIA-LABEL met de rol=&quot;main&quot; voor het ingesloten formulier. Volgens de richtsnoeren van ARIA mag er slechts één rol=&quot;main&quot; per pagina zijn. Wanneer een gebruiker dus een andere rol=&quot;main&quot; toevoegt voor de hoofdinhoud van zijn pagina, wordt deze gemarkeerd als een toegankelijkheidsprobleem. (FORMS-13538)
-* Op AEM Forms Service Pack 19 (6.5.19.0) behouden de dropdowns met plaatsaanduidingstekst bij gebruik van de vervolgkeuzelijst in een adaptief formulier de waarde id=&quot;emptyValue&quot;. Als een formulier dus meerdere vervolgkeuzelijsten bevat, hebben deze allemaal id=&quot;emptyValue&quot;, wat niet correct is volgens de ARIA-richtlijnen. (FORMS-13370).
+* Wanneer een gebruiker een adaptief formulier (AF) probeert in te sluiten in een externe webpagina of op AEM Sites, met behulp van een insluitcontainer, introduceert de container van de handleiding Adaptief formulier een ARIA-LABEL. Het label heeft de rol=&quot;main&quot; voor het ingesloten formulier. Volgens de richtsnoeren van ARIA mag er slechts één rol=&quot;main&quot; per pagina zijn. Wanneer een gebruiker dus een andere rol=&quot;main&quot; toevoegt voor de hoofdinhoud van zijn pagina, wordt deze gemarkeerd als een toegankelijkheidsprobleem. (FORMS-13538)
+* In AEM Forms Service Pack 19 (6.5.19.0) behouden de drop-down met plaatsaanduidingstekst de waarde van `id="emptyValue"`. Als een formulier daarom meerdere vervolgkeuzelijsten bevat, heeft elk formulier `id="emptyValue"` dat niet correct is volgens de richtsnoeren van de ARIA. (FORMS-13370).
 * Wanneer een gebruiker een Interactieve Mededeling opnieuw laadt nadat het gegeven door XML wordt voorgelegd, komt een lege ruimte tussen het tekstblok in geproduceerde PDF voor. (FORMS-13481)
 * Ontbrekende IPH voor het scherm &quot;voor de stap van de Plaatsing van DSC&quot;terwijl het runnen van ConfigurationManager. (FORMS-10699)
 * Wanneer een gebruiker een nieuw woordenboek toevoegt om een formulier te vertalen met bestaande woordenboeken, worden de oude vertalingen ongeldig. De volgende problemen doen zich voor: (FORMS-13576)
@@ -215,13 +215,13 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
 #### [!DNL Forms Designer] {#forms-desgner-6520}
 
 * Wanneer een gebruiker een nieuwe tabel toevoegt aan een bestaand formulier met AEM Forms Designer in de omgeving van AEM Forms Service Pack 19 (6.5.19.0), loopt de tabel vast. (LC-392/1978)
-* Wanneer een gebruiker een adaptief formulier rendert in een Linux-omgeving, vindt een extra ruimte tussen de veldcomponenten plaats. (LC-3921957)
+* Wanneer een gebruiker een adaptief formulier rendert in een Linux®-omgeving, ontstaat er een extra ruimte tussen de veldcomponenten. (LC-3921957)
 * Wanneer een gebruiker een XTG-bestand met de Output Service converteert naar PostScript-indeling, treedt de fout op:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720)
 
   U lost het probleem als volgt op: controleer of de gegevens speciale tekens bevatten, zoals een ruimte met een breedte nul (0x200b). Indien ja, gebruik dan de markering door de markering toe te voegen `<behaviorOverride>patch-LC3921720:1</behaviorOverride>` in het XCI-bestand zoals aangegeven in [custom_xfa.xci](/help/forms/using/assets/custom_xfa.xci) bestand.
 
-* Wanneer u AEM Forms Service Pack 18 (6.5.18.0) gebruikt in een Linux-omgeving, loopt XMLFM vast op CPU&#39;s die geen AVX /AVX2-instructie met AMD-processors ondersteunen. (LC-3921718)
-* Wanneer een gebruiker een PDF van XDP gebruikend de dienst van de Output van Forms creeert, kan de gebruiker &quot;montages&quot;op &quot;individuele tekstblokken&quot;in XDP niet vormen om te controleren wat &quot;vervormd&quot;is. (LC-3921954)
+* Wanneer u AEM Forms Service Pack 18 (6.5.18.0) gebruikt in een Linux®-omgeving, loopt XMLFM vast op CPU&#39;s die geen AVX / AVX2-instructies ondersteunen die AMD®-processors bevatten. (LC-3921718)
+* Wanneer een gebruiker een PDF van XDP gebruikend de dienst van de Output van Forms creeert, kan de gebruiker &quot;montages&quot;op &quot;individuele tekstblokken&quot;in XDP niet vormen om te controleren wat &quot;vervormd is.&quot; (LC-3921954)
 
 <!--
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.21.0 Forms add-on package release is scheduled for Thursday, June 13, 2024. A list of Forms fixes and enhancements is added to this section post the release.
@@ -285,7 +285,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Eik {#foundation-oak-6521}
 
-* Prestatiegregressiereparatie - Vermijd bereikquery&#39;s op vergelijkbare voorwaarden. (OAK-9481)
+* Prestatiegregressiereparatie - Vermijd bereikquery&#39;s in vergelijkbare omstandigheden. (OAK-9481)
 * De nieuwe eik-versie is 1.2.20.
 
 #### Platform{#foundation-platform-6521}
@@ -300,7 +300,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Vertaling{#foundation-translation-6521}
 
-* Een probleem met AEM 6.5.19 uit-van-de-doos vertaalstatus die niet zoals verwacht voor een lancering bijwerkt. Na het importeren van een vertaald bestand in een vertaaltaak die is gekoppeld aan een AEM-opstart, werd verwacht dat de status zou veranderen in `Approved`. In plaats daarvan is de status gewijzigd in `Ready for Review`, wat niet het verwachte gedrag is. (NPR-41756)
+* Een probleem met AEM 6.5.19 uit-van-de-doos vertaalstatus die niet zoals verwacht voor een lancering bijwerkt. Nadat u een vertaald bestand had geïmporteerd in een vertaaltaak die aan een AEM introductie was gekoppeld, werd de status verondersteld `Approved`. In plaats daarvan werd de status `Ready for Review`, wat niet het verwachte gedrag is. (NPR-41756)
 * Wanneer het creëren van veelvoudige configuraties en het gaan naar de configuraties van de Cloud Servicen van de Vertaling, niet worden alle elementen getoond in UI. Alleen de eerste 40 elementen/map worden weergegeven. Het laden wordt vertraagd, maar er wordt geen inhoud toegevoegd. (NPR-41829)
 * Er treden onjuiste tekens op als de machtigingspagina in de Touch-gebruikersinterface Japans bevat. (NPR-41794)
 * AEM 6.5.14 en 6.5.9 verzenden geen emoji voor vertaling. (CQ-4357000)
@@ -505,9 +505,9 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
 * De volgende fouten en waarschuwingsberichten kunnen tijdens de installatie van [!DNL Experience Manager] 6.5.x.x:
    * &quot;Wanneer de Adobe Target-integratie is geconfigureerd in [!DNL Experience Manager] Als u de standaard-API (IMS-verificatie) van het doel gebruikt, leidt het exporteren van ervaringsfragmenten naar Doel tot onjuiste aanbiedingstypen die worden gemaakt. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/bron &quot;Adobe Target Classic&quot;.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Geen onderhoudsvensters gevonden op `granite/operations/maintenance`.
    * De validatie aan de adaptieve formulierserver-side mislukt wanneer statistische functies zoals SUM, MAX en MIN worden gebruikt (CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` : Geen onderhoudsvensters gevonden op `granite/operations/maintenance`.
    * De hotspot in een interactieve Dynamic Media-afbeelding is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Time-out bij wachten op wijziging register is niet-geregistreerd.
 
@@ -527,7 +527,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, als u dubbele vermeldingen van Geode JARs vindt `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de `<AEM_Forms_Installation>/lib/caching/lib` map (FORMS-14926).
+* Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, als u dubbele vermeldingen van Geode jars vindt `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de `<AEM_Forms_Installation>/lib/caching/lib` map (FORMS-14926).
 
   Voer de volgende stappen uit om het probleem op te lossen:
 

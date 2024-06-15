@@ -4,20 +4,19 @@ description: Met de Adaptive Forms Rule Editor kunt u dynamisch gedrag toevoegen
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7e9b4cc233d4040faf61241b3cbe52d26bfdba1e
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5387'
 ht-degree: 0%
 
 ---
 
 # Regels toevoegen aan een adaptieve Core-component van een formulier {#adaptive-forms-rule-editor}
 
-<span class="preview"> Dit artikel bevat inhoud voor enkele functies die aan de release zijn toegevoegd. Deze pre-releasefuncties zijn alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Het pre-releaseprogramma heeft de volgende kenmerken:
+Dit artikel bevat de nieuwste functies van de Rule Editor voor Adaptive Forms Core Components, die zijn:
 * Steun voor het uitvoeren van genestelde voorwaarden met wanneer-toen functionaliteit
 * Deelvensters en formulieren valideren of opnieuw instellen, inclusief velden
 * Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen aangepaste functies.
-</span>
 
 Met de functie Regeleditor kunnen zakelijke gebruikers en ontwikkelaars van formulieren regels schrijven voor adaptieve formulierobjecten. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van de vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Hierdoor wordt de ervaring met het invullen van formulieren verder gestroomlijnd, zodat u nauwkeurige en snelle informatie krijgt.
 
@@ -39,15 +38,15 @@ Gebruikers toegevoegd aan de `forms-power-users` kunt u de scripts maken en de b
 
 Een regel is een combinatie van handelingen en voorwaarden. In de regeleditor omvatten handelingen zoals verbergen, weergeven, inschakelen, uitschakelen of de waarde van een object in een formulier berekenen. Voorwaarden zijn Booleaanse expressies die worden geëvalueerd door controles en bewerkingen uit te voeren op de status, waarde of eigenschap van een formulierobject. Handelingen worden uitgevoerd op basis van de waarde ( `True` of `False`) geretourneerd door een voorwaarde te evalueren.
 
-De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes, zoals wanneer, tonen, verbergen, toelaten, onbruikbaar maken, Vastgestelde Waarde van, en bevestigt, om u te helpen regels schrijven. Met elk type regel kunt u voorwaarden en handelingen in een regel definiëren. Elk type regel wordt in detail uitgelegd.
+De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes, zoals wanneer, tonen, verbergen, toelaten, onbruikbaar maken, Vastgestelde Waarde van, en bevestigt, om u te helpen regels schrijven. Elk regeltype laat u voorwaarden en acties in een regel bepalen. Het document verklaart verder elk regeltype in detail.
 
-Een regel heeft doorgaans een van de volgende constructies:
+Een regel volgt doorgaans een van de volgende constructies:
 
-**Voorwaarde-actie** In deze constructie definieert een regel eerst een voorwaarde gevolgd door een handeling die moet worden geactiveerd. De constructie is vergelijkbaar met `if-then statement` in de programmeertalen.
+**Voorwaarde-actie** In deze constructie definieert een regel eerst een voorwaarde gevolgd door een handeling om te activeren. De constructie is vergelijkbaar met `if-then statement` die in de programmeertalen.
 
-In de regeleditor **Wanneer** het regeltype dwingt de voorwaarde-actie constructie af.
+In de regeleditor forceert het **type Wanneer-regel** de condition-action-constructie.
 
-**Handeling-voorwaarde** In deze constructie, bepaalt een regel eerst een actie die door voorwaarden voor evaluatie wordt gevolgd teweegbrengen. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
+**Actie-voorwaarde** In deze constructie definieert een regel eerst een actie die een activering moet activeren, gevolgd door de evaluatievoorwaarden. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
 
 Tonen, verbergen, toelaten, onbruikbaar maken, Vastgestelde Waarde van, en bevestigt regeltypes in de Redacteur van de Regel afdwingen `action-condition` construct. Standaard is de alternatieve actie voor Tonen Verbergen en voor Inschakelen Uitgeschakeld en de tegenovergestelde manier. U kunt de alternatieve standaardhandeling niet wijzigen.
 
@@ -158,15 +157,15 @@ Met het regeltype Wanneer kunt u bijvoorbeeld een voorwaarde evalueren voor vers
 
 _
 
-![Meerdere velden zijn toegestaan in Wanneer](/help/forms/using/assets/allowed-multiple-field-when.png)
+![Meerdere velden toegestaan in](/help/forms/using/assets/allowed-multiple-field-when.png)
 
 
 
 
-##### Overwegingen bij het gebruik van meerdere velden toegestaan in Wanneer voorwaarde
+##### Overwegingen bij het gebruik van Meerdere velden toestaan in voorwaardelement
 
-* Zorg ervoor dat de [kerncomponent en specificatieversie worden ingesteld op de nieuwste versie](https://github.com/adobe/aem-core-forms-components/tree/release/650) om deze eigenschap in de regelredacteur te gebruiken.
-* Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van deze velden wordt gewijzigd.
+* Zorg ervoor dat de [kerncomponent en de specificatieversie is ingesteld op de nieuwste versie](https://github.com/adobe/aem-core-forms-components/tree/release/650) om deze functie in de regeleditor te kunnen gebruiken.
+* Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van die velden wordt gewijzigd.
 
 
 <!--
@@ -269,11 +268,7 @@ De **Waarde instellen van** Regeltype is niet beschikbaar voor alle formulierobj
 
 Stel de waarde van Object A in op:
 
-(tekenreeks ABC) OF
-(objecteigenschap X van Object C) OF
-(waarde van een functie) OF
-(waarde van een wiskundige uitdrukking) OF
-(uitvoerwaarde van een datamodelservice);
+(tekenreeks ABC) OR (objecteigenschap X van object C) OR (waarde van een functie) OR (waarde van een wiskundige expressie) OR (uitvoerwaarde van een gegevensmodeldienst);
 
 Indien (optioneel):
 
@@ -287,9 +282,9 @@ Voorbeeld van Waarderegel instellen met de service Formuliergegevensmodel.
 
 ### [!UICONTROL Show] {#show}
 
-Met het **[!UICONTROL Show]** type regel kunt u een regel schrijven om een formulierobject te tonen of te verbergen op basis van het feit of aan een voorwaarde wordt voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen als de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
+Met het **[!UICONTROL Show]** type regel kunt u een regel schrijven om een formulierobject te tonen of te verbergen op basis van het feit of aan een voorwaarde wordt voldaan of niet. Het type Regel weergeven activeert ook de handeling Verbergen wanneer niet aan de voorwaarde wordt voldaan of wordt geretourneerd `False`.
 
-Een typische Show regel is gestructureerd als volgt:
+Een typische show-regel is als volgt gestructureerd:
 
 `Show Object A;`
 
@@ -465,15 +460,15 @@ U kunt regels schrijven gebruikend de visuele regelredacteur <!-- or the code ed
 
 Laten we eerst bekijken hoe u regels schrijft met een visuele editor.
 
-### De visuele editor gebruiken {#using-visual-editor}
+### Visuele editor gebruiken {#using-visual-editor}
 
-Laten we begrijpen hoe u een regel in de Visuele editor maakt met het volgende voorbeeldformulier.
+Laten we begrijpen hoe u een regel maakt in een visuele editor met behulp van het volgende voorbeeldformulier.
 
-![Regelvoorbeeld maken](assets/create-rule-example.png)
+![Create-rule-example](assets/create-rule-example.png)
 
-De sectie Vereisten voor leningen in het voorbeeldformulier voor het aanvraagformulier van een lening vereist dat aanvragers hun burgerlijke staat en salaris opgeven en, indien getrouwd, het salaris van hun echtgenoot. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
+De sectie Vereisten voor leningen in het voorbeeldformulier voor het aanvraagformulier van een lening vereist dat aanvragers hun burgerlijke staat en salaris opgeven en, indien getrouwd, het salaris van hun echtgenoot. Op basis van de invoer van de gebruiker wordt in de regel het bedrag berekend dat in aanmerking komt voor een lening en wordt dit weergegeven in het veld In aanmerking komende lening. Pas de volgende regels toe om het scenario te implementeren:
 
-* Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de huwelijksstatus wordt gehuwd.
+* Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de burgerlijke staat getrouwd is.
 * De beleenbaarheid van de lening bedraagt 50% van het totale salaris.
 
 Voer de volgende stappen uit om regels te schrijven:
@@ -580,17 +575,17 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
-   In de instructie Wanneer:
+   In de instructie When:
 
-   * Selecteer of sleep vanaf het tabblad Formulierobject het **[!UICONTROL Marital Status]** veld in het eerste **[!UICONTROL Drop object or select here]** veld.
+   * Selecteer of sleep een neerzetbewerking op het tabblad Forms Object **[!UICONTROL Marital Status]** veld in de eerste **[!UICONTROL Drop object or select here]** veld.
 
-   * U kunt een keuze maken **[!UICONTROL is equal to]** uit het **[!UICONTROL Select Operator]** veld.
+   * Selecteren **[!UICONTROL is equal to]** van de **[!UICONTROL Select Operator]** veld.
 
    * Selecteer Tekenreeks in het andere **[!UICONTROL Drop object or select here]** veld en geef **[!UICONTROL Married]** het op in het **[!UICONTROL Enter a String]** veld.
 
    De regel wordt tenslotte als volgt weergegeven in de regeleditor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
-1. Selecteer **[!UICONTROL Done]**. Het bespaart de regel.
+1. Selecteer **[!UICONTROL Done]**. De regel wordt opgeslagen.
 
 1. Herhaal stap 7 tot en met 14 om een andere regel te definiëren om de beleenbaarheid van de lening te berekenen als de burgerlijke stand eenmalig is. De regel wordt als volgt weergegeven in de regeleditor.
 
@@ -870,19 +865,19 @@ Wanneer de hypotheekdatum van het onroerend goed, zoals door de gebruiker ingevu
 
 ![Toestand datumexpressie](assets/dateexpressioncondition.png)
 
-Als de ingevulde datum eerder is dan de huidige datum, wordt in het formulier het volgende tekstbericht (Inkomsten) weergegeven:
+Wanneer de datum waarop deze is ingevuld, eerder is dan de huidige datum, wordt het tekstbericht (Inkomsten) als volgt weergegeven:
 
-![Datum-expressievoorwaarde voldaan](assets/dateexpressionconditionmet.png)
+![Voldoet aan voorwaarde voor datumexpressie](assets/dateexpressionconditionmet.png)
 
-## Numerieke vergelijkingsvoorwaarden {#number-comparison-conditions}
+## Aantal vergelijkingsvoorwaarden {#number-comparison-conditions}
 
 Met de Regeleditor kunt u voorwaarden maken waarin twee getallen met elkaar worden vergeleken.
 
 Hier volgt een voorbeeldvoorwaarde die een statisch tekstobject weergeeft als het aantal maanden dat de aanvrager op het huidige adres verblijft, minder dan 36 is.
 
-![Vergelijkingsvoorwaarde voor nummers](assets/numbercomparisoncondition.png)
+![Nummervergelijkingsvoorwaarde](assets/numbercomparisoncondition.png)
 
-Wanneer de gebruiker aangeeft minder dan 36 maanden op het huidige woonadres te wonen, wordt in het formulier gemeld dat meer bewijs van verblijf kan worden aangevraagd.
+Wanneer de gebruiker tekent voor minder dan 36 maanden op dit woonadres te wonen, toont het formulier een melding dat meer bewijs van verblijf kan worden aangevraagd.
 
 ![Meer bewijs aangevraagd](assets/additionalproofrequested.png)
 

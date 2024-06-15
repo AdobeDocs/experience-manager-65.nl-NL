@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
+source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3802'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,7 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
 
 * Wanneer een gebruiker een formulier probeert weer te geven op de pagina die wordt geladen, wordt het formulier niet weergegeven. (FORMS-13594)
 * De component van het datuminvoerveld werkt niet correct in de compatibiliteitsmodus van Microsoft Edge in Internet Explorer. (FORMS-13170)
-* Melding via e-mail met bijlage is niet verzonden wanneer de correctie voor [extra-stappen-aan-gebruik-e-mail-met-gehechtheid](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) wordt uitgevoerd op de server. (FORMS-14227)
+* Melding via e-mail met bijlage is niet verzonden wanneer de correctie voor [extra stappen om e-mail met gehechtheid te gebruiken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) wordt uitgevoerd op de server. (FORMS-14227)
 * In AEM Forms Workspace op Service Pack 18 (6.5.18.0), wanneer een gebruiker opmerkingen maakt over een geüpload document, wordt het documentbestand beschadigd. (FORMS-13735)
 * Op AEM Forms Service Pack 18 (6.5.18.0), of Service Pack 19 (6.5.19.0), of Service Pack 20 (6.5.20.0), wanneer een gebruiker probeert om naar een Aangepast Vorm van het zijpaneel te zoeken, ontbreekt het onderzoek. (FORMS-14117)
 * Wanneer een gebruiker een formulier bewerkt dat in het Duits is gemaakt en in het Engels is vertaald, resulteert dit in inconsistente taalweergaven tussen de modi Voorbeeld en Bewerken. Dit zorgt ervoor dat componenten RadioButton en Checkbox in het Engels worden weergegeven in de modus Bewerken, terwijl deze in het Duits correct worden weergegeven in de modus Voorvertoning. (FORMS-13910)
@@ -212,7 +212,7 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
    * In sommige velden worden de vertaalde gegevens niet ingevuld.
    * Sommige velden worden niet vertaald naar de nieuwe taal, ook al zijn de gegevens opgeslagen in het woordenboek.
 
-#### [!DNL Forms Designer] {#forms-desgner-6520}
+#### [!DNL Forms Designer] {#forms-desgner-6521}
 
 * Wanneer een gebruiker een nieuwe tabel toevoegt aan een bestaand formulier met AEM Forms Designer in de omgeving van AEM Forms Service Pack 19 (6.5.19.0), loopt de tabel vast. (LC-392/1978)
 * Wanneer een gebruiker een adaptief formulier rendert in een Linux®-omgeving, ontstaat er een extra ruimte tussen de veldcomponenten. (LC-3921957)

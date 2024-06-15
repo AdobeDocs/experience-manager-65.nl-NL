@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 09eae6e3550e9e8505c042e23d6569971841d441
+source-git-commit: 6ef7e07f0b83b76981240533122aee8c3ee298c7
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -108,8 +108,11 @@ Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM
 
 ## Veelgestelde vragen {#fandq}
 
-* **Kan een gebruiker rechtstreeks upgraden naar 64-bits?**
-   * Ja, kunnen de gebruikers aan ontwerper met 64 bits direct bevorderen. Installeer de [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) de ontwerper volledig installatieprogramma en pas verdere designer flardversie over dat toe.
+* **Kan een gebruiker een 64-bits ontwerper rechtstreeks upgraden of installeren?**
+   * Ja, gebruikers kunnen de ontwerper met 64 bits direct bevorderen of installeren. Installeer de [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) de ontwerper volledig installatieprogramma en pas verdere designer flardversie over dat toe.
+
+     >[!NOTE]
+     > Voordat u een upgrade uitvoert naar de 64-bits ontwerper, moet u eerst de 32-bits ontwerper verwijderen als deze bestaat.
 
 * **Kunnen gebruikers zowel 32-bits als 64-bits op hun systeem installeren?**
    * Nee, 32-bits en 64-bits installatie werkt niet op dezelfde computer. De gebruiker kan of een ontwerper met 32 bits of een ontwerper met 64 bits hebben.
@@ -117,6 +120,6 @@ Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM
 * **Hoe controleert u of is een gebruiker op ontwerper met 64 bits of ontwerper met 32 bits?**
    * Er zijn twee manieren om de Forms Designer-versie te controleren:
 
-      1. Open Designer, ga naar Help, klik op Informatie over ontwerper en u ziet de informatie over de ontwerpversie samen met de bits-informatie. U ziet bijvoorbeeld dat 64-bits aan het einde is geschreven, zoals u hier ziet:
+      1. Open Designer, ga naar Help, klik op Informatie over ontwerper en u ziet de informatie over de ontwerpversie samen met de bits-informatie. U ziet bijvoorbeeld dat 64-bits aan het einde van de versie is geschreven, zoals u hier ziet:
          `6.5.21.20240522.1.161 | 64 bit`
-      1. Open Designer en linksboven ziet u een brandpictogram met 64-bits informatie over de productnaam.
+      1. Open Designer en linksboven ziet u een brandpictogram dat 64-bits informatie met de productnaam bevat.

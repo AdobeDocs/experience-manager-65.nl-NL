@@ -4,22 +4,21 @@ description: AEM Forms ondersteunt aangepaste functies waarmee gebruikers hun ei
 keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een douanefunctie, gebruik douanefunctie in regel redacteur.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: e7ad5c0149e428265598c806421131fe74fad350
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '3386'
+source-wordcount: '3377'
 ht-degree: 0%
 
 ---
 
 # Aangepaste functies in Adaptive Forms Core Components
 
-<span class="preview"> Dit artikel bevat inhoud voor onderdelen van het programma voor vroege adoptie. Deze pre-releasefuncties zijn alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Het pre-releaseprogramma heeft de volgende kenmerken:
-<!-- * Optional parameter support in Custom Functions-->
+In dit artikel wordt beschreven hoe u aangepaste functies maakt met de nieuwste adaptieve Form Core-component, die de nieuwste functies heeft, zoals:
 * Caching, functie voor aangepaste functies
 * Algemene bereikobjecten en veldobjecten ondersteunen aangepaste functies
 * Ondersteuning voor moderne JavaScript-functies zoals verlaat- en pijlfuncties (ES10-ondersteuning)
 
-Zorg ervoor dat u de [nieuwste formulierversie](https://github.com/adobe/aem-core-forms-components/tree/release/650) in uw AEM Forms Core-componentomgeving om de pre-releasefuncties in Aangepaste functies te gebruiken. </span>
+Zorg ervoor dat u de [nieuwste formulierversie](https://github.com/adobe/aem-core-forms-components/tree/release/650) in uw AEM Forms Core-componentomgeving voor gebruik van de nieuwste functies in Aangepaste functies. </span>
 
 
 | Versie | Artikelkoppeling |

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
 workflow-type: tm+mt
-source-wordcount: '3802'
+source-wordcount: '3800'
 ht-degree: 0%
 
 ---
@@ -527,16 +527,15 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, als u dubbele vermeldingen van Geode jars vindt `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de `<AEM_Forms_Installation>/lib/caching/lib` map (FORMS-14926).
+* Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, als u dubbele vermeldingen van Geode jars vindt `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de `<AEM_Forms_Installation>/lib/caching/lib` -map (FORMS-14926), voert u de volgende stappen uit om het probleem op te lossen:
 
-  Voer de volgende stappen uit om het probleem op te lossen:
+   1. Stop de locators, als zij lopen.
+   1. Stop de AEM.
+   1. Ga naar de `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Alle Geode-patchbestanden verwijderen, behalve `geode-*-1.15.1.2.jar`. Bevestig dat alleen Geode met `version 1.15.1.2` aanwezig zijn.
+   1. Open de opdrachtprompt in de beheerdermodus.
+   1. Installeer de Geode-patch met de `geode-*-1.15.1.2.jar` bestand.
 
-   1. Stop de locators en de server in de gespecificeerde orde, als zij lopen.
-   1. Installeer de patch opnieuw door het patch-installatieprogramma uit te voeren in de beheerdersmodus (Belangrijk).
-   1. Bevestig dat alleen Geode met `version 1.15.1.2` aanwezig zijn.
-
-  >[!NOTE]
-  > Er is geen actie vereist als alleen de Geode schuift met `version 1.15.1.2` aanwezig zijn.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

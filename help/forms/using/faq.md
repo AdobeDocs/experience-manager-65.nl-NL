@@ -10,7 +10,7 @@ feature: HTML5 Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
@@ -173,7 +173,6 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
    Antwoord: HTML5-formulieren ondersteunen geen weergavepatronen voor zwevende velden.
 
 1. Wat is de indeling van het veld Datum in HTML5 Forms?
-
 Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum in een andere notatie opgeeft, accepteert het veld Datum de opmaak pas als de gebruiker het veld met de Tab-toets verlaat.
 
 ### Scripts {#scripting}

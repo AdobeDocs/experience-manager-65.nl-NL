@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '5504'
+source-wordcount: '5538'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Zie voor meer informatie [Hoe te om AEM Projecten te bouwen gebruikend Apache Ma
 Wanneer u uw AEM project hebt ingesteld, definieert u een strategie voor het ontwerpen en aanpassen van adaptieve formuliersjablonen en componenten.
 
 * Een adaptieve formuliersjabloon is een gespecialiseerde AEM die structuur en de informatie over de kop- en voettekst van een adaptief formulier definieert. Een sjabloon heeft vooraf geconfigureerde indelingen, stijlen en basisstructuur voor een adaptief formulier. AEM Forms beschikt over out-of-the-box sjablonen en componenten waarmee u adaptieve formulieren kunt maken. U kunt echter naar wens aangepaste sjablonen en componenten maken. Het wordt aanbevolen vereisten te verzamelen voor aanvullende sjablonen en componenten die u nodig hebt in uw aangepaste formulieren. Zie voor meer informatie [Aangepaste formulieren en componenten aanpassen](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* Het wordt aanbevolen de formulierpakketten te uploaden via de gebruikersinterface van Formulierbeheer in plaats van via de gebruikersinterface van CRX Package Manager, omdat het uploaden van pakketten via CRX Package Manager soms tot anomalieën kan leiden.
 * Met AEM Forms kunt u adaptieve formulieren maken op basis van de volgende formuliermodellen. De formuliermodellen fungeren als interface voor gegevensuitwisseling tussen een formulier en AEM en bieden een op XML gebaseerde structuur voor gegevensstroom binnen en buiten een adaptief formulier. Bovendien leggen de formuliermodellen regels en beperkingen op aan adaptieve formulieren in de vorm van schema- en XFA-beperkingen.
 
    * **Geen**: Aangepaste formulieren die met deze optie zijn gemaakt, gebruiken geen formuliermodel. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.

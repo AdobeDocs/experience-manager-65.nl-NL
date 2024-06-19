@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '3800'
+source-wordcount: '3884'
 ht-degree: 0%
 
 ---
@@ -41,18 +41,22 @@ ht-degree: 0%
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+### [!DNL Forms]
+
 Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
-* Een nieuwe en eenvoudigere referentie voor server-aan-server authentificatie, die de bestaande referentie van de Rekening van de Dienst (JWT) vervangt. (NPR-41994)
-
-* Verbeteringen in de regeleditor in AEM Forms:
+* **Ondersteuning voor Oauth Credentials**: Een nieuw en gebruiksvriendelijker referentie voor server-aan-server authentificatie, die de bestaande referentie van de Rekening van de Dienst (JWT) vervangt. (NPR-41994)
+* **Verbeteringen in de regeleditor in AEM Forms**:
    * Ondersteuning voor de implementatie van geneste voorwaarden met `When-then-else` functionaliteit.
    * Valideer of stel panelen en formulieren, met inbegrip van gebieden opnieuw in.
    * Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen de aangepaste functies.
-* AutoTag-API voor toegankelijkheid van PDF: AEM Forms op OSGi ondersteunt nu de nieuwe AutoTag-API om de PDF voor toegankelijkheidsnormen te verbeteren door codes toe te voegen: alinea&#39;s en lijsten. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
-* 16-bits PNG-ondersteuning: de ImageToPDF-service van PDF Generator ondersteunt nu de conversie van PNG-bestanden met 16-bits kleurdiepte.
-* Artefacten toepassen op afzonderlijke tekstblokken in XDP&#39;s: met Forms Designer kunnen gebruikers nu instellingen configureren voor afzonderlijke tekstblokken in XDP-bestanden. Hierdoor kunt u de elementen beheren die in de resulterende PDF als artefacten worden behandeld. Deze elementen, zoals kop- en voetteksten, zijn toegankelijk voor ondersteunende hulpmiddelen. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
-* AEM Forms Designer is gecertificeerd met `GB18030:2022` standaard. Met deze certificering ondersteunt Forms Designer nu de tekenset Chinese Unicode, waarmee u Chinese tekens kunt invoeren in alle bewerkbare velden en dialoogvensters.
+* **AutoTag-API voor PDF-toegankelijkheid**: AEM Forms op OSGi ondersteunt nu de nieuwe AutoTag-API om de PDF voor toegankelijkheidsstandaarden te verbeteren door tags toe te voegen: alinea&#39;s en lijsten. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
+* **16-bits PNG-ondersteuning**: De ImageToPDF-service van PDF Generator ondersteunt nu de conversie van PNG-bestanden met 16-bits kleurdiepte.
+* **Artefacten toepassen op afzonderlijke tekstblokken in XDP&#39;s**: In Forms Designer kunnen gebruikers nu instellingen configureren voor afzonderlijke tekstblokken in XDP-bestanden. Hierdoor kunt u de elementen beheren die in de resulterende PDF als artefacten worden behandeld. Deze elementen, zoals kop- en voetteksten, zijn toegankelijk voor ondersteunende hulpmiddelen. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
+* **AEM Forms Designer is gecertificeerd met `GB18030:2022` standaard**: Met de `GB18030:2022` -certificering. Forms Designer ondersteunt nu de tekenset Chinese Unicode waarmee u Chinese tekens kunt invoeren in alle bewerkbare velden en dialoogvensters.
+* **Ondersteuning voor WebToPDF-route in JEE Server**: De dienst van de PDF Generator steunt nu de route WebToPDF voor het omzetten van de dossiers van HTML naar de documenten van PDF op JEE, naast Webkit en WebCapture (Vensters slechts) routes. Hoewel de WebToPDF-route al beschikbaar is op OSGi, is deze nu uitgebreid naar JEE. Op zowel platforms JEE als OSGi, steunt de dienst van de PDF Generator de volgende routes over verschillende werkende systemen:
+   * **Windows**: Webkit, WebCapture, WebToPDF
+   * **Linux**: Webkit, WebToPDF
 
 
 ### [!DNL Assets]

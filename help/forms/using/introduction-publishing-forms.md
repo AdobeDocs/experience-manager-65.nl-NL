@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 0%
@@ -80,7 +81,7 @@ Met Forms Portal kunt u formulieren vanuit de formulieropslagplaats op uw portal
 1. **Opslag configureren voor het concept en de verzonden formuliergegevens:** Concepten en verzendgegevens worden standaard opgeslagen in de AEM-opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. [Forms Portal-component configureren om gegevens op een beveiligde locatie op te slaan](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Optioneel) De Forms Portal-componenten aanpassen:** [Sjablonen voor Forms Portal-pagina&#39;s aanpassen](../../forms/using/customizing-templates-forms-portal-components.md) om de componenten een duidelijk uiterlijk te geven.
 1. **(Optioneel) Voeg aangepaste metagegevens toe aan formulieren:** [Aangepaste metagegevens toevoegen aan formulieren](../../forms/using/customizing-templates-forms-portal-components.md) om aanbiedingen en zoekresultaten te verbeteren.
-1. **Publiceer de pagina Forms Portal:** Je Forms Portal-pagina is nu klaar. Publiceer de pagina.
+1. **Publish de Forms Portal-pagina:** Je Forms Portal-pagina is nu klaar. Publish de pagina.
 
 ## Verwante artikelen {#related-articles}
 

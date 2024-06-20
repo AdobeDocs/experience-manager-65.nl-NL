@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -21,33 +21,33 @@ ht-degree: 0%
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service AEM Forms Repository.
 
-[Snel starten (SOAP-modus): een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[Snel starten (SOAP modus): een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[Snel starten (SOAP-modus): een bron schrijven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Snel starten (SOAP modus): een bron schrijven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): bronnen weergeven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[Snel starten (SOAP modus): bronnen weergeven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een bron lezen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
+[Snel starten (SOAP modus): Een bron lezen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): een bron bijwerken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[Snel starten (SOAP modus): Een bron bijwerken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): zoeken naar bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[Snel starten (SOAP modus): zoeken naar bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Snel starten (SOAP-modus): relaties maken tussen bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Snel starten (SOAP modus): relaties maken tussen bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
-[Snel starten (SOAP-modus): een bron vergrendelen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[Snel starten (SOAP modus): Een bron vergrendelen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): toegangsbeheerlijsten beheren met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
+[Snel starten (SOAP modus): Toegangsbeheerlijsten beheren met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
 
-[Snel starten (SOAP-modus): een bron verwijderen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
+[Snel starten (SOAP modus): een bron verwijderen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet worden ingesteld op SOAP
 
 **Applications/FormsApplication**
 
 De meeste AEM Forms-opslagservice begint snel met interactie met een toepassing met de naam `Applications/FormsApplication,` zoals weergegeven in de volgende afbeelding.
 
-De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld programmatisch toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld programmatisch toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP modus): een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 Het pad naar een resource in de AEM Forms-opslagplaats is:
 
@@ -61,7 +61,7 @@ Het pad naar een resource in de AEM Forms-opslagplaats is:
 >
 >Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Voor informatie over het maken van een toepassing met Workbench raadpleegt u [Aan de slag met procesontwerp](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
-## Snel starten (SOAP-modus): een map maken met de Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
+## Snel starten (SOAP modus): een map maken met de Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolder* op de volgende locatie `/Applications/FormsApplication/1.0/`. (Zie [Mappen maken](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
@@ -167,7 +167,7 @@ In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolde
  }
 ```
 
-## Snel starten (SOAP-modus): een bron schrijven met de Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
+## Snel starten (SOAP modus): een bron schrijven met de Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de repository. De bron wordt toegevoegd aan de `/Applications/FormsApplication/1.0/FormsFolder` locatie. (Zie [Bronnen schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
@@ -295,7 +295,7 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de r
  
 ```
 
-## Snel starten (SOAP-modus): bronnen weergeven met de Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}
+## Snel starten (SOAP modus): bronnen weergeven met de Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Applications/FormsApplication/1.0/FormsFolder`. (Zie [Aanbiedingsbronnen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
@@ -394,7 +394,7 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Appli
  }
 ```
 
-## Snel starten (SOAP-modus): Een bron lezen met de Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
+## Snel starten (SOAP modus): Een bron lezen met de Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een bron met de naam *Lening.xdp* uit de opslagplaats. Het XDP-bestand bevindt zich in `/Applications/FormsApplication/1.0/FormsFolder/`. (Zie [Bronnen lezen](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
@@ -495,7 +495,7 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *Lening.xdp* uit d
  
 ```
 
-## Snel starten (SOAP-modus): een bron bijwerken met de Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
+## Snel starten (SOAP modus): Een bron bijwerken met de Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
 De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplication/1.0/FormsFolder` door de beschrijving ervan te wijzigen. (Zie [Bronnen bijwerken](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
@@ -607,7 +607,7 @@ De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplicati
  
 ```
 
-## Snel starten (SOAP-modus): zoeken naar bronnen met de Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
+## Snel starten (SOAP modus): zoeken naar bronnen met de Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder`. (Zie [Zoeken naar bronnen](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
@@ -731,7 +731,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
  }
 ```
 
-## Snel starten (SOAP-modus): relaties maken tussen bronnen met de Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
+## Snel starten (SOAP modus): relaties maken tussen bronnen met de Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de AEM Forms-opslagplaats. (Zie [Resourcerelaties maken](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
@@ -872,7 +872,7 @@ In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen
  }
 ```
 
-## Snel starten (SOAP-modus): een bron vergrendelen met de Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
+## Snel starten (SOAP modus): Een bron vergrendelen met de Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp vergrendeld. (Zie [Bronnen vergrendelen](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
@@ -983,7 +983,7 @@ In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/Form
  }
 ```
 
-## Snel starten (SOAP-modus): toegangsbeheerlijsten beheren met de Java API {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
+## Snel starten (SOAP modus): Toegangsbeheerlijsten beheren met de Java API {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
 
 Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (ACLs) in de bewaarplaats.
 
@@ -1098,7 +1098,7 @@ Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (AC
  }
 ```
 
-## Snel starten (SOAP-modus): een bron verwijderen met de Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
+## Snel starten (SOAP modus): een bron verwijderen met de Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/FormsApplication/1.0/FormsFolder`. Als dit XDP-bestand zich niet in deze map bevindt, wordt een uitzondering gegenereerd. (Zie [Bronnen verwijderen](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 

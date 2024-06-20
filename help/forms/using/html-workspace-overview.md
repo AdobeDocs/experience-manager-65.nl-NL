@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms, Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +28,7 @@ Zie voor meer informatie [Inleiding tot de AEM Forms-werkruimte](/help/forms/usi
 
 ## Kennis krijgen {#getting-familiar}
 
-Om vertrouwd met het proces van begin tot eind te zijn om een vormtoepassing tot stand te brengen om een bedrijfsproces te automatiseren, volg de analyse. U kunt een toepassing maken, beheren en testen met Workbench, Designer en AEM Forms nadat u de stappen hebt uitgevoerd. Zie voor meer informatie over de implementatie [Uw eerste AEM Forms-toepassing maken](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+Om vertrouwd met het proces van begin tot eind te zijn om een vormtoepassing tot stand te brengen om een bedrijfsproces te automatiseren, volg de analyse. U kunt een toepassing maken, beheren en testen met Workbench, Designer en AEM Forms-werkruimte nadat u de stappen hebt uitgevoerd. Zie voor meer informatie over de implementatie [Uw eerste AEM Forms-toepassing maken](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Functioneel overzicht {#functional-overview}
 

@@ -8,46 +8,46 @@ topic-tags: develop
 role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) voor uitvoerservice {#output-service-java-api-quick-start-soap}
+# Java API voor uitvoerservice - Snel starten (SOAP) {#output-service-java-api-quick-start-soap}
 
 Java API Quick Start (SOAP) is beschikbaar voor de Output-service.
 
-[Snel starten (SOAP-modus): een PDF-document maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF/A-document maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF/A-document maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): documenten doorgeven aan de uitvoerservice met behulp van de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Snel starten (SOAP modus): documenten doorgeven aan de uitvoerservice met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): een document in de AEM Forms Repository doorgeven aan de Output-service met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Snel starten (SOAP modus): een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document maken op basis van fragmenten met de Java API](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document maken op basis van fragmenten met de Java API](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[Snel starten (SOAP-modus): afdrukken naar een bestand met de Java API](#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[Snel starten (SOAP modus): Afdrukken naar een bestand met de Java API](#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
-[Snel starten (SOAP-modus): een afdrukstream naar een netwerkprinter verzenden met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api)
+[Snel starten (SOAP modus): een afdrukstream naar een netwerkprinter verzenden met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api)
 
-[Snel starten (SOAP-modus): meerdere PDF-bestanden maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
+[Snel starten (SOAP modus): meerdere PDF-bestanden maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
 
-[Snel starten (SOAP-modus): zoekregels maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[Snel starten (SOAP modus): zoekregels maken met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document transformeren met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document transformeren met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >Quick Start in Programming with AEM forms are based on the Forms Server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): een PDF-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): een PDF-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *Lening.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
@@ -165,7 +165,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *L
  
 ```
 
-## Snel starten (SOAP-modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
+## Snel starten (SOAP modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *Lening.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. Het XDP-bestand wordt geïmplementeerd als onderdeel van een AEM Forms-toepassing met de naam `Applications/FormsApplication`. Het URI-pad is `repository:///Applications/FormsApplication/1.0/FormsFolder/`. De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
@@ -288,7 +288,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *L
  
 ```
 
-## Snel starten (SOAP-modus): een document in de opslagplaats doorgeven aan de uitvoerservice met behulp van de Java API {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
+## Snel starten (SOAP modus): een document in de gegevensopslagruimte doorgeven aan de uitvoerservice met behulp van de Java API {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 De volgende Java-code haalt een XDP-bestand op uit de opslagplaats en geeft het door aan de uitvoerservice binnen `com.adobe.idp.Document` -instantie. Het XDP-bestand wordt geïmplementeerd als onderdeel van een AEM Forms-toepassing met de naam `Applications/FormsApplication`. Het URI-pad is `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
 
@@ -440,7 +440,7 @@ De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserv
  
 ```
 
-## Snel starten (SOAP-modus): een PDF-document maken met de Java API {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
+## Snel starten (SOAP modus): een PDF-document maken met de Java API {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *Lening.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
@@ -550,7 +550,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *L
  }
 ```
 
-## Snel starten (SOAP-modus): een PDF/A-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
+## Snel starten (SOAP modus): een PDF/A-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF/A-document gemaakt met de naam *LoanArchive.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. De *LoanArchive.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF/A-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents).)
 
@@ -668,7 +668,7 @@ In het volgende Java-codevoorbeeld wordt een PDF/A-document gemaakt met de naam 
  
 ```
 
-## Snel starten (SOAP-modus): documenten doorgeven aan de uitvoerservice met behulp van de Java API {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
+## Snel starten (SOAP modus): documenten doorgeven aan de uitvoerservice met de Java API {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
 Met de volgende snelle Java-start haalt u het bestand op *Lening.xdp* van Content Services. Dit XDP-bestand staat in het dialoogvenster `space /Company Home/Form Designs`. Het XDP-bestand wordt geretourneerd in een `com.adobe.idp.Document` -instantie. De `com.adobe.idp.Document` -instantie wordt doorgegeven aan de uitvoerservice. Het niet-interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *Loan.pdf *op de clientcomputer. Omdat de optie File URI is ingesteld, wordt het PDF-bestand *Loan.pdf *ook opgeslagen op de J2EE-toepassingsserver die als host fungeert voor AEM Forms. (Zie [Documenten in Content Services ES2 doorgeven aan de Output Service](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
@@ -807,7 +807,7 @@ Met de volgende snelle Java-start haalt u het bestand op *Lening.xdp* van Conten
  
 ```
 
-## Snel starten (SOAP-modus): een PDF-document maken op basis van fragmenten met de Java API {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
+## Snel starten (SOAP modus): een PDF-document maken op basis van fragmenten met de Java API {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt dat is gebaseerd op een formulierontwerp dat is samengesteld met de Assembler-service. De Assembler-service brengt fragmenten in meerdere XDP-bestanden samen tot één formulierontwerp. De logica van de toepassing die de dienst van de Assembler aanhaalt is in een user-defined methode genoemd `GetFormDesign`. Het niet-interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *Loan.pdf *op de clientcomputer. (Zie [PDF-documenten maken met behulp van fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
 
@@ -1015,7 +1015,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt dat is gebasee
  
 ```
 
-## Snel starten (SOAP-modus): afdrukken naar een bestand met de Java API {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
+## Snel starten (SOAP modus): Afdrukken naar een bestand met de Java API {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een uitvoerstream afgedrukt naar een PostScript-bestand met de naam *MortgaugeForm.ps*. (Zie [Afdrukken naar bestanden](/help/forms/developing/creating-document-output-streams.md#printing-to-files).)
 
@@ -1127,7 +1127,7 @@ In het volgende Java-codevoorbeeld wordt een uitvoerstream afgedrukt naar een Po
  
 ```
 
-## Snel starten (SOAP-modus): een afdrukstream naar een netwerkprinter verzenden met de Java API {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
+## Snel starten (SOAP modus): een afdrukstream naar een netwerkprinter verzenden met de Java API {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PostScript-afdrukstroom verzonden naar een netwerkprinter met de naam *\\Printer1\Printer*. Er worden twee exemplaren naar de printer verzonden. (Zie [Afdrukstromen naar printers verzenden](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers).)
 
@@ -1252,7 +1252,7 @@ In het volgende Java-codevoorbeeld wordt een PostScript-afdrukstroom verzonden n
  
 ```
 
-## Snel starten (SOAP-modus): meerdere PDF-bestanden maken met de Java API {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
+## Snel starten (SOAP modus): meerdere PDF-bestanden maken met de Java API {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
 De volgende Java-code maakt meerdere PDF-bestanden voor elke gegevensrecord in een XML-gegevensbestand met de naam *Loan_data_batch.xml*. De bestanden worden naar de map C:\Adobe geschreven. De PDF-bestanden worden geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [Meerdere uitvoerbestanden maken](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
 
@@ -1373,7 +1373,7 @@ De volgende Java-code maakt meerdere PDF-bestanden voor elke gegevensrecord in e
  
 ```
 
-## Snel starten (SOAP-modus): zoekregels maken met de Java API {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
+## Snel starten (SOAP modus): zoekregels maken met de Java API {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden twee tekstpatronen gemaakt waarnaar de uitvoerservice zoekt. Het eerste tekstpatroon is Hypotheek. Indien gevonden, gebruikt de uitvoerservice het formulierontwerp met de naam *Hypotheek.xdp*. Het tweede tekstpatroon is Automobile. Indien gevonden, gebruikt de uitvoerservice het formulierontwerp met de naam *AutoLoan.xdp*. Als geen van beide tekstpatronen wordt gevonden, gebruikt de Output-service het standaardformulierontwerp met de naam* Loan.xdp. *(Zie [Zoekregels maken](/help/forms/developing/creating-document-output-streams.md#creating-search-rules).)
 
@@ -1505,7 +1505,7 @@ In het volgende Java-codevoorbeeld worden twee tekstpatronen gemaakt waarnaar de
  
 ```
 
-## Snel starten (SOAP-modus): een PDF-document transformeren met de Java API {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): een PDF-document transformeren met de Java API {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een interactief PDF-document met de naam *Lening.pdf* naar een niet-interactief PDF-document met de naam *NonInteractiveLoan.pdf*. (Zie [PDF-documenten afvlakken](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 

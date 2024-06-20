@@ -1,6 +1,6 @@
 ---
 title: Programmaticaal het leiden Eindpunten
-description: Gebruik de dienst van de Registratie van het Eindpunt om EJB eindpunten toe te voegen, het eindpunt van de ZEEP toe te voegen, Gecontroleerde eindpunten van de Omslag toe te voegen, E-maileindpunten toe te voegen, verwijderende eindpunten van de Manager van de Taak toe te voegen, eindpunten te wijzigen, eindpunten te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
+description: Gebruik de dienst van de Registratie van het Eindpunt om EJB eindpunten toe te voegen, SOAP eindpunt toe te voegen, gecontroleerde eindpunten van de Omslag toe te voegen, E-maileindpunten toe te voegen, verwijderende eindpunten van de Manager van de Taak toe te voegen, eindpunten te wijzigen, eindpunten te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '10800'
 ht-degree: 0%
@@ -32,7 +32,7 @@ De dienst van de Registratie van het Eindpunt verstrekt de capaciteit om eindpun
 
 >[!NOTE]
 >
->SOAP, EJB, en (Vervangen voor AEM vormen op JEE) het verwijderen eindpunten worden automatisch gecreeerd voor elke geactiveerde dienst. De eindpunten SOAP en EJB laten ZEEP en EJB voor alle de dienstverrichtingen toe.
+>SOAP, EJB en (Vervangen voor AEM formulieren op JEE) Eindpunten verwijderen worden automatisch gemaakt voor elke geactiveerde service. De SOAP en EJB eindpunten laten SOAP en EJB voor alle de dienstverrichtingen toe.
 
 Een Remoting eindpunt laat de cliënten van Flex toe om verrichtingen op de dienst van AEM Forms aan te halen die het eindpunt aan wordt toegevoegd. Een bestemming van Flex met de zelfde naam zoals het eindpunt wordt gecreeerd en de cliënten van Flex kunnen tot RemoteObjects leiden die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
 
@@ -43,7 +43,7 @@ U kunt eindpunten van TaskManager organiseren in groepen genoemd *categorieën*.
 U kunt deze taken verwezenlijken gebruikend de dienst van de Registratie van het Eindpunt:
 
 * EJB-eindpunten toevoegen. (Zie [EJB-eindpunten toevoegen](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Voeg de eindpunten van de ZEEP toe. (Zie [SOAP-eindpunten toevoegen](programmatically-endpoints.md#adding-soap-endpoints).)
+* Voeg SOAP eindpunten toe. (Zie [SOAP eindpunten toevoegen](programmatically-endpoints.md#adding-soap-endpoints).)
 * Onderbrekingspunten van gecontroleerde map toevoegen (zie [Eindpunten van gecontroleerde mappen toevoegen](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 * E-maileindpunten toevoegen. (Zie [E-maileindpunten toevoegen](programmatically-endpoints.md#adding-email-endpoints).)
 * Voeg eindpunten voor verwijderen toe. (Zie [Eindpunten verwijderen toevoegen](programmatically-endpoints.md#adding-remoting-endpoints).)
@@ -155,26 +155,26 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## SOAP-eindpunten toevoegen {#adding-soap-endpoints}
+## SOAP eindpunten toevoegen {#adding-soap-endpoints}
 
-U kunt programmatically een eindpunt van de ZEEP aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt van de ZEEP toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze van de ZEEP te gebruiken. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de SOAP-modus selecteren.
-
->[!NOTE]
->
->U kunt geen eindpunt van de ZEEP toevoegen door de Webdiensten te gebruiken.
+U kunt programmatically een SOAP eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een SOAP eindpunt toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de SOAP wijze te gebruiken. Wanneer u de verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u dus de SOAP selecteren.
 
 >[!NOTE]
 >
->Typisch, wordt een eindpunt van de ZEEP toegevoegd aan de dienst door gebrek, echter, kan een eindpunt van de ZEEP aan een proces worden toegevoegd dat programmatically wordt opgesteld of wanneer een eindpunt van de ZEEP werd verwijderd en opnieuw moet worden toegevoegd.
+>U kunt geen SOAP eindpunt toevoegen door de Webdiensten te gebruiken.
+
+>[!NOTE]
+>
+>Typisch, wordt een SOAP eindpunt toegevoegd aan de dienst door gebrek, echter, kan een SOAP eindpunt aan een proces worden toegevoegd dat programmatically wordt opgesteld of wanneer een SOAP eindpunt werd verwijderd en moet opnieuw worden toegevoegd.
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
-Om een eindpunt van de ZEEP aan de dienst toe te voegen, voer de volgende taken uit:
+Om een SOAP eindpunt aan de dienst toe te voegen, voer de volgende taken uit:
 
 1. Inclusief projectbestanden.
 1. Een `EndpointRegistryClient` object.
-1. Stel de kenmerken voor het SOAP-eindpunt in.
-1. Creeer een eindpunt van de ZEEP.
+1. Stel SOAP eindpuntkenmerken in.
+1. Maak een SOAP eindpunt.
 1. Laat het eindpunt toe.
 
 **Projectbestanden opnemen**
@@ -188,25 +188,25 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Deze JAR-bestanden zijn vereist om een SOAP-eindpunt te maken. Nochtans, vereist u toevoegingsJAR dossiers als u het eindpunt van de ZEEP gebruikt om de dienst aan te halen. Zie voor informatie over AEM Forms JAR-bestanden [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Deze JAR-bestanden zijn vereist om een SOAP eindpunt te maken. Nochtans, vereist u toevoegingsJAR dossiers als u het SOAP eindpunt gebruikt om de dienst aan te halen. Zie voor informatie over AEM Forms JAR-bestanden [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een EndpointRegistry-client-object maken**
 
-Om een eindpunt van de ZEEP aan de dienst programmatically toe te voegen, moet u tot een `EndpointRegistryClient` object.
+Om een SOAP eindpunt aan de dienst programmatically toe te voegen, moet u tot een `EndpointRegistryClient` object.
 
-**Kenmerken van SOAP-eindpunt instellen**
+**Kenmerken voor SOAP instellen**
 
-Om een eindpunt van de ZEEP aan de dienst toe te voegen, specificeer de volgende waarden:
+Om een SOAP eindpunt aan de dienst toe te voegen, specificeer de volgende waarden:
 
-* **Waarde koppelings-id**: Geeft het type eindpunt op dat moet worden gemaakt. Om een eindpunt van de ZEEP te creëren, specificeer `SOAP`.
+* **Waarde koppelings-id**: Geeft het type eindpunt op dat moet worden gemaakt. Om een SOAP eindpunt tot stand te brengen, specificeer `SOAP`.
 * **Beschrijving**: Geeft de beschrijving van het eindpunt aan.
 * **Naam**: Geeft de naam van het eindpunt op.
 * **Service-id-waarde**: Specificeert de dienst waartot het eindpunt behoort.
-* **Handelingsnaam**: Geeft de naam op van de bewerking die wordt aangeroepen door het eindpunt te gebruiken. Geef bij het maken van een SOAP-eindpunt een jokerteken op ( `*`). Nochtans, als u een specifieke verrichting in tegenstelling tot het aanhalen van alle de dienstverrichtingen wilt specificeren, specificeer de naam van de verrichting in plaats van het gebruiken van het vervangingskarakter ( `*`).
+* **Handelingsnaam**: Geeft de naam op van de bewerking die wordt aangeroepen door het eindpunt te gebruiken. Geef bij het maken van een SOAP een jokerteken op ( `*`). Nochtans, als u een specifieke verrichting in tegenstelling tot het aanhalen van alle de dienstverrichtingen wilt specificeren, specificeer de naam van de verrichting in plaats van het gebruiken van het vervangingskarakter ( `*`).
 
-**Een SOAP-eindpunt maken**
+**Een SOAP eindpunt maken**
 
-Nadat u de eigenschappen van het eindpunt van de ZEEP plaatst, kunt u een eindpunt van de ZEEP tot stand brengen.
+Nadat u SOAP eindpuntattributen plaatst, kunt u een SOAP eindpunt tot stand brengen.
 
 **Het eindpunt inschakelen**
 
@@ -214,15 +214,15 @@ Nadat u een eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt to
 
 **Zie ook**
 
-[Een SOAP-eindpunt toevoegen met de Java API](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[Een SOAP eindpunt toevoegen met de Java API](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Een SOAP-eindpunt toevoegen met de Java API {#add-a-soap-endpoint-using-the-java-api}
+### Een SOAP eindpunt toevoegen met de Java API {#add-a-soap-endpoint-using-the-java-api}
 
-Voeg een eindpunt van de ZEEP aan de dienst toe door Java API te gebruiken:
+Voeg een SOAP eindpunt aan de dienst toe door Java API te gebruiken:
 
 1. Inclusief projectbestanden.
 
@@ -233,7 +233,7 @@ Voeg een eindpunt van de ZEEP aan de dienst toe door Java API te gebruiken:
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
    * Een `EndpointRegistryClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
-1. Stel de kenmerken voor het SOAP-eindpunt in.
+1. Stel SOAP eindpuntkenmerken in.
 
    * Een `CreateEndpointInfo` object met behulp van de constructor.
    * Specificeer de waarde van schakelaarherkenningsteken door te roepen `CreateEndpointInfo` object `setConnectorId` methode en het doorgeven van de tekenreekswaarde `SOAP`.
@@ -242,7 +242,7 @@ Voeg een eindpunt van de ZEEP aan de dienst toe door Java API te gebruiken:
    * Specificeer de dienst waartot het eindpunt door behoort aan te halen `CreateEndpointInfo` object `setServiceId` methode en het overgaan van een koordwaarde die de de dienstnaam specificeert.
    * Geef de bewerking op die wordt aangeroepen door het `CreateEndpointInfo` object `setOperationName` methode en het overgaan van een koordwaarde die de verrichtingsnaam specificeert. Geef voor SOAP- en EJB-eindpunten een jokerteken op ( `*`), hetgeen alle verrichtingen impliceert.
 
-1. Creeer een eindpunt van de ZEEP.
+1. Maak een SOAP eindpunt.
 
    Maak het eindpunt door het `EndpointRegistryClient` object `createEndpoint` en het doorgeven van de `CreateEndpointInfo` object. Deze methode retourneert een `Endpoint` object dat het nieuwe SOAP-eindpunt vertegenwoordigt.
 
@@ -254,7 +254,7 @@ Voeg een eindpunt van de ZEEP aan de dienst toe door Java API te gebruiken:
 
 [Overzicht van de stappen](programmatically-endpoints.md#summary-of-steps)
 
-[QuickStart: een SOAP-eindpunt toevoegen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: een SOAP eindpunt toevoegen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1083,7 +1083,7 @@ Wijzig een eindpunt door Java API te gebruiken:
 
 ## Eindpunten verwijderen {#removing-endpoints}
 
-U kunt een eindpunt uit de dienst programmatically verwijderen door AEM Forms Java API te gebruiken. Nadat u een eindpunt verwijdert, kan de dienst niet worden aangehaald door de aanroepingsmethode te gebruiken die het eindpunt toeliet. Bijvoorbeeld, als u een eindpunt van de ZEEP uit de dienst verwijdert, kunt u niet de dienst aanhalen door de wijze van de ZEEP te gebruiken.
+U kunt een eindpunt uit de dienst programmatically verwijderen door AEM Forms Java API te gebruiken. Nadat u een eindpunt verwijdert, kan de dienst niet worden aangehaald door de aanroepingsmethode te gebruiken die het eindpunt toeliet. Bijvoorbeeld, als u een SOAP eindpunt uit de dienst verwijdert, kunt u niet de dienst aanhalen door de SOAP wijze te gebruiken.
 
 Om aan te tonen hoe te om een eindpunt uit de dienst te verwijderen, verwijdert deze sectie een EJB eindpunt uit een genoemde dienst *EncryptDocument*.
 
@@ -1214,7 +1214,7 @@ Om de informatie van de eindpuntschakelaar programmatically terug te winnen, cre
 Specificeer het type van schakelaar waarvan om informatie terug te winnen. De volgende types van schakelaars bestaan:
 
 * **EJB**: Laat een cliënttoepassing toe om de dienst aan te halen gebruikend de wijze EJB.
-* **SOAP**: Laat een cliënttoepassing toe om de dienst aan te halen gebruikend de wijze van de ZEEP.
+* **SOAP**: Laat een cliënttoepassing toe om de dienst aan te halen gebruikend de SOAP wijze.
 * **Gecontroleerde map**: Schakelt gecontroleerde mappen in staat een service aan te roepen.
 * **E-mail**: Laat e-mailberichten toe om de dienst aan te halen.
 * **Verwijderen**: Laat een Flex cliënttoepassing toe om de dienst aan te halen.

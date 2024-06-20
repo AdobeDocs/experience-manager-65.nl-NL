@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -314,7 +314,7 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
 **Het MyApplication/EncryptDocument-proces aanroepen vanuit Acrobat** {#invoke-process-acrobat}
 
-U kunt een Forms-proces aanroepen vanuit Acrobat met behulp van een REST-aanvraag. U kunt bijvoorbeeld de opdracht *MyApplication/EncryptDocument* proces. Als u een Forms-proces vanuit Acrobat wilt aanroepen, plaatst u een verzendknop in een XDP-bestand in Designer. (Zie [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
+U kunt een Forms-proces aanroepen vanuit Acrobat met behulp van een REST-aanvraag. U kunt bijvoorbeeld de opdracht *MyApplication/EncryptDocument* proces. Als u een Forms-proces vanuit Acrobat wilt aanroepen, plaatst u een verzendknop op een XDP-bestand in Designer. (Zie [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
 Geef de URL op om het proces binnen de knoppen aan te roepen *Verzenden naar URL* , zoals in de volgende afbeelding wordt getoond.
 

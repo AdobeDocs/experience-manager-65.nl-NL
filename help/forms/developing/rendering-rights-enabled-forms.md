@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 0%
@@ -131,7 +131,7 @@ Een formulier met ingeschakelde rechten weergeven met de Forms API (Java):
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een formulier waarvoor rechten zijn ingeschakeld, weergeven met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Snel starten (SOAP modus): Een formulier waarvoor rechten zijn ingeschakeld, weergeven met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

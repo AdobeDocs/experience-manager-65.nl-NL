@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '6201'
 ht-degree: 0%
@@ -82,7 +82,7 @@ De volgende lijst beschrijft elke stap van het authentificatieproces.
 
 >[!NOTE]
 >
->Als de streek van de servertijd van de cliënttijdzone verschillend is, wanneer het verbruiken van WSDL voor AEM Forms de dienst van PDF op een inheemse stapel van de ZEEP gebruikend een .NET cliënt op een cluster van de Server van de Toepassing WebSphere, kan de volgende de authentificatiefout van het Beheer van de Gebruiker voorkomen:
+>Als de streek van de servertijd van de cliënttijdzone verschillend is, wanneer het verbruiken van WSDL voor AEM Forms de dienst van PDF op een inheemse SOAP stapel gebruikend een .NET cliënt op een cluster van de Server van de Toepassing WebSphere, kan de volgende de authentificatiefout van het Beheer van de Gebruiker voorkomen:
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -202,7 +202,7 @@ Voeg gebruikers toe met de API voor directoryservice (Java):
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): gebruikers toevoegen met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Snel starten (SOAP modus): gebruikers toevoegen met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -335,7 +335,7 @@ Gebruikers verwijderen met de API voor directoryservice (Java):
 
 [Snel starten (EJB-modus): gebruikers verwijderen met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Snel starten (SOAP-modus): gebruikers verwijderen met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[Snel starten (SOAP modus): gebruikers verwijderen met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -667,7 +667,7 @@ Voer de volgende taken uit om rollen en machtigingen te beheren met de API (Java
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): rollen en machtigingen beheren met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[Snel starten (SOAP modus): Rollen en machtigingen beheren met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

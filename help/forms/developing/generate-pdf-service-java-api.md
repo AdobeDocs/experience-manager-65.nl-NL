@@ -8,30 +8,30 @@ topic-tags: develop
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) voor PDF-service genereren {#generate-pdf-service-java-api-quickstart-soap}
+# Java API voor PDF-service genereren (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
 Java API Quick Start (SOAP) is beschikbaar voor de service Generate PDF.
 
-[Snel starten (SOAP-modus): een Microsoft Word-document converteren naar een PDF-document met de Java API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een Microsoft Word-document converteren naar een PDF-document met de Java API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): HTML-inhoud converteren naar een PDF-document met de Java API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): HTML-inhoud converteren naar een PDF-document met de Java API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document converteren naar een RTF-bestand met de Java API (SOAP-modus)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
+[Snel starten (SOAP modus): een PDF-document converteren naar een RTF-bestand met de Java API (SOAP modus)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >De snelle Begin in Programmering met AEM Forms is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): een Microsoft Word-document converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): een Microsoft Word-document converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een Word-bestand met de naam *Lening.doc* naar een PDF-document met de naam *Lening.pdf*. (Zie [Word-documenten converteren naar PDF-documenten](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
 
@@ -145,7 +145,7 @@ In het volgende codevoorbeeld wordt een Word-bestand met de naam *Lening.doc* na
  }
 ```
 
-## Snel starten (SOAP-modus): HTML-inhoud converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): HTML-inhoud converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt HTML-inhoud in https://www.adobe.com geconverteerd naar een PDF-document met de naam *AdobeHTML.pdf*. (Zie [HTML-documenten converteren naar PDF-documenten](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
@@ -251,7 +251,7 @@ In het volgende Java-codevoorbeeld wordt HTML-inhoud in https://www.adobe.com ge
  }
 ```
 
-## Snel starten (SOAP-modus): een PDF-document converteren naar een RTF-bestand met de Java API (SOAP-modus) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
+## Snel starten (SOAP modus): een PDF-document converteren naar een RTF-bestand met de Java API (SOAP modus) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
 In het volgende codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een RTF-document met de naam *Lening.rtf*. (Zie [PDF-documenten omzetten in niet-afbeeldingsindelingen](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
 

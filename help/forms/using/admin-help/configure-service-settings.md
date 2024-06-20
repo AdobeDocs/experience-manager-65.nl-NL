@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 0%
@@ -451,7 +452,7 @@ De volgende instellingen zijn beschikbaar voor de Microsoft SharePoint-configura
 
 ## Instellingen voor uitvoerservice {#output-service-settings}
 
-De uitvoerservice `(OutputService)`kunt u XML-formuliergegevens samenvoegen met een formulierontwerp dat is gemaakt in AEM Forms Designer om een uitvoerstroom voor het document te maken in een van de volgende indelingen:
+De uitvoerservice `(OutputService)`kunt u XML-formuliergegevens samenvoegen met een formulierontwerp dat in AEM formulieren Designer is gemaakt, om een uitvoerstroom van het document te maken in een van de volgende indelingen:
 
 * Een PDF- of PDF/A-documentuitvoerstroom.
 * Een Adobe PostScript-uitvoerstroom.
@@ -749,7 +750,7 @@ De dienst van de Dienst van het Web ( `WebService`) biedt processen de mogelijkh
 
 De dienst van de Dienst van het Web laat processen toe om de verrichtingen van de Webdienst aan te halen. Een organisatie kan bijvoorbeeld een proces voor het opslaan en ophalen van informatie, zoals contact- en accountgegevens, willen integreren door de onzichtbare webservices van een serviceprovider aan te roepen. De dienst van de Dienst van het Web haalt een gespecificeerde Webdienst aan en gaat door waarden voor elk van zijn parameters over. Vervolgens worden de geretourneerde waarden van de bewerking opgeslagen in een toegewezen variabele binnen een proces.
 
-De dienst van de Dienst van het Web wisselt met Webdiensten door de berichten van de ZEEP te verzenden en te ontvangen. De dienst steunt ook het verzenden MIME, MTOM, en de gehechtheid SwaRef met de berichten van de ZEEP door het WS-Bijlage protocol te gebruiken. De de dienstinteractie van de Dienst van het Web is compatibel met de systemen van SAP en .NET Webdiensten.
+De dienst van de Dienst van het Web communiceert met Webdiensten door SOAP berichten te verzenden en te ontvangen. De dienst steunt ook het verzenden MIME, MTOM, en de gehechtheid SwaRef met SOAP berichten door het WS-Bijlage protocol te gebruiken. De de dienstinteractie van de Dienst van het Web is compatibel met de systemen van SAP en .NET Webdiensten.
 
 De volgende montages zijn beschikbaar voor de dienst van de Dienst van het Web.
 

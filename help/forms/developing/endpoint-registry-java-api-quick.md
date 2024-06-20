@@ -1,6 +1,6 @@
 ---
-title: Java&trade voor eindpuntregistratie; API QuickStart (SOAP)
-description: Leer hoe u eindpunten zoals EJB, SOAP, Gecontroleerde map, eindpunt in e-mail en het verwijderen van eindpunten toevoegt en eindpunten bewerkt, verwijdert en ophaalt met gebruik van Java&trade; API.
+title: Java&trade voor eindpuntregistratie; API QuickStart(SOAP)
+description: Leer hoe u eindpunten zoals EJB, SOAP, Gecontroleerde map, E-maileindpunt en het eindpunt verwijderen toevoegt en eindpunten bewerkt, verwijdert en ophaalt met gebruik van Java&trade; API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,20 +8,20 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
-# Eindpuntregister Java™ API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Endpoint Registry Java™ API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
 Java™ API Quick Start (SOAP) is beschikbaar voor de Endpoint Registry.
 
 [QuickStart: een EJB-eindpunt toevoegen met Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: een SOAP-eindpunt toevoegen met behulp van Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: een SOAP eindpunt toevoegen met Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [QuickStart: een eindpunt van een gecontroleerde map toevoegen met Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
@@ -37,7 +37,7 @@ Java™ API Quick Start (SOAP) is beschikbaar voor de Endpoint Registry.
 
 [QuickStart: informatie over eindpuntconnector ophalen met Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -146,9 +146,9 @@ Het volgende Java™ codevoorbeeld voegt een EJB eindpunt aan de dienst genoemd 
  
 ```
 
-## QuickStart: een SOAP-eindpunt toevoegen met de Java™ API {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## QuickStart: een SOAP eindpunt toevoegen met de Java™ API {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-Het volgende Java™ codevoorbeeld voegt een eindpunt van de ZEEP aan de dienst genoemd toe *MyApplication/EncryptDocument*. (Zie [SOAP-eindpunten toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+Het volgende Java™ codevoorbeeld voegt een SOAP eindpunt aan de dienst genoemd toe *MyApplication/EncryptDocument*. (Zie [SOAP eindpunten toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*

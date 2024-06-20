@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9814'
 ht-degree: 0%
@@ -19,22 +19,22 @@ ht-degree: 0%
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-De meeste AEM Forms-services in de servicecontainer zijn geconfigureerd om een webservice beschikbaar te maken, met volledige ondersteuning voor het genereren van WSDL (Web Service Definition Language). Met andere woorden, u kunt proxyobjecten maken die de native SOAP-stapel van een AEM Forms-service gebruiken. Dientengevolge, kunnen de diensten van AEM Forms de volgende berichten van de ZEEP ruilen en verwerken:
+De meeste AEM Forms-services in de servicecontainer zijn geconfigureerd om een webservice beschikbaar te maken, met volledige ondersteuning voor het genereren van WSDL (Web Service Definition Language). Met andere woorden, u kunt proxyobjecten maken die de native SOAP stapel van een AEM Forms-service gebruiken. Dit heeft tot gevolg dat AEM Forms-services de volgende SOAP kunnen uitwisselen en verwerken:
 
-* **SOAP-verzoek**: Verzonden naar een Forms-service door een clienttoepassing die een handeling aanvraagt.
-* **SOAP-reactie**: Verzonden naar een clienttoepassing door een Forms-service nadat een SOAP-aanvraag is verwerkt.
+* **SOAP**: Verzonden naar een Forms-service door een clienttoepassing die een handeling aanvraagt.
+* **SOAP reactie**: Verzonden naar een clienttoepassing door een Forms-service nadat een SOAP aanvraag is verwerkt.
 
-Met behulp van webservices kunt u dezelfde bewerkingen voor AEM Forms-services uitvoeren als met de Java API. Een voordeel van het gebruik van webservices om AEM Forms-services aan te roepen is dat u een clienttoepassing kunt maken in een ontwikkelomgeving die SOAP ondersteunt. Een clienttoepassing is niet gebonden aan een specifieke ontwikkelomgeving of programmeertaal. Bijvoorbeeld, kunt u een cliënttoepassing tot stand brengen gebruikend Microsoft Visual Studio .NET en C# als programmeertaal.
+Met behulp van webservices kunt u dezelfde bewerkingen voor AEM Forms-services uitvoeren als met de Java API. Een voordeel van het gebruik van webservices om AEM Forms-services aan te roepen, is dat u een clienttoepassing kunt maken in een ontwikkelomgeving die SOAP ondersteunt. Een clienttoepassing is niet gebonden aan een specifieke ontwikkelomgeving of programmeertaal. Bijvoorbeeld, kunt u een cliënttoepassing tot stand brengen gebruikend Microsoft Visual Studio .NET en C# als programmeertaal.
 
-De diensten van AEM Forms worden blootgesteld over het protocol van de ZEEP en zijn volgzaam WSI BasisProfiel 1.1. De Interoperabiliteit van de Diensten van het Web (WSI) is een open normenorganisatie die Webdienst interoperabiliteit over platforms bevordert. Zie voor meer informatie [https://www.ws-i.org/](https://www.ws-i.org).
+De diensten van AEM Forms worden blootgesteld over het SOAP protocol en zijn volgzaam WSI Basic Profile 1.1. De Interoperabiliteit van de Diensten van het Web (WSI) is een open normenorganisatie die Webdienst interoperabiliteit over platforms bevordert. Zie voor meer informatie [https://www.ws-i.org/](https://www.ws-i.org).
 
 AEM Forms ondersteunt de volgende webservicenormen:
 
 * **Codering**: Ondersteunt alleen document- en letterlijke codering (dit is de voorkeurscodering volgens het WSI Basic Profile). (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
-* **MTOM**: Geeft een manier aan om bijlagen te coderen met SOAP-verzoeken. (Zie [AEM Forms aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Vertegenwoordigt een andere manier om bijlagen te coderen met SOAP-verzoeken. (Zie [AEM Forms aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
-* **SOAP met bijlagen**: Steunt zowel MIME als DIME (de Directe Inkapseling van het Bericht van Internet). Deze protocollen zijn standaardmanieren om gehechtheid over ZEEP te verzenden. Microsoft Visual Studio .NET-toepassingen gebruiken DIME. (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
-* **WS-beveiliging**: Ondersteunt een symbolisch profiel voor een wachtwoord voor een gebruikersnaam. Dit is een standaardmanier om gebruikersnamen en wachtwoorden als onderdeel van de WS Security SOAP-header te verzenden. AEM Forms ondersteunt ook HTTP-basisverificatie. s
+* **MTOM**: Geeft een manier aan om bijlagen te coderen met SOAP. (Zie [AEM Forms aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: Vertegenwoordigt een andere manier om bijlagen te coderen met SOAP verzoeken. (Zie [AEM Forms aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
+* **SOAP met bijlagen**: Steunt zowel MIME als DIME (de Directe Inkapseling van het Bericht van Internet). Deze protocollen zijn standaardmanieren om gehechtheid over SOAP te verzenden. Microsoft Visual Studio .NET-toepassingen gebruiken DIME. (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
+* **WS-beveiliging**: Ondersteunt een symbolisch profiel voor een wachtwoord voor een gebruikersnaam. Dit is een standaardmanier om gebruikersnamen en wachtwoorden als onderdeel van de WS Security SOAP header te verzenden. AEM Forms ondersteunt ook HTTP-basisverificatie. s
 
 Als u AEM Forms-services wilt aanroepen met behulp van een webservice, maakt u doorgaans een proxybibliotheek die de service WSDL gebruikt. De *AEM Forms aanroepen met webservices* de sectie gebruikt JAX-WS om de volmachtsklassen van Java tot stand te brengen om de diensten aan te halen. (Zie [Java-proxyklassen maken met JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -214,8 +214,8 @@ Als een AEM Forms-servicebewerking een `BLOB` Als een invoerwaarde typt, maakt u
 Waarden toewijzen aan velden die bij de `BLOB` instantie als volgt:
 
 * **Base64**: Als u gegevens wilt doorgeven als tekst die is gecodeerd in een Base64-indeling, stelt u de gegevens in in het dialoogvenster `BLOB.binaryData` en het gegevenstype in de MIME-indeling instellen (bijvoorbeeld `application/pdf`) in de `BLOB.contentType` veld. (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
-* **MTOM**: Als u binaire gegevens wilt doorgeven in een MTOM-bijlage, stelt u de gegevens in het dialoogvenster `BLOB.MTOM` veld. Deze instelling koppelt de gegevens aan de SOAP-aanvraag met behulp van het Java JAX-WS-framework of de native API van het SOAP-framework. (Zie [AEM Forms aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Om binaire gegevens in een WS-I SwaRef gehechtheid over te gaan, plaats de gegevens in `BLOB.swaRef` veld. Deze instelling koppelt de gegevens aan het SOAP-verzoek met behulp van het Java JAX-WS-framework. (Zie [AEM Forms aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
+* **MTOM**: Als u binaire gegevens wilt doorgeven in een MTOM-bijlage, stelt u de gegevens in het dialoogvenster `BLOB.MTOM` veld. Deze instelling koppelt de gegevens aan de SOAP aanvraag met behulp van het Java JAX-WS-framework of de native API van het SOAP framework. (Zie [AEM Forms aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: Om binaire gegevens in een WS-I SwaRef gehechtheid over te gaan, plaats de gegevens in `BLOB.swaRef` veld. Deze instelling koppelt de gegevens aan de SOAP aanvraag met behulp van het Java JAX-WS-framework. (Zie [AEM Forms aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
 * **MIME- of DIME-bijlage**: Als u gegevens wilt doorgeven in een MIME- of DIME-bijlage, voegt u de gegevens toe aan de SOAP-aanvraag met de native API van het SOAP-framework. De id van de bijlage instellen in het dialoogvenster `BLOB.attachmentID` veld. (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
 * **Externe URL**: Als gegevens worden gehost op een webserver en toegankelijk zijn via een HTTP-URL, stelt u de HTTP-URL in het dialoogvenster `BLOB.remoteURL` veld. (Zie [AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP](#invoking-aem-forms-using-blob-data-over-http).)
 
@@ -223,19 +223,19 @@ Waarden toewijzen aan velden die bij de `BLOB` instantie als volgt:
 
 Het transmissieprotocol voor teruggekeerde `BLOB` objecten zijn afhankelijk van verschillende factoren, die in de volgende volgorde worden beschouwd en die stoppen wanneer aan de hoofdvoorwaarde wordt voldaan:
 
-1. **Doel-URL specificeert transmissieprotocol**. Als de doel-URL die bij de SOAP-aanroep is opgegeven, de parameter bevat `blob="`*BLOB_TYPE*&quot;, dan *BLOB_TYPE* bepaalt het transmissieprotocol. *BLOB_TYPE* is een plaatsaanduiding voor base64, dime, mime, http, mtom of swaref.
-1. **Het eindpunt van de ZEEP van de dienst is Slim**. Als aan de volgende voorwaarden wordt voldaan, worden de uitvoerdocumenten geretourneerd met hetzelfde verzendprotocol als de invoerdocumenten:
+1. **Doel-URL specificeert transmissieprotocol**. Als de doel-URL die bij de SOAP aanroep is opgegeven, de parameter bevat `blob="`*BLOB_TYPE*&quot;, dan *BLOB_TYPE* bepaalt het transmissieprotocol. *BLOB_TYPE* is een plaatsaanduiding voor base64, dime, mime, http, mtom of swaref.
+1. **Het SOAP van de dienst eindpunt is Smart**. Als aan de volgende voorwaarden wordt voldaan, worden de uitvoerdocumenten geretourneerd met hetzelfde verzendprotocol als de invoerdocumenten:
 
-   * De het eindpuntparameterStandaardprotocol van de ZEEP van de dienst voor de Voorwerpen van de Klodder van de Output wordt geplaatst aan Slim.
+   * De SOAP eindpuntparameter van de dienst het StandaardProtocol voor de Voorwerpen van de Blob van de Output wordt geplaatst aan Slim.
 
-     Voor elke dienst met een eindpunt van de ZEEP, laat de beleidsconsole u het transmissieprotocol voor om het even welke teruggekeerde blobs specificeren. (Zie [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+     Voor elke dienst met een SOAP eindpunt, laat de beleidsconsole u het transmissieprotocol voor om het even welke teruggekeerde blobs specificeren. (Zie [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * AEM Forms-service neemt een of meer documenten op als invoer.
 
-1. **Het eindpunt van de ZEEP van de dienst is niet Slim**. Het gevormde protocol bepaalt het protocol van de documenttransmissie, en de gegevens zijn teruggekeerd in het overeenkomstige `BLOB` veld. Bijvoorbeeld, als het eindpunt van de ZEEP aan DIME wordt geplaatst, dan is de teruggekeerde blob in `blob.attachmentID` , ongeacht het verzendprotocol van een invoerdocument.
+1. **Het SOAP van de dienst eindpunt is niet slim**. Het gevormde protocol bepaalt het protocol van de documenttransmissie, en de gegevens zijn teruggekeerd in het overeenkomstige `BLOB` veld. Als het SOAP-eindpunt bijvoorbeeld is ingesteld op DIME, bevindt de geretourneerde blob zich in het dialoogvenster `blob.attachmentID` , ongeacht het verzendprotocol van een invoerdocument.
 1. **Anders**. Als een service het documenttype niet als invoer gebruikt, worden de uitvoerdocumenten geretourneerd in het dialoogvenster `BLOB.remoteURL` in het HTTP-protocol.
 
-Zoals beschreven in de eerste voorwaarde, kunt u het transmissietype voor om het even welke teruggekeerde documenten verzekeren door het eindpunt URL van de ZEEP met een achtervoegsel als volgt uit te breiden:
+Zoals beschreven in de eerste voorwaarde, kunt u het transmissietype voor om het even welke teruggekeerde documenten verzekeren door het SOAP eindpunt URL met een achtervoegsel als volgt uit te breiden:
 
 ```java
      https://<your_serverhost>:<your_port>/soap/services/<service
@@ -245,7 +245,7 @@ Zoals beschreven in de eerste voorwaarde, kunt u het transmissietype voor om het
 Hier is de correlatie tussen transmissietypen en het gebied waarvan u de gegevens verkrijgt:
 
 * **Base64-indeling**: Stel de `blob` achtervoegsel tot `base64` om de gegevens in de `BLOB.binaryData` veld.
-* **MIME- of DIME-bijlage**: Stel de `blob` achtervoegsel tot `DIME` of `MIME` om de gegevens te retourneren als een corresponderend type bijlage met de bijlage-id die in het dialoogvenster `BLOB.attachmentID` veld. Gebruik de eigen API van het SOAP-framework om de gegevens in de bijlage te lezen.
+* **MIME- of DIME-bijlage**: Stel de `blob` achtervoegsel tot `DIME` of `MIME` om de gegevens te retourneren als een corresponderend type bijlage met de bijlage-id die in het dialoogvenster `BLOB.attachmentID` veld. Gebruik de merkgebonden API van het SOAP-framework om de gegevens in de bijlage te lezen.
 * **Externe URL**: Stel de `blob` achtervoegsel tot `http` om de gegevens op de toepassingsserver te houden en de URL die naar de gegevens in de `BLOB.remoteURL` veld.
 * **MTOM of SwaRef**: Stel de `blob` achtervoegsel tot `mtom` of `swaref` om de gegevens te retourneren als een corresponderend type bijlage met de bijlage-id die in het dialoogvenster `BLOB.MTOM` of `BLOB.swaRef` velden. Gebruik de native API van het SOAP-framework om de gegevens in de bijlage te lezen.
 
@@ -259,7 +259,7 @@ Hier is de correlatie tussen transmissietypen en het gebied waarvan u de gegeven
 
 **MTOM-transmissie van bytearrays met base64-codering**
 
-Naast de `BLOB` -object, ondersteunt het MTOM-protocol alle byte-arrayparameters of byte-arrayvelden van een complex type. Dit betekent dat SOAP-frameworks van clients die MTOM ondersteunen, alle `xsd:base64Binary` element as an MTOM gehechtheid (in plaats van een base64-Gecodeerde tekst). AEM Forms SOAP-eindpunten kunnen dit type byte-arraycodering lezen. De AEM Forms-service retourneert echter altijd een byte-arraytype als een base64-gecodeerde tekst. De bytearray-parameters van de uitvoer bieden geen ondersteuning voor MTOM.
+Naast de `BLOB` -object, ondersteunt het MTOM-protocol alle byte-arrayparameters of byte-arrayvelden van een complex type. Dit betekent dat client-SOAP frameworks die MTOM ondersteunen, alle `xsd:base64Binary` element as an MTOM gehechtheid (in plaats van een base64-Gecodeerde tekst). AEM Forms SOAP eindpunten kunnen dit type byte-array-codering lezen. De AEM Forms-service retourneert echter altijd een byte-arraytype als een base64-gecodeerde tekst. De bytearray-parameters van de uitvoer bieden geen ondersteuning voor MTOM.
 
 AEM Forms-services die een grote hoeveelheid binaire gegevens retourneren, gebruiken het type Document/BLOB in plaats van het type byte-array. Het documenttype is veel efficiënter voor het verzenden van grote hoeveelheden gegevens.
 
@@ -285,11 +285,11 @@ In de volgende tabel worden de gegevenstypen van Java weergegeven en het overeen
   </tr>
   <tr>
    <td><p><code>java.util.Date</code></p></td>
-   <td><p>De <code>DATE</code> type, dat in de dienst WSDL als volgt wordt bepaald:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Als een AEM Forms-servicebewerking een <code>java.util.Date</code> waarde als invoer, moet de SOAP cliënttoepassing de datum in <code>DATE.date</code> veld. De instelling van <code>DATE.calendar</code> in dit geval veroorzaakt een runtime-uitzondering. Als de dienst a terugkeert <code>java.util.Date</code>, wordt de datum geretourneerd in de <code>DATE.date</code> veld.</p></td>
+   <td><p>De <code>DATE</code> type, dat in de dienst WSDL als volgt wordt bepaald:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Als een AEM Forms-servicebewerking een <code>java.util.Date</code> waarde als invoer, moet de SOAP clienttoepassing de datum in de <code>DATE.date</code> veld. De instelling van <code>DATE.calendar</code> in dit geval veroorzaakt een runtime-uitzondering. Als de dienst a terugkeert <code>java.util.Date</code>, wordt de datum geretourneerd in de <code>DATE.date</code> veld.</p></td>
   </tr>
   <tr>
    <td><p><code>java.util.Calendar</code></p></td>
-   <td><p>De <code>DATE</code> type, dat in de dienst WSDL als volgt wordt bepaald:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Als een AEM Forms-servicebewerking een <code>java.util.Calendar</code> waarde als invoer, moet de SOAP cliënttoepassing de datum in <code>DATE.caledendar</code> veld. De instelling van <code>DATE.date</code> veroorzaakt in dit geval een runtime uitzondering. Als de dienst a terugkeert <code>java.util.Calendar</code>, dan is de datum teruggekeerd in <code>DATE.calendar</code> veld. </p></td>
+   <td><p>De <code>DATE</code> type, dat in de dienst WSDL als volgt wordt bepaald:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Als een AEM Forms-servicebewerking een <code>java.util.Calendar</code> waarde als invoer, moet de SOAP clienttoepassing de datum in de <code>DATE.caledendar</code> veld. De instelling van <code>DATE.date</code> veroorzaakt in dit geval een runtime uitzondering. Als de dienst a terugkeert <code>java.util.Calendar</code>, dan is de datum teruggekeerd in <code>DATE.calendar</code> veld. </p></td>
   </tr>
   <tr>
    <td><p><code>java.math.BigDecimal</code></p></td>
@@ -422,7 +422,7 @@ U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklas
     http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1
    ```
 
-1. Maak een BAT-bestand om het Ant-constructiescript uit te voeren. De volgende opdracht kan worden gevonden in een BAT-bestand dat verantwoordelijk is voor het uitvoeren van het Ant-constructiescript:
+1. Maak een BAT bestand om het Ant-constructiescript uit te voeren. De volgende opdracht kan worden gevonden in een BAT-bestand dat verantwoordelijk is voor het uitvoeren van het Ant-constructiescript:
 
    ```java
     ant -buildfile "build.xml" wsdl
@@ -505,7 +505,7 @@ U kunt Java-bibliotheekbestanden van de as genereren door de volgende stappen ui
 
    In dit Ant-constructiescript ziet u dat de `url` eigenschap wordt ingesteld om te verwijzen naar de WSDL van de coderingsservice die op localhost wordt uitgevoerd. De `username` en `password` eigenschappen moeten worden ingesteld op een geldige gebruikersnaam en wachtwoord voor AEM formulieren.
 
-1. Maak een BAT-bestand om het Ant-constructiescript uit te voeren. De volgende opdracht kan worden gevonden in een BAT-bestand dat verantwoordelijk is voor het uitvoeren van het Ant-constructiescript:
+1. Maak een BAT bestand om het Ant-constructiescript uit te voeren. De volgende opdracht kan worden gevonden in een BAT-bestand dat verantwoordelijk is voor het uitvoeren van het Ant-constructiescript:
 
    ```java
     ant -buildfile "build.xml" encryption-wsdl2java-client
@@ -563,7 +563,7 @@ U kunt Java-bibliotheekbestanden van de as genereren door de volgende stappen ui
 
 ## AEM Forms aanroepen met Base64-codering {#invoking-aem-forms-using-base64-encoding}
 
-U kunt de dienst van AEM Forms aanhalen gebruikend het coderen Base64. Base64-codering codeert bijlagen die worden verzonden met een aanroepingsverzoek voor een webservice. Dat wil zeggen: `BLOB` gegevens zijn Base64 gecodeerd, niet het volledige bericht van de ZEEP.
+U kunt de dienst van AEM Forms aanhalen gebruikend het coderen Base64. Base64-codering codeert bijlagen die worden verzonden met een aanroepingsverzoek voor een webservice. Dat wil zeggen: `BLOB` gegevens zijn Base64 gecodeerd, niet het volledige SOAP bericht.
 
 ‘AEM Forms aanroepen met Base64-codering’ bespreekt het aanroepen van het volgende kortstondige AEM Forms-proces met de naam `MyApplication/EncryptDocument` door Base64-codering te gebruiken.
 
@@ -623,7 +623,7 @@ Creeer een project van de Bibliotheek van de Klasse van Visual Studio dat een .N
 
 >[!NOTE]
 >
->Deze procedure leidt tot een .NET cliëntassemblage genoemd DocumentService.dll die u kunt gebruiken om de verzoeken van de ZEEP naar de `MyApplication/EncryptDocument` service.
+>Deze procedure leidt tot een .NET cliëntassemblage genoemd DocumentService.dll die u kunt gebruiken om SOAP verzoeken naar te verzenden `MyApplication/EncryptDocument` service.
 
 >[!NOTE]
 >
@@ -645,7 +645,7 @@ U kunt de `MyApplication/EncryptDocument` de dienst (die in Workbench) gebruiken
 1. Creeer een Microsoft .NET cliëntassemblage die verbruikt `MyApplication/EncryptDocument` service WSDL.
 1. Creeer een project van Microsoft .NET van de cliënt. Verwijs de de cliëntassemblage van Microsoft .NET in het cliëntproject. Ook verwijzing `System.Web.Services`.
 1. Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `MyApplication_EncryptDocumentService` object door de standaardconstructor aan te roepen.
-1. Stel de `MyApplication_EncryptDocumentService` object `Credentials` eigenschap met een `System.Net.NetworkCredential` object. Binnen de `System.Net.NetworkCredential` -constructor, geeft u een gebruikersnaam voor AEM formulieren en het bijbehorende wachtwoord op. Stel verificatiewaarden in om uw .NET-clienttoepassing in te schakelen voor het uitwisselen van SOAP-berichten met AEM Forms.
+1. Stel de `MyApplication_EncryptDocumentService` object `Credentials` eigenschap met een `System.Net.NetworkCredential` object. Binnen de `System.Net.NetworkCredential` -constructor, geeft u een gebruikersnaam voor AEM formulieren en het bijbehorende wachtwoord op. Plaats authentificatiewaarden om uw .NET cliënttoepassing toe te laten om SOAP berichten met AEM Forms met succes uit te wisselen.
 1. Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om een PDF-document op te slaan dat aan de `MyApplication/EncryptDocument` proces.
 1. Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend.
 1. Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
@@ -715,7 +715,7 @@ U kunt de dienst van AEM Forms aanhalen gebruikend de volmachtsklassen van Java 
 
 ## AEM Forms aanroepen met MTOM {#invoking-aem-forms-using-mtom}
 
-U kunt de diensten van AEM Forms aanhalen door de standaardMTOM van de Webdienst te gebruiken. Deze norm bepaalt hoe binaire gegevens, zoals een document van PDF, over Internet of Intranet worden overgebracht. Een eigenschap van MTOM is het gebruik van `XOP:Include` element. Dit element wordt bepaald in de Binary Optimized Packaging (XOP) specificatie van XML om de binaire gehechtheid van een bericht van de ZEEP van verwijzingen te voorzien.
+U kunt de diensten van AEM Forms aanhalen door de standaardMTOM van de Webdienst te gebruiken. Deze norm bepaalt hoe binaire gegevens, zoals een document van PDF, over Internet of Intranet worden overgebracht. Een eigenschap van MTOM is het gebruik van `XOP:Include` element. This element is defined in the XML Binary Optimized Packaging (XOP) specification to reference the binary attachments of a SOAP message.
 
 De discussie gaat hier over het gebruik van MTOM om het volgende kortstondige AEM Forms-proces met de naam `MyApplication/EncryptDocument`.
 
@@ -736,7 +736,7 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 >
 >Op JAX WS gebaseerde toepassingen die het MTOM transmissieprotocol gebruiken zijn beperkt tot 25MB van verzonden en ontvangen gegevens. Deze beperking is het gevolg van een bug in JAX-WS. Als de gecombineerde grootte van uw verzonden en ontvangen dossiers 25MB overschrijdt, gebruik het SwaRef transmissieprotocol in plaats van MTOM. Anders bestaat de mogelijkheid van een `OutOfMemory` uitzondering.
 
-De bespreking hier is over het gebruiken van MTOM binnen een project van Microsoft .NET om de diensten van AEM Forms aan te halen. Het .NET gebruikte kader is 3.5, en het ontwikkelmilieu is Visual Studio 2008. Als u de Verbeteringen van de Dienst van het Web (WSE) hebt die op uw ontwikkelingscomputer worden geïnstalleerd, verwijder het. .NET 3.5 kader steunt een kader van de ZEEP genoemd Communicatie van Vensters Stichting (WCF). Wanneer het aanhalen van AEM Forms door MTOM te gebruiken, slechts WCF (niet WSE) wordt gesteund.
+De bespreking hier is over het gebruiken van MTOM binnen een project van Microsoft .NET om de diensten van AEM Forms aan te halen. Het .NET gebruikte kader is 3.5, en het ontwikkelmilieu is Visual Studio 2008. Als u de Verbeteringen van de Dienst van het Web (WSE) hebt die op uw ontwikkelingscomputer worden geïnstalleerd, verwijder het. .NET 3.5 kader steunt een SOAP kader genoemd Communicatie van Vensters Stichting (WCF). Wanneer het aanhalen van AEM Forms door MTOM te gebruiken, slechts WCF (niet WSE) wordt gesteund.
 
 ### Creërend een .NET project dat de dienst aanhaalt gebruikend MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom}
 
@@ -829,7 +829,7 @@ Neem de `MyApplication/EncryptDocument` proces dat een onbeveiligd document van 
 
 ## AEM Forms aanroepen met SwaRef {#invoking-aem-forms-using-swaref}
 
-U kunt de diensten van AEM Forms aanhalen gebruikend SwaRef. De inhoud van de `wsi:swaRef` Het element van XML wordt verzonden als gehechtheid binnen een lichaam van de ZEEP dat de verwijzing naar de gehechtheid opslaat. Wanneer het aanhalen van de dienst van Forms door SwaRef te gebruiken, creeer de volmachtsklassen van Java door Java API voor de Diensten van het Web van XML te gebruiken (JAX-WS). (Zie [Java API voor XML-webservices](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
+U kunt de diensten van AEM Forms aanhalen gebruikend SwaRef. De inhoud van de `wsi:swaRef` Het element van XML wordt verzonden als gehechtheid binnen een SOAP die de verwijzing naar de gehechtheid opslaat. Wanneer het aanhalen van de dienst van Forms door SwaRef te gebruiken, creeer de volmachtsklassen van Java door Java API voor de Diensten van het Web van XML te gebruiken (JAX-WS). (Zie [Java API voor XML-webservices](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 
 Het gaat hier om het aanroepen van het volgende kortstondige Forms-proces, genaamd `MyApplication/EncryptDocument` met SwaRef.
 
@@ -929,7 +929,7 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
 >[!NOTE]
 >
->Het wordt aanbevolen bekend te zijn met het aanroepen van AEM Forms met SOAP. (Zie [AEM Forms aanroepen met webservices](#invoking-aem-forms-using-web-services).)
+>Het wordt aanbevolen bekend te zijn met het gebruik van SOAP Invoking van AEM Forms. (Zie [AEM Forms aanroepen met webservices](#invoking-aem-forms-using-web-services).)
 
 ### Creërend een .NET cliëntassemblage die gegevens over HTTP gebruikt {#creating-a-net-client-assembly-that-uses-data-over-http}
 
@@ -961,7 +961,7 @@ U kunt de `MyApplication/EncryptDocument` de dienst (die in Workbench) gebruiken
 1. Creeer de .NET cliëntassemblage.
 1. Verwijs naar de Microsoft .NET cliëntassemblage. Creeer een project van Microsoft .NET van de cliënt. Verwijs de de cliëntassemblage van Microsoft .NET in het cliëntproject. Ook verwijzing `System.Web.Services`.
 1. Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `MyApplication_EncryptDocumentService` object door de standaardconstructor aan te roepen.
-1. Stel de `MyApplication_EncryptDocumentService` object `Credentials` eigenschap met een `System.Net.NetworkCredential` object. Binnen de `System.Net.NetworkCredential` -constructor, geeft u een gebruikersnaam voor AEM formulieren en het bijbehorende wachtwoord op. Stel verificatiewaarden in om uw .NET-clienttoepassing in te schakelen voor het uitwisselen van SOAP-berichten met AEM Forms.
+1. Stel de `MyApplication_EncryptDocumentService` object `Credentials` eigenschap met een `System.Net.NetworkCredential` object. Binnen de `System.Net.NetworkCredential` -constructor, geeft u een gebruikersnaam voor AEM formulieren en het bijbehorende wachtwoord op. Plaats authentificatiewaarden om uw .NET cliënttoepassing toe te laten om SOAP berichten met AEM Forms met succes uit te wisselen.
 1. Een `BLOB` object met behulp van de constructor. De `BLOB` object wordt gebruikt om gegevens door te geven aan `MyApplication/EncryptDocument` proces.
 1. Wijs een tekenreekswaarde toe aan de `BLOB` object `remoteURL` gegevenslid dat de plaats van URI van een PDF- document specificeert om tot het `MyApplication/EncryptDocument`service.
 1. De `MyApplication/EncryptDocument` proces door het `MyApplication_EncryptDocumentService` object `invoke` en het doorgeven van de `BLOB` object. Met dit proces wordt een versleuteld PDF-document binnen een `BLOB` object.
@@ -1118,14 +1118,14 @@ U kunt een Forms-service aanroepen met DIME. Neem de `MyApplication/EncryptDocum
 
 Met het hulpprogramma Apache Axis WSDL2Java kunt u een service-WSDL converteren naar Java-proxyklassen, zodat u servicebewerkingen kunt activeren. Met Apache Ant kunt u Axis-bibliotheekbestanden genereren vanuit een AEM Forms-service WSDL waarmee u de service kunt aanroepen. (Zie [Java-proxyklassen maken met Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
 
-Met het hulpprogramma Apache Axis WSDL2Java worden JAVA-bestanden gegenereerd die methoden bevatten die worden gebruikt om SOAP-aanvragen naar een service te verzenden. De verzoeken van de ZEEP die door de dienst worden ontvangen worden gedecodeerd door de as-Gegenereerde bibliotheken en worden terug gezet in de methodes en de argumenten.
+Met het hulpprogramma Apache Axis WSDL2Java worden JAVA-bestanden gegenereerd die methoden bevatten die worden gebruikt om SOAP-aanvragen naar een service te verzenden. SOAP verzoeken die door de dienst worden ontvangen worden gedecodeerd door de as-geproduceerde bibliotheken en terug in de methodes en de argumenten teruggezet.
 
 Om het `MyApplication/EncryptDocument` De dienst (die in Workbench) gebruikend Axis-geproduceerde bibliotheekdossiers en DIME werd gebouwd, voert de volgende stappen uit:
 
 1. Java-proxyklassen maken die de `MyApplication/EncryptDocument` service-WSDL met Apache Axis. (Zie [Java-proxyklassen maken met Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
 1. Neem de Java-proxyklassen op in het klassepad.
 1. Een `MyApplicationEncryptDocumentServiceLocator` object met behulp van de constructor.
-1. Een `URL` -object door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de WSDL-definitie van de AEM Forms-service aangeeft. Zorg ervoor dat u `?blob=dime` aan het eind van het eindpunt van de ZEEP URL. Gebruik bijvoorbeeld
+1. Een `URL` -object door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de WSDL-definitie van de AEM Forms-service aangeeft. Zorg ervoor dat u `?blob=dime` aan het einde van de URL van het SOAP eindpunt. Gebruik bijvoorbeeld
 
    ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=dime.
@@ -1232,7 +1232,7 @@ Een gebruiker van AEM formulieren kan worden geverifieerd met een SAML-token dat
 
 Als u een specifieke gebruiker wilt verpersoonlijken, roept u de `AuthenticationManager.getAuthResultOnBehalfOfUser` met een webservice. Deze methode retourneert een `AuthResult` instantie die de bevestiging SAML voor die gebruiker bevat.
 
-Daarna, gebruik die bevestiging SAML om het even welke dienst aan te halen die authentificatie vereist. Deze actie omvat het verzenden van de bevestiging als deel van de kopbal van de ZEEP. Wanneer met deze bewering een webserviceaanroep wordt gemaakt, identificeert AEM Forms de gebruiker als de gebruiker die door die bewering wordt vertegenwoordigd. Namelijk is de gebruiker die in de bewering wordt gespecificeerd de gebruiker die de dienst aanhaalt.
+Daarna, gebruik die bevestiging SAML om het even welke dienst aan te halen die authentificatie vereist. Deze actie omvat het verzenden van de bewering als onderdeel van de SOAP header. Wanneer met deze bewering een webserviceaanroep wordt gemaakt, identificeert AEM Forms de gebruiker als de gebruiker die door die bewering wordt vertegenwoordigd. Namelijk is de gebruiker die in de bewering wordt gespecificeerd de gebruiker die de dienst aanhaalt.
 
 ### Het gebruiken van de klassen van de As van Apache en op SAML-Gebaseerde authentificatie {#using-apache-axis-classes-and-saml-based-authentication}
 
@@ -1334,11 +1334,11 @@ U kunt de dienst van Forms aanhalen door een .NET cliëntassemblage en op SAML-G
 >
 >In de sectie DIME wordt WSE 2.0 gebruikt. Om op SAML-Gebaseerde authentificatie te gebruiken, volg de zelfde instructies die in het DIME onderwerp worden gespecificeerd. Vervang WSE 2.0 echter door WSE 3.0. Installeer de Verbeteringen 3.0 van de Diensten van het Web op uw ontwikkelingscomputer en integreer het met Microsoft Visual Studio .NET. U kunt de Verbeteringen 3.0 van de Diensten van het Web van [Microsoft Download Center](https://www.microsoft.com/downloads/search.aspx).
 
-De architectuur WSE gebruikt Beleid, Assertions, en de gegevenstypes SecurityToken. Geef voor een webserviceaanroep kort een beleid op. Een beleid kan meerdere beweringen hebben. Elke bewering kan filters bevatten. Een filter wordt aangehaald in bepaalde stadia in een vraag van de Webdienst en, op dat ogenblik, kunnen zij het verzoek van de ZEEP wijzigen. Voor volledige details, zie de Verbeteringen 3.0 van de Dienst van het Web documentatie.
+De architectuur WSE gebruikt Beleid, Assertions, en de gegevenstypes SecurityToken. Geef voor een webserviceaanroep kort een beleid op. Een beleid kan meerdere beweringen hebben. Elke bewering kan filters bevatten. Een filter wordt aangehaald in bepaalde stadia in een vraag van de Webdienst en, op dat ogenblik, kunnen zij het SOAP verzoek wijzigen. Voor volledige details, zie de Verbeteringen 3.0 van de Dienst van het Web documentatie.
 
 **De bevestiging en het filter maken**
 
-In het volgende C#-codevoorbeeld worden filter- en assertieklassen gemaakt. In dit codevoorbeeld wordt een SamlAssertionOutputFilter gemaakt. Dit filter wordt aangehaald door het kader van WSE alvorens het verzoek van de ZEEP wordt verzonden naar AEM Forms.
+In het volgende C#-codevoorbeeld worden filter- en assertieklassen gemaakt. In dit codevoorbeeld wordt een SamlAssertionOutputFilter gemaakt. Dit filter wordt aangeroepen door het kader van WSE alvorens het SOAP verzoek wordt verzonden naar AEM Forms.
 
 ```java
  class LCSamlPolicyAssertion : Microsoft.Web.ServicES4.Design.PolicyAssertion
@@ -1364,7 +1364,7 @@ In het volgende C#-codevoorbeeld worden filter- en assertieklassen gemaakt. In d
 
 **SAML-token maken**
 
-Creeer een klasse om de bewering van SAML te vertegenwoordigen. De belangrijkste taak die deze klasse uitvoert, is het omzetten van gegevenswaarden van tekenreeks in xml en het behouden van witruimte. Deze bewering-xml wordt later geïmporteerd in de SOAP-aanvraag.
+Creeer een klasse om de bewering van SAML te vertegenwoordigen. De belangrijkste taak die deze klasse uitvoert, is het omzetten van gegevenswaarden van tekenreeks in xml en het behouden van witruimte. Deze bewering-xml wordt later geïmporteerd in het SOAP-verzoek.
 
 ```java
  class SamlToken : SecurityToken

@@ -6,8 +6,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Foundation Components, Workflow
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7512'
 ht-degree: 0%
@@ -459,7 +460,7 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 * **[!UICONTROL Select XCI file using]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
 
 * **[!UICONTROL Locale]**: Geeft de taal aan die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
-   * **Als u de standaardinstelling van de server gebruikt**: (Standaard) Gebruik de landinstelling die op de AEM Forms-server is geconfigureerd. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_65).)
+   * **Als u de standaardinstelling van de server gebruikt**: (Standaard) Gebruik de landinstelling die op de AEM Forms-server is geconfigureerd. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_65).)
 
    * **Aangepaste waarde gebruiken**: Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.
 

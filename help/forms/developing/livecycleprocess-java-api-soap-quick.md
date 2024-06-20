@@ -1,6 +1,6 @@
 ---
 title: LiveCycleProcess Java API(SOAP)Snel starten
-description: Met de SOAP (LiveCycleProcess Java API) kunt u snel aan de slag om naar procesinstanties te zoeken, procesinstanties op te schorten, geschorste procesinstanties te starten, procesinstanties te beëindigen, procesgegevens op te ruimen en de status van een taak op te halen.
+description: Gebruik de LiveCycleProcess Java API (SOAP) Quick Start om naar procesinstanties te zoeken, procesinstanties op te schorten, geschorste procesinstanties te starten, procesinstanties te beëindigen, procesgegevens op te ruimen en de status van een taak op te halen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,36 +8,36 @@ topic-tags: develop
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# LiveCycleProcess Java API (SOAP), snel aan de slag {#livecycleprocess-java-api-soap-quick-start}
+# LiveCycleProcess Java API (SOAP) Snel starten {#livecycleprocess-java-api-soap-quick-start}
 
-De Java API (SOAP) Quick Start is beschikbaar voor processen. A *procesinstantie* is een instantie van een specifiek proces dat is gestart door een aanroepingsmethode zoals de API voor aanroepen of vanuit de werkruimte.
+De Java API(SOAP) Quick Start is beschikbaar voor processen. A *procesinstantie* is een instantie van een specifiek proces dat is gestart door een aanroepingsmethode zoals de API voor aanroepen of vanuit de werkruimte.
 
-[Snel starten (SOAP-modus): zoeken naar procesinstanties met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[Snel starten (SOAP modus): zoeken naar procesinstanties met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): procesinstanties onderbreken met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Snel starten (SOAP modus): procesinstanties onderbreken met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): instanties van geschorste processen starten met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[Snel starten (SOAP modus): instanties van geschorste processen starten met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): procesinstanties beëindigen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Snel starten (SOAP modus): procesinstanties beëindigen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): procesgegevens wissen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[Snel starten (SOAP modus): procesgegevens wissen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
-[Snel starten (SOAP-modus): de status van een taak ophalen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[Snel starten (SOAP modus): de status van een taak ophalen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >Snel aan de slag met Programmeren met AEM Forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het toepasselijke besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-## Snel starten (SOAP-modus): zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+## Snel starten (SOAP modus): zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op de *Hypothecaire lening - Prebuilt* proces.
 
@@ -155,7 +155,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn 
  
 ```
 
-## Snel starten (SOAP-modus): procesinstanties onderbreken met de Java API {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Snel starten (SOAP modus): procesinstanties onderbreken met de Java API {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u een procesinstantie wilt onderbreken, hebt u de proces-oproepings-id nodig die kan worden verkregen wanneer een langdurig proces wordt aangeroepen met de API voor oproeping.
 
@@ -247,7 +247,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u e
  
 ```
 
-## Snel starten (SOAP-modus): instanties van geschorste processen starten met de Java API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Snel starten (SOAP modus): instanties van geschorste processen starten met de Java API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces gestart.
 
@@ -335,7 +335,7 @@ In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces
  
 ```
 
-## Snel starten (SOAP-modus): procesinstanties beëindigen met de Java API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Snel starten (SOAP modus): procesinstanties beëindigen met de Java API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de id-waarde 756c22860a242fb101ec7a5bc0977fd6.
 
@@ -426,7 +426,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
  
 ```
 
-## Snel starten (SOAP-modus): procesgegevens wissen met de Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Snel starten (SOAP modus): procesgegevens wissen met de Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
 Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam *SecureDocument*. Er wordt een filter gebruikt dat aangeeft dat gegevens moeten worden gewist voor procesinstanties waarbij de procesvariabele genaamd *inValue* is groter dan 200.
 
@@ -533,7 +533,7 @@ Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam 
  
 ```
 
-## Snel starten (SOAP-modus): de status van een taak ophalen met de Java API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Snel starten (SOAP modus): de status van een taak ophalen met de Java API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
 In het volgende codevoorbeeld wordt de status van 10 AEM Forms-taken opgehaald.
 

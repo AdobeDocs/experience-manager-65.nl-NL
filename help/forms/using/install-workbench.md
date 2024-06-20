@@ -6,7 +6,8 @@ topic-tags: author
 role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Workbench, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -100,10 +101,10 @@ De volgende minimale vereisten worden aanbevolen: schijfruimte voor installatie:
 
 Zie de volledige lijst met ondersteunde platforms voor Workbench op [Door AEM Forms ondersteunde platforms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
-## Installatieoverwegingen voor Designer {#designer-installation-considerations}
+## Designer-installatieoverwegingen {#designer-installation-considerations}
 
-Standaard bevat de Workbench-installatie een overeenkomende versie van Designer met alleen Engels. Als de Workbench-installatietoepassing een bestaande versie van Designer op uw computer detecteert, wordt de installatie mogelijk beëindigd en moet u de huidige versie van Designer verwijderen voordat u kunt doorgaan.
-De onderstaande tabel bevat een volledige lijst met mogelijke installatiescenario&#39;s van Designer die u kunt tegenkomen en alle handelingen die u moet uitvoeren bij de installatie van Workbench.
+Standaard bevat de Workbench-installatie een overeenkomende Engels-enige versie van Designer. Als de Workbench-installatietoepassing een bestaande versie van Designer op uw computer detecteert, wordt de installatie mogelijk beëindigd en moet u de huidige versie van Designer verwijderen voordat u kunt doorgaan.
+De onderstaande tabel bevat een volledige lijst met mogelijke Designer-installatiescenario&#39;s die u kunt tegenkomen en alle handelingen die u moet uitvoeren bij de installatie van Workbench.
 
 <table>
  <tbody>
@@ -112,15 +113,15 @@ De onderstaande tabel bevat een volledige lijst met mogelijke installatiescenari
    <td><p><strong>Vereiste acties</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Acrobat Pro of Acrobat Pro Extended (inclusief Designer)</p> </td>
+   <td><p>Acrobat Pro of Acrobat Pro Extended (omvat Designer)</p> </td>
    <td><p>Geen.<br /> 
 Met de Workbench-installatie wordt een exemplaar van Designer op uw computer gedetecteerd dat met Acrobat Pro of Acrobat Pro Extended is geïnstalleerd.<br />
-Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar bestaan, bijvoorbeeld Designer 6.4.x voor Workbench 6.4 en Designer 6.5.0.x voor Workbench 6.5. U hoeft de geïnstalleerde versie van Designer die met Acrobat 10 Pro of Acrobat 10 Pro Extended of hoger is geïnstalleerd, niet te verwijderen.
+Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar bestaan, bijvoorbeeld Designer 6.4.x voor Workbench 6.4 en Designer 6.5.0.x voor Workbench 6.5. U hoeft de versie van Designer die met Acrobat 10 Pro of Acrobat 10 Pro Extended of hoger is geïnstalleerd, niet te verwijderen.
 <br /></p> </td>
   </tr>
   <tr>
    <td><p>Designer (zelfstandig)</p> </td>
-   <td><p>Geen. <br />De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. <br />Het installatieprogramma van Workbench installeert geen nieuwe versie van Designer opnieuw. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd bij het Workbench-installatieprogramma, patcheerd. Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> </p> </td>
+   <td><p>Geen. <br />De versie van Designer die bij Workbench wordt geleverd, is alleen Engelstalig. <br />Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd bij het Workbench-installatieprogramma, patcheerd. Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -159,7 +160,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 
    >[!NOTE]
    >
-   >U kunt Designer dat met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
+   >U kunt Designer die met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
 
 1. Accepteer de standaardmap zoals deze wordt weergegeven of klik op Kiezen en navigeer naar de map waarin u Workbench wilt installeren. Klik vervolgens op Volgende.
 
@@ -172,7 +173,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 1. Controleer de opmerkingen bij de release en klik op Gereed.
 1. De volgende items zijn nu op uw computer geïnstalleerd:
    * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Zie voor meer informatie de <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench gebruiken</a> documentatie.
-   * **Designer**: U kunt Designer openen vanuit Workbench. Zie Aan de slag-onderwerp in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Help bij Designer</a>.
+   * **Designer**: U kunt Designer openen vanuit Workbench. Zie Aan de slag-onderwerp in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer Help</a>.
    * **AEM FORMS SDK**: Zie voor meer informatie over het gebruik van de SDK <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programmeren met AEM Forms</a>.
 
 ## Processen upgraden {#upgrading-processes}

@@ -1,6 +1,6 @@
 ---
 title: AEM Forms aanroepen met de JavaAPI
-description: Gebruik de AEM Forms Java API voor het vervoerprotocol van RMI voor verre aanroeping, vervoer van VM voor lokale aanroeping, ZEEP voor verre aanroeping, verschillende authentificatie, zoals gebruikersnaam en wachtwoord, en synchrone en asynchrone aanroepingsverzoeken.
+description: Gebruik het AEM Forms Java API for RMI-transportprotocol voor externe aanroeping, VM-transport voor lokale aanroeping, SOAP voor externe aanroeping, andere verificatie, zoals gebruikersnaam en wachtwoord, en synchrone en asynchrone aanroepingsverzoeken.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '5333'
 ht-degree: 0%
@@ -54,7 +54,7 @@ De Java API ondersteunt de volgende functies:
 Als u een AEM Forms-service programmatisch wilt aanroepen met de Java API, neemt u de vereiste bibliotheekbestanden (JAR-bestanden) op in het klassepad van uw Java-project. De JAR-bestanden die u in het klassepad van uw clienttoepassing opneemt, zijn afhankelijk van verschillende factoren:
 
 * De AEM Forms-service die moet worden aangeroepen. Een cliënttoepassing kan één of meerdere diensten aanhalen.
-* De modus waarin u een AEM Forms-service wilt aanroepen. U kunt de EJB- of SOAP-modus gebruiken. (Zie [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
+* De modus waarin u een AEM Forms-service wilt aanroepen. U kunt de modus EJB of SOAP gebruiken. (Zie [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ In de volgende tabel worden de JAR-bestanden weergegeven die afhankelijk zijn va
      <li>xercesImpl.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
-   <td><p>Als AEM Forms wordt aangeroepen via de SOAP-modus, neemt u deze JAR-bestanden op.</p> </td>
+   <td><p>Als AEM Forms wordt aangeroepen in de SOAP-modus, neemt u deze JAR-bestanden op.</p> </td>
    <td><p>&lt;<em>installatiemap</em>&gt;/sdk/client-libs/third-party</p> </td>
   </tr>
   <tr>
@@ -415,7 +415,7 @@ Ervan uitgaande dat u een upgrade uitvoert naar AEM Forms. Als u een Java-toepas
 
 U stelt verbindingseigenschappen in om AEM Forms aan te roepen wanneer u de Java API gebruikt. Geef bij het instellen van eigenschappen voor verbindingen op of services extern of lokaal moeten worden aangeroepen en geef ook de verbindingsmodus en verificatiewaarden op. De waarden van de authentificatie worden vereist als de dienstveiligheid wordt toegelaten. Nochtans, als de dienstveiligheid gehandicapt is, is het niet noodzakelijk om authentificatiewaarden te specificeren.
 
-De verbindingsmodus kan SOAP- of EJB-modus zijn. De wijze EJB gebruikt het protocol RMI/IIOP, en de prestaties van de wijze EJB zijn beter dan de prestaties van de wijze van de ZEEP. De modus SOAP wordt gebruikt om een J2EE-toepassingsserverafhankelijkheid te elimineren of wanneer een firewall zich tussen AEM Forms en de clienttoepassing bevindt. De wijze van de ZEEP gebruikt het HTTPS protocol als onderliggend vervoer en kan over firewallgrenzen communiceren. Als noch een J2EE-toepassingsserverafhankelijkheid, noch een firewall een probleem is, wordt u aangeraden de EJB-modus te gebruiken.
+De verbindingsmodus kan SOAP of EJB zijn. De modus EJB maakt gebruik van het RMI/IIOP-protocol en de prestaties van de modus EJB zijn beter dan die van de SOAP. De SOAP modus wordt gebruikt om een J2EE-toepassingsserverafhankelijkheid te elimineren of wanneer een firewall zich tussen AEM Forms en de clienttoepassing bevindt. De SOAP wijze gebruikt het HTTPS protocol als onderliggend vervoer en kan over firewallgrenzen communiceren. Als noch een J2EE-toepassingsserverafhankelijkheid, noch een firewall een probleem is, wordt u aangeraden de EJB-modus te gebruiken.
 
 Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigenschappen in:
 
@@ -425,11 +425,11 @@ Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigen
    * WebSphere `iiop://<ServerName>:2809 (default port)`
    * WebLogic: `t3://<ServerName>:7001 (default port)`
 
-* **DSC_DEFAULT_SOAP_ENDPOINT**: Als u de verbindingswijze van de ZEEP gebruikt, vertegenwoordigt deze waarde het eindpunt waarnaar een aanroepingsverzoek wordt verzonden. Als u AEM Forms op afstand wilt aanroepen, geeft u de naam op van de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Als uw clienttoepassing zich op dezelfde J2EE-toepassingsserver bevindt, kunt u `localhost` (bijvoorbeeld `http://localhost:8080`.)
+* **DSC_DEFAULT_SOAP_ENDPOINT**: Als u de SOAP verbindingsmodus gebruikt, vertegenwoordigt deze waarde het eindpunt waarnaar een aanroepingsverzoek wordt verzonden. Als u AEM Forms op afstand wilt aanroepen, geeft u de naam op van de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Als uw clienttoepassing zich op dezelfde J2EE-toepassingsserver bevindt, kunt u `localhost` (bijvoorbeeld `http://localhost:8080`.)
 
    * De poortwaarde `8080` is van toepassing als de J2EE-toepassing JBoss is. Als de J2EE-toepassingsserver IBM® WebSphere® is, gebruikt u poort `9080`. En als de J2EE-toepassingsserver WebLogic is, gebruikt u poort `7001`. (Deze waarden zijn standaardpoortwaarden. Als u de havenwaarde verandert, gebruik het toepasselijke havenaantal.)
 
-* **DSC_TRANSPORT_PROTOCOL**: Als u de EJB-verbindingsmodus gebruikt, geeft u `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` voor deze waarde. Als u de verbindingsmodus SOAP gebruikt, geeft u `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
+* **DSC_TRANSPORT_PROTOCOL**: Als u de EJB-verbindingsmodus gebruikt, geeft u `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` voor deze waarde. Als u de SOAP-verbindingsmodus gebruikt, geeft u `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE**: Geeft de J2EE-toepassingsserver aan waarop AEM Forms wordt geïmplementeerd. Geldige waarden zijn `JBoss`, `WebSphere`, `WebLogic`.
 
    * Als u deze eigenschap instelt op `WebSphere`de `java.naming.factory.initial` waarde is ingesteld op `com.ibm.ws.naming.util.WsnInitCtxFactory`.
@@ -443,7 +443,7 @@ Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigen
 
 * **DSC_CREDENTIAL_USERNAME:** Hier geeft u de gebruikersnaam voor AEM formulieren op. Voor een gebruiker om de dienst van AEM Forms met succes aan te halen, hebben zij de rol van de Gebruiker van de Diensten nodig. Een gebruiker kan een andere rol ook hebben die de Dienst omvat roept toestemming. Anders, wordt een uitzondering geworpen wanneer zij proberen om de dienst aan te halen. Als de de dienstveiligheid gehandicapt is, is het niet noodzakelijk om dit verbindingsbezit te specificeren.
 * **DSC_CREDENTIAL_PASSWORD:** Specifies the corresponding password value. Als de de dienstveiligheid gehandicapt is, is het niet noodzakelijk om dit verbindingsbezit te specificeren.
-* **DSC_REQUEST_TIMEOUT:** De standaardlimiet voor de time-out van het verzoek voor SOAP is 1200000 milliseconden (20 minuten). Soms kan een aanvraag langer duren om de bewerking te voltooien. Een SOAP-aanvraag die bijvoorbeeld een grote set records ophaalt, kan een langere time-outlimiet vereisen. U kunt de `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` om de de tijdslimiet van de verzoekvraag voor de verzoeken van de ZEEP te verhogen.
+* **DSC_REQUEST_TIMEOUT:** De standaardtime-outlimiet voor verzoeken voor het SOAP verzoek is 1200000 milliseconden (20 minuten). Soms kan een aanvraag langer duren om de bewerking te voltooien. Een SOAP aanvraag die een grote set records ophaalt, kan bijvoorbeeld een langere time-outlimiet vereisen. U kunt de `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` om de de onderbrekingsgrens van de verzoekvraag voor de SOAP verzoeken te verhogen.
 
   **notitie**: Alleen op SOAP gebaseerde aanroepen ondersteunen de eigenschap DSC_REQUEST_TIMEOUT.
 
@@ -457,7 +457,7 @@ Voer de volgende taken uit om verbindingseigenschappen in te stellen:
 
    >[!NOTE]
    >
-   >Als u de verbindingsmodus SOAP gebruikt, geeft u de `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` opsommingswaarde in plaats van de `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` opsommingswaarde.
+   >Als u de SOAP-verbindingsmodus gebruikt, geeft u de `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` opsommingswaarde in plaats van de `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` opsommingswaarde.
 
 1. Als u het dialoogvenster `DSC_TRANSPORT_PROTOCOL` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
 
@@ -466,7 +466,7 @@ Voer de volgende taken uit om verbindingseigenschappen in te stellen:
 
    >[!NOTE]
    >
-   >Als u de verbindingsmodus SOAP gebruikt, geeft u de `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`opsommingswaarde in plaats van de `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` opsommingswaarde.
+   >Als u de SOAP-verbindingsmodus gebruikt, geeft u de `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`opsommingswaarde in plaats van de `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` opsommingswaarde.
 
 1. Als u het dialoogvenster `DSC_SERVER_TYPE` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
 
@@ -523,9 +523,9 @@ In het volgende Java-codevoorbeeld worden eigenschappen van een verbinding inges
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
-**De verbindingsmodus SOAP instellen**
+**De SOAP-verbindingsmodus instellen**
 
-In het volgende Java-codevoorbeeld worden eigenschappen van verbindingen in de SOAP-modus ingesteld om AEM Forms aan te roepen dat wordt geïmplementeerd in JBoss.
+In het volgende Java-codevoorbeeld worden eigenschappen van een verbinding in SOAP modus ingesteld om AEM Forms aan te roepen dat wordt geïmplementeerd op JBoss.
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -538,7 +538,7 @@ In het volgende Java-codevoorbeeld worden eigenschappen van verbindingen in de S
 
 >[!NOTE]
 >
->Als u de SOAP-verbindingsmodus selecteert, moet u ervoor zorgen dat er extra JAR-bestanden worden opgenomen in het klassepad van de clienttoepassing.
+>Als u de SOAP verbindingsmodus selecteert, moet u ervoor zorgen dat er extra JAR-bestanden worden opgenomen in het klassepad van de clienttoepassing.
 
 **Verbindingseigenschappen instellen wanneer servicebeveiliging is uitgeschakeld**
 
@@ -553,9 +553,9 @@ In het volgende Java-codevoorbeeld worden verbindingseigenschappen ingesteld die
 
 >[!NOTE]
 >
->Alle Java-snelstarthandleidingen die zijn gekoppeld aan Programmeren met AEM Forms, tonen zowel de verbindingsinstellingen EJB als SOAP.
+>Alle Java-snelstarthandleidingen die zijn gekoppeld aan Programmeren met AEM Forms, tonen zowel de EJB-instellingen als SOAP verbindingsinstellingen.
 
-**De SOAP-verbindingsmodus instellen met de time-outlimiet voor aangepaste aanvragen**
+**De SOAP verbindingsmodus instellen met de time-outlimiet voor aangepaste aanvragen**
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -639,7 +639,7 @@ Dit scenario is vergelijkbaar met een clienttoepassing die een zelfstandige AEM 
 
 Verwijzen naar een specifieke J2EE-toepassingsserver wordt niet aanbevolen omdat de verbinding tussen de clienttoepassing en AEM Forms wordt verbroken als de toepassingsserver wordt gestopt. Het wordt aanbevolen dat de provider-URL verwijst naar een JNDI-manager op celniveau in plaats van een specifieke J2EE-toepassingsserver.
 
-Clienttoepassingen die de SOAP-verbindingsmodus gebruiken, kunnen de HTTP-taakverdelingpoort voor de cluster gebruiken. Clienttoepassingen die gebruikmaken van de EJB-verbindingsmodus kunnen verbinding maken met de EJB-poort van een specifieke J2EE-toepassingsserver. Met deze handeling wordt de taakverdeling tussen clusterknooppunten afgehandeld.
+Clienttoepassingen die de SOAP verbindingsmodus gebruiken, kunnen de HTTP-taakverdelingpoort voor de cluster gebruiken. Clienttoepassingen die gebruikmaken van de EJB-verbindingsmodus kunnen verbinding maken met de EJB-poort van een specifieke J2EE-toepassingsserver. Met deze handeling wordt de taakverdeling tussen clusterknooppunten afgehandeld.
 
 **WebSphere**
 
@@ -651,7 +651,7 @@ In het volgende voorbeeld wordt de inhoud getoond van een bestand jndi.propertie
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**Weblogic**
+**Weblogica**
 
 Het volgende voorbeeld toont de inhoud van het bestand jndi.properties dat wordt gebruikt om verbinding te maken met AEM Forms dat is gedistribueerd via WebLogic.
 

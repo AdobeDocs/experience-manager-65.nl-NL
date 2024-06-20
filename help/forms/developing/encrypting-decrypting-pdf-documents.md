@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 29cc7281e34487881ff9334f4cf00f3d013de11b
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 0%
@@ -162,9 +162,10 @@ Codeer een PDF-document met een wachtwoord met behulp van de API voor versleutel
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Een PDF-document versleutelen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): Een PDF-document versleutelen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -377,7 +378,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Een PDF-document versleutelen met een certificaat met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Snel starten (SOAP modus): Een PDF-document coderen met een certificaat met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -558,7 +559,7 @@ Verwijder op een certificaat gebaseerde versleuteling uit een PDF-document met d
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): codering op basis van een certificaat verwijderen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Snel starten (SOAP modus): codering op basis van een certificaat verwijderen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -711,7 +712,7 @@ Verwijder op wachtwoord gebaseerde codering uit een PDF-document met de API voor
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): codering op basis van wachtwoord verwijderen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Snel starten (SOAP modus): codering op basis van wachtwoord verwijderen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
 ### Op wachtwoorden gebaseerde codering verwijderen met de webservice-API {#remove-password-based-encryption-using-the-web-service-api}
 
@@ -870,7 +871,7 @@ Een gecodeerd PDF-document ontgrendelen met de API voor versleuteling (Java):
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Een gecodeerd PDF-document ontgrendelen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (SOAP-modus)
+[Snel starten (SOAP modus): Een gecodeerd PDF-document ontgrendelen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (SOAP modus)
 
 [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
@@ -1028,7 +1029,7 @@ Bepaal het type codering waarmee een PDF-document wordt beveiligd met de API voo
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Coderingstype bepalen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Snel starten (SOAP modus): Coderingstype bepalen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

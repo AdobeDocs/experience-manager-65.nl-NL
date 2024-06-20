@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin,User
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -101,7 +102,7 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 1. Controleer of de upgrade van de server is geslaagd, of alle gegevens zijn gemigreerd en of deze op de normale manier kunnen werken.
 
    * **Controleer de status van de bundels:** Zorg ervoor dat alle bundels actief zijn.
-   * **Verifieer replicatie en omgekeerde replicatie:** Een aantal gemigreerde formulieren publiceren, invullen en verzenden. Controleer ook de verzonden gegevens.
+   * **Verifieer replicatie en omgekeerde replicatie:** Publish, vul en verzend een aantal gemigreerde formulieren. Controleer ook de verzonden gegevens.
    * **Toegang tot gebruikersinterfaces voor beheer en ontwikkelaar verifiëren:** Meld u aan bij AEM instantie van een beheerdersaccount en controleer of u toegang hebt tot de volgende URL&#39;s:
 
       * `https://'[server]:[port]'/crx/packmgr`

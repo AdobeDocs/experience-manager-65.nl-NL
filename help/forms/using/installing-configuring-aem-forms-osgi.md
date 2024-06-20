@@ -7,7 +7,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-AEM Forms biedt een set formulieren voor het verkrijgen van gegevens van eindgebruikers: adaptieve formulieren, HTML5 Forms en PDF forms. Het programma bevat ook gereedschappen waarmee u alle beschikbare formulieren op een webpagina kunt weergeven, het gebruik van formulieren kunt analyseren en doelgebruikers kunt selecteren op basis van hun profiel. Deze mogelijkheden zijn opgenomen in het invoegpakket voor AEM Forms. Het invoegpakket wordt geïmplementeerd op een instantie Auteur of Publiceren van AEM.
+AEM Forms biedt een set formulieren voor het verkrijgen van gegevens van eindgebruikers: adaptieve formulieren, HTML5 Forms en PDF forms. Het programma bevat ook gereedschappen waarmee u alle beschikbare formulieren op een webpagina kunt weergeven, het gebruik van formulieren kunt analyseren en doelgebruikers kunt selecteren op basis van hun profiel. Deze mogelijkheden zijn opgenomen in het invoegpakket voor AEM Forms. Het invoegpakket wordt geïmplementeerd op een Author- of Publish-instantie van AEM.
 
 **Aangepaste formulieren:** Deze formulieren veranderen de weergave op basis van de schermgrootte van het apparaat, zijn aantrekkelijk en interactief van aard. Adaptief Forms kan ook worden geïntegreerd met Adobe Analytics, Adobe Sign en Adobe Target. Zo kunt u op basis van demografie en andere functies persoonlijke formulieren en procesgeoriënteerde ervaringen aan gebruikers aanbieden. U kunt adaptieve formulieren ook integreren met Adobe Sign.
 
@@ -30,7 +31,7 @@ AEM Forms is een krachtig platform op bedrijfsniveau en het vastleggen van gegev
 
 ## Implementatietopologie {#deployment-topology}
 
-AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U hebt slechts minimaal één AEM instantie Auteur en AEM Publiceren nodig om AEM Forms-mogelijkheden voor gegevensvastlegging uit te voeren. De volgende topologie wordt gesuggereerd om AEM Forms AEM Forms gegevens in werking te stellen vangt mogelijkheden. Voor gedetailleerde informatie over de topologie, zie [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U hebt slechts minimaal één AEM auteur en AEM Publish-instantie nodig om AEM Forms-mogelijkheden voor gegevensvastlegging uit te voeren. De volgende topologie wordt gesuggereerd om AEM Forms AEM Forms gegevens in werking te stellen vangt mogelijkheden. Voor gedetailleerde informatie over de topologie, zie [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![aanbevolen topologie](assets/recommended-topology.png)
 
@@ -41,7 +42,7 @@ Voordat u de mogelijkheid voor gegevensvastlegging van AEM Forms gaat installere
 * Hardware- en software-infrastructuur is aanwezig. Voor een gedetailleerde lijst met ondersteunde hardware en software raadpleegt u [technische voorschriften](/help/sites-deploying/technical-requirements.md).
 
 * Het installatiepad van de AEM-instantie bevat geen witruimten.
-* Er wordt een AEM-instantie uitgevoerd. Voor de gebruikers van Vensters, installeer de AEM instantie op opgeheven wijze. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteur- of publicatiemodus wordt uitgevoerd. U hebt ten minste twee [AEM instanties (één auteur en één publicatieversie)](/help/sites-deploying/deploy.md) om AEM Forms-mogelijkheden voor gegevensvastlegging uit te voeren:
+* Er wordt een AEM-instantie uitgevoerd. Voor de gebruikers van Vensters, installeer de AEM instantie op opgeheven wijze. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteur- of publicatiemodus wordt uitgevoerd. U hebt ten minste twee [AEM (één auteur en één Publish)](/help/sites-deploying/deploy.md) om AEM Forms-mogelijkheden voor gegevensvastlegging uit te voeren:
 
    * **Auteur**: Een AEM die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
    * **Publiceren**: Een AEM instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
@@ -124,7 +125,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    >
    > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-7 voor alle auteur- en Publish-instanties.
 
 ### (Vensters slechts) Automatische installatie van Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
 
@@ -152,7 +153,7 @@ AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte co
 
 #### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
-Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
+Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om de bibliotheken te laars afgevaardigde:
 
 1. Stop de onderliggende AEM instantie.
 1. Open de `[AEM installation directory]\crx-quickstart\conf\sling.properties` bestand voor bewerking.
@@ -166,16 +167,16 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
    ```
 
 1. Sla het bestand op, sluit het en start het AEM.
-1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-4 voor alle auteur- en Publish-instanties.
 
 #### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
 
-Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
+Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. De standaard-URL is `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoeken naar **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** en opent u de configuratie.
 1. Voeg de **sun.util.agenda** aan de **lijst van gewenste personen** veld. Klikken **Opslaan**.
-1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-3 op alle instanties van Auteur en van Publish.
 
 ### Optionele configuraties na installatie {#optional-post-installation-configurations}
 

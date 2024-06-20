@@ -1,13 +1,13 @@
 ---
 title: Services voor ontwerp- en verzendgegevens aanpassen
-description: AEM Forms slaat standaard concept- en verzonden adaptieve formulieren op in een standaardknooppunt van de instantie Publiceren. U kunt echter de services voor concepten en verzendgegevens van AEM Forms configureren om de opslag van concepten en verzonden adaptieve formulieren aan te passen.
+description: AEM Forms slaat standaard concept- en verzonden adaptieve formulieren op in een standaardknooppunt van het Publish-exemplaar. U kunt echter de services voor concepten en verzendgegevens van AEM Forms configureren om de opslag van concepten en verzonden adaptieve formulieren aan te passen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Met AEM Forms kunnen gebruikers een adaptief formulier opslaan als concept. De conceptfunctionaliteit biedt gebruikers de mogelijkheid om een formulier in uitvoering te onderhouden. Vervolgens kan een gebruiker het formulier op elk gewenst moment vanaf elk apparaat invullen en verzenden.
 
-AEM Forms slaat standaard gebruikersgegevens op die zijn gekoppeld aan het concept en verzending op de instantie Publiceren in het dialoogvenster `/content/forms/fp` knooppunt.
+AEM Forms slaat standaard gebruikersgegevens op die zijn gekoppeld aan het concept en de verzending op het Publish-exemplaar in de `/content/forms/fp` knooppunt.
 
 AEM Forms Portal-componenten bieden echter gegevensservices waarmee u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen kunt aanpassen. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
 

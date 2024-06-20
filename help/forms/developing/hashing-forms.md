@@ -3,8 +3,9 @@ title: Hoe te om hakken in dynamische PDF forms te produceren en te werken?
 description: Het produceren van en het werken met Hashes in dynamische PDF forms.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Document Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 ## Vereiste kennis {#prerequisite-knowledge}
 
-Er is enige ervaring met AEM Forms in JEE Designer vereist, evenals de mogelijkheid om functies in scriptobjecten te openen en aan te roepen.
+Er is enige ervaring met AEM Forms op JEE Designer vereist, evenals de mogelijkheid om functies in scriptobjecten te openen en aan te roepen.
 
 ## Gebruikersniveau {#user-level}
 
@@ -41,7 +42,7 @@ Het grootste voordeel van het gebruik van hashes is dat u wachtwoorden niet rech
 
 ## Scriptobjecten onderzoeken {#examining-script-objects}
 
-Wanneer u een van de twee beschikbare voorbeelden opent in AEM Forms in JEE Designer, vindt u de vier scriptobjecten in het palet Hiërarchie (zie onderstaande afbeelding).
+Wanneer u een van de twee beschikbare voorbeelden opent in AEM Forms op JEE Designer, vindt u de vier scriptobjecten in het palet Hiërarchie (zie onderstaande afbeelding).
 
 ![Variabelen](assets/variables.jpg)
 
@@ -77,7 +78,7 @@ De voorbeeldbestanden voor dit artikel bevatten twee PDF forms. In het eerste vo
 
 Voer de onderstaande stappen uit om het eerste voorbeeld te proberen:
 
-1. Nadat u de voorbeeldbestanden hebt gedownload en uitgepakt, opent u hashing_forms_sample1.pdf met AEM Forms in JEE Designer. U kunt ook Adobe Reader of Adobe Acrobat Professional gebruiken om het voorbeeld te openen en weer te geven, maar u kunt de broncode niet zien.
+1. Nadat u de voorbeeldbestanden hebt gedownload en uitgepakt, opent u hashing_forms_sample1.pdf met AEM Forms op JEE Designer. U kunt ook Adobe Reader of Adobe Acrobat Professional gebruiken om het voorbeeld te openen en weer te geven, maar u kunt de broncode niet zien.
 1. In het tekstveld met het label [!UICONTROL clear text] Typ een wachtwoord of een ander bericht dat u wilt hashed.
 1. Klik op een van de vier knoppen om de hash voor MD4, MD5, SHA-1 of SHA-256 te genereren. Afhankelijk van de knop die u hebt ingedrukt, wordt een van de vier hashfuncties die hexadecimale uitvoer produceren aangeroepen en wordt uw tekenreeks of bericht gehasht.
 

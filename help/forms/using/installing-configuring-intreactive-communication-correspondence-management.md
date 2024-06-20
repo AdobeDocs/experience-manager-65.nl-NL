@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-AEM Form heeft de mogelijkheid om het maken, samenstellen, beheren en leveren van beveiligde en interactieve documenten, zoals zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits, te centraliseren. Dit vermogen is gekend als interactieve mededeling. De mogelijkheid is opgenomen in het invoegpakket voor AEM Forms. Het invoegpakket wordt geïmplementeerd op een instantie Auteur of Publiceren van AEM.
+AEM Form heeft de mogelijkheid om het maken, samenstellen, beheren en leveren van beveiligde en interactieve documenten, zoals zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits, te centraliseren. Dit vermogen is gekend als interactieve mededeling. De mogelijkheid is opgenomen in het invoegpakket voor AEM Forms. Het invoegpakket wordt geïmplementeerd op een Author- of Publish-instantie van AEM.
 
 U kunt de interactieve communicatiemogelijkheid gebruiken om communicatie in meerdere indelingen te produceren. Bijvoorbeeld web en PDF. U kunt interactieve communicatie met AEM Workflow integreren om de geassembleerde communicatie te verwerken en te leveren aan klanten op het kanaal van hun keuze. U kunt bijvoorbeeld een communicatie naar de eindgebruiker verzenden via e-mail.
 
@@ -31,7 +32,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U 
 
 ![aanbevolen topologie](assets/recommended-topology.png)
 
-AEM Forms Interactive Communications voert admin, authoring en gebruikersinterfaces voor agent uit op de Author-instanties van AEM Forms. De instanties van de Publish gastheer definitieve versie van interactieve mededelingen die klaar voor consumptie door eindgebruikers zijn.
+AEM Forms Interactive Communications voert admin, authoring en gebruikersinterfaces voor agent uit op de Author-instanties van AEM Forms. De Publish-instanties hosten de definitieve versie van interactieve communicatie die klaar is voor consumptie door eindgebruikers.
 
 ## Systeemvereisten {#system-requirements}
 
@@ -63,14 +64,14 @@ Voordat u de mogelijkheden voor interactief communicatie- en correspondentiebehe
    <td>libXau</td>
   </tr>
   <tr>
-   <td>Libsm</td>
+   <td>libSM</td>
    <td>zlib</td>
    <td>libICE</td>
    <td>libuuid</td>
   </tr>
   <tr>
    <td>glibc</td>
-   <td>Libxext</td>
+   <td>libXext</td>
    <td><p>nss-softokn-freebl</p> </td>
    <td>fontconfig</td>
   </tr>
@@ -104,7 +105,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    >
    > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-7 voor alle auteur- en Publish-instanties.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
@@ -114,7 +115,7 @@ AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte co
 
 #### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
-Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
+Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om de bibliotheken te laars afgevaardigde:
 
 1. Stop de onderliggende AEM instantie.
 1. Open de [AEM installatiemap]\crx-quickstart\conf\sling.properties.
@@ -128,16 +129,16 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
    ```
 
 1. Sla het bestand op, sluit het en start het AEM.
-1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-4 voor alle auteur- en Publish-instanties.
 
 #### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
 
-Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
+Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. De standaard-URL is https://&#39;[server]:[poort]&quot;/system/console/configMgr.
 1. Zoeken en openen **Configuratie van firewall voor deserialisatie**.
 1. Voeg de **sun.util.agenda** aan de **lijst van gewenste personen** veld. Klik op Opslaan.
-1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-3 voor alle auteur- en Publish-instanties.
 
 ### Optionele configuraties na installatie {#optional-post-installation-configurations}
 
@@ -148,7 +149,7 @@ Interactieve communicatie is de standaard en aanbevolen methode voor het maken v
 Met het AEMFD-compatibiliteitspakket kunt u de volgende assets gebruiken uit AEM 6.4 Forms, AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.5-formulieren:
 
 * Documentfragmenten
-* Letters
+* Brieven
 * Gegevenswoordenboeken
 * Afgekeurde sjablonen en pagina&#39;s voor adaptieve formulieren
 

@@ -6,8 +6,9 @@ content-type: reference
 topic-tags: correspondence-management
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 In Correspondence Management bevat een lettertypesjabloon typische formuliervelden, indelingsfuncties zoals een kop- en voettekst en lege &quot;doelgebieden&quot; voor de plaatsing van inhoud.
 
-Correspondentenbeheer bevat lettertypesjablonen in het dialoogvenster [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
+Correspondentenbeheer bevat lettertypesjablonen in het dialoogvenster [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en zakelijke behoeften. Het pakket bevat de volgende sjablonen:
 
 * Klassiek
 * Klassiek eenvoudig

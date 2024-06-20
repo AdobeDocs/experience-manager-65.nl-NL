@@ -8,28 +8,28 @@ topic-tags: develop
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
 
 ---
 
-# PDF Service Java™ API Quick Start (SOAP) converteren {#convert-pdf-service-java-api-quickstart-soap}
+# Snelle start voor PDF Service Java™ API converteren (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service-API van Convert PDF.
 
-[Snel starten (SOAP-modus): een PDF-document converteren naar PostScript met Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document converteren naar PostScript met Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document converteren naar JPEG-bestanden met behulp van de Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document converteren naar JPEG-bestanden met Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >De snelle Beginnen in Programmering met AEM vormen zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss® en het werkende systeem van Microsoft® Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Snel starten (SOAP-modus): een PDF-document converteren naar PostScript met de Java™ API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
+## Snel starten (SOAP modus): een PDF-document converteren naar PostScript met de Java™ API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een PostScript-document dat *Lening.ps*. (Zie [PDF-documenten converteren naar PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
@@ -144,7 +144,7 @@ In het volgende codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* na
  }
 ```
 
-## Snel starten (SOAP-modus): een PDF-document converteren naar JPEG-bestanden met de Java™ API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
+## Snel starten (SOAP modus): een PDF-document converteren naar JPEG-bestanden met de Java™ API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
 In het volgende Java™-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een set JPEG-bestanden en slaat deze op in de map C:\Adobe. Elk bestand krijgt een naam `tempFile[index].jpg`, waarbij het eerste afbeeldingsbestand een naam heeft *tempFile0.jpg*. (Zie [PDF-documenten omzetten in afbeeldingsindelingen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 

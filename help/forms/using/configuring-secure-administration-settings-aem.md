@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -24,11 +25,11 @@ Dit artikel beschrijft methodes om de algemene aanvalsoppervlakte door beleidsop
 
 ## Niet-essentiële externe toegang tot services uitschakelen {#disabling-non-essential-remote-access-to-services}
 
-Nadat AEM Forms op JEE is geïnstalleerd en geconfigureerd, zijn veel services beschikbaar voor externe aanroeping via SOAP en Enterprise JavaBeans™ (EJB). De term extern verwijst in dit geval naar elke aanroeper die netwerktoegang heeft tot de SOAP-, EJB- of AMF-poorten (Action Message Format) voor de toepassingsserver.
+Nadat AEM Forms op JEE geïnstalleerd en gevormd is, zijn vele diensten beschikbaar voor verre aanroeping over SOAP en Onderneming JavaBeans™ (EJB). De term ver, in dit geval, verwijst naar om het even welke bezoeker die netwerktoegang tot de SOAP, EJB, of havens van het Formaat van het Bericht van de Actie (AMF) voor de toepassingsserver heeft.
 
 Hoewel AEM Forms op de diensten JEE geldige geloofsbrieven vereisen om voor een erkende bezoeker worden overgegaan, zou u slechts verre toegang tot de diensten moeten toestaan die u ver toegankelijk moet zijn. Om beperkte toegankelijkheid te bereiken, zou u de reeks ver toegankelijke diensten tot het minimum mogelijk voor een werkend systeem moeten verminderen en dan verre aanroeping voor de extra diensten toelaten die u nodig hebt.
 
-AEM Forms on JEE services hebben altijd minstens SOAP-toegang nodig. Deze services zijn gewoonlijk vereist voor gebruik door Workbench, maar omvatten ook services die door de Workspace-webtoepassing worden aangeroepen.
+AEM Forms on JEE services hebben altijd minstens SOAP toegang nodig. Deze services zijn gewoonlijk vereist voor gebruik door Workbench, maar omvatten ook services die door de Workspace-webtoepassing worden aangeroepen.
 
 Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Diensten in de Console van het Beleid:
 
@@ -45,7 +46,7 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
 1. Als u alle EJB-eindpunten wilt uitschakelen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Uitschakelen**.
 1. Klikken **Volgende** en herhaal de vorige stap voor alle EJB-eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
 1. Selecteren **SOAP** van de **Provider** en klik vervolgens op **Filter**.
-1. Als u de eindpunten van de SOAP wilt verwijderen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Verwijderen**. Verwijder de volgende eindpunten niet:
+1. Als u SOAP eindpunten wilt verwijderen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Verwijderen**. Verwijder de volgende eindpunten niet:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -61,7 +62,7 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Klikken **Volgende** en herhaal de vorige stap voor SOAP-eindpunten die zich niet in de bovenstaande lijst bevinden. Zorg ervoor dat de ZEEP in de kolom van de Leverancier wordt vermeld alvorens u eindpunten verwijdert.
+1. Klikken **Volgende** en herhaal de vorige stap voor SOAP eindpunten die niet in de bovenstaande lijst staan. Zorg ervoor dat SOAP wordt vermeld in de kolom Provider voordat u eindpunten verwijdert.
 
 ## Niet-essentiële anonieme toegang tot services uitschakelen {#disabling-non-essential-anonymous-access-to-services}
 

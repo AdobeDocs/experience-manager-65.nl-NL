@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2774'
 ht-degree: 0%
@@ -138,7 +138,7 @@ Converteer een PDF-document naar PostScript met de Java-API (Convert PDF Service
 
 [Overzicht van de stappen](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): een PDF-document converteren naar PostScript met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document converteren naar PostScript met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -249,7 +249,7 @@ Nadat u de de dienstcliënt creeert en runtime opties plaatst, kunt u het docume
 
 **De afbeeldingsbestanden ophalen uit een verzameling**
 
-U kunt afbeeldingsbestanden ophalen uit een verzamelingsobject dat wordt geretourneerd door de service PDF converteren. Elk element in de verzameling is een `com.adobe.idp.Document` instantie (of een `BLOB` -instantie als u webservices gebruikt) die u kunt opslaan als afbeeldingsbestand, zoals een JPG-bestand.
+U kunt afbeeldingsbestanden ophalen uit een verzamelingsobject dat wordt geretourneerd door de service PDF converteren. Elk element in de verzameling is een `com.adobe.idp.Document` instantie (of een `BLOB` -instantie als u webservices gebruikt) die u kunt opslaan als een afbeeldingsbestand, zoals een JPG-bestand.
 
 De indeling van het afbeeldingsbestand is afhankelijk van de `ImageConvertFormat` uitvoeringsoptie. Dat wil zeggen, als u de `ImageConvertFormat` runtime-optie voor `ImageConvertFormat.JPEG`kunt u afbeeldingsbestanden opslaan als JPG-bestanden.
 
@@ -303,7 +303,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de API (Java) voor
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): een PDF-document converteren naar JPEG-bestanden met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document converteren naar JPEG-bestanden met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### Een PDF-document converteren naar afbeeldingsbestanden met de webservice-API {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 

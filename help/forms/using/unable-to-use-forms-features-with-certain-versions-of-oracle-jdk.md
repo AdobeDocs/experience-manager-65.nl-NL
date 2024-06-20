@@ -3,8 +3,9 @@ title: Kan Experience Manager Forms niet gebruiken met bepaalde versies van Orac
 description: Kan Experience Manager Forms niet gebruiken met bepaalde versies van Oracle JDK
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Troubleshooting
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%

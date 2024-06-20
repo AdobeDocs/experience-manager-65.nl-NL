@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # Caching configureren voor Forms{#configuring-caching-for-forms}
 
-De Forms-service bestaat uit formulierontwerpen die in Designer zijn gemaakt en die in verschillende indelingen worden weergegeven.
+De Forms-service bestaat uit formulierontwerpen die in Designer zijn gemaakt en in verschillende indelingen worden weergegeven.
 
 De Forms-pagina in de beheerconsole bevat instellingen die bepalen hoe de Forms-service items in cache plaatst. U kunt deze instellingen aanpassen om de prestaties van de Forms-service te optimaliseren.
 
@@ -93,7 +94,7 @@ De instellingen in het dialoogvenster **Algemene cache-instellingen** heeft invl
 
 **Max. documentgrootte cache (kB):** De maximale grootte, in kilobytes, van een formulierontwerp of andere bron die in een cache in het geheugen kan worden opgeslagen. Dit is een algemene instelling die van toepassing is op alle cache in het geheugen. Als een bron groter is dan deze waarde, wordt deze niet in het geheugen opgeslagen. De standaardwaarde is 1024 kilobytes. Deze instelling heeft geen invloed op de cache van de schijf.
 
-**Cache voor het renderen van formulieren ingeschakeld:** Deze optie is standaard ingeschakeld, wat betekent dat weergegeven formulieren in de cache worden geplaatst om ze later op te halen. Deze instelling verbetert de prestaties omdat de Forms-service slechts één keer een bepaald formulier hoeft te genereren en vervolgens de versie in de cache gebruikt. Deze optie werkt met de eigenschap voor het in cache plaatsen van het formulierontwerp. Zie Help bij Designer voor informatie over het configureren van deze waarde in het formulierontwerp.
+**Cache voor het renderen van formulieren ingeschakeld:** Deze optie is standaard ingeschakeld, wat betekent dat weergegeven formulieren in de cache worden geplaatst om ze later op te halen. Deze instelling verbetert de prestaties omdat de Forms-service slechts één keer een bepaald formulier hoeft te genereren en vervolgens de versie in de cache gebruikt. Deze optie werkt met de eigenschap voor het in cache plaatsen van het formulierontwerp. Raadpleeg de Help van Designer voor informatie over het configureren van deze waarde in het formulierontwerp.
 
 ### Formulierontwerpen in cache plaatsen {#caching-form-designs}
 

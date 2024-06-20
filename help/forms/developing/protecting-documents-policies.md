@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '15394'
 ht-degree: 0%
@@ -261,7 +261,7 @@ Een beleid maken met de API voor documentbeveiliging (Java):
 
 Zie het volgende voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): beleid maken met de Java API&quot;
+* &quot;Snel starten (SOAP modus): beleid maken met de Java API&quot;
 
 ### Beleid maken met de webservice-API {#create-a-policy-using-the-web-service-api}
 
@@ -401,7 +401,7 @@ Wijzig een bestaand beleid met de API voor documentbeveiliging (Java):
 
 **Codevoorbeelden**
 
-Zie Snel starten (modus SOAP): Een beleid wijzigen met behulp van de Java API-sectie voor codevoorbeelden met de documentbeveiligingsservice.
+Zie Snel starten (modus SOAP): Een beleid wijzigen met de Java API-sectie voor codevoorbeelden met de documentbeveiligingsservice.
 
 ### Bestaand beleid wijzigen met de webservice-API {#modify-existing-policies-using-the-web-service-api}
 
@@ -504,7 +504,7 @@ Een beleid verwijderen met de API voor documentbeveiliging (Java):
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): beleid verwijderen met de Java API&quot;
+* &quot;Snel starten (SOAP modus): beleid verwijderen met de Java API&quot;
 
 ### Beleid verwijderen met de webservice-API {#delete-policies-using-the-web-service-api}
 
@@ -640,7 +640,7 @@ Een beleid toepassen op een PDF-document met behulp van de API voor documentbeve
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 * &quot;Snel starten (EJB-modus): beleid toepassen op een PDF-document met behulp van de Java API&quot;
-* &quot;Snel starten (SOAP-modus): beleid toepassen op een PDF-document met behulp van de Java API&quot;
+* &quot;Snel starten (SOAP modus): beleid toepassen op een PDF-document met behulp van de Java API&quot;
 
 **Zie ook**
 
@@ -791,7 +791,7 @@ Verwijder een beleid uit een beleid-beschermd document van de PDF door de Veilig
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): beleid verwijderen uit een PDF-document met behulp van de Java API&quot;
+* &quot;Snel starten (SOAP modus): Een beleid verwijderen uit een PDF-document met de Java API&quot;
 
 ### Een beleid verwijderen met de webservice-API {#remove-a-policy-using-the-web-service-api}
 
@@ -934,7 +934,7 @@ Toegang tot een met beleid beveiligd PDF-document intrekken met de API voor docu
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): een document intrekken met de Java API&quot;
+* &quot;Snel starten (SOAP modus): een document intrekken met de Java API&quot;
 
 ### Toegang tot documenten intrekken met de webservice-API {#revoke-access-to-documents-using-the-web-service-api}
 
@@ -1066,7 +1066,7 @@ Toegang tot een ingetrokken document opnieuw instellen met de API voor documentb
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): toegang tot een ingetrokken document opnieuw instellen met de webservice-API&quot;
+* &quot;Snel starten (SOAP modus): Toegang tot een ingetrokken document opnieuw instellen met de webservice-API&quot;
 
 ### Toegang tot ingetrokken documenten opnieuw instellen met de webservice-API {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1200,7 +1200,7 @@ Inspect a policy-protected PDF document by using the Document Security Service A
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): met beleid beveiligde PDF-documenten inspecteren met de Java API&quot;
+* &quot;Snel starten (SOAP modus): Met beleid beveiligde PDF-documenten inspecteren met de Java API&quot;
 
 ### Inspect Policy Protected PDF Documents using the web service API {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1420,7 +1420,7 @@ Een watermerk maken met de API voor documentbeveiliging (Java):
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): een watermerk maken met de Java API&quot;
+* &quot;Snel starten (SOAP modus): een watermerk maken met de Java API&quot;
 
 ### Watermerken maken met de webservice-API {#create-watermarks-using-the-web-service-api}
 
@@ -2039,7 +2039,7 @@ Een beleid toepassen op een Word-document met behulp van de API voor documentbev
 
 Zie het volgende snelle begin voor codevoorbeelden met gebruik van de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): beleid toepassen op een Word-document met behulp van de Java API&quot;
+* &quot;Snel starten (SOAP modus): beleid toepassen op een Word-document met behulp van de Java API&quot;
 
 ### Een beleid toepassen op een Word-document met behulp van de webservice-API {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2183,7 +2183,7 @@ Verwijder een beleid uit een beleid-beschermd document van Word door de Veilighe
 
 Zie het volgende snelle begin voor codevoorbeelden met gebruik van de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): beleid verwijderen uit een Word-document met de Java API &quot;
+* &quot;Snel starten (SOAP modus): Een beleid verwijderen uit een Word-document met de Java API &quot;
 
 ### Een beleid verwijderen uit een Word-document met de webservice-API {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 

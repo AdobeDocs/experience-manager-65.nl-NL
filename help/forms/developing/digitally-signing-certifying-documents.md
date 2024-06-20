@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '16917'
 ht-degree: 0%
@@ -294,7 +294,7 @@ Namen van handtekeningvelden ophalen met de handtekening-API (Java):
 
 [Namen van handtekeningvelden ophalen](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Snel starten (SOAP-modus): namen van handtekeningvelden ophalen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Snel starten (SOAP modus): namen van handtekeningvelden ophalen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -608,7 +608,7 @@ Als bij het certificeren en ondertekenen van hetzelfde PDF-document de certifice
 
 Als u probeert een XFA-formulier te ondertekenen met de API van de handtekeningenservice, ontbreken de gegevens mogelijk in het dialoogvenster `View` `Signed` `Version` in Acrobat. Neem bijvoorbeeld de volgende workflow:
 
-* Met behulp van een XDP-bestand dat is gemaakt met Designer, voegt u een formulierontwerp samen dat een handtekeningveld en XML-gegevens bevat die formuliergegevens bevatten. Met de Forms-service kunt u een interactief PDF-document genereren.
+* Met behulp van een XDP-bestand dat met Designer is gemaakt, voegt u een formulierontwerp samen dat een handtekeningveld en XML-gegevens bevat die formuliergegevens bevatten. Met de Forms-service kunt u een interactief PDF-document genereren.
 * U ondertekent het PDF-document met de API van de handtekeningenservice.
 
 ### Overzicht van de stappen {#summary_of_steps-3}
@@ -639,7 +639,7 @@ Voordat u programmatically een verrichting van de dienst van de Handtekening kun
 
 **Het PDF-document laten ondertekenen**
 
-Als u een PDF-document wilt ondertekenen, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden ondertekend. Een handtekeningveld kan worden toegevoegd met Designer of programmatisch.
+Als u een PDF-document wilt ondertekenen, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden ondertekend. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode.
 
 **Het PDF-document ondertekenen**
 
@@ -743,7 +743,7 @@ Een PDF-document digitaal ondertekenen met de handtekening-API (Java):
 
 [PDF-documenten digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Snel starten (SOAP-modus): een PDF-document digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -821,7 +821,7 @@ U kunt als volgt een PDF-document digitaal ondertekenen met de handtekening-API 
 
 U kunt een interactief formulier ondertekenen dat door de Forms-service wordt gemaakt. Neem bijvoorbeeld de volgende workflow:
 
-* U voegt een op XFA gebaseerd PDF formulier dat is gemaakt met Designer samen met formuliergegevens in een XML-document met behulp van de Forms-service. Op de Forms-server wordt een interactief formulier weergegeven.
+* U voegt een op XFA gebaseerd PDF formulier dat is gemaakt met Designer samen en formuliergegevens in een XML-document met de Forms-service. Op de Forms-server wordt een interactief formulier weergegeven.
 * U ondertekent het interactieve formulier met de API van de handtekeningenservice.
 
 Het resultaat is een digitaal ondertekend interactief PDF-formulier. Wanneer u een PDF-formulier ondertekent dat is gebaseerd op een XFA-formulier, moet u ervoor zorgen dat u het PDF-bestand opslaat als een Adobe statisch PDF-formulier. Als u een PDF-formulier probeert te ondertekenen dat is opgeslagen als een Adobe dynamisch PDF-formulier, treedt een uitzondering op. Zorg ervoor dat het formulier een handtekeningveld bevat omdat u het formulier ondertekent dat door de Forms-service wordt geretourneerd.
@@ -963,7 +963,7 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
 
 [Interactieve Forms digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
-[Snel starten (SOAP-modus): een PDF-document digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1122,13 +1122,13 @@ Voordat u een handtekeningbewerking programmatisch kunt uitvoeren, moet u een ha
 
 **Laat het PDF-document certificeren**
 
-Als u een PDF-document wilt certificeren, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of programmatisch. Voor informatie over het programmatically toevoegen van een handtekeningsgebied, zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields).
+Als u een PDF-document wilt certificeren, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. Voor informatie over het programmatically toevoegen van een handtekeningsgebied, zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields).
 
 **Het PDF-document certificeren**
 
 Als u een PDF-document wilt certificeren, hebt u de volgende invoerwaarden nodig die door de service Handtekening worden gebruikt voor de certificering van een PDF-document:
 
-* **PDF-document**: Een PDF-document dat een handtekeningveld bevat. Dit is een formulierveld dat een grafische weergave van de gecertificeerde handtekening bevat. Een PDF-document moet een handtekeningveld bevatten voordat het kan worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of programmatisch. (Zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields).)
+* **PDF-document**: Een PDF-document dat een handtekeningveld bevat. Dit is een formulierveld dat een grafische weergave van de gecertificeerde handtekening bevat. Een PDF-document moet een handtekeningveld bevatten voordat het kan worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. (Zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields).)
 * **Naam van handtekeningveld**: De volledig gekwalificeerde naam van het handtekeningveld dat is gecertificeerd. De volgende waarde is een voorbeeld: `form1[0].#subform[1].SignatureField3[3]`. Bij gebruik van een XFA-formulierveld kan ook de gedeeltelijke naam van het handtekeningveld worden gebruikt: `SignatureField3[3]`. Als een null-waarde wordt doorgegeven voor de veldnaam, wordt dynamisch een onzichtbaar handtekeningveld gemaakt en gecertificeerd.
 * **Beveiligingsreferentie**: Een referentie die wordt gebruikt om het PDF-document te certificeren. Deze veiligheidsreferentie bevat een wachtwoord en een alias, die een alias moeten aanpassen die in de referentie verschijnt die binnen de Credential dienst wordt gevestigd. De alias is een verwijzing naar een werkelijke referentie die kan voorkomen in een PKCS#12-bestand (met de extensie .pfx) of een hardwarebeveiligingsmodule (HSM).
 * **Hash-algoritme**: Een hash-algoritme voor de samenvatting van het PDF-document.
@@ -1207,7 +1207,7 @@ Een PDF-document certificeren met de handtekening-API (Java):
 
 [PDF-documenten certificeren](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[Snel starten (SOAP-modus): Een PDF-document certificeren met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): Een PDF-document certificeren met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1444,7 +1444,7 @@ Verifieer een digitale handtekening met de API van de Handtekeningenservice (Jav
 
 [Digitale handtekeningen verifiëren](#verify-digital-signatures-using-the-java-api)
 
-[Snel starten (SOAP-modus): een digitale handtekening verifiëren met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
+[Snel starten (SOAP modus): een digitale handtekening controleren met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1657,7 +1657,7 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
 
 [Meerdere digitale handtekeningen controleren](#verifying-multiple-digital-signatures)
 
-[Snel starten (SOAP-modus): meerdere digitale handtekeningen controleren met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
+[Snel starten (SOAP modus): meerdere digitale handtekeningen controleren met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1823,7 +1823,7 @@ Een digitale handtekening verwijderen met de handtekening-API (Java):
 
 [Digitale handtekeningen verwijderen](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
-[Snel starten (SOAP-modus): een digitale handtekening verwijderen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
+[Snel starten (SOAP modus): een digitale handtekening verwijderen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

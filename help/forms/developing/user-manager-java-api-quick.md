@@ -8,38 +8,38 @@ topic-tags: develop
 role: Developer
 exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) voor gebruikersbeheer {#user-manager-java-api-quick-start-soap}
+# Gebruikersbeheer Java API Snel starten (SOAP) {#user-manager-java-api-quick-start-soap}
 
 Java API Quick Start (SOAP) is beschikbaar voor de gebruikersbeheer-API.
 
-[Snel starten (SOAP-modus): gebruikers toevoegen met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Snel starten (SOAP modus): gebruikers toevoegen met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
-[Snel starten (SOAP-modus): gebruikers verwijderen met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[Snel starten (SOAP modus): gebruikers verwijderen met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Snel starten (SOAP-modus): Groepen maken met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
+[Snel starten (SOAP modus): Groepen maken met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
 
-[Snel starten (SOAP-modus): gebruikers en groepen beheren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
+[Snel starten (SOAP modus): Gebruikers en groepen beheren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
 
-[Snel starten (SOAP-modus): rollen en machtigingen beheren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[Snel starten (SOAP modus): Rollen en machtigingen beheren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
-[Snel starten (SOAP-modus): gebruikers programmatisch synchroniseren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
+[Snel starten (SOAP modus): gebruikers programmatisch synchroniseren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
 
-[Snel starten (SOAP-modus): de knooppunten van de voorkeuren programmatisch beheren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
+[Snel starten (SOAP modus): De knooppunten van de voorkeuren via de Java API programmatisch beheren](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >Snel starten in Programmeren met AEM formulieren is gebaseerd op het document als u een ander besturingssysteem gebruikt, zoals Unix, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): gebruikers toevoegen met de Java API {#quick-start-soap-mode-adding-users-using-the-java-api}
+## Snel starten (SOAP modus): gebruikers toevoegen met de Java API {#quick-start-soap-mode-adding-users-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue aan AEM Forms toegevoegd. (Zie [Gebruikers toevoegen](/help/forms/developing/users.md#adding-users).)
 
@@ -157,7 +157,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue aan AEM
  
 ```
 
-## Snel starten (SOAP-modus): gebruikers verwijderen met de Java API {#quick-start-soap-mode-deleting-users-using-the-java-api}
+## Snel starten (SOAP modus): gebruikers verwijderen met de Java API {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue uit AEM Forms verwijderd. (Zie [Gebruikers verwijderen](/help/forms/developing/users.md#deleting-users).)
 
@@ -253,7 +253,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue uit AEM
  
 ```
 
-## Snel starten (SOAP-modus): gebruikers en groepen beheren met de Java API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
+## Snel starten (SOAP modus): Gebruikers en groepen beheren met de Java API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
 In het volgende codevoorbeeld worden een lokale gebruiker en de lokale groep gevonden waartoe de gebruiker behoort. (Zie [Gebruikers en groepen beheren](/help/forms/developing/users.md#managing-users-and-groups).)
 
@@ -377,7 +377,7 @@ In het volgende codevoorbeeld worden een lokale gebruiker en de lokale groep gev
  
 ```
 
-## Snel starten (SOAP-modus): rollen en machtigingen beheren met de Java API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
+## Snel starten (SOAP modus): Rollen en machtigingen beheren met de Java API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
 Het volgende codevoorbeeld wijst de rol van de Gebruiker van de Diensten aan een hoofd toe, drukt de rollen het hoofd heeft, en verwijdert dan de rol uit het hoofd. Twee diensten worden aangehaald voor deze snelle start: de dienst DirectoryManager en de dienst AuthorizationManager.(Zie [Rollen en machtigingen beheren](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
@@ -520,7 +520,7 @@ Het volgende codevoorbeeld wijst de rol van de Gebruiker van de Diensten aan een
  
 ```
 
-## Snel starten (SOAP-modus): gebruikers programmatisch synchroniseren met de Java API {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
+## Snel starten (SOAP modus): gebruikers programmatisch synchroniseren met de Java API {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gebruikers gesynchroniseerd met de API&#39;s voor gebruikersbeheer. (Zie [Gebruikers programmatisch synchroniseren](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
@@ -629,7 +629,7 @@ In het volgende Java-codevoorbeeld worden gebruikers gesynchroniseerd met de API
  
 ```
 
-## Snel starten (SOAP-modus): gebruikers toevoegen met de Java API {#quick_start_soap_mode_adding_users_using_the_java_api-1}
+## Snel starten (SOAP modus): gebruikers toevoegen met de Java API {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue aan AEM Forms toegevoegd. (Zie [Gebruikers toevoegen](/help/forms/developing/users.md#adding-users).)
 
@@ -747,7 +747,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue aan AEM
  
 ```
 
-## Snel starten (SOAP-modus): Groepen maken met de Java API {#quick-start-soap-mode-creating-groups-using-the-java-api}
+## Snel starten (SOAP modus): Groepen maken met de Java API {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een groep gemaakt met de naam AdobeGroup naar AEM Forms. (Zie [Groepen maken](/help/forms/developing/users.md#creating-groups).)
 
@@ -899,7 +899,7 @@ In het volgende codevoorbeeld wordt een groep gemaakt met de naam AdobeGroup naa
  }
 ```
 
-## Snel starten (SOAP-modus) Voorkeursknooppunten beheren {#quick-start-soap-mode-managing-preferences-nodes}
+## Snel starten (SOAP modus) Voorkeursknooppunten beheren {#quick-start-soap-mode-managing-preferences-nodes}
 
 De volgende Java-codemodellen die het beheer van knooppunten voorkeuren uitvoeren met de API&#39;s voor gebruikersbeheer. ( Zie [Programmaticaal beheer van de knooppunten van de voorkeuren](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
@@ -1002,7 +1002,7 @@ public class ManagePreferences {
 }
 ```
 
-## Snel starten (SOAP-modus): de knooppunten van de voorkeuren programmatisch beheren met de Java API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## Snel starten (SOAP modus): De knooppunten van de voorkeuren via de Java API programmatisch beheren {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
 De volgende Java-codemodellen die het beheer van voorkeuren uitvoeren met de API&#39;s voor gebruikersbeheer ( Zie [Programmaticaal beheer van de knooppunten van de voorkeuren](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 

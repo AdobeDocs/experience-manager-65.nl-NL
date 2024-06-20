@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -33,9 +34,9 @@ De volgende soorten eindpunten kunnen aan de diensten worden toegevoegd. Niet al
 
 **Verwijderen:** Hiermee kan een toepassing die met Flex is gebouwd, de service aanroepen met (Verouderd voor AEM formulieren) AEM formulieren Verwijderen. Een remoting eindpunt wordt automatisch gecreeerd voor elke geactiveerde dienst. Een bestemming van Flex die de zelfde naam zoals het eindpunt heeft wordt gecreeerd, en de cliënten van Flex kunnen verre voorwerpen tot stand brengen die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
 
-**SOAP:** Hiermee wordt een clienttoepassing die is ontwikkeld met de API&#39;s voor het programmeren van AEM formulieren, ingeschakeld om de service aan te roepen met de SOAP-modus. Een eindpunt van de ZEEP wordt automatisch gecreeerd voor elke geactiveerde dienst.
+**SOAP:** Hiermee wordt een clienttoepassing die is ontwikkeld met de API&#39;s voor het programmeren van AEM formulieren, ingeschakeld om de service aan te roepen in de SOAP-modus. Een SOAP eindpunt wordt automatisch gecreeerd voor elke geactiveerde dienst.
 
-**notitie**: *De veiligheid kan uit documenten van de documentveiligheid worden verwijderd wanneer het eindpunt van de ZEEP wordt gebruikt terwijl het bekijken van de documenten in Adobe Acrobat of Adobe Reader. Voor details over hoe te om de punten van de ZEEP op uw documenten van LCRM onbruikbaar te maken, zie [SOAP-eindpunten uitschakelen voor documenten met documentbeveiliging](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**notitie**: *De veiligheid kan uit de documenten van de documentveiligheid worden verwijderd wanneer het SOAP eindpunt wordt gebruikt terwijl het bekijken van de documenten in Adobe Acrobat of Adobe Reader. Voor details over hoe te om SOAP punten op uw documenten onbruikbaar te maken LCRM, zie [SOAP eindpunten voor documentbeveiligingsdocumenten uitschakelen](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
 **EJB:** Hiermee kan een clienttoepassing die is ontwikkeld met de API&#39;s voor het programmeren van AEM formulieren, de service aanroepen met de modus Enterprise JavaBeans (EJB). Een eindpunt EJB wordt automatisch gecreeerd voor elke geactiveerde dienst.
 

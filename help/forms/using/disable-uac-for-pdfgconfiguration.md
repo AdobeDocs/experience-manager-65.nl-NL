@@ -3,8 +3,9 @@ title: UAC voor PDFG-configuratie uitschakelen voor zowel JEE als OSGI
 description: Leer de stappen op hoe u UAC voor Configuratie PDFG kunt onbruikbaar maken om Word aan PDF omzetting te bevestigen.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Troubleshooting
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%

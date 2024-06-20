@@ -8,8 +8,9 @@ content-strategy: max-2018
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
 solution: Experience Manager, Experience Manager Forms
+feature: Correspondence Management
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 Met AEM Forms kunt u gemakkelijk formulieren maken, publiceren en verwijderen. Zie voor meer informatie over AEM Forms [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md).
 
-De AEM Forms-server biedt twee instanties: Auteur en Publiceren. De instantie Auteur is bedoeld voor het maken en beheren van formulierelementen en -bronnen. Publicatie-instantie is bedoeld om elementen en gerelateerde bronnen die beschikbaar zijn voor eindgebruikers, te behouden. U kunt XDP en PDF forms op de wijze van de Auteur invoeren. Zie voor meer informatie [XDP- en PDF-documenten ophalen in AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+De AEM Forms-server biedt twee instanties: Auteur en Publish. De instantie Auteur is bedoeld voor het maken en beheren van formulierelementen en -bronnen. Publish-instantie is bedoeld om middelen en gerelateerde bronnen beschikbaar te houden voor eindgebruikers. U kunt XDP en PDF forms op de wijze van de Auteur invoeren. Zie voor meer informatie [XDP- en PDF-documenten ophalen in AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
 ## Ondersteunde elementen   {#supported-assets-nbsp}
 
@@ -59,16 +60,16 @@ Het is mogelijk dat uw Adaptieve Forms gebruik maakt van bepaalde configuraties,
 Middelen kunnen de volgende statussen hebben:
 
 * **Niet gepubliceerd:** An asset that has never been published (The unpublished state is apply only to Forms assets. De activa van het Beheer van de correspondentie hebben geen Unpublished staat.)
-* **Gepubliceerd**: Een middel dat is gepubliceerd en beschikbaar is in de instantie Publiceren
+* **Gepubliceerd**: Een middel dat is gepubliceerd en beschikbaar is op de instantie van Publish
 * **gewijzigd**: Een element dat na publicatie is gewijzigd
 
-## Middelen publiceren {#publish-an-asset}
+## Publish een middel {#publish-an-asset}
 
 1. Log in bij de AEM Forms-server.
 1. Gebruik een van de volgende opties om een element te selecteren en te publiceren.
 
    1. Plaats de aanwijzer op een element en selecteer **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Voer een van de volgende handelingen uit en selecteer vervolgens Publiceren:
+   1. Voer een van de volgende handelingen uit en selecteer vervolgens Publish:
 
       * Als u in de kaartweergave werkt, selecteert u **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)en selecteert u het element. Het element is geselecteerd.
       * Als u zich in de lijstweergave bevindt, schakelt u het selectievakje van een element in. Het element is geselecteerd.
@@ -79,7 +80,7 @@ Middelen kunnen de volgende statussen hebben:
       >
       >Selecteer geen meerdere elementen. Het tegelijkertijd publiceren van meerdere elementen wordt niet ondersteund.
 
-1. Wanneer het publicatieproces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde elementen en bronnen. Selecteer in het dialoogvenster dat gerelateerde elementen bevat de optie **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Elementen publiceren wordt weergegeven.
+1. Wanneer het Publish-proces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde middelen en middelen. Selecteer in het dialoogvenster dat gerelateerde elementen bevat de optie **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Publish Assets Success wordt weergegeven.
 
    >[!NOTE]
    >
@@ -91,13 +92,13 @@ Middelen kunnen de volgende statussen hebben:
 
    >[!NOTE]
    >
-   >Als Forms Manager de gebruiker geen toestemming geeft om de vermelde elementen te publiceren, is de handeling Publiceren uitgeschakeld. Middelen waarvoor extra machtigingen vereist zijn, worden rood weergegeven.
+   >Als Forms Manager de gebruiker geen toestemming geeft om de vermelde elementen te publiceren, is de Publish-actie uitgeschakeld. Middelen waarvoor extra machtigingen vereist zijn, worden rood weergegeven.
 
-   Nadat een element is gepubliceerd, worden de metagegevenseigenschappen van het element gekopieerd naar de instantie Publiceren en wordt de status van het element gewijzigd in Gepubliceerd. De status van de afhankelijke elementen die worden gepubliceerd, wordt ook gewijzigd in Gepubliceerd.
+   Nadat een element is gepubliceerd, worden de metagegevenseigenschappen van het element naar de Publish-instantie gekopieerd en wordt de status van het element gewijzigd in Published. De status van de afhankelijke elementen die worden gepubliceerd, wordt ook gewijzigd in Gepubliceerd.
 
    Nadat u middelen hebt gepubliceerd, kunt u de Forms Portal gebruiken om alle elementen op een webpagina weer te geven. Zie voor meer informatie [Inleiding tot het publiceren van formulieren op een portal](../../forms/using/introduction-publishing-forms.md).
 
-## Alle Correspondence Management Assets publiceren {#publish-all-the-correspondence-management-assets}
+## Publish all the Correspondent Management Assets {#publish-all-the-correspondence-management-assets}
 
 Met AEM Forms kunt u alle Correspondence Management-elementen op een server in één keer publiceren. De gepubliceerde activa omvatten alle activa van het Beheer van de Correspondentie en verwante gebiedsdelen.
 
@@ -106,11 +107,11 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen op een 
 1. Log in bij de AEM Forms-server.
 1. Selecteren **Adobe Experience Manager** in de algemene navigatiebalk.
 1. Selecteren ![gereedschappen](assets/tools.png)en selecteer vervolgens **Forms**.
-1. Selecteren **Correspondentenbeheermiddelen publiceren**.
+1. Selecteren **Publish Correspondentenbeheermiddelen**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   De pagina Alle correspondentiebeheermiddelen publiceren wordt weergegeven en geeft de informatie weer over de laatste keer dat werd geprobeerd om het proces voor het beheer van correspondentie publiceren uit te voeren.
+   De pagina Publish All Correspondence Management Assets wordt weergegeven met informatie over de laatste keer dat de Publish Correspondence Management Assets-procedure werd gestart.
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
@@ -120,7 +121,7 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen op een 
 
    >[!NOTE]
    >
-   >Het publicatieproces kan niet worden geannuleerd nadat het is gestart. Zorg er tijdens het proces Publiceren ook voor dat u geen elementen maakt, verwijdert, wijzigt of publiceert, en dat u de bewerking Alle correspondentiebeheermiddelen exporteren niet start.
+   >Het Publish-proces kan niet worden geannuleerd nadat het is gestart. Zorg er tijdens de Publish-bewerking ook voor dat u geen elementen maakt, verwijdert, wijzigt of publiceert of dat u de bewerking Alle correspondentiebeheermiddelen exporteren start.
 
 ## Publiceren en verwijderen voor Forms en documenten automatiseren {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 

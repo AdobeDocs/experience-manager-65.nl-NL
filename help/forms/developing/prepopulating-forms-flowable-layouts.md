@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '3478'
 ht-degree: 0%
@@ -101,7 +101,7 @@ In het volgende diagram ziet u een voorbeeld van een inkooporderformulier. De in
 
 ### Overwegingen bij het ontwerpen van formulieren {#form-design-considerations}
 
-Forms met stroombare indelingen is gebaseerd op formulierontwerpen die zijn gemaakt in Designer. Een formulierontwerp bevat een set regels voor de indeling, presentatie en gegevensvastlegging, inclusief het berekenen van waarden op basis van de gebruikersinvoer. De regels worden toegepast wanneer gegevens in een formulier worden ingevoerd. Velden die aan een formulier worden toegevoegd, zijn subformulieren die zich binnen het formulierontwerp bevinden. In het inkooporderformulier dat in het vorige diagram wordt weergegeven, is elke regel bijvoorbeeld een subformulier. Voor informatie over het maken van een formulierontwerp dat subformulieren bevat, raadpleegt u [Een inkooporderformulier maken met een stroombare indeling](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
+Forms met stroombare indelingen is gebaseerd op formulierontwerpen die in Designer zijn gemaakt. Een formulierontwerp bevat een set regels voor de indeling, presentatie en gegevensvastlegging, inclusief het berekenen van waarden op basis van de gebruikersinvoer. De regels worden toegepast wanneer gegevens in een formulier worden ingevoerd. Velden die aan een formulier worden toegevoegd, zijn subformulieren die zich binnen het formulierontwerp bevinden. In het inkooporderformulier dat in het vorige diagram wordt weergegeven, is elke regel bijvoorbeeld een subformulier. Voor informatie over het maken van een formulierontwerp dat subformulieren bevat, raadpleegt u [Een inkooporderformulier maken met een stroombare indeling](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Gegevensubgroepen {#understanding-data-subgroups}
 
@@ -305,7 +305,7 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Forms vooraf vullen met stroombare indelingen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Snel starten (SOAP modus): Forms vooraf vullen met stroombare indelingen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

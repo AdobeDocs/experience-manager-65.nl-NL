@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Als de gebruiker Canadese gegevens selecteert, bevat het geretourneerde formulie
 
 In deze sectie worden voorbeeldbestanden gebruikt die zich op de volgende locatie kunnen bevinden:
 
-&lt;*Installatiemap van Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
+&lt;*Forms Designer-installatiemap*>/Samples/Forms/Purchase Order/Form Fragments
 
 waarbij &lt;*installatiemap*> is het installatiepad. Ten behoeve van de clienttoepassing is het bestand Purchase Order Dynamic.xdp gekopieerd van deze installatielocatie en geïmplementeerd in een Forms-toepassing met de naam *Applications/FormsApplication*. Het bestand Purchase Order Dynamic.xdp wordt in een map met de naam FormsFolder geplaatst. Op dezelfde manier worden de fragmenten in de map Fragments geplaatst, zoals in de volgende afbeelding wordt getoond.
 

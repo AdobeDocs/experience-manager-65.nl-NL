@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 0%
@@ -42,7 +43,7 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
    * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Zie voor meer informatie over de instellingen voor gecontroleerde mappen de [Instellingen voor het eindpunt van gecontroleerde mappen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Zie voor meer informatie over de e-mailinstellingen [Instellingen voor e-maileindpunt](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Om een EJB eindpunt toe te voegen, voegt de klik EJB toe en specificeert een naam en een beschrijving voor het eindpunt.
-   * Om een eindpunt van de ZEEP toe te voegen, voegt de klik ZEEP toe en specificeert een naam en een beschrijving voor het eindpunt.
+   * Om een SOAP eindpunt toe te voegen, voegt de klik SOAP toe en specificeert een naam en een beschrijving voor het eindpunt.
    * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Zie voor meer informatie over de instellingen voor verwijderen [Instellingen voor eindpunten verwijderen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.
@@ -109,7 +110,7 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
    * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Zie voor meer informatie over de instellingen voor gecontroleerde mappen de [Instellingen voor het eindpunt van gecontroleerde mappen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Zie voor meer informatie over de e-mailinstellingen [Instellingen voor e-maileindpunt](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Om een EJB eindpunt toe te voegen, voegt de klik EJB toe en specificeert een naam en een beschrijving voor het eindpunt.
-   * Om een eindpunt van de ZEEP toe te voegen, voegt de klik ZEEP toe en specificeert een naam en een beschrijving voor het eindpunt.
+   * Om een SOAP eindpunt toe te voegen, voegt de klik SOAP toe en specificeert een naam en een beschrijving voor het eindpunt.
    * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Zie voor meer informatie over de instellingen voor verwijderen [Instellingen voor eindpunten verwijderen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.

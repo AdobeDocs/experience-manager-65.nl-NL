@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 0%
@@ -106,7 +106,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor het programmatically aa
  </tbody>
 </table>
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -760,7 +760,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Le
 
 In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` gegevens via HTTP gebruiken. (Zie [AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt doorgegeven aan het AEM Forms-proces met SOAP via HTTP. Het PDF-bestand bevindt zich op de volgende URL: `https://'[server]:[port]'/FormsQS`. Het proces keert een wachtwoord-gecodeerd document van de PDF terug dat als PDF dossier genoemd wordt opgeslagen *EncryptedDocument.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt doorgegeven aan het AEM Forms-proces via SOAP via HTTP. Het PDF-bestand bevindt zich op de volgende URL: `https://'[server]:[port]'/FormsQS`. Het proces keert een wachtwoord-gecodeerd document van de PDF terug dat als PDF dossier genoemd wordt opgeslagen *EncryptedDocument.pdf*.
 
 ```java
  /**

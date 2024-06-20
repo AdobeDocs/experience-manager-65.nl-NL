@@ -7,8 +7,9 @@ topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Als u een doel voor het eerst configureert, klikt u op **Nu configureren.**
 1. Klikken **AEM Forms Target Configuration**.
 1. Selecteer een **Doelframework**.
 1. In de **Doel-URL&#39;s** geeft u alle URL&#39;s op waar A/B-tests worden uitgevoerd. Bijvoorbeeld https://&lt;*hostnaam*>:&lt;*poort*>/ voor AEM Forms Server op OSGi of https://&lt;*hostnaam*>:&lt;*poort*>/lc/ voor AEM Forms Server op JEE.
-Bedenk dat u een Doel URL voor een Publish instantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres. In dat geval, moet u zowel als Doel URLs vormen - gebruikend hostname en het IP adres. Als u slechts één van URLs vormt, loopt uw test A/B niet voor klanten die van andere URL komen. Klikken **+** meerdere URL&#39;s opgeven.
+Bedenk dat u een doel-URL voor een Publish-instantie wilt configureren en uw klanten er toegang toe hebben met de hostnaam of het IP-adres. In dat geval, moet u zowel als Doel URLs vormen - gebruikend hostname en het IP adres. Als u slechts één van URLs vormt, loopt uw test A/B niet voor klanten die van andere URL komen. Klikken **+** meerdere URL&#39;s opgeven.
 
 1. Klikken **Opslaan**.
 

@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 0%
@@ -174,7 +175,7 @@ U kunt een PDF-document samenstellen dat unieke pagina-id&#39;s (Bates-nummering
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): een PDF-document samenstellen met Bates-nummering met behulp van de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document samenstellen met een Bates-nummering met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

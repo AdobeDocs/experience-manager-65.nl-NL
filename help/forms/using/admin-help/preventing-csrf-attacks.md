@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -31,11 +32,11 @@ Neem bijvoorbeeld een scenario waarin u bent aangemeld bij de beheerconsole in e
 
 **Null-referentie:** Wanneer u een nieuw browservenster of tabblad opent, typt u een adres en drukt u op Enter. De referentie is dan null. Het verzoek is volledig nieuw en niet afkomstig van een bovenliggende webpagina; er is dus geen referentie voor het verzoek. De Forms-server kan een null-referentie ontvangen van:
 
-* verzoeken die op de eindpunten van de ZEEP of van het REST van Acrobat worden gedaan
-* om het even welke Desktopcliënt die een HTTP- verzoek op een AEM vormt ZEEP of REST eindpunt
+* verzoeken betreffende SOAP of REST-eindpunten van Acrobat
+* om het even welke Desktopcliënt die een HTTP- verzoek op een AEM vormen SOAP of REST eindpunt indienen
 * wanneer een nieuw browservenster wordt geopend en de URL voor elke aanmeldingspagina van AEM webtoepassing wordt ingevoerd
 
-Een null-referentie op de eindpunten SOAP en REST toestaan. Sta ook een ongeldige verwijzer op alle login van URI pagina&#39;s zoals /adminui en /contentSpace en hun overeenkomstige in kaart gebrachte middelen toe. Bijvoorbeeld, in kaart gebrachte servlet voor /contentSpace is /contentspace/faces/jsp/login.jsp, die een ongeldige verwijzingsuitzondering zou moeten zijn. Deze uitzondering is alleen vereist als u het filteren van GET voor uw webtoepassing inschakelt. Uw toepassingen kunnen specificeren of om ongeldige verwijzers toe te staan. Zie &quot;Beveiligen tegen aanvallen van Smederij op verzoek van andere sites&quot; in [Verharding en beveiliging voor AEM formulieren](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+Een null-referentie op SOAP- en REST-eindpunten toestaan. Sta ook een ongeldige verwijzer op alle login van URI pagina&#39;s zoals /adminui en /contentSpace en hun overeenkomstige in kaart gebrachte middelen toe. Bijvoorbeeld, in kaart gebrachte servlet voor /contentSpace is /contentspace/faces/jsp/login.jsp, die een ongeldige verwijzingsuitzondering zou moeten zijn. Deze uitzondering is alleen vereist als u het filteren van GET voor uw webtoepassing inschakelt. Uw toepassingen kunnen specificeren of om ongeldige verwijzers toe te staan. Zie &quot;Beveiligen tegen aanvallen van Smederij op verzoek van andere sites&quot; in [Verharding en beveiliging voor AEM formulieren](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 **Uitzondering toegestane verwijzer:** De toegestane Uitzondering van de Referateur is een sublist van de lijst van toegestane verwijzers, waarvan de verzoeken worden geblokkeerd. Uitzonderingen voor toegestane verwijzingen zijn specifiek voor een webtoepassing. Als een subset van de toegestane referenties een bepaalde webtoepassing niet mag aanroepen, kunt u de referenties lijsten van gewezen personen door middel van toegestane uitzonderingen Referrer. Uitzonderingen voor toegestane verwijzingen worden opgegeven in het bestand web.xml voor uw toepassing. (Zie &quot;Beveiliging tegen aanvallen van Svervalsingen voor aanvragen van andere sites&quot; in Verharding en beveiliging voor AEM formulieren op de pagina Help en Tutorials.)
 

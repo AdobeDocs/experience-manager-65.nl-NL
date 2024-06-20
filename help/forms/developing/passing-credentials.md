@@ -3,8 +3,9 @@ title: Geef geloofsbrieven door gebruikend WS-veiligheidskopballen
 description: Leer hoe u referenties doorgeeft met WS-beveiligingskoppen
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Document Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -13,9 +14,9 @@ ht-degree: 0%
 
 # Gegevens doorgeven met WS-beveiligingskoppen {#using-execute-script-service-aem-forms-jee-workbench}
 
-Wanneer u een AEM Forms op JEE-service aanroept met behulp van webservices, kunt u WS-Security-headers gebruiken om verificatie-informatie voor de client door te geven die AEM Forms op JEE vereist. WS-Security definieert SOAP-extensies om clientverificatie, berichtvertrouwelijkheid en berichtintegriteit te implementeren. Dientengevolge, kunt u AEM Forms op de diensten van JEE aanhalen wanneer AEM Forms op JEE als stand-alone server of binnen een gegroepeerde milieu wordt opgesteld.
+Wanneer u een AEM Forms op JEE-service aanroept met behulp van webservices, kunt u WS-Security-headers gebruiken om verificatie-informatie voor de client door te geven die AEM Forms op JEE vereist. WS-Security definieert SOAP extensies voor het implementeren van clientverificatie, vertrouwelijkheid van berichten en integriteit van berichten. Dientengevolge, kunt u AEM Forms op de diensten van JEE aanhalen wanneer AEM Forms op JEE als stand-alone server of binnen een gegroepeerde milieu wordt opgesteld.
 
-Hoe u WS-Veiligheid kopballen tot AEM Forms op JEE overgaat hangt van of u de as-geproduceerde klassen van Java of een .NET cliëntassemblage gebruikt die de inheemse stapel van de ZEEP van de dienst verbruikt.
+Hoe u WS-Veiligheid kopballen tot AEM Forms op JEE overgaat hangt van of u de as-geproduceerde klassen van Java of een .NET cliëntassemblage gebruikt die de inheemse SOAP van de dienst stapel verbruikt.
 
 >[!NOTE]
 >

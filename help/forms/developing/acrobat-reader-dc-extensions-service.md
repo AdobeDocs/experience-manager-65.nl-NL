@@ -7,7 +7,7 @@ topic-tags: develop
 role: Developer
 exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
@@ -18,19 +18,19 @@ ht-degree: 0%
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service Acrobat Reader DC Extensions.
 
-[Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Snel starten (SOAP modus):gebruiksrechten toepassen met de Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Gebruiksrechten verwijderen uit PDF-documenten](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): referentie-informatie ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[Snel starten (SOAP modus): referentie-informatie ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >Quick Start in Programming with AEM Forms is gebaseerd op het Forms server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Snel starten (SOAP modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-document met de naam *Lening.pdf*. Het PDF-document waarvoor rechten zijn ingeschakeld, wordt opgeslagen als een PDF-bestand met de naam *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn`, en `enabledDigitalSignatures`. (Zie [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
@@ -142,7 +142,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-d
   
 ```
 
-## Snel starten (SOAP-modus): gebruiksrechten verwijderen uit een PDF-document met de Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): gebruiksrechten verwijderen uit een PDF-document met de Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF-document waarvoor rechten zijn ingeschakeld met de naam *LoanUsageRights.pdf*. (Zie [Gebruiksrechten verwijderen uit PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
@@ -242,7 +242,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF
  
 ```
 
-## Snel starten (SOAP-modus): referentie-informatie ophalen met de Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+## Snel starten (SOAP modus): referentie-informatie ophalen met de Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt informatie opgehaald over de referentie die wordt gebruikt om gebruiksrechten toe te passen op een PDF-document waarvoor rechten zijn ingeschakeld met de naam *LoanUsageRights.pdf*. (Zie [Referentiegegevens ophalen](/help/forms/developing/assigning-usage-rights.md).)
 

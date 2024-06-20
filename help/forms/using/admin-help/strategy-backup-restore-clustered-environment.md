@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 98c96349-f253-475f-b646-352269814a38
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1396'
 ht-degree: 0%
@@ -180,10 +181,10 @@ De uitgeversknoop heeft geen primair-secundaire verhouding in een gegroepeerde m
 ### Eén uitgeversknooppunt herstellen {#recover-a-single-publisher-node}
 
 1. Sluit de knoop die moet worden teruggekregen en doe geen publicatieactiviteit tot de knoop opnieuw omhoog is.
-1. Het knooppunt Publiceren herstellen met [Back-up herstellen](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Publish-knooppunt herstellen met [Back-up herstellen](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Een cluster herstellen {#recover-a-cluster}
 
 1. Sluit de cluster af.
-1. Het knooppunt Publiceren herstellen met [Back-up herstellen](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Publish-knooppunt herstellen met [Back-up herstellen](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Start het primaire knooppunt gevolgd door het secundaire knooppunt van de auteurcluster.

@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1690'
 ht-degree: 0%
@@ -54,10 +54,10 @@ Stel de optie voor het renderen van de client in om een formulier op de client t
 
 Een optionele uitvoeringsoptie die u kunt instellen, is de `SeedPDF` -optie. De `SeedPDF` Deze optie combineert de container PDF (zaaddocument) met het formulierontwerp en de XML-gegevens. Zowel het formulierontwerp als de XML-gegevens worden geleverd aan Acrobat of Adobe Reader, waar het formulier wordt gegenereerd. De `SeedPDF` Deze optie kan worden gebruikt wanneer de clientcomputer geen fonts heeft die in het formulier worden gebruikt, bijvoorbeeld wanneer een eindgebruiker geen licentie heeft voor het gebruik van een font dat de eigenaar van het formulier mag gebruiken.
 
-U kunt Designer gebruiken om een eenvoudig dynamisch PDF-bestand te maken dat u kunt gebruiken als een PDF-bestand. De volgende stappen zijn vereist om deze taak uit te voeren:
+U kunt Designer gebruiken om een eenvoudig dynamisch PDF-bestand te maken dat u kunt gebruiken als PDF-bestand. De volgende stappen zijn vereist om deze taak uit te voeren:
 
-1. Bepaal of u lettertypen in het zaadbestand wilt insluiten. Het zaadbestand moet aanvullende fonts bevatten die zijn vereist voor het PDF-formulier dat wordt gegenereerd. Wanneer u lettertypen insluit in het zaadbestand PDF, moet u ervoor zorgen dat u geen licentieovereenkomsten voor lettertypen schendt. In Designer kunt u bepalen of u fonts wettelijk kunt insluiten. Als er fonts zijn die u niet in het formulier kunt insluiten wanneer u het opslaat, wordt in Designer een bericht weergegeven met de fonts die u niet kunt insluiten. Dit bericht wordt niet weergegeven in Designer voor statische PDF-documenten.
-1. Als u het zaadbestand in Designer maakt, wordt u geadviseerd ten minste een tekstveld toe te voegen dat een bericht bevat. Het bericht moet worden gericht aan gebruikers van eerdere versies van Adobe Reader en aangeven dat ze Acrobat 7.0 of hoger of Adobe Reader 7.0 of hoger nodig hebben om het document te kunnen bekijken.
+1. Bepaal of u lettertypen in het zaadbestand wilt insluiten. Het zaadbestand moet aanvullende fonts bevatten die zijn vereist voor het PDF-formulier dat wordt gegenereerd. Wanneer u lettertypen insluit in het zaadbestand PDF, moet u ervoor zorgen dat u geen licentieovereenkomsten voor lettertypen schendt. In Designer kunt u bepalen of u lettertypen wettelijk kunt insluiten. Als er bij het opslaan fonts zijn die u niet in het formulier kunt insluiten, geeft Designer een bericht weer met de fonts die u niet kunt insluiten. Dit bericht wordt niet weergegeven in Designer voor statische PDF-documenten.
+1. Als u het zaadbestand in Designer maakt, is het raadzaam ten minste een tekstveld toe te voegen dat een bericht bevat. Het bericht moet worden gericht aan gebruikers van eerdere versies van Adobe Reader en aangeven dat ze Acrobat 7.0 of hoger of Adobe Reader 7.0 of hoger nodig hebben om het document te kunnen bekijken.
 1. Sla het zaadbestand op als een dynamisch PDF-PDF-bestand met de extensie van het PDF-bestand.
 
 >[!NOTE]
@@ -130,7 +130,7 @@ Een formulier op de client renderen met de Forms API (Java):
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): een formulier op de client renderen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[Snel starten (SOAP modus): Een formulier op de client genereren met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

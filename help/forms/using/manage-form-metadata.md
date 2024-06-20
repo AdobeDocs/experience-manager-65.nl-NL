@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -117,8 +118,8 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die in AEM F
    <td>Alles behalve bron</td> 
    <td><p>Tijdstip waarop het formulier volgens de planning automatisch moet worden gepubliceerd/gepubliceerd. De gebruiker stelt deze waarde in bij het bewerken van metagegevens.</p> 
     <ul> 
-     <li>Zowel de functie Publiceren aan als de functie Uittijd moet na de huidige datum vallen. </li> 
-     <li>Publiceren buiten de tijd moet na publicatie op tijd plaatsvinden. </li> 
+     <li>Zowel Publish Aan als Uit moet langer zijn dan de huidige datum. </li> 
+     <li>Publish Off time dient na publicatie On time te zijn. </li> 
     </ul> </td> 
   </tr> 
   <tr> 

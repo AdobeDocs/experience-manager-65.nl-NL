@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -43,7 +44,7 @@ HTML Workspace biedt naast de besturingselementen voor mobiele formulieren ook e
 
 1. Als u een adaptief formulier wilt verzenden, gebruikt u de **Verzenden** beschikbare knop- of routeacties, zoals het geval was in Mobile Forms. De knop Verzendtype van het adaptieve formulier is verborgen.
 
-1. **Zichtbaarheid van de werkbalk Adaptief formulier wereldwijd**: Als in Process Designer de algemene werkbalk/werkbalk op hoofdniveau wordt verborgen, worden de werkbalk en de knoppen niet weergegeven op adaptieve formulieren.
+1. **Zichtbaarheid van de werkbalk Adaptief formulier wereldwijd**: Als Process Designer de algemene werkbalk/werkbalk op hoofdniveau verbergt, worden de werkbalk en de knoppen niet weergegeven op adaptieve formulieren.
 
 1. **Workspace navigation controls for Adaptive Forms**: De knoppen Volgende/Vorige zijn beschikbaar samen met de knoppen Opslaan, Verzenden en Route Handeling voor een adaptief formulier in de HTML Workspace. Klik op de knoppen Volgende/Vorige om door de deelvensters met adaptieve formulieren te navigeren in de HTML Workspace. De knoppen Volgende/Vorige bieden diepgaande navigatie, vergelijkbaar met navigatiebesturingselementen in de weergave Mobiel van adaptieve formulieren.
 

@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7608'
 ht-degree: 0%
@@ -264,7 +265,7 @@ Configuration Manager maakte gebruik van een servlet die op uw toepassingsserver
 
 **Externe toegang vergrendelen tot de Trust Store**
 
-Met Configuratiebeheer kunt u een Acrobat Reader DC-extensie uploaden die is gecrediteerd aan de AEM Forms in de JEE-vertrouwde opslag. Dit betekent dat de toegang tot de Dienst van de Referentie van de Opslag van het Vertrouwen over verre protocollen (ZEEP en EJB) door gebrek is toegelaten. Deze toegang is niet meer noodzakelijk nadat u de credentie van Rechten gebruikend de Manager van de Configuratie hebt geupload of als u besluit om de Console van het Beleid later te gebruiken om geloofsbrieven te beheren.
+Met Configuratiebeheer kunt u een Acrobat Reader DC-extensie uploaden die is gecrediteerd aan de AEM Forms in de JEE-vertrouwde opslag. Dit betekent dat de toegang tot de Dienst van de Referentie van de Opslag van het Vertrouwen over verre protocollen (SOAP en EJB) door gebrek is toegelaten. Deze toegang is niet meer noodzakelijk nadat u de credentie van Rechten gebruikend de Manager van de Configuratie hebt geupload of als u besluit om de Console van het Beleid later te gebruiken om geloofsbrieven te beheren.
 
 U kunt de externe toegang tot alle Trust Store-services uitschakelen door de stappen in de sectie uit te voeren [Niet-essentiële externe toegang tot services uitschakelen](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
@@ -652,7 +653,7 @@ Bepaalde URL&#39;s worden gemarkeerd als eindgebruikers gerichte webtoepassingen
   </tr> 
   <tr> 
    <td><p>/DocumentManager/*</p> </td> 
-   <td><p>Uploaden en downloaden van documenten die moeten worden verwerkt wanneer toegang wordt verkregen tot externe eindpunten, SOAP WSDL-eindpunten en de Java SDK via SOAP-transport of EJB-transport met HTTP-documenten ingeschakeld.</p> </td> 
+   <td><p>Uploaden en downloaden van documenten die moeten worden verwerkt wanneer toegang wordt verkregen tot externe eindpunten, SOAP WSDL-eindpunten en de Java SDK via SOAP transport of EJB-transport met HTTP-documenten ingeschakeld.</p> </td> 
    <td><p>Ja</p> </td> 
    <td><p>Ja</p> </td> 
   </tr> 
@@ -827,7 +828,7 @@ Wanneer u een veilige netwerkarchitectuur zoals die in de vorige sectie wordt be
    <td> 
     <ul> 
      <li><p>Browser toont de Manager van de Configuratie en de toepassingen van het eindgebruikerWeb</p> </li> 
-     <li><p>Alle SOAP-verbindingen</p> </li> 
+     <li><p>Alle SOAP</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -835,9 +836,9 @@ Wanneer u een veilige netwerkarchitectuur zoals die in de vorige sectie wordt be
    <td> 
     <ul> 
      <li><p>De de dienstcliënttoepassingen van het Web, zoals .NET toepassingen</p> </li> 
-     <li><p>Adobe Reader® gebruikt SOAP voor AEM Forms op JEE-server webservices</p> </li> 
+     <li><p>Adobe Reader® gebruikt SOAP voor AEM Forms op JEE server webservices</p> </li> 
      <li><p>Adobe Flash®-toepassingen gebruiken SOAP voor Forms Server-webservices</p> </li> 
-     <li><p>AEM Forms op JEE SDK-aanroepen bij gebruik in SOAP-modus</p> </li> 
+     <li><p>AEM Forms op JEE SDK-aanroepen bij gebruik in SOAP modus</p> </li> 
      <li><p>Workbench ontwerpomgeving</p> </li> 
     </ul> </td> 
   </tr> 
@@ -954,7 +955,7 @@ Voor informatie over havens WebSphere die AEM Forms op JEE vereist, ga naar het 
 
 ### SSL configureren {#configuring-ssl}
 
-Verwijzen naar de fysieke architectuur die in de sectie wordt beschreven [AEM Forms op JEE fysieke architectuur](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)moet u SSL configureren voor alle verbindingen die u wilt gebruiken. Specifiek, moeten alle verbindingen van de ZEEP over SSL worden geleid om blootstelling van gebruikersgeloofsbrieven op een netwerk te verhinderen.
+Verwijzen naar de fysieke architectuur die in de sectie wordt beschreven [AEM Forms op JEE fysieke architectuur](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)moet u SSL configureren voor alle verbindingen die u wilt gebruiken. Met name moeten alle SOAP verbindingen via SSL worden uitgevoerd om blootstelling van gebruikersgeloofsbrieven op een netwerk te verhinderen.
 
 Voor instructies over hoe te om SSL op JBoss, WebLogic, en WebSphere te vormen, zie &quot;het Vormen SSL&quot;in [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_64).
 

@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '18860'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Een PDF-document maken met de Output API (Java):
 
 [Snel starten (EJB-modus): een PDF-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -540,7 +540,7 @@ Een PDF/A-document maken met de Output API (Java):
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): een PDF/A-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF/A-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -629,7 +629,7 @@ Een PDF/A-document maken met de Output API (webservice):
 
 ## Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De service Uitvoer geeft het formulierontwerp vervolgens weer in het dialoogvenster `com.adobe.idp.Document` object.
+De Output-service genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De service Uitvoer geeft het formulierontwerp vervolgens weer in het dialoogvenster `com.adobe.idp.Document` object.
 
 Een voordeel van het doorgeven van een `com.adobe.idp.Document` object naar de Output-service is dat andere AEM Forms-servicebewerkingen een `com.adobe.idp.Document` -instantie. Dat wil zeggen dat je een `com.adobe.idp.Document` instantie van een andere servicebewerking en rendert u deze. Stel dat een XDP-bestand wordt opgeslagen in een knooppunt Content Services (afgekeurd) genaamd `/Company Home/Form Designs`, zoals in de volgende afbeelding wordt getoond.
 
@@ -736,7 +736,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
 [Snel starten (EJB-modus): documenten doorgeven aan de uitvoerservice met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): documenten doorgeven aan de uitvoerservice met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Snel starten (SOAP modus): documenten doorgeven aan de uitvoerservice met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -818,7 +818,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
 ## Documenten in de opslagplaats doorgeven aan de uitvoerservice {#passing-documents-located-in-the-repository-to-the-output-service}
 
-De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De service Uitvoer geeft het formulierontwerp vervolgens weer in het dialoogvenster `com.adobe.idp.Document` object.
+De Output-service genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De service Uitvoer geeft het formulierontwerp vervolgens weer in het dialoogvenster `com.adobe.idp.Document` object.
 
 Een voordeel van het doorgeven van een `com.adobe.idp.Document` object naar de Output-service is dat andere AEM Forms-servicebewerkingen een `com.adobe.idp.Document` -instantie. Dat wil zeggen dat je een `com.adobe.idp.Document` instantie van een andere servicebewerking en rendert u deze. Stel bijvoorbeeld dat een XDP-bestand wordt opgeslagen in de AEM Forms-opslagplaats, zoals in de volgende afbeelding wordt getoond.
 
@@ -1052,7 +1052,7 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
 
 [Snel starten (EJB-modus): een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1272,7 +1272,7 @@ Afdrukken naar een bestand met de Output API (Java):
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): afdrukken naar een bestand met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[Snel starten (SOAP modus): Afdrukken naar een bestand met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2085,7 +2085,7 @@ Maak zoekregels met de Output API (Java):
 
 [Snel starten (EJB-modus): zoekregels maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[Snel starten (SOAP-modus): zoekregels maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[Snel starten (SOAP modus): zoekregels maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2299,7 +2299,7 @@ Een interactief PDF-document afvlakken naar een niet-interactief PDF-document me
 
 [Snel starten (EJB-modus): een PDF-document transformeren met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document transformeren met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document transformeren met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

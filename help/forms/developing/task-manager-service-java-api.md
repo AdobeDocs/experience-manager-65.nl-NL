@@ -8,32 +8,32 @@ topic-tags: develop
 role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) voor Taakbeheerservice {#task-manager-service-java-api-quickstart-soap}
+# Taakbeheerservice Java API Snel starten (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van de Taak.
 
-[Snel starten (SOAP-modus): taken toewijzen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
+[Snel starten (SOAP modus): taken toewijzen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): taken vergrendelen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Snel starten (SOAP modus): taken vergrendelen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): taken ophalen die aan gebruikers zijn toegewezen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
+[Snel starten (SOAP modus): taken ophalen die aan gebruikers zijn toegewezen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
-[Snel starten (SOAP-modus): formuliergegevens ophalen van taken met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
+[Snel starten (SOAP modus): formuliergegevens ophalen van taken met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): formuliergegevens wijzigen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Snel starten (SOAP modus): formuliergegevens wijzigen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
-[Snel starten (SOAP-modus): bestandsbijlagen ophalen van taken met behulp van de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
+[Snel starten (SOAP modus): Bestandsbijlagen ophalen van taken met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
+[Snel starten (SOAP modus): Taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk
 >
 >Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
+## Snel starten (SOAP modus): taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker Tony Blue.
 
@@ -176,7 +176,7 @@ In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker To
  
 ```
 
-## Snel starten (SOAP-modus): taken vergrendelen met de Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Snel starten (SOAP modus): taken vergrendelen met de Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt met de waarde 2 voor de taak-id.
 
@@ -265,7 +265,7 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
  
 ```
 
-## Snel starten (SOAP-modus): taken ophalen die aan gebruikers zijn toegewezen met de Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Snel starten (SOAP modus): taken ophalen die aan gebruikers zijn toegewezen met de Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewezen aan een gebruiker met de naam *tonblauw*. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
 
@@ -391,7 +391,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewez
  }
 ```
 
-## Snel starten (SOAP-modus): formuliergegevens ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
+## Snel starten (SOAP modus): formuliergegevens ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een taak met de id-waarde 304. Formuliergegevens worden naar een XML-bestand met de naam *FormData.xml* te vinden op C:\Adobe.
 
@@ -497,7 +497,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
  
 ```
 
-## Snel starten (SOAP-modus): formuliergegevens wijzigen met de Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
+## Snel starten (SOAP modus): formuliergegevens wijzigen met de Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens uit het *FormData.xml* bestand.
 
@@ -607,7 +607,7 @@ In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens u
  
 ```
 
-## Snel starten (SOAP-modus): bestandsbijlagen ophalen van taken met behulp van de Java API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
+## Snel starten (SOAP modus): Bestandsbijlagen ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke bestandsbijlage wordt opgeslagen als een TXT-bestand.
 
@@ -711,7 +711,7 @@ In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke besta
  
 ```
 
-## Snel starten (SOAP-modus): taakgegevens ophalen met de Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Snel starten (SOAP modus): Taakgegevens ophalen met de Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseerd op een proces met de naam *Hypothecaire lening - Prebuilt*. Het statuut van elke teruggekeerde taak wordt gecontroleerd om ervoor te zorgen dat het een voltooide taak is. Informatie zoals de naam van de gebruiker die de taak heeft voltooid en de datum waarop de taak is voltooid, wordt opgehaald en weergegeven.
 

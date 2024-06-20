@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -86,7 +87,7 @@ Ga als volgt te werk voordat u de Forms Server opnieuw start na een herstelbewer
    1. Klikken **Start** om elementen van de repository te synchroniseren.
 
 1. In een gegroepeerd milieu, zou de primaire knoop (met betrekking tot AEM) omhoog vóór de secundaire knopen moeten zijn.
-1. Zorg ervoor dat geen processen van of interne of externe bronnen zoals het Web, de ZEEP, of EJB procesinitiators in werking worden gesteld tot de normale verrichting van het systeem wordt bevestigd.
+1. Zorg ervoor dat geen processen van of interne of externe bronnen zoals het Web, SOAP, of EJB procesinitiators in werking worden gesteld tot de normale verrichting van het systeem wordt bevestigd.
 
 Als de hoofddatabase voor AEM formulieren wordt verplaatst of gewijzigd, raadpleegt u de installatiegidsen die relevant zijn voor uw toepassingsserver voor informatie over het bijwerken van de databaseverbindingsgegevens voor de AEM formuliergegevensbronnen IDP_DS en EDC_DS.
 

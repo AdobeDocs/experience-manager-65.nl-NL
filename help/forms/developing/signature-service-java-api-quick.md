@@ -8,44 +8,44 @@ topic-tags: develop
 role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 0%
 
 ---
 
-# Handtekeningenservice Java API Quick Start (SOAP) {#signature-service-java-api-quickstart-soap}
+# Handtekeningenservice Java API Snel starten (SOAP) {#signature-service-java-api-quickstart-soap}
 
-De volgende Java API Quick Start (SOAP) is beschikbaar voor de AEM Forms JEE Signature-service:
+De volgende Java API Quick Start(SOAP) zijn beschikbaar voor de AEM Forms JEE Signature-service:
 
-[Snel starten (SOAP-modus): een handtekeningveld toevoegen aan een PDF-document met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een handtekeningveld toevoegen aan een PDF-document met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): namen van handtekeningvelden ophalen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Snel starten (SOAP modus): namen van handtekeningvelden ophalen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[Snel starten (SOAP-modus): een handtekeningveld wijzigen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
+[Snel starten (SOAP modus): Een handtekeningveld wijzigen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
 
-[Snel starten (SOAP-modus): een PDF-document digitaal ondertekenen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): een PDF-document digitaal ondertekenen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): digitaal een XFA-gebaseerd formulier ondertekenen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
+[Snel starten (SOAP modus): Een XFA-gebaseerd formulier digitaal ondertekenen met behulp van de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document certificeren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP modus): Een PDF-document certificeren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): een digitale handtekening verifiëren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
+[Snel starten (SOAP modus): een digitale handtekening controleren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
-[Snel starten (SOAP-modus): meerdere digitale handtekeningen controleren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
+[Snel starten (SOAP modus): meerdere digitale handtekeningen controleren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
-[Snel starten (SOAP-modus): een digitale handtekening verwijderen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
+[Snel starten (SOAP modus): een digitale handtekening verwijderen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-[Snel starten (SOAP-modus): tijdstempel van document toepassen met de Java API](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
+[Snel starten (SOAP modus): Tijdstempel voor document toepassen met de Java API](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
 
-JEE-bewerkingen van AEM Forms kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms JEE-bewerkingen kunnen worden uitgevoerd met de API met sterk getypte AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >Quick Start in Programming with AEM Forms is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *SignatureField1* naar een PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf*. Het PDF-document met het nieuwe handtekeningveld wordt opgeslagen als een PDF-bestand met de naam *LoanSig.pdf*. (Zie [Handtekeningvelden toevoegen](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
@@ -161,7 +161,7 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *Signa
  
 ```
 
-## Snel starten (SOAP-modus): namen van handtekeningvelden ophalen met de Java API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
+## Snel starten (SOAP modus): namen van handtekeningvelden ophalen met de Java API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden de namen van handtekeningvelden opgehaald uit een PDF-document met de naam *LoanSig.pdf*. (Zie [Namen van handtekeningvelden ophalen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
@@ -267,7 +267,7 @@ In het volgende Java-codevoorbeeld worden de namen van handtekeningvelden opgeha
  }
 ```
 
-## Snel starten (SOAP-modus): een handtekeningveld wijzigen met de Java API {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
+## Snel starten (SOAP modus): Een handtekeningveld wijzigen met de Java API {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam SignatureField1 gewijzigd door alle velden in het formulier te vergrendelen wanneer een handtekening wordt toegepast op het handtekeningveld en ervoor te zorgen dat geen wijzigingen zijn toegestaan. Nadat de handtekeningservice het PDF-document heeft geretourneerd dat het gewijzigde handtekeningveld bevat, wordt het PDF-document opgeslagen als een PDF-bestand met de naam LoanSig.pdf. (In dit voorbeeld wordt het PDF-bestand overschreven dat is doorgegeven aan de service Handtekening.) (Zie [Handtekeningvelden wijzigen](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
@@ -395,7 +395,7 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam Signat
  
 ```
 
-## Snel starten (SOAP-modus): een PDF-document digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): een PDF-document digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op een PDF-bestand met de naam *LoanSig.pdf*. De alias die voor de veiligheidsreferentie wordt gespecificeerd is veilig, en de herroepingscontrole wordt uitgevoerd. Omdat er geen CRL- of OCSP-serverinformatie is opgegeven, wordt de serverinformatie opgehaald uit het certificaat dat wordt gebruikt om het PDF-document digitaal te ondertekenen. Het ondertekende document wordt opgeslagen als een PDF-bestand met de naam *LoanSigned.pdf*. (Zie [PDF-documenten digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
@@ -544,7 +544,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op ee
  
 ```
 
-## Snel starten (SOAP-modus): digitaal een XFA-gebaseerd formulier ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
+## Snel starten (SOAP modus): Een XFA-gebaseerd formulier digitaal ondertekenen met behulp van de Java API {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend dat door de Forms-service wordt gegenereerd. De `com.adobe.idp.Document` -instantie die door de Forms-service wordt geretourneerd, wordt doorgegeven aan de ondertekeningsservice. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
 
@@ -756,7 +756,7 @@ In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend d
  
 ```
 
-## Snel starten (SOAP-modus): Een PDF-document certificeren met de Java API {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP modus): Een PDF-document certificeren met de Java API {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document gecertificeerd dat is gebaseerd op een PDF-bestand met de naam *LoanSig.pdf*. De alias die voor de beveiligingsreferentie is opgegeven, is beveiligd en er wordt geen controle op de intrekking uitgevoerd. Het gecertificeerde document wordt opgeslagen als een PDF-bestand met de naam *LoanCertified.pdf*. (Zie [PDF-documenten certificeren](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
@@ -905,7 +905,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gecertificeerd dat is 
  }
 ```
 
-## Snel starten (SOAP-modus): een digitale handtekening verifiëren met de Java API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
+## Snel starten (SOAP modus): een digitale handtekening controleren met de Java API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd die zich in een ondertekend PDF-document bevindt dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Digitale handtekeningen verifiëren](#verifying-digital-signatures).)
 
@@ -1069,7 +1069,7 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd 
  
 ```
 
-## Snel starten (SOAP-modus): meerdere digitale handtekeningen controleren met de Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
+## Snel starten (SOAP modus): meerdere digitale handtekeningen controleren met de Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecontroleerd die zich in een ondertekend PDF-document bevinden dat is gebaseerd op een PDF-bestand met de naam LoanAllSigs.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Meerdere digitale handtekeningen controleren](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
@@ -1231,7 +1231,7 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
  }
 ```
 
-## Snel starten (SOAP-modus): een digitale handtekening verwijderen met de Java API {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
+## Snel starten (SOAP modus): een digitale handtekening verwijderen met de Java API {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd uit een handtekeningveld met de naam *SignatureField1*. De naam van het PDF-bestand met het handtekeningveld is *LoanSigned.pdf*. (Zie [Digitale handtekeningen verwijderen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
@@ -1340,7 +1340,7 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd ui
  
 ```
 
-## Snel starten (SOAP-modus): tijdstempel van document toepassen met de Java API {#quick-start-soap-mode-apply-document-timestamp-using-the-java-api}
+## Snel starten (SOAP modus): Tijdstempel voor document toepassen met de Java API {#quick-start-soap-mode-apply-document-timestamp-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een tijdstempel toegepast op een PDF-document:
 

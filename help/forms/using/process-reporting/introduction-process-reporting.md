@@ -7,8 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -30,7 +31,7 @@ Zie voor de lijst met ondersteunde browsers [Door AEM Forms ondersteunde platfor
 Procesrapportage is gebaseerd op modules die:
 
 * Procesgegevens uit AEM Forms-database lezen
-* Procesgegevens publiceren naar een ingesloten Process Reporting-opslagplaats
+* Publish-procesgegevens naar een ingesloten Process Reporting-opslagplaats
 * Biedt een op een browser gebaseerde gebruikersinterface voor het weergeven van rapporten
 
 ## Belangrijkste mogelijkheden {#key-capabilities}

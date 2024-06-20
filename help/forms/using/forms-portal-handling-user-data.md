@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 0%
@@ -44,7 +45,7 @@ Afhankelijk van de geconfigureerde persistentie van de gegevensopslag worden con
   </tr>
   <tr>
    <td><p>Standaard</p> </td>
-   <td><p>AEM gegevensopslagruimte van auteur- en publicatieinstanties</p> </td>
+   <td><p>AEM opslagplaats voor auteur- en Publish-instanties</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>

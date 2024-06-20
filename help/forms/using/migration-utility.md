@@ -10,7 +10,8 @@ docset: aem65
 role: Admin,User
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1736'
 ht-degree: 0%
@@ -58,7 +59,7 @@ Voor Correspondentenbeheermiddelen:
 * Lijsten in tekstmodules zijn verbeterd en worden nu anders weergegeven. Er kunnen visuele verschillen zijn. Adobe raadt u aan de letters te renderen en te zien waar u lijsten in tekstmodules gebruikt.
 * Aangezien de modules met afbeeldingsinhoud worden omgezet in DAM-elementen en tijdens de migratie lay-outs en fragmenten worden toegevoegd aan formulieren, verandert de eigenschap Bijgewerkt op voor deze modules in beheer.
 * De versiegeschiedenis van de elementen wordt niet gemigreerd en is niet beschikbaar na de migratie. De volgende versiegeschiedenis na migratie wordt gehandhaafd.
-* De staat Klaar om te publiceren is afgekeurd sinds AEM 6.1 Forms, zodat worden alle activa in Klaar om staat te publiceren veranderd in Gewijzigde staat.
+* De status Klaar voor Publish is afgekeurd sinds AEM 6.1 Forms. Alle elementen in de status Klaar voor Publish worden dus gewijzigd in Gewijzigde status.
 * Aangezien de gebruikersinterface in AEM Forms 6.3 wordt bijgewerkt, zijn de stappen voor het uitvoeren van de aanpassingen ook verschillend. Als u migreert van een versie die ouder is dan versie 6.3, voert u de aanpassing opnieuw uit.
 * Layoutfragmenten worden verplaatst van `/content/apps/cm/layouts/fragmentlayouts/1001` tot `/content/apps/cm/modules/fragmentlayouts`. De verwijzing van het Woordenboek van gegevens in activa toont de weg van het Woordenboek van Gegevens in plaats van zijn naam.
 * Alle tabruimten die worden gebruikt voor uitlijning in tekstmodules moeten worden aangepast. Zie voor meer informatie [Correspondentenbeheer - Tabspatiëring gebruiken voor het rangschikken van tekst](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
@@ -176,6 +177,6 @@ Nadat u het migratiehulpprogramma hebt uitgevoerd, moet u de volgende huishoudel
    1. Open het XFA-bestand in de nieuwste Designer en sla het op. De versie van XFA wordt bijgewerkt naar de nieuwste versie.
    1. Upload de XFA in de Forms-gebruikersinterface.
 
-1. Publiceer alle elementen die vóór de migratie in het vorige systeem zijn gepubliceerd. Het migratiehulpprogramma werkt de elementen alleen bij in de instantie Auteur en als u de elementen wilt bijwerken in de instanties Publiceren, moet u de elementen publiceren.
+1. Publish alle middelen die vóór de migratie in het vorige systeem zijn gepubliceerd. Het migratiehulpprogramma werkt de elementen alleen bij in de instantie Auteur en als u de elementen wilt bijwerken in de Publish-instanties, moet u de elementen publiceren.
 
 1. In AEM Forms 6.4 en 6.5 zijn enkele rechten van de gebruikersgroepen gewijzigd. Als u wilt dat gebruikers XDP&#39;s en Adaptive Forms met scripts kunnen uploaden of een code-editor kunnen gebruiken, moet u ze toevoegen aan de gebruikersgroep voor formulieren. Op dezelfde manier kunnen de malplaatje-auteurs niet meer de coderedacteur in de Redacteur van de Regel gebruiken. Gebruikers kunnen een code-editor gebruiken door deze toe te voegen aan de af-template-script-writers-groep. Zie voor instructies over het toevoegen van gebruikers aan groepen [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).

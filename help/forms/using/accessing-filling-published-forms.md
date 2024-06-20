@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 In een vorm-centric poortplaatsingsopstelling, vormen ontwikkeling en poortontwikkeling zijn twee verschillende activiteiten. Terwijl formulierontwerpers formulieren ontwerpen en opslaan in een gegevensopslagruimte, maken webontwikkelaars een webtoepassing voor die lijstformulieren en verwerken ze verzendingen. Forms wordt vervolgens naar de weblaag gekopieerd omdat er geen communicatie is tussen de formulieropslagplaats en de webtoepassing.
 
-Dit leidt vaak tot problemen met het beheer van de installatie- en productievertragingen. Als bijvoorbeeld een nieuwere versie van een formulier beschikbaar is in de gegevensopslagruimte, vervangt Designer het formulier op de weblaag, wijzigt de webtoepassing en implementeert het formulier opnieuw op de openbare site. Als u de webtoepassing opnieuw implementeert, kan de server enige downtime veroorzaken. Aangezien de serveronderbreking een geplande activiteit is, kunnen de veranderingen niet aan de openbare plaats onmiddellijk worden geduwd.
+Dit leidt vaak tot problemen met het beheer van de installatie- en productievertragingen. Als bijvoorbeeld een nieuwere versie van een formulier beschikbaar is in de gegevensopslagruimte, vervangt het formulier Designer het formulier op de weblaag, wijzigt het de webtoepassing en implementeert het formulier opnieuw op de openbare site. Als u de webtoepassing opnieuw implementeert, kan de server enige downtime veroorzaken. Aangezien de serveronderbreking een geplande activiteit is, kunnen de veranderingen niet aan de openbare plaats onmiddellijk worden geduwd.
 
 Forms Portal verlaagt beheerkosten en productievertragingen. Webontwikkelaars beschikken over componenten om een Forms Portal te maken en aan te passen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
 
@@ -29,7 +30,7 @@ Ga voor meer informatie over Forms Portal en de bijbehorende functies naar [Inle
 
 Navigeer naar de gepubliceerde pagina Forms Portal. Ga voor meer informatie over het maken van een Forms Portal-pagina naar [Forms Portal-pagina&#39;s maken](../../forms/using/creating-form-portal-page.md).
 
-De component Search en Lister van Forms Portal geeft de formulieren weer die beschikbaar zijn in de instantie Publish van de AEM server. Deze lijst bevat alle formulieren of formulieren die in het filter zijn gedefinieerd op het moment dat de pagina Forms Portal wordt gemaakt. Een Forms Portal-pagina ziet er ongeveer zo uit als in de volgende afbeelding:
+De component Search en Lister van Forms Portal geeft de formulieren weer die beschikbaar zijn in de Publish-versie van de AEM server. Deze lijst bevat alle formulieren of formulieren die in het filter zijn gedefinieerd op het moment dat de pagina Forms Portal wordt gemaakt. Een Forms Portal-pagina ziet er ongeveer zo uit als in de volgende afbeelding:
 
 ![Een voorbeeldpagina voor formulierportalen ](assets/forms-portal-page.png)
 

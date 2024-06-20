@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 De dienst van de Integratie van Gegevens van de Vorm kan gegevens in een vorm van PDF invoeren en gegevens van een vorm van PDF uitvoeren. De import- en exportbewerkingen ondersteunen twee typen PDF forms:
 
 * Een Acrobat-formulier (gemaakt in Acrobat) is een PDF-document dat formuliervelden bevat.
-* Een XML-formulier voor Adoben (gemaakt in Designer) is een PDF-document dat voldoet aan de XML Adobe XML Forms Architecture (XFA).
+* Een Adobe XML-formulier (gemaakt in Designer) is een PDF-document dat voldoet aan de XML Adobe XML Forms Architecture (XFA).
 
 Formuliergegevens kunnen afhankelijk van het type PDF-formulier in een van de volgende indelingen bestaan:
 
 * An XFDF file, which is an XML version of the Acrobat form data format.
-* Een XDP-bestand, een XML-bestand dat formuliervelddefinities bevat. Het kan ook formulierveldgegevens en een ingesloten PDF-bestand bevatten. Een door Designer gegenereerd XDP-bestand kan alleen worden gebruikt als het een ingesloten basis-64-gecodeerd PDF-document bevat.
+* Een XDP-bestand, een XML-bestand dat formuliervelddefinities bevat. Het kan ook formulierveldgegevens en een ingesloten PDF-bestand bevatten. Een XDP-bestand dat door Designer wordt gegenereerd, kan alleen worden gebruikt als het een ingesloten basis-64-gecodeerd PDF-document bevat.
 
 U kunt deze taken uitvoeren met de service Formuliergegevensintegratie:
 
@@ -120,7 +120,7 @@ Als u gegevens wilt importeren in een PDF-formulier, moet u verwijzen naar een X
 
 **Verwijzen naar een XML-gegevensbron**
 
-Als u formuliergegevens wilt importeren, moet u naar een geldige gegevensbron verwijzen. Als u gegevens wilt importeren in een XFA XML-formulier dat is gemaakt in Designer, moet u een XDP XML-gegevensbron gebruiken. Als u naar een Acrobat-formulier verwijst, moet u een XFDF-gegevensbron gebruiken. Voor elk veld waarin u gegevens wilt importeren, moet een waarde worden opgegeven. Als een element in de XML-gegevensbron niet overeenkomt met een veld in het formulier, wordt het element genegeerd.
+Als u formuliergegevens wilt importeren, moet u naar een geldige gegevensbron verwijzen. Als u gegevens wilt importeren in een XFA XML-formulier dat in Designer is gemaakt, moet u een XDP XML-gegevensbron gebruiken. Als u naar een Acrobat-formulier verwijst, moet u een XFDF-gegevensbron gebruiken. Voor elk veld waarin u gegevens wilt importeren, moet een waarde worden opgegeven. Als een element in de XML-gegevensbron niet overeenkomt met een veld in het formulier, wordt het element genegeerd.
 
 **Gegevens importeren in het PDF-formulier**
 
@@ -185,7 +185,7 @@ Formuliergegevens importeren met de API voor formuliergegevensintegratie (Java):
 
 [Overzicht van de stappen](importing-exporting-data.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): formuliergegevens importeren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Snel starten (SOAP modus): formuliergegevens importeren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -256,7 +256,7 @@ Formuliergegevens importeren met de API (webservice) voor formuliergegevensinteg
 
 ## Formuliergegevens exporteren {#exporting-form-data}
 
-U kunt formuliergegevens vanuit een interactief PDF-formulier exporteren met de service Formuliergegevensintegratie. De indeling van de geëxporteerde gegevens is afhankelijk van het formuliertype. Als het formuliertype een Acrobat-formulier is dat in Acrobat is gemaakt, zijn de geëxporteerde gegevens XFDF. Als het formuliertype een XML-formulier is dat is gemaakt in Designer, zijn de geëxporteerde gegevens XDP.
+U kunt formuliergegevens vanuit een interactief PDF-formulier exporteren met de service Formuliergegevensintegratie. De indeling van de geëxporteerde gegevens is afhankelijk van het formuliertype. Als het formuliertype een Acrobat-formulier is dat in Acrobat is gemaakt, zijn de geëxporteerde gegevens XFDF. Als het formuliertype een XML-formulier is dat in Designer is gemaakt, zijn de geëxporteerde gegevens XDP.
 
 >[!NOTE]
 >
@@ -345,7 +345,7 @@ Formuliergegevens exporteren met de API voor formuliergegevensintegratie (Java):
 
 [Overzicht van de stappen](importing-exporting-data.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): formuliergegevens exporteren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Snel starten (SOAP modus): formuliergegevens exporteren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

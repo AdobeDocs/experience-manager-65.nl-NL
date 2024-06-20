@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 0%
@@ -116,7 +117,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    >
    > U kunt het beste de opdracht &#39;Ctrl + C&#39; gebruiken om de SDK opnieuw op te starten. Als u de AEM SDK opnieuw start met een alternatieve methode, bijvoorbeeld door Java-processen te stoppen, kan dit leiden tot inconsistenties in de AEM-ontwikkelomgeving.
 
-1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-7 voor alle auteur- en Publish-instanties.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
@@ -126,7 +127,7 @@ AEM Forms heeft een aantal verplichte en optionele configuraties. Tot de verplic
 
 #### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
-Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
+Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om de bibliotheken te laars afgevaardigde:
 
 1. Stop de onderliggende AEM instantie.
 1. Open de [AEM installatiemap]\crx-quickstart\conf\sling.properties.
@@ -140,16 +141,16 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
    ```
 
 1. Sla het bestand op, sluit het en start het AEM.
-1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-4 voor alle auteur- en Publish-instanties.
 
 #### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
 
-Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
+Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. De standaard-URL is https://&#39;[server]:[poort]&quot;/system/console/configMgr.
 1. Zoeken en openen **Configuratie van firewall voor deserialisatie**.
 1. Voeg de **sun.util.agenda** aan de **lijst van gewenste personen** veld. Klik op Opslaan.
-1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-3 voor alle auteur- en Publish-instanties.
 
 ### Optionele configuraties na installatie {#optional-post-installation-configurations}
 

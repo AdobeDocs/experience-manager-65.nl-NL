@@ -1,26 +1,28 @@
 ---
 title: IMS-integratie instellen voor AEM
 description: Leer hoe u IMS-integratie instelt voor AEM
-source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
+feature: Security
+role: Admin
+exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
+source-git-commit: c2d996586d2ec7299e856a97ae1b744245c730bb
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # IMS-integratie instellen voor AEM {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
 >
->Adobe die klanten gebruiken [Adobe Developer Console](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de Server-aan-Server geloofsbrieven OAuth met Service Pack 20. Deze verandering kan aan oudere Packs van de Dienst, die met Service Pack 11 tot Service Pack 20 met het gebruik van een hotfix worden teruggevoerd die u kunt downloaden [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Adobe klanten gebruiken de [Adobe Developer Console](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Het referentietype van de Rekening van de Dienst (JWT) is nu verouderd ten gunste van de geloofsbrieven van de Server-aan-Server OAuth met Service Pack 20. Deze verandering kan aan oudere Packs van de Dienst, die met Service Pack 11 tot Service Pack 20 met het gebruik van een hotfix worden teruggevoerd die u kunt downloaden [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager (AEM) kan met vele andere oplossingen van de Adobe worden geïntegreerd. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
 
 De integratie gebruikt een integratie IMS, die met S2S OAuth wordt gevormd.
 
-* Nadat u het volgende hebt gemaakt:
+* Nadat u hebt gemaakt:
 
    * [Referenties in de Developer Console](#credentials-in-the-developer-console)
 
@@ -38,9 +40,9 @@ De integratie gebruikt een integratie IMS, die met S2S OAuth wordt gevormd.
 
 ## Referenties in de Developer Console {#credentials-in-the-developer-console}
 
-Als eerste stap moet u de OAuth geloofsbrieven in de Console van Adobe Developer vormen.
+Als eerste stap moet u de OAuth-referenties configureren in de Adobe Developer-console.
 
-Raadpleeg de documentatie bij de Developer Console, afhankelijk van uw vereisten, voor meer informatie over hoe u dit kunt doen:
+Raadpleeg de documentatie bij de Developer Console, afhankelijk van uw vereisten, voor meer informatie over hoe u deze configuratie kunt uitvoeren:
 
 * Overzicht:
 
@@ -88,7 +90,7 @@ Een bestaande Adobe IMS-integratie migreren op basis van JWT-referenties:
 
    ![JWT-configuratie selecteren](assets/ims-migrate-jwt-select-configuration.png)
 
-1. De configuratie wordt geopend als alleen-lezen:
+1. De configuratie wordt als alleen-lezen geopend:
 
    ![Configuratieeigenschappen - alleen-lezen](assets/ims-migrate-jwt-properties-read-only.png)
 
@@ -101,4 +103,4 @@ Een bestaande Adobe IMS-integratie migreren op basis van JWT-referenties:
    ![Volledige details OAuth](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. Gebruiken **Opslaan en sluiten** om uw updates voort te zetten.
-Wanneer u op de console terugkeert **JWT Credentials (afgekeurd)** de waarschuwing is verdwenen.
+Wanneer u op de console terugkeert, **JWT Credentials (afgekeurd)** waarschuwing is verdwenen.

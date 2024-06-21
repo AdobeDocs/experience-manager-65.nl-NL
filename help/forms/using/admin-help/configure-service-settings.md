@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+source-git-commit: f1a18575e8b8f925f8adbe18e189f3916b5e353d
 workflow-type: tm+mt
-source-wordcount: '10828'
+source-wordcount: '10824'
 ht-degree: 0%
 
 ---
@@ -260,9 +260,9 @@ De volgende montages zijn beschikbaar voor de Generate dienst van PDF.
 
 **Terugvalomzetter voor HTML naar PDF-omzettingen:** Geef de converter op voor conversies van HTML naar PDF als de primaire converter mislukt. Standaard is WebCapture (alleen Windows) geselecteerd.
 
-**Acrobat-afbeeldingsomzetting gebruiken (alleen Windows):** Als deze instelling waar is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van afbeeldingen naar PDF. Deze instelling is alleen handig als het standaard conversiemechanisme voor zuiver Java een aanzienlijk deel van de invoerafbeeldingen niet kan converteren. De standaardwaarde is false.
+**Acrobat-afbeeldingsomzetting gebruiken (alleen Windows):** Als deze instelling waar is, gebruikt de service PDF genereren Acrobat voor alle conversies van afbeeldingen naar PDF. Deze instelling is alleen handig als het standaard conversiemechanisme voor zuiver Java een aanzienlijk deel van de invoerafbeeldingen niet kan converteren. De standaardwaarde is false.
 
-**Op Acrobat gebaseerde AutoCAD-conversies inschakelen (alleen Windows):** Als deze instelling waar is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van DWG naar PDF. Deze instelling is alleen handig als AutoCAD niet op de server is geïnstalleerd of als het conversiemechanisme van AutoCAD bestanden niet kan converteren.
+**Op Acrobat gebaseerde AutoCAD-conversies inschakelen (alleen Windows):** Als deze instelling waar is, gebruikt de service PDF genereren Acrobat voor alle DWG-conversies naar PDF-conversies. Deze instelling is alleen handig als AutoCAD niet op de server is geïnstalleerd of als het conversiemechanisme van AutoCAD bestanden niet kan converteren.
 
 **Reguliere expressies voor het zoeken naar verboden speciale tekens in gebruikersnaam (alleen Windows):** Hiermee geeft u tekens op die de Export PDF- en Optimize PDF-bewerkingen verstoren wanneer de tekens in de naam van een gebruiker worden weergegeven.
 

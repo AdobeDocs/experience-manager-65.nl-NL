@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
 workflow-type: tm+mt
-source-wordcount: '10702'
+source-wordcount: '10828'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,7 @@ De volgende instellingen zijn beschikbaar voor de coderingsservice.
 >
 >Gebruik alleen eenvoudige verificatie (gebruikersnaam en wachtwoord) wanneer de verbinding is beveiligd via SSL (met LDAPS).
 
-**Compatibiliteitsmodus:**
+<!-- **Compatibility Mode:**-->
 
 ## FTP-service-instellingen {#ftp-service-settings}
 
@@ -254,7 +254,11 @@ De volgende montages zijn beschikbaar voor de Generate dienst van PDF.
 
 **Instellingen bestandstype:** De naam van de vooraf geconfigureerde instelling voor het bestandstype die op een conversietaak moet worden toegepast, als deze instellingen niet zijn opgegeven als onderdeel van de API-oproepparameters. De instellingen voor bestandstypen worden geconfigureerd in de beheerconsole door te klikken op Services > PDF Generator > Instellingen voor bestandstypen.
 
-**Acrobat WebCapture gebruiken (alleen Windows):** Als deze instelling waar is, gebruikt de service PDF genereren Acrobat X Pro voor alle HTML- naar PDF-omzettingen. Dit kan de kwaliteit van de PDF dossiers verbeteren die van HTML worden geproduceerd, hoewel de prestaties lichtjes kunnen lager zijn. De standaardwaarde is false.
+**WebCapture gebruiken (alleen Windows):** Wanneer dit het plaatsen waar is, genereert de dienst van de PDF Acrobat voor alle HTML aan PDF omzettingen. Dit kan de kwaliteit van de PDF dossiers verbeteren die van HTML worden geproduceerd, hoewel de prestaties lichtjes kunnen lager zijn. De standaardwaarde is false.
+
+**Primaire omzetter voor HTML naar PDF-omzettingen:** De dienst Generate PDF verstrekt veelvoudige routes om de dossiers van HTML naar de documenten van PDF om te zetten: Webkit, WebCapture (Vensters slechts), en WebToPDF. Met deze instelling kan de gebruiker de primaire converter selecteren die HTML in PDF omzet. De WebToPDF is standaard geselecteerd.
+
+**Terugvalomzetter voor HTML naar PDF-omzettingen:** Geef de converter op voor conversies van HTML naar PDF als de primaire converter mislukt. Standaard is WebCapture (alleen Windows) geselecteerd.
 
 **Acrobat-afbeeldingsomzetting gebruiken (alleen Windows):** Als deze instelling waar is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van afbeeldingen naar PDF. Deze instelling is alleen handig als het standaard conversiemechanisme voor zuiver Java een aanzienlijk deel van de invoerafbeeldingen niet kan converteren. De standaardwaarde is false.
 
@@ -268,21 +272,23 @@ De volgende montages zijn beschikbaar voor de Generate dienst van PDF.
 
 **Grootte OCR-pool:** De poolgrootte van de PaperCaptureService die de PDF Generator voor OCR gebruikt. De standaardwaarde van deze instelling (aanbevolen voor systemen met één processor) is 3, die u kunt verhogen voor systemen met meerdere processors. Deze instelling is alleen geldig op Windows-systemen.
 
+**ImageToPDF bevat max. geheugenpagina&#39;s voor TIFF-conversies:** Deze instelling bepaalt het maximumaantal pagina&#39;s van een TIFF-afbeelding dat in het geheugen kan blijven staan voordat deze tijdens de conversie naar PDF naar schijf wordt gespoeld. De standaardwaarde voor deze instelling is 500, die kan worden verhoogd als meer geheugen wordt toegewezen aan het ImageToPDF-converterproces.
+
 **Fontfamilie voor conversie van HTML naar PDF:** De naam van de lettertypefamilie die in PDF-documenten wordt gebruikt wanneer het lettertype dat in de oorspronkelijke HTML wordt gebruikt, niet beschikbaar is op de AEM Forms-server. Geef een lettertypefamilie op als u HTML-pagina&#39;s wilt converteren waarin niet-beschikbare lettertypen worden gebruikt. Pagina&#39;s die zijn geschreven in regionale talen kunnen bijvoorbeeld niet-beschikbare lettertypen gebruiken.
 
 **Logica opnieuw proberen voor native conversies** Regeert het genereren van PDF opnieuw als de eerste poging tot conversie is mislukt:
 
-**Niet opnieuw proberen**
+* **Niet opnieuw proberen**
 
-Voer de PDF-conversie niet opnieuw uit als de eerste omzetpoging is mislukt
+  Voer de PDF-conversie niet opnieuw uit als de eerste omzetpoging is mislukt
 
-**Opnieuw**
+* **Opnieuw**
 
-Voer de PDF-conversie opnieuw uit, ongeacht of de time-outdrempel is bereikt. De standaardtijdsduur voor de eerste poging is 270 seconden.
+  Voer de PDF-conversie opnieuw uit, ongeacht of de time-outdrempel is bereikt. De standaardtijdsduur voor de eerste poging is 270 seconden.
 
-**Opnieuw proberen indien tijd dit toelaat**
+* **Opnieuw proberen indien tijd dit toelaat**
 
-Voer de PDF-conversie opnieuw uit als de tijd die voor de eerste omzetpoging is verbruikt, korter was dan de opgegeven time-outduur. Als de time-outduur bijvoorbeeld 270 seconden is en de eerste poging 200 seconden heeft geduurd, zal de PDF Generator de conversie hervatten. Als de eerste poging zelf 270 seconden heeft geduurd, wordt de conversie niet opnieuw uitgevoerd.
+  Voer de PDF-conversie opnieuw uit als de tijd die voor de eerste omzetpoging is verbruikt, korter was dan de opgegeven time-outduur. Als de time-outduur bijvoorbeeld 270 seconden is en de eerste poging 200 seconden heeft geduurd, zal de PDF Generator de conversie hervatten. Als de eerste poging zelf 270 seconden heeft geduurd, wordt de conversie niet opnieuw uitgevoerd.
 
 ## Instellingen voor hulplijnen ES4-hulpprogramma&#39;s {#guides-es4-utilities-service-settings}
 

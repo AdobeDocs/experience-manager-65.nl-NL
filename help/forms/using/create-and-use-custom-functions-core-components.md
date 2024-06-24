@@ -4,7 +4,9 @@ description: AEM Forms ondersteunt aangepaste functies waarmee gebruikers hun ei
 keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een douanefunctie, gebruik douanefunctie in regel redacteur.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+roles: Admin, Developer
+exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
+source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
 workflow-type: tm+mt
 source-wordcount: '3377'
 ht-degree: 0%
@@ -14,6 +16,7 @@ ht-degree: 0%
 # Aangepaste functies in Adaptive Forms Core Components
 
 In dit artikel wordt beschreven hoe u aangepaste functies maakt met de nieuwste adaptieve Form Core-component, die de nieuwste functies heeft, zoals:
+
 * Caching, functie voor aangepaste functies
 * Algemene bereikobjecten en veldobjecten ondersteunen aangepaste functies
 * Ondersteuning voor moderne JavaScript-functies zoals verlaat- en pijlfuncties (ES10-ondersteuning)
@@ -1003,5 +1006,3 @@ Als de aangepaste functies worden gewijzigd, wordt het in cache plaatsen ongeldi
    * Methoden van Class
    * Standaardparameters
    * Rustparameters
-
-

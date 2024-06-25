@@ -4,9 +4,9 @@ description: AEM Forms ondersteunt aangepaste functies waarmee gebruikers hun ei
 keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een douanefunctie, gebruik douanefunctie in regel redacteur.
 content-type: reference
 feature: Adaptive Forms, Core Components
-roles: Admin, Developer
+role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
+source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
 workflow-type: tm+mt
 source-wordcount: '3377'
 ht-degree: 0%

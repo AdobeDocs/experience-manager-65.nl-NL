@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e6fa020bac624c53abdebc528b5a0bf0e979b986
+source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
 workflow-type: tm+mt
-source-wordcount: '3983'
+source-wordcount: '3976'
 ht-degree: 0%
 
 ---
@@ -540,11 +540,9 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
    1. Open de opdrachtprompt in de beheerdermodus.
    1. Installeer de Geode-patch met de `geode-*-1.15.1.2.jar` bestand.
 
-* Als een gebruiker een voorvertoning probeert te bekijken van een conceptbrief met opgeslagen XML-gegevens, blijft deze vastzitten in `Loading` staat voor sommige specifieke letters. (FORMS-14521) Voer de volgende stappen uit om het probleem op te lossen:
-   1. Download de [hotfix](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7C6fb8db1c81c84470d7ff08dc911c1e41%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638544797146701276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=MhuthPPLjZcWuQsRAtSiwEZ2MljeNrpLumlWo6iolFI%3D&amp;reserved=0) via de portal voor softwaredistributie.
-   1. Upload en installeer het pakket (.zip) met de [CRX Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+* Als een gebruiker een voorvertoning probeert te bekijken van een conceptbrief met opgeslagen XML-gegevens, blijft deze vastzitten in `Loading` staat voor sommige specifieke letters. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-14521)
 
-* Na de upgrade naar AEM Forms Service Pack 6.5.21.0 wordt de `PaperCapture` De service kan geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Als u het probleem wilt oplossen, raadpleegt u de [problemen oplossen](/help/forms/using/papercapture-service-resolution.md) artikel. (CQDOC-21680)
+* Na de upgrade naar AEM Forms Service Pack 6.5.21.0 wordt de `PaperCapture` De service kan geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (CQDOC-21680)
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

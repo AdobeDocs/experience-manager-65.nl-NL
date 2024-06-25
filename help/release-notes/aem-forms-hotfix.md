@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
      </td>
     <td>
     <ul>
-    <li> Na de upgrade naar AEM Forms Service Pack 6.5.21.0 kan de service Documentdigitalisering geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. Als u het probleem wilt oplossen, raadpleegt u de <a href="/help/forms/using/papercapture-service-resolution.md"> problemen oplossen</a> artikel.(CQDOC-21680) </li>
+    <li> Na de upgrade naar AEM Forms Service Pack 6.5.21.0 kan de service Documentdigitalisering geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. Voor installatie-instructies raadpleegt u de <a href="/help/forms/using/papercapture-service-resolution.md"> problemen oplossen</a> artikel.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -54,7 +54,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
      </td>
     <td>
     <ul>
-    <li>Conceptletters met XML-gegevens blijven tijdens de voorvertoning vastzitten in de laadstatus. Raadpleeg de<a href="#install-hotfix"> Hotfix downloaden en installeren voor conceptversie van brief</a> sectie.(FORMS-14521)</li>
+    <li>Conceptletters met XML-gegevens blijven tijdens de voorvertoning vastzitten in de laadstatus. Voor downloaden en installatie-instructies van de hotfix raadpleegt u de<a href="#install-hotfix"> Hotfix downloaden en installeren voor conceptversie van brief</a> sectie.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>

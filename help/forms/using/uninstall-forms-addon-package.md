@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 975f1f580404ea1f2940aec5981f5668dced4b95
+source-git-commit: 2755e414ea23ebc1472e9c08d832eca93f28311b
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # AEM Forms Add-on Package verwijderen van AEM Instance
 
-In dit artikel worden de stappen beschreven die nodig zijn om het AEM Forms-invoegpakket correct te verwijderen van een AEM Forms SDK-instantie. Ga als volgt te werk om ervoor te zorgen dat het invoegpakket voor Forms wordt verwijderd, zodat potentiële problemen met uw AEM worden voorkomen.
+In dit artikel worden de stappen beschreven die nodig zijn om het AEM Forms-invoegpakket correct te verwijderen van een AEM Forms SDK-instantie. Voer de volgende stappen uit om ervoor te zorgen dat het Forms-add-on-pakket wordt verwijderd, zodat potentiële problemen met uw AEM worden voorkomen.
 
-## Voorwaarden
+## Voorwaarde
 
-Zorg ervoor dat u een back-up maakt van formulieren en gegevens om gegevensverlies te voorkomen.
+Zorg ervoor dat u back-ups maakt om gegevensverlies te voorkomen.
 
 ## AEM Forms Add-on Package verwijderen
 

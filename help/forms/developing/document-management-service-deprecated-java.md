@@ -8,14 +8,15 @@ topic-tags: develop
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
-# Documentbeheerservice (verouderd) Java API Quick Start (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Documentbeheerservice (verouderd) Java API Snel starten (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbeheer (afgekeurd).
 
@@ -23,29 +24,29 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 >
 >Vanaf 5 augustus 2011 migreert Adobe Content Services ES-klanten naar de Adobe Digital Enterprise Platform Experience Services. Het product roadmap voor klanten die de Diensten van de Inhoud gebruiken is naar de nieuwe Diensten van de Ervaring van ADEP - Kern over te gaan, die een inheemse Bewaarplaats van de Inhoud omvat die op de moderne, modulaire CRX architectuur wordt voortgebouwd, die tijdens de aanschaf van de Software van de Adobe van Dag wordt verworven.
 
-[Snel starten (SOAP-modus): Inhoudsservices-ruimten maken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): Sites voor inhoudsservices maken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): inhoud van inhoudsservices verwijderen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): Inhoud van inhoudsservices verwijderen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): inhoud toevoegen aan Content Services met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): Inhoud toevoegen aan Content Services met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): inhoud ophalen van Content Services met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): inhoud ophalen van Content Services met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud van inhoudsservices verplaatsen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): Inhoud van inhoudsservices verplaatsen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud van inhoudsservices weergeven met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): Inhoud weergeven met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud zoeken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): Inhoud zoeken met de Java API-inhoud](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Machtigingen voor inhoudsservices instellen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
+[Snel starten (SOAP modus): Machtigingen voor inhoudsservices instellen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >De snelle aanvang in Programmering met AEM vormen is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Inhoudsservices-ruimten maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Sites voor inhoudsservices maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *Testmap* in Company Home. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
 
@@ -141,7 +142,7 @@ In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *
  
 ```
 
-## Snel starten (SOAP-modus): inhoud van inhoudsservices verwijderen met de Java API (afgekeurd) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Inhoud van inhoudsservices verwijderen met de Java API (afgekeurd) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/de Folder van de Test.
 
@@ -241,7 +242,7 @@ Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/
  
 ```
 
-## Snel starten (SOAP-modus): inhoud toevoegen aan Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Inhoud toevoegen aan Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* aan een omslag genoemd /Company Huis/de Folder van de Test. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
 
@@ -364,7 +365,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
  
 ```
 
-## Snel starten (SOAP-modus): inhoud ophalen van Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): inhoud ophalen van Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *BijgewerkteMortgaugeForm.pdf*.
 
@@ -470,7 +471,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud van inhoudsservices verplaatsen met de Java API (afgekeurd) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Inhoud van inhoudsservices verplaatsen met de Java API (afgekeurd) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Huis/de Folder van de Test aan /Company Huis. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
 
@@ -571,7 +572,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud weergeven met de Java API (afgekeurd) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Inhoud weergeven met de Java API (afgekeurd) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Company Huis is. Elk knooppunttype en knooppuntnaam wordt getoond.
 
@@ -684,7 +685,7 @@ Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Compan
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud zoeken met de Java API (afgekeurd) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Inhoud zoeken met de Java API (Verouderd) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 De volgende code van Java zoekt /Company Huis naar een document dat de tekst MortgaugeForm bevat. De submappen worden ook doorzocht.
 
@@ -794,7 +795,7 @@ De volgende code van Java zoekt /Company Huis naar een document dat de tekst Mor
  
 ```
 
-## Snel starten (SOAP-modus): Machtigingen voor inhoudsservices instellen met de Java API (afgekeurd) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Machtigingen voor inhoudsservices instellen met de Java API (afgekeurd) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebruiker met de naam tony blue. Het opgegeven domein is het standaarddomein. De toestemming van de consument wordt gespecificeerd en de knoop is `/Company Home/Test Directory`.
 
@@ -904,7 +905,7 @@ In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebru
  
 ```
 
-## Snel starten (SOAP-modus): Koppelingen maken met de Java API (afgekeurd) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## Snel starten (SOAP modus): Koppelingen maken met de Java API (afgekeurd) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
 De volgende Java-code maakt een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy.In het PDF-document moet de koppelbare eigenschap zijn toegepast.
 

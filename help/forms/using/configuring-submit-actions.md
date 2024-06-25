@@ -4,11 +4,11 @@ description: Met Forms kunt u een verzendactie configureren om te definiëren ho
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 0%
@@ -269,6 +269,6 @@ Auteurs kunnen de aangepaste JavaScript-bibliotheek per adaptief formulier confi
 
 ## Foutafhandeling bij verzendactie {#error-handling-on-submit-action}
 
-Als deel van de veiligheid van de Experience Manager en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht.
+Als deel van de veiligheid van de Experience Manager en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de knoop van Publish worden teweeggebracht.
 
 Zie voor meer informatie [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md).

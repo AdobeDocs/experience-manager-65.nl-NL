@@ -3,9 +3,9 @@ title: Extra stappen voor het ophalen van e-mail met bijlagen
 description: Leer hoe u de fout verhelpt wanneer u geen e-mail met bijlagen voor AEM Forms op JEE-platforms kunt ophalen.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

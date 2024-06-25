@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2804'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Formuliersets worden ook ondersteund in de AEM Forms-app, zodat uw medewerkers i
 
 ## Formulierset maken en beheren {#creating-and-managing-form-set}
 
-U kunt verschillende XDP&#39;s of formuliersjablonen die zijn gemaakt met Designer, koppelen aan een formulierset. Formuliersets kunnen vervolgens selectief worden gebruikt om de XDP&#39;s te renderen op basis van waarden die de gebruikers hebben ingevoerd in eerste formulieren en hun profielen.
+U kunt verschillende XDP&#39;s of formuliersjablonen, gemaakt met Designer, koppelen aan een formulierset. Formuliersets kunnen vervolgens selectief worden gebruikt om de XDP&#39;s te renderen op basis van waarden die de gebruikers hebben ingevoerd in eerste formulieren en hun profielen.
 
 Gebruiken [AEM Forms-gebruikersinterface](../../forms/using/introduction-managing-forms.md) om al uw formulieren, formuliersets en gerelateerde elementen te beheren.
 
@@ -90,7 +90,7 @@ Nadat een formulierset is gemaakt, kunt u de volgende handelingen op die formuli
 * Downloaden: u kunt de formulierset downloaden met alle afhankelijkheden.
 * Revisie starten/beheren: wanneer een formulierset is gemaakt, kunt u de revisie instellen door op Revisie starten te klikken. Nadat de revisie voor een formulierset is gestart, wordt de optie Revisie beheren aan de gebruiker weergegeven. In het revisiescherm Beheren kunt u de revisie bijwerken of beëindigen. Voor de revisies die u hebt toegevoegd, kunt u de revisie controleren en zo nodig opmerkingen toevoegen.
 * Verwijderen: hiermee verwijdert u de volledige formulierset. De formulieren in de verwijderde formulierset blijven in de gegevensopslagruimte.
-* Publiceren/Publiceren ongedaan maken: hiermee wordt de formulierset samen met alle formulieren in de set gepubliceerd/gepubliceerd en worden de bijbehorende elementen van deze formulieren gepubliceerd.
+* Publish/Unpublish: hiermee wordt de formulierset samen met alle formulieren in de set gepubliceerd of gepubliceerd, evenals de bijbehorende elementen van deze formulieren.
 * Voorvertoning: Voorvertoning biedt twee opties: Voorvertoning als HTML (zonder gegevens) en aangepaste voorvertoning met voorbeeldgegevens.
 * Eigenschappen van weergave/bewerking: u kunt de eigenschappen van metagegevens van een geselecteerde formulierset weergeven/bewerken.
 
@@ -140,7 +140,7 @@ Een geschiktheidsexpressie kan elke geldige JavaScript-instructie zijn die een B
 Naast de standaard JavaScript-functies stelt de formulierset ook de fs.valueOf API beschikbaar die toegang biedt tot de waarde van een veld in een formulierset. Gebruik deze API om toegang te krijgen tot de waarde van een formulierveld in een formulierset. De API-syntaxis is fs.valueOf (formUid, fieldSOM), waarbij:
 
 * formUid (tekenreeks): een unieke id van een formulier in de formulierset. U kunt dit opgeven tijdens het maken van de formulierset in de gebruikersinterface van formulierbeheer. Standaard is dit de naam van het formulier.
-* fieldSOM (tekenreeks): Een SOM-expressie van het veld in het formulier dat is opgegeven door formUid. De expressie SOM of de expressie Scripting Object Model wordt gebruikt om te verwijzen naar waarden, eigenschappen en methoden binnen een bepaald DOM (Document Object Model). U kunt dit in Formulierontwerper weergeven onder het tabblad Scripts als het veld is geselecteerd.
+* fieldSOM (tekenreeks): Een SOM-expressie van het veld in het formulier dat is opgegeven door formUid. De expressie SOM of de expressie Scripting Object Model wordt gebruikt om te verwijzen naar waarden, eigenschappen en methoden binnen een bepaald DOM (Document Object Model). U kunt het veld in Form Designer weergeven onder het tabblad Scripts als het veld is geselecteerd.
 
 >[!NOTE]
 >

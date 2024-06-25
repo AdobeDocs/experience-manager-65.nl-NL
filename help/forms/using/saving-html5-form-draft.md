@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -72,4 +72,4 @@ Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding 
  </tbody>
 </table>
 
-Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw aangepaste opslagprovider toevoegen. Zie voor meer informatie [Aangepaste opslag voor component Concepten en verzendingen](/help/forms/using/adding-custom-storage-provider-forms.md).
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp op het Publish-exemplaar. U kunt uw aangepaste opslagprovider toevoegen. Zie voor meer informatie [Aangepaste opslag voor component Concepten en verzendingen](/help/forms/using/adding-custom-storage-provider-forms.md).

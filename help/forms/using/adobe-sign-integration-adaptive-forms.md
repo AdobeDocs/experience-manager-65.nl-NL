@@ -5,11 +5,11 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms, Foundation Components, Acrobat Sign
+feature: Adaptive Forms,Foundation Components,Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Normaal [!DNL Adobe Acrobat Sign] en Adaptief Forms-scenario vult een gebruiker 
 
 ## AEM Forms verbinden met Adobe Acrobat Sign {#adobe-sign}
 
-Verbinding maken **[!DNL AEM Forms]** with **[!DNL Adobe Acrobat Sign]**, stelt u de software en accounts in die in de sectie Voorwaarden worden vermeld, en maakt u Adobe Sign verbinding met alle instanties van AEM Forms Author and Publish:
+Verbinding maken **[!DNL AEM Forms]** with **[!DNL Adobe Acrobat Sign]**, stelt u de software en accounts in die worden vermeld in de sectie Voorwaarden, en maakt u Adobe Sign verbinding met alle instanties van AEM Forms Author en Publish:
 
 ## Vereisten {#prerequisites}
 
@@ -146,7 +146,7 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 1. Open AEM webconsole. De URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Openen **[!UICONTROL Forms Common Configuration Service].**
 1. In de **[!UICONTROL Allow]** veld, **selecteren** Alle gebruikers - Alle gebruikers, anoniem of aangemeld, kunnen een voorbeeld van bijlagen bekijken, formulieren verifiëren en ondertekenen en op **[!UICONTROL Save].** Auteur-instantie is geconfigureerd voor gebruik [!DNL Adobe Sign].
-1. Publiceer de configuratie.
+1. Publish de configuratie.
 1. Gebruiken [replicatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op overeenkomstige te creëren publiceer instanties.
 
 Nu, [!DNL Adobe Sign] is geïntegreerd met AEM [!DNL Forms] en klaar voor gebruik in adaptieve vormen. Naar [Adobe Sign-service in een adaptieve vorm gebruiken](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), geeft u de hierboven gemaakte configuratiecontainer op in adaptieve formuliereigenschappen.
@@ -261,7 +261,7 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 1. Openen **[!UICONTROL Forms Common Configuration Service].**
 1. In de **[!UICONTROL Allow]** veld, **selecteren** Alle gebruikers - Alle gebruikers, anoniem of aangemeld, kunnen een voorbeeld van bijlagen bekijken, formulieren verifiëren en ondertekenen en op **[!UICONTROL Save].** Auteur-instantie is geconfigureerd voor gebruik [!DNL Adobe Sign].
 
-1. Publiceer de configuratie.
+1. Publish de configuratie.
 1. Gebruiken [replicatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op overeenkomstige te creëren publiceer instanties.
 
 Nu kunt u [Adobe Acrobat Sign-velden toevoegen aan een adaptief formulier gebruiken](working-with-adobe-sign.md) of [AEM](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Zorg ervoor dat u de configuratiecontainer die voor de configuratie van de Cloud Service wordt gebruikt aan al Adaptive Forms toevoegt die voor wordt toegelaten [!DNL Adobe Acrobat Sign]. U kunt een configuratiecontainer opgeven met de eigenschappen van een adaptief formulier.

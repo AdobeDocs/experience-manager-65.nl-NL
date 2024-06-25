@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Assembler,Barcoded Forms
 exl-id: d4b5cacd-0bac-48b5-a8a6-0f58883136d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
@@ -94,7 +94,7 @@ De service Barcoded Forms retourneert het volgende XML-document na het decoderen
 
 ### Workflows die formulieren met streepjescodes gebruiken {#workflows-that-use-barcoded-forms}
 
-Formulierauteurs maken met Designer interactieve formulieren met streepjescodes. (Zie [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Wanneer een gebruiker een formulier met streepjescodes invult met Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
+Formulierauteurs maken met Designer interactieve streepjescodes voor formulieren. (Zie [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).) Wanneer een gebruiker een formulier met streepjescodes invult met Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
 
 De service Barcoded Forms is handig voor het converteren van gegevens die op papier staan naar elektronisch formaat. Wanneer bijvoorbeeld een formulier met streepjescodes wordt gevuld en afgedrukt, kan de afgedrukte kopie worden gescand en worden gebruikt als invoer voor de service Barcoded Forms.
 
@@ -102,7 +102,7 @@ De gecontroleerde omslageindpunten worden typisch gebruikt om toepassingen te be
 
 ### Aanbevolen indelingen voor codering en decodering {#recommended-encoding-and-decoding-formats}
 
-Auteurs van gecodeerde formulieren met streepjescodes wordt aangeraden een eenvoudige, gescheiden indeling (zoals door tabs gescheiden indeling) te gebruiken bij het coderen van gegevens in streepjescodes. Vermijd ook het gebruik van Enter als veldscheidingsteken. Designer biedt een selectie van gescheiden coderingen die automatisch JavaScript-script genereren om streepjescodes te coderen. De gedecodeerde gegevens hebben de veldnamen op de eerste regel en hun waarden op de tweede regel, met tabs tussen elk veld.
+Auteurs van gecodeerde formulieren met streepjescodes wordt aangeraden een eenvoudige, gescheiden indeling (zoals door tabs gescheiden indeling) te gebruiken bij het coderen van gegevens in streepjescodes. Vermijd ook het gebruik van Enter als veldscheidingsteken. Designer biedt een selectie van gescheiden coderingen die automatisch een JavaScript-script genereren om streepjescodes te coderen. De gedecodeerde gegevens hebben de veldnamen op de eerste regel en hun waarden op de tweede regel, met tabs tussen elk veld.
 
 Geef bij het decoderen van streepjescodes het teken op dat wordt gebruikt om velden te scheiden. Het voor decodering opgegeven teken moet hetzelfde teken zijn als dat is gebruikt voor het coderen van de streepjescode. Als u bijvoorbeeld de aanbevolen tabgescheiden indeling gebruikt, moet de bewerking Extraheren naar XML de standaardwaarde van Tab gebruiken voor het veldscheidingsteken.
 
@@ -127,7 +127,7 @@ Overweeg ook de volgende beperkingen wanneer u de service Barcoded Forms gebruik
 * De service biedt volledige ondersteuning voor AcroForms en statische formulieren met 2D-streepjescodes die zijn opgeslagen met Adobe Reader of Acrobat. Voor 1D-streepjescodes kunt u het formulier echter afvlakken of het als gescand PDF- of TIFF-document opgeven.
 * Dynamische XFA-formulieren worden niet volledig ondersteund. Als u 1D- en 2D-streepjescodes op de juiste manier wilt decoderen in een dynamische vorm, voegt u het formulier samen of geeft u het op als gescand PDF- of TIFF-document.
 
-Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen gebruikt als de bovenstaande beperkingen in acht worden genomen. Zie voor meer informatie over het maken van interactieve formulieren met streepjescodes [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen gebruikt als de bovenstaande beperkingen in acht worden genomen. Zie voor meer informatie over het maken van interactieve formulieren met streepjescodes [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Eigenschappen van de service configureren   {#configureproperties}
 

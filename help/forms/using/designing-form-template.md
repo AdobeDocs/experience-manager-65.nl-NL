@@ -1,15 +1,15 @@
 ---
 title: Formuliersjablonen ontwerpen voor HTML5-formulieren
-description: AEM Forms kan XFA-formuliersjabloon renderen naar HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met Designer en de HTML5-uitvoermogelijkheden gebruiken.
+description: AEM Forms kan XFA-formuliersjabloon renderen naar HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met behulp van Designer en gebruikmaken van de5-uitvoermogelijkheden voor HTML.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -36,10 +36,10 @@ Het tabblad Voorbeeld-HTML wordt in de ontwerpmodus toegevoegd, zodat formuliero
 
 #### Krabbelhandtekening {#scribble-signature}
 
-Het belangrijkste doel voor HTML5-formulieren is aanraakapparaten. Daarom wordt een nieuwe controle van de krabbelhandtekening toegevoegd in de Ontwerper van AEM Forms. U kunt op het besturingselement voor krabbelhandtekeningen klikken of het besturingselement voor krabbelhandtekeningen slepen en neerzetten op uw formuliersjabloon en het configureren. Het wordt weergegeven als een krabbelveld in HTML 25-uitvoering en kan worden gebruikt om een handtekening te krabbelen op aanraakapparaten. Op desktopcomputers kan het als krabbelveld worden gebruikt met de muis. Voor meer informatie over het gebruik van deze functie raadpleegt u [XFA-scriptveld](../../forms/using/scribble-signature.md).
+Het belangrijkste doel voor HTML5-formulieren is aanraakapparaten. Daarom wordt er een nieuw besturingselement voor krabbelhandtekeningen toegevoegd in AEM Forms Designer. U kunt op het besturingselement voor krabbelhandtekeningen klikken of het besturingselement voor krabbelhandtekeningen slepen en neerzetten op uw formuliersjabloon en het configureren. Het wordt weergegeven als een krabbelveld in HTML 25-uitvoering en kan worden gebruikt om een handtekening te krabbelen op aanraakapparaten. Op desktopcomputers kan het als krabbelveld worden gebruikt met de muis. Voor meer informatie over het gebruik van deze functie raadpleegt u [XFA-scriptveld](../../forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
 
 #### RTF-indeling {#rich-text-format}
 
-U kunt een tekstveld omzetten in een RTF-veld. Er wordt een lijst met opmaakopties toegevoegd aan het tekstveld. Als u wilt converteren, opent u Forms Designer en selecteert u het tekstveld in **[!UICONTROL Design View]**. In de **[!UICONTROL Field]** tab, selecteert u **[!UICONTROL Rich Text]** van de **[!UICONTROL Field Format]** vervolgkeuzelijst. Wanneer het XFA-formulier nu wordt weergegeven als een HTML5-formulier, wordt het veld weergegeven als een RTF-veld. Selecteren ![Maximaliseren](assets/maximize_icon.svg) om extra opmaakopties weer te geven.
+U kunt een tekstveld omzetten in een RTF-veld. Er wordt een lijst met opmaakopties toegevoegd aan het tekstveld. Als u de Forms Designer wilt converteren, opent u het tekstveld in **[!UICONTROL Design View]**. In de **[!UICONTROL Field]** tab, selecteert u **[!UICONTROL Rich Text]** van de **[!UICONTROL Field Format]** vervolgkeuzelijst. Wanneer het XFA-formulier nu wordt weergegeven als een HTML5-formulier, wordt het veld weergegeven als een RTF-veld. Selecteren ![Maximaliseren](assets/maximize_icon.svg) om extra opmaakopties weer te geven.

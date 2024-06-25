@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -19,15 +20,15 @@ ht-degree: 0%
 
 Java™ API Quick Start (SOAP) is beschikbaar voor de Barcoded Forms-service:
 
-[Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Snel starten (SOAP modus): gecodeerde formuliergegevens decoderen met Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss® Application Server en het Microsoft® Windows besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met de Java™ API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Snel starten (SOAP modus): gecodeerde formuliergegevens decoderen met de Java™ API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
 De volgende Java™-code decodeert formuliergegevens in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` object in een `com.adobe.idp.Document` object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 

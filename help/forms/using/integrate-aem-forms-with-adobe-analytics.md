@@ -5,7 +5,8 @@ docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%
@@ -178,7 +179,7 @@ Voer de volgende stappen uit om regels te maken op basis van de **[!UICONTROL Ad
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### Stroom publiceren {#publish-flow}
+### Publish-stromen {#publish-flow}
 
 Nadat u de gegevenselementen hebt gemaakt en deze in regels hebt gebruikt, publiceert u de configuratie voor het verzamelen van formuliergegevens in [!DNL Adobe Analytics].
 
@@ -194,7 +195,7 @@ Voer de volgende stappen uit om de configuratie te publiceren:
 
 1. Bevestig de wijzigingen en de publicatiestroom wordt binnenkort weergegeven in het dialoogvenster **[!UICONTROL Published]** sectie.
 
-![Stroom publiceren](/help/forms/using/assets/publish-flow.png)
+![Publish Flow](/help/forms/using/assets/publish-flow.png)
 
 ## 2. AEM Forms configureren {#configure-aem-forms}
 
@@ -218,7 +219,7 @@ Voer de volgende stappen uit om een configuratie van de Lancering van de Adobe t
 
 1. Selecteren **[!UICONTROL Save & Close]**.
 
-1. Publiceer de configuratie.
+1. Publish de configuratie.
 
 ### Inschakelen [!DNL Adobe Analytics] voor een adaptief formulier {#enable-analytics-adaptive-form}
 

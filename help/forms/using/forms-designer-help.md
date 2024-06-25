@@ -1,21 +1,21 @@
 ---
-title: Help bij Forms Designer
-description: Met Forms Designer kan een gebruiker het formulier verzenden.
+title: Forms Designer Help
+description: Forms Designer helpt een gebruiker het formulier te verzenden.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-feature: Forms Designer
+feature: Forms Designer,Designer
 exl-id: f962844a-f191-4505-bfc9-85c94d8faa46
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
-# Help bij Forms Designer {#form-designer-help}
+# Forms Designer Help {#form-designer-help}
 
 [Designer gebruiken](https://www.adobe.com/go/learn_aemforms_designer_65)
 [Tutorials om snel aan de slag te gaan met Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)

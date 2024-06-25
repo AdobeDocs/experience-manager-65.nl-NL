@@ -4,11 +4,11 @@ description: Leer hoe u een adaptief formulier insluit in een externe webpagina
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -25,7 +25,7 @@ U kunt [adaptieve formulieren insluiten in een AEM Sites-pagina](/help/forms/usi
 
 Voer de volgende stappen uit voordat u een adaptief formulier insluit op een externe website
 
-* Publiceer het adaptieve formulier dat moet worden ingesloten in de instantie Publiceren van de AEM Forms Server.
+* Publish het adaptieve formulier dat moet worden ingesloten in het Publish-exemplaar van de AEM Forms Server.
 * Maak of identificeer een webpagina op uw website waarop u het adaptieve formulier kunt hosten. Zorg ervoor dat de webpagina [jQuery-bestanden lezen vanuit een CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) of u hebt een lokale kopie van de jQuery ingesloten. jQuery is vereist om een adaptief formulier te genereren.
 * Wanneer de AEM server en de webpagina zich op verschillende domeinen bevinden, voert u de stappen uit die in de sectie worden vermeld. [AEM Forms in staat stellen om adaptieve formulieren naar een interdomeinsite te sturen](#cross-site).
 

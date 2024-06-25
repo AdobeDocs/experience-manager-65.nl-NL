@@ -4,11 +4,11 @@ description: In het artikel worden de Forms-service beschreven en worden de take
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: Document Services,Forms Service,PDF Generator
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Gebruik de Forms-service om het volgende te doen:
 
 ## PDF forms maken  {#creating-pdf-forms-nbsp}
 
-Met de Form-service kunt u PDF forms maken voor het vastleggen van gegevens. Doorgaans begint u met een AEM Forms Designer-sjabloon. Gebruik de `renderPDFForm` (link naar Javadoc) van de Forms-service om deze sjabloon om te zetten in een PDF-formulier.
+Met de Form-service kunt u PDF forms maken voor het vastleggen van gegevens. Gewoonlijk begint u met een AEM Forms Designer-sjabloon. Gebruik de `renderPDFForm` (link naar Javadoc) van de Forms-service om deze sjabloon om te zetten in een PDF-formulier.
 
 De eerste parameter van de `renderPDFForm` bewerking is de naam van het sjabloonbestand (bijvoorbeeld `ExpenseClaim.xdp`). U kunt het sjabloonbestand opslaan in een lokaal bestandssysteem, in een CRX-opslagplaats of op een HTTP- of FTP-locatie. U kunt de locatie van het sjabloonbestand opgeven door de hoofdmap van de inhoud in te stellen in het `PDFFormRenderOptions` parameter van de `renderPDFForm` -bewerking. Zie Javadoc voor meer informatie over andere opties die u kunt opgeven voor de `PDFFormRenderOptions` parameter.
 
@@ -43,7 +43,7 @@ Gebruik de `exportData` (Javadoc) van de Forms-service om gegevens-XML uit een P
 
 ## Gegevens importeren in PDF forms {#importing-data-into-pdf-forms}
 
-Met de Forms-service kunt u ook een PDF-formulier samenvoegen dat is gemaakt met AEM Forms Designer of met de `renderPDFForm` bewerking met XML-gegevens. De `importData` (Javadoc) de verrichting van de dienst van Forms keurt de PDF vorm en de gegevens van XML goed en keert een PDF vorm met gegevens XML terug.
+Met Forms-service kunt u ook een PDF-formulier samenvoegen dat is gemaakt met AEM Forms Designer of de `renderPDFForm` bewerking met XML-gegevens. De `importData` (Javadoc) de verrichting van de dienst van Forms keurt de PDF vorm en de gegevens van XML goed en keert een PDF vorm met gegevens XML terug.
 
 ## Formulieren weergeven op basis van fragmenten {#rendering-forms-based-on-fragments}
 

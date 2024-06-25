@@ -8,28 +8,29 @@ topic-tags: develop
 role: Developer
 exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP), service voor integratie van formuliergegevens {#form-data-integration-service-javaapi-quick-start-soap}
+# Service voor formuliergegevensintegratie Java API Quick Start (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Integratie van de Gegevens van de Vorm.
 
-[Snel starten (SOAP-modus): formuliergegevens importeren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Snel starten (SOAP modus): formuliergegevens importeren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Snel starten (SOAP-modus): formuliergegevens exporteren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Snel starten (SOAP modus): formuliergegevens exporteren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >De snelle Begin in Programmering met AEM vormen is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): formuliergegevens importeren met de Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+## Snel starten (SOAP modus): formuliergegevens importeren met de Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-formulier. De gegevens bevinden zich in een XML-bestand met de naam *Loan_data.xml* en het PDF-formulier wordt opgeslagen als een PDF-bestand met de naam *ResultLoanForm.pdf*. (Zie [Formuliergegevens importeren](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
@@ -131,7 +132,7 @@ In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-form
  
 ```
 
-## Snel starten (SOAP-modus): formuliergegevens exporteren met de Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+## Snel starten (SOAP modus): formuliergegevens exporteren met de Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gegevens geëxporteerd uit een PDF-formulier. De formuliergegevens worden opgeslagen als een XML-bestand met de naam *Loan_data.xml*. (Zie [Formuliergegevens exporteren](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 

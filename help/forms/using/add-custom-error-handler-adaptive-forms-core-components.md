@@ -4,11 +4,11 @@ description: AEM Forms verstrekt out-of-the-box succes en foutenmanagers voor ee
 keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanager toe, voeg een foutenmanager in vorm toe, gebruik de toepassing roept dienst van de redacteur om een douanefoutenmanager toe te voegen, regel redacteur te vormen om een manager van de douanefout toe te voegen, douanefoutafhandeling toe gebruikend regelredacteur
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 0%

@@ -2,11 +2,11 @@
 title: Hoe kan ik Adaptief-formuliergegevens verbinden en verzenden naar Microsoft&reg; Power Automate?
 description: Een stapsgewijze gids voor het maken van een verbinding en het verzenden van Adaptief formulier naar Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, Adaptive Forms data verzenden naar Microsoft Power Automate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Voer de volgende handelingen uit om uw AEM Forms Author-instantie te verbinden m
 1. [Een Microsoft maken](#ms-power-automate-application)
 1. [Microsoft maken](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [Microsoft maken](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Microsoft publiceren](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Microsoft® Azure Active Directory-toepassing maken {#ms-power-automate-application}
 
@@ -106,11 +106,11 @@ Voer de volgende handelingen uit om uw AEM Forms Author-instantie te verbinden m
 1. Op de **[!UICONTROL Configure Dataverse for Microsoft®® Power Automate]** pagina, geeft u de **[!UICONTROL Client ID]** (ook wel toepassings-id genoemd), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** en **[!UICONTROL Dynamic Environment URL]**. Gebruik identiteitskaart van de Cliënt, Geheime cliënt, OAuth URL, en identiteitskaart van het Milieu van de Dynamiek. Gebruik de optie Eindpunten in de gebruikersinterface van de Microsoft® Azure Active Directory-toepassing om OAuth URL te zoeken. Open de [Mijn stromen](https://us.flow.microsoft.com) en selecteer Mijn stromen gebruiken identiteitskaart die in URL als identiteitskaart van het Milieu van de Dynamiek wordt vermeld.
 1. Selecteer **[!UICONTROL Connect]**. Meld u desgevraagd aan bij uw Microsoft® Azure-account. Selecteren **[!UICONTROL Save]**.
 
-### Publiceer zowel de Microsoft® Power Automate Data verse als de Microsoft® Power Automate Flow Service Cloud Configurations {#publish-microsoft-power-automate-dataverse-cloud-configuration}
+### Publish zowel de Microsoft® Power Automate Data verse als de Microsoft® Power Automate Flow Service Cloud Configurations {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. Navigeren naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** en open de configuratiecontainer u in vorige creeerde [Microsoft® Power Automated Dataverse Cloud Configuration maken](#microsoft-power-automate-dataverse-cloud-configuration) sectie.
 1. Selecteer de `dataverse` configuratie en selecteer **[!UICONTROL Publish]**.
-1. Selecteer op de pagina Publiceren de optie **[!UICONTROL All Configurations]** en selecteert u **[!UICONTROL Publish]**. Publiceer zowel Power Automate Data verse als Power Automate Flow Service Cloud Configurations.
+1. Selecteer op de Publish-pagina de optie **[!UICONTROL All Configurations]** en selecteert u **[!UICONTROL Publish]**. Publish: zowel Power Automate Data verse als Power Automate Flow Service Cloud Configurations.
 
 Uw AEM Forms Author-instantie is nu verbonden met Microsoft® Power Automate. U kunt nu Adaptive Forms-gegevens naar een Power Automate-flow verzenden.
 

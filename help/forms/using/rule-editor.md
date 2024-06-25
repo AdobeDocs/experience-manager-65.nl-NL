@@ -3,13 +3,13 @@ title: Regeleditor voor adaptieve formulieren
 description: Met de Adaptive Form Rule-editor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts.
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '6553'
 ht-degree: 0%
@@ -230,7 +230,7 @@ Voorbeeld van waardeceregel instellen met de service van het formuliergegevensmo
 >
 >Daarnaast kunt u Waarde van regel instellen gebruiken om alle waarden in een vervolgkeuzelijstcomponent te vullen vanaf de uitvoer van een service van een formuliergegevensmodel of een webservice. Zorg er echter voor dat het uitvoerargument dat u kiest van een arraytype is. Alle waarden die in een array worden geretourneerd, worden beschikbaar in de opgegeven vervolgkeuzelijst.
 
-### Toon {#show}
+### Tonen {#show}
 
 Met de **Tonen** regeltype, kunt u een regel schrijven om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen als de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
 

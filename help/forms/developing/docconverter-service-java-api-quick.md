@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
@@ -19,17 +20,17 @@ ht-degree: 0%
 
 Java™ API Quick Start (SOAP) is beschikbaar voor de DocConverter-service.
 
-[Snel starten (SOAP-modus): PDF/A-compatibiliteit bepalen met de Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Snel starten (SOAP modus): PDF/A-compatibiliteit bepalen met Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Snel starten (SOAP-modus): een document converteren naar een PDF/A-document met Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Snel starten (SOAP modus): een document converteren naar een PDF/A-document met Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >De snelle Beginnen in Programmering met AEM vormen zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss® en het werkende systeem van Microsoft® Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): een document converteren naar een PDF/A-document met de Java™ API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
+## Snel starten (SOAP modus): Een document converteren naar een PDF/A-document met de Java™ API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
 In het volgende Java™-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een PDF/A-document dat is opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie [Documenten converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
@@ -132,7 +133,7 @@ In het volgende Java™-codevoorbeeld wordt een PDF-document met de naam *Lening
  }
 ```
 
-## Snel starten (SOAP-modus): PDF/A-compatibiliteit bepalen met de Java™ API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
+## Snel starten (SOAP modus): PDF/A-compatibiliteit bepalen met de Java™ API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
 In het volgende Java™-codevoorbeeld wordt bepaald of het invoer-PDF-document voldoet aan de PDF/A-standaard. Het invoerdocument PDF dat aan de DocConverter-service wordt doorgegeven, krijgt de naam *LoanArchive.pdf*. Validatieresultaten worden naar een XML-bestand met de naam *ValidationResults.xml*. (Zie [Programmaticaal bepalen van PDF/A-compatibiliteit](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 

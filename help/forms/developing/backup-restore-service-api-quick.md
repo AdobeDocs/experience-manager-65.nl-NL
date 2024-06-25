@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -25,13 +26,13 @@ Java™ API Quick Start (SOAP) is beschikbaar voor de API voor back-up- en herst
 
 [Snel starten: Back-upmodus verlaten met Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk getypte API en de verbindingsmodus moet worden ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
 >Quick Start in Programming with AEM Forms is gebaseerd op het Forms-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Back-upmodus starten met de Java™ API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Snel starten (SOAP modus): Back-upmodus activeren met de Java™ API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
 In het volgende Java™-codevoorbeeld wordt gedurende twee uur de back-upmodus geactiveerd met een uniek label. Nadat de back-uptijd is verlopen of als de back-upmodus expliciet is afgesloten, keert de Forms-server terug naar het leegmaken van bestanden van de algemene documentopslag. (Zie [Back-upmodus activeren op de Forms-server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
@@ -146,7 +147,7 @@ In het volgende Java™-codevoorbeeld wordt gedurende twee uur de back-upmodus g
  
 ```
 
-## Snel starten (SOAP-modus): back-upmodus verlaten met de Java™ API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Snel starten (SOAP modus): Back-upmodus verlaten met de Java™ API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
 Het volgende Java™-codevoorbeeld zorgt er expliciet voor dat een Forms-server de back-upmodus verlaat en terugkeert naar het leegmaken van bestanden van de algemene documentopslag. (Zie [Back-upmodus op de Forms-server laten staan](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 

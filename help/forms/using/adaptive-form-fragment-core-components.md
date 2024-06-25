@@ -3,11 +3,11 @@ title: Wat zijn adaptieve formulierfragmenten?
 description: Adaptive Forms biedt een mechanisme om een formuliersegment te maken, zoals een deelvenster of een groep velden, zoals het in elk adaptief formulier wordt gebruikt. U kunt een bestaand deelvenster ook als fragment opslaan.
 topic-tags: author
 keywords: Adaptieve formulierfragmenten, Adaptieve formulierfragmenten, Een formulierfragment maken, Een fragment toevoegen aan een adaptief formulier, Fragmenten beheren
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 0%

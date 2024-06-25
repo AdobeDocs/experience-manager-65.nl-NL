@@ -5,11 +5,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '6086'
 ht-degree: 0%
@@ -145,13 +145,13 @@ Lijst met meta-eigenschappen van een thema (bevindt zich op de pagina met eigens
   </tr>
   <tr>
    <td>8.</td>
-   <td>Publiceren op tijd</td>
+   <td>Publish On Time</td>
    <td>Ja</td>
    <td>Tijd om het thema automatisch te publiceren.</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Publiceren buiten tijd</td>
+   <td>Publish Off Time</td>
    <td>Ja</td>
    <td>Tijd om de publicatie van het thema automatisch ongedaan te maken.</td>
   </tr>
@@ -604,7 +604,7 @@ Nadat u het thema hebt aangepast, past u het toe op uw formulier of interactieve
 
 ## Gevolgen voor andere adaptieve gevallen van formuliergebruik {#impact-on-other-adaptive-form-use-cases}
 
-* **Een formulier publiceren/publiceren ongedaan maken:** Bij het publiceren van een formulier wordt het thema dat op is toegepast, ook gepubliceerd (als het nog niet is gepubliceerd)
+* **Publish/publiceert een formulier ongedaan:** Bij het publiceren van een formulier wordt het thema dat op is toegepast, ook gepubliceerd (als het nog niet is gepubliceerd)
 * **Een formulier importeren/exporteren:** Bij het importeren of exporteren van een formulier wordt het bijbehorende thema ook automatisch geïmporteerd of geëxporteerd.
 * **Referenties van een formulier:** De sectie Verwijzingen in formulierverwijzingen bevat een extra item voor het thema.
 * **Tijdstip van laatste wijziging van een formulier:** Wordt bijgewerkt wanneer het gekoppelde thema wordt gewijzigd.

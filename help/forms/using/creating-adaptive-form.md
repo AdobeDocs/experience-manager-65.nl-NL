@@ -3,9 +3,10 @@ title: Een adaptief formulier maken
 description: Leer hoe u een adaptief formulier maakt met [!DNL Experience Manager Forms]. Adaptieve formulieren zijn responsieve HTML5-formulieren die het verzamelen en verwerken van informatie stroomlijnen. Dig dieper in op het maken van een adaptief formulier op basis van een formuliergegevensmodel, XFA-formuliersjabloon en XML- of JSON-schema.
 role: User, Developer
 level: Beginner
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1889'
 ht-degree: 0%

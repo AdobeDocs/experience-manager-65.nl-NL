@@ -3,13 +3,13 @@ title: Indelingsmogelijkheden van adaptieve formulieren
 description: De indeling en vormgeving van adaptieve formulieren op verschillende apparaten worden bepaald door de indelingsinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 0%

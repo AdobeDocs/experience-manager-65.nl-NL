@@ -6,10 +6,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Door Adaptieve Forms Core-componenten in te schakelen kunt u beginnen met het maken, publiceren en leveren van [Adaptieve Forms met basis van kerncomponenten](create-an-adaptive-form-core-components.md) en [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) uit uw AEM 6.5 Forms-omgeving.
 
-Als u Adaptive Forms Core Components wilt inschakelen in uw AEM 6.5 Forms-omgeving, moet u een [Archetype 41 of hoger AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebaseerd project (met formulieropties ingeschakeld) op al uw instanties Auteur en Publiceren.
+Als u Adaptive Forms Core Components wilt inschakelen in uw AEM 6.5 Forms-omgeving, moet u een [Archetype 41 of hoger AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebaseerd project (met ingeschakelde formulieropties) op al uw auteur- en Publish-instanties.
 
 Dit artikel bevat gedetailleerde instructies voor het instellen en implementeren van een project op basis van Archetype 41 of hoger op uw AEM 6.5 Forms-omgeving om Adaptive Forms Core Components (Aangepaste Core-componenten) in te schakelen. U kunt de onderstaande lijst raadplegen voor **AEM 6,5** compatibele versies voor het inschakelen van Forms Core Components:
 
@@ -43,7 +43,7 @@ Voordat u Adaptive Forms Core Components inschakelt in een AEM 6.5 Forms-omgevin
 
 ## Maak en implementeer de nieuwste AEM archetype-project
 
-Een AEM Archetype 41 of [later](https://github.com/adobe/aem-project-archetype) gebaseerd project en stel het aan elk van uw Auteur en Publish instanties op:
+Een AEM Archetype 41 of [later](https://github.com/adobe/aem-project-archetype) gebaseerd project te gebruiken en het in al uw Auteur en instanties van Publish op te stellen:
 
 1. Meld u aan bij uw computer, waarbij u als beheerder uw AEM 6.5 Forms-exemplaar host en uitvoert.
 1. Open de opdrachtprompt of terminal en voer de volgende opdracht uit om AEM aardetype-project te maken (met ingeschakelde formulieropties):
@@ -134,13 +134,13 @@ Een AEM Archetype 41 of [later](https://github.com/adobe/aem-project-archetype) 
 
    Nadat het project van Archetype van de AEM met succes wordt gebouwd, wordt een AEM Pakket geproduceerd. U kunt het pakket vinden op [Projectmap Archetype AEM]\all\target\[appid].all-[versie].zip
 
-1. Gebruik de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) om [Projectmap Archetype AEM]\all\target\[appid].all-[versie].zip-pakket op alle instanties Auteur en Publiceren.
+1. Gebruik de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) om [Projectmap Archetype AEM]\all\target\[appid].all-[versie].zip-pakket op alle instanties van Auteur en Publish.
 
 >[!NOTE]
 >
 >
 >
-> * Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar, kunt u het pakket installeren via Pakketbeheer. Probeer dan de URL: `http://[Publish Server URL]:[PORT]/system/console` aan login. Hierdoor hebt u toegang tot de aanmeldingspagina op een instantie Publiceren, zodat u verder kunt gaan met het installatieproces.
+> * Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar, kunt u het pakket installeren via Pakketbeheer. Probeer dan de URL: `http://[Publish Server URL]:[PORT]/system/console` aan login. Hierdoor hebt u toegang tot de aanmeldingspagina op een Publish-instantie, zodat u verder kunt gaan met het installatieproces.
 > * Verwijder of verwijder het project Archetype niet, nadat u het in uw omgeving hebt geïmplementeerd. Het Archetype-project is vereist om aangepaste en nieuwe Adaptive Forms Core Components-thema&#39;s aan uw omgeving toe te voegen.
 
 De Core Components zijn ingeschakeld voor uw omgeving. Een lege, op componenten gebaseerde adaptieve formuliersjabloon en Canvas 3.0-thema worden geïmplementeerd in uw omgeving, zodat u [op Adaptieve Forms gebaseerde Core Components maken](create-an-adaptive-form-core-components.md).

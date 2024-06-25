@@ -1,14 +1,14 @@
 ---
 title: HTML5-voorbeeld van een XDP-formulier genereren
-description: Het tabblad Voorbeeld-HTML in LiveCycle Designer kan worden gebruikt om een voorbeeld van formulieren weer te geven zoals deze in een browser worden weergegeven.
+description: Het tabblad Voorbeeld van HTML in LiveCycle Designer kan worden gebruikt voor een voorbeeld van formulieren zoals deze worden weergegeven in een browser.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Tijdens het ontwerpen van een formulier in AEM Forms Designer kunt u niet alleen
 
 ## Voorvertoning van HTML inschakelen voor XDP-formulieren in Designer {#html-preview-of-forms-in-forms-designer}
 
-Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voorbeeld van XDP-formulieren te genereren:
+Voer de volgende configuraties uit om Designer in staat te stellen een voorbeeld van een HTML-XDP-formulier te genereren:
 
 * Apache Sling Authentication Service configureren
 * Beveiligde modus uitschakelen
@@ -72,7 +72,7 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
    * **Server-URL**: URL AEM Forms-server.
 
    * **HTTP-poortnummer**: AEM serverpoort. De standaardwaarde is 4502.
-   * **Context voorvertoning HTML:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt om een voorbeeld van het formulier weer te geven in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
+   * **Context voorvertoning HTML:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt om een voorbeeld van het formulier in Designer weer te geven. U kunt echter ook het pad naar een aangepast profiel opgeven.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms op OSGi)
 
@@ -87,9 +87,9 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
    >
    >Zorg ervoor dat de AEM Forms-server actief is. De voorvertoning van de HTML maakt verbinding met de CRX-server met *genereren* een voorvertoning.
 
-   ![Opties voor AEM Forms Designer ](assets/server_options.png)
+   ![AEM Forms Designer-opties ](assets/server_options.png)
 
-   Opties voor AEM Forms Designer
+   AEM Forms Designer-opties
 
 1. Als u een voorbeeld van een formulier in HTML wilt weergeven, klikt u op de knop **Voorvertoning HTML** tab.
 
@@ -105,13 +105,13 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
 
    >[!CAUTION]
    >
-   >Als u de echte ervaring van eindgebruikers wilt testen, kunt u ook een voorbeeld van uw formulieren weergeven in externe browsers (Google Chrome, Microsoft Edge, Mozilla Firefox en meer). Elke browser gebruikt een aparte engine om HTML te renderen. Er kunnen dus enkele verschillen zijn in de manier waarop een voorbeeld van een formulier wordt weergegeven in Designer en de externe browser.
+   >Als u de echte ervaring van eindgebruikers wilt testen, kunt u ook een voorbeeld van uw formulieren weergeven in externe browsers (Google Chrome, Microsoft Edge, Mozilla Firefox en meer). Elke browser gebruikt een aparte engine om HTML te renderen. Er kunnen dus enkele verschillen zijn in de manier waarop een formuliervoorvertoning wordt weergegeven in Designer en de externe browser.
 
 ## Een voorbeeld van een formulier weergeven met behulp van voorbeeldgegevens {#to-preview-a-form-using-sample-data}
 
 Met Designer kunt u een voorbeeld van een formulier bekijken en het formulier testen met XML-voorbeeldgegevens. Het wordt aanbevolen om regelmatig uw formulier te testen met voorbeeldgegevens om te controleren of het formulier correct wordt weergegeven.
 
-Als u geen voorbeeldgegevens hebt, kunt u deze in Designer maken of deze zelf maken. (Zie [Voorbeeldgegevens automatisch genereren voor een voorbeeldweergave van het formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) en [Voorbeeldgegevens maken voor een voorbeeldweergave van uw formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Als u geen voorbeeldgegevens hebt, kan Designer deze maken of deze zelf maken. (Zie [Voorbeeldgegevens automatisch genereren voor een voorbeeldweergave van het formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) en [Voorbeeldgegevens maken voor een voorbeeldweergave van uw formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 Als u het formulier test met een voorbeeldgegevensbron, weet u zeker dat de gegevens en velden zijn toegewezen en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken die de juiste ruimte biedt voor elk object om de samengevoegde gegevens weer te geven.
 

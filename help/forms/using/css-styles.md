@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Elk element bevat duidelijk gedefinieerde CSS-klassen. U kunt deze klassen wijzi
 >
 >Sommige XFA-elementen hebben geen naam. Als u de stijlen van dergelijke componenten wilt wijzigen, wijzigt u alle componenten van dat specifieke type.
 
-Voor de pagina&#39;s die niet in de Ontwerper van AEM Forms worden genoemd, worden de pagina&#39;s in een vorm HTML5 in de stijgende orde van hun aantal genoemd. Voor een HTML5-formulier met twee pagina&#39;s krijgen de pagina&#39;s bijvoorbeeld de naam Pagina1, Pagina2.
+Voor pagina&#39;s die niet in de AEM Forms Designer zijn genoemd, worden pagina&#39;s in een HTML5-formulier in toenemende mate genummerd. Voor een HTML5-formulier met twee pagina&#39;s krijgen de pagina&#39;s bijvoorbeeld de naam Pagina1, Pagina2.
 
 ## Veldelement {#field-element}
 
@@ -124,7 +124,7 @@ Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met
 
 ## CSS-klassen voor verschillende velden {#css-classes-for-different-fields}
 
-AEM Forms Designer ondersteunt verschillende typen velden in een formulier, zoals NumeriekVeld, DecimaalVeld en Datumveld. Al deze velden in HTML bevatten de bovengenoemde CSS-klassen. Ze bevatten ook enkele extra klassen, afhankelijk van het type veld.
+De AEM Forms Designer ondersteunt verschillende typen velden in een formulier, zoals NumericField, DecimalField en Date Field. Al deze velden in HTML bevatten de bovengenoemde CSS-klassen. Ze bevatten ook enkele extra klassen, afhankelijk van het type veld.
 
 Aan elk veld is een widget gekoppeld die het interface-element vertegenwoordigt. De klassen van elk veld en de widgets die aan elk veld zijn gekoppeld, worden hieronder weergegeven.
 

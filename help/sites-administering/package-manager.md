@@ -9,9 +9,9 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3565'
+source-wordcount: '3568'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ Gebruik een uniek pictogram voor uw pakket. Gebruik een pictogram dat door de Ad
 
 Filters identificeren de knooppunten in de opslagplaats die in het pakket moeten worden opgenomen. A **Filterdefinitie** geeft de volgende informatie op:
 
-* De **Hoofdpad** van de inhoud die moet worden opgenomen
+* De **Basispad** van de inhoud die moet worden opgenomen
 * **Regels** die specifieke knooppunten onder het hoofdpad bevatten of uitsluiten
 
 Regels toevoegen met de opdracht **+** knop. Regels verwijderen met de opdracht **-** knop.
@@ -168,18 +168,22 @@ U kunt een of meer filterdefinities definiëren voor een pakket. Gebruik meerder
 
 ![Tabblad Filters](assets/edit-filter.png)
 
-Wanneer u filters maakt, kunt u een pad definiëren of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt opnemen in of uitsluiten.
+Wanneer u regels maakt, definieert u een reguliere expressie (ook wel regex, regexp of rationele expressie genoemd) om alle knooppunten op te geven die u wilt opnemen in of uitsluiten.
 
 | Type regel | Beschrijving |
 |---|---|
-| include | Als u een map opneemt, worden die map en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
-| uitsluiten | Als u een map uitsluit, worden die map en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) uitgesloten. |
+| include | Met Opnemen worden alle bestanden en mappen in de opgegeven map opgenomen die overeenkomen met de reguliere expressie. Inclusief **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
+| uitsluiten | Met Uitsluiten worden alle bestanden en mappen uitgesloten die overeenkomen met de reguliere expressie. |
 
 Pakketfilters worden meestal gedefinieerd wanneer u voor het eerst [Maak het pakket.](#creating-a-new-package) U kunt ze echter ook later bewerken, waarna het pakket opnieuw moet worden samengesteld om de inhoud bij te werken op basis van de nieuwe filterdefinities.
 
 >[!TIP]
 >
 >Eén pakket kan meerdere filterdefinities bevatten, zodat knooppunten van verschillende locaties gemakkelijk in één pakket kunnen worden gecombineerd.
+
+>[!TIP]
+>
+>Voor achtergrondinformatie raadpleegt u de [Apache-hoesje - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html) documentatie.
 
 ### Afhankelijkheden {#dependencies}
 

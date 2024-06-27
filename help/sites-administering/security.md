@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5409'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ In de volgende tabellen wordt elk item vermeld, samen met:
   <tr>
    <td>contribuant</td>
    <td>Groep</td>
-   <td><p>Basisrechten waarmee de gebruiker inhoud kan schrijven (zoals in, alleen functionaliteit).</p> <p>Wijst geen voorrechten aan de /content boom toe. Moet worden toegewezen aan de afzonderlijke groepen of gebruikers.</p> </td>
+   <td><p>Basisrechten waarmee de gebruiker inhoud kan schrijven (zoals in, alleen de rechten die vereist zijn voor de basisfunctionaliteit).</p> <p>Wijst geen voorrechten voor toegang tot de /content boom zelf toe. Deze moeten specifiek worden toegewezen aan de afzonderlijke groepen of gebruikers.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -196,7 +196,7 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
   </tr>
   <tr>
    <td>Repliceren</td>
-   <td>De gebruiker kan inhoud naar een andere omgeving (bijvoorbeeld de omgeving Publiceren) repliceren. Het voorrecht wordt ook toegepast op onderliggende pagina's.</td>
+   <td>De gebruiker kan inhoud naar een andere omgeving (bijvoorbeeld de Publish-omgeving) kopiëren. Het voorrecht wordt ook toegepast op onderliggende pagina's.</td>
   </tr>
  </tbody>
 </table>
@@ -242,7 +242,7 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 
 De machtigingen worden ook toegepast op onderliggende pagina&#39;s.
 
-Als een toestemming niet van de ouderknoop wordt geërft maar minstens één lokaal ingang voor het heeft, dan worden de volgende symbolen toegevoegd aan de controledoos. Een lokale ingang is één die in de interface CRX 2.2 wordt gecreeerd (De vervanging ACLs kan momenteel slechts in CRX worden gecreeerd.)
+Als een toestemming niet van de ouderknoop wordt geërft maar minstens één lokaal ingang voor het heeft, dan worden de volgende symbolen toegevoegd aan de controledoos. Een lokale ingang is die in CRX 2.2 interface (ACLs van de Vervanging kan momenteel slechts in CRX worden gecreeerd.)
 
 Voor een handeling op een bepaald pad:
 
@@ -293,7 +293,7 @@ Hieronder volgen aanbevelingen voor het beheren van toegangsbeheerlijsten:
 
   Adobe raadt u aan om met Toestaan te werken in plaats van Weigeren zie [Aanbevolen procedures](#best-practices).
 
-Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Zie de CRX documentatie die illustreert hoe AEM WCM [evalueert toegangsrechten](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)en voorbeelden van het instellen van toegangsbeheerlijsten.
+Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Raadpleeg de CRX-documentatie die laat zien hoe AEM WCM [evalueert toegangsrechten](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)en voorbeelden van het instellen van toegangsbeheerlijsten.
 
 ### Machtigingen {#permissions}
 

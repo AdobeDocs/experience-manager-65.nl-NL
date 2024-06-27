@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 17e10214732b25c89e0bb3f7b435fe05cd2f3595
+source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
 workflow-type: tm+mt
-source-wordcount: '7434'
+source-wordcount: '7456'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ ht-degree: 1%
          + [Paginaprestaties analyseren](/help/sites-authoring/ci-analyze.md)
          + [Gegevens van paginaanalyse bekijken](/help/sites-authoring/pa-using.md)
       + Personalisatie {#personalization}
-         + [Personalisatie](/help/sites-authoring/personalization.md)
+         + [Personalization](/help/sites-authoring/personalization.md)
          + [Pagina&#39;s voorvertonen met ContextHub-gegevens](/help/sites-authoring/ch-previewing.md)
          + [Doelinhoud ontwerpen met doelmodus](/help/sites-authoring/content-targeting-touch.md)
          + [Werken met gerichte inhoud in meerdere sites](/help/sites-authoring/multisite-support-targeted-content.md)
@@ -210,7 +210,7 @@ ht-degree: 1%
          + [Toegang tot klassieke gebruikersinterface inschakelen](/help/sites-administering/enable-classic-ui.md)
          + [Admin Consoles](/help/sites-administering/enable-classic-ui-admin.md)
       + Personalisatie {#personalization}
-         + [Personalisatie](/help/sites-administering/personalization.md)
+         + [Personalization](/help/sites-administering/personalization.md)
          + [ContextHub configureren](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/personlization/ch-configuring.html)
          + [Clientcontext](/help/sites-administering/client-context.md)
          + [Campagnes](/help/sites-administering/campaigns.md)
@@ -262,13 +262,13 @@ ht-degree: 1%
          + [Aanbevolen MSM-procedures](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
          + [Behandeling van GDPR-verzoeken aan de AEM Stichting](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
-         + [AEM handel - gereedheid van de GDPR](/help/sites-administering/gdpr-compliance-commerce.md)
+         + [AEM Commerce - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-commerce.md)
       + Inhoud beheren {#contentmanagement}
          + [Pakketbeheer](/help/sites-administering/package-manager.md)
          + [Tags beheren](/help/sites-administering/tags.md)
          + [De pagina-exportfunctie](/help/sites-administering/page-exporter.md)
          + [Klassieke UI-tagconsole](/help/sites-administering/classic-console.md)
-         + [Inhoudsbeheer voor schermen](/help/sites-administering/content-management-screens.md)
+         + [Inhoudsbeheer voor Screens](/help/sites-administering/content-management-screens.md)
          + [WebDAV-toegang](/help/sites-administering/webdav-access.md)
    + Klassieke UI Authoring {#classic-ui}
       + Inleiding tot Klassieke UI Authoring {#introduction}
@@ -331,10 +331,10 @@ ht-degree: 1%
          + [Adobe Campaign-componenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
          + [Je Adobe Campaign als doelgroep instellen](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
          + [Adobe Campaign Forms maken in AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-      + Elementen ontwerpen in klassieke gebruikersinterface {#assets}
-         + [Werken met elementen](/help/sites-classic-ui-authoring/classicui-assets.md)
-         + [Dynamic Media-middelen leveren](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
-         + [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+      + Assets Authoring in klassieke gebruikersinterface {#assets}
+         + [Werken met Assets](/help/sites-classic-ui-authoring/classicui-assets.md)
+         + [Dynamic Media Assets leveren](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
+         + [Dynamic Media Assets toevoegen aan pagina&#39;s](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Scene7-functies aan uw pagina toevoegen](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
          + [Werken met Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
@@ -348,7 +348,7 @@ ht-degree: 1%
       + [Digitale middelen zoeken](/help/assets/search-assets.md)
       + [Werken met metagegevens van elementen](/help/assets/metadata.md)
       + [Meertalige activa](/help/assets/multilingual-assets.md)
-      + [Gebruiken [!DNL Adobe Stock] activa in activa](/help/assets/aem-assets-adobe-stock.md)
+      + [Gebruiken [!DNL Adobe Stock] activa in Assets](/help/assets/aem-assets-adobe-stock.md)
       + [3D-elementen voorvertonen](/help/assets/previewing-3d-assets.md)
       + [Mapelementen en -verzamelingen controleren](/help/assets/bulk-approval.md)
       + [Verbeterde slimme tags](/help/assets/enhanced-smart-tags.md)
@@ -357,14 +357,14 @@ ht-degree: 1%
       + [Proceselementen](/help/assets/assets-workflow.md)
       + [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md)
       + [Elementen hergebruiken met MSM](/help/assets/reuse-assets-using-msm.md)
-      + [Verbonden elementen met [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [Verbonden Assets met [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
    + Dynamic Media{#dynamic}
       + [Archief met nieuwsbrief per Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Dynamic Media instellen](/help/assets/administering-dynamic-media.md)
       + [Werken met Dynamic Media](/help/assets/dynamic-media.md)
       + [Dynamic Media configureren - Scene7-modus](/help/assets/config-dms7.md)
       + [Optioneel - Dynamic Media configureren - Scene7-modus, algemene instellingen](/help/assets/dm-general-settings.md)
-      + [Optioneel - Dynamic Media configureren - Scene7-modus, Publicatie-instelling](/help/assets/dm-publish-settings.md)
+      + [Optioneel - Dynamic Media configureren - Scene7-modus, Publish instellen](/help/assets/dm-publish-settings.md)
       + [Problemen met Dynamic Media oplossen - Scene7-modus](/help/assets/troubleshoot-dms7.md)
       + [Een alias-account voor een Dynamic Media-bedrijf configureren](/help/assets/dm-alias-account.md)
       + [Dynamic Media configureren - hybride modus](/help/assets/config-dynamic.md)
@@ -401,16 +401,16 @@ ht-degree: 1%
       + [Dynamic Media-middelen voorvertonen](/help/assets/previewing-assets.md)
       + [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md)
       + [Dynamic Media Classic-functies toevoegen aan pagina&#39;s](/help/assets/scene7.md)
-      + [De dynamische video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md)
+      + [De Dynamic Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md)
       + [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md)
       + [URL&#39;s transformeren met behulp van linialen](/help/assets/using-rulesets-to-transform-urls.md)
-      + [Dynamic Media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md)
-      + [Werken met Selectieve publicatie in Dynamic Media](/help/assets/selective-publishing.md)
+      + [Publish Dynamic Media-middelen](/help/assets/publishing-dynamicmedia-assets.md)
+      + [Werken met Selectieve Publish in Dynamic Media](/help/assets/selective-publishing.md)
       + [De CDN-cache ongeldig maken via Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md)
       + [De CDN-cache ongeldig maken via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](/help/assets/bulk-ingest-migrate.md)
       + [Werken met kiezers](/help/assets/working-with-selectors.md)
-   + Elementen uitbreiden {#extending}
+   + Assets uitbreiden {#extending}
       + [Aanpassen en uitbreiden [!DNL Assets]](/help/assets/extending-assets.md)
       + [Elementen verwerken met behulp van mediafuncties en workflows](/help/assets/media-handlers.md)
       + [Zoekfunctionaliteit uitbreiden](/help/assets/searchx.md)
@@ -425,7 +425,7 @@ ht-degree: 1%
       + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [GraphQL API met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
       + [[!DNL Assets] proxyontwikkeling](/help/assets/proxy.md)
-   + Elementen beheren {#administer}
+   + Assets beheren {#administer}
       + [Ondersteunde bestandsindelingen](/help/assets/assets-formats.md)
       + [Zoeken in facetten](/help/assets/search-facets.md)
       + [Metagegevensconcepten begrijpen](/help/assets/metadata-concepts.md)
@@ -437,7 +437,7 @@ ht-degree: 1%
       + [Slimme-inhoudsservice voor tags configureren](/help/assets/config-smart-tagging.md)
       + [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s](/help/assets/processing-profiles.md)
       + [Elementeditorpagina&#39;s maken en configureren](/help/assets/assets-finder-editor.md)
-      + [Hulplijn voor middelengrootte](/help/assets/assets-sizing-guide.md)
+      + [Assets-hulplijn voor grootte](/help/assets/assets-sizing-guide.md)
       + [Aanbevolen procedures voor het vertalen van middelen](/help/assets/best-practices-for-translating-assets-efficiently.md)
       + [[!DNL Assets] richtlijn voor afstelling van prestaties](/help/assets/performance-tuning-guidelines.md)
       + [[!DNL Assets] migratiehulplijn](/help/assets/assets-migration-guide.md)
@@ -451,7 +451,7 @@ ht-degree: 1%
       + [Demo-pakket gebruiken voor informatie over elementen](/help/assets/use-demo-package-for-asset-insights.md)
       + [Koppeling met Adobe-elementen configureren](/help/assets/configure-asset-link.md)
       + [FPO-uitvoeringen genereren voor Adobe InDesign](/help/assets/configure-fpo-renditions.md)
-      + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](/help/assets/assets-file-format-best-practices.md)
+      + [Aanbevolen werkwijzen voor Assets-bestandsindelingen](/help/assets/assets-file-format-best-practices.md)
       + [Aanbevolen procedures voor het controleren van elementen](/help/assets/assets-monitoring-best-practices.md)
       + [Camera Raw ondersteuning](/help/assets/camera-raw.md)
       + [MIME-type van activa detecteren met Apache Tika](/help/assets/detect-asset-mime-type-with-tika.md)
@@ -461,9 +461,9 @@ ht-degree: 1%
       + [Elementsjablonen](/help/assets/asset-templates.md)
    + Brand Portal {#brandportal}
       + [Configureren [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [Elementen publiceren naar [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
-      + [Mappen publiceren naar [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
-      + [Verzamelingen publiceren naar [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
+      + [Publish-middelen naar [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
+      + [Publish-mappen naar [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
+      + [Publish-verzamelingen naar [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
    + Contentfragmenten {#content-fragments}
       + [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
       + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -478,7 +478,7 @@ ht-degree: 1%
       + [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Voorvertoning - JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Vertaalprojecten maken voor inhoudsfragmenten](/help/assets/creating-translation-projects-for-content-fragments.md)
-   + Elementen beheren {#managing}
+   + Assets beheren {#managing}
       + [Digitale middelen beheren](/help/assets/manage-assets.md)
       + [Verzamelingen beheren](/help/assets/manage-collections.md)
       + [Asset Selector](/help/assets/asset-selector.md)
@@ -489,7 +489,7 @@ ht-degree: 1%
       + [Elementen voorbereiden voor vertaling](/help/assets/preparing-assets-for-translation.md)
       + [Elementen downloaden van Experience Manager](/help/assets/download-assets-from-aem.md)
       + [Lichtbak](/help/assets/light-box.md)
-      + [Elementinzichten](/help/assets/asset-insights.md)
+      + [Assets-inzichten](/help/assets/asset-insights.md)
       + [Elementeninzichten via DTM inschakelen](/help/assets/use-dtm-for-asset-insights.md)
       + [Elementeninzichten configureren](/help/assets/configure-asset-insights.md)
       + [Elementen inchecken en uitchecken](/help/assets/check-out-and-submit-assets.md)
@@ -519,7 +519,7 @@ ht-degree: 1%
          + [Lesbestand: formuliergegevensmodel maken](/help/forms/using/create-form-data-model.md)
          + [Lesbestand: regels toepassen op aangepaste formuliervelden l](/help/forms/using/apply-rules-to-adaptive-form-fields.md)
          + [Zelfstudie: een adaptief formulier opmaken](/help/forms/using/style-your-adaptive-form.md)
-         + [Zelfstudie: uw adaptieve formulier publiceren](/help/forms/using/publish-your-adaptive-form.md)
+         + [Zelfstudie: Publish uw adaptieve formulier](/help/forms/using/publish-your-adaptive-form.md)
       + Lesbestand: uw eerste interactieve communicatie maken {#create-first-interactive-communication}
          + [Lesbestand: uw eerste interactieve communicatie maken](/help/forms/using/create-your-first-interactive-communication.md)
          + [Lesbestand: interactieve communicatie plannen](/help/forms/using/planning-interactive-communications.md)
@@ -702,7 +702,7 @@ ht-degree: 1%
    + AEM Forms Workspace {#use-aem-forms-workspace}
       + [Inleiding tot de AEM Forms-werkruimte](/help/forms/using/introduction-html-workspace.md)
       + [Werken met de werkruimte van AEM Forms](/help/forms/using/html-workspace-overview.md)
-      + [AEM Forms Workspace Architecture](/help/forms/using/html-workspace-architecture.md)
+      + [AEM Forms Workspace-architectuur](/help/forms/using/html-workspace-architecture.md)
       + [Functies van de AEM Forms-werkruimte zijn niet beschikbaar in de Flex-werkruimte](/help/forms/using/features-html-workspace-available-flex.md)
       + [Functies van de Flex-werkruimte zijn niet beschikbaar in de AEM Forms-werkruimte](/help/forms/using/features-flex-workspace-available-html.md)
       + [Backbone-interactie](/help/forms/using/backbone-interaction.md)
@@ -752,7 +752,7 @@ ht-degree: 1%
       + [Het Xcode-project instellen en de iOS-app ontwikkelen](/help/forms/using/setup-xcode-project-build-installer.md)
       + [Een veilige AEM Forms-app voor iOS maken](/help/forms/using/building-secure-mobile-workspace-app.md)
       + [Opstelling het project van Visual Studio en bouwt Windows app](/help/forms/using/setup-visual-studio-project-build-installer.md)
-      + [Het Android-studioproject instellen en de Android-app ontwikkelen](/help/forms/using/setup-android-studio-project-build-installer.md)
+      + [Android-studioproject instellen en de Android-app ontwikkelen](/help/forms/using/setup-android-studio-project-build-installer.md)
       + [De AEM Forms Android-app ontwikkelen](/help/forms/using/setup-eclipse-project-build-installer.md)
       + [AEM Forms-app distribueren](/help/forms/using/distribute-mobile-workspace-app.md)
       + [Bewegingsaanpassing](/help/forms/using/gesture-customization.md)
@@ -788,7 +788,7 @@ ht-degree: 1%
       + [Schermlezers voor HTML5-formulieren](/help/forms/using/screen-readers.md)
       + [Een aangepast profiel maken voor HTML5-formulieren](/help/forms/using/custom-profile.md)
       + [Talen van rechts naar links in HTML5-formulieren](/help/forms/using/right-left-languages.md)
-      + [FormulierBridge integreren met aangepaste portal voor HTML5-formulieren](/help/forms/using/integrate-form-bridge-forms-portal.md)
+      + [Form Bridge integreren met aangepaste portal voor HTML5-formulieren](/help/forms/using/integrate-form-bridge-forms-portal.md)
       + [Aangepaste weergaven maken in HTML5-formulieren](/help/forms/using/custom-widgets.md)
       + [Standaardstijlen van HTML5-formulieren wijzigen](/help/forms/using/changing-default-styles.md)
       + [Ondersteuning voor afbeeldingsclausules voor HTML5-formulieren](/help/forms/using/picture-clause-support.md)
@@ -809,7 +809,7 @@ ht-degree: 1%
       + [Correspondentie maken](/help/forms/using/create-correspondence.md)
       + [Externe functies in Expression Builder](/help/forms/using/expression-builder.md)
       + [Afbeeldingen van handtekeningen van agent beheren](/help/forms/using/manage-agent-signature-images.md)
-      + [Nabewerking van brieven en interactieve communicatie](/help/forms/using/submit-letter-topostprocess.md)
+      + [Post-verwerking van brieven en interactieve communicatie](/help/forms/using/submit-letter-topostprocess.md)
       + [Aangepaste actie toevoegen aan de weergave Lijst met activa](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [Aangepaste actie/knop toevoegen in interface voor correspondentie maken](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [Aangepaste eigenschappen toevoegen aan Correspondentenbeheerelementen](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -831,7 +831,7 @@ ht-degree: 1%
       + [Analyse met Adobe starten](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
       + [AEM Forms-analyserapporten weergeven en begrijpen](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
       + [A/B-test voor adaptieve formulieren maken en beheren](/help/forms/using/ab-testing-adaptive-forms.md)
-   + AEM Forms publiceren en verwerken {#publish-process-aem-forms}
+   + Publish en proces AEM Forms {#publish-process-aem-forms}
       + [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md)
       + [Voorbeeld voor het integreren van concepten en verzendingen in de database](/help/forms/using/integrate-draft-submission-database.md)
       + [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md)
@@ -869,15 +869,21 @@ ht-degree: 1%
       + [AEM inschakelen om te zoeken naar met documentbeveiliging beveiligde PDF- en Microsoft Office-documenten](/help/forms/using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
       + [Een document namens een andere gebruiker Protect](/help/forms/using/protect-document-on-behalf-of-another-user.md)
    + Forms Designer {#use-forms-designer}
-      + [Help bij Forms Designer](/help/forms/using/forms-designer-help.md)
+      + [Forms Designer Help](/help/forms/using/forms-designer-help.md)
       + [Designer gebruiken](https://www.adobe.com/go/learn_aemforms_designer_65)
-      + [Tutorials om snel aan de slag te gaan met Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-      + [Voorbeelden voor Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-      + [Grondbeginselen van scripts in Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-      + [Scriptreferentie in Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-      + [Referentiehandleiding van FormCalc in Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+      + [Designer Quick Start Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+      + [Designer-voorbeelden](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+      + [Grondbeginselen van Designer-scripts](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+      + [Designer-scriptreferentie](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+      + [Referentiehandleiding van Designer FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Krabbelhandtekening gebruiken in HTML5-formulieren](/help/forms/using/scribble-signature.md)
       + [Pagina-nulinhoud wijzigen in Designer](/help/forms/using/changing-page-zero-content-designer.md)
+      + [Aanbevolen werkwijzen voor toegankelijkheid]{#accessibility-best-practices}
+         + [Inleiding](/help/forms/using/introduction-accessibility-forms-designer.md)
+         + [Aanbevolen procedures voor het maken van formulieren](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+         + [Technieken voor het testen van toegankelijkheid van formulieren](/help/forms/using/techniques-for-testing-form-accessibility.md)
+         + [Toewijzing tussen richtlijnen en beste praktijken](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+         + [Nuttige koppelingen](/help/forms/using/useful-links-accessibility-forms-designer.md)
    + AEM Forms aanpassen {#customize-aem-forms}
       + [Vormgevingskader voor adaptieve en HTML5-formulieren](/help/forms/using/introduction-widgets.md)
       + [Een aangepaste aangepaste formuliersjabloon maken](/help/forms/using/custom-adaptive-forms-templates.md)
@@ -1028,12 +1034,12 @@ ht-degree: 1%
          + [Werken met stilstaande bewerkingen en vertakkingen](/help/forms/using/admin-help/stalled-operations-branches.md)
          + [Gedeelde wachtrijen configureren](/help/forms/using/admin-help/configuring-shared-queues.md)
          + [Werken met taken](/help/forms/using/admin-help/tasks.md)
-      + Werkruimte configureren {#configure-workspace}
-         + [Overzicht van werkruimte](/help/forms/using/admin-help/overview-10.md)
+      + Workspace configureren {#configure-workspace}
+         + [Overzicht van Workspace](/help/forms/using/admin-help/overview-10.md)
          + [Algemene instellingen importeren en exporteren](/help/forms/using/admin-help/importing-exporting-global-settings.md)
          + [Het bericht van de dag instellen](/help/forms/using/admin-help/setting-message-day.md)
          + [Zoeksjablonen aanpassen](/help/forms/using/admin-help/customizing-search-templates.md)
-         + [De categorieën beheren die worden weergegeven in Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
+         + [De categorieën beheren die in Workspace worden weergegeven](/help/forms/using/admin-help/categories-displayed-workspace.md)
       + Health Monitor {#health-monitor}
          + [Overzicht van Health Monitor](/help/forms/using/admin-help/overview-11.md)
          + [Prestaties van de fijnafgestelde Health Monitor](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
@@ -1086,7 +1092,7 @@ ht-degree: 1%
       + [AEM insteekmodule voor het opsporen van fouten in adaptieve formulieren](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
       + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
-      + [Form Bridge-API&#39;s voor HTML5-formulieren](/help/forms/using/form-bridge-apis.md)
+      + [Bridge-API&#39;s van formulier voor HTML5-formulieren](/help/forms/using/form-bridge-apis.md)
       + [JavaScript Library API-referentie voor Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_65)
@@ -1099,32 +1105,32 @@ ht-degree: 1%
          + SPI&#39;s ontwikkelen voor AEM Forms {#developing-spis-aem-forms}
             + [Een Uitnodigingshandler voor externe gebruikers maken](/help/forms/developing/creating-invite-external-users-handler.md)
          + Java API Snel starten - Codevoorbeelden {#java-api-quick-start-code-examples}
-            + [Application Manager Client JavaAPI Quick Start (SOAP)](/help/forms/developing/application-manager-client-java-api.md)
-            + [Application Manager Service JavaAPI Quick Start (SOAP)](/help/forms/developing/application-manager-service-java-api.md)
-            + [Java API QuickStart (SOAP) van de Assembler-service](/help/forms/developing/assembler-service-java-api-quick.md)
+            + [Application Manager Client JavaAPI Quick Start(SOAP)](/help/forms/developing/application-manager-client-java-api.md)
+            + [Application Manager Service JavaAPI Quick Start(SOAP)](/help/forms/developing/application-manager-service-java-api.md)
+            + [Java API QuickStart van de Assembler Service (SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
             + [Acrobat Reader DC Extension Service Java API Quick Start (SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
             + [Back-up- en herstelservice APIQuick start](/help/forms/developing/backup-restore-service-api-quick.md)
-            + [Barcoded Forms Service Java APIQuick Start (SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
-            + [Componenten en services Java APIQuick Start (SOAP)](/help/forms/developing/components-services-java-api-quick.md)
-            + [Java API QuickStart (SOAP) van PDF Service converteren](/help/forms/developing/convert-pdf-service-java-api.md)
-            + [Credential Service Java API QuickStart (SOAP)](/help/forms/developing/credential-service-java-api-quick.md)
-            + [Distiller Service Java API QuickStart (SOAP)](/help/forms/developing/distiller-service-java-api-quick.md)
-            + [DocConverter Service Java API QuickStart (SOAP)](/help/forms/developing/docconverter-service-java-api-quick.md)
-            + [Documentbeheerservice (verouderd) Java API Quick Start (SOAP)](/help/forms/developing/document-management-service-deprecated-java.md)
+            + [Barcoded Forms Service Java APIQuick Start(SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
+            + [Componenten en services Java APIQuick Start(SOAP)](/help/forms/developing/components-services-java-api-quick.md)
+            + [Java API QuickStart van PDF Service converteren (SOAP)](/help/forms/developing/convert-pdf-service-java-api.md)
+            + [Credential Service Java API QuickStart(SOAP)](/help/forms/developing/credential-service-java-api-quick.md)
+            + [Distiller Service Java API QuickStart(SOAP)](/help/forms/developing/distiller-service-java-api-quick.md)
+            + [DocConverter Service Java API QuickStart(SOAP)](/help/forms/developing/docconverter-service-java-api-quick.md)
+            + [Documentbeheerservice (afgekeurd)Java API Snel starten (SOAP)](/help/forms/developing/document-management-service-deprecated-java.md)
             + [JavaAPI Quick Start (SOAP) voor documentbeveiligingsservice](/help/forms/developing/document-security-service-java-api.md)
-            + [Encryption Service Java API QuickStart (SOAP)](/help/forms/developing/encryption-service-java-api-quick.md)
-            + [Java API QuickStart (SOAP) voor eindpuntregistratie](/help/forms/developing/endpoint-registry-java-api-quick.md)
+            + [Coderingsservice Java API QuickStart(SOAP)](/help/forms/developing/encryption-service-java-api-quick.md)
+            + [Java API QuickStart voor eindpuntregistratie (SOAP)](/help/forms/developing/endpoint-registry-java-api-quick.md)
             + [JavaAPI Quick Start (SOAP), service voor integratie van formuliergegevens](/help/forms/developing/form-data-integration-service-java.md)
             + [Forms Service API Quick Start](/help/forms/developing/forms-service-api-quick-starts.md)
-            + [Java API QuickStart (SOAP) voor PDF-service genereren](/help/forms/developing/generate-pdf-service-java-api.md)
+            + [Java API QuickStart voor PDF Service genereren (SOAP)](/help/forms/developing/generate-pdf-service-java-api.md)
             + [Snel aan de slag-API](/help/forms/developing/invocation-api-quick-starts.md)
             + [LiveCycleProcess Java API(SOAP)Snel starten](/help/forms/developing/livecycleprocess-java-api-soap-quick.md)
-            + [Java API voor uitvoerservice, snel starten (SOAP)](/help/forms/developing/output-service-java-api-quick.md)
+            + [Java API voor uitvoerservice - Snel starten (SOAP)](/help/forms/developing/output-service-java-api-quick.md)
             + [Java APIQuick Start (SOAP) van de PDF Utilities Service](/help/forms/developing/pdf-utilities-service-java-api.md)
             + [Repository Service API](/help/forms/developing/repository-service-api-quick-starts.md)
-            + [Java API QuickStart (SOAP) voor handtekeningservice](/help/forms/developing/signature-service-java-api-quick.md)
-            + [Java API QuickStart (SOAP) van Taakbeheerservice](/help/forms/developing/task-manager-service-java-api.md)
-            + [Java API Quick Start (SOAP) voor gebruikersbeheer](/help/forms/developing/user-manager-java-api-quick.md)
+            + [Handtekeningenservice Java API QuickStart(SOAP)](/help/forms/developing/signature-service-java-api-quick.md)
+            + [Taakbeheerservice Java API QuickStart(SOAP)](/help/forms/developing/task-manager-service-java-api.md)
+            + [Gebruikersbeheer Java API Snel starten (SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
             + [Java APIQuick Start (SOAP) XMP Utilities Service](/help/forms/developing/xmp-utilities-service-java-api.md)
          + AEM Forms aanroepen op JEE met API&#39;s {#invoking-aem-forms-jee-apis}
             + [AEM Forms aanroepen met REST-verzoeken](/help/forms/developing/invoking-aem-forms-using-rest.md)
@@ -1206,7 +1212,7 @@ ht-degree: 1%
       + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](/help/forms/developing/configure-server-cluster.md)
       + [Hashes genereren en werken met dynamische PDF forms](/help/forms/developing/hashing-forms.md)
       + [Gegevens doorgeven met WS-beveiligingskoppen](/help/forms/developing/passing-credentials.md)
-+ Inhoud en handel {#commerce}
++ Inhoud en Commerce {#commerce}
    + [Inleiding en overzicht](/help/commerce/cif/introduction.md)
    + [Opvallende wijzigingen in AEM inhoud en Commerce](/help/commerce/cif/changes.md)
    + Integraties {#integrations}
@@ -1215,7 +1221,7 @@ ht-degree: 1%
    + AEM Storefront {#storefront}
       + [Aan de slag](/help/commerce/cif/getting-started.md)
       + Authoring {#authoring}
-         + [Ervaringen in de handel](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
+         + [Commerce-ervaringen](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
          + [Product Cockpit](/help/commerce/cif/authoring/product-cockpit.md)
          + [Productgegevens verrijken met gekoppelde inhoud](/help/commerce/cif/authoring/enrich-product-associated-content.md)
          + [Product Recommendations](/help/commerce/cif/authoring/product-recommendations.md)
@@ -1256,7 +1262,7 @@ ht-degree: 1%
          + [Ontwikkeling met SAP-Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 + Edge Delivery Services {#edge-delivery-services}
    + [Aan de slag met Edge Delivery](/help/edge/overview.md)
-   + [Edge-levering gebruiken](/help/edge/using.md)
+   + [Edge Delivery gebruiken](/help/edge/using.md)
 + Koploos {#headless}
    + [AEM Headless Journeys](/help/journey-headless/overview.md)
    + AEM Headless Developer Journey {#developer}
@@ -1288,7 +1294,7 @@ ht-degree: 1%
       + [Vertaalaansluiting configureren](/help/journey-headless/translation/configure-connector.md)
       + [Vertaalregels configureren](/help/journey-headless/translation/translation-rules.md)
       + [Inhoud vertalen](/help/journey-headless/translation/translate-content.md)
-      + [Vertaalde inhoud publiceren](/help/journey-headless/translation/publish-content.md)
+      + [Vertaalde Publish-inhoud](/help/journey-headless/translation/publish-content.md)
    + [Wat is een documentatietraject?](/help/journey-documentation/home.md)
 + Implementatie {#implementing}
    + Ontwikkeling {#developing}
@@ -1307,7 +1313,7 @@ ht-degree: 1%
          + [Beveiliging](/help/sites-developing/security.md)
          + [Referentiematerialen](/help/sites-developing/reference-materials.md)
          + [Een volledig aanbevolen website maken (klassieke gebruikersinterface)](/help/sites-developing/website.md)
-         + [Ontwerpen en de Ontwerper (Klassieke UI)](/help/sites-developing/designer.md)
+         + [Ontwerpen en de Designer (Klassieke UI)](/help/sites-developing/designer.md)
          + [Migratie naar de aanraakinterface](/help/sites-developing/touch-ui-migration.md)
       + Platform {#platform}
          + [Sling Cheatsheet](/help/sites-developing/sling-cheatsheet.md)
@@ -1393,7 +1399,7 @@ ht-degree: 1%
             + [Inleiding](/help/sites-developing/headless/getting-started/introduction.md)
             + [Een configuratie maken](/help/sites-developing/headless/getting-started/create-configuration.md)
             + [Een inhoudsfragmentmodel maken](/help/sites-developing/headless/getting-started/create-content-model.md)
-            + [Een middelenmap maken](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+            + [Een Assets-map maken](/help/sites-developing/headless/getting-started/create-assets-folder.md)
             + [Een inhoudsfragment maken](/help/sites-developing/headless/getting-started/create-content-fragment.md)
             + [Inhoudsfragmenten openen en leveren](/help/sites-developing/headless/getting-started/create-api-request.md)
          + Inhoudsfragmenten{#content-fragments}
@@ -1560,9 +1566,9 @@ ht-degree: 1%
          + [Oak-query&#39;s en indexering](/help/sites-deploying/queries-and-indexing.md)
          + [Hoe te om AEM met TarMK Koude Reserve in werking te stellen](/help/sites-deploying/tarmk-cold-standby.md)
          + [RDBMS-ondersteuning in AEM 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
-         + [Indexering via de eiken-run-jar](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
-         + [Gebruiksscenario&#39;s voor indexeren van eikenrun.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
-         + [Probleemoplossing voor Oak-indexen](/help/sites-deploying/troubleshooting-oak-indexes.md)
+         + [Indexeren via de door Oak beheerde Jar](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
+         + [Oak-run.jar Indexing Use cases](/help/sites-deploying/oak-run-indexing-usecases.md)
+         + [Problemen met Oak-indexen oplossen](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Opteren in verzameling van samengevoegde verbruiksstatistieken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
          + [Problemen oplossen](/help/sites-deploying/troubleshooting.md)
       + AEM configureren {#configuring}
@@ -1583,7 +1589,7 @@ ht-degree: 1%
          + [Consistentie- en reiscontroles](/help/sites-deploying/consistency-check.md)
          + [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
          + [Optimalisatie van prestaties](/help/sites-deploying/configuring-performance.md)
-         + [Prestatiehandleiding voor middelen](/help/sites-deploying/assets-performance-sizing.md)
+         + [Assets Performance Guide](/help/sites-deploying/assets-performance-sizing.md)
          + [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
          + [Webconsole configureren](/help/sites-deploying/configuring-web-console.md)
       + Upgrade uitvoeren naar AEM 6.5 {#upgrading}
@@ -1595,9 +1601,9 @@ ht-degree: 1%
          + [Een op locatie uitgevoerde upgrade uitvoeren](/help/sites-deploying/in-place-upgrade.md)
          + [Offlineindexering gebruiken om de downtime tijdens een upgrade te verminderen](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
-         + [Het CRX2Oak-migratiehulpprogramma gebruiken](/help/sites-deploying/using-crx2oak.md)
+         + [CRX2Oak-migratiehulpprogramma gebruiken](/help/sites-deploying/using-crx2oak.md)
          + [Onderhoudstaken vóór upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Controles en probleemoplossing na upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Post-upgradecontroles en probleemoplossing](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Aangepast zoeken in Forms bijwerken](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Duurzame verbeteringen](/help/sites-deploying/sustainable-upgrades.md)
          + [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md)
@@ -1607,7 +1613,7 @@ ht-degree: 1%
          + [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md)
          + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
          + [Sites Repositoregeling Herstructurering AEM 6.5](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
-         + [Herstructurering van activa Bewaarinstelling in AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
+         + [Assets Repositoregeling Herstructurering in AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [Dynamic Media Repositoregeling Herstructurering in AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [Forms Repositoregeling Herstructurering in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
          + [Herstructurering van de opslagplaats van E-Commerce in AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)

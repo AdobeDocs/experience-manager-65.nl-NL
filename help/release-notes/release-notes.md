@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
 workflow-type: tm+mt
-source-wordcount: '3976'
+source-wordcount: '4047'
 ht-degree: 0%
 
 ---
@@ -52,8 +52,8 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
    * Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen de aangepaste functies.
 * **AutoTag-API voor PDF-toegankelijkheid**: AEM Forms op OSGi ondersteunt nu de nieuwe AutoTag-API om de PDF voor toegankelijkheidsstandaarden te verbeteren door tags toe te voegen: alinea&#39;s en lijsten. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
 * **16-bits PNG-ondersteuning**: De ImageToPDF-service van PDF Generator ondersteunt nu de conversie van PNG-bestanden met 16-bits kleurdiepte.
-* **Artefacten toepassen op afzonderlijke tekstblokken in XDP&#39;s**: In Forms Designer kunnen gebruikers nu instellingen configureren voor afzonderlijke tekstblokken in XDP-bestanden. Hierdoor kunt u de elementen beheren die in de resulterende PDF als artefacten worden behandeld. Deze elementen, zoals kop- en voetteksten, zijn toegankelijk voor ondersteunende hulpmiddelen. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
-* **AEM Forms Designer is gecertificeerd met `GB18030:2022` standaard**: Met de `GB18030:2022` -certificering. Forms Designer ondersteunt nu de tekenset Chinese Unicode waarmee u Chinese tekens kunt invoeren in alle bewerkbare velden en dialoogvensters.
+* **Artefacten toepassen op afzonderlijke tekstblokken in XDP&#39;s**: Met Forms Designer kunnen gebruikers nu instellingen configureren voor afzonderlijke tekstblokken in XDP-bestanden. Hierdoor kunt u de elementen beheren die in de resulterende PDF als artefacten worden behandeld. Deze elementen, zoals kop- en voetteksten, zijn toegankelijk voor ondersteunende hulpmiddelen. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
+* **AEM Forms Designer is gecertificeerd met `GB18030:2022` standaard**: Met de `GB18030:2022` -certificering. Forms Designer biedt nu ondersteuning voor de Chinese Unicode-tekenset waarmee u Chinese tekens kunt invoeren in alle bewerkbare velden en dialoogvensters.
 * **Ondersteuning voor WebToPDF-route in JEE Server**: De dienst van de PDF Generator steunt nu de route WebToPDF voor het omzetten van de dossiers van HTML naar de documenten van PDF op JEE, naast Webkit en WebCapture (Vensters slechts) routes. Hoewel de WebToPDF-route al beschikbaar is op OSGi, is deze nu uitgebreid naar JEE. Op zowel platforms JEE als OSGi, steunt de dienst van de PDF Generator de volgende routes over verschillende werkende systemen:
    * **Windows**: Webkit, WebCapture, WebToPDF
    * **Linux**: Webkit, WebToPDF
@@ -65,14 +65,14 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 Hier volgt een lijst met verbeteringen die zijn opgenomen in deze release:
 
-* Het IPTC-tabblad wordt nu ondersteund [!UICONTROL Alt Text] en [!UICONTROL Extended Description] tekstvelden. (ACTIVA-34918)
+* Het IPTC-tabblad wordt nu ondersteund [!UICONTROL Alt Text] en [!UICONTROL Extended Description] tekstvelden. (ASSETS-34918)
 
 #### Oplossingen voor toegankelijkheid
 
 Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
 
-* Als de verwerkingsstatus van een element is mislukt of Metagegevens zijn mislukt, werkt de interface voor bijschriften en audiotracks niet correct. (ACTIVA-37281)
-* Wanneer u metagegevens van middelen opslaat en deze probeert te bewerken, wordt de taalnaam niet weergegeven. (ACTIVA-37281)
+* Als de verwerkingsstatus van een element is mislukt of Metagegevens zijn mislukt, werkt de interface voor bijschriften en audiotracks niet correct. (ASSETS-37281)
+* Wanneer u metagegevens van middelen opslaat en deze probeert te bewerken, wordt de taalnaam niet weergegeven. (ASSETS-37281)
 
 <!-- ### [!DNL Forms]
 * A -->
@@ -151,17 +151,17 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
 
 ### [!DNL Assets]{#assets-6521}
 
-* Als een middel naar Brand Portal wordt gepubliceerd, blijft de publicatiestatus inconsistent. (ACTIVA-36807)
-* Elementen worden niet verwijderd wanneer u ze uit een instantie verwijdert via een API-aanroep. (ACTIVA-35131)
-* Wanneer u metagegevens probeert te importeren, kunt u een `question mark (?)` vervangt de invoeging van tekens in een andere taal dan het Engels.  (ACTIVA-35091)
-* Wanneer `dc:title` eigenschap wordt gebruikt bij een tekenreeks met het gegevenstype data, de structuur met de inhoud van de elementen werkt niet naar behoren na de installatie van Service Pack 6.5.19. (ACTIVA-34684)
-* Er wordt een fout weergegeven als de naam van een element een speciaal teken bevat. (ACTIVA-33248)
+* Als een middel naar Brand Portal wordt gepubliceerd, blijft de publicatiestatus inconsistent. (ASSETS-36807)
+* Assets wordt niet verwijderd wanneer u deze verwijdert uit een instantie die een API-aanroep gebruikt. (ASSETS-35131)
+* Wanneer u metagegevens probeert te importeren, kunt u een `question mark (?)` vervangt de invoeging van tekens in een andere taal dan het Engels.  (ASSETS-35091)
+* Wanneer `dc:title` eigenschap wordt gebruikt bij een tekenreeks met het gegevenstype data, de structuur met de inhoud van de elementen werkt niet naar behoren na de installatie van Service Pack 6.5.19. (ASSETS-34684)
+* Er wordt een fout weergegeven als de naam van een element een speciaal teken bevat. (ASSETS-33248)
 
 #### [!DNL Dynamic Media]{#assets-dm-6521}
 
-* In AEM 6.5.18 worden niet alle hotspots weergegeven die aan een element zijn toegevoegd wanneer u de hotspots bewerkt. Alle hotspots werken echter in een gepubliceerd middel, maar u kunt ze later niet bewerken als dat nodig is. (ACTIVA-33609)
-* De meest recente EPS-bestanden die worden geüpload, genereren geen miniaturen nadat ze opnieuw zijn verwerkt. (ACTIVA-32617)
-* Kies in Gereedschappen > Middelen > Dynamic Media Publication > Request Attributes tab de invoer `Width(px)` en `Height(px)` ziet er anders uit in het Spaans, Italiaans en Portugees. Voor deze locaties worden ze niet met elkaar uitgelijnd. (ACTIVA-31896)
+* In AEM 6.5.18 worden niet alle hotspots weergegeven die aan een element zijn toegevoegd wanneer u de hotspots bewerkt. Alle hotspots werken echter in een gepubliceerd middel, maar u kunt ze later niet bewerken als dat nodig is. (ASSETS-33609)
+* De meest recente EPS-bestanden die worden geüpload, genereren geen miniaturen nadat ze opnieuw zijn verwerkt. (ASSETS-32617)
+* In Gereedschappen > Assets > Dynamic Media Publish Setup > tabblad Request Attributes kunt u de invoer `Width(px)` en `Height(px)` ziet er anders uit in het Spaans, Italiaans en Portugees. Voor deze locaties worden ze niet met elkaar uitgelijnd. (ASSETS-31896)
 * Vanaf 1 mei 2024 beëindigde Adobe Dynamic Media de ondersteuning voor:
    * SSL (Secure Socket Layer) 2.0
    * SSL 3.0
@@ -186,7 +186,7 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
 
 #### [!DNL Adaptive Forms] {#forms-6520}
 
-* Wanneer een adaptief formulier van een Adobe Experience Manager-publicatie-instantie naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet in de workflow worden opgeslagen. (FORMS-14209)
+* Wanneer een adaptief formulier van een Adobe Experience Manager Publish-exemplaar naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet worden opgeslagen in de workflow. (FORMS-14209)
 * Wanneer een gebruiker klikt **Afdrukken naar PDF** op AEM Forms Service Pack 15 (6.5.15.0) op OSGi, ontbreekt de cliënt-zijbevestiging, is het duidelijk door de foutenmeldingen die in het venster van de Console van Hulpmiddelen van de Ontwikkelaar worden getoond. (FORMS-14029)
 * Wanneer een gebruiker een formulier indient op AEM 6.5 Forms Service Pack 17 (6.5.17.0), of Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0), werkt de vertaling van &quot;Dank-u&quot;berichten niet correct. De berichten worden echter correct vertaald in het woordenboek. (FORMS-13846)
 * Wanneer een gebruiker een voorbeeld weergeeft van een formulier met een Date-Picker-component, wordt het veld voor de datumkiezer verkeerd uitgelijnd op de andere formuliervelden. (FORMS-13763)
@@ -202,7 +202,7 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
    * Formuliervelden &quot;Vereist of verplicht&quot; zijn toegankelijk volgens de ANDI-standaard. (FORMS-13097)
 
 * Wanneer een gebruiker een formulier probeert weer te geven op de pagina die wordt geladen, wordt het formulier niet weergegeven. (FORMS-13594)
-* De component van het datuminvoerveld werkt niet correct in de compatibiliteitsmodus van Microsoft Edge in Internet Explorer. (FORMS-13170)
+* De datuminvoerveldcomponent werkt niet correct in Microsoft Edge in de compatibiliteitsmodus van Internet Explorer. (FORMS-13170)
 * Melding via e-mail met bijlage is niet verzonden wanneer de correctie voor [extra stappen om e-mail met gehechtheid te gebruiken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) wordt uitgevoerd op de server. (FORMS-14227)
 * In AEM Forms Workspace op Service Pack 18 (6.5.18.0), wanneer een gebruiker opmerkingen maakt over een geüpload document, wordt het documentbestand beschadigd. (FORMS-13735)
 * Op AEM Forms Service Pack 18 (6.5.18.0), of Service Pack 19 (6.5.19.0), of Service Pack 20 (6.5.20.0), wanneer een gebruiker probeert om naar een Aangepast Vorm van het zijpaneel te zoeken, ontbreekt het onderzoek. (FORMS-14117)
@@ -220,7 +220,7 @@ Hieronder volgt een lijst met toegankelijkheidsoplossingen in deze release:
 
 * Wanneer een gebruiker een nieuwe tabel toevoegt aan een bestaand formulier met AEM Forms Designer in de omgeving van AEM Forms Service Pack 19 (6.5.19.0), loopt de tabel vast. (LC-392/1978)
 * Wanneer een gebruiker een adaptief formulier rendert in een Linux®-omgeving, ontstaat er een extra ruimte tussen de veldcomponenten. (LC-3921957)
-* Wanneer een gebruiker een XTG-bestand met de Output Service converteert naar PostScript-indeling, treedt de fout op:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720)
+* Wanneer een gebruiker een XTG-bestand met de Output Service converteert naar de PostScript-indeling, treedt de fout op:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720)
 
   U lost het probleem als volgt op: controleer of de gegevens speciale tekens bevatten, zoals een ruimte met een breedte nul (0x200b). Indien ja, gebruik dan de markering door de markering toe te voegen `<behaviorOverride>patch-LC3921720:1</behaviorOverride>` in het XCI-bestand zoals aangegeven in [custom_xfa.xci](/help/forms/using/assets/custom_xfa.xci) bestand.
 
@@ -287,10 +287,10 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * In de redacteur van Malplaatjes, het tekstkoord *`No video available.`* is niet gelokaliseerd. (SITES-13190)
 * Tekenreeks na activering of deactivering van een gebruiker wordt niet gelokaliseerd in **Gereedschappen** > **Beveiliging** > **Gebruikers** > *any_user_name* > **Activeren** > **OK** en selecteert u *any_user_name* > **Deactiveren** > **OK**. (NPR-41737)
 
-#### Eik {#foundation-oak-6521}
+#### Oak {#foundation-oak-6521}
 
 * Prestatiegregressiereparatie - Vermijd bereikquery&#39;s in vergelijkbare omstandigheden. (OAK-9481)
-* De nieuwe eik-versie is 1.2.20.
+* De nieuwe Oak-versie is 1.2.20.
 
 #### Platform{#foundation-platform-6521}
 
@@ -442,7 +442,7 @@ Zie [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
-* **Verwant aan eikenhout**
+* **Verwant aan Oak**
 Van Service Pack 13 en hierboven, is het volgende foutenlogboek begonnen te verschijnen dat het persistentiegeheime voorgeheugen beïnvloedt:
 
   ```shell
@@ -468,7 +468,7 @@ Van Service Pack 13 en hierboven, is het volgende foutenlogboek begonnen te vers
       * `cache`
       * `diff-cache`
 
-   1. Installeer het Service Pack of start de Experience Manager as a Cloud Service opnieuw.
+   1. Installeer het Service Pack of start Experience Manager as a Cloud Service opnieuw.
 Nieuwe mappen van `cache` en `diff-cache` automatisch worden gemaakt en er is geen uitzondering meer die betrekking heeft op `mvstore` in de `error.log`.
 
 * Werk uw GraphQL-query&#39;s bij die mogelijk een aangepaste API-naam voor uw inhoudsmodel hebben gebruikt om in plaats daarvan de standaardnaam van het inhoudsmodel te gebruiken.
@@ -508,7 +508,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 * Gebruikers kunnen de naam wijzigen van een map in een hiërarchie in [!DNL Assets] en publiceer een geneste map naar [!DNL Brand Portal]. De maptitel wordt echter niet bijgewerkt in [!DNL Brand Portal] totdat de hoofdmap opnieuw wordt gepubliceerd.
 
 * De volgende fouten en waarschuwingsberichten kunnen tijdens de installatie van [!DNL Experience Manager] 6.5.x.x:
-   * &quot;Wanneer de Adobe Target-integratie is geconfigureerd in [!DNL Experience Manager] Als u de standaard-API (IMS-verificatie) van het doel gebruikt, leidt het exporteren van ervaringsfragmenten naar Doel tot onjuiste aanbiedingstypen die worden gemaakt. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/bron &quot;Adobe Target Classic&quot;.
+   * &quot;Wanneer de Adobe Target-integratie is geconfigureerd in [!DNL Experience Manager] Als u de Target Standard API (IMS-verificatie) gebruikt en vervolgens Experience Fragments naar Target exporteert, ontstaan onjuiste aanbiedingstypen die worden gemaakt. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/bron &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Geen onderhoudsvensters gevonden op `granite/operations/maintenance`.
    * De validatie aan de adaptieve formulierserver-side mislukt wanneer statistische functies zoals SUM, MAX en MIN worden gebruikt (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` : Geen onderhoudsvensters gevonden op `granite/operations/maintenance`.
@@ -543,6 +543,10 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 * Als een gebruiker een voorvertoning probeert te bekijken van een conceptbrief met opgeslagen XML-gegevens, blijft deze vastzitten in `Loading` staat voor sommige specifieke letters. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-14521)
 
 * Na de upgrade naar AEM Forms Service Pack 6.5.21.0 wordt de `PaperCapture` De service kan geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (CQDOC-21680)
+
+* Wanneer gebruikers van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0) of AEM 6.5 Forms Service Pack 21 (6.5.21.0) bijwerken, ontmoeten de gebruikers een JSP fout, die verhindert hen om adaptieve formulieren te openen of te creëren en veroorzaakt ook fouten met andere AEM interfaces zoals de paginaredacteur, AEM Forms UI, en AEM de redacteur van het Werkschema. (FORMS-15256)
+
+
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

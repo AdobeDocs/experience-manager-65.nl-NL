@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
+source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
@@ -140,12 +140,9 @@ Navigeer naar de juiste map en van een shell en type `./aem65_cfp_install.bin`.
 
 +++
 
-+++5. Installeer het serverfragment (AEM Service Pack 6.5.14.0 of eerder) (**Verplichte installatie**)
++++5. Installeer het serverfragment als dit niet is geïnstalleerd (**Verplichte stap**)
 
->[!NOTE]
->
-> * Als u een upgrade uitvoert van **AEM Service Pack 6.5.15.0**, de installatie van de **servlet-fragment** is niet vereist. Voor versies **AEM Service Pack 6.5.14.0** of eerder, **verplicht te installeren** het servletfragment.
-
+<!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 U kunt als volgt het serverfragment downloaden en installeren:
 
@@ -209,7 +206,7 @@ Het pakket wordt automatisch geïnstalleerd.
 
 +++1. Maak back-ups van uw bestaande omgeving
 
-1. Maak een back-up van uw [CRX Repository en Databaseschema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Maak een back-up van uw [CRX Repository and Database Schema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
 >[!NOTE]
 >

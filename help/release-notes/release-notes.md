@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
+source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
 workflow-type: tm+mt
-source-wordcount: '4047'
+source-wordcount: '4076'
 ht-degree: 0%
 
 ---
@@ -546,7 +546,10 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
 * Wanneer gebruikers van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0) of AEM 6.5 Forms Service Pack 21 (6.5.21.0) bijwerken, ontmoeten de gebruikers een JSP fout, die verhindert hen om adaptieve formulieren te openen of te creëren en veroorzaakt ook fouten met andere AEM interfaces zoals de paginaredacteur, AEM Forms UI, en AEM de redacteur van het Werkschema. (FORMS-15256)
 
-
+  Voer de volgende stappen uit om een dergelijk probleem op te lossen:
+   1. Ga naar de map `/libs/fd/aemforms/install/` in CRXDE.
+   1. De bundel met de naam verwijderen `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. Start de AEM server opnieuw.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

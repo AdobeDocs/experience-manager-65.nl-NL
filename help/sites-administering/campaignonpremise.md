@@ -9,9 +9,9 @@ exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,10 @@ Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt 
 
 1. Selecteer de aangewezen veiligheidsstreek en bepaal zonodig het vertrouwde op IP masker.
 
+   >[!CAUTION]
+   >
+   >De te configureren beveiligingszone is **Netwerk van het privé bedrijf (VPN+LAN)**.
+
 1. Klikken **Opslaan**.
 
 1. Afmelden bij de Adobe Campaign-client.
@@ -155,7 +159,7 @@ AEM kan nu communiceren met Adobe Campaign.
 >
 >Zorg ervoor dat uw Adobe Campaign-server via internet bereikbaar is. AEM heeft geen toegang tot particuliere netwerken.
 
-## Replicatie configureren voor AEM publicatie-instantie {#replication}
+## Replicatie configureren naar AEM Publish-instantie {#replication}
 
 Campagne-inhoud wordt gemaakt door de auteurs van de inhoud op de AEM ontwerpinstantie. Dit exemplaar is typisch slechts intern beschikbaar bij uw organisatie. Als u inhoud, zoals afbeeldingen en elementen, toegankelijk wilt maken voor de ontvangers van uw campagne, moet u die inhoud publiceren.
 

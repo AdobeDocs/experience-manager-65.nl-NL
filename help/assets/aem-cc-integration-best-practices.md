@@ -8,7 +8,7 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a144f7cc75b1a5cdb45d2aaf90e87013ac68a431
 workflow-type: tm+mt
 source-wordcount: '3173'
 ht-degree: 9%
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices.html?lang=en) |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6,5 | Dit artikel |
 
 [!DNL Adobe Experience Manager Assets] is een DAM-oplossing (Digital Asset Management) die kan worden geïntegreerd met [!DNL Adobe Creative Cloud] om DAM-gebruikers te helpen samen te werken met creatieve teams en de samenwerking bij het maken van inhoud te stroomlijnen.
@@ -32,7 +32,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 >
 >[!DNL Experience Manager] tot [!DNL Creative Cloud] het delen van mappen is vervangen en wordt niet meer behandeld in deze handleiding. Adobe raadt aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager-bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) creatieve gebruikers toegang bieden tot middelen die worden beheerd in [!DNL Experience Manager].
 
-## De behoeften van de samenwerking van creatieven, verkopers, en gebruikers DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
+## Collaboration-behoeften van creatieve, marketers- en DAM-gebruikers {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | Vereisten | Hoofdletters gebruiken | Betrokken oppervlakken |
 |---|---|---|
@@ -71,7 +71,7 @@ Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerk
 | Uploaden - meerdere bestanden / hiërarchische mapstructuren | Nee | Ja | [Uploaden via webinterface](manage-assets.md#uploading-assets) of via aangepaste scripts of gereedschappen. |
 | Diverse - gebruiker en aanmelding | Gebruikers van Creatives Cloud die zich hebben aangemeld bij de desktop-app van het Creative Cloud, worden herkend (SSO) | [!DNL Experience Manager] gebruiker en gebruikersgegevens | Gebruikers van beide oplossingen tellen mee voor de [!DNL Experience Manager] gebruikersquota. |
 | Diverse - netwerk en toegang | Toegang van bureaublad van gebruiker tot [!DNL Experience Manager] implementatie via netwerk | Toegang van bureaublad van gebruiker tot [!DNL Experience Manager] implementatie via netwerk | [!DNL Adobe Asset Link] deelt geen milieu van de netwerkvolmacht. |
-| Misc - Grote aantallen activa migreren | Nee | Nee | [Richtlijnen voor migratie van middelen](assets-migration-guide.md) |
+| Misc - Grote aantallen activa migreren | Nee | Nee | [Assets-migratiegids](assets-migration-guide.md) |
 
 Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden overwogen:
 
@@ -144,14 +144,14 @@ Vaak is het niet wenselijk om alle elementen en updates op te slaan. Bijvoorbeel
 
 Creatieve teams (en organisaties) zijn gewoonlijk niet geïnteresseerd in het opslaan van middelen in elke fase van de levenscyclus van de middelen. In de volgende gevallen worden bijvoorbeeld geen elementen opgeslagen:
 
-* Activa die nog moeten worden afgerond of die moeten worden getest.
-* Middelen die de beoordelingscyclus van het creatieve/interne team niet doorstaan.
+* Assets dat nog moet worden afgerond of moet worden getest.
+* Assets die de beoordelingscyclus voor creatieve/interne teams niet doorstaat.
 * Vergeleken met de middelen in kwestie, heeft het team betere kandidaten om hun werk aan externe teams te vertegenwoordigen.
 
 Gewoonlijk worden de volgende klassenelementen opgeslagen in DAM:
 
-* Activa die een bepaalde looptijd hebben bereikt en die als gereed worden beschouwd om te worden gedeeld.
-* Elementen die vooraf zijn geselecteerd door het creatieve team.
+* Assets dat een bepaalde rijpheid heeft bereikt en dat klaar wordt geacht om te worden gedeeld.
+* Assets die door het creatieve team zijn geselecteerd.
 * Specifieke activaformaten die door marketing, afhankelijk van een specifiek contract of een overeenkomst (bijvoorbeeld, JPG dossiers die van RAW dossiers, TIFF/beelden van PSD originelen worden omgezet worden gebruikt of worden gevraagd).
 
 #### Wanneer updates van elementen worden opgeslagen in DAM {#when-updates-to-assets-are-stored-in-dam}

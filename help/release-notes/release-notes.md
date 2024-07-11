@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
-source-wordcount: '4076'
+source-wordcount: '4309'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,17 @@ ht-degree: 0%
 Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * **Ondersteuning voor Oauth Credentials**: Een nieuw en gebruiksvriendelijker referentie voor server-aan-server authentificatie, die de bestaande referentie van de Rekening van de Dienst (JWT) vervangt. (NPR-41994)
-* **Verbeteringen in de regeleditor in AEM Forms**:
+* [Verbeteringen in de regeleditor in AEM Forms](/help/forms/using/rule-editor-core-components.md):
    * Ondersteuning voor de implementatie van geneste voorwaarden met `When-then-else` functionaliteit.
    * Valideer of stel panelen en formulieren, met inbegrip van gebieden opnieuw in.
    * Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen de aangepaste functies.
-* **AutoTag-API voor PDF-toegankelijkheid**: AEM Forms op OSGi ondersteunt nu de nieuwe AutoTag-API om de PDF voor toegankelijkheidsstandaarden te verbeteren door tags toe te voegen: alinea&#39;s en lijsten. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
+* [AutoTag-API voor PDF-toegankelijkheid](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms op OSGi ondersteunt nu de nieuwe AutoTag-API om de PDF voor toegankelijkheidsstandaarden te verbeteren door tags toe te voegen: alinea&#39;s en lijsten. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
 * **16-bits PNG-ondersteuning**: De ImageToPDF-service van PDF Generator ondersteunt nu de conversie van PNG-bestanden met 16-bits kleurdiepte.
 * **Artefacten toepassen op afzonderlijke tekstblokken in XDP&#39;s**: Met Forms Designer kunnen gebruikers nu instellingen configureren voor afzonderlijke tekstblokken in XDP-bestanden. Hierdoor kunt u de elementen beheren die in de resulterende PDF als artefacten worden behandeld. Deze elementen, zoals kop- en voetteksten, zijn toegankelijk voor ondersteunende hulpmiddelen. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
 * **AEM Forms Designer is gecertificeerd met `GB18030:2022` standaard**: Met de `GB18030:2022` -certificering. Forms Designer biedt nu ondersteuning voor de Chinese Unicode-tekenset waarmee u Chinese tekens kunt invoeren in alle bewerkbare velden en dialoogvensters.
-* **Ondersteuning voor WebToPDF-route in JEE Server**: De dienst van de PDF Generator steunt nu de route WebToPDF voor het omzetten van de dossiers van HTML naar de documenten van PDF op JEE, naast Webkit en WebCapture (Vensters slechts) routes. Hoewel de WebToPDF-route al beschikbaar is op OSGi, is deze nu uitgebreid naar JEE. Op zowel platforms JEE als OSGi, steunt de dienst van de PDF Generator de volgende routes over verschillende werkende systemen:
+* [Ondersteuning voor WebToPDF-route in JEE Server](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) het gebruiken van de dienst van de PDF Generator steunt nu de route WebToPDF voor het omzetten van HTML- dossiers in de documenten van PDF op JEE, naast de bestaande routes Webkit en WebCapture (Vensters slechts). De WebToPDF-route is al beschikbaar op OSGi en uitgebreid naar JEE. Nu, op zowel platforms JEE als OSGi, steunt de dienst van de PDF Generator de volgende routes over verschillende werkende systemen:
    * **Windows**: Webkit, WebCapture, WebToPDF
-   * **Linux**: Webkit, WebToPDF
-
+   * **Linux®**: Webkit, WebToPDF
 
 ### [!DNL Assets]
 
@@ -515,7 +514,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
    * De hotspot in een interactieve Dynamic Media-afbeelding is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Time-out bij wachten op wijziging register is niet-geregistreerd.
 
-* Vanaf AEM 6.5.15 wordt de Rhino JavaScript Engine geleverd door de ```org.apache.servicemix.bundles.rhino``` bundle heeft een nieuw hoistinggedrag. Scripts die de strikte modus gebruiken (```use strict;```) moeten de juiste variabelen aangeven. Anders worden ze niet uitgevoerd en wordt er een runtimefout gegenereerd.
+* Met ingang van AEM 6.5.15 wordt de door de ```org.apache.servicemix.bundles.rhino``` bundle heeft een nieuw hoistinggedrag. Scripts die de strikte modus gebruiken (```use strict;```) moeten de juiste variabelen aangeven. Anders worden ze niet uitgevoerd en wordt er een runtimefout gegenereerd.
 
 * Als u labelen van verwant kant-en-klare inhoud via een officieel updatepakket installeert, wordt de eigenschap languages van het deelvenster `/content/cq:tags` node to default. Deze actie is waar voor de Packs van de Dienst, de Pakketten van de Dienst van de Veiligheid, de Uitgebreide Packs van de Eigenschap, de Cumulatieve Packs van de Eigenschap, de flarden, etc. Daarom is het noodzakelijk om het uit de eigenschappen vóór installatie toe te voegen.
 
@@ -550,6 +549,13 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
    1. Ga naar de map `/libs/fd/aemforms/install/` in CRXDE.
    1. De bundel met de naam verwijderen `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Start de AEM server opnieuw.
+
+* Wanneer een gebruiker aan AEM Forms Service Pack 20 (6.5.20.0) op de server JEE bijwerkt en PDF gebruikend outputdiensten produceert, geven de PDF met toegankelijkheidskwesties terug. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3922112)
+* Wanneer een gebruiker Gelabelde PDF gebruikend de outputdienst op JEE produceert, toont het &quot;Onjuiste structuurwaarschuwing&quot;. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2038)
+* Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2017)
+* Wanneer een gebruiker in een Linux-omgeving een adaptief formulier (op JEE) in HTML rendert, wordt het formulier niet correct weergegeven. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921957)
+* Wanneer een gebruiker een XTG-bestand in PostScript-indeling converteert met de Output Service op AEM Forms JEE, treedt de fout op: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921720)
+* Na de upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server, kan een gebruiker een formulier niet verzenden en kunnen er geen HTML of PDF forms en XMLFM-crashes worden weergegeven. Raadpleeg de [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921718)
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

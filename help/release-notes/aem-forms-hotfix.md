@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,23 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <td><strong>Datum</strong></td>
     <td><strong>Hotfix-downloadkoppeling (AEM koppeling voor softwaredistributie)</strong></td>
     <td><strong>Opgeloste problemen</strong></td>
+  </tr>
+  <tr>
+    <td>10 juli 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">Hotfix voor AEM Service Pack 6.5.21.0 op Vensters voor server JBoss JEE </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">Hotfix voor AEM Service Pack 6.5.21.0 op Linux voor JBoss JEE-server </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Hotfix voor AEM Service Pack 6.5.21.0 op Vensters voor de server van de JEE van Webampère </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz">Hotfix voor AEM Service Pack 6.5.21.0 op Linux voor de server van de JEE van Webampère</a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">Hotfix voor AEM Service Pack 6.5.21.0 op Windows for Weblogic JEE-server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz">Hotfix voor AEM Service Pack 6.5.21.0 op Linux for Weblogic JEE-server</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul><li>Wanneer een gebruiker aan AEM Forms Service Pack 20 (6.5.20.0) op de server JEE bijwerkt en PDF gebruikend outputdiensten produceert, geven de PDF met toegankelijkheidskwesties terug. (LC-3922112)</li><li>Op gelabelde PDF die zijn gegenereerd met de uitvoerservice op AEM Forms JEE, wordt "Onjuiste structuurwaarschuwing" weergegeven. (LC-392/2038)</li><li>Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. (LC-392/2017)</li><li>Wanneer een gebruiker in een Linux-omgeving een adaptief formulier (op JEE) in HTML rendert, wordt het formulier niet correct weergegeven. (LC-3921957)</li><li>Wanneer een gebruiker een XTG-bestand naar PostScript-indeling converteert met de Output Service op AEM Forms JEE, mislukt het bestand met de fout: AEM_OUT_001_003: Onverwachte uitzondering: PAExecute failure: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Na de upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server, kan een gebruiker een formulier niet verzenden en kunnen er geen HTML of PDF forms en XMLFM-crashes worden weergegeven. (LC-3921718)
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>21 juni 2024</td>
@@ -72,7 +89,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <li>In een adaptief formulier dat is gebaseerd op een XDP met ingesloten scripts in selectievakjes, worden de scripts niet uitgevoerd voor elementen na dergelijke selectievakjes. Er is een hotfix beschikbaar voor dit probleem. (FORMS-14244) </li>
      <li> Rijen in de datumkiezer-widget worden afgebroken tijdens het doorlopen van maanden in de pop-upwidget voor velden met het bewerkings-/weergavepatroon. Er is een hotfix beschikbaar voor dit probleem. (FORMS-13620) </li>
      <li>Formulierverzendingen mislukken wanneer wordt geprobeerd de DOR-service (Document of Record) op de achtergrond te gebruiken. Het foutbericht dat wordt aangetroffen, is: "Handeling verzenden kan niet worden voltooid omdat de formulierbron niet correct is toegewezen." (FORMS-13798) </li>
-     <li>Wanneer een adaptief formulier van een Adobe Experience Manager-publicatie-instantie naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet in de workflow worden opgeslagen.  (FORMS-14209) </li>
+     <li>Wanneer een adaptief formulier van een Adobe Experience Manager Publish-exemplaar naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet worden opgeslagen in de workflow.  (FORMS-14209) </li>
      <li> Bij het installeren van AEM 6.5 Forms Service Pack 20-pakket (AEM Forms add-on pakket voor SP20), vertoont de AEM Sites-gebruikersinterface (UI) een aanzienlijke verslechtering van de prestaties.  (FORMS-13791) </li>
      <li>De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)</li>
     </ul>

@@ -21,26 +21,28 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Met de [accountinstellingen](#account-settings) en [gebruikersvoorkeuren](#user-preferences) de volgende opties en voorkeuren kunnen worden gedefinieerd :
+Gebruikend de [ rekeningsmontages ](#account-settings) en [ gebruikersvoorkeur ](#user-preferences) kunnen de volgende opties en de voorkeur worden bepaald:
 
-* **Werkbalk Bewerken**
-Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen** knoppen voor gebruik met de alineacomponenten op die pagina:
+* **het Uitgeven Toolbar**
+Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze toolbar, die bij de bovenkant van het browser venster wordt getoond, geeft u **Exemplaar**, **Besnoeiing**, **Deeg**, **schrap** knopen voor het gebruiken met de paragraafcomponenten op die pagina:
 
    * Weergeven indien nodig (standaard)
    * Altijd tonen
    * Verborgen houden
 
-* **Imiteren als**
-De functionaliteit van [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) Hiermee kan een gebruiker namens een andere gebruiker werken.
+* **impersonate als**
+De functionaliteit van [ imiteert als ](/help/sites-administering/security.md#impersonating-another-user) laat een gebruikerswerk namens een andere gebruiker.
 
 * **Taal**
 De taal die voor UI van het auteursmilieu moet worden gebruikt. Selecteer de gewenste taal in de beschikbare lijst.
 
-* **Vensterbeheer**
+* **Beheer van het Venster**
 Selecteer een van de volgende opties:
 
-   * Meerdere Windows-pagina&#39;s (standaard) worden geopend in een nieuw venster.
-   * Enkele vensterpagina&#39;s worden geopend in het huidige venster.
+   * Meerdere vensters (standaard)
+Pagina&#39;s worden geopend in een nieuw venster.
+   * Eén venster
+Pagina&#39;s worden geopend in het huidige venster.
 
 ## Accountinstellingen {#account-settings}
 
@@ -51,14 +53,14 @@ Met het gebruikerspictogram hebt u toegang tot de volgende opties:
 * [Gebruikersvoorkeuren](#user-preferences)
 * [Melding in vak](/help/sites-classic-ui-authoring/author-env-inbox.md)
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![ chlimage_1-122 ](assets/chlimage_1-122.png)
 
 ### Gebruikersvoorkeuren {#user-preferences}
 
-Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen. Dit is beschikbaar via de **Voorkeuren** in de rechterbovenhoek van de consoles.
+Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen. Dit is beschikbaar van het **de dialoogvakje van de Voorkeur** in de hoger-juiste hoek van de consoles.
 
-![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
+![ screen_shot_2012-02-08at105033am ](assets/screen_shot_2012-02-08at105033am.png)
 
 Het dialoogvenster bevat de volgende opties:
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![ chlimage_1-123 ](assets/chlimage_1-123.png)

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Dit zijn sommige dingen om te overwegen wanneer het runnen van de Console van het Beleid:
 
-* Als u tot beleidsconsole toegang hebt gebruikend URL `https://[hostname]:'port'/adminui`, mag de opgegeven hostnaam geen onderstrepingstekens bevatten. Anders, werken de verbindingen aan sommige gebieden van de beleidsconsole misschien niet behoorlijk.
+* Als u beheerconsole opent met de URL `https://[hostname]:'port'/adminui` , mag de opgegeven hostnaam geen onderstrepingstekens bevatten. Anders, werken de verbindingen aan sommige gebieden van de beleidsconsole misschien niet behoorlijk.
 * Als u een beleidsconsole in de Ontdekkingsreiziger van Vensters op Japans OS in werking stelt, kunt u deze problemen ontmoeten:
 
    * Als u op een koppeling klikt, keert u terug naar de aanmeldingspagina in plaats van naar de verwachte koppeling.

@@ -17,15 +17,15 @@ ht-degree: 0%
 
 # Een adaptief formulier of interactieve communicatie insluiten in AEM Sites-toepassing voor één pagina{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
 Met AEM Forms kunnen ontwikkelaars van formulieren adaptieve formulieren en interactieve communicatie naadloos insluiten in een AEM Sites Single Page Application (SPA). Het ingesloten adaptieve formulier en de interactieve communicatie zijn volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd communiceren met het adaptieve formulier of de interactieve communicatie.
 
-In AEM Sites-toepassing voor één pagina kunt u een adaptief formulier of interactieve communicatie toevoegen met de opdracht [AEM Forms SPA Containercomponent](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Het is een AEM Forms-component voor AEM Sites-SPA die u kunt toevoegen aan uw sitepagina.
+In de Toepassing van de Enige Pagina van AEM Sites, kunt u een adaptieve vorm of een Interactieve Mededeling toevoegen gebruikend de [ component van de SPAContainer van AEM Forms ](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Het is een AEM Forms-component voor AEM Sites-SPA die u kunt toevoegen aan uw sitepagina.
 
-Voor informatie over het insluiten van een adaptief formulier in een niet-SPA AEM Sites raadpleegt u [Een adaptief formulier of interactieve communicatie insluiten in een AEM Sites-pagina](/help/forms/using/embed-adaptive-form-aem-sites.md).
+Voor informatie over het inbedden van een adaptieve vorm in een niet-SPA AEM Sites, zie [ een adaptieve vorm of interactieve mededeling in de pagina van AEM Sites ](/help/forms/using/embed-adaptive-form-aem-sites.md) inbedden.
 
 ## Vereisten {#prerequisites}
 
@@ -34,19 +34,19 @@ Als u een adaptief formulier of interactieve communicatie wilt insluiten in AEM 
 * Java SE Development Kit 8 of hoger
 * Apache Maven 3.3.1 of hoger
 * AEM
-* [AEM Forms 6.4.2-invoegtoepassing](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op instantie van auteur
+* [ AEM Forms 6.4.2 toe:voegen-op pakket ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op auteursinstantie
 
 ## AEM Forms SPA Container-component installeren {#install-aem-forms-spa-container-component}
 
 Voer de volgende stappen uit om de AEM Forms SPA Container-component te installeren:
 
-1. [De AEM Forms-component klonen of downloaden voor SPA](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa).
-1. Installeer de AEM Forms-component voor SPA. De instructies voor het installeren van de component zijn beschikbaar in het dialoogvenster [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component) bestand.
+1. [ Kloon of download de component van AEM Forms voor SPA ](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa).
+1. Installeer de AEM Forms-component voor SPA. De instructies om de component te installeren zijn beschikbaar in het {](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component) dossier 0} README.md.[
 
-   De component bevat een [sample React component](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) die kunnen worden gebruikt om SPA containercomponent met een React-Gebaseerd SPA project te integreren.
+   De component omvat de component van het a [ steekproefReact ](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) die kan worden gebruikt om SPA containercomponent met een React-Gebaseerd SPA project te integreren.
 
-1. [Klonen of een React-gebaseerd SPA project downloaden](https://github.com/adobe/aem-sample-we-retail-journal).
-1. Integreer SPA containercomponent met een React-gebaseerd SPA project gebruikend de instructies beschikbaar in [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) bestand.
+1. [ Kloon of download een React-Gebaseerd SPA project ](https://github.com/adobe/aem-sample-we-retail-journal).
+1. Integreer SPA containercomponent met een React-Gebaseerd SPA project gebruikend de instructies beschikbaar in het {](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) dossier 0} README.md.[
 
    Nadat u de AEM Forms SPA Container-component hebt geïnstalleerd en de component hebt geïntegreerd met een React-gebaseerd SPA-project, kunt u adaptieve formulieren en interactieve communicatie insluiten in de AEM Sites-pagina.
 
@@ -55,30 +55,30 @@ Voer de volgende stappen uit om de AEM Forms SPA Container-component te installe
 Een adaptief formulier of interactieve communicatie insluiten met AEM Forms for SPA Container-component:
 
 1. Open de pagina AEM sites in de bewerkingsmodus waarin u een adaptief formulier of interactieve communicatie wilt insluiten.
-1. Voeg de **AEM formulier voor SPA** op de pagina met een van de volgende opties:
+1. Voeg het **AEM Vorm voor SPA** component op de pagina in gebruikend om het even welke volgende opties:
 
-   * Selecteer de lay-outcontainer op de pagina van Plaatsen, selecteer **+** en selecteert u de **AEM formulier voor SPA** component.
+   * Selecteer de lay-outcontainer op de pagina van Plaatsen, selecteer **+** en selecteer de **Vorm voor SPA** component AEM.
 
-   * Sleep vanuit het deelvenster Componentbrowser de **AEM formulier voor SPA** op de pagina.
-   * Zoek een adaptief formulier of interactieve communicatie in de middelenbrowser en sleep het naar de sitepagina. Het formulier wordt ingesloten in een AEM Forms voor SPA componentcontainer.
+   * Van het browser paneel van de Component, sleep-dalings de **Vorm voor SPA** component op de pagina.
+   * Zoek een adaptief formulier of interactieve communicatie in de Assets-browser en sleep het naar de Sites-pagina. Het formulier wordt ingesloten in een AEM Forms voor SPA componentcontainer.
 
    >[!NOTE]
    >
    >Het weergeven van meerdere AEM Forms SPA Container-componenten op een pagina wordt niet ondersteund. U kunt meerdere AEM Forms SPA Container op een pagina plaatsen, maar er wordt slechts één component tegelijk gerenderd. Zorg ervoor dat slechts één component zichtbaar is op een pagina om discrepanties te voorkomen.
 
-1. Selecteer de ingesloten AEM Forms SPA Container-component op de sitepagina en selecteer vervolgens ![settings_icon](assets/settings_icon.png) op de actiebalk. De **AEM Forms SPA-container bewerken** wordt geopend.
-1. In de **AEM Forms-container bewerken** geeft u het volgende op:
+1. Selecteer de ingebedde component van de Container van AEM Forms SPA in de plaatspagina, en selecteer dan ![ settings_icon ](assets/settings_icon.png) op de actiebar. Het **geeft de SPAContainer van AEM Forms uit** dialoog opent.
+1. In **geef de Container van AEM Forms** dialoog uit, specificeer het volgende:
 
-   * **Type element:** Selecteer het type element dat u wilt insluiten. De opties zijn **Adaptief formulier** en **Interactieve communicatie**
+   * **Type van Activa:** selecteer het type van activa om in te bedden. De opties zijn **Aangepaste Vorm** en **Interactieve Communicatie**
 
-   * **Middelpad**: Blader en selecteer het adaptieve formulier of de interactieve communicatie die u wilt insluiten. Het veld wordt automatisch ingevuld als een adaptief formulier of interactieve communicatie wordt ingevoegd met de middelenbrowser.
-   * **Kanaal** (Alleen interactieve communicatie): selecteer het type interactief kanaal dat u wilt insluiten. De opties zijn **Webkanaal** en **Afdrukkanaal**.
+   * **Weg van Activa**: doorblader en selecteer de adaptieve vorm of de Interactieve Communicatie om in te bedden. Het veld wordt automatisch ingevuld als een adaptief formulier of interactieve communicatie wordt ingevoegd via de Assets-browser.
+   * **Kanaal** (Interactieve Communicatie slechts): Selecteer het type van interactief kanaal om in te bedden. De opties zijn **Kanaal van het Web** en **Kanaal van de Druk**.
 
-   * **Thema**: Selecteer een thema waarmee u opmaak definieert voor componenten van uw adaptieve formulier of Interactieve communicatie. Stijlen omvat vormgevingseigenschappen zoals letterstijl, achtergrondkleur, afmetingen en uitlijning.
+   * **Thema**: Selecteer een thema dat het stileren voor componenten van uw adaptieve vorm of Interactieve Communicatie bepaalt. Stijlen omvat vormgevingseigenschappen zoals letterstijl, achtergrondkleur, afmetingen en uitlijning.
 
-1. Selecteren ![done_icon](assets/done_icon.png) om de instellingen op te slaan. Het adaptieve formulier of de interactieve communicatie is nu ingesloten in de pagina.
+1. Selecteer ![ done_icon ](assets/done_icon.png) om de montages te bewaren. Het adaptieve formulier of de interactieve communicatie is nu ingesloten in de pagina.
 
-## Ingesloten adaptief formulier en interactieve communicatie publiceren {#publish-embedded-adaptive-form-and-interactive-communication}
+## Ingesloten adaptief formulier voor Publish en interactieve communicatie {#publish-embedded-adaptive-form-and-interactive-communication}
 
 Overweeg de volgende scenario&#39;s voor het publiceren van een ingesloten element (adaptief formulier of interactieve communicatie) op de AEM Sites-pagina:
 
@@ -93,7 +93,7 @@ AEM sitepagina bevat een verwijzing naar het adaptieve formulier en de interacti
 Voer een van de volgende handelingen uit als u een configuratie of eigenschap van het ingesloten adaptieve formulier en interactieve communicatie wilt wijzigen.
 
 * Open het oorspronkelijke formulier in adaptieve formulieren of Interactieve communicatie in de respectievelijke editors en wijzig deze.
-* Selecteer het adaptieve formulier of de interactieve communicatie vanuit de sitepagina in de bewerkingsmodus en selecteer **Bewerken in een nieuw venster**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus.
+* Selecteer de adaptieve vorm of de Interactieve Communicatie van binnen de pagina van Plaatsen op geef wijze uit en selecteer dan **uitgeven in een nieuw venster**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus.
 
 ## Overwegingen en beste praktijken {#considerations-and-best-practices}
 

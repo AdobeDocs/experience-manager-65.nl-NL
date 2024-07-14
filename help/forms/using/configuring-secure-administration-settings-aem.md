@@ -39,14 +39,14 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
             https://[host name]:'port'/adminui
    ```
 
-1. Klikken **Services > Toepassingen en services > Voorkeuren**.
+1. Klik **de Diensten > Toepassingen en de Diensten > Voorkeur**.
 1. Stel de voorkeuren in om maximaal 200 services en eindpunten op dezelfde pagina weer te geven.
-1. Klikken **Services** > **Toepassingen en services** > **Endpoint Management**.
-1. Selecteren **EJB** van de **Provider** en klik vervolgens op **Filter**.
-1. Als u alle EJB-eindpunten wilt uitschakelen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Uitschakelen**.
-1. Klikken **Volgende** en herhaal de vorige stap voor alle EJB-eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
-1. Selecteren **SOAP** van de **Provider** en klik vervolgens op **Filter**.
-1. Als u SOAP eindpunten wilt verwijderen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Verwijderen**. Verwijder de volgende eindpunten niet:
+1. Klik **de Diensten van 0} >** Toepassingen en de Diensten **>** Beheer van het Eindpunt **.**
+1. Selecteer **EJB** van de **3} lijst van de Leverancier {en klik dan** Filter **.**
+1. Om alle EJB eindpunten onbruikbaar te maken, selecteer de controledoos naast elk in de lijst en klik **onbruikbaar maken**.
+1. Klik **daarna** en herhaal de vorige stap voor alle EJB eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
+1. Selecteer **SOAP** van de **3} lijst van de Leverancier {en klik dan** Filter **.**
+1. Om SOAP eindpunten te verwijderen, selecteer de controledoos naast elk in de lijst en klik **verwijderen**. Verwijder de volgende eindpunten niet:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -62,7 +62,7 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Klikken **Volgende** en herhaal de vorige stap voor SOAP eindpunten die niet in de bovenstaande lijst staan. Zorg ervoor dat SOAP wordt vermeld in de kolom Provider voordat u eindpunten verwijdert.
+1. Klik **daarna** en herhaal de vorige stap voor SOAP eindpunten die niet in de bovengenoemde lijst zijn. Zorg ervoor dat SOAP wordt vermeld in de kolom Provider voordat u eindpunten verwijdert.
 
 ## Niet-essentiële anonieme toegang tot services uitschakelen {#disabling-non-essential-anonymous-access-to-services}
 
@@ -74,9 +74,9 @@ Sommige Forms Server-services staan niet-geverifieerde (anonieme) aanroeping toe
             https://[host name]:'port'/adminui
    ```
 
-1. Klikken **Services > Toepassingen en services > Servicebeheer**.
+1. Klik **de Diensten > Toepassingen en de Diensten > het Beheer van de Dienst**.
 1. Klik de naam van de dienst die u (bijvoorbeeld, AuthenticationManagerService) wilt onbruikbaar maken.
-1. Klik op de knop **Het tabblad Beveiliging**, deselecteren **Anonieme toegang toegestaan** en klik op **Opslaan**.
+1. Klik het **lusje van de Veiligheid**, schrap **Anonieme Toegelaten Toegang**, en klik **sparen**.
 1. Voltooi de stappen 3 en 4 voor de volgende services:
 
    * AuthenticationManagerService
@@ -117,8 +117,8 @@ Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-we
             https://[host name]:'port'/adminui
    ```
 
-1. Klikken **Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren**.
-1. Klikken **Exporteren** om een config.xml- dossier met de bestaande montages van AEM Forms te produceren.
+1. Klik **Montages > Gebruikersbeheer > Configuratie > de Dossiers van de Configuratie van de Invoer en van de Uitvoer**.
+1. Klik **Uitvoer** om een config.xml- dossier met de bestaande montages van AEM Forms te veroorzaken.
 1. Open het XML-bestand in een editor en zoek de volgende gegevens:
 
    `<entry key="assertionValidityInMinutes" value="120"/>`
@@ -126,4 +126,4 @@ Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-we
 1. Wijzig de waarde in een waarde groter dan 5 (in minuten) en sla het bestand op.
 1. Navigeer in de beheerconsole naar de pagina Configuration Files importeren en exporteren.
 1. Ga de weg aan het gewijzigde config.xml- dossier in of de klik doorbladert om aan het te navigeren.
-1. Klikken **Importeren** om het gewijzigde bestand config.xml te uploaden en klik vervolgens op **OK**.
+1. Klik **Invoer** om het gewijzigde config.xml- dossier te uploaden en dan **O.K.** te klikken.

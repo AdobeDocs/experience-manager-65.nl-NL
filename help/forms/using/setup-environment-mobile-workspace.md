@@ -38,9 +38,9 @@ U hebt de volgende hardware, software en licenties nodig om de AEM Forms-app te 
 
 ## Voor Android™-apparaten {#for-android-devices}
 
-* Android™ Development Toolkit (ADT-bundel) die kan worden gedownload van [https://developer.android.com/studio](https://developer.android.com/studio)
+* Toolkit van de Ontwikkeling Android™ (de bundel van ADT) die van [ https://developer.android.com/studio ](https://developer.android.com/studio) kan worden gedownload
 * Als de omgeving is ingesteld op een Mac-systeem, moet ADT worden geïnstalleerd in de map Programma&#39;s.
-* Als de ADT op een andere locatie op Mac is geïnstalleerd of als de omgeving op een Windows-systeem is ingesteld, moet het ADT SDK-pad worden bijgewerkt in `local.properties` bestand. Dit bestand is beschikbaar in het dialoogvenster `src\android` map in het geëxtraheerde bronarchief `mobileworkspace-src.zip`. Wijs in dit bestand de `sdk.dir` variabele naar de ADT SDK-locatie op uw bureaublad.
+* Als de ADT op een andere locatie op Mac is geïnstalleerd of als de omgeving op een Windows-systeem is ingesteld, moet het ADT SDK-pad worden bijgewerkt in het `local.properties` -bestand. Dit bestand is beschikbaar in de map `src\android` in het geëxtraheerde bronarchief `mobileworkspace-src.zip` . Wijs in dit bestand de variabele `sdk.dir` aan op de ADT SDK-locatie op uw bureaublad.
 
 >[!NOTE]
 >

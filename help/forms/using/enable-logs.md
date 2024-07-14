@@ -25,32 +25,32 @@ U kunt het hulpprogramma Logger configureren om logbestanden voor HTML5-formulie
 
 Voer de volgende stappen uit om logbestanden aan de serverzijde te configureren:
 
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr`. Zoek en open de *Configuratie van logboek van Apace Sling-logboekregistratie* -optie. Er wordt een dialoogvenster weergegeven:
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr` . Bepaal en open de *van de het Registreren registrerenconfiguratie van de PlaatsING van de Plaatsing de 1} optie.* Er wordt een dialoogvenster weergegeven:
 
-   ![ Het dialoogvenster voor het instellen van de optie Apace Sling-logboekregistratie](assets/logconfig.png)
+   ![ Het dialoogvenster voor de configuratieoptie van het logbestand voor spellingcontrole van Apace ](assets/logconfig.png)
 
    Configuratieoptie Apace Sling-logboekregistratie
 
-1. Wijzig de **Logboekniveau** tot **Foutopsporing**.
+1. Verander het **Niveau van het Logboek** aan **zuivert**.
 
-1. Geef een naam en pad op voor de **Logbestand**.
+1. Specificeer naam en weg van het **Dossier van het Logboek**.
 
    >[!NOTE]
    >
    >Als u logbestanden wilt genereren in de logmap met HTML5-formulieren, voegt u ../logs/ toe vóór de bestandsnaam.
 
-1. Wijzigen **Aanmelder** tot **HTMLFormsPerfLogger**. Klikken **Opslaan**.
+1. Verandering **Logger** aan **HTMLFormsPerfLogger**. Klik **sparen**.
 
 ## Logboekregistratie van clients configureren {#configuring-client-logging}
 
 U kunt de volgende methoden gebruiken om aanmelding op de client in HTML5-formulieren in te schakelen:
 
-* De genoemde parameter request gebruiken `log`
+* De parameter request met de naam `log` gebruiken
 * CQ-configuratiebeheer gebruiken
 
 ### Registreren met behulp van aanvraagparameter inschakelen {#enabling-logging-using-request-parameter}
 
-Met deze methode kunt u logboeken voor een bepaalde aanvraag genereren. De naam van de parameter request is `log`. Het logbestand-URL ziet er als volgt uit:
+Met deze methode kunt u logboeken voor een bepaalde aanvraag genereren. De naam van de parameter request is `log` . Het logbestand-URL ziet er als volgt uit:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -66,15 +66,15 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>1</td>
-   <td>Logbestanden worden naar de browser geleid <strong>Console</strong></td>
+   <td>De logboeken worden geleid aan browser <strong> Console </strong></td>
   </tr>
   <tr>
    <td>2</td>
-   <td>Logbestanden worden verzameld in een JavaScript-object op de client en kunnen worden geplaatst op <strong>Server</strong> </td>
+   <td>De logboeken worden verzameld in een voorwerp van JavaScript op cliëntkant en kunnen aan <strong> Server </strong> worden gepost </td>
   </tr>
   <tr>
    <td>3</td>
-   <td>Beide opties<br /> </td>
+   <td>Beide van bovengenoemde opties <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -89,27 +89,27 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>0</td>
-   <td>UIT<br type="_moz" /> </td>
+   <td>UIT <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>1</td>
-   <td>FATAAL<br type="_moz" /> </td>
+   <td>FATAL <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>2</td>
-   <td>FOUT<br type="_moz" /> </td>
+   <td>FOUT <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>3</td>
-   <td>WAARSCHUWING<br type="_moz" /> </td>
+   <td>WAARSCHUWING <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>4</td>
-   <td>INFO<br type="_moz" /> </td>
+   <td>INFO <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>5</td>
-   <td>DEBUG<br type="_moz" /> </td>
+   <td>FOUTOPSPORING <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>6</td>
@@ -117,7 +117,7 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>7</td>
-   <td>ALLES<br type="_moz" /> </td>
+   <td>ALL<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -136,11 +136,11 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>b</td>
-   <td>xfaView (logbestanden met betrekking tot de layout-engine)<br type="_moz" /> </td>
+   <td>xfaView (aan de motor van de Lay-out verwante logboeken) <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>c</td>
-   <td>xfaPerf (prestatiegerelateerde logs)<br type="_moz" /> </td>
+   <td>xfaPerf (Prestatiegerelateerde logboeken) <br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -161,7 +161,7 @@ Bijvoorbeeld:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Doel: Server<br /> xfa-niveau: INFO<br /> xfaView-niveau: DEBUG<br /> xfaPerf-niveau: TRACE</td>
+   <td>Doel: Server <br /> xfa-niveau: INFO <br /> xfaView-niveau: DEBUG <br /> xfaPerf-niveau: TRACE</td>
   </tr>
  </tbody>
 </table>
@@ -177,33 +177,33 @@ Bijvoorbeeld:
 
 Als u de Manager van de Configuratie voor het toelaten van registreren gebruikt, worden de logboeken geproduceerd voor elk teruggeven verzoek tot het registreren opnieuw onbruikbaar wordt gemaakt.
 
-1. Meld u aan bij CQ Configuration Manager op `https://'[server]:[port]'/system/console/configMgr` en aanmelden met beheerdersreferenties.
-1. Zoeken naar en klikken **Mobiele Forms-configuraties**.
-1. Voer in het tekstvak Opties voor foutopsporing de logboekconfiguraties in zoals bijvoorbeeld in de vorige sectie wordt beschreven. **2-a4-b5-c6**
+1. Meld u aan bij CQ Configuration Manager op `https://'[server]:[port]'/system/console/configMgr` en meld u aan met de beheerdersreferenties.
+1. Zoek naar en klik **Mobiele Configuraties van Forms**.
+1. In het Debug de tekstvakje van Opties, ga de logboekconfiguraties in zoals die in de vorige sectie bijvoorbeeld worden beschreven, **2-a4-b5-c6**
 
-   ![Forms-configuratie](assets/forms_configuration.png)
+   ![ Configuratie van Forms ](assets/forms_configuration.png)
 
    Forms-configuratie
 
 ## Logbestanden uploaden {#uploading-logs}
 
-Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau worden alle logbestanden verzameld in een JS-object op de client en als het formulier wordt weergegeven met het standaardprofiel, wordt een **Logbestanden verzenden** wordt links van **Bestaande velden markeren** op de werkbalk. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
+Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau, worden alle logboeken verzameld in een voorwerp JS op cliëntkant en als de vorm met standaardProfiel toen a **wordt teruggegeven verzendt Logs** knoop verschijnt links van **Hoogtepunt Bestaande Gebieden** knoop in toolbar. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
 
 Standaard wordt alle informatie toegevoegd aan het bestand error.log in de map /crx-repository/logs/.
 
 De locatie en naam van het logbestand wijzigen:
 
-1. Meld u aan bij Configuratiebeheer als beheerder. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/system/console/configMgr`.
-1. Klikken **Logboekconfiguratie Apache Sling Logging**. Er wordt een dialoogvenster weergegeven.
+1. Meld u aan bij Configuratiebeheer als beheerder. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/system/console/configMgr` .
+1. Klik **Apache Sling Logging Logger Configuratie van het Logboek**. Er wordt een dialoogvenster weergegeven.
 
-   ![logconfig-1](assets/logconfig-1.png)
+   ![ logconfig-1 ](assets/logconfig-1.png)
 
-1. Wijzig de **Logboekniveau** op Foutopsporing.
+1. Verander het **Niveau van het Logboek** om te zuiveren.
 
-1. Pad en naam van de **Logbestand**.
+1. Specificeer weg en naam van het **Dossier van het Logboek**.
 
    >[!NOTE]
    >
-   >Als u logbestanden wilt maken in dezelfde map waarin andere logbestanden worden opgeslagen, geeft u ../logs/&lt;filename> in het bezit van de Dossiers van het Logboek.
+   >Als u logbestanden wilt maken in dezelfde map waarin andere logbestanden worden opgeslagen, geeft u ../logs/&lt;bestandsnaam> op in de eigenschap Logbestanden.
 
-1. Wijzig de **Aanmelder** tot **HTMLFormsPerfLogger** en klik op **Opslaan**.
+1. Verander **Logger** aan **HTMLFormsPerfLogger** en klik **sparen**.

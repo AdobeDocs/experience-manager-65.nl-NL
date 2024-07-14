@@ -21,22 +21,22 @@ ht-degree: 0%
 >[!NOTE]
 >
 >De Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
->De aanbeveling is om [Adobe Campaign en zijn AEM integratie](/help/sites-administering/campaign.md).
+>De aanbeveling moet [ Adobe Campaign en zijn AEM integratie ](/help/sites-administering/campaign.md) gebruiken.
 
-Gebruikers kunnen worden gevraagd zich in te schrijven op **E-mailserviceproviders** mailinglijsten met behulp van de **Formulier** op een AEM webpagina wordt gebruikt. Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
+De gebruikers kunnen worden gevraagd om aan **het posteren lijsten 1} van de E-mailDienstverlener {met hulp van de** 3} component in te tekenen van de Vorm {die op een AEM Web-pagina wordt gebruikt. **** Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
 
 ## Configuratie van e-mailservice toepassen op een pagina {#applying-email-service-configuration-to-a-page}
 
 Een AEM pagina configureren:
 
-1. Ga naar de **Websites** tab.
-1. Selecteer de pagina die voor de dienst moet worden gevormd. Klik met de rechtermuisknop op de pagina en selecteer **Eigenschappen**.
+1. Navigeer aan de **Websites** tabel.
+1. Selecteer de pagina die voor de dienst moet worden gevormd. Klik de pagina met de rechtermuisknop aan en selecteer **Eigenschappen**.
 
-1. Selecteren **Cloud Servicen** dan **Service toevoegen**. Selecteer een configuratie in de lijst met beschikbare configuraties.
+1. Selecteer **Cloud Servicen** toen **de Dienst** toevoegen. Selecteer een configuratie in de lijst met beschikbare configuraties.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+   ![ chlimage_1-164 ](assets/chlimage_1-164.png)
 
-1. Klikken **OK**.
+1. Klik **OK**.
 
 ## Een aanmeldingsformulier op een AEM pagina maken voor het abonneren of afmelden van lijsten {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
 
@@ -45,36 +45,36 @@ Een aanmeldingsformulier maken en dit configureren voor abonnementen op de maili
 1. Open de AEM pagina die de gebruiker zal bezoeken.
 1. Pas de configuratie van de E-mailserviceprovider toe op de pagina.
 
-1. Voeg een **Formulier** naar de pagina door de component van het hulpstuk te slepen. Als de component niet beschikbaar is, schakelt u over naar de ontwerpmodus en schakelt u **Formulier** groep.
-1. Klikken **Bewerken** in de **Begin van formulier** en naar de **Geavanceerd** tab.
-1. In de **Formulier** vervolgkeuzelijst, selecteert u **E-mailservice: abonnee maken** en toevoegen aan lijst.
-1. Open onder aan het dialoogvenster het dialoogvenster **Configuratie van handelingen** vervolgkeuzelijst waarin u een of meer abonnementlijsten kunt selecteren.
-1. In de **Lijst selecteren** selecteert u de lijst waarop gebruikers zich moeten abonneren. U kunt meerdere lijsten toevoegen met de plusknop (**Item toevoegen**).
+1. Voeg de component van de a **Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelaar om wijze te ontwerpen en **Groep van de Vorm** toe te laten.
+1. Klik **uitgeven** in het **Begin van de bar van de Vorm** en navigeer aan **Geavanceerd** tabel.
+1. In het **drop-down menu van de Vorm**, uitgezochte **E-mailDienst: Creeer Abonnees** en voeg aan lijst toe.
+1. Bij de bodem van de dialoogdoos, open de **drop-down Configuratie van de Actie**, die u één of meerdere abonnementslijsten laat selecteren.
+1. In de **Uitgezochte lijst**, selecteer de lijst u gebruikers wilt intekenen aan. U kunt veelvoudige lijsten toevoegen door de plus knoop te gebruiken (**voeg Punt** toe).
 
-   ![chlimage_1-10](assets/chlimage_1-10.jpeg)
+   ![ chlimage_1-10 ](assets/chlimage_1-10.jpeg)
 
    >[!NOTE]
    >
    >Het dialoogvenster kan afwijken, afhankelijk van het e-mailservicebureau.
 
-1. In de **Formulier** selecteert u de pagina Bedankt waarnaar gebruikers moeten gaan nadat ze het formulier hebben verzonden (Als dit leeg blijft, wordt het formulier na verzending opnieuw weergegeven.) Klikken **OK**. An **E-mailid** wordt weergegeven in het formulier. Hiermee kunt u een formulier maken waarin gebruikers hun e-mailadressen kunnen verzenden om zich te abonneren op een mailinglijst.
-1. Voeg de **Verzenden** knopcomponent vanuit de **Formulier** in sidekick.
+1. In het **lusje van de Vorm**, selecteer bedankt u pagina u gebruikers wilt gaan naar nadat zij de vorm (als verlaten leeg, de vorm na voorlegging opnieuw toont.) Klik **OK**. Een **identiteitskaart van de E-mail** component verschijnt in de Vorm, die u een vorm laat tot stand brengen waar de gebruikers hun e-mailadressen kunnen voorleggen om van een het posten lijst in te tekenen of af te melden.
+1. Voeg **toe voorlegt** knoopcomponent van de **sectie van de Vorm** in sidekick.
 
-   Het formulier is klaar. Publiceer de pagina die in de bovenstaande stappen is geconfigureerd samen met de **dank u** pagina naar het publicatieexemplaar. Eventuele abonnees die de pagina bezoeken, kunnen het formulier invullen en zich abonneren op de lijst in de configuratie.
+   Het formulier is klaar. Publish de pagina die in de stappen hierboven samen met **wordt gevormd dankt u** pagina aan publiceer instantie. Eventuele abonnees die de pagina bezoeken, kunnen het formulier invullen en zich abonneren op de lijst in de configuratie.
 
    >[!NOTE]
    >
-   >Om het formulierabonnement correct in te stellen, [coderingssleutels van de auteur moeten worden geëxporteerd en geïmporteerd in de publicatie-instantie](#exporting-keys-from-author-and-importing-on-publish).
+   >Om de functie van het vormabonnement correct te maken, [ encryptiesleutels van auteur moeten worden uitgevoerd en op publiceer instantie ](#exporting-keys-from-author-and-importing-on-publish) worden ingevoerd.
 
 ## Toetsen van auteur exporteren en importeren bij publicatie {#exporting-keys-from-author-and-importing-on-publish}
 
 Als u wilt dat e-mailservices zich abonneren op of zich niet meer abonneren op het publicatieexemplaar, moet u de volgende stappen uitvoeren:
 
 1. Navigeer in de auteurinstantie naar Package Manager.
-1. Maak een pakket. Het filter instellen als `/etc/key`.
+1. Maak een pakket. Stel het filter in op `/etc/key` .
 1. Het pakket maken en downloaden.
 1. Navigeer naar Package Manager op de publicatie-instantie en upload dit pakket.
-1. Navigeer naar de publicatieconsole en start de bundel met de naam **Adobe Granite Crypto-ondersteuning**.
+1. Navigeer aan de Publish osgi console en begin de bundel genoemd **Adobe Granite Crypto Steun** opnieuw.
 
 ## Gebruikers afmelden voor lijsten {#unsubscribing-users-from-lists}
 
@@ -83,10 +83,10 @@ Gebruikers afmelden bij lijsten:
 1. Open de pagina-eigenschappen van de AEM pagina met het aanmeldingsformulier om het abonnement op een lead op te zeggen.
 1. Pas de de dienstconfiguratie op de pagina toe.
 1. Maak een aanmeldingsformulier op de pagina.
-1. Selecteer de handeling tijdens het configureren van de component **E-mailservice**: **Abonnement op gebruiker opzeggen uit lijst.**
+1. Terwijl het vormen van de component, selecteer de actie **E-mailDienst**: **Unsubscribe gebruiker van lijst.**
 1. Selecteer in het keuzemenu de lijst waaruit de gebruiker bij het afmelden wordt verwijderd.
 
-   ![chlimage_1-11](assets/chlimage_1-11.jpeg)
+   ![ chlimage_1-11 ](assets/chlimage_1-11.jpeg)
 
 1. Exporteer de sleutels van de auteur om te publiceren.
 
@@ -97,23 +97,23 @@ Om een auto-antwoordapparaat e-mail voor een abonnee te vormen:
 1. Open de pagina-eigenschappen van de AEM pagina die het aanmeldingsformulier hebben om auto responder voor een lead te configureren.
 1. Pas de configuratie ExactTarget op de pagina toe.
 
-1. Voeg een **Formulier** naar de pagina door de component van het hulpstuk te slepen. Als de component niet beschikbaar is, schakelt u over naar de ontwerpmodus en schakelt u de **Formulier** groep.
-1. Klikken **Bewerken** in de **Begin van formulier** en naar de **Geavanceerd** tab.
-1. In de **Formulier** vervolgkeuzelijst, selecteert u **E-mailservice: stuur de e-mail met de automatische beantwoorder.**
-1. **Een e-mail selecteren** (Dit is de e-mail die als auto-antwoordapparaat wordt verzonden).
+1. Voeg de component van de a **Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelaar aan ontwerpwijze en laat de **1} groep van de Vorm {toe.**
+1. Klik **uitgeven** in het **Begin van de bar van de Vorm** en navigeer aan **Geavanceerd** tabel.
+1. In het **drop-down menu van de Vorm**, uitgezochte **E-mailDienst: verzend auto antwoordapparaat e-mail.**
+1. **selecteer een e-mail** (dit is de post die als auto-antwoordapparaat e-mail wordt verzonden).
 
-1. **Classificatie selecteren** (deze indeling wordt gebruikt om het e-mailbericht te verzenden).
-1. Selecteer de **Bedankt** pagina (de pagina waarnaar gebruikers worden geleid wanneer ze het formulier verzenden).
+1. **Uitgezochte Classificatie** (deze classificatie wordt gebruikt om e-mail te verzenden).
+1. Selecteer **Dank u** pagina (de pagina waar de gebruikers aan worden geleid zodra zij de vorm voorleggen).
 
-   In de **Formulier** selecteert u de pagina Bedankt waarnaar gebruikers moeten gaan nadat ze het formulier hebben verzonden. (Als het formulier leeg blijft, wordt het opnieuw weergegeven bij verzending.) Klikken **OK**.
+   In het **lusje van de Vorm**, selecteer bedankt u pagina u gebruikers wilt gaan naar nadat zij de vorm voorleggen. (Als het formulier leeg blijft, wordt het opnieuw weergegeven bij verzending.) Klik **OK**.
 
 1. Exporteer de sleutels van de auteur om te publiceren.
-1. Voeg de **Verzenden** knopcomponent vanuit de **Formulier** in sidekick.
+1. Voeg **toe voorlegt** knoopcomponent van de **sectie van de Vorm** in sidekick.
 
-   Het aanmeldingsformulier is klaar. Publiceer de pagina die in de bovenstaande stappen is geconfigureerd samen met de **dank u** pagina naar het publicatieexemplaar. Eventuele abonnees die de pagina bezoeken, kunnen het formulier invullen en bij het verzenden van het formulier ontvangt de bezoeker een e-mail met de automatische beantwoorder op de in het formulier ingevulde e-mail.
+   Het aanmeldingsformulier is klaar. Publish de pagina die in de stappen hierboven samen met **wordt gevormd dankt u** pagina aan publiceer instantie. Eventuele abonnees die de pagina bezoeken, kunnen het formulier invullen en bij het verzenden van het formulier ontvangt de bezoeker een e-mail met de automatische beantwoorder op de in het formulier ingevulde e-mail.
 
    >[!NOTE]
    >
-   >Om het abonnement op het formulier correct te laten functioneren, [coderingssleutels van de auteur moeten worden geëxporteerd en geïmporteerd in de publicatie-instantie](#exporting-keys-from-author-and-importing-on-publish).
+   >Om de correcte toepassing van het sign-up formulierabonnement te maken, [ encryptiesleutels van auteur moeten worden uitgevoerd en op publiceer instantie ](#exporting-keys-from-author-and-importing-on-publish) worden ingevoerd.
 
-   ![chlimage_1-12](assets/chlimage_1-12.jpeg)
+   ![ chlimage_1-12 ](assets/chlimage_1-12.jpeg)

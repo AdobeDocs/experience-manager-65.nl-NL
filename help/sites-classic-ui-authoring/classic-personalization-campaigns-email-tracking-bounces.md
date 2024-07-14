@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >De Adobe is niet van plan om het bijhouden van geopende/aangekondigde e-mails die door AEM SMTP-service worden verzonden, verder te verbeteren.
 >
->De aanbeveling is: [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
+>De aanbeveling moet [ Adobe Campaign en zijn AEM integratie ](/help/sites-administering/campaign.md) gebruiken.
 
 Wanneer u een nieuwsbrief naar veel gebruikers verzendt, bevat de lijst meestal enkele ongeldige e-mailadressen. Het verzenden van nieuwsbrieven naar die adressen stuitert terug. AEM kan die grenzen beheren en kan ophouden verzendend nieuwsbrieven naar die adressen te verzenden nadat de gevormde stuiterteller wordt overschreden. Door gebrek, wordt het stuiterende tarief geplaatst aan 3 maar configureerbaar.
 
@@ -34,11 +34,11 @@ Met de importfunctie kunt u herhaaldelijk inhoud uit externe bronnen importeren 
 
 Ga als volgt te werk om de importmodule voor teruggestuurde e-mailberichten te configureren:
 
-1. In **Gereedschappen** selecteert u de importmodule voor diervoeders.
+1. In **Hulpmiddelen**, selecteer de Importeur van de Diervoeders.
 
-1. Klikken **Toevoegen** om een configuratie te maken.
+1. Klik **toevoegen** om een configuratie tot stand te brengen.
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   ![ chlimage_1 ](assets/chlimage_1a.png)
 
 1. Voeg een configuratie toe door het type te selecteren en informatie toe te voegen aan opiniepeiling URL zodat kunt u de gastheer en de haven vormen. Bovendien voeg sommige post en protocol-specifieke parameters aan de vraag URL toe. Stel de configuratie in op minstens eenmaal per dag.
 
@@ -50,25 +50,25 @@ Ga als volgt te werk om de importmodule voor teruggestuurde e-mailberichten te c
 
    Afhankelijk van het protocol kunt u bovendien bepaalde instellingen configureren.
 
-   **POP3-configuratie-eigenschappen:**
+   **POP3 configuratieeigenschappen:**
 
-   `pop3.leave.on.server`: Definieert of berichten op de server moeten worden achtergelaten. Ingesteld op true om berichten op de server te laten, anders false. Heeft als standaardwaarde true.
+   `pop3.leave.on.server`: hiermee wordt gedefinieerd of berichten op de server moeten worden achtergelaten. Ingesteld op true om berichten op de server te laten, anders false. Heeft als standaardwaarde true.
 
-   **POP3-voorbeelden:**
+   **POP3 voorbeelden:**
 
    | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Pop3 via SSL gebruiken om verbinding te maken met GMail op poort 995 met gebruiker/geheim, zodat berichten standaard op de server blijven staan |
    |---|---|
    | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false |
 
-   **IMAP-configuratie-eigenschappen:**
+   **de configuratieeigenschappen van IMAP:**
 
    Hiermee kunt u markeringen instellen waarnaar u wilt zoeken.
 
-   `imap.flag.SEEN`:Stel false in voor nieuwe/onzichtbare berichten, true voor al-gelezen berichten
+   `imap.flag.SEEN`:false instellen voor nieuwe/onzichtbare berichten, true voor al-gelezen berichten
 
-   Zie [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) voor de volledige lijst van vlaggen.
+   Zie [ https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html ](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) voor de volledige lijst van vlaggen.
 
-   **IMAP-voorbeelden:**
+   **voorbeelden IMAP:**
 
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Het gebruiken van IMAP over SSL om met GMail op haven 993 met gebruiker/geheim te verbinden. Nieuwe berichten alleen standaard ophalen. |
    |---|---|
@@ -83,11 +83,11 @@ Na het vormen van de voederimporteur, vorm Van adres en de stuiterteller.
 
 Om de nieuwsbrief dienst te vormen:
 
-1. In de OSGi-console, op `<host>:<port>/system/console/configMgr`, navigeer naar **MCM-nieuwsbrief**.
+1. In de console OSGi, bij `<host>:<port>/system/console/configMgr`, navigeer aan **MCM Newsletter**.
 
 1. Configureer de service en sla de wijzigingen op wanneer u klaar bent.
 
-   ![chlimage_1-1](assets/chlimage_1-1a.png)
+   ![ chlimage_1-1 ](assets/chlimage_1-1a.png)
 
    De volgende configuraties kunnen worden ingesteld om het gedrag aan te passen:
 

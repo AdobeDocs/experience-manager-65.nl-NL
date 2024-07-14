@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Asynchrone indiening van adaptieve formulieren{#asynchronous-submission-of-adaptive-forms}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
 | AEM 6,5 | Dit artikel |
 
 Webformulieren zijn meestal geconfigureerd voor synchroon verzenden. Bij synchrone verzending worden gebruikers die een formulier verzenden, omgeleid naar een bevestigingspagina, een pagina voor dankbetuigingen of een pagina met foutmeldingen als gevolg van een mislukte verzending. De moderne webervaringen, zoals toepassingen met één pagina, worden echter steeds populairder, omdat de webpagina statisch blijft terwijl interactie tussen client en server op de achtergrond plaatsvindt. U kunt deze ervaring nu voorzien van adaptieve formulieren door asynchrone verzending te configureren.
@@ -35,20 +35,20 @@ Lees verder voor meer informatie over asynchrone verzending in adaptieve formuli
 
 Om asynchrone voorlegging voor een adaptief formulier te configureren:
 
-1. Selecteer in de ontwerpmodus het object Form Container en selecteer ![cmppr1](assets/cmppr1.png) om de eigenschappen te openen.
-1. In de **[!UICONTROL Submission]** eigenschappensectie, inschakelen **[!UICONTROL Use asynchronous submission]**.
-1. In de **[!UICONTROL On Submit]** selecteert u een van de volgende opties voor het verzenden van formulieren.
+1. Op de adaptieve wijze van de vorm authoring, selecteer het voorwerp van de Container van de Vorm en selecteer ![ cmp1 ](assets/cmppr1.png) om zijn eigenschappen te openen.
+1. Schakel in de sectie **[!UICONTROL Submission]** -eigenschappen **[!UICONTROL Use asynchronous submission]** in.
+1. Selecteer in de sectie **[!UICONTROL On Submit]** een van de volgende opties voor het verzenden van formulieren.
 
-   * **[!UICONTROL Redirect to URL]**: leidt bij het verzenden van het formulier naar de opgegeven URL of pagina. U kunt een URL opgeven of bladeren naar het pad naar een pagina in het dialoogvenster **[!UICONTROL Redirect URL/Path]** veld.
+   * **[!UICONTROL Redirect to URL]**: leidt bij het verzenden van het formulier naar de opgegeven URL of pagina. U kunt een URL opgeven of bladeren naar het pad naar een pagina in het veld **[!UICONTROL Redirect URL/Path]** .
    * **[!UICONTROL Show Message]**: geeft een bericht weer bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de optie Bericht tonen. Het tekstveld ondersteunt RTF-opmaak.
 
-1. Selecteren ![check-button1](assets/check-button1.png) om de eigenschappen op te slaan.
+1. Selecteer ![ controle-button1 ](assets/check-button1.png) om de eigenschappen te bewaren.
 
 ## Hoe asynchrone verzending werkt {#how-asynchronous-submission-works}
 
 AEM Forms biedt offline succeshandlers en foutafhandelaars voor het verzenden van formulieren. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een formulier wordt verzonden, worden de gegevens voor validatie naar de server verzonden, die een reactie op de client retourneert met informatie over de gebeurtenis &#39;success&#39; of &#39;error&#39; voor de verzending. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren.
 
-Bovendien kunnen auteurs en ontwikkelaars van formulieren regels op formulierniveau schrijven om standaardhandlers te overschrijven. Zie voor meer informatie [Standaardhandlers negeren met behulp van regels](#custom).
+Bovendien kunnen auteurs en ontwikkelaars van formulieren regels op formulierniveau schrijven om standaardhandlers te overschrijven. Voor meer informatie, zie [ standaardmanagers met voeten treden gebruikend regels ](#custom).
 
 Laat ons eerst de serverreactie voor succes en foutengebeurtenissen herzien.
 
@@ -104,9 +104,9 @@ Formulierontwikkelaars en auteurs kunnen regels schrijven op formulierniveau in 
 
 Voer de volgende stappen uit om regels in coderedacteur te schrijven om succes en foutengebeurtenissen te behandelen.
 
-1. Open het adaptieve formulier in de ontwerpmodus, selecteer een willekeurig formulierobject en selecteer ![edit-rules1](assets/edit-rules1.png) om de regeleditor te openen.
-1. Selecteren **[!UICONTROL Form]** in de structuur Formulierobjecten en selecteer **[!UICONTROL Create]**.
-1. Selecteren **[!UICONTROL Code Editor]** in het vervolgkeuzemenu Modus selecteren.
-1. Selecteer in de code-editor de optie **[!UICONTROL Edit Code]**. Selecteren **[!UICONTROL Edit]** in het bevestigingsdialoogvenster.
-1. Kies **[!UICONTROL Successful Submission]** of **[!UICONTROL Error in Submission]** van de **[!UICONTROL Event]** vervolgkeuzelijst.
+1. Open de adaptieve vorm op auteurswijze, selecteer om het even welk vormvoorwerp, en selecteer ![ geef-rules1 ](assets/edit-rules1.png) uit om de regelredacteur te openen.
+1. Selecteer **[!UICONTROL Form]** in de structuur Formulierobjecten en selecteer **[!UICONTROL Create]** .
+1. Selecteer **[!UICONTROL Code Editor]** in het keuzemenu Modus selecteren.
+1. Selecteer **[!UICONTROL Edit Code]** in de code-editor. Selecteer **[!UICONTROL Edit]** in het bevestigingsdialoogvenster.
+1. Kies **[!UICONTROL Successful Submission]** of **[!UICONTROL Error in Submission]** in de vervolgkeuzelijst **[!UICONTROL Event]** .
 1. Schrijf een regel voor de geselecteerde gebeurtenis en selecteer **[!UICONTROL Done]** om de regel op te slaan.

@@ -21,18 +21,18 @@ ht-degree: 0%
 
 Meld u aan bij de auteur voor toegang tot de console met EG-gereedschappen:
 
-* Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
+* Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** .
 
-  ![gemeenschappen](assets/communities-home.png)
+  ![ gemeenschappen ](assets/communities-home.png)
 
-* [Sitesjablonen](sites.md) - Console voor het maken en beheren van sitesjablonen.
+* [ Malplaatjes van de Plaats ](sites.md) - Console voor de verwezenlijking en het beheer van het plaatssjabloon.
 
-* [Groepssjablonen](tools-groups.md) - Console voor het maken en beheren van groepssjablonen.
+* [ Malplaatjes van de Groep ](tools-groups.md) - Console voor de verwezenlijking en het beheer van het groepsmalplaatje.
 
-* [Communautaire functies](functions.md) - Console voor het maken en beheren van community-functies.
+* [ Communautaire Functies ](functions.md) - Console voor de verwezenlijking van de communautaire functie en beheer.
 
-* [Opslagconfiguratie](srp-config.md) - Console voor configuratie en selectie van de [standaard SRP](working-with-srp.md).
+* [ Configuratie van de Opslag ](srp-config.md) - Console voor configuratie en selectie van [ standaardSRP ](working-with-srp.md).
 
-* [Component Guide](components-guide.md) - Opent een interactieve plaats die voor het experimenteren met toestaat hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
+* [ Gids van de Component ](components-guide.md) - opent een interactieve plaats die voor het experimenteren met toestaat hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
 
-* [Badges](badges.md) - Console waaruit aangepaste badges kunnen worden toegevoegd voor gebruik in [regels voor scoring en badging](implementing-scoring.md)
+* [ Badges ](badges.md) - Console van waar de douanebadges voor gebruik in [ het scoren en het badging regels ](implementing-scoring.md) kunnen worden toegevoegd

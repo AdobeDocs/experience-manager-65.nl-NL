@@ -21,21 +21,21 @@ ht-degree: 0%
 
 ## SRP {#about-srp}
 
-Alle AEM Communities-componenten en -functies zijn gebaseerd op de [Sociaal-componentkader (SCF)](/help/communities/scf.md), die de API SocialResourceProvider aanroept om toegang te krijgen tot alle door de gebruiker gegenereerde inhoud (UGC).
+Alle componenten en eigenschappen van AEM Communities worden voortgebouwd op het [ sociale componentenkader (SCF) ](/help/communities/scf.md), dat sociaalResourceProvider API roept om tot alle gebruiker toegang te hebben geproduceerde inhoud (UGC).
 
-Voordat een communitysite wordt gemaakt, moet u [Storage Resource Provider (SRP)](/help/communities/working-with-srp.md) moet worden geconfigureerd om een implementatie te selecteren die consistent is met de onderliggende [topologie](/help/communities/topologies.md). De implementatie SRP is gebaseerd op drie opslagopties:
+Alvorens een communautaire plaats wordt gecreeerd, moet de [ leverancier van het opslagmiddel (SRP) ](/help/communities/working-with-srp.md) worden gevormd om een implementatie te selecteren verenigbaar met de onderliggende [ topologie ](/help/communities/topologies.md). De implementatie SRP is gebaseerd op drie opslagopties:
 
-1. [ASRP](/help/communities/asrp.md) - Adobe op aanvraag
-1. [MSRP](/help/communities/msrp.md) - MongoDB
-1. [JSRP](/help/communities/jsrp.md) - JCR
+1. [ ASRP ](/help/communities/asrp.md) - Adobe opslag op bestelling
+1. [ MSRP ](/help/communities/msrp.md) - MongoDB
+1. [ JSRP ](/help/communities/jsrp.md) - JCR
 
 ## Informatie over UGC-opslag {#about-ugc-storage}
 
-Wat belangrijk is om over opslag van UGC te weten is, wanneer een plaats wordt gevormd om ASRP of MSRP te gebruiken, wordt daadwerkelijke UGC niet opgeslagen in AEM [knooppuntopslag](/help/sites-deploying/data-store-config.md) (JCR).
+Wat belangrijk is om over opslag van UGC te weten is, wanneer een plaats wordt gevormd om ASRP of MSRP te gebruiken, wordt daadwerkelijke UGC niet opgeslagen in AEM [ knoopopslag ](/help/sites-deploying/data-store-config.md) (JCR).
 
 Hoewel er knooppunten in JCR kunnen zijn die de UGC schaduw geven om nuttige metagegevens te verschaffen, moeten deze knooppunten niet worden verward met de werkelijke UGC.
 
-Zie [Overzicht opslagbronprovider.](/help/communities/srp.md)
+Zie [ Overzicht van de Leverancier van het Middel van de Opslag.](/help/communities/srp.md)
 
 ## Beste praktijken {#best-practice}
 
@@ -66,14 +66,14 @@ Methoden om te voorkomen:
 
 ### Zoekverzamelingen gebruiken {#use-search-collections}
 
-Verschillende SRPs kan verschillende inheemse vraagtalen hebben. Gebruik methoden van het menu [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pakket om de aangewezen vraagtaal in werking te stellen.
+Verschillende SRPs kan verschillende inheemse vraagtalen hebben. De methodes van het gebruik van het {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pakket 0} com.adobe.cq.social.ugc.api om de aangewezen vraagtaal in werking te stellen.[
 
-Zie voor meer informatie [Essentiële zoekopdrachten](/help/communities/search-implementation.md).
+Voor meer informatie, zie {de Hoofdzaak van het 0} Onderzoek ](/help/communities/search-implementation.md).[
 
 ## Bronnen {#resources}
 
-* [Opslag van communautaire inhoud](/help/communities/working-with-srp.md) - bespreekt de beschikbare keuzen SRP voor een gemeenschappelijk opslag UGC
-* [Overzicht opslagbronprovider](/help/communities/srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
-* [SRP en UGC Essentials](/help/communities/srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
-* [Essentiële zoekopdrachten](/help/communities/search-implementation.md) - essentiële informatie voor het doorzoeken van UGC
-* [Refactoring voor sociale hulpmiddelen](/help/communities/socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes
+* [ Communautaire Opslag van de Inhoud ](/help/communities/working-with-srp.md) - bespreekt de beschikbare keuzen SRP voor een gemeenschappelijk opslag UGC
+* [ Overzicht van de Leverancier van het Middel van de Opslag ](/help/communities/srp.md) - inleiding en overzicht van het opslagruimtegebruik
+* [ SRP en Hoofdzaak UGC ](/help/communities/srp-and-ugc.md) - de gebruiksmethodes en voorbeelden van SRP
+* [ Hoofdzaak van het Onderzoek ](/help/communities/search-implementation.md) - essentiële informatie voor het zoeken UGC
+* [ SocialUtils die ](/help/communities/socialutils.md) Refactoring - in kaart gebrachte nutsmethodes aan huidige SRP hulpprogrammamethodes

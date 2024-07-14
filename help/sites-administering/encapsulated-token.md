@@ -24,7 +24,7 @@ Door gebrek, gebruikt AEM de Symbolische Handler van de Authentificatie om elk v
 
 Dit is van bijzonder belang voor horizontale schaalbaarheid. In een multi-instance opstelling zoals hieronder afgebeeld publiceert landbouwbedrijf, lading het in evenwicht brengen kan niet op een optimale manier worden bereikt. Met stateful authentificatie, zal de persisted authentificatiestatus slechts op de instantie beschikbaar zijn waar de gebruiker eerst voor authentiek wordt verklaard.
 
-![chlimage_1-33](assets/chlimage_1-33a.png)
+![ chlimage_1-33 ](assets/chlimage_1-33a.png)
 
 Neem het volgende scenario als voorbeeld:
 
@@ -42,7 +42,7 @@ Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze ver
 
 U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met MongoMK-auteurs en TarMK-publicatie-instanties hieronder:
 
-![chlimage_1-34](assets/chlimage_1-34a.png)
+![ chlimage_1-34 ](assets/chlimage_1-34a.png)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >
 >* Vaste sessies zijn ingeschakeld, of
 >
->* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet in situaties zullen worden gesteund waar de managers **maken** gebruikers tijdens het synchronisatieproces.
+>* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet in situaties zullen worden gesteund waar de managers **** gebruikers tijdens het synchronisatieproces creëren.
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
 
@@ -70,11 +70,11 @@ Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encaps
 Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
 1. Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
-1. Zoek de `com.adobe.granite.crypto.file` in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
+1. Zoek de `com.adobe.granite.crypto.file` -bundel in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
-   De `bundle.info` in elke map wordt de bundelnaam weergegeven.
+   In het `bundle.info` -bestand in elke map wordt de bundelnaam weergegeven.
 
 1. Navigeer naar de gegevensmap. Bijvoorbeeld:
 
@@ -86,7 +86,7 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. Plak de twee eerder gekopieerde bestanden.
-1. [De Cryptobundel vernieuwen](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie al actief is.
+1. [ verfrist de Bundel van Crypto ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie reeds loopt.
 
 1. Herhaal de bovenstaande stappen voor alle gevallen waarin u de toets wilt repliceren.
 
@@ -94,6 +94,6 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
 Zodra de sleutel HMAC is herhaald, kunt u Encapsulated Token via de Console van het Web toelaten:
 
-1. Wijs uw browser aan `https://serveraddress:port/system/console/configMgr`
-1. Zoek een vermelding die **Adobe Granite Token Authentication Handler** en klik erop.
-1. Vink in het volgende venster de **Ondersteuning voor ingekapselde token inschakelen** doos en druk **Opslaan**.
+1. De browser naar `https://serveraddress:port/system/console/configMgr` verwijzen
+1. Zoek een ingang genoemd **Adobe granite Token de Handler van de Authentificatie** en klik het.
+1. In het volgende venster, tik **toelaten ingekapselde symbolische steun** doos en druk **sparen**.

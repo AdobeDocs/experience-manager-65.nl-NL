@@ -1,6 +1,6 @@
 ---
 title: Codevoorbeelden
-description: Het team van de Adobe Consulting Services heeft een reeks Adobe Experience Manager-codevoorbeelden gegenereerd.
+description: Het Adobe Consulting Services Team heeft een reeks Adobe Experience Manager-codevoorbeelden gegenereerd.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Codevoorbeelden{#code-samples}
 
-Het team van de Diensten van de Adobe Consulting heeft een reeks van de codesteekproeven van Adobe Experience Manager (AEM) geproduceerd. Deze steekproeven zijn goed-becommentarieerde stukken van code helpen AEM Ontwikkelaars de belangrijkste bouwstenen van AEM begrijpen. De voorbeelden zijn hier beschikbaar: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+Het team van de Diensten van Adobe Consulting heeft een reeks van de codesteekproeven van Adobe Experience Manager (AEM) geproduceerd. Deze steekproeven zijn goed-becommentarieerde stukken van code helpen AEM Ontwikkelaars de belangrijkste bouwstenen van AEM begrijpen. De steekproeven zijn hier beschikbaar: [ https://adobe-consulting-services.github.io/acs-aem-samples/ ](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die niet vertrouwd zijn met AEM over fundamentele onderwerpen zoals projectinstelling, Core Components, Editable Templates, Client Libraries en componentontwikkeling: [Aan de slag met AEM Sites - WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Een meerdelig leerprogramma dat voor ontwikkelaars nieuw wordt ontworpen om fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt, en componentenontwikkeling te AEM behandelen: [ Begonnen het worden met AEM Sites - WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-Een Geweven malplaatje om een AEM project tot stand te brengen als uitgangspunt om uw eigen functionaliteit te ontwikkelen is beschikbaar [hier](https://github.com/adobe/aem-project-archetype).
+Een Gemaakt malplaatje om een AEM project als uitgangspunt tot stand te brengen om uw eigen functionaliteit te ontwikkelen is beschikbaar [ hier ](https://github.com/adobe/aem-project-archetype).
 
-Standaard, touch-UI-codevoorbeelden zijn beschikbaar [hier](/help/sites-developing/developing-components.md).
+De standaard, aanraking-toegelaten UI codesteekproeven zijn beschikbaar [ hier ](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >

@@ -25,10 +25,10 @@ Deze sectie omvat gedetailleerde informatie over logboeken beschikbaar om u te h
 >
 >Zie voor meer informatie over logboeken:
 >
->* [Onderhoud controlelogbestand in AEM](/help/sites-administering/operations-audit-log.md)
->* [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
+>* [ het Onderhoud van het Logboek van de Controle in AEM ](/help/sites-administering/operations-audit-log.md)
+>* [ Werkend met de Verslagen van de Controle en de Dossiers van het Logboek ](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
-CRX registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken en gestart, kunt u logbestanden op de volgende locaties vinden:
+CRX registreert gedetailleerde logbestanden. Nadat u QuickStart hebt uitpakken en gestart, kunt u logbestanden op de volgende locaties vinden:
 
 * crx-quickstart/launch/logs
 * crx-quickstart/server/logs
@@ -38,7 +38,7 @@ CRX registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken en g
 
 Het standaardlogboekniveau is INFO, dat wil zeggen, worden de DEBUG- berichten niet geregistreerd.
 
-Als u het niveau van het DEBUG-logbestand wilt activeren, gebruikt u de CRX-verkenner om de
+Als u het niveau van het DEBUG-logbestand wilt activeren, stelt u de
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
@@ -57,7 +57,7 @@ De logniveaus zijn als volgt:
 | 0 | Fatale fout | De handeling is mislukt en het installatieprogramma kan niet doorgaan. |
 |---|---|---|
 | 1 | Fout | De handeling is mislukt. De installatie gaat door, maar een deel van CRX is niet correct geïnstalleerd en werkt niet. |
-| 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk wel of niet correct. |
+| 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk niet correct. |
 | 3 | Informatie | De actie is geslaagd. |
 
 ## Uitgebreide optie gebruikt voor probleemoplossing {#verbose-option-used-for-troubleshooting}

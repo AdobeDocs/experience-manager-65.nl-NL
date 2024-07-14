@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Als ontwikkelaar kunt u uw app op elk gewenst moment op een apparaat of in een emulator uitvoeren, op voorwaarde dat u de ontwikkelomgeving hebt geconfigureerd.
 
@@ -32,26 +32,26 @@ PhoneGap CLI instellen (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.h
 
 Voor iOS: voor de ontwikkeling van iPhones en iPads hebt u Apple Xcode-IDE nodig.
 
-* Gratis downloaden [hier](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
-* Handleiding bij PhoneGap iOS-platform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
+* Download het voor vrije [ hier ](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* PhoneGap iOS-platformhulplijn (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
-Voor Android™: voor het ontwikkelen voor iPhones en iPads hebt u Google Android™ Stuido IDE nodig.
+Voor Android™: voor de ontwikkeling van iPhones en iPads hebt u Android™ Stuido IDE van Google nodig.
 
-* Gratis downloaden [hier](https://developer.android.com/studio).
-* Handleiding bij PhoneGap Android™-platform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
+* Download het voor vrije [ hier ](https://developer.android.com/studio).
+* PhoneGap Android™-platformhandleiding (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
-## De bron downloaden {#download-the-source}
+## De Source downloaden {#download-the-source}
 
 Wanneer u uw ontwikkelomgeving met succes hebt versneld, downloadt u de bron van de AEM App Build Tile:
 
 * Klik op de vervolgkeuzelijst PhoneGap Build-tegel.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![ chlimage_1-45 ](assets/chlimage_1-45.png)
 
-* Klik op Bron downloaden.
-* Selecteer de gewenste bron in het modaal van de Download Source.
+* Klik op Source downloaden.
+* Selecteer de gewenste bron in het modaal station van Source downloaden.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![ chlimage_1-46 ](assets/chlimage_1-46.png)
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ PhoneGap CLI kan een platformproject tot stand brengen, de bron compileren, en a
 
 >[!NOTE]
 >
->U kunt al deze stappen afzonderlijk uitvoeren, zie CLI-documenten van PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
+>U kunt al deze stappen afzonderlijk doen, zie CLI documenten PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. Controleer of u PhoneGap CLI hebt geïnstalleerd, zie hierboven.
 1. Navigeer in een consolevenster (of terminalvenster) naar de hoofdmap van de uitgepakte bron.
@@ -90,14 +90,14 @@ phonegap run ios
 >1. Navigeren naar deze nieuwe map (cd-test)
 >1. Uitvoeren `phonegap create helloWorld`
 >1. Navigeer in helloWorld (cd helloWorld)
->1. Uitvoeren `phonegap run android` (of vervang Android™ door iOS zoals hierboven beschreven).
->1. Emulator opent het runnen van uw onlangs gecreeerd App PhoneGap, die &quot;Apparaat Klaar&quot;zegt als de Brug JavaScript aan inheems operationeel is.
+>1. Voer `phonegap run android` uit (of vervang Android™ door iOS zoals hierboven beschreven).
+>1. Emulator opent het uitvoeren van uw nieuwe PhoneGap App, die &quot;Apparaat Klaar&quot;zegt als JavaScript Bridge aan inheems operationeel is.
 >
 >Dit het oplossen van problemen verifieert dat uw CLI van PhoneGap ontwikkelomgeving correct loopt.
 
-## Foutopsporing in JavaScript met Safari en IOS debuggen {#debug-javascripts-with-safari-and-ios-debug}
+## Foutopsporing in JavaScript met Safari en IOS {#debug-javascripts-with-safari-and-ios-debug}
 
-U kunt fouten in JavaScript van uw app opsporen met de ontwikkelaarsprogramma&#39;s van Safari, net als bij een webtoepassing.
+U kunt fouten in de JavaScript van uw app opsporen met de ontwikkelaarsprogramma&#39;s van Safari, net als bij een webtoepassing.
 
 ## Safari Developer Tools inschakelen {#enable-safari-developer-tools}
 
@@ -110,7 +110,7 @@ De gereedschappen voor ontwikkelaars inschakelen:
 
 * Klik op Geavanceerd in het venster Voorkeuren
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![ chlimage_1-47 ](assets/chlimage_1-47.png)
 
 * Schakel &quot;Ontwikkelmenu tonen in menubalk&quot; in
 * Het venster Voorkeuren sluiten
@@ -135,9 +135,9 @@ phonegap run <platform> --emulator
 * Het submenu iOS Simulator selecteren
 * Klik op home.html
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![ chlimage_1-48 ](assets/chlimage_1-48.png)
 
-## Foutopsporing in JavaScript met Safari&#39;s webcontrole {#debug-javascript-with-safari-s-web-inspector}
+## Fouten opsporen in JavaScript met Safari&#39;s webcontrole {#debug-javascript-with-safari-s-web-inspector}
 
 U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulator of apparaat werkt, stopt de uitvoering van uw app bij die onderbrekingspunten. U kunt de uitvoering doorlopen en de waarden in variabelen inspecteren.
 
@@ -146,11 +146,11 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 * Klik op het regelnummer naast een onderbrekingspunt
 * Interactie met apparaat of emulator
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![ chlimage_1-49 ](assets/chlimage_1-49.png)
 
 * Gebruik de besturingsknoppen om door te gaan met de uitvoering, stap over, stap in en stap uit de methoden:
 
-![Vijf verschillende werkende die controleknopen in een horizontale rij worden gericht.](do-not-localize/chlimage_1-4.png)
+![ Vijf verschillende werkende die controleknopen in een horizontale rij worden gericht.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
@@ -158,4 +158,4 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 
 ## De volgende stappen {#the-next-steps}
 
-Nadat u over het Ontwikkelen van Apps met CLI hebt geleerd PhoneGap, zie [Apparaatfuncties openen](/help/mobile/phonegap-access-device-features.md).
+Nadat u over het Ontwikkelen van Apps met CLI PhoneGap hebt geleerd, zie [ Toegang tot de Eigenschappen van het Apparaat ](/help/mobile/phonegap-access-device-features.md).

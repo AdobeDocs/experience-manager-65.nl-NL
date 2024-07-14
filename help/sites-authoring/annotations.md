@@ -40,18 +40,18 @@ Een annotatie plaatst een gekleurde markering/notitie op de pagina. Met de annot
 
 ## Annotaties {#annotations}
 
-Een speciale [mode](/help/sites-authoring/author-environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
+Een speciale [ wijze ](/help/sites-authoring/author-environment-tools.md#page-modes) wordt gebruikt voor het creëren van en het bekijken van annotaties.
 
 >[!NOTE]
 >
->Vergeet niet dat [opmerkingen](/help/sites-authoring/basic-handling.md#timeline) zijn ook beschikbaar voor het opgeven van feedback op een pagina.
+>Vergeet niet dat [ commentaren ](/help/sites-authoring/basic-handling.md#timeline) ook beschikbaar zijn voor het verstrekken van terugkoppelt op een pagina.
 
 >[!NOTE]
 >
 >U kunt verschillende bronnen van notities voorzien:
 >
->* [Annoteren van elementen](/help/assets/manage-assets.md#annotating)
->* [Video-elementen annoteren](/help/assets/managing-video-assets.md#annotate-video-assets)
+>* [ Annoterend activa ](/help/assets/manage-assets.md#annotating)
+>* [ Annoterend videoactiva ](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
 ### Een component annoteren {#annotating-a-component}
@@ -60,7 +60,7 @@ In de modus Annotatie kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
 1. U kunt de modus Annotatie activeren met het pictogram op de werkbalk (rechtsboven) wanneer u een pagina bewerkt:
 
-   ![Annoteren](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![ annoteert ](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    U kunt nu bestaande annotaties weergeven.
 
@@ -76,7 +76,7 @@ In de modus Annotatie kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
 1. Klik op de vereiste component (componenten die kunnen worden geannoteerd, worden gemarkeerd met een blauwe rand) om de annotatie toe te voegen en het dialoogvenster te openen:
 
-   ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
+   ![ screen_shot_2018-03-22at110606 ](assets/screen_shot_2018-03-22at110606.png)
 
    Hier kunt u het juiste veld en/of pictogram gebruiken om:
 
@@ -85,19 +85,19 @@ In de modus Annotatie kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
      De cursor verandert in een kruisdraad wanneer u een schets maakt. U kunt meerdere afzonderlijke lijnen tekenen. De schetslijn geeft de annotatiekleur weer en kan een pijl, cirkel of ovaal zijn.
 
-     ![Schets](do-not-localize/screen_shot_2018-03-22at110640.png)
+     ![ Sketch ](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Kies of wijzig de kleur:
 
-     ![Kleur kiezen/wijzigen](do-not-localize/chlimage_1-19.png)
+     ![ kiezen/verandering kleur ](do-not-localize/chlimage_1-19.png)
 
    * Verwijder de aantekening.
 
-     ![Annotatie verwijderen](do-not-localize/screen_shot_2018-03-22at110647.png)
+     ![ Schrap annotation ](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. U kunt het dialoogvenster met annotaties sluiten door buiten het dialoogvenster te klikken of erop te tikken. Een afgekapte weergave (het eerste woord) van de annotatie wordt samen met eventuele schetsen weergegeven:
 
-   ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
+   ![ screen_shot_2018-03-22at110850 ](assets/screen_shot_2018-03-22at110850.png)
 
 1. Nadat u een specifieke annotatie hebt bewerkt, kunt u:
 
@@ -121,4 +121,4 @@ In de modus Annotatie kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
 Annotaties worden niet weergegeven in de modus Bewerken, maar het symbool rechtsboven op de werkbalk geeft aan hoeveel annotaties er bestaan voor de huidige pagina. Het pictogram vervangt het standaardpictogram Annotaties, maar werkt nog steeds als een snelle koppeling die van/naar de modus Annotatie schakelt:
 
-![Indicator voor annotaties](assets/chlimage_1-242.png)
+![ Indicator van Annotaties ](assets/chlimage_1-242.png)

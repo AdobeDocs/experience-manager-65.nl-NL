@@ -26,7 +26,7 @@ We.Gov is een door de staat beheerde organisatie die adoptieve ouders de mogelij
 * Departement marine
 * Agentschap voor milieubescherming
 
-Zie voor meer informatie over de Freedom of Information Act [https://www.foia.gov/](https://www.foia.gov).
+Voor meer informatie over de Wet van de Vrijheid van Informatie, zie [ https://www.foia.gov/ ](https://www.foia.gov).
 
 Het scenario omvat de volgende personen:
 
@@ -42,26 +42,26 @@ Op grond van de Freedom of Information Act vraagt Sarah om een kopie van de &quo
 
 ### Zie het zelf {#see-it-yourself}
 
-In uw browser, open `https://<hostname>:<PublishPort>/wegov`. Selecteer Toepassingen > Alle toepassingen op de website Web.Gov. Selecteer Toepassen onder Toepassing voor FOIA-verzoek op de pagina Alle toepassingen.
+Open `https://<hostname>:<PublishPort>/wegov` in uw browser. Selecteer Toepassingen > Alle toepassingen op de website Web.Gov. Selecteer Toepassen onder Toepassing voor FOIA-verzoek op de pagina Alle toepassingen.
 
 ## Sarah start haar verzoek om informatie onder FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah kliks **Toepassen** en op de pagina &quot;Freedom of Information Act Request Form&quot; voert Sarah informatie in, waaronder:
+Sarah klikt **toepassen** en in de pagina van het Verzoek van de Vorm van het Verzoek van de Akte van de Vrijheid van Informatie, gaat Sarah informatie met inbegrip van het volgende in:
 
-* **Bureau:** Sarah geeft aan tot welk agentschap het verzoek is gericht als Department of Justice - Office of Information Policy.
+* **Agentschap:** Sarah specificeert het agentschap waaraan het verzoek als Afdeling van Justitie - Bureau van het Beleid van de Informatie werd gericht.
 
-* **Betalen tot**: Sarah geeft aan dat ze bereid is tot 100 dollar te betalen voor druk- en verzendkosten.
-* **Beschrijf de aanvraag in detail**: Sarah geeft aan &quot;Verzoek om kopie van de case logs Administration for Children and Families voor de begrotingsjaren 2013 tot en met 2016&quot;.
+* **zal tot** betalen: Sarah specificeert dat zij bereid is tot USD 100 voor druk en postage uitgaven te betalen.
+* **beschrijf het verzoek in detail**: Sarah specificeert &quot;het Verzoeken exemplaar van het Beleid voor Kinderen en Families caselogboeken voor begrotingsjaren 2013 door 2016.&quot;
 
-![Verzoek om een kopie van het dossier Administratie voor kinderen en gezinnen voor de begrotingsjaren 2013 tot en met 2016](assets/sarahfiosform.png)
+![ het verzoeken exemplaar van het Beleid voor Kinderen en Families caselogboeken voor begrotingsjaren 2013 door 2016 ](assets/sarahfiosform.png)
 
 Verzoek om een kopie van het dossier Administratie voor kinderen en gezinnen voor de begrotingsjaren 2013 tot en met 2016
 
-Sarah kan altijd selecteren **Opslaan** om een concept van het formulier op te slaan en er later op terug te komen om het formulier in te vullen en te verzenden. Sarah legt het formulier voor.
+Op elk ogenblik, kan Sarah **sparen** selecteren om een ontwerp van de vorm op te slaan en aan het later terug te komen om de vorm in te vullen en het voor te leggen. Sarah legt het formulier voor.
 
 >[!NOTE]
 >
->De workflow voor het hervatten van e-mailberichten werkt alleen met aangemelde gebruikers. In het scenario van de verwijzingsplaats, zorg ervoor dat de gebruiker Sarah Rose wordt toegevoegd. Sarah&#39;s aanmeldgegevens zijn `srose/password`.
+>De workflow voor het hervatten van e-mailberichten werkt alleen met aangemelde gebruikers. In het scenario van de verwijzingsplaats, zorg ervoor dat de gebruiker Sarah Rose wordt toegevoegd. Sarah&#39;s aanmeldgegevens zijn `srose/password` .
 
 ## John Jacobs ontvangt de aanvraag en keurt deze goed {#john-jacobs-receives-and-approves-the-application}
 
@@ -73,25 +73,25 @@ Wanneer Sarah de FOIA-toepassing invult en verzendt, wordt een record van de toe
 
 ### Zie het zelf {#see-it-yourself-1}
 
-U hebt toegang tot de AEM Inbox op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij AEM Inbox met jjacobs/password als gebruikersnaam/wachtwoord voor John Jacobs en zie de FOIA-toepassing. Voor informatie over het gebruik van AEM Inbox voor op formulieren gerichte workflowtaken raadpleegt u [Forms-toepassingen en -taken beheren in AEM Postvak In](/help/forms/using/manage-applications-inbox.md).
+U kunt tot AEM Inbox in https://&lt;***toegang hebben hostname***>:&lt; ***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij AEM Inbox met jjacobs/password als gebruikersnaam/wachtwoord voor John Jacobs en zie de FOIA-toepassing. Voor informatie over het gebruiken van AEM Inbox voor vorm-centric werkschematoepassingen, zie [ de toepassingen en de taken van Forms in AEM Inbox ](/help/forms/using/manage-applications-inbox.md) leiden.
 
-![johnjacobs](assets/johnjacobs.png)
+![ johnjacobs ](assets/johnjacobs.png)
 
 John Jacobs kan de toepassing van het toepassingsdashboard zien, goedkeuren of afwijzen. John Jacobs selecteert en opent de verzoekdetails en na het herzien van het verzoek, keurt het goed.
 
-![johnjacobstaskdetail-1](assets/johnjacobstaskdetail-1.png)
+![ johnjacobstaskdetail-1 ](assets/johnjacobstaskdetail-1.png)
 
-### <strong>Sarah ontvangt een bevestigingsbericht</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong> Sarah ontvangt een erkenningse-mail </strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 Nadat John Jacobs de toepassing goedkeurt, ontvangt Sarah een ontvangstbevestiging-e-mail van de website We.Gov. Sarah wordt op de hoogte gebracht van de kosten en de tijd die nodig zijn voor de behandeling van haar aanvraag. Het e-mailbericht bevat ook e-mail- en telefoongegevens die Sarah kan raadplegen voor updates van haar toepassing.
 
-![sarahroseemail](assets/sarahroseemail.png)
+![ sarahroseemail ](assets/sarahroseemail.png)
 
 ## Gloria ontvangt het FOIA-verzoek om goedkeuring op het tweede niveau {#gloria-receives-the-foia-request-for-second-level-approval}
 
 Nadat John Jacobs de vereiste informatie heeft ingevuld en het verzoek van Sarah heeft goedgekeurd, gaat het naar Gloria Rios voor de definitieve goedkeuring. Gloria herziet het bijgevoegde stuk met stukken en keurt het verzoek goed.
 
-![gloriariosinbox](assets/gloriariosinbox.png)
+![ gloriariosinbox ](assets/gloriariosinbox.png)
 
 ### Hoe werkt het {#how-it-works-2}
 
@@ -99,14 +99,14 @@ Wanneer John Jacobs het FOIA-verzoek goedkeurt, wordt een PDF of Document of Rec
 
 ### Zie voor uzelf {#see-for-yourself}
 
-U hebt toegang tot de AEM Inbox op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij de AEM Inbox met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios en raadpleeg het FOIS-verzoek.
+U kunt tot AEM Inbox in https://&lt;***toegang hebben hostname***>:&lt; ***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij de AEM Inbox met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios en raadpleeg het FOIS-verzoek.
 
 Gloria opent het verzoek en onderzoekt de bijzonderheden van het FOIA-verzoek. Na bestudering van de bijzonderheden van het verzoek en na te gaan of het haalbaar is de vereiste documenten over te leggen, keurt Gloria het verzoek goed.
 
-![gloriarioskeurt goed](assets/gloriariosapproves.png)
+![ gloriarios keurt ](assets/gloriariosapproves.png) goed
 
 ## Sarah ontvangt een melding dat haar verzoek is goedgekeurd {#sarah-receives-notification-that-her-request-is-approved}
 
 Nadat Gloria het FOIA-verzoek heeft goedgekeurd, ontvangt Sarah een e-mail met de kennisgeving dat haar verzoek is goedgekeurd. Het e-mailbericht bevat ook de informatie over de voorlopige tijdlijn voor het verzenden van het document en contactgegevens voor de follow-up van het verzoek.
 
-![sarahroseemaily](assets/sarahroseemailapproval.png)
+![ sarahroseemailapproval ](assets/sarahroseemailapproval.png)

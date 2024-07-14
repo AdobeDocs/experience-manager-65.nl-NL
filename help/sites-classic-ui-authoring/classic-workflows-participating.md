@@ -24,11 +24,11 @@ Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit
 
 U kunt de volgende handelingen uitvoeren om een werkitem te verwerken:
 
-* **Voltooid**
+* **Volledig**
 
   U kunt een item voltooien zodat de workflow naar de volgende stap kan gaan.
 
-* **Delegeren**
+* **Delegate**
 
   Als een stap aan u is toegewezen, maar om het even welke reden u geen actie kunt ondernemen, kunt u de stap aan een andere gebruiker of een groep delegeren.
 
@@ -48,37 +48,37 @@ U kunt de volgende handelingen uitvoeren om een werkitem te verwerken:
 
 Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
-* De **Status** De kolom van de console Websites wijst erop wanneer een pagina in een werkschema is:
+* De **kolom van de Status** van de console van Websites wijst erop wanneer een pagina in een werkschema is:
 
-  ![workflowstatus-1](assets/workflowstatus-1.png)
+  ![ werkstroom status-1 ](assets/workflowstatus-1.png)
 
 * Wanneer u, of een groep die u tot behoort, een het werkpunt als deel van een werkschema wordt toegewezen, verschijnt het het werkpunt in uw Inbox van het Werkschema van de AEM.
 
-  ![workflowinbox](assets/workflowinbox.png)
+  ![ workflowinbox ](assets/workflowinbox.png)
 
 ### Een deelnemersstap voltooien {#completing-a-participant-step}
 
 Nadat u de aangegeven actie hebt uitgevoerd, kunt u het werkitem voltooien, zodat de workflow kan worden voortgezet. Voer de volgende procedure uit om het werkitem te voltooien.
 
-1. Selecteer de workflowstap en klik op de knop **Voltooid** in de bovenste navigatiebalk.
-1. Selecteer in het dialoogvenster dat wordt weergegeven de optie **Volgende stap** De volgende stap moet worden uitgevoerd. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven. A **Opmerking** kan ook worden ingevoerd.
+1. Selecteer de werkschemastap en klik de **Volledige** knoop in de hoogste navigatiebar.
+1. In de resulterende dialoog, selecteer de **Volgende Stap**; namelijk de stap volgende uit te voeren. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven. A **Commentaar** kan ook zijn ingegaan.
 
-   ![workflowvoltooid](assets/workflowcomplete.png)
+   ![ werkflowcomplete ](assets/workflowcomplete.png)
 
    Het aantal vermelde stappen is afhankelijk van het ontwerp van het workflowmodel.
 
-1. Klikken **OK** om de actie te bevestigen.
+1. Klik **O.K.** om de actie te bevestigen.
 
 ### Een deelnemersstap delegeren {#delegating-a-participant-step}
 
 Gebruik de volgende procedure om een het werkpunt te delegeren.
 
-1. Klik op de knop **Delegeren** in de bovenste navigatiebalk.
-1. In het dialoogvenster gebruikt u de vervolgkeuzelijst om het dialoogvenster **Gebruiker** om het het werkpunt aan te delegeren. U kunt ook een **Opmerking**.
+1. Klik de **Afgevaardigde** knoop in de hoogste navigatiebar.
+1. In de dialoog, gebruik de drop-down lijst om de **Gebruiker** te selecteren om het het werkpunt aan te delegeren. U kunt a **Commentaar** ook toevoegen.
 
-   ![workflowgedelegeerde](assets/workflowdelegate.png)
+   ![ workflowdelegate ](assets/workflowdelegate.png)
 
-1. Klikken **OK** om de actie te bevestigen.
+1. Klik **O.K.** om de actie te bevestigen.
 
 ### Stap terug op een Stap van de Deelnemer uitvoeren {#performing-step-back-on-a-participant-step}
 
@@ -87,6 +87,6 @@ Gebruik de volgende procedure om terug te gaan.
 1. Klik op de knop Stap terug in de bovenste navigatiebalk.
 1. Selecteer in het resulterende dialoogvenster de vorige stap, dat wil zeggen de volgende stap, ook al is het een stap die eerder in de workflow plaatsvindt. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven.
 
-   ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
+   ![ screen_shot_2018-08-10at155325 ](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Klik op OK om de handeling te bevestigen.

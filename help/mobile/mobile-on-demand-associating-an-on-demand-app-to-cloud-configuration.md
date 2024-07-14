@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Door uw app aan een mobiel On-Demand-project te koppelen, kunt u inhoud maken, zoals artikelen, banners en verzamelingen binnen AEM, maar u kunt deze inhoud ook op aanvraag aanbieden voor mobiele apparaten.
 
@@ -32,11 +32,11 @@ Vanaf dat punt wordt het publiceren, voorvertonen en beheren van inhoud mogelijk
 >
 >Voordat u de cloudconfiguratie voor uw On-Demand-app gaat configureren, moet u bekend zijn met AEM Mobile Provisioning and Configuring AEM Mobile On-demand Services Client.
 >
->Zie voor meer informatie [AEM Mobile On-demand Services instellen](/help/mobile/aem-mobile-setup.md) in de sectie Beheer.
+>Voor details, zie [ Vestiging AEM Mobile On-demand Services ](/help/mobile/aem-mobile-setup.md) in de Administering sectie.
 
-Als u mobiele Cloud Servicen op aanvraag wilt configureren, klikt u op de bovenste versnelling in de rechterbovenhoek van het dialoogvenster **Verbinding beheren** element uit het dashboard van uw app.
+Om Mobiele Cloud Servicen op bestelling te vormen, klik de hoogste versnelling op de hoogste juiste hoek van de **Beheer de tegel van de Verbinding** van uw app dashboard.
 
-U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie .
+U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [ het Dashboard van de Toepassing van AEM Mobile ](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer details.
 
 ### Koppeling naar cloudconfiguratie instellen {#setting-up-link-to-cloud-configuration}
 
@@ -44,34 +44,34 @@ U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [
 >
 >Zorg ervoor dat u een bestaande configuratie voor on-demand clients en cloud hebt.
 >
->Zie voor meer informatie [AEM Mobile On-demand Services instellen](/help/mobile/aem-mobile-setup.md) in de sectie Beheer.
+>Voor details, zie [ Vestiging AEM Mobile On-demand Services ](/help/mobile/aem-mobile-setup.md) in de Administering sectie.
 
 In de volgende stappen wordt beschreven hoe u een koppeling naar de cloudconfiguratie instelt:
 
-1. Van **Mobiel**, kiest u **Apps** en vervolgens uw Mobile On-Demand-app uit de catalogus.
-1. Klik op het tandwielpictogram op het tabblad **Verbinding beheren** tegel.
+1. Van **Mobiel**, kies **Apps** en toen uw Mobiele On-Demand app van de catalogus.
+1. Klik het tandwielpictogram op **leiden de tegel van de Verbinding**.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
+   ![ chlimage_1-65 ](assets/chlimage_1-65.png)
 
-1. Voer de bestaande configuratie in of maak een configuratie door de **Configuratietitel**, **Apparaat-id**, en **Apparaattoken**.
+1. Ga reeds bestaande configuratie in of creeer door de **Titel van de Configuratie** in te gaan, **Identiteitskaart van het Apparaat**, en **Symbolisch van het Apparaat**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
+   ![ chlimage_1-66 ](assets/chlimage_1-66.png)
 
-1. Eenmaal uw **Apparaat-id** en **Apparaattoken** Kies uw On-Demand-project in de lijst.
+1. Zodra uw **Identiteitskaart van het Apparaat** en **Symbolisch van het Apparaat** worden geverifieerd, kies uw project On-Demand van de lijst.
 
-   Klikken **Verzenden**.
+   Klik **voorleggen**.
 
-   ![chlimage_1-67](assets/chlimage_1-67.png)
+   ![ chlimage_1-67 ](assets/chlimage_1-67.png)
 
-   De **Verbinding beheren** De tegel toont uw Configuratie van de Wolk.
+   De **beheert de tegel van de Verbinding** toont uw Configuratie van de Wolk.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![ chlimage_1-68 ](assets/chlimage_1-68.png)
 
    >[!CAUTION]
    >
    >Als u probeert om te veranderen welk project deze App met wordt geassocieerd, terwijl het schakelen van project in het dashboard, zult u een waarschuwing voor de kwesties van de inhoudintegriteit zoals aangetoond in het hieronder cijfer ontvangen:
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![ chlimage_1-69 ](assets/chlimage_1-69.png)
 
 ### De volgende stappen {#the-next-steps}
 

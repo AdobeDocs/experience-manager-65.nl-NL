@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
@@ -32,23 +32,23 @@ Banners vertegenwoordigen doorgaans grafische promotionele koppelingen.
 >
 >Zie de volgende bronnen in de online Help voor meer informatie over de volgende onderwerpen in AEM Mobile-apps:
 >
->* [Ontwerpaspecten](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Banners maken](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>* [ Creërend Banners ](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Een banner maken {#creating-a-banner}
 
 De algemene workflow voor het maken van een artikel is als volgt:
 
-1. Selecteren **Mobiel** van de zijspoor.
+1. Selecteer **Mobiel** van het zijspoor.
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl omlaag in de rechterbovenhoek van het dialoogvenster **Banners beheren** tegel.
+1. Klik de benedenpijl op de hoogste juiste hoek van de **Manage Banners** tegel.
 1. Werk door elke stap van de wizard om door te gaan met het maken van uw nieuwe banner.
-1. Klik op **Maken**.
-1. Uw nieuwe banner wordt weergegeven in het dialoogvenster **Banners beheren** tegel.
+1. Wanneer klaar, klik **creëren**.
+1. Uw nieuwe banner verschijnt in de **Manage Banners** tegel.
 
-![chlimage_1-6](assets/chlimage_1-6.gif)
+![ chlimage_1-6 ](assets/chlimage_1-6.gif)
 
 ## Een nieuwe banner importeren {#importing-a-new-banner}
 
@@ -61,9 +61,9 @@ Bestaande mobiele on-demand-inhoud kan worden gedownload (geïmporteerd) van Mob
 De workflow voor het importeren van een nieuw artikel
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl omlaag in de rechterbovenhoek van het dialoogvenster **Banners beheren** tegel en selecteer Banners importeren.
-1. Klikken **Banner importeren** in het dialoogvenster en vervolgens Sluiten.
-1. Uw mobiele On-Demand-artikelen worden nu weergegeven in de **Banners beheren** tegel.
+1. Klik de benedenpijl op de hoogste juiste hoek van de **Manage Banners** tegel en selecteer de Banners van de Invoer.
+1. Klik **de Banner van de Invoer** op de dialoog, dan dicht.
+1. Uw Mobiele artikelen op bestelling verschijnen nu in **leiden Banners** tegel.
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ De workflow voor het importeren van een nieuw artikel
 
 ## Een banner bewerken {#editing-a-banner}
 
-Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
+Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM Assets invoegen.
 
 >[!CAUTION]
 >
@@ -91,11 +91,11 @@ Banners hebben talrijke eigenschappen, zoals titels, beschrijvingen en afbeeldin
 De algemene workflow voor het weergeven/bewerken van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Kies een banner in het menu **Banners beheren** tegel.
+1. Kies een banner van de **Beheer Banners** tegel.
 
-1. Selecteren **Eigenschappen** in de actiebalk.
+1. Selecteer **Eigenschappen** van de actiebar.
 1. Alle beschikbare metagegevens voor dat artikel weergeven.
-1. Bewerk desgewenst de metagegevens en klik op **Opslaan** wanneer gereed.
+1. Bewerk desgewenst de metagegevens en klik op **Opslaan** wanneer u klaar bent.
 1. U kunt de wijzigingen desgewenst direct uploaden naar Mobiel op aanvraag.
 
 ## Een banner uploaden {#uploading-a-banner}
@@ -104,13 +104,13 @@ De uploadactie kopieert de geselecteerde inhoud en voegt het aan een Mobiel proj
 
 De algemene workflow voor het uploaden van een banner:
 
-1. Van **Mobiel**, kiest u uw mobiele On-Demand-app in de catalogus.
-1. In de **Banners beheren** Selecteer een banner die u wilt uploaden naar Mobiel op aanvraag.
+1. Van **Mobiel**, kies uw Mobiele On-Demand app van de catalogus.
+1. In de **beheert Banners** tegel, selecteer een banner voor upload aan Mobiel op bestelling.
 1. Voeg desgewenst meer banners toe in de lijstweergave.
-1. Selecteren **Uploaden** Klik in de actiebalk op Uploaden in het dialoogvenster.
+1. Selecteer **uploaden** van de actiebar, dan klik uploaden in de dialoog.
 1. Uw banner(s) worden nu geüpload naar Mobile On-Demand.
 
-![chlimage_1-7](assets/chlimage_1-7.gif)
+![ chlimage_1-7 ](assets/chlimage_1-7.gif)
 
 ## Een banner verwijderen {#deleting-a-banner}
 
@@ -119,11 +119,11 @@ Met deze bewerking verwijdert u de geselecteerde banner van Mobiel op aanvraag e
 De algemene workflow voor het verwijderen van een banner:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer de banner die u wilt verwijderen in het dialoogvenster **Banners beheren** tegel.
+1. Selecteer de banner in de **te schrappen Banners** tegel leiden.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
-1. Klikken **Verwijderen** in de actiebalk.
+1. Klik **Schrapping** van de actiebar.
 1. Controleer of u gegevens uit AEM en mobiel op aanvraag wilt verwijderen.
-1. Klikken **Verwijderen**.
+1. Klik **Schrapping**.
 1. Uw banner is nu verwijderd uit de lijst.
 
 ### De volgende stappen {#the-next-steps}

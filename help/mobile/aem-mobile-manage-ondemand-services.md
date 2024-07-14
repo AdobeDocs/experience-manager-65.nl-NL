@@ -22,7 +22,7 @@ Op deze pagina wordt het voorvertonen met de Preflight-app uitgelegd.
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 De volgende handelingen worden uitgevoerd op de toepassing als geheel.
 
@@ -35,16 +35,16 @@ Met de Preflight-app Mobiel op aanvraag kunt u alle projecten weergeven waartoe 
 ## Voorvertonen met Preflight {#previewing-with-preflight-1}
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de ellips (...) in het menu **Artikelen beheren** (of Banners/Verzamelingen).
-1. Selecteren **Preflight** in de actiebalk.
-1. Klikken **Preflight activeren** in het dialoogvenster.
+1. Klik de ellips (...) van **leiden Artikelen** (of Banners/Collections) tegel.
+1. Selecteer **Preflight** van de actiebar.
+1. Klik **activeren Preflight** van de dialoog.
 1. Uw app is nu gereed voor voorvertoning op de Preflight-app voor mobiele apparaten op aanvraag.
 
-![chlimage_1-8](assets/chlimage_1-8.gif)
+![ chlimage_1-8 ](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren door pagina&#39;s. Als u meer wilt weten over Preflight App, klikt u op [hier](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren door pagina&#39;s. Om diepgaand over Preflight App te leren, klik [ hier ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Aan de slag {#getting-ahead}

@@ -22,22 +22,22 @@ ht-degree: 0%
 >
 >In dit document wordt beschreven hoe u het ontwerpen van pagina&#39;s kunt aanpassen in de moderne interface met aanraakbediening. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-Adobe Experience Manager (AEM) biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina&#39;s (en de [consoles](/help/sites-developing/customizing-consoles-touch.md)) van de ontwerpinstantie.
+Adobe Experience Manager (AEM) verstrekt diverse mechanismen om u de pagina auteursfunctionaliteit (en de [ consoles ](/help/sites-developing/customizing-consoles-touch.md)) van uw auteursinstantie te laten aanpassen.
 
 * Clientlibs
 
-  Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe client moet:
+  Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clientlib moet:
 
-   * afhankelijk van de creatie clientlib `cq.authoring.editor.sites.page`
-   * deel uitmaken van de passende `cq.authoring.editor.sites.page.hook` categorie
+   * zijn afhankelijk van de client-client voor het schrijven van programmacode `cq.authoring.editor.sites.page`
+   * deel uitmaken van de juiste categorie `cq.authoring.editor.sites.page.hook`
 
 * Bedekkingen
 
-  Bedekkingen zijn gebaseerd op knooppuntdefinities en laten u de standaardfunctionaliteit bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat de optie [fusie van bronnen](/help/sites-developing/sling-resource-merger.md) staat overerving toe.
+  Bedekkingen zijn gebaseerd op knooppuntdefinities en u kunt de standaardfunctionaliteit (in `/libs` ) bedekken met uw eigen aangepaste functionaliteit (in `/apps` ). Wanneer het creëren van een bekleding wordt een 1:1 exemplaar van origineel niet vereist, aangezien de [ dalende middelfusie ](/help/sites-developing/sling-resource-merger.md) voor overerving toestaat.
 
 >[!NOTE]
 >
->Zie voor meer informatie [JS-documentatieset](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+>Voor meer informatie, zie [ JS documentatiereeks ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor het schrijven van pagina&#39;s in uw AEM uit te breiden. Een selectie wordt hieronder behandeld (op een hoog niveau).
 
@@ -45,33 +45,33 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 >
 >Zie het volgende voor meer informatie:
 >
->* Gebruiken en maken [clientlibs](/help/sites-developing/clientlibs.md).
->* Gebruiken en maken [bedekkingen](/help/sites-developing/overlays.md).
->* [Graniet](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Structuur van de interface voor AEM aanraakbediening](/help/sites-developing/touch-ui-structure.md) voor meer informatie over de structuurgebieden die worden gebruikt voor het ontwerpen van pagina&#39;s.
+>* Het gebruiken van en het creëren van [ clientlibs ](/help/sites-developing/clientlibs.md).
+>* Het gebruiken van en het creëren van [ bekledingen ](/help/sites-developing/overlays.md).
+>* [ Graniet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [ Structuur van de AEM aanraking-Toegelaten UI ](/help/sites-developing/touch-ui-structure.md) voor details van de structurele gebieden die voor paginaontwerp worden gebruikt.
 >
 
 
 >[!CAUTION]
 >
->***Niet gebruiken*** om het even wat in `/libs` pad.
+>****** verander niets in de `/libs` weg.
 >
->De reden is dat de inhoud van `/libs` wordt overschreven, de volgende keer u uw exemplaar (en kan goed worden beschreven wanneer u of hotfix of eigenschapspak toepast) bevordert.
+>De reden hiervoor is dat de inhoud van `/libs` wordt overschreven, de volgende keer dat u een upgrade uitvoert van uw exemplaar (en dat u deze mogelijk overschrijft wanneer u een hotfix- of functiepakket toepast).
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
->1. Breng wijzigingen aan in `/apps`
+>1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het in `/libs` staat) onder `/apps`
+>1. Breng eventuele wijzigingen aan binnen `/apps`
 
 ## Nieuwe laag toevoegen (modus) {#add-new-layer-mode}
 
-Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met [lagen](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelaars en doelwitten.
+Wanneer u een pagina uitgeeft, zijn er diverse [ beschikbare wijzen ](/help/sites-authoring/author-environment-tools.md#page-modes). Deze wijzen worden uitgevoerd gebruikend [ lagen ](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelaars en doelwitten.
 
 ### Voorbeeld van laag: status van actieve kopie {#layer-example-live-copy-status}
 
-Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens die betrekking hebben op [multisite beheer](/help/sites-administering/msm.md) en markeert deze in de laag.
+Een standaard AEM instantie verstrekt de laag MSM. Dit heeft toegang tot gegevens met betrekking tot [ multisite beheer ](/help/sites-administering/msm.md) en benadrukt het in de laag.
 
-Als u het wilt zien in actie, kunt u [We.Kopie in de detailhandel](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (of een andere live kopiëren pagina) en selecteer de **Status van live kopiëren** -modus.
+Om het in actie te zien, kunt u om het even welke ](/help/sites-developing/we-retail-globalized-site-structure.md) pagina van het wij.Retail taalexemplaar [ uitgeven (of een andere levende exemplaarpagina) en de **Levende wijze van de Status van het Exemplaar** selecteren.
 
 U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
@@ -85,8 +85,8 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-creatie-nieuw-laag-wijze project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
+* [ open aem-authoring-new-layer-mode project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
 
 ## Nieuwe selectiecategorie toevoegen aan de middelenbrowser {#add-new-selection-category-to-asset-browser}
 
@@ -94,31 +94,31 @@ In de middelenbrowser worden elementen van verschillende typen/categorieën weer
 
 ### Codevoorbeeld {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` Dit is een voorbeeldpakket dat aangeeft hoe u een groep aan de zoeker van middelen kunt toevoegen. Dit voorbeeld maakt verbinding met [Flickr](https://www.flickr.com)s public stream en toont deze in het zijpaneel.
+`aem-authoring-extension-assetfinder-flickr` is een voorbeeldpakket dat aangeeft hoe u een groep aan de elementenzoeker kunt toevoegen. Dit voorbeeld verbindt met [ de openbare stroom van Flickr ](https://www.flickr.com) en toont hen in het zijpaneel.
 
 CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-authoring-extension-assetfinder-flickr project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
+* [ open aem-authoring-extension-assetfinder-flickr project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
 
 ## Bronnen filteren {#filtering-resources}
 
 Bij het ontwerpen van pagina&#39;s moet de gebruiker vaak bronnen selecteren (bijvoorbeeld pagina&#39;s, componenten en elementen). Dit kan bijvoorbeeld de vorm aannemen van een lijst waaruit de auteur een item moet kiezen.
 
-Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Als de [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Graniet](/help/sites-developing/touch-ui-concepts.md#granite-ui) wordt gebruikt om de gebruiker toe te staan om de weg aan een bepaalde middel te selecteren, kunnen de voorgestelde wegen op de volgende manier worden gefilterd:
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Bijvoorbeeld, als de [`pathbrowser` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [ graniet ](/help/sites-developing/touch-ui-concepts.md#granite-ui) component wordt gebruikt om de gebruiker toe te staan om de weg aan een bepaald middel te selecteren, kunnen de voorgestelde wegen op de volgende manier worden gefiltreerd:
 
-* Implementeer de aangepaste voorspelling door deze te implementeren [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
-* Geef een naam voor de voorspelling op en verwijs deze naam naar het tabblad `pathbrowser`.
+* Implementeer de aangepaste voorspelling door de [`com.day.cq.commons.predicate.AbstractNodePredicate` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) -interface te implementeren.
+* Geef een naam voor de voorspelling op en verwijs die naam wanneer u de voorspelling van `pathbrowser` gebruikt.
 
-Zie voor meer informatie over het maken van een aangepaste predikaat [dit artikel](/help/sites-developing/implementing-custom-predicate-evaluator.md).
+Voor verder detail bij het creëren van een douane predikt, zie [ dit artikel ](/help/sites-developing/implementing-custom-predicate-evaluator.md).
 
 >[!NOTE]
 >
->Een aangepaste voorspelling implementeren door `com.day.cq.commons.predicate.AbstractNodePredicate` de interface werkt ook in klassieke UI.
+>Het implementeren van een aangepaste voorspelling door het implementeren van een `com.day.cq.commons.predicate.AbstractNodePredicate` -interface werkt ook in de klassieke UI.
 >
->Zie [dit kennisbasisartikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) voor een voorbeeld van het uitvoeren van een douane predikaat in klassieke UI.
+>Zie [ dit artikel van de kennisbasis ](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) voor een voorbeeld om een douane uit te voeren predikt in klassieke UI.
 
 ## Nieuwe handeling toevoegen aan werkbalk Component {#add-new-action-to-a-component-toolbar}
 
@@ -126,14 +126,14 @@ Elke component (gewoonlijk) heeft een werkbalk die toegang biedt tot een reeks h
 
 ### Codevoorbeeld {#code-sample-2}
 
-`aem-authoring-extension-toolbar-screenshot` Dit is een voorbeeldpakket dat laat zien hoe u een aangepaste werkbalkactie maakt om componenten te renderen.
+`aem-authoring-extension-toolbar-screenshot` is een voorbeeldpakket dat aangeeft hoe u een aangepaste werkbalkactie kunt maken om componenten te renderen.
 
 CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-authoring-extension-toolbar-screenshot project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
+* [ open aem-auteurs-uitbreiding-toolbar-screenshot project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
 ## Nieuwe plaatseditor toevoegen {#add-new-in-place-editor}
 
@@ -156,9 +156,9 @@ In een standaard AEM-installatie:
 
          * eigenschap: `editorType`
 
-           Bepaalt het type van gealigneerde redacteur die wordt gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijvoorbeeld `text`, `textimage`, `image`, `title`.
+           Definieert het type inline-editor dat wordt gebruikt wanneer de bewerking op plaats wordt geactiveerd voor die component, bijvoorbeeld `text` , `textimage` , `image` , `title` .
 
-1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knooppunt met configuraties en een `plugin` -knooppunt voor de benodigde configuratiegegevens van de plug-in.
+1. Aanvullende configuratiedetails van de editor kunnen worden geconfigureerd met een `config` -knooppunt met configuraties en een `plugin` -knooppunt voor de benodigde insteekconfiguratiedetails.
 
    Hieronder ziet u een voorbeeld van het definiëren van hoogte-breedteverhoudingen voor de uitsnijdplug-in van de afbeeldingscomponent. Vanwege de beperkte schermgrootte zijn de hoogte-breedteverhoudingen voor uitsnijden verplaatst naar de volledige schermeditor en kunnen deze alleen daar worden weergegeven.
 
@@ -184,7 +184,7 @@ In een standaard AEM-installatie:
 
    >[!CAUTION]
    >
-   >Uitsnijdverhoudingen AEM, zoals ingesteld door de `ratio` eigenschap, worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De gebruikers van de auteur zullen zich niet van enig verschil bewust zijn op voorwaarde dat u bepaalt `name` duidelijk bezit aangezien dit is wat in UI wordt getoond.
+   >AEM gewassenverhoudingen, zoals die door het `ratio` bezit worden geplaatst, worden bepaald als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De ontwerpgebruikers zijn zich niet bewust van enig verschil op voorwaarde dat u de eigenschap `name` duidelijk definieert, aangezien dit is wat wordt weergegeven in de gebruikersinterface.
 
 #### Een nieuwe plaatseditor maken {#creating-a-new-in-place-editor}
 
@@ -208,45 +208,45 @@ Om een nieuwe op zijn plaats redacteur (binnen uw clientlib) uit te voeren:
 
 #### Codevoorbeeld voor het maken van een nieuwe plaatseditor {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` Dit is een voorbeeldpakket waarin wordt getoond hoe u een lokale editor in AEM kunt maken.
+`aem-authoring-extension-inplace-editor` is een voorbeeldpakket waarin wordt getoond hoe u een lokale editor in AEM kunt maken.
 
 CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-authoring-extension-inplace-editor project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
+* [ open aem-authoring-extension-inplace-redacteursproject op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
 #### Meerdere lokale editors configureren {#configuring-multiple-in-place-editors}
 
-Het is mogelijk om een component te vormen zodat het veelvoudige op zijn plaats redacteurs heeft. Wanneer er meerdere editors op locatie zijn geconfigureerd, kunt u de juiste inhoud selecteren en de juiste editor openen. Zie de [Meerdere lokale editors configureren](/help/sites-developing/multiple-inplace-editors.md) documentatie voor meer informatie.
+Het is mogelijk om een component te vormen zodat het veelvoudige op zijn plaats redacteurs heeft. Wanneer er meerdere editors op locatie zijn geconfigureerd, kunt u de juiste inhoud selecteren en de juiste editor openen. Zie [ het Vormen Veelvoudige In-Place documentatie van Editors ](/help/sites-developing/multiple-inplace-editors.md) voor meer informatie.
 
 ## Handeling Nieuwe pagina toevoegen {#add-a-new-page-action}
 
-Als u een nieuwe paginahandeling wilt toevoegen aan de pagina-werkbalk, bijvoorbeeld een handeling **Terug naar sites** (console) handeling.
+Om een nieuwe paginaactie aan de paginatoolbar toe te voegen, bijvoorbeeld, a **terug naar Plaatsen** (console) actie.
 
 ### Codevoorbeeld {#code-sample-3}
 
-`aem-authoring-extension-header-backtosites` is een voorbeeldpakket dat toont hoe te om een actie van de douanekopbalbar tot stand te brengen om terug naar de console van Plaatsen te springen.
+`aem-authoring-extension-header-backtosites` is een voorbeeldpakket waarin wordt getoond hoe u een aangepaste actie voor de koptekstbalk kunt maken om terug te gaan naar de Sites-console.
 
 CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-authoring-extension-header-backtosites project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
+* [ open aem-authoring-extension-header-backtosites project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
 ## De workflow voor het aanvragen van activering aanpassen {#customizing-the-request-for-activation-workflow}
 
-De workflow buiten de box, **Verzoek om activering**:
+Het uit-van-de-dooswerkschema, **Verzoek om Activering**:
 
-* Wordt automatisch weergegeven in het juiste menu wanneer een inhoudsauteur **heeft geen** de juiste replicatierechten, maar **heeft** lidmaatschap van DAM-gebruikers en auteurs.
+* Zal automatisch op het aangewezen menu verschijnen wanneer een inhoudsauteur **** niet de aangewezen replicatierechten heeft, maar **heeft** lidmaatschap van DAM-Gebruikers en Auteurs.
 
 * Anders wordt er niets weergegeven, omdat de replicatierechten zijn verwijderd.
 
-Voor een aangepast gedrag bij een dergelijke activering kunt u de **Verzoek om activering** workflow:
+Om aangepast gedrag op dergelijke activering te hebben, kunt u het **Verzoek om het werkschema van de Activering** bedekken:
 
-1. In `/apps` bedekken de **Sites** wizard:
+1. In `/apps` bedekking de **2} tovenaar van Plaatsen {:**
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -256,5 +256,5 @@ Voor een aangepast gedrag bij een dergelijke activering kunt u de **Verzoek om a
    >
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
-1. Werk de [workflowmodel](/help/sites-developing/workflows-models.md) en gerelateerde configuraties/scripts, indien vereist.
-1. Rechts van de [`replicate` action](/help/sites-administering/security.md#actions) van alle relevante gebruikers voor alle relevante pagina&#39;s; om deze workflow als een standaardactie te laten activeren wanneer een van de gebruikers een pagina probeert te publiceren (of te repliceren).
+1. Werk het [ werkschemamodel ](/help/sites-developing/workflows-models.md) en verwante configuraties/manuscripten zoals vereist bij.
+1. Verwijder het recht op de [`replicate` actie ](/help/sites-administering/security.md#actions) van alle aangewezen gebruikers voor alle relevante pagina&#39;s; om dit werkschema als standaardactie teweeggebracht te hebben wanneer om het even welke gebruikers proberen om een pagina te publiceren (of te herhalen).

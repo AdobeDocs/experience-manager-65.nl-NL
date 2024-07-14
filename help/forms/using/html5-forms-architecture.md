@@ -21,19 +21,19 @@ ht-degree: 0%
 
 ## Architectuur {#architecture}
 
-De functionaliteit voor HTML5-formulieren wordt geïmplementeerd als een pakket binnen de ingesloten AEM-instantie en wordt als REST-eindpunt via HTTP/S beschikbaar gemaakt met RESTful [Apache Sling-architectuur](https://sling.apache.org/).
+HTML5 vormenfunctionaliteit wordt opgesteld als pakket binnen de ingebedde AEM instantie en wordt blootgesteld als eindpunt van REST over HTTP/S gebruikend RESTful [ Apache Sling Architecture ](https://sling.apache.org/).
 
-![02-aem-forms-architectuur_large](assets/02-aem-forms-architecture_large.jpg)
+![ 02-a-a-form-architectuur_large ](assets/02-aem-forms-architecture_large.jpg)
 
 ### Sling Framework gebruiken {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/) is hulpbronnengericht. Er wordt een aanvraag-URL gebruikt om de bron eerst op te lossen. Elke bron heeft een **sling:resourceType** (of **sling:resourceSuperType**). Gebaseerd op dit bezit, de verzoekmethode, en de eigenschappen van het verzoek URL, wordt een sling manuscript dan geselecteerd om het verzoek te behandelen. Dit sling script kan een JSP of een servlet zijn. Voor HTML5-formulieren: **Profiel** knooppunten fungeren als slingerbronnen en **Profielrenderer** fungeert als het sling-script dat de aanvraag verwerkt om het mobiele formulier met een bepaald profiel te genereren. A **Profielrenderer** is JSP die parameters van een verzoek leest en de Dienst van Forms OSGi roept.
+[ Apache Sling ](https://sling.apache.org/) is middel-centric. Er wordt een aanvraag-URL gebruikt om de bron eerst op te lossen. Elk middel heeft a **sling:resourceType** (of **sling:resourceSuperType**) bezit. Gebaseerd op dit bezit, de verzoekmethode, en de eigenschappen van het verzoek URL, wordt een sling manuscript dan geselecteerd om het verzoek te behandelen. Dit sling script kan een JSP of een servlet zijn. Voor HTML5 vormen, **de knopen van het Profiel** handelen als sling middelen en **Renderer van het Profiel** handelt als sling manuscript dat het verzoek behandelt om de mobiele vorm met een bepaald profiel terug te geven. A **Renderer van het Profiel** is JSP die parameters van een verzoek leest en Forms OSGi Service roept.
 
-Voor details over het eindpunt van REST en gesteunde verzoekparameters, zie [Formuliersjabloon renderen](/help/forms/using/rendering-form-template.md).
+Voor details op REST eindpunt en gesteunde verzoekparameters, zie [ Teruggevend het Malplaatje van de Vorm ](/help/forms/using/rendering-form-template.md).
 
-Wanneer een gebruiker een verzoek indient van een clientapparaat zoals een iOS- of Android™-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Vanuit dit profielknooppunt wordt het **sling:resourceSuperType** en **sling:resourceType** om te bepalen welke scripts beschikbaar zijn die deze aanvraag voor het renderen van formulieren kunnen verwerken. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst Forms OSGi.
+Wanneer een gebruiker een verzoek indient van een clientapparaat zoals een iOS- of Android™-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Van dit Knoop van Profiel, leest het **sling:resourceSuperType** en **sling:resourceType** om alle beschikbare manuscripten te bepalen die deze Vorm kunnen behandelen geeft verzoek terug. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst Forms OSGi.
 
-Zie voor meer informatie over het oplossen van scriptoplossingen [AEM Cheatblad](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) of [Apache Sling Url-decompositie](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
+Voor meer details bij het sling van manuscriptresolutie, zie [ AEM het Schuiven het Blad van de Cheat ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) of [ Apache het Schuiven Url decomposition ](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
 #### Typische stroom van de de vraagvraag van de vormverwerking {#typical-form-processing-call-flow}
 
@@ -41,7 +41,7 @@ Met HTML5-formulieren worden alle tussenliggende objecten in cache geplaatst die
 
 Mobiel formulier behoudt twee verschillende niveaus van cache, namelijk de PreRender-cache en de Render-cache. Het preRender-cache bevat alle fragmenten en afbeeldingen van een opgeloste sjabloon en het Render-cache bevat gerenderde inhoud, zoals HTML.
 
-![Workflow voor HTML5-formulieren](assets/cacheworkflow.png)
+![ HTML5 vormenwerkschema ](assets/cacheworkflow.png)
 
 Workflow voor HTML5-formulieren
 
@@ -49,26 +49,26 @@ In HTML5-formulieren worden geen sjablonen met ontbrekende verwijzingen naar fra
 
 De dienst van Forms OSGi verwerkt een verzoek in twee stappen:
 
-* **Indeling en initiële formulierstatus genereren**: Forms OSGi geeft de dienst terug roept de component van het Geheime voorgeheugen van Forms om te bepalen als de vorm reeds in het voorgeheugen ondergebracht is en niet ongeldig is gemaakt. Als het formulier in de cache is opgeslagen en geldig is, dient het de gegenereerde HTML uit de cache. Als het formulier ongeldig wordt gemaakt, genereert de Forms OSGi-renderservice de Initial Form Layout and Form State in XML-indeling. Deze XML wordt door de Forms OSGi-service getransformeerd in de indeling HTML en de initiële JSON-formulierstatus en vervolgens in de cache geplaatst voor volgende aanvragen.
-* **Vooraf gevulde Forms**: Als een gebruiker tijdens het renderen formulieren aanvraagt met vooraf ingevulde gegevens, roept de Forms OSGi-renderservice de Forms-servicecontainer aan en wordt een nieuwe formulierstatus gegenereerd met samengevoegde gegevens. Nochtans, aangezien de lay-out reeds in de bovengenoemde stap wordt geproduceerd, is deze vraag sneller dan de eerste vraag. Met deze aanroep worden alleen de gegevenssamenvoeging uitgevoerd en worden de scripts op de gegevens uitgevoerd.
+* **Lay-out en de Aanvankelijke generatie van de Staat van de Vorm**: Forms OSGi geeft de dienst terug roept de component van het Geheime voorgeheugen van Forms om te bepalen als de vorm reeds in het voorgeheugen ondergebracht is en niet ongeldig is gemaakt. Als het formulier in de cache is opgeslagen en geldig is, dient het de gegenereerde HTML uit de cache. Als het formulier ongeldig wordt gemaakt, genereert de Forms OSGi-renderservice de Initial Form Layout and Form State in XML-indeling. Deze XML wordt door de Forms OSGi-service getransformeerd in de indeling HTML en de initiële JSON-formulierstatus en vervolgens in de cache geplaatst voor volgende aanvragen.
+* **Voorbevolkte Forms**: Terwijl het teruggeven, als een gebruiker om vormen met vooraf ingevulde gegevens verzoekt, geeft Forms OSGi de dienstcontainer van Forms terug en produceert een nieuwe staat van de Vorm met samengevoegde gegevens. Nochtans, aangezien de lay-out reeds in de bovengenoemde stap wordt geproduceerd, is deze vraag sneller dan de eerste vraag. Met deze aanroep worden alleen de gegevenssamenvoeging uitgevoerd en worden de scripts op de gegevens uitgevoerd.
 
-Als er een update in het formulier is of een van de elementen die in het formulier worden gebruikt, detecteert de component in de formuliercache dit en wordt de cache voor dat formulier ongeldig gemaakt. Zodra de Forms OSGi-service de verwerking heeft voltooid, voegt de Profile Renderer jsp JavaScript-bibliotheekverwijzingen en -stijlen toe aan dit formulier en wordt de reactie op de client geretourneerd. Een typische webserver zoals [Apache](https://httpd.apache.org/) U kunt hier gebruiken met compressie HTML ingeschakeld. Een webserver zou de responsgrootte, het netwerkverkeer en de tijd die nodig is om de gegevens tussen de server en de clientcomputer te streamen aanzienlijk verminderen.
+Als er een update in het formulier is of een van de elementen die in het formulier worden gebruikt, detecteert de component in de formuliercache dit en wordt de cache voor dat formulier ongeldig gemaakt. Zodra de Forms OSGi-service de verwerking heeft voltooid, voegt de Profile Renderer jsp JavaScript-bibliotheekreferenties en -stijlen toe aan dit formulier en wordt de reactie op de client geretourneerd. Een typische Webserver zoals [ Apache ](https://httpd.apache.org/) kan hier met HTML compressie worden gebruikt. Een webserver zou de responsgrootte, het netwerkverkeer en de tijd die nodig is om de gegevens tussen de server en de clientcomputer te streamen aanzienlijk verminderen.
 
-Wanneer een gebruiker het formulier verzendt, verzendt de browser de status van het formulier in JSON-indeling naar de [serviceproxy verzenden](../../forms/using/service-proxy.md); dan produceert de voorleggingsde dienstvolmacht gegevens XML gebruikend JSON gegevens en legt dat gegevens XML voor om eindpunt voor te leggen.
+Wanneer een gebruiker de vorm voorlegt, verzendt browser staat van vorm in formaat JSON naar [ voorlegt de dienstvolmacht ](../../forms/using/service-proxy.md); dan produceert de voorlegt de dienstvolmacht van de dienst een gegevens XML gebruikend gegevens JSON en legt die gegevens XML voor om eindpunt voor te leggen.
 
 ## Onderdelen {#components}
 
-U hebt een AEM Forms-add-on-pakket nodig om HTML5-formulieren in te schakelen. Voor informatie over het installeren van het AEM Forms-invoegtoepassingspakket gaat u naar [AEM Forms installeren en configureren](../../forms/using/installing-configuring-aem-forms-osgi.md).
+U hebt een AEM Forms-add-on-pakket nodig om HTML5-formulieren in te schakelen. Voor informatie over het installeren van het toe:voegen-op pakket van AEM Forms, zie [ Installerend en het vormen AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 ### OSGi-componenten (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** is de weergavenaam van de OSGi-bundel voor HTML5-formulieren bij weergave vanuit de Bundle View of Felix admin Console (https://)[host]:[poort]/systeem/console/bundels).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** is de vertoningsnaam van de HTML5 bundel OSGi wanneer bekeken van de Bundle Mening van Felix admin console (https:// [ gastheer ]:[ haven ]/system/console/bundels).
 
 Deze component bevat componenten OSGi voor teruggeven, geheim voorgeheugenbeheer, en configuratiemontages.
 
 #### Forms OSGi Service {#forms-osgi-service}
 
-This OSGi Service contains the logic to render an XDP as HTML and handle the submission of a form to generate data XML. Deze service gebruikt Forms-servicecontainer. De Forms-servicecontainer roept intern native componenten aan `XMLFormService.exe` dat de verwerking uitvoert.
+This OSGi Service contains the logic to render an XDP as HTML and handle the submission of a form to generate data XML. Deze service gebruikt Forms-servicecontainer. De Forms-servicecontainer roept intern de native component `XMLFormService.exe` aan die de verwerking uitvoert.
 
 Als een renderverzoek wordt ontvangen, roept deze component de dienstcontainer van Forms aan om lay-out en staatsinformatie te produceren die verder wordt verwerkt om HTML en JSON vorm DOM staten te produceren.
 
@@ -86,7 +86,7 @@ HTML5-formulieren gebruiken caching om de doorvoer en de responstijd te optimali
   </tr>
   <tr>
    <td>Geen</td>
-   <td>Artefacten niet in cache plaatsen<br /> </td>
+   <td>Artefacten niet in cache plaatsen <br /> </td>
   </tr>
   <tr>
    <td>conservatief</td>
@@ -94,7 +94,7 @@ HTML5-formulieren gebruiken caching om de doorvoer en de responstijd te optimali
   </tr>
   <tr>
    <td>Agressief</td>
-   <td>Gerenderde HTML-inhoud in cache plaatsen<br /> Plaats alle artefacten in het cachegeheugen op conservatief niveau.<br /> <strong>Opmerking</strong>: Deze strategie resulteert in de beste prestaties, maar verbruikt meer geheugen voor het opslaan van de artefacten in de cache.</td>
+   <td>De geheime voorgeheugen Gegenereerde inhoud van de HTML <br /> geheime voorgeheugen alle artefacten die in het Conservatieve niveau worden caching.<br /> <strong> Nota </strong>: Deze strategie resulteert in beste prestaties maar verbruikt meer geheugen voor het opslaan van de caching artefacten.</td>
   </tr>
  </tbody>
 </table>
@@ -109,35 +109,35 @@ HTML5-formulieren voeren in het geheugen caching uit met behulp van LRU-strategi
 
 De Dienst van de configuratie laat het stemmen van de configuratieparameters en geheim voorgeheugenmontages voor HTML5 vormen toe.
 
-Ga naar de CQ Felix Admin Console (beschikbaar op https://&lt;&#39;) om deze instellingen bij te werken[server]:[poort]&#39;/system/console/configMgr), zoek naar en selecteer Mobile Forms Configuration.
+Om deze montages bij te werken, ga naar de Admin Console van de Felix CQ (beschikbaar in https://&lt;&#39;[ server ]:[ haven ]&#39;/system/console/configMgr), onderzoek naar en selecteer de Mobiele Configuratie van Forms.
 
-U kunt de geheim voorgeheugengrootte vormen of het geheime voorgeheugen onbruikbaar maken gebruikend de configuratieservice. U kunt foutopsporing ook inschakelen met de parameter Opties voor foutopsporing. Meer informatie over foutopsporing in formulieren vindt u op [Fouten opsporen in HTML5-formulieren](/help/forms/using/debug.md).
+U kunt de geheim voorgeheugengrootte vormen of het geheime voorgeheugen onbruikbaar maken gebruikend de configuratieservice. U kunt foutopsporing ook inschakelen met de parameter Opties voor foutopsporing. Meer informatie over het zuiveren vormen kan bij [ het Zuiveren HTML5 vormen ](/help/forms/using/debug.md) worden gevonden.
 
 ### Runtime Components (adobe-lc-forms-runtime-pkg.zip) {#runtime-components-adobe-lc-forms-runtime-pkg-zip}
 
 Het Runtime-pakket bevat de client-side bibliotheken die worden gebruikt om HTML-formulieren te genereren.
 
-**Belangrijke componenten die beschikbaar zijn als onderdeel van het runtimepakket:**
+**Belangrijke componenten beschikbaar als deel van Runtime pakket:**
 
 #### Scriptengine {#scripting-engine}
 
-De Adobe XFA-implementatie ondersteunt twee soorten scripttalen om door de gebruiker gedefinieerde logische uitvoering in formulieren mogelijk te maken: JavaScript en FormCalc.
+Adobe XFA-implementatie ondersteunt twee soorten scripttalen om door de gebruiker gedefinieerde logische uitvoering in formulieren mogelijk te maken: JavaScript en FormCalc.
 
-De scriptengine van HTML Forms is geschreven in JavaScript ter ondersteuning van de XFA-scripting-API in beide talen.
+De scriptengine van HTML Forms is in JavaScript geschreven ter ondersteuning van de XFA-scripting-API in beide talen.
 
-Tijdens het renderen wordt het FormCalc-script vertaald (en in cache geplaatst) in JavaScript op de server die transparant is voor de gebruiker of ontwerper.
+Tijdens het renderen wordt het FormCalc-script vertaald (en in cache geplaatst) naar JavaScript op de server die transparant is voor de gebruiker of ontwerper.
 
-Deze scriptengine gebruikt een deel van de functie van ECMAScript5, zoals Object.defineProperty. De engine/bibliotheek wordt geleverd als CQ Client Lib met de categorienaam **xfaforms.profile**. Het voorziet tevens in **FormBridge-API** externe portalen of apps in staat stellen te werken met formulieren. Met FormBridge kan een externe toepassing via programmacode bepaalde elementen verbergen, de waarden ervan ophalen of instellen of de kenmerken ervan wijzigen.
+Deze scriptengine gebruikt een deel van de functie van ECMAScript5, zoals Object.defineProperty. De motor/de bibliotheek wordt geleverd als Bibliotheek van de Cliënt CQ met de categorienaam **xfaforms.profile**. Het verstrekt ook **FormBridge API** om externe portals of apps toe te laten om met vorm in wisselwerking te staan. Met FormBridge kan een externe toepassing via programmacode bepaalde elementen verbergen, de waarden ervan ophalen of instellen of de kenmerken ervan wijzigen.
 
-Zie voor meer informatie de [Form Bridge](/help/forms/using/form-bridge-apis.md) artikel.
+Voor meer details, zie het ](/help/forms/using/form-bridge-apis.md) artikel van Bridge van de Vorm 0} {.[
 
 #### Layout Engine {#layout-engine}
 
-De indeling en visuele aspecten van de HTML5-formulieren zijn gebaseerd op de functies SVG 1.1, jQuery, BackBone en CSS3. De aanvankelijke weergave van een formulier wordt gegenereerd en in cache geplaatst op de server. De aanpassing van de oorspronkelijke indeling en eventuele verdere incrementele wijzigingen in de formulierindeling worden op de client beheerd. Hiertoe bevat het runtimepakket een lay-outengine die in JavaScript is geschreven en is gebaseerd op jQuery/Backbone. Deze motor behandelt al dynamisch gedrag, zoals toevoegen/verwijderen herhaalbare instanties, Growable objecten lay-out. Deze indelingsengine genereert een formulier per pagina. In eerste instantie bekijkt een gebruiker slechts één pagina en de horizontale schuifbalk geldt alleen voor de eerste pagina. Wanneer de gebruiker echter naar beneden schuift, wordt de volgende pagina gestart met de rendering. Deze paginaweergave verkort de tijd die nodig is om de eerste pagina in een browser weer te geven en verbetert de waargenomen prestaties van het formulier. Deze engine/bibliotheek maakt deel uit van de CQ Client Lib met de categorienaam **xfaforms.profile**.
+De indeling en visuele aspecten van de HTML5-formulieren zijn gebaseerd op de functies SVG 1.1, jQuery, BackBone en CSS3. De aanvankelijke weergave van een formulier wordt gegenereerd en in cache geplaatst op de server. De aanpassing van de oorspronkelijke indeling en eventuele verdere incrementele wijzigingen in de formulierindeling worden op de client beheerd. Hiertoe bevat het runtimepakket een lay-outengine die in JavaScript is geschreven en is gebaseerd op jQuery/Backbone. Deze motor behandelt al dynamisch gedrag, zoals toevoegen/verwijderen herhaalbare instanties, Growable objecten lay-out. Deze indelingsengine genereert een formulier per pagina. In eerste instantie bekijkt een gebruiker slechts één pagina en de horizontale schuifbalk geldt alleen voor de eerste pagina. Wanneer de gebruiker echter naar beneden schuift, wordt de volgende pagina gestart met de rendering. Deze paginaweergave verkort de tijd die nodig is om de eerste pagina in een browser weer te geven en verbetert de waargenomen prestaties van het formulier. Deze motor/bibliotheek maakt deel uit van de Bibliotheek van de Cliënt CQ met de categorienaam **xfaforms.profile**.
 
-De Layout Engine bevat ook een set widgets die worden gebruikt om de waarde van formuliervelden van een gebruiker vast te leggen. Deze widgets worden gemodelleerd als [Widgets voor jQuery-gebruikersinterface](https://api.jqueryui.com/jQuery.widget/) die bepaalde aanvullende contracten implementeren om naadloos met de Layout-engine te werken.
+De Layout Engine bevat ook een set widgets die worden gebruikt om de waarde van formuliervelden van een gebruiker vast te leggen. Deze widgets worden gemodelleerd als [ jQuery UI Widgets ](https://api.jqueryui.com/jQuery.widget/) die bepaalde extra contract uitvoeren om foutloos met de motor van de Lay-out te werken.
 
-Ga voor meer informatie over widgets en de bijbehorende contracten naar [Aangepaste widgets voor HTML5-formulieren](/help/forms/using/introduction-widgets.md).
+Voor meer details op widgets en de overeenkomstige contracten, zie [ Douane Widgets voor vormen HTML5 ](/help/forms/using/introduction-widgets.md).
 
 #### Stijlen {#styling}
 
@@ -145,7 +145,7 @@ De stijl die aan de HTML-elementen is gekoppeld, wordt inline toegevoegd of geba
 
 Naast de standaardeigenschappen voor stijlen bevat elk formulierelement ook bepaalde CSS-klassen op basis van het elementtype, de naam en andere eigenschappen. Met deze klassen kunt u elementen opnieuw opmaken door hun eigen CSS op te geven.
 
-Voor meer informatie over standaardstijlen en klassen raadpleegt u [Inleiding tot stijlen](/help/forms/using/css-styles.md).
+Voor meer details op standaard het stileren en klassen, zie [ Inleiding aan stijlen ](/help/forms/using/css-styles.md).
 
 #### Server-kant manuscript en de Diensten van het Web {#server-side-script-and-web-services}
 
@@ -160,7 +160,7 @@ De clientscriptengine:
 
 #### Bronnen voor lokalisatie {#localization-resource-bundles}
 
-HTML5-formulieren ondersteunen Italiaans (it), Spaans (es), Braziliaans Portugees (pt_BR), Vereenvoudigd Chinees (zh_CN), Traditioneel Chinees (alleen beperkte ondersteuning) (zh_TW), Koreaans (ko_KR), Engels (en_US), Frans (fr_FR), Duits (de_DE) en Japans (ja). Op basis van de landinstelling die in de aanvraagheader is ontvangen, wordt de corresponderende bronnenbundel naar de client verzonden. Deze resourcebundel wordt toegevoegd aan Profile JSP als een CQ Client Lib met categorienaam **xfaforms.I18N**. U kunt de logica negeren om het pakket met landinstellingen in het profiel op te nemen.
+HTML5-formulieren ondersteunen Italiaans (it), Spaans (es), Braziliaans Portugees (pt_BR), Vereenvoudigd Chinees (zh_CN), Traditioneel Chinees (alleen beperkte ondersteuning) (zh_TW), Koreaans (ko_KR), Engels (en_US), Frans (fr_FR), Duits (de_DE) en Japans (ja). Op basis van de landinstelling die in de aanvraagheader is ontvangen, wordt de corresponderende bronnenbundel naar de client verzonden. Deze middelbundel wordt toegevoegd aan Profiel JSP als Bibliotheek van de Cliënt CQ met categorienaam **xfaforms.I18N**. U kunt de logica negeren om het pakket met landinstellingen in het profiel op te nemen.
 
 ### Sling Components (adobe-lc-forms-content-pkg.zip) {#sling-components-adobe-lc-forms-content-pkg-zip}
 
@@ -168,19 +168,19 @@ Het pakket Sling bevat inhoud die gerelateerd is aan profielen en profielrendere
 
 #### Profielen {#profiles}
 
-Profielen zijn de bronknooppunten in sling die een formulier of familie van Forms vertegenwoordigen. Op CQ-niveau zijn deze profielen JCR-knooppunten. De knooppunten bevinden zich onder de **/content** map in de JCR-opslagplaats en kan zich in elke submap onder de **/content** map.
+Profielen zijn de bronknooppunten in sling die een formulier of familie van Forms vertegenwoordigen. Op CQ-niveau zijn deze profielen JCR-knooppunten. De knooppunten bevinden zich onder de map **/content** in de JCR-opslagruimte en kunnen zich in elke submap onder de map **/content** bevinden.
 
 #### Profielrenderers {#profile-renderers}
 
-Het knooppunt Profile heeft een eigenschap **sling:resourceSuperType** met waarde **xfaforms/profile**. Deze eigenschap verzendt intern aanvragen naar het sling-script voor profielknooppunten in het dialoogvenster **/libs/xfaforms/profile** map. Deze scripts zijn JSP-pagina&#39;s die HTML-formulieren en vereiste JS/CSS-artefacten samenstellen. De pagina&#39;s bevatten verwijzingen naar:
+De knoop van het Profiel heeft een bezit **sling:resourceSuperType** met waarde **xfaforms/profiel**. Deze eigenschap verzendt intern aanvragen naar het sling-script voor profielknooppunten in de map **/libs/xfaforms/profile** . Deze scripts zijn JSP-pagina&#39;s die HTML-formulieren en vereiste JS/CSS-artefacten samenstellen. De pagina&#39;s bevatten verwijzingen naar:
 
 * **xfaforms.I18N.&lt;locale>**: Deze bibliotheek bevat gelokaliseerde gegevens.
-* **xfaforms.profile**: Deze bibliotheek bevat implementatie voor XFA Scripting en Layout Engine.
+* **xfaforms.profile**: Deze bibliotheek bevat implementatie voor de motor van Scripting XFA en van de Lay-out.
 
-Deze bibliotheken zijn gemodelleerd als CQ-clientbibliotheken die gebruikmaken van de automatische functies voor samenvoeging, minificatie en compressie van de JavaScript-bibliotheken van het CQ-framework.
-Voor meer informatie over CQ-clientbibliotheken raadpleegt u [Documentatie CQ Clientlib](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
+Deze bibliotheken zijn gemodelleerd als CQ-clientbibliotheken die gebruikmaken van de mogelijkheden voor automatische samenvoeging, minificatie en compressie van de JavaScript-bibliotheken van het CQ-framework.
+Voor meer informatie over de Bibliotheken van de Cliënt CQ, zie {de Documentatie van de Clientlib van 0} CQ ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).[
 
 Zoals hierboven beschreven, roept de profielrenderer JSP de Dienst van Forms via het verbinden omvat. Dit JSP plaatst ook diverse zuivert opties die op adminconfiguratie of verzoekparameters worden gebaseerd.
 
-Met HTML5-formulieren kunnen ontwikkelaars Profiel en Profielrenderer maken om de weergave van de formulieren aan te passen. Met HTML-formulieren kunnen ontwikkelaars bijvoorbeeld formulieren integreren in een deelvenster of &lt;div> van een bestaande portaalsite voor HTML.
-Ga voor meer informatie over het maken van aangepaste profielen naar [Een aangepast profiel maken](/help/forms/using/custom-profile.md).
+Met HTML5-formulieren kunnen ontwikkelaars Profiel en Profielrenderer maken om de weergave van de formulieren aan te passen. Met HTML-formulieren kunnen ontwikkelaars bijvoorbeeld formulieren integreren in een deelvenster of in de sectie &lt;div> van een bestaande HTML-portal.
+Voor meer details bij het creëren van douaneprofielen, zie [ Creërend een Profiel van de Douane ](/help/forms/using/custom-profile.md).

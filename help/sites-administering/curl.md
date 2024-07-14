@@ -28,7 +28,7 @@ cURL is een opensource opdrachtregelprogramma voor het uitvoeren van URL-bewerki
 
 cURL is een gevestigde en wijdverspreide hulpmiddel om gegevens te krijgen of te verzenden gebruikend de syntaxis URL en oorspronkelijk vrijgegeven in 1997. De naam cURL betekende oorspronkelijk &quot;zie URL.&quot;
 
-Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep, die kan worden uitgevoerd met cURL. [Taken voor het manipuleren van inhoud](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) zoals het activeren van pagina&#39;s en het starten van workflows en [operationele taken](/help/sites-administering/curl.md#common-operational-aem-curl-commands) zoals pakketbeheer en het beheren van gebruikers kunnen worden geautomatiseerd met cURL. Bovendien kunt u [zelf een cURL maken](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) opdrachten voor de meeste taken in AEM.
+Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep, die kan worden uitgevoerd met cURL. [ de manipulatietaken van de Inhoud ](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) zoals het activeren van pagina&#39;s, en het beginnen werkschema&#39;s en [ operationele taken ](/help/sites-administering/curl.md#common-operational-aem-curl-commands) zoals pakketbeheer en het beheren van gebruikers kunnen worden geautomatiseerd gebruikend cURL. Bovendien kunt u [ uw eigen cURL ](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) bevelen voor de meeste taken in AEM tot stand brengen.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de
 
 ## cURL downloaden {#downloading-curl}
 
-cURL is een standaardonderdeel van macOS en sommige Linux-distros. Deze is echter voor de meeste besturingssystemen beschikbaar. De meest recente downloads zijn te vinden op [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
+cURL is een standaardonderdeel van macOS en sommige Linux-distros. Deze is echter voor de meeste besturingssystemen beschikbaar. De recentste downloads kunnen in [ https://curl.haxx.se/download.html ](https://curl.haxx.se/download.html) worden gevonden.
 
 cURL&#39;s bronbewaarplaats kan ook op GitHub worden gevonden.
 
@@ -46,28 +46,28 @@ cURL-opdrachten kunnen worden samengesteld voor de meeste bewerkingen in AEM, zo
 
 Om het nauwkeurige bevel te vinden u voor uw bepaalde verrichting nodig hebt, moet u de ontwikkelaarshulpmiddelen in uw browser gebruiken om de vraag van de POST aan de server te vangen wanneer u het AEM bevel uitvoert.
 
-In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld een nieuwe pagina te maken in de Chrome-browser.
+In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld een nieuwe pagina in de Chrome-browser te maken.
 
-1. Bereid de actie voor u binnen AEM wenst aan te halen. In dit geval hebben we tot het einde van de **Pagina maken** wizard, maar u hebt nog niet geklikt **Maken**.
+1. Bereid de actie voor u binnen AEM wenst aan te halen. In dit geval, hebben wij aan het eind van **voorafgegaan leidt tot de tovenaar van de Pagina**, maar nog niet geklikt **creeer**.
 
-   ![chlimage_1-66](assets/chlimage_1-66a.png)
+   ![ chlimage_1-66 ](assets/chlimage_1-66a.png)
 
-1. Start de ontwikkelaars en selecteer de **Netwerk** tab. Klik op de knop **Logbestand behouden** voordat u de console wist.
+1. Begin de ontwikkelaarshulpmiddelen en selecteer het **Netwerk** lusje. Klik de **optie van het Logboek van het Behoud** alvorens de console te ontruimen.
 
-   ![chlimage_1-67](assets/chlimage_1-67a.png)
+   ![ chlimage_1-67 ](assets/chlimage_1-67a.png)
 
-1. Klikken **Maken** in de **Pagina maken** om de workflow te maken.
-1. Klik met de rechtermuisknop op de resulterende POST en selecteer **Kopiëren** > **Kopiëren als cURL**.
+1. Klik **creëren** in **creëren de tovenaar van de Pagina** om het werkschema eigenlijk tot stand te brengen.
+1. Klik de resulterende actie van de POST met de rechtermuisknop aan en selecteer **Exemplaar** > **Exemplaar als cURL**.
 
-   ![chlimage_1-68](assets/chlimage_1-68a.png)
+   ![ chlimage_1-68 ](assets/chlimage_1-68a.png)
 
-1. Kopieer de opdracht cURL naar een teksteditor en verwijder alle headers uit de opdracht, die beginnen met `-H` (in de onderstaande afbeelding blauw gemarkeerd) en voeg de juiste verificatieparameter toe, zoals `-u <user>:<password>`.
+1. Kopieer de opdracht cURL naar een teksteditor en verwijder alle koppen uit de opdracht, die beginnen met `-H` (in de onderstaande afbeelding blauw gemarkeerd) en voeg de juiste verificatieparameter toe, zoals `-u <user>:<password>` .
 
-   ![chlimage_1-69](assets/chlimage_1-69a.png)
+   ![ chlimage_1-69 ](assets/chlimage_1-69a.png)
 
 1. Voer de opdracht cURL uit via de opdrachtregel en bekijk de reactie.
 
-   ![chlimage_1-70](assets/chlimage_1-70a.png)
+   ![ chlimage_1-70 ](assets/chlimage_1-70a.png)
 
 ## Gemeenschappelijke operationele AEM cURL-opdrachten {#common-operational-aem-curl-commands}
 
@@ -75,7 +75,7 @@ Hier volgt een lijst met AEM cURL-opdrachten voor algemene beheertaken en operat
 
 >[!NOTE]
 >
->In de volgende voorbeelden wordt ervan uitgegaan dat AEM wordt uitgevoerd `localhost` op poort `4502` en gebruikt de gebruiker `admin` met wachtwoord `admin`. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
+>In de volgende voorbeelden wordt ervan uitgegaan dat AEM op `localhost` on port `4502` wordt uitgevoerd en de gebruiker `admin` met wachtwoord `admin` wordt gebruikt. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
 
 ### Pakketbeheer {#package-management}
 
@@ -221,7 +221,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 ### Back-up {#backup}
 
-Zie [Back-up en herstel](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) voor meer informatie.
+Zie [ Steun en herstel ](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) voor details.
 
 ### OSGi {#osgi}
 
@@ -288,33 +288,33 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### Badges toewijzen en intrekken {#assign-and-revoke-badges}
 
-Zie [Scores en badges van gemeenschappen](/help/communities/implementing-scoring.md#assign-and-revoke-badges) voor meer informatie.
+Zie [ het Scoren en Badges van Gemeenschappen ](/help/communities/implementing-scoring.md#assign-and-revoke-badges) voor details.
 
-Zie [Scores en Badges Essentials](/help/communities/configure-scoring.md#example-setup) voor meer informatie.
+Zie [ het Scoren en de Hoofdzaak van Badges ](/help/communities/configure-scoring.md#example-setup) voor details.
 
 #### MSRP opnieuw indexeren {#msrp-reindexing}
 
-Zie [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) voor meer informatie.
+Zie [ MSRP - Leverancier van het Middel van de Opslag MongoDB ](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) voor details.
 
 ### Beveiliging {#security}
 
 #### CRX DE Lite in- en uitschakelen {#enabling-and-disabling-crx-de-lite}
 
-Zie [CRXDE Lite inschakelen in AEM](/help/sites-administering/enabling-crxde-lite.md) voor meer informatie.
+Zie [ toelatend CRXDE Lite in AEM ](/help/sites-administering/enabling-crxde-lite.md) voor details.
 
 ### Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
-Zie [Opruimverzameling gegevensopslag](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) voor meer informatie.
+Zie [ de Inzameling van het Afval van de Opslag van Gegevens ](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) voor details.
 
 ### Analyses en doelintegratie {#analytics-and-target-integration}
 
-Zie [Opteren in Adobe Analytics en Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) voor meer informatie.
+Zie [ Opting in Adobe Analytics en Adobe Target ](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) voor details.
 
 ### Single Sign On {#single-sign-on}
 
 #### Testkop verzenden {#send-test-header}
 
-Zie [Single Sign On](/help/sites-deploying/single-sign-on.md) voor meer informatie.
+Zie [ Enig Teken ](/help/sites-deploying/single-sign-on.md) voor details.
 
 ## Algemene AEM-URL-opdrachten voor bewerken van inhoud {#common-content-manipulation-aem-curl-commands}
 
@@ -322,7 +322,7 @@ Hier volgt een lijst met AEM cURL-opdrachten voor het manipuleren van inhoud.
 
 >[!NOTE]
 >
->In de volgende voorbeelden wordt ervan uitgegaan dat AEM wordt uitgevoerd `localhost` op poort `4502` en gebruikt de gebruiker `admin` met wachtwoord `admin`. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
+>In de volgende voorbeelden wordt ervan uitgegaan dat AEM op `localhost` on port `4502` wordt uitgevoerd en de gebruiker `admin` met wachtwoord `admin` wordt gebruikt. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
 
 ### Paginabeheer {#page-management}
 
@@ -364,7 +364,7 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### Workflows {#workflows}
 
-Zie [Programmatische interactie met Workflows](/help/sites-developing/workflows-program-interaction.md) voor meer informatie.
+Zie [ die met Werkschema&#39;s programmatically ](/help/sites-developing/workflows-program-interaction.md) met details in wisselwerking staan.
 
 ### Inhoud verkopen {#sling-content}
 
@@ -412,4 +412,4 @@ curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localho
 
 ### Manipulatie van middelen {#asset-manipulation}
 
-Zie [Elementen HTTP-API](/help/assets/mac-api-assets.md) voor meer informatie.
+Zie [ HTTP API van Assets ](/help/assets/mac-api-assets.md) voor details.

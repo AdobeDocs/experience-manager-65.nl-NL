@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
+>[ API documentatie ](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
-Het integratieframework bevat een integratielaag met een API. Hiermee kunt u AEM componenten voor eCommerce-mogelijkheden maken (onafhankelijk van uw specifieke eCommerce-engine). Het laat u ook het interne gegevensbestand van CRX gebruiken of in een systeem van de eCommerce stoppen en productgegevens in AEM trekken.
+Het integratieframework bevat een integratielaag met een API. Hiermee kunt u AEM componenten voor eCommerce-mogelijkheden maken (onafhankelijk van uw specifieke eCommerce-engine). U kunt hiermee ook de interne CRX-database gebruiken of een eCommerce-systeem aansluiten en productgegevens in AEM opnemen.
 
 Verscheidene uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
 
@@ -36,22 +36,22 @@ Voor onderzoek, wordt een integratiehaak verstrekt die u het (AEM) onderzoek van
 
 Het eCommerce-kader kan bij elke eCommerce-oplossing worden gebruikt, de motor die wordt gebruikt moet door AEM worden geïdentificeerd - zelfs bij gebruik van de AEM generieke motor:
 
-* eCommerce Engines zijn OSGi-diensten die de `CommerceService` interface
+* eCommerce Engines zijn OSGi-services die de interface `CommerceService` ondersteunen
 
-   * Motoren kunnen worden onderscheiden door `commerceProvider` service, eigenschap
+   * Motoren kunnen worden onderscheiden door een service-eigenschap `commerceProvider`
 
-* AEM `Resource.adaptTo()` for `CommerceService` en `Product`
+* AEM ondersteunt `Resource.adaptTo()` for `CommerceService` en `Product`
 
-   * De `adaptTo` de implementatie zoekt naar een `cq:commerceProvider` eigenschap in de hiërarchie van de bron:
+   * De `adaptTo` -implementatie zoekt naar een `cq:commerceProvider` -eigenschap in de hiërarchie van de bron:
 
       * Indien gevonden, wordt de waarde gebruikt om de raadpleging van de handelsdienst te filtreren.
       * Indien niet gevonden, wordt de hoogste commerciële dienst gebruikt.
 
-   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk getypte middelen worden toegevoegd.
+   * Er wordt een `cq:Commerce` -mix gebruikt, zodat de `cq:commerceProvider` kan worden toegevoegd aan bronnen met een sterk type.
 
-* De `cq:commerceProvider` eigenschap wordt ook gebruikt om te verwijzen naar de juiste definitie van de handelsfabriek .
+* De eigenschap `cq:commerceProvider` wordt ook gebruikt om naar de juiste definitie van de handelsfabriek te verwijzen.
 
-   * Bijvoorbeeld een `cq:commerceProvider` eigenschap met de waarde Geometrixx correleert met de OSGi-configuratie voor **Day CQ Commerce Factory for Geometrixx-Outdoor** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - waar de parameter `commerceProvider` heeft ook de waarde `geometrixx`.
+   * Bijvoorbeeld, correleert een `cq:commerceProvider` bezit met de waarde Geometrixx met de configuratie OSGi voor **Dag CQ Commerce Factory voor Geometrixx-Buiten** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - waar de parameter `commerceProvider` ook de waarde `geometrixx` heeft.
    * Hier kunnen verdere eigenschappen worden gevormd (wanneer aangewezen en beschikbaar).
 
 In een standaard AEM installatie is een specifieke implementatie vereist, bijvoorbeeld:
@@ -87,47 +87,47 @@ In een standaard AEM installatie is een specifieke implementatie vereist, bijvoo
 
 Een sessie voor het opslaan van informatie over het winkelwagentje van de klant.
 
-De **CommerceSession**:
+**CommerceSession**:
 
-* Heeft de **winkelwagentje**
+* Bezit het **winkelwagentje**
 
    * toevoegen/verwijderen/enz. uitvoeren
    * de verschillende berekeningen op het karretje uitvoert;
 
      `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* persistentie van de **bestellen** gegevens:
+* Vertoningen persistentie van de **orde** gegevens:
 
   `CommerceSession.getUserContext()`
 
-* Kan leveringsdetails ophalen/bijwerken met behulp van `updateOrder(Map<String, Object> delta)`
-* Heeft de **betaling** verwerkingsverbinding
-* Heeft de **vervulling** verbinding
+* Kan leveringsgegevens ophalen/bijwerken met `updateOrder(Map<String, Object> delta)`
+* Vertoningen de **betaling** verwerkingsverbinding
+* Vertoningen de **verwezenlijking** verbinding
 
 ### Architectuur {#architecture}
 
 #### Architectuur van product en varianten {#architecture-of-product-and-variants}
 
-Eén product kan meerdere variaties hebben, bijvoorbeeld van kleur en/of grootte. Een product moet bepalen welke eigenschappen variatie drijven; de Adobe bepaalt dit *Alternatieve assen*.
+Eén product kan meerdere variaties hebben, bijvoorbeeld van kleur en/of grootte. Een product moet bepalen welke eigenschappen variatie drijven; de Adobe richt deze *variantassen*.
 
 Niet alle eigenschappen zijn echter variantassen. Variaties kunnen ook van invloed zijn op andere eigenschappen. De prijs kan bijvoorbeeld afhankelijk zijn van de grootte. Deze eigenschappen kunnen niet door de verkoopster worden geselecteerd en worden daarom niet als variantassen beschouwd.
 
 Elk product en/of elke variant wordt vertegenwoordigd door een middel, en daarom kaarten 1:1 aan een opslaggegevensopslagknoop. Het gevolg is dat een specifiek product en/of specifieke variant op unieke wijze kan worden geïdentificeerd door het pad ervan.
 
-Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden van een voorouder kunnen overerven), maar er zijn ook aanroepen die de set variaties weergeven ( `getVariantAxes()`, `getVariants()`, enzovoort).
+Elke productbron kan worden vertegenwoordigd door een `Product API` . De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden van een voorouder kunnen overerven), maar er zijn ook aanroepen die de set variaties ( `getVariantAxes()`, `getVariants()` enzovoort) weergeven.
 
 >[!NOTE]
 >
->In feite wordt een variantas bepaald door wat dan ook `Product.getVariantAxes()` retourneert:
+>In feite wordt een variant as bepaald door wat `Product.getVariantAxes()` retourneert:
 >
->* voor de generische implementatie, leest AEM het uit een bezit in de productgegevens ( `cq:productVariantAxes`)
+>* voor de algemene implementatie leest AEM deze uit een eigenschap in de productgegevens ( `cq:productVariantAxes` )
 >
 >Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de uit-van-de-doos productcomponent slechts twee:
 >
 >1. `size`
 >1. plus één of meer
 >
->   Deze extra variant wordt geselecteerd via `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Outdoors).
+>   Deze extra variant wordt geselecteerd via de eigenschap `variationAxis` van de productreferentie (meestal `color` voor Geometrixx Outdoors).
 
 #### Productverwijzingen en PIM-gegevens {#product-references-and-pim-data}
 
@@ -135,7 +135,7 @@ In het algemeen:
 
 * PIM-gegevens bevinden zich onder `/etc`
 
-* Productverwijzingen onder `/content`.
+* Productverwijzingen onder `/content` .
 
 Er moet een 1:1-kaart zijn tussen productvariaties en productgegevensknooppunten.
 
@@ -235,23 +235,23 @@ public class AxisFilter implements VariantFilter {
 }
 ```
 
-* **Algemeen opslagmechanisme**
+* **het Algemene Mechanisme van de Opslag**
 
    * Productknooppunten zijn niet:ongestructureerd.
    * Een productknooppunt kan zijn:
 
       * Een verwijzing, met de elders opgeslagen productgegevens:
 
-         * Productverwijzingen bevatten een `productData` eigenschap, die verwijst naar de productgegevens (doorgaans onder `/etc/commerce/products`).
+         * Productverwijzingen bevatten een eigenschap `productData` , die verwijst naar de productgegevens (doorgaans onder `/etc/commerce/products` ).
          * De productgegevens zijn hiërarchisch; de productkenmerken worden overgeërfd van de voorouders van een productgegevensknooppunt.
          * De verwijzingen van het product kunnen lokale eigenschappen ook bevatten, die die in hun productgegevens worden gespecificeerd met voeten treden.
 
       * Een product zelf:
 
-         * Zonder `productData` eigenschap.
+         * Zonder een eigenschap `productData` .
          * Een productknooppunt dat alle eigenschappen lokaal bevat (en geen eigenschap productData bevat), neemt productkenmerken rechtstreeks van zijn eigen voorouders over.
 
-* **AEM-generieke productstructuur**
+* **AEM-generische Structuur van het Product**
 
    * Elke variant moet een eigen bladnode hebben.
    * De interface van het product vertegenwoordigt zowel producten als varianten, maar het verwante gegevensopslagknooppunt is specifiek waarover het is.
@@ -306,11 +306,11 @@ public class AxisFilter implements VariantFilter {
 
 * Het winkelwagentje is eigendom van de `CommerceSession:`
 
-   * De `CommerceSession` voegt toe, verwijdert, etc.
-   * De `CommerceSession` voert ook de verschillende berekeningen op het karretje uit.
-   * De `CommerceSession` past ook vouchers en promoties toe die op de winkelwagen zijn geactiveerd.
+   * De functie `CommerceSession` voegt toe, verwijdert, enzovoort.
+   * De `CommerceSession` voert ook de diverse berekeningen op de kar uit.
+   * In `CommerceSession` worden ook vouchers en promoties toegepast die op de winkelwagen zijn geactiveerd.
 
-* Hoewel niet rechtstreeks verband houdt met het karretje, `CommerceSession` moet ook prijsinformatie voor catalogi verstrekken (aangezien deze eigenaar is van prijzen)
+* Hoewel de `CommerceSession` niet rechtstreeks met een cart te maken heeft, moet deze ook informatie over catalogusprijzen verstrekken (aangezien de eigenaar van prijzen is)
 
    * Prijzen kunnen verschillende opties hebben:
 
@@ -327,26 +327,26 @@ public class AxisFilter implements VariantFilter {
 
 * Opslag
 
-   * In het AEM-generieke geval worden de kratten opgeslagen in de [ClientContext](/help/sites-administering/client-context.md)
+   * In het AEM-generische geval, worden de wortels opgeslagen in de [ ClientContext ](/help/sites-administering/client-context.md)
 
-**Personalisatie**
+**Personalization**
 
-* Zorg altijd voor personalisatie via de [ClientContext](/help/sites-administering/client-context.md).
-* Een ClientContext `/version/` van het karretje wordt in alle gevallen gecreëerd:
+* Stem altijd verpersoonlijking door de [ ClientContext ](/help/sites-administering/client-context.md).
+* In alle gevallen wordt een ClientContext `/version/` van het winkelwagentje gemaakt:
 
-   * De producten moeten worden toegevoegd door `CommerceSession.addCartEntry()` methode.
+   * Producten moeten met de methode `CommerceSession.addCartEntry()` worden toegevoegd.
 
 * In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext:
 
-![chlimage_1-33](/help/sites-developing/assets/chlimage_1-33a.png)
+![ chlimage_1-33 ](/help/sites-developing/assets/chlimage_1-33a.png)
 
 #### Architectuur van uitchecken {#architecture-of-checkout}
 
-**Gegevens van winkelwagentjes en bestellingen**
+**Kar en de Gegevens van de Orde**
 
-De `CommerceSession` eigenaar van de drie elementen:
+`CommerceSession` bezit de drie elementen:
 
-1. **Inhoud winkelwagentje**
+1. **inhoud van de Kar**
 
    Het schema voor de inhoud van het winkelwagentje wordt bepaald door de API:
 
@@ -356,7 +356,7 @@ De `CommerceSession` eigenaar van de drie elementen:
        public void deleteCartEntry(int entryNumber);
    ```
 
-1. **Prijsstelling**
+1. **Prijsbepaling**
 
    Het prijsschema wordt ook bepaald door de API:
 
@@ -369,9 +369,9 @@ De `CommerceSession` eigenaar van de drie elementen:
        public String getOrderTotalPrice();
    ```
 
-1. **Bestelgegevens**
+1. **de Details van de Orde**
 
-   Bestelgegevens zijn echter *niet* vast door de API:
+   Nochtans, zijn de ordedetails *niet* bevestigd door API:
 
    ```java
        public void updateOrderDetails(Map<String, String> orderDetails);
@@ -379,14 +379,14 @@ De `CommerceSession` eigenaar van de drie elementen:
        public void submitOrder();
    ```
 
-**Verzendberekeningen**
+**Verschepende Berekeningen**
 
 * Orderformulieren moeten vaak meerdere verzendopties (en prijzen) bevatten.
 * De prijzen kunnen gebaseerd zijn op artikelen en gegevens van de bestelling, zoals gewicht en/of bezorgadres.
-* De `CommerceSession` heeft toegang tot alle afhankelijkheden, zodat het op een vergelijkbare manier kan worden behandeld als productprijzen:
+* `CommerceSession` heeft toegang tot alle afhankelijkheden, zodat het op een vergelijkbare manier kan worden behandeld als productprijzen:
 
-   * De `CommerceSession` is eigenaar van verzendprijs.
-   * Gebruiken `updateOrder(Map<String, Object> delta)` om leveringsgegevens op te halen/bij te werken.
+   * De `CommerceSession` is eigenaar van de verzendprijs.
+   * Gebruik `updateOrder(Map<String, Object> delta)` om leveringsgegevens op te halen/bij te werken.
 
 ### Zoekdefinitie {#search-definition}
 
@@ -404,9 +404,9 @@ Het eCommerce-project bevat een standaardzoekcomponent in:
 
 `/libs/commerce/components/search`
 
-![chlimage_1-34](/help/sites-developing/assets/chlimage_1-34a.png)
+![ chlimage_1-34 ](/help/sites-developing/assets/chlimage_1-34a.png)
 
-Dit gebruikt onderzoek API om de geselecteerde commerciële motor (zie [Selectie van eCommerce-engine](#ecommerce-engine-selection)):
+Dit gebruik onderzoek API om de geselecteerde handelingsmotor (zie {de Selectie van de Motor van de Handel 0} eCommerce ](#ecommerce-engine-selection)) te vragen:[
 
 #### Zoeken in API {#search-api}
 
@@ -414,13 +414,13 @@ Het kernproject bevat verschillende algemene klassen/hulpklassen:
 
 1. `CommerceQuery`
 
-   Wordt gebruikt om een zoekquery te beschrijven (bevat informatie over de querytekst, de huidige pagina, het paginaformaat, de sortering en de geselecteerde facetten). Alle eCommerce-services die de zoek-API implementeren, ontvangen instanties van deze klasse om hun zoekopdracht uit te voeren. A `CommerceQuery` kan worden geïnstantieerd vanuit een request-object ( `HttpServletRequest`).
+   Wordt gebruikt om een zoekquery te beschrijven (bevat informatie over de querytekst, de huidige pagina, het paginaformaat, de sortering en de geselecteerde facetten). Alle eCommerce-services die de zoek-API implementeren, ontvangen instanties van deze klasse om hun zoekopdracht uit te voeren. Een `CommerceQuery` kan worden geïnstantieerd vanuit een aanvraagobject ( `HttpServletRequest` ).
 
 1. `FacetParamHelper`
 
-   Is een hulpprogrammaklasse die één statische methode verstrekt - `toParams` - die worden gebruikt voor het genereren van `GET` parametertekenreeksen van een lijst met facetten en één in-/uitschakelen waarde. Dit is handig aan de UI-zijde, waar u een hyperlink moet weergeven voor elke waarde van elk facet, zodat wanneer de gebruiker op de hyperlink klikt, de desbetreffende waarde wordt geschakeld. Als deze optie is geselecteerd, wordt deze uit de query verwijderd, anders wordt deze toegevoegd. Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, het overschrijven van waarden enzovoort.
+   Is een hulpprogrammaklasse die één statische methode - `toParams` - verstrekt die voor het produceren van `GET` parameterkoorden van een lijst van facetten en één knevelwaarde wordt gebruikt. Dit is handig aan de UI-zijde, waar u een hyperlink moet weergeven voor elke waarde van elk facet, zodat wanneer de gebruiker op de hyperlink klikt, de desbetreffende waarde wordt geschakeld. Als deze optie is geselecteerd, wordt deze uit de query verwijderd, anders wordt deze toegevoegd. Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, het overschrijven van waarden enzovoort.
 
-Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `CommerceResult` object. Zie de API Documentatie voor meer informatie over dit onderwerp.
+Het ingangspunt voor de zoekAPI is de methode `CommerceService#search` die een `CommerceResult` -object retourneert. Zie de API Documentatie voor meer informatie over dit onderwerp.
 
 ### Promoties en vouchers ontwikkelen {#developing-promotions-and-vouchers}
 
@@ -440,9 +440,9 @@ Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `
    * De motoren van de buitenlandse handel kunnen bonnen ook leveren; deze vereisen een minimum van:
 
       * Een vouwcode
-      * An `isValid()` methode
+      * Een methode `isValid()`
 
-   * De **Voucher** component ( `/libs/commerce/components/voucher`) biedt:
+   * De **Voucher** component ( `/libs/commerce/components/voucher`) verstrekt:
 
       * Een renderer voor voucherbeheer. Hier worden de vouchers weergegeven die zich momenteel in de kar bevinden.
       * De bewerkingsdialoogvensters (formulier) voor het beheren (toevoegen/verwijderen) van de vouchers.
@@ -469,15 +469,15 @@ Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `
 
    * Er worden twee promotiehandlers uit de verpakking geleverd:
 
-      * `DiscountPromotionHandler`, waarbij een absolute of percentagekorting voor het hele winkelwagentje wordt toegepast
-      * `PerfectPartnerPromotionHandler`, die een absolute productkorting of een percentagekorting toepast als het partnerproduct ook in de kar is
+      * `DiscountPromotionHandler` , waarbij een absolute of percentagekorting voor het hele winkelwagentje wordt toegepast
+      * `PerfectPartnerPromotionHandler` , die een absolute waarde of percentagekorting toepast als het partnerproduct zich ook in de winkelwagen bevindt
 
-   * De ClientContext `SegmentMgr` Hiermee worden segmenten en de ClientContext omgezet `CartMgr` lost bevorderingen op. Elke bevordering die aan minstens één opgelost segment onderworpen is wordt in brand gestoken.
+   * De ClientContext `SegmentMgr` verhelpt segmenten en de ClientContext `CartMgr` verhelpt promoties. Elke bevordering die aan minstens één opgelost segment onderworpen is wordt in brand gestoken.
 
       * De gespannen Bevorderingen worden teruggestuurd naar de server door een AJAX vraag om het karretje opnieuw te berekenen.
       * Afgelopen promoties (en toegevoegde vouchers) worden ook weergegeven in het deelvenster ClientContext.
 
-Het toevoegen/verwijderen van een voucher uit een winkelwagentje gebeurt via de `CommerceSession` API:
+Het toevoegen/verwijderen van een voucher uit een winkelwagentje gebeurt via de API van `CommerceSession` :
 
 ```java
 /**
@@ -504,7 +504,7 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-Op deze manier `CommerceSession` is verantwoordelijk voor het controleren of een voucher bestaat en of deze kan worden toegepast. Dit kan het geval zijn voor vouchers die alleen kunnen worden toegepast als aan een bepaalde voorwaarde is voldaan. Bijvoorbeeld wanneer de totale winkelwagenprijs hoger is dan $100. Als een voucher om welke reden dan ook niet kan worden toegepast, `addVoucher` methode genereert een uitzondering. Ook de `CommerceSession` is verantwoordelijk voor het bijwerken van de prijzen van het winkelwagentje nadat een voucher is toegevoegd / verwijderd.
+Op deze manier controleert `CommerceSession` of een voucher bestaat en of deze kan worden toegepast of niet. Dit kan het geval zijn voor vouchers die alleen kunnen worden toegepast als aan een bepaalde voorwaarde is voldaan. Bijvoorbeeld wanneer de totale winkelwagenprijs hoger is dan $100. Als een voucher om welke reden dan ook niet kan worden toegepast, genereert de methode `addVoucher` een uitzondering. De `CommerceSession` is ook verantwoordelijk voor het bijwerken van de prijzen van het winkelwagentje nadat een voucher is toegevoegd/verwijderd.
 
 De `Voucher` is een boonachtige klasse die velden bevat voor:
 
@@ -512,15 +512,15 @@ De `Voucher` is een boonachtige klasse die velden bevat voor:
 * Een korte beschrijving
 * Verwijzen naar de verwante bevordering die op het disconteringstype en de waarde wijst
 
-De `AbstractJcrCommerceSession` op voorwaarde dat zij vouchers kunnen toepassen. De vouchers die door de klasse worden geretourneerd `getVouchers()` zijn instanties van `cq:Page` met een JCR:content-knooppunt met de volgende eigenschappen (onder andere):
+Met de opgegeven `AbstractJcrCommerceSession` kunt u vouchers toepassen. De vouchers die door de klasse `getVouchers()` worden geretourneerd, zijn instanties van `cq:Page` die een knooppunt jcr:content met de volgende eigenschappen bevatten (waaronder:
 
-* `sling:resourceType` (String) - dit moet `commerce/components/voucher`
+* `sling:resourceType` (String) - dit moet `commerce/components/voucher` zijn
 
 * `jcr:title` (String) - voor de beschrijving van de voucher
 * `code` (String) - de code die de gebruiker moet invoeren om deze voucher toe te passen
 * `promotion` (String) - de promotie die moet worden toegepast, bijvoorbeeld `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-De managers van de bevordering zijn de diensten OSGi die het winkelwagentje wijzigen. Het winkelwagentje ondersteunt meerdere haken die zijn gedefinieerd in het dialoogvenster `PromotionHandler` interface.
+De managers van de bevordering zijn de diensten OSGi die het winkelwagentje wijzigen. Het winkelwagentje ondersteunt verschillende haken die zijn gedefinieerd in de interface van `PromotionHandler` .
 
 ```java
 /**
@@ -571,5 +571,5 @@ public void invalidateCaches();
 Er zijn drie afhandelingen voor speciale acties beschikbaar:
 
 * `DiscountPromotionHandler` past een absolute of percentagekorting voor het hele winkelwagentje toe
-* `PerfectPartnerPromotionHandler` past een absolute of percentagekorting van het product toe als de productpartner ook in de kar is
+* `PerfectPartnerPromotionHandler` past een absolute of percentagekorting op het product toe als de partner zich ook in de winkelwagen bevindt
 * `FreeShippingPromotionHandler` past gratis verzending toe

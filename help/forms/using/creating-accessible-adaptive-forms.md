@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Toegankelijke adaptieve formulieren maken{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
 
 ## Inleiding {#introduction}
 
@@ -33,7 +33,7 @@ Tijdens het ontwerpen van een adaptief formulier moet de auteur de volgende punt
 
 ## Vereiste
 
-U hebt een toegankelijkheidsgereedschap nodig, zoals **Toegankelijke Inspecteur van de Naam en van de Beschrijving (ANDI)** en **Het thema Adaptief formulier is ontwikkeld om toegankelijkheidsproblemen op te lossen** om een toegankelijk adaptief formulier te maken.
+U vereist een toegankelijkheidshulpmiddel zoals **Toegankelijke Inspecteur van de Naam en van de Beschrijving (ANDI)** en een **Adaptief thema van de Vorm dat wordt ontwikkeld om toegankelijkheid verwante kwesties** te bevestigen om een toegankelijke adaptieve vorm tot stand te brengen.
 
 ### Gereedschap voor toegankelijkheidstesten downloaden en installeren
 
@@ -44,15 +44,15 @@ Met het hulpprogramma ANDI (Accessible Name and Description Inspector) kunt u co
 * Detecteert problemen met toetsenbordtoegankelijkheid en kleurcontrast
 * Hiermee wordt de inhoud van de schermlezer duidelijk geïdentificeerd in overeenstemming met de normen
 
-ANDI werkt met alle grote internetbrowsers. Zie [Documentatie van ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) voor gedetailleerde instructies op hoe te om het hulpmiddel te vormen en te gebruiken.
+ANDI werkt met alle grote internetbrowsers. Zie {de documentatie van 0} ANDI ](https://www.ssa.gov/accessibility/andi/help/install.html) voor gedetailleerde instructies op hoe te om het hulpmiddel te vormen en te gebruiken.[
 
 ### Download en installeer het Ultramarine-Toegankelijke thema
 
 Het Ultramarijn-Toegankelijke thema is een verwijzingsthema. Het helpt demonstreren hoe u kleurcontrast en andere toegankelijkheidsgerelateerde problemen in een adaptieve vorm kunt oplossen. Adobe raadt u aan een aangepast thema voor de productieomgeving te maken op basis van de stijlen die door uw organisatie zijn goedgekeurd. Voer de volgende stappen uit om het thema naar uw AEM-exemplaar te uploaden:
 
 1. Download het themapakket.
-1. Navigeren naar **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigatie](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM.
-1. Selecteren **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Selecteer en upload het bestand x Ultramarine-Accessible-Theme.zip. Het thema wordt geüpload naar uw AEM.
+1. Navigeer aan **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![ Navigatie ](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM instantie.
+1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL File Upload]** . Selecteer en upload het bestand x Ultramarine-Accessible-Theme.zip. Het thema wordt geüpload naar uw AEM.
 
 ## Een adaptief formulier toegankelijk maken
 
@@ -63,8 +63,8 @@ U moet zich richten op vier belangrijke aspecten: toetsenbordnavigatie, kleurcon
 Pas het Ultramarijn-Toegankelijke thema toe op uw bestaande adaptieve vorm. Het thema toepassen:
 
 1. Open het aangepaste formulier voor bewerking.
-1. Selecteer een component en selecteer het bovenliggende pictogram. Selecteer in het contextmenu **[!UICONTROL Adaptive Form Container]** en selecteer dan het Configure pictogram.
-1. Selecteer het Ultramarijn-Toegankelijke thema in eigenschappen browser en selecteer **[!UICONTROL Save]** pictogram.
+1. Selecteer een component en selecteer het bovenliggende pictogram. Selecteer **[!UICONTROL Adaptive Form Container]** in het contextmenu en selecteer vervolgens het pictogram Configureren.
+1. Selecteer het thema Ultramarijn-Toegankelijk in de eigenschappenbrowser en selecteer **[!UICONTROL Save]** pictogram.
 1. Vernieuw het browservenster. Het thema wordt toegepast op het adaptieve formulier.
 
 Nadat u een toegankelijk thema hebt toegepast, voert u de onderstaande aanvullende oplossingen uit. De oplossingen zijn naast toegankelijkheidsoplossingen die in het toegankelijke thema worden behandeld:
@@ -77,7 +77,7 @@ Nadat u een toegankelijk thema hebt toegepast, voert u de onderstaande aanvullen
 
    De meeste toegankelijkheidsfuncties informeren gebruikers over de hiërarchie van de inhoud, zodat ze de structuur van de webpagina beter kunnen begrijpen. Stel verschillende kopniveaus in voor de naam van de organisatie en de tekst voor de naam van het formulier op het adaptieve formulier om een hiërarchische structuur voor deze teksten te bieden. Gebruik bovendien een tekstcomponent voor elk deelvenster en elke sectie met een geschikt kopniveau om een hiërarchie te maken.
 
-   ![Een koptekststijl toepassen](assets/apply-style.gif)
+   ![ hoe te om een kopbalstijl toe te passen ](assets/apply-style.gif)
 
 1. Wijzig de achtergrondkleur van de voettekst om het juiste contrast te gebruiken in overeenstemming met de toegankelijkheidsnormen om de zichtbaarheid en leesbaarheid van de tekst te verbeteren. U kunt ANDI gebruiken om problemen met kleurcontrast in uw formulier te zoeken. Gebruik ook geen erg klein lettertype. Kleine lettertypen zijn moeilijk leesbaar.
 
@@ -105,22 +105,22 @@ Het label dat door schermlezers wordt waargenomen, hoeft niet hetzelfde te zijn 
 
 Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
-1. Selecteer een component en selecteer ![cmppr](assets/cmppr.png).
-1. Klikken **[!UICONTROL Accessibility]** in het zijpaneel om de gewenste toegankelijkheidsoptie te kiezen.
+1. Selecteer een component en selecteer ![ cmp ](assets/cmppr.png).
+1. Klik op **[!UICONTROL Accessibility]** in het zijpaneel om de gewenste toegankelijkheidsoptie te kiezen.
 
 ### Toegankelijkheidsopties in formuliercomponenten {#accessibility-options-in-form-components}
 
-![Toegankelijkheidsopties in formuliercomponenten](assets/accessibility-options.png)
+![ de opties van de Toegankelijkheid in vormcomponenten ](assets/accessibility-options.png)
 
-**Aangepaste tekst** Formulierauteurs geven de inhoud op in het tekstveld Aangepast voor toegankelijkheidsoptie. De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
+**de auteurs van de Vorm van de Tekst van 0} de Douane van de Tekst van de Tekst van de Tekst van de Tekst van de Aangepast van de 0} {.** De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
 
-**Korte beschrijving** Voor het merendeel van de componenten wordt de korte beschrijving bij uitvoering weergegeven wanneer de gebruiker de aanwijzer op de component plaatst. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
+**Korte beschrijving** voor een meerderheid van de componenten, verschijnt de korte beschrijving bij runtime wanneer de gebruiker de wijzer over de component beweegt. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
 
-**Titel** Gebruik deze optie als u wilt dat AEM Forms het visuele label dat aan het formulierveld is gekoppeld, als schermlezertekst gebruikt.
+**Titel** Gebruik deze optie om AEM Forms het visuele etiket te laten gebruiken verbonden aan het vormgebied als het schermlezertekst.
 
-**Naam** U kunt een waarde opgeven in het veld Naam van het tabblad Binding. De naam mag geen spaties bevatten.
+**Naam** U kunt een waarde op het gebied van de Naam van het Bindende lusje specificeren. De naam mag geen spaties bevatten.
 
-**Geen** Als u Geen selecteert, heeft het formulierobject geen naam in het gepubliceerde formulier. Geen is een aanbevolen instelling voor formulierbesturingselementen.
+**niets** het Selecteren van niets veroorzaakt het vormvoorwerp om geen naam in de gepubliceerde vorm te hebben. Geen is een aanbevolen instelling voor formulierbesturingselementen.
 
 >[!NOTE]
 >
@@ -133,9 +133,9 @@ Afbeeldingen kunnen sommige gebruikers helpen het begrip te verbeteren. Voor geb
 
 Zorg ervoor dat in de tekst het object en het doel ervan in het formulier worden beschreven. Een schermlezer leest deze alternatieve tekst wanneer een afbeelding wordt aangetroffen. Voor een afbeelding moet altijd een alternatieve tekst worden opgegeven.
 
-Selecteer een afbeeldingscomponent en selecteer ![cmppr](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
+Selecteer een beeldcomponent en selecteer ![ cmp ](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
 
-![Alternatieve tekst voor een afbeelding](assets/image-properties.png)
+![ Afwisselende tekst voor een beeld ](assets/image-properties.png)
 
 ### 4. Geef voldoende kleurcontrast op {#provide-sufficient-color-contrast}
 
@@ -145,7 +145,7 @@ Gebruikers met een visuele handicap vertrouwen op een hoog contrast tussen tekst
 
 U wordt aangeraden het standaardfont en de standaardachtergrondkleuren te gebruiken, namelijk de zwarte inhoud op een witte achtergrond. Als u de standaardkleuren wijzigt, kiest u een donkere voorgrondkleur op een lichte achtergrondkleur of omgekeerd.
 
-Zie [Aangepaste thema&#39;s maken voor adaptieve formulieren](/help/forms/using/creating-custom-adaptive-form-themes.md)voor meer informatie over het wijzigen van het kleurcontrast en het thema voor de adaptieve formulieren.
+Zie [ Creërend douanethema&#39;s voor adaptieve vormen ](/help/forms/using/creating-custom-adaptive-form-themes.md), voor meer informatie over het veranderen van het kleurencontrast en het thema voor de adaptieve vormen.
 
 ### 5. Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn {#ensure-that-form-controls-are-keyboard-accessible}
 
@@ -162,7 +162,7 @@ De volgende sneltoetsen zijn beschikbaar in AEM Forms.
 | De gevulde gegevens in een formulier opnieuw instellen | Alt+R |
 | Een formulier verzenden | Alt+S |
 
-Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de **[!UICONTROL Date Picker]** in Adaptief Forms. Als u de sneltoetsen wilt inschakelen, selecteert u de **[!UICONTROL Date Picker]** en selecteert u ![Configureren](assets/configure-icon.svg) om de eigenschappen te openen. In de **[!UICONTROL Patterns]** selecteert u een weergavepatroon met de **[!UICONTROL Type]** en **[!UICONTROL Pattern]** vervolgkeuzelijsten. Sla de eigenschappen op om het gebruik van sneltoetsen voor de **[!UICONTROL Date Picker]** component.
+Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de component **[!UICONTROL Date Picker]** in Adaptief Forms. Om de kortere wegsleutels toe te laten, selecteer de **[!UICONTROL Date Picker]** component en selecteer ![ vormen ](assets/configure-icon.svg) om de eigenschappen te openen. Selecteer in de sectie **[!UICONTROL Patterns]** een weergavepatroon met de vervolgkeuzelijsten **[!UICONTROL Type]** en **[!UICONTROL Pattern]** . Sla de eigenschappen op om het gebruik van sneltoetsen voor de component **[!UICONTROL Date Picker]** in te schakelen.
 
 De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adaptive Forms:
 
@@ -177,13 +177,13 @@ De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adapti
 | De cursor achterwaarts verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-links |
 | De cursor vooruit verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-rechts |
 | Voer de handeling uit voor het bijschrift dat beschikbaar is tussen rechter- en linkernavigatiepijlen in de kalender | Shift + Pijl-omhoog |
-| Handeling voor pijl-rechts uitvoeren ![pijl-rechts](assets/right-navigation-icon.svg) beschikbaar in de kalender | Shift + Pijl-links |
-| Handeling voor pijlpictogram links uitvoeren ![pijl-links](assets/left-navigation-icon.svg) beschikbaar in de kalender | Shift + Pijl-rechts |
+| Voer de actie voor het pictogram van de juiste navigatiepijl ![ juist-pijl ](assets/right-navigation-icon.svg) beschikbaar in de kalender uit | Shift + Pijl-links |
+| Voer de actie voor het linker pictogram van de navigatiepijl ![ links-pijl ](assets/left-navigation-icon.svg) beschikbaar in de kalender uit | Shift + Pijl-rechts |
 
 ## Gebruik het gereedschap Toegankelijkheid om resterende toegankelijkheidsproblemen te zoeken
 
 Met de Accessible Name and Description Inspector (ANDI) kunt u compatibiliteitsproblemen met betrekking tot toegankelijkheid in een adaptieve vorm identificeren en corrigeren. Met ANDI de toegankelijkheidsproblemen in een adaptieve vorm zoeken:
 
 1. Open het adaptieve formulier in de voorbeeldmodus.
-1. Klik op het pictogram van het gereedschap ANDI met bladwijzer. Het ANDI-gereedschap analyseert het adaptieve formulier en geeft toegankelijkheidsproblemen weer. Ga voor meer informatie over het gebruik van het gereedschap naar [Documentatie van ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
+1. Klik op het pictogram van het gereedschap ANDI met bladwijzer. Het ANDI-gereedschap analyseert het adaptieve formulier en geeft toegankelijkheidsproblemen weer. Voor details op hoe te om het hulpmiddel te gebruiken, zie {de documentatie van 0} ANDI ](https://www.ssa.gov/accessibility/andi/help/howtouse.html).[
 1. De door ANDI gemelde problemen beoordelen en oplossen.

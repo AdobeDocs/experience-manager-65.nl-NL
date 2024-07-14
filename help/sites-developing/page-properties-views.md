@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Weergaven van pagina-eigenschappen aanpassen{#customizing-views-of-page-properties}
 
-Elke pagina heeft een set [eigenschappen](/help/sites-authoring/editing-page-properties.md) die door gebruikers kunnen worden weergegeven en bewerkt; sommige zijn vereist voor het maken van de pagina (weergave maken), andere kunnen in een later stadium worden weergegeven en bewerkt (weergave bewerken). Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster ( `cq:dialog`) van het desbetreffende pagina-onderdeel.
+Elke pagina heeft een reeks [ eigenschappen ](/help/sites-authoring/editing-page-properties.md) die door gebruikers kunnen worden bekeken en worden uitgegeven; sommige worden vereist wanneer het creëren van de pagina (creeer mening), anderen kunnen (geef mening uit) in een recentere fase worden bekeken en worden uitgegeven. Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster ( `cq:dialog` ) van de juiste paginacomponent.
 
 >[!CAUTION]
 >
@@ -26,23 +26,23 @@ Elke pagina heeft een set [eigenschappen](/help/sites-authoring/editing-page-pro
 
 De standaardstatus voor elke pagina-eigenschap is:
 
-* verborgen in de ontwerpweergave (bijvoorbeeld **Pagina maken** wizard)
+* verborgen in creeer mening (bijvoorbeeld, **creeer de tovenaar van de Pagina**)
 
-* beschikbaar in de bewerkingsweergave (bijvoorbeeld **Eigenschappen weergeven**)
+* beschikbaar in geef mening uit (bijvoorbeeld, **Eigenschappen van de Mening**)
 
 De gebieden moeten specifiek worden gevormd als om het even welke verandering wordt vereist. Dit wordt gedaan gebruikend de aangewezen knoopeigenschappen:
 
-* De eigenschap Pagina die beschikbaar moet zijn in de weergave Maken (bijvoorbeeld **Pagina maken** wizard):
+* Het bezit van de pagina dat in creeert mening (bijvoorbeeld, **moet beschikbaar zijn leidt tot de tovenaar van de Pagina**):
 
    * Naam: `cq:showOnCreate`
    * Type: `Boolean`
 
-* De eigenschap Pagina die beschikbaar moet zijn in de bewerkingsweergave (bijvoorbeeld **Weergave**/**Bewerken**) **Eigenschappen** optie):
+* Het bezit van de pagina om in uit te geven mening (bijvoorbeeld, **Mening** te zijn/ **geeft** uit) **Eigenschappen** optie):
 
    * Naam: `cq:hideOnEdit`
    * Type: `Boolean`
 
-Zie bijvoorbeeld de instellingen voor velden die zijn gegroepeerd onder de **Meer titels en beschrijving** op de **Basis** tabblad voor de basiscomponent Pagina. Deze zijn zichtbaar in het dialoogvenster **Pagina maken** wizard als `cq:showOnCreate` is ingesteld op `true`:
+Bijvoorbeeld, zie de montages voor gebieden die onder **worden gegroepeerd Meer Titels en Beschrijving** op het **Basis** lusje voor de component van de stichtingspagina. Deze zijn zichtbaar in **Create de tovenaar van de Pagina** aangezien `cq:showOnCreate` aan `true` is geplaatst:
 
 ```xml
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles
@@ -50,16 +50,16 @@ Zie bijvoorbeeld de instellingen voor velden die zijn gegroepeerd onder de **Mee
 
 >[!TIP]
 >
->Zie de [Zelfstudie Pagina-eigenschappen uitbreiden](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) voor een handleiding voor het aanpassen van pagina-eigenschappen.
+>Zie het [ Uitbreiden van de zelfstudie van de Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) voor een gids aan het aanpassen van paginaeigenschappen.
 
 ## De pagina-eigenschappen configureren {#configuring-your-page-properties}
 
 U kunt ook de beschikbare velden configureren door het dialoogvenster van de paginacomponent te configureren en de juiste knoopeigenschappen toe te passen.
 
-Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring/managing-pages.md#creating-a-new-page) geeft de velden weer die onder zijn gegroepeerd **Meer titels en beschrijving**. Om deze te verbergen vormt u:
+Bijvoorbeeld, door gebrek leidt [**tot de tovenaar van de Pagina** ](/help/sites-authoring/managing-pages.md#creating-a-new-page) de gebieden die onder **Meer Titels en Beschrijving** worden gegroepeerd. Om deze te verbergen vormt u:
 
-1. De pagina-component maken onder `/apps`.
-1. Overschrijven maken (met *Diff* door de [Samenvoeging van verkoopbronnen](/help/sites-developing/sling-resource-merger.md)) voor de `basic` sectie van uw paginacomponent; bijvoorbeeld:
+1. Maak uw paginacomponent onder `/apps` .
+1. Creeer een opheffing (gebruikend *diff van de dialoog* die door [ wordt verstrekt het Verspreiden van de Fusie van het Middel ](/help/sites-developing/sling-resource-merger.md)) voor de `basic` sectie van uw paginacomponent; bijvoorbeeld:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -71,22 +71,22 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   >U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
+   >Nochtans, moet u ****** niets in de `/libs` weg veranderen.
    >
-   >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   >1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
-   >1. Breng wijzigingen aan in `/apps`
+   >1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het in `/libs` staat) onder `/apps`
+   >1. Breng eventuele wijzigingen aan binnen `/apps`
 
-1. Stel de `path` eigenschap op `basic` om naar de opheffing van het basislusje te wijzen (zie ook de volgende stap). Bijvoorbeeld:
+1. Stel de eigenschap `path` op `basic` zo in dat deze naar de overschrijving van het basistabblad verwijst (zie ook de volgende stap). Bijvoorbeeld:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Een overschrijving maken van de `basic` - `moretitles` het desbetreffende pad, bijvoorbeeld:
+1. Maak een overschrijving van de sectie `basic` - `moretitles` op het bijbehorende pad, bijvoorbeeld:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -98,18 +98,18 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
    * **Type**: `Boolean`
    * **Waarde**: `false`
 
-   De **Meer titels en beschrijving** wordt niet meer weergegeven in het dialoogvenster **Pagina maken** wizard.
+   De **Meer Titels en de sectie van de Beschrijving** zullen niet meer in **worden getoond creëren de tovenaar van de Pagina**.
 
 >[!NOTE]
 >
->Zie wanneer u pagina-eigenschappen configureert voor gebruik met live kopieën [MSM-vergrendelingen configureren in pagina-eigenschappen](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) voor meer informatie .
+>Wanneer het vormen van paginaeigenschappen voor gebruik met levende exemplaren zie [ het Vormen Msm op de Eigenschappen van de Pagina ](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) voor meer details.
 
 ## Voorbeeldconfiguratie van pagina-eigenschappen {#sample-configuration-of-page-properties}
 
-In dit voorbeeld ziet u de dialoochtechniek van het dialoogvenster [Samenvoeging van verkoopbronnen](/help/sites-developing/sling-resource-merger.md); inclusief het gebruik van [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Het illustreert ook het gebruik van beide `cq:showOnCreate` en `cq:hideOnEdit`.
+Deze steekproef toont de dialoog afschuivende techniek van de [ Verteller van het Middel Sling ](/help/sites-developing/sling-resource-merger.md) aan; met inbegrip van gebruik van [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Het illustreert ook het gebruik van zowel `cq:showOnCreate` als `cq:hideOnEdit` .
 
 CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-creatie-uitbreiding-pagina-dialoog project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [ open aem-auteurs-uitbreiding-pagina-dialoog project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

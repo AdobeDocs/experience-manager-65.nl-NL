@@ -16,23 +16,23 @@ ht-degree: 0%
 
 Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in Componentbrowser.
 
-Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om [deze componenten in-/uitschakelen](#enable-disable-components). Als deze optie is ingeschakeld en zich op de pagina bevindt, kunt u de ontwerpmodus gebruiken om [aspecten van het componentontwerp configureren](#configuring-the-design-of-a-component) door de kenmerkparameters te bewerken.
+Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de wijze van het Ontwerp gebruiken om [ toe te laten/onbruikbaar te maken dergelijke componenten ](#enable-disable-components). Wanneer toegelaten en gevestigd op uw pagina kunt u de wijze van het Ontwerp dan gebruiken om [ aspecten van het componentenontwerp ](#configuring-the-design-of-a-component) te vormen door de attributenparameters uit te geven.
 
 >[!NOTE]
 >
->Bij het bewerken van deze componenten moet de nodige voorzichtigheid worden betracht. De ontwerpinstellingen vormen vaak een integraal onderdeel van het ontwerp van de gehele website. Ze moeten daarom alleen worden gewijzigd door iemand met de juiste bevoegdheden en ervaring, vaak een beheerder of een ontwikkelaar. Zie [Componenten ontwikkelen](/help/sites-developing/components.md) voor meer informatie .
+>Bij het bewerken van deze componenten moet de nodige voorzichtigheid worden betracht. De ontwerpinstellingen vormen vaak een integraal onderdeel van het ontwerp van de gehele website. Ze moeten daarom alleen worden gewijzigd door iemand met de juiste bevoegdheden en ervaring, vaak een beheerder of een ontwikkelaar. Zie [ het Ontwikkelen Componenten ](/help/sites-developing/components.md) voor meer informatie.
 
 >[!NOTE]
 >
->De ontwerpmodus is alleen beschikbaar voor statische sjablonen. Sjablonen die met bewerkbare sjablonen zijn gemaakt, moeten worden bewerkt met de [sjablooneditor](/help/sites-authoring/templates.md).
+>De ontwerpmodus is alleen beschikbaar voor statische sjablonen. De malplaatjes die met editable malplaatjes worden gecreeerd zouden moeten worden uitgegeven gebruikend de [ malplaatjeredacteur ](/help/sites-authoring/templates.md).
 
 >[!NOTE]
 >
 >De ontwerpmodus is alleen beschikbaar voor ontwerpconfiguraties die zijn opgeslagen als inhoud onder ( `/etc`).
 >
->Beginnend in AEM 6.4, wordt het geadviseerd om ontwerpen als configuratiegegevens onder op te slaan `/apps` om ononderbroken plaatsingsscenario&#39;s te steunen. Onder opgeslagen ontwerpen `/apps` kunnen niet worden bewerkt tijdens runtime en de ontwerpmodus is niet beschikbaar voor gebruikers zonder beheerdersrechten voor dergelijke sjablonen.
+>Beginnend in AEM 6.4, wordt het geadviseerd om ontwerpen als configuratiegegevens onder `/apps` op te slaan om ononderbroken plaatsingsscenario&#39;s te steunen. Ontwerpen die zijn opgeslagen onder `/apps`, kunnen niet worden bewerkt in runtime en de ontwerpmodus is niet beschikbaar voor gebruikers zonder beheerdersrechten voor dergelijke sjablonen.
 
-Dit betekent dat u de onderdelen die zijn toegestaan in het alineasysteem voor de pagina, toevoegt of verwijdert. Het alineasysteem ( `parsys`) is een samengestelde component die alle andere alineacomponenten bevat. Met het alineasysteem kunnen auteurs componenten van verschillende typen aan een pagina toevoegen omdat deze alle andere alineacomponenten bevat. Elk alineatype wordt vertegenwoordigd als een component.
+Dit betekent dat u de onderdelen die zijn toegestaan in het alineasysteem voor de pagina, toevoegt of verwijdert. Het alineasysteem ( `parsys` ) is een samengestelde component die alle andere alineacomponenten bevat. Met het alineasysteem kunnen auteurs componenten van verschillende typen aan een pagina toevoegen omdat deze alle andere alineacomponenten bevat. Elk alineatype wordt vertegenwoordigd als een component.
 
 De inhoud van een productpagina kan bijvoorbeeld een alineasysteem bevatten dat het volgende bevat:
 
@@ -43,50 +43,50 @@ De inhoud van een productpagina kan bijvoorbeeld een alineasysteem bevatten dat 
 
 >[!NOTE]
 >
->Zie [Componenten ontwikkelen](/help/sites-developing/components.md) en [Richtlijnen voor het gebruik van sjablonen en componenten](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) voor meer informatie over `parsys`.
+>Zie [ het Ontwikkelen van Componenten ](/help/sites-developing/components.md) en [ Richtlijnen voor het Gebruiken van Malplaatjes en Componenten ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) voor meer informatie over `parsys`.
 
 >[!CAUTION]
 >
 >Het bewerken van het ontwerp in de ontwerpmodus, zoals beschreven in dit artikel, is de aanbevolen manier om ontwerpen van statische sjablonen te definiëren
 >
->Het aanpassen van ontwerpen in CRX DE bijvoorbeeld, is geen beste praktijk en de toepassing van dergelijke ontwerpen kan van verwacht gedrag variëren. Zie het document voor ontwikkelaars [Paginasjablonen - statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) voor meer informatie .
+>Het aanpassen van ontwerpen in CRX DE is bijvoorbeeld geen goede praktijk en de toepassing van dergelijke ontwerpen kan afwijken van het verwachte gedrag. Zie het ontwikkelaarsdocument [ Malplaatjes van de Pagina - Statisch ](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) voor meer informatie.
 
 ## Componenten in-/uitschakelen {#enable-disable-components}
 
 Een component in- of uitschakelen:
 
-1. Selecteer de **Ontwerp** -modus.
+1. Selecteer de **wijze van het Ontwerp**.
 
-   ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
+   ![ screen_shot_2018-03-22at103113 ](assets/screen_shot_2018-03-22at103113.png)
 
 1. Klik op een component. Wanneer de component is geselecteerd, heeft deze een blauwe rand.
 
-   ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
+   ![ screen_shot_2018-03-22at103204 ](assets/screen_shot_2018-03-22at103204.png)
 
-1. Klik op de knop **Bovenliggend** pictogram.
+1. Klik het **pictogram van de Ouder**.
 
-   ![Bovenliggend](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![ Ouder ](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    Hiermee selecteert u het alineasysteem dat de huidige component bevat.
 
-1. De **Configureren** wordt het pictogram voor het alineasysteem weergegeven op de actiebalk van het bovenliggende element.
+1. **vormt** pictogram voor het paragraafsysteem wordt getoond in de de actiebar van de ouder.
 
-   ![Configureren](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![ vormen ](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Selecteer deze optie om het dialoogvenster weer te geven.
 
 1. In het dialoogvenster kunt u de componenten definiëren die beschikbaar zijn in de componentenbrowser wanneer u de huidige pagina bewerkt.
 
-   ![screen_shot_2018-03-22at103329](assets/screen_shot_2018-03-22at103329.png)
+   ![ screen_shot_2018-03-22at103329 ](assets/screen_shot_2018-03-22at103329.png)
 
    Het dialoogvenster heeft twee tabbladen:
 
    * Toegestane componenten
    * Instellingen
 
-   **Toegestane componenten**
+   **Toegestane Componenten**
 
-   Op de **Toegestane componenten** tab, bepaalt u welke componenten voor parsys beschikbaar zijn.
+   Op het **Toegestane lusje van Componenten**, bepaalt u welke componenten voor parsys beschikbaar zijn.
 
    * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
    * U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
@@ -100,29 +100,29 @@ Een component in- of uitschakelen:
    >
    >Adaptieve formuliercomponenten zijn ontworpen voor gebruik in adaptieve formuliercontainers met het Forms-ecosysteem. Daarom moeten deze componenten alleen worden gebruikt in een adaptieve formuliereditor en werken ze niet in de pagina-editor Sites.
 
-   **Instellingen**
+   **Montages**
 
-   Op de **Instellingen** kunt u aanvullende opties definiëren, zoals het tekenen van een anker voor elke component en het definiëren van de celopvulling van elke container.
+   Op het **lusje van Montages** kunt u extra opties zoals bepalen om een anker voor elke component te trekken en de cel het opvullen van elke container te bepalen.
 
-1. Selecteren **Gereed** om uw configuratie op te slaan.
+1. Selecteer **Gedaan** om uw configuratie te bewaren.
 
 ## Het ontwerp van een component configureren {#configuring-the-design-of-a-component}
 
-1. Selecteer de **Ontwerp** -modus.
+1. Selecteer de **wijze van het Ontwerp**.
 
-   ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
+   ![ screen_shot_2018-03-22at103113-1 ](assets/screen_shot_2018-03-22at103113-1.png)
 
 1. Klik op een component met een blauwe rand. In dit voorbeeld wordt een hoofdafbeeldingscomponent geselecteerd.
 
-   ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
+   ![ screen_shot_2018-03-22at103434 ](assets/screen_shot_2018-03-22at103434.png)
 
-1. Gebruik de **Configureren** om het dialoogvenster te openen.
+1. Gebruik **vormen** pictogram om de dialoog te openen.
 
-   ![Pictogram Configureren](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![ vorm pictogram ](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    In het ontwerpdialoogvenster kunt u de component configureren op basis van de beschikbare ontwerpparameters.
 
-   ![screen_shot_2018-03-22at103530](assets/screen_shot_2018-03-22at103530.png)
+   ![ screen_shot_2018-03-22at103530 ](assets/screen_shot_2018-03-22at103530.png)
 
    Het dialoogvenster heeft drie tabbladen:
 
@@ -132,28 +132,28 @@ Een component in- of uitschakelen:
 
    **Eigenschappen**
 
-   De **Eigenschappen** kunt u de belangrijke ontwerpparameters van de component vormen. Voor een afbeeldingscomponent kunt u bijvoorbeeld de maximale en minimale grootte van de toegestane afbeelding definiëren.
+   Het **lusje van Eigenschappen** laat u de belangrijke ontwerpparameters van de component vormen. Voor een afbeeldingscomponent kunt u bijvoorbeeld de maximale en minimale grootte van de toegestane afbeelding definiëren.
 
-   **Functies**
+   **Eigenschappen**
 
-   De **Functies** kunt u extra functies van de component in- of uitschakelen. Voor een afbeeldingscomponent kunt u bijvoorbeeld de richting van de afbeelding, de beschikbare uitsnijdopties en of een afbeelding kan worden geüpload definiëren.
+   Het **lusje van Eigenschappen** laat u extra eigenschappen van de component toelaten of onbruikbaar maken. Voor een afbeeldingscomponent kunt u bijvoorbeeld de richting van de afbeelding, de beschikbare uitsnijdopties en of een afbeelding kan worden geüpload definiëren.
 
    **Stijlen**
 
-   De **Stijlen** kunt u de CSS-klassen en -stijlen definiëren die met de component moeten worden gebruikt.
+   Het **lusje van Stijlen** laat u de CSS klassen en stijlen bepalen die met de component moeten worden gebruikt.
 
-   ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
+   ![ screen_shot_2018-03-22at103741 ](assets/screen_shot_2018-03-22at103741.png)
 
-   Gebruik de **Toevoegen** om aanvullende vermeldingen toe te voegen aan een lijst met meervoudige vermeldingen.
+   Gebruik **toevoegen** knoop om extra ingangen aan een veelvoudig-ingangs dialooglijst toe te voegen.
 
-   ![Extra item toevoegen](assets/chlimage_1-94.png)
+   ![ voeg extra ingang ](assets/chlimage_1-94.png) toe
 
-   Gebruik de **Verwijderen** pictogram om een item uit een lijst met meervoudige invoerdialoogvensters te verwijderen.
+   Gebruik het **pictogram van de Schrapping** om een ingang uit een veelvoudig-ingangsdialoog lijst te verwijderen.
 
-   ![Verwijderen](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![ Schrapping ](do-not-localize/screen_shot_2018-03-22at103809.png)
 
-   Gebruik de **Verplaatsen** om de volgorde van items in een meervoudige-invoerdialooglijst te wijzigen.
+   Gebruik het **pictogram van de Beweging** om de orde van ingangen in een veelvoudig-ingangsdialoog lijst te herschikken.
 
-   ![Verplaatsen](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![ Beweging ](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Klik op de knop **Gereed** om het dialoogvenster op te slaan en te sluiten.
+1. Klik het **Gereed** pictogram om de dialoog te bewaren en te sluiten.

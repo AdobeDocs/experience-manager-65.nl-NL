@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-mpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor de juiste transcodering van [video-elementen](../../help/sites-authoring/default-components-foundation.md#video).
+mpeg is een oplossing voor het omzetten en het stromen audio en video en, wanneer geïnstalleerd, wordt gebruikt voor juiste transcodering van [ videoactiva ](../../help/sites-authoring/default-components-foundation.md#video).
 
 ## Mpeg installeren {#installing-ffmpeg}
 
-Fmpeg moet worden geïnstalleerd op de server(s) die als host fungeert voor de AEM *auteur* instantie(s).
+mpeg zou op de server(s) moeten worden geïnstalleerd die de AEM *auteur* instantie(s) ontvangen.
 
-1. Ga naar [https://www.ffmpeg.org](https://www.ffmpeg.org/).
+1. Ga naar [ https://www.ffmpeg.org ](https://www.ffmpeg.org/).
 1. Download de nieuwste versie van MPEG voor uw specifieke omgeving (Macintosh, Windows of Linux).
 
    * Het is belangrijk om MPEG up-to-date te houden wegens veiligheidskwetsbaarheden in oudere versies.
@@ -37,30 +37,30 @@ Fmpeg moet worden geïnstalleerd op de server(s) die als host fungeert voor de A
 
    U moet Mpeg vanuit elke map in uw systeem kunnen uitvoeren.
 
-   * Bijvoorbeeld: `ffmpeg -version`.
+   * Bijvoorbeeld `ffmpeg -version` .
 
 ## MPEG Transcoding Service configureren {#configure-ffmpeg-transcoding-service}
 
-Wanneer MPEG wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de [!UICONTROL DAM Update Asset] workflowdefinitie.
+Wanneer MPEG wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de workflowdefinitie van [!UICONTROL DAM Update Asset] .
 
 Aangezien de transcoderingen CPU-intensief zijn, wordt aangeraden de lijst met doeluitvoeringen te wijzigen. In de meeste gevallen is transcodering niet nodig.
 
-Als u de [!UICONTROL DAM Update Asset] workflow en in dit voorbeeld om transcodering uit te schakelen:
+U kunt als volgt de [!UICONTROL DAM Update Asset] -workflow wijzigen en in dit voorbeeld de transcodering uitschakelen:
 
 * Meld u aan bij de instantie van de auteur met beheerdersrechten.
-* Navigeer van globale navigatie naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-* Zoeken **[!UICONTROL DAM Update Asset]**.
+* Navigeer vanuit de globale navigatie naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** .
+* Zoek **[!UICONTROL DAM Update Asset]** .
 * Dubbelklik om de workflow voor bewerking te openen in de klassieke gebruikersinterface.
 
-  Resulterende locatie: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Resulterende plaats: [ http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Dubbelklik op de knop **[!UICONTROL FFmpeg transcoding]** om het dialoogvenster Step Properties te openen.
-* Onder de **[!UICONTROL Process]** tab:
+* Dubbelklik op de stap **[!UICONTROL FFmpeg transcoding]** om het dialoogvenster Step Properties te openen.
+* Onder het tabblad **[!UICONTROL Process]** :
 
-   * **[!UICONTROL Arugments]**: Wis alle items om transcoderingsstandaardwaarden uit te schakelen: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+   * **[!UICONTROL Arugments]**: wis alle items om transcodering van standaardwaarden uit te schakelen: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-  ![configure-ffmpeg](assets/configure-ffmpeg.png)
+  ![ vorm-ffmpeg ](assets/configure-ffmpeg.png)
 
-* Selecteren **[!UICONTROL OK]** om de `Step Properties` in.
+* Selecteer **[!UICONTROL OK]** om het dialoogvenster `Step Properties` te sluiten.
 
-* Selecteren **[!UICONTROL Save]** om de `DAM Update Asset` workflow.
+* Selecteer **[!UICONTROL Save]** om de `DAM Update Asset` -workflow op te slaan.

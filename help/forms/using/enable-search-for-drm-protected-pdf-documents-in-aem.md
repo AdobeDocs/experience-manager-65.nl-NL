@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM inschakelen om te zoeken naar documenten die zijn beveiligd met PDF{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschillende veelgebruikte documentindelingen, zoals bestanden met normale tekst, Microsoft Office-documenten en PDF-documenten. U kunt de oorspronkelijke zoekopdracht ook uitbreiden om een zoekopdracht in volledige tekst uit te voeren op [PDF Documenten die zijn beveiligd met AEM documentbeveiliging](../../forms/using/admin-help/document-security.md). Voer de volgende stappen uit om AEM in staat te stellen volledige tekst op dergelijke documenten te zoeken:
+AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschillende veelgebruikte documentindelingen, zoals bestanden met normale tekst, Microsoft Office-documenten en PDF-documenten. U kunt het inheemse onderzoek ook uitbreiden om full-text onderzoek op [ PDF Documenten uit te voeren die met AEM veiligheid van het Document ](../../forms/using/admin-help/document-security.md) worden beschermd. Voer de volgende stappen uit om AEM in staat te stellen volledige tekst op dergelijke documenten te zoeken:
 
 1. Een veilige verbinding tot stand brengen
 1. Een voorbeelddocument met een door een beleid beveiligde PDF indexeren
@@ -28,22 +28,22 @@ AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschill
 
 * Als u AEM Forms gebruikt op OSGi:
 
-   * Installeren [AEM Forms Document Security Indexer-pakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op de AEM Forms-server.
+   * Installeer [ het pakket van de Indexer van de Veiligheid van het Document van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
 
    * Controleer of een AEM Forms op de JEE-server actief is en of documentbeveiliging op de overeenkomstige AEM Forms op de JEE-server is geïnstalleerd. Het AEM Formulier op de JEE-server is vereist om het beveiligde document te indexeren.
 
 * Als u alleen AEM Forms op de JEE-server gebruikt, is het indexeerpakket al geïnstalleerd.
 * Zorg ervoor dat alle bundels aan de slag zijn. Als alle bundels niet actief zijn, wacht u tot alle bundels actief zijn.
 
-   * Voor AEM Forms op OSGi worden de bundels weergegeven op https://&#39;[server]:[poort]&quot;/systeem/console/bundels.
-   * Voor AEM Forms op JEE worden de bundels weergegeven op https://&#39;[server]:[poort]&#39;/[contextpad]/systeem/console/bundels. Bijvoorbeeld https://localhost:8080/lc/system/console/bundles.
+   * Voor AEM Forms op OSGi, zijn de bundels vermeld in https://&#39; [ server ]:[ haven ]&#39;/system/console/bundels.
+   * Voor AEM Forms op JEE, zijn de bundels vermeld in https://&#39; [ server ]:[ haven ]&#39;/[ context-weg ]/system/console/bundels. Bijvoorbeeld https://localhost:8080/lc/system/console/bundles.
 
-* Voeg de *sun.util.agenda* aan de lijst van gewenste personen. Voer de volgende stappen uit om het pakket aan de lijst van gewenste personen toe te voegen:
+* Voeg het {*pakket 0} sun.util.endar aan de lijst van gewenste personen toe.* Voer de volgende stappen uit om het pakket aan de lijst van gewenste personen toe te voegen:
 
-   1. Open AEM webconsole. De URL is https://&#39;[server]:[poort]&quot;/system/console/configMgr.
-   1. Zoeken en openen **Configuratie van firewall voor deserialisatie**.
+   1. Open AEM webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
+   1. Bepaal en open **Configuratie van de Firewall 0} Deserialization.**
 
-   1. Voeg het pakket sun.util.agenda toe aan het Gevoegde op lijst van gewenste personen veld voor klassen of voorvoegsels van pakketten en klik op **Opslaan**.
+   1. Voeg het pakket sun.util.agenda aan de Gevoegde op lijst van gewenste personen klassen of het pakket prefixes gebied toe en klik **sparen**.
 
 ### Een veilige verbinding tot stand brengen tussen AEM Forms JEE- en OSGi-stapels {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -54,31 +54,31 @@ U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot st
 
 #### De Adobe LiveCycle Client SDK-bundel configureren met AEM Forms op JEE-beheerdersreferenties {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Open AEM webconsole. De URL is https://&#39;[server]:[poort]&quot;/system/console/configMgr.
-1. Zoek en open de **Adobe LiveCycle client SDK-bundel**. Geef waarde op voor de volgende velden:
+1. Open AEM webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
+1. Bepaal en open de plaats van de **Bundel van SDK van de Cliënt van het LiveCycle van de Adobe**. Geef waarde op voor de volgende velden:
 
-   * **Server-URL:** Geef de HTTPS-URL van AEM Forms op de JEE-server op. Start de server opnieuw op met -Djavax.net.ssl.trustStore= om communicatie via https mogelijk te maken&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> parameter.
-   * **Servicenaam**: Voeg de RightsManagementService toe aan de lijst met opgegeven services.
-   * **Gebruikersnaam:** Geef de gebruikersnaam op van de AEM Forms op de JEE-account die moet worden gebruikt om oproepen van AEM server te starten. De opgegeven account moet beschikken over machtigingen om documentservices te starten op de AEM Forms op de JEE-server.
-   * **Wachtwoord**: Geef het wachtwoord van de AEM Forms op voor de JEE-account die in het veld Gebruikersnaam wordt vermeld.
+   * **Server URL:** specificeer HTTPS URL van AEM Forms op server JEE. Start de server opnieuw op met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
+   * **Naam van de Dienst**: Voeg de RightsManagementService aan de lijst van de gespecificeerde diensten toe.
+   * **Gebruikersnaam:** specificeer gebruikersnaam van AEM Forms op JEE rekening om vraag van AEM server in werking te stellen. De opgegeven account moet beschikken over machtigingen om documentservices te starten op de AEM Forms op de JEE-server.
+   * **Wachtwoord**: specificeer wachtwoord van AEM Forms op JEE rekening die op het gebied van de Gebruikersnaam wordt vermeld.
 
-   Klikken **Opslaan**. AEM is ingeschakeld om te zoeken in documenten met een beveiligde PDF.
+   Klik **sparen**. AEM is ingeschakeld om te zoeken in documenten met een beveiligde PDF.
 
 #### De SDK-bundel voor client-SDK van Adobe LiveCycle configureren met wederzijdse verificatie {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Zie voor meer informatie [CAC en wederzijdse verificatie](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
-1. Open AEM webconsole. De URL is https://&#39;[server]:[poort]&quot;/system/console/configMgr.
-1. Zoek en open de **Adobe LiveCycle Client SDK** Bundel. Geef waarde op voor de volgende eigenschappen:
+1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [ CAC en Wederzijdse Authentificatie ](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Open AEM webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
+1. Zoek en open de **Bundel van de Cliënt SDK van het LiveCycle van de Adobe van 0}.** Geef waarde op voor de volgende eigenschappen:
 
-   * **Server-URL**: Geef de HTTPS-URL van AEM Forms op de JEE-server op. Start de AEM opnieuw met de -Djavax.net.ssl.trustStore= om communicatie via https mogelijk te maken&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> parameter.
-   * **2-wegs SSL inschakelen**: Schakel de optie 2-wegs SSL inschakelen in.
-   * **URL sleutelarchiefbestand**: Geef de URL van het sleutelarchiefbestand op.
-   * **TrustStore-bestands-URL**: Geef de URL van het bestand truststore op.
-   * **KeyStore-wachtwoord**: Geef het wachtwoord voor het sleutelarchiefbestand op.
-   * **TrustStorePassword**: Geef het wachtwoord voor het bestand truststore op.
-   * **Servicenaam**: Voeg de RightsManagementService toe aan de lijst met opgegeven services.
+   * **Server URL**: specificeer HTTPS URL van AEM Forms op server JEE. Start de AEM opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
+   * **laat 2-wegs SSL** toe: Laat 2-wegsSSL optie toe.
+   * **het Dossier URL van KeyStore**: Specificeer URL van het keystore dossier.
+   * **TrustStore FIle URL**: Specificeer URL van het truststore dossier.
+   * **Wachtwoord KeyStore**: Specificeer het wachtwoord voor het keystore dossier.
+   * **TrustStorePassword**: Specificeer het wachtwoord voor het truststore dossier.
+   * **Naam van de Dienst**: Voeg de RightsManagementService aan de lijst van de gespecificeerde diensten toe.
 
-   Klikken **Opslaan**. AEM is ingeschakeld om te zoeken naar documenten met een beveiligde PDF
+   Klik **sparen**. AEM is ingeschakeld om te zoeken naar documenten met een beveiligde PDF
 
 ### Een voorbeelddocument met een door een beleid beveiligde PDF indexeren {#index-a-sample-policy-protected-pdf-document}
 

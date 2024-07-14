@@ -22,7 +22,7 @@ De referentie bevat informatie over het bedoelde gebruik dat toegankelijk is via
 
 1. Open een webbrowser en voer de volgende URL in:
 
-   http://localhost:port/ReaderExtensions *poort* is het poortnummer van de toepassingsserver)
+   http://localhost:port/ReaderExtensions (waar *haven* het havenaantal van uw toepassingsserver is)
 
 1. Meld u aan met de standaardgebruikersnaam en het standaardwachtwoord:
 

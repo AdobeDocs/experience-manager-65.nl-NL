@@ -21,26 +21,26 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Als u letters wilt blijven gebruiken in AEM Forms 6.5, moet u de nieuwste [AEMFD-compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Om brieven in AEM Forms 6.5 te blijven gebruiken, moet u het recentste [ pakket van de Verenigbaarheid AEMFD ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) installeren.
 
-Met het pakket AEMFD-compatibiliteit kunt u ook [gebruik de volgende activa van AEM Forms 6.4, 6.3 en 6.2 op AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Het pakket van de Verenigbaarheid AEMFD laat u [ ook de volgende activa van AEM Forms 6.4, 6.3 en 6.2 op AEM Forms 6.5 gebruiken:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Documentfragmenten
 * Letters
 * Gegevenswoordenboeken
 * Afgekeurde sjablonen en pagina&#39;s voor adaptieve formulieren
 
-Zie voor meer informatie [Activa die compatibel zijn gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren](../../forms/using/compatibility-package.md#assetsmadecompatible).
+Voor meer informatie, zie [ Assets compatibel gemaakt met AEM Forms 6.5 door het pakket van de Verenigbaarheid ](../../forms/using/compatibility-package.md#assetsmadecompatible) te installeren.
 
 ## Voeg ondersteuning toe voor AEM Forms 6.4-, 6.3- en 6.2-middelen in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Nadat u een upgrade hebt uitgevoerd, voert u de volgende handelingen uit om het compatibiliteitspakket voor AEMFD te installeren en uw elementen compatibel te maken met 6.5:
 
-Zorg ervoor dat u [Compatibiliteitspakket AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd.
+Zorg ervoor dat u [ AEM het pakket van de Verenigbaarheid ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd hebt.
 
-1. De nieuwste versie 6.5 installeren [Verenigbaarheidspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Installeer het recentste 6.5 [ pakket van de Verenigbaarheid ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-   Voor meer informatie over het uploaden en installeren van het pakket raadpleegt u [Werken met pakketten](/help/sites-administering/package-manager.md).
+   Voor meer informatie bij het uploaden en het installeren van het pakket, zie [ hoe te met pakketten ](/help/sites-administering/package-manager.md) werken.
 
 1. Start de server opnieuw nadat de logbestanden zijn gestabiliseerd.
 1. Gebruik het migratiehulpprogramma om uw middelen compatibel te maken met 6.5.
@@ -49,13 +49,13 @@ Zorg ervoor dat u [Compatibiliteitspakket AEM](https://helpx.adobe.com/aem-forms
    >
    > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-   Zie voor meer informatie [migratiehulpprogramma](../../forms/using/migration-utility.md).
+   Voor meer informatie, zie [ migratienut ](../../forms/using/migration-utility.md).
 
-## Activa die compatibel zijn gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren {#assetsmadecompatible}
+## Assets is compatibel gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren {#assetsmadecompatible}
 
 Door het compatibiliteitspakket te installeren, kunt u de volgende elementen en sjablonen compatibel maken met AEM Forms 6.5:
 
-* Correspondentenbeheeractiva uit AEM 6.4 en eerder:
+* Correspondentenbeheer Assets van AEM 6.4 en eerder:
 
    * [Letters](../../forms/using/create-letter.md)
    * [Gegevenswoordenboeken](/help/forms/using/data-dictionary.md)

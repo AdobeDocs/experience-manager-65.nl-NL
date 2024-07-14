@@ -26,27 +26,27 @@ In de AEM Forms-app wordt met de veegbeweging links een nieuwe taak of een nieuw
 
 1. Open uw project.
 
-   * Voor iOS: open `Capture.xcodeproj` in Xcode
+   * Voor iOS opent u `Capture.xcodeproj` in Xcode
    * Voor Android opent u het Android-project in Eclipse.
-   * Voor Windows: open `MWSWindows.sln` in Visual Studio.
+   * Voor Vensters, open `MWSWindows.sln` in Visual Studio.
 
-1. Navigeer naar de map views en open de `task.js` bestand voor bewerking.
+1. Navigeer naar de map views en open het bestand `task.js` voor bewerking.
 
-   * Navigeer in Xcode naar de **Vastleggen > www > wsmobile > js > runtime > views** map.
-   * Ga in Eclipse naar de knop **assets > www > wsmobile > js > runtime > views** map.
-   * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > js > runtime > views** map.
+   * In Xcode, navigeer aan **Vangst > www > wsmobile > js > runtime > meningen** omslag.
+   * In Verduistering, navigeer aan de **activa > www > wsmobile > js > runtime > meningen** omslag.
+   * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > js > runtime > meningen** omslag.
 
    >[!NOTE]
    >
    >Het bestand task.js bevat de backboneweergave die is gekoppeld aan elke taak of elk beginpunt dat in de lijst met taken of beginpunten wordt vermeld.
 
-1. In de `task.js` bestand, zoekt u naar de eigenschap events van de weergave.
+1. Zoek in het bestand `task.js` naar de eigenschap events van de weergave.
 
    De eigenschap events is een kaart met elke vermelding in de indeling:
 
    `"EventName Selector": "Function"`
 
-   Wanneer u een JavaScript-gebeurtenis activeert met de naam `EventName`op een HTML-element dat is opgegeven door `Selector`de `Function`wordt aangeroepen.
+   Wanneer u een gebeurtenis van JavaScript genoemd `EventName` op een element activeert van de HTML dat door `Selector` wordt gespecificeerd, wordt `Function` geroepen.
 
 1. Zoeken
 
@@ -68,7 +68,7 @@ In de AEM Forms-app wordt met de veegbeweging links een nieuwe taak of een nieuw
 
      &quot;vepe.last_empty_div&quot; : &quot;onTaskClick&quot;,
 
-1. Opslaan en het dialoogvenster sluiten `task.js` bestand.
+1. Sla het `task.js` -bestand op en sluit het.
 1. De AEM Forms-app ontwikkelen en uitvoeren. Nu kunt u een toepassing openen met een veegbeweging naar links en een veegbeweging naar rechts.
 
 Op dezelfde manier kunt u ook wijzigingen aanbrengen in andere weergaven voor verschillende combinaties van bewegingen, HTML-elementen en functies.

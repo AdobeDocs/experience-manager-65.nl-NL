@@ -18,15 +18,15 @@ ht-degree: 0%
 
 # Sneltoetsen voor consoles{#keyboard-shortcuts-for-consoles}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing op het gebruik van consoles, andere op [pagina bewerken](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn op het gebruik van consoles van toepassing, anderen op [ pagina die ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) uitgeven.
 
 >[!NOTE]
 >
->De [wijzigingstoetsen](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) De vereiste sneltoetsen voor AEM sneltoetsen zijn afhankelijk van het besturingssysteem.
+>De [ bepalingssleutels ](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) die voor AEM toetsenbordkortere weg worden vereist variëren afhankelijk van werkend systeem.
 
 ## Sneltoetsen {#keyboard-shortcuts}
 
-De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Screens, Assets, Users, Group, Projecten en Experience Fragments.
+De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Screens, Assets, Users, Groepen, Projecten en Experience Fragments.
 
 | Locatie | Sneltoets | Beschrijving |
 |---|---|---|
@@ -38,8 +38,8 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Scree
 | Console - kolomweergave | `Shift-Up/Down Arrow` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
 |  | `Esc` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
 | Consoles | `?` | Help bij sneltoetsen |
-|  | `/` | Invoeden [zoeken](/help/sites-authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | In-/uitschakelen [spoorwegkiezer](/help/sites-authoring/basic-handling.md#rail-selector) optie voor weergave |
+|  | `/` | Roep [ onderzoek ](/help/sites-authoring/search.md) aan |
+|  | `Alt+`&lt;`Number`> | Wissel welke [ spoorselecteur ](/help/sites-authoring/basic-handling.md#rail-selector) optie om te bekijken |
 |  | ``` ` ``` | Spoorstaaf verbergen |
 |  | `e` | Bewerken |
 |  | `p` | Eigenschappen |
@@ -49,9 +49,9 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Scree
 |  | `Backspace` | Verwijderen |
 | Eigenschappenpagina&#39;s | `Ctrl+s` | Opslaan |
 
-De belangrijkste combinaties worden vermeld met Vensters [wijzigingstoetsen](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys).
+De belangrijkste combinaties zijn vermeld met de 20} bepalingssleutels van Vensters ](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys).[
 
-Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [paginaeditor](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) aan ontwerppagina&#39;s.
+Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [ paginaredacteur ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) aan auteurspagina&#39;s.
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 
@@ -78,7 +78,7 @@ Daarnaast zijn sneltoetsen voor alle landinstellingen en toetsenbordindelingen h
 >
 >AEM sneltoetsen kunnen problemen opleveren met schermlezers, bepaalde browserfuncties en andere toegankelijkheidsfuncties.
 >
->Adobe beveelt aan [AEM sneltoetsen uitschakelen](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) wanneer u een schermlezer gebruikt.
+>Adobe adviseert [ onbruikbaar makend AEM toetsenbordkortere weg ](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) wanneer het gebruiken van een het schermlezer.
 
 ## Sneltoetsen deactiveren {#deactivating-keyboard-shortcuts}
 
@@ -89,7 +89,7 @@ Voor gebruikers die geen sneltoetsen gebruiken of bepaalde toegankelijkheidsvere
 U kunt sneltoetsen op twee locaties deactiveren:
 
 * [Mijn voorkeuren](/help/sites-authoring/user-properties.md#my-preferences)
-* De [Help, menu](/help/sites-authoring/basic-handling.md#accessing-help)
+* Het [ hulpmenu ](/help/sites-authoring/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >

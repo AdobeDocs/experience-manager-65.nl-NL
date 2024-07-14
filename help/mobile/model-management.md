@@ -19,13 +19,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Modelbeheer omvat het maken en beheren van modellen voor het koppelen aan uiteindelijke gegevensobjecten. Elk model bevat alle eigenschappen en velddefinities die nodig zijn om het maken en renderen van objecten te vergemakkelijken.
 
-Modelbeheer houdt in dat **modellen**, **entiteiten**, en **spaties**. Het volgende diagram illustreert de relatie tussen de AEM Inhoud en de modellen.
+Het modelbeheer impliceert de verwezenlijking van **modellen**, **entiteiten**, en **ruimten**. Het volgende diagram illustreert de relatie tussen de AEM Inhoud en de modellen.
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![ chlimage_1-81 ](assets/chlimage_1-81.png)
 
 ## Het inhoudsmodel {#the-content-model}
 
@@ -39,7 +39,7 @@ Gebruikers kunnen hun eigen modellen maken. Hierdoor kunnen nieuwe inhoudstypen 
 
 In het volgende diagram ziet u het inhoudsmodel voor AEM Mobile Apps en hoe entiteiten, mappen en spaties worden toegewezen aan een app.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![ chlimage_1-82 ](assets/chlimage_1-82.png)
 
 ### De modellen {#the-models}
 
@@ -50,7 +50,7 @@ Modellen worden gebruikt om te bepalen hoe entiteiten worden gemaakt. Zij bepale
 >Een model bestaat buiten een app omdat meerdere apps het kunnen gebruiken.
 >
 
-Als u modellen wilt maken en beheren in het dashboard en de gegevensopslagruimte, raadpleegt u **[Modellen](/help/mobile/administer-mobile-apps.md)**.
+Om modellen in het dashboard en de bewaarplaats tot stand te brengen en te beheren, zie **[Modellen](/help/mobile/administer-mobile-apps.md)**.
 
 ### Entiteiten in inhoudsmodel {#entities-in-content-model}
 
@@ -58,9 +58,9 @@ Een entiteit is een instantie van een inhoudsmodel. Een entiteit wordt via de Co
 
 Als er bestaande AEM inhoud is, wordt een entiteit gegenereerd met behulp van een model en de AEM inhoudsbron. Een pagina-entiteit is bijvoorbeeld een kanaal- en indelingsonafhankelijk object dat wordt gegenereerd op basis van een AEM pagina en het paginamodel.
 
-Wijzigingen in de inhoud waarnaar wordt verwezen van een entiteit leiden tot een wijziging in de entiteit. Als een *cq:pagina* wordt bijgewerkt, worden de entiteiten die op die pagina zijn gebaseerd, ook bijgewerkt.
+Wijzigingen in de inhoud waarnaar wordt verwezen van een entiteit leiden tot een wijziging in de entiteit. Bijvoorbeeld, als a *cq:pagina* wordt bijgewerkt, dan worden om het even welke entiteiten die op die pagina gebaseerd zijn bijgewerkt, ook.
 
-Als u aangepaste entiteiten wilt maken van modellen, raadpleegt u **[Werken met entiteiten](/help/mobile/spaces-and-entities.md)**.
+Om douaneentiteiten van modellen tot stand te brengen, zie **[Werkend met Entiteiten](/help/mobile/spaces-and-entities.md)**.
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ Een spatie wordt gebruikt om entiteiten te organiseren voor eenvoudige toegang. 
 
 Aan de AEM kant is een spatie een handige manier om verwante entiteiten te beheren. Het kan ook worden gebruikt om toestemmingen toe te wijzen. U kunt toestemming geven aan een ruimte, die de entiteiten in die ruimte beschermt.
 
-*Bijvoorbeeld*,
+*bijvoorbeeld*,
 
-Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alleen voor intern gebruik, het andere is goedgekeurd voor openbaar gebruik en het derde is nog steeds voor algemene entiteiten die door veel apps worden gebruikt. Om het gemakkelijk te maken te leiden, creeert de gebruiker drie ruimten, namelijk *internal*, *publiek* (met zowel Engelse als Franse inhoud), en *gemeenschappelijk* voor het beheer van de betrokken entiteiten als hieronder vermeld:
+Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alleen voor intern gebruik, het andere is goedgekeurd voor openbaar gebruik en het derde is nog steeds voor algemene entiteiten die door veel apps worden gebruikt. Om het gemakkelijk te maken om te leiden, creeert de gebruiker drie ruimten namelijk *intern*, *openbaar* (met zowel Engelse als Franse inhoud), en *gemeenschappelijk* voor het beheren van de aangewezen entiteiten zoals hieronder vermeld:
 
 * /content/entities/internal
 * /content/entities/public/nl
@@ -84,7 +84,7 @@ Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alle
 
 Een de diensteindpunt wordt verstrekt aan de ruimte zodat kan de inheemse cliëntbibliotheek om een lijst van de inhoud van een ruimte verzoeken. Deze &#39;aanbieding&#39; wordt geretourneerd als een JSON-object.
 
-Zie **[Spaties en entiteiten](/help/mobile/spaces-and-entities.md)** voor het maken en publiceren van spaties.
+Zie **[Spaties en Entiteiten](/help/mobile/spaces-and-entities.md)** voor het creëren van en het publiceren van ruimten.
 
 >[!NOTE]
 >
@@ -94,4 +94,4 @@ Zie **[Spaties en entiteiten](/help/mobile/spaces-and-entities.md)** voor het ma
 
 De omslagen staan gebruikers toe om entiteiten te organiseren zoals vereist en vergemakkelijkt fijnere ACL controle. De ruimten kunnen omslagen omvatten om de inhoud en de activa van de ruimte verder te organiseren. Een gebruiker kan een eigen hiërarchie onder een spatie maken.
 
-Als u mappen binnen een ruimte wilt maken en beheren, raadpleegt u **[Werken met mappen in een spatie](/help/mobile/spaces-and-entities.md)**.
+Om omslagen binnen een ruimte tot stand te brengen en te beheren, zie **[Werkend met Omslagen in een Ruimte](/help/mobile/spaces-and-entities.md)**.

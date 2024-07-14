@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Programmatische interactie met Workflows{#interacting-with-workflows-programmatically}
 
-Wanneer [uw workflows aanpassen en uitbreiden](/help/sites-developing/workflows-customizing-extending.md) u hebt toegang tot workflowobjecten:
+Wanneer [ het aanpassen en het uitbreiden van uw werkschema&#39;s ](/help/sites-developing/workflows-customizing-extending.md) u tot werkschemavoorwerpen kunt toegang hebben:
 
 * [De Java API voor de workflow gebruiken](#using-the-workflow-java-api)
 * [Workflowobjecten verkrijgen in ECMA-scripts](#obtaining-workflow-objects-in-ecma-scripts)
@@ -26,7 +26,7 @@ Wanneer [uw workflows aanpassen en uitbreiden](/help/sites-developing/workflows-
 
 ## De Java API voor de workflow gebruiken {#using-the-workflow-java-api}
 
-De workflow Java API bestaat uit de [`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) verpakking en verscheidene subpakketten. Het belangrijkste lid van de API is de `com.adobe.granite.workflow.WorkflowSession` klasse. De `WorkflowSession` klasse biedt toegang tot workflowobjecten tijdens het ontwerpen en bij uitvoering:
+De workflow-Java API bestaat uit het [`com.adobe.granite.workflow` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) -pakket en diverse subpakketten. Het belangrijkste lid van de API is de `com.adobe.granite.workflow.WorkflowSession` -klasse. De klasse `WorkflowSession` biedt toegang tot workflowobjecten tijdens het ontwerpen en uitvoeren:
 
 * workflowmodellen
 * werkartikelen
@@ -47,9 +47,9 @@ De volgende tabel bevat koppelingen naar de referentiedocumentatie van verschill
 
 ## Workflowobjecten verkrijgen in ECMA-scripts {#obtaining-workflow-objects-in-ecma-scripts}
 
-Zoals beschreven in [Script zoeken](/help/sites-developing/the-basics.md#locating-the-script), AEM (via Apache Sling) biedt een ECMA-scriptengine die ECMA-scripts op de server uitvoert. De [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) -klasse is direct beschikbaar voor uw scripts als de `sling` variabele.
+Zoals die in [ van het Manuscript ](/help/sites-developing/the-basics.md#locating-the-script) wordt beschreven, verstrekt AEM (via Apache Sling) een ECMA manuscriptmotor die server-kant manuscripten ECMA uitvoert. De [`org.apache.sling.scripting.core.ScriptHelper` ](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) klasse is onmiddellijk beschikbaar aan uw manuscripten als `sling` variabele.
 
-De `ScriptHelper` klasse verleent toegang tot `SlingHttpServletRequest` die u kunt gebruiken om uiteindelijk de `WorkflowSession` object; bijvoorbeeld:
+De klasse `ScriptHelper` biedt toegang tot de klasse `SlingHttpServletRequest` die u kunt gebruiken om uiteindelijk het object `WorkflowSession` te verkrijgen, bijvoorbeeld:
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
@@ -72,11 +72,11 @@ De volgende acties worden ondersteund met de REST API:
 
 >[!NOTE]
 >
->Met Firebug, een Firefox-extensie voor webontwikkeling, kunt u het HTTP-verkeer volgen wanneer de console wordt uitgevoerd. U kunt bijvoorbeeld de parameters en de waarden controleren die met een `POST` verzoek.
+>Met Firebug, een Firefox-extensie voor webontwikkeling, kunt u het HTTP-verkeer volgen wanneer de console wordt uitgevoerd. U kunt bijvoorbeeld de parameters en de waarden controleren die met een `POST` -aanvraag naar de AEM server worden verzonden.
 
-Op deze pagina wordt aangenomen dat AEM op localhost op poort wordt uitgevoerd `4502` en dat de installatiecontext &quot; `/`&quot; (basis). Als dit niet het geval is voor uw installatie, moeten de URI&#39;s, waarop de HTTP-aanvragen van toepassing zijn, dienovereenkomstig worden aangepast.
+Op deze pagina wordt aangenomen dat AEM wordt uitgevoerd op localhost op poort `4502` en dat de installatiecontext &quot; `/`&quot; (root) is. Als dit niet het geval is voor uw installatie, moeten de URI&#39;s, waarop de HTTP-aanvragen van toepassing zijn, dienovereenkomstig worden aangepast.
 
-De ondersteunde rendering voor `GET` Aanvragen zijn de JSON-rendering. De URL&#39;s voor `GET` moet de `.json` bijvoorbeeld:
+De rendering die wordt ondersteund voor `GET` -aanvragen is de JSON-rendering. De URL&#39;s voor `GET` moeten bijvoorbeeld de extensie `.json` hebben:
 
 `http://localhost:4502/etc/workflow.json`
 
@@ -98,7 +98,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Maakt een nieuwe werkstroominstantie. De parameters zijn:<br /> - <code>model</code>: de id (URI) van het respectieve workflowmodel<br /> - <code>payloadType</code>: met het type van de lading (bijvoorbeeld <code>JCR_PATH</code> of URL).<br /> De lading wordt verzonden als parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een locatiekopbal die URL van de nieuwe werkschemainstantiebron bevat.</p> </td>
+   <td><p>Maakt een nieuwe werkstroominstantie. De parameters zijn:<br /> - <code>model</code>: identiteitskaart (URI) van het respectieve werkschemamodel <br /> - <code>payloadType</code>: die het type van de lading (bijvoorbeeld, <code>JCR_PATH</code> of URL) bevatten.<br /> De payload wordt verzonden als parameter <code>payload</code> . Een <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een plaatsheader die URL van het nieuwe middel van de werkschemainstantie bevat.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -111,7 +111,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
 | HTTP-aanvraagmethode | Handelingen |
 |---|---|
-| `GET` | Hier worden de beschikbare workflowinstanties en hun statussen weergegeven ( `RUNNING`, `SUSPENDED`, `ABORTED` of `COMPLETED`) |
+| `GET` | Hier worden de beschikbare workflowinstanties en hun statussen weergegeven ( `RUNNING` , `SUSPENDED` , `ABORTED` of `COMPLETED`) |
 
 #### Een Werkstroominstantie beheren met de id {#managing-a-workflow-instance-by-its-id}
 
@@ -131,7 +131,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Wijzigt de status van de instantie. De nieuwe status wordt verzonden als parameter <code>state</code> en moet een van de volgende waarden hebben: <code>RUNNING</code>, <code>SUSPENDED</code>, of <code>ABORTED</code>.<br /> Als de nieuwe status niet bereikbaar is (bijvoorbeeld wanneer een afgesloten instantie wordt opgeschort), kunt u <code>409</code> (<code>CONFLICT</code>) wordt teruggestuurd naar de client.</td>
+   <td>Wijzigt de status van de instantie. De nieuwe status wordt verzonden als de parameter <code>state</code> en moet een van de volgende waarden hebben: <code>RUNNING</code>, <code>SUSPENDED</code> of <code>ABORTED</code> .<br /> Als de nieuwe status niet bereikbaar is (bijvoorbeeld bij het opschorten van een beëindigde instantie), wordt een <code>409</code> (<code>CONFLICT</code>) reactie teruggestuurd naar de client.</td>
   </tr>
  </tbody>
 </table>
@@ -154,12 +154,12 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Maakt een nieuw workflowmodel. Als de parameter <code>title</code> wordt verzonden, wordt een nieuw model gecreeerd met de gespecificeerde titel. Een JSON-modeldefinitie als parameter koppelen <code>model</code> maakt een nieuw workflowmodel volgens de opgegeven definitie.<br /> A <code>201</code> response (<code>CREATED</code>) wordt teruggestuurd met een locatiekoptekst die de URL van de nieuwe bron van het workflowmodel bevat.<br /> Dit gebeurt ook wanneer een modeldefinitie wordt gekoppeld als een bestandsparameter die <code>modelfile</code>.<br /> In beide gevallen <code>model</code> en <code>modelfile</code> parameters, een extra parameter genoemd <code>type</code> is vereist om het rangschikkingsformaat te bepalen. De nieuwe rangschikkingsformaten kunnen worden geïntegreerd gebruikend OSGI API. Er wordt een standaard JSON-serializer geleverd met de workflow-engine. Het type is JSON. Zie hieronder voor een voorbeeld van de opmaak.</td>
+   <td>Maakt een nieuw workflowmodel. Wanneer de parameter <code>title</code> wordt verzonden, wordt een nieuw model gemaakt met de opgegeven titel. Als u een JSON-modeldefinitie als parameter koppelt <code>model</code> , wordt een nieuw workflowmodel gemaakt volgens de opgegeven definitie.<br /> Een <code>201</code> reactie (<code>CREATED</code>) wordt teruggestuurd met een plaatsheader die URL van het nieuwe werkschemamodel bevat.<br /> Hetzelfde gebeurt wanneer een modeldefinitie wordt gekoppeld als een bestandsparameter met de naam <code>modelfile</code> .<br /> In beide gevallen van de parameters <code>model</code> en <code>modelfile</code> is een extra parameter met de naam <code>type</code> vereist om de serialisatie-indeling te definiëren. De nieuwe rangschikkingsformaten kunnen worden geïntegreerd gebruikend OSGI API. Er wordt een standaard JSON-serializer geleverd met de workflow-engine. Het type is JSON. Zie hieronder voor een voorbeeld van de opmaak.</td>
   </tr>
  </tbody>
 </table>
 
-Voorbeeld: in de browser kunt u een aanvraag indienen op `http://localhost:4502/etc/workflow/models.json` Hiermee genereert u een JSON-reactie die vergelijkbaar is met het volgende:
+Voorbeeld: in de browser genereert een aanvraag naar `http://localhost:4502/etc/workflow/models.json` een reactie van de arts die lijkt op het volgende:
 
 ```
 [
@@ -225,7 +225,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
 `http://localhost:4502*{uri}*`
 
-Wanneer `*{uri}*` Dit is het pad naar het modelknooppunt in de repository.
+Waar `*{uri}*` het pad naar het modelknooppunt in de repository is.
 
 <table>
  <tbody>
@@ -235,24 +235,24 @@ Wanneer `*{uri}*` Dit is het pad naar het modelknooppunt in de repository.
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Hiermee wordt het <code>HEAD</code> versie van het model (definitie en metagegevens).</td>
+   <td>Hiermee wordt de <code>HEAD</code> -versie van het model opgehaald (definitie en metagegevens).</td>
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>Hiermee werkt u de <code>HEAD</code> versie van het model (maakt een nieuwe versie).<br /> De volledige modeldefinitie voor de nieuwe versie van het model moet worden toegevoegd als een parameter genoemd <code>model</code>. Daarnaast een <code>type</code> parameter is nodig zoals bij het creëren van nieuwe modellen en moet de waarde hebben <code>JSON</code>.<br /> </td>
+   <td>Werkt de <code>HEAD</code> -versie van het model bij (maakt een nieuwe versie).<br /> De volledige modeldefinitie voor de nieuwe versie van het model moet worden toegevoegd als een parameter met de naam <code>model</code> . Bovendien is een <code>type</code> parameter nodig zoals wanneer het creëren van nieuwe modellen en moet de waarde hebben <code>JSON</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Hetzelfde gedrag als bij PUT. Nodig omdat AEM widgets geen ondersteuning bieden <code>PUT</code> bewerkingen.</td>
+   <td>Hetzelfde gedrag als bij PUT. Nodig omdat AEM widgets <code>PUT</code> -bewerkingen niet ondersteunen.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>Hiermee verwijdert u het model. Firewall-/proxyproblemen oplossen a <code>POST</code> die een <code>X-HTTP-Method-Override</code> header-item met waarde <code>DELETE</code> wordt ook aanvaard, aangezien <code>DELETE</code> verzoek.</td>
+   <td>Hiermee verwijdert u het model. Als u firewall-/proxyproblemen wilt oplossen, wordt een <code>POST</code> -item met een <code>X-HTTP-Method-Override</code> header-item met waarde <code>DELETE</code> ook geaccepteerd als <code>DELETE</code> -aanvraag.</td>
   </tr>
  </tbody>
 </table>
 
-Voorbeeld: in de browser kunt u een aanvraag indienen op `http://localhost:4502/var/workflow/models/publish_example.json` retourneert een `json` reactie die vergelijkbaar is met de volgende code:
+Voorbeeld: in de browser retourneert een aanvraag naar `http://localhost:4502/var/workflow/models/publish_example.json` een `json` -reactie die vergelijkbaar is met de volgende code:
 
 ```shell
 {
@@ -358,7 +358,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Voltooit het het werkpunt waarvan URI als parameter wordt verzonden <code>item</code> en gaat de instantie volgens workflow verder naar de volgende knooppunten, die worden gedefinieerd door de parameter <code>route</code> of <code>backroute</code> als er een stap terug is.<br /> Als de parameter <code>delegatee</code> wordt verzonden, het het werkpunt dat door de parameter wordt geïdentificeerd <code>item</code> wordt gedelegeerd aan de opgegeven deelnemer.</td>
+   <td>Voltooit het werkitem waarvan de URI als parameter <code>item</code> wordt verzonden en gaat de instantie van de workflow volgens door naar de volgende knooppunten, die door de parameter <code>route</code> wordt gedefinieerd of <code>backroute</code> als er een stap terug wordt gedaan.<br /> Als de parameter <code>delegatee</code> wordt verzonden, wordt het werkitem dat door de parameter <code>item</code> wordt geïdentificeerd, gedelegeerd aan de opgegeven deelnemer.</td>
   </tr>
  </tbody>
 </table>
@@ -371,7 +371,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
 | HTTP-aanvraagmethode | Handelingen |
 |---|---|
-| `GET` | Hiermee worden de gegevens (definitie en metagegevens) van het Postvak IN opgehaald `WorkItem` geïdentificeerd door zijn ID. |
+| `GET` | Haalt de gegevens (definitie en metagegevens) op van het inbox `WorkItem` dat door de id ervan wordt geïdentificeerd. |
 
 ## Voorbeelden {#examples}
 
@@ -389,7 +389,7 @@ Voorbeeld met krullen:
 curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 ```
 
-De `uri` weergegeven in de resultaten kunnen worden gebruikt als de instantie `id` in andere opdrachten, bijvoorbeeld:
+De `uri` die in de resultaten wordt weergegeven, kan als de instantie `id` in andere opdrachten worden gebruikt, bijvoorbeeld:
 
 ```shell
 [
@@ -399,17 +399,17 @@ De `uri` weergegeven in de resultaten kunnen worden gebruikt als de instantie `i
 
 >[!NOTE]
 >
->Dit `curl` kan met om het even welk worden gebruikt [workflowstatus](/help/sites-administering/workflows.md#workflow-status-and-actions) in plaats van `RUNNING`.
+>Dit `curl` bevel kan met om het even welk [ werkschemastatus ](/help/sites-administering/workflows.md#workflow-status-and-actions) in plaats van `RUNNING` worden gebruikt.
 
 ### Hoe te om de Titel van het Werkschema te veranderen {#how-to-change-the-workflow-title}
 
-Als u het dialoogvenster **Werkstroomtitel** weergegeven in het dialoogvenster **Instanties** tabblad van de workflowconsole, een `POST` opdracht:
+Om de **Titel van het Werkschema** te veranderen die in het **3} lusje van Instanties {van de werkschemaconsole wordt getoond, verzend a `POST` bevel:**
 
-* tot: `http://localhost:4502/etc/workflow/instances/{id}`
+* to: `http://localhost:4502/etc/workflow/instances/{id}`
 
 * met de volgende parameters:
 
-   * `action`: de waarde moet: `UPDATE`
+   * `action` : de waarde moet als volgt zijn: `UPDATE`
    * `workflowTitle`: de titel van de workflow
 
 #### Hoe te om de Titel van het Werkschema te veranderen - REST gebruikend krullen {#how-to-change-the-workflow-title-rest-using-curl}
@@ -439,15 +439,15 @@ curl -u admin:admin http://localhost:4502/etc/workflow/models.json
 
 >[!NOTE]
 >
->Zie ook [Workflowmodellen beheren](#managing-workflow-models).
+>Zie ook [ het Leiden de Modellen van het Werkschema ](#managing-workflow-models).
 
 ### Een WorkflowSession-object verkrijgen {#obtaining-a-workflowsession-object}
 
-De `com.adobe.granite.workflow.WorkflowSession` klasse kan worden aangepast vanuit een `javax.jcr.Session` object of een `org.apache.sling.api.resource.ResourceResolver` object.
+De `com.adobe.granite.workflow.WorkflowSession` -klasse kan worden aangepast vanuit een `javax.jcr.Session` -object of een `org.apache.sling.api.resource.ResourceResolver` -object.
 
 #### Een WorkflowSession-object verkrijgen - Java {#obtaining-a-workflowsession-object-java}
 
-Gebruik in een JSP-script (of Java-code voor een servlet-klasse) het HTTP-aanvraagobject om een `SlingHttpServletRequest` object, dat toegang biedt tot een `ResourceResolver` object. Pas het `ResourceResolver` object naar `WorkflowSession`.
+Gebruik in een JSP-script (of Java-code voor een servlet-klasse) het HTTP-aanvraagobject om een `SlingHttpServletRequest` -object te verkrijgen dat toegang biedt tot een `ResourceResolver` -object. Pas het object `ResourceResolver` aan op `WorkflowSession` .
 
 ```java
 <%
@@ -463,7 +463,7 @@ WorkflowSession wfSession = slingReq.getResourceResolver().adaptTo(WorkflowSessi
 
 #### Een WorkflowSession-object verkrijgen - ECMA-script {#obtaining-a-workflowsession-object-ecma-script}
 
-Gebruik de `sling` variabele om de `SlingHttpServletRequest` object dat u gebruikt om een `ResourceResolver` object. Pas het `ResourceResolver` aan `WorkflowSession` object.
+Gebruik de variabele `sling` om het `SlingHttpServletRequest` -object te verkrijgen dat u gebruikt om een `ResourceResolver` -object te verkrijgen. Pas het object `ResourceResolver` aan op het object `WorkflowSession` .
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
@@ -473,36 +473,36 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 In de volgende voorbeelden ziet u hoe u workflowmodellen kunt openen:
 
-* In de code voor Java- en ECMA-scripts wordt het `WorkflowSession.createNewModel` methode.
+* De code voor Java- en ECMA-script gebruikt de methode `WorkflowSession.createNewModel` .
 * De curl-opdracht geeft rechtstreeks toegang tot het model via de URL.
 
 De gebruikte voorbeelden:
 
-1. Een model maken (met de id `/var/workflow/models/mymodel/jcr:content/model`).
+1. Maak een model (met de id `/var/workflow/models/mymodel/jcr:content/model` ).
 1. Verwijder het model.
 
 >[!NOTE]
 >
->Als u het model verwijdert, worden de `deleted` eigenschap van het model `metaData` onderliggende node naar `true`.
+>Als u het model verwijdert, wordt de eigenschap `deleted` van het `metaData` onderliggende knooppunt van het model ingesteld op `true` .
 >
 >Verwijderen verwijdert het modelknooppunt niet.
 
 Bij het maken van een model:
 
-* De werkstroommodeleditor vereist dat modellen een specifieke knooppuntstructuur hieronder gebruiken `/var/workflow/models`. Het bovenliggende knooppunt van het model moet van het type zijn `cq:Page` een `jcr:content` knooppunt met de volgende eigenschapswaarden:
+* De werkstroommodeleditor vereist dat modellen een specifieke knooppuntstructuur hieronder gebruiken `/var/workflow/models` . Het bovenliggende knooppunt van het model moet van het type `cq:Page` zijn met een `jcr:content` -knooppunt met de volgende eigenschapswaarden:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
 
-  Wanneer u een model maakt, moet u dit eerst maken `cq:Page` knoop en gebruik zijn `jcr:content` knooppunt als het bovenliggende knooppunt van het modelknooppunt.
+  Wanneer u een model maakt, moet u eerst dit knooppunt `cq:Page` maken en het knooppunt `jcr:content` ervan gebruiken als het bovenliggende knooppunt van het modelknooppunt.
 
-* De `id` argument dat sommige methodes voor het identificeren van het model vereisen is de absolute weg van de modelknoop in de bewaarplaats:
+* Het argument `id` dat sommige methoden vereisen voor het identificeren van het model, is het absolute pad van het modelknooppunt in de opslagplaats:
 
   `/var/workflow/models/<*model_name>*/jcr:content/model`
 
   >[!NOTE]
   >
-  >Zie [Hoe te om van alle Modellen van het Werkschema een lijst te maken](#how-to-list-all-workflow-models).
+  >Zie [ hoe te van alle Modellen van het Werkschema een lijst maken ](#how-to-list-all-workflow-models).
 
 #### Workflowmodellen maken, lezen of verwijderen - Java {#creating-reading-or-deleting-workflow-models-java}
 
@@ -558,22 +558,22 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 ### Systeemworkflows filteren bij het controleren van workflowstatus {#filtering-out-system-workflows-when-checking-workflow-status}
 
-U kunt de [WorkflowStatus-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) om informatie over de werkschemastatus van een knoop terug te winnen.
+U kunt [ WorkflowStatus API ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) gebruiken om informatie over het werkschemastatuut van een knoop terug te winnen.
 
 Verschillende methoden hebben de parameter:
 
 `excludeSystemWorkflows`
 
-Deze parameter kan worden ingesteld op `true` om aan te geven dat systeemworkflows van de relevante resultaten moeten worden uitgesloten.
+Deze parameter kan worden ingesteld op `true` om aan te geven dat systeemworkflows moeten worden uitgesloten van de relevante resultaten.
 
-U [kan de configuratie bijwerken OSGi](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** die de workflow aangeeft `Models` als systeemworkflows worden beschouwd. De standaardworkflowmodellen (runtime) zijn:
+U [ kunt de configuratie OSGi ](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** bijwerken die het werkschema `Models` specificeert om als systeemwerkschema&#39;s worden beschouwd. De standaardworkflowmodellen (runtime) zijn:
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
 
 ### Stap van de Deelnemer van de auto-Geavanceerde na een Onderbreking {#auto-advance-participant-step-after-a-timeout}
 
-Als u automatisch een **Deelnemer** stap die niet binnen een vooraf bepaalde tijd is voltooid u kunt:
+Als u a **Deelnemer** stap moet auto-vooruit die niet binnen een vooraf bepaalde tijd is voltooid kunt u:
 
 1. Implementeer een OSGI-gebeurtenislistener om te luisteren naar het maken en wijzigen van taken.
 1. Geef een time-out (deadline) op en maak vervolgens een geplande slingertaak die op dat moment moet worden uitgevoerd.
@@ -623,7 +623,7 @@ wfSession.terminateWorkflow(workflow);
 
 #### Interactie met Workflowinstanties - REST gebruiken met curl {#interacting-with-workflow-instances-rest-using-curl}
 
-* **Een workflow starten**
+* **Beginnend een werkschema**
 
   ```shell
   # starting a workflow
@@ -633,7 +633,7 @@ wfSession.terminateWorkflow(workflow);
   curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
   ```
 
-* **De instanties weergeven**
+* **die van de instanties** een lijst maken
 
   ```shell
   # listing the instances
@@ -651,9 +651,9 @@ wfSession.terminateWorkflow(workflow);
 
   >[!NOTE]
   >
-  >Zie [Hoe te om een Lijst van alle Lopende Werkschema&#39;s te krijgen](#how-to-get-a-list-of-all-running-workflows-with-their-ids) met hun ID&#39;s voor aanbiedingsinstanties met een specifieke status.
+  >Zie [ hoe te om een Lijst van alle Lopende Werkschema&#39;s ](#how-to-get-a-list-of-all-running-workflows-with-their-ids) met hun IDs te krijgen voor het vermelden van instanties met een specifieke status.
 
-* **Een workflow opschorten**
+* **Opschorting een werkschema**
 
   ```shell
   # suspending a workflow
@@ -663,7 +663,7 @@ wfSession.terminateWorkflow(workflow);
   curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
   ```
 
-* **Een workflow hervatten**
+* **Hervatten een werkschema**
 
   ```shell
   # resuming a workflow
@@ -673,7 +673,7 @@ wfSession.terminateWorkflow(workflow);
   curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
   ```
 
-* **Een werkstroominstantie beëindigen**
+* **Beëindigd een werkschemainstantie**
 
   ```shell
   # terminating a workflow
@@ -725,7 +725,7 @@ wfSession.complete(workItem, routes.get(0));
 
 #### Interactie met werkitems - HERSTEL met krullen {#interacting-with-work-items-rest-using-curl}
 
-* **Werkitems van de aanbieding in het Postvak IN**
+* **die van het Werk van de lijst de Punten van Inbox**
 
   ```shell
   # listing the work items
@@ -780,7 +780,7 @@ wfSession.complete(workItem, routes.get(0));
     }
   ```
 
-* **Werkitems delegeren**
+* **delegerend de Punten van het Werk**
 
   ```xml
   # delegating
@@ -794,7 +794,7 @@ wfSession.complete(workItem, routes.get(0));
   >
   >De `delegatee` moet een geldige optie zijn voor de workflowstap.
 
-* **Werkonderdelen voltooien of naar de volgende stap gaan**
+* **Voltooiend of vooruitkomend het werkpunten aan de volgende stap**
 
   ```xml
   # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
@@ -809,7 +809,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Luisteren naar workflowgebeurtenissen {#listening-for-workflow-events}
 
-Gebruik het OSGi-gebeurtenisframework om te luisteren naar gebeurtenissen die [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) definieert. Deze klasse biedt ook verschillende nuttige methoden om informatie over het onderwerp van de gebeurtenis te verkrijgen. Bijvoorbeeld de `getWorkItem` methode retourneert de methode `WorkItem` object voor het werkitem dat bij de gebeurtenis is betrokken.
+Gebruik het OSGi gebeurteniskader om op gebeurtenissen te luisteren die de [`com.adobe.granite.workflow.event.WorkflowEvent` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) klasse bepaalt. Deze klasse biedt ook verschillende nuttige methoden om informatie over het onderwerp van de gebeurtenis te verkrijgen. De methode `getWorkItem` retourneert bijvoorbeeld het `WorkItem` -object voor het werkitem dat bij de gebeurtenis is betrokken.
 
 De volgende voorbeeldcode definieert een service die luistert naar workflowgebeurtenissen en taken uitvoert op basis van het type gebeurtenis.
 

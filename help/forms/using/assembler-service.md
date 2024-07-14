@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # De Assembler-service gebruiken{#using-assembler-service}
 
-Met de service Assembler kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Voor meer informatie over de assembleerdienst, zie [Overzicht van de Assembler-service](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Met de service Assembler kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Voor meer informatie over assembleerdienst, zie [ Overzicht van de Dienst van de Assembler ](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 U kunt de verzamelservice gebruiken voor de volgende bewerkingen:
 
@@ -30,7 +30,7 @@ Met de Assembler-service kunt u twee of meer PDF-documenten samenvoegen tot éé
 
 In de volgende afbeelding ziet u drie brondocumenten die in één resulterend document worden samengevoegd.
 
-![Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-documenten](assets/as_document_assembly.png)
+![ samenstellend een eenvoudig document van PDF van veelvoudige documenten van PDF ](assets/as_document_assembly.png)
 
 Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-documenten
 
@@ -87,7 +87,7 @@ Wanneer u een document samenstelt, kunt u Bates-nummering gebruiken om een uniek
 
 In de volgende afbeelding ziet u een PDF-document dat een unieke id bevat in de koptekst van het document.
 
-![Een PDF-document dat een unieke id bevat in de koptekst van het document](do-not-localize/as_batesnumber.png)
+![ A PDF document dat een uniek herkenningsteken in de kopbal van het document ](do-not-localize/as_batesnumber.png) bevat
 
 Een PDF-document dat een unieke id bevat in de koptekst van het document
 
@@ -111,7 +111,7 @@ Hier volgen enkele voorbeelden van manieren waarop u XDP-documenten kunt samenst
 
 In de volgende afbeelding ziet u drie XDP-brondocumenten die in één resulterend XDP-document worden samengevoegd. Het resulterende XDP-document bevat de drie bron-XDP-documenten inclusief de bijbehorende gegevens. Het resulterende document krijgt basiskenmerken van het basisdocument, het eerste bron-XDP-document.
 
-![Een eenvoudig XDP-document samenstellen op basis van meerdere XDP-documenten](assets/as_assembler_xdpassembly.png)
+![ samenstellend een eenvoudig XDP document van veelvoudige XDP documenten ](assets/as_assembler_xdpassembly.png)
 
 Een eenvoudig XDP-document samenstellen op basis van meerdere XDP-documenten
 
@@ -149,11 +149,11 @@ U kunt specificeren hoe de dienst van de Assembler de beelden die in de bronXDP 
   </tr> 
   <tr> 
    <td>relatief</td> 
-   <td>Hiermee worden alle afbeeldingen ingesloten waarnaar wordt verwezen door relatieve verwijzingen in de bron-XDP<br /> document.</td> 
+   <td>Sluit alle beelden in die door relatieve verwijzingen in het bronXDP <br /> document van verwijzingen worden voorzien.</td> 
   </tr> 
   <tr> 
    <td>absoluut</td> 
-   <td>Hiermee worden alle afbeeldingen ingesloten waarnaar wordt verwezen door absolute referenties in de bron-XDP<br /> document.</td> 
+   <td>Sluit alle beelden in die door absolute verwijzingen in het bronXDP <br /> document van verwijzingen worden voorzien.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -223,11 +223,11 @@ Met de Assembler-service kunt u een XFA-formulier maken dat is gemaakt op basis 
 
 Ondersteuning voor dynamische invoeging van formulierfragmenten ondersteunt single-source-beheer. U behoudt één bron van veelgebruikte componenten. U kunt bijvoorbeeld een fragment voor uw bedrijfsbanner maken. Als de banner verandert, hoeft u alleen het fragment te wijzigen. De andere formulieren met het fragment blijven ongewijzigd.
 
-Formulierontwerpers maken met LiveCycle Designer formulierfragmenten. Deze fragmenten hebben een unieke naam voor subformulieren in een XFA-formulier. De formulierontwerpers gebruiken Designer ook om XFA-formulieren te maken met invoegpunten met een unieke naam. U (de programmeur) schrijft DX- documenten die specificeren hoe de fragmenten in de vorm XFA worden opgenomen.
+Formulierontwerpers maken met LiveCycle Designer formulierfragmenten. Deze fragmenten hebben een unieke naam voor subformulieren in een XFA-formulier. De formulierontwerpers gebruiken ook Designer om XFA-formulieren te maken met invoegpunten met een unieke naam. U (de programmeur) schrijft DX- documenten die specificeren hoe de fragmenten in de vorm XFA worden opgenomen.
 
 In de volgende afbeelding ziet u twee XML-formulieren (XFA-sjablonen). Het formulier aan de linkerkant bevat een invoegpunt met de naam myInsertionPoint. Het formulier aan de rechterkant bevat een fragment met de naam myFragment.
 
-![Formulierfragmenten invoegen in een XFA-formulier](assets/as_assembler_fragment_assy_assembled.png)
+![ het Invoegen van vormfragmenten in een vorm XFA ](assets/as_assembler_fragment_assy_assembled.png)
 
 Formulierfragmenten invoegen in een XFA-formulier
 
@@ -267,7 +267,7 @@ U kunt de dienst van de Assembler gebruiken om een document van de PDF te demont
 
 In de volgende afbeelding worden pagina&#39;s 1-3 uit het brondocument geëxtraheerd en in een nieuw resulterend document geplaatst.
 
-![Specifieke pagina&#39;s uit een brondocument extraheren](assets/as_intro_page_extraction.png)
+![ Uittrekkend specifieke pagina&#39;s van een brondocument ](assets/as_intro_page_extraction.png)
 
 Specifieke pagina&#39;s uit een brondocument extraheren
 
@@ -283,7 +283,7 @@ Het volgende voorbeeld is een DDX-document dat wordt gebruikt om het document te
 
 In de volgende afbeelding wordt DocA verdeeld in meerdere resulterende documenten. De eerste bladwijzer van niveau 1 op een pagina identificeert het begin van een nieuw resulterend document.
 
-![Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten](assets/as_intro_pdfsfrombookmarks.png)
+![ het Verdelen van een brondocument dat op referenties in veelvoudige documenten wordt gebaseerd ](assets/as_intro_pdfsfrombookmarks.png)
 
 Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten
 
@@ -326,11 +326,11 @@ U kunt de dienst van de Assembler gebruiken om te bepalen of een Dx- document ge
 
 U kunt DX- documenten gebruiken die de dienst van de Assembler veroorzaken om de volgende LiveC cyclusdiensten te roepen. De dienst van de Assembler kan slechts die diensten roepen die met LiveCycle worden geïnstalleerd.
 
-**Reader Extensions-service**: Hiermee kunnen Adobe Reader-gebruikers het resulterende PDF-document digitaal ondertekenen.
+**dienst van de Uitbreidingen van de Reader**: Laat de gebruikers van Adobe Reader toe om het resulterende document van PDF digitaal te ondertekenen.
 
-**Forms-service**: Voegt een XDP-bestand en een XML-gegevensbestand samen om een PDF-document te maken dat het ingevulde interactieve formulier bevat.
+**de dienst van Forms**: Voegt een XDP dossier en het gegevensbestand van XML samen om een document van de PDF te produceren dat de gevulde interactieve vorm bevat.
 
-**Uitvoerservice**: converteert een dynamisch XML-formulier naar een PDF-document dat een niet-interactief formulier bevat (voegt het formulier samen). Met de service Assembler worden statische XML-formulieren en Acrobat-formulieren afgevlakt zonder dat de service Output wordt aangeroepen.
+**de dienst van de Output**: zet een dynamisch vorm van XML in een document van PDF om dat een niet-interactieve vorm bevat (vlakt de vorm). Met de service Assembler worden statische XML-formulieren en Acrobat-formulieren afgevlakt zonder dat de service Output wordt aangeroepen.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

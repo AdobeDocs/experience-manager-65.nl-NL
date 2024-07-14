@@ -31,7 +31,7 @@ Voordat u uw AEM ontwikkelingsproject start, moet u eerst de volgende aanbevolen
 * [Codepitten](/help/sites-developing/code-pitfalls.md)
 * [JCR-interactie](/help/sites-developing/jcr-integration.md)
 * [OSGi-bundels](/help/sites-developing/osgi-bundles.md)
-* [Aanbevolen werkwijzen voor Java API](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [ Java API Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Aanvullende informatie over aanbevolen procedures {#additional-best-practices-information}
 
@@ -80,14 +80,14 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
 
 ## Gemeenschappen {#communities}
 
-[AEM Communities](/help/communities/overview.md) vereenvoudigt de oprichting en het beheer van on-premise Gemeenschappen.
+[ AEM Communities ](/help/communities/overview.md) vereenvoudigt de verwezenlijking en het beheer van op-gebouwGemeenschappen.
 
 Hier worden enkele beste praktijken voor de Gemeenschappen beschreven:
 
 |  |  |  |
 |---|---|---|
-| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [Codeerrichtlijnen](/help/communities/code-guide.md) | Richtsnoeren voor de ontwikkeling van flexibele, draagbare code voor de [sociale component](/help/communities/scf.md) (SCF). |
-| Voorbeeld van het gebruik van communautaire componenten | [Community Components Guide](/help/communities/components-guide.md) | Een interactief ontwikkelingsprogramma. |
+| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [ Coderingsrichtlijnen ](/help/communities/code-guide.md) | Richtlijnen voor het ontwikkelen van flexibele, draagbare code voor het [ sociale componentenkader ](/help/communities/scf.md) (SCF). |
+| Voorbeeld van het gebruik van communautaire componenten | [ Communautaire Gids van Componenten ](/help/communities/components-guide.md) | Een interactief ontwikkelingsprogramma. |
 
 ## Tooling/HTL {#tooling-htl}
 
@@ -95,10 +95,10 @@ HTML Sjabloontaal (HTL) is een nieuw sjabloonsysteem voor HTML, dat is geïntrod
 
 |  |  |  |
 |---|---|---|
-| HTML-overzicht | [HTML-overzicht en -syntaxis](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | In dit document wordt beschreven wat HTML is, hoe u naar HTML kunt gaan, een voorbeeldproject, syntaxis, expressies en instructies |
-| API gebruiken in Java | [HTML Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | De HTML Java Use-API stelt een HTML-bestand in staat toegang te krijgen tot hulplijnmethoden in een aangepaste Java-klasse. |
+| HTML-overzicht | [ overzicht en syntaxis HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | In dit document wordt beschreven wat HTML is, hoe u naar HTML kunt gaan, een voorbeeldproject, syntaxis, expressies en instructies |
+| API gebruiken in Java | [ HTML Java gebruiken-API ](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | De HTML Java Use-API stelt een HTML-bestand in staat toegang te krijgen tot hulplijnmethoden in een aangepaste Java-klasse. |
 
 >[!NOTE]
 >
 >De volgende meerdelige zelfstudie kan van belang zijn voor de beste praktijken om een nieuw AEM project op te zetten, die de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt en de componentenontwikkeling detailleert:
->[Aan de slag met AEM Sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Aan de slag met AEM Sites - WKND-zelfstudie ](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)

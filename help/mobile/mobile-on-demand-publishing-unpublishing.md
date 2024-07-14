@@ -1,5 +1,5 @@
 ---
-title: Inhoud publiceren ongedaan maken
+title: Publish-inhoud publiceren
 description: Wanneer u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, volgt u deze pagina voor meer informatie over het publiceren van uw inhoud. Ook kunt u de publicatie van uw inhoud ongedaan maken.
 contentOwner: User
 content-type: reference
@@ -16,21 +16,21 @@ ht-degree: 0%
 
 ---
 
-# Inhoud publiceren ongedaan maken{#publish-unpublish-content}
+# Publish-inhoud publiceren{#publish-unpublish-content}
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, kunt u de inhoud publiceren. Ook kunt u de publicatie van uw inhoud ongedaan maken.
 
 >[!NOTE]
 >
->Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in online Help.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
 
 ## De inhoud publiceren/publiceren ongedaan maken {#publishing-unpublishing-the-content}
 
-Dit verschilt van &quot;AEM publiceren&quot;. U duwt geen inhoud aan een AEM Publish serverinstantie om het openbaar te maken viewable. Hier geeft u een melding weer over Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
+Dit verschilt van een &quot;AEM Publish&quot;. U duwt geen inhoud aan een AEM de serverinstantie van Publish om het openbaar te maken viewable. Hier geeft u een melding weer over Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
 
 >[!NOTE]
 >
@@ -41,14 +41,14 @@ De algemene workflow voor het publiceren/publiceren van een artikel:
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
 1. Selecteer een artikel.
 1. Voeg zo nodig aanvullende artikelen toe in de lijstweergave.
-1. Selecteer Publiceren op de actiebalk. Na enkele ogenblikken zijn uw artikelen nu openbaar.
+1. Selecteer Publish op de actiebalk. Na enkele ogenblikken zijn uw artikelen nu openbaar.
 1. Gebruik dezelfde stappen hierboven om de publicatie van artikelen ongedaan te maken.
 
 <!-- FAIL >>[!NOTE]
 >
 >Generally, you should preflight before publishing. See [Previewing with Preflight](/content/docs/en/aem/6-3/administer/mobile-apps/aem-mobile/previewing-with-preflight-on-demand-services.md) for more details.-->
 
-![chlimage_1-9](assets/chlimage_1-9.gif)
+![ chlimage_1-9 ](assets/chlimage_1-9.gif)
 
 ### De volgende stappen {#the-next-steps}
 
@@ -57,4 +57,4 @@ Als u eenmaal hebt geleerd hoe u inhoud maakt en publiceert, raadpleegt u het vo
 * [AEM voor AEM Mobile On-demand Services ontwikkelen](/help/mobile/aem-mobile-on-demand.md)
 * [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Of, als u nog meer over de auteursonderwerpen wilt leren, zie [AEM voor AEM Mobile On-demand Services-apps maken](/help/mobile/mobile-apps-ondemand.md).
+Of, als u nog meer over de auteursonderwerpen wilt leren, zie [ Authoring AEM Inhoud voor AEM Mobile On-demand Services Apps ](/help/mobile/mobile-apps-ondemand.md).

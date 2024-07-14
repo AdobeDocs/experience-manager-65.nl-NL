@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
-* Zie [Tags voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het etiketteringskader en het opnemen van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [ het Beheer Markeringen ](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* Zie [ Tags voor Ontwikkelaars ](/help/sites-developing/tags.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
@@ -40,17 +40,17 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 ## Tags toepassen {#applying-tags}
 
-In de auteursomgeving kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in te gaan in **Tags/trefwoorden** veld.
+In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Markeringen/Trefwoorden** gebied in te gaan.
 
-Toepassen [vooraf gedefinieerde tags](/help/sites-administering/tags.md)in de **Pagina-eigenschappen** het venster gebruiken `Tags/Keywords` het gebied trekkracht-onderaan om van de lijst van markeringen te selecteren die voor de pagina worden toegelaten. Tthe **Standaardlabels** tab is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` voorafgegaan aan de taxonomie.
+Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3} venster van de Eigenschappen van de Pagina gebruiken `Tags/Keywords` gebied trekkracht-onderaan om van de lijst van markeringen te selecteren die voor de pagina worden toegelaten.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
 
-![chlimage_1-2](assets/chlimage_1-2a.png)
+![ chlimage_1-2 ](assets/chlimage_1-2a.png)
 
 ### Codes publiceren {#publishing-tags}
 
 Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 
-**Activeren**
+**activeer**
 
 * Afzonderlijke tags activeren.
 
@@ -60,7 +60,7 @@ Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 >
 >Wanneer u een pagina activeert, wordt automatisch een dialoogvenster geopend waarin u niet-geactiveerde tags die bij de pagina horen, kunt activeren.
 
-**Deactiveren**
+**Deactivate**
 
 * Deactiveer de geselecteerde labels.
 
@@ -68,7 +68,7 @@ Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 
 Tagwolken tonen een wolk van markeringen, of voor de huidige pagina, de volledige website, of die het vaakst betreden. Labelwolken zijn een manier om de problemen te markeren die de gebruiker interesseert (geweest). De grootte van de tekst die wordt gebruikt om de tag weer te geven, is afhankelijk van het gebruik ervan.
 
-De [Cloud labelen](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) wordt gebruikt om een tagwolk aan een pagina toe te voegen (groep Algemeen).
+De [ component van de Wolk van de Markering ](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (Algemene componentengroep) wordt gebruikt om een markeringswolk aan een pagina toe te voegen.
 
 ## Zoeken op tags {#searching-on-tags}
 
@@ -76,6 +76,6 @@ U kunt tags zoeken in zowel de auteur- als de publicatieomgeving.
 
 ### Zoekcomponent gebruiken {#using-search-component}
 
-Een [component Zoeken](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) op een pagina biedt een zoekfunctie die tags bevat en kan worden gebruikt in zowel de auteur- als de publicatieomgeving.
+Het toevoegen van de component van het a [ Onderzoek ](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) aan een pagina verstrekt een onderzoeksvermogen dat markeringen omvat en in zowel de auteur als publicatiemilieu&#39;s kan worden gebruikt.
 
-![chlimage_1-3](assets/chlimage_1-3a.png)
+![ chlimage_1-3 ](assets/chlimage_1-3a.png)

@@ -1,6 +1,6 @@
 ---
-title: Het CRX2Oak-migratiehulpprogramma gebruiken
-description: Leer hoe u het migratiehulpprogramma CRX2Oak kunt gebruiken met Adobe Experience Manager. Het programma is ontworpen om u te helpen bij het migreren van gegevens tussen verschillende opslagplaatsen.
+title: CRX2Oak-migratiehulpprogramma gebruiken
+description: Leer hoe u het CRX2Oak-migratiehulpprogramma met Adobe Experience Manager gebruikt. Het programma is ontworpen om u te helpen bij het migreren van gegevens tussen verschillende opslagplaatsen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -16,38 +16,38 @@ ht-degree: 0%
 
 ---
 
-# Het CRX2Oak-migratiehulpprogramma gebruiken{#using-the-crx-oak-migration-tool}
+# CRX2Oak-migratiehulpprogramma gebruiken{#using-the-crx-oak-migration-tool}
 
 ## Inleiding {#introduction}
 
-CRX2Oak is een hulpmiddel dat wordt ontworpen om gegevens tussen verschillende bewaarplaatsen te migreren.
+CRX2Oak is een hulpmiddel dat is ontworpen voor het migreren van gegevens tussen verschillende opslagplaatsen.
 
-Deze kan worden gebruikt om gegevens van oudere CQ-versies die op Apache Jackrabbit 2 zijn gebaseerd, te migreren naar eikenhout en kan ook worden gebruikt om gegevens te kopiëren tussen Oak-opslagplaatsen.
+Deze kan worden gebruikt om gegevens van oudere CQ-versies die op Apache Jackrabbit 2 zijn gebaseerd, te migreren naar Oak en kan ook worden gebruikt om gegevens te kopiëren tussen Oak-opslagplaatsen.
 
 U kunt de nieuwste versie van crx2oak downloaden van de opslagplaats voor openbare Adoben op deze locatie:
-[https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+[ https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 >[!NOTE]
 >
->Raadpleeg voor meer informatie over Apache Oak en de belangrijkste concepten van Adobe Experience Manager (AEM) persistentie [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md).
+>Voor meer informatie over Apache Oak en zeer belangrijke concepten (AEM) persistentie van Adobe Experience Manager, zie [ Inleiding aan het AEM Platform ](/help/sites-deploying/platform.md).
 
 ## Gevallen voor migratiegebruik {#migration-use-cases}
 
 U kunt het gereedschap gebruiken voor:
 
 * Migreren van oudere CQ 5-versies naar AEM 6
-* Gegevens kopiëren tussen meerdere eiken-opslagplaatsen
-* Gegevens tussen verschillende Oak MicroKernel-implementaties omzetten.
+* Gegevens kopiëren tussen meerdere Oak-opslagplaatsen
+* Gegevens converteren tussen verschillende Oak MicroKernel-implementaties.
 
-Ondersteuning voor migrerende opslagplaatsen die gebruikmaken van externe blob-opslagplaatsen (beter bekend als Data Stores) wordt in verschillende combinaties geboden. Een mogelijk migratiepad is afkomstig uit een CRX2-opslagplaats die een externe `FileDataStore` aan een eiken-opslagplaats die `S3DataStore`.
+Ondersteuning voor migrerende opslagplaatsen die gebruikmaken van externe blob-opslagplaatsen (beter bekend als Data Stores) wordt in verschillende combinaties geboden. Een mogelijk migratiepad is van een CRX2-opslagplaats die een externe `FileDataStore` gebruikt naar een Oak-opslagplaats die een `S3DataStore` gebruikt.
 
 In het onderstaande diagram worden alle mogelijke migratiecombinaties weergegeven die door CRX2Oak worden ondersteund:
 
-![chlimage_1-151](assets/chlimage_1-151.png)
+![ chlimage_1-151 ](assets/chlimage_1-151.png)
 
 ## Functies {#features}
 
-CRX2Oak wordt geroepen tijdens AEM verbeteringen op een manier waarin de gebruiker een vooraf bepaald migratieprofiel kan specificeren dat de herconfiguratie van persistentiemodi automatiseert. Dit wordt de snelstartmodus genoemd.
+CRX2Oak wordt tijdens AEM upgrades op een manier aangeroepen waarbij de gebruiker een vooraf gedefinieerd migratieprofiel kan opgeven waarmee de herconfiguratie van persistentiemodi wordt geautomatiseerd. Dit wordt de snelstartmodus genoemd.
 
 Het kan ook afzonderlijk worden uitgevoerd voor het geval het meer aanpassing vereist. In deze modus worden wijzigingen echter alleen doorgevoerd in de opslagplaats en moeten eventuele aanvullende aanpassingen van AEM handmatig worden uitgevoerd. Dit wordt de standalone wijze genoemd.
 
@@ -57,15 +57,15 @@ Een ander ding om op te merken is dat met de standaardmontages op standalone wij
 
 Sinds AEM 6.3 kan CRX2Oak door de gebruiker gedefinieerde migratieprofielen verwerken die kunnen worden geconfigureerd met alle migratieopties die al beschikbaar zijn. Hierdoor is meer flexibiliteit mogelijk en kunt u de configuratie van AEM automatiseren. Functies die niet beschikbaar zijn als u het gereedschap in zelfstandige modus gebruikt.
 
-Als u van CRX2Oak naar de snelstartmodus wilt overschakelen, definieert u het pad naar de crx-quickstart-map in de installatiemap van het AEM met behulp van deze omgevingsvariabele van het besturingssysteem:
+Als u van CRX2Oak wilt overschakelen op de snelstartmodus, definieert u het pad naar de crx-quickstart-map in de installatiemap van het AEM met behulp van deze omgevingsvariabele van het besturingssysteem:
 
-**Voor op UNIX gebaseerde systemen en macOS:**
+**voor op UNIX-Gebaseerde systemen en macOS:**
 
 ```shell
 export SLING_HOME="/path/to/crx-quickstart"
 ```
 
-**Voor Windows:**
+**voor Vensters:**
 
 ```shell
 SET "SLING_HOME=/path/to/crx-quickstart"
@@ -77,7 +77,7 @@ De migratie kan op elk moment worden onderbroken, met de mogelijkheid om deze la
 
 #### Aanpasbare upgradelogica {#customizable-upgrade-logic}
 
-Aangepaste Java™-logica kan worden geïmplementeerd met `CommitHooks`. Aangepast `RepositoryInitializer` kunnen worden geïmplementeerd om de repository te initialiseren met aangepaste waarden.
+Aangepaste Java™-logica kan worden geïmplementeerd met `CommitHooks` . Aangepaste `RepositoryInitializer` -klassen kunnen worden geïmplementeerd om de repository te initialiseren met aangepaste waarden.
 
 #### Ondersteuning voor bewerkingen met geheugentoewijzing {#support-for-memory-mapped-operations}
 
@@ -85,19 +85,19 @@ CRX2Oak ondersteunt standaard ook bewerkingen met geheugentoewijzing. Geheugento
 
 >[!CAUTION]
 >
->Vergeet echter niet dat bewerkingen met geheugentoewijzing niet worden ondersteund voor Windows-platforms. Daarom wordt aanbevolen het **—disable-mmap** parameter bij het uitvoeren van de migratie in Windows.
+>Vergeet echter niet dat bewerkingen met geheugentoewijzing niet worden ondersteund voor Windows-platforms. Daarom wordt het geadviseerd om de **- onbruikbaar maken-mmap** parameter toe te voegen wanneer het uitvoeren van de migratie op Vensters.
 
 #### Selectieve migratie van inhoud {#selective-migration-of-content}
 
-Standaard migreert het hulpprogramma de gehele opslagplaats onder de `"/"` pad. U hebt echter volledige controle over de inhoud die u wilt migreren.
+Standaard wordt de gehele opslagplaats gemigreerd onder het pad `"/"` . U hebt echter volledige controle over de inhoud die u wilt migreren.
 
-Als er een onderdeel van de inhoud is dat niet op het nieuwe exemplaar wordt vereist, kunt u het `--exclude-path` om de inhoud uit te sluiten en de upgradeprocedure te optimaliseren.
+Als er een deel van de inhoud is die niet op de nieuwe instantie wordt vereist, kunt u de `--exclude-path` parameter gebruiken om de inhoud uit te sluiten en de verbeteringsprocedure te optimaliseren.
 
 #### Pad samenvoegen {#path-merging}
 
-Als gegevens tussen twee opslagplaatsen moeten worden gekopieerd en u hebt een inhoudspad dat op beide instanties verschillend is, kunt u het in de `--merge-path` parameter. Als u dat doet, kopieert CRX2Oak alleen de nieuwe knooppunten naar de doelopslagplaats en blijven de oude knooppunten op hun plaats.
+Als gegevens tussen twee opslagplaatsen moeten worden gekopieerd en u een inhoudspad hebt dat op beide instanties verschillend is, kunt u het in de parameter `--merge-path` definiëren. Als u dat doet, kopieert CRX2Oak alleen de nieuwe knooppunten naar de doelopslagplaats en blijven de oude knooppunten op hun plaats.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![ chlimage_1-152 ](assets/chlimage_1-152.png)
 
 #### Versieondersteuning {#version-support}
 
@@ -105,82 +105,82 @@ AEM maakt standaard een versie van elk knooppunt of elke pagina die wordt gewijz
 
 Deze versies worden echter nooit leeggemaakt, zelfs niet als de originele pagina wordt verwijderd. Wanneer u werkt met opslagruimten die al lange tijd in bedrijf zijn, kan de migratie leiden tot het opnieuw verwerken van overbodige gegevens die worden veroorzaakt door zwevende versies.
 
-Een nuttig kenmerk voor dit soort situaties is de toevoeging van de `--copy-versions` parameter. Het kan worden gebruikt om de versieknooppunten tijdens migratie of exemplaar van een bewaarplaats over te slaan.
+Een handige functie voor dit soort situaties is de toevoeging van de parameter `--copy-versions` . Het kan worden gebruikt om de versieknooppunten tijdens migratie of exemplaar van een bewaarplaats over te slaan.
 
-U kunt ook kiezen of u zwevende versies wilt kopiëren door `--copy-orphaned-versions=true`.
+U kunt ook kiezen of u zwevende versies wilt kopiëren door `--copy-orphaned-versions=true` toe te voegen.
 
-Beide parameters ondersteunen ook een `YYYY-MM-DD` datumnotatie als u versies niet later dan een bepaalde datum wilt kopiëren.
+Beide parameters ondersteunen ook een datumnotatie `YYYY-MM-DD` voor het geval dat u versies niet later dan een bepaalde datum wilt kopiëren.
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![ chlimage_1-153 ](assets/chlimage_1-153.png)
 
-#### Bronversie openen {#open-source-version}
+#### Source-versie openen {#open-source-version}
 
-Een open-bronversie van CRX2Oak is beschikbaar in de vorm van eiken-verbetering. Alle functies worden ondersteund, met uitzondering van:
+Een open-source versie van CRX2Oak is beschikbaar in de vorm van een eak-upgrade. Alle functies worden ondersteund, met uitzondering van:
 
 * CRX2-ondersteuning
 * Ondersteuning voor migratieprofiel
 * Ondersteuning voor automatische AEM herconfiguratie
 
-Zie de [Apache-documentatie](https://jackrabbit.apache.org/oak/docs/migration.html) voor meer informatie .
+Zie de [ Documentatie Apache ](https://jackrabbit.apache.org/oak/docs/migration.html) voor meer informatie.
 
 ## Parameters {#parameters}
 
 ### Opslagopties knooppunt {#node-store-options}
 
-* `--cache`: Cachegrootte in MB (standaard is `256`)
+* `--cache`: Cachegrootte in MB (standaardwaarde is `256` )
 
-* `--mmap`: Toegang tot in geheugen toegewezen bestanden voor Segmentarchief inschakelen
+* `--mmap`: toegang tot aan het geheugen toegewezen bestanden voor de Segmentopslag inschakelen
 * `--src-password:` Wachtwoord voor de RDB-brondatabase
 
 * `--src-user:` Gebruiker voor de bron-RDB
 
 * `--user`: Gebruiker voor de doel-RDB
 
-* `--password`: Wachtwoord voor de doel-RDB.
+* `--password`: wachtwoord voor de doel-RDB.
 
 ### Migratieopties {#migration-options}
 
-* `--early-shutdown`: Sluit de bron-JCR2-opslagplaats af nadat knooppunten zijn gekopieerd en voordat de haken voor vastleggen zijn toegepast
-* `--fail-on-error`: Dwingt een fout van de migratie als de knopen niet van de bronbewaarplaats kunnen worden gelezen.
-* `--ldap`: Hiermee migreert u LDAP-gebruikers van een CQ 5.x-instantie naar een op eik gebaseerde instantie. Dit werkt alleen als de Identiteitsprovider in de configuratie Eak de naam dap heeft. Zie de klasse [LDAP-documentatie](/help/sites-administering/ldap-config.md).
+* `--early-shutdown`: sluit de JCR2-bronopslagplaats af nadat knooppunten zijn gekopieerd en voordat de haken voor vastleggen zijn toegepast
+* `--fail-on-error`: hiermee wordt een fout in de migratie geforceerd als de knooppunten niet van de bronopslagplaats kunnen worden gelezen.
+* `--ldap`: Migreert LDAP-gebruikers van een CQ 5.x-instantie naar een op Oak gebaseerde instantie. Dit werkt alleen als de Identiteitsprovider in de Oak-configuratie de naam dap heeft. Voor meer informatie, zie de [ documentatie LDAP ](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Gebruik dit met de `--ldap` parameter voor CQ 5.x-opslagruimten die meerdere LDAP-servers voor verificatie hebben gebruikt. U kunt het gebruiken om naar CQ 5.x te richten `ldap_login.conf` of `jaas.conf` configuratiebestanden. De indeling is `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Gebruik dit met de parameter `--ldap` voor CQ 5.x-opslagruimten die meerdere LDAP-servers voor verificatie gebruiken. U kunt dit gebruiken om te verwijzen naar de configuratiebestanden van CQ 5.x `ldap_login.conf` of `jaas.conf` . De notatie is `--ldapconfig=path/to/ldap_login.conf` .
 
 ### Opties voor versieopslag {#version-store-options}
 
-* `--copy-orphaned-versions`: Hiermee slaat u het kopiëren van zwevende versies over. Ondersteunde parameters zijn: `true`, `false`, en `yyyy-mm-dd`. Standaardwaarden: `true`.
+* `--copy-orphaned-versions`: slaat het kopiëren van zwevende versies over. Ondersteunde parameters zijn: `true` , `false` en `yyyy-mm-dd` . Wordt standaard ingesteld op `true` .
 
-* `--copy-versions:` Kopieert de versieopslag. Parameters: `true`, `false`, `yyyy-mm-dd`. Standaardwaarden: `true`.
+* `--copy-versions:` kopieert de versieopslag. Parameters: `true` , `false` , `yyyy-mm-dd` . Wordt standaard ingesteld op `true` .
 
 #### Padopties {#path-options}
 
-* `--include-paths:` Lijst met door komma&#39;s gescheiden paden die tijdens het kopiëren moeten worden opgenomen
-* `--merge-paths`: Door komma&#39;s gescheiden lijst met paden die tijdens het kopiëren moeten worden samengevoegd
-* `--exclude-paths:` Lijst met door komma&#39;s gescheiden paden die tijdens het kopiëren moeten worden uitgesloten.
+* `--include-paths:` Door komma&#39;s gescheiden lijst met paden die tijdens het kopiëren moeten worden opgenomen
+* `--merge-paths`: door komma&#39;s gescheiden lijst met paden die tijdens het kopiëren moeten worden samengevoegd
+* `--exclude-paths:` Door komma&#39;s gescheiden lijst met paden die tijdens het kopiëren moeten worden uitgesloten.
 
-### Opslagopties bronblob {#source-blob-store-options}
+### Opties voor Source Blob-opslag {#source-blob-store-options}
 
-* `--src-datastore:` De datastore-map die als bron moet worden gebruikt `FileDataStore`
+* `--src-datastore:` De map datastore die als bron moet worden gebruikt `FileDataStore`
 
 * `--src-fileblobstore`: De map datastore die als bron moet worden gebruikt `FileBlobStore`
 
-* `--src-s3datastore`: De datastore-map die voor de bron moet worden gebruikt `S3DataStore`
+* `--src-s3datastore`: De map datastore die voor de bron moet worden gebruikt `S3DataStore`
 
-* `--src-s3config`: Het configuratiebestand voor de bron `S3DataStore`.
+* `--src-s3config`: Het configuratiebestand voor de bron `S3DataStore` .
 
 ### Opties doelblobStore {#destination-blobstore-options}
 
-* `--datastore:` De datastore-map die als doel moet worden gebruikt `FileDataStore`
+* `--datastore:` De map datastore die als doel moet worden gebruikt `FileDataStore`
 
-* `--fileblobstore:` De datastore-map die als doel moet worden gebruikt `FileBlobStore`
+* `--fileblobstore:` De map datastore die als doel moet worden gebruikt `FileBlobStore`
 
 * `--s3datastore`: De datastore-map die voor het doel moet worden gebruikt `S3DataStore`
 
-* `--s3config`: Het configuratiebestand voor het doel `S3DataStore`.
+* `--s3config`: Het configuratiebestand voor het doel `S3DataStore` .
 
 ### Help-opties {#help-options}
 
-* `-?, -h, --help:` Help-informatie weergeven.
+* `-?, -h, --help:` Geeft Help-informatie weer.
 
 ## Foutopsporing {#debugging}
 
@@ -194,20 +194,20 @@ U kunt ook foutopsporingsinformatie inschakelen voor het migratieproces om probl
   </tr>
   <tr>
    <td>Snelstartmodus</td>
-   <td>U kunt de <strong>—TRACE op logniveau</strong> of <strong>—DEBUG OP Logniveau </strong>opties voor de opdrachtregel bij het uitvoeren van CRX2Oak. In deze modus worden logbestanden automatisch doorgestuurd naar de <strong>upgrade.log, bestand</strong>.</td>
+   <td>U kunt <strong> toevoegen - logboek-vlakke TRACE </strong> of <strong> - logboek-vlakke DEBUG </strong> opties aan de bevellijn wanneer het runnen van CRX2Oak. Op deze wijze, worden de logboeken automatisch opnieuw gericht aan het {</strong> dossier 0} upgrade.log.<strong></td>
   </tr>
   <tr>
    <td>Stand-alone modus</td>
-   <td><p>Voeg de <strong>—trace</strong> Hiermee kunt u opties instellen op de opdrachtregel van CRX2Oak, zodat u TRACE-gebeurtenissen kunt weergeven bij de standaarduitvoer (u moet de logbestanden zelf omleiden met het redirection-teken '&gt;' of de opdracht 'tee' voor latere controle).</p> </td>
+   <td><p>Voeg de <strong> - spoor </strong> opties aan de CRX2Oak bevellijn toe zodat kunt u de gebeurtenissen van de TRACE op standaardoutput tonen (u moet logboeken zelf opnieuw richten gebruikend redirection karakter: '&gt;' of "de"bevel voor recentere inspectie).</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Andere overwegingen {#other-considerations}
 
-Wanneer u naar een MongoDB-replicaset migreert, moet u de optie `WriteConcern` parameter to `2` op alle verbindingen met de Mongo-databases.
+Wanneer u naar een MongoDB-replicaset migreert, moet u de parameter `WriteConcern` instellen op `2` voor alle verbindingen met de Mongo-databases.
 
-U kunt dit doen door de `w=2` parameter aan het einde van de verbindingstekenreeks, als volgt:
+U kunt dit doen door de parameter `w=2` aan het einde van de verbindingstekenreeks toe te voegen, zoals in het volgende voorbeeld:
 
 ```xml
 java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:27017/aem-author?replicaset=replica1&w=2
@@ -215,4 +215,4 @@ java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:2
 
 >[!NOTE]
 >
->Zie de documentatie van de reeks MongoDB-verbindingen over [Vragen schrijven](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).
+>Voor meer informatie, zie de documentatie van het Koord van de Verbinding MongoDB op [ Zorgpunten schrijven ](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).

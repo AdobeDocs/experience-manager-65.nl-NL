@@ -22,7 +22,7 @@ Het configuratiebestand bevat de conversiegegevens van de PDF Generator, waarond
 
 >[!NOTE]
 >
->U kunt de time-out-instelling voor PDF Generator niet wijzigen door een aangepast native2pdfconfig.xml-bestand te importeren. De time-out-instelling in dat bestand is alleen ter informatie en geeft de huidige instelling in PDF Generator weer. Als u de time-outinstelling wilt wijzigen, raadpleegt u &quot;Parameters voor de prestaties van PDF Generatoren instellen&quot; in [AEM installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>U kunt de time-out-instelling voor PDF Generator niet wijzigen door een aangepast native2pdfconfig.xml-bestand te importeren. De time-out-instelling in dat bestand is alleen ter informatie en geeft de huidige instelling in PDF Generator weer. Om onderbreking te veranderen die plaatsen, zie &quot;Plaatsende de prestatieparameters van de PDF Generator&quot;in [ het Installeren van en het Opstellen van AEM vormen ](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Het huidige configuratiebestand exporteren {#export-your-current-configuration-file}
 
@@ -44,7 +44,7 @@ Het configuratiebestand bevat de conversiegegevens van de PDF Generator, waarond
 
 1. Klik in de beheerconsole op Services > PDF Generator > Configuratiebestanden > Configuratie importeren.
 1. Selecteer Een bestaand configuratiebestand importeren.
-1. Als u de bestandslocatie wilt opgeven in het vak Configuratiebestand, klikt u op Bladeren om het bestand te zoeken en te selecteren. Klik vervolgens op **Importeren**.
+1. Om de dossierplaats in het vakje van het Dossier van de Configuratie te specificeren, doorbladert de klik en selecteert het dossier, en klikt dan **de Invoer**.
 
 ## Alle lagen in AutoCAD-bestanden converteren {#convert-all-layers-within-autocad-files}
 
@@ -52,7 +52,7 @@ Standaard wordt met PDF Generator alleen de standaardlaag AutoCAD-bestanden omge
 
 1. Klik in de beheerconsole op Services > PDF Generator > Configuratiebestanden > Configuratie exporteren.
 1. Selecteer Volledige configuratie downloaden en klik op Downloaden.
-1. Open het gedownloade bestand in een teksteditor en open het onder de `AutoCAD` -tag binnen de `PDFMaker` -tag, de tekst toevoegen `convertAllPages="true"`.
+1. Open het gedownloade bestand in een teksteditor en voeg de tekst toe onder de tag `AutoCAD` in de tag `PDFMaker` `convertAllPages="true"` .
 1. Klik in de beheerconsole op Services > PDF Generator > Configuratiebestanden > Configuratie importeren.
 1. Selecteer Een bestaand configuratiebestand importeren, geef het bijgewerkte bestand op en klik op Importeren.
 

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Ervaar met AEM Forms op JEE Process Management, basisprogrammering van Java™ en het maken van aangepaste componenten.
 
-**Aanvullende vereiste andere producten**
+**Extra vereiste andere producten**
 
-Java™-editor zoals [Eclipse](https://www.eclipse.org/) of [Netbeans IDE](https://netbeans.apache.org/)
+De redacteur van Java™ zoals [ Eclipse ](https://www.eclipse.org/) of [ winde van Netbeans ](https://netbeans.apache.org/)
 
 ## Gebruikersniveau {#user-level}
 
@@ -196,21 +196,21 @@ Het bestand component.xml wordt hier weergegeven:
 1. Implementeer de component (.JAR-bestand) in JEE-runtime naar de AEM Forms via Workbench.
 1. Start de service vanuit Workbench (zie onderstaande afbeelding).
 
-![Procesontwerp](assets/process-design.jpg)
+![ Ontwerp van het Proces ](assets/process-design.jpg)
 
 ## De ZIP-service gebruiken in workflows {#using-zip-service-in-workflows}
 
 De bewerking UnzipDocument van de aangepaste service kan nu een documentvariabele als invoer accepteren en een lijst met documentvariabelen als uitvoer retourneren.
 
-![Document decomprimeren](assets/unzip-doc.jpg)
+![ Unzip Document ](assets/unzip-doc.jpg)
 
 Op dezelfde manier kan de verrichting ZipDocuments van de douanecomponent een lijst van documenten als input goedkeuren, hen als zip dossier comprimeren en het samengeperste document terugkeren.
 
-![Document overslaan](assets/zip-doc.jpg)
+![ Zip Document ](assets/zip-doc.jpg)
 
 De volgende werkschemaorchestratie toont hoe te om het bepaalde dossier van het PIT te decomprimeren, het terug naar een ander dossier van het PIT te comprimeren, en output terug te keren (zie hieronder Figuur).
 
-![ZIP-workflow ongedaan maken](assets/unzip-zip-process.jpg)
+![ het Werkschema van het ZIP van het ZIP Unzip ](assets/unzip-zip-process.jpg)
 
 ## Bepaalde zaken voor zakelijk gebruik {#business-use-cases}
 

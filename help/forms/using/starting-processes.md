@@ -22,7 +22,7 @@ De werkruimte van AEM Forms organiseert processen door de categorieën die de be
 
 Wanneer u een proces start, moet u mogelijk een formulier invullen om een bedrijfsproces te starten dat door de AEM Forms-workflow wordt beheerd. Als in een formulier het proces Gegevens voorbereiden wordt gebruikt, kunnen sommige gegevens vooraf in een leeg formulier worden ingevuld wanneer een nieuw proces wordt gestart.
 
-U wilt bijvoorbeeld een nieuwe computermonitor aanschaffen en daarom een proces starten dat *Inkooporder*. Wanneer u het proces start, wordt een formulier geopend en wordt u gevraagd om meer informatie over het item dat u wilt bestellen. Mogelijk zijn uw naam, werknemersnummer en de naam van de manager al vooraf ingevuld in het formulier. Wanneer u het verzoek indient, wordt een bedrijfsproces in werking gesteld. Gebaseerd op de procesdefinitie, leidt de server automatisch het verzoek aan uw manager. De taak begint in de te doen lijst van uw manager te verschijnen. Wanneer uw manager het verzoek goedkeurt, vormt het werkschema het verzoek aan de aankoopafdeling en verzendt u een e-mailbericht.
+Bijvoorbeeld, wilt u een nieuwe computermonitor kopen en daarom een proces beginnen genoemd *de Orde van de Aankoop*. Wanneer u het proces start, wordt een formulier geopend en wordt u gevraagd om meer informatie over het item dat u wilt bestellen. Mogelijk zijn uw naam, werknemersnummer en de naam van de manager al vooraf ingevuld in het formulier. Wanneer u het verzoek indient, wordt een bedrijfsproces in werking gesteld. Gebaseerd op de procesdefinitie, leidt de server automatisch het verzoek aan uw manager. De taak begint in de te doen lijst van uw manager te verschijnen. Wanneer uw manager het verzoek goedkeurt, vormt het werkschema het verzoek aan de aankoopafdeling en verzendt u een e-mailbericht.
 
 ## Te starten processen selecteren {#selecting-processes-to-start}
 
@@ -46,9 +46,9 @@ Wanneer u een proces selecteert, worden het tabblad Formulier en het tabblad Det
 
 1. Selecteer een proces door op een taak te klikken. Het formulier dat aan het proces is gekoppeld, wordt geopend op het tabblad Formulier.
 
-   Elk formulier in een proces heeft een unieke URL. U kunt de unieke URL gebruiken om de HTML Workspace met het specifieke proces en formulier rechtstreeks te starten. De opmaak van de URL is https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;applicationname>%2F&lt;processname>. De &lt;applicationname>%2F&lt;processname> tekenreeks is altijd URL-gecodeerd. Een voorbeeld-URL is http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. De tekenreeks ApplicationName%2FPProcessName in het voorbeeld is URL-gecodeerd.
+   Elk formulier in een proces heeft een unieke URL. U kunt de unieke URL gebruiken om de HTML Workspace rechtstreeks te starten met het specifieke proces en formulier. De indeling van de URL is https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>. De tekenreeks &lt;ApplicationName>%2F&lt;ProcessName> is altijd URL-gecodeerd. Een voorbeeld-URL is http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. De tekenreeks ApplicationName%2FPProcessName in het voorbeeld is URL-gecodeerd.
 
-1. Vul het formulier in volgens de instructies die bij het formulier worden geleverd. Klik indien nodig op **Maximaliseren** om het zichtbare gebied van het formulier te vergroten.
+1. Vul het formulier in volgens de instructies die bij het formulier worden geleverd. Indien nodig, klik **maximaliseren** om het zichtbare gebied van de vorm te verhogen.
 1. Als het tabblad Bijlagen beschikbaar is, voegt u naar wens bijlagen toe.
 1. Geef desgewenst notities op als het tabblad Notities beschikbaar is.
 1. Voer een van de volgende stappen uit:
@@ -58,7 +58,7 @@ Wanneer u een proces selecteert, worden het tabblad Formulier en het tabblad Det
 
    Het Beheer van het proces begint het proces en leidt de vorm aan te doen lijsten van de aangewezen mensen die de volgende taak in het proces moeten voltooien.
 
-   Als u een formulier moet sluiten voordat het wordt verzonden en zonder dat de ingevoerde gegevens verloren gaan, slaat u een concept op en vult u het later in als dit tijdens het proces mogelijk is. Als het formulier en het proces dit toestaan, kunt u ook op **Off line** en later indienen vanuit Adobe® Reader® of Adobe® Acrobat® Professional of Acrobat Standard.
+   Als u een formulier moet sluiten voordat het wordt verzonden en zonder dat de ingevoerde gegevens verloren gaan, slaat u een concept op en vult u het later in als dit tijdens het proces mogelijk is. Als de vorm en het proces het toestaan, kunt u **Offline** ook klikken en het van Adobe® Reader® of Adobe® Acrobat® Professional of Acrobat Standard later voorleggen.
 
    >[!NOTE]
    >
@@ -78,10 +78,10 @@ U kunt meerdere notities toevoegen, de geschreven notities bewerken en deze verw
 * Lezen/Verwijderen
 * Geen toegang
 
-1. Open een taak en klik op de knop **Notities** , als dit tijdens het proces mogelijk is.
-1. Typ een titel voor de notitie in het dialoogvenster **Titel** en typ de tekst van de notitie in het dialoogvenster **Opmerking** doos.
-1. Selecteer de **Machtigingen** niveau voor de nota voor andere gebruikers die aan het proces deelnemen.
-1. Klikken **OK**. Een tekstbestand dat uw notitie bevat, wordt aan het formulier gekoppeld. U kunt een notitie bijwerken door erop te klikken en de tekst rechtstreeks te wijzigen. U kunt een notitie verwijderen door op de knop **Verwijderen** knop ![Afbeelding van een prullenbak](assets/icondelete.png) naast de notitie.
+1. Open een taak en klik het **Nota&#39;s** lusje, als het proces het toestaat.
+1. Typ een titel voor de nota in het **vakje van de Titel**, en typ de tekst van de nota in het **3} vakje van de Nota {.**
+1. Selecteer het **niveau van Toestemmingen** voor de nota voor andere gebruikers die aan het proces deelnemen.
+1. Klik **OK**. Een tekstbestand dat uw notitie bevat, wordt aan het formulier gekoppeld. U kunt een notitie bijwerken door erop te klikken en de tekst rechtstreeks te wijzigen. U kunt een nota schrappen door **te klikken schrapt** knoop ![ Beeld van een afval kan ](assets/icondelete.png) naast de nota.
 
 ### Een bijlage toevoegen {#add-an-attachment}
 
@@ -93,10 +93,10 @@ U kunt ook opmerkingen over de bijlage toevoegen. U kunt een van de volgende toe
 * Lezen/Verwijderen
 * Geen toegang
 
-1. Klik op de knop **Bijlagen** en selecteert u **Bijlage**.
-1. Klikken **Bladeren** om het bestand te selecteren dat u wilt bijvoegen.
-1. Selecteer de **Machtigingen** niveau voor de bijlage voor andere gebruikers die aan het proces deelnemen. Als u **Lezen**, kunnen andere gebruikers het bestand lokaal opslaan. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
-1. Klikken **OK**. Het bestand wordt aan het formulier gekoppeld. U kunt een bestand verwijderen door op de knop **Verwijderen** knop ![Afbeelding van een prullenbak](assets/icondelete.png) naast de bijlage.
+1. Klik het **lusje van Bijlagen** en selecteer **Bijlage**.
+1. Klik **doorbladeren** om het dossier te selecteren om vast te maken.
+1. Selecteer het **niveau van Toestemmingen** voor de gehechtheid voor andere gebruikers die aan het proces deelnemen. Als u **Gelezen** selecteert, kunnen andere gebruikers het dossier plaatselijk bewaren. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
+1. Klik **OK**. Het bestand wordt aan het formulier gekoppeld. U kunt een dossier schrappen door het **knoop ![ Beeld van de Schrapping** te klikken ](assets/icondelete.png) naast de gehechtheid.
 
 ## Concepten van formulieren opslaan {#saving-draft-copies-of-forms}
 
@@ -104,7 +104,7 @@ Als u een formulier later moet invullen en verzenden, kunt u een conceptkopie va
 
 Nadat u een conceptformulier opnieuw hebt geopend en verzonden, wordt het concept verwijderd uit de categorie Concepten.
 
-Ook, kunt u werkruimte vormen om de informatie die door een gebruiker als ontwerp wordt ingegaan automatisch op te slaan. Zie voor meer informatie [Voorkeuren beheren](/help/forms/using/getting-started-livecycle-html-workspace.md).
+Ook, kunt u werkruimte vormen om de informatie die door een gebruiker als ontwerp wordt ingegaan automatisch op te slaan. Voor meer informatie, zie [ het Leiden Voorkeur ](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ Ook, kunt u werkruimte vormen om de informatie die door een gebruiker als ontwer
 
 ### Concepten opslaan {#save-a-draft-copy}
 
-1. Klikken **Opslaan** in de linkerbenedenhoek van een willekeurig tabblad. Het formulier wordt toegevoegd aan de categorie Concepten op de pagina Aan. Alle wijzigingen die u in het formulier hebt aangebracht, worden opgeslagen.
+1. Klik **sparen** in de laag-linkerhoek van om het even welk lusje. Het formulier wordt toegevoegd aan de categorie Concepten op de pagina Aan. Alle wijzigingen die u in het formulier hebt aangebracht, worden opgeslagen.
 
 ### Concepten opnieuw openen {#reopen-a-draft-copy}
 
-1. Selecteer op de pagina Aan-bewerking de optie **Concepten** en klik op de conceptkopie van het formulier.
+1. Voor de pagina te doen, selecteer de **rij Concepten** en klik het ontwerp exemplaar van de vorm.
 
    Als het formulier een reeks deelvensters bevat, moet u mogelijk naar het deelvenster gaan waar u de laatste sessie hebt beëindigd.
 
@@ -126,6 +126,6 @@ U kunt elk proces toevoegen aan de categorie Favorieten. Door favorieten in te s
 
 >[!NOTE]
 >
->Als u gewoonlijk processen start wanneer u de AEM Forms-werkruimte gebruikt, kunt u bij Locatie starten de categorie Favorieten automatisch weergeven wanneer u de AEM Forms-werkruimte start. Zie Voorkeuren beheren in [Aan de slag met de AEM Forms-werkruimte](/help/forms/using/getting-started-livecycle-html-workspace.md).
+>Als u gewoonlijk processen start wanneer u de AEM Forms-werkruimte gebruikt, kunt u bij Locatie starten de categorie Favorieten automatisch weergeven wanneer u de AEM Forms-werkruimte start. Voor meer details, zie het Leiden Voorkeur in [ Begonnen het worden met de werkruimte van AEM Forms ](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Als u een proces als favoriet wilt markeren, selecteert u de taak in de desbetreffende categorie en klikt u op de holle ster. De ster wordt gouden. Als u de markering van een proces als favoriet wilt opheffen, klikt u nogmaals op de gouden ster.

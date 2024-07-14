@@ -49,13 +49,13 @@ U hebt de volgende EMC NetWorker-modules nodig:
 
 In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content Server kunt installeren en configureren.
 
-**De EMC Documentum-server voorbereiden voor back-up**
+**Bereid de EMC Documentum server voor steun** voor
 
 1. Installeer op de EMC Documentum Content Server de EMC NetWorker-modules en accepteer alle standaardinstellingen.
 
-   Tijdens de installatieprocessen, wordt u ertoe aangezet om de servernaam van de computer van de Server van de Inhoud als *NetWorker-servernaam*. Wanneer u de EMC NetWorker Module voor uw database installeert, kiest u een volledige installatie.
+   Tijdens de installatieprocessen, wordt u ertoe aangezet om de servernaam van de computer van de Server van de Inhoud als *Naam van de Server NetWorker* in te gaan. Wanneer u de EMC NetWorker Module voor uw database installeert, kiest u een volledige installatie.
 
-1. Maak met behulp van de onderstaande voorbeeldinhoud een configuratiebestand met de naam *nsrnmd_win.cfg* en sla deze op een toegankelijke locatie op de Content Server op. Dit bestand wordt aangeroepen door de opdrachten voor back-up en herstel.
+1. Gebruikend de steekproefinhoud hieronder, creeer een configuratiedossier genoemd *nsrnmd_win.cfg* en bewaar het aan een toegankelijke plaats op de Server van de Inhoud. Dit bestand wordt aangeroepen door de opdrachten voor back-up en herstel.
 
    De volgende tekst bevat opmaaktekens voor regeleinden. Als u deze tekst naar een locatie buiten dit document kopieert, kopieert u een gedeelte per keer en verwijdert u de opmaaktekens wanneer u deze op de nieuwe locatie plakt.
 
@@ -186,18 +186,18 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Het wachtwoordveld voor het configuratiebestand behouden `NMDDE_DM_PASSWD` leeg. In de volgende stap stelt u het wachtwoord in.
+   Laat het wachtwoordveld voor het configuratiebestand `NMDDE_DM_PASSWD` leeg. In de volgende stap stelt u het wachtwoord in.
 
 1. Stel het wachtwoord voor het configuratiebestand als volgt in:
 
-   * Een opdrachtprompt openen en wijzigen in `[NetWorker_root]\Legato\nsr\bin`.
-   * Voer de volgende opdracht uit: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
+   * Open een opdrachtprompt en ga naar `[NetWorker_root]\Legato\nsr\bin` .
+   * Voer het volgende bevel in werking: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> - P &lt;password>*
 
 1. Maak de uitvoerbare batchbestanden (.bat) die worden gebruikt om een back-up van de database te maken. (Zie de documentatie van NetWorker.) Stel de details in de batchbestanden in op basis van uw installatie.
 
    * Volledige back-up van database (nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[ wachtwoord ]*`-l full`* &lt;database_name> *
 
    * Incrementele back-up van databases (nsrnmddbi.bat):
 
@@ -209,24 +209,24 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
      Waarbij:
 
-     `[NetWorker_database_module_root]` is de installatiemap van de module NetWorker. Bijvoorbeeld, is de standaardinstallatiemap voor Module NetWorker voor SQL Server C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+     `[NetWorker_database_module_root]` is de installatiemap van de NetWorker-module. Bijvoorbeeld, is de standaardinstallatiemap voor Module NetWorker voor SQL Server C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
      `NetWorker_Server_Name` is de server waarop NetWorker is geïnstalleerd.
 
-     `username` &amp; `password` Dit zijn de gebruikersnaam en het wachtwoord van de databasebeheerder.
+     `username` en `password` zijn de gebruikersnaam en het wachtwoord van de databasebeheergebruiker.
 
      `database_name` is de naam van de database waarvan een back-up moet worden gemaakt.
 
-**Een back-upapparaat maken**
+**creeer een reserveapparaat**
 
 1. Maak een directory op de EMC Documentum-server en deel de map door alle gebruikers volledige rechten te geven.
 1. Start EMC NetWorker Administrator en klik op Mediabeheer > Apparaten.
 1. Klik met de rechtermuisknop op Apparaten en selecteer Maken.
 1. Voer de volgende waarden in en klik op OK:
 
-   **Naam:** Het volledige pad van de gedeelde map
+   **Naam:** de volledige weg van de gedeelde folder
 
-   **Mediatype:** `File`
+   **Type van Media:** `File`
 
 1. Klik met de rechtermuisknop op het nieuwe apparaat en selecteer Bewerkingen.
 1. Klik op Label, voer een naam in, klik op OK en klik vervolgens op Onderbrengen.
@@ -235,13 +235,13 @@ Er wordt een apparaat toegevoegd waarop de back-upbestanden worden opgeslagen. U
 
 ## Back-up maken van de EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergegevens hebt gemaakt. (Zie [Back-ups maken van de AEM formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergegevens hebt gemaakt. (Zie [ Steunend de AEM vormengegevens ](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
->De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in creeerde [De EMC Document Content Server voorbereiden voor back-up en herstel](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [ creeerde het Voorbereiden van de EMC Server van de Inhoud van het Document voor steun en terugwinning ](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Een opdrachtprompt openen en wijzigen in `[NetWorker_root]\Legato\nsr\bin`.
+1. Open een opdrachtprompt en ga naar `[NetWorker_root]\Legato\nsr\bin` .
 1. Voer de volgende opdracht uit:
 
    ```shell
@@ -250,18 +250,18 @@ Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergeg
 
 ## De EMC Documentum Content Server herstellen {#restore-the-emc-documentum-content-server}
 
-Voer de volgende taken uit voordat u de AEM formuliergegevens herstelt. (Zie [De AEM formuliergegevens herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Voer de volgende taken uit voordat u de AEM formuliergegevens herstelt. (Zie [ Herstellend de AEM vormengegevens ](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >
->De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in creeerde [De EMC Document Content Server voorbereiden voor back-up en herstel](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [ creeerde het Voorbereiden van de EMC Server van de Inhoud van het Document voor steun en terugwinning ](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Stop de Docbase-service die u wilt herstellen.
-1. Start het hulpprogramma NetWorker-gebruiker voor uw databasemodule (bijvoorbeeld *NetWorker-gebruiker voor SQL Server*).
+1. Begin het nut van de Gebruiker NetWorker voor uw gegevensbestandmodule (bijvoorbeeld, *Gebruiker NetWorker voor SQL Server*).
 1. Klik op het gereedschap Herstellen en selecteer vervolgens Normaal.
 1. Selecteer links in het scherm de database voor uw Docbase en klik op de knop Start op de werkbalk.
 1. Start de Docbase-service opnieuw wanneer de database is hersteld.
-1. Een opdrachtprompt openen en wijzigen in *[NetWorker_root]*\Legato\nsr\bin
+1. Open een bevelherinnering en verandering in *[NetWorker_root]* \Legato\nsr\bin
 1. Voer de volgende opdracht uit:
 
    ```shell

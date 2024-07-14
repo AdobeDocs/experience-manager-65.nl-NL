@@ -23,7 +23,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >De Adobe is niet van plan het e-mailvolgen van open/grenzen (niet leverbaar) verder te verbeteren die door AEM dienst SMTP worden verzonden.
->Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
+>De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken op basis van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
 
@@ -33,7 +33,7 @@ Daarnaast kunt AEM u de functionaliteit voor nieuwsbrieven beheren, waaronder he
 
 >[!NOTE]
 >
->In Geometrixx wordt de e-maileditor automatisch geopend in de sjabloon voor nieuwsbrieven. U kunt de e-maileditor in andere sjablonen gebruiken die u e-mailberichten wilt verzenden, bijvoorbeeld in uitnodigingen. De e-maileditor geeft altijd weer wanneer een pagina wordt overgenomen van **mcm/componenten/nieuwsbrief/pagina**.
+>In Geometrixx wordt de e-maileditor automatisch geopend in de sjabloon voor nieuwsbrieven. U kunt de e-maileditor in andere sjablonen gebruiken die u e-mailberichten wilt verzenden, bijvoorbeeld in uitnodigingen. De e-mailredacteursvertoningen wanneer een pagina van **mcm/componenten/nieuwsbrief/pagina** wordt geërft.
 
 In dit document worden de basisbeginselen van het maken van nieuwsbrieven in AEM beschreven. Raadpleeg de volgende documenten voor gedetailleerde informatie over het werken met e-mailmarketing:
 
@@ -44,64 +44,64 @@ In dit document worden de basisbeginselen van het maken van nieuwsbrieven in AEM
 
 >[!NOTE]
 >
->Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de instantie Publiceren wordt gepubliceerd of als de instantie Publiceren niet beschikbaar is. Vergeet niet uw nieuwsbrief te publiceren en ervoor te zorgen dat de instantie Publiceren actief is.
+>Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de Publish-instantie wordt gepubliceerd of als de Publish-instantie niet beschikbaar is. Publiceer uw nieuwsbrief en zorg ervoor dat het Publish-exemplaar actief is.
 
 ## Een nieuwsbrief maken {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
->E-mailmeldingen moeten via de osgi-configuratie worden geconfigureerd. Zie [E-mailmelding configureren.](/help/sites-administering/notification.md)
+>E-mailmeldingen moeten via de osgi-configuratie worden geconfigureerd. Zie [ het Vormen E-mailBericht.](/help/sites-administering/notification.md)
 
 1. Selecteer uw nieuwe campagne in de linkerruit, of klik het in de juiste ruit tweemaal.
 
 1. Selecteer de lijstweergave met het pictogram:
 
-   ![Pictogram lijstweergave](do-not-localize/mcm_icon_listview-1.png)
+   ![ de meningspictogram van de Lijst ](do-not-localize/mcm_icon_listview-1.png)
 
-1. Klikken **Nieuw...**
+1. Klik **Nieuw..**
 
-   U kunt de **Titel**, **Naam** en type ervaring die moet worden opgedaan; in dit geval Newsletter.
+   U kunt de **Titel** specificeren, **Naam** en type van ervaring dat moet worden gecreeerd; in dit geval, Newsletter.
 
-   ![Dialoogvenster Ervaring maken](assets/mcm_createnewsletter.png)
+   ![ creeer de dialoog van de Ervaring ](assets/mcm_createnewsletter.png)
 
-1. Klikken **Maken**.
+1. Klik **creëren**.
 
 1. Er wordt direct een nieuw dialoogvenster geopend. Hier kunt u eigenschappen voor de nieuwsbrief ingaan.
 
-   De **Standaardlijst met ontvangers** is een verplicht veld omdat dit het aanraakpunt voor de nieuwsbrief vormt (zie [Werken met lijsten](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) voor meer informatie over lijsten).
+   De **StandaardLijst van Ontvangers** is een verplicht gebied aangezien dit touchpoint voor nieuwsbrief vormt (zie [ Werkend met Lijsten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) voor meer informatie over lijsten).
 
-   ![Dialoogvenster Pagina-eigenschappen](assets/mcm_newnewsletterdialog.png)
+   ![ de eigenschappendialoog van de Pagina ](assets/mcm_newnewsletterdialog.png)
 
-   * **Van naam**
+   * **van Naam**
 Naam die als afzender van nieuwsbrief zou moeten verschijnen.
 
-   * **Van adres**
+   * **van Adres**
 E-mailadres dat moet worden weergegeven als de afzender van de nieuwsbrief.
 
    * **Onderwerp**
 Onderwerp van de nieuwsbrief.
 
-   * **Reageren op**
+   * **Antwoord aan**
 E-mailadres dat antwoorden op verzonden nieuwsbrief moet adresseren.
 
    * **Beschrijving**
 Beschrijving van de nieuwsbrief.
 
-   * **Op tijd**
+   * **op Tijd**
 De tijd waarop de nieuwsbrief moet worden verzonden.
 
-   * **Standaardlijst met ontvangers**
+   * **Standaard Ontvangers Lijst**
 Standaardlijst die de nieuwsbrief moet ontvangen.
 
-   Deze kunnen later worden bijgewerkt via de **Eigenschappen...** in.
+   Deze kunnen in een recentere fase van de **Eigenschappen worden bijgewerkt..** dialoog.
 
-1. Klikken **OK** opslaan.
+1. Klik **O.K.** om te bewaren.
 
 ## Inhoud toevoegen aan nieuwsbrieven {#adding-content-to-newsletters}
 
 U kunt inhoud, inclusief dynamische inhoud, op dezelfde manier aan uw nieuwsbrief toevoegen als in elke AEM. In Geometrixx, heeft het malplaatje van de Nieuwsbrief bepaalde componenten beschikbaar voor het toevoegen van en het wijzigen van inhoud in nieuwsbrieven.
 
-1. Klik in de MCM op de knop **Campagnes** en dubbelklikt u op de nieuwsbrief waaraan u inhoud wilt toevoegen of bewerken. De nieuwsbrief wordt geopend.
+1. In MCM, klik de **Campagnes** tabel en klik nieuwsbrief tweemaal u inhoud aan wilt toevoegen of uitgeven. De nieuwsbrief wordt geopend.
 
 1. Als componenten niet zichtbaar zijn, ga naar de mening van het Ontwerp en laat de noodzakelijke componenten (bijvoorbeeld, de componenten van de Nieuwsbrief) toe alvorens u begint uit te geven.
 1. Voer eventueel nieuwe tekst, afbeeldingen of andere componenten in. In het voorbeeld Geometrixx zijn vier componenten beschikbaar: Tekst, Afbeelding, Kop en 2 kolommen. Uw nieuwsbrief kan meer of minder componenten hebben afhankelijk van hoe u het opstelling.
@@ -110,9 +110,9 @@ U kunt inhoud, inclusief dynamische inhoud, op dezelfde manier aan uw nieuwsbrie
    >
    >U kunt nieuwsbrieven personaliseren door variabelen te gebruiken. In de nieuwsbrief van de Geometrixx zijn de variabelen beschikbaar in de component van de Tekst. Waarden voor de variabelen worden overgenomen van de gegevens in het gebruikersprofiel.
 
-   ![Inhoud voor nieuwsbrieven bewerken](assets/mcm_newsletter_content.png)
+   ![ het Uitgeven nieuwsbrief inhoud ](assets/mcm_newsletter_content.png)
 
-1. Als u variabelen wilt invoegen, selecteert u de variabele in de lijst en klikt u **Invoegen**. Variabelen worden gevuld vanuit het profiel.
+1. Om variabelen op te nemen, selecteer de variabele van de lijst en klik **Tussenvoegsel**. Variabelen worden gevuld vanuit het profiel.
 
 ## Nieuwsbrieven aanpassen {#personalizing-newsletters}
 
@@ -126,23 +126,23 @@ Een nieuwsbrief personaliseren en simuleren hoe het eruit zal zien:
 
 1. Open de tekstcomponent die u wilt aanpassen.
 
-1. Plaats de cursor op de gewenste plaats voor de variabele en selecteer een variabele in de vervolgkeuzelijst en klik op **Invoegen**. Doe dit voor zoveel variabelen als nodig en klik op **OK**.
+1. Plaats de curseur waar u de variabele wilt verschijnen en een variabele van de drop-down lijst selecteren en **Tussenvoegsel** klikken. Doe dit voor zo vele variabelen zoals vereist en klik **O.K.**.
 
-   ![Variabelen toevoegen](assets/mcm_newsletter_variables.png)
+   ![ Toevoegend variabelen ](assets/mcm_newsletter_variables.png)
 
-1. Als u wilt simuleren hoe de variabele eruitziet wanneer deze wordt verzonden, drukt u op CTRL+ALT+c om de clientcontext te openen en selecteert u **Laden**. Selecteer de gebruiker in de lijst waarvan u het profiel wilt laden en klik op **OK**.
+1. Om te simuleren hoe de variabele wanneer verzonden zal kijken, druk CTRL+ALT+c om de cliëntcontext te openen en **Lading** te selecteren. Selecteer de gebruiker van de lijst waarvan profiel u zou willen laden en **O.K.** klikken.
 
    De gegevens uit het profiel dat u hebt geladen, bevatten de variabelen.
 
-   ![Variabelen testen](assets/mc_newsletter_testvariables.png)
+   ![ het Testen variabelen ](assets/mc_newsletter_testvariables.png)
 
 ## Nieuwsbrieven testen in verschillende e-mailclients {#testing-newsletters-in-different-e-mail-clients}
 
 >[!NOTE]
 >
->Alvorens nieuwsbrieven te verzenden, controleer de configuratie OSGi voor de Verbinding van CQ van de Dag uiterlijk bij `https://localhost:4502/system/console/configMgr`.
+>Alvorens nieuwsbrieven te verzenden, controleer de configuratie OSGi voor de Verbinding van de Dag CQ Externalzer bij `https://localhost:4502/system/console/configMgr`.
 >
->De standaardwaarde van de parameter is `localhost:4502` en de bewerking kan niet voltooid zijn als de poort voor de actieve instantie is gewijzigd.
+>Standaard is de waarde van de parameter `localhost:4502` en kan de bewerking niet worden voltooid als de poort voor de actieve instantie wordt gewijzigd.
 
 Schakel tussen algemene e-mailclients om te zien hoe uw nieuwsbrief eruit ziet voor uw leads. Standaard wordt uw nieuwsbrief geopend zonder dat een e-mailclient is geselecteerd.
 
@@ -161,35 +161,35 @@ Als u wilt schakelen tussen clients, klikt u op het bijbehorende pictogram om de
 
 1. Klik op een e-mailclient in de bovenste balk om te zien hoe de nieuwsbrief er in die client uitziet.
 
-   ![E-mailclients schakelen](assets/chlimage_1-119.png)
+   ![ Omschakeling e-mailcliënten ](assets/chlimage_1-119.png)
 
 1. Herhaal deze stap voor alle andere e-mailclients die u wilt zien.
 
-   ![E-mailclients wijzigen](assets/chlimage_1-120.png)
+   ![ Veranderend e-mailcliënten ](assets/chlimage_1-120.png)
 
 ## Newsletter-instellingen aanpassen {#customizing-newsletter-settings}
 
 Hoewel alleen geautoriseerde gebruikers een nieuwsbrief kunnen verzenden, dient u het volgende aan te passen:
 
 * De onderwerpregel, zodat gebruikers uw e-mail willen openen en er ook voor zorgen dat uw nieuwsbrief niet als spam wordt gemarkeerd.
-* Het adres Van, bijvoorbeeld, `noreply@geometrixx.com`, zodat gebruikers een e-mail van een opgegeven adres ontvangen.
+* Het adres Van, bijvoorbeeld, `noreply@geometrixx.com`, zodat de gebruikers e-mail van een gespecificeerd adres ontvangen.
 
 Nieuwsbrieven aanpassen:
 
 1. Open vanuit de MCM de nieuwsbrief waarvoor u instellingen wilt aanpassen.
 
-   ![Een nieuwsbrief openen](assets/mcm_newsletter_open.png)
+   ![ Openend een nieuwsbrief ](assets/mcm_newsletter_open.png)
 
-1. Klik boven aan de nieuwsbrief op **Instellingen**.
+1. Bij de bovenkant van nieuwsbrief, klik **Montages**.
 
-   ![Instellingen voor nieuwsbrieven bewerken](assets/mcm_newsletter_settings.png)
-1. Voer de **Van** e-mailadres
+   ![ het Uitgeven nieuwsbrief montages ](assets/mcm_newsletter_settings.png)
+1. Ga **van** e-mailadres in
 
-1. Wijzig de **Onderwerp** van het e-mailbericht, indien nodig.
+1. Wijzig het **Onderwerp** van e-mail, indien nodig.
 
-1. Selecteer een **Standaardlijst met ontvangers** in de vervolgkeuzelijst.
+1. Selecteer a **StandaardLijst van Ontvangers** van de drop-down lijst.
 
-1. Klikken **OK**.
+1. Klik **OK**.
 
    Wanneer u de nieuwsbrief test of verzendt, zullen de ontvangers e-mail met het gespecificeerde e-mailadres en onderwerp ontvangen.
 
@@ -199,42 +199,42 @@ Hoewel het testen van de vlucht niet verplicht is, kunt u het best testen voorda
 
 Bij het testen van de vlucht kunt u het volgende doen:
 
-* Bekijk de nieuwsbrief in [alle beoogde cliënten](#testing-newsletters-in-different-e-mail-clients).
+* Bekijk nieuwsbrief in [ alle voorgenomen cliënten ](#testing-newsletters-in-different-e-mail-clients).
 * Controleer of de mailserver op de juiste wijze is ingesteld.
 * Bepaal of je e-mail wordt gemarkeerd als spam. (Zorg ervoor dat u uzelf opneemt in de lijst met ontvangers.)
 
 >[!NOTE]
 >
->Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de instantie Publiceren wordt gepubliceerd of als de instantie Publiceren niet beschikbaar is. Vergeet niet uw nieuwsbrief te publiceren en ervoor te zorgen dat de instantie Publiceren actief is.
+>Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de Publish-instantie wordt gepubliceerd of als de Publish-instantie niet beschikbaar is. Publiceer uw nieuwsbrief en zorg ervoor dat het Publish-exemplaar actief is.
 
 Voor nieuwsbrieven voor vliegproeven:
 
 1. Open vanuit de MCM de nieuwsbrief die u wilt testen en verzenden.
 
-1. Klik boven aan de nieuwsbrief op **Testen** om te testen voordat u gaat verzenden.
+1. Bij de bovenkant van nieuwsbrief, klik **Test** om te testen alvorens te verzenden.
 
-   ![Instellingen om een nieuwsbrief te testen](assets/mcm_newsletter_testsettings.png)
+   ![ Montages om een nieuwsbrief ](assets/mcm_newsletter_testsettings.png) te testen
 
-1. Voer het testadres in waarnaar de nieuwsbrief moet worden verzonden en klik op **Verzenden**. Als u het profiel wilt wijzigen, laadt u een ander profiel in de clientcontext. U doet dit door op CTRL+ALT+c te drukken en een profiel laden en laden te selecteren.
+1. Ga het teste-mailadres in waar u verzonden nieuwsbrief wilt en **klikken verzendt**. Als u het profiel wilt wijzigen, laadt u een ander profiel in de clientcontext. U doet dit door op CTRL+ALT+c te drukken en een profiel laden en laden te selecteren.
 
 ## Nieuwsbrieven verzenden {#sending-newsletters}
 
 >[!NOTE]
 >
 >De Adobe is niet van plan het e-mailvolgen van open/grenzen (niet leverbaar) verder te verbeteren die door AEM dienst SMTP worden verzonden.
->Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
+>De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 U kunt een nieuwsbrief vanuit de nieuwsbrief of de lijst verzenden. Beide procedures worden beschreven.
 
 >[!NOTE]
 >
->Alvorens nieuwsbrieven te verzenden, controleer de configuratie OSGi voor de Verbinding van CQ van de Dag uiterlijk bij `https://localhost:4502/system/console/configMgr`.
+>Alvorens nieuwsbrieven te verzenden, controleer de configuratie OSGi voor de Verbinding van de Dag CQ Externalzer bij `https://localhost:4502/system/console/configMgr`.
 >
->De standaardwaarde van de parameter is `localhost:4502` en de bewerking kan niet voltooid zijn als de poort voor de actieve instantie is gewijzigd.
+>Standaard is de waarde van de parameter `localhost:4502` en kan de bewerking niet worden voltooid als de poort voor de actieve instantie wordt gewijzigd.
 
 >[!NOTE]
 >
->Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de instantie Publiceren wordt gepubliceerd of als de instantie Publiceren niet beschikbaar is. Vergeet niet uw nieuwsbrief te publiceren en ervoor te zorgen dat de instantie Publiceren actief is.
+>Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de Publish-instantie wordt gepubliceerd of als de Publish-instantie niet beschikbaar is. Publiceer uw nieuwsbrief en zorg ervoor dat het Publish-exemplaar actief is.
 
 ### Nieuwsbrieven verzenden vanuit een campagne {#sending-newsletters-from-a-campaign}
 
@@ -244,20 +244,20 @@ Een nieuwsbrief sturen vanuit de campagne:
 
    >[!NOTE]
    >
-   >Voordat u een nieuwsbrief verzendt, moet u controleren of u het onderwerp van de nieuwsbrief en het oorspronkelijke e-mailadres hebt aangepast door [aanpassen, instellingen](#customizing-newsletter-settings).
+   >Alvorens uit te verzenden, zorg ervoor u het onderwerp van uw nieuwsbrief en voortkomend e-mailadres door [ hebt aangepast zijn montages ](#customizing-newsletter-settings) aangepast.
    >
    >
-   >[Vluchttest](#flight-testing-newsletters) de nieuwsbrief vóór verzending wordt aanbevolen.
+   >[ het testen van de Vlucht ](#flight-testing-newsletters) nieuwsbrief alvorens wordt het verzenden geadviseerd.
 
-1. Klik boven aan de nieuwsbrief op **Verzenden**. De wizard Nieuwsbrief wordt geopend.
+1. Bij de bovenkant van nieuwsbrief, verzendt de klik ****. De wizard Nieuwsbrief wordt geopend.
 
-1. Selecteer in de lijst met ontvangers de lijst waarop u de nieuwsbrief wilt ontvangen en klik op **Volgende**.
+1. In de lijst van de ontvanger, selecteer de lijst u nieuwsbrief wilt ontvangen en **daarna** klikken.
 
-   ![Een nieuwsbrief verzenden](assets/mcm_newslettersend.png)
+   ![ Verzendend een nieuwsbrief ](assets/mcm_newslettersend.png)
 
-1. De installatie is voltooid. Klikken **Verzenden** om de nieuwsbrief daadwerkelijk te verzenden.
+1. De installatie is voltooid. Klik **verzenden** om nieuwsbrief eigenlijk te verzenden.
 
-   ![Bevestiging voor nieuwsbrief verzonden](assets/mcm_newslettersendconfirm.png)
+   ![ Verstuurde nieuwsbrief bevestiging ](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -267,25 +267,25 @@ Een nieuwsbrief sturen vanuit de campagne:
 
 Een nieuwsbrief verzenden vanuit een lijst:
 
-1. Klik in de MCM op **Lijsten** in het linkerdeelvenster.
+1. In MCM, klik **Lijsten** in de linkerhand ruit.
 
    >[!NOTE]
    >
-   >Voordat u een nieuwsbrief verzendt, moet u controleren of u het onderwerp van de nieuwsbrief en het oorspronkelijke e-mailadres hebt aangepast door [aanpassen, instellingen](#customizing-newsletter-settings). U kunt een nieuwsbrief niet testen als u deze vanuit de lijst verzendt; u kunt [vliegproef](#flight-testing-newsletters) het als u het vanuit de nieuwsbrief verzendt.
+   >Alvorens uit te verzenden, zorg ervoor u het onderwerp van uw nieuwsbrief en voortkomend e-mailadres door [ hebt aangepast zijn montages ](#customizing-newsletter-settings) aangepast. U kunt geen nieuwsbrief testen als u het van de lijst verzendt; u kunt [ vluchttest ](#flight-testing-newsletters) het als u het van nieuwsbrief verzendt.
 
 1. Schakel het selectievakje in naast de lijst met leads waarnaar u een nieuwsbrief wilt verzenden.
 
-1. In de **Gereedschappen** menu, selecteert u **Nieuwsbrief verzenden**. De **Nieuwsbrief verzenden** wordt geopend.
+1. In het **menu van Hulpmiddelen**, uitgezochte **verzendt Newsletter**. Het **verzendt het venster van de Nieuwsbrief** opent.
 
-   ![Newletter-console](assets/mcm_newslettersendfromlist.png)
+   ![ Newletter console ](assets/mcm_newslettersendfromlist.png)
 
-1. In de **Nieuwsbrief** veld, selecteer de nieuwsbrief die u wilt verzenden en klik op **Volgende**.
+1. Op het **gebied van het Bulletin**, selecteer nieuwsbrief u **daarna** wilt verzenden en klikken.
 
-   ![Dialoogvenster Nieuwsbrief verzenden](assets/mcm_newslettersenddialog.png)
+   ![ verzendt nieuwsbrief dialoog ](assets/mcm_newslettersenddialog.png)
 
-1. De installatie is voltooid. Klikken **Verzenden** om de geselecteerde nieuwsbrief naar de gespecificeerde lijst van lood te verzenden.
+1. De installatie is voltooid. Klik **verzenden** om de geselecteerde nieuwsbrief naar de gespecificeerde lijst van lood te verzenden.
 
-   ![Bevestigen](assets/mcm_newslettersenddialog_confirmation.png)
+   ![ verzend bevestiging ](assets/mcm_newslettersenddialog_confirmation.png)
 
    Uw nieuwsbrief wordt verzonden naar de geselecteerde ontvangers.
 
@@ -297,8 +297,8 @@ In deze sectie wordt beschreven hoe u zich op een nieuwsbrief kunt abonneren.
 
 Abonneren op een nieuwsbrief (de website van de Geometrixx als voorbeeld gebruiken):
 
-1. Klikken **Websites** en navigeer naar de Geometrixx **Werkbalk** en open het.
+1. Klik **Websites** en navigeer aan de Geometrixx **Toolbar** en open het.
 
-   ![Voorbeeld van abonnement](assets/chlimage_1-121.png)
+   ![ steekproef van de Abonnement ](assets/chlimage_1-121.png)
 
-1. In de nieuwsbrief Geometrixx **Aanmelden** veld, voer uw e-mailadres in en klik op **Aanmelden**. U bent nu geabonneerd op de nieuwsbrief.
+1. Op het Bulletin van de Geometrixx **Teken omhoog** gebied, ga uw e-mailadres in en klik **Teken omhoog**. U bent nu geabonneerd op de nieuwsbrief.

@@ -19,13 +19,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee gebruikers met de inhoud kunnen werken. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps.
 
 >[!NOTE]
 >
->Voordat u met Adobe PhoneGap aan de slag gaat, moet u eerst uw omgeving instellen en aan de slag gaan met de [AEM Mobile-toepassingsdashboard](/help/mobile/phonegap-authoring-apps.md).
+>Alvorens u met AEM Mobile begint gebruikend Adobe PhoneGap, zorg ervoor u opstelling uw milieu en begonnen wordt met het [ dashboard van de Toepassing van AEM Mobile ](/help/mobile/phonegap-authoring-apps.md).
 
 De volgende bronnen helpen u aan de slag te gaan met AEM Mobile via Adobe PhoneGap:
 
@@ -35,13 +35,13 @@ De volgende bronnen helpen u aan de slag te gaan met AEM Mobile via Adobe PhoneG
 
 * [AEM Mobile Content Services: An Overview](/help/mobile/develop-content-as-a-service.md)
 
-   * Om de Diensten van de Inhoud en Modellen van Gegevens toe te laten, zie [Inhoudsservices beheren](/help/mobile/developing-content-services.md)
-   * Ga voor meer informatie over het maken van modellen naar [Modellen ontwikkelen](/help/mobile/administer-mobile-apps.md)
-   * Ga voor meer informatie over renderen en aflevering naar [Renderen en leveren van Content Services](/help/mobile/rendering-and-delivery.md)
+   * Om de Diensten van de Inhoud en Modellen van Gegevens toe te laten, zie [ het Beheer de Diensten van de Inhoud ](/help/mobile/developing-content-services.md)
+   * Om over het Creëren van Modellen te leren, zie [ het Ontwikkelen Modellen ](/help/mobile/administer-mobile-apps.md)
+   * Om over het Teruggeven en Levering te leren, zie [ Renderen en Levering van de Diensten van de Inhoud ](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Ga voor informatie over het uitvoeren van uw AEM mobiele toepassingen op elk iOS- of Android-mobiel apparaat naar [Mobile QuickStart met AEM Verify-toepassing](/help/mobile/phonegap-mobile-quickstart.md).
+>Om uw AEM mobiele toepassingen op om het even welk iOS of Android mobiel apparaat in werking te stellen, zie [ Mobiele QuickStart gebruikend AEM verifieer App ](/help/mobile/phonegap-mobile-quickstart.md).
 
 ## Aan de slag {#getting-ahead}
 

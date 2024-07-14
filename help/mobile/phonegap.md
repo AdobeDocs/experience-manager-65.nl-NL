@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM platform vormt.
 
@@ -31,7 +31,7 @@ Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolco
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}
 
-An ***AEM auteur* (of *Marketer*)**kan de out-of-the-box malplaatjes en de componenten gebruiken om pagina&#39;s toe te voegen en uit te geven. U kunt componenten slepen en neerzetten, en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toevoegen.
+Een ***AEM Auteur* (of *Markering*) **kan uit-van-de-doos malplaatjes en componenten gebruiken om pagina&#39;s toe te voegen en uit te geven. U kunt componenten slepen en neerzetten, en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toevoegen.
 
 Zie de volgende bronnen:
 
@@ -43,7 +43,7 @@ Zie de volgende bronnen:
 * [Een AEM Mobile-app maken met een wizard maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) aan de slag.
+Om over **Diensten van de Inhoud** te leren, zie [ het Overzicht van de Diensten van de Inhoud ](/help/mobile/develop-content-as-a-service.md) om begonnen te worden.
 
 ## Aanvullende bronnen {#additional-resources}
 

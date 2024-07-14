@@ -18,8 +18,8 @@ ht-degree: 0%
 
 Als u ervaart wat u denkt is onjuist gedrag of een fout in MSM, alvorens en het gedetailleerde oplossen van problemen zeker te zijn:
 
-* Controleer de [Veelgestelde vragen over MSM](#faq) aangezien uw problemen of vragen daar reeds kunnen worden opgelost.
-* Controleer de [MSM Best practices-artikel](msm-best-practices.md) aangezien daar diverse tips worden gegeven , samen met verduidelijkingen van een aantal misvattingen .
+* Controleer [ Veelgestelde vragen MSM ](#faq) aangezien uw problemen of vragen daar kunnen reeds worden gericht.
+* Controleer het [ MSM beste praktijkartikel ](msm-best-practices.md) aangezien verscheidene uiteinden daar samen met verduidelijkingen van sommige misconcepties worden aangeboden.
 
 ## Geavanceerde informatie over uw blauwdruk en status van Live Copy zoeken {#advanced-info}
 
@@ -36,24 +36,24 @@ MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen wo
    * bijvoorbeeld:
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
-Deze servers genereren FOUTOPSPORING-logberichten via de `com.day.cq.wcm.msm` registreerapparaat dat ook nuttig kan zijn.
+Deze servers genereren FOUTOPSPORING-logberichten via het logbestand `com.day.cq.wcm.msm` dat ook nuttig kan zijn.
 
 ## MSM-specifieke informatie in de gegevensopslagruimte controleren {#checking-repo}
 
 De vroegere servlets teruggekeerde gegevens verwerkte die informatie op de MSM-specifieke knopen en de mixins wordt gebaseerd. De informatie wordt op de volgende manier in de opslagplaats opgeslagen.
 
 * `cq:LiveSync` mixintype
-   * Deze is ingesteld op `jcr:content` knooppunten en definiëren van Live Copy-basispagina&#39;s.
-   * Deze pagina&#39;s hebben een `cq:LiveSyncConfig` onderliggende node van type `cq:LiveCopy` die elementaire en verplichte informatie over de Live Copy bevatten door middel van de volgende eigenschappen:
-      * `cq:master` verwijst naar de pagina met de blauwdruk van de Live kopie.
-      * `cq:rolloutConfigs` Hiermee worden actieve rollout-configuraties aangegeven die zijn toegepast op Live Copy.
-      * `cq:isDeep` is true als de onderliggende pagina&#39;s van deze hoofdpagina van Live Copy zijn opgenomen in de Live Copy.
+   * Deze wordt ingesteld op `jcr:content` -knooppunten en definieert de basis van Live Copy-pagina&#39;s.
+   * Deze pagina&#39;s hebben een `cq:LiveSyncConfig` onderliggend knooppunt van het type `cq:LiveCopy` dat standaard- en verplichte informatie over Live Copy bevat via de volgende eigenschappen:
+      * `cq:master` verwijst naar de pagina met vervagingen van de Live kopie.
+      * `cq:rolloutConfigs` geeft de actieve rollout-configuraties aan die op Live Copy zijn toegepast.
+      * `cq:isDeep` is true als de onderliggende pagina&#39;s van deze hoofdpagina van Live Copy zijn opgenomen in de live kopie.
 * `cq:LiveRelationship` mixintype
-   * Op elke Live Copy-pagina staat een dergelijk mixtype `jcr:content` knooppunt.
+   * Elke Live Copy-pagina heeft een dergelijk mixintype op het `jcr:content` -knooppunt.
    * Als dit niet het geval is, is de pagina op een bepaald punt losgekoppeld of handmatig gemaakt via de ontwerpinterface buiten een actie Live Copy (maken of uitrollen).
 * `cq:LiveSyncCancelled` mixintype
    * Toegevoegd aan `jcr:content` knooppunten van Live Copy-pagina&#39;s die zijn opgeschort.
-   * Als de suspensie ook voor onderliggende pagina&#39;s effectief is, moet u `cq:isCancelledForChildren` eigenschap wordt ingesteld op true op hetzelfde knooppunt.
+   * Als de opschorting ook van kracht is voor onderliggende pagina&#39;s, wordt een eigenschap `cq:isCancelledForChildren` ingesteld op true op hetzelfde knooppunt.
 
 De informatie aanwezig in deze eigenschappen zou in UI moeten worden weerspiegeld, nochtans wanneer het oplossen van problemen het kan nuttig zijn om gedrag MSM direct in de bewaarplaats waar te nemen aangezien de acties MSM voorkomen.
 
@@ -69,11 +69,11 @@ Hier volgen enkele veelgestelde vragen over MSM en Live Copy.
 
 De acties van de synchronisatie MSM zijn hoogst configureerbaar. Welke eigenschappen of componenten tijdens rollouts direct worden gewijzigd hangt van de eigenschappen van die configuraties af.
 
-Zie [dit artikel](msm-best-practices.md) voor meer informatie over dit onderwerp.
+Zie [ dit artikel ](msm-best-practices.md) voor meer informatie over dit onderwerp.
 
 ### Hoe kan ik rollout toestemmingen voor een groep auteurs verwijderen? {#remove-rollout-permissions}
 
-Er is **rollout** bevoegdheden die kunnen worden ingesteld of verwijderd voor AEM hoofden (gebruikers of groepen).
+Er is geen **voorrecht van 0} rollout {dat voor AEM hoofden (gebruikers of groepen) kan worden geplaatst of worden verwijderd.**
 
 Als alternatief kunt u:
 
@@ -84,12 +84,12 @@ Als alternatief kunt u:
 
 Als een pagina met een blauwdruk wordt uitgevouwen, wordt de pagina Live kopie bijgewerkt of wordt een nieuwe pagina Live kopie gemaakt als deze nog niet bestaat. Bijvoorbeeld wanneer het voor de eerste keer wordt uitgerold of de Live Copy-pagina handmatig is verwijderd.
 
-In dit laatste geval echter, indien een pagina zonder `cq:LiveRelationship` Er bestaat al een eigenschap met dezelfde naam. De naam van deze pagina wordt gewijzigd voordat de pagina Live kopie wordt gemaakt.
+In dit laatste geval echter, als er een pagina zonder de eigenschap `cq:LiveRelationship` met dezelfde naam bestaat, wordt de naam van deze pagina gewijzigd voordat de pagina Live kopie wordt gemaakt.
 
 Standaard wordt bij de rollout een gekoppelde Live Copy-pagina verwacht, waarop de updates van de blauwdrukken worden uitgevoerd. Of er wordt helemaal geen pagina verwacht wanneer er een Live Copy-pagina wordt gemaakt.
 
 Als er een &quot;zelfstandige&quot; pagina wordt gevonden, kiest MSM ervoor de naam van deze pagina te wijzigen en een aparte, gekoppelde Live Copy-pagina te maken.
 
-Een dergelijke zelfstandige pagina in een substructuur van Actieve kopie is doorgaans het resultaat van een **Loskoppelen** of de voormalige pagina Live Copy is handmatig verwijderd door een auteur en vervolgens opnieuw gemaakt met dezelfde naam.
+Zulk een standalone pagina in Levende subtree van het Exemplaar is typisch het resultaat van a **ontkoppel** verrichting, of de vroegere Levende pagina van het Exemplaar werd manueel geschrapt door een auteur en toen opnieuw gecreeerd met de zelfde naam.
 
-Als u dit wilt voorkomen, gebruikt u de live kopie **Onderbreken** in plaats van **Loskoppelen**. Meer informatie over de **Loskoppelen** handeling is te vinden in [dit artikel.](msm-livecopy.md)
+Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [ dit artikel worden gevonden.](msm-livecopy.md)

@@ -20,33 +20,33 @@ ht-degree: 0%
 
 U kunt bijlagen uploaden, een voorbeeld bekijken en verzenden met HTML5-formulieren. Standaard is de ondersteuning voor bijlagen uitgeschakeld. De ondersteuning voor bijlagen inschakelen:
 
-1. Een [aangepast profiel](/help/forms/using/custom-profile.md) met een `mfAttachmentOptions` multiselect, tekenreekseigenschap. Elke tekenreeks in de `mfAttachmentOptions` eigenschap moet een `property=value` indeling voor het configureren van opties voor de bestandsbijlage-widget. De `property` en `value` kan een van de volgende waarden hebben:
+1. Creeer a [ douaneprofiel ](/help/forms/using/custom-profile.md) met a `mfAttachmentOptions` multiselect koordbezit. Elke tekenreeks in de eigenschap `mfAttachmentOptions` moet een `property=value` -indeling hebben om opties voor de bestandsbijlage-widget te configureren. De waarden `property` en `value` kunnen een van de volgende waarden hebben:
 
    | Eigenschap | Waarde |
    |--- |---|
    | multiSelect | true of false (standaard true) |
    | fileSizeLimit | Aantal in MBs (2 MBs door gebrek). Bijvoorbeeld 5. |
    | buttonText | Knoptekst voor pop-upvenster (&quot;Bijvoegen&quot; standaard) |
-   | accepteren | door komma&#39;s gescheiden lijst met bestandstypen die moeten worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, afbeelding/&amp;ast;, tekst/&amp;ast; standaard .pdf&quot;) |
+   | accepteren | door komma&#39;s gescheiden lijst met bestandstypen die moeten worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standaard) |
 
    Bijvoorbeeld:
 
-   ![configureren, opties](assets/mfAttachmentOptions.png)
+   ![ vormt opties ](assets/mfAttachmentOptions.png)
 
-   U kunt desgewenst ook meer aangepaste opties voor de `mfAttachmentOptions` eigenschap.
+   Desgewenst kunt u ook meer aangepaste opties voor de eigenschap `mfAttachmentOptions` opgeven.
 
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9 kunnen gebruikers bestanden bijvoegen die groter zijn dan de opgegeven limiet. Het is een bekend probleem.
 
-1. Gebruik de [metagegevenseditor](/help/forms/using/manage-form-metadata.md) om het aangepaste profiel te selecteren dat u hierboven hebt gemaakt voor HTML 5-formulieren.
+1. Gebruik de [ meta-gegevensredacteur ](/help/forms/using/manage-form-metadata.md) om het douaneprofiel te selecteren dat u hierboven voor HTML 5 vormen hebt gecreeerd.
 1. U geeft de formuliersjabloon weer met een aangepast profiel en het pictogram Bijlagen wordt weergegeven op de werkbalk Formulieren.
 
    >[!NOTE]
    >
-   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Voor meer informatie over de **Opslaan als concept** profiel, zie [HTML5-formulieren opslaan als concept](/help/forms/using/saving-html5-form-draft.md).
+   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Voor meer informatie over **sparen als Ontwerp** profiel, zie [ het Opslaan van vormen HTML5 als ontwerp ](/help/forms/using/saving-html5-form-draft.md).
 
-1. Klik op het pictogram voor bijlagen en er verschijnt een dialoogvenster voor het selecteren van bijlagen. Blader en selecteer de bijlage en klik op **Koppelen**.
+1. Klik op het pictogram voor bijlagen en er verschijnt een dialoogvenster voor het selecteren van bijlagen. Blader en selecteer de gehechtheid en klik **Band**.
 
    >[!NOTE]
    >
@@ -58,10 +58,10 @@ U kunt bijlagen uploaden, een voorbeeld bekijken en verzenden met HTML5-formulie
 
 ## Indeling voor het verzenden van bijlagen {#attachment-submission-format}
 
-Als bijlagen zijn ingeschakeld, verzendt HTML5-formulier meerdelige gegevens. De uit meerdere delen bestaande indieningsgegevens bestaan uit twee delen **dataXml** en **bijlagen**.
+Als bijlagen zijn ingeschakeld, verzendt HTML5-formulier meerdelige gegevens. De multipart voorleggingsgegevens hebben twee delen **dataXml** en **gehechtheid**.
 
 >[!NOTE]
 >
->Voor achterwaartse compatibiliteit, als `mfAllowAttachments` is uitgeschakeld, worden de meerdelige gegevens niet verzonden door de HTML5-formulieren. Het verzendt eenvoudige gegevens-xml in **application/xml** gebruiken.
+>Als de optie `mfAllowAttachments` is uitgeschakeld, verzendt de HTML5-formulieren de meerdelige gegevens niet voor achterwaartse compatibiliteit. Het verzendt eenvoudige gegevens xml in **toepassing/xml** formaat.
 
-Als de markering mfAllowAttachments is ingeschakeld, [service-proxy verzenden](/help/forms/using/service-proxy.md) Hiermee worden ook meerdelige gegevens gepost met dataXml en bijlagen.
+Als de vlag mfAllowAttachments wordt aangezet, [ voorlegt de dienst van de de dienstvolmacht ](/help/forms/using/service-proxy.md) ook posten multipart gegevens met dataXml en gehechtheid.

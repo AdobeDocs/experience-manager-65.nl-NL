@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Bindingen in Java-code voorkomen {#avoid-sling-bindings-in-java-code}
 
-Het verkopen Bindingen zijn een ongepaste manier om tot de dienst in 90% van gevallen toegang te krijgen. Gebruik in plaats daarvan *@Reference* of *@Injecteren* annotaties.
+Het verkopen Bindingen zijn een ongepaste manier om tot de dienst in 90% van gevallen toegang te krijgen. Gebruik in plaats daarvan *@Reference* of *@Inject* -annotaties.
 
 ## Geen thread.interrupt in Java-code {#avoid-thread-interrupt-in-java-code}
 
-*Thread.interrupt* is gevaarlijk omdat het dossiers, met inbegrip van Lucene- dossiers en blijvende geheim voorgeheugendossiers, wanneer geroepen op het verkeerde ogenblik kan sluiten.
+*Thread.interrupt* is gevaarlijk omdat het dossiers, met inbegrip van de dossiers van Lucene en blijvende geheim voorgeheugendossiers kan sluiten, wanneer geroepen op de verkeerde tijd.
 
 ## Gebruik geen Java-synchronisatie met ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 

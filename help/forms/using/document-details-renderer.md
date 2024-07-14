@@ -30,19 +30,19 @@ In dit document wordt uitgelegd hoe deze renderers werken vanuit het perspectief
 
 ## PDF forms {#pdf-forms}
 
-PDF forms worden gerenderd door `PdfTaskForm View`.
+PDF forms worden gerenderd door `PdfTaskForm View` .
 
-Wanneer een XDP-formulier wordt weergegeven als PDF, wordt een `FormBridge` JavaScript™ wordt toegevoegd door de service FormsAugmenter. Met dit JavaScript™ (in het PDF-formulier) kunt u handelingen uitvoeren zoals het verzenden, opslaan of offline maken van formulieren.
+Wanneer een XDP-formulier wordt weergegeven als PDF, wordt een `FormBridge` JavaScript™ toegevoegd door de FormsAugmenter-service. Met deze JavaScript™ (in het PDF-formulier) kunt u handelingen uitvoeren zoals het verzenden, opslaan of offline maken van formulieren.
 
-In de AEM Forms-werkruimte communiceert de PDFTaskForm-weergave met de `FormBridge`JavaScript, via een tussenliggende HTML die aanwezig is op `/lc/libs/ws/libs/ws/pdf.html`. De stroom is:
+In de werkruimte van AEM Forms, communiceert de mening PDFTaskForm met `FormBridge` JavaScript, als intermediaire HTML aanwezig bij `/lc/libs/ws/libs/ws/pdf.html`. De stroom is:
 
-**PDFTaskForm, weergave - pdf.html**
+**PDFTaskForm mening - pdf.html**
 
 Communiceert met `window.postMessage` / `window.attachEvent('message')`
 
 Dit is de standaardmanier van communicatie tussen een bovenliggend frame en een iframe. De bestaande gebeurtenislisteners van eerder geopende PDF forms worden verwijderd voordat een nieuwe wordt toegevoegd. Bij deze bewerking wordt ook gekeken naar het schakelen tussen het tabblad Formulier en het tabblad Historie in de weergave met taakdetails.
 
-**pdf.html - `FormBridge`JavaScript in de gerenderde PDF**
+**pdf.html - `FormBridge` JavaScript binnen de teruggegeven PDF**
 
 Communiceert met `pdfObject.postMessage` / `pdfObject.messageHandler`
 
@@ -56,9 +56,9 @@ Deze methode is de standaardmanier van communicatie met een PDFJavaScript van ee
 
 Nieuwe HTML-formulieren worden gegenereerd door de NewHTMLTaskForm View.
 
-Als een XDP-formulier wordt weergegeven als HTML met het pakket voor mobiele formulieren dat wordt geïmplementeerd op CRX, wordt ook extra `FormBridge`JavaScript naar het formulier, dat verschillende methoden voor het opslaan en verzenden van formuliergegevens beschikbaar maakt.
+Wanneer een XDP Vorm als HTML gebruikend het mobiele vormenpakket wordt teruggegeven dat op CRX wordt opgesteld, voegt het ook extra `FormBridge` JavaScript aan de vorm toe, die verschillende methodes voor het opslaan en het voorleggen van vormgegevens blootstelt.
 
-Dit JavaScript verschilt van het JavaScript waarnaar in de bovenstaande PDF forms wordt verwezen, maar heeft een soortgelijk doel.
+Deze JavaScript verschilt van de in de bovenstaande PDF forms genoemde, maar heeft een soortgelijk doel.
 
 >[!NOTE]
 >
@@ -68,30 +68,30 @@ Dit JavaScript verschilt van het JavaScript waarnaar in de bovenstaande PDF form
 
 Flex Forms wordt gerenderd door SWFTaskForm en de hulplijnen worden gerenderd door respectievelijk HTMLTaskForm Views.
 
-In de AEM Forms-werkruimte communiceren deze weergaven met de werkelijke SWF die het Flex®-formulier/de-handleiding vormt. Hierbij wordt gebruikgemaakt van een intermediaire SWF die aanwezig is op `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+In de AEM Forms-werkruimte communiceren deze weergaven met de werkelijke SWF die het Flex®-formulier/de-hulplijn vormt via een tussenliggende SWF die zich bevindt op `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
-De communicatie gebeurt met `swfObject.postMessage` / `window.flexMessageHandler`.
+De communicatie vindt plaats met `swfObject.postMessage` / `window.flexMessageHandler` .
 
-Dit protocol wordt gedefinieerd door de `WsNextAdapter.swf`. De bestaande `flexMessageHandlers`in het vensterobject worden van eerder geopende SWF-formulieren verwijderd voordat een nieuw formulier wordt toegevoegd. De logica houdt ook rekening met het schakelen tussen formuliertabblad en historietabblad in de weergave met taakdetails. De `WsNextAdapter.swf` wordt gebruikt om verschillende formulierhandelingen uit te voeren, zoals opslaan of verzenden.
+Dit protocol wordt gedefinieerd door de `WsNextAdapter.swf` . Het bestaande `flexMessageHandlers` op venstervoorwerp, van eerder geopende vormen van SWF wordt verwijderd alvorens nieuwe toe te voegen. De logica houdt ook rekening met het schakelen tussen formuliertabblad en historietabblad in de weergave met taakdetails. `WsNextAdapter.swf` wordt gebruikt om verschillende formulierhandelingen uit te voeren, zoals opslaan of verzenden.
 
 >[!NOTE]
 >
->Het wordt niet aanbevolen om `WSNextAdapter.swf` of de inhoud van de weergave SwfTaskForm / HtmlTaskForm.
+>Het wordt afgeraden `WSNextAdapter.swf` of de inhoud van de weergave SWFTaskForm / HTMLTaskForm te wijzigen.
 
 ## Toepassingen van derden (bijvoorbeeld Correspondence Management) {#third-party-applications-for-example-correspondence-management}
 
 Toepassingen van derden worden gerenderd met de ExtAppTaskForm-weergave.
 
-**Communicatie van externe toepassingen naar de AEM Forms-werkruimte**
+**de werkruimtetransformatie van de derdetoepassing aan AEM Forms**
 
 AEM Forms-werkruimte luistert naar `window.global.postMessage([Message],[Payload])`
 
-[Bericht] kan een tekenreeks zijn die is opgegeven als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in de `runtimeMap`. Toepassingen van derden moeten deze interface gebruiken om de AEM Forms-werkruimte naar wens op de hoogte te stellen. Het gebruik van deze interface is verplicht, omdat de AEM Forms-werkruimte moet weten dat wanneer de taak wordt verzonden, zodat deze het taakvenster kan opschonen.
+[ Bericht ] kan een koord zijn dat als `SubmitMessage` wordt gespecificeerd| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage` in `runtimeMap`. Toepassingen van derden moeten deze interface gebruiken om de AEM Forms-werkruimte naar wens op de hoogte te stellen. Het gebruik van deze interface is verplicht, omdat de AEM Forms-werkruimte moet weten dat wanneer de taak wordt verzonden, zodat deze het taakvenster kan opschonen.
 
-**AEM Forms-werkruimte voor communicatie met toepassingen van derden**
+**de werkruimte van AEM Forms aan mededeling van de derdetoepassing**
 
-Als de knoppen voor directe actie van de AEM Forms-werkruimte zichtbaar zijn, wordt dit aangeroepen `window.[External-App-Name].getMessage([Action])`, waarbij `[Action]` wordt gelezen uit de `routeActionMap`. De externe toepassing moet luisteren naar deze interface en vervolgens de AEM Forms-werkruimte via het dialoogvenster `postMessage ()` API.
+Als de knoppen voor directe acties van de AEM Forms-werkruimte zichtbaar zijn, wordt `window.[External-App-Name].getMessage([Action])` aangeroepen, waarbij `[Action]` wordt gelezen van de `routeActionMap` . De externe toepassing moet luisteren naar deze interface en vervolgens de AEM Forms-werkruimte via de `postMessage ()` API op de hoogte stellen.
 
-Een Flex-toepassing kan bijvoorbeeld `ExternalInterface.addCallback('getMessage', listener)` deze mededeling te ondersteunen. Als de externe toepassing het verzenden van formulieren via eigen knoppen wil verwerken, moet u `hideDirectActions = true() in the runtimeMap` en u kunt deze listener overslaan. Deze constructie is dus optioneel.
+Een Flex-toepassing kan bijvoorbeeld `ExternalInterface.addCallback('getMessage', listener)` definiëren ter ondersteuning van deze communicatie. Als de toepassing van derden het verzenden van formulieren via eigen knoppen wil verwerken, moet u `hideDirectActions = true() in the runtimeMap` opgeven en kunt u deze listener overslaan. Deze constructie is dus optioneel.
 
-Meer informatie over de integratie van toepassingen van derden met betrekking tot Correspondence Management vindt u op [Correspondentenbeheer integreren in de AEM Forms-werkruimte](/help/forms/using/integrating-correspondence-management-html-workspace.md).
+U kunt meer over de integratie van de derdetoepassing betreffende het Beheer van de Correspondentie bij [ het Integreren van het Beheer van de Correspondentie in de werkruimte van AEM Forms ](/help/forms/using/integrating-correspondence-management-html-workspace.md) lezen.

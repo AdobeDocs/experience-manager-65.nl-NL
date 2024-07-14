@@ -18,19 +18,19 @@ ht-degree: 0%
 
 # AEM uitvoeren in productielocatie{#running-aem-in-production-ready-mode}
 
-Met AEM 6.1 introduceert de Adobe de nieuwe `"nosamplecontent"` de uitvoeringsmodus, die tot doel heeft de stappen te automatiseren die nodig zijn om een AEM voor te bereiden voor de implementatie in een productieomgeving.
+Met AEM 6.1 introduceert Adobe de nieuwe `"nosamplecontent"` -uitvoeringsmodus, die de stappen automatiseren die nodig zijn om een AEM-instantie voor te bereiden voor implementatie in een productieomgeving.
 
 De nieuwe looppaswijze zal niet alleen automatisch de instantie vormen om aan de veiligheid beste praktijken te houden die in veiligheidscontrolelijst worden beschreven, maar zal ook alle toepassingen en configuraties van de steekproef Geometrixx in het proces verwijderen.
 
 >[!NOTE]
 >
->Omdat de AEM productielocatie gereed is om praktische redenen alleen de meeste taken bestrijkt die nodig zijn om een instantie te beveiligen, wordt u ten zeerste aangeraden de [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md) voordat u met uw productieomgeving gaat leven.
+>Aangezien, wegens praktische redenen, de AEM Klaar Wijze van de Productie slechts de meeste taken nodig zal behandelen om een geval te beveiligen, adviseert men hoogst u [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) alvorens met uw productiemilieu te leven.
 >
->Ook, merk op dat het runnen van AEM in Productie Klaar Wijze effectief toegang tot CRXDE Lite zal onbruikbaar maken. Als u het voor het zuiveren doeleinden nodig hebt, zie [CRXDE Lite inschakelen in AEM](/help/sites-administering/enabling-crxde-lite.md).
+>Ook, merk op dat het runnen van AEM in Productie Klaar Wijze effectief toegang tot CRXDE Lite zal onbruikbaar maken. Als u het voor het zuiveren doeleinden nodig hebt, zie [ toelatend CRXDE Lite in AEM ](/help/sites-administering/enabling-crxde-lite.md).
 
-![chlimage_1-83](assets/chlimage_1-83a.png)
+![ chlimage_1-83 ](assets/chlimage_1-83a.png)
 
-Als u AEM wilt uitvoeren in de productielocmodus, hoeft u alleen maar de knop `nosamplecontent` via de `-r` looppas wijzeschakelaar aan uw bestaande startargumenten:
+Als u AEM wilt uitvoeren in de modus gereed voor productie, hoeft u alleen maar de `nosamplecontent` via de `-r` -schakelaar voor de uitvoeringsmodus toe te voegen aan uw bestaande opstartargumenten:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -46,27 +46,27 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 Meer specifiek, worden de volgende configuratieveranderingen uitgevoerd wanneer AEM op productie klaar wijze in werking wordt gesteld:
 
-1. De **CRXDE-ondersteuningsbundel** ( `com.adobe.granite.crxde-support`) is standaard uitgeschakeld in de modus voor productie-klaar. Het kan op elk ogenblik van de Adobe openbare Maven bewaarplaats worden geïnstalleerd. Versie 3.0.0 is vereist voor AEM 6.1.
+1. De **bundel van de Steun CRXDE** ( `com.adobe.granite.crxde-support`) wordt onbruikbaar gemaakt door gebrek op productie klaar wijze. Het kan op elk ogenblik van de Adobe openbare Maven bewaarplaats worden geïnstalleerd. Versie 3.0.0 is vereist voor AEM 6.1.
 
-1. De **Apache Sling Simple WebDAV Access to repositories** ( `org.apache.sling.jcr.webdav`) is alleen beschikbaar op **auteur** instanties.
+1. De **Apache die Eenvoudige Toegang WebDAV van WebDAV tot bewaarplaatsen** ( `org.apache.sling.jcr.webdav`) bundel zal slechts op **auteur** instanties beschikbaar zijn.
 
 1. Nieuwe gebruikers moeten het wachtwoord wijzigen bij de eerste aanmelding. Dit is niet van toepassing op de beheerder.
-1. **Foutopsporingsinfo genereren** is uitgeschakeld voor de **Apache Sling JavaScript-handler**.
+1. **produceert zuivert info** wordt onbruikbaar gemaakt voor **Apache Sling JavaScript Handler**.
 
-1. **Toegewezen inhoud** en **Foutopsporingsinfo genereren** zijn uitgeschakeld voor de **Apache Sling JSP Script Handler**.
+1. **In kaart gebrachte inhoud** en **produceren zuivert info** wordt onbruikbaar gemaakt voor **Apache die de Behandelaar van JSP Manuscript** schrapt.
 
-1. De **Day CQ WCM-filter** is ingesteld op `edit` op **auteur** en `disabled` op **publish** instanties.
+1. De **filter van de Dag CQ WCM** wordt geplaatst aan `edit` op **auteur** en `disabled` op **publiceert** instanties.
 
-1. De **Adobe Granite HTML Library Manager** is geconfigureerd met de volgende instellingen:
+1. De **Manager van de Bibliotheek van de HTML van de Adobe Granite** wordt gevormd met de volgende montages:
 
-   1. **Miniatuur:** `enabled`
-   1. **Foutopsporing:** `disabled`
+   1. **Minify:** `enabled`
+   1. **zuivert:** `disabled`
    1. **Gzip:** `enabled`
    1. **Timing:** `disabled`
 
-1. De **Apache Sling GET Servlet** is standaard ingesteld op ondersteuning van veilige configuraties, zoals hieronder wordt getoond:
+1. **Apache Sling GET Servlet** wordt geplaatst om veilige configuraties door gebrek te steunen, als volgt:
 
-| **Configuratie** | **Auteur** | **Publiceren** |
+| **Configuratie** | **Auteur** | **Publish** |
 |---|---|---|
 | TXT-uitvoering | uitgeschakeld | uitgeschakeld |
 | HTML-uitvoering | uitgeschakeld | uitgeschakeld |

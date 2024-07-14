@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Herstructurering van Dynamic Media-opslagplaats in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) op de pagina, moeten klanten die een upgrade uitvoeren naar Experience Manager 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor Dynamic Media. Sommige veranderingen vereisen het werk inspanning tijdens het Experience Manager 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op de ouder [ Herstructurering van de Bewaarplaats in Adobe Experience Manager 6.5 ](/help/sites-deploying/repository-restructuring.md) pagina, zouden de klanten die aan Experience Manager 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatveranderingen die Dynamic Media beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het Experience Manager 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
-**Voor toekomstige upgrade**
+**vóór toekomstige verbetering**
 
 * [Aangepaste configuraties voor adaptieve videocodering](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Dynamic Media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
@@ -47,7 +47,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>NVT<br /> </td>
+   <td>N.v.t. <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -97,7 +97,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>NVT<br /> </td>
+   <td>N.v.t. <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -116,11 +116,11 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>1. Publiceer alle video's van YouTube ongedaan<br /> 2. De YouTube-configuratie maken met de nieuwe TouchUI (van <code>/conf</code>) inclusief het kopiëren van alle kanalen van de oude locatie<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
+   <td><p>1. Unpublish alle video's van YouTube <br /> 2. Creeer de Configuratie van YouTube gebruikend nieuwe TouchUI (van <code>/conf</code>) met inbegrip van het kopiëren van alle Kanalen van de oude plaats <br /> 3. Publish alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>NVT<br /> </td>
+   <td>N.v.t. <br /> </td>
   </tr>
  </tbody>
 </table>

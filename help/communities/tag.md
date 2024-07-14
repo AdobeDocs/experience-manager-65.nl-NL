@@ -22,13 +22,13 @@ Wanneer AEM Communities-componenten zijn geconfigureerd met codering ingeschakel
 
 De onderliggende infrastructuur voor tags die worden toegepast in de publicatieomgeving, is gelijk aan de infrastructuur voor tags die worden toegepast op inhoud in de ontwerpomgeving, zoals pagina&#39;s en elementen:
 
-* Zie [Tags beheren](../../help/sites-administering/tags.md) en [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) (UGC) voor informatie over het maken en beheren van tags.
+* Zie [ het Beheer Markeringen ](../../help/sites-administering/tags.md) en [ het Tags toevoegen van Gebruiker Gegenereerde Inhoud ](tag-ugc.md) (UGC) voor informatie over het creëren van en het beheren van markeringen.
 
-* Zie [Tags voor ontwikkelaars](../../help/sites-developing/tags.md) voor informatie over de [coderingskader](../../help/sites-developing/framework.md) en tags opnemen en uitbreiden in [aangepaste toepassingen](../../help/sites-developing/building.md).
+* Zie [ Tags voor Ontwikkelaars ](../../help/sites-developing/tags.md) voor informatie over het [ etiketterende kader ](../../help/sites-developing/framework.md) en het omvatten van en het uitbreiden van markeringen in [ douanetoepassingen ](../../help/sites-developing/building.md).
 
-* Zie [Sociale tagcloud gebruiken](tagcloud.md) voor informatie over het toevoegen van een `social tag cloud` op een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
+* Zie [ Gebruikend de Wolk van de Sociale Markering ](tagcloud.md) voor informatie voor auteurs op hoe te om een `social tag cloud` component aan een pagina toe te voegen om de markeringen te benadrukken die op UGC in het publicatiemilieu worden toegepast.
 
-Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-console.md#tagging) of een van de volgende kenmerken:
+Het etiketteren van UGC kan worden toegelaten wanneer het vormen van a [ communautaire plaats ](sites-console.md#tagging) of één van de volgende eigenschappen:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -43,28 +43,28 @@ Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-cons
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
    <td>Nee</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong> clientllibs </strong></a></td>
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td> /libs/social/commons/components/hbs/tagcloud/clientlibs/tagcloud.css</td>
   </tr>
   <tr>
    <td><strong>eigenschappen</strong></td>
-   <td>Zie <a href="tagcloud.md">Sociale tagcloud gebruiken</a></td>
+   <td>Zie <a href="tagcloud.md"> Gebruikend de Wolk van de Sociale Markering </a></td>
   </tr>
  </tbody>
 </table>
@@ -73,14 +73,14 @@ Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-cons
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [API voor sociale tags](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [ de Cloud API van de Sociale Markering ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Sociaal tagbeheer](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [ Sociale Manager van de Markering ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ## Zoeken met tags {#tag-searching}
 
-Vanaf [functiepakket 1](deploy-communities.md#latestfeaturepack) (FP1), wordt het zoeken van tags uitgevoerd gebruikend [titels labelen](../../help/sites-developing/framework.md#tag-characteristics).
+Vanaf [ eigenschappak 1 ](deploy-communities.md#latestfeaturepack) (FP1), wordt het zoeken van de markering uitgevoerd gebruikend [ markeringstitels ](../../help/sites-developing/framework.md#tag-characteristics).
 
-Vóór FP1 werd het onderzoek uitgevoerd gebruikend [tag id](../../help/sites-developing/framework.md#tagid).
+Vóór FP1, werd het onderzoek uitgevoerd gebruikend [ markeringsids ](../../help/sites-developing/framework.md#tagid).

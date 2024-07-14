@@ -19,14 +19,14 @@ ht-degree: 0%
 
 ## Probleem
 
-Wanneer u AEM Forms 6.5 Service Pack 19 hebt geïnstalleerd, kan het zijn dat een poging om de Output-service, Forms-service of Document of Record (DoR)-service te gebruiken, resulteert in een `Connection to failed service` fout.
+Nadat u AEM Forms 6.5 Service Pack 19 hebt geïnstalleerd, kan een `Connection to failed service` -fout optreden als u probeert de service Uitvoer, Forms of Document of Record (DoR) te gebruiken.
 
 ## Oplossing
 
 Het probleem oplossen:
 
 1. Stop uw AEM 6.5 Forms-exemplaar.
-1. Download en installeer de [64-bits versie van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waarop AEM 6.5 Forms is geïnstalleerd.
+1. De download en installeert [ versie met 64 bits van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022 ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waar AEM 6.5 Forms geïnstalleerd is.
 1. Start de AEM Forms-server opnieuw.
 
    >[!NOTE]

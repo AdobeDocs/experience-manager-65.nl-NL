@@ -24,28 +24,28 @@ In de interface Correspondentie maken geven gebruikers van agents een voorverton
 
 Om ongeoorloofd gebruik van deze gegevens te voorkomen, kunnen organisaties een watermerk aan voorproef PDF opleggen. Het standaardwatermerk is &quot;VOORVERTONING&quot;, dat wordt weergegeven over de PDF.
 
-Als u het watermerk wilt inschakelen in voorvertoning PDF, selecteert u de optie **[!UICONTROL Apply Watermark]** Tijdens voorvertoning, optie in **[!UICONTROL Correspondence Management Configurations]** op https://&#39;[server]:[poort]&quot;/system/console/configMgr.
+Om het watermerk in voorproef PDF toe te laten, selecteer **[!UICONTROL Apply Watermark]** tijdens de optie van de Voorproef in **[!UICONTROL Correspondence Management Configurations]** bij https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
 
-![default-watermark](assets/default-watermark.png)
+![ gebrek-watermerk ](assets/default-watermark.png)
 
 U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het watermerk aan te passen:
 
 ## Het watermerk aanpassen in de voorvertoning PDF in de gebruikersinterface voor het maken van correspondentie {#customizewatermark-}
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
-1. Maak in de map Apps een map met de naam **[!UICONTROL previewwatermark]** met een pad/structuur die vergelijkbaar is met de map met het voorvertoningswatermerk in de map libs:
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan als beheerder.
+1. Maak in de map apps een map met de naam **[!UICONTROL previewwatermark]** met een pad/structuur die lijkt op de map met het voorvertoningswatermerk in de map libs:
 
-   1. Klik met de rechtermuisknop op de knop **voorvertoning watermerk** map op het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de **previewwatermark** omslag bij de volgende weg en selecteer **Knoop van de Bedekking**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/configFiles/previewwatermark
+      **Weg:** /libs/fd/cm/configFiles/previewwatermark
 
-      **Locatie bedekking:** /apps/
+      **Plaats van de Bedekking:** /apps/
 
-      **Identieke knooppunttypen:** Ingeschakeld
+      **de Types van Knoop van de Gelijke:** Gecontroleerd
 
       >[!NOTE]
       >
@@ -59,9 +59,9 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
       >    
       >
 
-   1. Klikken **OK** en klik vervolgens op **Alles opslaan**. De **[!UICONTROL previewwatermark]** wordt gemaakt in het opgegeven pad.
+   1. Klik **O.K.** en klik dan **sparen allen**. De map **[!UICONTROL previewwatermark]** wordt gemaakt in het opgegeven pad.
 
-1. Kopieer en plak het ddx-bestand vanuit de map &quot;/libs/fd/cm/configFiles/previewwatermark&quot; naar de map &quot;/apps/fd/cm/configFiles/previewwatermark&quot; en klik op **[!UICONTROL Save All]**.
+1. Kopieer en plak het ddx-bestand vanuit de map &quot;/libs/fd/cm/configFiles/previewwatermark&quot; naar de map &quot;/apps/fd/cm/configFiles/previewwatermark&quot; en klik op **[!UICONTROL Save All]** .
 1. Breng de gewenste wijzigingen aan in het ddx-bestand onder /apps/fd/cm/configFiles/previewwatermark/.
 
    ```xml
@@ -79,10 +79,10 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
    </DDX>
    ```
 
-   Zie Watermerken en achtergronden toevoegen en verwijderen in het dialoogvenster [De Verwijzing van de AssemblerDienst en DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) document.
+   Voor informatie bij het aanpassen van de watermerkverschijning, de tekst, en de groepering, zie het Toevoegen van en het verwijderen van watermerken en achtergronden in de [ Dienst van de Assembler en het 1} document van de Verwijzing DDX.](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf)
 
    >[!NOTE]
    >
    >In het ddx-bestand moeten de verwijzingen naar het resultaat en de bron ongewijzigd blijven ten opzichte van output.pdf en input.pdf. De naam van de bestands-ddx mag ook niet worden gewijzigd.
 
-1. Klikken **Alles opslaan**.
+1. Klik **sparen allen**.

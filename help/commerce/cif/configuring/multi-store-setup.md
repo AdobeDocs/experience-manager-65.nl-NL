@@ -32,13 +32,13 @@ Voer de onderstaande stappen uit om een AEM-site te verbinden en CIF Core Compon
 
 ## Configuratie {#configuration}
 
-1. Meerdere winkels configureren en weergaven opslaan volgens het patroon beschreven in [Adobe Commerce Websites, winkels en weergaven](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Vorm veelvoudige opslag &amp; opslagmeningen volgens het patroon dat in [ wordt beschreven Websites van Adobe Commerce, Opslag &amp; Weergaven ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. Controleer of de verbinding tussen AEM en Adobe Commerce werkt.
 
 3. Creeer een kindconfiguratie van CIF Cloud Service config die deze stappen volgt:
 
-   * Ga AEM naar Gereedschappen > Algemeen > [Configuratiebrowser](/help/sites-administering/configurations.md#using-configuration-browser)
+   * In AEM gaan naar Hulpmiddelen > Algemeen > [ Browser van de Configuratie ](/help/sites-administering/configurations.md#using-configuration-browser)
    * Selecteer de basisconfiguratie die u hebt gemaakt
    * Een configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
@@ -51,14 +51,14 @@ Voer de onderstaande stappen uit om een AEM-site te verbinden en CIF Core Compon
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
    * Ga naar de AEM Sites-console
-   * Navigeer naar de hoofdmap of hoofdtaal van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
+   * Navigeer aan het gebied of de taalwortel van uw plaatsstructuur, bijvoorbeeld, /content/venia/us _of_ /content/venia/us/nl voor de Venia steekproefpagina
    * Selecteer de pagina en open de pagina-eigenschappen
    * Selecteer het tabblad Geavanceerd
-   * In de `Configuration` sectie, selecteer de configuratie die u bij stap creeerde
+   * Selecteer in de sectie `Configuration` de configuratie die u bij stap hebt gemaakt
 
 ## Aanvullende bronnen
 
-* [Adobe Commerce Websites, winkels en weergaven](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
-* [AEM CIF kerncomponenten - Configuratie van meerdere winkels/sites](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Beheer van meerdere sites gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [ Websites van Adobe Commerce, Opslag &amp; Mening ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [ AEM CIF de Componenten van de Kern - de Configuratie van de Multistore/van de plaats ](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [ Gebruikend Manager Van meerdere plaatsen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](/help/sites-administering/msm.md)

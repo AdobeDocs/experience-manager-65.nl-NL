@@ -18,11 +18,11 @@ Deze handleiding helpt u de gebieden te identificeren die u voor de Experience M
 
 ## CIF invoegtoepassing
 
-CIF invoegtoepassing is beschikbaar voor AEM 6.5 via de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Het is compatibel en verstrekt de zelfde eigenschappen zoals CIF toe:voegen-aan voor as a Cloud Service Experience Manager.
+CIF toe:voegen-op is beschikbaar voor AEM 6.5 via het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Het is compatibel en verstrekt de zelfde eigenschappen zoals CIF toe:voegen-aan voor Experience Manager as a Cloud Service.
 
-Zie [Aan de slag met AEM Content en Commerce](getting-started.md).
+Zie [ Begonnen het worden met AEM Inhoud en Commerce ](getting-started.md).
 
-Om projecten te steunen die CIF opstellen, verstrekt de Adobe [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components).
+Om projecten te steunen die CIF opstellen, verstrekt de Adobe [ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components).
 
 ## Productcatalogus
 
@@ -30,7 +30,7 @@ Het importeren van productcatalogusgegevens wordt niet ondersteund door de CIF a
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [ Magento open-source ](https://business.adobe.com/products/magento/open-source.html).
 
 ## Ervaringen met AEM renderen in productcatalogus
 
@@ -38,4 +38,4 @@ Als u catalogusblauwdruk gebruikt in combinatie met klassieke CIF, moet u de wor
 
 ## Interactie voor gegevens en winkelen die niet in cache kunnen worden geplaatst
 
-De cliënt-zijverzoeken voor niet cacheable gegevens en interactie (bijvoorbeeld, toe:voegen-aan-kart, onderzoek) zouden rechtstreeks naar het handelseindpunt (of handelsoplossing of integratielaag) via CDN/Dispatcher moeten gaan. Verwijder om het even welke vraag waar AEM enkel een volmacht was.
+De cliënt-zijverzoeken voor niet cacheable gegevens en de interactie (bijvoorbeeld, toe:voegen-aan-kart, onderzoek) zouden rechtstreeks naar het handelseindpunt (of handelsoplossing of integratielaag) via CDN/Dispatcher moeten gaan. Verwijder om het even welke vraag waar AEM enkel een volmacht was.

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Als u de pagina-informatie wilt opvragen, stuurt u een verzoek naar het PageInfo-server om de metagegevens van de pagina in JSON-indeling op te halen.
 
-Het PageInfo servlet keert informatie over middelen in de bewaarplaats terug. De servlet is gebonden aan de URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` en gebruikt de `path` parameter om de bron te identificeren. De volgende voorbeeld-URL retourneert informatie over de `/content/we-retail/us/en` knooppunt:
+Het PageInfo servlet keert informatie over middelen in de bewaarplaats terug. Het servlet is gebonden aan de URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` en gebruikt de parameter `path` om de bron te identificeren. De volgende voorbeeld-URL retourneert informatie over het knooppunt `/content/we-retail/us/en` :
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -34,36 +34,36 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >* Systeemeigen mobiele toepassingen
 >* Andere kanalen en aanraakpunten buiten AEM
 >
->Zie het document [JSON-exportfunctie voor services voor inhoud](/help/sites-developing/json-exporter.md).
+>Zie het document [ JSON Exporter voor de Diensten van de Inhoud ](/help/sites-developing/json-exporter.md).
 
 ## Paginainformatieproviders {#page-information-providers}
 
-Paginacomponenten kunnen aan een of meer `com.day.cq.wcm.api.PageInfoProvider` services die metagegevens over pagina&#39;s genereren. Het PageInfo-servlet roept elke PageInfoProvider-service aan en voegt de metagegevens samen:
+Paginacomponenten kunnen worden gekoppeld aan een of meer `com.day.cq.wcm.api.PageInfoProvider` -services die metagegevens van pagina&#39;s genereren. Het PageInfo-servlet roept elke PageInfoProvider-service aan en voegt de metagegevens samen:
 
 1. De HTTP-client verzendt een aanvraag naar het PageInfo-server, die de URL van de pagina bevat.
 1. Het PageInfo servlet ontdekt welke component de pagina teruggeeft.
 1. Het PageInfo-servlet roept elke PageInfoProvider aan die aan de component is gekoppeld.
 1. De servlet aggregeert de meta-gegevens die elke PageInfoProvider terugkeert en voegt de meta-gegevens aan de reactie van HTTP in een voorwerp JSON toe.
 
-![chlimage_1-2](assets/chlimage_1-2a.png)
+![ chlimage_1-2 ](assets/chlimage_1-2a.png)
 
 >[!NOTE]
 >
->Net als PageInfoProviders gebruikt u ListInfoProviders om lijsten met informatie in JSON-indeling bij te werken. (Zie [De beheerconsole voor websites aanpassen](/help/sites-developing/customizing-siteadmin.md).)
+>Net als PageInfoProviders gebruikt u ListInfoProviders om lijsten met informatie in JSON-indeling bij te werken. (Zie [ Aanpassen van de Console van het Beleid van Websites ](/help/sites-developing/customizing-siteadmin.md).)
 
 ## Standaardpaginainformatieproviders {#default-page-information-providers}
 
-De `/libs/foundation/components/page` wordt gekoppeld aan de volgende PageInfoProvider-services:
+De component `/libs/foundation/components/page` is gekoppeld aan de volgende PageInfoProvider-services:
 
-* **Standaardpaginastatusprovider:** Informatie over de status van de pagina, zoals of deze is vergrendeld, of de pagina de lading van een actieve werkstroom is en welke werkstromen beschikbaar zijn voor de pagina.
-* **Informatieprovider voor live relaties:** Informatie over MSM (Multi Site Management), zoals of de pagina deel uitmaakt van een blauwe afdruk en of het een live kopie is.
-* **Servlet van de Taal van de inhoud:** De taal van de huidige pagina en informatie over elke taal waarin de pagina beschikbaar is.
-* **Workflow Status Provider:** Statusinformatie over de actieve werkstroom die de pagina als een lading heeft.
-* **Informatieaanbieder voor workflowpakket:** Informatie over elk werkstroompakket dat in de bewaarplaats wordt opgeslagen, en of elk pakket de huidige bron bevat.
-* **Emulatorinformatieprovider:** Informatie over de emulators van mobiele apparaten die beschikbaar zijn voor deze bron. Als de paginacomponent geen mobiele pagina&#39;s rendert, zijn er geen emulators beschikbaar.
-* **Informatieaanbieder annotaties:** Informatie over annotaties die op de pagina staan.
+* **StandaardLeverancier van de Status van de Pagina:** Informatie over de paginastatus, zoals of het gesloten is, of de pagina de lading van een actief werkschema is, en welke werkschema&#39;s beschikbaar voor de pagina zijn.
+* **Levende Leverancier van Info van de Verhouding:** Informatie betreffende het Beheer van de Meerdere Plaats (MSM), zoals of de pagina deel van een Blauwe Druk uitmaakt, en of het een Levende Exemplaar is.
+* **Servlet van de Taal van de Inhoud:** De taal van de huidige pagina, en informatie over elke taal waarin de pagina beschikbaar is.
+* **Leverancier van de Status van het Werkschema:** de informatie van de Status over het lopende werkschema dat de pagina als nuttige lading heeft.
+* **Leverancier van Info van het Pakket van het Werkschema:** Informatie over elk werkschemapakket dat in de bewaarplaats wordt opgeslagen, en of elk pakket het huidige middel bevat.
+* **Leverancier van Info van de Mededinger van de Mededinger van de Mededinger:** Informatie over de mobiele apparatenmededingers die voor dit middel beschikbaar zijn. Als de paginacomponent geen mobiele pagina&#39;s rendert, zijn er geen emulators beschikbaar.
+* **Leverancier van Info van Annotaties:** Informatie over annotaties die op de pagina zijn.
 
-Het PageInfo-servlet retourneert bijvoorbeeld de volgende JSON-reactie voor de `/content/we-retail/us/en` knooppunt:
+Het PageInfo-servlet retourneert bijvoorbeeld de volgende JSON-reactie voor het knooppunt `/content/we-retail/us/en` :
 
 ```
 {
@@ -477,7 +477,7 @@ Vorm de dienst van de Leverancier van de Informatie van het Pakket van het Pakke
 >Het tabblad Workflow van Sidekick gebruikt het PageInfo-servlet om een lijst met workflowpakketten te verkrijgen. In de lijst kunt u het pakket selecteren waaraan u de huidige pagina wilt toevoegen. De filters die u creeert beïnvloeden deze lijst.
 >
 
-De id van de service is `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Als u een filter wilt maken, geeft u een waarde op voor `workflowpackageinfoprovider.filter` eigenschap.
+De id van de service is `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider` . Als u een filter wilt maken, geeft u een waarde op voor de eigenschap `workflowpackageinfoprovider.filter` .
 
 Eigenschapwaarden beginnen met een plusteken (+ of -) gevolgd door het pakketpad:
 
@@ -494,11 +494,11 @@ De service past het cumulatieve resultaat van alle filters toe. De volgende filt
 
 >[!NOTE]
 >
->Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor volledige details.
 
 Bijvoorbeeld, om de dienst te vormen gebruikend CRXDE Lite:
 
-1. CRXDE Lite openen ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite ([ http://localhost:4502/crx/de ](http://localhost:4502/crx/de)).
 1. Maak een knooppunt in de configuratiemap van uw toepassing:
 
    * Naam: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -516,7 +516,7 @@ Om de dienst in uw projectbron te vormen:
 
 1. Zoek of maak de configuratiemap voor uw AEM toepassing in uw projectbron.
 
-   Als u bijvoorbeeld het archetype met meerdere modules van de insteekmodule Inhoudspakket hebt gebruikt om uw project te maken, is het mappad `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
+   Als u bijvoorbeeld het archetype met meerdere modules van de insteekmodule Inhoudspakket hebt gebruikt om uw project te maken, is het mappad `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config` .
 1. Maak in de configuratiemap een tekstbestand met de naam com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
 1. Kopieer de volgende tekst naar het bestand:
 
@@ -528,7 +528,7 @@ Om de dienst in uw projectbron te vormen:
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Binnen de vierkante haakjes (`[]`) die de `workflowpackageinfoprovider.filter` eigenschap, typt u een door komma&#39;s gescheiden lijst met filterwaarden, vergelijkbaar met het volgende voorbeeld:
+1. Typ binnen de vierkante haakjes (`[]`) rondom de eigenschap `workflowpackageinfoprovider.filter` een door komma&#39;s gescheiden lijst met filterwaarden, vergelijkbaar met het volgende voorbeeld:
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -538,23 +538,23 @@ Om de dienst in uw projectbron te vormen:
 
 Maak een aangepaste service van de provider van paginagegevens om metagegevens toe te voegen die uw toepassing gemakkelijk kan ophalen.
 
-1. Implementeer de `com.day.cq.wcm.api.PageInfoProvider` interface.
+1. Implementeer de interface `com.day.cq.wcm.api.PageInfoProvider` .
 1. Bundel en stel de klasse als dienst OSGi op.
-1. Maak een pagina-component in uw toepassing. Gebruiken `foundation/components/page` als de waarde van de `sling:resourceSuperType` eigenschap.
+1. Maak een pagina-component in uw toepassing. Gebruik `foundation/components/page` als de waarde van de eigenschap `sling:resourceSuperType` .
 
-1. Een knooppunt toevoegen onder het componentknooppunt genaamd `cq:infoProviders`.
-1. Onder de `cq:infoProviders` knooppunt, voegt u een knooppunt toe voor uw PageInfoProvider-service. U kunt elke naam voor het knooppunt opgeven.
+1. Voeg een knooppunt toe onder het componentknooppunt met de naam `cq:infoProviders` .
+1. Voeg onder het knooppunt `cq:infoProviders` een knooppunt toe voor uw PageInfoProvider-service. U kunt elke naam voor het knooppunt opgeven.
 1. Voeg de volgende eigenschap toe aan het knooppunt PageInfoProvider:
 
    * Naam: className
    * Type: String
    * Waarde: de PID van uw PageInfoProvider-service.
 
-Voor bronnen die uw component van de toepassingspagina als `sling:resourceType`, retourneert het PageInfo-servlet naast de standaardmetagegevens van PageInfoProvider ook de aangepaste PageInfoProvider-metagegevens.
+Voor bronnen die uw component van de toepassingspagina als `sling:resourceType` gebruiken, keert het servlet PageInfo de meta-gegevens van douane PageInfoProvider naast de standaardmeta-gegevens PageInfoProvider terug.
 
 ### Voorbeeld van implementatie van PageInfoProvider {#example-pageinfoprovider-implementation}
 
-De volgende Java-klasse implementeert [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) en retourneert de gepubliceerde URL van de huidige paginabron.
+De volgende klasse van Java voert [ PageInfoProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) uit en keert gepubliceerde URL van het huidige paginamiddel terug.
 
 ```java
 package com.adobe.example;
@@ -603,9 +603,9 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 
 In het volgende voorbeeld, in CRXDE Lite, wordt de paginacomponent getoond die is geconfigureerd om de PageUrlInfoProvider-service te gebruiken:
 
-![chlimage_1-3](assets/chlimage_1-3a.png)
+![ chlimage_1-3 ](assets/chlimage_1-3a.png)
 
-De PageUrlInfoProvider-service retourneert de volgende gegevens voor de `/content/we-retail/us/en` knooppunt:
+De PageUrlInfoProvider-service retourneert de volgende gegevens voor het knooppunt `/content/we-retail/us/en` :
 
 ```xml
 "URLs": {

@@ -20,7 +20,7 @@ Adobe heeft de GraphQL API&#39;s van Adobe Commerce aangenomen als de officiële
 
 ## 2. Kunnen de activa van het Product (beelden) van AEM worden opgeslagen en van verwijzingen voorzien via Adobe Commerce admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
-Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marktplaats](https://marketplace.magento.com/partner/bounteous_ecomm).
+Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op de [ markt ](https://marketplace.magento.com/partner/bounteous_ecomm).
 
 Als tussenoplossing kunt u ook productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Adobe Commerce. Dynamic Media maakt deel uit van AEM Assets en werkt op dezelfde manier.
 
@@ -44,13 +44,13 @@ De ondersteuning voor catalogusgrootte is afhankelijk van een aantal aanvullende
 
 PIM-gegevens worden via GraphQL-verzoeken aan AEM en clients beschikbaar gesteld. De aanbeveling van de Adobe is om PIM te integreren met de motor van de handel (Adobe Commerce of andere) zodat PIM-gegevens vervolgens kunnen worden opgehaald van de motor van de handel.
 
-## 8. Beheert u ook prijzen en andere gegevens via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
+## 8. Plaats de prijsbepaling en andere gegevens ook in cache via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
 
-Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen op de Dispatcher. Dynamische gegevens worden via GraphQL API&#39;s rechtstreeks via de client-side opgehaald met webcomponenten. Alleen statische gegevens (zoals product- of categoriegegevens) worden in de cache opgeslagen op de Dispatcher. Als de productgegevens veranderen, is de geheim voorgeheugenongeldigverklaring nodig.
+Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen op de Dispatcher. Dynamische gegevens worden via GraphQL API&#39;s rechtstreeks via de client-side opgehaald met webcomponenten. Alleen statische gegevens (zoals product- of categoriegegevens) worden in cache geplaatst op de Dispatcher. Als de productgegevens veranderen, is de geheim voorgeheugenongeldigverklaring nodig.
 
 ## 9. Hoe werkt cachevalidatie voor AEM Dispatcher met AEM en handel?
 
-Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan om de datum op de client weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenongeldigverklaring, zie [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
+Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan om de datum op de client weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenbevestiging, zie [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
 
 ## 10. Is er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
@@ -70,7 +70,7 @@ Adobe beveelt aan om marketinggerelateerde gegevens en inhoud in AEM te beheren.
 
 ## 14. Hoe verzekert een bedrijf naleving PCI wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
-Adobe raadt aan gebruik te maken van abstracte betalingsmethoden. Het doen van dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat de Adobe geen kaarthouddatum, noch de handelsoplossingen houdt of overgaat. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Zie voor meer informatie over Adobe Commerce PCI-compatibiliteit [PCI-compatibiliteit](https://business.adobe.com/products/magento/pci-compliance.html)
+Adobe raadt aan gebruik te maken van abstracte betalingsmethoden. Het doen van dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat de Adobe geen kaarthouddatum, noch de handelsoplossingen houdt of overgaat. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over de naleving van Adobe Commerce PCI, zie [ naleving PCI ](https://business.adobe.com/products/magento/pci-compliance.html)
 
 ## 15. Als ik gebruik van AEM- en Adobe Commerce-cloudversies, is deze gezamenlijke oplossing compatibel met PCI?
 
@@ -78,4 +78,4 @@ Ja, de zelfbeoordelingsvragenlijst D en de verklaring van naleving zijn op verzo
 
 ## 16. Hoe kan ik een proeflicentie voor I/O-runtime aanvragen?
 
-U kunt een proeflicentie aanvragen om I/O Runtime te gebruiken [hier](https://adobeio.typeform.com/to/obqgRm).
+U kunt om een proefvergunning verzoeken om I/O Runtime [ hier ](https://adobeio.typeform.com/to/obqgRm) te gebruiken.

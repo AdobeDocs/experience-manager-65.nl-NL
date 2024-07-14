@@ -23,20 +23,20 @@ De formulieren worden gedownload op uw app en zijn offline beschikbaar. U voert 
 
 Uw formulier synchroniseren in AEM Forms-app:
 
-1. Selecteer een formulier in de ontwerpversie en klik op **Eigenschappen weergeven**.
-1. Klik op de pagina met eigenschappen **Geavanceerd.**
-1. Schakel onder Geavanceerd de optie in: **Synchroniseren met AEM Forms App** en selecteert u **Opslaan**.
+1. In auteursinstantie, selecteer een vorm, en klik **Eigenschappen van de Mening**.
+1. In de eigenschappen pagina, klik **Geavanceerd.**
+1. Onder Geavanceerd, laat optie toe: **Synchronisatie met AEM Forms App**, en selecteer **sparen**.
 
-Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en selecteert u **Synchroniseren met AEM Forms App**. Wanneer het formulier wordt gepubliceerd, kan de AEM Forms-toepassing verbinding maken met de publicatieserver en de formulieren ophalen.
+Om veelvoudige vormen, in de auteursinstantie te synchroniseren, selecteer veelvoudige vormen in vormenmanager en selecteer **Synchronisatie met AEM Forms App**. Wanneer het formulier wordt gepubliceerd, kan de AEM Forms-toepassing verbinding maken met de publicatieserver en de formulieren ophalen.
 
-Als uw Android-app voor AFA (AEM Form Application) niet synchroniseert, voert u de volgende stappen uit om het synchronisatieprobleem op te lossen:
+Als uw AFA (AEM Form Application) Android-app niet synchroniseert, voert u de volgende stappen uit om het synchronisatieprobleem op te lossen:
 
-1. Ga naar de **https://[server]:[poort]/system/console/configMgr**.
-1. Zoeken naar **[!UICONTROL Adobe Granite Token Authentication Handler]** en klik op **[!UICONTROL Edit]**.
-1. Selecteer de **[!UICONTROL None]** in het vervolgkeuzemenu voor het dialoogvenster **[!UICONTROL SameSite attribute for the login-token cookie]** kenmerk.
+1. Ga naar **https:// [ server ]:[ haven ]/system/console/configMgr**.
+1. Zoek naar **[!UICONTROL Adobe Granite Token Authentication Handler]** en klik **[!UICONTROL Edit]**.
+1. Selecteer de optie **[!UICONTROL None]** in het vervolgkeuzemenu voor het kenmerk **[!UICONTROL SameSite attribute for the login-token cookie]** .
 1. Klik op **[!UICONTROL Save]**.
 
-![Afbeelding synchroniseren met AFA Android-app](/help/forms/using/assets/afaandroid.png)
+![ het Beeld van de Synchronisatie met AFA Android app ](/help/forms/using/assets/afaandroid.png)
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Als uw Android-app voor AFA (AEM Form Application) niet synchroniseert, voert u 
 >Bijlagen op formulierniveau worden niet ondersteund in de adaptieve formulieren die worden opgehaald in de AEM Forms-app die is gesynchroniseerd met de AEM Forms OSGi-server. Gebruikers kunnen bestanden in een veld bijvoegen als de auteur op het moment van het ontwerpen van het formulier bijlagen op veldniveau heeft ingeschakeld.
 
 
-**Een formulier openen en bijwerken**
+**om een vorm** te openen en bij te werken
 
 1. Als u een formulier wilt openen, selecteert u de **[!UICONTROL Form]** in het beginscherm.
 1. U kunt de velden van het formulier bijwerken, bijlagen toevoegen, opslaan als concept en het verzenden.

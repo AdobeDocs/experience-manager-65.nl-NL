@@ -30,7 +30,7 @@ In dit document worden de specifieke configuratievereisten en mogelijke probleem
 
 De AEM Forms op JEE clusterknopen communiceren onder elkaar en delen informatie om de cluster als geheel toe te laten om één enkele verenigbare configuratie en toepassingsstaat te hebben. Het delen van informatie binnen de cluster gebeurt op verschillende manieren gelijktijdig die in verschillende contexten worden gebruikt. De basismethoden voor het delen van informatie worden in onderstaande afbeelding weergegeven:
 
-![Toepassingsservercluster](assets/application-server-cluster.jpg)
+![ de Cluster van de Server van de Toepassing ](assets/application-server-cluster.jpg)
 
 ### Toepassingsservercluster {#application-server-cluster}
 
@@ -38,7 +38,7 @@ Een AEM Forms op JEE-cluster is afhankelijk van de clusteringsmogelijkheden van 
 
 ### GemFire-cache {#gemfire-cache}
 
-De GemFire-cache is een verspreid cachemechanisme dat in elk clusterknooppunt wordt geïmplementeerd. De knopen vinden elkaar en bouwen één enkel logisch geheime voorgeheugen dat tussen de knopen coherent wordt gehouden. De knopen die elkaar vinden verbinden zich om één enkel notioneel geheime voorgeheugen te handhaven dat als wolk in Figuur 1 wordt getoond. In tegenstelling tot de GDS en de database, is de cache een louter fictieve entiteit. De eigenlijke inhoud in de cache wordt opgeslagen in het geheugen en in de `LC_TEMP` op elk van de clusterknooppunten.
+De GemFire-cache is een verspreid cachemechanisme dat in elk clusterknooppunt wordt geïmplementeerd. De knopen vinden elkaar en bouwen één enkel logisch geheime voorgeheugen dat tussen de knopen coherent wordt gehouden. De knopen die elkaar vinden verbinden zich om één enkel notioneel geheime voorgeheugen te handhaven dat als wolk in Figuur 1 wordt getoond. In tegenstelling tot de GDS en de database, is de cache een louter fictieve entiteit. De feitelijke inhoud in de cache wordt opgeslagen in het geheugen en in de map `LC_TEMP` op elk van de clusterknooppunten.
 
 ### Database {#database}
 
@@ -56,7 +56,7 @@ Naast deze hoofdgedeelde bronnen zijn er andere items die een specifiek clusterg
 
 Een van de meest frustrerende dingen over het onderhouden of oplossen van problemen van een AEM Forms op een cluster JEE is dat er geen enkele plaats is om positief te kijken om te bevestigen dat de cluster gezond is. Om te bevestigen dat alles goed in de cluster is neemt wat onderzoek en analyse, en er zijn verscheidene wijzen van mislukking voor clusterverrichting, afhankelijk van wat met de clusterconfiguratie verkeerd is. Het cijfer toont hieronder een slecht gevormde cluster waarin verscheidene gedeelde middelen incorrect worden gedeeld.
 
-![Onjuist geconfigureerde cluster](assets/bad-configuration-cluster.png)
+![ Badly gevormde Cluster ](assets/bad-configuration-cluster.png)
 
 Begrijp de manier het groeperen werkt en de soorten dingen die u in een cluster kunt zoeken en verifiëren, zelfs als u niet van plan bent om AEM Forms op JEE in een cluster in werking te stellen. De reden hiervoor is dat sommige delen van AEM Forms op JEE hun aanwijzingen over het onjuist werken in een cluster kunnen nemen en het clustergedrag dat u niet verwacht, kunnen overnemen.
 
@@ -74,13 +74,13 @@ Als u knopen hebt die u van plan bent te groeperen, moeten zij elkaar op het net
 
 Één gemeenschappelijk probleem met autodiscovery is dat multicast berichten door het netwerk kunnen worden gefiltreerd. Dit kan deel van een netwerkbeleid, of wegens de regels van de softwarefirewall uitmaken, of omdat zij niet over het netwerk kunnen leiden dat tussen knopen bestaat. Wegens de algemene moeilijkheid met het krijgen van autodiscovery UDP om in complexe netwerken te werken, is het gemeenschappelijke praktijk voor productielokaties om een alternatieve ontdekkingsmethode te gebruiken: de lokators van TCP. Een algemene bespreking van de plaatsbepalers van TCP kan in de verwijzingen worden gevonden.
 
-**Hoe weet ik of ik locators of UDP gebruik?**
+**hoe ik weet als ik lokators of UDP gebruik?**
 
 De volgende JVM-eigenschappen bepalen de methode die de GemFire-cache gebruikt om andere knooppunten te zoeken.
 
 Meerdere instellingen:
 
-* `adobe.cache.multicast-port`: De multicast haven die wordt gebruikt om met andere leden van het verdeelde systeem te communiceren. Als deze aan nul wordt geplaatst, multicast is gehandicapt voor zowel lidontdekking als distributie.
+* `adobe.cache.multicast-port`: De multicastpoort die wordt gebruikt om te communiceren met andere leden van het gedistribueerde systeem. Als deze aan nul wordt geplaatst, multicast is gehandicapt voor zowel lidontdekking als distributie.
 
 * `gemfire.mcast-address` (optioneel): negeert het standaard IP-adres dat door Gemfire wordt gebruikt.
 
@@ -92,7 +92,7 @@ De lijst moet alle locators omvatten die momenteel in gebruik zijn, en moet voor
 
 Als de lijst van het Merkteken van TCP leeg is, worden de scènes niet gebruikt en in plaats daarvan wordt de multicast methode gebruikt.
 
-**Hoe kan ik controleren als mijn plaatsbepaler van TCP loopt?**
+**hoe kan ik controleren als mijn plaatsbepaler van TCP loopt?**
 
 Ten eerste, als de plaatsbepalers van TCP in gebruik zijn, zou u uw plaatsbepalers moeten hebben van TCP die in het volgende bezit JVM op alle clusterknopen worden vermeld:
 
@@ -114,13 +114,13 @@ De verwachte reactie moet er ongeveer als volgt uitzien:
 
 `livecycl 331984 1 0 10:14:51 pts/0 0:03 java -cp ./gemfire.jar: -Dgemfire.license-type=production -Dlocators=localhost[22345] com.gemstone.gemfire.distributed.Locator 22345`
 
-**Hoe zie ik welke knopen GemFire in de cluster denkt te zijn?**
+**Hoe zie ik welke knopen GemFire denkt in de cluster zijn?**
 
 GemFire produceert logboekinformatie die kan worden gebruikt om te bepalen welke clusterleden door het geheime voorgeheugen van GemFire zijn gevonden en worden goedgekeurd. Dit kan worden gebruikt om te verifiëren dat alle correcte clusterleden worden gevonden en dat geen extra of onjuiste ontdekking van de clusterknoop gebeurt. Het logbestand voor GemFire bevindt zich in de geconfigureerde tijdelijke map AEM Forms op JEE:
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-De numerieke tekenreeks na `adobeZZ_` is uniek aan de serverknoop, en zodat moet u de daadwerkelijke inhoud van uw tijdelijke folder zoeken. De twee tekens na `adobe` zijn afhankelijk van het servertype van de toepassing: of `wl`, `jb`, of `ws`.
+De numerieke tekenreeks na `adobeZZ_` is uniek voor het serverknooppunt. U moet daarom zoeken in de feitelijke inhoud van de tijdelijke map. De twee tekens na `adobe` zijn afhankelijk van het servertype van de toepassing: `wl` , `jb` of `ws` .
 
 De volgende steekproeflogboeken tonen wat gebeurt wanneer een twee-knoopcluster zich vindt.
 
@@ -150,7 +150,7 @@ Op de andere knoop, AP-HP7:
 [info 2011/08/05 09:28:10.128 EDT GemfireCacheAdapter <server.startup : 0> tid=0x64] DistributionManager ap-hp7(2821)<v1>:19498/59136 started on 239.192.81.1[33456]. There were 1 other DMs. others: [ap-hp8(4268)<v0>:18763/56449]
 ```
 
-**Wat gebeurt er als GemFire knooppunten vindt die het niet zou mogen?**
+**wat als GemFire knopen vindt die het niet zou moeten?**
 
 Elke afzonderlijke cluster die een collectief netwerk deelt zou een afzonderlijke reeks plaatsbepalers van TCP moeten gebruiken, als de plaatsbepalers van TCP worden gebruikt, of een afzonderlijk UDP havenaantal als de multicastconfiguratie UDP wordt gebruikt. Omdat UDP autodiscovery de standaardconfiguratie voor AEM Forms op JEE is, en zelfde standaardhaven 33456 in gebruik door veelvoudige clusters is, is het mogelijk dat clusters die niet zouden moeten proberen om te communiceren, onverwacht dit doen. De productie- en QA-clusters moeten bijvoorbeeld gescheiden blijven, maar kunnen via UDP-multicast verbinding met elkaar maken.
 
@@ -170,7 +170,7 @@ In dit geval werkt de bootstrapper met GemFire voor toegang tot de vereiste tabe
 
 Hoewel een dubbele haven vaak tijdens Bootstrap duidelijk wordt, is het mogelijk voor deze situatie om later te verschijnen. Dit kan voorkomen wanneer een cluster na zijn neer wordt hervat wanneer de Bootstrap van de andere cluster voorkwam. Of, wanneer de netwerkconfiguratie wordt veranderd om clusters te maken die eerder, voor multicast doeleinden, aan elkaar zichtbaar waren.
 
-Als u deze situaties wilt diagnosticeren, bekijkt u de GemFire-logboeken en gaat u zorgvuldig na of alleen de verwachte knooppunten worden gevonden. Om het probleem te verhelpen, moet het `adobe.cache.multicast-port` een andere waarde in een van beide clusters.
+Als u deze situaties wilt diagnosticeren, bekijkt u de GemFire-logboeken en gaat u zorgvuldig na of alleen de verwachte knooppunten worden gevonden. U kunt dit probleem verhelpen door de eigenschap `adobe.cache.multicast-port` in een of beide clusters te wijzigen in een andere waarde.
 
 ### 2) GDS delen {#gds-sharing}
 
@@ -178,7 +178,7 @@ Het delen van GDS wordt gevormd buiten AEM Forms op JEE zelf, op O/S niveau, waa
 
 Een mogelijke foutmodus voor de cluster is als dit externe bestandsgedeelte niet beschikbaar wordt of als er subtiele problemen optreden. Een verre onderstel zou wegens netwerkproblemen, veiligheidsmontages, of onjuiste configuratie kunnen ontbreken. Een systeem reboot kan configuratieveranderingen veroorzaken die dagen of weken van tevoren worden aangebracht om van kracht te worden, en dit kan verrassingen veroorzaken.
 
-**Wat zou er gebeuren als een NFS-share niet in de configuratie wordt opgenomen?**
+**wat zou gebeuren als een aandeel NFS er niet in slaagt op te zetten?**
 
 Op UNIX®, kan de manier dat de steunen NFS aan de folderstructuur worden in kaart gebracht voor een duidelijk bruikbare GDS folder om beschikbaar te zijn, zelfs als de montage ontbreekt. Overweeg:
 
@@ -188,7 +188,7 @@ Op UNIX®, kan de manier dat de steunen NFS aan de folderstructuur worden in kaa
 
 * LCES specificeert de weg aan GDS: /u01/iapply/livecycle_gds
 
-Als de koppeling op knooppunt 1 mislukt, bevat de mapstructuur nog steeds een pad `/u01/iapply/livecycle_gds` op het lege koppelingspunt, en de knoop lijkt correct te lopen. Maar omdat de GDS-inhoud niet wordt gedeeld met het andere knooppunt, werkt het cluster niet correct. Dit kan en doet zich voor, en het resultaat is dat de cluster op mysterieuze manieren faalt.
+Als het koppelen op Node 1 ontbreekt, bevat de folderstructuur nog een weg `/u01/iapply/livecycle_gds` aan het lege koppelingspunt, en de knoop lijkt correct te lopen. Maar omdat de GDS-inhoud niet wordt gedeeld met het andere knooppunt, werkt het cluster niet correct. Dit kan en doet zich voor, en het resultaat is dat de cluster op mysterieuze manieren faalt.
 
 De beste praktijken moeten dingen schikken zodat het Linux® ophangpunt niet als wortel van GDS wordt gebruikt, maar in plaats daarvan wordt één of andere folder binnen het gebruikt als wortel GDS:
 
@@ -199,7 +199,7 @@ De beste praktijken moeten dingen schikken zodat het Linux® ophangpunt niet als
 
 Nu, als om één of andere reden het bedrag niet slaagt, bevat het kale onderstelpunt geen folder LC_GDS en uw cluster ontbreekt voorspelbaar omdat het geen GDS kan vinden.
 
-**Hoe kan ik verifiëren dat alle knopen zelfde GDS zien en toestemmingen hebben?**
+**hoe kan ik verifiëren dat alle knopen zelfde GDS zien en toestemmingen hebben?**
 
 De verificatie van GDS-toegang en delen kan het best worden uitgevoerd door elk van de knooppunten als interactieve gebruiker te openen. U kunt dit doen of door SSH of Telnet aan de knopen van UNIX®, of door verre Desktop aan de systemen van Vensters. U zou aan de gevormde GDS folder of het dossiersysteem op elke knoop moeten kunnen navigeren en testdossiers van elke knoop tot stand brengen die in alle andere knopen zichtbaar zijn.
 
@@ -224,9 +224,9 @@ Voor een geslaagde AEM Forms in JEE-cluster moet de toepassingsserver zijn gecon
 
 Referenties:
 
-* [Hoge beschikbaarheid van bedrijfsservices via JBoss®-clusters](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [ Hoge beschikbaarheid de diensten van de beschikbaarheidsonderneming als clusters JBoss® ](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle WebLogic Server-Gebruikende clusters](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [ Oracle WebLogic Server-Gebruikende clusters ](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### Hoe kan ik controleren dat JBoss® zich correct groepeert? {#check-jboss-clustering}
 
@@ -263,11 +263,12 @@ Bij de ene instelling wordt een punt gebruikt tussen &quot;cluster&quot; en &quo
 
 Om te bepalen hoe Kwartz zich heeft gevormd, moet u de berichten bekijken die door AEM Forms op de dienst van de Planner JEE tijdens opstarten worden geproduceerd. Deze berichten worden geproduceerd bij ernst INFO, en het kan noodzakelijk zijn om het logboekniveau aan te passen en opnieuw te beginnen om de berichten te verkrijgen. In de AEM Forms op JEE startopeenvolging, begint de initialisering van het Kwartz met de volgende lijn:
 
-INFO  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad Het is belangrijk om van deze eerste lijn in de logboeken de plaats te bepalen. De reden is dat sommige toepassingsservers ook Kwartz gebruiken, en hun instanties van Kwartz niet met de instanties zouden moeten worden verward die door AEM Forms op de dienst van de Planner JEE worden gebruikt. Dit is de indicatie dat de dienst van de Planner opstarten, en de lijnen die het volgen vertellen u of het op gegroepeerde wijze behoorlijk begint. Verscheidene berichten verschijnen in deze opeenvolging, en het is het laatste &quot;begonnen&quot;bericht dat onthult hoe Kwartz wordt gevormd:
+INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
+Het is belangrijk om van deze eerste lijn in de logboeken de plaats te bepalen. De reden is dat sommige toepassingsservers ook Kwartz gebruiken, en hun instanties van Kwartz niet met de instanties zouden moeten worden verward die door AEM Forms op de dienst van de Planner JEE worden gebruikt. Dit is de indicatie dat de dienst van de Planner opstarten, en de lijnen die het volgen vertellen u of het op gegroepeerde wijze behoorlijk begint. Verscheidene berichten verschijnen in deze opeenvolging, en het is het laatste &quot;begonnen&quot;bericht dat onthult hoe Kwartz wordt gevormd:
 
-Hier wordt de naam van het Kwartz-exemplaar gegeven: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. De naam van de instantie van het Kwartz van de planner begint altijd met het koord `IDPSchedulerService_$_`. Het koord dat aan het eind van dit wordt toegevoegd vertelt u of Kwartz op gegroepeerde wijze loopt. De lange unieke id die wordt gegenereerd op basis van de hostnaam van het knooppunt en een lange reeks cijfers, hier `ap-hp8.ottperflab.adobe.com1312883903975`, geeft aan dat de toepassing wordt uitgevoerd in een cluster. Als het als één enkele knoop werkt, dan is het herkenningsteken een twee-cijferig aantal, &quot;20&quot;:
+Hier wordt de naam van de instantie van het Kwartz gegeven: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. De naam van de instantie van het Kwartz van de planner begint altijd met het koord `IDPSchedulerService_$_`. Het koord dat aan het eind van dit wordt toegevoegd vertelt u of Kwartz op gegroepeerde wijze loopt. De lange unieke id die is gegenereerd op basis van de hostnaam van het knooppunt en een lange reeks cijfers, hier `ap-hp8.ottperflab.adobe.com1312883903975` , geeft aan dat het knooppunt in een cluster werkt. Als het als één enkele knoop werkt, dan is het herkenningsteken een twee-cijferig aantal, &quot;20&quot;:
 
-INFO  `[org.quartz.core.QuartzScheduler]` Planner `IDPSchedulerService_$_20` begonnen.
+INFO `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` is gestart.
 Deze controle moet op alle clusterknopen afzonderlijk worden gedaan omdat de planner van elke knoop onafhankelijk bepaalt of om op clusterwijze te werken.
 
 ### Welke problemen ontstaan er als Kwartz in de verkeerde modus wordt uitgevoerd? {#quartz-running-in-wrong-mode}
@@ -324,7 +325,7 @@ De volgende instellingen moeten worden gecontroleerd:
 1. Locatie van de map System Fonts
 1. Locatie van het configuratiebestand van Data Services
 
-De cluster heeft slechts één enkele weg die voor elk van deze configuratiemontages plaatst. De locatie van de Temp-directory kan bijvoorbeeld `/home/project/QA2/LC_TEMP`. In een cluster, is het noodzakelijk dat elke knoop eigenlijk dit bepaalde weg toegankelijk heeft. Als een knooppunt het verwachte tijdelijke bestandspad heeft en een ander knooppunt niet, werkt het knooppunt dat dit niet doet, onjuist.
+De cluster heeft slechts één enkele weg die voor elk van deze configuratiemontages plaatst. De locatie van de Temp-directory kan bijvoorbeeld `/home/project/QA2/LC_TEMP` zijn. In een cluster, is het noodzakelijk dat elke knoop eigenlijk dit bepaalde weg toegankelijk heeft. Als een knooppunt het verwachte tijdelijke bestandspad heeft en een ander knooppunt niet, werkt het knooppunt dat dit niet doet, onjuist.
 
 Hoewel deze bestanden en paden kunnen worden gedeeld tussen de knooppunten of afzonderlijk of op externe bestandssystemen kunnen worden opgeslagen, is het verstandig dat het lokale kopieën zijn van de schijfopslag van het lokale knooppunt.
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (dat als vertrouwde op authentiek wordt bekend) voert de authentificatie uit en verstrekt Experience Manager de gebruikersgeloofsbrieven. De Experience Manager controleert en dwingt de toegangstoestemmingen voor de gebruiker (namelijk bepaalt welke middelen de gebruiker wordt toegestaan om toegang te hebben) af.
 
-De dienst van de Handler van de Authentificatie SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verwerkt de verificatieresultaten die door de vertrouwde authenticator worden verschaft. De manager van de Authentificatie SSO zoekt naar een Herkenningsteken SSO (SSID) als waarde van een speciaal attribuut in de volgende plaatsen in deze orde:
+De service SSO Authentication Handler ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler` ) verwerkt de verificatieresultaten die door de vertrouwde authenticator worden verschaft. De manager van de Authentificatie SSO zoekt naar een Herkenningsteken SSO (SSID) als waarde van een speciaal attribuut in de volgende plaatsen in deze orde:
 
 1. Aanvraagkoppen
 1. Cookies
@@ -33,33 +33,33 @@ Vorm de volgende twee diensten om de naam van de attributen te erkennen die SSID
 * De aanmeldingsmodule.
 * De service SSO-verificatie.
 
-Geef dezelfde kenmerknaam op voor beide services. Het kenmerk is opgenomen in de `SimpleCredentials` die worden verstrekt aan `Repository.login`. De waarde van het kenmerk is irrelevant en wordt genegeerd, de aanwezigheid ervan is alleen belangrijk en geverifieerd.
+Geef dezelfde kenmerknaam op voor beide services. Het kenmerk wordt opgenomen in de `SimpleCredentials` die aan `Repository.login` wordt geleverd. De waarde van het kenmerk is irrelevant en wordt genegeerd, de aanwezigheid ervan is alleen belangrijk en geverifieerd.
 
 ## SSO configureren {#configuring-sso}
 
-Om SSO voor een AEM instantie te vormen, vormt u [SSO-verificatiehandler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Om SSO voor een AEM instantie te vormen, vormt u de [ manager van de Authentificatie SSO ](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+1. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
    Bijvoorbeeld voor NTLM-set:
 
-   * **Pad:** zoals vereist, bijvoorbeeld `/`
-   * **Namen van koptekst**: `LOGON_USER`
-   * **ID-indeling**: `^<DOMAIN>\\(.+)$`
+   * **Weg:** zoals vereist; bijvoorbeeld, `/`
+   * **de Namen van de Kopbal**: `LOGON_USER`
+   * **Formaat van identiteitskaart**: `^<DOMAIN>\\(.+)$`
 
-     Wanneer `<*DOMAIN*>` wordt vervangen door de naam van uw eigen domein.
+     Waar `<*DOMAIN*>` wordt vervangen door de naam van uw eigen domein.
 
    Voor CoSign:
 
-   * **Pad:** zoals vereist, bijvoorbeeld `/`
-   * **Namen van koptekst**: remote_user
-   * **ID-indeling:** asIs
+   * **Weg:** zoals vereist; bijvoorbeeld, `/`
+   * **Namen van de Kopbal**: remote_user
+   * **Formaat van identiteitskaart:** AsIs
 
    Voor SiteMinder:
 
-   * **Pad:** zoals vereist, bijvoorbeeld `/`
-   * **Naam koptekst:** SM_USER
-   * **ID-indeling**: asIs
+   * **Weg:** zoals vereist; bijvoorbeeld, `/`
+   * **de Namen van de Kopbal:** SM_USER
+   * **Formaat van identiteitskaart**: AsIs
 
 1. Bevestig dat Single Sign On naar wens werkt, inclusief autorisatie.
 
@@ -76,39 +76,39 @@ Om SSO voor een AEM instantie te vormen, vormt u [SSO-verificatiehandler](/help/
 
 >[!NOTE]
 >
->Single Sign On wordt vaak gebruikt met [LDAP](/help/sites-administering/ldap-config.md).
+>Enig Sign wordt vaak gebruikt met [ LDAP ](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Als u ook de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) met de Microsoft® Internet Information Server (IIS), dan wordt de extra configuratie vereist in:
+>Als u ook [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) met de Server van de Informatie van Microsoft® Internet (IIS) gebruikt, dan wordt de extra configuratie vereist binnen:
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >In `disp_iis.ini` set:
->(zie [Dispatcher installeren met de Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) voor volledige informatie)
+>(zie [ installerend Dispatcher met de Server van de Informatie van Microsoft® Internet ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) voor volledige details)
 >
 >* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
->* `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
+>* `replaceauthorization=1` (vervangt een header met de naam &quot;Authorization&quot; (behalve &quot;Basic&quot;) door de waarde &quot;Basic&quot; (equivalent))
 >
 >In IIS:
 >
->* disable **Anonieme toegang**
+>* maak **Anonieme toegang** onbruikbaar
 >
->* enable **Geïntegreerde Windows-verificatie**
+>* laat **Geïntegreerde authentificatie van Vensters** toe
 >
 
-U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door te gebruiken **Authenticator** optie van de Console van Felix; bijvoorbeeld:
+U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door de **Authenticator** optie van de Console van de Felix te gebruiken; bijvoorbeeld:
 
 `http://localhost:4502/system/console/slingauth`
 
-De handler die het beste overeenkomt met het pad wordt als eerste gevraagd. Bijvoorbeeld, als u manager-A voor de weg vormt `/` en handler-B voor het pad `/content`en vervolgens een verzoek om `/content/mypage.html` zal eerst manager-B vragen.
+De handler die het beste overeenkomt met het pad wordt als eerste gevraagd. Als u bijvoorbeeld handler-A configureert voor het pad `/` en handler-B voor het pad `/content` , zal een aanvraag naar `/content/mypage.html` eerst handler-B opvragen.
 
-![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
+![ screen_shot_2012-02-15at21006pm ](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Voorbeeld {#example}
 
-Voor een cookieverzoek (het gebruiken van URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Voor een cookieaanvraag (met de URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -118,15 +118,15 @@ Cookie: TestCookie=admin
 
 De volgende configuratie gebruiken:
 
-* **Pad**: `/`
+* **Weg**: `/`
 
-* **Namen van koptekst**: `TestHeader`
+* **de Namen van de Kopbal**: `TestHeader`
 
-* **Cookie-namen**: `TestCookie`
+* **Namen van het Koekje**: `TestCookie`
 
-* **Parameternamen**: `TestParameter`
+* **Namen van de Parameter**: `TestParameter`
 
-* **ID-indeling**: `AsIs`
+* **Formaat van identiteitskaart**: `AsIs`
 
 Het antwoord zou zijn:
 
@@ -149,7 +149,7 @@ Transfer-Encoding: chunked
 Dit werkt ook als u daarom vraagt:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Of u kunt de volgende krullingsopdracht gebruiken om de `TestHeader` header naar `admin:`
+Of u kunt de volgende krullopdracht gebruiken om de `TestHeader` header naar `admin:` te verzenden
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
@@ -162,14 +162,14 @@ Wanneer u SSO gebruikt, worden aanmelden en afmelden extern afgehandeld, zodat A
 
 U kunt de koppeling voor uitloggen op het welkomstscherm als volgt verwijderen.
 
-1. Bedekking `/libs/cq/core/components/welcome/welcome.jsp` tot `/apps/cq/core/components/welcome/welcome.jsp`
+1. Bedekken `/libs/cq/core/components/welcome/welcome.jsp` tot `/apps/cq/core/components/welcome/welcome.jsp`
 1. het volgende deel uit het gsp verwijderen.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Ga als volgt te werk om de koppeling voor uitloggen die beschikbaar is in het persoonlijke menu van de gebruiker in de rechterbovenhoek te verwijderen:
 
-1. Bedekking `/libs/cq/ui/widgets/source/widgets/UserInfo.js` tot `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Bedekken `/libs/cq/ui/widgets/source/widgets/UserInfo.js` tot `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Verwijder het volgende deel uit het bestand:
 

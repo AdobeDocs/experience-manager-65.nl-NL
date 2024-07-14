@@ -24,7 +24,7 @@ Deze bewerkingen omvatten:
 * Assets die boven de ingestelde drempelwaarde liggen, importeren vanaf een externe Experience Manager-implementatie
 * Actieve exemplaren uitrollen
 
-U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Async Job Status]** dashboard op **Algemene navigatie** > **Gereedschappen** > **Bewerkingen** > **Taken**.
+U kunt het statuut van asynchrone banen van het **[!UICONTROL Async Job Status]** dashboard bij **Globale Navigatie** bekijken > **Hulpmiddelen** > **Verrichtingen** > **Banen**.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Navigeer naar de pagina **[!UICONTROL Async Job Status]** om de status van de as
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logbestand, selecteert u de bewerking en klikt u op **[!UICONTROL Open]** op de werkbalk.
+1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logboekbestanden, selecteert u de bewerking en klikt u op **[!UICONTROL Open]** op de werkbalk.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -132,8 +132,8 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 >[!MORELIKETHIS]
 >
 >* [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md)
->* [Actieve kopieën maken en synchroniseren](/help/sites-administering/msm-livecopy.md)
->* [E-mail configureren in Experience Manager](/help/sites-administering/notification.md).
->* [Metagegevens van elementen importeren](/help/assets/metadata.md#import-metadata).
->* [Metagegevens van elementen exporteren](/help/assets/metadata.md#export-metadata).
+>* [ Creërend en het Synchroniseren Actieve Exemplaren ](/help/sites-administering/msm-livecopy.md)
+>* [ vorm e-mail in Experience Manager ](/help/sites-administering/notification.md).
+>* [ de meta-gegevens van de Activa van de Invoer ](/help/assets/metadata.md#import-metadata).
+>* [ de activameta-gegevens van de Uitvoer ](/help/assets/metadata.md#export-metadata).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).

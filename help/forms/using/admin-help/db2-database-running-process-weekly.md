@@ -24,7 +24,7 @@ Als uw AEM Forms DB2®-database langzaam begint te werken, kunt u de prestaties 
 
    (Windows) Selecteer Start > Programma&#39;s > IBM® DB2® > Algemene beheertools > Control Center.
 
-   (Linux® en UNIX®) Typ de opdracht `db2jcc` gebruiken.
+   (Linux® en UNIX®) Typ de opdracht `db2jcc` bij een opdrachtprompt.
 
 1. Klik in de objectstructuur van het DB2® Control Center op Alle databases.
 1. Klik op de database die u voor AEM Forms hebt gemaakt en klik op de map Tables.

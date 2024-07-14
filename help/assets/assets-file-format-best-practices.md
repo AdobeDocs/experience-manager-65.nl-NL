@@ -1,6 +1,6 @@
 ---
 title: Aanbevolen procedures voor het verwerken van de ondersteunde bestandsindelingen
-description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met [!DNL Experience Manager Assets].
+description: Aanbevolen procedures om de diverse ondersteunde bestandstypen te verwerken met  [!DNL Experience Manager Assets] .
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 ---
 
-# Aanbevolen werkwijzen voor bestandsindelingen voor elementen {#assets-file-format-best-practices}
+# Aanbevolen werkwijzen voor Assets-bestandsindelingen {#assets-file-format-best-practices}
 
-[!DNL Adobe Experience Manager Assets] Biedt ondersteuning voor een groot aantal bibliotheken met bedrijfseigen bestandsindelingen en bestandsindelingen van derden, zodat gebruikers aan verschillende vereisten voor bestandsondersteuning kunnen voldoen. Tot de ondersteunde bibliotheken met Adoben behoren: [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer, en [!DNL Adobe InDesign Server]. Daarnaast [!DNL Experience Manager Assets] biedt ondersteuning voor bibliotheken van derden, waaronder [!DNL ImageMagick], [!DNL TwelveMonkeys], enzovoort.
+[!DNL Adobe Experience Manager Assets] biedt ondersteuning voor een groot aantal bibliotheken met bestandsindelingen van leveranciers en derden, zodat gebruikers aan verschillende vereisten voor bestandsondersteuning kunnen voldoen. Tot de ondersteunde bibliotheken voor Adoben behoren [!DNL Adobe Camera Raw] , Gibson, Adobe PDF Rasterizer en [!DNL Adobe InDesign Server] . Daarnaast biedt [!DNL Experience Manager Assets] ondersteuning voor bibliotheken van derden, zoals [!DNL ImageMagick] , [!DNL TwelveMonkeys] , enzovoort.
 
-Zie voor de ondersteunde bestandsindelingen [Ondersteunde indelingen voor middelen](/help/assets/assets-formats.md).
+Voor de gesteunde dossierformaten, zie [ Assets gesteunde formaten ](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Als u [!DNL Experience Manager] op Adobe Managed Services (AMS), vraag aan de Steun van de Klant van de Adobe als u van plan bent om veel grote PSD of PSB dossiers te verwerken. Werk samen met de medewerker van de klantenondersteuning van de Adobe om deze best practices voor uw AMS-implementatie te implementeren en de best mogelijke tools en modellen te kiezen voor de eigen indelingen van de Adobe. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+>Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenondersteuning van de Adobe als u van plan bent veel grote PSD of PSB-bestanden te verwerken. Werk samen met de medewerker van de klantenondersteuning van de Adobe om deze best practices voor uw AMS-implementatie te implementeren en de best mogelijke tools en modellen te kiezen voor de eigen indelingen van de Adobe. [!DNL Experience Manager] verwerkt mogelijk geen PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels.
 
-## [!DNL Adobe Camera Raw] bibliotheek {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] library {#adobe-camera-raw-library}
 
-Voor optimale prestaties raadt de Adobe het gebruik van [!DNL Adobe Camera Raw] bibliotheek voor RAW- en DNG-bestanden.
+Voor optimale prestaties raadt de Adobe aan [!DNL Adobe Camera Raw] -bibliotheek te gebruiken voor RAW- en DNG-bestanden.
 
-[!DNL Adobe Camera Raw] De bibliotheek ondersteunt CMYK-kleurprofiel als invoer. De uitvoer wordt echter alleen in de kleurruimte RGB gegenereerd en uitvoer in de indeling JPEG wordt alleen ondersteund. De kleurruimte van het bronbestand (bijvoorbeeld CMYK) blijft niet behouden in de miniaturen.
+[!DNL Adobe Camera Raw] -bibliotheek ondersteunt CMYK-kleurprofiel als invoer. De uitvoer wordt echter alleen in de kleurruimte RGB gegenereerd en uitvoer in de indeling JPEG wordt alleen ondersteund. De kleurruimte van het bronbestand (bijvoorbeeld CMYK) blijft niet behouden in de miniaturen.
 
-Zie voor meer informatie [Camera Raw ondersteuning](/help/assets/camera-raw.md).
+Voor meer informatie, zie [ Camera Raw steun ](/help/assets/camera-raw.md).
 
 ## Adobe PDF Rasterizer-bibliotheek {#adobe-pdf-rasterizer-library}
 
@@ -43,13 +43,13 @@ Miniaturen en voorvertoningen die worden gegenereerd met de Rasterizer-PDF, zijn
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe raadt u aan [!DNL Adobe InDesign Server] om te extraheren [!DNL Adobe InDesign]-specifieke uitvoeringen, zoals IDML en HTML. Zie voor meer informatie [Elementen van Experience Managers toevoegen als verwijzingen in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+Adobe raadt u aan [!DNL Adobe InDesign Server] te gebruiken om [!DNL Adobe InDesign] -specifieke uitvoeringen, zoals IDML en HTML, te extraheren. Voor meer informatie, zie [ Toevoegend de activa van de Experience Manager als verwijzingen in Adobe InDesign ](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] produceert en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Voor meer informatie over inschakelen [!DNL Dynamic Media], zie [Dynamic Media configureren](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] genereert en levert meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare en voor prestaties geoptimaliseerde netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Voor details rond het toelaten van [!DNL Dynamic Media], zie [ Vormend Dynamic Media ](/help/assets/config-dynamic.md).
 
-Momenteel [!DNL Dynamic Media] ondersteunt video&#39;s met maximaal 15 GB inhoud per bestand.
+Op dit moment kan [!DNL Dynamic Media] video&#39;s met maximaal 15 GB aan inhoud per bestand ondersteunen.
 
 ## ImageMagick-bibliotheek {#imagemagick-library}
 
@@ -60,7 +60,7 @@ De Adobe raadt aan de ImageMagick-bibliotheek in de volgende scenario&#39;s te g
 * De transparantie behouden.
 * PSD- en PSB-bestanden verwerken.
 
-Om te weten hoe te opstelling [!DNL ImageMagick] bibliotheek in [!DNL Experience Manager], zie [ImageMagick gebruiken](/help/assets/media-handlers.md#an-example-using-imagemagick). Voor optimaal gebruik raadpleegt u [Beste praktijken voor het Vormen ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+Om te weten hoe te opstelling de [!DNL ImageMagick] bibliotheek in [!DNL Experience Manager], zie [ Gebruikend ImageMagick ](/help/assets/media-handlers.md#an-example-using-imagemagick). Voor optimaal gebruik, zie [ Beste praktijken voor het Vormen ImageMagick ](/help/assets/best-practices-for-imagemagick.md).
 
 ## Bibliotheek voor transformatie van afbeeldingen {#image-transcoding-library}
 
@@ -76,4 +76,4 @@ De Beeldtransformatiebibliotheek ondersteunt de volgende MIME-typen:
 * ICO
 * ICN
 
-Zie voor meer informatie [Afbeeldingstransformatiebibliotheek](/help/assets/imaging-transcoding-library.md).
+Voor details, zie [ Beeldend Transcoding Bibliotheek ](/help/assets/imaging-transcoding-library.md).

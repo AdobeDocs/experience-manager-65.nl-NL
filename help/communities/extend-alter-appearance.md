@@ -29,9 +29,9 @@ Voor een eenvoudige demonstratie, een visuele functie, wordt de avatar verwijder
 
 ## De HBS-scripts wijzigen {#modify-the-hbs-scripts}
 
-Gebruiken [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Gebruikend [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Openen [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Open [/apps/custom/components/comments/comment/**comment.hbs** ](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Plaats een opmerking bij de tag die de avatar bevat voor een commentaarbericht (~ regel 21):
 
@@ -41,7 +41,7 @@ Gebruiken [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Openen [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Open [/apps/custom/components/comments/**comments.hbs** ](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Verwijder de commentaarmarkering die de avatar voor de volgende commentaaringang (~ lijn 44) omvat:
 
@@ -51,7 +51,7 @@ Gebruiken [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Selecteren **Alles opslaan**
+* Selecteer **sparen allen**
 
 ### Aangepaste app repliceren {#replicate-custom-app}
 
@@ -61,17 +61,17 @@ Een manier om dit te doen is:
 
 * Vanuit het hoofdmenu
 
-   * Selecteren **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
-   * Selecteren **[!UICONTROL Activate Tree]**.
-   * Set `Start Path` tot `/apps/custom`.
-   * Deselecteren **[!UICONTROL Only Modified]**.
-   * Selecteren **[!UICONTROL Activate]** knop.
+   * Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]** .
+   * Selecteer **[!UICONTROL Activate Tree]** .
+   * Stel `Start Path` in op `/apps/custom` .
+   * Deselecteer **[!UICONTROL Only Modified]** .
+   * Selecteer **[!UICONTROL Activate]** .
 
 ### Gewijzigde opmerking weergeven op gepubliceerde voorbeeldpagina {#view-modified-comment-on-published-sample-page}
 
-[De ervaring voortzetten](/help/communities/extend-sample-page.md#publish-sample-page) op de publicatie-instantie, die nog steeds als dezelfde gebruiker is aangemeld, is het nu mogelijk de pagina in de publicatieomgeving te vernieuwen om de wijziging voor het verwijderen van de avatar weer te geven:
+[ Verblijvend de ervaring ](/help/communities/extend-sample-page.md#publish-sample-page) op publiceer instantie, nog binnen ondertekend als de zelfde gebruiker, is het nu mogelijk om de pagina in het publicatiemilieu te verfrissen om de wijziging te bekijken om avatar te verwijderen:
 
-![view-modified-content](assets/view-modified-content.png)
+![ mening-gewijzigd-inhoud ](assets/view-modified-content.png)
 
 ### Voorbeeld van extensiepakket voor opmerkingen {#sample-comment-extension-package}
 

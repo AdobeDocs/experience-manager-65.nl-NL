@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De functie Mappen delen AEM naar Creative Cloud is vervangen. Klanten wordt aangeraden nieuwere mogelijkheden te gebruiken, zoals [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Bureaubladapp AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Meer informatie in [Aanbevolen werkwijzen voor integratie van AEM en Creatives Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>De functie Mappen delen AEM naar Creative Cloud is vervangen. De klanten worden geadviseerd om nieuwere mogelijkheden, zoals [ de Verbinding van Activa van de Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [ AEM Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) te gebruiken. Leer meer in [ AEM en de Beste praktijken van de Integratie van het Creative Cloud ](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

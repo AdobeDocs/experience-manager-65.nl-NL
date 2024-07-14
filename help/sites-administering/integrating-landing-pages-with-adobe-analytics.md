@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Openingspagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM heeft de landingspagina-oplossing geïntegreerd met [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) door de volgende vraag-aan-actie (CTA) componenten te gebruiken:
+AEM heeft de het landen paginaoplossing met [ Adobe Analytics ](https://www.omniture.com/en/products/analytics/sitecatalyst) geïntegreerd door de volgende vraag-aan-actie (CTA) componenten te gebruiken:
 
 1. Klikken door component
 1. Grafische koppelingscomponent
@@ -27,13 +27,13 @@ Deze componenten maken bepaalde kenmerken beschikbaar die via Adobe Analytics-va
 
 ## Vereisten {#prerequisites}
 
-Adobe raadt u aan de [bestaande AEM-Adobe Analytics-integratie](/help/sites-administering/adobeanalytics.md) om te begrijpen hoe deze integratie werkt.
+De Adobe adviseert dat u door de [ bestaande integratie AEM-Adobe Analytics ](/help/sites-administering/adobeanalytics.md) gaat om te begrijpen hoe deze integratie werkt.
 
 ## Componenten beschikbaar voor toewijzing {#components-available-for-mapping}
 
-In AEM **Oproep tot actie** componenten - **ClickThroughLink** en **GraphicalLink** - hier in het hulpslot wordt getoond, kan aan variabelen van Adobe Analytics worden in kaart gebracht.
+In AEM, kan de **Vraag aan de componenten van de Actie** - **ClickThroughLink** en **GraphicalLink** - hier getoond in sidekick, aan de variabelen van Adobe Analytics worden in kaart gebracht.
 
-![chlimage_1-21](assets/chlimage_1-21a.jpeg)
+![ chlimage_1-21 ](assets/chlimage_1-21a.jpeg)
 
 ### Onderdelen van bestemmingspagina aan Adobe Analytics toewijzen {#mapping-landing-page-components-to-adobe-analytics}
 
@@ -51,45 +51,45 @@ U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
   </tr>
   <tr>
    <td><strong>CTA-klik via koppeling</strong></td>
-   <td><i>eventdata.clickLinkLabel</i> <br /> </td>
+   <td><i> eventdata.clickLinkLabel </i> <br /> </td>
    <td>Het label op de koppeling of de tekst van de koppeling </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clickLinkTarget</i> <br /> </td>
+   <td><i> eventdata.clickLinkTarget </i> <br /> </td>
    <td>Het doel waar u naartoe gaat wanneer u op de koppeling klikt </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.events.clickthroughLinkClick</i> <br /> </td>
+   <td><i> eventdata.events.clickLinkClick </i> <br /> </td>
    <td>De gebeurtenis click </td>
   </tr>
   <tr>
    <td><strong>Grafische koppeling CTA</strong></td>
-   <td><i>eventdata.clickroughImageLabel</i> <br /> </td>
+   <td><i> eventdata.clickroughImageLabel </i> <br /> </td>
    <td>De titel van de CTA-afbeelding </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clickroughImageTarget</i> <br /> </td>
+   <td><i> eventdata.clickroughImageTarget </i> <br /> </td>
    <td>Het doel waar u naartoe gaat wanneer u op de afbeelding met een koppeling klikt</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clickroughImageAsset</i> <br /> </td>
+   <td><i> eventdata.clickroughImageAsset </i> <br /> </td>
    <td>Het pad naar het afbeeldingselement in de repository </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.events.clickStrokeImageClick</i> <br /> </td>
+   <td><i> eventdata.events.clickroughImageClick </i> <br /> </td>
    <td>De gebeurtenis click</td>
   </tr>
  </tbody>
 </table>
 
 1. Wijs deze belichte kenmerken toe aan alle Adobe Analytics-variabelen van de zoeker naar inhoud. Het framework is nu gebruiksklaar.
-1. U kunt nu een bestemmingspagina tot stand brengen of een bestaande landingspagina met bestaande componenten openen CTA en klikken **Cloud Servicen** tab in **Pagina-eigenschappen** in het zijpaneel (in de interface met geoptimaliseerde aanrakingen) selecteert u **Eigenschappen openen** en klik op **Cloud Servicen**) en configureert u het framework dat u wilt gebruiken met de bestemmingspagina. Selecteer het framework in de vervolgkeuzelijst.
+1. U kunt een het landen pagina of een bestaande het landen pagina met bestaande componenten nu tot stand brengen CTA en **lusje van Cloud Servicen {in** Eigenschappen van de Pagina **van sidekick (in aanraking-geoptimaliseerde UI, uitgezochte** Open Eigenschappen **en klik** Cloud Servicen **) en vormt het kader om met het landen van pagina te gebruiken.** Selecteer het framework in de vervolgkeuzelijst.
 
-   ![chlimage_1-25](assets/chlimage_1-25a.png)
+   ![ chlimage_1-25 ](assets/chlimage_1-25a.png)
 
 1. Nadat u het framework hebt geconfigureerd met de bestemmingspagina, kunt u nu de van instrumenten voorziene componenten gebruiken en worden eventuele klikken op CTA opgenomen in Adobe Analytics.

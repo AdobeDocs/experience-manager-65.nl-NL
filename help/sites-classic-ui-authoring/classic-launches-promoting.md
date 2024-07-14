@@ -29,15 +29,15 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 
 Als u pagina&#39;s wilt promoten, voert u de volgende stappen uit tijdens het bewerken van de startpagina die u wilt promoten:
 
-1. Op de **Pagina** tabblad in Sidekick, klikt u op **Starten bevorderen**.
+1. Op het **lusje van de Pagina** in Sidekick, klik **bevorderen Lanceer**.
 1. Geef de pagina&#39;s op die u wilt promoten:
 
-   * (Standaard) Als u alleen de huidige pagina wilt promoten, selecteert u **Paginawijzigingen doorvoeren naar productieversie**.
-   * Als u ook de onderliggende pagina&#39;s van de huidige pagina wilt bevorderen, selecteert u **Inclusief subpagina&#39;s**.
-   * Selecteer **Volledige introductie naar productieversie bevorderen**.
+   * (Gebrek) om slechts de huidige pagina te bevorderen, uitgezochte **bevordert de Veranderingen van de Pagina in de Versie van de Productie**.
+   * Om de kindpagina&#39;s van de huidige pagina ook te bevorderen, uitgezochte **omvat Subpagina&#39;s**.
+   * Om alle pagina&#39;s in de lancering te bevorderen, uitgezochte **Bevordert Volledige Lancering aan de Versie van de Productie**.
 
-1. Als u de productiepagina&#39;s aan een workflowpakket wilt toevoegen, selecteert u **Toevoegen aan workflowpakket** en selecteer vervolgens het workflowpakket.
-1. Klikken **Bevorderen**.
+1. Om de productiepagina&#39;s aan een werkschemapakket toe te voegen, selecteer **toevoegen aan het Pakket van het Werkschema** en dan het werkschemapakket selecteren.
+1. Klik **bevorderen**.
 
 ## Promotiepagina&#39;s verwerken met AEM workflow {#processing-promoted-pages-using-aem-workflow}
 
@@ -47,8 +47,8 @@ Gebruik workflowmodellen voor bulkverwerking van geconverteerde startpagina&#39;
 1. Wanneer auteurs startpagina&#39;s promoten, slaan ze deze op in het workflowpakket.
 1. Start een workflowmodel met het pakket als de payload.
 
-Als u automatisch een workflow wilt starten wanneer pagina&#39;s worden geconverteerd, [configureren van workflow-starter](/help/sites-administering/workflows-starting.md#workflows-launchers) voor het pakketknooppunt.
+Om een werkschema automatisch te beginnen wanneer de pagina&#39;s worden bevorderd, [ vormt een werkschemalancerer ](/help/sites-administering/workflows-starting.md#workflows-launchers) voor de pakketknoop.
 
 U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s voor Starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
 
-![chlimage_1-136](assets/chlimage_1-136.png)
+![ chlimage_1-136 ](assets/chlimage_1-136.png)

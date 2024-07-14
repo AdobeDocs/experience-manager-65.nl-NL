@@ -30,10 +30,10 @@ U kunt bijvoorbeeld de volgende speciale tekens invoegen:
 
 U kunt speciale tekens in letters invoegen:
 
-* In de [teksteditor](/help/forms/using/document-fragments.md#createtext)
-* In een [bewerkbare inline module in een correspondentie](../../forms/using/create-correspondence.md#managecontent)
+* In de [ tekstredacteur ](/help/forms/using/document-fragments.md#createtext)
+* In een [ editable, gealigneerde module in een correspondentie ](../../forms/using/create-correspondence.md#managecontent)
 
-![specialkarakteristiek linemodule](assets/specialcharactersinlinemodule.png)
+![ speciCharacsinlinemodule ](assets/specialcharactersinlinemodule.png)
 
 De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen door deze aan te passen. In dit artikel vindt u instructies voor het toevoegen van ondersteuning voor extra, aangepaste speciale tekens.
 
@@ -41,20 +41,20 @@ De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen do
 
 Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe te voegen:
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
-1. Maak in de map Apps een map met de naam **[!UICONTROL specialcharacters]** met een pad/structuur die lijkt op de map Specicharacters (in de map textEditorConfig onder libs):
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan als beheerder.
+1. Maak in de map apps een map met de naam **[!UICONTROL specialcharacters]** met een pad/structuur die lijkt op de map specialcharacters (in de map textEditorConfig onder libs):
 
-   1. Klik met de rechtermuisknop op de knop **specialiteiten** map op het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de **specicharacters** omslag bij de volgende weg en selecteer **Knoop van de Bedekking**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Weg:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **Locatie bedekking:** /apps/
+      **Plaats van de Bedekking:** /apps/
 
-      **Identieke knooppunttypen:** Ingeschakeld
+      **de Types van Knoop van de Gelijke:** Gecontroleerd
 
       >[!NOTE]
       >
@@ -68,23 +68,23 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
       >
       >
 
-   1. Klikken **OK** en klik vervolgens op **Alles opslaan**. De map met speciale tekens wordt gemaakt in het opgegeven pad.
+   1. Klik **O.K.** en klik dan **sparen allen**. De map met speciale tekens wordt gemaakt in het opgegeven pad.
 
       Controleer na het maken van de overlay de structuurcodes van het knooppunt. Elk knooppunt dat wordt gemaakt in /apps met behulp van de overlay, moet dezelfde klasse en eigenschappen hebben als gedefinieerd in /libs voor dat knooppunt. Als een eigenschap of tag ontbreekt in de nodestructuur onder de locatie /apps, synchroniseert u de tags met het corresponderende knooppunt in /libs.
 
-1. Zorg ervoor dat de **[!UICONTROL textEditorConfig]** node heeft de volgende eigenschappen en waarden:
+1. Controleer of het knooppunt **[!UICONTROL textEditorConfig]** de volgende eigenschappen en waarden heeft:
 
    | Naam | Type | Waarde |
    |---|---|---|
    | cmConfigurationType | String | cmTextEditorConfiguration |
    | cssPath | String | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Klik met de rechtermuisknop op de knop **[!UICONTROL specialcharacters]** map op het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op **Alles opslaan**:
+1. Klik met de rechtermuisknop op de **[!UICONTROL specialcharacters]** omslag bij de volgende weg en selecteer **creeer > de Knoop van het Kind** en klik dan **sparen allen**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
 1. Vernieuw de Teksteditor\Create Correspondence UI page. Het knooppunt dat u hebt toegevoegd, is het laatste in de lijst met speciale tekens in de gebruikersinterface.
-1. Klikken **Alles opslaan**.
+1. Klik **sparen allen**.
 1. Eventuele wijzigingen in de speciale tekens:
 
 <table>
@@ -119,7 +119,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
      <li>Plaats het knooppunt dat u wilt verbergen onder "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
      <li>Voeg de eigenschap sling:hideResource (Boolean) toe aan het knooppunt (onder apps) dat moet worden verborgen. </li>
      <li>Klik op Alles opslaan. </li>
-     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.<br /> </li>
+     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI zodat kunt u de veranderingen zien.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
      <li>Voeg de eigenschap "sling:hideChildren (String of String[])" toe aan "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
      <li>Voeg knooppuntnamen (speciale tekens die moeten worden verborgen) toe als waarden voor de eigenschap "sling:hideChildren". </li>
      <li>Klik op Alles opslaan. </li>
-     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.<br /> </li>
+     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI zodat kunt u de veranderingen zien.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -140,7 +140,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
      <li>Voeg de eigenschap "sling:orderBefore (String)" toe aan het nieuwe onderliggende knooppunt. </li>
      <li>Voeg de knooppuntnaam toe als waarde vóór het toegevoegde speciale karakter moet worden getoond. </li>
      <li>Klik op Alles opslaan. </li>
-     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.<br /> </li>
+     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI zodat kunt u de veranderingen zien.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

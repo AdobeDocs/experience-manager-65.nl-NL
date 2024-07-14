@@ -36,66 +36,66 @@ U kunt de aanwijzer over de tijdlijn slepen om waarden voor een bepaald tijdpunt
 
 In het linkerdeelvenster van het tabblad Systeem wordt de volgende informatie over de server of het knooppunt weergegeven:
 
-**Virtuele machine:** JVM-versie (Java Virtual Machine) op de server.
+**Virtuele Machine:** versie van de Virtuele Machine van Java (JVM) op de server.
 
-**Leverancier van virtuele machines:** Fabrikant van de JVM.
+**Virtuele Leverancier van de Machine:** Producent van JVM.
 
-**Versie virtuele machine:** JVM-versienummer
+**Virtuele Versie van de Machine:** JVM versieaantal
 
-**Naam machine:** Hostnaam van de server waarop AEM formulieren zijn geïnstalleerd.
+**Naam van de Machine:** Naam van de Gastheer van de server waar de AEM vormen geïnstalleerd zijn.
 
-**Omhoog tijd:** De tijd, in uren en minuten, dat de server is uitgevoerd.
+**Omhoog Tijd:** de tijd, in uren en notulen, dat de server in werking is gesteld.
 
-**Just-In-Time Compiler:** De naam van de compiler die wordt gebruikt.
+**enkel-in-tijd Compiler:** de naam van de compiler die wordt gebruikt.
 
-**Tijd compileren:** De hoeveelheid tijd die in compilatie wordt doorgebracht.
+**compileert Tijd:** de hoeveelheid tijd in compileert.
 
-**Aantal Live Threads:** Het totale aantal draden dat momenteel in het systeem van AEM formulieren aanwezig is.
+**Aantal Levende Threads:** het totale aantal draden momenteel in het systeem van AEM vormen aanwezig.
 
-**Aantal Threads Peak:** Het grootste aantal live threads dat ooit op het systeem is opgenomen.
+**Aantal Piek van Threads:** het grootste aantal levende draden ooit geregistreerd op het systeem.
 
-**Aantal geladen klassen:** Aantal klassen dat in JVM wordt geladen.
+**Aantal Geladen Klassen:** Aantal klassen die in JVM worden geladen.
 
-**Aantal verwijderde klassen:** Aantal klassen dat uit JVM wordt verwijderd.
+**Aantal Ongeladen Klassen:** Aantal klassen die van JVM worden gedesload.
 
-**Minimale heap:** De minimale hoeveelheid heap die is gebruikt.
+**Minimale Heap:** de minimumhoeveelheid hoop die werd gebruikt.
 
-**Maximale heap:** De maximale hoeveelheid heap die is gebruikt.
+**Maximale Heap:** de maximumhoeveelheid heap die werd gebruikt.
 
-**Naam besturingssysteem:** De naam van het besturingssysteem dat op de AEM Forms-server wordt uitgevoerd.
+**de Naam van het Werkende Systeem:** de naam van het werkende systeem dat op de Server van AEM Forms loopt.
 
-**Versie besturingssysteem:** Versienummer van het besturingssysteem dat op de AEM Forms-server wordt uitgevoerd.
+**Versie van het Werkende Systeem:** aantal van de Versie van het werkende systeem dat op de Server van AEM Forms loopt.
 
-**Arch besturingssysteem:** De architectuur van het besturingssysteem waarop de JVM wordt uitgevoerd.
+**Arch van het Werkende Systeem:** de werkend systeemarchitectuur die JVM loopt.
 
-**Aantal processors:** Het aantal processors op het systeem.
+**Aantal Processors:** Het aantal bewerkers op het systeem.
 
-**Argumenten voor virtuele machines:** Het argument dat door de JVM wordt gebruikt.
+**Virtuele Argumenten van de Machine:** het argument dat door JVM wordt gebruikt.
 
-**Klassepad:** Het klassepad dat door de JVM wordt gebruikt.
+**Weg van de Klasse:** de klassenweg die door JVM wordt gebruikt.
 
-**Bibliotheekpad:** Het bibliotheekpad dat door de JVM wordt gebruikt.
+**Weg van de Bibliotheek:** de bibliotheekweg die door JVM wordt gebruikt.
 
-**Pad van opstartklasse:** Het pad naar de opstartklasse dat door de JVM wordt gebruikt.
+**Weg van de Klasse van de Laars:** de weg van de laarsklasse die door JVM wordt gebruikt.
 
-**Type toepassingsserver:** Type toepassingsserver waarmee AEM formulieren worden uitgevoerd.
+**Type van Server van de Toepassing:** Type van toepassingsserver die wordt gebruikt om AEM vormen in werking te stellen.
 
-**Versie toepassingsserver:** Versienummer van de toepassingsserver waarmee AEM formulieren worden uitgevoerd.
+**Versie van de Server van de Toepassing:** Aantal van de versie van de toepassingsserver die wordt gebruikt om AEM vormen in werking te stellen.
 
-**Leverancier toepassingsserver:** Fabrikant van de toepassingsserver die wordt gebruikt om AEM formulieren uit te voeren.
+**de Leverancier van de Server van de Toepassing:** Fabrikant van de toepassingsserver die wordt gebruikt om AEM vormen in werking te stellen.
 
-**Datum installatie:** Datum (in jjjj-mm-dd formaat) waarop AEM formulieren zijn geïnstalleerd.
+**Datum van de Installatie:** Datum (in jjjj-mm-dd formaat) dat AEM vormen geïnstalleerd was.
 
-**Versie AEM formulieren:** Versie van AEM geïnstalleerde formulieren.
+**AEM vorm Versie:** Versie van AEM vormen die geïnstalleerd is.
 
-**Patchversie:** AEM formulier patchnummer.
+**Versie van het Reparatie:** AEM het aantal van het vormflard.
 
-**Databasenaam:** Het type database dat door AEM formulieren wordt gebruikt.
+**Naam van het Gegevensbestand:** Type van gegevensbestand dat door AEM vormen wordt gebruikt.
 
-**Versie database:** Versienummer van de database die door AEM formulieren wordt gebruikt.
+**Versie van het Gegevensbestand:** Aantal van de Versie van het gegevensbestand dat door AEM vormen wordt gebruikt.
 
-**Naam databasestation:** De naam van het stuurprogramma dat door de JVM wordt gebruikt om verbinding te maken met de database.
+**Naam van de Aandrijving van het Gegevensbestand:** De naam van de bestuurder die door JVM wordt gebruikt om met het gegevensbestand te verbinden.
 
-**Versie databasestuurprogramma:** De versie van het stuurprogramma dat door de JVM wordt gebruikt om verbinding te maken met de database.
+**Versie van de Bestuurder van het Gegevensbestand:** de versie van de bestuurder die door JVM wordt gebruikt om met het gegevensbestand te verbinden.
 
-De **Opslaan** kunt u deze systeeminformatie opslaan in een eigenschapbestand.
+**sparen** knoop laat u deze systeeminformatie in een bezitsdossier opslaan.

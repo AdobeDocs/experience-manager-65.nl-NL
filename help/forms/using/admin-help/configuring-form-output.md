@@ -23,9 +23,9 @@ ht-degree: 0%
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer formulier in de lijst Uitvoertype een van de volgende opties:
 
-   **Volledige HTML:** Het formulier weergeven binnen volledige HTML-tags (een volledige HTML-pagina). Dit is de standaardwaarde.
+   **Volledige HTML:** om de vorm binnen volledige HTML markeringen (een volledige HTML pagina) terug te geven. Dit is de standaardwaarde.
 
-   **Hoofdtekst van formulier:** Het formulier weergeven binnen `<BODY>` -tags (geen volledige HTML-pagina).
+   **het lichaam van de Vorm:** om de vorm binnen `<BODY>` markeringen (niet een volledige pagina van de HTML terug te geven).
 
 1. Klik op Opslaan.
 
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 1. Selecteer onder Formulieruitvoer in de lijst Renderen op een van de volgende opties:
 
-   **Client:** PDF forms renderen in Adobe Acrobat of Adobe Reader. Rendering op de client verbetert de prestaties van AEM formulieren en is alleen van toepassing op PDFForm-transformatie.
+   **Cliënt:** om PDF forms binnen Adobe Acrobat of Adobe Reader terug te geven. Rendering op de client verbetert de prestaties van AEM formulieren en is alleen van toepassing op PDFForm-transformatie.
 
-   **Server:** PDF forms renderen op de toepassingsserver.
+   **Server:** om PDF forms op de toepassingsserver terug te geven.
 
-   **Automatisch:** Het PDF-formulier weergeven op de locatie die door de `dynamicRender` configuratiewaarde van het XDP-bestand. Dit is de standaardwaarde.
+   **Auto:** om de vorm van de PDF in de plaats terug te geven die door de `dynamicRender` configuratiewaarde van het XDP dossier wordt gespecificeerd. Dit is de standaardwaarde.
 
 1. Klik op Opslaan.
 
@@ -46,11 +46,11 @@ ht-degree: 0%
 Voer de volgende stappen uit om de functie in te schakelen:
 
 1. Aanmelden bij de beheerconsole.
-1. Ga naar **Services** > **formulieren**.
+1. Ga naar **Diensten** > **vormen**.
 1. Geef het uitvoertype op als Formulierhoofdtekst.
 1. Sla de instellingen op.
-1. Declareer een variabele JavaScript, __CUSTOM_SCRIPTS_VERSION, in de kopsectie van de code van de HTML en plaats zijn waarde aan 1.
+1. Declareer een variabele van JavaScript, __CUSTOM_SCRIPTS_VERSION, in de hoofdsectie van de code van de HTML en plaats zijn waarde aan 1.
 
    >[!NOTE]
    >
-   >*Als u de functie wilt uitschakelen, kunt u de JavaScript-variabele verwijderen of de waarde ervan instellen op 0.*
+   >*om de eigenschap onbruikbaar te maken, kunt u de variabele van JavaScript verwijderen of zijn waarde plaatsen aan 0.*

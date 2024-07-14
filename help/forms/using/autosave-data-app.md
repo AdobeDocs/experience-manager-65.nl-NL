@@ -35,11 +35,11 @@ U kunt de intervallen opgeven waarna de toepassing de ingevoerde gegevens opslaa
 
 Voer de volgende stappen uit om de functie voor automatisch opslaan te gebruiken in de AEM Forms-app:
 
-1. Meld u aan bij de app en ga naar **Instellingen > Algemeen**.
-1. Gebruik in het scherm Algemeen de optie **Frequentie automatisch opslaan** Selecteer de intervallen waarmee u de ingevoerde gegevens wilt opslaan in de app.
-   [![Frequentie voor automatisch opslaan instellen](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
+1. Login aan app, en navigeer aan **Montages > Algemeen**.
+1. In het Algemene scherm, gebruik de **optie van de Frequentie Autosave** om de intervallen te selecteren waarmee u app de ingevoerde gegevens wilt bewaren.
+   [![ plaatsend autosave frequentie ](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Wanneer u de app opnieuw opstart en u bij dezelfde gebruiker aanmeldt, wordt u gevraagd om uw taak te herstellen met het dialoogvenster Niet-opgeslagen taak herstellen. Klikken **OK** in het dialoogvenster Niet-opgeslagen taak herstellen om de opgeslagen taak verder uit te voeren. U kunt op **Annuleren** om de opgeslagen gegevens te verwijderen die overeenkomen met de laatst getriggerde automatische opslag en te beginnen met het werken met een nieuwe taak.
+1. Wanneer u de app opnieuw opstart en u bij dezelfde gebruiker aanmeldt, wordt u gevraagd om uw taak te herstellen met het dialoogvenster Niet-opgeslagen taak herstellen. Klik **O.K.** in het Herstellen Unsaved dialoog van de Taak om het werken met de bewaarde taak te hervatten. U kunt **klikken annuleert** om de bewaarde gegevens te schrappen die aan laatste teweeggebracht autosave beantwoorden en beginnen met het werken met een nieuwe taak.
 
-   Wanneer u op **OK**, wordt de taak hersteld met de gegevens die overeenkomen met de laatste automatische opslag die is geactiveerd voordat de app is vastgelopen. Het bevat de formuliergegevens en alle bijlagen die bij de taak horen.
-   [![Een taak terugkrijgen ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Een werk in uitvoering formulier **B.** App forceerd gesloten **C.** Toepassing opnieuw gestart met dialoogvenster Niet-opgeslagen taak herstellen **D.** Het formulier is hersteld met de oorspronkelijke gegevens
+   Wanneer u **O.K.** klikt, wordt de taak hersteld met de gegevens die aan recentste autosave beantwoorden die vóór app wordt teweeggebracht vastliep. Het bevat de formuliergegevens en alle bijlagen die bij de taak horen.
+   [![ het krijgen van een taak teruggekregen ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** A werk-in-ondergang vorm **B.** App gesloten forcously **C.** App opnieuw begonnen met Herstel Unsaved de dialoog van de Taak **D.** Vorm hersteld met originele gegevens

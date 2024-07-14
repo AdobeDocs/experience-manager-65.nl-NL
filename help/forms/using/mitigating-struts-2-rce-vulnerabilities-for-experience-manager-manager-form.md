@@ -24,7 +24,7 @@ Er zijn kritieke beveiligingskwetsbaarheden gemeld voor Struts 2, een populair e
 
 | Kwetsbaarheid | Wat heeft dat effect? | Wat heeft dit niet tot gevolg? |
 |---|---|---|
-| [CVE-2023-50164](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2023-50164) | Experience Manager 6.5 Forms op JEE (alle versies van 6.5 GA naar 6.5.19.0) | <ul><li> Experience Manager Forms Workbench (alle versies)</li> <li> Experience Manager Forms op OSGi (alle versies) </li> <li> Experience Manager Forms as a Cloud Service </li> <ul> |
+| [ CVE-2023-50164 ](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2023-50164) | Experience Manager 6.5 Forms op JEE (alle versies van 6.5 GA naar 6.5.19.0) | <ul><li> Experience Manager Forms Workbench (alle versies)</li> <li> Experience Manager Forms op OSGi (alle versies) </li> <li> Experience Manager Forms as a Cloud Service </li> <ul> |
 
 ## Resolutie
 
@@ -32,24 +32,24 @@ De volgende tabel bevat een resolutie voor alle betrokken versies:
 
 | Geen | Huidige versie | Handeling door gebruiker |
 |---|---|---|
-| Experience Manager 6.5 Forms in juni | 6.5.19,0 | [Installeer het nieuwste servicepack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| Experience Manager 6.5 Forms in juni | 6.5.19,0 | [ installeer het recentste de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
 | Experience Manager 6.5 Forms in juni | 6.5.13.0 - 6.5.18.0 | Gebruik een van de volgende methoden: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installeer het nieuwste servicepack </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Handmatige onderdrukkingsstappen gebruiken </a> |
-| Experience Manager 6.5 Forms in juni | 6.5 - 6.5.12.0 | [Installeer het nieuwste servicepack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)  </br> </br> **OPMERKING:** AEM Forms ondersteunt momenteel versies 6.5.13.0 tot en met 6.5.19.0. Als u een oudere versie gebruikt, raden we u aan een upgrade naar 6.5.13.0 of een latere versie uit te voeren. Zie de opmerkingen bij de release voor instructies voor het installeren van AEM 6.5.13.0 of hoger. |
+| Experience Manager 6.5 Forms in juni | 6.5 - 6.5.12.0 | [ installeer het recentste de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **NOTA:** AEM Forms steunt momenteel versies 6.5.13.0 door 6.5.19.0. Als u een oudere versie gebruikt, raden we u aan een upgrade naar 6.5.13.0 of een latere versie uit te voeren. Zie de opmerkingen bij de release voor instructies voor het installeren van AEM 6.5.13.0 of hoger. |
 
 ### Handmatige onderdrukkingsstappen gebruiken {#use-manual-mitigation-steps}
 
 U kunt de handmatige matigingsstappen gebruiken om de kwestie op AEM 6.5 Server die Service Pack 13 in werking stellen aan AEM 6.5 Server van de Vorm die Service Pack 18 (6.5.13.0 - 6.5.18.0 in werking stellen) op te lossen:
 
-1. Download de [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) naar een lokale map. Bijvoorbeeld C:\Users\labuser\Desktop\struts2-core-2.5.3.jar.
-1. Download de AEM Forms on JEE Manual Patching Tool van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
-1. Pak het archief van het handmatige patchgereedschap uit. Extraheer bijvoorbeeld naar de map `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. De volgende bestanden worden geëxtraheerd:
+1. Download [ struts-core 2.5.33 jar ](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) aan een lokale omslag. Bijvoorbeeld C:\Users\labuser\Desktop\struts2-core-2.5.3.jar.
+1. Download AEM Forms op het Handmatig het Patching Hulpmiddel van JEE van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
+1. Pak het archief van het handmatige patchgereedschap uit. Extraheer bijvoorbeeld naar de map `/Users/labuser/Desktop/archive-patcher-1.0.0 folder` . De volgende bestanden worden geëxtraheerd:
    * archive-patcher-1.0.0.jar
    * patch-archive.bat
    * patch-archive.sh
 
 >[!BEGINTABS]
 
->[!TAB Windows]
+>[!TAB  Vensters ]
 
 1. Sluit alle serverinstanties en locators af.
 
@@ -67,7 +67,7 @@ U kunt de handmatige matigingsstappen gebruiken om de kwestie op AEM 6.5 Server 
    >
    >Het hulpprogramma vereist internetverbinding omdat afhankelijkheden tijdens runtime worden gedownload. Zorg er dus voor dat u verbinding hebt met internet voordat u het hulpprogramma uitvoert.
 
-1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server en de `struts2-core-2.5.33.jar` bestand.
+1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server en het bestand `struts2-core-2.5.33.jar` .
 
 
 
@@ -81,7 +81,7 @@ U kunt de handmatige matigingsstappen gebruiken om de kwestie op AEM 6.5 Server 
 
 1. Start uw AEM Forms-server.
 
->[!TAB Linux]
+>[!TAB  Linux ]
 
 1. Sluit alle serverinstanties en locators af.
 
@@ -99,7 +99,7 @@ U kunt de handmatige matigingsstappen gebruiken om de kwestie op AEM 6.5 Server 
    >
    >Het hulpprogramma vereist internetverbinding omdat afhankelijkheden tijdens runtime worden gedownload. Zorg er dus voor dat u verbinding hebt met internet voordat u het hulpprogramma uitvoert.
 
-1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server en de `struts2-core-2.5.33.jar` bestand.
+1. Voer de volgende opdrachten in de vermelde volgorde uit voor recursieve vervanging op locatie. Voordat u de opdracht uitvoert, vervangt u het pad in de opdracht door het pad van de AEM Forms-server en het bestand `struts2-core-2.5.33.jar` .
 
 
 

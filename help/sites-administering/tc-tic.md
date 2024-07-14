@@ -21,24 +21,24 @@ Het vertaalintegratiekader integreert met vertaaldiensten van derden om de verta
 * Creeer een configuratie van het Kader van de Integratie van de Vertaling.
 * Koppel de cloudconfiguraties aan uw pagina&#39;s.
 
-Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
+Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md).
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
 Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider. AEM biedt standaard de mogelijkheid verbinding te maken met Microsoft Translator.
 De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor de Vertaalprojecten. Koppelingen voor meer informatie over de integratie:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Clay Tablet Technologieën](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
-* [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
-* [Wolken](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
-* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
+* [ Translations.com ](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
+* [ De Technologieën van de Bekleding Tablet ](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
+* [ Lionbridge ](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
+* [ Memsource ](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
+* [ Cloudwords ](https://exchange.adobe.com/experiencecloud.details.90019.html)
+* [ de Wolk van XTM ](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
+* [ Lingotek ](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [ RWS ](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
+* [ Smartling ](https://www.smartling.com/software/integrations/adobe-experience-manager/)
+* [ Systran ](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+* [ Altlang ](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (Microsoft Translator is vooraf geïnstalleerd in AEM)
 
 >[!NOTE]
@@ -46,11 +46,11 @@ De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor d
 >Bekijk de volgende pagina&#39;s voor de meest recente lijst met aanbieders van vertalingen voor mensen en machines:
 >
 >
->* [AEM Menselijke vertaling](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM machinevertaling](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [ AEM Menselijke Vertaling ](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [ AEM de Vertaling van de Machine ](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
 
-Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een cloudconfiguratie voor de Microsoft Translator-aansluiting raadpleegt u [Integreren met Microsoft Translator](/help/sites-administering/tc-msconf.md).
+Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de Vertaalschakelaar van Microsoft, zie [ Integrerend met de Vertaler van Microsoft ](/help/sites-administering/tc-msconf.md).
 
 Indien nodig kunt u meerdere cloudconfiguraties voor dezelfde aansluiting maken. U kunt bijvoorbeeld één configuratie maken voor elk van de accounts of projecten die u bij dezelfde leverancier hebt.
 
@@ -68,12 +68,12 @@ Nadat u een kaderconfiguratie creeert, associeert u de wolkenconfiguratie met de
 
 Wanneer verschillende gedeelten van uw website verschillende vertaalvereisten hebben, kunt u overeenkomstig meerdere frameworkconfiguraties maken. Een meertalige website bevat bijvoorbeeld kopieën in de Engelse, Spaanse en Japanse taal. De eigenaar van de site gebruikt twee verschillende vertaalserviceproviders voor Spaanse en Japanse vertalingen. Daarom worden twee configuraties van het kader gevormd. Elke configuratie gebruikt een verschillende leverancier van vertaaldiensten.
 
-Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u [koppelen aan de pagina&#39;s](/help/sites-administering/tc-prep.md) die het gebruiken.
+Nadat u een kader van de vertaalintegratie vormt, kunt u het [ associëren met de pagina&#39;s ](/help/sites-administering/tc-prep.md) die het gebruiken.
 
-**Opmerking:** Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
+**Nota:** voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md).
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud, community-inhoud en elementen moeten worden omgezet.
-![chlimage_1-386](assets/translation-config-65.jpg)
+![ chlimage_1-386 ](assets/translation-config-65.jpg)
 
 ### Eigenschappen van siteconfiguratie {#sites-configuration-properties}
 
@@ -111,12 +111,12 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
    <td>Selecteer deze optie om codes te vertalen die aan de pagina zijn gekoppeld.</td>
   </tr>
   <tr>
-   <td>Pagina-elementen vertalen</td>
-   <td><p>Selecteer hoe u elementen wilt vertalen die vanuit het bestandssysteem aan componenten worden toegevoegd of waarnaar vanuit Middelen wordt verwezen:</p>
+   <td>Pagina Assets vertalen</td>
+   <td><p>Selecteer hoe u elementen wilt vertalen die vanuit het bestandssysteem aan componenten worden toegevoegd of waarnaar vanuit Assets wordt verwezen:</p>
     <ul>
      <li>Niet vertalen: pagina-elementen worden niet vertaald.</li>
-     <li>Het gebruiken van het vertaalwerkschema van Plaatsen: De activa worden behandeld volgens de configuratieeigenschappen op het lusje van Plaatsen.</li>
-     <li>Workflow voor het vertalen van middelen gebruiken: elementen worden verwerkt volgens de configuratie van de eigenschappen op het tabblad Elementen.</li>
+     <li>Het gebruiken van het vertaalwerkschema van Plaatsen: Assets wordt behandeld volgens de configuratieeigenschappen op het lusje van Plaatsen.</li>
+     <li>Assets-vertaalworkflow gebruiken: Assets wordt verwerkt volgens de configuratie van de eigenschappen op het tabblad Assets.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -128,17 +128,17 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
 
 ### Eigenschappen van Gemeenschappen {#communities-configuration-properties}
 
-De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Zie voor meer informatie [Door de gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md).
+De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Voor meer informatie, zie [ Vertaal Gebruiker Gegenereerde Inhoud ](/help/communities/translate-ugc.md).
 
 | Eigenschap | Beschrijving |
 |---|---|
 | Vertaalbureau | Selecteer de vertaalprovider voor de vertaling. De provider waarvoor cloudconfiguraties worden gemaakt, wordt in de lijst weergegeven. |
 | Inhoudscategorie | A category that describes the content that you are translating. De categorie kan van invloed zijn op de keuze van terminologie en woordgebruik bij het vertalen van inhoud. |
-| Een landinstelling kiezen die u als algemene Share-winkel wilt gebruiken | (Optioneel) Als u een landinstelling selecteert voor het opslaan van UGC, worden posts van alle taalkopieën in één algemeen gesprek weergegeven. Kies bij conventie de landinstelling voor de [basistaal](/help/communities/sites-console.md#translation) voor de website. Als u Geen gemeenschappelijke winkel kiest, wordt de algemene vertaling uitgeschakeld. Globale vertaling is standaard uitgeschakeld. |
+| Een landinstelling kiezen die u als algemene Share-winkel wilt gebruiken | (Optioneel) Als u een landinstelling selecteert voor het opslaan van UGC, worden posts van alle taalkopieën in één algemeen gesprek weergegeven. Door overeenkomst, kies de scène voor de [ basistaal ](/help/communities/sites-console.md#translation) voor de website. Als u Geen gemeenschappelijke winkel kiest, wordt de algemene vertaling uitgeschakeld. Globale vertaling is standaard uitgeschakeld. |
 
-### Eigenschappen van middelenconfiguratie {#assets-configuration-properties}
+### Assets-configuratieeigenschappen {#assets-configuration-properties}
 
-De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer informatie over het vertalen van elementen [Taalkopieën voor middelen maken](/help/assets/translation-projects.md).
+Assets-eigenschappen bepalen hoe elementen moeten worden geconfigureerd. Voor meer informatie over het vertalen van activa, zie [ Creërend de Kopieën van de Taal voor Assets ](/help/assets/translation-projects.md).
 
 <table>
  <tbody>
@@ -152,7 +152,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
     <ul>
      <li>Machinevertaling: de vertaalprovider voert de vertaling direct uit met behulp van machinevertaling.</li>
      <li>Menselijke vertaling: inhoud wordt automatisch naar de vertaalprovider verzonden om handmatig te worden vertaald. </li>
-     <li>Niet omzetten: middelen worden niet verzonden voor vertaling.</li>
+     <li>Niet omzetten: Assets wordt niet verzonden voor vertaling.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -164,7 +164,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
    <td>(Alleen machinevertaling) Een categorie die de inhoud beschrijft die u wilt vertalen. De categorie kan van invloed zijn op de keuze van terminologie en woordgebruik bij het vertalen van inhoud.</td>
   </tr>
   <tr>
-   <td>Elementen vertalen</td>
+   <td>Assets vertalen</td>
    <td>Selecteer deze optie om elementen op te nemen in het vertaalproject. </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
    * Als er al configuraties zijn, klikt u op Configuraties tonen en vervolgens op de koppeling + naast Beschikbare configuraties.
 
 1. Typ een naam voor de configuratie en klik vervolgens op Maken.
-1. Configureer de eigenschappen op het tabblad Sites, Communities en Assets en klik op OK.
+1. Configureer de eigenschappen op het tabblad Sites, Communities en Assets en klik vervolgens op OK.
 
 ## Pagina&#39;s voor omzetting configureren {#configuring-pages-for-translation}
 
@@ -204,7 +204,7 @@ Wanneer u een pagina aan een wolkenconfiguratie associeert, erven de nakomelinge
 
 Indien nodig, kunt u de koppeling op een afstammende pagina overschrijven. De inhoud van een website gaat bijvoorbeeld vooral over kleding. Eén vertakking met pagina&#39;s beschrijft het bedrijf echter. De hoofdpagina van de site is gekoppeld aan een vertaalintegratieframework dat automatische vertaling opgeeft met de categorie Koud. De tak die het bedrijf beschrijft gebruikt een kader dat machinevertaling gebruikend de Algemene categorie uitvoert.
 
-Voor alle gemeenschappen [SCF-componenten](/help/communities/scf.md) op de pagina&#39;s bevat de door de gebruiker gegenereerde inhoud (UGC) de mogelijkheid voor gebruikers om inhoud te vertalen. Zie voor meer informatie [Vertaling van door de gebruiker gegenereerde inhoud](/help/communities/translate-ugc.md).
+Verder, voor om het even welke gemeenschappen [ SCF componenten ](/help/communities/scf.md) op de pagina&#39;s, zal de gebruiker geproduceerde inhoud (UGC) de capaciteit voor gebruikers omvatten om inhoud te vertalen. Voor meer informatie, zie [ Vertaling van Gebruiker Gegenereerde Inhoud ](/help/communities/translate-ugc.md).
 
 ### Een pagina koppelen aan een vertaalbureau {#associating-a-page-with-a-translation-provider}
 

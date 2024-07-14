@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Referentiematerialen SPA {#spa-reference-materials}
 
-## JavaScript API-verwijzingen SPA{#spa-javascript-api-references}
+## JavaScript API-referenties SPA{#spa-javascript-api-references}
 
 Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules voor het framework van de AEM SPA Editor SDK.
 
@@ -26,17 +26,17 @@ Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules v
 >
 >De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
-* [Componenttoewijzing](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
-* [Paginamodel](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
-* [Bewerkbare componenten Reageren](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Bewerkbare angulars](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [ Component Mapping ](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [ de ModelManager van de Pagina ](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+* [ Reageer Bewerkbare Componenten ](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [ Angular Bewerkbare Componenten ](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## Open Source GitHub Repositories {#github-repositories}
+## Source GitHub-opslagplaatsen openen {#github-repositories}
 
 Het volgende is open-bron bewaarplaatsen op GitHub voor de SPA bibliotheken.
 
-* [Componenttoewijzing](https://github.com/adobe/aem-spa-component-mapping)
-* [Paginamodel](https://github.com/adobe/aem-spa-page-model-manager)
-* [Bewerkbare componenten Reageren](https://github.com/adobe/aem-react-editable-components)
-* [Bewerkbare angulars](https://github.com/adobe/aem-angular-editable-components)
-* [SPA Project Core](https://github.com/adobe/aem-spa-project-core)
+* [ Component Mapping ](https://github.com/adobe/aem-spa-component-mapping)
+* [ de ModelManager van de Pagina ](https://github.com/adobe/aem-spa-page-model-manager)
+* [ Reageer Bewerkbare Componenten ](https://github.com/adobe/aem-react-editable-components)
+* [ Angular Bewerkbare Componenten ](https://github.com/adobe/aem-angular-editable-components)
+* [ SPA de Kern van het Project ](https://github.com/adobe/aem-spa-project-core)

@@ -23,15 +23,15 @@ ht-degree: 0%
 >
 >GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy, zoals GDPR, CCPA, enzovoort.
 
-AEM Communities maakt API&#39;s offline beschikbaar voor het beheer van gebruikersprofielen en het bulksgewijs beheren van door gebruikers gegenereerde inhoud (UGC). Wanneer deze optie is ingeschakeld, wordt de **UserUgcManagement** De dienst staat de bevoorrechte gebruikers (communautaire beheerders en moderatoren) toe om gebruikersprofielen onbruikbaar te maken, en bulkschrapping of bulkexport UGC voor specifieke gebruikers. Deze API&#39;s stellen ook de verwerkingsverantwoordelijken en verwerkers van klantgegevens in staat om te voldoen aan de algemene gegevensbeschermingsregels van de Europese Unie (GDPR) en andere op GDPR geïnspireerde privacymandaten.
+AEM Communities maakt API&#39;s offline beschikbaar voor het beheer van gebruikersprofielen en het bulksgewijs beheren van door gebruikers gegenereerde inhoud (UGC). Zodra toegelaten, staat de **** dienst UserUgcManagement de bevoorrechte gebruikers (communautaire beheerders en moderatoren) toe om gebruikersprofielen onbruikbaar te maken, en bulkschrapping of bulkuitvoer UGC voor specifieke gebruikers. Deze API&#39;s stellen ook de verwerkingsverantwoordelijken en verwerkers van klantgegevens in staat om te voldoen aan de algemene gegevensbeschermingsregels van de Europese Unie (GDPR) en andere op GDPR geïnspireerde privacymandaten.
 
-Zie voor meer informatie de [GDPR-pagina in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Voor verdere informatie zie de [ pagina GDPR bij het Centrum van de Privacy van de Adobe ](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Als u [Adobe Analytics in AEM Communities](/help/communities/analytics.md) de vastgelegde gebruikersgegevens naar de Adobe Analytics-server worden verzonden. Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen en die voldoen aan GDPR. Zie voor meer informatie [Toegang verzenden en verzoeken verwijderen](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>Als u [ Adobe Analytics in AEM Communities ](/help/communities/analytics.md) plaats vormde, wordt het gevangen gebruikersgegeven verzonden naar de server van Adobe Analytics. Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen en die voldoen aan GDPR. Voor meer informatie, zie [ Verzoeken van de Toegang voorleggen en van de Schrapping ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
-Om deze APIs aan gebruik te zetten, moet u toelaten `/services/social/ugcmanagement` eindpunt door de dienst UserUgcManagement te activeren. Als u deze service wilt activeren, installeert u de [voorbeeldservet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) beschikbaar op [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Dan, slag het eindpunt op publiceer geval van uw communautaire plaats met aangewezen parameters gebruikend een HTTP- verzoek, gelijkend op:
+Om deze APIs aan gebruik te zetten, moet u het `/services/social/ugcmanagement` eindpunt toelaten door de dienst te activeren UserUgcManagement. Om deze dienst te activeren, installeer [ steekproefservlet ](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) beschikbaar op [ GitHub.com ](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Dan, slag het eindpunt op publiceer geval van uw communautaire plaats met aangewezen parameters gebruikend een HTTP- verzoek, gelijkend op:
 
 `https://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation=<getUgc>`. U kunt echter ook een gebruikersinterface (gebruikersinterface) maken voor het beheer van gebruikersprofielen en door de gebruiker gegenereerde inhoud in het systeem.
 
@@ -39,10 +39,10 @@ Met deze API&#39;s kunnen de volgende functies worden uitgevoerd.
 
 ## De UGC van een gebruiker ophalen {#retrieve-the-ugc-of-a-user}
 
-**getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)** Hiermee kunt u alle UGC van een gebruiker uit het systeem exporteren.
+**getUserUgc (ResourceResolver resourceResolver, de gebruiker van het Koord, OutputStream outputStream)** hulp voert al UGC van een gebruiker uit het systeem uit.
 
-* **user**: Geautoriseerde id van een gebruiker.
-* **outputStream**: Resultaat wordt geretourneerd als uitvoerstream. Dit is een ZIP-bestand met daarin de door de gebruiker gegenereerde inhoud (als JSON-bestand) en bijlagen (waaronder afbeeldingen of video&#39;s die door de gebruiker zijn geüpload).
+* **gebruiker**: Vergunning identiteitskaart van een gebruiker.
+* **outputStream**: Het resultaat is teruggekeerd als outputstroom, die een zip dossier met inbegrip van de gebruiker geproduceerde inhoud (als jsdossier) en gehechtheid (die beelden of video&#39;s omvatten die door de gebruiker worden geupload) is.
 
 Als u bijvoorbeeld de UGC wilt exporteren van een gebruiker met de naam Weston McCall, die weston.mccall@dodgit.com als geautoriseerde id gebruikt om u aan te melden bij de communitysite, kunt u een http-verzoek verzenden dat lijkt op het volgende:
 
@@ -50,9 +50,9 @@ Als u bijvoorbeeld de UGC wilt exporteren van een gebruiker met de naam Weston M
 
 ## De UGC van een gebruiker verwijderen {#delete-the-ugc-of-a-user}
 
-**deleteUserUgc(ResourceResolver resourceResolver, String user)** helpt u alle UGC voor een gebruiker uit het systeem te verwijderen.
+**deleteUserUgc (ResourceResolver resourceResolver, de gebruiker van het Koord)** hulp schrapt al UGC voor een gebruiker van het systeem.
 
-* **user**: Geautoriseerde id van de gebruiker.
+* **gebruiker**: Vergunning identiteitskaart van de gebruiker.
 
 Als u bijvoorbeeld de UGC wilt verwijderen van een gebruiker met de machtigbare id weston.mccall@dodgit.com via de HTTP-POST-aanvraag, gebruikt u de volgende parameters:
 
@@ -61,27 +61,27 @@ Als u bijvoorbeeld de UGC wilt verwijderen van een gebruiker met de machtigbare 
 
 ### UGC verwijderen uit Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Als u gebruikersgegevens uit de Adobe Analytics wilt verwijderen, volgt u de opdracht [Workflow voor GDPR-analyse](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); aangezien de API geen gebruikersgegevens van Adobe Analytics verwijdert.
+Om gebruikersgegevens van Adobe Analytics te schrappen, volg het [ GDPR Analytics werkschema ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); aangezien API gebruikersgegevens van Adobe Analytics niet schrapt.
 
 Raadpleeg de volgende afbeelding voor Adobe Analytics-variabeletoewijzingen die AEM Communities gebruikt:
 
-![AEM gemeenschappen variabele mapping voor Adobe Analytics](assets/analytics-communities-mapping.png)
+![ AEM gemeenschappen veranderlijke afbeelding voor Adobe Analytics ](assets/analytics-communities-mapping.png)
 
 ## Gebruikersaccount uitschakelen {#disable-a-user-account}
 
-**deleteUserAccount(ResourceResolver resourceResolver, String user)** Hiermee kunt u een gebruikersaccount uitschakelen.
+**deleteUserAccount (ResourceResolver resourceResolver, de gebruiker van het Koord)** hulp maakt een gebruikersrekening onbruikbaar.
 
-* **user**: Geautoriseerde id van de gebruiker.
+* **gebruiker**: Vergunning identiteitskaart van de gebruiker.
 
 >[!NOTE]
 >
 >Als een gebruiker wordt uitgeschakeld, wordt alle door de gebruiker gegenereerde inhoud op de server verwijderd.
 
-Bijvoorbeeld om het profiel van een gebruiker te schrappen die erkende identiteitskaart heeft `weston.mccall@dodgit.com` door HTTP-POST verzoek, gebruik de volgende parameters:
+Als u bijvoorbeeld het profiel wilt verwijderen van een gebruiker met een autoriseerbare id `weston.mccall@dodgit.com` via een HTTP-POST-aanvraag, gebruikt u de volgende parameters:
 
 * user = `weston.mccall@dodgit.com`
 * operation = `deleteUser`
 
 >[!NOTE]
 >
->deleteUserAccount()-API schakelt alleen een gebruikersprofiel in het systeem uit en verwijdert de UGC. Als u echter een gebruikersprofiel van het systeem wilt verwijderen, navigeert u naar **CRXDE Lite**: [https://&lt;server>/crx/de](https://localhost:4502/crx/de), zoek het gebruikersknooppunt en verwijder het.
+>deleteUserAccount()-API schakelt alleen een gebruikersprofiel in het systeem uit en verwijdert de UGC. Nochtans, om een gebruikersprofiel van het systeem te schrappen, navigeer aan **CRXDE Lite**: [ https://&lt;server>/crx/de ](https://localhost:4502/crx/de), bepaal de plaats van de gebruikersknoop en schrap het.

@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Wanneer u een adaptief formulier maakt, kunt u een werkbalklay-out voor het formulier opgeven. De werkbalkindeling definieert de opdrachten en de indeling van de werkbalk op het formulier.
 
-De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om dit probleem te verhelpen, biedt AEM Client-side bibliotheekmappen waarmee u uw clientcode in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Zie voor meer informatie [Hoe bibliotheken aan de clientzijde werken in AEM.](/help/sites-developing/clientlibs.md)
+De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om dit probleem te verhelpen, biedt AEM Client-side bibliotheekmappen waarmee u uw clientcode in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Voor gedetailleerde informatie, zie [ hoe de cliënt-zijbibliotheken in AEM werken.](/help/sites-developing/clientlibs.md)
 
-![Voorbeeldindeling van de werkbalk](assets/default_toolbar_layout.png)
+![ lay-out van de Steekproef van de toolbar ](assets/default_toolbar_layout.png)
 
 Voorbeeldindeling van de werkbalk
 
 Aangepaste formulieren bieden een set out-of-the-box-indelingen:
 
-![Werkbalklay-outs beschikbaar buiten de box ](assets/toolbar1.png)
+![ de lay-outs van de Toolbar beschikbaar uit-van-de-doos ](assets/toolbar1.png)
 
 Werkbalklay-outs beschikbaar buiten de box
 
@@ -38,11 +38,11 @@ Bovendien kunt u een aangepaste werkbalklay-out maken.
 
 De volgende procedure beschrijft de stappen voor het maken van een aangepaste werkbalk met drie acties op de werkbalk en de andere acties in een vervolgkeuzelijst op de werkbalk.
 
-Het bijgevoegde inhoudspakket bevat de volledige hieronder beschreven code. Na het installeren van het inhoudspakket opent u `/content/forms/af/CustomLayoutDemo.html` om de demo over de aangepaste werkbalkindeling weer te geven.
+Het bijgevoegde inhoudspakket bevat de volledige hieronder beschreven code. Nadat u het inhoudspakket hebt geïnstalleerd, opent u `/content/forms/af/CustomLayoutDemo.html` om de aangepaste demo over de lay-out van de werkbalk weer te geven.
 
 CustomToolbarLayoutDemo.zip
 
-[Bestand ophalen](assets/customtoolbarlayoutdemo.zip)
+[ krijgt Dossier ](assets/customtoolbarlayoutdemo.zip)
 Aangepaste werkbalkindeling demo
 
 ## Een aangepaste werkbalklay-out maken {#layout-1}
@@ -55,27 +55,27 @@ Aangepaste werkbalkindeling demo
 
    `/libs/fd/af/layouts/toolbar`
 
-   Kopieer bijvoorbeeld de `mobileFixedToolbarLayout` knooppunt van de `/libs/fd/af/layouts/toolbar` aan de `/apps/customlayout/toolbar` map.
+   Kopieer bijvoorbeeld het knooppunt `mobileFixedToolbarLayout` van de map `/libs/fd/af/layouts/toolbar` naar de map `/apps/customlayout/toolbar` .
 
-   Kopieer ook de toolbarCommon.jsp naar de `/apps/customlayout/toolbar` map.
+   Kopieer ook de toolbarCommon.jsp naar de map `/apps/customlayout/toolbar` .
 
    >[!NOTE]
    >
-   >De map die u maakt om de aangepaste lay-outs te behouden, wordt veel gemaakt met de `apps` map.
+   >De map die u maakt om de aangepaste lay-outs te behouden, wordt veel gemaakt met de map `apps` .
 
-1. Wijzig de naam van het gekopieerde knooppunt. `mobileFixedToolbarLayout`, naar `customToolbarLayout.`
+1. Wijzig de naam van het gekopieerde knooppunt, `mobileFixedToolbarLayout` , in `customToolbarLayout.`
 
-   Geef ook een relevante beschrijving voor het knooppunt op. Wijzig bijvoorbeeld jcr:description of the node in **Aangepaste indeling voor werkbalk**.
+   Geef ook een relevante beschrijving voor het knooppunt op. Bijvoorbeeld, verander jcr:beschrijving van de knoop in **lay-out van de Douane voor toolbar**.
 
-   De `guideComponentType` Het lay-outtype wordt bepaald door de eigenschap van het knooppunt. In dit geval is het indelingstype een werkbalk en wordt het daarom weergegeven in het keuzemenu voor de werkbalkindeling.
+   De eigenschap `guideComponentType` van het knooppunt bepaalt het lay-outtype. In dit geval is het indelingstype een werkbalk en wordt het daarom weergegeven in het keuzemenu voor de werkbalkindeling.
 
-   ![Een knooppunt met relevante beschrijving](assets/toolbar3.png)
+   ![ knoop A met relevante beschrijving ](assets/toolbar3.png)
 
    Een knooppunt met relevante beschrijving
 
-   De nieuwe aangepaste werkbalkindeling wordt weergegeven in het dialoogvenster **Werkbalk Adaptief formulier** dialoogconfiguratie.
+   Uw nieuwe lay-out van de douanetoolbar wordt getoond in de **Aangepaste de dialoogvakje van de Toolbar van de Vorm**.
 
-   ![Lijst met beschikbare werkbalkindelingen](assets/toolbar4.png)
+   ![ Lijst van beschikbare toolbarlay-outs ](assets/toolbar4.png)
 
    Lijst met beschikbare werkbalkindelingen
 
@@ -85,13 +85,13 @@ Aangepaste werkbalkindeling demo
 
 1. Selecteer deze aangepaste werkbalkindeling en klik op OK.
 
-   Clientlib (javascript en css) toevoegen in het dialoogvenster `/etc/customlayout` en neemt de verwijzing van de clientlib op in de `customToolbarLayout.jsp`.
+   Voeg clientlib (javascript en css) in de `/etc/customlayout` knoop toe en neem de verwijzing van clientlib in `customToolbarLayout.jsp` op.
 
-   ![Het pad van het bestand customToolbarLayout.css](assets/toolbar_3.png)
+   ![ Weg van het customToolbarLayout.css- dossier ](assets/toolbar_3.png)
 
    Het pad van het bestand customToolbarLayout.css
 
-   Monster `customToolbarLayout.jsp`:
+   Voorbeeld `customToolbarLayout.jsp` :
 
    ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -109,7 +109,7 @@ Aangepaste werkbalkindeling demo
    >
    >Voeg de klasse guidetoolbar voor de lay-out toe. De stijl voor de werkbalk buiten het vak wordt gedefinieerd ten opzichte van de klasse guidetoolbar.
 
-   Monster `toolBarCommon.jsp`:
+   Voorbeeld `toolBarCommon.jsp` :
 
    ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
@@ -230,6 +230,6 @@ Aangepaste werkbalkindeling demo
 >
 >De beschrijving die u in de vorige stap hebt bijgewerkt, wordt weergegeven in de vervolgkeuzelijst Indeling.
 
-![Bureaubladweergave van de werkbalk met de aangepaste layout](assets/toolbar_1.png)
+![ mening van de Desktop van de toolbar van de douanelay-out ](assets/toolbar_1.png)
 
 Bureaubladweergave van de werkbalk met de aangepaste layout

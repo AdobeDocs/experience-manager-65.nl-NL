@@ -47,8 +47,8 @@ Tijdens het voorvertonen van een letter wordt de fout &#39;&#39;Fout bij het lad
 
 Stel de lettercache op de publicatieinstantie opnieuw in door de volgende stappen uit te voeren en probeer de letter vervolgens opnieuw weer te geven:
 
-1. Ga naar **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** en aanmelden als Admin.
-1. Selecteren **Correspondentiebeheerconfiguraties**.
-1. In **Correspondentiebeheerconfiguraties**, uitschakelen **Lettercache inschakelen** en klik vervolgens op **Opslaan.**
-1. Controleren **Lettercache inschakelen** en klik vervolgens op **Opslaan**.
+1. Ga naar **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** en meld u aan als Admin.
+1. Selecteer **Configuraties van het Beheer van de Correspondentie**.
+1. In **Configuraties van het Beheer van de Correspondentie**, maak **onbruikbaar toelaten het Geheime voorgeheugen van de Brief** en klik dan **sparen.**
+1. Controle **laat het Geheime voorgeheugen van de Brief** toe en klik dan **sparen**.
 1. Bekijk de brief opnieuw.

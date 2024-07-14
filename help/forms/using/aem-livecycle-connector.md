@@ -21,15 +21,15 @@ Met de Adobe Experience Manager (AEM) LiveCycle-aansluiting kunt u LiveCycle ES4
 
 ## AEM server verbinden met Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
-AEM de Schakelaar van het LiveCycle maakt deel uit van [AEM Forms-invoegtoepassing](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het AEM Forms-add-onpakket hebt geïnstalleerd, voert u de volgende stappen uit, zodat u gegevens van de server van het LiveCycle kunt toevoegen aan de AEM webconsole.
+AEM de Schakelaar van het LiveCycle maakt deel uit van het [ toe:voegen-op pakket van AEM Forms ](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het AEM Forms-add-onpakket hebt geïnstalleerd, voert u de volgende stappen uit, zodat u gegevens van de server van het LiveCycle kunt toevoegen aan de AEM webconsole.
 
 1. Zoek in AEM webconsoleconfiguratiebeheer de configuratiecomponent van de client SDK van het Adobe LiveCycle.
 1. Klik op de component zodat u de URL van de configuratieserver, de gebruikersnaam en het wachtwoord kunt bewerken.
-1. Controleer de instellingen en klik op **Opslaan**.
+1. Herzie de montages en klik **sparen**.
 
 Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste:
 
-* **Server-URL** - Geeft de URL naar de server van het LiveCycle op. Als LiveCycle en AEM moeten communiceren via https, start AEM met de volgende JVM
+* **Server URL** - specificeert URL aan de server van het LiveCycle. Als LiveCycle en AEM moeten communiceren via https, start AEM met de volgende JVM
 
   ```java
   argument
@@ -38,9 +38,9 @@ Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste:
 
   -optie.
 
-* **Gebruikersnaam**- Hier geeft u de gebruikersnaam op van de account die wordt gebruikt om communicatie tot stand te brengen tussen AEM en LiveCycle. De account is een gebruikersaccount voor LiveCycles die gemachtigd is om Acrobat Services te starten.
-* **Wachtwoord**- Geeft het wachtwoord op.
-* **Servicenaam** - Geeft de services aan die worden gestart met de gebruikersgegevens die in de velden Gebruikersnaam en Wachtwoord zijn opgegeven. Door gebrek, worden geen geloofsbrieven overgegaan terwijl de aanvang van de diensten van het LiveCycle.
+* **Gebruikersnaam** - specificeert de gebruikersnaam van de rekening die wordt gebruikt om communicatie tussen AEM en LiveCycle te vestigen. De account is een gebruikersaccount voor LiveCycles die gemachtigd is om Acrobat Services te starten.
+* **Wachtwoord** - specificeert het wachtwoord.
+* **Naam van de Dienst** - specificeert de diensten die begonnen zijn gebruikend de gebruikersgeloofsbrieven die op de gebieden van de Gebruikersbenaming en van het Wachtwoord worden verstrekt. Door gebrek, worden geen geloofsbrieven overgegaan terwijl de aanvang van de diensten van het LiveCycle.
 
 ## Documentservices starten {#starting-document-services}
 
@@ -52,7 +52,7 @@ De toepassingen van de cliënt kunnen de diensten van het LiveCycle programmatic
 
 AEM de Schakelaar van het LiveCycle vereenvoudigt de stroom door deze cliëntinstanties als diensten bloot te stellen OSGi die kunnen worden betreden gebruikend standaardOSGi middelen. De aansluiting van het LiveCycle biedt de volgende functies:
 
-* Clientinstanties als OSGi-service: de clients die als OSGI-bundels zijn verpakt, worden vermeld in de [Lijst met Acrobat-services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sectie. Elke cliëntjar registreert de cliëntinstantie als dienst OSGi met de Registratie van de Dienst OSGi.
+* De instanties van de cliënt als Dienst OSGi: De cliënten die als bundels worden verpakt OSGI zijn vermeld in de [ de lijst van de Diensten van Acrobat ](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sectie. Elke cliëntjar registreert de cliëntinstantie als dienst OSGi met de Registratie van de Dienst OSGi.
 * Doorgave gebruikersreferenties: de verbindingsgegevens die nodig zijn om verbinding te maken met de server van het LiveCycle worden centraal beheerd.
 * ServiceClientFactory Service: om de processen te starten, heeft de clienttoepassing toegang tot de ServiceClientFactory-instantie.
 
@@ -80,7 +80,7 @@ Om de blootgestelde dienst van binnen AEM te beginnen, voer de volgende stappen 
    </dependency>
    ```
 
-   Om de dienst te beginnen, voeg een overeenkomstige Geweven gebiedsdeel voor de dienst toe. Voor de lijst van gebiedsdelen, zie [Acrobat Services List](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Bijvoorbeeld, voor de Generate dienst van de PDF voegt de volgende gebiedsdeel toe:
+   Om de dienst te beginnen, voeg een overeenkomstige Geweven gebiedsdeel voor de dienst toe. Voor de lijst van gebiedsdelen, zie [ Lijst van de Diensten van Acrobat ](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Bijvoorbeeld, voor de Generate dienst van de PDF voegt de volgende gebiedsdeel toe:
 
    ```xml
    <dependency>

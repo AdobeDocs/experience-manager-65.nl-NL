@@ -33,15 +33,15 @@ De &quot;vriendelijke&quot; naam van een Acrobat Reader DC-extensiecertificaat i
 
 De tekenreeks bevat de volgende elementen:
 
-**Certificaattype:** Beschrijft de AEM vormmodules die het certificaat activeert, en het niveau van activering, zoals ARE 2D Volledige Streepjescode. Zie de kolom Type in de tabel in de sectie Certificaatprofielen voor een lijst met beschikbare certificaattypen.
+**het type van Certificaat:** beschrijft de AEM vormmodules die het certificaat activeert, en het niveau van activering, zoals ARE 2D Volledige Streepjescode. Zie de kolom Type in de tabel in de sectie Certificaatprofielen voor een lijst met beschikbare certificaattypen.
 
-**Type implementatie:** Hiermee wordt het beoogde gebruik van het certificaat aangegeven, zoals Productie. De waarde kan Evaluatie of Productie zijn. Voor een lijst van plaatsingstypes verbonden aan elk certificaattype, zie de kolom van het type van Plaatsing in de lijst in de sectie van de Profielen van het Certificaat.
+**Type van Plaatsing:** wijst op het voorgenomen gebruik van het certificaat, zoals Productie. De waarde kan Evaluatie of Productie zijn. Voor een lijst van plaatsingstypes verbonden aan elk certificaattype, zie de kolom van het type van Plaatsing in de lijst in de sectie van de Profielen van het Certificaat.
 
-**Versie gebruiksrechten:** Beschrijft de versie van het algoritme van gebruiksrechten waarvoor het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat- of Acrobat Reader DC-extensies.
+**versie van de rechten van het Gebruik:** beschrijft de versie van het algoritme van gebruiksrechten dat het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat- of Acrobat Reader DC-extensies.
 
-**Profielcode:** De profielcode is een korte beschrijving van volledige certificaateigenschappen, zoals bijvoorbeeld P8. Zie de kolom Profielcode in de tabel in de sectie Certificaatprofielen voor een lijst met profielcodes die aan elk bestandstype zijn gekoppeld.
+**code van het Profiel:** de profielcode is een korte beschrijving van volledige certificaateigenschappen, zoals voorbeeld, P8. Zie de kolom Profielcode in de tabel in de sectie Certificaatprofielen voor een lijst met profielcodes die aan elk bestandstype zijn gekoppeld.
 
-**Serienummer:** Aan elk Adobe afgegeven certificaat wordt een serienummer toegekend, bijvoorbeeld 0002054. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
+**Serie aantal:** een serienummer wordt toegewezen aan elk certificaat dat door Adobe, zoals 0002054 wordt uitgegeven. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
 
 ## Certificaatprofielen {#certificate-profiles}
 
@@ -152,7 +152,7 @@ De certificaten van de Integratie van de partner worden uitgegeven aan Adobe par
 
 Adobe-certificaten voor intern gebruik worden binnen de Adobe gebruikt ter ondersteuning van softwareontwikkeling, -integratie, -prototypen en -demonstratie. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
 
-Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig gedurende de maximale periode die is toegestaan door de certificeringsinstantie (CA), weergegeven als *Max* in de tabel Certificaatprofielen.
+Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig voor de maximumperiode die door het certificaatgezag (CA) wordt toegelaten, die als *Max* in de lijst van Profielen van het Certificaat wordt getoond.
 
 ## Gebruikersrechten voor Acrobat Reader DC-extensies {#acrobat-reader-dc-extensions-usage-rights}
 

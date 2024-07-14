@@ -21,7 +21,7 @@ ht-degree: 0%
 AEM verstrekt de dienst die u toelaat om te vormen en te controleren hoe de koekjes met uw Web-pagina&#39;s worden gebruikt:
 
 * Een configureerbare server-zijdienst handhaaft een lijst van koekjes die kunnen worden gebruikt.
-* Met een JavaScript-API kan uw JavaScript-code controleren of een cookie kan worden gebruikt.
+* Met een JavaScript API kan uw JavaScript-code controleren of een cookie kan worden gebruikt.
 
 Gebruik deze functie om ervoor te zorgen dat uw pagina&#39;s voldoen aan de toestemming van uw gebruikers met betrekking tot het gebruik van cookies.
 
@@ -29,7 +29,7 @@ Gebruik deze functie om ervoor te zorgen dat uw pagina&#39;s voldoen aan de toes
 
 Configureer de Adobe Granite Opt-Out Service om op te geven hoe cookies op uw webpagina&#39;s worden gebruikt. In de volgende tabel worden de eigenschappen beschreven die u kunt configureren.
 
-Om de dienst te vormen, kunt u gebruiken [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of [Voeg een configuratie OSGi aan de bewaarplaats toe](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt. Voor een configuratie OSGi, de dienst PID is `com.adobe.granite.optout`.
+Om de dienst te vormen, kunt u de [ Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) gebruiken of [ een configuratie OSGi aan de bewaarplaats ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) toevoegen. In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt. Voor een configuratie OSGi, is de dienst PID `com.adobe.granite.optout`.
 
 | Naam eigenschap (webconsole) | OSGi Eigenschapnaam | Beschrijving |
 |---|---|---|
@@ -39,14 +39,14 @@ Om de dienst te vormen, kunt u gebruiken [Webconsole](/help/sites-deploying/conf
 
 ## Cookiegebruik valideren {#validating-cookie-usage}
 
-Gebruik client-side JavaScript om de Adobe Granite Opt-Out Service aan te roepen om te controleren of u een cookie kunt gebruiken. Met het JavaScript-object Granite.OptOutUtil kunt u een van de volgende taken uitvoeren:
+Gebruik client-side JavaScript om de Adobe Granite Opt-Out Service te bellen om te controleren of u een cookie kunt gebruiken. Met het JavaScript-object Granite.OptOutUtil kunt u een van de volgende taken uitvoeren:
 
 * Vraag een lijst met cookienamen aan die aangeven dat de gebruiker geen toestemming geeft cookies te gebruiken voor traceringsdoeleinden.
 * Verkrijg een lijst van koekjes die kunnen worden gebruikt.
 * Bepaal of de webbrowser een cookie bevat die aangeeft dat de gebruiker geen toestemming geeft voor het gebruik van cookies voor tracering.
 * Bepaal of een specifieke cookie kan worden gebruikt.
 
-granite.utils [clientbibliotheekmap](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) biedt het Granite.OptOutUtil-object. Voeg de volgende code toe aan de paginakop JSP om een koppeling naar de JavaScript-bibliotheek op te nemen:
+granite.utils [ omslag van de cliëntbibliotheek ](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) verstrekt het voorwerp Granite.OptOutUtil. Voeg de volgende code toe aan de paginakop JSP om een koppeling naar de JavaScript-bibliotheek op te nemen:
 
 `<ui:includeClientLib categories="granite.utils" />`
 
@@ -75,7 +75,7 @@ De namen van de cookies die, indien aanwezig, aangeven dat de gebruiker geen toe
 
 Geen.
 
-**Retourneert**
+**Keert** terug
 
 Een array van cookie namen.
 
@@ -87,7 +87,7 @@ De namen van cookies die kunnen worden gebruikt, ongeacht de toestemming van de 
 
 Geen.
 
-**Retourneert**
+**Keert** terug
 
 Een array van cookie namen.
 
@@ -99,18 +99,18 @@ Hiermee wordt bepaald of de browser van de gebruiker cookies bevat die aangeven 
 
 Geen.
 
-**Retourneert**
+**Keert** terug
 
-Een booleaanse waarde van `true` als een cookie wordt gevonden die aangeeft dat er geen toestemming is, en als de waarde `false` als er geen cookies zijn die aangeven dat er geen toestemming is gegeven.
+Een Booleaanse waarde: `true` als een cookie wordt gevonden die geen toestemming aangeeft, en de waarde `false` als er geen cookies zijn die aangeven dat er geen toestemming is.
 
 ### maySetCookie(cookieName), functie {#maysetcookie-cookiename-function}
 
-Hiermee wordt bepaald of een specifieke cookie in de browser van de gebruiker kan worden gebruikt. Deze functie is gelijk aan het gebruik van de `isOptedOut` om te bepalen of het opgegeven cookie is opgenomen in de lijst die `getWhitelistCookieNames` functie retourneert.
+Hiermee wordt bepaald of een specifieke cookie in de browser van de gebruiker kan worden gebruikt. Deze functie is gelijk aan het gebruik van de functie `isOptedOut` om te bepalen of het opgegeven cookie is opgenomen in de lijst die de functie `getWhitelistCookieNames` retourneert.
 
 **Parameters**
 
 * cookieName: String. De naam van het cookie.
 
-**Retourneert**
+**Keert** terug
 
-Een booleaanse waarde van `true` indien `cookieName` kan worden gebruikt, of een waarde van `false` indien `cookieName` kan niet worden gebruikt.
+Een Booleaanse waarde: `true` if `cookieName` kan worden gebruikt, of de waarde `false` if `cookieName` kan niet worden gebruikt.

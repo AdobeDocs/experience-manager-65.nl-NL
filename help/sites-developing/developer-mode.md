@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Modus voor ontwikkelaars{#developer-mode}
 
-Tijdens het bewerken van pagina&#39;s in Adobe Experience Manager (AEM), diverse [modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) zijn beschikbaar, inclusief de modus Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
+Wanneer het uitgeven van pagina&#39;s in Adobe Experience Manager (AEM), verscheidene [ wijzen ](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) beschikbaar, met inbegrip van de wijze van de Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
 
 * **[Componenten](#components)** voor het bekijken van structuur en prestatiesinformatie.
-* **[Tests](#tests)** voor het uitvoeren van tests en het analyseren van de resultaten.
-* **[Fouten](#errors)** om eventuele problemen te zien.
+* **[Tests](#tests)** voor het runnen van tests en het analyseren van de resultaten.
+* **[Fouten](#errors)** om het even welke problemen te zien die voorkomen.
 
 Deze hulp een ontwikkelaar om:
 
@@ -39,7 +39,7 @@ Deze hulp een ontwikkelaar om:
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
 >
 >   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
->* Is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` groep.
+>* Is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` -groep.
 
 >[!CAUTION]
 >
@@ -56,25 +56,25 @@ Deze hulp een ontwikkelaar om:
 >
 >Zie het volgende:
 >
->* artikel in de kennisbank; [Problemen AEM TouchUI oplossen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)voor meer tips en hulpmiddelen.
->* AEM Gems-sessie over [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* Het artikel van de Kennisbank, [ het Oplossen van problemen AEM kwesties TouchUI ](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor verdere uiteinden en hulpmiddelen.
+>* AEM Gems zitting over [ AEM 6.0 de Wijze van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Ontwerpmodus openen {#opening-developer-mode}
 
-De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Als u het deelvenster wilt openen, selecteert u **Ontwikkelaar** in de moduskiezer op de werkbalk van de pagina-editor:
+De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Om het paneel te openen, selecteer **Ontwikkelaar** van de wijzesselecteur in de toolbar van de paginaredacteur:
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![ chlimage_1-11 ](assets/chlimage_1-11.png)
 
 Het deelvenster bestaat uit twee tabbladen:
 
-* **[Componenten](/help/sites-developing/developer-mode.md#components)** - Dit toont een componentenboom, gelijkend op [inhoudsstructuur](/help/sites-authoring/author-environment-tools.md#content-tree) voor auteurs
+* **[Componenten](/help/sites-developing/developer-mode.md#components)** - dit toont een componentenboom, gelijkend op de [ inhoudsboom ](/help/sites-authoring/author-environment-tools.md#content-tree) voor auteurs
 
-* **[Fouten](/help/sites-developing/developer-mode.md#errors)** - Als er problemen optreden, worden de details voor elke component weergegeven.
+* **[Fouten](/help/sites-developing/developer-mode.md#errors)** - wanneer de problemen voorkomen, worden de details getoond voor elke component.
 
 ### Onderdelen {#components}
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![ chlimage_1-12 ](assets/chlimage_1-12.png)
 
 Dit toont een componentenboom die:
 
@@ -95,16 +95,16 @@ Dit kan helpen bij:
 
 Elk componentitem kan worden weergegeven (bijvoorbeeld:
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![ chlimage_1-13 ](assets/chlimage_1-13.png)
 
-* **Details weergeven**: een koppeling naar een lijst met:
+* **Details van de Mening**: een verbinding aan een lijst die toont:
 
    * alle componentscripts die worden gebruikt om de component te renderen.
    * het inhoudspad van de gegevensopslagruimte voor deze specifieke component.
 
-  ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
-* **Script bewerken**: een koppeling die:
+* **geef Manuscript** uit: een verbinding die:
 
    * Hiermee wordt het componentscript in CRXDE Lite geopend.
 
@@ -113,24 +113,24 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
    * De hiërarchie binnen de geselecteerde component.
    * Renderingtijden voor de geselecteerde component afzonderlijk, eventuele afzonderlijke componenten die erin zijn genest en het gecombineerde totaal.
 
-  ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![ chlimage_1-15 ](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Sommige koppelingen wijzen naar scripts onder `/libs`. Deze zijn echter uitsluitend ter referentie, u **mogen** alles onder bewerken `/libs`, omdat eventuele wijzigingen die u aanbrengt, verloren kunnen gaan. Dit komt doordat deze vertakking mogelijk verandert wanneer u een hotfix of functiepakket bijwerkt of toepast. Breng de wijzigingen aan die u onder `/apps`. Zie [Bedekkingen en overschrijvingen](/help/sites-developing/overlays.md).
+>Sommige koppelingen verwijzen naar scripts onder `/libs` . Nochtans, zijn deze slechts voor verwijzing, moet u **niets** uitgeven onder `/libs`, aangezien om het even welke veranderingen u aanbrengt kunnen worden verloren. Dit komt doordat deze vertakking mogelijk verandert wanneer u een hotfix of functiepakket bijwerkt of toepast. Breng de gewenste wijzigingen aan onder `/apps` . Zie [ Bekledingen en treedt met voeten ](/help/sites-developing/overlays.md).
 
 ### Fouten {#errors}
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![ chlimage_1-16 ](assets/chlimage_1-16.png)
 
-Hopelijk **Fouten** tab is altijd leeg (zoals hierboven), maar wanneer er problemen optreden, worden de volgende details voor elke component weergegeven:
+Hopelijk zal het **lusje van Fouten** altijd leeg zijn (zoals hierboven), maar wanneer de problemen voorkomen worden de volgende details getoond voor elke component:
 
 * Een waarschuwing als de component een ingang aan het foutenlogboek, samen met details van de fout en directe verbindingen aan de aangewezen code binnen CRXDE Lite schrijft.
 * Een waarschuwing als de component een beheersessie opent.
 
-Wanneer bijvoorbeeld een niet-gedefinieerde methode wordt aangeroepen, wordt de resulterende fout weergegeven in het dialoogvenster **Fouten** tab:
+Bijvoorbeeld, in een situatie waar een ongedefinieerde methode wordt geroepen, wordt de resulterende fout getoond in het **lusje van Fouten**:
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![ chlimage_1-17 ](assets/chlimage_1-17.png)
 
 Het componentitem in de structuur van het tabblad Componenten wordt ook gemarkeerd met een indicator wanneer een fout optreedt.
 
@@ -140,4 +140,4 @@ Het componentitem in de structuur van het tabblad Componenten wordt ook gemarkee
 >
 >In AEM 6.2 werden de testfuncties van de modus Ontwikkelaar opnieuw geïmplementeerd als een zelfstandige toepassing Tools.
 >
->Zie voor meer informatie [Uw gebruikersinterface testen](/help/sites-developing/hobbes.md).
+>Voor volledige details, zie [ het Testen van Uw UI ](/help/sites-developing/hobbes.md).

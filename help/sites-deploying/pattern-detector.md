@@ -30,7 +30,7 @@ Dit zou kunnen dienen als een beoordeling van de ontwikkelingsinspanningen die g
 
 ## Instellen {#how-to-set-up}
 
-De patroondetector wordt afzonderlijk vrijgegeven als een [één pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) werken aan om het even welke bron AEM versies van 6.1 tot 6.5 richtend AEM 6.5 verbetering. U kunt het programma installeren met de [Pakketbeheer](/help/sites-administering/package-manager.md).
+De Detector van het Patroon wordt afzonderlijk vrijgegeven als a [ één pakket ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) werkend aan om het even welke bron AEM versies van 6.1 tot 6.5 richtend AEM 6.5 verbetering. Het kan worden geïnstalleerd gebruikend de [ Manager van het Pakket ](/help/sites-administering/package-manager.md).
 
 ## Hoe wordt het gebruikt {#how-to-use}
 
@@ -41,18 +41,18 @@ De patroondetector wordt afzonderlijk vrijgegeven als een [één pakket](https:/
 >* de detectiesnelheid verhogen
 >* vertraging van bedrijfskritieke instanties vermijden
 >
->tegelijkertijd wordt aangeraden het programma uit te voeren **over testomgevingen** die zo dicht mogelijk bij productiegerelateerde toepassingen op het gebied van gebruikerstoepassingen, inhoud en configuraties zijn.
+>allebei tezelfdertijd wordt het geadviseerd om het **op het opvoeren milieu&#39;s** in werking te stellen die zo dicht mogelijk aan productiemeenden op de gebieden van gebruikerstoepassingen, inhoud en configuraties zijn.
 
 U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te controleren:
 
-* **Via de Felix Inventory Console:**
+* **via de console van de Inventaris van de Felix:**
 
-1. Ga naar de AEM webconsole door naar *https://serveraddress:serverport/system/console/configMgr*
-1. Selecteren **Status - Patroondetector** zoals weergegeven in de onderstaande afbeelding:
+1. Ga naar de AEM Console van het Web door aan *https://serveraddress:serverport/system/console/configMgr* te doorbladeren
+1. Selecteer **Status - de Detector van het Patroon** zoals aangetoond in het hieronder beeld:
 
-   ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
+   ![ screenshot-2018-2-5pattern-detector ](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Via een reactieve, op tekst gebaseerde of reguliere JSON-interface**
+* **via een reactieve die tekst of regelmatige interface JSON** wordt gebaseerd
 * **Via een reactieve JSON-lijninterface, **dat een afzonderlijk JSON-document in elke regel genereert.
 
 Beide methoden worden hieronder beschreven:
@@ -82,7 +82,7 @@ De uitvoer ziet er als volgt uit:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-De voortgang kan worden gefilterd met de `grep` opdracht:
+De voortgang kan worden gefilterd met de opdracht `grep` :
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -98,7 +98,7 @@ Dit resulteert in de volgende uitvoer:
 
 ## De JSON-interface afhandelen {#handling-the-json-interface}
 
-Op dezelfde manier kan JSON worden verwerkt met de [jq, gereedschap](https://stedolan.github.io/jq/) zodra het wordt gepubliceerd.
+Op dezelfde manier kan JSON worden verwerkt gebruikend het [ jq hulpmiddel ](https://stedolan.github.io/jq/) zodra het wordt gepubliceerd.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -208,7 +208,7 @@ Met de uitvoer:
 
 >[!NOTE]
 >
->U wordt aangeraden de gehele uitvoer van krullen in het bestand op te slaan en deze vervolgens via `jq` of `grep` om het informatietype te filteren.
+>U wordt aangeraden de gehele uitvoer van krullen naar het bestand op te slaan en deze vervolgens via `jq` of `grep` te verwerken om het gegevenstype te filteren.
 
 ## Detectiebereik {#scope}
 
@@ -216,7 +216,7 @@ Met de huidige patroondetector kunt u het volgende controleren:
 
 * OSGi bundelt uitvoer en invoer wanverhouding
 * De het verkopen middeltypes en supertypes (met onderzoek-weg inhoudsoverlays) gebruiken
-* definities van eiken-indexen (compatibiliteit)
+* definities van Oak-indexen (compatibiliteit)
 * VLT-pakketten (overmatig gebruik)
 * rep:Compatibiliteit van gebruikersknooppunten (in de context van OAuth-configuratie)
 

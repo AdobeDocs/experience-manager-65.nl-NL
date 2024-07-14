@@ -20,4 +20,4 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Hoewel de component Layout Container beschikbaar is in de klassieke gebruikersinterface, is de volledige functionaliteit alleen beschikbaar en ondersteund in de interface met aanraakbediening. Zie [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) in de standaardontwerpdocumentatie voor meer informatie.
+>Hoewel de component Layout Container beschikbaar is in de klassieke gebruikersinterface, is de volledige functionaliteit alleen beschikbaar en ondersteund in de interface met aanraakbediening. Zie [ Responsieve Lay-out ](/help/sites-authoring/responsive-layout.md) in de standaard auteursdocumentatie voor verdere details.

@@ -20,38 +20,38 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Als u Adobe Experience Manager (AEM) niet gebruikt als bron voor inhoudsbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
 >**Vereiste:**
 >
->Voordat u met AEM Mobile On-demand Services gaat werken en de stappen in deze gids voor aan de slag gaat, moeten gebruikers vertrouwd zijn met [AEM](/help/sites-deploying/deploy.md).
+>Alvorens met AEM Mobile On-demand Services te werken en de stappen binnen deze begonnen gids te volgen, zouden de gebruikers met [ AEM ](/help/sites-deploying/deploy.md) vertrouwd moeten zijn.
 
 ## AEM Mobile-auteur {#aem-mobile-author}
 
-An ***AEM auteur* (of *Marketer*)**gebruikt aangepaste of kant-en-klare sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt dan gebruikt door *Auteurs AEM* het creëren van rijke en relevante ervaringen binnen de app, waaronder integratie met de rest van de Adobe Experience Cloud.
+Een ***AEM Auteur* (of *Markering*) **gebruikt douane-ontwikkelde of uit-van-de-doos malplaatjes en componenten om pagina&#39;s toe te voegen en uit te geven, componenten te slepen en neer te zetten en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toe te voegen. AEM ingebouwde inhoudsredacteur wordt dan gebruikt door *AEM Auteurs* om rijke en relevante ervaringen binnen app, met inbegrip van integratie met de rest van Adobe Experience Cloud tot stand te brengen.
 
 Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On-demand Services.
 
-**Authoring AEM inhoud voor AEM Mobile On-demand Services App** omvat de volgende acties:
+**Authoring AEM Inhoud voor AEM Mobile On-demand Services App** impliceert het volgende acties:
 
 * [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Handelingen voor het maken en configureren van toepassingen](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Cloud Configuration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Inhoud beheren](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) aan de slag.
+Om over **Diensten van de Inhoud** te leren, zie [ het Overzicht van de Diensten van de Inhoud ](/help/mobile/develop-content-as-a-service.md) om begonnen te worden.
 
 >[!NOTE]
 >
 >Meer in het algemeen over grondbeginselen van malplaatjes en componenten in AEM leren, zie de volgende middelen:
 >
->* [Sjablonen](/help/sites-developing/templates.md)
+>* [ Malplaatjes ](/help/sites-developing/templates.md)
 >* [Onderdelen](/help/sites-developing/components.md)
 >
 

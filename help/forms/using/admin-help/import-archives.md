@@ -39,12 +39,12 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. Als u Configure klikt, vormt de Configure pagina van Eindpunten, waar u om het even welke veranderingen kunt aanbrengen die u vereist:
 
    * Om een eindpunt anders te noemen of zijn beschrijving uit te geven, klik het.
-   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Zie voor meer informatie over de instellingen van Taakbeheer [Eindpunten van Taakbeheer configureren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Zie voor meer informatie over de instellingen voor gecontroleerde mappen de [Instellingen voor het eindpunt van gecontroleerde mappen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Zie voor meer informatie over de e-mailinstellingen [Instellingen voor e-maileindpunt](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Voor details over de montages van de Manager van de Taak, zie [ Vormende eindpunten van de Manager van de Taak ](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Voor details over de Gecontroleerde montages van de Omslag, zie [ Gecontroleerde montages van het omslageindpunt ](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Voor details over de E-mailmontages, zie [ E-mail eindpuntmontages ](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Om een EJB eindpunt toe te voegen, voegt de klik EJB toe en specificeert een naam en een beschrijving voor het eindpunt.
    * Om een SOAP eindpunt toe te voegen, voegt de klik SOAP toe en specificeert een naam en een beschrijving voor het eindpunt.
-   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Zie voor meer informatie over de instellingen voor verwijderen [Instellingen voor eindpunten verwijderen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Voor details over de Verwijderende montages, zie [ het Verwijderen van eindpuntmontages ](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.
 
@@ -52,41 +52,41 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. Als een proces of de dienst in LCA configuratieparameters heeft, vormt een pagina van Parameters, waar u de de dienstparameters vormt en daarna klikt.
 1. Breng op de pagina Beveiligingsprofiel configureren alle gewenste wijzigingen aan:
 
-   * **Vereisen bezoekers om voor authentiek te verklaren:** Deze instelling geeft aan of de service met of zonder referenties kan worden aangeroepen.
+   * **vereist bezoekers om voor authentiek te verklaren:** Dit het plaatsen wijst erop of de dienst met of zonder geloofsbrieven kan worden aangehaald.
 
-     Indien *De bezoekers worden momenteel vereist om voor authentiek te verklaren* wordt getoond, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders, zal de aanroepende poging worden geweigerd. Om de behoefte te verwijderen om voor authentiek te verklaren, staat de klik Niet voor authentiek verklaarde Bezoekers toe.
+     Als *de Bezoekers momenteel worden vereist om voor authentiek te verklaren* wordt getoond, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders, zal de aanroepende poging worden geweigerd. Om de behoefte te verwijderen om voor authentiek te verklaren, staat de klik Niet voor authentiek verklaarde Bezoekers toe.
 
-     Indien *Bezoekers hoeven niet te worden geverifieerd* wordt getoond, te hoeven de bezoeker van de dienst niet voor authentiek worden verklaard. De aanroeping van de dienst zal altijd slagen omdat er geen vergunningscontrole is. Om authentificatie te vereisen, vereist de klik Bezoekers om voor authentiek te verklaren.
+     Als *de Bezoekers niet worden vereist om voor authentiek te verklaren* wordt getoond, te hoeven de bezoeker van de dienst niet voor authentiek worden verklaard. De aanroeping van de dienst zal altijd slagen omdat er geen vergunningscontrole is. Om authentificatie te vereisen, vereist de klik Bezoekers om voor authentiek te verklaren.
 
-   * **Uitvoeren als:** Specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
+   * **Looppas als:** specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
 
-     **Niet opgegeven:** Het standaardgedrag wordt gebruikt.
+     **Niet gespecificeerd:** het standaardgedrag wordt gebruikt.
 
-     **Invoker:** Gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
+     **Invoker:** gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
 
-     **Systeem:** De service wordt uitgevoerd met volledige rechten. Dit is de standaardinstelling voor langlevende processen.
+     **Systeem:** stelt de dienst met volledige voorrechten in werking. Dit is de standaardinstelling voor langlevende processen.
 
-     **Benoemde gebruiker:** Hiermee kunt u de service als een specifieke gebruiker uitvoeren. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven. Hier kunt u de gebruiker zoeken en selecteren.
+     **Benoemde Gebruiker:** laat u toe om de dienst als specifieke gebruiker in werking te stellen. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven. Hier kunt u de gebruiker zoeken en selecteren.
 
    * Als u een principal aan het beveiligingsprofiel wilt toevoegen, klikt u op Afbeelding toevoegen en selecteert u de gebruiker of groep die u als principal wilt toevoegen. Klik daarna en selecteer dan de toestemmingen u aan dit hoofd wilt toewijzen:
 
-     **INVOKE_PERM:** Om alle verrichtingen op de dienst aan te halen
+     **INVOKE_PERM:** om alle verrichtingen op de dienst aan te halen
 
-     **MODIFY_CONFIG_PERM:** Om de configuratie van de dienst te wijzigen
+     **MODIFY_CONFIG_PERM:** om de configuratie van de dienst te wijzigen
 
-     **SUPERVISOR_PERM:** Om de gegevens van de procesinstantie voor de dienst te bekijken die van een proces wordt gecreeerd
+     **SUPERVISOR_PERM:** om procesinstantiegegevens voor de dienst te bekijken die van een proces wordt gecreeerd
 
-     **START_STOP_PERM:** Om de dienst te beginnen en te stoppen
+     **START_STOP_PERM:** om de dienst te beginnen en tegen te houden
 
-     **ADD_REMOVE_ENDPOINTS_PERM:** Om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
+     **ADD_REMOVE_ENDPOINTS_PERM:** om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
 
-     **CREATE_VERSION_PERM:** Een versie van de service maken
+     **CREATE_VERSION_PERM:** om een versie van de dienst te creëren
 
-     **DELETE_VERSION_PERM:** Een versie van de service verwijderen
+     **DELETE_VERSION_PERM:** om een versie van de dienst te schrappen
 
-     **MODIFY_VERSION_PERM:** Om een versie van de dienst te wijzigen
+     **MODIFY_VERSION_PERM:** om een versie van de dienst te wijzigen
 
-     **READ_PERM:** De service weergeven
+     **READ_PERM:** om de dienst te bekijken
 
      Klik op Voltooid om de principal aan het beveiligingsprofiel toe te voegen.
 
@@ -106,12 +106,12 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. De Configure pagina van Eindpunten verschijnt, waar u om het even welke veranderingen kunt aanbrengen die u vereist:
 
    * Om een eindpunt anders te noemen of zijn beschrijving uit te geven, klik het.
-   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Zie voor meer informatie over de instellingen van Taakbeheer [Eindpunten van Taakbeheer configureren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Zie voor meer informatie over de instellingen voor gecontroleerde mappen de [Instellingen voor het eindpunt van gecontroleerde mappen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Zie voor meer informatie over de e-mailinstellingen [Instellingen voor e-maileindpunt](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Voor details over de montages van de Manager van de Taak, zie [ Vormende eindpunten van de Manager van de Taak ](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Voor details over de Gecontroleerde montages van de Omslag, zie [ Gecontroleerde montages van het omslageindpunt ](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Voor details over de E-mailmontages, zie [ E-mail eindpuntmontages ](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Om een EJB eindpunt toe te voegen, voegt de klik EJB toe en specificeert een naam en een beschrijving voor het eindpunt.
    * Om een SOAP eindpunt toe te voegen, voegt de klik SOAP toe en specificeert een naam en een beschrijving voor het eindpunt.
-   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Zie voor meer informatie over de instellingen voor verwijderen [Instellingen voor eindpunten verwijderen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Voor details over de Verwijderende montages, zie [ het Verwijderen van eindpuntmontages ](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.
 
@@ -119,41 +119,41 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. Als een proces of de dienst in LCA configuratieparameters heeft, vormt een pagina van Parameters, waar u de de dienstparameters vormt en daarna klikt.
 1. Op de Configure pagina van het Profiel van de Veiligheid, kunt u om het even welke veranderingen aanbrengen die u vereist:
 
-   * **Vereisen bezoekers om voor authentiek te verklaren:** Deze instelling geeft aan of de service met of zonder referenties kan worden aangeroepen.
+   * **vereist bezoekers om voor authentiek te verklaren:** Dit het plaatsen wijst erop of de dienst met of zonder geloofsbrieven kan worden aangehaald.
 
-     Indien *De bezoekers worden momenteel vereist om voor authentiek te verklaren* wordt getoond, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders, zal de aanroepende poging worden geweigerd. Om de behoefte te verwijderen om voor authentiek te verklaren, staat de klik Niet voor authentiek verklaarde Bezoekers toe.
+     Als *de Bezoekers momenteel worden vereist om voor authentiek te verklaren* wordt getoond, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders, zal de aanroepende poging worden geweigerd. Om de behoefte te verwijderen om voor authentiek te verklaren, staat de klik Niet voor authentiek verklaarde Bezoekers toe.
 
-     Indien *Bezoekers hoeven niet te worden geverifieerd* wordt getoond, kan de bezoeker van de dienst of niet voor authentiek worden verklaard. De aanroeping van de dienst zal altijd slagen omdat er geen vergunningscontrole is. Om authentificatie te vereisen, vereist de klik Bezoekers om voor authentiek te verklaren.
+     Als *de Bezoekers niet worden vereist om voor authentiek te verklaren* wordt getoond, kan de bezoeker van de dienst of niet voor authentiek worden verklaard. De aanroeping van de dienst zal altijd slagen omdat er geen vergunningscontrole is. Om authentificatie te vereisen, vereist de klik Bezoekers om voor authentiek te verklaren.
 
-   * **Uitvoeren als:** Specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
+   * **Looppas als:** specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
 
-     **Niet opgegeven:** Het standaardgedrag wordt gebruikt.
+     **Niet gespecificeerd:** het standaardgedrag wordt gebruikt.
 
-     **Invoker:** Gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
+     **Invoker:** gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
 
-     **Systeem:** De service wordt uitgevoerd met volledige rechten. Dit is de standaardinstelling voor langlevende processen.
+     **Systeem:** stelt de dienst met volledige voorrechten in werking. Dit is de standaardinstelling voor langlevende processen.
 
-     **Benoemde gebruiker:** Hiermee kunt u de service als een specifieke gebruiker uitvoeren. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven. Hier kunt u de gebruiker zoeken en selecteren.
+     **Benoemde Gebruiker:** laat u toe om de dienst als specifieke gebruiker in werking te stellen. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven. Hier kunt u de gebruiker zoeken en selecteren.
 
    * Als u een principal aan het beveiligingsprofiel wilt toevoegen, klikt u op Afbeelding toevoegen en selecteert u de gebruiker of groep die u als principal wilt toevoegen. Klik daarna en selecteer dan de toestemmingen u aan dit hoofd wilt toewijzen:
 
-     **INVOKE_PERM:** Om alle verrichtingen op de dienst aan te halen
+     **INVOKE_PERM:** om alle verrichtingen op de dienst aan te halen
 
-     **MODIFY_CONFIG_PERM:** Om de configuratie van de dienst te wijzigen
+     **MODIFY_CONFIG_PERM:** om de configuratie van de dienst te wijzigen
 
-     **SUPERVISOR_PERM:** Om de gegevens van de procesinstantie voor de dienst te bekijken die van een proces wordt gecreeerd
+     **SUPERVISOR_PERM:** om procesinstantiegegevens voor de dienst te bekijken die van een proces wordt gecreeerd
 
-     **START_STOP_PERM:** Om de dienst te beginnen en te stoppen
+     **START_STOP_PERM:** om de dienst te beginnen en tegen te houden
 
-     **ADD_REMOVE_ENDPOINTS_PERM:** Om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
+     **ADD_REMOVE_ENDPOINTS_PERM:** om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
 
-     **CREATE_VERSION_PERM:** Een versie van de service maken
+     **CREATE_VERSION_PERM:** om een versie van de dienst te creëren
 
-     **DELETE_VERSION_PERM:** Een versie van de service verwijderen
+     **DELETE_VERSION_PERM:** om een versie van de dienst te schrappen
 
-     **MODIFY_VERSION_PERM:** Om een versie van de dienst te wijzigen
+     **MODIFY_VERSION_PERM:** om een versie van de dienst te wijzigen
 
-     **READ_PERM:** De service weergeven
+     **READ_PERM:** om de dienst te bekijken
 
      Klik op Voltooid om de principal aan het beveiligingsprofiel toe te voegen.
 

@@ -20,10 +20,10 @@ ht-degree: 0%
 
 U kunt de tekenset opgeven waarmee de uitvoerstream wordt gecodeerd.
 
-1. Klik in de beheerconsole op **[!UICONTROL Services > output]**.
-1. Selecteer onder Internationalisatie een tekenset in de lijst Tekenset. Deze instelling is afhankelijk van de instelling `TransformationFormat` en `PrintFormat` opgegeven via de API. Als u een andere tekenset dan de vermelde wilt opgeven, selecteert u Aangepast en geeft u een coderingswaarde op in het vak dat wordt weergegeven.
+1. Klik in de beheerconsole op **[!UICONTROL Services > output]** .
+1. Selecteer onder Internationalisatie een tekenset in de lijst Tekenset. Deze instelling is afhankelijk van de `TransformationFormat` en `PrintFormat` die via de API zijn opgegeven. Als u een andere tekenset dan de vermelde wilt opgeven, selecteert u Aangepast en geeft u een coderingswaarde op in het vak dat wordt weergegeven.
 
-   Indien `TransformationFormat` is PDF en PDF/A of `PrintFormat` PCL, PostScript, Zebra-label, IPL, DPL, TPCL, GenericColorPCL of GenericPSLevel3, worden alleen specifieke tekensets ondersteund.
+   Als `TransformationFormat` PDF en PDF/A of `PrintFormat` PCL, PostScript, Zebra-label, IPL, DPL, TPCL, GenericColorPCL of GenericPSLevel3 is, worden alleen specifieke tekensets ondersteund.
 
    De tekenset moet een geldige canonieke naam zijn. De standaardwaarde is ISO-8859-1.
 

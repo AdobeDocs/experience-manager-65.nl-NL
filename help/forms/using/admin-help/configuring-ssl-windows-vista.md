@@ -26,14 +26,14 @@ Om SSL op Windows Vista™ te vormen, hebt u een SSL certificaat met sleutels va
 
 U kunt keytool uitvoeren met één opdracht die alle informatie bevat die nodig is om het certificaat en sleutelarchief te maken.
 
-**Een SSL-certificaat maken**
+**creeer een SSL certificaat**
 
-1. Navigeer naar een opdrachtprompt *`[JAVA HOME]`*/bin en typ de volgende opdracht om het certificaat en sleutelarchief te maken:
+1. In een bevelherinnering, navigeer aan *`[JAVA HOME]`*/bin en typ het volgende bevel om het certificaat en keystore tot stand te brengen:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Hostnaam* `, OU=`*Groepsnaam* `, O=`*Bedrijfsnaam* `,L=`*Plaats* `, S=`*Staat* `, C=`*Landcode* `" -alias`*&quot;LC Cert&quot;* `-keypass` `key`*_* *password* `-keystore`*sleutelbestandsnaam* `.keystore`
+   *`, OU=`* de Naam van de Groep *`, O=`* Naam van het Bedrijf *`,L=`* Naam van de Stad *`, S=`* Staat *`, C=`* Code van het Land *`" -alias`* &quot;Cert LC&quot;*`-keypass``key`* _** sleutelwoord `-keystore`*storename* `.keystore``keytool -genkey -keyalg RSA -dname "CN=`**
 
    >[!NOTE]
    >
-   >Vervangen *`[JAVA_HOME]`met de directory waarin de JDK is geïnstalleerd, en vervangt u de cursieve tekst door waarden die overeenkomen met uw omgeving.*
+   >Vervang *`[JAVA_HOME]`door de map waarin de JDK is geïnstalleerd en vervang de cursieve tekst door waarden die overeenkomen met uw omgeving.*
 
-1. Type `changeit` als het wachtwoord. Dit wachtwoord is de standaardinstelling voor een Java-installatie en de systeembeheerder kan deze hebben gewijzigd.
+1. Typ `changeit` als wachtwoord. Dit wachtwoord is de standaardinstelling voor een Java-installatie en de systeembeheerder kan deze hebben gewijzigd.

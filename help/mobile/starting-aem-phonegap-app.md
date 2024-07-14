@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Voor ontwikkelaars is het de beste plek om te beginnen de Adobe Experience Manager Mobile Starterkit in github te bekijken
 
@@ -30,18 +30,18 @@ De starterkit zorgt ervoor dat je snel door de basisbeginselen van AEM Mobile-on
 
 De ontwikkelaars kunnen dit voorbeeld gebruiken als beginpunt voor het uitproberen van een AEM Mobile-toepassing met PhoneGap. Het runnen door starterkit en de verwijzingstoepassing geeft een stevig inzicht in de grondbeginselen om rijke Mobiele Toepassingen tot stand te brengen.
 
-* Gebruik de [AEM PhoneGap Starter-kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) om apps te maken die geschikt zijn voor de AEM Mobile-catalogus.
-* A [referentie-app](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met de volledige bron is gemaakt, waarin veel van de nieuwe functies in AEM Mobile worden getoond, of u nu een bestaande app naar AEM Mobile migreert of een nieuwe toepassing start.
-* Alle voorbeelden zijn te vinden op github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) en omvat het overvullen van uw project met Maven.
-* De meeste conferentiegesprekken gebruiken [Zelfstudie Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), die u ook in GitHub kunt vinden en op het gebruik van inheemse rekbaarheid van Apache Cordova geconcentreerd is.
+* Gebruik [ AEM de Uitrusting van de Aanzet PhoneGap ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) om apps tot stand te brengen geschikt voor de catalogus van AEM Mobile.
+* A [ verwijzings app ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met volledige bron is gecreeerd die vele van de nieuwe eigenschappen in AEM Mobile aantoont, of u een bestaande app in AEM Mobile migreert of vers begint.
+* Alle steekproeven kunnen op github worden gevonden: [ https://github.com/Adobe-Marketing-Cloud-Apps ](https://github.com/Adobe-Marketing-Cloud-Apps) en omvatten bootstrapping uw project met Maven.
+* De meeste conferentiegesprekken gebruiken het [ Keuken leerprogramma van de Sink ](https://github.com/blefebvre/aem-phonegap-kitchen-sink), dat u ook in GitHub kunt vinden en op het gebruik van inheemse rekbaarheid van Apache Cordova geconcentreerd is.
 
 >[!NOTE]
 >
->Als u eenmaal de kans hebt gehad om vertrouwd te raken met de starterkit, is het belangrijk om meer te weten te komen over Adobe Experience Manager *componenten en sjablonen.*
+>Zodra u een kans hebt gehad om met starterkit vertrouwd te maken, is het belangrijk om over Adobe Experience Manager *componenten en malplaatjes te leren.*
 
 ## Sjablonen en componenten {#templates-and-components}
 
-AEM *Sjablonen* en *Componenten* laat lijn-van-bedrijfseigenaars toe om douaneervaringen tot stand te brengen. Beide *Templates *and *Componenten* zijn beschikbaar uit-van-de-doos of kunnen door u, de ontwikkelaar worden ontwikkeld of door bestaande componenten uit te breiden of (geavanceerd) tot stand te brengen greenfield. *Sjablonen* en *Componenten* Dit is de manier waarop de AEM auteur kan slepen en neerzetten om aantrekkelijke en relevante ervaringen te creëren.
+AEM *Malplaatjes* en *Componenten* laten lijn-van-zaken eigenaars toe om douaneervaringen tot stand te brengen. Zowel *Templates *als *Componenten* zijn beschikbaar uit-van-de-doos of kunnen door u, de ontwikkelaar of worden ontwikkeld door bestaande componenten uit te breiden of (geavanceerd) te creëren greenfield. *Sjablonen* en *Componenten* zijn wat de AEM Auteur toestaat om te slepen en te laten vallen om het in dienst nemen en relevante ervaringen tot stand te brengen.
 
 1. [Componenten maken](/help/sites-developing/components.md)
 1. [Sjablonen maken](/help/sites-developing/templates.md)

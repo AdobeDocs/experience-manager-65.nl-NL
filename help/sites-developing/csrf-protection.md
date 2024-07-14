@@ -30,18 +30,18 @@ Het framework maakt gebruik van tokens om te garanderen dat het verzoek van de k
 
 ### Afhankelijkheden {#dependencies}
 
-Elke component die afhankelijk is van de component `granite.jquery` afhankelijkheid kan automatisch profiteren van het CSRF-beschermingskader. Als niet, voor om het even welk van uw componenten, moet u een gebiedsdeel verklaren aan `granite.csrf.standalone` voordat u het framework kunt gebruiken.
+Elke component die afhankelijk is van `granite.jquery` , kan automatisch profiteren van het CSRF-beveiligingsframework. Als dat niet het geval is, moet u voor een van uw componenten een afhankelijkheid naar `granite.csrf.standalone` declareren voordat u het framework kunt gebruiken.
 
 ### De crypto-sleutel repliceren {#replicating-crypto-keys}
 
-Om de tokens te gebruiken, moet u het binaire getal HMAC aan alle instanties in uw plaatsing herhalen. Zie [Replicatie van de HMAC-sleutel](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) voor meer informatie .
+Om de tokens te gebruiken, moet u het binaire getal HMAC aan alle instanties in uw plaatsing herhalen. Zie [ het Repliceren van de sleutel HMAC ](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) voor meer details.
 
 >[!NOTE]
 >
->Zorg ervoor dat u ook de vereiste [Wijzigingen in de configuratie van Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) het CSRF-beschermingskader te gebruiken.
+>Zorg ervoor u ook de noodzakelijke [ configuratieveranderingen van Dispatcher ](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) aanbrengt om het Kader van de Bescherming te gebruiken CSRF.
 
 >[!NOTE]
 >
->Als u het manifestgeheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;asteren;**&quot; aan manifest om ervoor te zorgen neemt het teken niet de CSRF symbolische generatievraag offline. Raadpleeg deze voor meer informatie [link](https://www.w3.org/TR/offline-webapps/).
+>Als u het duidelijke geheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;ast toevoegt;**&quot;aan manifest om ervoor te zorgen het teken niet de symbolische generatievraag CSRF offline neemt. Voor meer informatie, raadpleeg deze [ verbinding ](https://www.w3.org/TR/offline-webapps/).
 >
-Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie [OWASP-pagina voor XSS-aanvragen voor andere sites](https://owasp.org/www-community/attacks/csrf).
+Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie de [ pagina van het Verzoek van de Versmeding van de Versmeding van de Departerie OWASP ](https://owasp.org/www-community/attacks/csrf).

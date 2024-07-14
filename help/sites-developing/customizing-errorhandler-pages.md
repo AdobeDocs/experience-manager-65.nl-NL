@@ -20,30 +20,30 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM) wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, bijvoorbeeld door het volgende weer te geven:
 
-![chlimage_1-67](assets/chlimage_1-67a.png)
+![ chlimage_1-67 ](assets/chlimage_1-67a.png)
 
-Door het systeem verschafte scripts bestaan (onder `/libs/sling/servlet/errorhandler`) om te reageren op foutcodes, standaard is het volgende beschikbaar bij een standaard CQ-instantie:
+Door het systeem verschafte scripts bestaan (onder `/libs/sling/servlet/errorhandler`) om te reageren op foutcodes. Standaard zijn de volgende scripts beschikbaar met een standaard CQ-instantie:
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM is gebaseerd op Apache Sling. Zie als zodanig [Foutafhandeling](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) voor meer informatie over foutafhandeling bij verkoop.
+>AEM is gebaseerd op Apache Sling. Als dusdanig, zie [ de Behandeling van de Fout ](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) voor gedetailleerde informatie over het Verdelen van fout behandeling.
 
 >[!NOTE]
 >
->Voor een instantie van de auteur: [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md) is standaard ingeschakeld. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, wordt [ CQ WCM zuivert Filter ](/help/sites-deploying/osgi-configuration-settings.md) toegelaten door gebrek. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
->Voor een publicatie-instantie is het CQ WCM-foutopsporingsfilter *altijd* uitgeschakeld (zelfs als geconfigureerd als ingeschakeld).
+>Op publiceer instantie, is CQ WCM zuivert Filter *altijd* gehandicapt (zelfs als gevormd zoals toegelaten).
 
 ## Hoe te om Pagina&#39;s aan te passen die door de Handler van de Fout worden getoond {#how-to-customize-pages-shown-by-the-error-handler}
 
-U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. Uw aangepaste pagina&#39;s worden gemaakt onder `/apps` en bedekken de standaardpagina&#39;s (die onder `/libs`).
+U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. De aangepaste pagina&#39;s worden gemaakt onder `/apps` en bedekken de standaardpagina&#39;s (onder `/libs` ).
 
 >[!NOTE]
 >
->Zie [Bedekkingen gebruiken](/help/sites-developing/overlays.md) voor meer informatie .
+>Zie [ Gebruikend Bedekkingen ](/help/sites-developing/overlays.md) voor meer details.
 
 1. Kopieer de standaardscripts in de opslagplaats:
 
@@ -52,7 +52,7 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
 
    Aangezien het bestemmingspad niet standaard bestaat, moet u het creëren wanneer het doen dit voor het eerst.
 
-1. Navigeren naar `/apps/sling/servlet/errorhandler` en voer een van de volgende handelingen uit:
+1. Navigeer naar `/apps/sling/servlet/errorhandler` en voer een van de volgende handelingen uit:
 
    * bewerk het juiste bestaande script, zodat u de vereiste informatie kunt opgeven.
    * Maak en bewerk een nieuw script voor de vereiste code.
@@ -69,7 +69,7 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
 
 HTTP 500 fouten worden veroorzaakt door server-zijuitzonderingen.
 
-* **[500 Interne serverfout](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+* **[500 Interne Fout van de Server ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 De server heeft een onverwachte voorwaarde aangetroffen waardoor deze de aanvraag niet kan uitvoeren.
 
 Wanneer de verzoekverwerking in een uitzondering resulteert, het kader van Apache Sling (dat AEM wordt voortgebouwd op):
@@ -82,16 +82,16 @@ Wanneer de verzoekverwerking in een uitzondering resulteert, het kader van Apach
 
   in het lichaam van de reactie.
 
-Door [aanpassen van de pagina&#39;s die worden weergegeven door de fouthandler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` kan worden gemaakt. Het wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` wordt uitgevoerd uitdrukkelijk; namelijk van een uitzonderingsvanger.
+Door [ aan te passen kunnen de pagina&#39;s die door de foutenmanager ](#how-to-customize-pages-shown-by-the-error-handler) worden getoond a `500.jsp` manuscript worden gecreeerd. Deze wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` expliciet wordt uitgevoerd, dat wil zeggen van een uitzonderingscatcher.
 
-Anders is de antwoordcode ingesteld op 500, maar wordt de `500.jsp` script niet uitgevoerd.
+Anders is de antwoordcode ingesteld op 500, maar wordt het script `500.jsp` niet uitgevoerd.
 
-Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fouthandler gelijk zijn aan de uitzonderingsklasse (of superklasse). Om al dergelijke uitzonderingen te behandelen, kunt u een manuscript tot stand brengen `/apps/sling/servlet/errorhandler/Throwable.js`p of `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fouthandler gelijk zijn aan de uitzonderingsklasse (of superklasse). Om al dergelijke uitzonderingen te behandelen, kunt u een manuscript `/apps/sling/servlet/errorhandler/Throwable.js` p of `/apps/sling/servlet/errorhandler/Exception.jsp` tot stand brengen.
 
 >[!CAUTION]
 >
->Voor een instantie van de auteur: [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md) is standaard ingeschakeld. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Op een auteursinstantie, wordt [ CQ WCM zuivert Filter ](/help/sites-deploying/osgi-configuration-settings.md) toegelaten door gebrek. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
->Voor een aangepaste fout-handler zijn reacties met code 500 nodig - dus de [CQ WCM-foutopsporingsfilter moet worden uitgeschakeld](/help/sites-deploying/osgi-configuration-settings.md). Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
+>Voor een douane fout-manager, zijn de reacties met code 500 nodig - zodat moet de [ CQ WCM zuivert Filter ](/help/sites-deploying/osgi-configuration-settings.md) worden onbruikbaar gemaakt. Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
 >
->Voor een publicatie-instantie is het CQ WCM-foutopsporingsfilter *altijd* uitgeschakeld (zelfs als geconfigureerd als ingeschakeld).
+>Op publiceer instantie, is CQ WCM zuivert Filter *altijd* gehandicapt (zelfs als gevormd zoals toegelaten).

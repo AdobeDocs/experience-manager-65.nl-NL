@@ -25,28 +25,28 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>sociale/ideatie/componenten/hbs/ideatie</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
    <td>Nee</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.stemden<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
+   <td> <a href="clientlibs.md"><strong> clientllibs </strong></a></td>
+   <td>cq.social.hbs.voice<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/ideation/components/hbs/ideation/ideation.hbs<br /> /libs/social/ideation/components/hbs/ideation/ideationlists.hbs<br /> /libs/social/ideation/components/hbs/ideation/composer.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td> /libs/social/ideation/components/hbs/ideation/clientlibs/ideation.css</td>
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie <a href="ideation-feature.md">Ideatiefunctie</a></td>
+   <td>Zie </a> de Eigenschap van 0} Ideatie<a href="ideation-feature.md"></td>
   </tr>
  </tbody>
 </table>
@@ -55,4 +55,4 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
 
 ### Idealisatiefunctie {#ideation-function}
 
-Een community-sitestructuur die de [Idealisatiefunctie](functions.md#ideation-function)bevat een configuratie `ideation` component.
+Een communautaire plaatsstructuur die de [ functie van de Ideatie ](functions.md#ideation-function) omvat, omvat een gevormde `ideation` component.

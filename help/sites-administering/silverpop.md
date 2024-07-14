@@ -35,46 +35,46 @@ Nadat Silverpop Engage is geconfigureerd, kunt u nieuwsbrieven of e-mails public
 
 ## Een Silverpop-configuratie maken {#creating-a-silverpop-configuration}
 
-Silverpop-configuraties kunnen worden toegevoegd door **Cloud Servicen**, **Gereedschappen**, of **API-eindpunten**. Alle methoden worden beschreven in deze sectie.
+Silverpop configuraties kunnen als **Cloud Servicen**, **Hulpmiddelen**, of **API eindpunten** worden toegevoegd. Alle methoden worden beschreven in deze sectie.
 
 ### Silverpop configureren met Cloud Servicen {#configuring-silverpop-via-cloudservices}
 
 Een Silverpop-configuratie in Cloud Servicen maken:
 
-1. Klik in AEM op **Gereedschappen** > **Implementatie** > **Cloud Servicen**. (Of rechtstreeks toegang tot `https://<hostname>:<port>/etc/cloudservices.html`.)
-1. Klik onder services van derden op **Silverop Engage** en vervolgens **Configureren**. Het Silverpop-configuratievenster wordt geopend.
+1. In AEM, klik **Hulpmiddelen** > **Plaatsing** > **Cloud Servicen**. (Of u hebt rechtstreeks toegang vanaf `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Onder derdediensten, klik **Silverop Ingenieur** en dan **vorm**. Het Silverpop-configuratievenster wordt geopend.
 
    >[!NOTE]
    >
    >Silverpop Engage is niet beschikbaar als optie onder services van derden, tenzij u het pakket downloadt van Package Share.
 
-1. Voer een titel en eventueel een naam in en klik op **Maken**. Het** Silverpop Settings* configuratievenster wordt geopend.
+1. Ga een titel en naar keuze, een naam in en klik **creëren**. Het** Silverpop Settings* configuratievenster wordt geopend.
 1. Voer de gebruikersnaam en het wachtwoord in en selecteer een API-eindpunt in de vervolgkeuzelijst.
-1. Klikken **Verbind met Silverpop.** Wanneer de verbinding tot stand is gebracht, wordt het dialoogvenster met succes weergegeven. Klikken **OK** dus sluit u het venster af. U kunt naar Silverpop gaan door op **Ga naar Silverpop Engage**.
-1. Silverpop is geconfigureerd. U kunt de configuratie bewerken door op **Bewerken**.
+1. Klik **verbinden met Silverpop.** Wanneer de verbinding tot stand is gebracht, wordt het dialoogvenster met succes weergegeven. Klik **O.K.** zodat gaat u het venster weg. U kunt naar Silverpop gaan door **te klikken gaat naar de Steilverpop Ingenieur**.
+1. Silverpop is geconfigureerd. U kunt de configuratie uitgeven door **te klikken geeft** uit.
 1. Ook, kan het framework Silverpop Engage voor persoonlijke acties worden geconfigureerd door titel en naam (optioneel) te bieden. Klik op Maken om het framework voor de reeds geconfigureerde Silverpop-verbinding te maken.
 
-   De ingevoerde kolommen van de gegevensuitbreiding kunnen later door de AEM worden gebruikt - **Tekst en personalisatie**.
+   De ingevoerde kolommen van de gegevensuitbreiding kunnen later door de AEM worden gebruikt - **Tekst en Personalization**.
 
 ### Silverpop configureren via gereedschappen {#configuring-silverpop-via-tools}
 
 Een Silverpop-configuratie maken in de gereedschappen:
 
-1. Klik in AEM op **Gereedschappen** > **Implementatie** > **Cloud Servicen**. Of navigeer daar rechtstreeks door naar `https://<hostname>:<port>/misadmin#/etc`.
-1. Selecteren **Gereedschappen** vervolgens **configuraties van Cloud Servicen,** dan **Silverpop-engine**.
-1. Klikken **Nieuw**.
+1. In AEM, klik **Hulpmiddelen** > **Plaatsing** > **Cloud Servicen**. Of navigeer daar rechtstreeks door naar `https://<hostname>:<port>/misadmin#/etc` te gaan.
+1. Selecteer **Hulpmiddelen**, toen **de Configuraties van Cloud Servicen,** toen **Silverpop Mogelijkheid**.
+1. Klik **Nieuw**.
 
-   ![chlimage_1-6](assets/chlimage_1-6.jpeg)
+   ![ chlimage_1-6 ](assets/chlimage_1-6.jpeg)
 
-1. In de **Pagina maken** venster, voert u de **Titel** en eventueel de **Naam** en klik op **Maken**.
+1. In **creeer het venster van de Pagina**, ga **Titel** en naar keuze de **Naam** in, en klik **creeer**.
 1. Voer de configuratiegegevens in zoals beschreven in stap 4 van de vorige procedure. Volg die procedure zodat kunt u voltooien vormend Silverpop.
 
 ### Meerdere configuraties toevoegen {#adding-multiple-configurations}
 
 Meerdere configuraties toevoegen:
 
-1. Klik op de welkomstpagina op **Cloud Servicen** en klik op **Silverpop-engine**. Klikken **Configuraties tonen** die wordt weergegeven als een of meer Silverpop-configuraties beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
-1. Klik op de knop **+** ondertekenen naast Beschikbare configuraties. Het opent de **Configuraties maken** venster. Volg de vorige configuratieprocedure zodat kunt u een configuratie creëren.
+1. Voor de welkomstpagina, klik **Cloud Servicen** en klik **Silverpop Mogelijkheid**. Klik **tonen de knoop van Configuraties** die verschijnt als één of meerdere configuraties Silverpop beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
+1. Klik op het **+** -teken naast Beschikbare configuraties. Het opent **leidt tot Configuraties** venster. Volg de vorige configuratieprocedure zodat kunt u een configuratie creëren.
 
 ### API-eindpunten configureren voor verbinding met Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}
 
@@ -83,18 +83,18 @@ Op dit moment heeft AEM zes onbeveiligde eindpunten (Engage 1 - 6). Silverpop bi
 De API-eindpunten configureren:
 
 1. Ga naar `/libs/mcm/silverpop/components/silverpoppage/dialog/items/general/items/apiendpoint/options node` op `https://<hostname>:<port>/crxde.`
-1. Klik met de rechtermuisknop en selecteer **Maken** vervolgens **Knooppunt maken**.
-1. Voer de **Naam** als `sp-e0` en kiest u **Type** als `cq:Widget`.
+1. Klik met de rechtermuisknop en selecteer **creeer**, dan **creeer Knoop**.
+1. Ga de **Naam** als `sp-e0` in en kies **Type** als `cq:Widget`.
 1. Twee eigenschappen toevoegen aan het nieuwe knooppunt:
 
    1. **Naam**: `text`, **Type**: `String`, **Waarde**: `Engage 0`
    1. **Naam**: `value`, **Type**: `String`, **Waarde**: `https://api0.silverpop.com`
 
-   ![chlimage_1-42](assets/chlimage_1-42.png)
+   ![ chlimage_1-42 ](assets/chlimage_1-42.png)
 
    Klik op Alles opslaan.
 
-1. Maak nog een knooppunt met **Naam** als `sp-e7` en **Type** als `cq:Widget`.
+1. Creeer één meer knoop met **Naam** als `sp-e7` en **Type** als `cq:Widget`.
 
    Twee eigenschappen toevoegen aan het nieuwe knooppunt:
 
@@ -103,7 +103,7 @@ De API-eindpunten configureren:
 
 1. Als u de bestaande API-eindpunten wilt wijzigen (Engage 1 - 6), klikt u op elk van deze eindpunten een voor een en vervangt u de waarden als volgt:
 
-   | **Node Name** | **Bestaande eindpuntwaarde** | **Nieuwe eindpuntwaarde** |
+   | **Naam van Knoop** | **Bestaande Waarde van het Eindpunt** | **Nieuwe Waarde van het Punt van het Eind** |
    |---|---|---|
    | sp-e1 | `https://api.engage1.silverpop.com/XMLAPI` | `https://api1.silverpop.com` |
    | sp-e2 | `https://api.engage2.silverpop.com/XMLAPI` | `https://api2.silverpop.com` |
@@ -112,6 +112,6 @@ De API-eindpunten configureren:
    | sp-e5 | `https://api.engage5.silverpop.com/XMLAPI` | `https://api5.silverpop.com` |
    | sp-e6 | `https://api.pilot.silverpop.com/XMLAPI` | `https://api6.silverpop.com` |
 
-1. Klikken **Alles opslaan**. AEM is nu klaar om verbinding te maken met Silverpop via beveiligde eindpunten.
+1. Klik **sparen allen**. AEM is nu klaar om verbinding te maken met Silverpop via beveiligde eindpunten.
 
-   ![chlimage_1-7](assets/chlimage_1-7.jpeg)
+   ![ chlimage_1-7 ](assets/chlimage_1-7.jpeg)

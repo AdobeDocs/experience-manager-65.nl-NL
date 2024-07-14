@@ -23,33 +23,33 @@ In een poging om de veiligheid van AEM onophoudelijk te verbeteren, heeft de Ado
 
 ## SSL/TLS standaard inschakelen {#enabling-ssl-tls-by-default}
 
-U kunt standaard beginnen SSL/TLS te configureren door te klikken op het betreffende Postvak IN-bericht van uw AEM startscherm. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op **Alles weergeven**. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
+U kunt standaard beginnen SSL/TLS te configureren door te klikken op het betreffende Postvak IN-bericht van uw AEM startscherm. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Dan, klik **Mening allen**. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
 
-Selecteer in de lijst de optie **HTTPS configureren** waarschuwing:
+In de lijst, selecteer en open **vorm HTTPS** alarm:
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![ chlimage_1-103 ](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->Als de **HTTPS configureren** waakzaamheid is niet aanwezig in Inbox, u kunt rechtstreeks aan de Tovenaar navigeren HTTPS door te gaan *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Als **HTTPS** alarm vormt niet aanwezig in Inbox is, kunt u rechtstreeks aan de Tovenaar navigeren HTTPS door naar *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* te gaan
 
-Een servicegebruiker die **ssl-service** is gemaakt voor deze functie. Zodra u het alarm opent, zult u door de volgende configuratietovenaar worden geleid:
+Een de dienstgebruiker riep **ssl-dienst** is gecreeerd voor deze eigenschap. Zodra u het alarm opent, zult u door de volgende configuratietovenaar worden geleid:
 
-1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de referenties voor de **ssl-service** sleutelarchief van de systeemgebruiker dat de persoonlijke sleutel en vertrouwde opslag voor de luisteraar HTTPS zal bevatten.
+1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de geloofsbrieven voor de **ssl-dienst** belangrijkste opslag van de systeemgebruiker die de privé sleutel en vertrouwensopslag voor de luisteraar HTTPS zal bevatten.
 
-   ![chlimage_1-104](assets/chlimage_1-104.png)
+   ![ chlimage_1-104 ](assets/chlimage_1-104.png)
 
-1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** rechtsboven op de pagina. Vervolgens uploadt u de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL/TLS-verbinding.
+1. Zodra u de geloofsbrieven ingaat, klik **daarna** in de hogere juiste hoek van de pagina. Vervolgens uploadt u de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL/TLS-verbinding.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![ chlimage_1-105 ](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
-   >Ga voor informatie over het genereren van een persoonlijke sleutel en een certificaat voor gebruik met de wizard naar [deze procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder.
+   >Voor info over hoe te om een privé sleutel en een certificaat te produceren om met de tovenaar te gebruiken, zie [ deze procedure ](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder.
 
 1. Geef ten slotte de hostnaam HTTPS en de TCP-poort voor de HTTPS-listener op.
 
-   ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
+   ![ screen_shot_2018-07-25at31658pm ](assets/screen_shot_2018-07-25at31658pm.png)
 
 ## SSL/TLS standaard automatiseren {#automating-ssl-tls-by-default}
 
@@ -96,7 +96,7 @@ De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- sta
 
 Hieronder staan voorbeelden voor zowel een geslaagde reactie als een fout.
 
-**SUCCESVOORBEELD** (status = 200):
+**SUCCESS VOORBEELD** (status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -127,7 +127,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**FOUTVOORBEELD** (status = 500):
+**VOORBEELD VAN DE FOUT** (status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -153,8 +153,8 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 U kunt de installatie van SSL/TLS ook automatiseren door een pakket te uploaden dat al deze vereiste items bevat:
 
-* Het sleutelarchief van de gebruiker van de ssl-dienst. Deze bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
-* De `GraniteSslConnectorFactory` configuratie
+* Het sleutelarchief van de gebruiker van de ssl-dienst. Dit bevindt zich onder */home/users/system/security/ssl-service/keystore* in de gegevensopslagruimte.
+* De `GraniteSslConnectorFactory` -configuratie
 
 ### Een privésleutel/certificaatpaar genereren voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
@@ -189,13 +189,13 @@ Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaa
    openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
    ```
 
-1. Ten slotte uploadt u de **localhostprivate.der** als persoonlijke sleutel en **localhost.crt** als het SSL/TLS-certificaat in stap 2 van de grafische SSL/TLS-wizard die aan het begin van deze pagina wordt beschreven.
+1. Tot slot upload **localhostprivate.der** als Privé Sleutel en **localhost.crt** als SSL/TLS Certificaat in stap 2 van de grafische die tovenaar SSL/TLS aan het begin van deze pagina wordt beschreven.
 
 ### De SSL/TLS-configuratie bijwerken via cURL {#updating-the-ssl-tls-configuration-via-curl}
 
 >[!NOTE]
 >
->Zie [cURL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
+>Zie [ Gebruikend cURL met AEM ](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
 
 U kunt de SSL/TLS-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
 
@@ -205,24 +205,24 @@ Hieronder vindt u de parameters die u kunt gebruiken om de verschillende instell
 
 * `-F "keystorePassword=password"` - het sleutelarchiefwachtwoord;
 
-* `-F "keystorePasswordConfirm=password"` - het keystore-wachtwoord bevestigen;
+* `-F "keystorePasswordConfirm=password"` - bevestig het sleutelarchiefwachtwoord;
 
 * `-F "truststorePassword=password"` - het truststore-wachtwoord;
 
-* `-F "truststorePasswordConfirm=password"` - het truststore-wachtwoord bevestigen;
+* `-F "truststorePasswordConfirm=password"` - bevestig het truststore-wachtwoord;
 
-* `-F "privatekeyFile=@localhostprivate.der"` - de persoonlijke sleutel specificeren;
+* `-F "privatekeyFile=@localhostprivate.der"` - specificeer de privé sleutel;
 
-* `-F "certificateFile=@localhost.crt"` - het certificaat vermelden;
+* `-F "certificateFile=@localhost.crt"` - specificeer het certificaat;
 
-* `-F "httpsHostname=host.example.com"`- de hostnaam te specificeren;
+* `-F "httpsHostname=host.example.com"` - geef de hostnaam op;
 * `-F "httpsPort=8443"` - de poort waaraan de HTTPS-listener werkt.
 
 >[!NOTE]
 >
->De snelste manier om cURL uit te voeren om de configuratie SSL/TLS te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in het dialoogvenster `privatekeyFile` en certificateFile-argumenten.
+>De snelste manier om cURL uit te voeren om de configuratie SSL/TLS te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in de argumenten `privatekeyFile` en certificateFile.
 >
->U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor dat u de opdracht cURL toevoegt aan de opdracht `-u user:passeword` parameter.
+>U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor dat u de opdracht cURL toevoegt aan de parameter `-u user:passeword` .
 >
 >Een correcte post cURL zou als dit moeten kijken:
 
@@ -236,14 +236,14 @@ U kunt de server een certificaatketen sturen door de parameter certificateFile a
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Zodra u het bevel hebt uitgevoerd, verifieer dat alle certificaten het aan keystore maakten. Controleer de **Keystore** vermeldingen van:
-[http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
+Zodra u het bevel hebt uitgevoerd, verifieer dat alle certificaten het aan keystore maakten. Controleer de **1} ingangen van het Toetsenarchief {van:
+[ http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)**
 
 ### Een TLS 1.3-verbinding inschakelen {#enabling-tls-connection}
 
 1. Ga naar de webconsole
-1. Blader vervolgens naar **OSGi** - **Configuratie** - **Adobe graniet SSL Connector Factory**
-1. Ga naar de **Inclusief cementsuites** en voeg de volgende vermeldingen toe. U kunt elke toevoeging bevestigen door op &quot;**+**&quot;, links van het veld, na elke knop in te voegen:
+1. Dan, navigeer aan **OSGi** - **Configuratie** - **Adobe granite SSL Connector Factory**
+1. Ga naar het **Inclusief cipher suites** gebied en voeg de volgende ingangen toe. U kunt elke toevoeging bevestigen door &quot;**+**&quot;knoop links van het gebied te drukken, na het toevoegen van elk in:
 
    * `TLS_AES_256_GCM_SHA384`
    * `TLS_AES_128_GCM_SHA256`

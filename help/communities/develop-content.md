@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Sandbox-inhoud ontwikkelen  {#develop-sandbox-content}
 
-**[Clientlibs toevoegen](add-clientlibs.md)**
+**[voeg Clientlibs](add-clientlibs.md)** toe
 
-Op dit moment is het mogelijk om gemeenschapskenmerken in de sandbox te verkennen, naast het gebruik van [Winkelgemeenschap](../../help/sites-developing/we-retail.md)de [Community Components Guide](components-guide.md), en [Essentiële functies](essentials.md) ter referentie.
+Op dit punt, is het mogelijk om communautaire eigenschappen in de zandbak naast het gebruiken van [ wij-Detailhandel Gemeenschap ](../../help/sites-developing/we-retail.md), de [ Communautaire Gids van Componenten ](components-guide.md), en [ Hoofdzaak van de Eigenschap ](essentials.md) voor verwijzing te onderzoeken.

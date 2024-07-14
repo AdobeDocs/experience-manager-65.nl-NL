@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Probleem {#issue}
 
-Voor AEM Forms on JEE die een relationele gegevensbank gebruikt, zou de tijd op de machine die AEM Forms en relationele gegevensbank ontvangt altijd in absolute synchronisatie moeten zijn. Als de tijd op deze computers niet meer synchroon is, kan de CRX-opslagplaats van AEM Forms op de JEE-server ontoegankelijk worden. Het kan beschadigd lijken en ontoegankelijk worden via URL. De `AuthenticationsupportService missing` fout is geregistreerd.
+Voor AEM Forms on JEE die een relationele gegevensbank gebruikt, zou de tijd op de machine die AEM Forms en relationele gegevensbank ontvangt altijd in absolute synchronisatie moeten zijn. Als de tijd op deze computers niet meer synchroon is, kan de CRX-opslagplaats van AEM Forms op de JEE-server ontoegankelijk worden. Het kan beschadigd lijken en ontoegankelijk worden via URL. De fout `AuthenticationsupportService missing` wordt geregistreerd.
 
 ## Vereisten {#prerequisites}
 
@@ -24,13 +24,13 @@ Maak een back-up van uw CRX-opslagplaats voordat u de onderstaande stappen uitvo
 
 ## Oplossing {#solution}
 
-1. Ga naar  `https://[AEM Forms Server]:[port]/system/console/bundles`.
+1. Ga naar `https://[AEM Forms Server]:[port]/system/console/bundles` .
 
-1. Zoek de `oak-core` bundel en controleer of het programma wordt uitgevoerd.
+1. Zoek de `oak-core` -bundel en controleer of deze wordt uitgevoerd.
 
-1. De opdracht opnieuw starten `oak-core` bundel als deze niet wordt uitgevoerd. Indien  ![De knop Pauzeren](/help/forms/using/assets/stop.png) is aanwezig vóór het pictogram `oak-core` dan geeft de bundel aan dat de bundel actief is.
+1. Start de `oak-core` -bundel opnieuw als deze niet wordt uitgevoerd. Als ![ de knoop van de Pauze ](/help/forms/using/assets/stop.png) pictogram vóór de `oak-core` bundel aanwezig is, dan wijst het erop dat de bundel in lopende staat is.
 
-1. Als het probleem nog steeds niet is opgelost, kunt u het terugzetten vanaf de back-up van de CRX-opslagplaats of de CRX-opslagplaats opnieuw opbouwen als er geen back-up beschikbaar is.
+1. Als het probleem nog steeds niet is opgelost, kunt u het herstellen vanaf de CRX-opslagplaats via de back-up of de CRX-opslagplaats opnieuw opbouwen als er geen back-up beschikbaar is.
 
 
 ## Van toepassing op {#applies-to}

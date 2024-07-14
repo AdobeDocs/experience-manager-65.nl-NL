@@ -25,29 +25,29 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>sociaal/kalender/onderdelen/hbs/kalender</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
    <td>Nee</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong> clientllibs </strong></a></td>
    <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td>/libs/social/calendar/components/hbs/calendar/calendar.hbs</td>
    <td> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td>/libs/social/calendar/components/hbs/calendar/clientlibs/css/calendar.css<br /> /libs/social/calendar/components/hbs/calendar/clientlibs/css/jqueryui.css</td>
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>zie <a href="calendar.md">Kalenders gebruiken</a></td>
+   <td>zie <a href="calendar.md"> Gebruikend Kalenders </a></td>
   </tr>
  </tbody>
 </table>
@@ -56,25 +56,25 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Agenda-API&#39;s](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [ Kalender APIs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Kalender-eindpunten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [ Eindpunten van de Kalender ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Kalenderfunctie {#calendar-function}
 
-Een community-sitestructuur die de [Kalenderfunctie](functions.md#calendar-function) heeft een `calendar` geconfigureerd. De functie Kalender ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](users.md#privileged-members-group).
+Een communautaire plaatsstructuur die de [ functie van de Kalender ](functions.md#calendar-function) omvat heeft een `calendar` gevormde component. De functie van de Kalender steunt het identificeren van a [ bevoorrechte groep van de lidgebruiker ](users.md#privileged-members-group).
 
 ### Toegang tot agendaberichten (UGC) {#accessing-calendar-posts-ugc}
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
-**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
+**de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [Refactoring voor sociale hulpmiddelen](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes
+* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - inleiding en overzicht van het opslagruimtegebruik
+* [ SRP en Hoofdzaak UGC ](srp-and-ugc.md) - de gebruiksmethodes en voorbeelden van SRP
+* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen
+* [ SocialUtils die ](socialutils.md) Refactoring - in kaart gebrachte nutsmethodes aan huidige SRP hulpprogrammamethodes

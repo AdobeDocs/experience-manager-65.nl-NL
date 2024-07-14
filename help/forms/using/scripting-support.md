@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Scriptondersteuning voor HTML5-formulieren {#scripting-support-for-html-forms}
 
-JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden ondersteund, worden hieronder weergegeven:
+JavaScript, FormCalc-eigenschappen en methoden die worden ondersteund in HTML5-formulieren worden hieronder weergegeven:
 
 ## $event {#event}
 
@@ -26,31 +26,31 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  <tbody>
   <tr>
    <th>Eigenschap </th>
-   <th>Beschrijving<br /> </th>
+   <th>Beschrijving <br /> </th>
    <th>Uitzondering</th>
   </tr>
   <tr>
    <td><code>prevText</code></td>
    <td>Hiermee geeft u de inhoud van het veld op voordat deze wordt gewijzigd als reactie op de acties van een gebruiker. Deze waarde kan worden teruggeroepen, vergelijkbaar met een functie voor ongedaan maken.</td>
-   <td><p>Werkt niet voor vervolgkeuzelijsten en keuzelijsten. <code>PrevText </code>werkt niet correct in de volgende gevallen:</p>
+   <td><p>Werkt niet voor vervolgkeuzelijsten en keuzelijsten. <code>PrevText </code> werkt niet correct voor de volgende gevallen:</p>
     <ul>
      <li>Bij het typen van bepaalde speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden op de iPad, en </li>
-     <li>Voor het veld Datum (wanneer de datum door de kalender wordt ingevoerd).<br /> </li>
+     <li>Voor het gebied van de Datum (wanneer de datum door kalender is ingegaan).<br /> </li>
     </ul> <p>Het instellen van waarde via script wordt niet ondersteund.</p> </td>
   </tr>
   <tr>
    <td><code>target</code></td>
    <td>Hiermee wordt het object opgegeven waarop de gebeurtenis reageert.</td>
-   <td>Het instellen van waarde via script wordt niet ondersteund.<br /> </td>
+   <td>Het plaatsen van waarde door manuscript wordt niet gesteund.<br /> </td>
   </tr>
   <tr>
    <td><code>newtext</code></td>
    <td>Hiermee geeft u de inhoud van het veld op nadat deze is gewijzigd als reactie op handelingen van de gebruiker.</td>
-   <td><p>De <code>newText</code> De eigenschap werkt niet goed voor de volgende gevallen:</p>
+   <td><p>De eigenschap <code>newText</code> werkt niet correct voor de volgende gevallen:</p>
     <ul>
      <li>Bij het selecteren en vervangen van tekst</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
-     <li>Bij het typen van bepaalde speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden<br /> </li>
+     <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden <br /> </li>
      <li>Bij gebruik van de combinatie shift+alfanumeriek. </li>
      <li>Bij het gebruik van datum-/tijdvelden.</li>
     </ul>
@@ -65,7 +65,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
     <ul>
      <li>Bij het selecteren en vervangen van tekst</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
-     <li>Bij het typen van bepaalde speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden<br /> </li>
+     <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden <br /> </li>
      <li>Bij gebruik van de combinatie shift+alfanumeriek. </li>
      <li>Bij het gebruik van datum-/tijdvelden.</li>
     </ul> <p>Het instellen van waarde via script wordt niet ondersteund.</p> </td>
@@ -95,12 +95,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>apptype</code></td>
    <td>Retourneert het toepassingstype van de host. Alleen beschikbaar voor clienttoepassingen.</td>
-   <td>Retourneert <code>HTML 5</code>.</td>
+   <td>Retourneert <code>HTML 5</code> .</td>
   </tr>
   <tr>
    <td><code>name</code></td>
    <td>Retourneert de naam van de huidige toepassing.</td>
-   <td>Retourneert de naam van de browser en de versie. In Chrome bijvoorbeeld wordt de geretourneerde waarde geretourneerd <code>Chrome &lt;version&gt;.</code></td>
+   <td>Retourneert de naam van de browser en de versie. In Chrome browser wordt bijvoorbeeld de geretourneerde waarde geretourneerd <code>Chrome &lt;version&gt;.</code></td>
   </tr>
   <tr>
    <td><code>numPages</code></td>
@@ -124,12 +124,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>calculationsEnabled</code></td>
-   <td>Hiermee wordt opgegeven of berekeningsscripts worden uitgevoerd.<br /> </td>
+   <td>Bepaalt of berekeningsscripts worden uitgevoerd.<br /> </td>
    <td>Geen</td>
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Hiermee wordt opgegeven of validatiescripts worden uitgevoerd.<br /> </td>
+   <td>Bepaalt of validatiescripts worden uitgevoerd.<br /> </td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>access</code></td>
    <td>Controls user access to the contents.</td>
-   <td>Werkt niet voor de uitsluitingsgroep. Bovendien bieden HTML5-formulieren dezelfde behandeling voor niet-interactieve en beschermde objecten.<br /> </td>
+   <td>Werkt niet voor de uitsluitingsgroep. Bovendien bieden HTML5-formulieren dezelfde behandeling voor niet-interactieve en beveiligde objecten.<br /> </td>
   </tr>
   <tr>
    <td><code>name</code></td>
@@ -202,17 +202,17 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>formattedValue</code></td>
    <td>Specifies the formatted value for this field.</td>
-   <td>Instelling <code>formattedValue</code> via script wordt niet ondersteund.</td>
+   <td>Het instellen van <code>formattedValue</code> via script wordt niet ondersteund.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Specifies the edit value for this field.</td>
-   <td>Instelling <code>editValue </code>via script wordt niet ondersteund.</td>
+   <td>Het plaatsen <code>editValue </code> door manuscript wordt niet gesteund.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Specifies the format validation message string for this field.</td>
-   <td>Instelling <code>formatMessage </code>via script wordt niet ondersteund.</td>
+   <td>Het plaatsen <code>formatMessage </code> door manuscript wordt niet gesteund.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -337,7 +337,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td>parentSubform</td>
    <td>Hiermee wordt het bovenliggende subformulier (pagina) van dit veld opgegeven.</td>
-   <td>Retourneert altijd het bovenliggende subformulier in plaats van het eerste bovenliggende subformulier zonder bereik te retourneren.<br /> </td>
+   <td>Retourneert altijd het bovenliggende subformulier in plaats van het eerste niet-bereikbare bovenliggende subformulier te retourneren.<br /> </td>
   </tr>
   <tr>
    <td>selectedIndex</td>
@@ -349,7 +349,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 ## Formulier {#form}
 
-| **Eigenschap** | **Beschrijving** | **Uitzondering** |
+| **Bezit** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
 | formNodes | Retourneert een lijst met alle formuliermodelobjecten die zijn gebonden aan een opgegeven gegevensobject. |  |
 
@@ -550,13 +550,13 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 ## content {#content}
 
-| **Eigenschap** | **Beschrijving** | **Uitzondering** |
+| **Bezit** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
 | isNull | Geeft aan of de huidige gegevenswaarde de null-waarde is. |  |
 
 ## dataValue {#datavalue}
 
-| **Eigenschap** | **Beschrijving** | **Uitzondering** |
+| **Bezit** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
 | isNull | Geeft aan of de huidige gegevenswaarde de null-waarde is. |  |
 
@@ -634,7 +634,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Het randvoorwerp beschrijft een boog, een lijn, of één kant van een grens of een rechthoek.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund.<br /> </td>
   </tr>
  </tbody>
@@ -714,7 +714,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>ui</td>
-   <td>Het ui-object bevat de gebruikersinterfacebeschrijving van een formulierobject.<br /> </td>
+   <td>Het ui-object omsluit de gebruikersinterfacebeschrijving van een formulierobject.<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -734,7 +734,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>value</td>
-   <td>Het waardeobject omsluit één gegevensinhoudseenheid.<br /> </td>
+   <td>Het waardevoorwerp omsluit één enkele eenheid van gegevensinhoud.<br /> </td>
    <td> </td>
   </tr>
  </tbody>
@@ -773,7 +773,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td>border</td>
    <td>Het object border beschrijft de rand rondom het object checkButton. </td>
-   <td>De wijzigingen worden weerspiegeld in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.<br /> </td>
+   <td>De wijzigingen worden weerspiegeld in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. Vandaar, worden de veranderingen niet weerspiegeld in UI.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -797,7 +797,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 ## dateTimeEdit {#datetimeedit}
 
-| **Eigenschap** | **Beschrijving** | **Uitzondering** |
+| **Bezit** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
 | border | Het randobject beschrijft de rand rond het dateTimeEdit-object. |  |
 
@@ -825,13 +825,13 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 ## imageEdit {#imageedit}
 
-| **Eigenschap** | **Beschrijving** | **Uitzondering** |
+| **Bezit** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
 | border | Met het randobject wordt de rand rond het object imageEdit beschreven. |  |
 
 ## numericEdit {#numericedit}
 
-| **Eigenschap** | **Beschrijving** | **Uitzondering** |
+| **Bezit** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
 | border | Met het randobject wordt de rand rondom een object beschreven. | none |
 
@@ -846,7 +846,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>className</td>
-   <td>Bepaalt de naam van de klasse van dit object.<br /> </td>
+   <td>Bepaalt de naam van de klasse van dit voorwerp.<br /> </td>
    <td>none</td>
   </tr>
  </tbody>
@@ -863,7 +863,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Het randvoorwerp beschrijft een boog, een lijn, of één kant van een grens of een rechthoek.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund.</td>
   </tr>
  </tbody>
@@ -880,7 +880,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>border</td>
-   <td>Met het randobject wordt de rand rondom een object beschreven.<br /> </td>
+   <td>Het grensvoorwerp beschrijft de grens omringend een voorwerp.<br /> </td>
    <td>Geen</td>
   </tr>
  </tbody>
@@ -992,7 +992,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>berekenen</td>
-   <td>Het object calculate bestuurt de berekening van de waarde van een veld.<br /> </td>
+   <td>Het berekeningsvoorwerp controleert de berekening van de waarde van een gebied.<br /> </td>
    <td>Geen</td>
   </tr>
  </tbody>
@@ -1009,7 +1009,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Het randvoorwerp beschrijft een boog, een lijn, of één kant van een grens of een rechthoek.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund. </td>
   </tr>
  </tbody>
@@ -1026,7 +1026,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Het randvoorwerp beschrijft een boog, een lijn, of één kant van een grens of een rechthoek.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund. </td>
   </tr>
  </tbody>
@@ -1083,7 +1083,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>
     <ul>
      <li>layout.pageCount() methode retourneert verschillende waarden voor PDF- en HTML-formulieren.</li>
-     <li>Bij het verlagen van het aantal pagina's door een object te verbergen, retourneert de methode abspagecount een onjuiste waarde.<br /> </li>
+     <li>Bij het verminderen van paginatitel door een voorwerp te verbergen, keert de methode abspagecount onjuiste waarde terug.<br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -1105,7 +1105,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 ## items {#items}
 
-| **Eigenschap** | **Beschrijving** | **Uitzondering** |
+| **Bezit** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
 | aanwezigheid | Hiermee geeft u de zichtbaarheid van een object op. | Geen |
 
@@ -1132,7 +1132,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   <tr>
    <td>Variabele-declaratie</td>
    <td>Een variabele definiëren</td>
-   <td>var a<br /> var a=3<br /> a=3</td>
+   <td>var a<br /> var a=3 <br /> a=3</td>
   </tr>
   <tr>
    <td>Logische expressie</td>
@@ -1141,7 +1141,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
      <li>Logica (en/of)</li>
      <li>Vergelijking (groter/kleiner/gelijk)</li>
     </ul> </td>
-   <td>A of 1<br /> 1 &lt;&gt; 2<br /> A NE B<br /> A of 1<br /> 1 &lt;&gt; 2<br /> A NE B</td>
+   <td>A of 1 <br /> 1 &lt;&gt; 2 <br /> A NE B <br /> A of 1 <br /> 1 &lt;&gt; 2 <br /> A NE B</td>
   </tr>
   <tr>
    <td>If-expressie</td>
@@ -1156,7 +1156,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   <tr>
    <td>for</td>
    <td><br type="_moz" /> </td>
-   <td>voor i = 100 tot 1 <br /> do s = s + i endfor</td>
+   <td>for i = 100 tot 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>voor elke</td>
@@ -1173,7 +1173,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
 
 ### Acrobat API-ondersteuning {#acrobat-api-support}
 
-1. **Rekenkundige functies**
+1. **Rekenkundige Functies**
 
    1. Abs()
    1. Avg()
@@ -1186,7 +1186,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
    1. Round()
    1. Sum()
 
-1. **Wetenschappelijke functies**
+1. **Wetenschappelijke Functies**
 
    1. Acos()
    1. Asin()
@@ -1203,7 +1203,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
    1. Rad2Deg()
    1. Pi()
 
-1. **Financiële functies**
+1. **Financiële Functies**
 
    1. apr()
    1. Cterm()
@@ -1216,14 +1216,14 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
    1. Rate()
    1. Term()
 
-1. **Logische functies**
+1. **Logische Functies**
 
    1. Choose()
    1. if()
    1. Oneof()
    1. Within()
 
-1. **Reeksfuncties**
+1. **Functies van het Koord**
 
    1. At()
    1. Concat()
@@ -1240,7 +1240,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
    1. Upper()
    1. WordNum()
 
-1. **Datum en tijd**
+1. **Datum en Tijd**
 
    1. Date()
    1. num2date()
@@ -1280,12 +1280,12 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>Hiermee worden een JavaScript-script en een tijdsperiode opgegeven. Het script wordt uitgevoerd telkens wanneer de punt vervalt. De geretourneerde waarde van deze methode moet in een JavaScript-variabele worden opgeslagen. Anders, is het intervalvoorwerp onderworpen aan huisvuilinzameling, die de klok zou veroorzaken om te stoppen. Om de periodieke uitvoering te eindigen, ga het teruggekeerde intervalvoorwerp tot clearInterval over.</td>
+   <td>Geeft een JavaScript-script en een tijdsperiode op. Het script wordt uitgevoerd telkens wanneer de punt vervalt. De geretourneerde waarde van deze methode moet worden aangehouden in een JavaScript-variabele. Anders, is het intervalvoorwerp onderworpen aan huisvuilinzameling, die de klok zou veroorzaken om te stoppen. Om de periodieke uitvoering te eindigen, ga het teruggekeerde intervalvoorwerp tot clearInterval over.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Hiermee worden een JavaScript-script en een tijdsperiode opgegeven. Het script wordt slechts eenmaal uitgevoerd, nadat de punt is verstreken. De geretourneerde waarde van deze methode moet in een JavaScript-variabele worden gehouden. Anders is het time-outobject onderhevig aan opschoning, waardoor de klok zou stoppen. Als u de time-outgebeurtenis wilt annuleren, geeft u het geretourneerde time-outobject door aan clearTimeOut.</td>
+   <td>Geeft een JavaScript-script en een tijdsperiode op. Het script wordt slechts eenmaal uitgevoerd, nadat de punt is verstreken. De geretourneerde waarde van deze methode moet in een JavaScript-variabele worden gehouden. Anders is het time-outobject onderhevig aan opschoning, waardoor de klok zou stoppen. Als u de time-outgebeurtenis wilt annuleren, geeft u het geretourneerde time-outobject door aan clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1305,7 +1305,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   </tr>
   <tr>
    <td>app.activeDocs</td>
-   <td>Een array met het object Doc voor elk actief document. Als er geen documenten actief zijn, retourneert activeDocs niets. Dit houdt in dat het dezelfde werking heeft als d = new Array(0) in kern-JavaScript.</td>
+   <td>Een array met het object Doc voor elk actief document. Als er geen documenten actief zijn, retourneert activeDocs niets. Dit houdt in dat het dezelfde werking heeft als d = new Array(0) in core JavaScript.</td>
    <td>Retourneert een lege array voor HTML5-formulieren.</td>
   </tr>
   <tr>
@@ -1351,4 +1351,4 @@ De volgende client-side XFA-gebeurtenissen worden ondersteund:
 
 >[!NOTE]
 >
->HTML5-formulieren worden weergegeven op de client (browser). Client-kant gebruiken **validate** en **berekenen** scripts in plaats van serverscripts.
+>HTML5-formulieren worden weergegeven op de client (browser). De cliëntkant van het gebruik **bevestigt** en **berekent** manuscripten in plaats van server-zijmanuscripten.

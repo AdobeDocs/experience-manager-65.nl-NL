@@ -22,37 +22,37 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 >[!NOTE]
 >
->Wanneer u problemen ondervindt, is het ook de moeite waard om de lijst met [Bekende problemen](/help/release-notes/release-notes.md) voor uw instantie (release- en servicepacks).
+>Wanneer het ervaren van problemen het ook de moeite waard is controlerend de lijst van [ Bekende Kwesties ](/help/release-notes/release-notes.md) voor uw instantie (versie en de dienstpakken).
 
 >[!NOTE]
 >
->Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de in [AEM voor probleemoplossing (voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet genoeg voorrechten hebt, zie uw systeembeheerder over het oplossen van AEM.
+>De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen problemen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in [ AEM van het Oplossen van problemen (voor Beheerders) ](/help/sites-administering/troubleshoot.md) worden beschreven. Als u niet genoeg voorrechten hebt, zie uw systeembeheerder over het oplossen van AEM.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
-* **Probleem**:
+* **Uitgave**:
 
-   * U hebt wijzigingen aangebracht in een pagina en de pagina gerepliceerd naar de publicatiesite, maar de *oud* Er wordt nog steeds een versie van de pagina weergegeven op de publicatiesite.
+   * U hebt veranderingen in een pagina aangebracht en de pagina aan publiceren plaats herhaald, maar de *oude* versie van de pagina wordt nog getoond op publiceren plaats.
 
 * **Reden**:
 
-   * Dit kan verscheidene oorzaken hebben, meestal het geheime voorgeheugen (of uw lokale browser of de Verzender), hoewel het soms een kwestie met de replicatierij kan zijn.
+   * Dit kan verschillende oorzaken hebben, meestal het geheime voorgeheugen (of uw lokale browser of Dispatcher), hoewel het soms een kwestie met de replicatierij kan zijn.
 
 * **Oplossingen**:
 
    * Hier zijn verschillende mogelijkheden:
    * Controleer of de pagina correct is gerepliceerd. Controleer de paginastatus en, indien nodig, de status van de replicatiewachtrij.
    * Wis de cache in uw lokale browser en open de pagina opnieuw.
-   * Toevoegen `?` tot het einde van de pagina-URL. Bijvoorbeeld:
+   * Voeg `?` toe aan het einde van de pagina-URL. Bijvoorbeeld:
 
       * `http://localhost:4502/sites.html/content?`
-      * Hiermee wordt de pagina rechtstreeks vanaf AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
+      * Hierdoor wordt de pagina rechtstreeks vanaf AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de Dispatcher-cache moet wissen.
 
    * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 
 ## Componenthandelingen niet zichtbaar op werkbalk {#component-actions-not-visible-on-toolbar}
 
-* **Probleem**:
+* **Uitgave**:
 
    * Het volledige bereik van toepasselijke componentacties is niet zichtbaar wanneer u een inhoudspagina bewerkt in de auteursomgeving.
 

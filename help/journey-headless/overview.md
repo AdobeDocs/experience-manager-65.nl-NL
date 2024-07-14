@@ -22,11 +22,11 @@ Implementatie zonder hoofd wordt steeds belangrijker om uw publiek ervaringen te
 
 Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels. De implementatie is gericht op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en de levering ervan via meerdere kanalen. Het is een modern en dynamisch ontwikkelingspatroon voor de implementatie van digitale ervaringen.
 
-Als je nog niet helemaal vertrouwd bent met AEM en/of zonder kop, AEM Headless Jourards is een geweldige plek om de theorie en technologie te beginnen begrijpen door een verhaal te gebruiken om verschillende bedrijfsproblemen op een krantenloze manier op te lossen.
+Als je nog niet helemaal vertrouwd bent met AEM en/of zonder kop, AEM Headless Journey een geweldige plek om de theorie en technologie te beginnen begrijpen door een verhaal te gebruiken om verschillende bedrijfsproblemen op een krantenloze manier op te lossen.
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[Een documentatiereis](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[ de Reis van de Documentatie van A ](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
 Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
@@ -46,9 +46,9 @@ De volgende Documentatiereizen zijn beschikbaar voor onderwerpen zonder kop.
 
 | Titel | Beschrijving | Primair publiek |
 |---|---|---|
-| [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Leer over headless technologieën, wat zij aan de gebruikerservaring brengen, hoe AEM koploze modellen steunt, en hoe te om uw eigen headless ontwikkelingsproject van A tot Z uit te voeren. | Ontwikkelaars |
-| [Dagboekreis zonder hoofd](/help/journey-headless/translation/overview.md) | Leer over headless technologieën, waarom zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
-| [Papierreis zonder koppen](/help/journey-headless/author/overview.md) | Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. | Architecten |
-| [Architect zonder hoofd](/help/journey-headless/architect/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt modelleren. | Inhoudsmakers en auteurs |
+| [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) | Leer over headless technologieën, wat zij aan de gebruikerservaring brengen, hoe AEM koploze modellen steunt, en hoe te om uw eigen headless ontwikkelingsproject van A tot Z uit te voeren. | Ontwikkelaars |
+| [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md) | Leer over headless technologieën, waarom zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
+| [ Headless Authoring Reis ](/help/journey-headless/author/overview.md) | Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. | Architecten |
+| [ Evolutie van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt modelleren. | Inhoudsmakers en auteurs |
 
-Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/home.md#journeys)
+Blijf voor [ aanstaande reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)

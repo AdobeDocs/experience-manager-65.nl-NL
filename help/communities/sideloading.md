@@ -32,7 +32,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 1. [De component toevoegen aan de DOM](#dynamically-add-component-to-dom)
 
-1. [De component laden](#sideload-by-invoking-scf) met behulp van een van de volgende twee methoden:
+1. [ Sideload de component ](#sideload-by-invoking-scf) gebruikend één van twee methodes:
 
 * [Dynamische insluiting](#dynamic-inclusion)
    * Alle dynamisch toegevoegde componenten versterken
@@ -41,7 +41,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 >[!NOTE]
 >
->Tideloading van [niet-bestaande middelen](scf.md#add-or-include-a-communities-component) wordt niet ondersteund.
+>Sideloading van [ niet-bestaande middelen ](scf.md#add-or-include-a-communities-component) wordt niet gesteund.
 
 ## Component dynamisch toevoegen aan DOM {#dynamically-add-component-to-dom}
 
@@ -51,11 +51,11 @@ Bij het toevoegen van de SCF-component is de meest gebruikte tag de DIV-tag, maa
 
 Welk label ook wordt gebruikt, het element moet minstens voldoen aan het normale patroon van het SCF-hoofdelement door deze twee kenmerken te bevatten:
 
-* **data-component-id**
+* **gegeven-component-id**
 
   Het effectieve pad naar de toegevoegde component.
 
-* **data-scf-component**
+* **gegeven-scf-component**
 
   The resourceType of the component.
 
@@ -84,8 +84,8 @@ Als u SCF-componenten na het laden van de pagina wilt initialiseren, voert u gew
 
 Dynamisch laden biedt controle over het laden van SCF-componenten.
 
-In plaats van alle SCF-componenten die in het DOM worden gevonden, te bootstrappen, is het mogelijk om een specifieke SCF-component op te geven die moet worden geladen met deze JavaScript-methode:
+In plaats van alle SCF-componenten die in het DOM worden gevonden, te bootstrapping, is het mogelijk om een specifieke SCF-component op te geven die moet worden geladen met deze JavaScript-methode:
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-Wanneer `someId` is de waarde van de `data-component-id` kenmerk.
+Waarbij `someId` de waarde van het kenmerk `data-component-id` is.

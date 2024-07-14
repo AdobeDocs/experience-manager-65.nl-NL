@@ -22,24 +22,24 @@ Verscheidene procedures vereisen u om het geval van WebSphere te tegenhouden of 
 
 ## De status van WebSphere Application Server weergeven {#view-the-status-of-websphere-application-server}
 
-1. Van een bevelherinnering, ga naar `[appserver root]/bin` directory.
-1. Voer de volgende opdracht in en vervang *server_name* met de naam van uw WebSphere-toepassingsserver:
+1. Ga vanaf een opdrachtprompt naar de map `[appserver root]/bin` .
+1. Ga het volgende bevel in, dat *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
 
-   * (Windows) `serverStatus.bat`*server_name*
+   * (Vensters) `serverStatus.bat`*server_name*
    * (Linux, UNIX) ./ `serverStatus.sh`*server_name*
 
 ## WebSphere-toepassingsserver starten {#start-websphere-application-server}
 
-1. Van een bevelherinnering, ga naar `[appserver root]/bin` directory.
-1. Voer de volgende opdracht in en vervang *server_name* met de naam van uw WebSphere-toepassingsserver:
+1. Ga vanaf een opdrachtprompt naar de map `[appserver root]/bin` .
+1. Ga het volgende bevel in, dat *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
 
-   * (Windows) `startServer.bat`*server_name*
+   * (Vensters) `startServer.bat`*server_name*
    * (Linux, UNIX) ./ `startServer.sh`*server_name*
 
 ## WebSphere-toepassingsserver stoppen {#stop-websphere-application-server}
 
-1. Van een bevelherinnering, ga naar `[appserver root]/bin` directory.
-1. Voer de volgende opdracht in en vervang *server_name* met de naam van uw WebSphere-toepassingsserver:
+1. Ga vanaf een opdrachtprompt naar de map `[appserver root]/bin` .
+1. Ga het volgende bevel in, dat *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
 
-   * (Windows) `stopServer.bat`*server_name*
+   * (Vensters) `stopServer.bat`*server_name*
    * (Linux, UNIX) ./ `stopServer.sh`*server_name*

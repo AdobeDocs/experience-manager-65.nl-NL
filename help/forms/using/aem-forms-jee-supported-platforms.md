@@ -23,8 +23,8 @@ ht-degree: 0%
 
 <div class="preview">
 
-Adobe heeft een [volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) met AEM 6.5 Forms Service Pack 18 (6.5.18.0) op JEE samen met de patchinstallatieprogramma&#39;s. Het volledige installatieprogramma ondersteunt nieuwe platforms, terwijl het installatieprogramma van de patch alleen foutoplossingen bevat.
-Als u een nieuwe installatie uitvoert of van plan bent de nieuwste software te gebruiken voor uw AEM 6.5 Forms in JEE-omgeving, raadt de Adobe u aan [AEM 6.5.18.0 Forms op volledig installatieprogramma JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) vrijgegeven op 31 augustus 2023 in plaats van AEM 6.5 Forms installer uitgebracht op 08 april 2019 of AEM 6.5.12 Forms Installer uitgebracht op 03 maart 2022.
+De Adobe heeft a [ volledige installateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) met AEM 6.5 Forms Service Pack 18 (6.5.18.0) op JEE samen met de flardinstallateurs vrijgegeven. Het volledige installatieprogramma ondersteunt nieuwe platforms, terwijl het installatieprogramma van de patch alleen foutoplossingen bevat.
+Als u een nieuwe installatie uitvoert of van plan bent om recentste software voor uw AEM 6.5 Forms op milieu te gebruiken JEE, adviseert de Adobe gebruikend [ AEM 6.5.18.0 Forms op volledig installatieprogramma JEE ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) vrijgegeven op 31 augustus 2023 in plaats van AEM 6.5 Forms installateur op 08 April 2019 of AEM 6.5.12Instant. afgegeven op 3 maart 2022.
 
 </div>
 
@@ -36,24 +36,24 @@ In dit document worden de ondersteunde client- en serverplatforms voor AEM Forms
 
 >[!NOTE]
 >
->- Voor een volledige lijst met uitzonderingen op ondersteunde serverplatforms raadpleegt u [Uitzonderingen op ondersteunde serverplatforms](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
+>- Voor een volledige lijst van uitzonderingen aan gesteunde serverplatforms, zie [ Uitzonderingen aan gesteunde serverplatforms ](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE biedt alleen ondersteuning voor Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
 
 ### Beleid voor upgrades en ondersteuning
 
 #### Volledig installatieprogramma
 
-- **Upgrade-ondersteuning voor volledige installatieprogramma&#39;s**: Een volledig installatieprogramma wordt vrijgegeven met elke zesde Versie van AEM Service Pack. Er is bijvoorbeeld een volledig installatieprogramma uitgebracht met 6.5.12.0 en 6.5.18.0 SP-releases. AEM Forms staat rechtstreekse upgrades uitsluitend toe vanaf de laatste twee volledige installatieprogramma&#39;s. AEM Forms maakt bijvoorbeeld alleen directe upgrades naar versie 6.5.18.0 mogelijk vanaf de laatste twee volledige installatieprogramma&#39;s, namelijk 6.5.12.0 en 6.5.6.0. Als u van een vroegere verbetering moet bevorderen, kunt u een multi-hop verbetering gebruiken om eerst naar een gesteunde volledige installateursversie en dan aan de recentste versie te gaan.
+- **Steun van de Verbetering voor volledige installateurs**: Een volledige installateur wordt vrijgegeven met elke zesde Versie van het Pak van de AEM. Er is bijvoorbeeld een volledig installatieprogramma uitgebracht met 6.5.12.0 en 6.5.18.0 SP-releases. AEM Forms staat rechtstreekse upgrades uitsluitend toe vanaf de laatste twee volledige installatieprogramma&#39;s. AEM Forms maakt bijvoorbeeld alleen directe upgrades naar versie 6.5.18.0 mogelijk vanaf de laatste twee volledige installatieprogramma&#39;s, namelijk 6.5.12.0 en 6.5.6.0. Als u van een vroegere verbetering moet bevorderen, kunt u een multi-hop verbetering gebruiken om eerst naar een gesteunde volledige installateursversie en dan aan de recentste versie te gaan.
 
-- **Verdringing en verwijdering**: De platformondersteuning wordt bijgewerkt met elke volledige installerrelease. Alle software die tijdens een volledige installateursrelease in de platformmatrix is afgekeurd, mag in een volgende volledige installateursrelease uit de ondersteunde platformmatrix worden verwijderd, wat het einde van de ondersteuning voor de software aangeeft.
+- **Verdringing en Verwijdering**: De platformsteun wordt bijgewerkt met elke volledige installateursversie. Alle software die tijdens een volledige installateursrelease in de platformmatrix is afgekeurd, mag in een volgende volledige installateursrelease uit de ondersteunde platformmatrix worden verwijderd, wat het einde van de ondersteuning voor de software aangeeft.
 
 #### Servicepacks
 
-- **Service Pack-dekking**: Adobe biedt technische ondersteuning voor AEM Forms-omgevingen met behulp van de nieuwste zes servicepacks. Als uw huidige versie de laatste zes de dienstpakken voorafgaat, adviseert de Adobe sterk bevordering aan de recentste versie voor optimale prestaties, veiligheid, en ononderbroken steun.
+- **Coverage van het Pak van de Dienst**: De Adobe verleent technische steun voor de milieu&#39;s van AEM Forms gebruikend om het even welke recentste zes de dienstpakken. Als uw huidige versie de laatste zes de dienstpakken voorafgaat, adviseert de Adobe sterk bevordering aan de recentste versie voor optimale prestaties, veiligheid, en ononderbroken steun.
 
-- **Richtlijnen voor patchinstallatieprogramma**: Wanneer u de patchinstallatieprogramma&#39;s gebruikt om bij te werken, is het van cruciaal belang om te controleren of de onderliggende volledige installateursversie niet meer dan twee versies oud is. Zorg er bijvoorbeeld tijdens de installatie van servicepack 6.5.19.0 voor dat de onderliggende versie van het volledige installatieprogramma 6.5.18.0 of 6.5.12.0 is.
+- {de Richtlijnen van de Installateur van het 0} Patch **: Terwijl het gebruiken van de flardinstallateurs om bij te werken, is het cruciaal om te verifiëren dat de onderliggende volledige installateursversie niet meer dan twee oude versies is.** Zorg er bijvoorbeeld tijdens de installatie van servicepack 6.5.19.0 voor dat de onderliggende versie van het volledige installatieprogramma 6.5.18.0 of 6.5.12.0 is.
 
-- **Ondersteuning voor patchupgrade**: U kunt een upgrade uitvoeren naar het nieuwste servicepakket totdat u ook een upgrade uitvoert naar de meest recente ondersteunde platforms. Bijvoorbeeld, is het bevorderen van de dienstpak 6.5.12.0 aan 6.5.19.0 mogelijk, op voorwaarde dat u naar een platformcombinatie overgaat die voor 6.5.19.0 wordt gesteund.
+- **Steun van de Verbetering van het Patch**: U kunt blijven bevordering aan het recentste de dienstpak, tot u aan de meest recente gesteunde platforms ook bevordert. Bijvoorbeeld, is het bevorderen van de dienstpak 6.5.12.0 aan 6.5.19.0 mogelijk, op voorwaarde dat u naar een platformcombinatie overgaat die voor 6.5.19.0 wordt gesteund.
 
 ### Aanbevolen configuraties {#recommendedconfigurations}
 
@@ -66,7 +66,7 @@ Adobe raadt deze configuraties aan en biedt volledige of beperkte ondersteuning 
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td>A: Ondersteund<br /> </td>
+   <td>A: Ondersteund <br /> </td>
    <td>Adobe biedt volledige ondersteuning en onderhoud voor deze configuratie. Deze configuratie valt onder het kwaliteitsborgingsproces van de Adobe.</td>
   </tr>
   <tr>
@@ -75,7 +75,7 @@ Adobe raadt deze configuraties aan en biedt volledige of beperkte ondersteuning 
   </tr>
   <tr>
    <td>L: Beperkte ondersteuning</td>
-   <td>Adobe biedt volledige ondersteuning en onderhoud voor deze configuratie nadat aan bepaalde voorwaarden is voldaan. Niet zijn alle mogelijkheden beschikbaar op de configuratie. Neem contact op met de Enterprise Support van de Adobe voor meer informatie over de voorwaarden en vraag om ondersteuning.<br /> </td>
+   <td>Adobe biedt volledige ondersteuning en onderhoud voor deze configuratie nadat aan bepaalde voorwaarden is voldaan. Niet zijn alle mogelijkheden beschikbaar op de configuratie. De ondernemingssteun van de Adobe van het contact om over de eerste vereisten te leren en een verzoek om de steun op te heffen.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -132,12 +132,12 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
    <td>Kleine releases en updates</td>
   </tr>
   <tr>
-   <td>IBM® J9 Virtual Machine (build 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
+   <td>IBM® J9 Virtual Machine (build 2.9, JRE 1.8.0) IBM® JDK SR6-FP26 <br /> </td>
    <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
   <tr>
-   <td>IBM® JAVA1.8.0_291(build 8.0.6.30)<br /> </td>
+   <td>IBM® JAVA1.8.0_291(build 8.0.6.30) <br /> </td>
    <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
@@ -149,7 +149,7 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
 >- Volg de beveiligingsbulletins van de Java™-leverancier om de veiligheid en beveiliging van productieomgevingen te garanderen en installeer de nieuwste Java™-updates.
 >- AEM Forms on JEE ondersteunt alleen 64-bits JVM&#39;s in productieomgevingen.
 
-### Databases en CRX-permanente {#databases-and-crx-persistence}
+### Databases en CRX-persistentie {#databases-and-crx-persistence}
 
 <table>
  <tbody>
@@ -202,15 +202,15 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
 </table>
 
 - IBM® DB2® wordt niet ondersteund voor nieuwe installaties. Deze wordt alleen ondersteund voor bestaande klanten die een upgrade uitvoeren naar AEM 6.5 Forms.
-- MongoDB is software van derden en is niet opgenomen in het AEM licentiepakket. Zie voor meer informatie [Beleid voor MongoDB-licenties](https://www.mongodb.org/about/licensing/).
+- MongoDB is software van derden en is niet opgenomen in het AEM licentiepakket. Voor meer informatie, zie [ MongoDB het verlenen van vergunningen beleid ](https://www.mongodb.org/about/licensing/).
 - Om optimaal gebruik te kunnen maken van uw AEM, raadt Adobe u aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat u kunt profiteren van professionele ondersteuning.
-- De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM. Zie de klasse [Pagina MongoDB voor Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM. Voor meer informatie, zie [ MongoDB voor de pagina van Adobe Experience Manager ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - &#39;Bestandssysteem&#39; omvat blokopslag die voldoet aan POSIX. Dit omvat netwerkopslagtechnologie. Houd er rekening mee dat de prestaties van het bestandssysteem kunnen variëren en van invloed zijn op de algehele prestaties. U wordt aangeraden AEM te laden met het netwerk of externe bestandssysteem.
 - Alleen MongoDB Storage Engine WiredTiger wordt ondersteund.
 - Delen via MongoDB wordt niet ondersteund in AEM.
 - AEM Forms op JEE biedt geen ondersteuning voor MySQL voor RDBMK-persistentie.
-- De module Documentbeveiliging maakt geen gebruik van Inhoudsopslagruimte. Dit houdt in dat als u alleen Documentbeveiliging gebruikt en geen HTML Workspace, HTML5-formulieren of adaptieve formulieren wilt gebruiken, u geen Content Repository hoeft te installeren.
-- AEM Forms op JEE biedt geen ondersteuning voor het gebruik van MySQL voor het blijvend AEM Repository (CRX-Repository).
+- De module Documentbeveiliging maakt geen gebruik van Inhoudsopslagruimte. Dit houdt in dat als u alleen Documentbeveiliging gebruikt en niet van plan bent HTML Workspace, HTML5-formulieren of adaptieve formulieren te gebruiken, u geen opslagplaats voor inhoud hoeft te installeren.
+- AEM Forms op JEE biedt geen ondersteuning voor het gebruik van MySQL voor het AEM Repository (CRX-Repository).
 
 ### Databasestuurprogramma&#39;s {#database-drivers}
 
@@ -227,14 +227,14 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
    <td><p>Wordt geleverd bij AEM Forms op JEE-installatie</p> </td>
   </tr>
   <tr>
-   <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC-stuurprogramma 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td>Microsoft® SQL Server <br /> </td>
+   <td><p>Microsoft® SQL Server JDBC stuurprogramma 8.2.2 <br /> </p> <p>sqljdbc8.jar</p> </td>
    <td><p>Downloaden vanaf Microsoft®-website.</p> </td>
   </tr>
   <tr>
    <td>Oracle</td>
-   <td><p>JDBC-stuurprogramma voor oracle Database 19.3.0.0.0</p> <p>ojdbc8.jar (versie 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Downloaden van <a href="https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html">Website oracle</a>.</p> </td>
+   <td><p>JDBC-stuurprogramma voor oracle Database 19.3.0.0.0</p> <p>ojdbc8.jar (versie 19.3.0.0.0) <br /> </p> </td>
+   <td><p>De download van <a href="https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html"> Website van het Oracle </a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -249,17 +249,17 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
    <td><p><strong>Ondersteunde patchdefinities</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Afgekeurd) <sup>[9]</sup></td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Vervangen) <sup> [9] </sup></td>
    <td>A: Ondersteund</td>
    <td>Servicepack en kritieke updates</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
+   <td>Oracle WebLogic Server 14c <sup>[9] </sup></td>
    <td>A: Ondersteund</td>
    <td>Servicepack en kritieke updates</td>
   </tr>
   <tr>
-   <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
+   <td>IBM® WebSphere® Application Server 9.0.0.10 <sup> [1] [4] </sup><br /> </td>
    <td>A: Ondersteund</td>
    <td>Servicepack en kritieke updates</td>
   </tr>
@@ -322,7 +322,7 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
    <td>Servicepacks, cumulatieve patches en kritieke beveiligingsupdates</td>
   </tr>
   <tr>
-   <td>CentOS 7 (64-bits)<sup> [6]</sup></td>
+   <td>CentOS 7 (met 64 bits) <sup> [6] </sup></td>
    <td>A: Ondersteund</td>
    <td>Servicepacks, cumulatieve patches en kritieke beveiligingsupdates</td>
   </tr>
@@ -358,7 +358,7 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 1. AEM Forms op JEE biedt geen ondersteuning voor en JBoss® op SUSE® Linux® Enterprise Server 12. Alleen IBM® WebSphere® wordt ondersteund op SUSE® Linux® Enterprise Server 12.
 1. AEM Forms op JEE biedt geen ondersteuning voor JDK met JBoss® anders dan Oracle Java™ SE.
 1. AEM Forms on JEE biedt geen ondersteuning voor JDK met IBM® WebSphere®, behalve IBM® JDK.
-1. CRX-opslagplaats steunt persistentie van type TarMK, MongoDB, en relationele gegevensbestanden (RDBMK). U kunt geen twee verschillende gegevensbestandsystemen tussen de toepassingsserver en CRX-bewaarplaats hebben. Op een AEM Forms op JEE-omgeving kunt u echter MongoMK gebruiken met CRX-gegevensopslagruimte en een ondersteunde relationele database met toepassingsserver.
+1. CRX-repository ondersteunt persistentie van het type TarMK, MongoDB en relationele databases (RDBMK). U kunt geen twee verschillende databasesystemen hebben tussen de toepassingsserver en de CRX-opslagplaats. Op een AEM Forms op JEE-omgeving kunt u echter MongoMK gebruiken met CRX-repository en een ondersteunde relationele database met toepassingsserver.
 1. AEM Forms op JEE biedt geen ondersteuning voor WebSphere®-toepassingsserver op CentOS.
 1. AEM Forms on JEE biedt geen ondersteuning voor JBoss® op rollen gebaseerde toegangsbeheer (RBAC).
 1. AEM Forms on JEE biedt alleen ondersteuning voor Oracle Java™ SE 11 (64-bits) SDK voor de toepassingsserver JBoss® EAP 7.4.
@@ -372,13 +372,13 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 Houd rekening met de volgende punten wanneer u software kiest voor de Adobe van AEM Forms bij JEE-implementaties:
 
 - AEM Forms on JEE ondersteunt updates, patches en repareert pakketten boven op de opgegeven primaire en secundaire versie van ondersteunde software. Bijwerken naar de volgende hoofd- of subversie wordt echter alleen ondersteund als dit is opgegeven.
-- Clustergebaseerde installaties ondersteunen TarMK-persistentie niet. Zie voor informatie over ondersteunde persistentie [Een persistentietype kiezen voor een AEM Forms-installatie](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE biedt ondersteuning voor verschillende software van derden, zoals bepaald door de Adobe [Beleid voor softwareondersteuning van derden](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
+- Clustergebaseerde installaties ondersteunen TarMK-persistentie niet. Voor informatie over gesteunde persistentie, zie [ het Kiezen van een persistentietype voor een installatie van AEM Forms ](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+- AEM Forms op JEE steunt diverse derdesoftware zoals per Adobe [ het Beleid van de de softwaresteun van de Derde ](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
 - AEM Forms on JEE biedt ondersteuning voor platforms die overeenkomen met de ondersteuning van externe leveranciers. Sommige combinaties zijn mogelijk niet toegestaan door externe leveranciers. Veel leveranciers hebben hun toepassingsservers bijvoorbeeld niet met Oracle gecertificeerd. Als gevolg hiervan biedt AEM Forms op JEE ook geen ondersteuning voor deze combinaties. Om ervoor te zorgen dat u de gesteunde softwareversies kiest, controleer de steunmatrijs ook voor de derdeverkopers.
 - AEM Forms op JEE ondersteunt TarMK Cold Standby niet.
 - AEM Forms op JEE biedt geen ondersteuning voor verticale clustering.
 - AEM Forms on JEE biedt geen ondersteuning voor MySQL-database in een geclusterde omgeving.
-- Voor de lijst met verwijderde of bijgewerkte platforms raadpleegt u [AEM 6.5 Forms - Overzicht van nieuwe functies](../../forms/using/whats-new.md) document.
+- Voor de lijst van verwijderde of bijgewerkte platforms, zie [ AEM 6.5 het document van de Nieuwe Eigenschap van Forms ](../../forms/using/whats-new.md).
 
 ### LDAP-servers (optioneel) {#ldap-servers-optional}
 
@@ -435,7 +435,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor de Adobe van 
    <td>8,5 </td>
   </tr>
    <td>Microsoft® Sharepoint </td>
-   <td>19<br /> </td>
+   <td>2019 <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -458,7 +458,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 klassiek spoor</a> nieuwste versie</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -466,11 +466,11 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect 2020<br /> </td>
+   <td>WordPerfect 2020 <br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
+   <td>Microsoft® Publisher 2019 <br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
@@ -490,7 +490,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >- PDF Generator biedt geen ondersteuning voor Microsoft® Office 365.
 >- PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >- De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
->- Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator moeten worden betreden. Zie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator moeten worden betreden. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >- PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
 >- PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
 >- PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.
@@ -501,7 +501,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 
 ### Uitzonderingen op toegankelijkheidsondersteuning {#exceptions-to-accessibility-support}
 
-De volgende subsystemen van AEM Forms zijn niet [508](https://www.section508.gov/) compatibel:
+De volgende subsystemen van AEM Forms zijn niet [ 508 ](https://www.section508.gov/) volgzaam:
 
 - Aangepaste Forms Authoring UI
 - Gebruikersinterface voor Forms Manager
@@ -520,22 +520,22 @@ De volgende subsystemen van AEM Forms zijn niet [508](https://www.section508.gov
   </tr>
   <tr>
    <td>Microsoft® Windows Server</td>
-   <td>Intel Xeon® E5-2680-, 2,4-GHz-processor of gelijkwaardig<br /> VMWare ESX 5.1 of hoger<br /> RAM: 6 GB (64-bits besturingssysteem met 64-bits JVM)<br /> Vrije schijfruimte: 15 GB tijdelijke ruimte plus 22 GB<br /> voor AEM Forms op JEE</td>
+   <td>Intel Xeon® E5-2680, 2.4-GHz processor of equivalent <br /> VMWare ESX 5.1 of hoger <br /> RAM: 6 GB (64-bits besturingssysteem met 64-bits JVM) <br /> vrije schijfruimte: 15 GB tijdelijke ruimte plus 22 GB <br /> voor AEM Forms op JEE</td>
   </tr>
   <tr>
    <td>SUSE® Linux® Enterprise Server</td>
-   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5-GHz processor<br /> AWS m3.medium (3 Ecu)<br /> RAM: 6 GB (64-bits besturingssysteem met 64-bits JVM)<br /> Vrije schijfruimte: 6 GB tijdelijke ruimte plus 22 GB<br /> voor AEM Forms op JEE</td>
+   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5 GHz processor <br /> AWS m3.medium (3 Ecu's) <br /> RAM: 6 GB (64-bits besturingssysteem met 64-bits JVM) <br /> vrije schijfruimte: 6 GB tijdelijke ruimte plus 22 GB <br /> voor AEM Forms op JEE</td>
   </tr>
   <tr>
    <td>Red Hat® Enterprise Linux®</td>
-   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5-GHz processor<br /> AWS m3.medium (3 Ecu)<br /> RAM: 6 GB (64-bits besturingssysteem met 64-bits JVM)<br /> Vrije schijfruimte: 6 GB tijdelijke ruimte plus 22 GB<br /> voor AEM Forms op JEE<br /> </td>
+   <td>Intel Xeon® E5-2670v2, 1 vCPU, 2,5 GHz processor <br /> AWS m3.medium (3 Ecu's) <br /> RAM: 6 GB (64-bits besturingssysteem met 64-bits JVM) <br /> vrije schijfruimte: 6 GB tijdelijke ruimte plus 22 GB <br /> voor AEM Forms op JEE <br /> </td>
   </tr>
   <tr>
    <td>Hardwarevereisten voor een kleine productieomgeving</td>
    <td>
     <ul>
-     <li><strong>Intel® processoromgeving</strong>: Intel Xeon® E5-2680, 2,4 GHz of hoger. Het gebruik van een dual core processor zal de prestaties verder verbeteren</li>
-     <li><strong>Geheugen: </strong>4 GB <br /> </li>
+     <li><strong> Intel® aangedreven milieu </strong>: Intel Xeon® E5-2680, 2.4 GHz of groter. Het gebruik van een dual core processor zal de prestaties verder verbeteren</li>
+     <li><strong> Geheugen: </strong> 4 GB <br /> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -543,8 +543,8 @@ De volgende subsystemen van AEM Forms zijn niet [508](https://www.section508.gov
 
 Zie voor aanvullende vereisten:
 
-- [Systeemvereisten voor AEM Forms op één server bij JEE-implementatie](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
-- [Systeemvereisten voor een geclusterde AEM Forms bij JEE-implementatie](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
+- [ vereisten van het Systeem voor enig-server AEM Forms op plaatsing JEE ](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [ vereisten van het Systeem voor gegroepeerde AEM Forms op plaatsing JEE ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat en Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -556,7 +556,7 @@ Zie voor aanvullende vereisten:
   </tr>
   <tr>
    <td>Acrobat 2020 (klassieke track)</td>
-   <td>Versie 20.004.3006 of hoger<br /> </td>
+   <td>Versie 20.004.3006 of hoger <br /> </td>
   </tr>
 
 </tbody>
@@ -564,7 +564,7 @@ Zie voor aanvullende vereisten:
 
 >[!NOTE]
 >
->De Acrobat DC productfamilie introduceert twee sporen voor zowel Acrobat als Reader die verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Zie voor meer informatie en een vergelijking van de twee sporen [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>De Acrobat DC productfamilie introduceert twee sporen voor zowel Acrobat als Reader die verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Voor details en een vergelijking van de twee sporen, zie [ https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ## Ondersteunde clients voor AEM Forms op JEE {#supported-clients-for-aem-forms-on-jee}
 
@@ -591,7 +591,7 @@ Zie voor aanvullende vereisten:
  </tbody>
 </table>
 
-- Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één station voor een volledige installatie van Workbench, Designer en de samplesamenstelling 400 MB voor tijdelijke installatiemappen - 200 MB in de map met gebruikerstempels en 200 MB in de tijdelijke map van Windows. Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
+- Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één station voor een volledige installatie van Workbench, Designer en de samplingverzameling 400 MB voor tijdelijke installatiemappen - 200 MB in de map met gebruikerstempels en 200 MB in de tijdelijke map van Windows. Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
 
 - Geheugen voor het uitvoeren van Workbench: 2 GB RAM
 - Hardwarevereisten: Intel® Pentium® 4- of AMD®-equivalent, 1-GHz processor
@@ -610,7 +610,7 @@ Zie voor aanvullende vereisten:
 - Monitorresolutie van 1024 x 768 pixels of hoger
 - Hardwareversnelling voor video (optioneel)
 - Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
-- Beheerdersrechten voor de installatie van Designer
+- Beheerdersrechten voor het installeren van Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime
 
 ### Browsers {#browsers}
@@ -657,7 +657,7 @@ Zie voor aanvullende vereisten:
 >Bepaalde browsergerelateerde uitzonderingen voor desktops zijn als volgt:
 >
 >- Safari wordt alleen ondersteund op Macintosh OS X.
->- De werkruimte biedt ondersteuning voor Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of latere versies. Zie voor meer informatie over de compatibiliteit met Adobe Reader, Acrobat, Safari 5.1 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Workspace biedt ondersteuning voor Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of latere versies. Voor meer informatie over Safari 5.1 verenigbaarheid met Adobe Reader, Acrobat, zie [ https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html ](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 >- Beheerconsole wordt niet ondersteund in Safari.
 >- Correspondence Management biedt geen ondersteuning voor Windows® Internet Explorer 9.0 voor AEM 6.1-formulieren.
 >- Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
@@ -679,8 +679,8 @@ Zie voor aanvullende vereisten:
    <td>Alle updates</td>
   </tr>
   <tr>
-   <td>Microsoft® Edge<br /> </td>
-   <td>Alle updates<br /> </td>
+   <td>Microsoft® Edge <br /> </td>
+   <td>Alle updates <br /> </td>
   </tr>
   <tr>
    <td>Systeemeigen Android™-browser op Android™ 4.4 en hoger</td>
@@ -699,7 +699,7 @@ Zie voor aanvullende vereisten:
 
 De AEM Forms-app is beschikbaar op de volgende platforms:
 
-| **Platform** | **Ondersteunde apparaten** |
+| **Platform** | **Ondersteunde Apparaten** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS | Apple iPhone, iPad, iPad Air en iPad mini met iOS 15.1 en hoger. |
 | Google Android™ | Android™ 5.1 en hoger. De AEM Forms-app is gecertificeerd voor Samsung Galaxy-tablets van 7 en 10 inch en voor populaire smartphones. |
@@ -707,7 +707,7 @@ De AEM Forms-app is beschikbaar op de volgende platforms:
 
 ### Documentbeveiligingsextensie Adoben voor Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
 
-Klikken [hier](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor de Uitbreiding van de Veiligheid van het Document van de Adobe voor Microsoft® Office te zien.
+Klik [ hier ](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor de Uitbreiding van de Veiligheid van het Document van de Adobe voor Microsoft® Office te zien.
 
 ### Uitzonderingen op clientondersteuning {#exceptions-to-client-support}
 
@@ -715,13 +715,13 @@ AEM Forms on JEE ondersteunt updates, patches en repareert pakketten boven op de
 
 ## Flardondersteuningsbeleid van derden {#third-party-patch-support-policy}
 
-De softwarevereisten van derden voor AEM Forms op JEE worden beschreven in het gedeelte &quot;Systeemvereisten&quot; van hun respectieve productdocumenten. Alle documentatie openen vanuit [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
+De softwarevereisten van derden voor AEM Forms op JEE worden beschreven in het gedeelte &quot;Systeemvereisten&quot; van hun respectieve productdocumenten. Heb toegang tot alle documentatie van [ https://adobe.com/go/learn_aemforms_documentation_65 ](https://adobe.com/go/learn_aemforms_documentation_65).
 
 AEM Forms op de referentieplatforms van derden van JEE vermeldt het specifieke patchniveau van de infrastructuur van derden dat tijdens de ontwikkeling en release van AEM Forms op JEE actueel was, en van het minimale patchniveau/servicepack van de infrastructuur die door die versie van AEM Forms op JEE wordt ondersteund.
 
 De Adobe steunt dringende of geadviseerde patches die door derdeverkopers op hun versie worden uitgegeven veronderstellend dat derdeverkopers achterwaartse verenigbaarheid met de versies waarborgen die AEM Forms op JEE steun. Adobe biedt alleen ondersteuning voor patches die worden vrijgegeven na het minimale patchniveau dat in de AEM Forms in JEE-documentatie is vermeld.
 
-Soms biedt Adobe geen ondersteuning voor updates van derden die belangrijke functionaliteit wijzigen en dus geen ondersteuning bieden voor volledige achterwaartse compatibiliteit. Zie voor meer informatie over de ondersteunde updates [Ondersteunde patchdefinities](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) voor specifieke verkopersproducten en de Adobe van flardtypes steunt.
+Soms biedt Adobe geen ondersteuning voor updates van derden die belangrijke functionaliteit wijzigen en dus geen ondersteuning bieden voor volledige achterwaartse compatibiliteit. Voor details op de gesteunde updates, zie [ Ondersteunde flarddefinities ](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) voor specifieke verkopersproducten en de steun van de Adobe van flardtypes.
 
 Onder omstandigheden waarover de Adobe geen controle heeft, kunnen patches van derden die zich beroepen op achterwaartse compatibiliteit, negatieve gevolgen hebben voor de producten van de Adobe of de omgeving van de klant. In dergelijke gevallen raadt de Adobe klanten aan de gevolgen van een noodpatch van een derde te beoordelen voordat ze deze op kritieke systemen toepassen. Adobe werkt met derden samen door redelijke zakelijke inspanningen te leveren om dergelijke problemen op te lossen, hetzij via normale ondersteuningsprogramma&#39;s voor Adoben, hetzij door derden die het probleem in hun patch verhelpen. Dit garandeert niet dat een nieuw vrijgegeven patch van derden die door de Adobe wordt ondersteund, werkt zoals beschreven door de leverancier of met AEM Forms op JEE.
 
@@ -858,7 +858,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Microsoft® SQL Server JDBC-stuurprogramma 6.2.2.0 |  |
 |  | Microsoft® JDBC-stuurprogramma 8.x voor SQL Server |  |
 |  |  |  |
-|  | **Verwijderde ondersteuning (PDF Generator en Algemeen):** |  |
+|  | **Verwijderde Steun (PDF Generator en in-Algemeen):** |  |
 |  | Microsoft® Sharepoint 2016 |  |
 |  | Microsoft® Office 2016 |  |
 |  | Microsoft® Office Visio 2016 |  |
@@ -895,7 +895,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Toegevoegde ondersteuning | Verwijderde ondersteuning | Verouderde ondersteuning |
 | -------------- | --------------- | ------------------- |
-| Oracle Java™ SE 11 (64-bits) SDK voor toepassingsserver JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 eindigt op 6 juni 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html) |
+| Oracle Java™ SE 11 (64-bits) SDK voor toepassingsserver JBoss® EAP 7.4. | | [ Adobe Acrobat 2017 - de steun van de Kern voor Adobe Acrobat 2017 eindigt op 6 juni 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html) |
 |  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64-bits) |
 |  | | Microsoft® Windows Server 2016 (64-bits) |
 |  | | Microsoft® Office 2016 |

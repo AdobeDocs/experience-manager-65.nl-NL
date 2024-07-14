@@ -21,22 +21,22 @@ ht-degree: 0%
 
 Met AEM Forms kunnen gebruikers een adaptief formulier opslaan als concept. De conceptfunctionaliteit biedt gebruikers de mogelijkheid om een formulier in uitvoering te onderhouden. Vervolgens kan een gebruiker het formulier op elk gewenst moment vanaf elk apparaat invullen en verzenden.
 
-AEM Forms slaat standaard gebruikersgegevens op die zijn gekoppeld aan het concept en de verzending op het Publish-exemplaar in de `/content/forms/fp` knooppunt.
+AEM Forms slaat standaard gebruikersgegevens op die zijn gekoppeld aan het concept en verzending op de Publish-instantie in het knooppunt `/content/forms/fp` .
 
 AEM Forms Portal-componenten bieden echter gegevensservices waarmee u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen kunt aanpassen. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
 
-Als u de opslag van gebruikersgegevens wilt aanpassen, moet u de [Conceptgegevens](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) en [Indieningsgegevens](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) diensten.
+Om de opslag van gebruikersgegevens aan te passen, moet u de [ Gegevens van het Ontwerp ](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) uitvoeren en [ de diensten van de Gegevens van de Verzending ](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
 
 ## Vereisten {#prerequisites}
 
-* Inschakelen [Forms Portal-componenten](/help/forms/using/enabling-forms-portal-components.md)
-* Een [Forms Portal-pagina](/help/forms/using/creating-form-portal-page.md)
-* Inschakelen [adaptieve formulieren voor Forms Portal](/help/forms/using/draft-submission-component.md)
-* Meer informatie [implementatiedetails van aangepaste opslag](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Laat [ Forms Portal componenten ](/help/forms/using/enabling-forms-portal-components.md) toe
+* Creeer a [ de Portaalpagina van Forms ](/help/forms/using/creating-form-portal-page.md)
+* Laat [ adaptieve vormen voor Forms Portal ](/help/forms/using/draft-submission-component.md) toe
+* Leer [ implementatiedetails van douaneopslag ](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Conceptgegevensservice {#draft-data-service}
 
-Als u de opslag van gebruikersconceptgegevens wilt aanpassen, moet u een implementatie opgeven voor alle methoden van het dialoogvenster `DraftAFDataService` interface.
+Als u de opslag van gebruikersconceptgegevens wilt aanpassen, moet u een implementatie opgeven voor alle methoden van de interface `DraftAFDataService` .
 
 Een beschrijving van de methodes en hun argumenten worden verstrekt in het volgende codevoorbeeld van de interface:
 
@@ -83,7 +83,7 @@ public interface DraftAFDataService {
 
 ## Verzendgegevensservice {#submission-data-service}
 
-Als u de opslag van gegevens over het verzenden van gebruikers wilt aanpassen, moet u een implementatie voor alle methoden van het dialoogvenster `SubmittedAFDataService` interface.
+Als u de opslag van verzonden gegevens door gebruikers wilt aanpassen, moet u een implementatie voor alle methoden van de interface `SubmittedAFDataService` opgeven.
 
 Een beschrijving van de methodes en hun argumenten worden verstrekt in het volgende codevoorbeeld van de interface:
 

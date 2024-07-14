@@ -29,15 +29,15 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 
 >[!NOTE]
 >
->Nadat u de startpagina&#39;s naar het doel hebt opgewaardeerd (**Productie**), kunt u de **Productie** pagina&#39;s als een entiteit (om het proces sneller te maken). Voeg de pagina&#39;s toe aan een workflowpakket en gebruik dit als de payload voor een workflow die een pakket met pagina&#39;s activeert. U moet het workflowpakket maken voordat u de introductie kunt promoten. Zie [Promotiepagina&#39;s verwerken met AEM workflow](#processing-promoted-pages-using-aem-workflow).
+>Nadat u de lanceringspagina&#39;s aan het doel (**Productie**) bevordert, kunt u de **Productie** pagina&#39;s als entiteit (om het proces sneller te maken) activeren. Voeg de pagina&#39;s toe aan een workflowpakket en gebruik dit als de payload voor een workflow die een pakket met pagina&#39;s activeert. U moet het workflowpakket maken voordat u de introductie kunt promoten. Zie [ het Verwerken bevorderde Pagina&#39;s gebruikend AEM Werkschema ](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
->Een enkele lancering kan niet tegelijkertijd worden bevorderd. Dit betekent dat twee promotieacties tegelijk op dezelfde start kunnen leiden tot een fout - `Launch could not be promoted` (samen met conflictfouten in het logbestand).
+>Een enkele lancering kan niet tegelijkertijd worden bevorderd. Dit betekent dat twee promotieacties bij dezelfde introductie tegelijkertijd kunnen resulteren in een fout - `Launch could not be promoted` (samen met conflictfouten in het logbestand).
 
 >[!CAUTION]
 >
->Bij het promoten van introducties voor *gewijzigd* pagina&#39;s, wordt rekening gehouden met wijzigingen in zowel de bron- als startvertakkingen.
+>Wanneer het bevorderen van lanceringen voor *gewijzigde* pagina&#39;s, worden de wijzigingen in zowel de bron als lanceringstakken overwogen.
 
 ## Startpagina&#39;s promoten {#promoting-launch-pages}
 
@@ -45,106 +45,106 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 >
 >Dit omvat de handmatige actie van het bevorderen van lanceringspagina&#39;s wanneer er slechts één lanceringsniveau is. Zie:
 >
->* [Een geneste start bevorderen](#promoting-a-nested-launch) wanneer de structuur meer dan één keer wordt gestart.
->* [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor meer informatie over automatische promotie en publicatie.
+>* [ Bevorderend een Genestelde Lancering ](#promoting-a-nested-launch) wanneer er meer dan één lancering in de structuur is.
+>* [ Lanceringen - de Orde van Gebeurtenissen ](/help/sites-authoring/launches.md#launches-the-order-of-events) voor verdere details over automatische bevordering en publicatie.
 >
 
-U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** console:
+U kunt lanceringen van of de **console van Plaatsen** of de **console van Lanceringen** bevorderen:
 
 1. Openen:
 
-   * de **Sites** console:
+   * de **console van Plaatsen**:
 
-      1. Open de [referentie-rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) en selecteert u de gewenste bronpagina met [selectiemodus](/help/sites-authoring/basic-handling.md) (of selecteer en open de referentie-rail, de volgorde is niet belangrijk). Alle verwijzingen worden weergegeven.
+      1. Open het [ verwijzingenspoor ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) en selecteer de vereiste bronpagina gebruikend [ selectiemodus ](/help/sites-authoring/basic-handling.md) (of selecteer en open de verwijzingsspoorwegen, is de orde niet belangrijk). Alle verwijzingen worden weergegeven.
 
-      1. Selecteren **Starten** (bijvoorbeeld Launches (1)) om een lijst weer te geven met de specifieke startacties.
+      1. Selecteer **Lanceringen** (bijvoorbeeld, Lanceringen (1)) om een lijst van de specifieke lanceringen te tonen.
       1. Selecteer de specifieke lancering om de beschikbare acties te tonen.
-      1. Selecteren **Starten bevorderen** om de wizard te openen.
+      1. Selecteer **Bevorderen lancering** om de tovenaar te openen.
 
-   * de **Starten** console:
+   * de **console van Lanceringen**:
 
       1. Selecteer de start (klik op de miniatuur).
-      1. Selecteren **Bevorderen**.
+      1. Selecteer **bevorderen**.
 
 1. In de eerste stap kunt u het volgende opgeven:
 
    * **Doel**
 
-      * **Starten na promotie verwijderen**
+      * **schrapping lancering na bevordering**
 
-   * **Toepassingsgebied**
+   * **Reikwijdte**
 
-      * **Volledige introductie bevorderen**
-      * **Gewijzigde pagina&#39;s promoten**
-      * **Huidige pagina promoten**
-      * **Huidige pagina en subpagina&#39;s promoten**
+      * **bevorderen volledige lancering**
+      * **bevordert gewijzigde pagina&#39;s**
+      * **bevordert huidige pagina**
+      * **bevordert huidige pagina en subpagina&#39;s**
 
    Als u bijvoorbeeld alleen gewijzigde pagina&#39;s wilt promoten:
 
-   ![launch-pd-06](assets/launches-pd-06.png)
+   ![ lanceert-pd-06 ](assets/launches-pd-06.png)
 
    >[!NOTE]
    >
-   >Dit geldt voor één keer starten, als u geneste lanceringen hebt, zie [Een geneste start bevorderen](#promoting-a-nested-launch).
+   >Dit behandelt één enkele lancering, als u genestelde lanceringen zie [ Bevorderend een Genestelde Lancering ](#promoting-a-nested-launch).
 
-1. Selecteren **Volgende** om verder te gaan.
+1. Selecteer **daarna** te werk te gaan.
 1. U kunt de pagina&#39;s bekijken die u wilt promoten. Deze zijn afhankelijk van het gekozen paginabereik:
 
-   ![Te promoten pagina&#39;s controleren](assets/chlimage_1-102.png)
+   ![ pagina&#39;s van het Overzicht die moeten worden bevorderd ](assets/chlimage_1-102.png)
 
-1. Selecteren **Bevorderen**.
+1. Selecteer **bevorderen**.
 
 ## Starten van pagina&#39;s tijdens bewerken bevorderen {#promoting-launch-pages-when-editing}
 
-Wanneer u een startpagina bewerkt, wordt **Starten bevorderen** actie is ook beschikbaar via **Pagina-informatie**. Hierdoor wordt de wizard geopend die de benodigde informatie verzamelt.
+Wanneer u een lanceringspagina uitgeeft, **bevordert de 1} actie van de Lancering {ook beschikbaar bij** Informatie van de Pagina **.** Hierdoor wordt de wizard geopend die de benodigde informatie verzamelt.
 
-![Starten bevorderen](assets/chlimage_1-103.png)
+![ bevorderen Lanceer ](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->Dit is beschikbaar voor enkelvoudig en [geneste lanceringen](#promoting-a-nested-launch).
+>Dit is beschikbaar voor enige en [ genestelde lanceringen ](#promoting-a-nested-launch).
 
 ## Een geneste start bevorderen {#promoting-a-nested-launch}
 
 Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de bronnen, inclusief de hoofdbron (productie).
 
-![Overzicht van het promoten van een geneste introductie](assets/chlimage_1-104.png)
+![ Overzicht van het bevorderen van een genestelde lancering ](assets/chlimage_1-104.png)
 
-1. Zoals met [Een geneste start maken](#creatinganestedlaunchlaunchwithinalaunch), navigeer naar en selecteer de vereiste start in een van de **Starten** of de **Verwijzingen** spoorwegen.
-1. Selecteren **Starten bevorderen** om de wizard te openen.
+1. Zoals met [ Creërend een Genestelde Lancering ](#creatinganestedlaunchlaunchwithinalaunch), navigeer aan en selecteer de vereiste lancering in of de **3} console van Lanceringen {of het** spoor van Verwijzingen **.**
+1. Selecteer **Bevorderen lancering** om de tovenaar te openen.
 
 1. Voer de vereiste gegevens in:
 
    * **Doel**
 
-      * **Promotiedoel**
+      * **doel van de Bevordering**
 U kunt een van de bronnen promoten.
 
-      * **Starten na promotie verwijderen**
+      * **schrapping lancering na bevordering**
 Na de promotie worden de geselecteerde lancering, en om het even welke genestelde lanceringen binnen het, geschrapt.
 
-   * **Toepassingsgebied**
+   * **Reikwijdte**
 Hier kunt u kiezen of u de volledige opstart wilt bevorderen of alleen pagina&#39;s die daadwerkelijk zijn bewerkt. In het laatste geval kunt u opgeven of u subpagina&#39;s wilt opnemen of uitsluiten. De standaardconfiguratie is dat alleen paginawijzigingen voor de huidige pagina worden bevorderd:
 
-      * **Volledige introductie bevorderen**
-      * **Gewijzigde pagina&#39;s promoten**
-      * **Huidige pagina promoten**
-      * **Huidige pagina en subpagina&#39;s promoten**
+      * **bevorderen volledige lancering**
+      * **bevordert gewijzigde pagina&#39;s**
+      * **bevordert huidige pagina**
+      * **bevordert huidige pagina en subpagina&#39;s**
 
-   ![Instellingen voor het promoten van een opstart](assets/chlimage_1-105.png)
+   ![ Montages voor het bevorderen van een lancering ](assets/chlimage_1-105.png)
 
-1. Selecteren **Volgende**.
-1. De details van de aanbieding bekijken voordat je de selectie maakt **Bevorderen**:
+1. Selecteer **daarna**.
+1. Herzie de promotiedetails alvorens **te selecteren bevorderen**:
 
-   ![Details bekijken en promoten](assets/chlimage_1-106.png)
+   ![ de details van het Overzicht en bevorderen ](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
-   >De weergegeven pagina&#39;s zijn afhankelijk van de **Toepassingsgebied** gedefinieerde en mogelijk de pagina&#39;s die daadwerkelijk zijn bewerkt.
+   >De vermelde pagina&#39;s zullen van het **Gedefinieerde Werkingsgebied** en misschien de pagina&#39;s afhangen die eigenlijk zijn uitgegeven.
 
-1. Uw wijzigingen worden bevorderd en weerspiegeld in de **Starten** console:
+1. Uw veranderingen zullen in de **console van Lanceringen** worden bevorderd en worden weerspiegeld:
 
-   ![Startconsole](assets/chlimage_1-107.png)
+   ![ console van Lanceringen ](assets/chlimage_1-107.png)
 
 ## Promotiepagina&#39;s verwerken met AEM workflow {#processing-promoted-pages-using-aem-workflow}
 
@@ -154,8 +154,8 @@ Gebruik workflowmodellen voor bulkverwerking van geconverteerde startpagina&#39;
 1. Wanneer auteurs startpagina&#39;s promoten, slaan ze deze op in het workflowpakket.
 1. Start een workflowmodel met het pakket als de payload.
 
-Als u automatisch een workflow wilt starten wanneer pagina&#39;s worden geconverteerd, [configureren van workflow-starter](/help/sites-administering/workflows-starting.md#workflows-launchers) voor het pakketknooppunt.
+Om een werkschema automatisch te beginnen wanneer de pagina&#39;s worden bevorderd, [ vormt een werkschemalancerer ](/help/sites-administering/workflows-starting.md#workflows-launchers) voor de pakketknoop.
 
 U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s voor Starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
 
-![Workflow starten](assets/chlimage_1-108.png)
+![ Startprogramma van het Werkschema ](assets/chlimage_1-108.png)

@@ -19,42 +19,42 @@ ht-degree: 0%
 
 Voer de volgende stappen uit in de aanbevolen volgorde om de Android-app voor AEM Forms te maken.
 
-1. [Het AEM Forms App Source Code-pakket downloaden](#download-android-zip)
+1. [Het AEM Forms App Source-codepakket downloaden](#download-android-zip)
 1. [Omgevingsvariabelen instellen](#set-environment-variable-android)
 1. [Een standaard AEM Forms-app ontwikkelen](#set-up-the-xcode-project)
 
-## Het AEM Forms App Source Code-pakket downloaden {#download-android-zip}
+## Het AEM Forms App Source-codepakket downloaden {#download-android-zip}
 
-AEM Forms App Source Code Package verwijst naar de `adobe-lc-mobileworkspace-src-<version>.zip` archief. Dit archief bevat de broncode die is vereist voor het maken van een aangepaste AEM Forms-app. Het archief wordt opgenomen in het `adobe-aemfd-forms-app-src-pkg-<version>.zip`op de Software Distribution beschikbaar.
+AEM Forms App Source Code Package verwijst naar het `adobe-lc-mobileworkspace-src-<version>.zip` archief. Dit archief bevat de broncode die is vereist voor het maken van een aangepaste AEM Forms-app. Het archief is inbegrepen in het `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket beschikbaar op de Distributie van de Software.
 
-Als u het dialoogvenster `adobe-aemfd-forms-app-src-pkg-<version>.zip` voert u de volgende stappen uit:
+Voer de volgende stappen uit om het `adobe-aemfd-forms-app-src-pkg-<version>.zip` -bestand te downloaden:
 
-1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
-1. Selecteren **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
-1. In de **[!UICONTROL Filters]** sectie:
-   1. Selecteren **[!UICONTROL Forms]** van de **[!UICONTROL Solution]** vervolgkeuzelijst.
-   2. Selecteer de versie en typ voor het pakket. U kunt ook de opdracht **[!UICONTROL Search Downloads]** om de resultaten te filteren.
-1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem. Selecteer **[!UICONTROL Accept EULA Terms]** en selecteert u **[!UICONTROL Download]**.
-1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
-1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
-1. Als u het archief met broncodes wilt downloaden, opent u **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** in uw browser. Het ZIP-bestand voor de Android-app wordt gedownload op uw apparaat.
-1. Extraheer de inhoud van het ZIP-bestand naar een map op uw lokale bestandssysteem. Bijvoorbeeld: *C:\&lt;folder structure=&quot;&quot;>\adobe-lc-mobileworkspace-src-2.4.20*
+1. Open [ Distributie van de Software ](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
+1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In de sectie **[!UICONTROL Filters]** :
+   1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
+   2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
+1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
+1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
+1. Om het bron-code archief te downloaden, open **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** in uw browser. Het .zip-bestand van de Android-app wordt gedownload naar uw apparaat.
+1. Extraheer de inhoud van het ZIP-bestand naar een map op uw lokale bestandssysteem. Bijvoorbeeld, *C:\&lt;Folder Structure> \ adobe-lc-mobileworkspace-src-2.4.20*
 
-In de volgende afbeelding wordt de structuur van de `adobe-lc-mobileworkspace-src-<version>.zip\android`map.
+Het volgende beeld toont de structuur van de `adobe-lc-mobileworkspace-src-<version>.zip\android` omslag.
 
-![zip_android_folder_structure](assets/zip_android_folder_structure.png)
+![ zip_android_folder_structure ](assets/zip_android_folder_structure.png)
 
 ## Omgevingsvariabelen instellen {#set-environment-variable-android}
 
 Stel de volgende omgevingsvariabelen in voordat u het constructieproces voor de AEM Forms-app start:
 
 * Stel de omgevingsvariabele JAVA_HOME in op de locatie van de JDK-software op het lokale bestandssysteem. Bijvoorbeeld C:\Program Files\Java\jdk1.8.0_181
-* Stel de `ANDROID_SDK_ROOT` systeemomgevingsvariabele naar de SDK-locatie voor Android. Bijvoorbeeld C:\Users\&amp;lt;gebruikersnaam>\AppData\Local\Android\Sdk
-* Stel de `Path` systeemomgevingsvariabele om de locatie van de platformhulpprogramma&#39;s en tools-map voor Android op te nemen. Bijvoorbeeld C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools en C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Stel de systeemomgevingsvariabele `ANDROID_SDK_ROOT` in op de SDK-locatie voor Android. Bijvoorbeeld C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
+* Stel de systeemomgevingsvariabele `Path` zo in dat deze de locatie van de platformgereedschappen en tools-map voor Android bevat. Bijvoorbeeld C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools en C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Een standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
 
-Nadat u de adobe-lc-mobileworkspace-src-&lt;version>.zip-bestand op het lokale bestandssysteem en stel de omgevingsvariabelen in, maak een standaard AEM Forms Android-app met een van de volgende opties:
+Nadat u het bestand adobe-lc-mobileworkspace-src-&lt;version>.zip hebt opgeslagen in het lokale bestandssysteem en de omgevingsvariabelen hebt ingesteld, maakt u een standaard AEM Forms Android-app met een van de volgende opties:
 
 * [AEM Forms-app ontwikkelen met Android Studio](#using-android-studio)
 * [.apk-bestand genereren met Android Studio](#generate-apk-android-studio)
@@ -64,15 +64,15 @@ Nadat u de adobe-lc-mobileworkspace-src-&lt;version>.zip-bestand op het lokale b
 Voer de volgende stappen uit om een AEM Forms-app te maken met Android Studio:
 
 1. Start de Android Studio-toepassing op uw computer.
-1. Klikken **Een bestaand Android Studio-project openen**. Als het dialoogvenster voor het openen van een bestaand project niet automatisch wordt weergegeven, selecteert u **Bestand** > **Openen**.
-1. Navigeren naar *adobe-lc-mobileworkspace-src&lt;version>.zip/android* op het lokale bestandssysteem en klik op **OK**.
+1. Klik **Open een bestaand project van Android Studio**. Als de dialoogdoos om een bestaand project te openen niet automatisch verschijnt, uitgezochte **Dossier** > **Open**.
+1. Navigeer aan *adobe-lc-mobileworkspace-src-&lt;version>.zip/android* op het lokale dossiersysteem en klik **O.K.**.
 
-   De **androïde** wordt weergegeven in het linkerdeelvenster.
+   De **android** optie wordt getoond in de linkerruit.
 
-   ![android_folder_studio](assets/android_folder_studio.png)
+   ![ android_folder_studio ](assets/android_folder_studio.png)
 
-1. Selecteren **androïde** in het linkerdeelvenster en klik op **Uitvoeren** > **&#39;android&#39; uitvoeren**.
-1. Selecteer het Android-apparaat in het gedeelte Verbonden apparaten in het dialoogvenster Implementatiedoel selecteren en klik op OK.
+1. Selecteer **android** van de linkerruit en klik **Looppas** > **Looppas &quot;android&quot;**.
+1. Selecteer het Android-apparaat in de sectie Connected Devices in het dialoogvenster Select Deployment Target (Doel voor implementatie selecteren) en klik op OK.
 
    Nadat u de ontwikkelomgeving hebt gemaakt, kunt u nu aanpassingen op de app toepassen. Gebruik de volgende artikelen om de app aan te passen:
 
@@ -87,19 +87,19 @@ Voer de volgende stappen uit om een AEM Forms-app te maken met Android Studio:
 Ga als volgt te werk om het .apk-bestand te genereren met Android Studio:
 
 1. Start de Android Studio-toepassing op uw computer.
-1. Selecteren **Een bestaand Android Studio-project openen**. Als het dialoogvenster voor het openen van een bestaand project niet automatisch wordt weergegeven, selecteert u **Bestand** > **Openen**.
-1. Navigeren naar *adobe-lc-mobileworkspace-src&lt;version>.zip/android* op het lokale bestandssysteem en klik op **OK**.
+1. Selecteer **Open een bestaand project van Android Studio**. Als de dialoogdoos om een bestaand project te openen niet automatisch verschijnt, uitgezochte **Dossier** > **Open**.
+1. Navigeer aan *adobe-lc-mobileworkspace-src-&lt;version>.zip/android* op het lokale dossiersysteem en klik **O.K.**.
 
    De optie Android wordt weergegeven in het linkerdeelvenster.
 
-1. Selecteer **Opbouwen** > **APK samenstellen**.
+1. Om het .apk dossier te produceren, uitgezochte **bouwt** > **APK** bouwt.
 
-   Selecteer optioneel **Opbouwen** > **Ondertekende APK genereren** om een [ondertekende versie](https://developer.android.com/studio/publish/app-signing) van het .apk-bestand.
+   Naar keuze, selecteer **Bouwstijl** > **Genereer Ondertekende APK** om a [ ondertekende versie ](https://developer.android.com/studio/publish/app-signing) van het .apk dossier te produceren.
 
 ## Android Debug Bridge gebruiken {#build-android-debug-bridge}
 
-Nadat het .apk-bestand is gegenereerd, voert u de volgende opdracht uit om de toepassing op een Android-apparaat te installeren met de opdracht [Android Debug Bridge](https://developer.android.com/tools/adb).
+Zodra het .apk dossier is geproduceerd, voer het volgende bevel uit om de toepassing op een apparaat van Android te installeren gebruikend [ Android zuivert Bridge ](https://developer.android.com/tools/adb).
 
-**Windows-gebruikers:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
+**gebruikers van Vensters:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**Mac-gebruikers:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**de gebruikers van Mac:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`

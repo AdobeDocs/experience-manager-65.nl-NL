@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # De werkruimte AEM formulieren integreren met Microsoft Office SharePoint Server{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
-**- Eisen**
+**- Vereisten**
 
 **Vereiste kennis**
 Voordat u AEM Forms Workspace kunt toevoegen aan SharePoint Server, moet u toegang hebben tot SharePoint Server met de juiste rechten en moet u de URL kennen om toegang te krijgen tot Workspace. In de onderstaande stappen wordt ervan uitgegaan dat u bekend bent met SharePoint Server. Voor meer informatie over de Delen van het Web in de Server van SharePoint, zie de Delen van het Web in de Diensten van SharePoint van Vensters.
@@ -26,7 +26,7 @@ Voordat u AEM Forms Workspace kunt toevoegen aan SharePoint Server, moet u toega
 **Gebruikersniveau**
 Begin
 
-U kunt AEM Forms Workspace als een Web-onderdeel gebruiken in Microsoft Office SharePoint Server (bijvoorbeeld Microsoft Office SharePoint Server 2007). Gebruikers hebben toegang tot de AEM Forms Workspace door verbinding te maken met uw SharePoint Server via een webbrowser voor een uniforme ervaring. In dit artikel, leert u de basisstappen om de Werkruimte van AEM Forms als Deel van het Web in de Server van SharePoint van Microsoft Office te tonen. U kunt de in dit artikel beschreven stappen uitvoeren om een uniforme ervaring te bieden, zodat gebruikers die verbinding maken met uw SharePoint-server, vanaf dezelfde poort toegang hebben tot de AEM Forms Workspace.
+U kunt AEM Forms Workspace als Deel van het Web in de Server van SharePoint van Microsoft Office gebruiken (bijvoorbeeld, de Server 2007 van SharePoint van Microsoft Office). Gebruikers hebben toegang tot AEM Forms Workspace door verbinding te maken met uw SharePoint Server via een webbrowser voor een uniforme ervaring. In dit artikel, leert u de basisstappen om AEM Forms Workspace als Deel van het Web in de Server van SharePoint van Microsoft Office te tonen. U kunt de in dit artikel beschreven stappen uitvoeren om een uniforme ervaring te bieden, zodat gebruikers die verbinding maken met uw SharePoint-server toegang hebben tot AEM Forms Workspace vanaf dezelfde poort.
 
 >[!NOTE]
 >
@@ -36,39 +36,39 @@ U kunt AEM Forms Workspace als een Web-onderdeel gebruiken in Microsoft Office S
 
 Voer de volgende stappen uit om AEM Forms Workspace in een Deel van het Web te integreren:
 
-1. Navigeer in een webbrowser naar de SharePoint-site, zoals: `https://[myMOSSserver]:44299/default.aspx` waar `[myMOSSserver]` is de naam of het IP-adres van de SharePoint-server.
+1. Navigeer in een webbrowser naar de SharePoint-site, bijvoorbeeld `https://[myMOSSserver]:44299/default.aspx` waar `[myMOSSserver]` de naam of het IP-adres van de SharePoint-server is.
 
    >[!NOTE]
    >
    >44299 is het standaardpoortnummer voor de SharePoint-server. Het poortnummer is afhankelijk van uw installatie van SharePoint Server.
 
-1. Klik rechtsboven op de webpagina op **Site-handelingen** en selecteert u **Pagina bewerken**.
-1. Klik op de knop **Een webonderdeel toevoegen** knop.
-1. Selecteer onder Dialoogvenster Dialoogvenster Webonderdelen toevoegen - webpagina onder Dialoogvenster Dialoogvenster Diversen de optie **Webonderdeel van paginaviewer** en klik vervolgens op **Toevoegen**.
-1. Klik in het vak Webonderdeel van de paginaviewer op **bewerken** en selecteert u **Gedeeld webonderdeel wijzigen**.
+1. Op de hoger-juiste kant van de Web-pagina, klik {de Acties van de Plaats **en selecteer** uitgeven Pagina **.**
+1. Klik **toevoegen een Deel van het Web** knoop.
+1. In Add de Delen van het Web - de dialoogdoos van de Web-pagina, onder Dialoogvenster, selecteert het **Deel van het Web van de Kijker van de Pagina 0} en klikt dan** **toevoegen.**
+1. In de doos van het Deel van het Web van de Kijker van de Pagina, geeft de klik **uit en selecteert** Gedeeld Deel van het Web **wijzigen.**
 
    >[!NOTE]
    >
-   >Het vak Webonderdeel van de paginaviewer wordt weergegeven onder **Een webonderdeel toevoegen** knop waarop u in stap 3 hebt geklikt, zoals in de volgende afbeelding wordt getoond (Afbeelding 1):
+   >Het Deel van het Web van de Kijker van de Pagina verschijnt onder **een Deel van het Web** knoop die u in stap 3 zoals aangetoond in de volgende illustratie (Figuur 1) klikte:
 
-   ![Paginaviewer, webonderdeel in Microsoft Office SharePoint-server.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
+   ![ de doos van het Deel van het Web van de Kijker van de Pagina in de server van SharePoint van Microsoft Office.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
    Figuur 1. - Het vak Webonderdeel van paginaviewer op de Microsoft Office SharePoint-server.
 
 1. Voer op de pagina Paginaviewer de volgende taken uit:
 
-   1. Typ in het vak Koppeling de URL van de AEM Forms-werkruimte, zoals `https://[AEM_forms_Server]:8080/lc/ws` waar `[AEM_forms_Server]` vertegenwoordigt IP of Naam van de Server van AEM Forms.
-   1. Klikken **Weergave** en wijzigt u de hoogte, breedte en titel, zodat u de volledige gebruikersinterface van de werkruimte kunt zien. U kunt de hoogte en breedte bijvoorbeeld instellen op respectievelijk 6 en 11 inch.
-   1. Klikken **Koppeling testen**. Er wordt een nieuw webbrowservenster weergegeven met Workspace erin.
-   1. (Optioneel) Klik op **Layout** en wijzig de lay-out van Werkruimte in het Deel van het Web.
-   1. (Optioneel) Klik op **Geavanceerd** en wijzigt u andere instellingen, zoals de beschrijving en of Workspace geminimaliseerd of gesloten kan worden in het webonderdeel.
+   1. Typ in het vak Koppeling de URL van AEM Forms Workspace, bijvoorbeeld `https://[AEM_forms_Server]:8080/lc/ws` waarbij `[AEM_forms_Server]` de IP of de naam van AEM Forms Server vertegenwoordigt.
+   1. Klik **Verschijning** en wijzig de hoogte, de breedte, en de titel zodat u het volledige gebruikersinterface van Workspace kunt zien. U kunt de hoogte en breedte bijvoorbeeld instellen op respectievelijk 6 en 11 inch.
+   1. Klik **Verbinding van de Test**. Er wordt een nieuw webbrowservenster weergegeven waarin Workspace wordt weergegeven.
+   1. (Facultatief) klik **Lay-out** en wijzig de lay-out van Workspace in Deel van het Web.
+   1. (Facultatief) klik **Geavanceerd** en wijzig andere montages, zoals de beschrijving en of Workspace in het Deel van het Web kan worden geminimaliseerd of worden gesloten.
 
-      Klikken **Toepassen**.
+      Klik **toepassen**.
 
-1. Klikken **Bewerkmodus afsluiten** en controleert u of u toegang hebt tot Workspace.
+1. Klik **Uitgang geeft Wijze** uit en verifieer dat u tot Workspace kunt toegang hebben.
 
 Nadat u de bovenstaande stappen hebt uitgevoerd, ziet uw SharePoint-site eruit zoals in de volgende afbeelding (Afbeelding 2):
 
-![AEM Forms Workspace geïntegreerd met Microsoft Office SharePoint Server](assets/aem-forms-workspace.jpg)
+![ AEM Forms Workspace geïntegreerd met de Server van SharePoint van Microsoft Office ](assets/aem-forms-workspace.jpg)
 
 Afbeelding 2 - AEM Forms Workspace geïntegreerd met Microsoft Office SharePoint Server

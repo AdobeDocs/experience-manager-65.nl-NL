@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 Adaptieve formulieren ondersteunen diverse XFA-gebeurtenissen, -eigenschappen, -scripts en -validaties die zijn gedefinieerd in een XDP-bestand, zoals:
 
@@ -141,39 +141,39 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de korte beschrijvingseigenschap in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>bijschrift<em> (alle veldtypen)</em></p> </td>
+   <td><p>caption <em> (alle types van Gebied) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Title in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (alle veldtypen)</em></p> </td>
+   <td><p>displayFormat <em> (alle types van Gebied) </em></p> </td>
    <td><p>Wordt in adaptieve vorm toegewezen aan het weergavepatroon.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (alle veldtypen)</em></p> </td>
+   <td><p>rawValue <em> (alle types van Gebied) </em></p> </td>
    <td><p>Toegewezen aan waarde-eigenschap in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (Keuzelijst, Selectievakje)</em></p> </td>
+   <td><p>items <em> (Keuzelijst, Selectievakje) </em></p> </td>
    <td><p>Eigenschap toegewezen aan opties in adaptieve vorm. U kunt deze negeren met de expressie Opties.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Tekstveld)</em></p> </td>
+   <td><p>maxChar <em> (het Gebied van de Tekst) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Maximum aantal tekens toegestaan in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>multiline<em> (Tekstveld)</em></p> </td>
+   <td><p>multiline <em> (het Gebied van de Tekst) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Meerdere regels toestaan in aangepaste vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (Numeriek veld, decimaal veld)</em></p> </td>
+   <td><p>fracDigit <em> (Numeriek Gebied, Decimaal Gebied) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Frac digits in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (Numeriek veld, decimaal veld)</em></p> </td>
+   <td><p>leadDigit <em> (Numeriek Gebied, Decimaal Gebied) </em></p> </td>
    <td><p>Wordt in adaptieve vorm toegewezen aan de eigenschap Cijfers lead.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Keuzelijst)</em></p> </td>
+   <td><p>multiSelect <em> (Keuzelijst) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Meerdere selecties in aangepaste vorm toestaan.</p> </td>
   </tr>
  </tbody>
@@ -203,7 +203,7 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in het X
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>Dit script wordt uitgevoerd bij uitvoering en kan niet worden overschreven in de adaptieve vorm.<br /> </p> </td>
+   <td><p>Dit script wordt uitgevoerd bij uitvoering en kan niet worden overschreven in adaptieve vorm.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>exit </p> </td>

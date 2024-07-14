@@ -29,33 +29,33 @@ De replicatie (niet-omgekeerde replicatie) ontbreekt om één of andere reden.
 
 Er zijn diverse redenen voor replicatie om te ontbreken. In dit artikel wordt uitgelegd welke aanpak u kunt volgen bij het analyseren van deze kwesties.
 
-**Worden replicaties überhaupt geactiveerd wanneer u op de knop Activeren klikt? Als NIET dan het volgende doet:**
+**worden de replicaties teweeggebracht bij allen wanneer het klikken van de Activate knoop? Als NIET dan het volgende doet:**
 
 1. Ga naar /crx/explorer en login als admin.
 1. &quot;Content Explorer&quot; openen
 1. Zie of bestaat een knoop /bin/replicate of /bin/replicate.json. Als het knooppunt bestaat, verwijdert u het en slaat u het op.
 
-**Worden de replicaties omhoog een rij gevormd in de rijen van de replicatieagent?**
+**worden de replicaties een rij gevormd in de rijen van de replicatieagent?**
 
 Controleer dit door naar /etc/replication/agents.author.html te gaan dan de replicatieagenten klikken om te controleren.
 
-**Als één agentenrij of een paar agentenrijen vast zijn:**
+**als één agentenrij of een paar agentenrijen vast zijn:**
 
-1. Wordt de wachtrij weergegeven **geblokkeerd** status? Zo ja, wordt de publicatie-instantie dan niet uitgevoerd of reageert deze niet? Controleer de publicatie-instantie om te zien wat er mis is. Dat wil zeggen, controleer de logboeken en controleer of er een fout OutOfMemory of een ander probleem is. Als het slechts langzaam is, dan neem draaddumps en analyseer hen.
-1. Geeft de wachtrijstatus weer **Wachtrij is actief - # in behandeling**? De replicatietaak kan in feite vastzitten in een socket die wacht tot de publicatie-instantie of Dispatcher heeft gereageerd. Dit kan betekenen dat de publicatie-instantie of de Dispatcher onder hoge druk staat of vastzit in een vergrendeling. Neem draaddumps van auteur en publiceer in dit geval.
+1. Toon de rij **geblokkeerde** status? Zo ja, wordt de publicatie-instantie dan niet uitgevoerd of reageert deze niet? Controleer de publicatie-instantie om te zien wat er mis is. Dat wil zeggen, controleer de logboeken en controleer of er een fout OutOfMemory of een ander probleem is. Als het slechts langzaam is, dan neem draaddumps en analyseer hen.
+1. Toon de rijstatus **Rij actief - # hangend** is? De replicatietaak kan in feite vastzitten in een socket die wacht tot de publicatie-instantie of Dispatcher reageert. Dit kan betekenen dat de publicatie-instantie of Dispatcher onder hoge druk staat of vastzit in een vergrendeling. Neem draaddumps van auteur en publiceer in dit geval.
 
    * Open de draaddumps van auteur in een analysator van de draadstortplaats, controleer of het toont dat de sling van de replicatieagent de gebeurtenisbaan in socketRead vastzit.
    * Open de draaddumps van publiceren in een analysator van de draadstortplaats, analyseer wat zou kunnen veroorzaken publiceer instantie om niet te antwoorden. U zou een draad met POST /bin/receive in zijn naam moeten zien die de draad is die de replicatie van auteur ontvangt.
 
-**Als alle agentenrijen worden geplakt**
+**als alle agentenrijen geplakt** zijn
 
 1. Het is mogelijk dat een bepaald stuk inhoud niet onder /var/replication/data kan in series worden vervaardigd toe te schrijven aan de corruptie van de bewaarplaats of een andere kwestie. Ga naar logs/error.log voor een verwante fout. Ga als volgt te werk om het slechte replicatiepunt te wissen:
 
-   1. Ga naar https://&lt;host>:&lt;port>/crx/de en login als admin gebruiker.
+   1. Ga naar https://&lt;host>:&lt;port>/crx/de en meld u aan als beheerder.
    1. Klik op &quot;Gereedschappen&quot; in het bovenste menu.
    1. Klik op de vergrootglasknop.
    1. Selecteer XPath als Type.
-   1. Voer in het vak &quot;Query&quot; deze query /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job), volgorde door @slingevent:gemaakt
+   1. Voer in het vak &quot;Query&quot; deze query/jcr:root/var/eventing/jobs//element({0,slingevent:Job)-volgorde in door @slingevent:created&#42;
    1. Klik op Zoeken.
    1. In de resultaten zijn de belangrijkste items de meest recente slingerende taken. Klik op elke kopie en zoek de geplakte replicaties die overeenkomen met wat boven in de wachtrij wordt weergegeven.
 
@@ -69,12 +69,12 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan de repl
    * Op dit punt wordt de configuratie DefaultJobManager die in crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config wordt opgeslagen in een inconsistente staat. En alhoewel het bezit van de Gebeurtenis van de Baan van de &quot;Apache het Verdelen van de Baan van de Gebeurtenis&quot;om in gecontroleerde staat toont te zijn toegelaten, wanneer men aan het Verschuivende lusje van de Gebeurtenis navigeert, toont het het bericht - DE VERWERKING VAN DE TAAK WORDT UITGESCHAKELD en de replicatie werkt niet.
    * Om deze kwestie op te lossen, navigeer aan de pagina van de Configuratie van de console OSGi en schrap de &quot;Apache Sling de Handler van de Gebeurtenis van de Baan&quot;configuratie. Dan begin de Hoofdknoop van de cluster opnieuw om de configuratie terug in een verenigbare staat te krijgen. Dit zou de kwestie moeten bevestigen en de replicatie begint opnieuw te werken.
 
-**Een replication.log maken**
+**creeer een replication.log**
 
 Soms is het nuttig om al replicatieregistreren te plaatsen om in een afzonderlijk logboekdossier op het niveau van DEBUG worden toegevoegd. Dit doet u als volgt:
 
 1. Ga naar https://host:port/system/console/configMgr en meld u aan als beheerder.
-1. Zoek de Apache Sling Logging Logger-fabriek en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie. Hiermee maakt u een nieuw logbestand.
+1. Zoek de Apache Sling Logging Logger-fabriek en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie te klikken. Hiermee maakt u een nieuw logbestand.
 1. Stel de configuratie als volgt in:
 
    * Logniveau: FOUTOPSPORING
@@ -96,18 +96,18 @@ Paginamachtigingen worden niet gerepliceerd omdat ze worden opgeslagen onder de 
 
 In het algemeen moeten paginamachtigingen niet door de auteur worden gerepliceerd om te publiceren en zijn ze niet standaard. Dit komt omdat toegangsrechten in deze twee omgevingen verschillend zouden moeten zijn. Daarom adviseert de Adobe dat u ACLs bij publiceert, gescheiden van auteur vormt.
 
-## Replicatiereeks geblokkeerd tijdens replicatie van naamruimtegegevens van Auteur voor publiceren {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## Replicatiereeks geblokkeerd tijdens replicatie van naamruimtegegevens van Auteur naar Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-Soms wordt de replicatiewachtrij geblokkeerd wanneer wordt geprobeerd naamruimtegegevens te repliceren van de auteurinstantie naar de publicatieinstantie. Dit gebeurt omdat de replicatiegebruiker niet heeft `jcr:namespaceManagement` voorrecht. Om dit probleem te voorkomen, moet u ervoor zorgen dat:
+Soms wordt de replicatiewachtrij geblokkeerd wanneer wordt geprobeerd naamruimtegegevens te repliceren van de auteurinstantie naar de publicatieinstantie. Dit gebeurt omdat de replicatiegebruiker geen `jcr:namespaceManagement` bevoegdheid heeft. Om dit probleem te voorkomen, moet u ervoor zorgen dat:
 
-* De replicatiegebruiker (zoals die onder [Vervoer](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>Gebruiker) staat ook op de instantie Publiceren.
+* De replicatiegebruiker (zoals die onder [ wordt gevormd Vervoer ](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>Gebruiker) bestaat ook op de instantie van Publish.
 * De gebruiker heeft lees- en schrijfrechten op het pad waar de inhoud is geïnstalleerd.
-* De gebruiker heeft `jcr:namespaceManagement` bevoegdheden op het niveau van de opslagplaats. U kunt deze bevoegdheid als volgt toekennen:
+* De gebruiker heeft `jcr:namespaceManagement` bevoegdheden op het niveau van de gegevensopslagruimte. U kunt deze bevoegdheid als volgt toekennen:
 
-1. Aanmelden bij CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) als beheerder.
-1. Klik op de knop **Toegangsbeheer** tab.
-1. Selecteren **Bewaarplaats**.
-1. Klikken **Item toevoegen** (het plusteken).
+1. Meld u aan bij CRX/DE ( `https://localhost:4502/crx/de/index.jsp` ) als beheerder.
+1. Klik het **Controle van de Toegang** tabel.
+1. Selecteer **Bewaarplaats**.
+1. Klik **toevoegen Ingang** (het plusteken).
 1. Voer de naam van de gebruiker in.
-1. Selecteren `jcr:namespaceManagement` uit de lijst met bevoegdheden.
-1. Klikken **OK**.
+1. Selecteer `jcr:namespaceManagement` in de lijst met bevoegdheden.
+1. Klik **OK**.

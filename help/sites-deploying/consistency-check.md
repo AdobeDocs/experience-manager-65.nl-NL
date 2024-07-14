@@ -31,12 +31,12 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Een consistentiecontrole uitvoeren {#perform-a-consistency-check}
 
-Als u een consistentiecontrole wilt uitvoeren, navigeert u naar de beheerpagina voor JMX Mbean **com.adobe.granite (opslagplaats)**. Ga in het AEM hoofdscherm naar:
+Om een consistentiecontrole uit te voeren, navigeer aan de beleidspagina voor JMX Mbean **com.adobe.granite (Bewaarplaats)**. Ga in het AEM hoofdscherm naar:
 
-**Gereedschappen > Webconsole > Main (op menubalk) > JMX > com.adobe.granite (opslagplaats)**
+**Hulpmiddelen > de Console van het Web > Hoofd (op menubar) > JMX > com.adobe.granite (Bewaarplaats)**
 
-Op een standaardinstallatie vindt u deze hier:  **[|Toon mij|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+Op een standaardinstallatie, wordt het hier gevonden: **[|Show me|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-In de **Bewerkingen** op de pagina vindt u twee methoden: **`traversalCheck`** en **`consistencyCheck`**. Als u een controle wilt uitvoeren, klikt u op de bewerking en voert u de gewenste parameters in.
+In de **sectie van Verrichtingen** van de pagina, vindt u twee methodes: **`traversalCheck`** en **`consistencyCheck`**. Als u een controle wilt uitvoeren, klikt u op de bewerking en voert u de gewenste parameters in.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![ chlimage_1-117 ](assets/chlimage_1-117.png)

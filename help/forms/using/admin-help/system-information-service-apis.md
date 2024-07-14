@@ -32,7 +32,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>Deze API omvat <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td>
+   <td><p>Dit API is een omslag voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()"> system.getProperties </a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -105,7 +105,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>Deze API is een omslag voor alle de dienstAPIs van de systeeminformatie. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong>notitie</strong>: SystemInfo.info verstrekt geen telling en stackspoor van actieve draden. </i></p></td>
+   <td><p>Deze API is een omslag voor alle de dienstAPIs van de systeeminformatie. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong> nota </strong>: SystemInfo.info verstrekt geen telling en stapelspoor van actieve draden. </i></p></td>
   </tr>
  </tbody>
 </table>

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 U kunt de Rich Text Editor in Adobe Experience Manager zodanig configureren dat deze meerdere op zijn plaats geplaatste editors heeft. Wanneer gevormd kunt u de aangewezen inhoud selecteren en de aangewezen redacteur openen.
 
-![Een specifieke interne editor](assets/rte-inplace-editor.png)
+![ een specifieke op zijn plaats redacteur ](assets/rte-inplace-editor.png)
 
 ## Meerdere editors configureren {#configure-multiple-editors}
 
-Om veelvoudige op zijn plaats redacteurs toe te laten de structuur van een `cq:InplaceEditingConfig` het knooptype is verbeterd met de definitie van `cq:ChildEditorConfig` knooppunttype.
+Om meerdere op zijn plaats gevestigde editors in te schakelen, is de structuur van een knooppunttype `cq:InplaceEditingConfig` verbeterd met de definitie van knooppunttype `cq:ChildEditorConfig` .
 
 Bijvoorbeeld:
 
@@ -58,7 +58,7 @@ Bijvoorbeeld:
 
 Voer de volgende stappen uit om meerdere editors te configureren:
 
-1. Op het knooppunt `cq:inplaceEditing` (van het type `cq:InplaceEditingConfig`) definieert u de volgende eigenschappen:
+1. Definieer in het knooppunt `cq:inplaceEditing` (van het type `cq:InplaceEditingConfig` ) de volgende eigenschappen:
 
    * Naam:`editorType`
    * Type: `String`
@@ -69,26 +69,26 @@ Voer de volgende stappen uit om meerdere editors te configureren:
    * Naam: `cq:ChildEditors`
    * Type: `nt:unstructured`
 
-1. Onder `cq:childEditors` knoop, creeer een knoop voor elke op zijn plaats redacteur:
+1. Onder `cq:childEditors` -knooppunt maakt u een knooppunt voor elke interne editor:
 
-   * Naam: De naam van elk knooppunt is de naam van de eigenschap die het vertegenwoordigt, net als bij neerzetdoelen. Bijvoorbeeld: `image` en `text`.
+   * Naam: De naam van elk knooppunt is de naam van de eigenschap die het vertegenwoordigt, net als bij neerzetdoelen. Bijvoorbeeld `image` en `text` .
    * Type: `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Er is een correlatie tussen de gedefinieerde neerzetdoelen en de onderliggende editors. De naam van `cq:ChildEditorConfig` knooppunt wordt beschouwd als doel-id voor neerzetten, voor gebruik als parameter voor de geselecteerde onderliggende editor. Als het bewerkbare subgebied bijvoorbeeld geen neerzetdoel heeft in een tekstcomponent, wordt de naam van de onderliggende editor nog steeds beschouwd als een id om het overeenkomende bewerkbare gebied te identificeren.
+   >Er is een correlatie tussen de gedefinieerde neerzetdoelen en de onderliggende editors. De naam van het knooppunt `cq:ChildEditorConfig` wordt beschouwd als de doel-id voor neerzetten, voor gebruik als parameter voor de geselecteerde onderliggende editor. Als het bewerkbare subgebied bijvoorbeeld geen neerzetdoel heeft in een tekstcomponent, wordt de naam van de onderliggende editor nog steeds beschouwd als een id om het overeenkomende bewerkbare gebied te identificeren.
 
-1. Op elk van deze knooppunten (`cq:ChildEditorConfig`) de eigenschappen definiëren:
+1. Voor elk van deze knopen (`cq:ChildEditorConfig`) bepalen de eigenschappen:
 
    * Naam: `type`.
-   * Waarde: de naam van de geregistreerde interne editor, bijvoorbeeld `image` en `text`.
+   * Waarde: de naam van de geregistreerde interne editor, bijvoorbeeld `image` en `text` .
 
    * Naam: `title`.
-   * Waarde: de titel die wordt weergegeven in de keuzelijst met componenten van de beschikbare editors. Bijvoorbeeld: `Image` en `Text`.
+   * Waarde: de titel die wordt weergegeven in de keuzelijst met componenten van de beschikbare editors. Bijvoorbeeld `Image` en `Text` .
 
 ### Aanvullende configuratie voor Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
-De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Zie voor meer informatie [vormen de Rich Text Editor](/help/sites-administering/rich-text-editor.md). Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. Adobe raadt u aan het nieuwe configuratieknooppunt onder te maken `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
+De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Voor details, zie [ de Rijke Redacteur van de Tekst ](/help/sites-administering/rich-text-editor.md) vormen. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. De Adobe adviseert creërend de nieuwe configuratieknoop onder `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
 
 ```xml
     texttext
@@ -105,20 +105,20 @@ De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aang
 
 >[!NOTE]
 >
->Voor RTE geldt echter dat `configPath` eigenschap wordt ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere gebruikersinterfacedialogen van de component te steunen.
+>Voor RTE wordt de eigenschap `configPath` echter ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere gebruikersinterfacedialogen van de component te steunen.
 
 >[!CAUTION]
 >
->Noem niet de knoop van de configuratie RTE als `config`. Anders, zijn de configuraties RTE beschikbaar voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
+>Geef het RTE-configuratieknooppunt geen naam als `config` . Anders, zijn de configuraties RTE beschikbaar voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
 
 ## Codevoorbeelden {#code-samples}
 
-U kunt de code van deze pagina vinden op [aem-authoring-hybrideditors-project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). U kunt het volledige project downloaden als [een ZIP-archief](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+U kunt de code van deze pagina op [ aem-authoring-hybrideditors project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors) vinden. U kunt het volledige project als [ aZIP archief ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip) downloaden.
 
 ## Een interne editor toevoegen {#add-an-in-place-editor}
 
-Zie het document voor algemene informatie over het toevoegen van een interne editor [paginaontwerp aanpassen](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Voor algemene informatie over het toevoegen van een op zijn plaats redacteur zie het document [ pagina creatie ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor) aanpassen.
 
 >[!MORELIKETHIS]
 >
->* [Rich Text Editor in Experience Manager configureren](/help/sites-administering/rich-text-editor.md).
+>* [ vormt Rich Text Editor in Experience Manager ](/help/sites-administering/rich-text-editor.md).

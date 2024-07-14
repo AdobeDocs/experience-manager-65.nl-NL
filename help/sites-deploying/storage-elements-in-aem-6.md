@@ -36,7 +36,7 @@ Er zijn momenteel twee knoopopslagimplementaties beschikbaar in AEM6: Tar-opslag
 
 >[!CAUTION]
 >
->De PID voor de de knoopopslag van het Segment is veranderd van org.apache.jackrabbit.oak.**plug-ins**.segment.SegmentNodeStoreService in vorige versies van AEM 6 aan org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Zorg ervoor dat de noodzakelijke configuratieaanpassingen worden aangebracht zodat de veranderingen worden weerspiegeld.
+>De PID voor de de knoopopslag van het Segment is veranderd van org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in vorige versies van AEM 6 aan org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Zorg ervoor dat de noodzakelijke configuratieaanpassingen worden aangebracht zodat de veranderingen worden weerspiegeld.
 
 Standaard gebruikt AEM 6 de Tar-opslag om knooppunten en binaire bestanden op te slaan met de standaardconfiguratieopties. U kunt de opslaginstellingen handmatig configureren door het volgende te doen:
 
@@ -45,13 +45,13 @@ Standaard gebruikt AEM 6 de Tar-opslag om knooppunten en binaire bestanden op te
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Een map maken met de naam `crx-quickstart\install` in de installatiemap.
+1. Maak een map met de naam `crx-quickstart\install` in de installatiemap.
 
-1. Een bestand maken met de naam `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` in de nieuwe map.
+1. Maak een bestand met de naam `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` in de nieuwe map.
 
 1. Bewerk het bestand en stel de configuratieopties in. De volgende opties zijn beschikbaar voor de Opslag van de Knoop van het Segment, die de basis van AEM de opslagimplementatie van de Tar is:
 
-   * `repository.home`: Pad naar de thuislocatie van de gegevensopslagruimte waarin verschillende gegevensbestanden met betrekking tot de gegevensopslagruimte zijn opgeslagen. Standaard worden segmentbestanden opgeslagen onder de map crx-quickstart/segmentstore.
+   * `repository.home`: pad naar de thuislocatie van de gegevensopslagruimte waarin verschillende gegevensbestanden met betrekking tot de gegevensopslagruimte zijn opgeslagen. Standaard worden segmentbestanden opgeslagen onder de map crx-quickstart/segmentstore.
    * `tarmk.size`: Maximale grootte van een segment in MB. De standaardwaarde is 256 MB.
 
 1. Start AEM.
@@ -67,21 +67,21 @@ AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de ondersta
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Controleer of MongoDB is geïnstalleerd en of `mongod` wordt uitgevoerd. Zie voor meer informatie [MongoDB installeren](https://docs.mongodb.org/manual/installation/).
-1. Een map maken met de naam `crx-quickstart\install` in de installatiemap.
-1. Vorm de knoopopslag door een configuratiedossier met de naam van de configuratie te creëren die u in wilt gebruiken `crx-quickstart\install` directory.
+1. Controleer of MongoDB is geïnstalleerd en of een instantie van `mongod` wordt uitgevoerd. Voor meer info, zie [ Installerend MongoDB ](https://docs.mongodb.org/manual/installation/).
+1. Maak een map met de naam `crx-quickstart\install` in de installatiemap.
+1. Vorm de knoopopslag door een configuratiedossier met de naam van de configuratie te creëren die u in de `crx-quickstart\install` folder wilt gebruiken.
 
-   De Document Node Store (die de basis voor AEM MongoDB opslagimplementatie) is gebruikt een dossier genoemd `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   De Document Node Store (die de basis voor AEM van de opslagimplementatie van MongoDB vormt) gebruikt een dossier genoemd `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Bewerk het bestand en stel de configuratieopties in. De volgende opties zijn beschikbaar:
 
-   * `mongouri`: De [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) vereist om verbinding te maken met Mongo Database. De standaardwaarde is `mongodb://localhost:27017`
-   * `db`: Naam van de Mongo-database. Standaard gebruiken nieuwe AEM 6 installaties **aem-auteur** als de databasenaam.
+   * `mongouri`: [ MongoURI ](https://docs.mongodb.org/manual/reference/connection-string/) wordt vereist om met het Gegevensbestand van Mongo te verbinden dat. De standaardwaarde is `mongodb://localhost:27017`
+   * `db`: naam van de Mongo-database. Door gebrek gebruiken nieuwe AEM 6 installaties **aem-auteur** als gegevensbestandnaam.
    * `cache`: De cachegrootte in megabytes. Deze cachegrootte wordt verdeeld over verschillende caches die in DocumentNodeStore worden gebruikt. De standaardwaarde is 256.
-   * `changesSize`: Grootte in MB van de afgetopte inzameling die in Mongo voor caching van de afdiff output wordt gebruikt. De standaardwaarde is 256.
+   * `changesSize`: Grootte in MB van de afgetopte inzameling die in Mongo voor caching van de diff output wordt gebruikt. De standaardwaarde is 256.
    * `customBlobStore`: Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is false.
 
-1. Maak een configuratiebestand met de PID van de gegevensopslagruimte die u wilt gebruiken en bewerk het bestand om de configuratieopties in te stellen. Zie voor meer informatie [Knooppuntenwinkels en gegevensopslag configureren](/help/sites-deploying/data-store-config.md).
+1. Maak een configuratiebestand met de PID van de gegevensopslagruimte die u wilt gebruiken en bewerk het bestand om de configuratieopties in te stellen. Voor meer info, zie [ het Vormen de Opslag van de Knoop en de Opslag van Gegevens ](/help/sites-deploying/data-store-config.md).
 
 1. Start de AEM 6-jar met een MongoDB-opslagback-end door deze uit te voeren:
 
@@ -89,14 +89,14 @@ AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de ondersta
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Waar is de backendrun-modus **`-r`** Het voorbeeld begint met ondersteuning voor MongoDB.
+   In de modus voor uitvoering op de achtergrond **`-r`** begint het voorbeeld met ondersteuning voor MongoDB.
 
 #### Transparante grote pagina&#39;s uitschakelen {#disabling-transparent-huge-pages}
 
 Red Hat® Linux® gebruikt een algoritme voor geheugenbeheer met de naam Transparent Huge Pages (THP). Terwijl AEM fijnkorrelige leest en schrijft uitvoert, wordt THP geoptimaliseerd voor grote verrichtingen. Daarom wordt aangeraden THP zowel op Tar- als op Mongo-opslag uit te schakelen. Voer de volgende stappen uit om het algoritme uit te schakelen:
 
-1. Open de `/etc/grub.conf` in de teksteditor van uw keuze.
-1. Voeg de volgende regel toe aan de **grub.conf** bestand:
+1. Open het bestand `/etc/grub.conf` in de teksteditor van uw keuze.
+1. Voeg de volgende lijn aan het {**dossier 0} grub.conf toe:**
 
    ```
    transparent_hugepage=never
@@ -118,10 +118,10 @@ Red Hat® Linux® gebruikt een algoritme voor geheugenbeheer met de naam Transpa
 >
 >Raadpleeg de volgende bronnen:
 >
->* Raadpleeg voor meer informatie over transparante, grote pagina&#39;s op Red Hat® Linux® [artikel](https://access.redhat.com/solutions/46111).
->* Voor Linux® tuning tips raadpleegt u deze [artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>* Voor meer informatie betreffende de Transparante Pagina&#39;s van de Groot op Rode Hoed® Linux®, zie dit [ artikel ](https://access.redhat.com/solutions/46111).
+>* Voor Linux® het stemmen uiteinden, zie dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 >
 
 ## Behoud van de opslagplaats {#maintaining-the-repository}
 
-Bij elke update van de opslagplaats wordt een inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van de opslagplaats te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen. Deze onderhoudsfunctionaliteit wordt Revision Cleanup genoemd. Het correctiemechanisme van de Herziening wint schijfruimte terug door verouderde gegevens uit de bewaarplaats te verwijderen. Voor meer informatie over Revision Cleanup leest u de [Pagina Revisie opschonen](/help/sites-deploying/revision-cleanup.md).
+Bij elke update van de opslagplaats wordt een inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van de opslagplaats te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen. Deze onderhoudsfunctionaliteit wordt Revision Cleanup genoemd. Het correctiemechanisme van de Herziening wint schijfruimte terug door verouderde gegevens uit de bewaarplaats te verwijderen. Voor verdere details over de Opruiming van de Revisie, lees de [ pagina van de Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md).

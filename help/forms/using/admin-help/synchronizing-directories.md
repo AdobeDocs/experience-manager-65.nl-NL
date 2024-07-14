@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Mappen synchroniseren {#synchronizing-directories}
 
-Als u domeinen wilt synchroniseren, kunt u een handmatige of geplande synchronisatie uitvoeren. A *handmatige synchronisatie* Hiermee synchroniseert u geselecteerde domeinen. A *geplande synchronisatie* Hiermee worden alle domeinen gesynchroniseerd.
+Als u domeinen wilt synchroniseren, kunt u een handmatige of geplande synchronisatie uitvoeren. A *handsynchronisatie* synchroniseert om het even welke geselecteerde domeinen. A *geplande synchronisatie* synchroniseert alle domeinen.
 
 De synchronisatie van de folder wordt gebruikt om details van de folderservers te trekken die u in uw foldermontages in het gegevensbestand van het Beheer van de Gebruiker specificeerde. Later kunt u ook handmatig synchroniseren als er wijzigingen of updates optreden op de directoryservers. U kunt bijvoorbeeld een handmatige synchronisatie uitvoeren als gebruikers en groepen worden toegevoegd of als er wijzigingen worden aangebracht in de account van een gebruiker.
 
@@ -36,7 +36,7 @@ U kunt ook specificeren of om gebruiker en groepsinformatie in de (afgekeurde) D
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Levenscyclusdocument van product Adoben](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie {het document van de de levenscyclus van het 0} product van de Adobe ](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).[
 
 ## Synchronisatie van delta-directory inschakelen {#enable-delta-directory-synchronization}
 
@@ -54,7 +54,7 @@ Gebruikersbeheer voert de volgende stappen uit wanneer de synchronisatie van de 
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Schakel het selectievakje Delta Synch in en klik op Opslaan.
-1. Bewerk de directoryinstellingen voor elk van de ondernemingsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en typ `modify TimeStamp` als de waarde. Zie voor meer informatie over het bewerken van ondernemingsdomeinen [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Bewerk de directoryinstellingen voor elk van de ondernemingsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en voer `modify TimeStamp` in als waarde. Voor details over het uitgeven van ondernemingsdomeinen, zie [ het Uitgeven en het omzetten van bestaande domeinen ](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Gedetailleerde logboekregistratie tijdens synchronisatie inschakelen of uitschakelen {#enable-or-disable-detailed-logging-during-synchronization}
 
@@ -70,7 +70,7 @@ U kunt Gebruikersbeheer configureren om periodiek te controleren op mislukte pog
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
 1. Onder de Uitdrukking van de Uitsnede van de Finisher van de Synch, ga een kroonuitdrukking in die het interval vertegenwoordigt waarmee het Beheer van de Gebruiker mislukte synchronisaties opnieuw probeert. Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
-   De standaardwaarde is 0 0/13 &amp;last; ? &amp;ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
+   De standaardwaarde is 0 0/13 &amp;ast; ? &amp;ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
 
 ## Mappen handmatig synchroniseren {#manually-synchronize-directories}
 

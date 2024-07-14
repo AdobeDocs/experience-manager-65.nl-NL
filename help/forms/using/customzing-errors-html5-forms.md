@@ -34,10 +34,10 @@ Nadat u het pakket hebt uitgepakt, opent u de map CustomErrorManager-1.0-SNAPSHO
 
 ### De positie van foutberichten aanpassen  {#customizing-the-position-of-error-messages-nbsp}
 
-Als u de positie van het foutbericht wilt aanpassen, voegt u een &lt;div> -tag voor elk fout- en waarschuwingsveld, plaats de &lt;div> links of rechts labelen en CSS-stijlen toepassen op de &lt;div> -tag. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
+Als u de positie van het foutbericht wilt aanpassen, voegt u een &lt;div>-tag toe voor elk fout- en waarschuwingsveld, plaatst u de tag &lt;div> links of rechts en past u CSS-stijlen toe op de tag &lt;div>. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
 
-1. Ga naar de `CustomErrorManager-1.0-SNAPSHOT`en opent u de `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` map.
-1. Open de `customErrorManager.js` bestand voor bewerking. De `markError` -functie in het bestand accepteert de volgende parameters:
+1. Navigeer naar de map `CustomErrorManager-1.0-SNAPSHOT` en open de map `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` .
+1. Open het `customErrorManager.js` -bestand om het te bewerken. De functie `markError` in het bestand accepteert de volgende parameters:
 
    |   |  |
    |---|---|
@@ -75,7 +75,7 @@ Als u de positie van het foutbericht wilt aanpassen, voegt u een &lt;div> -tag v
    ```
 
 1. Sla het bestand op en sluit het.
-1. Ga naar de `CustomErrorManager-1.0-SNAPSHOT` en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Navigeer naar de map `CustomErrorManager-1.0-SNAPSHOT` en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Gebruik Pakketbeheer om het pakket te uploaden en te installeren.
 
 ## Foutberichten weergeven voor meerdere velden  {#display-error-messages-for-multiple-fields-nbsp}

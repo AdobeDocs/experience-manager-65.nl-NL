@@ -18,44 +18,44 @@ ht-degree: 0%
 
 # Adobe-classificaties{#adobe-classifications}
 
-Adobe Classificaties exporteren classificatiegegevens naar [Adobe Analytics](/help/sites-administering/adobeanalytics.md) op een geplande manier. De exporteur is een **com.adobe.cq.scheduled.exporter.Exporter**.
+De classificaties van de Adobe voeren classificatiegegevens naar [ Adobe Analytics ](/help/sites-administering/adobeanalytics.md) op een geplande manier uit. Exporter is een implementatie van a **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Om dit te vormen:
 
-1. Gebruiken **Navigatie**, selecteert u **Gereedschappen**, **Cloud Servicen** vervolgens **Oudere Cloud Servicen**.
-1. Schuiven naar **Adobe Analytics** en selecteert u **Configuraties tonen**.
-1. Klik op de knop **[+]** naast uw Adobe Analytics-configuratie.
+1. Gebruikend **Navigatie**, uitgezochte **Hulpmiddelen**, **Cloud Servicen**, toen **Oudere Cloud Servicen**.
+1. De rol aan **Adobe Analytics** en selecteert **toont Configuraties**.
+1. Klik de **[+]** verbinding naast uw configuratie van Adobe Analytics.
 
-1. In de **Framework maken** dialoogvenster:
+1. In **creeer Kader** dialoog:
 
-   * Geef een **Titel**.
-   * U kunt desgewenst de optie **Naam**, voor het knooppunt dat de frameworkgegevens in de opslagplaats opslaat.
-   * Selecteren **Adobe Analytics-classificaties**
+   * Specificeer a **Titel**.
+   * Naar keuze kunt u de **Naam** specificeren, voor de knoop die de kaderdetails in de bewaarplaats opslaat.
+   * Selecteer **Classificaties van Adobe Analytics**
 
-   en klik op **Maken**.
+   En klik **creeer**.
 
-   ![Dialoogvenster Framework maken](assets/aa-25.png)
+   ![ creeer de dialoog van het Kader ](assets/aa-25.png)
 
-1. De **Classificatieinstellingen** wordt geopend voor bewerking.
+1. De **dialoog van de Montages van Classificaties** opent voor het uitgeven.
 
-   ![Dialoogvenster Classificatieinstellingen](assets/aa-classifications-settings.png)
+   ![ de dialoog van de Montages van Classificaties ](assets/aa-classifications-settings.png)
 
    Tot de eigenschappen behoren:
 
-   | **Veld** | **Beschrijving** |
+   | **Gebied** | **Beschrijving** |
    |---|---|
-   | Ingeschakeld | Selecteren **Ja** om de instellingen voor classificaties van Adoben in te schakelen. |
-   | Overschrijven bij conflict | Selecteren **Ja** om eventuele gegevensbotsingen te overschrijven. Standaard is deze ingesteld op **Nee**. |
-   | Verwerkt verwijderen | Indien ingesteld op **Ja** worden verwerkte knooppunten verwijderd nadat deze zijn geëxporteerd. De standaardwaarde is **Onwaar**. |
+   | Ingeschakeld | Selecteer **ja** om de montages van de Classificaties van de Adobe toe te laten. |
+   | Overschrijven bij conflict | Selecteer **ja** om het even welke gegevensbotsingen te beschrijven. Door gebrek, wordt dit geplaatst aan **Nr**. |
+   | Verwerkt verwijderen | Als de reeks aan **ja**, verwerkte knopen schrapt nadat zij worden uitgevoerd. Het gebrek is **Vals**. |
    | Taakbeschrijving exporteren | Voer een beschrijving in voor de taak Classificaties Adoben. |
    | E-mailbericht | Voer een e-mailadres in voor berichten over Adoben van classificaties. |
    | Rapportsuite | Voer de rapportsuite in waarop de importtaak moet worden uitgevoerd. |
    | Gegevensset | Voer de relatie-id van de gegevensset in om de importtaak uit te voeren waarvoor. |
    | Transformer | Selecteer een transformatorimplementatie in het keuzemenu. |
-   | Gegevensbron | Navigeer naar het pad voor de gegevenscontainer. |
+   | Data Source | Navigeer naar het pad voor de gegevenscontainer. |
    | Export Plan | Selecteer het schema voor het exporteren. De standaardwaarde is elke 30 minuten. |
 
-1. Klikken **OK** om uw instellingen op te slaan.
+1. Klik **O.K.** om uw montages te bewaren.
 
 ## Paginaformaat wijzigen {#modifying-page-size}
 
@@ -65,11 +65,11 @@ Een pagina kan maximaal 25000 pagina&#39;s groot zijn, per definitie in classifi
 
 Het paginaformaat wijzigen:
 
-1. Navigeer aan de console OSGI bij **https://&lt;host>:&lt;port>/system/console/configMgr** en selecteert u **Adobe AEM Classificaties Exporteur**.
+1. Navigeer aan de console OSGI in **https://&lt;host>:&lt;port>/system/console/configMgr** en selecteer **Adobe AEM de Exporter van Classificaties**.
 
-   ![aa-26](assets/aa-26.png)
+   ![ a-26 ](assets/aa-26.png)
 
-1. Werk de **Paginaformaat exporteren** klikt u vervolgens op **Opslaan**.
+1. Werk de **Grootte van de Pagina van de Uitvoer** zoals vereist bij, dan klik **sparen**.
 
 ## SAINTDefaultTransformer {#saintdefaulttransformer}
 
@@ -77,11 +77,11 @@ Het paginaformaat wijzigen:
 >
 >Adobe Classifications was voorheen bekend als de SAINT Exporter.
 
-Een exporteur kan een Transformer gebruiken om de exportgegevens om te zetten in een specifieke indeling. Voor classificaties van de Adobe, een subinterface `SAINTTransformer<String[]>` het uitvoeren van de interface Transformer is verstrekt. Deze interface wordt gebruikt om het gegevenstype te beperken tot `String[]` die door de SAINT API wordt gebruikt en om een markeringsinterface te hebben om dergelijke diensten voor selectie te vinden.
+Een exporteur kan een Transformer gebruiken om de exportgegevens om te zetten in een specifieke indeling. Voor classificaties van de Adobe, is een subinterface `SAINTTransformer<String[]>` die de interface van Transformer uitvoert verstrekt. Deze interface wordt gebruikt om het gegevenstype te beperken tot `String[]` dat wordt gebruikt door de SAINT API en om een markeringsinterface te hebben om dergelijke services voor selectie te zoeken.
 
-In de standaardimplementatie SAINTDefaultTransformer, worden de kindmiddelen van de exporterbron behandeld als verslagen met bezitsnamen als sleutels en bezitswaarden als waarden. De **Sleutel** kolom wordt automatisch toegevoegd als eerste kolom - zijn waarde zal de knooppuntnaam zijn. Eigenschappen Namespaced (bevat `:`) buiten beschouwing worden gelaten.
+In de standaardimplementatie SAINTDefaultTransformer, worden de kindmiddelen van de exporterbron behandeld als verslagen met bezitsnamen als sleutels en bezitswaarden als waarden. De **Zeer belangrijke** kolom wordt automatisch toegevoegd als eerste kolom - zijn waarde zal de knoopnaam zijn. Benoemde eigenschappen (die `:` bevatten) worden genegeerd.
 
-*Nodestructuur:*
+*structuur van de Knoop:*
 
 * id-classificatie `nt:unstructured`
 
@@ -93,9 +93,9 @@ In de standaardimplementatie SAINTDefaultTransformer, worden de kindmiddelen van
       * Color = black (String)
       * Color^Code = 101 (String)
 
-**SAINT-koptekst en -record:**
+**SAINT Kopbal &amp; Verslag:**
 
-| **Sleutel** | **Product** | **Prijs** | **Grootte** | **Kleur** | **Kleur^code** |
+| **Sleutel** | **Product** | **Prijs** | **Grootte** | **Kleur** | **kleur^Code** |
 |---|---|---|---|---|---|
 | 1 | Mijn productnaam | 120,90 | M | zwart | 101 |
 
@@ -129,19 +129,19 @@ Tot de eigenschappen behoren:
   </tr>
   <tr>
    <td>overschrijven</td>
-   <td>Markering om gegevensbotsingen te overschrijven. Standaard is <strong>false</strong>.</td>
+   <td>Markering om gegevensbotsingen te overschrijven. Het gebrek is <strong> vals </strong>.</td>
   </tr>
   <tr>
    <td>controleafdelingen</td>
-   <td>Markering om te controleren of de rapportsuite compatibel is. Standaard is <strong>true</strong>.</td>
+   <td>Markering om te controleren of de rapportsuite compatibel is. Het gebrek is waar <strong> </strong>.</td>
   </tr>
   <tr>
    <td>gereduceerd</td>
-   <td>Markering om de verwerkte knooppunten na het exporteren te verwijderen. Standaard is <strong>false</strong>.</td>
+   <td>Markering om de verwerkte knooppunten na het exporteren te verwijderen. Het gebrek is <strong> vals </strong>.</td>
   </tr>
  </tbody>
 </table>
 
 ## Exporteren van Adobe classificaties automatiseren {#automating-adobe-classifications-export}
 
-U kunt uw eigen workflow maken, zodat bij nieuwe importbewerkingen de workflow wordt gestart om de juiste en correct gestructureerde gegevens te maken in **/var/export/** zodat het kan worden uitgevoerd naar classificaties van Adoben.
+U kunt uw eigen werkschema tot stand brengen, zodat om het even welke nieuwe invoer de werkschema lanceert om aangewezen, en correct gestructureerd, gegevens in **te creëren/var/export/** zodat het naar de Classificaties van de Adobe kan worden uitgevoerd.

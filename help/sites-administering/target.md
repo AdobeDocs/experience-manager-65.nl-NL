@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-In het kader van de Adobe Marketing Cloud [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) Hiermee kunt u de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM heeft de doelworkflow overgenomen die wordt gebruikt in Adobe Target Standard. Als u Doel gebruikt, zult u met het richten het uitgeven milieu in AEM vertrouwd zijn.
+Als deel van Adobe Marketing Cloud, [ Adobe Target ](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) laat u inhoudsrelevantie door het richten en het meten over alle kanalen verhogen. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM heeft de doelworkflow overgenomen die wordt gebruikt in Adobe Target Standard. Als u Doel gebruikt, zult u met het richten het uitgeven milieu in AEM vertrouwd zijn.
 
 Integreer uw AEM met Adobe Target om inhoud op uw pagina&#39;s aan te passen:
 
@@ -29,34 +29,34 @@ Integreer uw AEM met Adobe Target om inhoud op uw pagina&#39;s aan te passen:
 
 Voer de volgende taken uit om met Doel te integreren:
 
-1. [Voorwaardelijke taken uitvoeren](/help/sites-administering/target-requirements.md): Registreer u bij Adobe Target en configureer bepaalde aspecten van de AEM auteur. Uw Adobe Target-account moet minimaal **fiatteur **level-machtigingen hebben. Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
+1. [ voer in eerste instantie vereiste taken ](/help/sites-administering/target-requirements.md) uit: Register met Adobe Target en vorm bepaalde aspecten van de AEM auteursinstantie. Uw Adobe Target-account moet minimaal **fiatteur **level-machtigingen hebben. Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
 
 1. Ofwel:
 
-   1. [Opteren in Adobe Target](/help/sites-administering/opt-in.md): De wizard voor aanmelding neemt de gegevens van uw doelaccount in overweging en maakt een Adobe Target-cloudconfiguratie en een Target Framework. De tovenaar associeert ook uw plaatsen met het Kader van het Doel. Als de wizard geen verbinding kan maken met het doel, raadpleegt u de [verbindingsproblemen oplossen](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sectie. U kunt vervolgens [De standaardcloudconfiguraties wijzigen](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): Wijzig zo nodig de cloudconfiguratie en het framework dat de wizard Optie-in heeft gemaakt. Wijzig bijvoorbeeld het framework om aanvullende contextgegevens naar Target te verzenden. Als u Adobe Analytics als rapporteringsbron voor Adobe Target wilt gebruiken, moet u de wolkenconfiguratie wijzigen om aan de configuratie A4T te richten.
-   1. [Handmatig integreren met Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
+   1. [ Opt in Adobe Target ](/help/sites-administering/opt-in.md): De opt-in tovenaar neemt uw de rekeningsinformatie van het Doel en leidt tot een de wolkenconfiguratie van Adobe Target en een Kader van het Doel. De tovenaar associeert ook uw plaatsen met het Kader van het Doel. Als de tovenaar niet met doel kan verbinden, zie het [ oplossen van verbindingsprobleem ](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sectie. U kunt dan [ de standaardwolkenconfiguraties ](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations) wijzigen: Indien noodzakelijk, wijzig de wolkenconfiguratie en het kader dat de opt-in tovenaar creeerde. Wijzig bijvoorbeeld het framework om aanvullende contextgegevens naar Target te verzenden. Als u Adobe Analytics als rapporteringsbron voor Adobe Target wilt gebruiken, moet u de wolkenconfiguratie wijzigen om aan de configuratie A4T te richten.
+   1. [ integreren manueel met Adobe Target ](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
-1. [Activiteiten configureren](/help/sites-authoring/activitylib.md): Koppel uw activiteiten aan de configuratie van de doelcloud.
+1. [ vorm Activiteiten ](/help/sites-authoring/activitylib.md): Verdeel uw Activiteiten met de de wolkenconfiguratie van het Doel.
 
 >[!NOTE]
 >
->Zie ook [AEM integreren met Adobe Target en Adobe Analytics met behulp van DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Zie ook [ Integrerend AEM met Adobe Target en Adobe Analytics gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 >[!NOTE]
 >
 >Als u Doel met een configuratie van de douanevolmacht gebruikt, moet u zowel de volmachtsconfiguraties van de Cliënt van HTTP vormen aangezien sommige functionaliteiten van AEM de 3.x APIs en sommige anderen 4.x APIs gebruiken:
 >
->* 3.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x wordt gevormd met [ http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x wordt gevormd met [ http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 >[!CAUTION]
 >
->Het knooppunt met activiteiteninstellingen beveiligen **cq:ActivitySettings** op de publicatie-instantie zodat deze niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
+>Beveilig de knoop van activiteitenmontages **cq:ActivitySettings** op publiceer instantie zodat het voor normale gebruikers ontoegankelijk is. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
 >
->Zie [Vereisten voor integratie met Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) voor nadere informatie.
+>Zie [ Vereisten voor het Integreren met Adobe Target ](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) voor gedetailleerde informatie.
 
-Wanneer de integratie is voltooid, kunt u [doelinhoud auteur](/help/sites-authoring/content-targeting-touch.md) die bezoekersgegevens naar Adobe Target verzendt. Paginacomponenten hebben specifieke code nodig om het aanwijzen van inhoud mogelijk te maken. (Zie [Ontwikkelen voor gerichte inhoud](/help/sites-developing/target.md).)
+Wanneer de integratie volledig is, kunt u [ auteur gerichte inhoud ](/help/sites-authoring/content-targeting-touch.md) die bezoekersgegevens naar Adobe Target verzendt. Paginacomponenten hebben specifieke code nodig om het aanwijzen van inhoud mogelijk te maken. (Zie [ Ontwikkelen voor gerichte Inhoud ](/help/sites-developing/target.md).)
 
 >[!NOTE]
 >
@@ -66,9 +66,9 @@ Wanneer de integratie is voltooid, kunt u [doelinhoud auteur](/help/sites-author
 
 Voor de integratie van AEM met Adobe Target is kennis van Adobe Target, AEM Activiteitenbeheer en AEM beheer van soorten publiek vereist. U zou met de volgende informatie vertrouwd moeten zijn:
 
-* Adobe Target (Zie de [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/target-home.html)).
-* AEM Activiteitenconsole (zie [Beheersactiviteiten](/help/sites-authoring/activitylib.md)).
-* AEM publiek (zie [Soorten publiek beheren](/help/sites-authoring/managing-audiences.md)).
+* Adobe Target (zie de [ documentatie van Adobe Target ](https://experienceleague.adobe.com/docs/target/using/target-home.html)).
+* AEM de console van Activiteiten (zie [ het Leiden Activiteiten ](/help/sites-authoring/activitylib.md)).
+* AEM Soorten publiek (zie [ het Leiden Soorten publiek ](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
 >

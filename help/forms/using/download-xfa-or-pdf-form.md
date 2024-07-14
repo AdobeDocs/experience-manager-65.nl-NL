@@ -27,27 +27,27 @@ In AEM Forms wordt het downloaden ondersteund voor de volgende elementtypen:
 
 AEM Forms ondersteunt het downloaden van deze formuliertypen afzonderlijk of in een map met een of meer ondersteunde formulieren.
 
-Naast deze elementen kunt u de opdracht `Resource` type element als dit voorkomt in een map. Deze functie is beschikbaar zodat u de bron waarnaar wordt verwezen door een XFA-formulier, samen met het formulier kunt downloaden.
+Naast deze elementen kunt u het type `Resource` element downloaden als dit in een map aanwezig is. Deze functie is beschikbaar zodat u de bron waarnaar wordt verwezen door een XFA-formulier, samen met het formulier kunt downloaden.
 
 ## Een of meer formulieren downloaden {#download-one-or-more-forms}
 
-1. Meld u aan bij de gebruikersinterface van AEM Forms op `https://<server>:<port>/aem/forms.html`.
+1. Meld u aan bij de gebruikersinterface van AEM Forms op `https://<server>:<port>/aem/forms.html` .
 
 1. Navigeer naar de locatie van het element dat u wilt downloaden.
 
-1. Selecteer het element. Klik op de knop **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) in de werkbalk.
+1. Selecteer het element. Klik het **[!UICONTROL Download]** ![ aem6forms_download ](assets/aem6forms_download.png) pictogram in de toolbar.
 
    >[!NOTE]
    >
    >U kunt slechts één formulier selecteren om te downloaden. Als u meerdere formulieren wilt downloaden, moet u deze downloaden als een map.
 
-1. Klik op **[!UICONTROL Download]**.
+1. Klik in het dialoogvenster dat wordt weergegeven op **[!UICONTROL Download]** .
 
    AEM Forms genereert een ZIP-bestand met het geselecteerde bestand of de geselecteerde map.
 
    Als u een map downloadt, worden de ondersteunde elementen in de map gedownload in de bestaande hiërarchie.
 
-   Het ZIP-bestand wordt opgeslagen in het `Downloads` op uw systeem.
+   Het ZIP-bestand wordt opgeslagen in de map `Downloads` op uw systeem.
 
 ## Verwante overwegingen voor het uploaden {#related-considerations-for-the-upload-operation}
 

@@ -38,10 +38,10 @@ De beheerder MDM kan zowel ipa als apk dossiers aan de server uploaden MDM en de
 
 De volgende profielinstellingen op uw apparaat beïnvloeden de werking van de AEM Forms-toepassing op uw apparaat:
 
-* **Gebruik van camera toestaan** in de **Apparaatfunctionaliteit** sectie
+* **staat gebruik van camera** in de **functionaliteit van het Apparaat** sectie toe
 
-Als u **Gebruik van camera toestaan**, de camerafunctie van de [Fotoaantekening](/help/forms/using/add-attachments.md) werkt niet. Schakel deze optie in als u de camera in de app wilt gebruiken.
+Als u **toestaat gebruik van camera** onbruikbaar maakt, werkt de camerafunctie van de [ annotatie van de Fotografiek ](/help/forms/using/add-attachments.md) niet. Schakel deze optie in als u de camera in de app wilt gebruiken.
 
-* **Wachtwoord vereisen op apparaat** in de sectie Wachtwoordbeleid
+* **vereisen wachtwoord op apparaat** in de sectie van het Wachtwoordbeleid
 
-Inschakelen **codering van toepassingsgegevens** wordt u aangeraden de **wachtwoord** op uw apparaat. Als het wachtwoord niet op het apparaat is ingesteld, worden de toepassingsgegevens die op het apparaat zijn opgeslagen, niet gecodeerd.
+Om **encryptie van toepassingsgegevens** toe te laten, wordt u geadviseerd om **wachtwoord** op uw apparaat toe te laten. Als het wachtwoord niet op het apparaat is ingesteld, worden de toepassingsgegevens die op het apparaat zijn opgeslagen, niet gecodeerd.

@@ -24,7 +24,7 @@ HTML5-formulieren maken gebruik van standaardconstructies voor HTML, zodat HTML 
 
 ## Toegankelijkheidsnormen {#accessibility-standards}
 
-HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitzonderingen. Zie [VPAT voor HTML5-formulieren](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) voor meer informatie.
+HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitzonderingen. Zie [ VPAT voor vormen HTML5 ](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) voor details.
 
 ## Gecertificeerde schermlezers voor HTML5-formulieren {#certified-screen-readers-for-html-forms}
 
@@ -33,15 +33,15 @@ HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitz
 
 ### JAWS {#jaws}
 
-Alle standaardtoetsaanslagen en -sneltoetsen werken voor HTML5-formulieren. Ga voor meer informatie over het gebruik van JAWS naar [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+Alle standaardtoetsaanslagen en -sneltoetsen werken voor HTML5-formulieren. Voor meer informatie bij het gebruiken van JAWS, bezoek [ https://www.freedomscientific.com/jaws-hq.asp ](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### VoiceOver {#voiceover}
 
-HTML5-formulieren ondersteunen alle standaardtoetsaanslagen en -bewegingen van Voice over. Voor meer informatie bij vestiging en het gebruiken van VoiceOver, zie [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
+HTML5-formulieren ondersteunen alle standaardtoetsaanslagen en -bewegingen van Voice over. Voor meer informatie bij vestiging en het gebruiken van VoiceOver, zie [ https://www.apple.com/accessibility/vision/ ](https://www.apple.com/accessibility/vision/).
 
 ## Bekende problemen {#known-issues}
 
-* **(Alleen interne Verkenner 9)** In HTML5-formulieren worden de pagina&#39;s op aanvraag geladen (dynamisch). Bij het laden van pagina&#39;s op aanvraag kunnen er problemen optreden met de werking van schermlezers. Wanneer de schermlezer de focus heeft op het laatste veld van de pagina en de gebruiker op het tabblad drukt, keert de schermlezer de focus terug naar het eerste veld van de eerste pagina op het formulier.
-* **(Alleen interne Verkenner 9)** Het besturingselement Datumkiezer in HTML5-formulieren is niet volledig toegankelijk met het toetsenbord. Als u in het besturingselement Datumkiezer meerdere keren op de toets Omhoog/Omlaag drukt, wordt het besturingselement Datumkiezer gesloten en gaat de focus naar het volgende/laatste veld.
+* **(Interne Ontdekkingsreiziger 9 slechts)** In HTML5 vormen, worden de pagina&#39;s geladen op bestelling (dynamisch). Bij het laden van pagina&#39;s op aanvraag kunnen er problemen optreden met de werking van schermlezers. Wanneer de schermlezer de focus heeft op het laatste veld van de pagina en de gebruiker op het tabblad drukt, keert de schermlezer de focus terug naar het eerste veld van de eerste pagina op het formulier.
+* **(Interne Ontdekkingsreiziger 9 slechts)** De controle van de Plukker van de Datum in HTML5 vormen is niet volledig toegankelijk met toetsenbord. Als u in het besturingselement Datumkiezer meerdere keren op de toets Omhoog/Omlaag drukt, wordt het besturingselement Datumkiezer gesloten en gaat de focus naar het volgende/laatste veld.
 
 * VoiceOver kan geen pijltoetsen detecteren op de datumwidget in iPad safari.

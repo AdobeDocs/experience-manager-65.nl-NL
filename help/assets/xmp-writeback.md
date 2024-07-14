@@ -18,49 +18,49 @@ ht-degree: 4%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
-Deze XMP functie voor terugschrijven in [!DNL Adobe Experience Manager Assets] Hiermee worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens van een element wijzigt vanuit Middelen of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie.
+Met deze XMP in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens van een element wijzigt vanuit Assets of wanneer u het element uploadt, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie.
 
-Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De functie schrijft alleen die metagegevenseigenschappen terug die geregistreerde naamruimten gebruiken, dat wil zeggen een eigenschap met de naam `dc:title` is teruggeschreven maar een eigenschap met een naam `mytitle` is niet.
+Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De functie schrijft alleen die metagegevenseigenschappen terug die geregistreerde naamruimten gebruiken, dat wil zeggen, een eigenschap met de naam `dc:title` wordt teruggeschreven, maar een eigenschap met de naam `mytitle` niet.
 
-Overweeg een scenario waar u wijzigt [!UICONTROL Title] eigendom van het getitelde actief `Classic Leather` tot `Nylon`.
+Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element `Classic Leather` t/m `Nylon` wijzigt.
 
-![metagegevens](assets/metadata.png)
+![ meta-gegevens ](assets/metadata.png)
 
-In dit geval worden de [!DNL Experience Manager Assets] Hiermee slaat u de wijzigingen op in de **[!UICONTROL Title]** eigenschap in de `dc:title` parameter voor de metagegevens van elementen die zijn opgeslagen in de elementhiërarchie.
+In dit geval slaat [!DNL Experience Manager Assets] de wijzigingen in de eigenschap **[!UICONTROL Title]** op in de parameter `dc:title` voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
 
-![metadata_stored](assets/metadata_stored.png)
+![ metadata_stored ](assets/metadata_stored.png)
 
-Maar [!DNL Experience Manager Assets] geeft automatisch geen metagegevenswijzigingen door aan de uitvoeringen van een element. Zie [hoe te om XMP terug te zetten](#enable-xmp-writeback).
+[!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Zie [ hoe te om XMP terug ](#enable-xmp-writeback) toe te laten.
 
 ## Terugschrijven XMP inschakelen {#enable-xmp-writeback}
 
-Als u wilt dat de wijzigingen in metagegevens tijdens het uploaden naar de uitvoeringen van het element kunnen worden doorgegeven, wijzigt u de instelling **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie in de Manager van de Configuratie.
+Als u wilt dat de wijzigingen in metagegevens kunnen worden doorgegeven aan de uitvoeringen van het element tijdens het uploaden, wijzigt u de **[!UICONTROL Adobe CQ DAM Rendition Maker]** -configuratie in Configuratiebeheer.
 
-1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open de **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie.
-1. Selecteer de **[!UICONTROL Propagate XMP]** en slaat u de wijzigingen op.
+1. Ga naar `https://[aem_server]:[port]/system/console/configMgr` om Configuration Manager te openen.
+1. Open de **[!UICONTROL Adobe CQ DAM Rendition Maker]** -configuratie.
+1. Selecteer de optie **[!UICONTROL Propagate XMP]** en sla de wijzigingen op.
 
-   ![chlimage_1-135](assets/chlimage_1-346.png)
+   ![ chlimage_1-135 ](assets/chlimage_1-346.png)
 
 ## Terugschrijven van XMP inschakelen voor specifieke uitvoeringen {#enabling-xmp-writeback-for-specific-renditions}
 
-Als u wilt dat de functie XMP terugschrijven wijzigingen in metagegevens doorgeeft om uitvoeringen te selecteren, geeft u deze uitvoeringen op in de stap XMP terugdraaiproces van het terugschrijfproces van [!UICONTROL DAM Metadata WriteBack] workflow. Deze stap is standaard geconfigureerd met de oorspronkelijke uitvoering.
+Als u wilt dat de functie XMP terugschrijven wijzigingen in metagegevens doorgeeft aan geselecteerde uitvoeringen, geeft u deze uitvoeringen op in de stap XMP terugdraaiproces van de [!UICONTROL DAM Metadata WriteBack] -workflow. Deze stap is standaard geconfigureerd met de oorspronkelijke uitvoering.
 
 Voer de volgende stappen uit voor de functie XMP terugschrijven om metagegevens door te geven aan de vertoningsminiaturen 140.100.png en 319.319.png.
 
-1. Navigeer in de interface Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. Open op de pagina Modellen de knop **[!UICONTROL DAM Metadata Writeback]** workflowmodel.
+1. Navigeer in de interface Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** .
+1. Open vanaf de pagina Modellen het workflowmodel van **[!UICONTROL DAM Metadata Writeback]** .
 1. Op de pagina met eigenschappen voor **[!UICONTROL DAM Metadata Writeback]** opent u de stap **[!UICONTROL XMP Writeback Process]**.
-1. In de [!UICONTROL Step Properties] klikt u op de knop **[!UICONTROL Process]** tab.
-1. In de **Argumenten** vak, toevoegen `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`en klik op **[!UICONTROL OK]**.
+1. Klik in het dialoogvenster [!UICONTROL Step Properties] op de tab **[!UICONTROL Process]** .
+1. In het **vakje van Argumenten**, voeg `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` toe, en klik **[!UICONTROL OK]**.
 
-   ![step_properties](assets/step_properties.png)
+   ![ step_properties ](assets/step_properties.png)
 
 1. Sla de wijzigingen op.
-1. De piramide-TIFF-uitvoeringen opnieuw genereren voor [!DNL Dynamic Media] afbeeldingen met de nieuwe kenmerken toevoegen **[!UICONTROL Dynamic Media Process Image Assets]** stap naar de [!UICONTROL DAM Metadata Writeback] workflow.
+1. Als u de piramide-TIFF-uitvoeringen voor [!DNL Dynamic Media] -afbeeldingen opnieuw wilt genereren met de nieuwe kenmerken, voegt u de stap **[!UICONTROL Dynamic Media Process Image Assets]** toe aan de [!UICONTROL DAM Metadata Writeback] -workflow.
 
    PTIFF-uitvoeringen worden alleen lokaal gemaakt en opgeslagen in een Dynamic Media Hybrid-implementatie.
 
@@ -70,32 +70,32 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 
 >[!NOTE]
 >
->Voor XMP terugzetproblemen in 64-bits Linux raadpleegt u [XMP terugschrijven inschakelen bij 64-bits RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+>Voor XMP terugschrijvingskwesties in Linux met 64 bits, zie [ hoe te XMP toe te laten schrijven-terug op Linux met 64 bits RedHat ](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->Zie voor de ondersteunde platforms [Voorwaarden voor het terugschrijven van metagegevens XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>Voor de gesteunde platforms, zie [ XMP meta-gegevens schrijven-achtervoorwaarden ](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## XMP metagegevens filteren {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden ingeslikt.
+[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden opgenomen.
 
-Als u filtert met een lijst van gewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als door filtering met een lijst van gewezen personen een groot aantal elementen met een groot aantal XMP metagegevens kan worden geïmporteerd, [!DNL Experience Manager] de invoering kan problemen met de stabiliteit tegenkomen , bijvoorbeeld verstopte wachtrijen voor waarneming .
+Als u filtert met een lijst van gewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van gewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de plaatsing van [!DNL Experience Manager] stabiliteitskwesties ontmoeten, bijvoorbeeld, verstopte observatierijen.
 
 Door het filteren van XMP metagegevens via lijst van gewenste personen wordt dit probleem opgelost doordat u de XMP eigenschappen kunt definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP eigenschappen genegeerd. Voor achterwaartse compatibiliteit kunt u enkele van deze eigenschappen toevoegen aan het filter dat een lijst van gewezen personen gebruikt.
 
 >[!NOTE]
 >
->Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van het element wordt bijvoorbeeld opgeslagen in een eigenschap met de naam `CreateDate` in EXIF TIFF. Experience Manager slaat deze waarde op in een metagegevensveld genaamd `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP bron is, werkt het filtreren niet aan dit bezit.
+>Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in de eigenschap `CreateDate` in EXIF-TIFF. Experience Manager slaat deze waarde op in een metagegevensveld met de naam `exif:DateTimeOriginal` . Aangezien de bron een niet-XMP bron is, werkt het filtreren niet aan dit bezit.
 
-1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
-1. Als u filteren via een lijst van gewenste personen wilt toepassen, selecteert u **[!UICONTROL Apply Allowlist to XMP Properties]** en geeft u de eigenschappen op die in het dialoogvenster **[!UICONTROL Allowed XML Names for XMP filtering]** doos.
+1. Ga naar `https://[aem_server]:[port]/system/console/configMgr` om Configuration Manager te openen.
+1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** -configuratie.
+1. Selecteer **[!UICONTROL Apply Allowlist to XMP Properties]** en geef in het vak **[!UICONTROL Allowed XML Names for XMP filtering]** de eigenschappen op die u wilt importeren als u het filteren wilt toepassen via een lijst van gewenste personen.
 
-   ![chlimage_1-136](assets/chlimage_1-347.png)
+   ![ chlimage_1-136 ](assets/chlimage_1-347.png)
 
-1. Om geblokkeerde XMP eigenschappen na het toepassen van filter via lijst van gewenste personen uit te filteren, specificeer die in **[!UICONTROL Blocked XML Names for XMP filtering]** doos.
+1. Als u geblokkeerde XMP wilt uitfilteren nadat u filtert via lijst van gewenste personen hebt toegepast, geeft u de eigenschappen op in het vak **[!UICONTROL Blocked XML Names for XMP filtering]** .
 
    >[!NOTE]
    >
-   >De **[!UICONTROL Apply Blocklist to XMP Properties]** is standaard geselecteerd. Met andere woorden, filteren met een lijst van gewezen personen wordt standaard ingeschakeld. Als u dergelijke filters wilt uitschakelen, annuleert u de selectie van de optie **[!UICONTROL Apply Blocklist to XMP Properties]** -optie.
+   >De optie **[!UICONTROL Apply Blocklist to XMP Properties]** is standaard geselecteerd. Met andere woorden, filteren met een lijst van gewezen personen wordt standaard ingeschakeld. Als u dergelijke filters wilt uitschakelen, annuleert u de selectie van de optie **[!UICONTROL Apply Blocklist to XMP Properties]** .
 
 1. Sla de wijzigingen op.

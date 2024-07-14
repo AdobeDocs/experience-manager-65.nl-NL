@@ -26,14 +26,14 @@ Voor de onderliggende concepten, zie:
 * [Componenten AEM - de basisbeginselen](/help/sites-developing/components-basics.md)
 * [Ontwikkelen AEM componenten](/help/sites-developing/developing-components.md)
 
-Zie voor informatie over de klassieke interface [Componenten AEM voor de klassieke gebruikersinterface](/help/sites-developing/developing-components-classic.md).
+Voor informatie over klassieke UI zie [ AEM Componenten voor Klassieke UI ](/help/sites-developing/developing-components-classic.md).
 
 >[!NOTE]
 >
 >Om u te helpen uw componenten analyseren, testen en zuiveren, AEM verstrekt:
 >
->* [Modus voor ontwikkelaars](/help/sites-developing/developer-mode.md)
->* a [framework for automating tests, based on the Hobbes.js library](/help/sites-developing/hobbes.md)
+>* ](/help/sites-developing/developer-mode.md) de Wijze van de Ontwikkelaar 0}[
+>* a [ kader voor het automatiseren van tests, die op de bibliotheek Hobbes.js ](/help/sites-developing/hobbes.md) worden gebaseerd
 >
 
 ## Codevoorbeeld - Hoe te om de Gebieden van de Dialoog aan te passen {#code-sample-how-to-customize-dialog-fields}
@@ -42,12 +42,12 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-creatie-dialoog-gebieden-aanpassing project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Het project downloaden als [een ZIP-bestand](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
+* [ open aem-authoring-dialog-fields-customization project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* Download het project als [ een dossier van het PIT ](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
 
 >[!NOTE]
 >
->Dit codevoorbeeld is gerelateerd aan de AEM Gems-sessie op [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>Deze codesteekproef is verwant met de zitting van AEM Gems op [ het Aanpassen van de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ## Gerelateerde bronnen {#related-resources}
 
@@ -55,10 +55,10 @@ U kunt de code van deze pagina op GitHub vinden
 
 U kunt nieuwe handelingen toevoegen aan werkbalken van componenten met de bewerkingslaag van de pagina-editor.
 
-De details, samen met verbindingen aan de codesteekproef zijn onder [Nieuwe handeling toevoegen aan werkbalk Component](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
+De details, samen met verbindingen aan de codesteekproef, zijn onder [ Nieuwe Actie aan Toolbar van de Component ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) toevoegen.
 
 ### Inhoudsfragmenten aanpassen en uitbreiden {#customizing-and-extending-content-fragments}
 
 U kunt de standaardcomponent van het Fragment van de Inhoud willen uitbreiden om eigenschappen toe te voegen.
 
-Details zijn onder [Inhoudsfragmenten aanpassen en uitbreiden](/help/sites-developing/customizing-content-fragments.md).
+De details zijn onder [ het Aanpassen en het Uitbreiden van de Fragmenten van de Inhoud ](/help/sites-developing/customizing-content-fragments.md).

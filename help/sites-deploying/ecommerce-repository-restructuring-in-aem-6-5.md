@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Herstructurering van de opslagplaats van E-Commerce in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die aan AEM 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatsveranderingen die de AEM E-Commerce Oplossing beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/repository-restructuring.md) pagina wordt beschreven, zouden de klanten die aan AEM 6.5 worden bevorderd deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan opberggegevensveranderingen die de Oplossing van AEM E-Commerce beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 ## Met 6,5-upgrade {#with-upgrade}
 
@@ -35,7 +35,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>U kunt een <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> taak om e-Commerce-gegevens te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p>
+   <td><p>U kunt de taak van de a <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank"> Uitgestelde Migratie </a> gebruiken om gegevens E-Commerce te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p>
     <ul>
      <li>Hiermee wijzigt u verwijzingen naar de oude locatie zodat deze naar de nieuwe locatie verwijzen</li>
      <li>Hiermee wordt inhoud van de oude locatie naar de nieuwe locatie verplaatst</li>
@@ -51,7 +51,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>NVT<br /> </td>
+   <td>N.v.t. <br /> </td>
   </tr>
  </tbody>
 </table>

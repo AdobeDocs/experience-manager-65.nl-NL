@@ -28,7 +28,7 @@ Het is altijd sneller om door de gegevensopslagplaats te navigeren om gegevens o
 
 ## Het bereik van de GCR-waarneming beperken {#restrict-the-scope-of-jcr-observation}
 
-Wanneer het luisteren naar gebeurtenissen in de bewaarplaats, is het belangrijk om het werkingsgebied zo veel mogelijk te beperken. Het is bijvoorbeeld veel beter te luisteren naar een gebeurtenis op `/etc/mycompany` dan luisteren naar `/etc`. Luister nooit naar gebeurtenissen in de hoofdmap van de opslagplaats. Bovendien, zorg ervoor dat de callback methodes zo snel mogelijk uitvoeren wanneer er niets voor hen is te doen.
+Wanneer het luisteren naar gebeurtenissen in de bewaarplaats, is het belangrijk om het werkingsgebied zo veel mogelijk te beperken. Het is bijvoorbeeld veel beter om naar een gebeurtenis op `/etc/mycompany` te luisteren dan naar `/etc` . Luister nooit naar gebeurtenissen in de hoofdmap van de opslagplaats. Bovendien, zorg ervoor dat de callback methodes zo snel mogelijk uitvoeren wanneer er niets voor hen is te doen.
 
 ## Elimineren van het gebruik van JCR-beheertoegang {#eliminate-use-of-jcr-admin-access}
 

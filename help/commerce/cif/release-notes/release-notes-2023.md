@@ -21,14 +21,14 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 | Component | Systeemvereisten |
 |:-------|:-----------------------------------------------------------------------------------------------:|
 | CIF | Minimaal: AEM 6.5.8, Adobe Commerce 2.3.5 GraphQL-schema&#39;s |
-| CIF kerncomponenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
-| Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+| CIF kerncomponenten | [ Vereisten van het Systeem ](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
+| Projectarchetype AEM | [ Vereisten van het Systeem ](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## Releasedatum: december 2023
 
 | Component | Versie | Details |
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
-| CIF kerncomponenten | 2.12.4. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.12.4) |
+| CIF kerncomponenten | 2.12.4. | [ GitHub ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.12.4) |
 
 ### Bugfixes {#bug-fixes-december}
 
@@ -39,8 +39,8 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 | Component | Versie | Details |
 |:-------|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| CIF | 2023 11 23 00 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2023.11.23.00.zip) |
-| CIF Venia-referentiegebied | 2023 11 08 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2023.11.08) |
+| CIF | 2023 11 23 00 | [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2023.11.23.00.zip) |
+| CIF Venia-referentiegebied | 2023 11 08 | [ GitHub ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2023.11.08) |
 
 ### Bugfixes {#bug-fixes-november}
 
@@ -50,8 +50,8 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 | Component | Versie | Details |
 |:-------|:-------:|--------------------------------------------------------------------------------------------------------------:|
-| CIF kerncomponenten | 2.12.2. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.12.2) |
+| CIF kerncomponenten | 2.12.2. | [ GitHub ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.12.2) |
 
 ### Wat is er nieuw? {#what-is-new-july}
 
-* Kniphaken voor productfilters in `ProductList` component
+* Koppelingen met productfilters in component `ProductList`

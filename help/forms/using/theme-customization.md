@@ -28,17 +28,17 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een aparte organisatie-sp
 
 1. Open uw project.
 
-   * Voor iOS: open `Capture.xcodeproj` in Xcode
+   * Voor iOS opent u `Capture.xcodeproj` in Xcode
    * Voor Android opent u het Android-project in Eclipse.
-   * Voor Windows: open `MWSWindows.sln` in Visual Studio.
+   * Voor Vensters, open `MWSWindows.sln` in Visual Studio.
 
 1. Navigeer naar de map templates.
 
-   * Navigeer in Xcode naar de **Vastleggen > www > wsmobile > js > runtime > templates** map.
-   * Ga in Eclipse naar de knop **assets > www > wsmobile > js > runtime > templates** map.
-   * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > js > runtime > templates** map.
+   * In Xcode, navigeer aan **Vangst > www > wsmobile > js > runtime > malplaatjes** omslag.
+   * In Verduistering, navigeer aan de **activa > www > wsmobile > js > runtime > malplaatjes** omslag.
+   * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > js > runtime > malplaatjes** omslag.
 
-1. Open de `template.html` bestand voor bewerking.
+1. Open het `template.html` -bestand om het te bewerken.
 1. Zoek de volgende tekenreeks:
 
    ```jsp
@@ -49,9 +49,9 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een aparte organisatie-sp
                  <%} else
    ```
 
-   Vervangen door `<%`.
+   Vervang deze door `<%` .
 
-1. Zoek de volgende code in het dialoogvenster `template.html` bestand:
+1. Zoek de volgende code in het `template.html` -bestand:
 
    ```jsp
    <ul id="task_menu_list">
@@ -73,13 +73,13 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een aparte organisatie-sp
 
 1. Navigeer naar de css-map.
 
-   * Navigeer in Xcode naar **Vastleggen > www > wsmobile > css**.
-   * Blader in Eclipse naar **middelen > www > wsmobile > css**.
+   * In Xcode, navigeer aan **Vangst > www > wsmobile > css**.
+   * In Verduistering, navigeer aan **activa > www > wsmobile > css**.
    * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > css**.
 
-1. Open de `_style.css` bestand voor bewerking.
-1. Voor achtergrondafbeelding wijzigt u `#323232` tot `#fff`.
-1. Wijzigingen opslaan en sluiten `_style.css` bestand.
+1. Open het `_style.css` -bestand om het te bewerken.
+1. Wijzig `#323232` in `#fff` voor de achtergrondafbeelding.
+1. Sla de wijzigingen op en sluit het `_style.css` -bestand.
 1. Open de AEM Forms-app.
 
    De AEM Forms-app geeft nu instructies weer in plaats van een beschrijving.

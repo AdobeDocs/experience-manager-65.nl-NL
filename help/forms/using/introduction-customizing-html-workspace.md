@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM formulierwerkruimte biedt mogelijkheden om de semantiek en functionaliteit van de presentatie van de interface te wijzigen. De typen aanpassingen waarmee u de stijl, lay-out, opmaak, branding en kernfunctionaliteit kunt wijzigen, worden hieronder beschreven.
 
-![cu_customized_workspace_example](assets/cu_customized_workspace_example.png)
+![ cu_customized_workspace_example ](assets/cu_customized_workspace_example.png)
 
 Een voorbeeld van een aangepaste werkruimte
 
@@ -37,7 +37,7 @@ De AEM Forms-werkruimte ondersteunt een groot aantal aanpassingen waarmee de lay
 
 U kunt de vormgeving, lay-out en andere semantische functies van de AEM Forms-werkruimte wijzigen. De werkruimte wijzigen door de CSS-, HTML-sjablonen en JavaScript™-bestanden aan te passen. Alle standaardbestanden worden weergegeven in de standaardinstallatie.
 
-De meest gangbare stappen worden behandeld in [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../forms/using/generic-steps-html-workspace-customization.md). Zie de verwante artikelen aan het einde van dit artikel voor specifieke voorbeelden van dergelijke aanpassingen, waaronder de gedetailleerde stappen.
+De meest algemeen toepasselijke stappen worden behandeld in [ Algemene stappen voor de de werkruimteaanpassing van AEM Forms ](../../forms/using/generic-steps-html-workspace-customization.md). Zie de verwante artikelen aan het einde van dit artikel voor specifieke voorbeelden van dergelijke aanpassingen, waaronder de gedetailleerde stappen.
 
 #### De stijlpagina begrijpen {#understanding-the-style-sheet}
 
@@ -126,22 +126,22 @@ De stappen op hoofdniveau voor CSS-aanpassing zijn:
 
 * Maak een CSS-bestand.
 * Stijlitems toevoegen aan deze CSS. Zie Werken met CSS-stijlen voor meer informatie.
-* Referenties bijwerken in `html.jsp`.
+* Werk de verwijzingen bij in `html.jsp` .
 
-Voor de nauwkeurige stappen om deze aanpassingen te doen, zie [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../forms/using/generic-steps-html-workspace-customization.md). Het CSS-bestand dat wordt geleverd met de AEM Forms-werkruimte bevindt zich op /libs/ws/css/. Voor op CSS betrekking hebbende aanpassingen, gebruik [Verzendpakket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Zie de verwante Help-onderwerpen aan het einde van dit artikel voor specifieke voorbeelden van CSS-gerelateerde aanpassingen.
+Voor de nauwkeurige stappen om deze aanpassingen te doen, zie [ Algemene stappen voor de werkruimteaanpassing van AEM Forms ](../../forms/using/generic-steps-html-workspace-customization.md). Het CSS-bestand dat wordt geleverd met de AEM Forms-werkruimte bevindt zich op /libs/ws/css/. Voor op CSS betrekking hebbende aanpassingen, gebruik het [ Pakket van het Schip ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Zie de verwante Help-onderwerpen aan het einde van dit artikel voor specifieke voorbeelden van CSS-gerelateerde aanpassingen.
 
 #### Afbeelding {#image}
 
-U kunt de AEM Forms-werkruimte aanpassen om avatars van gebruikers toe te voegen of om het logo van uw organisatie toe te voegen. Voor deze aanpassingen, gebruik [Verzendpakket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+U kunt de AEM Forms-werkruimte aanpassen om avatars van gebruikers toe te voegen of om het logo van uw organisatie toe te voegen. Voor deze aanpassingen, gebruik [ het Pakket van het Schip ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 De stappen op hoofdniveau voor aanpassingen aan de afbeeldingen zijn:
 
 * WebDAV installeren en configureren.
 * Voeg nieuwe afbeeldingen toe.
 * Voeg nieuwe stijlen toe die overeenkomen met de toegevoegde afbeeldingen.
-* Koppeling maken naar het nieuwe CSS-bestand in `html.jsp` bestand.
+* Koppeling maken naar het nieuwe CSS-bestand in het `html.jsp` -bestand.
 
-Als u de afbeeldingen wilt aanpassen in de AEM Forms-werkruimte, volgt u de opdracht [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../forms/using/generic-steps-html-workspace-customization.md). Voor specifieke voorbeelden van beeld-verwante aanpassingen, zie de verwante onderwerpen van de Hulp aan het eind van dit artikel.
+Om met het aanpassen van de beelden in de werkruimte van AEM Forms te beginnen, volg de [ Algemene stappen voor de werkruimteaanpassing van AEM Forms ](../../forms/using/generic-steps-html-workspace-customization.md). Voor specifieke voorbeelden van beeld-verwante aanpassingen, zie de verwante onderwerpen van de Hulp aan het eind van dit artikel.
 
 #### HTML-sjabloon {#html-template}
 
@@ -153,43 +153,43 @@ De stappen op hoofdniveau voor aanpassingen aan het sjabloon HTML zijn:
 * Nieuwe sjablonen toevoegen in een door de gebruiker gedefinieerde map.
 * Maak relevante updates aan de gekopieerde dossiers als, de weg van het nieuwe malplaatje.
 
-Voor specifieke voorbeelden van dergelijke aanpassingen, zie de onderwerpen van de Hulp die aan het eind van dit artikel worden verstrekt. Kiezen tussen [Verzendpakket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) of de [Dev-pakket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), afhankelijk van de sjabloon die moet worden aangepast.
+Voor specifieke voorbeelden van dergelijke aanpassingen, zie de onderwerpen van de Hulp die aan het eind van dit artikel worden verstrekt. Kies tussen het [ Pakket van het Schip ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) of het [ Dev Pakket ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), afhankelijk van het malplaatje dat moet worden aangepast.
 
 ### Semantische wijzigingen {#semantic-changes}
 
-Wijzig de JavaScript-broncode om de functionaliteit van de AEM Forms-werkruimte te wijzigen. Wijzigingen in de kernfunctionaliteit worden aangeduid als Semantische wijzigingen. U wijzigt modellen, weergave en sjablonen die worden geleverd als onderdeel van de broncode van de AEM Forms-werkruimte.
+Wijzig de JavaScript-broncode als u de functionaliteit van de AEM Forms-werkruimte wilt wijzigen. Wijzigingen in de kernfunctionaliteit worden aangeduid als Semantische wijzigingen. U wijzigt modellen, weergave en sjablonen die worden geleverd als onderdeel van de broncode van de AEM Forms-werkruimte.
 
 De stappen op hoofdniveau voor semantische wijzigingen om de functionaliteit van de AEM Forms-werkruimte te wijzigen zijn:
 
 * Maak kopieën van de juiste standaardbestanden in een door de gebruiker gemaakte map.
 * Voeg nieuwe modellen en meningen in de user-defined omslag toe.
-* Breng relevante updates aan, zoals het bijwerken van paden van nieuw toegevoegde modellen en weergaven in de standaard JavaScript-bestanden.
+* Breng relevante updates aan zoals het bijwerken van paden van nieuw toegevoegde modellen en meningen in de standaard JavaScript dossiers.
 * Minimaal het pakket om de prestaties te optimaliseren.
 
-Voor meer conceptuele informatie over de componenten die deel van de broncode uitmaken, zie [Beschrijving van herbruikbare onderdelen](/help/forms/using/description-reusable-components.md). Voor deze aanpassingen, gebruik het Dev Pakket.
+Voor meer conceptuele informatie over de componenten die deel van de broncode uitmaken, zie de [ Beschrijving van herbruikbare componenten ](/help/forms/using/description-reusable-components.md). Voor deze aanpassingen, gebruik het Dev Pakket.
 
 ### Herbruikbare componenten {#reusable-components}
 
 Aangezien de werkruimte van AEM Forms op componenten-gebaseerde software is, kan het gemakkelijk worden aangepast en worden opnieuw gebruikt. U kunt de werkruimtecomponenten gemakkelijk met uw Webtoepassingen integreren.
 
-Voor meer conceptuele informatie, zie [Beschrijving van herbruikbare onderdelen](/help/forms/using/description-reusable-components.md) en voor instructies over het gebruik van de componenten, zie [AEM Forms-werkruimtecomponenten integreren in webtoepassingen](/help/forms/using/description-reusable-components.md).
+Voor meer conceptuele informatie, zie de [ Beschrijving van herbruikbare componenten ](/help/forms/using/description-reusable-components.md) en voor instructie over het gebruiken van de componenten, zie [ Integrerend de werkruimtecomponenten van AEM Forms in Webtoepassingen ](/help/forms/using/description-reusable-components.md).
 
 ## AEM Forms-werkruimtecode samenstellen {#building-html-workspace-code}
 
 ### SDK-pakket {#sdk-package}
 
-Het pakket bevat de broncode van de AEM Forms-werkruimte. Het pakket is beschikbaar op `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+Het pakket bevat de broncode van de AEM Forms-werkruimte. Het pakket is beschikbaar via `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip` .
 
 Het is hoofdzakelijk bedoeld voor aanpassingen, aangezien het de capaciteit verstrekt om te produceren:
 
-* CRX-pakketten voor profielen voor verzending, foutopsporing en ontwikkeling (zie hieronder [CRX-pakketten](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* De pakketten van CRX voor Schip, zuiveren, en Dev profielen (die hieronder in [ pakketten van CRX ](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) worden vermeld).
 * Gimiteerde versie van aangepaste code (voor semantische wijzigingen).
 
 #### WS-inhoud {#ws-content}
 
 * client-pkg:
 
-   * src - Bevat artefacten nodig om CRX knopen tot stand te brengen.
+   * src - Bevat artefacten die nodig zijn om CRX-knooppunten te maken.
    * pom.xml - Script om implementatiepakketten voor verschillende profielen op te bouwen WS-Deplotion Package
 
 * client-html:
@@ -233,13 +233,13 @@ Het is hoofdzakelijk bedoeld voor aanpassingen, aangezien het de capaciteit vers
 
 ### CRX-pakket {#crx-package}
 
-CRX-pakket kan worden geïmplementeerd in de CRX™-opslagplaats. Het is beschikbaar op `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
+CRX-pakket kan worden geïmplementeerd in de CRX™-opslagplaats. Deze is beschikbaar via `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip` .
 
 Dit pakket kan worden gemaakt met behulp van de drie hieronder beschreven profielen.
 
 | **Profiel** | **Beschrijving** | **Gebruik** |
 |---|---|---|
-| Verzendprofiel | Met dit profiel maakt u een CRX-pakket van de kleinst mogelijke grootte met miniatuur. Dit pakket is het meest efficiënt. Alle JavaScript™-bestanden worden gecombineerd en geminiateerd in één JS-bestand. | Gebruik dit profiel als er geen semantische wijzigingen meer vereist zijn in JS-bestanden. |
+| Verzendprofiel | Met dit profiel maakt u een CRX-pakket van de kleinst mogelijke grootte met miniatuur. Dit pakket is het meest efficiënt. Alle JavaScript™-bestanden worden gecombineerd en geminiateerd tot één JS-bestand. | Gebruik dit profiel als er geen semantische wijzigingen meer vereist zijn in JS-bestanden. |
 | Foutopsporingsprofiel | Met dit profiel wordt een matig efficiënt CRX-pakket gemaakt. De grootte van het pakket is iets groter dan het pakket dat is gemaakt met het profiel Verzenden. Dit pakket bevat de meeste JavaScript-bestanden die in één JS-bestand worden gecombineerd. | Gebruik dit profiel voor foutopsporing. |
 | Profiel dev | Met dit profiel wordt een CRX-pakket van de grootst mogelijke grootte gemaakt. Alle JavaScript-bestanden zijn afzonderlijk beschikbaar, net als in het SDK-pakket. | Gebruik dit profiel wanneer u semantische wijzigingen opneemt. |
 

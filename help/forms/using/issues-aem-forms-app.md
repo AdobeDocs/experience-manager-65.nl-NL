@@ -26,37 +26,37 @@ De volgende secties in dit artikel zijn beschikbaar:
 * [HTML5-formulieren (niet in cache geplaatst) worden niet geladen in de AEM Forms-app](/help/forms/using/issues-aem-forms-app.md#html-forms-not-cached-fail-to-load-in-aem-forms-app)
 * [AEM Forms synchroniseert niet in Windows](/help/forms/using/issues-aem-forms-app.md#aem-forms-do-not-sync-on-windows)
 * [Niet-ondersteunde versie van Gradle](/help/forms/using/issues-aem-forms-app.md#unsupported-version-of-gradle)
-* [Compatibiliteitsproblemen met de insteekmodule Gredle en Android Gradle](/help/forms/using/issues-aem-forms-app.md#gradle-and-android-gradle-plug-in-compatibility-issues)
+* [Compatibiliteitsproblemen met de insteekmodule Gradle en Android Gradle](/help/forms/using/issues-aem-forms-app.md#gradle-and-android-gradle-plug-in-compatibility-issues)
 
 ## Bijlageverlies voor iOS-gebruikers {#attachment-loss-for-ios-users}
 
 AEM Forms-app voor iOS die is geconfigureerd voor synchronisatie met AEM Forms op OSGi ondersteunt alleen bijlagen op veldniveau. Alle bijlagen moeten unieke namen hebben. Als meerdere bijlagen dezelfde naam hebben, wordt slechts één bijlage bewaard en gaan alle andere bijlagen met dezelfde naam verloren. Voer de volgende stappen uit om te voorkomen dat gebruikers op iOS-apparaten gegevensverlies ervaren:
 
-1. Navigeer op de verbonden server naar **Adobe Experience Manager > Tools > Operations > Web Console**.
-1. Zoeken en klikken **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]**.
-1. In de [!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration] dialoogvenster, inschakelen **Bestandsnamen uniek maken**.
+1. Voor de verbonden server, navigeer aan **Adobe Experience Manager > Hulpmiddelen > Verrichtingen > de Console van het Web**.
+1. Zoeken en klikken **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** .
+1. In de [!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration] dialoog, laat **toe maakt de Namen van het Dossier uniek**.
 
-   Indien **Bestandsnamen uniek maken** Als deze instelling is uitgeschakeld, gaan gebruikers gegevensverlies ondervinden wanneer ze proberen adaptieve formulieren met meerdere bijlagen te verzenden.
+   Als **de Namen van het Dossier uniek maken** het plaatsen wordt onbruikbaar gemaakt, ervaren de gebruikers gegevensverlies als zij proberen om adaptieve vormen met veelvoudige gehechtheid voor te leggen.
 
-1. Klikken **Opslaan**.
+1. Klik **sparen**.
 
 ## Concepten van HTML5-formulieren die door gebruikers van werkruimten worden verzonden, zijn niet zichtbaar op de portal {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Voor HTML5-formulieren ingeschakeld in de AEM Forms-app met **Opslaan als concept** HTML Renderprofiel, zijn de opgeslagen concepten niet zichtbaar voor gebruikers in de werkruimte. Voer de volgende stappen uit als u opgeslagen concepten van HTML5-formulieren wilt weergeven die door werkruimtegebruikers op de portal zijn verzonden:
+Voor HTML5 vormen die in AEM Forms worden toegelaten app met **sparen als Ontwerp** HTML geeft Profiel terug, zijn de opgeslagen ontwerpen niet zichtbaar aan werkruimtegebruikers. Voer de volgende stappen uit als u opgeslagen concepten van HTML5-formulieren wilt weergeven die door werkruimtegebruikers op de portal zijn verzonden:
 
 1. Open CRXDE en login met beheerdergeloofsbrieven.
 
    URL: `https://<server>:<port>/lc/crx/de/index.jsp`
 
-1. Klik in het hoofdpad van de CRXDE in de lijst Toegangsbeheer onder Toegangsbeheer op **+**.
-1. In de **Nieuw bericht toevoegen** klikt u op de zoekknop voor de groep in het veld Principal.
-1. Typ in het veld Naam van het dialoogvenster Opdrachtgever selecteren het type `PERM_WORKSPACE_USER` en klik op **Zoeken**.
-1. Selecteren `PERM_WORKSPACE_USER` in het dialoogvenster Opdrachtgever selecteren en klik op **OK**.
-1. In het dialoogvenster Nieuw bericht toevoegen `PERM_WORKSPACE_USER` wordt geselecteerd in het veld Principal.
+1. In de wortelweg van CRXDE, in de Lijst van het Toegangsbeheer onder Toegangsbeheer, klik **+**.
+1. In **voeg Nieuwe Ingang** dialoog toe, klik de knoop van het groepsonderzoek op het Belangrijkste gebied.
+1. Op het gebied van de Naam van de Uitgezochte Belangrijkste dialoog, type `PERM_WORKSPACE_USER` en klik **Onderzoek**.
+1. Selecteer `PERM_WORKSPACE_USER` groep in de Uitgezochte Belangrijkste dialoog en klik **O.K.**.
+1. In het dialoogvenster Nieuw bericht toevoegen is de groep `PERM_WORKSPACE_USER` geselecteerd in het veld Principal.
 
-   Inschakelen `jcr:read` rechten voor de gebruikersgroep.
+   Schakel `jcr:read` -bevoegdheden in voor de gebruikersgroep.
 
-1. Klikken **OK**.
+1. Klik **OK**.
 
 ## HTML5-formulieren (niet in cache geplaatst) worden niet geladen in de AEM Forms-app {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
@@ -64,14 +64,14 @@ Wanneer de AEM Forms-app is verbonden met een oudere versie van de AEM Forms-ser
 
 Voer de volgende stappen uit om het probleem op te lossen:
 
-1. Ga in de auteur naar **Adobe Experience Manager > Tools > Configure Workspace App Offline Service > Configure Now**.
-1. In **Workspace App Offline Service** pagina, klikt u **Handmatige broncache**.
+1. In auteursinstantie, navigeer aan **Adobe Experience Manager > Hulpmiddelen > Vorm Workspace App Offline Service > vormt nu**.
+1. In **Workspace App Offline de pagina van de Dienst**, klik **het Geheime voorgeheugen van het Handmatige Middel**.
 
    URL: https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
 
-1. In de **Handmatige broncache** klikt u op de knop **+** om een CRX-pad toe te voegen.
-1. In de **Een nieuwe bron toevoegen** field, type: /etc.clientlibs/fd/xfaforms/I18N/en_US.js en klik **Toevoegen**.
-1. Klikken **Opslaan**.
+1. In het **lusje van het Geheime voorgeheugen van het 0} Hand {, klik** + **knoop om een weg van CRX toe te voegen.**
+1. In **voeg een Nieuw gebied van het Middel** toe, type: /etc.clientlibs/fd/xfaforms/I18N/en_US.js en klik **toevoegen**.
+1. Klik **sparen**.
 
 ## AEM Forms synchroniseert niet in Windows {#aem-forms-do-not-sync-on-windows}
 
@@ -81,26 +81,26 @@ Wijzig het pad van het formulier en de bijbehorende bronnen om het aantal tekens
 
 ## Niet-ondersteunde versie van Gradle {#unsupported-version-of-gradle}
 
-**Foutbericht:** Het project gebruikt een niet-ondersteunde versie van Gradle.
+**Bericht van de Fout:** het project gebruikt een niet gestaafde versie van Gradle.
 
 Het foutbericht wordt weergegeven wanneer u een AEM Forms-app maakt in Android Studio. Het probleem treedt op als de versie van Gradle die niet wordt ondersteund op het systeem.
 
-**Resolutie:** Klikken **Omslag van de Korrel herstellen en project opnieuw invoeren** om het probleem op te lossen.
+**Resolutie:** klik **herstellen de omslag van de Gradle en hervoeren project** om de kwestie op te lossen.
 
-![gradle_unsupported_version](assets/gradle_unsupported_version.png)
+![ gradle_unsupported_version ](assets/gradle_unsupported_version.png)
 
-## Compatibiliteitsproblemen met de insteekmodule Gredle en Android Gradle {#gradle-and-android-gradle-plug-in-compatibility-issues}
+## Compatibiliteitsproblemen met de insteekmodule Gradle en Android Gradle {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
-**Foutbericht:** De versies van de insteekmodule Android Gradle en Gradle zijn niet compatibel.
+**Bericht van de Fout:** de versies van de de Gradle stop van Android en Gradle zijn niet compatibel.
 
-Het foutbericht wordt weergegeven wanneer u **APK samenstellen** van de **Opbouwen** in de Android Studio-gebruikersinterface.
+Het foutenbericht wordt getoond wanneer u **bouwt APK** optie van **bouwt** menu op het gebruikersinterface van Android Studio.
 
-![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
+![ gradle_plugin_compatibility ](assets/gradle_plugin_compatibility.png)
 
-**Resolutie:** Openen **Gradle Scripts** > **gradlewrapper.properties** en bewerk de **distributionUrl** eigenschap.
+**Resolutie:** Open **Gradle Scripts** > **gradle-wrapper.properties** dossier en geef het **distributionUrl** bezit uit.
 
-De Android Studio-console raadt u bijvoorbeeld aan de verloopversie te verlagen naar 3.5. De versie bewerken in **distributionUrl** van **gradlewrapper.properties** bestand.
+Bijvoorbeeld, adviseert de console van Android Studio degraderend de Versie van de Gradle tot 3.5. Bewerk de versie in **distributionUrl** van **gradle-wrapper.properties** dossier.
 
-Selecteren **Opbouwen** > **APK samenstellen** om de fout op te lossen en het .apk-bestand te genereren.
+Selecteer **bouwen** > **APK** opnieuw bouwen om de fout op te lossen en het .apk dossier te produceren.
 
-![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)
+![ gradle_wrapper_properties ](assets/gradle_wrapper_properties.png)

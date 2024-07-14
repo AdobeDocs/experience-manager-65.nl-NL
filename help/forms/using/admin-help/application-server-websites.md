@@ -22,6 +22,6 @@ Deze lijst bevat koppelingen naar de websites van de fabrikant voor alle onderst
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 
-**WebLogic van oracle:** www.oracle.com/us/products/middleware/application-server/index.html
+**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
 **IBM WebSphere:** www-01.ibm.com/software/websphere/

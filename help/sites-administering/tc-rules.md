@@ -29,26 +29,26 @@ Het bestand is van toepassing op alle vertaalprojecten.
 
 >[!NOTE]
 >
->Na een upgrade naar 6.4 wordt aangeraden het bestand van /etc. te verplaatsen. Zie [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) voor meer informatie .
+>Na een upgrade naar 6.4 wordt aangeraden het bestand van /etc. te verplaatsen. Zie [ Gemeenschappelijke Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) voor meer details.
 
 De regels omvatten de volgende informatie:
 
 * Het pad van het knooppunt waarop de regel van toepassing is. De regel is ook op de nakomelingen van de knoop van toepassing.
 * De namen van de knoopeigenschappen die de te vertalen inhoud bevatten. Het bezit kan voor een specifiek middeltype of voor alle middeltypes specifiek zijn.
 
-U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle AEM basistekstcomponenten op uw pagina&#39;s toevoegen. De regel kan de `/content` en de `text` eigenschap voor de `foundation/components/text` component.
+U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle AEM basistekstcomponenten op uw pagina&#39;s toevoegen. De regel kan de node `/content` en de eigenschap `text` voor de component `foundation/components/text` identificeren.
 
-Er is een [console](#translation-rules-ui) dat is toegevoegd voor het vormen van vertaalregels. De definities in UI zullen het dossier voor u bevolken.
+Er is a [ console ](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
 
-Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
+Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md).
 
 >[!NOTE]
 >
 >AEM ondersteunt een-op-een-toewijzing tussen typen bronnen en verwijzingskenmerken voor het vertalen van inhoud waarnaar wordt verwezen op een pagina.
 
-## De Syntaxis van de regel voor Pagina&#39;s, Componenten, en Activa {#rule-syntax-for-pages-components-and-assets}
+## Syntaxis van regels voor pagina&#39;s, componenten en Assets {#rule-syntax-for-pages-components-and-assets}
 
-Een regel is een `node` element met een of meer onderliggende elementen `property` elementen en nul of meer onderliggende elementen `node` elementen:
+Een regel is een `node` -element met een of meer onderliggende `property` -elementen en nul of meer onderliggende `node` elementen:
 
 ```xml
 <node path="content path">
@@ -59,20 +59,20 @@ Een regel is een `node` element met een of meer onderliggende elementen `propert
 </node>
 ```
 
-Elk van deze `node` elementen hebben de volgende kenmerken:
+Elk van deze `node` -elementen heeft de volgende kenmerken:
 
-* De `path` Het kenmerk bevat het pad naar het hoofdknooppunt van de vertakking waarop de regels van toepassing zijn.
-* Onderliggend `property` de elementen identificeren de knoopeigenschappen om voor alle middeltypes te vertalen:
+* Het kenmerk `path` bevat het pad naar het hoofdknooppunt van de vertakking waarop de regels van toepassing zijn.
+* Onderliggende `property` -elementen identificeren de knoopeigenschappen die voor alle resourcetypen moeten worden vertaald:
 
-   * De `name` bevat de eigenschapsnaam.
-   * De optionele `translate` kenmerk is gelijk aan `false` als de eigenschap niet is vertaald. Standaard is de waarde `true`. Dit kenmerk is handig wanneer u vorige regels overschrijft.
+   * Het kenmerk `name` bevat de eigenschapnaam.
+   * Het optionele kenmerk `translate` is gelijk aan `false` als de eigenschap niet is omgezet. De standaardwaarde is `true` . Dit kenmerk is handig wanneer u vorige regels overschrijft.
 
-* Onderliggend `node` de elementen identificeren de knoopeigenschappen om voor specifieke middeltypes te vertalen:
+* Onderliggende `node` -elementen identificeren de knoopeigenschappen die voor specifieke brontypen moeten worden vertaald:
 
-   * De `resourceType` Het kenmerk bevat het pad dat wordt omgezet naar de component die het resourcetype implementeert.
-   * Onderliggend `property` de elementen identificeren het knoopbezit om te vertalen. Dit knooppunt gebruiken op dezelfde manier als het onderliggende knooppunt `property` elementen voor knoopregels.
+   * Het kenmerk `resourceType` bevat het pad dat wordt omgezet naar de component die het resourcetype implementeert.
+   * Onderliggende `property` -elementen identificeren de eigenschap node die moet worden vertaald. Gebruik dit knooppunt op dezelfde manier als de onderliggende `property` -elementen voor knooppuntregels.
 
-De volgende voorbeeldregel veroorzaakt de inhoud van allen `text` eigenschappen die moeten worden vertaald voor alle pagina&#39;s onder de `/content` knooppunt. De regel is effectief voor elke component die inhoud in een `text` eigenschap, zoals de component Foundation Text en de component foundation Image.
+De volgende voorbeeldregel zorgt ervoor dat de inhoud van alle `text` -eigenschappen wordt vertaald voor alle pagina&#39;s onder de `/content` -node. De regel is effectief voor elke component die inhoud in een eigenschap `text` opslaat, zoals de component Foundation Text en de component foundation Image.
 
 ```xml
 <node path="/content">
@@ -80,7 +80,7 @@ De volgende voorbeeldregel veroorzaakt de inhoud van allen `text` eigenschappen 
 </node>
 ```
 
-In het volgende voorbeeld wordt de inhoud van alle `text` eigenschappen, en ook andere eigenschappen van de component van het stichtingsbeeld vertalen. Als andere componenten eigenschappen met dezelfde naam hebben, is de regel niet op hen van toepassing.
+In het volgende voorbeeld wordt de inhoud van alle `text` -eigenschappen omgezet en worden ook andere eigenschappen van de basiscomponent Image vertaald. Als andere componenten eigenschappen met dezelfde naam hebben, is de regel niet op hen van toepassing.
 
 ```xml
 <node path="/content">
@@ -93,7 +93,7 @@ In het volgende voorbeeld wordt de inhoud van alle `text` eigenschappen, en ook 
 </node>
 ```
 
-## Regelsyntaxis voor het uitnemen van elementen van pagina&#39;s  {#rule-syntax-for-extracting-assets-from-pages}
+## Regelsyntaxis voor het uitnemen van Assets van pagina&#39;s  {#rule-syntax-for-extracting-assets-from-pages}
 
 Gebruik de volgende regelsyntaxis om elementen op te nemen die zijn ingesloten in of waarnaar wordt verwezen vanuit componenten:
 
@@ -101,10 +101,10 @@ Gebruik de volgende regelsyntaxis om elementen op te nemen die zijn ingesloten i
 <assetNode resourceType="path to component" assetReferenceAttribute="property that stores asset"/>
 ```
 
-Elk `assetNode` element heeft de volgende kenmerken:
+Elk `assetNode` -element heeft de volgende kenmerken:
 
 * Eén `resourceType` -kenmerk dat gelijk is aan het pad dat naar de component wordt omgezet.
-* Eén `assetReferenceAttribute` kenmerk dat gelijk is aan de naam van de eigenschap die het element binair (voor ingesloten elementen) of het pad naar het element waarnaar wordt verwezen, opslaat.
+* Een `assetReferenceAttribute` -kenmerk dat gelijk is aan de naam van de eigenschap die het element binair (voor ingesloten elementen) of het pad naar het element waarnaar wordt verwezen, opslaat.
 
 In het volgende voorbeeld worden afbeeldingen geëxtraheerd uit de basiscomponent Image:
 
@@ -114,7 +114,7 @@ In het volgende voorbeeld worden afbeeldingen geëxtraheerd uit de basiscomponen
 
 ## Regels overschrijven {#overriding-rules}
 
-Het bestand translate_rules.xml bestaat uit een `nodelist` element met meerdere onderliggende elementen `node` elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` eigenschappen die moeten worden vertaald, met uitzondering van `/content/mysite/en` vertakking van pagina&#39;s:
+Het bestand translatie_rules.xml bestaat uit een `nodelist` -element met verschillende onderliggende `node` -elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text` -eigenschappen wordt vertaald, behalve de `/content/mysite/en` -vertakking van pagina&#39;s:
 
 ```xml
 <nodelist>
@@ -129,9 +129,9 @@ Het bestand translate_rules.xml bestaat uit een `nodelist` element met meerdere 
 
 ## Filtereigenschappen {#filtering-properties}
 
-U kunt knooppunten met een specifieke eigenschap filteren met een `filter` element.
+U kunt knooppunten met een specifieke eigenschap filteren met een element `filter` .
 
-De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` te vertalen eigenschappen, behalve de knooppunten die de eigenschap hebben `draft` instellen op `true`.
+De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text` -eigenschappen wordt omgezet, behalve de knooppunten waarvoor de eigenschap `draft` is ingesteld op `true` .
 
 ```xml
 <nodelist>
@@ -150,33 +150,33 @@ Een console is ook beschikbaar voor het vormen van vertaalregels.
 
 Toegang tot dit bestand:
 
-1. Navigeren naar **Gereedschappen** en vervolgens **Algemeen**.
+1. Navigeer aan **Hulpmiddelen** en toen **Algemeen**.
 
-   ![chlimage_1-55](assets/chlimage_1-55.jpeg)
+   ![ chlimage_1-55 ](assets/chlimage_1-55.jpeg)
 
-1. Selecteren **Omzetconfiguratie**.
+1. Selecteer **de Configuratie van de Vertaling**.
 
-   ![chlimage_1-56](assets/chlimage_1-56.jpeg)
+   ![ chlimage_1-56 ](assets/chlimage_1-56.jpeg)
 
-Vanaf hier kunt u **Context toevoegen**. Hiermee kunt u een pad toevoegen.
+Van hier, kunt u **context** toevoegen. Hiermee kunt u een pad toevoegen.
 
-![chlimage_1-57](assets/chlimage_1-57.jpeg)
+![ chlimage_1-57 ](assets/chlimage_1-57.jpeg)
 
-Vervolgens moet u de context selecteren en vervolgens op **Bewerken**. Hiermee opent u de Editor voor vertaalregels.
+Dan moet u uw context selecteren en dan **klikken geeft** uit. Hiermee opent u de Editor voor vertaalregels.
 
-![chlimage_1-58](assets/chlimage_1-58.jpeg)
+![ chlimage_1-58 ](assets/chlimage_1-58.jpeg)
 
-U kunt vier kenmerken wijzigen via de gebruikersinterface: `isDeep`, `inherit`, `translate` en `updateDestinationLanguage`.
+Er zijn vier kenmerken die u kunt wijzigen via de gebruikersinterface: `isDeep` , `inherit` , `translate` en `updateDestinationLanguage` .
 
-**isDeep** Dit kenmerk is van toepassing op knooppuntfilters en is standaard true. Het controleert of de knoop (of zijn voorouders) die bezit met de gespecificeerde bezitswaarde in de filter bevat. Indien false, wordt alleen het huidige knooppunt gecontroleerd.
+**isDeep** Dit attribuut is toepasselijk op knoopfilters en is waar door gebrek. Het controleert of de knoop (of zijn voorouders) die bezit met de gespecificeerde bezitswaarde in de filter bevat. Indien false, wordt alleen het huidige knooppunt gecontroleerd.
 
-Bijvoorbeeld, worden de kindknopen toegevoegd in een vertaalbaan zelfs wanneer de ouderknoop bezit `draftOnly` is ingesteld op true om concepten te markeren. hier `isDeep` komt in spel en controleert als de ouderknopen bezit hebben `draftOnly` als true en sluit die onderliggende knooppunten uit.
+Onderliggende knooppunten worden bijvoorbeeld toegevoegd aan een vertaaltaak, zelfs als de eigenschap `draftOnly` van het bovenliggende knooppunt is ingesteld op true om de conceptinhoud te markeren. Hier wordt `isDeep` afgespeeld en wordt gecontroleerd of de bovenliggende knooppunten de eigenschap `draftOnly` true hebben en of deze onderliggende knooppunten worden uitgesloten.
 
-In de Editor kunt u in- of uitschakelen **Is diep** in de **Filters** tab.
+In de Redacteur, kunt u controleren/uncheck **is Diep** in de **Filters** tabel.
 
-![chlimage_1-59](assets/chlimage_1-59.jpeg)
+![ chlimage_1-59 ](assets/chlimage_1-59.jpeg)
 
-Hier is een voorbeeld van de resulterende xml wanneer **Is diep** is uitgeschakeld in de gebruikersinterface:
+Hier is een voorbeeld van resulterende xml wanneer **Diep** is ongecontroleerd in UI:
 
 ```xml
  <filter>
@@ -184,23 +184,23 @@ Hier is een voorbeeld van de resulterende xml wanneer **Is diep** is uitgeschake
 </filter>
 ```
 
-**erven** Dit is van toepassing op eigenschappen. Standaard wordt elke eigenschap overgeërfd, maar als u wilt dat een eigenschap niet op het onderliggende element wordt overgeërfd, kunt u die eigenschap als onwaar markeren, zodat deze alleen op dat specifieke knooppunt wordt toegepast.
+**erft** dit is van toepassing op eigenschappen. Standaard wordt elke eigenschap overgeërfd, maar als u wilt dat een eigenschap niet op het onderliggende element wordt overgeërfd, kunt u die eigenschap als onwaar markeren, zodat deze alleen op dat specifieke knooppunt wordt toegepast.
 
-In de UI kunt u controleren/uncheck **Overnemen** in de **Eigenschappen** tab.
+In UI, kunt u controleren/uncheck **erven** in **Eigenschappen** tabel.
 
-![chlimage_1-60](assets/chlimage_1-60.jpeg)
+![ chlimage_1-60 ](assets/chlimage_1-60.jpeg)
 
-**vertalen** Het attribuut translate wordt gebruikt eenvoudig om te specificeren of om een bezit al dan niet te vertalen.
+**vertaal** het vertaalattribuut wordt gebruikt eenvoudig om te specificeren al dan niet om een bezit te vertalen.
 
-In de UI kunt u controleren/uncheck **Vertalen** in de **Eigenschappen** tab.
+In UI, kunt u controleren/uncheck **vertalen** in het **Eigenschappen** lusje.
 
-**updateDestinationLanguage** Dit kenmerk wordt gebruikt voor eigenschappen die geen tekst maar taalcodes hebben, bijvoorbeeld jcr:language. De gebruiker vertaalt geen tekst maar de taallandinstelling van bron tot doel. Dergelijke eigenschappen worden niet verzonden voor vertaling.
+**updateDestinationLanguage** Dit attribuut wordt gebruikt voor eigenschappen die geen tekst maar taalcodes, bijvoorbeeld, jcr hebben:taal. De gebruiker vertaalt geen tekst maar de taallandinstelling van bron tot doel. Dergelijke eigenschappen worden niet verzonden voor vertaling.
 
-In de UI kunt u controleren/uncheck **Vertalen** in de **Eigenschappen** , maar voor de specifieke eigenschappen die taalcodes als waarde hebben.
+In UI, kunt u controleren/uncheck **** in het **lusje van Eigenschappen** vertalen, maar voor de specifieke eigenschappen die taalcodes als waarde hebben.
 
-Om het verschil tussen `updateDestinationLanguage` en `translate`Hier is een eenvoudig voorbeeld van een context met slechts twee regels:
+Voor meer duidelijkheid over het verschil tussen `updateDestinationLanguage` en `translate` is dit een eenvoudig voorbeeld van een context met slechts twee regels:
 
-![chlimage_1-61](assets/chlimage_1-61.jpeg)
+![ chlimage_1-61 ](assets/chlimage_1-61.jpeg)
 
 Het resultaat in de xml ziet er als volgt uit:
 

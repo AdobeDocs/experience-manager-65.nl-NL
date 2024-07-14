@@ -1,5 +1,5 @@
 ---
-title: Java&trade voor componenten en services; APIQuick Start (SOAP)
+title: Componenten en services Java&trade; APIQuick Start (SOAP)
 description: Leer hoe u AEM Forms-componenten en -services programmatisch kunt manipuleren met Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
@@ -42,7 +42,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->De snelle aanvang in Programmering met AEM vormen is gebaseerd op de Server die van Forms op JBoss® en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang in Programmering met AEM vormen is gebaseerd op de Server die van Forms op JBoss® en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 ## Snel starten (SOAP modus): een component implementeren met de Java™ API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-In het volgende Java™-voorbeeld wordt een component geïmplementeerd die is gebaseerd op een JAR-bestand met de naam *adobe-emailSample-dsc.jar*.
+Het volgende voorbeeld Java™ stelt een component op die op een JAR dossier genoemd *adobe-emailSample-dsc.jar* gebaseerd is.
 
 ```java
  /* 
@@ -152,7 +152,7 @@ In het volgende Java™-voorbeeld wordt een component geïmplementeerd die is ge
 
 ## Snel starten (SOAP modus): de uitvoeringscontext van een service instellen met de Java™ API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-In het volgende Java™-codevoorbeeld wordt de uitvoeringscontext van Run-As Invoker ingesteld op een voorbeeldservice met de naam *EncryptDocument*.
+Het volgende Java™ codevoorbeeld plaatst de looppas-als uitvoeringscontext van de Invoker aan de voorbeelddienst genoemd *EncryptDocument*.
 
 ```java
  /* 
@@ -357,7 +357,7 @@ In het volgende Java™-codevoorbeeld worden de beveiliging uitgeschakeld van de
 
 ## Snel starten (SOAP modus): een service starten met de Java™ API {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-Het volgende Java™-codevoorbeeld start een service met de naam *SendEmailService*.
+Het volgende Java™ codevoorbeeld begint de dienst genoemd *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 

@@ -35,14 +35,14 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
 
 ## Assets {#assets}
 
-De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Media en de integratie van Dynamic Media Classic, worden beschreven in de volgende onderwerpen:
+De beste praktijken rond Assets, met inbegrip van het vermogen van Dynamic Media en de integratie van Dynamic Media Classic, worden beschreven in de volgende onderwerpen:
 
 <table>
  <tbody>
   <tr>
-   <td>Aanbevolen werkwijzen op verschillende gebieden rond Elementen om de stabiliteit en prestaties van het systeem onder belasting te verbeteren</td>
-   <td><a href="/help/assets/best-practices-for-assets.md">Aanbevolen procedures voor middelen</a></td>
-   <td>Deze groep bevat koppelingen naar gidsen voor aanbevolen procedures in verschillende gebieden rond Elementen. Na het herzien van hen, zult u de kennis en de hulpmiddelen hebben om een systeem van het de activabeheer van de onderneming te bouwen en te beheren.</td>
+   <td>Aanbevolen procedures op verschillende gebieden in Assets om de stabiliteit en prestaties van het systeem te verbeteren</td>
+   <td><a href="/help/assets/best-practices-for-assets.md">Aanbevolen procedures voor Assets</a></td>
+   <td>Deze groep bevat koppelingen naar gidsen voor aanbevolen procedures in verschillende gebieden rond Assets. Na het herzien van hen, zult u de kennis en de hulpmiddelen hebben om een systeem van het de activabeheer van de onderneming te bouwen en te beheren.</td>
   </tr>
   <tr>
    <td>Uw inhoud ordenen (maphiërarchie)</td>
@@ -52,12 +52,12 @@ De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Med
   <tr>
    <td>Scene7 en AEM integreren</td>
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Aanbevolen procedures voor de integratie van Scene7 met AEM</a></td>
-   <td><p>Beschrijft wanneer om opiniepeilingimporter aan te zetten, hoe te om aandrijving uw integratie te testen, en wanneer te gebruiken inhoudsbrowser tegenover een directe upload aan Activa.</p> </td>
+   <td><p>Beschrijft wanneer om opiniepeilingimporter aan te zetten, hoe te om aandrijving uw integratie te testen, en wanneer te gebruiken inhoudsbrowser tegenover een directe upload aan Assets.</p> </td>
   </tr>
   <tr>
    <td>Opties voor voorinstellingen afbeelding</td>
-   <td>Begrijpen <a href="/help/assets/managing-image-presets.md#understanding-image-presets">voorinstellingen voor afbeeldingen</a> en <a href="/help/assets/managing-image-presets.md#image-preset-options">tips en trucs voor voorinstellingen van afbeeldingen</a></td>
-   <td>Als onderdeel van de documentatie over <a href="/help/assets/managing-image-presets.md">Voorinstellingen voor afbeeldingen beheren</a>In deze onderwerpen wordt beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen beschreven voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td>
+   <td>Het begrip <a href="/help/assets/managing-image-presets.md#understanding-image-presets"> beeld stelt </a> vooraf in en <a href="/help/assets/managing-image-presets.md#image-preset-options"> beeld vooraf ingestelde beste praktijken </a></td>
+   <td>Als deel van de documentatie op <a href="/help/assets/managing-image-presets.md"> het Leiden Beeld stelt </a> vooraf in, beschrijven deze onderwerpen welke beeld vooraf instelt en beste praktijken rond het selecteren van beeld vooraf ingestelde opties zijn.</td>
   </tr>
   <tr>
    <td>Dynamic Media versus directe integratie met Scene7</td>

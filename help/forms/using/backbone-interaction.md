@@ -1,6 +1,6 @@
 ---
 title: Backbone-interactie
-description: Conceptuele informatie over het gebruik van backbone-JavaScript-modellen in de AEM Forms-werkruimte.
+description: Conceptuele informatie over het gebruik van Backbone JavaScript-modellen in de AEM Forms-werkruimte.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Backbone-interactie{#backbone-interaction}
 
-Backbone is een bibliotheek die helpt bij het maken en volgen van MVC-architectuur in webtoepassingen. Het basisidee van Backbone is uw interface te organiseren in logische meningen, gesteund door modellen, die elk onafhankelijk kunnen worden bijgewerkt wanneer het model verandert, zonder het moeten de pagina opnieuw tekenen. Voor meer informatie over Backbone, zie [https://backbonejs.org](https://backbonejs.org/).
+Backbone is een bibliotheek die helpt bij het maken en volgen van MVC-architectuur in webtoepassingen. Het basisidee van Backbone is uw interface te organiseren in logische meningen, gesteund door modellen, die elk onafhankelijk kunnen worden bijgewerkt wanneer het model verandert, zonder het moeten de pagina opnieuw tekenen. Voor meer informatie over Backbone, zie [ https://backbonejs.org ](https://backbonejs.org/).
 
 Enkele belangrijke concepten zijn:
 
-**Backbone-model** Bevat gegevens, en de meeste logica met betrekking tot deze gegevens.
+**backbonemodel** bevat gegevens, en de meeste logica met betrekking tot dit gegeven.
 
-**Achtergrondweergave** Wordt gebruikt om de status van het corresponderende model weer te geven. Een backboneweergave gedraagt zich eigenlijk als een controller, luisterend naar gebruikersinterfacegebeurtenissen zoals klikken door de gebruiker of naar modelgebeurtenissen (zoals gewijzigde gegevens) en wijzigt de gebruikersinterface op de juiste wijze.
+**de mening van de Backbone** die wordt gebruikt om de staat van het overeenkomstige model te vertegenwoordigen. Een backboneweergave gedraagt zich eigenlijk als een controller, luisterend naar gebruikersinterfacegebeurtenissen zoals klikken door de gebruiker of naar modelgebeurtenissen (zoals gewijzigde gegevens) en wijzigt de gebruikersinterface op de juiste wijze.
 
-**HTML-sjabloon** Een omvattende sjabloon met plaatsaanduidingen die zijn gevuld door het model.
+**HTML malplaatje** een omslagmalplaatje dat placeholders heeft die door het model worden bevolkt.
 
-**AEM Forms-werkruimte** Bevat verschillende afzonderlijke componenten. Elke component:
+**de werkruimte van AEM Forms** bevat verscheidene individuele componenten. Elke component:
 
 * Vertegenwoordigt één logisch interface-element.
 * Dit kan een verzameling van vergelijkbare componenten zijn.
@@ -46,7 +46,7 @@ In de backboneweergave is er een gebeurteniskaart die de verschillende gebeurten
 
 Wanneer een mening wordt geïnitialiseerd, roept de mening zijn overeenkomstig model om gegevens van server te halen. Zodra alle gegevens die door een mening worden vereist beschikbaar zijn, geeft de mening de gegevens in het formaat terug dat door het malplaatje van de HTML wordt gespecificeerd. Meerdere weergaven kunnen hetzelfde model voor communicatie delen.
 
-![Achtergrondweergave van formulieren AEM](do-not-localize/aem_forms_workflow.png)
+![ AEM de mening van de vormenbackbone ](do-not-localize/aem_forms_workflow.png)
 
 Een voorbeeld:
 

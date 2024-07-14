@@ -28,11 +28,11 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Titel**
 
-  De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de **Websites** en de **Sites** kaart-/lijstweergaven.
+  De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld, de **het tablijst van Websites** en de **3} kaart/lijstmeningen van Plaatsen {.**
 
   Dit is een verplicht veld.
 
-* **Tags**
+* **Markeringen**
 
   Hier kunt u codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken:
 
@@ -44,17 +44,17 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
    * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
    * Er verschijnt een x wanneer u de muis boven een tag-item in het selectievak houdt. U kunt dit gebruiken om die tag voor deze pagina te verwijderen.
 
-* **Verbergen in navigatie**
+* **Verbergen in Navigatie**
 
   Een schakeloptie om aan te geven of de pagina wordt weergegeven of verborgen in de paginanavigatie.
 
-* **Paginatitel**
+* **Titel van de Pagina**
 
   Een titel die op de pagina moet worden gebruikt.
 
-* **Navigatietitel**
+* **Titel van de Navigatie**
 
-  U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Indien leeg, **Titel** wordt gebruikt.
+  U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als leeg, wordt de **Titel** gebruikt.
 
 * **Ondertitel**
 
@@ -64,13 +64,13 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
   Uw beschrijving van de pagina, het doel ervan of andere details die u wilt toevoegen.
 
-* **Op tijd**
+* **op Tijd**
 
   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
 
   Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
-* **Uit-tijd**
+* **Van Tijd**
 
   De tijd waarop de gepubliceerde pagina wordt gedeactiveerd.
 
@@ -80,7 +80,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
   Hiermee kunt u een vanity-URL voor deze pagina invoeren. Hierdoor hebt u een kortere en expressievere URL.
 
-  Als de URL voor Vanity bijvoorbeeld is ingesteld op w `elcome`naar de pagina die wordt aangegeven door het pad / `v1.0/startpage`voor de website h `ttp://example.com,` vervolgens h `ttp://example.com/welcome`zou de vanity URL van h zijn `ttp://example.com/content/v1.0/startpage`
+  Als bijvoorbeeld de URL van Vanity is ingesteld op w `elcome` op de pagina die wordt aangegeven door het pad / `v1.0/startpage` voor de website h `ttp://example.com,` , zou h `ttp://example.com/welcome` de vanity URL van h zijn `ttp://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
@@ -99,27 +99,27 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
   De paginataal.
 
-* **Omleiden**
+* **opnieuw richten**
 
   Geef de pagina op waarnaar deze pagina automatisch moet worden omgeleid.
 
 * **Ontwerp**
 
-  Geef de [ontwerp](/help/sites-developing/designer.md) voor deze pagina te gebruiken.
+  Wijs op het [ ontwerp ](/help/sites-developing/designer.md) dat voor deze pagina moet worden gebruikt.
 
 * **Alias**
 
   Geef een alias op die voor deze pagina moet worden gebruikt.
 
-* **Gesloten gebruikersgroep inschakelen**
+* **laat Gesloten Groep van de Gebruiker toe**
 
-  Hiermee wordt het gebruik van [gesloten gebruikersgroepen](/help/sites-administering/cug.md) (CUG&#39;s).
+  Laat (of maakt) gebruik van [ gesloten gebruikersgroepen ](/help/sites-administering/cug.md) (CUGs) toe onbruikbaar.
 
-* **Aanmeldingspagina**
+* **Login Pagina**
 
   De pagina die voor login moet worden gebruikt.
 
-* **Toegestane groepen**
+* **Toegestane Groepen**
 
   Groepen die in aanmerking komen voor aanmelding bij de CUG.
 
@@ -127,21 +127,21 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
   Realm name for the CUG.
 
-* **Configuratie exporteren**
+* **de Configuratie van de Uitvoer**
 
   Geef een exportconfiguratie op.
 
 ### Miniatuur {#thumbnail}
 
-* **Paginaminiatuur**
+* **de Duimnagel van de Pagina**
 
   Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
-   * **Voorvertoning genereren**
+   * **produceer Voorproef**
 
      Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken.
 
-   * **Afbeelding uploaden**
+   * **upload Beeld**
 
      Upload een afbeelding die u als miniatuur wilt gebruiken.
 
@@ -149,35 +149,35 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Cloud Servicen**
 
-  Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
+  Bepaal eigenschappen voor [ wolkendiensten ](/help/sites-developing/extending-cloud-config.md).
 
-### Personalisatie {#personalization}
+### Personalization {#personalization}
 
-* **Personalisatie**
+* **Personalization**
 
-  Selecteer een [Merk om een werkingsgebied voor het richten te specificeren](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+  Selecteer a [ Merk om een werkingsgebied voor het richten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te specificeren.
 
 ### Machtigingen {#permissions}
 
-* **Machtigingen** (interface met aanraakoptimalisatie)
+* **Toestemmingen** (aanraking-geoptimaliseerde UI)
 
-  De weergave [effectieve machtigingen en nieuwe machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md).
+  Bekijk de [ efficiënte toestemmingen en voeg nieuwe toestemmingen ](/help/sites-administering/user-group-ac-admin.md) toe.
 
 ### Blauwdruk {#blueprint}
 
-* **Blauwdruk**
+* **Vervaging**
 
-  Eigenschappen definiëren voor een pagina Vervagen in [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+  Bepaal eigenschappen voor een pagina van de Vervaging binnen [ multi-site beheer ](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
 
 ### Live kopie {#live-copy}
 
 * **Livecopy**
 
-  Eigenschappen definiëren voor een pagina van Live kopie binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
+  Bepaal eigenschappen voor een Levende pagina van het Exemplaar binnen [ multi-site beheer ](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
 
 ### Sitestructuur {#site-structure}
 
-* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmeldingspagina**, **Offline pagina**, onder andere.
+* Verstrek verbindingen aan pagina&#39;s die plaats-brede functionaliteit, zoals **pagina van de Aantekening**, **Off-line Pagina**, onder anderen verstrekken.
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-2}
 
@@ -187,8 +187,8 @@ Pagina-eigenschappen definiëren de verschillende eigenschappen van de pagina, z
 
 1. Open de pagina die u wilt bewerken.
 
-1. Open in het hulpstuk de **Pagina** dan selecteert u **Pagina-eigenschappen...**
+1. In sidekick open het **lusje van de Pagina** dan selecteren **Eigenschappen van de Pagina...**
 
    Hiermee wordt een dialoogvenster met meerdere tabbladen geopend.
 
-1. Breng de gewenste wijzigingen aan en klik op **OK** opslaan.
+1. Breng de veranderingen aan u vereist, dan klik O.K. **om te bewaren.**

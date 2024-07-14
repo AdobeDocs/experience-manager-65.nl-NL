@@ -18,7 +18,7 @@ Als u de prestaties van uw GraphQL-filters wilt optimaliseren, voert u een proce
 
 >[!NOTE]
 >
->Nadat u de inhoudsfragmenten hebt bijgewerkt, kunt u de aanbevelingen voor [GraphQL-query&#39;s optimaliseren](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
+>Na het bijwerken van uw Fragmenten van de Inhoud, kunt u de aanbevelingen voor [ volgen het Optimaliseren van de Vragen van GraphQL ](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
 
 ## Vereisten {#prerequisites}
 
@@ -28,22 +28,22 @@ Zorg ervoor dat u minimaal over de 6.5.17.0 release van AEM beschikt.
 
 Voer de volgende stappen uit om de procedure uit te voeren:
 
-1. [Vorm de montages OSGi](/help/sites-deploying/configuring-osgi.md) voor de **Taakconfiguratie van migratie van inhoudsfragmenten**:
+1. [ vorm de montages OSGi ](/help/sites-deploying/configuring-osgi.md) voor de **Configuratie van de Baan van de Migratie van het Fragment van de Inhoud**:
 
-   ![Configuratie van OSGi-contentfragmentmigratie](assets/cfm-graphql-update-01.png "Configuratie van OSGi-contentfragmentmigratie")
+   ![ OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud 1} OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud ")](assets/cfm-graphql-update-01.png "
 
 1. Stel deze twee parameters in het dialoogvenster als volgt in:
 
    * **ContentFragmentMigration:Enabled** : `1`
    * **ContentFragmentMigration:Enforce** : `1`
 
-1. **Opslaan** de specificaties - de updateprocedure begint .
+1. **sparen** de specificaties - de updateprocedure begint.
 
-1. Wacht tot de procedure is voltooid. De procedure is voltooid wanneer de eigenschap `cfGlobalVersion` wordt weergegeven op `/content/dam` en is ingesteld op `1`.
+1. Wacht tot de procedure is voltooid. De procedure is voltooid wanneer de eigenschap `cfGlobalVersion` wordt weergegeven op `/content/dam` en is ingesteld op `1` .
 
 1. Keer terug naar de configuratie OSGi om de procedure te deactiveren.
 
-   In het dialoogvenster voor het dialoogvenster **Taakconfiguratie van migratie van inhoudsfragmenten** stel de volgende twee parameters in:
+   In de dialoog voor de **Configuratie van de Baan van de Migratie van het Fragment van de Inhoud** plaatst deze twee parameters als volgt:
 
    * **ContentFragmentMigration:Enabled** : `0`
    * **ContentFragmentMigration:Enforce** : `0`
@@ -52,6 +52,6 @@ Voer de volgende stappen uit om de procedure uit te voeren:
 
 Houd rekening met de volgende beperkingen:
 
-* Optimalisatie van de prestaties van GraphQL-filters is alleen mogelijk na een volledige update van al uw Content Fragments (aangegeven door de aanwezigheid van de `cfGlobalVersion` eigenschap voor de JCR-node `/content/dam`)
+* Optimalisatie van de prestaties van GraphQL-filters is alleen mogelijk na een volledige update van al uw Content Fragments (aangegeven door de eigenschap `cfGlobalVersion` voor het JCR-knooppunt `/content/dam` )
 
-* Als inhoudsfragmenten worden geïmporteerd uit een inhoudspakket (met `crx/de`) nadat de updateprocedure is uitgevoerd, worden die inhoudsfragmenten niet in de resultaten van de GraphQL-query meegenomen totdat de updateprocedure opnieuw wordt uitgevoerd.
+* Als Inhoudsfragmenten uit een inhoudspakket worden geïmporteerd (met `crx/de` ) nadat de updateprocedure is uitgevoerd, worden die Inhoudsfragmenten pas in de resultaten van de GraphQL-query meegenomen als de updateprocedure opnieuw wordt uitgevoerd.

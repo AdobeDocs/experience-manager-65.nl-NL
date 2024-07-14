@@ -20,17 +20,17 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
 | AEM 6,5 | Dit artikel |
 
 
-AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Ga voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.5 Forms naar [Overzicht van nieuwe functies](../../forms/using/whats-new.md).
+AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 Forms te leren, zie [ Nieuw document van eigenschappen ](../../forms/using/whats-new.md).
 
 U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms, terwijl de bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
 Het volgende diagram toont de beschikbare verbeteringspaden voor AEM Forms op OSGi:
 
-![OSGi-upgradestroom](do-not-localize/osgi-upgrade-path.png)
+![ OSGi verbeteringsstroom ](do-not-localize/osgi-upgrade-path.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
@@ -45,7 +45,7 @@ U kunt een multi-hopverbetering van ook uitvoeren
 
 In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms op JEE weergegeven:
 
-![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png)
+![ JEE verbetering 6.5 ](do-not-localize/jee-upgrade-6-5.png)
 
 
 U kunt een directe upgrade uitvoeren vanaf:
@@ -61,17 +61,17 @@ U kunt een multi-hopverbetering van ook uitvoeren
 * AEM 6.1 Forms in juni
 * AEM 6.2 Forms in juni
 
-AEM 6.5.18.0 Forms op JEE biedt twee typen installatieprogramma&#39;s: [Volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) en [Patchinstallatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.18.0 Forms op JEE verstrekt twee soorten installateurs: [ Volledige installateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) en [ installateur van het Fatch ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**Volledig installatieprogramma**: Met het volledige installatieprogramma kunt u nieuwe AEM Forms-exemplaren instellen of upgrades uitvoeren van AEM 6.5.x.x Forms op JEE naar AEM 6.5.18.0 Forms op JEE.
+**Volledige installateur**: U kunt volledige installateur gebruiken om nieuwe instanties van AEM Forms op te zetten of verbeteringen van AEM 6.5.x.x Forms op JEE aan AEM 6.5.18.0 Forms op JEE uit te voeren.
 
-**Patchinstallatieprogramma**: Patchinstallatieprogramma is bedoeld voor klanten die al AEM 6.5.x.x-versies gebruiken. U kunt het installatieprogramma van de patch gebruiken om een upgrade uit te voeren naar de nieuwste versie van AEM Forms.
+**installateur van het Patch**: Het installatieprogramma van het Patch is voor klanten reeds gebruikend AEM versies 6.5.x.x. U kunt het installatieprogramma van de patch gebruiken om een upgrade uit te voeren naar de nieuwste versie van AEM Forms.
 
 In de volgende afbeelding ziet u scenario&#39;s voor het gebruik van het volledige installatieprogramma en het patchinstallatieprogramma.
 
-![Volledig installatieprogramma en patchinstallatieprogramma](/help/forms/using/assets/full-and-patch-installer.png)
+![ Volledige Installateur en de Installateur van het Patch ](/help/forms/using/assets/full-and-patch-installer.png)
 
-Zie de [AEM 6.5 installatie-instructies voor Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) artikel om het nieuwste Service Pack voor JEE-omgeving te installeren.
+Verwijs naar [ AEM 6.5 Forms Service Pack installatie instructies ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) artikel om het recentste Service Pack voor milieu te installeren JEE.
 
 <!--
 [Work in Progress]

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # XCI-configuratieopties opgeven {#specify-xci-configuration-options}
 
-Met Output kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. Zie [Bestandslocaties voor uitvoer opgeven](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
+Met Output kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. Zie [ dossierplaatsen voor Output ](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output) specificeren.
 
 Standaard overschrijft Output enkele opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
 
@@ -29,6 +29,6 @@ Standaard overschrijft Output enkele opties die in het XCI-bestand zijn opgegeve
 
 U kunt opties selecteren waarmee de overschrijving voor de bovenstaande opties wordt geannuleerd. In dat geval gebruikt Output de waarden die zijn opgegeven in het aangepaste XCI-bestand.
 
-1. Klik in de beheerconsole op **Services** > uitvoer.
+1. In beleidsconsole, klik **Diensten** > output.
 1. Schakel het selectievakje Systeemstandaard XCI-opties gebruiken in of uit. Wanneer deze optie is geselecteerd, gebruikt Output de standaardwaarden voor de pakketten, de maker, de producent en de compressObjectStream-instellingen. Als deze optie is uitgeschakeld, gebruikt Output de waarden die zijn opgegeven in het aangepaste XCI-bestand.
-1. Klikken **Opslaan**.
+1. Klik **sparen**.

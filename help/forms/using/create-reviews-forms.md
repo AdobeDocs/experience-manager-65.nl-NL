@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Revisies maken en beheren op formulieren{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html) |
 | AEM 6,5 | Dit artikel |
 
 ## Controleren {#review}
@@ -32,15 +32,15 @@ Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op formu
 ## Een revisie instellen {#setting-up-a-review}
 
 1. Navigeer naar de browser met formulieren en selecteer een formulier dat u wilt bekijken.
-1. Als het formulier geen revisie heeft, wordt een **Revisie starten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) wordt weergegeven op de actiebalk. Klik op de knop **Revisie starten** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) pictogram.
+1. Als de Vorm geen overzicht lopend heeft, verschijnt het a **Overzicht van het Begin** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogram in de bar van de Actie. Klik het **Overzicht van het Begin** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogram.
 1. Voer de volgende gegevens in:
 
-   * **Titel**: Verplicht, kan alfanumerieke tekens, afbreekstreepje en onderstrepingsteken bevatten.
-   * **Beschrijving**: Optioneel, beschrijving van het doel/de inhoud voor revisie.
-   * **Deadline**: Optioneel, de datum waarop de revisie wordt beëindigd. Als de deadline is verstreken, wordt de taak weergegeven als &#39;Achterstallig&#39;.
-   * **Naam revisor**: Een minimum van één is verplicht. Voeg revisoren toe in het keuzemenu met het invoervak, typ een naamlijst van alle overeenkomende namen. Selecteer een naam en klik op **Toevoegen**. In het volgende gedeelte van het dialoogvenster **Revisoren** wordt de naam van alle controleurs weergegeven.
+   * **Titel**: Verplicht, kan alfanumerieke karakters, koppelteken, en onderstrepingsteken bevatten.
+   * **Beschrijving**: Facultatieve, beschrijving van het doel/de inhoud voor overzicht.
+   * **Deadline**: Facultatief, de datum waarop de overzicht beëindigt. Als de deadline is verstreken, wordt de taak weergegeven als &#39;Achterstallig&#39;.
+   * **Naam van de Recensent**: Een minimum van één is verplicht. gebruik combodoos om recensenten toe te voegen, typend een naamlijst van alle passende namen; selecteer een naam en klik **toevoegen**. Op de volgende sectie van het **lusje van Revisoren** toont de naam van alle recensenten.
 
-1. Klik op de knop **Start** om een revisie te starten.
+1. Klik het **Begin** om een overzicht te beginnen.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 1. Er wordt een nieuwe revisietaak gemaakt en toegewezen aan de geselecteerde revisor.
 1. Aan alle revisoren wordt een controletaak toegewezen. De taak wordt weergegeven in de sectie Meldingen. Een revisor kan op een melding klikken of naar het Postvak In gaan om de taak te bekijken. Een revisor kan op deze knop klikken om de revisietaak te openen, het formulier weer te geven en opmerkingen toe te voegen.
 
-   ![Waarschuwing revisormelding](assets/review-notification-img.png)
+   ![ Waarschuwing van het Bericht van de Recensent ](assets/review-notification-img.png)
 
    Waarschuwing revisormelding
 
@@ -69,34 +69,34 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 
 1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
 
-1. Als een formulier een revisie heeft die wordt uitgevoerd en u de aanvrager van de revisie bent, kunt u een **Revisie beheren** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) worden weergegeven in de actiebalk. Alleen revisieaanvrager kan de revisie beheren (Bijwerken/beëindigen).
+1. Als een vorm een overzicht in uitvoering heeft en u initiator van het overzicht bent, a **beheert revisie** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogrammen verschijnt in de bar van de Actie. Alleen revisieaanvrager kan de revisie beheren (Bijwerken/beëindigen).
 
-   Klik op de knop **Revisie beheren** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)pictogram.
+   Klik **leiden het Overzicht** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogram.
 
    Voor andere gebruikers dan de aanvrager is het pictogram Revisie beheren uitgeschakeld.
 
 1. Nu krijgt u een scherm dat informatie toont:
 
-   * **Revisienaam**: Kan niet worden bewerkt.
+   * **naam van het Overzicht**: Kan niet worden uitgegeven.
 
-   * **Beschrijving bekijken**: Beschikbaar voor bewerken.
+   * **beschrijving van het Overzicht**: Beschikbaar voor het uitgeven.
 
-   * **Herzieningstermijn**: Beschikbaar voor bewerken. U kunt de deadline wijzigen in elke datum en tijd na de huidige datum en tijd.
+   * **deadline van het Overzicht**: Beschikbaar voor het uitgeven. U kunt de deadline wijzigen in elke datum en tijd na de huidige datum en tijd.
 
-   * **Revisoren**: Beschikbaar voor bewerken. U kunt revisoren toevoegen of verwijderen. Als een taak te laat is, kunt u revisoren pas toevoegen nadat de deadline is verlengd na de huidige datum.
+   * **Recensenten**: Beschikbaar voor het uitgeven. U kunt revisoren toevoegen of verwijderen. Als een taak te laat is, kunt u revisoren pas toevoegen nadat de deadline is verlengd na de huidige datum.
 
-1. Klik op **Einde**.
+1. Om de revisie te beëindigen, klik **Eind**.
 
 ### Handelingen die worden uitgevoerd wanneer een revisie wordt gewijzigd {#actions-that-occur-when-a-review-is-modified}
 
-In deze sectie wordt beschreven wat er gebeurt met **Bijwerken/beëindigen controleren**:
+Deze sectie beschrijft wat op **Update/Eind van het Overzicht** gebeurt:
 
 1. Als de revisiebeschrijving wordt gewijzigd, worden de bijbehorende taak van de revisoren en de aanvrager bijgewerkt.
 1. Als de deadline van de revisie wordt gewijzigd, wordt de bijbehorende taak voor de revisoren bijgewerkt met de nieuwe datum.
 
 1. Als een revisor wordt verwijderd:
 
-   ![Een revisor verwijderen](assets/removeduser.png)
+   ![ Verwijderend een recensent ](assets/removeduser.png)
 
    Een revisor verwijderen
 
@@ -105,7 +105,7 @@ In deze sectie wordt beschreven wat er gebeurt met **Bijwerken/beëindigen contr
 
 1. Als een controleur wordt toegevoegd:
 
-   ![Een revisor toevoegen](assets/addedreviewer.png)
+   ![ Toevoegend een recensent ](assets/addedreviewer.png)
 
    Een revisor toevoegen
 
@@ -114,8 +114,8 @@ In deze sectie wordt beschreven wat er gebeurt met **Bijwerken/beëindigen contr
 
 1. Wanneer een revisie wordt beëindigd:
 
-   1. **Revisoren**: Voor elke controleur wordt de onvolledige taak met betrekking tot de revisie beëindigd. De taak wordt niet meer weergegeven als &#39;In behandeling&#39; in de sectie Meldingen van de controleur.
-   1. **Initiator**: De taak die is toegewezen aan de aanvrager van de revisie is gemarkeerd als voltooid. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
-   1. **Alles**: De revisie wordt weergegeven in de sectie Vorige revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
+   1. **Recensenten**: Voor elke recensent, wordt de onvolledige taak met betrekking tot het overzicht geëindigd. De taak wordt niet meer weergegeven als &#39;In behandeling&#39; in de sectie Meldingen van de controleur.
+   1. **Initiator**: De taak die aan de initiatiefnemer van het Overzicht wordt toegewezen is duidelijk volledig. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
+   1. **allen**: De revisie verschijnt in de Vorige sectie van Revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
 
-   ![revisie voltooid](assets/review-complete-imgg.png)
+   ![ volledige overzicht ](assets/review-complete-imgg.png)

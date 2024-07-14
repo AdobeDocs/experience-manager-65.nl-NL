@@ -27,16 +27,16 @@ Wanneer u een formulier invult en verzendt, wordt het formulier direct naar de A
 
 Wanneer u online bent met de AEM Forms-server, wordt uw app standaard elke 15 minuten gesynchroniseerd. U kunt de synchronisatiefrequentie echter wijzigen. U kunt de app ook op elk gewenst moment handmatig synchroniseren.
 
-**De app handmatig synchroniseren**
+**app manueel synchroniseren**
 
-Selecteer de knop Synchroniseren ![sync-app](assets/sync-app.png) in de rechterbenedenhoek van het beginscherm.
+Selecteer de Synchronize knoop ![ synchronisatie-app ](assets/sync-app.png) bij de laag-juiste hoek van het huisscherm.
 
-**De synchronisatiefrequentie wijzigen**
+**om de synchronisatiefrequentie** te veranderen
 
-1. Als u naar het scherm Instelling wilt gaan, selecteert u de menuknop in de linkerbovenhoek van het scherm Home en selecteert u **Instellingen**.
+1. Om naar het Plaatsende scherm te gaan, selecteer de menuknoop bij de upper-left hoek van het scherm van het Huis, en selecteer dan **Montages**.
 1. Selecteer het tabblad Algemeen in het scherm Instellingen.
 
-   ![Frequentie-instelling synchroniseren in venster Algemene instellingen](assets/gen-settings-2.png)
+   ![ de frequentie die van de Synchronisatie in het Algemene venster van Montages plaatst ](assets/gen-settings-2.png)
 
 1. Selecteer bij de optie Synchronisatiefrequentie de waarde rechts van Synchronisatiefrequentie.
 1. Selecteer de nieuwe synchronisatiefrequentie in de vervolgkeuzelijst.

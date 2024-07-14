@@ -26,21 +26,21 @@ ht-degree: 0%
 >
 >Het wordt afgeraden de werkelijke componenten die in de fragmenteditor worden gebruikt, uit te breiden of te wijzigen, omdat deze nog steeds kunnen worden gewijzigd.
 
-Zie de [Content Fragment Management API - Client-kant](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
+Zie het [ Beheer API van het Fragment van de Inhoud - cliënt-kant ](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
 ## Componenten voor paginaontwerp {#components-for-page-authoring}
 
 >[!CAUTION]
 >
->De [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) wordt nu aanbevolen. Zie [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer informatie .
+>De [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) wordt nu geadviseerd. Zie [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer details.
 >
->In deze sectie wordt de oorspronkelijke component beschreven die is geleverd voor gebruik met inhoudsfragmenten (**Inhoudsfragment** in de **Algemeen** groep).
+>Deze sectie detailleert de originele die component voor gebruik met inhoudsfragmenten (**wordt geleverd het Fragment van de Inhoud** in de **Algemene** groep).
 
 >[!NOTE]
 >
->Zie ook [Inhoudsfragmenten die componenten voor rendering configureren](/help/sites-developing/content-fragments-config-components-rendering.md) voor nadere informatie.
+>Zie ook [ de Fragmenten die van de Inhoud Componenten vormen voor het Teruggeven ](/help/sites-developing/content-fragments-config-components-rendering.md) voor verdere informatie.
 
-Adobe Experience Manager (AEM)-inhoudsfragmenten zijn [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s](/help/sites-authoring/content-fragments.md). U kunt ook een bestaand inhoudsfragmentelement gebruiken door [het slepen van middelenbrowser naar pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (zoals voor andere op activa-gebaseerde componenten, zoals het stichtingscomponentenbeeld). De inhoud van het inhoudsfragmentcomponent uit de doos toont slechts één [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het inhoudsfragment waarnaar wordt verwezen. Met behulp van het componentdialoogvenster kunt u het dialoogvenster [element, variatie en bereik van fragmentalinea&#39;s](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) die u op de pagina wilt weergeven.
+Adobe Experience Manager (AEM) inhoudsfragmenten worden [ gecreeerd en geleid als pagina-onafhankelijke activa ](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [ u kunt deze fragmenten, en hun variaties dan gebruiken, wanneer het ontwerpen van uw inhoudspagina&#39;s ](/help/sites-authoring/content-fragments.md). U kunt een bestaand element van het inhoudsfragment ook gebruiken door het van activa browser aan pagina ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) te slepen (zoals voor andere op activa-gebaseerde componenten, zoals het Beeld van de stichtingscomponent). [ De uit-van-de-doos component van het inhoudsfragment toont slechts één [ element ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het referenced inhoudsfragment. Gebruikend de componentendialoog kunt u het [ element, de variatie en de waaier van fragmentparagrafen ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) bepalen die u op de pagina wilt tonen.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Adobe Experience Manager (AEM)-inhoudsfragmenten zijn [gemaakt en beheerd als pa
 
 ### Definitie {#definition}
 
-De **Inhoudsfragment** wordt gebruikt om een verwijzing naar een inhoudsfragmentelement (effectief verbeterde tekstelementen) te bevatten. Het middeltype voor het inhoudsfragment is:
+De **component van het Fragment van 0} Inhoud {wordt gebruikt om een verwijzing naar een activa van het inhoudsfragment (effectief verbeterde tekstactiva) te houden.** Het middeltype voor het inhoudsfragment is:
 
 `dam/cfm/components/contentfragment/contentfragment`
 
@@ -68,7 +68,7 @@ Deze bibliotheek voegt eigenschappen, specifiek voor inhoudsfragmenten, aan de r
 
 ### Tussen inhoud {#in-between-content}
 
-De **Inhoudskader** Hiermee kunt u extra componenten tussen de verschillende alinea&#39;s van het weergegeven [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
+De **Fragmen van de Inhoud** geen component laat u extra componenten binnen-tussen de verschillende paragrafen van het getoonde [ element ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) dalen. In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
 
 Vanuit technisch gezichtspunt, leeft elke paragraaf van het getoonde element in zijn eigen parsys, en elke component die u tussen de paragrafen toevoegt wordt (onder de kap) opgenomen in parsys.
 
@@ -104,15 +104,15 @@ Als u de uit-van-de-doos component van het inhoudsfragment als blauwdruk voor ui
 * U kunt het HTML-renderingsscript en de bijbehorende POJO opnieuw gebruiken, zodat u kunt zien hoe de functie voor de tussenliggende inhoud is geïmplementeerd.
 * Het knooppunt voor inhoudsfragmenten opnieuw gebruiken: `cq:editConfig`
 
-   * De `afterinsert`/ `afteredit`/ `afterdelete` listeners worden gebruikt om JS-gebeurtenissen te activeren. Deze gebeurtenissen worden verwerkt in het dialoogvenster `cq.authoring.editor.plugin.cfm` clientbibliotheek om de bijbehorende inhoud in het zijpaneel weer te geven.
-   * De `cq:dropTargets` zijn geconfigureerd voor het slepen van inhoud van fragmentelementen.
-   * `cq:inplaceEditing` is geconfigureerd ter ondersteuning van het ontwerpen van een inhoudsfragment in de pagina-editor. De fragmentbewerker ter plekke wordt gedefinieerd in het dialoogvenster `cq.authoring.editor.plugin.cfm` clientbibliotheek en maakt een snelle koppeling mogelijk om de huidige [element/variatie](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) in de [fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md).
+   * De listeners `afterinsert`/ `afteredit`/ `afterdelete` worden gebruikt om JS-gebeurtenissen te activeren. Deze gebeurtenissen worden verwerkt in de `cq.authoring.editor.plugin.cfm` clientbibliotheek om de bijbehorende inhoud in het zijpaneel weer te geven.
+   * De `cq:dropTargets` zijn geconfigureerd voor het slepen van inhoudsfragmentelementen.
+   * `cq:inplaceEditing` is geconfigureerd voor ondersteuning van het ontwerpen van een inhoudsfragment in de pagina-editor. De fragment op zijn plaats redacteur wordt bepaald in de `cq.authoring.editor.plugin.cfm` cliëntbibliotheek en staat een snelle verbinding toe om het huidige [ element/de variatie ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) in de [ fragmentredacteur ](/help/assets/content-fragments/content-fragments-variations.md) te openen.
 
 ### Herschrijven van element vóór renderen {#asset-rewriting-before-rendering}
 
 Bij Inhoudsfragmentbeheer wordt een intern renderingsproces gebruikt om de uiteindelijke HTML-uitvoer voor een pagina te genereren. Dit wordt intern gebruikt door de component van het Fragment van de Inhoud, maar ook door het achtergrondproces dat referenced fragmenten op het van verwijzingen voorzien pagina&#39;s bijwerkt.
 
-Intern wordt de Sling Rewriter gebruikt voor die rendering. De respectievelijke configuratie is te vinden op `/libs/dam/config/rewriter/cfm` en kan zo nodig worden aangepast. Zie de [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) voor meer informatie .
+Intern wordt de Sling Rewriter gebruikt voor die rendering. De respectievelijke configuratie vindt u in `/libs/dam/config/rewriter/cfm` en kan, indien nodig, worden aangepast. Zie [ Apache Sling Rewriter ](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) voor meer informatie.
 
 >[!CAUTION]
 >
@@ -120,15 +120,15 @@ Intern wordt de Sling Rewriter gebruikt voor die rendering. De respectievelijke 
 >
 >* `/libs/dam/config/rewriter/cfm`
 >
->Vervolgens worden de `serializerType` **moet** worden bijgewerkt naar:
+>Dan moet `serializerType` **** worden bijgewerkt aan:
 >
 >* `serializerType="html5-serializer"`
 
 De uit-van-de-doos configuratie gebruikt de volgende transformatoren:
 
-* `transformer-cfm-payloadfilter` - voor het ophalen van de `body` deel ( `<body>...</body>`) van alleen de HTML van het fragment
+* `transformer-cfm-payloadfilter` - alleen voor het ophalen van het `body` deel ( `<body>...</body>` ) van de HTML van het fragment
 
 * `transformer-cfm-parfilter` - filtert ongewenste alinea&#39;s uit als er een alineabereik is opgegeven (zoals u kunt doen met de component Content Fragment)
-* `transformer-cfm-assetprocessor` - intern wordt gebruikt voor het ophalen van een lijst met elementen die zijn ingesloten in het fragment
+* `transformer-cfm-assetprocessor` - wordt intern gebruikt voor het ophalen van een lijst met elementen die in het fragment zijn ingesloten
 
-Het renderingsproces wordt via [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) en kan, indien nodig, worden gebruikt (bijvoorbeeld) door aangepaste componenten.
+Het renderingsproces wordt blootgesteld door [`com.adobe.cq.dam.cfm.content.FragmentRenderService` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) en kan (bijvoorbeeld) door douanecomponenten, indien nodig worden gebruikt.

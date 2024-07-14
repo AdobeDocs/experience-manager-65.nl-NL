@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Connector configureren voor IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM formulieren en IBM FileNet. Zie &quot;Connectors for ECM&quot; in [Servicereferentie](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM formulieren en IBM FileNet. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -41,8 +41,8 @@ IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijf
 
 1. Selecteer een van de volgende beveiligingsniveaus in de lijst Referentiebeschermingsregeling:
 
-   * **Wissen:** Verzendt gegevens in een niet-beveiligde modus via het netwerk
-   * **Symmetrisch:** Verzendt gecodeerde gegevens via het netwerk
+   * **Duidelijk:** verzendt geloofsbrieven over het netwerk op een niet beschermde wijze
+   * **Symmetrisch:** verzendt gecodeerde geloofsbrieven over het netwerk
 
 1. Voer in het vak Locatie van versleutelingsbestand het pad naar het versleutelingsbestand in:
 
@@ -79,11 +79,11 @@ U kunt configureren welke serviceprovider voor gegevensopslag moet worden gebrui
 
 De volgende opties zijn beschikbaar:
 
-**Huidige naam leverancier van opslagplaats:** De naam van de huidige aanbieder van datadiensten
+**Huidige Naam van de Leverancier van de Bewaarplaats:** De naam van de huidige dienstverlener van de bewaarplaats
 
-**IBM FileNet Repository Provider:** Maakt van de aanbieder van de FileNet-opslagplaats de provider voor de opslagplaats. Deze optie is vervangen.
+**de Leverancier van de Bewaarplaats van IBM FileNet:** maakt de leverancier van de bewaarplaats FileNet de leverancier voor de bewaarplaats. Deze optie is vervangen.
 
-**aanbieder opslagplaats:** Maakt van de native opslagprovider de provider voor de opslagplaats
+**leverancier van de bewaarplaats:** maakt de inheemse leverancier van de bewaarplaats de leverancier voor de bewaarplaats
 
 >[!NOTE]
 >

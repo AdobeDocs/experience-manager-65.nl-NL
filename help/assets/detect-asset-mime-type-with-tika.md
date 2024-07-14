@@ -1,6 +1,6 @@
 ---
 title: MIME-type van activa detecteren met Apache Tika
-description: Apache Tika inschakelen om te helpen [!DNL Experience Manager Assets] detecteer het MIME-type van elementen van de inhoudsstroom tijdens het uploaden in plaats van de bestandsextensie.
+description: Laat Tika Apache toe helpen  [!DNL Experience Manager Assets]  het MIME type van activa van de inhoudsstroom tijdens uploadt verrichting in plaats van de dossieruitbreiding ontdekken.
 contentOwner: AG
 role: Admin, Architect
 feature: Metadata,Developer Tools,Asset Management
@@ -15,22 +15,22 @@ ht-degree: 0%
 
 # MIME-type van elementen detecteren met [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normaal gesproken, [!DNL Adobe Experience Manager Assets] detecteert het MIME-type elementen dat u uploadt vanuit de bestandsextensie.
+Normaal gesproken detecteert [!DNL Adobe Experience Manager Assets] het MIME-type van elementen die u uploadt vanuit de bestandsextensie.
 
-Als u [!DNL Apache Tika] om elementen te uploaden, [!DNL Assets] detecteert het MIME-type van de inhoud tijdens het uploaden in plaats van de bestandsextensie.
+Als u [!DNL Apache Tika] gebruikt om elementen te uploaden, detecteert [!DNL Assets] het MIME-type van de inhoudsstroom tijdens het uploaden in plaats van de bestandsextensie.
 
-Deze functie is standaard uitgeschakeld. Om de eigenschap toe te laten, vorm **[!UICONTROL Day CQ DAM Mime Type]** service van [!UICONTROL Configuration Manager].
+Deze functie is standaard uitgeschakeld. Als u deze functie wilt inschakelen, configureert u de service **[!UICONTROL Day CQ DAM Mime Type]** vanuit [!UICONTROL Configuration Manager] .
 
 >[!NOTE]
 >
->MIME-typedetectie met behulp van [!DNL Apache Tika] bibliotheek is een hulpbronnenintensieve bewerking.
+>MIME-typedetectie met behulp van de [!DNL Apache Tika] -bibliotheek is een resource-intensieve bewerking.
 
 1. Om de Webconsole van de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 
-1. Van de lijst van de diensten, bepaal **[!UICONTROL Day CQ DAM Mime Type Service]** en klik op **[!UICONTROL Edit]**.
+1. Zoek **[!UICONTROL Day CQ DAM Mime Type Service]** in de lijst met services en klik op **[!UICONTROL Edit]** .
 
-1. Selecteer de **[!UICONTROL Detect MIME from content]** optie om het parseren van geüploade elementen in staat te stellen hun MIME-type te bepalen terwijl bestandsextensies worden genegeerd. Deze optie is standaard uitgeschakeld.
+1. Selecteer de optie **[!UICONTROL Detect MIME from content]** om het parseren van geüploade elementen in te schakelen om het MIME-type te bepalen terwijl bestandsextensies worden genegeerd. Deze optie is standaard uitgeschakeld.
 
-   ![chlimage_1-333](assets/chlimage_1-333.png)
+   ![ chlimage_1-333 ](assets/chlimage_1-333.png)
 
-1. Klikken **[!UICONTROL Save]** om de wijzigingen op te slaan
+1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.

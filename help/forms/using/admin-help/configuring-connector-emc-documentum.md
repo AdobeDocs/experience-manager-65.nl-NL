@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Connector configureren voor EMC Documentum {#configuring-connector-for-emc-documentum}
 
-Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM formulieren en EMC Documentum. Zie &quot;Connectors for ECM&quot; in [Servicereferentie](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM formulieren en EMC Documentum. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Bij het instellen van een connector voor EMC Documentum moeten de serververbinding en de gegevens van de opslagplaats worden geconfigureerd.
 
@@ -60,11 +60,11 @@ Als u een onjuiste gebruikersnaam of een onjuist wachtwoord invoert, krijgt u de
 
 U kunt configureren welke repository service provider moet worden gebruikt met Documentum. De de dienstvraag van de bewaarplaats wordt gedelegeerd aan de leverancier u vormt. De volgende opties zijn beschikbaar:
 
-**Huidige naam leverancier van serviceleverancier in opslagplaats:** De naam van de huidige aanbieder van datadiensten
+**Huidige Naam van de Dienstverlener van de Bewaarplaats:** De naam van de huidige leverancier van de bewaarplaats
 
-**ECM Documentum Repository Provider:** Maakt van de Documentum repository provider de provider voor de repository. Deze optie is vervangen
+**ECM Documentum Repository Provider:** maakt van de Documentum repository provider de provider voor de repository. Deze optie is vervangen
 
-**aanbieder opslagplaats:** Maakt van de native opslagprovider de provider voor de opslagplaats
+**leverancier van de bewaarplaats:** maakt de inheemse leverancier van de bewaarplaats de leverancier voor de bewaarplaats
 
 >[!NOTE]
 >
@@ -102,9 +102,9 @@ Als de Content Repository Connector voor EMC Documentum Service en/of de Reposit
 
 Als de Content Repository Connector voor EMC Documentum Service en/of de Repository Service voor EMC Documentum wordt uitgevoerd, wordt de referentie-informatie geverifieerd op basis van de opgegeven repository voordat deze in de database wordt opgeslagen. Als de referenties ongeldig zijn of bestaan, wordt een foutbericht weergegeven.
 
-## Verzoek om delen van werkruimtetaakrijen inschakelen {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Verzoek om delen van Workspace-taakwachtrijen inschakelen {#enable-the-request-for-sharing-of-workspace-task-queues}
 
-Er zijn enkele handmatige stappen vereist om ervoor te zorgen dat de functie Verzoek om delen van taakwachtrij in Workspace correct functioneert met Connector voor EMC Documentum.
+Er zijn enkele handmatige stappen vereist om ervoor te zorgen dat de functie Aanvragen voor delen van taakwachtrij in Workspace correct functioneert met Connector voor EMC Documentum.
 
 1. Nadat AEM formulieren zijn geïmplementeerd en Workbench is geïnstalleerd, meldt u zich aan bij Workbench en opent u de weergave Bronnen. U bepaalt waar het bestand QueueSharing.swf zich in deze weergave bevindt.
 1. Sleep het bestand QueueSharing.swf van de Bronweergave naar het bureaublad van Windows of een equivalente locatie, afhankelijk van uw besturingssysteem.

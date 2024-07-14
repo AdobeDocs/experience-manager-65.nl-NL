@@ -1,5 +1,5 @@
 ---
-title: Barcoded Forms Service Java&trade; API Quick Start (SOAP)
+title: Barcoded Forms Service Java&trade; API Quick Start(SOAP)
 description: Leer hoe de Barcoded Forms Service Java&trade; API Quick Start (SOAP) in AEM Forms een naadloze verwerking van streepjescodes mogelijk maakt.
 contentOwner: admin
 content-type: reference
@@ -26,11 +26,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss® Application Server en het Microsoft® Windows besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss® Application Server en het Microsoft® Windows besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): gecodeerde formuliergegevens decoderen met de Java™ API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-De volgende Java™-code decodeert formuliergegevens in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` object in een `com.adobe.idp.Document` object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+De volgende Java™-code decodeert formuliergegevens in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` -object omgezet in een `com.adobe.idp.Document` -object. (Zie [ Decoderend Gecodeerde Gegevens van de Vorm ](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -219,4 +219,4 @@ De volgende Java™-code decodeert formuliergegevens in een PDF-formulier dat is
 
 >[!NOTE]
 >
->Wanneer u zowel een `org.w3c.dom.Document` object en `com.adobe.idp.Document` in dezelfde toepassingslogica, is het een goede gewoonte om beide objecten volledig te kwalificeren.
+>Wanneer u zowel een `org.w3c.dom.Document` -object als een `com.adobe.idp.Document` -object in dezelfde toepassingslogica gebruikt, is het aan te raden beide objecten volledig te kwalificeren.

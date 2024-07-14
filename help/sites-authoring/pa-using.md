@@ -22,9 +22,9 @@ Gebruik pagina-analysegegevens om de doeltreffendheid van de pagina-inhoud te me
 
 ## Analyse zichtbaar vanuit de console {#analytics-visible-from-the-console}
 
-![aa-10](assets/aa-10.png)
+![ a-10 ](assets/aa-10.png)
 
-Paginaanalysegegevens worden weergegeven in [Lijstweergave](/help/sites-authoring/basic-handling.md#list-view) van de Sites-console. Wanneer de pagina&#39;s in lijstformaat worden getoond, zijn de volgende kolommen beschikbaar door gebrek:
+De analysegegevens van de pagina worden getoond in [ Mening van de Lijst ](/help/sites-authoring/basic-handling.md#list-view) van de console van Plaatsen. Wanneer de pagina&#39;s in lijstformaat worden getoond, zijn de volgende kolommen beschikbaar door gebrek:
 
 * Paginaweergaven
 * Unieke bezoekers
@@ -34,14 +34,14 @@ In elke kolom wordt een waarde voor de lopende rapportageperiode weergegeven en 
 
 >[!NOTE]
 >
->U wijzigt de updateperiode als volgt: [het importinterval configureren](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Om de updateperiode te veranderen, [ vorm het de invoerinterval ](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Open de **Sites** console; bijvoorbeeld [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. Rechtsboven op de werkbalk (in de rechterbovenhoek) klikt u op het pictogram om het te selecteren **Lijstweergave** (het weergegeven pictogram is afhankelijk van het [huidige weergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Open de **console van Plaatsen**; bijvoorbeeld, [ http://localhost:4502/sites.html/content ](http://localhost:4502/sites.html/content)
+1. In het uiterste recht van de toolbar (hoger-juiste hoek), klik het pictogram om **Mening van de Lijst** te selecteren (het getoonde pictogram zal van de [ huidige mening ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) afhangen).
 
-1. Nogmaals, uiterst rechts op de werkbalk (rechterbovenhoek), klikt u op het pictogram en selecteert u **Instellingen weergeven**. De **Kolommen configureren** wordt geopend. Breng vereiste wijzigingen aan en bevestig deze met **Bijwerken**.
+1. Opnieuw, in het uiterste recht van de toolbar (hoger-juiste hoek), klik het pictogram dan selecteren **Montages van de Mening**. Het **vormt de dialoog van Kolommen** opent. Breng om het even welke vereiste veranderingen aan en bevestig met **Update**.
 
-   ![aa-04](assets/aa-04.png)
+   ![ a-04 ](assets/aa-04.png)
 
 ### De rapportageperiode selecteren {#selecting-the-reporting-period}
 
@@ -52,7 +52,7 @@ Selecteer de rapportperiode waarvoor de gegevens van Analytics op de console van
 * Gegevens van dit jaar
 
 De huidige rapportageperiode wordt weergegeven op de werkbalk van de Sites-console (rechts van de bovenste werkbalk). Gebruik de vervolgkeuzelijst om de vereiste rapportageperiode te selecteren.
-![aa-05](assets/aa-05.png)
+![ a-05 ](assets/aa-05.png)
 
 ### Beschikbare gegevenskolommen configureren {#configuring-available-data-columns}
 
@@ -62,78 +62,78 @@ Leden van de analytische-beheerders gebruikersgroep kunnen de console van Plaats
 >
 >Wanneer een boomstructuur met pagina&#39;s onderliggende elementen bevat die zijn gekoppeld aan verschillende Adobe Analytics-wolkenconfiguraties, kunt u de beschikbare gegevenskolommen voor de pagina&#39;s niet configureren.
 
-1. Gebruik in de lijstweergave de weergavekiezers (rechts van de werkbalk) en selecteer **Instellingen weergeven** en vervolgens **Aangepaste analysegegevens toevoegen**.
+1. In de Mening van de Lijst, gebruik de meningsselecteurs (recht van toolbar), de uitgezochte **Montages van de Mening** en dan **voegt de Gegevens van de Analyse van de Douane** toe.
 
-   ![aa-15](assets/aa-15.png)
+   ![ a-15 ](assets/aa-15.png)
 
-1. Selecteer de metriek die u aan auteurs in de console van Plaatsen wilt blootstellen, en dan klikken **Toevoegen**.
+1. Selecteer de metriek die u aan auteurs in de console van Plaatsen wilt blootstellen, en dan **toevoegen** klikken.
 
    De kolommen die worden weergegeven, worden opgehaald uit Adobe Analytics.
 
-   ![aa-16](assets/aa-16.png)
+   ![ a-16 ](assets/aa-16.png)
 
 ### Inhoudsgegevens van sites openen {#opening-content-insights-from-sites}
 
-Openen [Inhoudsinzicht](/help/sites-authoring/content-insights.md) van de console van Plaatsen om paginadoeltreffendheid verder te onderzoeken.
+Open [ Inzicht van de Inhoud ](/help/sites-authoring/content-insights.md) van de console van Plaatsen om paginadoeltreffendheid verder te onderzoeken.
 
 1. Selecteer in de Sites-console de pagina waarvoor u Inhoudsgegevens wilt weergeven.
 1. Klik op het pictogram Analytics en Recommendations op de werkbalk.
 
-   ![Pictogram Analytics en Recommendations](do-not-localize/chlimage_1-16a.png)
+   ![ Analytics en het pictogram van Recommendations ](do-not-localize/chlimage_1-16a.png)
 
 ## Analyses zichtbaar in de Pagina-editor (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
->Dit wordt getoond als [Activity Map is geconfigureerd](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) voor uw website.
+>Dit wordt getoond als de [ Activity Map ](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) voor uw website is gevormd.
 
 >[!NOTE]
 >
 >Gegevens voor de Activity Map zijn afkomstig uit Adobe Analytics.
 
-Wanneer uw website [geconfigureerd voor Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), kunt u de [modus Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) om relevante gegevens te bekijken. Bijvoorbeeld:
+Wanneer uw website [ voor Adobe Analytics ](/help/sites-administering/adobeanalytics-connect.md) is gevormd, kunt u de [ wijze Activity Map ](/help/sites-authoring/author-environment-tools.md#page-modes) gebruiken om relevante gegevens te bekijken. Bijvoorbeeld:
 
-![aa-07](assets/aa-07.png)
+![ a-07 ](assets/aa-07.png)
 
 ### Toegang tot de Activity Map {#accessing-the-activity-map}
 
-Na het selecteren van [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) wordt u gevraagd uw Adobe Analytics-gegevens in te voeren.
+Na het selecteren van de [ Activity Map ](/help/sites-authoring/author-environment-tools.md#page-modes) wijze, zult u worden gevraagd om uw geloofsbrieven van Adobe Analytics in te gaan.
 
-![aa-03](assets/aa-03.png)
+![ a-03 ](assets/aa-03.png)
 
-De **Analyse** zwevende werkbalk wordt weergegeven; hier kunt u het volgende doen:
+De **Analytics** drijvende toolbar wordt getoond; hier kunt u:
 
-* de werkbalkopmaak wijzigen met dubbele pijlen (**>>**)
+* verander het toolbarformaat gebruikend de dubbele pijlen (**>>**)
 * Paginadetails in-/uitschakelen (oogpictogram)
 * De Activity Map-instellingen configureren (cogopictogram)
 * Selecteer de analysefunctie die u wilt weergeven (verschillende keuzelijsten)
 * Sluit de Activity Map en sluit de werkbalk (x)
 
-![aa-09](assets/aa-09.png)
+![ a-09 ](assets/aa-09.png)
 
 ### De weer te geven analyse selecteren {#selecting-the-analytics-to-show}
 
 U kunt aan de hand van de verschillende criteria bepalen welke analysegegevens moeten worden weergegeven en hoe deze moeten worden weergegeven:
 
-* **Standaard**/**Live**
+* **Norm**/**Levend**
 
 * gebeurtenistype
 * gebruikersgroep
-* **Luchtbellen**/**Verloop**/**Gainers en Losers**/**Uit**
+* **Bubbles**/**Verloop**/**Gainers &amp; Gebruikers**/**weg**
 
 * te tonen periode
 
-![aa-13](assets/aa-13.png)
+![ a-13 ](assets/aa-13.png)
 
 ### De Activity Map configureren {#configuring-the-activity-map}
 
-Gebruik de **Instellingen tonen** pictogram om het **Activity Map-instellingen** in.
+Gebruik **toon het pictogram van Montages** om de **dialoog van de Montages van de Activity Map** te openen.
 
-![aa-04-1](assets/aa-04-1.png)
+![ a-04-1 ](assets/aa-04-1.png)
 
-De **Activity Map-instellingen** biedt een reeks opties op drie tabbladen:
+De **dialoog van de Montages van de Activity Map 0} {verstrekt een waaier van opties op drie lusjes:**
 
-![aa-06](assets/aa-06.png)
+![ a-06 ](assets/aa-06.png)
 
 * Algemeen
 

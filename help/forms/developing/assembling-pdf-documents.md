@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # PDF-documenten samenstellen {#assembling-pdf-documents}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
-**Over de Assembler Service**
+**Ongeveer de Dienst van de Assembler**
 
 De dienst van de Assembler kan veelvoudige documenten van PDF in één document van PDF samenvoegen of één document van PDF in veelvoudige documenten van PDF demonteren. Met de Assembler-service kunt u documenten op verschillende manieren bewerken, zoals het wijzigen van het paginaformaat en het roteren van inhoud. Het kan extra inhoud, zoals kopballen, footers, en een inhoudstafel opnemen, en kan bestaande inhoud, zoals annotaties, dossiergehechtheid, en referenties bewaren invoeren, invoeren of uitvoeren.
 
@@ -29,4 +29,4 @@ Vanaf LiveCycle ES 8.0 en later, is de steun voor de pakketten van de PDF beschi
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).

@@ -1,5 +1,5 @@
 ---
-title: Overzicht van werkruimte
+title: Overzicht van Workspace
 description: De werkruimte laat gebruikers beginnen, deelnemen aan, en bedrijfsprocessen volgen. Laten we meer weten over de werkruimte.
 contentOwner: admin
 content-type: reference
@@ -16,14 +16,14 @@ ht-degree: 0%
 
 ---
 
-# Overzicht van werkruimte {#overview-of-workspace}
+# Overzicht van Workspace {#overview-of-workspace}
 
 Met Workspace kunnen gebruikers bedrijfsprocessen starten, deelnemen en volgen.
 
-Op de pagina&#39;s van de Werkruimte in beleidsconsole, kunt u de volgende taken uitvoeren:
+Op de Workspace-pagina&#39;s in de beheerconsole kunt u de volgende taken uitvoeren:
 
-* Het bericht instellen dat moet worden weergegeven op de welkomstpagina van de gebruikersinterface van Workspace
-* Vorm onderzoeksmalplaatjes die in Werkruimte moeten worden gebruikt om naar processen en taken te zoeken
+* Het bericht instellen dat moet worden weergegeven op de welkomstpagina van de Workspace-gebruikersinterface
+* Zoeksjablonen configureren die in Workspace worden gebruikt om te zoeken naar processen en taken
 * Zoeksjablonen en algemene instellingen importeren en exporteren
 
 >[!NOTE]

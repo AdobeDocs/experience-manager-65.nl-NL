@@ -22,53 +22,53 @@ We.Retail is gebouwd met een geglobaliseerde sitestructuur die een taalmaster bi
 
 ## Uitproberen {#trying-it-out}
 
-1. De siteconsole openen vanuit **Algemene navigatie > Sites**.
+1. Open de plaatsenconsole van **Globale Navigatie > Plaatsen**.
 1. Schakelaar aan kolommening (als niet reeds actief) en selecteer Wij.Retail. Neem nota van de structuur van het voorbeeldland met Zwitserland, de Verenigde Staten, Frankrijk, etc., langs de Meester van de Taal.
 
-   ![chlimage_1-87](assets/chlimage_1-87a.png)
+   ![ chlimage_1-87 ](assets/chlimage_1-87a.png)
 
 1. Selecteer Zwitserland en bekijk de taalwortels voor de talen van dat land. Er is nog geen inhoud onder deze wortels.
 
-   ![chlimage_1-88](assets/chlimage_1-88a.png)
+   ![ chlimage_1-88 ](assets/chlimage_1-88a.png)
 
 1. Ga naar de lijstweergave en controleer of de taalkopieën voor de landen allemaal live kopieën zijn.
 
-   ![chlimage_1-89](assets/chlimage_1-89a.png)
+   ![ chlimage_1-89 ](assets/chlimage_1-89a.png)
 
 1. Ga terug naar de kolomweergave, klik op het stramien Taal en bekijk de hoofdwortels van de taal met inhoud. Alleen Engels heeft inhoud.
 
    Wij.Retail wordt niet geleverd met vertaalde inhoud, maar de structuur en configuratie zijn aanwezig om u de vertaalservices te laten demonstreren.
 
-   ![chlimage_1-90](assets/chlimage_1-90a.png)
+   ![ chlimage_1-90 ](assets/chlimage_1-90a.png)
 
-1. Selecteer de Engelse taalmaster en open het dialoogvenster **Verwijzingen** rail in de locatieconsole en selecteer **Taalkopieën**.
+1. Met de Engelse geselecteerde Meester van de Taal, open het **spoor van Verwijzingen in de plaatsenconsole en selecteer** Exemplaren van de Taal **.**
 
-   ![chlimage_1-91](assets/chlimage_1-91.png)
+   ![ chlimage_1-91 ](assets/chlimage_1-91.png)
 
-1. Schakel het selectievakje naast de optie **Taalkopieën** om alle taalkopieën te selecteren. In de **Taalkopieën bijwerken** van de spoorstaaf de optie om **Een nieuw vertaalproject maken**. Geef een naam op voor het project en klik op **Bijwerken**.
+1. Tik checkbox naast het **etiket van de Kopieën van de Taal 0} {om alle taalexemplaren te selecteren.** In de **de taalexemplaren van de Update** sectie van het spoor, selecteer de optie om **een nieuw vertaalproject** tot stand te brengen. Verstrek een naam voor het project en klik **Update**.
 
-   ![chlimage_1-92](assets/chlimage_1-92.png)
+   ![ chlimage_1-92 ](assets/chlimage_1-92.png)
 
-1. Voor elke taalvertaling wordt een project gemaakt. Bekijk ze onder **Navigation > Projecten**.
+1. Voor elke taalvertaling wordt een project gemaakt. Bekijk hen onder **Navigatie > Projecten**.
 
-   ![chlimage_1-93](assets/chlimage_1-93.png)
+   ![ chlimage_1-93 ](assets/chlimage_1-93.png)
 
-1. Klik op Duits om de details van het vertaalproject te bekijken. De status bevindt zich in **Concept**. Als u de vertaling wilt starten met de vertaalservice van Microsoft®, klikt u op het chevron naast de **Vertaaltaak** kop en selecteer **Start**.
+1. Klik op Duits om de details van het vertaalproject te bekijken. De status is in **Ontwerp**. Om de vertaling met de vertaaldienst van Microsoft® te beginnen, klik het hoofdstuk naast de **rubriek van de Baan van de Vertaling** en selecteer **Begin**.
 
-   ![chlimage_1-94](assets/chlimage_1-94.png)
+   ![ chlimage_1-94 ](assets/chlimage_1-94.png)
 
-1. Het vertaalproject begint. Klik op de ovaal onder aan de kaart met het label Vertaaltaak om de details weer te geven. Pagina&#39;s met de status **Gereed voor revisie** zijn al vertaald door de vertaaldienst.
+1. Het vertaalproject begint. Klik op de ovaal onder aan de kaart met het label Vertaaltaak om de details weer te geven. De pagina&#39;s met de staat **Klaar voor overzicht** zijn reeds vertaald door de vertaaldienst.
 
-   ![chlimage_1-95](assets/chlimage_1-95.png)
+   ![ chlimage_1-95 ](assets/chlimage_1-95.png)
 
-1. Een van de pagina&#39;s in de lijst selecteren en vervolgens **Voorvertoning in sites** opent u de vertaalde pagina in de pagina-editor op de werkbalk.
+1. Het selecteren van één van de pagina&#39;s in de lijst en dan **Voorproef in Plaatsen** in de toolbar opent de vertaalde pagina in de paginaredacteur.
 
-   ![chlimage_1-96](assets/chlimage_1-96.png)
+   ![ chlimage_1-96 ](assets/chlimage_1-96.png)
 
 >[!NOTE]
 >
->Deze procedure heeft de ingebouwde integratie met Microsoft®-computervertaling aangetoond. Met de [AEM Omzettingsintegratiekader](/help/sites-administering/translation.md), kunt u met vele standaardvertaaldiensten integreren om de vertaling van AEM te ordenen.
+>Deze procedure heeft de ingebouwde integratie met Microsoft®-computervertaling aangetoond. Gebruikend het [ AEM Kader van de Integratie van de Vertaling ](/help/sites-administering/translation.md), kunt u met vele standaardvertaaldiensten integreren om de vertaling van AEM te ordenen.
 
 ## Meer informatie {#further-information}
 
-Zie het ontwerpdocument voor meer informatie [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md) voor volledige technische details.
+Voor meer informatie, zie het auteursdocument [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md) voor volledige technische details.

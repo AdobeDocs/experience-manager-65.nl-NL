@@ -34,7 +34,7 @@ Formuliersets worden ook ondersteund in de AEM Forms-app, zodat uw medewerkers i
 
 U kunt verschillende XDP&#39;s of formuliersjablonen, gemaakt met Designer, koppelen aan een formulierset. Formuliersets kunnen vervolgens selectief worden gebruikt om de XDP&#39;s te renderen op basis van waarden die de gebruikers hebben ingevoerd in eerste formulieren en hun profielen.
 
-Gebruiken [AEM Forms-gebruikersinterface](../../forms/using/introduction-managing-forms.md) om al uw formulieren, formuliersets en gerelateerde elementen te beheren.
+Het gebruikersinterface van AEM Forms van het gebruik [ ](../../forms/using/introduction-managing-forms.md) om al uw vormen, vormreeksen, en verwante activa te beheren.
 
 ### Een formulierset maken {#create-a-form-set}
 
@@ -53,7 +53,7 @@ Ga als volgt te werk om een formulierset te maken:
    * formsetPath: Het pad van de formset in CRXDE, die is verzonden.
    * HTML Renderprofiel: u kunt bepaalde opties configureren, zoals zwevende velden, bijlagen en ontwerpondersteuning (voor zelfstandige uitvoering van een formulierset), om de weergave, het gedrag en de interacties van de formulierset aan te passen. U kunt het bestaande profiel aanpassen of uitbreiden om de instellingen voor het profiel HTML-formulier te wijzigen.
 
-   ![Formulierset: eigenschappen toevoegen](assets/createformset1.png)
+   ![ Reeks van de Vorm: voeg eigenschappen ](assets/createformset1.png) toe
 
 1. In het scherm Formulier selecteren worden de beschikbare XDP-formulieren of XDP-bestanden weergegeven. Zoek en selecteer de formulieren die u in de formulierset wilt opnemen en klik vervolgens op Toevoegen aan formulierset. Zoek zo nodig nogmaals naar formulieren die u wilt toevoegen. Nadat u alle formulieren aan de formulierset hebt toegevoegd, klikt u op Volgende.
 
@@ -65,16 +65,16 @@ Ga als volgt te werk om een formulierset te maken:
 
    * Formuliervolgorde: sleep de formulieren om ze opnieuw te ordenen. De formuliervolgorde definieert de volgorde waarin formulieren aan de eindgebruiker worden weergegeven in de AEM Forms-app en zelfstandige uitvoering.
    * Formulierid: geeft een unieke identiteit op voor de formulieren die moeten worden gebruikt in geschiktheidsexpressies.
-   * Gegevensbasis: voor elk formulier in een formulierset kan de auteur de XPATH configureren waar de gegevens van dat formulier zich in verzonden XML bevinden. De standaardwaarde is /. Als alle formulieren in een formulierset zijn gebonden met een schema en hetzelfde XML-schema delen, kunt u deze waarde wijzigen. Het wordt aanbevolen dat voor elk veld in het formulier de juiste gegevensbinding is opgegeven in de XDP. Als twee velden in twee verschillende formulieren dezelfde gegevensbinding hebben, worden in het tweede formulier voorgevulde waarden uit het eerste formulier weergegeven. Bind twee subformulieren met dezelfde interne inhoud niet aan hetzelfde XML-knooppunt. Zie voor meer informatie de XML-structuur van formulierset [XML vooraf invullen voor formulierset](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
-   * Beleenbaarheidsuitdrukking: geeft een JavaScript-expressie op die een Booleaanse waarde evalueert en aangeeft of een formulier in een formulierset in aanmerking komt voor vulling. Indien onwaar, wordt de gebruiker niet gevraagd of zelfs getoond het te vullen formulier. De expressie is doorgaans gebaseerd op de waarden van de velden die vóór dit formulier zijn vastgelegd. Expressies bevatten ook aanroepen van de formulierset-API fs.valueOf om de waarden te extraheren die de gebruiker heeft ingevuld in een veld van een formulierset:
+   * Gegevensbasis: voor elk formulier in een formulierset kan de auteur de XPATH configureren waar de gegevens van dat formulier zich in verzonden XML bevinden. De standaardwaarde is /. Als alle formulieren in een formulierset zijn gebonden met een schema en hetzelfde XML-schema delen, kunt u deze waarde wijzigen. Het wordt aanbevolen dat voor elk veld in het formulier de juiste gegevensbinding is opgegeven in de XDP. Als twee velden in twee verschillende formulieren dezelfde gegevensbinding hebben, worden in het tweede formulier voorgevulde waarden uit het eerste formulier weergegeven. Bind twee subformulieren met dezelfde interne inhoud niet aan hetzelfde XML-knooppunt. Voor meer informatie ziet de structuur van XML van vormreeks, [ vooraf ingevulde XML voor de reeks van de Vorm ](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Beleenbaarheidsuitdrukking: geeft een JavaScript-expressie op die een Booleaanse waarde evalueert en aangeeft of een formulier in een formulierset in aanmerking komt voor invulling. Indien onwaar, wordt de gebruiker niet gevraagd of zelfs getoond het te vullen formulier. De expressie is doorgaans gebaseerd op de waarden van de velden die vóór dit formulier zijn vastgelegd. Expressies bevatten ook aanroepen van de formulierset-API fs.valueOf om de waarden te extraheren die de gebruiker heeft ingevuld in een veld van een formulierset:
 
-   *fs.valueOf()&lt;form identifier=&quot;&quot;>, &lt;fieldsom expression=&quot;&quot;>) > &lt;value>*
+   *fs.valueOf (&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*
 
-   Als de formulierset bijvoorbeeld twee formulieren bevat: bedrijfskosten en reiskosten, kunt u een JavaScript-fragment toevoegen in het veld Belichtingsexpressie voor beide formulieren om de gebruikersinvoer voor het type kosten in een formulier te controleren. Als de gebruiker BedrijfsKosten kiest, wordt het formulier BedrijfsKosten teruggegeven aan het eind - gebruiker. Of als de gebruiker reiskosten kiest, wordt een ander formulier weergegeven aan de eindgebruiker. Zie Beleenbaarheidsuitdrukking voor meer informatie.
+   Als de formulierset bijvoorbeeld twee formulieren bevat: bedrijfskosten en reiskosten, kunt u een JavaScript-fragment toevoegen in het veld Belichtingsexpressie voor beide formulieren om de gebruikersinvoer te controleren op het type kosten in een formulier. Als de gebruiker BedrijfsKosten kiest, wordt het formulier BedrijfsKosten teruggegeven aan het eind - gebruiker. Of als de gebruiker reiskosten kiest, wordt een ander formulier weergegeven aan de eindgebruiker. Zie Beleenbaarheidsuitdrukking voor meer informatie.
 
-   Bovendien kan de auteur ook een formulier uit de formulierset verwijderen met het pictogram Verwijderen in de rechterhoek van elke rij of een andere formulierset toevoegen met het pictogram &#39;**+** in de werkbalk. Deze &#39;**+** Met het pictogram &#39; wordt de gebruiker teruggeleid naar de vorige stap in de wizard die werd gebruikt voor &#39;Formulier(s) selecteren&#39;. De bestaande selecties blijven behouden en eventuele extra selecties moeten aan de formulierset worden toegevoegd met het pictogram Toevoegen aan formulierset op die pagina.
+   Bovendien kan de auteur ook verkiezen om een vorm uit de vormreeks te verwijderen gebruikend het pictogram van de Schrapping aanwezig bij de rechterhoek van elke rij of een andere reeks vormen toe te voegen gebruikend het &quot;**+**&quot;pictogram in de toolbar. Dit pictogram &#39;**+**&#39; stuurt de gebruiker terug naar de vorige stap in de wizard, die werd gebruikt om &#39;Formulier(s) selecteren&#39;. De bestaande selecties blijven behouden en eventuele extra selecties moeten aan de formulierset worden toegevoegd met het pictogram Toevoegen aan formulierset op die pagina.
 
-   ![Formulierset: formulier(en) configureren](assets/createformset2.png)
+   ![ Reeks van de Vorm: Vorm (s) vormen ](assets/createformset2.png)
 
    >[!NOTE]
    >
@@ -94,14 +94,14 @@ Nadat een formulierset is gemaakt, kunt u de volgende handelingen op die formuli
 * Voorvertoning: Voorvertoning biedt twee opties: Voorvertoning als HTML (zonder gegevens) en aangepaste voorvertoning met voorbeeldgegevens.
 * Eigenschappen van weergave/bewerking: u kunt de eigenschappen van metagegevens van een geselecteerde formulierset weergeven/bewerken.
 
-![createformset3](assets/createformset3.png)
+![ createformset3 ](assets/createformset3.png)
 
 ### Een formulierset bewerken {#edit-a-form-set}
 
 Ga als volgt te werk om een formulierset te bewerken:
 
 1. Selecteer Forms > Forms en Documenten.
-1. Zoek de formulierset die u wilt bewerken. Houd de muisaanwijzer boven het object en selecteer Bewerken ( ![editicon](assets/editicon.png)).
+1. Zoek de formulierset die u wilt bewerken. Beweeg over het en selecteer uitgeven ( ![ editicon ](assets/editicon.png)).
 1. Op de pagina Formulier(s) configureren kunt u het volgende bewerken:
 
    * Formuliervolgorde
@@ -117,13 +117,13 @@ Nadat u een formulierset hebt gemaakt met de gebruikersinterface van AEM Forms M
 
 ### Formulierset gebruiken in Taak- of beginpunt {#using-form-set-in-task-or-start-point}
 
-1. Als u een proces ontwerpt, selecteert u onder de sectie Presentatie en gegevens van Taak/Beginpunt toewijzen de optie **een CRX-element gebruiken**. De browser CRX Asset wordt weergegeven.
+1. Wanneer het ontwerpen van een proces, onder de Presentatie &amp; sectie van Gegevens van Assign Taak/Punt van het Begin, uitgezocht **gebruik een activa van CRX**. De CRX Asset-browser wordt weergegeven.
 
-   ![Een proces ontwerpen: een CRX-element gebruiken](assets/formsetinprocessmgmt1.png)
+   ![ Ontwerp een proces: gebruik CRX activa ](assets/formsetinprocessmgmt1.png)
 
 1. Selecteer een formulierset om de formulierset in AEM gegevensopslagruimte (CRX) te filteren.
 
-   ![Een proces ontwerpen: dialoogvenster Formulierelement selecteren](assets/formsetinprocessmgmt2.png)
+   ![ Ontwerp een proces: Selecteer de dialoog van de Activa van de Vorm ](assets/formsetinprocessmgmt2.png)
 
 1. Selecteert een formulierset en klik op OK.
 
@@ -169,17 +169,20 @@ U hebt bijvoorbeeld drie formulieren (form1, form2 en form3) in de formulierset 
 
 form1
 
-field form1field
+field
+form1field
 
 form2
 
-field form2field
+field
+form2field
 
 form3
 
-field form3field
+field
+form3field
 
-Elk formulier heeft een algemeen benoemd veld met de naam &quot;field&quot; en een uniek benoemd veld met de naam &quot;formfield&quot;.
+Elk formulier heeft een algemeen benoemd veld met de naam &quot;field&quot; en een uniek benoemd veld met de naam &quot;form&lt;i>field&quot;.
 
 U kunt deze formulierset vooraf invullen met behulp van een XML met de volgende structuur:
 
@@ -276,7 +279,7 @@ Het hoofdelement van de XML-formulierset. Het wordt aangeraden dit woord niet te
 
 `formset`
 
-kardinaliteit: [1]
+kardinaliteit: [ 1 ]
 
 submitXML: P
 
@@ -342,7 +345,7 @@ In vooraf ingevulde XML is dit label optioneel, maar als het ontbreekt, wordt de
 
 NAAM VAN DE TAG BASISELEMENT
 
-Als er een hoofdelement is in de vooraf ingevulde XML, wordt de naam van dat element ook gebruikt in de verzendings-XML. Wanneer er geen prefill-xml is, is de naam van het rootElement de naam van het basissubformulier van het eerste formulier in de formulierset met een eigenschap dataRoot ingesteld op &quot;/&quot;. Als er geen dergelijk formulier is, is de rootElement-naam **fs_dummy_root**, dat een gereserveerd trefwoord is.
+Als er een hoofdelement is in de vooraf ingevulde XML, wordt de naam van dat element ook gebruikt in de verzendings-XML. Wanneer er geen prefill-xml is, is de naam van het rootElement de naam van het basissubformulier van het eerste formulier in de formulierset met een eigenschap dataRoot ingesteld op &quot;/&quot;. Als er geen dergelijke vorm is, dan is de rootElement naam **fs_dummy_root**, die een gereserveerd sleutelwoord is.
 
 ## Formulierset in AEM Forms-app {#formset-in-workspace-app}
 

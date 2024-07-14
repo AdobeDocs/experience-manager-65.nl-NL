@@ -20,13 +20,13 @@ ht-degree: 0%
 
 Het beheren van Dynamic Media-elementen - afbeeldingen, video en interactieve elementen - nadat deze zijn geüpload, omvat veel taken zoals het voorvertonen, downloaden of publiceren van deze elementen.
 
-Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen voor viewers toepassen](/help/assets/viewer-presets.md) en [Voorinstellingen voor afbeeldingen toepassen](/help/assets/image-sets.md).
+Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [ Toepassend kijker vooraf instelt ](/help/assets/viewer-presets.md) en [ Toepassend beeld vooraf instelt ](/help/assets/image-sets.md).
 
-Algemene informatie over het beheer van activa vindt u in [Elementen beheren](/help/assets/manage-assets.md).
+De algemene informatie over het beheren van activa wordt gevonden in [ beheert activa ](/help/assets/manage-assets.md).
 
 In de volgende onderwerpen wordt beschreven hoe u Dynamic Media-elementen kunt beheren:
 
 * [Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Voorvertoning van Dynamic Media-elementen weergeven](/help/assets/previewing-assets.md)
-* [Dynamic Media-middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md)
+* [Dynamic Media Assets publiceren](/help/assets/publishing-dynamicmedia-assets.md)
 * [Werken met kiezers](/help/assets/working-with-selectors.md)

@@ -31,10 +31,10 @@ Voer de basiscriteria in om een algemene zoekopdracht uit te voeren. Als u meerd
 1. Klik in de beheerconsole op Services > Forms-workflow > Zoeken in processen.
 1. Geef op de pagina Zoeken in proces onder Algemeen zoeken de volgende criteria op:
 
-   * **Proces-id:** Het positieve geheel dat elke unieke procesinstantie identificeert.
-   * **Processtatus:** Selecteer een status in de lijst.
-   * **Toepassing:** Selecteer een toepassing in de lijst. Slechts worden de opgestelde toepassingen getoond.
-   * **Procesnaam - Versie:** Selecteer een procesnaam in het menu. Slechts worden de opgestelde processen getoond.
+   * **identiteitskaart van het Proces:** het positieve geheel dat elke unieke procesinstantie identificeert.
+   * **Status van het Proces:** selecteer een status van de lijst.
+   * **Toepassing:** selecteer een toepassing van de lijst. Slechts worden de opgestelde toepassingen getoond.
+   * **Naam van het Proces - Versie:** Selecteer een procesnaam van het menu. Slechts worden de opgestelde processen getoond.
 
 1. Klik op Zoeken. De pagina Procesinstantie wordt weergegeven met een overzicht van de gevonden varianten.
 

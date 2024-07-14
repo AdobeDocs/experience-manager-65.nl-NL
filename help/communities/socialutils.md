@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Het pakket `com.adobe.cq.social.ugcbase.SocialUtils` is vervangen in AEM 6.1.
 
-In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van `SocialUtils` methoden.
+In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van de methoden `SocialUtils` .
 
 ## SocialResourceUtilities-pakket  {#socialresourceutilities-package}
 
@@ -42,13 +42,13 @@ In de volgende tabellen worden de methoden weergegeven die moeten worden gebruik
 | String UGCToResourcePath(String ugcPath) | methodehandtekening gewijzigd |
 | String UGCToResourcePath(String ugcPath, ResourceResolver resolver) | new |
 
-| Methoden in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
+| Methoden in `com.adobe.cq.social.` utilities.resource.api.SocialResourceUtilities |
 |---|
 | SocialResourceProvider getSocialResourceProvider(resource) | vervangt SocialResourceProvider getConfiguredProvider(resource) |
 
 ## SCFUtilities-pakket {#scfutilities-package}
 
-| Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
+| Methoden in `com.adobe.cq.social.` utilities.scf.api.SCFUtilites |
 |---|
 | String getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, int size) |

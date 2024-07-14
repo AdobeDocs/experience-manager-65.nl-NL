@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Servicebewerkingen uitvoeren met behulp van API&#39;s {#performing-service-operations-using-apis}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
-Voordat u clienttoepassingen gaat ontwikkelen met behulp van de AEM Forms API&#39;s, raadt Adobe u aan eerst het aanroepen van AEM Forms te lezen, waarin de verschillende manieren worden beschreven waarop services kunnen worden aangeroepen. (Zie [Servicecontainer](/help/forms/developing/service-container.md#service-container).)
+Voordat u clienttoepassingen gaat ontwikkelen met behulp van de AEM Forms API&#39;s, raadt Adobe u aan eerst het aanroepen van AEM Forms te lezen, waarin de verschillende manieren worden beschreven waarop services kunnen worden aangeroepen. (Zie [ container van de Dienst ](/help/forms/developing/service-container.md#service-container).)
 
 Nadat u met de verschillende aanroepingsmethodes vertrouwd bent geworden, kunt u leren hoe te met elke dienst programmatically in wisselwerking te staan. U kunt een cliënttoepassing in Adobe Flex® Builder™, in een ontwikkelomgeving Java™, of in een milieu zoals Microsoft® Visual Studio .NET ontwikkelen die u toestaat om blootgestelde WSDL voor consumptie op een inheemse SOAP stapel te gebruiken.
 

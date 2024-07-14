@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Serverconfiguratie-instellingen {#server-configuration-settings}
 
-**Basis-URL:** De URL voor beveiliging van het basisdocument met de servernaam en -poort. Aan de basis toegevoegde informatie maakt verbinding-URL&#39;s. Bijvoorbeeld: /edc/Main.do wordt toegevoegd om toegang te krijgen tot de webpagina&#39;s. Gebruikers reageren via deze URL ook op uitnodigingen voor externe gebruikersregistratie.
+**Basis URL:** de veiligheid URL van het basisdocument, die de servernaam en de haven bevatten. Aan de basis toegevoegde informatie maakt verbinding-URL&#39;s. Bijvoorbeeld: /edc/Main.do wordt toegevoegd om toegang te krijgen tot de webpagina&#39;s. Gebruikers reageren via deze URL ook op uitnodigingen voor externe gebruikersregistratie.
 
 Als u IPv6 gebruikt, ga de Basis URL als computernaam of DNS naam in. Als u een numeriek IP adres gebruikt, zal Acrobat er niet in slagen om beleid beschermde dossiers te openen. Gebruik ook HTTP Secure (HTTPS) URL voor uw server.
 
@@ -31,42 +31,42 @@ Als u IPv6 gebruikt, ga de Basis URL als computernaam of DNS naam in. Als u een 
 >
 >De basis-URL is ingesloten in bestanden die met een beleid zijn beveiligd. Clienttoepassingen gebruiken de basis-URL om weer verbinding te maken met de server. Beveiligde bestanden blijven de basis-URL bevatten, zelfs als deze later wordt gewijzigd. Als u de basis-URL wijzigt, moeten de configuratiegegevens voor alle verbindende clients worden bijgewerkt.
 
-**Standaardperiode offlinelease:** De standaardtijdsduur dat een gebruiker een beveiligd document offline kan gebruiken. Deze instelling bepaalt de aanvankelijke waarde van de instelling voor de automatisch offline leaseperiode wanneer u een beleid maakt. (Zie Beleid maken en bewerken.) Wanneer de huurperiode verloopt, moet de ontvanger het document opnieuw synchroniseren om het te blijven gebruiken.
+**Standaard Off-line Periode van de Verhuur:** De standaardlengte van tijd dat een gebruiker een beschermd document offline kan gebruiken. Deze instelling bepaalt de aanvankelijke waarde van de instelling voor de automatisch offline leaseperiode wanneer u een beleid maakt. (Zie Beleid maken en bewerken.) Wanneer de huurperiode verloopt, moet de ontvanger het document opnieuw synchroniseren om het te blijven gebruiken.
 
-Voor een bespreking van hoe de off-line huur en de synchronisatie werken, zie [Primer bij het configureren van offline lease en synchronisatie](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
+Voor een bespreking van hoe de off-line huur en synchronisatie werken, zie [ Primer bij het vormen van off-line huur en synchronisatie ](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
-**Standaardperiode voor offline synchronisatie:** De maximale tijd dat elk document offline kan worden gebruikt vanaf het moment dat het voor het eerst is beveiligd.
+**Standaard Off-line Periode van de Synchronisatie:** De maximumtijd om het even welk document kan offline van worden gebruikt wanneer het aanvankelijk beschermd is.
 
-**Time-out clientsessie:** De tijdsduur, in minuten, waarna de documentbeveiliging verbreekt als een gebruiker die is aangemeld via een clienttoepassing, niet reageert op de documentbeveiliging.
+**Time-out van de Zitting van de Cliënt:** de tijdsduur, in notulen, waarna de documentveiligheid losmaakt als een gebruiker die door een cliënttoepassing het programma wordt geopend niet met documentveiligheid interactie aangaat.
 
-**Toegang voor anonieme gebruikers toestaan:** Selecteer deze optie om de capaciteit toe te laten om gedeeld en persoonlijk beleid tot stand te brengen dat anonieme gebruikers toestaat om beleid-beschermde documenten te openen. (Gebruikers die geen accounts hebben, hebben wel toegang tot het document, maar kunnen zich niet aanmelden voor documentbeveiliging of andere documenten die met een beleid zijn beveiligd.)
+**staat de Anonieme Toegang van Gebruikers toe:** selecteer deze optie om de capaciteit toe te laten om gedeeld en persoonlijk beleid tot stand te brengen dat anonieme gebruikers toestaan om beleid-beschermde documenten te openen. (Gebruikers die geen accounts hebben, hebben wel toegang tot het document, maar kunnen zich niet aanmelden voor documentbeveiliging of andere documenten die met een beleid zijn beveiligd.)
 
-**Toegang tot versie 7-clients uitschakelen:** Hiermee geeft u aan of gebruikers Acrobat of Reader 7.0 kunnen gebruiken om verbinding te maken met de server. Als deze optie is ingeschakeld, moeten gebruikers Acrobat of Reader 8.0 en hoger gebruiken om de bewerkingen voor documentbeveiliging op PDF-documenten te voltooien. Als het beleid vereist dat Acrobat of Reader 8.0 en later op verklaarde wijze in werking moeten stellen wanneer het openen van beleid-beschermde documenten, zou u toegang tot Acrobat of Reader 7 moeten onbruikbaar maken. (Zie Documentmachtigingen opgeven voor gebruikers en groepen.)
+**maak Toegang tot Versie 7 Clients onbruikbaar:** specificeert of de gebruikers Acrobat of Reader 7.0 kunnen gebruiken om met de server te verbinden. Als deze optie is ingeschakeld, moeten gebruikers Acrobat of Reader 8.0 en hoger gebruiken om de bewerkingen voor documentbeveiliging op PDF-documenten te voltooien. Als het beleid vereist dat Acrobat of Reader 8.0 en later op verklaarde wijze in werking moeten stellen wanneer het openen van beleid-beschermde documenten, zou u toegang tot Acrobat of Reader 7 moeten onbruikbaar maken. (Zie Documentmachtigingen opgeven voor gebruikers en groepen.)
 
-**Offline toegang per document toestaan** Selecteer deze optie om offline toegang per document op te geven. Als deze instelling is ingeschakeld, heeft de gebruiker alleen offline toegang tot de documenten die de gebruiker minstens één keer online heeft geopend.
+**staat off-line toegang per document toe** selecteer deze optie om off-line toegang per document te specificeren. Als deze instelling is ingeschakeld, heeft de gebruiker alleen offline toegang tot de documenten die de gebruiker minstens één keer online heeft geopend.
 
-**Verificatie van wachtwoord gebruikersnaam toestaan:** Selecteer deze optie als clienttoepassingen bij het maken van een verbinding met de server gebruik moeten kunnen maken van gebruikersnaam-/wachtwoordverificatie.
+**staat de Authentificatie van het Wachtwoord van de Gebruikersnaam toe:** selecteer deze optie om cliënttoepassingen toe te laten om gebruikersnaam/wachtwoordauthentificatie te gebruiken wanneer het verbinden met de server.
 
-**Kerberos-verificatie toestaan:** Selecteer deze optie om cliënttoepassingen toe te laten om authentificatie te gebruiken Kerberos wanneer het verbinden met de server.
+**staat Authentificatie Kerberos toe:** selecteer deze optie om cliënttoepassingen toe te laten om authentificatie te gebruiken Kerberos wanneer het verbinden met de server.
 
-**Client-certificaatverificatie toestaan:** Selecteer deze optie als u wilt dat clienttoepassingen certificaatverificatie kunnen gebruiken wanneer ze verbinding maken met de server.
+**staat de Authentificatie van het Certificaat van de Cliënt toe:** selecteer deze optie om cliënttoepassingen toe te laten om certificaatauthentificatie te gebruiken wanneer het verbinden met de server.
 
-**Uitgebreide verificatie toestaan** Selecteer deze optie om uitgebreide verificatie in te schakelen en voer vervolgens de URL voor uitgebreide verificatie-landing in.
+**staat Uitgebreide Authentificatie** Uitgebreide Uitgebreide authentificatie toe om uitgebreide authentificatie toe te laten en dan Uitgebreide het Plaatsen URL van de Authentificatie in te gaan.
 
-Als u deze optie selecteert, kunnen clienttoepassingen uitgebreide verificatie gebruiken. Uitgebreide verificatie biedt aangepaste verificatieprocessen en verschillende verificatieopties die op de AEM Forms-server zijn geconfigureerd. Bijvoorbeeld, kunnen de gebruikers de op SAML-Gebaseerde authentificatie in plaats van AEM vormen gebruikersbenaming/Wachtwoord, van Acrobat en de Cliënt van de Reader nu ervaren. Standaard bevat de URL voor landingen *localhost* als de servernaam. Vervang de servernaam door een volledig gekwalificeerde hostnaam. De hostnaam in de bestemmings-URL wordt automatisch ingevuld vanaf de basis-URL als uitgebreide verificatie nog niet is ingeschakeld. Zie [De uitgebreide verificatieprovider toevoegen](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Als u deze optie selecteert, kunnen clienttoepassingen uitgebreide verificatie gebruiken. Uitgebreide verificatie biedt aangepaste verificatieprocessen en verschillende verificatieopties die op de AEM Forms-server zijn geconfigureerd. Bijvoorbeeld, kunnen de gebruikers de op SAML-Gebaseerde authentificatie in plaats van AEM vormen gebruikersbenaming/Wachtwoord, van Acrobat en de Cliënt van de Reader nu ervaren. Door gebrek, bevat het Openen URL *localhost* als servernaam. Vervang de servernaam door een volledig gekwalificeerde hostnaam. De hostnaam in de bestemmings-URL wordt automatisch ingevuld vanaf de basis-URL als uitgebreide verificatie nog niet is ingeschakeld. Zie [ de uitgebreide authentificatieleverancier ](configuring-client-server-options.md#add-the-extended-authentication-provider) toevoegen.
 
-***notitie **: uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.*
+***nota **: Uitgebreide authentificatie wordt gesteund op Apple Mac OS X met versie 11.0.6 van Adobe Acrobat en hierboven.*
 
-**Voorkeursbreedte van HTML-besturingselement voor uitgebreide verificatie** Geef de breedte op van het uitgebreide verificatiedialoogvenster dat in Acrobat wordt geopend voor het invoeren van gebruikersgegevens.
+**Voorkeur de Breedte van de Controle van de HTML voor Uitgebreide Authentificatie** specificeert de breedte van de uitgebreide authentificatiedialoog die in Acrobat voor het ingaan van gebruikersgeloofsbrieven opent.
 
-**Voorkeurscontrolehoogte HTML voor uitgebreide verificatie** Geef de hoogte op van het uitgebreide verificatiedialoogvenster dat in Acrobat wordt geopend voor het invoeren van gebruikersgegevens.
+**Gewenste Hoogte van de Controle van de HTML voor Uitgebreide Authentificatie** specificeer de hoogte van de uitgebreide authentificatiedialoog die in Acrobat voor het ingaan van gebruikersgeloofsbrieven opent.
 
-***notitie **: De breedte en hoogte van dit dialoogvenster zijn als volgt:*
+***nota **: De grenzen van de breedte en de hoogte voor dit dialoogvakje zijn als volgt:*
 Breedte: minimaal = 400, maximaal = 900
 
 Hoogte: minimaal = 450; maximaal = 800
 
-**Client Credential Caching inschakelen:** Selecteer deze optie als u wilt dat gebruikers hun gegevens (gebruikersnaam en wachtwoord) in de cache kunnen opslaan. Wanneer de gebruikersgegevens in het cachegeheugen worden opgeslagen, hoeven ze niet telkens hun gegevens in te voeren wanneer ze een document openen of op de knop Vernieuwen op de pagina Beveiligingsbeleid beheren in Adobe Acrobat klikken. U kunt het aantal dagen opgeven voordat gebruikers hun gegevens opnieuw moeten opgeven. Als u het aantal dagen instelt op 0, kunnen referenties voor onbepaalde tijd in het cachegeheugen worden opgeslagen.
+**laat de Credentiële Caching van de Cliënt toe:** selecteer deze optie om gebruikers toe te staan om hun geloofsbrieven (gebruikersnaam en wachtwoord) in het voorgeheugen onder te brengen. Wanneer de gebruikersgegevens in het cachegeheugen worden opgeslagen, hoeven ze niet telkens hun gegevens in te voeren wanneer ze een document openen of op de knop Vernieuwen op de pagina Beveiligingsbeleid beheren in Adobe Acrobat klikken. U kunt het aantal dagen opgeven voordat gebruikers hun gegevens opnieuw moeten opgeven. Als u het aantal dagen instelt op 0, kunnen referenties voor onbepaalde tijd in het cachegeheugen worden opgeslagen.
 
 ## Gebruikers en beheerders voor documentbeveiliging configureren {#configuring-document-security-users-and-administrators}
 
@@ -74,7 +74,7 @@ Hoogte: minimaal = 450; maximaal = 800
 
 Uw AEM formulieromgeving bevat een of meer beheerdergebruikers die de juiste rechten hebben voor het maken van gebruikers en groepen. Als uw organisatie documentbeveiliging gebruikt, moet ten minste één beheerder ook het recht krijgen om uitgenodigde en lokale gebruikers te beheren.
 
-De beheerders moeten de rol van de Gebruiker van de beleidsconsole ook hebben om tot beleidsconsole toegang te hebben. (Zie [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+De beheerders moeten de rol van de Gebruiker van de beleidsconsole ook hebben om tot beleidsconsole toegang te hebben. (Zie [ Creërend en vormend rollen ](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 ### Zichtbare gebruikers en groepen configureren {#configuring-visible-users-and-groups}
 
@@ -84,7 +84,7 @@ De zichtbare gebruiker en de groepslijst zijn zichtbaar aan de coördinator van 
 
 1. Nadat u de AEM formulieromgeving hebt geïnstalleerd en geconfigureerd met documentbeveiliging, stelt u alle relevante domeinen in Gebruikersbeheer in. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***notitie **: Het maken van domeinen moet worden uitgevoerd voordat beleidsregels kunnen worden gemaakt.*
+   ***nota **: Creërend domeinen moet worden gedaan alvorens om het even welk beleid kan worden gecreeerd.*
 
 1. Klik in de beheerconsole op Services > Documentbeheer > Beleid en klik vervolgens op het tabblad Beleidssets.
 1. Selecteer Globale beleidsset en klik op het tabblad Zichtbare gebruikers en groepen.
@@ -101,13 +101,13 @@ AEM formulieren bieden een voorbeeldconfiguratie die u kunt aanpassen aan uw omg
 >Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
 
 1. Vraag het WAR-voorbeeldbestand aan om dit te implementeren. Raadpleeg de installatiegids die geschikt is voor uw toepassingsserver.
-1. Zorg ervoor dat de Forms-server een volledig gekwalificeerde naam heeft in plaats van IP-adressen als de basis-URL en dat het een HTTPS-URL is. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
-1. Schakel Uitgebreide verificatie in vanaf de pagina Serverconfiguratie. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
-1. Voeg de vereiste URL&#39;s voor omleiding naar SSO toe in het configuratiebestand voor gebruikersbeheer. Zie [URL&#39;s voor doorsturen naar SSO toevoegen voor uitgebreide verificatie](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
+1. Zorg ervoor dat de Forms-server een volledig gekwalificeerde naam heeft in plaats van IP-adressen als de basis-URL en dat het een HTTPS-URL is. Zie [ de configuratiemontages van de Server ](configuring-client-server-options.md#server-configuration-settings).
+1. Schakel Uitgebreide verificatie in vanaf de pagina Serverconfiguratie. Zie [ de configuratiemontages van de Server ](configuring-client-server-options.md#server-configuration-settings).
+1. Voeg de vereiste URL&#39;s voor omleiding naar SSO toe in het configuratiebestand voor gebruikersbeheer. Zie [ SSO omleiden URLs voor uitgebreide authentificatie ](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication) toevoegen.
 
 ### URL&#39;s voor doorsturen naar SSO toevoegen voor uitgebreide verificatie {#add-sso-redirect-urls-for-extended-authentication}
 
-Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met beleid beveiligd document openen in Acrobat XI of Reader XI een dialoogvenster voor verificatie. In dit dialoogvenster wordt de HTML-pagina geladen die u hebt opgegeven als de URL voor het landen van de uitgebreide verificatie op de instellingen van de documentbeveiligingsserver. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
+Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met beleid beveiligd document openen in Acrobat XI of Reader XI een dialoogvenster voor verificatie. In dit dialoogvenster wordt de HTML-pagina geladen die u hebt opgegeven als de URL voor het landen van de uitgebreide verificatie op de instellingen van de documentbeveiligingsserver. Zie [ de configuratiemontages van de Server ](configuring-client-server-options.md#server-configuration-settings).
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met bele
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Exporteren en sla het configuratiebestand op uw schijf op.
 1. Open het bestand in een editor en zoek het knooppunt AllowedUrls.
-1. In de `AllowedUrls` knoop, voeg de volgende lijnen toe: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
+1. Voeg de volgende regels toe aan het knooppunt `AllowedUrls` : `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
    ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
@@ -128,9 +128,9 @@ Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met bele
 
 ## Offlinebeveiliging configureren {#configuring-offline-security}
 
-Met documentbeveiliging kunt u met beleid beveiligde documenten offline gebruiken zonder een internet- of netwerkverbinding. Deze mogelijkheid vereist dat het beleid offline toegang toestaat, zoals beschreven in [Documentmachtigingen opgeven voor gebruikers en groepen](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Voordat een document met een dergelijk beleid offline kan worden gebruikt, moet de ontvanger het document openen terwijl het online is en offline toegang inschakelen door op Ja te klikken wanneer hierom wordt gevraagd. De ontvanger kan ook worden verzocht zijn identiteit te verifiëren. De ontvanger kan dan documenten offline gebruiken voor de duur van de offline huurperiode die in het beleid wordt gespecificeerd.
+Met documentbeveiliging kunt u met beleid beveiligde documenten offline gebruiken zonder een internet- of netwerkverbinding. Deze capaciteit vereist dat het beleid off-line toegang toestaat, zoals die in [ wordt beschreven specificeer de documenttoestemmingen voor gebruikers en groepen ](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Voordat een document met een dergelijk beleid offline kan worden gebruikt, moet de ontvanger het document openen terwijl het online is en offline toegang inschakelen door op Ja te klikken wanneer hierom wordt gevraagd. De ontvanger kan ook worden verzocht zijn identiteit te verifiëren. De ontvanger kan dan documenten offline gebruiken voor de duur van de offline huurperiode die in het beleid wordt gespecificeerd.
 
-Wanneer de offline leaseperiode afloopt, moet de ontvanger opnieuw synchroniseren met de documentbeveiliging door een document online te openen of door een menuopdracht voor Acrobat- of Acrobat Reader DC-extensies te gebruiken voor synchronisatie. (Zie *Acrobat Help* of de passende *Help bij Acrobat Reader DC-extensies*.)
+Wanneer de offline leaseperiode afloopt, moet de ontvanger opnieuw synchroniseren met de documentbeveiliging door een document online te openen of door een menuopdracht voor Acrobat- of Acrobat Reader DC-extensies te gebruiken voor synchronisatie. (Zie *Hulp van Acrobat* of aangewezen *de uitbreidingenHulp van Acrobat Reader DC*.)
 
 Omdat documenten die offline toegang toestaan, sleutelmateriaal in cache moeten plaatsen op de computer waarop de bestanden offline zijn opgeslagen, kan het bestand mogelijk in gevaar worden gebracht als een onbevoegde gebruiker het sleutelmateriaal kan verkrijgen. Om deze mogelijkheid te compenseren, worden de geplande en handzeer belangrijke het omvergooienopties verstrekt die u kunt vormen om een onbevoegd persoon te verhinderen de sleutel te gebruiken om tot het document toegang te hebben.
 
@@ -146,7 +146,7 @@ U kunt een standaard offline huurperiode configureren. De leaseperiode kan worde
 
 ### Toetsrollovers beheren {#manage-key-rollovers}
 
-Documentbeveiliging gebruikt versleutelingsalgoritmen en -licenties om documenten te beveiligen. Wanneer een document wordt versleuteld, genereert en beheert documentbeveiliging een coderingssleutel die een *DocKey* dat de toepassing wordt doorgegeven aan de clienttoepassing. Als het beleid dat een document beveiligt offline toegang toestaat, een offline sleutel genoemd *belangrijkste sleutel* wordt ook gegenereerd voor elke gebruiker die offline toegang heeft tot het document.
+Documentbeveiliging gebruikt versleutelingsalgoritmen en -licenties om documenten te beveiligen. Wanneer het een document codeert, produceert de documentveiligheid en beheert een decryptiesleutel genoemd a *DocKey* die het tot de cliënttoepassing overgaat. Als het beleid dat een document beschermt off-line toegang toelaat, wordt een off-line sleutel genoemd a *belangrijkste sleutel* ook geproduceerd voor elke gebruiker die off-line toegang tot het document heeft.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Een sleutelrollover beïnvloedt echter alle hoofdtoetsen, niet slechts één. He
 
 In het volgende voorbeeld, is Key1 de ouder van de twee belangrijkste sleutels, en Key2 is nieuwere. Wanneer u de eerste keer op de knop Rollover-sleutels nu klikt, wordt Key1 ongeldig en wordt een nieuwere, geldige hoofdtoets (Key3) gegenereerd. Gebruikers krijgen Key3 wanneer ze synchroniseren met documentbeveiliging, meestal door een beveiligd document online te openen. Gebruikers worden echter niet gedwongen te synchroniseren met documentbeveiliging totdat ze de maximale offline leaseperiode bereiken die in een beleid is opgegeven. Na de eerste sleutelomvergooien, kunnen de gebruikers die offline blijven offline documenten, met inbegrip van die nog openen die door Key3 worden beschermd, tot zij de maximumoff-line huurperiode bereiken. Wanneer u nogmaals op de knop Rollover-toetsen klikt, wordt Key2 ongeldig en wordt Key4 gemaakt. Gebruikers die offline blijven tijdens de twee sleutelrollovers, kunnen documenten die met Key3 of Key4 zijn beveiligd, pas openen nadat ze zijn gesynchroniseerd met documentbeveiliging.
 
-**De frequentie voor sleutelrollover wijzigen**
+**verander de zeer belangrijke het omvergooiefrequentie**
 
 Als u offlinedocumenten gebruikt, biedt documentbeveiliging u uit vertrouwelijkheidsoverwegingen een automatische sleutelrolloveroptie met een standaardfrequentieperiode van 20 dagen. U kunt de rollover-frequentie wijzigen. Stel de waarde echter niet in op minder dan 14 dagen, omdat mensen mogelijk geen offlinedocumenten kunnen bekijken en de systeemprestaties mogelijk worden beïnvloed.
 
@@ -168,7 +168,7 @@ Als u offlinedocumenten gebruikt, biedt documentbeveiliging u uit vertrouwelijkh
 1. Typ in het vak Frequentie sleutelrollover het aantal dagen voor de rolloverperiode.
 1. Klik op OK.
 
-**Handmatig over hoofdtoetsen schuiven**
+**rol manueel over belangrijkste sleutels**
 
 Om de vertrouwelijkheid van offlinedocumenten te handhaven, kunt u manueel over belangrijkste sleutels rollen. Mogelijk vindt u het nodig om handmatig over een sleutel te rollen (bijvoorbeeld als de sleutel is gecompromitteerd door iemand die deze van een computer verkrijgt waar deze in cache is geplaatst om offline toegang tot een document in te schakelen).
 
@@ -180,7 +180,7 @@ De belangrijkste sleutels moeten tweemaal over worden gerold alvorens eerder bes
 
 1. Voor de pagina van de documentveiligheid, klik Configuratie > Zeer belangrijk Beheer.
 1. Klik op Rollover-toetsen nu en klik op OK.
-1. Wacht ongeveer 10 minuten. Het volgende logboekbericht wordt weergegeven in het serverlogboek: `Done RightsManagement key rollover for`*N* `principals`. Wanneer *N* is het aantal gebruikers in het documentbeveiligingssysteem.
+1. Wacht ongeveer 10 minuten. Het volgende logboekbericht verschijnt in het serverlogboek: `Done RightsManagement key rollover for`*N* `principals`. Waar *N* het aantal gebruikers in het systeem van de documentveiligheid is.
 1. Klik op Rollover-toetsen nu en klik op OK.
 1. Wacht ongeveer 10 minuten.
 
@@ -210,7 +210,7 @@ Wanneer u de servercontrole toelaat, kunt u de gecontroleerde gebeurtenissen op 
    * Als u alle gebeurtenissen in de categorie wilt controleren, selecteert u Alles.
    * Als u alleen bepaalde gebeurtenissen wilt controleren, schakelt u Alles uit en schakelt u de selectievakjes naast de gebeurtenissen die u wilt controleren in.
 
-     (Zie [Opties voor gebeurteniscontrole](configuring-client-server-options.md#event-auditing-options).)
+     (Zie [ de controleopties van de Gebeurtenis ](configuring-client-server-options.md#event-auditing-options).)
 
 1. Klik op OK.
 
@@ -278,101 +278,103 @@ U kunt controlegebeurtenissen verwijderen die ouder zijn dan een opgegeven aanta
 
 U kunt gebeurteniscontrole in- en uitschakelen en de typen gebeurtenissen opgeven die moeten worden gecontroleerd.
 
-**Gebeurtenissen van Document**
+**de gebeurtenissen van het Document**
 
-**Document weergeven:** Een ontvanger bekijkt een document dat met een beleid is beveiligd.
+**Document van de Mening:** Ontvangt bekijkt een beleid-beschermd document.
 
-**Document sluiten:** Een ontvanger sluit een document dat met een beleid is beveiligd.
+**dicht Document:** Een ontvanger sluit een beleid-beschermd document.
 
-**Lage resolutie afdrukken** Een ontvanger drukt een document af dat met een beleid is beveiligd en met de opgegeven optie voor lage resolutie.
+**de Laag resolutie van de Druk** Ontvanger A drukt een beleid-beschermd document met de laag-resolutiegespecificeerde optie.
 
-**Hoge resolutie afdrukken:** Een ontvanger drukt een document af dat met een beleid is beveiligd en waarvoor een optie voor hoge resolutie is opgegeven.
+**Druk Hoge resolutie:** De ontvanger drukt een beleid-beschermd document met gespecificeerde high-resolution optie.
 
-**Annotatie toevoegen aan document:** Een ontvanger voegt een aantekening aan een PDF-document toe.
+**voeg Annotatie aan Document toe:** Ontvanger A voegt een aantekening aan een document van de PDF toe.
 
-**Document intrekken:** Een gebruiker of beheerder trekt toegang tot een beleid-beschermd document in.
+**trekt Document in:** een gebruiker of een beheerder trekt toegang tot een beleid-beschermd document terug.
 
-**Document intrekken:** Een gebruiker of beheerder herstelt toegang tot een document dat met een beleid is beveiligd.
+**trekt Document ongedaan:** een gebruiker of een beheerder herstelt toegang tot een beleid-beschermd document.
 
-**Formuliervulling:** Een ontvanger voert gegevens in een PDF-document in dat een invulbaar formulier is.
+**het Vullen van de Vorm:** De ontvanger van A gaat informatie in een document van PDF in dat een invulbare vorm is.
 
-**Verwijderd beleid:** Een uitgever verwijdert een beleid uit een document om de veiligheidsbescherming terug te trekken.
+**Verwijderd Beleid:** De uitgever van A verwijdert een beleid uit een document om de veiligheidsbescherming terug te trekken.
 
-**URL intrekking document wijzigen:** Een aanroep vanuit het API-niveau wijzigt de intrekkingsURL die is opgegeven voor toegang tot een nieuw document dat een ingetrokken document vervangt.
+**Revocation URL van het Document van de Verandering:** Een vraag van het API niveau verandert de herroeping URL die wordt gespecificeerd om tot een nieuw document toegang te hebben dat een ingetrokken document vervangt.
 
-**Document wijzigen:** Een ontvanger wijzigt de inhoud van een document dat met een beleid is beveiligd.
+**wijzig Document:** De ontvanger van A verandert de inhoud van een beleid-beschermd document.
 
-**Document ondertekenen:** Een ontvanger ondertekent een document.
+**Onderteken Document:** de ontvanger ondertekent een document.
 
-**Beveilig een nieuw document:** Een gebruiker past een beleid toe om een document te beschermen.
+**beveilig een Nieuw Document:** een gebruiker past een beleid toe om een document te beschermen.
 
-**Beleid schakelen op document:** Een gebruiker of een beheerder schakelt het beleid dat aan een document in bijlage is.
+**Beleid van de Schakelaar op Document:** een gebruiker of een beheerder schakelt het beleid dat aan een document in bijlage is.
 
-**Document publiceren als:** Een nieuw document waarvan documentName en de vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben geen ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
+**het Document van Publish als:** een nieuw document de waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben geen ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
 
-**Document herhalen:** Een nieuw document waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben een ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
+**Interactief Document:** een nieuw document de waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben een ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
 
-**Beleidsgebeurtenissen**
+**de gebeurtenissen van het Beleid**
 
-**Gemaakt beleid:** Een gebruiker of beheerder maakt een beleid.
+**Created Beleid:** een gebruiker of een beheerder leidt tot een beleid.
 
-**Beleid ingeschakeld:** Een beheerder stelt een beleid ter beschikking.
+**Toegelaten Beleid:** een beheerder stelt een beleid beschikbaar.
 
-**Gewijzigd beleid:** Een gebruiker of beheerder wijzigt een beleid.
+**Gewijzigd Beleid:** een gebruiker of een beheerder verandert een beleid.
 
-**Uitgeschakeld beleid:** Een beheerder maakt een beleid niet beschikbaar.
+**Gehandicapte Beleid:** een beheerder maakt een beleid niet beschikbaar.
 
-**Verwijderd beleid:** Een gebruiker of beheerder verwijdert een beleid.
+**Geschrapt Beleid:** een gebruiker of een beheerder schrapt een beleid.
 
-**Beleidseigenaar wijzigen:** Een vraag van het API niveau verandert de beleidseigenaar.
+**de Eigenaar van het Beleid van de Verandering:** Een vraag van het API niveau verandert de beleidseigenaar.
 
-**Gebeurtenissen van gebruikers**
+**de gebeurtenissen van de Gebruiker**
 
-**Verwijderde gebruiker:** Een beheerder verwijdert een gebruikersaccount.
+**Geschrapte Gebruiker:** een beheerder schrapt een gebruikersrekening.
 
-**Uitgenodigde gebruiker registreren:** Een externe gebruiker registreert zich met documentveiligheid.
+**Uitgenodigde Gebruiker van het Register:** Een externe gebruikersregisters met documentveiligheid.
 
-**Aanmelding geslaagd:** Aanmeldingspogingen met succes uitgevoerd door beheerders of gebruikers.
+**Succesvolle Login:** Succesvolle login pogingen door beheerders of gebruikers.
 
-**Uitgenodigde gebruikers:** Met documentbeveiliging wordt een gebruiker uitgenodigd zich te registreren.
+**Uitgenodigde Gebruikers:** de veiligheid van het Document nodigt een gebruiker uit om te registreren.
 
-**Geactiveerde gebruikers:** Externe gebruikers activeren hun accounts met behulp van de URL in het activeringsbericht of een beheerder schakelt een account in.
+**Geactiveerde Gebruikers:** de Externe gebruikers activeren hun rekeningen door URL in activeringse-mail te gebruiken, of een beheerder laat een rekening toe.
 
-**Wachtwoord wijzigen:** Uitgenodigde gebruikers wijzigen hun wachtwoorden of een beheerder stelt een wachtwoord voor een lokale gebruiker opnieuw in.
+**Wachtwoord van de Verandering:** Uitgenodigde gebruikers veranderen hun wachtwoorden of een beheerder stelt een wachtwoord voor een lokale gebruiker terug.
 
-**Aanmelding mislukt:** Aanmeldingspogingen door beheerders of gebruikers zijn mislukt.
+**Ontbroken Login:** Ontbroken login pogingen door beheerders of gebruikers.
 
-**gedeactiveerde gebruikers:** Een beheerder schakelt een lokale gebruikersaccount uit.
+**Gedeactiveerde Gebruikers:** een beheerder maakt een lokale gebruikersrekening onbruikbaar.
 
-**Profielupdate:** Uitgenodigde gebruikers wijzigen hun naam, organisatienaam en wachtwoord.
+**Update van het Profiel:** Uitgenodigde gebruikers veranderen hun naam, organisatienaam, en wachtwoord.
 
-**Account vergrendeld:** Een beheerder vergrendelt een account.
+**Vergrendelde Rekening:** een beheerder sluit een rekening.
 
-**Gebeurtenissen beleidsset**
+**Beleid plaatste Gebeurtenissen**
 
-**Gemaakt beleidsset:** Een beheerder of de coördinator van de beleidsreeks leidt tot een beleidsreeks.
+**Gemaakt
+Beleidsset:** een beheerder of beleidssetcoördinator maakt een beleidsset.
 
-**Verwijderde beleidsset:** Een beheerder of een coördinator van de beleidsreeks schrapt een beleidsreeks.
+**Geschrapte Reeks van het Beleid:** een beheerder of een coördinator van de beleidsreeks schrapt een beleidsreeks.
 
-**Gewijzigde beleidsset:** Een beheerder of een coördinator van de beleidsreeks verandert een beleidsreeks.
+**Gewijzigd Beleid plaatste:** een beheerder of een coördinator van de beleidsreeks verandert een beleidsreeks.
 
-**Systeemgebeurtenissen**
+**de gebeurtenissen van het Systeem**
 
-**Mapsynchronisatie voltooid:** Deze informatie is niet beschikbaar op de pagina Gebeurtenissen. De huidige informatie van de foldersynchronisatie, met inbegrip van de huidige synchronisatiestatus en de tijd van de laatste synchronisatie, wordt getoond op de pagina van het Beheer van het Domein. Klik op Instellingen > Gebruikersbeheer > Domeinbeheer om de pagina Domeinbeheer in de beheerconsole te openen.
+**Directory
+Synchronisatie voltooid:** Deze informatie is niet beschikbaar op de pagina Gebeurtenissen. De huidige informatie van de foldersynchronisatie, met inbegrip van de huidige synchronisatiestatus en de tijd van de laatste synchronisatie, wordt getoond op de pagina van het Beheer van het Domein. Klik op Instellingen > Gebruikersbeheer > Domeinbeheer om de pagina Domeinbeheer in de beheerconsole te openen.
 
-**Offlinetoegang voor client inschakelen:** Een gebruiker heeft offline toegang ingeschakeld tot documenten die zijn beveiligd tegen de server op de computer van de gebruiker.
+**de Cliënt laat Offline Toegang toe:** een gebruiker liet off-line toegang tot documenten toe die tegen de server op de computer van de gebruiker worden beveiligd.
 
-**Gesynchroniseerde client** Clienttoepassing moet gegevens synchroniseren met de server om offline toegang mogelijk te maken.
+**Gesynchroniseerde de toepassing van de Cliënt** moet informatie met de server synchroniseren om voor off-line toegang toe te staan.
 
-**Versie komt niet overeen:** Een versie van de SDK voor AEM formulieren die niet compatibel is met de server die verbinding probeerde te maken met de server.
+**Verkeerde van de Versie:** een versie van de AEM vormen SDK die met de server onverenigbaar is probeerde om met de server te verbinden.
 
-**Informatie over mapsynchronisatie:** Deze informatie is niet beschikbaar op de pagina Gebeurtenissen. De huidige informatie van de foldersynchronisatie, met inbegrip van de huidige synchronisatiestatus en de tijd van de laatste synchronisatie, wordt getoond op de pagina van het Beheer van het Domein. Klik op Instellingen > Gebruikersbeheer > Domeinbeheer om de pagina Domeinbeheer in de beheerconsole te openen.
+**Informatie van de Synchronisatie van de Folder:** Deze informatie is niet beschikbaar bij de pagina van Gebeurtenissen. De huidige informatie van de foldersynchronisatie, met inbegrip van de huidige synchronisatiestatus en de tijd van de laatste synchronisatie, wordt getoond op de pagina van het Beheer van het Domein. Klik op Instellingen > Gebruikersbeheer > Domeinbeheer om de pagina Domeinbeheer in de beheerconsole te openen.
 
-**Wijziging serverconfiguratie:** Veranderingen in de serverconfiguratie die of door de Web-pagina&#39;s of manueel door een config.xml- dossier in te voeren worden gedaan. Hieronder vallen wijzigingen in de basis-URL, sessietime-outs, inlogvergrendelingen, directory-instellingen, sleutelrollovers, SMTP-serverinstellingen voor externe registratie, watermerkconfiguratie, weergaveopties, enzovoort.
+**Verandering van de Configuratie van de Server:** Veranderingen in de serverconfiguratie die of door de Web-pagina&#39;s of manueel door een config.xml- dossier in te voeren worden gedaan. Hieronder vallen wijzigingen in de basis-URL, sessietime-outs, inlogvergrendelingen, directory-instellingen, sleutelrollovers, SMTP-serverinstellingen voor externe registratie, watermerkconfiguratie, weergaveopties, enzovoort.
 
 ## Uitgebreide gebruiksregistratie configureren {#configuring-extended-usage-tracking}
 
-Met documentbeveiliging kunt u verschillende aangepaste gebeurtenissen bijhouden die op een beveiligd document kunnen worden uitgevoerd. U kunt het volgen van gebeurtenissen van de server van de documentveiligheid op globaal niveau of op een beleidsniveau toelaten. Vervolgens kunt u een JavaScript instellen om specifieke handelingen vast te leggen die in het beveiligde PDF-document zijn uitgevoerd, zoals op een knop klikken of het document opslaan. Deze gebruiksgegevens worden verzonden als een XML-bestand in sleutelwaardeparen, dat u kunt gebruiken voor verdere analyse. Eindgebruikers die de beveiligde documenten openen, kunnen deze tracering toestaan of weigeren vanuit de clienttoepassing.
+Met documentbeveiliging kunt u verschillende aangepaste gebeurtenissen bijhouden die op een beveiligd document kunnen worden uitgevoerd. U kunt het volgen van gebeurtenissen van de server van de documentveiligheid op globaal niveau of op een beleidsniveau toelaten. Vervolgens kunt u een JavaScript instellen om specifieke handelingen vast te leggen die in het beveiligde PDF-document zijn uitgevoerd, zoals klikken op een knop of het document opslaan. Deze gebruiksgegevens worden verzonden als een XML-bestand in sleutelwaardeparen, dat u kunt gebruiken voor verdere analyse. Eindgebruikers die de beveiligde documenten openen, kunnen deze tracering toestaan of weigeren vanuit de clienttoepassing.
 
 Als het volgen op het globale niveau wordt toegelaten, kunt u dit het plaatsen op het beleidsniveau met voeten treden en het voor een bepaald beleid onbruikbaar maken. Overschrijven op beleidsniveau is niet mogelijk als tracering op mondiaal niveau is uitgeschakeld. De lijst met bijgehouden gebeurtenissen wordt automatisch naar de server geduwd wanneer het aantal gebeurtenissen 25 bereikt of wanneer het document wordt gesloten. U kunt uw manuscript ook vormen om de gebeurtenislijst volgens uw vereisten uitdrukkelijk te duwen. U kunt de functie voor het bijhouden van gebeurtenissen aanpassen door de eigenschappen en methoden van het beveiligingsobject van het document te openen.
 
@@ -380,13 +382,13 @@ Nadat u het bijhouden van wijzigingen hebt ingeschakeld, is het bijhouden van wi
 
 ### Uitgebreide gebruiksregistratie inschakelen of uitschakelen {#enable-or-disable-extended-usage-tracking}
 
-Voordat u begint, moet u ervoor zorgen dat Servercontrole is ingeschakeld. Zie [Gebeurteniscontrole en privacy-instellingen configureren](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) voor meer informatie over accountantscontrole .
+Voordat u begint, moet u ervoor zorgen dat Servercontrole is ingeschakeld. Zie [ het Vormen gebeurtenis controle en privacy montages ](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) voor meer informatie bij controle.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuration > Audit and Privacy Settings.
 1. Selecteer Ja of Nee onder Bijhouden inschakelen om uitgebreide gebruiksregistratie te configureren.
 1. Selecteer Ja of Nee als u de selectie van het selectievakje Verzameling van gedetailleerde gebruiksgegevens toestaan op de aanmeldingspagina wilt inschakelen, onder de standaardinstelling Bijhouden inschakelen.
 
-Als u de bijgehouden gebeurtenissen wilt weergeven, kunt u het filter Documentgebeurtenissen op de pagina Gebeurtenissen gebruiken. De gebeurtenissen die met JavaScript worden bijgehouden, worden aangeduid als Gedetailleerd gebruik bijhouden. Zie [Gebeurtenissen controleren](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) voor meer informatie over gebeurtenissen.
+Als u de bijgehouden gebeurtenissen wilt weergeven, kunt u het filter Documentgebeurtenissen op de pagina Gebeurtenissen gebruiken. De gebeurtenissen die worden bijgehouden met JavaScript, worden aangeduid als Gedetailleerd gebruik bijhouden. Verwijs naar [ de gebeurtenissen van de Controle ](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) voor meer informatie over gebeurtenissen.
 
 ## Beveiligingsweergave-instellingen voor documenten configureren {#configure-document-security-display-settings}
 
@@ -395,35 +397,36 @@ Als u de bijgehouden gebeurtenissen wilt weergeven, kunt u het filter Documentge
 
 ### Weergave-instellingen {#display-settings}
 
-**Rijen die worden weergegeven voor zoekresultaten:** Het aantal rijen dat op een pagina wordt weergegeven wanneer zoekopdrachten worden uitgevoerd.
+**Rijen aan vertoning voor onderzoeksresultaten:** Aantal rijen die op een pagina verschijnen wanneer de onderzoeken worden uitgevoerd.
 
-**Aanpassing voor dialoogvenster met aanmelding bij client**
+**Aanpassing voor cliëntlogin dialoog**
 
 Deze instellingen bepalen de tekst die wordt weergegeven in de aanmeldingsprompt die wordt weergegeven wanneer een gebruiker zich via een clienttoepassing aanmeldt bij documentbeveiliging.
 
-**Welkomsttekst:** De welkomstberichttekst, zoals &quot;Meld u aan met uw gebruikersnaam en wachtwoord&quot;. De welkomstberichttekst moet informatie bevatten over hoe u zich kunt aanmelden bij de documentbeveiliging en hoe u contact kunt opnemen met een beheerder of een andere aangewezen ondersteuningspersoon in uw organisatie voor hulp. Externe gebruikers moeten bijvoorbeeld mogelijk contact opnemen met een beheerder als ze hun wachtwoorden vergeten of hulp nodig hebben bij het registratie- of aanmeldingsproces. De welkomsttekst mag maximaal 512 tekens lang zijn.
+**Welkome Tekst:** De welkome berichttekst, zoals &quot;gelieve login met Uw Naam en Wachtwoord van de Gebruiker&quot;. De welkomstberichttekst moet informatie bevatten over hoe u zich kunt aanmelden bij de documentbeveiliging en hoe u contact kunt opnemen met een beheerder of een andere aangewezen ondersteuningspersoon in uw organisatie voor hulp. Externe gebruikers moeten bijvoorbeeld mogelijk contact opnemen met een beheerder als ze hun wachtwoorden vergeten of hulp nodig hebben bij het registratie- of aanmeldingsproces. De welkomsttekst mag maximaal 512 tekens lang zijn.
 
-**Tekst gebruikersnaam:** Het tekstlabel voor het vak Gebruikersnaam.
+**Tekst van de Naam van de Gebruiker:** het tekstetiket voor het vakje van de gebruikersnaam.
 
-**Wachtwoordtekst:** Het tekstlabel voor het wachtwoordvak.
+**Tekst van het Wachtwoord:** het tekstetiket voor het wachtwoordvakje.
 
-**Aanpassing voor dialoogvenster voor clientcertificaatverificatie**
+**Aanpassing voor de dialoog van de authentificatie van het cliëntcertificaat**
 
 Deze instellingen bepalen de tekst die wordt weergegeven in het dialoogvenster voor certificaatverificatie.
 
-**Kies Type verificatie:** De tekst die wordt weergegeven om een gebruiker de opdracht te geven een verificatietype te selecteren.
+**Kies
+Tekst van het Type van authentificatie:** de tekst die aan een gebruiker wordt getoond om een authentificatietype te selecteren.
 
-**Certificaattekst kiezen:** De tekst die wordt weergegeven om een gebruiker de instructie te geven een certificaattype te selecteren.
+**kies de Tekst van het Certificaat:** de tekst die wordt getoond om een gebruiker te leiden om een certificaattype te selecteren.
 
-**Fouttekst voor certificaten niet beschikbaar:** Bericht van maximaal 512 tekens die moeten worden weergegeven wanneer het geselecteerde certificaat niet beschikbaar is.
+**Certificaten niet Beschikbare Tekst van de Fout:** Bericht van maximaal 512 karakters aan vertoning wanneer het geselecteerde certificaat niet beschikbaar is.
 
-**Aanpassing voor weergave van clientcertificaten**
+**Aanpassing voor de vertoning van het cliëntcertificaat**
 
-**Alleen vertrouwde referentie-uitgevers weergeven:** Als deze optie is geselecteerd, worden in de clienttoepassing alleen certificaten van referentie-uitgevers aan de gebruiker aangeboden die AEM formulieren zo configureren dat ze worden vertrouwd (zie Certificaten en referenties beheren). Als deze optie niet is geselecteerd, wordt de gebruiker een lijst met alle certificaten op het systeem van de gebruiker weergegeven.
+**slechts Vertrouwde Vertrouwde Uitgevers van de Vertoning van de Vertrouwde Verantwoordelijkheid:** Wanneer deze optie wordt geselecteerd, stelt de cliënttoepassing de gebruiker met slechts certificaten van crediteurenuitgevers voor die de AEM vormen aan vertrouwen (zie het Leiden certificaten en geloofsbrieven.) worden gevormd Als deze optie niet is geselecteerd, wordt de gebruiker een lijst met alle certificaten op het systeem van de gebruiker weergegeven.
 
 ## Dynamische watermerken configureren {#configure-dynamic-watermarks}
 
-Met documentbeveiliging kunt u standaardinstellingen configureren voor de optie voor dynamisch watermerk die u kunt toepassen wanneer u beleid maakt. A *watermerk* Dit is een afbeelding die boven de tekst in het document wordt geplaatst. Dit is handig voor het bijhouden van de inhoud van een document en kan helpen bij het identificeren van illegaal gebruik van de inhoud.
+Met documentbeveiliging kunt u standaardinstellingen configureren voor de optie voor dynamisch watermerk die u kunt toepassen wanneer u beleid maakt. A *watermerk* is een beeld dat over tekst in het document wordt geplaatst. Dit is handig voor het bijhouden van de inhoud van een document en kan helpen bij het identificeren van illegaal gebruik van de inhoud.
 
 Een dynamisch watermerk kan bestaan uit tekst die bestaat uit gedefinieerde variabelen zoals de gebruikersnaam en de datum en aangepaste tekst, of uit rijke inhoud binnen een PDF. U kunt watermerken met verscheidene elementen vormen elk met zijn eigen het plaatsen en het formatteren.
 
@@ -443,12 +446,12 @@ Als u bijvoorbeeld verschillende tekst in de kop- en voettekst, op de marges en 
 
 Gewoonlijk gebruikt u watermerken op basis van PDF om grafische inhoud op te nemen, zoals logo&#39;s of speciale symbolen, zoals copyright of geregistreerd handelsmerk.
 
-U kunt de limieten voor het aantal watermerkelementen en de grootte van het PDF-bestand wijzigen door het configuratiebestand voor documentbeveiliging te wijzigen. Zie [De configuratieparameters van het watermerk wijzigen](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
+U kunt de limieten voor het aantal watermerkelementen en de grootte van het PDF-bestand wijzigen door het configuratiebestand voor documentbeveiliging te wijzigen. Zie [ Verandering de parameters van de watermerkconfiguratie ](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
 
 Houd rekening met het volgende wanneer u watermerken configureert:
 
 * U kunt een met een wachtwoord beveiligd PDF-document niet gebruiken als watermerkelement. Als het watermerk dat u maakt echter andere elementen bevat die niet met een wachtwoord zijn beveiligd, worden deze toegepast als onderdeel van het watermerk.
-* U kunt de maximale bestandsgrootte van de PDF wijzigen die u als watermerkelement wilt gebruiken. Grote PDF-documenten die als watermerken worden gebruikt, hebben echter een negatieve invloed op de prestaties tijdens offlinesynchronisatie van documenten die met dergelijke watermerken zijn toegepast. Zie [De configuratieparameters van het watermerk wijzigen](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
+* U kunt de maximale bestandsgrootte van de PDF wijzigen die u als watermerkelement wilt gebruiken. Grote PDF-documenten die als watermerken worden gebruikt, hebben echter een negatieve invloed op de prestaties tijdens offlinesynchronisatie van documenten die met dergelijke watermerken zijn toegepast. Zie [ Verandering de parameters van de watermerkconfiguratie ](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
 * Alleen de eerste pagina van de geselecteerde PDF wordt gebruikt als watermerk. Zorg ervoor dat de informatie die u als watermerk wilt weergeven, beschikbaar is op de eerste pagina zelf.
 * Hoewel u de schaling van het document van de PDF kunt specificeren, overweeg de paginagrootte en lay-out van de PDF als u van plan bent om het als watermerk in kopbal, footer, of marges te gebruiken.
 * Voer de naam correct in wanneer u de naam van het lettertype opgeeft. AEM formulieren vervangen het font dat u hebt opgegeven als dit niet aanwezig is op de clientcomputer waar het document wordt geopend.
@@ -482,24 +485,24 @@ U kunt dynamische watermerksjablonen maken. Deze sjablonen blijven beschikbaar a
 1. Klik op Nieuw.
 1. Typ in het vak Naam een naam voor het nieuwe watermerk.
 
-   ***notitie **: U kunt bepaalde speciale tekens niet gebruiken in de namen of beschrijvingen van watermerken of watermerkelementen. Zie de beperkingen in [Overwegingen bij het bewerken van beleidsregels](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***nota **: U kunt sommige speciale karakters in de namen of de beschrijvingen van watermerken of watermerkelementen niet gebruiken. Zie de beperkingen die in [ worden vermeld Overwegingen voor het uitgeven van beleid ](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. Voer onder Naam naast het plusteken een betekenisvolle naam in voor het watermerkelement, zoals Koptekst, voeg een beschrijving toe en vouw het plusteken uit om de opties weer te geven.
-1. Selecteer onder Bron het type watermerk als Tekst of PDF.
+1. Selecteer onder Source het type watermerk als Tekst of PDF.
 1. Voer de volgende handelingen uit als u Tekst hebt geselecteerd:
 
    * Selecteer de typen watermerken die u wilt opnemen. Als u Aangepaste tekst selecteert, typt u in het aangrenzende vak de tekst die u voor het watermerk wilt weergeven. Onthoud de tekstlengte die als watermerk wordt weergegeven.
    * Geef de tekstopmaakeigenschappen op, zoals lettertypenaam, tekengrootte, voorgrondkleur en achtergrondkleur voor de tekstinhoud van de watermerktekst. Geef de voor- en achtergrondkleur op als hexadecimale waarden.
 
-     ***notitie **: Als u de schaaloptie Aanpassen aan pagina selecteert, is de eigenschap voor de tekengrootte niet beschikbaar voor bewerking.*
+     ***nota **: Als u de het schrapen optie zoals Aanpassen aan Pagina selecteert, is het bezit van de doopvontgrootte niet beschikbaar voor het uitgeven.*
 
-1. Als u PDF hebt geselecteerd voor opties voor rijke watermerken, klikt u op **Bladeren** naast PDF van watermerk selecteren om het PDF-document te selecteren dat u als watermerk wilt gebruiken.
+1. Als u PDF voor rijke watermerkopties selecteerde, doorbladert de klik **** naast Uitgezochte PDF van het Watermerk om het document van de PDF te selecteren dat u als watermerk wilt gebruiken.
 
-   ***notitie **: Gebruik geen met een wachtwoord beveiligd PDF-document. Als u een met een wachtwoord beveiligde PDF opgeeft als het watermerkelement, wordt het watermerk niet toegepast.*
+   ***nota **: Gebruik geen wachtwoord-beschermd document van PDF. Als u een wachtwoord-beschermde PDF als watermerkelement specificeert, wordt het watermerk niet toegepast.*
 
 1. Selecteer Ja of Nee onder Als achtergrond gebruiken.
 
-   **notitie**: Op dit moment wordt het watermerk op de voorgrond weergegeven, ongeacht deze instelling.
+   **nota**: Momenteel, verschijnt het watermerk in de voorgrond ongeacht dit het plaatsen.
 
 1. Als u wilt bepalen waar het watermerk in het document wordt weergegeven, configureert u de opties Verticaal uitlijnen en Horizontaal uitlijnen.
 1. Selecteer Aanpassen aan pagina of selecteer % en typ een percentage in het vak. De waarde moet een geheel getal zijn, niet een breuk. Als u de grootte van het watermerk wilt configureren, gebruikt u een waarde die het percentage van de pagina aangeeft of stelt u het watermerk zo in dat het de grootte van de pagina aanpast.
@@ -507,15 +510,15 @@ U kunt dynamische watermerksjablonen maken. Deze sjablonen blijven beschikbaar a
 1. Typ een percentage in het vak Dekking. Gebruik een geheel getal, geen breuk.
 1. Stel onder Geavanceerde opties het volgende in:
 
-   **Opties voor paginabereik**
+   **Opties van de Waaier van de Pagina**
 
    Stel het paginabereik in waarin het watermerk moet worden weergegeven. Voer de startpagina in als 1 en de eindpagina als -1 om alle pagina&#39;s te laten markeren met het watermerk.
 
-   **Weergaveopties**
+   **Opties van de Vertoning**
 
    Selecteer waar u het watermerk wilt laten verschijnen. Standaard wordt het watermerk zowel op elektronische (online) als op papier (afdrukken) weergegeven.
 
-1. Klikken **Nieuw** onder watermerkelementen om indien nodig meer watermerkelementen toe te voegen.
+1. Klik **Nieuw** onder watermerkelementen om meer watermerkelementen indien nodig toe te voegen.
 1. Klik op OK.
 
 ### Een sjabloon voor een dynamisch watermerk bewerken {#edit-a-dynamic-watermark-template}
@@ -537,7 +540,7 @@ Wanneer u een dynamisch watermerk verwijdert, kunt u dit niet meer toevoegen aan
 
 Gebruikers die zich buiten uw organisatie bevinden, kunnen zich registreren met documentbeveiliging. Uitgenodigde gebruikers die hun accounts registreren en activeren, kunnen zich aanmelden bij de documentbeveiliging met hun e-mailadres en het wachtwoord dat ze hebben gemaakt tijdens de registratie. Geregistreerde uitgenodigde gebruikers kunnen met beleid beveiligde documenten gebruiken waarvoor zij machtigingen hebben.
 
-Wanneer uitgenodigde gebruikers worden geactiveerd, worden ze lokale gebruikers. De lokale gebruikers kunnen worden gevormd en worden geleid door het Uitgenodigde en Lokale gebied van Gebruikers te gebruiken. (Zie [Uitgenodigde en lokale gebruikersaccounts beheren](/help/forms/using/admin-help/invited-local-user-accounts.md#managing-invited-and-local-user-accounts).)
+Wanneer uitgenodigde gebruikers worden geactiveerd, worden ze lokale gebruikers. De lokale gebruikers kunnen worden gevormd en worden geleid door het Uitgenodigde en Lokale gebied van Gebruikers te gebruiken. (Zie [ het Leiden uitgenodigde en lokale gebruikersrekeningen ](/help/forms/using/admin-help/invited-local-user-accounts.md#managing-invited-and-local-user-accounts).)
 
 Afhankelijk van de mogelijkheden die u inschakelt voor uitgenodigde gebruikers, kunnen zij ook gebruikmaken van de volgende documentbeveiligingsfuncties:
 
@@ -552,9 +555,9 @@ Met documentbeveiliging wordt automatisch een e-mailuitnodiging voor een registr
 
 Het registratiebericht bevat een koppeling naar een registratiepagina en informatie over de manier waarop u zich kunt registreren. Nadat de uitgenodigde gebruiker zich heeft geregistreerd, geeft de documentveiligheid een activeringse-mail met een verbinding aan een pagina van de Activering uit. Als de account is geactiveerd, blijft deze geldig totdat u de account deactiveert of verwijdert.
 
-Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [Een lokaal domein toevoegen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) en [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem van de gebruikersregistratie hebben die gebruikend de AEM vorm SDK wordt gecreeerd. Zie de Help bij &quot;Developing SPIs for AEM forms&quot; in [Programmeren met AEM formulieren](/help/forms/developing/introducing-java-api-soap-quick.md). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
+Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [ een lokaal domein ](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) toevoegen en [ Creërend en vormend rollen ](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem van de gebruikersregistratie hebben die gebruikend de AEM vorm SDK wordt gecreeerd. Zie de hulp bij &quot;het Ontwikkelen van SPIs voor AEM vormen&quot;in [ Programmering met AEM vormen ](/help/forms/developing/introducing-java-api-soap-quick.md). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
 
-**Ingeschakelde gebruikersregistratie inschakelen en configureren**
+**laat en vormt uitgenodigde gebruikersregistratie** toe
 
 Standaard is het registratieproces voor uitgenodigde gebruikers uitgeschakeld. U kunt de uitgenodigde gebruikersregistratie voor documentveiligheid, zoals vereist toelaten en onbruikbaar maken.
 
@@ -577,33 +580,33 @@ U kunt de registratie met documentbeveiliging voor bepaalde externe gebruikers o
 
 De volgende instellingen bevinden zich in het gebied Filter e-mailbeperking van de pagina Invited User Registration.
 
-**Uitsluiting:** Typ het e-mailadres van een gebruiker of groep die u wilt uitsluiten. Als u meerdere gebruikers of groepen wilt uitsluiten, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt uitsluiten die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt uitsluiten, typt u &amp;last;.example.com.
+**Uitsluiting:** Type het e-mailadres van een gebruiker of een groep om uit te sluiten. Als u meerdere gebruikers of groepen wilt uitsluiten, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt uitsluiten die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt uitsluiten, typt u &amp;ast;.example.com.
 
-**Opname:** Typ het e-mailadres van een gebruiker of groep die u wilt opnemen. Als u meerdere gebruikers of groepen wilt opnemen, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt opnemen die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt opnemen, typt u &amp;last;.example.com.
+**Opname:** Type het e-mailadres van een gebruiker of een groep om te omvatten. Als u meerdere gebruikers of groepen wilt opnemen, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt opnemen die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt opnemen, typt u &amp;ast;.example.com.
 
 ### Parameters van server- en registratierekeningen {#server-and-registration-account-parameters}
 
 De volgende instellingen bevinden zich in het gedeelte Algemene instellingen van de pagina Uitgenodigde gebruikersregistratie.
 
-**SMTP-host:** De hostnaam van de SMTP-server. De SMTP-server beheert de uitgaande e-mailberichten om uitgenodigde gebruikersaccounts te registreren en activeren.
+**SMTP Gastheer:** de gastheernaam van de server SMTP. De SMTP-server beheert de uitgaande e-mailberichten om uitgenodigde gebruikersaccounts te registreren en activeren.
 
 Indien nodig door uw gastheer SMTP, typ de vereiste informatie in de dozen van de Naam van de Rekening van de Server SMTP en van het Wachtwoord van de Rekening SMTP om met de server te verbinden SMTP. Sommige organisaties handhaven deze eis niet. Als u informatie nodig hebt, zie uw systeembeheerder.
 
-**Naam van SMTP-serversocketklasse:** Naam van de klasse Socket voor de SMTP-server. Bijvoorbeeld javax.net.ssl.SSLSocketFactory.
+**SMTP de klassennaam van de servercontactdoos:** de klassennaam van de Contactdoos voor de server SMTP. Bijvoorbeeld javax.net.ssl.SSLSocketFactory.
 
-**Type e-mailinhoud:** Accepteerde MIME-typen zoals tekst/normale tekst of tekst/html.
+**Type van Inhoud E-mail:** Accepteerde MIME type zoals tekst/onbewerkt of tekst/html.
 
-**E-mailcodering:** Coderingsindeling voor het verzenden van e-mailberichten. U kunt elke codering opgeven, bijvoorbeeld UTF-8 voor Unicode of ISO-8859-1 voor Latijn. De standaardwaarde is UTF-8.
+**E-mail het Coderen:** Coderend formaat te gebruiken wanneer het verzenden van e-mailberichten. U kunt elke codering opgeven, bijvoorbeeld UTF-8 voor Unicode of ISO-8859-1 voor Latijn. De standaardwaarde is UTF-8.
 
-**E-mailadres omleiden:** Wanneer u een e-mailadres voor deze instelling opgeeft, worden alle nieuwe uitnodigingen verzonden naar het opgegeven adres. Deze instelling kan handig zijn voor testdoeleinden.
+**e-mailadres opnieuw richten:** Wanneer u een e-mailadres voor dit het plaatsen specificeert, worden om het even welke nieuwe uitnodiging verzonden naar het verstrekte adres. Deze instelling kan handig zijn voor testdoeleinden.
 
-**Lokale domeinen gebruiken:** Selecteer het juiste domein. Voor een nieuwe installatie, zorg ervoor dat u het domein door Beheer van de Gebruiker creeerde te gebruiken. Als dit een verbetering is, werd een extern gebruikersdomein gecreeerd tijdens de verbetering en kan worden gebruikt.
+**Lokale Domeinen van het Gebruik:** selecteer het aangewezen domein. Voor een nieuwe installatie, zorg ervoor dat u het domein door Beheer van de Gebruiker creeerde te gebruiken. Als dit een verbetering is, werd een extern gebruikersdomein gecreeerd tijdens de verbetering en kan worden gebruikt.
 
-**SSL gebruiken voor SMTP-server:** Selecteer deze optie als u SSL wilt inschakelen voor de SMTP-server.
+**SSL van het Gebruik voor server SMTP:** selecteer deze optie om SSL voor de server toe te laten SMTP.
 
-**Aanmeldingskoppeling weergeven op registratiepagina:** Toont een login verbinding op de registratiepagina die voor uitgenodigde gebruikers wordt getoond.
+**login van de Vertoning verbinding op registratiepagina:** toont een login verbinding op de registratiepagina die voor uitgenodigde gebruikers wordt getoond.
 
-**Om de Veiligheid van de Laag van het Vervoer (TLS) voor de server toe te laten SMTP**
+**om de Veiligheid van de Laag van het Vervoer (TLS) voor de server toe te laten SMTP**
 
 1. Open de beheerconsole.
 
@@ -616,10 +619,10 @@ Indien nodig door uw gastheer SMTP, typ de vereiste informatie in de dozen van d
    >
    >Als u Microsoft Office 365 als server SMTP voor het verzenden van de uitnodigingen voor gebruikersregistratie gebruikt, gebruik de volgende montages:
    >
-   >**SMTP-host:** smtp.office365.com
-   >**Poort:** 587
+   >**SMTP Gastheer:** smtp.office365.com
+   >**Haven:** 587
 
-1. Daarna, moet u config.xml bijwerken. Zie [Configuratie om SMTP voor de Veiligheid van de Laag van het Vervoer (TLS) toe te laten](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)
+1. Daarna, moet u config.xml bijwerken. Zie [ Configuratie om SMTP voor de Veiligheid van de Laag van het Vervoer (TLS) toe te laten ](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)
 
 >[!NOTE]
 >
@@ -633,13 +636,13 @@ Wanneer de ontvanger de account activeert, wordt de gebruiker een lokale gebruik
 
 De volgende instellingen bevinden zich in het gedeelte Invitation Email Configuration van de pagina Invited User Registration.
 
-**Van:** Het e-mailadres waarnaar de uitnodigings-e-mail wordt verzonden. De standaardindeling van het e-mailadres Van is postmaster@[your_installation_domain].com.
+**van:** Het e-mailadres waarvan uitnodigingsE-mail wordt verzonden. Het standaardformaat van Van e-mailadres is postmaster@ [ your_installation_domain ].com.
 
-**Betreft:** Standaardonderwerp voor het e-mailbericht voor de uitnodiging.
+**Onderwerp:** Standaard onderwerp voor het uitnodigingse-mailbericht.
 
-**Time-out:** Het aantal dagen waarna de registratieuitnodiging vervalt als de externe gebruiker zich niet registreert. De standaardwaarde is 30 dagen.
+**Onderbreking:** het aantal dagen waarna de registratieuitnodiging verloopt als de externe gebruiker niet registreert. De standaardwaarde is 30 dagen.
 
-**Bericht:** De tekst die wordt weergegeven in de hoofdtekst van het bericht waarin de gebruiker wordt uitgenodigd zich te registreren.
+**Bericht:** de tekst die in het lichaam van het bericht verschijnt uitnodigend de gebruiker om te registreren.
 
 ### Instellingen voor e-mail activeren {#activation-email-settings}
 
@@ -653,13 +656,13 @@ De volgende instellingen bevinden zich in het gedeelte Configuratie via e-mail a
 >
 >Het wordt ook aanbevolen dat u een bericht op het aanmeldingsscherm configureert om externe gebruikers te adviseren hoe zij hun beheerder kunnen raadplegen voor een nieuw wachtwoord of voor andere informatie.
 
-**Van:** Het e-mailadres van waaruit de activeringse-mail is verzonden. Dit e-mailadres ontvangt berichten over mislukte levering van de e-mailhost van de registrant en ook alle berichten die de ontvanger verzendt als antwoord op de registratie-e-mail. De standaardindeling van het e-mailadres Van is postmaster@[your_installation_domain].com.
+**van:** Het e-mailadres waarvan activeringse-mail wordt verzonden. Dit e-mailadres ontvangt berichten over mislukte levering van de e-mailhost van de registrant en ook alle berichten die de ontvanger verzendt als antwoord op de registratie-e-mail. Het standaardformaat van Van e-mailadres is postmaster@ [ your_installation_domain ].com.
 
-**Betreft:** Standaardonderwerp voor het activeringsbericht.
+**Onderwerp:** Standaardonderwerp voor het activeringse-mailbericht.
 
-**Time-out:** Het aantal dagen waarna de activeringsuitnodiging vervalt als de gebruiker het account niet activeert. De standaardwaarde is 30 dagen.
+**Onderbreking:** het aantal dagen waarna de activeringsuitnodiging verloopt als de gebruiker niet de rekening activeert. De standaardwaarde is 30 dagen.
 
-**Bericht:** De tekst die in het bericht verschijnt een bericht erop wijst dat de gebruikersrekening van de ontvanger moet worden geactiveerd. Mogelijk wilt u ook informatie opnemen, zoals hoe u contact opneemt met een beheerder om een nieuw wachtwoord te verkrijgen.
+**Bericht:** de tekst die in het lichaam van het bericht verschijnt een bericht erop wijzend dat de de gebruikersrekening van de ontvanger moet worden geactiveerd. Mogelijk wilt u ook informatie opnemen, zoals hoe u contact opneemt met een beheerder om een nieuw wachtwoord te verkrijgen.
 
 ### E-mail voor opnieuw instellen van wachtwoord configureren {#configure-a-password-reset-email}
 
@@ -667,19 +670,19 @@ Als u het wachtwoord van een uitgenodigde gebruiker opnieuw moet instellen, word
 
 De volgende instellingen bevinden zich in het gebied Wachtwoord opnieuw instellen in de pagina Uitgenodigde gebruikersregistratie.
 
-**Van:** Het e-mailadres waar het e-mailadres voor het opnieuw instellen van het wachtwoord naartoe wordt verzonden. De standaardindeling van het e-mailadres Van is postmaster@[your_installation_domain].com.
+**van:** Het e-mailadres waarvan het wachtwoord terugstellende e-mail wordt verzonden. Het standaardformaat van Van e-mailadres is postmaster@ [ your_installation_domain ].com.
 
-**Betreft:** Standaardonderwerp voor het e-mailbericht voor opnieuw instellen.
+**Onderwerp:** Standaardonderwerp voor het terugstellings e-mailbericht.
 
-**Bericht:** De tekst die in het bericht verschijnt een bericht erop wijst dat het externe gebruikerswachtwoord van de ontvanger wordt teruggesteld.
+**Bericht:** de tekst die in het lichaam van het bericht verschijnt een bericht erop wijzend dat het externe gebruikerswachtwoord van de ontvanger wordt teruggesteld.
 
 ## Gebruikers en groepen toestaan beleidsregels te maken {#enable-users-and-groups-to-create-policies}
 
 De pagina van de Configuratie heeft een verbinding aan de Mijn pagina van Beleid, waar u specificeert welke eind - gebruikers mijn beleid kunnen tot stand brengen en welke gebruikers en groepen in onderzoeksresultaten zichtbaar zijn. De pagina Mijn beleid heeft twee tabbladen:
 
-**Het tabblad Beleid maken:** Gebruik om gebruikerstoestemmingen te vormen om douanebeleid tot stand te brengen.
+**creeer Beleid tabel:** Gebruik om gebruikerstoestemmingen te vormen om douanebeleid tot stand te brengen.
 
-**Tabblad Zichtbare gebruikers en groepen:** Gebruik deze optie om te bepalen welke gebruikers en groepen zichtbaar zijn in de zoekresultaten van de gebruiker. De supergebruiker of de beheerder van de beleidsreeks wordt vereist om domeinen, die in Beheer van de Gebruiker worden gecreeerd, aan de zichtbare gebruiker en de groep voor elke beleidsreeks te selecteren en toe te voegen. Deze lijst is zichtbaar aan de coördinator van de beleidsreeks en wordt gebruikt om grenzen te zetten op welke domeinen de coördinator van de beleidsreeks kan doorbladeren wanneer het kiezen van gebruikers om aan beleid toe te voegen.
+**Zichtbare Gebruikers en Groepen tabel:** Gebruik om te controleren welke gebruikers en groepen in de resultaten van het gebruikersonderzoek zichtbaar zijn. De supergebruiker of de beheerder van de beleidsreeks wordt vereist om domeinen, die in Beheer van de Gebruiker worden gecreeerd, aan de zichtbare gebruiker en de groep voor elke beleidsreeks te selecteren en toe te voegen. Deze lijst is zichtbaar aan de coördinator van de beleidsreeks en wordt gebruikt om grenzen te zetten op welke domeinen de coördinator van de beleidsreeks kan doorbladeren wanneer het kiezen van gebruikers om aan beleid toe te voegen.
 
 Alvorens gebruikers toestemming te geven om douanebeleid tot stand te brengen, overweeg hoeveel toegang of controle u individuele gebruikers wilt hebben. Overweeg bovendien hoe zichtbaar u uw gebruikers en groepen wilt maken wanneer u ze zichtbaar maakt voor zoekopdrachten.
 
@@ -734,14 +737,14 @@ U kunt de volgende wijzigingen aanbrengen met behulp van het configuratiebestand
 >
 >Wanneer u het configuratiebestand importeert, wordt uw systeem op basis van de gegevens in het bestand opnieuw geconfigureerd. De uitzonderingen zijn dynamische watermerkconfiguratie en informatie van douanegebeurtenissen, die niet met het uitgevoerde configuratiedossier worden bewaard. Configureer deze gegevens handmatig in uw nieuwe systeem. Slechts zou een systeembeheerder of een professionele de dienstenconsultant die met documentveiligheid en XML vertrouwd is de inhoud van een configuratiedossier, zoals om een bedorven plaatsen opnieuw te vormen of parameters voor een bepaald scenario van de ondernemingsplaatsing te stemmen moeten wijzigen.
 
-**Een configuratiebestand exporteren**
+**Uitvoer een configuratiedossier**
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging 11 > Configuratie > Handmatige configuratie.
 1. Klik op Exporteren en sla het configuratiebestand op een andere locatie op. De standaardbestandsnaam is config.xml.
 1. Klik op OK.
 1. Voordat u het configuratiebestand wijzigt, moet u een reservekopie maken voor het geval u het bestand moet herstellen.
 
-**Een configuratiebestand importeren**
+**de Invoer een configuratiedossier**
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging 11 > Configuratie > Handmatige configuratie.
 1. Klik doorbladeren om naar het configuratiedossier te gaan en dan de Invoer te klikken. U kunt het pad niet rechtstreeks in het vak Bestandsnaam typen.
@@ -755,22 +758,22 @@ Standaard vindt de synchronisatie automatisch om de vier uur plaats en zo nodig 
 
 In het configuratiebestand voor documentbeveiliging kunt u de standaardfrequentie van de automatische achtergrondsynchronisatie opgeven. Deze instelling fungeert als de standaardtime-outperiode voor clienttoepassingen, tenzij de client expliciet een eigen time-outwaarde instelt.
 
-1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open het configuratiebestand in een editor en zoek de `PolicyServer` knooppunt. Zoek onder dat knooppunt de `ServerSettings` knooppunt.
-1. In de `ServerSettings` , voeg deze volgende vermelding toe en sla het bestand op:
+1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Open het configuratiebestand in een editor en zoek het knooppunt `PolicyServer` . Zoek onder dat knooppunt het knooppunt `ServerSettings` .
+1. Voeg de volgende vermelding toe aan het knooppunt `ServerSettings` en sla het bestand op:
 
    `<entry key="BackgroundSyncFrequency" value="`*tijd* `"/>`
 
-   waar *tijd* is het aantal seconden tussen automatische achtergrondsynchronisaties. Als u deze waarde hebt verzonden naar `0`Synchronisatie vindt altijd plaats. De standaardwaarde is `14400` seconden (om de vier uur).
+   waar *tijd* het aantal seconden tussen automatische achtergrondsynchronisaties is. Als u deze waarde naar `0` hebt verzonden, vindt synchronisatie altijd plaats. De standaardwaarde is `14400` seconden (elke vier uur).
 
-1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Importeer het configuratiebestand. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### Documentbeveiligingsservices weigeren voor specifieke toepassingen {#denying-document-security-services-for-specific-applications}
 
 U kunt documentveiligheid vormen om de diensten aan toepassingen te ontkennen die aan specifieke criteria voldoen. De criteria kunnen één enkel attribuut zoals een platformnaam specificeren of het kan veelvoudige reeksen attributen specificeren. Deze functie kan u helpen de verzoeken te controleren documentveiligheid moet behandelen. Hier volgen enkele toepassingen van deze functie:
 
-* **Inkomensbescherming:** U kunt toegang tot om het even welke cliënttoepassing willen ontkennen die uw opbrengstovereenkomsten niet steunt.
-* **Compatibiliteit van toepassingen:** Sommige toepassingen zijn mogelijk niet compatibel met het beleid of het gedrag van uw documentbeveiligingsserver.
+* **de bescherming van de Inkomsten:** u kunt toegang tot om het even welke cliënttoepassing willen ontkennen die uw opbrengstovereenkomsten niet steunt.
+* **de verenigbaarheid van de Toepassing:** sommige toepassing kan met het beleid of het gedrag van uw server van de documentveiligheid onverenigbaar zijn.
 
 Wanneer clienttoepassingen proberen een koppeling tot stand te brengen met documentbeveiliging, bieden ze toepassings-, versie- en platforminformatie. Bij documentbeveiliging wordt deze informatie vergeleken met de instellingen voor weigeringen die worden verkregen uit het configuratiebestand voor documentbeveiliging.
 
@@ -801,25 +804,25 @@ Diverse toepassingen van de Adobe omvatten productinformatie wanneer het vragen 
 Wanneer Acrobat of Adobe Reader een service aanvraagt bij de documentbeveiliging, wordt de volgende productinformatie verschaft:
 
 * **Integrator:** Adobe Systems, Inc.
-* **Integratorversie:** 1,0
-* **Toepassingsfamilie:** Acrobat
-* **Toepassingsnaam:** Acrobat
-* **Toepassingsversie:** 9.0.0.
+* **versie van de Integrator:** 1.0
+* **familie van de Toepassing:** Acrobat
+* **naam van de Toepassing:** Acrobat
+* **versie van de Toepassing:** 9.0.0
 
-**Acrobat Reader DC-extensies voor Microsoft Office**
+**de uitbreidingen van Acrobat Reader DC voor Microsoft Office**
 
 Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wordt gebruikt met de Microsoft Office-producten Microsoft Word, Microsoft Excel en Microsoft PowerPoint. Wanneer het om de dienst verzoekt, verstrekt het de volgende informatie:
 
 * **Integrator:** Adobe Systems Incorporated
-* **Integratorversie:** 8,2
-* **Toepassingsfamilie:** Acrobat Reader DC-extensies voor Microsoft Office
-* **Toepassingsnaam:** Microsoft Word, Microsoft Excel of Microsoft PowerPoint
-* **Toepassingsversie:** 2003 of 2007
+* **versie van de Integrator:** 8.2
+* **de familie van de Toepassing:** de uitbreidingen van Acrobat Reader DC voor Microsoft Office
+* **naam van de Toepassing:** Microsoft Word, Microsoft Excel, of Microsoft PowerPoint
+* **versie van de Toepassing:** 2003 of 2007
 
-**Documentbeveiliging configureren om services voor specifieke toepassingen te weigeren**
+**vorm documentveiligheid om de diensten voor specifieke toepassingen te ontkennen**
 
-1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open het configuratiebestand in een editor en zoek de `PolicyServer` knooppunt. Voeg een `ClientVersionRules` node als een direct onderliggend item van het `PolicyServer` knooppunt, als dit niet bestaat:
+1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Open het configuratiebestand in een editor en zoek het knooppunt `PolicyServer` . Voeg een knooppunt `ClientVersionRules` toe als een direct onderliggend knooppunt van het knooppunt `PolicyServer` , als dat niet bestaat:
 
    ```xml
     <node name="ClientVersionRules">
@@ -851,28 +854,28 @@ Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wor
 
    waarbij:
 
-   `SDKPlatforms` geeft het platform aan waarop de clienttoepassing wordt gehost. Mogelijke waarden zijn:
+   `SDKPlatforms` geeft het platform aan dat als host fungeert voor de clienttoepassing. Mogelijke waarden zijn:
 
    * Microsoft Windows
    * APPLE OS X
    * Sun Solaris
    * HP-UX
 
-   `SDKVersions` geeft de versie van de C++ Client-API voor documentbeveiliging aan die door de clienttoepassing wordt gebruikt. Bijvoorbeeld: `"8.2"`.
+   `SDKVersions` geeft de versie op van de C++-client-API voor documentbeveiliging die door de clienttoepassing wordt gebruikt. Bijvoorbeeld `"8.2"` .
 
    `APPFamilies` wordt gedefinieerd door de client-API.
 
-   `AppName`geeft de naam van de clienttoepassing aan. Komma&#39;s worden gebruikt als naamscheidingstekens. Als u een komma in een naam wilt opnemen, plaatst u een backslash (\) als escape-teken. Bijvoorbeeld: *&quot;Adobe Systems\, Inc.&quot;*.
+   `AppName` specificeert de naam van de cliënttoepassing. Komma&#39;s worden gebruikt als naamscheidingstekens. Als u een komma in een naam wilt opnemen, plaatst u een backslash (\) als escape-teken. Bijvoorbeeld, *&quot;Adobe Systems\, Inc.&quot;*.
 
    `AppVersions` geeft de versie van de clienttoepassing aan.
 
-   `Integrators` geeft de naam aan van het bedrijf of de groep die de plug-in of geïntegreerde toepassing heeft ontwikkeld.
+   `Integrators` geeft de naam op van het bedrijf of de groep die de plug-in of geïntegreerde toepassing heeft ontwikkeld.
 
    `IntegratorVersions` is de versie van de plug-in of de geïntegreerde toepassing.
 
-1. Voor elke extra reeks ontkenningsgegevens, voeg een andere toe *MyEntryName* element.
+1. Voor elke extra reeks ontkenningsgegevens, voeg een ander *MyEntryName* element toe.
 1. Sla het configuratiebestand op.
-1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Importeer het configuratiebestand. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 **Voorbeelden**
 
@@ -944,75 +947,75 @@ In dit voorbeeld worden alle aanvragen van een Microsoft PowerPoint 2007- of Mic
 
 Standaard kunt u maximaal vijf elementen in een watermerk opgeven. Bovendien is de maximale bestandsgrootte van het PDF-document dat u als watermerk wilt gebruiken, beperkt tot 100 kB. U kunt deze parameters in het config.xml- dossier veranderen.
 
-***notitie **: U moet deze parameters voorzichtig wijzigen.*
+***nota **: U zou deze parameters met voorzichtigheid moeten veranderen.*
 
-1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open het configuratiebestand in een editor en zoek de `ServerSettings` knooppunt.
-1. In de `ServerSettings` , voegt u de volgende vermeldingen toe en slaat u het bestand op: `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
+1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Open het configuratiebestand in een editor en zoek het knooppunt `ServerSettings` .
+1. Voeg in het knooppunt `ServerSettings` de volgende items toe en sla het bestand op: `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
 
-   De eerste vermelding, *maximale bestandsgrootte* is de maximale bestandsgrootte (in kB) die is toegestaan voor een PDF-watermerkelement. De standaardwaarde is 100 kB.
+   De eerste ingang, *maximum dossiergrootte* is de maximumdossiergrootte (in KB) die voor een PDF watermerkelement wordt toegestaan. De standaardwaarde is 100 kB.
 
-   de tweede vermelding, *max. elementen* is het maximumaantal elementen dat is toegestaan in een watermerk. De standaardwaarde is 5.
+   De tweede ingang, *maximum elementen* is het maximumaantal elementen dat in een watermerk wordt toegestaan. De standaardwaarde is 5.
 
    ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
 
-1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Importeer het configuratiebestand. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### Externe koppelingen uitschakelen {#disabling-external-links}
 
-Veel gebruikers van documentbeveiliging hebben geen toegang tot externe koppelingen, zoals **www.adobe.com** terwijl zij de juiste gebruikersinterfaces van het Beheer gebruiken:
+Vele gebruikers van de documentveiligheid hebben geen toegang tot externe verbindingen zoals **www.adobe.com** terwijl zij het juiste gebruikersinterface van het Beheer gebruiken:
 
 * `https://[host]:'port'/adminui`
 * `https://[host]:'port'/edc`.
 
 De volgende veranderingen in config.xml schakelen alle externe verbindingen van het Juiste gebruikersinterface van het Beheer uit.
 
-1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open het configuratiebestand in een editor en zoek de `DisplaySettings` knooppunt.
-1. Om alle externe verbindingen onbruikbaar te maken, in `DisplaySettings` , voegt u de volgende vermelding toe en slaat u het bestand op: `<entry key="ExternalLinksAllowed" value="false"/>`
+1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Open het configuratiebestand in een editor en zoek het knooppunt `DisplaySettings` .
+1. Als u alle externe koppelingen wilt uitschakelen, voegt u in het knooppunt `DisplaySettings` de volgende vermelding toe en slaat u het bestand op: `<entry key="ExternalLinksAllowed" value="false"/>`
 
    ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
-1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Importeer het configuratiebestand. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### Configuratie om SMTP voor de Veiligheid van de Laag van het Vervoer (TLS) toe te laten {#configuration-to-enable-smtp-for-transport-layer-security-tls}
 
 De volgende veranderingen in config.xml laten TLS steun voor de Uitgenodigde eigenschap van de Registratie van de Gebruiker toe.
 
-1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Open het configuratiebestand in een editor en zoek de `DisplaySettings` knooppunt.
+1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Open het configuratiebestand in een editor en zoek het knooppunt `DisplaySettings` .
 1. Zoek het volgende knooppunt: `<node name="ExternalUser">`
 
    ```xml
    <node name="ExternalUser">
    ```
 
-1. Stel de waarde van de optie `SmtpUseTls` in de `ExternalUser` knooppunt naar **true**.
-1. Stel de waarde van de optie `SmtpUseSsl` in de `ExternalUser` knooppunt naar **false**.
-1. Sla de `config.xml`.
-1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Plaats de waarde van de `SmtpUseTls` sleutel in de `ExternalUser` knoop aan **waar**.
+1. Plaats de waarde van de `SmtpUseSsl` sleutel in de `ExternalUser` knoop aan **vals**.
+1. Sla de `config.xml` op.
+1. Importeer het configuratiebestand. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### SOAP-eindpunten uitschakelen voor documenten met documentbeveiliging {#disable-soap-endpoints-for-document-security-documents}
+### SOAP eindpunten voor documenten documentbeveiliging uitschakelen {#disable-soap-endpoints-for-document-security-documents}
 
-De volgende veranderingen in config.xml om de eindpunten van de ZEEP voor documenten van de documentveiligheid onbruikbaar te maken.
+De volgende veranderingen in config.xml om SOAP eindpunten voor documenten van de documentveiligheid onbruikbaar te maken.
 
-1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Open het configuratiebestand in een editor en zoek het volgende knooppunt: `<node name="DRM">`
 
    ```xml
    <node name="DRM">
    ```
 
-1. Zoek in het DRM-knooppunt de `entry` knooppunt:
+1. Zoek in het DRM-knooppunt het knooppunt `entry` :
 
    `<entry key="AllowUnencryptedVoucher" value="true"/>`
 
-1. Als u SOAP-eindpunten wilt uitschakelen voor documenten met documentbeveiliging, stelt u het waardekenmerk in op **false**.
+1. Om SOAP eindpunten voor de documenten van de documentveiligheid onbruikbaar te maken, plaats de waardeattributen aan **vals**.
 
    ```xml
    <node name="DRM">
@@ -1022,8 +1025,8 @@ De volgende veranderingen in config.xml om de eindpunten van de ZEEP voor docume
    </node>
    ```
 
-1. Sla de `config.xml`.
-1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Sla de `config.xml` op.
+1. Importeer het configuratiebestand. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### De schaalbaarheid van de documentbeveiligingsserver verhogen {#increasingscalability}
 
@@ -1031,9 +1034,9 @@ Door gebrek, terwijl het synchroniseren van een document voor off-line gebruik, 
 
 U kunt de scalability van de server van de documentveiligheid verhogen door de informatie te beperken die naar de cliënt wordt verzonden. De vermindering van de hoeveelheid informatie die naar de client wordt verzonden, resulteert in een verbeterde schaalbaarheid, een kortere responstijd en betere prestaties van de server. Voer de volgende stappen uit om de schaalbaarheid te verhogen:
 
-1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Open het configuratiedossier in een redacteur en bepaal de plaats van de knoop ServerSettings.
-1. In de knoop ServerSettings, plaats de waarde van `DisableGlobalOfflineSynchronizationData`eigenschap aan `true`.
+1. In de knoop ServerSettings, plaats de waarde van het `DisableGlobalOfflineSynchronizationData` bezit aan `true`.
 
    `<entry key="DisableGlobalOfflineSynchronizationData" value="true"/>`
 
@@ -1041,6 +1044,6 @@ U kunt de scalability van de server van de documentveiligheid verhogen door de i
 
    >[!NOTE]
    >
-   >De standaardwaarde van de optie `DisableGlobalOfflineSynchronizationData`key is ingesteld op `false`.
+   >Standaard wordt de waarde van de `DisableGlobalOfflineSynchronizationData` -toets ingesteld op `false` .
 
-1. Sla het configuratiebestand op en importeer het. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. Sla het configuratiebestand op en importeer het. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)

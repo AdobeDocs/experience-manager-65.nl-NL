@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Semantische versienummering gebruiken {#use-semantic-versioning}
 
-De beste werkwijzen voor semantische versienummering zijn overeengekomen op [https://semver.org/](https://semver.org/).
+Overeengekomen op beste praktijken voor semantische versienummering kunnen in [ https://semver.org/ ](https://semver.org/) worden gevonden.
 
 ## Sluit niet meer klassen en potten in dan strikt noodzakelijk in bundels OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Gemeenschappelijke bibliotheken moeten in afzonderlijke bundels worden opgenomen. Hierdoor kunnen ze opnieuw worden gebruikt in alle bundels. Bij het omsluiten van een *JAR* in een bundel OSGi, zorg ervoor om online bronnen te controleren om te zien of heeft iemand dit reeds eerder gedaan. Een aantal gangbare plaatsen om bestaande bundelpakjes te vinden zijn: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes en de SpringSource Enterprise Bundle Repository.
+Gemeenschappelijke bibliotheken moeten in afzonderlijke bundels worden opgenomen. Hierdoor kunnen ze opnieuw worden gebruikt in alle bundels. Wanneer het verpakken van a *JAR* in een bundel OSGi, zorg ervoor om online bronnen te controleren om te zien of heeft iemand dit eerder reeds gedaan. Een aantal gangbare plaatsen om bestaande bundelpakjes te vinden zijn: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes en de SpringSource Enterprise Bundle Repository.
 
 ## Afhankelijk van de laagst benodigde bundelversies {#depend-on-the-lowest-needed-bundle-versions}
 
@@ -34,7 +34,7 @@ Voor afhankelijkheden bij compilatie in POM-bestanden is altijd afhankelijk van 
 
 Wanneer een pakket is geëxporteerd, is een API gemaakt waarvan anderen afhankelijk zijn. Zorg ervoor dat u zo weinig mogelijk exporteert en zorg ervoor dat wat wordt geëxporteerd een API is. Het is veel gemakkelijker om een privé methode/klasse te nemen en het openbaar te maken dan het iets te nemen dat eerder werd uitgevoerd en het privé te maken.
 
-Implementaties altijd in een aparte map plaatsen *impl* pakket. Standaard worden de *maven-bundle-plugin* exporteert alle onderdelen van het project die geen *impl* in zijn naam.
+Plaats altijd implementaties in een afzonderlijk *impl* pakket. Door gebrek, *maven-bundle-plugin* voert om het even wat in het project uit dat geen *impl* in zijn naam heeft.
 
 ## Altijd expliciet een semantische versie definiëren voor elk geëxporteerd pakket {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
@@ -42,4 +42,4 @@ Hierdoor kunnen consumenten van uw API samen met u evolueren. Volg daarbij altij
 
 ## Metatype-informatie opnemen als deze wordt weergegeven {#include-metatype-information-where-exposed}
 
-Door betekenisvolle metatype informatie te specificeren, maakt het uw diensten en componenten gemakkelijker te begrijpen in de console van Felix. Een lijst van SCR annotaties en attributen kan worden gevonden bij: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+Door betekenisvolle metatype informatie te specificeren, maakt het uw diensten en componenten gemakkelijker te begrijpen in de console van Felix. Een lijst van SCR annotaties en attributen kan in worden gevonden: [ https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

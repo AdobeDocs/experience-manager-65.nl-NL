@@ -22,16 +22,16 @@ ht-degree: 0%
 
 Wanneer AEM Communities wordt gevormd om een relationele gegevensbestand als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker-geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
-Zie ook [Kenmerken van SRP-opties](working-with-srp.md#characteristics-of-srp-options) en [Aanbevolen topologieën](topologies.md).
+Zie ook [ Kenmerken van Opties SRP ](working-with-srp.md#characteristics-of-srp-options) en [ Aanbevolen Topologieën ](topologies.md).
 
 ## Vereisten {#requirements}
 
-* [MySQL](#mysql-configuration), een relationele database.
-* [Apache Solr](#solr-configuration), een zoekplatform.
+* [ MySQL ](#mysql-configuration), een relationele gegevensbestand.
+* [ Apache Solr ](#solr-configuration), een onderzoeksplatform.
 
 >[!NOTE]
 >
->De standaardopslagconfiguratie wordt nu opgeslagen in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van `etc` pad (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) om de standaardprocedures naar behoren te laten werken.
+>De standaard opslagconfiguratie wordt nu opgeslagen in conf weg (`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van `etc` weg (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt geadviseerd om de [ migratiestappen ](#zerodt-migration-steps) te volgen om het werk standaard zoals verwacht te maken.
 
 ## Configuratie van relationele database {#relational-database-configuration}
 
@@ -39,7 +39,7 @@ Zie ook [Kenmerken van SRP-opties](working-with-srp.md#characteristics-of-srp-op
 
 Een installatie MySQL kan tussen enablement eigenschappen en gemeenschappelijke opslag (DSRP) binnen de zelfde verbindingspool worden gedeeld door verschillende gegevensbestand (schema) namen en ook verschillende verbindingen (server:haven) te gebruiken.
 
-Voor installatie en configuratiedetails, zie [MySQL-configuratie voor DSRP](dsrp-mysql.md).
+Voor installatie en configuratiedetails, zie [ Configuratie MySQL voor DSRP ](dsrp-mysql.md).
 
 ### Solr-configuratie {#solr-configuration}
 
@@ -49,71 +49,71 @@ Als zowel de Oak als SRP inzamelingen intensief worden gebruikt, kan tweede Solr
 
 Voor productieomgevingen biedt de SolrCloud-modus betere prestaties dan de zelfstandige modus (één lokale Solr-instelling).
 
-Voor installatie en configuratiedetails, zie [Solr Configuratie voor SRP](solr.md).
+Voor installatie en configuratiedetails, zie [ Configuratie Solr voor SRP ](solr.md).
 
 ### DSRP selecteren {#select-dsrp}
 
-De [Opslagconfiguratieconsole](srp-config.md) maakt het mogelijk de standaardopslagconfiguratie te selecteren, die aangeeft welke implementatie van SRP moet worden gebruikt.
+De [ console van de Configuratie van de Opslag ](srp-config.md) staat voor de selectie van de standaardopslagconfiguratie toe, die identificeert welke implementatie van SRP aan gebruik.
 
 Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
 * Aanmelden met beheerdersrechten
-* Van de **hoofdmenu**
+* Van het **belangrijkste menu**
 
-   * Selecteren **[!UICONTROL Tools]** (uit het linkerdeelvenster)
+   * Selecteer **[!UICONTROL Tools]** (in het linkerdeelvenster)
    * Selecteren **[!UICONTROL Communities]**
    * Selecteren **[!UICONTROL Storage Configuration]**
 
-      * De resulterende locatie is bijvoorbeeld: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+      * Als voorbeeld, is de resulterende plaats: [ http://localhost:4502/communities/admin/defaultsrp ](http://localhost:4502/communities/admin/defaultsrp)
 
      >[!NOTE]
      >
-     >De standaardopslagconfiguratie wordt nu opgeslagen in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van `etc` pad (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) om de standaardprocedures naar behoren te laten werken.
+     >De standaardopslagconfiguratie wordt nu opgeslagen in conf weg (`/conf/global/settings/community/srpc/defaultconfiguration`)      in plaats van `etc` path (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt geadviseerd om de [ migratiestappen ](#zerodt-migration-steps) te volgen om het werk standaard zoals verwacht te maken.
 
-  ![dsrp-config](assets/dsrp-config.png)
+  ![ dsrp-config ](assets/dsrp-config.png)
 
 * Selecteren **[!UICONTROL Database Storage Resource Provider (DSRP)]**
-* **Databaseconfiguratie**
+* **Configuratie van het Gegevensbestand**
 
    * **[!UICONTROL JDBC datasource name]**
 
-     De naam die aan MySQL verbinding wordt gegeven moet het zelfde zijn ingegaan in [JDBC OSGi-configuratie](dsrp-mysql.md#configurejdbcconnections)
+     De naam die aan verbinding MySQL wordt gegeven moet het zelfde zijn zoals ingegaan in [ configuratie JDBC OSGi ](dsrp-mysql.md#configurejdbcconnections)
 
-     *default*: gemeenschappen
+     *gebrek*: gemeenschappen
 
    * **[!UICONTROL Database name]**
 
-     Naam die aan schema in wordt gegeven [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
+     Naam die aan schema in [ wordt gegeven init_schema.sql ](dsrp-mysql.md#obtain-the-sql-script) manuscript
 
-     *default*: gemeenschappen
+     *gebrek*: gemeenschappen
 
 * **SolrConfiguration**
 
-   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
+   * **[Zookeeper ](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Gastheer**
 
-     Laat deze waarde leeg als Solr wordt uitgevoerd met de interne ZooKeeper. Anders, bij uitvoering in [SolrCloud-modus](solr.md#solrcloud-mode) met een externe ZooKeeper, plaats deze waarde aan URI voor ZooKeeper, zoals *my.server.com:80*
+     Laat deze waarde leeg als Solr wordt uitgevoerd met de interne ZooKeeper. Elders, wanneer het lopen op [ wijze SolrCloud ](solr.md#solrcloud-mode) met een externe ZooKeeper, plaats deze waarde aan URI voor ZooKeeper, zoals *my.server.com:80*
 
-     *default*: *&lt;blank>*
+     *gebrek*: *&lt;blank>*
 
    * **[!UICONTROL Solr URL]**
 
-     *default*: https://127.0.0.1:8983/solr/
+     *gebrek*: https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Solr Collection]**
 
-     *default*: collection1
+     *gebrek*: collection1
 
-* Selecteren **[!UICONTROL Submit]**.
+* Selecteer **[!UICONTROL Submit]** .
 
 ### Nul stappen voor downtime migratie voor standaardconfiguratie {#zerodt-migration-steps}
 
-Om ervoor te zorgen dat de standaardpagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) Voer de volgende stappen uit voor de werken zoals u had verwacht:
+Om ervoor te zorgen dat de standaardscheurpagina [ http://localhost:4502/communities/admin/defaultsrp ](http://localhost:4502/communities/admin/defaultsrp) zoals verwacht werkt, volg deze stappen:
 
-1. Naam van pad wijzigen bij `/etc/socialconfig` tot `/etc/socialconfig_old`, zodat de systeemconfiguratie terugvalt naar jsrp (gebrek).
-1. Ga naar standaardpagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), waarin jsrp is geconfigureerd. Klik op de knop **[!UICONTROL submit]** knoop zodat de nieuwe standaardconfiguratieknoop bij wordt gecreeerd `/conf/global/settings/community/srpc`.
-1. De gemaakte standaardconfiguratie verwijderen `/conf/global/settings/community/srpc/defaultconfiguration`.
-1. De oude configuratie kopiëren `/etc/socialconfig_old/srpc/defaultconfiguration` in plaats van het verwijderde knooppunt (`/conf/global/settings/community/srpc/defaultconfiguration`) in de vorige stap.
-1. De oude verwijderen `etc` node `/etc/socialconfig_old`.
+1. Wijzig de naam van het pad op `/etc/socialconfig` in `/etc/socialconfig_old` , zodat de systeemconfiguratie terugvalt naar jsrp (standaard).
+1. Ga naar standaardscheurpagina [ http://localhost:4502/communities/admin/defaultsrp ](http://localhost:4502/communities/admin/defaultsrp), waar jsrp wordt gevormd. Klik op de knop **[!UICONTROL submit]** , zodat er een nieuw standaardconfiguratieknooppunt wordt gemaakt op `/conf/global/settings/community/srpc` .
+1. Verwijder de gemaakte standaardconfiguratie `/conf/global/settings/community/srpc/defaultconfiguration`.
+1. Kopieer de oude configuratie `/etc/socialconfig_old/srpc/defaultconfiguration` in plaats van het verwijderde knooppunt (`/conf/global/settings/community/srpc/defaultconfiguration`) in de vorige stap.
+1. Verwijder het oude `etc` knooppunt `/etc/socialconfig_old` .
 
 ## De configuratie publiceren {#publishing-the-configuration}
 
@@ -123,25 +123,25 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
 * Op auteur:
 
-   * Navigeren van hoofdmenu naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**
+   * Ga van hoofdmenu naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**
    * Dubbelklikken **[!UICONTROL Activate Tree]**
-   * **Startpad**:
+   * **Weg van het Begin**:
 
       * Bladeren naar `/etc/socialconfig/srpc/`
 
-   * Zorgen `Only Modified` is niet geselecteerd.
-   * Selecteren **[!UICONTROL Activate]**.
+   * Zorg ervoor dat `Only Modified` niet is geselecteerd.
+   * Selecteer **[!UICONTROL Activate]** .
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
-Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, die vaak in de publicatieomgeving worden ingevoerd, gaat u naar:
+Voor informatie betreffende *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingegaan in publiceer milieu, bezoek:
 
 * [Gebruikerssynchronisatie](sync.md)
 * [Gebruikers en gebruikersgroepen beheren](users.md)
 
 ## Solr opnieuw indexeren voor DSRP {#reindexing-solr-for-dsrp}
 
-Om DSRP Solr opnieuw te indexeren, volg de documentatie voor [opnieuw indexeren van MSRP](msrp.md#msrp-reindex-tool)Gebruik in plaats daarvan deze URL wanneer u opnieuw indexeert voor DSRP: **/services/social/datastore/rdb/rendex**
+Om DSRP Solr opnieuw te indexeren, volg de documentatie voor [ opnieuw indexerend MSRP ](msrp.md#msrp-reindex-tool), echter wanneer het opnieuw indexeren voor DSRP, gebruik in plaats daarvan dit URL: **/services/social/datastore/rdb/redex**
 
 Bijvoorbeeld, zou een krullbevel om DSRP opnieuw te indexeren als dit kijken:
 

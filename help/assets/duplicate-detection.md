@@ -16,19 +16,19 @@ ht-degree: 0%
 
 # Detectie van dubbele elementen inschakelen {#enable-detection-of-duplicate-assets}
 
-Als u probeert een middel te uploaden dat bestaat in [!DNL Adobe Experience Manager Assets], wordt de dubbele detectiefunctie geïdentificeerd als een duplicaat. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
+Als u probeert een element te uploaden dat voorkomt in [!DNL Adobe Experience Manager Assets] , wordt dit door de functie voor dubbele detectie geïdentificeerd als gedupliceerd. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Open de [!DNL Experience Manager] Webconsole-configuratiepagina door toegang te krijgen tot `https://[aem_server]:[port]/system/console/configMgr`.
-1. De configuratie van de servlet bewerken **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Selecteer de **[!UICONTROL detect duplicate]** en klik op **[!UICONTROL Save]**.
+1. Open de [!DNL Experience Manager] webconsoleconfiguratiepagina door `https://[aem_server]:[port]/system/console/configMgr` te openen.
+1. Bewerk de configuratie voor de servlet **[!UICONTROL Day CQ DAM Create Asset]** .
+1. Selecteer de optie **[!UICONTROL detect duplicate]** en klik op **[!UICONTROL Save]** .
 
-   ![Selecteer de optie Duplicaat detecteren in de servlet](assets/chlimage_1-377.png)
+   ![ Uitgezocht ontdekt dubbele optie in servlet ](assets/chlimage_1-377.png)
 
-   *Afbeelding: selecteer de optie Dupliceren detecteren in het servlet.*
+   *Cijfer: Selecteer ontdekt dubbele optie in servlet.*
 
-De functie Dupliceren detecteren is nu ingeschakeld in [!DNL Assets]. Wanneer een gebruiker een middel probeert te uploaden dat bestaat in [!DNL Experience Manager], controleert het systeem op conflict en wijst op het. De elementen worden geïdentificeerd met behulp van SHA-1-hash die is opgeslagen op `jcr:content/metadata/dam:sha1`, wat betekent dat dubbele elementen worden gedetecteerd, ongeacht de bestandsnamen.
+De functie Dupliceren detecteren is nu ingeschakeld in [!DNL Assets] . Wanneer een gebruiker een middel probeert te uploaden dat in [!DNL Experience Manager] bestaat, controleert het systeem op conflict en wijst het erop. De elementen worden geïdentificeerd met behulp van SHA-1-hash die is opgeslagen bij `jcr:content/metadata/dam:sha1` . Dit betekent dat dubbele elementen worden gedetecteerd, ongeacht de bestandsnamen.
 
 >[!MORELIKETHIS]
 >
->* [Dubbele middelen in bestaande opslagplaats (een zelfstudie van een lid van de gemeenschap)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [Gedupliceerde elementen zoeken in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [ Dupliceer activa in bestaande bewaarplaats (een leerprogramma van een communautair lid) ](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [ ontdekt dubbele activa in AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)

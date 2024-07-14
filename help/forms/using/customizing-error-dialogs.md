@@ -17,11 +17,11 @@ ht-degree: 1%
 
 # Foutdialoogvensters aanpassen {#customizing-error-dialogs}
 
-In de werkruimte van AEM Forms kunt u dialoogvensters met fouten aanpassen. Voer het [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md) gevolgd door de onderstaande stappen om foutmeldingen aan te passen.
+In de werkruimte van AEM Forms kunt u dialoogvensters met fouten aanpassen. Voer de [ Algemene stappen voor de aanpassing van de de werkruimte van AEM Forms ](/help/forms/using/generic-steps-html-workspace-customization.md) uit die door de hieronder stappen wordt gevolgd om foutendialogen aan te passen.
 
 ## Tekst aanpassen {#customizing-text}
 
-1. In de `/apps/ws/locales/en-US/translation.json` bestand, wijzigt u de waarden van `wserror` op de aangepaste waarden. Bijvoorbeeld:
+1. Wijzig in het bestand `/apps/ws/locales/en-US/translation.json` de waarden van `wserror` in de aangepaste waarden. Bijvoorbeeld:
 
    ```json
    "wserror" : {
@@ -51,7 +51,7 @@ In de werkruimte van AEM Forms kunt u dialoogvensters met fouten aanpassen. Voer
 
 ## CSS aanpassen {#customizing-css}
 
-1. U kunt dialoogvensters, koptekst, inhoudsgebied, voetbalk, voetbalknoppen en andere elementen bijwerken door het volgende fragment toe te voegen in het dialoogvenster `/apps/ws/css/newStyle.css` bestand:
+1. U kunt dialoogvensters, koptekst, inhoudsgebieden, voetbalk, voetbalknoppen en andere elementen bijwerken door het volgende fragment toe te voegen in het `/apps/ws/css/newStyle.css` -bestand:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -186,7 +186,7 @@ In de werkruimte van AEM Forms kunt u dialoogvensters met fouten aanpassen. Voer
    }
    ```
 
-1. Voor het bereik van de voetbalkknop scheidt u de `.error-dialog` en `.foot-bar` de knoop overspant van de samengestelde lijst. U brengt deze wijziging door het volgende toe te voegen in het bestand newStyle.css:
+1. Voor het bereik van de voetbalkknop scheidt u de knopbereiken `.error-dialog` en `.foot-bar` van de samengestelde lijst. U brengt deze wijziging door het volgende toe te voegen in het bestand newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -223,11 +223,11 @@ In de werkruimte van AEM Forms kunt u dialoogvensters met fouten aanpassen. Voer
 
 >[!NOTE]
 >
->Als u naar extra afbeeldingen verwijst, voegt u deze toe in de gewenste hiërarchie onder `/apps/ws/images`.
+>Als u naar extra afbeeldingen verwijst, voegt u deze toe in de gewenste hiërarchie onder `/apps/ws/images` .
 
 ## Voorbeelden {#examples}
 
-* **Als u het dialoogvenster met fouten wilt aanpassen, wijzigt u:**
+* **om de foutendialoog aan te passen, verander:**
 
 ```css
 .error-dialog{
@@ -261,7 +261,7 @@ Naar
 }
 ```
 
-* **Als u de koptekst van het foutvenster wilt aanpassen, wijzigt u:**
+* **om de kopbal van de foutendialoog aan te passen, verander:**
 
 ```css
 .error-dialog .head-bar{

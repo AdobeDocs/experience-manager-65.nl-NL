@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Algemene map voor documentopslag{#global-document-storage-directory}
 
-De *algemene documentopslag (GDS)* map is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. Deze bestanden bevatten PDF, beleidsregels en formuliersjablonen. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de Forms-server instabiel worden. Invoerdocumenten voor asynchrone taakaanroepen worden ook opgeslagen in de GDS-map en moeten beschikbaar zijn voor het verwerken van aanvragen. Het is belangrijk dat u rekening houdt met de betrouwbaarheid van het bestandssysteem dat de GDS-map host. Gebruik een redundante array met onafhankelijke schijven (RAID) of andere technologie die geschikt is voor uw servicekwaliteit en serviceniveau.
+De *globale documentopslag (GDS)* folder is een folder die wordt gebruikt om langlevende dossiers op te slaan die binnen een proces worden gebruikt. Deze bestanden bevatten PDF, beleidsregels en formuliersjablonen. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de Forms-server instabiel worden. Invoerdocumenten voor asynchrone taakaanroepen worden ook opgeslagen in de GDS-map en moeten beschikbaar zijn voor het verwerken van aanvragen. Het is belangrijk dat u rekening houdt met de betrouwbaarheid van het bestandssysteem dat de GDS-map host. Gebruik een redundante array met onafhankelijke schijven (RAID) of andere technologie die geschikt is voor uw servicekwaliteit en serviceniveau.
 
 Bestanden met een lange levensduur kunnen vertrouwelijke gebruikersgegevens bevatten. Deze informatie kan speciale geloofsbrieven vereisen wanneer betreden door de AEM vormen APIs of gebruikersinterfaces te gebruiken. Het is belangrijk dat de GDS-map correct wordt beveiligd via het besturingssysteem. Alleen de beheerdersaccount die wordt gebruikt om de toepassingsserver uit te voeren, moet lees-/schrijftoegang hebben tot de GDS-map.
 
-Naast het selecteren van een veilige, hoogst beschikbare folder voor GDS, kunt u ook verkiezen om documentopslag in het gegevensbestand toe te laten. Zelfs als u de AEM-formulierdatabase gebruikt voor documentopslag, vereist AEM formulieren nog steeds de GDS-map. (Zie [Back-upopties wanneer database wordt gebruikt voor documentopslag](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage).)
+Naast het selecteren van een veilige, hoogst beschikbare folder voor GDS, kunt u ook verkiezen om documentopslag in het gegevensbestand toe te laten. Zelfs als u de AEM-formulierdatabase gebruikt voor documentopslag, vereist AEM formulieren nog steeds de GDS-map. (Zie [ Reservekopties wanneer het gegevensbestand voor documentopslag ](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage) wordt gebruikt.)
 
 AEM toepassingsgegevens van formulieren bevinden zich in de GDS-map en de AEM formulierdatabase. In de volgende tabel worden de gegevens en de locaties beschreven.
 
@@ -94,13 +94,13 @@ U kunt de GDS-locatie wijzigen in de beheerconsole nadat de installatie van AEM 
 
 AEM formulieren bestaan uit twee typen implementatiebestanden, de servicecontainers en de Java 2 Platform, Enterprise Edition (J2EE) EAR-bestanden. De EAR-bestanden bestaan uit standaard J2EE-toepassingsbundels die de kernfunctionaliteit van AEM formulieren bevatten. De server-specifieke EAR-bestanden van de toepassing zijn als volgt:
 
-* adobe-core *[appserver]*.ear
-* adobe-core *[appserver]*-*[OS]*.ear
+* adobe-core-*[appserver]*.ear
+* adobe-kern - *[appserver]* - *[OS]* .ear
 
-Bij het implementeren van AEM formulieren moeten de geassembleerde EAB-bestanden en ondersteunende bestanden worden geïmplementeerd op de toepassingsserver waar u de oplossing voor AEM formulieren wilt uitvoeren. Als u vormde en veelvoudige modules assembleerde, worden de plaatsbare modules verpakt binnen de plaatsbare EAR dossiers. Als u deze bestanden wilt implementeren, kopieert u deze naar de *[appserverhome]*\server\all\deploy.
+Bij het implementeren van AEM formulieren moeten de geassembleerde EAB-bestanden en ondersteunende bestanden worden geïmplementeerd op de toepassingsserver waar u de oplossing voor AEM formulieren wilt uitvoeren. Als u vormde en veelvoudige modules assembleerde, worden de plaatsbare modules verpakt binnen de plaatsbare EAR dossiers. Om deze dossiers op te stellen, kopieer hen aan het *[appserver huis]* \server\all\deploy folder.
 
 Modules en AEM formulierarchiefbestanden worden verpakt in JAR-bestanden. Omdat het geen J2EE-typebestanden zijn, worden deze niet geïmplementeerd op de toepassingsserver. In plaats daarvan worden ze naar de GDS-map gekopieerd en wordt een verwijzing naar de locatie ervan opgeslagen in de database met AEM formulieren. Daarom moet de GDS-map worden gedeeld tussen alle knooppunten van de cluster. Alle knopen moeten toegang tot de centrale opslagfolder voor DSCs hebben.
 
 >[!NOTE]
 >
->Alvorens u de de dienstcontainers opstelt, zorg ervoor dat u creeerde en de folder GDS vormde. (Zie [De GDS-map configureren](global-document-storage-directory.md#configuring-the-gds-directory))
+>Alvorens u de de dienstcontainers opstelt, zorg ervoor dat u creeerde en de folder GDS vormde. (Zie [ Vormend de GDS folder ](global-document-storage-directory.md#configuring-the-gds-directory))

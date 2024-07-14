@@ -1,75 +1,75 @@
 ---
-title: Map delen naar [!DNL Adobe Creative Cloud] best practices
-description: Configureren [!DNL Adobe Experience Manager] om gebruikers toe te staan in [!DNL Experience Manager Assets] mappen uitwisselen met Adobe Creative Cloud-gebruikers.
+title: Het delen van de omslag aan  [!DNL Adobe Creative Cloud]  beste praktijken
+description: Vorm  [!DNL Adobe Experience Manager]  om gebruikers in  [!DNL Experience Manager Assets]  toe te staan om omslagen met de gebruikers van Adobe Creative Cloud uit te wisselen.
 contentOwner: AG
 role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager] tot [!DNL Adobe Creative Cloud] map delen {#aem-to-creative-cloud-folder-sharing-best-practices}
+# [!DNL Adobe Experience Manager] naar [!DNL Adobe Creative Cloud] map delen {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
->De [!DNL Experience Manager] tot [!DNL Creative Cloud] De functie Mappen delen is vervangen. Adobe raadt aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager-bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Meer informatie in [Aanbevolen werkwijzen op het gebied van Experience Manager- en Creative Cloud-integratie](/help/assets/aem-cc-integration-best-practices.md).
+>De functie [!DNL Experience Manager] to [!DNL Creative Cloud] voor het delen van mappen is vervangen. De Adobe adviseert gebruikend nieuwere mogelijkheden zoals [ de Vermogensverbinding van de Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [ Desktop app van de Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Leer meer in [ Experience Manager en de integratie van het Creative Cloud beste praktijken ](/help/assets/aem-cc-integration-best-practices.md).
 
-[!DNL Adobe Experience Manager] kan worden geconfigureerd om gebruikers toe te staan [!DNL Assets] om mappen te delen met de gebruikers van [!DNL Adobe Creative Cloud] apps, zodat ze beschikbaar zijn als gedeelde mappen in de [!DNL Adobe Creative Cloud] assetservice. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en [!DNL Assets] gebruikers, met name wanneer de creatieve gebruikers geen toegang hebben tot de [!DNL Assets] plaatsing (zij zijn niet op het ondernemingsnetwerk).
+[!DNL Adobe Experience Manager] kan zo worden geconfigureerd dat gebruikers in [!DNL Assets] mappen kunnen delen met de gebruikers van [!DNL Adobe Creative Cloud] -toepassingen, zodat ze beschikbaar zijn als gedeelde mappen in de [!DNL Adobe Creative Cloud] -services. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en [!DNL Assets] -gebruikers, vooral wanneer creatieve gebruikers geen toegang hebben tot de [!DNL Assets] -implementatie (ze bevinden zich niet op het bedrijfsnetwerk).
 
-Dit type integratie kan in de volgende gebruiksgevallen worden gebruikt, vooral wanneer het werken met gebruikers die geen directe toegang tot [!DNL Assets]:
+Dit type integratie kan in de volgende gebruiksgevallen worden gebruikt, met name wanneer u werkt met gebruikers die geen directe toegang hebben tot [!DNL Assets] :
 
-* [!DNL Assets] gebruikers delen een set specifieke digitale elementen met gebruikers van [!DNL Adobe Creative Cloud] bestanden (bijvoorbeeld een creatief overzicht en een set goedgekeurde middelen voor ontwerpwerkzaamheden voor een nieuwe marketingactiviteit).
-* [!DNL Assets] gebruikers ontvangen nieuwe bestanden die zijn gemaakt door [!DNL Adobe Creative Cloud] gebruikers van de app.
+* [!DNL Assets] -gebruikers delen een set specifieke digitale elementen met gebruikers van [!DNL Adobe Creative Cloud] -bestanden (bijvoorbeeld een creatieve samenvatting en set goedgekeurde middelen voor ontwerpwerkzaamheden voor een nieuwe marketingactiviteit).
+* [!DNL Assets] -gebruikers ontvangen nieuwe bestanden die door [!DNL Adobe Creative Cloud] -gebruikers zijn gemaakt.
 
 >[!NOTE]
 >
->Voordat u dit document leest, kunt u de algemene [Aanbevolen werkwijzen op het gebied van Experience Manager- en Creative Cloud-integratie](/help/assets/aem-cc-integration-best-practices.md) voor een overzicht van de integratie.
+>Alvorens dit document te lezen, kunt u de algemene [ beste praktijken van de de integratie van de Experience Manager en van het Creative Cloud ](/help/assets/aem-cc-integration-best-practices.md) voor een overzicht van de integratie herzien.
 
 ## Overzicht {#overview}
 
-[!DNL Experience Manager] tot [!DNL Creative Cloud] het delen van mappen is afhankelijk van het delen van mappen en bestanden tussen servers [!DNL Assets] en [!DNL Creative Cloud] rekeningen. Creatieve professionals die de [!DNL Creative Cloud] bureaubladtoepassing op hun bureaublad, kunnen de gedeelde mappen ook rechtstreeks op hun schijven beschikbaar stellen via [!DNL Adobe CreativeSync] -technologie.
+[!DNL Experience Manager] naar [!DNL Creative Cloud] mapdelen is afhankelijk van het delen van mappen en bestanden op de server tussen [!DNL Assets] - en [!DNL Creative Cloud] -accounts. Creatieve professionals die de [!DNL Creative Cloud] -bureaubladtoepassing op hun desktopcomputers gebruiken, kunnen de gedeelde mappen ook rechtstreeks op hun schijven beschikbaar stellen met behulp van [!DNL Adobe CreativeSync] -technologie.
 
 Het volgende diagram geeft een overzicht van de integratie.
 
-![chlimage_1-179](assets/chlimage_1-406.png)
+![ chlimage_1-179 ](assets/chlimage_1-406.png)
 
 De integratie omvat de volgende elementen:
 
 * **[!DNL Experience Manager Assets]** geïmplementeerd in het bedrijfsnetwerk (Managed Services of on-premise): hier wordt het delen van mappen gestart.
-* **[!DNL Adobe Experience Cloud Assets]kernservice**: treedt op als tussenpersoon tussen [!DNL Experience Manager] en [!DNL Creative Cloud] opslagservices. Een beheerder van een organisatie die de integratie gebruikt moet een vertrouwensrelatie tussen de organisatie van het Experience Cloud en de [!DNL Assets] implementatie. Ook [een lijst van erkende medewerkers van Creatives Cloud definiëren](https://experienceleague.adobe.com/docs/core-services/interface/services/assets/t-admin-add-cc-user.html), dat [!DNL Assets] gebruikers kunnen ook mappen delen voor extra beveiliging.
+* **[!DNL Adobe Experience Cloud Assets]kernservice** : treedt op als tussenpersoon tussen [!DNL Experience Manager] en [!DNL Creative Cloud] opslagservices. Een beheerder van een organisatie die de integratie gebruikt, moet een vertrouwensrelatie tot stand brengen tussen de organisatie van het Experience Cloud en de implementatie van [!DNL Assets] . Zij [ bepalen ook een lijst van goedgekeurde medewerkers van het Creative Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/services/assets/t-admin-add-cc-user.html), dat [!DNL Assets] de gebruikers omslagen ook voor extra veiligheid kunnen delen.
 
-* **[!DNL Creative Cloud]Webservices voor middelen** (opslag en [!DNL Creative Cloud] bestanden (webinterface): dit is waar specifieke gebruikers van een Creative Cloud-app mee kunnen werken [!DNL Assets] is gedeeld, kan de uitnodiging accepteren en de map weergeven in de opslagruimte van de Creative Cloud-account.
-* **Creative Cloud-bureaubladtoepassing**: (Optioneel) Hiermee wordt directe toegang tot gedeelde mappen/bestanden mogelijk vanaf het bureaublad van de creatieve gebruiker via synchronisatie met [!DNL Creative Cloud] Elementenopslag.
+* **[!DNL Creative Cloud]Assets-webservices** (web-UI voor opslag en [!DNL Creative Cloud] bestanden): dit is de situatie waarin specifieke gebruikers van een Creative Cloud-app, met wie een [!DNL Assets] -map werd gedeeld, de uitnodiging kunnen accepteren en de map kunnen bekijken in de opslag van hun Creative Cloud-account.
+* **Desktop app van het Creative Cloud**: (Facultatief) staat voor directe toegang tot gedeelde omslag/dossiers van creatieve gebruiker toe Desktop via synchronisatie met [!DNL Creative Cloud] opslag van Assets.
 
 ## Kenmerken en beperkingen {#characteristics-and-limitations}
 
-* **Eenvoudige doorgave van wijzigingen:** Bestandswijzigingen worden alleen in één richting doorgegeven - van het systeem ([!DNL Experience Manager] of [!DNL Creative Cloud Assets]), waar het element oorspronkelijk is gemaakt (geüpload). De integratie biedt geen volledig geautomatiseerde, tweezijdige synchronisatie tussen de twee systemen.
+* **unidirectionele propagatie van veranderingen:** de veranderingen van het Dossier worden verspreid in één richting slechts - van het systeem ([!DNL Experience Manager] of [!DNL Creative Cloud Assets]), waar de activa oorspronkelijk werden gecreeerd (geupload). De integratie biedt geen volledig geautomatiseerde, tweezijdige synchronisatie tussen de twee systemen.
 * **Versioning:**
 
-   * [!DNL Experience Manager] maakt alleen versies van een element bij updates als het bestand afkomstig is uit [!DNL Experience Manager] en wordt daar bijgewerkt.
-   * [!DNL Creative Cloud] Activa zijn eigen [versiefunctie](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) dat is gericht op Werk in uitvoering-updates (slaat updates in feite op tot tien dagen)
+   * [!DNL Experience Manager] maakt alleen versies van een element bij updates als het bestand afkomstig is uit [!DNL Experience Manager] en daar wordt bijgewerkt.
+   * [!DNL Creative Cloud] Assets verstrekt zijn eigen [ versioning eigenschap ](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) die bij Werk in Voortgang updates (fundamenteel, slaat updates voor maximaal tien dagen op) wordt gericht
 
-* **Ruimtebeperkingen:** Grootte en volumes van uitgewisselde bestanden worden beperkt door de specifieke [Creative Cloud-middelenquotum](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) voor creatieve gebruikers (afhankelijk van het abonnementsniveau) en een beperking van de maximale bestandsgrootte van 5 GB. De ruimte wordt ook beperkt door de quota van de activa die de organisatie in de kerndienst van Adobe Experience Cloud Assets heeft.
+* **de beperkingen van de Ruimte:** Grootte en volumes van geruilde dossiers worden beperkt door het specifieke [ quotum van Assets van het Creative Cloud ](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) voor creatieve gebruikers (hangt van abonnementsniveau af) en een beperking van 5-GB maximumdossiergrootte. De ruimte wordt ook beperkt door de quota van de activa die de organisatie in de kerndienst van Adobe Experience Cloud Assets heeft.
 
-* **Ruimtevereisten:** De bestanden in gedeelde mappen moeten ook fysiek zijn opgeslagen in [!DNL Experience Manager] en vervolgens in [!DNL Creative Cloud] account, met een kopie in cache [!DNL Experience Cloud Assets] kerndienst.
-* **Netwerken en bandbreedte:** De bestanden in gedeelde mappen en alle updates moeten via het netwerk tussen de systemen worden verzonden. Zorg ervoor dat alleen relevante bestanden en updates worden gedeeld.
-* **Maptype**: Een [!DNL Assets] map met het type `sling:OrderedFolder`, wordt niet ondersteund in de context van delen in [!DNL Adobe Experience Cloud]. Als u een map wilt delen, maakt u deze in [!DNL Assets], selecteer de [!UICONTROL Ordered] -optie.
+* **ruimtevereisten:** de dossiers in gedeelde omslagen moeten ook fysisch in [!DNL Experience Manager] en dan in [!DNL Creative Cloud] rekening, met een caching exemplaar in [!DNL Experience Cloud Assets] kerndienst worden opgeslagen.
+* **Voorzien van een netwerk en bandbreedte:** de dossiers in gedeelde omslagen en alle updates moeten over het netwerk tussen de systemen worden vervoerd. Zorg ervoor dat alleen relevante bestanden en updates worden gedeeld.
+* **Type van Omslag**: Het delen van een [!DNL Assets] omslag van het type `sling:OrderedFolder`, wordt niet gesteund in de context van het delen in [!DNL Adobe Experience Cloud]. Selecteer de optie [!UICONTROL Ordered] niet als u een map wilt delen wanneer u deze maakt in [!DNL Assets] .
 
 ## Aanbevolen procedures {#best-practices}
 
-Aanbevolen procedures voor het gebruik van de [!DNL Experience Manager] tot [!DNL Creative Cloud] map delen:
+De aanbevolen procedures voor het delen van mappen in de [!DNL Experience Manager] tot [!DNL Creative Cloud] zijn:
 
-* **Overwegingen voor volume:** [!DNL Experience Manager] en [!DNL Creative Cloud] Mappen delen moet worden gebruikt om een kleiner aantal bestanden te delen, bijvoorbeeld voor een specifieke campagne of activiteit. Om grotere reeksen activa, zoals alle goedgekeurde activa in de organisatie te delen, gebruik andere distributiemethodes (bijvoorbeeld [!DNL Assets Brand Portal]) of [!DNL Experience Manager] bureaubladtoepassing.
-* **Deel geen diepe hiërarchieën:** Het delen werkt recursief en maakt het niet mogelijk selectief te verdelen. Gewoonlijk worden alleen mappen zonder submappen of met een ondiepe hiërarchie, zoals één submapniveau, beschouwd als mappen die kunnen worden gedeeld.
-* **Afzonderlijke mappen voor delen in één richting:** Afzonderlijke mappen moeten worden gebruikt voor het delen van uiteindelijke middelen van [!DNL Assets] tot [!DNL Creative Cloud] bestanden, en voor het delen van creatieve middelen [!DNL Creative Cloud] bestanden naar [!DNL Assets]. Samen met een goede noemingsconventie voor deze omslagen, leidt het tot een gemakkelijker te begrijpen werkende milieu voor [!DNL Assets] en [!DNL Creative Cloud] gebruikers.
-* **WIP in de gedeelde map vermijden:** Gebruik geen gedeelde map voor Werk in uitvoering - gebruik een aparte map in Bestanden Creative Cloud om werk uit te voeren waarvoor regelmatig wijzigingen in het bestand nodig zijn.
-* **Nieuwe taken starten buiten de gedeelde map:** Nieuwe ontwerpen (creatieve bestanden) moeten worden gestart in de aparte WIP-map in Bestanden van Creative Cloud en wanneer ze klaar zijn om te worden gedeeld met [!DNL Assets] gebruikers, moeten ze naar de gedeelde map worden verplaatst of opgeslagen.
-* **Structuur voor delen vereenvoudigen:** Voor een beter te beheren werkende opstelling, denk over het vereenvoudigen van de het delen structuur. In plaats van met alle creatieve gebruikers te delen, [!DNL Assets] mappen mogen alleen met teamvertegenwoordigers worden gedeeld, zoals een creatieve directeur of teammanager. De manager aan de creatieve kant zou definitieve activa ontvangen, over werktaken beslissen, en dan ontwerpers laten in hun eigen rekeningen van het Creative Cloud op activa van het WIP werken. Zij kunnen de de samenwerkingseigenschappen van het Creative Cloud gebruiken om het werk te coördineren, en tenslotte activa selecteren en zetten die klaar zijn om terug te delen aan [!DNL Assets] in hun creatief-klaar gedeelde omslag.
+* **overwegingen van het Volume:** [!DNL Experience Manager] en [!DNL Creative Cloud] het Delen van de Omslag zou moeten worden gebruikt om kleiner aantal dossiers, bijvoorbeeld, relevant voor een specifieke campagne of een activiteit te delen. Als u grotere sets elementen wilt delen, zoals alle goedgekeurde elementen in de organisatie, gebruikt u andere distributiemethoden (bijvoorbeeld [!DNL Assets Brand Portal] ) of de [!DNL Experience Manager] desktop-app.
+* **vermijd het delen diepe hiërarchieën:** het delen werkt recursief en staat niet voor selectief uit elkaar delen toe. Gewoonlijk worden alleen mappen zonder submappen of met een ondiepe hiërarchie, zoals één submapniveau, beschouwd als mappen die kunnen worden gedeeld.
+* **afzonderlijke omslagen voor eenrichtings het delen:** de afzonderlijke omslagen zouden voor het delen van definitieve activa van [!DNL Assets] aan [!DNL Creative Cloud] dossiers moeten worden gebruikt, en voor het delen van creatief-klaar activa terug van [!DNL Creative Cloud] dossiers aan [!DNL Assets]. Samen met een goede naamgevingsconventie voor deze mappen, wordt er een beter te begrijpen werkomgeving gemaakt voor [!DNL Assets] - en [!DNL Creative Cloud] -gebruikers.
+* **vermijd WIP in de gedeelde omslag:** gebruik geen gedeelde omslag voor Werk in uitvoering - gebruik een afzonderlijke omslag in de Dossiers van het Creative Cloud om het werk uit te voeren dat frequente veranderingen in het dossier vereist.
+* **het nieuwe werk van het Begin buiten gedeelde omslag:** Nieuwe ontwerpen (creatieve dossiers) zouden in de afzonderlijke omslag van WIP in de Dossiers van het Creative Cloud moeten zijn begonnen, en wanneer zij klaar zijn om met [!DNL Assets] gebruikers te worden gedeeld, zouden zij aan de gedeelde omslag moeten worden bewogen of worden bewaard.
+* **vereenvoudig het delen structuur:** voor een handelbaardere werkende werkende opstelling, denk over het vereenvoudigen van de het delen structuur. In plaats van met alle creatieve gebruikers te delen, [!DNL Assets] zouden de omslagen met teamvertegenwoordigers slechts, zoals een creatieve directeur of teammanager moeten worden gedeeld. De manager aan de creatieve kant zou definitieve activa ontvangen, over werktaken beslissen, en dan ontwerpers laten in hun eigen rekeningen van het Creative Cloud op activa van het WIP werken. Ze kunnen de samenwerkingsfuncties van Creatives Cloud gebruiken om het werk te coördineren, en ten slotte elementen selecteren en plaatsen die klaar zijn om weer naar [!DNL Assets] te delen in hun creatieve, klare gedeelde map.
 
-In het volgende diagram ziet u een voorbeeldconfiguratie voor het maken van ontwerpen op basis van bestaande definitieve elementen [!DNL Assets].
+In het volgende diagram ziet u een voorbeeldconfiguratie voor het maken van ontwerpen op basis van bestaande definitieve elementen van [!DNL Assets] .
 
-![chlimage_1-180](assets/chlimage_1-407.png)
+![ chlimage_1-180 ](assets/chlimage_1-407.png)

@@ -1,6 +1,6 @@
 ---
 title: De koppeling naar de documentatie bijwerken
-description: Hoe kan ik de doelkoppeling van Workspace Help in de AEM Forms-werkruimte bijwerken zodat deze naar de koppeling voor aangepaste documentatie verwijst.
+description: Hoe kan ik de koppeling naar Workspace Help in de AEM Forms-werkruimte bijwerken en naar de koppeling naar uw aangepaste documentatie verwijzen?
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # De koppeling naar de documentatie bijwerken {#updating-the-link-to-the-documentation}
 
-U kunt de standaard Help-inhoud voor de AEM Forms-werkruimte openen door **Help > Werkruimte Help**. Het verwijst naar de online documentatie op de website van Adobe. U kunt de URL echter bijwerken zodat deze naar een andere URL verwijst.
+U kunt tot de standaardhulpinhoud voor de werkruimte van AEM Forms toegang hebben door **Hulp > Hulp van Workspace** te selecteren. Het verwijst naar de online documentatie op de website van Adobe. U kunt de URL echter bijwerken zodat deze naar een andere URL verwijst.
 
 Overweeg de volgende gebruiksgevallen waarin u de standaard Help-URL wilt wijzigen:
 
 * Voor het bieden van gelokaliseerde hulp in een taal van uw keus.
 * Voor het aanbieden van aangepaste Help-inhoud voor uw aangepaste werkruimte.
 
-Volg de [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) en dan de volgende stappen.
+Om URL van de online documentatie bij te werken, volg de [ Algemene Stappen van aanpassing ](/help/forms/using/generic-steps-html-workspace-customization.md) en toen de volgende stappen.
 
-1. De `userinfo.html` bestand van `/libs/ws/js/runtime/templates` tot `/apps/ws/js/runtime/templates`.
+1. Kopieer het bestand `userinfo.html` van `/libs/ws/js/runtime/templates` naar `/apps/ws/js/runtime/templates` .
 1. Wijzigen:
 
    ```html
@@ -49,4 +49,4 @@ Volg de [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-
 1. Ga als volgt te werk:
 
    1. Open /apps/ws/js/registry.js voor bewerking.
-   1. Zoeken en vervangen `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Zoek en vervang `text!/lc/libs/ws/js/runtime/templates/userinfo.html` door `text!/lc/apps/ws/js/runtime/templates/userinfo.html` .

@@ -1,6 +1,6 @@
 ---
-title: Dit artikel bevat de instructie om het Forms-add-on-pakket met behulp van CRX Package Manager te verwijderen.
-description: Leer de stappen voor het verwijderen van het Forms-invoegpakket met behulp van CRX Package Manager.
+title: Dit artikel bevat de instructie om het Forms-add-onpakket te verwijderen met CRX Package Manager.
+description: Leer de stappen voor het verwijderen van het Forms-add-onpakket met CRX Package Manager.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
@@ -26,33 +26,33 @@ Zorg ervoor dat u back-ups maakt om gegevensverlies te voorkomen.
 
 Voer de volgende stappen uit om het AEM Forms Add-on Package te verwijderen:
 
-1. **Verwijder het AEM Forms Add-on-pakket:**
-   1. Ga naar de `http://[host]:[port]/crx/de/index.jsp`.
-   1. Zoek en verwijder de `AEM Forms add-on package`.
+1. **desinstalleert het toe:voegen-op pakket van AEM Forms:**
+   1. Navigeer naar de map `http://[host]:[port]/crx/de/index.jsp` .
+   1. Zoek en verwijder de `AEM Forms add-on package` .
 
-   ![Pakket verwijderen](/help/forms/using/assets/uninstall-aem-forms-package.png)
+   ![ Uninstall pakket ](/help/forms/using/assets/uninstall-aem-forms-package.png)
 
-1. **De native map verwijderen uit CRXDE:**
-   1. Ga naar de `http://[host]:[port]/crx/de/index.jsp`.
-   1. Ga naar `/libs/fd/native/install` en verwijderen `native` in CRXDE.
+1. **Schrap de inheemse omslag van CRXDE:**
+   1. Navigeer naar de map `http://[host]:[port]/crx/de/index.jsp` .
+   1. Ga naar de map `/libs/fd/native/install` en verwijder `native` in CRXDE.
 
-      ![Native knooppunt verwijderen uit CRX/de](/help/forms/using/assets/native-install-folder-crxde.png)
+      ![ Schrap inheemse knoop van CRX/de ](/help/forms/using/assets/native-install-folder-crxde.png)
    1. Sla de wijzigingen op.
 
-1. **Stop de SDK van AEM Forms:**
+1. **Einde SDK van AEM Forms:**
    1. Stop de AEM Forms SDK-instantie met de opdracht &#39;Ctrl + C&#39;.
 
-1. **Controleren op de vaste schijf en mappen installeren in de map crx-quickstart**
-   1. Navigeren naar `..author\crx-quickstart` in de AEM Forms SDK-instantie.
-   1. Naar benoemde mappen zoeken `bedrock` en `install`.
-Indien gevonden, zorg ervoor dat zij uit worden geschrapt `crx-quickstart` in de AEM Forms SDK-instantie.
+1. **Controle voor het gesteente en installeert omslagen in crx-quickstart omslag**
+   1. Navigeer naar de map `..author\crx-quickstart` in de AEM Forms SDK-instantie.
+   1. Zoeken naar mappen met de naam `bedrock` en `install` .
+Indien gevonden, zorg ervoor dat zij uit de `crx-quickstart` omslag in de instantie van de SDK van AEM Forms worden geschrapt.
 
    >[!NOTE]
    >
-   > De `bedrock` wordt automatisch opnieuw een map gemaakt wanneer u de AEM Forms SDK-instantie opnieuw start.
+   > De map `bedrock` wordt automatisch opnieuw gemaakt wanneer u de AEM Forms SDK-instantie opnieuw start.
 
-1. **Start de AEM opnieuw:**
-   1. Zodra alle vorige stappen zijn voltooid, [de AEM Forms SDK-instantie opnieuw starten](/help/forms/using/restart-aem-sdk.md).
+1. **begin de AEMInstantie opnieuw:**
+   1. Zodra alle vorige stappen worden voltooid, [ nieuw begin de instantie van SDK van AEM Forms ](/help/forms/using/restart-aem-sdk.md).
 
 
 

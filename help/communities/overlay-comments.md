@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Overlay Communities-componenten {#overlay-communities-components}
 
-De bedoeling van [bedekken](/help/communities/client-customize.md#overlays) een standaardcomponent is het wijzigen van de weergave of het gedrag van een component in het algemeen voor alle relatieve verwijzingen naar de component. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
+De bedoeling van [ bedekkend ](/help/communities/client-customize.md#overlays) een standaardcomponent is de verschijning of het gedrag van een component globaal, voor alle relatieve verwijzingen naar de component te veranderen. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
 
 ## Voorbeeld {#example}
 
-**Component Overlay-opmerkingen**
+**de commentaarcomponent van de Bedekking**
 
 Stel dat u de commentaarfunctie wilt wijzigen zodat deze overeenkomt met het ontwerp van uw website, door de koptekst van de opmerking te wijzigen zodat de avatar niet meer wordt weergegeven voor opmerkingen. De oplossingen voor het verbergen van de avatar maken gebruik van CSS of, zoals hier wordt beschreven, van het bedekken van header.jsp in de map apps, zodat de HTML met de avatar nooit naar de client wordt verzonden.
 
@@ -33,11 +33,11 @@ Als u opmerkingen wilt bedekken, moet u:
 1. [Notities maken](/help/communities/overlay-create-nodes.md)
 1. [De vormgeving wijzigen](/help/communities/overlay-alter-appearance.md)
 
-**E-mails met overlaymeldingen**
+**de berichten van de Bedekking e-mail**
 
-Stel dat u het bericht van e-mailberichten wilt aanpassen, dat kunt u doen door [bedekken](/help/communities/client-customize.md#overlays) de sjablonen op `/libs/settings/community/templates/email/html`.
+Veronderstel u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door [ bedekkend ](/help/communities/client-customize.md#overlays) de malplaatjes bij `/libs/settings/community/templates/email/html`.
 
-Stel dat u de e-mailmeldingen voor vermeldingen wilt bewerken (voor een specifiek onderdeel Community waarin UGC is gemaakt). Voeg in dergelijke gevallen een **indien** voorwaarde voor werkwoord **noemen** in de malplaatjes van de componenten waarvoor u toeliet **@mnotices** ondersteuning.
+Stel dat u de e-mailmeldingen voor vermeldingen wilt bewerken (voor een specifiek onderdeel Community waarin UGC is gemaakt). In dergelijke gevallen, voeg een **toe als** voorwaarde voor werkwoord **** in de malplaatjes van de componenten vermeldt waarvoor u **@mtations** steun toeliet.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -45,4 +45,4 @@ Stel dat u de e-mailmeldingen voor vermeldingen wilt bewerken (voor een specifie
 {{/equals}}\
 ```
 
-Als u de sjabloon voor e-mailmeldingen voor @notify in blogopmerkingen wilt wijzigen, plaatst u de sjabloon voor het vak op: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Als u de sjabloon voor e-mailberichten voor @notify in blogopmerkingen wilt wijzigen, plaatst u de sjabloon box op: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

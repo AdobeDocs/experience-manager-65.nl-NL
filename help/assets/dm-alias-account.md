@@ -27,31 +27,31 @@ Een Dynamic Media-account voor bedrijfalias zorgt ervoor dat alle updates die in
 
 Houd rekening met het volgende wanneer u een Dynamic Media-bedrijfsaliasaccount configureert:
 
-* Bestaande Dynamic Media-URL&#39;s of viewerinsluitcode op uw *leven* digitale eigenschappen moeten handmatig worden bijgewerkt om de nieuwe aliasnaam te weerspiegelen. URL&#39;s of viewers die code insluiten met uw oorspronkelijke Dynamic Media-bedrijfsnaam, blijven echter werken voor bestaande of nieuwe elementen.
+* Om het even welke bestaande Dynamic Media URLs of kijker bedden code op uw *levende* digitale eigenschappen moet manueel worden bijgewerkt om op de nieuwe aliasnaam te wijzen. URL&#39;s of viewers die code insluiten met uw oorspronkelijke Dynamic Media-bedrijfsnaam, blijven echter werken voor bestaande of nieuwe elementen.
 * De Dynamic Media-mogelijkheden voor aliasaccounts zijn beperkt tot de Experience Manager Assets Authoring-modus en -levering. De alias van het bedrijf werkt niet met Experience Manager Sites. De componenten WCM (Web Content Management) worden niet bijgewerkt voor deze wijziging. Deze componenten werken nog steeds met de oorspronkelijke Dynamic Media-bedrijfsnaam voor het ophalen van Dynamic Media-middelen.
-* U kunt slechts één bedrijfsaliasaccount instellen op het tabblad **[!UICONTROL Edit Dynamic Media Configuration]** pagina. U kunt echter wel zoveel aliasaccounts van bedrijven maken als een ondersteuningsgeval en de vereiste aliasnaam handmatig doorgeven in de Dynamic Media URL&#39;s of de insluitcode van de viewer.
-* De out-of-the-box [Cache-validatie](/help/assets/invalidate-cdn-cache-dynamic-media.md) het vermogen van Dynamic Media maakt URLs met zowel Bedrijf als van het Bedrijf Alias rekeningen ongeldig die in de pagina van de Configuratie van Dynamic Media in Cloud Servicen worden gevormd.
-* Wanneer u een bedrijf alias rekening op vormt **[!UICONTROL Edit Dynamic Media Configuration]** pagina, voor geheim voorgeheugenongeldigverklaring om succesvol te zijn, moet u URLs ongeldig maken voor *beide* de **[!UICONTROL Company]** en de **[!UICONTROL Company Alias]** account, gelijktijdig.
+* U kunt slechts één bedrijf-aliasaccount instellen op de **[!UICONTROL Edit Dynamic Media Configuration]** -pagina. U kunt echter wel zoveel aliasaccounts van bedrijven maken als een ondersteuningsgeval en de vereiste aliasnaam handmatig doorgeven in de Dynamic Media URL&#39;s of de insluitcode van de viewer.
+* Het uit-van-de-doos [ vermogen van de Invalidatie van het Geheime voorgeheugen ](/help/assets/invalidate-cdn-cache-dynamic-media.md) van Dynamic Media maakt URLs met zowel Onderneming als van het Bedrijf Alias rekeningen ongeldig die in de pagina van de Configuratie van Dynamic Media in Cloud Servicen worden gevormd.
+* Wanneer u een bedrijf aliasrekening op de **[!UICONTROL Edit Dynamic Media Configuration]** pagina vormt, voor geheim voorgeheugenbevestiging om succesvol te zijn, moet u URLs voor *ongeldig maken zowel* de **[!UICONTROL Company]** rekening als de **[!UICONTROL Company Alias]** rekening, gelijktijdig.
 
-Zie ook [Een Dynamic Media-configuratie maken in Cloud Servicen](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)
+Zie ook [ een Configuratie van Dynamic Media in Cloud Servicen ](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) creëren
 
 ## Een aliasaccount voor een Dynamic Media-bedrijf configureren {#configure-dm-alias-account}
 
 U begint een Dynamic Media-bedrijf aliasaccount te configureren door eerst een Support-case in te dienen. Deze stap is vereist.
 
-1. [Gebruik de Admin Console om een steungeval te creëren](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [ Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
-   * De aliasnaam van het Dynamic Media-bedrijf die u wilt gebruiken. De naam moet bevatten *alleen* letters (gebruik van hoofdletters en kleine letters), cijfers, afbreekstreepjes en onderstrepingstekens.
+   * De aliasnaam van het Dynamic Media-bedrijf die u wilt gebruiken. De naam moet *slechts* brieven bevatten (het gemengde toe te staan casing), aantallen, koppeltekens, en onderstrepingstekens.
    * Uw regio.
-   * Alle [regels](/help/assets/using-rulesets-to-transform-urls.md) eerder worden gebruikt om Dynamic Media-inhoud te kunnen bedienen via een andere Dynamic Media-accountnaam.
+   * Of om het even welke [ heersers ](/help/assets/using-rulesets-to-transform-urls.md) eerder worden gebruikt om het dienen van de inhoud van Dynamic Media door een afwisselende naam van de het bedrijfrekening van Dynamic Media te bereiken.
 
 1. Nadat de Dynamic Media-aliasaccount is gemaakt door Support, selecteert u in de Experience Manager as a Cloud Service auteur het as a Cloud Service logo van de Experience Manager voor toegang tot de algemene navigatieconsole.
-1. Selecteer links van de console het pictogram Gereedschappen en ga naar **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
-1. Selecteer in het linkerdeelvenster van de Dynamic Media Configuration Browser-pagina de optie **[!UICONTROL global]** (selecteer het mappictogram niet links van **[!UICONTROL global]**). Selecteer vervolgens **[!UICONTROL Edit]**.
+1. Selecteer links van de console het pictogram Gereedschappen en ga naar **[!UICONTROL Cloud Services > Dynamic Media Configuration]** .
+1. Selecteer **[!UICONTROL global]** op de pagina Dynamic Media Configuration Browser in het linkerdeelvenster (selecteer niet het mappictogram links van **[!UICONTROL global]** ). Selecteer vervolgens **[!UICONTROL Edit]** .
 
-   ![Dynamic Media Company Alias tekstveld](/help/assets/assets-dm/dm-company-alias.png)
+   ![ Dynamic Media Company Alias tekstgebied ](/help/assets/assets-dm/dm-company-alias.png)
 
-1. Op de **[!UICONTROL Edit Dynamic Media Configuration]** pagina, in de **[!UICONTROL Company Alias]** in het tekstveld typt u de naam van de Dynamic Media-aliasaccount die u eerder in uw ondersteuningsgeval hebt opgegeven.
-1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]**.
+1. Typ op de pagina **[!UICONTROL Edit Dynamic Media Configuration]** in het tekstveld **[!UICONTROL Company Alias]** de naam van de Dynamic Media-aliasaccount die u eerder in het ondersteuningsgeval hebt opgegeven.
+1. Selecteer **[!UICONTROL Save]** rechtsboven op de pagina.
 Het aliasaccount van het Dynamic Media-bedrijf wordt nu opgeslagen en ingeschakeld. Alle URL&#39;s en in de viewer ingesloten code voor bestaande en nieuwe elementen weerspiegelen nu de nieuwe naam van het bedrijf.

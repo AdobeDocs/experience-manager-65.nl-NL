@@ -23,7 +23,7 @@ Hoe u uw Dynamic Media-middelen kunt leveren - zowel video als afbeeldingen - ha
 Met Dynamic Media hebt u verschillende opties:
 
 * Als uw website op Adobe Experience Manager wordt gehost, wilt u de Dynamic Media-elementen rechtstreeks aan uw pagina toevoegen.
-* Als uw website niet op Experience Manager is, raadpleegt u [Dynamic Media-middelen leveren](/help/assets/delivering-dynamic-media-assets.md) in de gebruikersinterface met aanraakbediening.
+* Als uw website niet op Experience Manager is, dan zie [ de activa van Dynamic Media leveren ](/help/assets/delivering-dynamic-media-assets.md) in het aanraking-toegelaten gebruikersinterface.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 

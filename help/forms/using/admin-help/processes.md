@@ -22,13 +22,13 @@ De pagina van de Lijst van het Proces toont de processen die een gebruiker in we
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Forms-workflow. De proceslijst bevat de volgende informatie:
 
-   **Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Workbench.
+   **Naam van het Proces - Versie:** de naam van het proces, zoals die in Workbench wordt bepaald.
 
-   **Toepassing:** De toepassing waartoe het proces behoort, zoals gedefinieerd in Workbench.
+   **Toepassing:** de toepassing dat het proces tot behoort, zoals die in Workbench wordt bepaald.
 
-   **Status:** Actief betekent dat het proces het proces is dat voor de procesversie wordt geactiveerd. Inactief betekent dat het proces een oude versie is die nog procesinstanties heeft.
+   **Status:** Actief betekent dat het proces voor de procesversie geactiveerd is. Inactief betekent dat het proces een oude versie is die nog procesinstanties heeft.
 
-   **Aanmaakdatum:** De datum en het tijdstip waarop het proces is geïmplementeerd.
+   **Datum van de Aanmaak:** de datum en de tijd het proces werd opgesteld.
 
 1. Klik op een procesnaam om de procesinstanties ervan op de pagina Procesinstantie weer te geven.
 
@@ -38,15 +38,15 @@ Als u de pagina van de Instantie van het Proces van de pagina van de Lijst van h
 
 Voor elke procesinstantie bevat de lijst de volgende informatie:
 
-**Proces-id:** De id die aan de werkstroom voor formulieren wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
+**identiteitskaart van het Proces:** Het herkenningsteken dat het vormwerkschema toewijst wanneer het proces (namelijk wanneer een gebruiker of een geautomatiseerde stap een proces) in werking stelt. U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
 
-**Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Workbench.
+**Naam van het Proces - Versie:** de naam van het proces, zoals die in Workbench wordt bepaald.
 
-**Status:** Geeft aan of de procesinstantie normaal wordt uitgevoerd, de status wordt gewijzigd of is gestopt. (Zie Over status van procesinstanties.)
+**Status:** wijst erop of de procesinstantie normaal loopt, veranderend staat, of is tegengehouden. (Zie Over status van procesinstanties.)
 
-**Aanmaakdatum:** De datum en tijd waarop de procesinstantie is gemaakt.
+**Datum van de Verwezenlijking:** de datum en de tijd de procesinstantie werd gecreeerd.
 
-**Datum van update:** De datum en tijd waarop de status van de procesinstantie voor het laatst is gewijzigd.
+**Datum van de Update:** de datum en de tijd de status van de procesinstantie werd het laatst veranderd.
 
 U kunt de volgende taken uitvoeren op de pagina van de Instantie van het Proces:
 
@@ -58,23 +58,23 @@ U kunt de volgende taken uitvoeren op de pagina van de Instantie van het Proces:
 
 Een procesinstantie, inclusief subprocessen, kan de volgende statussen hebben:
 
-**VOLTOOID:** Alle vertakkingen en bewerkingen in het procesexemplaar zijn voltooid. COMPLETE is de definitieve status van een procesinstantie.
+**VOLTOOID:** Alle takken en verrichtingen in de procesinstantie hebben voltooid. COMPLETE is de definitieve status van een procesinstantie.
 
-**VOLTOOIEN:** De status van de procesinstantie wordt gewijzigd in COMPLETE.
+**COMPLETING:** het statuut van de procesinstantie staat op het punt om in COMPLETE te veranderen.
 
-**GESTART:** De procesinstantie is gemaakt, maar is nog niet actief. INITIATED is de eerste status van een procesinstantie.
+**BEGONNEN:** De procesinstantie is gecreeerd maar loopt nog niet. INITIATED is de eerste status van een procesinstantie.
 
-**UITVOEREN:** De procesinstantie wordt normaal uitgevoerd. Er kan een geautomatiseerde stap worden uitgevoerd of de procesinstantie ontvangt gebruikersinvoer of wacht op gebruikersinteractie.
+**RUNNING:** de procesinstantie loopt normaal. Er kan een geautomatiseerde stap worden uitgevoerd of de procesinstantie ontvangt gebruikersinvoer of wacht op gebruikersinteractie.
 
 **GESCHORST:** De procesinstantie is opgeschort door een beheerder of door een stap in het proces. Er vinden geen verdere bewerkingen plaats totdat de status wordt gewijzigd.
 
-**OPSCHORTING:** De status wordt gewijzigd in SUSPENDED. Als een verrichting is ontworpen om schorsingsverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt opgeschort.
+**HET SCHORTEN:** de status staat op het punt om in GESCHORST te veranderen. Als een verrichting is ontworpen om schorsingsverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt opgeschort.
 
-**BEËINDIGD:** De procesinstantie is geëindigd door een beheerder.
+**BEËINDIGD:** de procesinstantie is geëindigd door een beheerder.
 
-**BEËINDIGEN:** De status wordt gewijzigd in BEËINDIGD. Als een verrichting is ontworpen om eindeverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt geëindigd.
+**BEËINDIGEN:** de status staat op het punt om in BEËINDIGD te veranderen. Als een verrichting is ontworpen om eindeverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt geëindigd.
 
-**ONVERSCHORMD:** De status verandert bijna in RUNNING nadat deze is opgeschort.
+**ONSUSPENDING:** de status staat op het punt om in RUNNING te veranderen nadat het zijn SUSPENDED.
 
 >[!NOTE]
 >
@@ -116,27 +116,27 @@ In het gebied Samenvatting wordt basisinformatie over de procesinstantie weergeg
 
 Op het tabblad Bewerkingen wordt elke bewerking voor de procesinstantie weergegeven in volgorde van voltooiing, van de eerste naar de laatste met de volgende informatie:
 
-**Bedrijfsnaam:** De naam van de bewerking, zoals gedefinieerd in Workbench.
+**Naam van de Verrichting:** de naam van de verrichting, zoals die in Workbench wordt bepaald.
 
-**Status:** Geeft aan of de bewerking normaal wordt uitgevoerd of is gestopt. (Zie Over status van procesinstanties.)
+**Status:** wijst erop of de verrichting normaal loopt of is tegengehouden. (Zie Over status van procesinstanties.)
 
-**Naam vertakking:** De naam van de vertakking, zoals gedefinieerd in Workbench.
+**de Naam van de Tak:** de naam van de tak, zoals die in Workbench wordt bepaald.
 
-**Begindatum:** De datum en tijd waarop de bewerking is gestart.
+**Datum van het Begin:** de datum en de tijd de verrichting begonnen.
 
-**Voltooide datum:** De datum en het tijdstip waarop de bewerking is voltooid.
+**Voltooide Datum:** de datum en de tijd voltooide verrichting.
 
 Een subproces is een procesinstantie die door een ander proces is begonnen en onafhankelijk van dat andere proces loopt. Subprocessen worden alleen weergegeven als ze zijn ontworpen als onderdeel van het proces in Workbench. Op het tabblad Subprocessen wordt elk subproces weergegeven met de volgende informatie:
 
-**Proces-id:** Dit positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap het proces start). Met deze id kunt u de procesinstantie gedurende de levenscyclus volgen.
+**identiteitskaart van het Proces:** Dit positieve geheel dat het vormwerkschema toewijst wanneer het proces (namelijk wanneer een gebruiker of een geautomatiseerde stap het proces) wordt geconcretiseerd. Met deze id kunt u de procesinstantie gedurende de levenscyclus volgen.
 
-**Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Designer.
+**Naam van het Proces - Versie:** De naam van het proces, zoals die in Designer wordt bepaald.
 
-**Status:** Geeft aan of de procesinstantie normaal wordt uitgevoerd, de status wordt gewijzigd of wordt gestopt. (Zie Over status van procesinstanties.)
+**Status:** wijst erop of de procesinstantie normaal loopt, veranderend staat, of tegengehouden. (Zie Over status van procesinstanties.)
 
-**Aanmaakdatum:** De datum en tijd waarop het subproces is gemaakt.
+**Datum van de Aanmaak:** de datum en de tijd het subprocess werd gecreeerd.
 
-**Datum van update:** De datum en tijd waarop de status van het subproces voor het laatst is gewijzigd.
+**Datum van de Update:** de datum en de tijd de status van subprocess werd het laatst veranderd.
 
 U kunt de volgende taken uitvoeren op de pagina Details van de Instantie van het Proces:
 
@@ -148,13 +148,13 @@ U kunt de volgende taken uitvoeren op de pagina Details van de Instantie van het
 
 Een bewerking (een stap in een proces) kan de volgende statussen hebben:
 
-**VOLTOOID:** De bewerking is voltooid.
+**VOLTOOID:** de voltooide verrichting.
 
-**UITVOEREN:** De bewerking wordt normaal uitgevoerd. Het kan gebruikersinvoer ontvangen of op gebruikersinteractie wachten, of een geautomatiseerde stap kan lopend zijn.
+**DIE WORDT UITGEVOERD:** de verrichting loopt normaal. Het kan gebruikersinvoer ontvangen of op gebruikersinteractie wachten, of een geautomatiseerde stap kan lopend zijn.
 
-**GESTALLEERD:** Er is een probleem opgetreden tijdens het verwerken van de bewerking. Controle voor de fout of de uitzondering in de Geroepen pagina van Verrichtingen.
+**VERSTALLED:** Een probleem kwam voor terwijl de verrichting werd verwerkt. Controle voor de fout of de uitzondering in de Geroepen pagina van Verrichtingen.
 
-**BEËINDIGD:** De bewerking is beëindigd door een beheerder.
+**BEËINDIGD:** de verrichting werd geëindigd door een beheerder.
 
 ### Bewerkingen of subprocessen beëindigen {#terminate-operations-or-subprocesses}
 
@@ -191,10 +191,10 @@ De pagina van de Details van de Verrichting toont een overzicht van één verric
 
    Voor elke taak, toont de lijst de volgende informatie:
 
-   **Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Workbench.
+   **Naam van het Proces - Versie:** de naam van het proces, zoals die in Workbench wordt bepaald.
 
-   **Toepassing:** De toepassing waartoe het proces behoort, zoals gedefinieerd in Workbench.
+   **Toepassing:** de toepassing dat het proces tot behoort, zoals die in Workbench wordt bepaald.
 
-   **Status:** Actief betekent dat het proces het proces is dat voor de procesversie wordt geactiveerd. Inactief betekent dat het proces een oude versie is die nog procesinstanties heeft.
+   **Status:** Actief betekent dat het proces voor de procesversie geactiveerd is. Inactief betekent dat het proces een oude versie is die nog procesinstanties heeft.
 
-   **Aanmaakdatum:** De datum en het tijdstip waarop het proces is geïmplementeerd.
+   **Datum van de Aanmaak:** de datum en de tijd het proces werd opgesteld.

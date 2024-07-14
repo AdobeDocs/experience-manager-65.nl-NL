@@ -18,33 +18,33 @@ ht-degree: 0%
 
 # Geavanceerde systeemkenmerken configureren {#configure-advanced-system-attributes}
 
-Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om bepaalde montages in het configuratiedossier te wijzigen zonder de behoefte om, het dossier uit te voeren uit te geven en in te voeren. (Zie [Het configuratiebestand importeren en exporteren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om bepaalde montages in het configuratiedossier te wijzigen zonder de behoefte om, het dossier uit te voeren uit te geven en in te voeren. (Zie [ het Invoeren en het uitvoeren van het configuratiedossier ](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Configuration > Configure Advanced System Attributes]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Configuration > Configure Advanced System Attributes]** .
 1. (Optioneel) Wijzig een van de volgende sessiekenmerken:
 
-   **Tijdslimiet voor sessie (minuten):** De hoeveelheid tijd, in minuten, voordat een gebruiker automatisch uit het systeem wordt afgemeld. AEM formuliercomponenten zoals Workbench time-out na twee uur, ongeacht activiteit of inactiviteit, en de gebruiker moet zich opnieuw aanmelden. Geldige waarden zijn `1` tot `1440`. De standaardwaarde is `120` (2 uur). Deze instelling werkt de `SAML/Producer/assertionValidityInMinutes` ingangstoets in het configuratiebestand.
+   **de Grens van de Onderbreking van de Zitting (Minuten):** de hoeveelheid tijd, in notulen, alvorens een gebruiker automatisch het programma wordt geopend uit het systeem. AEM formuliercomponenten zoals Workbench time-out na twee uur, ongeacht activiteit of inactiviteit, en de gebruiker moet zich opnieuw aanmelden. Geldige waarden zijn `1` tot `1440` . De standaardwaarde is `120` (2 uur). Met deze instelling wordt de invoersleutel `SAML/Producer/assertionValidityInMinutes` in het configuratiebestand bijgewerkt.
 
    >[!NOTE]
    >
    >U moet de time-outlimiet voor sessies niet instellen op minder dan 10 minuten, omdat het systeem zich mogelijk niet correct gedraagt. De aanbevolen waarde is 10-120 minuten.
 
-   **Drempel bevestiging (seconden):** Een buffertijd om vertragingen als gevolg van systeemtijdverschillen tussen AEM formuliertoepassingsserver in een cluster te compenseren. AEM formulieren werken terug op de aanmeldtijd van een gebruiker met de hoeveelheid tijd (in seconden) die in deze eigenschap is opgegeven. Geldige waarden zijn `0` tot `3600`. De standaardwaarde is `60`. Deze instelling werkt de `SAML/Producer/assertionThresholdInSeconds` ingangstoets in het configuratiebestand.
+   **Drempel van de Bevestiging (Seconden):** De buffertijd van A om vertragingen wegens systeemtijdverschillen tussen AEM server van de vormtoepassing in een cluster te compenseren. AEM formulieren werken terug op de aanmeldtijd van een gebruiker met de hoeveelheid tijd (in seconden) die in deze eigenschap is opgegeven. Geldige waarden zijn `0` tot `3600` . De standaardwaarde is `60` . Met deze instelling wordt de invoersleutel `SAML/Producer/assertionThresholdInSeconds` in het configuratiebestand bijgewerkt.
 
-   **Maximaal toegestane verlenging van een bevestiging:** Het maximale aantal keren dat een gebruikerssessie transparant kan worden vernieuwd zonder aanmelding te vereisen. Geldige waarden zijn `0` tot `9999`. Een waarde van `0` betekent dat de beweringen niet worden verlengd. De standaardwaarde is 10. Deze instelling werkt de `SAML/Producer/maxAssertionRenewalCount` ingangstoets in het configuratiebestand.
+   **Maximum Toegestane Verlengingen van een Bevestiging:** het maximumaantal tijden de zitting van een gebruiker kan transparant worden vernieuwd zonder login te vereisen. Geldige waarden zijn `0` tot `9999` . De waarde `0` betekent dat beweringen niet worden vernieuwd. De standaardwaarde is 10. Met deze instelling wordt de invoersleutel `SAML/Producer/maxAssertionRenewalCount` in het configuratiebestand bijgewerkt.
 
 1. (Optioneel) Wijzig een of meer van de volgende kenmerken voor directorysynchronisatie:
 
-   **Logboekregistratie synchronisatiestatistieken:** Specificeert of het Beheer van de Gebruiker gedetailleerde statistieken tijdens het synchronisatieproces registreert. (Zie [Gedetailleerde logboekregistratie tijdens synchronisatie inschakelen of uitschakelen](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization).)
+   **Logging van de Statistieken van de Synch:** specificeert of het Beheer van de Gebruiker gedetailleerde statistieken tijdens het synchronisatieproces registreert. (Zie [ toelaten of onbruikbaar maken gedetailleerd registreren tijdens synchronisatie ](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization).)
 
-   **Synch Finisher Cron Expression:** Het interval waarbij het Beheer van de Gebruiker mislukte synchronisaties opnieuw probeert. (Zie [De optie voor het opnieuw proberen van de directorysynchronisatie configureren](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option).)
+   **Uitdrukking van de Uitsnede van de Finisher van de Synch:** het interval waarbij het Beheer van de Gebruiker synchronisaties ontbrak. (Zie [ vormen de optie van de foldersynchronisatie opnieuw probeert ](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option).)
 
-   **Time-out clustertaakvergrendeling in minuten:** Wordt gebruikt in geclusterde omgevingen. Als de synchronisatie op één knoop ontbreekt en het clusterslot niet wordt vrijgegeven, specificeert deze waarde het aantal notulen dat een andere knoop wacht alvorens het slot te dwingen. De standaardwaarde is `15` minuten. Geldige waarden zijn `1` tot `1440` minuten.
+   **Onderbreking van het Slot van de Taak van de Cluster in notulen:** Gebruikt in gegroepeerde milieu&#39;s. Als de synchronisatie op één knoop ontbreekt en het clusterslot niet wordt vrijgegeven, specificeert deze waarde het aantal notulen dat een andere knoop wacht alvorens het slot te dwingen. De standaardwaarde is `15` minuten. Geldige waarden zijn `1` tot `1440` minuten.
 
-1. (Optioneel) Wijzig de volgende kenmerken en klik op **[!UICONTROL OK]**:
+1. (Optioneel) Wijzig de volgende kenmerken en klik op **[!UICONTROL OK]** :
 
-   **Gebeurteniscontrole van gebruikersbeheer:** Selecteer deze optie om controle van de gebeurtenissen van de foldersynchronisatie en van authentificatiegebeurtenissen zoals succes, mislukking, en lockout toe te laten. Deze optie is standaard alleen ingeschakeld als u een onderdeel hebt geïnstalleerd waarvoor controle nodig is, zoals een Rights Management. Deze instelling werkt de `APSAuditService` ingangstoets in het configuratiebestand.
+   **Controle van de Gebeurtenis van de Manager van de Gebruiker:** selecteer deze optie om controle van de gebeurtenissen van de foldersynchronisatie en van authentificatiegebeurtenissen zoals succes, mislukking, en lockout toe te laten. Deze optie is standaard alleen ingeschakeld als u een onderdeel hebt geïnstalleerd waarvoor controle nodig is, zoals een Rights Management. Met deze instelling wordt de invoersleutel `APSAuditService` in het configuratiebestand bijgewerkt.
 
-   **Automatisch maken van dynamische groep:** Hiermee kunt u automatisch dynamische groepen maken op basis van e-maildomeinen. (Zie [Een dynamische groep maken](/help/forms/using/admin-help/creating-configuring-groups.md#create-a-dynamic-group).)
+   **AutoCreatie van Dynamische Groep:** laat de automatische verwezenlijking van dynamische groepen toe die op e-maildomeinen worden gebaseerd. (Zie [ een dynamische groep ](/help/forms/using/admin-help/creating-configuring-groups.md#create-a-dynamic-group) creëren.)
 
 U kunt ook terugkeren naar de oorspronkelijke instellingen voor Gebruikersbeheer door op Opnieuw laden te klikken.

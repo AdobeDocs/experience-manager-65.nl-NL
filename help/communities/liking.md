@@ -18,43 +18,43 @@ ht-degree: 0%
 
 # Koppeling gebruiken {#using-liking}
 
-De `Liking` is een nuttig hulpmiddel dat gebruikers toestaat om een mening over een bepaald stuk van inhoud, zoals een commentaar binnen een forum te uiten. Met de `Liking` leden selecteren het hartpictogram om een positieve mening aan te geven.
+De component `Liking` is een handig hulpmiddel waarmee gebruikers een mening over bepaalde inhoud kunnen uiten, zoals een opmerking in een forum. Met de component `Liking` selecteren de leden het hartpictogram om een positieve mening aan te geven.
 
 ## Koppeling toevoegen aan een pagina {#adding-liking-to-a-page}
 
-Als u een `Liking` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
+Als u een component `Liking` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Liking`
 
 En sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers leuk kunnen vinden.
 
-Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
 
-Wanneer de [vereiste clientbibliotheken](essentials-liking.md#essentials-for-client-side) worden opgenomen, is dit hoe `Liking` wordt weergegeven.
+Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-liking.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Liking` component verschijnt.
 
-![koppelingscomponent](assets/liking-component.png)
+![ houden-component ](assets/liking-component.png)
 
 ## Liking configureren {#configuring-liking}
 
-Selecteer de geplaatste `Liking` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste component `Liking` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![configure-new](assets/configure-new.png)
+![ vorm-nieuw ](assets/configure-new.png)
 
-Onder de **[!UICONTROL Texts & Labels]** , geeft u de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
+Geef onder het tabblad **[!UICONTROL Texts & Labels]** de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
 
-![configureren-koppelen](assets/configure-liking.png)
+![ vormen-houden ](assets/configure-liking.png)
 
 * **[!UICONTROL Positive Response Label]**
 
-  (*Vereist*) De eigenschapsnaam voor een positieve reactie.
+  (*Vereist*) de bezitsnaam voor een positieve reactie.
 
 * **[!UICONTROL Negative Response Label]**
 
-  (*Vereist*) De eigenschapsnaam voor een negatieve reactie.
+  (*Vereist*) de bezitsnaam voor een negatieve reactie.
 
 * **[!UICONTROL Tally Name]**
 
-  (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
+  (*Vereist*) de interne, identificeerbare bezitsnaam voor dit geval van een stemcomponent.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -68,4 +68,4 @@ Anonieme koppelingen worden niet ondersteund. Site-bezoekers moeten zich registr
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie is te vinden op de [Belangrijkste elementen](essentials-liking.md) pagina voor ontwikkelaars.
+Meer informatie kan op de [ Vergelijkende Hoofdzaak ](essentials-liking.md) pagina voor ontwikkelaars worden gevonden.

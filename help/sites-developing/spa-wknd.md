@@ -24,7 +24,7 @@ Ga SPA ontwikkeling door met deze meerdelige zelfstudie. Voer uw eigen SPA uit d
 
 Voor een voorbeeld van begin tot eind om uw eigen enig-paginatoepassing te bouwen die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie de Tutorials van de SPA WKND:
 
-* [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
-* [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [ Begonnen het Worden met de Redacteur en de Angular van de SPA van de AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [ Begonnen het Worden met de Redacteur van de SPA van de AEM en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-Voordat u met uw eigen SPA project begint voor AEM, moet u echter ook de knop [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architecture.md) document.
+Alvorens u met uw eigen SPA project voor AEM begint, ben zeker om [ het Ontwikkelen SPA voor AEM ](/help/sites-developing/spa-architecture.md) document ook te herzien.

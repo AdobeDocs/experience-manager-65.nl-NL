@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Projecten {#projects}
 
-Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere soorten informatie omvatten, zoals die in detail wordt beschreven [Projectblokken.](#project-tiles)
+Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere die soorten informatie omvatten, zoals in detail in [ wordt beschreven de Tegels van het Project.](#project-tiles)
 
 Als gebruiker kunt u:
 
@@ -27,15 +27,15 @@ Als gebruiker kunt u:
 
 Projecteert een standaard AEM en vereist geen extra opstelling.
 
-Nochtans voor gebruikers in projecten om andere gebruikers/groepen te zien terwijl het gebruiken van Projecten zoals wanneer het creëren van projecten, het creëren van taken/werkschema&#39;s of het bekijken van en het leiden van het team, moeten die gebruikers lees toegang hebben op `/home/users` en `/home/groups`.
+Gebruikers in projecten kunnen echter andere gebruikers/groepen zien terwijl ze projecten gebruiken, zoals bij het maken van projecten, het maken van taken/workflows of het weergeven en beheren van het team, als deze gebruikers leestoegang moeten hebben op `/home/users` en `/home/groups` .
 
-De eenvoudigste manier om dit te doen is de **projecten-gebruikers** groep lees toegang tot `/home/users` en `/home/groups`.
+De gemakkelijkste manier om dit te doen is de **project-gebruikers** groep te geven leest toegang tot `/home/users` en `/home/groups`.
 
 ## Projectconsole {#projects-console}
 
 De projectenconsole is waar u tot uw projecten binnen AEM toegang hebt en leidt.
 
-![De projectenconsole](assets/screen-shot_2019-03-05at125110.png)
+![ de Console van Projecten ](assets/screen-shot_2019-03-05at125110.png)
 
 De console van Projecten is gelijkaardig aan andere consoles in AEM, staat verscheidene acties op individuele projecten toe en past uw mening van de projecten aan.
 
@@ -43,7 +43,7 @@ De console van Projecten is gelijkaardig aan andere consoles in AEM, staat versc
 
 U kunt de spoorselecteur gebruiken om tussen consolemodi te veranderen.
 
-![Spoorwegkiezer](assets/projects-rail.png)
+![ de selecteur van het spoorspoor ](assets/projects-rail.png)
 
 #### Alleen inhoud {#content-only}
 
@@ -51,21 +51,21 @@ Alleen inhoud is de standaardmodus bij het openen van de console. Het zal al uw 
 
 #### Tijdlijn {#timeline}
 
-In de tijdlijnweergave kunt u een afzonderlijk project selecteren en er activiteiten op weergeven. De spoorwegkiezer of de hotkey gebruiken `alt+1` om naar deze weergave te gaan.
+In de tijdlijnweergave kunt u een afzonderlijk project selecteren en er activiteiten op weergeven. Gebruik de railkiezer of de sneltoets `alt+1` om naar deze weergave te gaan.
 
-![Tijdlijnmodus](assets/project-timeline.png)
+![ wijze van de Chronologie ](assets/project-timeline.png)
 
 ### Weergave schakelen {#views}
 
 U kunt de weergavekiezer gebruiken om projecten als grote tegels weer te geven (de standaardinstelling), om ze als een lijst of op een kalender weer te geven.
 
-![Weergaven](assets/projects-views.png)
+![ Weergaven ](assets/projects-views.png)
 
 ### De weergave filteren {#filter}
 
 U kunt het filter gebruiken om tussen alle projecten en slechts die van een knevel te voorzien die actief zijn.
 
-![Filter](assets/projects-filter.png)
+![ Filter ](assets/projects-filter.png)
 
 ### Projecten selecteren en weergeven {#selecting}
 
@@ -75,11 +75,11 @@ U kunt de details van een project weergeven door erop te klikken en naar de deta
 
 ### Nieuwe projecten maken {#creating}
 
-Klikken **Maken** een nieuw project toevoegen.
+Klik **creëren** om een nieuw project toe te voegen.
 
 ## Projectblokken {#project-tiles}
 
-Projecten bestaan uit verschillende soorten informatie die u samen wilt beheren. Deze informatie wordt door verschillende **Tegels**.
+Projecten bestaan uit verschillende soorten informatie die u samen wilt beheren. Deze informatie wordt vertegenwoordigd door verschillende **Tegels**.
 
 Aan uw project kunnen de volgende tegels zijn gekoppeld.
 
@@ -101,25 +101,25 @@ Klik op de ellipsknop rechtsonder in een tegel om de gegevens van de tegel te op
 
 ### Assets {#assets}
 
-In de **Activa** U kunt alle elementen verzamelen die u voor een bepaald project gebruikt.
+In de **tegel van 0} Assets {, kunt u alle activa verzamelen die u voor een bepaald project gebruikt.**
 
-![Elementen](assets/project-tile-assets.png)
+![ de tegel van Assets ](assets/project-tile-assets.png)
 
 U uploadt elementen rechtstreeks in de tegel.
 
 ### Asset Collections {#asset-collections}
 
-Net als bij elementen kunt u [verzamelingen van middelen](/help/assets/manage-collections.md) rechtstreeks naar uw project. U definieert verzamelingen in elementen.
+Gelijkaardig aan activa, kunt u [ activa inzamelingen ](/help/assets/manage-collections.md) direct aan uw project toevoegen. U definieert verzamelingen in Assets.
 
-![Element voor het verzamelen van middelen](assets/project-tile-asset-collection.png)
+![ de inzamelingspijl van Activa ](assets/project-tile-asset-collection.png)
 
 Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juiste verzameling in de lijst te selecteren.
 
 ### Ervaringen {#experiences}
 
-De **Ervaringen** Met de tegel kunt u een mobiele app, website of publicatie aan het project toevoegen.
+De **tegel van de Ervaring 0} laat u een mobiele app, een website, of een publicatie aan het project toevoegen.**
 
-![Tegel met ervaring](assets/project-tile-experiences.png)
+![ de tegel van Ervaring ](assets/project-tile-experiences.png)
 
 De pictogrammen geven aan welke ervaring wordt weergegeven.
 
@@ -128,80 +128,80 @@ De pictogrammen geven aan welke ervaring wordt weergegeven.
 
 ### Koppelingen {#links}
 
-De **Koppelingen** met de tegel kunt u externe koppelingen aan uw project koppelen.
+De **tegel van Verbindingen** laat u externe verbindingen met uw project associëren.
 
-![Koppelingenblok](assets/project-tile-links.png)
+![ de tegel van Verbindingen ](assets/project-tile-links.png)
 
 U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en de miniatuur wijzigen.
 
 ### Projectinfo {#project-info}
 
-De **Projectinformatie** de tegel bevat algemene informatie over het project, zoals een beschrijving, de status van het project (inactief of actief), een vervaldatum en leden. Bovendien kunt u een projectduimnagel toevoegen, die op de belangrijkste pagina van Projecten wordt getoond.
+De **tegel van de Informatie van het 0} Project {verstrekt algemene informatie over het project met inbegrip van een beschrijving, projectstatus (inactief of actief), een vervaldatum, en leden.** Bovendien kunt u een projectduimnagel toevoegen, die op de belangrijkste pagina van Projecten wordt getoond.
 
-![Projectinformatiepakket](assets/project-tile-info.png)
+![ de informatietegel van het Project ](assets/project-tile-info.png)
 
 ### Vertaaltaak {#translation-job}
 
-De **Vertaaltaak** Aan de tegel staat waar u een vertaling begint en waar u de status van uw vertalingen ziet.
+De **tegel van de Baan van 0} Vertaling {is waar u een vertaling begint en ook waar u het statuut van uw vertalingen ziet.**
 
-![Taaktegel voor vertaling](assets/project-tile-translation.png)
+![ de baantegel van de Vertaling ](assets/project-tile-translation.png)
 
-Raadpleeg het document voor informatie over het instellen van de vertaling [Vertaalprojecten maken.](/help/assets/translation-projects.md)
+Aan opstelling uw vertaling, zie het document [ Creërend Vertaalprojecten.](/help/assets/translation-projects.md)
 
 ### Team {#team}
 
 In deze tegel, kunt u de leden van het projectteam specificeren. Wanneer het uitgeven, kunt u de naam van het teamlid ingaan en de gebruikersrol toewijzen.
 
-![Teamtegel](assets/project-tile-team.png)
+![ de tegel van het Team ](assets/project-tile-team.png)
 
-U kunt teamleden toevoegen en verwijderen uit het team. Daarnaast kunt u de opdracht [gebruikersrol](#userroles) toegewezen aan het teamlid.
+U kunt teamleden toevoegen en verwijderen uit het team. Bovendien kunt u de [ gebruikersrol ](#userroles) uitgeven die aan het teamlid wordt toegewezen.
 
 ### Openingspagina&#39;s {#landing-pages}
 
-De **Openingspagina&#39;s** Met de tegel kunt u een nieuwe bestemmingspagina aanvragen.
+De **het Bestaan van Pagina&#39;s** tegel laat u om een nieuwe het landen pagina verzoeken.
 
-![Landingspagina-element](assets/project-tile-landing.png)
+![ het Bestaan paginatielijn ](assets/project-tile-landing.png)
 
-Deze workflow wordt beschreven in het document[Een workflow voor de openingspagina maken.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+Dit werkschema wordt beschreven in het document [ creeer een het Bestaan werkschema van de Pagina.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### E-mails {#emails}
 
-De **E-mails** De tegel helpt u verzoeken om e-mail te beheren. Het begint met **Verzoek om e-mail** workflow.
+De **Emails** tegelhulp u verzoeken voor e-mail beheert. Het begint het **Verzoek voor E-mail** werkschema.
 
-![E-mailtegel](assets/project-tile-email.png)
+![ E-mailtegel ](assets/project-tile-email.png)
 
-Meer informatie wordt beschreven in het dialoogvenster [E-mailworkflow aanvragen.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+Meer informatie wordt beschreven in het [ E-mailwerkschema van het Verzoek.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Workflows {#workflows}
 
-U kunt workflows voor uw project starten. Als er workflows actief zijn, wordt de status van deze workflows weergegeven in het dialoogvenster **Workflows** tegel.
+U kunt workflows voor uw project starten. Als om het even welke werkschema&#39;s lopen, hun statusvertoningen in de **tegel van de Werkschema&#39;s**.
 
-![Werkstroomelement](assets/project-tile-workflows.png)
+![ de tegel van Werkschema&#39;s ](assets/project-tile-workflows.png)
 
 Afhankelijk van welk project u creeert zijn er verschillende beschikbare werkschema&#39;s.
 
-Deze worden beschreven in [Werken met projectworkflows.](/help/sites-authoring/projects-with-workflows.md)
+Deze worden beschreven in [ Werkend met de Werkschema&#39;s van het Project.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanceringen {#launches}
 
-De **Starten** de tegel toont om het even welke lanceringen die met een [Verzoek indienen om workflow te starten.](/help/sites-authoring/projects-with-workflows.md)
+De **tegel van 0} Lanceringen {toont om het even welke lanceringen die met het werkschema van de Lancering van het a [ Verzoek zijn gevraagd.](/help/sites-authoring/projects-with-workflows.md)**
 
-![Tegel starten](assets/project-tile-launches.png)
+![ de tegel van Lanceringen ](assets/project-tile-launches.png)
 
 ### Taken {#tasks}
 
-Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, controleren. Taken worden in detail besproken op [Werken met taken](/help/sites-authoring/task-content.md).
+Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, controleren. De taken worden behandeld in detail bij [ het Werken met Taken ](/help/sites-authoring/task-content.md).
 
-![Taken](assets/project-tile-tasks.png)
+![ de tegel van Taken ](assets/project-tile-tasks.png)
 
 ## Projectsjablonen {#project-templates}
 
 Sjablonen dienen als basis voor het starten van uw project. AEM verstrekt deze standaardprojectmalplaatjes.
 
-* **Mediaproject** - Dit is een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen en omvat ook werkschema&#39;s met betrekking tot media inhoud.
-* **[Fotoproject van product](/help/sites-authoring/managing-product-information.md)** - Dit is een referentiemonster voor het beheer van productfotografie met betrekking tot eCommerce.
-* **[Vertaalproject](/help/sites-administering/translation.md)** - Dit is een referentiemonster voor het beheer van activiteiten in verband met vertaling. Het omvat basisrollen en omvat werkschema&#39;s voor het beheren van vertaling.
-* **Eenvoudig project** - Dit is een referentiemonster voor alle projecten die niet in andere categorieën passen. Het omvat drie basisrollen en vier algemene AEM workflows.
+* **Project van Media** - dit is een project van de verwijzingssteekproef voor media-verwante activiteiten. Het omvat verscheidene media verwante projectrollen en omvat ook werkschema&#39;s met betrekking tot media inhoud.
+* **[Project van de Opname van de Foto van het Product](/help/sites-authoring/managing-product-information.md)** - dit is een verwijzingssteekproef voor het beheren van eCommerce verwante productfotografie.
+* **[Vertaal project](/help/sites-administering/translation.md)** - dit is een verwijzingssteekproef voor het beheren van vertaling verwante activiteiten. Het omvat basisrollen en omvat werkschema&#39;s voor het beheren van vertaling.
+* **Eenvoudig Project** - dit is een verwijzingssteekproef voor om het even welke projecten die niet in andere categorieën passen. Het omvat drie basisrollen en vier algemene AEM workflows.
 
 Gebaseerd op het malplaatje u selecteert, hebt u verschillende opties beschikbaar aan u binnen het project zoals de gebruikersrollen en de geleverde werkschema&#39;s.
 
@@ -217,8 +217,8 @@ Alle projecten steunen de volgende standaardrollen om u veiligheid en controleto
 | Rol | Beschrijving | Machtigingen | Groepslidmaatschap |
 |---|---|---|---|
 | Waarnemer | Een gebruiker in deze rol kan projectdetails, met inbegrip van de projectstatus bekijken. | Alleen-lezen machtigingen voor een project | `workflow-users` groep |
-| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa<br>Rechten voor het uploaden van een fotolijst, fotoopname en het controleren en goedkeuren van elementen<br>Machtiging schrijven op `/etc/commerce`<br>Machtigingen wijzigen voor een bepaald project | `workflow-users` groep |
-| Eigenaar | Een gebruiker met deze rol kan een project tot stand brengen, het werk in een project in werking stellen, en goedgekeurde activa naar de productiemap verplaatsen. Alle andere taken in het project kunnen ook door de eigenaar worden bekeken en worden uitgevoerd. | Machtiging schrijven op `/etc/commerce` | `dam-users` groep die een project moet kunnen maken<br>`projects-administrators` groeperen om een project te kunnen maken en elementen te kunnen verplaatsen |
+| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa <br> Bevoegdheden om een ontsproten lijst te uploaden, fotoontspruit, en activa <br> goed te keuren schrijven toestemming op `/etc/commerce`<br> wijzigt toestemming op een specifiek project | `workflow-users` groep |
+| Eigenaar | Een gebruiker met deze rol kan een project tot stand brengen, het werk in een project in werking stellen, en goedgekeurde activa naar de productiemap verplaatsen. Alle andere taken in het project kunnen ook door de eigenaar worden bekeken en worden uitgevoerd. | Schrijfmachtigingen op `/etc/commerce` | `dam-users` groep om een project <br>`projects-administrators` groep te kunnen tot stand brengen om een project te kunnen tot stand brengen en activa te bewegen |
 
 Voor creatieve projecten worden ook extra rollen zoals fotografen verstrekt. U kunt deze rollen gebruiken om douanerollen voor een specifiek project af te leiden.
 
@@ -226,9 +226,9 @@ Voor creatieve projecten worden ook extra rollen zoals fotografen verstrekt. U k
 
 Wanneer u het project creeert en gebruikers aan de diverse rollen toevoegt, worden de groepen verbonden aan het project automatisch gecreeerd om bijbehorende toestemmingen te beheren.
 
-Bijvoorbeeld, zou een project genoemd Mijn project drie groepen hebben **Eigenaars van mijn project**, **Myproject Editors**, **Myproject Observers**.
+Bijvoorbeeld, zou een project genoemd Mijn project drie groepen **Myproject Eigenaars**, **Mijnproject Editors**, **Myproject Waarnemers** hebben.
 
-Als het project wordt geschrapt, worden die groepen slechts geschrapt als u de aangewezen optie selecteert [wanneer u het project verwijdert.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Een beheerder kan ook handmatig de groepen verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+Als het project wordt geschrapt, worden die groepen slechts geschrapt als u de aangewezen optie [ wanneer het schrappen van het project selecteert.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Een beheerder kan de groepen in **Hulpmiddelen** ook manueel schrappen > **Veiligheid** > **Groepen**.
 
 ## Aanvullende bronnen {#additional-resources}
 

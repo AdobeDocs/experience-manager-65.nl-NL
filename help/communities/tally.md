@@ -22,15 +22,15 @@ Tally is een abstracte klasse die een standaardmethode verstrekt om terugkoppele
 
 Een aangepaste telcomponent kan worden gecreeerd door de abstracte tellingsklasse uit te breiden.
 
-[Vergelijken](essentials-liking.md) is een uitvoering van de overeenkomst die een eenvoudige vorm is om een positief oordeel uit te spreken.
+[ het Vergelijken ](essentials-liking.md) is een implementatie van een bondgenoot die eenvoudige vorm van het uitdrukken van een positieve mening is.
 
-[Stemming](essentials-voting.md) is een uitvoering van een overeenkomst die een eenvoudige vorm van positief of negatief advies is.
+[ het Stemmen ](essentials-voting.md) is een implementatie van een bondgenoot die eenvoudige vorm van het uitdrukken van een positieve of negatieve mening is.
 
-[Classificatie](rating-basics.md) is een uitvoering van tally die een sterrenstelsel gebruikt om een reeks meningen van positief tot negatief uit te drukken.
+[ Rating ](rating-basics.md) is een implementatie van een bondgenoot die een stersysteem gebruikt om een waaier van meningen van positief tot negatief uit te drukken.
 
 Vanaf AEM 6.1 is de opiniepeilingscomponent niet meer beschikbaar.
 
-[Revisies](reviews-basics.md) is een SCF-component die een hybride van [opmerkingen](essentials-comments.md) en [beoordeling](rating-basics.md).
+[ Revisies ](reviews-basics.md) is een component SCF die een hybride van [ commentaren ](essentials-comments.md) en [ classificatie ](rating-basics.md) is.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -38,24 +38,24 @@ Vanaf AEM 6.1 is de opiniepeilingscomponent niet meer beschikbaar.
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Tally API&#39;s](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [ Tally APIs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Eindpunten tellen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [ Tally Endpoints ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Toegang tot Geposte Tallies (UGC) {#accessing-posted-tallies-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
+Zie [ het Moderteren van Gebruiker Gegenereerde Inhoud ](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
-**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
+**de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van de opslagplaats.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
-* [Refactoring voor sociale hulpmiddelen](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.
+* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - Inleiding en overzicht van het opslagruimtegebruik.
+* [ SRP en Hoofdzaak UGC ](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - de richtlijnen van de Codering.
+* [ SocialUtils Refactoring ](socialutils.md) - de Afgekeurde nutsmethodes van de afbeelding aan huidige SRP hulpprogrammamethodes.

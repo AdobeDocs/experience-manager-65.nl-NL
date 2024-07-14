@@ -24,8 +24,8 @@ ht-degree: 17%
 
 Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina&#39;s.
 
-1. Toegang krijgen tot de [Starten vanuit verwijzingen (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
-1. Selecteren **Ga naar de pagina** om de pagina voor bewerking te openen.
+1. Heb toegang tot [ Lancering van Verwijzingen (de console van Plaatsen) ](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties te tonen.
+1. Selecteer **gaan naar de pagina** om de pagina voor het uitgeven te openen.
 
 >[!NOTE]
 >
@@ -35,10 +35,10 @@ Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud b
 
 ### Pagina&#39;s starten bewerken die zijn onderworpen aan een live kopie {#editing-launch-pages-subject-to-a-live-copy}
 
-Als uw lancering op a gebaseerd is [live kopie](/help/sites-administering/msm.md) dan zult u:
+Als uw lancering op a [ levend exemplaar ](/help/sites-administering/msm.md) dan gebaseerd is zult u:
 
 * zie vergrendelingssymbolen (kleine hangsloten) wanneer u een component (inhoud en/of eigenschappen) bewerkt.
-* zie **Live kopie** tab in **Pagina-eigenschappen**
+* zie het **Levende lusje van het Exemplaar** in **Eigenschappen van de Pagina**
 
 Een livekopie wordt gebruikt om content te synchroniseren *van* de bronvertakking *naar* de startvertakking (om uw lancering up-to-date te houden als er veranderingen in de bron worden aangebracht).
 
@@ -47,35 +47,35 @@ U kunt wijzigingen aanbrengen op dezelfde manier als u een standaard live kopie 
 * Als u op een gesloten hangslot klikt, wordt deze synchronisatie verbroken en kunt u nieuwe updates voor de inhoud uitvoeren wanneer u de toepassing start. Als de vergrendeling is opgeheven (open hanglock), worden de wijzigingen niet overschreven door wijzigingen die op dezelfde locatie in de bronvertakking zijn aangebracht.
 * **Overname** voor een bepaalde pagina onderbreken (en **hervatten**).
 
-Zie [Live kopie van inhoud wijzigen](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) voor nadere informatie.
+Zie [ Veranderend Levende Inhoud van het Exemplaar ](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) voor verdere informatie.
 
-## Een startpagina vergelijken met de bijbehorende bronpagina {#comparing-a-launch-page-to-its-source-page}
+## Een startpagina vergelijken met de bijbehorende Source-pagina {#comparing-a-launch-page-to-its-source-page}
 
 Als u de door u aangebrachte wijzigingen wilt bijhouden, kunt u de start weergeven in **Referenties** en de startpagina vergelijken met de bijbehorende bronpagina:
 
-1. In de **Sites** console, [navigeer naar de bronpagina van uw lancering en selecteer het](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Open de **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteert u **Starten**.
-1. Selecteer vervolgens uw specifieke startpagina **Vergelijken met bron**:
+1. In de **console van Plaatsen**, [ navigeer aan de bronpagina van uw lancering en selecteer het ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. Open het **[paneel van Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteer **Lanceringen**.
+1. Selecteer uw specifieke lancering toen **vergelijk met Source**:
 
-   ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
+   ![ scherm-shot_2019-03-05at121952 ](assets/screen-shot_2019-03-05at121952.png)
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
 
-   Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-authoring/page-diff.md).
+   Voor volledige informatie over het gebruiken van deze eigenschap zie [ Afschuiving van de Pagina ](/help/sites-authoring/page-diff.md).
 
-## De gebruikte bronpagina&#39;s wijzigen {#changing-the-source-pages-used}
+## De gebruikte Source-pagina&#39;s wijzigen {#changing-the-source-pages-used}
 
 U kunt op elk gewenst moment pagina&#39;s toevoegen aan of verwijderen uit het bereik van bronpagina&#39;s voor een opstart:
 
 1. Open en selecteer de opstart vanuit:
 
-   * de [Startconsole](/help/sites-authoring/launches.md#the-launches-console):
+   * de [ console van Lanceringen ](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Selecteren **Bewerken**.
+      * Selecteer **uitgeven**.
 
-   * [Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
+   * [ Verwijzingen (de console van Plaatsen) ](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties te tonen:
 
-      * Selecteren **Starten bewerken**.
+      * Selecteer **uitgeven Lancering**.
 
    De bronpagina&#39;s worden weergegeven.
 
@@ -91,13 +91,13 @@ U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
 
 1. Open en selecteer de opstart vanuit:
 
-   * de [Startconsole](/help/sites-authoring/launches.md#the-launches-console):
+   * de [ console van Lanceringen ](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Selecteren **Eigenschappen**.
+      * Selecteer **Eigenschappen**.
 
-   * [Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
+   * [ Verwijzingen (de console van Plaatsen) ](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties te tonen:
 
-      * Selecteren **Eigenschappen bewerken**.
+      * Selecteer **uitgeven Eigenschappen**.
 
    De details worden weergegeven.
 
@@ -107,6 +107,6 @@ U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
 
 ## De opstartstatus van een pagina vaststellen {#discovering-the-launch-status-of-a-page}
 
-De status wordt weergegeven wanneer u een specifieke start selecteert op het tabblad Referenties (zie [Starten in verwijzingen (siteconsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
+De status wordt getoond wanneer u een specifieke lancering van het verwijzingenlusje selecteert (zie [ Lanceringen in Verwijzingen (de Console van Plaatsen) ](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
-![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
+![ scherm-shot_2019-03-05at121901 ](assets/screen-shot_2019-03-05at121901.png)

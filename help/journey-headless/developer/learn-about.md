@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Meer informatie over CMS Headless Development {#learn-about}
 
-In dit deel van het [AEM Headless Developer Journey,](overview.md) leer over technologie zonder kop en waarom je het zou gebruiken.
+In dit deel van [ AEM de Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) leert over headless technologie en waarom u het zou gebruiken.
 
 ## Doelstelling {#objective}
 
@@ -28,7 +28,7 @@ Met dit document krijgt u inzicht in de levering van inhoud zonder kop en waarom
 
 Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van het CMS als centraal punt voor het beheer van ervaringen heeft de efficiëntie verbeterd doordat taken in verschillende systemen niet hoeven te worden gedupliceerd.
 
-![De klassieke full-stack CMS](assets/full-stack.png)
+![ de klassieke volledig-stapel CMS ](assets/full-stack.png)
 
 In een volledig-stapel CMS, is alle functionaliteit voor het manipuleren van uw inhoud in CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
 
@@ -39,7 +39,7 @@ In een volledig-stapel CMS, is alle functionaliteit voor het manipuleren van uw 
 
 Als u dus een nieuw kanaal wilt toevoegen of nieuwe soorten ervaringen wilt ondersteunen, kunt u een (of meer) nieuwe componenten in de stapel invoegen en hebt u slechts één plaats om uw wijzigingen aan te brengen.
 
-![Een nieuw kanaal toevoegen aan de stapel](assets/adding-channel.png)
+![ Toevoegend een nieuw kanaal aan de stapel ](assets/adding-channel.png)
 
 De complexiteit van de afhankelijkheden in de stapel wordt snel zichtbaar, aangezien u ziet dat andere items in de stapel moeten worden aangepast aan de wijzigingen.
 
@@ -49,7 +49,7 @@ De full-stack aanpak creëert inherent een silo waar alle landen in één systee
 
 Dit geldt met name voor het presentatiesysteem, dat in traditionele instellingen vaak nauw verbonden is met het CMS. Een nieuw kanaal betekent doorgaans een update van het presentatiesysteem, die van invloed kan zijn op alle andere kanalen.
 
-![De complexiteit neemt toe naarmate kanalen aan een stapel worden toegevoegd](assets/presentation-complexity.png)
+![ de Complexiteit groeit aangezien de kanalen aan een stapel ](assets/presentation-complexity.png) worden toegevoegd
 
 De beperkingen van deze natuurlijke silo kunnen duidelijk worden aangezien u meer inspanning besteedt om veranderingen over alle componenten van uw stapel te coördineren.
 
@@ -61,9 +61,9 @@ Het hoofd van een systeem is doorgaans de uitvoerrenderer van dat systeem, meest
 
 Een server zonder kop bijvoorbeeld zit waarschijnlijk ergens in een rack in een serverruimte en heeft geen monitor aangesloten. Om tot het toegang te hebben moet u ver met het verbinden. In dit geval is de monitor de kop omdat deze zorgt voor het renderen van de uitvoer van de server. Als consument van de service geeft u uw eigen hoofd (de monitor) op wanneer u op afstand verbinding maakt.
 
-Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft het leveren aan consumenten. Maar alleen door de **content** op gestandaardiseerde wijze weglaat een CMS zonder kop de uiteindelijke rendering van de uitvoer, waardoor de **presentatie** van de inhoud aan de verbruikende dienst.
+Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft het leveren aan consumenten. Nochtans, door slechts de **inhoud** op een gestandaardiseerde manier te leveren, weglaat een hoofd CMS de definitieve output die teruggeeft, verlatend de **presentatie** van de inhoud aan de verbruikende dienst.
 
-![CMS zonder hoofd](assets/headless-cms.png)
+![ Zwaarloze CMS ](assets/headless-cms.png)
 
 De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enzovoort, nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
@@ -123,12 +123,12 @@ Bedankt dat je aan de slag bent gegaan met je AEM tocht zonder kop! Nu u dit doc
 * Begrijp waarom en wanneer de kop niet nodig is.
 * Op hoog niveau weten hoe headless-concepten worden gebruikt en hoe ze met elkaar verweven zijn.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM zonder hoofd door het document opnieuw te bekijken [Aan de slag met AEM headless](getting-started.md) waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen te denken over hoe AEM de levering van inhoud zonder kop en zijn eerste vereisten benadert.
+Bouw op deze kennis voort en ga uw AEM headless reis door het document [ opnieuw te bekijken Begonnen het worden Begonnen met AEM Zetel ](getting-started.md) waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen nadenken over hoe AEM de levering van de inhoud zonder kop en zijn eerste vereisten benadert.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder kop te gaan door het document te bekijken [Aan de slag met AEM headless](getting-started.md)Hieronder volgt een aantal aanvullende, optionele bronnen die een diepgaander inzicht geven in bepaalde concepten die in dit document worden genoemd, maar die niet nodig zijn om verder te gaan op de weg zonder kop.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingsreis door het document [ te herzien Begonnen Worden Begonnen met AEM Zwaartepunt ](getting-started.md), zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige die concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de hoofdloze reis verder te gaan.
 
-* An [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
-* De [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
+* Een [ Inleiding aan AEM als Zwaartepunt CMS ](/help/sites-developing/headless/introduction.md)
+* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ AEM Tutorials zonder kop ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.

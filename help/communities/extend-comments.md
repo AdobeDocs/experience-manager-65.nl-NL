@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Component Opmerkingen uitbreiden  {#extend-comments-component}
 
-De bedoeling van [verlenging](client-customize.md#extensions) een standaardcomponent bestaat uit het wijzigen van de vormgeving of het gedrag van een component voor specifieke toepassingen.
+De bedoeling van [ uitbreidend ](client-customize.md#extensions) een standaardcomponent is de verschijning of het gedrag van een component voor specifiek gebruik te veranderen.
 
 Het pad naar de component is uniek en verwijst naar de standaardcomponent als een superbrontype. Er is minder risico omdat het bereik beperkt is in vergelijking met het mondiale bereik van een componentoverlay.
 
 >[!NOTE]
 >
->Een [bedeesd](client-customize.md#overlays) wordt niet ondersteund.
+>Het uitbreiden van een [ bedekte ](client-customize.md#overlays) component wordt niet gesteund.
 
 ## Voorbeeld {#example}
 
@@ -32,7 +32,7 @@ Stel dat de koptekst van de commentaarcomponent op de ene site van de AEM instan
 
 Om deze oplossing uit te voeren, creeer een component die (met voeten treedt) bestaande uitbreidt en het manuscript van Handlebars wijzigt. Het gebied van de site dat de nieuwe opmerkingen gebruikt, kan de uitgebreide versie gebruiken, terwijl de sites die de standaardweergave gebruiken, ongewijzigd blijven.
 
-De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Er zijn dus twee onderdelen die moeten worden uitgebreid: *opmerkingen* en *opmerking*. Het script dat moet worden bewerkt, staat in het dialoogvenster *opmerking* component `header.hbs` bestand, terwijl het bovenliggende bestand *opmerkingen* is wat een auteur daadwerkelijk aan de pagina toevoegt (het opmerkingensysteem).
+De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Aldus, zijn er twee componenten om uit te breiden: *commentaren* en *commentaar*. Het manuscript om uit te geven is in het *2} dossier van de commentaar{* component {, terwijl de ouder *commentaren* component (het commentaarsysteem) is wat een auteur eigenlijk aan de pagina toevoegt.`header.hbs`
 
 Als u opmerkingen wilt uitbreiden, moet u:
 

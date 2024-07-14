@@ -25,6 +25,6 @@ U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke
 
 >[!CAUTION]
 >
->De volledige functionaliteit van het Beheer van het Fragment van de Inhoud is niet beschikbaar in klassieke UI. Zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md) in de standaardontwerpdocumentatie.
+>De volledige functionaliteit van het Beheer van het Fragment van de Inhoud is niet beschikbaar in klassieke UI. Zie [ het Authoring van de Pagina met de Fragmenten van de Inhoud ](/help/sites-authoring/content-fragments.md) in de standaard auteursdocumentatie.
 >
 >De component van het Fragment van de Inhoud kan in het klassieke hulpje UI worden gezien, maar de verdere functies zijn niet beschikbaar.

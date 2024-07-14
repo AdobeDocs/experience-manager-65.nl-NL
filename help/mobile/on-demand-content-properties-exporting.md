@@ -20,15 +20,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
-Apps worden weergegeven als *cq:pagina&#39;s* in AEM.
+Apps worden vertegenwoordigd als *cq:Pagina&#39;s* in AEM.
 
-Ze delen dezelfde gemeenschappelijke eigenschappen die in *cq:pagina* naast de hieronder getoonde andere eigenschappen die integratieondersteunende eigenschappen vertegenwoordigen.
+Zij delen de zelfde gemeenschappelijke eigenschappen die in om het even welk *worden gevonden:Pagina* naast hieronder getoonde anderen die integratie ondersteunende eigenschappen vertegenwoordigen.
 
 ## App-eigenschappen {#app-properties}
 
-De volgende tabel toont **Eigenschappen en knooppunten van app**.
+De volgende lijst toont **Eigenschappen en Knooppunten van de Toepassing**.
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ De volgende tabel toont **Eigenschappen en knooppunten van app**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>String:Path</td>
-   <td><p>Pad naar de exportconfiguraties van de app. De exportconfiguratie is een map met 2 onderliggende ContentSync-exportconfiguratiesjablonen;</p> <p><i>dps-artikel</i>: ContentSync exportconfiguratie voor het exporteren van artikelinhoud</p> <p><i>dps-HTMLResources</i>: ContentSync-exportconfiguratie voor het exporteren van gedeelde bronnen in app/article</p> </td>
+   <td><p>Pad naar de exportconfiguraties van de app. De exportconfiguratie is een map met 2 onderliggende ContentSync-exportconfiguratiesjablonen;</p> <p><i> dps-artikel </i>: De de uitvoerconfiguratie van ContentSync om artikelinhoud uit te voeren</p> <p><i> dps-HTMLResources </i>: De de uitvoerconfiguratie van ContentSync om app/artikel gedeelde middelen uit te voeren</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,12 +80,12 @@ De volgende tabel toont **Eigenschappen en knooppunten van app**.
   <tr>
    <td>sling:resourceType</td>
    <td>String:Path</td>
-   <td><p>Pad naar cq:Component die is of is uitgebreid <i>mobiele apps/core/components/instance.</i></p> <p>Dit biedt de aanwezigheid en rendering in de Apps Catalog.</p> </td>
+   <td><p>Weg aan cq:Component die <i> mobileapps/core/components/instance is of uitbreidt.</i></p> <p>Dit biedt de aanwezigheid en rendering in de Apps Catalog.</p> </td>
   </tr>
  </tbody>
 </table>
 
-U kunt ***Eigenschappen van inhoud*** om inhoud te maken. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
+U kunt ***Eigenschappen van de Inhoud*** gebruiken om inhoud tot stand te brengen. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
 
 * [Eigenschappen van inhoud](/help/mobile/content-properties.md)
 * [Artikel-exportconfiguratie maken](/help/mobile/creating-article-export-configuration.md)

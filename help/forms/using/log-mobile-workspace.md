@@ -32,7 +32,7 @@ Wanneer u de Adobe Experience Manager (AEM) Forms-app start, moet u eerst uw aan
    >    * Als u de lijst met server-URL&#39;s wilt weergeven, klikt u op de lijstpijl rechts in het tekstvak Server-URL.
    >    * Selecteer een AEM Forms Server-URL waarnaar u zich via de app wilt aanmelden.
 
-Wanneer u zich aanmeldt bij de app, wordt u naar de [**Home** scherm](../../forms/using/home-screen.md).
+Wanneer u login aan app, wordt u geleid aan het [**1} scherm van het Huis ](../../forms/using/home-screen.md).**
 
 >[!NOTE]
 >

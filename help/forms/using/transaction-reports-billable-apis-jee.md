@@ -30,7 +30,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 -->
 
-Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. De lijst met [factureerbare API&#39;s voor AEM Forms op OSGi](/help/forms/using/transaction-reports-billable-apis.md).
+Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [ factureerbare APIs voor AEM Forms op OSGi ](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## Billable Document Services API&#39;s {#billable-document-services-apis}
 
@@ -46,47 +46,47 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. De lijst met [facture
    <tr>
    <td><a>CreatePDF</a></td>
    <td>Maakt Adobe PDF voor ondersteunde bestandstypen.</td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>CreatePDF3</a></td>
    <td>Maakt Adobe PDF voor ondersteunde bestandstypen. </td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
    <td>Hiermee converteert u het HTML-bestand naar Adobe PDF. </td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
    <td>Hiermee exporteert u PDF naar ondersteunde bestandstypen. </td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF2</a></td>
    <td><p>Hiermee exporteert u PDF naar ondersteunde bestandstypen.</p> </td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF3</a></td>
    <td>Hiermee exporteert u PDF naar ondersteunde bestandstypen.</td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
    <td>Hiermee wordt het HTML-bestand omgezet in PDF.</td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
    <td>Hiermee wordt het HTML-bestand omgezet in PDF.</td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>PDF optimaliseren</a></td>
    <td>Hiermee optimaliseert u PDF om de bestandsgrootte te beperken door overbodige metagegevens uit te knippen zonder dat dit van invloed is op de kwaliteit.</td>
-   <td>Conversie<br /> </td>
+   <td>Conversie <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -101,7 +101,7 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. De lijst met [facture
    <td>Categorie Transactieverslag</td>
   </tr>
   <tr>
-   <td><a>Ondertekenen/certificeren</a><br /> </td>
+   <td><a> Teken/certificeer </a><br /> </td>
    <td>Met deze API kunt u uw document beveiligen. Met de API kunt u een PDF-document ondertekenen en certificeren.</td>
    <td>Conversie</td>
   </tr>
@@ -191,7 +191,7 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. De lijst met [facture
   </tr>
   <tr>
    <td><a>transformPDF</a></td>
-   <td>Hiermee converteert u een set XDP- en PDF-documenten naar een set PostScript- (PS), Printer Command Language (PCL)- en ZPL-bestandsindelingen. </td>
+   <td>Hiermee converteert u een set XDP- en PDF-documenten naar een set PostScript- (PS), Printer Command Language- (PCL) en ZPL-bestandsindelingen. </td>
    <td>Documenten converteren</td>
   </tr>
  </tbody>
@@ -240,7 +240,7 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. De lijst met [facture
   </tr>
   <tr>
    <td><a>naarPS2</a></td>
-   <td>Zet een Flat PDF-bestand om in PostScript-indeling met de opties die zijn opgegeven in de optiespecc.</td>
+   <td>Converteert een Flat PDF-bestand naar de PostScript-indeling met behulp van de opties die zijn opgegeven in de optiespecc.</td>
    <td>Documenten converteren</td>
   </tr>
   <tr>
@@ -306,14 +306,14 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. De lijst met [facture
 </table>
 
 Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u een of meer van de volgende bewerkingen uitvoert:
-1. Conversie van niet-PDF-indelingen naar PDF-indelingen. Bijvoorbeeld de conversie van XDP-indeling naar PDF-indeling.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. Conversie van niet-PDF-indelingen naar PDF-indelingen. Bijvoorbeeld, de omzetting van formaat XDP in formaat PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Omzetten van PDF-indeling naar PDF/A-indeling.
 1. Conversie van PDF-indeling naar niet-PDF-indeling. Voorbeelden hiervan zijn de transformatie van de indeling PDF naar Afbeelding of de conversie van de indeling PDF naar tekst.
 
 >[!NOTE]
 >
->* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. Dus de `invoke API` kan administratief worden verwerkt als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
->* Eén PDF-document dat is gemaakt met montagedienst, zoals `invoke` en `invokeDDX`, kan administratief worden verwerkt als geen, enkele of meerdere transacties. Het aantal getelde transacties is afhankelijk van de geleverde <!--DDX--> code.
+>* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De `invoke API` kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
+>* Een enkel PDF-document dat is gemaakt met de assemblerservice, zoals `invoke` en `invokeDDX` , kan worden beschouwd als geen, enkele of meerdere transacties. Het aantal getelde transacties is afhankelijk van de opgegeven <!--DDX--> code.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}

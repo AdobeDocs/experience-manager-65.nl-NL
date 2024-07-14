@@ -1,5 +1,5 @@
 ---
-title: Aanpassen en uitbreiden [!DNL Assets]
+title: ' [!DNL Assets] aanpassen en uitbreiden'
 description: Leer manieren waarop u Asset Share en Asset Editor kunt aanpassen en uitbreiden, waarmee gebruikers een specifiek op maat gemaakte interface en een set functies krijgen.
 contentOwner: AG
 role: Developer
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 De Asset Editor is het belangrijkste toegangspunt dat gebruikers van een Adobe Enterprise Manager-website gebruiken om de digitale middelen in uw opslagplaats te zoeken, weer te geven en te manipuleren.
 
-Als [!DNL Experience Manager] ontwikkelaar, kunt u de Redacteur van Activa op verscheidene manieren aanpassen en uitbreiden, presenterend gebruikers met een specifiek op maat gemaakte interface en een reeks functionaliteit.
+Als ontwikkelaar van [!DNL Experience Manager] kunt u de Asset Editor op verschillende manieren aanpassen en uitbreiden en gebruikers een specifiek op maat gemaakte interface en functieset bieden.
 
 De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd:
 
 * [Editor van element uitbreiden](asseteditorx.md)
-* [Zoeken naar elementen uitbreiden](searchx.md)
-* [Middelen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
-* [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
-* [Ontwikkeling van proxy&#39;s voor elementen](proxy.md)
+* [Assets-zoekopdracht uitbreiden](searchx.md)
+* [Assets verwerken met behulp van mediafuncties en workflows](media-handlers.md)
+* [Assets integreren met activiteitsstroom](extending-activity-stream.md)
+* [Assets-proxyontwikkeling](proxy.md)
 * [Aanbevolen werkwijzen om ImageMagick te configureren](best-practices-for-imagemagick.md)
 
 ## De weergave aanpassen {#customizing-the-look-and-feel}
@@ -38,6 +38,6 @@ De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepa
 
 ## Uitvoeringen aanpassen {#customizing-renditions}
 
-In [!DNL Experience Manager Assets] terminologie een uitvoering is de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
+In de terminologie van [!DNL Experience Manager Assets] is een vertoning de vorm waarin een element wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
 
 De uitvoeringen waarin een bepaald element beschikbaar is, kunnen worden aangepast en nieuwe uitvoeringen worden gemaakt.

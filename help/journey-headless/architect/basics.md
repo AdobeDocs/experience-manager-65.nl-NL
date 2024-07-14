@@ -16,14 +16,14 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [Reis van architect zonder hoofdinhoud AEM](overview.md) de [Inleiding](introduction.md) heeft betrekking op de basisbeginselen en -terminologie die relevant zijn voor het modelleren van de inhoud voor koploze koppen.
+Aan het begin van de [ Reis van de Architect van de Inhoud zonder hoofd ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
 
 Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project zonder AEM kunt modelleren.
 
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: Introduceer de concepten van Content Modeling voor CMS zonder hoofd.
+* **Doelstelling**: Introduceer de concepten Inhoud Modeling voor Hoofdloze CMS.
 
 ## Inhoud modelleren met modellen van inhoudsfragmenten {#architect-content-fragment-models}
 
@@ -67,14 +67,14 @@ Een inhoudsfragmentmodel beschrijft een entiteit.
 
 Binnen een model:
 
-1. **Gegevenstypen** Hiermee kunt u de afzonderlijke kenmerken definiëren.
-U kunt bijvoorbeeld het veld met de naam van een docent definiëren als **Tekst** en hun dienstjaren als **Getal**.
-1. De gegevenstypen **Content Reference** en **Fragmentverwijzing** Hiermee kunt u relaties maken met andere inhoud binnen AEM.
-1. De **Fragmentverwijzing** Met het gegevenstype kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
+1. **de Types van Gegevens** laten u de individuele attributen bepalen.
+Bijvoorbeeld, bepaal het gebied wachtend de naam van een leraar als **Tekst** en hun jaren van de dienst als **Aantal**.
+1. De gegevenstypes **Verwijzing van de Inhoud** en **Verwijzing van het Fragment** laten u verhoudingen aan andere inhoud binnen AEM tot stand brengen.
+1. Het **gegevenstype van de Verwijzing van het Fragment** laat u veelvoudige niveaus van structuur realiseren door uw Fragmenten van de Inhoud (volgens het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
 
 Bijvoorbeeld:
 
-![Inhoud modelleren met inhoudsfragmenten](assets/headless-modeling-01.png "Inhoud modelleren met inhoudsfragmenten")
+![ Inhoud die met de Fragmenten van de Inhoud modelleert ](assets/headless-modeling-01.png " Inhoud met de Fragmenten van de Inhoud ")
 
 ## Gegevenstypen {#data-types}
 
@@ -99,11 +99,11 @@ AEM bevat de volgende gegevenstypen waarmee u uw inhoud kunt modelleren:
 
 Twee gegevenstypen bevatten verwijzingen naar inhoud buiten een specifiek fragment:
 
-* **Content Reference**
+* **Verwijzing van de Inhoud**
 Dit verstrekt een eenvoudige verwijzing naar andere inhoud van om het even welk type.
 U kunt bijvoorbeeld naar een afbeelding op een bepaalde locatie verwijzen.
 
-* **Fragmentverwijzing**
+* **Verwijzing van het Fragment**
 Hier vindt u verwijzingen naar andere inhoudsfragmenten.
 Dit type verwijzing wordt gebruikt om geneste inhoud te creëren, introducerend de verhoudingen nodig om uw inhoud te modelleren.
 Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
@@ -116,13 +116,13 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 ## Structuurniveaus (geneste fragmenten) {#levels-of-structure-nested-fragments}
 
-Voor het modelleren van inhoud **Fragmentverwijzing** Met het gegevenstype kunt u meerdere niveaus van structuur en relaties maken.
+Voor inhoud die het **gegevenstype modelleren van de Verwijzing van het 0} Fragment laat u veelvoudige niveaus van structuur en verhoudingen tot stand brengen.**
 
-Met deze referentie kunt u *verbinden* Diverse Content Fragment Models om interrelaties te vertegenwoordigen. Hierdoor kan de toepassing zonder kop de verbindingen volgen en zo nodig toegang krijgen tot de inhoud.
+Met deze verwijzing kunt u *diverse Modellen van het Fragment van de Inhoud* verbinden om onderlinge verhoudingen te vertegenwoordigen. Hierdoor kan de toepassing zonder kop de verbindingen volgen en zo nodig toegang krijgen tot de inhoud.
 
 >[!NOTE]
 >
->Dit moet met voorzichtigheid worden gebruikt en de beste praktijken kunnen worden gedefinieerd als *nest zo veel als nodig is, maar zo weinig mogelijk*.
+>Dit zou met voorzichtigheid moeten worden gebruikt en de beste praktijken kunnen als *worden bepaald nest zo veel als noodzakelijk, maar zo weinig mogelijk*.
 
 Fragmentverwijzingen doen alleen dat - ze laten u naar een ander fragment verwijzen.
 
@@ -148,7 +148,7 @@ U kunt deze interrelaties vertegenwoordigen met fragmentverwijzingen, zoals u (d
 
 ## Volgende functies {#whats-next}
 
-Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](model-structure.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van modellering voor headless.
+Nu u de grondbeginselen hebt geleerd, is de volgende stap [ te leren over het Creëren van Modellen van het Fragment van de Inhoud in AEM ](model-structure.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van modellering voor headless.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -158,6 +158,6 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 * [Concepten ontwerpen](/help/sites-authoring/author.md)
 
-* [Basisverwerking](/help/sites-authoring/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** console, maar veel/de meeste eigenschappen zijn ook relevant voor het ontwerpen **Inhoudsfragmenten** onder de **Activa** console.
+* [ Basis Behandelend ](/help/sites-authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
 
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)

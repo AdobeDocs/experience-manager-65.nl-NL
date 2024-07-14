@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Een nieuwe graniet-UI-veldcomponent maken{#creating-a-new-granite-ui-field-component}
 
-De graniet UI verstrekt een waaier van componenten die worden ontworpen om in vormen worden gebruikt; deze worden genoemd *velden* in de woordenlijst van de gebruikersinterface van Granite. De standaardcomponenten voor graniet-formulieren zijn beschikbaar onder:
+Graniet UI verstrekt een waaier van componenten die worden ontworpen om in vormen worden gebruikt; deze worden genoemd *gebieden* in de verklarende woordenlijst UI. De standaardcomponenten voor graniet-formulieren zijn beschikbaar onder:
 
 `/libs/granite/ui/components/foundation/form/*`
 
 >[!NOTE]
 >
->Deze formuliervelden van de graniet-interface zijn van bijzonder belang omdat ze worden gebruikt voor [componentdialoogvensters](/help/sites-developing/developing-components.md).
+>Deze graniet UI vormgebieden zijn van bijzonder belang aangezien zij voor [ componentendialogen ](/help/sites-developing/developing-components.md) worden gebruikt.
 
 >[!NOTE]
 >
->Voor volledige informatie over velden raadpleegt u de [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Voor volledige details over gebieden, zie de [ documentatie van graniet UI ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Gebruik het granite UI Foundation-framework om granitecomponenten te ontwikkelen en/of uit te breiden. Dit heeft twee elementen:
 
@@ -45,18 +45,18 @@ Gebruik het granite UI Foundation-framework om granitecomponenten te ontwikkelen
 
    * een verzameling clientlibs die een woordenschat (dat wil zeggen een uitbreiding van de HTML-taal) biedt om generieke interactiepatronen te bereiken via een gebruikersinterface die met hypermedia werkt.
 
-De generische graniet UI-component `field` bestaat uit twee belangstellende bestanden:
+De generieke graniet UI-component `field` bestaat uit twee belangwekkende bestanden:
 
-* `init.jsp`Met : wordt de algemene verwerking afgehandeld; de labels, beschrijving en de formulierwaarde die u nodig hebt bij het weergeven van het veld.
-* `render.jsp`: dit is de plaats waar de daadwerkelijke rendering van het veld wordt uitgevoerd en moet worden overschreven voor uw aangepaste veld; wordt opgenomen door `init.jsp`.
+* `init.jsp` : verwerkt de algemene verwerking, de labels, beschrijving en de formulierwaarde die u nodig hebt bij het weergeven van het veld.
+* `render.jsp`: dit is de plaats waar de werkelijke rendering van het veld wordt uitgevoerd en moet worden overschreven voor uw aangepaste veld; wordt opgenomen door `init.jsp` .
 
-Zie [Granite UI-documentatie - Veld](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) voor meer informatie.
+Zie {de documentatie van 0} granite UI - Gebied ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) voor details.[
 
 Zie voor voorbeelden:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * door de [Codevoorbeeld](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * verstrekt door de [ Steekproef van de Code ](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 
@@ -68,9 +68,9 @@ Zie voor voorbeelden:
 
 ## Het serverscript voor de component maken {#creating-the-server-side-script-for-the-component}
 
-Het aangepaste veld mag alleen het `render.jsp` script, waar u de markering voor uw component opgeeft. U kunt JSP (namelijk het teruggevende manuscript) als omslag voor uw prijsverhoging beschouwen.
+Het aangepaste veld mag alleen het script `render.jsp` overschrijven, waar u de markering voor de component opgeeft. U kunt JSP (namelijk het teruggevende manuscript) als omslag voor uw prijsverhoging beschouwen.
 
-1. Een component maken die de opdracht `sling:resourceSuperType` over te nemen eigenschap van:
+1. Maak een component die de eigenschap `sling:resourceSuperType` gebruikt om over te nemen van:
 
    `/libs/granite/ui/components/foundation/form/field`
 
@@ -80,7 +80,7 @@ Het aangepaste veld mag alleen het `render.jsp` script, waar u de markering voor
 
    In dit script genereert u de hypermediamarkering (verrijkte markering met de hypermedia-betaalbaarheid), zodat de client weet hoe de interactie met het gegenereerde element tot stand moet worden gebracht. Dit zou de server-zijstijl van Granite UI van codering moeten volgen.
 
-   Het enige contract dat u tijdens het aanpassen *moet* fulfill moet de formulierwaarde lezen (geïnitialiseerd in `init.jsp`) van het verzoek met:
+   Wanneer het aanpassen, moet het enige contract dat u ** moet vervullen de vormwaarde (die in `init.jsp` wordt geïnitialiseerd) van het verzoek lezen gebruikend:
 
    ```
    // Delivers the value of the field (read from the content)
@@ -88,7 +88,7 @@ Het aangepaste veld mag alleen het `render.jsp` script, waar u de markering voor
    vm.get("value, String.class");
    ```
 
-   Voor meer details, zie de implementatie van uit-de-doos gebieden van de Vergroting UI; bijvoorbeeld `/libs/granite/ui/components/foundation/form/textfield`.
+   Zie voor meer informatie de implementatie van de velden voor graniet-UI buiten de box, bijvoorbeeld `/libs/granite/ui/components/foundation/form/textfield` .
 
    >[!NOTE]
    >
@@ -98,10 +98,10 @@ Het aangepaste veld mag alleen het `render.jsp` script, waar u de markering voor
 
 Specifiek gedrag aan de clientzijde toevoegen aan de component:
 
-1. Een clientlib van een categorie maken `cq.authoring.dialog`.
-1. Een clientlib van een categorie maken `cq.authoring.dialog` en definieert u uw `JS`/ `CSS` erin.
+1. Maak een clientlib van de categorie `cq.authoring.dialog` .
+1. Maak een clientlib van de categorie `cq.authoring.dialog` en definieer de categorie `JS`/ `CSS` in de client.
 
-   Definieer uw `JS`/ `CSS` in de client.
+   Definieer uw `JS`/ `CSS` in de clientlib.
 
    >[!NOTE]
    >

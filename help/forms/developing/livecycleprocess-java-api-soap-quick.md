@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # LiveCycleProcess Java API (SOAP) Snel starten {#livecycleprocess-java-api-soap-quick-start}
 
-De Java API(SOAP) Quick Start is beschikbaar voor processen. A *procesinstantie* is een instantie van een specifiek proces dat is gestart door een aanroepingsmethode zoals de API voor aanroepen of vanuit de werkruimte.
+De Java API(SOAP) Quick Start is beschikbaar voor processen. A *procesinstantie* is een voorkomen van een specifiek proces dat door een aanroepingsmethode zoals de Inroeping API of van binnen Workspace werd begonnen.
 
 [Snel starten (SOAP modus): zoeken naar procesinstanties met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -36,11 +36,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->Snel aan de slag met Programmeren met AEM Forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het toepasselijke besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Snel aan de slag met Programmeren met AEM Forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het toepasselijke besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Snel starten (SOAP modus): zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op de *Hypothecaire lening - Prebuilt* proces.
+Het volgende codevoorbeeld van Java zoekt naar procesinstanties die op *MortgaugeLoan - Prebuilt* proces gebaseerd zijn.
 
 ```java
  /*
@@ -429,7 +429,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
 
 ## Snel starten (SOAP modus): procesgegevens wissen met de Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam *SecureDocument*. Er wordt een filter gebruikt dat aangeeft dat gegevens moeten worden gewist voor procesinstanties waarbij de procesvariabele genaamd *inValue* is groter dan 200.
+De volgende code van Java zuivert gegevens van een proces genoemd *SecureDocument*. Een filter wordt gebruikt dat specificeert om gegevens voor die procesinstanties te zuiveren waar de procesvariabele genoemd *inValue* groter is dan 200.
 
 ```java
  /*

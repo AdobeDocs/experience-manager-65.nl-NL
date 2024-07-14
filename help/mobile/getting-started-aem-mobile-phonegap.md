@@ -20,19 +20,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee gebruikers met de inhoud kunnen werken. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps.
 
-Doorgaans een ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren.
+Typisch, is een ***AEM Beheerder*** verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de catalogus van AEM Mobile, of door app te creëren die de aanmaaktovenaar gebruikt, of door een bestaande toepassing in te voeren.
 
-Van hier en ***AEM auteur*** (of *Marketer*) kan nu de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
+Van hier kan een ***AEM Auteur*** (of *Markteur*) nu de uit-van-de-doos malplaatjes en componenten gebruiken om pagina&#39;s toe te voegen en uit te geven, componenten te slepen en te laten vallen en media van alle types van DAM met inbegrip van beelden, video&#39;s en tekstfragmenten (inhoudsfragmenten) toe te voegen.
 
-De echte kracht van AEM Mobile is dat een *wreed* ***AEM Developer*** kan aangepaste websjablonen en -componenten uitbreiden en maken om de *AEM auteur* om prachtige en boeiende mobiele ervaringen te creëren. Deze sjablonen en componenten zijn niet alleen geoptimaliseerd voor de wereld van de mobiele app, maar communiceren zowel naar het apparaat als naar de AEM server (elke externe server) naar de eindpunten van de lokale service.
+De echte macht van AEM Mobile is dat de a *savvy* ***AEM Ontwikkelaar*** douaneformjablonen en componenten van het Web kan uitbreiden en tot stand brengen om *toe te laten AEM Auteur* om mooie en het in dienst nemen mobiele ervaringen tot stand te brengen. Deze sjablonen en componenten zijn niet alleen geoptimaliseerd voor de wereld van de mobiele app, maar communiceren zowel naar het apparaat als naar de AEM server (elke externe server) naar de eindpunten van de lokale service.
 
 >[!NOTE]
 >
->Wanneer de *AEM auteur* is ervan overtuigd dat de app gereed is, zodat de betrokkenen de app eerst kunnen downloaden met **[Adobe verifiëren](/help/mobile/phonegap-mobile-quickstart.md)** (beschikbaar in zowel de AppStore als de PlayStore) ter controle en goedkeuring. Zodra ze het groene licht hebben ontvangen, kunnen ze deze nieuwe of bijgewerkte inhoud rechtstreeks aan hun gebruikers uitbrengen via het AEM Mobile ContentSync-beheerdashboard voor de release van inhoud. Eén persoon kan elk aantal rollen op zich nemen, dat is aan jou en je bestuursbeleid.
+>Wanneer de *AEM Auteur* gelooft app klaar is, kunnen zij hun belanghebbenden eerst hebben app met **[Adobe verifiëren](/help/mobile/phonegap-mobile-quickstart.md)** (beschikbaar in zowel AppStore als PlayStore) voor overzicht en goedkeuring downloaden. Zodra ze het groene licht hebben ontvangen, kunnen ze deze nieuwe of bijgewerkte inhoud rechtstreeks aan hun gebruikers uitbrengen via het AEM Mobile ContentSync-beheerdashboard voor de release van inhoud. Eén persoon kan elk aantal rollen op zich nemen, dat is aan jou en je bestuursbeleid.
 
 ## Vereisten {#prerequisites}
 
@@ -46,18 +46,18 @@ Voordat u met AEM Mobile gaat werken en de stappen in deze gids voor aan de slag
 
 ## QuickLinks voor auteurs {#quicklinks-for-authors}
 
-Zie [Ontwerpen voor Adobe PhoneGap Enterprise in AEM](/help/mobile/phonegap.md) om meer te weten te komen over de rollen en verantwoordelijkheden van een auteur.
+Zie [ Authoring voor de Onderneming van Adobe PhoneGap in AEM ](/help/mobile/phonegap.md) over de rollen en de verantwoordelijkheden van een auteur leren.
 
 ## QuickLinks voor ontwikkelaars {#quicklinks-for-developers}
 
-Er zijn voorbeeldtoepassingen die geïntegreerd zijn met AEM Mobile en die door de ontwikkelaar kunnen worden aangepast. Klikken op [Adobe PhoneGap Enterprise ontwikkelen met AEM](/help/mobile/developing-in-phonegap.md).
+Er zijn voorbeeldtoepassingen die geïntegreerd zijn met AEM Mobile en die door de ontwikkelaar kunnen worden aangepast. Klik op [ het Ontwikkelen van de Onderneming van Adobe PhoneGap met AEM ](/help/mobile/developing-in-phonegap.md).
 
 In volgende hoofdstukken leert u meer over geavanceerde concepten, zoals Witte labels voor uw toepassing, Lokalisatie, Internationalisatie, ContentSync, Targeting, Analytics en meer.
 
 ## QuickLinks voor beheerders {#quicklinks-for-administrators}
 
-Zie [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](/help/mobile/administer-phonegap.md) om uw mobiele toepassing in te stellen en te beheren.
+Zie [ het Beheer Inhoud voor de Onderneming van Adobe PhoneGap met AEM ](/help/mobile/administer-phonegap.md) aan opstelling en beheer uw mobiele toepassing.
 
 >[!NOTE]
 >
->Met hybride mobiele technologieën kunt u rijke mobiele toepassingen maken die *offline en online uitvoeren* met AEM Mobile kiezen veel klanten er zelfs voor om apps te maken die controleren wanneer ze online of offline zijn en zich dienovereenkomstig gedragen.
+>Gebruikend hybride mobiele technologieën, kunt u rijke mobiele toepassingen tot stand brengen die *offline en online* met AEM Mobile in feite in werking stellen, verkiezen vele klanten om apps tot stand te brengen die controleren wanneer zij online of off-line zijn en zich dienovereenkomstig gedragen.

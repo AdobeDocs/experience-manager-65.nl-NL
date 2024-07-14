@@ -28,28 +28,28 @@ In tegenstelling tot het vastzetten van een artikel boven aan een forum, kunt u 
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>social/commons/components/hbs/featuredcontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
    <td>Nee</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td> <i>default</i></td>
+   <td> <a href="clientlibs.md"><strong> clientllibs </strong></a></td>
+   <td> <i> gebrek </i></td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/commons/components/hbs/featuredcontent/featuredcontent.hbs<br /> /libs/social/commons/components/hbs/featuredtopic/featuredtopic.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td> /libs/social/commons/components/hbs/featuredcontent/clientlibs/featuredcontent.css</td>
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie <a href="featured.md">Aanbevolen inhoud</a></td>
+   <td>Zie <a href="featured.md"> Aanbevolen Inhoud </a></td>
   </tr>
  </tbody>
 </table>
@@ -58,4 +58,4 @@ In tegenstelling tot het vastzetten van een artikel boven aan een forum, kunt u 
 
 ### Functie bestandsbibliotheek {#file-library-function}
 
-Een community-sitestructuur die de [Functie Aanbevolen inhoud](functions.md#featured-content-function)bevat een configuratie `featured content` component.
+Een communautaire plaatsstructuur die de [ Aanbevolen functie van de Inhoud ](functions.md#featured-content-function) omvat, omvat een gevormde `featured content` component.

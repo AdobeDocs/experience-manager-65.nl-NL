@@ -24,44 +24,44 @@ ht-degree: 0%
 Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud van de opstartafbeelding van de pagina&#39;s bewerken.
 
 1. Open de pagina voor bewerking.
-1. Selecteer in Sidekick de optie **Versioning** en vouwt vervolgens de **Starten** groep. De titel van de opstart die momenteel wordt bewerkt, gebruikt een vet lettertype.
+1. In Sidekick, selecteer het **Versioning** lusje, breid dan de **Lanceereenheden** groep uit. De titel van de opstart die momenteel wordt bewerkt, gebruikt een vet lettertype.
 
-   ![chlimage_1-13](assets/chlimage_1-13.jpeg)
+   ![ chlimage_1-13 ](assets/chlimage_1-13.jpeg)
 
-1. Selecteer de start waaraan u wilt werken en klik op **Overschakelen**.
+1. Selecteer de lancering die u wilt werken en dan **Schakelaar** klikken.
 1. Bewerken starten.
 
    >[!NOTE]
    >
-   >U kunt de **Pagina** tabblad van het hulpprogramma om handelingen uit te voeren zoals **Onderliggende pagina maken**, onder andere.
+   >U kunt het **lusje van de Pagina** gebruiken van hulpwerktuig om acties uit te voeren zoals **creeer de Pagina van het Kind**, onder anderen.
 
 ## Een opstartconfiguratie bewerken {#editing-a-launch-configuration}
 
 Nadat u een lancering creeert kunt u de lanceringsnaam en de datum van de lancering veranderen. U kunt ook een afbeelding opgeven die u aan het starten wilt koppelen.
 
-1. Open de startpagina ([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)).
+1. Open de pagina van het lanceerbeleid ([ http://localhost:4502/libs/launches/content/admin.html ](http://localhost:4502/libs/launches/content/admin.html)).
 
-1. Selecteer de vereiste start en klik op **Bewerken** het dialoogvenster openen:
+1. Selecteer de vereiste lancering en klik **uitgeven** om de dialoog te openen:
 
-   * In de **Algemeen** kunt u bewerken:
+   * In het **Algemene** lusje, kunt u uitgeven:
 
       * **Titel**
-      * **LiveDate**: dit komt overeen met de startdatum
-      * **Gereed voor productie**
+      * **Levende Datum**: dit is gelijkwaardig aan de lanceringsdatum
+      * **Productie Klaar**
 
-     Zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van deze velden.
+     Zie [ Lanceringen - de Orde van Gebeurtenissen ](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van deze gebieden.
 
-   * In de **Afbeelding** kunt u een afbeeldingsbestand uploaden.
+   * In het **Beeld** lusje, kunt u een beelddossier uploaden.
 
-1. Klikken **Opslaan**.
+1. Klik **sparen**.
 
 ## De opstartstatus van een pagina vaststellen {#discovering-the-launch-status-of-a-page}
 
-Als u een startpagina bewerkt, wordt onder aan het dialoogvenster **Versioning** tabblad Sidekick:
+Wanneer u een lancering van een pagina uitgeeft, verschijnt de informatie over de lancering bij de bodem van het **Versioning** lusje van Sidekick:
 
 * De naam van de opstart.
 * De tijd sinds de laatste wijziging.
 * De gebruiker die de laatste wijziging heeft uitgevoerd.
-* De status van de **Gereed voor productie** markering (orange=niet ingesteld; green=set).
+* De status van de **Klaar 1} vlag van de Productie {(orange=niet plaats; green=set).**
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![ chlimage_1-186 ](assets/chlimage_1-186.png)

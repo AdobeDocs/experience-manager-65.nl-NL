@@ -1,6 +1,6 @@
 ---
 title: Functies van de Flex-werkruimte zijn niet beschikbaar in de AEM Forms-werkruimte
-description: De AEM Forms-werkruimte vernieuwt verder dan de op Flex gebaseerde werkruimte. Lees meer over de verschillen in functies en mogelijkheden.
+description: De AEM Forms-werkruimte vernieuwt verder dan Workspace op Flex. Lees meer over de verschillen in functies en mogelijkheden.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

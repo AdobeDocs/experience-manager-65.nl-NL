@@ -34,29 +34,29 @@ AEM portaalarchitectuur bevat definities van portalen en portlets.
 
 Een portal is een webtoepassing die verpersoonlijking, één aanmelding, integratie van inhoud uit verschillende bronnen en de presentatielaag van informatiesystemen host.
 
-U kunt JSR 286-Volgzame portlets in AEM in werking stellen. Met de portletcomponent kunt u een portlet op de pagina insluiten. Zie [Het AEM inhoudsportfolio beheren](#administeringthecqcontentportlet).
+U kunt JSR 286-Volgzame portlets in AEM in werking stellen. Met de portletcomponent kunt u een portlet op de pagina insluiten. Zie [ Beheren de Portlet van de Inhoud van de AEM ](#administeringthecqcontentportlet).
 
 ### Wat is een portlet? {#what-is-a-portlet}
 
 Portlets zijn webonderdelen die worden geïmplementeerd in een container en die dynamische inhoud genereren. De portletinterface wordt verpakt en opgesteld als .war dossier binnen van een portletcontainer. Als u AEM als portaal in werking stelt, hebt u het portlet .war dossier nodig om portlet in werking te stellen.
 
-Om AEM inhoud te vormen om in een portaal te verschijnen, zie [Het installeren, het Vormen, en het Gebruiken van AEM in portlet](#installingconfiguringandusingcqinaportlet).
+Om AEM inhoud te vormen om in een portaal te verschijnen, zie [ Installerend, Vormend, en Gebruikend AEM in portlet ](#installingconfiguringandusingcqinaportlet).
 
 ### AEM Portal Director {#aem-portal-director}
 
 >[!CAUTION]
 >
->De AEM Portal Director is vanaf AEM 6.4 verouderd. Zie [Verouderde en verwijderde functies](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>De AEM Portal Director is vanaf AEM 6.4 verouderd. Zie [ Vervangen en Verwijderde Eigenschappen ](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Het AEM inhoudsportfolio beheren {#administering-the-aem-content-portlet}
 
-Met de AEM-inhoudsporlet kunt u AEM inhoud in een portal weergeven. De portlet is beschikbaar op `/crx-quickstart/opt/portal`en kan op verschillende manieren worden aangepast. Bijvoorbeeld, kunt u SSO/Authentificatie behandeling aanpassen door uw eigen authentificatieservice op te stellen die de vereiste authentificatieinformatie voor AEM produceren om het standaardgedrag te beschrijven. De plug-ins gebruiken een gedefinieerde API waarmee u uw eigen functionaliteit kunt toevoegen door de plug-in te bouwen op basis van de API. De insteekmodule kan in de lopende portlet worden opgesteld. Om correct te functioneren, vereist het een configuratie van de AEM auteur en publiceer instantie samen met de inhoudspad om bij opstarten te tonen.
+Met de AEM-inhoudsporlet kunt u AEM inhoud in een portal weergeven. De portlet is beschikbaar bij `/crx-quickstart/opt/portal` en kan op verschillende manieren worden aangepast. Bijvoorbeeld, kunt u SSO/Authentificatie behandeling aanpassen door uw eigen authentificatieservice op te stellen die de vereiste authentificatieinformatie voor AEM produceren om het standaardgedrag te beschrijven. De plug-ins gebruiken een gedefinieerde API waarmee u uw eigen functionaliteit kunt toevoegen door de plug-in te bouwen op basis van de API. De insteekmodule kan in de lopende portlet worden opgesteld. Om correct te functioneren, vereist het een configuratie van de AEM auteur en publiceer instantie samen met de inhoudspad om bij opstarten te tonen.
 
-Sommige configuraties kunnen door portletvoorkeur en anderen door OSGi de dienstconfiguraties worden veranderd. U wijzigt deze configuraties met **config** bestanden of de OSGi-webconsole.
+Sommige configuraties kunnen door portletvoorkeur en anderen door OSGi de dienstconfiguraties worden veranderd. U verandert deze configuraties gebruikend **config** dossiers of de OSGi Webconsole.
 
 ### Voorkeuren Portlet {#portlet-preferences}
 
-Porlet-voorkeuren kunnen tijdens de implementatie op de portalserver worden geconfigureerd of door het **WEB-INF/portlet.xml** bestand voordat de portlet-webtoepassing wordt geïmplementeerd. Het bestand portlet.xml ziet er standaard als volgt uit:
+De voorkeur van het porlet kan in plaatsingstijd in de poortserver of door het **WEB-INF/portlet.xml** dossier uit te geven alvorens de portlet Webtoepassing op te stellen worden gevormd. Het bestand portlet.xml ziet er standaard als volgt uit:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,11 +109,11 @@ De portlet kan met de volgende voorkeur worden gevormd:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dit is het beginpad van de portlet: het definieert de inhoud die in eerste instantie wordt weergegeven.</p> <p><strong>Belangrijk</strong>: Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend van lopen<strong> /</strong>, moet u de kracht inschakelen <strong>CQUrlInfo</strong> in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.</p> </td>
+   <td><p>Dit is het beginpad van de portlet: het definieert de inhoud die in eerste instantie wordt weergegeven.</p> <p><strong> Belangrijk </strong>: Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend van <strong> lopen / </strong>, moet u de kracht <strong> CQUrlInfo </strong> in de configuratie van de Manager van de Bibliotheek van HTML van deze AEM instanties (bijvoorbeeld, via de console van het Felix) toelaten of het uitgeven zal niet werken en de voorkeurendialoog zal verschijnen.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
-   <td>De kiezer die aan elke URL wordt toegevoegd. Standaard is dit <strong>portlet</strong>, dus alle aanvragen naar HTML-pagina's gebruiken URL's die eindigen in <strong>.portlet.html.</strong> Hierdoor kunnen aangepaste scripts in AEM worden gebruikt voor portletrendering.</td>
+   <td>De kiezer die aan elke URL wordt toegevoegd. Door gebrek is dit <strong> portlet </strong>, zodat gebruiken alle verzoeken aan HTML- pagina's URL's die in <strong> beëindigen.portlet.html.</strong> Hierdoor kunnen aangepaste scripts in AEM worden gebruikt voor portletrendering.</td>
   </tr>
   <tr>
    <td>addCssToPortalHeader</td>
@@ -133,16 +133,16 @@ De portlet kan met de volgende voorkeur worden gevormd:
   </tr>
   <tr>
    <td>initialRedirect</td>
-   <td>Door gebrek, portlet voert een javascript omleiding van de volledige portalpagina op de eerste aanroeping uit. Dit moet het belemmering en dalingsscenario van moderne poortservers steunen. Bij de productie is deze omleiding zelden nodig en kan deze dus worden uitgeschakeld wanneer deze voorkeur wordt ingesteld op <em>false</em>.</td>
+   <td>Door gebrek, portlet voert een javascript omleiding van de volledige portalpagina op de eerste aanroeping uit. Dit moet het belemmering en dalingsscenario van moderne poortservers steunen. In productie is dit omleiding zelden nodig en kan daarom met deze voorkeur worden uitgezet die aan <em> vals </em> wordt geplaatst.</td>
   </tr>
  </tbody>
 </table>
 
 #### OSGi-webconsole {#osgi-web-console}
 
-Ervan uitgaande dat de poortserver wordt uitgevoerd op de host localhost, wordt poort 8080 en wordt de AEM portlet-webtoepassing gemonteerd in de webtoepassingscontext *cqportlet*, is de URL voor de webconsole `https://localhost:8080/cqportlet/cqbridge/system/console`. De standaardgebruiker en het standaardwachtwoord zijn **admin**.
+Ervan uitgaande de looppas van de poortserver op gastheer localhost, haven 8080 en de AEM portlet Webtoepassing in de context van de Webtoepassing *cqportlet* wordt opgezet, is URL voor de Webconsole `https://localhost:8080/cqportlet/cqbridge/system/console`. De standaardgebruiker en het wachtwoord zijn **admin**.
 
-Open de **Configuraties** en selecteert u **Configuratie CQ-server voor poortmap**. Hier geeft u de basis-URL op voor de auteur en de publicatie-instantie. Deze procedure wordt beschreven in [De portlet configureren](#configuring-the-portlet).
+Open het **lusje van Configuraties** en selecteer **de Configuratie van de Server van de Folder CQ van de Portaalfolder**. Hier geeft u de basis-URL op voor de auteur en de publicatie-instantie. Deze procedure wordt beschreven in [ het Vormen Portlet ](#configuring-the-portlet).
 
 >[!NOTE]
 >
@@ -152,13 +152,13 @@ Open de **Configuraties** en selecteert u **Configuratie CQ-server voor poortmap
 
 Om geautomatiseerde plaatsingen en configuratielevering te steunen, heeft AEM inhoudsplet ingebouwde configuratiesteun die probeert om configuraties van klassenpad te lezen die aan de portlettoepassing wordt verstrekt.
 
-Bij het opstarten, het systeembezit **com.day.cq.portet.config** wordt gelezen om de huidige omgeving te detecteren. Gewoonlijk is de waarde van deze eigenschap iets als **dev**, **prod**, **test**, enzovoort. Als er geen omgeving is ingesteld, worden er geen configuraties gelezen.
+Bij opstarten, wordt het systeembezit **com.day.cq.portet.config** gelezen om het huidige milieu te ontdekken. Gewoonlijk, is de waarde van dit bezit iets als **dev**, **prod**, **test**, etc. Als er geen omgeving is ingesteld, worden er geen configuraties gelezen.
 
-Als een milieu wordt geplaatst, wordt een configuratiedossier gezocht in classpath bij* ***com/day/cq/portlet/{env}.config** waar **env** wordt vervangen door de werkelijke waarde voor het milieu. In dit bestand moeten alle configuratiebestanden voor deze omgeving worden vermeld. Deze bestanden worden gezocht op basis van de locatie van het configuratiebestand. Als het bestand bijvoorbeeld een regel bevat `my.service.xml,` dit bestand wordt gelezen vanuit het klassepad op `com/day/cq/portlet/my.service.config.` De naam van het bestand bestaat uit de persistentie-id van de service, gevolgd door **.config**. In het vorige voorbeeld is de persistentie-id **my.service**. De indeling van het configuratiebestand is de indeling die wordt gebruikt door het installatieprogramma van Apache Sling OSGi.
+Als een milieu wordt geplaatst, wordt een config- dossier gezocht in classpath in* * **com/day/cq/portlet/ {env} .config** waar **env** met de daadwerkelijke waarde voor het milieu wordt vervangen. In dit bestand moeten alle configuratiebestanden voor deze omgeving worden vermeld. Deze bestanden worden gezocht op basis van de locatie van het configuratiebestand. Als het bestand bijvoorbeeld een regel bevat `my.service.xml,` , wordt dit bestand gelezen uit het klassepad op `com/day/cq/portlet/my.service.config.` . De naam van het bestand bestaat uit de persistentie-id van de service, gevolgd door **.config** . In het vorige voorbeeld, persistentieidentiteitskaart is **my.service**. De indeling van het configuratiebestand is de indeling die wordt gebruikt door het installatieprogramma van Apache Sling OSGi.
 
 Dit betekent, voor elke milieu, een overeenkomstig config dossier moet worden toegevoegd. Een configuratie die op alle milieu&#39;s zou moeten worden toegepast moet in al deze dossiers worden ingegaan - als het enkel voor één enkele milieu is, is het enkel ingegaan in dat dossier. Dit mechanisme zorgt voor volledige controle over welke configuratie in welk milieu wordt gelezen.
 
-Het is mogelijk om een andere systeemeigenschap te gebruiken om de omgeving te detecteren. De eigenschap system opgeven **com.day.cq.portet.configproperty** met de naam van de systeemeigenschap die moet worden gebruikt in plaats van **com.day.cq.portet.config**.
+Het is mogelijk om een andere systeemeigenschap te gebruiken om de omgeving te detecteren. Specificeer het systeembezit **com.day.cq.portet.configproperty** die de naam van het systeembezit bevatten in plaats van **com.day.cq.portet.config** te gebruiken.
 
 #### Validatie in cache plaatsen en in cache plaatsen {#caching-and-caching-invalidation}
 
@@ -166,13 +166,13 @@ portlet, in zijn standaardconfiguratie, geheime voorgeheugens de reacties het va
 
 portlet kan met zijn eigen geheime voorgeheugen worden gevormd, zodat de inhoud in portlet vertoningen zonder toegang tot AEM te vereisen. Het portaal is beschikbaar als inhoud in /libs/portal/director. Als u toegang wilt tot de inhoud, start u een AEM instantie en downloadt u het bestand via CRXDE Lite of Webdav vanaf die locatie.
 
-U kunt deze bundel bij uitvoering implementeren of toevoegen aan de portlet-webtoepassing op `WEB-INF/lib/resources/bundles` vóór de implementatie.
+U kunt deze bundel bij uitvoering implementeren of toevoegen aan de portlet-webtoepassing bij `WEB-INF/lib/resources/bundles` vóór de implementatie.
 
 Nadat het geheime voorgeheugen wordt opgesteld, plaatst portlet inhoud van publicatieinstantie in het voorgeheugen. De portletcache kan ongeldig worden gemaakt door een dispatcher uit AEM te spoelen. Om portlet te vormen om zijn eigen geheime voorgeheugen te gebruiken:
 
 1. Vorm een replicatieagent in auteur die de poortserver richt.
-1. Ervan uitgaande dat de poortserver op de host wordt uitgevoerd **localhost**, **poort 8080 **en de AEM portlet webtoepassing wordt in de context gemonteerd **cqportlet**, is de URL om de cache leeg te maken `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Gebruik GET als methode.
-   **Opmerking:** In plaats van een aanvraagparameter te gebruiken, kunt u een http-header met de naam verzenden **Pad**.
+1. Ervan uitgaande dat de looppas van de poortserver op gastheer **localhost**, **port 8080 **en de AEM portlet Webtoepassing in de context **cqportlet** wordt opgezet, is de url om het geheime voorgeheugen te leegmaken `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Gebruik GET als methode.
+   **Nota:** In plaats van het gebruiken van een verzoekparameter, kunt u een HTTP- kopbal verzenden genoemd **Weg**.
 
 #### Het spoelen van het Geheime voorgeheugen via de Agent van de Replicatie {#flushing-the-cache-via-replication-agent}
 
@@ -183,58 +183,58 @@ Als u verscheidene poortknopen in werking stelt die portlet van de AEM in werkin
 Om een replicatieagent voor het portaal te vormen:
 
 1. Meld u aan bij de auteur.
-1. Klik op het tabblad Websites op de knop *Gereedschappen* tab.
-1. Klikken **Nieuwe pagina..** in de replicatieagenten **Nieuw...** -menu.
+1. In het lusje van Websites, klik de *Hulpmiddelen* tabel.
+1. Klik **Nieuwe Pagina...** in de replicatieagenten **Nieuw..** menu.
 
-   ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
+   ![ screen_shot_2012-02-15at40647pm ](assets/screen_shot_2012-02-15at40647pm.png)
 
-1. In *Sjabloon*, selecteert u *Replication Agent*, en ga een naam voor de agent in. Klikken *Maken*.
+1. In *Malplaatje*, de uitgezochte *Agent van de Replicatie*, en ga een naam voor de agent in. Klik *creëren*.
 
-   ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
+   ![ screen_shot_2012-02-15at40817pm ](assets/screen_shot_2012-02-15at40817pm.png)
 
 1. Dubbelklik op de replicatieagent die u hebt gemaakt. Het toont ongeldig aangezien het nog niet is gevormd.
 
-   ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
+   ![ screen_shot_2012-02-15at41001pm ](assets/screen_shot_2012-02-15at41001pm.png)
 
-1. Klikken **Bewerken.**
-1. In de **Instellingen** selecteert u de **Ingeschakeld** selectievakje, selecteren **Dispatcher Flush** als serialization type, en ga een retry onderbreking (bijvoorbeeld, 60000) in.
+1. Klik **uitgeven.**
+1. In het **lusje van Montages**, selecteer **Toegelaten** controledoos, uitgezochte **Vlek van Dispatcher** als rangschikkingstype, en ga een retry onderbreking (bijvoorbeeld, 60000) in.
 
-   ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)
+   ![ screen_shot_2012-02-15at42101pm ](assets/screen_shot_2012-02-15at42101pm.png)
 
-1. Klik op de knop **Vervoer** tab.
-1. In de **URI** voert u de spoelURI (URL) van de portlet in. De URI heeft de volgende notatie:
+1. Klik het **Vervoer** lusje.
+1. Op het **gebied van URI**, ga flush URI (URL) van portlet in. De URI heeft de volgende notatie:
 
    ```xml
    https://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache
    ```
 
-   ![screen_shot_2012-02-15at42322pm](assets/screen_shot_2012-02-15at42322pm.png)
+   ![ screen_shot_2012-02-15at42322pm ](assets/screen_shot_2012-02-15at42322pm.png)
 
-1. Klik op de knop **Uitgebreid** tab.
+1. Klik het **Uitgebreide** lusje.
 
-   ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
+   ![ screen_shot_2012-02-15at42515pm ](assets/screen_shot_2012-02-15at42515pm.png)
 
-1. In de **HTTP-methode** veld, type **GET**.
-1. In de **HTTP-headers** veld, klikken **+** om een nieuw item en type toe te voegen **Pad: {path}**.
-1. Klik indien nodig op de knop **Proxy** en ga volmachtsinformatie aan de agent in.
-1. Klikken **OK** om de wijzigingen op te slaan.
-1. Als u de verbinding wilt testen, klikt u op de knop **Verbinding testen** koppeling. Een logboekbericht verschijnt dat erop wijst of de replicatietest succesvol was. Bijvoorbeeld:
+1. Op het **gebied van de Methode van HTTP**, type **GET**.
+1. Op het **gebied van de Kopballen van HTTP**, klik **+** om een nieuwe ingang en type **Weg toe te voegen: {path}**.
+1. Indien nodig, klik het **lusje van de Volmacht 0} {en ga volmachtsinformatie aan de agent in.**
+1. Klik **O.K.** om veranderingen te bewaren.
+1. Om de verbinding te testen, klik de **verbinding van de Test**. Een logboekbericht verschijnt dat erop wijst of de replicatietest succesvol was. Bijvoorbeeld:
 
-   ![screen_shot_2012-02-15at42639pm](assets/screen_shot_2012-02-15at42639pm.png)
+   ![ screen_shot_2012-02-15at42639pm ](assets/screen_shot_2012-02-15at42639pm.png)
 
 #### De portletcache handmatig leegmaken {#manually-flushing-the-portlet-cache}
 
-U kunt de portletgeheime voorgeheugen manueel leegmaken door tot zelfde URL toegang te hebben die voor de replicatieagent wordt gevormd. Zie [Cache leegmaken](#flushing-the-cache-via-replication-agent) voor de vorm van de URL. Daarnaast moet de URL worden uitgebreid met de URL-parameter Path=&lt;path> om aan te geven wat moet worden leeggemaakt.
+U kunt de portletgeheime voorgeheugen manueel leegmaken door tot zelfde URL toegang te hebben die voor de replicatieagent wordt gevormd. Zie [ het Blozen van het Geheime voorgeheugen ](#flushing-the-cache-via-replication-agent) voor de vorm van URL. Daarnaast moet de URL worden uitgebreid met een URL-parameter Path=&lt;path> om aan te geven wat moet worden verwijderd.
 
 Bijvoorbeeld:
 
-`https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*` Maakt de volledige cache leeg. `https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz` flushes `/content/mypage/xyz` uit de cache.
+`https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*` maakt de volledige cache leeg. `https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz` spoelt `/content/mypage/xyz` uit de cache.
 
 ### Poortbeveiliging {#portal-security}
 
 Het portaal is het mechanisme voor rijverificatie. U kunt zich AEM of met een technische gebruiker, de poortgebruiker, een groep, etc. aanmelden. portlet heeft geen toegang tot het wachtwoord voor de gebruiker in het portaal, zodat als portlet niet alle geloofsbrieven kent om met succes een gebruiker aan te melden, moet een oplossing SSO worden gebruikt. In dit geval stuurt de AEM portlet alle vereiste informatie door naar AEM, die deze informatie vervolgens doorgeeft aan de onderliggende AEM dataopslag. Dit gedrag is pluggable en kan worden aangepast.
 
-### Verificatie bij publicatie {#authentication-on-publish}
+### Verificatie op Publish {#authentication-on-publish}
 
 Deze sectie beschrijft de beschikbare authentificatiemodi portlet kan gebruiken in het communiceren met de onderliggende AEM instanties WCM.
 
@@ -248,7 +248,7 @@ De configuratieopties van de authentificatie die portlet in AEM instanties WCM g
 >
 >Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor de diensten OSGi (console of bewaarplaatsknooppunten) te beheren.
 >
->Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
+>Zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor volledige details.
 
 Om tot de de authentificatieconfiguratie van portlet toegang te hebben:
 
@@ -260,16 +260,16 @@ Om tot de de authentificatieconfiguratie van portlet toegang te hebben:
 
    `https://wps-host:10040/wps/PA_CQ5_Portlet/cqbridge/system/console`
 
-1. Log in bij de webconsole. De standaardreferenties zijn `admin/admin`.
-1. Selecteer in de console **Configuratie**.
-1. In de **Configuratie** selecteert u een bepaalde service die u wilt configureren. De diensten worden geleverd door de portlet in het kader van OSGi.
+1. Log in bij de webconsole. De standaardreferenties zijn `admin/admin` .
+1. In de console, uitgezochte **Configuratie**.
+1. In het **menu van de Configuratie**, selecteer een bepaalde dienst om te vormen. De diensten worden geleverd door de portlet in het kader van OSGi.
 
    | Servicenaam | Beschrijving |
    |---|---|
    | Day Portal Director Authenticator | Vorm welke authentificatiemodus voor AEM instanties WCM wordt gebruikt. Afhankelijk van de geselecteerde modus kan een technische gebruiker of de naam van het SSO-cookie worden opgegeven. Ook, kan de authentificatie voor AEM WCM publicatieinstanties worden toegelaten. |
    | Dagportaal Director-bestandcache | Vorm de parameters van hoe portlet reacties in het voorgeheugen onderbrengt het van AEM instanties WCM ontvangt. |
    | Day Portal Director HTTP Client Service | Vorm hoe portlet via HTTP met onderliggende AEM instanties WCM verbindt. U kunt bijvoorbeeld een proxyserver opgeven. |
-   | Dagportaal Director Locale Handler | Vorm welke scènes portlet steunt. Verzoeken om AEM instanties WCM zijn gebaseerd op de gebruikersscène; bijvoorbeeld de taal *German *zou verzoeken `/content/geometrixx/de/`... |
+   | Dagportaal Director Locale Handler | Vorm welke scènes portlet steunt. Verzoeken om AEM WCM-instanties zijn gebaseerd op de landinstelling van de gebruiker. Bijvoorbeeld de taal *German *zou vragen om `/content/geometrixx/de/`... |
    | Day Portal Director Privilege Manager | Vorm of portlet de Websites tabel zou moeten testen die op de momenteel het programma geopende gebruiker wordt gebaseerd. |
    | Day Portal Director Toolbar Renderer | Pas de rendering van de portletwerkbalk aan. |
 
@@ -279,13 +279,13 @@ Om tot de de authentificatieconfiguratie van portlet toegang te hebben:
 
 In standaardwijze, worden alle verzoeken die door portlet voor de AEM WCM auteursinstantie worden uitgegeven voor authentiek verklaard gebruikend de zelfde technische gebruiker, ongeacht de huidige poortgebruiker. De modus Technische gebruiker is standaard ingeschakeld. U laat/maakt deze wijze in het respectieve configuratiescherm in toe OSGi beheersconsole:
 
-De opgegeven technische gebruiker moet aanwezig zijn op de AEM instantie van de WCM-auteur en op de publicatie-instantie als **Verifiëren bij publiceren** is ingeschakeld. Zorg ervoor dat u de gebruikers voldoende toegangsrechten geeft voor ontwerpwerkzaamheden.
+De gespecificeerde technische gebruiker moet op de AEM WCM auteursinstantie en op publiceren instantie bestaan als **op Publish** wordt toegelaten voor authentiek verklaren. Zorg ervoor dat u de gebruikers voldoende toegangsrechten geeft voor ontwerpwerkzaamheden.
 
 #### SSO {#sso}
 
-De portlet steunt SSO met AEM uit de doos. De authentificatordienst kan worden gevormd om SSO te gebruiken en de huidige poortgebruiker met formaat over te brengen **Basis** als een cookie met de naam `cqpsso` tot AEM. AEM zou moeten worden gevormd om de de authentificatiemanager van SSO voor weg te gebruiken /. De cookienaam moet ook hier worden gevormd.
+De portlet steunt SSO met AEM uit de doos. De authentificatordienst kan worden gevormd om SSO te gebruiken en de huidige poortgebruiker met formaat **Basis** als genoemd koekje over te brengen `cqpsso` aan AEM. AEM zou moeten worden gevormd om de de authentificatiemanager van SSO voor weg te gebruiken /. De cookienaam moet ook hier worden gevormd.
 
-De `crx-quickstart/repository/repository.xml` AEM opslagplaats moet dienovereenkomstig worden geconfigureerd:
+De `crx-quickstart/repository/repository.xml` for AEM repository moet dienovereenkomstig worden geconfigureerd:
 
 ```xml
 <LoginModule class="com.day.crx.security.authentication.CRXLoginModule">
@@ -297,7 +297,7 @@ De `crx-quickstart/repository/repository.xml` AEM opslagplaats moet dienovereenk
 
 #### SSO-verificatiemodus {#sso-authentication-mode}
 
-portlet kan voor AEM WCM voor authentiek verklaren gebruikend het Enige Sign On (SSO) regeling. In deze modus wordt de gebruiker die momenteel is aangemeld bij de portal doorgestuurd naar AEM WCM in de vorm van een SSO-cookie. Als de wijze SSO wordt gebruikt, moeten alle poortgebruikers met toegang tot AEM portlet aan de onderliggende AEM instanties WCM bekend zijn, meestal in de vorm van AEM WCM die met LDAP worden verbonden, of door de gebruikers manueel te hebben gecreeerd vooraf. Alvorens SSO in portlet toe te laten, de onderliggende AEM de auteursinstantie van WCM (en publiceer instantie) als **Verifiëren bij publiceren** wordt toegelaten) moet worden gevormd om op SSO-Gebaseerde verzoeken goed te keuren.
+portlet kan voor AEM WCM voor authentiek verklaren gebruikend het Enige Sign On (SSO) regeling. In deze modus wordt de gebruiker die momenteel is aangemeld bij de portal doorgestuurd naar AEM WCM in de vorm van een SSO-cookie. Als de wijze SSO wordt gebruikt, moeten alle poortgebruikers met toegang tot AEM portlet aan de onderliggende AEM instanties WCM bekend zijn, meestal in de vorm van AEM WCM die met LDAP worden verbonden, of door de gebruikers manueel te hebben gecreeerd vooraf. Ook, alvorens SSO in portlet toe te laten, moet de onderliggende AEM WCM auteursinstantie (en publiceer instantie, als **op Publish** voor authentiek verklaren) worden gevormd om op SSO-Gebaseerde verzoeken goed te keuren.
 
 Om portlet te vormen om de de authentificatiemodus van SSO te gebruiken, voltooi de volgende stappen (die in detail in de volgende secties worden beschreven):
 
@@ -307,13 +307,13 @@ Om portlet te vormen om de de authentificatiemodus van SSO te gebruiken, voltooi
 
 #### De opslagplaats van AEM WCM inschakelen om vertrouwde referenties te accepteren {#enabling-aem-wcm-s-repository-to-accept-trusted-credentials}
 
-Voordat SSO voor AEM WCM kan worden ingeschakeld, moet de onderliggende opslagplaats worden geconfigureerd om de vertrouwde referenties te accepteren die door AEM WCM worden verstrekt. Hiertoe configureert u AEM repository.xml.
+Voordat SSO voor AEM WCM kan worden ingeschakeld, moet de onderliggende opslagplaats worden geconfigureerd om de vertrouwde referenties te accepteren die door AEM WCM worden verstrekt. Hiertoe configureert u AEMgegevensopslagruimte.xml.
 
 1. Open het volgende bestand in het bestandssysteem waarop AEM WCM is geïnstalleerd:
 
    `//crx-quickstart/repository/repository.xml`
 
-1. Zoek in het XML-bestand de vermelding voor de **LoginModule** en voeg het Trust_credentials_attribute aan zijn configuratie toe:
+1. In het dossier van XML, vind de ingang voor **LoginModule** en voeg trust_credentials_attribute aan zijn configuratie toe:
 
    ```xml
    <LoginModule class="com.day.crx.security.authentication.CRXLoginModule">
@@ -329,20 +329,20 @@ Voordat SSO voor AEM WCM kan worden ingeschakeld, moet de onderliggende opslagpl
 
 Om SSO in AEM WCM toe te laten, heb toegang tot de relevante configuratieingang in Apache Felix Web Management Console (OSGi) van AEM WCM:
 
-1. Open de console via de URI op https://&lt;aem-host>:&lt;port>/system/console.
+1. Open de console via de URI op https://&lt;AEM-host>:&lt;port>/system/console.
 1. Selecteer SSO-verificatiehandler in het menu Configuration. In dit voorbeeld, keurt de manager SSO verzoeken SSO voor alle wegen goed die op het koekje worden gebaseerd dat door AEM portlet wordt verstrekt. Uw configuratie kan variëren.
 
    | Pad | / | Laat manager SSO voor alle verzoeken toe |
    |---|---|---|
    | Cookie-namen | cqpsso | Naam van het koekje dat door portlet wordt verstrekt zoals die in de console OSGi van portlet wordt gevormd. |
 
-1. Klikken **Opslaan** SSO inschakelen. SSO is nu de primaire authentificatieregeling.
+1. Klik **sparen** om SSO toe te laten. SSO is nu de primaire authentificatieregeling.
 
 Voor elk verzoek AEM WCM ontvangt, eerst wordt de op SSO-Gebaseerde authentificatie geprobeerd. Bij mislukking, wordt een fallback aan het gebruikelijke basisauthentificatieschema uitgevoerd. Als zodanig blijven normale verbindingen met AEM WCM zonder SSO mogelijk.
 
 #### SSO-verificatie inschakelen in een AEM portfolio {#enabling-sso-authentication-in-a-aem-portlet}
 
-Opdat de onderliggende AEM instantie WCM SSO- verzoeken goedkeurt, moet portlet de authentificatiemodus worden geschakeld **Technisch** tot **SSO**.
+Opdat de onderliggende AEM instantie WCM SSO- verzoeken goed te keuren, moet de de authentificatiemodus van portlet van **Technische** aan **SSO** worden geschakeld.
 
 SSO-verificatie inschakelen in een AEM portlet:
 
@@ -350,7 +350,7 @@ SSO-verificatie inschakelen in een AEM portlet:
 1. Selecteer in het menu Configuratie de optie Day Portal Director Authenticator in de lijst met beschikbare configuraties.
 1. Selecteer SSO in Modus. Laat de andere parameters hun standaardwaarden ongewijzigd.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![ chlimage_1-135 ](assets/chlimage_1-135.png)
 
 1. Klik sparen om SSO voor portlet toe te laten.
 
@@ -389,8 +389,8 @@ Voor het openen van de pagina voor websitebeheer of het bewerken van een pagina 
    </LoginModule>
    ```
 
-1. In de OSGi configuratieconsole, door gebrek dat in https://localhost:4502/system/console/configMgr wordt gevestigd, selecteer **CQ PIN-verificatiehandler** in het keuzemenu.
-1. Bewerk de **URL-hoofdpad** parameter die alleen de enkele waarde moet bevatten **/**.
+1. In de OSGi configuratieconsole, door gebrek dat in https://localhost:4502/system/console/configMgr wordt gevestigd, uitgezochte **Handler van de Authentificatie van de SPELD CQ** van het drop-down menu.
+1. Bewerk de **parameter van de Weg van de Weg van de Wortel URL** om enkel de enige waarde **te bevatten/**.
 
 ### Rechten {#privileges}
 
@@ -418,9 +418,9 @@ De verstrekte AEM portlet toepassing begint een container OSGi binnen de Webtoep
 
 De werkbalk en de bijbehorende knoppen kunnen worden geconfigureerd en aangepast. U kunt uw eigen knoppen aan de werkbalk toevoegen of bepalen welke knoppen in welke modus worden weergegeven. Elke knoop is de dienst OSGi configureerbaar door een configuratie OSGi.
 
-De OSGi Webconsole maakt een lijst van alle knoopconfiguraties op de **Configuratie** tab. Voor elke knop kunt u bepalen in welke modus deze knop wordt weergegeven. Hiermee kunt u een knop uitschakelen door bijvoorbeeld alle modi te verwijderen.
+De OSGi Webconsole maakt een lijst van alle knoopconfiguraties op de **Configuratie** tabel. Voor elke knop kunt u bepalen in welke modus deze knop wordt weergegeven. Hiermee kunt u een knop uitschakelen door bijvoorbeeld alle modi te verwijderen.
 
-Standaard gebruikt de AEM inhoudsportlet de inline bewerkingsfunctionaliteit. Als u echter liever wilt overschakelen naar de AEM-auteur voor bewerking, schakelt u de optie **Knop SiteAdmin** en de **Knop ContentFinder**, maar schakel de **Knop Bewerken**. In dit geval, zorg ervoor om de authentificatie van de SPELD in AEM correct te vormen.
+Standaard gebruikt de AEM inhoudsportlet de inline bewerkingsfunctionaliteit. Nochtans, als u in de AEM auteursinstantie voor het uitgeven verkiest te schakelen, laat de **Knoop SiteAdmin** en de **Knoop ContentFinder** toe, maar maak **onbruikbaar uitgeven Knoop**. In dit geval, zorg ervoor om de authentificatie van de SPELD in AEM correct te vormen.
 
 De de toolbarlay-out van portlet kan worden aangepast door een bundel door de Console van het Web van portlet te installeren Felix, die douane CSS/HTML bij een vooraf bepaalde plaats bevat.
 
@@ -471,25 +471,25 @@ U kunt het bouwen gebruikend een hulpmiddel zoals gemaakt of manueel creeert zul
 
 De werkbalk van de portlet heeft eigenlijk twee weergavestaten. Elke weergave en de bijbehorende knoppen kunnen worden aangepast met een respectievelijke HTML-bestand.
 
-#### Weergave publiceren {#publish-view}
+#### Publish View {#publish-view}
 
-De publicatieweergave heeft slechts één knop waarmee de werkbalk wordt verplaatst naar de weergave Beheren. De publicatieweergave wordt vertegenwoordigd door het bestand publish.html in [vorige bundel](/help/sites-deploying/configuring-osgi.md#bundles). In de HTML kunt u de volgende plaatsaanduidingen gebruiken, die door de portlet worden vervangen met de respectievelijke inhoud wanneer deze wordt weergegeven:
+De publicatieweergave heeft slechts één knop waarmee de werkbalk wordt verplaatst naar de weergave Beheren. De publicatiemening wordt vertegenwoordigd door het publish.html- dossier in [ vorige bundel ](/help/sites-deploying/configuring-osgi.md#bundles). In de HTML kunt u de volgende plaatsaanduidingen gebruiken, die door de portlet worden vervangen met de respectievelijke inhoud wanneer deze wordt weergegeven:
 
-#### Plaatsaanduidingen voor weergave publiceren {#publish-view-placeholders}
+#### Plaatsaanduidingen voor Publish-weergave {#publish-view-placeholders}
 
 | Tekenreeks voor plaatsaanduiding | Beschrijving |
 |---|---|
-| {buttonManage} | Placeholder wordt vervangen door **Beheren** knoop, die de portletstaat in de beheersstaat schakelt. |
+| {buttonManage} | Placeholder wordt vervangen door **leidt** knoop, die de portletstaat in de beheersstaat schakelt. |
 
 #### Weergave beheren {#manage-view}
 
-De beheerweergave heeft vier knoppen: Bewerken, tabblad Websites, Vernieuwen en Vorige. De beheerde mening wordt vertegenwoordigd door het manage.html- dossier in [vorige bundel](/help/sites-deploying/configuring-osgi.md#bundles). In de HTML kunt u de volgende plaatsaanduidingen gebruiken, die door de portlet worden vervangen met de respectievelijke inhoud wanneer deze wordt weergegeven:
+De beheerweergave heeft vier knoppen: Bewerken, tabblad Websites, Vernieuwen en Vorige. De beheerde mening wordt vertegenwoordigd door het manage.html- dossier in de [ vorige bundel ](/help/sites-deploying/configuring-osgi.md#bundles). In de HTML kunt u de volgende plaatsaanduidingen gebruiken, die door de portlet worden vervangen met de respectievelijke inhoud wanneer deze wordt weergegeven:
 
 #### Plaatsaanduidingen weergeven beheren {#manage-view-placeholders}
 
 | Tekenreeks voor plaatsaanduiding | Beschrijving |
 |---|---|
-| {buttonEdit} | Placeholder wordt vervangen door **Bewerken** Deze knop opent een nieuw venster met de huidige pagina in AEM bewerkingsmodus. |
+| {buttonEdit} | Plaatsaanduiding wordt vervangen door **geeft** knoop uit, die een nieuw venster met de huidige pagina op AEM uitgeeft wijze opent. |
 | {buttonWebsites, tabblad} | Plaatsaanduiding, vervangen door een knop waarmee het tabblad Websites van AEM WCM wordt geopend. |
 | {buttonRefresh} | Hiermee vernieuwt u de huidige weergave. |
 | {buttonBack} | Schakelt portlet terug in publiceer mening. |
@@ -500,15 +500,15 @@ De knopen, op welke mening zij verschijnen, gebruiken de zelfde gemeenschappelij
 
 In de HTML kunt u de volgende plaatsaanduidingen gebruiken, die door de portlet worden vervangen met de respectievelijke inhoud wanneer deze wordt weergegeven:
 
-#### Weergaveknoppen beheren en publiceren {#manage-and-publish-view-buttons}
+#### Knoppen Beheren en Publish-weergave {#manage-and-publish-view-buttons}
 
 | Tekenreeks voor plaatsaanduiding | Beschrijving |
 |---|---|
-| {name} | Naam van de knop, bijvoorbeeld **auteur, back, refresh**, enzovoort. |
+| {name} | De naam van de knoop, bijvoorbeeld, **auteur, rug, verfrist zich**, etc. |
 | {id} | CSS-id van de knop. |
 | {url} | URL voor het doel van de knop. |
 | {text} | Label van de knop. |
-| {onclick} | JavaScript **onclick** function (contains {url}). |
+| {onclick} | JavaScript **onclick** functie (bevat {url}). |
 
 Voorbeeld van een bestand button.html:
 
@@ -547,9 +547,9 @@ De portlet voor AEM inhoud heeft een ingebouwde lokalisatiefunctie, die ervoor z
 Dit gebeurt in twee stappen:
 
 1. De taaldetector van de poortmap detecteert de landinstelling van de poortgebruiker door de landinstelling van het portaal op te halen. Deze dienst moet met de lijst van beschikbare talen in AEM worden gevormd.
-1. De portaalversie van Director-handlers voor de landinstelling handelt de lokalisatie van het huidige verzoek af. Het pad van de gevraagde inhoud is bijvoorbeeld `/content/geometrixx/en/company.html`en volgens de configuratie worden de **en** met de werkelijke landinstelling van de gebruiker.
+1. De portaalversie van Director-handlers voor de landinstelling handelt de lokalisatie van het huidige verzoek af. Het neemt de weg van de gevraagde inhoud, bijvoorbeeld, `/content/geometrixx/en/company.html` en volgens de configuratie, herschrijft het **en** met de daadwerkelijke scène van de gebruiker.
 
-De portaalhandler voor Director-landinstellingen kan worden geconfigureerd met de paden om te controleren op informatie over landinstellingen. Dit omvat gewoonlijk alles onder `/content` en met de positie van de landinstellingsinformatie in het pad. Standaard volgt de landinstellingshandler de aanbevolen procedure voor het structureren van meertalige sites in AEM.
+De Portal Director-handler voor landinstellingen kan worden geconfigureerd met de paden om te controleren op informatie over landinstellingen. Dit omvat gewoonlijk alles onder `/content` en de positie van de landinstellingsgegevens in het pad. Standaard volgt de landinstellingshandler de aanbevolen procedure voor het structureren van meertalige sites in AEM.
 
 Als er op uw site geen strenge regel voor de verwerking van de landinstellingsgegevens in het pad is, is het mogelijk om de landinstellingshandler te vervangen door uw eigen implementatie.
 
@@ -565,7 +565,7 @@ De facultatieve diensten OSGi kunnen worden uitgevoerd om diverse delen van port
   </tr>
   <tr>
    <td>InvocationContextListener</td>
-   <td>Listener die aan het begin en einde van elke aanvraag aan portlet wordt aangeroepen. De listener kan worden gebruikt om informatie voor de huidige aanvraag te wijzigen of toe te voegen.<br /> </td>
+   <td>Listener die aan het begin en einde van elke aanvraag aan portlet wordt aangeroepen. De luisteraar kan worden gebruikt om informatie voor het huidige verzoek te veranderen of toe te voegen.<br /> </td>
   </tr>
   <tr>
    <td>ErrorHandler</td>
@@ -589,7 +589,7 @@ De facultatieve diensten OSGi kunnen worden uitgevoerd om diverse delen van port
   </tr>
   <tr>
    <td>TextMapper</td>
-   <td>Hiermee kunt u procesbestanden HTML, CSS en JavaScript posten.</td>
+   <td>Hiermee kunt u procesbestanden van het type HTML, CSS en JavaScript posten.</td>
   </tr>
   <tr>
    <td>ToolbarButton</td>
@@ -610,9 +610,9 @@ De facultatieve diensten OSGi kunnen worden uitgevoerd om diverse delen van port
 
 De volgende services hebben een standaardimplementatie in de inhoudsportlet (met een bijbehorende Java-interface). Om aan te passen, moet een bundel die de nieuwe de dienstimplementatie bevat in de portlettoepassing worden opgesteld.
 
-Wanneer het uitvoeren van een dergelijke dienst, zorg ervoor om **service.ranking** eigenschap van de dienst tot een positieve waarde. De standaardimplementatie gebruikt rangschikking*** 0* en portlet gebruikt de dienst met het hoogste rangschikken.
+Wanneer het uitvoeren van zulk een dienst, zorg ervoor om het {**bezit 0} service.ranking van de dienst aan een positieve waarde te plaatsen.** De standaardimplementatie gebruikt rangschikking*** 0* en portlet gebruikt de dienst met het hoogste rangschikken.
 
-| **Naam** | **Beschrijving** | **Standaardgedrag** |
+| **Naam** | **Beschrijving** | **StandaardGedrag** |
 |---|---|---|
 | Authenticator | Verstrekt de authentificatieinformatie aan AEM | Gebruikt een configureerbare technische gebruiker voor zowel auteur als publiceert. Of SSO kan worden gebruikt. |
 | HTMLRewriter | Hiermee herschrijft u koppelingen en afbeeldingen | Herschrijft AEM verbindingen aan poortverbindingen, kan door een UrlMapper en een TextMapper worden uitgebreid |
@@ -643,7 +643,7 @@ Als u AEM als portal wilt gebruiken, voert u de volgende taken uit:
 
 >[!NOTE]
 >
->U kunt de portletcomponent gebruiken slechts wanneer AEM als Webtoepassing wordt opgesteld. ([Zie AEM installeren met een toepassingsserver](/help/sites-deploying/application-server-install.md).)
+>U kunt de portletcomponent gebruiken slechts wanneer AEM als Webtoepassing wordt opgesteld. ([ zie het Installeren van AEM met een Server van de Toepassing ](/help/sites-deploying/application-server-install.md).)
 
 ### De portletcomponent installeren {#installing-the-portlet-component}
 
@@ -654,9 +654,9 @@ Het AEM QuickStart JAR-bestand bevat de portlet-componentbestanden. Als u de bes
    * QuickStart uitvoeren: crx-quickstart/opt/portal
    * QuickStart-inhoud uitpakken: statisch/opt/portaal
 
-1. Open Package Manager van de CQ5 auteurinstantie die aan de toepassingsserver wordt opgesteld. (https://*appserverhost*:*poort*/cq5auteur/crx/packmgr)
+1. Open Package Manager van de CQ5 auteurinstantie die aan de toepassingsserver wordt opgesteld. (https:// *appserverhost*:*haven*/cq5auteur/crx/packmgr)
 
-1. Pakketbeheer gebruiken voor [Uploaden en installeren](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) het pakket cq-portlets-components.zip.
+1. De Manager van het Pakket van het gebruik aan [ uploadt en installeert ](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) het pakket cq-portlets-components.zip.
 
    Het pakket installeert cq-portlet-director-sharedlibs-x.x.x.jar in de /libs/portal/director omslag in de bewaarplaats.
 
@@ -668,11 +668,11 @@ Het AEM QuickStart JAR-bestand bevat de portlet-componentbestanden. Als u de bes
 Voeg de portletcomponent aan het paragraafsysteem toe zodat het aan auteurs beschikbaar is.
 
 1. Klik in Sidekick op het liniaalpictogram om de ontwerpmodus te activeren.
-1. Naast de `Design of par` kop boven de eerste alinea, klikt u op **Bewerken**.
+1. Naast de `Design of par` rubriek boven de eerste paragraaf, geeft de klik **** uit.
 
-1. In de **Algemeen** Selecteer de componentcategorie, schakel het selectievakje naast de Portlet-component in en klik op OK.
+1. In de **Algemene** componentencategorie, selecteer de controledoos naast de component Portlet en klik O.K.
 
-![chlimage_1-25](assets/chlimage_1-25.jpeg)
+![ chlimage_1-25 ](assets/chlimage_1-25.jpeg)
 
 ### Uw portlettoepassingen configureren en implementeren {#configuring-and-deploying-your-portlet-applications}
 
@@ -680,7 +680,7 @@ Implementeer de portlets naar de webcontainer van de toepassingsserver, zodat de
 
 1. Extraheer de inhoud van het WAR-bestand van de portlettoepassing.
 
-   **Tip:** De jar xf *nameOfApp*.war bevel haalt de dossiers uit.
+   **Uiteinde:** jar xf *naamofapp* .war bevel haalt de dossiers uit.
 
 1. Open het bestand web.xml in een teksteditor.
 1. Voeg de volgende servlet-configuratie toe in het web-app-element:
@@ -699,7 +699,7 @@ Implementeer de portlets naar de webcontainer van de toepassingsserver, zodat de
 
 1. Sla het bestand web.xml op en pak het WAR-bestand opnieuw in.
 
-   **Tip:** De `jar cvf nameofapp.war *` voegt de inhoud van de huidige map toe aan het bestand nameApp.war.
+   **Uiteinde:** het `jar cvf nameofapp.war *` bevel voegt inhoud van de huidige folder aan het namofapp.war- dossier toe.
 
 1. Implementeer de portlettoepassing op de toepassingsserver. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.
 
@@ -707,24 +707,24 @@ Implementeer de portlets naar de webcontainer van de toepassingsserver, zodat de
 
 Met de component Portal kunt u een portletvenster toevoegen aan uw webpagina. Gebruik de componenteigenschappen om portlet aan vertoning te specificeren.
 
-1. Sleep op de webpagina de **Portlet** van de groep Algemeen in Sidekick naar de pagina.
+1. Voor de Web-pagina, sleep de **Portlet** component van de Algemene groep in Sidekick aan de pagina.
 
    >[!NOTE]
    >
    >Nadat u de component naar de pagina hebt gesleept, laadt u de pagina opnieuw om ervoor te zorgen dat deze correct werkt.
 
 1. Dubbelklik op de component om de eigenschappen Portlet te openen.
-1. In de **Portlet-entiteit** selecteert u de portlet in de lijst.
+1. In het **drop-down menu van de Entiteit van de Portlet**, selecteer portlet van de lijst.
 1. Schakel het selectievakje **Titelbalk verbergen ** in of uit, afhankelijk van de vraag of u de titelbalk van de portlet wilt zien.
-1. In de **Portlet-venster** Voer desgewenst een unieke Portlet Window ID in.
+1. Op het **gebied van het Venster van de Portlet**, ga unieke identiteitskaart van het Venster van Portlet in, indien gewenst.
 
    >[!NOTE]
    >
    >Als u dezelfde portlet meerdere keren op dezelfde pagina wilt gebruiken, geeft u elke portlet een andere venster-id.
 
-1. Klikken **OK**. De portlet wordt weergegeven op de AEM pagina.
+1. Klik **OK**. De portlet wordt weergegeven op de AEM pagina.
 
-   ![chlimage_1-136](assets/chlimage_1-136.png)
+   ![ chlimage_1-136 ](assets/chlimage_1-136.png)
 
 ## Installeren, configureren en AEM gebruiken in een portlet {#installing-configuring-and-using-aem-in-a-portlet}
 
@@ -736,7 +736,7 @@ Standaard maakt de portlet verbinding met de publicatieinstantie op localhost:45
 
 1. Navigeer met Webdav of CRXDE Lite naar /libs/portal/director.
 
-1. Downloaden *cq-portlet-webapp.war*.
+1. Download *cq-portlet-webapp.war*.
 
 >[!NOTE]
 >
@@ -750,7 +750,7 @@ De portlet installeren:
 1. Navigeer naar het gedeelte Portlet Management van uw webportal.
 1. Klik op Installeren en blader naar de AEM portlet-toepassing (cq-portlet-webapp.war) die u hebt gedownload en voer andere belangrijke informatie over de portlet in.
 
-   Voor andere essentiële portletinformatie, kunt u of de gebreken goedkeuren of de waarden veranderen. Als u de standaardwaarden accepteert, is portlet beschikbaar op https://&lt;wps-host>:&lt;port>/wps/PA_CQ5_Portlet. De OSGi-beheerconsole die door de portlet wordt geleverd, is beschikbaar op https://&lt;wps-host>:&lt;port>/wps/ PA_CQ5_Portlet/cqbridge/system/console (standaardgebruikersnaam/standaardwachtwoord is admin/admin).
+   Voor andere essentiële portletinformatie, kunt u of de gebreken goedkeuren of de waarden veranderen. Als u de standaardwaarden accepteert, is portlet beschikbaar op https://&lt;wps-host>:&lt;port>/wps/PA_CQ5_Portlet. De OSGi-beheerconsole die door de portlet wordt geleverd, is beschikbaar op https://&lt;wps-host>:&lt;port>/wps/ PA_CQ5_Portlet/cqbridge/system/console (de standaardgebruikersnaam/het standaardwachtwoord is admin/admin).
 
 1. Zorg ervoor dat de portlettoepassing automatisch begint door die optie of controledoos te selecteren en uw veranderingen te bewaren. Er verschijnt een bericht dat de installatie is gelukt.
 
@@ -761,43 +761,44 @@ Nadat u portlet installeert, moet u het vormen zodat het URLs van de onderliggen
 Om portlet te vormen:
 
 1. Navigeer in het beheervenster Portal van de toepassingsserver naar portletbeheer, waar alle portlets worden vermeld en selecteer de portlet van AEM Portal Director.
-1. Vorm portlet, zonodig. U moet bijvoorbeeld mogelijk de URL voor de auteur wijzigen en instanties publiceren en de URL voor het beginpad. Standaardconfiguraties worden beschreven in [Voorkeuren Portlet](/help/sites-administering/aem-as-portal.md#portlet-preferences).
+1. Vorm portlet, zonodig. U moet bijvoorbeeld mogelijk de URL voor de auteur wijzigen en instanties publiceren en de URL voor het beginpad. De standaardconfiguraties worden beschreven in [ Voorkeur Portlet ](/help/sites-administering/aem-as-portal.md#portlet-preferences).
 
    >[!NOTE]
    >
-   >Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend van lopen **/**, moet u de kracht inschakelen **CQUrlInfo** in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.
+   >Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend van **lopen/**, moet u de kracht **CQUrlInfo** in de configuratie van de Manager van de Bibliotheek van HTML van deze AEM instanties (bijvoorbeeld, via de console van het Web van Felix) toelaten of het uitgeven zal niet werken en de voorkeurendialoog zal niet verschijnen.
 
 1. Sla de configuratiewijzigingen op in de toepassingsserver.
 
-1. Navigeer naar de OSGI-beheerconsole voor de portlet. De standaardlocatie is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. De standaardgebruikersnaam/het standaardwachtwoord is **beheerder/beheerder**.
+1. Navigeer naar de OSGI-beheerconsole voor de portlet. De standaardlocatie is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr` . De standaardgebruikersbenaming/het wachtwoord is **admin/admin**.
 
-1. Selecteer de **Dagportaal Director CQ-serverconfiguratie** de volgende waarden configureren en bewerken:
+1. Selecteer de **configuratie van de Configuratie van de Server van Director CQ van 0} Dag Portal en geef de volgende waarden uit:**
 
-   * **Basis-URL van auteur**: De basis-URL voor de AEM-auteurinstantie.
-   * **Basis-URL publiceren**: De basis-URL voor de AEM-publicatie-instantie.
-   * **Auteur wordt gebruikt als Publish**: Wordt de instantie van de auteur gebruikt als een instantie publish (voor ontwikkeling)?
+   * **Basis URL van de Auteur**: De basis URL voor de AEM auteursinstantie.
+   * **Basis URL van Publish**: De basis URL voor AEM publiceer instantie.
+   * **de Auteur wordt gebruikt als Publish**: Is de auteursinstantie die als publiceert wordt gebruikt
+bijvoorbeeld (voor ontwikkeling)?
 
-   ![chlimage_1-137](assets/chlimage_1-137.png)
+   ![ chlimage_1-137 ](assets/chlimage_1-137.png)
 
-1. Klikken **Opslaan**. U kunt nu portlet aan portlet aan portlet pagina&#39;s toevoegen en het portaal gebruiken.
+1. Klik **sparen**. U kunt nu portlet aan portlet aan portlet pagina&#39;s toevoegen en het portaal gebruiken.
 
 ### Inhoud-URL&#39;s {#content-urls}
 
-Wanneer inhoud van AEM wordt gevraagd, gebruikt portlet de huidige vertoningswijze (publiceren of auteur) en de huidige weg om een volledige URL samen te stellen. Met de standaardwaarden is de eerste URL `https://localhost:4503/content/geometrixx/en.portlet.html`. De waarde van `htmlSelector` wordt automatisch toegevoegd aan de URL vóór de extensie.
+Wanneer inhoud van AEM wordt gevraagd, gebruikt portlet de huidige vertoningswijze (publiceren of auteur) en de huidige weg om een volledige URL samen te stellen. Bij de standaardwaarden is de eerste url `https://localhost:4503/content/geometrixx/en.portlet.html` . De waarde van `htmlSelector` wordt automatisch toegevoegd aan de URL vóór de extensie.
 
-Als portlet op de hulpwijze en `appendHelpViewModeAsSelector` wordt geselecteerd, dan `help` ook de kiezer wordt toegevoegd, bijvoorbeeld `https://localhost:4503/content/geometrixx/en.portlet.html.help`. Als het portletvenster wordt gemaximaliseerd en `appendMaxWindowStateAsSelector` is geselecteerd, wordt de kiezer ook toegevoegd, bijvoorbeeld `https://localhost:4503/content/geometrixx/en.portlet.max.help`.
+Als de portlet overschakelt naar de Help-modus en `appendHelpViewModeAsSelector` is geselecteerd, wordt de `help` kiezer ook toegevoegd, bijvoorbeeld `https://localhost:4503/content/geometrixx/en.portlet.html.help` . Als het portletvenster wordt gemaximaliseerd en `appendMaxWindowStateAsSelector` wordt geselecteerd, dan wordt de selecteur ook toegevoegd, bijvoorbeeld, `https://localhost:4503/content/geometrixx/en.portlet.max.help`.
 
 De kiezers kunnen in AEM worden geëvalueerd en een andere sjabloon kan voor verschillende kiezers worden gebruikt.
 
 ### Een URL-toewijzing voor inhoud in AEM gebruiken {#using-a-content-url-map-in-aem}
 
-Doorgaans wijst het beginpad rechtstreeks naar de inhoud in AEM. Als u beginpaden echter in AEM wilt behouden in plaats van in de portletvoorkeuren, kunt u het beginpad naar een inhoudskaart in AEM plaatsen, zoals `/var/portlets`. In dit geval, kan een manuscript dat in AEM loopt de voorgelegde informatie van portlet gebruiken om te beslissen welke url de begin URL is. Het zou een omleiding aan correcte URL moeten uitgeven.
+Doorgaans wijst het beginpad rechtstreeks naar de inhoud in AEM. Als u beginpaden echter in AEM wilt behouden in plaats van in de portletvoorkeuren, kunt u het beginpad naar een inhoudskaart in AEM plaatsen, bijvoorbeeld `/var/portlets` . In dit geval, kan een manuscript dat in AEM loopt de voorgelegde informatie van portlet gebruiken om te beslissen welke url de begin URL is. Het zou een omleiding aan correcte URL moeten uitgeven.
 
 #### De portlet toevoegen aan de portaalpagina {#adding-the-portlet-to-the-portal-page}
 
 De portlet toevoegen aan de portlet-pagina:
 
-1. Zorg ervoor dat u zich in het beheervenster van uw toepassingsserver bevindt en navigeer naar de locatie waar u pagina&#39;s beheert. (in WebSphere 6.1 klikt u bijvoorbeeld op **Pagina&#39;s beheren**).
+1. Zorg ervoor dat u zich in het beheervenster van uw toepassingsserver bevindt en navigeer naar de locatie waar u pagina&#39;s beheert. (bijvoorbeeld, in WebSphere 6.1, klik **leidt Pagina&#39;s**).
 1. Selecteer de naam van de portlet en selecteer dan een bestaande pagina of creeer een pagina.
 1. Bewerk de pagina-indeling.
 1. Selecteer portlet en voeg het aan een container toe.

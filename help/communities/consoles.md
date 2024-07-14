@@ -21,24 +21,24 @@ ht-degree: 0%
 De consoles van AEM Communities, die beschikbaar zijn in de auteuromgeving van het globale navigatievenster, verlenen toegang tot administratieve taken zoals:
 
 * [Een community-site maken](sites-console.md)
-* Toevoegen [groepen](groups.md) genest binnen de site
-* Beheer [communitysjablonen](sites.md)
-* Beheer [communautaire leden](members.md)
-* [Moderniseren](moderate-ugc.md) door gebruiker gegenereerde inhoud (UGC)
-* Maken [aangepaste badges](badges.md)
-* Het vormen van [standaardopslag voor UGC](srp-config.md)
+* Toevoegend [ groepen ](groups.md) die binnen de plaats worden genest
+* Het beheren van [ malplaatjes van de communautaire plaats ](sites.md)
+* Het leiden [ communautaire leden ](members.md)
+* [ het Moderteren ](moderate-ugc.md) gebruiker-geproduceerde inhoud (UGC)
+* Creeer [ douanebadges ](badges.md)
+* Het vormen van de [ standaardopslag voor UGC ](srp-config.md)
 
-Wanneer [UGC-opslag](working-with-srp.md) is geconfigureerd als een algemene opslag die wordt gedeeld door auteur- en publicatie-omgevingen, [moderatieconsole](moderation.md), beschikbaar in zowel auteur- als publicatieomgevingen, wordt uitgevoerd op één exemplaar van UGC.
+Wanneer [ de opslag UGC ](working-with-srp.md) wordt gevormd om een gemeenschappelijke opslag te zijn die door de milieu&#39;s van de Auteur en van Publish wordt gedeeld, de [ moderatieconsole ](moderation.md), beschikbaar bij zowel de milieu&#39;s van de Auteur als van Publish, werkt op een solitaire instantie van UGC.
 
-In de auteursomgeving, na het aanmelden met beheerdersrechten, `Communities` consoles zijn beschikbaar in de consoles voor navigatie en gereedschappen.
+In de auteursomgeving, na het aanmelden met beheerdersrechten, zijn de `Communities` consoles beschikbaar bij de navigatie en hulpmiddelconsoles.
 
 >[!NOTE]
 >
->In de publicatieomgeving kunt u een [community-site](sites-console.md) toont een `Administration` menu-item wanneer het lid dat is aangemeld de juiste rechten heeft.
+>In het milieu van Publish, toont de a [ communautaire plaats ](sites-console.md) een `Administration` menupunt wanneer het ondertekende binnen lid aangewezen voorrechten heeft.
 
 ## Globaal navigatievenster {#global-navigation-panel}
 
-Selecteer de `Adobe Experience Manager` in de linkerbovenhoek, zodat u het algemene navigatievenster kunt openen en toegang hebt tot twee pictogrammen:
+Selecteer het pictogram `Adobe Experience Manager` in de linkerbovenhoek, zodat u het algemene navigatievenster kunt openen en twee pictogrammen kunt gebruiken:
 
 * [Navigatieconsole](#navigation-console)
 * [Gereedschapsconsole](tools.md)
@@ -47,24 +47,24 @@ Selecteer de `Adobe Experience Manager` in de linkerbovenhoek, zodat u het algem
 
 Om tot de diverse consoles van Gemeenschappen toegang te hebben, van globale navigatie selecteer **navigatie, Gemeenschappen**.
 
-![gemeenschappen](assets/communities.png)
+![ gemeenschappen ](assets/communities.png)
 
 * [Sites](sites-console.md)
 
-  De console van Plaatsen is toegankelijk in het milieu van de Auteur voor het creëren en het beheren van communautaire plaatsen en zijn [groepen](groups.md).
+  De console van Plaatsen is toegankelijk in het milieu van de Auteur voor het creëren van en het leiden van communautaire plaatsen en zijn [ groepen ](groups.md).
 
 * [Moderatie](moderation.md)
 
-  De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het Publish milieu aan communautaire leden toegewezen de rol van [gemeenschapsmoderator](users.md#publishenvironmentusersandgroups) voor een of meer gemeenschapssites.
+  De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het milieu van Publish aan communautaire leden toegewezen de rol van [ communautaire moderator ](users.md#publishenvironmentusersandgroups) voor één of meerdere communautaire plaatsen.
 
 * [Leden, groepen](members.md)
 
-  De leden en de Groepen consoles zijn voor het beheren van communautaire leden en lidgroepen die in het Publish milieu van het auteursmilieu bestaan.
+  De leden en de Groepen consoles zijn voor het beheren van leden van de gemeenschap en lidgroepen die in de milieu van Publish van het auteursmilieu bestaan.
 
 * [Rapporten](reports.md)
 
-  De console van Rapporten is waar de rapporten over taken, paginameningen, en geposte inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats heeft [Adobe Analytics ingeschakeld](sites-console.md#analytics). De console is alleen beschikbaar in de Auteur-omgeving.
+  De console van Rapporten is waar de rapporten over taken, paginameningen, en gepost inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats Adobe Analytics [ ](sites-console.md#analytics) heeft toegelaten. De console is alleen beschikbaar in de Auteur-omgeving.
 
 ## Tools Console {#tools-console}
 
-Toegang tot [Communities Tools](tools.md) (voorheen de beheerconsole), van globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
+Om tot [ de Hulpmiddelen van Gemeenschappen ](tools.md) (vroeger de beleidsconsole), van globale navigatie toegang te hebben: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

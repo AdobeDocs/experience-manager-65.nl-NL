@@ -24,32 +24,32 @@ In de context van het beheer van inhoud zonder kop in AEM, denk aan een configur
 
 >[!NOTE]
 >
->Als u vertrouwd bent met [paginasjablonen in een volledige AEM-implementatie,](/help/sites-authoring/templates.md) het gebruik van configuraties voor het beheer van inhoudsmodellen is vergelijkbaar.
+>Als u met [ paginasjablonen in een volledig-stapel AEM implementatie vertrouwd bent, ](/help/sites-authoring/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
 
 ## Hoe te om een Configuratie te creëren {#how-to-create-a-configuration}
 
 Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, of zeer seldomly wanneer een nieuwe werkruimte voor het organiseren van uw Modellen van de Inhoud wordt vereist. Voor deze gids aan de slag, moeten wij slechts één configuratie tot stand brengen.
 
-1. Meld u aan bij AEM en selecteer in het hoofdmenu **Gereedschappen > Algemeen > Configuratiebrowser**.
-1. Geef een **Titel** voor uw configuratie.
-   * Er wordt automatisch een naam gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
+1. Logboek in AEM en van het belangrijkste menu selecteert **Hulpmiddelen > Algemeen > Browser van de Configuratie**.
+1. Verstrek a **Titel** voor uw configuratie.
+   * Er wordt automatisch een naam gegenereerd op basis van de titel en deze wordt aangepast volgens de naamgevingsconventies van [AEM .](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
-   * **Blijvende GraphQL-query&#39;s**
+   * **de Blijvende Vragen van GraphQL**
 
-   ![Configuratie maken](assets/create-configuration.png)
+   ![ creeer Configuratie ](assets/create-configuration.png)
 
-1. Klikken **Maken**
+1. Klik **creëren**
 
 U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worden genest.
 
 >[!NOTE]
 >
->Configuratieopties naast **Modellen van inhoudsfragmenten** en **Blijvende GraphQL-query&#39;s** kan nodig zijn, afhankelijk van uw implementatievereisten.
+>De opties van de configuratie naast **Modellen van het Fragment van de Inhoud** en **de Blijvende Vragen van GraphQL** kunnen afhankelijk van uw implementatievereisten noodzakelijk zijn.
 
 ## Volgende stappen {#next-steps}
 
-Met deze configuratie kunt u nu naar het tweede deel van de gids Aan de slag gaan en [Maak Content Fragment Models.](create-content-model.md)
+Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [ creeer de Modellen van het Fragment van de Inhoud.](create-content-model.md)
 
 <!--
 >[!TIP]

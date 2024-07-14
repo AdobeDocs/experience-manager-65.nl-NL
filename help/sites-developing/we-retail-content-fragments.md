@@ -18,68 +18,68 @@ ht-degree: 0%
 
 # Inhoudsfragmenten in We.Retail uitproberen{#trying-out-content-fragments-in-we-retail}
 
-Met Inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. **Wij.Detailhandel** (zoals beschikbaar in een out-of-the-box-instantie van Adobe Experience Manager) biedt het fragment **Arctic Surfing in Lofoten** als basissteekproef. Hieruit blijkt dat:
+Met Inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. **Wij.Retail** (zoals beschikbaar in een uit-van-de-doosgeval van Adobe Experience Manager) verstrekt het fragment **Arctic Surfing in Vloeiend** als basissteekproef. Hieruit blijkt dat:
 
-* Adobe Experience Manager (AEM)-inhoudsfragmenten zijn [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties.
+* Adobe Experience Manager (AEM) inhoudsfragmenten worden [ gecreeerd en geleid als pagina-onafhankelijke activa ](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties.
 
-   * Zie [Waar kunt u de elementen van inhoudsfragmenten vinden in We.Retail](#where-to-find-content-fragments-in-we-retail)
+   * Zie [ waar te om de activa van het Fragment van de Inhoud in Wij.Retail te vinden ](#where-to-find-content-fragments-in-we-retail)
 
-* U kunt vervolgens [gebruiken deze fragmenten en de variaties ervan tijdens het ontwerpen](/help/sites-authoring/content-fragments.md) uw inhoudspagina&#39;s.
+* U kunt [ deze fragmenten, en hun variaties dan gebruiken, wanneer het ontwerpen van ](/help/sites-authoring/content-fragments.md) uw inhoudspagina&#39;s.
 
-   * Zie [Waar de Fragmenten van de Inhoud in Wij.Retail worden gebruikt](#where-content-fragments-are-used-in-we-retail)
+   * Zie [ waar de Fragmenten van de Inhoud in Wij.Retail ](#where-content-fragments-are-used-in-we-retail) worden gebruikt
 
 Voor de volledige documentatie over het maken, beheren, gebruiken en ontwikkelen van inhoudsfragmenten:
 
-* Zie [Aanvullende informatie](#further-information)
+* Zie [ Verdere Informatie ](#further-information)
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** Er zijn verschillende functies binnen AEM:
+>**de Fragmenten van de Inhoud** en **[Fragmenten van de Ervaring](/help/sites-authoring/experience-fragments.md)** zijn verschillende eigenschappen binnen AEM:
 >
->* **Inhoudsfragmenten** Dit zijn redactionele inhoud, voornamelijk tekst, en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
->* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
+>* **de Fragmenten van de Inhoud** zijn redactionele inhoud, hoofdzakelijk tekst, en verwante beelden. Het zijn pure inhoud, zonder ontwerp en lay-out.
+>* **de Fragmenten van de Ervaring** zijn volledig opgemaakt inhoud; een fragment van een Web-pagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 
 ## Waar kan ik inhoudsfragmenten vinden in We.Retail {#where-to-find-content-fragments-in-we-retail}
 
-Er zijn verscheidene fragmenten van de steekproefinhoud in Wij.Retail; navigeer via **Activa**, **Bestanden**, **Wij.Detailhandel**, **Engels**, **Ervaringen**.
+Er zijn verscheidene fragmenten van de steekproefinhoud in Wij.Retail; navigeer via **Assets**, **Dossiers**, **Wij.Retail**, **Engels**, **Ervaringen**.
 
-Hieronder vallen **Arctic Surfing in Lofoten**, een fragment samen met gerelateerde visuele elementen:
+Deze omvatten **het Surfen van het Noordpoolgebied in Vloeiend**, een fragment samen met verwante visuele activa:
 
-* Navigeren door **Activa**, **Bestanden**, **Wij.Detailhandel**, **Engels**, **Ervaringen**, **Arctic Surfing in Lofoten**:
+* Navigeer als **Assets**, **Dossiers**, **Wij.Retail**, **Engels**, **Ervaringen**, **het Opdrijven van het Noordpoolgebied in Vloeiend**:
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
+   * [ http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
-![cf-44](assets/cf-44.png)
+![ cf-44 ](assets/cf-44.png)
 
-U kunt de **Arctic Surfing in Lofoten** fragment:
+U kunt **Arctic Surfing in** fragment selecteren en uitgeven Lofoten:
 
-* [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
+* [ http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Hier kunt u [bewerken en beheren](/help/assets/content-fragments/content-fragments.md) het fragment met de tabbladen (linkerdeelvenster):
+Hier kunt u ](/help/assets/content-fragments/content-fragments.md) uw fragment uitgeven en beheren [ gebruikend de lusjes (linkerzijpaneel):
 
 <!--![cf-45-aa](do-not-localize/cf-45-aa.png) ![cf-45-a](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)** inclusief [Markering](/help/assets/content-fragments/content-fragments-markdown.md)
-* **[Gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)** met inbegrip van [ Markting ](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Verwante Inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md)**
 * **[Metagegevens](/help/assets/content-fragments/content-fragments-metadata.md)**
 
-![cf-46](assets/cf-46.png)
+![ cf-46 ](assets/cf-46.png)
 
 ## Waar de Fragmenten van de Inhoud in Wij.Retail worden gebruikt {#where-content-fragments-are-used-in-we-retail}
 
-Ter illustratie [pagina&#39;s ontwerpen met een inhoudsfragment](/help/sites-authoring/content-fragments.md) er zijn verschillende voorbeeldpagina &#39; s onder andere :
+Om [ pagina te illustreren creerend met een inhoudsfragment ](/help/sites-authoring/content-fragments.md) zijn er verscheidene voorbeeldpagina&#39;s onder, bijvoorbeeld:
 
-* [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
+* [ http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
-Bijvoorbeeld de **Arctic Surfing in Lofoten** naar het inhoudsfragment wordt verwezen in de pagina Sites:
+Bijvoorbeeld, wordt het **Arctic Surfing in Vloeiend** inhoudsfragment van het Noordpoolgebied van verwijzingen voorzien in de pagina van Plaatsen:
 
-* Navigeren via **Sites**, **Wij.Detailhandel**, **Taalmeesters**, **Engels**, **Ervaring**. Vervolgens openen **Arctic Surfing in Lofoten** voor bewerking:
+* Navigeer via **Plaatsen**, **wij.Retail**, **de Meesters van de Taal**, **Engels**, **Ervaring**. Dan open **Arctic Surfing in Vloeiend** voor het uitgeven:
 
-   * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
+   * [ http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
-![cf-53](assets/cf-53.png)
+![ cf-53 ](assets/cf-53.png)
 
 ## Aanvullende informatie {#further-information}
 

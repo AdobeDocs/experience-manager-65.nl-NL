@@ -24,7 +24,7 @@ AEM kan ook worden gebruikt om inhoud eenvoudig te beheren, zodat de presentatie
 
 Maar dit hoeft geen binaire keuze te zijn. AEM biedt ongekende flexibiliteit, die u toestaat om de voordelen van beide modellen voor uw project te exploiteren.
 
-![Implementatiemodellen AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
+![ AEM de Modellen van de Implementatie ](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaarplaats en AEM componenten die op Java, HTML worden gebaseerd, etc., worden gebruikt om de inhoud voor de gebruikerservaring terug te geven. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en het leveren ervan allemaal in AEM.
 
@@ -36,39 +36,39 @@ Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonde
 
 Laten we zeggen dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
 
-* **De systemen onafhankelijk laten werken.**
-* **Bied de webshop met beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.
-* **Sluit de SPA van de webshop in AEM in.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de webshop worden weergegeven, maar niet worden gemanipuleerd.
-* **Sluit de SPA van de webshop in AEM in en schakel bewerkbare punten in.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
-* **Sluit de webwinkel in AEM in en schakel volledige zones in voor bewerking.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
+* **sta de systemen toe om onafhankelijk te werken.**
+* **leverde de Webshop met beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.
+* **bedt de Webshop SPA in AEM.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven, maar kan niet worden gemanipuleerd.
+* **bedt de Webshop SPA in AEM, en laat editable punten toe.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
+* **bedt Webs in SPA in AEM, en laat volledige streken voor het uitgeven toe.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
 
 In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 >[!NOTE]
 >
->Natuurlijk kunt u de SPA van de webshop ook opnieuw implementeren als een volledig functionerende AEM SPA [het AEM SPA Editor-framework gebruiken.](/help/sites-developing/spa-walkthrough.md) Als u al een webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar is deze buiten het bereik van dit document.
+>Natuurlijk kon u de SPA van de Webshop als volledig-functionerende AEM ook re-uitvoeren SPA [ gebruikend het kader van de SPA van de Redacteur AEM.](/help/sites-developing/spa-walkthrough.md) Als u al een webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar is deze buiten het bereik van dit document.
 
 ## SPA integratieniveaus {#integration-levels}
 
 SPA integratie ligt op een spectrum van vier niveaus in AEM.
 
-* **Niveau 0: geen integratie**
+* **Niveau 0: Geen integratie**
    * De SPA en AEM bestaan afzonderlijk en wisselen geen informatie uit.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
-* **Niveau 1: integratie van inhoudsfragmenten**
-   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+* **Niveau 1: De integratie van het fragmentintegratie van de inhoud**
+   * [ de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA tot stand te brengen en te beheren.
+   * De SPA wint deze inhoud via AEM [ GraphQL API terug.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan alleen in de SPA worden weergegeven.
-* **Niveau 2: sluit de SPA in AEM in**
-   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+* **Niveau 2: Sluit de SPA in AEM** in
+   * [ de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA tot stand te brengen en te beheren.
+   * De SPA wint deze inhoud via AEM [ GraphQL API terug.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan binnen AEM in context worden weergegeven.
    * Beperkte inhoud kan binnen AEM worden bewerkt.
-* **Niveau 3: SPA insluiten en volledig inschakelen in AEM**
-   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+* **Niveau 3: Sluit en laat volledig SPA in AEM** in
+   * [ de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA tot stand te brengen en te beheren.
+   * De SPA wint deze inhoud via AEM [ GraphQL API terug.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Inhoud kan binnen AEM in context worden weergegeven.
    * De meeste inhoud kan worden bewerkt in AEM.
 
@@ -80,9 +80,9 @@ Het voordeel en de flexibiliteit van AEM worden duidelijk met niveaus 2 en 3, te
 
 Er zijn verschillende gereedschappen in AEM beschikbaar, afhankelijk van het integratieniveau dat u kiest. Elk niveau bouwt op de hulpmiddelen voort die in het vorige worden gebruikt. De volgende lijst verwijst naar de relevante bronnen.
 
-* **Niveau 1:** Inhoudsfragmenten en de [AEM kader zonder kop](/help/sites-developing/headless/introduction.md) kan worden gebruikt om AEM inhoud aan de SPA te leveren.
-* **Niveau 2:** Naast niveau 1:
-   * [De component RemotePage](/help/sites-developing/spa-remote-page.md) kan worden gebruikt om de externe SPA in te sluiten in AEM waar AEM inhoud in context kan worden bekeken.
-   * Bepaalde punten op de SPA kunnen ook worden ingeschakeld op [beperkte bewerking in AEM toestaan.](/help/sites-developing/spa-edit-external.md)
-* **Niveau 3:** Naast niveau 2:
+* **Niveau 1:** de Fragmenten van de Inhoud en [ AEM headless kader ](/help/sites-developing/headless/introduction.md) kunnen worden gebruikt om AEM inhoud aan de SPA te leveren.
+* **Niveau 2:** naast niveau één:
+   * [ de component RemotePage ](/help/sites-developing/spa-remote-page.md) kan worden gebruikt om de externe SPA in AEM in te bedden waar de AEM inhoud in-context kan worden bekeken.
+   * Bepaalde punten op de SPA kunnen ook worden toegelaten [ beperkt het uitgeven in AEM toestaan.](/help/sites-developing/spa-edit-external.md)
+* **Niveau 3:** naast niveau twee:
    * Volledige zones van de SPA kunnen worden ingeschakeld om uitgebreide bewerkingen in AEM toe te staan.

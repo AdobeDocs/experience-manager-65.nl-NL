@@ -20,24 +20,24 @@ ht-degree: 0%
 
 ## Solr voor AEM Platform {#solr-for-aem-platform}
 
-An [Apache Solr](https://solr.apache.org/) de installatie kan worden gedeeld tussen de [knooppuntopslag](../../help/sites-deploying/data-store-config.md) (eikenhout) en [gemeenschappelijk archief](working-with-srp.md) (SRP) door verschillende verzamelingen te gebruiken.
+Een [ installatie van Apache Solr ](https://solr.apache.org/) kan tussen de [ knoopopslag ](../../help/sites-deploying/data-store-config.md) (Oak) en [ gemeenschappelijke opslag ](working-with-srp.md) (SRP) worden gedeeld door verschillende inzamelingen te gebruiken.
 
 Als zowel de Oak als SRP inzamelingen intensief worden gebruikt, kan tweede Solr om prestatiesredenen worden geïnstalleerd.
 
-Voor productieomgevingen [SolrCloud-modus](#solrcloud-mode) biedt betere prestaties in vergelijking met de zelfstandige modus (één lokale Solr-instelling).
+Voor productiemilieu&#39;s, ](#solrcloud-mode) de wijze van SolrCloud [ verstrekt betere prestaties over standalone wijze (enige, lokale opstelling Solr).
 
 ### Vereisten {#requirements}
 
 Download en installeer Apache Solr:
 
-* [Versie 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
+* [ Versie 7.0 ](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
 * Solr vereist Java™ 1.7 of hoger
 * Er is geen service nodig
 * Keuze van uitvoeringsmodi:
 
    * Stand-alone modus
-   * [SolrCloud-modus](#solrcloud-mode) (aanbevolen voor productieomgevingen)
+   * [ wijze SolrCloud ](#solrcloud-mode) (geadviseerd voor productiemilieu&#39;s)
 
 * Keuze van meertalig zoeken (MLS)
 
@@ -46,7 +46,7 @@ Download en installeer Apache Solr:
 
 ## SolrCloud-modus {#solrcloud-mode}
 
-[SolrCloud](https://solr.apache.org/guide/6_6/solrcloud.html) wordt aanbevolen voor productieomgevingen. Wanneer de SolrCloud-modus actief is, moet SolrCloud worden geïnstalleerd en geconfigureerd voordat u MLS (Multilingual Search) kunt installeren.
+](https://solr.apache.org/guide/6_6/solrcloud.html) de wijze van 0} SolrCloud {wordt geadviseerd voor productiemilieu&#39;s. [ Wanneer de SolrCloud-modus actief is, moet SolrCloud worden geïnstalleerd en geconfigureerd voordat u MLS (Multilingual Search) kunt installeren.
 
 U wordt aangeraden de installatie-instructies voor SolrCloud op te volgen:
 
@@ -68,39 +68,42 @@ Wanneer de installatie van MLS wordt uitgevoerd in de SolrCloud-modus, zijn het 
 #### 1. Upload een configuratie aan ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referentie:
-[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[ https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
-Gebruik: sh./scripts/cloud-scripts/zkcli.sh \
+Gebruik:
+sh./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
--zkhost *server:poort* \
+-zkhost *server:haven* \
 -confname *myconfig-name *\
--solrhome *solr-home-pad* \
+-solrhome *solr-huis-weg* \
 -confdir *config-dir*
 
 #### 2. Een verzameling maken {#create-a-collection}
 
 Referentie:
-[https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
+[ https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
-Gebruik: ./bin/solr create \
--c *mycollection-name*\
+Gebruik:
+./bin/solr create \
+- c *mijnverzameling-naam*\
 -d *config-dir* \
 -n *myconfig-name* \
--p *poort*\
--s *aantal schepen* \
--rf *aantal replica&#39;s*
+- p *haven*\
+- s *aantal-van-schepen* \
+-rf *aantal-van-replica&#39;s*
 
 #### 3. Koppel een verzameling aan een configuratieset {#link-a-collection-to-a-configuration-set}
 
 Koppel een verzameling aan een configuratie die al is geüpload naar ZooKeeper.
 
 Referentie:
-[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[ https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
-Gebruik: sh./scripts/cloud-scripts/zkcli.sh \
+Gebruik:
+sh./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
--zkhost *server:poort* \
--collection *mycollection-name* \
+-zkhost *server:haven* \
+- inzameling *mijnverzameling-naam* \
 -confname *myconfig-name*
 
 ### Vergelijking van standaard en geavanceerde MLS {#comparison-of-standard-and-advanced-mls}
@@ -139,9 +142,9 @@ In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 
 #### Vergelijking van AEM 6.1 Solr onderzoek, Standaard MLS, en Geavanceerde MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Opmerking**: AEM 6.1 verwijst naar AEM 6.1 KP3 en eerder.
+**Nota**: AEM 6.1 verwijst naar AEM 6.1 Gemeenschappen FP3 en vroeger.
 
-![compare-solr-mls](assets/compare-solr-mls.png)
+![ vergelijking-solr-mls ](assets/compare-solr-mls.png)
 
 ### Standaard MLS installeren {#installing-standard-mls}
 
@@ -156,9 +159,9 @@ Standaard MLS-bestanden (schema.xml, solrconfig.xml) voor Solr 5.x.
 
 De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 
-**Opmerking**: Terwijl de Solr dossiers in msrp/ omslag worden opgeslagen, zijn zij ook voor DSRP (geen noodzakelijke veranderingen).
+**Nota**: Terwijl de Solr- dossiers in msrp/ omslag worden opgeslagen, zijn zij ook voor DSRP (geen noodzakelijke veranderingen).
 
-**Downloadinstructies**: Vervangen `solrX` with `solr4` of `solr5` in voorkomend geval.
+**instructies van de Download**: Vervang `solrX` met `solr4` of `solr5` zoals aangewezen.
 
 1. Gebruikend CRXDE|Lite, bepaal de plaats:
 
@@ -167,8 +170,8 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 
 1. Download naar de lokale server waarop Solr wordt geïmplementeerd.
 
-   * Zoek de `jcr:content` knooppunten `jcr:data` eigenschap.
-   * Selecteer `view`.
+   * Zoek de eigenschap `jcr:data` van het knooppunt `jcr:content` .
+   * Selecteer `view` om het downloaden te starten.
    * Zorg ervoor dat de bestanden met de juiste namen en codering (UTF8) worden opgeslagen.
 
 1. Volg de installatie-instructies voor de zelfstandige modus of de SolrCloud-modus.
@@ -178,20 +181,20 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 1. Solr installeren en configureren in de SolrCloud-modus.
 1. Een nieuwe configuratie voorbereiden:
 
-   1. Nieuwe config-dir* maken, zoals `solr-install-dir*/myconfig/`
+   1. new-config-dir* maken, zoals `solr-install-dir*/myconfig/`
 
-   1. Kopieer de inhoud van de bestaande Solr configuratiemap naar *new-config-dir*
+   1. Kopieer de inhoud van de bestaande Solr configuratiemap aan *nieuw-config-dir*
 
       * Voor Solr4: kopie `solr-install-dir/example/solr/collection1/conf/`
       * Voor Solr5: kopie `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
 
-   1. Het gedownloade bestand kopiëren **schema.xml** en **solrconfig.xml** tot *new-config-dir* bestaande bestanden overschrijven.
+   1. Kopieer gedownloade **schema.xml** en **solrconfig.xml** aan *nieuw-config-dir* om bestaande dossiers te beschrijven.
 
-1. [De nieuwe configuratie uploaden](#upload-a-configuration-to-zookeeper) naar ZooKeeper.
-1. [Een verzameling maken](#create-a-collection) het specificeren van de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
-1. Als de configuratienaam *not *provided tijdens verwezenlijking van de inzameling was, [deze nieuwe verzameling koppelen](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
+1. [ upload de nieuwe configuratie ](#upload-a-configuration-to-zookeeper) aan ZooKeeper.
+1. [ creeer een inzameling ](#create-a-collection) specificerend de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
+1. Als de configuratienaam *not *provided tijdens verwezenlijking van de inzameling was, [ verbind deze pas gecreëerde inzameling ](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
 
-1. Voor MSRP, looppas [MSRP opnieuw indexeren](msrp.md#msrp-reindex-tool), tenzij deze installatie nieuw is.
+1. Voor MSRP, looppas [ het Hulpmiddel van de Reindex MSRP ](msrp.md#msrp-reindex-tool), tenzij deze installatie nieuw is.
 
 #### Standalone modus - Standaard MLS {#standalone-mode-standard-mls}
 
@@ -201,21 +204,21 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
    * `./bin/solr start`
    * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
-1. Back-up **schema.xml** en **solrconfig.xml** in de Solr config-map, zoals:
+1. Back-up **schema.xml** en **solrconfig.xml** in Solr config dir, zoals:
 
    * Voor Solr4: `solr-install-dir/example/solr/collection1/conf/`
    * Gemaakt voor Solr5: `solr-install-dir/server/solr/collection1/conf/`
 
-1. Het gedownloade bestand kopiëren **schema.xml** en **solrconfig.xml** naar dezelfde map.
+1. Kopieer gedownloade **schema.xml** en **solrconfig.xml** aan die zelfde folder.
 
 1. Start Solr opnieuw.
-1. Voor MSRP, looppas [MSRP opnieuw indexeren](#msrpreindextool), tenzij deze installatie nieuw is.
+1. Voor MSRP, looppas [ het Hulpmiddel van de Reindex MSRP ](#msrpreindextool), tenzij deze installatie nieuw is.
 
 ### Geavanceerde MLS installeren {#installing-advanced-mls}
 
 Voor de inzameling SRP (MSRP of DSRP) om geavanceerde MLS te steunen, worden nieuwe stop-ins Solr vereist naast een douaneschema en de configuratie Solr. Alle vereiste items worden verpakt in een ZIP-bestand dat kan worden gedownload. Bovendien is een installatiescript inbegrepen voor gebruik wanneer Solr op standalone wijze wordt opgesteld.
 
-Ga voor het geavanceerde MLS-pakket naar [Geavanceerde MLS AEM](deploy-communities.md#aem-advanced-mls) in de op te stellen sectie van de documentatie.
+Om het Geavanceerde pakket te verkrijgen MLS, zie [ AEM Geavanceerde MLS ](deploy-communities.md#aem-advanced-mls) in opstellen sectie van de documentatie.
 
 Ga als volgt te werk om aan de slag te gaan met de installatie voor de zelfstandige of SolrCloud-modus:
 
@@ -231,35 +234,35 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
 
    * **schema.xml**
    * **solrconfig.xml**
-   * **stopwords/** map
-   * **profielen/** map
-   * **extra-libs/** map
+   * **stopwords/** omslag
+   * **profielen/** omslag
+   * **omslag 0} extra-libs**
 
 1. Een nieuwe configuratie voorbereiden:
 
-   1. Een *new-config-dir*
+   1. Creeer a *nieuw-config-dir*
 
-      * zoals `solr-install-dir/myconfig/`
+      * Bijvoorbeeld `solr-install-dir/myconfig/`
       * Submappen maken `stopwords/` en `lang/`
 
-   1. Kopieer de inhoud van de bestaande Solr config-map naar *new-config-dir*
+   1. Kopieer de inhoud van de bestaande Solr config dir aan *nieuw-config-dir*
 
-      * Voor Solr4: Kopie `solr-install-dir/example/solr/collection1/conf/`
-      * Voor Solr5: Kopie `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+      * Voor Solr4: Kopiëren `solr-install-dir/example/solr/collection1/conf/`
+      * Voor Solr5: Kopiëren `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
 
-   1. Het geëxtraheerde bestand kopiëren **schema.xml** en **solrconfig.xml** tot *new-config-dir* bestaande bestanden overschrijven.
-   1. Voor Solr5: Kopie `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` tot `new-config-dir/lang/`
-   1. Het geëxtraheerde bestand kopiëren **stopwords/** map naar *new-config-dir* resulterend in `new-config-dir/stopwords/*.txt`
+   1. Kopieer het gehaalde **schema.xml** en **solrconfig.xml** aan *nieuw-config-dir* om bestaande dossiers te beschrijven.
+   1. Voor Solr5: Kopiëren `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` naar `new-config-dir/lang/`
+   1. Kopieer de gehaalde **stopwords/** omslag aan *nieuw-config-dir* resulterend in `new-config-dir/stopwords/*.txt`
 
-1. [De nieuwe configuratie uploaden](#upload-a-configuration-to-zookeeper) naar ZooKeeper
-1. Nieuw kopiëren **profielen/** map ...
+1. [ uploadt de nieuwe configuratie ](#upload-a-configuration-to-zookeeper) aan ZooKeeper
+1. Kopieer de nieuwe **profielen/** omslag..
 
    * Voor Solr4: Kopiëren naar bronnen/map van elk knooppunt
    * Voor Solr5: Kopieer naar de server/resources/ map van elke Solr-installatie. Als alle knooppunten zich in dezelfde installatiemap Solr bevinden, wordt deze stap slechts één keer uitgevoerd.
 
-1. Een **lib/** in de map solr-home (bevat solr.xml) van elk knooppunt in SolrCloud. Kopieer potten van de volgende locaties naar de nieuwe lib/-map op elk knooppunt:
+1. Creeer a **lib/** omslag in de folder-huis (bevat solr.xml) van elke knoop in SolrCloud. Kopieer potten van de volgende locaties naar de nieuwe lib/-map op elk knooppunt:
 
-   * **extra-libs/** uit het geavanceerde MLS-pakket
+   * **extra-libs/** gehaald uit het geavanceerde pakket MLS
    * *solr-install-dir/contrib/extractie/lib/*.jar
    * *solr-install-dir/dist/solr-cell*.jar
    * *solr-install-dir/contrib/clustering/lib/*.jar
@@ -271,10 +274,10 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
    * *solr-install-dir/contrib/analysis-extras/lib/*.jar
    * *solr-install-dir/contrib/analysis-extras/lucene-libs/*.jar
 
-1. [Een verzameling maken](#create-a-collection) het specificeren van de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
-1. Als de configuratienaam was *niet* verstrekt tijdens het aanmaken van de collectie; [deze nieuwe verzameling koppelen](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
+1. [ creeer een inzameling ](#create-a-collection) specificerend de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
+1. Als de configuratienaam ** niet tijdens verwezenlijking van de inzameling werd verstrekt, [ verbind deze pas gecreëerde inzameling ](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
 
-1. Voor MSRP, looppas [MSRP opnieuw indexeren](#msrpreindextool), tenzij deze installatie nieuw is.
+1. Voor MSRP, looppas [ het Hulpmiddel van de Reindex MSRP ](#msrpreindextool), tenzij deze installatie nieuw is.
 
 #### Standalone modus - Geavanceerde MLS {#standalone-mode-advanced-mls}
 
@@ -288,7 +291,7 @@ Nadat de inhoud van het pakket is geëxtraheerd naar de server die als host fung
    * `./bin/solr start`
    * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
-* Voer het installatiescript uit: Installeren [-v 4|5] [-d solrhome] [-c verzamelingspad]
+* Voer het installatiescript uit: Installeer [ - v 4|5 ] [ - d solrhome ] [ - c inzamtionpath ]
 waarbij:
 
    * -d solrhome
@@ -303,7 +306,7 @@ waarbij:
 
      Opties voor de opdrachtregel Afdrukken
 
-   * -v [4|5]
+   * -v [ 4|5 ]
 
      Versie instellen voor solr
 
@@ -315,16 +318,16 @@ waarbij:
 
    * Install.sh -v 5-d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
-**Opmerking**:
+**Nota**:
 
 * Het installatiescript maakt een back-up van schema.xml en solrconfig.xml voordat nieuwe versies worden geïnstalleerd door &quot;.orig&quot; toe te voegen
 
 ### Info solrconfig.xml {#about-solrconfig-xml}
 
-De **solrconfig.xml** het dossier controleert automatisch interval en onderzoekszicht begaan en vereist het testen en het stemmen.
+Het {**dossier 0} solrconfig.xml controleert auto interval en onderzoekszicht begaan en vereist het testen en het stemmen.**
 
-`<autoCommit>`: Standaard wordt het AutoCommit-interval, dat een harde vastlegging aan stabiele opslag is, ingesteld op 15 seconden. De zoekzichtbaarheid wordt standaard ingesteld op het gebruik van de index die voorafgaat aan vastleggen.
+`<autoCommit>`: Standaard wordt het AutoCommit-interval, dat een harde vastlegging voor stabiele opslag is, ingesteld op 15 seconden. De zoekzichtbaarheid wordt standaard ingesteld op het gebruik van de index die voorafgaat aan vastleggen.
 
-Als u een zoekopdracht wilt wijzigen en een index wilt gebruiken die is bijgewerkt om wijzigingen door te voeren die het gevolg zijn van de bewerking, wijzigt u de inhoud `openSearcher` naar waar.
+Als u de zoekopdracht wilt wijzigen en een index wilt gebruiken die is bijgewerkt om wijzigingen te weerspiegelen die het gevolg zijn van de commit, wijzigt u de inhoud `openSearcher` in true.
 
-`autoSoftCommit`: Een &#39;soft&#39; commit zorgt ervoor dat de wijzigingen zichtbaar zijn (de index wordt bijgewerkt), maar zorgt er niet voor dat de wijzigingen worden gesynchroniseerd met een stabiele opslag (hard commit). Het resultaat is een verbetering van de prestaties. Standaard, `autoSoftCommit` is uitgeschakeld met de bevat `maxTime` ingesteld op -1.
+`autoSoftCommit`: Een &#39;soft&#39; commit zorgt ervoor dat de veranderingen zichtbaar zijn (de index wordt bijgewerkt), maar zorgt er niet voor dat de veranderingen worden gesynchroniseerd naar stabiele opslag (hard commit). Het resultaat is een verbetering van de prestaties. Standaard is `autoSoftCommit` uitgeschakeld met de inhoud `maxTime` ingesteld op -1.

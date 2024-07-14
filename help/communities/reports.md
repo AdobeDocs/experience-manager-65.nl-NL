@@ -25,11 +25,11 @@ Voor AEM Communities zijn er diverse rapporten die op verschillende manieren toe
 
 In het algemeen zijn de verschillende verslagen:
 
-* [Rapport Weergaven](#views-report)
+* [ Rapport van Meningen ](#views-report)
 
   Verstrekt een grafiek van meningen van inhoud door communautaire leden en plaatsbezoekers voor om het even welke communautaire plaats.
 
-* [Post Report](#posts-report)
+* [ het Rapport van Post ](#posts-report)
 
   Verstrekt een grafiek van diverse soorten posten door communautaire leden aan om het even welke communautaire plaats.
 
@@ -39,7 +39,7 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 ### Verslagen voor communautaire sites {#reports-for-community-sites}
 
-* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Reports]**
+* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Reports]**
 
 * Kies uit:
 
@@ -55,13 +55,13 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
       * een rapport genereren voor een geselecteerde Community Site, Type inhoud en Tijdsperiode.
 
-![rapporten](assets/reports1.png)
+![ rapporten ](assets/reports1.png)
 
 ## Rapport Weergaven {#views-report}
 
 Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden gegenereerd op paginaweergaven door gemeenschapsfuncties.
 
-![view-report](assets/view-report.png)
+![ mening-rapport ](assets/view-report.png)
 
 Selecteer de criteria voor het rapport:
 
@@ -82,15 +82,15 @@ Selecteer de criteria voor het rapport:
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteren **[!UICONTROL Generate]** om het rapport te maken.
+Selecteer **[!UICONTROL Generate]** om het rapport te maken.
 
-![genereren, weergaven](assets/generate-views.png)
+![ produceren-meningen ](assets/generate-views.png)
 
 ## Post Report {#posts-report}
 
 De console van Posten laat rapporten toe om op het aantal posten aan communautaire eigenschappen voor een bepaalde tijdspanne worden geproduceerd.
 
-![post-rapport](assets/posts-report.png)
+![ post-rapport ](assets/posts-report.png)
 
 Selecteer de criteria voor het rapport:
 
@@ -111,9 +111,9 @@ Selecteer de criteria voor het rapport:
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteren **[!UICONTROL Generate]** om het rapport te maken.
+Selecteer **[!UICONTROL Generate]** om het rapport te maken.
 
-![genereren van rapporten](assets/generate-posts-report.png)
+![ produceren-rapport ](assets/generate-posts-report.png)
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -123,6 +123,6 @@ Als er geen communitysites worden weergegeven, controleert u of Adobe Analytics 
 
 ### Rapporten worden niet weergegeven in AEM instantie Auteur {#reports-do-not-show-in-aem-author-instance}
 
-Als rapporten niet worden weergegeven in de instantie AEM Auteur, controleert u op de aanpassingen, zoals URL-toewijzing op de instantie Publiceren. Als URL-toewijzing alleen wordt uitgevoerd op de AEM Publish-instantie van de communitysite, moet u ervoor zorgen dat hetzelfde is geconfigureerd in de AEM Author-instantie in **Site Trend Report Social Component Factory** configuratie.
+Als rapporten niet worden weergegeven in de AEM Author-instantie, controleert u of er aanpassingen zijn, zoals URL-toewijzing op de Publish-instantie. Als de afbeelding URL slechts op de AEM instantie van Publish van de communautaire plaats wordt gedaan, zorg ervoor dat het zelfde in de AEM instantie van de Auteur in **de Configuratie van de Factory van de Component van de Tendens van de Plaats van de Steek Sociale van de Component** is gevormd.
 
-![URL-toewijzing op AEM auteur](assets/sitetrend.png)
+![ afbeelding URL op AEM Auteur ](assets/sitetrend.png)

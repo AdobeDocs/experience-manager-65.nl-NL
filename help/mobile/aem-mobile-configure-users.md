@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
@@ -34,7 +34,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 1. Maak een gebruikersgroep met de naam &#39;app-authors&#39;:
 
-   Navigeer naar de Admin Console Gebruiker: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Navigeer aan de Admin Console van de Gebruiker: [ http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Selecteer in de gebruikersgroepconsole de knop &#39;+&#39; om een groep te maken.
 
@@ -42,13 +42,13 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 1. Lid toevoegen aan groep: Auteurs
 
-   ![chlimage_1-167](assets/chlimage_1-167.png)
+   ![ chlimage_1-167 ](assets/chlimage_1-167.png)
 
-1. Nu u de gebruikersgroep voor toepassingsauteurs hebt gemaakt, kunt u via de [Admin Console gebruiker](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nu u de app-auteursGebruikersgroep hebt gecreeerd, kunt u individuele teamleden aan deze nieuwe groep door de [ Admin Console van de Gebruiker ](http://localhost:4502/libs/granite/security/content/useradmin.md) toevoegen.
 
-   ![chlimage_1-168](assets/chlimage_1-168.png)
+   ![ chlimage_1-168 ](assets/chlimage_1-168.png)
 
-1. U kunt het volgende toevoegen aan AEM groep Inhoud auteurs:
+1. In het volgende voorbeeld kunt u toevoegen aan AEM groep Content Authors:
 
    (Lezen) op
 
@@ -59,7 +59,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 ### AEM Mobile Application Administrators Group (groep toepassingsbeheerders) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen maken die bij de auteur van de app worden geleverd **EN** voorts zijn ook verantwoordelijk voor :
+De leden van app-admins groep kunnen toepassingsinhoud met de zelfde toestemmingen inbegrepen met app-auteurs **EN** bovendien zijn ook verantwoordelijk voor:
 
 * Toepassingsupdates voor ContentSync OTA opslaan, publiceren en wissen
 
@@ -77,13 +77,13 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
    * content-authors
    * workflowgebruikers
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![ chlimage_1-169 ](assets/chlimage_1-169.png)
 
    >[!NOTE]
    >
    >workflowgebruikers moeten op afstand bouwen met de service PhoneGap Build
 
-1. Ga naar de [Machtigingenconsole](http://localhost:4502/useradmin) en machtigingen toevoegen om cloudservices te beheren
+1. Navigeer aan de [ console van Toestemmingen ](http://localhost:4502/useradmin) en voeg toestemmingen toe om cloudservices te beheren
 
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/mobileservices
 

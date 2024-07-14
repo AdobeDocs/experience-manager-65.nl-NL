@@ -34,11 +34,11 @@ Door te bepalen welke componenten in elk parsys op de pagina kunnen worden omvat
 
 SOLID is een acroniem dat vijf architecturale principes beschrijft die zouden moeten worden nageleefd:
 
-* **S** Eén verantwoordelijkheidsbeginsel - elke module, klasse, methode, enzovoort, moet maar één verantwoordelijkheid hebben.
-* **O** open/gesloten beginsel - modules moeten open staan voor verlenging en voor wijziging worden gesloten.
-* **L** Het beginsel van de vervanging door iskov - typen moeten door hun subtypes kunnen worden vervangen.
-* **I** Beginsel van interface Segregation - geen enkele cliënt mag worden gedwongen af te hangen van methoden die hij niet gebruikt.
-* **D** Beginsel van de inversie van de afhankelijkheid - Modules op hoog niveau mogen niet afhangen van modules op laag niveau. Beide moeten afhankelijk zijn van abstracties. Abstracties mogen niet afhankelijk zijn van details. Details moeten afhankelijk zijn van abstracties.
+* **S** het Enige Beginsel van de Verantwoordelijkheid - elke module, klasse, methode, etc., zou slechts één verantwoordelijkheid moeten hebben.
+* **O** open/Gesloten Beginsel - de modules zouden open voor uitbreiding en gesloten voor wijziging moeten zijn.
+* **L** het Beginsel van de Vervanging van iskov - de types zouden vervangbaar door hun subtypes moeten zijn.
+* **het Beginsel van de Segregatie van de Interface van I** - geen cliënt zou moeten worden gedwongen om van methodes af te hangen die het niet gebruikt.
+* **D** het Beginsel van de Omkering van de Eendentie - de modules op hoog niveau zouden niet van modules op laag niveau moeten afhangen. Beide moeten afhankelijk zijn van abstracties. Abstracties mogen niet afhankelijk zijn van details. Details moeten afhankelijk zijn van abstracties.
 
 Het streven naar naleving van deze vijf beginselen moet resulteren in een systeem dat een strikte scheiding van zorgen heeft.
 
@@ -62,4 +62,4 @@ Scripts voor gegevensmigratie, maar productiecode, worden slechts eenmaal uitgev
 
 ### Gepubliceerde conventies in POM-bestanden volgen {#follow-published-maven-conventions-in-pom-files}
 
-Apache heeft stijlconventies gepubliceerd op [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). Het is het beste om deze conventies te volgen, omdat het voor nieuwe middelen gemakkelijker wordt om snel aan de slag te gaan.
+Apache heeft gepubliceerde stijlovereenkomsten in [ https://maven.apache.org/developers/conventions/code.html ](https://maven.apache.org/developers/conventions/code.html). Het is het beste om deze conventies te volgen, omdat het voor nieuwe middelen gemakkelijker wordt om snel aan de slag te gaan.

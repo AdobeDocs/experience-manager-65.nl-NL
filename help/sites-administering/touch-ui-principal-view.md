@@ -30,97 +30,97 @@ AEM 6.5 introduceert het Beheer van Toestemmingen voor Gebruikers en Groepen. De
 
 Het nieuwe op UI-Gebaseerde toestemmingenbeheer wordt betreden door de kaart van Toestemmingen onder Veiligheid zoals hieronder getoond:
 
-![Gebruikersinterface voor machtigingenbeheer](assets/screen_shot_2019-03-17at63333pm.png)
+![ UI van het Beheer van Toestemmingen ](assets/screen_shot_2019-03-17at63333pm.png)
 
 De nieuwe mening maakt het gemakkelijker om de volledige reeks voorrechten en beperkingen voor een bepaald hoofd op alle wegen te bekijken waar de Toestemmingen uitdrukkelijk zijn verleend. Hierdoor is het niet nodig om naar
 
 CRXDE om geavanceerde voorrechten en beperkingen te beheren. Het is in dezelfde visie geconsolideerd. De mening blijft aan de Groep &quot;iedereen&quot;in gebreke.
 
-![Weergave van de groep &quot;Iedereen&quot;](assets/unu-1.png)
+![ Mening van &quot;iedereen&quot;groep ](assets/unu-1.png)
 
-Er is een filter dat de gebruiker toestaat om het type principes te selecteren om te bekijken **Gebruikers**, **Groepen**, of **Alles** en zoek naar een opdrachtgever **.**
+Er is een filter dat de gebruiker toestaat om het type van hoofden te selecteren om **Gebruikers** te bekijken, **Groepen**, of **allen** en onderzoek naar om het even welk hoofd **.**
 
-![Zoeken naar typen Principals](assets/image2019-3-20_23-52-51.png)
+![ Onderzoek naar types van Belangrijkste ](assets/image2019-3-20_23-52-51.png)
 
 ### Machtigingen weergeven voor een principal {#viewing-permissions-for-a-principal}
 
 In het linkerframe kunnen gebruikers omlaag schuiven om een hoofd te zoeken of naar een groep of een gebruiker te zoeken op basis van het geselecteerde filter, zoals hieronder wordt getoond:
 
-![Machtigingen weergeven voor een principal](assets/doi-1.png)
+![ Toestemmingen van de Mening voor een Hoofd ](assets/doi-1.png)
 
 Als u op de naam klikt, worden aan de rechterkant de toegewezen machtigingen weergegeven. Het toestemmingenvenster toont de lijst van de Ingangen van het Toegangsbeheer op specifieke wegen samen met gevormde beperkingen.
 
-![ACL-lijst weergeven](assets/trei-1.png)
+![ ACL van de Mening Lijst ](assets/trei-1.png)
 
 ### Het toevoegen van nieuw Ingang van het Toegangsbeheer voor Principal {#adding-new-access-control-entry-for-a-principal}
 
 De nieuwe toestemmingen kunnen worden toegevoegd door een Toegang toe te voegen die ingaat. Klik eenvoudig toevoegen ACE knoop.
 
-![Voeg nieuwe ACL voor Principal toe](assets/patru.png)
+![ voeg nieuwe ACL voor Principal ](assets/patru.png) toe
 
 Dit brengt het hieronder getoonde venster omhoog, is de volgende stap een weg te kiezen waar de toestemming moet worden gevormd.
 
-![Machtigingspad configureren](assets/cinci-1.png)
+![ vorm toestemmingenweg ](assets/cinci-1.png)
 
-Hier wordt een pad geselecteerd waar u een machtiging kunt configureren voor **stuwdammen**:
+Hier, wordt een weg geselecteerd waar u een toestemming voor **dam-gebruikers** kunt vormen:
 
-![Voorbeeldconfiguratie voor damgebruikers](assets/sase-1.png)
+![ de configuratie van het Voorbeeld voor dam-gebruikers ](assets/sase-1.png)
 
-Nadat het pad is geselecteerd, gaat de workflow terug naar dit scherm, waar de gebruiker een of meer rechten kan selecteren uit de beschikbare naamruimten (zoals `jcr`, `rep` of `crx`) zoals hieronder weergegeven.
+Nadat het pad is geselecteerd, gaat de workflow terug naar dit scherm, waar de gebruiker een of meer rechten kan selecteren uit de beschikbare naamruimten (zoals `jcr` , `rep` of `crx` ), zoals hieronder wordt weergegeven.
 
 U kunt rechten toevoegen door te zoeken in het tekstveld en vervolgens te selecteren in de lijst.
 
 >[!NOTE]
 >
->Voor een volledige lijst met rechten en beschrijvingen raadpleegt u [deze pagina](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Voor een volledige lijst van voorrechten en beschrijvingen, zie [ deze pagina ](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Zoekopdracht voor een bepaald pad.](assets/image2019-3-21_0-5-47.png) ![Voeg nieuw item voor &#39;dam-users&#39; toe, zoals wordt weergegeven door een pad dat is geselecteerd in verticale kolommen.](assets/image2019-3-21_0-6-53.png)
+![ toestemming van het Onderzoek voor een bepaalde weg.](assets/image2019-3-21_0-5-47.png) ![ voeg Nieuwe Ingang voor &quot;dam-gebruikers&quot;zoals aangetoond door een weg toe die in verticale kolommen wordt geselecteerd.](assets/image2019-3-21_0-6-53.png)
 
 Nadat de lijst met bevoegdheden is geselecteerd, kan de gebruiker het machtigingstype Weigeren of Toestaan kiezen, zoals hieronder wordt weergegeven.
 
-![Toestemming selecteren](assets/screen_shot_2019-03-17at63938pm.png) ![Toestemming selecteren](assets/screen_shot_2019-03-17at63947pm.png)
+![ Uitgezochte toestemming ](assets/screen_shot_2019-03-17at63938pm.png) ![ Uitgezochte toestemming ](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Beperkingen gebruiken {#using-restrictions}
 
 Naast de lijst met bevoegdheden en het machtigingstype op een bepaald pad, kunt u met dit scherm ook beperkingen voor fijnkorrelig toegangsbeheer toevoegen, zoals hieronder wordt getoond:
 
-![Beperkingen toevoegen](assets/image2019-3-21_1-4-14.png)
+![ voeg beperkingen ](assets/image2019-3-21_1-4-14.png) toe
 
 >[!NOTE]
 >
->Voor meer informatie over wat elke beperking betekent, zie [de Jackrabbit Oak-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Voor meer informatie over wat elke beperking betekent, zie [ de Documentatie van Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-U kunt beperkingen toevoegen zoals hieronder wordt weergegeven door het type beperking te kiezen, de waarde in te voeren en de **+** pictogram.
+U kunt beperkingen toevoegen zoals hieronder wordt weergegeven door het type beperking te kiezen, de waarde in te voeren en op het pictogram **+** te klikken.
 
-![Het type beperking toevoegen](assets/sapte-1.png) ![Het type beperking toevoegen](assets/opt-1.png)
+![ voeg het beperkingstype ](assets/sapte-1.png) ![ toe het beperkingstype ](assets/opt-1.png)
 
-Het nieuwe ACE wordt weerspiegeld in de Lijst van het Toegangsbeheer zoals hieronder getoond. Let op: `jcr:write` is een geaggregeerd privilege dat `jcr:removeNode` die hierboven is toegevoegd, maar hieronder niet is weergegeven als onder `jcr:write`.
+Het nieuwe ACE wordt weerspiegeld in de Lijst van het Toegangsbeheer zoals hieronder getoond. `jcr:write` is een geaggregeerde bevoegdheid die `jcr:removeNode` bevat die hierboven is toegevoegd, maar die hieronder niet wordt weergegeven als een bevoegdheid die onder `jcr:write` valt.
 
 ### ACE&#39;s bewerken {#editing-aces}
 
 De Ingangen van het Toegangsbeheer kunnen worden uitgegeven door een hoofd te selecteren en ACE te kiezen die u wilt uitgeven.
 
-Hier kunt u bijvoorbeeld de onderstaande vermelding bewerken voor **stuwdammen** door op het potloodpictogram aan de rechterkant te klikken:
+Bijvoorbeeld, hier kunt u de hieronder ingang voor **dam-gebruikers** uitgeven door het potloodpictogram op het recht te klikken:
 
-![Beperking toevoegen](assets/image2019-3-21_0-35-39.png)
+![ voeg beperking ](assets/image2019-3-21_0-35-39.png) toe
 
 Het bewerkingsscherm wordt weergegeven met de geconfigureerde ACE&#39;s die vooraf zijn geselecteerd. U kunt deze verwijderen door op het kruispictogram naast de ACE&#39;s te klikken of u kunt nieuwe bevoegdheden toevoegen voor het opgegeven pad, zoals hieronder wordt weergegeven.
 
-![Item bewerken](assets/noua-1.png)
+![ geef ingang ](assets/noua-1.png) uit
 
-Hier `addChildNodes` bevoegdheid is toegevoegd voor **stuwdammen** op het opgegeven pad.
+Hier wordt het `addChildNodes` voorrecht toegevoegd voor **dam-gebruikers** op de bepaalde weg.
 
-![Voorrecht toevoegen](assets/image2019-3-21_0-45-35.png)
+![ voeg voorrecht ](assets/image2019-3-21_0-45-35.png) toe
 
-Wijzigingen kunnen worden opgeslagen door op de knop **Opslaan** en de wijzigingen worden weerspiegeld in de nieuwe machtigingen voor **stuwdammen** zoals hieronder weergegeven:
+De veranderingen kunnen worden bewaard door **te klikken sparen** knoop op bovenkant recht, en de veranderingen worden weerspiegeld in de nieuwe toestemmingen voor **dam-gebruikers** zoals hieronder getoond:
 
-![Wijzigingen opslaan](assets/zece-1.png)
+![ sparen veranderingen ](assets/zece-1.png)
 
 ### ACE&#39;s verwijderen {#deleting-aces}
 
 De Ingangen van het Toegangsbeheer kunnen worden geschrapt om alle toestemmingen te verwijderen die aan een hoofd op een specifieke weg worden gegeven. Het pictogram X naast ACE kan worden gebruikt om het te schrappen zoals hieronder getoond:
 
-![ACE&#39;s verwijderen](assets/image2019-3-21_0-53-19.png) ![ACE&#39;s verwijderen](assets/unspe.png)
+![ Schrap ACEs ](assets/image2019-3-21_0-53-19.png) ![ ACEs ](assets/unspe.png)
 
 ### Klassieke UI Privilege-combinaties {#classic-ui-privilege-combinations}
 

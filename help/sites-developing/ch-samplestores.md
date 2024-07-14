@@ -32,13 +32,13 @@ ContextHub verstrekt verscheidene kandidaten van de steekproefopslag die u in uw
 
 Bewaren voor opgeloste en onopgeloste segmenten ContextHub. Wint automatisch segmenten van ContextHub SegmentManager terug.
 
-### Bronlocatie {#source-location-segmentation}
+### Source-locatie {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
 ### Basisimplementatie {#base-implementation-segmentation}
 
-De opslagkandidaat aem.segmentation breidt uit [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+De opslagkandidaat aem.segmentation breidt [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore) uit.
 
 ### Configuratie {#configuration-segmentation}
 
@@ -58,13 +58,13 @@ Wanneer u een opslag aem.segmentation creeert, te hoeven u niet om een gedetaill
 
 De voorbeeldopslagkandidaat contextthub.geolocation gebruikt Google Maps om informatie over de cliëntplaats te verkrijgen en op te slaan.
 
-### Bronlocatie {#source-location-geolocation}
+### Source-locatie {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### Basisimplementatie {#base-implementation-geolocation}
 
-De kandidate contextthub.geolocationStore wordt uitgebreid [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+De kandidate contextthub.geolocationStore breidt [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore) uit.
 
 ### Configuratie {#configuration-geolocation}
 
@@ -110,19 +110,19 @@ De opslag gebruikt een gegevensboom die aan het volgende voorbeeld gelijkaardig 
 
 >[!NOTE]
 >
->Een veiligheidsbeleid dat in Chrome 50.x wordt geïntroduceerd vereist dat alle aan geolocatie gerelateerde vraag over een beveiligde verbinding wordt gemaakt. AEM forceert daarom https-gebruik voor geolocatie-API-aanroepen als AEM ook over https wordt uitgevoerd. Anders wordt http gebruikt om te voldoen aan het beleid van dezelfde oorsprong. Zie [dit Google-blogbericht](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) voor meer informatie over de wijziging in Chrome.
+>Een veiligheidsbeleid dat in Chrome 50.x wordt geïntroduceerd vereist dat alle aan geolocatie gerelateerde vraag over een beveiligde verbinding wordt gemaakt. AEM forceert daarom https-gebruik voor geolocatie-API-aanroepen als AEM ook over https wordt uitgevoerd. Anders wordt http gebruikt om te voldoen aan het beleid van dezelfde oorsprong. Zie [ dit Google blogbericht ](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) voor meer details over de verandering in Chrome.
 
 ## contexthub.surferinfo Sample Store Candidate {#contexthub-surferinfo-sample-store-candidate}
 
 Hiermee slaat u informatie op over de huidige clientomgeving, zoals het apparaat, het venster, de browser, de datum en het tijdstip.
 
-### Bronlocatie {#source-location-surferinfo}
+### Source-locatie {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
 ### Basisimplementatie {#base-implementation-surferinfo}
 
-De kandidate van de contexthub.datetime-store wordt uitgebreid [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+De kandidaat van de contexthub.datetime store is [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore) uitgebreid.
 
 ### Configuratie {#configuration-surferinfo}
 
@@ -183,13 +183,13 @@ De opslag die deze opslagkandidaat gebruikt heeft een gegevensboom die aan het v
 
 De granite.emulators steekproefopslagkandidaat slaat informatie over cliëntapparaten op.
 
-### Bronlocatie {#source-location-emulators}
+### Source-locatie {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### Basisimplementatie {#base-implementation-emulators}
 
-De kandidate contextthub.geolocationStore wordt uitgebreid [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+De kandidate contextthub.geolocationStore breidt [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore) uit.
 
 ### Configuratie {#configuration-emulators}
 
@@ -316,13 +316,13 @@ De structuur met opslaggegevens is vergelijkbaar met het volgende voorbeeld:
 
 Hiermee worden gegevens over de huidige gebruiker opgeslagen.
 
-### Bronlocatie {#source-location-profile}
+### Source-locatie {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
 ### Basisimplementatie {#base-implementation-profile}
 
-De kandidate van de contexthub.datetime-store wordt uitgebreid [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+De kandidaat van de contexthub.datetime store is [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore) uitgebreid.
 
 ### Configuratie {#configuration-profile}
 

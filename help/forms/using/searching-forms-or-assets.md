@@ -22,13 +22,13 @@ U kunt naar uw formulieren of formulierelementen zoeken met behulp van een teken
 
 Wanneer u een of meer criteria selecteert en ook een tekenreeks opgeeft, wordt het snijpunt van de tekst en criteria geretourneerd als zoekresultaten. De zoekresultaten zijn net zo goed als de metagegevens voor formulieren en middelen die worden verstrekt.
 
-Klikken ![aem6forms_search](assets/aem6forms_search.png)om het zoekvenster weer te geven of te verbergen.
+Klik ![ aem6forms_search ](assets/aem6forms_search.png), om het onderzoekspaneel te tonen of te verbergen.
 
 ## Basiszoekopdracht {#basic-search}
 
 Een basiszoekopdracht is de standaardzoekopdracht, uitgevoerd zonder filters op te geven. AEM Forms voert een volledige tekstzoekopdracht uit naar eigenschappen van metagegevens.
 
-Als u een standaardzoekopdracht wilt uitvoeren, voert u de zoekquery in het tekstveld in en kiest u Enter. U kunt ook het jokerteken invoeren (&#42;) om overeen te komen met een willekeurig aantal tekens.
+Als u een standaardzoekopdracht wilt uitvoeren, voert u de zoekquery in het tekstveld in en kiest u Enter. U kunt het vervangingskarakter (&#42;) ook ingaan om het even welk aantal karakters aan te passen.
 
 Adobe Experience Manager zoekt naar de ingevoerde tekst in eigenschappen van metagegevens en retourneert de corresponderende resultaten. Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
 
@@ -36,10 +36,10 @@ Neem van de volgende punten over het basisonderzoek nota:
 
 * De zoekopdracht wordt uitgevoerd met de eigenschappen van de metagegevens van het formulier en de elementen.
 * Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
-* Zoeken is niet hoofdlettergevoelig. Wanneer u bijvoorbeeld `geometrixx`, elementen met titels `Geometrixx`, `GEOMETRIXX`, en `GeoMetRixx` worden weergegeven in de zoekresultaten.
+* Zoeken is niet hoofdlettergevoelig. Wanneer u bijvoorbeeld `geometrixx` typt, worden elementen met titels `Geometrixx` , `GEOMETRIXX` en `GeoMetRixx` weergegeven in de zoekresultaten.
 
-* Gedeeltelijke overeenkomsten van een woord worden niet ondersteund. Als u wilt zoeken met gedeeltelijke tekenreeksen, gebruikt u &#42; jokerteken. Als de zoekquery echter overeenkomt met een volledig woord, wordt het bijbehorende formulier of element weergegeven.
-* Extra spaties worden gerespecteerd en worden niet bijgesneden tijdens het zoeken. Bijvoorbeeld: `My form` is niet dezelfde zoekquery als `My form`.
+* Gedeeltelijke overeenkomsten van een woord worden niet ondersteund. Gebruik jokerteken &#42; als u wilt zoeken met gedeeltelijke tekenreeksen. Als de zoekquery echter overeenkomt met een volledig woord, wordt het bijbehorende formulier of element weergegeven.
+* Extra spaties worden gerespecteerd en worden niet bijgesneden tijdens het zoeken. `My form` is bijvoorbeeld niet dezelfde zoekquery als `My form` .
 
 * Als de gegevens en weergavewaarden van de velden in metagegevenseigenschappen verschillend zijn, kunt u geen weergavewaarden gebruiken als zoekparameters. U kunt bijvoorbeeld niet zoeken op basis van een status, zoals Gewijzigd of Gepubliceerd, omdat deze eigenschappen in een andere indeling zijn opgeslagen.
 
@@ -47,7 +47,7 @@ Neem van de volgende punten over het basisonderzoek nota:
 
 Naast de query kunt u in de zoekcriteria enkele zoekparameters opgeven om de standaardzoekopdracht efficiënter en gerichter te maken.
 
-![Zoekveld en parameters of filters voor AEM zoeken in formulieren en middelen](assets/search_forms_assets.png)
+![ het gebied van het Onderzoek en parameters of filters van het Onderzoek voor AEM vorm en activa onderzoek ](assets/search_forms_assets.png)
 
 Zoekveld en parameters of filters voor AEM zoeken in formulieren en middelen
 
@@ -70,11 +70,11 @@ Selecteer een van de volgende opties om te zoeken in alle elementen die binnen e
 
 U kunt naar elementen zoeken met een van de volgende statussen:
 
-* **Gepubliceerd**: doorzoek alle elementen die na de publicatie zijn gepubliceerd en niet zijn gewijzigd.
+* **Gepubliceerd**: Onderzoek alle activa die worden gepubliceerd en niet na het publiceren gewijzigd.
 
-* **Ongepubliceerd**: Zoek alle elementen die nooit zijn gepubliceerd.
+* **Niet gepubliceerd**: Onderzoek alle activa die nooit worden gepubliceerd.
 
-* **gewijzigd**: Zoek alle elementen die na het publiceren zijn gewijzigd of niet gepubliceerd.
+* **Gewijzigd**: Onderzoek alle activa die of unpublished na het publiceren worden gewijzigd.
 
 ### Elementtype {#asset-type}
 
@@ -87,8 +87,8 @@ U kunt een willekeurig aantal elementtypen selecteren. De zoekopdracht retournee
    <th>Beschrijving</th> 
   </tr>
   <tr>
-   <td>Formuliersjabloon<br /> </td> 
-   <td>Zoeken in alle formuliersjablonen.<br /> </td> 
+   <td>Formuliersjabloon <br /> </td> 
+   <td>Doorzoek alle formuliersjablonen.<br /> </td> 
   </tr>
   <tr>
    <td>PDF-formulier</td> 
@@ -99,12 +99,12 @@ U kunt een willekeurig aantal elementtypen selecteren. De zoekopdracht retournee
    <td>Zoeken in alle documenten.</td> 
   </tr>
   <tr>
-   <td>Adaptief formulier<br /> </td> 
+   <td>Adaptief formulier <br /> </td> 
    <td>Zoeken in alle adaptieve formulieren.</td> 
   </tr>
   <tr>
    <td>Bron</td> 
-   <td>Zoeken in alle bronnen.<br /> </td> 
+   <td>Onderzoek over alle middelen.<br /> </td> 
   </tr>
  </tbody>
 </table>

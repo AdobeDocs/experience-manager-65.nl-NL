@@ -22,32 +22,32 @@ Dit artikel bespreekt strategieën en beste praktijken die u kunt uitvoeren om k
 
 ## Cacheinstellingen {#cache-settings}
 
-U kunt de cachingstrategie voor AEM Forms configureren en beheren met de **Mobiele Forms-configuraties** in de AEM webconfiguratieconsole op:
+U kunt de caching strategie voor AEM Forms vormen en controleren gebruikend de **component van de Configuraties van 0} Mobiele Forms in de Console van de Configuratie van het AEM Web bij:**
 
 * (AEM Forms op OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms op JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 De beschikbare opties voor caching zijn als volgt:
 
-* **Geen**: Verdwingt om geen artefact in de cache op te slaan. Dit zal in de praktijk de prestaties vertragen en hoge geheugenbeschikbaarheid wegens het ontbreken van geheim voorgeheugen vereist.
-* **conservatief**: Dictates om alleen die tussenliggende artefacten in cache te plaatsen die zijn gegenereerd voordat het formulier wordt weergegeven, zoals een sjabloon met inline-fragmenten en -afbeeldingen.
-* **Agressief**: Hiermee wordt geforceerd om bijna alles in cache te plaatsen wat in cache kan worden geplaatst, inclusief gerenderde HTML-inhoud, behalve alle artefacten van het niveau van conservatieve caching. Het resulteert in de beste prestaties maar verbruikt ook meer geheugen voor het opslaan van artefacten in cache. Met een agressieve cachestrategie krijgt u constante prestaties bij het weergeven van een formulier terwijl de weergegeven inhoud in de cache wordt opgeslagen.
+* **niets**: Dwingt om geen artefact in het voorgeheugen onder te brengen. Dit zal in de praktijk de prestaties vertragen en hoge geheugenbeschikbaarheid wegens het ontbreken van geheim voorgeheugen vereist.
+* **Conservatief**: Dictates om slechts die tussentijdse artefacten in het voorgeheugen onder te brengen die vóór het teruggeven van de vorm, zoals een malplaatje worden geproduceerd dat gealigneerde fragmenten en beelden bevat.
+* **Agressief**: Dwingt om bijna alles in het voorgeheugen onder te brengen die, met inbegrip van teruggegeven inhoud van HTML naast alle artefacten van het Conservatieve in het voorgeheugen onderbrengen niveau kan worden in het voorgeheugen ondergebracht. Het resulteert in de beste prestaties maar verbruikt ook meer geheugen voor het opslaan van artefacten in cache. Met een agressieve cachestrategie krijgt u constante prestaties bij het weergeven van een formulier terwijl de weergegeven inhoud in de cache wordt opgeslagen.
 
 De standaardinstellingen voor de cache van AEM Forms zijn mogelijk niet geschikt voor optimale prestaties. Daarom wordt aangeraden de volgende instellingen te gebruiken:
 
-* **Cachestrategie**: Agressief
-* **Cachegrootten** (in aantal formulieren): Als vereist
-* **Max. objectgrootte**: Indien vereist
+* **Strategie van het Geheime voorgeheugen**: Agressief
+* **grootte van het Geheime voorgeheugen** (in termen van aantal vormen): Zoals vereist
+* **Max de Grootte van Objecten**: Zoals vereist
 
-![Mobiele Forms-configuraties](assets/snap.png)
+![ Mobiele Configuraties van Forms ](assets/snap.png)
 
 >[!NOTE]
 >
->Als u AEM Dispatcher gebruikt om adaptieve formulieren in de cache op te slaan, wordt ook het adaptieve formulier in de cache opgeslagen dat formulieren met voorgevulde gegevens bevat. Als dergelijke formulieren worden aangeboden in het AEM Dispatcher-cachegeheugen, kan dit ertoe leiden dat voorgevulde of opgevulde gegevens worden weergegeven aan de gebruikers. Gebruik dus AEM Dispatcher om adaptieve formulieren die geen voorgevulde gegevens gebruiken, in de cache op te slaan. Bovendien maakt een Dispatcher-cache cachefragmenten in de cache niet automatisch ongeldig. Gebruik het dus niet om formulierfragmenten in de cache op te slaan. Gebruik voor dergelijke formulieren en fragmenten [Cache voor adaptieve formulieren](../../forms/using/configure-adaptive-forms-cache.md).
+>Als u AEM Dispatcher gebruikt om adaptieve formulieren in cache te plaatsen, wordt ook het adaptieve formulier in cache geplaatst dat formulieren met voorgevulde gegevens bevat. Als dergelijke formulieren worden aangeboden in het cachegeheugen van AEM Dispatcher, kan dit ertoe leiden dat voorgevulde of opgevulde gegevens aan de gebruikers worden doorgegeven. Gebruik dus AEM Dispatcher om adaptieve formulieren die geen voorgevulde gegevens gebruiken in cache op te slaan. Bovendien maakt een Dispatcher-cache cachefragmenten in de cache niet automatisch ongeldig. Gebruik het dus niet om formulierfragmenten in de cache op te slaan. Voor dergelijke vormen en fragmenten, gebruik [ Adaptief vormengeheime voorgeheugen ](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## JVM-parameters {#jvm-parameters}
 
-Voor optimale prestaties wordt aanbevolen de volgende JVM te gebruiken `init` argumenten om de `Java heap` en `PermGen`.
+Voor optimale prestaties is het raadzaam de volgende JVM `init` -argumenten te gebruiken om de `Java heap` en `PermGen` -argumenten te configureren.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -72,15 +72,15 @@ Voer bijvoorbeeld de volgende stappen uit om compressie op Apache Web Server 2.0
 
 De volgende stappen tonen de vereiste wijzigingen aan om compressie met Apache Web Server mogelijk te maken
 
-**Vraag de Apache-webserversoftware aan die van toepassing is op uw besturingssysteem**
+**verkrijg de software van de Apache Webserver van toepassing op uw werkend systeem**
 
 * Windows: download de Apache-webserver van de Apache HTTP Server Project-site.
 * Solaris™ 64-bits: download de Apache-webserver van de Sunfreeware for Solaris™-website.
 * Linux®: de Apache-webserver is vooraf geïnstalleerd op een Linux®-systeem.
 
-Apache kan met behulp van het HTTP-protocol communiceren met CRX. De configuraties zijn bedoeld voor optimalisatie met gebruik van HTTP.
+Apache kan met CRX communiceren via het HTTP-protocol. De configuraties zijn bedoeld voor optimalisatie met gebruik van HTTP.
 
-1. Verwijder de commentaarmarkering uit de volgende moduleconfiguraties in `APACHE_HOME/conf/httpd.conf` bestand.
+1. Verwijder de commentaarmarkering van de volgende moduleconfiguraties in `APACHE_HOME/conf/httpd.conf` dossier.
 
    ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -90,19 +90,19 @@ Apache kan met behulp van het HTTP-protocol communiceren met CRX. De configurati
 
    >[!NOTE]
    >
-   >Voor Linux® is de standaardinstelling `APACHE_HOME` is `/etc/httpd/`.
+   >Voor Linux® is de standaardwaarde `APACHE_HOME` `/etc/httpd/` .
 
 1. Vorm de volmacht op haven 4502 van crx.
-Volgende configuratie toevoegen in `APACHE_HOME/conf/httpd.conf` configuratiebestand.
+Voeg de volgende configuratie toe in het configuratiebestand van `APACHE_HOME/conf/httpd.conf` .
 
    ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Compressie inschakelen. Volgende configuratie toevoegen in `APACHE_HOME/conf/httpd.conf` configuratiebestand.
+1. Compressie inschakelen. Voeg de volgende configuratie toe in het configuratiebestand van `APACHE_HOME/conf/httpd.conf` .
 
-   **Voor HTML5-formulieren**
+   **voor HTML5 vormen**
 
    ```xml
    <Location /content/xfaforms>
@@ -119,7 +119,7 @@ Volgende configuratie toevoegen in `APACHE_HOME/conf/httpd.conf` configuratiebes
    </Location>
    ```
 
-   **Voor adaptieve formulieren**
+   **voor adaptieve vormen**
 
    ```xml
    <Location /content/forms/af>
@@ -136,7 +136,7 @@ Volgende configuratie toevoegen in `APACHE_HOME/conf/httpd.conf` configuratiebes
    </Location>
    ```
 
-   Als u toegang wilt tot de crx-server, gebruikt u `https://'server':80`, waarbij `server` is de naam van de server waarop de Apache-server wordt uitgevoerd.
+   Als u toegang wilt krijgen tot de crx-server, gebruikt u `https://'server':80` , waarbij `server` de naam is van de server waarop de Apache-server wordt uitgevoerd.
 
 ## Een antivirus gebruiken op een server waarop AEM Forms wordt uitgevoerd {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -146,30 +146,30 @@ Om de prestaties te verbeteren, kunt u de antivirussoftware zo instellen dat de 
 
 * AEM installatiemap. Als het niet mogelijk is de volledige map uit te sluiten, sluit u het volgende uit:
 
-   * [AEM installatiemap]\crx-repository\temp
-   * [AEM installatiemap]\crx-repository\repository
-   * [AEM installatiemap]\crx-repository\launch
+   * [ AEM installatiemap ] \ crx-bewaarplaats \ temp
+   * [AEM installatiemap ] \ crx-repository\repository
+   * [ AEM installatiemap ] \ crx-bewaarplaats \ lanceerpad
 
 * Tijdelijke map toepassingsserver. De standaardlocatie is:
 
-   * (JBoss®) [AEM installatiemap]\jboss\standalone\tmp
+   * (JBoss®) [ AEM installatiemap ] \jboss\standalone\tmp
    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(alleen AEM Forms op JEE)** GDS-map (Global Document Storage). De standaardlocatie is:
+* **(Alleen AEM Forms op JEE)** GDS-map (Global Document Storage). De standaardlocatie is:
 
-   * (JBoss®) [appserver-hoofdmap]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomein]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [appserver-hoofdmap]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+   * (JBoss®) [ toepassingswortel ]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (WebLogic) [ appserverdomain ]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+   * (WebSphere®) [ toepassingswortel ]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(alleen AEM Forms op JEE)** Logbestanden van AEM Forms Server en tijdelijke map. De standaardlocatie is:
+* **(Alleen AEM Forms in JEE)** Logboeken van AEM Forms Server en tijdelijke map. De standaardlocatie is:
 
-   * Serverlogboeken - [AEM Forms-installatiemap]\Adobe\AEM formulieren\[app-server]\server\all\logs
-   * Temp-map - [AEM Forms-installatiemap]\temp
+   * Serverlogboeken - [ AEM Forms-installatiemap ]\Adobe\AEM formulieren\[app-server]\server\all\logs
+   * De folder van Temp - [ AEM Forms installatiemap ] \ temp
 
 >[!NOTE]
 >
->* Als u een andere locatie voor GDS en een tijdelijke map gebruikt, opent u AdminUI op `https://'[server]:[port]'/adminui`, navigeer naar **Home > Settings > Core System Settings > Core Configurations** om de locatie in gebruik te bevestigen.
+>* Als u een verschillende plaats voor GDS en tijdelijke folder gebruikt, open AdminUI bij `https://'[server]:[port]'/adminui`, navigeer aan **Huis > Montages > de Montages van het Systeem van de Kern > de Configuraties van de Kern** om de plaats in gebruik te bevestigen.
 >
 * Als de AEM Forms-server traag werkt, zelfs nadat de voorgestelde mappen zijn uitgesloten, sluit u ook het uitvoerbare bestand van Java™ (java.exe) uit.
 >

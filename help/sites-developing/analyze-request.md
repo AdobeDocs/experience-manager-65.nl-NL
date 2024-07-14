@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Downloaden {#download}
 
-Dit script is gemaakt om de analyse van de `access.log` bestanden die een leesbaar rapport produceren voor latere verwerking.
+Dit script is gemaakt om de analyse te vereenvoudigen van de `access.log` -bestanden die een leesbaar rapport produceren voor latere verwerking.
 
 [Bestand ophalen](assets/analyse-access.sh)
 
 ## Beschrijving {#description}
 
-Dit script is gemaakt om de analyse van de `access.log` bestanden die een leesbaar rapport produceren voor latere verwerking.
+Dit script is gemaakt om de analyse te vereenvoudigen van de `access.log` -bestanden die een leesbaar rapport produceren voor latere verwerking.
 
 Het produceert het algemene verzoekaantal, GET versus POST, Verzoek verdeling over tijd en meer.
 
@@ -36,7 +36,7 @@ Een aangepast pad op de opdrachtregel kan worden geanalyseerd.
 
 Maak kennis met de opmerking in het bestand die u vertelt hoe u de opmerking moet uitvoeren:
 
-CQ analyseren `access.log` extrapolatie van verschillende informatie en het produceren van een output van de Prijsverlaging op `stdout`.
+Analyseer CQ `access.log` verschillende informatie en produceer een output van de Prijsverlaging op `stdout`.
 
 ## Gebruik {#usage}
 

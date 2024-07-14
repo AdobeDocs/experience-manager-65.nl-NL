@@ -67,50 +67,50 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
   </tr>
   <tr>
    <td>MMM</td>
-   <td>Verkorte naam van de maand van de huidige landinstelling<br /> </td>
+   <td>Afkorting van de naam van de maand van de huidige landinstelling <br /> </td>
   </tr>
   <tr>
    <td>MMMM</td>
-   <td>Volledige naam maand van huidige landinstelling<br /> </td>
+   <td>Volledige maandnaam van de huidige landinstelling <br /> </td>
   </tr>
   <tr>
    <td>EEA</td>
-   <td>Verkorte weekdagnaam van de huidige landinstelling<br /> </td>
+   <td>Afgekort weekdagnaam van de huidige landinstelling <br /> </td>
   </tr>
   <tr>
    <td>EEEE</td>
-   <td>Volledige weekdagnaam van de huidige landinstelling<br /> </td>
+   <td>Volledige weekdagnaam van de huidige scène <br /> </td>
   </tr>
   <tr>
    <td>JJ</td>
-   <td>Jaar met twee cijfers, waarbij 00 = 2000, 29 = 2029, 30 = 1930 en 99 = 1999<br /> </td>
+   <td>Jaar met twee cijfers, waarbij 00 = 2000, 29 = 2029, 30 = 1930, en 99 = 1999 <br /> </td>
   </tr>
   <tr>
    <td>JJJJ</td>
-   <td>Jaar met vier cijfers<br /> </td>
+   <td>Jaar met vier cijfers <br /> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
-> Het datumveld in HTML5 Forms biedt geen ondersteuning voor de `MM-YYYY` patroon in bewerkingsindeling. Het patroon wordt echter wel ondersteund in de weergave-indeling.
+> Het datumveld in HTML5 Forms ondersteunt het `MM-YYYY` -patroon in de bewerkingsindeling niet. Het patroon wordt echter wel ondersteund in de weergave-indeling.
 
 ## Numerieke afbeeldingsclausule {#numeric-picture-clause}
 
 HTML5-formulieren ondersteunen numerieke afbeeldingssymbolen. Er is echter een verschil in steun tussen PDF forms en HTML Forms.
 
-In **PDF forms**, wordt een getal opgemaakt ongeacht het aantal symbolen in de afbeeldingscomponent
+In **PDF forms**, is een aantal geformatteerd ongeacht het aantal symbolen in de clausule van het Beeld heeft
 
-In **HTML Forms**, wordt een getal alleen opgemaakt als het getal cijfers bevat die kleiner zijn dan het aantal symbolen in de Fotocomponent.
+In **HTML Forms**, is een aantal geformatteerd slechts als het aantal cijfers minder dan het aantal symbolen in de clausule van het Beeld heeft.
 
-**Voorbeeld**: Overweeg een afbeeldingsvoorwaarde: num{zzz,zzz,zz9}.
+**Voorbeeld**: Overweeg een clausule van het Beeld: num {zzz, zzz, zz9}.
 
-Het getal **10000** is opgemaakt als **10 000** zowel in HTML als in PDF forms.
+Het aantal **10000** wordt geformatteerd als **10.000** in zowel HTML als PDF forms.
 
 Het getal 1000000 wordt opgemaakt als 1000.000 in PDF forms. In HTML Forms blijft het getal echter ongeformatteerd als 1000000.
 
-Ondersteunde expressies voor de component Numeriek beeld in **HTML Forms** zijn:
+De gesteunde uitdrukkingen voor Numerieke clausule van het Beeld in **HTML Forms** zijn:
 
 * num.integer{}
 * num.decimal{}
@@ -127,32 +127,32 @@ Ondersteunde expressies voor de component Numeriek beeld in **HTML Forms** zijn:
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor het cijfer nul als de invoergegevens leeg zijn of een spatie op de corresponderende positie.<br /> </td>
+   <td><strong> het formatteren van de Output </strong>: één enkel cijfer. Of voor het nul cijfer als de inputgegevens of een ruimte in de overeenkomstige positie leeg zijn.<br /> </td>
    <td>Eén cijfer</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor een spatie als de invoergegevens leeg zijn, een spatie, of het nul cijfer in de overeenkomstige positie.<br /> </td>
+   <td><strong> het formatteren van de Output </strong>: één enkel cijfer. Of voor een ruimte als de inputgegevens leeg zijn, een ruimte, of het nul cijfer in de overeenkomstige positie.<br /> </td>
    <td>Eén cijfer of spatie</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor niets als de invoergegevens leeg zijn, een spatie, of het nul cijfer in de overeenkomstige positie.<br /> </td>
+   <td><strong> het formatteren van de Output </strong>: één enkel cijfer. Of voor niets als de inputgegevens leeg zijn, een ruimte, of het nul cijfer in de overeenkomstige positie.<br /> </td>
    <td>Eén cijfer of niets</td>
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Uitvoeropmaak</strong>: het exponentgedeelte van een drijvende-kommagetal dat bestaat uit het exponentiële symbool (E). gevolgd door een optioneel plus- of minteken. Wordt gevolgd door de exponentwaarde.<br /> </td>
+   <td><strong> het formatteren van de Output </strong>: het exponentgedeelte van een drijvende-kommagetal dat uit het exponentiële symbool (E) bestaat. gevolgd door een optioneel plus- of minteken. Gevolgd door de exponentwaarde.<br /> </td>
    <td>Hetzelfde als voor uitvoeropmaak</td>
   </tr>
   <tr>
-   <td>CR of cr<br /> </td>
+   <td>CR of cr <br /> </td>
    <td>Credit-symbool (CR) als het een negatief getal is. Anders niets.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>S of s<br /> </td>
-   <td>Uitvoeropmaak: een minteken als het een negatief getal is. Anders spatie.<br /> </td>
+   <td>Uitvoeropmaak: een minteken als het een negatief getal is. Else space.<br /> </td>
    <td>Min teken als het getal negatief is. plusteken als het getal positief is</td>
   </tr>
   <tr>

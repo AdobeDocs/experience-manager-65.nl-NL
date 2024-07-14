@@ -20,7 +20,7 @@ ht-degree: 5%
 
 De stappen van de Forms Workflow verstrekken gedetailleerde logboeken om werkschemagerelateerde kwesties gemakkelijk te zuiveren. Schakel foutopsporingslogboeken in voor AEM Forms-workflows om de logbestanden weer te geven.
 
-Standaard zijn alle logboekgegevens beschikbaar in de **error.log** bestand op het */crx-repository/logs/* directory.
+Door gebrek, is alle registrereninformatie beschikbaar in het {**dossier 0} error.log bij de */crx-repository/logs/* folder.**
 
 De logbestanden voor foutopsporing voor formulierworkflows zijn onder andere:
 
@@ -81,15 +81,15 @@ Ga als volgt te werk, zodat u foutopsporingslogbestanden kunt inschakelen voor A
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op:
 
-   https://&#39;[server]:[poort]&#39;/system/console/configMgr
+   https://&#39;[ server ]:[ haven ]&#39;/system/console/configMgr
 
-1. Selecteren **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
+1. Selecteer **[!UICONTROL Sling]** > **[!UICONTROL Log Support]** .
 1. Selecteren **[!UICONTROL Add new Logger.]**
-1. Selecteren **[!UICONTROL Debug]** als de **[!UICONTROL Log Level]**.
-1. Geef de locatie van het logbestand op. De standaardlocatie voor het logbestand is: *logs\error.log*
-1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de **[!UICONTROL Logger]** kolom.
+1. Selecteer **[!UICONTROL Debug]** als de **[!UICONTROL Log Level]** .
+1. Geef de locatie van het logbestand op. De standaardplaats voor het logboekdossier is: *logboeken \ error.log*
+1. Specificeer de naam van het pakket als **com.adobe.granite.workflow.core** in de **[!UICONTROL Logger]** kolom.
 
-   Als u deze stappen uitvoert, worden de logbestanden voor foutopsporing opgeslagen voor de **com.adobe.granite.workflow.core** pakket. Selecteren **[!UICONTROL +]** en voeg de volgende pakketnamen aan de lijst toe:
+   Het uitvoeren van deze stappen laat het opslaan van toe zuivert logboeken voor het {**pakket 0} com.adobe.granite.workflow.core.** Selecteer **[!UICONTROL +]** en voeg de volgende pakketnamen aan de lijst toe:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

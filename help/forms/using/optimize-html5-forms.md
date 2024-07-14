@@ -34,7 +34,7 @@ Vraag de Apache-webserversoftware aan die op uw besturingssysteem van toepassing
 
 Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
 
-1. Verwijder de commentaarmarkering van de volgende moduleconfiguraties in *APACHE_HOME/conf/httpd.conf* bestand.
+1. Uncomment de volgende moduleconfiguraties in het *APACHE_HOME/conf/httpd.conf* dossier.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +48,7 @@ Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
 
 1. Configureer de proxy op poort 8080 van JBoss.
 
-   Voeg de volgende configuratie aan toe *APACHE_HOME/conf/httpd.conf* configuratiebestand.
+   Voeg de volgende configuratie aan het *APACHE_HOME/conf/httpd.conf* configuratiedossier toe.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -65,7 +65,7 @@ Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
 
 1. Compressie inschakelen.
 
-   Voeg de volgende configuratie aan toe *APACHE_HOME/conf/httpd.conf* configuratiebestand.
+   Voeg de volgende configuratie aan het *APACHE_HOME/conf/httpd.conf* configuratiedossier toe.
 
    ```xml
    <Location /content/xfaforms>
@@ -83,4 +83,4 @@ Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
    </Location>
    ```
 
-1. Gebruik https:// voor toegang tot de AEM server[Apache_server]:80.
+1. Om tot de AEM server toegang te hebben, gebruik https://[ Apache_server ]:80.

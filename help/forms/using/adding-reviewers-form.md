@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Verzendrevisoren koppelen aan een formulier {#associating-submission-reviewers-with-a-form}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 Wanneer u een formulier maakt, kunt u gebruikers die de verzendingen van het formulier bekijken, via de portal Formulieren opgeven en feedback geven. Uw organisatie kan feedback verzamelen en de ingediende formulieren opnieuw bewerken.
 
@@ -33,8 +33,8 @@ Als u een revisorgroep aan een formulier wilt koppelen, bewerkt u het metagegeve
 
 Het schema voor metagegevens bewerken:
 
-1. Klik in de modus Schrijver onder Experience Manager op **Gereedschappen** > **Activa** > **Metagegevensschema&#39;s**.
-1. Navigeer op de pagina Schema Forms naar **Forms** > **Forms Authored in AEM.**
+1. Op de auteurswijze, onder Experience Manager, klik **Hulpmiddelen** > **Assets** > **Schema&#39;s van Meta-gegevens**.
+1. In de pagina van Forms van het Schema, navigeer aan **Forms** > **Forms die in AEM wordt geschreven.**
 
    De URL van de pagina is:
 
@@ -43,12 +43,12 @@ Het schema voor metagegevens bewerken:
     schemalist.html/forms/aem-authored
    ```
 
-1. Selecteren **Adaptief formulier** en klik op **Bewerken**.
-1. Klik op de pagina Formulier bewerken op **Geavanceerd**.
-1. Op het tabblad Geavanceerd kunt u de knop **Tekst met één regel** -component beschikbaar onder Formulier samenstellen.
+1. Selecteer **Aangepaste Vorm** en klik **uitgeven**.
+1. In de Edit pagina van de Vorm, klik **Geavanceerd**.
+1. In het Geavanceerde lusje, belemmering-en-daling de **Enige component van de Tekst van de Lijn** beschikbaar onder Bouw Vorm.
 1. Selecteer de toegevoegde tekstcomponent om zijn montages te zien.
 
-   Voer onder Instellingen `./jcr:content/metadata/form-submission-reviewer-group` in het veld Toewijzen aan eigenschap.
+   Voer onder Instellingen `./jcr:content/metadata/form-submission-reviewer-group` in het veld Toewijzen aan eigenschap in.
 
    Het groepsveld Verzendrevisor in de eigenschappen Geavanceerd van het adaptieve formulier wordt ingeschakeld met de naam die u opgeeft onder Veld Label.
 
@@ -57,18 +57,18 @@ Het schema voor metagegevens bewerken:
 Als u revisoren wilt koppelen aan een adaptief formulier, maakt u een revisorgroep en voegt u gebruikers toe. Voeg de gemaakte revisorgroep toe onder het veld revisor voor formulierverzending in de geavanceerde eigenschappen van het formulier.
 Met gebruikersgroepen kunt u verschillende sets revisoren aan verschillende adaptieve formulieren koppelen. Met deze functie voorkomt u dat een niet-geautoriseerde gebruiker een verzendcontrole uitvoert.
 
-Voordat u de volgende stappen uitvoert, raadpleegt u [Vereiste](../../forms/using/adding-reviewers-form.md#prerequisite).
+Alvorens u de volgende stappen uitvoert, zie [ Vereiste ](../../forms/using/adding-reviewers-form.md#prerequisite).
 
-Als u een groep wilt maken en er leden aan wilt toevoegen, navigeert u naar **Gereedschappen** > **Bewerkingen** > **Beveiliging** > **Groepen**.
-Zie voor meer informatie [Gebruikersbeheer en services](/help/sites-administering/security.md).
-Zorg ervoor dat u de groep toevoegt u als lid van de uit-van-de-doos gebruikersgroep creeert: **formulierverzendingsrevisoren**. Deze gebruikersgroep wordt geleverd bij AEM Forms en zorgt ervoor dat gebruikers worden toegevoegd als revisoren voor verzending.
+Om een groep tot stand te brengen en leden aan het toe te voegen, navigeer aan **Hulpmiddelen** > **Verrichtingen** > **Veiligheid** > **Groepen**.
+Voor meer informatie, zie [ Beleid van de Gebruiker en de Diensten ](/help/sites-administering/security.md).
+Zorg ervoor dat u de groep toevoegt u als lid van de uit-van-de-doos gebruikersgroep creeert: **vorm-voorlegging-recensenten**. Deze gebruikersgroep wordt geleverd bij AEM Forms en zorgt ervoor dat gebruikers worden toegevoegd als revisoren voor verzending.
 
 Gebruikersgroepen koppelen aan een adaptief formulier:
 
-1. Navigeer in de ontwerpmodus naar **Forms** > **Forms &amp; Documenten**.
-1. Selecteer een aangepast formulier met de optie **Selecteren **Selecteren en klik op **Eigenschappen weergeven**.
-1. Klik in het venster Eigenschappen van het formulier op **Bewerken** en klik vervolgens op **GEAVANCEERD**.
-1. Voer de groep in het groepsveld Verzendrevisor in en klik op **Gereed**.
+1. Op de auteurswijze, navigeer aan **Forms** > **Forms &amp; Documenten**.
+1. Gebruik **Select **optie om een adaptieve vorm te selecteren, en **Eigenschappen van de Mening** te klikken.
+1. In het venster van Eigenschappen van de vorm, geeft de klik **** uit, en klikt dan **GEAVANCEERD**.
+1. Ga de groep op het gebied van de de vraagcontroleersgroep in, en klik **Gereed**.
 
    Het veld Subrevisorgroep wordt weergegeven met de naam die u hebt opgegeven in het bewerkte metagegevensschema van adaptieve formulieren.
 

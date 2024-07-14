@@ -18,50 +18,50 @@ Leer hoe u bepaalde functionaliteit voor inhoudsfragmenten in de configuratiegro
 
 ## Functionaliteit van inhoudsfragment inschakelen voor uw instantie {#enable-content-fragment-functionality-instance}
 
-Gebruik voordat u Inhoudsfragmenten gebruikt de opdracht **Configuratiebrowser** om het volgende in te schakelen:
+Alvorens Inhoudsfragmenten te gebruiken, gebruik Browser van de Configuratie **** om het volgende toe te laten:
 
-* **Modellen van inhoudsfragmenten** - verplicht
-* **Blijvende GraphQL-query&#39;s** - facultatief
+* **Modellen van het Fragment van de Inhoud** - verplicht
+* **de Blijvende Vragen van GraphQL** - facultatief
 
 >[!CAUTION]
 >
->Als u niet inschakelt **Modellen van inhoudsfragmenten**:
+>Als u niet **Modellen van het Fragment van de Inhoud** toelaat:
 >
->* de **Maken** is niet beschikbaar voor het maken van modellen.
->* u kunt [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
+>* **creeer** optie zal niet beschikbaar voor het creëren van modellen zijn.
+>* u kunt niet [ de configuratie van Plaatsen selecteren om het verwante eind-punt ](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) tot stand te brengen.
 
 U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schakelen:
 
 * Het gebruik van de functionaliteit voor inhoudsfragmenten inschakelen via de configuratiebrowser
-* De configuratie toepassen op de map Middelen
+* De configuratie toepassen op uw Assets-map
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-content-fragment-model), u **moet** eerst de **Configuratiebrowser**:
+Om [ bepaalde functionaliteit van het Fragment van de Inhoud ](#creating-a-content-fragment-model) te gebruiken, moet u **** eerst hen als **Browser van de Configuratie** toelaten:
 
 >[!NOTE]
 >
->Zie voor meer informatie [Configuratiebrowser:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Voor meer informatie, zie [ Browser van de Configuratie:](/help/sites-administering/configurations.md#using-configuration-browser).
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 
-1. Gebruiken **Maken** om het dialoogvenster te openen, waarin u:
+1. Het gebruik **creeert** om de dialoog te openen, waar u:
 
-   1. Geef een **Titel**.
+   1. Specificeer a **Titel**.
    1. Om hun gebruik toe te laten selecteer
       * **Modellen van contentfragmenten**
-      * **Blijvende GraphQL-query&#39;s**
+      * **de Blijvende Vragen van GraphQL**
 
-      ![Configuratie definiëren](assets/cfm-conf-01.png)
+      ![ bepaalt configuratie ](assets/cfm-conf-01.png)
 
-1. Selecteren **Maken** om de definitie op te slaan.
+1. Selecteer **creeer** om de definitie te bewaren.
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### De configuratie toepassen op de middelenmap {#apply-the-configuration-to-your-assets-folder}
+### De configuratie toepassen op uw Assets-map {#apply-the-configuration-to-your-assets-folder}
 
-Wanneer de configuratie **globaal** is ingeschakeld voor de functionaliteit van inhoudsfragmenten en wordt vervolgens toegepast op elke map Middelen.
+Wanneer de configuratie **globale** voor de functionaliteit van het inhoudsfragment wordt toegelaten, dan op om het even welke omslag van Assets van toepassing is.
 
-Als u andere configuraties (dus niet globaal) wilt gebruiken in een vergelijkbare map Elementen, moet u de verbinding definiëren. U doet dit door de juiste **Configuratie** te selecteren op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
+Als u andere configuraties (dus exclusief algemene configuraties) wilt gebruiken met een vergelijkbare Assets-map, moet u de verbinding definiëren. U doet dit door de juiste **Configuratie** te selecteren op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
 
-![Configuratie toepassen](assets/cfm-conf-02.png)
+![ pas configuratie ](assets/cfm-conf-02.png) toe

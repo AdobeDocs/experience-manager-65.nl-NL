@@ -26,7 +26,7 @@ Toegankelijke websites en inhoud met AEM effecten maken:
 
 * Sjabloonontwikkelaars dienen zich bij de implementatie van het websiteontwerp ook bewust te zijn van dergelijke problemen.
 
-Adobe Experience Manager werkt met de [richtlijnen](#wcag-accessibility-guidelines) door de [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager werkt met de [ richtlijnen ](#wcag-accessibility-guidelines) die door het [ Consortium van het World Wide Web ](#world-wide-web-consortium) worden verstrekt.
 
 >[!NOTE]
 >
@@ -50,10 +50,10 @@ Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webco
 
 * In [Toegankelijke content maken](/help/sites-authoring/creating-accessible-content.md) wordt de relatie tussen de richtlijnen en AEM uitgelegd.
 
-* [Het vormen van de Rich Redacteur van de Tekst voor het Produceren van Toegankelijke Plaatsen](/help/sites-administering/rte-accessible-content.md)
+* [ Vormend de Rijke Redacteur van de Tekst voor het Produceren van Toegankelijke Plaatsen ](/help/sites-administering/rte-accessible-content.md)
 Richtlijnen voor hoe beheerders AEM kunnen configureren voor het produceren van toegankelijke inhoud.
 
-* [Toegankelijke adaptieve Forms maken](/help/forms/using/creating-accessible-adaptive-forms.md)
+* [ Creërend Toegankelijke AanpassingsForms ](/help/forms/using/creating-accessible-adaptive-forms.md)
 Adobe Experience Manager (AEM) bevat verschillende functies en mogelijkheden die de bruikbaarheid van adaptieve formulieren voor gebruikers met verschillende mogelijkheden verbeteren. De oplossing helpt ook formulierauteurs bij het maken van toegankelijke adaptieve formulieren.
 
 >[!NOTE]
@@ -62,4 +62,4 @@ Adobe Experience Manager (AEM) bevat verschillende functies en mogelijkheden die
 
 ## Toegankelijkheid bij Adobe {#accessibility-at-adobe}
 
-Ga voor meer informatie naar de [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Voor extra informatie, bezoek het [ Centrum van het Middel van het Middel van de Toegankelijkheid van de Adobe ](https://www.adobe.com/accessibility/).

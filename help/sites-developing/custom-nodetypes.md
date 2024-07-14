@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Omdat Adobe Experience Manager (AEM) is gebaseerd op Sling en een JCR-opslagplaats gebruikt, zijn de knooppunttypen die door beide worden aangeboden, beschikbaar voor gebruik:
 
-* [JCR-knooppunttypen](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [ de Types van Knoop JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [ Sling de Types van Knoop ](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Naast deze knooptypes, verstrekt AEM een waaier van types van douaneknoop.
 
@@ -78,7 +78,7 @@ Definieert het notatietype van een opmerkingsknooppunt.
 
 **Beschrijving**
 
-Hiermee wordt het notatietype van een `commentattachment` node
+Definieert het notatietype van een node `commentattachment`
 
 **Definitie**
 
@@ -162,16 +162,16 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 
 * `@prop jcr:title` - Titel voor de pagina.
 * `@prop jcr:description` - Beschrijving van deze pagina.
-* `@prop cq:template` - Pad naar de sjabloon die is gebruikt om de pagina te maken.
+* `@prop cq:template` - Pad naar de sjabloon die wordt gebruikt om de pagina te maken.
 * `@prop cq:allowedTemplates` - Lijst met reguliere expressies die worden gebruikt om de paden naar de toegestane sjabloon te bepalen.
-* `@prop pageTitle` - Titel weergegeven in het dialoogvenster `<title>` -tag.
+* `@prop pageTitle` - Titel weergegeven in de tag `<title>` .
 * `@prop navTitle` - Titel gebruikt in navigatie.
-* `@prop hideInNav` - Geeft aan of de pagina moet worden verborgen in de navigatie.
+* `@prop hideInNav` - Geeft op of de pagina in de navigatie moet worden verborgen.
 * `@prop onTime` - Tijd waarop deze pagina geldig wordt.
 * `@prop offTime` - Tijd waarop deze pagina ongeldig wordt.
-* `@prop cq:lastModified` - Datum waarop de pagina (of de bijbehorende alinea&#39;s) voor het laatst is gewijzigd.
-* `@prop cq:lastModifiedBy` - Laatste gebruiker om de pagina (of de alinea&#39;s) te wijzigen.
-* `@prop jcr:language` - De taal van de pagina-inhoud.
+* `@prop cq:lastModified` - Datum waarop de pagina (of de alinea&#39;s) voor het laatst is gewijzigd.
+* `@prop cq:lastModifiedBy` - Laatste gebruiker die de pagina (of de alinea&#39;s) wijzigt.
+* `@prop jcr:language` - De taal van pagina-inhoud.
 
 >[!NOTE]
 >
@@ -205,9 +205,9 @@ Definieert een CQ-sjabloon.
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Reguliere-expressiepatronen om de paden naar sjablonen te bepalen die zijn toegestaan als bovenliggende sjablonen.
-* `@prop allowedChildren` - Reguliere-expressiepatronen om de paden naar sjablonen te bepalen die zijn toegestaan als onderliggende sjablonen.
-* `@prop ranking` - Positie in de lijst met sjablonen in het dialoogvenster Pagina maken.
+* `@prop allowedParents` - Reguliere-expressiepatronen om te bepalen welke paden naar sjablonen zijn toegestaan als bovenliggende sjablonen.
+* `@prop allowedChildren` - Reguliere-expressiepatronen om te bepalen welke paden naar sjablonen zijn toegestaan als onderliggende sjablonen.
+* `@prop ranking` - Positie binnen de lijst met sjablonen in het dialoogvenster Pagina maken.
 
 **Definitie**
 
@@ -230,23 +230,23 @@ Definieert een CQ-sjabloon.
 Definieert een CQ-component.
 
 * `@prop jcr:title` - Titel voor de component.
-* `@prop jcr:description` - Beschrijving van het onderdeel.
+* `@prop jcr:description` - Beschrijving van de component.
 * `@node dialog` - Primair dialoogvenster.
-* `@prop dialogPath` - Primair dialoogvenster (alternatief voor dialoogvenster).
-* `@node design_dialog` - Het dialoogvenster Ontwerpen.
+* `@prop dialogPath` - Primair dialoogpad (alternatief voor dialoogvenster).
+* `@node design_dialog` - dialoogvenster Ontwerpen.
 * `@prop cq:cellName` - Naam van de ontwerpcel.
-* `@prop cq:isContainer` - Geeft aan of het een containercomponent is. Hiermee worden de celnamen van onderliggende componenten gedwongen in plaats van padnamen te worden gebruikt. Bijvoorbeeld de `parsys` is een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Indien waar (true), geen decoratie `div` -tags worden getekend wanneer deze component wordt opgenomen.
+* `@prop cq:isContainer` - Geeft aan of het een containercomponent is. Hiermee worden de celnamen van onderliggende componenten gedwongen in plaats van padnamen te worden gebruikt. De `parsys` is bijvoorbeeld een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig` .
+* `@prop cq:noDecoration` - Indien waar (true), worden er geen decoratie `div` -tags getekend wanneer deze component wordt opgenomen.
 * `@node cq:editConfig` - De configuratie die de parameters voor de bewerkbalk definieert.
 * `@node cq:childEditConfig` - De bewerkingsconfiguratie die wordt overgeërfd door onderliggende componenten.
-* `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die aan de &quot;omringende&quot; tags worden toegevoegd `div` -tag wanneer de component wordt opgenomen.
-* `@node icon.png`- Een bestand dat een kenmerkend pictogram bevat.
+* `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die worden toegevoegd aan de tag &quot;around&quot; `div` wanneer de component wordt opgenomen.
+* `@node icon.png` - Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
 * `@prop allowedParents` - Reguliere-expressiepatronen om de paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
-* `@prop allowedChildren` - Reguliere-expressiepatronen om de paden van componenten te bepalen die zijn toegestaan als onderliggende componenten.
+* `@prop allowedChildren` - Reguliere-expressiepatronen om de paden te bepalen van componenten die zijn toegestaan als onderliggende componenten.
 * `@node virtual` - Bevat subknooppunten die virtuele componenten weerspiegelen die worden gebruikt voor het slepen en neerzetten van de component.
-* `@prop componentGroup` - Naam van de componentgroep die wordt gebruikt voor slepen en neerzetten van de component.
-* `@node cq:infoProviders` - Bevat subknooppunten, die elk een bezit hebben `className` die verwijst naar een `PageInfoProvider`.
+* `@prop componentGroup` - Naam van de componentengroep, die voor de componentenbelemmering en daling wordt gebruikt.
+* `@node cq:infoProviders` - Bevat subknooppunten, die elk een eigenschap `className` hebben die naar een `PageInfoProvider` verwijst.
 
 **Definitie**
 
@@ -290,14 +290,14 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 * `@prop cq:dialogMode` - Modus van het dialoogvenster:
    * `floating` - voor een normaal zwevend dialoogvenster
    * `inline` - inline bewerken
-   * `auto` - automatische detectie (afhankelijk van de beschikbare ruimte)
+   * `auto` - automatische detectie (afhankelijk van beschikbare ruimte)
 * `@node cq:inplaceEditing` - Voer de bewerkingsconfiguratie voor deze component in.
-* `@prop cq:layout`- Lay-out van de bewerkbalk:
+* `@prop cq:layout` - Lay-out van de bewerkbalk:
    * `editbar` - bewerkbalk
-   * `rollover` - rollover-frame
+   * `rollover` - verticaal schuiven
    * `auto` - automatische detectie
-* `@node cq:formParameters`- Aanvullende parameters die moeten worden toegevoegd aan het dialoogvenster.
-* `@prop cq:actions`- Lijst met handelingen (knoppen op de bewerkbalk of menu-items).
+* `@node cq:formParameters` - Aanvullende parameters die moeten worden toegevoegd aan het dialoogvenster.
+* `@prop cq:actions` - Lijst met handelingen (knoppen op de bewerkbalk of menu-items).
 * `@node cq:actionConfigs` - Widgetconfiguraties voor bewerkbalk- of menu-items.
 * `@prop cq:emptyText` - Tekst die moet worden weergegeven als er geen visuele inhoud aanwezig is.
 * `@node cq:dropTargets` - Verzameling van `{@link cq:DropTargetConfig}` knooppunten.
@@ -320,7 +320,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebruikt als een id voor slepen en neerzetten.
 
 * `@prop accept` - Lijst met MIME-typen die door dit neerzetdoel worden geaccepteerd, bijvoorbeeld `["image/*"]`
-* `@prop groups` - Lijst met slepen- en neerzetgroepen die een bron accepteren.
+* `@prop groups` - Lijst met groepen voor slepen en neerzetten die een bron accepteren.
 * `@prop propertyName` - Naam van de eigenschap die wordt gebruikt om de verwijzing op te slaan.
 
 **Definitie**
@@ -338,9 +338,9 @@ Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebru
 Definieert een virtuele CQ-component. Wordt momenteel alleen gebruikt voor de nieuwe wizard voor slepen en neerzetten.
 
 * `@prop jcr:title` - Titel van deze component.
-* `@prop jcr:description` - Beschrijving van dit onderdeel.
-* `@node cq:editConfig` - Configuratie bewerken die de parameters voor de bewerkbalk definieert.
-* `@node cq:childEditConfig`- Configuratie bewerken die wordt overgeërfd door onderliggende componenten.
+* `@prop jcr:description` - Beschrijving van deze component.
+* `@node cq:editConfig` - Bewerk de configuratie die de parameters voor de bewerkbalk definieert.
+* `@node cq:childEditConfig` - Bewerk de configuratie die door onderliggende componenten wordt overgeërfd.
 * `@node icon.png` - Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
 * `@prop allowedParents` - Reguliere-expressiepatronen om paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
@@ -449,7 +449,7 @@ Containerlijst.
 
 Het knooppunttype `cq:attributes` is voor de ContentBus versietags. Dit knooppunt heeft alleen een reeks eigenschappen, waarvan er drie vooraf zijn gedefinieerd: &quot;created&quot;, &quot;csd&quot; en &quot;timestamp&quot;.
 
-* `@prop created (long) mandatory copy` - Tijdstempel voor het maken van de versiegegevens, meestal het tijdstip van controle van de vorige versie of het tijdstip van het maken van de pagina.
+* `@prop created (long) mandatory copy` - Tijdstempel voor het maken van de versiegegevens, meestal de tijd van controle van de vorige versie of het tijdstip van het maken van de pagina.
 * `@prop csd (string) mandatory copy` - csd, standaardkenmerk, kopie van de eigenschap cq:csd van het paginaknooppunt
 * `@prop timestamp (long) mandatory copy` - Tijdstempel van laatste versiewijziging, meestal controletijd.
 * `@prop * (string) copy` - Aanvullende kenmerken, versieingesteld met het bovenliggende knooppunt.
@@ -466,13 +466,13 @@ Het knooppunttype `cq:attributes` is voor de ContentBus versietags. Dit knooppun
 
 **Beschrijving**
 
-Het knooppunttype `cq:contentPage` Bevat de eigenschappen en de definities van de kindknoop voor de inhoudspagina&#39;s van ContentBus. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
+Het knooppunttype `cq:contentPage` bevat de eigenschappen en onderliggende knooppuntdefinities voor ContentBus-inhoudspagina&#39;s. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page` , wordt een knooppunt een ContentBus-inhoudspagina.
 
 De items in een `cq:Cq4ContentPage` zijn:
 
-* `@prop cq:csd` - De ContentBi-CSD van de pagina.
+* `@prop cq:csd` - De ContentBus-CSD van de pagina.
 * `@node cq:content` - De inhoud van de pagina. Dit onderliggende knooppunt bestaat niet als het paginaknooppunt de status &quot;Bestaande zonder inhoud&quot; of &quot;Verwijderd&quot; heeft.
-* `@node cq:attributes` - De lijst met paginakenmerken, die voorheen versietags werden genoemd. Dit knooppunt is verplicht voor het type cq:contentPage. Het attributenknooppunt is versioned, wanneer het paginaknooppunt is versioned.
+* `@node cq:attributes` - De lijst met paginakenmerken, voorheen versietags genoemd. Dit knooppunt is verplicht voor het type cq:contentPage. Het attributenknooppunt is versioned, wanneer het paginaknooppunt is versioned.
 
 **Definitie**
 
@@ -490,8 +490,8 @@ Opiniepeilingconfiguratie.
 
 * `@prop source (String) mandatory` - Data source URI. Vereist en mag niet leeg zijn.
 * `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Optioneel en standaard ingesteld op het knooppunt cq:PollConfig.
-* `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gezocht. Optioneel en standaard ingesteld op 30 minuten (1800 seconden).
-* [Aangepaste services voor het importeren van gegevens voor Adobe Experience Manager maken](https://helpx.adobe.com/experience-manager/using/polling.html)
+* `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gepoll. Optioneel en standaard ingesteld op 30 minuten (1800 seconden).
+* [ Creërend de Diensten van de Importeur van Gegevens van de Douane voor Adobe Experience Manager ](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definitie**
 
@@ -520,7 +520,7 @@ Het primaire knooppunttype van gemak om opiniepeilingsknopen gemakkelijk tot sta
 Een mix die een geografische locatie in decimale graden (DD) definieert.
 
 * `@prop latitude` - De breedte is gecodeerd als twee decimale graden.
-* `@prop longitude` - Lengtegraad gecodeerd als dubbel in decimale graden.
+* `@prop longitude` - Lengtegraad gecodeerd als dubbel gebruikend decimale graden.
 
 **Definitie**
 
@@ -569,7 +569,7 @@ Definieert een LiveSync-mix. Als een knooppunt betrokken is bij een LiveRelation
 * `@prop cq:master` - Pad van de primaire bron (besturing) van de LiveRelationship.
 * `@prop cq:isDeep` - Definieert of de relatie beschikbaar is voor kinderen.
 * `@prop cq:syncTrigger` - Definieert wanneer de synchronisatie wordt geactiveerd.
-* `@node * LiveSyncAction` - Acties die synchroon moeten worden uitgevoerd
+* `@node * LiveSyncAction` - Handelingen die synchroon moeten worden uitgevoerd
 
 **Definitie**
 
@@ -651,10 +651,10 @@ Definieert het knooptype van een consoleknooppunt.
 
 Bepaalt de informatie van de replicatiestatus mixin.
 
-* `@prop cq:lastPublished`- De datum waarop de pagina voor het laatst is gepubliceerd (niet meer gebruikt).
-* `@prop cq:lastPublishedBy`- De gebruiker die de pagina als laatste heeft gepubliceerd (niet meer gebruikt).
-* `@prop cq:lastReplicated` - De datum waarop de pagina voor het laatst is herhaald.
-* `@prop cq:lastReplicatedBy` - De gebruiker die de pagina als laatste heeft gerepliceerd.
+* `@prop cq:lastPublished` - De datum waarop de pagina voor het laatst is gepubliceerd (niet meer gebruikt).
+* `@prop cq:lastPublishedBy` - De gebruiker die de pagina als laatste heeft gepubliceerd (niet meer gebruikt).
+* `@prop cq:lastReplicated` - De datum waarop de pagina voor het laatst is gerepliceerd.
+* `@prop cq:lastReplicatedBy` - De gebruiker die de pagina het laatst heeft gerepliceerd.
 * `@prop cq:lastReplicationAction` - De replicatieactie: activeren of deactiveren.
 * `@prop cq:lastReplicationStatus` - De replicatiestatus (niet meer gebruikt).
 
@@ -817,7 +817,7 @@ Elke gebruiker/openbare website kan de inhoud (Web2.0-stijl) labelen die wordt g
 
 **Beschrijving**
 
-Hiermee voegt u een `cq:userContent` subnode die kan worden gewijzigd door gebruikers. Elke gebruiker heeft zijn eigen `cq:userContent/<userid>` subknooppunt, dat doorgaans de mix bevat `cq:UserTaggable`.
+Hiermee wordt een subknooppunt `cq:userContent` toegevoegd dat door gebruikers kan worden gewijzigd. Elke gebruiker heeft zijn eigen `cq:userContent/<userid>` subnode, die doorgaans de mixin `cq:UserTaggable` heeft.
 
 **Definitie**
 
@@ -825,7 +825,7 @@ Hiermee voegt u een `cq:userContent` subnode die kan worden gewijzigd door gebru
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Uitgebreide variant, die explicieter het bepalen van `cq:userContent` boom
+Uitgebreide variant, die de `cq:userContent` boom explicieter bepaalt
 
 * `[cq:AllowsUserContent]`
    * `mixin`

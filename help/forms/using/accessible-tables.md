@@ -25,7 +25,7 @@ Om toegankelijkheidsproblemen met schermlezers te voorkomen die de ARIA-rollen d
 * Rijkoppen
 * Rijbereik
 
-Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als complex. Als u de tabel als complex wilt markeren, voegt u `extras` label in het XML-bron van het tabelsubformulier als volgt:
+Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als complex. Als u de tabel als complex wilt markeren, voegt u als volgt `extras` -tag toe aan de XML-bron van het tabelsubformulier:
 
 ```xml
 </extras>
@@ -33,17 +33,17 @@ Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als 
  </extras>
 ```
 
-De tabellen die als *complexTable* volgt de native HTML-uitvoering en biedt betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Merge Cells]**.
+De lijsten die als *complexTable* duidelijk zijn volgen de inheemse vertoning van de HTML, en verstrekken betere toegankelijkheidssteun voor bepaalde het schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Merge Cells]** .
 
 >[!NOTE]
 >
 >Het maken van een rijbereik werkt alleen voor uiterst linkse cellen.
 
-Als u een rij als rijkop wilt markeren, selecteert u alle cellen in de rij, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Mark Header]**.
+Als u een rij als rijkop wilt markeren, selecteert u alle cellen in de rij, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Mark Header]** .
 
-Als u een cel als kolomkop wilt markeren, selecteert u een willekeurige cel in de kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Mark Header]**.
+Als u een cel als kolomkop wilt markeren, selecteert u een willekeurige cel in de kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Mark Header]** .
 
-Beperkingen in nieuw *AccessibleTable* indeling:
+Beperkingen in nieuw *AccessibleTable* formaat:
 
 * Gebrek aan steun voor kweekbare gebieden als het rowspan in de lijst wordt gebruikt
 * Geen ondersteuning voor geneste tabellen (tabellen in tabelcellen)

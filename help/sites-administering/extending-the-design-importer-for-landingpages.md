@@ -19,29 +19,29 @@ ht-degree: 0%
 
 # De importmodule voor ontwerpen voor bestemmingspagina&#39;s uitbreiden en configureren{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-In deze sectie wordt beschreven hoe u de ontwerpimportmodule voor bestemmingspagina&#39;s configureert en zo nodig uitbreidt. Werken met aanlandingspagina&#39;s na import is opgenomen in [Aanlandingspagina&#39;s.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+In deze sectie wordt beschreven hoe u de ontwerpimportmodule voor bestemmingspagina&#39;s configureert en zo nodig uitbreidt. Het werken met het Aanlanden Pagina&#39;s na de invoer wordt behandeld in [ het Aanlanden Pagina&#39;s.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
-**De ontwerpimporter extraheert uw aangepaste component**
+**makend de ontwerpimporter uw douanecomponent** haalt
 
 Hier volgen de logische stappen waarmee ontwerpimporters uw aangepaste component herkennen
 
 1. Een TagHandler maken
 
-   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een genest &lt;p> -tag, de &lt;p> tag wordt ook naar uw TagHandler gegenereerd en het is aan u hoe u ervoor wilt zorgen.
+   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een geneste &lt;p>-tag bevat, wordt de tag &lt;p> ook naar de TagHandler gegenereerd en kunt u zelf bepalen hoe u dit wilt doen.
    * De interface van de markeringsmanager is gelijkaardig aan een interface van de inhoudsmanager van SAX. Het ontvangt SAX-gebeurtenissen voor elke HTML-tag. Als leverancier van labelafhandelingen moet u bepaalde levenscyclusmethoden implementeren die automatisch worden aangeroepen door het framework van ontwerporters.
 
 1. Maak de bijbehorende TagHandlerFactory.
 
    * De taghandlerfabriek is een OSGi-component (singleton) die verantwoordelijk is voor het paaien van instanties van uw taghandler.
    * moet de taghandlerfactory een OSGi-eigenschap met de naam &quot;tagpattern.name&quot; beschikbaar maken waarvan de waarde wordt vergeleken met de invoer-HTML-tag.
-   * Als er meerdere taghandlers zijn die overeenkomen met de invoer-HTML-tag, wordt de handler met een hogere positie gekozen. De rangschikking zelf wordt als een OSGi-eigenschap weergegeven **service.ranking**.
+   * Als er meerdere taghandlers zijn die overeenkomen met de invoer-HTML-tag, wordt de handler met een hogere positie gekozen. Het rangschikken zelf wordt blootgesteld als bezit OSGi **service.ranking**.
    * TagHandlerFactory is een component OSGi. Alle verwijzingen die u aan uw TagHandler wilt verstrekken moeten via deze fabriek zijn.
 
 1. Zorg ervoor dat uw TagHandlerFactory een betere rangschikking heeft als u het gebrek wilt met voeten treden.
 
 >[!CAUTION]
 >
->De ontwerpimportmodule die wordt gebruikt voor het importeren van bestemmingspagina&#39;s, [is vervangen door AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>De importeur van het Ontwerp, die wordt gebruikt om het landen pagina&#39;s in te voeren, [ is afgekeurd met AEM 6.5 ](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## De HTML voorbereiden voor importeren {#preparing-the-html-for-import}
 
@@ -66,17 +66,17 @@ Een voorbeeldlay-out van de ZIP is als volgt:
 * /img > alle afbeeldingen en elementen
 * /js > om in JS clientlib toe te voegen
 
-De indeling is gebaseerd op de schermindeling met aanbevolen werkwijzen van HTML5 Boilerplate. Lees meer op [https://html5boilerplate.com/](https://html5boilerplate.com/)
+De indeling is gebaseerd op de schermindeling met aanbevolen werkwijzen van HTML5 Boilerplate. Lees meer bij [ https://html5boilerplate.com/](https://html5boilerplate.com/)
 
 >[!NOTE]
 >
->Het ontwerppakket **moet** bevatten een **index.html** bestand op het hoofdniveau. Als de te importeren landingspagina ook een mobiele versie heeft, moet de ritssluiting een **mobile.index.html** samen met **index.html** op het hoofdniveau.
+>Bij een minimum, moet het ontwerppakket **** een **index.html** dossier op het wortelniveau bevatten. In het geval dat de landende pagina om moet worden ingevoerd een mobiele versie heeft eveneens, dan moet zip a **mobile.index.html** samen met **index.html** op het wortelniveau bevatten.
 
 ### De HTML van de bestemmingspagina voorbereiden {#preparing-the-landing-page-html}
 
 Als u de HTML wilt importeren, moet u een canvasdiv toevoegen aan de HTML van de bestemmingspagina.
 
-De canvasdiv is een HTML **div** with `id="cqcanvas"` die in de HTML moeten worden ingevoegd `<body>` -tags en moet de inhoud die is bedoeld voor conversie bevatten.
+De canvasdiv is een HTML **div** met `id="cqcanvas"` die binnen de HTML `<body>` markering moet worden opgenomen en de inhoud moet verpakken voorgenomen voor omzetting.
 
 Een voorbeeldfragment van de landingspagina HTML na toevoeging van de canvasdiv ziet er als volgt uit:
 
@@ -102,9 +102,9 @@ Wanneer u een openingspagina importeert, kunt u de pagina ongewijzigd importeren
 
 Voordat u de openingspagina importeert, wilt u wellicht bepaalde delen van de openingspagina converteren, zodat deze bewerkbare AEM onderdelen zijn. Zo kunt u delen van de bestemmingspagina snel bewerken, zelfs nadat het ontwerp van de bestemmingspagina is geïmporteerd.
 
-U doet dit door de `data-cq-component` naar de juiste component in het HTML-bestand dat u importeert.
+U doet dit door `data-cq-component` aan de aangewezen component in het dossier toe te voegen van de HTML dat u invoert.
 
-In de volgende sectie wordt beschreven hoe u het HTML-bestand kunt bewerken, zodat u bepaalde delen van de bestemmingspagina&#39;s omzet in verschillende bewerkbare AEM. Componenten worden uitgebreid beschreven op [Onderdelen van bestemmingspagina&#39;s](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+In de volgende sectie wordt beschreven hoe u het HTML-bestand kunt bewerken, zodat u bepaalde delen van de bestemmingspagina&#39;s omzet in verschillende bewerkbare AEM. De componenten worden beschreven in detail bij [ Landing de Componenten van Pagina&#39;s ](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
@@ -114,9 +114,9 @@ In de volgende sectie wordt beschreven hoe u het HTML-bestand kunt bewerken, zod
 
 Houd rekening met de volgende beperkingen voordat u gaat importeren:
 
-### Kenmerken zoals klasse of id die op de tag &amp;lt;body> zijn toegepast, blijven niet behouden {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Kenmerken zoals klasse of id die op de tag &amp;amp zijn toegepast;lt;body> blijven niet behouden {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Als bijvoorbeeld een kenmerk zoals id of klasse wordt toegepast op de tag body, `<body id="container">` dan wordt het niet bewaard na de invoer. Het geïmporteerde ontwerp mag dus niet afhankelijk zijn van de kenmerken die op de `<body>` -tag.
+Als bijvoorbeeld een kenmerk zoals id of een klasse op de tag body wordt toegepast, `<body id="container">` , blijft dit kenmerk na het importeren niet behouden. Het geïmporteerde ontwerp mag dus geen afhankelijkheden hebben van de kenmerken die op de tag `<body>` worden toegepast.
 
 ### ZIP slepen en neerzetten {#drag-and-drop-zip}
 
@@ -126,7 +126,7 @@ De browsers die &#39;slepen en neerzetten&#39; van het zip-ontwerp ondersteunen,
 
 ### Modernizr wordt niet ondersteund {#modernizr-is-not-supported}
 
-`Modernizr.js` is een op JavaScript gebaseerd hulpmiddel dat inheemse mogelijkheden van browsers ontdekt en ontdekt of zij voor html5 elementen of niet geschikt zijn. Ontwerpen die Modernisering gebruiken voor het verbeteren van ondersteuning in oudere versies van verschillende browsers kunnen problemen met importeren veroorzaken in de oplossing van de bestemmingspagina. `Modernizr.js` scripts worden niet ondersteund door de Design importer.
+`Modernizr.js` is een op JavaScript gebaseerd hulpmiddel dat inheemse mogelijkheden van browsers ontdekt en ontdekt of zij voor html5 elementen of niet geschikt zijn. Ontwerpen die Modernisering gebruiken voor het verbeteren van ondersteuning in oudere versies van verschillende browsers kunnen problemen met importeren veroorzaken in de oplossing van de bestemmingspagina. `Modernizr.js` -scripts worden niet ondersteund door de Design importer.
 
 ### Pagina-eigenschappen blijven niet behouden op het moment dat het ontwerppakket wordt geïmporteerd {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
@@ -138,7 +138,7 @@ Bij het importeren wordt de markering om veiligheidsredenen ontsmet en om het im
 
 ### Tekst {#text}
 
-Markeringen HTML om een tekstcomponent in te voegen ( `foundation/components/text`) in de HTML in het ontwerppakket:
+HTML-opmaak om een tekstcomponent ( `foundation/components/text`) in te voegen in de HTML binnen het ontwerppakket:
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
@@ -146,10 +146,10 @@ Markeringen HTML om een tekstcomponent in te voegen ( `foundation/components/tex
 
 Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 
-* Maakt een bewerkbare AEM tekstcomponent ( `sling:resourceType=foundation/components/text`) op de landingspagina die na het importeren van het ontwerppakket is gemaakt.
-* Hiermee stelt u de `text` eigenschap van de gemaakte tekstcomponent naar de HTML die binnen de `div`.
+* Maakt een bewerkbare AEM tekstcomponent ( `sling:resourceType=foundation/components/text`) in de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
+* Stelt de eigenschap `text` van de gemaakte tekstcomponent in op de HTML die binnen de `div` valt.
 
-**Declaratie van tag voor korte component**:
+{de verklaring van de component van 0} steno **:**
 
 ```xml
 <p data-cq-component="text">Text component shorthand</p>
@@ -178,7 +178,7 @@ Een tekst met (roze) kleur toevoegen die in de redacteur RTE kan worden uitgegev
 
 ### Titel {#title}
 
-Markeringen HTML om een titelcomponent in te voegen ( `wcm/landingpage/components/title`) in de HTML in het ontwerppakket:
+HTML-opmaak om een titelcomponent ( `wcm/landingpage/components/title`) in te voegen in de HTML binnen het ontwerppakket:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -186,13 +186,13 @@ Markeringen HTML om een titelcomponent in te voegen ( `wcm/landingpage/component
 
 Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 
-* Hiermee wordt een bewerkbare AEM titelcomponent gemaakt ( `sling:resourceType=wcm/landingpage/components/title`) op de landingspagina die na het importeren van het ontwerppakket is gemaakt.
-* Hiermee stelt u de `jcr:title` eigenschap van de gemaakte component title naar de tekst binnen tag heading die is opgenomen in div.
-* Hiermee stelt u de `type` eigenschap aan de tag heading, in dit geval `h1`.
+* Maakt een bewerkbare AEM titelcomponent ( `sling:resourceType=wcm/landingpage/components/title`) in de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
+* Stelt de eigenschap `jcr:title` van de gemaakte component title in op de tekst binnen de tag heading die binnen de div-tag wordt geplaatst.
+* Stelt de eigenschap `type` in op de tag heading, in dit geval `h1` .
 
-De titelcomponent ondersteunt zeven typen - `h1, h2, h3, h4, h5, h6` en `default`.
+De component title ondersteunt zeven typen - `h1, h2, h3, h4, h5, h6` en `default` .
 
-**Declaratie van tag voor korte component**:
+{de verklaring van de component van 0} steno **:**
 
 ```xml
 <h1 data-cq-component="title">Title component shorthand</h1>
@@ -210,14 +210,14 @@ HTML-markering om een afbeeldingscomponent (basis/componenten/afbeelding) in de 
 
 Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 
-* Hiermee maakt u een bewerkbare AEM afbeeldingscomponent ( `sling:resourceType=foundation/components/image`) op de landingspagina die na het importeren van het ontwerppakket is gemaakt.
-* Hiermee stelt u de `fileReference` eigenschap van de gemaakte afbeeldingscomponent naar het pad waarnaar de afbeelding in het kenmerk src wordt geïmporteerd.
-* Hiermee stelt u de `alt` aan de waarde van het alt-kenmerk in de tag img.
-* Hiermee stelt u de `title` aan de waarde van titelkenmerk in de tag img.
-* Hiermee stelt u de `width` aan de waarde van het breedtekenmerk in de tag img.
-* Hiermee stelt u de `height` aan de waarde van het hoogtekenmerk in de tag img.
+* Hiermee maakt u een bewerkbare AEM afbeeldingscomponent ( `sling:resourceType=foundation/components/image` ) op de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
+* Stelt de eigenschap `fileReference` van de gemaakte afbeeldingscomponent in op het pad naar de afbeelding die is opgegeven in het kenmerk src.
+* Stelt de eigenschap `alt` in op de waarde van het alt-kenmerk in de tag img.
+* Stelt de eigenschap `title` in op de waarde van het titelkenmerk in de tag img.
+* Stelt de eigenschap `width` in op de waarde van het breedtekenmerk in de tag img.
+* Stelt de eigenschap `height` in op de waarde van het kenmerk height in de tag img.
 
-**Declaratie van de tag Shorthand:**
+**Shorthand de verklaring van de componentenmarkering:**
 
 ```xml
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
@@ -225,7 +225,7 @@ Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 
 #### Absolute URL-img src wordt niet ondersteund in Div van afbeeldingscomponent {#absolute-url-img-src-not-supported-within-image-component-div}
 
-Als een `<img>` tag met een absolute URL-src wordt geconverteerd naar een component, een geschikte **UnsupportedTagContentException** wordt verhoogd. Het volgende wordt bijvoorbeeld niet ondersteund:
+Als een `<img>` markering met een absolute url src voor componentenomzetting wordt geprobeerd, wordt een aangewezen **UnsupportedTagContentException** opgeheven. Het volgende wordt bijvoorbeeld niet ondersteund:
 
 `<div data-cq-component="image">`
 
@@ -268,7 +268,7 @@ HTML-tag om de component op te nemen, klikt u door de component in de geïmporte
 
 Deze component kan in elke standalone toepassing worden gebruikt of uit zip worden ingevoerd.
 
-**Declaratie van tag voor korte component**:
+{de verklaring van de component van 0} steno **:**
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughLink">Click Through Link shorthand</a>
@@ -293,7 +293,7 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 </div>
 ```
 
-**Declaratie van tag voor korte component**:
+{de verklaring van de component van 0} steno **:**
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughGraphicalLink"><img src="linkimage.png" alt="Click Through Graphical Link shorthand"/></a>
@@ -301,7 +301,7 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 
 >[!NOTE]
 >
->Als u een klikdoorgehaalde grafische verbinding wilt tot stand brengen, moet u een ankermarkering en de beeldmarkering in div met verpakken `data-cq-component="clickthroughgraphicallink"` kenmerk.
+>Als u een klikdoorgehaalde grafische verbinding wilt tot stand brengen, moet u een ankermarkering en de beeldmarkering in div met `data-cq-component="clickthroughgraphicallink"` attributen verpakken.
 >
 >Bijvoorbeeld: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
@@ -313,14 +313,14 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 >
 >`</div>`
 >
->met een geassocieerd `css .hasbackground { background-image: pathtoimage }`
+>met een gekoppelde `css .hasbackground { background-image: pathtoimage }`
 >
 
 ### Voorloopformulier {#lead-form}
 
 Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegevens van een bezoeker/lead te verzamelen. Deze informatie kan later worden opgeslagen en gebruikt om een efficiënte marketing te doen die op de informatie wordt gebaseerd. Deze informatie omvat gewoonlijk titel, naam, e-mail, geboortedatum, adres, rente, enzovoort. Het maakt deel uit van de CTA Lead-groep.
 
-**Ondersteunde functies**
+**Gesteunde eigenschappen**
 
 * Vooraf gedefinieerde loodvelden: voornaam, achternaam, adres, dob, geslacht, about, userId, emailId, submit button zijn beschikbaar in het secundaire bestand. U hoeft alleen het vereiste onderdeel in het formulier voor lead te slepen.
 * Met behulp van deze componenten kan de auteur een zelfstandig hoofdformulier ontwerpen. Deze velden komen overeen met voorbeeldformuliervelden. In een zelfstandige of geïmporteerde ZIP-toepassing kan de gebruiker extra velden toevoegen met behulp van CQ:form- of CTA-voorbeeldformuliervelden, een naam geven en deze ontwerpen volgens de vereisten.
@@ -329,7 +329,7 @@ Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegeve
 * De gebruiker kan de titel opgeven met de tag &quot;label&quot; en kan de stijl toepassen met het kenmerk &quot;class&quot; van de stijl (alleen beschikbaar voor CTA-voorbeeldformuliercomponenten).
 * De pagina Bedankt en de abonnementenlijst kunnen worden opgegeven als een verborgen parameter van het formulier (aanwezig in index.htm) of kunnen worden toegevoegd/bewerkt in de bewerkbalk van het &quot;Formulier voor begin van lead&quot;.
 
-  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/nl/user/register/Dank_you&quot;/>
 
   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
@@ -372,7 +372,7 @@ De AEM component Parsys is een containercomponent die andere AEM componenten kan
 
 Het alineasysteem biedt gebruikers de mogelijkheid om componenten toe te voegen met behulp van het hulpwerktuig.
 
-De prijsverhoging van HTML om een component op te nemen Parsys ( `foundation/components/parsys`) in de HTML in het ontwerppakket:
+HTML prijsverhoging om een component Parsys ( `foundation/components/parsys`) in de HTML binnen ontwerppakket op te nemen:
 
 ```xml
 <div data-cq-component="parsys">
@@ -443,11 +443,11 @@ Als er geen codering is opgegeven in de geïmporteerde HTML, is UTF-8 de standaa
 
 De sjabloon Lege landingspagina kan worden verwijderd door een sjabloon te maken op: `/apps/<appName>/designimporter/templates/<templateName>`
 
-De stappen voor het maken van een sjabloon in AEM worden uitgelegd [hier](/help/sites-developing/templates.md).
+De stappen voor het creëren van een malplaatje in AEM worden verklaard [ hier ](/help/sites-developing/templates.md).
 
 ### Een component vanuit de bestemmingspagina verwijzen {#referring-a-component-from-landing-page}
 
-Stel dat u een component hebt waarnaar u in uw HTML wilt verwijzen met het kenmerk data-cq-component, zodat de importer een component die op deze plaats is opgenomen, rendert. U wilt bijvoorbeeld naar de tabelcomponent verwijzen ( `resourceType = /libs/foundation/components/table`). In de HTML moet het volgende worden toegevoegd:
+Stel dat u een component hebt waarnaar u in uw HTML wilt verwijzen met het kenmerk data-cq-component, zodat de importer een component die op deze plaats is opgenomen, rendert. U wilt bijvoorbeeld naar de tabelcomponent ( `resourceType = /libs/foundation/components/table`) verwijzen. In de HTML moet het volgende worden toegevoegd:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -457,21 +457,21 @@ Het pad in de data-cq-component moet het resourceType van de component zijn.
 
 Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor componentconversie tijdens het importeren.
 
-| E > F | een onderliggend F-element van een E-element | [Onderliggende combinator](https://www.w3.org/TR/css3-selectors/#child-combinators) |
+| E > F | een onderliggend F-element van een E-element | [ de combinator van het Kind ](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
-| E + F | een F-element, onmiddellijk voorafgegaan door een E-element | [Aangrenzende combinator](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
-| E ~ F | een F-element voorafgegaan door een E-element | [Algemene verwant combinator](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:root | een E-element, basis van het document | [Structurele pseudo-klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nde-onderliggend(n) | een E-element, het n-de onderliggende element van het bovenliggende element | [Structurele pseudo-klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-child(n) | een E-element, het n-de onderliggende element van het bovenliggende element, tellen vanaf het laatste | [Structurele pseudo-klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nde-van-type(n) | een E-element, het n-de broedsel van het type | [Structurele pseudo-klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nde-laatste-van-type(n) | een E-element, het n-de-bros van het type, tellend van het laatste | [Structurele pseudo-klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E + F | een F-element, onmiddellijk voorafgegaan door een E-element | [ Aangrenzende sibling combinator ](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
+| E ~ F | een F-element voorafgegaan door een E-element | [ Algemene sibling combinator ](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
+| E:root | een E-element, basis van het document | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nde-onderliggend(n) | een E-element, het n-de onderliggende element van het bovenliggende element | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) | een E-element, het n-de onderliggende element van het bovenliggende element, tellen vanaf het laatste | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nde-van-type(n) | een E-element, het n-de broedsel van het type | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nde-laatste-van-type(n) | een E-element, het n-de-bros van het type, tellend van het laatste | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-Dit komt omdat extra HTML-elementen zoals &lt;div> -tag wordt na het importeren toegevoegd aan de gegenereerde HTML.
+Dit komt omdat er na het importeren extra HTML-elementen zoals de &lt;div>-tag worden toegevoegd aan de gegenereerde HTML.
 
 * Scripts die op de hierboven beschreven structuur vertrouwen, worden ook niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor conversie naar AEM componenten.
-* Stijlen op de opmaakcodes gebruiken voor componentconversie, zoals &lt;div data-cq-component=&quot;&amp;ast;&quot;> wordt niet aanbevolen.
-* De ontwerplay-out moet de beste praktijken van HTML5 Boilerplate volgen. Meer informatie vindt u op: [https://html5boilerplate.com/](https://html5boilerplate.com/).
+* Het gebruik van stijlen op de opmaakcodes voor componentconversie zoals &lt;div data-cq-component=&quot;&amp;ast;&quot;> wordt niet aanbevolen.
+* De ontwerplay-out moet de beste praktijken van HTML5 Boilerplate volgen. Lees meer over: [ https://html5boilerplate.com/ ](https://html5boilerplate.com/).
 
 ## OSGI-modules configureren {#configuring-osgi-modules}
 
@@ -514,26 +514,26 @@ In de onderstaande tabel worden de eigenschappen kort beschreven:
   <tr>
    <td>Vooraf-processor bij het openen van pagina</td>
    <td>Zoekpatroon </td>
-   <td>Het patroon waarnaar moet worden gezocht, in de inhoud van het archiefitem. Deze reguliere expressie komt overeen met de inhoud van het item regel voor regel. Bij overeenkomst wordt de overeenkomende tekst vervangen door het opgegeven vervangingspatroon.<br /> <br /> Zie de onderstaande opmerking over de huidige beperkingen van het vooraf invoeren van de bestemmingspagina.</td>
+   <td>Het patroon waarnaar moet worden gezocht, in de inhoud van het archiefitem. Deze reguliere expressie komt overeen met de inhoud van het item regel voor regel. Bij overeenkomst wordt de overeenkomende tekst vervangen door het opgegeven vervangingspatroon.<br /> <br /> Zie de onderstaande opmerking over de huidige beperkingen van de voorbereider voor het invoeren van pagina's.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Patroon vervangen</td>
-   <td>Het patroon dat de gevonden overeenkomsten vervangt. U kunt regex groepsverwijzingen zoals $1, $2 gebruiken. Dit patroon ondersteunt ook trefwoorden zoals {designPath} die worden opgelost met de werkelijke waarde tijdens het importeren.</td>
+   <td>Het patroon dat de gevonden overeenkomsten vervangt. U kunt regex groepsverwijzingen zoals $1, $2 gebruiken. Dit patroon ondersteunt ook trefwoorden zoals {designPath} die met de werkelijke waarde worden opgelost tijdens het importeren.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->**Huidige beperking van het vooraf instellen van een invoerpagina:**
+>**Huidige beperking van het Aanvoeren van de Preprocessor van de Ingang van de Pagina:**
 >Als u wijzigingen in het zoekpatroon wilt aanbrengen en u de eigenschappeneditor voor het voorvoegsel opent, moet u handmatig backslash-tekens toevoegen om de metatekens voor het voorloopgebied te omzeilen. Als u niet handmatig backslash-tekens toevoegt, wordt de regex als ongeldig beschouwd en wordt de oudere niet vervangen.
 >
 >Als de standaardconfiguratie bijvoorbeeld
 >
 >>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->En u moet vervangen `CQ_DESIGN_PATH` with `VIPURL` in het zoekpatroon ziet uw zoekpatroon er als volgt uit:
+>En u moet `CQ_DESIGN_PATH` vervangen door `VIPURL` in het zoekpatroon, dan moet uw zoekpatroon er als volgt uitzien:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
@@ -566,7 +566,7 @@ Nadat de bestemmingspagina is geïmporteerd, worden de bestanden (afbeeldingen, 
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Stel dat de landingspagina is gemaakt in het kader van de campagne `We.Retail` en de naam van de landingspagina is **myBlankLandingPage** Vervolgens ziet u de volgende locatie voor ZIP-bestanden:
+Veronderstel dat de het landen pagina onder de campagne `We.Retail` wordt gecreeerd en de naam van de het landen pagina is **myBlankLandingPage** toen de plaats waar de dossiers van het ZIP worden opgeslagen als volgt is:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
@@ -591,7 +591,7 @@ met een CSS toegepast op de klasse `box` als volgt:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Vervolgens `box img` wordt gebruikt in de ontwerpimportmodule, lijkt de resulterende landingspagina de opmaak niet te hebben behouden. Als u dit wilt omzeilen, voegt AEM div-tags toe aan de CSS en herschrijft u de code dienovereenkomstig. Anders zijn sommige CSS-regels ongeldig.
+Vervolgens wordt `box img` gebruikt in de ontwerpimportmodule. De resulterende landingspagina lijkt de opmaak niet te hebben behouden. Als u dit wilt omzeilen, voegt AEM div-tags toe aan de CSS en herschrijft u de code dienovereenkomstig. Anders zijn sommige CSS-regels ongeldig.
 
 ```xml
 .box img
@@ -601,4 +601,4 @@ Vervolgens `box img` wordt gebruikt in de ontwerpimportmodule, lijkt de resulter
 
 >[!NOTE]
 >
->Ontwerpers mogen alleen code binnen de **id=cqcanvas** wordt door de importeur erkend, anders blijft het ontwerp niet behouden.
+>De ontwerpers zouden slechts binnen **id=cqcanvas** markering moeten coderen wordt erkend door de importeur, anders wordt het ontwerp niet bewaard.

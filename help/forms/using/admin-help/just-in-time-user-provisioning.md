@@ -28,11 +28,11 @@ Zo werkt traditionele verificatie:
 1. De verificatieprovider valideert de referenties.
 1. De authentificatieleverancier controleert dan of de gebruiker in het gegevensbestand van het Beheer van de Gebruiker bestaat. De volgende resultaten zijn mogelijk:
 
-   **Bestaat:** Als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatie succes terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
+   **bestaat:** als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatiesucces terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
 
-   **Bestaat niet:** Gebruikersbeheer retourneert een verificatiefout.
+   **bestaat niet:** het Beheer van de Gebruiker keert authentificatiefout terug.
 
-   **Ongeldig:** Gebruikersbeheer retourneert een verificatiefout.
+   **ongeldig:** de terugkeert van het Beheer van de Gebruiker authentificatiefout.
 
 1. Het resultaat dat door de authentificatieleverancier is teruggekeerd wordt geëvalueerd. Als de verificatieprovider het succes van de verificatie heeft geretourneerd, mag de gebruiker zich aanmelden. Anders, controleert het Beheer van de Gebruiker met de volgende authentificatieleverancier (stappen 2-3).
 1. Verificatiefout wordt geretourneerd als geen enkele verificatieprovider de gebruikersgegevens valideert.
@@ -82,8 +82,8 @@ public Boolean assign(User user);
 
 ### Overwegingen bij het creëren van een just-in-tijd-toegelaten domein {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Tijdens het maken van een aangepaste `IdentityCreator` voor een hybride domein, zorg ervoor dat een dummywachtwoord voor de lokale gebruiker wordt gespecificeerd. Laat dit wachtwoordveld niet leeg.
-* Aanbeveling: Gebruik `DomainSpecificAuthentication` om gebruikersgeloofsbrieven tegen een specifiek domein te bevestigen.
+* Zorg tijdens het maken van een aangepaste `IdentityCreator` voor een hybride domein dat er een dummywachtwoord is opgegeven voor de lokale gebruiker. Laat dit wachtwoordveld niet leeg.
+* Aanbeveling: gebruik `DomainSpecificAuthentication` om gebruikersgegevens voor een bepaald domein te valideren.
 
 ### Een alleen-in-tijd-geschikt domein maken {#create-a-just-in-time-enabled-domain}
 
@@ -101,12 +101,12 @@ public Boolean assign(User user);
 
 Stel dat een gebruiker zich probeert aan te melden bij AEM formulieren en dat een verificatieprovider zijn gebruikersgegevens accepteert. Als de gebruiker nog niet bestaat in de gebruikersbeheerdatabase, mislukt de identiteitscontrole voor de gebruiker. AEM formulieren voeren nu de volgende handelingen uit:
 
-1. Een `UserProvisioningBO` -object met de verificatiegegevens en deze in een referentie-overzicht plaatsen.
-1. Gebaseerd op domeininformatie die is geretourneerd door `UserProvisioningBO`, de geregistreerde `IdentityCreator` en `AssignmentProvider` voor het domein.
-1. Invoeden `IdentityCreator`. Als het succesvol is `AuthResponse`, extract `UserInfo` op de referentiekaart. Geef het door aan `AssignmentProvider` voor groep/roltoewijzing en elke andere naverwerking nadat de gebruiker is gemaakt.
+1. Maak een `UserProvisioningBO` -object met de verificatiegegevens en plaats dit in een referentie-overzicht.
+1. Haal op basis van domeininformatie die door `UserProvisioningBO` wordt geretourneerd de geregistreerde `IdentityCreator` en `AssignmentProvider` voor het domein op en activeer deze.
+1. Roep `IdentityCreator` aan. Als het resultaat `AuthResponse` is, extraheert u `UserInfo` van de referentie-kaart. Geef deze door aan de `AssignmentProvider` voor groep-/roltoewijzing en eventuele andere naverwerkingen nadat de gebruiker is gemaakt.
 1. Als de gebruiker met succes is gemaakt, retourneert u de aanmeldingspoging van de gebruiker als geslaagd.
 1. Voor hybride domeinen, trek gebruikersinformatie van de authentificatiegegevens die aan de authentificatieleverancier worden verstrekt. Als deze gegevens correct zijn opgehaald, maakt u de gebruiker ter plekke.
 
 >[!NOTE]
 >
->De just-in-time provisioning-functie wordt geleverd met een standaardimplementatie van `IdentityCreator` die u kunt gebruiken om dynamisch gebruikers te creëren. De gebruikers worden gecreeerd met de informatie verbonden aan de folders in het domein.
+>De just-in-time inrichtingsfunctie wordt geleverd met een standaardimplementatie van `IdentityCreator` die u kunt gebruiken om dynamisch gebruikers te maken. De gebruikers worden gecreeerd met de informatie verbonden aan de folders in het domein.

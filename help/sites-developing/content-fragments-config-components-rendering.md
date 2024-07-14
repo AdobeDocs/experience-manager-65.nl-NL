@@ -18,13 +18,13 @@ ht-degree: 1%
 
 # Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
-Er zijn verschillende [geavanceerde services](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) gerelateerd aan de rendering van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
+Er zijn verscheidene [ geavanceerde diensten ](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
-Dit wordt gedaan door te vormen [OSGi Service - Configuratie van de Component van het Fragment van de Inhoud](#osgi-service-content-fragment-component-configuration).
+Dit wordt gedaan door de [ Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud ](#osgi-service-content-fragment-component-configuration).
 
 >[!CAUTION]
 >
->Als u het [geavanceerde services](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) hieronder beschreven, kunt u deze configuratie negeren.
+>Als u niet de [ gevorderde hieronder beschreven diensten ](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) nodig hebt, kunt u deze configuratie negeren.
 
 >[!CAUTION]
 >
@@ -42,26 +42,26 @@ De diensten die de registratie van een component vereisen zijn:
 
 * De afhankelijkheden correct bepalen tijdens de publicatie (dat wil zeggen dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
 * Ondersteuning voor inhoudsfragmenten in volledige tekstzoekopdracht.
-* Het beheer/de verwerking van *tussenliggende inhoud.*
-* Het beheer/de verwerking van *gemengde media-elementen.*
-* Dispatcher flush for referenced fragments (if a page containing a fragment is re-published).
+* Het beheer/de behandeling van *in-tussen inhoud.*
+* Het beheer/de behandeling van *gemengde media activa.*
+* Dispatcher wordt uitgelijnd op fragmenten waarnaar wordt verwezen (als een pagina met een fragment opnieuw wordt gepubliceerd).
 * Op alinea&#39;s gebaseerde rendering gebruiken.
 
 Als u een of meer van deze functies nodig hebt, is het (doorgaans) eenvoudiger om de functie uit de doos te gebruiken in plaats van deze vanaf nul te ontwikkelen.
 
 ## OSGi Service - Configuratie van de Component van het Fragment van de Inhoud {#osgi-service-content-fragment-component-configuration}
 
-De configuratie moet aan de dienst worden gebonden OSGi **Configuratie van inhoudsfragmentcomponent**:
+De configuratie moet aan de OSGi dienst **Configuratie van de Component van het Fragment van de Inhoud** worden gebonden:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor nadere bijzonderheden.
+>Zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor verdere details.
 
 Bijvoorbeeld:
 
-![cfm-01](assets/cfm-01.png)
+![ cfm-01 ](assets/cfm-01.png)
 
 De configuratie OSGi is:
 
@@ -69,7 +69,7 @@ De configuratie OSGi is:
  <tbody>
   <tr>
    <td>Label</td>
-   <td>OSGi-configuratie<br /> </td>
+   <td>OSGi-configuratie <br /> </td>
    <td>Beschrijving</td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ De configuratie OSGi is:
    <td>De naam van de eigenschap die de naam/namen bevat van het element/de elementen die moeten worden gerenderd, bijvoorbeeld<code>elementName</code></td>
   </tr>
   <tr>
-   <td><strong>Variatie, eigenschap</strong><br /> </td>
+   <td><strong> bezit van de Variatie </strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
    <td>De naam van de eigenschap die de naam bevat van de variatie die moet worden gerenderd, bijvoorbeeld<code>variationName</code></td>
   </tr>
@@ -105,7 +105,7 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Een tekenreekseigenschap die het bereik definieert van alinea's die moeten worden uitgevoerd als deze zich in <em>rendermodus voor één element</em>.</p> <p>Indeling:</p>
+   <td><p>Een koordbezit dat de waaier van paragrafen bepaalt om te worden uitgevoerd als in <em> enig element wijze </em> teruggeeft.</p> <p>Indeling:</p>
     <ul>
      <li><code>1</code> of <code>1-3</code> of <code>1-3;6;7-8</code> of <code>*-3;5-*</code></li>
      <li>alleen geëvalueerd als <code>paragraphScope</code> is ingesteld op <code>range</code></li>
@@ -113,7 +113,7 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
   </tr>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als ze zich in <em>rendermodus voor één element</em>.</p> <p>Waarden:</p>
+   <td><p>Een koordbezit dat bepaalt hoe de paragrafen moeten worden uitgevoerd als in <em> enig element wijze </em> teruggeeft.</p> <p>Waarden:</p>
     <ul>
      <li><code>all</code> : alle alinea's renderen</li>
      <li><code>range</code> : voor het weergeven van het bereik van alinea's die worden geleverd door <code>paragraphRange</code></li>
@@ -121,7 +121,7 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code>, <code>h2</code>, <code>h3</code>) worden als alinea's (<code>true</code>) of niet (<code>false</code>)</td>
+   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code> , <code>h2</code> , <code>h3</code> ) worden geteld als alinea's (<code>true</code>) of niet (<code>false</code>)</td>
   </tr>
  </tbody>
 </table>

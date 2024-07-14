@@ -20,13 +20,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 U kunt uw toepassing en inhoud van mobiele apps beheren vanuit het AEM Mobile-toepassingsdashboard of het Control Center.
 
 U kunt in elke tegel in het Centrum van de Controle boren om details te bekijken of uit te geven door &quot;...&quot;in de bodem juiste hoek te klikken.
 
-![chlimage_1-54](assets/chlimage_1-54.png)
+![ chlimage_1-54 ](assets/chlimage_1-54.png)
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 
 ## De app-tegel beheren {#the-manage-app-tile}
 
-De **App beheren** De tegel geeft beschikbare toepassingsinformatie weer:
+**beheer app** toont beschikbare toepassingsinformatie:
 
 * Titel
 * Beschrijving
@@ -46,11 +46,11 @@ De **App beheren** De tegel geeft beschikbare toepassingsinformatie weer:
 * Laatst gewijzigd
 * Laatst gewijzigd door
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![ chlimage_1-55 ](assets/chlimage_1-55.png)
 
 ## De verbindingstegel beheren {#the-manage-connection-tile}
 
-De **Verbinding beheren** De tegel geeft de AEM Mobile On-demand Services-verbindingsgegevens weer:
+Het **beheert de 1} tegels van de Verbinding {toont de de verbindingsinformatie van AEM Mobile On-demand Services:**
 
 * Naam van cloudconfiguratie
 * Projectnaam en -id
@@ -60,9 +60,9 @@ De **Verbinding beheren** De tegel geeft de AEM Mobile On-demand Services-verbin
 >
 >Klik op de versnelling rechtsboven om een mobiele configuratie op aanvraag in te stellen.
 >
->Zie [Mobiele services op aanvraag configureren](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer informatie.
+>Zie [ Vormend Mobiele On-Demand Services ](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor details.
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![ chlimage_1-56 ](assets/chlimage_1-56.png)
 
 ## Entiteiten beheren {#managing-entities}
 
@@ -70,66 +70,66 @@ Deze drie tegels bieden een overzicht van de status van de inhoud van een app:
 
 * **banners**
 * **artikelen**
-* **verzamelingen**
+* **inzamelingen**
 
 Elke tegel kan worden uitgebreid om een gedetailleerdere lijstmening te verstrekken door op de ellips (...) in de bodem juiste hoek te klikken. Deze lijstweergaven bieden een andere manier om toegang te krijgen tot veelgebruikte Mobile On Demand-acties, zoals eigenschappen voor verwijderen, uploaden en bewerken.
 
 ### De tegel Banners beheren {#the-manage-banners-tile}
 
-De **Banners beheren** Met de tegel kunt u de inhoud van een banner beheren. De volgende informatie wordt weergegeven voor een banner:
+**beheert Banners** tegel laat u de inhoud voor een banner beheren. De volgende informatie wordt weergegeven voor een banner:
 
 * image
-* **TITEL**: naam van de banner
+* **TITLE**: naam van de banner
 * **GEWIJZIGD**: laatst gewijzigd in AEM
-* **GEÜPLOAD**: laatst geüpload vanaf AEM
-* **GEPUBLICEERD**: laatste gepubliceerde aanvraagformulier AEM
-* **BRON**: bron (AEM lokaal of extern van Mobile On Demand)
+* **GEÜPLOADED**: laatst geupload van AEM
+* **GEPUBLICEERD**: laatst gepubliceerde verzoekvorm AEM
+* **SOURCE**: bron (AEM lokaal of ver van Mobiel op bestelling)
 
-In de volgende afbeelding wordt de **Banners beheren** tegel in AEM Mobile-toepassingsdashboard:
+Het volgende beeld toont **beheert Banners** tegel in het dashboard van de Toepassing van AEM Mobile:
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![ chlimage_1-57 ](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->Zie **[Banners beheren](/help/mobile/mobile-on-demand-managing-banners.md)** voor het maken, verwijderen of bijwerken van de banners.
+>Zie **[het Leiden Banners](/help/mobile/mobile-on-demand-managing-banners.md)** voor het creëren van, het schrappen van, of het bijwerken van de banners.
 
 ### De tegel Artikelen beheren {#the-manage-articles-tile}
 
-De **Artikelen beheren** Met de tegel kunt u de inhoud van een artikel beheren. De volgende informatie wordt weergegeven voor een artikel:
+De **beheert Artikelen** tegels laat u de inhoud voor een artikel beheren. De volgende informatie wordt weergegeven voor een artikel:
 
 * image
-* **TITEL**: naam van het artikel
+* **TITLE**: naam van het artikel
 * **GEWIJZIGD**: laatst gewijzigd in AEM
-* **GEÜPLOAD**: laatst geüpload vanaf AEM
-* **GEPUBLICEERD**: laatste gepubliceerde aanvraagformulier AEM
-* **BRON**: bron (AEM lokaal of extern van mobiel op aanvraag)
+* **GEÜPLOADED**: laatst geupload van AEM
+* **GEPUBLICEERD**: laatst gepubliceerde verzoekvorm AEM
+* **SOURCE**: bron (AEM lokaal of ver van Mobiel op bestelling)
 
-In de volgende afbeelding wordt de **Artikelen beheren** tegel in AEM Mobile-toepassingsdashboard:
+Het volgende beeld toont de **beheert Artikel** tegel in het Dashboard van de Toepassing van AEM Mobile:
 
-![chlimage_1-58](assets/chlimage_1-58.png)
+![ chlimage_1-58 ](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->Zie [**Artikelen beheren**](/help/mobile/mobile-on-demand-managing-articles.md) voor het maken, verwijderen of bijwerken van de artikelen.
+>Zie [**het Leiden Artikelen**](/help/mobile/mobile-on-demand-managing-articles.md) voor het creëren van, het schrappen van, of het bijwerken van de artikelen.
 
 ### De tegel Verzamelingen beheren {#the-manage-collections-tile}
 
-De **Verzamelingen beheren** Met de tegel kunt u de inhoud voor een verzameling beheren. De volgende informatie wordt getoond voor een inzameling:
+De **beheert inzamelingen** tegel laat u de inhoud voor een inzameling beheren. De volgende informatie wordt getoond voor een inzameling:
 
 * image
-* **TITEL**: naam van de verzameling
+* **TITLE**: naam van de inzameling
 * **GEWIJZIGD**: laatst gewijzigd in AEM
-* **GEÜPLOAD**: laatst geüpload vanaf AEM
-* **GEPUBLICEERD**: laatste gepubliceerde aanvraagformulier AEM
-* **BRON**: bron (AEM lokaal of extern van mobiel op aanvraag)
+* **GEÜPLOADED**: laatst geupload van AEM
+* **GEPUBLICEERD**: laatst gepubliceerde verzoekvorm AEM
+* **SOURCE**: bron (AEM lokaal of ver van Mobiel op bestelling)
 
-In de volgende afbeelding wordt de **Verzamelingen beheren** tegel in AEM Mobile-toepassingsdashboard:
+Het volgende beeld toont **beheert de tegel van Inzamelingen** in het Dashboard van de Toepassing van AEM Mobile:
 
-![chlimage_1-59](assets/chlimage_1-59.png)
+![ chlimage_1-59 ](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->Zie **[Verzamelingen beheren](/help/mobile/mobile-on-demand-managing-collections.md)** voor het maken, verwijderen of bijwerken van verzamelingen.
+>Zie **[het Leiden Verzamelingen](/help/mobile/mobile-on-demand-managing-collections.md)** voor het creëren van, het schrappen van, of het bijwerken van de inzamelingen.
 
 ### De volgende stappen {#the-next-steps}
 

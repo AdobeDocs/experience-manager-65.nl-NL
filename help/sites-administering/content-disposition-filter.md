@@ -24,12 +24,12 @@ Na installatie blokkeert het filter de toegang tot alle elementen. U kunt een PD
 
 ## Filter voor inhoudsafzetting configureren {#configure-content-disposition-filter}
 
-U kunt de [Apache Sling Content Disposition Filter in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+U kunt [ Apache bekijken die de Filter van de Verplaatsing van de Inhoud in GitHub ](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java) schikt.
 
 De opties voor het filter voor het verplaatsen van inhoud bieden de volgende functionaliteit:
 
-* **Paden voor positie van inhoud:** Een lijst met paden waarop het filter wordt toegepast, gevolgd door een lijst met MIME-typen die op dat pad moeten worden uitgesloten. Dit pad moet een absoluut pad zijn en mag een jokerteken bevatten (`*`) aan het eind, om elk middelweg met de bepaalde wegprefix te passen. Bijvoorbeeld: `/content/*:image/jpeg,image/svg+xml` past het filter toe op elk knooppunt in `/content?` behalve JPG- en SVG-afbeeldingen.
+* **de Wegen van de Verplaatsing van de Inhoud:** een lijst van wegen waar de filter wordt toegepast gevolgd door een lijst van mime-types om op die weg uit te sluiten. Dit pad moet een absoluut pad zijn en kan aan het einde een jokerteken (`*`) bevatten, zodat elk bronnenpad overeenkomt met het opgegeven padvoorvoegsel. `/content/*:image/jpeg,image/svg+xml` past het filter bijvoorbeeld toe op elk knooppunt in `/content?` , met uitzondering van JPG en SVG-afbeeldingen.
 
-* **Uitgesloten bronpaden:** Een lijst van uitgesloten middelen, moet elk middelweg als absolute en volledig gekwalificeerde weg worden gegeven. Overeenkomende voorvoegsels/jokertekens worden niet ondersteund.
+* **Uitgesloten Wegen van het Middel:** Een lijst van uitgesloten middelen, moet elk middelweg als absolute en volledig gekwalificeerde weg worden gegeven. Overeenkomende voorvoegsels/jokertekens worden niet ondersteund.
 
-* **Inschakelen voor alle bronnenpaden:** Deze vlag controleert of om deze filter voor alle wegen toe te laten, behalve de uitgesloten wegen die door Uitgesloten Wegen van het Middel worden bepaald. Als u deze markering instelt op &#39;true&#39;, worden paden voor het verwijderen van inhoud genegeerd. Onafhankelijk van de configuratie, slechts zijn de middelwegen behandeld die een genoemd bezit bevatten `jcr:data` of `jcr:content/jcr:data`.
+* **laat voor Alle Wegen van het Middel toe:** Deze vlag controleert of om deze filter voor alle wegen toe te laten, behalve de uitgesloten die wegen door Uitgesloten Wegen van het Middel worden bepaald. Als u deze markering instelt op &#39;true&#39;, worden paden voor het verwijderen van inhoud genegeerd. Onafhankelijk van de configuratie worden alleen bronpaden bedekt die een eigenschap met de naam `jcr:data` of `jcr:content/jcr:data` bevatten.

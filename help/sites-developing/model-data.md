@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Gegevensmodellering - David Nuescheler&#39;s model{#data-modeling-david-nuescheler-s-model}
 
-## Bron {#source}
+## Source {#source}
 
 De volgende details zijn ideeën en opmerkingen van David Nuescheler.
 
 David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd aangeschaft. David is nu mede en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Opslagplaats van de Inhoud van Java™ (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
 
-Verdere updates zijn ook beschikbaar op [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
+De verdere updates kunnen ook op [ https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel ](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel) worden gezien.
 
 ## Inleiding van David {#introduction-from-david}
 
@@ -56,7 +56,7 @@ Verdere gegevensbeperkingen zoals verplichte beperkingen of type- en waardebeper
 
 #### Voorbeeld {#example-1}
 
-In het bovenstaande voorbeeld wordt een `lastModified` De eigenschap Date op bijvoorbeeld het knooppunt &#39;blogbericht&#39; betekent niet dat er een speciaal knooppunttype nodig is. Ik zou er zeker gebruik van maken `nt:unstructured` tenminste in eerste instantie voor mijn blogberichtknooppunten . Omdat ik in mijn blogtoepassing alleen maar de laatste wijzigingsdatum ga weergeven (mogelijk &#39;bestellen door&#39;), kan het me nauwelijks schelen of het een Date is. Omdat ik impliciet mijn blogschrijvende toepassing vertrouw om toch een &quot;datum&quot;te zetten, is het echt niet nodig om de aanwezigheid van een `lastModified` datum in de vorm van een knooptype.
+Het bovenstaande voorbeeld van het gebruik van een eigenschap `lastModified` Date voor bijvoorbeeld het knooppunt &quot;blogbericht&quot;, betekent niet echt dat er behoefte is aan een speciaal knooppunttype. Ik zou `nt:unstructured` zeker in eerste instantie gebruiken voor mijn blogberichtknooppunten. Omdat ik in mijn blogtoepassing alleen maar de laatste wijzigingsdatum ga weergeven (mogelijk &#39;bestellen door&#39;), kan het me nauwelijks schelen of het een Date is. Omdat ik impliciet vertrouw op mijn blogtoepassing om toch een &quot;datum&quot;te zetten, is het echt niet nodig om de aanwezigheid van een `lastModified` datum in de vorm van een knooptype te verklaren.
 
 ### Regel 2: Bestel de inhoudshiërarchie. Laat dit niet gebeuren. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -74,7 +74,7 @@ Persoonlijk, verkies ik hiërarchische overeenkomsten over het knoop die systeem
 >
 >De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats niet 1&#39;000 moeten overschrijden.
 >
->Zie [Hoeveel gegevens kan CRX verwerken?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
+>Zie [ hoeveel gegevens CRX behandelen?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Voorbeeld {#example-2}
 
@@ -100,7 +100,7 @@ Met behulp van het bovenstaande inhoudsmodel kan ik de &quot;anonieme&quot; gebr
 
 #### Toelichting {#explanation-3}
 
-Als u het niet gebruikt `clone()`, `merge()` of `update()` -methoden in uw toepassing is één werkruimte waarschijnlijk de juiste oplossing.
+Als u de methoden `clone()` , `merge()` of `update()` niet gebruikt in uw toepassing, kunt u waarschijnlijk slechts één werkruimte gebruiken.
 
 &quot;Overeenkomende knooppunten&quot; is een concept dat is gedefinieerd in de specificatie JCR. In principe worden knooppunten die dezelfde inhoud vertegenwoordigen, in verschillende zogenaamde werkruimten samengevoegd.
 
@@ -173,13 +173,13 @@ Ik denk dat er gevallen zijn waarin een systeem echt niet werkt als een verwijzi
 
 #### Toelichting {#explanation-6}
 
-Als een inhoudsmodel iets blootstelt dat zelfs ver als een dossier of een omslag ruikt, probeer ik te gebruiken (of zich uit uit te breiden van) `nt:file`, `nt:folder`, en `nt:resource`.
+Als een inhoudsmodel iets blootstelt dat zelfs ver als een dossier of een omslag ruikt, probeer ik te gebruiken (of zich uit) `nt:file`, `nt:folder`, en `nt:resource` uit te breiden.
 
 In mijn ervaring, staan vele generische toepassingen interactie met nt:omslag en niet:dossiers impliciet toe en weten hoe te om die gebeurtenissen te behandelen en te tonen als zij met extra meta-informatie worden verrijkt. Bijvoorbeeld, wordt een directe interactie met de implementaties van de dossierserver zoals CIF of WebDAV die bovenop JCR zitten impliciet.
 
-Ik denk dat als goede duimregel het volgende zou kunnen worden gebruikt: Als u filename en het mime-type moet opslaan dan `nt:file`/ `nt:resource` is een goede match. Als u meerdere &quot;bestanden&quot; zou kunnen hebben, is de map nt:een goede plaats om deze op te slaan.
+Ik denk dat als goede duimregel het volgende kan worden gebruikt: als u de bestandsnaam en het mime-type moet opslaan, is `nt:file`/ `nt:resource` een goede overeenkomst. Als u meerdere &quot;bestanden&quot; zou kunnen hebben, is de map nt:een goede plaats om deze op te slaan.
 
-Als u meta-informatie voor uw middel moet toevoegen, zeggen &quot;auteur&quot;of een &quot;beschrijving&quot;bezit, breid uit `nt:resource` niet `nt:file`. Ik breid zelden nt uit:bestand en breid vaak uit `nt:resource`.
+Als u meta-informatie voor uw middel moet toevoegen, laten wij zeggen &quot;auteur&quot;of een &quot;beschrijving&quot;bezit, breid `nt:resource` niet `nt:file` uit. Ik breid &#39;nt:file&#39; zelden uit en breid `nt:resource` vaak uit.
 
 #### Voorbeeld {#example-6}
 
@@ -207,13 +207,13 @@ In relationele databases zijn id&#39;s een noodzakelijk middel om relaties tot u
 
 Als uw inhoudsmodel vol eigenschappen is die in &quot;Id&quot;beëindigen, gebruikt u waarschijnlijk niet behoorlijk de hiërarchie.
 
-Het is waar dat sommige knopen een stabiele identificatie door hun levende cyclus nodig hebben; minder dan u zou kunnen denken. Maar `mix:referenceable` heeft een dergelijk mechanisme in de repository ingebouwd, zodat het niet nodig is om met een extra manier te komen om een knooppunt op een stabiele manier te identificeren.
+Het is waar dat sommige knopen een stabiele identificatie door hun levende cyclus nodig hebben; minder dan u zou kunnen denken. Maar `mix:referenceable` heeft een dergelijk mechanisme dat in de repository is ingebouwd, dus het is niet nodig om met een extra manier te komen om een knooppunt op een stabiele manier te identificeren.
 
 Houd er ook rekening mee dat items via het pad kunnen worden geïdentificeerd. En, zo veel als &quot;symlinks&quot;voor de meeste gebruikers veel redelijker dan harde verbindingen in een UNIX® filesystem maken, een weg voor de meeste toepassingen het nut om naar een doelknoop te verwijzen.
 
-Nog belangrijker is dat het **mengen**:referenceable wat betekent dat het op een knoop op het punt in tijd kan worden toegepast wanneer u eigenlijk het moet van verwijzingen voorzien.
+Belangrijker, is het **mengeling**:verwijzing wat betekent dat het op een knoop op het punt in tijd kan worden toegepast wanneer u het eigenlijk moet van verwijzingen voorzien.
 
-Dus, alleen omdat u mogelijk wilt kunnen verwijzen naar een knooppunt van het type &quot;Document&quot;, betekent dit niet dat het knooppunttype &quot;Document&quot; moet worden uitgebreid van `mix:referenceable` op statische wijze. Dit komt omdat het dynamisch aan om het even welke instantie van het &quot;Document&quot;kan worden toegevoegd.
+Dus, alleen omdat u mogelijk wilt kunnen verwijzen naar een knooppunt van het type &quot;Document&quot;, betekent dit niet dat het knooppunttype &quot;Document&quot; moet worden uitgebreid van `mix:referenceable` op een statische manier. Dit komt omdat het dynamisch aan om het even welke instantie van het &quot;Document&quot;kan worden toegevoegd.
 
 #### Voorbeeld {#example-7}
 

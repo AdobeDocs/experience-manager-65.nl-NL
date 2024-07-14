@@ -63,10 +63,10 @@ Zie de bronnen in de tabel voor beveiligingsinformatie over besturingssystemen d
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Beveiligingsgids voor release 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank"> Gids van de Veiligheid voor Versie 7 </a><br /> </td>
   </tr>
   <tr>
-   <td>CentOS 7<sup> </sup></td>
+   <td>CentOS 7 <sup> </sup></td>
    <td><a href="https://wiki.centos.org/HowTos/OS_Protection" target="_blank">Beveiligingsdocumentatie</a></td>
   </tr>
  </tbody>
@@ -96,7 +96,7 @@ Zie de bronnen in deze tabel voor beveiligingsinformatie over toepassingsservers
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Zoek naar Begrip van WebLogic-beveiliging op <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
+   <td><p>Onderzoek naar het Begrip van Veiligheid WebLogic in <a href="https://docs.oracle.com/"> https://docs.oracle.com/ </a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM® WebSphere®</p> </td>
@@ -142,12 +142,12 @@ Voor veiligheidsinformatie over gegevensbestanden die AEM Forms op JEE steunt, z
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p>Zie het hoofdstuk Beveiliging in het dialoogvenster <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g-documentatie</a></p> </td>
+   <td><p>Zie het hoofdstuk van de Veiligheid in de <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank"> Oracle 12g- documentatie </a></p> </td>
   </tr>
  </tbody>
 </table>
 
-In deze tabel worden de standaardpoorten beschreven die moeten worden geopend tijdens het AEM Forms-configuratieproces in JEE. Als u verbinding maakt via https, past u de poortgegevens en IP-adressen dienovereenkomstig aan. Voor meer informatie over het vormen van havens, zie *AEM Forms installeren en implementeren op JEE* document voor uw toepassingsserver.
+In deze tabel worden de standaardpoorten beschreven die moeten worden geopend tijdens het AEM Forms-configuratieproces in JEE. Als u verbinding maakt via https, past u de poortgegevens en IP-adressen dienovereenkomstig aan. Voor meer informatie over het vormen van havens, zie *het Installeren van en het Opstellen van AEM Forms op JEE* document voor uw toepassingsserver.
 
 <table>
  <thead>
@@ -210,11 +210,11 @@ JBoss® Application Server gebruikt 8080 als de standaard HTTP-poort. JBoss® he
 
 1. Open het volgende bestand om te bewerken:
 
-   Eén server installeren: [JBoss® root]/standalone/configuration/standalone.xml
+   De installatie van enig-Server: [ wortel JBoss® ] /standalone/configuration/standalone.xml
 
-   Clusterinstallaties: [JBoss® root]/domain/configuration/domain.xml
+   De installaties van de cluster: [ wortel JBoss® ] /domain/configuration/domain.xml
 
-1. De waarde wijzigen van **poort** in het dialoogvenster **&lt;socket-binding>** -tag aan een aangepast poortnummer. Het volgende gebruikt bijvoorbeeld poort 8090:
+1. Verander de waarde van **haven** attributen in **&lt;socket-binding>** markering aan een aantal van de douanehaven. Het volgende gebruikt bijvoorbeeld poort 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
@@ -241,7 +241,7 @@ AEM Forms on JEE gebruikt de AEM Forms on JEE-database voor het opslaan van gevo
 
 De toepassingsserver die wordt gebruikt om AEM Forms op JEE in werking te stellen vereist zijn eigen configuratie voor toegang tot uw gegevensbestand door een gegevensbron die op de toepassingsserver wordt gevormd. Zorg ervoor dat uw toepassingsserver uw databasewachtwoord niet in duidelijke tekst in het configuratiebestand van de gegevensbron weergeeft.
 
-De lc_[database].xml-bestand mag geen wachtwoord in duidelijke-tekstindeling bevatten. Vraag de leverancier van de toepassingsserver hoe u deze wachtwoorden voor uw toepassingsserver kunt coderen.
+Het lc_[ gegevensbestand ].xml- dossier zou geen wachtwoord in duidelijk tekstformaat moeten bevatten. Vraag de leverancier van de toepassingsserver hoe u deze wachtwoorden voor uw toepassingsserver kunt coderen.
 
 >[!NOTE]
 >

@@ -28,7 +28,7 @@ Deze eigenschap voegt de faciliteit toe om een nieuw beheerderwachtwoord voor de
 
 >[!CAUTION]
 >
->De functie is niet van toepassing op de Felix Console, waarvoor het wachtwoord handmatig moet worden gewijzigd. Zie voor meer informatie de relevante [Sectie Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+>De functie is niet van toepassing op de Felix Console, waarvoor het wachtwoord handmatig moet worden gewijzigd. Voor meer informatie, zie de relevante [ sectie van Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
 
 ## Hoe gebruik ik het? {#how-do-i-use-it}
 
@@ -42,7 +42,7 @@ java -jar aem6.3.jar
 
 Nadat u de instantie via de opdrachtregel hebt uitgevoerd, kunt u het beheerderswachtwoord tijdens het installatieproces wijzigen:
 
-![chlimage_1-116](assets/chlimage_1-116a.png)
+![ chlimage_1-116 ](assets/chlimage_1-116a.png)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Nadat u de instantie via de opdrachtregel hebt uitgevoerd, kunt u het beheerders
 
 ## De markering -nointeractive gebruiken {#using-the-nointeractive-flag}
 
-U kunt ook het wachtwoord opgeven in een eigenschappenbestand. Dit wordt gedaan door te gebruiken `-nointeractive` markering gecombineerd met de `-Dadmin.password.file` system, eigenschap.
+U kunt ook het wachtwoord opgeven in een eigenschappenbestand. Dit wordt gedaan door de markering `-nointeractive` te gebruiken in combinatie met de eigenschap `-Dadmin.password.file` system.
 
 Hieronder ziet u een voorbeeld:
 
@@ -58,7 +58,7 @@ Hieronder ziet u een voorbeeld:
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-Het wachtwoord in de `passwordfile.properties` bestand moet de volgende indeling hebben:
+Het wachtwoord in het `passwordfile.properties` -bestand moet de volgende indeling hebben:
 
 ```xml
 admin.password = 12345678
@@ -66,4 +66,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Als u gewoon de `-nointeractive` parameter zonder de `-Dadmin.password.file` systeemeigenschap, AEM het standaardbeheerderswachtwoord gebruikt zonder dat u wordt gevraagd dit te wijzigen, in feite gedrag uit eerdere versies repliceert. Deze niet-interactieve modus kan worden gebruikt voor geautomatiseerde installaties die de opdrachtregel in een installatiescript gebruiken.
+>Als u de parameter `-nointeractive` zonder de eigenschap system van `-Dadmin.password.file` gebruikt, gebruikt AEM het standaard beheerderswachtwoord zonder dat u wordt gevraagd dit te wijzigen, wat in feite het gedrag van eerdere versies is. Deze niet-interactieve modus kan worden gebruikt voor geautomatiseerde installaties die de opdrachtregel in een installatiescript gebruiken.

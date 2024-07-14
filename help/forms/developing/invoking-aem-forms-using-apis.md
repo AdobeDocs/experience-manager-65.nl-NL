@@ -1,6 +1,6 @@
 ---
 title: Hoe kan ik AEM Forms aanroepen met behulp van API's?
-description: Leer hoe u AEM Forms-services aanroept met behulp van een Java&trade; API, webservices, Remoting en REST.
+description: Leer hoe u AEM Forms-services aanroept met een Java&trade; API, webservices, Remoting en REST.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Forms aanroepen met API&#39;s {#invoking-aem-forms-using-apis}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
 Adobe Experience Manager Forms is op J2EE gebaseerde bedrijfssoftware die bestaat uit services die werken binnen een gedeelde infrastructuur. De verrichtingen van de dienst verbruiken typisch of produceren documenten. Door AEM Forms te gebruiken, kunt u Forms Workflow met elektronische vormen, documentveiligheid, en documentgeneratie in een geïntegreerde en samenhangende reeks diensten combineren. Deze diensten kunnen van binnen en buiten de firewall worden betreden.
 

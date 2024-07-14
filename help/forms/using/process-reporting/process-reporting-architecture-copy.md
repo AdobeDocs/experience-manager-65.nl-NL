@@ -30,7 +30,7 @@ Procesrapportage bestaat uit de volgende modules:
 
 ## Procesrapporteringsarchitectuur {#process-reporting-architecture-br}
 
-![procesrapporteringsarchitectuur](assets/processreportingarchitecture.png)
+![ verwerkend rapporteringsarchitectuur ](assets/processreportingarchitecture.png)
 
 ## Procesrapporteringsmodules {#process-reporting-modules}
 
@@ -38,13 +38,13 @@ Procesrapportage bestaat uit de volgende modules:
 
 De ProcessDataPublisher-server wordt regelmatig uitgevoerd in de AEM Forms-database en extraheert de gegevens die zijn gewijzigd sinds de laatste uitvoering van de service. De gegevens worden vervolgens gepubliceerd naar de service Gegevensopslag verwerken.
 
-Voor details bij het vormen van de dienst, zie [De service ProcessDataPublisher configureren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+Voor details bij het vormen van de dienst, zie [ de dienst ProcessDataPublisher ](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p) vormen.
 
 ### ProcessDataStorageProvider-service {#processdatastorageprovider-service-br}
 
 De dienst ProcessDataStorageProvider ontvangt procesgegevens van de dienst ProcessDataPublisher en bewaart de gegevens aan de bewaarplaats van de Rapportering van het Proces.
 
-Voor details bij het vormen van de dienst, zie [De service ProcessDataStorageProvider configureren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+Voor details bij het vormen van de dienst, zie [ de dienst ProcessDataStorageProvider ](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p) vormen.
 
 ### OSGi-service {#osgi-service-br}
 
@@ -70,4 +70,4 @@ De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verk
 
 U kunt uw eigen douanerapporten tot stand brengen en deze rapporten tonen in het lusje van de Rapporten van de Douane van het Proces Meldend gebruikersinterface.
 
-Zie Een aangepast rapport maken in het artikel voor de stappen om een aangepast rapport te maken [Aangepaste rapporten in procesrapportage](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Voor de stappen om een douanerapport tot stand te brengen, zie om een douanerapport in het artikel [ de Rapporten van de Douane in Proces tot stand te brengen die ](/help/forms/using/process-reporting/process-reporting-custom-reports.md) melden.

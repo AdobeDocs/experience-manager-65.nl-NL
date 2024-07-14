@@ -20,8 +20,8 @@ ht-degree: 1%
 
 Met Forms kunt u bepalen of externe entiteiten in XML-invoer worden opgelost. Deze worden standaard opgelost, maar u kunt dit gedrag wijzigen om de beveiliging van uw AEM te verbeteren.
 
-**Verwerking van XML-gegevensbestanden met verwijzingen naar externe entiteiten voorkomen**
+**verhindert de verwerking van de gegevensdossiers van XML die verwijzingen naar externe entiteiten** bevatten
 
-1. Klik in de beheerconsole op **[!UICONTROL Services > Forms]**.
+1. Klik in de beheerconsole op **[!UICONTROL Services > Forms]** .
 1. Schakel het selectievakje Externe entiteiten oplossen uit.
 1. Klik op **[!UICONTROL Save]**.

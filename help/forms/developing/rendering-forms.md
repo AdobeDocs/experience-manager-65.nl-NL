@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Forms renderen {#rendering-forms}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
-**Informatie over de Forms-service**
+**Ongeveer de dienst van Forms**
 
 Met de Forms-service kunt u interactieve toepassingen voor het vastleggen van gegevens maken die formulieren valideren, verwerken, transformeren en leveren die gewoonlijk in Designer zijn gemaakt. Formulierauteurs kunnen één formulierontwerp ontwikkelen dat de Forms-service in verschillende browseromgevingen rendert in PDF, SWF of HTML.
 
 Wanneer een eindgebruiker een formulier aanvraagt, stuurt een clienttoepassing de aanvraag naar de Forms-service, die het formulier in de juiste indeling retourneert. Zodra de Forms-service een aanvraag ontvangt, worden gegevens met een formulierontwerp samengevoegd en wordt het formulier in de gewenste indeling geleverd. De uitvoer van de formulierservice is een interactief formulier, meestal een PDF-document. Met een interactief formulier kunnen gebruikers de velden op het formulier invullen.
 
-Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwebbrowser schrijven of het formulier opslaan als een PDF-bestand. Een webtoepassing kan het formulier naar een webbrowser schrijven. Een bureaubladtoepassing kan het formulier opslaan als een PDF-bestand. Om te tonen hoe u naar een webbrowser en naar een PDF-bestand schrijft, begint de snelkoppeling in het dialoogvenster *Forms renderen* de sectie op de volgende wijze wordt georganiseerd:
+Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwebbrowser schrijven of het formulier opslaan als een PDF-bestand. Een webtoepassing kan het formulier naar een webbrowser schrijven. Een bureaubladtoepassing kan het formulier opslaan als een PDF-bestand. Om aan te tonen hoe te om aan Webbrowser en aan een dossier van PDF te schrijven, begint het snelle begin in *het Teruggeven van Forms* sectie wordt georganiseerd op de volgende manier:
 
 * De sterk getypte Java API-voorbeelden (SOAP modus) zijn een Java-servlet.
 * De voorbeelden van de webservice (Java Base64) zijn een Java-servlet.
@@ -35,24 +35,24 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 
 >[!NOTE]
 >
->Ga voor informatie over het maken van een webtoepassing die Java-servlets gebruikt om de Forms-service aan te roepen naar [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Voor informatie over het creëren van een Webtoepassing die Java servlets gebruikt om de dienst van Forms aan te halen, zie [ Creërend de Toepassingen van het Web die Forms ](/help/forms/developing/creating-web-applications-renders-forms.md) teruggeven.
 
 U kunt op twee manieren een formulierontwerp (een XDP-bestand) of een PDF-document doorgeven aan de Forms-service:
 
-* U kunt naar het formulierontwerp verwijzen met een URL-waarde. Bij deze methode wordt een `URLSpec` object. De inhoudroot wordt doorgegeven aan de Forms-service met behulp van de `URLSpec` object `setContentRootURI` methode. De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameter. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen. (De meeste sneltoetsen beginnen in het dialoogvenster *Forms renderen* deze aanpak te gebruiken.)
-* U kunt een `com.adobe.idp.Document` die het formulierontwerp voor de Forms-service bevat. Twee nieuwe methoden met naam `renderPDFForm2` en `renderHTMLForm2` accepteren `com.adobe.idp.Document` object dat een formulierontwerp bevat. (Zie [Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md)
+* U kunt naar het formulierontwerp verwijzen met een URL-waarde. Deze aanpak omvat het gebruik van een `URLSpec` -object. De basisinhoud wordt aan de Forms-service doorgegeven met de methode `setContentRootURI` van het object `URLSpec` . De naam van het formulierontwerp ( `formQuery` ) wordt doorgegeven als een aparte parameter. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen. (Het grootste deel van het snelle begin in *teruggevend Forms* sectie gebruikt deze benadering.)
+* U kunt een `com.adobe.idp.Document` met het formulierontwerp doorgeven aan de Forms-service. Twee nieuwe methoden met de naam `renderPDFForm2` en `renderHTMLForm2` accepteren een `com.adobe.idp.Document` -object dat een formulierontwerp bevat. (Zie [ het overgaan van Documenten tot de Dienst van Forms ](/help/forms/developing/passing-documents-forms-service.md)
 
 U kunt deze taken uitvoeren met de Forms-service:
 
-* Interactieve PDF forms renderen. (Zie [Interactieve PDF forms renderen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
-* Formulieren weergeven op de client. (Zie [Forms renderen op de client](/help/forms/developing/rendering-forms-client.md).)
-* Formulieren weergeven op basis van fragmenten. (Zie [Forms renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
-* Formulieren met rechten weergeven. (Zie [Forms met rechten voor renderen](/help/forms/developing/rendering-rights-enabled-forms.md).)
-* Formulieren weergeven als HTML. (Zie [Forms renderen als HTML](/help/forms/developing/rendering-forms-html.md).)
-* HTML Forms renderen met aangepaste CSS-bestanden ([HTML Forms renderen met aangepaste CSS-bestanden](/help/forms/developing/rendering-html-forms-using-custom.md).)
-* Ingevulde formulieren verwerken. (Zie [Verzendde Forms afhandelen](/help/forms/developing/handling-submitted-forms.md).)
-* PDF-documenten maken met verzonden XML-gegevens. (Zie [PDF-documenten maken met verzonden XML-gegevens](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
-* Formulieren vooraf invullen. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
-* Documenten doorgeven. (Zie [Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md)
-* Formuliergegevens berekenen. (Zie [Formuliergegevens berekenen](/help/forms/developing/calculating-form-data.md).)
-* Optimaliseer een toepassing. (Zie [De prestaties van de Forms-service optimaliseren](/help/forms/developing/optimizing-performance-forms-service.md).)
+* Interactieve PDF forms renderen. (Zie [ teruggevend Interactieve PDF forms ](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Formulieren weergeven op de client. (Zie [ teruggevend Forms bij de Cliënt ](/help/forms/developing/rendering-forms-client.md).)
+* Formulieren weergeven op basis van fragmenten. (Zie [ teruggevend Forms dat op Fragments ](/help/forms/developing/rendering-forms-based-fragments.md) wordt gebaseerd.)
+* Formulieren met rechten weergeven. (Zie [ teruggevend rechten-Toegelaten Forms ](/help/forms/developing/rendering-rights-enabled-forms.md).)
+* Formulieren weergeven als HTML. (Zie [ teruggevend Forms als HTML ](/help/forms/developing/rendering-forms-html.md).)
+* Het teruggeven van HTML Forms die de Dossiers van CSS van de Douane gebruiken ([ teruggevend HTML Forms gebruikend de Dossiers van douaneCSS ](/help/forms/developing/rendering-html-forms-using-custom.md).)
+* Ingevulde formulieren verwerken. (Zie [ Behandelend Voorgelegde Forms ](/help/forms/developing/handling-submitted-forms.md).)
+* PDF-documenten maken met verzonden XML-gegevens. (Zie [ Creërend de Documenten van de PDF met Voorgelegde Gegevens van XML ](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
+* Formulieren vooraf invullen. (Zie [ Prepopulating Forms met Stroombare Lay-outs ](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+* Documenten doorgeven. (Zie [ het overgaan van Documenten tot de Dienst van Forms ](/help/forms/developing/passing-documents-forms-service.md)
+* Formuliergegevens berekenen. (Zie [ Berekend de Gegevens van de Vorm ](/help/forms/developing/calculating-form-data.md).)
+* Optimaliseer een toepassing. (Zie [ Optimizing de Prestaties van de Dienst van Forms ](/help/forms/developing/optimizing-performance-forms-service.md).)

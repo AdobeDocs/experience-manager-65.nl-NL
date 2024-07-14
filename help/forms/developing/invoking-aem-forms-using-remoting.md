@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Forms aanroepen met Remoting {#invoking-aem-forms-using-remoting}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
 In Workbench gemaakte processen kunnen worden aangeroepen door Remoting te gebruiken. Dat wil zeggen dat u een AEM Forms-proces kunt aanroepen vanuit een clienttoepassing die met Flex is gebouwd. Deze eigenschap is gebaseerd op de Diensten van Gegevens.
 
@@ -30,9 +30,9 @@ In Workbench gemaakte processen kunnen worden aangeroepen door Remoting te gebru
 >
 >Als een AEM Forms-service niet is geconfigureerd om anonieme toegang toe te staan, resulteren aanvragen van een Flex-client in een webbrowserprobleem. De gebruiker moet gebruikersnaam en wachtwoord invoeren.
 
-Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDocument`, kan worden aangeroepen met Verwijderen. (Voor informatie over dit proces, zoals de invoer- en uitvoerwaarden, raadpleegt u [Voorbeeld van een kortlopend proces](/help/forms/developing/aem-forms-processes.md).)
+Het volgende kortstondige AEM Forms-proces, met de naam `MyApplication/EncryptDocument` , kan worden aangeroepen met Remoting. (Voor informatie over dit proces zoals zijn input en outputwaarden, zie [ Kort levend procesvoorbeeld ](/help/forms/developing/aem-forms-processes.md).)
 
-![iu_iu_encryptdocumentprocess2](assets/iu_iu_encryptdocumentprocess2.png)
+![ iu_iu_encryptdocumentprocess2 ](assets/iu_iu_encryptdocumentprocess2.png)
 
 >[!NOTE]
 >
@@ -40,19 +40,19 @@ Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDo
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
-1. Hiermee wordt het onbeveiligde PDF-document opgehaald dat als een invoerwaarde wordt doorgegeven. Deze actie is gebaseerd op de `SetValue` -bewerking. De naam van de invoerparameter is `inDoc` en het gegevenstype is `document`. (De `document` gegevenstype is een beschikbaar gegevenstype vanuit Workbench.)
-1. Hiermee versleutelt u het PDF-document met een wachtwoord. Deze actie is gebaseerd op de `PasswordEncryptPDF` -bewerking. De naam van de uitvoerwaarde voor dit proces is `outDoc` en staat voor het met een wachtwoord gecodeerde PDF-document. Het gegevenstype van outDoc is `document`.
-1. Hiermee slaat u het met een wachtwoord gecodeerde PDF-document op als een PDF-bestand in het lokale bestandssysteem. Deze actie is gebaseerd op de `WriteDocument` -bewerking.
+1. Hiermee wordt het onbeveiligde PDF-document opgehaald dat als een invoerwaarde wordt doorgegeven. Deze handeling is gebaseerd op de bewerking `SetValue` . De naam van de invoerparameter is `inDoc` en het gegevenstype is `document` . (Het gegevenstype van `document` is een beschikbaar gegevenstype vanuit Workbench.)
+1. Hiermee versleutelt u het PDF-document met een wachtwoord. Deze handeling is gebaseerd op de bewerking `PasswordEncryptPDF` . De naam van de uitvoerwaarde voor dit proces is `outDoc` en vertegenwoordigt het met een wachtwoord gecodeerde PDF-document. Het gegevenstype van outDoc is `document`.
+1. Hiermee slaat u het met een wachtwoord gecodeerde PDF-document op als een PDF-bestand in het lokale bestandssysteem. Deze handeling is gebaseerd op de bewerking `WriteDocument` .
 
 >[!NOTE]
 >
->De `MyApplication/EncryptDocument` -proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen, creeer een proces genoemd `MyApplication/EncryptDocument` met Workbench.
+>Het `MyApplication/EncryptDocument` -proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u de codevoorbeelden wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench.
 
 >[!NOTE]
 >
->Voor informatie over het gebruiken van het Verwijderen om een langdurig proces aan te halen, zie [Het aanhalen van mens-Centric langlevende Processen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+>Voor informatie over het gebruiken van het Verwijderen om een langdurig proces aan te halen, zie [ het Aanhalen van mens-Centric langlevende Processen ](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
-**Zie ook**
+**zie ook**
 
 [Het AEM Forms Flex-bibliotheekbestand opnemen](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
@@ -74,7 +74,7 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
 >[!NOTE]
 >
->*Plaats het bestand crossdomain.xml op de juiste plaats. Als u bijvoorbeeld AEM Forms hebt geïmplementeerd op JBoss, plaatst u dit bestand op de volgende locatie: &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
+>*ben zeker om het crossdomain.xml- dossier in de juiste plaats te plaatsen. Bijvoorbeeld, veronderstellend dat u AEM Forms op JBoss opstelde, plaats dit dossier in de volgende plaats: &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
 
 ## Het AEM Forms Flex-bibliotheekbestand opnemen {#including-the-aem-forms-flex-library-file}
 
@@ -82,9 +82,9 @@ Als u AEM Forms-processen programmatisch wilt aanroepen met Remoting, voegt u he
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  waarbij &lt;*install_directory*> is de map waarin AEM Forms is geïnstalleerd.
+  waar &lt;*install_directory*> de folder is waar AEM Forms geïnstalleerd is.
 
-**Zie ook**
+**zie ook**
 
 [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -96,13 +96,13 @@ Als u AEM Forms-processen programmatisch wilt aanroepen met Remoting, voegt u he
 
 ## Documenten verwerken met Verwijderen {#handling-documents-with-remoting}
 
-Een van de belangrijkste niet-primitieve Java™-typen die in AEM Forms worden gebruikt, is de `com.adobe.idp.Document` klasse. Een document is doorgaans vereist om een AEM Forms-bewerking aan te roepen. Het is voornamelijk een PDF-document, maar kan ook andere documenttypen bevatten, zoals SWF, HTML, XML of een DOC-bestand. (Zie [Gegevens doorgeven aan AEM Forms-services met de Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+Een van de belangrijkste niet-primitieve Java™-typen die in AEM Forms wordt gebruikt, is de `com.adobe.idp.Document` -klasse. Een document is doorgaans vereist om een AEM Forms-bewerking aan te roepen. Het is voornamelijk een PDF-document, maar kan ook andere documenttypen bevatten, zoals SWF, HTML, XML of een DOC-bestand. (Zie [ het overgaan van gegevens tot de diensten van AEM Forms gebruikend Java API ](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
 Een clienttoepassing die met Flex is gebouwd, kan niet rechtstreeks een document aanvragen. U kunt Adobe Reader bijvoorbeeld niet starten om een URL aan te vragen die een PDF-bestand maakt. Verzoeken om documenttypen, zoals PDF- en Microsoft® Word-documenten, retourneren een resultaat dat een URL is. Het is de verantwoordelijkheid van de klant om de inhoud van de URL weer te geven. Met de service Documentbeheer kunt u informatie over de URL en het inhoudstype genereren. Verzoeken om XML-documenten retourneren het volledige XML-document in het resultaat.
 
 ### Een document doorgeven als een invoerparameter {#passing-a-document-as-an-input-parameter}
 
-Een clienttoepassing die met Flex is gebouwd, kan een document niet rechtstreeks doorgeven aan een AEM Forms-proces. In plaats daarvan gebruikt de clienttoepassing een instantie van het `mx.rpc.livecycle.DocumentReference` De klasse van het ActionScript om inputparameters tot een verrichting over te gaan die een verrichting verwacht `com.adobe.idp.Document` -instantie. Een Flex-clienttoepassing heeft verschillende opties om een `DocumentReference` object:
+Een clienttoepassing die met Flex is gebouwd, kan een document niet rechtstreeks doorgeven aan een AEM Forms-proces. In plaats daarvan gebruikt de clienttoepassing een instantie van de klasse `mx.rpc.livecycle.DocumentReference` ActionScript om invoerparameters door te geven aan een bewerking die een `com.adobe.idp.Document` -instantie verwacht. Een Flex-clienttoepassing heeft verschillende opties voor het instellen van een `DocumentReference` -object:
 
 * Wanneer het document op de server is en de bestandslocatie bekend is, stelt u de eigenschap referenceType van het object DocumentReference in op REF_TYPE_FILE. Stel de eigenschap fileRef in op de locatie van het bestand, zoals in het volgende voorbeeld:
 
@@ -128,14 +128,14 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* Als het document zich niet op de server bevindt, gebruikt u het verwijderbare uploadserver om een document te uploaden naar AEM Forms. Nieuw in AEM Forms is de mogelijkheid om beveiligde documenten te uploaden. Wanneer u een beveiligd document uploadt, moet u een gebruiker gebruiken die de *Gebruiker van toepassing voor uploaden van document* rol. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U wordt aangeraden een beveiligd document met één aanmeldingsnaam te uploaden. (Zie [Beveiligde documenten doorgeven om processen aan te roepen met Verwijderen](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+* Als het document zich niet op de server bevindt, gebruikt u het verwijderbare uploadserver om een document te uploaden naar AEM Forms. Nieuw in AEM Forms is de mogelijkheid om beveiligde documenten te uploaden. Wanneer het uploaden van een veilig document, moet u een gebruiker gebruiken die het *Document heeft uploadt de rol van de Gebruiker van de Toepassing*. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U wordt aangeraden een beveiligd document met één aanmeldingsnaam te uploaden. (Zie [ het overgaan van veilige documenten om processen aan te halen gebruikend het Verwijderen ](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 >[!NOTE]
 >
-als AEM Forms zo is geconfigureerd dat onbeveiligde documenten kunnen worden geüpload, kunt u een gebruiker die niet over de gebruikersrol Document Upload Application beschikt, gebruiken om een document te uploaden. Een gebruiker kan ook beschikken over de machtiging Document uploaden. Als AEM Forms echter is geconfigureerd om alleen beveiligde documenten toe te staan, moet u ervoor zorgen dat de gebruiker beschikt over de rol Gebruiker van Document uploaden of de machtiging Uploaden document. (Zie [AEM Forms configureren voor het accepteren van beveiligde en onbeveiligde documenten](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
+als AEM Forms zo is geconfigureerd dat onbeveiligde documenten kunnen worden geüpload, kunt u een gebruiker die niet over de gebruikersrol Document Upload Application beschikt, gebruiken om een document te uploaden. Een gebruiker kan ook beschikken over de machtiging Document uploaden. Als AEM Forms echter is geconfigureerd om alleen beveiligde documenten toe te staan, moet u ervoor zorgen dat de gebruiker beschikt over de rol Gebruiker van Document uploaden of de machtiging Uploaden document. (Zie [ Vormend AEM Forms om veilige en onveilige documenten ](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents) goed te keuren.
 
-U gebruikt de standaarduploadmogelijkheden voor Flash voor de opgegeven upload-URL: `https://SERVER:PORT/remoting/lcfileupload`. U kunt dan de `DocumentReference` object wanneer een invoerparameter van het type `Document` wordt verwacht
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`In het dialoogvenster Snel starten verwijderen wordt het verwijderbare uploadserver gebruikt om een PDF-bestand door te geven aan de `MyApplication/EncryptDocument`proces. (Zie [Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+U gebruikt de standaard uploadmogelijkheden voor Flash voor de opgegeven upload-URL: `https://SERVER:PORT/remoting/lcfileupload` . Vervolgens kunt u het object `DocumentReference` gebruiken wanneer een invoerparameter van het type `Document` wordt verwacht
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }` het Verwijderen Snelle Begin gebruikt het Verwijderen uploadt servlet om een dossier van de PDF tot het `MyApplication/EncryptDocument` proces over te gaan. (Zie [ Aanroepend een kortstondig proces door een onbeveiligd document over te gaan gebruikend (Vervangen voor AEM vormen) AEM Forms die ](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) verwijdert.)
 
 ```java
  
@@ -168,13 +168,13 @@ function completeHandler(event: DataEvent): void  { 
 }
 ```
 
-In het dialoogvenster Snel starten verwijderen wordt het verwijderbare uploadserver gebruikt om een PDF-bestand door te geven aan de `MyApplication/EncryptDocument`proces. (Zie [Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+Het Verwijderen Snelle Begin gebruikt het Verwijderen uploadt servlet om een dossier van de PDF tot het `MyApplication/EncryptDocument` proces over te gaan. (Zie [ Aanroepend een kortstondig proces door een onbeveiligd document over te gaan gebruikend (Vervangen voor AEM vormen) AEM Forms die ](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) verwijdert.)
 
 ### Een document terugsturen naar een clienttoepassing {#passing-a-document-back-to-a-client-application}
 
-Een clienttoepassing ontvangt een object van het type `mx.rpc.livecycle.DocumentReference` voor een de dienstverrichting die een `com.adobe.idp.Document` -instantie als een uitvoerparameter. Omdat een clienttoepassing werkt met ActionScript-objecten en niet met Java, kunt u een op Java gebaseerd Document-object niet teruggeven aan een Flex-client. In plaats daarvan genereert de server een URL voor het document en geeft de URL weer door aan de client. De `DocumentReference` object `referenceType` eigenschap geeft aan of de inhoud zich in de `DocumentReference` object of moet worden opgehaald van een URL in het dialoogvenster `DocumentReference.url` eigenschap. De `DocumentReference.contentType` eigenschap geeft het type document aan.
+Een clienttoepassing ontvangt een object van het type `mx.rpc.livecycle.DocumentReference` voor een servicebewerking die een `com.adobe.idp.Document` -instantie als uitvoerparameter retourneert. Omdat een clienttoepassing werkt met ActionScript-objecten en niet met Java, kunt u een op Java gebaseerd Document-object niet teruggeven aan een Flex-client. In plaats daarvan genereert de server een URL voor het document en geeft de URL weer door aan de client. De eigenschap `referenceType` van het `DocumentReference` -object geeft aan of de inhoud zich in het `DocumentReference` -object bevindt of moet worden opgehaald van een URL in de eigenschap `DocumentReference.url` . De eigenschap `DocumentReference.contentType` geeft het type document op.
 
-**Zie ook**
+**zie ook**
 
 [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -190,26 +190,26 @@ Een clienttoepassing ontvangt een object van het type `mx.rpc.livecycle.Document
 
 Als u een AEM Forms-proces wilt aanroepen vanuit een toepassing die is gebouwd met Flex, voert u de volgende taken uit:
 
-1. Een `mx:RemoteObject` -instantie.
-1. Een `ChannelSet` -instantie.
+1. Maak een `mx:RemoteObject` -instantie.
+1. Maak een `ChannelSet` -instantie.
 1. Geef de vereiste invoerwaarden door.
 1. Retourwaarden verwerken.
 
 >[!NOTE]
 >
-In deze sectie wordt besproken hoe u een AEM Forms-proces kunt aanroepen en een document kunt uploaden wanneer AEM Forms is geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over het aanroepen van AEM Forms-processen en het uploaden van beveiligde documenten, en over hoe u AEM Forms kunt configureren voor het accepteren van beveiligde en onbeveiligde documenten, raadpleegt u [Beveiligde documenten doorgeven om processen aan te roepen met Verwijderen](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+In deze sectie wordt besproken hoe u een AEM Forms-proces kunt aanroepen en een document kunt uploaden wanneer AEM Forms is geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over hoe te om processen van AEM Forms aan te halen en veilige documenten te uploaden en hoe te AEM Forms vormen om veilige en onveilige documenten goed te keuren, zie [ het overgaan veilige documenten om processen aan te halen gebruikend het Verwijderen ](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
-**Een mx:RemoteObject-instantie maken**
+**Creërend mx:instantie RemoteObject**
 
-U maakt een `mx:RemoteObject` -instantie om een AEM Forms-proces aan te roepen dat in Workbench is gemaakt. Een `mx:RemoteObject` -instantie, geeft u de volgende waarden op:
+U maakt een `mx:RemoteObject` -instantie om een AEM Forms-proces aan te roepen dat in Workbench is gemaakt. Als u een `mx:RemoteObject` -instantie wilt maken, geeft u de volgende waarden op:
 
-* **id:** De naam van `mx:RemoteObject` instantie die het aan te roepen proces vertegenwoordigt.
-* **bestemming:** The name of the AEM Forms process to invoke. Als u bijvoorbeeld de opdracht `MyApplication/EncryptDocument` proces, specificeren `MyApplication/EncryptDocument`.
-* **resultaat:** De naam van de Flex-methode die het resultaat afhandelt.
+* **identiteitskaart:** de naam van de `mx:RemoteObject` instantie die het proces vertegenwoordigt om aan te halen.
+* **bestemming:** de naam van het proces van AEM Forms om aan te halen. Als u bijvoorbeeld het `MyApplication/EncryptDocument` -proces wilt aanroepen, geeft u `MyApplication/EncryptDocument` op.
+* **resultaat:** de naam van de methode van Flex die het resultaat behandelt.
 
-Binnen de `mx:RemoteObject` -tag, geeft een `<mx:method>` -tag die de naam van de oproepmethode van het proces aangeeft. De naam van een Forms-oproepmethode is doorgaans `invoke`.
+Geef binnen de tag `mx:RemoteObject` een `<mx:method>` -tag op die de naam van de oproepmethode van het proces opgeeft. De naam van een Forms-oproepmethode is doorgaans `invoke` .
 
-In het volgende codevoorbeeld wordt een `mx:RemoteObject` instantie die de `MyApplication/EncryptDocument` proces.
+In het volgende codevoorbeeld wordt een instantie `mx:RemoteObject` gemaakt die het `MyApplication/EncryptDocument` -proces aanroept.
 
 ```java
  <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);">
@@ -217,9 +217,9 @@ In het volgende codevoorbeeld wordt een `mx:RemoteObject` instantie die de `MyAp
       </mx:RemoteObject>
 ```
 
-**Een kanaal naar AEM Forms maken**
+**creeer een Kanaal aan AEM Forms**
 
-Een cliënttoepassing kan AEM Forms aanhalen door een Kanaal in MXML of ActionScript te specificeren, zoals het volgende ActionScript voorbeeld toont. Het kanaal moet een `AMFChannel`, `SecureAMFChannel`, `HTTPChannel`, of `SecureHTTPChannel`.
+Een cliënttoepassing kan AEM Forms aanhalen door een Kanaal in MXML of ActionScript te specificeren, zoals het volgende ActionScript voorbeeld toont. Het kanaal moet een `AMFChannel`, `SecureAMFChannel`, `HTTPChannel` of `SecureHTTPChannel` zijn.
 
 ```java
      ...
@@ -233,13 +233,13 @@ Een cliënttoepassing kan AEM Forms aanhalen door een Kanaal in MXML of ActionSc
      ...
 ```
 
-Wijs het `ChannelSet` aan de `mx:RemoteObject` instantie `channelSet` veld (zoals in het vorige codevoorbeeld). Over het algemeen importeert u de kanaalklasse in een importinstructie in plaats van de volledig gekwalificeerde naam op te geven wanneer u de instructie `ChannelSet.addChannel` methode.
+Wijs de `ChannelSet` -instantie toe aan het veld `mx:RemoteObject` instance&#39;s `channelSet` (zoals in het vorige codevoorbeeld). Over het algemeen importeert u de kanaalklasse in een importinstructie in plaats van de volledig gekwalificeerde naam op te geven wanneer u de methode `ChannelSet.addChannel` aanroept.
 
-**Invoerwaarden doorgeven**
+**het overgaan van inputwaarden**
 
-Een in Workbench gemaakt proces kan nul of meer invoerparameters gebruiken en een uitvoerwaarde retourneren. Een clienttoepassing geeft invoerparameters door binnen een `ActionScript` object met velden die overeenkomen met parameters die bij het AEM Forms-proces horen. Het kortstondige proces, genoemd `MyApplication/EncryptDocument`, vereist één invoerparameter met de naam `inDoc`. De naam van de bewerking die door het proces wordt weergegeven, is `invoke` (de standaardnaam voor een kortstondig proces). (Zie [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Een in Workbench gemaakt proces kan nul of meer invoerparameters gebruiken en een uitvoerwaarde retourneren. Een clienttoepassing geeft invoerparameters binnen een `ActionScript` -object door met velden die overeenkomen met parameters die bij het AEM Forms-proces horen. Voor het kortstondige proces met de naam `MyApplication/EncryptDocument` is één invoerparameter met de naam `inDoc` vereist. De naam van de bewerking die door het proces wordt weergegeven, is `invoke` (de standaardnaam voor een kortstondig proces). (Zie [ het Aanhalen van AEM Forms die (voor AEM vormen) AEM Forms verwijdert ](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting) gebruikt.)
 
-In het volgende codevoorbeeld wordt een PDF-document doorgegeven aan de `MyApplication/EncryptDocument` proces:
+In het volgende codevoorbeeld wordt een PDF-document doorgegeven aan het `MyApplication/EncryptDocument` -proces:
 
 ```java
      ...
@@ -254,11 +254,11 @@ In het volgende codevoorbeeld wordt een PDF-document doorgegeven aan de `MyAppli
      ...
 ```
 
-In dit codevoorbeeld: `pdfDocument` is een `DocumentReference` -instantie die een onbeveiligd PDF-document bevat. Voor informatie over een `DocumentReference`, zie [Documenten verwerken met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
+In dit codevoorbeeld is `pdfDocument` een `DocumentReference` -instantie die een onbeveiligd PDF-document bevat. Voor informatie over a `DocumentReference`, zie [ Behandelende documenten met (Vervangen voor AEM vormen) AEM Forms Verwijderend ](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
 
-**Een specifieke versie van een service aanroepen**
+**aanroepend een specifieke versie van de dienst**
 
-U kunt een specifieke versie van een Forms-service aanroepen met een `_version` parameter in de parameterkaart van de aanroeping. Bijvoorbeeld, om versie 1.2 van te roepen `MyApplication/EncryptDocument` service:
+U kunt een specifieke versie van een Forms-service aanroepen met behulp van een parameter `_version` in de parameterkaart van de aanroep. Als u bijvoorbeeld versie 1.2 van de service `MyApplication/EncryptDocument` wilt aanroepen:
 
 ```java
  var params:Object = new Object();
@@ -267,11 +267,11 @@ U kunt een specifieke versie van een Forms-service aanroepen met een `_version` 
  var token:AsyncToken = echoService.echoString(params);
 ```
 
-De `version` parameter moet een tekenreeks zijn met één punt. De waarden aan de linkerzijde, de belangrijkste versie, en juiste, minder belangrijke versie, van de periode moeten gehelen zijn. Als deze parameter niet wordt gespecificeerd, wordt de hoofd actieve versie aangehaald.
+De parameter `version` moet een tekenreeks met één punt zijn. De waarden aan de linkerzijde, de belangrijkste versie, en juiste, minder belangrijke versie, van de periode moeten gehelen zijn. Als deze parameter niet wordt gespecificeerd, wordt de hoofd actieve versie aangehaald.
 
-**Retourwaarden afhandelen**
+**Behandelend terugkeerwaarden**
 
-AEM Forms-procesuitvoerparameters worden gedeserialiseerd in ActionScript-objecten waaruit de clienttoepassing specifieke parameters op naam extraheert, zoals in het volgende voorbeeld wordt getoond. (De uitvoerwaarde van de `MyApplication/EncryptDocument` process heet `outDoc`.)
+AEM Forms-procesuitvoerparameters worden gedeserialiseerd in ActionScript-objecten waaruit de clienttoepassing specifieke parameters op naam extraheert, zoals in het volgende voorbeeld wordt getoond. (De uitvoerwaarde van het `MyApplication/EncryptDocument` -proces krijgt de naam `outDoc` .)
 
 ```java
      ...
@@ -280,15 +280,15 @@ AEM Forms-procesuitvoerparameters worden gedeserialiseerd in ActionScript-object
      ...
 ```
 
-**Het MyApplication/EncryptDocument-proces aanroepen**
+**aanroepend het proces MyApplication/EncryptDocument**
 
-U kunt de `MyApplication/EncryptDocument` door de volgende stappen uit te voeren:
+U kunt het `MyApplication/EncryptDocument` -proces activeren door de volgende stappen uit te voeren:
 
-1. Een `mx:RemoteObject` via ActionScript of MXML. Zie Een instantie mx:RemoteObject maken.
-1. Een `ChannelSet` -instantie om te communiceren met AEM Forms en deze te koppelen aan de `mx:RemoteObject` -instantie. Zie Een kanaal naar AEM Forms maken.
-1. Roep ChannelSet `login` of de `setCredentials` methode om de waarde en het wachtwoord van de gebruikersidentificatie op te geven. (Zie [Single Sign-On gebruiken](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
-1. Een `mx.rpc.livecycle.DocumentReference` instantie met een onbeveiligd PDF-document dat aan de `MyApplication/EncryptDocument` proces. (Zie [Een document doorgeven als een invoerparameter](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. Codeer het PDF-document door het `mx:RemoteObject` instantie `invoke` methode. Geef de `Object` die de invoerparameter bevat (dit is het onbeveiligde PDF-document). Zie Invoerwaarden doorgeven.
+1. Maak een `mx:RemoteObject` -instantie via ActionScript of MXML. Zie Een instantie mx:RemoteObject maken.
+1. Stel een `ChannelSet` -instantie in om te communiceren met AEM Forms en koppel deze aan de `mx:RemoteObject` -instantie. Zie Een kanaal naar AEM Forms maken.
+1. Roep de methode `login` van ChannelSet of de methode `setCredentials` van de service aan om de waarde en het wachtwoord van de gebruikersidentificatie op te geven. (Zie [ Gebruikend enig teken-op ](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. U kunt een `mx.rpc.livecycle.DocumentReference` -instantie vullen met een onbeveiligd PDF-document dat wordt doorgegeven aan het `MyApplication/EncryptDocument` -proces. (Zie [ het overgaan van een document als inputparameter ](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
+1. Codeer het PDF-document door de methode `invoke` van de instantie `mx:RemoteObject` aan te roepen. Geef `Object` door die de invoerparameter bevat (dit is het onbeveiligde PDF-document). Zie Invoerwaarden doorgeven.
 1. Haal het met wachtwoord gecodeerde PDF-document op dat door het proces wordt geretourneerd. Zie Retourwaarden afhandelen.
 
 [Snel starten: Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Verouderd voor AEM formulieren) AEM Forms Remoting](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
@@ -303,25 +303,25 @@ Voor douaneauthentificatie, verzendt de server een fout naar de cliënt om erop 
 
 >[!NOTE]
 >
-Voor informatie over het uitvoeren van authentificatie die de tokens van HTTP gebruikt, zie [Het creëren van de toepassingen van de Flash Builder die authentificatie SSO gebruikend de tokens van HTTP uitvoeren](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
+Voor informatie over het uitvoeren van authentificatie gebruikend de tokens van HTTP, zie [ Creërend de toepassingen van de Flash Builder die authentificatie uitvoeren SSO gebruikend de tokens van HTTP ](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### Aangepaste verificatie gebruiken {#using-custom-authentication}
 
-U laat douaneauthentificatie in beleidsconsole toe door de authentificatiemethode van Basis in Douane op het remoting eindpunt te veranderen. Als u aangepaste verificatie gebruikt, roept uw clienttoepassing de `ChannelSet.login` methode voor aanmelden en de `ChannelSet.logout` methode om af te melden.
+U laat douaneauthentificatie in beleidsconsole toe door de authentificatiemethode van Basis in Douane op het remoting eindpunt te veranderen. Als u aangepaste verificatie gebruikt, roept uw clienttoepassing de methode `ChannelSet.login` aan om u aan te melden en de methode `ChannelSet.logout` om zich af te melden.
 
 >[!NOTE]
 >
-In de vorige versie van AEM Forms hebt u referenties naar een doel verzonden door de `RemoteObject.setCredentials` methode. De `setCredentials` De methode heeft de gegevens pas daadwerkelijk doorgegeven aan de server als de component voor het eerst probeert verbinding te maken met de server. Daarom als de component een foutengebeurtenis uitbracht, kon u niet zeker zijn als de fout wegens een authentificatiefout, of om een andere reden gebeurde. De `ChannelSet.login` De methode verbindt met de server wanneer u het roept zodat u een authentificatiekwestie kunt onmiddellijk behandelen. Hoewel u het `setCredentials` wordt aangeraden de `ChannelSet.login` methode.
+In de vorige versie van AEM Forms hebt u referenties naar een doel verzonden door de methode `RemoteObject.setCredentials` aan te roepen. De methode `setCredentials` gaf de gegevens pas daadwerkelijk door aan de server als de component voor het eerst probeert verbinding te maken met de server. Daarom als de component een foutengebeurtenis uitbracht, kon u niet zeker zijn als de fout wegens een authentificatiefout, of om een andere reden gebeurde. De methode `ChannelSet.login` maakt verbinding met de server wanneer u deze aanroept, zodat u een verificatieprobleem direct kunt afhandelen. Hoewel u de methode `setCredentials` kunt blijven gebruiken, wordt aangeraden de methode `ChannelSet.login` te gebruiken.
 
-Omdat de veelvoudige bestemmingen de zelfde kanalen, en het overeenkomstige voorwerp kunnen gebruiken ChannelSet, het programma openen aan één bestemmings login de gebruiker aan een andere bestemming die het zelfde kanaal of de kanalen gebruikt. Als twee componenten verschillende geloofsbrieven op het zelfde voorwerp toepassen ChannelSet, worden de laatste toegepaste geloofsbrieven gebruikt. Als meerdere componenten hetzelfde geverifieerde ChannelSet-object gebruiken, wordt het `logout` de methode registreert alle componenten uit de bestemmingen.
+Omdat de veelvoudige bestemmingen de zelfde kanalen, en het overeenkomstige voorwerp kunnen gebruiken ChannelSet, het programma openen aan één bestemmings login de gebruiker aan een andere bestemming die het zelfde kanaal of de kanalen gebruikt. Als twee componenten verschillende geloofsbrieven op het zelfde voorwerp toepassen ChannelSet, worden de laatste toegepaste geloofsbrieven gebruikt. Als meerdere componenten hetzelfde geverifieerde ChannelSet-object gebruiken, worden bij het aanroepen van de methode `logout` alle componenten uit de doelen uitgecheckt.
 
-In het volgende voorbeeld wordt het `ChannelSet.login` en `ChannelSet.logout` methoden met een RemoteObject-besturingselement. Deze toepassing voert de volgende handelingen uit:
+In het volgende voorbeeld worden de methoden `ChannelSet.login` en `ChannelSet.logout` gebruikt met een RemoteObject-besturingselement. Deze toepassing voert de volgende handelingen uit:
 
-* Maakt een `ChannelSet` object in het `creationComplete` handler die de kanalen vertegenwoordigt die door de `RemoteObject` component
-* Hiermee geeft u referenties door aan de server door de `ROLogin` functie in reactie op een Button-klikgebeurtenis
+* Maakt een `ChannelSet` -object in de `creationComplete` -handler die de kanalen vertegenwoordigt die door de `RemoteObject` -component worden gebruikt.
+* Geeft referenties door aan de server door de functie `ROLogin` aan te roepen als reactie op een klikgebeurtenis Button
 * Gebruikt de component RemoteObject om een Koord naar de server te verzenden in antwoord op een Button klikgebeurtenis. De server retourneert dezelfde String terug naar de RemoteObject-component
 * Gebruikt de resultaatgebeurtenis van de component RemoteObject om het Koord in een controle te tonen TextArea
-* Logs uit de server door te roepen `ROLogout` functie in reactie op een Button-klikgebeurtenis
+* Hiermee wordt u afgemeld bij de server door de functie `ROLogout` aan te roepen als reactie op een klikgebeurtenis Button
 
 ```java
  <?xml version="1.0"?>
@@ -443,7 +443,7 @@ In het volgende voorbeeld wordt het `ChannelSet.login` en `ChannelSet.logout` me
  </mx:Application>
 ```
 
-De `login` en `logout` methoden retourneren een AsyncToken-object. Wijs gebeurtenismanagers aan het voorwerp AsyncToken voor de resultaatgebeurtenis toe om een succesvolle vraag te behandelen, en voor de foutengebeurtenis om een mislukking te behandelen.
+De methoden `login` en `logout` retourneren een object AsyncToken. Wijs gebeurtenismanagers aan het voorwerp AsyncToken voor de resultaatgebeurtenis toe om een succesvolle vraag te behandelen, en voor de foutengebeurtenis om een mislukking te behandelen.
 
 ### Single Sign-On gebruiken {#using-single-sign-on}
 
@@ -451,7 +451,7 @@ AEM gebruikers kunnen verbinding maken met meerdere AEM Forms-webtoepassingen om
 
 Elke AEM Forms-webtoepassing wordt verpakt in een eigen WAR-bestand (Web Archive), dat vervolgens wordt verpakt als onderdeel van een EAR-bestand (Enterprise Archive). Aangezien een toepassingsserver het delen van sessiegegevens in verschillende webtoepassingen niet toestaat, gebruikt AEM Forms HTTP-cookies om verificatiegegevens op te slaan. Met verificatiecookies kan een gebruiker zich aanmelden bij een Forms-toepassing en vervolgens verbinding maken met andere AEM Forms-webtoepassingen. Deze techniek wordt Single Sign-On genoemd.
 
-AEM Forms-ontwikkelaars schrijven clienttoepassingen om de functionaliteit van formulierhulplijnen (afgekeurd) uit te breiden en de werkruimte aan te passen. Een Workspace-toepassing kan bijvoorbeeld een proces starten. De cliënttoepassing gebruikt dan een remoting eindpunt om gegevens van de dienst van Forms terug te winnen.
+AEM Forms-ontwikkelaars schrijven clienttoepassingen om de functionaliteit van formulierhulplijnen (afgekeurd) uit te breiden en Workspace aan te passen. Een Workspace-toepassing kan bijvoorbeeld een proces starten. De cliënttoepassing gebruikt dan een remoting eindpunt om gegevens van de dienst van Forms terug te winnen.
 
 Wanneer een AEM Forms-service wordt aangeroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting, geeft de clienttoepassing het verificatiecookie als onderdeel van de aanvraag door. Aangezien de gebruiker al is geverifieerd, is geen aanvullende aanmelding vereist om verbinding te maken van de clienttoepassing met de AEM Forms-service.
 
@@ -461,7 +461,7 @@ Als een cookie ongeldig is of ontbreekt, wordt niet impliciet omgeleid naar een 
 
 U kunt het AEM Forms-mechanisme voor eenmalige aanmelding omzeilen door een clienttoepassing te schrijven die zich zelfstandig aanmeldt en zich afmeldt. Als u het Single Sign-On mechanisme omzeilt, kunt u of basis of douaneauthentificatie met uw toepassing gebruiken.
 
-Omdat dit mechanisme het AEM Forms Single Sign-On mechanisme niet gebruikt, wordt er geen verificatiecookie naar de client geschreven. Aanmeldingsgegevens worden opgeslagen in het dialoogvenster `ChannelSet` -object voor het externe kanaal. Daarom `RemoteObject` roept u over het zelfde aanroept `ChannelSet` in het kader van deze geloofsbrieven worden gedaan.
+Omdat dit mechanisme het AEM Forms Single Sign-On mechanisme niet gebruikt, wordt er geen verificatiecookie naar de client geschreven. Aanmeldingsgegevens worden opgeslagen in het `ChannelSet` -object voor het externe kanaal. Daarom worden alle `RemoteObject` aanroepen die u over dezelfde `ChannelSet` aanroept, uitgevoerd in de context van deze referenties.
 
 ### Single Sign-On instellen in AEM Forms {#setting-up-single-sign-on-in-aem-forms}
 
@@ -469,11 +469,11 @@ Als u Single Sign-On wilt gebruiken in AEM Forms, installeert u de component voo
 
 ### Een clienttoepassing schrijven die gebruikmaakt van Single Sign-On {#writing-a-client-application-that-uses-single-sign-on}
 
-Wanneer u van het enige sign-on mechanisme voordeel haalt, verwacht u gebruikers om login door de gecentraliseerde login dienst te gebruiken alvorens een cliënttoepassing te beginnen. Een clienttoepassing kan zich dus niet aanmelden via de browser of door het `ChannelSet.login` methode.
+Wanneer u van het enige sign-on mechanisme voordeel haalt, verwacht u gebruikers om login door de gecentraliseerde login dienst te gebruiken alvorens een cliënttoepassing te beginnen. Een clienttoepassing kan zich dus niet aanmelden via de browser of door de methode `ChannelSet.login` aan te roepen.
 
 Als u het enige sign-on mechanisme van AEM Forms gebruikt, vorm het Remoting eindpunt om douaneauthentificatie, niet basis te gebruiken. Anders, wanneer het gebruiken van basisauthentificatie, veroorzaakt een authentificatiefout een browser uitdaging, die u niet de gebruiker wilt zien. In plaats daarvan detecteert uw toepassing de verificatiefout en wordt een bericht weergegeven waarin de gebruiker wordt opgedragen zich aan te melden met de gecentraliseerde aanmeldingsservice.
 
-Een cliënttoepassing heeft toegang tot AEM Forms door een remoting eindpunt door te gebruiken `RemoteObject` zoals in het volgende voorbeeld wordt getoond.
+Een clienttoepassing benadert AEM Forms via een extern eindpunt door de component `RemoteObject` te gebruiken, zoals in het volgende voorbeeld wordt getoond.
 
 ```java
  <?xml version="1.0"?>
@@ -514,7 +514,7 @@ Een cliënttoepassing heeft toegang tot AEM Forms door een remoting eindpunt doo
  </mx:Application>
 ```
 
-**Aanmelden als nieuwe gebruiker terwijl de Flex-toepassing nog actief is**
+**het Aanmelden als nieuwe gebruiker terwijl de toepassing van Flex nog loopt**
 
 Een toepassing die met Flex is ontwikkeld, bevat het verificatiecookie bij elke aanvraag naar een AEM Forms-service. Om prestatieredenen valideert AEM Forms de cookie niet op elk verzoek. AEM Forms detecteert echter wel wanneer een verificatiecookie wordt vervangen door een ander verificatiecookie.
 
@@ -522,17 +522,17 @@ U start bijvoorbeeld een clienttoepassing en wanneer de toepassing actief is, ge
 
 Op het volgende verzoek van de clienttoepassing detecteert AEM Forms dat het cookie is gewijzigd en meldt het de gebruiker af. Daarom ontbreekt het eerste verzoek na een koekjesverandering. Alle volgende verzoeken worden gedaan in het kader van het nieuwe cookie en zijn succesvol.
 
-**Afmelden**
+**Logging uit**
 
 Als u zich wilt afmelden bij AEM Forms en een sessie ongeldig wilt maken, moet het verificatiecookie worden verwijderd van de computer van de client. Omdat het doel van Single Sign-On is om een gebruiker toe te staan zich één keer aan te melden, wilt u geen cliënttoepassing om het koekje te schrappen. Met deze handeling wordt de gebruiker uitgelogd.
 
-Daarom roept het roepen van `RemoteObject.logout` de methode in een cliënttoepassing produceert een foutenmelding op de cliënt die specificeert dat de zitting niet wordt geregistreerd uit. In plaats daarvan kan de gebruiker de gecentraliseerde aanmeldingsservice gebruiken om zich af te melden en het verificatiecookie te verwijderen.
+Daarom genereert het aanroepen van de methode `RemoteObject.logout` in een clienttoepassing een foutbericht op de client waarin wordt aangegeven dat de sessie niet wordt afgemeld. In plaats daarvan kan de gebruiker de gecentraliseerde aanmeldingsservice gebruiken om zich af te melden en het verificatiecookie te verwijderen.
 
-**Afmelden terwijl de Flex-toepassing nog actief is**
+**Logging uit terwijl de toepassing van Flex nog loopt**
 
 U kunt een clienttoepassing starten die met Flex is gebouwd en de gecentraliseerde aanmeldingsservice gebruiken om u af te melden. Als onderdeel van het logout-proces wordt het verificatiecookie verwijderd. Als een verwijderingsaanvraag wordt ingediend zonder cookie of met een ongeldig cookie, wordt de gebruikerssessie ongeldig. Deze actie is in feite een logout. De volgende keer dat de clienttoepassing verbinding probeert te maken met een AEM Forms-service, wordt de gebruiker gevraagd zich aan te melden.
 
-**Zie ook**
+**zie ook**
 
 [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -546,15 +546,15 @@ U kunt een clienttoepassing starten die met Flex is gebouwd en de gecentraliseer
 
 ## Beveiligde documenten doorgeven om processen aan te roepen met Verwijderen {#passing-secure-documents-to-invoke-processes-using-remoting}
 
-U kunt beveiligde documenten doorgeven aan AEM Forms wanneer u een proces aanroept waarvoor een of meer documenten vereist zijn. Door een beveiligd document door te geven, beschermt u bedrijfsinformatie en vertrouwelijke documenten. In dit geval kan een document verwijzen naar een PDF-document, een XML-document, een Word-document, enzovoort. Als AEM Forms is geconfigureerd voor beveiligde documenten, is het vereist dat een beveiligd document naar AEM Forms wordt verzonden vanuit een clienttoepassing die in Flex is geschreven. (Zie [AEM Forms configureren voor het accepteren van beveiligde en onbeveiligde documenten](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
+U kunt beveiligde documenten doorgeven aan AEM Forms wanneer u een proces aanroept waarvoor een of meer documenten vereist zijn. Door een beveiligd document door te geven, beschermt u bedrijfsinformatie en vertrouwelijke documenten. In dit geval kan een document verwijzen naar een PDF-document, een XML-document, een Word-document, enzovoort. Als AEM Forms is geconfigureerd voor beveiligde documenten, is het vereist dat een beveiligd document naar AEM Forms wordt verzonden vanuit een clienttoepassing die in Flex is geschreven. (Zie [ Vormend AEM Forms om veilige en onveilige documenten ](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents) goed te keuren.)
 
-Wanneer u een beveiligd document doorgeeft, gebruikt u Single Sign-On en geeft u een gebruiker op AEM formulieren met de *Gebruiker van toepassing voor uploaden van document* rol. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U kunt een rol programmatically toewijzen aan een gebruiker. (Zie [Rollen en machtigingen beheren](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Wanneer het overgaan van een veilig document, gebruik enig sign-on en specificeer een gebruiker van de AEM formulieren die het *Document heeft uploadt de rol van de Gebruiker van de Toepassing*. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U kunt een rol programmatically toewijzen aan een gebruiker. (Zie [ het Leiden Rollen en Toestemmingen ](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >
 Wanneer u een rol maakt en u wilt dat leden van die rol beveiligde documenten uploaden, controleert u of u de machtiging Document uploaden hebt opgegeven.
 
-AEM Forms ondersteunt een bewerking met de naam `getFileUploadToken` die een token retourneert dat wordt doorgegeven aan de uploadserver. De `DocumentReference.constructRequestForUpload` voor deze methode is een URL naar AEM Forms vereist, samen met het token dat door de `LC.FileUploadAuthenticator.getFileUploadToken` methode. Deze methode retourneert een `URLRequest` object dat wordt gebruikt bij het aanroepen van de uploadserver. De volgende code demonstreert deze toepassingslogica.
+AEM Forms ondersteunt een bewerking met de naam `getFileUploadToken` die een token retourneert dat is doorgegeven aan het uploadservlet. De methode `DocumentReference.constructRequestForUpload` vereist een URL naar AEM Forms, samen met het token dat door de methode `LC.FileUploadAuthenticator.getFileUploadToken` wordt geretourneerd. Deze methode retourneert een `URLRequest` -object dat wordt gebruikt in de aanroep naar het uploadservlet. De volgende code demonstreert deze toepassingslogica.
 
 ```java
      ...
@@ -614,8 +614,8 @@ AEM Forms ondersteunt een bewerking met de naam `getFileUploadToken` die een tok
 U kunt beheerconsole gebruiken om op te geven of documenten veilig zijn wanneer u een document doorgeeft van een Flex-clienttoepassing naar een AEM Forms-proces. AEM Forms is standaard geconfigureerd voor het accepteren van beveiligde documenten. U kunt AEM Forms configureren voor het accepteren van beveiligde documenten door de volgende stappen uit te voeren:
 
 1. Log in bij de beheerconsole.
-1. Klikken **Instellingen**.
-1. Klikken **Core System Settings.**
+1. Klik **Montages**.
+1. Klik **Montages van het Systeem van de Kern.**
 1. Klik op Configuraties.
 1. Zorg ervoor dat de optie Niet-beveiligde documenten mogen worden geüpload vanuit Flex-toepassingen is uitgeschakeld.
 
@@ -627,11 +627,11 @@ U kunt beheerconsole gebruiken om op te geven of documenten veilig zijn wanneer 
 
 ### Snel starten: Een kortstondig proces aanroepen door een beveiligd document door te geven met Verwijderen {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
-In het volgende codevoorbeeld wordt het `MyApplication/EncryptDocument.`Een gebruiker moet zich aanmelden om de Uitgezochte knoop van het Dossier te klikken die wordt gebruikt om een dossier van de PDF te uploaden en het proces aan te halen. Dat wil zeggen dat zodra de gebruiker is geverifieerd, de knop Bestand selecteren is ingeschakeld. In de volgende afbeelding ziet u de Flex-clienttoepassing nadat een gebruiker is geverifieerd. Bericht dat Authenticated CheckBox wordt toegelaten.
+Het volgende codevoorbeeld roept `MyApplication/EncryptDocument.` gebruiker A aan login om de Uitgezochte knoop van het Dossier te klikken die wordt gebruikt om een dossier van de PDF te uploaden en het proces aan te halen. Dat wil zeggen dat zodra de gebruiker is geverifieerd, de knop Bestand selecteren is ingeschakeld. In de volgende afbeelding ziet u de Flex-clienttoepassing nadat een gebruiker is geverifieerd. Bericht dat Authenticated CheckBox wordt toegelaten.
 
-![iu_iu_securityemotelogin](assets/iu_iu_secureremotelogin.png)
+![ iu_iu_securityemotelogin ](assets/iu_iu_secureremotelogin.png)
 
-als AEM Forms is geconfigureerd om alleen beveiligde documenten te uploaden en de gebruiker niet beschikt over de *Gebruiker van toepassing voor uploaden van document* rol, dan wordt een uitzondering geworpen. Als de gebruiker deze rol wel heeft, wordt het bestand geüpload en wordt het proces aangeroepen.
+als AEM Forms wordt gevormd om veilige documenten slechts toe te staan om worden geupload en de gebruiker heeft niet het *Document de rol van de Gebruiker van de Toepassing van de Upload*, dan wordt een uitzondering geworpen. Als de gebruiker deze rol wel heeft, wordt het bestand geüpload en wordt het proces aangeroepen.
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>
@@ -879,7 +879,7 @@ als AEM Forms is geconfigureerd om alleen beveiligde documenten te uploaden en d
  </mx:Application>
 ```
 
-**Zie ook**
+**zie ook**
 
 [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -895,9 +895,9 @@ als AEM Forms is geconfigureerd om alleen beveiligde documenten te uploaden en d
 
 U kunt services in een aangepaste component aanroepen met Verwijderen. Neem bijvoorbeeld de bankcomponent die de klantenservice bevat. U kunt bewerkingen die bij de klantenservice horen, aanroepen met een clienttoepassing die in Flex is geschreven. Voordat u de snelstartcomponent van deze sectie kunt uitvoeren, moet u de aangepaste component Bank maken.
 
-De klantenservice stelt een bewerking met de naam `createCustomer`. In deze beschrijving wordt beschreven hoe u een Flex-clienttoepassing kunt maken die de klantenservice aanroept en een klant maakt. Voor deze bewerking is een complex object van het type vereist `com.adobe.livecycle.sample.customer.Customer` dat de nieuwe klant vertegenwoordigt. De volgende illustratie toont de cliënttoepassing die de dienst van de Klant aanhaalt en een nieuwe klant creeert. De `createCustomer` bewerking retourneert een id-waarde voor de klant. De identificatiewaarde wordt weergegeven in het tekstvak Customer Identifier.
+De klantenservice stelt een bewerking met de naam `createCustomer` beschikbaar. In deze beschrijving wordt beschreven hoe u een Flex-clienttoepassing kunt maken die de klantenservice aanroept en een klant maakt. Voor deze bewerking is een complex object van het type `com.adobe.livecycle.sample.customer.Customer` vereist dat de nieuwe klant vertegenwoordigt. De volgende illustratie toont de cliënttoepassing die de dienst van de Klant aanhaalt en een nieuwe klant creeert. De bewerking `createCustomer` retourneert een waarde voor de klant-id. De identificatiewaarde wordt weergegeven in het tekstvak Customer Identifier.
 
-![iu_iu_flexnewcust](assets/iu_iu_flexnewcust.png)
+![ iu_iu_flexnewcust ](assets/iu_iu_flexnewcust.png)
 
 De volgende lijst maakt een lijst van de controles die deel van deze cliënttoepassing uitmaken.
 
@@ -939,20 +939,20 @@ De volgende lijst maakt een lijst van de controles die deel van deze cliënttoep
   </tr>
   <tr>
    <td><p>txtCustId</p></td>
-   <td><p>Hiermee geeft u de id-waarde van de klant op waartoe de nieuwe account behoort. Dit tekstvak wordt gevuld door de geretourneerde waarde van de service van de klant <code>createCustomer</code> -bewerking. </p></td>
+   <td><p>Hiermee geeft u de id-waarde van de klant op waartoe de nieuwe account behoort. Dit tekstvak wordt gevuld door de geretourneerde waarde van de bewerking <code>createCustomer</code> van de klantenservice. </p></td>
   </tr>
  </tbody>
 </table>
 
 ### Toewijzing van complexe AEM Forms-gegevenstypen {#mapping-aem-forms-complex-data-types}
 
-Sommige AEM Forms-bewerkingen vereisen complexe gegevenstypen als invoerwaarden. Deze complexe gegevenstypen definiëren de runtimewaarden die door de bewerking worden gebruikt. Bijvoorbeeld: `createCustomer` bewerking vereist een `Customer` instantie die runtime waarden bevat die door de service worden vereist. Zonder het complexe type, werpt de dienst van de Klant een uitzondering en voert niet de verrichting uit.
+Sommige AEM Forms-bewerkingen vereisen complexe gegevenstypen als invoerwaarden. Deze complexe gegevenstypen definiëren de runtimewaarden die door de bewerking worden gebruikt. De `createCustomer` -bewerking van de klantenservice vereist bijvoorbeeld een `Customer` -instantie die runtimewaarden bevat die door de service worden vereist. Zonder het complexe type, werpt de dienst van de Klant een uitzondering en voert niet de verrichting uit.
 
 Wanneer u een AEM Forms-service oproept, maakt u ActionScript-objecten die zijn toegewezen aan vereiste AEM Forms-complexe typen. Voor elk complex gegevenstype dat een bewerking vereist, maakt u een afzonderlijk ActionScript-object.
 
-In de klasse van het ActionScript, gebruik `RemoteClass` tag metadata om toe te wijzen aan het complexe type AEM Forms. Bijvoorbeeld bij het oproepen van de klantenservice `createCustomer` bewerking, een ActionScript-klasse maken die is toegewezen aan `com.adobe.livecycle.sample.customer.Customer` gegevenstype.
+In de klasse ActionScript gebruikt u de metagegevenstag `RemoteClass` om het complexe AEM Forms-type toe te wijzen. Wanneer u bijvoorbeeld de bewerking `createCustomer` van de Klantenservice aanroept, maakt u een ActionScript-klasse die is toegewezen aan het gegevenstype `com.adobe.livecycle.sample.customer.Customer` .
 
-De volgende ActionScript-klasse met de naam Klant laat zien hoe u het AEM Forms-gegevenstype kunt toewijzen `com.adobe.livecycle.sample.customer.Customer`.
+De volgende klasse van het ActionScript genoemd Klant toont hoe te om aan het gegevenstype van AEM Forms in kaart te brengen `com.adobe.livecycle.sample.customer.Customer`.
 
 ```java
  package customer
@@ -973,7 +973,7 @@ De volgende ActionScript-klasse met de naam Klant laat zien hoe u het AEM Forms-
 
 Het volledig gekwalificeerde gegevenstype van het complex type AEM Forms wordt toegewezen aan de alias-tag.
 
-De velden van de klasse ActionScript komen overeen met de velden die bij het complexe type AEM Forms horen. De zes gebieden in de klasse van het ActionScript van de Klant passen de gebieden aan die tot `com.adobe.livecycle.sample.customer.Customer`.
+De velden van de klasse ActionScript komen overeen met de velden die bij het complexe type AEM Forms horen. De zes gebieden in de klasse van het ActionScript van de Klant passen de gebieden aan die tot `com.adobe.livecycle.sample.customer.Customer` behoren.
 
 >[!NOTE]
 >
@@ -981,11 +981,11 @@ Een goede manier om de gebiedsnamen te bepalen die tot een complex type van Form
 
 De klasse van het ActionScript van de Klant behoort tot een pakket genoemd klant. U wordt aangeraden alle klassen van het ActionScript die zijn toegewezen aan complexe AEM Forms-gegevenstypen in hun eigen pakket te plaatsen. Maak een map in de bronmap van het Flex-project en plaats het ActionScript in de map, zoals in de volgende afbeelding wordt getoond.
 
-![iu_iu_customeras](assets/iu_iu_customeras.png)
+![ iu_iu_customeras ](assets/iu_iu_customeras.png)
 
 ### Snel starten: De aangepaste service van de klant aanroepen met Verwijderen {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-Het volgende codevoorbeeld roept de dienst van de Klant aan en leidt tot een klant. Wanneer u dit codevoorbeeld in werking stelt, zorg ervoor dat u alle tekstvakjes invult. Zorg er ook voor dat u het bestand Customer.as maakt dat aan `com.adobe.livecycle.sample.customer.Customer`.
+Het volgende codevoorbeeld roept de dienst van de Klant aan en leidt tot een klant. Wanneer u dit codevoorbeeld in werking stelt, zorg ervoor dat u alle tekstvakjes invult. Zorg er ook voor dat u het bestand Customer.as maakt dat aan `com.adobe.livecycle.sample.customer.Customer` is toegewezen.
 
 >[!NOTE]
 >
@@ -1182,7 +1182,7 @@ Voordat u deze snelle start kunt uitvoeren, moet u de aangepaste component Bank 
 
 **Stijlblad**
 
-Deze snelle start bevat een stijlpagina met de naam *bank.css*. De volgende code vertegenwoordigt de stijlpagina die wordt gebruikt.
+Dit snelle begin bevat een stijlblad genoemd *bank.css*. De volgende code vertegenwoordigt de stijlpagina die wordt gebruikt.
 
 ```css
  /* CSS file */
@@ -1266,7 +1266,7 @@ Deze snelle start bevat een stijlpagina met de naam *bank.css*. De volgende code
  }
 ```
 
-**Zie ook**
+**zie ook**
 
 [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 

@@ -21,8 +21,8 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Klassiek.
 >
 >CIF Klassiek is in onderhoudsmodus.
 >
->* Nieuwe projecten moeten [AEM CIF](/help/commerce/cif/introduction.md).
->* Bestaande CIF Klassiek moet [migreren naar AEM CIF](/help/commerce/cif/migration.md).
+>* De nieuwe projecten zouden [ AEM CIF ](/help/commerce/cif/introduction.md) moeten gebruiken.
+>* De bestaande CIF Klassiek zou [ aan AEM ](/help/commerce/cif/migration.md) moeten migreren.
 
 ## Belangrijke CIF Klassieke artikelen {#key-articles}
 

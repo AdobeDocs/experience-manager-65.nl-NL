@@ -28,17 +28,17 @@ De UI-caters voor zowel mobiele als desktopapparaten, maar in plaats van twee st
 
 Alle modules gebruiken de zelfde basislay-out, in AEM dit kan worden gezien als:
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![ chlimage_1-142 ](assets/chlimage_1-142.png)
 
 De lay-out voldoet aan een responsieve ontwerpstijl en past zich aan de grootte van het apparaat/venster aan dat u gebruikt.
 
 Als de resolutie bijvoorbeeld lager is dan 1024 px (zoals op een mobiel apparaat), wordt het beeldscherm dienovereenkomstig aangepast:
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![ chlimage_1-143 ](assets/chlimage_1-143.png)
 
 ### Koptekstbalk {#header-bar}
 
-![chlimage_1-144](assets/chlimage_1-144.png)
+![ chlimage_1-144 ](assets/chlimage_1-144.png)
 
 De kopbalbar toont globale elementen met inbegrip van:
 
@@ -55,23 +55,23 @@ Dit is contextueel voor uw locatie en de gereedschappen voor oppervlakken die re
 
 Op de werkbalk ziet u de acties die momenteel beschikbaar zijn.
 
-![chlimage_1-145](assets/chlimage_1-145.png)
+![ chlimage_1-145 ](assets/chlimage_1-145.png)
 
 Ook afhankelijk van of een bron is geselecteerd:
 
-![chlimage_1-146](assets/chlimage_1-146.png)
+![ chlimage_1-146 ](assets/chlimage_1-146.png)
 
 ### Linkerspoor {#left-rail}
 
 De linkerspoorstaaf kan worden geopend/verborgen zoals vereist om te tonen:
 
-* **Tijdlijn**
+* **Chronologie**
 * **Verwijzingen**
 * **Filter**
 
-De standaardwaarde is **Alleen inhoud** (spoor verborgen).
+Het gebrek is **slechts Inhoud** (spoorstaaf verborgen).
 
-![chlimage_1-147](assets/chlimage_1-147.png)
+![ chlimage_1-147 ](assets/chlimage_1-147.png)
 
 ## Pagina&#39;s ontwerpen {#page-authoring}
 
@@ -79,24 +79,24 @@ Bij het ontwerpen van pagina&#39;s ziet u de volgende structurele gebieden.
 
 ### Inhoudskader {#content-frame}
 
-De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudsframe is onafhankelijk van de editor. Er zijn dan geen conflicten die te wijten zijn aan CSS of JavaScript.
+De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudskader is onafhankelijk van de editor om ervoor te zorgen dat er geen conflicten zijn die te wijten zijn aan CSS of JavaScript.
 
 Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werkbalk.
 
-![chlimage_1-148](assets/chlimage_1-148.png)
+![ chlimage_1-148 ](assets/chlimage_1-148.png)
 
 ### Editor frame {#editor-frame}
 
 In het bewerkingsframe worden de bewerkingsfuncties gerealiseerd.
 
-Het editorkader is een container (abstract) voor alle *pagina-ontwerpelementen*. Het leeft bovenop het inhoudskader, en omvat:
+Het redacteurskader is een container (abstract) voor alle *pagina auteurselementen*. Het leeft bovenop het inhoudskader, en omvat:
 
 * de bovenste werkbalk
 * zijpaneel
 * alle overlays
 * een ander pagina-ontwerpelement, bijvoorbeeld de componentwerkbalk
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![ chlimage_1-149 ](assets/chlimage_1-149.png)
 
 ### Zijpaneel {#side-panel}
 
@@ -104,33 +104,33 @@ Dit bevat twee standaardtabbladen waarmee u elementen en componenten kunt select
 
 Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of schuift deze over om het hele venster te bedekken (als het vensterformaat kleiner is dan een breedte van 1024 px, bijvoorbeeld op een mobiel apparaat).
 
-![chlimage_1-150](assets/chlimage_1-150.png)
+![ chlimage_1-150 ](assets/chlimage_1-150.png)
 
-### Zijpaneel - Elementen {#side-panel-assets}
+### Zijpaneel - Assets {#side-panel-assets}
 
-Op het tabblad Elementen kunt u een selectie maken uit het assortiment elementen. U kunt ook filteren op een bepaalde term of een groep selecteren.
+Op het tabblad Assets kunt u een selectie maken uit het assortiment elementen. U kunt ook filteren op een bepaalde term of een groep selecteren.
 
-![chlimage_1-151](assets/chlimage_1-151.png)
+![ chlimage_1-151 ](assets/chlimage_1-151.png)
 
 ### Zijpaneel - Elementgroepen {#side-panel-asset-groups}
 
 Op het tabblad Middelen vindt u een vervolgkeuzelijst waarmee u de specifieke groepen elementen kunt selecteren.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![ chlimage_1-152 ](assets/chlimage_1-152.png)
 
 ### Zijpaneel - Componenten {#side-panel-components}
 
 Op het tabblad Componenten kunt u een keuze maken uit het bereik van componenten. U kunt ook filteren op een bepaalde term of een groep selecteren.
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![ chlimage_1-153 ](assets/chlimage_1-153.png)
 
 ### Bedekkingen {#overlays}
 
-Deze bedekken het inhoudsframe en worden gebruikt door de [lagen](#layer) om te realiseren hoe u (transparant) kunt communiceren met de componenten en hun inhoud.
+Deze bedekking het inhoudskader en door de [ lagen ](#layer) gebruikt om de mechanica van te realiseren hoe u (doorzichtig) met de componenten en hun inhoud kunt in wisselwerking staan.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![ chlimage_1-154 ](assets/chlimage_1-154.png)
 
 ### Laag {#layer}
 
@@ -153,7 +153,7 @@ Met de laagschakeloptie kunt u de laag kiezen die u wilt gebruiken. Als u deze o
 
 De laagschakelaar is beschikbaar als drop-down van de toolbar (bij de bovenkant van het venster, binnen het redacteurskader).
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![ chlimage_1-155 ](assets/chlimage_1-155.png)
 
 ### Werkbalk Component {#component-toolbar}
 
@@ -161,10 +161,10 @@ Elke instantie van een component toont zijn toolbar wanneer geklikt (of eens of 
 
 Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst bij de bovenkant, of bodem, juiste hoek van de aangewezen component.
 
-![chlimage_1-156](assets/chlimage_1-156.png)
+![ chlimage_1-156 ](assets/chlimage_1-156.png)
 
 ## Aanvullende informatie {#further-information}
 
-Voor meer informatie over de concepten van de interface met aanraakbediening leest u [Concepten van de interface AEM Touch-Enabled](/help/sites-developing/touch-ui-concepts.md).
+Voor meer details over de concepten rond aanraking-toegelaten UI, lees [ Concepten van AEM aanraking-Toegelaten UI ](/help/sites-developing/touch-ui-concepts.md).
 
-Zie voor meer technische informatie [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor met aanraakbediening.
+Voor meer technische informatie, zie [ JS documentatiereeks ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de aanraking-toegelaten paginaredacteur.

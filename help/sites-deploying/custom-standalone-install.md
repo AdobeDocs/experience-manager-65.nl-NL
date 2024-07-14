@@ -16,19 +16,19 @@ ht-degree: 0%
 
 # Aangepaste standalone installatie{#custom-standalone-install}
 
-In deze sectie worden de opties beschreven die beschikbaar zijn wanneer u een zelfstandige AEM installeert. U kunt ook [Opslagelementen](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie over het kiezen van het back-end opslagtype na de nieuwe installatie AEM 6.
+In deze sectie worden de opties beschreven die beschikbaar zijn wanneer u een zelfstandige AEM installeert. U kunt ook [ Elementen van de Opslag ](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie lezen bij het kiezen van het type van de achterste opslagplaats na het vers installeren van AEM 6.
 
 ## Het veranderen van het Aantal van de Haven door het Dossier anders te noemen {#changing-the-port-number-by-renaming-the-file}
 
 De standaardpoort voor AEM is 4502. Als die haven niet beschikbaar of reeds in gebruik is, vormt QuickStart automatisch om het eerste beschikbare havenaantal als volgt te gebruiken: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 888, 9362, `<*random*>`.
 
-U kunt het poortnummer ook instellen door de naam van het JAR-bestand met de naam QuickStart te wijzigen, zodat de bestandsnaam het poortnummer bevat, bijvoorbeeld `cq5-publish-p4503.jar` of `cq5-author-p6754.jar`.
+U kunt het poortnummer ook instellen door de naam van het JAR-bestand met de naam quickstart te wijzigen, zodat de bestandsnaam het poortnummer bevat, bijvoorbeeld `cq5-publish-p4503.jar` of `cq5-author-p6754.jar` .
 
 Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de naam van het snelstartjar-bestand:
 
-* Wanneer u de naam van het bestand wijzigt, moet u beginnen met `cq;` zoals in `cq5-publish-p4503.jar`.
+* Wanneer u de naam van het bestand wijzigt, moet u beginnen met `cq;` zoals in `cq5-publish-p4503.jar` .
 
-* U wordt aangeraden *altijd* voegt u het poortnummer toe met -p; zoals in cq5-publish-p4503.jar of cq5-signer-p6754.jar.
+* Het wordt geadviseerd dat u *altijd* havenaantal met - p voorstelt; zoals in cq5-publish-p4503.jar of cq5-schrijver-p6754.jar.
 
 >[!NOTE]
 >
@@ -36,25 +36,25 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 >
 >* het havenaantal moet 4 of 5 cijfers zijn
 >* deze cijfers moeten na een streepje komen
->* als er andere cijfers in filename zijn, dan moet het havenaantal met vooraf worden bepaald `-p`
+>* als er andere cijfers voorkomen in de bestandsnaam, moet het poortnummer worden voorafgegaan door `-p`
 >* het voorvoegsel &quot;cq5&quot; aan het begin van de bestandsnaam wordt genegeerd
 >
 
 >[!NOTE]
 >
->U kunt het poortnummer ook wijzigen met de opdracht `-port` in de startopdracht.
+>U kunt het poortnummer ook wijzigen met de optie `-port` in de startopdracht.
 
 ### Overwegingen bij Java 11 {#java-considerations}
 
 Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, moeten de extra schakelaars aan uw bevellijn worden toegevoegd wanneer het beginnen van AEM.
 
-* Het volgende - `-add-opens` de schakelaars moeten worden toegevoegd om de verwante berichten van de bezinningstoegang WARNING in te verhinderen `stdout.log`
+* De volgende switches - `-add-opens` moeten worden toegevoegd om te voorkomen dat gerelateerde berichten over weerspiegelingstoegang worden toegevoegd aan het dialoogvenster `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Bovendien moet u de `-XX:+UseParallelGC` Schakel over om mogelijke prestatieproblemen te beperken.
+* Daarnaast moet u de `-XX:+UseParallelGC` -switch gebruiken om mogelijke prestatieproblemen te verhelpen.
 
 Hieronder ziet u een voorbeeld van hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 11:
 
@@ -62,19 +62,19 @@ Hieronder ziet u een voorbeeld van hoe de extra JVM-parameters eruit moeten zien
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-Tot slot als u een instantie in werking stelt die van AEM 6.3 wordt bevorderd, zorg ervoor het volgende bezit wordt geplaatst aan **true** krachtens `sling.properties`:
+Tot slot als u een instantie in werking stelt die van AEM 6.3 wordt bevorderd, zorg ervoor het volgende bezit aan **waar** onder `sling.properties` wordt geplaatst:
 
 * `felix.bootdelegation.implicit`
 
 ## Modi uitvoeren {#run-modes}
 
-**Modus Uitvoeren** Laat u uw AEM instantie voor een specifiek doel stemmen; bijvoorbeeld, auteur of publiceert, test, ontwikkeling, Intranet, etc. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
+**de wijzen van de Looppas** laten u uw AEM instantie voor een specifiek doel stemmen; bijvoorbeeld, auteur of publiceert, test, ontwikkeling, Intranet, etc. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
 
 * [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md)
 
 ## Een leverancier voor het installeren van bestanden toevoegen {#adding-a-file-install-provider}
 
-Standaard is de map `crx-quickstart/install` wordt gecontroleerd op bestanden.
+Standaard wordt de map `crx-quickstart/install` gecontroleerd op bestanden.
 Deze map bestaat niet, maar kan eenvoudig bij uitvoering worden gemaakt.
 
 Als een bundel, configuratie of inhoudspakket in deze folder wordt gezet, wordt het automatisch opgenomen en geïnstalleerd. Als het wordt verwijderd, wordt het verwijderd.
@@ -84,19 +84,19 @@ Dit is vooral interessant voor verschillende gebruiksgevallen:
 
 * Tijdens de ontwikkeling, zou het gemakkelijker kunnen zijn om iets in het dossiersysteem te zetten.
 * Als er iets mis gaat, zijn de webconsole en de opslagplaats niet bereikbaar. Met dit kunt u extra bundels in deze folder zetten en zij zouden moeten worden geïnstalleerd.
-* De `crx-quickstart/install` U kunt een map maken voordat u de snelstartmap start en u kunt daar extra pakketten plaatsen.
+* De map `crx-quickstart/install` kan worden gemaakt voordat de snelstartprocedure wordt gestart en er kunnen extra pakketten worden geplaatst.
 
 >[!NOTE]
 >
->Zie ook [CRX-pakketten automatisch installeren bij het opstarten van de server](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) voor voorbeelden.
+>Zie ook [ hoe te om de pakketten van CRX automatisch op serveropstarten ](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) voor voorbeelden te installeren.
 
 ## Adobe Experience Manager installeren en starten als Windows-service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
 >
->Ben zeker om de volgende procedure uit te voeren terwijl het programma werd geopend als Beheerder of begin/stel deze stappen in werking gebruikend **Uitvoeren als beheerder** contextmenu-selectie.
+>Ben zeker om de volgende procedure uit te voeren terwijl het programma geopend als Beheerder of begin/stel deze stappen in werking gebruikend de **looppas als de context-menuselectie van de Beheerder**.
 >
->Wordt aangemeld als een gebruiker met beheerdersrechten **ontoereikend**. Als u zich niet als beheerder hebt aangemeld bij het uitvoeren van deze stappen, ontvangt u **Toegang geweigerd** fouten.
+>Het worden het programma geopend als gebruiker met beheerdervoorrechten is **ontoereikend**. Als u niet als Beheerder wanneer het voltooien van deze stappen wordt het programma geopend ontvangt u **Afgewezen Toegang** fouten.
 
 Om AEM als dienst van Vensters te installeren en te beginnen:
 
@@ -108,7 +108,7 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
    Dit bevel haalt het aangewezen manuscript aan dat de de dienstdaemon van Vensters in Java met 64 bits in plaats van Java met 32 bits begint.
 
-1. Verhoog de PermGen JVM-parameter om te voorkomen dat het proces in meerdere processen wordt vervormd. Zoek de `set jvm_options` en stel de waarde als volgt in:
+1. Verhoog de PermGen JVM-parameter om te voorkomen dat het proces in meerdere processen wordt vervormd. Zoek de opdracht `set jvm_options` en stel de waarde als volgt in:
 
    `set jvm_options=-Xmx1792m`
 
@@ -116,21 +116,21 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
    `instsrv.bat cq5`
 
-   Om te verifiëren dat de dienst wordt gecreeerd, open de Diensten in het Administratieve Controlebord of type van Hulpmiddelen `start services.msc` in Opdrachtprompt. De cq5-service wordt in de lijst weergegeven.
+   Om te verifiëren dat de dienst wordt gecreeerd, open de Diensten in het Administratieve Controlebord van Hulpmiddelen of type `start services.msc` in de Herinnering van het Bevel. De cq5-service wordt in de lijst weergegeven.
 
 1. Start de service op een van de volgende manieren:
 
    * Klik in het configuratiescherm Services op cq5 en klik op Start.
 
-   ![chlimage_1-11](assets/chlimage_1-11.png)
+   ![ chlimage_1-11 ](assets/chlimage_1-11.png)
 
    * Typ in de opdrachtregel het begin cq5 van het net.
 
-   ![chlimage_1-12](assets/chlimage_1-12.png)
+   ![ chlimage_1-12 ](assets/chlimage_1-12.png)
 
 1. De vensters wijst erop dat de dienst loopt. AEM wordt gestart en het uitvoerbare bestand van de prunsrv wordt weergegeven in Taakbeheer. Navigeer in uw webbrowser naar AEM, bijvoorbeeld `https://localhost:4502` om AEM te gebruiken.
 
-   ![chlimage_1-13](assets/chlimage_1-13.png)
+   ![ chlimage_1-13 ](assets/chlimage_1-13.png)
 
 >[!NOTE]
 >
@@ -138,13 +138,13 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
 >[!NOTE]
 >
->Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` in Configuratiebeheer.
+>Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Klik op **Stoppen** in de **Services** navigeer naar de map en typ `instsrv.bat -uninstall cq5`. De service wordt verwijderd uit de lijst in het dialoogvenster **Services** regelpaneel of in de lijst op de opdrachtregel wanneer u typt `net start`.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
-De standaardlocatie van de tijdelijke map van de Java-machine is `/tmp`. AEM gebruikt deze map bijvoorbeeld ook bij het maken van pakketten.
+De standaardlocatie van de tijdelijke map van de Java-machine is `/tmp` . AEM gebruikt deze map bijvoorbeeld ook bij het maken van pakketten.
 
 Als u de locatie van de tijdelijke map wilt wijzigen (bijvoorbeeld als u een map met meer vrije ruimte nodig hebt), definieert u een * `<new-tmp-path>`* door de JVM-parameter toe te voegen:
 
@@ -274,11 +274,11 @@ Log files
 
 ## AEM installeren in de Amazon EC2-omgeving {#installing-aem-in-the-amazon-ec-environment}
 
-Wanneer u AEM installeert op een Amazon Elastic Compute Cloud (EC2)-instantie, als u zowel auteur als publicatie op het EC2-exemplaar installeert, wordt de Author-instantie correct geïnstalleerd door de procedure op [Instanties van AEM Manager installeren](#installinginstancesofaemmanager)De instantie Publiceren wordt echter Auteur.
+Wanneer het installeren van AEM op een instantie van de Compute Cloud van Amazon (EC2), als u zowel auteur installeert als op de instantie EC2 publiceert, wordt de instantie van de Auteur geïnstalleerd correct door de procedure op [ te volgen die Instanties van AEM Manager ](#installinginstancesofaemmanager) installeert; nochtans, wordt de instantie van Publish Auteur.
 
-Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installeert:
+Ga als volgt te werk voordat u de Publish-instantie op uw EC2-omgeving installeert:
 
-1. Pak het jar-bestand voor de instantie Publish uit voordat u de instantie voor de eerste keer start. Als u het bestand wilt uitpakken, gebruikt u de volgende opdracht:
+1. Pak het jar-bestand voor de Publish-instantie uit voordat u de instantie voor de eerste keer start. Als u het bestand wilt uitpakken, gebruikt u de volgende opdracht:
 
    ```xml
    java -jar quickstart.jar -unpack
@@ -286,7 +286,7 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
 
    >[!NOTE]
    >
-   >Als u de modus wijzigt **na** wanneer u de instantie de eerste keer start, kunt u de runmode niet wijzigen.
+   >Als u de wijze **verandert na** beginnend de instantie de eerste keer, kunt u niet runmode veranderen.
 
 1. Start de instantie door deze uit te voeren:
 
@@ -298,7 +298,7 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
    >
    >Zorg ervoor dat u de instantie eerst uitvoert nadat u deze hebt uitgepakt door de bovenstaande opdracht uit te voeren. Anders wordt de vulling quickstart.properties niet gegenereerd. Zonder dit bestand zullen toekomstige AEM upgrades mislukken.
 
-1. In de **bin** de map openen **start** en controleer de volgende sectie:
+1. In de **bak** omslag, open het **begin** manuscript en controleer de volgende sectie:
 
    ```xml
    # runmode(s)
@@ -307,7 +307,7 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
    fi
    ```
 
-1. De runmode wijzigen in **publish** en sla het bestand op.
+1. Verander runmode in **publiceren** en sparen het dossier.
 
    ```xml
    # runmode(s)
@@ -316,11 +316,11 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
    fi
    ```
 
-1. Stop de instantie en start deze opnieuw door de **start** script.
+1. Stop de instantie en begin het opnieuw door het **begin** manuscript in werking te stellen.
 
 ## De installatie controleren {#verifying-the-installation}
 
-De volgende verbindingen kunnen worden gebruikt om te verifiëren dat uw installatie operationeel is (alle voorbeelden zijn op de basis dat de instantie op haven 8080 van localhost loopt, dat CRX onder /crx en Launchpad onder /) geïnstalleerd is:
+De volgende koppelingen kunnen worden gebruikt om te controleren of uw installatie actief is (alle voorbeelden zijn op basis van het feit dat de instantie wordt uitgevoerd op poort 8080 van de localhost, dat CRX is geïnstalleerd onder /crx en Launchpad under /):
 
 * `https://localhost:8080/crx/de`
 De CRXDE Lite-console.
@@ -332,19 +332,19 @@ De webconsole.
 
 Hoewel er vele mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties moeten worden ondernomen, of minstens onmiddellijk na installatie herzien:
 
-* Raadpleeg de [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md) voor taken die nodig zijn om ervoor te zorgen dat uw systeem veilig blijft.
-* Herzie de lijst van standaardgebruikers en groepen die met AEM WCM geïnstalleerd zijn. Controleer of u actie wilt ondernemen voor andere accounts - raadpleeg [Beveiliging en gebruikersbeheer](/help/sites-administering/security.md) voor nadere bijzonderheden.
+* Raadpleeg [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) voor taken die worden vereist om ervoor te zorgen dat uw systeem veilig blijft.
+* Herzie de lijst van standaardgebruikers en groepen die met AEM WCM geïnstalleerd zijn. Controle of u actie op een andere rekeningen wilt ondernemen - zie [ Veiligheid en het Beleid van de Gebruiker ](/help/sites-administering/security.md) voor verdere details.
 
 ## Toegang tot CRXDE Lite en de webconsole {#accessing-crxde-lite-and-the-web-console}
 
 Nadat AEM WCM is gestart, hebt u ook toegang tot:
 
-* [CRXDE Lite](#accessing-crxde-lite) - wordt gebruikt voor toegang tot en beheer van de gegevensopslagplaats
-* [Webconsole](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (ook genoemd als Console OSGi)
+* [ CRXDE Lite ](#accessing-crxde-lite) - gebruikt om tot de bewaarplaats toegang te hebben en te leiden
+* [ Console van het Web ](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
 
 ### Toegang tot CRXDE Lite {#accessing-crxde-lite}
 
-Als u CRXDE Lite wilt openen, selecteert u **CRXDE Lite** vanuit het welkomstscherm of gebruik uw browser om naar
+Om CRXDE Lite te openen kunt u **CRXDE Lite** van het welkome scherm selecteren of uw browser gebruiken om te navigeren
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -353,11 +353,11 @@ Als u CRXDE Lite wilt openen, selecteert u **CRXDE Lite** vanuit het welkomstsch
 Bijvoorbeeld:
 `https://localhost:4502/crx/de/index.jsp`
 
-![installcq_crxdelite](assets/installcq_crxdelite.png)
+![ installcq_crxdelite ](assets/installcq_crxdelite.png)
 
 #### Toegang tot de webconsole {#accessing-the-web-console}
 
-Als u toegang wilt tot de Adobe CQ-webconsole, kunt u **OSGi Console** vanuit het welkomstscherm of gebruik uw browser om naar
+Om tot de console van het Web van Adobe CQ toegang te hebben kunt u **Console OSGi** van het welkomstscherm selecteren of uw browser gebruiken om te navigeren aan
 
 ```
  https://<host>:<port>/system/console
@@ -368,9 +368,9 @@ Bijvoorbeeld:
 of voor de pagina Bundles
 `https://localhost:4502/system/console/bundles`
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
-Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor nadere bijzonderheden.
+Zie {Configuratie 0} OSGi met de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.[
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -386,6 +386,6 @@ Als permanente opslag is ingesloten in de installatiemap, bijvoorbeeld in de sta
 
 >[!NOTE]
 >
->Adobe raadt u ten zeerste aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory>, verwijdert u de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de gegevens verwijdert, verplaatst of kopieert u de &lt;cq-installation-directory>/crx-quickstart/repository folder ergens anders alvorens de andere omslagen te schrappen.
+>Adobe raadt u ten zeerste aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
 
 Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een databaseserver, worden de gegevens niet automatisch verwijderd wanneer u een map verwijdert. De opslagconfiguratie wordt echter wel verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.

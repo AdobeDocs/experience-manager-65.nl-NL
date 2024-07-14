@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Gebruik analysegegevens van de pagina om de doeltreffendheid van hun pagina-inhoud te meten.
 
-![chlimage_1-80](assets/chlimage_1-80.png)
+![ chlimage_1-80 ](assets/chlimage_1-80.png)
 
 De analysegegevens van de pagina worden getoond in de console van Plaatsen. Wanneer sites worden weergegeven in de vorm van een lijst, zijn standaard de volgende kolommen beschikbaar:
 
@@ -28,4 +28,4 @@ De analysegegevens van de pagina worden getoond in de console van Plaatsen. Wann
 
 >[!NOTE]
 >
->Gegevens voor siteanalyse rechtstreeks weergeven in de console is alleen beschikbaar in de geoptimaliseerde interface voor aanrakingen. Zie [Gegevens van paginaanalyse bekijken](/help/sites-authoring/page-analytics-using.md) in de standaardontwerpdocumentatie voor meer informatie.
+>Gegevens voor siteanalyse rechtstreeks weergeven in de console is alleen beschikbaar in de geoptimaliseerde interface voor aanrakingen. Zie {de Gegevens van de Analytics van de Pagina van 0} zien ](/help/sites-authoring/page-analytics-using.md) in de standaard auteursdocumentatie voor details.[

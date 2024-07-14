@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Sneltoetsen bij het bewerken van pagina&#39;s{#keyboard-shortcuts-when-editing-pages}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op de [gebruik van consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer het uitgeven van pagina&#39;s, anderen op het [ gebruik van consoles ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->In de volgende tabellen geldt voor de belangrijkste combinaties in de **Sneltoets** zowel de Ctrl- als de Command-toets werken op macOS.
+>In de volgende lijsten, voor de belangrijkste combinaties in de **kolom van de Kortere weg**, zowel CTRL als van het Bevel werken op macOS.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Geselecteerde alinea's knippen.<strong><br /> Opmerking:</strong> De geknipte alinea verdwijnt pas als deze op de nieuwe locatie is geplakt.</td>
+   <td>Geselecteerde alinea's knippen.<strong><br /> Opmerking: </strong> de alinea Knippen verdwijnt pas als deze op de nieuwe locatie is geplakt.</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,22 +94,22 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Standaardcontextmenu (browser) forceren.<br /> <strong>Opmerking:</strong> AEM contextmenu's vindt alleen plaats in de klassieke gebruikersinterface.</td>
+   <td>Standaardcontextmenu (browser) forceren.<br /> <strong> Nota:</strong> AEM contextmenu's komen slechts in klassieke UI voor.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>Hiermee wordt het dialoogvenster <a href="/help/sites-administering/client-context.md">clientcontext</a>.</td>
+   <td>Toont de <a href="/help/sites-administering/client-context.md"> cliëntcontext </a>.</td>
   </tr>
   <tr>
-   <td>RTF-editor<br /> </td>
+   <td>Rich Text Editor <br /> </td>
    <td><strong><code>Ctrl-B</code></strong><br /> </td>
    <td>Vet</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-I</code></strong><br /> </td>
-   <td>Cursief<br /> </td>
+   <td>Cursief <br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -142,14 +142,14 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
    <td>Laag met suggesties sluiten.</td>
   </tr>
   <tr>
-   <td>Inhoudzoeker<br /> </td>
+   <td>Inhoudszoeker <br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
    <td><p>Elementen slepen en neerzetten op doel.</p> <p>De neerzetactie produceert een nieuwe alinea in plaats van het element in de bestemming te vervangen.</p> </td>
   </tr>
  </tbody>
 </table>
 
-Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [ consoles ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 ## Sneltoetsen voor ontwikkeling {#keyboard-shortcuts-for-development}
 
@@ -164,7 +164,7 @@ Voor bureaubladontwikkelaars zijn aanvullende sneltoetsen beschikbaar wanneer u 
   </tr>
   <tr>
    <td>Bewerkingsmodus</td>
-   <td>Stel het volgende achtervoegsel in de URL in:<br /> <code>?debugClientLibs=true</code><br /> Gebruik vervolgens:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Plaats het volgende achtervoegsel in URL: <br /> <code>?debugClientLibs=true</code><br /> dan gebruik:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>De tijdinstellingsstatistieken voor het laden van pagina's weergeven.</td>
   </tr>
  </tbody>

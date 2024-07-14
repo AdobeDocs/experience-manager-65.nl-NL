@@ -25,7 +25,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 * Als het proces van lange duur is, wordt het toegevoegd aan het baangegevensbestand, maar is niet begonnen. Wanneer u de onderhoudsmodus afsluit, verwerkt AEM formulieren de taken met een lange levensduur in de wachtrij, zelfs als de server opnieuw is gestart in de onderhoudsmodus.
 * Als het proces van korte duur is, wordt het meteen verwerkt.
 
-**AEM formulieren in de onderhoudsmodus plaatsen**
+**Gezet AEM vormen op onderhoudswijze**
 
 1. Voer in een webbrowser de volgende gegevens in:
 
@@ -37,7 +37,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
    >
    >Als u de server sluit terwijl het onderhoudswijze is, is het nog op onderhoudswijze wanneer het opnieuw wordt begonnen. Schakel de onderhoudsmodus uit wanneer u klaar bent met uw onderhoudstaken.
 
-**Controleren of AEM formulieren worden uitgevoerd in de onderhoudsmodus**
+**Controle of AEM vormen op onderhoudswijze** lopen
 
 1. Voer in een webbrowser de volgende gegevens in:
 
@@ -45,7 +45,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 
    De status wordt weergegeven in het browservenster. De status &quot;true&quot; geeft aan dat de server wordt uitgevoerd in de onderhoudsmodus en &quot;false&quot; geeft aan dat de server niet in de onderhoudsmodus staat.
 
-**Onderhoudsmodus uitschakelen**
+**Draai van onderhoudswijze**
 
 1. Voer in een webbrowser de volgende gegevens in:
 

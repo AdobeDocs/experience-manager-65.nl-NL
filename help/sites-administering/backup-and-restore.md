@@ -32,7 +32,7 @@ Als u een back-up moet maken van een kleine hoeveelheid inhoud die verloren gaat
 * U kunt de gegevens van een ander systeem ophalen via een pakket
 * of u herstelt de back-up op een tijdelijk systeem, maakt een inhoudspakket en implementeert dit op het systeem, waar deze inhoud ontbreekt.
 
-Zie voor meer informatie [Back-up van pakket](/help/sites-administering/backup-and-restore.md#package-backup) hieronder.
+Voor details, zie [ Steun van het Pakket ](/help/sites-administering/backup-and-restore.md#package-backup) hieronder.
 
 ## Timing {#timing}
 
@@ -52,7 +52,7 @@ Aangezien de momentopnamesteun gewoonlijk slechts een paar seconden neemt, is de
 
 ## Online back-up {#online-backup}
 
-Deze back-upmethode maakt een back-up van de gehele opslagplaats, inclusief alle toepassingen die erin worden geïmplementeerd, zoals AEM. De back-up bestaat uit inhoud, versiegeschiedenis, configuratie, software, hotfixes, aangepaste toepassingen, logbestanden, zoekindexen enzovoort. Als u het groeperen gebruikt en als de gedeelde omslag subdirectory van is `crx-quickstart` (of fysiek, of het gebruiken van een softlink), wordt de gedeelde folder ook gesteund.
+Deze back-upmethode maakt een back-up van de gehele opslagplaats, inclusief alle toepassingen die erin worden geïmplementeerd, zoals AEM. De back-up bestaat uit inhoud, versiegeschiedenis, configuratie, software, hotfixes, aangepaste toepassingen, logbestanden, zoekindexen enzovoort. Als u clustering gebruikt en als de gedeelde map een submap van `crx-quickstart` is (fysiek of met een softlink), wordt ook een back-up gemaakt van de gedeelde map.
 
 U kunt de volledige opslagplaats (en alle toepassingen) later herstellen.
 
@@ -60,18 +60,18 @@ Deze methode werkt als een &quot;hot&quot; of &quot;online&quot; back-up, zodat 
 
 Bij het maken van een back-up hebt u de volgende opties:
 
-* Back-up maken op een directory met AEM geïntegreerde back-upprogramma.
+* Back-up maken van een map met AEM geïntegreerde back-upprogramma.
 * Back-ups maken van een map met behulp van een bestandssysteemmomentopname
 
 In elk geval maakt de back-up een afbeelding (of opname) van de opslagplaats. Vervolgens moet de back-upagent van het systeem ervoor zorgen dat dit image daadwerkelijk wordt overgebracht naar een speciaal back-upsysteem (tapestation).
 
 >[!NOTE]
 >
->Als AEM functie voor online back-up wordt gebruikt op een AEM instantie met een aangepaste binlobstore-configuratie, wordt aanbevolen het pad naar de datastore te configureren zodat deze zich buiten de map &quot; `crx-quickstart`&quot; en maak een afzonderlijke back-up van de datastore.
+>Als AEM functie voor online back-up wordt gebruikt op een AEM instantie met een aangepaste binlobstore-configuratie, wordt aanbevolen het pad van de datastore te configureren zodat deze zich buiten de map &quot; `crx-quickstart`&quot; bevindt en een afzonderlijke back-up van de datastore te maken.
 
 >[!CAUTION]
 >
->Bij de online back-up wordt alleen een back-up van het bestandssysteem gemaakt. Als u de inhoud van de opslagplaats en/of de gegevensopslagbestanden in een database opslaat, moet van die database een aparte back-up worden gemaakt. Als u AEM gebruikt met MongoDB, zie documentatie over hoe te om te gebruiken [Native MongoDB-back-uptools](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
+>Bij de online back-up wordt alleen een back-up van het bestandssysteem gemaakt. Als u de inhoud van de opslagplaats en/of de gegevensopslagbestanden in een database opslaat, moet van die database een aparte back-up worden gemaakt. Als u AEM met MongoDB gebruikt, zie documentatie over hoe te om [ MongoDB inheemse reservehulpmiddelen ](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/) te gebruiken.
 
 ### AEM online back-up {#aem-online-backup}
 
@@ -79,13 +79,13 @@ Met een online back-up van uw opslagplaats kunt u back-upbestanden maken, downlo
 
 >[!CAUTION]
 >
->AEM Online back-up niet tegelijk uitvoeren met [Verzameling van afval uit datastore](/help/sites-administering/data-store-garbage-collection.md) of [Revisie opschonen](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
+>AEM Online Steun niet gelijktijdig met [ in werking stellen de Inzameling van het huisvuil van de Datastore ](/help/sites-administering/data-store-garbage-collection.md) of [ Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
 
-Bij het starten van een back-up kunt u een **Doelpad** of een **Vertraging**.
+Wanneer het beginnen van een steun kunt u a **Weg van het Doel** en/of a **Vertraging** specificeren.
 
-**Doelpad** De back-upbestanden worden meestal opgeslagen in de bovenliggende map van de map waarin het JAR-bestand (.jar) voor snelstartbestanden wordt opgeslagen. Bijvoorbeeld, als u het AEM jar dossier onder /InstallationKits/AEM wordt gevestigd, dan zal de steun onder /InstallationKits worden geproduceerd. U kunt ook een doel opgeven op een door u gekozen locatie.
+**Weg van het Doel** De reservedossiers worden gewoonlijk bewaard in de ouderomslag van de omslag die het QuickStart jar dossier (.jar) persen. Bijvoorbeeld, als u het AEM jar dossier onder /InstallationKits/AEM wordt gevestigd, dan zal de steun onder /InstallationKits worden geproduceerd. U kunt ook een doel opgeven op een door u gekozen locatie.
 
-Als de **TargetPath** is een map, wordt de afbeelding van de repository gemaakt in deze directory. Als dezelfde map meerdere malen (of altijd) wordt gebruikt voor het opslaan van een back-up,
+Als **TargetPath** een folder is, wordt het beeld van de bewaarplaats gecreeerd in deze folder. Als dezelfde map meerdere malen (of altijd) wordt gebruikt voor het opslaan van een back-up,
 
 * Gewijzigde bestanden in de opslagplaats worden dienovereenkomstig gewijzigd in het TargetPath-bestand
 * verwijderde bestanden in de gegevensopslagruimte worden verwijderd in het TargetPath-bestand
@@ -93,7 +93,7 @@ Als de **TargetPath** is een map, wordt de afbeelding van de repository gemaakt 
 
 >[!NOTE]
 >
->Indien **TargetPath** is ingesteld op bestandsnaam met de extensie **.zip**, wordt een back-up van de opslagplaats gemaakt in een tijdelijke map en wordt de inhoud van deze tijdelijke map gecomprimeerd en opgeslagen in het ZIP-bestand.
+>Als **TargetPath** aan filename met de uitbreiding **.zip** wordt geplaatst, wordt de bewaarplaats gesteund aan een tijdelijke folder en dan wordt de inhoud van deze tijdelijke folder gecomprimeerd en in het dossier van het PIT opgeslagen.
 >
 >Deze aanpak wordt ontmoedigd, omdat
 >
@@ -104,27 +104,27 @@ Als de **TargetPath** is een map, wordt de afbeelding van de repository gemaakt 
 >
 >Als u een ZIP als reserveformaat moet tot stand brengen, zou u steun aan een folder moeten en dan een compressieprogramma gebruiken om het ZIP dossier tot stand te brengen.
 
-**Vertraging** Geeft een tijdvertraging (in milliseconden) aan, zodat de prestaties van de opslagplaats niet worden beïnvloed. Standaard wordt de back-up van de opslagplaats op volledige snelheid uitgevoerd. U kunt het maken van een online back-up vertragen, zodat andere taken niet worden vertraagd.
+**Vertraging** wijst op een tijdvertraging (in milliseconden), zodat de bewaarplaatsprestaties niet worden beïnvloed. Standaard wordt de back-up van de opslagplaats op volledige snelheid uitgevoerd. U kunt het maken van een online back-up vertragen, zodat andere taken niet worden vertraagd.
 
 Wanneer u een zeer grote vertraging gebruikt, moet u ervoor zorgen dat de online back-up niet meer dan 24 uur in beslag neemt. Als dit het geval is, verwijdert u deze reservekopie, omdat deze mogelijk niet alle binaire elementen bevat.
 Een vertraging van 1 milliseconde resulteert doorgaans in 10% CPU-gebruik en een vertraging van 10 milliseconden resulteert meestal in minder dan 3% CPU-gebruik. De totale vertraging in seconden kan als volgt worden geschat: de grootte van de opslagplaats in MB, vermenigvuldigd met vertraging in milliseconden, gedeeld door 2 (als de optie ZIP wordt gebruikt), of gedeeld door 4 (wanneer het steunen aan een folder). Dat betekent dat een back-up naar een directory van een 200 MB opslagplaats met een vertraging van 1 ms de back-uptijd met ongeveer 50 seconden verhoogt.
 
 >[!NOTE]
 >
->Zie [Hoe AEM online back-up werkt](#how-aem-online-backup-works) voor interne details van het proces.
+>Zie [ hoe AEM Online Steun ](#how-aem-online-backup-works) voor interne details van het proces werkt.
 
 Een back-up maken:
 
 1. Meld u aan bij AEM als beheerder.
 
-1. Ga naar **Gereedschappen - Bewerkingen - Back-up.**
-1. Klikken **Maken**. De back-upconsole wordt geopend.
+1. Ga naar **Hulpmiddelen - Verrichtingen - Steun.**
+1. Klik **creëren**. De back-upconsole wordt geopend.
 
-   ![chlimage_1-1](assets/chlimage_1-1a.png)
+   ![ chlimage_1-1 ](assets/chlimage_1-1a.png)
 
-1. Geef op de back-upconsole de **[Doelpad](#aem-online-backup)** en **[Vertraging](#aem-online-backup)**.
+1. Voor de reserveconsole, specificeer de **[Weg van het Doel](#aem-online-backup)** en **[Vertraging](#aem-online-backup)**.
 
-   ![chlimage_1-2](assets/chlimage_1-2a.png)
+   ![ chlimage_1-2 ](assets/chlimage_1-2a.png)
 
    >[!NOTE]
    >
@@ -133,19 +133,19 @@ Een back-up maken:
    >
    >` https://<*hostname*>:<*port-number*>/libs/granite/backup/content/admin.html`
 
-1. Klikken **Opslaan**, geeft een voortgangsbalk de voortgang van de back-up aan.
+1. Klik **sparen**, zal een vooruitgangsbar op de vooruitgang van de steun wijzen.
 
    >[!NOTE]
    >
-   >U kunt **Annuleren** een actieve steun op elk ogenblik.
+   >U kunt **annuleren** een lopende steun op elk ogenblik.
 
 1. Wanneer de back-up is voltooid, worden de ZIP-bestanden weergegeven in het back-upvenster.
 
-   ![chlimage_1-3](assets/chlimage_1-3a.png)
+   ![ chlimage_1-3 ](assets/chlimage_1-3a.png)
 
    >[!NOTE]
    >
-   >Back-upbestanden die u niet meer nodig hebt, kunnen met de console worden verwijderd. Selecteer het back-upbestand in het linkerdeelvenster en klik op **Verwijderen**.
+   >Back-upbestanden die u niet meer nodig hebt, kunnen met de console worden verwijderd. Selecteer het reservedossier in de linkerruit dan klik **Schrapping**.
 
    >[!NOTE]
    >
@@ -155,19 +155,19 @@ Een back-up maken:
 
 Indien mogelijk, zou de online steun moeten in werking worden gesteld wanneer er weinig lading op het systeem, bijvoorbeeld in de ochtend is.
 
-Back-ups kunnen worden geautomatiseerd via de `wget` of `curl` HTTP-clients. In het volgende voorbeeld ziet u hoe u back-ups kunt automatiseren met curl.
+Back-ups kunnen worden geautomatiseerd met de `wget` - of `curl` HTTP-clients. In het volgende voorbeeld ziet u hoe u back-ups kunt automatiseren met curl.
 
 #### Back-up maken van de standaarddoelmap {#backing-up-to-the-default-target-directory}
 
 >[!CAUTION]
 >
->In het volgende voorbeeld worden diverse parameters in het dialoogvenster `curl` bevel zou voor uw instantie kunnen moeten worden gevormd; bijvoorbeeld, hostname ( `localhost`), poort ( `4502`), beheerderswachtwoord ( `xyz`) en bestandsnaam ( `backup.zip`).
+>In het volgende voorbeeld moeten mogelijk verschillende parameters in de opdracht `curl` voor uw instantie worden geconfigureerd, bijvoorbeeld de hostnaam ( `localhost` ), poort ( `4502` ), het beheerderswachtwoord ( `xyz` ) en de bestandsnaam ( `backup.zip` ).
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
 ```
 
-Het back-upbestand of de map wordt gemaakt op de server in de bovenliggende map van de map die het `crx-quickstart` (dezelfde map als wanneer u de back-up maakt met de browser). Als u bijvoorbeeld AEM in de map hebt geïnstalleerd `/InstallationKits/crx-quickstart/`, dan wordt de back-up gemaakt in de `/InstallationKits` directory.
+Het back-upbestand of de map wordt gemaakt op de server in de bovenliggende map van de map die de map `crx-quickstart` bevat (net als wanneer u de back-up maakt met de browser). Als u bijvoorbeeld AEM in de map `/InstallationKits/crx-quickstart/` hebt geïnstalleerd, wordt de back-up gemaakt in de map `/InstallationKits` .
 
 De curl-opdracht wordt onmiddellijk geretourneerd, dus u moet deze map controleren om te zien wanneer het zip-bestand gereed is. Tijdens het maken van de back-up kan een tijdelijke map (met de naam op basis van die van het uiteindelijke ZIP-bestand) worden weergegeven, waarna dit bestand wordt gecomprimeerd. Bijvoorbeeld:
 
@@ -176,11 +176,11 @@ De curl-opdracht wordt onmiddellijk geretourneerd, dus u moet deze map controler
 
 #### Back-up maken op een niet-standaard doelmap {#backing-up-to-a-non-default-target-directory}
 
-Meestal wordt het back-upbestand of de back-upmap gemaakt op de server in de bovenliggende map van de map die het `crx-quickstart` map.
+Gewoonlijk wordt het back-upbestand of de back-upmap gemaakt op de server in de bovenliggende map van de map die de map `crx-quickstart` bevat.
 
-Als u de back-up (van beide soorten) op een andere locatie wilt opslaan, kunt u een absoluut pad instellen op &quot;de `target` in de `curl` gebruiken.
+Als u de back-up (van beide soorten) op een andere locatie wilt opslaan, kunt u een absoluut pad instellen naar de parameter `target` in de opdracht `curl` .
 
-Bijvoorbeeld om te genereren `backupJune.zip` in de map `/Backups/2012`:
+U kunt bijvoorbeeld `backupJune.zip` genereren in de map `/Backups/2012` :
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=/Backups/2012/backupJune.zip"
@@ -192,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->Een back-up kan ook worden geactiveerd [het gebruik van de MBeans die door AEM worden verstrekt](/help/sites-administering/jmx-console.md).
+>Een steun kan ook worden teweeggebracht [ gebruikend MBans die door AEM ](/help/sites-administering/jmx-console.md) wordt verstrekt.
 
 ### Back-up van bestandssysteemmomentopname {#filesystem-snapshot-backup}
 
@@ -215,12 +215,12 @@ Voor de online back-up wordt het volgende algoritme gebruikt:
 
 1. Wanneer u een ZIP-bestand maakt, moet u eerst de doelmap maken of vinden.
 
-   * Als er een back-up wordt gemaakt van een ZIP-bestand, wordt er een tijdelijke map gemaakt. De mapnaam begint met `backup.` en eindigt met `.temp`; bijvoorbeeld `backup.f4d3.temp`.
+   * Als er een back-up wordt gemaakt van een ZIP-bestand, wordt er een tijdelijke map gemaakt. De mapnaam begint met `backup.` en eindigt met `.temp`, bijvoorbeeld `backup.f4d3.temp` .
    * Als u een back-up maakt naar een map, wordt de naam gebruikt die in het doelpad is opgegeven. Een bestaande map kan worden gebruikt, anders wordt een nieuwe map gemaakt.
 
-     Een leeg bestand met de naam `backupInProgress.txt` wordt in de doelmap gemaakt wanneer de back-up wordt gestart. Dit bestand wordt verwijderd wanneer de back-up is voltooid.
+     Er wordt een leeg bestand met de naam `backupInProgress.txt` gemaakt in de doelmap wanneer de back-up wordt gestart. Dit bestand wordt verwijderd wanneer de back-up is voltooid.
 
-1. De bestanden worden van de bronmap naar de doelmap (of de tijdelijke map wanneer u een ZIP-bestand maakt) gekopieerd. De segmentstore wordt gekopieerd vóór de datastore om beschadiging van de opslagplaats te voorkomen. De index- en cachegegevens worden weggelaten wanneer u de back-up maakt. Dientengevolge, gegevens van `crx-quickstart/repository/cache` en `crx-quickstart/repository/index` is niet opgenomen in de back-up. De voortgangsbalkindicator van het proces ligt tussen 0% en 70% wanneer u een ZIP-bestand maakt, of tussen 0% en 100% wanneer geen ZIP-bestand wordt gemaakt.
+1. De bestanden worden van de bronmap naar de doelmap (of de tijdelijke map wanneer u een ZIP-bestand maakt) gekopieerd. De segmentstore wordt gekopieerd vóór de datastore om beschadiging van de opslagplaats te voorkomen. De index- en cachegegevens worden weggelaten wanneer u de back-up maakt. Als gevolg hiervan worden gegevens van `crx-quickstart/repository/cache` en `crx-quickstart/repository/index` niet opgenomen in de back-up. De voortgangsbalkindicator van het proces ligt tussen 0% en 70% wanneer u een ZIP-bestand maakt, of tussen 0% en 100% wanneer geen ZIP-bestand wordt gemaakt.
 
 1. Als de back-up wordt gemaakt naar een bestaande map, worden de &quot;oude&quot; bestanden in de doelmap verwijderd. Oude bestanden zijn bestanden die niet in de bronmap staan.
 
@@ -237,7 +237,7 @@ De bestanden worden in vier fasen naar de doelmap gekopieerd:
 1. Afhankelijk van het doel:
 
    * Als een ZIP-bestand is opgegeven, wordt dit nu gemaakt in de tijdelijke map. Voortgangsindicator 70% - 100%. De tijdelijke map wordt vervolgens verwijderd.
-   * Als het doel een map was, krijgt het lege bestand de naam `backupInProgress.txt` wordt verwijderd om aan te geven dat de back-up is voltooid.
+   * Als het doel een map was, wordt het lege bestand met de naam `backupInProgress.txt` verwijderd om aan te geven dat de back-up is voltooid.
 
 ## Back-up herstellen {#restoring-the-backup}
 
@@ -250,11 +250,11 @@ U kunt een back-up als volgt herstellen:
 
 Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, waarmee u back-ups kunt maken van inhoud en deze weer kunt terugzetten. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
 
-Zie voor meer informatie over de functies en voordelen van elk van deze afzonderlijke indelingen voor inhoudspakketten [Werken met pakketten](/help/sites-administering/package-manager.md).
+Voor details op de eigenschappen en de nadelen van elk van deze individuele inhouds pakketformaten, zie [ hoe te met Pakketten ](/help/sites-administering/package-manager.md) werken.
 
 ### Bereik van back-up {#scope-of-backup}
 
-Wanneer u reservekopieën maakt van knooppunten met de functie Pakketbeheer of Inhoud Zipper, slaat CRX de volgende gegevens op:
+Wanneer u een back-up maakt van knooppunten met de functie Pakketbeheer of Inhoudszipper, slaat CRX de volgende gegevens op:
 
 * De inhoud van de opslagplaats onder de structuur die u hebt geselecteerd.
 * De het typedefinities van Knoop die voor de inhoud worden gebruikt u file.

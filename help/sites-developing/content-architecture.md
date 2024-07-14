@@ -24,13 +24,13 @@ David&#39;s Model werd jaren geleden geschreven door David Nuescheler, maar de i
 
 * Gegevens komen als eerste, structuur later. Misschien.
 * Geef de inhoudshiërarchie de drijvende kracht en laat deze niet gebeuren.
-* Werkruimten zijn bedoeld voor `clone()`, `merge()`, en `update()`.
+* Werkruimten zijn voor `clone()`, `merge()` en `update()` .
 * Let op dat u dezelfde naam hebt als op hetzelfde vel.
 * Verwijzingen worden als schadelijk beschouwd.
 * Bestanden zijn bestanden.
 * Id&#39;s zijn slecht.
 
-Het model van David is te vinden op de Jackrabbit wiki op [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Het Model van David kan op de wiki van het Jasje in [ https://wiki.apache.org/jackrabbit/DavidsModel ](https://wiki.apache.org/jackrabbit/DavidsModel) worden gevonden.
 
 ### Alles is inhoud {#everything-is-content}
 

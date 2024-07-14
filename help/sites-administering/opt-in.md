@@ -20,17 +20,17 @@ ht-degree: 0%
 
 AEM heeft een opt-in procedure om u te helpen met Adobe Analytics en Adobe Target integreren. Dit is beschikbaar uit-van-de-doos, als vooraf geladen taak die aan de groep van de beheerdergebruiker wordt toegewezen.
 
-Wanneer u zich als beheerder deze taak (**Analyse en doelgericht configureren**) is beschikbaar via de [Inbox](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Gebaseerd op de geloofsbrieven u levert, helpt het u deze diensten vormen en integreren.
+Wanneer u login als beheerder deze taak (**Vormend Analytics &amp; het richten**) is beschikbaar bij [ Inbox ](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Gebaseerd op de geloofsbrieven u levert, helpt het u deze diensten vormen en integreren.
 
 U hebt de volgende opties voor het configureren van de integratie:
 
 * Configureer de integratie via de taak.
 
-  Dit kan onmiddellijk of later worden gedaan, zal de taak in Inbox blijven tot één of andere actie wordt ondernomen. In beide gevallen kan de configuratie rechtstreeks in de gebruikersinterface worden uitgevoerd, of met behulp van een vooraf gedefinieerde `.properties` bestand.
+  Dit kan onmiddellijk of later worden gedaan, zal de taak in Inbox blijven tot één of andere actie wordt ondernomen. In beide gevallen kan de configuratie rechtstreeks in de gebruikersinterface worden uitgevoerd of met behulp van een vooraf gedefinieerd `.properties` -bestand.
 
 * Sluit af van de integratie.
 
-  Houd rekening met deze optie als u liever [De integratie handmatig configureren](/help/sites-administering/marketing-cloud.md). Zie ook [AEM integreren met Adobe Target en Adobe Analytics met behulp van DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+  Overweeg deze optie als u verkiest [ manueel de integratie ](/help/sites-administering/marketing-cloud.md) te vormen. Zie ook [ Integrerend AEM met Adobe Target en Adobe Analytics gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Configureer de instelling en provisioning met behulp van een script.
 
@@ -45,7 +45,7 @@ Voor beide opties moet u de gegevens van de gebruikersaccount opgeven en de pagi
 
 >[!NOTE]
 >
->U kunt desgewenst informatie over Analytics en Target-account opgeven met behulp van een eigenschappenbestand dat wordt gelezen bij het opstarten van de server. Zie [Accountinformatie opgeven met een eigenschappenbestand](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file).
+>U kunt desgewenst informatie over Analytics en Target-account opgeven met behulp van een eigenschappenbestand dat wordt gelezen bij het opstarten van de server. Zie [ het verstrekken van de Informatie van de Rekening die een Dossier van Eigenschappen ](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file) gebruikt.
 
 Wanneer u zich bij de integratie aanmeldt, voert AEM de volgende taken uit:
 
@@ -55,31 +55,31 @@ Wanneer u zich bij de integratie aanmeldt, voert AEM de volgende taken uit:
 
 >[!NOTE]
 >
->AT.js is de standaardcliëntbibliotheek. Dit wordt gevormd onder uw [configuratie van doelwolkenservices](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
+>AT.js is de standaardcliëntbibliotheek. Dit wordt gevormd onder uw [ configuratie van de de dienstensectoren van de doelwolk ](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
 >
 >De Adobe adviseert dat u AT.js als cliëntbibliotheek gebruikt.
 
 Als u zich wilt aanmelden bij de vooraf geladen taak die buiten het vak valt:
 
-1. Van uw [Inbox, select en **Openen** Analyse en doelgericht configureren](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
+1. Van uw [ Inbox, selecteer en **open** de Configure Analytics &amp; het richten ](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
 
-   ![optin-01](assets/optin-01.png)
+   ![ optin-01 ](assets/optin-01.png)
 
 1. Voor Analytics:
 
-   1. Voer de gegevens van de gebruikersaccount voor Analytics in en klik op de bijbehorende **Toevoegen** knop.
+   1. Ga de informatie van de gebruikersrekening voor Analytics in, dan klik het overeenkomstige **toevoegen** knoop.
    1. De juiste referenties worden geverifieerd.
-   1. Als de account Analytics is geverifieerd, selecteert u de rapportsuite Analytics die u wilt gebruiken. AEM haalt die Analytics-rapportreeksen op. De status wordt bijgewerkt naar **Toegevoegd**.
+   1. Als de account Analytics is geverifieerd, selecteert u de rapportsuite Analytics die u wilt gebruiken. AEM haalt die Analytics-rapportreeksen op. De status wordt bijgewerkt aan **Toegevoegd**.
 
 1. Voor doel:
 
-   1. Voer de gegevens van de gebruikersaccount voor Target in en klik op de bijbehorende **Toevoegen** knop.
-   1. De juiste referenties worden geverifieerd. De status wordt bijgewerkt naar **Toegevoegd**.
+   1. Ga de informatie van de gebruikersrekening voor Doel in dan klik het overeenkomstige **toevoegen** knoop.
+   1. De juiste referenties worden geverifieerd. De status wordt bijgewerkt aan **Toegevoegd**.
 
-1. Selecteren **Volgende**.
+1. Selecteer **daarna**.
 1. Selecteer de sites waarvoor Analytics en/of Target moet worden gebruikt.
 
-1. Selecteren **Gereed** in.
+1. Selecteer **Gedaan** om te voltooien.
 
    >[!CAUTION]
    >
@@ -92,11 +92,11 @@ Sluit de integratie met Analytics en Target af als u:
 * Niet met deze producten integreren.
 * Voorkeur om de integratie manueel te vormen.
 
-  Voor informatie over het manueel vormen van de integratie, zie [Integreren met Adobe Analytics](/help/sites-administering/adobeanalytics.md) en [Integreren met Adobe Target](/help/sites-administering/target.md).
+  Voor informatie over het vormen van de integratie manueel, zie [ Integrerend met Adobe Analytics ](/help/sites-administering/adobeanalytics.md) en [ Integrerend met Adobe Target ](/help/sites-administering/target.md).
 
 Als u wilt afmelden, moet u de vooraf geladen taak voltooien:
 
-* Van uw [Inbox, select en **Voltooid** Analyse en doelgericht configureren](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
+* Van uw [ Inbox, selecteer en **Volledig** vormen Analytics &amp; het richten ](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
 
 ## Accountinformatie opgeven met een eigenschappenbestand {#providing-account-information-using-a-properties-file}
 
@@ -113,9 +113,9 @@ Het eigenschappenbestand is een tekstbestand met de naam marketingcloud.properti
 * target.email: Het e-mailadres dat u gebruikt om uw Target-account te verifiëren.
 * target.password: Het wachtwoord dat aan uw e-mailadres wordt gekoppeld.
 
-Eigenschappen en waarden worden gescheiden met gelijke tekens (=). De eigenschappen Analytics zijn vooraf ingesteld op `analytics`en de eigenschappen van het Doel zijn vooraf ingesteld op `target`. Om de dienst te vormen, verstrek waarden voor alle eigenschappen voor die dienst. Als u geen dienst wilt vormen, verstrek geen waarden voor die dienst.
+Eigenschappen en waarden worden gescheiden met gelijke tekens (=). De eigenschappen Analytics hebben de voorvoegsel `analytics` en de eigenschappen Target hebben de voorvoegsel `target` . Om de dienst te vormen, verstrek waarden voor alle eigenschappen voor die dienst. Als u geen dienst wilt vormen, verstrek geen waarden voor die dienst.
 
-Het volgende voorbeeld `.properties` Het bestand bevat de eigenschapswaarden voor het maken van een cloudconfiguratie voor Analytics:
+Het volgende voorbeeld `.properties` dossier omvat de bezitswaarden voor het creëren van een wolkenconfiguratie voor Analytics:
 
 ```xml
 analytics.server=https://test.omniture.com/login/
@@ -130,11 +130,11 @@ target.password=
 
 In de volgende procedure wordt beschreven hoe u zich bij de integratie kunt aanmelden met het eigenschappenbestand.
 
-1. Maak de `marketingcloud.properties` in de werkmap die door het AEM wordt gebruikt (auteurinstantie).
+1. Maak het `marketingcloud.properties` -bestand in de werkmap die het AEM gebruikt (auteurinstantie).
 
    >[!NOTE]
    >
-   >De het werk folder is gewoonlijk de folder die de pot of `license.properties` bestand.
+   >De werkmap is meestal de map die de jar of het `license.properties` -bestand bevat.
    >
    >Nochtans, kan het ook als absolute weg door het systeembezit worden bepaald:
    >
@@ -142,17 +142,17 @@ In de volgende procedure wordt beschreven hoe u zich bij de integratie kunt aanm
 
 1. Voeg de eigenschapswaarden toe volgens uw Analytics- en/of Target-accounts.
 1. Start of start de server opnieuw op en meld u vervolgens aan met een beheerdersaccount.
-1. Open de taak Analytics &amp; Targeting configureren, zoals beschreven in [De integratie configureren](/help/sites-administering/opt-in.md#configuring-the-integration). In plaats van om uw rekeningsinformatie te vragen, gebruikt de tovenaar de waarden van `.properties` bestand.
+1. Open Configure Analytics &amp; het richten taak zoals die in [ wordt beschreven Vormend de Integratie ](/help/sites-administering/opt-in.md#configuring-the-integration). In plaats van om uw accountgegevens te vragen, gebruikt de wizard de waarden uit het `.properties` -bestand.
 
-   Selecteren **Toevoegen** voor de aangewezen dienst, dan ga met de tovenaar verder.
+   Selecteer **toevoegen** voor de aangewezen dienst, dan met de tovenaar verdergaan.
 
-   ![optin-02](assets/optin-02.png)
+   ![ optin-02 ](assets/optin-02.png)
 
 ## Informatie over de cloudconfiguraties {#about-the-cloud-configurations}
 
 Wanneer u de integratie met Analytics en Target configureert, AEM automatisch de vereiste cloudconfiguraties en -frameworks. De cloudconfiguratie van Analytics heet bijvoorbeeld Provisioned Analytics Account.
 
-U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vormen zoals nodig. (Zie [Componentgegevens toewijzen aan Adobe Analytics-eigenschappen](/help/sites-administering/adobeanalytics-mapping.md) en [Een doelframework toevoegen](/help/sites-administering/target.md).)
+U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vormen zoals nodig. (Zie [ Gegevens van de Component van de Toewijzing met de Eigenschappen van Adobe Analytics ](/help/sites-administering/adobeanalytics-mapping.md) en [ een Kader van het Doel ](/help/sites-administering/target.md) toevoegen.)
 
 >[!NOTE]
 >
@@ -160,25 +160,25 @@ U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vorme
 >
 >Nauwkeurige het richten betekent dat de de dienstconfiguratie van de wolk op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
 >
->Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Op de publicatie-instantie kunt u er echter voor kiezen om nauwkeurig afstemmen globaal uit te schakelen door het vinkje naast Accurate Targeting in de cloudserviceconfiguratie (**http://localhost:4502/etc/cloudservices.html**). U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
+>Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Nochtans, op publiceer instantie kunt u verkiezen om nauwkeurige gericht uit te zetten globaal door het vinkje naast Accurate het richten in de configuratie van de wolkendienst (**http://localhost:4502/etc/cloudservices.html**) te ontruimen. U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
 >
->Als u ***reeds*** Als u deze instelling wijzigt, hebben de wijzigingen geen invloed op de componenten die u hebt gemaakt. Breng de gewenste wijzigingen rechtstreeks aan in deze componenten.
+>Als u ***reeds*** gecreeerd gerichte componenten hebt en u dit het plaatsen verandert, beïnvloeden uw veranderingen niet die componenten. Breng de gewenste wijzigingen rechtstreeks aan in deze componenten.
 
 >[!CAUTION]
 >
->Als u zich aanmeldt bij de analytische configuratie en een specifieke `reportsuite` is geselecteerd, wordt het framework beperkt tot de publicatieuitvoermodus. Dit betekent dat het bijhouden van wijzigingen alleen werkt op de publicatie-instantie.
+>Wanneer u zich aanmeldt bij de analytische configuratie en een specifieke `reportsuite` is geselecteerd, is het framework beperkt tot de publicatieuitvoeringsmodus. Dit betekent dat het bijhouden van wijzigingen alleen werkt op de publicatie-instantie.
 >
->Als het volgen op een auteursinstantie eveneens nodig is, zou de waarde moeten worden veranderd in `all`.
+>Als ook in een ontwerpinstantie tekstspatiëring moet worden toegepast, moet de waarde worden gewijzigd in `all` .
 
 ## Het vormen van de Opstelling en de Levering via Manuscript {#configuring-the-setup-and-provisioning-via-script}
 
 Als beheerder, kunt u opstelling en levering met een manuscript eerder dan manueel het stappen door de tovenaar willen teweegbrengen. U kunt dit doen door:
 
-* Een verzoek van een POST verzenden naar **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** met de vereiste parameters.
+* Het verzenden van een verzoek van de POST aan **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** met de vereiste parameters.
 
 Welke parameters u verzendt hangt van het volgende af:
 
-* Als u de **marketingcloud.properties** het dossier wordt ingevuld met alle vereiste geloofsbrieven, dan moet u de volgende parameters verzenden:
+* Als u het {**dossier wilt gebruiken 0} marketingcloud.properties dat met alle vereiste geloofsbrieven wordt gevuld, dan moet u de volgende parameters verzenden:**
 
    * `automaticProvisioning`= `true`
    * `servicename`= `analytics|target`
@@ -190,7 +190,7 @@ Welke parameters u verzendt hangt van het volgende af:
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* Als u de **marketingcloud.properties** moet u de referenties en parameters verzenden. Bijvoorbeeld:
+* Als u niet het {**dossier 0} marketingcloud.properties wilt gebruiken dan moet u de geloofsbrieven en de parameters verzenden.** Bijvoorbeeld:
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
    * path=path naar een AEM pagina om de gemaakte cloudservices te koppelen; er kunnen meerdere paden worden gedefinieerd

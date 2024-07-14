@@ -20,18 +20,18 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 ## Adobe Experience Manager-onderdelen (AEM) maken die toegang hebben tot apparaatfuncties {#building-aem-components-that-access-device-features}
 
-De [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) De gegevensopslagplaats GitHub voorziet ontwikkelaars van een functionele AEM app die het gebruik van verscheidene kernCordova APIs illustreert. Wanneer de app wordt uitgevoerd op iOS of Android™ via PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
+De [ AEM opslag van PhoneGap Kitchen ](https://github.com/blefebvre/aem-phonegap-kitchen-sink) GitHub verstrekt ontwikkelaars van een functionele AEM app die het gebruik van verscheidene kernCordova APIs illustreert. Wanneer de app wordt uitgevoerd op iOS of Android™ via PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![ chlimage_1-107 ](assets/chlimage_1-107.png)
 
-De broncode voor elk van deze apparaat-API-componenten is [beschikbaar op GitHub](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
+De broncode voor elk van deze apparaat API componenten is [ beschikbaar op GitHub ](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Raadpleeg de documentatie van de Cordova-plug-in (`https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html`).
+Zie de Cordova-insteekmoduledocumentatie (`https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html`) voor meer informatie over het gebruik van elke API.
 
 ## De volgende stappen {#the-next-steps}
 
-Zie [App-prestaties bijhouden met Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).
+Zie [ AppPrestaties van het Spoor met Adobe Mobiele Analytics ](/help/mobile/phonegap-intro-to-app-analytics.md).

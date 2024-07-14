@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Het bedrijfslogo voor branding wijzigen {#changing-the-organization-logo-for-branding}
 
-Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u het logo wilt bijwerken, volgt u de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) en dan de volgende stappen.
+Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Om het embleem bij te werken, volg de [ Algemene stappen van de aanpassing van de werkruimte van AEM Forms ](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) en toen de volgende stappen.
 
-1. Een logo maken en het bestand een naam geven `NewWorkspace.png`. Plaats het afbeeldingsbestand in de map /apps/ws/images met een WebDAV-client.
+1. Maak een logo en noem het bestand als `NewWorkspace.png` . Plaats het afbeeldingsbestand in de map /apps/ws/images met een WebDAV-client.
 
    >[!NOTE]
    >
@@ -28,9 +28,9 @@ Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u 
 
    >[!NOTE]
    >
-   >Zie voor meer informatie [WebDAV-toegang](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Voor meer informatie, zie [ Toegang WebDAV ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
-   [WebDAV-toegang](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)
+   [ WebDAV Toegang ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)
 
 1. Verwijs naar de nieuwe logoafbeelding in stijlblad op /apps/ws/css/newStyle.css door volgende stijl toe te voegen.
 

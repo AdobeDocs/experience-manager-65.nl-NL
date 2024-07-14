@@ -17,4 +17,4 @@ ht-degree: 0%
 
 1. Waarom worden streepjescodes en handtekeningvelden niet weergegeven in mijn HTML 5-formulier?
 
-   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in scenario&#39;s voor HTML of mobiele apparaten. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw scriptveld voor handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. U kunt ook een [aangepaste widget](../../forms/using/custom-widgets.md) voor streepjescodes en deze integreren.
+   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in scenario&#39;s voor HTML of mobiele apparaten. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw veld voor het schrijven van handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. Men kan a [ douanewidget ](../../forms/using/custom-widgets.md) voor streepjescodes ook toevoegen en het integreren.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Beschrijving van herbruikbare onderdelen {#description-of-reusable-components}
 
-De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integrating-html-ws-components-web.md) onderdelen die in een specifieke [mapstructuur](/help/forms/using/folder-structure.md) in CRX™. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
+De werkruimte van AEM Forms bestaat uit [ herbruikbare ](/help/forms/using/integrating-html-ws-components-web.md) componenten die in een specifieke [ omslagstructuur ](/help/forms/using/folder-structure.md) in CRX™ worden georganiseerd. Elke component heeft model, mening, en malplaatjedossier bij plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen van JavaScript worden geluisterd die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
 
 ## TaskList {#tasklist}
 
@@ -110,7 +110,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
 
 >[!NOTE]
 >
->De werkruimte roept fetchTasks functie van model TaskList om de modellen van de Taak voor deze component tot stand te brengen.
+>Workspace roept fetchTasks functie van model TaskList om de modellen van de Taak voor deze component tot stand te brengen.
 
 ## FilterList {#filterlist}
 
@@ -923,7 +923,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integra
    <td>
     <ul>
      <li>userImageUrlFetched - userinfo model</li>
-     <li>sessionRenewed - gebruikersinformatiemodel <br /> </li>
+     <li>sessionRenewed - userinfo model <br /> </li>
      <li>sessionExpired - gebruikersinformatiemodel </li>
     </ul> </td>
   </tr>

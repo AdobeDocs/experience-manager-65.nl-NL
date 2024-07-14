@@ -20,25 +20,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
 >**Vereiste**:
 >
->Alvorens over het creëren van en het wijzigen van gedeelde middelen te leren, zie [Inhoud synchroniseren](/help/mobile/mobile-ondemand-contentsync.md) de basisbeginselen te begrijpen.
+>Voorafgaand aan leren over het creëren van en het wijzigen van gedeelde middelen, zie [ Synchronisatie van de Inhoud ](/help/mobile/mobile-ondemand-contentsync.md) om de basisconcepten te begrijpen.
 
 AEM Mobile-gebruikers gebruiken Content Sync om live-inhoud te exporteren naar statische inhoud voor gebruik in Mobile Apps. Deze export vindt plaats wanneer inhoud vanuit AEM Mobile wordt geüpload naar Mobile On-Demand Services.
 
-De eigenschap ***dps-exportTemplate*** in de bovenstaande tabel wordt het pad naar de exportconfiguraties van de app gedefinieerd. Stel deze eigenschap in om gedeelde bronnen te maken en te wijzigen.
+Het bezit ***dps-exportTemplate*** die in lijst hierboven wordt vermeld, bepaalt de weg aan de de uitvoervormen van app. Stel deze eigenschap in om gedeelde bronnen te maken en te wijzigen.
 
 In de volgende bronnen wordt beschreven hoe u inhoud uit Adobe Experience Manager (AEM) exporteert om te uploaden naar AEM Mobile.
 
 Artikelen hebben inhoud die moet worden geëxporteerd en geüpload. Een deel van deze inhoud kan worden gedeeld tussen artikelen.
 
-Gebruiken [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) om de inhoud samen te verzamelen en een ***Gedeelde bronnen*** pakket.
+Het gebruik [ ContentSync ](/help/mobile/mobile-ondemand-contentsync.md) om de inhoud samen te verzamelen en a ***Gedeelde het pakket van Middelen*** tot stand te brengen.
 
-De ContentSync-configuratie gevonden op **&lt;dps-exporttemplate>/dps-article>** moet worden geconfigureerd om alle inhoud te exporteren die een artikel vereist voor statische rendering van eigenschappen op een apparaat.
+De configuratie ContentSync die bij **wordt gevonden &lt;dps-exportTemplate>/dps-article>** zou moeten worden gevormd om alle inhoud en artikel uit te voeren die voor bezit statische teruggeven op apparaat wordt vereist.
 
 >[!CAUTION]
 >
@@ -52,11 +52,11 @@ De ContentSync-configuratie gevonden op **&lt;dps-exporttemplate>/dps-article>**
 Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 
 1. Open CRXDE Lite op uw AEM.
-1. Bladeren naar dit pad [/etc/contentSync/templates/dps-we-onbeperkt-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article)om de gedeelde voorbeeldbronnen weer te geven.
+1. Blader naar dit pad [ /etc/contentSync/templates/dps-we-limited-app/dps-article ](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) om de gedeelde voorbeeldbronnen weer te geven.
 
    U kunt alle eigenschappen bekijken die voor het creëren van uw gedeelde middelen zoals aangetoond in het hieronder cijfer worden vereist:
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+   ![ chlimage_1-134 ](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >

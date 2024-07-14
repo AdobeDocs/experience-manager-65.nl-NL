@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # HTML Forms renderen met CustomToolbars {#rendering-html-forms-with-customtoolbars}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
 ## HTML Forms renderen met aangepaste werkbalken {#rendering-html-forms-with-custom-toolbars}
 
@@ -40,21 +40,21 @@ Naast het bestand fscmenu.xml moet u ook de volgende bestanden ophalen:
 * fscmenu-ie.css
 * fscdialog.css
 
-fscJS is het Java-script dat aan elk knooppunt is gekoppeld. Er moet een `div#fscmenu` knooppunt en optioneel voor `ul#fscmenuItem` knooppunten. De JS-bestanden implementeren de kernfuncties van de werkbalk en de standaardbestanden werken.
+fscJS is het Java-script dat aan elk knooppunt is gekoppeld. U moet er een opgeven voor het knooppunt `div#fscmenu` en optioneel voor `ul#fscmenuItem` -knooppunten. De JS-bestanden implementeren de kernfuncties van de werkbalk en de standaardbestanden werken.
 
-fscCSS is een stijlpagina die aan een bepaalde knoop wordt geassocieerd. De stijlen in de CSS-bestanden geven de werkbalkweergave aan. *fscVCSS* Dit is een stijlpagina voor een verticale werkbalk, die links van het weergegeven HTML formulier wordt weergegeven. *fscIECSS* is een stijlpagina die wordt gebruikt voor HTML-formulieren die worden weergegeven in Internet Explorer.
+fscCSS is een stijlpagina die aan een bepaalde knoop wordt geassocieerd. De stijlen in de CSS-bestanden geven de werkbalkweergave aan. *fscVCSS* is een stijlblad voor een verticale toolbar, die op de linkerzijde van de teruggegeven vorm van HTML wordt getoond. *fscIECSS* is een stijlblad dat voor HTML vormen wordt gebruikt die in Internet Explorer worden teruggegeven.
 
-Controleer of naar alle bovenstaande bestanden wordt verwezen in het bestand fscmenu.xml. Dat wil zeggen dat u in het bestand fscmenu.xml URI-locaties opgeeft die naar deze bestanden verwijzen, zodat de Forms-service ze kan vinden. Deze bestanden zijn standaard beschikbaar op URI-locaties die beginnen met interne trefwoorden `FSWebRoot` of `ApplicationWebRoot`.
+Controleer of naar alle bovenstaande bestanden wordt verwezen in het bestand fscmenu.xml. Dat wil zeggen dat u in het bestand fscmenu.xml URI-locaties opgeeft die naar deze bestanden verwijzen, zodat de Forms-service ze kan vinden. Deze bestanden zijn standaard beschikbaar op URI-locaties die beginnen met interne trefwoorden `FSWebRoot` of `ApplicationWebRoot` .
 
-Als u de werkbalk wilt aanpassen, vervangt u de trefwoorden met het externe trefwoord `FSToolBarURI`. Dit sleutelwoord vertegenwoordigt URI die aan de dienst van Forms in runtime wordt overgegaan (deze benadering wordt getoond later in deze sectie).
+Als u de werkbalk wilt aanpassen, vervangt u de trefwoorden door het externe trefwoord `FSToolBarURI` te gebruiken. Dit sleutelwoord vertegenwoordigt URI die aan de dienst van Forms in runtime wordt overgegaan (deze benadering wordt getoond later in deze sectie).
 
-U kunt ook de absolute locaties van deze JS- en CSS-bestanden opgeven, zoals https://www.mycompany.com/scripts/misc/fscmenu.js. In deze situatie hoeft u de `FSToolBarURI` trefwoord.
+U kunt ook de absolute locaties van deze JS- en CSS-bestanden opgeven, zoals https://www.mycompany.com/scripts/misc/fscmenu.js. In dit geval hoeft u het trefwoord `FSToolBarURI` niet te gebruiken.
 
 >[!NOTE]
 >
->Het wordt afgeraden om de manier waarop naar deze bestanden wordt verwezen, door elkaar te gebruiken. Er moet dus naar alle URI&#39;s worden verwezen door een van de `FSToolBarURI` of een absolute locatie.
+>Het wordt afgeraden om de manier waarop naar deze bestanden wordt verwezen, door elkaar te gebruiken. Er moet dus naar alle URI&#39;s worden verwezen door het trefwoord `FSToolBarURI` of een absolute locatie te gebruiken.
 
-U kunt de JS- en CSS-bestanden verkrijgen door de adobe-forms te openen&lt;appserver>.ear-bestand. Open het bestand adobe-forms-res.war in dit bestand. Al deze bestanden staan in het WAR-bestand. De adobe-formulieren&lt;appserver>.ear-bestand bevindt zich in de installatiemap voor AEM formulieren (C:\ is de installatiemap). U kunt de adobe-formulieren openen&lt;appserver>.ear die een hulpmiddel van de dossierextractie zoals WinRAR gebruikt.
+U kunt de JS- en CSS-bestanden verkrijgen door het bestand adobe-forms-&lt;appserver>.ear te openen. Open het bestand adobe-forms-res.war in dit bestand. Al deze bestanden staan in het WAR-bestand. Het bestand adobe-forms-&lt;appserver>.ear bevindt zich in de installatiemap voor AEM formulieren (C:\ is de installatiemap). U kunt de adobe-forms-&lt;appserver>.ear openen gebruikend een hulpmiddel van de dossierextractie zoals WinRAR.
 
 De volgende XML-syntaxis toont een voorbeeld van het bestand fscmenu.xml.
 
@@ -97,12 +97,12 @@ De volgende XML-syntaxis toont een voorbeeld van het bestand fscmenu.xml.
 
 De volgende items beschrijven hoe u een werkbalk kunt aanpassen:
 
-* De waarden wijzigen van `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` attributen (in het fscmenu.xml- dossier) om op de douaneplaatsen van de referenced dossiers door één van de methodes te wijzen die in deze sectie worden beschreven (bijvoorbeeld `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
+* Wijzig de waarden van de kenmerken `fscJS`, `fscCSS`, `fscVCSS` en `fscIECSS` (in het bestand fscmenu.xml) om de aangepaste locaties van de bestanden waarnaar wordt verwezen, weer te geven met een van de methoden die in deze sectie worden beschreven (bijvoorbeeld `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
 * Alle CSS- en JS-bestanden moeten worden opgegeven. Als geen van de bestanden wordt gewijzigd, geeft u de standaardmap op de aangepaste locatie op. U kunt de standaardbestanden verkrijgen door verschillende bestanden te openen, zoals in deze sectie wordt beschreven.
 * Een absolute verwijzing (bijvoorbeeld https://www.example.com/scripts/custom-vertical-fscmenu.css) voor elk bestand is toegestaan.
-* De JS- en CSS-bestanden `div#fscmenu` knooppunt is essentieel voor werkbalkfunctionaliteit. Individueel `ul#fscmenuItem` knooppunten kunnen al dan niet ondersteunende JS- of CSS-bestanden hebben.
+* De JS- en CSS-bestanden die het knooppunt `div#fscmenu` nodig heeft, zijn essentieel voor de werkbalkfunctionaliteit. Afzonderlijke `ul#fscmenuItem` knooppunten kunnen JS- of CSS-bestanden ondersteunen of hebben dit niet.
 
-**De lokale waarde wijzigen**
+**Veranderend de lokale waarde**
 
 Als onderdeel van het aanpassen van een werkbalk kunt u de waarde voor de landinstelling van de werkbalk wijzigen. Dat wil zeggen dat u het in een andere taal kunt weergeven. In de volgende afbeelding ziet u een aangepaste werkbalk die in het Frans wordt weergegeven.
 
@@ -149,13 +149,13 @@ Als u de landinstellingswaarde van een werkbalk wilt wijzigen, moet u ervoor zor
 >
 >De snelstarthandleidingen die aan deze sectie zijn gekoppeld, gebruiken dit XML-bestand om een Franse aangepaste werkbalk weer te geven, zoals in de vorige illustratie wordt getoond.
 
-Geef ook een geldige waarde voor de landinstelling op door het dialoogvenster `HTMLRenderSpec` object `setLocale` en het doorgeven van een tekenreekswaarde die de waarde van de landinstelling opgeeft. Geef bijvoorbeeld `fr_FR` om Frans aan te geven. De Forms-service wordt geleverd met gelokaliseerde werkbalken.
+Geef ook een geldige landinstellingswaarde op door de methode `setLocale` van het object `HTMLRenderSpec` aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft. Geef bijvoorbeeld `fr_FR` door om Frans op te geven. De Forms-service wordt geleverd met gelokaliseerde werkbalken.
 
 >[!NOTE]
 >
->Voordat u een HTML-formulier genereert dat gebruikmaakt van een aangepaste werkbalk, moet u weten hoe HTML-formulieren worden gegenereerd. (Zie [Forms renderen als HTML](/help/forms/developing/rendering-forms-html.md).)
+>Voordat u een HTML-formulier genereert dat gebruikmaakt van een aangepaste werkbalk, moet u weten hoe HTML-formulieren worden gegenereerd. (Zie [ teruggevend Forms als HTML ](/help/forms/developing/rendering-forms-html.md).)
 
-Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -167,29 +167,29 @@ Voer de volgende taken uit om een HTML-formulier te genereren dat een aangepaste
 1. Een HTML-formulier weergeven.
 1. Schrijf de gegevensstroom van het formulier naar de webbrowser van de client.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, neemt u de proxybestanden op.
 
-**Een Forms Java API-object maken**
+**creeer een voorwerp van Forms Java API**
 
 Voordat u via programmacode een bewerking kunt uitvoeren die door de Forms-service wordt ondersteund, moet u een Forms-clientobject maken.
 
-**Verwijzen naar een aangepast XML-bestand met een fsmenu**
+**Verwijzing een dossier van douane fsmenuXML**
 
-Als u een HTML-formulier wilt weergeven dat een aangepaste werkbalk bevat, verwijst u naar een XML-bestand met fsmenu&#39;s dat de werkbalk beschrijft. (Deze sectie bevat twee voorbeelden van een fsmenu-XML-bestand.) Zorg er ook voor dat het bestand fscmenu.xml de locaties van alle bestanden waarnaar wordt verwezen correct opgeeft. Zoals eerder in deze sectie is vermeld, moet u ervoor zorgen dat naar alle bestanden wordt verwezen door de `FSToolBarURI` sleutelwoord of hun absolute plaatsen.
+Als u een HTML-formulier wilt weergeven dat een aangepaste werkbalk bevat, verwijst u naar een XML-bestand met fsmenu&#39;s dat de werkbalk beschrijft. (Deze sectie bevat twee voorbeelden van een fsmenu-XML-bestand.) Zorg er ook voor dat het bestand fscmenu.xml de locaties van alle bestanden waarnaar wordt verwezen correct opgeeft. Zoals eerder in deze sectie is vermeld, moet u ervoor zorgen dat in alle bestanden naar het trefwoord `FSToolBarURI` of naar de absolute locatie wordt verwezen.
 
-**Een HTML-formulier renderen**
+**geef een vorm van HTML** terug
 
 Als u een HTML-formulier wilt genereren, geeft u een formulierontwerp op dat in Designer is gemaakt en als XDP-bestand is opgeslagen. Selecteer ook een transformatietype HTML. U kunt bijvoorbeeld het transformatietype HTML opgeven waarmee een dynamische HTML wordt weergegeven voor Internet Explorer 5.0 of hoger.
 
 Voor het weergeven van een HTML-formulier zijn ook waarden nodig, zoals URI-waarden, voor het weergeven van andere formuliertypen.
 
-**De formuliergegevensstroom naar de webbrowser van de client schrijven**
+**schrijf de stroom van vormgegevens aan cliëntWeb browser**
 
 Wanneer de Forms-service een HTML-formulier weergeeft, wordt een formuliergegevensstroom geretourneerd die u naar de webbrowser van de client moet schrijven om het HTML-formulier zichtbaar te maken voor gebruikers.
 
-**Zie ook**
+**zie ook**
 
 [Een HTML-formulier met een aangepaste werkbalk weergeven met de Java API](#render-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
@@ -217,45 +217,45 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
 
 1. Een Forms Java API-object maken
 
-   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat.
+   * Maak een `FormsServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
 1. Verwijzen naar een aangepast XML-bestand met een fsmenu
 
-   * Een `HTMLRenderSpec` object met behulp van de constructor.
-   * Als u een HTML-formulier wilt weergeven met een werkbalk, roept u de opdracht `HTMLRenderSpec` object `setHTMLToolbar` methode en een `HTMLToolbar` enum value. Als u bijvoorbeeld een verticale werkbalk HTML wilt weergeven, geeft u door `HTMLToolbar.Vertical`.
-   * Geef de locatie van het fsmenu-XML-bestand op door het `HTMLRenderSpec` object `setToolbarURI` methode en het overgaan van een koordwaarde die de plaats van URI van het dossier van XML specificeert.
-   * Stel, indien van toepassing, de waarde van de landinstelling in door de `HTMLRenderSpec` object `setLocale` en het doorgeven van een tekenreekswaarde die de waarde van de landinstelling opgeeft. De standaardwaarde is Engels.
+   * Maak een `HTMLRenderSpec` -object met behulp van de constructor.
+   * Als u een HTML-formulier met een werkbalk wilt weergeven, roept u de methode `setHTMLToolbar` van het object `HTMLRenderSpec` aan en geeft u een waarde `HTMLToolbar` enum door. Als u bijvoorbeeld een verticale werkbalk HTML wilt weergeven, geeft u door `HTMLToolbar.Vertical` .
+   * Geef de locatie van het XML-bestand van het fsmenu op door de methode `setToolbarURI` van het object `HTMLRenderSpec` aan te roepen en een tekenreekswaarde door te geven die de URI-locatie van het XML-bestand aangeeft.
+   * Stel, indien van toepassing, de waarde van de landinstelling in door de methode van het `HTMLRenderSpec` -object `setLocale` aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft. De standaardwaarde is Engels.
 
    >[!NOTE]
    >
-   >Met de snelstarthandleidingen die aan deze sectie zijn gekoppeld, wordt deze waarde ingesteld op `fr_FR`*.*
+   >Snel aan de slag die aan deze sectie worden geassocieerd plaatst deze waarde aan `fr_FR`*.*
 
 1. Een HTML-formulier renderen
 
-   De `FormsServiceClient` object `renderHTMLForm` en geeft de volgende waarden door:
+   Roep de methode `renderHTMLForm` van het object `FormsServiceClient` aan en geef de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` Enum value that specifies the HTML preferences type. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML`.
-   * A `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u een lege waarde door `com.adobe.idp.Document` object.
-   * De `HTMLRenderSpec` -object waarin HTML-runtime-opties zijn opgeslagen.
-   * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * A `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
-   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` .
+   * Een `TransformTo` opsommingswaarde die het voorkeurstype HTML aangeeft. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML` op.
+   * Een `com.adobe.idp.Document` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Wanneer u geen gegevens wilt samenvoegen, geeft u een leeg `com.adobe.idp.Document` -object door.
+   * Het `HTMLRenderSpec` -object dat HTML-runtime-opties opslaat.
+   * Een tekenreekswaarde die de headerwaarde `HTTP_USER_AGENT` opgeeft, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)` .
+   * Een `URLSpec` -object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
+   * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
 
-   De `renderHTMLForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
+   De methode `renderHTMLForm` retourneert een `FormsResult` -object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
-   * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
-   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
-   * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
-   * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read` en de bytearray doorgeven als een argument.
-   * De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+   * Maak een `com.adobe.idp.Document` -object door de methode `FormsResult` object &#39;s `getOutputContent` aan te roepen.
+   * Haal het inhoudstype van het object `com.adobe.idp.Document` op door de methode `getContentType` ervan aan te roepen.
+   * Stel het inhoudstype van het `javax.servlet.http.HttpServletResponse` -object in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het `com.adobe.idp.Document` -object door te geven.
+   * Maak een `javax.servlet.ServletOutputStream` -object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` object `getOutputStream` aan te roepen.
+   * Maak een `java.io.InputStream` -object door de methode `com.adobe.idp.Document` object `getInputStream` aan te roepen.
+   * Maak een bytearray en vul deze met de formuliergegevensstroom door de methode `read` van het object `InputStream` aan te roepen en de bytearray als een argument door te geven.
+   * Roep de methode `write` van het object `javax.servlet.ServletOutputStream` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write` .
 
-**Zie ook**
+**zie ook**
 
 [Snel starten (SOAP modus): Een HTML-formulier weergeven met een aangepaste werkbalk met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
@@ -274,49 +274,49 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
 
 1. Een Forms Java API-object maken
 
-   Een `FormsService` -object en stel verificatiewaarden in.
+   Maak een `FormsService` -object en stel de verificatiewaarden in.
 
 1. Verwijzen naar een aangepast XML-bestand met een fsmenu
 
-   * Een `HTMLRenderSpec` object met behulp van de constructor.
-   * Als u een HTML-formulier wilt weergeven met een werkbalk, roept u de opdracht `HTMLRenderSpec` object `setHTMLToolbar` methode en een `HTMLToolbar` enum value. Als u bijvoorbeeld een verticale werkbalk HTML wilt weergeven, geeft u door `HTMLToolbar.Vertical`.
-   * Geef de locatie van het fsmenu-XML-bestand op door het `HTMLRenderSpec` object `setToolbarURI` methode en het overgaan van een koordwaarde die de plaats van URI van het dossier van XML specificeert.
-   * Stel, indien van toepassing, de waarde van de landinstelling in door de `HTMLRenderSpec` object `setLocale` en het doorgeven van een tekenreekswaarde die de waarde van de landinstelling opgeeft. De standaardwaarde is Engels.
+   * Maak een `HTMLRenderSpec` -object met behulp van de constructor.
+   * Als u een HTML-formulier met een werkbalk wilt weergeven, roept u de methode `setHTMLToolbar` van het object `HTMLRenderSpec` aan en geeft u een waarde `HTMLToolbar` enum door. Als u bijvoorbeeld een verticale werkbalk HTML wilt weergeven, geeft u door `HTMLToolbar.Vertical` .
+   * Geef de locatie van het XML-bestand van het fsmenu op door de methode `setToolbarURI` van het object `HTMLRenderSpec` aan te roepen en een tekenreekswaarde door te geven die de URI-locatie van het XML-bestand aangeeft.
+   * Stel, indien van toepassing, de waarde van de landinstelling in door de methode van het `HTMLRenderSpec` -object `setLocale` aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft. De standaardwaarde is Engels.
 
    >[!NOTE]
    >
-   >Met de snelstarthandleidingen die aan deze sectie zijn gekoppeld, wordt deze waarde ingesteld op `fr_FR`*.*
+   >Snel aan de slag die aan deze sectie worden geassocieerd plaatst deze waarde aan `fr_FR`*.*
 
 1. Een HTML-formulier renderen
 
-   De `FormsService` object `renderHTMLForm` en geeft de volgende waarden door:
+   Roep de methode `renderHTMLForm` van het object `FormsService` aan en geef de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` Enum value that specifies the HTML preferences type. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML`.
-   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null`.
-   * De `HTMLRenderSpec` -object waarin HTML-runtime-opties zijn opgeslagen.
-   * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
-   * A `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
-   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Deze parameter is optioneel en u kunt `null` als u geen bestanden aan het formulier wilt toevoegen.
-   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat wordt gevuld door het `renderHTMLForm` methode. Met deze parameterwaarde wordt het gerenderde formulier opgeslagen.
-   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat wordt gevuld door het `renderHTMLForm` methode. In deze parameter worden de XML-uitvoergegevens opgeslagen.
-   * Een leeg `javax.xml.rpc.holders.LongHolder` object dat wordt gevuld door het `renderHTMLForm` methode. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.
-   * Een leeg `javax.xml.rpc.holders.StringHolder` object dat wordt gevuld door het `renderHTMLForm` methode. In dit argument wordt de waarde van de landinstelling opgeslagen.
-   * Een leeg `javax.xml.rpc.holders.StringHolder` object dat wordt gevuld door het `renderHTMLForm` methode. In dit argument wordt de gebruikte HTML-renderwaarde opgeslagen.
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking zal bevatten.
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` .
+   * Een `TransformTo` opsommingswaarde die het voorkeurstype HTML aangeeft. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML` op.
+   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen.
+   * Het `HTMLRenderSpec` -object dat HTML-runtime-opties opslaat.
+   * Een tekenreekswaarde die de headerwaarde `HTTP_USER_AGENT` opgeeft, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322` . U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
+   * Een `URLSpec` -object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
+   * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Deze parameter is optioneel en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` -object dat door de methode `renderHTMLForm` wordt gevuld. Met deze parameterwaarde wordt het gerenderde formulier opgeslagen.
+   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` -object dat door de methode `renderHTMLForm` wordt gevuld. In deze parameter worden de XML-uitvoergegevens opgeslagen.
+   * Een leeg `javax.xml.rpc.holders.LongHolder` -object dat door de methode `renderHTMLForm` wordt gevuld. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.
+   * Een leeg `javax.xml.rpc.holders.StringHolder` -object dat door de methode `renderHTMLForm` wordt gevuld. In dit argument wordt de waarde van de landinstelling opgeslagen.
+   * Een leeg `javax.xml.rpc.holders.StringHolder` -object dat door de methode `renderHTMLForm` wordt gevuld. In dit argument wordt de gebruikte HTML-renderwaarde opgeslagen.
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
 
-   De `renderHTMLForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
+   Met de methode `renderHTMLForm` wordt het `com.adobe.idp.services.holders.FormsResultHolder` -object dat als laatste argumentwaarde wordt doorgegeven, gevuld met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
-   * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
-   * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
-   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
-   * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
-   * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+   * Maak een `FormResult` -object door de waarde van het gegevenslid van het `com.adobe.idp.services.holders.FormsResultHolder` object `value` op te halen.
+   * Maak een `BLOB` -object dat formuliergegevens bevat door de methode `FormsResult` object `getOutputContent` aan te roepen.
+   * Haal het inhoudstype van het object `BLOB` op door de methode `getContentType` ervan aan te roepen.
+   * Stel het inhoudstype van het `javax.servlet.http.HttpServletResponse` -object in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het `BLOB` -object door te geven.
+   * Maak een `javax.servlet.ServletOutputStream` -object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` object `getOutputStream` aan te roepen.
+   * Maak een bytearray en vul deze door de methode `getBinaryData` van het object `BLOB` aan te roepen. Hierdoor wordt de inhoud van het `FormsResult` -object toegewezen aan de bytearray.
+   * Roep de methode `write` van het object `javax.servlet.http.HttpServletResponse` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write` .
 
-**Zie ook**
+**zie ook**
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

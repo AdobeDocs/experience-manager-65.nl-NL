@@ -34,7 +34,7 @@ Op deze pagina vindt u:
    * [Vereisten](#prerequisites)
    * [De software ophalen](#getting-the-software)
    * [Standaard lokale installatie](#default-local-install)
-   * [Auteur- en publicatie-installaties](#author-and-publish-installs)
+   * [Auteur- en Publish-installaties](#author-and-publish-installs)
    * [Onverpakte installatiemap](#unpacked-install-directory)
    * [Starten en stoppen](#starting-and-stopping)
 
@@ -57,7 +57,7 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [ wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Basisconcepten {#basic-concepts}
 
@@ -67,23 +67,23 @@ Adobe Experience Manager is een op het web gebaseerd clientserversysteem voor he
 
 Op het niveau van de infrastructuur biedt AEM het volgende:
 
-* **Webtoepassingsserver**: AEM kan worden geïmplementeerd in zelfstandige modus (inclusief een geïntegreerde Jetty-webserver) of als een webtoepassing binnen een externe toepassingsserver.
-* **Web Application Framework**: AEM neemt het het Verdelen Kader van de Toepassing van het Web op dat het schrijven van RESTful, content-oriented Webtoepassingen vereenvoudigt.
-* **Inhoudsopslagplaats**: AEM bevat een JCR (Java™ Content Repository), een type hiërarchische database die speciaal is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De gegevensopslagruimte slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt.
+* **de Server van de Toepassing van het Web**: AEM kan op standalone wijze (het omvat een geïntegreerde Webserver van de Jetty) of als Webtoepassing binnen een server van de derdetoepassing worden opgesteld.
+* **Kader van de Toepassing van het Web**: AEM neemt het het Verschuiven Kader van de Toepassing van het Web op dat het schrijven van RESTful, tevreden-georiënteerde Webtoepassingen vereenvoudigt.
+* **Bewaarplaats van de Inhoud**: AEM omvat een Bewaarplaats van de Inhoud Java™ (JCR), een type van hiërarchisch gegevensbestand dat specifiek voor ongestructureerde en semi-gestructureerde gegevens wordt ontworpen. De gegevensopslagruimte slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt.
 
 Op basis van deze basis biedt AEM ook verschillende functies op toepassingsniveau voor het beheer van:
 
 * **Websites**
-* **Mobiele toepassingen**
-* **Digitale publicaties**
+* **Mobiele Toepassingen**
+* **Digitale Publicaties**
 * **Forms &amp; Documenten**
-* **Digitale middelen**
+* **Digitale Assets**
 * **Gemeenschappen**
 * **Online Commerce**
 
 Tot slot kunnen de klanten deze infrastructuur en toepassing-vlakke bouwstenen gebruiken om aangepaste oplossingen tot stand te brengen door toepassingen van hun te bouwen.
 
-De AEM server is **op Java gebaseerd** en wordt uitgevoerd op de meeste besturingssystemen die dat platform ondersteunen. Alle clientinteractie met AEM gebeurt via een **webbrowser**.
+De AEM server is **op Java-Gebaseerd** en loopt op de meeste werkende systemen die dat platform steunen. Alle cliëntinteractie met AEM wordt gedaan door a **Webbrowser**.
 
 >[!NOTE]
 >
@@ -93,26 +93,26 @@ De AEM server is **op Java gebaseerd** en wordt uitgevoerd op de meeste besturin
 
 In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server wordt uitgevoerd. AEM installaties omvatten gewoonlijk minstens twee instanties, die typisch op afzonderlijke computers lopen:
 
-* **Auteur**: Een AEM die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
-* **Publiceren**: Een AEM instantie die de gepubliceerde inhoud aan het publiek levert.
+* **Auteur**: Een AEM die instantie wordt gebruikt om, inhoud tot stand te brengen te uploaden en uit te geven en de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
+* **Publish**: Een AEM instantie die de gepubliceerde inhoud aan het publiek dient.
 
 Deze exemplaren zijn identiek wat geïnstalleerde software betreft. Ze worden alleen gedifferentieerd naar configuratie. Bovendien gebruiken de meeste installaties een Dispatcher:
 
-* **Dispatcher**: Een statische webserver (Apache httpd, Microsoft® IIS enzovoort) aangevuld met de module AEM Dispatcher. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
+* **Dispatcher**: Een statische Webserver (Apache httpd, Microsoft® IIS, etc.) die met de module van AEM Dispatcher wordt uitgebreid. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
 
-Er zijn vele geavanceerde opties en de opstelling, maar het basispatroon van auteur, publiceert en Verzender is de kern van de meeste plaatsingen. Laten we ons eerst richten op een eenvoudige opstelling. Hierna volgen besprekingen over geavanceerde implementatieopties.
+Er zijn veel geavanceerde opties en uitbreidingen van deze installatie, maar het basispatroon van auteur, publicatie en Dispatcher staat centraal bij de meeste implementaties. Laten we ons eerst richten op een eenvoudige opstelling. Hierna volgen besprekingen over geavanceerde implementatieopties.
 
 In de volgende secties worden beide scenario&#39;s beschreven:
 
-* **Op locatie**: AEM geïmplementeerd en beheerd in uw bedrijfsomgeving.
+* **Op-gebouw**: AEM opgesteld en beheerd in uw collectief milieu.
 
-* **Managed Services - Cloud Manager voor Adobe Experience Manager**: AEM geïmplementeerd en beheerd door Adobe Managed Services.
+* **Managed Services - Cloud Manager voor Adobe Experience Manager**: AEM opgesteld en beheerd door Adobe Managed Services.
 
 ### Op locatie {#on-premise}
 
-U kunt AEM installeren op servers in uw bedrijfsomgeving. Voorbeelden van gebruikelijke installatieprogramma&#39;s zijn: ontwikkelings-, test- en publicatieomgevingen. Zie [Aan de slag](/help/sites-deploying/deploy.md#getting%20started) voor basisinformatie over hoe u de software van de AEM lokaal kunt installeren.
+U kunt AEM installeren op servers in uw bedrijfsomgeving. Voorbeelden van gebruikelijke installatieprogramma&#39;s zijn: ontwikkelings-, test- en publicatieomgevingen. Zie [ Begonnen het Worden ](/help/sites-deploying/deploy.md#getting%20started) voor basisdetails op hoe te om de AEM software te krijgen om het plaatselijk te installeren.
 
-Meer over de typische plaatsingen op-gebouw leren, zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md).
+Om meer over de typische plaatsingen te leren op-gebouw, zie [ Geadviseerde Plaatsingen ](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services met Cloud Manager {#managed-services-using-cloud-manager}
 
@@ -120,45 +120,45 @@ AEM Managed Services is een complete oplossing voor Digital Experience Managemen
 
 Met AEM Managed Services kunnen klanten de volgende voordelen realiseren:
 
-**Snellere marktintroductie:** Met de flexibele wolkeninfrastructuur van Adobe Managed Services kunnen organisaties snel succesvolle digitale ervaringen plannen, lanceren en optimaliseren. Adobe beheert de cloudarchitectuur zonder extra kapitaal, hardware of software vereist en de technici van de Oplossingen van de Klant van de Adobe, hulp met AEM architectuur, levering, aanpassing voor verbinding met back-end apps en go-live beste praktijken.
+**Snellere Tijd aan Markt:** met flexibele wolkeninfrastructuur van Adobe Managed Services, kunnen de organisaties succesvolle digitale ervaringen snel plannen, lanceren en optimaliseren. Adobe beheert de cloudarchitectuur zonder extra kapitaal, hardware of software vereist en de technici van de Oplossingen van de Klant van de Adobe, hulp met AEM architectuur, levering, aanpassing voor verbinding met back-end apps en go-live beste praktijken.
 
-**Hogere prestaties:** Verstrekt betrouwbare digitale ervaringen voor uw zaken met vier opties van de de dienstbeschikbaarheid 99.5%, 99.9%, 99.95%, en 99.99%. Bovendien maakt het automatische back-up en multimode modellen voor noodherstel mogelijk om betrouwbaarheid en noodbeheer te garanderen.
+**Hogere Prestaties:** verstrekt betrouwbare digitale ervaringen voor uw zaken met vier opties van de de dienstbeschikbaarheid 99.5%, 99.9%, 99.95%, en 99.99%. Bovendien maakt het automatische back-up en multimode modellen voor noodherstel mogelijk om betrouwbaarheid en noodbeheer te garanderen.
 
-**Geoptimaliseerde IT-kosten:** Proactieve begeleiding en expertise Help-organisaties blijven op de hoogte van de nieuwste versie van AEM. Adobe Platinum Maintenance and Support wordt automatisch opgenomen in nieuwe implementaties van AMS Enterprise/Basic, die technische expertise en operationele ervaring bieden om organisaties te helpen hun bedrijfskritieke toepassingen te onderhouden. Gratis basisanalysemogelijkheden of doelmogelijkheden bieden extra waarde, met name voor organisaties uit het midden- en kleinbedrijf die weinig behoefte hebben aan analyses en personalisatie.
+**Geoptimaliseerde Kosten van IT:** de pro-actieve begeleiding en de organisaties van de deskundige hulp blijven huidig op de recentste versie van AEM. Adobe Platinum Maintenance and Support wordt automatisch opgenomen in nieuwe implementaties van AMS Enterprise/Basic, die technische expertise en operationele ervaring bieden om organisaties te helpen hun bedrijfskritieke toepassingen te onderhouden. Gratis basisanalysemogelijkheden of doelmogelijkheden bieden extra waarde, met name voor organisaties uit het midden- en kleinbedrijf die weinig behoefte hebben aan analyses en personalisatie.
 
-**Hoogste beveiliging:** Zorgt voor fysieke beveiliging, netwerk en gegevensbeveiliging op bedrijfsniveau door klantentoepassingen te hosten in een beperkte-toegangsfaciliteit, achter firewallsystemen, of binnen een virtuele privécloud. Het omvat virtuele machines van één huurder met robuuste gegevensopslagencryptie, antivirale middelen, en gegevensisolatie.
+**Hoogste Veiligheid:** verzekert onderneming-rang fysiek, netwerk, en gegevensveiligheid door klantentoepassingen in een beperkt-toegangsfaciliteit, achter firewallsystemen, of binnen een virtuele privé wolk te ontvangen. Het omvat virtuele machines van één huurder met robuuste gegevensopslagencryptie, antivirale middelen, en gegevensisolatie.
 
-**Cloud Manager**: Cloud Manager, een onderdeel van de Adobe Experience Manager Managed Services-aanbieding, is een zelfbedieningsportaal waarmee organisaties Adobe Experience Manager in de cloud verder kunnen beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor Adobe Managed Service-klanten.
+**Cloud Manager**: Cloud Manager, een deel van het aanbieden van Adobe Experience Manager Managed Services is een zelfbedieningsportaal dat verder organisaties toelaat om Adobe Experience Manager in de wolk zelf-te beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor Adobe Managed Service-klanten.
 
-Ga voor meer informatie over Cloud Manager en zijn bronnen naar [**Gebruikershandleiding voor Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
+Meer over de Manager van de Wolk en zijn middelen leren, zie {de Gids van de Gebruiker van 0} Cloud Manager **](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).[**
 
 ## Aan de slag {#getting-started}
 
 ### Vereisten {#prerequisites}
 
-Terwijl productieinstanties worden uitgevoerd op speciale machines waarop een door de overheid ondersteund besturingssysteem wordt uitgevoerd (zie [Technische vereisten](/help/sites-deploying/technical-requirements.md)), zal de server van de Experience Manager eigenlijk op om het even welk systeem lopen dat steunt [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8).
+Terwijl de productieinstanties in werking worden gesteld op specifieke machines die officieel gesteund OS in werking stellen (zie [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md)), zal de server van de Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 8 van Java™** ](https://www.oracle.com/java/technologies/downloads/#java8) steunt.
 
 Om vertrouwd te raken en zich op AEM te ontwikkelen, is het gebruikelijk om een instantie te gebruiken die op uw lokale computer wordt geïnstalleerd die OS X of Desktopversies van Microsoft® Windows of Linux® in werking stelt.
 
-Op de client werkt AEM met alle moderne browsers (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) op zowel desktop als tablet besturingssystemen. Zie [Ondersteunde clientplatforms](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor meer informatie.
+Op cliënt-kant, AEM werken met alle moderne browsers (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
 
 ### De software ophalen {#getting-the-software}
 
-Klanten met een geldig onderhouds- en supportcontract hadden een e-mailmelding met een code moeten ontvangen en AEM van de [**Licentiewebsite voor Adobe**](https://licensing.adobe.com/). Zakelijke partners kunnen om downloadtoegang vragen van [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+De klanten met een geldig onderhouds en steuncontract zouden een postbericht met een code moeten hebben ontvangen en AEM van de [**het Verlenen van vergunningen van de Adobe Website** kunnen downloaden ](https://licensing.adobe.com/). De bedrijfspartners kunnen downloadtoegang van [**verzoeken spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 Het AEM softwarepakket is beschikbaar in twee vormen:
 
-* **cq-quickstart-6.5.0.jar:** Een zelfstandig uitvoerbaar bestand *jar* bestand dat alles bevat wat u nodig hebt om actief te worden.
+* **cq-quickstart-6.5.0.jar:** Een standalone uitvoerbaar *jar* dossier dat alles omvat die u moet lopen.
 
-* **cq-quickstart-6.5.0.war:** A *oorlog* bestand voor implementatie op een externe toepassingsserver.
+* **cq-quickstart-6.5.0.war:** A *oorlog* dossier voor plaatsing in een server van de derdetoepassing.
 
-In de volgende sectie beschrijven we de **zelfstandige installatie**. Zie voor meer informatie over het installeren van AEM in een toepassingsserver [Installeren van toepassingsserver](/help/sites-deploying/application-server-install.md).
+In de volgende sectie beschrijven wij de **standalone installatie**. Voor details bij het installeren van AEM in een toepassingsserver zie [ de Server van de Toepassing installeren ](/help/sites-deploying/application-server-install.md).
 
 ### Standaard lokale installatie {#default-local-install}
 
 1. Maak een installatiemap op uw lokale computer. Bijvoorbeeld:
 
-   Installatielocatie voor UNIX®: **/opt/aem**
+   Installatielocatie UNIX®: **/opt/aem**
 
    Installatielocatie voor Windows: **`C:\Program Files\aem`**
 
@@ -166,9 +166,9 @@ In de volgende sectie beschrijven we de **zelfstandige installatie**. Zie voor m
 
    `<aem-install>`
 
-   *Het pad van de bestandsmap mag alleen uit ASCII-tekens van de Verenigde Staten bestaan.*
+   *de weg van de dossierfolder moet uit slechts de karakters van ASCII van de V.S. bestaan.*
 
-1. Plaats de **jar** en **licentie** bestanden in deze map:
+1. Plaats de **jar** en **vergunning** dossiers in deze folder:
 
    ```shell
    <aem-install>/
@@ -176,9 +176,9 @@ In de volgende sectie beschrijven we de **zelfstandige installatie**. Zie voor m
        license.properties
    ```
 
-   Als u geen `license.properties` bestand, AEM uw browser om naar een **Welkom** scherm bij het opstarten, waar u een licentiecode kunt invoeren. U moet een geldige licentiecode aanvragen bij Adobe als u die nog niet hebt.
+   Als u geen a `license.properties` dossier verstrekt, AEM uw browser aan a **Welkome** scherm op opstarten opnieuw richt, waar u een vergunningssleutel kunt ingaan. U moet een geldige licentiecode aanvragen bij Adobe als u die nog niet hebt.
 
-1. Als u de instantie wilt starten in een GUI-omgeving, dubbelklikt u op de knop **`cq-quickstart-6.5.0.jar`** bestand.
+1. Als u de instantie wilt starten in een GUI-omgeving, dubbelklikt u op het bestand **`cq-quickstart-6.5.0.jar`** .
 
    U kunt ook AEM starten vanaf de opdrachtregel:
 
@@ -188,19 +188,19 @@ In de volgende sectie beschrijven we de **zelfstandige installatie**. Zie voor m
 
 AEM neemt een paar minuten in beslag om het jar-bestand uit te pakken, te installeren en op te starten. Deze procedure leidt tot:
 
-* een **AEM auteur** instance
-* wordt uitgevoerd op **localhost**
-* op poort **4502**
+* een **AEM auteur** instantie
+* lopend op **localhost**
+* op haven **4502**
 
 Als u toegang wilt krijgen tot de instantie, moet u de browser raadplegen op:
 
 **`https://localhost:4502`**
 
-Het resultaat in auteursinstantie zal automatisch worden gevormd om met een **publish-instantie** op **`localhost:4503`**.
+Het resultaat in auteursinstantie zal automatisch worden gevormd om met a **te verbinden publiceert instantie** op **`localhost:4503`**.
 
-### Auteur- en publicatie-installaties {#author-and-publish-installs}
+### Auteur- en Publish-installaties {#author-and-publish-installs}
 
-De standaardinstallatie (en **auteur** instantie op **`localhost:4502`**) kan worden gewijzigd door de naam van de `jar` voordat u het voor het eerst start. Het naamgevingspatroon is:
+Het gebrek installeert (een **auteur** instantie op **`localhost:4502`**) kan eenvoudig worden veranderd door het `jar` dossier anders te noemen alvorens het voor het eerst te lanceren. Het naamgevingspatroon is:
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -208,17 +208,17 @@ De naam van het bestand wijzigen in
 
 **`cq-author-p4502.jar`**
 
-En het lanceren van het, resulteert in een auteursinstantie lopend op **`localhost:4502`**.
+En het lanceren van het, resulteert in een auteursinstantie die op **`localhost:4502`** loopt.
 
 Ook de naam van het bestand wijzigen en het bestand starten
 
 **`cq-publish-p4503.jar`**
 
-Resultaten van een publicatie-instantie die wordt uitgevoerd op **`localhost:4503`**.
+Resulteert in een publicatie-instantie die op **`localhost:4503`** wordt uitgevoerd.
 
 U installeert deze twee varianten bijvoorbeeld in
 
-`<aem-install>/author`en
+`<aem-install>/author` en
 
 **`<aem-install>/publish`**
 
@@ -229,7 +229,7 @@ Raadpleeg de volgende bronnen voor meer informatie over het aanpassen van de ins
 
 ### Onverpakte installatiemap {#unpacked-install-directory}
 
-Wanneer de QuickStart-pot voor het eerst wordt gestart, wordt deze zichzelf in dezelfde map uitgepakt onder een nieuwe submap met de naam `crx-quickstart`. U zou het volgende moeten hebben:
+Wanneer de snelstartjar voor het eerst wordt gestart, wordt deze zichzelf in dezelfde map uitgepakt onder een nieuwe submap met de naam `crx-quickstart` . U zou het volgende moeten hebben:
 
 ```xml
 <aem-install>/
@@ -255,30 +255,30 @@ Wanneer de QuickStart-pot voor het eerst wordt gestart, wordt deze zichzelf in d
 
 Als de instantie is geïnstalleerd via de gebruikersinterface, wordt automatisch een browservenster geopend en wordt ook een venster van de bureaubladtoepassing geopend met daarin de host en poort van de instantie en een aan/uit-schakelaar:
 
-![opstartscherm](assets/screen_shot_.png)
+![ begin op scherm ](assets/screen_shot_.png)
 
 >[!NOTE]
 >
->Als u symlinks gebruikt, kunt u het volgende doen: [kwesties met symlink](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
+>Als u symlinks gebruikt, heb een blik bij [ kwesties met symlink ](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
 
 ### Starten en stoppen {#starting-and-stopping}
 
 Wanneer AEM zichzelf heeft losgemaakt en voor het eerst is opgestart en u dubbelklikt op het jar-bestand in de installatiemap, wordt de instantie gewoon gestart, maar wordt deze niet opnieuw geïnstalleerd.
 
-Als u de instantie wilt stoppen vanuit de interface, klikt u op de knop **aan/uit** schakelt u het toepassingsvenster van het bureaublad in.
+Om de instantie van GUI tegen te houden, klik **aan/van** schakelaar op het venster van de Desktoptoepassing.
 
-U kunt AEM ook stoppen en starten vanaf de opdrachtregel. Ervan uitgaande dat u de instantie al voor de eerste keer hebt geïnstalleerd, wordt **opdrachtregelscripts** zijn hier:
+U kunt AEM ook stoppen en starten vanaf de opdrachtregel. Veronderstellend u reeds de instantie voor het eerst hebt geïnstalleerd, zijn de **bevel-lijn manuscripten** hier:
 
 **`<aem-install>/crx-quickstart/bin/`**
 
 Deze map bevat de volgende UNIX® bash shell-scripts:
 
-* **`start`**: Start de instantie
-* `stop`: Stopt de instantie
+* **`start`**: hiermee wordt de instantie gestart
+* `stop`: hiermee wordt de instantie gestopt
 * **`status`**: meldt de status van de instantie
-* **`quickstart`**: Gebruikt om begininformatie te vormen, indien nodig.
+* **`quickstart`**: wordt gebruikt om begininformatie te configureren, indien nodig.
 
-Er zijn ook gelijkwaardige **`bat`** bestanden voor Windows. Zie voor meer informatie:
+Er zijn ook equivalente **`bat`** bestanden voor Windows. Zie voor meer informatie:
 
 * [Start en stop van opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
 
@@ -286,7 +286,7 @@ AEM begint en leidt uw webbrowser automatisch naar de juiste pagina, meestal de 
 
 `https://localhost:4502/`
 
-![aanmeldingsscherm](assets/screen_shot_2019-04-08at83533am.png)
+![ teken binnen het scherm ](assets/screen_shot_2019-04-08at83533am.png)
 
 Nadat u bent aangemeld, hebt u toegang tot AEM. Raadpleeg de volgende secties voor meer informatie, afhankelijk van uw rol:
 
@@ -316,4 +316,4 @@ In het bovenstaande gedeelte krijgt u een goed inzicht in de grondbeginselen van
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [ wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)

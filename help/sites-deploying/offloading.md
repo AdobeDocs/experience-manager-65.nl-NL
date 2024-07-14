@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Het ontladen verdeelt verwerkingstaken onder de instanties van de Experience Manager in een topologie. Met offloading kunt u specifieke instanties van Experience Managers gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
 
-Offloading is gebaseerd op de [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) en Sling JobManager functies. Om het ontladen te gebruiken, voegt u de clusters van de Experience Manager aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer instanties van Experience Managers, zodat één instantie als een cluster wordt beschouwd.
+Het ontladen is gebaseerd op [ Apache het Verdelen Ontdekking ](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) en het Verdelen eigenschappen JobManager. Om het ontladen te gebruiken, voegt u de clusters van de Experience Manager aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer instanties van Experience Managers, zodat één instantie als een cluster wordt beschouwd.
 
-Voor informatie over het toevoegen van instanties aan een topologie, zie [Onderwerptechnologieën beheren](/help/sites-deploying/offloading.md#administering-topologies).
+Voor informatie over het toevoegen van instanties aan een topologie, zie [ Administering Topologies ](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Taakverdeling {#job-distribution}
 
@@ -38,9 +38,9 @@ Wanneer JobManager een baan creeert, selecteert het Offloading kader een cluster
 * De cluster moet één of meerdere instanties omvatten die een JobConsumer in werking stellen die voor het baanonderwerp wordt geregistreerd.
 * Het onderwerp moet voor minstens één geval in de cluster worden toegelaten.
 
-Zie [Het vormen onderwerpconsumptie](/help/sites-deploying/offloading.md#configuring-topic-consumption) voor informatie over het verfijnen van de taakverdeling.
+Zie [ Vormend de Verbruik van het Onderwerp ](/help/sites-deploying/offloading.md#configuring-topic-consumption) voor informatie over het raffineren van baandistributie.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![ chlimage_1-109 ](assets/chlimage_1-109.png)
 
 Wanneer het Offloading-framework een cluster selecteert om een taak uit te voeren en de cluster uit meerdere instanties bestaat, bepaalt Sling Distribution welke instantie in de cluster de taak uitvoert.
 
@@ -61,7 +61,7 @@ Elke instantie van de Experience Manager stelt de volgende aan het ontladen verw
 
 De dienst van de Ontdekking van alle leden van de topologie richt aan de Schakelaar van de Topologie op één van de leden. In de volgende secties wordt dit lid het hoofdlid genoemd.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![ chlimage_1-110 ](assets/chlimage_1-110.png)
 
 Elke cluster in de topologie bevat een instantie die als leider wordt erkend. De clusterleider communiceert met de topologie namens de andere leden van de cluster. Wanneer de leader de cluster verlaat, wordt automatisch een nieuwe leader voor de cluster gekozen.
 
@@ -78,13 +78,13 @@ Voor elke instantie in de cluster, kunt u verscheidene op topologie betrekking h
 * De taakonderwerpen waarvoor de instantie is geregistreerd voor offloaden.
 * De taakonderwerpen die de instantie verwerkt.
 
-1. Klik met de aanraakinterface op het tabblad Gereedschappen. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. Klik met de aanraakinterface op het tabblad Gereedschappen. ([ http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Klik in het gebied Bewerkingen graniet op Browser offloaden.
 1. Klik in het navigatievenster op Topologiebrowser.
 
    De clusters die aan de topologie deelnemen verschijnen.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![ chlimage_1-111 ](assets/chlimage_1-111.png)
 
 1. Klik op een cluster om een lijst weer te geven met de instanties in de cluster en hun id, huidige status en leaderstatus.
 1. Klik op een instantie-id voor meer gedetailleerde eigenschappen.
@@ -97,10 +97,10 @@ U kunt de Console van het Web ook gebruiken om topologieinformatie te bekijken. 
 
 Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van de Console van het Web te openen:
 
-1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Open de webconsole in uw browser. ([ http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![ chlimage_1-112 ](assets/chlimage_1-112.png)
 
 ### Het vormen Lidmaatschap van de Topologie {#configuring-topology-membership}
 
@@ -155,21 +155,21 @@ Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eige
    <td>Naam beschrijving opslagplaats</td>
    <td>leaderSelectionRepositoryDescriptor</td>
    <td> </td>
-   <td>&lt;no value&gt;</td>
+   <td>&lt;geen waarde&gt;</td>
   </tr>
  </tbody>
 </table>
 
 Gebruik de volgende procedure om een instantie CQ met het wortellid van een topologie te verbinden. De procedure richt de instantie aan de Schakelaar URL van de Topologie van het lid van de worteltopologie. Voer deze procedure op alle leden van de topologie uit.
 
-1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Open de webconsole in uw browser. ([ http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 1. Klik op Discovery Service configureren.
 1. Voeg een punt aan het bezit van de Verbinding URLs van de Topologie toe, en specificeer URL van de dienst van de Verbinding van de Topologie van het lid van de worteltopologie. De URL heeft de notatie https://rootservername:4502/libs/sling/topology/connector.
 
 Voer de volgende procedure op het wortellid van de topologie uit. De procedure voegt de namen van de andere topologieleden aan zijn lijst van gewenste personen van de Dienst van de Ontdekking toe.
 
-1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Open de webconsole in uw browser. ([ http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 1. Klik op Discovery Service configureren.
 1. Voor elk lid van de topologie, voeg een punt aan het bezit van de lijst van gewenste personen van de Verbinding van de Topologie toe, en specificeer de gastheernaam of IP adres van het topologielid.
@@ -180,18 +180,18 @@ Gebruik het Offloaden Browser om onderwerpconsumptie voor de instanties van de E
 
 De taken worden verdeeld onder instanties die het bijbehorende die onderwerp hebben door middel van round-robin logica wordt toegelaten.
 
-1. Klik met de aanraakinterface op het tabblad Gereedschappen. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. Klik met de aanraakinterface op het tabblad Gereedschappen. ([ http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Klik in het gebied Bewerkingen graniet op Browser offloaden.
 1. Klik in het navigatievenster op Browser verschuiven.
 
    De offloading onderwerpen en de serverinstanties die de onderwerpen kunnen verbruiken verschijnen.
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+   ![ chlimage_1-113 ](assets/chlimage_1-113.png)
 
 1. Om de consumptie van een onderwerp voor een instantie onbruikbaar te maken, onder de onderwerpnaam klik onbruikbaar maken naast de instantie.
 1. Om al onderwerpconsumptie voor een instantie te vormen, klik het instantieherkenningsteken onder om het even welk onderwerp.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![ chlimage_1-114 ](assets/chlimage_1-114.png)
 
 1. Klik één van de volgende knopen naast een onderwerp om het verbruiksgedrag voor de instantie te vormen, en dan sparen te klikken:
 
@@ -199,7 +199,7 @@ De taken worden verdeeld onder instanties die het bijbehorende die onderwerp heb
    * Uitgeschakeld: dit exemplaar verbruikt geen banen van dit onderwerp.
    * Exclusief: dit exemplaar verbruikt slechts banen van dit onderwerp.
 
-   **Opmerking:** Wanneer u Exclusief voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
+   **Nota:** wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
 
 ### Geïnstalleerde taakgebruikers {#installed-job-consumers}
 
@@ -218,15 +218,15 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 
 De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van gewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Experience Manager toe te laten of onbruikbaar te maken.
 
-**Opmerking:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
+**Nota:** als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
-De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van gewezen personen zijn. Standaard zijn alle onderwerpen ingeschakeld (de waarde van de lijst van gewenste personen is `*`) en er zijn geen onderwerpen uitgeschakeld (de lijst van gewezen personen heeft geen waarde).
+De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van gewezen personen zijn. Standaard zijn alle onderwerpen ingeschakeld (de waarde voor de lijst van gewenste personen is `*` ) en worden geen onderwerpen uitgeschakeld (de lijst van gewezen personen heeft geen waarde).
 
-Webconsole of een `sling:OsgiConfig` knooppunt om de volgende eigenschappen te configureren. Voor `sling:OsgiConfig` knooppunten, is de PID van de dienst van de Manager van de Consumenten van de Baan org.apache.sling.event.impl.job.JobConsumerManager.
+Gebruik Webconsole of een knooppunt `sling:OsgiConfig` om de volgende eigenschappen te configureren. Voor `sling:OsgiConfig` -knooppunten is de PID van de Job Consumer Manager-service org.apache.sling.event.impl.jobs.JobConsumerManager.
 
 | Eigenschapnaam in webconsole | OSGi-id | Beschrijving |
 |---|---|---|
-| Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt dat alle onderwerpen worden verzonden naar de geregistreerde dienst TopicConsumer. |
+| Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
 | Topic lijst van gewezen personen | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
 
 ## Replication-agents voor offloaden maken {#creating-replication-agents-for-offloading}
@@ -239,7 +239,7 @@ Het offloading-framework gebruikt replicatie om bronnen tussen auteur en worker 
 
 Creeer de replicatieagenten die baanlading tussen instanties voor het ontladen vervoeren. De volgende illustratie toont de agenten die worden vereist om van de auteur aan een arbeidersinstantie te offloaden. De auteur heeft een Sling-id van 1 en de arbeidersinstantie heeft een Sling-id van 2:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![ chlimage_1-115 ](assets/chlimage_1-115.png)
 
 Deze opstelling vereist de volgende drie agenten:
 
@@ -255,27 +255,27 @@ Dit replicatieschema is vergelijkbaar met het replicatieschema dat wordt gebruik
 
 ### De replicatieagents benoemen voor offloaden {#naming-the-replication-agents-for-offloading}
 
-Gebruik een specifieke indeling voor de ***Naam*** bezit van de replicatieagenten zodat het het ontladen kader automatisch de correcte agent voor specifieke arbeidersinstanties gebruikt.
+Gebruik een specifiek formaat voor het ***bezit van de Naam*** van de replicatieagenten zodat het het ontladen kader automatisch de correcte agent voor specifieke arbeidersinstanties gebruikt.
 
-**De naam van de uitgaande agent op de auteurinstantie:**
+**noemend de uitgaande agent op de auteursinstantie:**
 
-`offloading_<slingid>`, waarbij `<slingid>` Dit is de id Sling van de arbeidersinstantie.
+`offloading_<slingid>` , waarbij `<slingid>` de id Sling is van de arbeidersinstantie.
 
 Voorbeeld: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
-**De reverse-agent een naam geven op de auteurinstantie:**
+**het Noemen van de omgekeerde agent op de auteursinstantie:**
 
-`offloading_reverse_<slingid>`, waarbij `<slingid>` Dit is de id Sling van de arbeidersinstantie.
+`offloading_reverse_<slingid>` , waarbij `<slingid>` de id Sling is van de arbeidersinstantie.
 
 Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
-**De naam van het uitvoervak in de worker-instantie:**
+**noemend outbox op de arbeidersinstantie:**
 
 `offloading_outbox`
 
 ### Het creëren van de uitgaande agent {#creating-the-outgoing-agent}
 
-1. Een **Replication Agent** op auteur. (Zie de [documentatie voor replicatieagenten](/help/sites-deploying/replication.md)). Alle **Titel**. De **Naam** moet de naamgevingsconventie volgen.
+1. Creeer de Agent van de a **Replicatie** op auteur. (Zie de [ documentatie voor replicatieagenten ](/help/sites-deploying/replication.md)). Specificeer om het even welke **Titel**. De **Naam** moet de noemende overeenkomst volgen.
 1. Creeer de agent gebruikend de volgende eigenschappen:
 
    | Eigenschap | Waarde |
@@ -289,7 +289,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### De reverse agent maken {#creating-the-reverse-agent}
 
-1. Een **Replicatieagent omkeren** op auteur. (Zie de [documentatie voor replicatieagenten](/help/sites-deploying/replication.md).) Alle **Titel**. De **Naam** moet de naamgevingsconventie volgen.
+1. Creeer de Agent van de Replicatie van de a **Omgekeerde** op auteur. (Zie de [ documentatie voor replicatieagenten ](/help/sites-deploying/replication.md).) Specificeer om het even welke **Titel**. De **Naam** moet de noemende overeenkomst volgen.
 1. Creeer de agent gebruikend de volgende eigenschappen:
 
    | Eigenschap | Waarde |
@@ -302,7 +302,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Het creëren van de outbox agent {#creating-the-outbox-agent}
 
-1. Een **Replication Agent** op de worker-instantie. (Zie de [documentatie voor replicatieagenten](/help/sites-deploying/replication.md).) Alle **Titel**. De **Naam** moet `offloading_outbox`.
+1. Creeer de Agent van de Replicatie van a **** op de arbeidersinstantie. (Zie de [ documentatie voor replicatieagenten ](/help/sites-deploying/replication.md).) Specificeer om het even welke **Titel**. De **Naam** moet `offloading_outbox` zijn.
 1. Creeer de agent gebruikend de volgende eigenschappen.
 
    | Eigenschap | Waarde |
@@ -315,7 +315,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 Verkrijg identiteitskaart van de Schuine kant van een instantie van de Experience Manager gebruikend één van beiden van de volgende methodes:
 
-* Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het Verdeelde bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
+* Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het het Verdelen bezit van identiteitskaart ([ http://localhost:4502/system/console/status-slingsettings ](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
 * Gebruik browser van de Topologie als de instantie reeds deel van de topologie uitmaakt.
 
 <!--
@@ -354,4 +354,4 @@ The following procedure assumes the following characteristics for the offloading
 
 Naast de details die op deze pagina worden voorgesteld, kunt u ook het volgende lezen:
 
-* Voor informatie over het gebruik van Java API&#39;s om banen te creëren en baangebruikers, zie [Banen voor offloaden maken en consumeren](/help/sites-developing/dev-offloading.md).
+* Voor informatie over het gebruiken van Java APIs om banen en baanconsumenten tot stand te brengen, zie [ Creërend en Verbruikende Banen voor het Verschuiven ](/help/sites-developing/dev-offloading.md).

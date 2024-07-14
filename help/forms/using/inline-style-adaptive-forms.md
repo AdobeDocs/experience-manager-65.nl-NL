@@ -17,21 +17,21 @@ ht-degree: 0%
 
 # Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
 | AEM 6,5 | Dit artikel |
 
-U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met [themaeditor](../../forms/using/themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
+U kunt de algemene verschijning en de stijl van een adaptieve vorm bepalen door stijlen te specificeren gebruikend [ themaredacteur ](../../forms/using/themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 
 ## Inline CSS-eigenschappen toepassen {#apply-inline-css-properties}
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Als u de modus wilt wijzigen in de opmaakmodus, selecteert u op de pagina-werkbalk de optie ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
-1. Selecteer een component op de pagina en selecteer de knop Bewerken ![bewerken, knop](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Om de wijze te veranderen aan het stileren wijze, op de paginakoolbar, uitgezocht ![ canvas-drop-down ](assets/canvas-drop-down.png) > **Stijl**.
+1. Selecteer een component in de pagina, en selecteer uitgeven knoop ![ uitgeven-knoop ](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
@@ -49,13 +49,13 @@ Inline stijlen toevoegen aan een component:
    * Geavanceerd (hiermee kunt u aangepaste CSS voor de component schrijven)
 
 1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals Widget, Bijschrift en Help.
-1. Selecteren **Gereed** om de wijzigingen te bevestigen of **Annuleren** om de wijzigingen te verwijderen.
+1. Selecteer **Gedaan** om de veranderingen te bevestigen of **annuleert** om de veranderingen te verwerpen.
 
 ## Voorbeeld: inline stijlen voor een veldcomponent {#example-inline-styles-for-a-field-component}
 
 In de volgende afbeeldingen wordt een tekstveld weergegeven voor- en nadat er inline stijlen op zijn toegepast.
 
-![Component van tekstvak voordat inline-opmaak wordt toegepast](assets/no-style.png)
+![ de vakje van de Tekst component alvorens het gealigneerde stileren wordt toegepast ](assets/no-style.png)
 
 Component van tekstvak voordat inline-stijleigenschappen worden toegepast
 
@@ -102,7 +102,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
  </tbody>
 </table>
 
-![Stijl van tekstvak nadat inline-opmaak is toegepast](assets/applied-style.png)
+![ het vakje van de Tekst stijl na het gealigneerde stileren wordt toegepast ](assets/applied-style.png)
 
 Component van tekstvak na toepassen van inline-stijleigenschappen
 

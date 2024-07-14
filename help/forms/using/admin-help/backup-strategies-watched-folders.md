@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Deze inhoud beschrijft hoe gecontroleerde omslagen door verschillende steun en terugwinningsscenario&#39;s, de beperkingen en de resultaten van deze scenario&#39;s worden beïnvloed, en hoe te om gegevensverlies te minimaliseren.
 
-*Gecontroleerde map* is een op een bestandssysteem gebaseerde toepassing die geconfigureerde servicebewerkingen aanroept die het bestand in een van de volgende mappen in de controlemap manipuleren:
+*Gecontroleerde Omslag* is een op systeem-gebaseerde toepassing van het dossier die gevormde de de dienstverrichtingen aanhaalt die het dossier binnen één van de volgende omslagen in de gelete op omslaghiërarchie manipuleren:
 
 * Invoer
 * Werkgebied
@@ -28,7 +28,7 @@ Deze inhoud beschrijft hoe gecontroleerde omslagen door verschillende steun en t
 * Mislukt
 * Behouden
 
-Een gebruiker of cliënttoepassing laat eerst het dossier of de omslag in de inputomslag vallen. Vervolgens wordt het bestand door de servicebewerking naar de werkgebiedmap verplaatst voor verwerking. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het gewijzigde bestand opgeslagen in de uitvoermap. Verwerkte bronbestanden zijn verplaatst naar de map preserve en mislukte verwerkingsbestanden worden verplaatst naar de map met foutmeldingen. Wanneer de `Preserve On Failure` Het kenmerk voor de gecontroleerde map is ingeschakeld. Niet-verwerkte bronbestanden worden naar de map preserve verplaatst. (Zie [Gecontroleerde eindpunten van mappen configureren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
+Een gebruiker of cliënttoepassing laat eerst het dossier of de omslag in de inputomslag vallen. Vervolgens wordt het bestand door de servicebewerking naar de werkgebiedmap verplaatst voor verwerking. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het gewijzigde bestand opgeslagen in de uitvoermap. Verwerkte bronbestanden zijn verplaatst naar de map preserve en mislukte verwerkingsbestanden worden verplaatst naar de map met foutmeldingen. Wanneer het kenmerk `Preserve On Failure` voor de gecontroleerde map is ingeschakeld, worden mislukte verwerkte bronbestanden naar de map preserve verplaatst. (Zie [ Vormend gecontroleerde omslageindpunten ](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
 
 U kunt een back-up maken van gecontroleerde mappen door een back-up van het bestandssysteem te maken.
 
@@ -38,7 +38,7 @@ U kunt een back-up maken van gecontroleerde mappen door een back-up van het best
 
 ## Hoe gecontroleerde mappen werken {#how-watched-folders-work}
 
-Met deze inhoud wordt het bewerkingsproces voor gecontroleerde mappen beschreven. Het is belangrijk dat we dit proces begrijpen voordat we een herstelplan ontwikkelen. In dit voorbeeld wordt `Preserve On Failure` wordt het kenmerk voor de gecontroleerde map ingeschakeld. De bestanden worden verwerkt in de volgorde waarin ze aankomen.
+Met deze inhoud wordt het bewerkingsproces voor gecontroleerde mappen beschreven. Het is belangrijk dat we dit proces begrijpen voordat we een herstelplan ontwikkelen. In dit voorbeeld wordt het kenmerk `Preserve On Failure` voor de gecontroleerde map ingeschakeld. De bestanden worden verwerkt in de volgorde waarin ze aankomen.
 
 In de volgende tabel wordt beschreven hoe vijf voorbeeldbestanden (file1, file2, file3, file4, file5) gedurende het proces worden bewerkt. In de tabel vertegenwoordigt de x-as tijd, zoals Tijd 1 of T1, en vertegenwoordigt de y-as mappen binnen de gecontroleerde maphiërarchie, zoals Invoer.
 
@@ -111,19 +111,19 @@ In de volgende tabel wordt beschreven hoe vijf voorbeeldbestanden (file1, file2,
 
 In de volgende tekst wordt bestandmanipulatie voor elke keer beschreven:
 
-**T1:** De vier voorbeeldbestanden worden in de invoermap geplaatst.
+**T1:** de vier steekproefdossiers worden geplaatst in de inputomslag.
 
-**T2:** Met de servicebewerking wordt file1 voor bewerking naar de werkgebiedmap verplaatst.
+**T2:** de dienstverrichting verplaatst file1 in de werkgebiedomslag voor manipulatie.
 
-**T3:** Met de servicebewerking wordt file2 verplaatst naar de werkgebiedmap voor bewerking. De resultaten van file1 worden in de uitvoermap geplaatst en file1 wordt naar de opslagmap verplaatst.
+**T3:** de dienstverrichting verplaatst file2 in de werkgebiedomslag voor manipulatie. De resultaten van file1 worden in de uitvoermap geplaatst en file1 wordt naar de opslagmap verplaatst.
 
-**T4:** Met de servicebewerking wordt file3 voor bewerking in de werkgebiedmap geplaatst. Het plaatst de resultaten van file2 in de outputomslag, en het plaatst file2 in sparen omslag.
+**T4:** de dienstverrichting plaatst file3 in de werkgebiedomslag voor manipulatie. Het plaatst de resultaten van file2 in de outputomslag, en het plaatst file2 in sparen omslag.
 
-**T5:** Met de servicebewerking wordt file4 voor bewerking in de werkgebiedmap geplaatst. De manipulatie van file3 ontbreekt, en de de dienstverrichting plaatst het in de mislukkingsomslag.
+**T5:** de dienstverrichting plaatst file4 in de werkgebiedomslag voor manipulatie. De manipulatie van file3 ontbreekt, en de de dienstverrichting plaatst het in de mislukkingsomslag.
 
-**T6:** Met de servicebewerking wordt file5 in de invoermap geplaatst. Het plaatst de resultaten van file4 in de outputomslag, plaatst file4 in het bewaren omslag.
+**T6:** de dienstverrichting plaatst file5 in de inputomslag. Het plaatst de resultaten van file4 in de outputomslag, plaatst file4 in het bewaren omslag.
 
-**T7:** Met de servicebewerking wordt file5 in de werkgebiedmap geplaatst om te worden bewerkt.
+**T7:** de dienstverrichting plaatst file5 in de werkgebiedomslag voor manipulatie.
 
 ## Back-up maken van gecontroleerde mappen {#backing-up-watched-folders}
 
@@ -137,15 +137,15 @@ Bijvoorbeeld, als een steun op tijd T1 wordt genomen en de server bij T7 ontbree
 
 Als er een recentere back-up is gemaakt, kunt u de bestanden herstellen. Bedenk bij het terugzetten van de bestanden in welke map met gecontroleerde maphiërarchie het huidige bestand zich bevindt:
 
-**Werkgebied:** Bestanden in deze map worden opnieuw verwerkt nadat de gecontroleerde map is hersteld.
+**Stadium:** de Dossiers in deze omslag worden opnieuw verwerkt nadat de gecontroleerde omslag wordt hersteld.
 
-**Invoer:** Bestanden in deze map worden opnieuw verwerkt nadat de gecontroleerde map is hersteld.
+**Input:** de Dossiers in deze omslag worden opnieuw verwerkt nadat de gecontroleerde omslag wordt hersteld.
 
-**Resultaat** Bestanden in deze map worden niet verwerkt.
+**Resultaat:** de Dossiers in deze omslag worden niet verwerkt.
 
-**Uitvoer:** Bestanden in deze map worden niet verwerkt.
+**Output:** de Dossiers in deze omslag worden niet verwerkt.
 
-**Behouden:** Bestanden in deze map worden niet verwerkt.
+**Behouden:** de Dossiers in deze omslag worden niet verwerkt.
 
 ## Strategieën om gegevensverlies te minimaliseren {#strategies-to-minimize-data-loss}
 
@@ -154,16 +154,16 @@ Met de volgende strategieën kunt u het gegevensverlies van de uitvoer- en invoe
 * Maak regelmatig een back-up van de uitvoermappen en de mislukkingsmappen, bijvoorbeeld om het verlies van resultaat- en foutbestanden te voorkomen.
 * Maak een back-up van de invoerbestanden in een andere map dan de gecontroleerde map. Dit zorgt ervoor dat bestanden na herstel beschikbaar zijn voor het geval u de bestanden niet kunt vinden in de uitvoermap of de map voor mislukkingen. Zorg ervoor dat uw schema voor het benoemen van bestanden consistent is.
 
-  Als u bijvoorbeeld de uitvoer opslaat met `%F.`*extension*, heeft het uitvoerbestand dezelfde naam als het invoerbestand. Hierdoor kunt u bepalen welke invoerbestanden worden gemanipuleerd en welke opnieuw moeten worden verzonden. Als u alleen file1_out in de resultaatmap ziet en niet file2_out, file3_out en file4_out, moet u file2, file3 en file4 opnieuw verzenden.
+  Bijvoorbeeld, als u de output met `%F.`*uitbreiding* opslaat, zal het outputdossier de zelfde naam zoals het inputdossier hebben. Hierdoor kunt u bepalen welke invoerbestanden worden gemanipuleerd en welke opnieuw moeten worden verzonden. Als u alleen file1_out in de resultaatmap ziet en niet file2_out, file3_out en file4_out, moet u file2, file3 en file4 opnieuw verzenden.
 
 * Als de beschikbare controlemap ouder is dan de tijd die nodig is om de taak te verwerken, moet u het systeem toestaan een controlemap te maken en de bestanden automatisch in de invoermap te plaatsen.
 * Als de meest recente beschikbare back-up niet recent genoeg is, de back-uptijd korter is dan de tijd die nodig is om de bestanden te verwerken en de gecontroleerde map wordt hersteld, is het bestand in een van de volgende verschillende stadia gemanipuleerd:
 
-   * **Fase 1:** In de invoermap
-   * **Fase 2:** Gekopieerd naar de werkgebiedmap, maar het proces wordt nog niet aangeroepen
-   * **Fase 3:** Gekopieerd naar de werkgebiedmap en het proces wordt aangeroepen
-   * **Fase 4:** Bezig met manipuleren
-   * **Fase 5:** Resultaten geretourneerd
+   * **Stadium 1:** in de inputomslag
+   * **Stadium 2:** gekopieerd aan de werkgebiedomslag maar het proces wordt nog niet aangehaald
+   * **Stadium 3:** wordt gekopieerd aan de werkgebiedomslag en het proces wordt aangehaald
+   * **Stadium 4:** Bezig Manipulation
+   * **Stadium 5:** teruggekeerde Resultaten
 
   Bestanden in werkgebied 1 worden gemanipuleerd. Als bestanden zich in werkgebied 2 of 3 bevinden, plaatst u ze in de invoermap zodat ze opnieuw kunnen worden gemanipuleerd.
 

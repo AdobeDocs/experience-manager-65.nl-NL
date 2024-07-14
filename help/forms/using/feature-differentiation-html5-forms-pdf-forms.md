@@ -29,14 +29,14 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
    <th>PDF</th>
   </tr>
   <tr>
-   <td>Barcodes<br /> </td>
+   <td>Streepjescodes <br /> </td>
    <td>Niet beschikbaar op gebruikersinterfaceniveau. </td>
    <td>Ondersteund</td>
   </tr>
   <tr>
-   <td>Handtekeningveld<br /> </td>
-   <td><strong>Digitale handtekeningen</strong> worden niet ondersteund, maar een nieuwe <strong>Krabbelhandtekening</strong> het veld wordt toegevoegd voor handtekeningen die vergelijkbaar zijn met papier. U kunt de handtekening op het formulier krabbelen met de <strong>Krabbelhandtekening</strong> veld. De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt gegevens over de geolocatie opslaan in het dialoogvenster <strong>Krabbelhandtekening</strong> veld.</td>
-   <td>Handtekeningveld beschikbaar voor <strong>Digitale handtekeningen</strong>.</td>
+   <td>Handtekeningveld <br /> </td>
+   <td><strong> Digitale Handtekeningen </strong> worden niet gesteund maar een nieuw <strong> Krabbelt gebied van de Handtekening </strong> wordt toegevoegd voor papier als handtekeningen. Men kan hun handtekening op de vorm krabbelen gebruikend het </strong> gebied van de Handtekening van 0} Krabbelen. <strong> De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt geolocatieinformatie op het <strong> Krabbelen </strong> gebied van de Handtekening bewaren.</td>
+   <td>Het gebied van de handtekening beschikbaar voor <strong> Digitale Handtekeningen </strong>.</td>
   </tr>
   <tr>
    <td>Gegevenssamenvoeging</td>
@@ -45,17 +45,17 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
   </tr>
   <tr>
    <td>Afbeeldingen</td>
-   <td>Het schema Data URI wordt gebruikt om afbeeldingen weer te geven. In alle moderne versies van browsers wordt dit schema ondersteund, maar de afbeeldingsindelingen die in elke browser worden ondersteund, verschillen van elkaar.<br /> </td>
+   <td>Het schema Data URI wordt gebruikt om afbeeldingen weer te geven. Alle moderne versies van browsers ondersteunen dit schema, maar er zijn verschillen in de reeks afbeeldingsindelingen die elke browser ondersteunt.<br /> </td>
    <td>De indelingen .gif, .png, .jpeg, .bmp en .tiff worden ondersteund.</td>
   </tr>
   <tr>
-   <td>Paginering<br /> </td>
-   <td><p>Een HTML5-formulier is verdeeld in deelvensters en vakken, zodat het er net zo uitziet als PDF forms. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen. Er wordt geen lege ruimte (lege ruimte) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, blijft de lege pagina (spatie) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td>
+   <td>Paginering <br /> </td>
+   <td><p>Een HTML5-formulier is verdeeld in deelvensters en vakken, zodat het er net zo uitziet als PDF forms. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen. Er wordt geen lege ruimte (lege ruimte) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong> Nota:</strong> wanneer alle inhoud van een pagina in een vorm HTML5 wordt geschrapt of verborgen duidelijk, blijft de lege pagina (lege ruimte) zichtbaar tussen eerste en tweede pagina maar niet tussen andere pagina's.</p> </td>
    <td>Paginering in PDF is afhankelijk van samengevoegde gegevensinhoud of van gebruikersinhoud en het aantal pagina's wordt op basis daarvan verhoogd/verlaagd.</td>
   </tr>
   <tr>
    <td>Kopteksten/voetteksten </td>
-   <td>Ondersteund. <br /> <br /> Aangezien HTML5 mobiele formulieren geen ondersteuning bieden voor pagina-einden, worden kop- en voetteksten slechts eenmaal weergegeven. U kunt ze echter instellen in de indeling, zodat ze op meerdere plaatsen in de voorvertoning van mobiele formulieren worden weergegeven.<br /> </td>
+   <td>Ondersteund. <br /> <br /> Omdat mobiele HTML5-formulieren geen ondersteuning bieden voor pagina-einden, worden kop- en voetteksten slechts eenmaal weergegeven. U kunt ze echter instellen in de indeling, zodat ze op meerdere plaatsen in de voorvertoning van mobiele formulieren worden weergegeven.<br /> </td>
    <td>Ondersteund.</td>
   </tr>
   <tr>
@@ -65,12 +65,12 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
   </tr>
   <tr>
    <td>XFA Script API</td>
-   <td>Ondersteunt de meestgebruikte XFA-scriptconstructies. Zie voor een gedetailleerd overzicht van ondersteunde constructies <a href="/help/forms/using/scripting-support.md">scriptondersteuning</a>.</td>
+   <td>Ondersteunt de meestgebruikte XFA-scriptconstructies. Voor een gedetailleerde lijst van gesteunde concepten, zie <a href="/help/forms/using/scripting-support.md"> scripting steun </a>.</td>
    <td>Ondersteunt alle XFA-scriptconstructies.</td>
   </tr>
   <tr>
    <td>Acrobat Script API's </td>
-   <td>HTML5-formulieren ondersteunen veelgebruikte API's. Zie voor meer informatie <a href="/help/forms/using/scripting-support.md">scriptondersteuning</a>.</td>
+   <td>HTML5-formulieren ondersteunen veelgebruikte API's. Voor details, zie <a href="/help/forms/using/scripting-support.md"> scripting steun </a>.</td>
    <td>Als het PDF-bestand wordt geopend in Acrobat of Reader, worden ook alle script-API's van Acrobat ondersteund.</td>
   </tr>
   <tr>

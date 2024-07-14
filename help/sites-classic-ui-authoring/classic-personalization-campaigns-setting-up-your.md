@@ -21,86 +21,86 @@ ht-degree: 0%
 
 Het opzetten van een nieuwe campagne omvat de volgende (generische) stappen:
 
-1. [Een merk maken](#creating-a-new-brand) om uw campagnes te houden.
-1. Indien nodig kunt u [de eigenschappen van uw nieuwe merk definiëren](#defining-the-properties-for-your-new-brand).
-1. [Een campagne maken](#creating-a-new-campaign) om ervaringen op te slaan, bijvoorbeeld laserpagina&#39;s of een nieuwsbrief.
-1. Indien nodig kunt u [de eigenschappen voor uw nieuwe campagne definiëren](#defining-the-properties-for-your-new-campaign).
+1. [ creeer een merk ](#creating-a-new-brand) om uw campagnes te houden.
+1. Indien noodzakelijk kunt u [ de eigenschappen voor uw nieuw merk ](#defining-the-properties-for-your-new-brand) bepalen.
+1. [ creeer een campagne ](#creating-a-new-campaign) om ervaringen te houden; bijvoorbeeld, laserpagina&#39;s of een nieuwsbrief.
+1. Indien noodzakelijk kunt u [ de eigenschappen voor uw nieuwe campagne ](#defining-the-properties-for-your-new-campaign) bepalen.
 
-Afhankelijk van het type ervaringen dat u maakt, moet u [een ervaring creëren](#creating-a-new-experience). De details van de ervaring en de acties die volgen op de creatie zijn afhankelijk van het type ervaring dat u wilt maken:
+Dan, afhankelijk van het type van ervaringen u creeert, moet u [ een ervaring ](#creating-a-new-experience) creëren. De details van de ervaring en de acties die volgen op de creatie zijn afhankelijk van het type ervaring dat u wilt maken:
 
 * Als u een taser maakt:
 
-   1. [Een gummetje maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Inhoud toevoegen aan uw taser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Een aanraakpunt voor uw taser maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (voeg het gummetje toe aan een inhoudspagina).
+   1. [ creeer een laserervaring ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+   1. [ voegt inhoud aan uw meetapparaat ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser) toe.
+   1. [ creeer een Aanraakpunt voor uw Taser ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (voeg uw gummetje aan een inhoudspagina toe).
 
 * Als u een nieuwsbrief maakt:
 
-   1. [Een nieuwsbrief maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+   1. [ creeer een nieuwsbrief ervaring ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
    1. [Voeg inhoud toe aan de nieuwsbrief.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    1. [Pas de nieuwsbrief aan.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Een aantrekkelijke bestemmingspagina voor nieuwsbrieven maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Nieuwsbrief verzenden](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aan abonnees of leads.
+   1. [ creeer een dwingende nieuwsbrief het landen pagina ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+   1. [ verzend nieuwsbrief ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) naar abonnees of lood.
 
 * Bij het maken van een Adobe Target-aanbieding (voorheen Test&amp;Target):
 
-   1. [Een Adobe Target-aanbieding maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+   1. [ creeer een de aanbiedingservaring van Adobe Target ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
    1. [Integreren met Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
->Zie [Segmentering](/help/sites-administering/campaign-segmentation.md) voor gedetailleerde instructies voor het bepalen van uw segmenten.
+>Zie [ Segmentatie ](/help/sites-administering/campaign-segmentation.md) voor gedetailleerde instructies bij het bepalen van uw segmenten.
 
 ## Een nieuw merk maken {#creating-a-new-brand}
 
-1. Open de **MCM** en selecteert u **Campagnes** in het linkerdeelvenster.
+1. Open **MCM** en selecteer **Campagnes** in de linkerruit.
 
-1. Selecteren **Nieuw...** om de **Titel** en **Naam** en sjabloon voor uw nieuwe merk:
+1. Selecteer **Nieuw...** om de **Titel** in te gaan en **Naam** en malplaatje dat voor uw nieuw merk moet worden gebruikt:
 
-   ![chlimage_1-17](assets/chlimage_1-17.png)
+   ![ chlimage_1-17 ](assets/chlimage_1-17.png)
 
-1. Klikken **Maken**. Uw nieuwe merk wordt weergegeven in de MCM (met een standaardpictogram).
+1. Klik **creëren**. Uw nieuwe merk wordt weergegeven in de MCM (met een standaardpictogram).
 
 ### Eigenschappen voor uw nieuwe merk definiëren {#defining-the-properties-for-your-new-brand}
 
-1. Van **Campagnes** in het linkerdeelvenster selecteert u het pictogram van het nieuwe merk in het rechterdeelvenster en klikt u op **Eigenschappen...**
+1. Van **Campagnes** in de linkerruit, selecteer uw nieuw merkpictogram in de juiste ruit en klik **Eigenschappen..**
 
-   U kunt een **Titel**, **Beschrijving** en een afbeelding die als pictogram moet worden gebruikt.
+   U kunt a **Titel** ingaan, **Beschrijving** en een beeld dat als pictogram moet worden gebruikt.
 
-   ![chlimage_1-18](assets/chlimage_1-18.png)
+   ![ chlimage_1-18 ](assets/chlimage_1-18.png)
 
-1. Klikken **OK** opslaan.
+1. Klik **O.K.** om te bewaren.
 
 ### Nieuwe campagne maken {#creating-a-new-campaign}
 
-1. Van **Campagnes** selecteert u het nieuwe merk in het linkervenster of dubbelklikt u op het pictogram in het rechtervenster.
+1. Van **Campagnes**, selecteer uw nieuw merk in de linkerruit, of klik het pictogram in de juiste ruit tweemaal.
 
    Het overzicht wordt weergegeven (leeg als het merk nieuw is).
 
-1. Klikken **Nieuw...** en geeft de **Titel**, **Naam** en sjabloon voor uw nieuwe campagne.
+1. Klik **Nieuw...** en specificeer de **Titel**, **Naam** en malplaatje dat voor uw nieuwe campagne moet worden gebruikt.
 
-   ![chlimage_1-19](assets/chlimage_1-19.png)
+   ![ chlimage_1-19 ](assets/chlimage_1-19.png)
 
-1. Klikken **Maken**. Uw nieuwe campagne wordt getoond in MCM.
+1. Klik **creëren**. Uw nieuwe campagne wordt getoond in MCM.
 
 ### Eigenschappen voor uw nieuwe campagne definiëren {#defining-the-properties-for-your-new-campaign}
 
 Campagneigenschappen configureren die het gedrag bepalen:
 
-* **Prioriteit:** De prioriteit van deze campagne ten opzichte van andere campagnes. Wanneer de veelvoudige campagnes gelijktijdig zijn, controleert de campagne die de hoogste prioriteit heeft de bezoekerservaring.
-* **Aan- en uittijd:** Deze eigenschappen bepalen de periode waarin de campagne de ervaring van de bezoeker bepaalt. Het bezit op Tijd controleert de tijd wanneer de campagne begint de ervaring te controleren. De eigenschap Uit-tijd bepaalt wanneer de campagnes de ervaring niet meer besturen.
-* **Afbeelding:** De afbeelding die de campagne in AEM vertegenwoordigt.
-* **Cloud Servicen:** De configuraties van de Cloud Service waarmee de campagne wordt geïntegreerd. (Zie [Integreren met Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Prioriteit:** De prioriteit van deze campagne met betrekking tot andere campagnes. Wanneer de veelvoudige campagnes gelijktijdig zijn, controleert de campagne die de hoogste prioriteit heeft de bezoekerservaring.
+* **aan en uit Tijd:** Deze eigenschappen controleren de periode wanneer de campagne de bezoekerservaring controleert. Het bezit op Tijd controleert de tijd wanneer de campagne begint de ervaring te controleren. De eigenschap Uit-tijd bepaalt wanneer de campagnes de ervaring niet meer besturen.
+* **Beeld:** het beeld dat de campagne in AEM vertegenwoordigt.
+* **Clouden Services:** de configuraties van de Cloud Service waarmee de campagne wordt geïntegreerd. (Zie [ Integrerend met Adobe Marketing Cloud ](/help/sites-administering/marketing-cloud.md).)
 
-* **Adobe Target:** Eigenschappen die campagnes vormen die met Adobe Target worden geïntegreerd. (Zie [Integreren met Adobe Target](/help/sites-administering/target.md).)
+* **Adobe Target:** Eigenschappen die campagnes vormen die met Adobe Target worden geïntegreerd. (Zie [ Integrerend met Adobe Target ](/help/sites-administering/target.md).)
 
-1. Van **Campagnes**, selecteer uw merk. Selecteer uw campagne in het rechterdeelvenster en klik op **Eigenschappen**.
+1. Van **Campagnes**, selecteer uw merk. In de juiste ruit, selecteer uw campagne en klik **Eigenschappen**.
 
-   U kunt verschillende eigenschappen invoeren, zoals een **Titel**, **Beschrijving** en alle **Cloud Servicen** dat wil je.
+   U kunt diverse eigenschappen, met inbegrip van a **Titel**, **Beschrijving** en om het even welke **Cloud Servicen** ingaan u wilt.
 
-   ![chlimage_1-20](assets/chlimage_1-20.png)
+   ![ chlimage_1-20 ](assets/chlimage_1-20.png)
 
-1. Klikken **OK** opslaan.
+1. Klik **O.K.** om te bewaren.
 
 ### Een nieuwe ervaring maken {#creating-a-new-experience}
 
@@ -112,7 +112,7 @@ De procedure voor het creëren van een ervaring is afhankelijk van het type erva
 
 >[!NOTE]
 >
->Net als bij eerdere versies is het nog steeds mogelijk om de ervaring als een pagina op te nemen in de **Websites** console (en dergelijke pagina&#39;s die in vorige versies zijn gemaakt, worden nog steeds volledig ondersteund).
+>Zoals met vorige versies is het nog mogelijk om de ervaring als pagina in de **** console van Websites tot stand te brengen {(en om het even welke die pagina&#39;s in vorige versies worden gecreeerd worden nog volledig gesteund).
 >
 >Het wordt nu aanbevolen om de MCM te gebruiken voor het maken van ervaringen.
 
@@ -120,19 +120,19 @@ De procedure voor het creëren van een ervaring is afhankelijk van het type erva
 
 Nu u het basisskelet voor uw ervaring hebt gecreeerd, moet u met de volgende acties verdergaan, afhankelijk van het type ervaring:
 
-* [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
+* [ Taser ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
    * [Verbind de teaspagina met bezoekerssegmenten.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Een aanraakpunt voor uw taser maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (voeg het gummetje toe aan een inhoudspagina).
+   * [ creeer een Aanraakpunt voor uw Taser ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (voeg uw gummetje aan een inhoudspagina toe).
 
-* [Nieuwsbrief](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
+* [ Nieuwsbrief ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
    * [Voeg inhoud toe aan de nieuwsbrief.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    * [Pas de nieuwsbrief aan.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Nieuwsbrief verzenden](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aan abonnees of leads.
-   * [Een aantrekkelijke bestemmingspagina voor nieuwsbrieven maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+   * [ verzend nieuwsbrief ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) naar abonnees of lood.
+   * [ creeer een dwingende nieuwsbrief het landen pagina ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
-* [Adobe Target-voorstel](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
+* [ Aanbieding van Adobe Target ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
    * [Integreren met Adobe Target](/help/sites-administering/target.md)
 
@@ -142,51 +142,51 @@ Als u bestaande ervaringen hebt, kunt u een aanraakpunt rechtstreeks vanuit de k
 
 1. Selecteer de kalenderweergave voor uw campagne.
 
-1. Klikken **Aanraakpunt toevoegen...** het dialoogvenster openen. Geef de ervaring op die u wilt toevoegen:
+1. Klik **toevoegen Aanraakpunt...** om de dialoog te openen. Geef de ervaring op die u wilt toevoegen:
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![ chlimage_1-21 ](assets/chlimage_1-21.png)
 
-1. Klikken **OK** opslaan.
+1. Klik **O.K.** om te bewaren.
 
 ## Werken met leads {#working-with-leads}
 
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads beheren).
->Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
+>De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 In AEM MCM kunt u verbindingen organiseren en toevoegen door ze handmatig in te voeren of door een lijst met door komma&#39;s gescheiden waarden te importeren, bijvoorbeeld een mailinglijst. Aanvullende manieren om leads te genereren zijn afkomstig van nieuwsbrief-ups of community-aanmeldingen (als deze zijn geconfigureerd, kunnen ze een workflow activeren die leads vult).
 
 Regeleinden worden doorgaans gecategoriseerd en in een lijst geplaatst, zodat u later handelingen kunt uitvoeren in de hele lijst, bijvoorbeeld door een aangepaste e-mail naar een bepaalde lijst te verzenden.
 
-In het dashboard hebt u toegang tot alle leads door op **Leads** in het linkerdeelvenster. U kunt ook toegang krijgen tot leads via de **Lijsten** venster.
+In het dashboard, hebt toegang u tot alle lood door **te klikken leidt** van de linkerruit. U kunt tot lood van de **ruit van Lijsten {ook toegang hebben 1}.**
 
-![screen_shot_2012-02-21at114748am](assets/screen_shot_2012-02-21at114748am.png)
+![ screen_shot_2012-02-21at114748am ](assets/screen_shot_2012-02-21at114748am.png)
 
 >[!NOTE]
 >
->Als u de avatars van gebruikers wilt toevoegen of wijzigen, opent u de clickstream-cloud (Ctrl+Alt+c), laadt u het profiel en klikt u op **Bewerken**.
+>Om de avatars van gebruikers toe te voegen of te wijzigen, open de klikstroomwolk (Ctrl+Alt+c), laad het profiel, en klik **geeft** uit.
 
 ### Nieuwe leads maken {#creating-new-leads}
 
-Nadat u nieuwe leads hebt gemaakt, moet u [activeren](#activating-or-deactivating-leads) zodat u hun activiteit op het publicatieexemplaar kunt volgen en hun ervaring kunt personaliseren.
+Nadat u nieuwe lood creeert, ben zeker om hen [ te activeren ](#activating-or-deactivating-leads) zodat u hun activiteit op te volgen publiceert instantie en hun ervaring kunt personaliseren.
 
 Een lead handmatig maken:
 
-1. Navigeer in AEM naar de MCM. Klik in het dashboard op **Leads**.
-1. Klikken **Nieuw**. De **Nieuw maken** wordt geopend.
+1. Navigeer in AEM naar de MCM. In het dashboard, klik **Leads**.
+1. Klik **Nieuw**. **creeer Nieuw** venster opent.
 
-   ![screen_shot_2012-02-21at115008am](assets/screen_shot_2012-02-21at115008am.png)
+   ![ screen_shot_2012-02-21at115008am ](assets/screen_shot_2012-02-21at115008am.png)
 
-1. Voer desgewenst gegevens in de velden in. Klik op de knop **Adres** tab.
+1. Voer desgewenst gegevens in de velden in. Klik het **Adres** lusje.
 
-   ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
+   ![ screen_shot_2012-02-21at115045am ](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Voer eventueel de adresgegevens in. Klikken **Opslaan** om de lead op te slaan. Als u extra leads wilt toevoegen, klikt u op **Opslaan en Nieuw**.
+1. Voer eventueel de adresgegevens in. Klik **sparen** om de lood te bewaren. Als u extra lood moet toevoegen, klik **sparen en Nieuw**.
 
    De nieuwe lead wordt weergegeven in het deelvenster Leads. Wanneer u op het item klikt, worden alle ingevoerde gegevens in het rechterdeelvenster weergegeven. Nadat u een lead hebt gemaakt, kunt u deze aan een lijst toevoegen.
 
-   ![screen_shot_2012-02-21at120307pm](assets/screen_shot_2012-02-21at120307pm.png)
+   ![ screen_shot_2012-02-21at120307pm ](assets/screen_shot_2012-02-21at120307pm.png)
 
 ### Inleiding activeren of deactiveren {#activating-or-deactivating-leads}
 
@@ -194,15 +194,15 @@ Door leads te activeren kunt u hun activiteiten bijhouden op het publicatieexemp
 
 Aan actieve of deactieve leads:
 
-1. Navigeer in AEM naar de MCM en klik op **Leads**.
+1. In AEM, navigeer aan MCM en klik **Leads**.
 
-1. Selecteer de leads die u wilt activeren of deactiveren en klik op **Activeren** of **Deactiveren**.
+1. Selecteer de lood u wilt activeren of deactiveren en **klikken activeert** of **** deactivate.
 
-   ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
+   ![ screen_shot_2012-02-21at120620pm ](assets/screen_shot_2012-02-21at120620pm.png)
 
-   Net als bij AEM pagina&#39;s wordt de publicatiestatus aangegeven in het dialoogvenster **Gepubliceerd** kolom.
+   Zoals met AEM pagina&#39;s, wordt de het publiceren status vermeld in de **Gepubliceerde** kolom.
 
-   ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
+   ![ screen_shot_2012-02-21at122901pm ](assets/screen_shot_2012-02-21at122901pm.png)
 
 ### Nieuwe leads importeren {#importing-new-leads}
 
@@ -210,16 +210,16 @@ Wanneer u nieuwe leads importeert, kunt u deze automatisch toevoegen aan een bes
 
 Om lood van een komma-gescheiden lijst te importeren:
 
-1. Navigeer in AEM naar de MCM en klik op **Leads**.
+1. In AEM, navigeer aan MCM en klik **Leads**.
 
    >[!NOTE]
    >
    >U kunt ook leads importeren door een van de volgende handelingen uit te voeren:
    >
-   >* Klik in het dashboard op **Leads importeren** in de **Lijsten** ruit
-   >* Klikken **Lijsten** en in de **Gereedschappen** menu, selecteert u **Leads importeren**.
+   >* In het dashboard, klik **de Hangt van de Invoer** in de **ruit van Lijsten**
+   >* Klik **Lijsten** en in het **** menu van Hulpmiddelen, uitgezochte **Leads van de Invoer**.
 
-1. In de **Gereedschappen** menu, selecteert u **Importeren** **Leads**.
+1. In het **menu van Hulpmiddelen**, uitgezochte **Invoer** **leidt**.
 
 1. Voer de informatie in zoals wordt beschreven in Voorbeeldgegevens. De volgende velden kunnen worden geïmporteerd: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
 
@@ -228,19 +228,19 @@ Om lood van een komma-gescheiden lijst te importeren:
    >De eerste rij in de CSV-lijst is vooraf gedefinieerde labels die precies zo moeten worden geschreven als in het voorbeeld:
    >
    >
-   >`email,givenName,familyName` - indien geschreven `givenname`Het systeem zal het bijvoorbeeld niet herkennen.
+   >`email,givenName,familyName` - indien geschreven als `givenname` , herkent het systeem het bijvoorbeeld niet.
    >
    >
 
-   ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
+   ![ screen_shot_2012-02-21at123055pm ](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. Klikken **Volgende**. Hier kunt u de leads bekijken om te controleren of ze accuraat zijn.
+1. Klik **daarna**. Hier kunt u de leads bekijken om te controleren of ze accuraat zijn.
 
-   ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
+   ![ screen_shot_2012-02-21at123104pm ](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. Klikken **Volgende**. Selecteer de lijst waartoe de leads moeten behoren. Als u niet wilt dat ze tot een lijst behoren, verwijdert u de gegevens in het veld. AEM maakt standaard een lijstnaam die de datum en tijd bevat. Klikken **Importeren**.
+1. Klik **daarna**. Selecteer de lijst waartoe de leads moeten behoren. Als u niet wilt dat ze tot een lijst behoren, verwijdert u de gegevens in het veld. AEM maakt standaard een lijstnaam die de datum en tijd bevat. Klik **Invoer**.
 
-   ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
+   ![ screen_shot_2012-02-21at123123pm ](assets/screen_shot_2012-02-21at123123pm.png)
 
    De nieuwe lead wordt weergegeven in het deelvenster Leads. Als u op het item klikt, worden alle ingevoerde gegevens in het rechterdeelvenster weergegeven. Nadat u een lead hebt gemaakt, kunt u deze aan een lijst toevoegen.
 
@@ -248,49 +248,49 @@ Om lood van een komma-gescheiden lijst te importeren:
 
 Om lood aan reeds bestaande lijsten toe te voegen:
 
-1. Klik in de MCM op **Leads** om alle beschikbare leads te bekijken.
+1. In MCM, klik **Leads** om alle beschikbare lood te bekijken.
 
 1. Selecteer de leads die u aan een lijst wilt toevoegen door het selectievakje naast de lead in te schakelen. U kunt zoveel leads toevoegen als u wilt.
 
-   ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
+   ![ screen_shot_2012-02-21at123835pm ](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. In de **Gereedschappen** menu, selecteert u **Toevoegen aan lijst...** De **Toevoegen aan lijst** wordt geopend.
+1. In het **menu van Hulpmiddelen**, uitgezocht **voeg aan Lijst toe...** **voegt aan het venster van de Lijst** toe opent.
 
-   ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
+   ![ screen_shot_2012-02-21at124019pm ](assets/screen_shot_2012-02-21at124019pm.png)
 
-1. Selecteer de lijst waaraan u de leads wilt toevoegen en klik op **OK**. De leads worden toegevoegd aan de desbetreffende lijsten.
+1. Selecteer welke lijst u de lood aan wilt toevoegen en **O.K.** klikken. De leads worden toegevoegd aan de desbetreffende lijsten.
 
 ### Informatie over leads weergeven {#viewing-lead-information}
 
 Als u informatie over leads wilt weergeven, klikt u in de MCM op het selectievakje naast de lead en wordt een rechtervenster geopend met alle informatie over de lead, inclusief de koppeling aan de lijst.
 
-![screen_shot_2012-02-21at124228pm](assets/screen_shot_2012-02-21at124228pm.png)
+![ screen_shot_2012-02-21at124228pm ](assets/screen_shot_2012-02-21at124228pm.png)
 
 ### Bestaande leads wijzigen {#modifying-existing-leads}
 
 Bestaande lead-informatie wijzigen:
 
-1. Klik in de MCM op **Leads**. Selecteer in de lijst met leads het selectievakje naast de lead die u wilt bewerken. Alle informatie over de lead wordt weergegeven in het rechterdeelvenster.
+1. In MCM, klik **Leads**. Selecteer in de lijst met leads het selectievakje naast de lead die u wilt bewerken. Alle informatie over de lead wordt weergegeven in het rechterdeelvenster.
 
-   ![screen_shot_2012-02-21at124514pm](assets/screen_shot_2012-02-21at124514pm.png)
+   ![ screen_shot_2012-02-21at124514pm ](assets/screen_shot_2012-02-21at124514pm.png)
 
    >[!NOTE]
    >
    >U kunt slechts één lead tegelijk bewerken. Als u regels moet wijzigen die deel uitmaken van dezelfde lijst, kunt u de lijst wijzigen.
 
-1. Klikken **Bewerken**. De **Lead bewerken** wordt geopend.
+1. Klik **uitgeven**. Het **geeft 1} venster van de Lood uit opent.**
 
-   ![screen_shot_2012-02-21at124609pm](assets/screen_shot_2012-02-21at124609pm.png)
+   ![ screen_shot_2012-02-21at124609pm ](assets/screen_shot_2012-02-21at124609pm.png)
 
-1. Breng de gewenste wijzigingen aan en klik op **Opslaan** om uw wijzigingen op te slaan.
+1. Breng zonodig uitgeeft aan en klik **sparen** om uw veranderingen te bewaren.
 
    >[!NOTE]
    >
-   >Ga naar het gebruikersprofiel als u de lead avatar wilt wijzigen. U kunt het profiel laden in de clickstream-cloud door op CTRL+ALT+c te klikken **Laden** en selecteert u vervolgens het profiel.
+   >Ga naar het gebruikersprofiel als u de lead avatar wilt wijzigen. U kunt het profiel in de klikstroomwolk laden door CTRL+ALT+c te drukken, **Lading** te klikken, en dan het profiel te selecteren.
 
 ### Bestaande leads verwijderen {#deleting-existing-leads}
 
-Als u bestaande leads in de MCM wilt verwijderen, schakelt u het selectievakje naast de lead in en klikt u **Verwijderen**. De lead wordt verwijderd uit de lijst met leads en alle bijbehorende lijsten.
+Om bestaande lood in MCM te schrappen, selecteer de controledoos naast de lood en klik **Schrapping**. De lead wordt verwijderd uit de lijst met leads en alle bijbehorende lijsten.
 
 >[!NOTE]
 >
@@ -301,43 +301,43 @@ Als u bestaande leads in de MCM wilt verwijderen, schakelt u het selectievakje n
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (lijsten beheren).
->Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
+>De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
-Met lijsten kunt u uw leads ordenen in groepen. Met lijsten kunt u uw marketingcampagnes richten op een bepaalde groep personen. U kunt bijvoorbeeld een doelnieuwsbrief naar een lijst sturen. Lijsten zijn zichtbaar in MCM, of in het Dashboard of door te klikken **Lijsten**. Beide verstrekken u de naam van de lijst en het aantal leden.
+Met lijsten kunt u uw leads ordenen in groepen. Met lijsten kunt u uw marketingcampagnes richten op een bepaalde groep personen. U kunt bijvoorbeeld een doelnieuwsbrief naar een lijst sturen. De lijsten zijn zichtbaar in MCM, of in het Dashboard of door **Lijsten** te klikken. Beide verstrekken u de naam van de lijst en het aantal leden.
 
-![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
+![ screen_shot_2012-02-21at125021pm ](assets/screen_shot_2012-02-21at125021pm.png)
 
-Als u op **Lijsten** kunt u ook bekijken of de lijst lid is van een andere lijst en een beschrijving zien.
+Als u **Lijsten** klikt, kunt u ook bekijken als de lijst een lid van een andere lijst is en een beschrijving ziet.
 
-![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
+![ screen_shot_2012-02-21at124828pm ](assets/screen_shot_2012-02-21at124828pm.png)
 
 ### Nieuwe lijsten maken {#creating-new-lists}
 
-1. Klik op het MCM-dashboard op **Nieuwe lijst...** of in **Lijsten**, klikt u op **Nieuw** ... Het venster Lijst maken wordt geopend.
+1. In het dashboard MCM, klik **Nieuwe Lijst...** of in **Lijsten**, klik **Nieuw**.. Het venster Lijst maken wordt geopend.
 
-   ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
+   ![ screen_shot_2012-02-21at125147pm ](assets/screen_shot_2012-02-21at125147pm.png)
 
-1. Voer desgewenst een naam in (vereist) en een beschrijving in en klik op **Opslaan**. De lijst wordt weergegeven in de **Lijsten** venster.
+1. Ga een naam (vereist) in en indien gewenst, een beschrijving en klik **sparen**. De lijst verschijnt in de **ruit van Lijsten**.
 
-   ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
+   ![ screen_shot_2012-02-21at125320pm ](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Bestaande lijsten wijzigen {#modifying-existing-lists}
 
-1. Klik in de MCM op **Lijsten**.
+1. In MCM, klik **Lijsten**.
 
-1. Selecteer in de lijst het selectievakje naast de lijst die u wilt bewerken en klik op **Bewerken**. De **Lijst bewerken** wordt geopend.
+1. Van de lijst, selecteer de controledoos naast de lijst u **uitgeven en wilt klikken geeft** uit. Het **geeft** venster van de Lijst uit opent.
 
-   ![screen_shot_2012-02-21at125452pm](assets/screen_shot_2012-02-21at125452pm.png)
+   ![ screen_shot_2012-02-21at125452pm ](assets/screen_shot_2012-02-21at125452pm.png)
 
    >[!NOTE]
    >
    >U kunt slechts één lijst tegelijk bewerken.
 
-1. Breng desgewenst wijzigingen aan en klik op **Opslaan** om uw wijzigingen op te slaan.
+1. Breng desgewenst uitgeeft uit, en klik **sparen** om uw veranderingen te bewaren.
 
 ### Bestaande lijsten verwijderen {#deleting-existing-lists}
 
-Als u bestaande lijsten wilt verwijderen, selecteert u in de MCM het selectievakje naast de lijst en klikt u op **Verwijderen**. De lijst wordt verwijderd. Leads die aan de lijst zijn gekoppeld, worden niet verwijderd. Alleen de koppeling met de lijst wordt verwijderd.
+Om bestaande lijsten, in MCM te schrappen, selecteer de controledoos naast de lijst en klik **Schrapping**. De lijst wordt verwijderd. Leads die aan de lijst zijn gekoppeld, worden niet verwijderd. Alleen de koppeling met de lijst wordt verwijderd.
 
 >[!NOTE]
 >
@@ -351,29 +351,29 @@ U kunt lijsten samenvoegen als u dezelfde conferentie op twee verschillende loca
 
 Bestaande lijsten samenvoegen:
 
-1. Klik in de MCM op **Lijsten**.
+1. In MCM, klik **Lijsten**.
 
 1. Selecteer de lijst waarmee u een andere lijst wilt samenvoegen door het selectievakje naast de lijst in te schakelen.
 
-1. In de **Gereedschappen** menu, selecteert u **Lijst samenvoegen**.
+1. In het **menu van Hulpmiddelen**, uitgezochte **Lijst van de Fusie**.
 
    >[!NOTE]
    >
    >U kunt slechts één lijst tegelijk samenvoegen.
 
-1. In de **Lijst samenvoegen** venster, selecteert u de lijst waarmee u wilt samenvoegen en klikt u op **OK**.
+1. In het **venster van de Lijst van de Samenvoegen**, selecteer de lijst u met wilt samenvoegen en **O.K.** klikken.
 
-   ![screen_shot_2012-02-21at10259pm](assets/screen_shot_2012-02-21at10259pm.png)
+   ![ screen_shot_2012-02-21at10259pm ](assets/screen_shot_2012-02-21at10259pm.png)
 
-   De lijst die u hebt samengevoegd, wordt met één lid verhoogd. Als u wilt zien dat uw lijst is samengevoegd, selecteert u de lijst die u hebt samengevoegd en in het dialoogvenster **Gereedschappen** menu, selecteert u **Leads tonen**.
+   De lijst die u hebt samengevoegd, wordt met één lid verhoogd. Om te zien dat uw lijst werd samengevoegd, selecteer de lijst u samenvoegde en in het **menu van Hulpmiddelen**, uitgezocht **toont Leads**.
 
 1. Herhaal de stap totdat u alle gewenste lijsten hebt samengevoegd.
 
-   ![screen_shot_2012-02-21at10538pm](assets/screen_shot_2012-02-21at10538pm.png)
+   ![ screen_shot_2012-02-21at10538pm ](assets/screen_shot_2012-02-21at10538pm.png)
 
 >[!NOTE]
 >
->Het verwijderen van een samengevoegde lijst van zijn lidmaatschap is identiek aan het verwijderen van een lood uit een lijst. Open de **Lijsten** selecteert u de lijst die de samengevoegde lijst bevat en verwijdert u het lidmaatschap door op de rode cirkel naast de lijst te klikken.
+>Het verwijderen van een samengevoegde lijst van zijn lidmaatschap is identiek aan het verwijderen van een lood uit een lijst. Open het **lusje van Lijsten**, selecteer de lijst die de samengevoegde lijst omvat, en verwijder het lidmaatschap door de rode cirkel naast de lijst te klikken.
 
 ### Regeleinden weergeven in lijsten {#viewing-leads-in-lists}
 
@@ -381,16 +381,16 @@ U kunt op elk gewenst moment bekijken welke leads tot een specifieke lijst behor
 
 U kunt als volgt de leads in lijsten weergeven:
 
-1. Klik in de MCM op **Lijsten**.
+1. In MCM, klik **Lijsten**.
 
 1. Schakel het selectievakje in naast de lijst waarvoor u de leden wilt weergeven.
 
-1. In de **Gereedschappen** menu, selecteert u **Leads tonen**. AEM geeft de leads weer die lid zijn van die lijst. U kunt door de lijst bladeren of naar leden zoeken.
+1. In het **menu van Hulpmiddelen**, uitgezocht **toont Leads**. AEM geeft de leads weer die lid zijn van die lijst. U kunt door de lijst bladeren of naar leden zoeken.
 
    >[!NOTE]
    >
-   >Daarnaast kunt u leads uit een lijst verwijderen door deze te selecteren en vervolgens op **Lidmaatschap verwijderen**.
+   >Bovendien kunt u lood van een lijst schrappen door hen te selecteren en dan **te klikken verwijdert Lidmaatschap**.
 
-   ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
+   ![ screen_shot_2012-02-21at10828pm ](assets/screen_shot_2012-02-21at10828pm.png)
 
-1. Klikken **Sluiten** om terug te keren naar de MCM.
+1. Klik **dicht** om aan MCM terug te keren.

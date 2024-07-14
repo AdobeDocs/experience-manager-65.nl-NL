@@ -25,8 +25,8 @@ De functie voor opmerkingen wordt gebruikt om bezoekers die zich hebben aangemel
 
 In het document wordt beschreven:
 
-* Toevoegen `Comments` naar een pagina.
-* De montages van de configuratie voor de `Comments` component.
+* `Comments` toevoegen aan een pagina.
+* Configuration settings for the `Comments` component.
 
 >[!NOTE]
 >
@@ -34,151 +34,151 @@ In het document wordt beschreven:
 
 ### Opmerkingen toevoegen aan een pagina {#adding-comments-to-a-page}
 
-Als u een `Comments` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
+Als u een component `Comments` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Comments`
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie waar gebruikers opmerkingen over kunnen plaatsen, of gewoon onder aan de pagina.
 
-Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
 
-Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) worden opgenomen, is dit hoe `Comments` wordt weergegeven.
+Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-comments.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Comments` component verschijnt.
 
-![comments-component](assets/comments-component.png)
+![ commentaren-component ](assets/comments-component.png)
 
 >[!NOTE]
 >
->Slechts één `Comments` kan op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
+>Er mag slechts één `Comments` -component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
 
 ### Opmerkingen configureren {#configuring-comments}
 
-Selecteer de geplaatste `Comments` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste component `Comments` die u wilt openen en selecteer het pictogram `Configure` waarmee het dialoogvenster Bewerken wordt geopend.
 
-![Configuratiepictogram](assets/configure.png)
+![ vorm pictogram ](assets/configure.png)
 
-![commentaarinstellingen](assets/commentssettings.png)
+![ commentaarmontages ](assets/commentssettings.png)
 
 #### Tabblad Opmerkingen {#comments-tab}
 
-Onder de **Opmerkingen** , geeft u op hoe bezoekers opmerkingen invoeren.
+Onder het **lusje van Commentaren**, specificeer hoe de commentaren door bezoekers zijn ingegaan.
 
-* **Antwoorden toestaan**
+* **staat antwoorden** toe
 
   Als deze optie is ingeschakeld, kunnen leden reageren op bestaande opmerkingen. De optie Standaard is uitgeschakeld.
 
-* **Opmerkingen per pagina**
+* **Commentaren per Pagina**
 
   Hiermee beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. De standaardwaarde is 10.
 
-* **Uploaden van bestanden toestaan**
+* **staat Dossier toe uploadt**
 
   Als deze optie is ingeschakeld, wordt de optie voor het uploaden van een bestand weergegeven in het tekstinvoervak. De optie Standaard is uitgeschakeld.
 
-* **Max. bestandsgrootte**
+* **Max de Grootte van het Dossier**
 
   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Deze waarde beperkt de grootte van het geüploade bestand. Standaardlimiet is 10 MB.
 
-* **Max. berichtlengte**
+* **Maximale Lengte van het Bericht**
 
   Maximumaantal tekens dat in het tekstvak kan worden ingevoerd. De standaardwaarde is 4096 tekens.
 
-* **Toegestane bestandstypen**
+* **Toegestane Types van Dossier**
 
   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het puntscheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
-* **RTF-editor**
+* **Rich Text Editor**
 
   Als deze optie is ingeschakeld, worden opmerkingen ingevoerd met een markering. De optie Standaard is uitgeschakeld.
 
-* **Stemmen toestaan**
+* **Toestaan het Stemmen**
 
   Als deze optie is ingeschakeld, wordt de optie om omhoog of omlaag te stemmen weergegeven met het tekstinvoervak. De optie Standaard is uitgeschakeld.
 
-* **Volgen toestaan**
+* **toestaat na**
 
   Als deze optie is ingeschakeld, kunnen leden opmerkingen volgen. De optie Standaard is uitgeschakeld.
 
-* **Badges weergeven**
+* **Badges van de Vertoning**
 
   Als deze optie is ingeschakeld, kunnen verdiende en toegekende badges worden weergegeven. De optie Standaard is uitgeschakeld.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Onder de **Moderatie gebruiker** , geeft u op hoe de geposte opmerkingen worden beheerd. Zie voor meer informatie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
+Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte commentaren worden geleid. Voor meer informatie, zie [ het Matigen van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
 
-* **Pre-moderatie**
+* **pre-Moderatie**
 
   Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **Opmerkingen verwijderen**
+* **Schrap Commentaren**
 
   Als deze optie is ingeschakeld, kan het lid dat de opmerking heeft geplaatst deze verwijderen. De optie Standaard is uitgeschakeld.
 
-* **Opmerkingen weigeren**
+* **ontken Commentaren**
 
   Indien gecontroleerd, sta moderators toe om commentaren te ontkennen. De optie Standaard is uitgeschakeld.
 
-* **Opmerkingen sluiten/opnieuw openen**
+* **dicht/heropen Commentaren**
 
   Als deze optie ingeschakeld is, kan de moderator opmerkingen sluiten en opnieuw openen. De optie Standaard is uitgeschakeld.
 
-* **Opmerkingen markeren**
+* **Commentaren van de Vlag**
 
   Als deze optie is ingeschakeld, kunnen leden opmerkingen als onjuist markeren. De optie Standaard is uitgeschakeld.
 
-* **Lijst met redenen voor vlag**
+* **Lijst van de Reden van de Vlag**
 
   Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst de reden kiezen waarom een opmerking als onjuist wordt gemarkeerd. De optie Standaard is uitgeschakeld.
 
-* **Reden voor aangepaste vlag**
+* **Reden van de Vlag van de Douane**
 
   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een opmerking als ongeschikt te markeren. De optie Standaard is uitgeschakeld.
 
-* **Moderniseringsdrempel**
+* **Drempel van de Moderatie**
 
   Voer het aantal keren in dat een opmerking moet worden gemarkeerd door de leden voordat de moderatoren op de hoogte worden gesteld. De standaardwaarde is één keer (1).
 
-* **Limiet voor markering**
+* **het Vlaggen Grens**
 
-  Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **Moderniseringsdrempel**. De standaardwaarde is 5.
+  Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit aantal moet groter dan of gelijk aan de **Drempel van de Moderatie** zijn. De standaardwaarde is 5.
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Onder de **Instellingen sorteren** , geeft u op hoe de geposte opmerkingen worden gesorteerd wanneer deze worden weergegeven.
+Onder het **lusje van de Montages van de Soort**, specificeer hoe de geposte commentaren wanneer getoond worden gesorteerd.
 
-* **Veld sorteren**
+* **Gebied van de Sortering**
 
-  Omlaag trekken om een van de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`.
+  Trek omlaag om een van `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` of `Most Liked` te selecteren.
 
-* **Sorteervolgorde**
+* **de Orde van de Sortering**
 
-  Omlaag trekken om een van de `Ascending` of `Descending`.
+  Trek omlaag om een van `Ascending` of `Descending` te selecteren.
 
 ### Wijzigen in type aangepaste opmerking {#changing-to-a-custom-comment-type}
 
 Door het Type van Middel van de Commentaar te veranderen, produceert het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder die is aangepast (uitgebreid) door ontwikkelaars.
 
-Zodra de types van douanemiddel gekend zijn, ga binnen [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) en dubbelklikt u op de geplaatste `Comments` om een dialoogvenster met een extra tabblad te openen.
+Zodra de types van douanemiddel gekend zijn, ga [ Wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
-Onder de **Brontypen** tab, specificeer het custom resourceType voor nieuwe instanties van `Comments or Voting` componenten:
+Onder het **lusje van de Types van Middel**, specificeer douane resourceType voor nieuwe instanties van de `Comments or Voting` componenten:
 
-![hulpbrontype](assets/resource-type.png)
+![ middel-type ](assets/resource-type.png)
 
-* **Type bron van opmerking**
+* **Type van Middel van Commentaar**
 
-  Navigeer naar het resourceType van uitgebreid `comment` component (enkele opmerking) in /apps. Bijvoorbeeld: `/apps/social/commons/components/hbs/comments/comment`
+  Navigeer naar het resourceType van een uitgebreide `comment` component (enkele opmerking) in /apps. Bijvoorbeeld: `/apps/social/commons/components/hbs/comments/comment`
 
   Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
-* **Type stembron**
+* **het Stemmen het Type van Middel**
 
-  Navigeer naar het resourceType van uitgebreid `voting` in /apps. Bijvoorbeeld: `/apps/social/components/hbs/voting`
+  Navigeer naar het resourceType van een uitgebreide `voting` component in /apps. Bijvoorbeeld: `/apps/social/components/hbs/voting`
 
   Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
 
-* **Brontype voor opmerkingensysteem**
+* **Type van Middel van het Systeem van de Commentaar**
 
-  Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](/help/communities/scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper](/help/communities/handlebars-helpers.md#include).
+  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [ ](/help/communities/scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper ](/help/communities/handlebars-helpers.md#include) .
 
 ### Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -190,7 +190,7 @@ Wanneer de ondertekende binnen gebruiker moderator of beheerdervoorrechten heeft
 
 Wanneer de bezoeker van de site zich heeft aangemeld, kunnen deze, afhankelijk van de configuratie
 
-* Een nieuwe opmerking plaatsen
+* Post een nieuwe opmerking
 * Een eigen opmerking bewerken
 * Een eigen opmerking verwijderen
 * Opmerkingen van anderen markeren
@@ -201,8 +201,8 @@ Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte opmerkingen lezen, 
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie is te vinden op de [Essentiële opmerkingen](/help/communities/essentials-comments.md) pagina voor ontwikkelaars.
+Meer informatie kan op de [ Hoofdzaak van Commentaren ](/help/communities/essentials-comments.md) pagina voor ontwikkelaars worden gevonden.
 
-Zie voor een moderatie van gepubliceerde opmerkingen [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
+Voor moderatie van geposte commentaren, zie [ het Modereren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
 
-Zie voor een vertaling van geposte opmerkingen [Door de gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md).
+Voor vertaling van geposte commentaren, zie [ Vertaal Door de Gebruiker Gegenereerde Inhoud ](/help/communities/translate-ugc.md).

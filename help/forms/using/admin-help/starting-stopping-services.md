@@ -31,24 +31,24 @@ AEM formuliermodules (bijvoorbeeld Forms, Rights Management, Output) werken als 
 >
 > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-1. In beheerconsole klikken **Services** > **Toepassingen en services** > **Servicebeheer**.
+1. In beleidsconsole klik **de Diensten van 0} >** Toepassingen en de Diensten **>** Beheer van de Dienst **.**
 1. Voor de pagina van het Beheer van de Dienst, selecteer de controledoos naast de dienst om te stoppen of te beginnen en Einde of Begin te klikken.
 
 ## De diensten van het begin of van het einde voor de toepassingsserver en gegevensbestand {#start-or-stop-services-for-the-application-server-and-database}
 
 Een volledige implementatie van AEM formulieren omvat een toepassingsserver en databaseservices:
 
-* *`[application server]`* voor AEM
-* *`[database]`* voor AEM
+* *`[application server]`* voor AEM formulieren
+* *`[database]`* voor AEM formulieren
 
-In Windows zijn deze services toegankelijk via de **Administratieve gereedschappen** > **Deelvenster Services**. Als u bijvoorbeeld AEM formulieren op JBoss hebt geïnstalleerd met de methode key turnkey, zijn de volgende services beschikbaar op uw systeem:
+Op Vensters, zijn deze diensten toegankelijk door **Administratieve Hulpmiddelen** > **het paneel van de Diensten**. Als u bijvoorbeeld AEM formulieren op JBoss hebt geïnstalleerd met de methode key turnkey, zijn de volgende services beschikbaar op uw systeem:
 
 * JBoss voor Adobe Experience Manager-formulieren
 * MySQL voor Adobe Experience Manager-formulieren
 
 Start of stop deze services door deze te selecteren in de lijst in het deelvenster Services en vervolgens op de desbetreffende actieknop in het deelvenster te klikken.
 
-Voer in UNIX® of Linux de volgende tekst in via een opdrachtregel, waarbij *`[service name]`* Dit is de naam van de service die u controleert:
+Voer in UNIX® of Linux de volgende tekst in vanaf een opdrachtregel, waarbij *`[service name]`* de naam is van de service die u controleert:
 
 ```java
      ps -A | grep [service name]

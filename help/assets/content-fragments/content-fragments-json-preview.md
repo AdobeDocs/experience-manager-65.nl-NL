@@ -16,13 +16,13 @@ ht-degree: 1%
 
 Wanneer het ontwikkelen van de modellen voor de Fragmenten van de Inhoud als deel van uw AEM hoofdloze implementatie, zou u steekproefJSON output voor een inhoudsfragment kunnen willen bekijken, zoals die op een model wordt gebaseerd. Als u bijvoorbeeld wilt weten hoe de uiteindelijke uitvoer eruit zal zien. Dit kan handig zijn voor het valideren van de JSON-modelstructuur, bijvoorbeeld met standaardvoorbeeldinhoud per gegevenstype.
 
-Met de **Voorvertoning** pictogram:
+Gebruikend het **pictogram van de Voorproef**:
 
-![Inhoudsfragmenteditor - tabblad Voorbeeld](assets/cfm-preview-01.png)
+![ de Redacteur van het Fragment van de Inhoud - het lusje van de Voorproef ](assets/cfm-preview-01.png)
 
 U kunt de JSON-weergave van het huidige fragment weergeven. Bijvoorbeeld:
 
-![Content Fragment Editor - Voorvertoning van een fragment](assets/cfm-preview-02.png)
+![ de Redacteur van het Fragment van de Inhoud - Voorproef van een Fragment ](assets/cfm-preview-02.png)
 
 <!--
 **Copy URL** lets you copy to clipboard the URL for either author or publish.

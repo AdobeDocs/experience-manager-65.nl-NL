@@ -25,29 +25,29 @@ Nadat een Interactieve Communicatie wordt gecreeerd, kan de Agent de Interactiev
 Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, beheert de agent de volgende aspecten van de Interactieve Mededeling in de Agent UI alvorens het aan een postproces voor te leggen:
 
 * **Gegevens**: Het lusje van Gegevens van de Agent UI toont om het even welke agent-editable variabelen en ontgrendelde eigenschappen van het model van vormgegevens in de Interactieve Mededeling. Deze variabelen/eigenschappen worden gemaakt tijdens het bewerken of maken van documentfragmenten die zijn opgenomen in de interactieve communicatie. Het tabblad Gegevens bevat ook alle velden die zijn ingebouwd in de XDP/afdruksjabloon. Het tabblad Gegevens wordt alleen weergegeven wanneer er variabelen, eigenschappen van het formuliergegevensmodel of velden in de interactieve communicatie zijn die door de agent kunnen worden bewerkt.
-* **Inhoud**: Op het tabblad Inhoud beheert de Agent de inhoud, zoals documentfragmenten en inhoudsvariabelen in de interactieve communicatie. De agent kan de wijzigingen in het documentfragment doorvoeren zoals is toegestaan tijdens het maken van de interactieve communicatie in de eigenschappen van die documentfragmenten. De agent kan ook een documentfragment opnieuw ordenen, toevoegen/verwijderen en pagina-einden toevoegen, indien toegestaan.
-* **Bijlagen**: Het lusje van Bijlagen verschijnt in de Agent UI slechts als de Interactieve Communicatie om het even welke gehechtheid heeft of de Agent bibliotheektoegang heeft. De agent mag de bijlagen wel of niet wijzigen of bewerken.
+* **Inhoud**: In het lusje van de Inhoud, beheert de Agent de inhoud zoals documentfragmenten en inhoudsvariabelen in de Interactieve Mededeling. De agent kan de wijzigingen in het documentfragment doorvoeren zoals is toegestaan tijdens het maken van de interactieve communicatie in de eigenschappen van die documentfragmenten. De agent kan ook een documentfragment opnieuw ordenen, toevoegen/verwijderen en pagina-einden toevoegen, indien toegestaan.
+* **Gehechtheid**: Het lusje van Gehechtheid verschijnt in de Agent UI slechts als de Interactieve Communicatie om het even welke gehechtheid heeft of de Agent bibliotheektoegang heeft. De agent mag de bijlagen wel of niet wijzigen of bewerken.
 
 ## Bereid Interactieve Communicatie gebruikend de Agent UI voor {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Selecteren **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteer de gewenste interactieve communicatie en selecteer **[!UICONTROL Open Agent UI]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+1. Selecteer de gewenste interactieve communicatie en selecteer **[!UICONTROL Open Agent UI]** .
 
    >[!NOTE]
    >
    >De gebruikersinterface van de agent werkt slechts als geselecteerde Interactieve Communicatie een drukkanaal heeft.
 
-   ![openagentiui](assets/openagentiui.png)
+   ![ openagentiui ](assets/openagentiui.png)
 
    Gebaseerd op de inhoud en de eigenschappen van de Interactieve Mededeling, verschijnt de agent UI met de volgende drie lusjes: Gegevens, Inhoud, en Bijlage.
 
-   ![agentuitabs](assets/agentuitabs.png)
+   ![ agentuitabs ](assets/agentuitabs.png)
 
    Ga door met het invoeren van gegevens, het beheren van de inhoud en het beheren van de bijlagen.
 
 ### Gegevens invoeren {#enter-data}
 
-1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte velden met een sterretje (&amp;ast;) in om de optie **Verzenden** knop.
+1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte gebieden duidelijk met een asterisk (&amp;ast;) om **toe te laten legt** knoop voor.
 
    Selecteer een waarde voor een gegevensveld in de voorvertoning Interactieve communicatie om het bijbehorende gegevensveld op het tabblad Gegevens te markeren of om de andere reden.
 
@@ -57,17 +57,17 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 1. Selecteer **[!UICONTROL Content]**. Het tabblad Inhoud van de interactieve communicatie wordt weergegeven.
 
-   ![agentuicontenttab](assets/agentuicontenttab.png)
+   ![ agentuicontenttab ](assets/agentuicontenttab.png)
 
 1. Bewerk de documentfragmenten desgewenst op het tabblad Inhoud. Als u het relevante fragment in de inhoudshiërarchie de focus wilt geven, kunt u de desbetreffende regel of alinea in de voorvertoning Interactieve communicatie selecteren of het fragment rechtstreeks in de inhoudshiërarchie selecteren.
 
    Het documentfragment met de regel &quot;Nu online betalen...&quot; wordt bijvoorbeeld geselecteerd in de voorvertoning in de onderstaande afbeelding en hetzelfde documentfragment is geselecteerd op het tabblad Inhoud.
 
-   ![contentmodulefocus](assets/contentmodulefocus.png)
+   ![ contentmodulefocus ](assets/contentmodulefocus.png)
 
-   Tik op Geselecteerde modules in inhoud markeren op het tabblad Inhoud of Gegevens ( ![highlightSelectedModesincontentcr](assets/highlightselectedmodulesincontentccr.png)) linksboven in de voorvertoning kunt u de functionaliteit uitschakelen of inschakelen om naar het documentfragment te gaan wanneer in de voorvertoning op de desbetreffende tekst, alinea of gegevensveld wordt getikt of geselecteerd.
+   Op de Inhoud of het lusje van Gegevens, door Hoogtepunt Geselecteerde Modules in Inhoud ( ![ te tikken benadrukte geselecteerde modulesincontentcr ](assets/highlightselectedmodulesincontentccr.png)) op hogere linkerzijde van de voorproef, kunt u functionaliteit onbruikbaar maken of toelaten om naar het documentfragment te gaan wanneer de relevante tekst, de paragraaf, of het gegevensgebied in de voorproef wordt aangewezen of wordt geselecteerd.
 
-   De fragmenten die door de agent terwijl het creëren van de Interactieve Communicatie kunnen worden uitgegeven hebben de Edit Geselecteerde Inhoud ( ![iconeditselected content](assets/iconeditselectedcontent.png)). Selecteer het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
+   De fragmenten die door de agent kunnen worden uitgegeven terwijl het creëren van de Interactieve Mededeling hebben de Edit Geselecteerde Inhoud ( ![ iconeditselected content ](assets/iconeditselectedcontent.png)) pictogram. Selecteer het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
 
    * [Opmaakopties](#formattingtext)
 
@@ -77,13 +77,13 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
    * [Speciale tekens](#specialcharacters)
    * [Sneltoetsen](/help/forms/using/keyboard-shortcuts.md)
 
-   Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [Handelingen en informatie beschikbaar in de gebruikersinterface van de Agent](#actionsagentui).
+   Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [ Acties en info beschikbaar in het gebruikersinterface van de Agent ](#actionsagentui).
 
-1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagebreekervoor](assets/pagebreakbeforeafter.png)).
+1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![ pagina-einde vóór ](assets/pagebreakbeforeafter.png) ).
 
    Een expliciete plaatsaanduiding voor een pagina-einde wordt ingevoegd in de interactieve communicatie. Zie het afdrukvoorbeeld voor informatie over de invloed van een expliciet pagina-einde op de interactieve communicatie.
 
-   ![expliciete pagebreak](assets/explicitpagebreak.png)
+   ![ explicipagebreak ](assets/explicitpagebreak.png)
 
    Ga verder met het beheer van de bijlagen van de interactieve communicatie.
 
@@ -93,9 +93,9 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    U kunt verkiezen om een gehechtheid samen met de Interactieve Mededeling niet voor te leggen door het meningspictogram te tikken en u kunt het kruis in de gehechtheid selecteren om het (als de agent wordt toegestaan om de gehechtheid te schrappen of te verbergen) van de Interactieve Mededeling te schrappen. Voor de bijlagen die verplicht zijn opgegeven tijdens het maken van de interactieve communicatie, zijn de pictogrammen Weergeven en Verwijderen uitgeschakeld.
 
-   ![attachmentsagentui](assets/attachmentsagentui.png)
+   ![ attachmentsagentui ](assets/attachmentsagentui.png)
 
-1. Selecteer de bibliotheektoegang ( ![bibliotheektoegang](assets/libraryaccess.png)) gebruiken om de inhoudsbibliotheek te openen en DAM-elementen in te voegen als bijlagen.
+1. Selecteer het pictogram van de Toegang van de Bibliotheek ( ![ bibliotheektoegang ](assets/libraryaccess.png)) om tot de Bibliotheek van de Inhoud toegang te hebben om activa DAM als gehechtheid op te nemen.
 
    >[!NOTE]
    >
@@ -110,15 +110,15 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 Tijdens het bewerken van een tekstfragment in de gebruikersinterface van de agent verandert de werkbalk afhankelijk van het type bewerkingen dat u wilt uitvoeren: Lettertype, Alinea of Lijst:
 
-![typeofformating, werkbalk](assets/typeofformattingtoolbar.png) ![Font, werkbalk](do-not-localize/fonttoolbar.png)
+![ typeofformingtoolbar ](assets/typeofformattingtoolbar.png) ![ de toolbar van de Doopvont ](do-not-localize/fonttoolbar.png)
 
 Font, werkbalk
 
-![Alinea, werkbalk](do-not-localize/paragraphtoolbar.png)
+![ de toolbar van de Paragraaf ](do-not-localize/paragraphtoolbar.png)
 
 Alinea, werkbalk
 
-![Lijst, werkbalk](do-not-localize/listtoolbar.png)
+![ de toolbar van de Lijst ](do-not-localize/listtoolbar.png)
 
 Lijst, werkbalk
 
@@ -126,20 +126,20 @@ Lijst, werkbalk
 
 Als u\gedeelten van tekst in een bewerkbaar fragment wilt benadrukken, selecteert u de tekst en selecteert u Markeringskleur.
 
-![highlighttextagentui](assets/highlighttextagentui.png)
+![ highlightTextagentui ](assets/highlighttextagentui.png)
 
 ### Opgemaakte tekst plakken {#pasteformattedtext}
 
-![pasttext](assets/pastedtext.png)
+![ geplakte tekst ](assets/pastedtext.png)
 
 ### Speciale tekens in tekst invoegen {#specialcharacters}
 
-De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters gebouwd. De beheerder kan [Voeg ondersteuning voor meer/aangepaste speciale tekens toe door deze aan te passen](/help/forms/using/custom-special-characters.md).
+De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters gebouwd. Admin kan [ steun voor meer/douane speciale karakters door aanpassing ](/help/forms/using/custom-special-characters.md) toevoegen.
 
 #### Oplevering van bijlage {#attachmentdelivery}
 
 * Wanneer de Interactieve Communicatie gebruikend server-kant APIs als interactieve of niet-interactieve PDF wordt teruggegeven, bevat de teruggegeven PDF gehechtheid als PDF gehechtheid.
-* Wanneer een postproces verbonden aan een Interactieve Communicatie als deel van Submit gebruikend Agent UI wordt geladen, worden de gehechtheid overgegaan als Lijst&lt;com.adobe.idp.document> inAttachmentDocs, parameter.
+* Wanneer een postproces verbonden aan een Interactieve Mededeling als deel van wordt geladen Submit gebruikend de UI van de Agent, worden de gehechtheid overgegaan als parameter List&lt;com.adobe.idp.Document> in AttachmentDocs.
 * Workflows in het leveringsmechanisme, zoals e-mail en afdrukken, leveren ook bijlagen samen met de PDF-versie van de interactieve communicatie.
 
 ## Handelingen en informatie beschikbaar in de gebruikersinterface van de Agent {#actionsagentui}
@@ -148,22 +148,22 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 
 ![ ](do-not-localize/contentoptionsdocfragments.png)
 
-* **Pijlen omhoog en omlaag**: Pijlt om documentfragmenten omhoog of omlaag te verplaatsen in de interactieve communicatie.
-* **Verwijderen**: Verwijder het documentfragment uit de interactieve communicatie, indien toegestaan.
-* **Pagina-einde voor** (van toepassing op onderliggende fragmenten van het doelgebied): voegt pagina-einde in vóór het documentfragment.
-* **Inspringen**: De inspringing van een documentfragment vergroten of verkleinen.
-* **Pagina-einde na** (van toepassing op onderliggende fragmenten van het doelgebied): voegt pagina-einde in na het documentfragment.
+* **omhoog/onderaan pijlen**: Pijlen om documentfragmenten omhoog of omlaag in de Interactieve Mededeling te bewegen.
+* **Schrapping**: Indien toegestaan, schrap het documentfragment van de Interactieve Mededeling.
+* **de Onderbreking van de Pagina vóór** (van toepassing op kindfragmenten van doelgebied): Voegt pagina onderbreking vóór het documentfragment in.
+* **Inspringen**: Verhoog of verklein paragraaf van een documentfragment.
+* **de Onderbreking van de Pagina na** (van toepassing op kindfragmenten van doelgebied): voegt pagina onderbreking na het documentfragment in.
 
-![docfragoptions](assets/docfragoptions.png)
+![ docfragoptions ](assets/docfragoptions.png)
 
-* Bewerken (alleen tekstfragmenten): RTF-editor openen voor het bewerken van het tekstdocumentfragment. Zie voor meer informatie [Tekst opmaken](#formattingtext).
+* Bewerken (alleen tekstfragmenten): RTF-editor openen voor het bewerken van het tekstdocumentfragment. Voor meer informatie, zie [ Formatterende tekst ](#formattingtext).
 
 * Selectie (oogpictogram): hiermee wordt het\ndocumentfragment uitgesloten van de interactieve communicatie.
 * Niet-gevulde waarden (info): geeft het aantal niet-gevulde variabelen in het documentfragment aan.
 
 ### Documentfragmenten weergeven {#list-document-fragments}
 
-![listopties](assets/listoptions.png)
+![ listoptions ](assets/listoptions.png)
 
 * Lege regel invoegen: voegt nieuwe lege regel in.
 * Selectie (oogpictogram): hiermee wordt het\ndocumentfragment uitgesloten van de interactieve communicatie.
@@ -180,25 +180,25 @@ Adobe raadt u aan deze instructies op volgorde uit te voeren om een interactieve
 
 De functie Opslaan als concept is niet standaard ingeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Implementeer de [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Service Provider Interface (SPI).
+1. Voer [ ccrDocumentInstance ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Interface van de Dienstverlener uit (SPI).
 
    SPI laat u toe om de ontwerp versie van de Interactieve Mededeling aan het gegevensbestand met een ontwerpidentiteitskaart als uniek herkenningsteken te bewaren. Deze instructies veronderstellen dat u vroegere kennis op hoe te om een bundel te bouwen OSGi gebruikend een Geweven project hebt.
 
-   Voor voorbeeld-SPI-implementatie raadpleegt u [Voorbeeld crDocumentInstance SPI-implementatie](#sample-ccrDocumentInstance-spi).
-1. Openen `http://<hostname>:<port>/ system/console/bundles` en selecteert u **[!UICONTROL Install/Update]** om de OSGi-bundel te uploaden. Controleer of de status van het geüploade pakket wordt weergegeven als **Actief**. Start de server opnieuw als de status van het pakket niet wordt weergegeven zoals **Actief**.
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr`.
-1. Selecteren **[!UICONTROL Create Correspondence Configuration]**.
-1. Selecteren **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** en selecteert u **[!UICONTROL Save]**.
+   Voor de implementatie van steekproefSPI, zie [ de implementatie van crDocumentInstance SPI van de Steekproef crDocumentInstance ](#sample-ccrDocumentInstance-spi).
+1. Open `http://<hostname>:<port>/ system/console/bundles` en selecteer **[!UICONTROL Install/Update]** om de OSGi-bundel te uploaden. Verifieer dat het statuut van het geuploade pakket als **Actieve** toont. Begin de server opnieuw als het statuut van het pakket niet als **Actieve** toont.
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr` .
+1. Selecteer **[!UICONTROL Create Correspondence Configuration]** .
+1. Selecteer **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** en selecteer **[!UICONTROL Save]** .
 
 ### Een interactieve communicatie opslaan als concept {#save-as-draft-agent-ui}
 
 Voer de volgende stappen uit om een Interactieve Mededeling als ontwerp te bewaren:
 
-1. Selecteer een interactieve communicatie in Forms Manager en selecteer **[!UICONTROL Open Agent UI]**.
+1. Selecteer een interactieve communicatie in Forms Manager en selecteer **[!UICONTROL Open Agent UI]** .
 
-1. Breng aangewezen veranderingen in de Agent UI aan en selecteer **[!UICONTROL Save as Draft]**.
+1. Breng de gewenste wijzigingen aan in de gebruikersinterface van de agent en selecteer **[!UICONTROL Save as Draft]** .
 
-1. Geef de naam van het concept op in het dialoogvenster **[!UICONTROL Name]** veld en selecteer **[!UICONTROL Done]**.
+1. Geef de naam van het concept op in het veld **[!UICONTROL Name]** en selecteer **[!UICONTROL Done]** .
 
 Als u de interactieve communicatie eenmaal als concept hebt opgeslagen, selecteert u **[!UICONTROL Save Changes]** om eventuele verdere wijzigingen in het concept op te slaan.
 
@@ -208,11 +208,11 @@ Nadat u een interactieve communicatie als concept hebt opgeslagen, kunt u deze o
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
-[opgesteld] Verwijst naar unieke herkenningsteken voor de ontwerp versie die na het bewaren van een Interactieve Mededeling als ontwerp wordt geproduceerd.
+[ ontleed ] verwijst naar het unieke herkenningsteken voor de ontwerp versie die na het bewaren van een Interactieve Mededeling als ontwerp wordt geproduceerd.
 
 ### Voorbeeld crDocumentInstance SPI-implementatie {#sample-ccrDocumentInstance-spi}
 
-Implementeer de `ccrDocumentInstance` SPI om een Interactieve Mededeling als ontwerp te bewaren. Hier volgt een voorbeeldimplementatie van de `ccrDocumentInstance` SPI.
+Implementeer de SPI van `ccrDocumentInstance` om een Interactieve Mededeling als ontwerp te bewaren. Hier volgt een voorbeeldimplementatie van de SPI `ccrDocumentInstance` .
 
 ```javascript
 package Implementation;
@@ -312,9 +312,9 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 }
 ```
 
-De `save`, `update`, `get`, en `getAll` De verrichtingen roepen de gegevensbestanddienst om een Interactieve Mededeling als ontwerp te bewaren, een Interactieve Mededeling bij te werken, gegevens van het gegevensbestand terug te winnen, en gegevens voor alle Interactieve Mededelingen terug te winnen beschikbaar in het gegevensbestand. Dit voorbeeld gebruikt `mySQLDataBaseServiceCRUD` als de naam van de databaseservice.
+De bewerkingen `save`, `update`, `get` en `getAll` roepen de databaseservice op om een interactieve communicatie als concept op te slaan, een interactieve communicatie bij te werken, gegevens uit de database op te halen en gegevens op te halen voor alle interactieve communicatie die beschikbaar is in de database. In dit voorbeeld wordt `mySQLDataBaseServiceCRUD` gebruikt als de naam van de databaseservice.
 
-In de volgende tabel wordt het voorbeeld uitgelegd `ccrDocumentInstance` SPI-implementatie. Het toont aan hoe `save`, `update`, `get`, en `getAll` De verrichtingen roepen de gegevensbestanddienst in de steekproefimplementatie.
+In de volgende tabel wordt de voorbeeldimplementatie van de `ccrDocumentInstance` SPI uitgelegd. Hierin wordt getoond hoe de `save` -, `update` -, `get` - en `getAll` -bewerkingen de databaseservice oproepen in de voorbeeldimplementatie.
 
 <table> 
  <tbody>
@@ -341,7 +341,7 @@ In de volgende tabel wordt het voorbeeld uitgelegd `ccrDocumentInstance` SPI-imp
   </tbody>
 </table>
 
-Hieronder ziet u een voorbeeld van de `pom.xml` bestand dat deel uitmaakt van de implementatie:
+Hieronder ziet u een voorbeeld van het bestand `pom.xml` dat deel uitmaakt van de implementatie:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -438,4 +438,4 @@ Hieronder ziet u een voorbeeld van de `pom.xml` bestand dat deel uitmaakt van de
 
 >[!NOTE]
 >
->Zorg ervoor dat u de `aemfd-client-sdk` afhankelijkheid van 6,0,160 in de `pom.xml` bestand.
+>Zorg ervoor dat u de `aemfd-client-sdk` afhankelijkheid in het `pom.xml` -bestand bijwerkt naar 6.0.160.

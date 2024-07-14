@@ -28,40 +28,40 @@ Hoewel het een verticale handelsversie illustreert, kan de manier waarop de site
 
 ## Functies {#features}
 
-Als AEM standaardimplementatie van verwijzingen, toont Wij.Retail enkele van de krachtigste eigenschappen van AEM.
+Als AEM standaard verwijzingsimplementatie, toont Wij.Retail enkele van de krachtigste eigenschappen van AEM.
 
-| **Functie** | **Beschrijving** | **Geïnteresseerd?** |
+| **Eigenschap** | **Beschrijving** | **Geïnteresseerd?** |
 |---|---|---|
-| [Globale sitestructuur](/help/sites-administering/tc-bp.md) | Wij.Retail omvat taalstramienen die live naar landspecifieke sites worden gekopieerd. | [Probeer het!](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [Responsieve indeling](/help/sites-authoring/responsive-layout.md) | Alle pagina&#39;s hebben een responsieve indeling die dynamisch kan worden aangepast aan de grootte van het scherm en het apparaat. | [Probeer het!](/help/sites-developing/we-retail-responsive-layout.md) |
-| [Bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md) | Alle pagina&#39;s zijn gebaseerd op bewerkbare sjablonen, waarmee niet-ontwikkelaars de sjablonen kunnen aanpassen en aanpassen. | [Probeer het!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Sjabloontaal](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | Alle componenten zijn gebaseerd op HTML |  |
-| [eCommerce-mogelijkheden](/help/commerce/cif-classic/developing/ecommerce.md) | Functies van een productcatalogus |  |
-| [Communitysites](/help/communities/overview.md) | Bezoekers toestaan deel te nemen aan discussies binnen gemeenschappen, blogs lezen en nog veel meer |  |
-| [Kernonderdelen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | Alle componenten zijn gebaseerd op de nieuwe kerncomponenten en zijn bruikbaarder en gebruiker-configureerbaar uit-van-de-doos | [Probeer het!](/help/sites-developing/we-retail-core-components.md) |
-| [Contentfragmenten](/help/assets/content-fragments/content-fragments.md) | In de sectie We.Retail-ervaringen wordt de kracht getoond om inhoud opnieuw te gebruiken als inhoudsfragmenten. | [Probeer ze!](/help/sites-developing/we-retail-content-fragments.md) |
-| [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md) | Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. | [Probeer ze!](/help/sites-developing/we-retail-experience-fragments.md) |
+| [ Globalized plaatsstructuur ](/help/sites-administering/tc-bp.md) | Wij.Retail omvat taalstramienen die live naar landspecifieke sites worden gekopieerd. | [ probeer het!](/help/sites-developing/we-retail-globalized-site-structure.md) |
+| [ Responsieve lay-out ](/help/sites-authoring/responsive-layout.md) | Alle pagina&#39;s hebben een responsieve indeling die dynamisch kan worden aangepast aan de grootte van het scherm en het apparaat. | [ probeer het!](/help/sites-developing/we-retail-responsive-layout.md) |
+| [ Bewerkbare malplaatjes ](/help/sites-developing/page-templates-editable.md) | Alle pagina&#39;s zijn gebaseerd op bewerkbare sjablonen, waarmee niet-ontwikkelaars de sjablonen kunnen aanpassen en aanpassen. | [ probeer het!](/help/sites-developing/we-retail-editable-templates.md) |
+| [ Taal van het Malplaatje van HTML ](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | Alle componenten zijn gebaseerd op HTML |  |
+| [ eCommerce mogelijkheden ](/help/commerce/cif-classic/developing/ecommerce.md) | Functies van een productcatalogus |  |
+| [ de plaatsen van Gemeenschappen ](/help/communities/overview.md) | Bezoekers toestaan deel te nemen aan discussies binnen gemeenschappen, blogs lezen en nog veel meer |  |
+| [ Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | Alle componenten zijn gebaseerd op de nieuwe kerncomponenten en zijn bruikbaarder en gebruiker-configureerbaar uit-van-de-doos | [ probeer het!](/help/sites-developing/we-retail-core-components.md) |
+| [Contentfragmenten](/help/assets/content-fragments/content-fragments.md) | In de sectie We.Retail-ervaringen wordt de kracht getoond om inhoud opnieuw te gebruiken als inhoudsfragmenten. | [ probeer hen!](/help/sites-developing/we-retail-content-fragments.md) |
+| [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md) | Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. | [ probeer hen!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Aan de slag {#getting-started}
 
-Wij.Detailhandel wordt geleverd als AEM voorbeeldinhoud. Eenvoudig te gebruiken [AEM beginnen zoals u normaal zou doen](/help/sites-deploying/deploy.md#getting-started), zorgt u ervoor dat de voorbeeldinhoud niet wordt uitgeschakeld.
+Wij.Detailhandel wordt geleverd als AEM inhoud van het monster. Om te gebruiken, eenvoudig [ begin AEM aangezien u normaal ](/help/sites-deploying/deploy.md#getting-started) zou zijn, ervoor zorgen dat de steekproefinhoud niet gehandicapt is.
 
 >[!CAUTION]
 >
->Installeer We.Retail niet op productieexemplaren. De productie-instanties moeten worden gestart in `nosamplecontent` [uitvoeringsmodus](/help/sites-deploying/configure-runmodes.md).
+>Installeer We.Retail niet op productieexemplaren. De instanties van de productie zouden op `nosamplecontent` [ looppaswijze ](/help/sites-deploying/configure-runmodes.md) moeten zijn begonnen.
 
 >[!CAUTION]
 >
->Wij.Retail is gebaseerd op de nieuwste AEM technologie en ondersteunt daarom niet [klassiek schrijven van gebruikersinterface](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
+>Wij.Retail is gebaseerd op de recentste AEM technologie en steunt daarom niet [ klassieke UI authoring ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Laatste versie {#latest-version}
 
-Hoewel wij.Retail met de AEM release wordt gedistribueerd, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk [download de recentste versie van GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) en vervolgens [uploaden](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) en [installeren](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw AEM instantie.
+Hoewel wij.Retail met de AEM release wordt gedistribueerd, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk om [ de recentste versie van GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) te downloaden en dan [ ](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) te uploaden en [ te installeren ](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw AEM instantie.
 
 ### Eerste stappen {#first-steps}
 
-1. Nadat AEM is gestart (en/of We.Retail is geïnstalleerd), wordt de site **Wij.Detailhandel** is beschikbaar in [Sites-console](/help/sites-authoring/basic-handling.md#global-navigation).
-1. De volgende pagina kan bijvoorbeeld worden geopend en moet er zo uitzien als in het dialoogvenster [aanhangsel](#appendix) hieronder:
+1. Zodra AEM is begonnen (en/of Wij.Retail is geïnstalleerd), is de plaats **Wij.Retail** beschikbaar in de [ console van Plaatsen ](/help/sites-authoring/basic-handling.md#global-navigation).
+1. Bijvoorbeeld, kan de volgende pagina worden geopend en het zou moeten kijken zoals getoond in [ bijlage ](#appendix) hieronder:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
@@ -75,10 +75,10 @@ Wij.Detailhandel is technisch robuuster en maakt gebruik van de nieuwste AEM tec
 
 De volgende lijst geeft een overzicht van de belangrijkste eigenschappen die in Wij.Retail in vergelijking met Geometrixx beschikbaar zijn.
 
-* **Beschikbaar** Dit betekent dat voorbeelden van deze functie worden gevonden in de voorbeeldinhoud.
-* **Niet beschikbaar** Dit betekent dat voorbeelden van deze functie niet beschikbaar zijn in de inhoud van het voorbeeld, maar dat dit niet het geval is.
+* **Beschikbaar** betekent dat de voorbeelden van de eigenschap in de steekproefinhoud worden gevonden.
+* **niet beschikbaar** betekent dat de voorbeelden van de eigenschap niet beschikbaar in de steekproefinhoud zijn, maar betekent niet dat de eigenschap zelf niet is.
 
-| **Functie** | **Wij.Detailhandel** | **Geometrixx** |
+| **Eigenschap** | **Wij.Retail** | **Geometrixx** |
 |---|---|---|
 | Globale sitestructuur | Taalmasters worden live gekopieerd naar landspecifieke sites | Niet beschikbaar |
 | Inhoudsfragmenten | Beschikbaar | Niet beschikbaar |
@@ -87,7 +87,7 @@ De volgende lijst geeft een overzicht van de belangrijkste eigenschappen die in 
 | Bewerkbare sjablonen | Voor alle pagina&#39;s | Niet beschikbaar |
 | HTL | Alle componenten | Beperkt |
 | Targeting | Voor alle pagina&#39;s | Alleen Geometrixx Outdoors |
-| Schermen | Beschikbaar | Niet beschikbaar |
+| Screens | Beschikbaar | Niet beschikbaar |
 | Mobiel | Niet beschikbaar | Beschikbaar |
 | Manuscripts | Niet beschikbaar | Beschikbaar |
 | Carousel-viewer, -downloads en -diagramonderdelen | Niet beschikbaar | Beschikbaar |
@@ -107,17 +107,17 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden.
 
-* [Open aem-steekproef-wij-kleinhandelsproject op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Het project downloaden als [een ZIP-bestand](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
+* [ open a-sample-wij-kleinhandelsproject op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* Download het project als [ een dossier van het PIT ](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
-De nieuwste release kan ook [rechtstreeks gedownload](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) als een installeerbaar pakket.
+De recentste versie kan ook [ direct ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) als installable pakket worden gedownload.
 
-Als u problemen ondervindt, kunt u een [GitHub-probleem](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Als u problemen ontmoet, dossier a [ GitHub kwestie ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
-Voel vrij om te vorken of om mee bij te dragen [verzoeken om terugtrekking](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
+Voel vrij om met [ trekkingsverzoeken ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls) bij te dragen.
 
 ## Voorvertoning {#preview}
 
 Voorbeeld van de welkomstpagina Web.Retail:
 
-![screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
+![ screencapture-localhost-4502-editor-html-content-we-retail-us-nl-html-2018-08-17-14_33_32 ](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)

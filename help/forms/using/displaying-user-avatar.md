@@ -24,7 +24,7 @@ Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste 
 >
 >De ondersteunde hoogte-breedteverhouding van de gebruikersafbeeldingen is 1:1.
 
-1. Maak een DSC met de details die in de volgende stap worden vermeld. Zie het onderwerp &#39;Componenten ontwikkelen voor AEM Forms&#39; in voor meer informatie [Programmeren met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) hulplijn.
+1. Maak een DSC met de details die in de volgende stap worden vermeld. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor AEM Forms&quot;onderwerp in [ Programmerend met AEM Forms ](https://www.adobe.com/go/learn_aemforms_programming_63) gids.
 1. Definieer in de DSC een nieuwe SPI die de methoden getCurrentUserImageUrl en getUserImageUrl beschikbaar maakt voor het ophalen van een afbeeldings-URL voor een AEM Forms-gebruiker. Hier volgt een voorbeeld van een Java™-codefragment:
 
    ```java
@@ -82,5 +82,5 @@ Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste 
    </component>
    ```
 
-1. Implementeer DSC via Workbench. Opnieuw starten `ProcessManagementClientSessionService` service.
+1. Implementeer DSC via Workbench. Start de service `ProcessManagementClientSessionService` opnieuw.
 1. Mogelijk moet u de browser vernieuwen of u opnieuw afmelden/aanmelden bij de gebruiker.

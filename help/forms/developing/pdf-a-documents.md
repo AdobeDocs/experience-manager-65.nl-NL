@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # Werken met PDF/A-documenten {#working-with-pdf-a-documents}
 
-**Informatie over de DocConverter-service**
+**Ongeveer de Dienst DocConverter**
 
 De DocConverter-service kan PDF-documenten omzetten in PDA/A-documenten. U kunt deze taken uitvoeren met deze service:
 
-* PDF-documenten converteren naar PDF/A-documenten. (Zie [Documenten converteren naar PDF/A-documenten](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
-* Bepaal of PDF-documenten PDF/A-documenten zijn. (Zie [Programmaticaal bepalen van PDF/A-compatibiliteit](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+* PDF-documenten converteren naar PDF/A-documenten. (Zie [ Omzettend Documenten in Documenten PDF/A ](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+* Bepaal of PDF-documenten PDF/A-documenten zijn. (Zie [ programmatically het bepalen van PDF/A Complichtigheid ](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst DocConverter, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Documenten converteren naar PDF/A-documenten {#converting-documents-to-pdf-a-documents}
 
@@ -39,7 +39,7 @@ Hoewel PDF/A de standaard is voor het archiveren van PDF-documenten, is het niet
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst DocConverter, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -52,7 +52,7 @@ Voer de volgende stappen uit om een PDF-document om te zetten in een PDF/A-docum
 1. Converteer het document.
 1. Sla het PDF/A-document op.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, moet u de proxybestanden opnemen.
 
@@ -64,29 +64,29 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de locatie van deze JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Een DocConvert-client maken**
+**creeer een cliënt DocConvert**
 
-Voordat u een DocConverter-bewerking programmatisch kunt uitvoeren, moet u een DocConverter-client maken. Als u de Java API gebruikt, maakt u een `DocConverterServiceClient` object. Als u de DocConverter-webservice-API gebruikt, maakt u een `DocConverterServiceService` object.
+Voordat u een DocConverter-bewerking programmatisch kunt uitvoeren, moet u een DocConverter-client maken. Maak een `DocConverterServiceClient` -object als u de Java API gebruikt. Maak een `DocConverterServiceService` -object als u de DocConverter-webservice-API gebruikt.
 
-**Verwijzen naar een PDF-document dat moet worden omgezet in een PDF/A-document**
+**Verwijzing een document van PDF om in een document van PDF te zetten/A**
 
 Hiermee wordt een PDF-document opgehaald dat naar een PDF/A-document moet worden geconverteerd. Als u probeert een PDF-document, zoals een Acrobat-formulier, om te zetten in een PDF/A-document, veroorzaakt u een uitzondering.
 
-**Trackinggegevens instellen**
+**plaats het volgen informatie**
 
 U kunt een runtime optie instellen die bepaalt hoeveel informatie tijdens het conversieproces wordt bijgehouden. Namelijk kunt u negen verschillende niveaus plaatsen die hoeveel informatie specificeren de dienst DocConverter volgt wanneer het een document van de PDF in een document PDF/A omzet.
 
-**Het document converteren**
+**zet het document** om
 
 Nadat u de DocConverter dienstcliënt creeert, verwijs het document van de PDF om te zetten en de runtime optie te plaatsen die specificeert hoeveel informatie wordt gevolgd, kunt u het document van de PDF in een PDF/A- document omzetten.
 
-**Het PDF/A-document opslaan**
+**sparen het PDF/A- document**
 
 U kunt het PDF/A-document opslaan als een PDF-bestand.
 
-**Zie ook**
+**zie ook**
 
 [Documenten converteren naar PDF/A-documenten met de Java API](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-java-api)
 
@@ -108,35 +108,35 @@ Een PDF-document converteren naar een PDF/A-document met de Java API:
 
 1. Een DocConvert-client maken
 
-   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `DocConverterServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat.
+   * Maak een `DocConverterServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
 1. Verwijzen naar een PDF-document dat moet worden omgezet in een PDF/A-document
 
-   * Een `java.io.FileInputStream` object dat staat voor het PDF-document dat moet worden geconverteerd met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het PDF-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
+   * Maak een `java.io.FileInputStream` -object dat het te converteren PDF-document vertegenwoordigt met behulp van de constructor en geef een tekenreekswaarde door die de locatie van het PDF-bestand aangeeft.
+   * Maak een `com.adobe.idp.Document` -object door de constructor ervan te gebruiken en het `java.io.FileInputStream` -object door te geven.
 
 1. Trackinggegevens instellen
 
-   * Een `PDFAConversionOptionSpec` object met behulp van de constructor.
-   * Stel het niveau voor het bijhouden van gegevens in door het `PDFAConversionOptionSpec` object `setLogLevel` methode en het overgaan van een koordwaarde die het volgende niveau specificeert. Geef bijvoorbeeld de waarde door `FINE`. Voor informatie over de verschillende waarden raadpleegt u de `setLogLevel` in de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Maak een `PDFAConversionOptionSpec` -object met behulp van de constructor.
+   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAConversionOptionSpec` -object `setLogLevel` aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. Geef bijvoorbeeld de waarde `FINE` door. Voor informatie over de verschillende waarden, zie de `setLogLevel` methode in de [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Het document converteren
 
-   Zet het PDF-document om in een PDF/A-document door het `DocConverterServiceClient` object `toPDFA` en geeft de volgende waarden door:
+   Zet het PDF-document om in een PDF/A-document door de methode `toPDFA` van het object `DocConverterServiceClient` aan te roepen en de volgende waarden door te geven:
 
-   * De `com.adobe.idp.Document` object dat het te converteren PDF-document bevat
-   * De `PDFAConversionOptionSpec` object dat trackinggegevens opgeeft
+   * Het `com.adobe.idp.Document` -object dat het om te zetten PDF-document bevat
+   * Het `PDFAConversionOptionSpec` -object dat trackinginformatie opgeeft
 
-   De `toPDFA` methode retourneert een `PDFAConversionResult` object dat het PDF/A-document bevat.
+   De methode `toPDFA` retourneert een `PDFAConversionResult` -object dat het PDF/A-document bevat.
 
 1. Het PDF/A-document opslaan
 
-   * Haal het PDF/A-document op door het `PDFAConversionResult` object `getPDFA` methode. Deze methode retourneert een `com.adobe.idp.Document` object dat staat voor het PDF/A-document.
-   * Een `java.io.File` object dat het PDF/A-bestand vertegenwoordigt. Controleer of de bestandsnaamextensie .pdf is.
-   * Het bestand vullen met PDF/A-gegevens door het `com.adobe.idp.Document` object `copyToFile` en het doorgeven van de `java.io.File` object.
+   * Haal het PDF/A-document op door de methode `getPDFA` van het object `PDFAConversionResult` aan te roepen. Deze methode retourneert een `com.adobe.idp.Document` -object dat het PDF/A-document vertegenwoordigt.
+   * Maak een `java.io.File` -object dat het PDF/A-bestand vertegenwoordigt. Controleer of de bestandsnaamextensie .pdf is.
+   * Vul het bestand met PDF/A-gegevens door de methode `copyToFile` van het object `com.adobe.idp.Document` aan te roepen en het object `java.io.File` door te geven.
 
-**Zie ook**
+**zie ook**
 
 [Werken met PDF/A-documenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
@@ -157,40 +157,40 @@ Een PDF-document converteren naar een PDF/A-document met de DocConverter-API (we
 
 1. Een DocConvert-client maken
 
-   * Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `DocConverterServiceService` object door de standaardconstructor aan te roepen.
-   * Stel de `DocConverterServiceService` object `Credentials` lid met gegevens `System.Net.NetworkCredential` waarde die de gebruikersnaam en wachtwoordwaarde specificeert.
+   * Gebruikend de Microsoft .NET cliëntassemblage, creeer een `DocConverterServiceService` voorwerp door zijn standaardaannemer aan te halen.
+   * Stel het gegevenslid `Credentials` van het `DocConverterServiceService` -object in met een `System.Net.NetworkCredential` -waarde die de gebruikersnaam en het wachtwoord opgeeft.
 
 1. Verwijzen naar een PDF-document dat moet worden omgezet in een PDF/A-document
 
-   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het PDF-document op te slaan dat wordt geconverteerd naar een PDF/A-document.
-   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus voor het openen van het bestand in vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
-   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
-   * Vul de `BLOB` object door het toe te wijzen `binaryData` eigenschap met de inhoud van de bytearray.
+   * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt het PDF-document opgeslagen dat wordt geconverteerd naar een PDF/A-document.
+   * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `binaryData` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. Trackinggegevens instellen
 
-   * Een `PDFAConversionOptionSpec` object met behulp van de constructor.
-   * Stel het niveau voor het bijhouden van gegevens in door een waarde toe te wijzen die het niveau voor bijhouden opgeeft voor de `PDFAConversionOptionSpec` object `logLevel` lid. Wijs bijvoorbeeld de waarde toe `FINE` aan dit gegevenslid.
+   * Maak een `PDFAConversionOptionSpec` -object met behulp van de constructor.
+   * Stel het niveau voor het bijhouden van gegevens in door een waarde toe te wijzen die het niveau voor bijhouden van gegevens opgeeft voor het gegevenslid `logLevel` van het `PDFAConversionOptionSpec` -object. Wijs bijvoorbeeld de waarde `FINE` toe aan dit gegevenslid.
 
 1. Het document converteren
 
-   Zet het PDF-document om in een PDF/A-document door het `DocConverterServiceService` object `toPDFA` en geeft de volgende waarden door:
+   Zet het PDF-document om in een PDF/A-document door de methode `toPDFA` van het object `DocConverterServiceService` aan te roepen en de volgende waarden door te geven:
 
-   * De `BLOB` object dat het te converteren PDF-document bevat
-   * De `PDFAConversionOptionSpec` object dat trackinggegevens opgeeft
+   * Het `BLOB` -object dat het om te zetten PDF-document bevat
+   * Het `PDFAConversionOptionSpec` -object dat trackinginformatie opgeeft
 
-   De `toPDFA` methode retourneert een `PDFAConversionResult` object dat het PDF/A-document bevat.
+   De methode `toPDFA` retourneert een `PDFAConversionResult` -object dat het PDF/A-document bevat.
 
 1. Het PDF/A-document opslaan
 
-   * Een `BLOB` object dat het PDF/A-document opslaat door de waarde van het `PDFAConversionResult` object `PDFADocument` lid.
-   * Maak een bytearray waarin de inhoud van de `BLOB` object dat is geretourneerd met het gereedschap `PDFAConversionResult` object. Vul de bytearray met de waarde van de `BLOB` object `binaryData` lid.
-   * Een `System.IO.FileStream` door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF/A-document vertegenwoordigt.
-   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
+   * Maak een `BLOB` -object dat het PDF/A-document opslaat door de waarde van het gegevenslid van het `PDFAConversionResult` object `PDFADocument` op te halen.
+   * Maak een bytearray die de inhoud opslaat van het `BLOB` -object dat met het `PDFAConversionResult` -object is geretourneerd. Vul de bytearray met de waarde van het gegevenslid `binaryData` van het object `BLOB` .
+   * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF/A-document vertegenwoordigt.
+   * Maak een `System.IO.BinaryWriter` -object door de constructor ervan aan te roepen en het `System.IO.FileStream` -object door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
-**Zie ook**
+**zie ook**
 
 [Werken met PDF/A-documenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
@@ -200,11 +200,11 @@ Een PDF-document converteren naar een PDF/A-document met de DocConverter-API (we
 
 ## Programmaticaal bepalen van PDF/A-compatibiliteit {#programmatically-determining-pdf-a-compliancy}
 
-U kunt de dienst DocConverter gebruiken om te bepalen of een document van de PDF PDF/A-Volgzaam is. Zie voor informatie over een PDF/A-document en hoe u een PDF-document kunt omzetten in een PDF/A-document [Documenten converteren naar PDF/A-documenten](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+U kunt de dienst DocConverter gebruiken om te bepalen of een document van de PDF PDF/A-Volgzaam is. Voor informatie over een PDF/A- document en hoe te om een document van de PDF in een document van PDF/A om te zetten, zie [ Converterend Documenten in Documenten PDF/A ](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst DocConverter, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -216,7 +216,7 @@ Voer de volgende stappen uit om de PDF/A-compatibiliteit te bepalen:
 1. Stel runtime-opties in.
 1. Haal informatie op over het PDF-document.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, moet u de proxybestanden opnemen.
 
@@ -228,25 +228,25 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de locatie van deze JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Een DocConvert-client maken**
+**creeer een cliënt DocConvert**
 
-Voordat u een DocConverter-bewerking programmatisch kunt uitvoeren, moet u een DocConverter-client maken. Als u de Java API gebruikt, maakt u een `DocConverterServiceClient` object. Als u de DocConverter-webservice-API gebruikt, maakt u een `DocConverterServiceService` object.
+Voordat u een DocConverter-bewerking programmatisch kunt uitvoeren, moet u een DocConverter-client maken. Maak een `DocConverterServiceClient` -object als u de Java API gebruikt. Maak een `DocConverterServiceService` -object als u de DocConverter-webservice-API gebruikt.
 
-**Verwijzen naar een PDF-document dat wordt gebruikt om de PDF/A-compatibiliteit te bepalen**
+**Verwijzing een document van PDF dat wordt gebruikt om PDF/A compliantie** te bepalen
 
 Er moet naar een PDF-document worden verwezen en dat document moet worden doorgegeven aan de DocConverter-service om te bepalen of het PDF-document compatibel is met PDF/A.
 
-**Uitvoeringsopties instellen**
+**vastgestelde runtime opties**
 
 U kunt een runtime optie instellen die bepaalt hoeveel informatie tijdens het conversieproces wordt bijgehouden. Dat wil zeggen, u kunt negen verschillende niveaus instellen die aangeven hoeveel informatie de DocConverter-service bijhoudt wanneer een PDF-document wordt geconverteerd naar een PDF/A-document.
 
-**Informatie ophalen over het PDF-document**
+**wint informatie over het document van PDF** terug
 
 Nadat u de DocConverter dienstcliënt creeert, van verwijzingen het document van de PDF, en de runtime opties plaatst, kunt u bepalen of het document van de PDF een PDF/A-Volgzaam document is.
 
-**Zie ook**
+**zie ook**
 
 [PDF/A-compatibiliteit bepalen met de Java API](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
 
@@ -266,30 +266,30 @@ Bepaal de PDF/A-compatibiliteit met de Java API:
 
 1. Een DocConvert-client maken
 
-   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `DocConverterServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat.
+   * Maak een `DocConverterServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
 1. Verwijzen naar een PDF-document dat wordt gebruikt om de PDF/A-compatibiliteit te bepalen
 
-   * Een `java.io.FileInputStream` object dat staat voor het PDF-document dat moet worden geconverteerd met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het PDF-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
+   * Maak een `java.io.FileInputStream` -object dat het te converteren PDF-document vertegenwoordigt met behulp van de constructor en geef een tekenreekswaarde door die de locatie van het PDF-bestand aangeeft.
+   * Maak een `com.adobe.idp.Document` -object door de constructor ervan te gebruiken en het `java.io.FileInputStream` -object door te geven.
 
 1. Uitvoeringsopties instellen
 
-   * Een `PDFAValidationOptionSpec` object met behulp van de constructor.
-   * Stel het compatibiliteitsniveau in door de `PDFAValidationOptionSpec` object `setCompliance` methode en doorgeven `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
-   * Stel het niveau voor het bijhouden van gegevens in door het `PDFAValidationOptionSpec` object `setLogLevel` methode en het overgaan van een koordwaarde die het volgende niveau specificeert. Geef bijvoorbeeld de waarde door `FINE`. Voor informatie over de verschillende waarden raadpleegt u de `setLogLevel` in de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Maak een `PDFAValidationOptionSpec` -object met behulp van de constructor.
+   * Stel het compatibiliteitsniveau in door de methode `setCompliance` van het object `PDFAValidationOptionSpec` aan te roepen en door te geven `PDFAValidationOptionSpec.Compliance.PDFA_1B` .
+   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAValidationOptionSpec` -object `setLogLevel` aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. Geef bijvoorbeeld de waarde `FINE` door. Voor informatie over de verschillende waarden, zie de `setLogLevel` methode in de [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Informatie ophalen over het PDF-document
 
-   Bepaal PDF/A-conformiteit door de `DocConverterServiceClient` object `isPDFA` en geeft de volgende waarden door:
+   Bepaal de compatibiliteit PDF/A door de methode `isPDFA` van het object `DocConverterServiceClient` aan te roepen en de volgende waarden door te geven:
 
-   * De `com.adobe.idp.Document` object dat het PDF-document bevat.
-   * De `PDFAValidationOptionSpec` -object dat uitvoeringsopties opgeeft.
+   * Het `com.adobe.idp.Document` -object dat het PDF-document bevat.
+   * Het `PDFAValidationOptionSpec` -object dat uitvoeringsopties opgeeft.
 
-   De `isPDFA` methode retourneert een `PDFAValidationResult` object dat de resultaten van deze bewerking bevat.
+   De methode `isPDFA` retourneert een `PDFAValidationResult` -object dat de resultaten van deze bewerking bevat.
 
-**Zie ook**
+**zie ook**
 
 [Werken met PDF/A-documenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
@@ -310,33 +310,33 @@ Bepaal PDF/A-compatibiliteit met de webservice-API:
 
 1. Een DocConvert-client maken
 
-   * Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `DocConverterServiceService` object door de standaardconstructor aan te roepen.
-   * Stel de `DocConverterServiceService` object `Credentials` lid met gegevens `System.Net.NetworkCredential` waarde die de gebruikersnaam en wachtwoordwaarde specificeert.
+   * Gebruikend de Microsoft .NET cliëntassemblage, creeer een `DocConverterServiceService` voorwerp door zijn standaardaannemer aan te halen.
+   * Stel het gegevenslid `Credentials` van het `DocConverterServiceService` -object in met een `System.Net.NetworkCredential` -waarde die de gebruikersnaam en het wachtwoord opgeeft.
 
 1. Verwijzen naar een PDF-document dat wordt gebruikt om de PDF/A-compatibiliteit te bepalen
 
-   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het PDF-document op te slaan dat wordt geconverteerd naar een PDF/A-document.
-   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus voor het openen van het bestand in vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
-   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
-   * Vul de `BLOB` object door het toe te wijzen `binaryData` eigenschap met de inhoud van de bytearray.
+   * Maak een `BLOB` -object met behulp van de constructor. Met het `BLOB` -object wordt het PDF-document opgeslagen dat wordt geconverteerd naar een PDF/A-document.
+   * Maak een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `Length` van het object `System.IO.FileStream` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `binaryData` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. Uitvoeringsopties instellen
 
-   * Een `PDFAValidationOptionSpec` object met behulp van de constructor.
-   * Stel het compatibiliteitsniveau in door de `PDFAValidationOptionSpec` object `compliance` gegevenslid met de waarde `PDFAConversionOptionSpec_Compliance.PDFA_1B`.
-   * Stel het niveau voor het bijhouden van de gegevens in door het `PDFAValidationOptionSpec` object `resultLevel` gegevenslid met de waarde `PDFAValidationOptionSpec_ResultLevel.DETAILED`.
+   * Maak een `PDFAValidationOptionSpec` -object met behulp van de constructor.
+   * Stel het compatibiliteitsniveau in door het gegevenslid `compliance` van het `PDFAValidationOptionSpec` -object toe te wijzen aan de waarde `PDFAConversionOptionSpec_Compliance.PDFA_1B` .
+   * Stel het niveau voor het bijhouden van gegevens in door het gegevenslid `resultLevel` van het `PDFAValidationOptionSpec` -object aan de waarde `PDFAValidationOptionSpec_ResultLevel.DETAILED` toe te wijzen.
 
 1. Informatie ophalen over het PDF-document
 
-   Bepaal PDF/A-conformiteit door de `DocConverterServiceService` object `isPDFA` en geeft de volgende waarden door:
+   Bepaal de compatibiliteit PDF/A door de methode `isPDFA` van het object `DocConverterServiceService` aan te roepen en de volgende waarden door te geven:
 
-   * De `BLOB` object dat het PDF-document bevat.
-   * De `PDFAValidationOptionSpec` object dat uitvoeringsopties bevat.
+   * Het `BLOB` -object dat het PDF-document bevat.
+   * Het `PDFAValidationOptionSpec` -object dat uitvoeringsopties bevat.
 
-   De `isPDFA` methode retourneert een `PDFAValidationResult` object dat de resultaten van deze bewerking bevat.
+   De methode `isPDFA` retourneert een `PDFAValidationResult` -object dat de resultaten van deze bewerking bevat.
 
-**Zie ook**
+**zie ook**
 
 [Werken met PDF/A-documenten](pdf-a-documents.md#working-with-pdf-a-documents)
 

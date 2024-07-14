@@ -21,19 +21,19 @@ ht-degree: 2%
 
 De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
-1. Log in bij CRXDE Lite door toegang te krijgen `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Een `sling:Folder` map met een naam `ws` om `/apps`, als deze niet bestaat. Een `sling:Folder` map, klikt u met de rechtermuisknop op de `apps` map en selecteer **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. Geef de naam op als `ws`, selecteert u tekst als `sling:Folder`en klik op **[!UICONTROL OK]**. Klik op **[!UICONTROL Save All]**.
-1. Bladeren naar `/apps/ws`en navigeer naar de **[!UICONTROL Access Control]** tab.
-1. Selecteer de **[!UICONTROL Repository]** -optie. In de **[!UICONTROL Access Control]** lijst, klik **[!UICONTROL +]** om een item toe te voegen. Klikken **[!UICONTROL +]** opnieuw.
-1. Zoek en selecteer de **PERM_WORKSPACE_USER** Opdrachtgever
+1. Meld u aan bij CRXDE Lite door `https://'[server]:[port]'/lc/crx/de/index.jsp` te openen.
+1. Maak een `sling:Folder` -map met de naam `ws` at `/apps` als deze niet bestaat. Als u een map `sling:Folder` wilt maken, klikt u met de rechtermuisknop op de map `apps` en selecteert u **[!UICONTROL Create]** > **[!UICONTROL Create Node]** . Geef de naam op als `ws` , selecteer tekst als `sling:Folder` en klik op **[!UICONTROL OK]** . Klik op **[!UICONTROL Save All]**.
+1. Blader naar `/apps/ws` en navigeer naar het tabblad **[!UICONTROL Access Control]** .
+1. Selecteer de optie **[!UICONTROL Repository]** . Klik in de lijst **[!UICONTROL Access Control]** op **[!UICONTROL +]** om een item toe te voegen. Klik nogmaals op **[!UICONTROL +]** .
+1. Onderzoek en selecteer **PERM_WORKSPACE_USER** Belangrijk.
 
-   ![Selecteer PERM_WORKSPACE_USER principal als onderdeel van de algemene stappen om de HTML Workspace aan te passen](assets/perm_workspace_user.png)
+   ![ Uitgezochte PERM_WORKSPACE_USER hoofd als deel van de generische stappen om HTML Workspace ](assets/perm_workspace_user.png) aan te passen
 
-1. Geef `jcr:read` aan de Opdrachtgever.
+1. Geef `jcr:read` bevoegdheid aan Opdrachtgever.
 1. Klik op **[!UICONTROL Save All]**.
-1. De `GET.jsp`, `index`, en `html.jsp` bestanden van de `/libs/ws` aan de `/apps/ws` map.
-1. De `/libs/ws/locales` in de `/apps/ws` map. Klik op **[!UICONTROL Save All]**.
-1. De verwijzingen en relatieve paden in het dialoogvenster `GET.jsp` bestand, zoals hieronder weergegeven, en klik op **[!UICONTROL Save all]**.
+1. Kopieer de bestanden `GET.jsp` , `index` en `html.jsp` van de map `/libs/ws` naar de map `/apps/ws` .
+1. Kopieer de map `/libs/ws/locales` in de map `/apps/ws` . Klik op **[!UICONTROL Save All]**.
+1. Werk de referenties en relatieve paden in het `GET.jsp` -bestand bij, zoals hieronder wordt weergegeven, en klik op **[!UICONTROL Save all]** .
 
    ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -41,11 +41,11 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Ga als volgt te werk voor CSS-aanpassingen:
 
-   1. Ga naar de `/apps/ws` en maak een map met de naam `css`.
+   1. Ga naar de map `/apps/ws` en maak een map met de naam `css` .
 
-   1. In de `css` map, maakt u een bestand met de naam `newStyle.css`.
+   1. Maak in de map `css` een bestand met de naam `newStyle.css` .
 
-   1. Openen `/apps/ws/html`.jsp en wijzigen van
+   1. `/apps/ws/html` .jsp openen en wijzigen vanuit
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -78,22 +78,22 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Ga als volgt te werk:
 
-   1. Een map maken met de naam `js` om `/apps/ws`. Klik op **[!UICONTROL Save All]**.
+   1. Maak een map met de naam `js` op `/apps/ws` . Klik op **[!UICONTROL Save All]**.
 
-   1. Een map maken met de naam `libs` om `/apps/ws/js`. Klik op **[!UICONTROL Save All]**.
+   1. Maak een map met de naam `libs` op `/apps/ws/js` . Klik op **[!UICONTROL Save All]**.
 
-   1. Kopiëren `/libs/ws/js/libs/jqueryui` map naar `/apps/ws/js/libs`. Klik op **[!UICONTROL Save All]**.
+   1. Kopieer `/libs/ws/js/libs/jqueryui` naar `/apps/ws/js/libs` . Klik op **[!UICONTROL Save All]**.
 
 1. Doe het volgende voor HTML aanpassingen:
 
-   1. Onder `/apps/ws/js`, maakt u een map met de naam `runtime`. Klik op **[!UICONTROL Save All]**.
+   1. Maak onder `/apps/ws/js` een map met de naam `runtime` . Klik op **[!UICONTROL Save All]**.
 
-   1. Onder `/apps/ws/js/runtime`, maakt u een map met de naam `templates`. Klik op **[!UICONTROL Save All]**.
+   1. Maak onder `/apps/ws/js/runtime` een map met de naam `templates` . Klik op **[!UICONTROL Save All]**.
 
-   1. Kopiëren `/libs/ws/js/main.js` tot `/apps/ws/js/main.js`.
+   1. Kopieer `/libs/ws/js/main.js` naar `/apps/ws/js/main.js` .
 
-   1. /libs/ws/js/registry.js kopiëren naar `/apps/ws/js/registry.js`.
+   1. Kopieer /libs/ws/js/registry.js naar `/apps/ws/js/registry.js` .
 
-1. Klikken **[!UICONTROL Save All]**, de cache wissen en de AEM Forms-werkruimte vernieuwen.
+1. Klik op **[!UICONTROL Save All]** , wis de cache en vernieuw de AEM Forms-werkruimte.
 
-   De URL openen `https://'[server]:[port]'/lc/ws` en meld u aan met de gegevens van de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://'[server]:[port]'/lc/apps/ws/index.html`.
+   Open de URL `https://'[server]:[port]'/lc/ws` en meld u aan met de beheerder-/wachtwoordreferenties. De browser wordt omgeleid naar `https://'[server]:[port]'/lc/apps/ws/index.html` .

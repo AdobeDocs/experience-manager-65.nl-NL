@@ -21,12 +21,12 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
 | AEM 6,5 | Dit artikel |
 
-U kunt [groepen maken](/help/sites-administering/user-group-ac-admin.md#group-administration) en beleid en [gebruikers](/help/sites-administering/user-group-ac-admin.md#user-administration) aan de groepen in Adobe Experience Manager (AEM). Dit beleid controleert de voorrechten van de gebruikers die deel van de groep uitmaken.
+U kunt [ groepen ](/help/sites-administering/user-group-ac-admin.md#group-administration) tot stand brengen en beleid en [ gebruikers ](/help/sites-administering/user-group-ac-admin.md#user-administration) toewijzen aan de groepen in Adobe Experience Manager (AEM). Dit beleid controleert de voorrechten van de gebruikers die deel van de groep uitmaken.
 
-Nadat u de [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring-aem-forms-osgi.md), zijn de in dit artikel vermelde groepen, zoals gebruikers van formulieren en gebruikers van formulieren, automatisch beschikbaar voor toewijzing. De volgende lijst maakt een lijst van de taken die een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
+Nadat u het [ toe:voegen-op pakket van AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md) installeert, zijn de groepen die in dit artikel, zoals vorm-gebruikers en vorm-macht-gebruiker worden vermeld, automatisch beschikbaar voor taak. De volgende lijst maakt een lijst van de taken die een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
 
 <table>
  <tbody>
@@ -35,7 +35,7 @@ Nadat u de [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring
    <td>Taken</td> 
   </tr>
   <tr>
-   <td>formulieren-gebruikers <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1] </sup></td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren maken, voorvertonen, publiceren en verzenden</li> 
@@ -65,7 +65,7 @@ Nadat u de [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring
     </ul> </td> 
   </tr>
   <tr>
-   <td>sjabloonauteurs <sup>[2]</sup></td> 
+   <td>template-auteurs <sup> [2] </sup></td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren of interactieve communicatiesjablonen maken en hiervan een voorbeeld bekijken</li> 
@@ -97,7 +97,7 @@ Nadat u de [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring
    <td>workflowgebruikers</td> 
    <td>
     <ul> 
-     <li>AEM Postvak In-toepassingen gebruiken<br /> <strong>Opmerking: </strong>U moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot de Interactieve Communicatie Agent UI in AEM Inbox toegang te hebben.</li> 
+     <li>De AEM van het gebruik Inbox toepassingen <br /> <strong> Nota: </strong> u moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot Interactieve Communicatie Agent UI in AEM Inbox toegang te hebben.</li> 
      <li>Workflowinstanties beheren</li> 
     </ul> </td> 
   </tr>

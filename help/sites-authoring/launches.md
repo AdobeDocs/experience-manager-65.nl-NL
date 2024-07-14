@@ -35,7 +35,7 @@ Launches kunnen ook:
 * Gemaakt voor meerdere hoofdvertakkingen. Hoewel u de lancering voor de volledige plaats (en de veranderingen daar) kon tot stand brengen kan dit onpraktisch zijn aangezien de volledige plaats moet worden gekopieerd. Wanneer er honderden of zelfs duizenden pagina&#39;s bij betrokken zijn, worden de systeemvereisten en de prestaties beïnvloed door zowel de kopieeractie als later de vergelijkingen die vereist zijn voor de promotietaken.
 * Genest (een lancering binnen een lancering) om u de capaciteit te geven om een lancering van een bestaande lancering tot stand te brengen zodat de auteurs van reeds aangebrachte veranderingen kunnen voordeel halen, eerder dan het moeten de zelfde veranderingen veelvoudige tijden voor elke lancering aanbrengen.
 
-In deze sectie wordt beschreven hoe u (en indien nodig) [delete](/help/sites-authoring/launches-creating.md#deleting-a-launch)) pagina&#39;s starten vanuit de Sites-console of [de Startconsole](#the-launches-console):
+Deze sectie beschrijft om te creëren, uit te geven en te bevorderen (en indien nodig [ schrapt ](/help/sites-authoring/launches-creating.md#deleting-a-launch)) lanceringspagina&#39;s van binnen de console van Plaatsen of [ de console van Lanceringen ](#the-launches-console):
 
 * [Starten maken](/help/sites-authoring/launches-creating.md)
 * [Starten bewerken](/help/sites-authoring/launches-editing.md)
@@ -54,7 +54,7 @@ Met Launches kunt u:
 
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
 
-  ![Overzicht van lanceeracties](assets/chlimage_1-111.png)
+  ![ Overzicht van lanceringsacties ](assets/chlimage_1-111.png)
 
 * De startconfiguratie bewerken:
 
@@ -65,16 +65,16 @@ Met Launches kunt u:
 
    * Handmatig:
 
-      * Bevestig uw opstartafhoud terug naar de **Doel** (bronpagina&#39;s) wanneer deze gereed is voor publicatie.
-      * Publiceer de inhoud van de bronpagina&#39;s (na het promoten van de achterpagina&#39;s).
+      * Bevestig uw lanceringsinhoud terug naar het **Doel** (bronpagina&#39;s) wanneer het klaar is om te worden gepubliceerd.
+      * Publish de inhoud van de bronpagina&#39;s (na het promoten van de achterpagina&#39;s).
       * Alle pagina&#39;s of alleen gewijzigde pagina&#39;s promoten.
 
    * Automatisch - dit omvat het volgende:
 
-      * De **Starten**(**Live**) **date** veld: deze kan worden ingesteld wanneer u een opstart maakt of bewerkt.
+      * Het **Lanceergebied** (**Levende**) **datum**: dit kan worden geplaatst wanneer het creëren van of het uitgeven van een lancering.
 
-      * De **Gereed voor productie** markering: deze kan alleen worden ingesteld tijdens het bewerken van een opstart.
-      * Als de **Gereed voor productie** markering is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina&#39;s automatisch gepubliceerd.\
+      * De **Klaar vlag van de Productie**: dit kan slechts worden geplaatst wanneer het uitgeven van een lancering.
+      * Als de **Klaar van de Productie** vlag wordt geplaatst, zal de lancering automatisch aan de productiepagina&#39;s op de gespecificeerde **Lancering** worden bevorderd (**Levende**) **datum**. Na de promotie worden de productiepagina&#39;s automatisch gepubliceerd.\
         Als er geen datum is ingesteld, heeft de markering geen effect.
 
 * Werk de bron- en startpagina&#39;s parallel bij:
@@ -82,14 +82,14 @@ Met Launches kunt u:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze worden ingesteld op basis van overerving, dat wil zeggen als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
 
-  ![Overzicht van updates](assets/chlimage_1-112.png)
+  ![ Overzicht van updates ](assets/chlimage_1-112.png)
 
-* [Een geneste start maken](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
+* [ creeer een genestelde lancering ](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
 
    * De bron is een bestaande opstart.
-   * U kunt [een geneste introductie promoten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) naar elk doel; dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
+   * U kunt [ een genestelde lancering ](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) aan om het even welk doel bevorderen; dit kan een ouderlancering of de top-level bronpagina&#39;s (Productie) zijn.
 
-  ![Overzicht van geneste lancering](assets/chlimage_1-113.png)
+  ![ Overzicht van genestelde lancering ](assets/chlimage_1-113.png)
 
   >[!CAUTION]
   >
@@ -97,7 +97,7 @@ Met Launches kunt u:
 
 >[!NOTE]
 >
->Voor het maken en bewerken van startpagina&#39;s zijn toegangsrechten vereist voor `/content/launches` - zoals bij de standaardgroep `content-authors`.
+>Voor het maken en bewerken van startpagina&#39;s zijn toegangsrechten vereist voor `/content/launches` , net als voor de standaardgroep `content-authors` .
 >
 >Neem contact op met de systeembeheerder als u problemen ondervindt.
 
@@ -112,18 +112,18 @@ Met Launches kunt u:
 
 De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u acties op die vermelde ondernemen. De console is toegankelijk via:
 
-* De **Gereedschappen** Console: **Gereedschappen**, **Sites**, **Starten**.
+* De **Console van Hulpmiddelen**: **Hulpmiddelen**, **Plaatsen**, **Lanceringen**.
 
-* of rechtstreeks met [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* Of direct met [ https://localhost:4502/libs/launches/content/launches.html ](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Starten in verwijzingen (siteconsole) {#launches-in-references-sites-console}
 
-1. In de **Sites** naar de bron van de opstart(en).
-1. Open de **Verwijzingen** rails en selecteer de bronpagina.
-1. Selecteren **Starten** worden de bestaande lanceringen vermeld:
+1. In de **console van Plaatsen**, navigeer aan de bron van lancering(en).
+1. Open het **spoor van Verwijzingen** en selecteer de bronpagina.
+1. Selecteer **Lanceringen**, zal de bestaande lancering(en) worden vermeld:
 
-   ![Referentie, tabblad - Starten](assets/screen-shot_2019-03-05at121901-1.png)
+   ![ lusje van de Verwijzing - Lanceringen ](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Klik op de juiste start en de lijst met mogelijke acties wordt weergegeven:
 
-   ![Selecteer Starten om mogelijke acties weer te geven](assets/screen-shot_2019-03-05at121952-1.png)
+   ![ Uitgezochte lancering om mogelijke acties te tonen ](assets/screen-shot_2019-03-05at121952-1.png)

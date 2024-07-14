@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Het AEM team bij Adobe werkte nauw samen met het open-source-project [NotSoSerial](https://github.com/kantega/notsoserial) helpen de kwetsbaarheden te verlichten die worden beschreven in **CVE-2015-7501**. NotSoSerial is in licentie gegeven onder de [Apache 2-licentie](https://www.apache.org/licenses/LICENSE-2.0) en omvat ASM-code die onder zijn eigen licentie is verleend [BSD-achtige licentie](https://asm.ow2.io/).
+Het AEM team bij Adobe werkte nauw met het open-bronproject [ NotSoSerial ](https://github.com/kantega/notsoserial) om in het verlichten van de kwetsbaarheden te helpen die in **worden beschreven CVE-2015-7501**. NotSoSerial is vergunning gegeven onder de [ Apache 2 vergunning ](https://www.apache.org/licenses/LICENSE-2.0) en omvat de code van ASM die onder zijn eigen [ wordt vergunning gegeven BSD-als vergunning ](https://asm.ow2.io/).
 
 De agent jar inbegrepen met dit pakket is de gewijzigde distributie van Adobe van NotSoSerial.
 
@@ -28,7 +28,7 @@ NotSoSerial is een Java™-oplossing voor een Java™-probleem en is niet AEM-sp
 
 Door gebrek, voert de agent een lijst van gewezen personen controle tegen huidige bekende kwetsbare klassen uit. Deze lijst van gewezen personen is bedoeld om u tegen de huidige lijst van exploitaties te beschermen die dit type van kwetsbaarheid gebruiken.
 
-De lijst van gewezen personen en de lijst van gewenste personen kunnen worden gevormd door de instructies in te volgen [De agent configureren](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel.
+De lijst van gewezen personen en de lijst van gewenste personen kunnen worden gevormd door de instructies in [ te volgen die de sectie van de Agent ](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel vormen.
 
 De agent is bedoeld om de recentste bekende kwetsbare klassen te helpen verlichten. Als uw project niet-vertrouwde gegevens deserializing, kan het nog kwetsbaar aan ontkenning van de dienstaanvallen, uit geheugenaanvallen, en onbekende toekomstige deserialization exploiteert.
 
@@ -55,9 +55,9 @@ De agent NotSoSerial is niet inbegrepen in de standaarddistributie van AEM voor 
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Ga naar de locatie van de nieuwe AEM zonder ritssluiting en kopieer de `crx-quickstart/opt/notsoserial/` aan de `crx-quickstart` map van de installatie van de AEM toepassingsserver.
+1. Ga naar de locatie van de nieuw uitgeruste AEM QuickStart en kopieer de map `crx-quickstart/opt/notsoserial/` naar de `crx-quickstart` -map van de installatie van de AEM toepassingsserver.
 
-1. Eigendom wijzigen van `/opt` aan de gebruiker die de server uitvoert:
+1. Wijzig de eigendom van `/opt` in de gebruiker die de server uitvoert:
 
    ```shell
    chown -R opt <user running the server>
@@ -72,7 +72,7 @@ De standaardconfiguratie is geschikt voor de meeste installaties. Deze configura
 De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd door:
 
 1. Ga naar de webconsole op `https://server:port/system/console/configMgr`
-1. Zoeken naar en klikken **Configuratie van de firewall voor deserialisatie.**
+1. Het zoeken naar en het klikken van **Configuratie van de Firewall Deserialization.**
 
    >[!NOTE]
    >
@@ -82,21 +82,21 @@ De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd do
 
 Deze configuratie bevat de lijst van gewenste personen, de lijst van gewezen personen, en deserialization registreren.
 
-**Aanbieding toestaan**
+**Toestaan Lijst**
 
 In de sectie Aanbieding toestaan zijn deze aanbiedingen klassen of voorvoegsels van pakketten die kunnen worden gedeserialiseerd. Als u klassen van uw eigen deserializing, voeg of de klassen of de pakketten aan deze lijst van gewenste personen toe.
 
-**Aanbieding blokkeren**
+**Lijst van het Blok**
 
 In de sectie met bloklijsten staan klassen die nooit mogen worden gedeserialiseerd. De aanvankelijke reeks van deze klassen is beperkt tot klassen die aan verre uitvoeringsaanvallen kwetsbaar zijn gevonden. De lijst van gewezen personen wordt toegepast vóór om het even welk toelaat vermelde ingangen.
 
-**Diagnostische registratie**
+**Diagnostische het Registreren**
 
 In de sectie voor kenmerkend registreren, kunt u verscheidene opties kiezen om te registreren wanneer deserialization plaatsvindt. Deze opties worden slechts het programma geopend eerste gebruik, en niet opnieuw het programma geopend op verder gebruik.
 
-De standaardwaarde van **class-name-only** Hiermee wordt u geïnformeerd over de klassen die worden gedeserialiseerd.
+Het gebrek van **klasse-naam-slechts** informeert u van de klassen die worden gedeserialiseerd.
 
-U kunt ook de **vol-stapel** Deze optie registreert een stapel Java™ van de eerste deserialization poging om u te informeren waar uw deserialization plaatsvindt. Deze optie is handig als u deserialisatie wilt zoeken en verwijderen uit uw gebruik.
+U kunt de **volledig-stapel** optie ook plaatsen die een stapel Java™ van de eerste deserialization poging registreert om u te informeren waar uw deserialization plaatsvindt. Deze optie is handig als u deserialisatie wilt zoeken en verwijderen uit uw gebruik.
 
 ## De activering van de agent controleren {#verifying-the-agent-s-activation}
 
@@ -106,11 +106,11 @@ U kunt de configuratie van de deserialization agent verifiëren door aan URL te 
 
 Nadat u tot URL toegang hebt, wordt een lijst van gezondheidscontroles met betrekking tot de agent getoond. U kunt bepalen of de agent correct wordt geactiveerd door te controleren of de gezondheidscontroles voldoende zijn. Als zij ontbreken, moet u de agent manueel laden.
 
-Voor meer informatie over het oplossen van problemenkwesties met de agent, zie [Fouten afhandelen met laden van dynamische agent](#handling-errors-with-dynamic-agent-loading) hieronder.
+Voor meer informatie over het oplossen van problemenkwesties met de agent, zie [ Behandelende Fouten met Dynamische Agent die ](#handling-errors-with-dynamic-agent-loading) hieronder laadt.
 
 >[!NOTE]
 >
->Als u `org.apache.commons.collections.functors` volgens de lijst van gewenste personen mislukt de gezondheidscontrole altijd .
+>Als u `org.apache.commons.collections.functors` aan de lijst van gewenste personen toevoegt, ontbreekt de gezondheidscontrole altijd.
 
 ## Fouten afhandelen met laden van dynamische agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -130,12 +130,12 @@ Ga als volgt te werk om de agent handmatig te laden:
 
    >[!NOTE]
    >
-   >De distributie van de Adobe van de agent NotSoSerial kan in worden gevonden `crx-quickstart/opt/notsoserial/` van de AEM installatie.
+   >De distributie van de Adobe van de `crx-quickstart/opt/notsoserial/` -map van de AEM.
 
 1. De JVM stoppen en opnieuw starten;
 
-1. Verifieer opnieuw de activering van de agent door de hierboven beschreven stappen te volgen in [De activering van de agent controleren](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation).
+1. Verifieer opnieuw de activering van de agent door de hierboven beschreven stappen in [ te volgen die de Activering van de Agent ](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation) verifiëren.
 
 ## Andere overwegingen {#other-considerations}
 
-Als u een IBM® JVM gebruikt, raadpleegt u de documentatie over ondersteuning voor de Java™ Attach-API op [deze locatie](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api).
+Als u op IBM® JVM loopt, herzie de documentatie over steun voor Java™ Band API bij [ deze plaats ](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api).

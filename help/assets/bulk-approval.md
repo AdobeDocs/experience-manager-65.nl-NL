@@ -18,12 +18,12 @@ ht-degree: 4%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
 Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 
-[!DNL Adobe Experience Manager Assets] Hiermee kunt u een workflow voor ad-hocrevisies instellen voor elementen in een map of verzameling en deze delen met revisoren of creatieve partners om feedback te zoeken.
+Met [!DNL Adobe Experience Manager Assets] kunt u een workflow voor ad-hocrevisies instellen voor elementen in een map of verzameling en deze delen met revisoren of creatieve partners om feedback te zoeken.
 
 U kunt de revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
 
@@ -33,85 +33,85 @@ Nadat de controleur de revisie heeft voltooid (activa goedkeurt of verwerpt), on
 
 ## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
-1. Van de [!DNL Assets] -gebruikersinterface, selecteert u de map waarvoor u een revisietaak wilt maken.
-1. Klik op de werkbalk op **[!UICONTROL Create Review Task]** ![revisietaak maken](assets/do-not-localize/create-review-task.png) om de **[!UICONTROL Review Task]** pagina. Als de optie niet wordt weergegeven op de werkbalk, klikt u op **[!UICONTROL More]** en selecteert u vervolgens de optie.
+1. Selecteer in de gebruikersinterface van [!DNL Assets] de map waarvoor u een revisietaak wilt maken.
+1. Van de toolbar, klik **[!UICONTROL Create Review Task]** ![ creeer overzichtstaak ](assets/do-not-localize/create-review-task.png) om de **[!UICONTROL Review Task]** pagina te openen. Als de optie niet wordt weergegeven op de werkbalk, klikt u op **[!UICONTROL More]** en selecteert u de optie.
 
-1. (Optioneel) Van de **[!UICONTROL Project]** selecteert u het project waaraan u de revisietaak wilt koppelen. Standaard worden de **[!UICONTROL None]** is geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
-
-   >[!NOTE]
-   >
-   >Slechts zijn de projecten waarvoor u de (of hogere) toestemmingen op het niveau van de Redacteur hebt zichtbaar in **[!UICONTROL Projects]** lijst.
-
-1. Voer een naam in voor de revisietaak en selecteer een fiatteur in het menu **[!UICONTROL Assign To]** lijst.
+1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
    >[!NOTE]
    >
-   >De leden/groepen van het geselecteerde project zijn beschikbaar als fiatteurs in **[!UICONTROL Assign To]** lijst.
+   >Alleen de projecten waarvoor u de machtiging op Editor (of hoger) hebt, zijn zichtbaar in de lijst **[!UICONTROL Projects]** .
+
+1. Voer een naam in voor de revisietaak en selecteer een fiatteur in de lijst **[!UICONTROL Assign To]** .
+
+   >[!NOTE]
+   >
+   >De leden/groepen van het geselecteerde project zijn beschikbaar als fiatteurs in de **[!UICONTROL Assign To]** lijst.
 
 1. Voer een beschrijving, de prioriteit van de taak en de vervaldatum voor de controletaak in.
 
-   ![task_details](assets/task_details.png)
+   ![ task_details ](assets/task_details.png)
 
 1. Voer op het tabblad Geavanceerd een label in dat u wilt gebruiken om de URI te maken.
 
-   ![review_name](assets/review_name.png)
+   ![ review_name ](assets/review_name.png)
 
-1. Klikken **[!UICONTROL Submit]** en klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Aanmelden bij [!DNL Assets] als fiatteur en navigeer naar de [!DNL Assets] UI. Klik op **[!UICONTROL Notifications]** en selecteer vervolgens de revisietaak in de lijst.
+1. Klik op **[!UICONTROL Submit]** en klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
+1. Meld u aan bij [!DNL Assets] als fiatteur en ga naar de gebruikersinterface van [!DNL Assets] . Als u elementen wilt goedkeuren, klikt u op **[!UICONTROL Notifications]** en selecteert u de revisietaak in de lijst.
 
-   ![Melding van activa](assets/aemAssetsNotification.png)
+   ![ het bericht van Assets ](assets/aemAssetsNotification.png)
 
-1. In de **[!UICONTROL Review Task]** pagina, onderzoekt u de details van de revisietaak en klikt u vervolgens op **[!UICONTROL Review]**.
-1. In de **[!UICONTROL Review Task]** pagina, selecteer elementen en klik op **[!UICONTROL Approve/Reject]** in voorkomend geval goed te keuren of af te wijzen.
+1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en klik vervolgens op **[!UICONTROL Review]** .
+1. Selecteer op de pagina **[!UICONTROL Review Task]** elementen en klik op **[!UICONTROL Approve/Reject]** om deze goed te keuren of af te wijzen.
 
-   ![review_task](assets/review_task.png)
+   ![ review_task ](assets/review_task.png)
 
-1. Klik op **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik op  **[!UICONTROL Complete]** ter bevestiging.
-1. Ga naar de [!DNL Assets] en opent u de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in de kaartweergave en de lijstweergave.
+1. Klik op **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik op **[!UICONTROL Complete]** om te bevestigen.
+1. Navigeer naar de gebruikersinterface van [!DNL Assets] en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in de kaartweergave en de lijstweergave.
 
-   **Kaartweergave**
+   **mening van de Kaart**
 
-   ![Status controleren zoals deze wordt weergegeven in de kaartweergave](assets/chlimage_1-404.png)
+   ![ status van het Overzicht zoals gezien in kaartmening ](assets/chlimage_1-404.png)
 
-   **Lijstweergave**
+   **mening van de Lijst**
 
-   ![Status controleren zoals deze wordt weergegeven in de lijstweergave](assets/review_status_listview.png)
+   ![ status van het Overzicht zoals gezien in lijstmening ](assets/review_status_listview.png)
 
 ## Een revisietaak voor verzamelingen maken {#creating-a-review-task-for-collections}
 
 1. Selecteer op de pagina Verzamelingen de verzameling waarvoor u een revisietaak wilt maken.
-1. Klik op de werkbalk op **[!UICONTROL Create Review Task]** ![revisietaak maken](assets/do-not-localize/create-review-task.png) om de **[!UICONTROL Review Task]** pagina. Als de optie niet wordt weergegeven op de werkbalk, klikt u op **[!UICONTROL More]** en selecteert u vervolgens de optie.
+1. Van de toolbar, klik **[!UICONTROL Create Review Task]** ![ creeer overzichtstaak ](assets/do-not-localize/create-review-task.png) om de **[!UICONTROL Review Task]** pagina te openen. Als de optie niet wordt weergegeven op de werkbalk, klikt u op **[!UICONTROL More]** en selecteert u de optie.
 
-1. (Optioneel) Van de **[!UICONTROL Project]** selecteert u het project waaraan u de revisietaak wilt koppelen. Standaard worden de **[!UICONTROL None]** is geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
-
-   >[!NOTE]
-   >
-   >Slechts zijn de projecten waarvoor u de (of hogere) toestemmingen op het niveau van de Redacteur hebt zichtbaar in **[!UICONTROL Projects]** lijst.
-
-1. Voer een naam in voor de revisietaak en selecteer een fiatteur in het menu **[!UICONTROL Assign To]** lijst.
+1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
    >[!NOTE]
    >
-   >De leden/groepen van het geselecteerde project zijn beschikbaar als fiatteurs in **[!UICONTROL Assign To]** lijst.
+   >Alleen de projecten waarvoor u de machtiging op Editor (of hoger) hebt, zijn zichtbaar in de lijst **[!UICONTROL Projects]** .
+
+1. Voer een naam in voor de revisietaak en selecteer een fiatteur in de lijst **[!UICONTROL Assign To]** .
+
+   >[!NOTE]
+   >
+   >De leden/groepen van het geselecteerde project zijn beschikbaar als fiatteurs in de **[!UICONTROL Assign To]** lijst.
 
 1. Voer een beschrijving, de prioriteit van de taak en de vervaldatum voor de controletaak in.
 
-   ![task_details-collection](assets/task_details-collection.png)
+   ![ task_details-collection ](assets/task_details-collection.png)
 
-1. Klikken **[!UICONTROL Submit]** en klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Aanmelden bij [!DNL Assets] als fiatteur en navigeer naar de [!DNL Assets] console. Klik op **[!UICONTROL Notifications]** en selecteer vervolgens de revisietaak in de lijst.
-1. In de **[!UICONTROL Review Task]** pagina, onderzoekt u de details van de revisietaak en klikt u vervolgens op **[!UICONTROL Review]**.
-1. Alle elementen in de verzameling zijn zichtbaar op de controlepagina. Selecteer de elementen en klik op **[!UICONTROL Approve/Reject]** activa goedkeuren of afwijzen, al naargelang het geval.
+1. Klik op **[!UICONTROL Submit]** en klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
+1. Meld u aan bij [!DNL Assets] als fiatteur en ga naar de [!DNL Assets] -console. Als u elementen wilt goedkeuren, klikt u op **[!UICONTROL Notifications]** en selecteert u de revisietaak in de lijst.
+1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en klik vervolgens op **[!UICONTROL Review]** .
+1. Alle elementen in de verzameling zijn zichtbaar op de controlepagina. Selecteer de elementen en klik op **[!UICONTROL Approve/Reject]** om de elementen goed te keuren of af te wijzen.
 
-   ![review_task_collection](assets/review_task_collection.png)
+   ![ review_task_collection ](assets/review_task_collection.png)
 
-1. Klik op **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik op **[!UICONTROL Complete]** ter bevestiging.
+1. Klik op **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik op **[!UICONTROL Complete]** om te bevestigen.
 1. Navigeer naar de verzamelingsconsole en open de verzameling. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
-   ![collection_reviewStatusCard, weergave](assets/collection_reviewstatuscardview.png)
+   ![ collection_reviewstatuscardview ](assets/collection_reviewstatuscardview.png)
 
-   *Afbeelding: Kaartweergave.*
+   *Cijfer: De mening van de Kaart.*
 
-   ![collection_reviewstatus listview](assets/collection_reviewstatuslistview.png)
+   ![ collection_reviewstatuslistview ](assets/collection_reviewstatuslistview.png)
 
-   *Afbeelding: Lijstweergave.*
+   *Cijfer: De mening van de Lijst.*

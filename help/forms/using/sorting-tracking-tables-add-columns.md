@@ -114,7 +114,7 @@ De resterende kenmerken in het taakmodel die beschikbaar zijn voor weergave in d
  </tbody>
 </table>
 
-Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [Inleiding tot de AEM Forms-werkruimte aanpassen](/help/forms/using/introduction-customizing-html-workspace.md) voor hoe u semantische veranderingen kunt aanbrengen gebruikend werkruimte SDK en een geminimaliseerd pakket van de veranderde bron bouwen.
+Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [ Inleiding aan het Aanpassen van de werkruimte van AEM Forms ](/help/forms/using/introduction-customizing-html-workspace.md) voor hoe u semantische veranderingen kunt aanbrengen gebruikend werkruimte SDK en een geminificeerde pakket van de veranderde bron bouwen.
 
 ## Tabelkolommen en hun volgorde wijzigen {#changing-table-columns-and-their-order}
 
@@ -156,7 +156,7 @@ Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen
 
 U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop klikt:
 
-1. Een klikhandler registreren voor `.fixedTaskTableHeader th` in het bestand `js/runtime/views/processinstancehistory.js`.
+1. Registreer een klikmanager voor `.fixedTaskTableHeader th` in het dossier `js/runtime/views/processinstancehistory.js`.
 
    ```javascript
    events: {
@@ -166,7 +166,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
    }
    ```
 
-   Roep in de handler de `onTaskTableHeaderClick` functie van `js/runtime/util/history.js`.
+   Roep in de handler de functie `onTaskTableHeaderClick` van `js/runtime/util/history.js` aan.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -174,7 +174,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
    }
    ```
 
-1. De `TaskTableHeaderClick` methode in `js/runtime/util/history.js`.
+1. Stel de methode `TaskTableHeaderClick` beschikbaar in `js/runtime/util/history.js` .
 
    De methode zoekt het taakkenmerk van de klikgebeurtenis, sorteert de taaklijst van dat kenmerk en geeft de taaktabel weer met de gesorteerde taaklijst.
 

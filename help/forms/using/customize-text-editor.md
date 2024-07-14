@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-U kunt de teksteditor aanpassen in Middelen beheren en de gebruikersinterface voor correspondentie maken om meer lettertypen en tekengrootten toe te voegen. Deze lettertypen bevatten Engels en niet-Engels, zoals Japans, lettertypen.
+U kunt de teksteditor aanpassen in Assets beheren en de gebruikersinterface voor correspondentie maken om meer lettertypen en tekengrootten toe te voegen. Deze lettertypen bevatten Engels en niet-Engels, zoals Japans, lettertypen.
 
 U kunt het volgende wijzigen in de lettertype-instellingen:
 
@@ -38,37 +38,37 @@ Ga als volgt te werk:
 
 Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-config.xml te bewerken:
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan als beheerder.
 1. Maak in de map apps een map met de naam config met een pad/structuur die lijkt op de configuratiemap (libs/fd/cm/config). Ga hierbij als volgt te werk:
 
-   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik de puntenomslag bij de volgende weg met de rechtermuisknop aan en selecteer **Knoop van de Bedekking**:
 
       `/libs/fd/cm/config`
 
-      ![Overlay-knooppunt](assets/1-1.png)
+      ![ knoop van de Bedekking ](assets/1-1.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/config
+      **Weg:** /libs/fd/cm/config
 
-      **Locatie:** /apps/
+      **Plaats:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **de Types van Knoop van de Gelijke:** Geselecteerd
 
-      ![Overlay-knooppunt](assets/2.png)
+      ![ knoop van de Bedekking ](assets/2.png)
 
-   1. Klikken **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-   1. Klikken **Alles opslaan**.
+   1. Klik **sparen allen**.
 
 1. Maak een kopie van het bestand tbxeditor-config.xml in de nieuw gemaakte config-map met de volgende stappen:
 
-   1. Klik met de rechtermuisknop op het bestand tbxeditor-config.xml in libs/fd/cm/config en selecteer **Kopiëren**.
+   1. Klik het tbxeditor-config.xml- dossier bij libs/fd/cm/config met de rechtermuisknop aan en selecteer **Exemplaar**.
    1. Klik met de rechtermuisknop op de volgende map en selecteer **Plakken:**
 
       `apps/fd/cm/config`
 
-   1. Standaard krijgt het geplakte bestand de naam `copy of tbxeditor-config.xml.` De naam van het bestand wijzigen in `tbxeditor-config.xml` en klik op **Alles opslaan**.
+   1. De naam van gekleefd dossier, door gebrek, is `copy of tbxeditor-config.xml.` anders noemt het dossier `tbxeditor-config.xml` en klikt **sparen allen**.
 
 1. Open het bestand tbxeditor-config.xml in apps/fd/cm/config en breng de vereiste wijzigingen aan.
 
@@ -166,11 +166,11 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
       * Standaardwaarden van lettertypefamilie en -grootte, hoogte, letterspatiëring en datumnotatie
       * Opsommingstekens
 
-      Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u het volgende item in het XML-bestand invoeren: `<font>Sazanami Mincho Medium</font>`. Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Zie voor meer informatie [Aangepaste lettertypen toevoegen aan de clientcomputer](#addcustomfonts).
+      Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u de volgende vermelding in het XML-bestand opnemen: `<font>Sazanami Mincho Medium</font>` . Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Voor meer informatie, zie [ douanedoopvonten aan de cliëntcomputer ](#addcustomfonts) toevoegen.
 
       U kunt ook de standaardinstellingen voor verschillende aspecten van tekst wijzigen en de lettertypen uit de teksteditor verwijderen door de items te verwijderen.
 
-   1. Klikken **Alles opslaan**.
+   1. Klik **sparen allen**.
 
 ## Aangepaste lettertypen toevoegen aan de clientcomputer {#addcustomfonts}
 
@@ -178,16 +178,16 @@ Als u een lettertype opent in de teksteditor voor Correspondentiebeheer, moet di
 
 Raadpleeg de volgende secties voor meer informatie over het installeren van lettertypen:
 
-* [Lettertypen installeren of verwijderen in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Mac-basisbeginselen: lettertypeboek](https://support.apple.com/en-us/HT201749)
+* [ installeer of desinstalleer doopvonten op Vensters ](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
+* [ Basisbeginselen van Mac: Boek van de Doopvont ](https://support.apple.com/en-us/HT201749)
 
 ## Lettertypeaanpassingen openen {#access-font-customizations}
 
-Nadat u de lettertypen in het dialoogvenster `tbxeditor-config.xml` en installeerde de vereiste lettertypen op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms. De wijzigingen worden weergegeven in de teksteditor.
+Nadat u de lettertypen in het `tbxeditor-config.xml` -bestand in CRX hebt gewijzigd en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms, worden de wijzigingen weergegeven in de teksteditor.
 
-Het lettertype Sazanami Mincho Medium dat bijvoorbeeld is toegevoegd aan het dialoogvenster [Lettertypen aanpassen door het bestand tbxeditor-config.xml in CRX te bewerken](#customizefonts) De procedure wordt als volgt weergegeven in de gebruikersinterface van de teksteditor:
+Bijvoorbeeld, de doopvont van Sazanami Mincho Medium die in [ wordt toegevoegd past doopvonten aan door het tbxeditor-config.xml- dossier in CRX uit te geven ](#customizefonts) procedure verschijnt in de tekstredacteur UI als volgt:
 
-![sazanamiminchointext](assets/sazanamiminchointext.png)
+![ sazanamiminchointext ](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >

@@ -31,21 +31,21 @@ Als u een effectieve bestemmingspagina voor nieuwsbrieven wilt maken, moet u het
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
->Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
+>De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 ## Een lijst maken voor de nieuwsbrief {#creating-a-list-for-the-newsletter}
 
-Een lijst maken, bijvoorbeeld **Geometrixx-nieuwsbrief**, in MCM voor de nieuwsbrief waarop mensen zich moeten abonneren. Lijsten maken wordt beschreven in [Lijsten maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Creeer een lijst, bijvoorbeeld, **Nieuwsbrief van de Geometrixx**, in MCM voor nieuwsbrief die de mensen zouden moeten intekenen aan. Het creëren van lijsten wordt beschreven in [ Creërend lijsten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 In het volgende voorbeeld ziet u een voorbeeld van een lijst:
 
-![mcm_listcreate](assets/mcm_listcreate.png)
+![ mcm_listcreate ](assets/mcm_listcreate.png)
 
 ## Een aanmeldingsformulier maken {#create-a-sign-up-form}
 
 Maak een registratieformulier voor nieuwsbrieven waarmee gebruikers zich op tags kunnen abonneren. De voorbeeldwebsite van de Geometrixx bevat een nieuwsbrief op de werkbalk Geometrixx waar u het formulier kunt maken.
 
-Als u uw eigen nieuwsbrief wilt maken, raadpleegt u de informatie over het maken van formulieren in het dialoogvenster [Forms-documentatie](/help/sites-authoring/default-components.md#form). De nieuwsbrief gebruikt de markeringen van de bibliotheek van de Markering. Zie voor meer tags [Tagbeheer](/help/sites-authoring/tags.md#tagadministration).
+Om uw eigen nieuwsbrief vorm tot stand te brengen, zie informatie over het creëren van vormen in de [ documentatie van Forms ](/help/sites-authoring/default-components.md#form). De nieuwsbrief gebruikt de markeringen van de bibliotheek van de Markering. Om extra markeringen toe te voegen, zie [ Beleid van de Markering ](/help/sites-authoring/tags.md#tagadministration).
 
 De verborgen velden in het volgende voorbeeld bieden de minimale hoeveelheid informatie (e-mail). Daarnaast kunt u later meer velden toevoegen, maar dit heeft invloed op de conversiesnelheid.
 
@@ -53,37 +53,37 @@ In het volgende voorbeeld wordt een formulier gemaakt op https://localhost:4502/
 
 1. Maak het formulier.
 
-   ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
+   ![ mcm_newsletterpage ](assets/mcm_newsletterpage.png)
 
-1. Klikken **Bewerken** in de component Form om het formulier zo te configureren dat het naar een pagina Bedankt gaat (zie [Dankpagina&#39;s maken](#creating-a-thank-you-page)).
+1. Klik **uitgeven** in de component van de Vorm om de vorm te vormen om naar te gaan Dank u pagina (zie [ Creërend Dank u Pagina&#39;s ](#creating-a-thank-you-page)).
 
-   ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
+   ![ dc_formstart_thankyou ](assets/dc_formstart_thankyou.png)
 
 1. Stel de handeling Formulier in (dat is wat er gebeurt wanneer u het formulier verzendt) en configureer de groep zodanig dat geregistreerde gebruikers worden toegewezen aan de lijst die u eerder hebt gemaakt (bijvoorbeeld geometrixx-nieuwsbrief).
 
-   ![dc_formstart_thankyouadvanced](assets/dc_formstart_thankyouadvanced.png)
+   ![ dc_formstart_thankyouadvanced ](assets/dc_formstart_thankyouadvanced.png)
 
 ### Een pagina voor bedankt maken {#creating-a-thank-you-page}
 
-Wanneer gebruikers op **Nu abonneren**, wilt u automatisch een pagina voor bedankt openen. Maak de pagina Bedankt op de pagina Geometrixx Newsletter. Nadat u het nieuwsbrief formulier hebt gemaakt, bewerkt u de component Formulier en voegt u het pad toe aan de pagina Hartelijk dank.
+Wanneer de gebruikers **** klikken nu abonneren, wilt u bedankt u pagina om automatisch te openen. Maak de pagina Bedankt op de pagina Geometrixx Newsletter. Nadat u het nieuwsbrief formulier hebt gemaakt, bewerkt u de component Formulier en voegt u het pad toe aan de pagina Hartelijk dank.
 
-Als de aanvraag wordt ingediend, gaat de gebruiker naar een **Bedankt** pagina waarna zij een e-mail zullen ontvangen. Deze pagina Bedankt is gemaakt op /content/geometrixx/nl/toolbar/nieuwsbrief/bedankje.
+Het voorleggen van het verzoek neemt de gebruiker aan a **Dank u** pagina waarna zij een e-mail zullen ontvangen. Deze pagina Bedankt is gemaakt op /content/geometrixx/nl/toolbar/nieuwsbrief/bedankje.
 
-![mcm_nieuwsbrief_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
+![ mcm_newsletter_thankyoupage ](assets/mcm_newsletter_thankyoupage.png)
 
 ### Teasers toevoegen {#adding-teasers}
 
-Toevoegen [traasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) specifieke doelgroepen. U kunt bijvoorbeeld tellers toevoegen aan de pagina Vriendelijk bedankt en de pagina Nieuwsbrief.
+Voeg [ meetapparaten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) aan doelspecifiek publiek toe. U kunt bijvoorbeeld tellers toevoegen aan de pagina Vriendelijk bedankt en de pagina Nieuwsbrief.
 
 Tasers toevoegen om een effectieve bestemmingspagina voor nieuwsbrieven te maken:
 
-1. Maak een teasalinea voor een cadeau bij aanmelden. Selecteren **Eerste** als de strategie en met tekst die hen informeert over welk geschenk zij zullen ontvangen.
+1. Maak een teasalinea voor een cadeau bij aanmelden. Selecteer **eerst** als strategie en omvat tekst die hen informeert welk cadeau zij zullen ontvangen.
 
-   ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
+   ![ dc_teaser_thankyou ](assets/dc_teaser_thankyou.png)
 
-1. Maak een teasalinea voor de pagina Bedankt. Selecteren **Eerste** als de strategie en neem tekst op die aangeeft dat het geschenk onderweg is.
+1. Maak een teasalinea voor de pagina Bedankt. Selecteer **eerst** als strategie en omvat tekst die erop wijst dat het geschenk op zijn manier is.
 
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   ![ chlimage_1-103 ](assets/chlimage_1-103.png)
 
 1. Maak een campagne met de twee theaters — neem er een aan met zaken en een zonder tags.
 
@@ -91,4 +91,4 @@ Tasers toevoegen om een effectieve bestemmingspagina voor nieuwsbrieven te maken
 
 Breng wijzigingen in pagina&#39;s aan via de nieuwsbrief-functionaliteit in de MCM. Vervolgens drukt u op bijgewerkte inhoud naar abonnees.
 
-Zie [Nieuwsbrieven verzenden](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).
+Zie [ verzendend Nieuwsbrieven ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).

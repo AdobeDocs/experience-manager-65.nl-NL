@@ -25,4 +25,4 @@ Wanneer een gebruiker aan Experience Manager 6.5.12.0 bevordert en &quot;Upgrade
 
 ## Oplossing {#solution}
 
-Om de kwestie op te lossen, verhoog max_packet_size van het gegevensbestand aan 100 M of zoals vereist in het my.ini- dossier dat bij wordt gevestigd {AEM_HOME}/mysql.
+Om de kwestie op te lossen, verhoog max_packet_size van het gegevensbestand aan 100 M of zoals vereist in het my.ini- dossier dat bij {AEM_HOME} wordt gevestigd/mysql.

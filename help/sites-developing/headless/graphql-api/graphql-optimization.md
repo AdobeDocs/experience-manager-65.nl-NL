@@ -16,13 +16,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Overweeg voordat u deze optimaliseringsaanbevelingen toepast [Inhoudsfragmenten bijwerken voor pagineren en sorteren in GraphQL-filters](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md) voor de beste prestaties.
+>Alvorens u deze optimaliseringsaanbevelingen toepast, overweeg [ Bijwerkend uw Fragmenten van de Inhoud voor het pagineren en het Sorteren in het Filtreren van GraphQL ](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md) voor beste prestaties.
 
 Deze richtlijnen zijn bedoeld om prestatieproblemen met uw GraphQL-query&#39;s te voorkomen.
 
 ## GraphQL Checklist {#graphql-checklist}
 
-De volgende controlelijst is bedoeld om u te helpen de configuratie en het gebruik van GraphQL in as a Cloud Service Adobe Experience Manager (AEM) te optimaliseren.
+De volgende controlelijst is bedoeld om u te helpen bij het optimaliseren van de configuratie en het gebruik van GraphQL in Adobe Experience Manager (AEM) as a Cloud Service.
 
 ### Eerste beginselen {#first-principles}
 
@@ -34,26 +34,26 @@ Het gebruik van doorlopende GraphQL-query&#39;s wordt sterk aanbevolen.
 
 Blijvende GraphQL-query&#39;s helpen de prestaties van de query te verminderen door gebruik te maken van CDN (Content Delivery Network). Clienttoepassingen hebben doorlopende query&#39;s aangevraagd met GET-aanvragen voor snelle uitvoering met randfunctionaliteit.
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 
 Zie:
 
-* [Blijvende GraphQL-query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md).
+* [ Blijven de vragen van GraphQL ](/help/sites-developing/headless/graphql-api/persisted-queries.md).
 * [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 
 #### Het GraphQL-indexpakket installeren {#install-graphql-index-package}
 
 **Aanbeveling**
 
-Klanten die GraphQL gebruiken *moet* Installeer het Experience Manager Content Fragment met GraphQL Index Package. Zo kunt u de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken. Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-query&#39;s.
+De klanten die GraphQL gebruiken *moeten* het Fragment van de Inhoud van de Experience Manager met het Pakket van de Index van GraphQL installeren. Zo kunt u de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken. Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-query&#39;s.
 
-Zie de Nota&#39;s van de Versie voor de versie aangewezen aan uw Service Pack. Bijvoorbeeld, voor het recentste Service Pack, zie [GraphQL-indexpakket voor Experience Manager-inhoudsfragmenten installeren](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
+Zie de Nota&#39;s van de Versie voor de versie aangewezen aan uw Service Pack. Bijvoorbeeld, voor het recentste Pak van de Dienst, zie [ het Pakket van de Index van GraphQL voor de Fragmenten van de Inhoud van de Experience Manager installeren ](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package).
 
 >[!NOTE]
 >
 >Installeer dit pakket slechts eenmaal per instantie; het hoeft niet opnieuw te worden geïnstalleerd met elk Service Pack.
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 Zie:
 
 * [GraphQL-indexpakket voor Experience Manager-inhoudsfragmenten installeren](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)
@@ -62,13 +62,13 @@ Zie:
 
 Verschillende methoden voor het in cache plaatsen kunnen ook worden gebruikt voor optimalisatie.
 
-#### Opslaan in cache AEM Dispatcher inschakelen {#enable-aem-dispatcher-caching}
+#### In cache AEM Dispatcher plaatsen {#enable-aem-dispatcher-caching}
 
 **Aanbeveling**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is het eerste niveaugeheime voorgeheugen binnen de AEM dienst, vóór CDN geheime voorgeheugen.
+[ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is het eerste niveaugeheime voorgeheugen binnen de AEM dienst, vóór CDN geheime voorgeheugen.
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 
 Zie:
 
@@ -78,13 +78,13 @@ Zie:
 
 **Aanbeveling**
 
-GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst als ze worden toegewezen aan `GET` vraagt wanneer het gebruiken van een CDN. Aanvragen zonder cache kunnen daarentegen zeer (bron)duur zijn en traag verlopen, met mogelijk verdere nadelige gevolgen voor de middelen van de oorsprong.
+GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst als ze worden aangewezen als `GET` -aanvragen bij het gebruik van een CDN. Aanvragen zonder cache kunnen daarentegen zeer (bron)duur zijn en traag verlopen, met mogelijk verdere nadelige gevolgen voor de middelen van de oorsprong.
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 
 Zie:
 
-* [CDN gebruiken in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [ Gebruikend CDN in AEM ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### HTTP-cachebeheerkoppen instellen {#set-http-cache-control-headers}
 
@@ -92,9 +92,9 @@ Zie:
 
 Wanneer het gebruiken van voortgeduurde vragen van GraphQL met een CDN, wordt het geadviseerd om aangewezen HTTP- geheim voorgeheugencontrolekopballen te plaatsen.
 
-Elke voortgezette vraag kan zijn eigen specifieke reeks kopballen van de geheim voorgeheugencontrole hebben. De koppen kunnen worden ingesteld op de [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+Elke voortgezette vraag kan zijn eigen specifieke reeks kopballen van de geheim voorgeheugencontrole hebben. De kopballen kunnen over [ GraphQL API ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) worden geplaatst.
 
-Deze kunnen ook worden ingesteld met de opdracht **cURL** opdrachtregelgereedschap. Met een `PUT` verzoek om een verpakte onbewerkte vraag met geheim voorgeheugencontrole tot stand te brengen.
+Zij kunnen ook worden geplaatst gebruikend het **cURL** hulpmiddel van de bevellijn. Bijvoorbeeld, gebruikend een `PUT` verzoek om een verpakte vraag met geheim voorgeheugencontrole tot stand te brengen.
 
 ```shell
 $ curl -X PUT \
@@ -108,7 +108,7 @@ $ curl -X PUT \
 <!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
 -->
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 
 Zie:
 
@@ -134,7 +134,7 @@ Contact Adobe to enable this capability for your AEM Cloud Service program and e
 
 Op een AEM instantie met een hoog aantal Inhoudsfragmenten die hetzelfde model delen, kunnen vragen in de GraphQL-lijst kostbaar worden (in termen van bronnen).
 
-Dit komt omdat *alles* fragmenten die een model delen dat wordt gebruikt binnen de GraphQL-query, moeten in het geheugen worden geladen. Dit verbruikt zowel tijd als geheugen. Filteren, waardoor het aantal items in de (uiteindelijke) resultatenset kan worden verminderd, kan alleen worden toegepast **na** het laden van de volledige resultaatset in het geheugen.
+Dit is omdat *alle* fragmenten die een model delen dat binnen de vraag van GraphQL wordt gebruikt in geheugen moet worden geladen. Dit verbruikt zowel tijd als geheugen. Het filtreren, dat het aantal punten in de (definitieve) resultaatreeks kan verminderen, kan slechts worden toegepast **nadat** ladend het volledige die resultaat in geheugen wordt geplaatst.
 
 Dit kan de indruk wekken dat zelfs kleine resultaatsets (kunnen) tot slechte prestaties leiden. In werkelijkheid wordt de vertraging echter veroorzaakt door de grootte van de oorspronkelijke resultaatset, aangezien deze intern moet worden afgehandeld voordat filters kunnen worden toegepast.
 
@@ -143,11 +143,11 @@ Om de prestaties en het geheugen te verminderen, moet deze aanvankelijke resulta
 AEM biedt twee manieren om GraphQL-query&#39;s te optimaliseren:
 
 * [Hybride filtering](#use-aem-graphql-hybrid-filtering)
-* [Paginering](#use-aem-graphql-pagination) (of paginering)
+* [ het pagineren ](#use-aem-graphql-pagination) (of paginering)
 
-   * [Sorteren](#use-graphql-sorting) heeft niet rechtstreeks betrekking op optimalisatie, maar heeft wel betrekking op paginering
+   * [ het Sorteren ](#use-graphql-sorting) is niet direct verwant met optimalisering, maar is verwant aan het pagineren
 
-Elke benadering heeft zijn eigen gebruiksgevallen en beperkingen. In deze sectie vindt u informatie over het filteren en pagineren van hybride foto&#39;s, samen met enkele van de [best practices](#best-practices) voor gebruik bij het optimaliseren van GraphQL-query&#39;s.
+Elke benadering heeft zijn eigen gebruiksgevallen en beperkingen. Deze sectie verstrekt informatie over het Hybride Filtreren en het Paging, samen met enkele [ beste praktijken ](#best-practices) voor gebruik in het optimaliseren van de vragen van GraphQL.
 
 #### Hybride filters AEM GraphQL gebruiken {#use-aem-graphql-hybrid-filtering}
 
@@ -167,7 +167,7 @@ Met deze techniek blijft de flexibiliteit behouden die GraphQL-filters bieden, t
 >
 >AEM voor hybride filters moeten bestaande inhoudsfragmenten worden bijgewerkt
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 
 Zie:
 
@@ -182,22 +182,23 @@ De reactietijd van complexe vragen, met grote resultaatreeksen, kan worden verbe
 
 GraphQL in AEM ondersteunt twee typen paginering:
 
-* [paginering op basis van limiet/verschuiving](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-Dit wordt gebruikt voor lijstvragen; deze eindigen met `List`; bijvoorbeeld `articleList`.
-Als u dit wilt gebruiken, moet u de positie opgeven van het eerste item dat moet worden geretourneerd (de `offset`) en het aantal objecten dat moet worden geretourneerd (de `limit`, of paginaformaat).
+* [ grens/op verschuiving-gebaseerde paginering ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+Dit wordt gebruikt voor lijstquery&#39;s; deze eindigen met `List`, bijvoorbeeld `articleList` .
+Als u dit wilt gebruiken, moet u de positie opgeven van het eerste item dat moet worden geretourneerd (de `offset` ) en het aantal items dat moet worden geretourneerd (de `limit` - of paginaformaat).
 
-* [cursorpaginering](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (vertegenwoordiger `first`en `after`) Dit verstrekt een unieke identiteitskaart voor elk punt; ook gekend als curseur.
+* [ curseur-gebaseerde paginering ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (vertegenwoordigd door `first` en `after`)
+Dit verstrekt een unieke identiteitskaart voor elk punt; ook gekend als curseur.
 In de vraag, specificeert u de curseur van het laatste punt van de vorige pagina, plus de paginagrootte (het maximumaantal punten dat moet worden teruggekeerd).
 
-  Aangezien op curseur-gebaseerde paginering niet binnen de gegevensstructuren van op lijst-gebaseerde vragen past, heeft AEM geïntroduceerd `Paginated` type query; bijvoorbeeld `articlePaginated`. De gebruikte gegevensstructuren en parameters volgen [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
+  Aangezien de op curseur-gebaseerde paginering niet binnen de gegevensstructuren van op lijst-gebaseerde vragen past, AEM heeft `Paginated` vraagtype geïntroduceerd; bijvoorbeeld, `articlePaginated`. De gegevensstructuren en de parameters die worden gebruikt volgen [ GraphQL Cursor ConnectionSpecification ](https://relay.dev/graphql/connections.htm).
 
   >[!NOTE]
   >
-  >AEM biedt momenteel ondersteuning voor doorsturen van paginering (met `after`/`first` parameters).
+  >AEM ondersteunt momenteel paginering via de volgende pagina (met behulp van `after` / `first` -parameters).
   >
-  >Achterwaartse paginering (gebruiken `before`/`last` parameters) wordt niet ondersteund.
+  >Achterwaartse paginering (met behulp van `before`/`last` -parameters) wordt niet ondersteund.
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 
 Zie:
 
@@ -217,7 +218,7 @@ Als de sorteervolgorde een of meer velden bevat die zich op een genest fragment 
 >
 >Sorteren op velden op het hoogste niveau heeft ook een (zij het kleine) invloed op de prestaties.
 
-**Verdere verwijzing**
+**Verdere Verwijzing**
 
 Zie:
 
@@ -233,7 +234,7 @@ Filteren op JCR-niveau werkt momenteel alleen voor fragmenten op hoofdniveau.
 
 Als een filter de velden van een genest fragment aanpakt, moet AEM terugvallen naar het laden (in geheugen) van alle fragmenten die het onderliggende model delen.
 
-U kunt dergelijke GraphQL-query&#39;s nog steeds optimaliseren door filterexpressies te combineren op velden van fragmenten op het hoogste niveau en op velden van geneste fragmenten met de opdracht [AND, operator](#logical-operations-in-filter-expressions).
+U kunt dergelijke vragen van GraphQL nog optimaliseren door filteruitdrukkingen op gebieden van top-level fragmenten en die op gebieden van genestelde fragmenten met [ EN exploitant ](#logical-operations-in-filter-expressions) te combineren.
 
 ### De inhoudsstructuur gebruiken {#use-content-structure}
 
@@ -241,7 +242,7 @@ In AEM wordt het over het algemeen als een goede praktijk beschouwd om de gegeve
 
 Deze aanpak moet ook worden toegepast op GraphQL-query&#39;s.
 
-Dit kan door een filter op toe te passen `_path` veld van het fragment op hoofdniveau:
+Dit kan door een filter op het `_path` gebied van het top-level fragment toe te passen:
 
 ```graphql
 {
@@ -264,7 +265,7 @@ Dit kan door een filter op toe te passen `_path` veld van het fragment op hoofdn
 
 >[!NOTE]
 >
->De navolgende `/` op `value` is vereist om de beste prestaties te behalen.
+>U moet `/` on `value` volgen voor de beste prestaties.
 
 ### Paginering gebruiken {#use-paging}
 
@@ -274,47 +275,47 @@ Als u filtert of sorteert op geneste fragmenten, kunnen gepagineerde query&#39;s
 
 Voor pagineren is sorteren even belangrijk, omdat gepagineerde resultaten altijd worden gesorteerd - expliciet of impliciet.
 
-Als u in de eerste plaats in slechts het terugwinnen van de eerste paar pagina&#39;s interesseert, is er geen significant verschil tussen het gebruiken van `...List` of `...Paginated` vragen. Als uw toepassing echter meer dan één of twee pagina&#39;s wil lezen, moet u rekening houden met de `...Paginated` query&#39;s uitvoeren, aangezien deze vooral beter presteren bij de latere pagina&#39;s.
+Als u vooral alleen geïnteresseerd bent in het ophalen van de eerste paar pagina&#39;s, is er geen significant verschil tussen het gebruik van de query&#39;s `...List` of `...Paginated` . Als uw toepassing echter meer dan één of twee pagina&#39;s wil lezen, moet u rekening houden met de query `...Paginated` omdat deze vooral beter werkt met de latere pagina&#39;s.
 
 ### Logische bewerkingen in filterexpressies {#logical-operations-in-filter-expressions}
 
-Als u filtert op geneste fragmenten, kunt u nog steeds JCR-filtering toepassen door een bijbehorend filter op te geven voor een veld op hoofdniveau dat wordt gecombineerd met het `AND` operator.
+Als u filtert op geneste fragmenten, kunt u nog steeds JCR-filters toepassen door een bijbehorend filter op te geven voor een veld op hoofdniveau dat wordt gecombineerd met de operator `AND` .
 
-Een typisch gebruik-geval zou het werkingsgebied van de vraag moeten beperken gebruikend een filter op `_path` van het fragment op het hoogste niveau en filtert vervolgens op aanvullende velden op het hoogste niveau of op een genest fragment.
+Een typisch gebruik-geval zou het werkingsgebied van de vraag moeten beperken gebruikend een filter op het `_path` gebied van het top-level fragment, en dan filter op extra gebieden die op top-level, of op een genesteld fragment zouden kunnen zijn.
 
-In dit geval worden de verschillende filterexpressies gecombineerd met `AND`. Het filter op `_path` kan de oorspronkelijke resultaatset effectief beperken. Alle andere filters in velden op het hoogste niveau kunnen helpen om de oorspronkelijke resultaatset ook te reduceren, mits deze worden gecombineerd met `AND`.
+In dit geval worden de verschillende filterexpressies gecombineerd met `AND` . Daarom kan het filter op `_path` de aanvankelijke resultaatreeks effectief beperken. Alle andere filters in velden op het hoogste niveau kunnen helpen om de oorspronkelijke resultaatset ook te reduceren, mits ze worden gecombineerd met `AND` .
 
-Filterexpressies gecombineerd met `OR` kan niet worden geoptimaliseerd als het om geneste fragmenten gaat. `OR` expressies kunnen alleen worden geoptimaliseerd als *nee* geneste fragmenten zijn hierbij betrokken.
+Filterexpressies in combinatie met `OR` kunnen niet worden geoptimaliseerd als er geneste fragmenten bij betrokken zijn. `OR` de uitdrukkingen kunnen slechts worden geoptimaliseerd als *geen* genestelde fragmenten betrokken zijn.
 
 ### Filteren op tekstvelden met meerdere regels wordt vermeden {#avoid-filtering-multiline-textfields}
 
 De velden van een tekstveld met meerdere regels (html, markdown, plaintext, json) kunnen niet worden gefilterd via een JCR-query, omdat de inhoud van deze velden direct moet worden berekend.
 
-Als u nog steeds op een tekstveld met meerdere regels moet filteren, kunt u de grootte van de oorspronkelijke resultaatset beperken door extra filterexpressies toe te voegen en deze te combineren `AND`. Het bereik beperken door te filteren op de `_path` het terrein is ook een goede aanpak .
+Als u nog steeds op een tekstveld met meerdere regels moet filteren, kunt u de grootte van de oorspronkelijke resultaatset beperken door extra filterexpressies toe te voegen en deze te combineren met `AND` . Ook het beperken van het bereik door filtering op het veld `_path` is een goede aanpak.
 
 ### Filteren op virtuele velden vermijden {#avoid-filtering-virtual-fields}
 
-Virtuele velden (de meeste velden beginnen met `_`) worden berekend terwijl een GraphQL-query wordt uitgevoerd en vallen daarom buiten het bereik van op JCR gebaseerde filtering.
+Virtuele velden (de meeste velden die beginnen met `_` ) worden berekend terwijl een GraphQL-query wordt uitgevoerd en vallen daarom buiten het bereik van op JCR gebaseerde filtering.
 
-Een belangrijke uitzondering is de `_path` veld, dat effectief kan worden gebruikt om de grootte van de oorspronkelijke resultaatset te beperken - als de inhoud dienovereenkomstig is gestructureerd (zie [De inhoudsstructuur gebruiken](#use-content-structure)).
+Één belangrijke uitzondering is het `_path` gebied, dat effectief kan worden gebruikt om de grootte van de aanvankelijke resultaatreeks te verminderen - als de inhoud dienovereenkomstig gestructureerd is (zie [ Gebruik de inhoudsstructuur ](#use-content-structure)).
 
 ### Filteren: uitsluitingen {#filtering-exclusions}
 
 Er zijn verschillende andere situaties waarin een filterexpressie niet op het JCR-niveau kan worden geëvalueerd (en daarom moet worden vermeden dat de beste prestaties worden bereikt):
 
-* Filterexpressies op een `Float` waarde die de `_sensitiveness` filteroptie en waar `_sensitiveness` is ingesteld op een andere waarde dan `0.0` .
+* Filterexpressies op een `Float` -waarde die de `_sensitiveness` filteroptie gebruiken en waarbij `_sensitiveness` op een andere waarde dan `0.0` is ingesteld.
 
-* Filterexpressies op een `String` waarde met behulp van de `_ignoreCase` filteroptie.
+* Filterexpressies op een `String` -waarde met de filteroptie `_ignoreCase` .
 
-* Filteren op `null` waarden.
+* Filteren op `null` -waarden.
 
-* Filters op arrays met `_apply: ALL_OR_EMPTY`.
+* Filters op arrays met `_apply: ALL_OR_EMPTY` .
 
-* Filters op arrays met `_apply: INSTANCES`, `_instances: 0`.
+* Filters op arrays met `_apply: INSTANCES` , `_instances: 0` .
 
-* Filterexpressies met de `CONTAINS_NOT` operator.
+* Filterexpressies met de operator `CONTAINS_NOT` .
 
-* Filterexpressies op een `Calendar`, `Date` of `Time` waarde die de `NOT_AT` operator.
+* Filterexpressies op een `Calendar` -, `Date` - of `Time` -waarde die de `NOT_AT` -operator gebruiken.
 
 ### Nesten van inhoudsfragmenten minimaliseren {#minimize-content-fragment-nesting}
 
@@ -326,7 +327,7 @@ Diepe nesting kan ook negatieve gevolgen hebben voor het beheer van inhoud. Over
 
 ### Niet alle indelingen uitvoeren (tekstelementen met meerdere regels) {#do-not-output-all-formats}
 
-AEM GraphQL tekst kan retourneren die is gemaakt in het dialoogvenster **[Tekst met meerdere regels](/help/assets/content-fragments/content-fragments-models.md#data-types)** gegevenstype, in meerdere indelingen: RTF, Simple Text en Markdown.
+AEM GraphQL kan tekst terugkeren, authored in het **[Meerdere lijntekst](/help/assets/content-fragments/content-fragments-models.md#data-types)** gegevenstype, in veelvoudige formaten: Rijke Tekst, Eenvoudige Tekst, en Markdown.
 
 Wanneer u alle drie de indelingen uitvoert, wordt de tekstuitvoer in JSON met een factor drie vergroot. Dat, in combinatie met over het algemeen grote resultaatreeksen van zeer brede vragen, zeer grote JSON reacties kan veroorzaken die daarom lang duurt om te berekenen. Het is beter om de uitvoer te beperken tot alleen de tekstindelingen die nodig zijn voor het renderen van de inhoud.
 

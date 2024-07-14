@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Deze pagina legt uit hoe u een aangepaste paginasjabloon kunt maken dat [Adobe Campaign-formulier](/help/sites-authoring/adobe-campaign-components.md) componenten door te onderzoeken hoe de Geometrixx-outdoortemplate (`/apps/geometrixx-outdoors/components/page_campaign_profile`) is geïmplementeerd en verwijst naar belangrijke informatie die u nodig hebt bij het maken van uw eigen aangepaste sjabloon.
+Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat ](/help/sites-authoring/adobe-campaign-components.md) componenten gebruikt van de Vorm van 0} Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (`/apps/geometrixx-outdoors/components/page_campaign_profile`) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.[
 
 >[!NOTE]
 >
->[E-mail- en formuliervoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
+>[ E-mail en vormsteekproeven zijn slechts beschikbaar in Geometrixx ](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
 
 >[!CAUTION]
 >
@@ -33,29 +33,29 @@ Deze pagina legt uit hoe u een aangepaste paginasjabloon kunt maken dat [Adobe C
 
 Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formuliercomponenten, moet u het volgende doen:
 
-1. **Correcte resourceSuperType**
+1. **Correct resourceSuperType**
 
-   Zorg ervoor dat de pagina-component overerft van `mcm/campaign/components/profile`.
+   Zorg ervoor dat de pagina-component overerft van `mcm/campaign/components/profile` .
 
    Dit is vereist voor de servlets om informatie te verkrijgen en op te slaan
 
    * `com.day.cq.mcm.campaign.servlets.TemplateListServlet`
    * `com.day.cq.mcm.campaign.servlets.SaveProfileServlet`
 
-   ![chlimage_1-201](assets/chlimage_1-201.png)
+   ![ chlimage_1-201 ](assets/chlimage_1-201.png)
 
-1. **Instellingen ClientContext**
+1. **de Montages van de ClientContext**
 
-   Wanneer u de montages van de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) u ziet de volgende instellingen:
+   Wanneer u de clientcontext-instellingen ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile` ) bekijkt, ziet u de volgende instellingen:
 
    * ClientContext wijst naar `/etc/clientcontext/campaign`
-   * Er is ook een extra *config* knooppunt.
+   * Er is ook een extra *config* knoop.
 
-   ![chlimage_1-202](assets/chlimage_1-202.png)
+   ![ chlimage_1-202 ](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   In **head.jsp** worden de volgende regels weergegeven die de **clientcontext-config** en de **cloudservice-haak**:
+   In **head.jsp**, ziet u de volgende lijnen die **clientcontext-config** en **cloudservice-haak** gebruiken:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -65,26 +65,26 @@ Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formulierc
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   In **body.jsp** De cloudservices worden onder aan de pagina geladen:
+   In **body.jsp**, worden de wolkendiensten geladen bij de bodem van de pagina:
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
    ```
 
-1. **Campagnepagina-eigenschappen**
+1. **de paginaeigenschappen van de Campagne**
 
-   Als u een Adobe Campaign-sjabloon wilt selecteren, worden de pagina-eigenschappen uitgebreid met de **Campagne** tab:
+   Om een malplaatje van Adobe Campaign te kunnen selecteren worden de pagina-eigenschappen uitgebreid met **Campagne** tabel:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 
-   ![chlimage_1-203](assets/chlimage_1-203.png)
+   ![ chlimage_1-203 ](assets/chlimage_1-203.png)
 
-1. **Sjablooninstellingen**.
+1. **montages van het Malplaatje**.
 
-   In de template ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) u ziet de volgende standaardwaarden:
+   In de sjabloon ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content` ) ziet u de volgende standaardwaarden:
 
    | **acMapping** | mapRecipient (voor Adobe Campaign 6.1), profiel (voor Adobe Campaign Standard) |
    |---|---|
    | **acTemplateId** | post |
 
-   ![chlimage_1-204](assets/chlimage_1-204.png)
+   ![ chlimage_1-204 ](assets/chlimage_1-204.png)

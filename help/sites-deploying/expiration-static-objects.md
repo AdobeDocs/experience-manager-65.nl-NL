@@ -25,21 +25,21 @@ Dit heeft het volgende effect:
 * Offloadt aanvragen van de serverinfrastructuur.
 * Hiermee verbetert u de prestaties van het laden van pagina&#39;s, aangezien de browser objecten in het cachegeheugen van de browser opslaat.
 
-De vervaldatums worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldatum&quot;van dossiers (bijvoorbeeld, zie hoofdstuk 14.21 van [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd; dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole naar de oorspronkelijke server wordt uitgevoerd.
+De vervalsingen worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldatum&quot;van dossiers (bijvoorbeeld, zie hoofdstuk 14.21 van [ RFC 2616 ](https://www.ietf.org/rfc/rfc2616.txt) &quot;Protocol van de Overdracht van de Hypertext — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd; dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole naar de oorspronkelijke server wordt uitgevoerd.
 
 >[!NOTE]
 >
 >Deze configuratie staat los van (en werkt niet voor) de Dispatcher.
 >
->Het doel van de Dispatcher is om gegevens voor Adobe Experience Manager (AEM) in het cachegeheugen op te slaan.
+>Het doel van de Dispatcher is om gegevens voor Adobe Experience Manager (AEM) in cache op te slaan.
 
 Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, kunnen en moeten in cache worden geplaatst. De configuratie voor de Apache HTTPD-server kan er als volgt uitzien - afhankelijk van de omgeving:
 
 >[!CAUTION]
 >
->Wees voorzichtig wanneer u de tijdsperiode definieert waarin een object als up-to-date wordt beschouwd. Als er *geen controle tot de opgegeven periode is verstreken* kan de client de oude inhoud uit de cache presenteren.
+>Wees voorzichtig wanneer u de tijdsperiode definieert waarin een object als up-to-date wordt beschouwd. Aangezien er *geen controle is tot de gespecificeerde tijdspanne* is verlopen, kan de cliënt omhoog het voorstellen van oude inhoud van het geheime voorgeheugen beëindigen.
 
-1. **Voor een instantie Auteur:**
+1. **voor een instantie van de Auteur:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -51,11 +51,11 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
    </Location>
    ```
 
-   Hierdoor kan de cache van een tussenliggend item (bijvoorbeeld de browsercache) maximaal een maand CSS-, JavaScript-, PNG- en GIF-bestanden opslaan, totdat ze verlopen. Dit betekent dat ze niet hoeven te worden aangevraagd bij AEM of de webserver, maar wel in de cache van de browser kunnen blijven staan.
+   Hierdoor kunnen in de cache (bijvoorbeeld de browsercache) maximaal een maand CSS-, JavaScript-, PNG- en GIF-bestanden worden opgeslagen, totdat ze verlopen. Dit betekent dat ze niet hoeven te worden aangevraagd bij AEM of de webserver, maar wel in de cache van de browser kunnen blijven staan.
 
    Andere gedeelten van de site moeten niet in de cache worden geplaatst op een instantie van de auteur, omdat deze op elk moment kunnen worden gewijzigd.
 
-1. **Voor een instantie Publish:**
+1. **voor een instantie van Publish:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -73,7 +73,7 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
    </Location>
    ```
 
-   Hierdoor kan de tussenliggende cache (bijvoorbeeld de browsercache) maximaal één dag CSS-, JavaScript-, PNG- en GIF-bestanden opslaan in clientcaches. Hoewel dit voorbeeld algemene instellingen voor alles hieronder illustreert `/content` en `/etc/designs`, moet u het korter maken.
+   Hierdoor kan de cache van een tussenliggende gebruiker (bijvoorbeeld de browsercache) maximaal één dag CSS-, JavaScript-, PNG- en GIF-bestanden opslaan in clientcache. Hoewel dit voorbeeld algemene instellingen illustreert voor alles onder `/content` en `/etc/designs` , moet u deze korter maken.
 
    Afhankelijk van hoe vaak uw site wordt bijgewerkt, kunt u ook overwegen HTML-pagina&#39;s in cache te plaatsen. Een redelijke termijn is één uur:
 
@@ -83,4 +83,4 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
    </Location>
    ```
 
-Nadat u de statische objecten hebt geconfigureerd, scant u `request.log`Selecteer pagina&#39;s die dergelijke objecten bevatten, om te bevestigen dat er geen (overbodige) aanvragen worden gedaan voor statische objecten.
+Nadat u de statische objecten hebt geconfigureerd, scant u `request.log` terwijl u pagina&#39;s selecteert die dergelijke objecten bevatten, om te bevestigen dat er geen (overbodige) aanvragen worden gedaan voor statische objecten.

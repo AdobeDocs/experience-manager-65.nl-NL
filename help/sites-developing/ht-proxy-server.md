@@ -43,11 +43,11 @@ Start de server op de opdrachtregel:
 
 `<host>`
 
-Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als de instantie zich op uw lokale computer bevindt, is dit `localhost`.
+Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als de instantie zich op uw lokale computer bevindt, is dit `localhost` .
 
 `<remoteport>`
 
-Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling van een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerd AEM auteur-exemplaar is `4502`.
+Dit is de hostpoort van de CRX-doelinstantie. De standaardinstelling van een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM auteur-instantie is `4502` .
 
 `<localport>`
 
@@ -59,7 +59,7 @@ Dit is de poort op uw lokale computer die u wilt gebruiken om verbinding te make
 
 Schrijft niet de output aan het consolevenster. Gebruik deze optie als u de verbinding niet wilt vertragen of als u de uitvoer naar een bestand wilt vastleggen (zie de optie -logfile).
 
-`-b`(binaire modus)
+`-b` (binaire modus)
 
 Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat vervolgens de hexadecimale uitvoer en de tekenuitvoer.
 
@@ -67,13 +67,13 @@ Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. D
 
 Hiermee voegt u een tijdstempel toe aan elk logbestand. Het tijdstempel is in seconden, zodat het mogelijk niet geschikt is voor het controleren van afzonderlijke aanvragen. Gebruik het om van gebeurtenissen de plaats te bepalen die in een specifiek ogenblik voorkwamen als u de volmachtsserver over een langere tijdspanne gebruikt.
 
-`-logfile <filename>`(schrijven naar logbestand)
+`-logfile <filename>` (schrijven naar logbestand)
 
 Schrijft het cliënt-server gesprek aan een logboekdossier. Deze parameter werkt ook in de stille modus.
 
-**`-i <numIndentions>`**(inspringing toevoegen)
+**`-i <numIndentions>`** (inspringing toevoegen)
 
-Elke actieve verbinding springt in voor betere leesbaarheid. De standaardwaarde is 16 niveaus. Deze functie is geïntroduceerd met `proxy.jar version 1.16`.
+Elke actieve verbinding springt in voor betere leesbaarheid. De standaardwaarde is 16 niveaus. Deze functie is geïntroduceerd met `proxy.jar version 1.16` .
 
 ### Logbestandsindeling {#log-format}
 
@@ -88,7 +88,7 @@ Een verzoek om een webpagina kan er bijvoorbeeld als volgt uitzien:
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
 * #00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
-* `[GET <?>]` Dit is de inhoud van de aanvraag, in het voorbeeld een van de HTTP-headers (url).
+* `[GET <?>]` is de inhoud van de aanvraag, in het voorbeeld een van de HTTP-headers (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:
 
@@ -97,9 +97,9 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Dit toont het aantal bytes dat tussen cliënt ( `C`) en de server ( `S`) op de zesde aansluiting en op de gemiddelde snelheid.
+Dit toont het aantal bytes dat tussen client ( `C`) en server ( `S`) op de zesde verbinding en bij de gemiddelde snelheid is doorgegeven.
 
-**Een voorbeeld van een logbestandsuitvoer**
+**Een voorbeeld van de Output van het Logboek**
 
 Neem bijvoorbeeld een pagina die op verzoek de volgende code produceert:
 
@@ -127,11 +127,11 @@ De inhoud van `test.html` is:
 </html>
 ```
 
-Ervan uitgaande dat de AEM-instantie ingeschakeld is `localhost:4502`, wordt de proxy als volgt gestart:
+Ervan uitgaande dat de AEM-instantie op `localhost:4502` wordt uitgevoerd, wordt de proxy als volgt gestart:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-De CQ/CRX-instantie is nu toegankelijk via de proxy op `localhost:4444` en alle communicatie via deze poort is aangemeld bij `test.log`.
+De CQ/CRX-instantie is nu toegankelijk via de proxy in `localhost:4444` en alle communicatie via deze poort is aangemeld bij `test.log` .
 
 Als u nu de uitvoer van de proxy bekijkt, ziet u de interactie tussen de browser en de AEM.
 
@@ -146,7 +146,7 @@ Open nu een browser en open de testpagina:
 
 `http://localhost:4444/content/test.html`
 
-Je ziet dat de browser een `GET` verzoek om de pagina:
+En u ziet dat de browser een `GET` aanvraag voor de pagina indient:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -163,7 +163,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-De AEM instantie reageert met de inhoud van het bestand `test.html`:
+De AEM instantie reageert met de inhoud van het bestand `test.html` :
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -189,13 +189,13 @@ S-0-#000319 -> [</html>]
 
 De volgende scenario&#39;s illustreren een paar van de doeleinden waarvoor de Server van de Volmacht kan worden gebruikt:
 
-**Controleren op cookies en de bijbehorende waarden**
+**Controle voor Cookies en hun Waarden**
 
 In het volgende voorbeeld van een logbestandvermelding worden alle cookies en hun waarden weergegeven die door de client worden verzonden via de zesde verbinding die is geopend sinds de proxy is gestart:
 
 `C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]`
 
-**Controleren op kopteksten en hun waarden**
+**het Controleren op Kopballen en hun Waarden**
 
 In het volgende voorbeeld van een logbestandvermelding wordt getoond dat de server in staat is een verbinding te maken waarbij de inhoud in leven blijft en dat de header van de lengte van de inhoud juist is ingesteld:
 
@@ -205,7 +205,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
  S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**Controleren of Keep-Alive werkt**
+**het Controleren als Levend houden** werkt
 
 Levend is een eigenschap van HTTP die een cliënt toestaat om de verbinding van TCP aan de server opnieuw te gebruiken om veelvoudige verzoeken (voor de paginacode, beelden, stijlbladen, etc.) te maken. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
@@ -216,15 +216,15 @@ Controleren of in leven houden werkt:
 * Als houden-levend werkt, zou de verbindenteller nooit boven 5 tot 10 verbindingen moeten gaan.
 * Als houden-levend niet werkt, stijgt de verbindenteller snel.
 
-**Verzoeken om verlies zoeken**
+**Vindend Verzoeken Verloren**
 
-Als u verzoeken verliest in een complexe serverinstelling, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
+Als u aanvragen kwijtraakt in een complexe serverinstelling, bijvoorbeeld met een firewall en een Dispatcher, kunt u met de proxyserver achterhalen waar de aanvraag is verloren. Als er een firewall is:
 
 * Een proxy starten voor een firewall
 * Een andere proxy starten na een firewall
 * Gebruik deze om te zien hoe ver de verzoeken krijgen.
 
-**Verzoeken wijzigen**
+**Verzoeken die** veranderen
 
 Als u van tijd tot tijd hangende verzoeken ervaart:
 

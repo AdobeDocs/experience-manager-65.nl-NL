@@ -30,7 +30,7 @@ HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor inf
 
 De volgende website beschrijft HTTP/2 en de voordelen ervan op een korte en eenvoudige manier:
 
-[Wat u moet weten over HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
+[ wat u over HTTP/2 ](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) moet weten
 
 ## Wat zijn de belangrijkste voordelen van de overgang naar HTTP/2 voor de levering van inhoud? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -43,7 +43,7 @@ De eigen tests van de Adobe leverden de volgende resultaten op:
 
 De volgende demonstratie illustreert het verschil tussen het laden van HTTP/1 en HTTP/2:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+[ https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
 ## Mag ik overschakelen op HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
@@ -61,7 +61,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch gedaan voor u.
 
-1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [Een ondersteuningsticket openen](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
+1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [ een steunkaartje ](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support) openen.
 
    1. Geef de volgende informatie op in uw supportverzoek:
 
@@ -97,4 +97,4 @@ De inhoud die niet in de cache is opgeslagen, raakt de oorspronkelijke servers v
 
 Omdat in de browser dit feit niet wordt vermeld, is het nodig een extensie te downloaden.
 
-Voor Firefox en Chrome is er een extensie met de naam &quot;HTTP/2 en SPDY Indicator&quot;. Browsers ondersteunen alleen veilig http/2, dus is het nodig een URL met https aan te roepen om te verifiëren. Als http/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een koptekst `X-Firefox-Spdy` : `h2`.
+Voor Firefox en Chrome is er een extensie met de naam &quot;HTTP/2 en SPDY Indicator&quot;. Browsers ondersteunen alleen veilig http/2, dus is het nodig een URL met https aan te roepen om te verifiëren. Als http/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header `X-Firefox-Spdy` : `h2` .

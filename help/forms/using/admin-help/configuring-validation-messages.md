@@ -25,17 +25,17 @@ Voor formulieren die als HTML worden gegenereerd, worden validatiefouten voor fo
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer validatie in de lijst Rapportage een van de volgende opties:
 
-   **Berichtvenster:** Validatieberichten weergeven in een afzonderlijk dialoogvenster.
+   **vakje van het Bericht:** om bevestigingsberichten in een afzonderlijk dialoogvakje te tonen.
 
-   **Frame:** Validatieberichten weergeven in een kader van hetzelfde venster.
+   **Kader:** om bevestigingsberichten binnen een kader van het zelfde venster te tonen.
 
-   **Geen kader:** Validatieberichten weergeven in hetzelfde venster. Dit is de standaardwaarde.
+   **Geen Kader:** om bevestigingsberichten in het zelfde venster te tonen. Dit is de standaardwaarde.
 
-   **Via API (met gegevens):** De validatieberichten retourneren via de API (met gegevens). De validatieberichten worden niet op het scherm weergegeven.
+   **Via API (met gegevens):** om de bevestigingsberichten door API (met gegevens) terug te keren. De validatieberichten worden niet op het scherm weergegeven.
 
-   **Via API (met formulier):** De validatieberichten retourneren via de API (met het formulier). De validatieberichten worden niet op het scherm weergegeven.
+   **Via API (met vorm):** om de bevestigingsberichten door API (met de vorm) terug te keren. De validatieberichten worden niet op het scherm weergegeven.
 
-   **Geen:** Validatieberichten niet weergeven.
+   **niets:** om bevestigingsberichten niet te tonen.
 
 1. Klik op Opslaan.
 
@@ -45,13 +45,13 @@ Wanneer Rapportage is ingesteld op Frame of Geen frame, kunt u de locatie van va
 
 1. Selecteer onder Uitvoer validatie in de lijst Positie een van de volgende opties:
 
-   **Links:** Validatieberichten links in de webbrowser weergeven.
+   **Linker:** om bevestigingsberichten op de linkerkant van Webbrowser te tonen.
 
-   **Rechts:** Validatieberichten rechts van de webbrowser weergeven.
+   **juist:** om bevestigingsberichten op de rechterkant van Webbrowser te tonen.
 
-   **Boven**: Validatieberichten boven aan de webbrowser weergeven. Dit is de standaardwaarde.
+   **Hoogste**: Om bevestigingsberichten bij de bovenkant van Webbrowser te tonen. Dit is de standaardwaarde.
 
-   **Onder**: Validatieberichten onder aan de webbrowser weergeven.
+   **Onder**: Om bevestigingsberichten bij de bodem van Webbrowser te tonen.
 
 1. Klik op Opslaan.
 

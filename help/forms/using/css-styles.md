@@ -25,13 +25,13 @@ HTML5-uitvoering van een op XFA gebaseerde formuliersjabloon bestaat uit verschi
 >
 >Wijzig in de CSS-klassen de waarde van de breedte, hoogte, randdikte, boven, links, rechts, onder, opvulling, marge en andere positie- en groottekenmerken niet. Als u de positie- en groottekenmerken wijzigt, verandert de indeling van het formulier.
 
-## CSS-klassen voor elementen  {#css-classes-nbsp-for-elements-nbsp}
+## CSS-klassen  voor elementen  {#css-classes-nbsp-for-elements-nbsp}
 
 Elk element bevat duidelijk gedefinieerde CSS-klassen. U kunt deze klassen wijzigen om de weergave van een element te wijzigen. Elk element, behalve het veld en draw-elementen, heeft twee CSS-klassen: de klasse Type en de klasse Name.
 
-* De **Type-klasse** geeft het type van het XFA-veld aan. U kunt de `type` klasse om de stijlen van alle elementen van een bepaald type te wijzigen.
+* De **klasse van het Type** vertegenwoordigt het type van het XFA gebied. U kunt de klasse `type` overschrijven om de stijlen van alle elementen van een bepaald type te wijzigen.
 
-* De **Name, klasse** komt overeen met de naam van het XFA-veld. U kunt de `name` klasse om aangepaste stijl te wijzigen en toe te passen op een element.
+* De **klasse van de Naam** beantwoordt aan de naam van het XFA gebied. U kunt de klasse `name` overschrijven om een aangepaste stijl te wijzigen en op een element toe te passen.
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Voor pagina&#39;s die niet in de AEM Forms Designer zijn genoemd, worden pagina&
 
 Het veldelement bevat twee geneste elementen: widget en bijschrift.
 
-**Widget-element**
+**element Widget**
 
 Het widgetelement bevat het interface-element voor interactie met gebruikers. De klasse heeft drie CSS-klassen:
 
 * **Widget**: Elke widget heeft deze klasse.
-* **name**: Alle widgets die bij AEM worden geleverd, bevatten de klasse Widget-naam. Voor aangepaste widgets biedt de widgetontwikkelaar de widgetnaamklasse.
-* **type**: Elke widget heeft een gebruikersinterface-element. Deze klasse definieert het type van het interface-element.
+* **naam**: Alle widgets die met AEM worden verscheept bevatten de widgetnaamklasse. Voor aangepaste widgets biedt de widgetontwikkelaar de widgetnaamklasse.
+* **type**: Elke widget heeft een element van het gebruikersinterface. Deze klasse definieert het type van het interface-element.
 
 ```xml
 <!--field with caption-->
@@ -68,7 +68,7 @@ Het widgetelement bevat het interface-element voor interactie met gebruikers. De
 </div>
 ```
 
-Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met de naam **subtype**. Een subtype geeft aan welk type veld het is, bijvoorbeeld NumericField, DateField, TextField. U kunt de subtypeklasse overschrijven om de opmaak van alle velden van het type, subtype, te wijzigen.
+Naast het type en de naamklasse, bevat de gebiedscomponent ook een extra CSS klasse genoemd **subtype**. Een subtype geeft aan welk type veld het is, bijvoorbeeld NumericField, DateField, TextField. U kunt de subtypeklasse overschrijven om de opmaak van alle velden van het type, subtype, te wijzigen.
 
 ## CSS-klassen voor verschillende componenten {#css-classes-for-different-components}
 
@@ -82,7 +82,7 @@ Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met
   <tr>
    <td>Pagina</td>
    <td>page</td>
-   <td>Door gebruiker gedefinieerde naam<br /> of<br /> Pagina&lt;pagenumber&gt; (standaard)</td>
+   <td>Gebruiker-bepaalde naam <br /> of <br /> Pagina&lt;pageNumber&gt; (gebrek)</td>
   </tr>
   <tr>
    <td>Inhoudsgebied</td>
@@ -100,7 +100,7 @@ Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met
    <td>Door gebruiker gedefinieerde naam</td>
   </tr>
   <tr>
-   <td>Tekenen</td>
+   <td>Draw</td>
    <td>draw</td>
    <td>Door gebruiker gedefinieerde naam</td>
   </tr>
@@ -138,88 +138,88 @@ Aan elk veld is een widget gekoppeld die het interface-element vertegenwoordigt.
    <td><strong>HTML UI-tag</strong></td>
   </tr>
   <tr>
-   <td>Knop<br type="_moz" /> </td>
+   <td>Knop <br type="_moz" /> </td>
    <td>NA</td>
-   <td>xfaButton<br type="_moz" /> </td>
-   <td>buttonfieldwidget<br type="_moz" /> </td>
-   <td>input type=button<br type="_moz" /> </td>
+   <td>xfaButton <br type="_moz" /> </td>
+   <td>buttonfieldwidget <br type="_moz" /> </td>
+   <td>input type=button <br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>CheckButton<br type="_moz" /> </td>
-   <td>checkbox, veld<br /> </td>
-   <td>XfaCheckBox<br type="_moz" /> </td>
-   <td>checkbox-widget<br type="_moz" /> </td>
-   <td>invoertype=checkbox<br type="_moz" /> </td>
+   <td>CheckButton <br type="_moz" /> </td>
+   <td>checkbox field <br /> </td>
+   <td>XfaCheckBox <br type="_moz" /> </td>
+   <td>checkboxFieldWidget <br type="_moz" /> </td>
+   <td>input type=checkbox <br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>DateField<br type="_moz" /> </td>
-   <td>datefield<br type="_moz" /> </td>
+   <td>DateField <br type="_moz" /> </td>
+   <td>datefield <br type="_moz" /> </td>
    <td>dateField<br type="_moz" /> </td>
-   <td>datefieldwidget<br type="_moz" /> </td>
-   <td>invoertype=text<br type="_moz" /> </td>
+   <td>datefieldwidget <br type="_moz" /> </td>
+   <td>input type=text <br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>DateTimeField<br type="_moz" /> </td>
+   <td>DateTimeField <br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfield-widget</td>
-   <td>invoertype=text<br type="_moz" /> </td>
+   <td>input type=text <br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>DecimalField<br type="_moz" /> </td>
-   <td>numeriek veld<br type="_moz" /> </td>
-   <td>numericInput<br type="_moz" /> </td>
-   <td>numericfieldwidget<br type="_moz" /> </td>
-   <td>invoertype=text<br type="_moz" /> </td>
+   <td>DecimalField <br type="_moz" /> </td>
+   <td>numericfield <br type="_moz" /> </td>
+   <td>numericInput <br type="_moz" /> </td>
+   <td>numericfieldwidget <br type="_moz" /> </td>
+   <td>input type=text <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>DropDown<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
-   <td>dropDownListWidget<br type="_moz" /> </td>
-   <td>choicelistwidget<br type="_moz" /> </td>
+   <td>choicelist <br type="_moz" /> </td>
+   <td>dropDownListWidget <br type="_moz" /> </td>
+   <td>choicelistwidget <br type="_moz" /> </td>
    <td>selecteren</td>
   </tr>
   <tr>
    <td>ListBox<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
-   <td>listBoxWidget<br type="_moz" /> </td>
-   <td>choicelistwidget<br type="_moz" /> </td>
+   <td>choicelist <br type="_moz" /> </td>
+   <td>listBoxWidget <br type="_moz" /> </td>
+   <td>choicelistwidget <br type="_moz" /> </td>
    <td>ol</td>
   </tr>
   <tr>
-   <td>NumericField<br type="_moz" /> </td>
-   <td>numeriek veld<br type="_moz" /> </td>
-   <td>numericInput<br type="_moz" /> </td>
-   <td>numericfieldwidget<br type="_moz" /> </td>
-   <td>invoertype=text<br type="_moz" /> </td>
+   <td>NumericField <br type="_moz" /> </td>
+   <td>numericfield <br type="_moz" /> </td>
+   <td>numericInput <br type="_moz" /> </td>
+   <td>numericfieldwidget <br type="_moz" /> </td>
+   <td>input type=text <br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>PasswordField<br type="_moz" /> </td>
-   <td>wachtwoordveld<br type="_moz" /> </td>
-   <td>defaultWidget<br type="_moz" /> </td>
-   <td>wachtwoordwidget<br type="_moz" /> </td>
-   <td>input type=password<br type="_moz" /> </td>
+   <td>PasswordField <br type="_moz" /> </td>
+   <td>wachtwoordveld <br type="_moz" /> </td>
+   <td>defaultWidget <br type="_moz" /> </td>
+   <td>wachtwoordwidget <br type="_moz" /> </td>
+   <td>input type=password <br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>RadioButton<br type="_moz" /> </td>
-   <td>radioveld<br type="_moz" /> </td>
-   <td>XfaCheckBox<br type="_moz" /> </td>
-   <td>radiofieldwidget<br type="_moz" /> </td>
-   <td>invoertype=radio<br type="_moz" /> </td>
+   <td>RadioButton <br type="_moz" /> </td>
+   <td>radiofield <br type="_moz" /> </td>
+   <td>XfaCheckBox <br type="_moz" /> </td>
+   <td>radiofieldwidget <br type="_moz" /> </td>
+   <td>input type=radio <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>TextField<br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
-   <td>textfield-widget<br type="_moz" /> </td>
-   <td>invoertype=text<br type="_moz" /> </td>
+   <td>textFieldWidget <br type="_moz" /> </td>
+   <td>input type=text <br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>TimeField<br type="_moz" /> </td>
+   <td>TimeField <br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
-   <td>textfield-widget<br type="_moz" /> </td>
-   <td>invoertype=text<br type="_moz" /> </td>
+   <td>textFieldWidget <br type="_moz" /> </td>
+   <td>input type=text <br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -228,7 +228,7 @@ Aan elk veld is een widget gekoppeld die het interface-element vertegenwoordigt.
 
 Met AEM Forms Designer kunt u statische tekenelementen, zoals tekst en afbeeldingen, invoegen. Voor elk tekenelement wordt een aparte CSS-klasse gekoppeld aan dat element. De lijst met CSS-klassen voor draw-elementen wordt hieronder weergegeven. Aan elk tekenelement is een tekenklasse gekoppeld.
 
-| **Type tekenen** | **CSS-klasse** |
+| **Type van Draw** | **CSS klasse** |
 |---|---|
 | Tekst | text |
 | Afbeelding | image |
@@ -241,12 +241,12 @@ Naast de weergave van UI-componenten in het HTML-formulier kunt u de stijl van e
 
 `Styling Inline Errors`
 
-Wanneer de validatie van een veld resulteert in een fout, wordt een inlinefout weergegeven wanneer het veld actief is. Als u de stijl van inline-fouten wilt wijzigen, overschrijft u de CSS-id **error-msg**.
+Wanneer de validatie van een veld resulteert in een fout, wordt een inlinefout weergegeven wanneer het veld actief is. Om de stijl van gealigneerde fouten te veranderen, vervang CSS identiteitskaart **fout-msg**.
 
 `Styling Inline Warnings`
 
-Wanneer de validatie van een veld resulteert in een waarschuwing, wordt een inlinewaarschuwing weergegeven wanneer het veld actief is. Als u de stijl van deze inline-waarschuwingen wilt wijzigen, overschrijft u de CSS-id **warning-msg**.
+Wanneer de validatie van een veld resulteert in een waarschuwing, wordt een inlinewaarschuwing weergegeven wanneer het veld actief is. Om de stijl van deze gealigneerde waarschuwingen te veranderen, vervang CSS identiteitskaart **waarschuwing-msg**.
 
 `Styling Fields with Validation Errors`
 
-Wanneer de validatie voor een veld mislukt, verandert de stijl van de widget. Deze stijlwijziging wordt uitgevoerd door een CSS-klasse toe te passen **widgetError** op de widgetcomponent. Als u de standaardstijl wilt wijzigen, overschrijft u de instelling **widgetError** klasse.
+Wanneer de validatie voor een veld mislukt, verandert de stijl van de widget. Deze stijlverandering wordt gedaan door een CSS klasse **widgetError** op de widgetcomponent toe te passen. Om het standaard stileren te wijzigen, treedt **widgetError** klasse met voeten.

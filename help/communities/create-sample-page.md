@@ -20,23 +20,23 @@ ht-degree: 0%
 
 Vanaf AEM 6.1 Gemeenschappen is de eenvoudigste manier om een voorbeeldpagina te maken een eenvoudige gemeenschapssite te maken, die bestaat uit een functie Pagina.
 
-Dit omvat een component parsys zodat u kunt [componenten inschakelen voor ontwerpen](basics.md#accessing-communities-components).
+Dit omvat een component parsys zodat u componenten voor creatie ](basics.md#accessing-communities-components) kunt [ toelaten.
 
-Een andere optie voor exploratie met steekproefcomponenten is de eigenschappen te gebruiken die in worden voorgesteld [Community Components Guide](components-guide.md).
+Een andere optie voor exploratie met steekproefcomponenten moet de eigenschappen gebruiken die in de [ Gids van Communautaire Componenten ](components-guide.md) worden voorgesteld.
 
 ## Een Community-site maken {#create-a-community-site}
 
-Dit is vergelijkbaar met het maken van een site die wordt beschreven in [Aan de slag met AEM Communities](getting-started.md).
+Dit is gelijkaardig aan het creëren van een plaats die in [ wordt beschreven Begonnen die met AEM Communities ](getting-started.md).
 
-Het belangrijkste verschil is dat deze zelfstudie een sjabloon voor een community-site maakt die alleen de [Paginafunctie](functions.md#page-function) om een eenvoudige communitysite te maken. Het doet dit vrij van andere eigenschappen (behalve de pre-getelegrafeerde eigenschappen fundamenteel voor alle communautaire plaatsen).
+Het belangrijkste verschil is dat dit leerprogramma tot een malplaatje van de communautaire plaats leidt dat slechts de [ functie van de Pagina ](functions.md#page-function) bevat om een eenvoudige communautaire plaats tot stand te brengen. Het doet dit vrij van andere eigenschappen (behalve de pre-getelegrafeerde eigenschappen fundamenteel voor alle communautaire plaatsen).
 
 ### Nieuw sitesjabloon maken {#create-new-site-template}
 
-Om aan de slag te gaan, maakt u een eenvoudige [sjabloon voor community-site](sites.md).
+Om begonnen te worden, creeer een eenvoudig [ malplaatje van de communautaire plaats ](sites.md).
 
-Van globale navigatie op een auteursinstantie, selecteer **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Site Templates]**.
+Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Site Templates]** bij globale navigatie op een auteurinstantie.
 
-![create-site-template](assets/create-site-template1.png)
+![ creeer-plaats-malplaatje ](assets/create-site-template1.png)
 
 * Selecteren `Create button`
 * BASISINFO
@@ -45,44 +45,44 @@ Van globale navigatie op een auteursinstantie, selecteer **[!UICONTROL Tools]** 
    * `Description`: Een sjabloon die bestaat uit een functie Eén pagina.
    * Selecteren `Enabled`
 
-![site-template-editor](assets/site-template-editor.png)
+![ plaats-malplaatje-redacteur ](assets/site-template-editor.png)
 
 * STRUCTUUR
 
-   * Sleep een `Page` functie naar de Sjabloonbouwer
+   * Sleep een functie `Page` naar de Sjabloonbouwer
    * Voor de details van de Functie van de Configuratie, ga
 
       * `Title`: Eén pagina
       * `URL`: pagina
 
-![site-template-editor-structuur](assets/site-template-editor1.png)
+![ plaats-malplaatje-redacteur-structuur ](assets/site-template-editor1.png)
 
-* Selecteren **`Save`** voor de configuratie
-* Selecteren **`Save`** voor de sitesjabloon
+* Selecteer **`Save`** voor de configuratie
+* Selecteer **`Save`** voor de sitesjabloon
 
 ### Nieuwe community-site maken {#create-new-community-site}
 
 Maak nu een communitysite op basis van de eenvoudige sitesjabloon.
 
-Nadat u de sitesjabloon hebt gemaakt, selecteert u in globale navigatie **[!UICONTROL Communities > Sites]**.
+Selecteer na het maken van de sitesjabloon voor globale navigatie **[!UICONTROL Communities > Sites]** .
 
-![create-community-site](assets/create-community-site1.png)
+![ creeer-gemeenschap-plaats ](assets/create-community-site1.png)
 
-* Selecteren **`Create`** pictogram
+* Pictogram Selecteren **`Create`**
 
 * Stap `1 - Site Template`
 
-   * `Title`: Eenvoudige Community-site
+   * `Title`: eenvoudige communitysite
    * `Description`: Een communautaire site die bestaat uit één pagina voor experimenten.
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
-   * `Name`: monster
+   * `Name` : voorbeeld
 
       * url = http://localhost:4502/content/sites/sample
 
-      * `Template`: choose `Single Page Template`
+      * `Template`: kies `Single Page Template`
 
-     ![create-community-site-template](assets/create-community-site-template.png)
+     ![ creeer-gemeenschap-plaats-malplaatje ](assets/create-community-site-template.png)
 
 * Selecteren `Next`
 * Stap `2 - Design`
@@ -96,26 +96,26 @@ Nadat u de sitesjabloon hebt gemaakt, selecteert u in globale navigatie **[!UICO
 
 * Selecteren `Create`
 
-  ![create-community-site](assets/create-community-site.png)
+  ![ creeer-gemeenschap-plaats ](assets/create-community-site.png)
 
-## De site publiceren {#publish-the-site}
+## De site Publish {#publish-the-site}
 
-![publicatiesite](assets/publish-site.png)
+![ publiceren-plaats ](assets/publish-site.png)
 
-Van de [community sites console](sites-console.md)selecteert u het publicatiepictogram om de site te publiceren. Standaard wordt dit http://localhost:4503 weergegeven.
+Van de [ console van communautaire plaatsen ](sites-console.md), selecteer het publicatiepictogram om de plaats, door gebrek aan http://localhost:4503 te publiceren.
 
 ## Site openen op auteur in bewerkingsmodus {#open-the-site-on-author-in-edit-mode}
 
-![open-site](assets/open-site.png)
+![ open-plaats ](assets/open-site.png)
 
 Selecteer het pictogram van de geopende site zodat u de site in de bewerkingsmodus kunt bekijken.
 
-De URL is [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
+URL is [ http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![auteur-site](assets/author-site.png)
+![ auteur-plaats ](assets/author-site.png)
 
 Op de eenvoudige homepage, is het mogelijk om te zien wat door de communautaire functies en malplaatjes vooraf wordt getelegrafeerd, en spel met het toevoegen en het vormen van communautaire componenten.
 
-## Site weergeven bij publicatie {#view-site-on-publish}
+## Site weergeven op Publish {#view-site-on-publish}
 
-Na publicatie van de pagina opent u de pagina op de [publish-instantie](http://localhost:4503/content/sites/sample/en.html) om te experimenteren met de functies als anonieme sitebezoeker, aangemeld lid of beheerder. De verbinding van het Beleid zichtbaar in het auteursmilieu verschijnt niet in publiceer milieu tenzij een beheerder binnen ondertekent.
+Na het publiceren van de pagina, open de pagina op [ publiceer instantie ](http://localhost:4503/content/sites/sample/en.html) om met de eigenschappen als anonieme plaatsbezoeker, in lid, of een beheerder te experimenteren. De verbinding van het Beleid zichtbaar in het auteursmilieu verschijnt niet in publiceer milieu tenzij een beheerder binnen ondertekent.

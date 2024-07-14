@@ -22,7 +22,7 @@ Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging o
 
 >[!NOTE]
 >
->U kunt zich ook aanmelden bij de documentbeveiliging via Acrobat en andere clienttoepassingen met uw aanmeldingsaccount voor de gebruiker. (Zie [Toegang tot documentbeveiliging instellen vanuit clienttoepassingen](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>U kunt zich ook aanmelden bij de documentbeveiliging via Acrobat en andere clienttoepassingen met uw aanmeldingsaccount voor de gebruiker. (Zie [ Toegang van de Opstelling tot documentveiligheid van cliënttoepassingen ](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Als u de webpagina&#39;s wilt openen, hebt u voor documentbeveiliging een browser en de URL en uw aanmeldingsgegevens nodig. De URL voor gebruikers is anders dan de URL voor beheerders.
 
@@ -36,7 +36,7 @@ Als u zich met een browser wilt aanmelden bij de webpagina&#39;s, hebt u de URL 
 
 Als u toegang hebt tot meer dan één installatie van documentbeveiliging, hebt u de URL nodig voor de instantie van documentbeveiliging die u wilt openen. Zie de beheerder als u deze informatie niet hebt. De standaard-URL voor de gebruikerspagina&#39;s is `https://[host]:[port]/edc`. In sommige gevallen is het poortnummer niet vereist. Vraag de beheerder om meer informatie.
 
-De standaard-URL voor beheerders is `https://[host]:[port]/adminui`.
+De standaard-URL voor beheerders is `https://[host]:[port]/adminui` .
 
 Voor beheerders wordt tijdens de installatie een standaard superbeheerdersaccount gemaakt. U kunt dit account gebruiken om u aan te melden wanneer documentbeveiliging voor het eerst wordt geïnstalleerd.
 
@@ -46,7 +46,7 @@ Voor beheerders wordt tijdens de installatie een standaard superbeheerdersaccoun
 
 1. Typ de URL in uw browser:
 
-   URL voor documentbeveiliging: `https://[host]:[port]/edc`
+   URL van documentbeveiliging: `https://[host]:[port]/edc`
 
    of beheerconsole-URL: `https://[host]:[port]/adminui`
 
@@ -65,15 +65,15 @@ Wanneer u login aan beleidsconsole en aan de belangrijkste pagina van de documen
 
 Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s, waar u beleidsdocumenten en documenten met een beleidsbescherming maakt en beheert.
 
-**Een pagina weergeven**
+**Vertoning een pagina**
 
 1. Klik op de naam van de pagina, bijvoorbeeld op Beleid.
 
-**Terug naar de vorige pagina**
+**ga terug naar de vorige pagina**
 
 1. Klik op de navigatiekoppeling boven aan de pagina voor de pagina waarnaar u wilt teruggaan.
 
-**De gegevenslijst op een pagina vernieuwen**
+**verfrist de gegevens die op een pagina** worden vermeld
 
 1. Klik op de hoofdpagina op de koppeling naar de pagina die u wilt vernieuwen.
 
@@ -83,7 +83,7 @@ Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s
 
 ## Toegang tot documentbeveiliging instellen vanuit clienttoepassingen {#setting-up-access-to-document-security-from-client-applications}
 
-Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Acrobat Help* of de passende *RightsManagementExtension Help* voor informatie over het vormen van de verbinding binnen de cliënttoepassing.
+Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Hulp van Acrobat* of aangewezen *RightsManagementExtension Hulp* voor informatie over het vormen van de verbinding binnen de cliënttoepassing.
 
 Documentbeveiliging is toegankelijk via SSL (Secure Sockets Layer). Installeer het certificaat van de website in het certificaatarchief, zodat u via de clienttoepassingen toegang hebt tot documentbeveiliging.
 
@@ -91,9 +91,9 @@ Documentbeveiliging is toegankelijk via SSL (Secure Sockets Layer). Installeer h
 
 Deze instructies gelden specifiek voor Internet Explorer, maar u kunt het certificaat installeren met een ondersteunde webbrowser. Raadpleeg de Help van uw browser voor meer informatie.
 
-**Servercertificaat installeren met Internet Explorer**
+**installeer het servercertificaat gebruikend Internet Explorer**
 
-1. Open uw webbrowser en typ de basis-URL voor documentbeveiliging in het vak Adres. Typ bijvoorbeeld `https://[host]:[port]`. Er wordt een dialoogvenster Beveiligingswaarschuwing weergegeven.
+1. Open uw webbrowser en typ de basis-URL voor documentbeveiliging in het vak Adres. Typ bijvoorbeeld `https://[host]:[port]` . Er wordt een dialoogvenster Beveiligingswaarschuwing weergegeven.
 1. Klik op Certificaat weergeven en klik vervolgens op Certificaat installeren en selecteer de standaardinstellingen voor de installatie. Het certificaat moet worden geïnstalleerd bij de vertrouwde basiscertificeringsinstanties.
 1. Sluit uw browsersessie.
 1. Open een ander browservenster en typ dezelfde URL in het vak Adres. Er mag geen dialoogvenster Beveiligingswaarschuwing worden weergegeven. Deze test bevestigt dat het certificaat correct geïnstalleerd is.

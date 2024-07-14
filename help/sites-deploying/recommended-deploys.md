@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze pagina verwijst naar geadviseerde topologieën voor AEM. Voor meer informatie over het groeperen van mogelijkheden en hoe te om hen te vormen, zie [Apache Sling API-documentatie](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
+>Deze pagina verwijst naar geadviseerde topologieën voor AEM. Voor meer informatie bij het groeperen van mogelijkheden en hoe te om hen te vormen, zie de [ Apache Sling API documentatie van de Ontdekking ](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
 
 MicroKernels fungeren vanaf AEM 6.2 als persistentiemanagers. Het kiezen van één om uw behoeften te passen hangt van het doel van uw instantie en het plaatsingstype af u overweegt.
 
@@ -33,9 +33,9 @@ De volgende voorbeelden moeten een indicatie zijn van wat hun aanbevolen gebruik
 
 In dit scenario, loopt één enkele instantie TarMK op één enkele server.
 
-**Dit is de standaardplaatsing voor auteursinstanties.**
+**dit is de standaardplaatsing voor auteursinstanties.**
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![ chlimage_1-15 ](assets/chlimage_1-15.png)
 
 De voordelen:
 
@@ -54,7 +54,7 @@ Eén TarMK-instantie fungeert als de primaire instantie. De opslagplaats van de 
 
 Het koude reservemechanisme kan ook als steun worden gebruikt omdat de volledige bewaarplaats constant aan de failoverserver wordt herhaald. De failoverserver loopt op koude reservewijze, wat betekent dat slechts HttpReceiver van de instantie loopt.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![ chlimage_1-16 ](assets/chlimage_1-16.png)
 
 De voordelen:
 
@@ -71,23 +71,23 @@ De nadelen:
 
 >[!NOTE]
 >
->Voor meer informatie over hoe te om AEM met TarMK Koude Reserve te vormen, zie [dit](/help/sites-deploying/tarmk-cold-standby.md) artikel.
+>Voor meer informatie over hoe te om AEM met TarMK te vormen Koude Reserve, zie [ dit ](/help/sites-deploying/tarmk-cold-standby.md) artikel.
 
 >[!NOTE]
 >
->De plaatsing van de Reserve van de Koude in dit voorbeeld TarMK vereist dat zowel de primaire als reserve instanties afzonderlijk worden vergunning gegeven, aangezien er constante replicatie aan de failoverserver is. Raadpleeg voor meer informatie over licenties de [Algemene licentievoorwaarden van de Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>De plaatsing van de Reserve van de Koude in dit voorbeeld TarMK vereist dat zowel de primaire als reserve instanties afzonderlijk worden vergunning gegeven, aangezien er constante replicatie aan de failoverserver is. Voor meer informatie over vergunning verlenen, raadpleeg de [ Algemene het Vergunningstermijnen van de Adobe ](https://www.adobe.com/legal/terms/enterprise-licensing.html).
 
 ### TarMK Farm {#tarmk-farm}
 
-Meerdere instanties van het type Oak worden elk uitgevoerd met één instantie TarMK. De TarMK-opslagplaatsen zijn onafhankelijk en moeten gesynchroniseerd blijven.
+Meerdere Oak-instanties voeren elk uit met één TarMK-instantie. De TarMK-opslagplaatsen zijn onafhankelijk en moeten gesynchroniseerd blijven.
 
-Het houden van de bewaarplaatsen in synchronisatie wordt voorzien van het feit dat de auteurserver de zelfde inhoud aan elk landbouwbedrijflid publiceert. Zie voor meer informatie [Replicatie](/help/sites-deploying/replication.md).
+Het houden van de bewaarplaatsen in synchronisatie wordt voorzien van het feit dat de auteurserver de zelfde inhoud aan elk landbouwbedrijflid publiceert. Voor meer informatie, zie [ Replicatie ](/help/sites-deploying/replication.md).
 
-Voor AEM Communities wordt door de gebruiker gegenereerde inhoud (UGC) nooit gerepliceerd. Voor ondersteuning van UGC op een TarMK-farm raadpleegt u [overwegingen voor AEM Communities](#considerations-for-aem-communities).
+Voor AEM Communities wordt door de gebruiker gegenereerde inhoud (UGC) nooit gerepliceerd. Voor het steunen van UGC op een Farm TarMK, zie [ overwegingen voor AEM Communities ](#considerations-for-aem-communities).
 
-**Dit is de standaardimplementatie voor publicatieomgevingen.**
+**dit is de standaardplaatsing voor publiceer milieu&#39;s.**
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![ chlimage_1-17 ](assets/chlimage_1-17.png)
 
 De voordelen:
 
@@ -95,11 +95,11 @@ De voordelen:
 * Schaalbaarheid voor leestoegang
 * Failover
 
-### Eak-cluster met MongoMK-failover voor hoge beschikbaarheid in één datacenter {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
+### Oak Cluster met MongoMK-failover voor hoge beschikbaarheid in één datacenter {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-Deze benadering impliceert veelvoudige instanties van het Eak die tot een replica toegang hebben MongoDB binnen één enkel gegevenscentrum, in feite creërend een actief-actieve cluster voor het AEM auteursmilieu. Replicasets in MongoDB worden gebruikt om hoge beschikbaarheid en redundantie te bieden in het geval van een hardware- of netwerkstoring.
+Deze aanpak impliceert dat meerdere Oak-instanties toegang hebben tot een MongoDB-replica die is ingesteld binnen één datacenter. In feite wordt er een actief-actief cluster voor de AEM auteuromgeving gemaakt. Replicasets in MongoDB worden gebruikt om hoge beschikbaarheid en redundantie te bieden in het geval van een hardware- of netwerkstoring.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![ chlimage_1-18 ](assets/chlimage_1-18.png)
 
 De voordelen:
 
@@ -110,11 +110,11 @@ De nadelen:
 
 * De prestaties kunnen lager zijn dan met TarMK voor sommige scenario&#39;s
 
-### Eak-cluster met MongoMK-failover over meerdere datacenters {#oak-cluster-with-mongomk-failover-across-multiple-datacenters}
+### Oak-cluster met MongoMK-failover over meerdere datacenters {#oak-cluster-with-mongomk-failover-across-multiple-datacenters}
 
-Deze benadering impliceert veelvoudige instanties van het Eak die tot een replica toegang hebben MongoDB die over veelvoudige gegevenscentra wordt geplaatst, in feite creërend een actief-actieve cluster voor het AEM auteursmilieu. Met meerdere datacenters biedt de replicatie van MongoDB dezelfde hoge beschikbaarheid en redundantie, maar nu ook de mogelijkheid om een storing in het datacenter te verwerken.
+Deze aanpak impliceert dat meerdere Oak-instanties toegang hebben tot een MongoDB-replica die in meerdere datacenters is ingesteld. In feite wordt er een actief-actief cluster voor de AEM auteuromgeving gemaakt. Met meerdere datacenters biedt de replicatie van MongoDB dezelfde hoge beschikbaarheid en redundantie, maar nu ook de mogelijkheid om een storing in het datacenter te verwerken.
 
-![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
+![ oakclustermongofailover2datacenters ](assets/oakclustermongofailover2datacenters.png)
 
 De voordelen:
 
@@ -123,11 +123,11 @@ De voordelen:
 
 >[!NOTE]
 >
->In het diagram hierboven, worden AEM Server 3 en AEM Server 4 voorgesteld met een inactieve status veronderstellend een netwerklatentie binnen tussen de AEM Servers in Centrum 2 van Gegevens en het primaire knooppunt MongoDB in Datacenter 1 die hoger is dan het vereiste gedocumenteerd [hier](/help/sites-deploying/aem-with-mongodb.md#checklists). Als de maximumlatentie compatibel is met de vereisten, bijvoorbeeld door het gebruik van beschikbaarheidszones, dan kunnen de AEM servers in Datacenter 2 ook actief zijn, die tot een actief-actieve AEM cluster over veelvoudige datacenters leiden.
+>In het diagram hierboven, worden AEM Server 3 en AEM Server 4 voorgesteld met een inactieve status die een netwerklatentie tussen de AEM Servers in Centrum 2 van Gegevens en de primaire knoop MongoDB in Centrum 1 veronderstelt van Gegevens die hoger is dan het vereiste dat [ hier ](/help/sites-deploying/aem-with-mongodb.md#checklists) wordt gedocumenteerd. Als de maximumlatentie compatibel is met de vereisten, bijvoorbeeld door het gebruik van beschikbaarheidszones, dan kunnen de AEM servers in Datacenter 2 ook actief zijn, die tot een actief-actieve AEM cluster over veelvoudige datacenters leiden.
 
 >[!NOTE]
 >
->Voor meer informatie over de architecturale concepten MongoDB die in deze sectie worden beschreven, raadpleegt u [MongoDB-replicatie](https://docs.mongodb.org/manual/replication/).
+>Voor extra informatie over de architecturale concepten MongoDB die in deze sectie worden beschreven, zie {de Replicatie van 0} MongoDB ](https://docs.mongodb.org/manual/replication/).[
 
 ## Microkorrels: één voor gebruik {#microkernels-which-one-to-use}
 
@@ -135,7 +135,7 @@ De basisregel waarmee rekening moet worden gehouden bij het kiezen tussen de twe
 
 U kunt deze besluitmatrices gebruiken om te bepalen wat het beste type implementatie is dat aan uw vereisten is aangepast.
 
-De Adobe adviseert hoogst TarMK om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel de AEM Auteur als Publish instanties wordt gebruikt, behalve in de hieronder geschetste gebruiksgevallen.
+De Adobe adviseert hoogst TarMK om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel de AEM Auteur als de instanties van Publish wordt gebruikt, behalve in de hieronder geschetste gebruiksgevallen.
 
 ### Uitzonderingen voor het kiezen van AEM MongoMK in TarMK op authorinstanties {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
@@ -151,7 +151,7 @@ Het is bijna onmogelijk om te voorspellen wat het precieze gelijktijdige model z
 
 >[!NOTE]
 >
->U kunt de lange dag gebruiken om de prestaties van de toepassing van de klant in de context van de geïmplementeerde hardwareconfiguratie te evalueren. Meer informatie over dit gereedschap is beschikbaar [hier](/help/sites-developing/tough-day.md).
+>U kunt de lange dag gebruiken om de prestaties van de toepassing van de klant in de context van de geïmplementeerde hardwareconfiguratie te evalueren. Meer informatie over dit hulpmiddel is beschikbaar [ hier ](/help/sites-developing/tough-day.md).
 
 Een minimumplaatsing met MongoDB zal typisch de volgende topologie impliceren:
 
@@ -164,53 +164,53 @@ Een van de extra voordelen van de implementatie van een MongoDB-replicaset met e
 
 Als de bovenstaande criteria naar verwachting niet tijdens de eerste 18 maanden van plaatsing zullen worden vervuld, wordt het aangemoedigd eerst AEM op te stellen gebruikend TarMK, dan uw configuratie op een recentere datum opnieuw te evalueren wanneer de bovengenoemde criteria van toepassing zijn, en definitief te bepalen of om op TarMK te blijven of aan MongoMK te migreren.
 
-### Uitzonderingen voor het kiezen van AEM MongoMK in TarMK bij publicatie-instanties {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
+### Uitzonderingen voor het kiezen van AEM MongoMK in plaats van TarMK in Publish-instanties {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
 Het wordt afgeraden MongoMK te implementeren voor publicatie-instanties. De publicatielaag van de plaatsing wordt bijna altijd opgesteld als landbouwbedrijf van volledig onafhankelijke publiceer instanties die TarMK in werking stellen, die in synchronisatie door inhoud van de auteursinstanties te herhalen worden gehouden. Deze &quot;gedeelde niets&quot;architectuur, behoorlijk aan de publiceer instanties, staat de plaatsing van toe publiceert rij om horizontaal op een lineaire manier te schrapen. De landbouwbedrijftopologie verstrekt ook het voordeel om het even welke update of verbetering toe te passen om instanties op een voortschrijdende basis te publiceren, zodat om het even welke verandering in publiceer rij geen onderbreking zal vereisen.
 
-Dit is niet van toepassing op AEM Communities die MongoMK-clusters gebruikt op de publicatielijst als er meerdere uitgevers zijn. Als u JSRP (zie [Opslag van communautaire inhoud](/help/communities/working-with-srp.md)), dan zou een cluster MongoMK aangewezen zijn, zoals om het even welke publish zijcluster ongeacht de gekozen MK, zoals MongoDB of RDB.
+Dit is niet van toepassing op AEM Communities die MongoMK-clusters gebruikt op de publicatielijst als er meerdere uitgevers zijn. Als het kiezen van JSRP (zie [ Communautaire Opslag van de Inhoud ](/help/communities/working-with-srp.md)), dan zou een cluster MongoMK aangewezen zijn, zoals om het even welke te publiceren zijcluster ongeacht MK gekozen, zoals MongoDB of RDB.
 
 ### Vereisten en Recommendations bij de implementatie van AEM met MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
 Een reeks eerste vereisten en aanbevelingen is beschikbaar als u een plaatsing MongoMK voor AEM overweegt:
 
-**Verplichte voorwaarden voor MongoDB-implementaties:**
+**Verplichte eerste vereisten voor plaatsingen MongoDB:**
 
-1. De mongoDB-implementatiearchitectuur en -grootte moeten deel uitmaken van de projectimplementatie met hulp van Adobe Consulting of MongoDB-architecten die vertrouwd zijn met AEM.
+1. De mongoDB-implementatiearchitectuur en -grootte moeten deel uitmaken van de projectimplementatie met hulp van Adobe Consulting- of MongoDB-architecten die vertrouwd zijn met AEM;
 1. De deskundigheid MongoDB moet binnen de partner of het klantenteam aanwezig zijn om vertrouwen in het kunnen een bestaande of nieuwe milieu te kunnen handhaven MongoDB;
 1. U kunt ervoor kiezen om de commerciële of open-sourceversie van MongoDB te implementeren (AEM ondersteunt beide), maar u moet rechtstreeks een MongoDB-onderhouds- en ondersteuningscontract aanschaffen bij MongoDB Inc;
 1. De algemene AEM en MongoDB-architecturen en -infrastructuren moeten duidelijk gedefinieerd en gevalideerd worden door een Adobe AEM architect;
 1. Controleer het supportmodel voor AEM implementaties die MongoDB bevatten.
 
-**Sterke aanbevelingen voor MongoDB-implementaties:**
+**Sterke aanbevelingen voor plaatsingen MongoDB:**
 
-* Raadpleeg de MongoDB voor Adobe Experience Manager [artikel](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* De MongoDB-productie bekijken [checklist](https://docs.mongodb.org/manual/administration/production-checklist/);
-* Een certificeringsklasse bijwonen op MongoDB die online beschikbaar is [hier](https://university.mongodb.com/).
+* Raadpleeg het MongoDB voor Adobe Experience Manager [ artikel ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Herzie de productie MongoDB [ checklist ](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Bewerk hier een certificeringsklasse op MongoDB die online beschikbaar is [ ](https://university.mongodb.com/).
 
 >[!NOTE]
 >
->Voor alle aanvullende vragen over deze richtlijnen, voorwaarden en aanbevelingen kunt u contact opnemen met [Klantenservice Adoben](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren {de Zorg van de Klant van de Adobe 0} ](https://helpx.adobe.com/marketing-cloud/contact-support.html).[
 
 ### Overwegingen voor AEM Communities {#considerations-for-aem-communities}
 
-Voor sites die van plan zijn te implementeren [AEM Communities](/help/communities/overview.md)wordt aanbevolen [kiezen voor een implementatie](/help/communities/working-with-srp.md#characteristicsofstorageoptions) geoptimaliseerd voor de verwerking van UGC die door leden van de gemeenschap vanuit de publicatieomgeving is geplaatst.
+Voor plaatsen die van plan zijn om [ AEM Communities ](/help/communities/overview.md) op te stellen, wordt het geadviseerd [ een plaatsing ](/help/communities/working-with-srp.md#characteristicsofstorageoptions) te kiezen die voor behandeling van UGC door communautaire leden van het publicatiemilieu wordt gepost.
 
-Door een [gemeenschappelijk archief](/help/communities/working-with-srp.md), hoeft UGC niet te worden gerepliceerd tussen auteur- en andere publicatieinstanties om een consistente weergave van de UGC te verkrijgen.
+Door a [ gemeenschappelijke opslag ](/help/communities/working-with-srp.md) te gebruiken, te hoeven UGC niet tussen auteur worden herhaald en andere publiceer instanties om een verenigbare mening van UGC te verkrijgen.
 
 Hieronder vindt u een reeks beslissingsmatrixen die u kunnen helpen bij het kiezen van het beste type persistentie voor uw implementatie:
 
 #### Het implementatietype kiezen voor auteur-instanties {#choosing-the-deployment-type-for-author-instances}
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![ chlimage_1-19 ](assets/chlimage_1-19.png)
 
 #### Het implementatietype kiezen voor publicatie-instanties {#choosing-the-deployment-type-for-publish-instances}
 
-![chlimage_1-20](assets/chlimage_1-20.png)
+![ chlimage_1-20 ](assets/chlimage_1-20.png)
 
 >[!NOTE]
 >
->MongoDB is software van derden en is niet opgenomen in het AEM licentiepakket. Zie voor meer informatie de [Beleid voor MongoDB-licenties](https://www.mongodb.org/about/licensing/) pagina.
+>MongoDB is software van derden en is niet opgenomen in het AEM licentiepakket. Voor meer informatie zie [ MongoDB het verlenen van vergunningen beleid ](https://www.mongodb.org/about/licensing/) pagina.
 >
 >Om optimaal gebruik te kunnen maken van uw AEM, raadt Adobe u aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat u kunt profiteren van professionele ondersteuning.
 >
@@ -218,4 +218,4 @@ Hieronder vindt u een reeks beslissingsmatrixen die u kunnen helpen bij het kiez
 >
 >Als u zowel de auteur als de publicatie op MongoDB wilt uitvoeren, moet u twee aparte licenties aanschaffen.
 >
->Zie de klasse [Pagina MongoDB voor Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>Voor meer informatie, zie [ MongoDB voor de pagina van Adobe Experience Manager ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).

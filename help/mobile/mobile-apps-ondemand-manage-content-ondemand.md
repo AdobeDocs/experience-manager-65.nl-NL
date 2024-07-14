@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
@@ -28,15 +28,15 @@ De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud b
 
 Als u aan een online tijdschrift denkt, omvat de belangrijkste inhoud artikelen, advertenties, en de omslagen. Binnen AEM kunnen drie hoofdtypen mobiele on-demand-inhoud worden gemaakt:
 
-* **Artikelen**: tekst die is gebaseerd op illustraties om informatie over te brengen
+* **Artikelen**: tekst die samen met kunst wordt gebaseerd om informatie te vervoeren
 * **Banners:** typisch grafische promotionele verbindingen
-* **Verzamelingen:** een goed gedefinieerde *emmer* gevuld met inhoud, zoals artikelen of banners die het thema van de omslag uitpakken
+* **Inzamelingen:** vertegenwoordigen een goed gedefiniëerd *emmer* gevuld met inhoud zoals artikelen of banners die het thema van de omslag uitpakken
 
-* **Gedeelde bronnen:** staat hergebruik of het delen van gemeenschappelijke stukken over artikelen toe
+* **Gedeelde Middelen:** staat hergebruik of het delen van gemeenschappelijke stukken over artikelen toe
 
 >[!NOTE]
 >
->Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in online Help.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Hulp.
 
 ## Inhoud maken en beheren {#creating-and-managing-content}
 
@@ -46,11 +46,11 @@ De volgende onderwerpen beschrijven het creëren en het beheer van inhoud, namel
 * [Banners beheren](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verzamelingen beheren](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Gedeelde bronnen uploaden](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Inhoud publiceren ongedaan maken](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish-inhoud publiceren](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->Meestal moet u Preflight uitvoeren voordat u inhoud publiceert. Zie [Voorvertonen met Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) voor meer informatie .
+>Meestal moet u Preflight uitvoeren voordat u inhoud publiceert. Zie [ Voorproef met Preflight ](/help/mobile/aem-mobile-manage-ondemand-services.md) voor meer details.
 
 ### Aanvullende bronnen {#additional-resources}
 

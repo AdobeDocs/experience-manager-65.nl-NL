@@ -17,32 +17,32 @@ ht-degree: 0%
 
 Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen die net als andere hyperlinks functioneren.
 
-1. Voer een van de volgende handelingen uit om te openen **[!UICONTROL In-place Image Editor]**:
+1. Voer een van de volgende handelingen uit om **[!UICONTROL In-place Image Editor]** te openen:
 
-   * Klik met Snelle handelingen op **[!UICONTROL Edit]** die wordt weergegeven op een element in de **[!UICONTROL Card]** weergeven. Selecteer het element in de lijstweergave en klik op **[!UICONTROL Edit]** in de werkbalk.
+   * Klik met Snelle handelingen op **[!UICONTROL Edit]** die op een element in de **[!UICONTROL Card]** -weergave wordt weergegeven. Selecteer het element in de lijstweergave en klik op de optie **[!UICONTROL Edit]** op de werkbalk.
 
      >[!NOTE]
      >
-     >Snelle handelingen zijn niet beschikbaar in het dialoogvenster **[!UICONTROL List]** weergeven.
+     >Snelle handelingen zijn niet beschikbaar in de weergave **[!UICONTROL List]** .
 
-   * In de **[!UICONTROL Card]** of **[!UICONTROL List]** selecteert u het element en klikt u op **[!UICONTROL Edit]** op de werkbalk.
-   * Klikken **[!UICONTROL Edit]** op de elementpagina.
+   * Selecteer in de weergave **[!UICONTROL Card]** of **[!UICONTROL List]** het element en klik op **[!UICONTROL Edit]** op de werkbalk.
+   * Klik op **[!UICONTROL Edit]** op de elementpagina.
 
-1. Als u een afbeelding met hyperlinks wilt invoegen, klikt u op **[!UICONTROL Launch Map]** ![afbeelding met hyperlinks](assets/do-not-localize/image-map-icon.png) op de werkbalk.
+1. Om een beeldkaart op te nemen, klik **[!UICONTROL Launch Map]** ![ beeldkaart ](assets/do-not-localize/image-map-icon.png) van de toolbar.
 1. Selecteer de vorm van de afbeelding met hyperlinks. De hotspot van de geselecteerde vorm wordt op de afbeelding geplaatst.
 
-   ![chlimage_1-422](assets/chlimage_1-422.png)
+   ![ chlimage_1-422 ](assets/chlimage_1-422.png)
 
-1. Klik op de hotspot en voer de URL- en Alt-tekst in. Van de **[!UICONTROL Target]** Geef op waar u de afbeelding met hyperlinks wilt weergeven, bijvoorbeeld hetzelfde tabblad, een nieuw tabblad of een iFrame. Voer bijvoorbeeld `https://www.adobe.com` als URL, `Adobe website` als de alt-tekst en geef **[!UICONTROL New Tab]** van de **[!UICONTROL Target]** voor de afbeelding met hyperlinks die moet worden geopend op een nieuw tabblad.
+1. Klik op de hotspot en voer de URL- en Alt-tekst in. Geef in de lijst **[!UICONTROL Target]** op waar u de afbeelding met hyperlinks wilt weergeven, bijvoorbeeld hetzelfde tabblad, een nieuw tabblad of een iFrame. Voer bijvoorbeeld `https://www.adobe.com` in als de URL, `Adobe website` als de Alt-tekst en geef **[!UICONTROL New Tab]** op in de lijst **[!UICONTROL Target]** voor de afbeeldingskaart die moet worden geopend op een nieuw tabblad.
 
-   ![chlimage_1-423](assets/chlimage_1-423.png)
+   ![ chlimage_1-423 ](assets/chlimage_1-423.png)
 
-1. Klikken **[!UICONTROL Confirm]** en klik vervolgens op **[!UICONTROL Finish]** ![Selecteer controle voltooid](assets/do-not-localize/check-ok-done-icon.png) van de toolbar om de veranderingen te bewaren.
+1. Klik **[!UICONTROL Confirm]** en klik dan **[!UICONTROL Finish]** ![ uitgezochte controle ](assets/do-not-localize/check-ok-done-icon.png) van de toolbar om de veranderingen te bewaren.
 
-   Als u de afbeelding met hyperlinks wilt verwijderen, klikt u op de hotspot en klikt u op **[!UICONTROL Delete]** ![delete](assets/do-not-localize/delete-solid-line.png).
+   Om de beeldkaart te schrappen, klik de heet-vlek en klik **[!UICONTROL Delete]** ![ schrapping ](assets/do-not-localize/delete-solid-line.png).
 
 1. Als u de afbeelding met hyperlinks wilt weergeven, navigeert u naar de pagina met elementdetails en plaatst u de cursor boven de afbeelding.
 
-   ![chlimage_1-426](assets/chlimage_1-426.png)
+   ![ chlimage_1-426 ](assets/chlimage_1-426.png)
 
    Als de optie Dynamic Media is ingeschakeld, navigeert u naar de Asset Editor en klikt u op **[!UICONTROL Map]** om alle toegepaste afbeeldingen met hyperlinks weer te geven.

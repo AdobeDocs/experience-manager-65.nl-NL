@@ -21,7 +21,7 @@ ht-degree: 19%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -45,26 +45,26 @@ Met de volgende pagina&#39;s kunt u de integratie configureren:
 * [Video bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe-classificaties](/help/sites-administering/adobeanalytics-classifications.md)
 
-U kunt ook de opdracht [Wizard Inschakelen](/help/sites-administering/opt-in.md) om de integratie gemakkelijk uit te voeren.
+U kunt [ Opt-binnen tovenaar ](/help/sites-administering/opt-in.md) ook gebruiken om de integratie gemakkelijk uit te voeren.
 
 >[!NOTE]
 >
->Zie ook het &#39;Hoe kan ik?-artikel: [AEM integreren met Adobe Target en Adobe Analytics met behulp van DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Zie ook hoe te artikel: [ Integrerend AEM met Adobe Target en Adobe Analytics gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Aanvullende informatie {#further-information}
 
 Zie:
 
-* [Uitbreiding van de Adobe Analytics-integratie](/help/sites-developing/extending-analytics.md) voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het kader van Adobe Analytics aanpassen.
-* Het kennisbankartikel, [Adobe Analytics-integratie - problemen oplossen](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), voor informatie over het oplossen van problemen uw integratie van Adobe Analytics.
+* [ Uitbreidend de Integratie van Adobe Analytics ](/help/sites-developing/extending-analytics.md) voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het kader van Adobe Analytics aanpassen.
+* Het artikel van de kennisbasis, [ integratie van Adobe Analytics - het oplossen van problemenkwesties ](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), voor informatie over het oplossen van problemen uw integratie van Adobe Analytics.
 
 >[!NOTE]
 >
 >Als u Adobe Analytics gebruikt met een aangepaste proxyconfiguratie, moet u [twee OSGi-bundels configureren](/help/sites-deploying/configuring-osgi.md) (bijvoorbeeld met de webconsole) die voor de **Apache HTTP Client**-proxyconfiguraties vereist zijn. Beide zijn vereist omdat sommige functies van AEM de 3.x-API&#39;s gebruiken, terwijl andere de 4.x-API&#39;s gebruiken. Configureren:
 >
->* **Day Commons HTTP Client 3.1** om de 3.x API te configureren;
->  bijvoorbeeld: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* **Cliënt 3.1 van HTTP van de Commons van de Dag 3.x** om 3.x API te vormen;
+>  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
->* **Apache HTTP Components Proxy Configuration** om de 4.x API te configureren;
->  bijvoorbeeld: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* **Apache de Configuratie van de Volmacht van HTTP Componenten** om 4.x API te vormen;
+>  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

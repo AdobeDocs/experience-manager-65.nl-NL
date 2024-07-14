@@ -29,31 +29,31 @@ Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek:
 
 ## Opslagconfiguratieconsole {#storage-configuration-console}
 
-![jsrp-configuration](assets/jsrp-configuration.png)
+![ jsrp-configuration ](assets/jsrp-configuration.png)
 
 In de auteuromgeving, om de console van de opslagconfiguratie te bereiken.
 
-* Selecteer bij globale navigatie de optie **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**
+* Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]** bij globale navigatie
 
 U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 
 * Selecteer een optie
 * Passend configureren
 
-   * Zie details voor [selecteren van MSRP](msrp.md#select-msrp)
-   * Zie details voor [selecteren, DSRP](dsrp.md#select-dsrp)
-   * Zie details voor [selecteren van ASRP](asrp.md#select-asrp)
+   * Zie details voor [ selecterend MSRP ](msrp.md#select-msrp)
+   * Zie details voor [ selecterend DSRP ](dsrp.md#select-dsrp)
+   * Zie details voor [ selecterend ASRP ](asrp.md#select-asrp)
 
-* Selecteren **[!UICONTROL Submit]**.
+* Selecteer **[!UICONTROL Submit]** .
 
 ### Informatie over JCR-opslag {#about-jcr-storage}
 
 Als er geen selectie wordt gemaakt, is de standaardinstelling de AEM opslagplaats, JCR.
 
-JCR is *niet* een algemene opslag die wordt gedeeld door de auteur- en publicatie-omgevingen. Community-inhoud is alleen zichtbaar in de auteur- of publicatieomgeving waarin deze is gemaakt.
+JCR is *niet* een gemeenschappelijke opslag die door de milieu&#39;s van de Auteur en van Publish wordt gedeeld. Community-inhoud is alleen zichtbaar in de auteur- of Publish-omgeving waarin deze is gemaakt.
 
-Bezoek [JCR-winkel](jsrp.md) voor aanvullende informatie.
+Bezoek {de Opslag van 0} JCR ](jsrp.md) voor extra informatie.[
 
 >[!NOTE]
 >
->De afwezigheid van het knooppunt `srpc` krachtens `/etc/socialconfig` Hiermee wordt de standaardinstelling aangegeven [JCR-archief](jsrp.md).
+>De afwezigheid van de knoop `srpc` onder `/etc/socialconfig` wijst op de standaard [ opslag JCR ](jsrp.md).

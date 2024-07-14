@@ -20,23 +20,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
 >**Vereiste**:
 >
->Voordat u leert over het maken en wijzigen van gedeelde bronnen, raadpleegt u [Inhoud synchroniseren](/help/mobile/mobile-ondemand-contentsync.md) de basisbeginselen te begrijpen.
+>Alvorens over het creëren van en het wijzigen van gedeelde middelen te leren, zie [ Synchronisatie van de Inhoud ](/help/mobile/mobile-ondemand-contentsync.md) om de basisconcepten te begrijpen.
 
 Adobe Experience Manager (AEM) Mobiele gebruikers gebruiken Content Sync om live-inhoud te exporteren naar statische inhoud voor gebruik in mobiele apps. Deze export vindt plaats wanneer inhoud vanuit AEM Mobile wordt geüpload naar Mobile On-Demand Services.
 
-De eigenschap ***dps-exportTemplate*** in de bovenstaande tabel wordt het pad naar de exportconfiguraties van de app gedefinieerd. Stel deze eigenschap in om gedeelde bronnen te maken en te wijzigen.
+Het bezit ***dps-exportTemplate*** die in lijst hierboven wordt vermeld, bepaalt de weg aan de de uitvoervormen van app. Stel deze eigenschap in om gedeelde bronnen te maken en te wijzigen.
 
 In de volgende bronnen worden gedeelde bronnen van AEM voor uploaden naar AEM Mobile beschreven.
 
 Met gedeelde HTML-bronnen kunnen artikelen HTML-bronnen delen die anders voor alle artikelen zouden worden gedupliceerd. Deze bronnen kunnen pictogrammen, lettertypen, JavaScript en css bevatten.
 
-De configuratie voor inhoudssynchronisatie vindt u op **&lt;dps-exporttemplate>/dps-HTMLResources>** moet worden geconfigureerd om alle inhoud te exporteren die een artikel vereist voor statische rendering van eigenschappen op een apparaat.
+De configuratie van de Synchronisatie van de Inhoud die bij **wordt gevonden &lt;dps-exportTemplate>/dps-HTMLResources>** zou moeten worden gevormd om al inhoud en artikel uit te voeren dat voor bezit statische teruggeven op apparaat wordt vereist.
 
 >[!CAUTION]
 >
@@ -50,11 +50,11 @@ De configuratie voor inhoudssynchronisatie vindt u op **&lt;dps-exporttemplate>/
 Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 
 1. Open CRXDE Lite op uw AEM.
-1. Bladeren naar dit pad *[/etc/contentSync/templates/dps-we-limited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* om de gedeelde voorbeeldbronnen weer te geven.
+1. Blader naar dit pad *[/etc/contentSync/templates/dps-we-onbeperkt-app/dps-HTMLResources ](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* om de steekproef gedeelde bronnen te bekijken.
 
    U kunt alle eigenschappen bekijken die voor het creëren van uw gedeelde middelen zoals aangetoond in het hieronder cijfer worden vereist:
 
-   ![chlimage_1-145](assets/chlimage_1-145.png)
+   ![ chlimage_1-145 ](assets/chlimage_1-145.png)
 
 >[!NOTE]
 >

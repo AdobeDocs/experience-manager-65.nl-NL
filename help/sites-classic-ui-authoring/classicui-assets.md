@@ -1,5 +1,5 @@
 ---
-title: Werken met elementen
+title: Werken met Assets
 description: In de sectie Auteursomgeving en Gereedschappen vindt u informatie over het gebruik van Content Finder om elementen te zoeken en te gebruiken bij het bewerken van pagina's. AEM Assets biedt andere methoden voor het werken met elementen.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ---
 
-# Werken met elementen{#working-with-assets}
+# Werken met Assets{#working-with-assets}
 
-De [Auteursomgeving en -gereedschappen](/help/sites-authoring/author-environment-tools.md) sectie verstrekt informatie over het gebruiken [!UICONTROL Content Finder] om elementen te zoeken en te gebruiken tijdens het bewerken van pagina&#39;s. AEM Assets biedt andere methoden voor het werken met elementen:
+Het [ Milieu van de Auteur en de sectie van Hulpmiddelen ](/help/sites-authoring/author-environment-tools.md) verstrekt informatie over het gebruiken [!UICONTROL Content Finder] om activa te vinden en te gebruiken wanneer het uitgeven van pagina&#39;s. AEM Assets biedt andere methoden voor het werken met elementen:
 
 * [Dynamic Media Classic-functies aan uw pagina toevoegen](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Werken met Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

@@ -18,7 +18,7 @@ De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren
 
 1. [Een configuratie maken](create-configuration.md)
 1. [Een inhoudsfragmentmodel maken](create-content-model.md)
-1. [Een middelenmap maken](create-assets-folder.md)
+1. [Een Assets-map maken](create-assets-folder.md)
 1. [Een inhoudsfragment maken](create-content-fragment.md)
 1. [Inhoudsfragmenten openen en leveren](create-api-request.md)
 
@@ -26,20 +26,20 @@ De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren
 >
 >Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
 >
->Als u niet bekend bent met AEM of zonder kop, raadpleegt u de [Documentatiereizen zonder kop](/help/journey-headless/overview.md) voor een introductie van begin tot eind, zowel in de vorm van kranten als in de manier waarop AEM dit ondersteunt.
+>Als u aan of AEM of zonder kop nieuw bent, zie de [ Dagbladen van de Documentatie zonder Titel ](/help/journey-headless/overview.md) voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
 
 ## Publiek {#audience}
 
-De taken die worden beschreven in de gids Aan de slag zonder hoofd zijn nodig voor een eenvoudige end-to-end demonstratie van AEM mogelijkheden zonder kop. Iedereen met beheerdertoegang tot een test AEM instantie kan deze gidsen volgen om hoofdloze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
+De taken die worden beschreven in de Headless Getting Started Guides zijn nodig voor een eenvoudige end-to-end demonstratie van AEM mogelijkheden zonder kop. Iedereen met beheerdertoegang tot een test AEM instantie kan deze gidsen volgen om hoofdloze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
 
 In een productiesituatie worden de taken doorgaans echter door verschillende personen uitgevoerd. Bijvoorbeeld:
 
-* **Beheerders** moet de initiële configuratie en mapstructuur voor de inhoud normaal slechts eenmaal of sporadisch instellen.
-* **Informatiearchitecten** nieuwe modellen toe te voegen naarmate de behoeften van de organisatie evolueren.
-* **Inhoudsauteurs** voortdurend inhoud maken als inhoudsfragmenten op basis van de modellen die door de architecten zijn gedefinieerd.
+* **Beheerders** moeten opstelling de aanvankelijke configuratie en omslagstructuur voor de inhoud normaal slechts eenmaal of sporadisch.
+* **de architecten van de Informatie** voegen nieuwe modellen toe aangezien de behoeften van de organisatie evolueren.
+* **de auteurs van de Inhoud** creeert voortdurend inhoud als Fragments van de Inhoud die op de modellen worden gebaseerd door de architecten worden bepaald.
 
 Met de hulplijnen Aan de slag zonder kop wordt aangegeven wie de beschreven taken gewoonlijk uitvoert en hoe vaak.
 
 ## Volgende stap {#next-step}
 
-Klaar om meer te leren? Begin vervolgens met het lezen van het eerste deel van de gids Aan de slag voor headless: [Creërend een Configuratie.](create-configuration.md)
+Klaar om meer te leren? Dan begin door het eerste deel van de Koploze Begonnen Gids te lezen: [ Creërend een Configuratie.](create-configuration.md)

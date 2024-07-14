@@ -23,7 +23,7 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 >[!NOTE]
 >
->Buiten de auteursomgeving zijn andere mechanismen ook beschikbaar voor het zoeken, zoals [Query Builder](/help/sites-developing/querybuilder-api.md) en [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Buiten het auteursmilieu zijn andere mechanismen ook beschikbaar voor het zoeken, zoals de [ Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) en [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Basisinformatie zoeken {#search-basics}
 
@@ -35,34 +35,34 @@ Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag.
 * Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte enzovoort.
-* Definieer een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria.
+* Bepaal en gebruik a [ bewaarde onderzoek ](#saved-searches) - gebaseerd op de bovengenoemde criteria.
 
 >[!NOTE]
 >
->Zoeken kan ook worden aangeroepen door de sneltoets te gebruiken `/` (slash) wanneer de zoekrail zichtbaar is.
+>U kunt de zoekopdracht ook aanroepen door de sneltoets `/` (forward slash) te gebruiken wanneer de zoekbalk zichtbaar is.
 
 ## Zoeken en filteren {#search-and-filter}
 
 U kunt als volgt uw bronnen zoeken en filteren:
 
-1. Openen **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
+1. Open **Onderzoek** (met het vergrootglas in de toolbar) en ga uw onderzoekstermijn in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
 
-   ![s-01](assets/s-01.png)
+   ![ s-01 ](assets/s-01.png)
 
    Door gebrek zullen de onderzoeksresultaten tot uw huidige plaats (namelijk console en verwante middeltype) worden beperkt:
 
-   ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
+   ![ screen_shot_2018-03-23at101445 ](assets/screen_shot_2018-03-23at101445.png)
 
-1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
+1. Indien nodig, kunt u de plaatsfilter (uitgezochte **X** op de filter verwijderen u) over alle consoles/middeltypes zoeken.
 1. De resultaten worden getoond, gegroepeerd volgens console en verwant middeltype.
 
-   U kunt een bepaalde bron selecteren (voor verdere actie) of naar beneden boren door het vereiste type resource te selecteren, bijvoorbeeld **Alle sites weergeven**:
+   U kunt of een specifiek middel (voor verdere actie) selecteren, of neer boren door het vereiste middeltype te selecteren; bijvoorbeeld, **Mening Alle Plaatsen**:
 
-   ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
+   ![ scherm-shot_2019-03-05at101900 ](assets/screen-shot_2019-03-05at101900.png)
 
-1. Als u verder omlaag wilt boren, selecteert u het symbool Rail (linksboven) om het zijpaneel te openen **Filters en opties**.
+1. Als u verder naar beneden wilt boren, selecteer het symbool van het Spoorstaaf (linksboven) om het zijpaneel **Filters &amp; Opties** te openen.
 
-   ![Filters en opties](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![ Filters &amp; Opties ](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    Volgens het middeltypeOnderzoek zal een vooraf bepaalde selectie van onderzoek/filtercriteria tonen.
 
@@ -71,7 +71,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
    * Opgeslagen zoekopdrachten
    * Zoekdirectory
    * Tags
-   * Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publicatiestatus en LiveCopy-status.
+   * Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publish-status, LiveCopy-status.
 
    >[!NOTE]
    >
@@ -79,16 +79,16 @@ U kunt als volgt uw bronnen zoeken en filteren:
    >
    >
    >
-   >    * Afhankelijk van het type bron dat u hebt geselecteerd, zijn bijvoorbeeld de criteria Middelen en Gemeenschappen begrijpelijkerwijs gespecialiseerd.
-   >    * Uw instantie als de [Zoeken in Forms](/help/sites-administering/search-forms.md) kan worden aangepast (aangepast aan de locatie in AEM).
+   >    * Afhankelijk van het type bron dat u hebt geselecteerd, zijn bijvoorbeeld de criteria Assets en Communities begrijpelijk gespecialiseerd.
+   >    * Uw instantie als [ Onderzoek Forms ](/help/sites-administering/search-forms.md) kan worden aangepast (aangewezen aan de plaats binnen AEM).
    >
    >
 
-   ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
+   ![ scherm-shot_2019-03-05at102509 ](assets/screen-shot_2019-03-05at102509.png)
 
 1. U kunt ook extra zoektermen toevoegen:
 
-   ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
+   ![ scherm-shot_2019-03-05at102613 ](assets/screen-shot_2019-03-05at102613.png)
 
 1. Sluit **Zoeken** met de **X** (rechtsboven).
 
@@ -102,23 +102,23 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
 Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde zoekconfiguratie opslaan, zodat deze later kan worden opgehaald en gebruikt:
 
-1. Definieer uw zoekcriteria en selecteer **Opslaan**.
+1. Bepaal uw onderzoekscriteria en selecteer **sparen**.
 
-   ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
+   ![ scherm-shot_2019-03-05at102613-1 ](assets/screen-shot_2019-03-05at102613-1.png)
 
-1. Wijs een naam toe, dan gebruik **Opslaan** ter bevestiging:
+1. Wijs een naam toe, dan gebruik **sparen** om te bevestigen:
 
-   ![screen-shot_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
+   ![ scherm-shot_2019-03-05at102725 ](assets/screen-shot_2019-03-05at102725.png)
 
 1. De volgende keer dat u het deelvenster Zoeken opent, kunt u de opgeslagen zoekopdracht vanuit de kiezer openen:
 
-   ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
+   ![ scherm-shot_2019-03-05at102927 ](assets/screen-shot_2019-03-05at102927.png)
 
 1. Nadat u het bestand hebt opgeslagen, kunt u:
 
-   * Gebruiken **x** (naast de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
-   * **Opgeslagen zoekopdracht bewerken** wijzigt u vervolgens de zoekvoorwaarden **Opslaan** opnieuw.
+   * Het gebruik **x** (tegen de naam van het bewaarde onderzoek) om een nieuwe vraag te beginnen (het bewaarde onderzoek zelf zal niet worden geschrapt).
+   * **geeft Begezeten Onderzoek** uit, verandert de onderzoeksvoorwaarden, dan **sparen** opnieuw.
 
 Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 
-![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
+![ scherm-shot_2019-03-05at103010 ](assets/screen-shot_2019-03-05at103010.png)

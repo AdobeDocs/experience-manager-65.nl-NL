@@ -17,9 +17,9 @@ ht-degree: 12%
 
 De Asset Editor is de pagina die wordt geopend wanneer op een element wordt geklikt dat via Asset Share wordt gevonden, zodat de gebruiker deze aspecten van het element kan bewerken, zoals metagegevens, miniaturen, titels en tags.
 
-De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten gebruikt wordt behandeld in [Een pagina voor de Editor van middelen maken en configureren](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
+De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten gebruikt wordt behandeld in [ Creërend en Vormend een Pagina van de Redacteur van Activa ](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-Naast het gebruik van reeds bestaande editorcomponenten, [!DNL Adobe Experience Manager] ontwikkelaars kunnen ook hun eigen componenten maken .
+Naast het gebruik van reeds bestaande editorcomponenten, kunnen [!DNL Adobe Experience Manager] ontwikkelaars ook hun eigen componenten tot stand brengen.
 
 ## Een sjabloon voor de Asset Editor maken {#creating-an-asset-editor-template}
 
@@ -31,29 +31,29 @@ De volgende voorbeeldpagina&#39;s worden opgenomen in Geometrixx:
 
 ### Clientlib configureren {#configuring-clientlib}
 
-[!DNL Assets] componenten gebruiken een uitbreiding van WCM uitgeeft clientlib. De clientlibs worden meestal geladen in `init.jsp`.
+[!DNL Assets] -componenten gebruiken een extensie van de WCM-bewerkingsclient. De clientlibs worden meestal geladen in `init.jsp` .
 
-Vergeleken met de standaard clientlib-belasting (in core `init.jsp`), [!DNL Assets] sjabloon moet het volgende hebben:
+Vergeleken met het standaard clientlib laden (in core&#39;s `init.jsp`), moet een [!DNL Assets] -sjabloon het volgende hebben:
 
-* De sjabloon moet de `cq.dam.edit` clientlib (in plaats van `cq.wcm.edit`).
+* De sjabloon moet de `cq.dam.edit` clientlib bevatten (in plaats van `cq.wcm.edit` ).
 
 * De clientbibliotheek moet ook in de uitgeschakelde WCM-modus (bijvoorbeeld, geladen op **publiceren**) worden opgenomen om de predicaten, de acties, en de lenzen weer te geven.
 
-Doorgaans wordt het bestaande monster gekopieerd `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) moet aan deze behoeften voldoen.
+In de meeste gevallen moet het kopiëren van het bestaande voorbeeld `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) aan deze vereisten voldoen.
 
 ### JS-handelingen configureren {#configuring-js-actions}
 
-Sommige van de [!DNL Assets] componenten vereisen JS-functies die zijn gedefinieerd in `component.js`. Kopieer dit bestand naar de map met componenten en koppel deze.
+Voor sommige [!DNL Assets] -componenten zijn JS-functies vereist die in `component.js` zijn gedefinieerd. Kopieer dit bestand naar de map met componenten en koppel deze.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-In het voorbeeld wordt deze JavaScript-bron geladen in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+Het voorbeeld laadt deze JavaScript-bron in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Aanvullende stijlbladen {#additional-style-sheets}
 
-Sommige van de [!DNL Assets] gebruiken de widgetbibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
+Sommige [!DNL Assets] -componenten gebruiken de widget-bibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -61,7 +61,7 @@ Sommige van de [!DNL Assets] gebruiken de widgetbibliotheek. Om correct in de in
 
 ### Stijlblad Geometrixx {#geometrixx-style-sheet}
 
-Voor de voorbeeldpaginacomponenten is vereist dat alle kiezers beginnen met `.asseteditor` van `static.css` (`/etc/designs/geometrixx/static.css`). Tips en trucs: alles kopiëren `.asseteditor` selecteert u de gewenste stijlpagina en past u de regels aan.
+Voor de voorbeeldpaginacomponenten is het vereist dat alle kiezers beginnen met `.asseteditor` van `static.css` (`/etc/designs/geometrixx/static.css`). Tips en trucs: kopieer alle `.asseteditor` kiezers naar de stijlpagina en pas de regels naar wens aan.
 
 ### FormChooser: Aanpassingen voor uiteindelijk geladen bronnen {#formchooser-adjustments-for-eventually-loaded-resources}
 
@@ -69,10 +69,10 @@ De Asset Editor gebruikt de Formulierkiezer, waarmee u bronnen - in dit geval el
 
 Bijvoorbeeld:
 
-* Onbewerkte formulierpagina: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* In de formulierpagina geladen element: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* Onbewerkte formulierpagina: [ http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
+* Middel dat in de vormpagina wordt geladen: [ http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html ](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-De voorbeeldhandgrepen zijn `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) doet u het volgende:
+De voorbeeldhandgrepen in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) doen het volgende:
 
 * Ze detecteren of een element is geladen of dat het normale formulier moet worden weergegeven.
 * Als een element wordt geladen, schakelen zij WCM wijze als parsys slechts op een gewone vormpagina uit.
@@ -126,8 +126,8 @@ Gebruik in het HTML-deel de voorafgaande titelset (element of paginatitel):
 
 In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagegevens van een geladen element weergeeft en weergeeft.
 
-1. Maak bijvoorbeeld een componentmap in de projectmap. `/apps/geometrixx/components/samplemeta`.
-1. Toevoegen `content.xml` met het volgende fragment:
+1. Maak bijvoorbeeld een componentmap in de projectmap `/apps/geometrixx/components/samplemeta` .
+1. Voeg `content.xml` toe met het volgende fragment:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -139,7 +139,7 @@ In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagege
        componentGroup="Asset Editor"/>
    ```
 
-1. Toevoegen `samplemeta.jsp` met het volgende fragment:
+1. Voeg `samplemeta.jsp` toe met het volgende fragment:
 
    ```javascript
    <%--
@@ -197,28 +197,28 @@ In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagege
    </div>
    ```
 
-1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Een component bewerkbaar maken, in CRXDE Lite, voegt een knooppunt toe `cq:editConfig` van het primaire type `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden toe te voegen `cq:actions` met één waarde van `DELETE`.
+1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken, voegt u in CRXDE Lite een knooppunt `cq:editConfig` van het primaire type `cq:EditConfig` toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` en één waarde `DELETE` toe te voegen.
 
-1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld `asseteditor.html`) schakelt u over naar de ontwerpmodus en schakelt u de nieuwe component in voor het alineasysteem.
+1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `asseteditor.html` ) over naar de ontwerpmodus en schakel de nieuwe component in voor het alineasysteem.
 
 1. In de modus **Bewerken** is de nieuwe component (bijvoorbeeld **Voorbeeldmetadata**) nu beschikbaar in de sidekick (in de groep **Asset-editor**). Voeg de component in. Als u de metadata wilt opslaan, moet u deze toevoegen aan het metadataformulier.
 
 ## Opties voor metagegevens wijzigen {#modifying-metadata-options}
 
-U kunt de naamruimten wijzigen die beschikbaar zijn in het dialoogvenster [metagegevensformulier](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
+U kunt namespaces beschikbaar in de [ meta-gegevensvorm ](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component) wijzigen.
 
-De momenteel beschikbare metagegevens worden gedefinieerd in `/libs/dam/options/metadata`:
+De momenteel beschikbare metagegevens worden gedefinieerd in `/libs/dam/options/metadata` :
 
 * Het eerste niveau in deze map bevat de naamruimten.
 * De items binnen elke naamruimte vertegenwoordigen metagegevens, zoals de resultaten in een lokaal onderdeel.
 * De inhoud van de metagegevens bevat de informatie voor het type en de opties voor meerdere waarden.
 
-De opties kunnen worden overschreven in `/apps/dam/options/metadata`:
+De opties kunnen worden overschreven in `/apps/dam/options/metadata` :
 
-1. De map kopiëren vanuit `/libs` tot `/apps`.
+1. Kopieer de map van `/libs` naar `/apps` .
 
 1. Items verwijderen, wijzigen of toevoegen.
 
 >[!NOTE]
 >
->Als u nieuwe naamruimten toevoegt, moeten deze worden geregistreerd in uw gegevensopslagruimte/CRX. Anders leidt het verzenden van het metagegevensformulier tot een fout.
+>Als u nieuwe naamruimten toevoegt, moeten deze worden geregistreerd in uw repository/CRX. Anders leidt het verzenden van het metagegevensformulier tot een fout.

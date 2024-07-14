@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Community Components Guide  {#community-components-guide}
 
-De Community Components Guide is een interactief ontwikkelingsinstrument voor de [Sociaal-componentkader (SCF)](scf.md). Het verstrekt een lijst van beschikbare componenten van de Gemeenschappen van Adobe Experience Manager (AEM) of de complexere eigenschappen die van veelvoudige componenten worden gebouwd.
+De communautaire gids van Componenten is een interactief ontwikkelingshulpmiddel voor het [ sociale componentenkader (SCF) ](scf.md). Het verstrekt een lijst van beschikbare componenten van de Gemeenschappen van Adobe Experience Manager (AEM) of de complexere eigenschappen die van veelvoudige componenten worden gebouwd.
 
 Samen met basisinformatie voor elke component, staat de gids voor het experimenteren met toe hoe de componenten SCF/de eigenschappen werken en hoe zij kunnen worden gevormd of worden aangepast.
 
-Voor informatie over de essentiële ontwikkelingsaspecten van elke component, zie [Essentiële functies en componenten](essentials.md).
+Voor informatie betreffende ontwikkelingshoofdstukken met betrekking tot elke component, zie [ de Hoofdzaak van de Eigenschap en van de Component ](essentials.md).
 
 ## Aan de slag {#getting-started}
 
@@ -30,24 +30,24 @@ De handleiding is bedoeld voor gebruik in ontwikkelinstallaties van instanties v
 
 De site Community Components is toegankelijk door naar
 
-* [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
+* [ https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
 De interactie met de communautaire componenten is afhankelijk van:
 
 * De server (auteur of publicatie).
 * Of de bezoeker van de site al dan niet is aangemeld.
 * Indien aangemeld, de aan het lid toegewezen rechten.
-* Of de standaard SRP [JSRP](jsrp.md), is in gebruik.
+* Of het gebrek SRP, [ JSRP ](jsrp.md), in gebruik is.
 
-Als de auteur de bewerkingsmodus wil activeren, voegt u een van de volgende twee in `editor.html` of `cf#` als het eerste padsegment na de servernaam:
+Als u de bewerkingsmodus wilt activeren bij de auteur, voegt u `editor.html` of `cf#` in als het eerste padsegment na de servernaam:
 
 * Standaardinterface:
 
-  [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [ https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * Klassieke gebruikersinterface:
 
-  [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [ https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ Als de auteur de bewerkingsmodus wil activeren, voegt u een van de volgende twee
 >
 >Wanneer de componentpagina in de browser wordt weergegeven, gaat u terug naar de modus Bewerken om het dialoogvenster voor bewerken van de component te openen.
 >
->Voor algemene ontwerpinformatie bekijkt u de [snelle handleiding voor het ontwerpen van pagina&#39;s](../../help/sites-authoring/qg-page-authoring.md).
+>Voor algemene auteursinformatie, bekijk de [ snelle gids aan auteurspagina&#39;s ](../../help/sites-authoring/qg-page-authoring.md).
 >
->Als u niet bekend bent met AEM, kunt u de documentatie raadplegen op [basisbehandeling](../../help/sites-authoring/basic-handling.md).
+>Als niet vertrouwd met AEM, bekijk de documentatie over [ basisbehandeling ](../../help/sites-authoring/basic-handling.md).
 
 ### Startpagina {#home-page}
 
@@ -67,19 +67,19 @@ De handleiding bevat een lijst met SCF-componenten die beschikbaar zijn voor voo
 
 De Gids van Componenten zoals bekeken op een auteursinstantie op Edit wijze:
 
-![gemeenschapscomponent1](assets/community-component1.png)
+![ gemeenschap-component1 ](assets/community-component1.png)
 
 ## Componentpagina&#39;s {#component-pages}
 
 Selecteer een component in de lijst links op de pagina.
 
-![community-component-pagina&#39;s](assets/community-component2.png)
+![ gemeenschap-component-pagina&#39;s ](assets/community-component2.png)
 
 De hoofdtekst van de hulplijn wordt weergegeven:
 
 1. Titel: De naam van de geselecteerde component
-1. [Client-Side Llibraries](#client-side-libraries): Een lijst met een of meer verplichte categorieën
-1. [Inclusief](scf.md#add-or-include-a-communities-component): Als de component dynamisch kan worden opgenomen, kunt u in de bewerkingsmodus van de auteur schakelen tussen de statussen:
+1. [ cliënt-Kant bibliotheken ](#client-side-libraries): Een lijst van één of meerdere vereiste categorieën
+1. [ Includable ](scf.md#add-or-include-a-communities-component): Als de component dynamisch kan worden omvat, dan kan de staat op auteur worden van een knevel voorzien uitgeeft wijze:
 
    * Indien toegevoegd, wordt weergegeven tekst: &quot;Deze component is opgenomen via het bijbehorende knooppunt.&quot;
    * Indien inbegrepen, wordt de getoonde tekst: &quot;Deze component is dynamisch inbegrepen.&quot;
@@ -93,17 +93,17 @@ De hoofdtekst van de hulplijn wordt weergegeven:
 
 ### Interacties tussen auteurs {#author-interactions}
 
-Wanneer u de handleiding gebruikt voor een instantie van de auteur, kunt u het configureren van een component ervaren door het dialoogvenster te openen. Informatie voor ontwikkelaars is te vinden in het [Grondbeginselen van componenten en functies](essentials.md) van de documentatie, terwijl de dialoogmontages in [Community-componenten](author-communities.md) voor auteurs.
+Wanneer u de handleiding gebruikt voor een instantie van de auteur, kunt u het configureren van een component ervaren door het dialoogvenster te openen. De informatie voor ontwikkelaars wordt verstrekt in de [ sectie van de Hoofdzaak van de Component en van de Eigenschap ](essentials.md) van de documentatie, terwijl de dialoogmontages in [ sectie van de Componenten van Gemeenschappen ](author-communities.md) voor auteurs worden beschreven.
 
-Voor de Community Components-handleiding worden bepaalde instellingen in het dialoogvenster Component geplaatst met de [Inclusief](scf.md#add-or-include-a-communities-component) schakelstatus. Als u wilt schakelen tussen het gebruik van de bestaande bron of een dynamisch opgenomen bron, selecteert u in de bewerkingsmodus zowel de component als de insluitende tekst en dubbelklikt u om het dialoogvenster Bewerken te openen:
+Voor de gids van Componenten Gemeenschap, worden sommige montages van de componentendialoog bedekt met [ Includable ](scf.md#add-or-include-a-communities-component) knevelstaat. Als u wilt schakelen tussen het gebruik van de bestaande bron of een dynamisch opgenomen bron, selecteert u in de bewerkingsmodus zowel de component als de insluitende tekst en dubbelklikt u om het dialoogvenster Bewerken te openen:
 
-![gemeenschapscomponent3](assets/community-component3.png)
+![ gemeenschap-component3 ](assets/community-component3.png)
 
-Onder de **Sjablonen** tab:
+Onder het **lusje van Malplaatjes**:
 
-![gemeenschapscomponent4](assets/community-component4.png)
+![ gemeenschap-component4 ](assets/community-component4.png)
 
-* **Inclusief de onderliggende component met sling:include**
+* **omvat de kindcomponent met het verbinden:omvat**
 
   Als deze optie niet is ingeschakeld, gebruikt de Component Guide de bestaande bron in de repository (een jcr-knooppunt dat een onderliggend knooppunt is van een par-knooppunt).
 
@@ -115,25 +115,25 @@ Onder de **Sjablonen** tab:
 
   De optie Standaard is uitgeschakeld.
 
-### Interacties publiceren {#publish-interactions}
+### Publish-interacties {#publish-interactions}
 
 Wanneer u de handleiding gebruikt op een publicatie-instantie, kunt u de componenten en functies ervaren als bezoeker van de site (niet aangemeld) en als leden met verschillende bevoegdheden wanneer u zich hebt aangemeld.
 
 >[!NOTE]
 >
->Houd rekening met het volgende als de SRP in gebreke blijft [JSRP](jsrp.md), dan is UGC die op de publicatieinstantie is ingevoerd, alleen zichtbaar bij publicatie en wordt *niet* zijn zichtbaar vanaf de [matiging](moderate-ugc.md) console op de auteurinstantie.
+>Ben zich bewust, als SRP aan [ JSRP ](jsrp.md) wordt verlaten, dan zal UGC ingegaan op publiceer instantie slechts op zichtbaar zijn publiceren, en ** niet [ van de ](moderate-ugc.md) console van de moderatie {op de auteursinstantie zichtbaar zijn.
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
-De client-side bibliotheken (clientlibs) die voor elke component worden vermeld, zijn de *vereist* waarnaar moet worden verwezen wanneer de component op een pagina wordt geplaatst. De clientlibs bieden een manier om het downloaden van JavaScript en CSS die worden gebruikt om de component in de browser te renderen, te beheren en te optimaliseren.
+De cliënt-zijbibliotheken (clientlibs) die voor elke component worden vermeld zijn die *worden vereist* om worden van verwijzingen voorzien wanneer de component op een pagina wordt geplaatst. De clientlibs bieden een manier om de download van de JavaScript en CSS die worden gebruikt om de component in de browser te renderen, te beheren en te optimaliseren.
 
-Ga voor meer informatie naar [Clientlibs voor Community-componenten](clientlibs.md).
+Voor meer informatie, bezoek [ Clientlibs voor de Componenten van Gemeenschappen ](clientlibs.md).
 
 ## Imitatie {#impersonation}
 
-Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van **[!UICONTROL Impersonate]** om in de gebruikersnaam te typen of om een keuze te maken in de keuzelijst en vervolgens op de knop te klikken. Klik op Vorige versie om u af te melden en de imitatie te beëindigen.
+Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van de **[!UICONTROL Impersonate]** knoop om of in de gebruikersbenaming te typen of van de pull-down lijst te selecteren, en dan de knoop te klikken. Klik op Vorige versie om u af te melden en de imitatie te beëindigen.
 
-De publicatie-instantie hoeft zich niet voor te doen. U gebruikt gewoon de koppeling Aanmelden/Afmelden om verschillende gebruikers na te bootsen, zoals de [demo-gebruikers](tutorials.md#demo-users).
+De publicatie-instantie hoeft zich niet voor te doen. Eenvoudig gebruik de Login/Logout verbinding om zich als diverse gebruikers, zoals de [ demogebruikers ](tutorials.md#demo-users) na te bootsen.
 
 ## Aanpassing {#customization}
 
@@ -143,17 +143,17 @@ Wanneer toegelaten, is elke component SCF beschikbaar voor prototyping van mogel
 
 >[!NOTE]
 >
->**Dit gereedschap is alleen-lezen**. Geen van de bewerkingen aan sjablonen, CSS of gegevens worden opgeslagen in de gegevensopslagruimte.
+>**Dit hulpmiddel is read-only**. Geen van de bewerkingen aan sjablonen, CSS of gegevens worden opgeslagen in de gegevensopslagruimte.
 
-Als u snel wilt experimenteren met aanpassingen, `scg:showIde`eigenschap moet worden toegevoegd aan het JCR-knooppunt voor inhoud van de componentpagina en op true worden ingesteld.
+Om snel met aanpassingen te experimenteren, moet het `scg:showIde` bezit aan de inhoudJCR van de componentenpagina worden toegevoegd knoop en aan waar worden geplaatst.
 
 De component comments als voorbeeld gebruiken voor de auteur of de publicatie-instantie, aangemeld met beheerdersrechten:
 
-1. Bladeren naar [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Blader naar [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   Bijvoorbeeld: [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
+   Bijvoorbeeld, [ http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. Selecteer de componenten `jcr:content` node
+1. De node `jcr:content` van de component selecteren
 
    Bijvoorbeeld: `/content/community-components/en/comments/jcr:content`
 
@@ -166,13 +166,13 @@ De component comments als voorbeeld gebruiken voor de auteur of de publicatie-in
 1. Selecteren **[!UICONTROL Save All]**
 1. Laad de pagina Opmerkingen in de handleiding opnieuw
 
-   [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
+   [ http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
 1. Er zijn nu drie tabbladen voor sjablonen, CSS en gegevens.
 
-![communautaire component5](assets/community-component5.png)
+![ gemeenschap-component5 ](assets/community-component5.png)
 
-![gemeenschapscomponent6](assets/community-component6.png)
+![ gemeenschap-component6 ](assets/community-component6.png)
 
 ### Tabblad Sjablonen {#templates-tab}
 

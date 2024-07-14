@@ -20,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
-De **App beheren** de tegel en de pagina &quot;App beheren&quot; bieden een manier om toepassingsmetagegevens weer te geven en te bewerken. Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Dit kunnen algemene metagegevens, iOS-metagegevens en schermafbeeldingen zijn. Zie de [App-tegel beheren](/help/mobile/phonegap-app-details-tile.md) voor meer informatie over algemene en iOS-metagegevens.
+Het **leidt App** tegel en de &quot;Manage App&quot;pagina verstrekt een middel om toepassingsmeta-gegevens te bekijken en uit te geven. Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Dit kunnen algemene metagegevens, iOS-metagegevens en schermafbeeldingen zijn. Zie [ leiden AppTegel ](/help/mobile/phonegap-app-details-tile.md) voor verdere details op gemeenschappelijke en meta-gegevens van iOS.
 
 ## App-gegevens bewerken {#editing-the-app-data}
 
@@ -30,39 +30,39 @@ De metagegevens van de app bewerken:
 
 1. Navigeer naar de dashboardpagina voor de app.
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![ chlimage_1-29 ](assets/chlimage_1-29.png)
 
-1. Als u details wilt weergeven of bewerken door te klikken op &#39;..&#39; in de rechterbenedenhoek van het dialoogvenster **App beheren** tegel.
+1. Om details te bekijken of uit te geven door &quot;...&quot;in de bodem juiste hoek van **te klikken leidt App** tegel.
 
 1. Ga of bekijk de details in om het even welke vijf beschikbare lusjes zoals aangetoond in het hieronder cijfer in.
 
-   ![chlimage_1-30](assets/chlimage_1-30.png)
+   ![ chlimage_1-30 ](assets/chlimage_1-30.png)
 
 ## Algemene en IOS-metagegevens bewerken {#editing-common-and-ios-metadata}
 
 U kunt de algemene en IOS-metagegevens bewerken:
 
-* Selecteer de **Geavanceerd** op de pagina met toepassingsbeschrijving.
+* Selecteer het **Geavanceerde** lusje van de pagina van de toepassingsbeschrijving.
 * Bewerk of bekijk de algemene en IOS-metagegevens. Zie de onderstaande afbeeldingen voor meer informatie.
 
-![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
+![ chlimage_1-31 ](assets/chlimage_1-31.png) ![ chlimage_1-32 ](assets/chlimage_1-32.png)
 
 ## Schermafbeeldingen toevoegen en verwijderen {#add-and-remove-screenshots}
 
-U kunt schermafbeeldingen van de app opnemen in de lijst met metagegevens. Sommige leveranciers hebben nauwkeurige schermafbeeldingen nodig wanneer ze een app naar hun app-winkel verzenden. Deze afbeeldingen moeten al in Elementen voorkomen. Zie [Asset Picker](../assets/search-assets.md#assetpicker) om uw screenshots te uploaden.
+U kunt schermafbeeldingen van de app opnemen in de lijst met metagegevens. Sommige leveranciers hebben nauwkeurige schermafbeeldingen nodig wanneer ze een app naar hun app-winkel verzenden. Deze afbeeldingen moeten al bestaan in Assets. Zie [ de Plukker van Activa ](../assets/search-assets.md#assetpicker) om uw screenshots te uploaden.
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![ chlimage_1-33 ](assets/chlimage_1-33.png)
 
 ### Schermafbeeldingen toevoegen {#add-screenshots}
 
 Een element toevoegen als een schermafbeelding:
 
-1. In de bewerkingsmodus van het dialoogvenster **App beheren** klikt u op Toevoegen (plus-pictogram).
-1. Selecteer het element en klik op **Selecteren** om het element toe te voegen.
+1. Terwijl op geef wijze van uit **beheer App** pagina uit, voegt de klik (plus pictogram) toe.
+1. Selecteer de activa en klik **Uitgezocht** om de activa toe te voegen.
 
-   ![chlimage_1-34](assets/chlimage_1-34.png)
+   ![ chlimage_1-34 ](assets/chlimage_1-34.png)
 
-1. Selecteer het element en klik op **Selecteren** om het element toe te voegen.
+1. Selecteer de activa en klik **Uitgezocht** om de activa toe te voegen.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Een schermafbeelding verwijderen:
 
 Klik op de knop Verwijderen op het element.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![ chlimage_1-35 ](assets/chlimage_1-35.png)
 
 ## De volgende stappen {#the-next-steps}
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity om dynamisch binnen een communautaire plaats door erkende gebruikers van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
-Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack), kunnen groepen worden genest binnen andere groepen.
+Vanaf de Gemeenschappen [ eigenschappak 1 ](deploy-communities.md#latestfeaturepack), is het mogelijk voor groepen worden genesteld binnen andere groepen.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -29,24 +29,24 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack),
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>social/group/components/hbs/communitygroupmembershipList</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong> clientllibs </strong></a></td>
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/group/components/hbs/communitygroupmemberlist/communitygroupmemberlist.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td> /libs/social/group/components/hbs/communitygroupmemberlist/clientlibs/memberList.css</td>
   </tr>
   <tr>
    <td><strong>eigenschappen</strong></td>
-   <td>Zie <a href="creating-groups.md">Communautaire groep</a></td>
+   <td>Zie <a href="creating-groups.md"> Communautaire Groep </a></td>
   </tr>
  </tbody>
 </table>
@@ -56,19 +56,19 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack),
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>sociaal/groep/componenten/hbs/communitygroepen</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong> clientllibs </strong></a></td>
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td> /libs/social/group/components/hbs/communitygroupmemberlist/clientlibs/communitygroups.css</td>
   </tr>
  </tbody>
@@ -78,23 +78,23 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack),
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Community Group API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [ Communautaire Groep API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Eindpunten van groepen Gemeenschap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [ Eindpunten van de Groep van de Gemeenschap ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Functie Groepen {#groups-function}
 
-Een community-sitestructuur die een [Groepen, functie](functions.md#groups-function) ondersteunt de oprichting van nieuwe `community groups` vanuit de publicatie- en auteursomgevingen. De gemaakte community-groep bevat een `community groups member list` die de leden van de groep opsomt.
+Een communautaire plaatsstructuur die de functie van a [ Groepen ](functions.md#groups-function) omvat steunt de verwezenlijking van nieuw `community groups` van publiceren en auteursmilieu&#39;s. De gemaakte community-groep bevat een `community groups member list` -component waarin de leden van de groep worden vermeld.
 
-Een of meer [communitygroepsjablonen](tools-groups.md), die het ontwerp van de pagina&#39;s van de communautaire groep verstrekken, kan voor de functie van Groepen worden gevormd. Dit geldt wanneer de functie wordt toegevoegd aan een [sjabloon voor community-site](sites.md) of genest binnen een groepssjabloon van een gemeenschap.
+Één of meerdere [ malplaatjes van de communautaire groep ](tools-groups.md), die het ontwerp van de pagina&#39;s van de communautaire groep verstrekken, kan voor de functie van Groepen worden gevormd. Dit is waar wanneer de functie aan a [ malplaatje van de communautaire plaats ](sites.md) of binnen een malplaatje van de communautaire groep wordt toegevoegd.
 
-Het opnemen van meerdere groepssjablonen resulteert in een keuze. Dat wil zeggen, de keuze van het ontwerp dat wordt voorgesteld aan de geautoriseerde gebruiker op het moment dat een community-groep wordt gemaakt voor de community-site. Zie de sectie over [communautaire groepen](creating-groups.md) voor auteurs.
+Het opnemen van meerdere groepssjablonen resulteert in een keuze. Dat wil zeggen, de keuze van het ontwerp dat wordt voorgesteld aan de geautoriseerde gebruiker op het moment dat een community-groep wordt gemaakt voor de community-site. Zie de sectie op [ communautaire groepen ](creating-groups.md) voor auteurs.
 
 ### Geneste groepen {#nested-groups}
 
-Vanaf Gemeenschappen [FP1](deploy-communities.md#latestfeaturepack), is het mogelijk dat een groepsfunctie wordt opgenomen in een groepssjabloon, zodat geneste groepen (subgemeenschappen) mogelijk zijn.
+Vanaf de Gemeenschappen [ FP1 ](deploy-communities.md#latestfeaturepack), is het mogelijk voor een functie van Groepen om binnen een groepsmalplaatje worden omvat, waarbij het toestaan voor genestelde groepen (subCommunities).
 
 Wanneer een communautaire plaats of groepsmalplaatje de functie van Groepen omvat, is het mogelijk:
 

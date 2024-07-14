@@ -18,24 +18,24 @@ ht-degree: 0%
 
 # Lokale referenties beheren {#managing-local-credentials}
 
-Lokale referenties zijn persoonlijke sleutelgegevens die worden gehost in Betrouwbaarheidsbeheer. A *lokale referentie* identificeert waar de DES van een gebruiker referentie wordt opgeslagen. Met Betrouwbaarheidsbeheer kunt u uw lokale gegevens importeren en beheren door bijvoorbeeld bestaande PFX-bestanden te gebruiken, zodat u lokale gegevens kunt importeren, bewerken en verwijderen.
+Lokale referenties zijn persoonlijke sleutelgegevens die worden gehost in Betrouwbaarheidsbeheer. A *lokale referentie* identificeert waar de referentie van DES van een gebruiker wordt opgeslagen. Met Betrouwbaarheidsbeheer kunt u uw lokale gegevens importeren en beheren door bijvoorbeeld bestaande PFX-bestanden te gebruiken, zodat u lokale gegevens kunt importeren, bewerken en verwijderen.
 
 AEM formulieren ondersteunen RSA- en DSA-referenties van maximaal 4096 bits in de standaard PKCS12-indeling (.pfx- en .p12-bestanden).
 
 U kunt elk gewenst aantal referenties importeren en exporteren. Als u een verlopen referentie wilt vervangen met dezelfde alias, verwijdert u de referentie en importeert u de nieuwe referentie met dezelfde alias.
 
-Voor informatie en instructies met betrekking tot Acrobat Reader DC Extensions raadpleegt u [Referenties configureren voor gebruik met Acrobat Reader DC Extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Voor informatie en instructies met betrekking tot de Uitbreidingen van Acrobat Reader DC, zie [ Vormende geloofsbrieven voor gebruik met de Uitbreidingen van Acrobat Reader DC ](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
 ## Een referentie importeren {#import-a-credential}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Klik op Import. Selecteer onder Type vertrouwde winkel een van de volgende opties:
 
-   * **Documentondertekeningsreferentie:** Een referentie die wordt gebruikt voor het uitgeven van een digitale handtekening op een document.
-   * **Acrobat Reader DC Extensions Credential:** Een digitaal certificaat dat specifiek is voor Acrobat Reader DC Extensions en waarmee Adobe Reader-gebruiksrechten kunnen worden geactiveerd in de geproduceerde PDF-documenten.
-   * **Standaard:** Geeft aan dat dit de standaardreferentie is voor gebruik met Acrobat Reader DC Extensions.
+   * **Document Signing Credential:** De referentie van A die wordt gebruikt om een digitale handtekening op een document uit te geven.
+   * **Credential van de Uitbreidingen van Acrobat Reader DC:** Een digitaal certificaat specifiek voor de Uitbreidingen van Acrobat Reader DC dat Adobe Reader gebruiksrechten toelaat om in de geproduceerde documenten van de PDF worden geactiveerd.
+   * **Gebrek:** wijst erop dat dit de standaardreferentie is om met de Uitbreidingen van Acrobat Reader DC te gebruiken.
 
-   Voor informatie over het verkrijgen van een referentie raadpleegt u [Installatie van AEM formulieren voorbereiden](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+   Voor informatie over het verkrijgen van referentie, zie [ Voorbereidend om AEM vormen ](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf) te installeren.
 
 1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC Extensions en de service Handtekening. Deze alias wordt ook gebruikt om de referentie via programmacode te benaderen met de SDK voor AEM formulieren.
 

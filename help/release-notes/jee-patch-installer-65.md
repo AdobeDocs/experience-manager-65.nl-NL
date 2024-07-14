@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[Contact opnemen met ondersteuning](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) voor meer informatie of om de pleister te verkrijgen.
+>[ Steun van het Contact ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) voor meer informatie of om het flard te verkrijgen.
 
 ## Het installatieprogramma van de patch {#about-the-patch-installer}
 
-Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen voor alle componenten van AEM 6.5 Forms JEE die beschikbaar zijn tot de release van deze patch. Zie de nieuwste  [Release-aantekeningen bij Service Pack](release-notes.md) voor een volledige lijst van opgeloste problemen.
+Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen voor alle componenten van AEM 6.5 Forms JEE die beschikbaar zijn tot de release van deze patch. Zie de recentste [ Nota&#39;s van de Versie van het Pak van de Dienst ](release-notes.md) voor een volledige lijst van vaste kwesties.
 
 ## Vereisten voor de installatie van de patch {#prerequisites-to-installing-the-patch}
 
@@ -31,52 +31,52 @@ Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen v
 
 ## De patch installeren en configureren {#installing-and-configuring-the-patch}
 
-1. Maak een back-up van de &lt;*AEM_forms_root*>/implementatiemap. Dit is vereist als u besluit de snelle oplossing te verwijderen.
+1. Neem een steun van &lt;*AEM_forms_root*>/stel omslag op. Dit is vereist als u besluit de snelle oplossing te verwijderen.
 1. Stop uw toepassingsserver.
 1. Pak het archiefbestand van het patch-installatieprogramma uit op de vaste schijf.
 1. In de map met de naam volgens het besturingssysteem dat u gebruikt:
 
-   * **Windows**
+   * **Vensters**
 Navigeer naar de juiste map op de installatiemedia of de installatiemap op de vaste schijf waarnaar u het installatieprogramma hebt gekopieerd en dubbelklik op het bestand aemforms65_cfp_install.exe.
 
       * (Windows 32-bits) `Windows\Disk1\InstData\VM`
       * (Windows 64-bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Navigeer aan de aangewezen folder, en van een bevelherinnering, type `./aem65_cfp_install.bin`.
+Navigeer naar de juiste map en typ `./aem65_cfp_install.bin` vanaf een opdrachtprompt.
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Hiermee wordt een installatiewizard gestart die u door de installatie begeleidt.
 
-1. Klik in het deelvenster Inleiding op **[!UICONTROL Next]**.
-1. Op de **Installatiemap kiezen** , controleert u of de weergegeven standaardlocatie correct is voor uw bestaande installatie of klikt u op **[!UICONTROL Browse]** om de alternatieve map te selecteren waarin AEM formulieren zijn geïnstalleerd en klik op **[!UICONTROL Next]**.
-1. Lees de informatie over het overzicht van reparaties in Snel repareren en klik op **[!UICONTROL Next]**.
-1. Lees de informatie van het Pre-installatieoverzicht en klik **[!UICONTROL Install]**.
-1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie updates op uw geïnstalleerde dossiers toe te passen.
+1. Klik in het deelvenster Inleiding op **[!UICONTROL Next]** .
+1. Op **kies installeer het scherm van de Omslag**, verifieer dat de getoonde standaardplaats voor uw bestaande installatie correct is, of klik **[!UICONTROL Browse]** om de afwisselende omslag te selecteren waar de AEM vormen geïnstalleerd zijn, en **[!UICONTROL Next]** te klikken.
+1. Lees de informatie over het overzicht van reparaties in Snel repareren en klik op **[!UICONTROL Next]** .
+1. Lees de informatie over het pre-installatieoverzicht en klik op **[!UICONTROL Install]** .
+1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie-updates toe te passen op de geïnstalleerde bestanden.
 
-1. **[Alleen voor Windows]:** Ga als volgt te werk:
-   * Schakel de optie **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. Uitvoeren **Configuratiebeheer** door de **ConfigurationManager.bat** bestand in `[aem-forms root]\configurationManager\bin`.
+1. **[slechts voor Vensters ]:** doe het volgende:
+   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Voer **Manager van de Configuratie** in werking door het {**dossier 3} te gebruiken 2} ConfigurationManager.bat in `[aem-forms root]\configurationManager\bin`.**
 
-   * U kunt de selectie van de **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. Voor uitvoering **Configuratiebeheer** gebruiken **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer naar *`<AEMForms_Install_Dir>\configurationManager\bin`* en vervangt u de **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** uiterlijk [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) en [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) bestanden, zoeken en vervangen **as-1.4.1.1.jar** with **as-1.4.1.2.jar** in deze twee bestanden.
+   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Alvorens **Manager van de Configuratie in werking te stellen** gebruikend **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer aan *`<AEMForms_Install_Dir>\configurationManager\bin`* folder en vervang **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** met recentste [ ConfigurationManager.lax ](/help/assets/ConfigurationManager.lax) en [ ConfigurationManager_IPV6.lax ](/help/assets/ConfigurationManager_IPv6.lax) dossiers, Onderzoek, en vervang **as-1.4.1.1.jar** met **as-1.4.1.2.jar** in deze twee dossiers.
 
    >[!NOTE]
    >
-   >Gebruiken **ConfigurationManager.bat** kunt u voorkomen dat de naam van de .lax-bestanden handmatig wordt bijgewerkt.
+   >Het gebruiken van **ConfigurationManager.bat** dossier helpt u vermijden het bijwerken naam van .lax dossiers manueel.
    >
 
-1. **[Alleen voor Unix]:**
+1. **[voor op unix-Gebaseerd slechts ]:**
 
-   * De **Configuratiebeheer starten** selectievakje is standaard ingeschakeld. Klikken **[!UICONTROL Done]** om de Manager van de Configuratie onmiddellijk in werking te stellen of te lopen **Configuratiebeheer** later, schrap **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. U kunt beginnen **Configuratiebeheer** later het gebruiken van het aangewezen manuscript in `[AEM_forms_root]/configurationManager/bin` directory.
+   * De **controledoos van de Manager van de Configuratie van het 0} Begin wordt geselecteerd door gebrek.** Klik **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen onmiddellijk of **de Manager van de Configuratie** later in werking te stellen, schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. U kunt **Manager van de Configuratie** later beginnen gebruikend het aangewezen manuscript in de `[AEM_forms_root]/configurationManager/bin` folder.
 
-1. Kies afhankelijk van uw toepassingsserver een van de volgende documenten en volg de instructies in het dialoogvenster *Formulieren configureren en implementeren AEM* sectie.
+1. Afhankelijk van uw toepassingsserver, kies één van de volgende documenten en volg de instructies in *het Vormen en het Opstellen van AEM vormen* sectie.
 
-   * [AEM voor JBoss® installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [AEM voor WebSphere® installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [ het Installeren van en het Opstellen van AEM vormen voor JBoss® ](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [ het Installeren van en het Opstellen van AEM vormen voor WebSphere® ](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Alleen JBoss®) Nadat u de patch hebt geïnstalleerd en de server hebt geconfigureerd, verwijdert u tmp- en werkmappen van de JBoss®-toepassingsserver.
 
-## Configuratie na implementatie {#post-deployment-configurations}
+## Post-implementatieconfiguraties {#post-deployment-configurations}
 
 ### SAML-configuraties {#saml-configurations}
 
@@ -97,4 +97,4 @@ Als u de authentificatie van SAML gevormd hebt en problemen met grote meta-gegev
 * Documentbeveiliging
 * Foundation JEE
 
-[Contact opnemen met ondersteuning](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
+[ Steun van het Contact ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)

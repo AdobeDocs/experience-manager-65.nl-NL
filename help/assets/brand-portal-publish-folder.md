@@ -1,5 +1,5 @@
 ---
-title: Mappen publiceren naar Brand Portal
+title: Publish-mappen naar Brand Portal
 description: Leer hoe u mappen publiceert en publiceert naar Brand Portal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -17,17 +17,17 @@ ht-degree: 20%
 
 ---
 
-# Mappen publiceren naar Brand Portal{#publish-folders-to-brand-portal}
+# Publish-mappen naar Brand Portal{#publish-folders-to-brand-portal}
 
-Als beheerder van Adobe Experience Manager-middelen (AEM) kunt u elementen en mappen publiceren naar het AEM Assets Brand Portal-exemplaar (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. U moet echter eerst AEM Assets integreren met Brand Portal. Zie [AEM Assets configureren met Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md) voor meer informatie.
+Als Adobe Experience Manager (AEM) Assets-beheerder kunt u elementen en mappen publiceren naar het AEM Assets Brand Portal-exemplaar (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. U moet echter eerst AEM Assets integreren met Brand Portal. Zie [AEM Assets configureren met Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md) voor meer informatie.
 
 Nadat u een middel of een omslag publiceert, is het beschikbaar aan gebruikers in Brand Portal.
 
 Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oorspronkelijke map in AEM Assets, worden de wijzigingen pas doorgevoerd in Brand Portal als u het element of de map opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
-## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal-1}
+## Publish-mappen naar Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Houd de muisaanwijzer boven de gewenste map in de AEM Assets-interface en selecteer **Publiceren** van de snelle acties.
+1. Van de interface van AEM Assets, houd over de gewenste omslag en selecteer **Publish** optie van de snelle acties.
 
    U kunt ook de gewenste map selecteren en de volgende stappen volgen.
 
@@ -37,12 +37,12 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
 
    Voer een van de volgende handelingen uit om de geselecteerde mappen naar Brand Portal te publiceren:
 
-   * Selecteer op de werkbalk de optie **Snel publiceren**. Selecteer vervolgens in het menu **Publiceren naar Brand Portal**.
+   * Van de toolbar, uitgezochte **Snelle Publish**. Dan van het menu, uitgezochte **Publish aan Brand Portal**.
 
-   * Selecteer op de werkbalk de optie **Publicatie beheren**.
+   * Van de toolbar, uitgezochte **leidt Publicatie**.
 
-   1. Van **Handeling** selecteren **Publiceren naar Brand Portal**, van **Planning** selecteren **Nu** en klik op **Volgende.**
-   1. Bevestig uw selectie in **Toepassingsgebied** en klik op **Publiceren naar Brand Portal**.
+   1. Van **Actie** uitgezochte **Publish aan Brand Portal**, van **plannend** uitgezocht **nu**, en klik **daarna.**
+   1. Bevestig uw selectie in **Reikwijdte** en klik **Publish aan Brand Portal**.
 
    Er verschijnt een bericht waarin wordt aangegeven dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde map weer te geven.
 
@@ -50,14 +50,14 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
 
    U kunt als volgt de publicatieworkflow van mappen met elementen naar Brand Portal plannen op een latere datum of tijd:
 
-   1. Als u elementen/mappen hebt geselecteerd om te publiceren, selecteert u **Publicatie beheren** in de werkbalk bovenaan.
-   1. Van **Handeling** selecteren **Publiceren naar Brand Portal**, van **Planning** selecteren **Later**.
+   1. Zodra u activa/omslagen hebt geselecteerd om te publiceren, selecteer **leiden Publicatie** van de hulpmiddelbar bij de bovenkant.
+   1. Van **Actie** uitgezochte **Publish aan Brand Portal**, van **plannend** uitgezocht **later**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
    1. Selecteer een **activeringsdatum** en geef de tijd op. Klik op **Next**.
-   1. Bevestig uw selectie in **Toepassingsgebied**. Klik op **Next**.
-   1. Geef een workflowtitel op onder **Workflows**. Klikken **Later publiceren**.
+   1. Bevestig uw selectie in **Reikwijdte**. Klik op **Next**.
+   1. Specificeer een titel van het Werkschema onder **Werkschema&#39;s**. Klik **Publish later**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
@@ -71,27 +71,27 @@ U kunt de publicatie van mappen in Brand Portal snel ongedaan maken of deze late
 
    ![publish2bp-1](assets/publish2bp.png)
 
-1. Klik op de werkbalk op **Publicatie beheren**.
+1. Van de toolbar, klik **leiden Publicatie**.
 
-1. **Publiceren vanuit Brand Portal nu ongedaan maken**
+1. **unpublish van Brand Portal nu**
 
    U kunt de publicatie van de gewenste map snel ongedaan maken vanuit Brand Portal:
 
-   1. Selecteer op de werkbalk de optie **Publicatie beheren**.
-   1. Van **Handeling** selecteren **Publiceren vanuit Brand Portal ongedaan maken**, van **Planning** selecteren **Nu** en klik op **Volgende.**
-   1. Bevestig uw selectie in **Toepassingsgebied** en klik op **Publiceren vanuit Brand Portal ongedaan maken**.
+   1. Van de toolbar, uitgezochte **leidt Publicatie**.
+   1. Van **Actie** uitgezocht **unpublish van Brand Portal**, van **het Plannen** uitgezocht **nu**, en klik **daarna.**
+   1. Bevestig uw selectie in **Reikwijdte** en klik **unpublish van Brand Portal**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Publiceren vanuit Brand Portal later ongedaan maken**
+   **Unpublish van Brand Portal later**
 
    U kunt als volgt de publicatie van een map van Brand Portal naar een latere datum en tijd plannen:
 
-   1. Selecteer op de werkbalk de optie **Publicatie beheren**.
-   1. Van **Handeling** selecteren **Publiceren vanuit Brand Portal ongedaan maken** en van **Planning** selecteren **Later**.
-   1. Selecteer een **Activeringsdatum** en geeft u de tijd op. Klik op **Next**.
-   1. Bevestig uw selectie in **Toepassingsgebied** en klik op **Volgende**.
-   1. Geef een **Titel werkstroom** in **Workflows**. Klikken **Publicatie later ongedaan maken.**
+   1. Van de toolbar, uitgezochte **leidt Publicatie**.
+   1. Van **Actie** uitgezocht **unpublish van Brand Portal**, en van **plannend** uitgezocht **later**.
+   1. Selecteer een **datum van de Activering** en specificeer de tijd. Klik op **Next**.
+   1. Bevestig uw selectie in **Reikwijdte** en klik **daarna**.
+   1. Specificeer de titel van het a **Werkschema** in **Werkschema&#39;s**. Klik **later Unpublish.**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 

@@ -18,30 +18,30 @@ ht-degree: 0%
 
 # Pagina&#39;s voorvertonen met ContextHub-gegevens{#previewing-pages-using-contexthub-data}
 
-De [ContextHub](/help/sites-developing/contexthub.md) de toolbarvertoningen gegevens van opslag ContextHub en laat u toe om opslaggegevens te veranderen. De toolbar ContextHub is nuttig om inhoud te previewing die door gegevens in een opslag ContextHub wordt bepaald.
+De [ ContextHub ](/help/sites-developing/contexthub.md) toolbarvertoningen gegevens van opslag ContextHub en laat u toe om opslaggegevens te veranderen. De toolbar ContextHub is nuttig om inhoud te previewing die door gegevens in een opslag ContextHub wordt bepaald.
 
 De werkbalk bestaat uit een reeks UI-modi die een of meer UI-modules bevatten.
 
 * UI-modi zijn pictogrammen die aan de linkerkant van de werkbalk worden weergegeven. Als u op een pictogram klikt, worden op de werkbalk de UI-modules weergegeven die erin staan.
 * UI de modules tonen gegevens van één of meerdere opslag ContextHub. Sommige modules UI laten u ook toe om opslaggegevens te manipuleren.
 
-ContextHub installeert verscheidene wijzen UI en modules UI. Mogelijk heeft uw beheerder [geconfigureerde ContextHub](/help/sites-developing/ch-configuring.md) om verschillende weer te geven.
+ContextHub installeert verscheidene wijzen UI en modules UI. Uw beheerder kan [ gevormde ContextHub ](/help/sites-developing/ch-configuring.md) hebben om verschillende degenen te tonen.
 
-![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
+![ screen_shot_2018-03-23at093446 ](assets/screen_shot_2018-03-23at093446.png)
 
 ## De werkbalk ContextHub weergeven {#revealing-the-contexthub-toolbar}
 
 De toolbar ContextHub is beschikbaar op de wijze van de Voorproef. De werkbalk is alleen beschikbaar voor auteur-exemplaren en alleen als uw beheerder deze heeft ingeschakeld.
 
-![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
+![ screen_shot_2018-03-23at093730 ](assets/screen_shot_2018-03-23at093730.png)
 
 1. Open de pagina en klik op Voorvertoning op de werkbalk terwijl u deze wilt bewerken.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   ![ chlimage_1-219 ](assets/chlimage_1-219.png)
 
 1. Om de toolbar te openbaren, klik het pictogram ContextHub.
 
-   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![ de Hub van de Context ](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## Functies van de UI-module {#ui-module-features}
 
@@ -51,13 +51,13 @@ Elke UI-module biedt verschillende functies, maar de volgende typen functies zij
 
 UI de modules kunnen gegevens van één of meerdere opslag ContextHub in de toolbar tonen. UI-modules gebruiken een pictogram en een titel om zichzelf te identificeren.
 
-![screen_shot_2018-03-23at093936](assets/screen_shot_2018-03-23at093936.png)
+![ screen_shot_2018-03-23at093936 ](assets/screen_shot_2018-03-23at093936.png)
 
 ### Inhoud pop-up {#popup-content}
 
 Sommige modules UI tonen popup bekleed wanneer geklikt of getikt. Het pop-upmenu bevat doorgaans aanvullende informatie dan die op de werkbalk wordt weergegeven.
 
-![screen_shot_2018-03-23at094003](assets/screen_shot_2018-03-23at094003.png)
+![ screen_shot_2018-03-23at094003 ](assets/screen_shot_2018-03-23at094003.png)
 
 ### Popup-Forms {#popup-forms}
 
@@ -67,4 +67,4 @@ De popup bekleding van een module kan vormelementen omvatten die u toelaten om d
 
 Popup overlays kunnen een pictogram omvatten dat u klikt om popup inhoud uit te breiden om het volledige browser venster of het scherm te behandelen.
 
-![Volledig scherm](do-not-localize/chlimage_1-18.png)
+![ Volledig scherm ](do-not-localize/chlimage_1-18.png)

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Trefwoorden voor adaptieve formulieren {#adaptive-forms-keywords}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde id&#39;s die speciale betekenis hebben voor adaptieve formulieren. U kunt deze trefwoorden niet als id&#39;s gebruiken in adaptieve formulieren. In de volgende tabel worden alle trefwoorden weergegeven die zijn gereserveerd voor id&#39;s voor adaptieve formulieren.
 
@@ -241,4 +241,4 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
  </tbody>
 </table>
 
-Gebruik niet alleen de bovenstaande trefwoorden, maar gebruik ook namen die vergelijkbaar zijn met [adaptieve formulieren JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Naast de hierboven vermelde sleutelwoorden, vermijd het gebruiken van namen die aan [ adaptieve vormen JavaScript APIs ](https://adobe.com/go/learn_aemforms_javascript_api_63) gelijkaardig zijn.

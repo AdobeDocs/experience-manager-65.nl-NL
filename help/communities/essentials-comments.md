@@ -27,28 +27,28 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td> social/commons/components/hbs/comments</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
-   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerp </i>mode</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
+   <td>Ja - de eigenschappen zijn editable op <i> ontwerp </i> wijze</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong> clientlibs </strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.stemden</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/commons/components/hbs/comments/comments.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>CSS</strong></td>
+   <td> <strong> CSS </strong></td>
    <td> /libs/social/commons/components/hbs/comments/clientlibs/commentsystem.css</td>
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td> Zie <a href="comments.md">Opmerkingen gebruiken</a></td>
+   <td> Zie <a href="comments.md"> Gebruikend Commentaren </a></td>
   </tr>
  </tbody>
 </table>
@@ -78,24 +78,24 @@ Dit geldt voor alle componenten die een opmerkingsysteem uitbreiden.
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [API voor opmerkingen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [ Commentaren API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Eindpunten opmerkingen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [ Eindpunten van Commentaren ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Toegang tot geposte opmerkingen (UGC) {#accessing-posted-comments-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door de gebruiker gegenereerde inhoud moderniseren](moderate-ugc.md).
+Zie [ het Modereren van user-Generated Inhoud ](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
-**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
+**de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van de opslagplaats.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
-* [Refactoring voor sociale hulpmiddelen](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.
+* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - Inleiding en overzicht van het opslagruimtegebruik.
+* [ SRP en Hoofdzaak UGC ](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - de richtlijnen van de Codering.
+* [ SocialUtils Refactoring ](socialutils.md) - de Afgekeurde nutsmethodes van de afbeelding aan huidige SRP hulpprogrammamethodes.

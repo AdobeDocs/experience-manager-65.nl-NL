@@ -24,10 +24,10 @@ Er zijn twee soorten eindpunten in AEM:
 
 * Algemeen
    * Beschikbaar voor gebruik door alle sites.
-   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [Configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [ Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) worden bepaald).
    * Als er om het even welke Modellen van het Fragment van de Inhoud zijn die onder de configuraties van Plaatsen zouden moeten worden gedeeld, dan zouden deze onder de globale configuraties van Plaatsen moeten worden gecreeerd.
 * Siteconfiguraties:
-   * Komt overeen met een configuratie Sites, zoals gedefinieerd in het dialoogvenster [Configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Komt overeen met een configuratie van Plaatsen, zoals die in [ Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
    * Specifiek voor een opgegeven site/project.
    * Een configuratie-specifiek eindpunt van Plaatsen zal de Modellen van het Fragment van de Inhoud van die specifieke configuratie van Plaatsen samen met die van de globale configuratie van Plaatsen gebruiken.
 
@@ -50,32 +50,32 @@ Voor welke toepassing uw toepassing het volgende pad in de aanvraag-URL kan gebr
 Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 
 * [GraphQL-eindpunt inschakelen](#enabling-graphql-endpoint)
-* [GraphQL-eindpunt publiceren](#publishing-graphql-endpoint)
+* [Publish your GraphQL Endpoint](#publishing-graphql-endpoint)
 
 ## GraphQL Endpoint inschakelen {#enabling-graphql-endpoint}
 
-Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [Inhoudsfragmenten - Configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [ de Fragmenten van de Inhoud - Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/assets/content-fragments/content-fragments-configuration-browser.md)de **Maken** deze optie is niet beschikbaar.
+>Als het [ gebruik van de modellen van het inhoudsfragment niet ](/help/assets/content-fragments/content-fragments-configuration-browser.md) is toegelaten, **creeer** optie zal niet beschikbaar zijn.
 
 Om het overeenkomstige eindpunt toe te laten:
 
-1. Navigeren naar **Gereedschappen**, **Activa** selecteert u vervolgens **GraphQL**.
-1. Selecteren **Maken**.
-1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
-   * **Naam**: naam van het eindpunt; u kunt elke tekst invoeren.
-   * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik het vervolgkeuzemenu om de gewenste site of het vereiste project te selecteren.
+1. Navigeer aan **Hulpmiddelen**, **Assets**, dan uitgezocht **GraphQL**.
+1. Selecteer **creeer**.
+1. **creeer nieuwe de dialoogdoos van het Eindpunt van GraphQL** opent. Hier kunt u opgeven:
+   * **Naam**: naam van het eindpunt; u kunt om het even welke tekst ingaan.
+   * **schema van GraphQL van het Gebruik dat door** wordt verstrekt: gebruik dropdown om de vereiste plaats/het project te selecteren.
 
    >[!NOTE]
    >
    >De volgende waarschuwing wordt weergegeven in het dialoogvenster:
    >
-   >* *GraphQL-eindpunten kunnen problemen met gegevensbeveiliging en -prestaties veroorzaken als deze niet zorgvuldig worden beheerd. Gelieve te verzekeren om aangewezen toestemmingen te plaatsen na het creëren van een eindpunt.*
+   >* *de eindpunten van GraphQL kunnen gegevensveiligheid en prestatieskwesties introduceren als niet zorgvuldig beheerd. Gelieve te verzekeren om aangewezen toestemmingen te plaatsen na het creëren van een eindpunt.*
 
-1. Bevestigen met **Maken**.
-1. De **Volgende stappen** de dialoog zal een directe verbinding aan de console van de Veiligheid verstrekken zodat u kunt ervoor zorgen dat het onlangs gecreeerde eindpunt geschikte toestemmingen heeft.
+1. Bevestig met **creeer**.
+1. De **Volgende stappen** dialoog zal een directe verbinding aan de console van de Veiligheid verstrekken zodat u kunt verzekeren dat het onlangs gecreeerde eindpunt geschikte toestemmingen heeft.
 
    >[!CAUTION]
    >
@@ -85,7 +85,7 @@ Om het overeenkomstige eindpunt toe te laten:
 
 ## GraphQL Endpoint publiceren {#publishing-graphql-endpoint}
 
-Selecteer het nieuwe eindpunt en **Publiceren** om het volledig beschikbaar te maken in alle milieu&#39;s.
+Selecteer het nieuwe eindpunt en **Publish** om het volledig beschikbaar te maken in alle milieu&#39;s.
 
 >[!CAUTION]
 >

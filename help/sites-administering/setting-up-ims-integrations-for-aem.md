@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe klanten gebruiken de [Adobe Developer Console](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Het referentietype van de Rekening van de Dienst (JWT) is nu verouderd ten gunste van de geloofsbrieven van de Server-aan-Server OAuth met Service Pack 20. Deze verandering kan aan oudere Packs van de Dienst, die met Service Pack 11 tot Service Pack 20 met het gebruik van een hotfix worden teruggevoerd die u kunt downloaden [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>De klanten van de Adobe gebruiken [ Adobe Developer Console ](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Het referentietype van de Rekening van de Dienst (JWT) is nu verouderd ten gunste van de geloofsbrieven van de Server-aan-Server OAuth met Service Pack 20. Deze verandering kan aan oudere Packs van de Dienst, die met Service Pack 11 tot Service Pack 20 met het gebruik van hotfix worden teruggebracht die u [ hier ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip) kunt downloaden.
 
 Adobe Experience Manager (AEM) kan met vele andere oplossingen van de Adobe worden geïntegreerd. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
 
@@ -24,55 +24,55 @@ De integratie gebruikt een integratie IMS, die met S2S OAuth wordt gevormd.
 
 * Nadat u hebt gemaakt:
 
-   * [Referenties in de Developer Console](#credentials-in-the-developer-console)
+   * [ Geloofsbrieven in Developer Console ](#credentials-in-the-developer-console)
 
 * Dan kunt u:
 
-   * Een (nieuw) maken [OAuth-configuratie](#creating-oauth-configuration)
+   * Creeer a (nieuw) [ configuratie OAuth ](#creating-oauth-configuration)
 
    * [Een bestaande JWT-configuratie migreren naar een OAuth-configuratie](#migrating-existing-JWT-configuration-to-oauth)
 
 >[!CAUTION]
 >
->Eerder werden configuraties gemaakt met [JWT-referenties die nu zijn afgekeurd in de Adobe Developer-console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Eerder, werden de configuraties gemaakt met [ Credentials JWT die nu onderworpen aan afschrijving in Adobe Developer Console ](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
 >
 >Dergelijke configuraties kunnen niet meer worden gemaakt of bijgewerkt, maar kunnen worden gemigreerd naar OAuth-configuraties.
 
 ## Referenties in de Developer Console {#credentials-in-the-developer-console}
 
-Als eerste stap moet u de OAuth-referenties configureren in de Adobe Developer-console.
+Als eerste stap, moet u de geloofsbrieven OAuth in Adobe Developer Console vormen.
 
-Raadpleeg de documentatie bij de Developer Console, afhankelijk van uw vereisten, voor meer informatie over hoe u deze configuratie kunt uitvoeren:
+Raadpleeg de documentatie bij Developer Console voor meer informatie over het uitvoeren van deze configuratie, afhankelijk van uw vereisten:
 
 * Overzicht:
 
-   * [Server-naar-server verificatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+   * [ Server aan de authentificatie van de Server ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
 * Een nieuwe OAuth-referentie maken:
 
-   * [OAuth Server-to-Server referentie implementatiegids](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [ OAuth Server-aan-Server de gids van de credentieimplementatie ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
 * Een bestaande JWT-referentie migreren naar een OAuth-referentie:
 
-   * [Migratie van JWT-referentie (Service Account) naar OAuth Server-to-Server-referentie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [ migrerend van de Rekening van de Dienst (JWT) credential aan OAuth Server-aan-Server credential ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
 
 Bijvoorbeeld:
 
-![OAuth Credential in de Developer Console](assets/ims-configuration-developer-console.png)
+![ Referentie OAuth in Developer Console ](assets/ims-configuration-developer-console.png)
 
 ## Een OAuth-configuratie maken {#creating-oauth-configuration}
 
 Een nieuwe Adobe IMS-integratie maken met OAuth:
 
-1. Navigeer in AEM naar **Gereedschappen**, **Beveiliging**, **Adobe IMS-integratie**.
+1. In AEM, navigeer aan **Hulpmiddelen**, **Veiligheid**, **Integratie van Adobe IMS**.
 
-1. Selecteren **Maken**.
+1. Selecteer **creeer**.
 
-1. Voltooi de configuratie op basis van de gegevens van de [Ontwerpconsole](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Bijvoorbeeld:
+1. Voltooi de configuratie die op details van [ wordt gebaseerd Developer Console ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Bijvoorbeeld:
 
-   ![OAuth-configuratie maken](assets/ims-create-oauth-configuration.png)
+   ![ creeer OAuth Configuratie ](assets/ims-create-oauth-configuration.png)
 
-1. **Opslaan** uw wijzigingen.
+1. **sparen** uw veranderingen.
 
 ## Een bestaande JWT-configuratie migreren naar een OAuth-configuratie {#migrating-existing-JWT-configuration-to-oauth}
 
@@ -82,25 +82,25 @@ Een bestaande Adobe IMS-integratie migreren op basis van JWT-referenties:
 >
 >Dit voorbeeld toont een Configuratie van IMS van de Lancering.
 
-1. Navigeer in AEM naar **Gereedschappen**, **Beveiliging**, **Adobe IMS-integratie**.
+1. In AEM, navigeer aan **Hulpmiddelen**, **Veiligheid**, **Integratie van Adobe IMS**.
 
-1. Selecteer de JWT-configuratie die moet worden gemigreerd. JWT-configuraties worden gemarkeerd met de waarschuwing **JWT Credentials (afgekeurd)**.
+1. Selecteer de JWT-configuratie die moet worden gemigreerd. De configuraties JWT zijn duidelijk met de waarschuwing **(afgekeurde) Credentials JWT**.
 
-1. Selecteren **Eigenschappen**:
+1. Selecteer **Eigenschappen**:
 
-   ![JWT-configuratie selecteren](assets/ims-migrate-jwt-select-configuration.png)
+   ![ Uitgezochte Configuratie JWT ](assets/ims-migrate-jwt-select-configuration.png)
 
 1. De configuratie wordt als alleen-lezen geopend:
 
-   ![Configuratieeigenschappen - alleen-lezen](assets/ims-migrate-jwt-properties-read-only.png)
+   ![ Eigenschappen van de Configuratie - slechts-lezen ](assets/ims-migrate-jwt-properties-read-only.png)
 
-1. Selecteren **OAuth** van de **Type verificatie** vervolgkeuzelijst:
+1. Selecteer **OAuth** van het **Type van Authentificatie** dropdown:
 
-   ![Verificatietype selecteren](assets/ims-migrate-jwt-authentication-type.png)
+   ![ Uitgezochte Type van Authentificatie ](assets/ims-migrate-jwt-authentication-type.png)
 
-1. De beschikbare eigenschappen worden bijgewerkt. Gebruik de gegevens in de Developer Console om deze te voltooien:
+1. De beschikbare eigenschappen worden bijgewerkt. Voer de gegevens van de Developer Console in om deze in te vullen:
 
-   ![Volledige details OAuth](assets/ims-migrate-jwt-complete-oauth-details.png)
+   ![ Volledige details OAuth ](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. Gebruiken **Opslaan en sluiten** om uw updates voort te zetten.
-Wanneer u op de console terugkeert, **JWT Credentials (afgekeurd)** waarschuwing is verdwenen.
+1. Gebruik **sparen &amp; sluit** om uw updates voort te zetten.
+Wanneer u aan de console terugkeert, is de **(afgekeurde)** waarschuwing JWT.

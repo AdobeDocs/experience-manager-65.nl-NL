@@ -24,13 +24,13 @@ Met Adobe Experience Manager Apps kunt u de inhoud van de OTA-toepassing (via de
 
 Om de dienst van het verwijzingsfilter te vormen:
 
-* Open de Apache Felix-console (**Configuraties**) om:
+* Open de console van de Felix Apache (**Configuraties**) bij:
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Aanmelden als beheerder.
-* In de **Configuraties** -menu, selecteert u: *Filter Apache Sling Referrer*
+* In het **menu van Configuraties**, selecteer: *Apache het Verdelen Filter van de Verwijzing*
 * Schakel het veld Lege waarden toestaan in zodat u lege of ontbrekende verwijzingskoppen kunt toestaan.
-* Klikken **Opslaan** om uw wijzigingen op te slaan.
+* Klik **sparen** om uw veranderingen te bewaren.
 
-![chlimage_1-58](assets/chlimage_1-58a.png)
+![ chlimage_1-58 ](assets/chlimage_1-58a.png)
 
-Zie de [OSGI-configuratie-instellingen](/help/sites-deploying/osgi-configuration-settings.md) en [Beveiligingscontrolelijst - Problemen met de XSS-functie voor aanvragen voor andere sites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor nadere bijzonderheden.
+Zie de [ Montages van de Configuratie OSGI ](/help/sites-deploying/osgi-configuration-settings.md) en [ Controlelijst van de Veiligheid - Kwesties met de Versmeder van het Verzoek van de Verschuiving van de Intersite ](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor verdere details.

@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Aangepaste formulieren en recorddocumenten lokaliseren met AEM vertaalworkflow {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&#39;s. Met de vertaalworkflow van Adobe Experience Manager kunt u adaptieve formulieren en de bijbehorende documenten lokaliseren. U kunt **machinevertaling** of **menselijke vertalers** om een adaptief formulier te lokaliseren.
+Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&#39;s. Met de vertaalworkflow van Adobe Experience Manager kunt u adaptieve formulieren en de bijbehorende documenten lokaliseren. U kunt **machinevertaling** of **menselijke vertalers** gebruiken om een adaptieve vorm te lokaliseren.
 
 In dit artikel wordt uitgelegd hoe u AEM vertaalworkflow kunt gebruiken met adaptieve formulieren en opnamedocumenten.
 
@@ -27,15 +27,15 @@ In dit artikel wordt uitgelegd hoe u AEM vertaalworkflow kunt gebruiken met adap
 
 De vertaalservice zet uw inhoud direct om in adaptieve vorm en in een document met opnamen. AEM Forms is vooraf geconfigureerd voor het gebruik van een proefversie van Microsoft Translator voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw adaptieve formulieren en document of record:
 
-1. Selecteer in de gebruikersinterface van AEM Forms een formulier en selecteer de **Woordenboek toevoegen** -optie.
-1. In **Woordenboek toevoegen aan vertaalproject** scherm, selecteert u de **Een nieuw vertaalproject maken** of **Toevoegen aan een bestaand vertaalproject** -optie.
-1. In de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld: `Government Reference Site - German locale.`
-1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`) en klik op **Gereed**. U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld.
-1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**. Open het nieuwe project in het scherm Projecten.
-1. Klik op de knop **ovalen** onder aan het dialoogvenster **Omzettingsoverzicht** tegel. Het scherm Translation Summary wordt geopend.
-1. Klik op de knop **Bewerken** pictogram boven aan **Omzettingsoverzicht** scherm. Open de **Vertaling** en selecteert u Machine Translation in het dialoogvenster **Omzettingsmethode** scherm. Selecteer de juiste **Vertaalbureau** en **Cloud Configuration**. Klik op de knop **Gereed** aan de bovenkant van het scherm.
-1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Na de vertaling verandert de status in **Gereed voor revisie**. Vernieuw de pagina na een paar minuten en controleer de status.
-1. Nadat de status is gewijzigd in **Gereed voor revisie** op de **Vertaaltaak** Open het formulier in een browservenster. Er wordt een gelokaliseerde versie van het formulier weergegeven.
+1. Voor AEM Forms UI, selecteer een vorm, en selecteer **voeg Woordenboek** optie toe.
+1. In **voeg Woordenboek aan het scherm van het Project van de Vertaling** toe, selecteer **een nieuw vertaalproject** of **voeg aan een bestaand vertaalproject** optie toe.
+1. Op het **gebied van de Titel van het Project**, specificeer de titel. Bijvoorbeeld: `Government Reference Site - German locale.`
+1. Op het **gebied van de Talen van het Doel**, specificeer een scène (bijvoorbeeld, `German(de)`), en klik **Gedaan**. U kunt meerdere landinstellingen opgeven. De vorm wordt vertaald aan alle scènes die in het **gebied van de Talen van het Doel** worden gespecificeerd.
+1. In het Woordenboek toegevoegde dialoogvakje, klik **Open Projecten**. Open het nieuwe project in het scherm Projecten.
+1. Klik de **ellipsen** bij de bodem van de **Vertaling Summiere** tegel. Het scherm Translation Summary wordt geopend.
+1. Klik **uitgeven** pictogram bij de bovenkant van het **Summiere van de Vertaling** scherm. Open het **Vertaal** lusje en selecteer de Vertaling van de Machine in het **Vertaalmethode** scherm. Selecteer de aangewezen **Vertaalleverancier** en **Configuratie van de Wolk**. Klik het **Gereed** pictogram bij de bovenkant van het scherm.
+1. Op de **tegel van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **Begin**. De status van de tegel verandert in Concept. Na voltooiing van de vertaling, de statusveranderingen in **Klaar voor overzicht**. Vernieuw de pagina na een paar minuten en controleer de status.
+1. Na de statusveranderingen in **Klaar voor overzicht** op de **Taal van de VertaalBaan**, open de vorm in een browser venster. Er wordt een gelokaliseerde versie van het formulier weergegeven.
 
    >[!NOTE]
    >
@@ -50,7 +50,7 @@ De vertaalservice zet uw inhoud direct om in adaptieve vorm en in een document m
 
 [Document met recordinstellingen](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [De brandinggegevens van het recorddocument aanpassen](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) en zorg ervoor dat de landinstelling van de browser wordt ingesteld op de taal waarin u het Adaptief formulier hebt gelokaliseerd met de computertaal. Met de landinstelling van de browser kunt u de brandinggegevens in het recorddocument lokaliseren.
+1. [ pas de het brandmerken informatie van het document van verslag ](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) aan en zorg ervoor dat browser scène aan de zelfde taal wordt geplaatst waaraan u de Aangepaste Vorm gebruikend machinetaal hebt gelokaliseerd. Met de landinstelling van de browser kunt u de brandinggegevens in het recorddocument lokaliseren.
 1. Als u het gelokaliseerde document met records wilt weergeven, selecteert u Voorvertoning genereren. Het document met record PDF wordt gegenereerd en geopend op een nieuw tabblad in uw browser.
 
 ## Een adaptief formulier en het bijbehorende document lokaliseren met behulp van menselijke vertaling {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
@@ -61,17 +61,17 @@ Voor vertaling wordt een woordenboek met bestanden in XLIFF-indeling gedeeld met
 
 Voer de volgende stappen uit om een formulier en het bijbehorende document te lokaliseren met behulp van Human Translators:
 
-1. [AEM met uw vertaalserviceprovider verbinden](/help/sites-administering/tc-tic.md) en [configuraties voor vertaalintegratie maken](/help/sites-administering/tc-tic.md).
+1. [ verbind AEM met uw leverancier van de vertaaldienst ](/help/sites-administering/tc-tic.md) en [ creeer configuraties van het kader van de vertaalintegratie ](/help/sites-administering/tc-tic.md).
 
-1. [Pagina&#39;s van uw taalstramien koppelen](/help/sites-administering/tc-tic.md) met de vertaalservice en frameworkconfiguraties.
+1. [ associeer de pagina&#39;s van uw taalmeester ](/help/sites-administering/tc-tic.md) met de vertaaldienst en kaderconfiguraties.
 
-1. [Het type inhoud identificeren](/help/sites-administering/tc-rules.md) om te vertalen.
+1. [ identificeer het type van inhoud ](/help/sites-administering/tc-rules.md) om te vertalen.
 
-1. [De inhoud voorbereiden voor vertaling](/help/sites-administering/tc-prep.md) door het taalstramien te ontwerpen en de basispagina&#39;s van taalkopieën te maken.
+1. [ bereidt de inhoud voor vertaling ](/help/sites-administering/tc-prep.md) voor door de taalmeester te ontwerpen en de wortelpagina&#39;s van taalexemplaren te creëren.
 
-1. [Vertaalprojecten maken](/help/sites-administering/tc-manage.md) de te vertalen inhoud te verzamelen en het vertaalproces voor te bereiden.
+1. [ creeer vertaalprojecten ](/help/sites-administering/tc-manage.md) om de inhoud te verzamelen om te vertalen en het vertaalproces voor te bereiden.
 
-1. Gebruik de vertaalprojecten om [het contentvertaalproces beheren](/help/sites-administering/tc-manage.md).
+1. Gebruik de vertaalprojecten om [ het proces van de inhoudvertaling ](/help/sites-administering/tc-manage.md) te beheren.
 
 >[!NOTE]
 >

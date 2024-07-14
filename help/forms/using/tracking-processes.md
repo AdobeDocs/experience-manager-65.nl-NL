@@ -37,14 +37,14 @@ U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
 ### Een taak zoeken met een zoeksjabloon {#search-for-a-task-using-a-search-template}
 
-1. Selecteer in de lijst aan de linkerkant op de pagina Volgen de optie **Sjablonen zoeken** en selecteer een zoeksjabloon.
-1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden in en klikt u op **Zoeken**. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
+1. Voor de het Volgen pagina, in de lijst op de linkerzijde, selecteer **Malplaatjes van het Onderzoek** en selecteer een onderzoeksmalplaatje.
+1. Als het malplaatje onderzoeksparameters steunt, om de onderzoeksparameters te beperken, vul de malplaatjegebieden en klik dan **Onderzoek**. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
 
 ## Procesdetails weergeven {#view-process-details}
 
 Op de pagina Volgen kunt u een proces selecteren en de details ervan bekijken. U kunt de processen zoeken die op diverse parameters worden gebaseerd om de taakdetails te bekijken. U kunt het tabblad Status ook weergeven voor processen waarbij meerdere gebruikers taken gelijktijdig ontvangen, waarbij de gereedschappen voor het reviseren van documenten zijn ingeschakeld.
 
-**Status:** De status van taken in een proces wordt weergegeven in de kolom Geselecteerde actie wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
+**Status:** de status van taken in een proces wordt getoond in de &quot;Geselecteerde kolom van de Actie&quot;wanneer u een taak klikt. De status van het proces is echter niet beschikbaar.
 
 1. Selecteer de procesinstantie in de lijst met zoekresultaten om details weer te geven van de taken die deel uitmaken van de procesinstantie.
 1. Voer een of meer van de volgende handelingen uit om meer informatie over een taak weer te geven:

@@ -41,4 +41,4 @@ Om dit document optimaal te benutten, hebt u een goed begrip nodig van de AEM Fo
 
 >[!MORELIKETHIS]
 >
->* [Gegevens doorgeven met WS-beveiligingskoppen](assets/passing-credentials-using-ws-security-headers.pdf)
+>* [ het overgaan geloofsbrieven gebruikend WS-Veiligheid kopballen ](assets/passing-credentials-using-ws-security-headers.pdf)

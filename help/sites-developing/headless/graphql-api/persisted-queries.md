@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Blijvende GraphQL-query&#39;s {#persisted-queries-caching}
 
-Blijvende query&#39;s zijn GraphQL-query&#39;s die zijn gemaakt en opgeslagen op de Adobe Experience Manager (AEM)-server. Ze kunnen worden aangevraagd met een GET-aanvraag door clienttoepassingen. De reactie van een verzoek van de GET kan bij de lagen van het Netwerk van de Levering van de Verzender en van de Inhoud (CDN) worden in het voorgeheugen ondergebracht, uiteindelijk verbeterend de prestaties van de het verzoeken cliënttoepassing. Dit verschilt van standaard GraphQL query&#39;s, die worden uitgevoerd met behulp van POST-aanvragen waarbij de reactie niet gemakkelijk in cache kan worden geplaatst.
+Blijvende query&#39;s zijn GraphQL-query&#39;s die zijn gemaakt en opgeslagen op de Adobe Experience Manager (AEM)-server. Ze kunnen worden aangevraagd met een GET-aanvraag door clienttoepassingen. De reactie van een verzoek van de GET kan bij de lagen van het Netwerk van de Levering van de Dispatcher en van de Inhoud (CDN) worden in het voorgeheugen ondergebracht, uiteindelijk verbeterend de prestaties van de het verzoeken cliënttoepassing. Dit verschilt van standaard GraphQL query&#39;s, die worden uitgevoerd met behulp van POST-aanvragen waarbij de reactie niet gemakkelijk in cache kan worden geplaatst.
 
 <!--
 >[!NOTE]
@@ -22,27 +22,29 @@ Blijvende query&#39;s zijn GraphQL-query&#39;s die zijn gemaakt en opgeslagen op
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 -->
 
-De [GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om uw GraphQL-query&#39;s te ontwikkelen, te testen en voort te zetten voordat [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/sites-developing/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u de API kunt gebruiken; zie het cURL-voorbeeld in [Een GraphQL-query laten doorgaan](#how-to-persist-query).
+[ IDE GraphiQL ](/help/sites-developing/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om, uw vragen van GraphQL te ontwikkelen te testen en voort te zetten, alvorens [ over te brengen naar uw productiemilieu ](#transfer-persisted-query-production). Voor gevallen die aanpassing (bijvoorbeeld, wanneer [ het geheime voorgeheugen ](/help/sites-developing/headless/graphql-api/graphiql-ide.md#caching-persisted-queries) aanpassen) nodig hebben kunt u API gebruiken; zie het cURL voorbeeld dat in [ wordt verstrekt hoe te om een vraag van GraphQL ](#how-to-persist-query) voort te zetten.
 
 ## Blijvende query&#39;s en eindpunten {#persisted-queries-and-endpoints}
 
-De aanhoudende vragen moeten altijd het eindpunt met betrekking tot [de geschikte configuratie van Plaatsen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md); dus kunnen ze beide of beide gebruiken:
+De aangehouden vragen moeten altijd het eindpunt met betrekking tot de [ aangewezen configuratie van Plaatsen ](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) gebruiken; zodat kunnen zij of, of allebei gebruiken:
 
-* De globale configuratie en het eindpunt de vraag heeft toegang tot alle Modellen van het Fragment van de Inhoud.
-* De specifieke configuratie(s) van Plaatsen en eindpunt(s) Creërend een persisted vraag voor een specifieke configuratie van Plaatsen vereist een overeenkomstig plaats-configuratie-specifiek eindpunt (om toegang tot de verwante Modellen van het Fragment van de Inhoud te verlenen).
+* De globale configuratie en het eindpunt
+De query heeft toegang tot alle modellen van inhoudsfragmenten.
+* Specifieke configuratie(s) en eindpunt(en) van sites
+Creërend een persisted vraag voor een specifieke configuratie van Plaatsen vereist een overeenkomstig plaats-configuratie-specifiek eindpunt (om toegang tot de verwante Modellen van het Fragment van de Inhoud te verlenen).
 Bijvoorbeeld, om een voortgeduurde vraag specifiek voor de configuratie van Plaatsen te creëren WKND, moet een overeenkomstige WKND-Specifieke configuratie van Plaatsen, en een WKND-Specifiek eindpunt vooraf worden gecreeerd.
 
 >[!NOTE]
 >
->Zie [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) voor meer informatie .
+>Zie [ Functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) voor meer details toelaten.
 >
->De **Aangehouden GraphQL-query&#39;s** moet worden toegelaten, voor de aangewezen configuratie van Plaatsen.
+>De **GraphQL Persisted Vragen** moeten worden toegelaten, voor de aangewezen configuratie van Plaatsen.
 
-Als er bijvoorbeeld een bepaalde query wordt uitgevoerd, `my-query`, die een model gebruikt `my-model` vanuit de configuratie Sites `my-conf`:
+Als er bijvoorbeeld een bepaalde query met de naam `my-query` is, die een model `my-model` uit de configuratie Sites `my-conf` gebruikt:
 
-* U kunt een query maken met de opdracht `my-conf` specifiek eindpunt, en dan zal de vraag als volgt worden bewaard:
+* U kunt een vraag tot stand brengen gebruikend het `my-conf` specifieke eindpunt, en dan zal de vraag als volgt worden bewaard:
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* U kunt dezelfde query maken met `global` eindpunt, maar dan zal de vraag als volgt worden bewaard:
+* U kunt dezelfde query maken met het eindpunt `global` , maar de query wordt als volgt opgeslagen:
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -53,17 +55,17 @@ Als er bijvoorbeeld een bepaalde query wordt uitgevoerd, `my-query`, die een mod
 
 ## Een GraphQL-query laten doorgaan {#how-to-persist-query}
 
-Aanbevolen wordt om query&#39;s in een AEM ontwerpomgeving in eerste instantie voort te zetten en vervolgens [de query overdragen](#transfer-persisted-query-production) naar uw productie AEM publicatieomgeving, voor gebruik door toepassingen.
+Het wordt geadviseerd om vragen over een AEM auteursmilieu aanvankelijk en dan [ over te zetten de vraag ](#transfer-persisted-query-production) aan uw productie AEM milieu, voor gebruik door toepassingen publiceren.
 
 Er zijn verschillende methoden om query&#39;s te blijven uitvoeren, waaronder:
 
-* GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/sites-developing/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (voorkeursmethode)
+* IDE GraphiQL - zie [ het Opslaan van Persisted Vragen ](/help/sites-developing/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (aangewezen methode)
 * cURL - zie het volgende voorbeeld
-* Andere gereedschappen, inclusief [Postman](https://www.postman.com/)
+* Andere hulpmiddelen, met inbegrip van [ Postman ](https://www.postman.com/)
 
-GraphiQL IDE is de **voorkeur** methode voor het voortduren van vragen. Om een bepaalde vraag voort te zetten gebruikend **cURL** opdrachtregelgereedschap:
+IDE GraphiQL is de **geprefereerde** methode voor het voortduren van vragen. Om een bepaalde vraag voort te zetten gebruikend het **cURL** hulpmiddel van de bevellijn:
 
-1. Bereid de vraag door PUTing het aan het nieuwe eindpunt URL voor `/graphql/persist.json/<config>/<persisted-label>`.
+1. Bereid de vraag voor door het aan het nieuwe eindpunt URL `/graphql/persist.json/<config>/<persisted-label>` te PLAATSEN.
 
    Maak bijvoorbeeld een doorlopende query:
 
@@ -100,7 +102,7 @@ GraphiQL IDE is de **voorkeur** methode voor het voortduren van vragen. Om een b
    }
    ```
 
-1. U kunt de voortgezette vraag dan verzoeken door URL te winnen `/graphql/execute.json/<shortPath>`.
+1. Vervolgens kunt u de voortgezette query aanvragen door de URL op te halen `/graphql/execute.json/<shortPath>` .
 
    Gebruik bijvoorbeeld de voortgezette query:
 
@@ -196,9 +198,9 @@ Een clienttoepassing vraagt een aanvraag tot GET met de volgende syntaxis uit om
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persisted-query.
+Waar `PERSISTENT_PATH` een verkort pad is naar waar de Persisted-query wordt opgeslagen.
 
-1. Bijvoorbeeld: `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persisted-query. De query uitvoeren:
+1. `wknd` is bijvoorbeeld de configuratienaam en `plain-article-query` is de naam van de Persisted-query. De query uitvoeren:
 
    ```shell
    $ curl -X GET \
@@ -209,7 +211,7 @@ Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persis
 
    >[!NOTE]
    >
-   > De variabelen en de waarden van de vraag moeten behoorlijk zijn [gecodeerd](#encoding-query-url) bij het uitvoeren van een blijvende query.
+   > De variabelen en de waarden van de vraag moeten behoorlijk [ worden gecodeerd ](#encoding-query-url) wanneer het uitvoeren van een Verlengde vraag.
 
    Bijvoorbeeld:
 
@@ -218,11 +220,11 @@ Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persis
        "https://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
 
-   Zie gebruiken [queryvariabelen](#query-variables) voor meer informatie .
+   Zie het gebruiken van [ vraagvariabelen ](#query-variables) voor meer details.
 
 ## Query-variabelen gebruiken {#query-variables}
 
-De variabelen van de vraag kunnen met Verblijfsde Vragen worden gebruikt. De vraagvariabelen worden toegevoegd aan het verzoek vooraf bepaald met een puntkomma (`;`) met de naam en de waarde van de variabele. Meerdere variabelen worden gescheiden door puntkomma&#39;s.
+De variabelen van de vraag kunnen met Verblijfsde Vragen worden gebruikt. De vraagvariabelen worden toegevoegd aan het verzoek vooraf bepaald met een puntkomma (`;`) gebruikend de veranderlijke naam en de waarde. Meerdere variabelen worden gescheiden door puntkomma&#39;s.
 
 Het patroon ziet er als volgt uit:
 
@@ -230,7 +232,7 @@ Het patroon ziet er als volgt uit:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-De volgende query bevat bijvoorbeeld een variabele `activity` een lijst filteren op basis van een activiteitwaarde:
+De volgende query bevat bijvoorbeeld een variabele `activity` om een lijst te filteren op basis van een activiteitwaarde:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -253,21 +255,21 @@ query getAdventuresByActivity($activity: String!) {
   }
 ```
 
-Deze query kan worden uitgevoerd onder een pad `wknd/adventures-by-activity`. Om de Permanente vraag te roepen waar `activity=Camping` het verzoek zou er als volgt uitzien :
+Deze query kan worden uitgevoerd onder een pad `wknd/adventures-by-activity` . Om de Persisted vraag te roepen waar `activity=Camping` het verzoek als dit zou kijken:
 
 ```
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Let op: `%3B` is de UTF-8-codering voor `;` en `%3D` is de codering voor `=`. De vraagvariabelen en om het even welke speciale karakters moeten [correct gecodeerd](#encoding-query-url) voor de Persisted query die moet worden uitgevoerd.
+`%3B` is de UTF-8-codering voor `;` en `%3D` is de codering voor `=` . De vraagvariabelen en om het even welke speciale karakters moeten [ behoorlijk ](#encoding-query-url) voor de Persisted vraag worden gecodeerd om uit te voeren.
 
 ## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
 
-De blijvende vragen worden geadviseerd aangezien zij in het voorgeheugen onder kunnen brengen bij [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) en de lagen van het Netwerk van de Levering van de Inhoud (CDN), uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
+De geadviseerde vragen worden geadviseerd aangezien zij bij de [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) en de lagen van het Netwerk van de Levering van de Inhoud (CDN) in het voorgeheugen kunnen worden ondergebracht, uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
 
 AEM maakt de cache standaard ongeldig op basis van de definitie Tijd tot live (TTL). Deze TTLs kan door de volgende parameters worden bepaald. Deze parameters zijn op verschillende manieren toegankelijk, waarbij de namen variëren volgens het gebruikte mechanisme:
 
-| Cachetype | [HTTP-header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-configuratie  |
+| Cachetype | [ HTTP- kopbal ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-configuratie  |
 |--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
@@ -280,7 +282,7 @@ AEM maakt de cache standaard ongeldig op basis van de definitie Tijd tot live (T
 
 Voor auteur-instanties zijn de standaardwaarden:
 
-* `max-age`  : 60
+* `max-age` : 60
 * `s-maxage` : 60
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
@@ -288,7 +290,7 @@ Voor auteur-instanties zijn de standaardwaarden:
 Hiervoor gold het volgende:
 
 * kan niet met een configuratie OSGi worden beschreven
-* kan worden overschreven door een aanvraag die HTTP-headerinstellingen definieert met cURL; deze moet geschikte instellingen bevatten voor `cache-control` en/of `surrogate-control`; voor voorbeelden, zie [Het beheren van Geheime voorgeheugen op het Aanhoudende Niveau van de Vraag](#cache-persisted-query-level)
+* kan door een verzoek worden beschreven dat de kopbalmontages van HTTP gebruikend cURL bepaalt; het zou geschikte montages voor `cache-control` en/of `surrogate-control` moeten omvatten; voor voorbeelden, zie [ het Leiden Geheime voorgeheugen bij het Persisted Niveau van de Vraag ](#cache-persisted-query-level)
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -296,11 +298,11 @@ Hiervoor gold het volgende:
 * can be overwritten if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-### Exemplaren publiceren {#publish-instances}
+### Publish-instanties {#publish-instances}
 
 Voor publicatie-instanties zijn de standaardwaarden:
 
-* `max-age`  : 60
+* `max-age` : 60
 * `s-maxage` : 7200
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
@@ -313,7 +315,7 @@ Deze kunnen worden overschreven:
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [op het niveau van de Vraag Blijven](#cache-persisted-query-level); dit houdt in dat de query naar AEM wordt gepost met gebruik van cURL in uw opdrachtregelinterface en dat de geplakte query wordt gepubliceerd.
+* [ bij het Verblijfsde Niveau van de Vraag ](#cache-persisted-query-level); dit impliceert het posten van de vraag aan AEM gebruikend cURL in uw interface van de bevellijn, en het publiceren van de Verlengde Vraag.
 
 * [met een OSGi-configuratie](#cache-osgi-configration)
 
@@ -347,11 +349,11 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een aanvraag voor een POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [Een GraphQL-query laten doorgaan](#how-to-persist-query), bijvoorbeeld om een query met cURL voort te zetten.
+`cache-control` kan op de aanmaaktijd (PUT) of later worden ingesteld (bijvoorbeeld via een verzoek om POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [ hoe te om een vraag van GraphQL ](#how-to-persist-query), voor een voorbeeld voort te zetten om een vraag te gebruiken cURL.
 
 ### Het beheren van Geheime voorgeheugen met een configuratie OSGi {#cache-osgi-configration}
 
-Als u de cache wereldwijd wilt beheren, kunt u [vorm de montages OSGi](/help/sites-deploying/configuring-osgi.md) voor de **Configuratie van blijvende query-service**. Anders gebruikt deze configuratie OSGi [standaardwaarden voor publicatie-instanties](#publish-instances).
+Om het geheime voorgeheugen globaal te beheren, kunt u [ de montages OSGi ](/help/sites-deploying/configuring-osgi.md) voor de **Verlengde Configuratie van de Dienst van de Vraag** vormen. Anders gebruikt deze configuratie OSGi de [ standaardwaarden voor publiceer instanties ](#publish-instances).
 
 >[!NOTE]
 >
@@ -359,7 +361,7 @@ Als u de cache wereldwijd wilt beheren, kunt u [vorm de montages OSGi](/help/sit
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 
-Voor gebruik door een toepassing worden speciale tekens gebruikt bij het samenstellen van queryvariabelen (dus puntkomma&#39;s (`;`), gelijkteken (`=`), slashes `/`) moet worden omgezet om de overeenkomstige UTF-8-codering te gebruiken.
+Voor gebruik door een toepassing, moeten om het even welke speciale karakters die worden gebruikt wanneer het construeren van vraagvariabelen (d.w.z. puntkomma&#39;s (`;`), gelijkteken (`=`), schuine strepen `/`) worden omgezet om het overeenkomstige coderen te gebruiken UTF-8.
 
 Bijvoorbeeld:
 
@@ -385,30 +387,30 @@ In onbewerkte tekst ziet de aanvraag-URI er als volgt uit:
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-Als u een voortgezette query in een client-app wilt gebruiken, moet de SDK van de client zonder kop worden gebruikt voor [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java), of [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). De Headless Client SDK codeert alle queryvariabelen automatisch naar behoren in de aanvraag.
+Om een voortgezette vraag in een cliënttoepassing te gebruiken, zou de AEM headless cliënt SDK voor [ JavaScript ](https://github.com/adobe/aem-headless-client-js), [ Java ](https://github.com/adobe/aem-headless-client-java), of [ NodeJS ](https://github.com/adobe/aem-headless-client-nodejs) moeten worden gebruikt. De Headless Client SDK codeert alle queryvariabelen automatisch naar behoren in de aanvraag.
 
 ## Het overbrengen van een blijvende vraag aan uw milieu van de Productie  {#transfer-persisted-query-production}
 
-De gepersisteerde vragen zouden altijd op de dienst van de Auteur van de AEM moeten worden gecreeerd en dan (herhaald) aan de AEM publicatiedienst worden gepubliceerd. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Verlengde vragen aan hogere niveaumilieu&#39;s te bevorderen, die hen uiteindelijk op een productie AEM publiceren milieu voor cliënttoepassingen ter beschikking stellen om te verbruiken.
+De gepersisteerde vragen zouden altijd op de dienst van de Auteur van de AEM moeten worden gecreeerd en dan (herhaald) aan de dienst van AEM Publish gepubliceerd. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Persisted query&#39;s naar omgevingen op een hoger niveau te promoten, zodat ze uiteindelijk beschikbaar worden gesteld op een productie AEM Publish-omgeving voor gebruik door clienttoepassingen.
 
 ### Voorbehouden query&#39;s verpakken
 
-De blijvende vragen kunnen in worden gebouwd [AEM](/help/sites-administering/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM-ontwerpomgeving naar AEM publicatieomgevingen.
+De aanhoudende vragen kunnen in [ AEM Pakketten ](/help/sites-administering/package-manager.md) worden gebouwd. AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM Auteur-omgeving naar AEM Publish-omgevingen.
 
 Een pakket maken:
 
-1. Navigeren naar **Gereedschappen** > **Implementatie** > **Pakketten**.
-1. Een pakket maken door erop te tikken **Pakket maken**. Hiermee wordt een dialoogvenster geopend waarin u het pakket kunt definiëren.
-1. In het dialoogvenster Pakketdefinitie, onder **Algemeen** Voer een **Naam** zoals &quot;wknd-persistent-questions&quot;.
+1. Navigeer aan **Hulpmiddelen** > **Plaatsing** > **Pakketten**.
+1. Creeer een pakket door **te tikken creeer Pakket**. Hiermee wordt een dialoogvenster geopend waarin u het pakket kunt definiëren.
+1. In de Dialoog van de Definitie van het Pakket, onder **Algemene** ga a **Naam** als &quot;wknd-persistente-query&#39;s&quot; in.
 1. Voer een versienummer in, bijvoorbeeld &quot;1.0&quot;.
-1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor `wknd` configuratie het volledige weg zal zijn `/conf/wknd/settings/graphql/persistentQueries`.
-1. Selecteren **Opslaan** om de nieuwe pakketdefinitie op te slaan en het dialoogvenster te sluiten.
-1. Selecteer de **Opbouwen** in de nieuwe definitie van het Pakket.
+1. Onder **Filters** voeg een nieuwe **Filter** toe. Gebruik de Finder van het Weg om de `persistentQueries` omslag onder de configuratie te selecteren. Voor de `wknd` -configuratie is het volledige pad bijvoorbeeld `/conf/wknd/settings/graphql/persistentQueries` .
+1. Selecteer **sparen** om de nieuwe definitie van het Pakket te bewaren en de dialoog te sluiten.
+1. Selecteer **bouwt** knoop in de pas gecreëerde definitie van het Pakket.
 
 Nadat het pakket is gemaakt, kunt u:
 
-* **Downloaden** het pakket en heruploaden in een andere omgeving.
-* **Repliceren** het pakket door te tikken **Meer** > **Repliceren**. Hierdoor wordt het pakket gerepliceerd naar de verbonden AEM-publicatieomgeving.
+* **Download** het pakket en herupload op een verschillend milieu.
+* **Repliceer** het pakket door **meer** te tikken > **Repliceer**. Hierdoor wordt het pakket gerepliceerd naar de aangesloten AEM Publish-omgeving.
 
 <!--
 1. Using replication/distribution tool:

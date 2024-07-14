@@ -18,22 +18,22 @@ ht-degree: 0%
 
 # Werken met hulpprogramma&#39;s voor PDF {#working-with-pdf-utilities}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
-**Informatie over de PDF Utilities Service**
+**Ongeveer de Dienst van Hulpprogramma&#39;s van de PDF**
 
 De service Hulpprogramma&#39;s voor PDF kan PDF- en XDP-bestandsindelingen converteren, PDF-documenteigenschappen instellen en ophalen en XMP metagegevens bewerken. Voordat u bijvoorbeeld een PDF-document omzet naar een andere indeling, is het handig om de eigenschappen ervan te inspecteren om te bepalen welke servicebewerking moet worden aangeroepen voor de conversie.
 
 U kunt deze taken uitvoeren met behulp van de service Hulpprogramma&#39;s PDF:
 
 * PDF-documenten converteren naar XDP-documenten.
-* XDP-documenten converteren naar PDF-documenten. (Zie [XDP-documenten converteren naar PDF-documenten](pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
-* Eigenschappen van PDF-document ophalen. (Zie [Eigenschappen van PDF-document ophalen](pdf-utilities.md#retrieving-pdf-document-properties).)
-* Sla een PDF-document op en optimaliseer het voor snelle webweergave. (Zie [Modi voor het opslaan van PDF-documenten instellen](pdf-utilities.md#setting-pdf-document-save-modes).)
+* XDP-documenten converteren naar PDF-documenten. (Zie [ Converterend XDP Documenten in de Documenten van PDF ](pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
+* Eigenschappen van PDF-document ophalen. (Zie [ het Terugwinnen van de Eigenschappen van het Document van PDF ](pdf-utilities.md#retrieving-pdf-document-properties).)
+* Sla een PDF-document op en optimaliseer het voor snelle webweergave. (Zie [ Plaatsend het Document van PDF sparen Wijzen ](pdf-utilities.md#setting-pdf-document-save-modes).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF-documenten converteren naar XDP-documenten {#converting-pdf-documents-into-xdp-documents}
 
@@ -41,7 +41,7 @@ Met de Java-API&#39;s voor hulpprogramma&#39;s voor PDF en webservices kunt u PD
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -51,19 +51,19 @@ Voer de volgende stappen uit om een PDF-document om te zetten in een XDP-documen
 1. Maak een PDFUtilityService-client.
 1. Roep de conversiebewerking PDF naar XDP aan.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, dient u de proxybestanden op te nemen.
 
-**Een PDFUtilityService-client maken**
+**creeer een cliënt PDFUtilityService**
 
-Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit bereikt door een `PDFUtilityServiceClient` object. Met de webservice-API kunt u dit bereiken door een `PDFUtilityServiceService` object.
+Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit gedaan door een `PDFUtilityServiceClient` -object te maken. Met de webservice-API gebeurt dit met behulp van een `PDFUtilityServiceService` -object.
 
-**De conversiebewerking PDF naar XDP aanroepen**
+**Roep de PDF aan XDP omzettingsverrichting** aan
 
 Nadat u de de dienstcliënt creeert, kunt u de PDF tot XDP omzettingsverrichting aanhalen.
 
-**Zie ook**
+**zie ook**
 
 [PDF-documenten converteren naar XDP-documenten met de Java API](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
 
@@ -83,13 +83,13 @@ PDF-documenten converteren naar XDP-documenten met de API voor hulpprogramma&#39
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Maak een `PDFUtilityServiceClient` -object door de constructor ervan te gebruiken en een `ServiceClientFactory` -object door te geven dat verbindingseigenschappen bevat.
 
 1. De conversiebewerking PDF naar XDP aanroepen
 
-   Als u de conversie wilt uitvoeren, roept u de `PDFUtilityServiceClient` object `convertPDFtoXDP` methode en geeft een `com.adobe.idp.Document` object dat het PDF-bestand vertegenwoordigt. De methode retourneert een `com.adobe.idp.Document` object dat het nieuwe XDP-bestand vertegenwoordigt.
+   Als u de conversie wilt uitvoeren, roept u de methode `convertPDFtoXDP` van het object `PDFUtilityServiceClient` aan en geeft u een `com.adobe.idp.Document` -object door dat het PDF-bestand vertegenwoordigt. De methode retourneert een `com.adobe.idp.Document` -object dat het nieuwe XDP-bestand vertegenwoordigt.
 
-**Zie ook**
+**zie ook**
 
 [PDF-documenten converteren naar XDP-documenten](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
@@ -108,13 +108,13 @@ PDF-documenten converteren naar XDP-documenten met behulp van de API voor hulppr
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceService` -object door uw proxyklasseconstructor te gebruiken.
+   Maak een `PDFUtilityServiceService` -object met de constructor van de proxyklasse.
 
 1. De conversiebewerking PDF naar XDP aanroepen
 
-   De `PDFUtilityServiceService` object `convertPDFtoXDP` methode en geeft een `BLOB` object dat het PDF-bestand vertegenwoordigt. De methode retourneert een `BLOB` object dat het nieuwe XDP-bestand vertegenwoordigt.
+   Roep de methode `convertPDFtoXDP` van het object `PDFUtilityServiceService` aan en geef een `BLOB` -object door dat het PDF-bestand vertegenwoordigt. De methode retourneert een `BLOB` -object dat het nieuwe XDP-bestand vertegenwoordigt.
 
-**Zie ook**
+**zie ook**
 
 [PDF-documenten converteren naar XDP-documenten](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
@@ -128,7 +128,7 @@ Met de Java-API&#39;s voor hulpprogramma&#39;s voor PDF en webservices kunt u XD
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -138,19 +138,19 @@ Voer de volgende stappen uit om een XDP-document om te zetten in een PDF-documen
 1. Maak een PDFUtilityService-client.
 1. Roep de XDP aan de omzettingsverrichting van PDF aan.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, dient u de proxybestanden op te nemen.
 
-**Een PDFUtilityService-client maken**
+**creeer een cliënt PDFUtilityService**
 
-Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit bereikt door een `PDFUtilityServiceClient` object. Met de webservice-API kunt u dit bereiken door een `PDFUtilityServiceService` object.
+Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit gedaan door een `PDFUtilityServiceClient` -object te maken. Met de webservice-API gebeurt dit met behulp van een `PDFUtilityServiceService` -object.
 
-**De XDP-conversiebewerking naar PDF aanroepen**
+**Roep XDP aan de omzettingsverrichting van PDF** aan
 
 Nadat u de de dienstcliënt creeert, kunt u XDP tot de omzettingsverrichting van PDF aanhalen.
 
-**Zie ook**
+**zie ook**
 
 [XDP-documenten converteren naar PDF-documenten met de Java API](pdf-utilities.md#convert-xdp-documents-into-pdf-documents-using-the-java-api)
 
@@ -170,13 +170,13 @@ XDP-documenten converteren naar PDF-documenten met de API voor hulpprogramma&#39
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Maak een `PDFUtilityServiceClient` -object door de constructor ervan te gebruiken en een `ServiceClientFactory` -object door te geven dat verbindingseigenschappen bevat.
 
 1. De XDP-conversiebewerking naar PDF aanroepen
 
-   Als u de conversie wilt uitvoeren, roept u de `PDFUtilityServiceClient` object `convertXDPtoPDF` methode en geeft een `com.adobe.idp.Document` object dat het XDP-bestand vertegenwoordigt. De methode retourneert een `com.adobe.idp.Document` object dat het nieuwe PDF-bestand vertegenwoordigt.
+   Als u de conversie wilt uitvoeren, roept u de methode `convertXDPtoPDF` van het object `PDFUtilityServiceClient` aan en geeft u een `com.adobe.idp.Document` -object door dat het XDP-bestand vertegenwoordigt. De methode retourneert een `com.adobe.idp.Document` -object dat het nieuwe PDF-bestand vertegenwoordigt.
 
-**Zie ook**
+**zie ook**
 
 [XDP-documenten converteren naar PDF-documenten](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
@@ -195,13 +195,13 @@ XDP-documenten converteren naar PDF-documenten met behulp van de API voor hulppr
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceService` -object door uw proxyklasseconstructor te gebruiken.
+   Maak een `PDFUtilityServiceService` -object met de constructor van de proxyklasse.
 
 1. De XDP-conversiebewerking naar PDF aanroepen
 
-   Als u de conversie wilt uitvoeren, roept u de `PDFUtilityServiceService` object `convertXDPtoPDF` methode en geeft een `BLOB` object dat het XDP-bestand vertegenwoordigt. De methode retourneert een `BLOB` object dat het nieuwe PDF-bestand vertegenwoordigt.
+   Als u de conversie wilt uitvoeren, roept u de methode `convertXDPtoPDF` van het object `PDFUtilityServiceService` aan en geeft u een `BLOB` -object door dat het XDP-bestand vertegenwoordigt. De methode retourneert een `BLOB` -object dat het nieuwe PDF-bestand vertegenwoordigt.
 
-**Zie ook**
+**zie ook**
 
 [XDP-documenten converteren naar PDF-documenten](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
@@ -215,7 +215,7 @@ Met de Java-API&#39;s voor hulpprogramma&#39;s voor PDF en webservices kunt u PD
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -225,19 +225,19 @@ Voer de volgende stappen uit om PDF-documenteigenschappen op te halen:
 1. Maak een PDFUtilityService-client.
 1. Roep de ophaalbewerking voor eigenschappen aan.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, dient u de proxybestanden op te nemen.
 
-**Een PDFUtilityService-client maken**
+**creeer een cliënt PDFUtilityService**
 
-Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit bereikt door een `PDFUtilityServiceClient` object. Met de webservice-API wordt dit bereikt met een `PDFUtilityServiceService` object.
+Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit gedaan door een `PDFUtilityServiceClient` -object te maken. Met de webservice-API wordt dit gedaan met een `PDFUtilityServiceService` -object.
 
-**Ophaalbewerking voor eigenschappen aanroepen**
+**haalt de eigenschappen herwinning verrichting** aan
 
 Nadat u de de dienstcliënt creeert, kunt u de eigenschappen terugwinningsverrichting aanhalen.
 
-**Zie ook**
+**zie ook**
 
 [Eigenschappen van PDF-documenten ophalen met de Java API](pdf-utilities.md#retrieve-pdf-document-properties-using-the-java-api)
 
@@ -257,18 +257,18 @@ PDF-documenteigenschappen ophalen met de PDF Utilities API (Java):
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Maak een `PDFUtilityServiceClient` -object door de constructor ervan te gebruiken en een `ServiceClientFactory` -object door te geven dat verbindingseigenschappen bevat.
 
 1. Ophaalbewerking voor eigenschappen aanroepen
 
-   Als u de conversie wilt uitvoeren, roept u de `PDFUtilityServiceClient` object `getPDFProperties` en geeft het volgende door:
+   Als u de conversie wilt uitvoeren, roept u de methode `getPDFProperties` van het object `PDFUtilityServiceClient` aan en geeft u het volgende door:
 
-   * A `com.adobe.idp.Document` object dat staat voor het PDF-document.
-   * A `PDFPropertiesOptionSpec` object dat de eigenschappen bevat die moeten worden geëvalueerd.
+   * Een `com.adobe.idp.Document` -object dat het PDF-document vertegenwoordigt.
+   * Een `PDFPropertiesOptionSpec` -object dat de eigenschappen bevat die moeten worden geëvalueerd.
 
-   De methode retourneert een `PDFPropertiesResult` object dat de resultaten van de query bevat.
+   De methode retourneert een `PDFPropertiesResult` -object dat de resultaten van de query bevat.
 
-**Zie ook**
+**zie ook**
 
 [Eigenschappen van PDF-document ophalen](pdf-utilities.md#retrieving-pdf-document-properties)
 
@@ -287,18 +287,18 @@ U kunt de eigenschappen van PDF-documenten ophalen met de API voor de PDF Utilit
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceService` -object door uw proxyklasseconstructor te gebruiken.
+   Maak een `PDFUtilityServiceService` -object met de constructor van de proxyklasse.
 
 1. Ophaalbewerking voor eigenschappen aanroepen
 
-   Als u de conversie wilt uitvoeren, roept u de `PDFUtilityServiceService` object `getPDFProperties` en geeft het volgende door:
+   Als u de conversie wilt uitvoeren, roept u de methode `getPDFProperties` van het object `PDFUtilityServiceService` aan en geeft u het volgende door:
 
-   * A `BLOB` object dat staat voor het PDF-document.
-   * A `PDFPropertiesOptionSpec` object dat de eigenschappen bevat die moeten worden geëvalueerd.
+   * Een `BLOB` -object dat het PDF-document vertegenwoordigt.
+   * Een `PDFPropertiesOptionSpec` -object dat de eigenschappen bevat die moeten worden geëvalueerd.
 
-   De methode retourneert een `PDFPropertiesResult` object dat de resultaten van de query bevat.
+   De methode retourneert een `PDFPropertiesResult` -object dat de resultaten van de query bevat.
 
-**Zie ook**
+**zie ook**
 
 [Eigenschappen van PDF-document ophalen](pdf-utilities.md#retrieving-pdf-document-properties)
 
@@ -312,7 +312,7 @@ Met de Java- en webservice-API&#39;s van de PDF Utilities kunt u een opslagmodus
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -324,35 +324,35 @@ Voer de volgende stappen uit om de opslagoptie voor PDF-documenten in te stellen
 1. Roep de opslagbewerking aan.
 1. Geef het PDF-document door aan een andere bewerking.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, dient u de proxybestanden op te nemen.
 
-**Een PDFUtilityService-client maken**
+**creeer een cliënt PDFUtilityService**
 
-Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit bereikt door een `PDFUtilityServiceClient` object. Met de webservice-API wordt dit bereikt met een `PDFUtilityServiceService` object.
+Alvorens u een verrichting van de Hulpprogramma&#39;s van de PDF kunt programmatically uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit gedaan door een `PDFUtilityServiceClient` -object te maken. Met de webservice-API wordt dit gedaan met een `PDFUtilityServiceService` -object.
 
-**De modus Opslaan instellen**
+**plaats sparen wijze**
 
 U kunt een van de volgende opslagopties kiezen:
 
-* `INCREMENTAL`: In stappen opslaan om de tijd die nodig is om te besparen te verkorten
+* `INCREMENTAL`: Opslaan in stappen om de tijd die nodig is om te besparen te verkorten
 * `FAST_WEB_VIEW`: opslaan voor snelle webweergave
 * `FULL`: Opslaan met volledige opslag (zonder optimalisaties)
 
-**Opslaan van stijlbewerking aanroepen**
+**Roep sparen stijlverrichting** aan
 
 Nadat u de de dienstcliënt creeert, kunt u de eigenschappen terugwinningsverrichting aanhalen.
 
-**Het PDF-document doorgeven aan een andere AEM Forms-bewerking**
+**ga het document van de PDF tot een andere verrichting van AEM Forms over**
 
-Wanneer de service Hulpprogramma&#39;s PDF de opgegeven opslagmodus heeft ingesteld, geeft u het PDF-document door aan een andere AEM Forms-bewerking. Nadat het PDF-document uit die bewerking is geretourneerd, wordt het in de opgegeven modus opgeslagen. Als u bijvoorbeeld de service Hulpprogramma&#39;s PDF gebruikt om de `FAST_WEB_VIEW` en geeft het PDF-document vervolgens door aan de coderingsservice `encryptUsingPassword` bewerking, het geretourneerde PDF-document wordt gecodeerd met een wachtwoord en opgeslagen in de `FAST_WEB_VIEW` -modus.
+Wanneer de service Hulpprogramma&#39;s PDF de opgegeven opslagmodus heeft ingesteld, geeft u het PDF-document door aan een andere AEM Forms-bewerking. Nadat het PDF-document uit die bewerking is geretourneerd, wordt het in de opgegeven modus opgeslagen. Als u bijvoorbeeld de service PDF Utilities gebruikt om de modus `FAST_WEB_VIEW` in te stellen en het PDF-document vervolgens doorgeeft aan de bewerking `encryptUsingPassword` van de coderingsservice, wordt het geretourneerde PDF-document versleuteld met een wachtwoord en opgeslagen in de modus `FAST_WEB_VIEW` .
 
 >[!NOTE]
 >
->Met het snelstarten dat aan deze sectie is gekoppeld, stelt u de `FAST_WEB_VIEW` en geeft het PDF-document vervolgens door aan de coderingsservice `encryptUsingPassword` -bewerking.
+>Met Snel starten dat aan deze sectie is gekoppeld, wordt de modus `FAST_WEB_VIEW` ingesteld en wordt het PDF-document vervolgens doorgegeven aan de bewerking `encryptUsingPassword` van de coderingsservice.
 
-**Zie ook**
+**zie ook**
 
 [Opslagopties voor PDF-documenten instellen met de Java API](pdf-utilities.md#set-pdf-document-save-options-using-the-java-api)
 
@@ -374,28 +374,28 @@ Stel de opslagopties voor het PDF-document in met de API voor hulpprogramma&#39;
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Maak een `PDFUtilityServiceClient` -object door de constructor ervan te gebruiken en een `ServiceClientFactory` -object door te geven dat verbindingseigenschappen bevat.
 
 1. De modus Opslaan instellen
 
-   * Een `PDFUtilitySaveMode` object met behulp van de constructor.
-   * Stel de opslagmodus in door de `PDFUtilitySaveMode` object `setSaveStyle` methode en het overgaan van een koordwaarde die sparen wijze specificeert. Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u door `FAST_WEB_VIEW`.
+   * Maak een `PDFUtilitySaveMode` -object met behulp van de constructor.
+   * Stel de opslagmodus in door de methode `setSaveStyle` van het object `PDFUtilitySaveMode` aan te roepen en een tekenreekswaarde door te geven die de opslagmodus aangeeft. Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u `FAST_WEB_VIEW` door.
 
 1. Opslaan van stijlbewerking aanroepen
 
-   De `PDFUtilityServiceClient` object `setSaveMode` en geeft de volgende waarden door:
+   Roep de methode `setSaveMode` van het object `PDFUtilityServiceClient` aan en geef de volgende waarden door:
 
-   * A `com.adobe.idp.Document` object dat staat voor het PDF-document.
-   * A `PDFUtilitySaveMode` object dat de stijl bevat die moet worden gebruikt.
+   * Een `com.adobe.idp.Document` -object dat het PDF-document vertegenwoordigt.
+   * Een `PDFUtilitySaveMode` -object dat de opslagstijl bevat die moet worden gebruikt.
    * Een Booleaanse waarde die wordt gebruikt om te bepalen of vorige instellingen moeten worden overschreven.
 
-   De methode retourneert een `com.adobe.idp.Document` object dat is opgemaakt met de opgegeven opslagstijl.
+   De methode retourneert een `com.adobe.idp.Document` -object dat is opgemaakt met de opgegeven opslagstijl.
 
 1. Het PDF-document doorgeven aan een andere AEM Forms-bewerking
 
-   * Geef de geretourneerde waarde door `com.adobe.idp.Document` object naar een andere AEM Forms-bewerking.
+   * Geef het geretourneerde `com.adobe.idp.Document` -object door aan een andere AEM Forms-bewerking.
 
-**Zie ook**
+**zie ook**
 
 [Modi voor het opslaan van PDF-documenten instellen](pdf-utilities.md#setting-pdf-document-save-modes)
 
@@ -414,28 +414,28 @@ Stel de opslagopties voor het PDF-document in met behulp van de AP PDF Utilities
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceService` -object door uw proxyklasseconstructor te gebruiken.
+   Maak een `PDFUtilityServiceService` -object met de constructor van de proxyklasse.
 
 1. De modus Opslaan instellen
 
-   * Een `PDFUtilitySaveMode` object met behulp van de constructor.
-   * Stel de opslagmodus in door een tekenreekswaarde toe te wijzen aan de `PDFUtilitySaveMode` object `saveStyle` een methode die de opslagmodus aangeeft. Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u `FAST_WEB_VIEW`.
+   * Maak een `PDFUtilitySaveMode` -object met behulp van de constructor.
+   * Stel de opslagmodus in door een tekenreekswaarde toe te wijzen aan de methode `saveStyle` van het object `PDFUtilitySaveMode` die de opslagmodus aangeeft. Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u `FAST_WEB_VIEW` op.
 
 1. Opslaan van stijlbewerking aanroepen
 
-   De `PDFUtilityServiceService` object `setSaveMode` en geeft de volgende waarden door:
+   Roep de methode `setSaveMode` van het object `PDFUtilityServiceService` aan en geef de volgende waarden door:
 
-   * A `BLOB` object dat staat voor het PDF-document.
-   * A `PDFUtilitySaveMode` object dat de stijl bevat die moet worden gebruikt.
+   * Een `BLOB` -object dat het PDF-document vertegenwoordigt.
+   * Een `PDFUtilitySaveMode` -object dat de opslagstijl bevat die moet worden gebruikt.
    * Een Booleaanse waarde die wordt gebruikt om te bepalen of vorige instellingen moeten worden overschreven.
 
-   De methode retourneert een `BLOB` object dat is opgemaakt met de opgegeven opslagstijl. U kunt dat object vervolgens opslaan als een PDF-document.
+   De methode retourneert een `BLOB` -object dat is opgemaakt met de opgegeven opslagstijl. U kunt dat object vervolgens opslaan als een PDF-document.
 
 1. Het PDF-document doorgeven aan een andere Forms-bewerking
 
-   * Geef de geretourneerde waarde door `BLOB` object naar een andere AEM Forms-bewerking.
+   * Geef het geretourneerde `BLOB` -object door aan een andere AEM Forms-bewerking.
 
-**Zie ook**
+**zie ook**
 
 [Modi voor het opslaan van PDF-documenten instellen](pdf-utilities.md#setting-pdf-document-save-modes)
 
@@ -449,7 +449,7 @@ U kunt de Java API&#39;s voor hulpprogramma&#39;s voor PDF gebruiken om PDF-docu
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -459,19 +459,19 @@ Voer de volgende stappen uit om het PDF-document te ontsmetten:
 1. Maak een PDFUtilityService-client.
 1. Roep de ontsmettingsbewerking aan.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Neem de benodigde JAR-bestanden op als u een clienttoepassing met Java wilt maken.
 
-**Een PDFUtilityService-client maken**
+**creeer een cliënt PDFUtilityService**
 
-Alvorens u een ontsmettingsverrichting programmatically kunt uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit bereikt door een `PDFUtilityServiceClient` object.
+Alvorens u een ontsmettingsverrichting programmatically kunt uitvoeren, moet u een cliënt PDFUtilityService tot stand brengen. Met de Java API wordt dit gedaan door een `PDFUtilityServiceClient` -object te maken.
 
-**De conversiebewerking PDF naar XDP aanroepen**
+**Roep de PDF aan XDP omzettingsverrichting** aan
 
 Nadat u de de dienstcliënt creeert, kunt u de ontsmettingsverrichting aanhalen.
 
-**Zie ook**
+**zie ook**
 
 [PDF-documenten converteren naar XDP-documenten met de Java API](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
 
@@ -491,13 +491,13 @@ Documenten ontsmetten met de API voor hulpprogramma&#39;s van PDF (Java):
 
 1. Een PDFUtilityService-client maken
 
-   Een `PDFUtilityServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Maak een `PDFUtilityServiceClient` -object door de constructor ervan te gebruiken en een `ServiceClientFactory` -object door te geven dat verbindingseigenschappen bevat.
 
 1. De conversiebewerking PDF naar XDP aanroepen
 
-   Als u de conversie wilt uitvoeren, roept u de `PDFUtilityServiceClient` object `convertPDFtoXDP` methode en geeft een `com.adobe.idp.Document` object dat het PDF-bestand vertegenwoordigt. De methode retourneert een `com.adobe.idp.Document` object dat het nieuwe XDP-bestand vertegenwoordigt.
+   Als u de conversie wilt uitvoeren, roept u de methode `convertPDFtoXDP` van het object `PDFUtilityServiceClient` aan en geeft u een `com.adobe.idp.Document` -object door dat het PDF-bestand vertegenwoordigt. De methode retourneert een `com.adobe.idp.Document` -object dat het nieuwe XDP-bestand vertegenwoordigt.
 
-**Zie ook**
+**zie ook**
 
 [PDF-documenten bewerken](/help/forms/developing/pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 

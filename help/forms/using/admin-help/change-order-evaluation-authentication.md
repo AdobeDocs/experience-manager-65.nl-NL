@@ -42,7 +42,7 @@ Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijz
     </node>
    ```
 
-   In `<entry key="order" value="3" />`, geef de waarde voor elke knoop uit om de orde van de authentificatieevaluatie te plaatsen.
+   Bewerk in `<entry key="order" value="3" />` de waarde voor elk knooppunt om de volgorde van de verificatiebeoordeling in te stellen.
 
 1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Bladeren om het bestand te zoeken, klik op Importeren en klik vervolgens op OK.

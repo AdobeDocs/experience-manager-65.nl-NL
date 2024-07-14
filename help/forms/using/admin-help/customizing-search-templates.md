@@ -20,7 +20,7 @@ ht-degree: 0%
 
 U kunt zoeksjablonen maken die in Workspace worden gebruikt om te zoeken naar varianten van processen op de pagina&#39;s Aan en Volgen. U kunt ook bestaande zoeksjablonen bewerken of verwijderen.
 
-Wanneer u een zoeksjabloon maakt of bewerkt, kunt u de indeling en sorteervolgorde van de zoekresultaten opgeven. Gebruikers kunnen deze instellingen echter wijzigen in Workspace nadat de zoekresultaten worden weergegeven.
+Wanneer u een zoeksjabloon maakt of bewerkt, kunt u de indeling en sorteervolgorde van de zoekresultaten opgeven. Gebruikers kunnen deze instellingen echter wijzigen in Workspace nadat de zoekresultaten zijn weergegeven.
 
 U kunt zo veel zoeksjablonen maken als u wilt.
 
@@ -30,14 +30,14 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
 ## Een eenvoudige zoeksjabloon maken {#create-a-simple-search-template}
 
-1. Klik in de beheerconsole op Services > Werkruimte > Sjablonen zoeken.
+1. Klik in de beheerconsole op Services > Workspace > Sjablonen zoeken.
 1. Geef op het tabblad Identificatie in het vak Beschrijving van zoeksjabloon het doel van de sjabloon op.
 1. (Optioneel) Klik op het tabblad Criteria en geef de zoekcriteria voor de sjabloon op.
 1. Klik op het tabblad Opslaan, voer een unieke naam voor de sjabloon in en klik op Opslaan.
 
 ## Een zoeksjabloon maken of bewerken {#create-or-edit-a-search-template}
 
-1. Klik in de beheerconsole op Services > Werkruimte > Sjablonen zoeken.
+1. Klik in de beheerconsole op Services > Workspace > Sjablonen zoeken.
 1. (Optioneel) Als u een bestaande sjabloon bewerkt of een bestaande sjabloon gebruikt als basis voor een nieuwe sjabloon, selecteert u de sjabloon in de lijst Sjabloonnaam zoeken.
 1. Geef in het vak Beschrijving van zoeksjabloon het doel van de sjabloon op.
 1. (Optioneel) Geef in het vak Gebruikersinstructies instructies op die u kunnen helpen bij het gebruik van de sjabloon. Deze instructies worden weergegeven in Workspace wanneer een gebruiker de zoeksjabloon selecteert.
@@ -45,21 +45,21 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
    * Selecteer boven aan het tabblad Criteria een proceselement of taakelement.
 
-     **Tip**: *Als u eerder het element Procesnaam hebt geselecteerd en een proces hebt opgegeven, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, ook beschikbaar voor selectie.*
+     **Uiteinde**: *als u eerder het element van de Naam van het Proces selecteerde en een proces specificeerde, zijn om het even welke Variabelen van het Proces die in dat proces worden bepaald ook beschikbaar voor selectie.*
 
-     **Tip**: *Als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
+     **Uiteinde**: *als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
 
      De velden met zoekcriteria voor het geselecteerde element staan onder aan het tabblad Criteria.
 
    * Vul voor elk proceselement, elk taakelement en elke procesvariabele die u selecteert de bijbehorende zoekvelden onder aan het tabblad Criteria in:
 
       * Selecteer een relationele operator (bijvoorbeeld &quot;gelijk aan&quot;) in de opgegeven lijst en geef de waarde van de operand op in het vak ernaast.
-      * (Optioneel) Als u wilt dat gebruikers de operandwaarde in Workspace kunnen wijzigen, selecteert u De gebruiker toestaan de operand te wijzigen.
+      * (Optioneel) Als u wilt dat gebruikers de operandwaarde in Workspace kunnen wijzigen, selecteert u Toestaan dat de gebruiker de operand wijzigt.
       * (Optioneel) Als u gebruikers wilt toestaan de relationele operator te wijzigen, selecteert u Toestaan dat de gebruiker een andere relationele operator selecteert. Selecteer in de lijst die wordt weergegeven de operatoren die beschikbaar zijn voor de gebruiker.
 
-     **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de Forms-server wordt uitgevoerd. Nadat u een proces hebt geselecteerd, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, beschikbaar voor selectie onder Procesvariabelen in de bovenste sectie van het tabblad Criteria.*
+     **Uiteinde**: *als u de Naam van het Proces als element selecteerde, kunt u het pictogram naast het operandgebied klikken om een lijst te tonen waar u een proces kunt selecteren dat op de Server van Forms loopt. Na het selecteren van een proces, zijn om het even welke procesvariabelen die in dat proces worden bepaald beschikbaar voor selectie onder de Variabelen van het Proces in de hoogste sectie van het lusje van Criteria.*
 
-     **Tip**: *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
+     **Uiteinde**: *u kunt een element van het onderzoeksmalplaatje schrappen door het pictogram van de Schrapping naast de het onderzoekscriteria van het element te klikken.*
 
 1. (Optioneel) Klik op het tabblad Lay-out voor elke kolomkop die in de zoekresultaten moet worden weergegeven en voer de volgende stappen uit:
 
@@ -69,7 +69,7 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
    >[!NOTE]
    >
-   >De indeling die in de zoeksjabloon is opgegeven, heeft voorrang op de gebruikersvoorkeuren die voor kolomkoppen in Workspace zijn opgegeven.
+   >De indeling die in de zoeksjabloon is opgegeven, heeft voorrang op de gebruikersvoorkeuren die in Workspace voor kolomkoppen zijn opgegeven.
 
 1. (Optioneel) Klik op het tabblad Sorteren voor elke kolom die u in de zoekresultaten wilt sorteren en voer de volgende stappen uit:
 

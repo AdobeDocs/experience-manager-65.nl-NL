@@ -27,17 +27,17 @@ Wanneer een proces stagneert, worden geen verdere verrichtingen in werking geste
 
 Voor elk opgebouwd punt, toont de lijst de volgende informatie:
 
-**Naam van bewerking of tak:** De naam van de bewerking of vertakking.
+**Naam van de Verrichting of Naam van de Tak:** De naam van de verrichting of tak.
 
-**Status:** Altijd STALLED voor opgezette items.
+**Status:** altijd GESTALLEERD voor opgezette punten.
 
 **Fout:** Een korte beschrijving van het probleem.
 
-**Proces-id:** Het positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
+**identiteitskaart van het Proces:** het positieve geheel dat het vormwerkschema toewijst wanneer het proces (namelijk wanneer een gebruiker of een geautomatiseerde stap een proces) wordt geconcretiseerd. U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
 
-**Procesnaam - Versie:** De naam van het proces dat is toegewezen in Workbench.
+**Naam van het Proces - Versie:** de naam van het proces dat in Workbench wordt toegewezen.
 
-**Opgeslagen datum:** De datum en tijd waarop de bewerking of vertakking is gestapeld.
+**Geroepen Datum:** de datum en de tijd de verrichting of de tak die worden geïnstalleerd.
 
 U kunt de volgende taken op de Geroepen pagina van Verrichtingen of Geroepen Tanden doen:
 
@@ -78,8 +78,8 @@ De fouten komen voor wanneer de Assign verrichting van de Taak in de dienst van 
 
 Wanneer deze situatie voorkomt, verandert de staat van het proces en de taak niet in de gevormde escalatietijd, en de escalatie komt niet voor maar het proces stagneert niet. Het volgende bericht wordt weergegeven in het serverlogbestand:
 
-&quot;Het hoofd dat voor escalatie wordt gespecificeerd is ongeldig, voor taskID: *getal*, opgegeven wachtrij: *getal*.&quot;
+&quot;Het hoofd dat voor escalatie wordt gespecificeerd is ongeldig, voor taskID: *aantal*, gespecificeerde rij: *aantal*.&quot;
 
 Als de escalatiegebruiker wordt geschrapt alvorens de taak wordt geproduceerd (alvorens de Assign verrichting van de Taak uitvoert), wordt de processtalls of de InvalidPrincipal uitzonderingsgebeurtenis geworpen.
 
-Om dit probleem te verhinderen, wanneer u een gebruiker schrapt, onderzoek naar taken die tot die gebruiker behoren en behandelt hen dienovereenkomstig. (Zie [Werken met taken](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Om dit probleem te verhinderen, wanneer u een gebruiker schrapt, onderzoek naar taken die tot die gebruiker behoren en behandelt hen dienovereenkomstig. (Zie [ Werkend met taken ](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

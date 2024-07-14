@@ -20,14 +20,14 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-* [OSGI-pakketten maken](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [ Creërend de bundels OSGI ](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [AEM ontwikkelen](/help/sites-developing/components.md)
 * [Aangepast formulier maken](../../forms/using/creating-adaptive-form.md)
 * [Aangepast formulier ontwerpen](../../forms/using/introduction-forms-authoring.md)
 
 ## Procedure voor het dynamisch vullen van vervolgkeuzelijsten {#procedure-to-dynamically-populate-drop-down-lists}
 
-Overweeg een scenario waar u het **Staat** vervolgkeuzelijst op basis van een waarde die u in het dialoogvenster **Land** vervolgkeuzelijst. Als u Australië selecteert in het dialoogvenster **Land** vervolgkeuzelijst, de **Staat** in de vervolgkeuzelijst worden de staten in Australië weergegeven. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
+Overweeg een scenario waar u de **drop-down lijst wilt bevolken van de Staat** die op een waarde wordt gebaseerd die u in de **3} drop-down lijst van het Land {selecteert.** Als u Australië in de **drop-down lijst van het Land** selecteert, toont de **3} drop-down lijst van de Staat {de staten binnen Australië.** De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
 
 1. Creeer een project met de volgende modules:
 
@@ -145,16 +145,16 @@ Overweeg een scenario waar u het **Staat** vervolgkeuzelijst op basis van een wa
    }
    ```
 
-1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de `sling:resourceType` parameter voor het knooppunt is dezelfde als die waaraan de servlet-punten (/apps/populatedropdown) wijzen.
+1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de parameter `sling:resourceType` voor het knooppunt gelijk is aan die van het servlet-punt (/apps/populatedropdown).
 
-   ![Een vervolgkeuzelijst maken](assets/dropdown-node.png)
+   ![ creeer een drop-down knoop ](assets/dropdown-node.png)
 
 1. Verpak het inhoudsknooppunt en sluit het .jar-bestand in op een bepaalde locatie (bijvoorbeeld /apps/mijnmap/demo/install/). Implementeer hetzelfde bestand op de server.
 1. Maak een adaptief formulier en voeg er twee vervolgkeuzelijsten aan toe: Land en Staat. De lijst Land kan de namen van landen bevatten. In de lijst Frame kunnen dynamisch de namen worden ingevuld van staten voor het land dat u in de eerste lijst selecteert.
 
    Voeg de namen van de landen toe die u wilt weergeven in de lijst Land. Voeg in de lijst Staat een script toe om het te vullen op basis van de naam van het land in de lijst Land.
 
-   ![Landnamen toevoegen](assets/country-dropdown.png) ![Script toevoegen om statusnamen te vullen](assets/state-dropdown.png) ![Vervolgkeuzelijsten voor landen en staten](assets/2dropdowns.png)
+   ![ het Toevoegen van landnamen ](assets/country-dropdown.png) ![ Toevoegend manuscript om staatsnamen ](assets/state-dropdown.png) ![ land en van de Staat drop-down lijsten te bevolken ](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(

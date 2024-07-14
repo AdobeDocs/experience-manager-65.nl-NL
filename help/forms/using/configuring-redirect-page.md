@@ -17,32 +17,32 @@ ht-degree: 1%
 
 # Omleidingspagina configureren{#configuring-redirect-page}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html) |
 | AEM 6,5 | Dit artikel |
 
 Formulierauteurs kunnen een pagina configureren voor elk formulier, waarnaar de formuliergebruikers worden omgeleid na het verzenden van een formulier.
 
-1. Selecteer in de bewerkingsmodus een component en klik vervolgens op ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en klik vervolgens op ![cmppr](assets/cmppr.png).
+1. Op geef wijze uit, selecteer een component, dan klik ![ gebied-niveau ](assets/field-level.png) > **Aangepaste Container van de Vorm**, en klik dan ![ cmp ](assets/cmppr.png).
 
-1. Klik in de zijbalk op **Indiening**.
+1. In sidebar, klik **Verzending**.
 
 1. Geef de URL van de omleidingspagina op onder Vorige pagina in de sectie Verzending.
 1. Naar keuze, onder Verzenden Actie, voor Submit aan de het eindpuntactie van REST, kunt u de parameter vormen die tot de omleidingspagina wordt overgegaan.
 
-![Pagina-configuratie omleiden](assets/thank-you-setting-1.png)
+![ Richt paginasonfiguratie ](assets/thank-you-setting-1.png) opnieuw
 
 Pagina-configuratie omleiden
 
-Auteurs van formulieren kunnen de volgende parameters gebruiken die worden doorgegeven aan de pagina Bedankt. Voor alle beschikbare verzendacties: `status` en `owner` parameters worden doorgegeven. Naast deze twee parameters worden enkele aanvullende parameters doorgegeven voor de volgende verzendacties:
+Auteurs van formulieren kunnen de volgende parameters gebruiken die worden doorgegeven aan de pagina Bedankt. Voor alle beschikbare verzendacties worden de parameters `status` en `owner` doorgegeven. Naast deze twee parameters worden enkele aanvullende parameters doorgegeven voor de volgende verzendacties:
 
-* **Winkelinhoud, actie** (afgekeurd) : `contentPath`—het pad van het knooppunt in de gegevensopslagruimte waar de verzonden gegevens worden opgeslagen—wordt doorgegeven.
+* **de inhoudshandeling van de Opslag** (afgekeurd): `contentPath` - de weg van de knoop in de bewaarplaats waar het voorgelegde gegeven wordt opgeslagen-wordt overgegaan.
 
-* **PDF opslaan** (afgekeurd) : `contentPath`—van de voorgelegde gegevens en de weg aan de knoop die het PDF dossier in bewaart in bewaarplaats-wordt overgegaan.
+* **de actie van de Opslag PDF** (afgekeurd): `contentPath` - van de voorgelegde gegevens en weg aan de knoop die het dossier van de PDF opslaan in bewaarplaats-wordt overgegaan.
 
-* **Verzenden naar Forms-workflow**: Uitvoerparameters die worden geretourneerd uit de formulierwerkstroom, worden doorgegeven.
+* **voorleggen aan het werkschema van Forms**: De parameters van de Output die van vormenwerkschema zijn teruggekeerd worden overgegaan.
 
-* **Verzenden naar REST-eindpunt**: Parameters die voor parametertoewijzing in het veld zijn toegevoegd, worden doorgegeven. `status` en `owner` parameters worden niet doorgegeven in deze verzendactie. Zie voor meer informatie [Het vormen van Submit aan het eindpunt REST legt actie voor](../../forms/using/configuring-submit-actions.md).
+* **legt aan REST eindpunt** voor: De parameters die voor binnen-gebied aan parameterafbeelding worden toegevoegd worden overgegaan. `status` - en `owner` -parameters worden niet doorgegeven in deze verzendactie. Voor meer informatie, zie [ Vormend Submit aan REST eindpunt voorlegt actie ](../../forms/using/configuring-submit-actions.md) voor.

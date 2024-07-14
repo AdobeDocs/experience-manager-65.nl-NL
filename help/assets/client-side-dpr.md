@@ -22,15 +22,15 @@ DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk appara
 
 ## De client-side DPR-code gebruiken
 
-**Gerenderde apps op de server**
+**server-kant teruggegeven apps**
 
-1. Insteekmodule serviceworker laden (`srvinit.js`) door het volgende script op te nemen in de koptekstsectie van de pagina HTML:
+1. Laad de init van de de dienstarbeider (`srvinit.js`) door het volgende manuscript in de kopbalsectie van uw pagina van de HTML te omvatten:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe raadt u aan dit script te laden _voor_ om het even welke andere manuscripten zodat de de dienstarbeider onmiddellijk met initialisatie begint.
+   De Adobe adviseert dat u dit manuscript _vóór_ om het even welke andere manuscripten laadt zodat de de dienstarbeider onmiddellijk initialisatie begint.
 
 1. Neem de volgende DPR-code voor afbeeldingstag op boven aan de hoofdsectie van de pagina HTML:
 
@@ -43,9 +43,9 @@ DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk appara
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Het is verplicht deze DPR-code voor afbeeldingstag op te nemen _voor_ alle statische afbeeldingen op de pagina HTML.
+   Het is verplicht dat u dit DPR beeld markeringscode _vóór_ alle statische beelden in uw pagina van de HTML omvat.
 
-**Gerenderde apps op de client**
+**Client-kant teruggegeven apps**
 
 1. Neem de volgende DPR-scripts op in de koptekstsectie van de pagina HTML:
 
@@ -56,12 +56,12 @@ DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk appara
 
    U kunt beide DPR manuscripten in één combineren om veelvoudige netwerkverzoeken te vermijden.
 
-   Adobe raadt u aan deze scripts te laden _voor_ andere scripts op de pagina HTML.
-Adobe raadt u ook aan uw toepassing onder de tag diff HTML te Bootstrappen in plaats van onder een body-element. De reden is dat `dprImageInjection.js` Hiermee injecteert u de afbeeldingstag dynamisch boven aan de body-sectie op de pagina HTML.
+   De Adobe adviseert dat u deze manuscripten _vóór_ om het even welke andere manuscripten in de pagina van de HTML laadt.
+Adobe raadt u ook aan uw toepassing onder de tag diff HTML te Bootstrappen in plaats van onder een body-element. De reden hiervoor is dat `dprImageInjection.js` de afbeeldingstag dynamisch boven aan de hoofdsectie op de pagina HTML injecteert.
 
 ## JavaScript-bestanden downloaden {#client-side-dpr-script}
 
-De volgende JavaScript-bestanden in de download worden alleen als voorbeeldverwijzing naar u verzonden. Als u deze bestanden wilt gebruiken op HTML-pagina&#39;s, moet u de code van elk bestand bewerken zodat deze aan uw eigen vereisten voldoet.
+De volgende JavaScript-bestanden in de download worden alleen ter referentie aan u verstrekt. Als u deze bestanden wilt gebruiken op HTML-pagina&#39;s, moet u de code van elk bestand bewerken zodat deze aan uw eigen vereisten voldoet.
 
 * `dprImageInjection.js`
 * `srvinit.js`

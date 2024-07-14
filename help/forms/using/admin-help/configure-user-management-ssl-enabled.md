@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gebruikersbeheer configureren voor een LDAP-server die geschikt is voor SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de certificeringsinstantie (CA) heeft uitgegeven, aanwezig zijn in de JRE-omgeving (Java Runtime Environment) van de toepassingsserver. Importeer het certificaat in het JRE-cacerts-bestand van de toepassingsserver, dat zich gewoonlijk in het *[JAVA_HOME]*/jre/lib/security/cacerts directory.
+Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de certificeringsinstantie (CA) heeft uitgegeven, aanwezig zijn in de JRE-omgeving (Java Runtime Environment) van de toepassingsserver. Importeer het certificaat in het JRE van de toepassingsserver dossier, dat gewoonlijk in de *[JAVA_HOME]* /jre/lib/security/cacerts folder is.
 
 1. Schakel SSL in op de directoryserver. Zie de documentatie die is geleverd door de leverancier van de directory voor meer informatie.
 1. Een clientcertificaat exporteren vanuit de directoryserver.
@@ -26,8 +26,8 @@ Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de ce
 
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. Typ desgevraagd het wachtwoord. (Voor Java is het standaardwachtwoord `changeit`.) Er verschijnt een bericht met de mededeling dat het certificaat is geïmporteerd.
-1. Typ desgevraagd `Yes` om het certificaat te vertrouwen.
+1. Typ desgevraagd het wachtwoord. (Voor Java is het standaardwachtwoord `changeit` .) Er verschijnt een bericht met de mededeling dat het certificaat is geïmporteerd.
+1. Typ `Yes` als u hierom wordt gevraagd om het certificaat te vertrouwen.
 1. Schakel SSL in Gebruikersbeheer in en selecteer bij het configureren van de directory-instellingen Ja voor de SSL-optie en wijzig de poortinstelling dienovereenkomstig. Het standaardpoortnummer is 636.
 
 >[!NOTE]

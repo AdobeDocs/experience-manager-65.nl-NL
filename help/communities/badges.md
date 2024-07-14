@@ -39,34 +39,34 @@ Navigeer in de ontwerpomgeving naar de Badges-console:
 
 Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en waaruit nieuwe badges kunnen worden toegevoegd.
 
-![badges-homepage](assets/badges-homepage.png)
+![ badges-homepage ](assets/badges-homepage.png)
 
 ## Badge maken {#create-badge}
 
 Een badge wordt gemaakt door een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) te uploaden en een naam te geven. De badge-afbeelding wordt opgeslagen in de gegevensopslagruimte op `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 
-Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om te vormen [gebruikerssync](/help/communities/sync.md).
+Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om [ gebruikerssynchronisatie ](/help/communities/sync.md) te vormen.
 
-![aanmaken](assets/create-badge.png)
+![ creeer-badge ](assets/create-badge.png)
 
-* **Afbeelding uploaden**
+* **upload Beeld**
 
-  (*Vereist*) Een badge-afbeelding met een aanbevolen formaat van 32 x 32 pixels bij 72 dpi in de indeling JPEG of PNG.
+  (*Vereiste*) een badge beeld met een geadviseerde grootte van 32 x 32 pixel bij 72 dpi in of het formaat van JPEG of PNG.
 
 * **Naam**
 
-  (*Vereist*) De badge name. Dit is de standaardwaarde `Display Name` en de naam van het knooppunt in de repository. Als de `Name` is geen geldige naam voor een opslagplaats. De naam is gewijzigd.
+  (*Vereiste*) de merknaam. Dit is de standaardwaarde `Display Name` en de naam van het knooppunt in de repository. Als de `Name` geen geldige naam voor een opslagplaats is, wordt deze gewijzigd.
 
-* **Weergavenaam**
+* **Naam van de Vertoning**
 
-  (*Optioneel*) De naam die voor de badge in de gebruikersinterface moet worden weergegeven. Standaard is de ongewijzigde tekst die is ingevoerd voor de `Name`.
+  (*Facultatieve*) de naam aan vertoning voor de badge in het gebruikersinterface. Standaard is de ongewijzigde tekst die wordt ingevoerd voor de `Name` .
 
 * **Beschrijving**
 
-  (*Optioneel*) Een beschrijving voor de badge.
+  (*Facultatieve*) een beschrijving voor de badge.
 
 ## Aanvullende informatie {#additional-information}
 
-Voor meer informatie over het instellen van regels voor scoring en badging raadpleegt u [Scores en badges](/help/communities/implementing-scoring.md).
+Voor details bij vestiging het scoren en het intekenen van regels, zie [ het Scoreren en Badges ](/help/communities/implementing-scoring.md).
 
-Voor het beheren van badges voor leden raadpleegt u [Ledenconsole](/help/communities/members.md).
+Voor het beheren van badges voor leden, zie {de Console van 0} Leden ](/help/communities/members.md).[

@@ -22,7 +22,7 @@ Wanneer u een domein toevoegt, geeft u op of accountvergrendeling moet worden in
 
 De montages van het gebruik op de pagina van het Beheer van het Domein om het maximumaantal authentificatiemislukkingen en de tijdsduur te specificeren dat de rekeningen worden gesloten. Deze instellingen zijn van toepassing op alle domeinen waarvoor accountvergrendeling is ingeschakeld.
 
-1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Domain Management]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Domain Management]** .
 1. Voer in het vak Maximum aantal opeenvolgende verificatiefouten het aantal opeenvolgende keren in dat een gebruiker zich zonder succes kan aanmelden voordat zijn account is vergrendeld. De standaardwaarde is 20.
 1. Voer in het vak Account ontgrendelen na (minuten) het aantal minuten in dat de gebruikersaccount is vergrendeld. Na het opgegeven aantal minuten kan de gebruiker opnieuw proberen zich aan te melden. De standaardwaarde is 30.
 1. Klik op **[!UICONTROL Save]**.

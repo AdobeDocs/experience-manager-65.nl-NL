@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Verificatie voor externe Adobe Experience Manager GraphQL-query&#39;s op inhoudsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Een hoofdgebruik voor het [Adobe Experience Manager (AEM) GraphQL API voor levering van inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
+Een primair gebruiksgeval voor [ Adobe Experience Manager (AEM) GraphQL API voor de Levering van het Fragment van de Inhoud ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
 
 >[!NOTE]
 >
->Voor test- en ontwikkelingsdoeleinden hebt u ook rechtstreeks toegang tot de AEM GraphQL API via de [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
+>Voor het testen en de ontwikkeling, kunt u tot de AEM GraphQL API direct ook toegang hebben gebruikend de [ interface GraphiQL ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
 Voor authentificatie, moet de derdedienst voor authentiek verklaren, gebruikend de AEM rekeningsgebruikersbenaming en het wachtwoord.
 

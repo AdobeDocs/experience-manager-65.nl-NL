@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Aangepaste actie toevoegen aan formulierbibliotheekitems{#adding-custom-action-on-form-lister-items}
 
-In AEM Forms kunt u een poortpagina maken met de beschikbare formulieren. Standaard kunt u formulieren zoeken en weergeven op een portalpagina. U kunt formulieren openen om uw gegevens in te vullen en te verzenden. Alleen renderacties worden in het vak weergegeven voor formulieren die op een portalpagina worden vermeld. Voor meer informatie over de beschikbare acties op een portalpagina raadpleegt u [Een pagina met een portal voor formulieren maken](../../forms/using/creating-form-portal-page.md).
+In AEM Forms kunt u een poortpagina maken met de beschikbare formulieren. Standaard kunt u formulieren zoeken en weergeven op een portalpagina. U kunt formulieren openen om uw gegevens in te vullen en te verzenden. Alleen renderacties worden in het vak weergegeven voor formulieren die op een portalpagina worden vermeld. Om meer over de beschikbare acties op een portalpagina te weten te komen, zie [ Creërend een pagina van het vormenportaal ](../../forms/using/creating-form-portal-page.md).
 
 U kunt andere opties aan de portalpagina toevoegen. Deze opties of acties kunnen worden aangepast door de sjabloon van het formulierportaal aan te passen.
 
 In dit artikel wordt uitgelegd hoe u een knop kunt maken om de koppeling van een formulier rechtstreeks vanaf een pagina op een formulierportal te verzenden. Voor deze aanpassing moet de sjabloon voor de component Search &amp; Lister worden bijgewerkt.
 
-De vereiste code om de actie aan het malplaatje toe te voegen is beschikbaar hieronder. De `onclick` in het codefragment bevat een script waarmee een koppeling van een formulier via e-mail wordt verzonden.
+De vereiste code om de actie aan het malplaatje toe te voegen is beschikbaar hieronder. Het kenmerk `onclick` in het codefragment bevat een script waarmee een koppeling van een formulier via e-mail wordt verzonden.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -45,8 +45,8 @@ De vereiste code om de actie aan het malplaatje toe te voegen is beschikbaar hie
 </div>
 ```
 
-U kunt vergelijkbare acties toevoegen aan uw aangepaste sjabloon. Als u een JavaScript-functie wilt definiëren, voegt u de functie toe aan een script op paginaniveau en koppelt u deze aan het vereiste HTML-element. In het bovenstaande voorbeeld wordt `onclick` expression is the linked function.
+U kunt vergelijkbare acties toevoegen aan uw aangepaste sjabloon. Als u een JavaScript-functie wilt definiëren, voegt u de functie toe aan een script op paginaniveau en koppelt u deze aan het vereiste HTML-element. In het bovenstaande voorbeeld is de expressie `onclick` de gekoppelde functie.
 
 Nadat u de wijzigingen in de sjabloon hebt aangebracht, bevat de pagina met de voorbeeldportal een knop waarmee u de koppeling van het formulier via e-mail kunt verzenden, zoals hieronder wordt weergegeven.
 
-![email](assets/email.png)
+![ e-mail ](assets/email.png)

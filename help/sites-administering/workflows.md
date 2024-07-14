@@ -37,14 +37,14 @@ De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#3
 >
 >Zie voor meer informatie:
 >
->* Workflows toepassen en deelnemen aan workflows: [Werken met workflows](/help/sites-authoring/workflows.md).
->* Workflowmodellen maken en workflowfunctionaliteit uitbreiden: [Workflows ontwikkelen en uitbreiden](/help/sites-developing/workflows.md).
->* De prestaties verbeteren van workflows die gebruikmaken van aanzienlijke serverresources: [Gelijktijdige workflowverwerking](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+>* Het toepassen van en het deelnemen aan werkschema&#39;s: [ Werkend met Werkschema&#39;s ](/help/sites-authoring/workflows.md).
+>* Creërend werkschemamodellen en het uitbreiden van werkschemamogelijkheden: [ het Ontwikkelen en het Uitbreiden van Werkschema&#39;s ](/help/sites-developing/workflows.md).
+>* Het verbeteren van de prestaties van werkschema&#39;s die significante servermiddelen gebruiken: [ Gelijktijdige Verwerking van het Werkschema ](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
 
 ## Workflowmodellen en -instanties {#workflow-models-and-instances}
 
-[Workflowmodellen](/help/sites-developing/workflows.md#model) AEM zijn de vertegenwoordiging en uitvoering van bedrijfsprocessen:
+[ modellen van het Werkschema ](/help/sites-developing/workflows.md#model) in AEM zijn de vertegenwoordiging en implementatie van bedrijfsprocessen:
 
 * Doorgaans handelen ze op pagina&#39;s of elementen om een specifiek resultaat te bereiken.
 * Deze pagina&#39;s en/of middelen worden de werkstroomlading genoemd.
@@ -55,7 +55,7 @@ Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstanti
 
 >[!CAUTION]
 >
->De uitgevoerde stappen zijn die welke door het werkschemamodel worden bepaald *op het moment dat de instantie wordt gegenereerd*. Zie [Workflows ontwikkelen](/help/sites-developing/workflows.md#model) voor nadere bijzonderheden.
+>De uitgevoerde stappen zijn die die door het werkschemamodel *in de tijd worden bepaald dat de instantie* wordt geproduceerd. Zie [ het Ontwikkelen van Werkschema&#39;s ](/help/sites-developing/workflows.md#model) voor verdere details.
 
 De instanties van het werkschema vorderen door de volgende levenscyclus:
 
@@ -89,24 +89,24 @@ Een gebruiker of een service voert workflowstappen uit, afhankelijk van het type
 
 Een werkstroom kan een van de volgende statussen hebben:
 
-* **UITVOEREN**: De werkstroominstantie wordt uitgevoerd.
-* **VOLTOOID**: De werkstroominstantie is beëindigd.
+* **DIE** WORDT UITGEVOERD: De werkschemainstantie loopt.
+* **VOLTOOID**: De werkschemainstantie is met succes gebeëindigd.
 
-* **GESCHORST**: Geeft aan dat de workflow is onderbroken. Zie echter de Let op onderstaande opmerking over een bekend probleem met deze toestand.
-* **GEABORTEERD**: De werkstroominstantie is beëindigd.
-* **STAAL**: Voor de voortgang van de werkstroominstantie moet een achtergrondtaak worden uitgevoerd, maar de taak kan niet in het systeem worden gevonden. Deze situatie kan zich voordoen wanneer er een fout optreedt bij het uitvoeren van de workflow.
+* **GESUSPENDED**: Merkt het werkschema zoals opgeschort. Zie echter de Let op onderstaande opmerking over een bekend probleem met deze toestand.
+* **GEABORTEERD**: De werkschemainstantie is geëindigd.
+* **STALE**: De vooruitgang van de werkschemainstantie vereist dat een achtergrondbaan uitvoert, nochtans kan de baan niet in het systeem worden gevonden. Deze situatie kan zich voordoen wanneer er een fout optreedt bij het uitvoeren van de workflow.
 
 >[!NOTE]
 >
->Wanneer de uitvoering van een Stap van het Proces in fouten resulteert, verschijnt de stap in Inbox van de beheerder en de werkschemastatus is **UITVOEREN**.
+>Wanneer de uitvoering van een Stap van het Proces in fouten resulteert, verschijnt de stap in Inbox van de beheerder en de werkschemastatus is **RUNNING**.
 
 Afhankelijk van de status, kunt u acties op het runnen van werkschemainstanties uitvoeren wanneer u in de normale vooruitgang van een werkschemainstantie moet tussenkomen:
 
-* **Onderbreken**: Met Opschorsen wijzigt u de status van de workflow in Opgeschort. Zie Voorzichtigheid hieronder:
+* **Opgeschort**: Opschorting verandert de werkschemastaat in Opgeschort. Zie Voorzichtigheid hieronder:
 
 >[!CAUTION]
 >
 >Het markeren van een workflowstatus op &quot;Suspend&quot; heeft een bekende kwestie. In deze status is het mogelijk om te reageren op geschorste workflowitems in een Postvak IN.
 
-* **Hervatten**: Hiermee herstart u een stilgezette workflow op hetzelfde uitvoerpunt waar deze werd onderbroken, met dezelfde configuratie.
-* **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in **GEABORTEERD**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.
+* **Hervatten**: herstart een opgeschort werkschema op het zelfde punt van uitvoering waar het werd opgeschort, gebruikend de zelfde configuratie.
+* **beëindigt**: Beëindigt de werkschemauitvoering en verandert de staat in **GEABORTEERD**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.

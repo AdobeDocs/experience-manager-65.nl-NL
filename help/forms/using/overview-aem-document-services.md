@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -28,7 +28,7 @@ AEM Document Services is een set OSGi Services voor het maken, samenstellen en b
 
 ## Uitvoerservice {#output-service}
 
-Met de uitvoerservice kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). In de volgende lijst ziet u de indeling van labelprinters:
+Met de uitvoerservice kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Laserprinterindelingen zijn PostScript en Printer Control Language (PCL). In de volgende lijst ziet u de indeling van labelprinters:
 
 * Zebra (ZPL)
 * Intermec (IPL)
@@ -45,11 +45,11 @@ Als u de Output-service gebruikt om XML-gegevens samen te voegen met een formuli
 
 De volgende vier de dienstverrichtingen van de Output zijn beschikbaar voor gebruik:
 
-* **generatePDFOuput**: Voegt een formulierontwerp samen met gegevens om een PDF-document te genereren
-* **generatePrintedOutput**: Voegt een formulierontwerp samen met formuliergegevens om een document te genereren dat naar een laser- of labelnetwerkprinter wordt verzonden
+* **generatePDFOuput**: Voegt een vormontwerp met gegevens samen om een document van de PDF te produceren
+* **generatePrintedOutput**: Voegt een vormontwerp met vormgegevens samen om een document te produceren om naar of een laser of een printer van het etiketnetwerk te verzenden
 
-* **generatePDFOutputBatch**: Voegt meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch PDF-bestanden te genereren. Er is ook een mogelijkheid om één PDF te genereren door alle PDF te combineren
-* **generatePrintedOutputBatch**: Voegt meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch gedrukte documenten te genereren (PS, PCL, ZPL, DPL, IPL, TPCL). U kunt ook één afdrukdocument genereren.
+* **generatePDFOutputBatch**: Voegt veelvoudige malplaatjes met veelvoudige verslagen van gegevens in één enkele aanroeping samen om een partij van PDF dossiers te produceren. Er is ook een mogelijkheid om één PDF te genereren door alle PDF te combineren
+* **generatePrintedOutputBatch**: Voegt veelvoudige malplaatjes met veelvoudige verslagen van gegevens in één enkele aanroeping samen om een partij drukdocumenten (PS, PCL, ZPL, DPL, IPL, TPCL) te produceren. U kunt ook één afdrukdocument genereren.
 
 ## Assembler-service {#assembler-service}
 
@@ -133,7 +133,7 @@ Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen on
 
 Deze speciale gebruikersmogelijkheden worden automatisch geactiveerd wanneer een PDF-document met toegangsrechten wordt geopend in Adobe Reader. Wanneer de gebruiker klaar is met het werken met een document waarvoor rechten zijn ingeschakeld, worden deze functies weer uitgeschakeld in Adobe Reader. Ze blijven uitgeschakeld totdat de gebruiker een ander PDF-document met ingeschakelde rechten ontvangt.
 
-Uit de doos, is de dienst DocAssurance niet beschikbaar voor gebruik. Om de dienst DocAssurance te vormen, zie [Installeren en configureren van Document Services](../../forms/using/install-configure-document-services.md).
+Uit de doos, is de dienst DocAssurance niet beschikbaar voor gebruik. Om de dienst te vormen DocAssurance, zie [ Installerend en Vormend de Diensten van het Document ](../../forms/using/install-configure-document-services.md).
 
 ## Naar printerservice verzenden {#send-to-printer-service}
 

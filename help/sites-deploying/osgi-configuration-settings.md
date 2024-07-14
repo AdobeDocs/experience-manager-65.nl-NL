@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # OSGi-configuratie-instellingen{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van AEM. Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
+[ OSGi ](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van AEM. Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
 
-OSGi &quot;*biedt de gestandaardiseerde primitieven waarmee toepassingen kunnen worden samengesteld uit kleine, herbruikbare en samenwerkingscomponenten. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld*&quot;.
+OSGi &quot;*verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld*&quot;.
 
-Deze functionaliteit maakt eenvoudig beheer van bundels mogelijk, aangezien deze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi (zie [OSGi-specificatie](https://docs.osgi.org/specification/)) bevindt zich in een van de verschillende bundels. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke bundels te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+Deze functionaliteit maakt eenvoudig beheer van bundels mogelijk, aangezien deze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke Component OSGi (zie de [ Specificatie OSGi ](https://docs.osgi.org/specification/)) is bevat in één van de diverse bundels. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke bundels te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn relevant voor projectimplementatie. Niet alle instellingen in de lijst hoeven te worden aangepast. Sommige instellingen worden vermeld om u te helpen begrijpen hoe AEM werkt.
 
@@ -37,149 +37,149 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 >[!NOTE]
 >
->Het hulpprogramma OSGi Configuration Diff, een onderdeel van het [AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kan worden gebruikt om van de standaardOSGi configuraties een lijst te maken.
+>Het gereedschap van Diff van de Configuratie OSGi, een deel van [ AEM Hulpmiddelen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kan worden gebruikt om van de standaard configuraties OSGi een lijst te maken.
 
 >[!NOTE]
 >
 >Voor specifieke onderdelen van de functionaliteit binnen AEM kunnen aanvullende bundels nodig zijn. In deze gevallen vindt u configuratiegegevens op de pagina die betrekking heeft op de juiste functionaliteit.
 
-**Listener voor replicatiegebeurtenissen AEM** Configureren:
+**AEM de Listener van de Gebeurtenis van de Replicatie** vormt:
 
-* De **Modi uitvoeren**, waarin replicatiegebeurtenissen naar listeners worden gedistribueerd. Bijvoorbeeld, als bepaald als auteur, is het systeem dat de replicatie &quot;initieert&quot;.
+* De **Wijzen van de Looppas**, waarin de replicatiegebeurtenissen aan luisteraars worden verdeeld. Bijvoorbeeld, als bepaald als auteur, is het systeem dat de replicatie &quot;initieert&quot;.
 
-* De uitvoeringsmodus toevoegen **publish** als de projectcode replicatiegebeurtenissen (omgekeerde replicatie) in publiceert milieu verwerkt. Bijvoorbeeld wanneer de Dispatcher wordt gebruikt om van het publicatiemilieu te spoelen of wanneer de standaardreplicatie aan andere publicatieinstanties voorkomt.
+* Voeg de looppas wijze **toe publiceert** als de projectcode replicatiegebeurtenissen (omgekeerde replicatie) in publiceert milieu verwerkt. Bijvoorbeeld wanneer de Dispatcher wordt gebruikt om van het publicatiemilieu te spoelen of wanneer de standaardreplicatie aan andere publicatieinstanties voorkomt.
 
-**AEM wijzigingslistener voor opslagplaats** Configureren:
+**AEM de veranderingsluisteraar van de Bewaarplaats** vormt:
 
-* De **Paden**, locaties om te luisteren naar opslagplaats-gebeurtenissen die gereed zijn voor distributie.
+* De **Wegen**, plaatsen om op bewaarplaatgebeurtenissen klaar voor distributie te luisteren.
 
-**CRX Sling Client Repository** Toegang tot de onderliggende opslagplaats voor inhoud configureren.
+**CRX Sling Client Repository** vormt toegang tot de onderliggende inhoudsbewaarplaats.
 
-* De **Wachtwoord beheerder** moeten na de installatie worden gewijzigd om ervoor te zorgen dat [beveiliging](/help/sites-administering/security-checklist.md) van uw instantie.
+* Het **Wachtwoord Admin** zou na installatie moeten worden veranderd om de [ veiligheid ](/help/sites-administering/security-checklist.md) van uw instantie te verzekeren.
 * Andere wijzigingen zouden niet nodig moeten zijn en er moet zorgvuldig op worden gelet dat ze de toegang tot de opslagplaats kunnen beïnvloeden.
 
-**Apache Felix OSGi Management Console** Configureren:
+**Apache Felix OSGi de Console van het Beheer** vormt:
 
-* **Plug-ins**, de belangrijkste navigatie-items (consoleplug-ins) die beschikbaar zijn in de **Apache Felix Web Management Console** als menu-items op het hoogste niveau. Schakel een optie uit die u niet nodig hebt omdat voor elke optie ruimte en bronnen vereist zijn.
+* **Insteekmodules**, de belangrijkste navigatiepunten (consolestoppen) om in de **Console van het Beheer van het Web van de Felix van Apache** als top-level menupunten beschikbaar te zijn. Schakel een optie uit die u niet nodig hebt omdat voor elke optie ruimte en bronnen vereist zijn.
 
 >[!CAUTION]
 >
 >Ben zeker om het volgende te vormen:
 >
->**Gebruikersnaam** en **Wachtwoord**, de referenties voor toegang tot de Apache Felix Web Management Console zelf.
->Het wachtwoord moet na de eerste installatie worden gewijzigd om ervoor te zorgen dat [beveiliging](/help/sites-administering/security-checklist.md) van uw instantie.
+>**Naam van de Gebruiker** en **Wachtwoord**, de geloofsbrieven voor de toegang tot van de Console van het Beheer van het Web van de Felix van Apache zelf.
+>Het wachtwoord moet na de aanvankelijke installatie worden veranderd om de [ veiligheid ](/help/sites-administering/security-checklist.md) van uw instantie te verzekeren.
 
 >[!NOTE]
 >
 >Deze configuratie moet worden gemaakt met de Felix Console zoals dat bij het opstarten nodig is - voordat de opslagplaats beschikbaar is.
 
-**Apache Sling Aanpasbaar Data Logger Aanvraag** Configureren:
+**Apache die Aanpasbare Logger van de Gegevens van het Verzoek plaatst** vormt:
 
-* **Logboeknaam** en **Logbestandsindeling** om de plaats en het formaat van verzoek en toegangsregistreren te vormen (gebrek: `request.log`). Dit logbestand is van essentieel belang voor het analyseren van de prestaties of foutopsporingsfunctionaliteit in verband met de webketen. Het is gekoppeld aan de [Apache Sling Request Logger](#apacheslingrequestlogger).
+* **de Naam van het Logboek** en **Formaat van het Logboek** om de plaats en het formaat van verzoek en toegangsregistreren (gebrek: `request.log`) te vormen. Dit logbestand is van essentieel belang voor het analyseren van de prestaties of foutopsporingsfunctionaliteit in verband met de webketen. Het is met [ Apache Sling Logger van het Verzoek ](#apacheslingrequestlogger) in paren gerangschikt.
 
-Zie [AEM vastleggen](/help/sites-deploying/configure-logging.md) en [Logboekregistratie voor verkoop](https://sling.apache.org/documentation/development/logging.html).
+Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
 
-**Apache Sling Event Thread Pool** Configureren:
+**Apache die Gebeurtenis verbinden pool** vormt:
 
-* **Min. groepsgrootte** en **Maximale groepsgrootte**, de grootte van de pool die wordt gebruikt om gebeurtenisdraden te houden.
+* **Min de Grootte van de Pool** en **Max de Grootte van de Pool**, de grootte van de pool die wordt gebruikt om gebeurtenisdraden te houden.
 
-* **Wachtrijgrootte**, de maximumgrootte van de draadrij als de pool uitgeput is.
-De aanbevolen waarde is `-1` omdat de wachtrij wordt ingesteld op onbeperkt. Als een limiet wordt vastgesteld, kunnen verliezen optreden wanneer deze worden overschreden.
+* **de Grootte van de Rij**, de maximumgrootte van de draadrij als de pool uitgeput is.
+De aanbevolen waarde is `-1` omdat de wachtrij op onbeperkt wordt ingesteld. Als een limiet wordt vastgesteld, kunnen verliezen optreden wanneer deze worden overschreden.
 
 * Het wijzigen van deze instellingen kan de prestaties in scenario&#39;s met een groot aantal gebeurtenissen ten goede komen. Bijvoorbeeld, zwaar AEM DAM of Werkstroom gebruik.
 * De waarden specifiek voor uw scenario zouden moeten worden bepaald gebruikend tests.
 * Deze instellingen kunnen van invloed zijn op de prestaties van uw instantie. Wijzig deze instellingen dus niet zonder reden en met gepaste aandacht.
 
-**Apache Sling GET Servlet** Configureer enkele aspecten van rendering:
+**Apache Sling GET Servlet** vormt sommige aspecten van het teruggeven:
 
-* **Automatische index** om het renderen van mappen voor bladeren in- of uit te schakelen.
-* **Inschakelen** (of maak onbruikbaar) standaardvertoningen, zoals **HTML**, **Onbewerkte tekst**, **JSON**, of **XML**.
+* **AutoIndex** om folder het teruggeven voor het doorbladeren toe te laten/onbruikbaar te maken.
+* **laat** toe (of maak) standaardvertoningen onbruikbaar, zoals **HTML**, **Onbewerkte Tekst**, **JSON**, of **XML**.
 Schakel JSON niet uit.
 
 >[!NOTE]
 >
->Deze instelling wordt automatisch geconfigureerd voor productieinstanties als u AEM uitvoert [Productiemodus](/help/sites-administering/production-ready.md).
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**Apache Sling JavaScript-handler** Configureer instellingen voor de compilatie van .java-bestanden als scripts (servlets).
+**Apache Sling JavaScript Handler** vormt montages voor de compilatie van.java- dossiers als manuscripten (servlets).
 
 Bepaalde instellingen kunnen van invloed zijn op de prestaties. Schakel deze instellingen waar mogelijk uit, met name voor een productie-instantie.
 
-* **Bron-VM** en **DoelVM**, definieert u de JDK-versie die wordt gebruikt als de JVM voor uitvoering
+* **VM van Source VM** en **Doel VM**, bepaal de versie JDK die als runtime JVM wordt gebruikt
 
 * voor productiegevallen:
 
-   * disable **Foutopsporingsinfo genereren**
+   * maak **onbruikbaar produceren zuivert Info**
 
-**Apache Sling JCR Installer** Deze parameters vergen waarschijnlijk geen configuratie, maar kunnen nuttig zijn om te weten wanneer het ontwikkelen of het zuiveren. De installatiemappen kunnen bijvoorbeeld handig zijn om in of uit te checken of om een pakket te maken.
+**Apache die de Installateur van JCR Sling** Deze parameters vergen waarschijnlijk geen configuratie, maar kunnen nuttig zijn om te weten wanneer het ontwikkelen of het zuiveren. De installatiemappen kunnen bijvoorbeeld handig zijn om in of uit te checken of om een pakket te maken.
 
-* **Naam van installatiemappen regexp** en **Maximale hiërarchiediepte van installatiemappen** - opgeven waar en tot welke diepte de opslagplaats naar bronnen zoekt die moeten worden geïnstalleerd. Wanneer een jokerteken wordt gebruikt (zoals in.&#42;/install) alle aangewezen gelijken worden gezocht, bijvoorbeeld, `/libs/sling/install` en `/libs/cq/core/install`.
+* **de omslagen van de Installatie naam regexp** en **Max hiërarchiediepte van installeert omslagen** - specificeer waar, en aan welke diepte, bewaarplaatsomslagen worden gezocht naar middelen om worden geïnstalleerd. Wanneer een jokerteken wordt gebruikt (zoals in.&#42;/install) alle overeenkomende items worden doorzocht, bijvoorbeeld `/libs/sling/install` en `/libs/cq/core/install` .
 
-* **Zoekpad**, een lijst met paden die worden gezocht naar bronnen die moeten worden geïnstalleerd, samen met een nummer dat de wegingsfactor voor dat pad aangeeft.
+* **Weg van het Onderzoek**, lijst van wegen die jcrinstall zoekt naar te installeren middelen, samen met een aantal die op de wegingsfactor voor die weg wijzen.
 
-**Apache Sling Job Event Handler** Parameters configureren die taakplanning beheren:
+**Apache het Verdelen de Handler van de Gebeurtenis van de Baan** vormt parameters die baan het plannen beheren:
 
-* **Opnieuw interval**, **Maximale aantal pogingen**, **Maximale parallelle taken**, **Wacht tijd accentueren**, onder andere.
+* **probeert opnieuw interval**, **Maximum probeert**, **Maximale Parallelle Banen** opnieuw, **erkent wacht Tijd**, onder anderen.
 
 * Als u deze instellingen wijzigt, kunnen de prestaties verbeteren in scenario&#39;s met een groot aantal taken, zoals een intensief gebruik van AEM DAM en Workflows.
 * De waarden specifiek voor uw scenario zouden moeten worden bepaald gebruikend tests.
 * Wijzig deze instellingen niet zonder reden en pas na zorgvuldige afweging aan.
 
-**Apache Sling JSP Script Handler** Vorm prestaties relevante montages voor de JSP manuscriptmanager. Om de prestaties te verbeteren, zou u zoveel mogelijk onbruikbaar moeten maken.
+**Apache het Schrapen JSP de Handler van het Manuscript** vormt prestaties relevante montages voor de JSP manuscriptmanager. Om de prestaties te verbeteren, zou u zoveel mogelijk onbruikbaar moeten maken.
 
 Met name voor productiegevallen:
 
-* disable **Foutopsporingsinfo genereren**
-* disable **Gegenereerde Java™ behouden**
-* disable **Toegewezen inhoud**
-* disable **Bronfragmenten weergeven**
+* maak **onbruikbaar produceren zuivert Info**
+* maak **Gegenereerde Java™** onbruikbaar houden
+* maak **Toegewezen Inhoud** onbruikbaar
+* maak **de Fragmenten van Source van de Vertoning** onbruikbaar
 
 >[!NOTE]
 >
->Deze instelling wordt automatisch geconfigureerd voor productieinstanties als u AEM uitvoert [Productiemodus](/help/sites-administering/production-ready.md).
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**Configuratie van Apache Sling-logboekregistratie** Configureren:
+**Apache die Logging Configuratie** vormt:
 
-* **Logboekniveau** en **Logbestand**, om de plaats en het logboekniveau van de centrale registrerenconfiguratie (error.log) te bepalen. Het niveau kan worden ingesteld op een van `DEBUG`, `INFO`, `WARN`, `ERROR`, en `FATAL`.
+* **Niveau van het Logboek** en **Dossier van het Logboek**, om de plaats en het logboekniveau van de centrale registrerenconfiguratie (error.log) te bepalen. Het niveau kan worden ingesteld op een van de volgende waarden: `DEBUG` , `INFO` , `WARN` , `ERROR` en `FATAL` .
 
-* **Aantal logbestanden** en **Drempel logbestand** om de grootte en versieomwenteling van het logboekdossier te bepalen.
+* **Aantal de Dossiers van het Logboek** en **Drempel van het Dossier van het Logboek** om de grootte en versieomwenteling van het logboekdossier te bepalen.
 
-* **Berichtpatroon** bepaalt het formaat van de logboekberichten.
+* **Patroon van het Bericht** bepaalt het formaat van de logboekberichten.
 
-Zie [AEM vastleggen](/help/sites-deploying/configure-logging.md#global-logging) en [Logboekregistratie voor verkoop](https://sling.apache.org/documentation/development/logging.html).
+Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md#global-logging) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
 
-**Apache Sling Logging Logger Configuration (Fabrieksconfiguratie)** Configureren:
+**Apache het Verdelen Logboekconfiguratie van het Logboekregistratie (de Configuratie van de Fabriek)** vormt:
 
-* **Logboekniveau**, **Logbestand** en **Berichtindeling** om details van het logboekdossier en berichten te bepalen.
+* **Niveau van het Logboek**, **Dossier van het Logboek** en **Formaat van het Bericht** om details van het logboekdossier en berichten te bepalen.
 
-* **Aanmelder** om de categorie te definiëren; bijvoorbeeld alleen log voor com.day.cq.
+* **Logger** om de categorie te bepalen; bijvoorbeeld, slechts logboek voor com.day.cq.
 
-* Met **Fabrieksconfiguraties**, kan om het even welk aantal extra configuraties worden toegevoegd om met de diverse nodig logboekniveaus en categorieën te behandelen.
+* Door **de Configuraties van de Fabriek te gebruiken**, kan om het even welk aantal extra configuraties worden toegevoegd om met de diverse vereiste logboekniveaus en categorieën te behandelen.
 * Dergelijke configuraties zijn nuttig tijdens ontwikkeling; bijvoorbeeld, om TRACE berichten voor de specifieke dienst in een specifiek logboekdossier te registreren.
 * Dergelijke configuraties zijn nuttig in een productiemilieu; bijvoorbeeld, om berichten over de specifieke dienst te hebben die aan een individueel logboekdossier voor gemakkelijkere controle wordt geregistreerd.
 
-Zie [AEM vastleggen](/help/sites-deploying/configure-logging.md) en [Logboekregistratie voor verkoop](https://sling.apache.org/documentation/development/logging.html).
+Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
 
-**Configuratie van Apache Sling Logging Writer (fabrieksconfiguratie)** Configureren:
+**Apache het Verdelen de Configuratie van de Schrijver van de Registratie (de Configuratie van de Fabriek)** vormt:
 
-* **Logbestand** om het bestaan van een logboekdossier te bepalen.
-* **Aantal logbestanden** om de versieomwenteling te bepalen.
+* **Dossier van het Logboek** om het bestaan van een logboekdossier te bepalen.
+* **Aantal Dossiers van het Logboek** om de versieomwenteling te bepalen.
 
-* De schrijver kan door een **Logboekconfiguratie Apache Sling Logging** configuratie.
+* De schrijver kan door een **Apache Sling Logging Logger configuratie** worden gebruikt.
 
 * Dergelijke configuraties zijn nuttig tijdens ontwikkeling; bijvoorbeeld, om TRACE berichten voor de specifieke dienst in een specifiek logboekdossier te registreren.
 * Dergelijke configuraties zijn nuttig in een productiemilieu; bijvoorbeeld, om berichten over de specifieke dienst te hebben die aan een individueel logboekdossier voor gemakkelijkere controle wordt geregistreerd.
 
-Zie [AEM vastleggen](/help/sites-deploying/configure-logging.md) en [Logboekregistratie voor verkoop](https://sling.apache.org/documentation/development/logging.html).
+Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
 
-**Apache Sling Main Servlet** Configureren:
+**Apache die HoofdServlet** vormt:
 
-* **Aantal Vraag per Verzoek** en **Recursiediepte** om uw systeem tegen oneindige recursie en bovenmatige manuscriptvraag te beschermen.
+* **Aantal Vraag per Verzoek** en **Diepte van de Recursie** om uw systeem tegen oneindige recursie en bovenmatige manuscriptvraag te beschermen.
 
-**Apache Sling MIME Type Service** Configureren:
+**Apache die de Dienst van het Type MIME** vormt:
 
-* **MIME-typen** om types toe te voegen die door uw project aan het systeem worden vereist. Dit maakt een `GET` verzoek om een dossier om de correcte inhoud-type kopbal voor het verbinden van het dossiertype en toepassing te plaatsen.
+* **types MIME** om types toe te voegen die door uw project aan het systeem worden vereist. Hierdoor kan een `GET` -aanvraag in een bestand de juiste header van het inhoudstype instellen voor het koppelen van het bestandstype en de toepassing.
 
-**Filter Apache Sling Referrer** Als u bekende beveiligingsproblemen wilt verhelpen met CSRF-bestanden (Cross-Site Request Smeedery) in CRX WebDAV en Apache Sling, moet u het filter Referrer configureren.
+**de Filter van de Verwijzer van de Verkoper van Apache** om bekende veiligheidskwesties met de Serie van het Verzoek van de Verwijzing (CSRF) in CRX WebDAV en Apache te richten die u moet het filter van de Referteur vormen.
 
 De dienst van de verwijzingsfilter is de dienst OSGi die u laat vormen:
 
@@ -187,125 +187,125 @@ De dienst van de verwijzingsfilter is de dienst OSGi die u laat vormen:
 * of een lege verwijzingskoptekst is toegestaan
 * en een lijst met servers die naast de serverhost zijn toegestaan.
 
-Zie de [Beveiligingscontrolelijst - Problemen met de XSS-functie voor aanvragen voor andere sites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor nadere bijzonderheden.
+Zie de [ Controlelijst van de Veiligheid - Kwesties met de Versmeding van het Verzoek van de Verkeer van de Verkeer van de Verkeer van de Plaats ](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor verdere details.
 
 >[!NOTE]
 >
 >Het filter Apache Sling Referrer is afhankelijk van de installatie van een snel reparatiepakket.
 
-**Apache Sling Request Logger** Configureren:
+**Logger van het Verzoek van Apache Sling** vormt:
 
 * diverse parameters om te bepalen hoe de verzoeken worden geregistreerd.
-* **Aanvraaglogboek inschakelen** om in of uit te schakelen.
+* **laat Logboek van het Verzoek** toe, om toe te laten of onbruikbaar te maken.
 
-* **Toegangslogboek inschakelen** om in of uit te schakelen.
+* **laat Logboek van de Toegang** toe, om toe te laten of onbruikbaar te maken.
 
-Gepauzeerd met de [Apache Sling Aanpasbaar Data Logger Aanvraag](#apacheslingcustomizablerequestdatalogger).
+Gepaureerd met [ Apache Sling Aanpasbare Logger van de Gegevens van het Verzoek ](#apacheslingcustomizablerequestdatalogger).
 
-Zie [AEM vastleggen](/help/sites-deploying/configure-logging.md) en [Logboekregistratie voor verkoop](https://sling.apache.org/documentation/development/logging.html).
+Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
 
-**Apache Sling Resource Resolver Factory** Centrale aspecten van het oplossen van resources voor splitsen configureren:
+**Apache het Verdelen van de Factory van de Resolver van het Middel** vormt centrale aspecten van het Verdelen van middelresolutie:
 
-* **Zoekpaden naar bronnen**, voeg om het even welke project-specifieke wegen toe (maar verwijder niet `/libs` of `/apps`).
+* **Wegen van het Onderzoek van het Middel**, voeg om het even welke project-specifieke wegen toe (maar verwijder niet `/libs` of `/apps`).
 
-* **Virtuele URL&#39;s** om uw vanity URL-toewijzingen te definiëren.
+* **Virtuele URLs** om uw ijdelheid in kaart te brengen URL.
 
-* **URL-toewijzingen** om aliassen te definiëren. Bijvoorbeeld van `/content` tot `/`.
+* **Mappings URL** om het even welke aliassen te bepalen. Bijvoorbeeld van `/content` tot `/` .
 
-* **Toewijzingslocatie**, de mapconfiguratie die extern is gemaakt in `/etc/map`.
+* **de Plaats van de Toewijzing**, de mapconfiguratie die in `/etc/map` wordt geexternaliseerd.
 
-* Gebruik uw lokale installatie (bijvoorbeeld `https://localhost:4502/system/console/jcrresolver`) om te bepalen welke Resolver van het Middel actief is.
+* Gebruik uw lokale installatie (bijvoorbeeld gebruik `https://localhost:4502/system/console/jcrresolver`) om te bepalen welke Resolver van Middel actief is.
 
-Zie: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
+Zie: [ https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution ](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
 
 >[!CAUTION]
 >
 >Configureer deze opties in de opslagplaats.
 >
->Anders worden wijzigingen aangebracht in **URL-toewijzingen** het gebruiken van de console van Felix zou door AEM op het volgende opstarten kunnen worden beschreven.
+>Anders, zouden de veranderingen die aan **worden aangebracht Toewijzingen URL** gebruikend de console van de Felix door AEM op het volgende opstarten kunnen worden beschreven.
 
-**Apache Sling Servlet/Script Resolver en Error Handler** De Sling Server en de Oplossen van het Manuscript hebben veelvoudige taken:
+**Apache Sling Servlet/de Besloeiing van het Manuscript en de Handler van de Fout** Servlet Sling en de Besloeiing van het Manuscript heeft veelvoudige taken:
 
-1. Het wordt gebruikt als `ServletResolver` om de Servlet of het Manuscript te selecteren om te roepen om het verzoek te behandelen.
+1. Deze wordt gebruikt als de `ServletResolver` om de Servlet of het Manuscript te selecteren om de aanvraag af te handelen.
 
-1. Het fungeert als `SlingScriptResolver`.
+1. Deze fungeert als de `SlingScriptResolver` .
 
-1. De toepassing beheert foutafhandeling door de implementatie van de `ErrorHandler` interface die het zelfde algoritme gebruikt om fout behandelende servlets en manuscripten te selecteren zoals wordt gebruikt om verzoekverwerkingsservlets en manuscripten op te lossen.
+1. Het beheert foutafhandeling door de `ErrorHandler` -interface te implementeren met hetzelfde algoritme om foutafhandelingsservlets en scripts te selecteren die worden gebruikt om aanvraagverwerkingsservlets en scripts op te lossen.
 
 Er kunnen verschillende parameters worden ingesteld, waaronder:
 
-* **Uitvoerpaden** - Hier worden de paden weergegeven die moeten worden gezocht naar uitvoerbare scripts. Door specifieke paden te configureren, kunt u beperken welke scripts kunnen worden uitgevoerd. Als geen weg wordt gevormd, dan wordt het gebrek gebruikt ( `/` = root), zodat alle scripts kunnen worden uitgevoerd.
+* **de Wegen van de Uitvoering** - maakt een lijst van de wegen aan onderzoek naar uitvoerbare manuscripten. Door specifieke paden te configureren, kunt u beperken welke scripts kunnen worden uitgevoerd. Als geen weg wordt gevormd, dan wordt het gebrek gebruikt ( `/` = wortel), toestaand het lopen van alle manuscripten.
 Als een gevormde wegwaarde met een schuine streep beëindigt, wordt de volledige subboom gezocht. Zonder een dergelijke slash wordt het script alleen uitgevoerd als het exact overeenkomt.
 
-* **Scriptgebruiker** - Met deze optionele eigenschap kan de gegevensopslagruimte worden opgegeven die wordt gebruikt voor het lezen van de scripts. Als er geen account is opgegeven, wordt `admin` gebruiker wordt standaard gebruikt.
+* **Gebruiker van het Manuscript** - Dit facultatieve bezit kan de rekening specificeren van de bewaarplaatsgebruiker die voor het lezen van de manuscripten wordt gebruikt. Als er geen account is opgegeven, wordt standaard de `admin` -gebruiker gebruikt.
 
-* **Standaardextensies** - De lijst met extensies waarvoor het standaardgedrag wordt gebruikt. Het laatste wegsegment van het middeltype kan als manuscriptnaam worden gebruikt.
+* **StandaardUitbreidingen** - de lijst van uitbreidingen waarvoor het standaardgedrag wordt gebruikt. Het laatste wegsegment van het middeltype kan als manuscriptnaam worden gebruikt.
 
-**Apache HTTP Components Proxy Configuration** - De proxyconfiguratie voor alle code die de Apache HTTP-client gebruikt, die wordt gebruikt wanneer een HTTP wordt gemaakt. Bijvoorbeeld bij replicatie.
+**de Configuratie van de Volmacht van de Volmacht van HTTP van Apache** - de volmachtsconfiguratie voor alle code die de cliënt van HTTP Apache gebruikt, wordt gebruikt wanneer HTTP wordt gemaakt. Bijvoorbeeld bij replicatie.
 
-Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats daarvan, creeer een fabrieksconfiguratie voor deze component gebruikend de hier beschikbare configuratiemanager: **https://localhost:4502/system/console/configMgr/**. De proxyconfiguratie is beschikbaar in **org.apache.http.proxyconfigurator.**
+Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats daarvan, creeer een fabrieksconfiguratie voor deze component gebruikend de hier beschikbare configuratiemanager: **https://localhost:4502/system/console/configMgr/**. De volmachtsconfiguratie is beschikbaar in **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
 >In AEM 6.0 en vroegere versies, werd de volmacht gevormd in de Cliënt van HTTP van de Commons van de Dag. Vanaf AEM 6.1 en recentere versies, is de volmachtsconfiguratie verplaatst naar de &quot;Configuratie van de Volmacht van de Componenten van Apache HTTP&quot;in plaats van de &quot;De Cliënt van HTTP van de Commons van de Dag&quot;config.
 
-**Day CQ Antispam** Vorm de anti-spamdienst (Akismet) gebruikte. Voor deze functie moet u het volgende registreren:
+**Dag CQ Antispam** vormt de anti-spamdienst (Akismet) gebruikte. Voor deze functie moet u het volgende registreren:
 
-* **Provider**
-* **API-sleutel**
+* **Leverancier**
+* **API sleutel**
 * **Geregistreerde URL**
 
-**Adobe Granite HTML Library Manager** Configureren om de verwerking van clientbibliotheken (css of js) te beheren, inclusief bijvoorbeeld hoe de onderliggende structuur wordt bekeken.
+**vormt de Manager van de Bibliotheek van de HTML van de Adobe Granite van de** om de behandeling van cliëntbibliotheken (css of js) met inbegrip van te controleren, bijvoorbeeld, hoe de onderliggende structuur wordt gezien.
 
 * Voor productiegevallen:
 
-   * enable **Minieren** (om CRLF- en spatietekens te verwijderen).
-   * enable **Gzip** (zodat bestanden met één aanvraag kunnen worden uitgepakt en geopend).
-   * disable **Foutopsporing**
-   * disable **Timing**
+   * laat **toe Minify** (om CRLF en whitespace karakters te verwijderen).
+   * laat **Gzip** toe (om dossiers toe te staan om met één verzoek worden gecomprimeerd en worden betreden).
+   * maak **Debug** onbruikbaar
+   * maak **Timing** onbruikbaar
 
 * Voor JS-ontwikkeling (vooral bij foutopsporing/foutopsporing):
 
-   * disable **Minieren**
-   * enable **Foutopsporing** om de bestanden te scheiden voor foutopsporing en gebruik met een fout in het vuur.
-   * enable **Timing** indien geïnteresseerd in timing.
-   * enable **Foutopsporing** console om JS console logboekberichten te zien.
+   * maak **onbruikbaar**
+   * laat **Debug** toe om de dossiers voor het zuiveren en gebruik met brand te scheiden insect.
+   * laat **Timing** toe als geinteresseerd in timing.
+   * laat **toe zuivert** console om JS te zien console logboekberichten.
 
 >[!CAUTION]
 >
->Wanneer u de instelling voor een van de **Minieren** of **Gzip**, verwijdert u de inhoud van clientlibs cache. Zie [Kennisbank, artikel](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) voor meer informatie.
+>Wanneer het veranderen van het plaatsen voor of **** of **Gzip**, schrap de inhoud van cliëntlibgeheime voorgeheugen. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) voor details.
 
 >[!NOTE]
 >
->Deze instelling wordt automatisch geconfigureerd voor productieinstanties als u AEM uitvoert [Productiemodus](/help/sites-administering/production-ready.md).
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**Day CQ HTTP Header Authentication Handler** Instellingen voor het hele systeem voor de basisverificatiemethode van de HTTP-aanvraag.
+**De Handler van de Authentificatie van de Kopbal van HTTP van de Dag CQ** montages van het Systeem voor de basisauthentificatiemethode van het HTTP- verzoek.
 
-Wanneer u [gesloten gebruikersgroepen](/help/sites-administering/cug.md)kunt u onder andere het volgende configureren:
+Wanneer het gebruiken van [ gesloten gebruikersgroepen ](/help/sites-administering/cug.md), kunt u, onder anderen, het volgende vormen:
 
-* **HTTP Realm**
-* De **Standaardaanmeldingspagina**
+* **Uitspraak van HTTP**
+* De **Standaard Login Pagina**
 
-**Day CQ Link Checker Service** Controleren en indien nodig configureren:
+**Controle van de Dienst van de Controle van de Verbinding van 0} Dag CQ en indien nodig vormen:**
 
-* **Plannerperiode** om het interval te bepalen waarmee externe verbindingen automatisch moeten worden gecontroleerd.
+* **de Periode van de Planner** om het interval te bepalen waarbij de externe verbindingen automatisch moeten worden gecontroleerd.
 
-* Controleren **Ongeldig koppelingsinterval** voor de periode waarna een niet-succesvolle externe verbinding als slecht wordt beschouwd.
-* **Patronen voor overschrijven van controle koppelen**, om paden te definiëren die van koppelingencontrole moeten worden uitgesloten.
+* Controle **het Onjuiste Interval van de Tolerantie van de Verbinding** voor de periode waarna een onsuccesvolle externe verbinding als slecht wordt beschouwd.
+* **de Patronen van de Overschrijving van de Controle van de Verbinding**, om het even welke wegen te bepalen die van verbinding het controleren moeten worden uitgesloten.
 
-**Taak voor de controle op de dag-CQ-koppeling** Configureer instellingen voor één koppelingencontrole-taak (een taak die een externe koppeling controleert):
+**CQ van de Verbinding van de Dag CQ Taak** vormt montages voor één enkele taak van de verbindingscontroleur (een taak die een externe verbinding controleert):
 
-* De intervallen controleren die zijn gedefinieerd in **Testinterval goede koppeling** en **Ongeldig testinterval voor koppeling**
+* Controle de intervallen die in **worden bepaald het Interval van de Test van de Verbinding 1} en** het Onjuiste Interval van de Test van de Verbinding ****
 
 * De verschillende parameters met betrekking tot proxy&#39;s voor internettoegang en NTLM die nodig zijn voor externe toegang bij het controleren van een koppeling.
 
-**Day CQ Mail Service** Vorm hostname en toegangsdetails voor de postserver. Zie het Vormen de sectie van de Dienst van de Post.
+**Vorm hostname en toegangsdetails voor de postserver van de Dag CQ.** Zie het Vormen de sectie van de Dienst van de Post.
 
-**Dag CQ MCM-nieuwsbrief** Configureer de verschillende instellingen die worden gebruikt met de nieuwsbrief.
+**Dag CQ MCM- Bulletin** vormt de diverse montages die met nieuwsbrief worden gebruikt.
 
-**Uur CQ-hoofdtoewijzing** Configureren:
+**vormt de Toewijzing van de Wortel van 0} Dag CQ:**
 
-* **Doelpad** om te bepalen waar een verzoek &quot; `/`&quot; wordt doorgestuurd naar.
+* **Weg van het Doel** om te bepalen waar een verzoek aan &quot; `/`&quot;wordt opnieuw gericht aan.
 
 Er zijn twee UIs beschikbaar in AEM:
 
@@ -314,13 +314,13 @@ Er zijn twee UIs beschikbaar in AEM:
 
 Met AEM hoofdmaptoewijzing kunt u de interface configureren die u als standaard voor uw instantie wilt gebruiken:
 
-* Als u de interface met aanraakbediening wilt instellen als de standaardinterface, kunt u de **Doelpad** wijzen op het volgende:
+* Om aanraking-toegelaten UI als gebrek UI te hebben, zou het **Weg van het Doel** aan het volgende moeten richten:
 
   ```shell
      /projects.html
   ```
 
-* Als u de klassieke UI als de standaardinterface wilt gebruiken, **Doelpad** wijzen op het volgende:
+* Om klassieke UI als gebrek UI te hebben, zou het **Weg van het Doel** aan het volgende moeten richten:
 
   ```shell
      /welcome.html
@@ -330,66 +330,66 @@ Met AEM hoofdmaptoewijzing kunt u de interface configureren die u als standaard 
 >
 >Op een standaardinstallatie is de interface met geoptimaliseerde aanrakingen de standaardinterface.
 
-**Adobe Granite SSO-verificatiehandler** - SSO-gegevens (Single Sign On) configureren. Deze gegevens zijn vaak nodig in instellingen van de auteur van een bedrijf, vaak met LDAP.
+**Adobe granite SSO de Handler van de Authentificatie** - vorm SSO (Enige Sign On) details. Deze gegevens zijn vaak nodig in instellingen van de auteur van een bedrijf, vaak met LDAP.
 
 Er zijn verschillende configuratie-eigenschappen beschikbaar:
 
-* **Pad**
+* **Weg**
 Het pad waarvoor deze verificatiehandler actief is. Als deze parameter leeg wordt gelaten, wordt de authentificatiemanager onbruikbaar gemaakt. Het pad/zorgt er bijvoorbeeld voor dat de verificatiehandler wordt gebruikt voor de gehele gegevensopslagruimte.
 
-* **Servicereeks**
-OSGi de Rangschikkende waarde van de Dienst van het Kader wordt gebruikt om op de orde te wijzen die voor het roepen van deze dienst wordt gebruikt. Deze waarde is een `int` waarde waarbij hogere waarden een hogere prioriteit aangeven.
-Standaardwaarde is `0`.
+* **Rangschikking van de Dienst**
+OSGi de Rangschikkende waarde van de Dienst van het Kader wordt gebruikt om op de orde te wijzen die voor het roepen van deze dienst wordt gebruikt. Deze waarde is een `int` -waarde waarbij hogere waarden een hogere prioriteit aangeven.
+De standaardwaarde is `0` .
 
-* **Namen van koptekst**
+* **de Namen van de Kopbal**
 De namen van kopteksten die een gebruikers-id kunnen bevatten.
 
-* **Cookie-namen**
+* **Namen van het Koekje**
 De namen van cookies die een gebruikers-id kunnen bevatten.
 
-* **Parameternamen**
+* **Namen van de Parameter**
 De namen van aanvraagparameters die de gebruikers-id kunnen verstrekken.
 
-* **Gebruikersoverzicht**
-Voor geselecteerde gebruikers kan de gebruikersnaam die uit de HTTP-aanvraag is geëxtraheerd, worden vervangen door een andere naam in het object credentials. De toewijzing wordt hier gedefinieerd. Als de gebruikersnaam `admin` wordt aan beide zijden van de kaart weergegeven, wordt de toewijzing genegeerd. Aan het teken &quot;=&quot; moet een regelafstand &quot;\&quot; worden toegevoegd.
+* **Kaart van de Gebruiker**
+Voor geselecteerde gebruikers kan de gebruikersnaam die uit de HTTP-aanvraag is geëxtraheerd, worden vervangen door een andere naam in het object credentials. De toewijzing wordt hier gedefinieerd. Als de gebruikersnaam `admin` aan weerszijden van de kaart wordt weergegeven, wordt de toewijzing genegeerd. Aan het teken &quot;=&quot; moet een regelafstand &quot;\&quot; worden toegevoegd.
 
-* **Indeling**
+* **Formaat**
 Hiermee geeft u de indeling aan waarin de gebruikers-id wordt opgegeven. Gebruik:
 
-   * `Basic` als de gebruikers-id is gecodeerd in de indeling HTTP Basic Authentication
-   * `AsIs` als de gebruiker-id wordt opgegeven in onbewerkte tekst of als een toegepaste reguliere expressie moet worden gebruikt zoals deze is of een reguliere expressie
+   * `Basic` als de gebruikers-id is gecodeerd in de indeling HTTP Basic Authentication.
+   * `AsIs` als de gebruiker-id wordt opgegeven in onbewerkte tekst of als een toegepaste waarde voor een reguliere expressie moet worden gebruikt zoals deze of een reguliere expressie
 
-**Day CQ WCM-foutopsporingsfilter** Dit is handig wanneer u een pagina opent en ontwikkelt, omdat hierdoor achtervoegsels zoals ?debug=layout kunnen worden gebruikt. Bijvoorbeeld, verstrekt https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout lay-outinformatie die van belang voor de ontwikkelaar kan zijn.
+**Eind CQ WCM zuivert Filter** Dit is nuttig wanneer het ontwikkelen aangezien het het gebruik van achtervoegsels zoals ?debug=layout wanneer het toegang tot van een pagina toestaat. Bijvoorbeeld, verstrekt https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout lay-outinformatie die van belang voor de ontwikkelaar kan zijn.
 
 * Schakel apparaten uit om prestaties en beveiliging te garanderen.
 
-**Day CQ WCM-filter** Configureren:
+**De Filter van WCM van de Dag CQ WCM** vormt:
 
-* **WCM-modus** om de standaardmodus te definiëren.
-* Op een auteurinstantie, zou deze wijze kunnen zijn `edit`, `disable,preview`, of `analytics`.
+* **Wijze WCM** om de standaardwijze te bepalen.
+* Op een auteurinstantie, zou deze wijze `edit`, `disable,preview`, of `analytics` kunnen zijn.
 De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmode=disabled` kan worden gebruikt om een productieomgeving te emuleren.
 
-* Voor een publicatie-instantie moet deze modus zijn ingesteld op `disabled` om ervoor te zorgen dat geen andere modus toegankelijk is.
+* Op een publicatie-instantie moet deze modus zijn ingesteld op `disabled` om ervoor te zorgen dat er geen andere modus toegankelijk is.
 
 >[!NOTE]
 >
->Deze instelling wordt automatisch geconfigureerd voor productieinstanties als u AEM uitvoert [Productiemodus](/help/sites-administering/production-ready.md).
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**Day CQ WCM Link Checker Configurator** Configureren:
+**Vorm van de Configurator van de Controle van de Verbinding van 0} Dag CQ WCM:**
 
-* **Lijst met herschrijfconfiguraties** om een lijst van plaatsen voor op inhoud-gebaseerde configuraties van de verbindingscontrole te specificeren. De configuraties kunnen op looppaswijze worden gebaseerd. Dit is belangrijk om onderscheid te maken tussen auteur- en publicatieomgevingen, omdat de instellingen voor koppelingencontrole kunnen verschillen.
+* **Lijst van herschrijven configuraties** om een lijst van plaatsen voor op inhoud-gebaseerde configuraties van de verbindingscontrole te specificeren. De configuraties kunnen op looppaswijze worden gebaseerd. Dit is belangrijk om onderscheid te maken tussen auteur- en publicatieomgevingen, omdat de instellingen voor koppelingencontrole kunnen verschillen.
 
-**Day CQ WCM Page Manager-fabriek** Configureren:
+**vormt de Factory van de Manager van de Pagina WCM van 0} Dag CQ:**
 
-* **Activeringscontrole van substructuur pagina** voor een gebruiker (zonder replicatiemachtigingen) om pagina&#39;s te verwijderen of te verplaatsen (zelfs als de pagina&#39;s niet zijn geactiveerd).
+* **Controle van de Activering van de Subboom van de Pagina** voor een gebruiker (zonder replicatiemachtigingen) om pagina&#39;s te schrappen of te bewegen (zelfs als de pagina&#39;s niet worden geactiveerd).
 
-**Day CQ WCM Page Processor** Configureren:
+**Vorm van de Bewerker van de Pagina van 0} Dag CQ WCM:**
 
-* **Paden**, een lijst met locaties waar het systeem luistert naar paginawijzigingen voordat het een `jcr:Event`.
+* **Wegen**, een lijst van plaatsen waar het systeem op paginawijzigingen alvorens a `jcr:Event` te teweegbrengen luistert.
 
-**Adobe van pagina-importbeheer** Configureer voor een auteurinstantie als volgt:
+**de Drijver van de Indrukking van de Pagina van de Adobe** voor een auteursinstantie, vorm als het volgende:
 
-* **sling.auth.requirements**: stel de waarde van deze eigenschap in op `-/libs/wcm/stats/tracker`
+* **sling.auth.requirements**: plaats de waarde van dit bezit aan `-/libs/wcm/stats/tracker`
 
 >[!CAUTION]
 >
@@ -397,46 +397,46 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 
 >[!NOTE]
 >
->Zie [Paginaafdrukken](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie .
+>Zie [ de Indrukking van de Pagina ](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie.
 
-**Dag CQ WCM Pagina Statistieken** Configureer voor een publicatie-instantie:
+**CQ van de Dag CQ de Statistieken van de Pagina WCM** voor publiceer instantie vormen:
 
-* **URL voor het verzenden van gegevens** om URL te vormen die wordt gebruikt om paginatistieken (is essentieel als een trackerverzoek door de Dispatcher) te volgen; bijvoorbeeld, is het gebrek `https://localhost:4502/libs/wcm/stats/tracker`.
+* **URL om gegevens** te verzenden om URL te vormen die aan de statistieken van de spoorpagina wordt gebruikt (is essentieel als een trackerverzoek door Dispatcher) gaat; bijvoorbeeld, is het gebrek `https://localhost:4502/libs/wcm/stats/tracker`.
 
-* **Script bijhouden ingeschakeld** om ( `true`) of uitschakelen ( `false`) de opname van het volgende script op de pagina&#39;s. De standaardwaarde is `false`.
+* **het Volgen toegelaten manuscript** om ( `true`) toe te laten of ( `false`) onbruikbaar te maken de opneming van het volgende manuscript op de pagina&#39;s. De standaardwaarde is `false` .
 
 >[!NOTE]
 >
->Zie [Paginaafdrukken](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie .
+>Zie [ de Indrukking van de Pagina ](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie.
 
-**Day CQ WCM Version Manager** Bepaal of en hoe versies in uw systeem worden beheerd:
+**Controle van de Manager van de Versie van WCM van 0} Dag CQ WCM als, en hoe, de versies in uw systeem worden beheerd:**
 
-* **Versie maken bij activering**, ingeschakeld in een standaardinstallatie
-* **Leegmaken inschakelen**
+* **creeer Versie op Activering**, die in een standaardinstallatie wordt toegelaten
+* **laat het Opschonen** toe
 
-* **Paden wissen**, de paden die worden doorzocht door een zoekactie.
-* **Impliciete versioning van paden**, de paden waar impliciete versioning actief is.
+* **Wis Wegen**, de wegen die een onderzoeksactie zoekt.
+* **impliciete Versioning Wegen**, de wegen waar het impliciete versioning actief is.
 
-* **Maximale versiefagina**, de maximumleeftijd (in dagen) van een versie
+* **Max de Leeftijd van de Versie**, de maximumleeftijd (in dagen) van een versie
 
-* **Max. aantal versies**, het maximumaantal versies dat behouden mag blijven
+* **Max de Versies van het Aantal**, het maximumaantal versies om te houden
 
-Zie [Versie leegmaken](/help/sites-deploying/version-purging.md) voor meer informatie .
+Zie ](/help/sites-deploying/version-purging.md) het Opheffen van de Versie 0} {voor meer informatie.[
 
-**Day CQ Workflow Email Notification Service** Configureer de e-mailinstellingen voor meldingen die via een workflow worden verzonden.
+**de Dienst van het Bericht van het E-mail van het Werkschema van de Dag CQ** vormt de e-mailmontages voor berichten die door een werkschema worden verzonden.
 
 **CQ Rewriter HTML Parser Factory**
 
 Controls the HTML Parser for the CQ rewriter.
 
-* **Aanvullende labels die u wilt verwerken** - U kunt HTML-tags toevoegen of verwijderen die door de parser moeten worden verwerkt. Standaard worden de volgende tags verwerkt: A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,HEAD.
-* **Camel-hoofdletters behouden** - Standaard zet de parser HTML kenmerken om in kamelenhoofdletters (bijvoorbeeld `eBay`) naar kleine letters (bijvoorbeeld `ebay`). U kunt deze instelling uitschakelen om de kenmerken van het camerahoofdlettergebruik te behouden. Deze instelling is handig wanneer u frontend-frameworks zoals Angular 2 gebruikt.
+* **Extra Markeringen aan Proces** - u kunt HTML markeringen toevoegen of verwijderen die door de parser moeten worden verwerkt. Standaard worden de volgende tags verwerkt: A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,HEAD.
+* **Behoud het Geval van de Camel** - Door gebrek, zet de parser van HTML attributen in camel geval (bijvoorbeeld, `eBay`) in kleine letters (bijvoorbeeld, `ebay`) om. U kunt deze instelling uitschakelen om de kenmerken van het camerahoofdlettergebruik te behouden. Deze instelling is handig wanneer u frontend-frameworks zoals Angular 2 gebruikt.
 
-**Day Commons JDBC-verbindingspool** Vorm toegang tot een extern gegevensbestand dat als bron voor inhoud wordt gebruikt.
+**vormt de Groep van Verbindingen JDBC van de Commons van de Dag toegang tot een extern gegevensbestand dat als bron voor inhoud wordt gebruikt.**
 
 Een Configuratie van de Fabriek, zodat kunnen de veelvoudige instanties worden gevormd.
 
-**CDN Rewriter** De communicatie tussen AEM en een CDN moet worden gewaarborgd zodat de activa/binaire getallen aan een eind - gebruiker op een veilige manier worden geleverd. Dit proces omvat de volgende twee taken:
+**CDN herschrijver** Communicatie tussen AEM en een CDN moet worden gewaarborgd zodat de activa/binaire getallen aan een eind - gebruiker op een veilige manier worden geleverd. Dit proces omvat de volgende twee taken:
 
 * Toegang tot de bron via AEM CDN de eerste keer (of nadat deze in cache is verlopen).
 * Toegang tot het middel caching in CDN veilig. Nadat het middel in CDN in het voorgeheugen wordt opgeslagen, gaat het verzoek niet naar AEM, en alle gebruikers die toegang tot dat middel hebben zouden van CDN moeten worden gediend.
@@ -446,28 +446,28 @@ AEM biedt een herschrijver voor het herschrijven van interne elementen-URL&#39;s
 De totale stroom is als volgt:
 
 1. Gebruiker verifieert met AEM en vraagt een pagina met elementen aan.
-1. Aangevraagde pagina bevat een element dat vergelijkbaar is met `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
+1. Aangevraagde pagina bevat een element dat lijkt op `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
 1. Rewriter transformeert de koppeling naar een CDN-URL die een JWS-handtekening bevat:
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
 1. De browser van de gebruiker stuurt het elementverzoek vervolgens door naar de CDN-server
-1. CDN zou moeten worden gevormd om het verzoek aan AEM samen met door:sturen `cdn_sign` parameter.
-1. Een verificatiehandler valideert de `cdn_sign` parameter en retourneert het element naar CDN dat vervolgens aan de gebruiker wordt geleverd
+1. CDN moet zo worden geconfigureerd dat het verzoek samen met de parameter `cdn_sign` wordt AEM.
+1. Een verificatiehandler valideert de parameter `cdn_sign` en retourneert het element naar de CDN die vervolgens aan de gebruiker wordt geleverd
 
 De stroom tussen browser van de gebruiker, CDN, en AEM kan als volgt worden visualiseerd.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![ chlimage_1-8 ](assets/chlimage_1-8.png)
 
 >[!NOTE]
 >
 >Deze functie is alleen ingeschakeld voor AEM auteur-instanties.
 
-**CDNConfigServiceImpl** Bevat CDN-configuraties
+**CDNConfigServiceImpl** verstrekt CDN configuraties
 
-De functie voor het herschrijven van de CDN kan worden ingeschakeld door **Naam van CDN-distributiedomein** in de configuratie voor com.adobe.cq.cdn.rewriter.impl.CDNConfigServiceImpl.
+CDN die eigenschap herschrijven kan worden toegelaten door **CDN naam van het distributiedomein** in de configuratie voor com.adobe.cq.cdn.rewriter.impl.CDNConfigServiceImpl te verstrekken.
 
 De service bevat ook andere configuratieopties, zoals het opnieuw schrijven van CDN in- en uitschakelen, padvoorvoegsels waarvoor CDN wordt herschreven, TTL-waarden en protocol (HTTP of HTTPS).
 
-**CDNRewriter** Een herschrijver voor het herschrijven van interne afbeeldings-URL&#39;s naar CDN-URL&#39;s
+**CDNRewriter** opnieuw schrijver voor het herschrijven van interne beeld URLs aan CDN URLs
 
-De **Tagkenmerken** De waarde in com.adobe.cq.cdn.rewriter.impl.CDNRewriter kan worden bepaald zodat slechts de selectieve beeldverbindingen worden herschreven.
+De **waarde van de Attributen van de Markering** in com.adobe.cq.cdn.rewriter.impl.CDNRewriter kan worden bepaald zodat slechts de selectieve beeldverbindingen worden herschreven.

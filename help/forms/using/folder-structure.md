@@ -24,16 +24,16 @@ AEM Forms-werkruimtecomponenten zijn ontworpen op MVC-architectuur met behulp va
 * Sjabloon, dat wil zeggen een HTML-bestand dat interfacecontroles bevat.
 * De mening, die als klasse van het Controlemechanisme aan Malplaatje dienst doet.
 
-De elementen voor alle componenten worden in de hieronder beschreven mapstructuur geplaatst. Meld u aan bij CRXDE Lite en blader naar de elementen om deze te openen `/libs/ws/js/runtime/`.
+De elementen voor alle componenten worden in de hieronder beschreven mapstructuur geplaatst. Meld u aan bij CRXDE Lite en blader naar `/libs/ws/js/runtime/` om de elementen te openen.
 
-**modellen** Bevat backbonemodellen.
+**modellen** bevat backbonemodellen.
 
-**views** Bevat backboneweergaven.
+**meningen** bevat backbonemeningen.
 
-**sjablonen** Bevat alleen de HTML-sjablonen voor de componenten.
+**malplaatjes** bevat slechts de malplaatjes van HTML voor de componenten.
 
-**routes** Bevat universele routes. De omslag van malplaatjes binnen routes bevat de code van de HTML en de verwijzingen naar de componenten.
+**routes** bevat universele routes. De omslag van malplaatjes binnen routes bevat de code van de HTML en de verwijzingen naar de componenten.
 
-**diensten** Bevat de dienstinterface om de server APIs van Adobe Experience Manager op REST eindpunt te roepen.
+**de diensten** bevat de dienstinterface om de server APIs van Adobe Experience Manager op REST eindpunt te roepen.
 
-**util** Bevat generische nut bruikbaar door veelvoudige componenten.
+**util** bevat generische nut bruikbaar door veelvoudige componenten.

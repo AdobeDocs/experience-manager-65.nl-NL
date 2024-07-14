@@ -16,14 +16,14 @@ ht-degree: 29%
 
 # AEM-moderniseringstools {#modernization-tools}
 
-[AEM moderniseringsinstrumenten](https://opensource.adobe.com/aem-modernize-tools/) de gemakkelijke omzetting van:
+[ AEM Moderniseringshulpmiddelen ](https://opensource.adobe.com/aem-modernize-tools/) staan voor de gemakkelijke omzetting van toe:
 
-* [Statische sjablonen](page-templates-static.md) tot [bewerkbare sjablonen](page-templates-editable.md)
-* [Ontwerpconfiguraties](page-templates-static.md) tot [beleid](page-templates-editable.md)
-* [Elementaire componenten](/help/sites-authoring/default-components-foundation.md) tot [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Klassieke interface](website.md) tot [Interface met aanraakbediening](touch-ui-concepts.md)
+* [ Statische malplaatjes ](page-templates-static.md) aan [ editable malplaatjes ](page-templates-editable.md)
+* [ configuraties van het Ontwerp ](page-templates-static.md) aan [ beleid ](page-templates-editable.md)
+* [ Componenten van de Stichting ](/help/sites-authoring/default-components-foundation.md) aan [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ Klassieke UI ](website.md) aan [ aanraking-Toegelaten UI ](touch-ui-concepts.md)
 
-Voor meer informatie over het gebruik van deze instrumenten, [zie de documentatie](https://opensource.adobe.com/aem-modernize-tools/).
+Voor verdere informatie over het gebruik van deze hulpmiddelen, [ zie hun documentatie ](https://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >

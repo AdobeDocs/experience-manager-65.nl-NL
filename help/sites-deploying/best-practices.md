@@ -22,7 +22,7 @@ Met behulp van best practices wordt beschreven hoe Adobe Experience Manager (AEM
 
 Op de volgende gebieden is documentatie beschikbaar over het implementeren en onderhouden van best practices en aanbevelingen:
 
-* [Eik](#oak)
+* [Oak](#oak)
 * [Gemeenschappen](#communities)
 * [UI](#ui)
 * [Prestaties](#performance)
@@ -35,9 +35,9 @@ Raadpleeg een van de volgende bronnen voor beste praktijken bij het beheren, ont
 
 In de volgende tabellen worden specifieke documenten beschreven en aan deze documenten gekoppeld.
 
-## Eik {#oak}
+## Oak {#oak}
 
-[Eik](/help/sites-deploying/platform.md) is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
+[ Oak ](/help/sites-deploying/platform.md) is een scalable en uitvoerende hiërarchische inhoudsbewaarplaats die de stichting van AEM is.
 
 <table>
  <tbody>
@@ -62,8 +62,8 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
    <td>In dit document worden de aanbevolen procedures voor het opslaan van binaire gegevens en inhoudsknooppunten uitgelegd. Bevat informatie over het gebruik van de Amazon S3-gegevensopslag.</td>
   </tr>
   <tr>
-   <td>Zoeken in eiken</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Beste praktijken voor Vragen en het Indexeren</a><br /> </td>
+   <td>Zoeken in Oak</td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md"> Beste praktijken voor Vragen en het Indexeren </a><br /> </td>
    <td>Beschrijft beste praktijken op hoe te om inhoud te indexeren.</td>
   </tr>
  </tbody>
@@ -73,9 +73,9 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
 
 AEM Communities vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM Communities worden hier beschreven:
 
-[Community Content Store](/help/communities/working-with-srp.md) - Bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker-geproduceerde inhoud (UGC) en de overwegingen voor het kiezen van het onderliggende [topologie](/help/communities/topologies.md).
+[ Communautaire Opslag van de Inhoud ](/help/communities/working-with-srp.md) - bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker-geproduceerde inhoud (UGC) en de overwegingen om de onderliggende [ topologie ](/help/communities/topologies.md) te kiezen.
 
-[Aanbevolen implementaties voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
+[ geadviseerde plaatsingen voor gemeenschappen ](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
 
 ## UI {#ui}
 
@@ -94,7 +94,7 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   <tr>
    <td>Beste praktijken voor kwaliteitsborging</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Beste praktijken voor kwaliteitsborging</a></td>
-   <td>Een gestandaardiseerd overzicht van de kwesties betrokken bij het bepalen van een Concept van de Test specifiek voor prestatietests op uw <em>publish</em> milieu. Dit is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers, en systeembeheerders.</td>
+   <td>Een gestandaardiseerd overzicht van de kwesties betrokken bij het bepalen van een Concept van de Test specifiek voor prestatietests op uw <em> publiceert </em> milieu. Dit is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers, en systeembeheerders.</td>
   </tr>
   <tr>
    <td>Dispatcher gebruiken met een CDN</td>

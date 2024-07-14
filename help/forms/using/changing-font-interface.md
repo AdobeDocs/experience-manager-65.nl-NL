@@ -21,7 +21,7 @@ ht-degree: 0%
 
 U kunt het lettertype wijzigen dat in de AEM Forms-werkruimte wordt weergegeven. Lettertypen die in een specifieke sectie van de gebruikersinterface worden gebruikt, worden gedefinieerd in de bijbehorende sectie van het stijlblad. U kunt de lettertypen in de gebruikersinterface selectief wijzigen.
 
-Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../forms/using/generic-steps-html-workspace-customization.md) en voert u, afhankelijk van uw vereisten, de stappen uit voor het aanpassen van CSS, HTML of beide.
+Volg de [ Algemene stappen voor de werkruimteaanpassing van AEM Forms ](../../forms/using/generic-steps-html-workspace-customization.md) en afhankelijk van uw vereisten, volg de stappen voor het aanpassen van CSS, HTML, of allebei.
 
 1. Wijzig of voeg de lettertypefamilie toe aan een bestaande stijl.
 1. Wijzig of voeg de lettertypefamilie inline voor het HTML-element toe.
@@ -29,7 +29,7 @@ Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../for
 
 Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de bovenste navigatiebalk wilt wijzigen in Courier New:
 
-1. Log in bij CRXDE Lite door toegang te krijgen `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Meld u aan bij CRXDE Lite door `https://'[server]:[port]'/lc/crx/de/index.jsp` te openen.
 1. Voer een van de volgende handelingen uit:
 
    1. Als u de lettertypefamilie wilt wijzigen in een bestaande stijl, voegt u het volgende toe in het bestand newStyle.css op /apps/ws/css.
@@ -40,7 +40,7 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
       }
       ```
 
-   1. Als u de lettertypefamilie inline voor het HTML-element wilt toevoegen, kopieert u de `/libs/ws/js/runtime/templates/appnavigation.html` bestand naar `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Als u de lettertype-familie inline wilt toevoegen voor het HTML-element, kopieert u het `/libs/ws/js/runtime/templates/appnavigation.html` -bestand naar `/apps/ws/js/runtime/templates/appnavigation.html` .
 
       Werk het bestand /apps/ws/js/runtime/templates/appnavigation.html als volgt bij:
 
@@ -51,7 +51,7 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Het bestand /apps/ws/js/registry.js openen voor bewerken en vervangen `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` with `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Open het bestand /apps/ws/js/registry.js en vervang `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` door `text!/lc/apps/ws/js/runtime/templates/appnavigation.html` .
 
    1. Als u een stijl wilt toevoegen die de lettertypefamilie definieert, voegt u het volgende toe in het bestand newStyle.css op /apps/ws/css.
 
@@ -76,10 +76,10 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
 
 1. Start de werkruimte opnieuw en wis de browsercache zodat de wijzigingen zichtbaar zijn.
 
-![change_font_before](assets/change_font_before.png)
+![ change_font_before ](assets/change_font_before.png)
 
 Bovenste navigatiebalk voor aanpassing van lettertypen
 
-![change_font_after](assets/change_font_after.png)
+![ change_font_after ](assets/change_font_after.png)
 
 Bovenste navigatiebalk na aanpassing van lettertype van eerste tab

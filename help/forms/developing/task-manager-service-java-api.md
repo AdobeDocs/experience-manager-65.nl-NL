@@ -1,5 +1,5 @@
 ---
-title: Java API QuickStart (SOAP) van Taakbeheerservice
+title: Taakbeheerservice Java API QuickStart(SOAP)
 description: Met de Taakbeheerservice kunt u taken toewijzen, taken vergrendelen, aan gebruikers toegewezen taken ophalen, formuliergegevens ophalen van taken, formuliergegevens wijzigen, bestandsbijlagen ophalen en taakgegevens ophalen.
 contentOwner: admin
 content-type: reference
@@ -38,11 +38,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden is dat u de `taskList` methode, die een noodzakelijke methodevraag is om deze taak uit te voeren.
+>U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden hiervoor is dat u de methode `taskList` niet kunt aanroepen. Dit is een noodzakelijke methodeaanroep om deze taak uit te voeren.
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -268,7 +268,7 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
 
 ## Snel starten (SOAP modus): taken ophalen die aan gebruikers zijn toegewezen met de Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewezen aan een gebruiker met de naam *tonblauw*. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
+Het volgende de codevoorbeeld van Java wint alle taken terug die aan een gebruiker genoemd *tony blauw* worden toegewezen. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
 
 ```java
  /*
@@ -394,7 +394,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewez
 
 ## Snel starten (SOAP modus): formuliergegevens ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een taak met de id-waarde 304. Formuliergegevens worden naar een XML-bestand met de naam *FormData.xml* te vinden op C:\Adobe.
+In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een taak met de id-waarde 304. De gegevens van de vorm worden geschreven aan een dossier van XML genoemd *FormData.xml* in C:\Adobe.
 
 ```java
  /*
@@ -500,7 +500,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
 
 ## Snel starten (SOAP modus): formuliergegevens wijzigen met de Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens uit het *FormData.xml* bestand.
+Het volgende de codevoorbeeld van Java werkt een vorm met gegevens bij die in het {*dossier 0} FormData.xml is.*
 
 ```java
  /*
@@ -714,7 +714,7 @@ In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke besta
 
 ## Snel starten (SOAP modus): Taakgegevens ophalen met de Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseerd op een proces met de naam *Hypothecaire lening - Prebuilt*. Het statuut van elke teruggekeerde taak wordt gecontroleerd om ervoor te zorgen dat het een voltooide taak is. Informatie zoals de naam van de gebruiker die de taak heeft voltooid en de datum waarop de taak is voltooid, wordt opgehaald en weergegeven.
+Het volgende codevoorbeeld van Java wint alle taken terug die op een proces genoemd *MortgaugeLoan - Prebuilt* gebaseerd zijn. Het statuut van elke teruggekeerde taak wordt gecontroleerd om ervoor te zorgen dat het een voltooide taak is. Informatie zoals de naam van de gebruiker die de taak heeft voltooid en de datum waarop de taak is voltooid, wordt opgehaald en weergegeven.
 
 ```java
  /*

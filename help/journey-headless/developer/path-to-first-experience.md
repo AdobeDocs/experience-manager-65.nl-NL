@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # Pad naar uw eerste ervaring met AEM zonder kop {#path-to-first-experience}
 
-In dit deel van het [AEM Headless Developer Journey,](overview.md) u zult begrijpen hoe u uw eerste headless ervaring in AEM met planningsoverwegingen kunt implementeren en zult ook best practices leren om uw pad zo vloeiend mogelijk te maken.
+In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) u zult de stappen begrijpen aan het uitvoeren van uw eerste headless ervaring in AEM met inbegrip van planningsoverwegingen en zult ook beste praktijken leren om uw weg zo vlot mogelijk te maken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop: [Aan de slag met AEM headless](getting-started.md) U leerde de basistheorie van wat een krantenloze CMS is en u zou nu moeten:
+In het vorige document van de AEM hoofdloze reis, [ Begonnen het worden met AEM Zwaartepunt ](getting-started.md) u de basistheorie van leerde wat een hoofd CMS is en u zou nu moeten:
 
 * Begrijp de grondbeginselen van AEM functies zonder kop.
-* Zorg dat u weet aan welke voorwaarden u moet voldoen om AEM functies zonder kop te gebruiken.
-* Wees op de hoogte van AEM integratieniveaus zonder kop.
+* Zorg dat u weet aan welke voorwaarden u moet voldoen om AEM functies zonder kop te kunnen gebruiken.
+* Wees op de hoogte van AEM instorting van het integratieniveau zonder kop.
 * U kunt uw project definiëren in termen van bereik.
 
 Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eigen AEM hoofdloze project voor te bereiden.
@@ -38,7 +38,7 @@ Dit document helpt u de stappen begrijpen nodig om uw eerste project uit te voer
 
 ## Vereisten {#requirements}
 
-Voordat u doorgaat met dit document, moet u controleren of u het vorige document hebt gereviseerd in de AEM Headless Developer Journey. [Aan de slag met AEM headless](getting-started.md) zorg ervoor dat u:
+Alvorens u met dit document verdergaat, zorg ervoor dat u het vorige document in de Reis van de Ontwikkelaar van de AEM Zwaartepunt hebt herzien, [ Begonnen het worden met AEM Zwaartepunt ](getting-started.md) ervoor zorgen u:
 
 * Voldoe aan de vermelde vereisten.
 * Heb uw eigen projectdefinitie met inbegrip van werkingsgebied, rollen, en prestaties overwogen.
@@ -77,9 +77,9 @@ Inhoudsauteurs maken inhoud op basis van de inhoudsmodellen die zijn gedefinieer
 
 ## Instellen {#setup}
 
-Voordat u aan de slag gaat met headless in AEM, moet u ervoor zorgen dat alle vereiste functies zijn ingeschakeld. In deze sectie wordt beschreven wat er nodig is. De daadwerkelijke stappen om deze stappen te verwezenlijken worden later gedetailleerd in [AEM Headless Developer Journey.](#overview.md)
+Voordat u aan de slag gaat met headless in AEM, moet u ervoor zorgen dat alle vereiste functies zijn ingeschakeld. In deze sectie wordt beschreven wat er nodig is. De daadwerkelijke stappen om deze stappen te vervullen zijn gedetailleerd later in de [ AEM Headless Reis van de Ontwikkelaar.](#overview.md)
 
-U kunt ook optioneel de [extra middelen](#additional-resources) voor meer informatie over de afzonderlijke onderwerpen .
+U kunt naar keuze ook de [ extra middelen ](#additional-resources) voor meer informatie over de individuele onderwerpen zien.
 
 ### Configuratie {#configuration}
 
@@ -108,7 +108,7 @@ Een project zonder kop is niet alleen succesvol vanwege de geïmplementeerde tec
 * Wanneer u toegangsvereisten hebt, zouden zij uw inhoudshiërarchie moeten drijven. Groepeer de inhoud die door dezelfde groep personen wordt bewerkt.
 * Groepeer vergelijkbare inhoud in een map.
    * Het is waarschijnlijker dat een auteur van inhoud bestaande inhoud kopieert en plakt om nieuwe inhoud te maken. Als u dit in dezelfde map doet, wordt het efficiënter.
-   * AEM staat toe dat modellen per map worden ingesteld, zodat de **Nieuw maken** tonen alleen de modellen die op die locatie worden ondersteund.
+   * AEM laat modellen toe om per omslag worden geplaatst zodat zal de **nieuwe** knoop creëren slechts de modellen tonen die in die plaats worden gesteund.
 * Het maken van nieuwe inhoudsfragmenten in de In-line Content Fragment Editor kan worden vereenvoudigd als de hoofdmap is ingesteld in het model. Dan moet de arts geen plaats kiezen, maar enkel een naam verstrekken en kan beginnen de nieuwe verwijzing uit te geven.
 
 ### Inhoud ontwerpen {#authoring}
@@ -138,20 +138,20 @@ Wij willen dat u op deze grondkennis voortbouwt om de kracht en de flexibiliteit
 
 Wat uw het leren stijl ook moge zijn, de Adobe wil dat u slaagt als u aan de slag gaat met uw AEM headless project.
 
-* Als u liever wilt doorgaan **meer informatie over concepten zonder kop en AEM technologieën zonder kop**, moet u doorgaan met uw AEM zonder kop als u het document opnieuw bekijkt [Hoe te om Uw Inhoud als Modellen van de Inhoud te modelleren AEM](model-your-content.md) waar u leert hoe u de inhoudsstructuur in AEM modelleert.
-* Als u liever **leren door te doen**, kunt u naar de [Aan de slag met AEM praktische zelfstudie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) waar u rechtstreeks in AEM Zwaardeloze ontwikkeling door een eenvoudig project zult springen om AEM inhoud zonder kop bloot te stellen.
+* Als u verkiest om **over headless concepten en AEM te blijven leren zonder kop technologieën**, zou u uw AEM zonder kop reis moeten voortzetten door het document [ te herzien hoe te Uw Inhoud als Modellen van de Inhoud te modelleren ](model-your-content.md) waar u leert hoe te om uw inhoudsstructuur in AEM te modelleren.
+* Als u verkiest om **te leren door** te doen, kunt u aan [ springen Begonnen met AEM Hoofdloze hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) waar u direct in AEM Ontwikkelt zonder Titel door een eenvoudig project uit te voeren om AEM inhoud zonder kop bloot te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder kop te gaan door het document te bekijken [Hoe te om uw inhoud als AEM inhoudsmodellen te modelleren,](model-your-content.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingstraject door het document [ te herzien hoe te Model Uw Inhoud als Modellen van de Inhoud, ](model-your-content.md) het volgende is enkele extra, facultatieve middelen die een diepere duik op sommige die concepten uitvoeren in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
-* [AEM doorsnedenloze vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
-* [Headless Development voor AEM Sites](/help/sites-developing/headless/introduction.md) - Een korte inleiding om de ontwikkelaar van AEM Headless te oriënteren met de noodzakelijke eigenschappen
-* [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
-* [Beheer van inhoud zonder koppen met GraphQL API&#39;s](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Volg deze cursus voor een overzicht van de GraphQL API die in AEM is geïmplementeerd. Verificatie via AdobeID is vereist.
-* [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Dit GitHub-project bevat voorbeeldtoepassingen die AEM GraphQL API&#39;s markeren.
-* [Aan de slag met koploze gids](/help/sites-developing/headless/introduction.md#getting-started) - Een snelle inleiding tot AEM functies zonder kop voor gebruikers die al bekend zijn met AEM.
-* [Modellen voor inhoudsfragmenten maken](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie over modellen van inhoudsfragmenten
-* [Inhoudsfragmenten maken](/help/assets/content-fragments/content-fragments.md) - Technische documentatie over inhoudsfragmenten
-* [Query-inhoud uitvoeren met GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technische documentatie over de GraphQL API
-* De [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ AEM Headless Vertaalreis ](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
+* [ Zwaarloze Ontwikkeling voor AEM Sites ](/help/sites-developing/headless/introduction.md) - een snelle inleiding om de ontwikkelaar van de Zwaarteloze AEM met de noodzakelijke eigenschappen te richten
+* [ AEM Tutorials zonder kop ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
+* [ Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs ](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
+* [ AEM Guides WKND - GraphQL ](https://github.com/adobe/aem-guides-wknd-graphql) - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
+* [ Koploze Begonnen Gids ](/help/sites-developing/headless/introduction.md#getting-started) - een snelle inleiding aan AEM koploze eigenschappen voor gebruikers reeds vertrouwd van AEM.
+* [ creeer de Modellen van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie over de Modellen van het Fragment van de Inhoud
+* [ creeer de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) - Technische documentatie over de Fragmenten van de Inhoud
+* [ inhoud van de Vraag met GraphQL ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technische documentatie op GraphQL API
+* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

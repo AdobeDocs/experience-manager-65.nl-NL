@@ -22,31 +22,31 @@ U kunt nieuwsbrieven aan de e-maildiensten zoals Ingenieur publiceren ExactTarge
 
 >[!NOTE]
 >
->U moet de serviceprovider configureren voordat u een e-mail kunt maken en publiceren. Zie [ExactTarget configureren](/help/sites-administering/exacttarget.md) en [Silverpop-engamage configureren](/help/sites-administering/silverpop.md) voor meer informatie .
+>U moet de serviceprovider configureren voordat u een e-mail kunt maken en publiceren. Zie [ het Vormen ExactTarget ](/help/sites-administering/exacttarget.md) en [ het Vormen SilverpopMogelijkheid ](/help/sites-administering/silverpop.md) voor meer informatie.
 
 Voer de volgende stappen uit om uw e-mail naar het e-mailservicebureau te publiceren:
 
 1. Maak een e-mail.
 1. Pas de configuratie van de E-mailservice toe op de e-mail.
-1. Publiceer de e-mail.
+1. Publish het e-mailbericht.
 
 >[!NOTE]
 >
->Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de instantie Publiceren wordt gepubliceerd of als de instantie Publiceren niet beschikbaar is. Vergeet niet uw nieuwsbrief te publiceren en ervoor te zorgen dat de instantie Publiceren actief is.
+>Als u e-mailproviders bijwerkt, een vliegtest uitvoert of een nieuwsbrief verzendt, mislukken deze bewerkingen als de nieuwsbrief niet eerst naar de Publish-instantie wordt gepubliceerd of als de Publish-instantie niet beschikbaar is. Publiceer uw nieuwsbrief en zorg ervoor dat het Publish-exemplaar actief is.
 
 ## Een e-mail maken {#creating-an-email}
 
-Een e-mail of nieuwsbrief die u aan een e-maildienst wilt publiceren kan onder een campagne worden gecreeerd gebruikend **Geometrixx-nieuwsbrief** sjabloon. U kunt ook de opdracht **E-mailadres Geometrixx Outdoors** sjabloon. Voorbeeld van e-mail/nieuwsbrief op basis van de **E-mailadres Geometrixx Outdoors** sjabloon is beschikbaar op `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+Een e-mail of een bulletin dat u aan de e-maildienst wilt publiceren kan onder een campagne worden gecreeerd gebruikend het **Malplaatje van het Nieuwsbrief van de Geometrixx**. U kunt het **Geometrixx Outdoors E-mail** malplaatje ook gebruiken. De steekproef e-mail/nieuwsbrief-gebaseerd op het **Geometrixx Outdoors E-mail** malplaatje zijn beschikbaar bij `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
 Om een e-mail tot stand te brengen die aan de gevormde e-maildienst wordt gepubliceerd:
 
-1. Ga naar **Websites** en vervolgens **Campagnes**. Selecteer een campagne.
-1. Klikken **Nieuw** om de **Pagina maken** venster.
-1. Voer de titel, naam en selecteer de **Geometrixx-nieuwsbrief** sjabloon uit de lijst met beschikbare sjablonen.
-1. Klikken **Maken**.
+1. Ga naar **Websites** en dan **Campagnes**. Selecteer een campagne.
+1. Klik **Nieuw** om **te openen creeer het venster van de Pagina**.
+1. Ga de titel, de naam in, en selecteer het **Malplaatje van het Geometrixx- Nieuwsbrief** van de lijst van beschikbare malplaatjes.
+1. Klik **creëren**.
 1. Open het gemaakte e-mailbericht.
 1. Schakel over naar de ontwerpmodus om de componenten te selecteren die u wilt weergeven in het hulpgedeelte.
-1. Overschakelen naar bewerkingsmodus en beginnen met toevoegen van inhoud (tekst, afbeeldingen, [e-mailgereedschappen](#adding-exacttarget-email-tools-to-your-email), [personalisatievariabelen](#adding-text-and-personalization-tool-to-your-e-mail), enzovoort) aan uw e-mail.
+1. De schakelaar om wijze uit te geven en beginnen inhoud (tekst, beelden, [ e-mailhulpmiddelen ](#adding-exacttarget-email-tools-to-your-email) toe te voegen, [ verpersoonlijkingsvariabelen ](#adding-text-and-personalization-tool-to-your-e-mail), etc.) aan uw e-mail.
 
 ### ExactTarget-e-mailhulpprogramma&#39;s toevoegen aan uw e-mail {#adding-exacttarget-email-tools-to-your-email}
 
@@ -54,14 +54,14 @@ Om een e-mail tot stand te brengen die aan de gevormde e-maildienst wordt gepubl
 >
 >Deze sectie is specifiek voor de dienst ExactTarget.
 
-De **E-mailgereedschappen** voor ExactTarget kan meer e-mailfunctionaliteit toevoegen aan uw e-mail/nieuwsbrief.
+De **E-mailHulpmiddelen** component voor ExactTarget kan meer e-mailfunctionaliteit aan uw e-mail/bulletin toevoegen.
 
 1. Open een e-mail die naar ExactTarget moet worden gepubliceerd.
-1. De component toevoegen **ET - E-mailgereedschappen** op uw pagina met behulp van het hulpwerktuig. Open de component in de modus Bewerken.
+1. Voeg de component **ET toe - E-mailHulpmiddelen** aan uw pagina gebruikend sidekick. Open de component in de modus Bewerken.
 
-   ![chlimage_1](assets/chlimage_1.gif)
+   ![ chlimage_1 ](assets/chlimage_1.gif)
 
-1. Selecteer een optie in het menu **Opties** menu:
+1. Selecteer een optie van het **menu van Opties**:
 
 <table>
  <tbody>
@@ -79,7 +79,7 @@ De **E-mailgereedschappen** voor ExactTarget kan meer e-mailfunctionaliteit toev
   </tr>
   <tr>
    <td>Privacybeleid</td>
-   <td>Deze component voegt de koppeling naar uw privacybeleid in de e-mail in.<br /> </td>
+   <td>Deze component neemt de verbinding aan uw privacybeleid in e-mail op.<br /> </td>
   </tr>
   <tr>
    <td>Abonnementscentrum opzeggen</td>
@@ -91,38 +91,38 @@ De **E-mailgereedschappen** voor ExactTarget kan meer e-mailfunctionaliteit toev
   </tr>
   <tr>
    <td>E-mailopenen bijhouden</td>
-   <td>Een verborgen component waarmee u de functie ExactTarget bijhouden kunt gebruiken.<br /> </td>
+   <td>Een verborgen component die u de functie ExactTarget het volgen laat gebruiken.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->De **Opties** drop-down menu is slechts bevolkt als de configuratie ExactTarget op e-mail wordt toegepast. Zie [Configuratie van e-mailservice toepassen op e-mailinstellingen](#applying-e-mail-service-configuration-to-e-mail-settings) voor meer informatie .
+>Het **drop-down menu van Opties** is slechts bevolkt als de configuratie ExactTarget op e-mail wordt toegepast. Zie [ Toepassend de Configuratie van de E-mailDienst op E-mailmontages ](#applying-e-mail-service-configuration-to-e-mail-settings) voor meer informatie.
 
-1. Publiceer de e-mail naar ExactTarget.
+1. Publish de e-mail naar ExactTarget.
 
    De e-mail met de e-mailhulpprogramma&#39;s is beschikbaar voor gebruik in de geconfigureerde ExactTarget-account.
 
 >[!NOTE]
 >
->* De URL&#39;s in de e-mailprogramma&#39;s worden alleen vervangen door de werkelijke waarden (in de ontvangen e-mail) wanneer een e-mailbericht wordt verzonden met **Eenvoudig verzenden** of **Bewerken met instructies** maar niet **Verzenden testen**.
+>* URLs binnen de e-mailhulpmiddelen wordt vervangen (in ontvangen e-mail) door hun daadwerkelijke waarden slechts wanneer e-mail wordt verzonden gebruikend **Eenvoudig verzendt** of **Geleide verzendt** maar niet **Test verzendt**.
 >
->* Twee van de e-mailprogramma&#39;s zijn vereist: **Fysiek mailadres (vereist)** en **Profielmidden (vereist)**. Wanneer e-mail aan ExactTarget wordt gepubliceerd, worden deze twee e-mail-hulpmiddelen toegevoegd aan de bodem van elke post door gebrek.
+>* Twee van de e-mailhulpmiddelen worden vereist: **Fysiek Mailing Adres (Vereist)** en **het Centrum van het Profiel (Vereist)**. Wanneer e-mail aan ExactTarget wordt gepubliceerd, worden deze twee e-mail-hulpmiddelen toegevoegd aan de bodem van elke post door gebrek.
 >
 
-### Tekst en personalisatie toevoegen aan uw e-mail {#adding-text-and-personalization-tool-to-your-e-mail}
+### Tekst en Personalization-gereedschap toevoegen aan uw e-mail {#adding-text-and-personalization-tool-to-your-e-mail}
 
-U kunt gepersonaliseerde gebieden in een e-mail toevoegen door toe te voegen **Tekst en personalisatie** aan de pagina:
+U kunt gepersonaliseerde gebieden in een e-mail toevoegen door de **Tekst en de component van Personalization** aan de pagina toe te voegen:
 
 1. Open de e-mail die u naar uw e-mailservice wilt publiceren.
-1. Om verpersoonlijkingsgebied van uw e-maildienst toe te laten, voeg de kaderconfiguratie toe terwijl het vormen van de e-maildienst. Zie [Silverpop-engine configureren](/help/sites-administering/silverpop.md) en [Exact doel configureren](/help/sites-administering/exacttarget.md) voor meer informatie .
-1. De component toevoegen **Tekst en personalisatie** van het hulpje. Deze component is het deel van nieuwsbrief groep. Open deze component in de bewerkingsmodus.
+1. Om verpersoonlijkingsgebied van uw e-maildienst toe te laten, voeg de kaderconfiguratie toe terwijl het vormen van de e-maildienst. Zie [ het vormen SilverpopMoeilijke ](/help/sites-administering/silverpop.md) en [ het vormen Exact Doel ](/help/sites-administering/exacttarget.md) voor meer informatie.
+1. Voeg de component **Tekst &amp; Personalization** van sidekick toe. Deze component is het deel van nieuwsbrief groep. Open deze component in de bewerkingsmodus.
 
-   ![chlimage_1-110](assets/chlimage_1-110a.png)
+   ![ chlimage_1-110 ](assets/chlimage_1-110a.png)
 
-1. Voeg het vereiste gepersonaliseerde gebied aan de tekst toe door het gebied van het drop-down menu te selecteren en te klikken **Invoegen**.
-1. Klikken **OK** om te voltooien.
+1. Voeg het vereiste gepersonaliseerde gebied aan de tekst toe door het gebied van het drop-down menu te selecteren en **Tussenvoegsel** te klikken.
+1. Klik **O.K.** om te beëindigen.
 
 ## Configuratie van e-mailservice toepassen op e-mailinstellingen {#applying-e-mail-service-configuration-to-e-mail-settings}
 
@@ -130,12 +130,12 @@ Om uw E-maildienstconfiguratie op een nieuwsbrief toe te passen:
 
 1. Creeer een configuratie van de E-mailDienst.
 1. Open uw e-mail/nieuwsbrief.
-1. Open de instellingen voor e-mail/nieuwsbrief door op **Instellingen** of door te klikken **Pagina-eigenschappen in** het hulpje.
-1. Klikken **Service toevoegen** in **Cloud Servicen** tab. U ziet de lijst met services. Selecteer uw vereiste configuratie - of **ExactTarget** of **Silverpop** - in de lijst in de vervolgkeuzelijst.
+1. Open de e-mail/nieuwsbrief montages door of **Montages** te klikken of door **Eigenschappen van de Pagina in** te klikken sidekick.
+1. Klik **toevoegen de Dienst** in **Cloud Servicen** tabel. U ziet de lijst met services. Selecteer uw vereiste configuratie - of **ExactTarget** of **Silverpop** - van de lijst van de drop-down lijst.
 
-   ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
+   ![ chlimage_1-5 ](assets/chlimage_1-5a.jpeg)
 
-1. Klikken **OK**.
+1. Klik **OK**.
 
 ## E-mails naar e-mailservice publiceren {#publishing-emails-to-email-service}
 
@@ -143,15 +143,15 @@ E-mails/nieuwsbrieven kunnen aan uw E-maildienst worden gepubliceerd door deze s
 
 1. Open het e-mailbericht.
 1. Voordat u een e-mailbericht publiceert, moet u controleren of u de juiste configuratie op uw e-mail hebt toegepast.
-1. Klikken **Publiceren**. Hierdoor wordt het **Nieuwsbrief publiceren naar e-mailprovider** venster.
-1. Vul de **Naam nieuwsbrief** veld. Het e-mailbericht/de nieuwsbrief wordt gepubliceerd aan E-mail Service Provider met deze naam. Als er geen e-mailnaam wordt opgegeven, wordt de e-mail gepubliceerd met de paginanaam van de nieuwsbrief in AEM.
-1. Klikken **Publiceren**.
+1. Klik **Publish**. Dit opent het **Nieuwsbrief van Publish aan E-mailDienstverlener** venster.
+1. Vul het **gebied van de Naam van het 0} Nieuwsbrief in.** Het e-mailbericht/de nieuwsbrief wordt gepubliceerd aan E-mail Service Provider met deze naam. Als er geen e-mailnaam wordt opgegeven, wordt de e-mail gepubliceerd met de paginanaam van de nieuwsbrief in AEM.
+1. Klik **Publish**.
 
-   ![chlimage_1-6](assets/chlimage_1-6.jpeg)
+   ![ chlimage_1-6 ](assets/chlimage_1-6.jpeg)
 
    AEM bevestigt dat u de e-mail kunt weergeven in ExactTarget of Silverpop Engage.
 
-   Als er ExactTarget is, kan de gepubliceerde e-mail zijn weergegeven door op **Gepubliceerde e-mail weergeven**. Dit neemt u rechtstreeks aan de gepubliceerde nieuwsbrief in ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   Als er ExactTarget is kan de gepubliceerde e-mail hebben bekeken door **Gepubliceerde E-mail van de Mening te klikken**. Dit neemt u rechtstreeks aan de gepubliceerde nieuwsbrief in ExactTarget ([ https://members.exacttarget.com/ ](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >
@@ -162,13 +162,13 @@ E-mails/nieuwsbrieven kunnen aan uw E-maildienst worden gepubliceerd door deze s
 
 ### Een gepubliceerde e-mail bijwerken {#updating-a-published-e-mail}
 
-De **Bijwerken** in het dialoogvenster Publiceren kunt u een nieuwsbrief bijwerken die al is gepubliceerd naar een e-mailserviceprovider. Indien de nieuwsbrief nog niet is gepubliceerd en **Bijwerken** op de knop wordt geklikt, **Nieuwsbrief is niet gepubliceerd** berichtenweergaven.
+De **knoop van de Update** op de de dialoogdoos van Publish laat u een nieuwsbrief bijwerken die reeds aan een E-mailDienstverlener wordt gepubliceerd. In het geval dat nieuwsbrief nog niet is gepubliceerd en de **knoop van de Update** wordt geklikt, wordt de a **Newsletter niet gepubliceerd** berichtvertoningen.
 
 Een gepubliceerde e-mail bijwerken:
 
 1. Open de e-mail/nieuwsbrief die eerder is gepubliceerd aan een e-mailserviceprovider die u opnieuw wilt publiceren nadat u wijzigingen in de e-mail/nieuwsbrief hebt aangebracht.
-1. Klikken **Publiceren**. De **Nieuwsbrief publiceren naar e-mailprovider** wordt weergegeven. Klikken **Bijwerken**.
+1. Klik **Publish**. Het **Nieuwsbrief van Publish aan E-mailDienstverlener** venstervertoningen. Klik **Update**.
 
-   Als u wilt controleren of de e-mail/nieuwsbrief is bijgewerkt op ExactTarget, klikt u op **Gepubliceerde e-mail weergeven**. Hiermee gaat u naar de gepubliceerde e-mail in ExactTarget.
+   Om te controleren als e-mail/nieuwsbrief op ExactTarget is bijgewerkt, klik **Gepubliceerde E-mail van de Mening**. Hiermee gaat u naar de gepubliceerde e-mail in ExactTarget.
 
    Ga naar de Silverpop Engage-site om te controleren of de e-mail/nieuwsbrief is bijgewerkt via de Silverpop-e-mailservice.

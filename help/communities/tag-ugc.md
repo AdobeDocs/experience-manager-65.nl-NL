@@ -38,11 +38,11 @@ De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staa
 
 ## Tags beheren {#administering-tags}
 
-Zie [Tags beheren](../../help/sites-administering/tags.md#tagging-console) voor het maken en beheren van tagnaamruimten en -taxonomieën.
+Zie [ het Beheer Markeringen ](../../help/sites-administering/tags.md#tagging-console) voor het creëren van en het beheren van markeringsnamespaces en taxonomieën.
 
-Zie [Grondbeginselen van tags](tag.md) voor informatie over ontwikkelaars.
+Zie [ Hoofdzaak van de Markering ](tag.md) voor ontwikkelaarinformatie.
 
-Zie [Sociale tagcloud gebruiken](tagcloud.md) voor het toevoegen van een component Social Tag Cloud aan een pagina om het zoeken naar geposte UGC te vergemakkelijken met de toegepaste tags.
+Zie [ Gebruikend de Wolk van de Sociale Markering ](tagcloud.md) voor het toevoegen van een component van de Wolk van de Sociale Markering aan een pagina om het zoeken naar geposte UGC te vergemakkelijken gebruikend de toegepaste markeringen.
 
 ### Tagmachtigingen {#tag-permissions}
 
@@ -50,8 +50,8 @@ De standaardmachtigingen zijn ingesteld om te voorkomen dat tagnaamruimten worde
 
 Omdat tags worden toegepast op UGC in de publicatieomgeving, moet leesmachtigingen zijn ingeschakeld voor leden van de community om tags te kunnen selecteren die moeten worden toegepast.
 
-Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
+Zie [ Plaatsende Toestemmingen van de Markering ](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Hieronder wordt beschreven hoe het wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `Community Engage Members`.
+Hieronder wordt beschreven hoe de optie wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `Community Engage Members` .
 
-![tagmachtigingen](assets/tag-permissions.png)
+![ markering-toestemmingen ](assets/tag-permissions.png)

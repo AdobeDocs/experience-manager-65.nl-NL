@@ -26,15 +26,15 @@ Het analyseren van langzame prestaties op Authoring instantie kan complex worden
 
 De volgende beslisboom verstrekt begeleiding om het knelpunt te versmallen.
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![ chlimage_1-75 ](assets/chlimage_1-75.png)
 
 ## Basisoptimalisatie {#basic-optimization}
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![ chlimage_1-76 ](assets/chlimage_1-76.png)
 
 ## Logbestanden en auditlogbestanden configureren {#configuring-log-files-and-audit-logs}
 
-AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Zie voor meer informatie de [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sectie.
+AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Voor informatie, zie het [ Werken met de Verslagen van de Controle en de sectie van de Dossiers van het Logboek ](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## De optie Uitvouwen gebruiken {#using-the-verbose-option}
 
@@ -63,14 +63,14 @@ Ga als volgt te werk om problemen op te lossen:
 * Soms kunt u de juiste koppeling herstellen door de ondersteunde Java™-versie opnieuw te installeren.
 * U kunt CRX altijd uitvoeren met behulp van de opdrachtregel of start/stop-scripts zoals eerder in dit document is beschreven.
 
-### Mijn toepassing die op CRX loopt werpt fouten uit het geheugen {#my-application-running-on-crx-throws-out-of-memory-errors}
+### Mijn toepassing die op CRX wordt uitgevoerd, genereert fouten vanwege onvoldoende geheugen {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Zie ook [Geheugenproblemen analyseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
+>Zie ook [ Geheugenproblemen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html) analyseren.
 
 
-CRX heeft zelf een laag geheugenverbruik. Als de toepassing die binnen CRX wordt uitgevoerd grotere geheugenvereisten heeft of om geheugen-zware verrichtingen (bijvoorbeeld, grote transacties) verzoekt, moet de instantie JVM waar CRX looppas met aangewezen geheugenmontages beginnen.
+CRX zelf heeft een laag geheugenverbruik. Als de toepassing die in CRX wordt uitgevoerd grotere geheugenvereisten heeft of geheugenintensieve bewerkingen aanvraagt (bijvoorbeeld grote transacties), moet de JVM-instantie waarin CRX wordt uitgevoerd, worden gestart met de juiste geheugeninstellingen.
 
 Gebruik de Java™-opdrachtopties om geheugeninstellingen van de JVM te definiëren (bijvoorbeeld java -Xmx512m -jar crx&amp;ast;.jar om de heapsize in te stellen op 512 MB).
 
@@ -82,14 +82,14 @@ Als u automatisch een heapdump wilt maken wanneer er onvoldoende geheugen beschi
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&amp;ast;.jar
 
-Met deze methode wordt een heap-dump-bestand gegenereerd (**java_...hprof**) als er onvoldoende geheugen beschikbaar is voor het proces. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd.
+Deze methode produceert een dossier van de heapstortplaats (**java_...hprof**) wanneer het proces uit geheugen loopt. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd.
 
 Vaak zijn drie heap dump-bestanden, verzameld over een bepaalde periode, nodig om het probleem te analyseren:
 
 * Voordat een fout optreedt
 * Tijdens storing 1
 * Tijdens mislukking 2
-* *In het ideale geval zou het ook goed zijn om informatie te verzamelen nadat de gebeurtenis is opgelost.*
+* *Ideaal, zou het ook goed zijn om informatie te verzamelen nadat de gebeurtenis wordt opgelost*
 
 Deze kunnen worden vergeleken om de wijzigingen te zien en hoe objecten geheugen gebruiken.
 
@@ -115,7 +115,7 @@ Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java™ 11 waarbij
 
 Ga als volgt te werk als dit probleem zich voordoet:
 
-1. Open de `sling.properties` bestand onder de `crx-quickstart/conf/` map
+1. Open het bestand `sling.properties` onder de map `crx-quickstart/conf/`
 1. Zoek de volgende regel:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
@@ -130,17 +130,17 @@ Ga als volgt te werk als dit probleem zich voordoet:
 
 ### Pagina niet gevonden bij aanvragen van een geometrixx-buitenpagina {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
-**Is van toepassing op WebLogic 10.3.5 en JBoss® 5.1**
+**is op WebLogic 10.3.5 en JBoss® 5.1 van toepassing**
 
 Wanneer een verzoek aan geometrixx-outdoor/en pagina 404 (Pagina niet Gevonden) terugkeert, kunt u opnieuw controleren dat u het extra bezit van de helling in het sling.properties- dossier nodig voor deze specifieke Servers van de Toepassing hebt geplaatst.
 
-Zie in de *AEM webtoepassing implementeren* voor de details.
+Zie in *opstellen AEM Webtoepassing* stappen voor de details.
 
 ### De grootte van de reactiekop kan groter zijn dan 4 KB {#response-header-size-can-be-greater-than-kb}
 
 502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kunnen HTTP-antwoordheaders genereren die cookies van meer dan 4 kB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4 KB kan overschrijden.
 
-Voor Tomcat 7.0, bijvoorbeeld, het maxHttpHeaderSize-kenmerk van het [HTTP-connector](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) Hiermee bepaalt u de beperkingen van de koptekstgrootte.
+Bijvoorbeeld, voor Tomcat 7.0, de attributen maxHttpHeaderSize van de ](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controles van de Schakelaar van 0} HTTP {op kopbalgrootte.[
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 
@@ -150,11 +150,11 @@ Als permanente opslag is ingesloten in de installatiemap, bijvoorbeeld in de sta
 
 >[!NOTE]
 >
->Adobe raadt u aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory>, verwijdert u ook de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de gegevens verwijdert, verplaatst of kopieert u de &lt;cq-installation-directory>/crx-quickstart/repository folder ergens anders alvorens de andere omslagen te schrappen.
+>Adobe raadt u aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u ook de repository. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
 
 Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een databaseserver, worden de gegevens niet automatisch verwijderd wanneer u een map verwijdert. De opslagconfiguratie wordt echter wel verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.
 
 ### JSP-bestanden worden niet gecompileerd op JBoss® {#jsp-files-are-not-compiled-on-jboss}
 
 Als u JSP-bestanden installeert of bijwerkt naar Experience Manager op JBoss® en de bijbehorende servlets niet worden gecompileerd, moet u ervoor zorgen dat de JBoss® JSP-compiler correct is geconfigureerd. Zie voor meer informatie de
-[Problemen met JSP-compilatie in JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) artikel.
+[ JSP de Kwesties van de Compilatie in JBoss® ](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) artikel.

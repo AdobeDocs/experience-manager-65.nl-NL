@@ -66,10 +66,10 @@ Het patroongedeelte van een regel wordt gebruikt om de namen van de bestanden di
 | Voorvoegsel | Effect |
 |---|---|
 | / | Geeft een JCR-pad aan. Dit voorvoegsel komt daarom overeen met bestanden onder de map jcr_root. |
-| &amp;asteren; | Geeft een normaal bestand op het bestandssysteem aan. |
+| &amp;ast; | Geeft een normaal bestand op het bestandssysteem aan. |
 | none | Geen voorvoegsel of patroon dat begint met een map of bestandsnaam, geeft een normaal bestand op het bestandssysteem aan. |
 
-Bij gebruik in een patroon geeft /-teken een submap en de &amp;laatste aan;-teken komt overeen met alles. In de volgende tabel staan verschillende voorbeeldregels.
+Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aan; het teken komt overeen met alles. In de volgende tabel staan verschillende voorbeeldregels.
 
 <table>
  <tbody>
@@ -135,9 +135,9 @@ mvn xgettext:extract
 ### Uitvoerbestanden {#output-files}
 
 * `raw.xliff`: geëxtraheerde tekenreeksen
-* `warn.log`: eventuele waarschuwingen, indien van toepassing `CQ.I18n.getMessage()` API wordt onjuist gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
+* `warn.log`: waarschuwingen (indien aanwezig) als de `CQ.I18n.getMessage()` API onjuist wordt gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
 
-* `parserwarn.log`: parserwaarschuwingen (indien aanwezig), bijvoorbeeld bij parserproblemen
-* `potentials.xliff`: &quot;potentiële&quot; kandidaten die niet worden geëxtraheerd, maar leesbare tekenreeksen kunnen zijn die vertaald moeten worden (genegeerd, levert nog steeds een enorme hoeveelheid valse positieven op)
+* `parserwarn.log`: parserwaarschuwingen (indien aanwezig), bijvoorbeeld bij problemen met de parser van JS
+* `potentials.xliff`: &#39;potentiële&#39; kandidaten die niet zijn geëxtraheerd, maar leesbare tekenreeksen zijn die vertaald moeten worden (kan worden genegeerd, levert nog steeds een enorme hoeveelheid fout-positieven op)
 * `strings.xliff`: afgevlakt xliff-bestand, te importeren in ALF
-* `backrefs.txt`: hiermee kunt u snel broncodelocaties zoeken voor een bepaalde tekenreeks
+* `backrefs.txt`: hiermee kunt u snel broncodelocaties voor een bepaalde tekenreeks opzoeken

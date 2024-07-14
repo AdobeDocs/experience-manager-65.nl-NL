@@ -31,7 +31,7 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 ### Creatie en beheer van sites van gemeenschappen {#communities-site-creation-and-management}
 
-* Gemeenschappen [consoles](consoles.md)
+* De gemeenschappen [ consoles ](consoles.md)
 
    * [Sites](sites-console.md)
 
@@ -41,7 +41,7 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
    * [Leden en groepsbeheer](members.md)
    * [Rapporten](reports.md)
 
-* Gemeenschappen [*gereedschappen*](tools.md):
+* De middelen van gemeenschappen [**](tools.md):
 
    * [Sitesjablonen](sites.md)
    * [Groepssjablonen](tools-groups.md)
@@ -55,24 +55,24 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers gegenereerde inhoud (UGC) door inloggers (leden). Ga voor meer informatie over het werken met UGC naar:
 
-* [Algemene UGC-opslag](working-with-srp.md): keuze van SRP voor gedeelde opslag van UGC
-* [Moderne UGC](moderate-ugc.md): Vertrouwde leden kunnen UGC in bulk of in context matigen
-* [UGC-tags](tag-ugc.md): functies kunnen zo worden geconfigureerd dat leden inhoud kunnen labelen
-* [UGC vertalen](translate-ugc.md): de functies kunnen worden geconfigureerd om alle UGC te vertalen of leden toe te staan geselecteerde posts te vertalen
-* [Analyseconfiguratie](analytics.md): Adobe Analytics in staat stellen om te rapporteren over verschillende maatstaven met betrekking tot lidactiviteit
+* [ Gemeenschappelijke Opslag UGC ](working-with-srp.md): keus van SRP voor gedeelde opslag van UGC
+* [ het Modereren UGC ](moderate-ugc.md): De vertrouwde op leden kunnen UGC in bulk of in context matigen
+* [ het Tags toevoegen van UGC ](tag-ugc.md): de eigenschappen kunnen worden gevormd om leden toe te staan om inhoud te etiketteren
+* [ Vertaal UGC ](translate-ugc.md): de eigenschappen kunnen worden gevormd om al UGC te vertalen of leden toe te staan om geselecteerde posten te vertalen
+* [ Configuratie van Analytics ](analytics.md): toelatend Adobe Analytics om op diverse metriek betreffende lidactiviteit te rapporteren
 
 ### Communautaire leden {#community-members}
 
-* [Gebruikers en gebruikersgroepen beheren](users.md): bijzonderheden over leden van de gemeenschap en groepen leden, waaronder geprivilegieerde leden.
-* [Bijdragelimieten](limits.md): de mogelijkheid om detachering door nieuwe leden te beperken.
-* [Tunnelservice](deploy-communities.md#tunnel-service-on-author): Hiermee kunt u leden van de publicatielanden en lidgroepen benaderen vanuit de auteursomgeving.
-* [Samenstellingen van leden en groepen](members.md): Hiermee kunnen leden en lidgroepen van de publicatiezijde worden gemaakt en beheerd vanuit de auteursomgeving.
-* [Gebruikerssynchronisatie](sync.md): voor het synchroniseren van leden en lidgroepen in meerdere publicatie-instanties.
-* [Sociale aanmelding met Facebook en Twitter](social-login.md): mogelijkheid voor bezoekers van de site om lid te worden van de gemeenschap op basis van hun Facebook- of Twitter-inloggegevens.
-* [Scores en badges](implementing-scoring.md): de mogelijkheid om toegangspasjes toe te wijzen om de rollen van een lid te identificeren en om leden een toegangspasje te laten verdienen door hun deelname aan de gemeenschap .
-* [Meldingen](notifications.md): de mogelijkheid voor de leden om in kennis te worden gesteld van hun activiteiten.
-* [Abonnementen](subscriptions.md): mogelijkheid voor leden om via externe e-mail te communiceren met de gemeenschap.
-* [Berichten](messaging.md): de mogelijkheid voor leden om met de gemeenschap te communiceren door middel van interne berichten.
+* [ het Leiden Gebruikers en de Groepen van de Gebruiker ](users.md): details van communautaire leden en lidgroepen, met inbegrip van bevoorrechte leden.
+* [ de Limieten van de Bijdrage ](limits.md): capaciteit om het posten door nieuwe leden te beperken.
+* [ Dienst van de Tunnel ](deploy-communities.md#tunnel-service-on-author): staat publish-side leden en lidgroepen toe om van het auteursmilieu worden betreden.
+* [ Leden en Groepen consoles ](members.md): staat toe publiceer-zijleden en lidgroepen om van het auteursmilieu worden gecreeerd en worden geleid.
+* [ Synchronisatie van de Gebruiker ](sync.md): voor het synchroniseren van leden en lidgroepen over veelvoudige publiceer instanties.
+* [ Sociale Login met Facebook en Twitter ](social-login.md): capaciteit voor plaatsbezoekers om een lid van de gemeenschap te worden gebruikend hun geloofsbrieven van Facebook of van de Twitter.
+* [ Scoring en Badges ](implementing-scoring.md): capaciteit voor badges die moeten worden toegewezen om rollen van een lid te identificeren en voor leden om badges door hun deelname in de gemeenschap te verdienen.
+* [ Meldingen ](notifications.md): capaciteit voor leden om van activiteit op de hoogte te worden gebracht zij volgen.
+* [ Abonnementen ](subscriptions.md): capaciteit voor leden om met de gemeenschap in wisselwerking te staan gebruikend externe e-mail.
+* [ Overseinen ](messaging.md): capaciteit voor leden om met de gemeenschap in wisselwerking te staan gebruikend interne berichten.
 
 ### Implementatie {#deployment}
 
@@ -86,12 +86,12 @@ Het is belangrijk om de meest recente versie van Gemeenschappen op het AEM platf
 
 * [Feitenpakket van de nieuwste gemeenschappen](deploy-communities.md#latestfeaturepack)
 
-Zie de inzetpagina voor andere communautaire specifieke informatie, zoals voor [Bijwerken](upgrade.md), [Dispatcher](dispatcher.md), en [Replicatie](deploy-communities.md#replication-agents-on-author).
+Zie de plaatsingspagina voor andere gemeenschappen-specifieke informatie, zoals voor [ Bevorderend ](upgrade.md), [ Dispatcher ](dispatcher.md), en [ Replicatie ](deploy-communities.md#replication-agents-on-author).
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
-* Bezoek [Gemeenschappen inzetten](deploy-communities.md) waar u over geadviseerde plaatsingen kunt leren.
+* Bezoek [ het Opstellen van Gemeenschappen ](deploy-communities.md) waar u over geadviseerde plaatsingen kunt leren.
 
-* Bezoek [Ontwikkelingsgemeenschappen](communities.md) waar u over het sociale componentenkader (SCF) en het aanpassen van de componenten en de eigenschappen van de Gemeenschappen kunt leren.
+* Bezoek [ het Ontwikkelen van Gemeenschappen ](communities.md) waar u over het sociale componentenkader (SCF) en het aanpassen van de componenten en de eigenschappen van Gemeenschappen kunt leren.
 
-* Bezoek [Componenten van Gemeenschappen ontwerpen](author-communities.md) waar u kunt leren om met te schrijven en de componenten van de Gemeenschappen te vormen.
+* Bezoek [ Authoring Communities Components ](author-communities.md) waar u kunt leren hoe u met componenten van Gemeenschappen ontwerpt en deze configureert.

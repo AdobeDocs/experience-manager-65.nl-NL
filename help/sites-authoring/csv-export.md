@@ -19,9 +19,9 @@ ht-degree: 6%
 
 # Exporteren naar CSV{#export-to-csv}
 
-**CSV-rapport maken** kunt u informatie over uw pagina&#39;s naar een CSV-bestand op uw lokale systeem exporteren.
+**creeer CSV Rapport** laat u toe om informatie over uw pagina&#39;s naar een Csv- dossier op uw lokaal systeem uit te voeren.
 
-* Het gedownloade bestand wordt `export.csv`
+* Het gedownloade bestand wordt `export.csv` genoemd
 * De inhoud is afhankelijk van de eigenschappen die u selecteert.
 * U kunt het pad samen met de diepte van het exporteren definiëren.
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 >
 >De downloadfunctie en de standaardbestemming van uw browser worden gebruikt.
 
-De **CSV-export maken** de tovenaar laat u selecteren:
+**creeer CSV de tovenaar van de Uitvoer** laat u selecteren:
 
 * Te exporteren eigenschappen
    * Metagegevens
@@ -50,20 +50,20 @@ De **CSV-export maken** de tovenaar laat u selecteren:
    * Aanvullende niveaus voor kinderen
    * Niveaus
 
-Het resultaat `export.csv` kan worden geopend in Excel of een andere compatibele toepassing.
+Het resulterende `export.csv` -bestand kan worden geopend in Excel of een andere compatibele toepassing.
 
-![etc-01](assets/etc-01.png)
+![ etc-01 ](assets/etc-01.png)
 
-Het maken **CSV-rapport** Deze optie is beschikbaar wanneer u in het dialoogvenster **Sites** console (in lijstweergave): dit is een optie van de **Maken** vervolgkeuzelijst:
+Creëer **optie van het Rapport CSV** is beschikbaar wanneer het doorbladeren van de **3} console van Plaatsen {(in de mening van de Lijst): het is een optie van** creeer **drop-down menu:**
 
-![etc-02](assets/etc-02.png)
+![ etc-02 ](assets/etc-02.png)
 
 Een CSV-export maken:
 
-1. Open de **Sites** navigeer indien nodig naar de gewenste locatie.
+1. Open de **console van Plaatsen**, navigeer aan de vereiste plaats indien nodig.
 1. Selecteer op de werkbalk de optie **Maken** en vervolgens **CSV-rapport** om de wizard te openen:
 
-   ![etc-03](assets/etc-03.png)
+   ![ etc-03 ](assets/etc-03.png)
 
 1. Selecteer de eigenschappen die u wilt exporteren.
-1. Selecteren **Maken**.
+1. Selecteer **creeer**.

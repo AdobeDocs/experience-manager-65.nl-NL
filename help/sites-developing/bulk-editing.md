@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Pagina configureren voor Bulk bewerken van pagina-eigenschappen {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[Pagina-eigenschappen in bulk bewerken](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) Hiermee kunt u de eigenschappen van meerdere pagina&#39;s tegelijk bewerken.
+[ Bulk het uitgeven van paginaeigenschappen ](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
 
 Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet standaard ingeschakeld voor bulkbewerking. Ze moeten expliciet worden toegestaan (ingeschakeld). Wanneer u de pagina-eigenschappen definieert die beschikbaar moeten zijn voor bulkbewerking, moet u rekening houden met bepaalde implicaties, zoals:
 
@@ -38,7 +38,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 
 >[!NOTE]
 >
->Bulkbewerking is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [Eigenschappen van meerdere elementen bewerken](/help/assets/metadata.md) voor volledige informatie. U kunt de velden in de Bulk Metadata Editor voor Assets aanpassen met de opdracht [Schema-editor](/help/assets/metadata-schemas.md).
+>Bulkbewerking is ook beschikbaar voor Assets. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [ het Uitgeven Eigenschappen van Veelvoudige Assets ](/help/assets/metadata.md) voor volledige informatie. U kunt de gebieden in de Bulk redacteur van Meta-gegevens voor Assets aanpassen gebruikend de [ redacteur van het Schema ](/help/assets/metadata-schemas.md).
 
 ## Veld inschakelen {#enabling-a-field}
 
@@ -54,7 +54,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
 
-Velden zijn ingeschakeld op de paginacomponent (*niet* in de template):
+De gebieden worden toegelaten op de paginacomponent (*niet* op het malplaatje):
 
 1. Met CRXDE Lite (of een gelijkwaardige methode) opent u de pagina-component.
 
@@ -62,16 +62,16 @@ Velden zijn ingeschakeld op de paginacomponent (*niet* in de template):
 
    >[!NOTE]
    >
-   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Zie de [Documentatie kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor meer informatie .
+   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Zie de [ documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor meer informatie.
 
-1. Ga naar het gewenste veld in het dialoogvenster `cq:dialog` definitie.
+1. Navigeer naar het vereiste veld binnen de definitie van `cq:dialog` .
 1. Definieer de volgende eigenschap op het veldknooppunt:
 
    * **Naam**: `allowBulkEdit`
    * **Type**: `Boolean`
    * **Waarde**: `true`
 
-   Bijvoorbeeld voor de standaardpagina [stichtingscomponent](/help/sites-authoring/default-components-foundation.md):
+   Bijvoorbeeld, voor de standaardpagina [ stichtingscomponent ](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
@@ -81,13 +81,13 @@ Velden zijn ingeschakeld op de paginacomponent (*niet* in de template):
 
    >[!CAUTION]
    >
-   >U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
+   >U ***moet*** niets in de `/libs` weg veranderen.
    >
-   >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   >    1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
-   >    1. Breng wijzigingen aan in `/apps`
+   >    1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het in `/libs` staat) onder `/apps`
+   >    1. Breng eventuele wijzigingen aan binnen `/apps`
 
-1. Selecteren **Alles opslaan** om uw updates voort te zetten.
+1. Selecteer **sparen allen** om uw updates voort te zetten.

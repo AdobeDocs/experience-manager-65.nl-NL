@@ -26,7 +26,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom worden streepjescodes en handtekeningvelden niet in mijn formulier weergegeven?
 
-   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in scenario&#39;s voor HTML of mobiele apparaten. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw scriptveld voor handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. U kunt ook een [aangepaste widget](../../forms/using/custom-widgets.md) voor streepjescodes en deze integreren.
+   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in scenario&#39;s voor HTML of mobiele apparaten. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw veld voor het schrijven van handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. Men kan a [ douanewidget ](../../forms/using/custom-widgets.md) voor streepjescodes ook toevoegen en het integreren.
 
 1. Wordt RTF-tekst ondersteund voor het XFA-tekstveld?
 
@@ -38,7 +38,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    1. Stel het aanvankelijke aantal van het herhaalbare subformulier in op 1.
 
-      ![eerste telling](assets/intial-count.png)
+      ![ eerste-telling ](assets/intial-count.png)
 
    1. Gebruik de initialisatiegebeurtenis van het formulier om het primaire exemplaar van het subformulier te verbergen. De onderstaande code verbergt bijvoorbeeld het primaire exemplaar van Subform bij initialisatie van het formulier. Het verifieert ook het app type om ervoor te zorgen dat het manuscript slechts op de cliëntkant wordt uitgevoerd:
 
@@ -90,15 +90,15 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom wordt tekst afgekapt of onjuist weergegeven in HTML5?
 
-   Antwoord: Wanneer een tekstelement Tekenen of Bijschrift niet voldoende ruimte heeft gekregen om inhoud weer te geven, wordt de tekst afgebroken weergegeven in mobiele formulieruitvoering. Deze afkapping is ook zichtbaar in de ontwerpweergave van AEM Forms Designer. Hoewel deze afkapping kan worden afgehandeld in de PDF, kan deze niet worden afgehandeld in de HTML5-formulieren. U voorkomt dit probleem door voldoende ruimte te bieden voor Tekenen of Bijschrifttekst, zodat deze niet wordt afgekapt in de ontwerpmodus van AEM Forms Designer.
+   Antwoord: Wanneer een Draw- of bijschrifttekstelement onvoldoende ruimte heeft om inhoud weer te geven, wordt de tekst afgekapt weergegeven in mobiele formulieruitvoering. Deze afkapping is ook zichtbaar in de ontwerpweergave van AEM Forms Designer. Hoewel deze afkapping kan worden afgehandeld in de PDF, kan deze niet worden afgehandeld in de HTML5-formulieren. Om dit probleem te voorkomen, moet u voldoende ruimte vrijmaken voor Draw of Bijschrifttekst, zodat deze niet wordt afgekapt in de ontwerpmodus van de AEM Forms Designer.
 
 1. Ik observeer layoutproblemen met betrekking tot ontbrekende inhoud of overlappende inhoud. Wat is de reden?
 
-   Antwoord: Als er naast een ander overlappend element op dezelfde positie (bijvoorbeeld een rechthoek) een element Tekst tekenen of Afbeelding tekenen is, is de inhoud Tekst tekenen niet zichtbaar als deze later in de documentvolgorde komt (in de AEM Forms Designer-hiërarchie). PDF ondersteunt transparante lagen, maar HTML/browsers bieden geen ondersteuning voor transparante lagen.
+   Antwoord: Als er een Draw-tekstelement of een Draw-afbeeldingselement is samen met een ander overlappend element op dezelfde positie (bijvoorbeeld een rechthoek), is de Draw-tekstinhoud niet zichtbaar als deze later in de documentvolgorde komt (in de AEM Forms Designer-hiërarchieweergave). PDF ondersteunt transparante lagen, maar HTML/browsers bieden geen ondersteuning voor transparante lagen.
 
 1. Waarom worden sommige lettertypen in het HTML-formulier anders weergegeven dan de lettertypen die bij het ontwerpen van het formulier worden gebruikt?
 
-   Antwoord: HTML5 Forms staat het insluiten van fonts niet toe (in tegenstelling tot PDF forms waarin fonts zijn ingesloten in het formulier). Zorg ervoor dat de HTML-versie van een formulier beschikbaar is in de CRX Repository (AEM Content Repository) van de AEM Forms-server en op de computer waarop Designer is AEM geïnstalleerd, zodat de-versie van het formulier naar behoren wordt weergegeven. Als de lettertypen niet beschikbaar zijn in de CRX-opslagruimte van uw AEM Forms-server of op de locatie waar AEM Designer is geïnstalleerd, wordt het formulier weergegeven met terugvallettertypen.
+   Antwoord: HTML5 Forms staat het insluiten van fonts niet toe (in tegenstelling tot PDF forms waarin fonts zijn ingesloten in het formulier). Zorg ervoor dat de HTML-versie van een formulier beschikbaar is in de CRX Repository (AEM Content Repository) van de AEM Forms-server en op het apparaat waarop Designer is geïnstalleerd, zodat de-versie van het formulier naar behoren wordt weergegeven. Wanneer de lettertypen niet beschikbaar zijn in de CRX-opslagplaats van uw AEM Forms-server of op de locatie waar AEM Designer is geïnstalleerd, wordt het formulier weergegeven met terugvallettertypen.
 
 1. Worden vAlign- en hAlign-kenmerken ondersteund in HTML-formulieren?
 
@@ -118,7 +118,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    Voor PDF forms beschikt Adobe Acrobat over een ingebouwde XTG-engine voor het maken van tussenliggende gegevensstructuren en -objecten. Acrobat houdt zich ook bezig met layout en scripts.
 
-   Voor HTML5-formulieren beschikken browsers niet over een ingebouwde XTG-engine om tussenliggende gegevensstructuren te maken, en hebben ze geen objecten van onbewerkte XDP-bytes. Voor HTML5-formulieren worden dus tussenstructuren gegenereerd op de server en naar de client verzonden. Op client gebruikt de op JavaScript gebaseerde script- en indelingsengine deze tussenliggende structuren.
+   Voor HTML5-formulieren beschikken browsers niet over een ingebouwde XTG-engine om tussenliggende gegevensstructuren te maken, en hebben ze geen objecten van onbewerkte XDP-bytes. Voor HTML5-formulieren worden dus tussenstructuren gegenereerd op de server en naar de client verzonden. Op client gebruikt de op JavaScript gebaseerde script- en indelingsengine deze tussenstructuren.
 
    De grootte van de tussenliggende structuur is afhankelijk van de grootte van de oorspronkelijke XDP en de gegevens die met de XDP zijn samengevoegd.
 
@@ -135,7 +135,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    * Geneste tabellen en subformulieren in een tabel worden niet ondersteund.
    * Kopteksten worden alleen ondersteund voor de bovenste of linkerkolom van de tabel. Kopteksten worden niet ondersteund voor elementen in de middelste tabel. U kunt kopteksten op veelvoudige rij en kolomkopballen toepassen worden gesteund op voorwaarde dat al dergelijke rijen en kolommen samen met de hoogste rij of uiterst linkse kolom van de lijst zijn.
-   * `Rowspan`en `colspan`vanuit een willekeurige locatie in de tabel wordt niet ondersteund.
+   * `Rowspan` en `colspan` van een willekeurige plaats binnen de lijst wordt niet gesteund.
 
    * U kunt geen instantie van rijen dynamisch toevoegen of verwijderen die elementen met rowspan waarde groter dan 1 bevatten.
 
@@ -147,15 +147,15 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Wanneer u de cursor op een veld plaatst, wordt knopinfo weergegeven. Hoe kan ik het uitschakelen?
 
-   Antwoord: Als u knopinfo wilt uitschakelen wanneer u de muisaanwijzer aanwijst, selecteert u Geen in het venster Toegankelijkheid van Designer.
+   Antwoord: Als u knopinfo wilt uitschakelen wanneer u de muisaanwijzer aanwijst, selecteert u geen knopinfo in het deelvenster Toegankelijkheid van de Designer.
 
 1. In Designer kan een gebruiker aangepaste weergave-eigenschappen van keuzerondjes en selectievakjes configureren. Wordt bij het weergeven van formulieren rekening gehouden met dergelijke aangepaste weergave-eigenschappen in HTML5-formulieren?
 
    Antwoord: HTML5-formulieren negeren de aangepaste weergave-eigenschappen van keuzerondjes en selectievakjes. De keuzerondjes en selectievakjes worden weergegeven volgens de specificaties van de onderliggende browser.
 
-1. Wanneer een HTML5-formulier wordt geopend in een ondersteunde browser, wordt de rand van de aangrenzende velden niet goed uitgelijnd of lijken subformulieren elkaar te overlappen. Als in Forms Designer een voorbeeld wordt weergegeven van hetzelfde HTML5-formulier, worden de velden en indeling niet verkeerd uitgelijnd weergegeven en worden de subformulieren op de juiste positie weergegeven. Hoe los je het probleem op?
+1. Wanneer een HTML5-formulier wordt geopend in een ondersteunde browser, wordt de rand van de aangrenzende velden niet goed uitgelijnd of lijken subformulieren elkaar te overlappen. Als in Forms Designer een voorbeeld wordt weergegeven van hetzelfde HTML5-formulier, worden de velden en indeling niet verkeerd uitgelijnd en worden subformulieren op de juiste positie weergegeven. Hoe los je het probleem op?
 
-   Antwoord: Wanneer een subformulier is ingesteld op Stroominhoud en het subformulier een verborgen randelement heeft, wordt de rand van de velden die ernaast worden geplaatst, niet correct uitgelijnd of worden subformulieren overlapt. Als u het probleem wilt verhelpen, kunt u de verborgen &lt;border> elementen van de overeenkomstige XDP. Het volgende wordt bijvoorbeeld &lt;border> element is gemarkeerd als opmerking:
+   Antwoord: Wanneer een subformulier is ingesteld op Stroominhoud en het subformulier een verborgen randelement heeft, wordt de rand van de velden die ernaast worden geplaatst, niet correct uitgelijnd of worden subformulieren overlapt. U kunt het probleem verhelpen door de verborgen &lt;border>-elementen uit de bijbehorende XDP te verwijderen of er opmerkingen aan toe te voegen. Het volgende &lt;border>-element is bijvoorbeeld gemarkeerd als een opmerking:
 
    ```xml
                <!--<border>
@@ -177,23 +177,23 @@ Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum 
 
 ### Scripts {#scripting}
 
-1. Zijn er beperkingen in de JavaScript-implementatie voor HTML Forms?
+1. Zijn er beperkingen in de implementatie van JavaScript voor HTML Forms?
 
    Antwoord:
 
-   * Er is beperkte ondersteuning voor het script xfa.connectionSet. Voor connectionSet wordt alleen aanroep van de webservice op de server ondersteund. Zie voor meer informatie [Scriptondersteuning](/help/forms/using/scripting-support.md).
+   * Er is beperkte ondersteuning voor het script xfa.connectionSet. Voor connectionSet wordt alleen aanroep van de webservice op de server ondersteund. Voor gedetailleerde informatie, zie [ Steun Scripting ](/help/forms/using/scripting-support.md).
    * $record en $data worden niet ondersteund in clientscripts. Als de scripts echter zijn geschreven in een formReady, layoutReady-blok, werken de scripts nog steeds omdat deze gebeurtenissen op de server worden uitgevoerd.
-   * Elementspecifieke scripts voor XFA tekenen, zoals het wijzigen van de tekst Tekenen (of de bijschrifttekst als er velden zijn), worden niet ondersteund.
+   * Elementspecifieke scripts van XFA Draw, zoals het wijzigen van de Draw-tekst (of bijschrifttekst als er velden zijn), worden niet ondersteund.
 
 1. Zijn er beperkingen in het gebruik van formCalc?
 
-   Antwoord: momenteel wordt alleen een subset van de FormCalc-scripts geïmplementeerd. Zie voor meer informatie [Scriptondersteuning](/help/forms/using/scripting-support.md).
+   Antwoord: momenteel wordt alleen een subset van de FormCalc-scripts geïmplementeerd. Voor gedetailleerde informatie, zie [ Steun Scripting ](/help/forms/using/scripting-support.md).
 
 1. Is er een aanbevolen naamgevingsconventie en zijn er gereserveerde trefwoorden die moeten worden vermeden?
 
    Antwoord:
-   * In AEM Forms Designer wordt aangeraden de naam van een object (zoals een subformulier of een tekstveld) niet te laten beginnen met een onderstrepingsteken (_). Als u het onderstrepingsteken aan het begin van de naam wilt gebruiken, voegt u een voorvoegsel toe na het onderstrepingsteken._&lt;prefix>&lt;objectname>.
-   * Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan [API&#39;s voor HTML5-formulieren](/help/forms/using/scripting-support.md).
+   * In AEM Forms Designer wordt aangeraden de naam van een object (zoals een subformulier of een tekstveld) niet met een onderstrepingsteken (_) te laten beginnen. Om onderstrepingsteken aan het begin van de naam te gebruiken, voeg een prefix na het onderstrepingsteken,_ &lt;prefix>&lt;objectname> toe.
+   * Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Voor douane APIs/functies, gebruik een naam die niet aan [ HTML5 vormen APIs ](/help/forms/using/scripting-support.md) identiek is.
 
 1. Biedt HTML5-formulieren ondersteuning voor zwevende velden?
 
@@ -203,9 +203,9 @@ Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum 
    >
    >De velden zijn standaard niet ingeschakeld voor zweven. Met Forms Designer kunt u de zwevende eigenschap van de velden instellen.
 
-   1. CRXde-lijst openen en naar de `/content/xfaforms/profiles/default` knooppunt.
-   1. Een eigenschap toevoegen `mfDataDependentFloatingField`van het type String en stel de waarde van de eigenschap in op `true`.
-   1. Klikken **Alles opslaan**. De zwevende velden worden nu ingeschakeld voor de HTML Forms met behulp van het bijgewerkte renderprofiel.
+   1. Open de CRXde-lijst en navigeer naar het knooppunt `/content/xfaforms/profiles/default` .
+   1. Voeg een eigenschap `mfDataDependentFloatingField` van het type String toe en stel de waarde van de eigenschap in op `true` .
+   1. Klik **sparen allen**. De zwevende velden worden nu ingeschakeld voor de HTML Forms met behulp van het bijgewerkte renderprofiel.
 
       >[!NOTE]
       >
@@ -219,4 +219,4 @@ Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum 
 
 1. Zijn er gereserveerde trefwoorden in HTML5-formulieren?
 
-   Antwoord: Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan [API&#39;s voor HTML5-formulieren](/help/forms/using/scripting-support.md). Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld: `_fpField1`
+   Antwoord: Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Voor douane APIs/functies, gebruik een naam die niet aan [ HTML5 vormen APIs ](/help/forms/using/scripting-support.md) identiek is. Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld: `_fpField1`

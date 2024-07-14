@@ -27,42 +27,42 @@ U kunt als volgt de gebruikersinterface van de AEM Forms-werkruimte lokaliseren 
 * U kunt samengevouwen categorieën, wachtrijen en processen lokaliseren.
 * Datumkiezer lokaliseren
 
-Voordat u de bovenstaande stappen uitvoert, moet u de volgende stappen uitvoeren: [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../forms/using/generic-steps-html-workspace-customization.md).
+Alvorens de bovengenoemde stappen uit te voeren, zorg ervoor dat u de stappen volgt die bij [ worden vermeld Algemene stappen voor de werkruimteaanpassing van AEM Forms ](../../forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
->Als u de taal van het aanmeldingsscherm van de AEM Forms-werkruimte wilt wijzigen, raadpleegt u [Een aanmeldingsscherm maken](../../forms/using/creating-new-login-screen.md).
+>Om de taal van het login scherm van de werkruimte van AEM Forms te veranderen, zie [ Creërend een login scherm ](../../forms/using/creating-new-login-screen.md).
 
 ## Tekst lokaliseren {#localizing-text}
 
-Voer de volgende stappen uit zodat u ondersteuning voor een taal kunt toevoegen *Nieuw* en de landcode van de browser *nw*.
+Voer de volgende stappen uit zodat kunt u steun voor een taal *Nieuw* en browser scènecode *nieuw* toevoegen.
 
 1. Meld u aan bij CRXDE Lite.
-De standaard-URL van CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Naar de locatie navigeren `apps/ws/locales` en maak een map `nw.`
-1. Het bestand kopiëren `translation.json`vanaf de locatie `/apps/ws/locales/en-US` naar locatie `/apps/ws/locales/nw` .
-1. Navigeren naar `/apps/ws/locales/nw` en open `translation.json` voor bewerken. Wijzig de landinstelling in het bestand translatie.json.
+De standaard-URL van CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.jsp` .
+1. Ga naar de locatie `apps/ws/locales` en maak een map `nw.`
+1. Kopieer het bestand `translation.json` van de locatie `/apps/ws/locales/en-US` naar de locatie `/apps/ws/locales/nw` .
+1. Navigeer naar `/apps/ws/locales/nw` en open `translation.json` voor bewerking. Wijzig de landinstelling in het bestand translatie.json.
 
    De volgende voorbeelden bevatten het bestand translatie.json voor Engelse en Franse landinstellingen van de AEM Forms-werkruimte.
 
-   ![transleren_json_in_en](assets/translation_json_in_en.png) ![transleren_json_in_fr](assets/translation_json_in_fr.png)
+   ](assets/translation_json_in_en.png) ![ translatie_json_in_fr ![ ](assets/translation_json_in_fr.png)
 
 ## Samengevouwen categorieën, wachtrijen en processen lokaliseren {#localizing-collapsed-categories-queues-and-processes}
 
-In de AEM Forms-werkruimte worden afbeeldingen gebruikt om koppen van categorieën, wachtrijen en processen weer te geven. U hebt een ontwikkelingspakket nodig om deze koppen te lokaliseren. Voor gedetailleerde informatie over het maken van een ontwikkelingspakket gaat u naar [AEM Forms-werkruimtecode samenstellen.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+In de AEM Forms-werkruimte worden afbeeldingen gebruikt om koppen van categorieën, wachtrijen en processen weer te geven. U hebt een ontwikkelingspakket nodig om deze koppen te lokaliseren. Voor gedetailleerde informatie over het creëren van een ontwikkelingspakket, zie [ de werkruimtecode van AEM Forms bouwen.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-In de volgende stappen wordt aangenomen dat de nieuwe gelokaliseerde afbeeldingsbestanden *Categorieën_nw.png*, *Wachtrij_nw.png*, en *Processes_nw.png*. De aanbevolen breedte van de afbeeldingen moet op 19 pixels worden ingesteld.
+In de volgende stappen, wordt verondersteld dat de nieuwe gelokaliseerde beelddossiers *Categories_nw.png*, *Queue_nw.png* zijn, en *Processes_nw.png*. De aanbevolen breedte van de afbeeldingen moet op 19 pixels worden ingesteld.
 
 >[!NOTE]
 >
 >U kunt als volgt de landinstellingscode van de browser voor de taal vinden. Open `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
-![samenvouwen_deelvensters_afbeelding](assets/collapsing_panels_image.png)
+![ doen ineenstorten_panels_image ](assets/collapsing_panels_image.png)
 
 Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
 
-1. Plaats de afbeeldingsbestanden met een WebDAV-client in het dialoogvenster */apps/ws/images* map.
-1. Navigeren naar */apps/ws/css*. Openen *newStyle.css* voor het bewerken en toevoegen van de volgende vermeldingen:
+1. Plaats de afbeeldingsbestanden met een WebDAV-client in de map */apps/ws/images* .
+1. Navigeer naar */apps/ws/css* . Open *newStyle.css* voor het uitgeven en voeg de volgende ingangen toe:
 
    ```css
    #categoryListBar .content.nw {
@@ -78,9 +78,9 @@ Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
    }
    ```
 
-1. Alle semantische wijzigingen uitvoeren die worden vermeld in het dialoogvenster [Aanpassing werkruimte](../../forms/using/introduction-customizing-html-workspace.md) artikel.
-1. Ga naar de *js/runtime/utility* en opent u de *usersessie.js* bestand voor bewerking.
-1. Zoek de code in het oorspronkelijke codeblok en voeg de voorwaarde toe *lang !== &#39;nw&#39;* op de instructie if:
+1. Voer alle semantische veranderingen uit die in het [ ](../../forms/using/introduction-customizing-html-workspace.md) artikel van de Aanpassing van Workspace worden vermeld.
+1. Navigeer aan *js/runtime/nut* omslag en open het {*dossier 2} usersessie.js voor het uitgeven.*
+1. Bepaal de plaats van de code die in het originele codeblok wordt vermeld en voeg de voorwaarde *lang toe!== &quot;nw&quot;* aan de if verklaring:
 
    ```javascript
    // Orignal code
@@ -108,18 +108,18 @@ Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
 
 ## Datumkiezer lokaliseren {#localizing-date-picker}
 
-U hebt een ontwikkelingspakket nodig om de *datepicker* API. Voor gedetailleerde informatie over het maken van een ontwikkelingspakket gaat u naar [AEM Forms-werkruimtecode samenstellen](introduction-customizing-html-workspace.md#building-html-workspace-code).
+U vereist een ontwikkelingspakket om *datepicker* API te lokaliseren. Voor gedetailleerde informatie over het creëren van een ontwikkelingspakket, zie [ de werkruimtecode van AEM Forms van de Bouw ](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-1. Download en extraheer de [jQuery-UI-pakket](https://jqueryui.com/download/all/), navigeer naar *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
+1. Download en haal het [ pakket jQuery UI ](https://jqueryui.com/download/all/), navigeer aan *&lt;extracted jquery UI package>* \ jquery-ui-1.10.2.zip \ jquery-ui-1.10.2 \ ui \ i18n.
 1. Kopieer het bestand jquery.ui.datepicker-nw.js voor code van de landinstelling nu naar apps/ws/js/libs/jqueryui en breng wijzigingen aan die specifiek zijn voor de landinstelling.
-1. Navigeren naar `apps/ws/js` en opent u de `jquery.ui.datepicker-nw.js` bestand voor bewerking.
-1. Maak in het bestand main.js een alias voor `jquery.ui.datepicker-nw.js.` De code waarmee een alias voor de `jquery.ui.datepicker-nw.js` bestand is:
+1. Navigeer naar `apps/ws/js` en open het `jquery.ui.datepicker-nw.js` -bestand voor bewerking.
+1. Maak in het bestand main.js een alias voor `jquery.ui.datepicker-nw.js.` De code waarmee een alias voor het bestand `jquery.ui.datepicker-nw.js` wordt gemaakt, is:
 
    ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Alias gebruiken `jqueryuidatepickernw` om de `jquery.ui.datepicker-nw.js` in alle bestanden die datepicker gebruiken. De datepicker wordt gebruikt in de volgende bestanden:
+1. Gebruik alias `jqueryuidatepickernw` om het `jquery.ui.datepicker-nw.js` -bestand op te nemen in alle bestanden die datepicker gebruiken. De datepicker wordt gebruikt in de volgende bestanden:
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`

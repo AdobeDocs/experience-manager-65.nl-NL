@@ -61,138 +61,138 @@ In de volgende secties worden de richtsnoeren van sectie 508 en WCAG aan de in d
 
 | Controlepunt | Beschrijving controlepunt | Vereiste Designer Best Practices voor LiveCycle | Notities |
 |------------|------------------------|-----------------------------------------------------------|-------|
-| [1,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent) | Geef een tekstequivalent op voor elk niet-tekstelement (bijvoorbeeld via &quot;alt&quot;, &quot;longdesc&quot; of in elementinhoud). Dit omvat: afbeeldingen, grafische voorstellingen van tekst (inclusief symbolen), gebieden met afbeeldingen met hyperlinks, animaties (bijvoorbeeld geanimeerde GIFFEN), applets en programmatische objecten, ASCII-illustraties, frames, scripts, afbeeldingen die worden gebruikt als lijstopsommingstekens, spacers, grafische knoppen, geluiden (al dan niet met gebruikersinteractie), zelfstandige audiobestanden, audiotracks van video en video. | <ul><li>2.4 Verstrek tekstequivalenten voor beelden</li> <li>2.12 Ervoor zorgen dat alle multimedia-inhoud toegankelijk is</li> | |
-| [1,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-redundant-server-links) | Verstrek overtollige tekstverbindingen voor elk actief gebied van een server-kant beeldkaart. | Niet van toepassing | |
-| [1,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions) | Totdat gebruikersagenten automatisch het tekstequivalent van een visueel spoor kunnen lezen, verstrek een auditieve beschrijving van de belangrijke informatie van het visuele spoor van een presentatie van verschillende media. | 2.12 Ervoor zorgen dat alle multimedia-inhoud toegankelijk is | |
-| [1,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-synchronize-equivalents) | Voor elke op tijd gebaseerde multimediapresentatie (bijvoorbeeld een film of animatie) moet u equivalente alternatieven (bijvoorbeeld bijschriften of auditieve beschrijvingen van de visuele track) synchroniseren met de presentatie. | 2.12 Ervoor zorgen dat alle multimedia-inhoud toegankelijk is | |
-| [2,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-convey) | Zorg ervoor dat alle informatie die met kleur wordt overgebracht ook zonder kleur, bijvoorbeeld van context of prijsverhoging beschikbaar is. | 2.8 Kleur verantwoord gebruiken | |
-| [4,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-changes) | Wijzigingen in de natuurlijke taal van de tekst van een document en eventuele tekstequivalenten (bijvoorbeeld bijschriften) duidelijk identificeren. | 2.13 Wijzigingen in de taal identificeren | |
-| [5,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers) | Voor gegevenslijsten, identificeer rij en kolomkopballen. | 2.9 Cellen met koppen voor tabellen opgeven | |
-| [5,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure) | Voor gegevenslijsten die twee of meer logische niveaus van rij of kolomkopballen hebben, gebruik prijsverhoging om gegevenscellen en kopbalcellen te associëren. | 2.9 Cellen met koppen voor tabellen opgeven | |
-| [6,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-order-style-sheets) | Documenten ordenen zodat ze zonder stijlpagina&#39;s kunnen worden gelezen. Wanneer een HTML-document bijvoorbeeld wordt gerenderd zonder gekoppelde stijlpagina&#39;s, moet het nog steeds mogelijk zijn het document te lezen. | Niet van toepassing | |
-| [6,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-dynamic-source) | Zorg ervoor dat equivalenten voor dynamische inhoud worden bijgewerkt wanneer de dynamische inhoud verandert. | 2.11 Scripts niet verstoren | |
-| [6,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts) | Zorg ervoor dat pagina&#39;s bruikbaar zijn wanneer scripts, applets of andere programmatische objecten worden uitgeschakeld of niet worden ondersteund. Als dit niet mogelijk is, geef gelijkwaardige informatie op een andere toegankelijke pagina. | 2.11 Scripts niet verstoren | |
-| [7,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker) | Totdat de gebruikersagenten gebruikers toestaan om het flikkeren te controleren, vermijd veroorzakend het scherm om te flikkeren. | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| [9,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps) | Maak afbeeldingen met hyperlinks aan de clientzijde in plaats van afbeeldingen met hyperlinks aan de serverzijde, behalve waar de gebieden niet met een beschikbare geometrische vorm kunnen worden gedefinieerd. | Niet van toepassing | |
-| [11,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-alt-pages) | Als u na de beste inspanningen geen toegankelijke pagina kunt maken, een koppeling naar een alternatieve pagina met W3C-technologieën kunt opgeven, toegankelijk is, gelijkwaardige informatie (of functionaliteit) heeft en zo vaak als de ontoegankelijke (originele) pagina wordt bijgewerkt. | Niet van toepassing | |
-| [12,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles) | Geef elk frame een titel om de identificatie en navigatie van frames te vergemakkelijken. | Niet van toepassing | |
-| [14,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-simple-and-straightforward) | Gebruik de helderste en eenvoudigste taal die geschikt is voor de inhoud van een site. | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| [ 1.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent) | Geef een tekstequivalent op voor elk niet-tekstelement (bijvoorbeeld via &quot;alt&quot;, &quot;longdesc&quot; of in elementinhoud). Dit omvat: afbeeldingen, grafische voorstellingen van tekst (inclusief symbolen), gebieden met afbeeldingen met hyperlinks, animaties (bijvoorbeeld geanimeerde GIFFEN), applets en programmatische objecten, ASCII-illustraties, frames, scripts, afbeeldingen die worden gebruikt als lijstopsommingstekens, spacers, grafische knoppen, geluiden (al dan niet met gebruikersinteractie), zelfstandige audiobestanden, audiotracks van video en video. | <ul><li>2.4 Verstrek tekstequivalenten voor beelden</li> <li>2.12 Ervoor zorgen dat alle multimedia-inhoud toegankelijk is</li> | |
+| [ 1.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-redundant-server-links) | Verstrek overtollige tekstverbindingen voor elk actief gebied van een server-kant beeldkaart. | Niet van toepassing | |
+| [ 1.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions) | Totdat gebruikersagenten automatisch het tekstequivalent van een visueel spoor kunnen lezen, verstrek een auditieve beschrijving van de belangrijke informatie van het visuele spoor van een presentatie van verschillende media. | 2.12 Ervoor zorgen dat alle multimedia-inhoud toegankelijk is | |
+| [ 1.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-synchronize-equivalents) | Voor elke op tijd gebaseerde multimediapresentatie (bijvoorbeeld een film of animatie) moet u equivalente alternatieven (bijvoorbeeld bijschriften of auditieve beschrijvingen van de visuele track) synchroniseren met de presentatie. | 2.12 Ervoor zorgen dat alle multimedia-inhoud toegankelijk is | |
+| [ 2.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-convey) | Zorg ervoor dat alle informatie die met kleur wordt overgebracht ook zonder kleur, bijvoorbeeld van context of prijsverhoging beschikbaar is. | 2.8 Kleur verantwoord gebruiken | |
+| [ 4.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-changes) | Wijzigingen in de natuurlijke taal van de tekst van een document en eventuele tekstequivalenten (bijvoorbeeld bijschriften) duidelijk identificeren. | 2.13 Wijzigingen in de taal identificeren | |
+| [ 5.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers) | Voor gegevenslijsten, identificeer rij en kolomkopballen. | 2.9 Cellen met koppen voor tabellen opgeven | |
+| [ 5.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure) | Voor gegevenslijsten die twee of meer logische niveaus van rij of kolomkopballen hebben, gebruik prijsverhoging om gegevenscellen en kopbalcellen te associëren. | 2.9 Cellen met koppen voor tabellen opgeven | |
+| [ 6.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-order-style-sheets) | Documenten ordenen zodat ze zonder stijlpagina&#39;s kunnen worden gelezen. Wanneer een HTML-document bijvoorbeeld wordt gerenderd zonder gekoppelde stijlpagina&#39;s, moet het nog steeds mogelijk zijn het document te lezen. | Niet van toepassing | |
+| [ 6.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-dynamic-source) | Zorg ervoor dat equivalenten voor dynamische inhoud worden bijgewerkt wanneer de dynamische inhoud verandert. | 2.11 Scripts niet verstoren | |
+| [ 6.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts) | Zorg ervoor dat pagina&#39;s bruikbaar zijn wanneer scripts, applets of andere programmatische objecten worden uitgeschakeld of niet worden ondersteund. Als dit niet mogelijk is, geef gelijkwaardige informatie op een andere toegankelijke pagina. | 2.11 Scripts niet verstoren | |
+| [ 7.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker) | Totdat de gebruikersagenten gebruikers toestaan om het flikkeren te controleren, vermijd veroorzakend het scherm om te flikkeren. | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| [ 9.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps) | Maak afbeeldingen met hyperlinks aan de clientzijde in plaats van afbeeldingen met hyperlinks aan de serverzijde, behalve waar de gebieden niet met een beschikbare geometrische vorm kunnen worden gedefinieerd. | Niet van toepassing | |
+| [ 11.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-alt-pages) | Als u na de beste inspanningen geen toegankelijke pagina kunt maken, een koppeling naar een alternatieve pagina met W3C-technologieën kunt opgeven, toegankelijk is, gelijkwaardige informatie (of functionaliteit) heeft en zo vaak als de ontoegankelijke (originele) pagina wordt bijgewerkt. | Niet van toepassing | |
+| [ 12.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles) | Geef elk frame een titel om de identificatie en navigatie van frames te vergemakkelijken. | Niet van toepassing | |
+| [ 14.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-simple-and-straightforward) | Gebruik de helderste en eenvoudigste taal die geschikt is voor de inhoud van een site. | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
 
 ### WCAG 1.0 Prioriteit 2 Controlepunten
 
 | Checkpoint voor prioriteit 2 | Beschrijving controlepunt | Aanbevolen best practices voor LiveCycle voor naleving | Notities |
 |------------|------------------------|-------------------------------------------------|-------|
-| [2,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast) | Zorg ervoor dat de combinaties van voor- en achtergrondkleur voldoende contrast bieden bij weergave door iemand met een kleurdeficit of bij weergave op een zwart-witscherm. [Prioriteit 2 voor afbeeldingen, Prioriteit 3 voor tekst]. | 2.8 Kleur verantwoord gebruiken | |
-| [3,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-markup) | Als er een geschikte markeringstaal bestaat, gebruikt u markering in plaats van afbeeldingen om informatie over te brengen. | <ul><li>2.1 Formulieren eenvoudig en gebruiksvriendelijk houden</li><li> 2.1.1 Verplaats, knipperende of knipperende inhoud niet</li> <li>2.2 Formuliereigenschappen configureren om toegankelijkheidsinformatie te genereren. Gebruik altijd de werkelijke tekst in plaats van afbeeldingen van tekst.</li> | |
-| [3,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar) | Maak documenten die valideren naar gepubliceerde formele grammen. | | PDF forms moeten overeenkomen met de gepubliceerde PDF-specificatie om te kunnen worden weergegeven in Adobe Reader. |
-| [3,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets) | Stijlpagina&#39;s gebruiken om de indeling en presentatie te bepalen. | Niet van toepassing | |
-| [3,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units) | Gebruik relatieve in plaats van absolute eenheden in kenmerkwaarden voor de opmaaktaal en eigenschapwaarden voor stijlbladen. | Niet van toepassing | |
-| [3,5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings) | Gebruik koptekstelementen om de documentstructuur over te brengen en deze te gebruiken volgens de specificaties. | 2.10 Een navigeerbare formulierstructuur bieden | |
-| [3,6](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-list-structure) | Lijsten en lijstitems correct markeren. | 2.10.3 het Markeren van omhoog maakt een lijst-gebaseerde inhoud als lijsten gebruikend de Lijsten en de rollen van het Punt van de Lijst. | |
-| [3,7](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-quotes) | Aanhalingstekens markeren. Gebruik geen aanhalingstekens voor het opmaken van effecten zoals inspringing. | Niet van toepassing | |
-| [5,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout) | Gebruik geen tabellen voor de indeling, tenzij de tabel zinvol is als de tabel wordt uitgelijnd. Anders, als de lijst geen nut heeft, verstrek een alternatief gelijkwaardig (die een linearzed versie kan zijn). | Geen specifieke LiveCycles | Er is geen reden om tabellen te gebruiken voor de indeling van LiveCycles. Gebruik in plaats daarvan het palet Indeling om de formuliervelden in een rasterpatroon te plaatsen. Gebruik een tabel alleen bij gebruik van tabelspecifieke functies, zoals tabelkoppen. |
-| [5,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout) | Als een tabel wordt gebruikt voor de indeling, gebruikt u geen structuurmarkeringen voor de visuele opmaak. | Geen specifieke LiveCycles | |
-| [6,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts) | Voor scripts en applets moet u ervoor zorgen dat gebeurtenishandlers apparaatonafhankelijk zijn. | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| [6,5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page) | Zorg ervoor dat dynamische inhoud toegankelijk is of een alternatieve presentatie of pagina biedt. | 2.11 Scripts niet verstoren | |
-| [7,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-blinking) | Totdat de gebruikersagenten gebruikers toestaan om het knipperen te controleren, vermijd veroorzakend dat de inhoud knippert (d.w.z., presentatie aan een regelmatige snelheid veranderen, zoals het aanzetten en weg). | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| [7,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | Vermijd verplaatsing op pagina&#39;s totdat gebruikers bewegende inhoud kunnen stilzetten door tussenkomst van gebruikersagenten. | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| [7,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | Totdat gebruikersagenten de capaciteit verstrekken om te stoppen verfrist zich, creeer geen periodiek auto-verfrist pagina&#39;s. | Niet van toepassing | |
-| [7,5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward) | Totdat gebruikersagenten de capaciteit verstrekken om auto-omleiding tegen te houden, gebruik geen prijsverhoging om pagina&#39;s automatisch om te leiden. In plaats daarvan configureert u de server om omleidingen uit te voeren. | Niet van toepassing | |
-| [8,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | Programmaelementen zoals scripts en applets rechtstreeks toegankelijk maken of compatibel maken met ondersteunende hulpmiddelen [Prioriteit 1 als functionaliteit belangrijk is en niet elders wordt gepresenteerd, anders Prioriteit 2.] | 2.11 Scripts niet verstoren | |
-| [9,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable) | Zorg ervoor dat elk element met een eigen interface op een apparaatonafhankelijke manier kan worden gebruikt. | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| [9,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events) | Voor manuscripten, specificeer logische gebeurtenismanagers eerder dan apparaat-afhankelijke gebeurtenismanagers. | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| [10,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups) | Totdat gebruikersagenten gebruikers toestaan om gekaapte vensters uit te zetten, veroorzaken geen pop-ups of andere vensters om te verschijnen en veranderen niet het huidige venster zonder de gebruiker op de hoogte te brengen. | 2.11 Scripts niet verstoren | |
-| [10,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-unassociated-labels) | Totdat gebruikersagenten expliciete verenigingen tussen etiketten en vormcontroles steunen, voor alle vormcontroles met impliciet bijbehorende etiketten, zorg ervoor dat het etiket behoorlijk wordt geplaatst. | 2.5 Geef juiste labels voor formulierbesturingselementen | |
-| [11,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-latest-w3c-specs) | Gebruik W3C-technologieën wanneer deze beschikbaar en geschikt zijn voor een taak en gebruik de nieuwste versies wanneer deze worden ondersteund. | Niet van toepassing | |
-| [11,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-deprecated) | Vermijd vervangen functies van W3C-technologieën. | Niet van toepassing | |
-| [12,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-longdesc) | Beschrijf het doel van kaders en hoe de kaders op elkaar betrekking hebben als het niet door kadertitels alleen duidelijk is. | Niet van toepassing | |
-| [12,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-group-information) | Verdeel grote blokken van informatie in beter te beheren groepen waar natuurlijk en aangewezen. | 2.10 Een navigeerbare formulierstructuur bieden | |
-| [12,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-associate-labels) | Koppel labels expliciet aan hun besturingselementen. | 2.5 Geef juiste labels voor formulierbesturingselementen | |
-| [13,1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links) | Identificeer duidelijk het doel van elke verbinding. | 2.5 Geef juiste labels voor formulierbesturingselementen 2.5.6 Koppelingstekst | |
-| [13,2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata) | Geef metagegevens op om semantische informatie toe te voegen aan pagina&#39;s en sites. | Niet van toepassing | |
-| [13,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-site-description) | Geef informatie over de algemene lay-out van een site (bijvoorbeeld een site-overzicht of een inhoudsopgave). | 2.10 Een navigeerbare formulierstructuur bieden | |
-| [13,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism) | Gebruik op consistente wijze navigatiemechanismen. | 2.10 Een navigeerbare formulierstructuur bieden | Basispagina&#39;s gebruiken om consistente navigatie-inhoud te maken. |
+| [ 2.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast) | Zorg ervoor dat de combinaties van voor- en achtergrondkleur voldoende contrast bieden bij weergave door iemand met een kleurdeficit of bij weergave op een zwart-witscherm. [ Prioriteit 2 voor beelden, Prioriteit 3 voor tekst ]. | 2.8 Kleur verantwoord gebruiken | |
+| [ 3.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-markup) | Als er een geschikte markeringstaal bestaat, gebruikt u markering in plaats van afbeeldingen om informatie over te brengen. | <ul><li>2.1 Formulieren eenvoudig en gebruiksvriendelijk houden</li><li> 2.1.1 Verplaats, knipperende of knipperende inhoud niet</li> <li>2.2 Formuliereigenschappen configureren om toegankelijkheidsinformatie te genereren. Gebruik altijd de werkelijke tekst in plaats van afbeeldingen van tekst.</li> | |
+| [ 3.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar) | Maak documenten die valideren naar gepubliceerde formele grammen. | | PDF forms moeten overeenkomen met de gepubliceerde PDF-specificatie om te kunnen worden weergegeven in Adobe Reader. |
+| [ 3.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets) | Stijlpagina&#39;s gebruiken om de indeling en presentatie te bepalen. | Niet van toepassing | |
+| [ 3.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-relative-units) | Gebruik relatieve in plaats van absolute eenheden in kenmerkwaarden voor de opmaaktaal en eigenschapwaarden voor stijlbladen. | Niet van toepassing | |
+| [ 3.5 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings) | Gebruik koptekstelementen om de documentstructuur over te brengen en deze te gebruiken volgens de specificaties. | 2.10 Een navigeerbare formulierstructuur bieden | |
+| [ 3.6 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-list-structure) | Lijsten en lijstitems correct markeren. | 2.10.3 het Markeren van omhoog maakt een lijst-gebaseerde inhoud als lijsten gebruikend de Lijsten en de rollen van het Punt van de Lijst. | |
+| [ 3.7 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-quotes) | Aanhalingstekens markeren. Gebruik geen aanhalingstekens voor het opmaken van effecten zoals inspringing. | Niet van toepassing | |
+| [ 5.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout) | Gebruik geen tabellen voor de indeling, tenzij de tabel zinvol is als de tabel wordt uitgelijnd. Anders, als de lijst geen nut heeft, verstrek een alternatief gelijkwaardig (die een linearzed versie kan zijn). | Geen specifieke LiveCycles | Er is geen reden om tabellen te gebruiken voor de indeling van LiveCycles. Gebruik in plaats daarvan het palet Indeling om de formuliervelden in een rasterpatroon te plaatsen. Gebruik een tabel alleen bij gebruik van tabelspecifieke functies, zoals tabelkoppen. |
+| [ 5.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout) | Als een tabel wordt gebruikt voor de indeling, gebruikt u geen structuurmarkeringen voor de visuele opmaak. | Geen specifieke LiveCycles | |
+| [ 6.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts) | Voor scripts en applets moet u ervoor zorgen dat gebeurtenishandlers apparaatonafhankelijk zijn. | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
+| [ 6.5 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page) | Zorg ervoor dat dynamische inhoud toegankelijk is of een alternatieve presentatie of pagina biedt. | 2.11 Scripts niet verstoren | |
+| [ 7.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-blinking) | Totdat de gebruikersagenten gebruikers toestaan om het knipperen te controleren, vermijd veroorzakend dat de inhoud knippert (d.w.z., presentatie aan een regelmatige snelheid veranderen, zoals het aanzetten en weg). | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| [ 7.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | Vermijd verplaatsing op pagina&#39;s totdat gebruikers bewegende inhoud kunnen stilzetten door tussenkomst van gebruikersagenten. | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| [ 7.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | Totdat gebruikersagenten de capaciteit verstrekken om te stoppen verfrist zich, creeer geen periodiek auto-verfrist pagina&#39;s. | Niet van toepassing | |
+| [ 7.5 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward) | Totdat gebruikersagenten de capaciteit verstrekken om auto-omleiding tegen te houden, gebruik geen prijsverhoging om pagina&#39;s automatisch om te leiden. In plaats daarvan configureert u de server om omleidingen uit te voeren. | Niet van toepassing | |
+| [ 8.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | Maak programmatic elementen zoals manuscripten en applets direct toegankelijk of compatibel met ondersteunende technologieën [ Prioriteit 1 als de functionaliteit belangrijk is en niet elders, anders Prioriteit 2 wordt voorgesteld.] | 2.11 Scripts niet verstoren | |
+| [ 9.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable) | Zorg ervoor dat elk element met een eigen interface op een apparaatonafhankelijke manier kan worden gebruikt. | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
+| [ 9.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events) | Voor manuscripten, specificeer logische gebeurtenismanagers eerder dan apparaat-afhankelijke gebeurtenismanagers. | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
+| [ 10.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups) | Totdat gebruikersagenten gebruikers toestaan om gekaapte vensters uit te zetten, veroorzaken geen pop-ups of andere vensters om te verschijnen en veranderen niet het huidige venster zonder de gebruiker op de hoogte te brengen. | 2.11 Scripts niet verstoren | |
+| [ 10.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-unassociated-labels) | Totdat gebruikersagenten expliciete verenigingen tussen etiketten en vormcontroles steunen, voor alle vormcontroles met impliciet bijbehorende etiketten, zorg ervoor dat het etiket behoorlijk wordt geplaatst. | 2.5 Geef juiste labels voor formulierbesturingselementen | |
+| [ 11.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-latest-w3c-specs) | Gebruik W3C-technologieën wanneer deze beschikbaar en geschikt zijn voor een taak en gebruik de nieuwste versies wanneer deze worden ondersteund. | Niet van toepassing | |
+| [ 11.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-deprecated) | Vermijd vervangen functies van W3C-technologieën. | Niet van toepassing | |
+| [ 12.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-longdesc) | Beschrijf het doel van kaders en hoe de kaders op elkaar betrekking hebben als het niet door kadertitels alleen duidelijk is. | Niet van toepassing | |
+| [ 12.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-group-information) | Verdeel grote blokken van informatie in beter te beheren groepen waar natuurlijk en aangewezen. | 2.10 Een navigeerbare formulierstructuur bieden | |
+| [ 12.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-associate-labels) | Koppel labels expliciet aan hun besturingselementen. | 2.5 Geef juiste labels voor formulierbesturingselementen | |
+| [ 13.1 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links) | Identificeer duidelijk het doel van elke verbinding. | 2.5 Geef juiste labels voor formulierbesturingselementen 2.5.6 Koppelingstekst | |
+| [ 13.2 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata) | Geef metagegevens op om semantische informatie toe te voegen aan pagina&#39;s en sites. | Niet van toepassing | |
+| [ 13.3 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-site-description) | Geef informatie over de algemene lay-out van een site (bijvoorbeeld een site-overzicht of een inhoudsopgave). | 2.10 Een navigeerbare formulierstructuur bieden | |
+| [ 13.4 ](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism) | Gebruik op consistente wijze navigatiemechanismen. | 2.10 Een navigeerbare formulierstructuur bieden | Basispagina&#39;s gebruiken om consistente navigatie-inhoud te maken. |
 
 ### WCAG 2.0 Succescriteria
 
 | Prioriteit 1 G 2 Controlepunten | Aanbevolen best practices voor LiveCycle voor naleving | Notities |
 | --- | --- | --- |
-| 1,1 [Alternatieven voor tekst](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html) | | |
-| 1.1. [Niet-tekstuele inhoud](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html) | 2.4 Verstrek tekstequivalenten voor beelden | |
+| 1.1 [ Alternatieven van de Tekst ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html) | | |
+| 1.1.1 [ Niet-tekstuele Inhoud ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html) | 2.4 Verstrek tekstequivalenten voor beelden | |
 | | 2.5 Geef juiste labels voor formulierbesturingselementen | |
-| 1,2 [Op tijd gebaseerde media](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html) | | |
-| 1. [Alleen audio en alleen video (vooraf opgenomen)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2. [Bijschriften (vooraf opgenomen)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.3 [Audiobeschrijving of Media-alternatief (vooraf opgenomen)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.4. [Bijschriften (live)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.5. [Audiobeschrijving (vooraf opgenomen)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.6. [Taal ondertekenen (vooraf opgenomen)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.7. [Uitgebreide audiobeschrijving (vooraf opgenomen)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.8. [Media-alternatief (vooraf opgenomen)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.9. [Alleen audio (Live)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1,3 [Aanpasbaar](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html) | | |
-| 1. [Informatie en relaties](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html) | 2.9 Cellen met koppen voor tabellen opgeven | |
-| 1.3.2. [Betekenisvolle reeks](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 1.2 [ op tijd-gebaseerde Media ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html) | | |
+| 1.2.1 [ audio-slechts en video-slechts (Vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.2 [ (Vooraf opgenomen) Bijschriften ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.3 [ AudioBeschrijving of Alternatief van Media (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.4 [ Bijschriften (Levend) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.5 [ AudioBeschrijving (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.6 [ Taal van het Teken (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.7 [ Uitgebreide AudioBeschrijving (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.8 [ Alternatieve Media (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.9 [ audio-slechts (Levend) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.3 [ Aanpasbaar ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html) | | |
+| 1.3.1 [ Info en Verhoudingen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html) | 2.9 Cellen met koppen voor tabellen opgeven | |
+| 1.3.2 [ Betekenisvolle Opeenvolging ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
 | | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 1.3.3. [Sensorische kenmerken](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1,4 [Duidelijk](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html) | | |
-| 1.4.1. [Gebruik van kleur](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1.4.2. [Audiobesturing](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html) | Geen specifieke LiveCycles | |
-| 1.4.3. [Contrast (minimaal)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1.4.4. [Formaat tekst wijzigen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html) | Geen specifieke LiveCycles | |
-| 1.4.5. [Afbeeldingen van tekst](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html) | Geen specifieke LiveCycles | |
-| 1.4.6. [Contrast (uitgebreid)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1.4.7. [Lage of geen achtergrondaudio](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html) | Geen specifieke LiveCycles | |
-| 1.4.9. [Afbeeldingen van tekst (geen uitzondering)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | Geen specifieke LiveCycles | |
-| 2,1 [Toegankelijk toetsenbord](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html) | | |
-| 2.1.1. [Toetsenbord](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 1.3.3 [ Sensorische Kenmerken ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4 [ Distinguished ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html) | | |
+| 1.4.1 [ Gebruik van Kleur ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4.2 [ AudioControle ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html) | Geen specifieke LiveCycles | |
+| 1.4.3 [ Contrast (Minimum) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4.4 [ Resize tekst ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html) | Geen specifieke LiveCycles | |
+| 1.4.5 [ Beelden van Tekst ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html) | Geen specifieke LiveCycles | |
+| 1.4.6 [ Contrast (Verbeterd) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4.7 [ Laag of Geen Achtergrond Audio ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html) | Geen specifieke LiveCycles | |
+| 1.4.9 [ Beelden van Tekst (Geen Uitzondering) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | Geen specifieke LiveCycles | |
+| 2.1 [ Toegankelijk Toetsenbord ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html) | | |
+| 2.1.1 [ Toetsenbord ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
 | | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| 2.1.2. [Geen toetsenbordovervulling](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html) | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| 2.1.3. [Toetsenbord (geen uitzondering)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 2.1.2 [ Geen Overvul van het Toetsenbord ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html) | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
+| 2.1.3 [ Keyboard (Geen Uitzondering) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
 | | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| 2,2 [Voldoende tijd](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html) | | |
-| 2.2.1. [Aanpasbare timing](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html) | Geen specifieke LiveCycles | |
-| 2.2.2 [Pauze, Stoppen, Verbergen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| 2.2.3. [Geen timing](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | Geen specifieke LiveCycles | |
-| 2.2.4. [Onderbrekingen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | Geen specifieke LiveCycles | |
-| 2.2.5. [Opnieuw verifiëren](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | Geen specifieke LiveCycles | |
-| 2,3 [Convulsies] | | |
-| 2.3.1. [Drie Flash of onder de drempelwaarde](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| 2.3.2. [Drie Flash](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| 2,4 [Navigeerbaar](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
-| 2.4.1. [Blokken omzeilen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 2.4.2. [Getitelde pagina](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | Geen specifieke LiveCycles | |
-| 2.4.3. [Focusvolgorde](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
-| 2.4.4. [Koppelingsdoel (in context)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | Geen specifieke LiveCycles | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
-| 2.4.5. [Meerdere manieren](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 2.4.6. [Koppen en labels](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5 Geef juiste labels voor formulierbesturingselementen</li><li>2.10 Een navigeerbare formulierstructuur bieden</li> | |
-| 2.4.7. [Zichtbare focus](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | Geen specifieke LiveCycles | De standaardfocus in LiveCycles formulieren is zichtbaar. |
-| 2.4.8. [Locatie](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | Geen specifieke LiveCycles | Niet van toepassing: voor formulieren van LiveCycles zijn geen navigatiesystemen vereist. |
-| 2.4.9. [Koppelingsdoel (alleen koppeling)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | Geen specifieke LiveCycles | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
-| 2.4.10 [Sectiekoppen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 3,1 [Leesbaar](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html) | | |
-| 3.1.1 [Taal van pagina](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
-| 3.1.2. [Taal van onderdelen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
-| 3.1.3 [Ongebruikelijke woorden](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | Geen specifieke LiveCycles | |
-| 3.1.4. [Afkortingen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) | Geen specifieke LiveCycles | |
-| 3.1.5. [Leesniveau](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | Geen specifieke LiveCycles | |
-| 3.1.6. [Uitspraak](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html) | Geen specifieke LiveCycles | |
-| 3,2 [Voorspelbaar](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html) | | |
-| 3.2.1. [Veld activeren](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11 Scripts niet verstoren | |
-| 3.2.2. [Bij invoer](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11 Scripts niet verstoren | |
-| 3.2.3 [Consistente navigatie](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 3.2.4. [Consistente identificatie](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3 Kies de juiste besturingselementen</li><li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |
-| 3.2.5. [Wijzigen op aanvraag](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11 Scripts niet verstoren | |
-| 3,3 [Invoerassistentie](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html) | | |
-| 3.3.1. [Foutidentificatie](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html) |  | LiveCycle Designer biedt gereedschappen om formuliervelden naar wens te markeren en validatie van formulierinvoer uit te voeren. |
-| 3.3.2. [Labels of instructies](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) | 2.5 Geef juiste labels voor formulierbesturingselementen | |
-| 3.3.3. [Foutsuggestie](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html) |  | LiveCycle Designer biedt gereedschappen om formuliervelden naar wens te markeren en validatie van formulierinvoer uit te voeren. |
-| 3.3.4. [Foutpreventie (wettelijk, financieel, gegevens)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html) | Geen specifieke LiveCycles | |
-| 3.3.5. [Help](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html) | Geen specifieke LiveCycles | |
-| 3.3.6. [Foutpreventie (alle)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | Geen specifieke LiveCycles | |
-| 4,1 [Compatibel](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
-| 4.1.1. [Parseren](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | Geen specifieke LiveCycles | |
-| 4.1.2. [Naam, Rol, Waarde](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3 Kies de juiste besturingselementen</li> <li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |
+| 2.2 [ genoeg Tijd ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html) | | |
+| 2.2.1 [ Aanpasbare timing ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html) | Geen specifieke LiveCycles | |
+| 2.2.2 [ Pauze, Einde, Verbergen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| 2.2.3 [ Geen timing ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | Geen specifieke LiveCycles | |
+| 2.2.4 [ Onderbrekingen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | Geen specifieke LiveCycles | |
+| 2.2.5 [ opnieuw voor authentiek makend ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | Geen specifieke LiveCycles | |
+| 2.3 [ Convulsies ] | | |
+| 2.3.1 [ Drie Flash of onder Drempel ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| 2.3.2 [ Drie Flash ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| 2.4 [ Navigable ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
+| 2.4.1 [ Blokken van de Bypass ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 2.4.2 [ Getitelde Pagina ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | Geen specifieke LiveCycles | |
+| 2.4.3 [ Orde van de Nadruk ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 2.4.4 [ Doel van de Verbinding (in context) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | Geen specifieke LiveCycles | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
+| 2.4.5 [ Veelvoudige Manieren ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 2.4.6 [ Koppen en Etiketten ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5 Geef juiste labels voor formulierbesturingselementen</li><li>2.10 Een navigeerbare formulierstructuur bieden</li> | |
+| 2.4.7 [ Zichtbare Nadruk ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | Geen specifieke LiveCycles | De standaardfocus in LiveCycles formulieren is zichtbaar. |
+| 2.4.8 [ Plaats ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | Geen specifieke LiveCycles | Niet van toepassing: voor formulieren van LiveCycles zijn geen navigatiesystemen vereist. |
+| 2.4.9 [ Doel van de Verbinding (Verbinding slechts) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | Geen specifieke LiveCycles | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
+| 2.4.10 [ Koppen van de Sectie ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 3.1 [ Leesbaar ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html) | | |
+| 3.1.1 [ Taal van Pagina ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
+| 3.1.2 [ Taal van Delen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
+| 3.1.3 [ Ongebruikelijke Woorden ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | Geen specifieke LiveCycles | |
+| 3.1.4 [ Afkortingen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) | Geen specifieke LiveCycles | |
+| 3.1.5 [ Leesniveau ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | Geen specifieke LiveCycles | |
+| 3.1.6 [ Uitspraak ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html) | Geen specifieke LiveCycles | |
+| 3.2 [ voorspelbaar ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html) | | |
+| 3.2.1 [ op nadruk ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11 Scripts niet verstoren | |
+| 3.2.2 [ op input ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11 Scripts niet verstoren | |
+| 3.2.3 [ Consistente Navigatie ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 3.2.4 [ Consistente Identificatie ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3 Kies de juiste besturingselementen</li><li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |
+| 3.2.5 [ Verandering op Verzoek ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11 Scripts niet verstoren | |
+| 3.3 [ Hulp van de Input ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html) | | |
+| 3.3.1 [ Identificatie van de Fout ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html) |  | LiveCycle Designer biedt gereedschappen om formuliervelden naar wens te markeren en validatie van formulierinvoer uit te voeren. |
+| 3.3.2 [ Etiketten of Instructies ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) | 2.5 Geef juiste labels voor formulierbesturingselementen | |
+| 3.3.3 [ Suggestie van de Fout ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html) |  | LiveCycle Designer biedt gereedschappen om formuliervelden naar wens te markeren en validatie van formulierinvoer uit te voeren. |
+| 3.3.4 [ Preventie van de Fout (Juridisch, Financieel, Gegevens) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html) | Geen specifieke LiveCycles | |
+| 3.3.5 [ Hulp ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html) | Geen specifieke LiveCycles | |
+| 3.3.6 [ Preventie van de Fout (allen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | Geen specifieke LiveCycles | |
+| 4.1 [ Compatibel ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
+| 4.1.1 [ het ontleden ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | Geen specifieke LiveCycles | |
+| 4.1.2 [ Naam, Rol, Waarde ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3 Kies de juiste besturingselementen</li> <li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |
 
 
 

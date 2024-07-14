@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Informatie uit gebruikersgegevens toevoegen aan metagegevens voor het verzenden van formulieren{#adding-information-from-user-data-to-form-submission-metadata}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 U kunt waarden die zijn ingevoerd in een element van het formulier gebruiken om metagegevensvelden van een concept of een formulier te berekenen. Met metagegevens kunt u inhoud filteren op basis van gebruikersgegevens. Een gebruiker voert bijvoorbeeld Jan Smit in het naamveld van het formulier. U kunt deze informatie gebruiken om metagegevens te berekenen die deze verzending kunnen categoriseren onder de JD voor initialen.
 
@@ -33,21 +33,21 @@ Een ander voorbeeld van een formulier waarin e-mailadres en telefoonnummer worde
 Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
 
 1. Open het adaptieve formulier in de bewerkingsmodus.\
-   Als u het formulier wilt openen in de bewerkingsmodus, selecteert u in het formulierbeheer het gewenste formulier en selecteert u **Openen**.
-1. Selecteer in de bewerkingsmodus een component en selecteer ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en selecteer vervolgens ![cmppr](assets/cmppr.png).
-1. Klik in de zijbalk op **Metagegevens**.
-1. Klik in het gedeelte Metagegevens op **Toevoegen**.
+   Om uw vorm in te openen geef wijze, in de vormenmanager uit, selecteer uw vorm en selecteer **Open**.
+1. Op geef wijze uit, selecteer een component, uitgezocht ![ gebied-niveau ](assets/field-level.png) > **Aangepaste Container van de Vorm**, en selecteer dan ![ cmp ](assets/cmppr.png).
+1. In sidebar, klik **Meta-gegevens**.
+1. In de sectie van Meta-gegevens, voegt de klik **** toe.
 1. Voeg scripts toe in het veld Waarde van het tabblad Metagegevens. Met de scripts die u toevoegt, worden gegevens verzameld uit elementen op het formulier en worden waarden berekend die worden doorgegeven aan de metagegevens.
 
-   Bijvoorbeeld: **true** is aangemeld bij de metagegevens als de ingevoerde leeftijd groter is dan 21, en **false** wordt geregistreerd als het minder dan 21 is. U voert het volgende script in op het tabblad Metagegevens:
+   Bijvoorbeeld, **waar** wordt het programma geopend in de meta-gegevens als de ingegane leeftijd groter is dan 21, en **vals** wordt geregistreerd als het minder dan 21 is. U voert het volgende script in op het tabblad Metagegevens:
 
    `(agebox.value >= 21) ? true : false`
 
-   ![Metagegevensscript](assets/add-element-metadata.png)
+   ![ manuscript van Meta-gegevens ](assets/add-element-metadata.png)
 
    Script ingevoerd op het tabblad Metagegevens
 
-1. Klikken **OK**.
+1. Klik **OK**.
 
 Nadat een gebruiker gegevens in het element invoert dat als meta-gegevensgebied wordt geselecteerd, wordt de gegevens gegevens gegevens geregistreerd in de meta-gegevens. U kunt de metagegevens bekijken in de opslagplaats die u hebt geconfigureerd voor het opslaan van metagegevens.
 
@@ -55,15 +55,15 @@ Nadat een gebruiker gegevens in het element invoert dat als meta-gegevensgebied 
 
 In het bovenstaande voorbeeld worden de metagegevens opgeslagen in de CRX-opslagplaats. De metagegevens zien er als volgt uit:
 
-![Metagegevens](assets/metadata_entry_new.png)
+![ Metagegevens ](assets/metadata_entry_new.png)
 
-Als u een element van het controlevakje in de meta-gegevens toevoegt, worden de geselecteerde waarden opgeslagen als een komma gescheiden koord. U voegt bijvoorbeeld een component CheckBox in het formulier toe en geeft de naam van de component op als `checkbox1`. In de eigenschappen van de component van het controlevakje, voegt u de punten Rijvergunning, het Aantal van de Sociale Veiligheid, en Paspoort voor waarden 0, 1, en 2 toe.
+Als u een element van het controlevakje in de meta-gegevens toevoegt, worden de geselecteerde waarden opgeslagen als een komma gescheiden koord. U voegt bijvoorbeeld een component CheckBox toe aan het formulier en geeft de naam op als `checkbox1` . In de eigenschappen van de component van het controlevakje, voegt u de punten Rijvergunning, het Aantal van de Sociale Veiligheid, en Paspoort voor waarden 0, 1, en 2 toe.
 
-![Meerdere waarden opslaan vanuit een selectievakje](assets/checkbox-metadata.png)
+![ Opstellend veelvoudige waarden van een controledoos ](assets/checkbox-metadata.png)
 
-U selecteert een adaptieve formuliercontainer en in de formuliereigenschappen voegt u een metagegevenssleutel toe `cb1` die `checkbox1.value`en publiceert u het formulier. Wanneer een klant het formulier invult, selecteert de klant de opties Paspoort en burgerservicenummer in het veld Selectievakje. De waarden 1 en 2 worden opgeslagen als 1, 2 in het cb1-veld van de metagegevens voor verzending.
+U selecteert een adaptieve formuliercontainer en voegt in de formuliereigenschappen een metagegevenssleutel `cb1` toe waarin `checkbox1.value` wordt opgeslagen, en publiceert het formulier. Wanneer een klant het formulier invult, selecteert de klant de opties Paspoort en burgerservicenummer in het veld Selectievakje. De waarden 1 en 2 worden opgeslagen als 1, 2 in het cb1-veld van de metagegevens voor verzending.
 
-![Metagegevensitem voor meerdere waarden die zijn geselecteerd in een veld van het selectievakje](assets/metadata-entry.png)
+![ de ingang van Meta-gegevens voor veelvoudige waarden die op een checkbox gebied ](assets/metadata-entry.png) worden geselecteerd
 
 >[!NOTE]
 >

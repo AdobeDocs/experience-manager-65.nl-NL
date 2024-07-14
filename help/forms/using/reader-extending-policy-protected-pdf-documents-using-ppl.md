@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Houd u vertrouwd met concepten als documentbeveiliging, Reader-extensie en de programmeertaal Java om de documenten die met beveiligingsbeleid zijn beveiligd, door het document uit te breiden met PDF.
 
-Met documentbeveiliging kunt u de toegang van specifieke PDF-documenten beperken tot alleen geautoriseerde gebruikers. U kunt ook bepalen hoe een ontvanger een beveiligd document kan gebruiken. U kunt bijvoorbeeld opgeven of ontvangers tekst van een document dat met een beveiligingsbeleid is beveiligd, kunnen afdrukken, kopiëren of bewerken. Ga voor meer informatie over documentbeveiliging naar [over documentbeveiliging](/help/forms/using/admin-help/document-security.md).
+Met documentbeveiliging kunt u de toegang van specifieke PDF-documenten beperken tot alleen geautoriseerde gebruikers. U kunt ook bepalen hoe een ontvanger een beveiligd document kan gebruiken. U kunt bijvoorbeeld opgeven of ontvangers tekst van een document dat met een beveiligingsbeleid is beveiligd, kunnen afdrukken, kopiëren of bewerken. Meer over documentveiligheid leren, zie [ over documentveiligheid ](/help/forms/using/admin-help/document-security.md).
 
-Met Reader-extensies kunt u interactieve functies in Adobe PDF-documenten inschakelen via Acrobat Reader. Deze interactieve functies zijn normaal alleen beschikbaar via Adobe Acrobat Professional en Standard. Ga voor meer informatie over de interactieve functies die Reader Extension kan inschakelen naar [Adobe Experience Manager Forms DocAssurance-service ](/help/forms/using/overview-aem-document-services.md)**.**
+Met Reader-extensies kunt u interactieve functies in Adobe PDF-documenten inschakelen via Acrobat Reader. Deze interactieve functies zijn normaal alleen beschikbaar via Adobe Acrobat Professional en Standard. Om over de interactieve eigenschappen te leren die de lezeruitbreiding kan toelaten, zie [ de dienst van Adobe Experience Manager Forms DocAssurance ](/help/forms/using/overview-aem-document-services.md)**.**
 
 U kunt de draagbare beveiligingsbibliotheek gebruiken om beleid toe te passen op het document zonder dat u documenten hoeft te lezen via het netwerk. Slechts reizen de veiligheidsgeloofsbrieven en bescherming-beleid details over het netwerk. Het document zelf laat de client nooit over en het beveiligingsbeleid wordt lokaal op de client toegepast.
 
@@ -44,7 +44,7 @@ U kunt de volgende taken met de dienst van de Uitbreidingen van de Reader uitvoe
 
 ### Gebruiksrechten toepassen op een met beveiligingsbeleid beveiligd PDF-document {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
-U kunt de `applyUsageRights`Java API om gebruiksrechten toe te passen op met beleid beveiligde PDF-documenten. Gebruiksrechten hebben betrekking op functionaliteit die standaard beschikbaar is in Acrobat, maar niet in Adobe Reader, zoals de mogelijkheid om opmerkingen toe te voegen aan een formulier of formuliervelden in te vullen en het formulier op te slaan. PDF-documenten waarop gebruiksrechten zijn toegepast, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een document met ingeschakelde rechten opent in Adobe Reader, kan bewerkingen uitvoeren die zijn ingeschakeld voor dat specifieke document.
+U kunt `applyUsageRights` Java API gebruiken om gebruiksrechten op beleid-beschermde documenten van de PDF toe te passen. Gebruiksrechten hebben betrekking op functionaliteit die standaard beschikbaar is in Acrobat, maar niet in Adobe Reader, zoals de mogelijkheid om opmerkingen toe te voegen aan een formulier of formuliervelden in te vullen en het formulier op te slaan. PDF-documenten waarop gebruiksrechten zijn toegepast, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een document met ingeschakelde rechten opent in Adobe Reader, kan bewerkingen uitvoeren die zijn ingeschakeld voor dat specifieke document.
 
 **Syntaxis:** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 
@@ -68,14 +68,14 @@ U kunt de `applyUsageRights`Java API om gebruiksrechten toe te passen op met bel
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Hiermee wordt een object van het type opgegeven <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. Het object usageRights vertegenwoordigt individuele rechten die kunnen worden toegepast op een met een beleid beveiligd PDF-document.</p> </td>
+   <td><p>Specificeert een voorwerp van type <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank"> UsageRights </a>. Het object usageRights vertegenwoordigt individuele rechten die kunnen worden toegepast op een met een beleid beveiligd PDF-document.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Hiermee worden gebruiksrechten opgehaald die zijn toegepast op een met beleid beveiligd PDF-document.   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
 
-U kunt de `getDocumentUsageRights`Java API om de gebruiksrechten voor de reader-extensie op te halen die zijn toegepast op een met een beleid beveiligd PDF-document. Door informatie over gebruiksrechten op te halen, kunt u meer weten over de functies die de extensie van de lezer heeft ingeschakeld voor het document PDF dat met een beleid is beveiligd.
+U kunt `getDocumentUsageRights` Java API gebruiken om de gebruiksrechten terug te winnen van de reader uitbreiding die op een beleid-beschermd document van de PDF worden toegepast. Door informatie over gebruiksrechten op te halen, kunt u meer weten over de functies die de extensie van de lezer heeft ingeschakeld voor het document PDF dat met een beleid is beveiligd.
 
 **Syntaxis:** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 
@@ -140,7 +140,7 @@ System.out.println("RE rights for the file are :\n"+right1);
 
 ### Gebruiksrechten van een met een beleid beveiligd PDF-document verwijderen {#remove-usage-rights-of-a-policy-protected-pdf-document}
 
-U kunt de `removeUsageRights`Java API om gebruiksrechten te verwijderen uit een document dat met een beleid is beveiligd. U moet gebruiksrechten verwijderen uit een document met een door een beleid beveiligde PDF om andere AEM Forms-bewerkingen uit te voeren op het document. U moet bijvoorbeeld een PDF-document digitaal ondertekenen (of certificeren) voordat u gebruiksrechten instelt. Daarom als u verrichtingen op een beleid-beschermd document wilt uitvoeren, moet u gebruiksrechten uit het document van de PDF verwijderen, de andere verrichtingen uitvoeren, zoals digitaal het ondertekenen van het document, en dan gebruiksrechten op het document opnieuw toepassen.
+U kunt `removeUsageRights` Java API gebruiken om gebruiksrechten uit een beleid-beschermd document te verwijderen. U moet gebruiksrechten verwijderen uit een document met een door een beleid beveiligde PDF om andere AEM Forms-bewerkingen uit te voeren op het document. U moet bijvoorbeeld een PDF-document digitaal ondertekenen (of certificeren) voordat u gebruiksrechten instelt. Daarom als u verrichtingen op een beleid-beschermd document wilt uitvoeren, moet u gebruiksrechten uit het document van de PDF verwijderen, de andere verrichtingen uitvoeren, zoals digitaal het ondertekenen van het document, en dan gebruiksrechten op het document opnieuw toepassen.
 
 **Syntaxis:** `InputStream removeUsageRights(InputStream inputFile)`
 
@@ -152,7 +152,7 @@ U kunt de `removeUsageRights`Java API om gebruiksrechten te verwijderen uit een 
   </tr>
   <tr>
    <td><p> </p> <p>inputFile</p> </td>
-   <td>InputStream opgeven die het PDF-document vertegenwoordigt waarvan het gebruik<br /> de rechten moeten worden geschrapt . U kunt documenten die met LiveCycle Rights Management of AEM Forms-documentbeveiliging zijn beveiligd, gebruiken.</td>
+   <td>Specificeer InputStream die het document van de PDF vertegenwoordigt waarvan gebruik <br /> rechten moeten worden verwijderd. U kunt documenten die met LiveCycle Rights Management of AEM Forms-documentbeveiliging zijn beveiligd, gebruiken.</td>
   </tr>
  </tbody>
 </table>

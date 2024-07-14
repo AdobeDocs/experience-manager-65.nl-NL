@@ -22,17 +22,18 @@ Deze sectie bevat gemeenschappelijke zorgen en bekende kwesties wanneer het oplo
 
 ## Bekende problemen {#known-issues}
 
-### Terugzetfout van verzender mislukt {#dispatcher-refetch-fails}
+### Herstellen Dispatcher mislukt {#dispatcher-refetch-fails}
 
-Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat op de time-out van het verzoek is gewacht.
+Als u Dispatcher 4.1.5 gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen antwoord van de externe server ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
 
-Het gebruik van Dispatcher 4.1.6 of hoger verhelpt dit probleem.
+Als u Dispatcher 4.1.6 of hoger gebruikt, wordt dit probleem opgelost.
 
-### Kan de Post van het Forum na Bevordering van CQ 5.4 niet toegang hebben {#cannot-access-forum-post-after-upgrading-from-cq}
+### Kan geen toegang krijgen tot Forum Post na upgrade vanaf CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Als een forum op CQ 5.4 en geposte onderwerpen werd gecreeerd, en toen de plaats aan AEM 5.6.1 of later werd bevorderd, kan het proberen om de bestaande posten te bekijken in een fout op de pagina resulteren:
 
-Ongeldig patroonteken &#39;a&#39; kan aanvraag niet verzenden aan `/content/demoforums/forum-test.html` op deze server en de logboeken bevatten het volgende:
+Ongeldig patroonteken &#39;a&#39;
+Kan aanvraag aan `/content/demoforums/forum-test.html` op deze server niet verzenden en de logboeken bevatten het volgende:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -48,9 +49,9 @@ Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 * Van: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Aan: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-De fout is anders bij Auteur en Publiceren. Op Auteur, ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij Publiceren wordt de fout op de pagina gegenereerd.
+De fout is anders bij Auteur en Publish. Op Auteur, ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. In Publish wordt de fout op de pagina gegenereerd.
 
-Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
+Zie [ com.day.cq.commons.date.RelativeTimeFormat ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
 ## Vaak voorkomende problemen {#common-concerns}
 
@@ -60,7 +61,7 @@ Tijdens het opstarten (niet de eerste - maar elke daarna) kan de volgende waarsc
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` is vervangen door `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Deze waarschuwing kan veilig worden genegeerd als `jknack.handlebars.Handlebars`, gebruikt door [SCF](scf.md#handlebarsjavascripttemplatinglanguage), wordt geleverd met een eigen i18n helper-hulpprogramma. Bij het opstarten wordt deze vervangen door een AEM [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig worden genegeerd aangezien `jknack.handlebars.Handlebars`, door [ SCF ](scf.md#handlebarsjavascripttemplatinglanguage) wordt gebruikt, met zijn eigen i18n helpernut komt. Bij opstarten, wordt het vervangen met een AEM-specifieke [ i18n helper ](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij aanmelden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

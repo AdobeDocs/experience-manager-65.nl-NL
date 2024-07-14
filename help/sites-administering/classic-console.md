@@ -22,32 +22,34 @@ ht-degree: 0%
 
 Deze sectie is voor de Classic UI Tagging Console.
 
-De voor aanraking geoptimaliseerde UI-tagging-console is [hier](/help/sites-administering/tags.md#tagging-console).
+De aanraking-geoptimaliseerde UI Tagingconsole is [ hier ](/help/sites-administering/tags.md#tagging-console).
 
 De klassieke UI-tagingconsole openen:
 
 * op auteur
 * aanmelden met beheerdersrechten
-* naar de console bladeren, bijvoorbeeld [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* naar de console bladeren
+bijvoorbeeld, [ https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-![Klassiek consolevenster](assets/managing_tags_usingthetagasministrationconsole.png)
+![ Klassiek consolevenster ](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Tags en naamruimten maken {#creating-tags-and-namespaces}
 
-1. Afhankelijk van het niveau dat u begint, kunt u een tag of een naamruimte maken met **Nieuw**:
+1. Afhankelijk van het niveau u van u begint kunt of een markering of een namespace tot stand brengen gebruikend **Nieuw**:
 
-   Als u **Tags** u kunt een naamruimte maken:
+   Als u **Markeringen** selecteert kunt u tot een namespace leiden:
 
-   ![Een dialoogvenster voor naamruimte maken](assets/creating_tags_andnamespaces.png)
+   ![ Creërend een dialoog van de naamruimte ](assets/creating_tags_andnamespaces.png)
 
-   Als u een naamruimte selecteert (bijvoorbeeld **Demo**) U kunt een tag maken binnen die naamruimte:
+   Als u een namespace (bijvoorbeeld, **Demo**) selecteert kunt u een markering binnen dat namespace tot stand brengen:
 
-   ![Een tagdialoogvenster maken](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![ Creërend een markeringsdialoog ](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. In beide gevallen voert u
 
    * **Titel**
-(*Vereist*) De titel van de weergave voor de tag. U kunt elk teken invoeren, maar u kunt het beste deze speciale tekens niet gebruiken:
+(*Vereiste*) de vertoningstitel voor de markering. Tijdens het invoeren van elk teken
+u wordt aangeraden deze speciale tekens niet te gebruiken:
 
       * `colon (:)` - naamruimtescheidingsteken
       * `forward slash (/)` - scheidingsteken voor subtags
@@ -55,59 +57,59 @@ De klassieke UI-tagingconsole openen:
      Deze tekens worden niet weergegeven als ze worden ingevoerd.
 
    * **Naam**
-(*Vereist*) De knooppuntnaam voor de tag.
+(*Vereiste*) de knoopnaam voor de markering.
 
    * **Beschrijving**
-(*Optioneel*) Een beschrijving voor de tag.
+(*Facultatieve*) een beschrijving voor de markering.
 
-   * selecteren **Maken**
+   * selecteren **creeer**
 
 ## Tags bewerken {#editing-tags}
 
 1. Selecteer in het rechterdeelvenster de tag die u wilt bewerken.
-1. Klikken **Bewerken**.
-1. U kunt de **Titel** en de **Beschrijving**.
-1. Klikken **Opslaan** het dialoogvenster sluiten.
+1. Klik **uitgeven**.
+1. U kunt de **Titel** en de **Beschrijving** wijzigen.
+1. Klik **sparen** om de dialoog te sluiten.
 
 ## Tags verwijderen {#deleting-tags}
 
 1. Selecteer in het rechterdeelvenster het label dat u wilt verwijderen.
-1. Klikken **Verwijderen**.
-1. Klikken **Ja** het dialoogvenster sluiten.
+1. Klik **Schrapping**.
+1. Klik **ja** om de dialoog te sluiten.
 
    De tag mag niet meer worden vermeld.
 
 ## Labels activeren en deactiveren {#activating-and-deactivating-tags}
 
 1. Selecteer in het rechterdeelvenster de naamruimte of tag die u wilt activeren (publiceren) of deactiveren (publiceren ongedaan maken).
-1. Klikken **Activeren** of **Deactiveren** zoals vereist.
+1. Klik **activeren** of **** desactivate zoals vereist.
 
 ## Lijst - tonen waar naar tags wordt verwezen {#list-showing-where-tags-are-referenced}
 
-**Lijst** Hiermee opent u een nieuw venster waarin de paden van alle pagina&#39;s met de gemarkeerde code worden weergegeven:
+**Lijst** opent een nieuw venster dat de wegen van alle pagina&#39;s toont gebruikend de benadrukte markering:
 
-![Zoeken waar naar tags wordt verwezen](assets/list_showing_wheretagsarereferenced.png)
+![ Vindend waar de markeringen ](assets/list_showing_wheretagsarereferenced.png) van verwijzingen worden voorzien
 
 ## Labels verplaatsen {#moving-tags}
 
 Als u wilt helpen dat tagbeheerders en ontwikkelaars de taxonomie opschonen of de naam van een tag-id wijzigen, kunt u een tag naar een nieuwe locatie verplaatsen:
 
 1. Open de **Tags** console.
-1. Selecteer de tag en klik op **Verplaatsen...** in de bovenste werkbalk (of in het contextmenu).
-1. In de **Tag verplaatsen** , definiëren:
+1. Selecteer de markering en klik **Beweging...** in de hoogste hulpmiddelbar (of in het contextmenu).
+1. In de **dialoog van de Markering van de Beweging**, bepaal:
 
-   * **tot**, het doelknooppunt.
-   * **Naam wijzigen in**, de naam van het nieuwe knooppunt.
+   * **aan**, de bestemmingsknoop.
+   * **noem aan** anders, de nieuwe knoopnaam.
 
-1. Klikken **Verplaatsen**.
+1. Klik **Beweging**.
 
-De **Tag verplaatsen** ziet er als volgt uit:
+De **dialoog van de Markering van de Beweging** kijkt als volgt:
 
-![Een tag verplaatsen](assets/move_tag.png)
+![ Bewegend een markering ](assets/move_tag.png)
 
 >[!NOTE]
 >
->Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig mogen auteurs alleen [de titels van tags wijzigen](#editing-tags).
+>Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig, zouden de Auteurs slechts [ de markeringstitels ](#editing-tags) moeten veranderen.
 
 ## Tags samenvoegen {#merging-tags}
 
@@ -116,34 +118,34 @@ U kunt tags samenvoegen wanneer een taxonomie duplicaten bevat. Wanneer label A 
 Een tag samenvoegen in een andere tag:
 
 1. Open de **Tags** console.
-1. Selecteer de tag en klik op **Samenvoegen...** in de bovenste werkbalk (of in het contextmenu).
-1. In de **Tag samenvoegen** , definiëren:
+1. Selecteer de markering en klik **Fusie...** in de hoogste hulpmiddelbar (of in het contextmenu).
+1. In de **dialoog van de Markering van de Fusie**, bepaal:
 
-   * **in**, het doelknooppunt.
+   * **in**, de bestemmingsknoop.
 
-1. Klikken **Samenvoegen**.
+1. Klik **Samenvoegen**.
 
-De **Tag samenvoegen** ziet er als volgt uit:
+De **dialoog van de Markering van de Fusie** kijkt als volgt:
 
-![Een tag samenvoegen](assets/mergetag.png)
+![ het samenvoegen van een markering ](assets/mergetag.png)
 
 ## Gebruik van tags tellen {#counting-usage-of-tags}
 
 Zo ziet u hoe vaak een tag wordt gebruikt:
 
 1. Open de **Tags** console.
-1. Klikken **Telgebruik** in de bovenste werkbalk: het resultaat wordt weergegeven in de kolom Aantal.
+1. Klik **gebruik van de Telling** in de hoogste hulpmiddelbar: de kolomTelling toont het resultaat.
 
 ## Tags beheren in verschillende talen {#managing-tags-in-different-languages}
 
-De optionele `title`De eigenschap van een tag kan in meerdere talen worden vertaald. Tag `titles` kan vervolgens worden weergegeven volgens de taal van de gebruiker of de paginataal.
+Het facultatieve `title` bezit van een markering kan in veelvoudige talen worden vertaald. Label `titles` kan vervolgens worden weergegeven volgens de taal van de gebruiker of de paginataal.
 
 ### Tagtitels definiëren in meerdere talen {#defining-tag-titles-in-multiple-languages}
 
-De volgende procedure laat zien hoe u de `title`van de tag **Dieren** Engels, Duits en Frans:
+De volgende procedure toont hoe te om `title` van de markering **Dieren** in het Engels, Duits en Frans te vertalen:
 
 1. Ga naar de **Tags** console.
-1. De tag bewerken **Dieren** onder **Tags** > **Stock Photography**.
+1. Bewerk de markering **Dieren** onder **Markeringen** > **Fotografie van de Voorraad**.
 1. Voeg de vertalingen in de volgende talen toe:
 
    * **Engels**: Dieren
@@ -154,29 +156,29 @@ De volgende procedure laat zien hoe u de `title`van de tag **Dieren** Engels, Du
 
 Het dialoogvenster ziet er als volgt uit:
 
-![Een tag bewerken](assets/edit_tag.png)
+![ Uitgevend een markering ](assets/edit_tag.png)
 
 In de tagconsole wordt de taalinstelling van de gebruiker gebruikt. Voor de tag Animal wordt &#39;Animaux&#39; weergegeven voor een gebruiker die de taal in gebruikerseigenschappen instelt op Frans.
 
-Zie de sectie voor een nieuwe taal aan het dialoogvenster [Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in de **Tags voor ontwikkelaars** sectie.
+Om een nieuwe taal aan de dialoog toe te voegen, zie de sectie [ Toevoegend een Nieuwe Taal aan de Edit Dialoog van de Markering ](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in het **Tags toevoegen voor de sectie van Ontwikkelaars**.
 
 ### Tagtitels weergeven in Pagina-eigenschappen in een opgegeven taal {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-Standaard wordt de tag `titles`in de pagina-eigenschappen worden weergegeven in de paginataal. Het tagdialoogvenster in de pagina-eigenschappen heeft een taalveld waarmee de tag kan worden weergegeven `titles`in een andere taal. De volgende procedure beschrijft hoe u de tag kunt weergeven `titles`in het Frans:
+Door gebrek wordt de markering `titles` in de paginaeigenschappen getoond in de paginataal. Het tagdialoogvenster in de pagina-eigenschappen heeft een taalveld dat de weergave van tag `titles` in een andere taal mogelijk maakt. De volgende procedure beschrijft hoe te om de markering `titles` in het Frans te tonen:
 
-1. Zie het vorige gedeelte om de Franse vertaling aan de **Dieren** onder **Tags** > **Stock Photography**.
-1. Open de pagina-eigenschappen van het dialoogvenster **Producten** pagina in het Engelse gedeelte van de **Geometrixx** site.
-1. Open de **Tags/trefwoorden** (door het keuzemenu rechts van het weergavegebied Tags/Trefwoorden te selecteren) en het dialoogvenster **Frans** in het keuzemenu rechtsonder.
-1. Schuif met de pijlen naar links en rechts totdat u de optie **Stock Photography** tab
+1. Verwijs naar de vorige sectie om de Franse vertaling aan de **Dieren** toe te voegen onder **Markeringen** > **Fotografie van de Voorraad**.
+1. Open de paginaeigenschappen van de **Produkten** pagina in de Engelse tak van de **Geometrixx** plaats.
+1. Open de **Tags/de dialoog van Trefwoorden** (door het pull-down menu rechts van het de vertoningsgebied van Tags/Trefwoorden te selecteren) en de **Franse** taal van het pull-down menu in de bodem juiste hoek te selecteren.
+1. De rol die de linker-juiste pijlen gebruikt tot het **Fotografie van de Voorraad** tabel kan selecteren
 
-   Selecteer de **Dieren** (**Animaux**) en selecteert u buiten het dialoogvenster om het te sluiten en de tag toe te voegen aan de pagina-eigenschappen.
+   Selecteer de **Dieren** (**Animaux**) markering en selecteer buiten de dialoog om het te sluiten en de markering toe te voegen aan de paginaeigenschappen.
 
-   ![Een andere tag bewerken](assets/french_tag.png)
+   ![ Uitgevend een andere markering ](assets/french_tag.png)
 
-Standaard wordt in het dialoogvenster Pagina-eigenschappen het label weergegeven `titles`volgens de paginataal.
+Door gebrek, toont de de dialoogdoos van de Eigenschappen van de Pagina de markering `titles` volgens de paginataal.
 
-In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) wordt in andere gevallen gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
+In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [`tag` widget ](/help/sites-developing/building.md#tagging-on-the-client-side) in andere gevallen wordt gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
 
 >[!NOTE]
 >
->De tagcloud en de metatrefwoorden in de standaardpaginacomponent gebruiken de gelokaliseerde tag `titles`op basis van de paginataal, indien beschikbaar.
+>De markeringswolk en de metatrefwoorden in de standaardpaginacomponent gebruiken de gelokaliseerde markering `titles` die op de paginalaal wordt gebaseerd, als beschikbaar.

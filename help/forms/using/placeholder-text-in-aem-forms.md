@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Plaatsaanduidingstekst in AEM Forms {#placeholder-text-in-aem-forms}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 De plaatsaanduidingstekst vertegenwoordigt een woord of korte woordgroep. Het is bedoeld om de gebruiker van gegevensingang te helpen wanneer de controle geen waarde heeft. Een plaatsaanduidingstekst kan een voorbeeldwaarde of een korte beschrijving van de verwachte indeling zijn. De tekst van de plaatsaanduiding wordt weergegeven voordat de gebruiker een waarde invoert. De tekst wordt verwijderd wanneer de gebruiker een waarde invoert of selecteert.
 
@@ -25,17 +25,17 @@ De plaatsaanduidingstekst vertegenwoordigt een woord of korte woordgroep. Het is
 >
 >De plaatsaanduidingstekst moet, indien opgegeven, een waarde hebben die geen nieuwe regeltekens bevat.
 
-![Datumcomponent met en zonder plaatsaanduidingstekst](assets/dat-picker-place-holder-text.png)
+![ component van de Datum met en zonder placeholder tekst ](assets/dat-picker-place-holder-text.png)
 
-**A.** De component van de datum met placeholder tekst **B.** Datumcomponent zonder plaatsaanduidingstekst
+**A.** component van de Datum met placeholder tekst **B.** component van de Datum zonder placeholder tekst
 
 AEM Forms biedt ondersteuning voor plaatsaanduidingstekst voor de velden Wachtwoord, Datumkiezer, Numeriek vak en Tekstvak.\
 Plaatsaanduidingsteksten worden niet ondersteund voor de native HTML5-datumwidget. Een plaatsaanduidingstekst opgeven:
 
-1. Klik met de rechtermuisknop op een component die plaatsaanduidingstekst ondersteunt en klik op **Bewerken**. Het dialoogvenster Component bewerken wordt geopend.
+1. Klik met de rechtermuisknop op een component die Plaatsaanduidingstekst ondersteunt en klik op **Bewerken** . Het dialoogvenster Component bewerken wordt geopend.
 
-1. Open de **Titel en tekst** tab.
-1. Geef een woord of korte woordgroep op in het dialoogvenster **Tekstvak voor plaatsaanduiding**. Klikken **OK**.
+1. Open de **Titel en tekst** tabel.
+1. Specificeer een woord of een korte uitdrukking in het **Placeholder tekstvakje**. Klik **OK**.
 
 >[!NOTE]
 >

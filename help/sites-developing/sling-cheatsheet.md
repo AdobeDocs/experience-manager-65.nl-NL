@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Sling Cheatsheet{#sling-cheatsheet}
 
-![Apache Sling-scriptoplossing.](assets/sling-cheatsheet-01.png)
+![ Begrijpend Apache die manuscriptresolutie.](assets/sling-cheatsheet-01.png)
 
-![Gebruikend SlingPostServlet - dit is de standaardmanager voor uw verzoeken van de POST; het kan bijna om het even wat doen.](assets/sling-cheatsheet-02.png)
+![ Gebruikend SlingPostServlet - dit is de standaardmanager voor uw verzoeken van de POST; het kan bijna om het even wat doen.](assets/sling-cheatsheet-02.png)

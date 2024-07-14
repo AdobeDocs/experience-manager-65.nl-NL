@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Forms Designer Help {#form-designer-help}
 
-[Designer gebruiken](https://www.adobe.com/go/learn_aemforms_designer_65)
-[Tutorials om snel aan de slag te gaan met Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-[Voorbeelden voor Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-[Grondbeginselen van scripts in Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-[Scriptreferentie in Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-[Referentiehandleiding van FormCalc in Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+[ Gebruikend Designer ](https://www.adobe.com/go/learn_aemforms_designer_65)
+[ Tutorials van het Begin van Designer Snelle ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+[ de Steekproeven van Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+[ Grondbeginselen Scripting van Designer ](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+[ Designer Scripting Reference ](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+[ Referentie FormCalc van Designer ](https://www.adobe.com/go/learn_aemforms_formCalc_65)

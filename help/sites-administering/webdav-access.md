@@ -24,27 +24,27 @@ AEM biedt WebDAV-ondersteuning waarmee u inhoud in de opslagplaats kunt weergeve
 
 ## Algemeen {#general}
 
-[Gedetailleerde instructies per besturingssysteem](/help/sites-administering/webdav-access.md#connecting-via-webdav) zijn opgenomen in dit document, maar u kunt de WebDAV-client in feite via het WebDAV-protocol verbinden met uw gegevensopslagruimte door naar de volgende locatie te verwijzen:
+[ Gedetailleerde instructies per werkend systeem ](/help/sites-administering/webdav-access.md#connecting-via-webdav) zijn inbegrepen in dit document, maar hoofdzakelijk om met uw bewaarplaats te verbinden gebruikend het protocol WebDAV, richt u uw cliënt WebDAV aan de volgende plaats:
 
 ```xml
 http://localhost:4502
 ```
 
-![chlimage_1-111](assets/chlimage_1-111a.png)
+![ chlimage_1-111 ](assets/chlimage_1-111a.png)
 
-Deze URL biedt WebDAV toegang tot de standaardwerkruimte ( `crx.default`). Hoewel het eenvoudiger is voor de gebruiker, biedt het hen niet de extra flexibiliteit om werkruimtenamen te specificeren, die kunnen worden verwezenlijkt gebruikend extra [WebDAV-URL&#39;s](/help/sites-administering/webdav-access.md#webdav-urls).
+Deze URL biedt WebDAV-toegang tot de standaardwerkruimte ( `crx.default` ) wanneer deze wordt verbonden vanaf het niveau van het besturingssysteem. Terwijl het eenvoudiger voor de gebruiker is, geeft het hen niet de extra flexibiliteit om werkruimtenamen te specificeren, die kunnen worden verwezenlijkt gebruikend extra [ WebDAV URLs ](/help/sites-administering/webdav-access.md#webdav-urls).
 
 AEM geeft de inhoud van de opslagplaats als volgt weer:
 
-* Een knooppunt van het type `nt:folder` wordt weergegeven als een map. Knooppunten onder de knop `nt:folder` knooppunten worden weergegeven als de inhoud van de map.
+* Een knooppunt van het type `nt:folder` wordt weergegeven als een map. Knooppunten onder het knooppunt `nt:folder` worden weergegeven als de inhoud van de map.
 
-* Een knooppunt van het type `nt:file` wordt weergegeven als een bestand. Knooppunten onder de knop `nt:file` wordt niet weergegeven, maar vormt de inhoud van het bestand.
+* Een knooppunt van het type `nt:file` wordt weergegeven als een bestand. Knooppunten onder het knooppunt `nt:file` worden niet weergegeven, maar vormen de inhoud van het bestand.
 
-Wanneer u WebDAV gebruikt om mappen en bestanden te maken en te bewerken, AEM maakt en bewerkt u de vereiste `nt:folder` en `nt:file` knooppunten. Als u WebDAV wilt gebruiken voor het importeren en exporteren van inhoud, moet u proberen te werken met `nt:file` en `nt:folder` knooppunttypes zoveel mogelijk.
+Wanneer u WebDAV gebruikt om mappen en bestanden te maken en te bewerken, maakt AEM de benodigde knooppunten `nt:folder` en `nt:file` en bewerkt deze. Als u WebDAV wilt gebruiken voor het importeren en exporteren van inhoud, moet u zoveel mogelijk werken met knooppunttypen `nt:file` en `nt:folder` .
 
 >[!NOTE]
 >
->Controleer voordat u WebDAV instelt het [Technische vereisten](/help/sites-deploying/technical-requirements.md#webdav-clients).
+>Alvorens vestiging WebDAV, controleer de [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md#webdav-clients).
 
 ## WebDAV-URL&#39;s {#webdav-urls}
 
@@ -89,7 +89,7 @@ De URL voor de WebDAV-server heeft de volgende structuur:
  </tbody>
 </table>
 
-Als u het werkruimte-element in het pad wijzigt, kunt u andere werkruimten toewijzen dan de standaardwerkruimte ( `crx.default`). Als u bijvoorbeeld een werkruimte met de naam `staging`en gebruikt u de volgende URL:
+Als u het werkruimte-element in het pad wijzigt, kunt u andere werkruimten toewijzen dan de standaardwerkruimte ( `crx.default` ). Als u bijvoorbeeld een werkruimte met de naam `staging` wilt toewijzen, gebruikt u de volgende URL:
 
 ```xml
 http://localhost:4502/crx/repository/staging
@@ -97,7 +97,7 @@ http://localhost:4502/crx/repository/staging
 
 ## Verbinding maken via WebDAV {#connecting-via-webdav}
 
-[Zoals hierboven vermeld](/help/sites-administering/webdav-access.md#general)Als u verbinding wilt maken met de opslagplaats via het WebDAV-protocol, wijst u uw WebDAV-client naar de opslagplaats. Afhankelijk van uw besturingssysteem verschillen de stappen voor het aansluiten van uw client echter en is er mogelijk een vereiste configuratie van het besturingssysteem vereist.
+[ Zoals hierboven vermeld ](/help/sites-administering/webdav-access.md#general), om met uw bewaarplaats te verbinden gebruikend het protocol WebDAV, richt u uw cliënt WebDAV aan uw bewaarplaats. Afhankelijk van uw besturingssysteem verschillen de stappen voor het aansluiten van uw client echter en is er mogelijk een vereiste configuratie van het besturingssysteem vereist.
 
 Instructies voor het aansluiten van de volgende besturingssystemen zijn beschikbaar:
 
@@ -121,7 +121,7 @@ Om de registratie bij te werken om basisauthentificatie over een onbeveiligd net
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
    ```
 
-1. Stel de `BasicAuthLevel` registerentry-subkey voor een waarde van `2` of hoger.
+1. Stel de `BasicAuthLevel` subsleutel van de registervermelding in op de waarde `2` of hoger.
 
    Voeg de subsleutel toe als deze niet aanwezig is.
 
@@ -133,9 +133,9 @@ Om de registratie bij te werken om basisauthentificatie over een onbeveiligd net
 
 #### Windows 8-configuratie {#windows-configuration}
 
-Voor Windows 8 wijzigt u de registervermelding [zoals beschreven in Windows 7 en hoger](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Nochtans, alvorens u deze taak doet, moet de Ervaring van de Desktop worden toegelaten om de registratieingang te zien.
+Voor Vensters 8, verander de registratieingang [ zoals die voor Vensters 7 en groter ](/help/sites-administering/webdav-access.md#windows-and-greater-configuration) wordt beschreven. Nochtans, alvorens u deze taak doet, moet de Ervaring van de Desktop worden toegelaten om de registratieingang te zien.
 
-Als u de desktopervaring wilt inschakelen, opent u **Serverbeheer** vervolgens **Functies** vervolgens **Functies toevoegen** vervolgens **Desktopbeleving**.
+Om de Ervaring van de Desktop toe te laten, open **de Manager van de Server, toen** Eigenschappen **, dan** voegt Eigenschappen **toe, toen** Ervaring van de Desktop **.**
 
 Na rebooting, is de registratieingang die voor Vensters 7 en groter wordt beschreven beschikbaar. Wijzig het zoals die voor Vensters 7 en groter wordt beschreven.
 
@@ -143,32 +143,32 @@ Na rebooting, is de registratieingang die voor Vensters 7 en groter wordt beschr
 
 Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
-1. Openen **Windows Verkenner** of **Bestandsverkenner** en klik op **Computer** of **Deze pc**.
+1. Open **Ontdekkingsreiziger van Vensters** of **de Ontdekkingsreiziger van het Dossier** en klik **Computer** of **Deze PC**.
 
-   ![chlimage_1-112](assets/chlimage_1-112a.png)
+   ![ chlimage_1-112 ](assets/chlimage_1-112a.png)
 
-1. Klik op **Kaartnetwerkstation**.
+1. Om de tovenaar te beginnen, klik **de netwerkaandrijving van de Kaart**.
 1. Voer de toewijzingsdetails in:
 
-   * **Drive**: Kies een beschikbare letter
-   * **Map**: `http://localhost:4502`
-   * Controleren **Verbinding maken met verschillende referenties**
+   * **Aandrijving**: Kies om het even welke beschikbare brief
+   * **Omslag**: `http://localhost:4502`
+   * Controle **verbindt gebruikend verschillende geloofsbrieven**
 
    Klik op Voltooien
 
-   ![chlimage_1-113](assets/chlimage_1-113a.png)
+   ![ chlimage_1-113 ](assets/chlimage_1-113a.png)
 
    >[!NOTE]
    >
-   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` door de respectievelijke servernaam of het IP-adres.
 
-1. Gebruikersnaam invoeren `admin` en wachtwoord `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
+1. Voer gebruikersnaam `admin` en wachtwoord `admin` in. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
-   ![chlimage_1-114](assets/chlimage_1-114a.png)
+   ![ chlimage_1-114 ](assets/chlimage_1-114a.png)
 
 1. De wizard wordt gesloten en het nieuwe toegewezen station wordt geopend in Windows Verkenner of het venster Bestandverkenner.
 
-   ![chlimage_1-115](assets/chlimage_1-115a.png)
+   ![ chlimage_1-115 ](assets/chlimage_1-115a.png)
 
 Windows heeft nu AEM toegewezen als een station via WebDAV en u kunt deze als elk ander station gebruiken.
 
@@ -176,16 +176,16 @@ Windows heeft nu AEM toegewezen als een station via WebDAV en u kunt deze als el
 
 Er zijn geen configuratiestappen vereist om via WebDAV verbinding te maken op macOS. U kunt verbinding maken met de WebDAV-server.
 
-1. Naar een willekeurige locatie navigeren **Finder** venster en klik op **Ga** en **Verbinding maken met server**, of druk op **Command+k**.
-1. In de **Verbinding maken met server** Voer de AEM in:
+1. Navigeer aan om het even welk **venster van de Vinder** en klik **gaan** en **verbinden met Server**, of druk **Command+k**.
+1. In **verbind met Server** venster, ga de AEM plaats in:
 
    * `http://localhost:4502`
 
    >[!NOTE]
    >
-   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` door de respectievelijke servernaam of het IP-adres.
 
-1. Wanneer u wordt gevraagd om verificatie, voert u gebruikersnaam in `admin` en wachtwoord `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
+1. Wanneer u wordt gevraagd om verificatie, voert u gebruikersnaam `admin` en wachtwoord `admin` in. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
 macOS heeft nu verbinding met AEM via WebDAV en u kunt deze gebruiken als elke andere map op uw Mac.
 
@@ -197,38 +197,38 @@ Voor verbinding via WebDAV op Linux® is geen configuratie vereist, maar het omv
 
 Verbinding maken met AEM via WebDAV met GNOME:
 
-1. Selecteer in Nautilus (bestandsverkenner) de optie **Plaatsen** en selecteert u **Verbinding maken met server**.
-1. In de **Verbinding maken met server** Selecteer WebDAV (HTTP) in Servicetype.
+1. In Nautilus (dossierontdekkingsreiziger), selecteer **Plaatsen** en selecteer **verbinden met Server**.
+1. In **verbind met het venster van de Server**, uitgezochte WebDAV (HTTP) in het Type van Dienst.
 
-1. In **Server**, enter `http://localhost:4502/crx/repository/crx.default`
+1. In **Server**, ga `http://localhost:4502/crx/repository/crx.default` in
 
    >[!NOTE]
    >
-   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` door de respectievelijke servernaam of het IP-adres.
 
-1. In **Map**, enter `/dav`
-1. Voer de gebruikersnaam in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
+1. In **Omslag**, ga `/dav` in
+1. Voer de gebruikersnaam `admin` in. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 1. Laat de poort leeg en voer een naam voor de verbinding in.
-1. Klikken **Verbinden**. AEM vraagt u om uw wachtwoord.
-1. Voer het wachtwoord in `admin` en klik op **Verbinden**.
+1. Klik **verbinden**. AEM vraagt u om uw wachtwoord.
+1. Ga het wachtwoord `admin` in en klik **verbinden**.
 
 GNOME heeft nu AEM gemonteerd als een volume en u kunt het gebruiken als elk ander volume.
 
 #### KDE {#kde}
 
 1. Open de wizard Netwerkmap.
-1. Selecteren **WebFolder**(webdav) en klik op Volgende.
-1. In **Naam**, typt u een naam voor de verbinding.
-1. In **Gebruiker**, enter `admin.` Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken.
-1. In **Server**, enter `http://localhost:4502/crx/repository/crx.default`
+1. Selecteer **WebFolder** (webdav) en klik daarna.
+1. In **Naam**, typ een verbindingsnaam.
+1. In **Gebruiker**, ga `admin.` Adobe in adviseert dat u de pre-gevormde admin rekening gebruikt.
+1. In **Server**, ga `http://localhost:4502/crx/repository/crx.default` in
 
    >[!NOTE]
    >
-   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` door de respectievelijke servernaam of het IP-adres
 
-1. In **Map**, enter `dav`
+1. In **Omslag**, ga `dav` in
 
-1. Klikken **Opslaan en verbinden**.
-1. Voer het wachtwoord in wanneer u hierom wordt gevraagd `admin` en klik op **Verbinden**.
+1. Klik **sparen en verbinden**.
+1. Wanneer ertoe aangezet voor uw wachtwoord, ga het wachtwoord `admin` in en klik **verbind**.
 
 KDE heeft nu AEM gemonteerd als een volume en u kunt het als elk ander volume gebruiken.

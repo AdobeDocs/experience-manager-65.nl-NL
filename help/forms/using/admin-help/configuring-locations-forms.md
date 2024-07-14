@@ -26,7 +26,7 @@ U kunt de URL, URI en bestandslocaties van kenmerken opgeven, zoals de hoofdmap 
 
 ## Locatie-instellingen {#locations-settings}
 
-**Basis-URL:** De basis-URL waar formulierbronnen zoals afbeeldingen en scripts zich bevinden. Deze waarde is vereist voor HTML-transformaties die HREF-verwijzingen naar externe afhankelijkheden bevatten, zoals afbeeldingen of scripts. Een dergelijk script is xfasubset.js, dat vereist is voor HTML-formulieren om XFA-intelligentie uit te voeren. Deze waarde moet het HTTP-equivalent zijn van de inhoudroot-URI.
+**Basis URL:** de basis URL waar de vormmiddelen zoals beelden en manuscripten worden gevestigd. Deze waarde is vereist voor HTML-transformaties die HREF-verwijzingen naar externe afhankelijkheden bevatten, zoals afbeeldingen of scripts. Een dergelijk script is xfasubset.js, dat vereist is voor HTML-formulieren om XFA-intelligentie uit te voeren. Deze waarde moet het HTTP-equivalent zijn van de inhoudroot-URI.
 
 >[!NOTE]
 >
@@ -42,51 +42,51 @@ In het volgende voorbeeld wordt naar dezelfde inhoud verwezen (met Inhoudsopgave
 
 `(BaseURL)/subdir/image1.jpg`
 
-**FS Web Root URI:** De URL van de Forms-webtoepassing. U kunt dit vak leeg laten als de Forms-webtoepassing en de clienttoepassing worden geïmplementeerd op dezelfde toepassingsserver. De Forms API-webhoofdmap wordt gebruikt.
+**URI van de Wortel van fs Web:** URL van de het Webtoepassing van Forms. U kunt dit vak leeg laten als de Forms-webtoepassing en de clienttoepassing worden geïmplementeerd op dezelfde toepassingsserver. De Forms API-webhoofdmap wordt gebruikt.
 
 Als de Forms-webtoepassing en de clienttoepassing niet op dezelfde toepassingsserver worden geïmplementeerd, geeft u in dit vak de URL voor de Forms-webtoepassing op, zoals in dit voorbeeld:
 
 `https://<host name>:<port>/FormServer`
 
-Wanneer `host name`en `port` Dit zijn de servernaam en het poortnummer van de server waarop de Forms-webtoepassing wordt gehost.
+Waar `host name` en `port` de servernaam en het havenaantal van de server zijn die de het Webtoepassing van Forms ontvangt.
 
 De standaardwaarde is een lege tekenreeks.
 
-**Web Root URI:** De hoofdmap van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), opgegeven via de SDK van AEM formulieren, om een absolute URL samen te stellen voor toegang tot toepassingsspecifieke webinhoud.
+**Wortel URI van het Web:** de het Webwortel van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), opgegeven via de SDK van AEM formulieren, om een absolute URL samen te stellen voor toegang tot toepassingsspecifieke webinhoud.
 
 De standaardwaarde is een lege tekenreeks.
 
-**URI van basisinhoud:** De URI of absolute locatie waaruit formulieren worden opgehaald. Deze waarde wordt gecombineerd met de sFormQuery-parameter, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
+**Inhoudswortel URI:** URI of absolute plaats dat de vormen van worden teruggewonnen. Deze waarde wordt gecombineerd met de sFormQuery-parameter, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
 
 De standaardwaarde is een lege tekenreeks.
 
-**URI XCI-configuratie:** De relatieve of absolute locatie waarin het XCI-bestand dat voor rendering wordt gebruikt, wordt gevonden. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in het implementeerbare AEM-bestand bevindt.
+**URI van de Configuratie XCI:** de relatieve of absolute plaats waarin het XCI dossier dat voor het teruggeven wordt gebruikt wordt gevonden. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in het implementeerbare AEM-bestand bevindt.
 
-De standaardwaarde is `com/adobe/formServer/PA/pa.xci`.
+De standaardwaarde is `com/adobe/formServer/PA/pa.xci` .
 
-**URI lettertypetoewijzing:** De relatieve of absolute locatie van het fonttoewijzingsbestand. Voor een relatieve waarde wordt aangenomen dat dit bestand zich in het inzetbare AEM van het EAR-bestand bevindt.
+**URI van de Kaart van de Doopvont:** de relatieve of absolute plaats van het doopvont-in kaart brengend dossier. Voor een relatieve waarde wordt aangenomen dat dit bestand zich in het inzetbare AEM van het EAR-bestand bevindt.
 
 Het fonttoewijzingsbestand wordt gebruikt om aangepaste fonttoewijzingen te maken voor HTML-transformaties in formulieren. U kunt dan ook opgeven welk font wordt vervangen wanneer een font niet beschikbaar is op de computer van de client.
 
-De standaardwaarde is `com/adobe/formServer/client-font-map.properties`.
+De standaardwaarde is `com/adobe/formServer/client-font-map.properties` .
 
 De volgende vermelding is een voorbeeld van een item in het fonttoewijzingsbestand:
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**PDF-zaadbestand:** Het eerste PDF-bestand dat in een PDFForm-transformatie wordt gebruikt om de levering te optimaliseren. Met het zaadbestand PDF wordt een aangepast PDF-bestand opgegeven (dat alleen XFA-streams, afbeeldingen en fontbronnen bevat) dat wordt toegevoegd aan het formulierontwerp en de gegevens. Het formulier wordt gegenereerd door Acrobat 7 of hoger en is van toepassing op PDFForm-transformatie.
+**het Dossier van Zaad PDF:** het aanvankelijke dossier van PDF dat in een transformatie PDFForm wordt gebruikt om levering te optimaliseren. Met het zaadbestand PDF wordt een aangepast PDF-bestand opgegeven (dat alleen XFA-streams, afbeeldingen en fontbronnen bevat) dat wordt toegevoegd aan het formulierontwerp en de gegevens. Het formulier wordt gegenereerd door Acrobat 7 of hoger en is van toepassing op PDFForm-transformatie.
 
 De standaardwaarde is een lege tekenreeks.
 
-**Cachelocatie:** Hiermee geeft u de locatie van de Forms-schijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Selecteer een van de volgende opties:
+**Plaats van het Geheime voorgeheugen:** specificeert de plaats van het de schijfgeheime voorgeheugen van Forms. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Selecteer een van de volgende opties:
 
-**Standaardlocatie:** Dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
+**StandaardPlaats:** dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
 
-* **JBoss:** [JBoss Home]\server\[installatietype]\svcdata\FormServer\Cache
-* **WebLogic:** [WebLogic Home]\user_projects\domains\[domeinnaam aem-formulieren]\adobe\[naam Forms-server]\FormServer\Cache
-* **WebSphere** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **JBoss:** [ JBoss Huis ] \ server \ [installeer type]\svcdata\FormServer\Cache
+* **WebLogic:** [ WebLogic Huis ] \user_projects\domains\[naam van het domein aem-vormen] \ adobe\ [naam van de Server van Forms] \ FormServer \ Geheime voorgeheugen
+* **WebSphere:** [ IBM Huis ] \WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC Temp-map:** De cache wordt gemaakt in een submap van de tijdelijke map voor AEM formulieren, die wordt opgegeven in de beheerconsole onder Instellingen > Core System Settings > Configurations > Location of Temp Directory. De submap heeft de naam adobeform_[servernaam].
+**LC Temp Folder:** het geheime voorgeheugen wordt gecreeerd in een subdirectory van de folder van de AEM vormen temp, die in de beleidsconsole onder Montages > de Montages van het Systeem van de Kern > Configuraties > Plaats van de Folder van Temp wordt gespecificeerd. Subdirectory wordt genoemd adobeform_ [ servernaam ].
 
 >[!NOTE]
 >

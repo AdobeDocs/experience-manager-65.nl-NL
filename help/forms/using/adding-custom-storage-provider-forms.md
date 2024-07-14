@@ -21,18 +21,18 @@ ht-degree: 0%
 
 Met AEM Forms kunt u een formulier opslaan als concept. Met de conceptfunctionaliteit kunt u een formulier bijhouden dat u later vanaf elk apparaat kunt invullen en verzenden.
 
-Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het dialoogvenster `/content/forms/fp` op de instantie Publish. Daarnaast bieden de AEM Forms Portal-componenten gegevensservices waarmee u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen kunt aanpassen. U kunt bijvoorbeeld gebruikersgegevens opslaan in een gegevensopslag.
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt `/content/forms/fp` op het Publish-exemplaar. Daarnaast bieden de AEM Forms Portal-componenten gegevensservices waarmee u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen kunt aanpassen. U kunt bijvoorbeeld gebruikersgegevens opslaan in een gegevensopslag.
 
 ## Vereisten  {#prerequisites}
 
-* Inschakelen [Forms Portal-componenten](/help/forms/using/enabling-forms-portal-components.md)
-* Een [Forms Portal-pagina](/help/forms/using/creating-form-portal-page.md)
-* Inschakelen [adaptieve formulieren voor Forms Portal](/help/forms/using/draft-submission-component.md)
-* Meer informatie [implementatiedetails van aangepaste opslag](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Laat [ Forms Portal componenten ](/help/forms/using/enabling-forms-portal-components.md) toe
+* Creeer a [ de Portaalpagina van Forms ](/help/forms/using/creating-form-portal-page.md)
+* Laat [ adaptieve vormen voor Forms Portal ](/help/forms/using/draft-submission-component.md) toe
+* Leer [ implementatiedetails van douaneopslag ](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Conceptgegevensservice {#draft-data-service}
 
-Als u de opslag van gebruikersgegevens voor concepten wilt aanpassen, moet u alle methoden van het dialoogvenster `DraftDataService` interface. In de volgende voorbeeldcode worden de methoden en argumenten beschreven.
+Als u de opslag van gebruikersgegevens voor concepten wilt aanpassen, moet u alle methoden van de interface `DraftDataService` implementeren. In de volgende voorbeeldcode worden de methoden en argumenten beschreven.
 
 ```java
 /**
@@ -101,7 +101,7 @@ public interface DraftDataService {
 
 ## Verzendgegevensservice {#submission-data-service}
 
-Als u de opslag van gebruikersgegevens voor verzending wilt aanpassen, moet u alle methoden van het dialoogvenster `SubmitDataService` interface. In de volgende voorbeeldcode worden de methoden en argumenten beschreven.
+Als u de opslag van gebruikersgegevens voor verzending wilt aanpassen, moet u alle methoden van de interface `SubmitDataService` implementeren. In de volgende voorbeeldcode worden de methoden en argumenten beschreven.
 
 ```java
 /**

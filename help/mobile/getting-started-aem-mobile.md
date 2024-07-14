@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -30,10 +30,10 @@ AEM Mobile maakt deel uit van het Adobe Experience Manager multi-channel digital
 
 AEM Mobile biedt meerdere methoden voor het maken van apps. De drie verschillende manieren waarop u apps kunt maken zijn:
 
-* **[Het gebruiken van de Diensten op bestelling met AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[De On-Demand Services gebruiken zonder AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
-* **[Adobe PhoneGap Enterprise gebruiken met AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
+* **[Gebruikend de Diensten op bestelling met AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
+* **[Gebruikend de Diensten op bestelling zonder AEM ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Gebruikend de Onderneming van Adobe PhoneGap met AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]
 >
->Als je nog geen ervaring hebt met Adobe Experience Manager, kun je door [Aan de slag met AEM](/help/sites-deploying/deploy.md).
+>Als u aan Adobe Experience Manager nieuw bent, kunt u door [ willen lopen Begonnen het worden met AEM ](/help/sites-deploying/deploy.md).

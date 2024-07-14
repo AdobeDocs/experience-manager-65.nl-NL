@@ -21,32 +21,32 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Context van de cliënt is vervangen door ContextHub. Zie de [verwante documentatie](/help/sites-developing/contexthub.md) voor meer informatie.
+>De Context van de cliënt is vervangen door ContextHub. Zie de [ verwante documentatie ](/help/sites-developing/contexthub.md) voor details.
 
-De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. Met de gegevens kunt u bepalen welke inhoud in een bepaalde situatie op een webpagina moet worden weergegeven (inhoud die als doel heeft). De gegevens zijn ook beschikbaar voor analyses op websites en voor alle JavaScript-code op de pagina.
+De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. Met de gegevens kunt u bepalen welke inhoud in een bepaalde situatie op een webpagina moet worden weergegeven (inhoud die als doel heeft). De gegevens zijn ook beschikbaar voor analyses op websites en voor JavaScript op de pagina.
 
 Clientcontext bestaat hoofdzakelijk uit de volgende aspecten:
 
 * De zittingsopslag die de gebruikersgegevens bevat.
 * De interface die de gebruikersgegevens weergeeft en tools biedt om de gebruikerservaring te simuleren.
-* A [JavaScript-API](/help/sites-developing/ccjsapi.md) voor interactie met sessiewinkels.
+* A [ JavaScript API ](/help/sites-developing/ccjsapi.md) voor het in wisselwerking staan met zittingsopslag.
 
 Om een standalone zittingsopslag tot stand te brengen en het toe te voegen aan de Context van de Cliënt, of een zittingsopslag te creëren die aan een component van de Opslag van de Context gebonden is. Adobe Experience Manager (AEM) installeert diverse Context Store-componenten die u direct kunt gebruiken. U kunt deze componenten als basis voor uw componenten gebruiken.
 
-Voor informatie over het openen van de Context van de Cliënt, het vormen van de informatie die het toont, en het simuleren van de gebruikerservaring, zie [Clientcontext](/help/sites-administering/client-context.md).
+Voor informatie over het openen van de Context van de Cliënt, die de informatie vormen die het toont, en het simuleren van de gebruikerservaring, zie {de Context van de Cliënt 0} ](/help/sites-administering/client-context.md).[
 
 ## Sessiewinkels {#session-stores}
 
 De context van de Cliënt omvat diverse zittingsopslag die gebruikersgegevens bevatten. De gegevens van de opslag komen uit de volgende bronnen:
 
 * De clientwebbrowser.
-* De server (zie [JSONP Store](/help/sites-administering/client-context.md#main-pars-variable-8) voor het opslaan van informatie uit bronnen van derden)
+* De server (zie [ opslag JSONP ](/help/sites-administering/client-context.md#main-pars-variable-8) voor het opslaan van informatie van derdebronnen)
 
-Het clientcontextframework biedt een [JavaScript-API](/help/sites-developing/ccjsapi.md) die u kunt gebruiken om met zittingsopslag in wisselwerking te staan om gebruikersgegevens te lezen en te schrijven, en te luisteren en te reageren om gebeurtenissen op te slaan. U kunt ook sessiewinkels maken voor gebruikersgegevens die u gebruikt voor inhoud die zich richt op of voor andere doeleinden.
+Het kader van de Context van de Cliënt verstrekt a [ JavaScript API ](/help/sites-developing/ccjsapi.md) dat u kunt gebruiken om met zittingsopslag in wisselwerking te staan om gebruikersgegevens te lezen en te schrijven, en te luisteren en te reageren om gebeurtenissen op te slaan. U kunt ook sessiewinkels maken voor gebruikersgegevens die u gebruikt voor inhoud die zich richt op of voor andere doeleinden.
 
 Sessieopslaggegevens blijven op de client staan. De context van de Cliënt schrijft geen gegevens terug naar de server. Als u gegevens naar de server wilt verzenden, gebruikt u een formulier of ontwikkelt u aangepaste JavaScript.
 
-Elke zittingsopslag is een inzameling van bezit-waarde paren. De zittingsopslag vertegenwoordigt een inzameling van gegevens (van om het even welke soort), waarvan de conceptuele betekenis door de ontwerper, of ontwikkelaar, of allebei kan worden beslist. In het volgende voorbeeld van JavaScript-code wordt een object gedefinieerd dat de profielgegevens vertegenwoordigt die in de sessieopslag kunnen worden opgeslagen:
+Elke zittingsopslag is een inzameling van bezit-waarde paren. De zittingsopslag vertegenwoordigt een inzameling van gegevens (van om het even welke soort), waarvan de conceptuele betekenis door de ontwerper, of ontwikkelaar, of allebei kan worden beslist. In het volgende voorbeeld definieert de JavaScript-code een object dat staat voor de profielgegevens die de sessieopslag kan bevatten:
 
 ```
 {
@@ -64,7 +64,7 @@ Een zittingsopslag kan over browser zittingen worden voortgeduurd, of kan slecht
 
 >[!NOTE]
 >
->Bij persistentie opslaan worden browseropslag of cookies gebruikt (de `SessionPersistence` cookie). Browseropslag komt vaker voor.
+>Bij persistentie van de winkel worden browseropslag of cookies (het `SessionPersistence` cookie) gebruikt. Browseropslag komt vaker voor.
 >
 >Wanneer de browser wordt gesloten en opnieuw geopend, kan een zittingsopslag met de waarden van een persisted store worden geladen. Het wissen van de browsercache is nodig om de oude waarden te verwijderen.
 
@@ -77,23 +77,23 @@ Contextarchiefcomponenten kunnen de volgende items bevatten:
 * JSP manuscripten die de verschijning in de Context van de Cliënt bepalen.
 * Eigenschappen voor het weergeven van de component in Sidekick.
 * Dialoogvensters bewerken voor het configureren van componentinstanties.
-* JavaScript dat de zittingsopslag initialiseert.
+* JavaScript die de sessiewinkel initialiseert.
 
-Voor een beschrijving van de geïnstalleerde componenten van de Opslag van de Context die u aan de Opslag kunt toevoegen Context, zie [Beschikbare clientcontextcomponenten](/help/sites-administering/client-context.md#available-client-context-components).
+Voor een beschrijving van de geïnstalleerde Componenten van de Opslag van de Context die u aan de Opslag van de Context kunt toevoegen, zie [ Beschikbare Componenten van de Context van de Cliënt ](/help/sites-administering/client-context.md#available-client-context-components).
 
 >[!NOTE]
 >
->Paginagegevens bevinden zich niet meer in de clientcontext als een standaardcomponent. Indien nodig kunt u dit toevoegen door de clientcontext te bewerken en de **Algemene winkeleigenschappen** component, dan vormt dit om te bepalen **Winkel** als `pagedata`.
+>Paginagegevens bevinden zich niet meer in de clientcontext als een standaardcomponent. Indien nodig, kunt u dit toevoegen door de cliëntcontext uit te geven, toevoegend de **Algemene component van de Eigenschappen van de Opslag**, dan vormend dit om de **Opslag** als `pagedata` te bepalen.
 
 ### Doelgerichte levering van inhoud {#targeted-content-delivery}
 
-Profielgegevens worden ook gebruikt voor levering [doelinhoud](/help/sites-authoring/content-targeting-touch.md).
+De informatie van het profiel wordt ook gebruikt voor het leveren van [ gerichte inhoud ](/help/sites-authoring/content-targeting-touch.md).
 
-![clientContext_targetContentdelivery](assets/clientcontext_targetedcontentdelivery.png) ![clientContext_targetContentDeliydetail](assets/clientcontext_targetedcontentdeliverydetail.png)
+![ clientContext_targetdcontentdelivery ](assets/clientcontext_targetedcontentdelivery.png) ![ clientcontext_targetdcontentDeliydetail ](assets/clientcontext_targetedcontentdeliverydetail.png)
 
 ## Clientcontext aan een pagina toevoegen {#adding-client-context-to-a-page}
 
-Neem de component Client Context op in de hoofdsectie van uw webpagina&#39;s om Client Context in te schakelen. Het pad van het knooppunt Client Context component is `/libs/cq/personalization/components/clientcontext`. Als u de component wilt opnemen, voegt u de volgende code toe aan het JSP-bestand van uw paginacomponent, vlak onder de component `body` element van uw pagina:
+Neem de component Client Context op in de hoofdsectie van uw webpagina&#39;s om Client Context in te schakelen. Het pad van het knooppunt Client Context component is `/libs/cq/personalization/components/clientcontext` . Als u de component wilt opnemen, voegt u de volgende code toe aan het JSP-bestand van uw paginacomponent, dat zich net onder het element `body` van de pagina bevindt:
 
 ```java
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
@@ -101,7 +101,7 @@ Neem de component Client Context op in de hoofdsectie van uw webpagina&#39;s om 
 
 De component ClientContext veroorzaakt de pagina om de cliëntbibliotheken te laden die de Context van de Cliënt uitvoeren.
 
-* De JavaScript-API voor de clientcontext.
+* De JavaScript-API voor clientcontext.
 * Het kader van de Context van de Cliënt dat zittingsopslag, gebeurtenisbeheer, etc. steunt.
 * Segmenten die zijn gedefinieerd.
 * De manuscripten init.js die voor elke component van de contextopslag worden geproduceerd die aan de Context van de Cliënt is toegevoegd.
@@ -118,40 +118,40 @@ Om de Context van de Cliënt uit te breiden, creeer een zittingsopslag en naar k
 
 >[!NOTE]
 >
->Als u een `JSONP` de dienst die de gegevens kan verstrekken, kunt u eenvoudig gebruiken `JSONP` contextstore component en map het aan de dienst JSONP. Dit handelt de zittingsopslag af.
+>Als u een `JSONP` -service hebt (of maakt) die de gegevens kan leveren, kunt u gewoon de `JSONP` -contextopslagcomponent gebruiken en deze toewijzen aan de JSONP-service. Dit handelt de zittingsopslag af.
 
 ### Een Sessiewinkel maken {#creating-a-session-store}
 
 Creeer een zittingsopslag voor de gegevens die u aan moet toevoegen en van de Context van de Cliënt terugwinnen. Over het algemeen, gebruikt u de volgende procedure om een zittingsopslag tot stand te brengen:
 
-1. Een clientbibliotheekmap maken met een `categories` eigenschapswaarde van `personalization.stores.kernel`. Clientcontext laadt automatisch de clientbibliotheken van deze categorie.
+1. Maak een clientbibliotheekmap met de eigenschapswaarde `categories` `personalization.stores.kernel` . Clientcontext laadt automatisch de clientbibliotheken van deze categorie.
 
-1. Configureer de clientbibliotheekmap zodat deze afhankelijk is van de map `personalization.core.kernel` clientbibliotheekmap. De `personalization.core.kernel` De clientbibliotheek bevat de JavaScript-API voor de clientcontext.
+1. Configureer de clientbibliotheekmap zodat deze afhankelijk is van de clientbibliotheekmap van `personalization.core.kernel` . De `personalization.core.kernel` -clientbibliotheek biedt de JavaScript-API voor de clientcontext.
 
-1. Voeg het JavaScript toe dat de zittingsopslag creeert en initialiseert.
+1. Voeg de JavaScript toe die de sessiewinkel maakt en initialiseert.
 
-Als u JavaScript opneemt in de client-bibliotheek personalization.stores.kernel, wordt de opslag gemaakt wanneer het Context-framework van de client wordt geladen.
+Als u de JavaScript opneemt in de client-bibliotheek personalization.stores.kernel, wordt de winkel gemaakt wanneer het Context-framework van de client wordt geladen.
 
 >[!NOTE]
 >
->Als u een zittingsopslag als deel van een component van de contextopslag creeert, kunt u JavaScript in het init.js.jsp- dossier van de component anders plaatsen. In dit geval, wordt de zittingsopslag gecreeerd slechts als de component aan de Context van de Cliënt wordt toegevoegd.
+>Als u een zittingsopslag als deel van een component van de contextopslag creeert, kunt u JavaScript in het init.js.jsp dossier van de component anders plaatsen. In dit geval, wordt de zittingsopslag gecreeerd slechts als de component aan de Context van de Cliënt wordt toegevoegd.
 
 #### Soorten sessiewinkels {#types-of-session-stores}
 
 Sessiewinkels worden gemaakt en beschikbaar tijdens een browsersessie, of blijven aanwezig in browseropslag of cookies. De JavaScript-API voor clientcontext definieert verschillende klassen die beide typen gegevensopslag vertegenwoordigen:
 
-* ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: Deze objecten staan alleen op de pagina DOM. De gegevens worden gemaakt en geduurd tijdens de levensduur van de pagina.
-* ` [CQ_Analytics.PerstistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore)`: Deze objecten bevinden zich in het pagina-DOM en zijn opgeslagen in een browser of in cookies. De gegevens zijn beschikbaar op pagina&#39;s en in gebruikerssessies.
+* ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: deze objecten staan alleen op de pagina DOM. De gegevens worden gemaakt en geduurd tijdens de levensduur van de pagina.
+* ` [CQ_Analytics.PerstistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore)`: deze objecten bevinden zich op de pagina-DOM en zijn opgeslagen in een browser of in cookies. De gegevens zijn beschikbaar op pagina&#39;s en in gebruikerssessies.
 
 API verstrekt ook uitbreidingen van deze klassen die voor het opslaan van JSON- gegevens of JSONP- gegevens worden gespecialiseerd:
 
-* Alleen sessieobjecten: [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-jsonstore) en [CQ_Analytics.JSONPStore](/help/sites-developing/ccjsapi.md#cq-analytics-jsonpstore).
+* Zitting-slechts voorwerpen: [ CQ_Analytics.JSONStore ](/help/sites-developing/ccjsapi.md#cq-analytics-jsonstore) en [ CQ_Analytics.JSONPStore ](/help/sites-developing/ccjsapi.md#cq-analytics-jsonpstore).
 
-* Blijvende objecten: [CQ_Analytics.PersistedJSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedjsonstore) en [CQ_Analytics.PersistedJSONPStore](/help/sites-developing/ccjsapi.md#cq-analyics-persistedjsonpstore).
+* Blijven voorwerpen: [ CQ_Analytics.PersistedJSONStore ](/help/sites-developing/ccjsapi.md#cq-analytics-persistedjsonstore) en [ CQ_Analytics.PersistedJSONPStore ](/help/sites-developing/ccjsapi.md#cq-analyics-persistedjsonpstore).
 
 #### Sessiewinkelobject maken {#creating-the-session-store-object}
 
-Het JavaScript van uw omslag van de cliëntbibliotheek leidt tot en initialiseert de zittingsopslag. De zittingsopslag moet worden geregistreerd gebruikend de Manager van de Opslag van de Context. In het volgende voorbeeld wordt een [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) object.
+De JavaScript van uw clientbibliotheekmap maakt en initialiseert de sessiewinkel. De zittingsopslag moet worden geregistreerd gebruikend de Manager van de Opslag van de Context. Het volgende voorbeeld leidt tot en registreert a [ CQ_Analytics.SessionStore ](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) voorwerp.
 
 ```
 //Create the session store
@@ -167,7 +167,7 @@ if (CQ_Analytics.ClientContextMgr){
 }
 ```
 
-Voor het opslaan van JSON-gegevens wordt in het volgende voorbeeld een [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) object.
+Voor het opslaan van JSON- gegevens, leidt het volgende voorbeeld tot en registreert a [ CQ_Analytics.JSONStore ](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) voorwerp.
 
 ```
 if (!CQ_Analytics.myJSONStore) {
@@ -188,11 +188,11 @@ Creeer een component van de contextopslag om zittingsopslaggegevens in de Contex
 
 AEM verstrekt de genericstore en de genericstoreproperties contextstore componenten die u kunt uitbreiden. De structuur van uw opslaggegevens bepaalt de component die u uitbreidt:
 
-* Eigenschap-waardeparen: breid de `GenericStoreProperties` component. Deze component geeft automatisch opslagruimten van eigenschap-waarde paren terug. Er zijn verschillende interactiepunten beschikbaar:
+* Eigenschap-waardeparen: breid de component `GenericStoreProperties` uit. Deze component geeft automatisch opslagruimten van eigenschap-waarde paren terug. Er zijn verschillende interactiepunten beschikbaar:
 
-   * `prolog.jsp` en `epilog.jsp`: componentinteractie waarmee u logica aan de serverzijde kunt toevoegen voor of na het renderen van de component.
+   * `prolog.jsp` en `epilog.jsp` : componentinteractie waarmee u logica aan de serverzijde kunt toevoegen voor- of na het renderen van de component.
 
-* Complexe gegevens: breid de `GenericStore` component. Uw zittingsopslag heeft een &quot;renderer&quot;methode nodig die wordt geroepen telkens als de component moet worden teruggegeven. De renderfunctie wordt aangeroepen met twee parameters:
+* Complexe gegevens: breid de component `GenericStore` uit. Uw zittingsopslag heeft een &quot;renderer&quot;methode nodig die wordt geroepen telkens als de component moet worden teruggegeven. De renderfunctie wordt aangeroepen met twee parameters:
 
    * `@param {String} store`
 De weer te geven opslag
@@ -202,27 +202,27 @@ Id van de div waarin de opslag moet worden teruggegeven.
 
 >[!NOTE]
 >
->Alle componenten van de Context van de Cliënt zijn uitbreidingen van of de Algemene opslag of de Algemene componenten van de Eigenschappen van de Opslag. In het dialoogvenster `/libs/cq/personalization/components/contextstores` map.
+>Alle componenten van de Context van de Cliënt zijn uitbreidingen van of de Algemene opslag of de Algemene componenten van de Eigenschappen van de Opslag. In de map `/libs/cq/personalization/components/contextstores` zijn verschillende voorbeelden geïnstalleerd.
 
 #### De weergave in Sidekick configureren {#configuring-the-appearance-in-sidekick}
 
-Wanneer het uitgeven van de Context van de Cliënt, verschijnen de componenten van de contextopslag in Sidekick. Zoals bij alle componenten, `componentGroup` en `jcr:title` eigenschappen van de component van de cliëntcontext bepalen de groep en de naam van de component.
+Wanneer het uitgeven van de Context van de Cliënt, verschijnen de componenten van de contextopslag in Sidekick. Net als bij alle componenten bepalen de eigenschappen `componentGroup` en `jcr:title` van de client-contextcomponent de groep en naam van de component.
 
-Alle componenten met een `componentGroup` eigenschapswaarde van `Client Context` worden standaard in Sidekick weergegeven. Als u een andere waarde gebruikt voor de `componentGroup` eigenschap, moet u de component handmatig aan de Sidekick toevoegen in de ontwerpmodus.
+Alle componenten met de eigenschapswaarde `componentGroup` `Client Context` worden standaard in de Sidekick weergegeven. Als u een andere waarde voor de eigenschap `componentGroup` gebruikt, moet u de component handmatig in de ontwerpmodus aan de Sidekick toevoegen.
 
 #### Context Store-componentinstanties {#context-store-component-instances}
 
-Wanneer u een component van de contextopslag aan de Context van de Cliënt toevoegt, wordt een knoop die de componenteninstantie vertegenwoordigt hieronder gecreeerd `/etc/clientcontext/default/content/jcr:content/stores`. Dit knooppunt bevat de eigenschapwaarden die zijn geconfigureerd via het dialoogvenster voor bewerken van de component.
+Wanneer u een component van de contextopslag aan de Context van de Cliënt toevoegt, wordt een knoop die de componenteninstantie vertegenwoordigt gecreeerd hieronder `/etc/clientcontext/default/content/jcr:content/stores`. Dit knooppunt bevat de eigenschapwaarden die zijn geconfigureerd via het dialoogvenster voor bewerken van de component.
 
 Wanneer de Context van de Cliënt wordt geïnitialiseerd, worden deze knopen verwerkt.
 
 #### De bijbehorende Sessiewinkel initialiseren {#initializing-the-associated-session-store}
 
-Voeg een init.js.jsp-bestand toe aan uw component om JavaScript-code te genereren waarmee de sessieopslagruimte wordt geïnitialiseerd die door uw contextarchiefcomponent wordt gebruikt. Bijvoorbeeld, gebruik het initialisatiescript om configuratieeigenschappen voor de component terug te winnen en hen te gebruiken om de zittingsopslag te bevolken.
+Voeg een init.js.jsp-bestand toe aan uw component om JavaScript-code te genereren waarmee de sessieopslagruimte wordt geïnitialiseerd die door uw contextwinkelcomponent wordt gebruikt. Bijvoorbeeld, gebruik het initialisatiescript om configuratieeigenschappen voor de component terug te winnen en hen te gebruiken om de zittingsopslag te bevolken.
 
-Het gegenereerde JavaScript wordt aan de pagina toegevoegd wanneer Client Context wordt geïnitialiseerd bij het laden van de pagina op zowel de auteur- als de publicatieinstantie. Dit JSP wordt uitgevoerd alvorens de instantie van de component van de contextstore wordt geladen en teruggegeven.
+De JavaScript die wordt gegenereerd, wordt aan de pagina toegevoegd wanneer Client Context wordt geïnitialiseerd bij het laden van de pagina op zowel de auteur- als de publicatieinstantie. Dit JSP wordt uitgevoerd alvorens de instantie van de component van de contextstore wordt geladen en teruggegeven.
 
-De code moet het mime-type van het bestand instellen op `text/javascript`, of wordt niet uitgevoerd.
+De code moet het mime-type van het bestand instellen op `text/javascript` , anders wordt het niet uitgevoerd.
 
 >[!CAUTION]
 >
@@ -231,7 +231,7 @@ De code moet het mime-type van het bestand instellen op `text/javascript`, of wo
 De volgende procedure leidt tot het init.js.jsp manuscriptdossier en voegt de code toe die het correcte mime type plaatst. De code die de opslaginitialisatie uitvoert zou volgen.
 
 1. Klik met de rechtermuisknop op het knooppunt van de contextstore-component en klik op Maken > Bestand maken.
-1. Typ in het veld Naam `init.js.jsp` en klik vervolgens op OK.
+1. Typ `init.js.jsp` in het veld Naam en klik op OK.
 1. Voeg boven aan de pagina de volgende code toe en klik op Alles opslaan.
 
    ```java
@@ -244,7 +244,7 @@ Gegevens van sessieopslagbestanden weergeven in Client Context met een consisten
 
 #### Eigenschapsgegevens weergeven {#displaying-property-data}
 
-De personalisatietag verstrekt `personalization:storePropertyTag` -tag die de waarde van een eigenschap uit een sessiewinkel weergeeft. Als u de tag wilt gebruiken, neemt u de volgende coderegel op in uw JSP-bestand:
+De personalisatietag verstrekt de `personalization:storePropertyTag` markering die de waarde van een bezit van een zittingsopslag toont. Als u de tag wilt gebruiken, neemt u de volgende coderegel op in uw JSP-bestand:
 
 ```xml
 <%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
@@ -256,7 +256,7 @@ De tag heeft de volgende indeling:
 <personalization:storePropertyTag propertyName="property_name" store="session_store_name"/>
 ```
 
-De `propertyName` Dit kenmerk is de naam van de eigenschap store die moet worden weergegeven. De `store` Dit kenmerk is de naam van de geregistreerde winkel. In de volgende voorbeeldtag wordt de waarde van de tag `authorizableId` eigendom van de `profile` opslag:
+Het kenmerk `propertyName` is de naam van de eigenschap store die moet worden weergegeven. Het kenmerk `store` is de naam van de geregistreerde winkel. Met de volgende voorbeeldtag wordt de waarde van de eigenschap `authorizableId` van de `profile` store weergegeven:
 
 ```xml
 <personalization:storePropertyTag propertyName="authorizableId" store="profile"/>
@@ -291,12 +291,12 @@ De map personalization.ui met clientbibliotheken (/etc/clientlibs/foundation/per
 </div>
 ```
 
-De `/libs/cq/personalization/components/contextstores/profiledata` context store component gebruikt deze structuur om gegevens van de opslag van de profielzitting te tonen. De `cq-cc-thumbnail` -klasse plaatst de miniatuurafbeelding. De `cq-cc-store-property-level*x*` de klassen formatteren de alfanumerieke gegevens:
+De contextopslagcomponent van `/libs/cq/personalization/components/contextstores/profiledata` gebruikt deze structuur om gegevens uit het profielsessiearchief weer te geven. De klasse `cq-cc-thumbnail` plaatst de miniatuurafbeelding. De klassen `cq-cc-store-property-level*x*` formatteren de alfanumerieke gegevens:
 
 * level0, level1, en level2 worden verticaal verdeeld, en gebruiken een witte doopvont.
 * niveau3 en eventuele extra niveaus worden horizontaal verdeeld en gebruiken een wit lettertype met een donkerdere achtergrond.
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![ chlimage_1-4 ](assets/chlimage_1-4.png)
 
 ### Sessieopslaggegevens renderen voor componenten van het energieopslagsysteem {#rendering-session-store-data-for-genericstore-components}
 
@@ -307,7 +307,7 @@ Als u opslaggegevens wilt renderen met een component genericstore, moet u het vo
 
 #### De SAP-winkel van de winkel identificeren {#identifying-the-genericstore-session-store}
 
-De personalisatietag verstrekt `personalization:storePropertyTag` -tag die de waarde van een eigenschap uit een sessiewinkel weergeeft. Als u de tag wilt gebruiken, neemt u de volgende coderegel op in uw JSP-bestand:
+De personalisatietag verstrekt de `personalization:storePropertyTag` markering die de waarde van een bezit van een zittingsopslag toont. Als u de tag wilt gebruiken, neemt u de volgende coderegel op in uw JSP-bestand:
 
 ```xml
 <%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
@@ -323,8 +323,10 @@ De tag heeft de volgende indeling:
 
 Uw zittingsopslag heeft een &quot;renderer&quot;methode nodig die wordt geroepen telkens als de component moet worden teruggegeven. De renderfunctie wordt aangeroepen met twee parameters:
 
-* @param {String} De winkel opslaan die moet worden gerenderd
-* @param {String} divId van de div waarin de winkel moet worden gerenderd.
+* @param {String} store
+De weer te geven opslag
+* @param {String} divId
+Id van de div waarin de opslag moet worden teruggegeven.
 
 ## Interactie met Sessiewinkels {#interacting-with-session-stores}
 
@@ -332,9 +334,9 @@ Gebruik JavaScript om te communiceren met sessiewinkels.
 
 ### Sessiewinkels openen {#accessing-session-stores}
 
-Vraag een voorwerp van de zittingsopslag om gegevens aan de opslag te lezen of te schrijven. [CQ_Analytics.ClientContextMgr](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextmgr) biedt toegang tot opslagruimten op basis van de naam van de winkel. Gebruik na het verkrijgen de methoden van de [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) of [CQ_Analytics.PersistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore) om met opslaggegevens in wisselwerking te staan.
+Vraag een voorwerp van de zittingsopslag om gegevens aan de opslag te lezen of te schrijven. [ CQ_Analytics.ClientContextMgr ](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextmgr) verleent toegang tot opslag die op de archiefnaam wordt gebaseerd. Zodra verkregen, gebruik de methodes van [ CQ_Analytics.SessionStore ](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) of [ CQ_Analytics.PersistedSessionStore ](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore) om met opslaggegevens in wisselwerking te staan.
 
-In het volgende voorbeeld wordt het `profile` de opslag en dan terugwint `formattedName` eigenschap uit de winkel.
+In het volgende voorbeeld wordt de `profile` store opgehaald en wordt de eigenschap `formattedName` opgehaald uit de store.
 
 ```
 function getName(){
@@ -351,9 +353,9 @@ function getName(){
 
 Sessie slaat brandgebeurtenissen op, zodat het mogelijk is om listeners toe te voegen en gebeurtenissen te activeren die op deze gebeurtenissen zijn gebaseerd.
 
-De sessiewinkels zijn gebaseerd op de `Observable` patroon. Zij worden uitgebreid [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) die de ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` methode.
+De sessiewinkels zijn gebaseerd op het `Observable` -patroon. Ze breiden [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) uit met de methode ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` .
 
-In het volgende voorbeeld wordt een listener toegevoegd aan de `update` de `profile` de zittingsopslag.
+In het volgende voorbeeld wordt een listener toegevoegd aan de `update` -gebeurtenis van de `profile` -sessiewinkel.
 
 ```
 var profileStore = ClientContextMgr.getRegisteredStore("profile");
@@ -375,17 +377,17 @@ Sessiewinkels zijn pas beschikbaar als ze zijn geladen en geïnitialiseerd met g
 
 * Pagina laden
 * JavaScript laden
-* Uitvoeringstijd van JavaScript
+* Uitvoeringstijd JavaScript
 * Responstijden voor XHR-verzoeken
 * Dynamische wijzigingen in de sessiewinkel
 
-Gebruik de [CQ_Analytics.ClientContextUtils](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) object [onStoreRegistered](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) en [onStoreInitialized](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) methoden om sessiewinkels te openen, alleen wanneer deze beschikbaar zijn. Met deze methoden kunt u gebeurtenislisteners registreren die reageren op sessieregistratie- en initialisatiegebeurtenissen.
+Gebruik [ CQ_Analytics.ClientContextUtils ](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) voorwerp [ onStoreRegistered ](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) en [ onStoreInitialized ](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) methodes om tot zittingsopslag slechts toegang te hebben wanneer zij beschikbaar zijn. Met deze methoden kunt u gebeurtenislisteners registreren die reageren op sessieregistratie- en initialisatiegebeurtenissen.
 
 >[!CAUTION]
 >
 >Als u van een andere opslag afhankelijk bent, moet u rekening houden met het geval wanneer de winkel nooit is geregistreerd.
 
-In het volgende voorbeeld wordt het `onStoreRegistered` de `profile` de zittingsopslag. Wanneer de winkel is geregistreerd, wordt een listener toegevoegd aan de `update` gebeurtenis van de zittingsopslag. Wanneer de opslag wordt bijgewerkt, de inhoud van `<div class="welcome">` -element op de pagina wordt bijgewerkt met de naam van het `profile` opslaan.
+In het volgende voorbeeld wordt de gebeurtenis `onStoreRegistered` van de `profile` -sessiewinkel gebruikt. Wanneer de winkel is geregistreerd, wordt een listener toegevoegd aan de `update` -gebeurtenis van de sessiewinkel. Wanneer de winkel wordt bijgewerkt, wordt de inhoud van het element `<div class="welcome">` op de pagina bijgewerkt met de naam uit de `profile` store.
 
 ```
 //listen for the store registration
@@ -415,7 +417,7 @@ function getName(){
 
 ### Een eigenschap uitsluiten van de sessionpersistentie-cookie {#excluding-a-property-from-the-sessionpersistence-cookie}
 
-Een eigenschap van een `PersistedSessionStore` van het voortbestaan (dat wil zeggen, sluit het van `sessionpersistence` cookie), voegt u de eigenschap toe aan de niet-voortgezette eigenschappenlijst van de voortgezette sessieopslag.
+Als u wilt voorkomen dat een eigenschap van een `PersistedSessionStore` wordt voortgezet (door deze uit te sluiten van het `sessionpersistence` -cookie), voegt u de eigenschap toe aan de lijst met niet-persistente eigenschappen van de persistente sessiewinkel.
 
 Zie ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
@@ -432,14 +434,14 @@ CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) 
 
 ### Voorwaarden {#conditions}
 
-De huidige pagina moet een bijbehorende mobiele pagina hebben. Dit wordt alleen bepaald als op de pagina een LiveCopy is geconfigureerd met een mobiele rollout-configuratie ( `rolloutconfig.path.toLowerCase` contains `mobile`).
+De huidige pagina moet een bijbehorende mobiele pagina hebben. Dit wordt alleen bepaald als op de pagina een LiveCopy is geconfigureerd met een mobiele rollout-configuratie ( `rolloutconfig.path.toLowerCase` bevat `mobile` ).
 
 #### Configuratie {#configuration}
 
 Bij het schakelen van de desktoppagina naar het bijbehorende mobiele equivalent:
 
 * De DOM van de mobiele pagina wordt geladen.
-* De belangrijkste `div` (vereist) die de inhoud bevat, wordt uitgepakt en in de huidige desktoppagina geïnjecteerd.
+* Het hoofd `div` (vereist) dat de inhoud bevat, wordt geëxtraheerd en in de huidige desktoppagina geïnjecteerd.
 
 * De CSS- en body-klassen die worden geladen, moeten handmatig worden geconfigureerd.
 
@@ -480,7 +482,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 In dit voorbeeld maakt u een contextopslagcomponent die gegevens van een externe service ophaalt en deze in de sessieopslag opslaat:
 
 * Breidt de genericstoreproperties-component uit.
-* Initialiseert een opslag met behulp van een JavaScript-object CQ_Analytics.JSONPStore.
+* Initialiseert een winkel met behulp van een JavaScript-object CQ_Analytics.JSONPStore.
 * Roept de dienst JSONP om gegevens terug te winnen en het toe te voegen aan de opslag.
 * Geeft de gegevens in de Context van de Cliënt terug.
 
@@ -488,10 +490,10 @@ In dit voorbeeld maakt u een contextopslagcomponent die gegevens van een externe
 
 Maak een CQ-toepassing en voeg de geoloccomponent toe.
 
-1. CRXDE Lite openen in uw webbrowser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
-1. Klik met de rechtermuisknop op de knop `/apps` en klik op Maken > Map maken. Geef een naam op voor `myapp` en klik vervolgens op OK.
-1. Op dezelfde manier verderop `myapp`, maakt u een map met de naam `contextstores`. &quot;
-1. Klik met de rechtermuisknop op de knop `/apps/myapp/contextstores` en klik op Maken > Component maken. Geef de volgende eigenschapswaarden op en klik op Volgende:
+1. Open CRXDE Lite in uw Webbrowser ([ https://localhost:4502/crx/de ](https://localhost:4502/crx/de)).
+1. Klik met de rechtermuisknop op de map `/apps` en klik op Maken > Map maken. Geef een naam op van `myapp` en klik op OK.
+1. Maak onder `myapp` ook een map met de naam `contextstores` . &quot;
+1. Klik met de rechtermuisknop op de map `/apps/myapp/contextstores` en klik op Maken > Component maken. Geef de volgende eigenschapswaarden op en klik op Volgende:
 
    * Label: geoloc
    * Titel: Locatiewinkel
@@ -505,15 +507,15 @@ Maak een CQ-toepassing en voeg de geoloccomponent toe.
 
 Voor de component Context Store is een dialoogvenster voor bewerken vereist. Het dialoogvenster voor geoloc-bewerking bevat een statisch bericht dat aangeeft dat er geen eigenschappen zijn om te configureren.
 
-1. Klik met de rechtermuisknop op de knop `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` en klik op Kopiëren.
-1. Klik met de rechtermuisknop op de knop `/apps/myapp/contextstores/geoloc` en klik op Plakken.
+1. Klik met de rechtermuisknop op het knooppunt `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` en klik op Copy.
+1. Klik met de rechtermuisknop op het knooppunt `/apps/myapp/contextstores/geoloc` en klik op Plakken.
 1. Verwijder alle onderliggende knooppunten onder het knooppunt /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items:
 
    * winkel
    * eigenschappen
    * miniatuur
 
-1. Klik met de rechtermuisknop op de knop `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` en klik op Maken > Knooppunt maken. Geef de volgende eigenschapswaarden op en klik op OK:
+1. Klik met de rechtermuisknop op het knooppunt `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` en klik op Maken > Knooppunt maken. Geef de volgende eigenschapswaarden op en klik op OK:
 
    * Naam: statisch
    * Type: cq:Widget
@@ -528,13 +530,13 @@ Voor de component Context Store is een dialoogvenster voor bewerken vereist. Het
 
 1. Klik op Alles opslaan.
 
-   ![chlimage_1-5](assets/chlimage_1-5.png)
+   ![ chlimage_1-5 ](assets/chlimage_1-5.png)
 
 ### Het initialisatiescript maken {#create-the-initialization-script}
 
 Voeg een init.js.jsp-bestand toe aan de geoloc-component en gebruik dit bestand om de sessieopslag te maken, de locatiegegevens op te halen en toe te voegen aan de winkel.
 
-Het bestand init.js.jsp wordt uitgevoerd wanneer de clientcontext door de pagina wordt geladen. Tegen deze tijd wordt de JavaScript-API voor de clientcontext geladen en beschikbaar voor uw script.
+Het bestand init.js.jsp wordt uitgevoerd wanneer de clientcontext door de pagina wordt geladen. Tegen deze tijd wordt de JavaScript-API voor clientcontext geladen en beschikbaar voor uw script.
 
 1. Klik met de rechtermuisknop op het knooppunt /apps/myapp/contextstores/geoloc en klik op Maken > Bestand maken. Geef een naam op voor init.js.jsp en klik op OK.
 1. Voeg de volgende code toe boven aan de pagina en klik op Alles opslaan.
@@ -558,9 +560,9 @@ Het bestand init.js.jsp wordt uitgevoerd wanneer de clientcontext door de pagina
 
 Voeg de code aan het JSP dossier van de geologische component toe om de opslaggegevens in de Context van de Cliënt terug te geven.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![ chlimage_1-6 ](assets/chlimage_1-6.png)
 
-1. Open in CRXDE Lite de `/apps/myapp/contextstores/geoloc/geoloc.jsp` bestand.
+1. Open het bestand `/apps/myapp/contextstores/geoloc/geoloc.jsp` in CRXDE Lite.
 1. Voeg de volgende HTML code onder de sectie toe:
 
    ```xml
@@ -593,11 +595,11 @@ Voeg de code aan het JSP dossier van de geologische component toe om de opslagge
 
 Voeg de component van de Opslag van de Plaats aan de Context van de Cliënt toe zodat het wordt geïnitialiseerd wanneer de pagina laadt.
 
-1. Open de startpagina Geometrixx Outdoors op de auteurinstantie ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Open de homepage van Geometrixx Outdoors op de auteursinstantie ([ https://localhost:4502/content/geometrixx-outdoors/en.html ](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Klik op Ctrl-Alt-c (vensters) of Control-option-c (Mac) om Client Context te openen.
 1. Klik op het bewerkingspictogram boven aan Client Context om Client Context Designer te openen.
 
-   ![Het pictogram Bewerken dat wordt aangegeven door een potlood in een vierkant.](do-not-localize/chlimage_1.png)
+   ![ geef pictogram uit door een potlood binnen een vierkant wordt vermeld dat.](do-not-localize/chlimage_1.png)
 
 1. Sleep de component van de Opslag van de Plaats aan de Context van de Cliënt.
 
@@ -605,7 +607,7 @@ Voeg de component van de Opslag van de Plaats aan de Context van de Cliënt toe 
 
 Open de homepage van Geometrixx Outdoors op geef wijze uit en open dan de Context van de Cliënt om de gegevens van de component van de Opslag van de Plaats te zien.
 
-1. Open de Engelse pagina van de site Geometrixx Outdoors. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
+1. Open de Engelse pagina van de site Geometrixx Outdoors. ([ https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Druk op Ctrl+Alt+c (vensters) of Control+Option+c (Mac) om de clientcontext te openen.
 
 ## Een aangepaste clientcontext maken {#creating-a-customized-client-context}

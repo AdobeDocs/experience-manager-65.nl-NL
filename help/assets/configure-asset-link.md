@@ -15,50 +15,50 @@ ht-degree: 0%
 
 # Experience Manager Assets for Adobe Asset Link configureren {#adobe-asset-link}
 
-[Adobe Asset Link (AAL)](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Adobe Experience Manager Assets wordt verbonden met Creative Cloud-bureaubladapps Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die in AEM Assets is opgeslagen en kunnen ze deze inhoud wijzigen zonder dat ze de meest bekende creatieve toepassingen hoeven te gebruiken.
+[ de Verbinding van Activa van de Adobe (AAL) ](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) stroomlijnt samenwerking tussen creatieven en verkopers in het proces van de inhoudsverwezenlijking. Adobe Experience Manager Assets wordt verbonden met Creative Cloud-bureaubladapps Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die in AEM Assets is opgeslagen en kunnen ze deze inhoud wijzigen zonder dat ze de meest bekende creatieve toepassingen hoeven te gebruiken.
 
 Om Experience Manager Assets te vormen die met de Verbinding van Activa moet worden gebruikt, voer de volgende taken uit. De beheerderrekening van de Experience Manager van het gebruik om de configuratie te doen:
 
-1. Installeer de pakketten naar wens. Details vindt u in [voorwaarden](#prerequisites).
+1. Installeer de pakketten naar wens. De details zijn in [ eerste vereisten ](#prerequisites).
 
-1. Experience Manager configureren [handmatig](#manual-configuration) of met een [package](#configure-using-package).
+1. Vorm Experience Manager of [ manueel ](#manual-configuration) of gebruikend a [ pakket ](#configure-using-package).
 
-1. Als u gebruikers met een licentie voor Creatives Cloud wilt toewijzen aan gebruikers met een Experience Manager, beheert u [gebruikerstoegangsbeheer](#user-access).
+1. Om Creative Cloud in kaart te brengen vergunning gegeven gebruikers met de gebruikers van de Experience Manager, [ controle van de gebruikerstoegang ](#user-access) beheren.
 
-1. Maken [aangepaste query-index](#create-custom-index), configureren [FPO-uitvoeringen](/help/assets/configure-fpo-renditions.md) voor InDesign, configureren [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md)en configureren [zoeken op visuele of gelijkenis](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
+1. Creeer [ de index van de douanevraag ](#create-custom-index), vorm [ Vertoningen FPO ](/help/assets/configure-fpo-renditions.md) voor InDesign, vorm [ de integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md), en vorm [ visueel of gelijkenis onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
 
 ## Vereisten en ondersteuning voor verschillende functies {#prerequisites}
 
 Zorg ervoor dat u het juiste servicepakket en -pakket installeert. Zie de volgende vereisten voor elke versie van de Experience Manager en voor specifieke mogelijkheden.
 
-| Middelen | Versie van Experience Manager en vereisten voor ondersteuning |
+| Assets-functionaliteit | Versie van Experience Manager en vereisten voor ondersteuning |
 |--- |--- |
-| Koppeling van middelen werkt standaard | Experience Manager 6.5 en 6.5.2 of hoger. </br> Experience Manager 6.4.4 en 6.4.6 of hoger. </br> Adobe raadt u aan de nieuwste [De dienstpak van de Experience Manager (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) voordat u AAL gebruikt. |
-| Asset Link werkt na het installeren van een pakket | Voor Experience Manager 6.4.0 - 6.4.3, installeer [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) pakket. |
+| Koppeling van middelen werkt standaard | Experience Manager 6.5 en 6.5.2 of hoger. </br> Experience Manager 6.4.4 en 6.4.6 of hoger. </br> Adobe adviseert installerend het recentste [ de dienstpak van de Experience Manager (SP) ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) alvorens AAL te gebruiken. |
+| Asset Link werkt na het installeren van een pakket | Voor Experience Manager 6.4.0 - 6.4.3, installeer [ adobe-asset-link-steun ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) pakket. |
 | Adobe Stock-integratie | Experience Manager 6.4.2 of hoger |
 | Zoeken op visuele of gelijkenis | Experience Manager 6.5.0 of hoger |
 
 
 ## Experience Manager configureren met het configuratiepakket {#configure-using-package}
 
-Adobe raadt u aan te installeren [adobe-asset-link-config](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/adobe-asset-link-config) configuratiepakket om de meeste configuratietaken te automatiseren, gevolgd door een paar handmatige taken. U kunt ook [handmatig configureren](#manual-configuration).
+De Adobe adviseert dat u [ adobe-asset-link-config ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/adobe-asset-link-config) configuratiepakket installeert om de meeste configuratietaken te automatiseren, die door een paar handtaken worden gevolgd. Alternatief, kunt u [ manueel vormen ](#manual-configuration).
 
 >[!CAUTION]
 >
->Gebruik het configuratiepakket niet als uw Experience Manager-instantie is geconfigureerd voor gebruikersaanmelding bij Adobe IMS-accounts. In plaats daarvan, [handmatig configureren](#manual-configuration) uw Experience Manager-instantie.
+>Gebruik het configuratiepakket niet als uw Experience Manager-instantie is geconfigureerd voor gebruikersaanmelding bij Adobe IMS-accounts. In plaats daarvan, [ vormt manueel ](#manual-configuration) uw instantie van de Experience Manager.
 
-1. Om de Manager van het Pakket, in de Webinterface van de Experience Manager te openen, toegang **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Package Share]**. Installeren `adobe-asset-link-config` pakket.
+1. Als u Package Manager wilt openen, opent u in de webinterface van Experience Manager de opdracht **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Package Share]** . Installeer het pakket `adobe-asset-link-config` .
 
-1. Toegang **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. Zoeken **[!UICONTROL Adobe Granite OAuth IMS Provider]** en klik om deze te bewerken.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** . Zoek **[!UICONTROL Adobe Granite OAuth IMS Provider]** -configuratie en klik om deze te bewerken.
 
    Stel de volgende eigenschappen in en sla de wijzigingen op.
 
-   * [!UICONTROL Group Mappings]: Laat leeg, tenzij gewenst. Zie voor meer informatie [Groepstoewijzing](#group-mapping).
-   * [!UICONTROL Organization]: Voer de organisatie-id in die u gebruikt in de Adobe Admin Console. Voor meer informatie over organisatie IDs, zie [Gebruikersgroep maken](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Group Mappings]: Laat leeg, tenzij gewenst. Voor details, zie [ Afbeelding van de Groep ](#group-mapping).
+   * [!UICONTROL Organization]: voer de organisatie-id in die u in de Adobe Admin Console gebruikt. Voor meer informatie over organisatie IDs, zie [ gebruikersgroep ](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html) creëren.
 
-1. Zoeken **[!UICONTROL Adobe Granite Bearer Authentication Handler]** en klik om deze te bewerken.
+1. Zoek **[!UICONTROL Adobe Granite Bearer Authentication Handler]** -configuratie en klik om deze te bewerken.
 
-   Toevoegen **[!UICONTROL InDesignAem2]** Client-id&#39;s naar de **[!UICONTROL Allowed OAuth client ids]** configuration, eigenschap.
+   Voeg **[!UICONTROL InDesignAem2]** Client IDs aan het **[!UICONTROL Allowed OAuth client ids]** configuratiebezit toe.
 
 
 ## Experience Manager handmatig configureren {#manual-configuration}
@@ -67,56 +67,56 @@ Configureer handmatig Experience Manager als u ervoor kiest geen configuratiepak
 
 Experience Manager handmatig configureren:
 
-1. Om tot de configuratiemanager toegang te hebben, toegang **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. Selecteren **[!UICONTROL OSGi]** > **[!UICONTROL Configuration]** in het menu bovenaan.
+1. Open **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** om het configuratiemanager te openen. Selecteer **[!UICONTROL OSGi]** > **[!UICONTROL Configuration]** in het menu bovenaan.
 
-1. Zoek de **[!UICONTROL Adobe Granite OAuth IMS Provider]** en klik om deze te bewerken.
+1. Zoek de **[!UICONTROL Adobe Granite OAuth IMS Provider]** -configuratie en klik om deze te bewerken.
 
-   De volgende configuratie instellen en klikken **[!UICONTROL Save]**.
+   Stel de volgende configuratie in en klik op **[!UICONTROL Save]** .
 
    * [!UICONTROL Authorization Endpoint]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
    * [!UICONTROL Token Endpoint]: ` https://ims-na1.adobelogin.com/ims/token/v1`
    * [!UICONTROL Profile Endpoint]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
    * [!UICONTROL Validation URL]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
-   * [!UICONTROL Organization]: Instellen op de organisatie-id in het dialoogvenster [Adobe Admin Console](https://adminconsole.adobe.com/).
-   * [!UICONTROL Group Mappings]: Laat leeg tenzij u een speciale zaak hebt. Zie voor meer informatie [Groepstoewijzing](#group-mapping).
+   * [!UICONTROL Organization]: Reeks aan organisatieidentiteitskaart in [ Adobe Admin Console ](https://adminconsole.adobe.com/).
+   * [!UICONTROL Group Mappings]: Laat leeg tenzij u een speciale kwestie hebt. Voor details, zie [ Afbeelding van de Groep ](#group-mapping).
 
-1. Zoeken **[!UICONTROL Adobe Granite Bearer Authentication Handler]** en klik om deze te bewerken.
+1. Zoek **[!UICONTROL Adobe Granite Bearer Authentication Handler]** -configuratie en klik om deze te bewerken.
 
-   Voeg de volgende client-id&#39;s toe aan de **[!UICONTROL Allowed OAuth client ids]** configuratie-eigenschap: `InDesignAem2, cc-europa-desktop_0_1, cc-europa-desktop_1_0, cc-europa-desktop_2_0, cc-europa-desktop_3_0, cc-europa-desktop_4_0, cc-europa-desktop_5_0, cc-europa-desktop_6_0, cc-europa-desktop_7_0, cc-europa-desktop_8_0, cc-europa-desktop_9_0, and cc-europa-desktop_10_0`.
+   Voeg de volgende client-id&#39;s toe aan de configuratieeigenschap **[!UICONTROL Allowed OAuth client ids]** : `InDesignAem2, cc-europa-desktop_0_1, cc-europa-desktop_1_0, cc-europa-desktop_2_0, cc-europa-desktop_3_0, cc-europa-desktop_4_0, cc-europa-desktop_5_0, cc-europa-desktop_6_0, cc-europa-desktop_7_0, cc-europa-desktop_8_0, cc-europa-desktop_9_0, and cc-europa-desktop_10_0` .
 
-   Om elk toe te voegen `Client ID`, klikt u op `+`. Klikken **[!UICONTROL Save]** na het toevoegen van alle id&#39;s.
+   Als u elke `Client ID` wilt toevoegen, klikt u op `+` . Klik op **[!UICONTROL Save]** nadat u alle id&#39;s hebt toegevoegd.
 
-1. In **[!UICONTROL Adobe Granite OAuth Application and Provider]** configuratie, inspecteer het bestaande **[!UICONTROL Adobe Granite OAuth Authentication Handler]** instanties. Als u een instantie zoekt met de `Config ID` waarde van `ims`, gebruikt u deze voor de instructies in deze procedure. Anders klikt u op `+` om een configuratieinstantie te creëren. Stel de volgende eigenschapswaarden in en klik op **[!UICONTROL Save]**.
+1. Controleer in de **[!UICONTROL Adobe Granite OAuth Application and Provider]** -configuratie de bestaande **[!UICONTROL Adobe Granite OAuth Authentication Handler]** -instanties. Als u een instantie zoekt met de `Config ID` waarde `ims` , gebruikt u deze voor de instructies in deze procedure. Klik anders op `+` om een configuratieinstantie te maken. Stel de volgende eigenschapswaarden in en klik op **[!UICONTROL Save]** .
 
-   * [!UICONTROL Client ID]: Niet wijzigen
-   * [!UICONTROL Client Secret]: Niet wijzigen
+   * [!UICONTROL Client ID]: niet wijzigen
+   * [!UICONTROL Client Secret]: niet wijzigen
    * [!UICONTROL Config ID]: ` ims`
-   * [!UICONTROL Scope]: `AdobeID, OpenID, read_organizations` (andere waarden kunnen ook in de configuratie worden opgenomen)
+   * [!UICONTROL Scope]: `AdobeID, OpenID, read_organizations` (andere waarden kunnen zich ook in de configuratie bevinden)
    * [!UICONTROL Provider ID]: ` ims`
    * [!UICONTROL Create users]: ` Checked`
    * [!UICONTROL User ID Property]: `Email` voor nieuwe configuratie. Anders verandert u niet.
 
-1. Zoek de **[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]** configuratie met de **[!UICONTROL Sync Handler Name]** `ims` en klik om het te bewerken.
+1. Zoek de **[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]** -configuratie met **[!UICONTROL Sync Handler Name]** `ims` en klik om deze te bewerken.
 
-   Stel de volgende configuratie-eigenschappen in en klik op **[!UICONTROL Save]**.
+   Stel de volgende configuratie-eigenschappen in en klik op **[!UICONTROL Save]** .
 
-   * [!UICONTROL User Expiration Time and User Membership Expiration]: Tijd in minuten na &#39;m&#39; zonder spatie. Bijvoorbeeld: `15m` gedurende 15 minuten. Zie voor meer informatie [Groepstoewijzing](#group-mapping).
-   * [!UICONTROL User auto membership]: Niet wijzigen
+   * [!UICONTROL User Expiration Time and User Membership Expiration]: Tijd in minuten volgend op met &#39;m&#39; zonder spatie. Bijvoorbeeld `15m` gedurende 15 minuten. Voor details, zie [ Afbeelding van de Groep ](#group-mapping).
+   * [!UICONTROL User auto membership]: niet wijzigen
    * [!UICONTROL User Dynamic Membership]: ` Deslect`
 
-1. Zoek de **[!UICONTROL Adobe Granite OAuth Authentication Handler]** en klik om deze te bewerken. Klik zonder wijzigingen aan te brengen op **[!UICONTROL Save]**.
+1. Zoek de **[!UICONTROL Adobe Granite OAuth Authentication Handler]** -configuratie en klik om deze te bewerken. Klik op **[!UICONTROL Save]** zonder wijzigingen aan te brengen.
 
-1. Om de relatieve prioriteit van de dragerauthentificatiemanager, in CRXDE aan te passen, navigeer naar `/apps/system/config`. Zoeken `com.adobe.granite.auth.oauth.impl.BearerAuthenticationHandler.config` en opent u de configuratie. Aan het einde toevoegen `service.ranking=I"-10"`. Sla de wijzigingen op.
+1. Navigeer naar `/apps/system/config` als u de relatieve prioriteit van de handler voor toonder-verificatie in CRXDE wilt aanpassen. Zoek `com.adobe.granite.auth.oauth.impl.BearerAuthenticationHandler.config` en open de configuratie ervan. Voeg aan het einde `service.ranking=I"-10"` toe. Sla de wijzigingen op.
 
    >[!NOTE]
    >
    >Elke aanvraag die wordt geverifieerd met een token voor toonder, heeft betrekking op drie aanroepen van Adobe IMS, gebruikerssynchronisatie en het maken van een aanmeldingstoken in de Experience Manager. Om deze overheadkosten te overwinnen, vangt de Verbinding van Activa van de Adobe login-token terug in de reactie van Experience Manager en verzendt het met verdere verzoeken. Dit proces werkt alleen als de relatieve prioriteit van de verificatiehandler aan toonder wordt aangepast.
 
-1. (Optioneel) Als de gebruikers van de Experience Manager hoofdletters of kleine letters in hun e-mailadressen hebben, selecteert u **[!UICONTROL Change Locking User to Lower Case]** in **[!UICONTROL Adobe Granite ACP Platform Configs]** in Experience Manager Web Console.
+1. (Optioneel) Als de gebruikers van de Experience Manager hoofdletters of kleine letters in hun e-mailadressen hebben, selecteert u **[!UICONTROL Change Locking User to Lower Case]** in **[!UICONTROL Adobe Granite ACP Platform Configs]** in de webconsole van de Experience Manager.
 
 ## Aanvullende configuratie na migratie naar bedrijfsprofielen {#configure-migration-activity}
 
-Gebruikers van Asset Link-Adobe kunnen verbinding maken met Experience Manager om IMS-aanmelding toe te staan vanaf het belangrijkste Creative Cloud voor Enterprise (CCE) org. Experience Manager gebruikt de client-id&#39;s om de toegestane IMS-organisatie te identificeren. Na migratie naar Business Profiles, is het vereist om de client-id en de geheime sleutel voor de IMS-org te configureren in Experience Manager voor de Verteller-handler. Voor meer informatie over bedrijfsprofielen raadpleegt u [introduceren van Adobe-profielen](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
+Gebruikers van Asset Link-Adobe kunnen verbinding maken met Experience Manager om IMS-aanmelding toe te staan vanaf het belangrijkste Creative Cloud voor Enterprise (CCE) org. Experience Manager gebruikt de client-id&#39;s om de toegestane IMS-organisatie te identificeren. Na migratie naar Business Profiles, is het vereist om de client-id en de geheime sleutel voor de IMS-org te configureren in Experience Manager voor de Verteller-handler. Voor meer informatie over Bedrijfs Profielen, zie [ introducerend de Profielen van de Adobe ](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
 
 Aanvullende configuratie is alleen vereist als u verschillende Adobe IMS-organisaties voor Experience Manager en Creative Cloud voor Enterprise (CCE) gebruikt en er een vertrouwensrelatie tussen deze twee organisaties tot stand is gebracht.
 
@@ -126,36 +126,36 @@ Aanvullende configuratie is alleen vereist als u verschillende Adobe IMS-organis
 >* De bestaande configuratie blijft werken als u dezelfde Adobe IMS-organisatie gebruikt met Experience Manager en CCE.
 
 
-**Vereisten**
+**Eerste vereisten**
 
 1. Een in werking gestelde instantie van de Experience Manager met de Authentificatie van de Drager die voor AAL wordt gevormd.
 1. Installeer het volgende pakket (Service Pack 11) op uw Experience Manager 6.5 instantie.
 
-   [Download Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [ Experience Manager 6.5.11.0 van de Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
-1. Contact [!UICONTROL Customer Support] om de client-id en de geheime sleutel voor de verificatie van uw IMS-org op te halen.
+1. Neem contact op met [!UICONTROL Customer Support] voor de client-id en geheime sleutel voor de verificatie van uw IMS-org aan toonder.
 
 Hieronder vindt u de aanvullende configuraties die vereist zijn na de migratie naar bedrijfsprofielen:
 
-1. In **[!UICONTROL Adobe Granite OAuth IMS Configuration Provider]** (`com.adobe.granite.auth.ims.impl.ImsConfigProviderImpl`), instellen:
+1. In **[!UICONTROL Adobe Granite OAuth IMS Configuration Provider]** (`com.adobe.granite.auth.ims.impl.ImsConfigProviderImpl`), plaats:
 
-   * OAuth Configuration ID (`oauth.configmanager.ims.configid`): `ims` (Verifieer eens, kunt u het reeds gevormd hebben)
+   * OAuth Configuration ID (`oauth.configmanager.ims.configid`): `ims` (Verifieer eens, u kunt het reeds gevormd hebben)
 
-   * Eigenaar van IMS (`ims.owningEntity`): Uw IMS org-id
+   * IMS-eigenaar (`ims.owningEntity`): uw IMS org-id
 
-   ![IMS Config-id](assets/bearer-authentication1.png)
+   ![ IMS Config identiteitskaart ](assets/bearer-authentication1.png)
 
-1. Openen **[!UICONTROL Bearer Authentication Handler]** configuratie en voeg de client-id toe die is verkregen van [!UICONTROL Customer Support] aan de lijst van **[!UICONTROL Allowed OAuth client ids]**.
+1. Open de **[!UICONTROL Bearer Authentication Handler]** -configuratie en voeg de client-id die u van [!UICONTROL Customer Support] hebt gekregen toe aan de lijst met **[!UICONTROL Allowed OAuth client ids]** .
 
-   ![Client-id toevoegen](assets/add-clientid-bearer-auth.png)
+   ![ voeg identiteitskaart van de Cliënt ](assets/add-clientid-bearer-auth.png) toe
 
-1. Openen **[!UICONTROL Adobe Granite OAuth Application and Provider]** configuratie en voeg de **[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** (Geheime sleutel) verkregen van Klantenondersteuning.
+1. Open de configuratie van **[!UICONTROL Adobe Granite OAuth Application and Provider]** en voeg de **[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** (Geheime sleutel) toe die van de Klantenondersteuning worden verkregen.
 
-   Zorg ervoor dat de **[!UICONTROL Config ID]** field (`oauth.config.id`) bevat dezelfde waarde als in **[!UICONTROL OAuth configuration ID]** field (`oauth.configmanager.ims.configid`) hierboven.
+   Zorg ervoor dat het **[!UICONTROL Config ID]** veld (`oauth.config.id`) dezelfde waarde bevat als in het **[!UICONTROL OAuth configuration ID]** veld (`oauth.configmanager.ims.configid`) hierboven.
 
-   ![Client-id verifiëren](assets/clientid-secretkey.png)
+   ![ verifieer identiteitskaart van de Cliënt ](assets/clientid-secretkey.png)
 
-1. Openen **[!UICONTROL Adobe Granite IMS Cluster Exchange Token Preprocessor]** configuratie en instellen op `enable`.
+1. Open de **[!UICONTROL Adobe Granite IMS Cluster Exchange Token Preprocessor]** -configuratie en stel deze in op `enable` .
 
 ## Toegangsbeheer voor gebruikers beheren {#user-access}
 
@@ -171,22 +171,22 @@ Neem bijvoorbeeld een scenario waarin Adobe Asset Link-gebruikers lid zijn van d
 
 Groepen in Experience Manager die overeenkomen met en gesynchroniseerd zijn met groepen in Adobe IMS, kunnen rechtstreeks toegang worden verleend of door ze tot lid van een andere groep te maken. Hier is een voorbeeld van hoe de toestemmingen kunnen worden beheerd.
 
-![groepsvoorbeelden](assets/group-examples.png)
+![ groepsvoorbeelden ](assets/group-examples.png)
 
 De volgende regels zijn van toepassing op groepstoewijzingen in Experience Manager:
 
-* Zorg ervoor dat de **[!UICONTROL Group Mappings]** eigenschap in **[!UICONTROL Adobe Granite OAuth IMS Provider]** configuratie is leeg.
-* Het groepslidmaatschap van de gebruikersgroep van de Adobe Asset Link wordt geëvalueerd wanneer de gebruiker verifieert en de periode in **[!UICONTROL User Expiration Time]** eigenschap in **[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]** de configuratie is verstreken. Momenteel kunnen gebruikers worden toegevoegd aan en verwijderd uit groepen in de Experience Manager om te synchroniseren met wat er in Adobe IMS wordt gevonden.
+* Controleer of de eigenschap **[!UICONTROL Group Mappings]** in de **[!UICONTROL Adobe Granite OAuth IMS Provider]** -configuratie leeg is.
+* Het groepslidmaatschap van de gebruikersgroep Asset Link wordt geëvalueerd wanneer de gebruiker verifieert en de periode in de eigenschap **[!UICONTROL User Expiration Time]** in de **[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]** -configuratie is verstreken. Momenteel kunnen gebruikers worden toegevoegd aan en verwijderd uit groepen in de Experience Manager om te synchroniseren met wat er in Adobe IMS wordt gevonden.
 * Vermijd conflicten met de groepsnaam. Zorg ervoor dat de namen die worden gebruikt voor groepen die zijn gemaakt in Adobe IMS (voor het beheren van gebruikers), verschillen van alle namen van de systeemgroepen van de Experience Manager.
 
-  Zorg er bijvoorbeeld voor dat deze verschillen van de `dam-users` groep en de groepen die door de beheerder van de Experience Manager worden gecreeerd.
+  Zorg er bijvoorbeeld voor dat ze verschillen van de groep `dam-users` en de groepen die door de beheerder van de Experience Manager zijn gemaakt.
 
   Een Adobe IMS-groep waarvan de naam een conflict veroorzaakt met de naam van een systeemgroep van een Experience Manager of een handmatig gemaakte groep, wordt niet gebruikt om de gebruikersmachtigingen te beheren.
 * Als een Adobe IMS-gebruiker verbinding maakt met een Experience Manager-instantie waarbij de gebruikersnaam een conflict veroorzaakt met een eerder gemaakte Experience Manager-gebruiker, krijgt de Adobe IMS-gebruiker een andere naam met toegevoegde nummers om deze uniek te maken.
 
-**Het eerste toegangsbeheer van de opstelling**
+**de eerste toegangscontrole van de Opstelling**
 
-Gebruikers die verbinding maken via Adobe Asset Link kunnen alleen elementen weergeven en gebruiken nadat hun de vereiste machtigingen zijn verleend. De [Groepstoewijzing](#group-mapping) in het bovenstaande gedeelte wordt besproken hoe gebruikersgroepen worden gemaakt in Experience Manager. Deze groepen komen overeen met gebruikersgroepen in uw organisatie binnen Adobe IMS en zijn gesynchroniseerd met deze groepen. Men adviseert dat de beheerders van de Experience Manager deze groepen gebruiken om toegangsbeheer voor de gebruikers van de Verbinding van Activa van de Adobe te beheren.
+Gebruikers die verbinding maken via Adobe Asset Link kunnen alleen elementen weergeven en gebruiken nadat hun de vereiste machtigingen zijn verleend. De ](#group-mapping) sectie van de Afbeelding van de Groep 1} hierboven bespreekt hoe gebruikersgroepen in Experience Manager worden gecreeerd, die beantwoorden aan en met gebruikersgroepen in uw organisatie binnen Adobe IMS gesynchroniseerd zijn. [ Men adviseert dat de beheerders van de Experience Manager deze groepen gebruiken om toegangsbeheer voor de gebruikers van de Verbinding van Activa van de Adobe te beheren.
 
 Voor elke groep Experience Managers die is gesynchroniseerd met een Adobe IMS-groep (die wordt gebruikt om de toegangscontrole van gebruikers te beheren):
 
@@ -219,13 +219,13 @@ De gebruikers die met deze scenario&#39;s zijn gemaakt, hebben geen eigenschap d
 
 Om dergelijke gebruikers in Experience Manager bij te werken met de Verbinding van Activa van de Adobe:
 
-1. Zoek in de webconsole van de Experience Manager naar **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** en klik om deze te bewerken. Hef de selectie van **[!UICONTROL External Identity Protection]** en klik op **[!UICONTROL Save]**.
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Selecteer de gebruiker die u wilt bijwerken en noteer het einde van het URL-pad van de browser voor die gebruiker, te beginnen met `/home/users`. U kunt ook zoeken naar de gebruikersnaam in CRXDE. Een voorbeeldgebruikerspad: `/home/users/x/xTac082TDh-guJzzG7WM`.
-1. In CRXDE, navigeer aan de gebruikerspad, selecteer de gebruikersknoop, en bekijk de eigenschappen van de knoop door te selecteren **[!UICONTROL Properties]** in het middelste gedeelte. Dit knooppunt heeft een `jcr:primaryType` eigenschapswaarde van `rep:User`.
-1. Onder aan het dialoogvenster **[!UICONTROL Properties]** tabgebied voert u een `Name` waarde van `rep:externalId`, `Type` waarde van `String`en `Value` waarde van `rep:authorizableId`;`ims`, waarbij `rep:authorizableId` is de waarde van de `rep:authorizableId` eigenschap van het knooppunt. (Er wordt een puntkomma zonder spaties gebruikt om de `rep:authorizableId` waarde van `ims`.)
-1. Klik op de knop **[!UICONTROL Add]** rechts van uw nieuwe invoer en klik vervolgens op **[!UICONTROL Save All]**.
+1. Zoek in de webconsole van de Experience Manager de configuratie van **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** en klik om deze te bewerken. Schakel het selectievakje **[!UICONTROL External Identity Protection]** uit en klik op **[!UICONTROL Save]** .
+1. Als u de gebruikersbeheerinterface in Experience Manager wilt openen, navigeert u naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** . Selecteer de gebruiker die u wilt bijwerken en noteer het einde van het URL-pad van de browser voor die gebruiker, te beginnen met `/home/users` . U kunt ook zoeken naar de gebruikersnaam in CRXDE. Een voorbeeldgebruikerspad: `/home/users/x/xTac082TDh-guJzzG7WM`.
+1. Navigeer in CRXDE naar het gebruikerspad, selecteer het gebruikersknooppunt en bekijk de eigenschappen van het knooppunt door het tabblad **[!UICONTROL Properties]** in het middelste gebied te selecteren. Dit knooppunt heeft de eigenschapwaarde `jcr:primaryType` `rep:User` .
+1. Voer onder aan het tabgebied **[!UICONTROL Properties]** een `Name` waarde `rep:externalId` , `Type` waarde `String` en `Value` waarde `rep:authorizableId` in, `ims` , waarbij `rep:authorizableId` de waarde van de eigenschap `rep:authorizableId` van het knooppunt is. (Er wordt een puntkomma zonder spaties gebruikt om de waarde `rep:authorizableId` van `ims` te scheiden.)
+1. Klik op de knop **[!UICONTROL Add]** rechts van de nieuwe invoer en klik vervolgens op **[!UICONTROL Save All]** .
 1. Herhaal stap 2 tot en met 5 voor alle andere gebruikers die u wilt upgraden om te werken met Adobe Asset Link.
-1. Zoek in de webconsole van de Experience Manager naar **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** en klik om deze te bewerken. Hef de selectie van **[!UICONTROL External Identity Protection]** en klik op **[!UICONTROL Save]**.
+1. Zoek in de webconsole van de Experience Manager de configuratie van **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** en klik om deze te bewerken. Schakel het selectievakje **[!UICONTROL External Identity Protection]** uit en klik op **[!UICONTROL Save]** .
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ Na deze verandering, kan een bijgewerkte gebruiker van de Experience Manager met
 
 Er is een methode waardoor een bulkmigratie van veelvoudige gebruikers van de Experience Manager kan worden uitgevoerd om hen toe te laten om met de Verbinding van Activa van de Adobe te werken. Neem contact op met de Adobe voor meer informatie en assistentie bij het inschakelen van deze optie.
 
-Als alternatief voor de stappen, in bepaalde omstandigheden, kan een gebruiker van de Verbinding van Activa van de Adobe snelle toegang tot Experience Manager worden verleend. In dergelijke gevallen, wordt de reeds bestaande gebruikersinformatie gevonden en geschrapt met het Beheer van de Gebruiker van de Experience Manager of Experience Manager CRXDE voorafgaand aan hun verbinding met de Verbinding van Activa van de Adobe. Nieuwe gebruikersgegevens worden na de verbinding in Experience Manager gemaakt. Gebruik deze benadering slechts als u zeker bent dat er geen belangrijke gegevens zijn die als kind van de gebruikersknoop worden toegevoegd. Dergelijke extra gegevens zijn om het even welke knoop die het kind van de gebruikersknoop buiten is `tokens`, `preferences`, `profile`, `profiles`, `profiles/public`, en `rep:policy/*` knooppunten.
+Als alternatief voor de stappen, in bepaalde omstandigheden, kan een gebruiker van de Verbinding van Activa van de Adobe snelle toegang tot Experience Manager worden verleend. In dergelijke gevallen, wordt de reeds bestaande gebruikersinformatie gevonden en geschrapt met het Beheer van de Gebruiker van de Experience Manager of Experience Manager CRXDE voorafgaand aan hun verbinding met de Verbinding van Activa van de Adobe. Nieuwe gebruikersgegevens worden na de verbinding in Experience Manager gemaakt. Gebruik deze benadering slechts als u zeker bent dat er geen belangrijke gegevens zijn die als kind van de gebruikersknoop worden toegevoegd. Dergelijke extra gegevens zijn knooppunten die het onderliggende knooppunt van het gebruikerknooppunt zijn, met uitzondering van `tokens`-, `preferences` -, `profile` -, `profiles` - `profiles/public` - en `rep:policy/*` -knooppunten.
 
 ## Workflow automatisch starten om elementen voorwaardelijk te verwerken {#auto-start-workflow}
 
@@ -243,14 +243,14 @@ In Experience Manager 6.4 en Experience Manager 6.5 kunnen de beheerders werkstr
 
 De configuratie is bijvoorbeeld handig voor zakelijke gebruikers en marketers om een aangepaste workflow te maken voor een paar specifieke mappen. Alle elementen van de foto&#39;s van een agentschap kunnen van een watermerk zijn voorzien of alle elementen die door een freelancer zijn geüpload, kunnen worden verwerkt om specifieke uitvoeringen te maken.
 
-Voor meer informatie en voor de configuratie van de Experience Manager, zie [workflow voor automatisch uitvoeren op elementen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
+Voor meer informatie en voor de configuratie van de Experience Manager, zie [ auto-voert werkschema op activa ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets) uit.
 
 
 ## Een aangepaste index maken in Experience Manager 6.4.x-versies {#create-custom-index}
 
 Experience Manager bevat indexen die worden gebruikt om te vragen. Maak de volgende aangepaste index voor de opgegeven versie. Experience Manager 6.5.0 bevat deze index standaard. Voor Adobe Asset Link is deze index vereist om te bepalen welke elementen een gebruiker heeft uitgecheckt.
 
-1. Zoek in CRXDE `/oak:index` knooppunt. Een knooppunt maken met de naam `cqDrivelock` en stelt `Type` tot `oak:QueryIndexDefinition`.
+1. Zoek in CRXDE het knooppunt `/oak:index` . Maak een knooppunt met de naam `cqDrivelock` en stel `Type` in op `oak:QueryIndexDefinition` .
 
 1. Voeg de volgende eigenschappen toe aan het nieuwe knooppunt en sla de wijzigingen op:
 
@@ -261,18 +261,18 @@ Experience Manager bevat indexen die worden gebruikt om te vragen. Maak de volge
 
 ## Zoeken op visuele of gelijkenis configureren {#configure-visual-similarity-search}
 
-Met de visuele zoekfunctie kunt u zoeken naar visueel vergelijkbare elementen in de AEM Assets-opslagplaats via het deelvenster Koppeling van Adobe-elementen. De functionaliteit is beschikbaar in 6.5.0 of latere versies en alleen de geïndexeerde elementen worden doorzocht. Zie voor meer informatie [hoe te om visueel onderzoek te vormen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
+Met de visuele zoekfunctie kunt u zoeken naar visueel vergelijkbare elementen in de AEM Assets-opslagplaats via het deelvenster Koppeling van Adobe-elementen. De functionaliteit is beschikbaar in 6.5.0 of latere versies en alleen de geïndexeerde elementen worden doorzocht. Voor meer informatie, zie [ hoe te om visueel onderzoek ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch) te vormen.
 
 ## Uitvoeringen alleen voor plaatsing genereren voor Adobe InDesign {#fpo-renditions}
 
-Experience Manager biedt uitvoeringen die alleen voor plaatsing (FPO) worden gebruikt. Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding. Als een FPO-uitvoering niet beschikbaar is voor een element, gebruikt Adobe InDesign in plaats daarvan het oorspronkelijke element. Dit fallback-mechanisme zorgt ervoor dat de creatieve workflow zonder onderbrekingen doorgaat. Zie voor meer informatie [FPO-uitvoeringen genereren](/help/assets/configure-fpo-renditions.md).
+Experience Manager biedt uitvoeringen die alleen voor plaatsing (FPO) worden gebruikt. Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding. Als een FPO-uitvoering niet beschikbaar is voor een element, gebruikt Adobe InDesign in plaats daarvan het oorspronkelijke element. Dit fallback-mechanisme zorgt ervoor dat de creatieve workflow zonder onderbrekingen doorgaat. Voor meer informatie, zie [ vertoningen FPO ](/help/assets/configure-fpo-renditions.md) produceren.
 
 
 ## Integreren met Adobe Stock {#adobe-stock-integration}
 
 Organisaties integreren hun Adobe Stock-accounts in Experience Manager Assets. Het helpt marketers om gelicentieerde foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen van hoge kwaliteit en zonder royalty&#39;s beschikbaar te maken voor hun creatieve en marketingprojecten. Creatieve professionals kunnen deze elementen gebruiken via het deelvenster Asset Link.
 
-Als u wilt integreren met Adobe Stock, raadpleegt u [Adobe Stock-middelen in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). Experience Manager 6.4.2 of hoger is vereist voor integratie met Adobe Stock.
+Om met Adobe Stock te integreren, zie [ de activa van Adobe Stock in Experience Manager Assets ](/help/assets/aem-assets-adobe-stock.md). Experience Manager 6.4.2 of hoger is vereist voor integratie met Adobe Stock.
 
 
 ## Problemen met Experience Manager oplossen {#troubleshoot}
@@ -282,12 +282,12 @@ Als u problemen ondervindt bij het configureren of gebruiken van Adobe Asset Lin
 
 * Zorg ervoor dat uw implementatie aan de voorwaarden voldoet. Controleer met name of de juiste functiepakketten of pakketten zijn geïnstalleerd.
 * Neem contact op met de partner of systeemintegrator van uw organisatie.
-* Als de gebruikers van het Creative Cloud niet kunnen controleren in de uitgecheckte bestanden, controleert u of de domeinnamen in de e-mailadressen zijn opgeslagen. Zie [handmatige configuratie](#manual-configuration).
-* Zie voor meer informatie [Asset Link problemen oplossen](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+* Als de gebruikers van het Creative Cloud niet kunnen controleren in de uitgecheckte bestanden, controleert u of de domeinnamen in de e-mailadressen zijn opgeslagen. Om te bevestigen, zie [ handconfiguratie ](#manual-configuration).
+* Voor meer info, zie [ de Verbinding van Activa problemen oplossen ](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]
 >
->* [Over Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Asset Link gebruiken in desktop-app van Creative Cloud en elementen beheren](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Adobe Experience Manager Assets as a Cloud Service configureren](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [ Ongeveer de Verbinding van Activa van de Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [ Gebruik de Verbinding van Activa in Desktop app van het Creative Cloud en beheer activa ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [ vorm as a Cloud Service Adobe Experience Manager Assets ](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).

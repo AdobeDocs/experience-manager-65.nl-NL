@@ -14,7 +14,7 @@ ht-degree: 2%
 ---
 
 
-# Inhoud en handel {#content-commerce}
+# Inhoud en Commerce {#content-commerce}
 
 Met Adobe Experience Manager-content en -handel kunnen merken sneller schalen en innoveren om een onderscheid te maken tussen commerciële ervaringen en online uitgaven te versnellen. AEM Content en Commerce combineren de indrukwekkende, omnichannel en gepersonaliseerde ervaringen in de Experience Manager met een aantal handelsoplossingen om verschillende ervaringen te bieden aan alle delen van de winkelreis, waardoor tijd tot waarde wordt gereduceerd en een hogere conversie plaatsvindt.
 
@@ -42,7 +42,7 @@ Aangezien deze projecten te maken hebben met de complexiteit van de integratie v
 
 Deze ingewikkeldheid opent de deur naar potentiële punt van mislukkingen, verhoogde TCO, vertragingen, en verminderde waardesrealisatie. Deze redenen hebben geleid tot de ontwikkeling van het Commerce integration framework (CIF), dat een aanvulling vormt voor de Experience Manager. CIF breidt de Experience Manager met handelsmogelijkheden uit en normaliseert de integratie met een handelscultuur. Het resultaat is een toekomstbestendige, stabiele en schaalbare oplossing met lagere totale eigendomskosten. Het ontgrendelt technische en bedrijfsinnovatie met flexibele gereedschappen en naadloos geïntegreerde functies om aantrekkelijke ervaringen op handelsgebied op te bouwen.
 
-![CIF Elements](./assets/CIF/CIF_Overview.png)
+![ CIF Elementen ](./assets/CIF/CIF_Overview.png)
 
 ## CIF klanten sinds 2013 met succes ondersteunen
 
@@ -58,17 +58,17 @@ De CIF toe:voegen-op brengt productcontext in Experience Manager en verstrekt au
 
 De krachtige CIF hulpmiddelen in AEM laten inhoudsscheppers toe om rijke en gepersonaliseerde handelservaringen op een scalable en levering agnostische manier snel te bouwen om van bedrijfskansen te profiteren.
 
-![CIF Elements](./assets/CIF/CIF_Product_Experience_Management.png)
+![ CIF Elementen ](./assets/CIF/CIF_Product_Experience_Management.png)
 
 ### Tijd-aan-Waarde (TTV)
 
-Versnelt projectontwikkeling met [AEM kerncomponenten](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)en integratiepatronen voor PWA (Headless Content en Commerce).
+Versnelt projectontwikkeling met [ AEM de Componenten van de Kern ](https://www.aemcomponents.dev/), [ AEM Venia verwijzingsstorefront ](https://github.com/adobe/aem-cif-guides-venia), [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), en integratiepatronen voor PWA (Zwaardeloze Inhoud en Commerce).
 
 CIF wordt gebouwd voor voortdurende innovatie met een altijd bijgewerkte toe:voegen-aan, die klant toestaan om tot nieuwe en betere eigenschappen toegang te hebben.
 
 ### Integrations
 
-Sluit uw ecosysteem (bijvoorbeeld handelsoplossing) met het Experience Cloud aan gebruikend  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), een serverloze PaaS zonder microservice, en [CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Verbind uw ecosysteem (bijvoorbeeld, handelsoplossing) met het Experience Cloud gebruikend [ Adobe I/O Runtime ](https://www.adobe.io/apis/experienceplatform/runtime.html), een micro-dienst gebaseerde server-less PaaS, en [ CIF verwijzingsimplementatie ](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Beproefde patronen en beste praktijken
 

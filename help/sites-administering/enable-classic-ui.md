@@ -25,4 +25,4 @@ Als de functionaliteit met aanraakbediening op veel gebieden van de AEM op gelij
 
 >[!NOTE]
 >
->Voor details over de status van eigenschappariteit met klassieke UI, zie [Pariteit aanraakinterface](/help/release-notes/touch-ui-features-status.md) document.
+>Voor details op het statuut van eigenschappariteit met klassieke UI, zie het ](/help/release-notes/touch-ui-features-status.md) document van de Pariteit van de Eigenschap van 0} Aanraakinterface.[

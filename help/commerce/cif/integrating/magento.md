@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Integratie van AEM en Adobe Commerce (Magento) met Commerce integration framework {#aem-commerce-framework}
 
-De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met het Commerce integration framework (CIF). CIF laat AEM toe om tot direct toegang te hebben en met de handelsinstantie te communiceren gebruikend Adobe Commerce [GraphQL API&#39;s](https://devdocs.magento.com/guides/v2.4/graphql/).
+De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met het Commerce integration framework (CIF). CIF laat AEM toe om tot direct toegang te hebben en met de handelsinstantie te communiceren gebruikend Adobe Commerce [ GraphQL APIs ](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >
@@ -25,23 +25,23 @@ De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met het Comm
 
 De architectuur ziet er als volgt uit:
 
-![Overzicht CIF architectuur](../assets/AEM_Magento_Architecture.png)
+![ CIF het Overzicht van de Architectuur ](../assets/AEM_Magento_Architecture.png)
 
 Binnen CIF, is er steun voor server-kant en cliënt-zijcommunicatie patronen.
-Server-kant APIs vraag wordt uitgevoerd gebruikend bouwstijl-binnen, generisch [GraphQL-client](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met een [reeks gegenereerde gegevensmodellen](https://github.com/adobe/commerce-cif-magento-graphql) voor de handel GraphQL schema. Daarnaast kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
+De server-kant APIs vraag wordt uitgevoerd gebruikend de bouwstijl-binnen, generische [ cliënt van GraphQL ](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met a [ reeks geproduceerde gegevensmodellen ](https://github.com/adobe/commerce-cif-magento-graphql) voor het schema van handelsGraphQL. Daarnaast kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
 
-Voor de client-side componenten, die bouwen met [Reageren](https://reactjs.org/)de [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt.
+Voor de cliënt-zijcomponenten, die gebruikend [ React ](https://reactjs.org/) bouwen, wordt de [ Cliënt van Apollo ](https://www.apollographql.com/docs/react/) gebruikt.
 
 ## AEM CIF Core Component Architecture {#cif-core-components}
 
-![AEM CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
+![ AEM CIF de Architectuur van de Component van de Kern ](../assets/cif-component-architecture.jpg)
 
-[CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components) zeer gelijkaardige ontwerppatronen en beste praktijken volgen als [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components).
+[ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) volgen zeer gelijkaardige ontwerppatronen en beste praktijken zoals [ AEM de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components).
 
 De bedrijfslogica en de achtergrondcommunicatie met Adobe Commerce voor de AEM CIF Core Components wordt geïmplementeerd in Sling Models. Als deze logica moet worden aangepast om aan projectspecifieke vereisten te voldoen, kan het delegatiepatroon voor Sling Models worden gebruikt.
 
 >[!TIP]
 >
->De [Aanpassen AEM kerncomponenten](../customizing/customize-cif-components.md) Deze pagina bevat een gedetailleerd voorbeeld en aanbevolen methoden voor het aanpassen van CIF Core Components.
+>[ het Aanpassen AEM CIF de pagina van de Componenten van de Kern ](../customizing/customize-cif-components.md) heeft een gedetailleerd voorbeeld en beste praktijken op hoe te om CIF Componenten van de Kern aan te passen.
 
 Binnen projecten, AEM CIF de Componenten van de Kern en de componenten van het douaneproject gemakkelijk de gevormde cliënt voor een opslag van Adobe Commerce verbonden aan een AEM pagina via het Verdelen van context-Aware configuratie terugwinnen.

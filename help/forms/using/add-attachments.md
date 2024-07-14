@@ -20,15 +20,15 @@ ht-degree: 0%
 
 ## Bijlagen toevoegen in formulieren die zijn gesynchroniseerd met AEM Forms Workflow Server (AEM Forms in JEE) {#adding-annotations}
 
-Met de AEM Forms-app kunt u afbeeldingen, gekrabde notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. U kunt de knop Bijlage selecteren ![bijlagen-app](assets/attachments-app.png) om alle bijlagen samen in een formulier te bekijken. In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als het formulier geen bijlagen bevat, selecteert u de knop Bijlagen ![aanhalen](assets/attch.png), kunt u opties voor het bijvoegen van foto&#39;s of krabbels gebruiken.
+Met de AEM Forms-app kunt u afbeeldingen, gekrabde notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. U kunt de gehechtheidsknoop ![ gehechtheid-app ](assets/attachments-app.png) selecteren om alle gehechtheid in een vorm samen te zien. In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als er geen gehechtheid in de vorm zijn, wanneer u de knoop van gehechtheid ![ ](assets/attch.png) selecteert, krijgt u opties om foto&#39;s of krabbels vast te maken.
 
 U kunt kiezen uit de volgende opties:
 
-* **Galerie**: Hiermee kunt u een afbeelding toevoegen van de afbeeldingen die op uw apparaat zijn opgeslagen.
+* **Galerij**: Laat u een beeld van de beelden toevoegen die op uw apparaat worden bewaard.
 
-* **Camera**: Hiermee kunt u een foto maken en deze toevoegen aan het formulier.
+* **Camera**: Laat u een beeld nemen en het toevoegen aan de vorm.
 
-* **Notities**: Hiermee kunt u een krabbeltje of een tekstnotitie toevoegen. Gebruiken ![krabbelen](assets/scribble.png) om een krabbeltje toe te voegen, en ![toetsenbord](assets/keyboard.png) een tekstnotitie toevoegen.
+* **Nota&#39;s**: Laat u een manuscript of een tekstnota toevoegen. Het manuscript van het gebruik ![ ](assets/scribble.png) om een krabbels toe te voegen, en ![ toetsenbord ](assets/keyboard.png) om een tekstnota toe te voegen.
 
 >[!NOTE]
 >
@@ -37,50 +37,50 @@ U kunt kiezen uit de volgende opties:
 
 ### Het scherm Bijlagen {#the-attachments-screen}
 
-Selecteer ![bijlagen-app](assets/attachments-app.png). U kunt bijlagen hier toevoegen, een andere naam geven en verwijderen.
+Om alle gehechtheid in een plaats te zien, selecteer ![ gehechtheid-app ](assets/attachments-app.png). U kunt bijlagen hier toevoegen, een andere naam geven en verwijderen.
 
-![Alle bijlagen op een plaats](assets/attachments-screen.png)
+![ Alle gehechtheid in een plaats ](assets/attachments-screen.png)
 
-U kunt de **+** in het venster Bijlagen om een ander beeld, krabbeltje of tekst toe te voegen.
+Met de knop **+** in het venster Bijlagen kunt u een ander beeld, krabbel of tekst toevoegen.
 
 ### Een foto toevoegen {#adding-a-photograph}
 
 U kunt de camera van uw mobiele apparaat of opgeslagen afbeeldingen op uw apparaat gebruiken om een afbeelding aan het formulier te koppelen.
 
-1. De knop Bijlage selecteren ![aanhalen](assets/attch.png) onder aan het venster.
-1. Selecteren **Galerie** of **Camera** in het pop-upvenster dat wordt weergegeven.
+1. Selecteer de gehechtheidsknoop ![ trek ](assets/attch.png) bij de bodem van het venster.
+1. Selecteer **Galerij** of **Camera** in pop-up die verschijnt.
 1. Op basis van de optie die u selecteert, voert u het volgende uit:
 
-   1. Als u **Camera**.
+   1. Als u **Camera** selecteert.
 
-      Neem een foto. Selecteer vervolgens de optie **Gebruiken** ![use-pic](assets/use-pic.png) knop.
+      Neem een foto. Dan selecteer het **gebruik** ![ gebruiken-pic ](assets/use-pic.png) knoop.
 
-      Of selecteer de **Opnieuw** ![hernemen](assets/retake.png) om de foto opnieuw op te nemen.
+      Of selecteer **herhaal** ![ herneem ](assets/retake.png) knoop om de foto opnieuw te nemen.
 
-   1. Als u **Galerie**.
+   1. Als u **Galerij** selecteert.
 
       De afbeeldingsbrowser van het apparaat wordt weergegeven. Selecteer in de afbeeldingsbrowser van het apparaat de afbeelding die u wilt bijvoegen.
 
 ### Een notitie toevoegen {#adding-a-note}
 
-De **Notities** Met deze optie kunt u uit de vrije hand geschreven scripts en tekstbijlagen toevoegen aan uw formulier.
+De **Nota&#39;s** optie laat u uit de vrije hand krabbels en tekstgehechtheid in uw vorm toevoegen.
 
-1. De knop Bijlage selecteren ![aanhalen](assets/attch.png) onder aan het venster.
-1. Selecteren **Notities** in het pop-upvenster dat wordt weergegeven.
+1. Selecteer de gehechtheidsknoop ![ trek ](assets/attch.png) bij de bodem van het venster.
+1. Selecteer **Nota&#39;s** in pop-up die verschijnt.
 1. Leg in de gebruikersinterface Notities die wordt gestart een vrij krabbeltje vast.
 
-   ![Krabbelinterface](assets/scribble-ui.png)
+   ![ Krabbelinterface ](assets/scribble-ui.png)
 
    Krabbelen
 
    U kunt de volgende opties in de interface van het Krabbelen gebruiken:
 
-   * **Wissen**: Wist het scherm.
-   * **Gereed, knop**: Hiermee wordt het huidige krabbeltje gekoppeld.
-   * **Knop Annuleren**: Hiermee wordt het huidige krabbeltje verwijderd en wordt de gebruikersinterface voor Krabbelen afgesloten.
-   * ![toetsenbord](assets/keyboard.png): Hiermee wist u het krabbeltje en kunt u een tekstnotitie toevoegen.
+   * **Duidelijk**: Wist het scherm.
+   * **Gedaan knoop**: Verbindt het huidige krabbelen.
+   * **annuleert knoop**: Keert het huidige krabbelen weg het Krabbelgebruikersinterface weg.
+   * ![ toetsenbord ](assets/keyboard.png): ontruimt het manuscript en laat u een tekstnota toevoegen.
 
-   ![Toetsenbord in AEM Forms-app-script](assets/keyboard-inapp.png)
+   ![ Toetsenbord in AEM Forms app krabble ](assets/keyboard-inapp.png)
 
 ## Bijlagen in formulieren gesynchroniseerd met de AEM Forms-servers zonder AEM Forms Workflow (AEM Forms op OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
@@ -88,4 +88,4 @@ Bijlagen voor mobiele formulieren die zijn gesynchroniseerd met AEM Forms OSGi-s
 
 Bijlagen op formulierniveau worden niet ondersteund voor adaptieve formulieren die in de app worden geladen vanaf een AEM Forms OSGi-server. Als u afbeeldingen of tekstnotities wilt bijvoegen, schakelt u bijlagen op veldniveau in het formulier in wanneer u het maakt. Sleep de component voor bestandsbijlagen vanuit de browser met componenten in het veld.
 
-Als er adaptieve formulieren zijn, kunt u de bijgevoegde bestanden bekijken in het document of record (DoR). Zie, [Document met record genereren voor niet-XFA-adaptieve formulieren](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Als er adaptieve formulieren zijn, kunt u de bijgevoegde bestanden bekijken in het document of record (DoR). Zie, [ produceer Document van Verslag voor niet-XFA aanpassende vormen ](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

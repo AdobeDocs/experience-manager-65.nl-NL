@@ -15,14 +15,14 @@ ht-degree: 0%
 
 # Aangepaste formulieren maken met XML-schema {#creating-adaptive-forms-using-xml-schema}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Vereisten {#prerequisites}
 
 Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Bovendien wordt aangeraden de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken](creating-adaptive-form.md)
-* [XML-schema](https://www.w3.org/TR/xmlschema-2/)
+* [ schema van XML ](https://www.w3.org/TR/xmlschema-2/)
 
 ## Een XML-schema gebruiken als formuliermodel {#using-an-xml-schema-as-form-model}
 
@@ -140,7 +140,7 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Hiermee wordt een veld verplicht gemarkeerd<br /> </td>
+   <td>Merkt een verplicht gebied <br /> </td>
    <td>Kenmerk</td>
   </tr>
   <tr>
@@ -169,7 +169,7 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
 >* Het eerste teken van de elementnaam omzetten in hoofdletters
 >* Witruimte invoegen bij grenzen van camelhoofdletters.
 >
->Als u bijvoorbeeld de opdracht `userFirstName` schema-element, het bijschrift dat in het adaptieve formulier wordt gegenereerd, is `User First Name`.
+>Als u bijvoorbeeld het schema-element `userFirstName` toevoegt, wordt het bijschrift dat in het adaptieve formulier wordt gegenereerd, ingesteld op `User First Name` .
 
 ## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -200,7 +200,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
    <td>
     <ul>
      <li>Numeriek vak</li>
-     <li>Numerieke stap<br /> </li>
+     <li>Numerieke stap <br /> </li>
      <li>Datumkiezer</li>
     </ul> </td>
   </tr>
@@ -287,29 +287,29 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 
-**Hoe weet ik welk element in de structuur is gekoppeld aan welk XML-element?**
+**hoe ik weet welk element in de boom met welk element van XML wordt geassocieerd?**
 
-Wanneer u dubbelklikt op een element in de Inhoudszoeker, wordt in een pop-upvenster een veldnaam en een eigenschap met de naam `bindRef`. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
+Wanneer u dubbelklikt op een element in de Inhoudszoeker, wordt in een pop-upvenster een veldnaam en een eigenschap met de naam `bindRef` weergegeven. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
 
-![Een bindveld van een element in een XML-schema](assets/dblclick.png)
+![ het bindref gebied van A van een het schemaelement van XML ](assets/dblclick.png)
 
-De <code>bindRef</code> in het veld wordt de koppeling weergegeven tussen een structuurelement en een element of kenmerk in een schema.
+<code> bindRef</code> in het veld wordt de koppeling weergegeven tussen een structuurelement en een element of kenmerk in een schema.
 
 >[!NOTE]
 >
->Kenmerken hebben een `@` symbool in hun `bindRef`waarde om ze van elementen te onderscheiden. Bijvoorbeeld: `/config/projectDetails/@duration`.
+>Attributen hebben een `@` symbool in hun `bindRef` waarde om hen van elementen te onderscheiden. Bijvoorbeeld `/config/projectDetails/@duration` .
 
-**Waarom kan ik geen afzonderlijke elementen van een subformulier (structuur gegenereerd van een complex type) slepen voor herhaalbare subformulieren (waarden voor minOccurs of maxOccurs zijn groter dan 1)?**
+**waarom ik niet individuele elementen van een subformulier (structuur die van om het even welk complex type wordt geproduceerd) voor herhaalbare subforms (minOccurs of maxOccurs waarden zijn groter dan 1) kan slepen?**
 
 In een herhaalbaar subformulier moet u het subformulier Voltooien gebruiken. Als u alleen selectieve velden wilt, gebruikt u de volledige structuur en verwijdert u de ongewenste velden.
 
-**Ik heb een lange complexe structuur in de Inhoudszoeker. Hoe kan ik een specifiek element vinden?**
+**ik heb een lange complexe structuur in de Vinder van de Inhoud. Hoe kan ik een specifiek element vinden?**
 
 U hebt twee opties:
 
 * Door de boomstructuur schuiven
 * Gebruik het vak Zoeken om een element te zoeken
 
-**Wat is een bindRef?**
+**wat is een bindRef?**
 
-A `bindRef` is de verbinding tussen een adaptieve formuliercomponent en een schema-element of -kenmerk. Het dicteert de `XPath` waarbij de waarde die is vastgelegd vanuit deze component of dit veld beschikbaar is in de uitvoer-XML. A `bindRef`wordt ook gebruikt bij het vooraf invullen van een veldwaarde in vooraf ingevulde (vooraf ingevulde) XML.
+A `bindRef` is de verbinding tussen een adaptieve formuliercomponent en een schema-element of -kenmerk. De waarde die wordt vastgelegd vanuit deze component of dit veld, wordt voorgeschreven in de `XPath` waar de waarde beschikbaar is in de uitvoer-XML. A `bindRef` wordt ook gebruikt wanneer het prepopuleren van een gebiedswaarde van vooraf ingevulde (vooraf ingevulde) XML.

@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Aangepaste weergaven maken in HTML5-formulieren{#create-custom-appearances-in-html-forms}
 
-U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. XFA-engine gebruikt diverse widgets, zie [Vormgevingskader voor adaptieve en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor nadere informatie.
+U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De motor XFA gebruikt diverse widgets, zie [ Kader van de Verschijning voor aanpassings en HTML5 vormen ](/help/forms/using/introduction-widgets.md) voor gedetailleerde informatie.
 
-![Een voorbeeld van de standaard- en aangepaste widget](assets/custom-widgets.jpg)
+![ Een voorbeeld van gebrek en douane widget ](assets/custom-widgets.jpg)
 
 Een voorbeeld van de standaard- en aangepaste widget
 
@@ -29,11 +29,11 @@ Een voorbeeld van de standaard- en aangepaste widget
 
 ### Een profiel maken  {#create-a-profile-nbsp}
 
-U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Voor meer informatie over het maken van profielen raadpleegt u [Aangepast profiel maken](/help/forms/using/custom-profile.md).
+U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Voor meer informatie bij het creëren van profielen, zie [ Creërend douaneProfiel ](/help/forms/using/custom-profile.md).
 
 ### Een widget maken {#create-a-widget}
 
-HTML5-formulieren bieden een implementatie van het widgetframework dat kan worden uitgebreid om nieuwe widgets te maken. De implementatie is een jQuery-widget *abstractWidget* die kunnen worden uitgebreid om een nieuwe widget te schrijven. De nieuwe widget kan alleen functioneel worden gemaakt door de hieronder vermelde functies uit te breiden of te overschrijven.
+HTML5-formulieren bieden een implementatie van het widgetframework dat kan worden uitgebreid om nieuwe widgets te maken. De implementatie is een widget jQuery *abstractWidget* die kan worden uitgebreid om een nieuwe widget te schrijven. De nieuwe widget kan alleen functioneel worden gemaakt door de hieronder vermelde functies uit te breiden of te overschrijven.
 
 <table>
  <tbody>
@@ -43,11 +43,11 @@ HTML5-formulieren bieden een implementatie van het widgetframework dat kan worde
   </tr>
   <tr>
    <td>renderen</td>
-   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaardelement van HTML zou van brandpuntsafhankelijk type moeten zijn. Bijvoorbeeld: &lt;a&gt;, &lt;input&gt;, en &lt;li&gt;. Het geretourneerde element wordt gebruikt als $userControl. Als $userControl de bovengenoemde beperking specificeert, dan werken de functies van de klasse AbstractWidget zoals verwacht, anders vereisen sommige gemeenschappelijke APIs (nadruk, klik) veranderingen. </td>
+   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaardelement van HTML zou van brandpuntsafhankelijk type moeten zijn. Bijvoorbeeld &lt;a&gt;, &lt;input&gt; en &lt;li&gt;. Het geretourneerde element wordt gebruikt als $userControl. Als $userControl de bovengenoemde beperking specificeert, dan werken de functies van de klasse AbstractWidget zoals verwacht, anders vereisen sommige gemeenschappelijke APIs (nadruk, klik) veranderingen. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> {<br /> vervagen: XFA_EXIT_EVENT,<br /> }<br /> In dit voorbeeld wordt getoond dat de vervaging een HTML-gebeurtenis is en dat XFA_EXIT_EVENT overeenkomt met XFA-gebeurtenis. </td>
+   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> <br /> vervagen: XFA_EXIT_EVENT, <br /> <br /> Dit voorbeeld toont aan dat de vervaging een HTML-gebeurtenis is en XFA_EXIT_EVENT corresponderende XFA-gebeurtenis. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -68,7 +68,7 @@ HTML5-formulieren bieden een implementatie van het widgetframework dat kan worde
  </tbody>
 </table>
 
-Als u uw eigen widget wilt maken, neemt u in het hierboven gemaakte profiel verwijzingen op van het JavaScript-bestand dat overschreven functies en nieuw toegevoegde functies bevat. Bijvoorbeeld de *sliderNumericFieldWidget* is een widget voor numerieke velden. Als u de widget in uw profiel in de koptekstsectie wilt gebruiken, neemt u de volgende regel op:
+Als u uw eigen widget wilt maken, neemt u in het profiel dat hierboven is gemaakt verwijzingen op naar het JavaScript-bestand dat overschreven functies en toegevoegde functies bevat. Bijvoorbeeld, is *sliderNumericFieldWidget* een widget voor numerieke Gebieden. Als u de widget in uw profiel in de koptekstsectie wilt gebruiken, neemt u de volgende regel op:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -76,7 +76,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wanneer de aangepaste widgetcode gereed is, registreert u de widget met de scriptengine via `registerConfig`API voor [Form Bridge](/help/forms/using/form-bridge-apis.md). Het neemt widgetConfigObject als input.
+Wanneer de code van de douanewidget klaar is, registreer widget met de scripting motor door `registerConfig` API voor [ Vorm Bridge ](/help/forms/using/form-bridge-apis.md) te gebruiken. Het neemt widgetConfigObject als input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

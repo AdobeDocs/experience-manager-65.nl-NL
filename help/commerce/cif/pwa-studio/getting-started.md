@@ -23,13 +23,13 @@ U kunt de gewenste structuur eenvoudig ontwerpen met de Content Fragment Model E
 
 ## Architectuur {#architecture}
 
-![PWA zonder kop](/help/commerce/cif/assets/pwa-studio/PWA-Studio_Architecture.png)
+![ PWA headless architectuur ](/help/commerce/cif/assets/pwa-studio/PWA-Studio_Architecture.png)
 
 ## PWA Studio instellen {#setup-pwa}
 
-Volg de Adobe Commerce om uw PWA Studio-app in te stellen [Documentatie PWA Studio](https://developer.adobe.com/commerce/pwa-studio/tutorials/).
+Aan opstelling volgt uw PWA Studio app, de documentatie van de PWA Studio van Adobe Commerce [ ](https://developer.adobe.com/commerce/pwa-studio/tutorials/).
 
-Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruiken [AEM extensie voor PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
+Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u de [ AEM Uitbreiding voor PWA Studio ](https://github.com/adobe/aem-pwa-studio-extensions) gebruiken.
 
 1. Ontdek de opslagplaats
 
@@ -49,7 +49,7 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
    <Adapter apiBase={apiBase} apollo={{ link: linkWrapper(apolloLink) }} store={store}>
    ```
 
-   Meer informatie over de aanpassing van de Apollo-client vindt u in [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js).
+   U kunt meer details op de aanpassing van de Cliënt van Apollo in [ linkWrapper.js ](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js) vinden.
 
 1. Als u de navigatiecomponent wilt uitbreiden met een blogbericht, voegt u de volgende aanpassingen toe aan pwa-root/local-intercept.js:
 
@@ -61,9 +61,10 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
    }    
    ```
 
-   U kunt meer details over de aanpassing van de component van de Navigatie in vinden [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) en in de [Uitbreidingskader](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentatie van de PWA Studio.
+   U kunt meer details over de aanpassing van de component van de Navigatie in [ addBlogToNavigation.js ](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) en in de [ documentatie van het Kader van de Uitbreidbaarheid ](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) van PWA Studio vinden.
 
-1. De Apollo-client verwacht het eindpunt van AEM GraphQL op `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, pas de configuratie UPWARD van uw toepassing van de PWA Studio aan: a. aan `pwa-root/.env`, voeg de variabele AEM_CFM_GRAPHQL toe, en pas het aan punt aan uw AEM Punt van de Fragmenten GraphQL van de Inhoud aan.
+1. De Apollo-client verwacht het eindpunt van AEM GraphQL op `<https://pwa-studio/endpoint.js>` . Om het eindpunt aan deze plaats in kaart te brengen, pas de configuratie UPWARD van uw toepassing van de PWA Studio aan:
+a. Aan `pwa-root/.env`, voeg de variabele AEM_CFM_GRAPHQL toe, en pas het aan uw AEM Punt van de Fragments GraphQL van de Inhoud aan.
 
    Voorbeeld: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -94,9 +95,9 @@ Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling e
 
 * Beleid voor het delen van bronnen tussen verschillende bronnen van Adoben (com.adobe.granite.cors.impl.CORSPopolicyImpl)
 
-  Stel de `allowedorigin` eigenschap aan de volledige hostnaam van uw PWA-toepassing.
+  Stel de eigenschap `allowedorigin` in op de volledige hostnaam van de PWA-toepassing.
 
-  Voorbeeld:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Voorbeeld: `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer-filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
@@ -104,7 +105,7 @@ Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling e
 
   Voorbeeld: pwa-studio-test-vflyn.local.pwadev
 
-Hier vindt u volledige voorbeelden van beide configuraties: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
+Hier vindt u volledige voorbeelden van beide configuraties: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config> .
 
 Om het eindpunt van GraphQL te tonen, stelde de Adobe sommige modellen van het Fragmentmodel van de steekproefinhoud en gegevens door middel van een inhoudspakket voor. Deze stukken werken samen met de React Components die van de uitbreiding van de PWA Studio wordt voorzien.
 
@@ -124,8 +125,8 @@ Deze extensie bevat twee voorbeelden.
 
 ### Blog {#blog}
 
-Blogberichten weergeven op basis van bepaalde modellen van inhoudsfragmenten. Bovendien bevat het voorbeelden van hoe te om de cliënt van Apollo te vormen om met het AEM eindpunt van GraphQL te werken en hoe te om de navigatiecomponent in PWA Studio uit te breiden. Zie [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension) voor meer informatie .
+Blogberichten weergeven op basis van bepaalde modellen van inhoudsfragmenten. Bovendien bevat het voorbeelden van hoe te om de cliënt van Apollo te vormen om met het AEM eindpunt van GraphQL te werken en hoe te om de navigatiecomponent in PWA Studio uit te breiden. Zie [ GitHub ](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension) voor meer details.
 
 ### PDP-verrijking {#pdp-enrichment}
 
-Laat marketers toe om PDPs met extra inhoud gemakkelijk te verrijken die als Fragments van de Inhoud wordt beheerd. Zie [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) voor meer informatie .
+Laat marketers toe om PDPs met extra inhoud gemakkelijk te verrijken die als Fragments van de Inhoud wordt beheerd. Zie [ GitHub ](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) voor meer details.

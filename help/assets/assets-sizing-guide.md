@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Assets] sizing guide"
-description: Beste praktijken om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om op te stellen [!DNL Adobe Experience Manager Assets].
+description: De beste praktijken om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om  [!DNL Adobe Experience Manager Assets] op te stellen.
 contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
@@ -13,30 +13,30 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Assets] formaatgids {#assets-sizing-guide}
+# [!DNL Assets] hulplijn voor grootte wijzigen {#assets-sizing-guide}
 
-Wanneer u de omgeving instelt op een [!DNL Adobe Experience Manager Assets] implementatie, is het belangrijk om ervoor te zorgen dat er voldoende middelen in termen van schijf, cpu, geheugen, IO, en netwerkproductie beschikbaar zijn. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
+Wanneer het rangschikken van het milieu voor een [!DNL Adobe Experience Manager Assets] implementatie, is het belangrijk om ervoor te zorgen dat er voldoende middelen in termen van schijf, cpu, geheugen, IO, en netwerkproductie beschikbaar zijn. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
 
 ## Schijf {#disk}
 
 ### DataStore {#datastore}
 
-Een algemene fout die is gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een [!DNL Assets] bij de implementatie moeten de berekeningen worden gebaseerd op de grootte van de onbewerkte afbeeldingen die in het systeem worden opgenomen . Standaard, [!DNL Experience Manager] maakt drie uitvoeringen naast de oorspronkelijke afbeelding voor gebruik bij het renderen van de [!DNL Experience Manager] gebruikersinterface-elementen. In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
+Een algemene fout die wordt gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een [!DNL Assets] -implementatie, is het baseren van de berekeningen op de grootte van de Raw-afbeeldingen die in het systeem worden opgenomen. Standaard maakt [!DNL Experience Manager] naast de oorspronkelijke afbeelding drie uitvoeringen voor gebruik bij het renderen van de gebruikersinterface-elementen van [!DNL Experience Manager] . In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
 
-De meeste gebruikers definiëren aangepaste uitvoeringen naast de uitvoeringen buiten de box. Naast de vertoningen, [!DNL Assets] Hiermee kunt u subelementen extraheren uit gangbare bestandstypen, zoals [!DNL Adobe InDesign] en [!DNL Adobe Illustrator].
+De meeste gebruikers definiëren aangepaste uitvoeringen naast de uitvoeringen buiten de box. Naast de uitvoeringen kunt u met [!DNL Assets] subelementen extraheren uit gangbare bestandstypen, zoals [!DNL Adobe InDesign] en [!DNL Adobe Illustrator] .
 
-Tot slot, versieringsmogelijkheden van [!DNL Experience Manager] Hiermee slaat u duplicaten van de elementen in de versiegeschiedenis op. U kunt de versies configureren die vaak moeten worden gewist. Veel gebruikers kiezen er echter voor om de versies in het systeem lange tijd te behouden, wat extra opslagruimte verbruikt.
+Tot slot worden bij versiemogelijkheden van [!DNL Experience Manager] dubbele bestanden van de elementen in de versiegeschiedenis opgeslagen. U kunt de versies configureren die vaak moeten worden gewist. Veel gebruikers kiezen er echter voor om de versies in het systeem lange tijd te behouden, wat extra opslagruimte verbruikt.
 
 Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige opslagruimte te berekenen om gebruikersactiva op te slaan.
 
 1. Bepaal de grootte en het aantal elementen die in het systeem worden geladen.
-1. Een representatieve steekproef van de elementen ophalen waarnaar geüpload moet worden [!DNL Experience Manager]. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
+1. Hiermee krijgt u een representatief voorbeeld van de elementen die u wilt uploaden naar [!DNL Experience Manager] . Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
-1. De uitvoeringen maken in [!DNL Experience Manager] gebruiken [!DNL ImageMagick] of [!DNL Adobe Creative Cloud] toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media implementeren, kunt u het binaire getal IC gebruiken om de PTIFF-uitvoeringen te genereren die in de Experience Manager moeten worden opgeslagen.
+1. Maak de uitvoeringen in [!DNL Experience Manager] met behulp van [!DNL ImageMagick] - of [!DNL Adobe Creative Cloud] -toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media implementeren, kunt u het binaire getal IC gebruiken om de PTIFF-uitvoeringen te genereren die in de Experience Manager moeten worden opgeslagen.
 1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen.
 1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor voor de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
-1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Indien [!DNL Experience Manager] wordt gebruikt als een samenwerkingscentrum in creatieve werkschema&#39;s, zijn de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
+1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Als [!DNL Experience Manager] wordt gebruikt als een samenwerkingshoofd in creatieve werkschema&#39;s, is de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
 1. Bepaal hoeveel elementen elke maand in het systeem worden geladen. Als u niet zeker weet, controleert u het aantal elementen dat momenteel beschikbaar is en verdeelt u het getal door de leeftijd van het oudste element om een geschatte waarde te berekenen.
 
 Door de bovenstaande stappen uit te voeren, kunt u het volgende bepalen:
@@ -49,7 +49,7 @@ Door de bovenstaande stappen uit te voeren, kunt u het volgende bepalen:
 * Aantal nieuwe elementen dat elke maand wordt geladen.
 * Jaren van groei voor toewijzing van opslagruimte.
 
-U kunt deze aantallen in het Netwerk het Rangschikken spreadsheet specificeren om de totale ruimte te bepalen die voor uw datastore wordt vereist. Het is ook een handig hulpmiddel om het effect te bepalen van het onderhoud van elementversies of het wijzigen van elementen in [!DNL Experience Manager] op schijfgroei.
+U kunt deze aantallen in het Netwerk het Rangschikken spreadsheet specificeren om de totale ruimte te bepalen die voor uw datastore wordt vereist. Het is ook een handig hulpmiddel om te bepalen wat de invloed is van het onderhoud van elementversies of het wijzigen van elementen in [!DNL Experience Manager] op schijfgroei.
 
 De voorbeeldgegevens die in het gereedschap zijn ingevuld, tonen aan hoe belangrijk het is om de vermelde stappen uit te voeren. Als u de datastore alleen op basis van de te laden Raw-afbeeldingen (1 TB) wijzigt, hebt u de grootte van de opslagplaats mogelijk met een factor 15 onderschat.
 
@@ -104,15 +104,15 @@ Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 30
 
 ## Netwerk {#network}
 
-[!DNL Assets] heeft verscheidene gebruiksgevallen die netwerkprestaties belangrijker dan op veel van ons maken [!DNL Experience Manager] projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het knooppunt in de netwerkverbinding van een gebruiker te bepalen met [!DNL Experience Manager] om [De overwegingen van activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](/help/assets/assets-network-considerations.md).
+[!DNL Assets] heeft verschillende gebruiksgevallen die netwerkprestaties belangrijker maken dan bij veel van onze [!DNL Experience Manager] -projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het knooppunt in het netwerkverbinding van een gebruiker aan [!DNL Experience Manager] bij [ Assets overwegingen voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie ](/help/assets/assets-network-considerations.md) te bepalen.
 
 ## Beperkingen {#limitations}
 
-Wanneer het rangschikken van een implementatie, is het belangrijk om systeembeperkingen in mening te houden. Als de voorgestelde implementatie deze beperkingen overschrijdt, maakt u gebruik van creatieve strategieën, zoals het verdelen van de middelen over meerdere [!DNL Assets] implementaties.
+Wanneer het rangschikken van een implementatie, is het belangrijk om systeembeperkingen in mening te houden. Als de voorgestelde implementatie deze beperkingen overschrijdt, kunt u creatieve strategieën gebruiken, zoals het verdelen van de elementen over meerdere [!DNL Assets] -implementaties.
 
-Bestandsgrootte is niet de enige factor die bijdraagt aan problemen met onvoldoende geheugen (OOM). Het hangt ook van afmetingen van het beeld af. U kunt OOM-problemen voorkomen door een hogere heapgrootte te bieden wanneer u begint [!DNL Experience Manager].
+Bestandsgrootte is niet de enige factor die bijdraagt aan problemen met onvoldoende geheugen (OOM). Het hangt ook van afmetingen van het beeld af. U kunt OOM-problemen voorkomen door een hogere heapgrootte op te geven wanneer u [!DNL Experience Manager] start.
 
-Bovendien kunt u de eigenschap voor drempelgrootte van het dialoogvenster `com.day.cq.dam.commons.handler.StandardImageHandler` in de Manager van de Configuratie aan gebruik tijdelijk tussendossier groter dan nul.
+Bovendien kunt u het bezit van de drempelgrootte van de `com.day.cq.dam.commons.handler.StandardImageHandler` component in de Manager van de Configuratie uitgeven om tussentijds tijdelijk dossier groter dan nul te gebruiken.
 
 ## Maximumaantal activa {#maximum-number-of-assets}
 
@@ -120,8 +120,8 @@ De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 mi
 
 Gebruik de Camera Raw bibliotheek als de uitvoeringen onjuist zijn gegenereerd. In dit geval mag de langste zijde van de afbeelding echter niet groter zijn dan 65000 pixels. Bovendien mag de afbeelding niet meer dan 512 MP (512 x 1024 x 1024 pixels) bevatten. De grootte van het actief is niet van belang.
 
-Het is moeilijk nauwkeurig de grootte van het TIFF dossier te schatten dat uit-van-de-doos met een specifieke heap voor wordt gesteund [!DNL Experience Manager] omdat extra factoren, zoals pixelgrootte, de verwerking beïnvloeden. Het is mogelijk dat [!DNL Experience Manager] Een bestand van 255 MB buiten de box kan worden verwerkt, maar een bestand van 18 MB kan niet worden verwerkt, omdat het laatste een ongewoon groter aantal pixels bevat dan het eerste.
+Het is moeilijk nauwkeurig de grootte te schatten van het dossier van de TIFF dat uit-van-de-doos met een specifieke heap voor [!DNL Experience Manager] wordt gesteund omdat extra factoren, zoals pixelgrootte verwerking beïnvloeden. Het is mogelijk dat [!DNL Experience Manager] een bestand van 255 MB buiten de box kan verwerken, maar geen bestandsgrootte van 18 MB kan verwerken omdat het laatste bestand een ongewoon groter aantal pixels bevat dan het eerste.
 
 ## Omvang van elementen {#size-of-assets}
 
-Standaard, [!DNL Experience Manager] Hiermee kunt u elementen uploaden van maximaal 2 GB. Zeer grote middelen uploaden in [!DNL Experience Manager], zie [Configuratie om zeer grote elementen te uploaden](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+Standaard kunt u met [!DNL Experience Manager] elementen van maximaal 2 GB uploaden. Om zeer grote activa in [!DNL Experience Manager] te uploaden, zie [ Configuratie om zeer grote activa ](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb) te uploaden.

@@ -19,7 +19,7 @@ ht-degree: 20%
 
 # Gereedschapsconsoles{#tools-consoles}
 
-De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde hulpmiddelen die u helpen uw websites, digitale middelen en andere aspecten van uw inhoudsplaats te beheren. Er zijn momenteel twee flauwvallen van de **Gereedschappen** console afhankelijk van UI u gebruikt:
+De **hulpmiddelen** consoles verlenen toegang tot verscheidene gespecialiseerde hulpmiddelen die u helpen uw websites, digitale activa, en andere aspecten van uw inhoudsbewaarplaats beheren. Er zijn momenteel twee vloeren van de **** console van Hulpmiddelen afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)
@@ -158,7 +158,7 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
   </tr>
   <tr>
    <td> </td>
-   <td>Externe koppelingencontrole<br /> </td>
+   <td>External LinkChecker <br /> </td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -286,7 +286,7 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
   </tr>
   <tr>
    <td> </td>
-   <td>Dynamic Media-configuratie<br /> </td>
+   <td>Dynamic Media-configuratie <br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -306,15 +306,15 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie sociale aanmelding voor facebook<br /> </td>
+   <td>Configuratie sociale aanmelding voor facebook <br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie van sociale aanmelding voor twitter<br /> </td>
+   <td>Configuratie van sociale aanmelding voor twitter <br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie sociale aanmelding voor pinterest<br /> </td>
+   <td>Configuratie sociale aanmelding voor pinterest <br /> </td>
   </tr>
   <tr>
    <td>Gemeenschappen</td>
@@ -326,7 +326,7 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
   </tr>
   <tr>
    <td> </td>
-   <td>Component Guide<br /> </td>
+   <td>Component Guide <br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -334,18 +334,18 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
   </tr>
   <tr>
    <td> </td>
-   <td>Groepssjablonen<br /> </td>
+   <td>Groepssjablonen <br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Sitesjablonen<br /> </td>
+   <td>Sitesjablonen <br /> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Community-badges</td>
   </tr>
   <tr>
-   <td>Handel</td>
+   <td>Commerce</td>
    <td> </td>
   </tr>
   <tr>
@@ -372,19 +372,19 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
    <td>Gecentraliseerd punt voor het beheer van uw meerdere sites.</td>
   </tr>
   <tr>
-   <td>Contextconfiguraties voor clients<br /> </td>
+   <td>Contextconfiguraties voor clients <br /> </td>
    <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaardconfiguraties en de configuraties van het Experience Cloud worden hier gehouden.<br /> </td>
   </tr>
   <tr>
-   <td>Configuraties van Cloud Servicen<br /> </td>
+   <td>Configuraties van Cloud Servicen <br /> </td>
    <td>Bevat configuraties met betrekking tot Integratie met de Adobe Experience Cloud.</td>
   </tr>
   <tr>
-   <td>Cloud-instellingen<br /> </td>
+   <td>Cloudinstellingen <br /> </td>
    <td>Configuratiebeheerinstellingen.</td>
   </tr>
   <tr>
-   <td>Handel</td>
+   <td>Commerce</td>
    <td>Biedt toegang tot importeurs en verschillende productgegevens.</td>
   </tr>
   <tr>
@@ -421,11 +421,11 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
   </tr>
   <tr>
    <td>Pakketten</td>
-   <td>Een alternatieve verbinding aan de Manager van het Pakket die de pakketten toont die voor AEM WCM zijn geladen. Vergelijkbaar met de informatie die wordt weergegeven in Package Manager van CRX.</td>
+   <td>Een alternatieve verbinding aan de Manager van het Pakket die de pakketten toont die voor AEM WCM zijn geladen. Vergelijkbaar met de informatie in CRX Package Manager.</td>
   </tr>
   <tr>
    <td>Replicatie - replicatieagents</td>
-   <td>Wordt gebruikt om gegevens van de instantie Auteur te repliceren voor publicatie bij het publiceren van pagina's of met omgekeerde replicatie om gebruikersopmerkingen van de publicatieomgeving te retourneren aan de auteur.</td>
+   <td>Wordt gebruikt om gegevens van de instantie Auteur te repliceren naar Publish bij het publiceren van pagina's of met omgekeerde replicatie om gebruikersopmerkingen van de publicatieomgeving naar de auteur te retourneren.</td>
   </tr>
   <tr>
    <td>Rapporten</td>
@@ -441,7 +441,7 @@ De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde
   </tr>
   <tr>
    <td>Segmentering</td>
-   <td>De bezoekers van de plaats hebben verschillende belangen en doelstellingen wanneer zij aan een plaats komen. Kennis van deze doelstellingen en het voldoen aan de verwachtingen is een belangrijke succesfactor voor online marketing. Segmentering helpt dit te bereiken door de details van een bezoeker te analyseren en te karakteriseren.<br /> </td>
+   <td>De bezoekers van de plaats hebben verschillende belangen en doelstellingen wanneer zij aan een plaats komen. Kennis van deze doelstellingen en het voldoen aan de verwachtingen is een belangrijke succesfactor voor online marketing. De segmentatie helpt om dit te bereiken door de details van een bezoeker te analyseren en te karakteriseren.<br /> </td>
   </tr>
   <tr>
    <td>huurders</td>

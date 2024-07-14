@@ -20,10 +20,10 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6,5 | Dit artikel |
 
-Voor informatie over de nieuwste functies en verbeteringen in AEM Forms raadpleegt u [Nieuwe functies in AEM Forms](../../forms/using/whats-new.md).
+Voor informatie over recentste eigenschappen en verhogingen in AEM Forms, zie [ wat in AEM Forms ](../../forms/using/whats-new.md) nieuw is.
 
 ## Informatie over AEM Forms {#about-aem-forms}
 
@@ -33,13 +33,13 @@ AEM Forms combineert mogelijkheden voor formulierontwerp, -beheer en -publicatie
 
 In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen.
 
-AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Zie voor meer informatie [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md).
+AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Voor meer informatie, zie [ Inleiding aan het beheren van vormen ](../../forms/using/introduction-managing-forms.md).
 
 >[!NOTE]
 >
->De functie Adaptive Forms is beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is uitsluitend ontworpen voor exploratie en evaluatie. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
-![Formuliermogelijkheden AEM](do-not-localize/4th-draft-updated.gif)
+![ AEM vormen mogelijkheden ](do-not-localize/4th-draft-updated.gif)
 
 ### Belangrijkste mogelijkheden {#key-capabilities}
 
@@ -64,11 +64,11 @@ Met AEM Forms kunt u nieuwe en bestaande formulieren uitbreiden om te maken:
 
 PDF forms kunnen offline worden ingevuld, lokaal worden opgeslagen en formuliergegevens worden verzonden wanneer u de volgende keer online bent. U kunt tweedimensionale streepjescodes gebruiken om formuliergegevens vast te leggen en digitale handtekeningen gebruiken om de authenticiteit voor gebruikers te valideren.
 
-**HTML-formulieren**
+**HTML vormen**
 
 HTML5 browserformulieren kunnen zowel op mobiele apparaten als in desktopbrowsers worden weergegeven. U kunt HTML-formulieren elektronisch ondertekenen met behulp van de services Krabbelen of eSign.
 
-**Aangepaste formulieren**
+**Aangepaste vormen**
 
 Met adaptieve formulieren kunt u zich dynamisch aanpassen aan de reacties van gebruikers door naar wens velden of secties toe te voegen of te verwijderen. Met AEM kunt u Adobe XML-formuliersjablonen opnieuw gebruiken om adaptieve formulieren te maken.
 
@@ -83,27 +83,27 @@ Alle formuliertypen ondersteunen de volgende functies:
 * Toegankelijkheidsontwerp en -controle
 * Formulieren opslaan op de server
 * Ondersteuning voor bestandsbijlagen
-* Integratie met HTML-werkruimte voor gegevensvastlegging
+* Integratie met HTML Workspace for Data Capture
 
 ## Offline gegevensverzameling {#offline-data-collection}
 
 Zodra de vormgegevens worden voorgelegd, verbindt Adobe Experience Manager de vormgegevens met bestaande systemen, bedrijfsregels, en de vereiste mensen.
 
-AEM Forms biedt Forms Workspace, een mobiele toepassing die uw digitale bedrijfsprocessen uitbreidt tot mobiele apparaten. Met Forms Workspace kunt u zelfs gegevens verzamelen en opnemen als u offline bent. In Forms Workspace worden de mogelijkheden van uw mobiele apparaat gebruikt en kunt u foto&#39;s, video&#39;s en gegevens zoals tijdstempels en andere informatie vastleggen. De volgende keer dat u verbinding maakt met een netwerk, kunt u de verzamelde gegevens synchroniseren.
+AEM Forms biedt Forms Workspace, een mobiele toepassing die uw digitale bedrijfsprocessen uitbreidt tot mobiele apparaten. Met Forms Workspace kunt u zelfs offline gegevens verzamelen en opnemen. Forms Workspace gebruikt de mogelijkheden van uw mobiele apparaat en biedt u de mogelijkheid om foto&#39;s, video&#39;s en gegevens zoals tijdstempels en andere informatie vast te leggen. De volgende keer dat u verbinding maakt met een netwerk, kunt u de verzamelde gegevens synchroniseren.
 
 Met name voor mensen in het veld is het handig om gegevens offline vast te leggen en deze de volgende keer online te synchroniseren. Het verbetert productiviteit en vermindert fouten.
 
-**Voordelen van het gebruik van Forms Workspace voor offlinegegevensverzameling**
+**Voordelen om Forms Workspace voor off-line gegevensinzameling te gebruiken**
 
 * Gebruiksvriendelijke HTML-werkruimtetoepassing voor taaktoewijzing en -opvolging
 * Workflowontwerpomgeving voor slepen en neerzetten
 * ECM (Enterprise Content Management Connectors)
-* Ondersteuning voor open standaarden, inclusief XML en SOAP, om formuliergegevens te verbinden met bedrijfssystemen
+* Ondersteuning voor open standaarden, waaronder XML en SOAP om formuliergegevens te verbinden met bedrijfssystemen
 * De uit-van-de-doos rapporten van de HTML controleren achterstand, werkrijen, en Zeer belangrijke Indicatoren van Prestaties (KPIs)
 * Aanpasbare dashboards voor real-time inzicht in bedrijfsverrichtingen
 * API voor verbinding met rapportagehulpprogramma&#39;s van derden
 
-![Derde concept](do-not-localize/3rd-draft.gif)
+![ Derde ontwerp ](do-not-localize/3rd-draft.gif)
 
 ## Persoonlijke communicatie {#personalized-communication}
 
@@ -113,7 +113,7 @@ Met AEM Forms kunnen zakelijke gebruikers aansprekende persoonlijke gebruikerser
 
 Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, kunnen gemakkelijk op meerdere kanalen worden afgeleverd. Organisaties kunnen het verkeer naar gepersonaliseerde webportalen sturen, wat leidt tot inschrijving of aanschaf van extra services.
 
-**Belangrijkste kenmerken**
+**Zeer belangrijke eigenschappen**
 
 * Correspondentie-ontwerpomgeving met ondersteuning voor sjablonen, inhoudsblokken, bedrijfsregels en meer
 * Documentconversie en -assemblage
@@ -122,7 +122,7 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 * Ondersteuning voor digitale handtekeningen om de integriteit van de inhoud en de identiteit van de ondertekenaar te valideren
 * Invoegtoepassing voor documentbeveiliging voor AEM Forms, inclusief codering, gebruiksbeleid, bijhouden en controleren
 
-![Layout twee](do-not-localize/layout-02.png)
+![ Lay-out twee ](do-not-localize/layout-02.png)
 
 Gestroomlijnde workflow voor persoonlijke communicatie
 

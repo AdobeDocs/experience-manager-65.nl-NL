@@ -26,41 +26,41 @@ De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de 
 
 AEM Sites is klaar om klanten te helpen bij het nakomen van hun GDPR-verplichtingen. Deze pagina begeleidt klanten door de procedures om GDPR-verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Zie voor meer informatie de [GDPR-pagina in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Voor verdere informatie zie de [ pagina GDPR bij het Centrum van de Privacy van de Adobe ](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Zie [Gereedheid AEM GDPR](/help/managing/data-protection-and-privacy.md) voor nadere bijzonderheden.
+>Zie [ AEM GDPR Gereedheid ](/help/managing/data-protection-and-privacy.md) voor verdere details.
 
 ## Auteursserver {#author-server}
 
-Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de [Platform GDPR-documentatie](/help/managing/data-protection-and-privacy.md).
+De rekeningen van de gebruiker en inhoud UGC op de auteurserver zijn behandeld in de [ documentatie van Platform GDPR ](/help/managing/data-protection-and-privacy.md).
 
-## Server publiceren {#publish-server}
+## Publish Server {#publish-server}
 
-Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden opgenomen in de [Platform GDPR-documentatie](/help/managing/data-protection-and-privacy.md).
+De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [ documentatie van Platform GDPR ](/help/managing/data-protection-and-privacy.md).
 
 Standaard slaan AEM Sites-componenten geen formuliergegevens op die bezoekers op de publicatieserver hebben ingevoerd. Het wordt aanbevolen de gegevens naar een systeem van derden of naar Adobe Campaign te sturen voor verdere verwerking.
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
-AEM heeft een [cookie-uitschakelservice](/help/sites-developing/cookie-optout.md) die kunnen worden gebruikt voor het beheer van de opt-in/opt-out voor gebruikers.
+AEM heeft de dienst van de a [ koekjesopt-out ](/help/sites-developing/cookie-optout.md) die voor het beheren van opt-in/opt-out voor gebruikers kan worden gebruikt.
 
 ## Verbeterde inzichten door Analytics {#enhanced-insights-by-analytics}
 
 AEM Sites omvat een optionele integratie met Enhanced Insights van Analytics, die gebruikmaakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Zie voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met betrekking tot Adobe Analytics [Adobe Analytics en GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Voor verdere informatie bij het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Analytics zie [ Adobe Analytics en GDPR ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Verbeterde personalisatie door doel {#enhanced-personalization-by-target}
+## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites omvat een optionele integratie met Enhanced Personalization by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Zie voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met betrekking tot Adobe Target [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
+Voor meer informatie over het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Target zie [ Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens ](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
 
 ## ContextHub {#contexthub}
 
-AEM biedt een optionele gegevenslaag met [ContextHub](/help/sites-developing/contexthub.md). Dit houdt bezoekersspecifieke gegevens in browser, die voor op regel-gebaseerde verpersoonlijking moeten worden gebruikt.
+AEM verstrekt een facultatieve gegevenslaag met [ ContextHub ](/help/sites-developing/contexthub.md). Dit houdt bezoekersspecifieke gegevens in browser, die voor op regel-gebaseerde verpersoonlijking moeten worden gebruikt.
 
 Door gebrek, wordt dit bezoeker-gegeven niet opgeslagen in AEM; AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
 
@@ -108,7 +108,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
 * Gebruik de browserconsole, bijvoorbeeld:
 
-   * Chroom:
+   * Chrome:
 
       * Open Developer Tools > Application > Storage:
 

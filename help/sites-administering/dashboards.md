@@ -24,148 +24,148 @@ Wanneer u AEM gebruikt, kunt u een groot aantal verschillende typen inhoud beher
 >
 >AEM dashboards worden gecreeerd op een per gebruikersbasis, zodat kan een gebruiker tot hun eigen dashboard slechts toegang hebben.
 >
->Maar [Dashboardsjablonen](#creating-a-dashboard-template) kan worden gebruikt om algemene configuratie en dashboardlay-out te delen.
+>Nochtans, {de malplaatjes van 0} Dashboard ](#creating-a-dashboard-template) kunnen worden gebruikt om gemeenschappelijke configuratie en lay-out te delen Dashboard.[
 
-![chlimage_1-22](assets/chlimage_1-22.jpeg)
+![ chlimage_1-22 ](assets/chlimage_1-22.jpeg)
 
 ## Dashboards beheren {#administering-dashboards}
 
 ### Een dashboard maken {#creating-a-dashboard}
 
-1. In de **Gereedschappen** sectie, klikken **Configuratieconsole**.
-1. Dubbelklik in de structuur op **Dashboard**.
-1. Klikken **Nieuw dashboard**.
-1. Typ de **Titel** (bijvoorbeeld Mijn dashboard) en de **Naam**.
-1. Klikken **Maken**.
+1. In de **sectie van Hulpmiddelen**, klik **Console van de Configuratie**.
+1. In de boom, klik **Dashboard** tweemaal.
+1. Klik **Nieuw Dashboard**.
+1. Typ de **Titel** (bijvoorbeeld, Mijn Dashboard) en de **Naam**.
+1. Klik **creëren**.
 
 ### Een dashboard klonen {#cloning-a-dashboard}
 
 Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud vanuit verschillende weergaven te bekijken. AEM biedt een kloonfunctie waarmee u een bestaand dashboard kunt dupliceren, zodat u een nieuw dashboard kunt maken. Ga als volgt te werk om een dashboard te klonen:
 
-1. In de **Gereedschappen** sectie, klikken **Configuratieconsole**.
+1. In de **sectie van Hulpmiddelen**, klik **Console van de Configuratie**.
 
-1. Klik in de structuur op **Dashboard**.
+1. In de boom, klik **Dashboard**.
 1. Klik op het dashboard dat u wilt klonen.
 
-1. Klikken **Klonen**.
+1. Klik **Kloon**.
 
-1. Typ de **Naam** van uw nieuwe dashboard.
+1. Typ de **Naam** van uw nieuw dashboard.
 
 ### Een dashboard verwijderen {#removing-a-dashboard}
 
-1. In de **Gereedschappen** sectie, klikken **Configuratieconsole**.
+1. In de **sectie van Hulpmiddelen**, klik **Console van de Configuratie**.
 
-1. Klik in de structuur op **Dashboard**.
+1. In de boom, klik **Dashboard**.
 1. Klik op het dashboard dat u wilt verwijderen.
 
-1. Klikken **Verwijderen**.
+1. Klik **verwijderen**.
 
-1. Klikken **Ja** ter bevestiging.
+1. Klik **ja** om te bevestigen.
 
 ## Dashboardcomponenten {#dashboard-components}
 
 ### Overzicht {#overview}
 
-Onderdelen van het dashboard zijn niet meer dan normaal [AEM componenten](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
+De componenten van het dashboard zijn niets meer dan regelmatige [ AEM componenten ](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
 
 ### Webanalytische rapportagecomponenten {#web-analytics-reporting-components}
 
-AEM schepen met een reeks componenten die veelvoudige metriek van uw teruggeven [SiteCatalyst](/help/sites-administering/adobeanalytics.md) gegevens. Deze onderdelen worden vermeld in de Sidekick onder de **Dashboard** sectie.
+AEM schepen met een reeks componenten die veelvoudige metriek van uw [ SiteCatalyst ](/help/sites-administering/adobeanalytics.md) gegevens teruggeven. Die componenten zijn vermeld in de Sidekick onder de **sectie van het dashboard**.
 
 Elke rapportcomponent bevat ten minste drie tabbladen:
 
-* **Basis**: bevat de hoofdconfiguratie.
+* **Basis**: bevat de belangrijkste configuratie.
 
-* **Rapport:** bevat specifiek de configuratie van elk rapport.
-* **Stijl**: bevat opmaakconfiguratie zoals diagramgrootte en -marge.
+* **Rapport:** bevat de configuratie specifiek van elk rapport.
+* **Stijl**: bevat het stileren configuratie zoals grafiekgrootte en marge.
 
 De rapportcomponenten worden geïnitialiseerd met een standaardconfiguratie die u helpt snel opstelling uw dashboard.
 
 #### Basisconfiguratie {#basic-configuration}
 
-De **Basis** verleent toegang tot de volgende configuratieingangen:
+Het **Basis** lusje verleent toegang tot de volgende configuratieingangen:
 
-**Titel** De titel die op het dashboard wordt weergegeven.
+**Titel** de titel die op het dashboard wordt getoond.
 
-**Type aanvraag** De manier waarop gegevens worden aangevraagd.
+**het type van Verzoek** De manier de gegevens worden gevraagd.
 
-**Configuratie SiteCatalyst (optioneel)** De configuratie u wilt gebruiken om met SiteCatalyst te verbinden. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
+**de Configuratie van de SiteCatalyst (facultatief)** de configuratie u wilt gebruiken om met SiteCatalyst te verbinden. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
 
-**ID rapportsuite (optioneel)** De het rapportreeks van de SiteCatalyst u wilt gebruiken om de grafiek te produceren.
+**identiteitskaart van de Reeks van het Rapport (facultatief)** de het rapportreeks van de SiteCatalyst u wilt gebruiken om de grafiek te produceren.
 
 #### Rapportconfiguratie {#report-configuration}
 
-Als u webstatistieken wilt weergeven, moet u het datumbereik definiëren van de gegevens die u wilt genereren. De **Rapport** bevat twee velden om dat bereik te definiëren.
+Als u webstatistieken wilt weergeven, moet u het datumbereik definiëren van de gegevens die u wilt genereren. Het **lusje van het Rapport** verstrekt twee gebieden om die waaier te bepalen.
 
 >[!NOTE]
 >
 >Als u een datumbereik voor een grote datum instelt, kan de reactiesnelheid van het dashboard afnemen.
 
-**Datum vanaf** Absolute of relatieve datum vanaf wanneer de gegevens worden opgehaald.
+**Datum van** Absolute of relatieve datum waarvan het gegeven wordt gehaald.
 
-**Datum tot** Absolute of relatieve datum waarop de gegevens worden opgehaald.
+**Datum aan** Absolute of relatieve datum waaraan het gegeven wordt gehaald.
 
 Elke component definieert ook specifieke instellingen.
 
 #### Rapport overuren {#overtime-report}
 
-![chlimage_1-26](assets/chlimage_1-26a.png)
+![ chlimage_1-26 ](assets/chlimage_1-26a.png)
 
-**Datum van granulariteit** Tijdeenheid van de X-as (bijvoorbeeld dag, uur).
+**Eenheid van de Tijd van de Korreligheid van de Datum van 0} {(bijvoorbeeld, dag, uur).**
 
-**Metrisch** De lijst met gebeurtenissen die u wilt weergeven.
+**Metriek** de lijst van gebeurtenissen u wilt tonen.
 
-**Elementen** De lijst met elementen die de metagegevens in de grafiek opsplitst.
+**Elementen** de lijst van elementen die de metrieke gegevens in de grafiek opsplitsen.
 
 #### Rapport met gerangschikte lijst {#ranked-list-report}
 
-![chlimage_1-27](assets/chlimage_1-27a.png)
+![ chlimage_1-27 ](assets/chlimage_1-27a.png)
 
-**Elementen** Het element dat de cijfergegevens in de grafiek opsplitst.
+**Elementen** het element dat de metrieke gegevens in de grafiek opsplitst.
 
-**Metrisch** De gebeurtenis die u wilt weergeven.
+**Metriek** de gebeurtenis u wilt tonen.
 
-**Nee. van bovenste objecten** Aantal punten door het rapport worden getoond dat.
+**Nr. van hoogste punten** Aantal punten die door het rapport worden getoond.
 
 #### Geregistreerd rapport {#ranked-report}
 
-![chlimage_1-28](assets/chlimage_1-28a.png)
+![ chlimage_1-28 ](assets/chlimage_1-28a.png)
 
-**Metrisch** De gebeurtenis die u wilt weergeven.
+**Metriek** de gebeurtenis u wilt tonen.
 
-**Elementen** Het element dat de cijfergegevens in de grafiek opsplitst.
+**Elementen** het element dat de metrieke gegevens in de grafiek opsplitst.
 
 #### Rapport voor bovenste site-sectie {#top-site-section-report}
 
 Deze component geeft een grafiek weer met de meer bezochte sectie van een website volgens de volgende configuratie.
 
-![chlimage_1-29](assets/chlimage_1-29a.png)
+![ chlimage_1-29 ](assets/chlimage_1-29a.png)
 
-**Nee. van bovenste objecten** Aantal sectie die door in het rapport wordt getoond.
+**Nr. van hoogste punten** Aantal sectie die door in het rapport wordt getoond.
 
 #### Trend Report {#trended-report}
 
-![chlimage_1-30](assets/chlimage_1-30a.png)
+![ chlimage_1-30 ](assets/chlimage_1-30a.png)
 
-**Datum van granulariteit** Tijdeenheid van de X-as (bijvoorbeeld dag, uur).
+**Eenheid van de Tijd van de Korreligheid van de Datum van 0} {(bijvoorbeeld, dag, uur).**
 
-**Metrisch** De gebeurtenis die u wilt weergeven.
+**Metriek** de gebeurtenis u wilt tonen.
 
-**Elementen** Het element dat de cijfergegevens in de grafiek opsplitst.
+**Elementen** het element dat de metrieke gegevens in de grafiek opsplitst.
 
 ## Het dashboard uitbreiden {#extending-dashboard}
 
 ### Overzicht {#overview-1}
 
-Dashboards zijn normale pagina&#39;s ( `cq:Page`), kunnen daarom alle componenten worden gebruikt om dashboards samen te stellen.
+Dashboards zijn normale pagina&#39;s ( `cq:Page`), daarom kunnen om het even welke componenten worden gebruikt om Dashboards samen te stellen.
 
-Er is een standaardcomponentgroep `Dashboard` met analytische rapportagecomponenten die standaard op de sjabloon zijn ingeschakeld.
+Er is een standaardcomponentengroep `Dashboard` die analytische rapportcomponenten bevat die standaard op de sjabloon zijn ingeschakeld.
 
 ### Een dashboardsjabloon maken {#creating-a-dashboard-template}
 
 Een sjabloon definieert de standaardinhoud van een nieuw dashboard. U kunt verschillende sjablonen gebruiken voor het maken van verschillende typen dashboards.
 
-Dashboardsjablonen worden net als andere paginasjablonen gemaakt, behalve dat ze onder `/libs/cq/dashboards/templates/`. Zie de [Sjabloon voor inhoudspagina maken](/help/sites-developing/website.md#creating-the-contentpage-template) sectie.
+Dashboardsjablonen worden net als andere paginasjablonen gemaakt, maar worden opgeslagen onder `/libs/cq/dashboards/templates/` . Zie [ Creërend het Malplaatje van de Inhoud ](/help/sites-developing/website.md#creating-the-contentpage-template) sectie.
 
 >[!NOTE]
 >
@@ -175,19 +175,19 @@ Dashboardsjablonen worden net als andere paginasjablonen gemaakt, behalve dat ze
 
 Het ontwikkelen van een dashboardcomponent bestaat uit het maken van een gewone AEM. Deze sectie beschrijft een voorbeeld van een component die hoogste 10 van contribuanten toont.
 
-![chlimage_1-31](assets/chlimage_1-31a.png)
+![ chlimage_1-31 ](assets/chlimage_1-31a.png)
 
-De bovenste auteurcomponenten worden opgeslagen in de gegevensopslagruimte op `/apps/geometrixx-outdoors/components/reporting` en bestaat uit:
+De bovenste auteurcomponenten worden opgeslagen in de bewaarplaats bij `/apps/geometrixx-outdoors/components/reporting` en bestaan uit:
 
-1. a `jsp` bestand dat jcr-gegevens leest en dat de `html` plaatsaanduiding.
+1. een `jsp` -bestand waarin jcr-gegevens worden gelezen en de tijdelijke aanduiding `html` wordt gedefinieerd.
 
-1. een bibliotheek aan de clientzijde met één `js` bestand dat de gegevens ophaalt en bestelt, vult vervolgens het `html` plaatsaanduiding.
+1. een client-side bibliotheek met één `js` -bestand dat de gegevens ophaalt en bestelt, vult vervolgens de tijdelijke aanduiding `html` .
 
-![chlimage_1-32](assets/chlimage_1-32a.png)
+![ chlimage_1-32 ](assets/chlimage_1-32a.png)
 
-Het volgende JavaScript-bestand wordt gedefinieerd in het dialoogvenster `geout.reporting.topauthors` [Clientbibliotheek](/help/sites-developing/clientlibs.md) als een onderliggend element van de component zelf.
+Het volgende dossier van JavaScript wordt bepaald in de `geout.reporting.topauthors` [ Bibliotheek van de Cliënt ](/help/sites-developing/clientlibs.md) als kind van de component zelf.
 
-De [QueryBuilder](/help/sites-developing/querybuilder-api.md) wordt gebruikt om de gegevensopslagruimte te vragen om te lezen `cq:AuditEvent` knooppunten. Het queryresultaat is een JSON-object waaruit de bijdragen van de auteur worden geëxtraheerd.
+[ QueryBuilder ](/help/sites-developing/querybuilder-api.md) wordt gebruikt om de bewaarplaats te vragen om `cq:AuditEvent` knopen te lezen. Het queryresultaat is een JSON-object waaruit de bijdragen van de auteur worden geëxtraheerd.
 
 #### top_authors.js {#top-authors-js}
 
@@ -234,7 +234,7 @@ $.ajax({
 });
 ```
 
-De `JSP` omvat beide `global.jsp` en `clientlib`.
+`JSP` bevat zowel `global.jsp` als `clientlib` .
 
 #### top_authors.jsp {#top-authors-jsp}
 

@@ -19,9 +19,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager-inhoud (AEM) kan eenvoudig worden gerenderd via [Standaardservers splitsen](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) renderen [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen.
+De inhoud van Adobe Experience Manager (AEM) kan gemakkelijk als [ het Verzenden StandaardServen ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) worden teruggegeven om [ JSON ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere formaten terug te geven.
 
 Die uitleveringen buiten de doos lopen normaal gesproken de opslagplaats en retourneren inhoud.
 
@@ -31,25 +31,25 @@ De Standaard Renderers van de Diensten van de inhoud vullen het hiaat tussen uit
 
 Het volgende diagram toont het teruggeven van inhoudsdiensten.
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![ chlimage_1-15 ](assets/chlimage_1-15.png)
 
 ## JSON aanvragen {#requesting-json}
 
-Gebruiken **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** om JSON aan te vragen.]
+Gebruik **&lt;RESOURCE.caas [.&lt;EXPORT-CONFIG ][.&lt;EXPORT-CONFIG ] .json** om JSON aan te vragen.
 
 <table>
  <tbody>
   <tr>
    <td>BRON</td>
-   <td>een entiteitsmiddel onder /content/entities<br /> of <br /> een inhoudsbron onder /content</td>
+   <td>een entiteitmiddel onder /content/entities <br /> of <br /> een inhoudsmiddel onder /content</td>
   </tr>
   <tr>
    <td>EXPORTCONFIG</td>
-   <td><p><strong>OPTIONEEL</strong><br /> </p> <p>een exportconfiguratie gevonden onder /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Indien weggelaten, wordt de standaardexportconfiguratie toegepast </p> </td>
+   <td><p><strong> OPTIONEEL </strong><br /> </p> <p>een exportconfiguratie gevonden onder /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG <br /> <br /> Als u de standaardexportconfiguratie weglaat, wordt deze toegepast </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>OPTIONEEL</strong><br /> <br /> diepteherhaling voor renderen van kinderen zoals gebruikt bij rendering van elementen</td>
+   <td><strong> OPTIONELE </strong><br /> <br /> diepterecursie voor het teruggeven van kinderen zoals die in het Verdraaien worden gebruikt</td>
   </tr>
  </tbody>
 </table>
@@ -58,7 +58,7 @@ Gebruiken **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot
 
 U kunt exportconfiguraties maken om JSON-rendering aan te passen.
 
-U kunt een configuratieknoop tot stand brengen onder */apps/mobileapps/caas/exportConfigs.*
+U kunt een configuratieknooppunt maken onder */apps/mobileapps/caas/exportConfigs.*
 
 | Node Name | Naam van de configuratie (voor renderingkiezer) |
 |---|---|
@@ -108,7 +108,7 @@ In de volgende tabel worden de eigenschappen van Export Configs weergegeven:
    <td>String[]</td>
    <td>alles opnemen</td>
    <td>Namen van eigenschappen</td>
-   <td><p>if excludePropertyPrefixes set<br /> dit omvat opgegeven eigenschappen, ook al komen deze overeen met het voorvoegsel dat wordt uitgesloten,</p> <p>else (eigenschappen uitsluiten genegeerd) bevatten alleen deze eigenschappen</p> </td>
+   <td><p>if excludePropertyPrefixes plaatste <br /> omvat dit gespecificeerde eigenschappen ondanks de aanpassing van de prefix die wordt uitgesloten,</p> <p>else (eigenschappen uitsluiten genegeerd) bevatten alleen deze eigenschappen</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -136,7 +136,7 @@ In de volgende tabel worden de eigenschappen van Export Configs weergegeven:
 
 ### Exportoverschrijvingen van het type resource {#resource-type-export-overrides}
 
-Een configuratieknooppunt maken onder */apps/mobileapps/caas/exportConfigs.*
+Maak een configuratienode onder */apps/mobileapps/caas/exportConfigs.*
 
 | name | resourceTypeOverrides |
 |---|---|
@@ -158,7 +158,7 @@ In de volgende tabel worden de eigenschappen weergegeven:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Voor de volgende het rangschikken middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Voor de volgende het rangschikken middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klantopportage door de bron te renderen als;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -174,7 +174,7 @@ De Diensten van de inhoud omvat twee uitvoerconfiguraties:
 
 De standaard de uitvoerconfiguratie van de Diensten van de inhoud wordt toegepast als een config in gevraagde URI wordt gespecificeerd.
 
-&lt;resource>.caas[.&lt;depth-int>].json
+&lt;RESOURCE>.caas [.&lt;DEPTH-INT>].json
 
 <table>
  <tbody>
@@ -192,7 +192,7 @@ De standaard de uitvoerconfiguratie van de Diensten van de inhoud wordt toegepas
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:tekst,tekst<br /> jcr:title,title<br /> jcr:description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+   <td>jcr:text, text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -212,7 +212,7 @@ De standaard de uitvoerconfiguratie van de Diensten van de inhoud wordt toegepas
   </tr>
   <tr>
    <td>Sling JSON-overschrijvingen</td>
-   <td>basis/componenten/afbeelding<br /> wcm/stichting/componenten/afbeelding<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
+   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference <br /> mobileapps/caas/components/data/assetlist</td>
   </tr>
  </tbody>
 </table>
@@ -221,7 +221,7 @@ De standaard de uitvoerconfiguratie van de Diensten van de inhoud wordt toegepas
 
 Deze configuratie breidt het gebrek uit om groeperende kinderen onder een kindknoop te omvatten.
 
-&lt;site_page>.caas.page[.&lt;depth-int>].json
+&lt;SITE_PAGE>.caas.page [.&lt;DEPTH-INT>].json
 
 ### Aanvullende bronnen {#additional-resources}
 

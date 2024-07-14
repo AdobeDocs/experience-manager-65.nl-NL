@@ -18,17 +18,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->De [Elementkiezer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) is gebeld [Elementkiezer](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in eerdere versies van [!DNL Experience Manager].
+>De [ selecteur van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) werd genoemd [ plukker van Activa ](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Experience Manager].
 
-Met de elementkiezer kunt u elementen zoeken, zoeken en filteren in [!DNL Adobe Experience Manager] Elementen. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
+Met de elementkiezer kunt u in [!DNL Adobe Experience Manager] Assets door elementen bladeren, zoeken en filteren. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
 
-Momenteel kunt u de parameters voor aanvragen doorgeven `assettype` (*Afbeelding/Video/Tekst*) en selectie `mode` (*Enkel/Meerdere*) als contextuele informatie voor de elementenkiezer, die tijdens de selectie intact blijft.
+Momenteel, kunt u de verzoekparameters `assettype` (*Beeld/Video/Tekst*) en selectie `mode` (*Enige/Veelvoudige*) als contextuele informatie voor de activaselecteur overgaan, die door de selectie intact blijft.
 
-De elementkiezer gebruikt de HTML5 **Window.postMessage** bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden.
+De activaselecteur gebruikt het HTML5 **** bericht Window.postMessage om gegevens voor de geselecteerde activa naar de ontvanger te verzenden.
 
 De assetkiezer is gebaseerd op de woordenlijst van de grondkiezer van Granite. De elementenkiezer werkt standaard in de modus Bladeren. U kunt echter filters toepassen met behulp van de ervaring van Omngonderzoek om uw zoekopdracht naar bepaalde elementen te verfijnen.
 
-U kunt elke webpagina (ongeacht of deze deel uitmaakt van de CQ-container) integreren met de elementenkiezer (`https://[AEM_server]:[port]/aem/assetpicker.html`).
+U kunt om het even welke Web-pagina (ongeacht of het deel van de container CQ) met de activaselecteur (`https://[AEM_server]:[port]/aem/assetpicker.html`) omvat.
 
 ## Contextafhankelijke parameters {#contextual-parameters}
 
@@ -36,7 +36,7 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 
 | Naam | Waarden | Voorbeeld | Doel |
 |---|---|---|---|
-| bronachtervoegsel (B) | Mappad als resix van de bron in de URL:`http://localhost:4502/aem/`<br>`assetpicker.html/<folder_path>` | De elementenkiezer starten terwijl een bepaalde map is geselecteerd, bijvoorbeeld met de map `/content/dam/we-retail/en/activities` geselecteerd is, moet de URL de volgende vorm hebben: `http://localhost:4502/aem/assetpicker.html`<br>`/content/dam/we-retail/en/activities?assettype=images` | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
+| bronachtervoegsel (B) | De weg van de omslag als middelachtervoegsel in URL:`http://localhost:4502/aem/`<br>`assetpicker.html/<folder_path>` | Als u de elementenkiezer wilt starten terwijl een bepaalde map is geselecteerd en de map `/content/dam/we-retail/en/activities` geselecteerd is, moet de URL de volgende vorm hebben: `http://localhost:4502/aem/assetpicker.html`<br>`/content/dam/we-retail/en/activities?assettype=images` | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
 | mode | enkelvoudig, meerdere | `http://localhost:4502/aem/assetpicker.html`<br>`?mode=multiple` <br> `http://localhost:4502/aem/assetpicker.html`<br>`?mode=single` | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
 | dialoogvenster | true, false | `http://localhost:4502/aem/assetpicker.html`<br>`?dialog=true` | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
 | basis | `<folder_path>` | `http://localhost:4502/aem/`<br>`assetpicker.html?assettype=images`<br>`&root=/content/dam/we-retail/en/activities` | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
@@ -46,21 +46,21 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 
 ## De elementkiezer gebruiken {#using-the-asset-selector}
 
-1. Ga naar `https://[AEM_server]:[port]/aem/assetpicker`.
+1. Ga naar `https://[AEM_server]:[port]/aem/assetpicker` als u de interface van de elementenkiezer wilt openen.
 1. Navigeer naar de gewenste map en selecteer een of meer elementen.
 
-   ![chlimage_1-441](assets/chlimage_1-441.png)
+   ![ chlimage_1-441 ](assets/chlimage_1-441.png)
 
    U kunt ook naar het gewenste element zoeken in het vak Universeel zoeken en het vervolgens selecteren.
 
-   ![chlimage_1-442](assets/chlimage_1-442.png)
+   ![ chlimage_1-442 ](assets/chlimage_1-442.png)
 
-   Als u via het vak UniverseelZoeken naar elementen zoekt, kunt u verschillende filters selecteren in het menu **[!UICONTROL Filters]** om uw zoekopdracht te verfijnen.
+   Als u via het vak UniverseelZoeken naar elementen zoekt, kunt u verschillende filters in het deelvenster **[!UICONTROL Filters]** selecteren om de zoekopdracht te verfijnen.
 
-   ![chlimage_1-443](assets/chlimage_1-443.png)
+   ![ chlimage_1-443 ](assets/chlimage_1-443.png)
 
 1. Klik op **[!UICONTROL Select]** op de werkbalk.
 
 >[!MORELIKETHIS]
 >
->* [Micro-Frontend Asset Selector in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
+>* [ Micro-Frontend de Selector van Activa in AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

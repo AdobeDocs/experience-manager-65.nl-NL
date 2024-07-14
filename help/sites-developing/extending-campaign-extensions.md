@@ -27,27 +27,27 @@ U moet het volgende hebben geïnstalleerd:
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-Zie [AEM integreren met Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) voor meer informatie .
+Zie [ Integrerend AEM met Adobe Campaign 6.1 ](/help/sites-administering/campaignonpremise.md) voor meer informatie.
 
 ## Voorbeeld 1: AEM naar Adobe Campaign {#example-aem-to-adobe-campaign}
 
-De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP-bestanden vindt u in de Campagne-console en beginnen allemaal met **aec** (Adobe Experience Cloud)
+De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP dossiers kunnen in de console van de Campagne worden gevonden, en allen beginnen met **aec** (Adobe Experience Cloud).
 
-![chlimage_1-15](assets/chlimage_1-15a.png)
+![ chlimage_1-15 ](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[Zie Geometrixx voor dit voorbeeld](/help/sites-developing/we-retail.md), die beschikbaar is bij Package Share.
+>[ voor dit voorbeeld, zie Geometrixx ](/help/sites-developing/we-retail.md), die van het Aandeel van het Pakket beschikbaar is.
 
 In dit voorbeeld is een nieuw aangepast JSSP-bestand gemaakt en wordt dat vanuit de AEM aangeroepen om het resultaat op te halen. Deze kan bijvoorbeeld worden gebruikt om gegevens op te halen uit Adobe Campaign of om gegevens op te slaan in Adobe Campaign.
 
-1. Als u in Adobe Campaign een JSSP-bestand wilt maken, klikt u op de knop **Nieuw** pictogram.
+1. In Adobe Campaign, om een JSSP dossier tot stand te brengen, klik het **Nieuwe** pictogram.
 
-   ![Het pictogram Nieuw, zoals wordt aangegeven door een pagina met een ster in de linkerbovenhoek.](do-not-localize/chlimage_1-4a.png)
+   ![ het Nieuwe pictogram zoals die door een pagina met een ster dichtbij de upper-left hoek wordt vermeld.](do-not-localize/chlimage_1-4a.png)
 
-1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld: **cus:custom.jssp** wordt gebruikt (in de **cus** naamruimte).
+1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld, **concentreert:custom.jssp** wordt gebruikt (betekenend is het in **focus** namespace).
 
-   ![chlimage_1-16](assets/chlimage_1-16a.png)
+   ![ chlimage_1-16 ](assets/chlimage_1-16a.png)
 
 1. Plaats de volgende code in het jssp-bestand:
 
@@ -64,7 +64,7 @@ In dit voorbeeld is een nieuw aangepast JSSP-bestand gemaakt en wordt dat vanuit
    * U hebt de verbinding tussen AEM en Campagne
    * De campagnewolkendienst wordt gevormd op **/content/geometrixx-outdoor**
 
-   Het belangrijkste object in dit voorbeeld is het **GenericCampaignConnector**, waarmee u jssp-bestanden kunt aanroepen (ophalen en posten) aan de Adobe Campaign-zijde.
+   Het belangrijkste voorwerp in dit voorbeeld is **GenericCampaignConnector**, die u (krijgt en post) jssp- dossiers op de kant van Adobe Campaign laat roepen.
 
    Hier volgt een klein codefragment:
 
@@ -165,27 +165,27 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 
 AEM biedt API&#39;s van de box uit om de objecten op te halen die overal beschikbaar zijn in de browser-weergave van sitebeheer.
 
-![chlimage_1-17](assets/chlimage_1-17a.png)
+![ chlimage_1-17 ](assets/chlimage_1-17a.png)
 
 >[!NOTE]
 >
->[Zie Geometrixx voor dit voorbeeld](/help/sites-developing/we-retail.md), die beschikbaar is bij Package Share.
+>[ voor dit voorbeeld, zie Geometrixx ](/help/sites-developing/we-retail.md), die van het Aandeel van het Pakket beschikbaar is.
 
 Voor elk knooppunt in de verkenner is er een API die eraan is gekoppeld. Bijvoorbeeld voor het knooppunt:
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [ http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 De API is:
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [ http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Het einde van de URL **.1.json** kan worden vervangen door **.2.json**, **.3.json**, afhankelijk van het aantal subniveaus dat u wilt ophalen. Om alle hen het sleutelwoord te verkrijgen, **oneindig** kan worden gebruikt:
+Het einde van de URL **.1.json** kan worden vervangen door **.2.json** , **.3.json** , afhankelijk van het aantal subniveaus u in het krijgen geinteresseerd bent. Om elk van hen het sleutelwoord te verkrijgen, **oneindig** kan worden gebruikt:
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [ http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 AEM standaard basisverificatie gebruikt om de API te gebruiken.
 
-Een JS-bibliotheek met een naam **amcIntegration.js** is beschikbaar in 6.1.1 (build 8624 en hoger) die onder meer die logica implementeert.
+Een bibliotheek JS die **amcIntegration.js** wordt genoemd is beschikbaar in 6.1.1 (bouwstijl 8624 en hoger) die die logica onder verscheidene andere degenen uitvoert.
 
 ### API-aanroep AEM {#aem-api-call}
 

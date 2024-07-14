@@ -21,140 +21,140 @@ ht-degree: 0%
 
 AEM Forms biedt aangepaste workflows om de volgende API&#39;s van de Assembler-service aan te roepen:
 
-* **oproepen**: Roept bewerkingen aan die zijn opgegeven in de invoer-DDX bij de opgegeven invoer.
-* **toPDFA**: Hiermee wordt het invoer-PDF-document geconverteerd naar PDF/A-document.
+* **haalt** aan: Roept verrichtingen aan die in inputDDX op geleverde input worden gespecificeerd.
+* **toPDFA**: Zet document van inputPDF in document PDF/A om.
 
 ### DDX-workflow aanroepen {#invoke-ddx-workflow}
 
-De **DDX aanroepen** workflow roept de `Invoke` De dienst API van de assembleur, die u kunt gebruiken om documenten samen te stellen of te demonteren, watermerk aan een PDF toe te voegen, etc.
+Het **roept DDX** werkschema DDX `Invoke` de dienst API van de Assembler aan, die u kunt gebruiken om documenten samen te stellen of te demonteren, watermerk aan PDF toe te voegen, etc.
 
-1. Sleep de **[!UICONTROL Invoke DDX]** workflowstap onder het tabblad Forms Workflow in Sidekick.
+1. Sleep de werkstroomstap van **[!UICONTROL Invoke DDX]** onder het tabblad Forms Workflow in Sidekick.
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
-1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, omgevingsopties en uitvoerdocumenten en klik op **[!UICONTROL OK]**.
+1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, omgevingsopties en uitvoerdocumenten en klik op **[!UICONTROL OK]** .
 
 #### Invoerdocumenten {#input-documents}
 
 Voor de DDX-workflow voor aanroepen zijn de volgende invoerdocumenten vereist:
 
-* **DDX**: Het is een verplichte invoer voor de stap van de DDX-workflow Invoke en kan worden opgegeven door een van de volgende opties te selecteren in de vervolgkeuzelijst voor DDX-invoer.
+* **DDX**: Het is een verplichte input voor de Invoke DX- werkschemastap en kan worden gespecificeerd door één van de volgende opties van de DDX inputdrop-down te selecteren.
 
-   * *Ten opzichte van Payload*: Het DDX-invoerbestand is relatief ten opzichte van de payload-map voor het workflowitem.
-   * *Payload gebruiken*: De payload voor het workflowitem wordt gebruikt als het invoer-DDX-document.
-   * *Absoluut pad*: Het absolute pad naar het DDX-document in de CRX-opslagruimte.
+   * *met betrekking tot Payload*: Het DDX inputdossier is met betrekking tot de ladingsomslag voor het werkschemapunt.
+   * *de Payload van het Gebruik*: De nuttige lading voor het werkschemapunt wordt gebruikt als document inputDDX.
+   * *Absolute Weg*: De absolute weg aan het DX- document in de bewaarplaats van CRX.
 
-* **Kaart maken van PayLoad**: Als deze optie is geselecteerd, worden alle documenten in de payload-map toegevoegd aan de Kaart van het invoerdocument voor de opdracht `invoke` API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
+* **creeer Kaart van PayLoad**: Wanneer geselecteerd, worden alle documenten onder de ladingsomslag toegevoegd aan de Kaart van het Document van de Input voor `invoke` API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
 
-* **Kaart van invoerdocument**: geeft de kaart van het invoerdocument op. U kunt elk gewenst aantal items toevoegen, waarbij voor elk item de sleutel van het document op de kaart en de bron van het document worden opgegeven.
+* **Kaart van het Document van de Input**: Specificeert de Kaart van het Document van de Invoer. U kunt elk gewenst aantal items toevoegen, waarbij voor elk item de sleutel van het document op de kaart en de bron van het document worden opgegeven.
 
 #### Omgevingsopties {#environment-options}
 
 Op het tabblad Omgevingsopties kunt u verschillende verwerkingsopties instellen voor de API voor aanroepen.
 
-* *Taaklogniveau*: Geeft het logniveau voor de verwerkingslogbestanden aan.
-* *Alleen valideren*: Controleert de geldigheid van de input-DDX.
+* *Niveau van het Logboek van de Baan*: Specificeert het logboekniveau voor de verwerkingslogboeken.
+* *bevestigt slechts*: Controleert de geldigheid van inputDDX.
 
-* *Fout: mislukt*: Geeft aan of de aanroep naar de Assembler-service moet mislukken als er een fout is. De standaardwaarde is False.
+* *Gebrek op Fout*: Specificeert of de vraag aan de dienst van de Assembler zou moeten ontbreken als er een fout is. De standaardwaarde is False.
 
 #### Documenten uitvoeren {#output-documents}
 
 Afhankelijk van de invoer-DDX kan de API voor aanroepen meerdere uitvoerdocumenten produceren. Op het tabblad Uitvoerdocumenten kunt u opgeven waar het uitvoerdocument moet worden opgeslagen.
 
-1. *Uitvoer opslaan in Payload*: Hiermee slaat u uitvoerdocumenten op onder de payload-map of overschrijft u de payload als de payload een bestand is.
-1. *Kaart van uitvoerdocument*: Hiermee kunt u expliciet opgeven waar elk uitvoerdocument moet worden opgeslagen door één item per uitvoerdocument toe te voegen. Elk item geeft het document aan en waar het moet worden opgeslagen. Een uitvoerdocument kan de lading overschrijven of onder de ladingsomslag worden bewaard. Dit is handig wanneer er meerdere uitvoerdocumenten zijn.
+1. *sparen Output in Payload*: Bewaart outputdocumenten onder de ladingsomslag, of beschrijft de nuttige lading, als de lading een dossier is.
+1. *Kaart van het Document van de Output*: Laat u uitdrukkelijk specificeren waar te om elk outputdocument te bewaren door één ingang per outputdocument toe te voegen. Elk item geeft het document aan en waar het moet worden opgeslagen. Een uitvoerdocument kan de lading overschrijven of onder de ladingsomslag worden bewaard. Dit is handig wanneer er meerdere uitvoerdocumenten zijn.
 
-1. *Taaklog*: Hiermee geeft u aan waar het taaklogdocument moet worden opgeslagen. Dit is handig bij het oplossen van problemen met fouten.
+1. *Logboek van de Baan*: Specificeert waar te om het document van het baanlogboek te bewaren, dat in het oplossen van problemenmislukkingen nuttig is.
 
 ### Omzetten in PDF/A-workflow {#convert-to-pdf-a-workflow}
 
-Met de workflowstap Omzetten in PDF/A wordt de `toPDFA` Assembler-service-API. Deze wordt gebruikt voor het converteren van PDF-documenten naar documenten die compatibel zijn met PDF/A.
+Met de workflowstap Omzetten in PDF/A wordt de `toPDFA` Assembler-service-API aangeroepen. Deze wordt gebruikt voor het converteren van PDF-documenten naar documenten die compatibel zijn met PDF/A.
 
-1. Sleep de **[!UICONTROL ConvertToPDFA]** workflowstap onder het tabblad Forms Workflow in Sidekick.
+1. Sleep de werkstroomstap van **[!UICONTROL ConvertToPDFA]** onder het tabblad Forms Workflow in Sidekick.
 
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
-1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, conversieopties en uitvoerdocumenten en klik op **[!UICONTROL OK]**.
+1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, conversieopties en uitvoerdocumenten en klik op **[!UICONTROL OK]** .
 
 #### Invoerdocumenten {#input-documents-1}
 
 Geef op een van de volgende manieren de bron op van het document dat u wilt converteren naar een document dat compatibel is met PDF/A.
 
-* *Ten opzichte van Payload*: Het invoerdocument is relatief ten opzichte van de payload-map voor het workflowitem.
-* *Payload gebruiken*: De payload voor het workflowitem wordt gebruikt als het invoerdocument.
-* *Absoluut pad*: Het absolute pad van het invoerdocument in de CRX-opslagplaats.
+* *met betrekking tot Payload*: Het inputdocument is met betrekking tot de ladingsomslag voor het werkschemapunt.
+* *Payload van het Gebruik*: De nuttige lading voor het werkschemapunt wordt gebruikt als inputdocument.
+* *Absolute Weg*: De absolute weg van het inputdocument in de bewaarplaats van CRX.
 
 #### Conversieopties {#conversion-options}
 
 Met de opties voor conversie kunt u opties opgeven waarmee het conversieproces van PDF/A wordt gewijzigd.
 
-* *Compatibiliteit* : Geeft de PDF/A-standaard aan waaraan de uitvoer PDF/A moet voldoen.
-* *Resultaatniveau* : Geeft het logniveau op dat moet worden gebruikt voor conversielogboeken voor PDF/A.
-* *Handtekeningen* : Geeft aan hoe de handtekeningen in het invoerdocument moeten worden verwerkt tijdens de conversie.
-* *Kleurruimte* : Geeft de vooraf gedefinieerde kleurruimte op die moet worden gebruikt voor uitvoer van PDF/A-document.
-* *Verifiëren* Conversie: geeft aan of het omgezette PDF/A-document na conversie moet worden gecontroleerd op PDF/A-compatibiliteit.
-* *Taaklogniveau* : Geeft het logniveau op dat moet worden gebruikt voor de verwerking van logbestanden.
+* *Naleving* : Specificeert de norm PDF/A waaraan de output PDF/A moet voldoen.
+* *Niveau van het Resultaat* : Specificeert het logboekniveau dat voor PDF/A omzettingslogboeken moet worden gebruikt.
+* *Handtekeningen* : Specificeert hoe de handtekeningen in inputdocument tijdens omzetting moeten worden verwerkt.
+* *Ruimte van de Kleur*: Specificeert de vooraf bepaalde kleurenruimte die voor output PDF/A document moet worden gebruikt.
+* *verifieer* Omzetting: Specificeert of het omgezette PDF/A- document voor naleving PDF/A na omzetting zou moeten worden geverifieerd.
+* *Niveau van het Logboek van de Baan* : Specificeert het logboekniveau dat voor verwerkingslogboeken moet worden gebruikt.
 
-* *Metagegevensextensieschema* : Geeft het pad naar het schema voor metagegevensextensie op dat moet worden gebruikt voor XMP eigenschappen in de metagegevens van het PDF-document.
+* *Schema van de Uitbreiding van Meta-gegevens* : Specificeert de weg aan het schema van de meta-gegevensuitbreiding dat voor XMP eigenschappen in de meta-gegevens van het document van PDF moet worden gebruikt.
 
 #### Documenten uitvoeren {#output-documents-1}
 
 Op het tabblad Uitvoerdocumenten kunt u het doel voor de uitvoerdocumenten opgeven
 
-* *PDFA-document*: Geeft de locatie op waar het omgezette PDF/A-document wordt opgeslagen. U kunt het laaddocument overschrijven of opslaan in de payload-map.
-* *Conversielogboek*: Hiermee geeft u de locatie op waar de conversielogbestanden worden opgeslagen. U kunt het document overschrijven of opslaan in de map voor het laden.
+* *PDFA Document*: Specificeert de plaats waar het omgezette PDF/A- document wordt bewaard. U kunt het laaddocument overschrijven of opslaan in de payload-map.
+* *Logboek van de Omzetting*: Specificeert de plaats waar de omzettingslogboeken worden bewaard. U kunt het document overschrijven of opslaan in de map voor het laden.
 
 ## Forms {#forms}
 
-De werkstroom PDF-formulier renderen is omwikkeld `renderPDFForm` Forms service-API om een PDF-formulier te maken met een XDP-sjabloon en data-xml.
+De werkstroom PDF-formulier renderen is een omslag rond de `renderPDFForm` Forms service-API om een PDF-formulier te maken met een XDP-sjabloon en data-xml.
 
 ### Workflow voor PDF-formulier weergeven {#render-pdf-form-workflow}
 
 1. Sleep de werkstroomstap PDF-formulier renderen onder het tabblad Forms Workflow in Sidekick.
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
-1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, uitvoerdocumenten en aanvullende parameters en klik op **[!UICONTROL OK]**.
+1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, uitvoerdocumenten en aanvullende parameters en klik op **[!UICONTROL OK]** .
 
 #### Invoerdocumenten {#input-documents-2}
 
-* *Sjabloonbestand*: Geeft de locatie van de XDP-sjabloon op. Het is een verplicht veld.
+* *Dossier van het Malplaatje*: Specificeert de plaats van het malplaatje XDP. Het is een verplicht veld.
 
-* *Gegevensdocument*: Geeft de locatie op van de gegevens-xml die met de sjabloon moeten worden samengevoegd.
+* *Document van Gegevens*: Specificeert de plaats van gegevens xml die met het malplaatje moeten worden samengevoegd.
 
 #### Documenten uitvoeren {#output-documents-2}
 
-* *Uitvoerdocument*: - Hier geeft u de naam op van het gegenereerde PDF-formulier.
+* *Document van de Output*: - specificeert de naam van de geproduceerde vorm van de PDF.
 
 #### Aanvullende parameters {#additional-parameters}
 
-* *Inhoudsbasis*: Geeft het pad aan naar de map in de opslagplaats waar fragmenten of afbeeldingen worden opgeslagen die worden gebruikt in de invoer-XDP-sjabloon.
-* *URL verzenden*: Hiermee geeft u de standaard verzendURL op voor het gegenereerde PDF-formulier.
-* *Landinstelling*: Geeft de standaardlandinstelling voor het gegenereerde PDF-formulier aan.
-* *Acrobat-versie*: Hiermee geeft u de beoogde Acrobat-versie op voor het gegenereerde PDF-formulier.
-* *Tagged PDF*: Geeft aan of de gegenereerde PDF toegankelijk moet worden gemaakt.
-* *XCI-document*: Geeft het pad naar het XCI-bestand op.
+* *Wortel van de Inhoud*: Specificeert de weg aan de omslag in de bewaarplaats waar de fragmenten of de beelden die in het inputXDP malplaatje worden gebruikt worden opgeslagen.
+* *legt Url* voor: Specificeert het gebrek verzend URL voor geproduceerde vorm van PDF.
+* *Landinstelling*: Specificeert de standaardscène voor de geproduceerde vorm van de PDF.
+* *Versie van Acrobat*: Specificeert de gerichte versie van Acrobat voor de geproduceerde vorm van PDF.
+* *Tagged PDF*: Specificeert of om de geproduceerde PDF toegankelijk te maken.
+* *XCI document*: Specificeert de weg aan het XCI dossier.
 
 ## Uitvoer {#output}
 
-De Generate Niet Interactive PDF Workflow is een omslag rond `generatePDFOutput` Uitvoerservice-API. Deze wordt gebruikt om niet-interactieve PDF-documenten te genereren op basis van XDP-sjabloon en data-xml.
+De Generate niet Interactive PDF Workflow is een omslag rond de `generatePDFOutput` Output service-API. Deze wordt gebruikt om niet-interactieve PDF-documenten te genereren op basis van XDP-sjabloon en data-xml.
 
 ### Niet-interactieve PDF-uitvoerworkflow genereren   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
 1. Sleep de workflow Niet-interactieve PDF-uitvoer genereren onder het tabblad Forms Workflow in Sidekick.
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
-1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, uitvoerdocumenten en aanvullende parameters en klik op **[!UICONTROL OK]**.
+1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, uitvoerdocumenten en aanvullende parameters en klik op **[!UICONTROL OK]** .
 
 #### Invoerdocumenten {#input-documents-3}
 
-* *Sjabloonbestand*: Geeft de locatie van de XDP-sjabloon op. Het is een verplicht veld.
+* *Dossier van het Malplaatje*: Specificeert de plaats van het malplaatje XDP. Het is een verplicht veld.
 
-* *Gegevensdocument*: Geeft de locatie op van de gegevens-xml die met de sjabloon moeten worden samengevoegd.
+* *Document van Gegevens*: Specificeert de plaats van gegevens xml die met het malplaatje moeten worden samengevoegd.
 
 #### Uitvoerdocument {#output-document}
 
-*Uitvoerdocument*: Hiermee geeft u de naam op van het gegenereerde PDF-formulier.
+*Document van de Output*: Specificeert de naam van de geproduceerde vorm van de PDF.
 
 #### Aanvullende parameters {#additional-parameters-1}
 
-* *Inhoudsbasis*: Geeft het pad aan naar de map in de opslagplaats waar fragmenten of afbeeldingen worden opgeslagen die worden gebruikt in de invoer-XDP-sjabloon.
-* *Landinstelling*: Geeft de standaardlandinstelling voor het gegenereerde PDF-formulier aan.
-* *Acrobat-versie*: Hiermee geeft u de beoogde Acrobat-versie op voor het gegenereerde PDF-formulier.
+* *Wortel van de Inhoud*: Specificeert de weg aan de omslag in de bewaarplaats waar de fragmenten of de beelden die in het inputXDP malplaatje worden gebruikt worden opgeslagen.
+* *Landinstelling*: Specificeert de standaardscène voor de geproduceerde vorm van PDF.
+* *Versie van Acrobat*: Specificeert de gerichte versie van Acrobat voor de geproduceerde vorm van PDF.
 * Lineaire PDF: geeft aan of de gegenereerde PDF moet worden geoptimaliseerd voor webweergave.
-* *Tagged PDF*: Geeft aan of de gegenereerde PDF toegankelijk moet worden gemaakt.
-* *XCI-document*: Geeft het pad naar het XCI-bestand op.
+* *Tagged PDF*: Specificeert of om de geproduceerde PDF toegankelijk te maken.
+* *XCI document*: Specificeert de weg aan het XCI dossier.

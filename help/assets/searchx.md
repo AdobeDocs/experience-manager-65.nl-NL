@@ -1,6 +1,6 @@
 ---
 title: Zoekfunctionaliteit uitbreiden
-description: De zoekmogelijkheden van [!DNL Adobe Experience Manager Assets] boven de standaardinstellingen.
+description: Breid de onderzoeksmogelijkheden van  [!DNL Adobe Experience Manager Assets]  voorbij de gebreken uit.
 contentOwner: AG
 role: Developer
 feature: Search
@@ -15,53 +15,53 @@ ht-degree: 12%
 
 # Zoeken naar elementen uitbreiden {#extending-assets-search}
 
-U kunt [!DNL Adobe Experience Manager Assets] zoekmogelijkheden. Uit de doos, [!DNL Experience Manager Assets] zoekt naar elementen op tekenreeksen.
+U kunt de zoekmogelijkheden van [!DNL Adobe Experience Manager Assets] uitbreiden. In het vak zoekt [!DNL Experience Manager Assets] naar elementen op tekenreeksen.
 
-Het zoeken wordt gedaan via de interface QueryBuilder zodat kan het onderzoek met verscheidene predikaten worden aangepast. U kunt de standaardset voorspelden in de volgende map bedekken: `/apps/dam/content/search/searchpanel/facets`.
+Het zoeken wordt gedaan via de interface QueryBuilder zodat kan het onderzoek met verscheidene predikaten worden aangepast. U kunt de standaardset voorspelden in de volgende map bedekken: `/apps/dam/content/search/searchpanel/facets` .
 
-U kunt ook extra tabbladen toevoegen aan de [!DNL Assets] deelvenster Beheer.
+U kunt ook extra tabbladen toevoegen aan het deelvenster [!DNL Assets] Beheer.
 
 >[!CAUTION]
 >
->Vanaf [!DNL Experience Manager] 6.4, is de klassieke gebruikersinterface afgekeurd. Adobe raadt u aan een interface met aanraakbediening te gebruiken. Voor aanpassingen raadpleegt u [zoekfacetten](/help/assets/search-facets.md).
+>Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Adobe raadt u aan een interface met aanraakbediening te gebruiken. Voor aanpassing, zie [ onderzoeksfacetten ](/help/assets/search-facets.md).
 
 ## Bedekking {#overlaying}
 
-Als u de vooraf geconfigureerde voorvertoningen wilt bedekken, kopieert u de `facets` knooppunt van `/libs/dam/content/search/searchpanel` tot `/apps/dam/content/search/searchpanel/` of een andere `facetURL` eigenschap in de `searchpanel` configuratie (standaard is `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Als u de vooraf geconfigureerde voorspelling wilt bedekken, kopieert u de node `facets` van `/libs/dam/content/search/searchpanel` naar `/apps/dam/content/search/searchpanel/` of geeft u een andere eigenschap `facetURL` op in de configuratie `searchpanel` (de standaardwaarde is `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json` ).
 
-![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
+![ screen_shot_2012-06-05at113619am ](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->Standaard wordt de mapstructuur onder `/apps` bestaat niet. Zorg ervoor dat de knooptypen overeenkomen met de knooppunttypen onder `/libs`.
+>Standaard bestaat de mapstructuur onder `/apps` niet, zodat u deze kunt maken. Zorg ervoor dat de knooppunttypen overeenkomen met de knooppunttypen onder `/libs` .
 
 ## Tabs toevoegen {#adding-tabs}
 
-U kunt extra zoektabbladen toevoegen door deze te configureren in het dialoogvenster [!DNL Assets] admin-interface. Extra tabbladen maken:
+U kunt extra zoektabbladen toevoegen door deze te configureren in de beheerinterface van [!DNL Assets] . Extra tabbladen maken:
 
-1. De mapstructuur maken `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat, en kopieert u de `tabs` knooppunt van `/libs/wcm/core/content/damadmin` plakken.
+1. Maak de mapstructuur `/apps/wcm/core/content/damadmin/tabs,` als deze nog niet bestaat, en kopieer het knooppunt `tabs` van `/libs/wcm/core/content/damadmin` en plak het.
 1. Maak en configureer het tweede tabblad naar wens.
 
    >[!NOTE]
    >
-   >Wanneer u een tweede `siteadminsearchpanel`, moet u een `id` om formulierconflicten te voorkomen.
+   >Wanneer u een tweede `siteadminsearchpanel` maakt, moet u de eigenschap `id` zo instellen dat formulierconflicten worden voorkomen.
 
 ## Aangepaste voorspelling maken {#creating-custom-predicates}
 
-[!DNL Assets] wordt geleverd met een set vooraf gedefinieerde voorspelling die kan worden gebruikt om een pagina voor het delen van elementen aan te passen. Op deze manier wordt een aandeel in activa aangepast in [Een pagina voor het delen van elementen maken en configureren](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] wordt geleverd met een set vooraf gedefinieerde voorspelling die kan worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [ creeer en vorm een pagina van het Aandeel van Activa ](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Naast het gebruik van reeds bestaande voorspellingen, [!DNL Experience Manager] ontwikkelaars kunnen ook hun eigen voorspellingen maken met de [Query Builder-API](/help/sites-developing/querybuilder-api.md).
+Naast het gebruiken van reeds bestaande predikaten, [!DNL Experience Manager] kunnen de ontwikkelaars hun eigen predikaten ook creëren gebruikend [ de Bouwer van de Vraag API ](/help/sites-developing/querybuilder-api.md).
 
-Voor het maken van aangepaste predikaten is basiskennis over de [Widget-framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+Het creëren van douane voorspelt vereist basiskennis over het [ kader Widgets ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Voorspelregels voor voorbeelden bevinden zich in **/libs/cq/search/components/predicates**.
+De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Voorspelregels voor voorbeelden vindt u in **/libs/cq/search/components/predicates** .
 
 ### Voorbeeld: een eenvoudige eigenschap maken {#example-build-a-simple-property-predicate}
 
 Een voorspelling van eigenschappen maken:
 
-1. Maak bijvoorbeeld een componentmap in de projectmap. **/apps/weretail/components/titlepredicate**.
-1. Toevoegen **content.xml**:
+1. Maak een componentmap in de projectmap, bijvoorbeeld **/apps/weretail/components/titlepreate** .
+1. Voeg **content.xml** toe:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -141,9 +141,9 @@ Een voorspelling van eigenschappen maken:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt **cq:editConfig** van het primaire type **cq:EditConfig** toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden **cq:actions** met één waarde van **DELETE** toe te voegen.
-1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld **press.html**) schakelt u over naar de ontwerpmodus en schakelt u uw nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
+1. Navigeer aan uw browser, en op uw steekproefpagina (bijvoorbeeld, **press.html**) schakelaar aan ontwerpwijze en laat uw nieuwe component voor het predikaat paragraafsysteem (bijvoorbeeld, **verlaten**) toe.
 
-1. In **Bewerken** de nieuwe component is nu beschikbaar in de sidekick (in de **Zoeken** groep). De component invoegen in het dialoogvenster **Voorspellen** kolom en typ een zoekwoord, bijvoorbeeld **Ruitje** en klik op het vergrootglas om het zoeken te starten.
+1. Op **geef** wijze uit, is de nieuwe component nu beschikbaar in sidekick (die in de **wordt gevonden 3} groep van het Onderzoek {).** Tussenvoegsel de component in **voorspelt** kolom en typ een onderzoekswoord, bijvoorbeeld, **Ruitje** en klik het vergrootglas om het onderzoek te beginnen.
 
    >[!NOTE]
    >
@@ -153,8 +153,8 @@ Een voorspelling van eigenschappen maken:
 
 Om een groep te bouwen predikaat:
 
-1. Maak bijvoorbeeld een componentmap in de projectmap. **/apps/weretail/components/picspredicate**.
-1. Toevoegen **content.xml**:
+1. Creeer een componentenomslag in uw projectfolder, bijvoorbeeld, **/apps/weretail/components/picspredicate**.
+1. Voeg **content.xml** toe:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -166,7 +166,7 @@ Om een groep te bouwen predikaat:
        componentGroup="Search"/>
    ```
 
-1. Toevoegen **titlepredicate.jsp**:
+1. Voeg **titlePredicate.jsp** toe:
 
    ```java
    <%--
@@ -245,8 +245,8 @@ Om een groep te bouwen predikaat:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt **cq:editConfig** van het primaire type **cq:EditConfig** toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden **cq:actions** met één waarde van **DELETE** toe te voegen.
-1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld **press.html**) schakelt u over naar de ontwerpmodus en schakelt u uw nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
-1. In **Bewerken** de nieuwe component is nu beschikbaar in de sidekick (in de **Zoeken** groep). De component invoegen in het dialoogvenster **Voorspellen** kolom.
+1. Navigeer aan uw browser, en op uw steekproefpagina (bijvoorbeeld, **press.html**) schakelaar aan ontwerpwijze en laat uw nieuwe component voor het predikaat paragraafsysteem (bijvoorbeeld, **verlaten**) toe.
+1. Op **geef** wijze uit, is de nieuwe component nu beschikbaar in sidekick (die in de **wordt gevonden 3} groep van het Onderzoek {).** Tussenvoegsel de component in de **Predicates** kolom.
 
 ## Vooraf geïnstalleerde widgets {#installed-predicate-widgets}
 
@@ -256,32 +256,32 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `fulltext` |
-| searchCallback | Functie | Callback voor het activeren van zoeken op gebeurtenis `keyup`. Standaardwaarden: `CQ.wcm.SiteAdmin.doSearch` |
+| predikaatName | String | Naam van de voorspelling. Heeft als standaardwaarde `fulltext` |
+| searchCallback | Functie | Callback voor het activeren van zoeken op gebeurtenis `keyup` . Heeft als standaardwaarde `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `property` |
-| propertyName | String | Naam van de eigenschap JCR. Standaardwaarden: `jcr:title` |
+| predikaatName | String | Naam van de voorspelling. Heeft als standaardwaarde `property` |
+| propertyName | String | Naam van de eigenschap JCR. Heeft als standaardwaarde `jcr:title` |
 | defaultValue | String | Vooraf ingevulde standaardwaarde. |
 
 ### PathPredicate {#pathpredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `path` |
-| rootPath | String | Hoofdpad van de voorspelling. Standaardwaarden: `/content/dam` |
-| pathFieldPredicateName | String | Standaardwaarden: `folder` |
-| showFlatOption | Boolean | Markering voor selectievakje `search in subfolders`. Heeft als standaardwaarde true. |
+| predikaatName | String | Naam van de voorspelling. Heeft als standaardwaarde `path` |
+| rootPath | String | Hoofdpad van de voorspelling. Heeft als standaardwaarde `/content/dam` |
+| pathFieldPredicateName | String | Heeft als standaardwaarde `folder` |
+| showFlatOption | Boolean | Vlag om Selectievakje weer te geven `search in subfolders`. Heeft als standaardwaarde true. |
 
 ### DatePredicate {#datepredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `daterange` |
-| eigenschapsnaam | String | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/jcr:lastModified` |
+| predikaatName | String | Naam van de voorspelling. Heeft als standaardwaarde `daterange` |
+| eigenschapsnaam | String | Naam van de eigenschap JCR. Heeft als standaardwaarde `jcr:content/jcr:lastModified` |
 | defaultValue | String | Vooraf ingevulde standaardwaarde |
 
 ### OptionsPredicate {#optionspredicate}
@@ -289,15 +289,15 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
 | titel | String | Hiermee wordt een extra bovenste titel toegevoegd |
-| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `daterange` |
-| eigenschapsnaam | String | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/metadata/cq:tags` |
-| ineenstorten | String | Niveau samenvouwen. Standaardwaarden: `level1` |
+| predikaatName | String | Naam van de voorspelling. Heeft als standaardwaarde `daterange` |
+| eigenschapsnaam | String | Naam van de eigenschap JCR. Heeft als standaardwaarde `jcr:content/metadata/cq:tags` |
+| ineenstorten | String | Niveau samenvouwen. Heeft als standaardwaarde `level1` |
 | triggerSearch | Boolean | Markering voor het activeren van zoekopdrachten bij controle. Standaard ingesteld op false |
-| searchCallback | Functie | Callback voor het teweegbrengen van onderzoek. Standaardwaarden: `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Functie | Callback voor het teweegbrengen van onderzoek. Heeft als standaardwaarde `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Getal | Time-out voordat searchCallback wordt gestart. Wordt standaard ingesteld op 800 ms |
 
 ## Zoekresultaten aanpassen {#customizing-search-results}
 
-De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. [!DNL Experience Manager Assets] wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van elementen aan te passen. Op deze manier wordt een aandeel in activa aangepast in [Een pagina voor het delen van bedrijfsmiddelen maken en configureren](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. [!DNL Experience Manager Assets] wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [ Creërend en Vormend een Pagina van het Aandeel van Activa ](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Naast het gebruik van reeds bestaande lenzen, [!DNL Experience Manager] ontwikkelaars kunnen ook hun eigen lenzen maken .
+Naast het gebruik van reeds bestaande lenzen kunnen ontwikkelaars van [!DNL Experience Manager] ook hun eigen lenzen maken.

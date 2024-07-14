@@ -20,35 +20,35 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De `Social Tag Cloud` component markeert tags die door leden van de gemeenschap worden toegepast bij het plaatsen van inhoud. Dit is een manier om trending onderwerpen te identificeren en bezoekers van de site in staat te stellen snel gelabelde inhoud te zoeken.
+De component `Social Tag Cloud` markeert de tags die door leden van de gemeenschap zijn toegepast bij het plaatsen van inhoud. Dit is een manier om trending onderwerpen te identificeren en bezoekers van de site in staat te stellen snel gelabelde inhoud te zoeken.
 
-Voor een andere manier om de huidige trends te identificeren, gaat u naar [Activiteitendensen](trends.md).
+Voor een andere manier om huidige tendensen te identificeren, bezoek [ Trends van de Activiteit ](trends.md).
 
-Deze pagina documenteert de `Social Tag Cloud` en beschrijft de gebruikerservaring.
+Op deze pagina worden de dialooginstellingen van de component `Social Tag Cloud` gedocumenteerd en wordt de gebruikerservaring beschreven.
 
-Voor gedetailleerde informatie voor ontwikkelaars, zie [Grondbeginselen van tags](tag.md).
+Voor gedetailleerde informatie voor ontwikkelaars, zie {de Hoofdzaak van de Markering 0} ](tag.md).[
 
-Zie [Tags beheren](../../help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
+Zie [ het Beheer Markeringen ](../../help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
 
 ## Een sociale-tagcloud toevoegen {#adding-a-social-tag-cloud}
 
-Als u een `Social Tag Cloud` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van `Communities / Social Tag Cloud` en sleep het naar de juiste plaats op een pagina waar de tagcloud moet worden weergegeven.
+Als u een component `Social Tag Cloud` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / Social Tag Cloud` te zoeken en sleept u deze naar de gewenste locatie op een pagina voor de tagcloud.
 
-Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
 
-Wanneer de [vereiste clientbibliotheken](tag.md#essentials-for-client-side) worden opgenomen, is dit hoe `Social Tag Cloud` wordt weergegeven:
+Wanneer de [ vereiste cliënt-zijbibliotheken ](tag.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Social Tag Cloud` component verschijnt:
 
-![social-tag](assets/social-tag.png)
+![ sociaal-markering ](assets/social-tag.png)
 
 ## Cloud voor sociale tags configureren {#configuring-social-tag-cloud}
 
-Selecteer de geplaatste `Social Tag Cloud` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste component `Social Tag Cloud` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![vormen](assets/configure-new.png)
+![ vormen ](assets/configure-new.png)
 
-Onder de **[!UICONTROL Social Tag Cloud]** , geeft u op welke tags moeten worden weergegeven en, als de tags actieve koppelingen zijn, de locatie van de pagina voor zoekresultaten:
+Geef onder het tabblad **[!UICONTROL Social Tag Cloud]** op welke tags u wilt weergeven en, als de tags actieve koppelingen zijn, de locatie van de pagina voor de zoekresultaten:
 
-![social-tag-cloud](assets/social-tag-cloud.png)
+![ sociaal-markering-wolk ](assets/social-tag-cloud.png)
 
 * **[!UICONTROL Social Tags to Display]**
 Bepaal welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
@@ -56,27 +56,27 @@ Bepaal welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
    * `From page and child pages`
    * `All tags`
 
-  De standaardwaarde is `From page and child pages`, waarbij &quot;pagina&quot; verwijst naar de **Pagina** hieronder instellen.
+  Het gebrek is `From page and child pages`, waar de &quot;pagina&quot;naar **pagina** het plaatsen hieronder verwijst.
 
 * **[!UICONTROL Page]**
 
-  (Vereist indien niet `All tags)` Het pad naar de UGC voor een pagina. Standaard is de huidige pagina als deze leeg blijft.
+  (Vereist als niet `All tags)` Het pad naar de UGC voor een pagina. Standaard is de huidige pagina als deze leeg blijft.
 
 * **[!UICONTROL No links on tags]**
 
-  Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en vereist de opdracht **[!UICONTROL Search Result Path]** in te stellen.
+  Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en de eigenschap **[!UICONTROL Search Result Path]** moet worden ingesteld.
 
 * **[!UICONTROL Search Result Path]**
 
-  Het pad naar een pagina waarop een `Search Result` -component is geplaatst, geconfigureerd om te verwijzen naar UGC, dat het UGC-pad bevat dat is opgegeven door het **Pagina** instellen.
+  De weg aan een pagina waarop een `Search Result` component is geplaatst, gevormd om UGC van verwijzingen te voorzien die de weg UGC omvat die door **wordt gespecificeerd Pagina** het plaatsen.
 
 ## Weergave van sociale-tagcloud wijzigen {#change-display-of-social-tag-cloud}
 
-De weergave van het dialoogvenster **Sociale-tagcloud**, enter [Ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) en dubbelklikt u op de geplaatste `Social Tag Cloud` om een dialoogvenster met een extra tabblad te openen.
+Om de vertoning van de **Sociale Wolk van de Markering** uit te geven, ga [ Wijze van het Ontwerp ](../../help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Social Tag Cloud` component tweemaal om een dialoog met een extra lusje te openen.
 
-Met de **[!UICONTROL Social Tag Cloud (Design)]** , geeft u op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
+Geef met het tabblad **[!UICONTROL Social Tag Cloud (Design)]** op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
 
-![social-tag-cloud-design](assets/social-tag-cloud-design.png)
+![ sociaal-markering-wolk-ontwerp ](assets/social-tag-cloud-design.png)
 
 * **[!UICONTROL Show full title paths]**
 
@@ -101,10 +101,10 @@ Met de **[!UICONTROL Social Tag Cloud (Design)]** , geeft u op hoe tags moeten w
 
   Er zijn drie tags die kunnen worden toegepast:
 
-  `Geometrixx Media (the namespace)`, `Gadgets`, en `Cars`
+  `Geometrixx Media (the namespace)` , `Gadgets` en `Cars`
 
-   * Ingeschakeld: alleen `Cars` worden weergegeven, indien van toepassing.
-   * Niet ingeschakeld: `Geometrixx Media`, `Gadgets`, en `Cars` worden weergegeven, indien toegepast.
+   * Ingeschakeld: alleen `Cars` wordt weergegeven, indien toegepast.
+   * Niet ingeschakeld: `Geometrixx Media` , `Gadgets` en `Cars` worden weergegeven, indien toegepast.
 
   Een eenvoudige tag is een bladtag.
 
@@ -120,6 +120,6 @@ Met de **[!UICONTROL Social Tag Cloud (Design)]** , geeft u op hoe tags moeten w
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie is te vinden op de [Grondbeginselen van tags](tag.md) pagina voor ontwikkelaars.
+Meer informatie kan op de [ pagina van de Hoofdzaak van de Markering ](tag.md) voor ontwikkelaars worden gevonden.
 
-Zie [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) (UGC) voor informatie over het maken en beheren van tags.
+Zie [ Tags Gebruiker Gegenereerde Inhoud ](tag-ugc.md) (UGC) voor informatie over het creëren van en het beheren van markeringen.

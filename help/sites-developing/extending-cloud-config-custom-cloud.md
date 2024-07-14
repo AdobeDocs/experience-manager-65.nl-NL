@@ -24,45 +24,45 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
 >
 >Deze stapsgewijze handleiding voor het maken van een Cloud Service is een voorbeeld van het gebruik van Googles Analytics. Alles is mogelijk niet van toepassing op het gebruik.
 
-1. In CRXDE Lite maakt u een knooppunt onder `/apps`:
+1. Maak in CRXDE Lite een knooppunt onder `/apps` :
 
    * **Naam**: `acs`
    * **Type**: `nt:folder`
 
-1. Een knooppunt maken onder `/apps/acs`:
+1. Een knooppunt maken onder `/apps/acs` :
 
    * **Naam**: `analytics`
    * **Type**: `sling:Folder`
 
-1. Twee knooppunten maken onder `/apps/acs/analytics`:
+1. Maak twee knooppunten onder `/apps/acs/analytics` :
 
    * **Naam**: componenten
    * **Type**: `sling:Folder`
 
    en
 
-   * **Naam**: sjablonen
+   * **Naam**: malplaatjes
    * **Type**: `sling:Folder`
 
-1. Klikken met rechtermuisknop `/apps/acs/analytics/components`. Selecteren **Maken...** gevolgd door **Component maken...** In het dialoogvenster dat wordt geopend, kunt u het volgende opgeven:
+1. Klik met de rechtermuisknop `/apps/acs/analytics/components` . Selecteer **creeer...** door **wordt gevolgd creeer Component...** de dialoog die opent laat u specificeren:
 
-   * **Label**: `googleanalyticspage`
+   * **Etiket**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
-   * **Supertype**: `cq/cloudserviceconfigs/components/configpage`
+   * **Super Type**: `cq/cloudserviceconfigs/components/configpage`
    * **Groep**: `.hidden`
 
-1. Klikken **Volgende** twee keer en geef aan:
+1. Klik **daarna** tweemaal en specificeer:
 
-   * **Toegestane bovenliggende elementen:** `acs/analytics/templates/googleanalytics`
+   * **Toegestane Ouders:** `acs/analytics/templates/googleanalytics`
 
-   Klikken **Volgende** twee keer en klik **OK**.
+   Klik **daarna** tweemaal en klik **O.K.**.
 
-1. Een eigenschap toevoegen aan `googleanalyticspage`:
+1. Een eigenschap toevoegen aan `googleanalyticspage` :
 
    * **Naam:** `cq:defaultView`
    * **Waarde:** `html`
 
-1. Een bestand met de naam `content.jsp` krachtens `/apps/acs/analytics/components/googleanalyticspage`, met de volgende inhoud:
+1. Maak een bestand met de naam `content.jsp` onder `/apps/acs/analytics/components/googleanalyticspage` , met de volgende inhoud:
 
    ```xml
    <%@page contentType="text/html"
@@ -77,7 +77,7 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
    </div>
    ```
 
-1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/` :
 
    * **Naam**: `dialog`
    * **Type**: `cq:Dialog`
@@ -90,7 +90,7 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
       * **Type**: `String`
       * **Waarde**: `dialog`
 
-1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog` :
 
    * **Naam**: `items`
    * **Type**: `cq:Widget`
@@ -100,12 +100,12 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
       * **Type**: `String`
       * **Waarde**: `tabpanel`
 
-1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items` :
 
    * **Naam**: `items`
    * **Type**: `cq:WidgetCollection`
 
-1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items` :
 
    * **Naam**: tab1
    * **Type**: `cq:Panel`
@@ -115,15 +115,15 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
       * **Type**: `String`
       * **Waarde**: `Config`
 
-1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1` :
 
-   * **Naam**: items
+   * **Naam**: punten
    * **Type**: `nt:unstructured`
    * **Eigenschappen**:
 
       * **Naam**: `fieldLabel`
-      * **Type**: String
-      * **Waarde**: Account-id
+      * **Type**: Koord
+      * **Waarde**: identiteitskaart van de Rekening
 
       * **Naam**: `fieldDescription`
       * **Type**: `String`
@@ -139,20 +139,20 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
       * **Type**: `String`
       * **Waarde**: `textfield`
 
-1. Kopiëren `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` tot `/apps/acs/analytics/components/googleanalyticspage/body.jsp` en wijzigen `libs` tot `apps` op regel 34 en maak van de scriptverwijzing op regel 79 een volledig gekwalificeerd pad.
-1. Een sjabloon maken onder `/apps/acs/analytics/templates/`:
+1. Kopieer `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` naar `/apps/acs/analytics/components/googleanalyticspage/body.jsp` en wijzig `libs` naar `apps` op regel 34 en maak van de scriptverwijzing op regel 79 een volledig gekwalificeerd pad.
+1. Een sjabloon maken onder `/apps/acs/analytics/templates/` :
 
-   * with **Resourcetype** = `acs/analytics/components/googleanalyticspage`
-   * with **Label** = `googleanalytics`
-   * with **Titel**= `Google Analytics Configuration`
-   * with **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
-   * with **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (op sjabloonknooppunt, niet op het knooppunt jcr:content)
-   * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (op jcr:content)
+   * met **Type van Middel** = `acs/analytics/components/googleanalyticspage`
+   * met **Etiket** = `googleanalytics`
+   * met **Titel**= `Google Analytics Configuration`
+   * met **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
+   * met **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
+   * met **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (op malplaatjeknoop, niet jcr:inhoudsknoop)
+   * met **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (op jcr:content)
 
-1. Een component maken: `/apps/acs/analytics/components/googleanalytics`.
+1. Maak een component: `/apps/acs/analytics/components/googleanalytics`.
 
-   Voeg de volgende inhoud toe aan `googleanalytics.jsp`:
+   Voeg de volgende inhoud toe aan `googleanalytics.jsp` :
 
    ```xml
    <%@page import="org.apache.sling.api.resource.Resource,
@@ -193,24 +193,24 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
 
    Dit zou de douanemarkering moeten uitvoeren die op de configuratieeigenschappen wordt gebaseerd.
 
-1. Navigeren naar `http://localhost:4502/miscadmin#/etc/cloudservices` en maak een pagina:
+1. Navigeer naar `http://localhost:4502/miscadmin#/etc/cloudservices` en maak een pagina:
 
    * **Titel**: `Google Analytics`
    * **Naam**: `googleanalytics`
 
-   Ga terug in CRXDE Lite en onder `/etc/cloudservices/googleanalytics`, voegt u de volgende eigenschap toe aan `jcr:content`:
+   Ga terug in CRXDE Lite en voeg onder `/etc/cloudservices/googleanalytics` de volgende eigenschap toe aan `jcr:content` :
 
    * **Naam**: `componentReference`
    * **Type**: `String`
    * **Waarde**: `acs/analytics/components/googleanalytics`
 
-1. Navigeer aan de pas gecreëerde pagina van de Dienst ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) en klik op de knop **+** om een config te creëren:
+1. Navigeer aan de pas gecreëerde pagina van de Dienst ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) en klik **+** om tot een config te leiden:
 
-   * **Bovenliggende configuratie**: `/etc/cloudservices/googleanalytics`
-   * **Titel:**  `My First GA Config`
+   * **de Configuratie van de Ouder**: `/etc/cloudservices/googleanalytics`
+   * **Titel:** `My First GA Config`
 
-   Kies **Configuratie Googles Analytics** en klik op **Maken**.
+   Kies **Configuratie van Googles Analytics** en klik **creeer**.
 
-1. Voer een **Account-id**, bijvoorbeeld `AA-11111111-1`. Klikken **OK**.
-1. Navigeer naar een pagina en voeg de nieuw gemaakte configuratie toe in de pagina-eigenschappen, onder de **Cloud Servicen** tab.
+1. Ga een **identiteitskaart van de Rekening** in, bijvoorbeeld, `AA-11111111-1`. Klik **OK**.
+1. Navigeer aan een pagina en voeg de onlangs gecreeerde configuratie in de paginaeigenschappen, onder de **Cloud Servicen** tabel toe.
 1. Aan de pagina wordt de aangepaste markering toegevoegd.

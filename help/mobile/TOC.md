@@ -26,10 +26,10 @@ ht-degree: 5%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - GDPR-gereedheid](aem-mobile-gdpr-compliance.md)
    + [Mobiele apps ontwikkelen](develop-mobile-apps.md)
-+ Authoring On-Demand Services App {#authoring}
++ Authoring On-Demand Services-app {#authoring}
    + [Mobiel op aanvraag](mobile-apps-ondemand.md)
    + [Inhoud beheren](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [Inhoud publiceren ongedaan maken](mobile-on-demand-publishing-unpublishing.md)
+   + [Publish-inhoud publiceren](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile-toepassingsdashboard](mobile-apps-ondemand-application-dashboard.md)
    + [Handelingen voor het maken en configureren van toepassingen](mobile-apps-ondemand-application-create-configure-action.md)
    + [Artikelen beheren](mobile-on-demand-managing-articles.md)

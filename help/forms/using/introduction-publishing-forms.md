@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -32,7 +32,7 @@ Dergelijke scenario&#39;s leiden vaak tot beheerproblemen en productievertraging
 
 AEM Forms biedt portalcomponenten die de beheerkosten en productievertragingen verminderen. Met deze componenten kunnen webontwikkelaars een Forms Portal maken en aanpassen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
 
-![AEM Forms Portal](assets/aem-forms-portal.png)
+![ portaal van AEM Forms ](assets/aem-forms-portal.png)
 
 Met de onderdelen van het formulierportaal kunt u de volgende functionaliteit toevoegen:
 
@@ -49,7 +49,7 @@ Met de onderdelen van het formulierportaal kunt u de volgende functionaliteit to
 
 ## Beschikbare AEM Forms Portal-componenten {#available-aem-forms-portal-components}
 
-AEM Forms biedt de volgende poortcomponenten uit het vak, gegroepeerd onder **Document Services** en **Voorspellingen voor documentservices** componentgroepen:
+AEM Forms verstrekt de volgende poortcomponenten uit de doos, gegroepeerd onder **de Diensten van het Document** en **Predicates van de Diensten van het Document** componentengroepen:
 
 ### Zoeken en registreren {#search-amp-lister}
 
@@ -67,21 +67,21 @@ Met de component Koppeling kunt u overal op de pagina een koppeling naar een for
 
 Met Forms Portal kunt u formulieren vanuit de formulieropslagplaats op uw portalpagina weergeven. U kunt hiermee ook zoekcriteria opgeven waarmee gebruikers van uw portal kunnen zoeken in de lijst met formulieren. U kunt ook de component Concepten en verzendingen gebruiken om formulieren weer te geven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. U voert een bepaalde reeks bewerkingen uit voordat deze functies beschikbaar komen op een sitepagina. Voer de stappen in de vermelde opeenvolging uit om de componenten en respectieve functionaliteit op een plaatspagina beschikbaar te maken:
 
-1. **Forms Portal-componenten inschakelen**: Forms Portal-componenten zijn niet beschikbaar voor gebruik in het vak Buiten het vak. [De componenten van AEM sidekick inschakelen](/help/forms/using/enabling-forms-portal-components.md) voor een AEM Sites-pagina.
-1. **Formulieren weergeven op een pagina (Forms Portal-pagina maken):** U kunt formulieren weergeven op zowel AEM Sites- als niet-AEM sitepagina&#39;s. De lijst bevat formulieren die beschikbaar zijn in de publicatie-instantie. Een gebruiker kan formulieren openen en invullen. Wanneer een gebruiker een formulier opent, wordt er een nieuw exemplaar van het formulier gemaakt:
+1. **laat de Poortcomponenten van Forms** toe: Uit de doos, zijn de Poortcomponenten van Forms niet beschikbaar voor gebruik. [ laat de componenten van AEM sidekick ](/help/forms/using/enabling-forms-portal-components.md) voor een pagina van AEM Sites toe.
+1. **de vormen van de Lijst op een pagina (creeer Forms Portal pagina):** u kunt van vormen op zowel AEM Sites als niet-AEM pagina&#39;s van de Plaats een lijst maken. De lijst bevat formulieren die beschikbaar zijn in de publicatie-instantie. Een gebruiker kan formulieren openen en invullen. Wanneer een gebruiker een formulier opent, wordt er een nieuw exemplaar van het formulier gemaakt:
 
-   1. **Formulieren weergeven op een AEM Sites-pagina**: Voeg de **[Zoeken en registreren](../../forms/using/creating-form-portal-page.md)** component aan de pagina en vorm de **[Lijstvenster](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** hiermee kunt u formulieren op een pagina weergeven. Voeg en vorm toe **Zoekvenster** aan de component **Zoeken en registreren** om ook zoekfunctionaliteit aan de pagina toe te voegen. De pagina met de Forms Portal-component wordt ook wel [Forms Portal-pagina](../../forms/using/creating-form-portal-page.md).
+   1. **de vormen van de Lijst op een pagina van AEM Sites**: Voeg de **[Onderzoek &amp; van het Registreertoestel](../../forms/using/creating-form-portal-page.md)** component aan de pagina toe en vorm de **[Ruit van de Lijst](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** in het, om vormen op een pagina van een lijst te maken. Voeg en vorm de **component van de Ruit van het 0} Onderzoek {aan de** Onderzoek &amp; van het Registreertoestel **toe ook om onderzoeksfunctionaliteit aan de pagina toe te voegen.** De pagina met de Poortcomponent van Forms is gekend als [ Poortpagina van Forms ](../../forms/using/creating-form-portal-page.md).
 
-   1. **Formulieren weergeven op een niet-AEM Sites-pagina:** Gebruik de [Zoeken in Forms Portal-API&#39;s](/help/forms/using/listing-forms-webpage-using-apis.md) om formulieren op niet-AEM Sites-pagina&#39;s te zoeken, op te halen en weer te geven.
+   1. **de vormen van de Lijst op een niet-AEM Sites pagina:** Gebruik [ Poortonderzoek APIs van Forms ](/help/forms/using/listing-forms-webpage-using-apis.md) aan vraag, wint, en lijstvormen op niet-AEM Sites pagina&#39;s terug.
 
-1. **Concepten en verzonden formulieren weergeven op een pagina van Forms Portal**: Voeg de component Concepten en verzendingen toe aan de pagina Forms Portal en configureer deze. De component bevat een lijst met alle formulieren in het concept en de formulieren die al zijn verzonden.
+1. **het ontwerp van de Lijst en voorgelegde vormen op een Poortpagina van Forms**: voeg en vorm de componenten Concepten &amp; van Verzending aan de Poortpagina van Forms toe. De component bevat een lijst met alle formulieren in het concept en de formulieren die al zijn verzonden.
 
-   Als u een ingediend adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de optie **Handeling verzenden** tot **[Forms Portal-verzendactie](configuring-submit-actions.md).** U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
+   Om een voorgelegde adaptieve vorm toe te laten om in het voorleggingslusje te verschijnen, plaats **voorlegt actie** aan **[het Portaal van Forms Actie ](configuring-submit-actions.md) voorlegt.** U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
 
-1. **Opslag configureren voor het concept en de verzonden formuliergegevens:** Concepten en verzendgegevens worden standaard opgeslagen in de AEM-opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. [Forms Portal-component configureren om gegevens op een beveiligde locatie op te slaan](../../forms/using/draft-submission-component.md#customizing-the-storage).
-1. **(Optioneel) De Forms Portal-componenten aanpassen:** [Sjablonen voor Forms Portal-pagina&#39;s aanpassen](../../forms/using/customizing-templates-forms-portal-components.md) om de componenten een duidelijk uiterlijk te geven.
-1. **(Optioneel) Voeg aangepaste metagegevens toe aan formulieren:** [Aangepaste metagegevens toevoegen aan formulieren](../../forms/using/customizing-templates-forms-portal-components.md) om aanbiedingen en zoekresultaten te verbeteren.
-1. **Publish de Forms Portal-pagina:** Je Forms Portal-pagina is nu klaar. Publish de pagina.
+1. **vormt opslag voor het ontwerp en voorgelegde vormengegevens:** door gebrek, ontwerp en voorleggingsgegevens wordt opgeslagen in de AEM bewaarplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. [ vorm de Poortcomponent van Forms om gegevens aan een veilige plaats ](../../forms/using/draft-submission-component.md#customizing-the-storage) op te slaan.
+1. **(Facultatief) Aanpassen van de Poortcomponenten van Forms:** [ pas uw Poortpaginasjablonen van Forms ](../../forms/using/customizing-templates-forms-portal-components.md) aan om een onderscheidende verschijning aan de componenten te verstrekken.
+1. **(Facultatief) voeg douanemetagegevens aan vormen toe:** [ voeg douanemetagegevens aan vormen ](../../forms/using/customizing-templates-forms-portal-components.md) toe om lijst en onderzoekservaring te verbeteren.
+1. **Publish de Poortpagina van Forms:** Uw Portaalpagina van Forms is nu klaar. Publish de pagina.
 
 ## Verwante artikelen {#related-articles}
 

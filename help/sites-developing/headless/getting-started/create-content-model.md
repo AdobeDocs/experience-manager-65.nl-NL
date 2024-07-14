@@ -18,7 +18,7 @@ Definieer de structuur van de inhoud die u maakt en gebruikt met behulp van de m
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[Nu u een configuratie hebt gecreeerd,](create-configuration.md) U kunt het gebruiken om de Modellen van het Fragment van de Inhoud te creëren.
+[ nu dat u een configuratie hebt gecreeerd, ](create-configuration.md) kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een van de door u gedefinieerde modellen van inhoudsfragmenten die u als hulplijnen bij het maken van inhoud gebruikt.
 
@@ -26,49 +26,49 @@ Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en i
 
 Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Voor deze gids Aan de slag, creeert u slechts één model.
 
-1. Meld u aan bij AEM en selecteer in het hoofdmenu **Gereedschappen > Elementen > Modellen van inhoudsfragmenten**.
+1. Logboek in AEM en van het belangrijkste menu selecteert **Hulpmiddelen > Assets > de Modellen van het Fragment van de Inhoud**.
 1. Klik op de map die u hebt gemaakt door uw configuratie te maken.
 
-   ![De map Modellen](assets/models-folder.png)
-1. Klikken **Maken**.
-1. Geef een **Modeltitel**, **Tags**, en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
+   ![ de modellenomslag ](assets/models-folder.png)
+1. Klik **creëren**.
+1. Verstrek a **ModelTitel**, **Markeringen**, en **Beschrijving**. U kunt ook selecteren/deselecteren **laat model** toe om te controleren of het model onmiddellijk op verwezenlijking wordt toegelaten.
 
-   ![Een model maken](assets/models-create.png)
-1. Klik in het bevestigingsvenster op **Openen** om uw model te configureren.
+   ![ creeer een model ](assets/models-create.png)
+1. In het bevestigingsvenster, klik **Open** om uw model te vormen.
 
-   ![Bevestigingsvenster](assets/models-confirmation.png)
-1. Met de **Inhoudsfragmentmodeleditor** kunt u het inhoudsfragmentmodel samenstellen door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
+   ![ Bevestigingsvenster ](assets/models-confirmation.png)
+1. Gebruikend de **ModelRedacteur van het Fragment van de Inhoud**, bouwt uw Model van het Fragment van de Inhoud door gebieden van de **3} kolom van de Types van Gegevens te slepen en te laten vallen.**
 
-   ![Velden slepen en neerzetten](assets/models-drag-and-drop.png)
+   ![ belemmering en dalingsgebieden ](assets/models-drag-and-drop.png)
 
-1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur schakelt automatisch aan **Eigenschappen** voor het toegevoegde veld waarin u de verplichte velden kunt opgeven.
+1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur schakelt automatisch aan het **lusje van Eigenschappen** voor het toegevoegde gebied waar u de verplichte gebieden kunt verstrekken.
 
-   ![Eigenschappen configureren](assets/models-configure-properties.png)
-1. Wanneer u klaar bent met het samenstellen van uw model, klikt u op **Opslaan**.
+   ![ vorm eigenschappen ](assets/models-configure-properties.png)
+1. Wanneer u wordt gebeëindigd bouwend uw model, klik **sparen**.
 
-1. De modus van het nieuwe model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
-   * geselecteerd - het nieuwe model is al **Ingeschakeld**
-   * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
+1. De wijze van het pas gecreëerde model hangt van af of u **Model** selecteerde toen het creëren van het model:
+   * geselecteerd - het nieuwe model is reeds **Toegelaten**
+   * niet geselecteerd - het nieuwe model wordt gecreeerd op **1} wijze van het Ontwerp {**
 
-1. Als dit nog niet het geval is, moet het model **Ingeschakeld** om het te gebruiken.
-   1. Selecteer het model dat u hebt gemaakt en klik op **Inschakelen**.
+1. Als niet reeds toegelaten, moet het model **** worden toegelaten om het te gebruiken.
+   1. Selecteer het model dat u creeerde, en klik dan **toelaten**.
 
-      ![Het model inschakelen](assets/models-enable.png)
-   1. Bevestig het toelaten van het model door te tikken of te klikken **Inschakelen** in het bevestigingsdialoogvenster.
+      ![ toelatend het model ](assets/models-enable.png)
+   1. Bevestig toelatend het model door te tikken of **te klikken laat** in de bevestigingsdialoog toe.
 
-      ![Bevestigingsvenster inschakelen](assets/models-enabling.png)
+      ![ toelatend bevestigingsdialoog ](assets/models-enabling.png)
 1. Het model is nu ingeschakeld en klaar voor gebruik.
 
-   ![Model ingeschakeld](assets/models-enabled.png)
+   ![ toegelaten Model ](assets/models-enabled.png)
 
-De **Inhoudsfragmentmodeleditor** ondersteunt veel verschillende gegevenstypen, zoals eenvoudige tekstvelden, elementverwijzingen, verwijzingen naar andere modellen en JSON-gegevens.
+De **ModelRedacteur van het Fragment van de Inhoud** steunt vele verschillende gegevenstypes zoals eenvoudige tekstgebieden, activaverwijzingen, verwijzingen naar andere modellen, en gegevens JSON.
 
-U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfragmenten. Gebruiken [configuraties](create-configuration.md) om uw modellen te organiseren.
+U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfragmenten. Gebruik [ configuraties ](create-configuration.md) om uw modellen te organiseren.
 
 ## Volgende stappen {#next-steps}
 
-Nu u de structuren van uw Inhoudsfragmenten hebt gedefinieerd door modellen te maken, kunt u verdergaan naar het derde deel van de gids Aan de slag en [Maak mappen waarin u de fragmenten opslaat.](create-assets-folder.md)
+Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [ creeert omslagen waar u de fragmenten opslaat.](create-assets-folder.md)
 
 >[!TIP]
 >
->Voor volledige details over de Modellen van het Fragment van de Inhoud, zie [Documentatie bij Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+>Voor volledige details over de Modellen van het Fragment van de Inhoud, zie [ documentatie van de Modellen van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md)

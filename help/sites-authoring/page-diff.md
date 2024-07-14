@@ -27,16 +27,16 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 
 >[!TIP]
 >
->Zie [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) voor meer technische details over deze functie.
+>Zie [ het Ontwikkelen en Afschuiving van de Pagina ](/help/sites-developing/pagediff.md#operation-details) voor meer technische details op deze eigenschap.
 
 ## Gebruiken {#use}
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [Versies](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met de huidige staat
-* [Actieve kopieën](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live kopie met bijbehorende blauwdruk
-* [Starten](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Starten met bron
-* [Taalkopieën](/help/sites-administering/tc-manage.md#comparing-language-copies) - Een pagina voor en na (her)vertaling
+* [ Versies ](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met zijn huidige staat
+* [ Levende Exemplaren ](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Levend Exemplaar met zijn Vervaging
+* [ Lanceringen ](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lanceer met zijn Source
+* [ Kopieën van de Taal ](/help/sites-administering/tc-manage.md#comparing-language-copies) - een pagina vóór en na (re-)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
@@ -51,16 +51,16 @@ Als u bijvoorbeeld versies vergelijkt, wordt de huidige versie links weergegeven
 
 De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk boven in het browservenster.
 
-![Bron weergegeven in koptekst](assets/chlimage_1-109.png)
+![ Source die in kopbal ](assets/chlimage_1-109.png) wordt getoond
 
 Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
-**Componentwijzigingen**
+**de Veranderingen van de Component**
 
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
 
-**Wijzigingen in HTML**
+**de Veranderingen van de HTML**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -73,15 +73,15 @@ Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om dit naar het volledige browservenster te vergroten.
 
-![Pictogram modus Volledig scherm](do-not-localize/chlimage_1-18.png)
+![ het Volledige pictogram van de het schermwijze ](do-not-localize/chlimage_1-18.png)
 
 De geselecteerde zijde vult het gehele venster, maar de balk blijft boven aan de pagina zodat u tussen de twee pagina&#39;s kunt schakelen.
 
-![Met de balk boven kunt u schakelen tussen pagina&#39;s](assets/chlimage_1-110.png)
+![ Bar bij bovenkant laat u tussen pagina&#39;s ](assets/chlimage_1-110.png) schakelen
 
 U kunt de volledige schermweergave ook sluiten door op het pictogram Volledig scherm afsluiten te klikken.
 
-![Volledig scherm sluiten](do-not-localize/chlimage_1-19.png)
+![ dicht volledig scherm ](do-not-localize/chlimage_1-19.png)
 
 U kunt het schuifregelaar Naast elkaar op elk gewenst moment afsluiten door op de knop Sluiten in de koptekst te klikken.
 
@@ -93,7 +93,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
-   * Als u problemen ondervindt met een diff, controleert u de [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
+   * Als u problemen met afschuiving ervaart, controleer de [ Chronologie ](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
 
 >[!NOTE]
 >
@@ -101,4 +101,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die paginadiff kunnen beïnvloeden het dialoogvenster [ontwikkelaarsdocumentatie](/help/sites-developing/pagediff.md) van deze functie.
+>Voor meer details over de verrichting van het mechanisme en de beperkingen van de paginascheiding die paginascheiding kunnen beïnvloeden, zie de [ documentatie van de ontwikkelaar ](/help/sites-developing/pagediff.md) van deze eigenschap.

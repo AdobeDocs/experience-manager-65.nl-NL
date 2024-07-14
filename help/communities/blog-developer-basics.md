@@ -31,35 +31,35 @@ Deze pagina bevat de essentiële informatie voor het werken met de blogfunctie.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
-De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door het toevoegen van de [Blogfunctie](/help/communities/functions.md#blog-function) of door de componenten aan een pagina in auteur toe te voegen geeft wijze uit.
+De blogeigenschap is samengesteld uit twee belangrijkste componenten die beschikbaar zijn door de [ functie van Blog ](/help/communities/functions.md#blog-function) toe te voegen of door de componenten aan een pagina op auteur toe te voegen geeft wijze uit.
 
 ### Blog {#blog}
 
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>social/journaal/components/hbs/tijdschrift</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
    <td>Nee</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.journaal</td>
+   <td> <a href="/help/communities/clientlibs.md"><strong> clientllibs </strong></a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stemed<br /> cq.social.hbs.journaal</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td> /libs/social/journal/components/hbs/journal/clientlibs/journal.css</td>
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>zie <a href="/help/communities/blog-feature.md">Blogonderdeel</a></td>
+   <td>zie </a> de Eigenschap van 0} Blog<a href="/help/communities/blog-feature.md"></td>
   </tr>
  </tbody>
 </table>
@@ -68,47 +68,47 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door het t
 
 | **resourceType** | sociaal/journaal/componenten/hbs/zijbalk |
 |---|---|
-| [**inclusief**](/help/communities/scf.md#add-or-include-a-communities-component) | Nee |
+| [**inbegrepen**](/help/communities/scf.md#add-or-include-a-communities-component) | Nee |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **sjablonen** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **malplaatjes** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **eigenschappen** | zie [Blogonderdeel](/help/communities/blog-feature.md) |
+| **eigenschappen** | zie ](/help/communities/blog-feature.md) de Eigenschap van 0} Blog[ |
 
 * [Aanpassingen aan de clientzijde](/help/communities/client-customize.md)
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Blog API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [ Blog API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Blogeindpunten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [ Blogeindpunten ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](/help/communities/server-customize.md)
 
 ### Blogfunctie {#blog-function}
 
-Een community-sitestructuur die de [Blogfunctie](/help/communities/functions.md#blog-function) heeft `Blog` en `Blog Sidebar` geconfigureerde componenten. De blogfunctie ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](/help/communities/users.md#privileged-members-group).
+Een communautaire plaatsstructuur die de [ functie Blog ](/help/communities/functions.md#blog-function) omvat heeft `Blog` en `Blog Sidebar` gevormde componenten. De functie Blog steunt het identificeren van a [ bevoorrechte gebruikersgroep van het lidlid ](/help/communities/users.md#privileged-members-group).
 
 ### Toegang tot blogberichten (UGC) {#accessing-blog-entries-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
+Zie [ het Moderteren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](/help/communities/working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](/help/communities/working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
-**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
+**de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](/help/communities/srp.md) - introductie en overzicht van het gebruik in de opslagplaats.
-* [SRP en UGC Essentials](/help/communities/srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
-* [Toegang tot UGC met SRP](/help/communities/accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [Refactoring voor sociale hulpmiddelen](/help/communities/socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.
+* [ Overzicht van de Leverancier van het Middel van de Opslag ](/help/communities/srp.md) - inleiding en overzicht van het opslagruimtegebruik.
+* [ SRP en Hoofdzaak UGC ](/help/communities/srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [ die tot UGC met SRP ](/help/communities/accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen.
+* [ SocialUtils Refactoring ](/help/communities/socialutils.md) - verouderde nutsmethodes in kaart brengen aan huidige SRP nutsmethodes.
 
 ## Primaire uitgever {#primary-publisher}
 
 Wanneer de plaatsing een publicatielandbouwbedrijf is, is het noodzakelijk om een primaire uitgever te identificeren die voor te publiceren artikelen opiniepeilt.
 
-Zie [Primaire uitgever](/help/communities/deploy-communities.md#primary-publisher) voor meer informatie .
+Zie [ Primaire Uitgever ](/help/communities/deploy-communities.md#primary-publisher) voor meer details.
 
 ## Rijke media toestaan {#allowing-rich-media}
 
@@ -118,6 +118,6 @@ Het AEM platform blokkeert koppelingen van andere websites om XSS-aanvallen te v
 
 Vanaf AEM 6.2 worden de eerder vereiste wijzigingen die handmatig moeten worden aangebracht, opgenomen in het standaard AntiSamy-configuratiebestand.
 
-Rijke media zijn ingesloten in een blogartikel door de optie `Embed Media from External Sites` pictogram:
+Rijke media wordt ingesloten in een blogartikel door het pictogram `Embed Media from External Sites` te selecteren:
 
-![media](assets/media-icon.png)
+![ media ](assets/media-icon.png)

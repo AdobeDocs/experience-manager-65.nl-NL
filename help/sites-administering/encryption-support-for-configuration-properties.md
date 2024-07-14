@@ -32,23 +32,23 @@ De steun van de Insteekmodule van de Configuratie OSGi werd toegevoegd om het be
 
 Deze stappen tonen hoe te om het wachtwoord SMTP voor de dienst van de Post te coderen. U kunt deze stappen uitvoeren voor een OSGI-eigenschap die u wilt coderen.
 
-1. Ga naar de AEM webconsole op *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Ga in de linkerbovenhoek naar **Hoofd - Crypto Steun**
+1. Ga naar de AEM Console van het Web in *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. In de hogere linkerhoek, ga **Hoofd - Crypto Steun**
 
-   ![chlimage_1-325](assets/chlimage_1-325.png)
+   ![ chlimage_1-325 ](assets/chlimage_1-325.png)
 
-1. De **Adobe Experience Manager Web Console Crypto-ondersteuning** wordt weergegeven.
+1. De **Crypto van de Console van het Web van Adobe Experience Manager** pagina wordt getoond.
 
-   ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
+   ![ screen_shot_2018-08-01at113417am ](assets/screen_shot_2018-08-01at113417am.png)
 
-1. In de **Onbewerkte tekst** Voer de tekst in van de vertrouwelijke gegevens die u wilt beveiligen.
-1. Selecteren **Protect**. De beveiligde tekst wordt weergegeven als gecodeerde tekst.
+1. Op het **gebied van de Tekst van 0} Ononderbroken {, ga de tekst van de gevoelige gegevens in u wilt beschermen.**
+1. Selecteer **Protect**. De beveiligde tekst wordt weergegeven als gecodeerde tekst.
 
-   ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
+   ![ screen_shot_2018-08-01at113844am ](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Kopieer de beveiligde tekst uit Stap#5 en plak deze in de waarde OSGI-formulier. In dit voorbeeld worden de versleutelde **SMTP-wachtwoord** wordt toegevoegd aan de *Day CQ Mail Service*.
+1. Kopieer de beveiligde tekst uit Stap#5 en plak deze in de waarde OSGI-formulier. In dit voorbeeld, wordt het gecrypteerde **wachtwoord SMTP** toegevoegd aan de *Dienst van de Post van CQ van de Dag*.
 
-   ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
+   ![ screen_shot_2016-12-18at105809pm ](assets/screen_shot_2016-12-18at105809pm.png)
 
 1. Sla de eigenschappen van de Day CQ Mail Service op. Het SMTP-wachtwoord wordt nu verzonden als een gecodeerde waarde.
 

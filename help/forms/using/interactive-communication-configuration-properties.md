@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Interactieve communicatie configuratieeigenschappen{#interactive-communications-configuration-properties}
 
-De interactieve Mededelingen omvat eigenschappen die automatisch na het installeren van [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring-aem-forms-osgi.md) pakket. De interactieve auteurs van de Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend **Configuratie Adobe Experience Manager-webconsole** pagina.
+De interactieve Mededelingen omvat eigenschappen die automatisch na het installeren van het [ toe:voegen-op ](../../forms/using/installing-configuring-aem-forms-osgi.md) pakket van AEM Forms worden gevormd. De interactieve auteurs van de Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend de **pagina van de Configuratie van de Console van het Web 0} Adobe Experience Manager.**
 
-Open de **Configuratie Adobe Experience Manager-webconsole** pagina met de volgende URL:
+Open de **pagina van de Configuratie van de Console van het Web van Adobe Experience Manager** gebruikend volgende URL:
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
@@ -34,7 +34,7 @@ De configuratie-eigenschappen zijn onder andere:
 
 ## Configuratie van documentfragmenten {#document-fragments-configuration}
 
-Selecteren **Configuratie van documentfragmenten** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratie-eigenschappen voor documentfragmenten weer te geven.
+Selecteer **de configuratie van Fragmenten van het Document** op de **pagina van de Configuratie van de Console van het Web van Adobe Experience Manager** om de configuratieeigenschappen voor documentfragmenten te bekijken.
 
 <table>
  <tbody> 
@@ -80,7 +80,7 @@ Selecteren **Configuratie van documentfragmenten** op de **Configuratie Adobe Ex
 
 ## Correspondentenconfiguratie maken {#create-correspondence-configuration}
 
-Selecteren **Correspondentenconfiguratie maken** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Agent UI te bekijken.
+Selecteer **creëren de Configuratie van de Correspondentie** op de **pagina van de Configuratie van de Console van Adobe Experience Manager** om de configuratieeigenschappen voor Agent UI te bekijken.
 
 <table>
  <tbody> 
@@ -104,7 +104,7 @@ Selecteren **Correspondentenconfiguratie maken** op de **Configuratie Adobe Expe
   </tr> 
   <tr> 
    <td>Lettertype insluiten in PDF inschakelen</td> 
-   <td><p>Schakel het selectievakje in om het insluiten van lettertypen in de PDF-documenten in te schakelen. Nadat u deze optie hebt geselecteerd, kunt u nieuwe lettertypen insluiten nadat u de PDF-documenten hebt gegenereerd of een voorvertoning ervan hebt weergegeven met de gebruikersinterface van de Agent. Gebruik het kanaal van de Druk van Interactieve Communicatie om PDF documenten te produceren en voor te proef.</p> <p>Het insluiten van lettertypen in een PDF-document is handig als een lettertype beschikbaar is op een computer die wordt gebruikt om de PDF te genereren en die niet beschikbaar is op de clientcomputer die de PDF benadert.</p> <p>Zie voor meer informatie over het insluiten van lettertypen <a href="../../forms/using/customize-text-editor.md" target="_blank">Teksteditor aanpassen</a>.</p> </td> 
+   <td><p>Schakel het selectievakje in om het insluiten van lettertypen in de PDF-documenten in te schakelen. Nadat u deze optie hebt geselecteerd, kunt u nieuwe lettertypen insluiten nadat u de PDF-documenten hebt gegenereerd of een voorvertoning ervan hebt weergegeven met de gebruikersinterface van de Agent. Gebruik het kanaal van de Druk van Interactieve Communicatie om PDF documenten te produceren en voor te proef.</p> <p>Het insluiten van lettertypen in een PDF-document is handig als een lettertype beschikbaar is op een computer die wordt gebruikt om de PDF te genereren en die niet beschikbaar is op de clientcomputer die de PDF benadert.</p> <p>Voor meer informatie bij het inbedden van doopvonten, zie <a href="../../forms/using/customize-text-editor.md" target="_blank"> de tekstredacteur </a> aanpassen.</p> </td> 
    <td>Niet geselecteerd</td> 
    <td>Niet van toepassing</td> 
   </tr> 
@@ -113,7 +113,7 @@ Selecteren **Correspondentenconfiguratie maken** op de **Configuratie Adobe Expe
 
 ## Adaptieve vorm en interactieve communicatie Webkanaalconfiguratie {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Selecteren **Adaptieve vorm en interactieve communicatie Webkanaalconfiguratie** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Adaptief Forms en Interactive Communications Web channel weer te geven. De volgende lijst beschrijft de eigenschappen met betrekking tot Interactieve Mededelingen:
+Selecteer **de AanpassingsVorm en Interactieve Configuratie van het Kanaal van de Communicatie van het Web** de pagina van de Configuratie van de Console van Adobe Experience Manager **om de configuratieeigenschappen voor het AanpassingsForms en Interactieve Communicatie kanaal van het Web te bekijken.** De volgende lijst beschrijft de eigenschappen met betrekking tot Interactieve Mededelingen:
 
 | Eigenschap | Beschrijving | Standaard | Acceptabele waarden |
 |---|---|---|---|
@@ -123,7 +123,7 @@ Selecteren **Adaptieve vorm en interactieve communicatie Webkanaalconfiguratie**
 
 ## Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Selecteren **Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie** op de **Configuratie Adobe Experience Manager-webconsole** pagina om de configuratieeigenschappen voor Adaptieve Forms en Interactieve Communicatie de kanaalthema&#39;s van het Web te bekijken.
+Selecteer **de Adaptieve Configuratie van het Thema van de Vorm en Interactieve Communicatie van het Web van het Kanaal van de Vorm** {op de **pagina van de Configuratie van de Console van Adobe Experience Manager** om de configuratieeigenschappen voor Adaptieve Forms en Interactieve Communicatie de kanaalthema&#39;s van het Web te bekijken.
 
 <table>
  <tbody> 

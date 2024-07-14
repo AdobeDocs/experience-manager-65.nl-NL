@@ -24,7 +24,7 @@ Het onderhoud van het controlelogboek omvat verscheidene delen van functionalite
 
 Het wordt uitgevoerd als configureerbare wekelijkse onderhoudstaak en is toegankelijk via de de monitorconsole van het Dashboard van Verrichtingen.
 
-Zie de klasse [Documentatie van het bewerkingsdashboard](/help/sites-administering/operations-dashboard.md).
+Voor meer informatie, zie de [ Documentatie van het Dashboard van Verrichtingen ](/help/sites-administering/operations-dashboard.md).
 
 Er zijn drie typen opties voor het opschonen van controlelogbestanden:
 
@@ -32,43 +32,43 @@ Er zijn drie typen opties voor het opschonen van controlelogbestanden:
 1. [DAM-controlelogbestand leegmaken](/help/sites-administering/operations-audit-log.md#configure-dam-audit-log-purging)
 1. [Controlelogboek replicatie](/help/sites-administering/operations-audit-log.md#configure-replication-audit-log-purging)
 
-Elk kan worden gevormd door regels in de Console van het AEM te creëren. Nadat zij zijn gevormd, kunt u hen teweegbrengen door naar te gaan **Gereedschappen - Bewerkingen - Onderhoud - Wekelijks venster Onderhoud** en de **AuditLog-onderhoudstaak**.
+Elk kan worden gevormd door regels in de Console van het AEM te creëren. Nadat zij zijn gevormd, kunt u hen teweegbrengen door naar **Hulpmiddelen - Verrichtingen - Onderhoud - het Venster van het Weekonderhoud** te gaan en de **Taak van het Onderhoud AuditLog** in werking te stellen.
 
 ## Logbestand voor controle van pagina configureren {#configure-page-audit-log-purging}
 
 Voer de volgende stappen uit om het opschonen van controlelogbestanden te configureren:
 
-1. Ga naar de webconsolebeheerder door uw browser naar `http://localhost:4502/system/console/configMgr/`
+1. Ga naar de webconsolebeheerder door uw browser naar `http://localhost:4502/system/console/configMgr/` te wijzen
 
-1. Zoeken naar een opgevraagd item **Regel voor het verwijderen van controlelogbestanden voor pagina&#39;s** en klik erop.
+1. Zoek naar een punt genoemd **de regel van de Woorden van het Logboek van de controle van Pagina&#39;s** en klik het.
 
-   ![chlimage_1-365](assets/chlimage_1-365.png)
+   ![ chlimage_1-365 ](assets/chlimage_1-365.png)
 
 1. Vervolgens configureert u de zuiveringsplanner op basis van uw vereisten. De beschikbare opties zijn:
 
-   * **Naam regel:** de naam van de regel inzake controlebeleid;
-   * **Inhoudspad:** het pad van de inhoud waarop de regel van toepassing is;
-   * **Minimumleeftijd:** de tijd in dagen waarop de auditlogs moeten worden bewaard;
-   * **Type controlelogboek:** het type controlelogboek dat moet worden gezuiverd.
+   * **Naam van de Regel:** de naam van de regel van het controlebeleid;
+   * **weg van de Inhoud:** de weg van de inhoud de regel zal toepassen op;
+   * **Minimale leeftijd:** de tijd in dagen de controlelogboeken moeten worden gehouden;
+   * **het logboektype van de Controle:** het type van controlelogboek dat zou moeten worden gezuiverd.
 
    >[!NOTE]
    >
-   >Het inhoudspad is alleen van toepassing op onderliggende elementen van het dialoogvenster `/var/audit/com.day.cq.wcm.core.page` in de repository.
+   >Het inhoudspad is alleen van toepassing op onderliggende items van het knooppunt `/var/audit/com.day.cq.wcm.core.page` in de opslagplaats.
 
 1. Sla de regel op.
-1. De regel u creeerde moet in het Dashboard van Verrichtingen worden blootgesteld opdat het wordt uitgevoerd. Ga als volgt te werk om dit te doen **Gereedschappen - Operaties - Onderhoud** in het welkomstscherm AEM.
+1. De regel u creeerde moet in het Dashboard van Verrichtingen worden blootgesteld opdat het wordt uitgevoerd. Om dit te doen, ga **Hulpmiddelen - Verrichtingen - Onderhoud** van het AEM Welkome scherm.
 
-1. Druk op **Wekelijks onderhoudvenster** kaart.
+1. Druk de **kaart van het Venster van het Weekonderhoud**.
 
-1. U zult de onderhoudstaak vinden die reeds onder **AuditLog-onderhoudstaak** kaart.
+1. U zult de onderhoudstaak reeds aanwezig onder de **kaart van het Onderhoud van AuditLog** vinden.
 
-   ![chlimage_1-366](assets/chlimage_1-366.png)
+   ![ chlimage_1-366 ](assets/chlimage_1-366.png)
 
 1. U kunt of de datum van de volgende uitvoering inspecteren, het vormen, of het manueel uitvoeren door de spelknoop te drukken.
 
 In AEM 6.3, als het geplande onderhoudsvenster sluit alvorens de taak van het Logboek van de Controle kan voltooien, houdt de taak automatisch op. Het wordt hervat wanneer het volgende onderhoudsvenster wordt geopend.
 
-**Met AEM 6.5**, kunt u een actieve Taak van de Weigering van het Logboek van de Controle manueel tegenhouden door te klikken **Stoppen** pictogram. Bij de volgende uitvoering wordt de taak veilig hervat.
+**met AEM 6.5**, kunt u een lopende Taak van de Wrijving van het Logboek van de Controle manueel tegenhouden door het **pictogram van het Einde** te klikken. Bij de volgende uitvoering wordt de taak veilig hervat.
 
 >[!NOTE]
 >
@@ -76,26 +76,26 @@ In AEM 6.3, als het geplande onderhoudsvenster sluit alvorens de taak van het Lo
 
 ## DAM-controlelogbestand opschonen {#configure-dam-audit-log-purging}
 
-1. Ga naar de systeemconsole op *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Zoeken naar **DAM-controlelogbestand leegmaken** en klik op het resultaat.
+1. Navigeer aan de Console van het Systeem in *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Onderzoek naar **DAM de regel van het de controlelogboek van het de controlelogboek zuivert** en klikt het resultaat.
 1. In het volgende venster, vorm dienovereenkomstig uw regel. De opties zijn:
 
-   * **Naam regel:** de naam van de regel inzake controlebeleid;
-   * **Inhoudspad:** het pad van de inhoud waarop de regel van toepassing is
-   * **Minimumleeftijd:** de tijd in dagen dat de auditlogboeken moeten worden bewaard
-   * **Typen auditlogbestandgebeurtenissen:** de typen DAM-auditgebeurtenissen die moeten worden gewist.
+   * **Naam van de Regel:** de naam van de regel van het controlebeleid;
+   * **weg van de Inhoud:** de weg van de inhoud de regel op zal toepassen
+   * **Minimale leeftijd:** de tijd in dagen de controlelogboeken moeten worden gehouden
+   * **de gebeurtenistypen van het Logboek van de Controle:** de types van de controlegebeurtenissen van DAM die zouden moeten worden gezuiverd.
 
-1. Klikken **Opslaan** om uw configuratie te bewaren
+1. Klik **sparen** om uw configuratie te bewaren
 
 ## Logboek voor replicatiecontrole configureren  {#configure-replication-audit-log-purging}
 
-1. Ga naar de systeemconsole op *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Zoeken naar **Replicatieauditlogboek leegmaken planner** en klik op het resultaat
+1. Navigeer aan de Console van het Systeem in *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Onderzoek naar **de controleplank van het Logboek van de Replicatie** en klik het resultaat
 1. In het volgende venster, vorm dienovereenkomstig uw regel. De opties zijn:
 
-   * **Naam regel:** de naam van de regel van het controlebeleid
-   * **Inhoudspad:** het pad van de inhoud waarop de regel van toepassing is
-   * **Minimumleeftijd:** de tijd in dagen dat de auditlogboeken moeten worden bewaard
-   * **Gebeurtenistypen van het Logboek van de controle:** de soorten de controlegebeurtenissen van de Replicatie die zouden moeten worden gezuiverd
+   * **Naam van de Regel:** de naam van de regel van het controlebeleid
+   * **weg van de Inhoud:** de weg van de inhoud de regel op zal toepassen
+   * **Minimale leeftijd:** de tijd in dagen de controlelogboeken moeten worden gehouden
+   * **de gebeurtenistypen van de Replicatie van het Logboek van de Controle van de Controle:** de types van de controlegebeurtenissen van de Replicatie die zouden moeten worden ontladen
 
-1. Klikken **Opslaan** om uw configuratie op te slaan.
+1. Klik **sparen** om uw configuratie te bewaren.

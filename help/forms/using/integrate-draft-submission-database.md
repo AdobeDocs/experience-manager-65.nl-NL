@@ -21,36 +21,36 @@ ht-degree: 0%
 
 Met concepten en verzendingscomponenten van AEM Forms-portaalsites kunnen gebruikers hun formulieren opslaan als concepten en later verzenden vanaf elk apparaat. Gebruikers kunnen hun ingevulde formulieren ook via een portal bekijken. Om deze functionaliteit in te schakelen, biedt AEM Forms gegevens- en metagegevensservices waarmee de gegevens die een gebruiker heeft ingevuld, worden opgeslagen in het formulier en de metagegevens van het formulier die zijn gekoppeld aan concepten en verzonden formulieren. Deze gegevens worden standaard opgeslagen in de CRX-opslagplaats. Als gebruikers echter via AEM publicatieexemplaar met formulieren werken, wat doorgaans buiten de bedrijfsfirewall valt, willen organisaties wellicht gegevensopslag aanpassen om deze beter te beveiligen en betrouwbaarder te maken.
 
-Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementatie van aangepaste gegevens en metagegevensservices om concepten en verzendingscomponenten te integreren in een database. De database die wordt gebruikt in de voorbeeldimplementatie is **MySQL 5.6.24**. U kunt echter de concepten en verzendingscomponent integreren met elke database van uw keuze.
+Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementatie van aangepaste gegevens en metagegevensservices om concepten en verzendingscomponenten te integreren in een database. Het gegevensbestand dat in de steekproefimplementatie wordt gebruikt is **MySQL 5.6.24**. U kunt echter de concepten en verzendingscomponent integreren met elke database van uw keuze.
 
 >[!NOTE]
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
->* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst met beschikbare pakketten raadpleegt u de [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
+>* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst van beschikbare pakketten, zie de [ versies van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
 >* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptive Forms.
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}
 
 Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de steekproef te installeren en te vormen:
 
-1. Download het volgende **aem-fp-db-integration-sample-pkg-6.1.2.zip** aan uw bestandssysteem te verpakken.
+1. Download het volgende **aem-fp-db-integratie-sample-pkg-6.1.2.zip** pakket aan uw dossiersysteem.
 
    Voorbeeldpakket voor databaseintegratie
 
 [Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Ga naar AEM pakketbeheer op https://[*host*]:[*poort*]/crx/packmgr/.
+1. Ga naar AEM pakketmanager in https:// [*gastheer*]:[*haven*]/crx/packmgr/.
 1. Klik op **[!UICONTROL Upload Package]**.
 
-1. Bladeren om de **aem-fp-db-integration-sample-pkg-6.1.2.zip** verpakken en klikken **[!UICONTROL OK]**.
-1. Klikken **[!UICONTROL Install]** naast het pakket te installeren.
+1. Blader naar het **aem-fp-db-integratie-sample-pkg-6.1.2.zip** pakket en klik **[!UICONTROL OK]**.
+1. Klik op **[!UICONTROL Install]** naast het pakket om het pakket te installeren.
 1. Ga naar **[!UICONTROL AEM Web Console Configuration]**
-pagina op https://[*host*]:[*poort*]/system/console/configMgr.
-1. Klik om te openen **[!UICONTROL Forms Portal Draft and Submission Configuration]** in bewerkingsmodus.
+pagina in https:// [*gastheer*]:[*haven*]/system/console/configMgr.
+1. Klik om **[!UICONTROL Forms Portal Draft and Submission Configuration]** te openen in bewerkingsmodus.
 
 1. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
-   | **Eigenschap** | **Beschrijving** | **Waarde** |
+   | **Bezit** | **Beschrijving** | **Waarde** |
    |---|---|---|
    | Forms Portal Conceptgegevensservice | Id voor conceptgegevensservice | formsportal.sampledataservice |
    | Forms Portal Draft Metadata Service | Identificatiecode voor service met metagegevens van concept | formsportal.samplemetadataservice |
@@ -61,7 +61,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
 
    >[!NOTE]
    >
-   >De diensten worden opgelost door hun namen die als waarde voor `aem.formsportal.impl.prop` sleutel als volgt:
+   >De services worden als volgt opgelost door hun namen die als waarde voor de sleutel `aem.formsportal.impl.prop` worden vermeld:
 
    ```java
    @Service(value = {SubmitDataService.class, DraftDataService.class})
@@ -84,10 +84,10 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    >
    >Als u de tabelnamen wijzigt, geeft u deze op in de configuratie Formulierportal.
 
-1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
+1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Save]** klikken.
 
-1. De databaseverbinding kan worden uitgevoerd via de gegevensbron van Apache Sling Connection Pooled.
-1. Voor Apache Sling-verbinding zoekt en klikt u om te openen **[!UICONTROL Apache Sling Connection Pooled DataSource]** in geef wijze in de Configuratie van de Console van het Web uit. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
+1. De databaseverbinding kan worden uitgevoerd via Apache Sling Connection Pooled Data Source.
+1. Voor Apache Sling-verbinding zoekt en klikt u om **[!UICONTROL Apache Sling Connection Pooled DataSource]** te openen in de bewerkingsmodus in de webconsoleconfiguratie. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
 <table>
  <tbody>
@@ -97,15 +97,15 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
   </tr>
   <tr>
    <td>Naam gegevensbron</td>
-   <td><p>Een gegevensbronnaam voor het filtreren bestuurders van de gegevensbronpool</p> <p><strong>Opmerking: </strong><em>De steekproefimplementatie gebruikt FormsPortal als naam van de gegevensbron.</em></p> </td>
+   <td><p>Een gegevensbronnaam voor het filtreren bestuurders van de gegevensbronpool</p> <p><strong> Nota: </strong> <em> de steekproefimplementatie gebruikt FormsPortal als naam van de gegevensbron.</em></p> </td>
   </tr>
   <tr>
    <td>JDBC-stuurprogrammaklasse</td>
    <td>com.mysql.jdbc.Driver</td>
   </tr>
   <tr>
-   <td>URI voor JDBC-verbinding<br /> </td>
-   <td>jdbc:mysql://[<em>host</em>]:[<em>poort</em>]/[<em>schema_name</em>]</td>
+   <td>URI met JDBC-verbinding <br /> </td>
+   <td>jdbc :mysql://[ <em> gastheer </em>]:[<em> haven </em>]/[<em> schema_name </em>]</td>
   </tr>
   <tr>
    <td>Gebruikersnaam</td>
@@ -163,7 +163,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
 >* Het JDBC-stuurprogramma voor MySQL wordt niet bij het voorbeeld geleverd. Zorg ervoor dat u daarvoor de provisioned hebt en verstrek de vereiste informatie om de JDBC verbindingspool te vormen.
 >* Wijs de auteur aan en publiceer instanties om het zelfde gegevensbestand te gebruiken. De waarde van het veld URI van de JDBC-verbinding moet gelijk zijn voor alle auteur- en publicatie-instanties.
 
-1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
+1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Save]** klikken.
 
 1. Als u al een lijst in het gegevensbestandschema hebt, sla aan de volgende stap over.
 
@@ -173,7 +173,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    >
    >U hebt geen verschillende databases nodig voor auteur- en publicatieinstanties. Gebruik dezelfde database voor alle auteurs en publiceer instanties.
 
-   **SQL-instructie voor gegevenstabel**
+   **SQL verklaring voor gegevenslijst**
 
    ```sql
    CREATE TABLE `data` (
@@ -185,7 +185,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **SQL-instructie voor tabel met metagegevens**
+   **SQL verklaring voor meta-gegevenslijst**
 
    ```sql
    CREATE TABLE `metadata` (
@@ -225,7 +225,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **SQL-instructie voor extra metatable**
+   **SQL verklaring voor extra metadatable**
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -237,7 +237,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **SQL-instructie voor tabel met opmerkingen**
+   **SQL verklaring voor commentaarlijst**
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -250,13 +250,13 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
 
 1. Als u reeds de lijsten (gegevens, meta-gegevens, en extra metatable) in het gegevensbestandschema hebt, voer de volgende veranderlijke lijstvragen uit:
 
-   **SQL-instructie voor het wijzigen van de gegevenstabel**
+   **SQL verklaring voor het veranderen van de gegevenslijst**
 
    ```sql
    ALTER TABLE `data` CHANGE `owner` `owner` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
    ```
 
-   **SQL-instructie voor het wijzigen van de tabel met metagegevens**
+   **SQL verklaring voor het veranderen van de meta-gegevenslijst**
 
    ```sql
    ALTER TABLE metadata add markedForDeletion varchar(45) DEFAULT NULL
@@ -291,7 +291,7 @@ pagina op https://[*host*]:[*poort*]/system/console/configMgr.
    CHANGE `xdpRef` `xdpRef` VARCHAR(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
    ```
 
-   **SQL-instructie voor het wijzigen van de extra metadatable-tabel**
+   **SQL verklaring voor het veranderen van de extra metadatable lijst**
 
    ```sql
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
@@ -303,15 +303,15 @@ De voorbeeldimplementatie is nu geconfigureerd, waarmee u concepten en verzendin
 
 Voer de volgende stappen uit op alle auteur- en publicatieinstanties om het bestand mysql-connector-java-5.1.39-bin.jar te installeren:
 
-1. Navigeren naar `https://'[server]:[port]'/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
+1. Ga naar `https://'[server]:[port]'/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
 1. Controleer in de kolom Geëxporteerd door of het pakket wordt geëxporteerd door een willekeurige bundel.
 
    Ga door als het pakket niet door enige bundel wordt uitgevoerd.
 
-1. Navigeren naar `https://'[server]:[port]'/system/console/bundles` en klik op **[!UICONTROL Install/Update]**.
-1. Klikken **[!UICONTROL Choose File]** en bladert u om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
+1. Ga naar `https://'[server]:[port]'/system/console/bundles` en klik op **[!UICONTROL Install/Update]** .
+1. Klik op **[!UICONTROL Choose File]** en blader naar het bestand mysql-connector-java-5.1.39-bin.jar en selecteer dit. Selecteer ook de selectievakjes **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** .
 1. Klik op **[!UICONTROL Install or Update]**. Start de server opnieuw als de bewerking is voltooid.
-1. (*Alleen Windows*) Schakel de systeemfirewall van uw besturingssysteem uit.
+1. (*Vensters slechts*) zet de systeemfirewall voor uw werkend systeem uit.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ Voer de volgende stappen uit op alle auteur- en publicatieinstanties om het best
 
 ## Voorbeeldcode voor poortgegevens en metagegevensservice voor formulieren {#sample-code-for-forms-portal-data-and-metadata-service}
 
-De volgende ZIP bevat: `FormsPortalSampleDataServiceImpl` en `FormsPortalSampleMetadataServiceImpl` (implementatieklassen) voor gegevens en meta-gegevensdienstinterfaces. Bovendien bevat deze klasse alle klassen die vereist zijn voor de compilatie van de bovengenoemde implementatieklassen.
+Het volgende ZIP-bestand bevat `FormsPortalSampleDataServiceImpl` en `FormsPortalSampleMetadataServiceImpl` (implementatieklassen) voor gegevens- en metagegevensservice-interfaces. Bovendien bevat deze klasse alle klassen die vereist zijn voor de compilatie van de bovengenoemde implementatieklassen.
 
 [Bestand ophalen](assets/sample_package.zip)
 
@@ -327,25 +327,25 @@ De volgende ZIP bevat: `FormsPortalSampleDataServiceImpl` en `FormsPortalSampleM
 
 De implementatie van de database van Forms Portal maakt gebruik van extra metagegevenstabel. De tabel heeft een samengestelde primaire sleutel die is gebaseerd op de kolommen Key en id van de tabel. MySQL staat primaire sleutels tot de lengte van 255 karakters toe. U kunt het volgende validatiescript aan de clientzijde gebruiken om de lengte te controleren van de bestandsnaam die aan de bestandswidget is gekoppeld. De validatie wordt uitgevoerd wanneer een bestand wordt gekoppeld. Het script dat in de volgende procedure wordt weergegeven, geeft een bericht weer wanneer de bestandsnaam groter is dan 150 (inclusief de extensie). U kunt het script wijzigen om te controleren op een ander aantal tekens.
 
-Voer de volgende stappen uit om te maken [een clientbibliotheek](/help/sites-developing/clientlibs.md) en gebruik het script:
+Voer de volgende stappen uit om [ een cliëntbibliotheek ](/help/sites-developing/clientlibs.md) tot stand te brengen en het manuscript te gebruiken:
 
 1. Meld u aan bij CRXDE en navigeer naar /etc/clientlibs/
-1. Een knooppunt van het type maken **cq:ClientLibraryFolder** en geef de naam van het knooppunt op. Bijvoorbeeld: `validation`.
+1. Creeer een knoop van type **cq:ClientLibraryFolder** en verstrek naam van de knoop. Bijvoorbeeld `validation` .
 
    Klik op **[!UICONTROL Save All]**.
 
-1. Klik met de rechtermuisknop op het knooppunt, klik op **[!UICONTROL create new file]** en maakt u een bestand met de extensie .txt. Bijvoorbeeld: `js.txt`Voeg de volgende code toe aan het nieuwe .txt dossier en klik **[!UICONTROL Save All]**.
+1. Klik met de rechtermuisknop op het knooppunt, klik op **[!UICONTROL create new file]** en maak een bestand met de extensie .txt. Bijvoorbeeld, `js.txt` voeg de volgende code aan het pas gecreëerde .txt dossier toe en klik **[!UICONTROL Save All]**.
 
    ```javascript
    #base=util
     util.js
    ```
 
-   In de bovenstaande code: `util` de naam van de map is en `util.js` naam van het bestand in het dialoogvenster `util` map. De `util` map en `util.js` bestanden worden gemaakt in volgende stappen.
+   In de bovenstaande code is `util` de naam van de map en `util.js` de naam van het bestand in de map `util` . De map `util` en het bestand `util.js` worden gemaakt in volgende stappen.
 
-1. Klik met de rechtermuisknop op de knop `cq:ClientLibraryFolder` knooppunt dat is gemaakt in stap 2, selecteert u Maken > Map maken. Een map maken met de naam `util`. Klik op **[!UICONTROL Save All]**. Klik met de rechtermuisknop op de knop `util` Selecteer Maken > Bestand maken. Een bestand met de naam `util.js`. Klik op **[!UICONTROL Save All]**.
+1. Klik met de rechtermuisknop op het knooppunt `cq:ClientLibraryFolder` dat in stap 2 is gemaakt, en selecteer Maken > Map maken. Maak een map met de naam `util` . Klik op **[!UICONTROL Save All]**. Klik met de rechtermuisknop op de map `util` en selecteer Maken > Bestand maken. Maak een bestand met de naam `util.js` . Klik op **[!UICONTROL Save All]**.
 
-1. Voeg de volgende code toe aan het bestand util.js en klik op **[!UICONTROL Save All]**. De code valideert de lengte van de bestandsnaam.
+1. Voeg de volgende code toe aan het bestand util.js en klik op **[!UICONTROL Save All]** . De code valideert de lengte van de bestandsnaam.
 
    ```javascript
    /*
@@ -402,7 +402,7 @@ Voer de volgende stappen uit om te maken [een clientbibliotheek](/help/sites-dev
    >
    >Het script is bedoeld voor de widgetcomponent voor bijlagen buiten de doos. Als u de uit-van-de-doos gehechtheid widget hebt aangepast dan verander het bovengenoemde manuscript om respectieve veranderingen op te nemen.
 
-1. Voeg de volgende eigenschap toe aan de map die in stap 2 is gemaakt en klik op **[!UICONTROL Save All]**.
+1. Voeg de volgende eigenschap toe aan de map die in stap 2 is gemaakt en klik op **[!UICONTROL Save All]** .
 
    * **[!UICONTROL Name:]** categorieën
 
@@ -412,12 +412,12 @@ Voer de volgende stappen uit om te maken [een clientbibliotheek](/help/sites-dev
 
    * **[!UICONTROL multi option:]** Ingeschakeld
 
-1. Navigeren naar `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg de `fp.validation` de waarde voor de eigenschap embed.
+1. Navigeer naar `/libs/fd/af/runtime/clientlibs/guideRuntime` en voeg de `fp.validation` -waarde toe aan de eigenschap embed.
 
-1. Navigeer naar /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA en voeg de `fp.validation` waarde die moet worden ingesloten.
+1. Navigeer naar /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA en voeg de waarde `fp.validation` toe aan de eigenschap embed.
 
    >[!NOTE]
    >
    >Als u aangepaste clientbibliotheken gebruikt in plaats van guideRuntime en guideRuntimeWithXfa-clientbibliotheken, gebruikt u de categorienaam om de clientbibliotheek die in deze procedure is gemaakt, in te sluiten in uw aangepaste bibliotheken die tijdens runtime worden geladen.
 
-1. Klikken **[!UICONTROL Save All.]** Wanneer de bestandsnaam groter is dan 150 tekens (inclusief de extensie), wordt nu een bericht weergegeven.
+1. Klik op **[!UICONTROL Save All.]** Nu wordt een bericht weergegeven wanneer de bestandsnaam groter is dan 150 tekens (inclusief extensies).

@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # Sites Repositoregeling Herstructurering AEM 6.5 {#sites-repository-restructuring-in-aem}
 
-Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) op de pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM Sites-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/repository-restructuring.md) pagina wordt beschreven, zouden de klanten die aan AEM 6.5 worden bevorderd deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatsveranderingen die de Oplossing van AEM Sites beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
-**Met 6,5-upgrade**
+**met 6.5 Verbetering**
 
 * [ContextHub-segmenten](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#contexthub-segments)
 
-**Voorafgaand aan toekomstige upgrade**
+**voorafgaand aan Toekomstige Verbetering**
 
 * [Adobe Analytics-clientbibliotheken](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-analytics-client-libraries)
 * [Klassiek Microsoft Word-naar-webpaginamodellen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
@@ -61,11 +61,11 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> <p>De volgende vraag QueryBuilder bepaalt de plaats van alle verwijzingen naar Segmenten ContextHub in de Vorige Plaatsen.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dit kan worden uitgevoerd via <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM foutopsporingsinterface van QueryBuilder</a>. Merk op dat dit een het doorlopen vraag is, zodat stel het niet tegen productie in werking, en verzeker traversale grenzen aangepast zoals nodig.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dit kan via <a href="/help/sites-developing/querybuilder-api.md" target="_blank"> AEM de Debugger UI van QueryBuilder </a> worden uitgevoerd. Merk op dat dit een het doorlopen vraag is, zodat stel het niet tegen productie in werking, en verzeker traversale grenzen aangepast zoals nodig.</p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>De Segmenten van ContextHub persisteerden aan de vorige plaatsvertoning als read-only in <strong>AEM &gt; Persoonlijkheid &gt; Soorten publiek</strong>.</p> <p>Als de Segmenten ContextHub in AEM editable moeten zijn, moeten zij aan de nieuwe plaats (<code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>). Om het even welke nieuwe die segmenten ContentHub in AEM worden gecreeerd worden voortgeduurd aan de nieuwe plaats (<code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p> <p>AEM Sites Pagina-eigenschappen staan alleen de vorige locatie toe (<code>/etc</code>) of één nieuwe locatie (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>) om worden geselecteerd, zodat moeten de Segmenten ContextHub dienovereenkomstig worden gemigreerd.</p> <p>Om het even welke ongebruikte Segmenten ContextHub van AEM verwijzingsplaatsen kunnen worden verwijderd en niet aan de Nieuwe Plaats worden gemigreerd:</p>
+   <td><p>De Segmenten van ContextHub persisteerden aan de vorige plaatsvertoning als read-only in <strong> AEM &gt; Personalization &gt; Soorten van publiek </strong>.</p> <p>Als de Segmenten ContextHub in AEM editable moeten zijn, moeten zij aan de nieuwe plaats (<code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>) worden gemigreerd. Om het even welke nieuwe die segmenten ContentHub in AEM worden gecreeerd worden voortgeduurd aan de nieuwe plaats (<code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p> <p>Met AEM Sites-pagina-eigenschappen kan alleen de vorige locatie (<code>/etc</code>) of één nieuwe locatie (<code>/apps</code> , <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code> ) worden geselecteerd. ContextHub-segmenten moeten daarom dienovereenkomstig worden gemigreerd.</p> <p>Om het even welke ongebruikte Segmenten ContextHub van AEM verwijzingsplaatsen kunnen worden verwijderd en niet aan de Nieuwe Plaats worden gemigreerd:</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segmentation/geometrixx-outdoor</li>
@@ -92,8 +92,8 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Elk aangepast gebruik van deze clientbibliotheken moet verwijzen naar de clientbibliotheek per categorie en niet per pad:</p>
     <ol>
-     <li>Alle verwijzingen naar de clientbibliotheek per pad op de vorige locatie moeten worden bijgewerkt om te worden gebruikt <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM Client Library Reference Framework</a>.</li>
-     <li>Als AEM Client Library-verwijzingsframework niet kan worden gebruikt, kan naar het absolute pad van de Client Libraries worden verwezen via AEM Client Library Proxy servlet.
+     <li>Om het even welke verwijzingen naar de Bibliotheek van de Cliënt door weg bij de Vorige Plaats zouden moeten worden bijgewerkt om <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank"> AEM het van verwijzingen voorzien van de Bibliotheek van de Cliënt te gebruiken van kader </a>.</li>
+     <li>Als AEM de Bibliotheek van de Cliënt verwijzend kader niet kan worden gebruikt, kan de absolute weg van de Bibliotheken van de Cliënt via AEM het Server van de Volmacht van de Bibliotheek van de Cliënt worden van verwijzingen voorzien.
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/plugins.js</code></li>
@@ -105,7 +105,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>Het bewerken van deze clientbibliotheken is nooit ondersteund.</p> <p>Ga voor het verkrijgen van de categorieën Client Library naar elk <code>cq:ClientLIbraryFolder</code> knoop via CRXDELite en inspecteer het categoriebezit.</p>
+   <td><p>Het bewerken van deze clientbibliotheken is nooit ondersteund.</p> <p>Ga naar elk knooppunt <code>cq:ClientLIbraryFolder</code> via CRXDELite om de categorieën in de clientbibliotheek op te halen en inspecteer de eigenschap category.</p>
     <ul>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/appmeasurement</code></li>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/plugins</code></li>
@@ -133,19 +133,19 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven.</p>
     <ol>
-     <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).</li>
-     <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
+     <li>Kopieer de ontwerpen van de Vorige Plaats aan de Nieuwe Plaats (<code>/apps</code>).</li>
+     <li>Converteer om het even welke CSS, JavaScript en statische middelen in het Ontwerp in de Bibliotheek van de a <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"> Cliënt </a> met <code>allowProxy = true</code>.</li>
      <li>Verwijzingen naar de vorige locatie bijwerken in de eigenschap cq:designPath.</li>
      <li>Werk pagina's bij die naar de vorige locatie verwijzen om de nieuwe categorie Clientbibliotheek te kunnen gebruiken (hiervoor moet de code voor de implementatie van de pagina worden bijgewerkt).</li>
-     <li>Update AEM Dispatcher rules to allow serving of Client Libraries via the <code>/etc.clientlibs/</code> proxyservlet.</li>
+     <li>Werk AEM Dispatcher-regels bij om het gebruik van clientbibliotheken via de proxyserver van <code>/etc.clientlibs/</code> toe te staan.</li>
     </ol> <p>Voor om het even welke Ontwerpen die NIET in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp beheerde:</p>
     <ul>
-     <li>Ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
+     <li>Verplaats ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>NVT<br /> </td>
+   <td>N.v.t. <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -166,24 +166,24 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td>Alle nieuwe emulatorconfiguraties voor mobiele apparaten moeten worden gemigreerd naar de nieuwe locatie.
     <ol>
-     <li>Kopieer alle nieuwe emulatorconfiguraties voor mobiele apparaten van de vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Werk voor alle AEM Sites-pagina's die afhankelijk zijn van deze emulatorconfiguraties voor mobiele apparaten de pagina's bij <span class="code">
+     <li>Kopieer eventuele nieuwe emulatorconfiguraties voor mobiele apparaten van de vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code> ).</li>
+     <li>Werk voor alle AEM Sites-pagina's die afhankelijk zijn van deze configuraties van de emulator voor mobiele apparaten de pagina's bij <span class="code">
        <code>
         jcr
        </code>
        <code>
         :content
-       </code></span> knooppunt: <br /> <span class="code">[cq:Page]/jcr:content@cq:
+       </code></span> node: <br /> <span class="code">[cq:Page]/jcr:content@cq:
        <code>
         deviceGroups
-       </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>Voor alle bewerkbare sjablonen die afhankelijk zijn van deze configuraties van emulators voor mobiele apparaten, werkt u de bewerkbare sjablonen bij en wijst u de <span class="code">
+       </code> = String[ mobile/groups/responsive ] </span></li>
+     <li>Voor alle bewerkbare sjablonen die afhankelijk zijn van deze configuraties van emulators voor mobiele apparaten werkt u de bewerkbare sjablonen bij en wijst u de <span class="code">
        <code>
         cq
-       </code>:
+       </code> :
        <code>
         deviceGroups
-       </code></span> naar de nieuwe locatie.</li>
+       </code></span> aan de Nieuwe Plaats.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -210,19 +210,19 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Nieuwe locatie of locaties</strong></td>
-   <td><p><code>/apps/msm</code> (Klantblauwdrukconfiguraties)</p> <p><code>/libs/msm</code> (Configuratie Vervaging buiten kader voor schermen, handel)</p> </td>
+   <td><p><code>/apps/msm</code> (Klantblauwdrukconfiguraties)</p> <p><code>/libs/msm</code> (Configuraties van Vervaging buiten de box voor Screens, Commerce)</p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Nieuwe of gewijzigde configuraties voor beheer van meerdere sites moeten worden gemigreerd naar de nieuwe locatie (<code>/apps</code>).</p>
+   <td><p>Om het even welke nieuwe of gewijzigde Configuraties van de Blauwdruk van de Manager van de Multisite moet aan de Nieuwe Plaats (<code>/apps</code>) worden gemigreerd.</p>
     <ol>
-     <li>Kopieer eventuele nieuwe of gewijzigde configuraties voor de bewaking van de blauwdruk van meerdere sites van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).</li>
+     <li>Kopieer om het even welke nieuwe of gewijzigde Configuraties van de Vervaging van de Manager van de Multisite van de Manager van de Vorige Plaats aan de Nieuwe Plaats (<code>/apps</code>).</li>
      <li>Verwijder alle gemigreerde configuraties voor beheer van meerdere sites uit de vorige locatie.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>Alle AEM configuraties voor beheer op meerdere locaties vindt u in de nieuwe locatie op <code>/libs</code>.</p> <p>De inhoud verwijst niet naar de Blauwe Configuraties van de Manager van de Multisite daarom zijn er geen inhoudsverwijzingen om aan te passen.</p> </td>
+   <td><p>Alle AEM configuraties voor beheer op meerdere locaties vindt u in de nieuwe locatie in <code>/libs</code> .</p> <p>De inhoud verwijst niet naar de Blauwe Configuraties van de Manager van de Multisite daarom zijn er geen inhoudsverwijzingen om aan te passen.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -243,8 +243,8 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Nieuwe of gewijzigde configuraties voor de implementatie van meerdere beheersites moeten naar de nieuwe locatie worden gemigreerd.</p>
     <ol>
-     <li>Kopieer eventuele nieuwe of gewijzigde implementatieconfiguraties voor beheer op meerdere locaties van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).</li>
-     <li>Werk verwijzingen op AEM Pagina's naar de Configuraties van de Output van de Manager van de Multisite in de Vorige Plaats bij, om aan hun tegenhangers in de Nieuwe Plaatsen te wijzen (<code>/libs</code> of <code>/apps</code>).</li>
+     <li>Kopieer om het even welke nieuwe of gewijzigde Configuraties van de Uitvoer van de Manager van de Multisite van de Vorige Plaats aan de nieuwe plaats (<code>/apps</code>).</li>
+     <li>Werk verwijzingen op AEM Pagina's aan de Configuraties van de Output van de Manager van de Multisite in de Vorige Plaats bij, om aan hun tegenhangers in de Nieuwe Plaatsen (<code>/libs</code> of <code>/apps</code>) te richten.</li>
     </ol> <p>Verwijder gemigreerde configuraties voor de implementatie van meerdere sites uit de vorige locatie.</p> </td>
   </tr>
   <tr>
@@ -277,9 +277,9 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>Nieuwe of gewijzigde E-mailsjablonen voor gebeurtenismeldingen voor pagina moeten naar de nieuwe locatie worden gemigreerd onder <code>/apps</code>:</p>
+   <td><p>Nieuwe of gewijzigde E-mailsjablonen voor gebeurtenismeldingen voor de pagina moeten onder <code>/apps</code> naar de nieuwe locatie worden gemigreerd:</p>
     <ol>
-     <li>Kopieer nieuwe of gewijzigde E-mailsjablonen voor gebeurtenismeldingen voor de pagina van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).</li>
+     <li>Kopieer om het even welke nieuwe of gewijzigde E-mailMalplaatjes van het Bericht van de Gebeurtenis van de Pagina van de Vorige Plaats aan de nieuwe plaats (<code>/apps</code>).</li>
      <li>Verwijder alle sjablonen voor meldingen van gemigreerde paginagebeurtenissen uit de vorige locatie.</li>
     </ol> </td>
   </tr>
@@ -299,10 +299,10 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><span class="code">/libs/settings/
       <code>
        wcm
-      </code>/sjabloontypen/basisstructuur/basisstructuur</span></p> <p><span class="code">/apps/settings/
+      </code> /template-types/basisstructuur/basisstructuur</span></p> <p><span class="code">/apps/settings/
       <code>
        wcm
-      </code>/sjabloontypen/basisstructuur/basisstructuur</span></p> </td>
+      </code> /template-types/basisstructuur/basisstructuur</span></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
@@ -310,7 +310,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>NVT<br /> </td>
+   <td>N.v.t. <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -336,7 +336,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>Verwijzen naar een niet-bestaand <code>grid_base.less</code> resulteert in de lay-outmodus van de Pagina- en de Sjablooneditor niet en een verstoring van de pagina-indeling.</td>
+   <td>Wanneer wordt verwezen naar een niet-bestaand <code>grid_base.less</code> -bestand, werkt de lay-outmodus van de Pagina- en de Sjablooneditor niet en wordt de paginalay-out gewijzigd.</td>
   </tr>
  </tbody>
 </table>
@@ -357,14 +357,14 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven.</p>
     <ol>
-     <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).</li>
-     <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
-     <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster <code>cq:designPath</code> eigenschap via <strong>AEM &gt; Sites &gt; Aangepaste sitepagina's &gt; Pagina-eigenschappen &gt; Geavanceerd tabblad &gt; Ontwerpveld</strong>.</li>
+     <li>Kopieer de ontwerpen van de Vorige Plaats aan de Nieuwe Plaats (<code>/apps</code>).</li>
+     <li>Converteer om het even welke CSS, JavaScript en statische middelen in het Ontwerp in de Bibliotheek van de a <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"> Cliënt </a> met <code>allowProxy = true</code>.</li>
+     <li>De verwijzingen van de update naar de Vorige Plaats in het <code>cq:designPath</code> bezit via <strong> AEM &gt; Plaatsen &gt; de Pagina's van de Plaats van de Douane &gt; de Eigenschappen van de Pagina &gt; Geavanceerd Lusje &gt; het Gebied van het Ontwerp </strong>.</li>
      <li>Werk pagina's bij die naar de vorige locatie verwijzen om de nieuwe categorie Clientbibliotheek te kunnen gebruiken (hiervoor moet de code voor de implementatie van de pagina worden bijgewerkt).</li>
-     <li>Werk AEM Dispatcher-regels bij om het serveren van clientbibliotheken via de <code>/etc.clientlibs/</code> proxyservlet.</li>
+     <li>Werk AEM Dispatcher-regels bij om het serveren van clientbibliotheken via de proxyserver van <code>/etc.clientlibs/</code> toe te staan.</li>
     </ol> <p>Voor om het even welke Ontwerpen die NIET in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp beheerde:</p>
     <ul>
-     <li>Ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
+     <li>Verplaats ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -423,8 +423,8 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Elk aangepast gebruik van deze clientbibliotheken moet verwijzen naar de clientbibliotheek per categorie en niet per pad.</p>
     <ol>
-     <li>Alle verwijzingen naar de clientbibliotheek per pad op de vorige locatie moeten worden bijgewerkt om te worden gebruikt <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM Client Library Reference Framework</a>.</li>
-     <li>Als AEM Client Library-verwijzingsframework niet kan worden gebruikt, kan naar het absolute pad van de Client Libraries worden verwezen via AEM Client Library Proxy servlet:</li>
+     <li>Om het even welke verwijzingen naar de Bibliotheek van de Cliënt door weg bij de Vorige Plaats zouden moeten worden bijgewerkt om <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank"> AEM het van verwijzingen voorzien van de Bibliotheek van de Cliënt te gebruiken van kader </a>.</li>
+     <li>Als AEM die de Bibliotheek van de Cliënt verwijzend kader niet kan worden gebruikt, kan de absolute weg van de Bibliotheken van de Cliënt via AEM het Server van de Volmacht van de Bibliotheek van de Cliënt worden van verwijzingen voorzien:</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/testandtarget.js</code></li>
@@ -468,8 +468,8 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Elk aangepast gebruik van deze clientbibliotheken moet verwijzen naar de clientbibliotheek per categorie en niet per pad.</p>
     <ol>
-     <li>Alle verwijzingen naar de clientbibliotheek per pad op de vorige locatie moeten worden bijgewerkt om te worden gebruikt <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM Client Library Reference Framework</a>.</li>
-     <li>Als AEM Client Library-verwijzingsframework niet kan worden gebruikt, kan naar het absolute pad van de Client Libraries worden verwezen via AEM Client Library Proxy servlet.</li>
+     <li>Om het even welke verwijzingen naar de Bibliotheek van de Cliënt door weg bij de Vorige Plaats zouden moeten worden bijgewerkt om <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank"> AEM het van verwijzingen voorzien van de Bibliotheek van de Cliënt te gebruiken van kader </a>.</li>
+     <li>Als AEM de Bibliotheek van de Cliënt verwijzend kader niet kan worden gebruikt, kan de absolute weg van de Bibliotheken van de Cliënt via AEM het Server van de Volmacht van de Bibliotheek van de Cliënt worden van verwijzingen voorzien.</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/wcm/foundation/clientlibs/accessibility.css</code></li>
@@ -479,7 +479,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>Het bewerken van deze clientbibliotheken is nooit ondersteund.</p> <p>Ga voor het verkrijgen van de categorieën Client Library naar elk <code>cq:ClientLIbraryFolder</code> knoop via CRXDELite en inspecteer het categoriebezit:</p>
+   <td><p>Het bewerken van deze clientbibliotheken is nooit ondersteund.</p> <p>Ga naar elk knooppunt <code>cq:ClientLIbraryFolder</code> via CRXDELite en inspecteer de categorie-eigenschap om de categorieën in de clientbibliotheek op te halen:</p>
     <ul>
      <li><code>/libs/wcm/foundation/clientlibs/accessibility</code></li>
      <li><code>/libs/wcm/foundation/clientlibs/main</code></li>

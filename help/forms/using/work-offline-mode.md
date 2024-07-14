@@ -21,15 +21,15 @@ In de offlinemodus van de AEM Forms-app kunt u naadloos werken, zelfs als de app
 
 U begint met het werken aan de AEM Forms-app door uw app te synchroniseren met de AEM Forms-server. Alle aan u toegewezen formulieren worden gedownload in uw app. Voor AEM Forms on JEE worden taken opgehaald op het tabblad Taken en worden hiermee samenhangende formulieren en andere formulieren gestart op het tabblad Forms. Voor AEM Forms op OSGi wordt alleen Forms geladen op het tabblad Forms.
 
-Ga voor meer informatie over het synchroniseren van de app naar [De app synchroniseren](/help/forms/using/sync-app.md).
+Voor details op hoe te om app te synchroniseren, zie [ Synchronizing app ](/help/forms/using/sync-app.md).
 
 ## Forms offline beschikbaar maken {#making-forms-available-offline}
 
 Wanneer u uw toepassing synchroniseert met de AEM Forms-server, worden de formulieren naar uw mobiele apparaat gedownload. De bijlagen die aan het formulier zijn gekoppeld, worden echter standaard niet gedownload. Dit houdt in dat als u online bent, u de bijlagen kunt bekijken. Als u er echter voor wilt zorgen dat u de bijlage kunt weergeven in de offline modus, wijzigt u de standaardinstellingen in uw app.
 
-Als u wilt dat de bijbehorende bijlagen bij elk formulier worden gedownload, stelt u Bijlagen zoeken in op AAN. Zie voor meer informatie [Algemene instellingen bijwerken](/help/forms/using/update-general-settings.md).
+Als u wilt dat de bijbehorende bijlagen bij elk formulier worden gedownload, stelt u Bijlagen zoeken in op AAN. Voor details, zie [ Bijwerkend algemene montages ](/help/forms/using/update-general-settings.md).
 
-Aangezien het downloaden van gegevens op het mobiele apparaat de prestaties van het apparaat kan beïnvloeden, wordt de instelling voor Vetbijlagen standaard ingesteld op UIT. De bijlagen worden opgehaald naar het apparaat voor elke taak die van de server wordt gedownload nadat de instelling is bijgewerkt naar ON. In de offlinemodus kan een gebruiker vervolgens werken aan alle taken die naar het apparaat worden gedownload nadat de **Bijlagen ophalen** aan AAN.
+Aangezien het downloaden van gegevens op het mobiele apparaat de prestaties van het apparaat kan beïnvloeden, wordt de instelling voor Vetbijlagen standaard ingesteld op UIT. De bijlagen worden opgehaald naar het apparaat voor elke taak die van de server wordt gedownload nadat de instelling is bijgewerkt naar ON. Op de off-line wijze, kan een gebruiker aan alle taken dan werken die aan apparaat na het plaatsen van de **gehechtheid van de Ophalen** opties aan. worden gedownload
 
 ## Offlineservice configureren voor AEM Forms-app {#configuring-offline-service-for-aem-forms-app-br}
 
@@ -37,15 +37,15 @@ De offlineservice van de AEM Forms-app identificeert de bronnen die in een formu
 
 U configureert als volgt de offline component aan de serverzijde van de AEM Forms-app:
 
-1. Navigeer in de auteurinstantie naar **Adobe Experience Manager** >**Gereedschappen** > **Forms** > **Forms App Offline Service configureren**.
+1. In de auteursinstantie, navigeer aan **Adobe Experience Manager** > **Hulpmiddelen** > **Forms** > **Vorm de Offlinedienst van Forms App**.
 
    URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
 1. Onder Algemene instellingen kunt u het volgende uitvoeren:
 
-   * **Cache wissen**: Hiermee wist u de cache aan serverzijde van de formulierafhankelijkheden.
-   * **Configuratie opnieuw instellen**: Hiermee herstelt u de offlineconfiguratie van de AEM Forms-toepassing.
-   * **Geldigheid cache**: Geeft de geldigheidsperiode aan voor de offline cache aan de serverzijde.
-   * **Paden voor middelenwaarneming**: Geeft paden aan waar de offlineservice de bron controleert. Als er wijzigingen optreden in de opgegeven paden, wordt de offlinecache van alle afhankelijke formulieren bijgewerkt. Bijvoorbeeld: `/etc/clientlibs/fd,/content/dam/images`.
+   * **Duidelijk Geheime voorgeheugen**: ontruimt het geheime voorgeheugen van de serverzijde van de vormgebiedsdelen.
+   * **Configuratie van het Terugstellen**: stelt de AEM Forms app off-line configuratie opnieuw in.
+   * **Geldigheid van het Geheime voorgeheugen**: Specificeert de geldigheidsperiode voor het server-kant off-line geheime voorgeheugen.
+   * **Paden van de Waarneming van het Middel**: Specificeert wegen waar de off-line dienst voor middelveranderingen controleert. Als er wijzigingen optreden in de opgegeven paden, wordt de offlinecache van alle afhankelijke formulieren bijgewerkt. Bijvoorbeeld `/etc/clientlibs/fd,/content/dam/images` .
 
-1. In de **Handmatige broncache** kunt u opgeven welke afhankelijkheden van formulieren niet kunnen worden geïdentificeerd door de offlineservice. U kunt bronnen opgeven, zoals afbeeldingen die vanuit JavaScript zijn geladen. De AEM Forms-app downloadt deze bronnen ook voor de offline modus.
+1. In het **lusje van het Geheime voorgeheugen van het 1} Hand van het Middel**, specificeer de vorm gebiedsdelen off-line dienst niet kan identificeren. U kunt bronnen opgeven, zoals afbeeldingen die vanuit JavaScript worden geladen. De AEM Forms-app downloadt deze bronnen ook voor de offline modus.

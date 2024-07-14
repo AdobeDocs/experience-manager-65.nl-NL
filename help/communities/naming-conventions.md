@@ -1,6 +1,6 @@
 ---
 title: Naamgevingsconventies in Java&trade; pakketnaam
-description: Leer meer over naamconventies en het gebruik van afbreekstreepjes in de Java&trade; pakketnaam.
+description: Leer over noemende overeenkomsten en het gebruik van koppeltekens in Java&trade; pakketnaam.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -24,8 +24,8 @@ Wanneer u een locatie voor een Java™-klasse maakt, moet de pakketnaam overeenk
 
 Het gebruik van afbreekstreepjes in de namen van opslagplaats-items wordt aanbevolen bij AEM ontwikkeling, maar afbreekstreepjes zijn in Java™-pakketnamen niet toegestaan.
 
-Het onderliggende CRX-platform moet een onderscheid kunnen maken tussen een werkelijk onderstrepingsteken `_ `en een afbreekstreepje `-`. In JCR moet het afbreekstreepje daarom worden vervangen door de Unicode-waarde (u002d) en worden genummerd door een onderstrepingsteken `_`.
+Het onderliggende CRX-platform moet onderscheid kunnen maken tussen een werkelijk onderstrepingsteken `_ ` en een afbreekstreepje `-` . In JCR moet het afbreekstreepje daarom worden vervangen door de Unicode-waarde (u002d) en worden genummerd door een onderstrepingsteken `_` .
 
-Bijvoorbeeld als het repository pad is **/apps/my-example/component/info/Info.java** moet de naam van het pakket `java package apps.my_002dexample.component.info;`
+Bijvoorbeeld, als de opbergweg **/apps/my-example/component/info/Info.java** is, zou de pakketnaam `java package apps.my_002dexample.component.info;` moeten zijn
 
-U ziet dat een onderstrepingsteken op dezelfde manier moet worden overgeslagen, zodat: `_` wordt `_005f`.
+U ziet dat een onderstrepingsteken op dezelfde manier moet worden genegeerd, zodat `_` `_005f` wordt.

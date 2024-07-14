@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[Adobe Livefyre is officieel het einde van de dienst vanaf 30 november 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
+>[ het Leven van de Adobe is officieel eind-van-dienst vanaf 30 November, 2021 ](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
 
 <!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 

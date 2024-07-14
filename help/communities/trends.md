@@ -21,39 +21,39 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De `Community Activity List` kunt u trending information about posts en views door leden en posten en weergaven van content toevoegen.
+Met de component `Community Activity List` kunt u trending-informatie over posts en weergaven door leden en posts en weergaven van inhoud toevoegen.
 
 In het document wordt beschreven:
 
-* De `Community Activity List` component aan een [community-site](/help/communities/overview.md#community-sites).
+* Toevoegend de `Community Activity List` component aan a [ communautaire plaats ](/help/communities/overview.md#community-sites).
 
-* De montages van de configuratie voor de `Community Activity List` component.
+* Configuration settings for the `Community Activity List` component.
 
 ### Vereiste {#requirement}
 
-Gegevens voor de `Community Activity List` is alleen beschikbaar als Adobe Analytics een licentie heeft en geconfigureerd voor de community-site.
+Gegevens voor de `Community Activity List` zijn alleen beschikbaar wanneer Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
 
-Zie [Analytische configuratie voor functies van Gemeenschappen](/help/communities/analytics.md).
+Zie [ Configuratie Analytics voor de Eigenschappen van Gemeenschappen ](/help/communities/analytics.md).
 
 ### Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
 
-Als u een `Community Activity List` naar een pagina in de modus Schrijver, zoek de component `Communities / Community Activity List` en sleep het naar de juiste plaats op een pagina.
+Als u een `Community Activity List` -component in de ontwerpmodus aan een pagina wilt toevoegen, zoekt u de component `Communities / Community Activity List` en sleept u deze naar de juiste plaats op een pagina.
 
-Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
-![gemeenschapsactiviteit](assets/community-activity.png)
+![ gemeenschap-activiteit ](assets/community-activity.png)
 
 ### Lijst met communautaire activiteiten configureren  {#configuring-community-activity-list}
 
-Selecteer de geplaatste `Community Activity List` en selecteert u vervolgens de `Configure` zodat u het dialoogvenster Bewerken kunt openen.
+Selecteer de geplaatste component `Community Activity List` en selecteer vervolgens het pictogram `Configure` zodat u het dialoogvenster Bewerken kunt openen.
 
-![vormen](assets/configure-new.png)
+![ vormen ](assets/configure-new.png)
 
-Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Onder het **lusje van Commentaren**, specificeer als en hoe de commentaren voor geupload dossiers verschijnen:
 
-![eigenschappen](assets/activity-list-properties.png)
+![ eigenschappen ](assets/activity-list-properties.png)
 
 * **Type**
 
@@ -64,30 +64,30 @@ Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade best
    * `Members`
    * `Content`
 
-  Standaard is `Members`.
+  De standaardwaarde is `Members` .
 
-* **Weergavetitel**
+* **titel van de Vertoning**
 
-  Een beschrijvende titel die boven de gegevens wordt weergegeven, zoals `Trending Content`.
+  Een beschrijvende titel die boven de gegevens wordt weergegeven, zoals `Trending Content` .
 Standaard is geen titel.
 
-* **Aantal weergeven**
+* **Aantal van de Vertoning**
 
   Het aantal aan te bieden items.
 De standaardwaarde is 10.
 
-* **Type activiteit**
+* **Type van Activiteit**
 
   Selecteer een van de volgende opties:
 
-   * `Views`(paginabezoeken)
-   * `Posts`(maken van UGC)
+   * `Views` (paginabezoeken)
+   * `Posts` (UGC maken)
    * `Follows`
    * `Likes`
 
   De standaardwaarde is Weergaven.
 
-* **Tijdsperiode**
+* **periode van de Tijd**
 
   Selecteer een van de volgende opties:
 
@@ -98,26 +98,26 @@ De standaardwaarde is 10.
    * `This year (since Jan 1)`
    * `Total`
 
-  Standaard is `Total`.
+  De standaardwaarde is `Total` .
 
-* **Contextpad**
+* **de weg van de Context**
 
   Hiermee kunt u de activiteit uitbreiden naar een subset van de site, zoals een specifieke blog.
 Standaard is dit de hele community-site.
 
-* **Samenvoeging aantal leden**
+* **samenvoeging van de telling van het Lid**
 
-  Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type` van `Posts` geeft nooit enige activiteit weer omdat er geen inhoud naar de hoofdpagina kan worden gepost. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
+  Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), geeft een `Activity Type` van `Posts` nooit enige activiteit weer omdat het niet mogelijk is inhoud naar de hoofdpagina te posten. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
 Standaard is ingeschakeld.
 
 ### Voorbeeldpagina met vier componenten {#example-page-with-components}
 
-**Topbezoekers** config: Type = Leden, Type Activiteit = Weergaven
+**Hoogste Bezoekers** config: Type = Leden, Type van Activiteit = Bekijken
 
-**Belangrijkste bijdragers** config: Type = Leden, Type Activiteit = Posten
+**Hoogste Medewerkers** config: Type = Leden, Type van Activiteit = Post
 
-**Bovenste inhoud** config: Type = Inhoud, Type activiteit = Weergaven,
+**Hoogste Inhoud** config: Type = Inhoud, Type van Activiteit = Bekijken,
 
-**Trend Content** config: Type = Inhoud, Type activiteit = Post
+**Trending Content** config: Type = Inhoud, Type van Activiteit = Post
 
-![componenten](assets/activity-list-components.png)
+![ componenten ](assets/activity-list-components.png)

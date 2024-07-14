@@ -1,5 +1,5 @@
 ---
-title: FormulierBridge integreren met aangepaste portal voor HTML5-formulieren
+title: Form Bridge integreren met aangepaste portal voor HTML5-formulieren
 description: U kunt de FormBridge-API gebruiken om de waarden van formuliervelden op de pagina HTML op te halen of in te stellen en het formulier te verzenden.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -16,25 +16,25 @@ ht-degree: 0%
 
 ---
 
-# FormulierBridge integreren met aangepaste portal voor HTML5-formulieren{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Form Bridge integreren met aangepaste portal voor HTML5-formulieren{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge is een HTML5-API voor formulierbridge waarmee u met een formulier kunt communiceren. Zie voor de naslaggids voor de FormBridge-API [Referentie voor FormBridge-API](/help/forms/using/form-bridge-apis.md).
+FormBridge is een HTML5-API voor formulierbridge waarmee u met een formulier kunt communiceren. Voor de verwijzing FormBridge API, zie [ FormBridge API verwijzing ](/help/forms/using/form-bridge-apis.md).
 
 U kunt de FormBridge-API gebruiken om de waarden van formuliervelden op de pagina HTML op te halen of in te stellen en het formulier te verzenden. U kunt bijvoorbeeld de API gebruiken om een wizards-achtige ervaring op te bouwen.
 
-Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren met een formulier en dit in te sluiten in de HTML-pagina. U kunt de volgende stappen gebruiken om de waarde van een veld in te stellen met de API van Form Bridge.
+Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren met een formulier en dit in te sluiten in de HTML-pagina. U kunt de volgende stappen gebruiken om de waarde van een veld in te stellen met Form Bridge API.
 
 ## HTML5-formulieren integreren in een webpagina {#integrating-html-forms-to-a-web-page}
 
-1. **Een profiel kiezen of een profiel maken**
+1. **kies een Profiel of creeer een Profiel**
 
-   1. In de interface CRX DE, navigeer aan: `https://'[server]:[port]'/crx/de`.
+   1. Navigeer in de CRX DE-interface naar: `https://'[server]:[port]'/crx/de` .
    1. Meld u aan met beheerdersreferenties.
    1. Maak een profiel of kies een bestaand profiel.
 
-      Ga voor meer informatie over het maken van een profiel naar [Een profiel maken](/help/forms/using/custom-profile.md).
+      Voor details op hoe te om een profiel tot stand te brengen, zie [ Creërend een Profiel ](/help/forms/using/custom-profile.md).
 
-1. **Het profiel HTML wijzigen**
+1. **wijzig het Profiel van de HTML**
 
    Neem XFA-runtime, XFA-bibliotheek en XFA-formulierfragment op in de profielrenderer, ontwerp uw webpagina en plaats het formulier in de webpagina.
 
@@ -74,28 +74,28 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
 
    >[!NOTE]
    >
-   >De **lijn 9** bevat aanvullende JSP-verwijzing voor CSS-stijlen en JavaScript-bestanden om de pagina te ontwerpen.
+   >**lijn 9**, bevat extra verwijzing JSP voor CSS stijlen en de dossiers van JavaScript om de pagina te ontwerpen.
    >
    >
-   >De &lt;div id=&quot;rightdiv&quot;> tag op **lijn 18** Bevat het HTML-fragment van het XFA-formulier.
+   >De &lt;div id= &quot;rightdiv&quot;> markering op **lijn 18** bevat het fragment van HTML van de vorm XFA.
    >
    >
-   De pagina wordt opgemaakt in twee containers: **left** en **right**. De juiste container heeft het formulier. De linkercontainer heeft twee invoervelden en een deel van de externe HTML-pagina.
+   De pagina wordt gestileerd in twee containers: **verlaten** en **juist**. De juiste container heeft het formulier. De linkercontainer heeft twee invoervelden en een deel van de externe HTML-pagina.
    >
    >
    De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
 
-   ![portaal](assets/portal.jpg)
+   ![ portaal ](assets/portal.jpg)
 
-   De linkerzijde maakt deel uit van de **HTML-pagina**. De rechterkant van de velden is de **xfa-formulier**.
+   De linkerkant is een deel van de **pagina van de HTML**. De juiste kant die de gebieden bevat is de **xfa vorm**.
 
-1. **De formuliervelden openen vanaf de pagina**
+1. **Toegang hebbend tot de vormgebieden van de pagina**
 
    Hier volgt een voorbeeldscript dat u kunt toevoegen om waarden in een formulierveld in te stellen.
 
-   Als u bijvoorbeeld de opdracht **EmployeeName** de waarden in de velden gebruiken **Voornaam** en **Achternaam**, de **window.formBridge.setFieldValue** functie.
+   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **** en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
 
-   Op dezelfde manier kunt u de waarde lezen door **window.formBridge.getFieldValue** API.
+   Op dezelfde manier kunt u de waarde lezen door **window.formBridge.getFieldValue** API te roepen.
 
    ```javascript
    $(function() {

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Met Adobe Target geïntegreerd met AEM kunt u ervaringen creëren die zijn aangepast voor een doelgroep. Met Adobe Target kunt u A/B-tests maken, de reactie van de gebruiker meten en aangepaste webinhoud voor bepaalde gebruikers genereren. U kunt Adobe Target integreren met AEM Forms om afbeeldingscomponenten van adaptieve formulieren en interactieve communicatie als doel in te stellen.
 
-Adobe Target configureren in AEM voor gebruik met adaptieve formulieren en interactieve communicatie, zie [Een doelconfiguratie maken in AEM](/help/sites-administering/target.md) en [Een framework toevoegen](/help/sites-administering/target.md).
+Vorm Adobe Target in AEM om het met adaptieve vormen en interactieve mededelingen te gebruiken, zie [ Creërend een Configuratie van het Doel in AEM ](/help/sites-administering/target.md) en [ voeg een Kader ](/help/sites-administering/target.md) toe.
 
 >[!NOTE]
 >
@@ -29,26 +29,26 @@ Adobe Target configureren in AEM voor gebruik met adaptieve formulieren en inter
 
 ## Een doelactiviteit maken {#creating-a-target-activity}
 
-1. Selecteren **Adobe Experience Manager > Persoonlijkheid > Activiteiten**.
+1. Selecteer **Adobe Experience Manager > Personalization > Activiteiten**.
 
    `https://<hostname>:<port>/libs/cq/personalization/touch-ui/content/v2/activities.html`
 
-1. Selecteer op de pagina Activiteiten de optie **Maken > Merk maken**.
+1. In de pagina van Activiteiten, creeer de uitgezochte **> merk** leidt.
 1. U wordt gevraagd een sjabloon te kiezen en eigenschappen in te voeren.
 
-   Selecteer een sjabloon en selecteer **Volgende.** Voer in de sectie Eigenschappen de titel van uw merk in en selecteer **Maken.**
+   Selecteer een malplaatje, selecteer **daarna.** ga de titel van uw merk in de sectie van Eigenschappen in, en selecteer **creeer.**
 Uw merk wordt nu vermeld op de pagina Activiteiten.
 
 1. Selecteer uw merk op de pagina Activiteiten.
-1. Selecteer in Hoofdgebied van uw merk de optie **Maken** > **Activiteit maken**.
+1. In HoofdGebied van uw merk, creeert de uitgezochte **** > **Activiteit**.
 
    Wanneer u een activiteit creeert, specificeert u zijn details, doel, en montages.
 
-   De sectie Details bevat de naam, de doelengine en het doel. Wanneer u Adobe Target selecteert als de doelengine, wordt de optie voor de configuratie van de doelcloud ingeschakeld. Kies uw doelwolkenconfiguratie, kies Type Activiteit, verstrek het doel van de activiteit, en selecteer **Volgende**. De interactieve Communicatie steunt slechts Ervaring richtend het type van Activiteit.
+   De sectie Details bevat de naam, de doelengine en het doel. Wanneer u Adobe Target selecteert als de doelengine, wordt de optie voor de configuratie van de doelcloud ingeschakeld. Kies uw de wolkenconfiguratie van het Doel, kies het type van Activiteit, verstrek het doel van de activiteit, en selecteer **daarna**. De interactieve Communicatie steunt slechts Ervaring richtend het type van Activiteit.
 
-   In de sectie Doel kunt u gebruikerservaring toevoegen en deze een naam geven. Klikken **Ervaring toevoegen** de **Publiek selecteren** en **Naamervaring** opties. Selecteren **Publiek selecteren** om een lijst met doelgroepen en hun bron te zien. Selecteer een publiek in de lijst Audience Name. Selecteren **Ervaring toevoegen** om de ervaring een naam te geven en selecteer **Volgende**.
+   In de sectie Doel kunt u gebruikerservaring toevoegen en deze een naam geven. Klik **toevoegen Ervaring** om **Uitgezochte Publiek** en **Ervaring van de Naam** opties toe te laten. Selecteer **Uitgezochte Publiek** om een lijst van publiek en hun bron te zien. Selecteer een publiek in de lijst Audience Name. Selecteer **Ervaring** toevoegen om de ervaring te noemen, en **daarna** te selecteren.
 
-   In het gedeelte Doelen en instellingen kunt u uw activiteiten plannen en er een prioriteit van maken. Plaats de begindatum, einddatum, en prioriteit van de activiteit, doel metrisch, extra metrisch en uitgezocht **Opslaan**.
+   In het gedeelte Doelen en instellingen kunt u uw activiteiten plannen en er een prioriteit van maken. Plaats de begindatum, einddatum, en prioriteit van de activiteit, doel metrisch, extra metrisch en uitgezocht **sparen**.
 
    De activiteit wordt nu vermeld in je merkpagina.
 
@@ -58,7 +58,7 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
 
 1. Als u doel wilt inschakelen, bewerkt u het .jsp-bestand zodat clientbibliotheken worden opgenomen die in de sjabloon voor aangepaste formulieren worden gebruikt.
 
-   Bij de implementatie buiten de box klikt u bijvoorbeeld op **Gereedschappen** >  **CRXDE Lite**.
+   Bijvoorbeeld, in de uit-van-de-doosimplementatie, klik **Hulpmiddelen** > **CRXDE Lite**.
 
    Typ /libs/fd/af/components/page/base/head.jsp in de adresbalk van CRXDE Lite om het bestand head.jsp te bewerken.
 
@@ -72,12 +72,12 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
 
 1. Als u het doelframework voor adaptieve formulieren wilt inschakelen, navigeert u naar het formulier of de interactieve communicatie en opent u het in de bewerkingsmodus.
 
-   Als u een formulier of interactieve communicatie wilt openen in de bewerkingsmodus, selecteert u **Selecteren** en selecteer vervolgens **Openen**.
+   Om een vorm of interactieve mededeling op uit te geven wijze te openen, uitgezocht **** en dan te selecteren **Open**.
 
-   U kunt ook vier knoppen weergeven wanneer u de muisaanwijzer op het formulier of het interactieve communicatiepictogram plaatst zonder dat u dit selecteert. U kunt de **Bewerken** om het formulier te openen in de bewerkingsmodus.
+   U kunt ook vier knoppen weergeven wanneer u de muisaanwijzer op het formulier of het interactieve communicatiepictogram plaatst zonder dat u dit selecteert. U kunt **selecteren geeft** knoop uit die verschijnt, om de vorm op uit te geven wijze te openen.
 
-1. Selecteer op de werkbalk Pagina de optie **Pagina-informatie** ![thema-opties](assets/theme-options.png) > **Eigenschappen openen**.
-1. Kies op het tabblad Algemeen een configuratie voor de **Adobe Target** veld. Selecteren **Opslaan en sluiten**.
+1. In de paginaboolbar, uitgezochte **![ thema-opties ](assets/theme-options.png) >** Open Eigenschappen **.**
+1. Op het Algemene lusje, kies een configuratie voor het **Adobe Target** gebied. Selecteer **sparen &amp; Sluiten**.
 
 ## Gecreeerde activiteit toepassen op een adaptieve formulierafbeelding of een interactieve communicatieafbeelding {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 
@@ -89,12 +89,12 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
    >
    >AEM Forms biedt alleen ondersteuning voor afbeeldingscomponenten. Zorg ervoor dat het deelvenster dat als host fungeert voor de afbeeldingscomponent geen andere component bevat en dat het aantal kolommen voor het deelvenster is ingesteld op 1.
 
-1. Overschakelen van **Bewerken** tot **Targeting** -modus. De optie voor het schakelen tussen modi bevindt zich in de rechterbovenhoek.
-1. Selecteer een **BRAND**, selecteert u **ACTIVITEIT** en selecteert u **Doelstelling starten**. De **Soorten publiek** wordt rechts van de editor weergegeven.
+1. De schakelaar van **geeft** **het richten** wijze uit. De optie voor het schakelen tussen modi bevindt zich in de rechterbovenhoek.
+1. Selecteer a **BRAND**, selecteer **ACTIVITEIT**, en selecteer **Begin richtend**. Het **publiek** menu verschijnt op rechterkant van de redacteur.
 
-   ![gericht menu](assets/targeting-menu.png)
+   ![ richten-menu ](assets/targeting-menu.png)
 
-1. Selecteer een publiek in het menu **Soorten publiek** en selecteert u de afbeelding die u als doel wilt instellen. Er wordt een menu weergegeven. Selecteer in het menu **Doel**. Selecteer de afbeelding en selecteer **Configureren**. Selecteer in het eigenschappenvenster de afbeelding die u voor het geselecteerde publiek wilt weergeven. Herhaal de stap voor alle doelgroepen. De doelgerichte ervaring wordt ingeschakeld voor de afbeelding in de interactieve communicatie of het adaptieve formulier.
+1. Selecteer een publiek van het **menu van het publiek** en selecteer het beeld aan doel. Er wordt een menu weergegeven. In het menu, uitgezochte **Doel**. Selecteer het beeld en selecteer **vormen**. Selecteer in het eigenschappenvenster de afbeelding die u voor het geselecteerde publiek wilt weergeven. Herhaal de stap voor alle doelgroepen. De doelgerichte ervaring wordt ingeschakeld voor de afbeelding in de interactieve communicatie of het adaptieve formulier.
 
 ## Controleren of de gemaakte activiteit synchroon is met de doelserver {#check-if-the-created-activity-syncs-with-the-target-server}
 
@@ -106,8 +106,8 @@ Controleer of de status van de activiteit is gesynchroniseerd.
 
 Doelgedrag valideren:
 
-* Gebruiken met `wcmmode preview` in de modus Schrijver
-* Gebruiken met `wcmmode preview` en `wcmmode disabled` in de publicatiemodus
+* Doelen met `wcmmode preview` gebruiken in de modus Schrijver
+* Doelen met `wcmmode preview` en `wcmmode disabled` gebruiken in de publicatiemodus
 
 ## Monitorgericht voor de afbeeldingscomponent {#monitor-targeting-for-the-image-component}
 

@@ -1,5 +1,5 @@
 ---
-title: Form Bridge-API's voor HTML5-formulieren
+title: Bridge-API's van formulier voor HTML5-formulieren
 description: Externe toepassingen maken via de FormBridge-API verbinding met het XFA Mobile-formulier. De API verzendt een FormBridgeInitialized-gebeurtenis in het bovenliggende venster.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ---
 
-# Form Bridge-API&#39;s voor HTML5-formulieren {#form-bridge-apis-for-html-forms}
+# Bridge-API&#39;s van formulier voor HTML5-formulieren {#form-bridge-apis-for-html-forms}
 
-Met de API&#39;s van Form Bridge kunt u een communicatiekanaal openen tussen een op XFA gebaseerde HTML5-formulieren en uw toepassingen. De API&#39;s van Form Bridge bevatten een **verbinden** API om de verbinding te maken.
+Met de API&#39;s van Form Bridge kunt u een communicatiekanaal openen tussen een op XFA gebaseerde HTML 5-formulieren en uw toepassingen. De vorm Bridge APIs verstrekt a **verbindt** API om de verbinding tot stand te brengen.
 
-De **verbinden** API accepteert een handler als argument. Nadat een verbinding tot stand is gebracht tussen een op XFA gebaseerd HTML5-formulier en een Form Bridge, wordt de greep aangeroepen.
+**verbind** API keurt een manager als argument goed. Nadat een verbinding tot stand is gebracht tussen op XFA gebaseerde HTML5-vorm en Form Bridge, wordt de greep aangeroepen.
 
 U kunt de volgende voorbeeldcode gebruiken om de verbinding tot stand te brengen.
 
@@ -38,63 +38,63 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Zorg ervoor dat u een verbinding maakt voordat u het bestand formRuntime.jsp toevoegt.
 
-## Beschikbare API voor Form Bridge  {#available-form-bridge-api-nbsp}
+## Beschikbaar formulier Bridge API  {#available-form-bridge-api-nbsp}
 
-**getBridgeVersion()**
+**getBridgeVersion ()**
 
 Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
-* **Invoer**: Geen
-* **Uitvoer**: Versienummer van de scriptbibliotheek
-* **Fouten**: Geen
+* **Input**: niets
+* **Output**: Het aantal van de Versie van de bibliotheek Scripting
+* **Fouten**: niets
 
-**isConnected()** Hiermee wordt gecontroleerd of de formulierstatus is geïnitialiseerd
+**isConnected ()** controleert als de Staat van de Vorm is geïnitialiseerd
 
-* **Invoer**: Geen
-* **Uitvoer**: **Waar** als de XFA-formulierstatus is geïnitialiseerd
+* **Input**: niets
+* **Output**: **Waar** als de XFA Staat van de Vorm is geïnitialiseerd
 
-* **Fouten**: Geen
+* **Fouten**: niets
 
-**connect(handler, context)** Maakt een verbinding met FormBridge en voert de functie uit nadat de verbinding is gemaakt en de formulierstatus is geïnitialiseerd
+**verbindt (manager, context)** maakt een verbinding aan FormBridge en voert de functie uit nadat de verbinding wordt gemaakt en de Staat van de Vorm is geïnitialiseerd
 
-* **Invoer**:
+* **Input**:
 
-   * **handler**: Functie die moet worden uitgevoerd nadat Form Bridge is verbonden
-   * **context**: Het object waarop de context (deze) van de component *handler* functie worden ingesteld.
+   * **manager**: Functie om uit te voeren nadat de Vorm Bridge wordt aangesloten
+   * **context**: Het voorwerp waaraan de context (dit) van de *manager* functie wordt geplaatst.
 
-* **Uitvoer**: Geen
-* **Fout**: Geen
+* **Output**: niets
+* **Fout**: niets
 
-**getDataXML(opties)** Hiermee worden de huidige formuliergegevens in XML-indeling geretourneerd
+**getDataXML (opties)** keert de huidige vormgegevens in het Formaat van XML terug
 
-* **Invoer:**
+* **Input:**
 
-   * **opties:** JavaScript-object met de volgende eigenschappen:
+   * **opties:** Voorwerp van JavaScript die volgende eigenschappen bevatten:
 
-      * **Fout**: functie Error Handler
-      * **succes**: Handlerfunctie voor succesmeldingen. Deze functie wordt doorgegeven aan een object dat XML bevat in *data* eigenschap.
-      * **context**: Het object waarop de context (deze) van de component *succes* function is set
-      * **validationChecker**: Functie die moet worden aangeroepen om validatiefouten te controleren die van de server zijn ontvangen. Validatiefunctie wordt doorgegeven aan een array met fouttekenreeksen.
-      * **formState**: De JSON-status van het XFA-formulier waarvoor gegevens-XML moet worden geretourneerd. Als deze optie niet is opgegeven, worden de gegevens-XML geretourneerd voor het momenteel gegenereerde formulier.
+      * **Fout**: De functie van de manager van de fout
+      * **succes**: De handlerfunctie van het Succes. Deze functie wordt overgegaan een voorwerp dat XML in *gegevens* bezit bevat.
+      * **context**: Het voorwerp waaraan de context (dit) van de *succes* functie wordt geplaatst
+      * **validationChecker**: Functie aan vraag om bevestigingsfouten te controleren die van de server worden ontvangen. Validatiefunctie wordt doorgegeven aan een array met fouttekenreeksen.
+      * **formState**: De JSON staat van de Vorm XFA waarvoor gegevens XML moet zijn teruggekeerd. Als deze optie niet is opgegeven, worden de gegevens-XML geretourneerd voor het momenteel gegenereerde formulier.
 
-* **Uitvoer:** Geen
-* **Fout:** Geen
+* **Output:** niets
+* **Fout:** niets
 
-**registerConfig(configName, config)** Registreert gebruikers-/poortspecifieke configuraties met FormBridge. Deze configuraties overschrijven de standaardconfiguraties. De gesteunde configuraties worden gespecificeerd in de config sectie.
+**registerConfig (configName, config)** registreert gebruiker/portaal specifieke configuraties met FormBridge. Deze configuraties overschrijven de standaardconfiguraties. De gesteunde configuraties worden gespecificeerd in de config sectie.
 
-* **Invoer:**
+* **Input:**
 
-   * **configName:** Naam van de configuratie die moet worden overschreven
+   * **configName:** Naam van de configuratie om met voeten te treden
 
-      * **widgetConfig:** Hiermee kan de gebruiker de standaardwidgets in het formulier overschrijven met aangepaste widgets. De configuratie wordt als volgt overschreven:
+      * **widgetConfig:** staat de gebruiker toe om het gebrek widgets in de vorm met douanewidgets met voeten te treden. De configuratie wordt als volgt overschreven:
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig (&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **pagingConfig:** Hiermee kan de gebruiker het standaardgedrag negeren waarbij alleen de eerste pagina wordt weergegeven. De configuratie wordt als volgt overschreven:
+      * **pagingConfig:** staat de gebruiker toe om het standaardgedrag met voeten te treden om slechts de eerste pagina terug te geven. De configuratie wordt als volgt overschreven:
 
-        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, krimpPageDisabled: &lt;true false=&quot;&quot;> }).*
+        *window.formBridge.registerConfig (&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
-      * **LoggingConfig:** Staat de gebruiker toe om het niveau van het registreren met voeten te treden, het registreren voor een categorie onbruikbaar te maken, of om de logboekconsole te tonen of naar server te verzenden. De configuratie kan als volgt worden overschreven:
+      * **LoggingConfig:** staat de gebruiker toe om het niveau van het registreren met voeten te treden, het registreren voor een categorie onbruikbaar te maken, of om de logboekconsole te tonen of naar server te verzenden. De configuratie kan als volgt worden overschreven:
 
      ```javascript
      formBridge.registerConfig{
@@ -108,7 +108,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
        }
      ```
 
-      * **SubmitServiceProxyConfig:** Gebruikers toestaan verzendingen te registreren en proxyservices te registreren.
+      * **SubmitServiceProxyConfig:** staat de gebruikers toe om voorlegging en de logger de volmachtsdiensten te registreren.
 
         ```javascript
         window.formBridge.registerConfig("submitServiceProxyConfig",
@@ -121,77 +121,77 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
    * **config:** Waarde van de configuratie
 
-* **Uitvoer:** Object met oorspronkelijke waarde van de configuratie in *data* eigenschap.
+* **Output:** Voorwerp dat originele waarde van de configuratie in *gegevens* bezit bevat.
 
-* **Fout:** Geen
+* **Fout:** niets
 
-**hideFields(fieldArray)** Hiermee worden de velden verborgen waarvan de SOM-expressies worden opgegeven in de fieldArray. Hiermee wordt de eigenschap presence van de opgegeven velden ingesteld op onzichtbaar
+**hideFields (fieldArray)** verbergt de gebieden waarvan de SOM uitdrukkingen in fieldArray worden verstrekt. Hiermee wordt de eigenschap presence van de opgegeven velden ingesteld op onzichtbaar
 
-* **Invoer:**
+* **Input:**
 
-   * **fieldArray:** Array van SOM-expressies voor de te verbergen velden
+   * **fieldArray:** Serie van Sommige uitdrukkingen voor de te verbergen gebieden
 
-* **Uitvoer:** Geen
-* **Fout:** Geen
+* **Output:** niets
+* **Fout:** niets
 
-**showFields(fieldArray)** Hiermee worden de velden weergegeven waarvan de SOM-expressies worden opgegeven in de fieldArray. Hiermee wordt de aanwezigheidseigenschap van de opgegeven velden ingesteld op visible
+**showFields (fieldArray)** toont de gebieden waarvan de SOM uitdrukkingen in fieldArray worden verstrekt. Hiermee wordt de aanwezigheidseigenschap van de opgegeven velden ingesteld op visible
 
-* **Invoer:**
+* **Input:**
 
-   * **fieldArray:** Array van SOM-expressies voor de velden die moeten worden weergegeven
+   * **fieldArray:** Serie van Sommige uitdrukkingen voor de te tonen gebieden
 
-* **Uitvoer:** Geen
-* **Fout:** Geen
+* **Output:** niets
+* **Fout:** niets
 
-**hideSubmitButtons()** Hiermee verbergt u alle verzendknoppen in het formulier
+**hideSubmitButtons ()** verbergt alle voorlegt knopen in de vorm
 
-* **Invoer**: Geen
-* **Uitvoer**: Geen
-* **Fout**: Hiermee wordt een uitzondering gegenereerd als de formulierstatus niet is geïnitialiseerd
+* **Input**: niets
+* **Output**: niets
+* **Fout**: Throws uitzondering als de Staat van de Vorm niet wordt geïnitialiseerd
 
-**getFormState()** Hiermee wordt de JSON geretourneerd die de formulierstatus vertegenwoordigt
+**getFormState ()** keert JSON terug die de Staat van de Vorm vertegenwoordigt
 
-* **Invoer:** Geen
-* **Uitvoer:** Object met JSON dat de huidige formulierstatus in vertegenwoordigt *data* eigenschap.
+* **Input:** niets
+* **Output:** Voorwerp dat JSON bevat die de huidige Staat van de Vorm in *gegevens* bezit vertegenwoordigen.
 
-* **Fout:** Geen
+* **Fout:** niets
 
-**restoreFormState(options)** Hiermee wordt de formulierstatus hersteld vanaf de opgegeven JSON-status in het object options. De status wordt toegepast en succes- of fouthandlers worden aangeroepen nadat de bewerking is voltooid
+**restoreFormState (opties)** herstelt de Staat van de Vorm van de verstrekte JSON staat in het optievoorwerp. De status wordt toegepast en succes- of fouthandlers worden aangeroepen nadat de bewerking is voltooid
 
-* **Invoer:**
+* **Input:**
 
-   * **Opties:** JavaScript-object met de volgende eigenschappen:
+   * **Opties:** Voorwerp van JavaScript dat volgende eigenschappen bevat:
 
-      * **Fout**: functie Error Handler
-      * **succes**: Handlerfunctie Succes
-      * **context**: Het object waarop de context (deze) van de component *succes* function are set
-      * **formState**: JSON-status van het formulier. Het formulier wordt teruggezet naar de JSON-status.
+      * **Fout**: De functie van de manager van de fout
+      * **succes**: De handlerfunctie van het Succes
+      * **context**: Het voorwerp waaraan de context (dit) van de *succes* functie wordt geplaatst
+      * **formState**: De staat JSON van de vorm. Het formulier wordt teruggezet naar de JSON-status.
 
-* **Uitvoer:** Geen
-* **Fout:** Geen
+* **Output:** niets
+* **Fout:** niets
 
-**setFocus (som)** Hiermee wordt de focus ingesteld op het veld dat is opgegeven in de SOM-expressie
+**setFocus (sommige)** plaatst nadruk op het gebied dat in de Som uitdrukking wordt gespecificeerd
 
-* **Invoer:** Enkele expressie van het veld waarop de focus moet worden ingesteld
-* **Uitvoer:** Geen
-* **Fout:** Genereert een uitzondering als er een onjuiste SOM-expressie is
+* **Input:** Som uitdrukking van het gebied waarop om nadruk te plaatsen
+* **Output:** niets
+* **Fout:** gooit een uitzondering als er een onjuiste uitdrukking van het Som is
 
-**setFieldValue (som, value)** Hiermee wordt de waarde ingesteld van de velden voor de opgegeven SOM-expressies
+**setFieldValue (som, waarde)** plaatst de waarde van de gebieden voor de bepaalde uitdrukkingen van de Vorm
 
-* **Invoer:**
+* **Input:**
 
-   * **som:** Array met enkele expressies van het veld. The som expression to set value of the fields.
-   * **waarde:** Array die waarden bevat die overeenkomen met SOM-expressies die zijn opgegeven in een **som** array. Als het gegevenstype van de waarde niet hetzelfde is als het fieldType, wordt de waarde niet gewijzigd.
+   * **som:** Serie die enkele uitdrukkingen van het gebied bevat. The som expression to set value of the fields.
+   * **waarde:** Serie die waarden bevatten die aan SOM uitdrukkingen beantwoorden die in a **worden verstrekt sommige** serie. Als het gegevenstype van de waarde niet hetzelfde is als het fieldType, wordt de waarde niet gewijzigd.
 
-* **Uitvoer:** Geen
-* **Fout:** Genereert een uitzondering als er een onjuiste SOM-expressie is
+* **Output:** niets
+* **Fout:** duikt een Uitzondering als er een onjuiste uitdrukking van het SOM is
 
-**getFieldValue (som)** Hiermee wordt de waarde van de velden voor de opgegeven SOM-expressies geretourneerd
+**getFieldValue (som)** keert de waarde van de gebieden voor de bepaalde uitdrukkingen van de Vorm terug
 
-* **Invoer:** Array met enkele expressies van velden waarvan de waarde moet worden opgehaald
-* **Uitvoer:** Object dat het resultaat bevat als Array in **data** eigenschap.
+* **Input:** Serie die enkele uitdrukkingen van de gebieden bevat waarvan waarde moet worden teruggewonnen
+* **Output:** Voorwerp dat het resultaat als Serie in **gegevens** bezit bevat.
 
-* **Fout:** Geen
+* **Fout:** niets
 
 ### Voorbeeld van getFieldValue()-API {#example-of-nbsp-getfieldvalue-api}
 
@@ -206,29 +206,29 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, property)** Hiermee wordt de lijst met waarden opgehaald voor de opgegeven eigenschap van de velden die zijn opgegeven in SOM-expressies
+**getFieldProperties (som, bezit)** wint de lijst van waarden voor het bepaalde bezit van de gebieden terug die in Som uitdrukkingen worden gespecificeerd
 
-* **Invoer:**
+* **Input:**
 
-   * **som:** Array met SOM-expressies voor de velden
-   * **eigenschap**: Naam van de eigenschap waarvan de waarde is vereist
+   * **som:** Serie die enkele uitdrukkingen voor de gebieden bevat
+   * **bezit**: Naam van het bezit de waarvan waarde wordt vereist
 
-* **Uitvoer:** Object dat het resultaat bevat als Array in *data* eigenschap
+* **Output:** Voorwerp dat het resultaat als Serie in *gegevens* bezit bevat
 
-* **Fout:** Geen
+* **Fout:** niets
 
-**setFieldProperties(som, property, values)** Hiermee wordt de waarde van de opgegeven eigenschap ingesteld voor alle velden die in de SOM-expressies zijn opgegeven
+**setFieldProperties (som, bezit, waarden)** plaatst de waarde van het bepaalde bezit voor alle gebieden die in de Vormen uitdrukkingen worden gespecificeerd
 
-* **Invoer:**
+* **Input:**
 
-   * **som:** Array met enkele expressies van velden waarvan de waarde moet worden ingesteld
-   * **eigenschap**: Eigenschap waarvan de waarde moet worden ingesteld
-   * **waarde:** Array met waarden van de opgegeven eigenschap voor velden die zijn opgegeven in SOM-expressies
+   * **som:** Serie die enkele uitdrukkingen van de gebieden bevat waarvan waarde moet worden geplaatst
+   * **bezit**: Bezit de waarvan waarde moet worden geplaatst
+   * **waarde:** Serie die waarden van het bepaalde bezit voor gebieden bevat die in de uitdrukkingen van Som worden gespecificeerd
 
-* **Uitvoer:** Geen
-* **Fout:** Geen
+* **Output:** niets
+* **Fout:** niets
 
-## Voorbeeld van gebruik van Form Bridge-API {#sample-usage-of-form-bridge-api}
+## Voorbeeld van gebruik van formulier-Bridge API {#sample-usage-of-form-bridge-api}
 
 ```JavaScript
 // Example 1: FormBridge.restoreFormState

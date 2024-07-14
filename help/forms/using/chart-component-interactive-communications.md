@@ -26,32 +26,32 @@ Terwijl het creëren van een Interactieve Communicatie, kunt u grafieken toevoeg
 
 Voer de volgende stappen uit om een grafiek in een Interactieve Mededeling toe te voegen en te vormen:
 
-1. Selecteren **Componenten** van de assistent van de interactieve communicatie.
-1. Sleep de **Diagram** aan een van de volgende componenten:
+1. Selecteer **Componenten** van het hulpje van de Interactieve Communicatie.
+1. Sleep en laat vallen de **component van de Grafiek** aan één van de volgende componenten:
 
    * Kanaal afdrukken: doelgebied of afbeeldingsveld
    * Webkanaal: Deelvenster of Doelgebied
 
-1. Selecteer de grafiekcomponent in de Interactieve Communicatie redacteur en selecteer **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)) van de werkbalk Component.
+1. Selecteer de grafiekcomponent in de Interactieve Communicatie redacteur en selecteer **[!UICONTROL Configure (]** ![ configure_icon ](assets/configure_icon.png)) van de toolbar van de Component.
 
    De grafiekeigenschappen worden in het linkerdeelvenster weergegeven.
 
-   ![Basiseigenschappen van een lijntekstdiagram in een afdrukkanaal](assets/chart_properties_print_new.png)
+   ![ Basis eigenschappen van een grafiek van het lijntype in drukkanaal ](assets/chart_properties_print_new.png)
 
    Basiseigenschappen van een lijntekstdiagram in een afdrukkanaal
 
-   ![Basiseigenschappen van een lijntekstdiagram in een webkanaal](assets/chart_properties_web_new.png)
+   ![ Basis eigenschappen van een grafiek van het lijntype in Webkanaal ](assets/chart_properties_web_new.png)
 
    Basiseigenschappen van een lijntekstdiagram in een webkanaal
 
-1. Vorm [grafiekeigenschappen](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) op basis van het kanaaltype.
-1. (Alleen kanaal afdrukken) In het dialoogvenster **[!UICONTROL Agent Settings]**, specificeer als het voor de agent verplicht is om deze grafiek te gebruiken. Indien i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** de optie is niet geselecteerd, kan de agent het oogpictogram voor de grafiek in het **[!UICONTROL Content]** lusje van Agent UI om de grafiek te tonen of te verbergen.
+1. Vorm de [ grafiekeigenschappen ](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) die op het kanaaltype worden gebaseerd.
+1. (Alleen kanaal afdrukken) Geef in de **[!UICONTROL Agent Settings]** op of de agent dit diagram moet gebruiken. Als i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** optie niet wordt geselecteerd, kan de agent het oogpictogram voor de grafiek in het **[!UICONTROL Content]** lusje van de UI van de Agent selecteren om de grafiek te tonen of te verbergen.
 
-   ![chart_agentproperties](assets/chart_agentproperties.png)
+   ![ chart_agentproperties ](assets/chart_agentproperties.png)
 
-1. Selecteren ![done_icon](assets/done_icon.png) om de eigenschappen van het diagram op te slaan.
+1. Selecteer ![ done_icon ](assets/done_icon.png) om de grafiekeigenschappen te bewaren.
 
-   Selecteren **[!UICONTROL Preview]** om de weergave en de gegevens weer te geven die aan het diagram zijn gekoppeld. Selecteren **[!UICONTROL Edit]** om de eigenschappen van de grafiek aan te passen.
+   Selecteer **[!UICONTROL Preview]** om de weergave en de gegevens weer te geven die aan het diagram zijn gekoppeld. Selecteer **[!UICONTROL Edit]** om de eigenschappen van het diagram opnieuw te configureren.
 
 ## Eigenschappen van diagram configureren {#configure-chart-properties}
 
@@ -151,29 +151,29 @@ Configureer de volgende eigenschappen tijdens het maken van grafieken voor afdru
   </tr>
   <tr>
    <td>Knopinfo</td>
-   <td><p>Indeling waarin de knopinfo wordt weergegeven op de muis boven een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is ${x}(${y}). Afhankelijk van het diagramtype, wanneer u de muis op een punt, een bar, of een segment in de grafiek richt, de variabelen ${x}en ${y} dynamisch vervangen door de corresponderende waarden op de X- en Y-as en worden weergegeven in de knopinfo.</p> <p>Als u knopinfo wilt uitschakelen, laat u de knop <span class="uicontrol">Knopinfo</code> veld leeg. Deze optie is niet van toepassing op lijnen en vlakgrafieken. Zie bijvoorbeeld <a href="#chartoutputprintweb">Voorbeeld 1: Grafiekuitvoer in gedrukte vorm en op het web</a>.</p> </td>
+   <td><p>Indeling waarin de knopinfo wordt weergegeven op de muis boven een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is $ {x} ($ {y}). Afhankelijk van het grafiektype, wanneer u de muis op een punt, bar, of plak in de grafiek richt, worden variabelen $ {x} en $ {y} dynamisch vervangen met de overeenkomstige waarden op x-as en y-as en getoond in tooltip.</p> <p>Om hulpmiddeluiteinde onbruikbaar te maken, verlaat <span class="uicontrol"> Tooltip</code> veld leeg. Deze optie is niet van toepassing op lijnen en vlakgrafieken. Bijvoorbeeld, zie <a href="#chartoutputprintweb"> Voorbeeld 1: De output van de grafiek in druk en Web </a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
    <td>Diagramspecifieke configuraties</td>
    <td><p>Naast gemeenschappelijke configuraties, zijn de volgende grafiek-specifieke configuratie beschikbaar:</p>
     <ul>
-     <li><strong>Legenda tonen: </strong>Hiermee geeft u een legenda weer voor de taart of het donutdiagram als dit is ingeschakeld.</li>
-     <li><strong>Legenda: </strong>Geeft de positie van de legenda ten opzichte van het diagram aan. De beschikbare opties zijn Rechts, Links, Boven en Onder. Gebruik de rechterlegenda in het afdrukkanaal.</li>
-     <li><strong>Binnenstraal</strong>: Beschikbaar voor Donut-grafieken om de straal (in pixels) van de binnencirkel in het diagram op te geven.</li>
-     <li><strong>Lijnkleur</strong>: Beschikbaar voor diagrammen voor Lijn, Lijn en Punt en Gebied om de kleur voor de lijn in de grafiek op te geven.</li>
-     <li><strong>Puntkleur</strong>: Beschikbaar voor de grafieken van het Punt en van de Lijn en van het Punt om de kleur voor de punten in de grafiek te specificeren.<br /> </li>
-     <li><strong>Gebiedskleur</strong>: Beschikbaar voor vlakgrafieken om de kleur op te geven voor het gebied onder de regel in het diagram.</li>
-     <li><strong>Referentiepunt &gt; Type binding: </strong>Beschikbaar voor kwadrant-grafieken naar<strong> </strong>geeft het bindingstype voor het referentiepunt op. Gebruik statische tekst of objecteigenschap van gegevensmodel om de waarde voor het referentiepunt te definiëren.</li>
-     <li><strong>Referentiepunt &gt; X-as: </strong>Beschikbaar voor Kwadrantgrafieken als u <span class="uicontrol">Statisch</code> in de vervolgkeuzelijst Type binding om de waarde voor de X-as van het referentiepunt op te geven.</li>
-     <li><strong>Referentiepunt &gt; Y-as: </strong>Beschikbaar voor Kwadrantgrafieken als u <span class="uicontrol">Statisch</code> in de vervolgkeuzelijst Type binding om de waarde voor de Y-as voor het referentiepunt op te geven.</li>
-     <li><strong>Referentiepunt &gt; Gegevensmodelobject voor reeks: </strong>Beschikbaar voor meerdere series Kwadrant-grafieken als u <span class="uicontrol">Gegevensmodelobject</code> in de vervolgkeuzelijst Bindingstype. Definieer de objecteigenschap van het formuliergegevensmodel om de reeks voor het referentiepunt te identificeren. </li>
-     <li><strong>Referentiepunt &gt; Objectwaarde gegevensmodel voor reeks: </strong>Beschikbaar voor meerdere series Kwadrant-grafieken als u <span class="uicontrol">Gegevensmodelobject</code> in de vervolgkeuzelijst Bindingstype. Gebruik de objecteigenschap van het formuliergegevensmodel voor reeksen en de waarde die in dit veld is gedefinieerd om de reeks voor het referentiepunt te identificeren.</li>
-     <li><strong>Referentiepunt &gt; Gegevensmodelobject voor referentiepunt: </strong>Beschikbaar voor Kwadrantgrafieken als u <span class="uicontrol">Gegevensmodelobject</code> in de vervolgkeuzelijst Bindingstype. Definieer een objecteigenschap van het formuliergegevensmodel die vergelijkbaar is met de eigenschappen die op de X- en Y-as zijn getekend. Daarnaast definieert u voor meerdere reeksen een objecteigenschap van het gegevensmodel die een onderliggende entiteit is van de objecteigenschap van het gegevensmodel die voor de reeks is gedefinieerd.</li>
-     <li><strong>Referentiepunt &gt; Objectwaarde gegevensmodel voor referentiepunt: </strong>Beschikbaar voor Kwadrantgrafieken als u <span class="uicontrol">Gegevensmodelobject</code> in de vervolgkeuzelijst Bindingstype. Gebruik de objecteigenschap van het formuliergegevensmodel voor het referentiepunt en de waarde die in dit veld is gedefinieerd om het referentiepunt voor het diagram te identificeren.<br /> <strong>Kwadrant Labels &gt; Linksboven:</strong> Beschikbaar voor Kwadrantgrafieken om de naam voor Linksboven kwadrant te specificeren.</li>
-     <li><strong>Kwadrantlabels &gt; Rechtsboven:</strong> Beschikbaar voor Kwadrantgrafieken om de naam voor het Hoogste juiste kwadrant te specificeren.</li>
-     <li><strong>Kwadrant Labels &gt; Bottom Right: </strong>Beschikbaar voor Kwadrantgrafieken om de naam voor het Bottom Right kwadrant te specificeren.</li>
-     <li><strong>Kwadrant Labels &gt; Bottom Left: </strong>Beschikbaar voor Kwadrantgrafieken om de naam voor de Linkerbenedenkwadrant te specificeren.</li>
+     <li><strong> toon legenda: </strong> toont een legenda voor de taart of donutgrafiek wanneer toegelaten.</li>
+     <li><strong> positie van de Legenda: </strong> specificeert de positie van de legenda met betrekking tot de grafiek. De beschikbare opties zijn Rechts, Links, Boven en Onder. Gebruik de rechterlegenda in het afdrukkanaal.</li>
+     <li><strong> Binnenstraal </strong>: Beschikbaar voor grafieken van de Donut om de straal (in pixel) van de binnencirkel in de grafiek te specificeren.</li>
+     <li><strong> kleur van de Lijn </strong>: Beschikbaar voor de grafieken van de Lijn, van de Lijn en van het Punt, en van het Gebied om de kleur voor de lijn in de grafiek te specificeren.</li>
+     <li><strong> Kleur van het Punt </strong>: Beschikbaar voor Punt en de grafieken van de Lijn en van het Punt om de kleur voor de punten in de grafiek te specificeren.<br /> </li>
+     <li><strong> kleur van het Gebied </strong>: Beschikbaar voor de grafieken van het Gebied om de kleur voor het gebied onder de lijn in de grafiek te specificeren.</li>
+     <li><strong> Punt van het Referentie &gt; Bindend Type: </strong> Beschikbaar voor Kwadrant grafieken aan <strong> </strong> specificeer het bindende type voor het verwijzingspunt. Gebruik statische tekst of objecteigenschap van gegevensmodel om de waarde voor het referentiepunt te definiëren.</li>
+     <li><strong> Punt van het Verwijzing &gt; x-as: </strong> Beschikbaar voor de grafieken van het Kwadrant als u <span class="uicontrol"> Statische selecteert</code> in de vervolgkeuzelijst Type binding om de waarde voor de X-as van het referentiepunt op te geven.</li>
+     <li><strong> Punt van het Verwijzing &gt; y-as: </strong> Beschikbaar voor de grafieken van het Kwadrant als u <span class="uicontrol"> Statische selecteert</code> in de vervolgkeuzelijst Type binding om de waarde voor de Y-as voor het referentiepunt op te geven.</li>
+     <li><strong> Punt van het Verwijzing &gt; Voorwerp van het Model van Gegevens voor Reeks: </strong> Beschikbaar voor veelvoudige grafieken van het reekskwadrant als u <span class="uicontrol"> het ModelVoorwerp van Gegevens selecteert</code> in de vervolgkeuzelijst Bindingstype. Definieer de objecteigenschap van het formuliergegevensmodel om de reeks voor het referentiepunt te identificeren. </li>
+     <li><strong> Punt van het Verwijzing &gt; de Waarde van Objecten van het Model van Gegevens voor Reeks: </strong> Beschikbaar voor veelvoudige grafieken van het reekskwadrant als u <span class="uicontrol"> ModelVoorwerp van Gegevens selecteert</code> in de vervolgkeuzelijst Bindingstype. Gebruik de objecteigenschap van het formuliergegevensmodel voor reeksen en de waarde die in dit veld is gedefinieerd om de reeks voor het referentiepunt te identificeren.</li>
+     <li><strong> Punt van het Verwijzing &gt; Object van het Model van Gegevens voor Punt van het Verwijzing: </strong> Beschikbaar voor Grafieken van het Kwadrant als u <span class="uicontrol"> ModelVoorwerp van Gegevens selecteert</code> in de vervolgkeuzelijst Bindingstype. Definieer een objecteigenschap van het formuliergegevensmodel die vergelijkbaar is met de eigenschappen die op de X- en Y-as zijn getekend. Daarnaast definieert u voor meerdere reeksen een objecteigenschap van het gegevensmodel die een onderliggende entiteit is van de objecteigenschap van het gegevensmodel die voor de reeks is gedefinieerd.</li>
+     <li><strong> Punt van het Verwijzing &gt; de Waarde van Objecten van het Model van Gegevens voor Punt van het Verwijzing: </strong> beschikbaar voor Grafieken van het Kwadrant als u <span class="uicontrol"> ModelVoorwerp van Gegevens selecteert</code> in de vervolgkeuzelijst Bindingstype. Gebruik de objecteigenschap van het formuliergegevensmodel voor het referentiepunt en de waarde die in dit veld is gedefinieerd om het referentiepunt voor het diagram te identificeren.<br /> {de Etiketten van 1} Kwadrant &gt; Linksboven:</strong> Beschikbaar voor de grafieken van het Kwadrant om de naam voor de Linkerkwadrant van de Bovenkant te specificeren.<strong></li>
+     <li><strong> de Etiketten van het Kwadrant &gt; Hoogste Rechts:</strong> Beschikbaar voor de grafieken van het Kwadrant om de naam voor het Hoogste juiste kwadrant te specificeren.</li>
+     <li><strong> Etiketten van het Kwadrant &gt; Rechtsonder: </strong> beschikbaar voor Grafieken van het Kwadrant om de naam voor het Hoogste kwadrant van de Onderkant te specificeren.</li>
+     <li><strong> Etiketten van het Kwadrant &gt; Linksonder: </strong> beschikbaar voor Grafieken van het Kwadrant om de naam voor het Linkerkwadrant van de Onderkant te specificeren.</li>
     </ul> </td>
    <td>Afdrukken en web</td>
   </tr>
@@ -184,29 +184,29 @@ Configureer de volgende eigenschappen tijdens het maken van grafieken voor afdru
 
 U kunt een grafiek vormen om statistische functies te gebruiken om waarden van de brongegevens voor het tekenen op de grafiek te berekenen. Door functies in een grafiek toe te passen, kunt u gegevens plotten die niet direct door het model van vormgegevens worden verstrekt.
 
-![Functies in grafieken](assets/functions_charts_new.png)
+![ Functies in grafieken ](assets/functions_charts_new.png)
 
-Terwijl de component van de Grafiek met sommige ingebouwde functies komt, kunt u schrijven [aangepaste functies](#customfunctionsweb) en beschikbaar maken voor gebruik in de grafiekconfiguratie in het Webkanaal.
+Terwijl de component van de Grafiek met sommige in-gebouwde functies komt, kunt u [ douanefuncties ](#customfunctionsweb) schrijven en hen voor gebruik in de grafiekconfiguratie in het Webkanaal ter beschikking stellen.
 
 De volgende functies zijn standaard beschikbaar met de component Chart:
 
-**Gemiddeld (gemiddeld)** Retourneert het gemiddelde van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Gemiddeld (Gemiddeld)** keert het gemiddelde van de waarden op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-**Som** Retourneert de som van alle waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Som** keert de som alle waarden op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-**Maximum** Retourneert het maximum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Maximum** keert het maximum van de waarden op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-**Frequentie** Retourneert het aantal waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Frequentie** keert het aantal waarden op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-**Bereik** Geeft als resultaat het verschil tussen het maximum en het minimum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Waaier** keert het verschil tussen het maximum en het minimum van de waarden op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-**Mediaan** Retourneert de waarde die hogere en lagere waarden in de helft op de X- of Y-as scheidt voor een bepaalde waarde op de andere as.
+**Mediaan** keert de waarde terug die hogere en lagere waarden in de helft op X of de as van Y voor een bepaalde waarde op de andere as scheidt.
 
-**Minimaal** Geeft als resultaat het minimum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Minimum** keert het minimum van de waarden op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-**Modus** Retourneert de waarde die de meeste keren voorkomt op de X- of Y-as voor een bepaalde waarde op de andere as.
+**de Wijze** keert de waarde met de meeste voorkomen op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-Zie voor meer informatie [Voorbeeld 2: De toepassing van de functies van de Som en van de Frequentie in een lijngrafiek](#applicationsumfrequency).
+Voor meer informatie, zie [ Voorbeeld 2: De toepassing van Som en de functies van de Frequentie in een lijngrafiek ](#applicationsumfrequency).
 
 ### Aangepaste functies in webkanaal {#customfunctionsweb}
 
@@ -226,18 +226,18 @@ Multiply(valueArray, category) {
 
 Zodra u een douanefunctie hebt geschreven, doe het volgende om het voor gebruik in de grafiekconfiguratie beschikbaar te maken:
 
-1. Voeg de douanefunctie in de cliëntbibliotheek toe verbonden aan de relevante Interactieve Communicatie. Zie voor meer informatie [De handeling Verzenden configureren](/help/forms/using/configuring-submit-actions.md) en [Client-Side bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
+1. Voeg de douanefunctie in de cliëntbibliotheek toe verbonden aan de relevante Interactieve Communicatie. Voor meer informatie, zie [ Vormend de Submit actie ](/help/forms/using/configuring-submit-actions.md) en [ Gebruikend Cliënt-Kant Bibliotheken ](/help/sites-developing/clientlibs.md).
 
-1. Als u de aangepaste functie wilt weergeven in de keuzelijst Functie, maakt u in CRXDe Lite een `nt:unstructured` in de map apps met de volgende eigenschappen:
+1. Als u de aangepaste functie wilt weergeven in de vervolgkeuzelijst Functie, maakt u in CRXDe Lite een knooppunt `nt:unstructured` in de map apps met de volgende eigenschappen:
 
-   * Eigenschap toevoegen `guideComponentType` met waarde als `fd/af/reducer`. (verplicht)
+   * Voeg eigenschap `guideComponentType` toe met waarde als `fd/af/reducer` . (verplicht)
 
-   * Eigenschap toevoegen `value` naar een volledig gekwalificeerde naam van de aangepaste JavaScript™-functie. (verplicht) en de waarde ervan instellen op de naam van de aangepaste functie, zoals Vermenigvuldigen.
-   * Eigenschap toevoegen `jcr:description` met de waarde die u wilt weergeven als de naam van de aangepaste functie die wordt weergegeven in de vervolgkeuzelijst Functie. Bijvoorbeeld: **Vermenigvuldigen**.
+   * Voeg eigenschap `value` toe aan een volledig gekwalificeerde naam van de aangepaste JavaScript™-functie. (verplicht) en de waarde ervan instellen op de naam van de aangepaste functie, zoals Vermenigvuldigen.
+   * Voeg eigenschap `jcr:description` toe met de waarde die u wilt weergeven als de naam van de aangepaste functie die wordt weergegeven in de vervolgkeuzelijst Functie. Bijvoorbeeld, **vermenigvuldigt**.
 
-   * Eigenschap toevoegen `qtip` met een waarde die een korte beschrijving van de aangepaste functie is. Het wordt weergegeven als knopinfo wanneer u de aanwijzer boven de functienaam in het dialoogvenster **Functie** vervolgkeuzelijst.
+   * Voeg eigenschap `qtip` toe met een waarde die een korte beschrijving van de aangepaste functie is. Het verschijnt als tooltip wanneer het bedekken van wijzer over de functienaam in de **drop-down lijst van de Functie**.
 
-1. Klikken **Alles opslaan** om de configuratie op te slaan.
+1. Klik **sparen allen** om de configuratie te bewaren.
 
 De functie is nu beschikbaar voor gebruik in de Grafiek.
 
@@ -252,11 +252,11 @@ Laten we de minimaal vereiste informatie in basiseigenschappen in detail begrijp
 Hiervoor geeft u de volgende eigenschappen op:
 
 * **[!UICONTROL Name]** - Geef de naam voor het diagram op.
-* **[!UICONTROL Chart Type]** - Selecteer **Kolom** in de vervolgkeuzelijst.
-* **[!UICONTROL Title]** - Geef het type kosten op voor de X-as en het bedrag van de transactie voor de Y-as.
+* **[!UICONTROL Chart Type]** - selecteer **Kolom** van de drop-down lijst.
+* **[!UICONTROL Title]** - Geef het type kosten op voor de X-as en de hoeveelheid transacties voor de Y-as.
 * **[!UICONTROL Data Model Objects]** - Selecteer de eigenschappen van het gegevensmodelobject om gegevensbindingen te maken voor de X-as (Type kosten) en de Y-as (Hoeveelheid transactie).
 
-![Kolomdiagram in het afdrukkanaal van een interactieve communicatie](assets/sample_chart_print_column_new.png)
+![ grafiek van de Kolom in het drukkanaal van een Interactieve Mededeling ](assets/sample_chart_print_column_new.png)
 
 Kolomdiagram in het afdrukkanaal van een interactieve communicatie
 
@@ -267,10 +267,10 @@ Hiervoor geeft u de volgende eigenschappen op:
 * **[!UICONTROL Name]** - Geef de naam voor het diagram op.
 * **[!UICONTROL Chart Type]** - Selecteer **[!UICONTROL Donut]** in de vervolgkeuzelijst.
 * **[!UICONTROL Data Model Objects]** - Selecteer de eigenschappen van het gegevensmodelobject om gegevensbindingen te maken voor de X-as (Type kosten) en de Y-as (Hoeveelheid transactie).
-* **[!UICONTROL Inner Radius]** - Geef de waarde voor Binnenstraal op als 150 om de straal (in pixels) van de binnencirkel in het diagram op te geven.
-* **[!UICONTROL Tooltip]** - Gebruik de ${x}(${y}), de standaardindeling voor het weergeven van de knopinfo. De knopinfo wordt weergegeven als: Type kosten (transactiebedrag). Voorbeeld: Debit voor bitmap (10000).
+* **[!UICONTROL Inner Radius]** - Geef de waarde voor Binnenste straal op als 150 om de straal (in pixels) van de binnenste cirkel in het diagram op te geven.
+* **[!UICONTROL Tooltip]** - gebruik $ {x} ($ {y}) standaardformaat om tooltip te tonen. De knopinfo wordt weergegeven als: Type kosten (transactiebedrag). Voorbeeld: Debit voor bitmap (10000).
 
-![Donut grafiek in het Webkanaal van een Interactieve Mededeling](assets/sample_chart_web_new.png)
+![ grafiek van de Donut in het Webkanaal van een Interactieve Mededeling ](assets/sample_chart_web_new.png)
 
 Donut grafiek in het Webkanaal van een Interactieve Mededeling
 
@@ -278,7 +278,7 @@ Donut grafiek in het Webkanaal van een Interactieve Mededeling
 
 Door functies in een grafiek toe te passen, kunt u gegevens plotten die niet direct door het model van vormgegevens worden verstrekt. In dit voorbeeld, gebruiken wij een voorbeeld van de creditcardverklaring om te begrijpen hoe de functies van de Som en van de Frequentie op de grafiek kunnen worden toegepast.
 
-![Regeldiagram zonder functie met twee &quot;Debit for AirBnB&quot;-transacties](assets/line_chart_web_new.png)
+![ grafiek van de Lijn zonder een functie met twee &quot;Debit voor transacties AirBnB&quot;](assets/line_chart_web_new.png)
 
 Regeldiagram zonder functie met twee &quot;Debit for AirBnB&quot;-transacties
 
@@ -288,13 +288,13 @@ U kunt de functie sum toepassen om waarden van meerdere instanties van dezelfde 
 
 De functie van de som kan grafiek nuttiger maken wanneer u som voor vele instanties van het zelfde gegevensbezit wilt sorteren en tonen.
 
-![Lijndiagram samenstellen](assets/line_chart_web_sum_new.png)
+![ de grafieksom van de Lijn ](assets/line_chart_web_sum_new.png)
 
 ### Frequentiefunctie {#frequency-function}
 
 De functie Frequentie retourneert het aantal waarden Y-as voor een bepaalde waarde op de andere as. Met de toepassing van de Frequentiefunctie op de Y-as (Transactiesom) toont de grafiek dat er twee exemplaren van de Debit voor AirBnB-transacties zijn geweest en één exemplaar van de rest van de soorten transacties.
 
-![Frequentie van lijndiagram](assets/line_chart_web_functions_frequency_new.png)
+![ frequentie van het het grafiekdiagram van de Lijn ](assets/line_chart_web_functions_frequency_new.png)
 
 ## Voorbeeld 3: Quadrant-diagram met meerdere reeksen in het web {#example-multi-series-quadrant-chart-in-web}
 
@@ -302,16 +302,16 @@ De grafiek geeft een overzicht van het bedrag voor transacties die in een bepaal
 
 Hiervoor geeft u de volgende eigenschappen op:
 
-* **Naam:** Geef de naam voor het diagram op.
-* **Type diagram:** Selecteren **Kwadrant** in de vervolgkeuzelijst.
+* **Naam:** specificeer de naam voor de grafiek.
+* **Type van Grafiek:** Uitgezochte **Kwadrant** van de drop-down lijst.
 
-* Selecteer de **Meerdere reeksen** selectievakje.
-* **Gegevensmodelobject**: Geef de eigenschap van het gegevensmodelobject voor de reeks op. De objecteigenschap van het gegevensmodel voor de naam van de bank is een bovenliggend element van de eigenschappen van het gegevensmodel die zijn getekend in de X-as en Y-as.
-* **Gegevensmodelobjecten:** Selecteer de eigenschappen van het gegevensmodelobject om gegevensbindingen te maken voor de X-as (Transactiedatum) en de Y-as (Hoeveelheid transactie).
-* In de **Referentiepunt** sectie, selecteert u **Statisch** als het bindingstype.
+* Selecteer **Veelvoudige Reeks** checkbox.
+* **ModelVoorwerp van Gegevens**: Specificeer het bezit van het gegevensmodel voor de reeks. De objecteigenschap van het gegevensmodel voor de naam van de bank is een bovenliggend element van de eigenschappen van het gegevensmodel die zijn getekend in de X-as en Y-as.
+* **Modelvoorwerpen van Gegevens:** selecteer de eigenschappen van het gegevensmodel om gegevensbanden voor x-as (de Datum van de Transactie) en y-as (het Bedrag van de Transactie) tot stand te brengen.
+* In de **sectie van het Punt van de Verwijzing**, uitgezochte **Statische** als Bindend Type.
 
 * Geef de waarden op voor de referentiepunten op de X-as en de Y-as.
 * Geef de kwadranslabels op voor de kwadranten Linksboven, Rechtsboven, Rechtsonder en Linksonder.
-* Selecteer de **Legenda tonen** Schakel dit selectievakje in om de kleurcodes voor de banknamen weer te geven.
+* Selecteer **tonen legenda** checkbox om de kleurencodes voor de banknamen te tonen.
 
-![Kwadrantkaarten](assets/charts_quadrant_example_new.png)
+![ Grafieken van het Kwadrant ](assets/charts_quadrant_example_new.png)

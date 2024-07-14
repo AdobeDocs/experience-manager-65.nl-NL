@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Het gereedschap VLT gebruiken {#how-to-use-the-vlt-tool}
 
-Het Jackrabbit FileVault-hulpprogramma (VLT) is een hulpprogramma dat is ontwikkeld door [De Apache Foundation](https://www.apache.org/) die de inhoud van een instantie Jackrabbit/AEM aan uw bestandssysteem toewijst. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, en configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
+Het hulpmiddel van FileVault van het Jasrabbit (VLT) is een hulpmiddel dat door [ wordt ontwikkeld de Stichting Apache ](https://www.apache.org/) die de inhoud van een instantie Jackrabbit/AEM aan uw dossiersysteem in kaart brengt. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, en configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
 
-U voert het gereedschap VLT uit vanaf de opdrachtregel. In dit document wordt beschreven hoe u het gereedschap kunt gebruiken, inclusief hoe u aan de slag kunt en hoe u hulp kunt krijgen, en een lijst met alle [opdrachten](#vlt-commands) en beschikbaar [opties](#vlt-global-options).
+U voert het gereedschap VLT uit vanaf de opdrachtregel. Dit document beschrijft hoe te om het hulpmiddel te gebruiken, met inbegrip van hoe te begonnen worden en hulp krijgen, en een lijst van alle [ bevelen ](#vlt-commands) en beschikbare [ opties ](#vlt-global-options).
 
 ## Concepten en architectuur {#concepts-and-architecture}
 
-Zie de [Overzicht van FileVult](https://jackrabbit.apache.org/filevault/overview.html) en [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) pagina van de ambtenaar [Apache Jackrabbit FileVult-documentatie](https://jackrabbit.apache.org/filevault/index.html) voor een grondig overzicht van de concepten en de structuur van het hulpmiddel FileVult.
+Zie het [ Overzicht FileVault ](https://jackrabbit.apache.org/filevault/overview.html) en [ vault fs ](https://jackrabbit.apache.org/filevault/vaultfs.html) pagina van de officiële [ Apache documentatie van het Dossier van het Jasje van het Dossier ](https://jackrabbit.apache.org/filevault/index.html) voor een grondig overzicht van de concepten en de structuur van het hulpmiddel FileVault.
 
 ## Aan de slag met VLT {#getting-started-with-vlt}
 
@@ -40,16 +40,16 @@ Als u VLT wilt gaan gebruiken, moet u het volgende doen:
 
 Als u het gereedschap VLT wilt gebruiken, moet u het eerst installeren. Het is niet standaard geïnstalleerd omdat het een aanvullend gereedschap is. Daarnaast moet u de omgevingsvariabele van uw systeem instellen.
 
-1. Download het archiefbestand FileVault van de [Opslagplaats voor vervormingen.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
+1. Download het FileVault archiefdossier van de [ Geweven artefactenbewaarplaats.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
-   >De bron van het gereedschap VLT is [beschikbaar op GitHub.](https://github.com/apache/jackrabbit-filevault)
+   >De bron van het hulpmiddel VLT is [ beschikbaar op GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Extraheer het archief.
-1. Toevoegen `<archive-dir>/vault-cli-<version>/bin` naar uw omgeving `PATH` zodat de opdrachtbestanden `vlt` of `vlt.bat` indien van toepassing toegankelijk zijn. Bijvoorbeeld:
+1. Voeg `<archive-dir>/vault-cli-<version>/bin` toe aan uw omgeving `PATH` , zodat de opdrachtbestanden `vlt` of `vlt.bat` naar wens worden geopend. Bijvoorbeeld:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
-1. Een opdrachtregelshell openen en uitvoeren `vlt --help`. Zorg ervoor de output aan het volgende hulpscherm gelijkaardig is:
+1. Open een opdrachtregelshell en voer `vlt --help` uit. Zorg ervoor de output aan het volgende hulpscherm gelijkaardig is:
 
    ```shell
    vlt --help
@@ -88,11 +88,11 @@ global-ignores = .vlt
 
 VLT verwerkt automatisch het einde van regel (EOF) volgens de volgende regels:
 
-* lijnen met bestanden die zijn uitgecheckt op Windows-zijde met een `CRLF`
+* lijnen met bestanden die zijn uitgecheckt op Windows-einde met een `CRLF`
 * Bestandsregels die zijn uitgecheckt aan het Linux/Unix-uiteinde met een `LF`
 * regels bestanden die worden toegewezen aan de repository eindigen met een `LF`
 
-Om ervoor te zorgen dat VLT en de configuratie SVN aanpassen, zou u opstelling moeten zijn `svn:eol-style` eigenschap aan `native` voor de extensie van de bestanden die in de opslagplaats zijn opgeslagen. Bewerk uw SVN-instellingen en voeg het volgende toe:
+Om ervoor te zorgen dat de VLT- en SVN-configuratie overeenkomen, moet u de eigenschap `svn:eol-style` instellen op `native` voor de extensie van de bestanden die in de opslagplaats zijn opgeslagen. Bewerk uw SVN-instellingen en voeg het volgende toe:
 
 ```xml
 [auto-props]
@@ -121,8 +121,8 @@ svn co https://svn.server.com/repos/myproject
 
 U moet het bestand synchroniseren met de opslagplaats. Dit doet u als volgt:
 
-1. Navigeer op de opdrachtregel naar `content/jcr_root`.
-1. Ontdek de opslagplaats door het volgende te typen (vervang uw poortnummer door **4502** en uw beheerderswachtwoorden):
+1. Navigeer op de opdrachtregel naar `content/jcr_root` .
+1. Controle uit de bewaarplaats door het volgende te typen (het substitueren van uw havenaantal voor **4502** en uw admin wachtwoorden):
 
    ```shell
    vlt --credentials admin:admin co --force http://localhost:4502/crx
@@ -130,19 +130,19 @@ U moet het bestand synchroniseren met de opslagplaats. Dit doet u als volgt:
 
    >[!NOTE]
    >
-   >De referenties hoeven slechts eenmaal te worden opgegeven bij het eerste afrekenen. Zij zullen dan in uw huisfolder binnen worden opgeslagen `.vault/auth.xml`.
+   >De referenties hoeven slechts eenmaal te worden opgegeven bij het eerste afrekenen. Deze worden vervolgens in de thuismap van `.vault/auth.xml` opgeslagen.
 
 ### Testen of de synchronisatie is uitgevoerd {#testing-whether-the-synchronization-worked}
 
-Nadat u de opslagplaats hebt uitgecheckt en gesynchroniseerd, moet u testen of alle functies correct werken. Een gemakkelijke manier om dit te doen is een **.jsp** en controleer of uw wijzigingen worden doorgevoerd nadat u de wijzigingen hebt doorgevoerd.
+Nadat u de opslagplaats hebt uitgecheckt en gesynchroniseerd, moet u testen of alle functies correct werken. Een gemakkelijke manier om dit te doen is een **.jsp** dossier uit te geven en te zien of uw veranderingen na het bevestigen van de veranderingen worden weerspiegeld.
 
 De synchronisatie testen:
 
-1. Navigeren naar `.../jcr_content/libs/foundation/components/text`.
-1. Iets bewerken in `text.jsp`.
+1. Navigeer naar `.../jcr_content/libs/foundation/components/text` .
+1. Bewerk iets in `text.jsp` .
 1. De gewijzigde bestanden bekijken door te typen `vlt st`
-1. De wijzigingen bekijken door te typen `vlt diff text.jsp`
-1. De wijzigingen vastleggen: `vlt ci test.jsp`.
+1. Wijzigingen bekijken door te typen `vlt diff text.jsp`
+1. Leg de wijzigingen vast: `vlt ci test.jsp`.
 1. Laad een pagina met een tekstcomponent opnieuw en controleer of de wijzigingen aanwezig zijn.
 
 ## Hulp krijgen met het Hulpmiddel VLT {#getting-help-with-the-vlt-tool}
@@ -214,21 +214,21 @@ Options:
 
 ## Gemeenschappelijke Taken die in VLT worden uitgevoerd {#common-tasks-performed-in-vlt}
 
-Hier volgen enkele algemene taken die in VLT worden uitgevoerd. Voor gedetailleerde informatie over elk bevel zie individueel [opdrachten](#vlt-commands).
+Hier volgen enkele algemene taken die in VLT worden uitgevoerd. Voor gedetailleerde informatie over elk bevel zie de individuele [ bevelen ](#vlt-commands).
 
 ### Een substructuur uitchecken {#checking-out-a-subtree}
 
-Als u bijvoorbeeld alleen een substructuur van de repository wilt uitchecken, `/apps/geometrixx`, kunt u dit doen door het volgende te typen:
+Als u bijvoorbeeld alleen een substructuur van de repository wilt uitchecken, `/apps/geometrixx` , kunt u dit doen door het volgende te typen:
 
 ```shell
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 ```
 
-Hiermee maakt u een nieuwe exportbasis `geo` met een `META-INF` en `jcr_root` en plaatst alle bestanden hieronder `/apps/geometrixx` in `geo/jcr_root`.
+Als u dit doet, wordt er een nieuwe exporthoofdmap `geo` gemaakt met een map `META-INF` en `jcr_root` en worden alle bestanden onder `/apps/geometrixx` in `geo/jcr_root` geplaatst.
 
 ### Een gefilterde uitchecking uitvoeren {#performing-a-filtered-checkout}
 
-Als u een bestaand werkruimtefilter hebt en u het voor controle wilt gebruiken, kunt u of eerst creëren `META-INF/vault` en plaats het filter daar, of specificeer het op de bevellijn als volgt:
+Als u een bestaand werkruimtefilter hebt en u het voor controle wilt gebruiken, kunt u of eerst tot de `META-INF/vault` folder leiden en het filter daar plaatsen, of het specificeren op de bevellijn als volgt:
 
 ```shell
 $ vlt co --filter filter.xml http://localhost:4502/crx/-/jcr:root geo
@@ -248,7 +248,7 @@ Een voorbeeldfilter:
 
 U kunt inhoud importeren en exporteren tussen een JCR-opslagplaats en het lokale bestandssysteem zonder besturingsbestanden te gebruiken.
 
-Inhoud importeren en exporteren zonder deze te gebruiken `.vlt` besturingselement:
+Inhoud importeren en exporteren zonder `.vlt` -besturingselement te gebruiken:
 
 1. Stel aanvankelijk de opslagplaats in:
 
@@ -336,7 +336,7 @@ In de volgende tabel worden alle beschikbare VLT-opdrachten beschreven. Zie de a
 
 ### Exporteren {#export}
 
-Hiermee wordt het Vault-bestandssysteem geëxporteerd dat is gemonteerd op &lt;uri> naar het lokale bestandssysteem op &lt;local-path>. Een optioneel &lt;jcr-path> kan worden opgegeven om alleen een subboomstructuur te exporteren.
+Exporteert het Vault-bestandssysteem dat op &lt;uri> is geïnstalleerd naar het lokale bestandssysteem op &lt;local-path>. U kunt een optionele &lt;jcr-path> opgeven om alleen een substructuur te exporteren.
 
 #### Syntaxis {#syntax}
 
@@ -363,7 +363,7 @@ vlt export http://localhost:4502/crx /apps/geometrixx myproject
 
 ### Importeren {#import}
 
-Hiermee wordt het lokale bestandssysteem geïmporteerd (vanaf `<local-path>` naar het vault-bestandssysteem op `<uri>`. U kunt een `<jcr-path>` als importbasis. Indien `--sync` worden opgegeven, worden de geïmporteerde bestanden automatisch onder controle van de vault geplaatst.
+Hiermee wordt het lokale bestandssysteem geïmporteerd (vanaf `<local-path>` naar het vault-bestandssysteem op `<uri>` . U kunt een `<jcr-path>` opgeven als importbasis. Als `--sync` is opgegeven, worden de geïmporteerde bestanden automatisch onder controle gehouden.
 
 #### Syntaxis {#syntax-1}
 
@@ -389,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Afhandeling (co) {#checkout-co}
 
-Voert een eerste uitchecking uit van een JCR-opslagplaats naar het lokale bestandssysteem vanaf &lt;uri> naar het lokale bestandssysteem op &lt;local-path>. U kunt ook een &lt;jcrpath> argument om een submap van de externe boomstructuur uit te checken. Werkruimtefilters kunnen worden opgegeven die naar de map META-INF worden gekopieerd.
+Voert een eerste uitchecking uit van een JCR-opslagplaats naar het lokale bestandssysteem vanaf &lt;uri> naar het lokale bestandssysteem op &lt;local-path>. U kunt ook een &lt;jcrPath>-argument toevoegen om een submap van de externe boomstructuur uit te checken. Workspace-filters kunnen worden opgegeven die naar de map META-INF worden gekopieerd.
 
 #### Syntaxis {#syntax-2}
 
@@ -452,7 +452,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 Hiermee wordt de status van bestanden en mappen met werkkopieën afgedrukt.
 
-Indien `--show-update` wordt opgegeven, wordt elk bestand gecontroleerd op de externe versie. De tweede letter geeft vervolgens aan welke actie door een updatebewerking wordt uitgevoerd.
+Als `--show-update` is opgegeven, wordt elk bestand gecontroleerd op de externe versie. De tweede letter geeft vervolgens aan welke actie door een updatebewerking wordt uitgevoerd.
 
 #### Syntaxis {#syntax-4}
 
@@ -549,7 +549,7 @@ revert -q|-R <file1> [<file2> ...]
 
 ### Opgelost {#resolved}
 
-Verwijderen **tegenstrijdig** status van het werken van kopieerbestanden of -mappen.
+Verwijdert **conflicteerde** staat op het werken van exemplaardossiers of folders.
 
 >[!NOTE]
 >
@@ -709,7 +709,7 @@ console -F <file>
 
 ### Rcp {#rcp}
 
-Kopieert een knooppuntenstructuur van de ene externe opslagplaats naar een andere. `<src>` verwijst naar het bronknooppunt en `<dst>` Geeft het doelpad aan, waar het bovenliggende knooppunt moet bestaan. Rcp verwerkt de knopen door de gegevens te stromen.
+Kopieert een knooppuntenstructuur van de ene externe opslagplaats naar een andere. `<src>` verwijst naar het bronknooppunt en `<dst>` geeft het doelpad aan, waar het bovenliggende knooppunt moet bestaan. Rcp verwerkt de knopen door de gegevens te stromen.
 
 #### Syntaxis {#syntax-17}
 
@@ -739,7 +739,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->De `--exclude` de opties moeten door een andere optie worden gevolgd alvorens `<src>` en `<dst>` argumenten. Bijvoorbeeld:
+>De `--exclude` -opties moeten worden gevolgd door een andere optie vóór de `<src>` - en `<dst>` -argumenten. Bijvoorbeeld:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
@@ -788,11 +788,11 @@ De vault sync-service wordt gebruikt om inhoud in de opslagplaats te synchronise
 
 ### De service installeren met vlt {#installing-the-service-using-vlt}
 
-De `vlt sync install` kunt u gebruiken om de bundel en configuratie van de vault sync-service automatisch te installeren.
+U kunt de opdracht `vlt sync install` gebruiken om de bundel en configuratie van de kluissynchronisatieservice automatisch te installeren.
 
-De bundel wordt hieronder geïnstalleerd `/libs/crx/vault/install` en de config knoop wordt gecreeerd bij `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Aanvankelijk wordt de dienst toegelaten maar geen synchronisatiewortels worden gevormd.
+De bundel wordt geïnstalleerd onder `/libs/crx/vault/install` en de config knoop wordt gecreeerd bij `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Aanvankelijk wordt de dienst toegelaten maar geen synchronisatiewortels worden gevormd.
 
-In het volgende voorbeeld wordt de synchronisatieservice geïnstalleerd naar de CRX-instantie die toegankelijk is voor de opgegeven uri.
+In het volgende voorbeeld wordt de synchronisatieservice geïnstalleerd naar de CRX-instantie die toegankelijk is via de opgegeven uri.
 
 ```shell
 $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
@@ -800,7 +800,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### De servicestatus weergeven {#displaying-the-service-status}
 
-De `status` kunt u gebruiken om informatie weer te geven over de actieve synchronisatieservice. &quot;
+U kunt de opdracht `status` gebruiken om informatie weer te geven over de actieve synchronisatieservice. &quot;
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx
@@ -812,11 +812,11 @@ Listing sync status for http://localhost:4502/crx/server/-/jcr:root
 
 >[!NOTE]
 >
->De `status` bevel haalt geen levende gegevens van de dienst maar eerder leest de configuratie bij `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
+>De opdracht `status` haalt geen live gegevens van de service op, maar leest de configuratie bij `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl` .
 
 ### Een synchronisatiemap toevoegen {#adding-a-sync-folder}
 
-De `register` wordt gebruikt om een omslag toe te voegen om aan de configuratie te synchroniseren.
+De opdracht `register` wordt gebruikt om een map toe te voegen die moet worden gesynchroniseerd met de configuratie.
 
 ```shell
 $ vlt sync register
@@ -826,11 +826,11 @@ Added new sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->De `register` het bevel brengt geen synchronisatie teweeg tot u vormt `sync-once` configuratie.
+>De opdracht `register` activeert geen synchronisatie totdat u de `sync-once` -configuratie configureert.
 
 ### Een synchronisatiemap verwijderen {#removing-a-sync-folder}
 
-De `unregister` wordt gebruikt om een omslag te verwijderen om uit de configuratie te synchroniseren.
+Met de opdracht `unregister` verwijdert u een map die u wilt synchroniseren uit de configuratie.
 
 ```shell
 $  vlt sync unregister
@@ -848,16 +848,16 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 Zodra de dienst in werking stelt kan het met de volgende parameters worden gevormd:
 
-* `vault.sync.syncroots`: Een of meer lokale bestandsysteempaden die de synchronisatiebasis definiëren.
+* `vault.sync.syncroots`: een of meer lokale bestandsysteempaden die de synchronisatiebasis definiëren.
 
 * `vault.sync.fscheckinterval`: Frequentie (in seconden) waarvan het bestandssysteem op wijzigingen moet worden gescand. De standaardwaarde is 5 seconden.
-* `vault.sync.enabled`: Algemene vlag die de dienst toelaat/onbruikbaar maakt.
+* `vault.sync.enabled`: algemene markering die de service in- en uitschakelt.
 
 >[!NOTE]
 >
->De dienst kan met de console van het Web of a worden gevormd `sling:OsgiConfig` node (met de naam `com.day.jcr.sync.impl.VaultSyncServiceImpl`) in de opslagplaats.
+>De service kan worden geconfigureerd met de webconsole of een knooppunt `sling:OsgiConfig` (met de naam `com.day.jcr.sync.impl.VaultSyncServiceImpl` ) in de opslagplaats.
 >
->Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor volledige details.
 
 #### Mapconfiguratie synchroniseren {#sync-folder-configuration}
 
@@ -866,18 +866,18 @@ In elke synchronisatiemap worden configuratie en status in drie bestanden opgesl
 * `.vlt-sync-config.properties`: configuratiebestand.
 
 * `.vlt-sync.log`: logbestand dat informatie bevat over de bewerkingen die tijdens het synchroniseren zijn uitgevoerd.
-* `.vlt-sync-filter.xml`: filters die definiëren welke delen van de opslagplaats worden gesynchroniseerd. De indeling van dit bestand wordt beschreven door de [Een gefilterde uitchecking uitvoeren](#performing-a-filtered-checkout) sectie.
+* `.vlt-sync-filter.xml`: filters die definiëren welke delen van de repository worden gesynchroniseerd. Het formaat van dit dossier wordt beschreven door [ Uitvoerend een gefilterde controle ](#performing-a-filtered-checkout) sectie.
 
-De `.vlt-sync-config.properties` Met dit bestand kunt u de volgende eigenschappen configureren:
+In het bestand `.vlt-sync-config.properties` kunt u de volgende eigenschappen configureren:
 
-**uitgeschakeld** Hiermee schakelt u de synchronisatie in of uit. Deze parameter is standaard ingesteld op false om synchronisatie toe te staan.
+**gehandicapte** draait de synchronisatie of weg. Deze parameter is standaard ingesteld op false om synchronisatie toe te staan.
 
-**sync-once** Als de volgende scan niet leeg is, wordt de map in de opgegeven richting gesynchroniseerd, wordt de parameter gewist. Er worden twee waarden ondersteund:
+**synchronisatie-eens** als het niet lege volgende aftasten de omslag in de bepaalde richting zal synchroniseren, dan zal de parameter worden ontruimd. Er worden twee waarden ondersteund:
 
-* `JCR2FS`: exporteert alle inhoud in de JCR-opslagplaats en schrijft naar de lokale schijf.
+* `JCR2FS` : exporteert alle inhoud in de JCR-opslagruimte en schrijft deze naar de lokale schijf.
 * `FS2JCR`: importeert alle inhoud van de schijf naar de JCR-opslagplaats.
 
-**sync-log** Definieert de bestandsnaam van het logbestand. De standaardwaarde is .vlt-sync.log
+**synchronisatie-logboek** bepaalt logboekfilename. De standaardwaarde is .vlt-sync.log
 
 ### VLT-sync gebruiken voor ontwikkeling {#using-vlt-sync-for-development}
 
@@ -891,7 +891,7 @@ Ga als volgt te werk als u een ontwikkelomgeving wilt instellen op basis van een
 
    >[!NOTE]
    >
-   >Met filters kunt u alleen de juiste paden uitchecken. Zie de [Een gefilterde uitchecking uitvoeren](#performing-a-filtered-checkout) voor meer informatie.
+   >Met filters kunt u alleen de juiste paden uitchecken. Zie [ Uitvoerend een gefilterde controle ](#performing-a-filtered-checkout) sectie voor informatie.
 
 1. Ga naar de hoofdmap van uw werkkopie:
 
@@ -922,7 +922,7 @@ Ga als volgt te werk als u een ontwikkelomgeving wilt instellen op basis van een
    appropriate flag in the /Users/trushton/Applications/aem/vltsync/sandbox/dev/jcr_root/.vlt-sync-config.properties file.
    ```
 
-1. Bewerk de `.vlt-sync-config.properties` Verborgen bestand en synchronisatie configureren om de inhoud van uw opslagplaats te synchroniseren:
+1. Bewerk het `.vlt-sync-config.properties` verborgen bestand en configureer de synchronisatie om de inhoud van de opslagplaats te synchroniseren:
 
    ```xml
    sync-once=JCR2FS
@@ -932,7 +932,7 @@ Ga als volgt te werk als u een ontwikkelomgeving wilt instellen op basis van een
    >
    >Deze stap downloadt de hele opslagplaats volgens uw filterconfiguratie.
 
-1. Logbestand controleren `.vlt-sync.log` de vorderingen te zien :
+1. Controleer het logbestand `.vlt-sync.log` om de voortgang te zien:
 
    ```xml
    ***

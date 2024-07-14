@@ -22,13 +22,13 @@ Met uitvoeringsmodi kunt u de AEM voor een bepaald doel instellen, bijvoorbeeld 
 
 U kunt:
 
-* [Definieer verzamelingen van configuratieparameters voor elke uitvoeringsmodus](#defining-configuration-properties-for-a-run-mode).
+* [ bepaalt inzamelingen van configuratieparameters voor elke looppaswijze ](#defining-configuration-properties-for-a-run-mode).
 
   Een basisreeks configuratieparameters wordt toegepast voor alle looppaswijzen, kunt u extra reeksen aan het doel van uw specifiek milieu dan stemmen. Deze worden naar wens toegepast.
 
-* [Aanvullende bundels definiëren die voor een bepaalde modus moeten worden geïnstalleerd](#defining-additional-bundles-to-be-installed-for-a-run-mode).
+* [ bepaalt extra bundels die voor een bepaalde wijze ](#defining-additional-bundles-to-be-installed-for-a-run-mode) moeten worden geïnstalleerd.
 
-Alle instellingen en definities worden opgeslagen in de ene opslagplaats en geactiveerd door de instelling van de **Run-modus**.
+Alle montages en definities worden opgeslagen in één bewaarplaats en geactiveerd door de **Wijze van de Looppas** te plaatsen.
 
 ## Installatie-uitvoeringsmodi {#installation-run-modes}
 
@@ -43,15 +43,15 @@ De uitvoermodi voor de installatie zijn beschikbaar buiten de box:
 
 Dit zijn twee paren van elkaar uitsluitende looppaswijzen; bijvoorbeeld, kunt u:
 
-* definiëren: `author` of `publish`, niet beide tegelijk
+* `author` of `publish` definiëren, niet tegelijkertijd
 
-* combineren `author` met ofwel `samplecontent` of `nosamplecontent` (maar niet beide)
+* `author` combineren met `samplecontent` of `nosamplecontent` (maar niet met beide)
 
 >[!CAUTION]
 >
->Wanneer u een van de bovenstaande uitvoeringsmodi gebruikt (auteur, publicatie, samplinginhoud, geen samplinginhoud), definieert de waarde die tijdens de installatie wordt gebruikt de uitvoeringsmodus voor de *volledige levensduur* van die installatie.
+>Wanneer het gebruiken van één van de bovengenoemde looppaswijzen (auteur, publiceer, steekproefinhoud, geen steekproefinhoud), bepaalt de waarde die bij installatietijd wordt gebruikt de looppaswijze voor het *volledige leven* van die installatie.
 >
->Voor deze uitvoeringsmodi *kan* wijzigen na installatie.
+>Voor deze looppaswijzen kunt u *niet* hen na installatie veranderen.
 
 ## Aangepaste uitvoermodi {#customized-run-modes}
 
@@ -73,9 +73,9 @@ De aangepaste looppaswijzen kunnen ook bij elk opstarten worden geselecteerd.
 
 Met deze modi kunt u het gebruik van voorbeeldinhoud beheren. De voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten:
 
-* De `samplecontent` Deze inhoud wordt geïnstalleerd in de uitvoermodus (de standaardmodus).
+* In de uitvoermodus van `samplecontent` wordt deze inhoud geïnstalleerd (de standaardmodus).
 
-* De `nosamplecontent` de voorbeeldinhoud wordt niet geïnstalleerd.
+* In de modus `nosamplecontent` wordt de voorbeeldinhoud niet geïnstalleerd.
 
 De run-modus voor noSampling-inhoud is ontworpen voor productie-installaties.
 
@@ -101,11 +101,11 @@ De uitvoeringsmodus wordt aangegeven met een achtervoegsel op de mapnaam. Hierme
 
   Gebruikt voor de toepasselijke looppaswijze; bijvoorbeeld config
 
-Zie [OSGi-configuratie in de opslagplaats](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) voor meer informatie over het bepalen van de individuele configuratieknooppunten binnen deze omslagen en voor het creëren van configuraties voor combinaties veelvoudige looppaswijzen.
+Zie {Configuratie 0} OSGi in de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) voor verdere details bij het bepalen van de individuele configuratieknopen binnen deze omslagen en voor het creëren van configuraties voor combinaties veelvoudige looppaswijzen.[
 
 >[!NOTE]
 >
->Voor [Installatie-uitvoeringsmodi](#installation-run-modes) (bijvoorbeeld de auteur) de uitvoeringsmodus kan na de installatie niet meer worden gewijzigd. Wijzigingen in de afzonderlijke configuratie-eigenschappen worden echter van kracht na het opnieuw opstarten.
+>Voor [ Wijzen van de Looppas van de Installatie ](#installation-run-modes) (bijvoorbeeld, auteur) kan de looppaswijze niet na installatie worden veranderd. Wijzigingen in de afzonderlijke configuratie-eigenschappen worden echter van kracht na het opnieuw opstarten.
 
 ## Aanvullende bundels definiëren die moeten worden geïnstalleerd voor een uitvoeringsmodus {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -114,7 +114,7 @@ U kunt ook extra bundels opgeven die voor een bepaalde uitvoermodus moeten worde
 * `install.author`
 * `install.publish`
 
-Deze mappen zijn van het type `nt:folder` en moet de juiste bundel bevatten.
+Deze mappen zijn van het type `nt:folder` en moeten de juiste bundel bevatten.
 
 ## CQ starten met een specifieke uitvoeringsmodus {#starting-cq-with-a-specific-run-mode}
 
@@ -125,11 +125,11 @@ Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepal
 1. [](#using-the-r-option)
 1. [Bestandsnaamdetectie](#filename-detection-renaming-the-jar-file)
 
-Wanneer u een toepassingsserver gebruikt, kunt u ook [de uitvoeringsmodus in web.xml definiëren](#defining-the-run-mode-in-web-xml-with-application-server).
+Wanneer u een toepassingsserver gebruikt kunt u ook [ de looppaswijze in web.xml ](#defining-the-run-mode-in-web-xml-with-application-server) bepalen.
 
 ### Het bestand sling.properties gebruiken {#using-the-sling-properties-file}
 
-De `sling.properties` bestand kan worden gebruikt om de vereiste uitvoermodus te definiëren:
+U kunt het bestand `sling.properties` gebruiken om de vereiste uitvoermodus te definiëren:
 
 1. Bewerk het configuratiebestand:
 
@@ -141,7 +141,7 @@ De `sling.properties` bestand kan worden gebruikt om de vereiste uitvoermodus te
 
 ### De optie -r gebruiken {#using-the-r-option}
 
-U kunt een aangepaste uitvoermodus activeren door de opdracht `-r` als u de snelstart start start. Gebruik bijvoorbeeld de volgende opdracht om een AEM instantie te starten met de uitvoermodus ingesteld op dev. &quot;
+Een aangepaste uitvoeringsmodus kan worden geactiveerd door de optie `-r` te gebruiken wanneer de snelstartmodus wordt gestart. Gebruik bijvoorbeeld de volgende opdracht om een AEM instantie te starten met de uitvoermodus ingesteld op dev. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -166,7 +166,7 @@ Voor het jar-bestand moet de naamgevingsconventie worden gebruikt:
 
 `cq5-<run-mode>-p<port-number>`
 
-Stel bijvoorbeeld de `publish` uitvoeringsmodus door naam te geven aan het jar-bestand:
+Stel bijvoorbeeld de uitvoermodus van `publish` in door het jar-bestand een naam te geven:
 
 `cq5-publish-p4503`
 
@@ -180,6 +180,6 @@ in het bestand:
 
 `WEB-INF/web.xml`
 
-Dit staat in de AEM `war` en moet vóór de implementatie worden bijgewerkt.
+Dit staat in het AEM `war` -bestand en moet worden bijgewerkt voordat het wordt geïmplementeerd.
 
-Zie [AEM installeren met een toepassingsserver](/help/sites-deploying/application-server-install.md) voor nadere bijzonderheden.
+Zie [ Installerend AEM met een Server van de Toepassing ](/help/sites-deploying/application-server-install.md) voor verdere details.

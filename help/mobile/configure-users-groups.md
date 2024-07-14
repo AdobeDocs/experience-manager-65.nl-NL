@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
@@ -39,7 +39,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 1. Maak een gebruikersgroep met de naam &#39;app-authors&#39;:
 
-   Navigeer naar de Admin Console Gebruiker: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Navigeer aan de Admin Console van de Gebruiker: [ http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Selecteer in de gebruikersgroepconsole de knop &#39;+&#39; om een groep te maken.
 
@@ -47,17 +47,17 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 1. Lid toevoegen aan groep: Auteurs
 
-   ![chlimage_1-18](assets/chlimage_1-18.png)
+   ![ chlimage_1-18 ](assets/chlimage_1-18.png)
 
    App-auteurs toevoegen aan de groep Auteurs
 
-1. Nu u de gebruikersgroep voor toepassingsauteurs hebt gemaakt, kunt u via de [Admin Console gebruiker](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nu u de app-auteursGebruikersgroep hebt gecreeerd, kunt u individuele teamleden aan deze nieuwe groep door de [ Admin Console van de Gebruiker ](http://localhost:4502/libs/granite/security/content/useradmin.md) toevoegen.
 
-   ![chlimage_1-19](assets/chlimage_1-19.png)
+   ![ chlimage_1-19 ](assets/chlimage_1-19.png)
 
    Gebruikersgroepen bewerken
 
-1. Ga naar de [Machtigingenconsole](http://localhost:4502/useradmin) en machtigingen toevoegen om cloudservices te beheren
+1. Navigeer aan de [ console van Toestemmingen ](http://localhost:4502/useradmin) en voeg toestemmingen toe om cloudservices te beheren
 
    * (Lezen) op /etc/cloudservices
 
@@ -67,7 +67,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 ### AEM Mobile Application Administrators Group (groep toepassingsbeheerders) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen maken die bij de auteur van de app worden geleverd **EN** voorts zijn ook verantwoordelijk voor :
+De leden van app-admins groep kunnen toepassingsinhoud met de zelfde toestemmingen inbegrepen met app-auteurs **EN** bovendien zijn ook verantwoordelijk voor:
 
 * PhoneGap Build en Adobe mobiele services in AEM configureren
 * OTA-updates voor inhoudssynchronisatie van toepassingen opslaan, publiceren en wissen
@@ -86,9 +86,9 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
    * content-authors
    * workflowgebruikers
 
-   ![chlimage_1-20](assets/chlimage_1-20.png)
+   ![ chlimage_1-20 ](assets/chlimage_1-20.png)
 
-1. Ga naar de [Machtigingenconsole](http://localhost:4502/useradmin) en machtigingen toevoegen om cloudservices te beheren
+1. Navigeer aan de [ console van Toestemmingen ](http://localhost:4502/useradmin) en voeg toestemmingen toe om cloudservices te beheren
 
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/mobileservices
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/phonegap-build
@@ -114,15 +114,15 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
 
 Dashboardblokken kunnen verschillende handelingen blootstellen op basis van de machtigingen die de gebruiker heeft. Hieronder wordt beschreven welke acties beschikbaar zijn voor elke tegel.
 
-Naast deze machtigingen kan een handeling ook worden weergegeven of verborgen op basis van de configuratie van de huidige app. Het heeft bijvoorbeeld geen zin om de handeling &#39;Remote Build&#39; beschikbaar te maken als er geen PhoneGap-cloudconfiguratie aan de app is toegewezen. Deze staan hieronder vermeld onder &#39;**Configuratievoorwaarde**&#39; secties.
+Naast deze machtigingen kan een handeling ook worden weergegeven of verborgen op basis van de configuratie van de huidige app. Het heeft bijvoorbeeld geen zin om de handeling &#39;Remote Build&#39; beschikbaar te maken als er geen PhoneGap-cloudconfiguratie aan de app is toegewezen. Deze zijn hieronder vermeld onder &quot;**sectie van de Voorwaarde van de Configuratie**.
 
 ### App-tegel beheren {#manage-app-tile}
 
 De tegel bevat momenteel geen handelingen waarvoor machtigingen vereist zijn, maar de detailpagina voor de toepassing heeft de volgende handelingen:
 
-* *Bewerken* voor app-auteur en app-admin (UI Trigger - jcr:write - on /content/phonegap/{suffix})
-* *Downloaden* voor app-auteur en app-admin (UI-activering - op /content/phonegap/{suffix})
+* *geeft* voor app-auteur en app-admin uit (Trekker UI - jcr:write - op /content/phonegap/{suffix})
+* *Download* voor app-auteur en app-admin (Trekker UI - op /content/phonegap/{suffix})
 
 In de onderstaande afbeelding ziet u de opties voor downloaden en bewerken voor een app:
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![ chlimage_1-21 ](assets/chlimage_1-21.png)

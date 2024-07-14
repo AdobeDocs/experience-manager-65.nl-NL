@@ -25,48 +25,48 @@ Nu de componenten voor het aangepaste opmerkingensysteem in de toepassingsmap (/
 
 De clientbibliotheken die nodig zijn voor de stijl en werking van de standaardopmerkingen zijn ook nodig voor uitgebreide opmerkingen.
 
-De [Community Components Guide](/help/communities/components-guide.md) identificeert de vereiste clientbibliotheken. Blader naar de Component Guide en bekijk de component Comments, bijvoorbeeld:
+De [ Communautaire Gids van Componenten ](/help/communities/components-guide.md) identificeert de vereiste cliëntbibliotheken. Blader naar de Component Guide en bekijk de component Comments, bijvoorbeeld:
 
-[https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
+[ https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-Let op de drie clientbibliotheken die nodig zijn voor het renderen en correct functioneren van Opmerkingen. Deze moeten worden opgenomen wanneer naar de uitgebreide opmerkingen wordt verwezen, en de [uitgebreide clientbibliotheek met opmerkingen](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
+Let op de drie clientbibliotheken die nodig zijn voor het renderen en correct functioneren van Opmerkingen. Deze moeten worden omvat waar de uitgebreide Commentaren van verwijzingen worden voorzien, en de [ uitgebreide de cliëntbibliotheek van Commentaren ](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
-![comments-component1](assets/comments-component1.png)
+![ commentaren-component1 ](assets/comments-component1.png)
 
 ### Aangepaste opmerkingen toevoegen aan een pagina {#add-custom-comments-to-a-page}
 
-Aangezien er slechts één opmerkingsysteem per pagina kan zijn, is het eenvoudiger om een voorbeeldpagina te maken zoals in de samenvatting wordt beschreven [een voorbeeldpagina maken](/help/communities/create-sample-page.md) zelfstudie.
+Aangezien er slechts één systeem van de Commentaar per pagina kan zijn, is het eenvoudiger om een steekproefpagina tot stand te brengen zoals die in het korte [ wordt beschreven een voorbeeldpagina ](/help/communities/create-sample-page.md) leerprogramma creëren.
 
-Als u een aangepaste component hebt gemaakt, typt u de ontwerpmodus en stelt u de componentgroep Custom beschikbaar om de optie `Alt Comments` aan de pagina toe te voegen.
+Nadat u de component `Alt Comments` hebt gemaakt, opent u de ontwerpmodus en stelt u de componentgroep Custom beschikbaar zodat de component aan de pagina kan worden toegevoegd.
 
-De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliotheken voor opmerkingen worden toegevoegd aan de clientlibslist voor de pagina (zie [Clientlibs voor Community-componenten](/help/communities/clientlibs.md)).
+Voor de Commentaar om te verschijnen en behoorlijk te functioneren, moeten de cliëntbibliotheken voor Commentaren aan cliëntlibslist voor de pagina worden toegevoegd (zie [ Clientlibs voor de Componenten van Gemeenschappen ](/help/communities/clientlibs.md)).
 
 #### Opmerkingen Clientlibs op voorbeeldpagina {#comments-clientlibs-on-sample-page}
 
-![comments-clientlibs-crxde](assets/comments-clientlibs-crxde.png)
+![ commentaren-clientlibs-crxde ](assets/comments-clientlibs-crxde.png)
 
 #### Auteur: Alt-opmerking op voorbeeldpagina {#author-alt-comment-on-sample-page}
 
-![alt-comment](assets/alt-comment.png)
+![ alt-comment ](assets/alt-comment.png)
 
 #### Auteur: knooppunt Voorbeeld van opmerkingen op pagina {#author-sample-page-comments-node}
 
-U kunt het resourceType in CRXDE verifiëren door de eigenschappen van de commentaarknoop voor de steekproefpagina te bekijken bij `/content/sites/sample/en/jcr:content/content/primary/comments`.
+U kunt het resourceType in CRXDE verifiëren door de eigenschappen van de commentaarknoop voor de steekproefpagina bij `/content/sites/sample/en/jcr:content/content/primary/comments` te bekijken.
 
-![verify-comment-crxde](assets/verify-comment-crxde.png)
+![ verifieer-commentaar-crxde ](assets/verify-comment-crxde.png)
 
-#### Voorbeeldpagina publiceren {#publish-sample-page}
+#### Publish-voorbeeldpagina {#publish-sample-page}
 
-Nadat de aangepaste component aan de pagina is toegevoegd, is het ook nodig (re) [de pagina publiceren](/help/communities/sites-console.md#publishing-the-site).
+Nadat de douanecomponent aan de pagina wordt toegevoegd, is het ook noodzakelijk om (re) [ de pagina ](/help/communities/sites-console.md#publishing-the-site) te publiceren.
 
-#### Publiceren: Alt-opmerking op voorbeeldpagina {#publish-alt-comment-on-sample-page}
+#### Publish: Alt-commentaar op voorbeeldpagina {#publish-alt-comment-on-sample-page}
 
-Nadat u zowel de aangepaste toepassing als de voorbeeldpagina hebt gepubliceerd, kunt u een opmerking invoeren. Bij aanmelding met een van de [demo-gebruiker](/help/communities/tutorials.md#demo-users) Voor beheerders is het mogelijk om een opmerking te plaatsen.
+Nadat u zowel de aangepaste toepassing als de voorbeeldpagina hebt gepubliceerd, kunt u een opmerking invoeren. Wanneer binnen ondertekend, of met a [ demogebruiker ](/help/communities/tutorials.md#demo-users) of admin, is het mogelijk om een commentaar te posten.
 
 Hier aaron.mcdonald@mailinator.com vindt u een opmerking:
 
-![publish-alt-comment](assets/publish-alt-comment.png)
+![ publish-alt-comment ](assets/publish-alt-comment.png)
 
-![publish-alt-comment1](assets/publish-alt-comment1.png)
+![ publish-alt-comment1 ](assets/publish-alt-comment1.png)
 
 Nu het lijkt of de uitgebreide component correct werkt met de standaardweergave, is het tijd om de weergave te wijzigen.

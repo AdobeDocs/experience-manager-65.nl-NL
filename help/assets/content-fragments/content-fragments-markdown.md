@@ -14,9 +14,9 @@ ht-degree: 3%
 
 # Markering {#markdown}
 
-Wanneer u [ontwerpen](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud zonder kop kunt schrijven:
+Wanneer u [ creatie ](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u gemakkelijk te laten schrijven zonder kop inhoud:
 
-![markeringseditor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![ markdown redacteur ](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 U kunt het volgende definiëren:
 
@@ -60,7 +60,7 @@ Een regeleinde wordt gemaakt door een regel met twee of meer spaties te eindigen
 
 U kunt inline-koppelingen en verwijzingskoppelingen maken.
 
-In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]`.
+In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]` .
 
 Dit zijn voorbeelden van inlineverbindingen:
 
@@ -182,7 +182,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
 ## Backslash-escapen {#backslash-escapes}
 
-Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
+Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML &lt;em>-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 
     `\\*literal asterisks\\*`
 

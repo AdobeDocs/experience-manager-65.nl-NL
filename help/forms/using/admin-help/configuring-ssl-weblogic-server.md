@@ -54,8 +54,8 @@ De opdracht Keytool bevindt zich gewoonlijk in de map JavaJre/bin en moet versch
    <td><p>De locatie en naam van het sleutelarchiefbestand.</p><p>De locatie kan het absolute pad van het bestand bevatten. Of het kan relatief zijn ten opzichte van de huidige map van de opdrachtprompt waar de sleutelgereedschapsopdracht wordt ingevoerd.</p></td>
    <td>
     <ul>
-     <li><p>Aangepast sleutelarchief voor identiteiten: <code>[</code><i>appserverdomein<code>]</code></i><code>/adobe/</code><i>[servernaam]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>Aangepast sleutelarchief vertrouwen: <code>[</code><i>appserverdomein<code>]</code></i><code>/adobe/</code><i>[servernaam]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>Keystore van de Identiteit van de douane: <code>[</code><i> appserverdomain <code>]</code></i><code>/adobe/</code> <i> [servernaam] </i><code>/ads-ssl.jks</code></p></li>
+     <li><p>Keystore van het Vertrouwen van de douane: <code>[</code><i> appserverdomain <code>]</code></i><code>/adobe/</code> <i> [servernaam] </i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -80,7 +80,7 @@ De opdracht Keytool bevindt zich gewoonlijk in de map JavaJre/bin en moet versch
   <tr>
    <td><p>-keypass</p></td>
    <td><p>Het wachtwoord dat de persoonlijke sleutel van het sleutelpaar beschermt.</p></td>
-   <td><p>Gebruik het wachtwoord dat u voor de <code>-storepass</code> -optie. Het sleutelwachtwoord moet ten minste zes tekens lang zijn.</p></td>
+   <td><p>Gebruik hetzelfde wachtwoord als voor de optie <code>-storepass</code> . Het sleutelwachtwoord moet ten minste zes tekens lang zijn.</p></td>
   </tr>
   <tr>
    <td><p>-dname</p></td>
@@ -102,14 +102,14 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 
 ## De sleutelarchieven Aangepaste identiteit en Vertrouwen maken {#create-the-custom-identity-and-trust-keystores}
 
-1. Van een bevelherinnering, navigeer aan *[appserverdomein]*/adobe/*[servernaam]*.
+1. Van een bevelherinnering, navigeer aan *[appserverdomain]*/adobe/*[servernaam]*.
 1. Voer de volgende opdracht in:
 
    `[JAVA_HOME]/bin/keytool -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass store_password -keypass key_password -dname "CN=Hostname, OU=Group Name, O=Company Name, L=City Name, S=State,C=Country Code`
 
    >[!NOTE]
    >
-   >Vervangen `[JAVA_HOME]`*met de directory waarin de JDK is geïnstalleerd, en vervangt u de cursieve tekst door waarden die overeenkomen met uw omgeving.*
+   >Vervang `[JAVA_HOME]`*met de folder waar JDK geïnstalleerd is, en vervang de tekst cursief met waarden die met uw milieu beantwoorden.*
 
    Bijvoorbeeld:
 
@@ -117,19 +117,19 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   Het sleutelarchiefbestand voor aangepaste identiteiten met de naam &quot;ads-credentials.jks&quot; wordt gemaakt in het dialoogvenster [appserverdomein]/adobe/[servernaam] directory.
+   Het sleutelarchiefdossier van de Identiteit van de Douane genoemd &quot;ads-credentials.jks&quot;wordt gecreeerd in [ appserverdomain ]/adobe/[ servernaam ] folder.
 
 1. Extraheer het certificaat uit het sleutelarchief met advertenties door de volgende opdracht in te voeren:
 
-   [JAVA_HOME]`/bin/keytool -export -v -alias ads-credentials`
+   [ JAVA_HOME ]`/bin/keytool -export -v -alias ads-credentials`
 
    `-file "ads-ca.cer" -keystore "ads-credentials.jks"`
 
-   `-storepass` `*store*`*_**password**
+   `-storepass` `*store*` *_ **wachtwoord**
 
    >[!NOTE]
    >
-   >Vervangen `[JAVA_HOME]` met de directory waarin de JDK is geïnstalleerd, en vervangen `store`*_* `password`* met het wachtwoord voor het sleutelarchief van de Aangepaste identiteit.*
+   >Vervang `[JAVA_HOME]` door de map waarin de JDK is geïnstalleerd en vervang `store`*_* `password`* door het wachtwoord voor het sleutelarchief van de Aangepaste identiteit.*
 
    Bijvoorbeeld:
 
@@ -137,16 +137,16 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   Het certificaatbestand met de naam &quot;ads-ca.cer&quot; wordt gemaakt in het dialoogvenster [appserverdomein]/adobe/[*servernaam*] directory.
+   Het certificaatdossier genoemd &quot;ads-ca.cer&quot;wordt gecreeerd in [ appserverdomain ]/adobe/[*servernaam*] folder.
 
 1. Kopieer het bestand ads-ca.cer naar alle hostcomputers die beveiligde communicatie met de toepassingsserver nodig hebben.
 1. Voeg het certificaat in een nieuw sleutelarchiefbestand in (het sleutelarchief van Aangepast vertrouwen) door de volgende opdracht in te voeren:
 
-   [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
+   [ JAVA_HOME ] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
    >[!NOTE]
    >
-   >Vervangen `[JAVA_HOME]` met de directory waarin de JDK is geïnstalleerd, en vervangen `store`*_* `password` en `key`*_* `password` *met uw eigen wachtwoorden.*
+   >Vervang `[JAVA_HOME]` met de folder waar JDK geïnstalleerd is, en vervang `store`*_* `password` en `key`*_* `password` *met uw eigen wachtwoorden.*
 
    Bijvoorbeeld:
 
@@ -154,50 +154,50 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-Het sleutelarchiefbestand voor aangepast vertrouwen met de naam &quot;ads-ca.jks&quot; wordt gemaakt in het dialoogvenster [appserverdomein]/adobe/&#39;server&#39; directory.
+Het sleutelarchiefdossier van het Vertrouwen van de Douane genoemd &quot;advertenties-ca.jks&quot;wordt gecreeerd in [ appserverdomain ]/adobe/&#39;server&#39; folder.
 
 Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangepaste identiteit en het sleutelarchief Aangepast vertrouwen dat u hebt gemaakt. Schakel ook de WebLogic Hostname Verification-functie uit omdat de DN-naam die is gebruikt om de sleutelarchiefbestanden te maken, niet de naam van de computer bevat die als host fungeert voor WebLogic Server.
 
 ## WebLogic configureren om SSL te gebruiken {#configure-weblogic-to-use-ssl}
 
-1. Start de WebLogic Server-beheerconsole door te typen `https://`*[hostnaam ]*`:7001/console` in de URL-regel van een webbrowser.
-1. Selecteer onder Omgeving in Domeinconfiguraties de optie **Servers > &#39;server&#39; > Configuratie > Algemeen**.
-1. Onder Algemeen, in Configuratie ervoor zorgen dat **Luisteren naar poort ingeschakeld** en **SSL-luisterpoort ingeschakeld** zijn geselecteerd. Als deze optie niet is ingeschakeld, voert u de volgende handelingen uit:
+1. Begin de WebLogic Server beleidsconsole door `https://`*[ gastheernaam ]*`:7001/console` in de lijn URL van Webbrowser te typen.
+1. Onder Milieu, in de Configuraties van het Domein, uitgezochte **Servers > &quot;server&quot;> Configuratie > Algemeen**.
+1. Onder Algemeen, in Configuratie, zorg ervoor dat **Toegelaten Haven** beluistert en **SSL Toegelaten Haven** wordt geselecteerd. Als deze optie niet is ingeschakeld, voert u de volgende handelingen uit:
 
-   1. Klik onder Wijzigen in midden op **Vergrendelen en bewerken** om selecties en waarden te wijzigen.
-   1. Controleer de **Luisteren naar poort ingeschakeld** en **SSL-luisterpoort ingeschakeld** selectievakjes.
+   1. Onder het Centrum van de Verandering, klik **Slot &amp; geef** uit om selecties en waarden te wijzigen.
+   1. Controleer **Toegelaten Haven** en **SSL luisteren Toegelaten Haven** controledozen.
 
 1. Als deze server een Beheerde Server is, de verandering luistert Haven aan een ongebruikte havenwaarde (zoals 8001) en SSL luistert Haven aan een ongebruikte havenwaarde (zoals 8002). Voor een stand-alone server, is de standaardSSL haven 7002.
-1. Klikken **Configuratie vrijgeven**.
-1. Klik onder Omgeving in Domeinconfiguraties op **Servers > [*Beheerde server*] > Configuratie > Algemeen**.
-1. Onder Algemeen, in Configuratie, selecteer **sleutelarchieven**.
-1. Klik onder Wijzigen in midden op **Vergrendelen en bewerken** om selecties en waarden te wijzigen.
-1. Klikken **Wijzigen** om de lijst met sleutelarchieven op te halen als vervolgkeuzelijst en **Aangepaste identiteit en aangepast vertrouwen**.
+1. Klik **Configuratie van de Versie**.
+1. Onder Milieu, in de Configuraties van het Domein, klik **Servers > [*Beheerde Server*] > Configuratie > Algemeen**.
+1. Onder Algemeen, in Configuratie, uitgezochte **Sleutelarchieven**.
+1. Onder het Centrum van de Verandering, klik **Slot &amp; geef** uit om selecties en waarden te wijzigen.
+1. Klik **Verandering** om de sleutelarchieflijst als drop-down lijst te krijgen en **Douane Identiteit en het Vertrouwen van de Douane te selecteren**.
 1. Geef onder Identiteit de volgende waarden op:
 
-   **Aangepast identiteitssleutelarchief**: *[appserverdomein]*/adobe/*[servernaam]*/ads-credentials.jks, waarbij *[appserverdomein] *is het werkelijke pad en *[servernaam]* is de naam van de toepassingsserver.
+   **Keystore van de Identiteit van de Douane**: *[appserverdomain]*/adobe/*[servernaam]* /ads-credentials.jks, waar *[ appserverdomain ] *is de daadwerkelijke weg en *[servernaam]* is de naam van de toepassingsserver.
 
-   **Type aangepast identiteitssleutelarchief**: JKS
+   **Type van Keystore van de Identiteit van de Douane**: JKS
 
-   **Passphrase van het Sleutelarchief van de Identiteit**: *mypassword* (aangepast keystore-wachtwoord voor identiteit)
+   **Keystore Passphrase van de Identiteit van de Douane**: *mypassword* (het wachtwoord van het sleutelarchief van de douaneidentiteit)
 
 1. Geef onder Vertrouwd de volgende waarden op:
 
-   **Aangepaste sleutelarchiefbestandsnaam voor vertrouwen**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, waarbij `*[appserverdomain]*` is het werkelijke pad
+   **Naam van het Dossier van het Sleutelarchief van het Vertrouwen van de Douane**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, waar `*[appserverdomain]*` de daadwerkelijke weg is
 
-   **Type aangepast sleutelarchief vertrouwen**: JKS
+   **Type van Keystore van het Vertrouwen van de Douane**: JKS
 
-   **Wachtwoordgroep aangepaste vertrouwde sleutelarchief**: *mypassword* (aangepast wachtwoord voor vertrouwenssleutel)
+   **Uitgezochte Uitgeefte van het Sleutelarchief van het Vertrouwen Wis**: *mypassword* (het belangrijkste wachtwoord van het douanevertrouwen)
 
-1. Onder Algemeen, in Configuratie, selecteer **SSL**.
+1. Onder Algemeen, in Configuratie, uitgezochte **SSL**.
 1. Standaard is Keystore geselecteerd voor Identiteit en Vertrouwenslocaties. Als dat niet het geval is, wijzigt u deze in sleutelarchief.
 1. Geef onder Identiteit de volgende waarden op:
 
-   **Alias persoonlijke sleutel**: advertenties
+   **Persoonlijke Zeer belangrijke alias**: advertenties-geloofsbrieven
 
    **Passphrase**: *mypassword*
 
-1. Klikken **Configuratie vrijgeven**.
+1. Klik **Configuratie van de Versie**.
 
 ## De functie Hostnaamverificatie uitschakelen {#disable-the-hostname-verification-feature}
 

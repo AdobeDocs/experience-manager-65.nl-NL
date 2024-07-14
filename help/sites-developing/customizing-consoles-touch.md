@@ -23,11 +23,13 @@ ht-degree: 0%
 >
 >In dit document wordt beschreven hoe consoles in de moderne interface met aanraakbediening kunnen worden aangepast. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM biedt verschillende mechanismen om u in staat te stellen de consoles (en de [functionaliteit voor paginaontwerp](/help/sites-developing/customizing-page-authoring-touch.md)) van de ontwerpinstantie.
+AEM verstrekt diverse mechanismen om u toe te laten om de consoles (en de [ pagina auteursfunctionaliteit ](/help/sites-developing/customizing-page-authoring-touch.md)) van uw auteursinstantie aan te passen.
 
-* Clientlibs Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` Het kan bijvoorbeeld de code bevatten die is vereist voor uw aangepaste component.
+* Clientlibs
+Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u onder `/apps.` uw eigen clientlib maken. Deze kan bijvoorbeeld de code bevatten die is vereist voor uw aangepaste component.
 
-* Bedekkingen zijn gebaseerd op knooppuntdefinities en laten u de standaardfunctionaliteit bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
+* Bedekkingen
+Bedekkingen zijn gebaseerd op knooppuntdefinities en u kunt de standaardfunctionaliteit (in `/libs` ) bedekken met uw eigen aangepaste functionaliteit (in `/apps` ). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
 
 Deze kunnen op vele manieren worden gebruikt om uw AEM te uitbreiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
 
@@ -35,26 +37,26 @@ Deze kunnen op vele manieren worden gebruikt om uw AEM te uitbreiden. Een kleine
 >
 >Zie voor meer informatie:
 >
->* Gebruiken en maken [clientlibs](/help/sites-developing/clientlibs.md).
->* Gebruiken en maken [bedekkingen](/help/sites-developing/overlays.md).
->* [Graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* Het gebruiken van en het creëren van [ clientlibs ](/help/sites-developing/clientlibs.md).
+>* Het gebruiken van en het creëren van [ bekledingen ](/help/sites-developing/overlays.md).
+>* [ Graniet ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 
 
 >[!CAUTION]
 >
->U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
+>U ***moet*** niets in de `/libs` weg veranderen.
 >
->Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
+>1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het in `/libs` staat) onder `/apps`
 >
->1. Breng wijzigingen aan in `/apps`
+>1. Breng eventuele wijzigingen aan binnen `/apps`
 >
 
-De volgende locatie in het dialoogvenster `/libs` de structuur kan worden bedekt door :
+De volgende locatie in de `/libs` -structuur kan bijvoorbeeld worden bedekt:
 
 * consoles (consoles op basis van gebruikersinterface-pagina&#39;s van graniet), bijvoorbeeld:
 
@@ -62,7 +64,7 @@ De volgende locatie in het dialoogvenster `/libs` de structuur kan worden bedekt
 
 >[!NOTE]
 >
->Zie het artikel in de Knowledge Base. [Problemen AEM TouchUI oplossen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)voor meer tips en hulpmiddelen.
+>Zie het artikel van de Kennisbank, [ het Oplossen van problemen AEM kwesties TouchUI ](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor verdere uiteinden en hulpmiddelen.
 
 ## De standaardweergave voor een console aanpassen {#customizing-the-default-view-for-a-console}
 
@@ -92,7 +94,7 @@ U kunt de standaardweergave (kolom, kaart, lijst) voor een console aanpassen:
 
 ### Nieuwe handeling toevoegen aan de werkbalk {#add-new-action-to-the-toolbar}
 
-1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld een **Bevorderen tot Twitter** actie bij:
+1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld, bevorderen a **aan Twitter** actie bij:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -124,13 +126,13 @@ U kunt de standaardweergave (kolom, kaart, lijst) voor een console aanpassen:
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Met de eigenschappen van dit knooppunt kunt u de `groups` is toegestaan de specifieke handeling uit te voeren, bijvoorbeeld `administrators`
+   Met eigenschappen op dit knooppunt kunt u de handeling `groups` definiëren die de specifieke handeling mag uitvoeren, bijvoorbeeld `administrators`
 
 ### Kolommen aanpassen in de lijstweergave {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Deze functie is geoptimaliseerd voor kolommen met tekstvelden; voor andere gegevenstypen is het mogelijk om te bedekken `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Deze functie is geoptimaliseerd voor kolommen met tekstvelden; voor andere gegevenstypen is het mogelijk om `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` te bedekken.
 
 U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
@@ -144,11 +146,11 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
    * Voeg uw nieuwe kolommen toe - of verwijder bestaande kolommen.
 
-   Zie [Bedekkingen gebruiken (en de samenvoeging van bronnen voor verschuiven)](/help/sites-developing/overlays.md) voor meer informatie .
+   Zie [ Gebruikend Bedekkingen (en de het Verschuiven Fusie van het Middel) ](/help/sites-developing/overlays.md) voor meer informatie.
 
 1. Optioneel:
 
-   * Als u aanvullende gegevens wilt aansluiten, moet u een [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met een
+   * Als u extra gegevens wilt stoppen, moet u a [ PageInforProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a schrijven
      `pageInfoProviderType` eigenschap.
 
    Bijvoorbeeld, zie hieronder de klasse/de bundel in bijlage (van GitHub).
@@ -159,4 +161,4 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 Wanneer het gebruiken van een console, is een gemeenschappelijk gebruiksgeval wanneer de gebruiker uit middelen (bijvoorbeeld, pagina&#39;s, componenten, activa, etc.) moet selecteren. Dit kan bijvoorbeeld de vorm aannemen van een lijst waaruit de auteur een item moet kiezen.
 
-Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [dit artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor meer informatie.
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [ dit artikel ](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor details.

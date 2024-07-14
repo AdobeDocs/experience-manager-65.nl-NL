@@ -21,17 +21,17 @@ ht-degree: 0%
 
 In de werkruimte van AEM Forms, kunnen de managers tot de taken nu toegang hebben die aan iedereen in hun hiërarchie worden toegewezen - directe of indirecte rapporten - en diverse acties op hen uitvoeren. De taken zijn beschikbaar op het tabblad Te doen in de AEM Forms-werkruimte. De acties die op de taken van directe rapporten worden gesteund zijn:
 
-**Doorsturen** - Een taak doorsturen van direct rapport naar elke gebruiker.
+**door:sturen** - door:sturen een taak van direct rapport aan om het even welke gebruiker.
 
-**Claim** - eisen dat een verslag rechtstreeks wordt opgesteld.
+**Vordering** - eis een taak van een direct rapport.
 
-**Claim &amp; Openen** - Vordering een taak van een direct rapport en open het automatisch in de te doen lijst van de manager.
+**Vordering &amp; Open** - eis een taak van een direct rapport en open het automatisch in de te doen lijst van de manager.
 
-**Afwijzen** - Een taak die door een andere gebruiker naar een direct rapport is doorgestuurd, afwijzen. Deze optie is beschikbaar voor de taken die door andere gebruikers aan een direct rapport door:sturen.
+**Weigeren** - verwerp een taak die aan een direct rapport door:sturen door één of andere andere gebruiker. Deze optie is beschikbaar voor de taken die door andere gebruikers aan een direct rapport door:sturen.
 
 AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de gebruiker toegangsbeheer (ACL) heeft. Een dergelijke controle zorgt ervoor dat een gebruiker alleen de taken kan ophalen waarop de gebruiker toegangsmachtigingen heeft. Met behulp van externe webservices en implementaties om de hiërarchie te definiëren, kan een organisatie de definitie van manager en directe rapporten aanpassen aan hun behoeften.
 
-1. Maak een DSC. Zie het onderwerp &#39;Componenten ontwikkelen voor AEM Forms&#39; in voor meer informatie [Programmeren met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) hulplijn.
+1. Maak een DSC. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor AEM Forms&quot;onderwerp in [ Programmerend met AEM Forms ](https://www.adobe.com/go/learn_aemforms_programming_63) gids.
 1. In DSC, bepaal nieuw SPI voor hiërarchiebeheer om directe rapporten en hiërarchie binnen de gebruikers van AEM Forms te bepalen. Hier volgt een voorbeeld van een Java™-codefragment.
 
    ```java
@@ -111,11 +111,11 @@ AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de ge
    </component>
    ```
 
-1. Implementeer DSC via Workbench. Opnieuw starten `ProcessManagementTeamTasksService` service.
+1. Implementeer DSC via Workbench. Start de service `ProcessManagementTeamTasksService` opnieuw.
 1. Mogelijk moet u de browser vernieuwen of u opnieuw afmelden/aanmelden bij de gebruiker.
 
 Het volgende scherm illustreert de toegang tot van de taken van directe rapporten en de beschikbare acties.
 
-![cu_manager_view](assets/cu_manager_view.png)
+![ cu_manager_view ](assets/cu_manager_view.png)
 
 De taken van de toegang tot directe rapporten en handelen op de taken

@@ -1,6 +1,6 @@
 ---
 title: JSRP - JCR Storage Resource Provider
-description: JSRP is het meest geschikt voor demonstratie- of ontwikkelomgevingen van één instantie Publish en één instantie Auteur
+description: JSRP is het meest geschikt voor demonstratie- of ontwikkelomgevingen van één Publish-instantie en één Author-instantie
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Wanneer AEM Communities JSRP gebruikt als opslagoptie (de standaardinstelling), wordt inhoud van de community opgeslagen in de JCR en door de gebruiker gegenereerde inhoud (UGC) is alleen toegankelijk van de auteur of de publicatieinstantie waarnaar deze is gepost.
 
-Wegens de eenvoud van plaatsing, is JSRP best geschikt voor demonstratie of ontwikkelomgevingen van één Publish instantie en één Auteur instantie.
+Wegens de eenvoud van plaatsing, is JSRP het best geschikt voor demonstratie of ontwikkelomgevingen van één instantie van Publish en één instantie van de Auteur.
 
-Zie ook [Kenmerken van SRP-opties](working-with-srp.md#characteristics-of-srp-options) en [Aanbevolen topologieën](topologies.md).
+Zie ook [ Kenmerken van Opties SRP ](working-with-srp.md#characteristics-of-srp-options) en [ Aanbevolen Topologieën ](topologies.md).
 
 ## Configuratie {#configuration}
 
@@ -32,7 +32,7 @@ Zie ook [Kenmerken van SRP-opties](working-with-srp.md#characteristics-of-srp-op
 
 Standaard is JSRP de opslagoptie voor UGC.
 
-De [Opslagconfiguratieconsole](srp-config.md) maakt het mogelijk de standaardopslagconfiguratie te selecteren, die aangeeft welke implementatie van SRP moet worden gebruikt.
+De [ console van de Configuratie van de Opslag ](srp-config.md) staat voor de selectie van de standaardopslagconfiguratie toe, die identificeert welke implementatie van SRP aan gebruik.
 
 In de auteursomgeving, om de console van de Configuratie van de Opslag te bereiken
 
@@ -42,14 +42,14 @@ In de auteursomgeving, om de console van de Configuratie van de Opslag te bereik
 
 * Selecteren **[!UICONTROL Submit]**
 
-![jsrp-configuration](assets/jsrp-configuration.png)
+![ jsrp-configuration ](assets/jsrp-configuration.png)
 
 ### De configuratie publiceren {#publishing-the-configuration}
 
 Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke configuratie in het publicatiemilieu wordt geplaatst:
 
 * Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
-* Selecteren **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
+* Selecteer **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]** :
 
    * Bladeren naar `/conf/global/settings/community/srpc/`
 
@@ -57,7 +57,7 @@ Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke c
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
-Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, die vaak in de publicatieomgeving worden ingevoerd, gaat u naar:
+Voor informatie betreffende *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingegaan in publiceer milieu, bezoek:
 
 * [Gebruikerssynchronisatie](sync.md)
 * [Gebruikers en gebruikersgroepen beheren](users.md)
@@ -68,21 +68,21 @@ Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*,
 
 Zorg ervoor dat JSRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Standaard is de opslagbronprovider JSRP.
 
-Ga bij alle AEM Auteur en Publiceren naar de Storage Configuration-console of controleer de AEM:
+Ga in alle AEM van Auteur en Publish naar de Storage Configuration-console of controleer de AEM:
 
-* In JCR, als [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* In JCR, als [/conf/global/settings/community ](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Het bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) knoop, betekent het dat de opslagleverancier JSRP is.
-   * Als het srpc-knooppunt bestaat en het knooppunt bevat [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), zouden de eigenschappen van de standaardconfiguratie JSRP moeten bepalen om de standaardleverancier te zijn.
+   * Het bevat geen [ srpc ](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) knoop, het betekent dat de opslagleverancier JSRP is.
+   * Als de srpc knoop bestaat en knoop [ standaardconfiguratie ](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration) bevat, zouden de eigenschappen van de standaardconfiguratie JSRP moeten bepalen om de standaardleverancier te zijn.
 
 ### UGC niet zichtbaar op instantie Auteur {#ugc-not-visible-on-author-instance}
 
-Dit is geen bug. Een kenmerk van JSRP is dat communautaire inhoud die wordt ingevoerd in de publicatieomgeving, alleen zichtbaar is in de publicatieomgeving.
+Dit is geen bug. Een kenmerk van JSRP is dat communautaire inhoud die in de publicatieomgeving wordt ingevoerd, alleen zichtbaar is in de Publish-omgeving.
 
-### UGC niet zichtbaar bij publicatie-instantie {#ugc-not-visible-on-publish-instance}
+### UGC niet zichtbaar op Publish-instantie {#ugc-not-visible-on-publish-instance}
 
-Als één enkel Publish instantie of als publicatiecluster wordt opgesteld, dan volg de instructies voor [UGC niet zichtbaar in JCR](#ugc-not-visible-in-jcr).
+Als één enkele instantie van Publish of als een publicatiecluster wordt opgesteld, dan volg de instructies voor [ UGC niet Zichtbaar in JCR ](#ugc-not-visible-in-jcr).
 
-Als een publicatielandbouwbedrijf wordt opgesteld, is een kenmerk van JSRP dat de communautaire inhoud slechts zichtbaar op de Publish instantie is waaraan het werd gepost.
+Als een publicatielandbouwbedrijf wordt opgesteld, is een kenmerk van JSRP dat de communautaire inhoud slechts zichtbaar op de instantie van Publish is waaraan het werd gepost.
 
-Om ervoor te zorgen dat UGC zichtbaar is vanuit elke publicatie-instantie, is een publicatiecluster vereist.
+Als u wilt dat UGC zichtbaar is vanuit een Publish-instantie, is een publicatiecluster vereist.

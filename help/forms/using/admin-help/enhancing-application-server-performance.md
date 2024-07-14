@@ -24,7 +24,7 @@ In deze inhoud worden optionele instellingen beschreven die u kunt configureren 
 
 AEM formulieren gebruiken de opslagplaats voor AEM formulieren als gegevensbron. De opslagplaats voor AEM formulieren slaat toepassingselementen op en bij uitvoering kunnen services elementen ophalen uit de opslagplaats als onderdeel van het voltooien van een geautomatiseerd bedrijfsproces.
 
-Toegang tot de gegevensbron kan significant zijn, afhankelijk van het aantal AEM formuliermodules dat u gebruikt en het aantal gelijktijdige gebruikers dat de toepassing opent. De toegang van de gegevensbron kan worden geoptimaliseerd gebruikend verbinding het pooling. *Verbinding samenvoegen* Dit is een techniek die wordt gebruikt om de overhead van het maken van nieuwe databaseverbindingen te voorkomen telkens wanneer een toepassing of serverobject toegang tot de database vereist. Verbindingspooling wordt gewoonlijk gebruikt in web-based en ondernemingstoepassingen en wordt gewoonlijk behandeld door, maar niet beperkt tot, een toepassingsserver.
+Toegang tot de gegevensbron kan significant zijn, afhankelijk van het aantal AEM formuliermodules dat u gebruikt en het aantal gelijktijdige gebruikers dat de toepassing opent. De toegang van de gegevensbron kan worden geoptimaliseerd gebruikend verbinding het pooling. *Verbinding die* samenbrengt is een techniek wordt gebruikt om de overheadkosten te vermijden van het maken van nieuwe gegevensbestandverbindingen telkens als een toepassing of servervoorwerp toegang tot het gegevensbestand vereist. Verbindingspooling wordt gewoonlijk gebruikt in web-based en ondernemingstoepassingen en wordt gewoonlijk behandeld door, maar niet beperkt tot, een toepassingsserver.
 
 Het is belangrijk om uw parameters van de verbindingspool behoorlijk te vormen zodat u nooit uit verbindingen loopt, die toepassingsprestaties kunnen veroorzaken om te verslechteren.
 
@@ -99,7 +99,7 @@ Een document dat groter is dan de maximale inline-grootte wordt opgeslagen in he
 
 Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlinegrootte), wordt de inhoud in de database opgeslagen als onderdeel van de serialisatielading van het document. Daarom kan het verhogen van de maximum gealigneerde grootte de gegevensbestandgrootte beïnvloeden.
 
-**De maximale inline-grootte wijzigen**
+**verander de maximum gealigneerde grootte**
 
 1. Klik in de beheerconsole op Instellingen > Core System Settings > Configurations.
 1. Voer een waarde in het vak Max. inline-grootte van standaarddocument in en klik op OK.
@@ -128,7 +128,7 @@ Een zwaar geladen systeem dat vele documenten verwerkt kan snel het JVM heapgehe
 
 Maximale toename van JVM voor heap = (grootte van inlinedocumenten) x (gemiddeld aantal verwerkte documenten).
 
-**De maximale heapgrootte van JVM berekenen**
+**Berekend de JVM maximumheapgrootte**
 
 In dit voorbeeld is de huidige maximale JVM-heap ingesteld op 512 MB en de maximale inline-grootte is 64 KB. De server moet worden geconfigureerd voor het scenario waarin 10 taken tegelijkertijd worden uitgevoerd en elke taak 9 invoerbestanden en 1 resultaatbestand bevat (in totaal 10 bestanden per taak en 100 bestanden die tegelijkertijd worden verwerkt). Alle bestanden zijn kleiner dan 512 kB.
 
@@ -140,7 +140,7 @@ De vereiste toename van de maximale heap-grootte van de JVM wordt berekend met b
 
 De maximale heapgrootte van JVM moet met 50 MB worden verhoogd voor een totaal van 562 MB.
 
-**Samenvatting van heapfragmentatie**
+**het overwegen van heapfragmentatie**
 
 Het plaatsen van de grootte van gealigneerde documenten aan grote waarden verhoogt het risico van een OutOfMemoryError op systemen die aan heapfragmentatie gevoelig zijn. Als u een document inline wilt opslaan, moet het JVM-heapgeheugen voldoende aaneengesloten ruimte hebben. Sommige besturingssystemen, JVM&#39;s en algoritmen voor het opruimen van ongewenste details zijn vatbaar voor heapfragmentatie. De fragmentatie vermindert de hoeveelheid aaneengesloten heapruimte en kan tot een OutOfMemoryError leiden zelfs wanneer voldoende totale vrije ruimte bestaat.
 
@@ -154,16 +154,16 @@ Deze sectie beschrijft montages specifiek voor een milieu van de Server van de T
 
 ### Het maximale geheugen dat aan de JVM is toegewezen verhogen {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
-Als u de Manager van de Configuratie in werking stelt of probeert om Onderneming JavaBeans (EJB) te produceren, stel code door het nut van de bevellijn te gebruiken op *ejbopstellen* en er een OutOfMemory-fout optreedt, vergroot de hoeveelheid geheugen die aan de JVM is toegewezen.
+Als u de Manager van de Configuratie in werking stelt of probeert om Onderneming JavaBeans (EJB) op te stellen code door het nut van de bevellijn *te gebruiken ejbdeploy* en een fout OutOfMemory komt voor, vergroot de hoeveelheid geheugen dat aan JVM wordt toegewezen.
 
-1. Bewerk het JBImplementatiescript in het dialoogvenster *[appserver-hoofdmap]*/DeploymentTool/itp/ directory:
+1. Bewerk het ejbdistributiescript in de *[appserver wortel]*/opstellen hulpmiddel/itp/ folder:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux en UNIX) `ejbdeploy.sh`
 
-1. Zoek de `-Xmx256M` en verander deze in een hogere waarde, zoals `-Xmx1024M`.
+1. Zoek de parameter `-Xmx256M` en wijzig deze in een hogere waarde, zoals `-Xmx1024M` .
 1. Sla het bestand op.
-1. Voer de `ejbdeploy` bevel of herstelt gebruikend de Manager van de Configuratie.
+1. Voer de opdracht `ejbdeploy` uit of wijzig de implementatie met Configuratiebeheer.
 
 ## Windows Server 2003-prestaties verbeteren met LDAP {#improving-windows-server-2003-performance-with-ldap}
 
@@ -173,20 +173,20 @@ Het gebruiken van verbinding het groeperen op de onderzoeksverbinding kan het aa
 
 ### Vorm uw Server van Vensters voor verbinding het poolen {#configure-your-windows-server-for-connection-pooling}
 
-1. Klik op Start > Uitvoeren om de registereditor te starten en typ in het vak Openen `regedit` en klik op OK.
+1. Klik op Start > Uitvoeren om de registereditor te starten, typ `regedit` in het vak Openen en klik op OK.
 1. Ga naar de registersleutel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. In de juiste ruit van de registratieredacteur, vind de TcpTimedWaitDelay waardenaam. Als de naam niet wordt weergegeven, kiest u Bewerken > Nieuw > DWORD-waarde in de menubalk om de naam toe te voegen.
-1. Typ in het vak Naam `TcpTimedWaitDelay`
+1. Typ `TcpTimedWaitDelay` in het vak Naam.
 
    >[!NOTE]
    >
-   >Als er geen knipperende cursor wordt weergegeven en `New Value #` in het vak klikt u met de rechtermuisknop in het rechterdeelvenster, selecteert u Naam wijzigen en typt u in het vak Naam `TcpTimedWaitDelay`*.*
+   >Als u geen het opvlammen curseur en `New Value #` binnen de doos ziet, klik binnen het juiste paneel met de rechtermuisknop aan, uitgezocht noem anders en, in het vakje van de Naam, type `TcpTimedWaitDelay`*.*
 
 1. Herhaal stap 4 voor de waardenamen MaxUserPort, MaxHashTableSize en MaxFreeTcbs.
-1. Dubbelklik in het rechterdeelvenster om de TcpTimedWaitDelay-waarde in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `30`.
-1. Dubbelklik in het rechterdeelvenster om de waarde MaxUserPort in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `65534`.
-1. Dubbelklik in het rechterdeelvenster om de waarde MaxHashTableSize in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `65536`.
-1. Dubbelklik in het rechterdeelvenster om de waarde MaxFreeTcbs in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `16000`.
+1. Dubbelklik in het rechterdeelvenster om de TcpTimedWaitDelay-waarde in te stellen. Selecteer Decimaal onder Basis en typ `30` in het vak Waarde.
+1. Dubbelklik in het rechterdeelvenster om de waarde MaxUserPort in te stellen. Selecteer Decimaal onder Basis en typ `65534` in het vak Waarde.
+1. Dubbelklik in het rechterdeelvenster om de waarde MaxHashTableSize in te stellen. Selecteer Decimaal onder Basis en typ `65536` in het vak Waarde.
+1. Dubbelklik in het rechterdeelvenster om de waarde MaxFreeTcbs in te stellen. Selecteer Decimaal onder Basis en typ `16000` in het vak Waarde.
 
 >[!NOTE]
 >

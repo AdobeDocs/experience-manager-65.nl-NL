@@ -20,22 +20,22 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welke componenten binnen het geselecteerde werkingsgebied kunnen worden gebruikt. Een sjabloon is een hiërarchie van knooppunten die dezelfde structuur heeft als de pagina die moet worden gemaakt, maar zonder daadwerkelijke inhoud.
 
 Elke Malplaatje stelt u met een selectie van componenten beschikbaar voor gebruik voor.
 
-* Sjablonen zijn samengesteld uit [Componenten](/help/sites-developing/components.md);
+* De malplaatjes worden opgebouwd van [ Componenten ](/help/sites-developing/components.md);
 * Componenten gebruiken widgets en staan toegang tot deze widgets toe. Deze worden gebruikt om de inhoud te renderen.
 
 >[!NOTE]
 >
->Ga voor meer informatie over het ontwikkelen van uw Adobe Experience Manager-toepassing (AEM) met behulp van CRXDE Lite naar [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Leren hoe te om uw toepassing van Adobe Experience Manager (AEM) te ontwikkelen gebruikend CRXDE Lite, zie [ Ontwikkelen met CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md).
 
 Een sjabloon is de basis van een pagina.
 
-Als u een pagina wilt maken, moet de sjabloon worden gekopieerd (node-tree) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) op de corresponderende positie in de sitestructuur: dit is wat er gebeurt als een pagina wordt gemaakt met de **Websites** tab.
+Om een pagina tot stand te brengen, moet het malplaatje (knoop-boom **/apps/&lt;myapp>/templates/&lt;mytemplate>**) aan de overeenkomstige positie in plaats-boom worden gekopieerd: dit is wat gebeurt als een pagina gebruikend **wordt gecreeerd Websites** tabel.
 
 Deze kopieeractie geeft de pagina ook zijn aanvankelijke inhoud (gewoonlijk Top-Level Inhoud slechts) en het bezit die:resourceType, de weg aan de paginacomponent plaatsen die wordt gebruikt om de pagina (alles in de kindknoop jcr:content) terug te geven.
 
@@ -46,20 +46,20 @@ Er zijn twee aspecten die in overweging moeten worden genomen:
 * de structuur van de template zelf
 * de structuur van de inhoud die wordt geproduceerd wanneer een sjabloon wordt gebruikt
 
-Een malplaatje wordt gecreeerd onder een knoop van type **cq:sjabloon**.
+Een Malplaatje wordt gecreeerd onder een knoop van type **cq:Malplaatje**.
 
 Er kunnen verschillende eigenschappen worden ingesteld, met name:
 
-* **jcr:titel** - titel voor de sjabloon; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
-* **jcr:beschrijving** - beschrijving voor de sjabloon; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
+* **jcr:titel** - titel voor het malplaatje; verschijnt in de dialoog wanneer het creëren van een pagina.
+* **jcr:beschrijving** - beschrijving voor het malplaatje; verschijnt in de dialoog wanneer het creëren van een pagina.
 
-Dit knooppunt bevat *a jcr:content (cq:PageContent)* knooppunt dat wordt gebruikt als basis voor het inhoudsknooppunt van de resulterende pagina&#39;s. Deze verwijzing, gebruiken *sling:resourceType*, de component die moet worden gebruikt voor het weergeven van de daadwerkelijke inhoud van een nieuwe pagina.
+Deze knoop bevat *jcr:content (cq:PageContent)* knoop die als basis voor de inhoudsknoop van resulterende pagina&#39;s wordt gebruikt. Dit verwijzingen, die *gebruiken sleept:resourceType*, de component die voor het teruggeven van de daadwerkelijke inhoud van een nieuwe pagina moet worden gebruikt.
 
 >[!NOTE]
 >
 >Zie de volgende bronnen voor informatie over de basisbeginselen van sjablonen en componenten in AEM:
 >
->* [Sjablonen](/help/sites-developing/templates.md)
+>* [ Malplaatjes ](/help/sites-developing/templates.md)
 >* [Onderdelen](/help/sites-developing/components.md)
 >
 

@@ -30,19 +30,19 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 >[!NOTE]
 >
->AEM beheerders kunnen workflows starten met [diverse andere methoden](/help/sites-administering/workflows-starting.md).
+>AEM de beheerders kunnen werkschema&#39;s beginnen gebruikend [ verscheidene andere methodes ](/help/sites-administering/workflows-starting.md).
 
 ## Workflows toepassen {#applying-workflows}
 
 Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagina bewerkt, vanuit de Sidekick.
 
-De **Status** in de **Websites** De console wijst erop of een werkschema op een pagina is toegepast:
+De **kolom van de Status** in de **** console van Websites wijst erop of een werkschema op een pagina is toegepast:
 
-![workflowstatus](assets/workflowstatus.png)
+![ workflowstatus ](assets/workflowstatus.png)
 
 ### Een workflow starten vanuit de websiteconsole {#starting-a-workflow-from-the-websites-console}
 
-1. Open de websiteconsole. ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
+1. Open de websiteconsole. ([ http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
 1. Selecteer in de boomstructuur Websites het bovenliggende element van de pagina waarop u de workflow wilt toepassen.
 1. Selecteer de pagina in de paginalijst en klik op Workflow.
 1. Selecteer in het dialoogvenster Workflow starten de workflow die u wilt toepassen. Voer eventueel een opmerking en een titel in. Klik vervolgens op Start.
@@ -52,8 +52,8 @@ De **Status** in de **Websites** De console wijst erop of een werkschema op een 
 1. Open de websiteconsole.
 1. Open de gewenste pagina.
 1. Selecteer het tabblad Werkstroom in de Sidekick.
-1. Breid uit **Workflow** , zodat u het dialoogvenster **Workflow** en naar keuze **Werkstroomtitel** en **Opmerking**.
+1. Breid de **dialoog van het Werkschema** uit, toestaand u om het **Werkschema** te selecteren en naar keuze **Titel van het Werkschema** en **Commentaar** in te gaan.
 
-   ![workflowstartsidekick](assets/workflowstartsidekick.png)
+   ![ workflowstartsidekick ](assets/workflowstartsidekick.png)
 
-1. Klikken **Workflow starten** om een nieuwe werkschemainstantie met de eigenschappen te beginnen u vormde en de huidige pagina als lading. De workflow wordt nu uitgevoerd.
+1. Klik **Werkschema van het Begin** om een nieuwe werkschemainstantie met de eigenschappen te beginnen u en de huidige pagina als nuttige lading vormde. De workflow wordt nu uitgevoerd.

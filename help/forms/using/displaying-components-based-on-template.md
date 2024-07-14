@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Componenten weergeven die zijn gebaseerd op de gebruikte sjabloon{#displaying-components-based-on-the-template-used}
 
-Wanneer een formulierauteur een adaptief formulier maakt met behulp van een [template](../../forms/using/template-editor.md), kan de auteur van het formulier specifieke componenten zien en gebruiken die op sjabloonbeleid zijn gebaseerd. U kunt een beleid voor sjablooninhoud opgeven waarmee u een groep componenten kunt kiezen die de auteur van het formulier ziet op het moment van het ontwerpen van het formulier.
+Wanneer een vormauteur tot een adaptieve vorm gebruikend a [ malplaatje ](../../forms/using/template-editor.md) leidt, kan de vormauteur specifieke componenten zien en gebruiken die op malplaatjebeleid worden gebaseerd. U kunt een beleid voor sjablooninhoud opgeven waarmee u een groep componenten kunt kiezen die de auteur van het formulier ziet op het moment van het ontwerpen van het formulier.
 
 ## Het inhoudsbeleid van een sjabloon wijzigen {#changing-the-content-policy-of-a-template}
 
-Wanneer u een sjabloon maakt, wordt deze onder `/conf` in de inhoudsopslagplaats. Gebaseerd op de mappen die u hebt gemaakt in het dialoogvenster `/conf` map, pad naar uw sjabloon is: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Wanneer u een sjabloon maakt, wordt deze onder `/conf` gemaakt in de inhoudsopslagplaats. Op basis van de mappen die u in de map `/conf` hebt gemaakt, is het pad naar de sjabloon: `/conf/<your-folder>/settings/wcm/templates/<your-template>` .
 
 Voer de volgende stappen uit om de componenten in de zijbalk weer te geven op basis van het inhoudsbeleid van een sjabloon:
 
@@ -39,24 +39,24 @@ Voer de volgende stappen uit om de componenten in de zijbalk weer te geven op ba
 
    Het pad naar het standaardbeleid voor inhoud is: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   In de `gridFluidLayout` , kopieert en plakt u het standaardbeleid en wijzigt u de naam ervan. Bijvoorbeeld: `myPolicy`.
+   Kopieer het standaardbeleid in de map `gridFluidLayout` en plak het onder een andere naam. Bijvoorbeeld `myPolicy` .
 
-   ![Standaardbeleid kopiëren](assets/crx-default1.png)
+   ![ het Kopiëren standaardbeleid ](assets/crx-default1.png)
 
-1. Selecteer het nieuwe beleid u creeert, en selecteer **componenten** eigenschap in het rechterdeelvenster met tekst `string[]`.
+1. Selecteer het nieuwe beleid u creeert, en selecteer het **componenten** bezit in het rechterzijpaneel met type `string[]`.
 
-   Wanneer u het componentenbezit selecteert en opent, ziet u het Edit de dialoogvakje van Componenten. In het dialoogvenster Componenten bewerken kunt u componentgroepen toevoegen of verwijderen met de opdracht **+** en **-** knoppen. U kunt componentengroep toevoegen die componenten omvat die vorm u auteurs aan gebruik wilt.
+   Wanneer u het componentenbezit selecteert en opent, ziet u het Edit de dialoogvakje van Componenten. In het dialoogvenster Componenten bewerken kunt u componentgroepen toevoegen of verwijderen met de knoppen **+** en **-** . U kunt componentengroep toevoegen die componenten omvat die vorm u auteurs aan gebruik wilt.
 
-   ![Componenten toevoegen aan of verwijderen uit het beleid](assets/add-components-list1.png)
+   ![ voeg of verwijder componenten in het beleid toe ](assets/add-components-list1.png)
 
-   Nadat u een componentgroep hebt toegevoegd, klikt u op **OK** om de lijst bij te werken, en klik dan **Alles opslaan** boven CRXDE-adresbalk en vernieuwen.
+   Nadat u een componentengroep toevoegt, klik **O.K.** om de lijst bij te werken, en dan **te klikken sparen allen** boven CRXDE adresbar en verfrist zich.
 
 1. Wijzig in de sjabloon het inhoudsbeleid van standaard in het nieuwe beleid dat u hebt gemaakt. ( `myPolicy` in dit voorbeeld.)
 
-   Om het beleid, in CRXDE te veranderen, navigeer aan `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
+   Navigeer naar `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items` om het beleid in CRXDE te wijzigen.
 
-   In de `cq:policy` eigenschap, wijzigen `default` op de nieuwe beleidsnaam ( `myPolicy`).
+   Wijzig `default` in de eigenschap `cq:policy` in de nieuwe beleidsnaam ( `myPolicy` ).
 
-   ![Beleid voor bijgewerkte sjablooninhoud](assets/updated-policy.png)
+   ![ Bijgewerkt beleid van de malplaatjeinhoud ](assets/updated-policy.png)
 
    Wanneer u een formulier ontwerpt dat u met de sjabloon maakt, kunt u de toegevoegde componenten in het zijpaneel zien.

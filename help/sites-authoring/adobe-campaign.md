@@ -32,7 +32,7 @@ Zie het volgende:
 * [Adobe Campaign Forms maken in AEM](/help/sites-authoring/adobe-campaign-forms.md)
 * [Je Adobe Campaign als doelgroep instellen](/help/sites-authoring/target-adobe-campaign.md)
 
-U moet eerder [geïntegreerde AEM met Adobe Campaign](/help/sites-administering/campaign.md).
+U moet eerder [ geïntegreerde AEM met Adobe Campaign ](/help/sites-administering/campaign.md) hebben.
 
 Raadpleeg de volgende onderwerpen als u uw integratie wilt aanpassen:
 

@@ -23,11 +23,11 @@ Wanneer een klant een groot aantal PDF via de diensten produceert die door WorkB
 <!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
 Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
 
-Dit komt doordat het maximumaantal pagina&#39;s in een afdrukverzoek is beperkt tot ongeveer 1000 pagina&#39;s in Windows. Wanneer een drukoutput wordt geproduceerd, moeten het malplaatje en de gegevens in geheugen worden geladen en de resulterende lay-out wordt opgebouwd in geheugen. Dit betekent dat er grenzen zijn aan de grootte van de einduitvoer. Het proces dat de drukoutput produceert is een taak met 32 bits, wat betekent het tot 2 GB RAM op Vensters beperkt is <!--and 4 GB on UNIX-->.
+Dit komt doordat het maximumaantal pagina&#39;s in een afdrukverzoek is beperkt tot ongeveer 1000 pagina&#39;s in Windows. Wanneer een drukoutput wordt geproduceerd, moeten het malplaatje en de gegevens in geheugen worden geladen en de resulterende lay-out wordt opgebouwd in geheugen. Dit betekent dat er grenzen zijn aan de grootte van de einduitvoer. Het proces dat de afdrukuitvoer genereert, is een 32-bits taak, wat betekent dat deze beperkt is tot 2 GB RAM in Windows <!--and 4 GB on UNIX--> .
 
 ## Van toepassing op {#applies-to}
 
-De oplossing geldt voor AEM Forms <!--JEE Server and AEM Forms on OSGi Server--> voor x86_win32 XMLFM.
+De oplossing is van toepassing op AEM Forms <!--JEE Server and AEM Forms on OSGi Server--> for x86_win32 XMLFM.
 
 ## Oplossing {#solution}
 
@@ -37,11 +37,11 @@ De grootste factor die het geheugengebruik beïnvloedt, is de hoeveelheid gegeve
 
 **Hoog**
 
-1. **Subformulieren kiezen** - Een gekozen subformulierset is een variant van het subformuliersetobject waarmee u de weergave van specifieke subformulieren vanuit de set kunt aanpassen met behulp van voorwaardelijke instructies.
-1. **Statische tekst gebruiken in plaats van bijschriften** - Bijna elk veld biedt een bijschrift binnen. De gebruiker moet dat gebruiken in plaats van een extra statische tekst als bijschrift.
-1. Gebruiken **RTF-indeling (Rich Text Format)** waar mogelijk.
+1. **Subforms van de Keuze** - een gekozen subformulierreeks is een variatie van het voorwerp van de subformulierreeks die u toestaat om de vertoning van specifieke subformulieren van binnen de reeks aan te passen door voorwaardelijke verklaringen te gebruiken.
+1. **Statische tekst van het Gebruik in plaats van titels** - bijna elk gebied verstrekt een titel binnen, zou de gebruiker dat in plaats van het hebben van een extra statische tekst als titel moeten gebruiken.
+1. Het formaat van de tekst van het gebruik **Rich (RTF)** waar mogelijk.
 
-**Gemiddeld**
+**Gemiddelde**
 
 Bij het ontwerpen van formuliersjablonen moet u rekening houden met extra factoren om het geheugengebruik te verbeteren:
 
@@ -56,7 +56,7 @@ Omdat het maximale procesgeheugen ons beperkt en het geheugen dat door het proce
 
 Als het formulier veel kleine knooppunten met kleine gegevens bevat, verbruikt het proces meer geheugen (en gaat het dus sneller uit het geheugen) dan een formulier met minder knooppunten (zelfs) met grote gegevens.
 
-Lees de [Aanhangsel hieronder](#appendix) voor meer informatie, waarbij de testresultaten zijn gebaseerd op het formulier Afdrukken (niet-gecodeerde PDF). Het gebruik van gelabelde PDF-procesgeheugenvereisten neemt toe. De waarde is ook afhankelijk van het aantal velden in het formulier. ruwweg de vereiste voor het procesgeheugen zou iets meer dan 1,5 keer groter zijn dan die van niet-gecodeerde PDF.
+Lees het [ Bijlage hieronder ](#appendix) voor meer informatie, waar de testresultaten op de vorm van de Druk (niet-Gelabelde PDF) worden gebaseerd. Het gebruik van gelabelde PDF-procesgeheugenvereisten neemt toe. De waarde is ook afhankelijk van het aantal velden in het formulier. ruwweg de vereiste voor het procesgeheugen zou iets meer dan 1,5 keer groter zijn dan die van niet-gecodeerde PDF.
 
 ### Interactieve Forms {#interactive-forms}
 
@@ -68,20 +68,20 @@ Adobe raadt geen specifieke afbeeldingsindeling aan. Het zou echter mooi zijn al
 
 ### Bijlage {#appendix}
 
-**Tabelvoorbeelden**
+**Voorbeelden van de Lijst**
 
 Hieronder ziet u verschillende varianten voor tabellen die het renderaantal pagina&#39;s versus de gegevensgrootte voor eenvoudige tabel en complexe tabel weergeven.
 
 1. Een tabel met één kolom waarin 5000 pagina&#39;s PDF worden gegenereerd, gegevensbestanden met een grootte van 24 MB en 30 kB.
 
-   ![table_single_column](/help/forms/using/assets/table_single_column.png)
+   ![ table_single_column ](/help/forms/using/assets/table_single_column.png)
 
 1. Een tabel met veel kleine kolommen waarin 800 pagina&#39;s PDF worden gegenereerd, is de grootte van het gegevensbestand 4,6 MB en 20 kB records.
-   ![table_many_small_columns](/help/forms/using/assets/table_many_small_columns.png)
+   ![ table_many_small_columns ](/help/forms/using/assets/table_many_small_columns.png)
 
 1. Een tabel met veel kleine kolommen, maar een groter gegevensbestand vanwege het gebruik van grotere namen voor xmlTag.
 Hier is alles gelijk aan de vorige, maar namen van XML-tags zijn groot gemaakt (zodat het gegevensbestand groter wordt zonder dat de effectieve gegevens toenemen), is het eindresultaat (bovengrens) bijna hetzelfde. De grootte van het gegevensbestand is echter toegenomen van 4,6 MB tot 44,6 MB. Hier worden 800 pagina&#39;s PDF gegenereerd. De grootte van het gegevensbestand is 44,6 MB en 20-K records.
 
-   ![table_greater_xml_tagname](/help/forms/using/assets/table_bigger_xml_tagname.png)
+   ![ table_greater_xml_tagname ](/help/forms/using/assets/table_bigger_xml_tagname.png)
 
 Het is dus moeilijk om een algemene bovengrens op de grootte van het gegevensbestand te zetten. Elk formulier is uniek en daarom verschilt het geheugengebruik per formulier.

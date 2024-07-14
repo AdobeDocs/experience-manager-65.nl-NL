@@ -26,15 +26,15 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 Standaard is het opnemen van transacties uitgeschakeld. Voer de volgende stappen uit om transactierapportage in te schakelen:
 
-1. Ga naar de `/adminui` bijvoorbeeld op uw AEM Forms op JEE `http://10.14.18.10:8080/adminui`.
-1. Aanmelden als **Beheerder**.
-1. Ga naar **Instellingen** > **Core System Settings** > **Configuraties**.
-1. Klik op Selectievakje om **Transactierapporteren inschakelen** en **Opslaan** de instellingen.
+1. Navigeer bijvoorbeeld naar de `/adminui` op uw AEM Forms op JEE `http://10.14.18.10:8080/adminui` .
+1. Login als **Beheerder**.
+1. Ga naar **Montages** > **de Montages van het Systeem van de Kern** > **Configuraties**.
+1. Klik checkbox aan **om transactie toe te laten die** rapporteert en **sparen** de montages.
 
-   ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
+   ![ steekproef-transactie-rapport-jee ](assets/enable-transaction-jee.png)
 
 1. Start de server opnieuw.
-1. Naast de wijzigingen op de server moet u op de client de `adobe-livecycle-client.jar` als u hetzelfde bestand gebruikt in uw project.
+1. Naast de wijzigingen op de server moet u op de client het `adobe-livecycle-client.jar` -bestand in uw project bijwerken als u hetzelfde gebruikt.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -44,23 +44,23 @@ Standaard is het opnemen van transacties uitgeschakeld. Voer de volgende stappen
 
 ## Transactierapport weergeven {#view-transaction-report}
 
-Wanneer u transactie het melden toelaat, wordt de informatie over de transactietellingen toegankelijk door [transactierapport via dashboard](#transaction-report-dashboard) en een gedetailleerde [transactierapport via logbestand](#transaction-report-logfile). Beide worden hieronder uitgelegd:
+Wanneer u transactie het melden toelaat, wordt de informatie over de transactietellingen toegankelijk door het [ transactierapport via dashboard ](#transaction-report-dashboard) en een gedetailleerd [ transactierapport via logboekdossier ](#transaction-report-logfile). Beide worden hieronder uitgelegd:
 
 ### Transactierapport via dashboard {#transaction-report-dashboard}
 
 Transactierapport via het dashboard geeft het totale aantal transacties voor elk type transactie. U krijgt bijvoorbeeld de informatie over het totale aantal formulieren dat wordt gegenereerd, geconverteerd en verzonden, zoals in de afbeelding wordt getoond. Het transactierapport ophalen:
 
-1. Ga naar de `/adminui` op uw AEM Forms op JEE, bijvoorbeeld: `http://10.13.15.08:8080/adminui`.
-1. Aanmelden als **Beheerder**.
+1. Navigeer naar de `/adminui` op uw AEM Forms op JEE, bijvoorbeeld: `http://10.13.15.08:8080/adminui` .
+1. Login als **Beheerder**.
 1. Klik op Health Monitor.
-1. Navigeren naar **Transactierapporteur** tabblad, klikt u op **Totaal aantal transacties berekenen** En nu ziet u dat een cirkeldiagram het aantal PDF forms vertegenwoordigt - verzonden, teruggegeven, of omgezet.
+1. Navigeer aan **Reporter van de Transactie** lusje, klik **Totale Transacties** berekent, nu ziet u dat een cirkeldiagram het aantal PDF forms - voorgelegd, teruggegeven, of omgezet vertegenwoordigt.
 
-![sample-transaction-report-jee](assets/transaction-piechart.png)
+![ steekproef-transactie-rapport-jee ](assets/transaction-piechart.png)
 
 
 ### Transactierapport via logbestand {#transaction-report-logfile}
 
-Transactierapport via logbestand bevat gedetailleerde informatie over elke transactie. Om tot transactielogboeken toegang te hebben, volg de contextweg met betrekking tot het serveropstarten. Transacties worden vastgelegd in een afzonderlijk logbestand `transaction_log.log` standaard. De **bestandspad** is relatief ten opzichte van de serverstartcontext. Het standaardpad voor verschillende servers wordt hieronder weergegeven:
+Transactierapport via logbestand bevat gedetailleerde informatie over elke transactie. Om tot transactielogboeken toegang te hebben, volg de contextweg met betrekking tot het serveropstarten. Transacties worden standaard vastgelegd in een afzonderlijk logbestand `transaction_log.log` . Het **dossierweg** is met betrekking tot de context van het serverbegin. Het standaardpad voor verschillende servers wordt hieronder weergegeven:
 
 ```
 For Jboss Turnkey:
@@ -97,16 +97,16 @@ TransactionRecord
 }
 ```
 
-* **service**: Naam van de dienst.
-* **bewerking**: Bewerkingsnaam.
-* **internalService**: Naam van de callee als er een interne vraag is, anders het zelfde als de de dienstnaam.
-* **internalOperation**: De naam van de callee in daar is een interne vraag, anders het zelfde als de verrichtingsnaam.
-* **transactionOperationType**: Type transactie (Verzenden, Renderen, Omzetten).
-* **transactionCount**: Totaal aantal transacties.
-* **elapsedTime**: Tijd tussen de ontvangen uitnodigingsopening en reactie.
-* **transactionDate**: Tijdstempel die aangeeft wanneer de service is aangeroepen.
+* **de dienst**: Naam van de dienst.
+* **verrichting**: De naam van de verrichting.
+* **internalService**: Naam van de vraag als er een interne vraag, anders zelfde als de de dienstnaam is.
+* **internalOperation**: De naam van de vraag binnen is daar een interne vraag, anders zelfde als de verrichtingsnaam.
+* **transactionOperationType**: Type van transactie (voorleggen, teruggeeft, zet) om.
+* **transactionCount**: Totale telling van transactie.
+* **elapsedTime**: Tijd tussen de vraaginitiatie en ontvangen reactie.
+* **transactionDate**: Tijdstempel die op wijst toen de dienst werd aangehaald.
 
-**Voorbeeld van transactielogboek**:
+**het transactielogboek van de Steekproef**:
 
 ```
 [2024-02-14 14:23:25] [INFO] TransactionRecord
@@ -128,9 +128,9 @@ TransactionRecord
 
 De frequentie van opnametransacties wordt bepaald door de updatebewerkingen op de server voor elk formulier dat met succes is verzonden, gerenderd of geconverteerd.
 
-* In **dashboard**, wordt het aantal transacties periodiek bijgewerkt, gebrek wordt geplaatst aan 1 minuut. U kunt de frequentie bijwerken door de systeemeigenschap in te stellen op `"com.adobe.idp.dsc.transaction.recordFrequency"`. Voeg bijvoorbeeld in AEM Forms for JEE op JBoss® het volgende toe `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` om de updatefrequentie in te stellen op 5 minuten.
+* In **dashboard**, wordt de transactietelling periodiek bijgewerkt, gebrek geplaatst aan 1 minuut. U kunt de frequentie bijwerken door de eigenschap system in te stellen op `"com.adobe.idp.dsc.transaction.recordFrequency"` . In AEM Forms for JEE op JBoss® voegt u bijvoorbeeld `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` toe om de updatefrequentie in te stellen op 5 minuten.
 
-* In **transactielogboeken** De update voor elke transactie vindt onmiddellijk plaats wanneer een formulier correct is verzonden, weergegeven of geconverteerd.
+* In **transactielogboeken**, komt de update voor elke transactie onmiddellijk voor wanneer een vorm met succes wordt voorgelegd, teruggegeven, of omgezet.
 
 <!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 

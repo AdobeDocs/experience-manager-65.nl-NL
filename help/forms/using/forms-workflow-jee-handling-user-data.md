@@ -18,13 +18,13 @@ ht-degree: 0%
 
 AEM Forms JEE-workflows bieden tools voor het ontwerpen, maken en beheren van bedrijfsprocessen. Een workflowproces bestaat uit een reeks stappen die in een opgegeven volgorde worden uitgevoerd. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Een proces kan met activa, gebruikersrekeningen, en de diensten in wisselwerking staan, en kan worden teweeggebracht gebruikend om het even welke volgende methodes:
 
-* Een proces starten vanuit de AEM Forms Workspace
+* Een proces starten vanuit AEM Forms Workspace
 * De SOAP- of RESTful-service gebruiken
 * Een adaptief formulier indienen
 * Gecontroleerde map gebruiken
 * E-mail gebruiken
 
-Ga voor meer informatie over het maken van het AEM Forms JEE-workflowproces naar [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_65).
+Voor meer informatie over het creëren van het werkschemaproces van AEM Forms JEE, zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
@@ -36,34 +36,34 @@ Wanneer een proces wordt geactiveerd, worden een unieke procesinstantie-id en ee
 
 U kunt de procesinstantie-id voor een initiator echter niet identificeren in de volgende scenario&#39;s:
 
-* **Proces geactiveerd door een gecontroleerde map**: Een procesinstantie kan niet worden geïdentificeerd met de initiator als het proces wordt geactiveerd door een gecontroleerde map. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
-* **Proces dat is gestart van AEM publicatie-instantie**: Alle procesinstanties die worden geactiveerd via AEM publicatie-instantie, leggen geen informatie over de initiator vast. Gebruikersgegevens kunnen echter worden vastgelegd in het formulier dat is gekoppeld aan het proces, dat is opgeslagen in workflowvariabelen.
-* **Verwerking gestart via e-mail**: De e-mailid van de afzender wordt vastgelegd als een eigenschap in een ondoorzichtige blob-kolom van het dialoogvenster `tb_job_instance` databasetabel, die niet rechtstreeks kan worden opgevraagd.
+* **Proces dat door een gelete op omslag** wordt teweeggebracht: Een procesinstantie kan niet worden geïdentificeerd gebruikend zijn initiatiefnemer als het proces door een gelete op omslag wordt teweeggebracht. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
+* **Proces in werking gesteld van publiceren AEM instantie**: Alle procesinstanties die van AEM worden teweeggebracht publiceren instantie vangen geen informatie over de initiatiefnemer. Gebruikersgegevens kunnen echter worden vastgelegd in het formulier dat is gekoppeld aan het proces, dat is opgeslagen in workflowvariabelen.
+* **Proces dat door e-mail** in werking wordt gesteld: E-mailidentiteitskaart van de afzender wordt gevangen als bezit in een ondoorzichtige blob kolom van de `tb_job_instance` gegevensbestandlijst, die niet direct kan worden gevraagd.
 
 ### Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is {#initiator-participant}
 
 Voer de volgende stappen uit zodat u procesinstantie-id&#39;s kunt identificeren voor een workflowaanvrager of een deelnemer:
 
-1. Voer het volgende bevel in het gegevensbestand van de Server van AEM Forms uit om belangrijkste identiteitskaart voor werkschemageinitiator of deelnemer van terug te winnen `edcprincipalentity` databasetabel.
+1. Voer het volgende bevel in het gegevensbestand van de Server van AEM Forms uit om belangrijkste identiteitskaart voor werkschemageinitiator of deelnemer van de `edcprincipalentity` gegevensbestandlijst terug te winnen.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
    ```
 
-   De vraag keert belangrijkste identiteitskaart voor gespecificeerde terug `user_ID`.
+   De query retourneert de hoofd-id voor de opgegeven `user_ID` .
 
-1. (**Voor workflowinitiator**) Voer het volgende bevel uit om alle taken verbonden aan belangrijkste identiteitskaart voor de initiatiefnemer van terug te winnen `tb_task` databasetabel.
+1. (**voor werkschemaminitiator**) voer het volgende bevel uit om alle taken terug te winnen verbonden aan belangrijkste identiteitskaart voor de initiatiefnemer van de `tb_task` gegevensbestandlijst.
 
    ```sql
    select * from tb_task where start_task = 1 and create_user_id= 'initiator_principal_id'
    ```
 
-   De vraag keert taken terug die door gespecificeerd worden in werking gesteld `initiator`_ `principal_id`. De taken zijn van twee typen:
+   De query retourneert taken die door de opgegeven `initiator`_ `principal_id` zijn gestart. De taken zijn van twee typen:
 
-   * **Voltooide taken**: Deze taken zijn verzonden en geven een alfanumerieke waarde weer in het dialoogvenster `process_instance_id` veld. Neem nota van alle procesinstantie IDs voor voorgelegde taken en ga met de stappen verder.
-   * **Taken die zijn gestart maar niet zijn voltooid**: Deze taken zijn gestart, maar nog niet ingediend. De waarde in het dialoogvenster `process_instance_id` veld voor deze taken is **0** (nul). Neem in dit geval nota van de overeenkomstige taak-id&#39;s en zie [Werken met wezen](#orphan).
+   * **Voltooide taken**: Deze taken zijn voorgelegd en tonen een alfanumerieke waarde op het `process_instance_id` gebied. Neem nota van alle procesinstantie IDs voor voorgelegde taken en ga met de stappen verder.
+   * **in werking gestelde maar niet volledige Taken**: Deze taken hebben in werking gesteld maar nog niet voorgelegd. De waarde op het `process_instance_id` gebied voor deze taken is **0** (nul). In dit geval, neem nota van overeenkomstige taak IDs en zie [ Werk met wezen taken ](#orphan).
 
-1. (**Voor workflowdeelnemers**) Voer het volgende bevel uit om procesinstantie IDs terug te winnen verbonden aan belangrijkste identiteitskaart van de procesdeelnemer voor de initiatiefnemer van `tb_assignment` databasetabel.
+1. (**voor werkschemadeelnemers**) voer het volgende bevel uit om procesinstantie IDs terug te winnen verbonden aan belangrijkste identiteitskaart van de procesdeelnemer voor de initiatiefnemer van de `tb_assignment` gegevensbestandlijst.
 
    ```sql
    select distinct a.process_instance_id from tb_assignment a join tb_queue q on a.queue_id = q.id where q.workflow_user_id='participant_principal_id'
@@ -73,17 +73,17 @@ Voer de volgende stappen uit zodat u procesinstantie-id&#39;s kunt identificeren
 
    Neem nota van alle procesinstantie IDs voor voorgelegde taken en ga met de stappen verder.
 
-   Voor verweesde taken of taken waarbij `process_instance_id` is 0 (nul), neem nota van overeenkomstige taak IDs en zie [Werken met wezen](#orphan).
+   Voor wezen taken of taken waar `process_instance_id` 0 (nul) is, neem nota van overeenkomstige taak IDs en zie [ Werk met wezen taken ](#orphan).
 
-1. Volg de instructies in [Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie-id&#39;s verwijderen.
+1. Volg de instructies in [ zuivert gebruikersgegevens van werkschemainstanties die op de sectie van identiteitskaarts van de procesinstantie ](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) worden gebaseerd zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie IDs schrappen.
 
 ### Id&#39;s van procesinstanties identificeren wanneer gebruikersgegevens worden opgeslagen in primitieve variabelen {#primitive}
 
 Een workflow kan zo worden ontworpen dat de gebruikersgegevens worden vastgelegd in een variabele die als een blob in de database wordt opgeslagen. In dergelijke gevallen kunt u alleen gebruikersgegevens opvragen als deze zijn opgeslagen in een van de volgende primitieve variabelen:
 
-* **String**: Bevat de gebruikers-id direct of als een subtekenreeks en kan worden opgevraagd met SQL.
-* **Numeriek**: Bevat de gebruikers-id.
-* **XML**: Bevat de gebruikers-id als een subtekenreeks in de tekst die is opgeslagen als tekstkolommen in de database en kan worden opgevraagd als tekenreeksen.
+* **Koord**: Bevat direct de gebruiker - identiteitskaart of als substring en kan worden gevraagd gebruikend SQL.
+* **Numeriek**: Bevat direct gebruiker - identiteitskaart
+* **XML**: Bevat gebruiker - identiteitskaart als substring binnen de tekst die als tekstkolommen in gegevensbestand wordt opgeslagen en kan als koorden worden gevraagd.
 
 Voer de volgende stappen uit zodat u kunt bepalen of een werkschema dat gegevens in primitieve-type variabelen opslaat gegevens voor de gebruiker bevat:
 
@@ -93,41 +93,41 @@ Voer de volgende stappen uit zodat u kunt bepalen of een werkschema dat gegevens
    select database_table from omd_object_type where name='pt_<app_name>/<workflow_name>'
    ```
 
-   De query retourneert een tabelnaam in `tb_<number>` bestandsindeling voor de opgegeven toepassing ( `app_name`) en workflow ( `workflow_name`).
+   De query retourneert een tabelnaam in `tb_<number>` -indeling voor de opgegeven toepassing ( `app_name` ) en workflow ( `workflow_name` ).
 
    >[!NOTE]
    >
-   >De waarde van `name` Deze eigenschap kan complex zijn als de workflow in submappen in de toepassing is genest. Zorg ervoor dat u het exacte volledige pad naar de workflow opgeeft, dat u kunt ophalen via het menu `omd_object_type` databasetabel.
+   >De waarde van de eigenschap `name` kan complex zijn als de workflow in submappen in de toepassing is genest. Zorg ervoor dat u het exacte volledige pad naar de workflow opgeeft, dat u kunt ophalen uit de databasetabel `omd_object_type` .
 
-1. Controleer de `tb_<number>` tabelschema. De tabel bevat variabelen die gebruikersgegevens voor de opgegeven workflow opslaan. De variabelen in de tabel komen overeen met de variabelen in de workflow.
+1. Controleer het `tb_<number>` tabelschema. De tabel bevat variabelen die gebruikersgegevens voor de opgegeven workflow opslaan. De variabelen in de tabel komen overeen met de variabelen in de workflow.
 
    Identificeer en neem nota van de variabele die aan werkschemavariabele beantwoordt die de gebruiker - identiteitskaart bevat Als de geïdentificeerde variabele van primitief-type is, kunt u een vraag in werking stellen om werkschemamonstanties te bepalen verbonden aan een gebruiker - identiteitskaart
 
-1. Voer het volgende gegevensbestandbevel uit. In dit bevel, `user_var` is de variabele van het primitieve type die gebruiker - identiteitskaart bevat
+1. Voer het volgende gegevensbestandbevel uit. In deze opdracht is `user_var` de variabele van het primitieve type die de gebruiker-id bevat.
 
    ```sql
    select process_instance_id from <tb_name> where <user_var>=<user_ID>
    ```
 
-   De query retourneert alle procesinstantie-id&#39;s die zijn gekoppeld aan de opgegeven `user_ID`.
+   De query retourneert alle procesinstantie-id&#39;s die aan de opgegeven `user_ID` zijn gekoppeld.
 
-1. Volg de instructies in [Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie-id&#39;s verwijderen.
+1. Volg de instructies in [ zuivert gebruikersgegevens van werkschemainstanties die op de sectie van identiteitskaarts van de procesinstantie ](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) worden gebaseerd zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie IDs schrappen.
 
 ### Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s {#purge}
 
 Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zijn gekoppeld, gaat u als volgt te werk om gebruikersgegevens te verwijderen uit de respectieve procesinstanties.
 
-1. Voer de volgende opdracht uit, zodat u de aanroepings-id en -status voor een procesinstantie van lange duur kunt ophalen via de knop `tb_process_instance` tabel.
+1. Voer de volgende opdracht uit, zodat u de aanroepings-id en -status voor een procesinstantie van lange duur kunt ophalen uit de tabel `tb_process_instance` .
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
    ```
 
-   De query retourneert de langlevende aanroepings-id en status voor de opgegeven `process_instance_id`.
+   De query retourneert de langlevende aanroepings-id en -status voor de opgegeven `process_instance_id` .
 
-1. Een instantie van het publiek maken `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) met een `ServiceClientFactory` instantie met de juiste verbindingsinstellingen.
+1. Maak een instantie van de openbare `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager` ) met behulp van een `ServiceClientFactory` -instantie met de juiste verbindingsinstellingen.
 
-   Zie Java™ API-naslaggids voor meer informatie voor [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Voor meer informatie, zie Java™ API verwijzing voor [ ProcessManager van de Klasse ](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controleer de status van de workflowinstantie. Als de status anders is dan 2 (COMPLETE) of 4 (TERMINATED), beëindigt u de instantie eerst door de volgende methode aan te roepen:
 
@@ -137,11 +137,11 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   De `purgeProcessInstance` Methode verwijdert alle gegevens voor de opgegeven oproepings-id volledig uit de AEM Forms Server-database en GDS, indien geconfigureerd.
+   De methode `purgeProcessInstance` verwijdert alle gegevens voor de opgegeven oproepings-id volledig uit de AEM Forms Server-database en GDS, indien geconfigureerd.
 
 ### Werken met wezen {#orphan}
 
-Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog niet is ingediend. In dit geval worden de `process_instance_id` is **0** (nul). Daarom kunt u gebruikersgegevens die voor wezen taken worden opgeslagen niet volgen gebruikend procesinstantie IDs. Nochtans, kunt u het vinden gebruikend taakidentiteitskaart voor een wezen taak. U kunt de taken-id&#39;s identificeren vanuit de `tb_task` tabel voor een gebruiker, zoals beschreven in [Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog niet is ingediend. In dit geval, is `process_instance_id` **0** (nul). Daarom kunt u gebruikersgegevens die voor wezen taken worden opgeslagen niet volgen gebruikend procesinstantie IDs. Nochtans, kunt u het vinden gebruikend taakidentiteitskaart voor een wezen taak. U kunt taken IDs van de `tb_task` lijst voor een gebruiker identificeren zoals die in [ wordt beschreven identificeer procesinstantie IDs wanneer werkschemaminitiator of deelnemer ](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant) gekend is.
 
 Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehorende bestanden en gegevens te wissen met een wezen-taak uit GDS en de database.
 
@@ -151,7 +151,7 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
    select id from tb_form_data where task_id=<task_id>
    ```
 
-   De query retourneert een lijst met id&#39;s. Voor elke id ( `fd_id`) geretourneerd in de resultaten, maakt u als volgt een lijst met sessie-id-tekenreeksen:
+   De query retourneert een lijst met id&#39;s. Voor elke id ( `fd_id`) die in de resultaten wordt geretourneerd, maakt u als volgt een lijst met sessie-id-tekenreeksen:
 
    * _ `wfattach<task_id>`
    * `_wftask<fd_id>`
@@ -159,7 +159,7 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
 
 1. Voer een van de volgende stappen uit, afhankelijk van het feit of uw GDS naar een bestandssysteem of database verwijst:
 
-   1. **GDS in bestandssysteem**
+   1. **GDS in dossiersysteem**
 
       In het GDS-bestandssysteem:
 
@@ -173,9 +173,9 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
 
       `<file_name_guid>.session<session_id_string>`
 
-      1. Alle markeringsbestanden en andere bestanden met de exacte bestandsnaam verwijderen als `<file_name_guid>` uit het bestandssysteem.
+      1. Verwijder alle markeringsbestanden en andere bestanden met de exacte bestandsnaam als `<file_name_guid>` uit het bestandssysteem.
 
-   1. **GDS in database**
+   1. **GDS in gegevensbestand**
 
       Voer de volgende bevelen voor elke zitting-identiteitskaart uit:
 

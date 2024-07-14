@@ -22,9 +22,9 @@ Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud 
 
 Als u campagnes (inclusief bestemmingspagina&#39;s) beheert, moet u mogelijk het volgende doen:
 
-* **Segmenten definiëren** - U moet segmenten en strategieën definiëren voor uw doelinhoud.
-* **HTML voorbereiden voor het openen van pagina&#39;s** - Met bestemmingspagina&#39;s kunnen auteurs snel en eenvoudig ontwerp en inhoud rechtstreeks in een AEM pagina importeren. U moet de HTML voorbereiden zodat elementen correct kunnen worden geïmporteerd. Openingspagina&#39;s zijn handig wanneer u bestemmingspagina&#39;s voor marketingdoeleinden maakt die slechts gedurende een beperkte tijd actief zijn en snel moeten worden gemaakt.
-* **Integreren met SiteCatalyst** - U kunt bestemmingspagina&#39;s met SiteCatalyst integreren.
+* **bepaal segmenten** - u moet segmenten en strategieën voor uw gerichte inhoud bepalen.
+* **bereidt HTML voor het landen van pagina&#39;s** voor - het landen van pagina&#39;s laat auteurs ontwerp en inhoud in een AEM pagina snel en gemakkelijk invoeren. U moet de HTML voorbereiden zodat elementen correct kunnen worden geïmporteerd. Openingspagina&#39;s zijn handig wanneer u bestemmingspagina&#39;s voor marketingdoeleinden maakt die slechts gedurende een beperkte tijd actief zijn en snel moeten worden gemaakt.
+* **integreer met SiteCatalyst** - u kunt het landen pagina&#39;s met SiteCatalyst integreren.
 
 Zie de volgende pagina&#39;s:
 

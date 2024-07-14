@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Taakhandelingen aanpassen {#customizing-task-actions}
 
-In de AEM Forms-werkruimte kunnen gebruikers de handelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de volgende stappen uitvoeren: [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+In de AEM Forms-werkruimte kunnen gebruikers de handelingen aanpassen. Alvorens de taakacties aan te passen, zorg ervoor dat u de stappen volgt die bij [ worden vermeld Algemene stappen voor de werkruimteaanpassing van AEM Forms ](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Tekststijl aanpassen {#customizing-text-style}
 
-Als u de tekststijl wilt aanpassen, voegt u het volgende codefragment toe in het dialoogvenster `/apps/ws/css/newStyle.css` bestand:
+Als u de tekststijl wilt aanpassen, voegt u het volgende codefragment toe in het `/apps/ws/css/newStyle.css` -bestand:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -109,7 +109,7 @@ Als u de tekststijl wilt aanpassen, voegt u het volgende codefragment toe in het
 
 ## Afbeeldingen aanpassen {#customizing-images}
 
-Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in de `/apps/ws/css/newStyle.css` bestand. Met het volgende codefragment wordt de afbeelding voor de *vergrendelen* handeling:
+Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in het `/apps/ws/css/newStyle.css` -bestand. Het volgende codefragment past beeld voor de *vergrendelings* actie aan:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -132,13 +132,13 @@ Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in d
 
 ## Alleen afbeeldingen voor handelingen weergeven {#showing-only-images-for-actions}
 
-Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Zie voor meer informatie [Beelden voor routehandelingen](/help/forms/using/images-route-actions.md).
+Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Voor gedetailleerde informatie, zie [ Beelden voor de Acties van de Route ](/help/forms/using/images-route-actions.md).
 
 ### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de AEM Forms-werkruimte aan te passen. Voor gedetailleerde informatie over het maken van een ontwikkelingspakket gaat u naar [AEM Forms-werkruimtecode samenstellen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de AEM Forms-werkruimte aan te passen. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie [ de werkruimtecode van AEM Forms bouwen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. /libs/ws/js/runtime/templates/task.html kopiëren naar `/apps/ws/js/runtime/templates/task.html`Vervang het volgende codefragment:
+1. Kopieer /libs/ws/js/runtime/templates/task.html aan `/apps/ws/js/runtime/templates/task.html` vervangt het volgende codefragment:
 
    ```html
    // Orignal code
@@ -211,7 +211,7 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
        </div>
    ```
 
-1. De vaste breedte die aan een ankertag is toegewezen, verwijderen uit het dialoogvenster `/apps/ws/css/newStyle.css` bestand:
+1. Verwijder de vaste breedte die aan een ankertag is toegewezen uit het `/apps/ws/css/newStyle.css` -bestand:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -265,8 +265,8 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
 
 Voer de volgende stappen uit om het pop-upmenu Acties voor details aan te passen:
 
-* Kopieer het bestand /libs/ws/js/runtime/templates/taskdetails.html naar de map `/apps/ws/js/runtime/templates/` map:
-* Pictogramlabel inkapselen in de ankertag in plaats van tekst. Bijvoorbeeld de *nieuwe code* hieronder wordt de pictogramtag ingekapseld in de ankertag:
+* Kopieer het bestand /libs/ws/js/runtime/templates/taskdetails.html naar de map `/apps/ws/js/runtime/templates/` :
+* Pictogramlabel inkapselen in de ankertag in plaats van tekst. Bijvoorbeeld, kapselt de *nieuwe code* hieronder vermeld de pictogrammarkering binnen de ankermarkering in:
 
 ```html
 // Original code

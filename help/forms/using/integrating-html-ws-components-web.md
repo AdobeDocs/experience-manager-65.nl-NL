@@ -18,14 +18,14 @@ ht-degree: 0%
 
 # AEM Forms-werkruimtecomponenten integreren in webtoepassingen {#integrating-aem-forms-workspace-components-in-web-applications}
 
-U kunt de AEM Forms-werkruimte gebruiken [componenten](/help/forms/using/description-reusable-components.md) in uw eigen webtoepassing. De volgende voorbeeldimplementatie gebruikt componenten van een AEM Forms-werkruimtendev-pakket dat op een CRX™-instantie is geïnstalleerd om een webtoepassing te maken. Pas de onderstaande oplossing aan uw specifieke behoeften aan. De voorbeeldimplementatie wordt opnieuw gebruikt `UserInfo`, `FilterList`, en `TaskList`in een webportal.
+U kunt de werkruimte van AEM Forms [ componenten ](/help/forms/using/description-reusable-components.md) in uw eigen Webtoepassing gebruiken. De volgende voorbeeldimplementatie gebruikt componenten van een AEM Forms-werkruimtendev-pakket dat op een CRX™-instantie is geïnstalleerd om een webtoepassing te maken. Pas de onderstaande oplossing aan uw specifieke behoeften aan. De voorbeeldimplementatie gebruikt opnieuw `UserInfo` -, `FilterList` - en `TaskList` -componenten in een webportal.
 
-1. Aanmelden bij CRXDE Lite-omgeving `https://'[server]:[port]'/lc/crx/de/`. Zorg ervoor dat u een AEM Forms-ontwikkelpakket voor werkruimten hebt geïnstalleerd.
-1. Een pad maken `/apps/sampleApplication/wscomponents`.
+1. Meld u aan bij de CRXDE Lite-omgeving op `https://'[server]:[port]'/lc/crx/de/` . Zorg ervoor dat u een AEM Forms-ontwikkelpakket voor werkruimten hebt geïnstalleerd.
+1. Maak een pad `/apps/sampleApplication/wscomponents` .
 1. CSS, afbeeldingen, js/libs, js/runtime en js/registry.js kopiëren
 
    * Van `/libs/ws`
-   * tot `/apps/sampleApplication/wscomponents`.
+   * tot en met `/apps/sampleApplication/wscomponents` .
 
 1. Maak een bestand demomain.js in de map /apps/sampleApplication/wscomponents/js. Kopieer code van /libs/ws/js/main.js naar demomain.js.
 1. In demomain.js, verwijder de code om Router te initialiseren en de volgende code toe te voegen:
@@ -41,9 +41,9 @@ U kunt de AEM Forms-werkruimte gebruiken [componenten](/help/forms/using/descrip
        });
    ```
 
-1. Een knooppunt onder /content op naam maken `sampleApplication` en type `nt:unstructured`. In de eigenschappen van dit knooppunt voegt u `sling:resourceType` van het type String en value `sampleApplication`. Voeg in de lijst Toegangsbeheer van dit knooppunt een item toe voor `PERM_WORKSPACE_USER` jcr:lezenrechten toestaan. Ook in de lijst Toegangsbeheer van `/apps/sampleApplication` een item toevoegen voor `PERM_WORKSPACE_USER` jcr:lezenrechten toestaan.
-1. In `/apps/sampleApplication/wscomponents/js/registry.js` paden bijwerken van `/lc/libs/ws/` tot `/lc/apps/sampleApplication/wscomponents/` voor sjabloonwaarden.
-1. In uw portal kunt u JSP-bestand op `/apps/sampleApplication/GET.jsp`voegt u de volgende code toe om de vereiste componenten in het portaal op te nemen.
+1. Maak een knooppunt onder /content op naam `sampleApplication` en typ `nt:unstructured` . Voeg in de eigenschappen van dit knooppunt `sling:resourceType` van het type String en value `sampleApplication` toe. Voeg in de lijst Toegangsbeheer van dit knooppunt een item toe voor `PERM_WORKSPACE_USER` dat jcr:read-bevoegdheden toestaat. Voeg in de lijst Toegangsbeheer van `/apps/sampleApplication` ook een item toe voor `PERM_WORKSPACE_USER` het toestaan van machtigingen voor jcr:read.
+1. Werk in `/apps/sampleApplication/wscomponents/js/registry.js` paden van `/lc/libs/ws/` naar `/lc/apps/sampleApplication/wscomponents/` bij voor sjabloonwaarden.
+1. Voeg de volgende code toe aan het JSP-bestand van de introductiepagina van uw portal op `/apps/sampleApplication/GET.jsp` om de vereiste componenten in de portal op te nemen.
 
    ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -56,7 +56,7 @@ U kunt de AEM Forms-werkruimte gebruiken [componenten](/help/forms/using/descrip
 
    >[!NOTE]
    >
-   >Elke component wordt toegevoegd aan de componenttag (met klassecomponent) tijdens het renderen. Zorg ervoor dat de homepage deze tags bevat. Zie de `html.jsp` bestand van de AEM Forms-werkruimte voor meer informatie over deze basisturing-tags.
+   >Elke component wordt toegevoegd aan de componenttag (met klassecomponent) tijdens het renderen. Zorg ervoor dat de homepage deze tags bevat. Zie het `html.jsp` -bestand van de AEM Forms-werkruimte voor meer informatie over deze basislabels voor besturingselementen.
 
 1. Als u de componenten wilt aanpassen, kunt u de bestaande weergaven voor de vereiste component als volgt uitbreiden:
 
@@ -80,7 +80,7 @@ U kunt de AEM Forms-werkruimte gebruiken [componenten](/help/forms/using/descrip
    });
    ```
 
-1. Wijzig portaal CSS om de lay-out, het plaatsen, en de stijl van de vereiste componenten op uw portaal te vormen. U wilt bijvoorbeeld de achtergrondkleur zwart houden voor dit portaal om de component userInfo goed te kunnen bekijken. U kunt dit doen door de achtergrondkleur te wijzigen in `/apps/sampleApplication/wscomponents/css/style.css` als volgt:
+1. Wijzig portaal CSS om de lay-out, het plaatsen, en de stijl van de vereiste componenten op uw portaal te vormen. U wilt bijvoorbeeld de achtergrondkleur zwart houden voor dit portaal om de component userInfo goed te kunnen bekijken. U kunt dit doen door de achtergrondkleur in `/apps/sampleApplication/wscomponents/css/style.css` als volgt te wijzigen:
 
    ```css
    body {

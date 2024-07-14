@@ -43,7 +43,7 @@ Wanneer u gebruikers toevoegt voor OpenOffice, Microsoft® Word of Microsoft® P
 In een Windows-besturingssysteem moeten de beheerdersgebruikersaccounts die worden gebruikt voor PDF-conversie (PDFG-gebruikers) de tokenrechten op procesniveau vervangen. U kunt dit recht toevoegen door de Redacteur van het Beleid van de Groep te gebruiken:
 
 1. Klik in het menu Start van Windows op Uitvoeren en voer vervolgens gpedit.msc in.
-1. Klik op Lokaal computerbeleid > Computerconfiguratie > Windows-instellingen > Beveiligingsinstellingen > Lokaal beleid > Toewijzing gebruikersrechten. Bewerk de *Een token op procesniveau vervangen* beleid om de groep van Beheerders te omvatten.
+1. Klik op Lokaal computerbeleid > Computerconfiguratie > Windows-instellingen > Beveiligingsinstellingen > Lokaal beleid > Toewijzing gebruikersrechten. Bewerk *vervang een symbolisch van het procesniveau* beleid om de groep van Beheerders te omvatten.
 1. Voeg de gebruiker toe aan de Replace een Symbolische ingang van het Niveau van het Proces.
 
 ### Aanvullende configuratie vereist voor OpenOffice, Microsoft® Word en Microsoft® PowerPoint op Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -56,7 +56,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
 
 ### Aanvullende configuratie vereist voor OpenOffice op Linux® of Solaris™ {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. Gebruikersaccounts toevoegen. (Zie [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
+1. Gebruikersaccounts toevoegen. (Zie [ een gebruikersrekening ](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegen.)
 1. Vervolgens moet u het bestand /etc/sudoers wijzigen. De standaardmachtigingen voor dit bestand zijn 440. Wijzig de machtiging voor dit bestand in schrijfbaar.
 1. Voeg vermeldingen toe voor extra gebruikers (behalve de beheerder die de Forms-server uitvoert) in het bestand /etc/sudoers. Als u bijvoorbeeld AEM formulieren uitvoert als een gebruiker met de naam lcadm en een server met de naam myhost, en u gebruikers1 en user2 wilt imiteren, voegt u de volgende vermeldingen toe aan /etc/sudoers:
 
@@ -69,7 +69,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u gebruiker van het systeem en PDFG gebruikersrollen aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om een rol PDFG aan een gebruiker toe te wijzen, zie [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Zorg ervoor dat u gebruiker van het systeem en PDFG gebruikersrollen aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om een rol PDFG aan een gebruiker toe te wijzen, zie [ een gebruikersrekening ](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegen
 
 1. Zoek en becommentariëer deze regel ook in het bestand /etc/sudoers door een hekje (#) aan het begin van de regel toe te voegen:
 
@@ -80,7 +80,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
    Hiermee kunt u Linux®-gebruikers toevoegen.
 
 1. Wijzig de machtiging voor het bestand e-mail/submenu&#39;s weer in 440.
-1. Alle gebruikers toestaan die u via hebt toegevoegd [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account) om verbindingen met de Forms-server te maken. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de Forms Server, gebruikt u de volgende opdracht
+1. Sta alle gebruikers toe die u via [ toevoegde een gebruikersrekening ](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegde om verbindingen aan de Server van Forms te maken. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de Forms Server, gebruikt u de volgende opdracht
 
    `xhost +local:user1@`
 

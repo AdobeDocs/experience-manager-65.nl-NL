@@ -22,6 +22,6 @@ De systeeminformatiedienst verstrekt REST APIs om informatie terug te winnen. Om
 
 1. Log in bij de beheerconsole. De standaard-URL van de beheerconsole is `https://[hostname]:'port'/adminui.`
 1. Ga naar Services > Toepassingen en services > Servicebeheer.
-1. Klik op de pagina Servicebeheer op de knop **SystemInfo** service.
-1. Selecteer REST in de lijst op het tabblad Eindpunten en klik op **Toevoegen**.
-1. Voor het Add REST Eindpunt scherm, klik **Toevoegen**.
+1. Voor de pagina van het Beheer van de Dienst, klik de **SystemInfo** dienst.
+1. In de lijst op het lusje van Eindpunten, uitgezochte REST, en klik **voeg** toe.
+1. Voor het Add REST Eindpuntscherm, voegt de klik **** toe.

@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Voor AEM Communities kan de moderatie rechtstreeks door beheerders en leden van een vertrouwde gemeenschap worden uitgevoerd op de gepubliceerde pagina waar de community-inhoud is geplaatst.
 
-Wanneer u een [moderatieconsole](moderation.md)De informatie die voor de inhoud wordt weergegeven, bevat een koppeling naar de gepubliceerde pagina om toegang te verlenen tot extra moderniseringsacties die beschikbaar zijn wanneer de inhoud in de context wordt gematigd.
+Wanneer het gebruiken van de matigingsconsole van a [ ](moderation.md), omvat de informatie die voor de inhoud wordt getoond een verbinding aan de gepubliceerde pagina om toegang tot extra beschikbare moderatieacties toe te staan wanneer het modereren in-context.
 
 ## Moderatiehandelingen {#moderation-actions}
 
-Bezoek het moderatieoverzicht voor een beschrijving van [matigingsmaatregelen](moderate-ugc.md#moderation-actions).
+Bezoek het moderatieoverzicht voor een beschrijving van [ moderatieacties ](moderate-ugc.md#moderation-actions).
 
 ## Moderniseringsinterface {#moderation-ui}
 
@@ -38,20 +38,20 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 ## Voorbeeld {#example}
 
-Met de [Geometrixx inschakelen](http://localhost:4503/content/sites/engage/en.html) site gemaakt bij [Aan de slag met AEM Communities](getting-started.md), is het mogelijk een thread op te zetten in een forum waarop diverse moderniseringsactiviteiten in de publicatieomgeving kunnen worden uitgevoerd. Zie hieronder.
+Gebruikend de ](http://localhost:4503/content/sites/engage/en.html) gemaakte plaats van de Bouw van 0} Geometrixx {wanneer [ Begonnen het worden met AEM Communities ](getting-started.md), is het mogelijk aan opstelling een draad in een forum waarop om diverse matigingsactiviteiten in het milieu van Publish te ervaren. [ Zie hieronder.
 
-Aaron McDonald (`aaron.mcdonald@mailinator.com`) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de groep van moderatoren in de gemeenschap bij het maken van de site.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) werd geïdentificeerd als vertrouwd gemeenschapslid door hem toe te voegen aan de gemeenschap-in gesprek-moderatorgroep toen het creëren van de plaats.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) kan worden toegevoegd als lid van een gemeenschap-gespreksgroep die [Ledenconsole](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) kan als lid van gemeenschap-in dienst neemt-leden groep worden toegevoegd gebruikend de [ console van Leden ](members.md).
 
-Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar [Gebruikers en gebruikersgroepen beheren](users.md).
+Voor meer op communautaire gebruikersgroepen, bezoek [ het Leiden Gebruikers en de Groepen van de Gebruiker ](users.md).
 
 ### De forumberichten maken {#create-the-forum-posts}
 
 * Aanmelden als Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Forum selecteren
-   * Nieuwe advertentie selecteren
+   * Nieuwe Post selecteren
    * Voer het onderwerp in
 
      Wanneer wijzigt u de nectar in Humming Bird Feeder
@@ -67,7 +67,7 @@ Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar
 
    * Forum selecteren
    * Selecteer Meer lezen voor het onderwerp Hummingird
-   * Opmerking invoeren voor reactie op bericht
+   * Voer de opmerking in voor Post Reply
 
      Ik verander de mijne eenmaal per week en ik krijg ze van mei tot oktober.
 
@@ -78,7 +78,7 @@ Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar
 
    * Forum selecteren
    * Selecteer Meer lezen voor het onderwerp Hummingird
-   * Opmerking invoeren voor reactie op bericht
+   * Voer de opmerking in voor Post Reply
 
      Ik verkoop nectar en feeders - bezoek https://my.viral.url/
 
@@ -91,13 +91,13 @@ Hier volgt een weergave van het forum dat wordt weergegeven door een bezoeker va
 
 Een anonieme bezoeker van de site kan alleen het forum bekijken, maar mag geen inhoud plaatsen en geen moderatiehandelingen uitvoeren.
 
-![bezoeker van het communityforum](assets/community-forum-visitor.png)
+![ gemeenschap-forum-bezoeker ](assets/community-forum-visitor.png)
 
 ### Nieuw lid (#4) {#new-member}
 
-Meld u bij de auteur aan als beheerder en voeg Boyd Larsen (boyd.larsen@dodgit.com) toe als een nieuw lid van de groep met deelnemers aan de gebruikersgemeenschap met behulp van de [Ledenconsole](members.md)en logout.
+Op auteur, login als admin en voeg Boyd Larsen (boyd.larsen@dodgit.com) als nieuw lid van gemeenschap-in dienst nemend-leden groep toe gebruikend de [ console van Leden ](members.md), dan logout.
 
-Bij publiceren, login als Boyd Larsen en toegang tot de draad door te selecteren `Forum`en vervolgens `Read more` voor de bulgvogelpost.
+Meld u bij het publiceren aan als Boyd Larsen en open de thread door `Forum` te selecteren en vervolgens `Read more` voor de nummervogel.
 
 Opmerking:
 
@@ -109,7 +109,7 @@ Laat Boyd Vlag selecteren om de inhoud te markeren die door Andrew is geplaatst.
 
 Afmelden
 
-![lid van het communautair forum](assets/community-forum-member.png)
+![ gemeenschap-forum-lid ](assets/community-forum-member.png)
 
 ### Beheerder (#3) {#administrator}
 
@@ -120,9 +120,9 @@ Opmerking:
 * Beheerders kunnen vlaggen, Verwijderen, Bewerken, Weigeren, Knippen, Sluiten, Vastzetten, Functie.
 * Admin kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
-![community-admin-forum](assets/community-admin-forum.png)
+![ gemeenschap-admin-forum ](assets/community-admin-forum.png)
 
-Selecteer het menupunt van het Beleid zodat kunt u tot [moderatieconsole](moderation.md) uit de publicatieomgeving.
+Selecteer het menupunt van het Beleid zodat kunt u tot de [ moderatieconsole ](moderation.md) van het milieu van Publish toegang hebben.
 
 Bericht dat, voor een beheerder, alle moderatable inhoud zichtbaar is, niet alleen inhoud van de de communautaire plaats van de Modus van de Geometrixx.
 
@@ -130,11 +130,11 @@ Het zoekfilter is een zijpaneel dat tussen open en gesloten schakelt.
 
 Afmelden.
 
-![moderatie-console-publish](assets/moderation-console-publish.png)
+![ moderatie-console-publiceer ](assets/moderation-console-publish.png)
 
 ### Moderator van de Gemeenschap (#2) {#community-moderator}
 
-Log in als Aaron McDonald (`aaron.mcdonal@mailinator.com`), een moderator van de gemeenschap, en toegang tot de draad door Forum te selecteren, en dan gelezen meer voor de kolibrieppost.
+Log in als Aaron McDonald (`aaron.mcdonal@mailinator.com`), een moderator van de gemeenschap, en open de draad door Forum te selecteren, en lees dan meer voor de kolibrieppost.
 
 Opmerking:
 
@@ -143,9 +143,9 @@ Opmerking:
 * Aaron kan het forumonderwerp knippen om het naar een ander forum te verplaatsen waarvoor hij gematigd is.
 * Aaron kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
-![gemeenschapsforum-moderator](assets/community-forum-moderator.png)
+![ gemeenschap-forum-moderator ](assets/community-forum-moderator.png)
 
-Selecteer het menupunt van het Beleid zodat kunt u tot [moderatieconsole](moderation.md) uit de publicatieomgeving.
+Selecteer het menupunt van het Beleid zodat kunt u tot de [ moderatieconsole ](moderation.md) van het milieu van Publish toegang hebben.
 
 Bericht dat, voor een communautaire moderator, slechts moderatable inhoud van de de communautaire plaats van de Modus van de Geometrixx is zichtbaar.
 
@@ -153,11 +153,11 @@ Merk op dat de communautaire moderator de zelfde opties zoals de beheerder heeft
 
 Afmelden.
 
-![moderatortoegang](assets/moderator-access.png)
+![ moderator-toegang ](assets/moderator-access.png)
 
 ### Inhoudsauteur (#1) {#content-author}
 
-Aanmelden als Rebekah Larsen (`rebekah.larsen@mailinator.com`), een lid van de gemeenschap die de draad begon, en toegang tot de draad door Forum te selecteren, en dan gelezen meer voor de het kolieren post.
+Meld u aan als Rebekah Larsen (`rebekah.larsen@mailinator.com`), een lid van de gemeenschap dat de thread heeft gestart, en open de thread door Forum te selecteren en lees vervolgens meer voor de bulgvogelpost.
 
 Opmerking:
 
@@ -165,4 +165,4 @@ Opmerking:
 * Rebekah kan ook reageren op andere inhoud of andere inhoud markeren.
 * Rebekah heeft geen toegang tot de moderatieconsole.
 
-![communityforum-auteur](assets/community-forum-author.png)
+![ gemeenschap-forum-auteur ](assets/community-forum-author.png)

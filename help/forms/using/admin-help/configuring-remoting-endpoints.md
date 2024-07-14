@@ -22,4 +22,4 @@ Met een extern eindpunt kan een toepassing die met Flex is gebouwd, de service a
 
 ## Instellingen voor eindpunten verwijderen {#remoting-endpoint-settings}
 
-**Flex Client Authentication Method:** Bepaalt het type van reactie dat de server terug naar de cliënt verzendt wanneer de aangehaalde dienst toegelaten veiligheid is, steunt de aangehaalde verrichting geen anonieme aanroepen, en de cliënt gaat of in geen of ongeldige geloofsbrieven over.
+**Methode van de Authentificatie van de Cliënt van Flex:** bepaalt het type van reactie dat de server terug naar de cliënt verzendt wanneer de aangehaalde dienst veiligheid toegelaten is, steunt de aangehaalde verrichting geen anonieme aanroepen, en de cliënt gaat in of geen of ongeldige geloofsbrieven over.

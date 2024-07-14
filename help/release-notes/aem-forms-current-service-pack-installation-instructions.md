@@ -21,23 +21,23 @@ ht-degree: 0%
 | Versie | 6.5.21.0. |
 | Type | Service Pack-release |
 | Datum | 29 mei 2024 |
-| URL downloaden | [Nieuwste AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
+| URL downloaden | [ Laatste versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
 >
->Zie de nieuwste [Opmerkingen bij de release AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html) voor een volledige lijst van opgeloste problemen.
+>Zie de recentste [ Nota&#39;s van de Versie van het AEM Service Pack ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html) voor een volledige lijst van vaste kwesties.
 
 ## Wat bevat Experience Manager Forms 6.5
 
 Adobe Experience Manager (AEM) Forms Service Pack bevat nieuwe en verbeterde functies, zoals belangrijke verbeteringen op verzoek van de klant, prestaties, stabiliteit en verbeteringen op het gebied van beveiliging. De de versieservicepacks van AEM Forms met regelmatige tussenpozen om recentste eigenschappen en verbeteringen te verstrekken. Afhankelijk van uw technologiestapel, kies één van de volgende wegen om de dienstpak op uw milieu te downloaden en te installeren:
 
-* [Download en installeer Service Pack op een AEM FormOn JEE-omgeving](#download-and-install-for-jee-service-pack)
-* [De download en installeert Service Pack op een AEMVorm op milieu OSGi](#download-and-install-for-osgi-service-pack)
+* [ Download en installeer het Pak van de Dienst op een AEM Vorm op milieu JEE ](#download-and-install-for-jee-service-pack)
+* [ Download en installeer het Pak van de Dienst op een AEM Vorm op milieu OSGi ](#download-and-install-for-osgi-service-pack)
 
 >[!NOTE]
 >
 > * Adobe geeft een volledig installatieprogramma elke zesde service pack uit. AEM 6.5 Forms Service Pack 18 (6.5.18.0) is het nieuwste volledige installatieprogramma voor JEE. Het volledige installatieprogramma ondersteunt nieuwe platforms, terwijl het installatieprogramma voor het gewone servicepack nieuwe functies, gecorrigeerde en algemene verbeteringen bevat. Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software voor uw AEM 6.5 Forms te gebruiken in JEE-omgeving, raadt de Adobe aan AEM 6.5.18.0 Forms te gebruiken op het volledige installatieprogramma van JEE dat op 31 augustus 2023 wordt uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 wordt uitgebracht of AEM 6.5.12.00 3 maart 2022. Installeer na gebruik van het volledige installatieprogramma het nieuwste servicepakket.
-> * De AEM Forms-functie, zoals Adaptive Forms, is beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), uitsluitend bestemd zijn voor exploratie en evaluatie. Voor productiedoeleinden is het van essentieel belang een geldige vergunning voor AEM Forms te verkrijgen.
+> * De eigenschap van AEM Forms, zoals Aangepast Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is voorgenomen voor exploratie en evaluatiedoeleinden slechts. Voor productiedoeleinden is het van essentieel belang een geldige vergunning voor AEM Forms te verkrijgen.
 
 <!--
 
@@ -57,8 +57,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++1. Maak back-ups van uw bestaande omgeving
 
-1. Maak een back-up van uw [CRX Repository, Databaseschema en GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
-1. Maak een back-up van de &lt;*AEM_forms_root*>/implementatiemap.
+1. Maak een file uw [ Bewaarplaats van CRX, het Schema van het Gegevensbestand, en GDS (Globale Opslag van het Document) ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Maak een back-up van de map &lt;*AEM_forms_root*>/distribueren.
 
 >[!NOTE]
 >
@@ -68,19 +68,19 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++2. De vereiste software downloaden
 
-* [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [ AEM Forms op het Pak van de Dienst JEE ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
-* [Fragmentserver](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+* [ Servlet van het Fragment ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
-* [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-* [Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [ AEM Service Pack ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+* [ Forms toe:voegen-op pakket ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 
 +++
 
 +++3. Microsoft Visual C++ Redistributable pakketten installeren
 
-* Download en installeer de [64-bits versie van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waarop AEM 6.5 Forms is geïnstalleerd.
+* De download en installeert [ versie met 64 bits van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022 ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waar AEM 6.5 Forms geïnstalleerd is.
 
 >[!NOTE]
 >
@@ -91,68 +91,68 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++4. Installeer AEM Forms op JEE service pack:
 
 1. Stop uw toepassingsserver.
-1. Het gereedschap **AEM Forms on JEE Service Pack installer archiveren** op uw vaste schijf:
+1. Extraheer **AEM Forms op het installateursarchief van het Pak van de Dienst JEE** aan uw harde aandrijving:
 
-   * **Windows**
-Navigeer naar de juiste directory op de installatiemedia of de installatiemap op de vaste schijf waarnaar u het installatieprogramma hebt gekopieerd en dubbelklik op de knop `aemforms65_cfp_install.exe` bestand.
+   * **Vensters**
+Navigeer naar de juiste map op de installatiemedia of -map op de vaste schijf waarnaar u hebt gekopieerd     en dubbelklikt u op het `aemforms65_cfp_install.exe` -bestand.
 
       * (Windows 32-bits) `Windows\Disk1\InstData\VM`
       * (Windows 64-bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Navigeer naar de juiste map en van een shell en type `./aem65_cfp_install.bin`.
+Navigeer naar de juiste map en van een shell en type `./aem65_cfp_install.bin` .
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Hiermee wordt een installatiewizard gestart die u door de installatie begeleidt.
 
-1. Klik in het deelvenster Inleiding op **[!UICONTROL Next]**.
-1. Op de **Installatiemap kiezen** , controleert u of de weergegeven standaardlocatie correct is voor uw bestaande installatie of klikt u op **[!UICONTROL Browse]** om de alternatieve map te selecteren waarin AEM formulieren zijn geïnstalleerd en klik op **[!UICONTROL Next]**.
-1. Lees de overzichtsinformatie van Service Pack en klik **[!UICONTROL Next]**.
-1. Lees de informatie van het Pre-installatieoverzicht en klik **[!UICONTROL Install]**.
-1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie updates op uw geïnstalleerde dossiers toe te passen.
-1. **[Alleen voor Windows]:** Voer een van de volgende stappen uit:
+1. Klik in het deelvenster Inleiding op **[!UICONTROL Next]** .
+1. Op **kies installeer het scherm van de Omslag**, verifieer dat de getoonde standaardplaats voor uw bestaande installatie correct is, of klik **[!UICONTROL Browse]** om de afwisselende omslag te selecteren waar de AEM vormen geïnstalleerd zijn, en **[!UICONTROL Next]** te klikken.
+1. Lees de samenvattingsinformatie van Service Pack en klik **[!UICONTROL Next]**.
+1. Lees de informatie over het pre-installatieoverzicht en klik op **[!UICONTROL Install]** .
+1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie-updates toe te passen op de geïnstalleerde bestanden.
+1. **[slechts voor Vensters ]:** voer één van de volgende stap uit:
 
-   * Schakel de optie **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. Uitvoeren **Configuratiebeheer** door de **ConfigurationManager.bat** bestand in `[aem-forms root]\configurationManager\bin`.
+   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Voer **Manager van de Configuratie** in werking door het {**dossier 3} te gebruiken 2} ConfigurationManager.bat in `[aem-forms root]\configurationManager\bin`.**
 
-   * U kunt de selectie van de **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. Voor uitvoering **Configuratiebeheer** gebruiken **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer naar *`<AEMForms_Install_Dir>\configurationManager\bin`* en vervangt u de **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** uiterlijk [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) en [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) bestanden, zoeken en vervangen **as-1.4.1.1.jar** with **as-1.4.1.2.jar** in deze twee bestanden.
+   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Alvorens **Manager van de Configuratie in werking te stellen** gebruikend **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer aan *`<AEMForms_Install_Dir>\configurationManager\bin`* folder en vervang **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** met recentste [ ConfigurationManager.lax ](/help/assets/ConfigurationManager.lax) en [ ConfigurationManager_IPV6.lax ](/help/assets/ConfigurationManager_IPv6.lax) dossiers, Onderzoek, en vervang **as-1.4.1.1.jar** met **as-1.4.1.2.jar** in deze twee dossiers.
 
      >[!NOTE]
      >
-     >* Het bijwerken van of het vervangen van **ConfigurationManager.bat** kunt u voorkomen dat de .lax-bestanden handmatig worden bijgewerkt.
+     >* Het bijwerken van of het vervangen van het {**dossier 0} ConfigurationManager.bat helpt u om het bijwerken van de .lax dossiers manueel te vermijden.**
 
-1. **[Alleen voor Unix]:** De **Configuratiebeheer starten** selectievakje is standaard ingeschakeld. Klikken **[!UICONTROL Done]** om de Manager van de Configuratie onmiddellijk in werking te stellen of te lopen **Configuratiebeheer** later, schrap **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. U kunt beginnen **Configuratiebeheer** later het gebruiken van het aangewezen manuscript in `[AEM_forms_root]/configurationManager/bin` directory.
+1. **[voor op unix-Gebaseerd slechts ]:** het **de controlevakje van de Manager van de Configuratie van het Begin** wordt geselecteerd door gebrek. Klik **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen onmiddellijk of **de Manager van de Configuratie** later in werking te stellen, schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. U kunt **Manager van de Configuratie** later beginnen gebruikend het aangewezen manuscript in de `[AEM_forms_root]/configurationManager/bin` folder.
 
-1. Kies afhankelijk van uw toepassingsserver een van de volgende documenten en volg de instructies in het dialoogvenster *Formulieren configureren en implementeren AEM* sectie.
+1. Afhankelijk van uw toepassingsserver, kies één van de volgende documenten en volg de instructies in *het Vormen en het Opstellen van AEM vormen* sectie.
 
-   * [AEM voor JBoss® installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [AEM voor WebSphere® installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-   * [AEM Forms for WebLogic installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-   * [AEM voor JBoss® Cluster installeren en implementeren](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
-   * [AEM voor WebSphere®-cluster installeren en implementeren](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
-   * [AEM Forms for WebLogic-cluster installeren en implementeren](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
+   * [ het Installeren van en het Opstellen van AEM vormen voor JBoss® ](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [ het Installeren van en het Opstellen van AEM vormen voor WebSphere® ](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [ het Installeren van en het Opstellen van AEM Forms voor WebLogic ](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+   * [ het Installeren van en het Opstellen van AEM vormen voor Cluster JBoss® ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
+   * [ het Installeren van en het Opstellen van AEM vormen voor Cluster WebSphere® ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
+   * [ het Installeren van en het Opstellen van AEM Forms voor Cluster WebLogic ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
 
 >[!NOTE]
 >
->* Nadat u AEM Forms op het JEE-servicepack hebt geïnstalleerd, moet u het Forms-add-onpakket verwijderen uit `crx-repository\install` voordat u de toepassingsserver opnieuw start. Download het nieuwste Forms add-on pakket van de [Software Distribution Portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+>* Nadat u AEM Forms op het JEE-servicepakket hebt geïnstalleerd, moet u het invoegpakket voor Forms uit de `crx-repository\install` -map verwijderen voordat u de toepassing opnieuw start. Download het recentste Forms toe:voegen-op pakket van het [ portaal van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 >* Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 +++
 
-+++5. Installeer het serverfragment als dit niet is geïnstalleerd (**Verplichte stap**)
++++5. Installeer het servletfragment als niet geïnstalleerd (**Verplicht stap**)
 
 <!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 U kunt als volgt het serverfragment downloaden en installeren:
 
-1. Als u het fragment niet hebt gedownload, downloadt u het van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+1. Als u niet het fragment hebt gedownload, download het van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
 2. Start de toepassingsserver, wacht tot de logbestanden zijn gestabiliseerd en controleer de toestand van de bundel.
 
-3. Open Web Console-bundels. De standaard-URL is `http://[Server]:[Port]/system/console/bundles`.
+3. Open Web Console-bundels. De standaard-URL is `http://[Server]:[Port]/system/console/bundles` .
 
-4. Klik op Installeren/Bijwerken. Kies het gedownloade fragment. `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. Klikken **Installeren** of **Bijwerken**. Wacht tot de toepassingsserver is gestabiliseerd
+4. Klik op Installeren/Bijwerken. Kies het gedownloade fragment, `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` . Klik **installeren** of **Update**. Wacht tot de toepassingsserver is gestabiliseerd
 
 5. Stop de toepassingsserver.
 
@@ -161,40 +161,40 @@ U kunt als volgt het serverfragment downloaden en installeren:
 +++6. AEM Service Pack installeren
 
 1. Start de instantie opnieuw vóór de installatie als de updatemodus voor de instantie is geactiveerd (wanneer de instantie is bijgewerkt vanaf een eerdere versie). Adobe raadt aan de toepassing opnieuw te starten als de huidige uptime voor een instantie hoog is.
-1. Maak een momentopname of een nieuwe back-up van uw [!DNL Experience Manager] -instantie.
-1. Download het servicepack van [Softwaredistributie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
-1. Pakketbeheer openen en vervolgens selecteren **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie voor meer informatie [Pakketbeheer](/help/sites-administering/package-manager.md).
-1. Selecteer het pakket en selecteer **[!UICONTROL Install]**.
+1. Maak voordat u gaat installeren een momentopname of een nieuwe back-up van de [!DNL Experience Manager] -instantie.
+1. Download het de dienstpak van [ Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [ Manager van het Pakket ](/help/sites-administering/package-manager.md).
+1. Selecteer het pakket en selecteer vervolgens **[!UICONTROL Install]** .
 
 **Automatische installatie**
 
-Er zijn twee verschillende methoden die u automatisch kunt installeren [!DNL ExperienceManager] service pack.<!--       UPDATE FOR EACH NEW RELEASE -->
+Er zijn twee verschillende methodes die u kunt gebruiken om [!DNL ExperienceManager] de dienstpak automatisch te installeren.<!--       UPDATE FOR EACH NEW RELEASE -->
 
-* Plaats het pakket in `../crx-quickstart/install` als de server online beschikbaar is.
-Het pakket wordt automatisch geïnstalleerd.
+* Plaats het pakket in de map `../crx-quickstart/install` wanneer de server online beschikbaar is.
+Het pakket is      automatisch geïnstalleerd.
 
-* Gebruik de [HTTP-API van Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Gebruiken  `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
+* Gebruik [ HTTP API van de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
 
   >[!NOTE]
   >
   >Het de dienstpak van de Experience Manager steunt geen Bootstrap installatie. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-  **De installatie valideren**
+  **bevestigt de installatie**
 
-  Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadpleegt u de [technische voorschriften](/help/sites-deploying/technical-requirements.md).
+  Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [ technische vereisten ](/help/sites-deploying/technical-requirements.md).
 
-   1. De pagina met productinformatie (`/system/console/productinfo`) geeft de bijgewerkte versietekenreeks weer `Adobe Experience Manager (spversion)` krachtens [!UICONTROL Installed Products].<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. Alle OSGi-pakketten zijn **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in OSGi Console (de Console van het Gebruik: `/system/console/bundles`).
-   1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.22.14 of hoger (WebConsole gebruiken: `/system/console/bundles`).
+   1. Op de pagina met productinformatie (`/system/console/productinfo`) wordt de bijgewerkte versietekenreeks weergegeven `Adobe Experience Manager (spversion)` onder [!UICONTROL Installed Products] . <!-- UPDATE FOR EACH NEW RELEASE -->
+   1. Alle OSGi-bundels staan **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de OSGi-console (Web gebruiken     Console: `/system/console/bundles` ).
+   1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.22.14 of hoger (WebConsole gebruiken: `/system/console/bundles` ).
 
 +++
 
 +++7. Experience Manager Forms-invoegtoepassing installeren AEM
 
-1. Controleer of u de [!DNL Experience Manager] service pack.
-1. Download het overeenkomstige Forms-add-on-pakket dat is vermeld op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) voor uw besturingssysteem.
-1. Het Forms-invoegtoepassingspakket installeren zoals beschreven in [AEM Forms-add-onpakketten installeren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-1. Als u letters gebruikt in Experience Manager 6.5 Forms, installeert u de [nieuwste pakket AEMFD-compatibiliteit](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. Controleer of u het servicepack [!DNL Experience Manager] hebt geïnstalleerd.
+1. Download het overeenkomstige Forms toe:voegen-op pakket dat bij [ wordt vermeld de versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) voor uw werkend systeem.
+1. Installeer het toe:voegen-op pakket van Forms zoals die in [ wordt beschreven Installing AEM Forms toe:voegen-op pakketten ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. Als u brieven in Experience Manager 6.5 Forms gebruikt, installeer het [ recentste pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
 
@@ -206,7 +206,7 @@ Het pakket wordt automatisch geïnstalleerd.
 
 +++1. Maak back-ups van uw bestaande omgeving
 
-1. Maak een back-up van uw [CRX Repository and Database Schema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Maak een file uw [ Bewaarplaats van CRX en Schema van het Gegevensbestand ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
 >[!NOTE]
 >
@@ -216,14 +216,14 @@ Het pakket wordt automatisch geïnstalleerd.
 
 +++2. De vereiste software downloaden
 
-* [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-* [Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [ AEM Service Pack ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
+* [ Forms toe:voegen-op pakket ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 +++
 
 +++ 3. Installeer Microsoft Visual C++ Redistributable pakketten
 
-* Download en installeer de [64-bits versie van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waarop AEM 6.5 Forms is geïnstalleerd.
+* De download en installeert [ versie met 64 bits van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022 ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waar AEM 6.5 Forms geïnstalleerd is.
 
 >[!NOTE]
 >
@@ -235,47 +235,47 @@ Het pakket wordt automatisch geïnstalleerd.
 +++4. AEM Service Pack installeren
 
 1. Start de instantie opnieuw vóór de installatie als de updatemodus voor de instantie is geactiveerd (wanneer de instantie is bijgewerkt vanaf een eerdere versie). Adobe raadt aan de toepassing opnieuw te starten als de huidige uptime voor een instantie hoog is.
-1. Maak een momentopname of een nieuwe back-up van uw [!DNL Experience Manager] -instantie.
-1. Download het servicepack van [Softwaredistributie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
-1. Pakketbeheer openen en vervolgens selecteren **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie voor meer informatie [Pakketbeheer](/help/sites-administering/package-manager.md).
-1. Selecteer het pakket en selecteer **[!UICONTROL Install]**.
+1. Maak voordat u gaat installeren een momentopname of een nieuwe back-up van de [!DNL Experience Manager] -instantie.
+1. Download het de dienstpak van [ Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [ Manager van het Pakket ](/help/sites-administering/package-manager.md).
+1. Selecteer het pakket en selecteer vervolgens **[!UICONTROL Install]** .
 
 **Automatische installatie**
 
-Er zijn twee verschillende methoden die u automatisch kunt installeren [!DNL Experience Manager] service pack.<!--  UPDATE FOR EACH NEW RELEASE -->
+Er zijn twee verschillende methodes die u kunt gebruiken om [!DNL Experience Manager] de dienstpak automatisch te installeren.<!--  UPDATE FOR EACH NEW RELEASE -->
 
-* Plaats het pakket in `../crx-quickstart/install` als de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
-* Gebruik de [HTTP-API van Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Gebruiken `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
+* Plaats het pakket in de map `../crx-quickstart/install` wanneer de server online beschikbaar is. Het pakket is      automatisch geïnstalleerd.
+* Gebruik [ HTTP API van de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
 
   >[!NOTE]
   >
   >Het de dienstpak van de Experience Manager steunt geen Bootstrap installatie. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-  **De installatie valideren**
+  **bevestigt de installatie**
 
-  Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadpleegt u de [technische voorschriften](/help/sites-deploying/technical-requirements.md).
+  Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [ technische vereisten ](/help/sites-deploying/technical-requirements.md).
 
-   1. De pagina met productinformatie (`/system/console/productinfo`) geeft de bijgewerkte versietekenreeks weer `Adobe Experience Manager (spversion)` krachtens [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
+   1. Op de pagina met productinformatie (`/system/console/productinfo`) wordt de bijgewerkte versietekenreeks weergegeven `Adobe Experience Manager (spversion)` onder [!UICONTROL Installed Products] . <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1. Alle OSGi-pakketten zijn **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de Console OSGi (de Console van het Gebruik: `/system/console/bundles`).
+   1. Alle OSGi-bundels staan **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de OSGi-console (Webconsole gebruiken: `/system/console/bundles`).
 
-      1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.22.14 of hoger (webconsole gebruiken: `/system/console/bundles`).
+      1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.22.14 of hoger (Webconsole gebruiken: `/system/console/bundles` ).
 
 +++
 
 +++5. Invoegpakket voor Adobe Experience Manager Forms (AEM) installeren
 
-1. Controleer of u de [!DNL Experience Manager] service pack.
-1. Download het overeenkomstige Forms-add-on-pakket dat is vermeld op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) voor uw besturingssysteem.
-1. Het Forms-invoegtoepassingspakket installeren zoals beschreven in [AEM Forms-add-onpakketten installeren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-1. Als u letters gebruikt in Experience Manager 6.5 Forms, installeert u de [nieuwste pakket AEMFD-compatibiliteit](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. Controleer of u het servicepack [!DNL Experience Manager] hebt geïnstalleerd.
+1. Download het overeenkomstige Forms toe:voegen-op pakket dat bij [ wordt vermeld de versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) voor uw werkend systeem.
+1. Installeer het toe:voegen-op pakket van Forms zoals die in [ wordt beschreven Installing AEM Forms toe:voegen-op pakketten ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. Als u brieven in Experience Manager 6.5 Forms gebruikt, installeer het [ recentste pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
 
 ## Problemen oplossen
 
-* Indien **Dialoogvenster over interface van pakketbeheer** Sluit tijdens de installatie van het de dienstpak af, wacht op foutenlogboeken om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installaties succesvol zijn. Dit probleem doet zich doorgaans voor in de Safari-browser, maar kan soms ook in elke browser optreden.
+* Als **Dialoog op de Manager UI van het Pakket** tijdens de installatie van het de dienstpak weggaat, op foutenlogboeken wacht om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installaties succesvol zijn. Dit probleem doet zich doorgaans voor in de Safari-browser, maar kan soms ook in elke browser optreden.
 
 * Controleer de monitorlogboeken (error.log) zodra de installatie voor om het even welke activiteit volledig is. Wacht een paar minuten totdat er geen activiteit in de logboeken voorkomt. Start de AEM opnieuw.
 
-* Voor het geval u een **service-niet-beschikbare fout** na de installatie van het servicepakket AEM Forms 6.5.15.0 of hoger, [het serverfragment en de bundel installeren](/help/forms/using/aem-service-pack-installation-solution.md) om de fout te herstellen.
+* In het geval dat u a **dienst-niet beschikbare fout** na het installeren van AEM Forms 6.5.15.0 of recenter de dienstpak krijgt, [ installeert het servletfragment en de bundel ](/help/forms/using/aem-service-pack-installation-solution.md) om de fout te bevestigen.

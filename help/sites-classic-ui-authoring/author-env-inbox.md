@@ -24,15 +24,15 @@ U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems
 U ontvangt deze meldingen in twee Postvakken, die worden gescheiden door het type meldingen:
 
 * In de volgende sectie wordt een postvak weergegeven waarin de meldingen worden weergegeven die u ontvangt als gevolg van abonnementen.
-* Een speciaal postvak voor workflowitems wordt beschreven in het dialoogvenster [Deelnemen aan workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Een gespecialiseerde inbox voor werkschemapunten wordt beschreven in [ Deelnemend in het ](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document van Werkschema&#39;s.
 
 ## Je meldingen bekijken {#viewing-your-notifications}
 
 Om uw meldingen weer te geven:
 
-1. Open de melding in het vak: in het dialoogvenster **Websites** -console, klikt u op de gebruikersknop in de rechterbovenhoek en selecteert u **Melding in vak**.
+1. Open het bericht in doos: in de **** console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
 
-   ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
+   ![ screen_shot_2012-02-08at105226am ](assets/screen_shot_2012-02-08at105226am.png)
 
    >[!NOTE]
    >
@@ -46,15 +46,15 @@ Om uw meldingen weer te geven:
    * [Abonneren op meldingen](#subscribing-to-notifications)
    * [Je meldingen verwerken](#processing-your-notifications)
 
-   ![chlimage_1-4](assets/chlimage_1-4.jpeg)
+   ![ chlimage_1-4 ](assets/chlimage_1-4.jpeg)
 
 ## Abonneren op meldingen {#subscribing-to-notifications}
 
 Abonneren op meldingen:
 
-1. Open de melding in het vak: in het dialoogvenster **Websites** -console, klikt u op de gebruikersknop in de rechterbovenhoek en selecteert u **Melding in vak**.
+1. Open het bericht in doos: in de **** console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
 
-   ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
+   ![ screen_shot_2012-02-08at105226am-1 ](assets/screen_shot_2012-02-08at105226am-1.png)
 
    >[!NOTE]
    >
@@ -63,18 +63,18 @@ Abonneren op meldingen:
    >
    >`https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Klikken **Configureren...** in de linkerbovenhoek om het configuratiedialoogvenster te openen.
+1. Klik **vormen...** in de upper-left hoek om de configuratiedialoog te openen.
 
-   ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
+   ![ screen_shot_2012-02-08at111056am ](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Selecteer het berichtkanaal:
 
-   * **Inbox**: meldingen worden weergegeven in uw AEM Postvak IN.
-   * **E-mail**: meldingen worden per e-mail verzonden naar het e-mailadres dat is gedefinieerd in uw gebruikersprofiel.
+   * **Inbox**: de berichten worden getoond in uw AEM Inbox.
+   * **E-mail**: de berichten worden gemaild aan het e-mailadres dat in uw gebruikersprofiel wordt bepaald.
 
    >[!NOTE]
    >
-   >Er moeten enkele instellingen zijn geconfigureerd om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Zie [E-mailmelding configureren](/help/sites-administering/notification.md#configuringemailnotification) om e-mailberichten in AEM te configureren.
+   >Er moeten enkele instellingen zijn geconfigureerd om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Zie [ Vormend E-mailBericht ](/help/sites-administering/notification.md#configuringemailnotification) om e-mailberichten in AEM te vormen.
 
 1. Selecteer de paginahandelingen waarvan u een melding wilt ontvangen:
 
@@ -90,24 +90,24 @@ Wanneer een pagina wordt geschrapt of bewogen, wordt een schrappingsactie automa
 
 1. Definieer de paden van de pagina&#39;s waarvoor u een melding krijgt:
 
-   * Klikken **Toevoegen** om een nieuwe rij aan de tabel toe te voegen.
-   * Klik op de knop **Pad** tabelcel en voer het pad in, bijvoorbeeld `/content/docs`.
+   * Klik **toevoegen** om een nieuwe rij aan de lijst toe te voegen.
+   * Klik de **cel van de Weg** lijst en ga de weg, bijvoorbeeld, `/content/docs` in.
 
-   * Op de hoogte worden gesteld van alle pagina&#39;s die tot de subboomstructuur behoren, set **Nauwkeurig?** tot **Nee**.
-Alleen een melding ontvangen voor acties op de pagina die door het pad wordt gedefinieerd, stelt u **Nauwkeurig?** tot **Ja**.
+   * Om voor alle pagina&#39;s worden op de hoogte gebracht die tot subtree behoren, plaats **Exact?** aan **Nr**.
+Om slechts voor acties op de pagina op de hoogte te worden gebracht die door de weg wordt bepaald, plaats **Exact?** aan **ja**.
 
-   * Als u de regel wilt toestaan, stelt u **Regel** tot **Toestaan**. Indien ingesteld op **Weigeren**, wordt de regel geweigerd maar niet verwijderd en kan later worden toegestaan.
+   * Om de regel toe te staan, plaats **Regel** aan **toestaat**. Als de reeks aan **ontkent**, wordt de regel ontkend maar niet verwijderd en kan later worden toegestaan.
 
-   Als u een definitie wilt verwijderen, selecteert u de rij door op een tabelcel te klikken en klikt u op **Verwijderen**.
+   Om een definitie te verwijderen, selecteer de rij door een lijstcel te klikken en **Schrapping** te klikken.
 
-1. Klikken **OK** om de configuratie op te slaan.
+1. Klik **O.K.** om de configuratie te bewaren.
 
 ## Je meldingen verwerken {#processing-your-notifications}
 
-Als u ervoor hebt gekozen om meldingen te ontvangen in uw AEM Postvak IN, wordt uw postvak IN gevuld met meldingen. U kunt [uw meldingen weergeven](#viewing-your-notifications)Selecteer vervolgens de vereiste meldingen voor:
+Als u ervoor hebt gekozen om meldingen te ontvangen in uw AEM Postvak IN, wordt uw postvak IN gevuld met meldingen. U kunt [ uw berichten ](#viewing-your-notifications) bekijken, dan de vereiste berichten selecteren aan:
 
-* Accepteren door op **Goedkeuren**: de waarde in het dialoogvenster **Lezen** kolom is ingesteld op **true**.
+* Accepteer het door **te klikken goedkeurt**: de waarde in **Gelezen** kolom wordt geplaatst aan **waar**.
 
-* Elimineren door op **Verwijderen**.
+* Elimineer het door **Schrapping** te klikken.
 
-![chlimage_1-5](assets/chlimage_1-5.jpeg)
+![ chlimage_1-5 ](assets/chlimage_1-5.jpeg)

@@ -65,16 +65,16 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
 ## Java-opties toevoegen aan JBoss {#add-java-options-to-jboss}
 
 1. Stop de JBoss-toepassingsserver.
-1. Open de *[appserver-hoofdmap]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een editor en voeg zo nodig Java-opties toe.
+1. Open de *[toepassingswortel]* /bin/run.bat (Vensters) of looppas.sh (Linux of UNIX) in een redacteur en voeg om het even welke opties van Java toe zoals vereist.
 1. Start de server opnieuw.
 
 ## Java-opties toevoegen aan WebLogic {#add-java-options-to-weblogic}
 
-1. Start de WebLogic-beheerconsole met https://[hostnaam]:&#39;port&#39;/console in de URL-regel van een webbrowser.
+1. Begin de WebLogic beleidsconsole door https:// [ gastheernaam ] te typen:&#39;haven&#39;/console in de lijn URL van Webbrowser.
 1. Typ de gebruikersnaam en het wachtwoord die u voor het WebLogic Server-domein hebt gemaakt en klik op Log Under Change Center, klik op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers en klik in het rechterdeelvenster op de naam van de beheerde server.
 1. Voor het volgende scherm, klik het lusje van de Configuratie > het Begin tabel van de Server.
-1. Voeg in het vak Argumenten de gewenste argumenten toe aan het einde van de huidige inhoud. Bijvoorbeeld: toevoegen - `Dadobe.healthmonitor.enabled=false` Schakelt Health Monitor uit.
+1. Voeg in het vak Argumenten de gewenste argumenten toe aan het einde van de huidige inhoud. Als u bijvoorbeeld toevoegt - `Dadobe.healthmonitor.enabled=false` schakelt u Health Monitor uit.
 1. Klik op Opslaan en vervolgens op Wijzigingen activeren.
 1. Start WebLogic managed server opnieuw.
 

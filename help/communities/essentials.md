@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Componenten, functies en essentiële functies  {#component-function-and-feature-essentials}
 
-Voor de functies van Adobe Experience Manager (AEM Community) moeten sitebezoekers lid worden en zich aanmelden bij de [community-site](overview.md#communitiessites) voordat u inhoud kunt plaatsen. Daarom [communitysjablonen](sites.md), waarvan een communautaire site [gemaakt](sites-console.md), worden ontworpen om een login eigenschap en gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.
+De eigenschappen van Adobe Experience Manager (AEM) van Gemeenschappen vereisen plaatsbezoekers om leden en login aan de [ communautaire plaats ](overview.md#communitiessites) te worden alvorens inhoud te kunnen posten. Aldus, {de malplaatjes van de 0} communautaire plaats ](sites.md), waarvan een communautaire plaats [ ](sites-console.md) wordt gecreeerd, worden ontworpen om een login eigenschap en gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.[
 
-Een gemeenschapssite ondersteunt leden die gemeenschapsgroepen maken wanneer de [gemeenschapsgroepfunctie](functions.md#groups-function) is opgenomen in het geselecteerde sjabloon voor de communitysite.
+Een communautaire plaats steunt leden die communautaire groepen creëren wanneer de [ functie van communautaire groepen ](functions.md#groups-function) in het geselecteerde malplaatje van de communautaire plaats inbegrepen is.
 
 Hieronder vindt u koppelingen naar essentiële informatie voor communautaire componenten, functies en functies.
 
@@ -38,7 +38,7 @@ Hieronder vindt u koppelingen naar essentiële informatie voor communautaire com
 ## Componenten met functies {#components-with-functions}
 
 * [Activiteitsstromen](essentials-activities.md)
-* [Blog](blog-developer-basics.md) ( `Journal`)
+* [ Blog ](blog-developer-basics.md) ( `Journal`)
 
 * [Kalender](calendar-basics-for-developers.md)
 * [Aanbevolen inhoud](essentials-featured.md)
@@ -47,7 +47,7 @@ Hieronder vindt u koppelingen naar essentiële informatie voor communautaire com
 * [Groepen](essentials-groups.md)
 * [Ideatie](ideation.md)
 * [Leaderboard](leaderboard.md)
-* [Vragen en antwoorden](qna-essentials.md) `(QnA)`
+* [ Vragen en Antwoorden ](qna-essentials.md) `(QnA)`
 
 ## Functies {#features}
 
@@ -60,16 +60,16 @@ Hieronder vindt u koppelingen naar essentiële informatie voor communautaire com
 * [Scores en badges](configure-scoring.md)
 * [Zoeken](search-implementation.md)
 * [Sociale grafiek](essentials-socialgraph.md)
-* [Storage Resource Provider](srp-and-ugc.md) `(SRP)`
+* [ Leverancier van het Middel van de Opslag ](srp-and-ugc.md) `(SRP)`
 
 * [Tags](tag.md)
 
 ## Javadocs {#javadocs}
 
-De [online javadocs](../../help/sites-developing/reference-materials.md) weerspiegelt de API&#39;s die beschikbaar zijn in de AEM 6.3-release.
+De [ online javadocs ](../../help/sites-developing/reference-materials.md) wijzen op APIs beschikbaar in AEM 6.3 versie.
 Community API&#39;s bevinden zich in `com.adobe.cq.social.*` pakketten.
 
-Voor elke [functiepakket](deploy-communities.md#latestfeaturepack), wordt een jar van javadoc beschikbaar gesteld. Ga voor meer informatie naar [Maven gebruiken voor Gemeenschappen](maven.md#javadocs).
+Voor elk [ eigenschappak ](deploy-communities.md#latestfeaturepack), wordt een jar javadoc ter beschikking gesteld. Voor meer informatie, bezoek [ Gebruikend Gemaakt voor Gemeenschappen ](maven.md#javadocs).
 
 ## Aanvullende informatie {#additional-information}
 

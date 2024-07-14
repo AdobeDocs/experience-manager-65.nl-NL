@@ -12,16 +12,16 @@ ht-degree: 1%
 
 ---
 
-# Integratie van Salesforce met gebruik van OAuth 2.0-clientaanmeldingsgegevens  {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integratie van Salesforce met gebruik van OAuth 2.0 client credentials flow {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM 6,5 | Dit artikel |
 
 U kunt OAuth 2.0 cliëntgeloofsbrieven gebruiken om AEM Forms met de toepassing van Salesforce te integreren. OAuth 2.0 cliëntgeloofsbrieven zijn een standaard en veilige methode voor directe mededeling zonder gebruikersbetrokkenheid.
 
-![Workflow bij het instellen van communicatie tussen AEM Forms en Salesforce-toepassing](/help/forms/using/assets/salesforce-workflow.png)
+![ Werkschema terwijl het plaatsen van mededeling tussen AEM Forms en toepassing Salesforce ](/help/forms/using/assets/salesforce-workflow.png)
 
 AEM Forms wisselt de aanmeldingsgegevens van de client uit (de sleutel van de consument en het consumentengeheim), die zijn gedefinieerd in de toepassing Salesforce waarmee verbinding wordt gemaakt, om een toegangstoken te verkrijgen.
 
@@ -34,9 +34,9 @@ Er zijn veelvoudige voordelen om OAuth 2.0 cliëntgeloofsbrieven voor authentifi
 
 Voordat u de communicatie tussen een Salesforce-toepassing en een AEM omgeving instelt:
 
-* Een [Salesforce-app verbonden met OAuth 2.0-clientreferentiestroom](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) en een gebruiker die alleen voor de API verantwoordelijk is voor uw organisatie en die de consumentensleutel en het consumentengeheim voor de app ontvangt.
+* Creeer a [ Salesforce verbonden app met OAuth 2.0 stroom van de cliëntcredentie ](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) en een slechts API-gebruiker voor uw organisatie en verkrijg de sleutel van de consument en het consumentengeheim voor app.
 
-* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. U kunt er ook voor kiezen [een Swagger-bestand maken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) helemaal op maat, voor gebruik in uw AEM.
+* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [ tot een dossier van de Swagger ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) van het kras te leiden, dat voor gebruik in uw AEM milieu wordt gemaakt.
 >[!NOTE]
 >
 > AEM 6.5 ondersteunt alleen Swagger 2.0-bestandsspecificaties.
@@ -46,21 +46,21 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM omgeving i
 ## Stappen om Salesforce met de stroom van de Verantwoording van de Cliënt te vormen {#steps-to-create-aem-datasource-configuration}
 
 1. Meld u aan bij de instantie Auteur.
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]** .
 1. Selecteer de configuratiemap.
-1. Klikken **[!UICONTROL Create]** en de **[!UICONTROL Create Data Source Configuration]** wordt weergegeven.
-1. Geef de **[!UICONTROL Title]** en selecteert u de **[!UICONTROL Service Type]** als **[!UICONTROL RESTful Service]**.
+1. Klik op **[!UICONTROL Create]** en **[!UICONTROL Create Data Source Configuration]** verschijnt.
+1. Geef de waarde **[!UICONTROL Title]** op en selecteer de waarde **[!UICONTROL Service Type]** as **[!UICONTROL RESTful Service]** .
 1. Klik op **[!UICONTROL Next]**.
-1. Selecteer de **[!UICONTROL Swagger Source]** als **[!UICONTROL File].**
+1. Selecteer **[!UICONTROL Swagger Source]** als **[!UICONTROL File].**
    >[!NOTE]
    >
    > Zodra het wagerbestand is geselecteerd, worden het schema, de hostnaam en het basispad automatisch ingevuld.
 
-1. Upload het gemaakte wagerbestand van uw lokale computer door op **[!UICONTROL Browse]**.
-1. Selecteer de **[!UICONTROL Authentication Type]** als **[!UICONTROL OAuth 2.0]** en de **[!UICONTROL Authentication Settings]** wordt weergegeven.
-1. Selecteer de **[!UICONTROL Grant Type]** als **[!UICONTROL Client Credentials]**.
-1. Geef de **[!UICONTROL Client Id]** en **[!UICONTROL Client Secret]** verkregen uit de Salesforce-app.
-1. Geef de **[!UICONTROL Access Token URL]** in formaat
+1. Upload het gemaakte wagerbestand van uw lokale computer door op **[!UICONTROL Browse]** te klikken.
+1. Selecteer **[!UICONTROL Authentication Type]** as **[!UICONTROL OAuth 2.0]** en het deelvenster **[!UICONTROL Authentication Settings]** verschijnt.
+1. Selecteer **[!UICONTROL Grant Type]** als **[!UICONTROL Client Credentials]** .
+1. Geef de **[!UICONTROL Client Id]** en **[!UICONTROL Client Secret]** op die u wilt ophalen uit de met Salesforce verbonden app.
+1. De **[!UICONTROL Access Token URL]** opgeven in de notatie
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
 
    >[!NOTE]
@@ -68,6 +68,6 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM omgeving i
    > Elke organisatie heeft een eigen specifieke domeinnaam.
 
 1. Klik op **[!UICONTROL Test Connection]**.
-1. Als de verbinding succesvol is, klik **[!UICONTROL Create]** knop.
+1. Klik op de knop **[!UICONTROL Create]** als de verbinding tot stand is gebracht.
 
-Nu kunt u [Maak het formuliergegevensmodel](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) om de gevormde gegevensbron met uw Aangepast Forms te integreren.
+Nu, kunt u [ tot het Model van de Gegevens van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) leiden om de gevormde gegevensbron met uw Aanpassings Forms te integreren.

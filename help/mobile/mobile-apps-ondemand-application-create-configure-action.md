@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 ## Een toepassing op aanvraag maken {#creating-an-on-demand-application}
 
@@ -32,20 +32,20 @@ De details van uw app kunnen worden weergegeven in het dashboard of het AEM Mobi
 >
 >Het dashboard is een reeks handige tegels die een overzicht geven van de inhoud, metagegevens en de verbindingsstatus van AEM Mobile On-Demand van de app.
 >
->Zie [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
+>Zie [ het Dashboard van de Toepassing van AEM Mobile ](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor details.
 
-**Een app op aanvraag maken:**
+**om app te creëren op bestelling:**
 
-1. Selecteren **Mobiel** van de zijspoor.
-1. Selecteren **Apps** van de Navigatie.
-1. Klikken **Maken** en selecteert u **App** in de vervolgkeuzelijst.
-1. Kies de sjabloon voor de mobiele app en klik op **Volgende**.
-1. App-eigenschappen invoeren, zoals **Titel**, **Naam**, **Beschrijving**.
+1. Selecteer **Mobiel** van het zijspoor.
+1. Selecteer **Apps** van de Navigatie.
+1. Klik **creëren** en selecteren **App** van drop-down.
+1. Kies het Mobiele toepassingsmalplaatje en klik **daarna**.
+1. Ga app eigenschappen zoals **Titel** in, **Naam**, **Beschrijving**.
 1. Klik op **Next**.
-1. Indien bekend, voer de configuratiegegevens van de cloud in. Klik anders op **Maken**.
-1. Klikken **Gereed** om uw nieuwe AEM Mobile-app in de catalogus weer te geven.
+1. Indien gekend, ga wolkenconfig details in, anders klik **creëren**.
+1. Klik **Gedaan** om uw nieuwe AEM Mobile app in de catalogus te bekijken.
 
-![chlimage_1](assets/chlimage_1.gif)
+![ chlimage_1 ](assets/chlimage_1.gif)
 
 >[!NOTE]
 >
@@ -64,19 +64,19 @@ U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingss
 
 Wanneer u een On-Demand-app maakt vanaf het dashboard van de toepassing, bestaat de volgende stap uit het koppelen van uw app aan de cloudconfiguratie.
 
-Zie [Uw app koppelen aan de Cloud Configuration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer informatie .
+Zie [ Associerend uw app aan de Configuratie van de Wolk ](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer details.
 
 ### Aan de slag {#getting-ahead}
 
-Als u bekend bent met het maken van een toepassing op aanvraag en deze toepassing zo aan een cloudconfiguratie hebt gekoppeld, raadpleegt u [Handelingen voor inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Zodra u met het creëren van een toepassing op bestelling vertrouwd bent en zo associerend die app aan een wolkenconfiguratie, zie {de Acties van het Beheer van de Inhoud 0} ](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).[
 
-**Handelingen voor inhoudsbeheer** omvat het maken en beheren van de volgende inhoud:
+**de Acties van het Beheer van de Inhoud** impliceren verwezenlijking en beheer van volgende inhoud:
 
 * [Artikelen beheren](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Banners beheren](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verzamelingen beheren](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Gedeelde bronnen uploaden](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Inhoud publiceren ongedaan maken](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish-inhoud publiceren](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 

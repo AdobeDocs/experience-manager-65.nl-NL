@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De activiteiten van een getekend lid van de gemeenschap, zoals posten op een forum of blog, worden verzameld in een stream die op verschillende manieren kan worden gefilterd en weergegeven via de configuratie van de `Activity Streams` component.
+De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan een forum of blog, worden verzameld in een stroom die op verschillende manieren door configuratie van de `Activity Streams` component kan worden gefiltreerd en worden getoond.
 
 De mogelijkheid om te volgen voegt nog een weergave van activiteiten toe wanneer leden van de gemeenschap belangenverklaringen volgen of de activiteiten van andere leden van de gemeenschap volgen.
 
@@ -32,59 +32,59 @@ In het document wordt beschreven:
 
 ### Activiteitsstromen toevoegen aan een pagina {#adding-activity-streams-to-a-page}
 
-Als u een `Activity Streams` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
+Als u een component `Activity Streams` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Activity Streams`
 
 En sleep het naar zijn plaats op een pagina waar de activiteitenstromen zouden moeten verschijnen.
 
-Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
 
-Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) worden opgenomen, is dit hoe `Activity Streams` wordt weergegeven:
+Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-activities.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Activity Streams` component verschijnt:
 
-![activity-streams](assets/activity-component.png)
+![ activiteit-stromen ](assets/activity-component.png)
 
 ### Activiteitenstromen configureren {#configuring-activity-streams}
 
-Selecteer de geplaatste `Activity Streams` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste component `Activity Streams` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![vormen](assets/configure-new.png)
+![ vormen ](assets/configure-new.png)
 
-Onder de **Gebruikersactiviteiten** tab, geef op welke activiteiten moeten worden weergegeven:
+Onder het **lusje van de Activiteiten van de Gebruiker**, specificeer welke activiteiten aan vertoning:
 
-![gebruikersactiviteiten](assets/user-activities.png)
+![ gebruiker-activiteiten ](assets/user-activities.png)
 
-* **Max. aantal activiteiten**
+* **Max aantal activiteiten**
 
   Aantal weer te geven activiteiten
 
-* **Stroombronpad**
+* **Pad van het Middel van de Stroom**
 
   Blanco laten om standaard in te stellen op de communitysite of -groep. Het pad naar de streambron identificeert de bron van activiteiten. De standaardwaarde is leeg.
 
-* **Weergave gebruikersactiviteiten weergeven**
+* **Mening van de Activiteiten van de Gebruiker van de Vertoning**
 
   Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die door het huidige lid binnen de gemeenschap worden gegenereerd. Standaard is ingeschakeld.
 
-* **Alle activiteiten weergeven**
+* **Vertoning Alle Mening van Activiteiten**
 
   Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad dat alle activiteiten bevat die zijn gegenereerd binnen de gemeenschap waartoe het huidige lid toegang heeft. Standaard is ingeschakeld.
 
-* **Na weergave weergeven**
+* **Vertoning na Mening**
 
   Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
 
 ### Volgende weergave {#following-view}
 
-Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [kalender](/help/communities/calendar.md), [bestandsbibliotheek](/help/communities/file-library.md), en [opmerkingen](/help/communities/comments.md).
+Componenten moeten worden geconfigureerd om het volgende in te schakelen. De eigenschappen die het volgende toestaan zijn [ blog ](/help/communities/blog-feature.md), [ forum ](/help/communities/forum.md), [ QnA ](/help/communities/working-with-qna.md), [ kalender ](/help/communities/calendar.md), [ dossierbibliotheek ](/help/communities/file-library.md), en [ commentaren ](/help/communities/comments.md).
 
-![volgende weergave](assets/following-activities.png)
+![ volgend-mening ](assets/following-activities.png)
 
-De **Volgen** button biedt een manier om inzendingen te volgen als activiteiten, [meldingen](/help/communities/notifications.md), of [abonnementen](/help/communities/subscriptions.md). Elke keer als **Volgen** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen. De `Email Subscriptions` selectie is alleen aanwezig als dit is geconfigureerd.
+**volgt** knoop een middel om ingangen als activiteiten, [ berichten ](/help/communities/notifications.md), of [ abonnementen ](/help/communities/subscriptions.md) te volgen. Telkens als **volgt** knoop wordt geselecteerd, is het mogelijk om op of van een selectie van een knevel te voorzien. De selectie van `Email Subscriptions` is alleen aanwezig als deze is geconfigureerd.
 
-Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **volgende**. Voor het gemak is het mogelijk `Unfollow All` om alle methoden uit te schakelen.
+Als om het even welke methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **volgend**. Voor het gemak is het mogelijk om `Unfollow All` te selecteren om alle methoden uit te schakelen.
 
-De **Volgen** wordt weergegeven:
+De **volg** knoop verschijnt:
 
 * Bij weergave van het profiel van een ander lid.
 * Op een hoofdpagina met functies, zoals forums, QnA en blogs.
@@ -97,4 +97,4 @@ De **Volgen** wordt weergegeven:
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie is te vinden op de [Essentiële elementen voor activiteitsstromen](/help/communities/essentials-activities.md) pagina voor ontwikkelaars.
+Meer informatie kan op de [ pagina van de Hoofdzaak van de Streams van de Activiteit ](/help/communities/essentials-activities.md) voor ontwikkelaars worden gevonden.

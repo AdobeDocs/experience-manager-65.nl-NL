@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # XCI-configuratieopties opgeven {#specifying-xci-configuration-options}
 
-Met Forms kunt u een aangepast XCI-bestand opgeven dat kan worden gebruikt voor rendering. (Zie [Locaties configureren voor Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Forms overschrijft standaard enkele van de opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
+Met Forms kunt u een aangepast XCI-bestand opgeven dat kan worden gebruikt voor rendering. (Zie [ het Vormen plaatsen voor Forms ](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Forms overschrijft standaard enkele van de opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
@@ -27,6 +27,6 @@ Met Forms kunt u een aangepast XCI-bestand opgeven dat kan worden gebruikt voor 
 
 U kunt opties selecteren waarmee de overschrijving voor de bovenstaande opties wordt geannuleerd. In dat geval gebruikt Forms de waarden die zijn opgegeven in het aangepaste XCI-bestand.
 
-1. Klik in de beheerconsole op **Services** > **Forms**.
+1. In beleidsconsole, klik **Diensten** > **Forms**.
 1. Schakel het selectievakje Systeemstandaard XCI-opties gebruiken in of uit. Wanneer deze optie is geselecteerd, gebruikt Forms de standaardwaarden voor de pakketten, de maker, de producent en de compressObjectStream-instellingen. Als deze optie is uitgeschakeld, gebruikt Forms de waarden die zijn opgegeven in het aangepaste XCI-bestand.
-1. Klikken **Opslaan**.
+1. Klik **sparen**.

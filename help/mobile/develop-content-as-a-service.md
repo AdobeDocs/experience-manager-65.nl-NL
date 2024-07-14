@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Mobiele apps moeten alle inhoud in AEM kunnen gebruiken als dat nodig is om de beoogde app-ervaring te bieden.
 
@@ -27,21 +27,21 @@ Dit omvat het gebruik van elementen, site-inhoud, CAAS-inhoud (over-the-air) en 
 
 >[!NOTE]
 >
->**Over-the-air inhoud** kan uit om het even welk bovengenoemd door handlers ContentSync komen. Het kan worden gebruikt om de verpakking en de levering in batches te verzenden via ritssluitingen en updates of dergelijke pakketten te onderhouden.
+>**over-de-Luchtinhoud** kan uit om het even welk hierboven door managers komen ContentSync. Het kan worden gebruikt om de verpakking en de levering in batches te verzenden via ritssluitingen en updates of dergelijke pakketten te onderhouden.
 
 Er zijn drie belangrijke soorten materiaal die de Diensten van de Inhoud leveren:
 
-1. **Activa**
-1. **Inhoud van verpakte HTML (HTML/CSS/JS)**
-1. **Kanaalonafhankelijke inhoud**
+1. **Assets**
+1. **verpakte inhoud van HTML (HTML/CSS/JS)**
+1. **Onafhankelijke inhoud van het Kanaal**
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![ chlimage_1-154 ](assets/chlimage_1-154.png)
 
 ## Assets {#assets}
 
 Verzamelingen van middelen zijn AEM constructies die verwijzingen naar andere verzamelingen bevatten.
 
-Een inzameling van Activa kan door de Diensten van de Inhoud worden blootgesteld. Als u een elementverzameling aanroept in een aanvraag, wordt een object geretourneerd dat een lijst is met de elementen, inclusief de URL&#39;s. Elementen zijn toegankelijk via een URL. De URL wordt opgegeven in een object. Bijvoorbeeld:
+Een inzameling van Activa kan door de Diensten van de Inhoud worden blootgesteld. Als u een elementverzameling aanroept in een aanvraag, wordt een object geretourneerd dat een lijst is met de elementen, inclusief de URL&#39;s. Assets is toegankelijk via een URL. De URL wordt opgegeven in een object. Bijvoorbeeld:
 
 * Een pagina-entiteit retourneert de JSON (paginaobject) die een afbeeldingsverwijzing bevat. De afbeeldingsverwijzing is een URL die wordt gebruikt om het binaire element voor de afbeelding op te halen.
 * Een verzoek om een lijst met elementen in een map retourneert de JSON met gegevens over alle entiteiten in die map. Deze lijst is een object. De JSON heeft URL-verwijzingen die worden gebruikt om het binaire element voor elk element in die map op te halen.
@@ -63,19 +63,19 @@ De workflow voor elementen ziet er als volgt uit:
    1. Middelen of middelen verzamelen
    1. JSON-rendering aanpassen
 
-Het volgende diagram toont het **Workflow voor middelenverwijzing**:
+Het volgende diagram toont het **Werkschema van de Verwijzing van Assets**:
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![ chlimage_1-155 ](assets/chlimage_1-155.png)
 
-### Elementen beheren {#managing-assets}
+### Assets beheren {#managing-assets}
 
 De Diensten van de inhoud verleent toegang tot AEM-beheerde activa die niet door andere AEM inhoud kunnen worden van verwijzingen voorzien.
 
-#### Bestaande beheerde middelen {#existing-managed-assets}
+#### Bestaande beheerde Assets {#existing-managed-assets}
 
 Een gebruiker van AEM Sites en Assets gebruikt AEM Assets om al zijn digitale materiaal voor alle kanalen te beheren. Ze ontwikkelen een systeemeigen mobiele app en moeten verschillende middelen gebruiken die door AEM Assets worden beheerd. Bijvoorbeeld logo&#39;s, achtergrondafbeeldingen en knoppictogrammen.
 
-Momenteel worden deze uitgespreid rond de gegevensopslagplaats van Activa. De bestanden waarnaar de toepassing moet verwijzen, zijn:
+Momenteel worden deze verspreid over de Assets-opslagplaats. De bestanden waarnaar de toepassing moet verwijzen, zijn:
 
 * /content/dam/geometrixx-outdoors/brand/logo_light.png
 * /content/dam/geometrixx-outdoors/brand/logo_dark.png
@@ -99,7 +99,7 @@ Een toepassingsontwikkelaar kan een lijst met beschikbare middelen krijgen door 
 
 Het resultaat is een object in JSON-indeling dat een lijst met de elementen in de map &quot;icons&quot; bevat.
 
-![chlimage_1-156](assets/chlimage_1-156.png)
+![ chlimage_1-156 ](assets/chlimage_1-156.png)
 
 #### Een afbeelding ophalen {#getting-an-image}
 
@@ -115,10 +115,10 @@ AEM Content Services biedt HTML-inhoud aan de mobiele app via de API. Klanten di
 
 De volgende opties worden overwogen:
 
-* **Zip-bestand:** Als u de beste kans wilt hebben om correct op het apparaat weer te geven, worden de materiaal-css, JavaScript, elementen, enzovoort van de pagina opgenomen in één gecomprimeerd bestand met de reactie. De verwijzingen in de pagina van de HTML kunnen worden aangepast om een relatieve weg aan deze dossiers te gebruiken.
-* **Streaming:** Een manifest ophalen van de vereiste bestanden van AEM. Gebruik vervolgens dat manifest om alle bestanden (HTML, CSS, JS, enzovoort) met volgende aanvragen aan te vragen.
+* **Zip dossier:** om de beste kans te hebben om behoorlijk op het apparaat te tonen, de van verwijzingen voorzien materiaal-css van de pagina, JavaScript, activa, etc. zijn inbegrepen in één enkel samengeperst dossier met de reactie. De verwijzingen in de pagina van de HTML kunnen worden aangepast om een relatieve weg aan deze dossiers te gebruiken.
+* **Streaming:** die manifest van de vereiste dossiers van AEM krijgen. Gebruik vervolgens dat manifest om alle bestanden (HTML, CSS, JS, enzovoort) met volgende aanvragen aan te vragen.
 
-![chlimage_1-157](assets/chlimage_1-157.png)
+![ chlimage_1-157 ](assets/chlimage_1-157.png)
 
 ## Kanaalonafhankelijke inhoud {#channel-independent-content}
 

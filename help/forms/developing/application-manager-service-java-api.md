@@ -1,6 +1,6 @@
 ---
-title: Application Manager Service JavaAPI Quick Start (SOAP)
-description: Application Manager Service JavaAPI Quick Start (SOAP)
+title: Application Manager Service JavaAPI Quick Start(SOAP)
+description: Application Manager Service JavaAPI Quick Start(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -32,11 +32,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->Java API(SOAP) Quick Start in Programming with AEM forms are based on the Forms if you using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Java API(SOAP) Quick Start in Programming with AEM forms are based on the Forms if you using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): Toepassingen implementeren met de Java API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd op basis van een bestaand LCA-bestand genaamd *EncryptDocument.lca*.
+Het volgende codevoorbeeld van Java voert een toepassing in die op een bestaand dossier LCA wordt gebaseerd genoemd *EncryptDocument.lca*.
 
 ```java
  /*
@@ -138,7 +138,7 @@ In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd op basis v
 
 ## Snel starten (SOAP modus): een toepassing verwijderen met de Java API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een toepassing met de naam *EncryptDocument*.
+Het volgende de codevoorbeeld van Java verwijdert een toepassing genoemd *EncryptDocument*.
 
 ```java
  /*

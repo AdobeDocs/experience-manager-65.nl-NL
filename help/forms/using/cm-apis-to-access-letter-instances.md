@@ -40,7 +40,7 @@ Het Beheer van de correspondentie stelt APIs bloot om brieveninstanties door de 
 
 ### getAllLetterInstances gebruiken {#using-nbsp-getallletterinstances}
 
-De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorgelegd als Ontwerp) worden gebaseerd. Als het queryobject null is, worden alle lettervarianten geretourneerd. Deze API retourneert een lijst met [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objecten, die kunnen worden gebruikt voor het ophalen van aanvullende informatie over de letter.
+De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorgelegd als Ontwerp) worden gebaseerd. Als het queryobject null is, worden alle lettervarianten geretourneerd. Deze API keert een lijst van [ terug LetterInstanceVO ](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) voorwerpen, die voor het halen van extra informatie van de brieveninstantie kunnen worden gebruikt.
 
 **Syntaxis**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -52,14 +52,14 @@ De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorg
   </tr>
   <tr>
    <td>query</td>
-   <td>De queryparameter wordt gebruikt om een instantie Letter te zoeken/filteren. Hier ondersteunt de query alleen kenmerken/eigenschappen op hoofdniveau van het object. De vraag bestaat uit verklaringen en "attributeName"die in het voorwerp van de Verklaring wordt gebruikt zou de naam van het bezit in het de instantievoorwerp van de Brief moeten zijn.<br /> </td>
+   <td>De queryparameter wordt gebruikt om een instantie Letter te zoeken/filteren. Hier ondersteunt de query alleen kenmerken/eigenschappen op hoofdniveau van het object. De vraag bestaat uit verklaringen en "attributeName"in het voorwerp van de Verklaring wordt gebruikt zou de naam van het bezit in het de instantievoorwerp van de Brief moeten zijn die.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 #### Voorbeeld 1: alle lettervarianten van het type SUBMITTED ophalen {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-De volgende code retourneert de lijst met verzonden lettervarianten. Als u alleen concepten wilt ophalen, wijzigt u de instelling `LetterInstanceType.COMPLETE.name()` tot `LetterInstanceType.DRAFT.name().`
+De volgende code retourneert de lijst met verzonden lettervarianten. Als u alleen concepten wilt ophalen, wijzigt u `LetterInstanceType.COMPLETE.name()` in `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference

@@ -26,36 +26,36 @@ Voer de volgende stappen uit om het interval van de synchronisatieplanner te ver
 
 1. Meld u aan bij AEM Configuratiebeheer. De URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Zoek en open de **FormsManagerConfiguration** bundel.
+1. Bepaal en open de plaats **FormsManagerConfiguration** bundel.
 
-1. Geef een nieuwe waarde op voor de **Frequentie synchronisatieplanning** -optie.
+1. Specificeer een nieuwe waarde voor de **optie van de Frequentie van de Planner van de Synchronisatie**.
 
    De eenheid van de frequentie is minuten. Bijvoorbeeld, om de planner te vormen om na elke 60 minuten te lopen, specificeer 60.
 
 ## Elementen synchroniseren {#synchronizing-assets}
 
-U kunt de **Elementen synchroniseren vanuit gegevensopslagruimte** om de elementen handmatig te synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
+U kunt **gebruiken synchroniseer Assets van de optie van de Bewaarplaats** om de activa manueel te synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
 
-1. Meld u aan bij AEM Forms. De standaard-URL is `https://'[server]:[port]'/lc/aem/forms/`.
+1. Meld u aan bij AEM Forms. De standaard-URL is `https://'[server]:[port]'/lc/aem/forms/` .
 
-   ![AEM Forms-gebruikersinterface](assets/aem_forms_ui.png)
+   ![ AEM Forms gebruikersinterface ](assets/aem_forms_ui.png)
 
-   **Afbeelding:** *AEM Forms-gebruikersinterface*
+   **Cijfer:** *gebruikersinterface van AEM Forms*
 
-1. Klik op de knop ![aem6forms_sync](assets/aem6forms_sync.png) in de werkbalk. Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klikken **Start** om de synchronisatie te starten.
+1. Klik het {](assets/aem6forms_sync.png) pictogram 0} aem6forms_sync in de toolbar. ![ Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik **Begin** om de synchronisatie in werking te stellen.
 
-   ![Synchronisatie, dialoogvenster](assets/migrate-and-syncronize.png)
+   ![ de dialoogdoos van de Synchronisatie ](assets/migrate-and-syncronize.png)
 
-   **Afbeelding:** *Synchronisatie, dialoogvenster*
+   **Cijfer:** *de dialoogdoos van de Synchronisatie*
 
 ## Synchronisatiefout voor probleemoplossing {#troubleshooting-synchronization-error}
 
 U kunt nieuwe toepassingen in de werkschemaontwerper (LiveCycle Workbench) tot stand brengen.
 
-Als de nieuwe toepassing en een map in /content/dam/formsanddocuments dezelfde naam hebben, wordt een fout &quot;*Middelen met dezelfde naam als deze toepassing bestaan al op hoofdniveau.*&quot; is geregistreerd.
+Als de onlangs gecreeerde toepassing en een omslag bij /content/dam/formsanddocuments identieke naam hebben, een fout &quot;*activa met de zelfde naam zoals deze toepassing bestaat reeds op wortelniveau.*&quot; is geregistreerd.
 
 U lost het conflict op door de naam van de toepassing te wijzigen en de elementen handmatig te synchroniseren.
 
-![Conflicten in dialoogvenster voor synchronisatie van elementen](assets/sync-conflict.png)
+![ Conflicten in de dialoogdoos van de activasynchronisatie ](assets/sync-conflict.png)
 
-**Afbeelding:** *Conflicten in dialoogvenster voor synchronisatie van elementen*
+**Cijfer:** *Conflicten in de dialoogdoos van de activasynchronisatie*

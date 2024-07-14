@@ -43,7 +43,7 @@ Verschillende rollen kunnen bij het testen en in diverse stadia van de projecton
     <ul>
      <li><p>De klant wordt voorzien van ervaring van het project dat wordt ontwikkeld.</p> </li>
      <li><p>Biedt vroege feedback van de klant.</p> </li>
-     <li><p>De gebruikers drukken vaak hun vereisten in termen van vroegere ervaring uit; het betrekken van de klanten bij het testen zo vroeg mogelijk verhoogt hun ervaring van het nieuwe project in termen van <i>hands-on</i> ervaring.</p> </li>
+     <li><p>De gebruikers drukken vaak hun vereisten in termen van vorige ervaring uit; het betrekken van de klanten in het testen zo vroeg mogelijk hun ervaring van het nieuwe project in termen van <i> hands-on </i> ervaring verhoogt.</p> </li>
     </ul> </td>
    <td><p>Opnieuw is vroege betrokkenheid goed, hoewel om het even welke versie de klanten gebruiken stabiel zou moeten zijn, met redelijke functionaliteit.</p> <p>Eerste indrukken zijn altijd belangrijk.</p> </td>
   </tr>

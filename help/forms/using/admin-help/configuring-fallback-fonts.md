@@ -24,12 +24,12 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
 >
 >De fontconfiguratie van de reserve is ook op de assembleerdienst van toepassing.
 
-1. Navigeren naar de adobe-livecycle-*`[appserver]`*.ear-bestand in de *`[aem-forms root]`*/configurationManager/export directory, maak een reservekopie en pak het origineel uit.
+1. Navigeer naar het bestand adobe-livecycle-*`[appserver]`* .ear in de map *`[aem-forms root]`* /configurationManager/export, maak een reservekopie en pak het origineel uit.
 1. Zoek het bestand adobe-fontmanager.jar en pak het uit.
 1. Zoek het bestand FontManagerResources.properties en open het in een teksteditor.
 1. Wijzig desgewenst de locaties en namen van de lettertypen Algemeen en Fallback en sla het bestand op.
 
-   De fontitems in het bestand FontManagerResources.properties zijn relatief ten opzichte van de *`[aem-forms root]`*/fonts directory. Als u lettertypen opgeeft die niet standaard AEM formulierlettertypen zijn, moet u deze lettertypen installeren in deze mapstructuur (binnen een bestaande map of in een nieuw gemaakte map).
+   De fontitems in het bestand FontManagerResources.properties zijn relatief ten opzichte van de map *`[aem-forms root]`* /fonts. Als u lettertypen opgeeft die niet standaard AEM formulierlettertypen zijn, moet u deze lettertypen installeren in deze mapstructuur (binnen een bestaande map of in een nieuw gemaakte map).
 
    >[!NOTE]
    >
@@ -40,8 +40,8 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
    * Algemeen lettertype, doorzocht op volgorde ingesteld in de fallback-tabel
 
 1. Verpak het bestand adobe-fontmanager.jar opnieuw.
-1. De adobe-livecycle opnieuw verpakken *`[appserver]`*.ear-bestand en gebruikt het vervolgens handmatig of door Configuratiebeheer uit te voeren.
+1. Herhaal het bestand adobe-livecycle-*`[appserver]`*.ear en pas het bestand vervolgens handmatig of met Configuratiebeheer opnieuw in.
 
 >[!NOTE]
 >
->Gebruik Configuration Manager niet om de adobe-livecycle-`[appserver]`.ear-bestand omdat hiermee uw wijzigingen worden overschreven door de standaardwaarden van de AEM formulieren.
+>Gebruik Configuration Manager niet om het bestand adobe-livecycle-`[appserver]`.ear opnieuw te verpakken, omdat hierdoor uw wijzigingen worden overschreven door de standaardwaarden voor AEM formulieren.

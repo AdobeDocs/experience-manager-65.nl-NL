@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Toepassingsdefinities zijn een manier om te bepalen welke spaties en andere configuraties geschikt zijn voor de app. In toepassingsdefinities kan de gebruiker ruimte toevoegen zonder dat de app opnieuw hoeft te worden gecompileerd. De toepassingsdefinitie wordt bijgewerkt en bevat de informatie voor nieuwe spaties.
 
@@ -30,15 +30,15 @@ Toepassingsdefinities zijn een manier om te bepalen welke spaties en andere conf
 
 ## Een nieuwe toepassingsdefinitie maken {#creating-a-new-app-definition}
 
-1. Kies **Mobiel** in de AEM Navigatieconsole.
+1. Kies **Mobiel** van de Console van de AEM.
 
-   ![chlimage_1-170](assets/chlimage_1-170.png)
+   ![ chlimage_1-170 ](assets/chlimage_1-170.png)
 
-1. Kies **Apps** van **Mobiel** en klik op **Maken.**
+1. Kies **Apps** van **Mobiel** en klik **creeer.**
 
-   Kies **App** om details in te voeren om uw nieuwe app te maken.
+   Kies **App** aan en ga details in om uw nieuwe app tot stand te brengen.
 
-   ![chlimage_1-11](assets/chlimage_1-11.gif)
+   ![ chlimage_1-11 ](assets/chlimage_1-11.gif)
 
 ### De volgende stappen {#the-next-steps}
 

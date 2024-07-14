@@ -24,9 +24,9 @@ Bij elke update van de opslagplaats wordt een inhoudsrevisie gemaakt. Als gevolg
 
 Met AEM 6.3 en hoger werd een onlineversie van deze functie genaamd Online Revision Cleanup geïntroduceerd. In vergelijking met de offlinerevisie Cleanup, waarbij de AEM instantie moet worden afgesloten, kan Online revisie Cleanup worden uitgevoerd terwijl de AEM online is. Onlinerevisie opschonen is standaard ingeschakeld en is de aanbevolen manier om een revisie op te schonen.
 
-**Opmerking**: [Bekijk de video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) voor een inleiding en hoe te om Online Correctie van de Revisie te gebruiken.
+**Nota**: [ zie de Video ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) voor een inleiding en hoe te om Online Opruiming van de Revisie te gebruiken.
 
-Het opschoningsproces van de revisie bestaat uit drie fasen: **schatting**, **samenpersen**, en **opruimen**. Schatting bepaalt of de volgende fase (compensatie) al dan niet wordt uitgevoerd op basis van hoeveel huisvuil kan worden verzameld. Tijdens de samenstellingsfase worden de segmenten en de teerdossiers herschreven verlaten om het even welke ongebruikte inhoud. De opschoningsfase verwijdert vervolgens de oude segmenten, inclusief eventuele ongewenste details die deze bevatten. In de offlinemodus kan doorgaans meer ruimte worden vrijgemaakt, omdat in de onlinemodus rekening moet worden gehouden met AEM werkset, waarbij extra segmenten niet worden verzameld.
+Het proces van de revisieschoonmaak bestaat uit drie fasen: **raming**, **samenperking**, en **schoonmaak**. Schatting bepaalt of de volgende fase (compensatie) al dan niet wordt uitgevoerd op basis van hoeveel huisvuil kan worden verzameld. Tijdens de samenstellingsfase worden de segmenten en de teerdossiers herschreven verlaten om het even welke ongebruikte inhoud. De opschoningsfase verwijdert vervolgens de oude segmenten, inclusief eventuele ongewenste details die deze bevatten. In de offlinemodus kan doorgaans meer ruimte worden vrijgemaakt, omdat in de onlinemodus AEM werkset moet worden opgenomen waarin extra segmenten van de verzameling behouden blijven.
 
 Raadpleeg de volgende koppelingen voor meer informatie over Revision Cleanup:
 
@@ -34,40 +34,40 @@ Raadpleeg de volgende koppelingen voor meer informatie over Revision Cleanup:
 * [Online revisie opschonen Veelgestelde vragen](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)
 * [Offline revisie opschonen uitvoeren](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
 
-Ook kunt u de [officiële documentatie voor eiken](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html).
+Ook, kunt u de [ officiële documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html) lezen.
 
 ### Wanneer u de Online revisie-opruiming wilt gebruiken in tegenstelling tot de offlinerevisie-opruiming? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**Online revisie opschonen is de aanbevolen manier om revisie op te schonen.** Offline revisie-opruiming mag alleen bij wijze van uitzondering worden gebruikt, bijvoorbeeld voordat u naar de nieuwe opslagindeling gaat of als de klantenservice van de Adobe u daarom verzoekt.
+**Online de Schoonmaakbeurt van de Revisie is de geadviseerde manier om revisie uit te voeren schoonmaak.** Offline revisie-opruiming mag alleen bij uitzondering worden gebruikt, bijvoorbeeld voordat u naar de nieuwe opslagindeling gaat of als de klantenservice u daarom verzoekt.
 
 ## Onlinerevisie-opschoning uitvoeren {#how-to-run-online-revision-cleanup}
 
-Onlinerevisie-opschoning is standaard geconfigureerd om automatisch één keer per dag uit te voeren op zowel AEM auteur- als publicatie-instanties. U hoeft alleen het onderhoudvenster te definiëren gedurende een periode met de minste gebruikersactiviteit. U kunt de Online taak van de Opruiming van de Revisie als volgt vormen:
+Onlinerevisie-opschoning is standaard geconfigureerd om automatisch één keer per dag uit te voeren op zowel AEM auteur- als Publish-instanties. U hoeft alleen het onderhoudvenster te definiëren gedurende een periode met de minste gebruikersactiviteit. U kunt de Online taak van de Opruiming van de Revisie als volgt vormen:
 
-1. Ga in het AEM hoofdvenster naar **Gereedschappen - Bewerkingen - Dashboard - Onderhoud** of wijs uw browser aan: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
+1. In het belangrijkste AEM venster, ga naar **Hulpmiddelen - Verrichtingen - Dashboard - Onderhoud** of richt uw browser aan: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
 
-   ![chlimage_1-90](assets/chlimage_1-90.png)
+   ![ chlimage_1-90 ](assets/chlimage_1-90.png)
 
-1. Overslaan **Dagelijks onderhoudvenster** en klik op de knop **Instellingen** pictogram.
+1. Beweeg over **het Venster van het Dagelijkse Onderhoud** en klik het **pictogram van Montages**.
 
-   ![chlimage_1-91](assets/chlimage_1-91.png)
+   ![ chlimage_1-91 ](assets/chlimage_1-91.png)
 
-1. Voer de gewenste waarden in (herhaling, begintijd, eindtijd) en klik op **Opslaan**.
+1. Ga de gewenste waarden (herhaling, begintijd, eindtijd) in en klik **sparen**.
 
-   ![chlimage_1-92](assets/chlimage_1-92.png)
+   ![ chlimage_1-92 ](assets/chlimage_1-92.png)
 
 Alternatief, als u de revisie schoonmaakbeurttaak manueel wilt in werking stellen, kunt u:
 
-1. Ga naar **Gereedschappen - Bewerkingen - Dashboard - Onderhoud** of blader rechtstreeks naar `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
-1. Klik op de knop **Dagelijks onderhoudvenster**.
-1. Houd de aanwijzer boven de **Revisie opschonen** pictogram.
-1. Klikken **Uitvoeren**.
+1. Ga naar **Hulpmiddelen - Verrichtingen - Dashboard - Onderhoud** of doorblader direct aan `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
+1. Klik het **Dagelijkse Venster van het Onderhoud**.
+1. Beweeg over het **pictogram van de Opruiming van de Herziening 0} {.**
+1. Klik **Looppas**.
 
-   ![chlimage_1-93](assets/chlimage_1-93.png)
+   ![ chlimage_1-93 ](assets/chlimage_1-93.png)
 
 ### Online revisie opschonen na offlinerevisie opschonen uitvoeren {#running-online-revision-cleanup-after-offline-revision-cleanup}
 
-Het opschoningsproces van de herziening herstelt oude herzieningen door generaties. Dit betekent dat telkens als u revisie in werking stelt een nieuwe generatie wordt gecreeerd en op de schijf gehouden. Er is echter een verschil tussen de twee soorten revisiereinigingen: opschoning van offline revisies houdt één generatie bij terwijl opschoning van online revisies twee generaties lang houdt. Opschonen wanneer u online revisie uitvoert **na** offline revisie opschort het volgende:
+Het opschoningsproces van de herziening herstelt oude herzieningen door generaties. Dit betekent dat telkens als u revisie in werking stelt een nieuwe generatie wordt gecreeerd en op de schijf gehouden. Er is echter een verschil tussen de twee soorten revisiereinigingen: opschoning van offline revisies houdt één generatie bij terwijl opschoning van online revisies twee generaties lang houdt. Zo, wanneer u online revisie schoonmaakbeurt **na** off-line revisie in werking stelt gebeurt het volgende:
 
 1. Nadat de eerste opschoning van de online revisie is uitgevoerd, verdubbelt de grootte van de opslagplaats. Dit gebeurt omdat er nu twee generaties op schijf zitten.
 1. Tijdens de volgende runtime zal de opslagplaats tijdelijk groeien terwijl de nieuwe generatie wordt gemaakt en zich vervolgens stabiliseren tot de grootte die het had na de eerste run, terwijl het proces voor online revisie-opruiming de vorige generatie opruimt.
@@ -78,10 +78,10 @@ Daarom wordt aanbevolen de schijf minstens twee of drie keer groter te maken dan
 
 ## Compactiemodi voor volledig en op het spoor  {#full-and-tail-compaction-modes}
 
-**AEM 6,5** introduceren **twee nieuwe modi** voor de **samenpersen** Fase van het proces voor online revisie-opschoning:
+**AEM 6.5** introduceert **twee nieuwe wijzen** voor de **samenstellingsfase** van het Online proces van de Opruiming van de Revisie:
 
-* De **volledige compressie** in de modus worden alle segmenten en teerbestanden in de gehele opslagplaats opnieuw genoteerd. De volgende opschoningsfase kan zo de maximumhoeveelheid huisvuil over de bewaarplaats verwijderen. Omdat volledige compactie de volledige bewaarplaats beïnvloedt, vereist het een aanzienlijke hoeveelheid systeemmiddelen en tijd om te voltooien. De volledige compactie komt overeen met de verdichtingsfase in AEM 6.3.
-* De **staarten samenvoegen** in mode worden alleen de meest recente segmenten en teerbestanden in de repository herschreven. De meest recente segmenten en teerbestanden zijn de segmenten die zijn toegevoegd sinds de laatste keer dat de volledige of eindcompressie is uitgevoerd. De volgende opschoningsfase kan dus alleen het afval verwijderen dat zich in het recente deel van de opslagplaats bevindt. Omdat de staartcompensatie slechts een deel van de bewaarplaats beïnvloedt, vereist het aanzienlijk minder systeemmiddelen en tijd om te voltooien dan volledige compensatie.
+* De **volledige samenstellingswijze** herschrijft alle segmenten en teerdossiers in de volledige bewaarplaats. De volgende opschoningsfase kan zo de maximumhoeveelheid huisvuil over de bewaarplaats verwijderen. Omdat volledige compactie de volledige bewaarplaats beïnvloedt, vereist het een aanzienlijke hoeveelheid systeemmiddelen en tijd om te voltooien. De volledige compactie komt overeen met de verdichtingsfase in AEM 6.3.
+* De **wijze van de staartcompressie** herschrijft slechts de meest recente segmenten en teerdossiers in de bewaarplaats. De meest recente segmenten en teerbestanden zijn de segmenten die zijn toegevoegd sinds de laatste keer dat de volledige of eindcompressie is uitgevoerd. De volgende opschoningsfase kan dus alleen het afval verwijderen dat zich in het recente deel van de opslagplaats bevindt. Omdat de staartcompensatie slechts een deel van de bewaarplaats beïnvloedt, vereist het aanzienlijk minder systeemmiddelen en tijd om te voltooien dan volledige compensatie.
 
 Deze methoden van verrekening vormen een afweging tussen efficiëntie en hulpbronnengebruik: hoewel de verdichtingsmethode bij staarten minder effectief is, heeft deze ook minder invloed op de normale werking van het systeem. Daarentegen is volledige compressie effectiever, maar heeft deze een grotere invloed op de normale werking van het systeem.
 
@@ -89,18 +89,18 @@ AEM 6.5 introduceert ook een efficiënter mechanisme voor het dedupliceren van i
 
 De twee onderstaande grafieken zijn de resultaten van interne laboratoriumtests die de vermindering van de gemiddelde uitvoeringstijden en de gemiddelde voetafdruk op de schijf in AEM 6.5 ten opzichte van AEM 6.3 aantonen:
 
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
+![ onrc-duration-6_4vs63 ](assets/onrc-duration-6_4vs63.png) ![ segmentstore-6_4vs63 ](assets/segmentstore-6_4vs63.png)
 
 ### Hoe te om Volledige en Samenstelling van het Lusje te vormen {#how-to-configure-full-and-tail-compaction}
 
-Bij de standaardconfiguratie wordt &#39;tail&#39;-compressie uitgevoerd op weekdagen en &#39;full compaction&#39; op zondag. De standaardconfiguratie kan worden veranderd door de nieuwe configuratiewaarde te gebruiken `full.gc.days` van de `RevisionCleanupTask` [onderhoudstaak](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup).
+Bij de standaardconfiguratie wordt &#39;tail&#39;-compressie uitgevoerd op weekdagen en &#39;full compaction&#39; op zondag. De standaardconfiguratie kan worden veranderd door de nieuwe configuratiewaarde `full.gc.days` van de `RevisionCleanupTask` [ onderhoudstaak ](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup) te gebruiken.
 
-Wanneer u vormt `full.gc.days` waarde, volledige compressie wordt uitgevoerd tijdens de dagen die zijn gedefinieerd in de waarde en de eindvervorming, tijdens de dagen die niet zijn gedefinieerd in de waarde. Als u bijvoorbeeld volledige compressie configureert om op zondag te worden uitgevoerd, wordt de compressie van de staart van maandag tot en met zaterdag uitgevoerd. Bijvoorbeeld, als u volledige compilatie vormt om elke dag van de week in werking te stellen dan de staarverbinding bij geen enkel loopt.
+Wanneer u de waarde `full.gc.days` configureert, wordt de volledige compressie uitgevoerd tijdens de dagen die zijn gedefinieerd in de waarde en de eindcompressie tijdens de dagen die niet zijn gedefinieerd in de waarde. Als u bijvoorbeeld volledige compressie configureert om op zondag te worden uitgevoerd, wordt de compressie van de staart van maandag tot en met zaterdag uitgevoerd. Bijvoorbeeld, als u volledige compilatie vormt om elke dag van de week in werking te stellen dan de staarverbinding bij geen enkel loopt.
 
 Houd er ook rekening mee dat:
 
-* **Tagcompressie** is minder effectief en heeft minder invloed op normale systeembewerkingen. Het is dus de bedoeling dat het gedurende werkdagen wordt uitgevoerd.
-* **Volledige compressie** is effectiever, maar heeft ook een grotere invloed op normale systeembewerkingen. Het is dus bedoeld om buiten werkdagen te worden gebruikt.
+* **de samenperking van het Lusje** is minder effectief en het heeft minder effect op normale systeemverrichtingen. Het is dus de bedoeling dat het gedurende werkdagen wordt uitgevoerd.
+* **Volledige compensatie** is effectiever maar heeft ook een grotere invloed op normale systeemverrichtingen. Het is dus bedoeld om buiten werkdagen te worden gebruikt.
 * Zowel de staartvervorming als de volledige vervorming zouden moeten worden gepland om tijdens buiten piekuren te lopen.
 
 ### Problemen oplossen {#troubleshooting}
@@ -108,7 +108,7 @@ Houd er ook rekening mee dat:
 Houd rekening met het volgende wanneer u de nieuwe compressiemodi gebruikt:
 
 * U kunt de invoer-/uitvoeractiviteit (I/O) controleren, bijvoorbeeld: I/O-bewerkingen, CPU die wacht op IO, wachtrijgrootte vastleggen. Dit helpt bepalen of het systeem I/O verbindend wordt en vereist upsizing.
-* De `RevisionCleanupTaskHealthCheck` Hiermee wordt de algemene gezondheidsstatus van de Online revisie-opschoning aangegeven. Het werkt op dezelfde manier als in AEM 6.3 en maakt geen onderscheid tussen volledige en eindverdichtingen.
+* De `RevisionCleanupTaskHealthCheck` geeft de algemene status van de Online revisie-opschoning aan. Het werkt op dezelfde manier als in AEM 6.3 en maakt geen onderscheid tussen volledige en eindverdichtingen.
 * De logberichten bevatten relevante informatie over de compactiemodi. Bijvoorbeeld, wanneer de Online Opruiming van de Revisie begint, wijzen de overeenkomstige logboekberichten op de samenstellingswijze. Ook, in sommige hoekgevallen, keert het systeem aan volledige compressie terug wanneer het werd gepland om een staartcompensatie in werking te stellen en de logboekberichten wijzen op deze verandering. De hieronder logboeksteekproeven wijzen op de samenstellingswijze en de verandering van staart in volledige compressie:
 
 ```
@@ -120,7 +120,7 @@ TarMK GC: no base state available, running full compaction instead
 
 Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volledige-compressiemodi. Meer in het bijzonder, zal de bewaarplaats na een volledige compensatie groeien (het verdubbelt in grootte). De extra ruimte wordt teruggewonnen in de verdere staartcompensatie, wanneer de bewaarplaats onder de pre-volledige compactiegrootte daalt. Parallelle uitvoering van onderhoudstaken moet ook worden vermeden.
 
-**Het wordt aanbevolen de schijf minstens twee of drie keer groter te maken dan de aanvankelijk geschatte grootte van de opslagplaats.**
+**het wordt geadviseerd om de schijf minstens twee of drie keer groter te zijn dan de aanvankelijk geschatte bewaarplaatgrootte.**
 
 ## Online revisie opschonen Veelgestelde vragen {#online-revision-cleanup-frequently-asked-questions}
 
@@ -139,7 +139,7 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
  </tbody>
 </table>
 
-### Migreren naar eiken segmentteer {#migrating-to-oak-segment-tar}
+### Migreren naar Oak Segment Tar {#migrating-to-oak-segment-tar}
 
 <table style="table-layout:auto">
  <tbody>
@@ -150,17 +150,17 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Waarom moet ik de repository migreren?</strong></td>
-   <td><p>In AEM 6.3 waren wijzigingen in de opslagindeling nodig, vooral om de prestaties en effectiviteit van Online Revision Cleanup te verbeteren. Deze wijzigingen zijn niet compatibel met oudere versies en opslagruimten die zijn gemaakt met het oude eiken segment (AEM 6.2 en lager) moeten worden gemigreerd.</p> <p>Extra voordelen van het wijzigen van de opslagindeling:</p>
+   <td><p>In AEM 6.3 waren wijzigingen in de opslagindeling nodig, vooral om de prestaties en effectiviteit van Online Revision Cleanup te verbeteren. Deze wijzigingen zijn niet compatibel met oudere versies en opslagruimten die zijn gemaakt met het oude Oak-segment (AEM 6.2 en lager) moeten worden gemigreerd.</p> <p>Extra voordelen van het wijzigen van de opslagindeling:</p>
     <ul>
      <li>Betere schaalbaarheid (geoptimaliseerde segmentgrootte).</li>
-     <li>Sneller <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Opruimverzameling gegevensopslag</a>.<br /> </li>
+     <li>Sneller <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank"> de Inzameling van de Opslag van Gegevens </a>.<br /> </li>
      <li>Grondwerkzaamheden voor toekomstige verbeteringen.</li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Wordt de vorige opmaak van de Tar nog steeds ondersteund?</strong></td>
-   <td>Alleen de nieuwe kleurensegmentstrip wordt ondersteund met AEM 6.3 of hoger.</td>
+   <td>Alleen de nieuwe Oak Segment Tar wordt ondersteund met AEM 6.3 of hoger.</td>
    <td> </td>
   </tr>
   <tr>
@@ -180,7 +180,7 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Wat gebeurt er als ik per ongeluk tegen de verkeerde gegevensopslagindeling looppas?</strong></td>
-   <td>Als u probeert om de eiken-segmentmodule tegen een eak-segment-teer bewaarplaats (of omgekeerd) in werking te stellen, ontbreekt het opstarten met een <em>IllegalStateException</em> met het bericht "Invalid segment format". Er treedt geen gegevensbeschadiging op.</td>
+   <td>Als u probeert om de eiken-segmentmodule tegen een eak-segment-teer bewaarplaats (of omgekeerd) in werking te stellen, ontbreekt het opstarten met een <em> IllegalStateException </em> met het bericht "Ongeldig segmentformaat". Er treedt geen gegevensbeschadiging op.</td>
    <td> </td>
   </tr>
   <tr>
@@ -195,7 +195,7 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Hoe kan de duur van de migratie het best worden ingeschat?</strong></td>
-   <td>De prestaties van de migratie kunnen aanzienlijk worden verbeterd als <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">offline revisie opruimen</a> wordt uitgevoerd vóór de migratie. Alle klanten wordt geadviseerd om het als eerste vereiste van het verbeteringsproces uit te voeren. In het algemeen, zou de duur van de migratie aan de duur van de off-line revisie schoonmaakbeurttaak gelijkaardig moeten zijn, veronderstellend dat de off-line revisie schoonmaakbeurttaak vóór de migratie is uitgevoerd.</td>
+   <td>De prestaties van de migratie kunnen zeer worden verbeterd als <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup"> off-line revisie schoonmaakbeurt </a> voorafgaand aan de migratie wordt uitgevoerd. Alle klanten wordt geadviseerd om het als eerste vereiste van het verbeteringsproces uit te voeren. In het algemeen, zou de duur van de migratie aan de duur van de off-line revisie schoonmaakbeurttaak gelijkaardig moeten zijn, veronderstellend dat de off-line revisie schoonmaakbeurttaak vóór de migratie is uitgevoerd.</td>
    <td> </td>
   </tr>
  </tbody>
@@ -217,12 +217,12 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Hoe kan ik de begintijd van de Online het onderhoudstaak van de Opruiming van de Revisie vormen?</strong></td>
-   <td>Zie de <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">Onlinerevisie-opschoning uitvoeren</a> sectie. </td>
+   <td>Zie <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup"> hoe te om Online sectie van de Opruiming van de Revisie </a> in werking te stellen. </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Is er een maximumfrequentie die niet mag worden overschreden voor Online revisie-opschoning?</strong></td>
-   <td>Het wordt aanbevolen om online revisie-opschoning eenmaal per dag uit te voeren, zoals standaard is geconfigureerd.<br /> </td>
+   <td>Het wordt geadviseerd om Online Opruiming van de Revisie eenmaal per dag in werking te stellen, zoals die door gebrek wordt gevormd.<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -237,17 +237,17 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Waarom wint de eerste Online Opruiming van de Revisie geen ruimte terug wanneer die na de Offline Opruiming van de Revisie in werking wordt gesteld?</strong></td>
-   <td><p>Met Offline revisie Cleanup wordt alles geherclaimd, behalve de nieuwste generatie in vergelijking met de nieuwste twee generaties voor online revisie Cleanup. Als er een nieuwe opslagplaats is, zal Online Revision Cleanup geen ruimte terugwinnen wanneer deze voor de eerste keer na de Offline Revision Cleanup wordt uitgevoerd omdat er geen generatie oud genoeg is om te worden teruggewonnen.</p> <p>Lees ook de sectie "Online revisie opschonen na offlinerevisie opschonen" van <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">dit hoofdstuk</a>.</p> </td>
+   <td><p>Met Offline revisie Cleanup wordt alles geherclaimd, behalve de nieuwste generatie in vergelijking met de nieuwste twee generaties voor online revisie Cleanup. Als er een nieuwe opslagplaats is, zal Online Revision Cleanup geen ruimte terugwinnen wanneer deze voor de eerste keer na de Offline Revision Cleanup wordt uitgevoerd omdat er geen generatie oud genoeg is om te worden teruggewonnen.</p> <p>Ook, leest de "Lopende Online Opruiming van de Revisie na de Off-line sectie van de Opruiming van de Revisie van <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup"> dit hoofdstuk </a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Zouden Auteur en Publiceren typisch verschillende Online vensters van de Overgang van de Herziening hebben?</strong></td>
-   <td>Dit hangt van kantooruren en de verkeerspatronen van de klant online aanwezigheid af. De onderhoudsvensters moeten buiten de hoofdproductietijden worden geconfigureerd om de beste schoonmaakefficiëntie te waarborgen. Voor meerdere AEM publicatieinstanties (TarMK Farm) moeten onderhoudsvensters voor Online revisie Cleanup worden gefaseerd.</td>
+   <td><strong>Zouden Auteur en Publish normaal gesproken verschillende vensters voor het opruimen van revisies hebben?</strong></td>
+   <td>Dit hangt van kantooruren en de verkeerspatronen van de klant online aanwezigheid af. De onderhoudsvensters moeten buiten de hoofdproductietijden worden geconfigureerd om de beste schoonmaakefficiëntie te waarborgen. Voor meerdere AEM Publish-instanties (TarMK Farm) moeten onderhoudsvensters voor Online Revision Cleanup worden gefaseerd.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Zijn er om het even welke eerste vereisten alvorens Online de Opruiming van de Revisie in werking te stellen?</strong></td>
-   <td><p>Online Revision Cleanup is alleen beschikbaar bij AEM 6.3 en hoger. Als u een oudere versie van AEM gebruikt, moet u ook naar de nieuwe versie migreren <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">eiken segmentteer</a>.</p> </td>
+   <td><p>Online Revision Cleanup is alleen beschikbaar bij AEM 6.3 en hoger. Ook, als u een oudere versie van AEM gebruikt, moet u aan nieuwe <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar"> Tar van het Segment van Oak migreren </a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -268,7 +268,7 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Wat zijn de minimumvereisten voor schijfruimte en heapgeheugen wanneer het runnen van Online Herziening Opschoning?</strong></td>
-   <td><p>De schijfruimte wordt voortdurend gecontroleerd tijdens het online opschonen van revisies. Als de beschikbare schijfruimte onder een kritieke waarde daalt, wordt het proces geannuleerd. De kritieke waarde is 25% van de huidige schijfvoetafdruk van de opslagplaats en kan niet worden geconfigureerd.</p> <p><strong>Adobe raadt u aan de schijf minstens twee of drie keer groter te maken dan de aanvankelijk geschatte grootte van de opslagplaats.</strong></p> <p>De vrije heapruimte wordt voortdurend gecontroleerd tijdens het schoonmaakproces. Als de vrije heapruimte onder een kritieke waarde daalt, wordt het proces geannuleerd. De kritieke waarde wordt gevormd door org.apache.jackrabbit.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. De standaardwaarde is 15%.</p> <p>Recommendations for minimum compaction heap sizing are not separated from the AEM memory sizing recommendations. Algemeen: <strong>Als een AEM instantie zo groot is dat deze het hoofd kan bieden aan de gebruiksgevallen en de verwachte nuttige lading ervan, verkrijgt het opschoonproces voldoende geheugen.</strong></p> </td>
+   <td><p>De schijfruimte wordt voortdurend gecontroleerd tijdens het online opschonen van revisies. Als de beschikbare schijfruimte onder een kritieke waarde daalt, wordt het proces geannuleerd. De kritieke waarde is 25% van de huidige schijfvoetafdruk van de opslagplaats en kan niet worden geconfigureerd.</p> <p><strong>Adobe raadt u aan de schijf minstens twee of drie keer groter te maken dan de aanvankelijk geschatte grootte van de opslagplaats.</strong></p> <p>De vrije heapruimte wordt voortdurend gecontroleerd tijdens het schoonmaakproces. Als de vrije heapruimte onder een kritieke waarde daalt, wordt het proces geannuleerd. De kritieke waarde wordt gevormd door org.apache.jackrabbit.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. De standaardwaarde is 15%.</p> <p>Recommendations for minimum compaction heap sizing are not separated from the AEM memory sizing recommendations. Algemeen: <strong> als een AEM instantie genoeg wordt gerangschikt om de gebruiksgevallen en verwachte nuttige lading daarop te behandelen, verkrijgt het schoonmaakbeurtproces genoeg geheugen.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -300,8 +300,8 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
    <td><strong>Waarom wordt afvalophaling overgeslagen?</strong></td>
    <td><p>Herzieningsopschoning is gebaseerd op een schattingsfase om te bepalen of er voldoende afval is om te worden schoongemaakt. De schatter vergelijkt de huidige grootte met de grootte van de bewaarplaats nadat het laatst werd vergeleken. Als de grootte de gevormde delta overschrijdt, schoonmaakbeurtlooppas. De delta van de grootte wordt geplaatst op 1 GB. Dit betekent in feite dat als de grootte van de opslagplaats sinds de laatste schoonmaakbeurt niet met 1 GB is toegenomen, de nieuwe herhaling van de revisie wordt overgeslagen. </p> <p>Hieronder staan de relevante logitems voor de ramingsfase:</p>
     <ul>
-     <li>Revision GC wordt uitgevoerd: <em>De delta van de grootte is N% of N/N (N/N bytes), zo lopende compensatie</em></li>
-     <li>Revisie GC doet dit <strong>niet</strong> uitvoeren: <em>De delta van de grootte is N% of N/N (N/N bytes), zodat slaat nu compressie over</em></li>
+     <li>De looppas van GC van de revisie: <em> de delta van de Grootte is N% of N/N (N/N bytes), zo lopend compaction </em></li>
+     <li>De controle GC stelt <strong> niet </strong> in werking: <em> de delta van de Grootte is N% of N/N (N/N bytes), zo overgevend compensatie voor nu </em></li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -332,7 +332,7 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Wat gebeurt er als er te veel interferentie is van gelijktijdige schrijfbewerkingen naar de opslagplaats?</strong></td>
-   <td><p>Als er schrijfgelijktijdig op het systeem is, zou de online revisie schoonmaakbeurt exclusieve schrijftoegang kunnen vereisen om de veranderingen aan het eind van een samenstellingscyclus te kunnen begaan. Het systeem gaat in <strong>forceCompact, modus</strong>, zoals nader toegelicht in de <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">Oak-documentatie</a>. Tijdens forceren compact, wordt een exclusieve schrijfslot verworven om de veranderingen definitief te begaan zonder enige gelijktijdige schrijft het storen. Om de impact op responstijden te beperken, kan een time-outwaarde worden gedefinieerd. Deze waarde wordt standaard ingesteld op één minuut. Dit betekent dat als het compacte effect niet binnen één minuut wordt voltooid, het verrekeningsproces wordt afgebroken ten gunste van gelijktijdige verbintenissen.</p> <p>De duur van het forceren is afhankelijk van de volgende factoren:</p>
+   <td><p>Als er schrijfgelijktijdig op het systeem is, zou de online revisie schoonmaakbeurt exclusieve schrijftoegang kunnen vereisen om de veranderingen aan het eind van een samenstellingscyclus te kunnen begaan. Het systeem gaat in <strong> forceCompact wijze </strong>, zoals die in meer detail in de <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank"> documentatie van Oak </a> wordt verklaard. Tijdens forceren compact, wordt een exclusieve schrijfslot verworven om de veranderingen definitief te begaan zonder enige gelijktijdige schrijft het storen. Om de impact op responstijden te beperken, kan een time-outwaarde worden gedefinieerd. Deze waarde wordt standaard ingesteld op één minuut. Dit betekent dat als het compacte effect niet binnen één minuut wordt voltooid, het verrekeningsproces wordt afgebroken ten gunste van gelijktijdige verbintenissen.</p> <p>De duur van het forceren is afhankelijk van de volgende factoren:</p>
     <ul>
      <li>hardware: specifiek IOPS. De duur neemt af met meer IOPS.</li>
      <li>de grootte van de segmentopslag: duurverhogingen met de grootte van de segmentopslag.</li>
@@ -346,15 +346,15 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Kan offlinerevisie opschonen meer schijfruimte vrijmaken dan online revisie opschonen?</strong></td>
-   <td><p>Met Offline revisie-opruiming kunnen oude revisies direct worden verwijderd, terwijl bij Online revisie-opruiming rekening moet worden gehouden met oude revisies waarnaar nog steeds wordt verwezen door de toepassingsstapel. Het eerste kan zo afval agressiever verwijderen dan het laatste waar het effect wordt geamortiseerd tijdens een paar afvalophalingscycli.</p> <p>Lees ook de sectie "Online revisie opschonen na offlinerevisie opschonen" van <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">dit hoofdstuk</a>.</p> </td>
+   <td><p>Met Offline revisie-opruiming kunnen oude revisies direct worden verwijderd, terwijl bij Online revisie-opruiming rekening moet worden gehouden met oude revisies waarnaar nog steeds wordt verwezen door de toepassingsstapel. Het eerste kan zo afval agressiever verwijderen dan het laatste waar het effect wordt geamortiseerd tijdens een paar afvalophalingscycli.</p> <p>Ook, leest de "Lopende Online Opruiming van de Revisie na de Off-line sectie van de Opruiming van de Revisie van <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup"> dit hoofdstuk </a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Eventuele overwegingen met betrekking tot bestandsbewerkingen die zijn toegewezen aan het geheugen?</td>
    <td>
     <ul>
-     <li><strong>Windows-omgevingen</strong>Regelmatige bestandstoegang wordt altijd afgedwongen, zodat geheugentoegang niet wordt gebruikt. Als algemeen advies, zou al beschikbaar RAM aan de heap moeten worden toegewezen en de segmentcachegrootte zou moeten worden verhoogd. U verhoogt segmentCache door de segmentCache.size optie aan org.apache.jackrabbit.segment.SegmentNodeStoreService.config (bijvoorbeeld, segmentCache.size=20480) toe te voegen. Vergeet niet wat RAM-geheugen over te houden voor het besturingssysteem en andere processen.</li>
-     <li><strong>Op omgevingen buiten Windows</strong>, vergroot het fysieke geheugen om de geheugentoewijzing van de opslagplaats te verbeteren.</li>
+     <li><strong> op de milieu's van Vensters </strong>, wordt de regelmatige dossiertoegang altijd afgedwongen zodat geheugen in kaart gebrachte toegang niet wordt gebruikt. Als algemeen advies, zou al beschikbaar RAM aan de heap moeten worden toegewezen en de segmentcachegrootte zou moeten worden verhoogd. U verhoogt segmentCache door de segmentCache.size optie aan org.apache.jackrabbit.segment.SegmentNodeStoreService.config (bijvoorbeeld, segmentCache.size=20480) toe te voegen. Vergeet niet wat RAM-geheugen over te houden voor het besturingssysteem en andere processen.</li>
+     <li><strong> op milieu's niet-Vensters </strong>, vergroot de grootte van het fysieke geheugen om de geheugenafbeelding van de bewaarplaats te verbeteren.</li>
     </ul> </td>
    <td>
     <ul>
@@ -380,12 +380,12 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Hoe te om te controleren als Online Correctie van de Revisie met succes heeft voltooid?</strong></td>
-   <td><p>U kunt controleren of de Online revisie-opruiming is voltooid door de logbestanden te controleren.</p> <p>Bijvoorbeeld "<code>TarMK GC #{}: compaction completed in {} ({} ms), after {} cycles</code>" betekent de met succes voltooide samenvattingsstap, tenzij vooraf het bericht "<code>TarMK GC #{}: compaction gave up compacting concurrent commits after {} cycles</code>", wat betekent dat er te veel gelijktijdige lading was.</p> <p>Er is dus een bericht "<code>TarMK GC #{}: cleanup completed in {} ({} ms</code>" voor de succesvolle voltooiing van de opschoonstap.</p> </td>
+   <td><p>U kunt controleren of de Online revisie-opruiming is voltooid door de logbestanden te controleren.</p> <p>Bijvoorbeeld, "<code>TarMK GC #{}: compaction completed in {} ({} ms), after {} cycles</code>"betekent de met succes voltooide samenstellingsstap tenzij voorafgegaan door het bericht "<code>TarMK GC #{}: compaction gave up compacting concurrent commits after {} cycles</code>", wat betekent er teveel gezamenlijke lading was.</p> <p>Het correspondentatieve is er een bericht "<code>TarMK GC #{}: cleanup completed in {} ({} ms</code>"voor de succesvolle voltooiing van de schoonmaakbeurt stap.</p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td><strong>Waar vinden we de statistieken van de laatste online executies van de Herziening?</strong></td>
-   <td><p>De status, de vooruitgang, en de statistieken worden blootgesteld via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Voor meer informatie over de <code>SegmentRevisionGarbageCollection</code> MBean, lees de <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">volgende alinea</a>.</p> <p>De voortgang kan worden bijgehouden via de <code>EstimatedRevisionGCCompletion</code> kenmerk van de <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>U kunt een verwijzing van MBean verkrijgen gebruikend <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>De statistieken zijn alleen beschikbaar sinds de laatste systeemstart. De externe controlehulpmiddelen zouden kunnen worden gebruikt om de gegevens voorbij AEM uptime te houden. Zie <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">de AEM documentatie voor het koppelen van gezondheidscontroles aan Nagios als voorbeeld voor een extern monitoringinstrument</a>.</p> </td>
+   <td><p>De status, de vooruitgang, en de statistieken worden blootgesteld via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Voor meer details over <code>SegmentRevisionGarbageCollection</code> MBean, lees <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank"> volgend paragraaf </a>.</p> <p>De voortgang kan worden bijgehouden via het kenmerk <code>EstimatedRevisionGCCompletion</code> van het <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>U kunt een verwijzing van MBean verkrijgen gebruikend <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>De statistieken zijn alleen beschikbaar sinds de laatste systeemstart. De externe controlehulpmiddelen zouden kunnen worden gebruikt om de gegevens voorbij AEM uptime te houden. Zie <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank"> de AEM documentatie voor het vastmaken van gezondheidscontroles aan Nagios als voorbeeld voor een extern controlehulpmiddel </a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -394,46 +394,46 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
     <ul>
      <li>Onlinerevisie-opschoning is gestart/gestopt
       <ul>
-       <li>De online Opruiming van de Revisie bestaat uit drie fasen: raming, compensatie, en schoonmaakbeurt. Schatting kan compaction en schoonmaakbeurt dwingen om over te slaan als de bewaarplaats niet genoeg huisvuil bevat. In de meest recente versie van AEM wordt het bericht "<code>TarMK GC #{}: estimation started</code>" het begin van de raming markeert, "<code>TarMK GC #{}: compaction started, strategy={}</code>" markeert het begin van de compactie en "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" markeert het begin van de opschoonbewerking.</li>
+       <li>De online Opruiming van de Revisie bestaat uit drie fasen: raming, compensatie, en schoonmaakbeurt. Schatting kan compaction en schoonmaakbeurt dwingen om over te slaan als de bewaarplaats niet genoeg huisvuil bevat. In de recentste versie van AEM, merkt het bericht "<code>TarMK GC #{}: estimation started</code>"het begin van raming, "<code>TarMK GC #{}: compaction started, strategy={}</code>"het begin van compensatie en "T <code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>"merkt het begin van schoonmaakbeurt.</li>
       </ul> </li>
      <li>Schijfruimte die wordt opgeschoond door de revisie
       <ul>
-       <li>De ruimte wordt slechts teruggewonnen wanneer de schoonmaakfase voltooit. De voltooiing van de opschoningsfase wordt duidelijk door het logboekbericht "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Formaat na opruimen is {} ({} bytes) en opnieuw geclaimde ruimte {} ({} bytes). Dikte/diepte van compactiemap is {}/{} ({} bytes/{}).".</li>
+       <li>De ruimte wordt slechts teruggewonnen wanneer de schoonmaakfase voltooit. De voltooiing van de schoonmaakbeurt fase wordt duidelijk door het logboekbericht "T <code>arMK GC #{}: cleanup completed in {} ({} ms</code>". De opschoningsgrootte van Post is {} ({} bytes) en ruimte teruggewonnen {} ({} bytes). Het gewicht/de diepte van de compactiekaart is {}/ {} ({} bytes/{}).".</li>
       </ul> </li>
      <li>Er is een probleem opgetreden tijdens het opschonen van de revisie
       <ul>
        <li>Er zijn vele mislukkingsvoorwaarden, worden elk duidelijk door WARN of FOUT logboekberichten die met "TarMK GC"beginnen.</li>
       </ul> </li>
-    </ul> <p>Zie ook de <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Problemen oplossen op basis van foutberichten</a> hieronder.</p> </td>
+    </ul> <p>Ook, zie het <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages"> Oplossen van problemen die op de sectie van de Berichten van de Fout </a> hieronder worden gebaseerd.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Hoe te om te controleren hoeveel ruimte werd teruggewonnen nadat de Online Opruiming van de Revisie heeft voltooid?</strong></td>
-   <td>Er staat een bericht in het logbestand aan het einde van de opschooncyclus: "<code>TarMK GC #3: cleanup completed</code>" die de grootte van de opslagplaats en de hoeveelheid geregenereerd afval omvat.</td>
+   <td>Er is een bericht in het logboek aan het eind van de opschooncyclus: "<code>TarMK GC #3: cleanup completed</code>"die de grootte van de bewaarplaats en de hoeveelheid geregenereerd huisvuil omvat.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Hoe kan de integriteit van de opslagplaats worden gecontroleerd nadat de Online Revision Cleanup is voltooid?</strong></td>
    <td><p>Er is geen integriteitscontrole voor de repository nodig nadat de Online Revision Cleanup is uitgevoerd. </p> <p>U kunt echter de volgende handelingen uitvoeren om de status van de opslagplaats te controleren na het opschonen:</p>
     <ul>
-     <li>Een opslagplaats <a href="/help/sites-deploying/consistency-check.md" target="_blank">traversale controle</a></li>
-     <li>Gebruik het gereedschap voor het uitvoeren van de eik nadat het opschoonproces is voltooid om te controleren op inconsistenties. Raadpleeg de <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-documentatie.</a> U hoeft AEM niet uit te schakelen om het gereedschap uit te voeren.</li>
+     <li>Een bewaarplaats <a href="/help/sites-deploying/consistency-check.md" target="_blank"> traversal controle </a></li>
+     <li>Gebruik het gereedschap voor het uitvoeren van de eik nadat het opschoonproces is voltooid om te controleren op inconsistenties. Voor verdere informatie over hoe te om dit te doen, controleer de <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank"> Documentatie Apache.</a> U hoeft AEM niet uit te schakelen om het gereedschap uit te voeren.</li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Hoe te om te ontdekken als de Online Opruiming van de Revisie heeft ontbroken en welke stappen zijn om te herstellen?</strong></td>
-   <td>De voorwaarden van de mislukking worden duidelijk door WARN of FOUTlogboekberichten die met "TarMK GC"beginnen. Zie ook de <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Problemen oplossen op basis van foutberichten</a> hieronder.</td>
+   <td>De voorwaarden van de mislukking worden duidelijk door WARN of FOUTlogboekberichten die met "TarMK GC"beginnen. Ook, zie het <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages"> Oplossen van problemen die op de sectie van de Berichten van de Fout </a> hieronder worden gebaseerd.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Welke informatie wordt in de Controle van de Gezondheid van de Reinigingscontrole van de Revisie blootgesteld? Hoe en wanneer dragen ze bij aan de statusniveaus van de kleurcodering? </strong></td>
-   <td><p>De Revision Clean Health Check maakt deel uit van de <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Operations-dashboard</a>.<br /> </p> <p>De status is <strong>GROEN</strong> als de laatste uitvoering van de onderhoudstaak Onlinerevisie is voltooid.</p> <p>Het is <strong>GEEL</strong> als de onderhoudstaak Onlinerevisie opschonen eenmaal is geannuleerd.<br /> </p> <p>Het is <strong>ROOD</strong> als de onderhoudstaak Onlinerevisie opschonen driemaal achter elkaar is geannuleerd. <strong>In dit geval is handmatige interactie vereist</strong> of Opschonen van online revisie zal waarschijnlijk opnieuw mislukken. Lees voor meer informatie de <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Problemen oplossen</a> hieronder.<br /> </p> <p>Ook wordt de status van de Health Check opnieuw ingesteld nadat het systeem opnieuw is opgestart. Dus een nieuw opgestarte instantie toont een groene status op de Revision Cleanup Health Check. De externe controlehulpmiddelen zouden kunnen worden gebruikt om de gegevens voorbij AEM uptime te houden. Zie <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">de AEM documentatie voor het koppelen van gezondheidscontroles aan Nagios als voorbeeld voor een extern monitoringinstrument</a>.</p> </td>
+   <td><p>De Controle van de Gezondheid van de Reiniging van de Herziening maakt deel uit van het <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank"> Dashboard van Verrichtingen </a>.<br /> </p> <p>De status is <strong> GROEN </strong> als de laatste uitvoering van de Online het onderhoudstaak van de Opruiming van de Revisie met succes heeft voltooid.</p> <p>Het is <strong> GEEL </strong> als de Online het onderhoudstaak van de Opruiming van de Revisie eens werd geannuleerd.<br /> </p> <p>Het is <strong> ROOD </strong> als de Online het onderhoudstaak van de Opruiming van de Revisie drie keer in een rij werd geannuleerd. <strong> In dit geval wordt de handinteractie vereist </strong> of de Online Opruimen van de Revisie zal waarschijnlijk opnieuw ontbreken. Voor meer informatie, lees de </a> sectie van het Oplossen van problemen <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup"> hieronder.<br /> </p> <p>Ook wordt de status van de Health Check opnieuw ingesteld nadat het systeem opnieuw is opgestart. Dus een nieuw opgestarte instantie toont een groene status op de Revision Cleanup Health Check. De externe controlehulpmiddelen zouden kunnen worden gebruikt om de gegevens voorbij AEM uptime te houden. Zie <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios"> de AEM documentatie voor het vastmaken van gezondheidscontroles aan Nagios als voorbeeld voor een extern controlehulpmiddel </a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><p><strong>Hoe te om Automatische Opschoning op een reserve instantie te controleren?</strong></p> </td>
-   <td><p>De status, de vooruitgang, en de statistieken worden blootgesteld via JMX door te gebruiken <code>SegmentRevisionGarbageCollection</code> MBean. Zie ook het volgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak-documentatie</a>. </p> <p>U kunt een verwijzing van MBean verkrijgen door te gebruiken <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>De statistieken zijn alleen beschikbaar sinds de laatste systeemstart. De externe controlehulpmiddelen zouden kunnen worden gebruikt om de gegevens voorbij AEM uptime te houden. Zie ook <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">de AEM documentatie voor het koppelen van gezondheidscontroles aan Nagios als voorbeeld voor een extern monitoringinstrument</a>.</p> <p>De logboekdossiers kunnen ook worden gebruikt om de status, de vooruitgang, en de statistieken van de Automatische Opruiming te controleren.</p> </td>
+   <td><p>De status, de vooruitgang, en de statistieken worden blootgesteld via JMX door <code>SegmentRevisionGarbageCollection</code> MBean te gebruiken. Zie ook de volgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank"> documentatie van Oak </a>. </p> <p>U kunt een verwijzing van MBean verkrijgen door <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code> te gebruiken.</p> <p>De statistieken zijn alleen beschikbaar sinds de laatste systeemstart. De externe controlehulpmiddelen zouden kunnen worden gebruikt om de gegevens voorbij AEM uptime te houden. Ook, zie <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank"> de AEM documentatie voor het vastmaken van gezondheidscontroles aan Nagios als voorbeeld voor een extern controlehulpmiddel </a>.</p> <p>De logboekdossiers kunnen ook worden gebruikt om de status, de vooruitgang, en de statistieken van de Automatische Opruiming te controleren.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -465,12 +465,12 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
   </tr>
   <tr>
    <td><strong>Volgens de Health Check en de logbestandvermeldingen is de Online Revision Cleanup niet driemaal achter elkaar voltooid. Wat is vereist om het opruimen van online revisie met succes te voltooien?</strong></td>
-   <td>U kunt verschillende stappen uitvoeren om het probleem te zoeken en op te lossen:<br />
+   <td>U kunt verscheidene stappen nemen om de kwestie te vinden en te bevestigen:<br />
     <ul>
-     <li>Controleer eerst de logbestandvermeldingen<br /> </li>
+     <li>Controleer eerst de logitems <br /> </li>
      <li>Afhankelijk van de informatie in de logboeken, neem aangewezen actie:
       <ul>
-       <li>Als de logboeken vijf gemiste compacte cycli en een onderbreking op tonen <code>forceCompact</code> programma, het onderhoudsvenster op een rustige tijd te plannen wanneer de hoeveelheid gegevens in de opslagplaats laag is. U kunt de gegevens van de repository controleren in het meetprogramma van de gegevensopslagplaats op <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em></li>
+       <li>Als de logboeken vijf gemiste compacte cycli en een onderbreking op de <code>forceCompact</code> cyclus tonen, plant het onderhoudsvenster aan een stille tijd wanneer de hoeveelheid opbergingsbericht laag is. U kunt bewaarplaats controleren schrijft in het hulpmiddel van de gegevensverwerking van de bewaarplaats in <em> https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html </em></li>
        <li>Als de schoonmaakbeurt aan het eind van het onderhoudsvenster ophield, zorg ervoor de configuratie van het onderhoudsvenster in het gebruikersinterface van de Taken van het Onderhoud groot genoeg is</li>
        <li>Als er onvoldoende heapgeheugen beschikbaar is, controleert u of de instantie voldoende geheugen heeft.</li>
        <li>Als er een late reactie is, zou de segmentstore te veel voor Online de Opruiming van de Revisie kunnen groeien om zelfs binnen een langer onderhoudsvenster te voltooien. Bijvoorbeeld, als er geen succesvolle Online Correctie van de Revisie voltooide in de laatste week was dan wordt het geadviseerd om een off-line onderhoud te plannen en de Opruiming van de Revisie van de Off-line in werking te stellen om segmenstore terug naar een handelbare grootte te brengen.</li>
@@ -489,12 +489,12 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Wat veroorzaakt <code>SegmentNotFoundException</code> instanties die moeten worden aangemeld bij de <code>error.log</code> en hoe kan ik herstellen?</strong></td>
-   <td><p>A <code>SegmentNotFoundException</code> wordt geregistreerd door TarMK wanneer het probeert om tot een opslageenheid (een segment) toegang te hebben dat het niet kan vinden. Er zijn drie scenario's die deze kwestie kunnen veroorzaken:</p>
+   <td><strong>Wat zorgt ervoor dat <code>SegmentNotFoundException</code> -instanties zijn aangemeld bij <code>error.log</code> en hoe kan ik herstellen?</strong></td>
+   <td><p>Een <code>SegmentNotFoundException</code> wordt geregistreerd door TarMK wanneer het probeert om tot een opslageenheid (een segment) toegang te hebben die het niet kan vinden. Er zijn drie scenario's die deze kwestie kunnen veroorzaken:</p>
     <ol>
      <li>Een toepassing die de aanbevolen toegangsmechanismen omzeilt (zoals Sling en de JCR API) en een API/SPI op een lager niveau gebruikt om toegang te krijgen tot de opslagplaats en vervolgens de retentietijd van een segment overschrijdt. Dat wil zeggen dat een verwijzing naar een entiteit langer wordt bewaard dan de retentietijd die is toegestaan door de Online Revision Cleanup (standaard 24 uur). Dit geval is van voorbijgaande aard en leidt niet tot gegevenscorruptie. Om te herstellen, zou het eiken-loophulpmiddel moeten worden gebruikt om de voorbijgaande aard van de uitzondering te bevestigen (de eiken-loopcontrole zou geen fouten moeten melden). Hiervoor moet de instantie offline worden gezet en daarna opnieuw worden gestart.</li>
-     <li>Een externe gebeurtenis veroorzaakte de corruptie van de gegevens op de schijf. Dit kan een schijffout, een gebrek aan schijfruimte of een toevallige wijziging van de vereiste gegevensdossiers zijn. In dit geval moet de instantie offline worden genomen en worden gerepareerd met behulp van de eikenrun-controle. Lees voor meer informatie over het uitvoeren van de controle tijdens het uitvoeren van de eik het volgende: <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-documentatie</a>.</li>
-     <li>Alle andere exemplaren door <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Klantenservice Adoben</a>.</li>
+     <li>Een externe gebeurtenis veroorzaakte de corruptie van de gegevens op de schijf. Dit kan een schijffout, een gebrek aan schijfruimte of een toevallige wijziging van de vereiste gegevensdossiers zijn. In dit geval moet de instantie offline worden genomen en worden gerepareerd met behulp van de eikenrun-controle. Voor meer details op hoe te om de eiken-looppas controle uit te voeren, lees de volgende <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank"> documentatie van Apache </a>.</li>
+     <li>Adres alle andere voorkomen door de <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank"> Zorg van de Klant van de Adobe </a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -532,7 +532,7 @@ Error.log is breed als er incidenten tijdens het online proces van de revisie sc
   </tr>
   <tr>
     <td>NVT</td>
-    <td>TarMK GC #2: schatting onderbroken: ${REASON}. Compressie wordt overgeslagen.</td>
+    <td>TarMK GC #2: Schatting onderbroken: $ {REASON}. Compressie wordt overgeslagen.</td>
     <td>De schattingsfase liep voortijdig af. Enkele voorbeelden van gebeurtenissen die de schattingsfase kunnen onderbreken: onvoldoende geheugen of schijfruimte op het hostsysteem.</td>
     <td>Afhankelijk van de gegeven reden.</td>
   </td>
@@ -546,7 +546,7 @@ Error.log is breed als er incidenten tijdens het online proces van de revisie sc
   </tr>
    <tr>
     <td>NVT</td>
-    <td>TarMK GC #2: Compressie geannuleerd: ${REASON}.</td>
+    <td>TarMK GC #2: compensatie geannuleerd: $ {REASON}.</td>
     <td>De samenstellingsfase eindigde voortijdig. Enkele voorbeelden van gebeurtenissen die de compactiefase kunnen onderbreken: onvoldoende geheugen of schijfruimte op het hostsysteem. Bovendien kan het samenvoegen ook worden geannuleerd door het systeem te sluiten of door het expliciet te annuleren via administratieve interfaces zoals het onderhoudvenster binnen het vluchthandboek.</td>
     <td>Afhankelijk van de gegeven reden.</td>
   </td>
@@ -554,8 +554,8 @@ Error.log is breed als er incidenten tijdens het online proces van de revisie sc
   <tr>
     <td>NVT</td>
     <td>TarMK GC #2: De verbinding is mislukt na 5 cycli in 32,902 min (1974140 ms).</td>
-    <td>Dit bericht betekent niet dat er een onherstelbare fout is opgetreden, maar alleen dat de compensatie na een aantal pogingen is beëindigd. Lees ook de <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">volgende alinea.</a></td>
-    <td>Lees het volgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak-documentatie</a>en de laatste vraag van de sectie Onlinerevisie uitvoeren.</a></td>
+    <td>Dit bericht betekent niet dat er een onherstelbare fout is opgetreden, maar alleen dat de compensatie na een aantal pogingen is beëindigd. Ook, lees <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes"> volgend paragraaf.</a></td>
+    <td>Lees de volgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes"> documentatie van Oak </a>, en de laatste vraag van de Lopende Online sectie van de Opruiming van de Revisie.</a></td>
   </td>
   </tr>
   <tr>
@@ -572,15 +572,15 @@ Error.log is breed als er incidenten tijdens het online proces van de revisie sc
 
 >[!CAUTION]
 >
->Gebruik een release van een gereedschap dat wordt uitgevoerd met een versienummer (zowel primair als secundair) dat overeenkomt met de kernversie van de AEM. Als uw AEM-instantie bijvoorbeeld Oak-kernversie 1.22.x heeft, moet u de nieuwste versie van het gereedschap Oak-uitvoering 1.22.x gebruiken.
+>Gebruik een Oak-run tool-release met een versienummer (zowel primair als secundair) dat overeenkomt met de Oak core-versie van uw AEM-installatie. Als uw AEM bijvoorbeeld Oak core versie 1.22.x heeft, moet u de nieuwste versie van Oak-run tool 1.22.x gebruiken.
 
-Adobe biedt een hulpprogramma met de naam **Eak-run** om de revisie op te schonen. U kunt het downloaden op de volgende locatie:
+De Adobe verstrekt een hulpmiddel genoemd **Oak-looppas** om revisie schoonmaakbeurt uit te voeren. U kunt het downloaden op de volgende locatie:
 
-[https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
+[ https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 
 Het hulpmiddel is een runnable pot die manueel kan worden in werking gesteld om de bewaarplaats te comprimeren. Het proces wordt genoemd off-line revisie schoonmaakbeurt omdat de bewaarplaats moet worden gesloten om het hulpmiddel behoorlijk in werking te stellen. Zorg ervoor dat u de opschoonbewerking plant in overeenstemming met uw onderhoudspad.
 
-Voor tips over het verbeteren van de prestaties van het opschoningsproces raadpleegt u [De prestaties van opschonen van offlinerevisie verhogen](/help/sites-deploying/revision-cleanup.md#increasing-the-performance-of-offline-revision-cleanup).
+Voor uiteinden op hoe te om de prestaties van het schoonmaakbeurtproces te verhogen, zie [ Verhoogend de Prestaties van de Opruiming van de Off-line Revisie ](/help/sites-deploying/revision-cleanup.md#increasing-the-performance-of-offline-revision-cleanup).
 
 >[!NOTE]
 >
@@ -614,21 +614,21 @@ Het gereedschap voor het uitvoeren van een eikenhout bevat verschillende functie
 
 De lijst bevat verschillende opdrachtregelparameters, zoals hieronder wordt beschreven:
 
-* **-mmap.** U kunt deze waarde instellen op true of false. Indien ingesteld op true, wordt toegewezen toegang tot het geheugen gebruikt. Indien ingesteld op false, wordt bestandstoegang gebruikt. Indien niet gespecificeerd, wordt de geheugen in kaart gebrachte toegang gebruikt op systemen met 64 bits en de dossiertoegang wordt gebruikt op systemen met 32 bits. In Windows wordt de reguliere bestandstoegang altijd afgedwongen en wordt deze optie genegeerd. **Deze parameter heeft de parameter -Dtar.memoryMapping vervangen.**
+* **-mmap.** U kunt dit instellen als waar of onwaar. Indien ingesteld op true, wordt toegewezen toegang tot het geheugen gebruikt. Indien ingesteld op false, wordt bestandstoegang gebruikt. Indien niet gespecificeerd, wordt de geheugen in kaart gebrachte toegang gebruikt op systemen met 64 bits en de dossiertoegang wordt gebruikt op systemen met 32 bits. In Windows wordt de reguliere bestandstoegang altijd afgedwongen en wordt deze optie genegeerd. **Deze parameter heeft vervangen - parameter Dtar.memoryMapping.**
 
-* **-Dupdate.limit**. Bepaalt de drempel voor het spoelen van een tijdelijke transactie aan schijf. De standaardwaarde is 1000.
+* **- Dupdate.limit**. Bepaalt de drempel voor het spoelen van een tijdelijke transactie aan schijf. De standaardwaarde is 1000.
 
-* **-Dcompress-interval**. Het aantal items in de compactiekaart dat behouden moet blijven totdat de huidige kaart wordt gecomprimeerd. De standaardwaarde is 1000000. U zou deze waarde aan een nog hoger aantal voor snellere productie moeten verhogen, als genoeg heapgeheugen beschikbaar is. **Deze parameter is verwijderd uit Oak versie 1.6 en heeft geen effect.**
+* **- dcompress-interval**. Het aantal items in de compactiekaart dat behouden moet blijven totdat de huidige kaart wordt gecomprimeerd. De standaardwaarde is 1000000. U zou deze waarde aan een nog hoger aantal voor snellere productie moeten verhogen, als genoeg heapgeheugen beschikbaar is. **Deze parameter is verwijderd in versie 1.6 van Oak en heeft geen effect.**
 
-* **-Dcompaction-progress-log**. Het aantal gecomprimeerde knooppunten dat is geregistreerd. De standaardwaarde is 150000, wat betekent dat de eerste 150000 samengeperste knopen tijdens de verrichting worden geregistreerd. Gebruik dit met de volgende parameter die hieronder wordt beschreven.
+* **- Dcompaction-progress-log**. Het aantal gecomprimeerde knooppunten dat is geregistreerd. De standaardwaarde is 150000, wat betekent dat de eerste 150000 samengeperste knopen tijdens de verrichting worden geregistreerd. Gebruik dit met de volgende parameter die hieronder wordt beschreven.
 
-* **-Dtar.PersistCompactionMap.** Stel deze parameter in op true als u schijfruimte wilt gebruiken in plaats van heapgeheugen voor persistentie van de compactiemap. Vereist het gereedschap voor het uitvoeren van een eiken **versie 1.4** en hoger. Zie vraag 3 in de [Offline revisie opschonen Veelgestelde vragen](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions) sectie. **Deze parameter is verwijderd uit Oak versie 1.6 en heeft geen effect.**
+* **- Dtar.PersistCompactionMap.** Stel deze parameter in op true als u schijfruimte wilt gebruiken in plaats van heapgeheugen voor persistentie van compressiemap. Vereist het werktuig **versies 1.4** en hoger. Voor verdere details, zie vraag 3 in de [ Offline Opruiming van de Revisie vaak Gestelde Vraag ](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions) sectie. **Deze parameter is verwijderd in versie 1.6 van Oak en heeft geen effect.**
 
-* **—kracht.** Drijf samenperking en negeer een niet-passende versie van de segmentopslag.
+* **-force.** Drijf de compressie en negeer een niet-passende versie van de segmentopslag.
 
 >[!CAUTION]
 >
->Met de `--force` de parameter bevordert de segmentopslag aan de recentste versie, die met oudere versies van het Eak onverenigbaar is. Houd er ook rekening mee dat er geen downgrade mogelijk is. Over het algemeen moet u deze parameters voorzichtig gebruiken en alleen als u bekend bent met het gebruik ervan.
+>Wanneer u de parameter `--force` gebruikt, wordt de segmentopslag bijgewerkt naar de meest recente versie, die niet compatibel is met oudere Oak-versies. Houd er ook rekening mee dat er geen downgrade mogelijk is. Over het algemeen moet u deze parameters voorzichtig gebruiken en alleen als u bekend bent met het gebruik ervan.
 
 Een voorbeeld van de gebruikte parameters:
 
@@ -640,9 +640,9 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Naast de hierboven vermelde methodes, kunt u het mechanisme van de revisieschoonmaakbeurt ook teweegbrengen door de console te gebruiken JMX als volgt:
 
-1. Open de JMX Console door naar [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
-1. Klik op de knop **RevisionGarbageCollection** MBean.
-1. Klik in het volgende venster op **startRevisionGC()** en vervolgens **Invoeden** om de baan van de Inzameling van het Afval van de Herziening te beginnen.
+1. Open de Console JMX door naar [ http://localhost:4502/system/console/jmx ](http://localhost:4502/system/console/jmx) te gaan
+1. Klik **RevisionGarbageCollection** MBean.
+1. In het volgende venster, klik **startRevisionGC ()** en dan **voke** aan om de baan van de Inzameling van de Afvalsing van de Revisie te beginnen.
 
 ### Offline revisie opschonen Veelgestelde vragen {#offline-revision-cleanup-frequently-asked-questions}
 
@@ -656,13 +656,13 @@ Naast de hierboven vermelde methodes, kunt u het mechanisme van de revisieschoon
    <td><strong>Wat is het verschil tussen een revisie en een paginaversie?</strong></td>
    <td>
     <ul>
-     <li><strong>Oak-revisie:</strong> Met eikenhout ordent u alle inhoud in een grote boomstructuur die uit knooppunten en eigenschappen bestaat. Elke momentopname of revisie van deze inhoudsstructuur is onveranderlijk, en de veranderingen in de boom worden uitgedrukt als opeenvolging van nieuwe revisies. Doorgaans leidt elke inhoudwijziging tot een nieuwe revisie. Zie ook <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> Koppeling volgen</a>.</li>
-     <li><strong>Paginaversie:</strong> Met Versioning maakt u een "momentopname" van een pagina op een bepaald tijdstip. Gewoonlijk wordt een nieuwe versie gemaakt wanneer een pagina wordt geactiveerd. Zie voor meer informatie <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank">Werken met paginaversies</a>.</li>
+     <li><strong> de revisie van Oak:</strong> Oak organiseert alle inhoud in een grote boomhiërarchie die uit knopen en eigenschappen bestaat. Elke momentopname of revisie van deze inhoudsstructuur is onveranderlijk, en de veranderingen in de boom worden uitgedrukt als opeenvolging van nieuwe revisies. Doorgaans leidt elke inhoudwijziging tot een nieuwe revisie. Zie ook <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> Koppeling volgen </a> .</li>
+     <li><strong> Versie van de Pagina:</strong> Versioning leidt tot een "momentopname"van een pagina op een specifiek punt in tijd. Gewoonlijk wordt een nieuwe versie gemaakt wanneer een pagina wordt geactiveerd. Voor meer informatie, zie <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank"> Werkend met de Versies van de Pagina </a>.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Hoe te om de Offline taak van de Opruiming van de Revisie te versnellen als het niet binnen 8 uur voltooit?</strong></td>
-   <td>Als de revisietaak niet binnen 8 uur wordt voltooid en de <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">schroefdraad</a> tonen dat de hoofdhotspot <code>InMemoryCompactionMap.findEntry</code>, gebruik de volgende parameter met het hulpmiddel van de eikenlooppas <strong>versie 1.4 </strong>of hoger: <code>-Dtar.PersistCompactionMap=true</code>. De <code>-Dtar.PersistCompactionMap</code> parameter is verwijderd uit Oak versie 1.6.</td>
+   <td>Als de revisietaak niet binnen 8 uren voltooit en <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank"> draaddumps </a> openbaren dat belangrijkste hotspot <code>InMemoryCompactionMap.findEntry</code> is, gebruik de volgende parameter met het eiken-in werking gestelde hulpmiddel <strong> versies 1.4 </strong> of hoger: <code>-Dtar.PersistCompactionMap=true</code>. De parameter <code>-Dtar.PersistCompactionMap</code> is verwijderd uit Oak versie 1.6.</td>
   </tr>
  </tbody>
 </table>

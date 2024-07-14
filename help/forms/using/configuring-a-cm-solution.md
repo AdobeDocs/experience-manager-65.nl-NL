@@ -21,34 +21,34 @@ ht-degree: 0%
 
 Gebruik de volgende stappen om een instantie-URL van de auteur te definiëren voor het terugzetten van de auteurversie:
 
-1. Ga naar *https://:&lt;publishhost>:&lt;publishport>/lc/system/console/configMgr*. Meld u aan met de gebruikersgegevens van de OSGi Management Console. De standaardreferenties zijn admin/admin.
-1. Zoeken en klikken op de knop **[!UICONTROL Edit]** pictogram naast **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** instellen.
-1. In de **[!UICONTROL VersionRestoreManager Author URL]** Geef de URL van de instantie Auteur van VersionRestoreManager op.
+1. Ga naar *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Meld u aan met de gebruikersgegevens van de OSGi Management Console. De standaardreferenties zijn admin/admin.
+1. Klik op het pictogram **[!UICONTROL Edit]** naast de instelling **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** .
+1. Geef in het veld **[!UICONTROL VersionRestoreManager Author URL]** de URL van de instantie Auteur van VersionRestoreManager op.
 
-   **URL-tekenreeks**:
+   **koord URL**:
 
    `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.VersionRestoreManager`
 
    >[!NOTE]
    >
-   >Als er meerdere auteur-instanties (geclusterd) zijn met een taakverdeler, geeft u de URL op naar het taakverdelingsmechanisme in het dialoogvenster **[!UICONTROL VersionRestoreManager Author URL]** veld.
+   >Als er meerdere auteur-instanties (geclusterd) zijn met een taakverdeler, geeft u de URL voor het taakverdelingsmechanisme op in het veld **[!UICONTROL VersionRestoreManager Author URL]** .
 
 1. Klik op **[!UICONTROL Save]**.
 
-## De URL van de instantie Publish definiëren voor ActivationManagerImpl (public instance activation manager) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## De Publish-instantie-URL definiëren voor ActivationManagerImpl (public instance activation manager) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Voer de volgende stappen uit, zodat u de URL van de instantie Publiceren kunt definiëren voor het beheer voor activering van openbare instanties:
+Voer de volgende stappen uit, zodat u de Publish-instantie-URL voor het openbare Instance Activation Manager kunt definiëren:
 
-1. Ga naar *https://:&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. Meld u aan met de gebruikersgegevens van de OSGi Management Console. De standaardreferenties zijn admin/admin.
-1. Zoeken en klikken op de knop **[!UICONTROL Edit]** pictogram naast **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** instellen.
-1. In de **[!UICONTROL ActivationManager Publish URL]** Geef de URL op voor toegang tot de instantie Publish ActivationManager. U kunt de volgende URL&#39;s opgeven.
+1. Ga naar *https://:&lt;auteurHost>:&lt;auteurshaven>/lc/system/console/configMgr*. Meld u aan met de gebruikersgegevens van de OSGi Management Console. De standaardreferenties zijn admin/admin.
+1. Klik op het pictogram **[!UICONTROL Edit]** naast de instelling **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** .
+1. Geef in het veld **[!UICONTROL ActivationManager Publish URL]** de URL op voor toegang tot de Publish-instantie ActivationManager. U kunt de volgende URL&#39;s opgeven.
 
-   * **Load Balancer URL (aanbevolen)**: Geef URL van taakverdelingsmechanisme op als u een webserver hebt die als taakverdelingsmechanisme fungeert vóór publicatiefarm (meerdere niet-geclusterde publicatieinstanties).
-   * **Instance-URL publiceren**: Geef een URL voor een publicatieexemplaar op als u één publicatieexemplaar hebt of als de webserver die de publicatiecapaciteit doorstuurt, niet toegankelijk is vanuit de auteursomgeving vanwege beperkingen. Als de opgegeven publicatie-instantie is ingedrukt, is er een fallback-mechanisme waarmee aan de auteurzijde moet worden omgegaan.
-   * **URL-tekenreeks**:
+   * **de Balancer URL van de Lading (geadviseerd)**: Verstrek ladingsverdeler URL, als u een webserver hebt die als ladingsverdelingsmiddel vóór publiceer landbouwbedrijf (veelvoudige niet-gegroepeerde publiceer instanties) dienst doet.
+   * **Publish instantie URL**: Verstrek om het even welk publiceer instantie URL, als u één enkele publiceer instantie hebt of webserver die het publiceer landbouwbedrijf vooraf gaat is niet toegankelijk van het auteursmilieu toe te schrijven aan om het even welke beperkingen. Als de opgegeven publicatie-instantie is ingedrukt, is er een fallback-mechanisme waarmee aan de auteurzijde moet worden omgegaan.
+   * **koord URL**:
 
      `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
 
 1. Klik op **[!UICONTROL Save]**.
 
-Voor meer informatie over het vormen van het Beheer van de Correspondentie, zie [Eigenschappen van Correspondentenbeheer](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Voor meer informatie over het vormen van het Beheer van de Correspondentie, zie {de Eigenschappen van de Configuratie van het Beheer van de Correspondentie ](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).[

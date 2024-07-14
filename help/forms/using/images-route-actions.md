@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Afbeeldingen aanpassen die worden gebruikt in routehandelingen {#customize-images-used-in-route-actions}
 
-Voer de in [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) gevolgd door de stappen die in dit artikel worden beschreven.
+Om de beelden aan te passen die in routeacties worden gebruikt, voer de stappen uit die in [ worden beschreven Algemene Stappen van aanpassing ](/help/forms/using/generic-steps-html-workspace-customization.md) door de stappen worden gevolgd die in dit artikel worden beschreven.
 
 ## Afbeeldingen voor routeacties {#images-for-route-actions}
 
@@ -25,11 +25,11 @@ Voer de in [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-ht
 
    `/apps/ws/css/newStyle.css`
 
-   Bijvoorbeeld: voeg een nieuwe stijl toe genoemd `myStyle1`zoals hieronder wordt getoond en uploadt het beelddossier `myStyleIcon1.png` aan de `/apps/ws/image`s met een WebDAV-client.
+   Bijvoorbeeld: voeg een nieuwe stijl toe genoemd `myStyle1` zoals hieronder getoond en upload het beelddossier `myStyleIcon1.png` aan de `/apps/ws/image` omslag gebruikend een cliënt WebDAV.
 
    >[!NOTE]
    >
-   >Zie voor meer informatie [WebDAV-toegang](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Voor meer informatie, zie [ Toegang WebDAV ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    >[!NOTE]
    >
@@ -45,11 +45,11 @@ Voer de in [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-ht
 
 ## Taaklijstactie pop-up {#task-list-task-action-popup}
 
-1. Een pop-upactie voor een taaklijst maken, zie [AEM Forms-werkruimtecode samenstellen](introduction-customizing-html-workspace.md#building-html-workspace-code). Hiervoor moet het ontwikkelingspakket worden gebruikt.
+1. Creeer pop-up de actie van de taaklijst, zie [ de werkruimtecode van AEM Forms bouwen ](introduction-customizing-html-workspace.md#building-html-workspace-code). Hiervoor moet het ontwikkelingspakket worden gebruikt.
 
-1. Kopiëren `/libs/ws/js/runtime/templates/task.html` tot `/apps/ws/js/runtime/templates/task.html`.
+1. Kopieer `/libs/ws/js/runtime/templates/task.html` naar `/apps/ws/js/runtime/templates/task.html` .
 
-1. Als de naam van de CSS-stijl gelijk is aan de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/task.html`:
+1. Als de naam van de CSS-stijl gelijk is aan de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/task.html` :
 
    ```jsp
    <%if(routeList == null){%>
@@ -79,7 +79,7 @@ Voer de in [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-ht
                <%}%>
    ```
 
-1. Als de naam van de CSS-stijl verschilt van de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/task.html`. Er wordt een stapel toegevoegd van de `if-else` servlet voorwaarden om de stijl met de naam van de routeactie in kaart te brengen.
+1. Als de naam van de CSS-stijl afwijkt van de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/task.html` . Er wordt een stapel toegevoegd van de servervoorwaarden van `if-else` om de stijl toe te wijzen aan de naam van de routeactie.
 
 ```jsp
 <%if(routeList == null){%>
@@ -117,9 +117,9 @@ To
 
 ## Taakdetails taakactie pop-up {#task-details-task-action-popup}
 
-1. Kopiëren `/libs/ws/js/runtime/templates/taskdetails.html` tot `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Kopieer `/libs/ws/js/runtime/templates/taskdetails.html` naar `/apps/ws/js/runtime/templates/taskdetails.html` .
 
-1. Als de naam van de CSS-stijl gelijk is aan de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Als de naam van de CSS-stijl gelijk is aan de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/taskdetails.html` :
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -139,7 +139,7 @@ To
                        <%}%>
    ```
 
-1. Als de naam van de CSS-stijl verschilt van de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/taskdetails.html`. Er wordt een stapel toegevoegd `if-else` servlet voorwaarden om de stijl met de naam van de routeactie in kaart te brengen.
+1. Als de naam van de CSS-stijl afwijkt van de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/taskdetails.html` . Er wordt een stapel met `if-else` servlet-voorwaarden toegevoegd om de stijl toe te wijzen aan de naam van de routeactie.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -167,7 +167,7 @@ To
                <%}%>
    ```
 
-1. Openen `/apps/ws/js/registry.js` voor het bewerken van en het zoeken naar de volgende tekst:
+1. Open `/apps/ws/js/registry.js` voor bewerking en zoek naar de volgende tekst:
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Vervang de tekst door:

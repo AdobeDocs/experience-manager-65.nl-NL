@@ -28,15 +28,15 @@ De volgende beheergereedschappen zijn beschikbaar voor het beheer van websites e
 
    * [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md)
 
-* Deze twee functies kunnen worden gecombineerd om te kunnen werken met websites die beide [Meertalig en meertalig](#multinational-and-multilingual-sites).
+* Deze twee eigenschappen kunnen worden gecombineerd om voor websites te behandelen die zowel [ Multinationaal als Meertalig ](#multinational-and-multilingual-sites) zijn.
 
 ## Meertalige en meertalige sites {#multinational-and-multilingual-sites}
 
 U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites door het gecombineerde gebruik van de Multi-Site Manager en de vertaalworkflow. Maak een stramiensite in één taal, voor een specifiek land, en gebruik die inhoud als basis voor de andere sites, waar nodig met vertaling:
 
-* [Vertalen](/help/sites-administering/translation.md) de hoofdsite in verschillende talen.
+* [ vertaal ](/help/sites-administering/translation.md) de hoofdplaats in verschillende talen.
 
-* Gebruiken [Beheer van meerdere sites](/help/sites-administering/msm.md) tot:
+* Gebruik [ MultiManager van de Plaats ](/help/sites-administering/msm.md) aan:
 
    * Gebruik inhoud van de hoofdsite en de vertalingen opnieuw om sites te maken voor andere landen en culturen.
    * Zorg ervoor dat u het gebruik van Multi-Site Manager beperkt tot inhoud binnen één taal, bijvoorbeeld Engelse master > Engelse taalvertakkingen in landsites, Franse master > Franse taalvertakkingen in landsites.
@@ -44,14 +44,14 @@ U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
 
-![Diagram dat belangrijkste concepten MSM en Vertaling toont](assets/chlimage_1-71a.png)
+![ Diagram die belangrijkste concepten MSM en Vertaling tonen ](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
 >In dit, en vergelijkbaar, scenario&#39;s MSM beheert niet de verschillende taalversies als dusdanig.
 >
->* [MSM](/help/sites-administering/msm.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (bijvoorbeeld, een globale meester) aan de levende exemplaren (bijvoorbeeld, de lokale plaatsen), binnen de grenzen van een taal.
->* De [vertalen](/help/sites-administering/translation.md) de integratiemogelijkheden van AEM, in combinatie met de vertaaldiensten van derden, beheren de talen en vertalen van inhoud in deze verschillende talen.
+>* [ MSM ](/help/sites-administering/msm.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (bijvoorbeeld, een globale meester) aan de levende exemplaren (bijvoorbeeld, de lokale plaatsen), binnen de grenzen van een taal.
+>* De [ vertaal ](/help/sites-administering/translation.md) integratiemogelijkheden van AEM, samen met de diensten van het derdevertaalbeheer, beheert de talen en het vertalen van inhoud in deze verschillende talen.
 >
 >Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden gebruikt.
 
@@ -59,9 +59,9 @@ In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet a
 >
 >Voor alle gebruiksgevallen is het raadzaam de volgende aanbevolen procedures te lezen:
 >
->* [Beste praktijken voor MSM](/help/sites-administering/msm-best-practices.md); met name:
+>* [ Beste praktijken voor MSM ](/help/sites-administering/msm-best-practices.md); in het bijzonder:
 >
->   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>   * [ creeer Plaats ](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [ MSM en Meertalige Websites ](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
->* [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md)
+>* [ Beste praktijken voor Vertaling ](/help/sites-administering/tc-bp.md)

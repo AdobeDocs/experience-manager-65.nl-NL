@@ -1,6 +1,6 @@
 ---
-title: Toegankelijke functies en interfaces van [!DNL Experience Manager Assets]
-description: Toegankelijkheidsfuncties weergeven in [!DNL Adobe Experience Manager] 6,5 [!DNL Assets] gebruikers met een handicap helpen.
+title: Toegankelijke eigenschappen en interfaces van  [!DNL Experience Manager Assets]
+description: Weet hoe de toegankelijkheidseigenschappen in  [!DNL Adobe Experience Manager]  6.5  [!DNL Assets]  hulpgebruikers met handicaps.
 contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
@@ -31,24 +31,24 @@ Possible topics to cover in this article are below.
 
 # Toegankelijkheidsfuncties in [!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] kunnen makers en uitgevers van inhoud fantastische ervaringen op het web bieden. Adobe streeft ernaar de scheppers met een handicap op te nemen door de toegankelijkheid van [!DNL Experience Manager]. De software wordt voortdurend uitgebreid om te voldoen aan de behoeften van alle soorten gebruikers en voldoet aan de wereldwijde standaarden, waaronder personen met een visuele, auditieve, mobiliteitsfunctie of andere handicap.
+Met [!DNL Adobe Experience Manager] kunnen makers van inhoud en uitgevers op internet fantastische ervaringen bieden. Adobe streeft ernaar de makers met een handicap op te nemen door de toegankelijkheid van [!DNL Experience Manager] te verbeteren. De software wordt voortdurend uitgebreid om te voldoen aan de behoeften van alle soorten gebruikers en voldoet aan de wereldwijde standaarden, waaronder personen met een visuele, auditieve, mobiliteitsfunctie of andere handicap.
 
-[!DNL Experience Manager] publiceert conformiteitsinformatie die de normen beschrijft die het hanteert, de toegankelijkheidskenmerken in het product beschrijft en het niveau van naleving beschrijft. De compatibiliteitsrapporten voor toegankelijkheid helpen [!DNL Experience Manager] de gebruikers begrijpen in welke mate aan verschillende normen wordt voldaan . De verbeteringen zijn uitgevoerd in [!DNL Assets] alle gebruikers de interfaces gemakkelijk laten gebruiken via toetsenbord, schermlezer, vergrotingen en andere ondersteunende hulpmiddelen.
+[!DNL Experience Manager] publiceert conformiteitsinformatie met een beschrijving van de standaarden die het hanteert, geeft een overzicht van de toegankelijkheidsfuncties in het product en beschrijft het compatibiliteitsniveau. Met de compatibiliteitsrapporten voor toegankelijkheid kunnen [!DNL Experience Manager] -gebruikers begrijpen in welke mate aan verschillende standaarden wordt voldaan. Dankzij de verbeteringen in [!DNL Assets] kunnen alle gebruikers de interfaces eenvoudig gebruiken via toetsenbord, schermlezer, vergrotingen en andere ondersteunende hulpmiddelen.
 
-[!DNL Experience Manager] voorziet in verschillende steunniveaus voor de volgende normen:
+[!DNL Experience Manager] biedt verschillende ondersteuningsniveaus voor de volgende standaarden:
 
-* [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-* [Herzien artikel 508 van de Herstelwet](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
-* [Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) van W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
-* [NL 301 549](https://en.wikipedia.org/wiki/EN_301_549).
+* [ de Richtlijnen van de Toegankelijkheid van de Inhoud van het Web (WCAG) 2.1 ](https://www.w3.org/TR/WCAG/).
+* [ Herzien Sectie 508 van de Wet van de Herstel ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
+* [ Initiatief van de Toegankelijkheid - Toegankelijke Rijke Toepassingen van Internet (WAI-ARIA) door W3C ](https://www.w3.org/WAI/standards-guidelines/aria/).
+* [ EN 301 549 ](https://en.wikipedia.org/wiki/EN_301_549).
 
-Als u een rapport wilt lezen met details over de mate van naleving, raadpleegt u [Toegankelijkheidscompatibiliteitsrapport](https://www.adobe.com/accessibility/compliance.html) (ACR).
+Om een rapport met details van het niveau van naleving te lezen, zie [ het rapport van de conformiteit van de Toegankelijkheid ](https://www.adobe.com/accessibility/compliance.html) (ACR) pagina.
 
-Om te weten hoe [!DNL Dynamic Media] is toegankelijk, zie [toegankelijkheid in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+Om te weten hoe [!DNL Dynamic Media] toegankelijk is, zie [ toegankelijkheid in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Hulptechnologieën {#at-support}
 
-Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang te krijgen tot webinhoud en softwareproducten te gebruiken. Deze gereedschappen worden hulptechnologieën genoemd. [!DNL Experience Manager Assets] kan met de volgende soorten ondersteunende technologieën (AT) werken wanneer het gebruiken van de kernfunctionaliteit van de software:
+Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang te krijgen tot webinhoud en softwareproducten te gebruiken. Deze gereedschappen worden hulptechnologieën genoemd. [!DNL Experience Manager Assets] kan met de volgende soorten ondersteunende hulpmiddelen (AT) werken wanneer het gebruiken van de kernfunctionaliteit van de software:
 
 * Schermlezers en schermvergroting.
 * Software voor spraakherkenning.
@@ -56,18 +56,18 @@ Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang t
 * Hulpapparatuur, inclusief besturingselementen voor switches, vernieuwbare braillebeeldschermen en andere invoerapparaten voor de computer.
 * Gereedschappen voor het vergroten van de gebruikersinterface.
 
-## [!DNL Experience Manager Assets] gebruiksgevallen die toegankelijk zijn {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] Gebruik toegankelijke gevallen {#accessible-assets-use-cases}
 
-In [!DNL Experience Manager], de toegankelijkheidsfuncties beantwoorden aan twee belangrijke vereisten van [!DNL Experience Manager] gebruikers en hun klanten.
+In [!DNL Experience Manager] voldoen de toegankelijkheidsfuncties aan twee belangrijke vereisten van [!DNL Experience Manager] -gebruikers en hun klanten.
 
-* Voor inhoudsontwerpers en makers zijn er functies om toegankelijke inhoud te maken en te publiceren die op hun beurt door hun klanten en websitebezoekers wordt gebruikt. Personen met een handicap gebruiken de inhoud met behulp van ondersteunende hulpmiddelen. Zie voor meer informatie [Richtlijnen voor webtoegankelijkheid](/help/managing/web-accessibility.md).
-* [!DNL Experience Manager] Hiermee hebben gebruikers en beheerders met een handicap ook toegang tot gebruikersinterface en besturingselementen om inhoud te maken en te beheren. Het individu met een handicap kan ondersteunende hulpmiddelen gebruiken om door de [!DNL Assets] capaciteit.
+* Voor inhoudsontwerpers en makers zijn er functies om toegankelijke inhoud te maken en te publiceren die op hun beurt door hun klanten en websitebezoekers wordt gebruikt. Personen met een handicap gebruiken de inhoud met behulp van ondersteunende hulpmiddelen. Voor details, zie [ richtlijnen van de Webtoegankelijkheid ](/help/managing/web-accessibility.md).
+* Met [!DNL Experience Manager] hebben gebruikers en beheerders met een handicap ook toegang tot de gebruikersinterface en besturingselementen voor het maken en beheren van inhoud. Personen met een handicap kunnen ondersteunende hulpmiddelen gebruiken om door de [!DNL Assets] -mogelijkheden te navigeren, te gebruiken en deze te beheren.
 
-De kernfuncties in [!DNL Assets] beter toegankelijk zijn dan voorheen en regelmatig worden bijgewerkt om de naleving van de mondiale normen te verbeteren. De CRUD-bewerkingen in [!DNL Assets] een zekere mate van toegankelijkheid hebben die in deze ingebouwd is. DAM-workflows, zoals het toevoegen, beheren, zoeken en distribueren van elementen, zijn toegankelijk via sneltoetsen, schermlezertekst, kleurcontrast, enzovoort.
+De kernfuncties in [!DNL Assets] zijn toegankelijker dan voorheen en worden regelmatig bijgewerkt om de naleving van wereldwijde standaarden te verbeteren. De CRUD-bewerkingen in [!DNL Assets] hebben een bepaalde mate van toegankelijkheid die in deze bewerkingen is ingebouwd. DAM-workflows, zoals het toevoegen, beheren, zoeken en distribueren van elementen, zijn toegankelijk via sneltoetsen, schermlezertekst, kleurcontrast, enzovoort.
 
 ## Ondersteuning voor toetsenbord {#keyboard-use}
 
-Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder dat ze zich hoeven te richten op UI-elementen en deze met het toetsenbord hoeven te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element links in de gebruikersinterface openen door via het toetsenbord naar het besturingselement van de gebruikersinterface te bladeren en `Return`en selecteert u `Alt + 2` sneltoets.
+Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder dat ze zich hoeven te richten op UI-elementen en deze met het toetsenbord hoeven te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant van de gebruikersinterface openen door via het toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en `Alt + 2` sneltoets te selecteren.
 
 <!-- TBD items:
 
@@ -79,16 +79,16 @@ Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geacti
 
 ### Sneltoetsen in [!DNL Assets] {#keyboard-shortcuts}
 
-De volgende acties in [!DNL Assets] werken met de vermelde sneltoetsen. De meeste sneltoetsen die op [!DNL Experience Manager] Consoles gelden ook voor [!DNL Assets]. Zie [sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts). Zie hoe te [de sneltoetsen in- of uitschakelen](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+De volgende handelingen in [!DNL Assets] werken met de vermelde sneltoetsen. De meeste sneltoetsen die van toepassing zijn op [!DNL Experience Manager] consoles, zijn ook van toepassing op [!DNL Assets] . Zie [ toetsenbordkortere weg voor Consoles ](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts). Zie [ toelaten of onbruikbaar maken de toetsenbordkortere weg ](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 | Gebruikersinterface of scenario | Sneltoets | Handeling |
 |---|---|---|
-| Kolomweergave in [!DNL Assets] gebruikersinterface | Pijl-omhoog en Pijl-omlaag | Navigeer naar bestanden en mappen in dezelfde hiërarchie. |
-| Kolomweergave in [!DNL Assets] gebruikersinterface | Pijl-links en Pijl-rechts | Navigeer naar bestanden en mappen boven of onder de huidige map. |
-| Bladeren in mappen [!DNL Assets] | `/` | Roep zoekopdracht aan door het vak Onderzoek te openen. |
-| [!DNL Assets] Console | &amp;graf; | Zijrails in-/uitschakelen |
+| Kolomweergave in de gebruikersinterface van [!DNL Assets] | Pijl-omhoog en Pijl-omlaag | Navigeer naar bestanden en mappen in dezelfde hiërarchie. |
+| Kolomweergave in de gebruikersinterface van [!DNL Assets] | Pijl-links en Pijl-rechts | Navigeer naar bestanden en mappen boven of onder de huidige map. |
+| Door mappen bladeren in [!DNL Assets] | `/` | Roep zoekopdracht aan door het vak Onderzoek te openen. |
+| [!DNL Assets] Console | &grave; | Zijrails in-/uitschakelen |
 | [!DNL Assets] Console | `Alt + 1` | Open de inhoudsstructuur. |
-| [!DNL Assets] Console | `Alt + 2` | Openen [!UICONTROL Navigation] linker spoor. |
+| [!DNL Assets] Console | `Alt + 2` | Open [!UICONTROL Navigation] linkerrails. |
 | [!DNL Assets] Console | `Alt + 3` | Weergave [!UICONTROL Timeline] van een geselecteerd element. |
 | [!DNL Assets] Console | `Alt + 4` | Open Live Copy-referenties van het geselecteerde element. |
 | [!DNL Assets] Console | `Alt + 5` | Begin met zoeken en zoek in de geselecteerde map. |
@@ -104,13 +104,13 @@ De volgende acties in [!DNL Assets] werken met de vermelde sneltoetsen. De meest
 | Elementeigenschappenpagina&#39;s | `Ctrl + S` | Wijzigingen opslaan. |
 | [!DNL Assets] Console | `?` | Zie een lijst met sneltoetsen. |
 
-## Aanmelden en navigeren [!DNL Assets] gebruikersinterface {#login}
+## Aanmelden en navigeren in de gebruikersinterface van [!DNL Assets] {#login}
 
 Gebruikers kunnen met het toetsenbord naar het aanmeldingsveld navigeren en dit invullen om zich aan te melden. De foutberichten vanwege onjuiste combinaties van gebruikersnaam en wachtwoord op de aanmeldingspagina worden door schermlezers gemeld wanneer de fout optreedt.
 
-Na het aanmelden kunnen DAM-gebruikers navigeren binnen [!DNL Assets] gebruikersinterface met toetsenbord. U kunt met het toetsenbord navigeren naar de elementen van de gebruikersinterface, zoals linkerspoor, menu&#39;s, gebruikersprofiel, zoekbalk, bestanden en mappen en instellingen voor beheer en configuratie. De volgorde van de toetsenbordnavigatie is van links naar rechts en van boven naar beneden. Wanneer u navigeert met een toetsenbord, wordt een optie die kan worden geactiveerd wanneer de focus wordt geplaatst, gemarkeerd met een beter kleurcontrast en door een schermlezer van commentaar voorzien. Indien van toepassing, wordt de status — bijvoorbeeld uitgevouwen, samengevouwen en gemengde staat — van de opties voor focus in het menu aangekondigd door een schermlezer. Bovendien kondigt de schermlezer het doel van de optie waarop actie kan worden uitgevoerd aan in plaats van de vormgeving of interfacepositie.
+Nadat u zich hebt aangemeld, kunnen DAM-gebruikers via het toetsenbord navigeren binnen de gebruikersinterface van [!DNL Assets] . U kunt met het toetsenbord navigeren naar de elementen van de gebruikersinterface, zoals linkerspoor, menu&#39;s, gebruikersprofiel, zoekbalk, bestanden en mappen en instellingen voor beheer en configuratie. De volgorde van de toetsenbordnavigatie is van links naar rechts en van boven naar beneden. Wanneer u navigeert met een toetsenbord, wordt een optie die kan worden geactiveerd wanneer de focus wordt geplaatst, gemarkeerd met een beter kleurcontrast en door een schermlezer van commentaar voorzien. Indien van toepassing, wordt de status — bijvoorbeeld uitgevouwen, samengevouwen en gemengde staat — van de opties voor focus in het menu aangekondigd door een schermlezer. Bovendien kondigt de schermlezer het doel van de optie waarop actie kan worden uitgevoerd aan in plaats van de vormgeving of interfacepositie.
 
-Als een gebruiker de optie Help of gebruikersprofiel in het menu uitbreidt, wordt de juiste optie of status door de schermlezer aangekondigd. Als een gebruiker de optie voor het gebruikersprofiel uitbreidt, kunnen de beschikbare opties met een toetsenbord worden geselecteerd. Een beheerder kan zich bijvoorbeeld een andere gebruiker voorstellen. Als een gebruiker een tekenreeks zoekt vanuit de [!UICONTROL Help] wordt in het commentaar &#39;&#39;Hulp zoeken&#39;&#39; weergegeven om aan te geven dat een zoekopdracht wordt uitgevoerd.
+Als een gebruiker de optie Help of gebruikersprofiel in het menu uitbreidt, wordt de juiste optie of status door de schermlezer aangekondigd. Als een gebruiker de optie voor het gebruikersprofiel uitbreidt, kunnen de beschikbare opties met een toetsenbord worden geselecteerd. Een beheerder kan zich bijvoorbeeld een andere gebruiker voorstellen. Als een gebruiker een tekenreeks zoekt via de optie [!UICONTROL Help] , wordt &#39;&#39;Help zoeken&#39;&#39; weergegeven om aan te geven dat er een zoekopdracht wordt uitgevoerd.
 
 <!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
@@ -121,7 +121,7 @@ Als een gebruiker de optie Help of gebruikersprofiel in het menu uitbreidt, word
 
 ## Blader door elementen en bekijk de bijbehorende informatie {#browse}
 
-In de [!DNL Assets] gebruikersinterface, kunnen gebruikers toetsenbord gebruiken om door de lijst van bestaande digitale activa in bewaarplaats te doorbladeren DAM, voorproef of download een middel, geproduceerde vertoningen, schakelaarmeningen, de geproduceerde vertoningen te zien, chronologie en versiegeschiedenis te zien, commentaren en verwijzingen, en meta-gegevens te bekijken en te beheren.
+In de gebruikersinterface van [!DNL Assets] kunnen gebruikers met het toetsenbord door de lijst met bestaande digitale elementen in de DAM-gegevensopslagruimte bladeren, een voorvertoning van een element bekijken of dit downloaden, gegenereerde uitvoeringen bekijken, overschakelen op weergaven, de gegenereerde uitvoeringen bekijken, de tijdlijn en versiegeschiedenis bekijken, opmerkingen en verwijzingen bekijken en metagegevens beheren.
 
 <!-- TBD: Not sure about the following list items mean:
 
@@ -142,10 +142,10 @@ Wanneer u in de gegevensopslagruimte bladert, verbetert de volgende functionalit
 * Schermlezer kondigt tekstopties aan die het doel of de functionaliteit van de pictogrammen in plaats van hun namen weergeven.
 * Gebruikers kunnen de interactieve gebruikersinterface-opties in de lijst met verwijzingen openen en activeren met behulp van toetsenbordtoetsen.
 * De elementen in elke rij in de lijstweergave worden door schermlezers aangekondigd als de elementen van dezelfde rij.
-* Bij navigeren met `Tab` , kan de focus naar de sluitoptie in de versievoorvertoning worden verplaatst.
+* Wanneer u navigeert met de `Tab` -toets, kunt u de focus verplaatsen naar de sluitoptie in de versievoorvertoning.
 * Wanneer u met het toetsenbord bladert, hebben de gemarkeerde opties voor een actiefunctie een prominentere visuele focus met een verbeterd contrast. Hierdoor wordt het gefocuste gebied beter herkenbaar voor de gebruiker.
-* Gebruik van de `Esc` Als u de snelactiepictogrammen uit de miniatuurweergave wilt verwijderen, wordt de toetsenbordfocus niet van het laatste item met focus verwijderd.
-* Selecteer een element en selecteer `Alt + 4` sneltoets opent de [!UICONTROL References] lijst in de linkerrail. Gebruiken `Tab` gebruikers kunnen door de niet-nulreferentie-items navigeren. Door alleen de referentie-items te doorbladeren die niet gelijk zijn aan nul, bespaart u ook moeite en toetsaanslagen.
+* Als u de toets `Esc` gebruikt om de snelactiepictogrammen uit de miniatuurweergave te verwijderen, wordt de toetsenbordfocus niet verwijderd van het laatste item dat de focus heeft.
+* Als een element is geselecteerd en u `Alt + 4` -sneltoets selecteert, wordt de lijst met [!UICONTROL References] geopend in de linkertrack. Met de `Tab` -toets kunnen gebruikers door de niet-nulreferentie-items navigeren. Door alleen de referentie-items te doorbladeren die niet gelijk zijn aan nul, bespaart u ook moeite en toetsaanslagen.
 * Opmerkingen over een element zijn beschikbaar in de tijdlijn van het element. Het is toegankelijk als linkerspoor wordt betreden gebruikend een toetsenbord of een toetsenbordkortere weg.
 * [!UICONTROL View Settings] in [!DNL Experience Manager] zijn toegankelijk via een toetsenbord. Gebruikers kunnen met de pijltoetsen door de beschikbare kaartgrootten navigeren en door de pijltoetsen bladeren en door de muis bladeren en andere elementen instellen in de bestaande weergave Weergave-instellingen.
 
@@ -162,27 +162,27 @@ Wanneer u in de gegevensopslagruimte bladert, verbetert de volgende functionalit
 
 ## Digitale middelen beheren {#manage-assets}
 
-Veel taken voor middelenbeheer, zoals CRUD-bewerkingen, het downloaden van middelen en het toevoegen van metagegevens, zijn in verschillende mate toegankelijk. [!DNL Assets] Hiermee kunt u de taken uitvoeren met behulp van verschillende ondersteunende hulpmiddelen, zoals een schermlezer en een toetsenbord.
+Veel taken voor middelenbeheer, zoals CRUD-bewerkingen, het downloaden van middelen en het toevoegen van metagegevens, zijn in verschillende mate toegankelijk. Met [!DNL Assets] kunt u de taken uitvoeren met behulp van verschillende ondersteunende hulpmiddelen, zoals een schermlezer en een toetsenbord.
 
-Bekijk een videodemonstratie van hoe u een toetsenbord kunt gebruiken om [door de opslagplaats bladeren en een middel downloaden](https://youtu.be/K3dgqMRQJys).
+Zie een videodemonstratie van hoe te om een toetsenbord te gebruiken om [ de bewaarplaats te doorbladeren en activa ](https://youtu.be/K3dgqMRQJys) te downloaden.
 
 Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en beheerders worden gedaan verbeteren de volgende eigenschappen toegankelijkheid:
 
-* [!UICONTROL Save & Close] optie voor element [!UICONTROL Properties] De pagina kan nu met het toetsenbord worden geopend.
-* Schermlezers kondigen de opties aan voor het verwijderen van de geselecteerde tags in [!UICONTROL Basic] tabblad van element [!UICONTROL Properties].
+* [!UICONTROL Save & Close] -optie op de elementpagina [!UICONTROL Properties] is nu toegankelijk via het toetsenbord.
+* Schermlezers kondigen de opties aan om de geselecteerde labels te verwijderen op de tab [!UICONTROL Basic] van het element [!UICONTROL Properties] .
 * Gebruikers kunnen het pop-updialoogvenster Datumkiezer gebruiken met een toetsenbord. Het Datepicker-gebruikersinterface-element wordt gebruikt om de gegevens in- en uit-tijden in te stellen en de datum te selecteren.
-* De sleepfunctionaliteit met het toetsenbord werkt correct in [!UICONTROL Metadata Schema Editor] in de bladermodus van de schermlezer.
-* Een gebruiker kan de focus met het toetsenbord verplaatsen naar het veld Gebruiker toevoegen of Groep onder [!UICONTROL Closed User Group] in de [!UICONTROL Permissions] tabblad van map [!UICONTROL Properties].
+* De sleepfunctionaliteit met het toetsenbord werkt in [!UICONTROL Metadata Schema Editor] in de bladermodus van schermlezers correct.
+* Een gebruiker kan de focus verplaatsen met het toetsenbord naar het veld Gebruiker toevoegen of Groep onder [!UICONTROL Closed User Group] op het [!UICONTROL Permissions] tabblad van de map [!UICONTROL Properties] .
 
 ## Digitale middelen zoeken {#search-assets}
 
-Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksscenario&#39;s voor snelheid van de inhoud maken deel uit van de kern [!DNL Assets] functionaliteit. Gebruikers kunnen een zoekopdracht starten vanaf de zoekbalk met de sneltoets `/` of gebruik `Tab` samen met schermlezers de zoekoptie snel te vinden. De schermlezer noemt de naam van de optie &#39;Knop Zoeken&#39; wanneer de zoekoptie actief is ![zoekoptie](assets/do-not-localize/search_icon.png). Gebruikers kunnen `Return` om het vak Onderzoek te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar vertelt ook over de suggesties van [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen gebruiken, `Return`, en `Tab` voor toegang tot de verschillende opties voor het activeren van een zoekopdracht.
+Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen voor snelheid van inhoud maken deel uit van de kernfunctionaliteit van [!DNL Assets] . Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` gebruiken of `Tab` samen met schermlezers gebruiken om snel de zoekoptie te zoeken. De het schermlezer beperkt de naam van de optie als &quot;Knoop van het Onderzoek&quot;wanneer de nadruk op de onderzoeksoptie ![ onderzoeksoptie ](assets/do-not-localize/search_icon.png) is. Gebruikers kunnen `Return` selecteren om het vak Onderzoek te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar vertelt ook over de suggesties die door [!DNL Experience Manager Assets] worden aangeboden. Gebruikers kunnen een combinatie van pijltoetsen, `Return` en `Tab` gebruiken om toegang te krijgen tot de verschillende opties om een zoekopdracht te activeren.
 
 De zoekfunctionaliteit is toegankelijk via de volgende functies:
 
 * De paginatitel, die beschikbaar is voor een schermlezer, helpt de pagina te identificeren als de zoekpagina van elementen.
-* Gebruikers zoeken elementen vanuit het veld Zoeken. Gebruikers kunnen het openen met de toetsenbordnavigatie of de sneltoets `/`.
-* Gebruikers kunnen het trefwoord zoeken en de automatische suggesties selecteren met de pijltoetsen. De gemarkeerde suggestie kan worden geselecteerd met de opdracht `Return` sleutel en middelen worden gezocht naar de geselecteerde suggestie.
+* Gebruikers zoeken elementen vanuit het veld Zoeken. Gebruikers kunnen het venster openen met de toetsenbordnavigatie of de sneltoets `/` .
+* Gebruikers kunnen het trefwoord zoeken en de automatische suggesties selecteren met de pijltoetsen. Gemarkeerde suggestie kan worden geselecteerd met de sleutel `Return` en de middelen worden gezocht naar de geselecteerde suggestie.
 * Schermlezers kunnen de selectievakjes met gemengde status (waarin de selectievakjes op het eerste niveau niet zijn geselecteerd en zijn doorgehaald) identificeren en aankondigen in het deelvenster Filters wanneer u de zoekresultaten filtert. Dit geldt alleen voor geneste voorspelling als u alle selectievakjes op het eerste niveau selecteert.
 * Wanneer het vak Onderzoek is gesloten, wordt de focus van de gebruiker naar de zoekopties verplaatst.
 
@@ -220,12 +220,12 @@ Bij het delen van elementen verbeteren de volgende functies de toegankelijkheid:
 
 Gebruik de volgende methoden om feedback te geven, vragen te stellen en productverbeteringen aan te vragen met betrekking tot toegankelijkheid:
 
-* Het formulier invullen bij [www.adobe.com/accessibility/feedback.html](https://www.adobe.com/accessibility/feedback.html).
+* Vul de vorm in [ www.adobe.com/accessibility/feedback.html ](https://www.adobe.com/accessibility/feedback.html).
 * E-mail ons op access@adobe.com.
 
 >[!MORELIKETHIS]
 >
->* [Toegankelijkheidsfuncties in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
->* [Nota&#39;s van de versie van verhogingen die in elke versie van Service Pack worden gedaan](/help/release-notes/release-notes.md).
->* [[!DNL Adobe Experience Manager] toegankelijkheidsrichtlijnen](/help/managing/web-accessibility.md).
->* [Conformiteitsrapporten (ACR) en VPAT-lijsten voor oplossingen voor Adoben](https://www.adobe.com/accessibility/compliance.html).
+>* [ eigenschappen van de Toegankelijkheid in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+>* [ nota&#39;s van de Versie van verhogingen die in elke versie van Service Pack ](/help/release-notes/release-notes.md) worden gedaan.
+>* [[!DNL Adobe Experience Manager]  toegankelijkheidsbegeleiding ](/help/managing/web-accessibility.md).
+>* [ de rapporten van de Overeenstemming (ACR) en VPAT lijst voor de oplossingen van de Adobe ](https://www.adobe.com/accessibility/compliance.html).

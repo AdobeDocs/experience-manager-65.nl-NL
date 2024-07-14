@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aanpassing aan clientzijde  {#client-side-customization}
 
-| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële elementen ⇐](essentials.md)** | **[Server-kant Aanpassing](server-customize.md)** |
 |---|---|
 |   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
 
@@ -26,47 +26,47 @@ Er zijn verschillende manieren om de weergave en/of het gedrag van een AEM Commu
 
 Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
-[Bedekken](#overlays) een component verandert de standaardcomponent en beïnvloedt elke verwijzing naar de component.
+[ het Bedekken ](#overlays) een component verandert de standaardcomponent en beïnvloedt elke verwijzing naar de component.
 
-[Uitbreiden](#extensions) een component, die uniek wordt genoemd, beperkt het werkingsgebied van veranderingen. De term &#39;extend&#39; wordt door elkaar gebruikt met &#39;override&#39;.
+[ Uitbreidend ](#extensions) een component, die uniek wordt genoemd, beperkt het werkingsgebied van veranderingen. De term &#39;extend&#39; wordt door elkaar gebruikt met &#39;override&#39;.
 
 ## Bedekkingen {#overlays}
 
 Het bedekken van een component is een methode om wijzigingen aan een standaardcomponent aan te brengen en alle instanties te beïnvloeden die het gebrek gebruiken.
 
-De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in te wijzigen /**apps** in plaats van de oorspronkelijke component in de map / te wijzigen **libben** directory. De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
+De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in te wijzigen /**apps** folder, eerder dan de originele component in de {**folder te wijzigen.** De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
 
 De map /apps is de eerste plaats die wordt gezocht om aanvragen op te lossen. Als deze niet wordt gevonden, wordt de standaardversie in de map /libs gebruikt.
 
 De standaardcomponent in de /libs folder moet nooit worden gewijzigd aangezien de toekomstige flarden en de verbeteringen vrij zijn om de /libs folder op om het even welke manier noodzakelijk te veranderen terwijl het handhaven van openbare interfaces.
 
-Dit verschilt van [verlenging](#extensions) een standaardcomponent waar het verlangen wijzigingen voor een specifiek gebruik moet maken, die tot een uniek weg aan de component leidt en zich baseert op het van verwijzingen voorzien van de originele standaardcomponent in de /libs folder als super middeltype.
+Dit is verschillend van [ het uitbreiden van ](#extensions) een standaardcomponent waar het verlangen wijzigingen voor een specifiek gebruik moet maken, die tot een unieke weg aan de component leiden en zich baseren op het van verwijzingen voorzien van de originele standaardcomponent in de /libs folder als super middeltype.
 
-Voor een snel voorbeeld van het bedekken van de commentaarcomponent, probeer [Zelfstudie van de component Overlay Comments](overlay-comments.md).
+Voor een snel voorbeeld om de commentaarcomponent te bedekken, probeer het [ leerprogramma van de Component van Commentaren van de Bedekking ](overlay-comments.md).
 
 ## Extensies {#extensions}
 
 Het uitbreiden (met voeten treden) van een component is een methode om wijzigingen voor een specifiek gebruik aan te brengen zonder alle instanties te beïnvloeden die het gebrek gebruiken. De uitgebreide component krijgt een unieke naam in de map /apps en verwijst naar de standaardcomponent in de map /libs, zodat het standaardontwerp en de standaardwerking van een component niet worden gewijzigd.
 
-Dit verschilt van [bedekken](#overlays) De standaardcomponent waarin de aard van Sling relatieve verwijzingen naar apps/omslag alvorens in de libs/ omslag te zoeken oplost, zodat wordt het ontwerp of het gedrag van een component globaal gewijzigd.
+Dit is verschillend van [ het bedekken ](#overlays) de standaardcomponent waar de aard van het Sling relatieve verwijzingen naar apps/de omslag alvorens in de libs/ omslag te zoeken, zo wordt het ontwerp of het gedrag van een component globaal gewijzigd.
 
-Voor een kort voorbeeld van het uitbreiden van de commentaarcomponent, probeer [Zelfstudie opmerkingencomponent uitbreiden](extend-comments.md).
+Voor een snel voorbeeld om de commentaarcomponent uit te breiden, probeer [ breidt de component van Commentaren ](extend-comments.md) uit.
 
-## JavaScript-binding {#javascript-binding}
+## JavaScript Binding {#javascript-binding}
 
-Het HBS-script voor de component moet zijn gebonden aan de JavaScript-objecten, -modellen en -weergaven, die deze functie implementeren.
+Het manuscript HBS voor de component moet aan de voorwerpen, de modellen, en de meningen van JavaScript worden gebonden, die deze eigenschap uitvoeren.
 
-De waarde van `data-scf-component` kenmerk kan de standaardwaarde zijn, zoals **`social/tally/components/hbs/rating`** of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/componenten/hbs/rating**.
+De waarde van het `data-scf-component` attribuut kan het gebrek, zoals **`social/tally/components/hbs/rating`**, of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/components/hbs/rating** zijn.
 
-Om een component te binden, moet het volledige componentenmanuscript binnen een worden ingesloten &lt;div> element met de volgende kenmerken:
+Om een component te binden, moet het volledige componentenmanuscript binnen een &lt;div> element met de volgende attributen worden ingesloten:
 
 * `data-component-id`=&quot;`{{id}}`&quot;
 
   wordt vanuit de context omgezet in de eigenschap id
 
-* `data-scf-component`=&quot;*&lt;resourcetype>*
+* `data-scf-component`=&quot;*&lt;resourceType>*
 
-Bijvoorbeeld van `/apps/weretail/components/hbs/rating/rating.hbs`:
+Bijvoorbeeld van `/apps/weretail/components/hbs/rating/rating.hbs` :
 
 ```xml
 <div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
@@ -95,7 +95,7 @@ Een component skin geven:
 1. Identificeer de elementen die u wilt veranderen (voorbeeld - composer gebied, toolbarknopen, berichtdoopvont, etc.).
 1. Identificeer de CSS klasse/de regels die deze elementen beïnvloeden.
 1. Maak een stijlbladbestand (.css).
-1. Stijlblad opnemen in clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat deze wordt opgenomen in uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Omvat het stijlblad in een omslag van de cliëntbibliotheek ([ clientlibs ](#clientlibs-for-scf)) voor uw plaats en zorg ervoor het van uw malplaatjes en pagina&#39;s met [ ui:includeClientLib ](../../help/sites-developing/clientlibs.md) inbegrepen is.
 
 1. Definieer de CSS-klassen en -regels die u hebt geïdentificeerd (#2) in uw stijlpagina opnieuw en voeg stijlen toe.
 
@@ -103,17 +103,17 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 
 >[!CAUTION]
 >
->Elke CSS-klassennaam die vooraf is voorzien van `scf-js` heeft een specifiek gebruik in JavaScript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
+>Voor elke CSS-klassenaam die voorafgaat aan `scf-js` , wordt een specifieke toepassing gebruikt in JavaScript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
 >
->Terwijl de `scf-js` klassen zijn niet van invloed op stijlen. De klassennamen kunnen in stijlbladen worden gebruikt met het voorwendsel dat er bijwerkingen kunnen optreden wanneer deze de status van elementen bepalen.
+>Hoewel de `scf-js` -klassen geen invloed hebben op stijlen, kunnen de klassennamen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
 
 ## JavaScript uitbreiden {#extending-javascript}
 
 Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 
 1. Maak een component voor uw app met een jcr:resourceSuperType dat is ingesteld op de waarde van jcr:resourceType van de uitgebreide component, bijvoorbeeld social/forum/components/hbs/forum.
-1. Onderzoek JavaScript van de standaardSCF component om te bepalen welke methodes moeten worden geregistreerd gebruikend SCF.registerComponent ().
-1. Kopieer het JavaScript van de uitgebreide component of begin helemaal opnieuw.
+1. Onderzoek de JavaScript van de standaardSCF component om te bepalen welke methodes moeten worden geregistreerd gebruikend SCF.registerComponent ().
+1. Kopieer de JavaScript van de uitgebreide component of begin helemaal opnieuw.
 1. Breid de methode uit.
 1. Gebruik SCF.registerComponent() om alle methoden te registreren met de standaardinstellingen of de aangepaste objecten en weergaven.
 
@@ -146,18 +146,18 @@ Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 
 Scripttags vormen een inherent onderdeel van het clientframework. Zij zijn de lijm die de prijsverhoging bindt die op de serverkant met de modellen en de meningen op de cliëntkant wordt geproduceerd.
 
-Scripttags in SCF-scripts mogen niet worden verwijderd wanneer componenten worden overschreven of overschreven. SCF-scripttags die automatisch zijn gemaakt voor het injecteren van JSON in de HTML, worden aangeduid met het kenmerk `data-scf-json=true`.
+Scripttags in SCF-scripts mogen niet worden verwijderd wanneer componenten worden overschreven of overschreven. SCF-scripttags die automatisch zijn gemaakt voor het injecteren van JSON in de HTML, worden aangeduid met het kenmerk `data-scf-json=true` .
 
 ## Clientlibs voor SCF {#clientlibs-for-scf}
 
-Het gebruik van [clientbibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs), biedt een manier om de JavaScript en CSS die worden gebruikt om inhoud op de client te renderen, te organiseren en te optimaliseren.
+Het gebruik van [ cliënt-zijbibliotheken ](../../help/sites-developing/clientlibs.md) (clientlibs), verstrekt een middel om JavaScript en CSS te organiseren en te optimaliseren die wordt gebruikt om inhoud op de cliënt terug te geven.
 
 De clientlibs voor SCF volgen een zeer specifiek noemingspatroon voor twee varianten, die slechts door de aanwezigheid van &quot;auteur&quot;in de categorienaam variëren:
 
 | Clientlib-variabele | Patroon voor eigenschap Categorieën |
 |--- |--- |
-| complete clientlib | cq.social.hbs.&lt;component name> |
-| auteur-clientlib | cq.social.author.hbs.&lt;component name> |
+| complete clientlib | cq.social.hbs.&lt;naam component> |
+| auteur-clientlib | cq.social.author.hbs.&lt;naam component> |
 
 ### Volledige Clientlibs {#complete-clientlibs}
 
@@ -170,11 +170,11 @@ Deze versies zijn te vinden in:
 Bijvoorbeeld:
 
 * Clientmapknooppunt: `/etc/clientlibs/social/hbs/forum`
-* Categorie-eigenschap: `cq.social.hbs.forum`
+* Eigenschap Categorieën: `cq.social.hbs.forum`
 
-De [Community Components Guide](components-guide.md) maakt een lijst van de volledige clientlibs die voor elke component SCF wordt vereist.
+De [ communautaire gids van Componenten ](components-guide.md) maakt een lijst van de volledige clientlibs die voor elke component SCF worden vereist.
 
-[Clientlibs voor Community-componenten](clientlibs.md) beschrijft hoe u clientlibs aan een pagina kunt toevoegen.
+[ Clientlibs voor de Componenten van Gemeenschappen ](clientlibs.md) beschrijft hoe te om clientlibs aan een pagina toe te voegen.
 
 ### Auteur Clientlibs {#author-clientlibs}
 
@@ -189,20 +189,20 @@ Deze versies staan in de map SCF libs:
 Bijvoorbeeld:
 
 * Clientmapknooppunt: `/libs/social/forum/hbs/forum/clientlibs`
-* Categorie-eigenschap: `cq.social.author.hbs.forum`
+* Eigenschap Categorieën: `cq.social.author.hbs.forum`
 
 Opmerking: hoewel auteur clientlibs geen andere bibliotheken heeft ingesloten, worden hun afhankelijkheden wel vermeld. Wanneer de afhankelijkheden zijn ingesloten in andere bibliotheken, worden deze niet automatisch ingesloten en moeten ze ook worden ingesloten.
 
-De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&quot;in de clientlibs op te nemen die voor elke component SCF in SCF worden vermeld [Community Components Guide](components-guide.md).
+De vereiste auteursclientlibs kunnen worden geïdentificeerd door &quot;auteur&quot;in de clientlibs op te nemen die voor elke component SCF in de [ Communautaire gids van Componenten ](components-guide.md) worden vermeld.
 
 ### Overwegingen bij gebruik {#usage-considerations}
 
 Elke site is anders in de manier waarop ze clientbibliotheken beheren. Enkele factoren zijn:
 
-* Algemene snelheid: misschien is het de bedoeling dat de site reageert, maar het is acceptabel dat de eerste pagina iets traag wordt geladen. Als veel pagina&#39;s dezelfde JavaScript gebruiken, kunnen de verschillende JavaScript-code in één client worden ingesloten en kan er vanaf de eerste pagina die moet worden geladen naar worden verwezen. Het JavaScript in deze enkele download blijft in het cachegeheugen opgeslagen, waardoor de hoeveelheid gegevens die voor volgende pagina&#39;s moet worden gedownload, tot een minimum wordt beperkt.
-* Kort naar eerste pagina: misschien is het de bedoeling dat de eerste pagina snel wordt geladen. In dit geval bestaat de JavaScript-code uit meerdere kleine bestanden waarnaar alleen kan worden verwezen als dat nodig is.
+* Algemene snelheid: misschien is het de bedoeling dat de site reageert, maar het is acceptabel dat de eerste pagina iets traag wordt geladen. Als veel pagina&#39;s dezelfde JavaScript gebruiken, kan de verschillende JavaScript in één client worden ingesloten en kan er vanaf de eerste pagina naar worden verwezen om te laden. De JavaScript in deze enkele download blijft in het cachegeheugen opgeslagen, waardoor de hoeveelheid gegevens die voor volgende pagina&#39;s moet worden gedownload, tot een minimum wordt beperkt.
+* Kort naar eerste pagina: misschien is het de bedoeling dat de eerste pagina snel wordt geladen. In dit geval bevindt de JavaScript zich in meerdere kleine bestanden waarnaar alleen kan worden verwezen als dat nodig is.
 * Een balans tussen het laden van de eerste pagina en volgende downloads.
 
-| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële elementen ⇐](essentials.md)** | **[Server-kant Aanpassing](server-customize.md)** |
 |---|---|
 |   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |

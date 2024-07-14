@@ -26,23 +26,23 @@ U kunt de locaties opgeven waar Output naar bepaalde bestandstypen zoekt die dez
 
 ## Locatie-instellingen {#locations-settings}
 
-**URI van basisinhoud:** De URI of absolute locatie van de opslagplaats waar formulieren worden opgehaald. Deze waarde wordt gecombineerd met de parameter sForm, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
+**Inhoudswortel URI:** URI of absolute plaats van de bewaarplaats waarvan de vormen worden teruggewonnen. Deze waarde wordt gecombineerd met de parameter sForm, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
 
 De standaardwaarde is een lege tekenreeks.
 
-**XCI-configuratiebestand:** De relatieve of absolute locatie van het XCI-configuratiebestand dat de uitvoerservice gebruikt voor rendering. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in de AEM formulieren bevindt die kunnen worden geïmplementeerd in het EAR-bestand.
+**XCI het Dossier van de Configuratie:** de relatieve of absolute plaats van het XCI configuratiedossier dat de dienst van de Output voor het teruggeven gebruikt. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in de AEM formulieren bevindt die kunnen worden geïmplementeerd in het EAR-bestand.
 
-De standaardwaarde is `com/adobe/formServer/PA/pa_output.xci`.
+De standaardwaarde is `com/adobe/formServer/PA/pa_output.xci` .
 
-**Cachelocatie:** Hiermee geeft u de locatie van de uitvoerschijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Selecteer een van de volgende opties:
+**Plaats van het Geheime voorgeheugen:** specificeert de plaats van het geheime voorgeheugen van de Output. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Selecteer een van de volgende opties:
 
-**Standaardlocatie:** Dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
+**StandaardPlaats:** dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[Forms Server name]\Output\Cache`
-* **WebSphere** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
+* **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**LC Temp-map:** De cache wordt gemaakt in een submap van de tijdelijke map voor AEM formulieren, die wordt opgegeven in de beheerconsole onder Instellingen > Core System Settings > Configurations > Location of Temp Directory. De naam van de submap is `adobeoutput_[servername]`.
+**LC Temp Folder:** het geheime voorgeheugen wordt gecreeerd in een subdirectory van de folder van de AEM vormen temp, die in de beleidsconsole onder Montages > de Montages van het Systeem van de Kern > Configuraties > Plaats van de Folder van Temp wordt gespecificeerd. De submap heeft de naam `adobeoutput_[servername]` .
 
 >[!NOTE]
 >

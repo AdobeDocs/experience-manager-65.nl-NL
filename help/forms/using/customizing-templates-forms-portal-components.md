@@ -53,7 +53,7 @@ Ga als volgt te werk, zodat u een aangepaste sjabloon kunt maken voor verschille
    >De titel kan verschillen van de knooppuntnaam van sling:Folder u creeerde.
 
    In de volgende afbeelding ziet u de configuratie voor de component Search &amp; Lister.
-   ![Een tekenreeks maken:map](assets/1.png)
+   ![ Creërend een helling:Omslag ](assets/1.png)
 
 1. Maak een bestandssjabloon.html in deze map zodat deze kan dienen als aangepaste sjabloon.
 1. Schrijf de aangepaste sjabloon en gebruik aangepaste metagegevens zoals hieronder beschreven.
@@ -86,13 +86,13 @@ Een aangepaste sjabloon voor elke Forms Portal-component bevat herhaalbare en ni
 
 Forms Portal biedt een syntaxis voor plaatsaanduidingen voor het weergeven van metagegevens die zijn aangepast aan of verwijderd uit de verpakking. De plaatsaanduidingen worden gevuld nadat de resultaten van formulieren, concepten of verzendingen zijn weergegeven.
 
-Om een herhaalbare ingang te omvatten, vorm de waarde van de attributen **data-herhaalbaar** tot **true**.
+Om een herhaalbare ingang te omvatten, vorm de waarde van de attributen **gegeven-herhaalbare** aan **waar**.
 
-*In het besproken voorbeeld, zijn twee elementen Div aanwezig bij de bovenkant in het douanemalplaatje. De eerste, met de CSS-klasse &quot;__FP_boxes-container&quot;, werkt als een containerelement voor de formulieren die worden weergegeven. De tweede, met de CSS-klasse &quot;__FP_boxes&quot;, is een sjabloon voor de basisentiteiten, in dit geval een Form. De **data-herhaalbaar**kenmerk aanwezig in Div-element heeft de waarde **true**.*
+*in het besproken voorbeeld, zijn twee elementen Div aanwezig bij de bovenkant in het douanemalplaatje. De eerste, met de CSS-klasse &quot;__FP_boxes-container&quot;, werkt als een containerelement voor de formulieren die worden weergegeven. De tweede, met de CSS-klasse &quot;__FP_boxes&quot;, is een sjabloon voor de basisentiteiten, in dit geval een Form. Het **gegeven-herhaalbare**attribuut huidig in het element van Div heeft de waarde **waar**.*
 
-Elke plaatsaanduiding heeft een exclusieve set metagegevens die buiten het vak vallen. Als u aangepaste metagegevens wilt weergeven op een bepaalde plaats op het formulier, voegt u de opdracht **${metadata_prop} eigenschap** ter plekke.
+Elke plaatsaanduiding heeft een exclusieve set metagegevens die buiten het vak vallen. Om douanemetagegevens bij een bepaalde plaats op de vorm te tonen, voeg **$ {metadata_prop} bezit** bij de plaats toe.
 
-*In het voorbeeld wordt de eigenschap metadata in meerdere instanties gebruikt. Het wordt bijvoorbeeld gebruikt in **beschrijving**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, en **pad**op de voorgeschreven wijze.*
+*in het voorbeeld, wordt het meta-gegevensbezit gebruikt bij veelvoudige instanties. Bijvoorbeeld, wordt het gebruikt in **beschrijving**,**naam**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, en **weg**op de voorgeschreven manier.*
 
 ## Metagegevens uit het vak {#out-of-the-box-metadata}
 
@@ -100,80 +100,80 @@ Verschillende Forms Portal-componenten bieden exclusieve sets van metagegevens d
 
 ### Onderdeel Zoeken en bibliotheken {#search-amp-lister-component}
 
-* **Titel:** Titel van het formulier
-* **name**: Naam van het formulier (meestal gelijk aan de titel)
-* **beschrijving**: Beschrijving van het formulier
-* **formUrl**: URL om het formulier weer te geven als HTML
-* **pdfUrl**: URL om het formulier weer te geven als PDF
-* **assetType**: Type van het element. Geldige waarden zijn **Formulier**, **PDF-formulier**, **Formulier afdrukken**, en **Adaptief formulier**
+* **Titel:** Titel van de vorm
+* **naam**: De naam van de vorm (meestal is het het zelfde als de titel)
+* **beschrijving**: Beschrijving van de vorm
+* **formUrl**: URL om de vorm als HTML terug te geven
+* **pdfUrl**: URL om de vorm als PDF terug te geven
+* **assetType**: Type van de activa. De geldige waarden omvatten **Vorm**, **Vorm van de PDF**, **Vorm van de Druk**, en **Aangepaste Vorm**
 
-* **htmlStyle**&amp; **pdfStyle**: Weergavestijl voor HTML- en PDF-pictogrammen die respectievelijk worden gebruikt voor rendering. Geldige waarden zijn &quot;**__FP_display_none**&quot; of leeg.
+* **htmlStyle** &amp; **pdfStyle**: De stijl van de vertoning voor de pictogrammen van HTML en van de PDF respectievelijk gebruikt voor het teruggeven. Geldige waarden zijn &quot;**_FP_display_none**&quot; of leeg.
 
 >[!NOTE]
 >
 >Vergeet niet de klasse __FP_display_none in uw aangepaste stijlblad te gebruiken.
 
-* **downloadUrl**: URL om een middel te downloaden.
+* **downloadUrl**: URL om activa te downloaden.
 
 Ondersteuning voor lokalisatie, sorteren en het gebruik van configuratie-eigenschappen in de gebruikersinterface (alleen zoeken en registreren):
 
-1. **Ondersteuning voor lokalisatie**: Gebruik het kenmerk om statische tekst te lokaliseren `${localize-YOUR_TEXT}` en maak de gelokaliseerde waarde beschikbaar, als nog niet bestaat.
-   *In het besproken voorbeeld, de attributen `${localize-Apply}` en `${localize-Download}` worden gebruikt om de tekst Toepassen en downloaden te lokaliseren.*
+1. **Steun van de Lokalisatie**: Om het even welke statische tekst te lokaliseren gebruik de attributen `${localize-YOUR_TEXT}` en maak de gelokaliseerde waarde beschikbaar, als niet reeds bestaat.
+   *In het besproken voorbeeld, worden de attributen `${localize-Apply}` en `${localize-Download}` gebruikt om Toepassen te lokaliseren en tekst te downloaden.*
 
-1. **Ondersteuning voor sorteren**: Klik op het element HTML om de zoekresultaten te sorteren. Als u sorteren in een tabellay-out wilt implementeren, voegt u het kenmerk &quot;data-sortKey&quot; toe aan de desbetreffende tabelkoptekst. Voeg ook de waarde ervan toe als de metagegevens waarvoor u wilt sorteren.
+1. **Steun voor het Sorteren**: Klik het element van de HTML om onderzoeksresultaten te sorteren. Als u sorteren in een tabellay-out wilt implementeren, voegt u het kenmerk &quot;data-sortKey&quot; toe aan de desbetreffende tabelkoptekst. Voeg ook de waarde ervan toe als de metagegevens waarvoor u wilt sorteren.
 Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header &#39;data-sortKey&#39; bijvoorbeeld &#39;title&#39;. Klik op de kop, zodat u de waarden in een bepaalde kolom kunt sorteren.
 
-1. **Configuratieeigenschappen gebruiken**: De component Search &amp; Lister heeft diverse configuraties die u in de gebruikersinterface kunt gebruiken. Als u bijvoorbeeld HTML ToolTip-tekst wilt weergeven die is opgeslagen via het dialoogvenster Bewerken, gebruikt u de opdracht `${config-htmlLinkText}` kenmerk. **Op dezelfde manier kunt u voor knopinfo-tekst de opdracht** `${config-pdfLinkText}` kenmerk.
+1. **Gebruikend configuratieeigenschappen**: De component van het Onderzoek &amp; van het Registreertoestel heeft verscheidene configuraties die u op het gebruikersinterface kunt gebruiken. Als u bijvoorbeeld HTML ToolTip-tekst wilt weergeven die is opgeslagen via het dialoogvenster Bewerken, gebruikt u het kenmerk `${config-htmlLinkText}` . **op dezelfde manier, voor de tekst van het hulpmiddeluiteinde van PDF, gebruik het** `${config-pdfLinkText}` attribuut.
 
 ### Component Koppelen {#link-component}
 
-* **Titel:** Titel van het formulier
-* **formUrl**: URL om het formulier weer te geven als HTML
-* **target**: Het kenmerk Doel van de koppeling. Geldige waarden zijn &quot;_blank&quot; en &quot;_self&quot;.
-* **linkText**: Bijschrift koppelen
+* **Titel:** Titel van de vorm
+* **formUrl**: URL om de vorm als HTML terug te geven
+* **doel**: Het attribuut van het doel van de verbinding. Geldige waarden zijn &quot;_blank&quot; en &quot;_self&quot;.
+* **linkText**: De titel van de verbinding
 
 ### Component Concepten en verzendingen {#drafts-amp-submissions-component}
 
-* **Pad**: Het pad van het metagegevensknooppunt concept/verzending. Gebruik deze extensie met de extensie .HTML als een URL, zodat u een concept of verzending kunt openen.
-* **contextPath**: Contextpad van AEM instantie
-* **firstLetter**: Eerste letter (in hoofdletters) van de titel van het adaptieve formulier, die als concept is opgeslagen of is ingediend.
-* **formName**: De titel van het adaptieve formulier, dat als concept is opgeslagen of is ingediend.
-* **conceptID**: ID voor het concept dat wordt weergegeven (alleen gebruiken in de sjabloon voor de sectie Concept).
-* **submitID**: ID voor de verzending die wordt vermeld (alleen gebruiken in de sjabloon voor de sectie Verzending).
-* **status**: Status van het ingediende formulier. (Alleen gebruiken in de sjabloon voor de sectie Verzending).
-* **beschrijving**: Beschrijving van het aan het ontwerp of de indiening verbonden adaptieve formulier.
-* **diffTime**: Verschil tussen de huidige tijd en de laatste opslagactie voor het concept. Het verschil tussen de huidige tijd en de laatst ingediende actie voor de indiening.
-* **iconClass**: CSS-klasse die wordt gebruikt om de eerste letter van het concept/de verzending weer te geven. Forms Portal bevat de volgende klassen, die verschillende gekleurde achtergronden bieden.
-* **eigenaar**: Gebruiker die het concept/de verzending heeft gemaakt.
-* **Vandaag**: Datum van aanmaak of indiening van het ontwerp in `DD:MM:YYYY` gebruiken.
-* **TimeNow**: Tijdstip van aanmaak of indiening van het ontwerp in `HH:MM:SS` 24-uurs formaat
+* **Weg**: Weg van de ontwerp/de knoop van voorleggingsmeta-gegevens. Gebruik deze extensie met de extensie .HTML als een URL, zodat u een concept of verzending kunt openen.
+* **contextPath**: De weg van de context van de AEM instantie
+* **firstLetter**: Eerste brief (in hoofdletters) van de titel van de adaptieve vorm, die als Ontwerp of voorgelegd werd bewaard.
+* **formName**: De titel van de adaptieve vorm, die als Ontwerp of voorgelegd werd bewaard.
+* **conceptID**: identiteitskaart voor het ontwerp dat vermeld is (Gebruik slechts in het malplaatje voor de sectie van het Ontwerp).
+* **submitID**: identiteitskaart voor de voorlegging die (Gebruik slechts in het malplaatje voor de sectie van de Verzending) vermeld is.
+* **status**: Status van de voorgelegde vorm. (Alleen gebruiken in de sjabloon voor de sectie Verzending).
+* **beschrijving**: Beschrijving van de adaptieve vorm verbonden aan het ontwerp of de voorlegging.
+* **diffTime**: Verschil tussen de huidige tijd en laatste sparen actie voor het ontwerp. Het verschil tussen de huidige tijd en de laatst ingediende actie voor de indiening.
+* **iconClass**: CSS klasse die wordt gebruikt om de eerste brief van het ontwerp/de voorlegging te tonen. Forms Portal bevat de volgende klassen, die verschillende gekleurde achtergronden bieden.
+* **eigenaar**: Gebruiker die tot het ontwerp/de voorlegging leidde.
+* **vandaag**: Datum van verwezenlijking van ontwerp of voorlegging in `DD:MM:YYYY` formaat.
+* **TimeNow**: Tijd van verwezenlijking van ontwerp of voorlegging in `HH:MM:SS` formaat van 24 uur
 
-*Opmerking:*
+*Nota:*
 
-1. Geef de CSS-klasse &quot;__FP_deleteDraft&quot; een naam voor de verwijderoptie in de sectie Concepten onder de component Concepten en verzendingen. Voeg ook het kenmerk &quot;draftID&quot; toe aan de waarde **${draftID}**, de ontwerp-id van het corresponderende ontwerp.
+1. Geef de CSS-klasse &quot;__FP_deleteDraft&quot; een naam voor de verwijderoptie in de sectie Concepten onder de component Concepten en verzendingen. Bovendien omvat het attribuut &quot;draftID&quot;met de waarde **$ {draftID}**, die ontwerp identiteitskaart van overeenkomstig ontwerp is.
 
-1. Tijdens het maken van koppelingen naar open concepten en verzendingen kunt u **${path}.html** als de waarde van de **href** -kenmerk voor de ankertag.
+1. Terwijl het creëren van verbindingen aan open concepten en voorlegging, kunt u **$ {path} $** als waarde van het **href** attribuut voor de ankermarkering specificeren.
 
-![Concepten en verzendknooppunt](assets/raw-image-with-index.png)
+![ Concepten en de knoop van de Verzending ](assets/raw-image-with-index.png)
 
 **A**. Containerelement
 
-**B.** &#39;path&#39;-metagegevens met een vaste hiërarchie om de voor elk formulier opgeslagen miniatuur te verkrijgen.
+**B.** &quot;weg&quot;meta-gegevens met een vaste hiërarchie om de duimnagel te verkrijgen die voor elke vorm wordt opgeslagen.
 
-**C.** Kenmerk dat kan worden herhaald voor de sjabloonsectie voor elk formulier
+**C.** Gegevens-herhaalbare die attributen voor de malplaatjesectie voor elke vorm worden gebruikt
 
-**D.** Tekenreeks &quot;Toepassen&quot; lokaliseren
+**D.** lokaliseer &quot;Toepassen&quot;koord
 
-**E.** De configuratieeigenschap pdfLinkText gebruiken
+**E.** Gebruikend het configuratiebezit pdfLinkText
 
-**F.** De metagegevens &quot;pdfUrl&quot; gebruiken
+**F.** Gebruikend de &quot;pdfUrl&quot;meta-gegevens
 
 ## Tips, trucs en bekende problemen {#tips-tricks-and-known-issues}
 
 1. Gebruik geen enkel aanhalingsteken (&#39;) in enige douanemalplaatje.
-1. Voor aangepaste metagegevens slaat u deze eigenschap op het tabblad **jcr:inhoud/metagegevens** alleen knooppunt. Als u de metagegevens op een andere plaats opslaat, kunnen ze niet worden weergegeven op Forms Portal.
+1. Voor douanemetagegevens, sla dit bezit op **jcr op:inhoud/meta-gegevens** slechts knoop. Als u de metagegevens op een andere plaats opslaat, kunnen ze niet worden weergegeven op Forms Portal.
 1. Zorg ervoor dat de naam van aangepaste metagegevens of bestaande metagegevens geen dubbele punt ( : ) bevat. Als dit het geval is, kunt u het niet weergeven in de gebruikersinterface.
-1. **data-herhaalbaar** heeft geen betekenis voor een **Koppeling** component. De Adobe adviseert dat u vermijdt gebruikend dit bezit in het malplaatje voor een component van de Verbinding.
+1. **gegeven-herhaalbare** heeft geen betekenis voor de component van de Verbinding van de a ****. De Adobe adviseert dat u vermijdt gebruikend dit bezit in het malplaatje voor een component van de Verbinding.
 
 ## Verwante artikelen
 

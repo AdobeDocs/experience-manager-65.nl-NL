@@ -39,7 +39,7 @@ Als uw project om het even welke vorm van ontwikkelingsherhaling (die veelvoudig
 
 Op een bepaald punt kunt u of het aangewezen testteam, of een specifieke testpersoon (mogelijk afhankelijk van beschikbaarheid en/of ervaring) toewijzen.
 
-**Overzicht**
+**Samenvatting of Overzicht**
 
 Voor rapportagedoeleinden wilt u een overzicht geven van de testresultaten:
 

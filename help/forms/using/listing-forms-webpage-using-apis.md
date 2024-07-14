@@ -19,7 +19,7 @@ ht-degree: 1%
 
 AEM Forms biedt een REST-API voor zoekopdrachten die webontwikkelaars kunnen gebruiken om een set formulieren op te vragen en op te halen die aan de zoekcriteria voldoet. U kunt API&#39;s gebruiken om formulieren te zoeken op basis van verschillende filters. Het reactieobject bevat formulierkenmerken, eigenschappen en renderpunten van formulieren.
 
-Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de GET naar de server op `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met query-parameters die hieronder worden beschreven.
+Als u formulieren wilt zoeken met de REST API, stuurt u een aanvraag naar de server op `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
 
 ## Query-parameters {#query-parameters}
 
@@ -31,29 +31,29 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde in van de optie <code>func </code>kenmerk naar <code>searchForms</code>.</p> <p>Bijvoorbeeld: <code class="code">
+   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde van het kenmerk <code>func </code> in op <code>searchForms</code> .</p> <p>Bijvoorbeeld: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking:</strong> <em>Deze parameter is verplicht.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong> Nota:</strong> <em> Deze parameter is verplicht.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Hier geeft u het toepassingspad op dat u wilt gebruiken om formulieren te zoeken. Standaard zoekt het kenmerk appPath alle toepassingen die beschikbaar zijn op het niveau van de hoofdnode.<br /> </p> <p>U kunt meerdere toepassingspaden opgeven in één zoekquery. Scheid meerdere paden met verticale streep (|). </p> </td>
+   <td><p>Hier geeft u het toepassingspad op dat u wilt gebruiken om formulieren te zoeken. Door gebrek, zoekt het appPath attribuut alle toepassingen beschikbaar op het niveau van de wortelknoop.<br /> </p> <p>U kunt meerdere toepassingspaden opgeven in één zoekquery. Scheid meerdere paden met verticale streep (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Geeft de eigenschappen aan die met de elementen moeten worden opgehaald. U kunt sterretje (*) gebruiken om alle eigenschappen tegelijk op te halen. Gebruik de verticale operator (|) om meerdere eigenschappen op te geven. </p> <p>Bijvoorbeeld: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Opmerking</strong>: </p>
+   <td><p>Geeft de eigenschappen aan die met de elementen moeten worden opgehaald. U kunt sterretje (*) gebruiken om alle eigenschappen tegelijk op te halen. Gebruik de verticale operator (|) om meerdere eigenschappen op te geven. </p> <p>Bijvoorbeeld: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong> Nota </strong>: </p>
     <ul>
      <li><em>Eigenschappen zoals id, path en name worden altijd opgehaald. </em></li>
      <li><em>Elk element heeft een andere set eigenschappen. Eigenschappen zoals formUrl, pdfUrl en guideUrl zijn niet afhankelijk van het kenmerk cutpoints. Deze eigenschappen zijn afhankelijk van het type element en worden dienovereenkomstig opgehaald. </em></li>
     </ul> </td>
   </tr>
   <tr>
-   <td>relatie<br /> </td>
+   <td>relation<br /> </td>
    <td>Hiermee geeft u de verwante elementen op die samen met de zoekresultaten moeten worden opgehaald. U kunt een van de volgende opties kiezen om gerelateerde elementen op te halen:
     <ul>
-     <li><strong>NO_RELATION</strong>: Haal gerelateerde elementen niet op.</li>
-     <li><strong>ONMIDDELLIJK</strong>: Hiermee zoekt u elementen die rechtstreeks gerelateerd zijn aan zoekresultaten.</li>
-     <li><strong>ALLES</strong>: Rechtstreeks en indirect verband houdende activa ophalen.</li>
+     <li><strong> NO_RELATION </strong>: Haal geen verwante activa.</li>
+     <li><strong> ONMIDDELLIJK </strong>: Vetst activa die direct met onderzoeksresultaten verwant zijn.</li>
+     <li><strong> ALLES </strong>: Vets direct en onrechtstreeks verwante activa.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -76,9 +76,9 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>In het bovenstaande voorbeeld: </p>
     <ul>
-     <li><strong>name</strong>: geeft de naam op van de eigenschap waarnaar moet worden gezocht.</li>
-     <li><strong>value</strong>: geeft de waarde aan van de eigenschap waarnaar moet worden gezocht.</li>
-     <li><strong>operator</strong>: geeft de operator aan die moet worden toegepast tijdens het zoeken. De volgende operatoren worden ondersteund:
+     <li><strong> naam </strong>: specificeert de naam van het bezit aan onderzoek naar.</li>
+     <li><strong> waarde </strong>: specificeert de waarde van het bezit aan onderzoek naar.</li>
+     <li><strong> exploitant </strong>: specificeert de exploitant toe te passen terwijl het zoeken. De volgende operatoren worden ondersteund:
       <ul>
        <li>EQ - Gelijk aan </li>
        <li>NEQ - niet gelijk aan</li>
@@ -92,11 +92,11 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
        <li>ENDSWITH - A eindigt met B als B het einddeel van A is</li>
        <li>LIKE - Implementeert de operator LIKE</li>
        <li>AND - Meerdere instructies combineren</li>
-      </ul> <p><strong>Opmerking:</strong> <em>De operatoren GT, LT, GTEQ en LTEQ zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
+      </ul> <p><strong> Nota:</strong> <em> GT, LT, GTEQ, en de exploitanten LTEQ zijn van toepassing op eigenschappen van lineair type zoals LONG, DUBBEL, en DATUM.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>bestellingen<br /> </td>
+   <td>orders <br /> </td>
    <td><p>Hiermee geeft u de volgordecriteria voor de zoekresultaten op. De criteria worden gedefinieerd in de JSON-indeling. U kunt zoekresultaten sorteren op meerdere velden. De resultaten worden gesorteerd in de volgorde waarin de velden in de query worden weergegeven.</p> <p>Bijvoorbeeld:</p> <p>Voeg de volgende parameter toe om queryresultaten op te halen die zijn geordend door eigenschap title in oplopende volgorde: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
@@ -104,8 +104,8 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>name</strong>: Geeft de naam op van de eigenschap die moet worden gebruikt om de zoekresultaten te bestellen.</li>
-     <li><strong>criteria</strong>: Geeft de volgorde van de resultaten aan. Het kenmerk order accepteert de volgende waarden:
+     <li><strong> naam </strong>: Specificeert de naam van het bezit te gebruiken om tot de onderzoeksresultaten opdracht te geven.</li>
+     <li><strong> criteria </strong>: Specificeert de orde van de resultaten. Het kenmerk order accepteert de volgende waarden:
       <ul>
        <li>ASC - Gebruik ASC om resultaten in oplopende volgorde te rangschikken.<br /> </li>
        <li>DES - Gebruik DES om resultaten in dalende orde te rangschikken.</li>
@@ -114,7 +114,7 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Geeft aan of de binaire inhoud moet worden opgehaald. De <code>includeXdp</code> kenmerk is van toepassing op activa van het type <code>FORM</code>, <code>PDFFORM</code>, en <code>PRINTFORM</code>.</td>
+   <td>Geeft aan of de binaire inhoud moet worden opgehaald. Het attribuut <code>includeXdp</code> is van toepassing op elementen van het type <code>FORM</code> , <code>PDFFORM</code> en <code>PRINTFORM</code> .</td>
   </tr>
   <tr>
    <td>assetType</td>

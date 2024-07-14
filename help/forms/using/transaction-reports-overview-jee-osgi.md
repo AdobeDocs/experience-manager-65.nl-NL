@@ -24,13 +24,13 @@ Met een transactierapport in AEM Forms kunt u alle transacties controleren sinds
 
 U kunt het volgende raadplegen voor uitgebreide instructies over het inschakelen van transacties, de lijst met factureerbare API&#39;s en aangepaste recorder-implementaties op basis van uw AEM Forms-technologiestack:
 
-**Transactierapportage voor AEM Forms op JEE**
+**Rapportering van de Transactie voor AEM Forms op JEE**
 
 * [Transactierapport inschakelen en weergeven voor AEM Forms op JEE](/help/forms/using/transaction-report-overview-jee.md)
 * [Lijst met factureerbare API&#39;s voor AEM Forms op JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
 * [Een transactie voor aangepaste component-API&#39;s opnemen](/help/forms/using/record-transaction-custom-component-jee.md)
 
-**Transactierapportage voor AEM Forms op OSGi**
+**Rapportering van de Transactie voor AEM Forms op OSGi**
 
 * [Transactierapporten voor AEM Forms op OSGi](/help/forms/using/transaction-reports-overview.md)
 * [Transactierapporten voor AEM Forms weergeven en begrijpen op OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)

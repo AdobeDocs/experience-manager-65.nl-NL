@@ -24,12 +24,12 @@ Er wordt een lancering gecreeerd zodat u veranderingen klaar voor toekomstige pu
 
 >[!NOTE]
 >
->De theorie achter de lanceringen wordt in detail beschreven onder [Starten](/help/sites-authoring/launches.md) in de standaardontwerpdocumentatie.
+>De theorie achter lanceringen wordt beschreven in detail onder [ Lanceringen ](/help/sites-authoring/launches.md) in de standaard auteursdocumentatie.
 >
->De informatie specifiek voor het gebruiken van lanceringen in klassieke UI kan in de volgende documentatie samen worden gevonden [Starten maken](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Starten bewerken](/help/sites-classic-ui-authoring/classic-launches-editing.md), en [Starten promoten](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>De informatie specifiek voor het gebruiken van lanceringen in klassieke UI kan in de volgende documentatie samen met [ worden gevonden Creërend Lanceringen ](/help/sites-classic-ui-authoring/classic-launches-creating.md), [ het Uitgeven Lancjes ](/help/sites-classic-ui-authoring/classic-launches-editing.md), en [ Bevorderend Lanceringen ](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Meerdere bronvertakkingen voor een lancering is niet mogelijk in klassieke UI.
 
-De Launches-console kan rechtstreeks worden geopend met [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+De console van Lanceringen kan direct met [ http://localhost:4502/libs/launches/content/admin.html ](http://localhost:4502/libs/launches/content/admin.html) worden betreden

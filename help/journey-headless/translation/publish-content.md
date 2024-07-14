@@ -1,5 +1,5 @@
 ---
-title: Vertaalde inhoud publiceren
+title: Publish Vertaalde inhoud
 description: Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de inhoud wordt bijgewerkt.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 ---
 
-# Vertaalde inhoud publiceren {#publish-content}
+# Publish Vertaalde inhoud {#publish-content}
 
 Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de inhoud wordt bijgewerkt.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop [Inhoud vertalen,](configure-connector.md) u hebt geleerd hoe u AEM vertaalprojecten kunt gebruiken om uw inhoud zonder kop te vertalen. Nu moet u:
+In het vorige document van de AEM hoofdloze vertaalreis, [ vertaal Inhoud, ](configure-connector.md) u leerde hoe te om AEM Vertaalprojecten te gebruiken om uw inhoud zonder kop te vertalen. Nu moet u:
 
 * Begrijp wat een vertaalproject is.
 * U kunt vertaalprojecten maken.
@@ -34,19 +34,19 @@ Dit document helpt u te begrijpen hoe u inhoud zonder kop in AEM kunt publiceren
 * Zorg dat u weet hoe u uw vertaalde inhoud publiceert.
 * Een voortdurend updatemodel voor uw vertaalde inhoud kunnen implementeren.
 
-## Auteur-publicatiemodel AEM {#author-publish}
+## Auteur-Publish-model AEM {#author-publish}
 
-Voordat u de inhoud publiceert, is het verstandig om AEM publicatiemodel te begrijpen. In vereenvoudigde termen verdeelt AEM gebruikers van het systeem in twee groepen.
+Voordat u de inhoud publiceert, is het raadzaam om AEM schrijverpublicatiemodel te begrijpen. In vereenvoudigde termen verdeelt AEM gebruikers van het systeem in twee groepen.
 
 1. Degenen die de inhoud en het systeem maken en beheren
 1. Degenen die de inhoud van het systeem consumeren
 
 AEM wordt daarom fysiek in twee gevallen gescheiden.
 
-1. De **auteur** -instantie is het systeem waarop auteurs en beheerders van inhoud werken om inhoud te maken en te beheren.
-1. De **publish** het systeem dat de inhoud aan de consumenten levert , is bijvoorbeeld het systeem .
+1. De **auteur** instantie is het systeem waar de inhoudsauteurs en de beheerders werken om inhoud tot stand te brengen en te beheren.
+1. **publiceer** instantie is het systeem dat de inhoud aan de consumenten levert.
 
-Nadat inhoud op de instantie van de auteur is gemaakt, moet deze naar de instantie publish worden overgedragen om de inhoud beschikbaar te maken voor consumptie. Het proces waarbij van de auteur naar publicatie wordt overgeschakeld, wordt **publicatie**.
+Nadat inhoud op de instantie van de auteur is gemaakt, moet deze naar de instantie publish worden overgedragen om de inhoud beschikbaar te maken voor consumptie. Het proces om van auteur over te brengen om te publiceren wordt genoemd **publicatie**.
 
 ## Uw vertaalde inhoud publiceren {#publishing}
 
@@ -66,16 +66,16 @@ De eenvoudigste manier om de vertalingen te publiceren is aan de omslag van proj
 
 Onder dit pad hebt u submappen voor elke vertaaltaal en kunt u kiezen welke taal u wilt publiceren.
 
-1. Ga naar **Navigatie** > **Activa** > **Bestanden** en opent u de projectmap.
+1. Ga naar **Navigatie** > **Assets** > **Dossiers** en open de projectomslag.
 1. Hier ziet u de hoofdmap van de taal en alle andere taalmappen. Selecteer de gelokaliseerde taal of talen die u wilt publiceren.
-   ![Taalmap selecteren](assets/select-language-folder.png)
-1. Klikken **Publicatie beheren**.
-1. In de **Publicatie beheren** venster, zorg ervoor dat **Publiceren** wordt automatisch geselecteerd onder **Handeling** en dat **Nu** is geselecteerd onder **Planning**. Klik op **Next**.
-   ![Publicatieopties beheren](assets/manage-publication-options.png)
-1. In het volgende **Publicatie beheren** bevestigen dat het juiste pad of de juiste paden is of zijn geselecteerd. Klikken **Publiceren**.
-   ![Publicatiebereik beheren](assets/manage-publication-scope.png)
+   ![ Uitgezochte taalomslag ](assets/select-language-folder.png)
+1. Klik **leiden Publicatie**.
+1. In het **beheer Publicatie** venster, zorg ervoor dat **Publish** automatisch onder **Actie** wordt geselecteerd en dat **** nu onder **het Plannen** wordt geselecteerd. Klik op **Next**.
+   ![ beheer publicatieopties ](assets/manage-publication-options.png)
+1. In het volgende **leidt het venster van de Publicatie**, bevestig dat de juiste weg(en) wordt/worden geselecteerd. Klik **Publish**.
+   ![ beheer publicatiewerkingsgebied ](assets/manage-publication-scope.png)
 1. AEM bevestigt de publicatieactie met een pop-upbericht boven aan het scherm.
-   ![Bronnen gepubliceerde banner](assets/resources-published-message.png)
+   ![ Van Middelen gepubliceerde banner ](assets/resources-published-message.png)
 
 Uw vertaalde inhoud zonder kop is nu gepubliceerd! Het kan nu door uw headless diensten worden betreden en worden verbruikt.
 
@@ -83,7 +83,7 @@ Uw vertaalde inhoud zonder kop is nu gepubliceerd! Het kan nu door uw headless d
 >
 >U kunt meerdere items selecteren (dat wil zeggen meerdere taalmappen) wanneer u publiceert om meerdere vertalingen tegelijk te publiceren.
 
-Er zijn extra opties wanneer het publiceren van uw inhoud, zoals het plannen van een publicatietijd, die buiten het werkingsgebied van deze reis zijn. Zie de [Aanvullende bronnen](#additional-resources) aan het einde van het document voor meer informatie.
+Er zijn extra opties wanneer het publiceren van uw inhoud, zoals het plannen van een publicatietijd, die buiten het werkingsgebied van deze reis zijn. Zie de [ Extra sectie van Middelen ](#additional-resources) aan het eind van het document voor meer informatie.
 
 ## Uw vertaalde inhoud bijwerken {#updating-translations}
 
@@ -95,21 +95,21 @@ Het proces verschilt echter enigszins als u ervoor kiest om uw vertaalproject au
 
 ### Een automatisch gemaakt vertaalproject bijwerken {#updating-automatic-project}
 
-1. Navigeren naar **Navigatie** > **Activa** > **Bestanden**. Onthoud dat inhoud zonder kop in AEM wordt opgeslagen als elementen die Content Fragments worden genoemd.
-1. Selecteer de taalwortel van uw project. In dit geval: `/content/dam/wknd/en` is geselecteerd.
-1. Klik op de railkiezer en geef de **Verwijzingen** deelvenster.
-1. Klikken **Taalkopieën**.
-1. Controleer de **Taalkopieën** selectievakje.
-1. De sectie uitbreiden **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
-1. In de **Project** vervolgkeuzelijst, selecteren **Toevoegen aan een bestaand vertaalproject**.
-1. In de **Bestaand vertaalproject** selecteert u het project dat u voor de eerste vertaling hebt gemaakt.
-1. Klikken **Start**.
+1. Navigeer aan **Navigatie** > **Assets** > **Dossiers**. Onthoud dat inhoud zonder kop in AEM wordt opgeslagen als elementen die Content Fragments worden genoemd.
+1. Selecteer de taalwortel van uw project. In dit geval is `/content/dam/wknd/en` geselecteerd.
+1. Klik de spoorselecteur en toon het **paneel van Verwijzingen**.
+1. Klik **Exemplaren van de Taal**.
+1. Controleer het **checkbox van de Kopieën van de Taal 0}.**
+1. Breid de sectie **Exemplaren van de Taal van de Update** bij de bodem van het verwijzingenpaneel uit.
+1. In **drop-down van het Project**, uitgezocht **voeg aan een bestaand Vertaal Project** toe.
+1. In het **Bestaande drop-down Project van de Vertaling**, selecteer het project dat voor de aanvankelijke vertaling wordt gecreeerd.
+1. Klik **Begin**.
 
-![Items toevoegen aan bestaand vertaalproject](assets/add-to-existing-project.png)
+![ voegt punten aan bestaand vertaalproject ](assets/add-to-existing-project.png) toe
 
 De inhoud wordt toegevoegd aan het bestaande vertaalproject. Het vertaalproject weergeven:
 
-1. Navigeren naar **Navigatie** > **Projecten**.
+1. Navigeer aan **Navigatie** > **Projecten**.
 1. Klik op het project dat u zojuist hebt bijgewerkt.
 1. Klik op de taal of een van de talen die u hebt bijgewerkt.
 
@@ -123,37 +123,37 @@ You see that a new job card was added to the project. In this example, another S
 
 U kunt zien dat de statistieken op de nieuwe kaart (aantal activa en inhoudsfragmenten) verschillend zijn. Dit komt omdat AEM herkent wat er is veranderd sinds de laatste vertaling en alleen de inhoud bevat die moet worden vertaald. Dit omvat het opnieuw vertalen van bijgewerkte inhoud en het voor het eerst vertalen van nieuwe inhoud.
 
-Vanaf dit punt kunt u [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
+Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel deed.](translate-content.md#using-translation-project)
 
 ### Een handmatig gemaakt vertaalproject bijwerken {#updating-manual-project}
 
 Als u een vertaling wilt bijwerken, kunt u een nieuwe taak toevoegen aan uw bestaande project die verantwoordelijk is voor het vertalen van de bijgewerkte inhoud.
 
-1. Navigeren naar **Navigatie** > **Projecten**.
+1. Navigeer aan **Navigatie** > **Projecten**.
 1. Klik op het project dat u moet bijwerken.
-1. Klik op de knop **Toevoegen** boven in het venster.
-1. In de **Tegel toevoegen** venster, klikt u op **Vertaaltaak** en vervolgens **Verzenden**.
+1. Klik **toevoegen** knoop bij de bovenkant van het venster.
+1. In **voeg het venster van de Tegel** toe, klik **VertaalBaan** en dan **voorlegt**.
 
-   ![Tegel toevoegen](assets/add-translation-job-tile.png)
+   ![ voeg tegel ](assets/add-translation-job-tile.png) toe
 
-1. Klik op de kaart van de nieuwe vertaaltaak op de knop Chevron boven aan de kaart en selecteer **Doel bijwerken** om de doeltaal van de nieuwe baan te bepalen.
+1. Op de kaart van de nieuwe vertaalbaan, klik de chevron knoop bij de bovenkant van de kaart, en selecteer **Doel van de Update** om de doeltaal van de nieuwe baan te bepalen.
 
-   ![Doel bijwerken](assets/update-target.png)
+   ![ doel van de Update ](assets/update-target.png)
 
-1. In de **Doeltaal selecteren** , gebruikt u de vervolgkeuzelijst om de taal te selecteren en klikt u op **Gereed**.
+1. In de **Uitgezochte Taal van het Doel** dialoog, gebruik drop-down om de taal te selecteren en **te klikken Gedaan**.
 
-   ![Doeltaal selecteren](assets/select-target-language.png)
+   ![ Uitgezochte doeltaal ](assets/select-target-language.png)
 
 1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, klikt u op de knop voor de weglatingsteken onder aan de werkkaart om de details van de taak weer te geven.
-1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Inhoud aan de taak toevoegen door te tikken of op de knop **Toevoegen** en het gebruiken van wegbrowser [zoals u dat eerder deed toen u het vertaalproject oorspronkelijk creeerde.](translate-content.md#manually-creating)
+1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Voeg inhoud aan de baan toe door te tikken of te klikken **voeg** knoop toe en gebruikend wegbrowser [ zoals u voordien toen het creëren van het vertaalproject.](translate-content.md#manually-creating)
 
 >[!TIP]
 >
 >De krachtige filters van de padbrowser kunnen ook weer nuttig zijn om alleen de inhoud te zoeken die is bijgewerkt.
 >
->Meer informatie over de padbrowser vindt u in het dialoogvenster [sectie aanvullende bronnen.](#additional-resources)
+>U kunt meer over wegbrowser in de [ extra middelensectie leren.](#additional-resources)
 
-Vanaf dit punt kunt u [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
+Van dit punt, begint u [ en beheert uw vertaalbaan enkel aangezien u origineel deed.](translate-content.md#using-translation-project)
 
 ## Einde van de reis? {#end-of-journey}
 
@@ -164,11 +164,11 @@ Gefeliciteerd! U hebt de reis zonder kop voltooid! Nu moet u:
 * Begrijp AEM vertaalfuncties en hoe deze verwant zijn aan inhoud zonder kop.
 * De mogelijkheid hebben om uw eigen inhoud zonder kop te vertalen.
 
-U kunt nu uw eigen inhoud zonder kop in AEM vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
+U kunt nu uw eigen inhoud zonder kop in AEM vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Controle uit enkele extra middelen beschikbaar in de [ Extra sectie van Middelen ](#additional-resources) om meer over de eigenschappen te leren u in deze reis zag.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Vertaalprojecten beheren](/help/sites-administering/tc-manage.md) - Leer de details van vertaalprojecten en aanvullende functies zoals workflows voor menselijke vertaling en meertalige projecten.
-* [Ontwerpconcepten](/help/sites-authoring/author.md) - Meer informatie over de auteur en het publicatiemodel van AEM. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
-* [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md) - Meer informatie over de extra functies die beschikbaar zijn wanneer u inhoud publiceert. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
-* [Ontwerpomgeving en -gereedschappen](/help/sites-authoring/author-environment-tools.md#path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.
+* [ het Leiden de Projecten van de Vertaling ](/help/sites-administering/tc-manage.md) - leer de details van vertaalprojecten en extra eigenschappen zoals menselijke vertaalwerkschema&#39;s en meertalige projecten.
+* [ Authoring concepten ](/help/sites-authoring/author.md) - Leer meer over de auteur en publiceer het model van AEM. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [ het Publiceren Pagina&#39;s ](/help/sites-authoring/publishing-pages.md) - leer over de extra eigenschappen beschikbaar wanneer het publiceren van inhoud. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [ Authoring Milieu en Hulpmiddelen ](/help/sites-authoring/author-environment-tools.md#path-selection) - AEM verstrekt diverse mechanismen om uw inhoud met inbegrip van robuuste wegbrowser te organiseren en uit te geven.

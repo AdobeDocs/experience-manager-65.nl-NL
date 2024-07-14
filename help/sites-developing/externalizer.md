@@ -19,74 +19,74 @@ ht-degree: 0%
 
 # URL&#39;s extern maken{#externalizing-urls}
 
-In Adobe Experience Manager (AEM) **ExternalAlizer** is de dienst OSGI die u programmatically een middelweg laat omzetten (bijvoorbeeld `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
+In Adobe Experience Manager (AEM), is **externalizer** de dienst OSGI die u programmatically een middelweg (bijvoorbeeld, `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld, `https://www.mycompany.com/path/to/my/page`) laat omzetten door de weg met pre-gevormde DNS te bevestigen.
 
 Omdat een instantie zijn uiterlijk zichtbare URL niet kan kennen als het achter een Weblaag loopt, en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
-Deze pagina verklaart hoe te om te vormen **ExternalAlizer** en hoe deze te gebruiken. Zie voor meer informatie de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Deze pagina verklaart hoe te om de **dienst te vormen Externalzer** en hoe te om het te gebruiken. Voor meer details, zie [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## De service ExternalAlizer configureren {#configuring-the-externalizer-service}
 
-De **ExternalAlizer** De dienst laat u veelvoudige domeinen centraal bepalen die aan programmatically prefixmiddelwegen kunnen worden gebruikt. Elk domein wordt geïdentificeerd door een unieke naam die wordt gebruikt om programmatically naar het domein te verwijzen.
+De **ExternalAlizer** dienst laat u veelvoudige domeinen centraal bepalen die aan programmatically voorvoegselmiddelwegen kunnen worden gebruikt. Elk domein wordt geïdentificeerd door een unieke naam die wordt gebruikt om programmatically naar het domein te verwijzen.
 
-Een domeintoewijzing definiëren voor de **ExternalAlizer** service:
+Om een domeinafbeelding voor de **Externalalizer** dienst te bepalen:
 
-1. Navigeer naar configuratiebeheer via **Gereedschappen** vervolgens **Webconsole** of voer in:
+1. Navigeer aan de configuratiemanager via **Hulpmiddelen**, dan **Console van het Web**, of ga binnen:
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. Klikken **Day CQ Link ExternalAlizer** om het dialoogvenster Configuratie te openen.
+1. Klik **Dag CQ Verbinding Externalzer** om de doos van de configuratiedialoog te openen.
 
    >[!NOTE]
    >
    >De directe koppeling naar de configuratie is `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-   ![aem-externalizer-01](assets/aem-externalizer-01.png)
+   ![ aem-externalizer-01 ](assets/aem-externalizer-01.png)
 
-1. Een **Domeinen** toewijzing: een afbeelding bestaat uit een unieke naam die in de code kan worden gebruikt om naar het domein, een spatie en het domein te verwijzen:
+1. Bepaal de afbeelding van a **Domeinen**: een afbeelding bestaat uit een unieke naam die in de code kan worden gebruikt om naar het domein, een ruimte, en het domein te verwijzen:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
    Waarbij:
 
-   * **regeling** is http of https, maar kan ook ftp zijn, enzovoort.
+   * **regeling** is http of https, maar kan ook ftp, etc. zijn.
 
       * gebruik https om https-koppelingen af te dwingen, indien gewenst
       * wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
 
    * **server** is de gastheernaam (kan een domeinnaam of ip adres zijn).
-   * **poort** (optioneel) is het poortnummer.
-   * **contextpad** (optioneel) wordt alleen ingesteld als AEM is geïnstalleerd als een webapp onder een ander contextpad.
+   * **haven** (facultatief) is het havenaantal.
+   * **contextpath** (facultatief) wordt slechts geplaatst als AEM als webapp onder een verschillende contextweg geïnstalleerd is.
 
    Bijvoorbeeld: `production https://my.production.instance`
 
    De volgende toewijzingsnamen zijn vooraf gedefinieerd en moeten worden ingesteld omdat AEM op deze namen vertrouwt:
 
    * `local` - de lokale instantie
-   * `author` - DNS van het ontwerpsysteem
-   * `publish` - het publiek met de website DNS geconfronteerd
+   * `author` - de DNS van het ontwerpsysteem
+   * `publish` - de openbare naar voren gerichte website DNS
 
    >[!NOTE]
    >
-   >Met een aangepaste configuratie kunt u een categorie toevoegen, zoals `production`, `staging`, of zelfs externe niet-AEM systemen zoals `my-internal-webservice`. Het is handig om hardcodering van dergelijke URL&#39;s op verschillende plaatsen in de codebase van een project te voorkomen.
+   >Met een aangepaste configuratie kunt u een categorie toevoegen, zoals `production` , `staging` of zelfs externe niet-AEM systemen, zoals `my-internal-webservice` . Het is handig om hardcodering van dergelijke URL&#39;s op verschillende plaatsen in de codebase van een project te voorkomen.
 
-1. Klikken **Opslaan** om uw wijzigingen op te slaan.
+1. Klik **sparen** om uw veranderingen te bewaren.
 
 >[!NOTE]
 >
->Adobe beveelt aan [de configuratie toevoegen aan de repository](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
+>De Adobe adviseert dat u [ de configuratie aan de bewaarplaats ](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository) toevoegt.
 
 ### De service ExternalAlizer gebruiken {#using-the-externalizer-service}
 
-In deze sectie worden enkele voorbeelden getoond van de manier waarop **ExternalAlizer** de dienst kan worden gebruikt:
+Deze sectie toont een paar voorbeelden van hoe de **** dienst Externalzer kan worden gebruikt:
 
-1. **Om de dienst Externalzer in JSP te krijgen:**
+1. **om de dienst Externalzer in JSP te krijgen:**
 
    ```java
    Externalizer externalizer = resourceResolver.adaptTo(Externalizer.class);
    ```
 
-1. **Een pad extern maken met het domein &#39;publish&#39;:**
+1. **om een weg met het &quot;te externaliseren&quot;domein:**
 
    ```java
    String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
@@ -100,7 +100,7 @@ In deze sectie worden enkele voorbeelden getoond van de manier waarop **External
 
    * `https://www.website.com/contextpath/my/page.html`
 
-1. **Een pad extern maken met het domein &#39;auteur&#39;:**
+1. **om een weg met het &quot;auteur&quot;domein externaliseren:**
 
    ```java
    String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
@@ -114,7 +114,7 @@ In deze sectie worden enkele voorbeelden getoond van de manier waarop **External
 
    * `https://author.website.com/contextpath/my/page.html`
 
-1. **Een pad extern maken met het &#39;lokale&#39; domein:**
+1. **om een weg met het &quot;lokale&quot;domein externaliseren:**
 
    ```java
    String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
@@ -128,4 +128,4 @@ In deze sectie worden enkele voorbeelden getoond van de manier waarop **External
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Meer voorbeelden vindt u in het gedeelte [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+1. U kunt meer voorbeelden in [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html) vinden.

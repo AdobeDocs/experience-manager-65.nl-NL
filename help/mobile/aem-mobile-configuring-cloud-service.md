@@ -20,19 +20,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Dit document maakt deel uit van het [Aan de slag met Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, een aanbevolen beginpunt voor AEM Mobile-referentie.
+>Dit document maakt deel uit van [ Begonnen het Worden met Mobiele (AEM) Gids van Adobe Experience Manager ](/help/mobile/getting-started-aem-mobile.md), een geadviseerd uitgangspunt voor de verwijzing van AEM Mobile.
 
 Er zijn verschillende stappen die moeten worden samengevoegd voordat inhoudsauteurs gerichte inhoud kunnen gaan genereren voor mobiele apps: gebruikers en groepen krijgen de juiste machtigingen, maken cloudservices, configureren de toepassing voor de activiteit en genereren ten slotte de inhoud.
 
-De aanname dat de [AEM Mobile Hybride Reference Application](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) is geïmplementeerd en toegankelijk via het AEM Mobile-dashboard.
+De veronderstelling die vooruit gaat is dat de [ Hybride Toepassing van de Verwijzing van AEM Mobile ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met succes is opgesteld en toegankelijk door middel van het dashboard van AEM Mobile.
 
 ## Machtigingen {#permissions}
 
-Gebruikers die toegang tot de personalisatieconsole nodig hebben, moeten deel uitmaken van de `target-activity-authors` groep. Voorgesteld wordt dat als onderdeel van de gebruikersinstellingen en groepsinstellingen de doelgroep-activiteit-groep moet worden toegevoegd aan de groep met apps-beheerders. Door de doel-activiteit-auteursgroep toe te voegen, staat dit gebruikers de capaciteit toe om de ingang van het menu van de Navigatie van de Aanpassing te zien.
+Gebruikers die toegang tot de aanpassingsconsole nodig hebben, moeten deel uitmaken van de `target-activity-authors` -groep. Voorgesteld wordt dat als onderdeel van de gebruikersinstellingen en groepsinstellingen de doelgroep-activiteit-groep moet worden toegevoegd aan de groep met apps-beheerders. Door de doelgroep-activiteit-auteurs toe te voegen, staat dit gebruikers de capaciteit toe om de ingang van het de navigatiemenu van Personalization te zien.
 
 Het vergeten om de gebruikers of de groepen toe te voegen die u toegang tot de verpersoonlijking Admin Console aan de doel-activiteit-auteursgroep wilt hebben verhindert gebruikers de verpersoonlijkingsconsole te zien.
 
@@ -44,11 +44,11 @@ Om gerichte inhoud te krijgen die voor mobiele toepassingen werkt, zijn er twee 
 
 Zoek in het AEM Mobile-dashboard de Cloud Servicen voor beheren op en klik op +.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![ chlimage_1-8 ](assets/chlimage_1-8.png)
 
 Selecteer de &quot;Adobe Target&quot;-cloudservicekaart van de wizard Cloud Service toevoegen en klik op Volgende.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![ chlimage_1-9 ](assets/chlimage_1-9.png)
 
 Van Uitgezocht een drop-down Configuratie, kunt u of een configuratie tot stand brengen of van bestaande selecteren. Als u een configuratie wilt maken, selecteert u &quot;Configuratie maken&quot; in het vervolgkeuzemenu. Voer een titel in voor de doelconfiguratie. Voer uw clientcode, e-mail en wachtwoord in die aan uw Target-account zijn gekoppeld. Als u de waarden voor deze velden niet kent, neemt u contact op met de ondersteuning van Adobe Target. Klik op de knop &quot;Verifiëren&quot; om de referenties te valideren. Zodra geverifieerd, klik de Submit knoop om de wolkendienst tot stand te brengen.
 
@@ -56,7 +56,7 @@ De cloudservice die wordt gemaakt, wordt automatisch gekoppeld aan de mobiele to
 
 Nadat de wizard is voltooid, bevat de tegel Cloud Service beheren de doelcloudservice, maar bevat deze een waarschuwing over een ontbrekende account voor de mobiele service van de Adobe.
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![ chlimage_1-10 ](assets/chlimage_1-10.png)
 
 ## Adobe mobiele service {#adobe-mobile-service}
 
@@ -64,9 +64,9 @@ Het is noodzakelijk om een rekening van de Diensten van de Adobe Mobiele (AMS) a
 
 ### Clientcode {#client-code}
 
-Als u zich wilt aanmelden bij de AMS-services gaat u naar [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)selecteert u de mobiele toepassing en klikt u op de instellingen. Zoek het veld SDK-doelopties en plaats de clientcode in het veld en klik op Opslaan.
+Om aan login aan de diensten van AMS bezoek [ https://mobilemarketing.adobe.com ](https://mobilemarketing.adobe.com/), selecteer de mobiele toepassing, en klik de montages. Zoek het veld SDK-doelopties en plaats de clientcode in het veld en klik op Opslaan.
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![ chlimage_1-11 ](assets/chlimage_1-11.png)
 
 Nu de clientcode aan de mobiele toepassing is gekoppeld, worden de instellingen voor de service-instellingen via het bestand ADBMobileConfig.json geleverd wanneer de AMS-cloudservice via het mobiele dashboard van de Adobe wordt geconfigureerd.
 
@@ -74,23 +74,23 @@ Nu de clientcode aan de mobiele toepassing is gekoppeld, worden de instellingen 
 
 Nu AMS is geconfigureerd, is het tijd om de mobiele toepassing te koppelen in het mobiele dashboard van de Adobe. Zoek in het AEM Mobile-dashboard de Cloud Servicen voor beheren op en klik op +.
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![ chlimage_1-12 ](assets/chlimage_1-12.png)
 
 Selecteer de Adobe Mobile Services-kaart en klik op Volgende.
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![ chlimage_1-13 ](assets/chlimage_1-13.png)
 
-Van de Create of Uitgezochte tovenaar stap, selecteer de Mobiele drop-down Dienst, en selecteer de Create ingang van de Configuratie. Geef een titel, bedrijf, gebruikersnaam en wachtwoord op en selecteer het juiste datacenter. Als u deze waarden niet kent, contacteer uw beheerder van de Dienst van de Adobe Mobiele om hen te verkrijgen. Klik op **Verifiëren**. Het verificatieproces gaat naar AMS en verifieert de referenties voor de account. Na een geslaagde validatie wordt een lijst met mobiele toepassingen gevuld. Hierin selecteert u de bijbehorende mobiele toepassing in het vervolgkeuzemenu. Klik op de knop Verzenden om de wizard te voltooien. Het proces kan enige tijd duren om de configuratiegegevens en eventuele bijbehorende analyses voor de toepassing te verkrijgen. Klik op **Gereed** van het modaal om terug naar het Mobiele Dashboard van de Adobe te keren.
+Van de Create of Uitgezochte tovenaar stap, selecteer de Mobiele drop-down Dienst, en selecteer de Create ingang van de Configuratie. Geef een titel, bedrijf, gebruikersnaam en wachtwoord op en selecteer het juiste datacenter. Als u deze waarden niet kent, contacteer uw beheerder van de Dienst van de Adobe Mobiele om hen te verkrijgen. Nadat alle gebieden worden gevuld, klik **verifieer**. Het verificatieproces gaat naar AMS en verifieert de referenties voor de account. Na een geslaagde validatie wordt een lijst met mobiele toepassingen gevuld. Hierin selecteert u de bijbehorende mobiele toepassing in het vervolgkeuzemenu. Klik op de knop Verzenden om de wizard te voltooien. Het proces kan enige tijd duren om de configuratiegegevens en eventuele bijbehorende analyses voor de toepassing te verkrijgen. Nadat het proces volledig is, klik **Gedaan** van modaal om terug naar het Mobiele Dashboard van de Adobe terug te keren.
 
 Als u terugkeert naar het mobiele dashboard, bevat de titel Cloud Servicen beheren de AMS-cloudservice. Bovendien wordt de tegel Metriek analyseren gevuld met levenscyclusrapporten.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
 ## Handlers voor het synchroniseren van doelinhoud {#target-content-sync-handlers}
 
-Om inhoud aan het apparaat van de gebruiker te leveren, wordt de inhoud geproduceerd door de aanbiedingen terug te geven die door AEM inhoudsauteurs worden gecreeerd. Voor het afhandelen van de rendering van doelaanbiedingen is er een nieuwe handler voor inhoudssynchronisatie die de aanbiedingen verwerkt. Als u de Hybride Reference Application als voorbeeld gebruikt, bevat het en-inhoudspakket (english) de ContentSyncConfig met een [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) handler. De volgende stap is van cruciaal belang voor het renderen van aanbiedingen voor het apparaat. De handler mobileappoffers heeft een padeigenschap die het pad naar de personalisatieactiviteit identificeert die voor de toepassing wordt gebruikt.
+Om inhoud aan het apparaat van de gebruiker te leveren, wordt de inhoud geproduceerd door de aanbiedingen terug te geven die door AEM inhoudsauteurs worden gecreeerd. Voor het afhandelen van de rendering van doelaanbiedingen is er een nieuwe handler voor inhoudssynchronisatie die de aanbiedingen verwerkt. Gebruikend de Hybride Toepassing van de Verwijzing als steekproef, bevat het en (Engelse) inhoudspakket ContentSyncConfig met a [ mobileappoffers ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) manager. De volgende stap is van cruciaal belang voor het renderen van aanbiedingen voor het apparaat. De handler mobileappoffers heeft een padeigenschap die het pad naar de personalisatieactiviteit identificeert die voor de toepassing wordt gebruikt.
 
-Als er bijvoorbeeld een activiteit is op */content/campagnes/hybridref*, kopieert u dit pad en plakt u het als waarde in de *pad* eigenschap van de handler mobileappoffers
+Bijvoorbeeld, als er een activiteit bij *is/content/campagnes/hybridref*, kopieer deze weg en kleef het als waarde aan het *weg* bezit van de mobileappoffers manager.
 
 Voor de Hybride Toepassing van de Verwijzing, zijn er twee mobileappoffers managers één voor dev en één voor producties.
 
@@ -98,7 +98,7 @@ Nadat het activiteitenpad is ingesteld in de padeigenschap van de handler mobile
 
 ### Rendermodus {#render-mode}
 
-De handler mobileappoffers is anders geconfigureerd voor publicatie- en ontwikkelinstellingen. Voor publicatie-instellingen wordt een eigenschap aangeroepen *renderMode* met een waarde van *publish* ingesteld op de cq:ContentSyncConfig-node. De handler mobileappoffers verwijst naar de renderMode en bewerkt de mbox-id die wordt gemaakt, als deze is ingesteld op publiceren. Standaard wordt in vakken die AEM maakt, een waarde —auteur toegevoegd aan de id van het mbox. Hieruit blijkt dat de activiteit niet is gepubliceerd en de niet-gepubliceerde campagne voor het indienen van voorstellen moet gebruiken.
+De handler mobileappoffers is anders geconfigureerd voor publicatie- en ontwikkelinstellingen. Voor publiceer montages is er een bezit genoemd *renderMode* met een waarde van *publiceert* geplaatst op cq:ContentSyncConfig knoop. De handler mobileappoffers verwijst naar de renderMode en bewerkt de mbox-id die wordt gemaakt, als deze is ingesteld op publiceren. Standaard wordt in vakken die AEM maakt, een waarde —auteur toegevoegd aan de id van het mbox. Hieruit blijkt dat de activiteit niet is gepubliceerd en de niet-gepubliceerde campagne voor het indienen van voorstellen moet gebruiken.
 
 Wanneer inhoud wordt gefaseerd via het mobiele dashboard van de Adobe, wordt gefaseerde inhoud beschouwd als inhoud die klaar is voor productie en wordt deze weergegeven via de niet-dev Content Sync Config. Op deze manier wordt de auteur —verwijderd van alle id&#39;s van het selectievakje en wordt verwacht dat een gepubliceerde activiteit beschikbaar is op de doelserver. Controleer voordat u inhoud met werkgebied test of de activiteit is gepubliceerd.
 

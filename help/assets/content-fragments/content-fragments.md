@@ -14,11 +14,11 @@ ht-degree: 3%
 
 # Werken met inhoudsfragmenten {#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) kunt u met Inhoudsfragmenten ontwerpen, maken, curven en [pagina-onafhankelijke inhoud publiceren](/help/sites-authoring/content-fragments.md). Hiermee kunt u inhoud voorbereiden en gebruiken op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop.
+Met Adobe Experience Manager (AEM), laten de Fragmenten van de Inhoud u, pagina-onafhankelijke inhoud ](/help/sites-authoring/content-fragments.md) ontwerpen tot stand brengen, leiden en [ publiceren. Hiermee kunt u inhoud voorbereiden en gebruiken op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop.
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 
-* Zij zijn gebaseerd op een [Inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), waarin een vooraf gedefinieerde structuur voor het resulterende fragment wordt gedefinieerd.
+* Zij zijn gebaseerd op het Model van het Fragment van de a [ Inhoud ](/help/assets/content-fragments/content-fragments-models.md), dat vooraf een structuur voor het resulterende fragment bepaalt.
 * De structuur kan liggen tussen:
    * Basis
       * Bijvoorbeeld een tekstveld met één regel tekst.
@@ -38,23 +38,23 @@ Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik w
 Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren, onderhouden en gebruiken van uw inhoudsfragmenten:
 
 * [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - het inschakelen, maken en definiëren van uw modellen
-* [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - maak uw inhoudsfragmenten; bewerk, publiceer en verwijs vervolgens naar
-* [Variaties - Fragmentinhoud ontwerpen](/help/assets/content-fragments/content-fragments-variations.md) - de fragmentinhoud ontwerpen en variaties van het stramien maken
-* [Markering](/help/assets/content-fragments/content-fragments-markdown.md) - markeringssyntaxis gebruiken voor uw fragment
-* [Gekoppelde inhoud gebruiken](/help/assets/content-fragments/content-fragments-assoc-content.md) - gekoppelde inhoud toevoegen
-* [Metagegevens - Fragmenteigenschappen](/help/assets/content-fragments/content-fragments-metadata.md) - de fragmenteigenschappen weergeven en bewerken
-* Gebruiken [Inhoudsfragmenten, samen met GraphQL, voor het leveren van inhoud](/help/assets/content-fragments/content-fragments-graphql.md) voor gebruik in uw toepassingen. Om dit te helpen, kunt u een voorvertoning weergeven [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [ Modellen van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) - toelatend, creërend, en bepalend uw modellen
+* [ het Leiden de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) - creeer uw inhoudsfragmenten; dan geef, publiceer, en verwijzing uit
+* [ Variaties - het Authoring Inhoud van het Fragment ](/help/assets/content-fragments/content-fragments-variations.md) - auteur de fragmentinhoud en creeer variaties van de Meester
+* [ Markering ](/help/assets/content-fragments/content-fragments-markdown.md) - het gebruiken van prijsdalingssyntaxis voor uw fragment
+* [ Gebruikend Bijbehorende Inhoud ](/help/assets/content-fragments/content-fragments-assoc-content.md) - toevoegend bijbehorende inhoud
+* [ Meta-gegevens - de Eigenschappen van het Fragment ](/help/assets/content-fragments/content-fragments-metadata.md) - het bekijken van en het uitgeven van de fragmenteigenschappen
+* Gebruik [ de Fragmenten van de Inhoud, samen met GraphQL, om inhoud ](/help/assets/content-fragments/content-fragments-graphql.md) voor gebruik in uw toepassingen te leveren. Om met dit te helpen, kunt u voorproef [ output JSON ](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
 >Deze pagina&#39;s kunnen worden gelezen met:
 >
->* [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md).
+>* [ het Authoring van de Pagina met de Fragmenten van de Inhoud ](/help/sites-authoring/content-fragments.md).
 >* [Contentfragmenten aanpassen en uitbreiden](/help/sites-developing/customizing-content-fragments.md)
 >* [Contentfragmenten die componenten voor rendering configureren](/help/sites-developing/content-fragments-config-components-rendering.md)
 >* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/assets-api-content-fragments.md)
->* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+>* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
 
@@ -76,15 +76,15 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillend
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** Er zijn verschillende functies binnen AEM:
+>**de Fragmenten van de Inhoud** en **[Fragmenten van de Ervaring](/help/sites-authoring/experience-fragments.md)** zijn verschillende eigenschappen binnen AEM:
 >
->* **Inhoudsfragmenten** Dit zijn redactionele inhoud die kan worden gebruikt voor toegang tot gestructureerde gegevens zoals teksten, cijfers en datums. Het zijn pure inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out.
+>* **de Fragmenten van de Inhoud** zijn redactionele inhoud die kan worden gebruikt om tot gestructureerde gegevens met inbegrip van teksten, aantallen, en data, onder anderen toegang te hebben. Het zijn pure inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out.
 >
->* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
+>* **de Fragmenten van de Ervaring** zijn volledig opgemaakt inhoud; een fragment van een Web-pagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Zie voor meer informatie [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -126,47 +126,47 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 
 Inhoudsfragmenten zijn:
 
-* Opgeslagen als **Activa**:
+* Opgeslagen als **Assets**:
 
-   * Inhoudsfragmenten (en hun variaties) kunnen worden gemaakt en onderhouden op basis van de **Activa** console.
+   * De fragmenten van de inhoud (en hun variaties) kunnen van de **Assets** console worden gecreeerd en worden gehandhaafd.
    * Gemaakt en bewerkt in de Inhoudsfragmenteditor.
 
-* Gebruikt in de [pagina-editor met de component Content Fragment](/help/sites-authoring/content-fragments.md) (verwijzende component):
+* Gebruikt in de [ paginaredacteur met de component van het Fragment van de Inhoud ](/help/sites-authoring/content-fragments.md) (van verwijzingen voorzien component):
 
-   * De **Inhoudsfragment** is beschikbaar voor paginaauteurs. Hiermee kunnen ze naar het vereiste inhoudsfragment verwijzen en dit leveren in HTML- of JSON-indeling.
+   * De **component van het Fragment van 0} Inhoud {is beschikbaar aan paginaauteurs.** Hiermee kunnen ze naar het vereiste inhoudsfragment verwijzen en dit leveren in HTML- of JSON-indeling.
 
-* Toegankelijk met de [GRAPHQL API AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+* Toegankelijk gebruikend [ AEM GraphQL API ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 Inhoudsfragmenten zijn een inhoudsstructuur die:
 
 * Geen lay-out of ontwerp hebben (enige tekstopmaak is mogelijk in de modus RTF).
-* een of meer [samenstellende delen](#constituent-parts-of-a-content-fragment).
-* Kan [afbeeldingen bevatten of ermee verbonden zijn](#fragments-with-visual-assets).
-* Kan gebruiken [tussenliggende inhoud](#in-between-content-when-page-authoring-with-content-fragments) wanneer er op een pagina naar wordt verwezen.
+* Heb één of meerdere [ samenstellende delen ](#constituent-parts-of-a-content-fragment).
+* Kan [ bevatten, of met, beelden ](#fragments-with-visual-assets) worden verbonden.
+* Kan [ binnen-tussen inhoud ](#in-between-content-when-page-authoring-with-content-fragments) gebruiken wanneer van verwijzingen voorzien op een pagina.
 * Zijn onafhankelijk van het leveringsmechanisme (namelijk pagina, kanaal).
 
-### Fragmenten met visuele elementen {#fragments-with-visual-assets}
+### Fragmenten met Visual Assets {#fragments-with-visual-assets}
 
 Om auteurs meer controle over hun inhoud te geven, kunnen afbeeldingen worden toegevoegd aan en/of geïntegreerd met een inhoudsfragment.
 
-Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebruikt, elk met zijn eigen voordelen:
+Assets kan op verschillende manieren worden gebruikt met een inhoudsfragment. Elk van deze mogelijkheden heeft zijn eigen voordelen:
 
-* **Element invoegen** in een fragment (fragmenten met gemengde media)
+* **Activa van het Tussenvoegsel** in een fragment (gemengd-media fragmenten)
 
-   * Maakt deel uit van het fragment (zie [Delen van een inhoudsfragment maken](#constituent-parts-of-a-content-fragment)).
+   * Zijn een deel van het fragment (zie [ Componentdelen van een tevreden fragment ](#constituent-parts-of-a-content-fragment)).
    * De positie van het element definiëren.
-   * Zie [Elementen invoegen in uw fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
+   * Zie [ Invoegend Assets in uw Fragment ](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de Redacteur van het Fragment voor meer informatie.
 
   >[!NOTE]
   >
   >Visuele elementen die in het inhoudsfragment zelf worden ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
 
-* **Gekoppelde inhoud**
+* **Verwante Inhoud**
 
-   * zijn verbonden met een fragment, maar geen vast deel van het fragment (zie [Delen van een inhoudsfragment maken](#constituent-parts-of-a-content-fragment)).
+   * Wordt verbonden met een fragment; maar geen vast deel van het fragment (zie [ Componentdelen van een inhoudsfragment ](#constituent-parts-of-a-content-fragment)).
    * Biedt enige flexibiliteit voor positionering.
    * U kunt het fragment gemakkelijk gebruiken (als tussenliggende inhoud) op een pagina.
-   * Zie [Gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) voor meer informatie .
+   * Zie [ Geassocieerde Inhoud ](/help/assets/content-fragments/content-fragments-assoc-content.md) voor meer informatie.
 
 * Assets die beschikbaar zijn in de **assetbrowser** van de pagina-editor
 
@@ -182,7 +182,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
 
 De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct of indirect):
 
-* **Fragmentelementen**
+* **Elementen van het Fragment**
 
    * Elementen correleren met de gegevensvelden die inhoud bevatten.
    * U gebruikt een inhoudsmodel om het inhoudsfragment te maken. De elementen (velden) die in het model zijn opgegeven, definiëren de structuur van het fragment. Deze elementen (velden) kunnen van verschillende gegevenstypen zijn.
@@ -195,76 +195,76 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
    * Inhoudsbeheer tijdens het ontwerpen van pagina&#39;s inschakelen.
 
-* **Elementen die in een fragment zijn ingevoegd (gemengde-mediafragmenten)**
+* **Assets die in een Fragment (Gemengd-Media Fragments) wordt opgenomen**
 
-   * Elementen (afbeeldingen) die in het feitelijke fragment zijn ingevoegd en worden gebruikt als de interne inhoud van een fragment.
+   * Assets (afbeeldingen) ingevoegd in het feitelijke fragment en gebruikt als de interne inhoud van een fragment.
    * zijn ingesloten in het alineasysteem van het fragment.
-   * Kan worden opgemaakt wanneer de [fragment wordt gebruikt of er wordt naar verwezen op een pagina](/help/sites-authoring/content-fragments.md).
+   * Kan worden geformatteerd wanneer het [ fragment wordt gebruikt/op een pagina ](/help/sites-authoring/content-fragments.md) van verwijzingen wordt voorzien.
    * Kan alleen met de fragmenteditor worden toegevoegd aan, verwijderd uit of verplaatst binnen een fragment. Deze handelingen kunnen niet worden uitgevoerd in de paginaeditor.
-   * Kan alleen worden toegevoegd aan, verwijderd uit of verplaatst binnen een fragment met de opdracht [Opmaak RTF in de fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * Kan slechts aan, worden toegevoegd geschrapt van, of binnen, een fragment gebruikend het [ Rich formaat van de Tekst in de fragmentredacteur ](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) worden bewogen.
    * Kan alleen worden toegevoegd aan tekstelementen met meerdere regels (elk fragmenttype).
    * Aan de voorgaande tekst (alinea) worden toegevoegd.
 
      >[!CAUTION]
      >
-     >Elementen kunnen (onbedoeld) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
+     >Assets kan (per ongeluk) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
 
      >[!NOTE]
      >
-     >Elementen kunnen ook worden toegevoegd als [extra inhoud (tussen)](/help/sites-authoring/content-fragments.md#using-associated-content) wanneer u een fragment op een pagina gebruikt; gekoppelde inhoud of elementen uit de middelenbrowser gebruiken.
+     >Assets kan ook als [ extra (in-tussen) inhoud ](/help/sites-authoring/content-fragments.md#using-associated-content) worden toegevoegd wanneer het gebruiken van een fragment op een pagina; het gebruiken van of Geassocieerde Inhoud of activa van browser van Assets.
 
-* **Gekoppelde inhoud**
+* **Verwante Inhoud**
 
    * Dit is inhoud die zich buiten een fragment bevindt, maar die van redactionele betekenis is. Afbeeldingen, video&#39;s of andere fragmenten worden meestal weergegeven.
    * De afzonderlijke elementen in de verzameling zijn beschikbaar voor gebruik met het fragment in de pagina-editor wanneer het aan een pagina wordt toegevoegd. Dit betekent dat ze optioneel zijn, afhankelijk van de vereisten van het specifieke kanaal.
-   * De activa zijn [gekoppeld aan fragmenten via verzamelingen](/help/assets/content-fragments/content-fragments-assoc-content.md); de bijbehorende verzamelingen stellen de auteur in staat te beslissen welke elementen moeten worden gebruikt wanneer deze de pagina ontwerpen.
+   * De activa worden [ geassocieerd aan fragmenten via inzamelingen ](/help/assets/content-fragments/content-fragments-assoc-content.md); de bijbehorende inzamelingen staan de auteur toe om te beslissen welke activa te gebruiken wanneer zij de pagina ontwerpen.
 
       * Verzamelingen kunnen tijdens het ontwerpen van fragmenten als standaardinhoud worden gekoppeld.
-      * [Activa (DAM) Inzamelingen](/help/assets/manage-collections.md) vormen de basis voor de bijbehorende inhoud van fragmenten.
+      * [ Assets (DAM) Inzamelingen ](/help/assets/manage-collections.md) zijn de basis voor de bijbehorende inhoud van fragmenten.
    * Desgewenst kunt u het fragment zelf ook aan een verzameling toevoegen om het bijhouden van het fragment te vergemakkelijken.
 
-* **Fragmentmetagegevens**
+* **Metagegevens van het Fragment**
 
-   * Gebruik de [Metagegevensschema&#39;s voor elementen](/help/assets/metadata-schemas.md).
+   * Gebruik de [ schema&#39;s van de meta-gegevens van Assets ](/help/assets/metadata-schemas.md).
    * Tags kunnen worden gemaakt wanneer u:
 
       * Het fragment maken en ontwerpen
       * of hoger:
 
-         * Door het fragment weer te geven/te bewerken **Eigenschappen** vanaf de console
-         * Door de **Metagegevens** wanneer in de fragmenteditor
+         * Door het fragment **Eigenschappen** van de console te bekijken/uit te geven
+         * Door **Meta-gegevens** te uitgeven wanneer in de fragmentredacteur
 
   >[!CAUTION]
   >
   >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
 
-* **Master**
+* **Meester**
 
    * Een deel van het fragment
 
       * Elk inhoudsfragment heeft één instantie van Master.
       * Stramien kan niet worden verwijderd.
 
-   * Stramien is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * Het hoofd is toegankelijk in de fragmentredacteur onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
    * Stramien is geen variatie als zodanig, maar is de basis van alle variaties.
 
 * **Variaties**
 
    * Uitvoeringen van fragmenttekst die specifiek zijn voor een redactioneel doel; kan gerelateerd zijn aan een kanaal, maar is niet verplicht, kunnen ook voor lokale ad-hocwijzigingen worden gebruikt.
-   * Wordt gemaakt als kopieën van **Master**, maar kan vervolgens naar wens worden bewerkt; er is sprake van inhoudsoverlap tussen de variaties zelf.
+   * Wordt gecreeerd als exemplaren van **Hoofd**, maar kan dan worden uitgegeven zoals vereist; er is inhoudsoverlap tussen de variaties zelf.
    * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
-   * Variaties kunnen [gesynchroniseerd](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met stramien als de stramieninhoud is bijgewerkt.
-   * Kan [Samengevat](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
-   * Beschikbaar onder [Variaties](/help/assets/content-fragments/content-fragments-variations.md) tabblad van de fragmenteditor.
+   * De variaties kunnen [ ](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met Hoofd worden gesynchroniseerd als de Hoofdinhoud is bijgewerkt.
+   * Kan [ worden samengevat ](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst aan een vooraf bepaalde lengte snel te beknotten.
+   * Beschikbaar onder het [ lusje van Variaties ](/help/assets/content-fragments/content-fragments-variations.md) van de fragmentredacteur.
 
 ### Tussen inhoud wanneer pagina&#39;s worden gemaakt met inhoudsfragmenten {#in-between-content-when-page-authoring-with-content-fragments}
 
 Tussenliggende inhoud:
 
 * Is beschikbaar voor gebruik in de Redacteur van de Pagina wanneer het werken met tevreden Fragments.
-* Is [extra inhoud die is toegevoegd binnen de stroom van een fragment](/help/sites-authoring/content-fragments.md#adding-in-between-content) zodra er op een pagina naar is verwezen of er gebruik van is gemaakt.
-* Is beschikbaar voor gebruik in [Pagina-editor wanneer u werkt met inhoudsfragmenten](/help/sites-authoring/content-fragments.md).
+* Is [ extra inhoud toegevoegd binnen de stroom van een fragment ](/help/sites-authoring/content-fragments.md#adding-in-between-content) zodra het is gebruikt of op een pagina van verwijzingen voorzien.
+* Is beschikbaar voor gebruik in de [ Redacteur van de Pagina wanneer het werken met Inhoudsfragmenten ](/help/sites-authoring/content-fragments.md).
 * Tussen-inhoud kan aan elk fragment worden toegevoegd, waarbij slechts één element zichtbaar is.
 * De bijbehorende inhoud kan worden gebruikt, evenals activa en/of componenten van aangewezen browser.
 
@@ -276,11 +276,11 @@ Tussenliggende inhoud:
 
 Houd rekening met het volgende als u inhoudsfragmenten wilt maken:
 
-* **Content Model**
+* **Model van de Inhoud**
 
-   * zijn [toegelaten gebruikend Browser van de Configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * zijn [gemaakt met Gereedschappen](/help/assets/content-fragments/content-fragments-models.md).
-   * Vereist voor [een fragment maken](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+   * Zijn [ toegelaten gebruikend Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * Wordt [ gecreeerd gebruikend Hulpmiddelen ](/help/assets/content-fragments/content-fragments-models.md).
+   * Vereist om [ tot een fragment ](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments) te leiden.
    * Definieert de structuur van een fragment (titel, inhoudselementen, tagdefinities).
    * Definities van inhoudsmodellen vereisen een titel en één gegevenselement. Alle andere opties zijn optioneel.
    * Het model kan de standaardinhoud definiëren, indien van toepassing.
@@ -289,10 +289,10 @@ Houd rekening met het volgende als u inhoudsfragmenten wilt maken:
 
 Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, hebt u ook het volgende nodig:
 
-* **Component Inhoudsfragment**
+* **Component van het Fragment van de Inhoud**
 
    * Instrumentaal voor het leveren van het fragment in de indeling HTML en/of JSON.
-   * Vereist voor [verwijzen naar het fragment op een pagina](/help/sites-authoring/content-fragments.md).
+   * Vereist om [ het fragment op een pagina ](/help/sites-authoring/content-fragments.md) van verwijzingen te voorzien.
    * Verantwoordelijk voor de lay-out en levering van een fragment, dat wil zeggen, kanalen.
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Wanneer u een fragment naar een pagina sleept in de ontwerpfase, wordt de vereiste component automatisch gekoppeld.

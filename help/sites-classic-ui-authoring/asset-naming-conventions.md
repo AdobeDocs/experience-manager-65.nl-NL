@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Naamgevingsconventies voor het testen van elementen{#naming-conventions-for-assets-testing}
 
-Knooppunten in de gegevensopslagruimte zijn onderworpen aan de naamconventies van de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Adobe Experience Manager stelt echter andere conventies op voor de naam van elementknooppunten.
+De knopen in de bewaarplaats zijn onderworpen aan noemende overeenkomsten van de [ Bewaarplaats van de Inhoud van Java ](/help/sites-developing/the-basics.md#java-content-repository). Adobe Experience Manager stelt echter andere conventies op voor de naam van elementknooppunten.
 
 ## Klassieke interface {#classic-ui}
 

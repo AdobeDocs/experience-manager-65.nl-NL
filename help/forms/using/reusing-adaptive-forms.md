@@ -17,11 +17,11 @@ ht-degree: 1%
 
 # Aangepaste formulieren opnieuw gebruiken {#reusing-adaptive-forms}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/reusing-adaptive-forms.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/reusing-adaptive-forms.html) |
 | AEM 6,5 | Dit artikel |
 
 ## Inleiding {#introduction}
@@ -36,7 +36,7 @@ Als u bepaalde eigenschappen van een bestaand adaptief formulier wilt gebruiken 
 
 Kopieer een adaptief formulier op een van de volgende manieren:
 
-1. Klikken op kopiëren ![aem6forms_copy](assets/aem6forms_copy.png) pictogram van Snelle acties.
+1. Klik exemplaar ![ aem6forms_copy ](assets/aem6forms_copy.png) pictogram van Snelle acties.
 
    >[!NOTE]
    >
@@ -44,7 +44,7 @@ Kopieer een adaptief formulier op een van de volgende manieren:
 
 1. Selecteer het adaptieve formulier. Het selectieproces is anders voor verschillende weergaven.
 
-   Ga in de kaartweergave naar de selectiemodus door op de selectie te klikken ![aem6forms_check-circle](assets/aem6forms_check-circle.png) en klik op alle aangepaste formulieren die u wilt kopiëren.
+   Als u in kaartmening bent, ga naar selectiemodus door het selectie ![ te klikken aem6forms_check-circle ](assets/aem6forms_check-circle.png) pictogram en klik alle adaptieve vormen die u wilt kopiëren.
 
    Als u in de lijstweergave werkt, klikt u op de selectievakjes van alle adaptieve formulieren om deze te selecteren.
 
@@ -52,28 +52,28 @@ Kopieer een adaptief formulier op een van de volgende manieren:
    >
    >Alle geselecteerde elementen moeten adaptieve formulieren zijn, omdat de functie Kopiëren en plakken alleen wordt ondersteund voor adaptieve formulieren. Alle geselecteerde elementen moeten in dezelfde map aanwezig zijn.
 
-   Klik op de kopie nadat u de elementen hebt geselecteerd ![aem6forms_copy](assets/aem6forms_copy.png) op de werkbalk om het geselecteerde aangepaste formulier te kopiëren.
+   Na het selecteren van de activa, klik het exemplaar ![ aem6forms_copy ](assets/aem6forms_copy.png) pictogram aanwezig in de toolbar om de geselecteerde aanpassingsvorm te kopiëren.
 
 ### Een adaptief formulier plakken {#paste-an-adaptive-form}
 
-Wanneer u op de kopieeractie klikt, wordt de selectiemodus automatisch verlaten en wordt de plakbewerking ![aem6forms_paste](assets/aem6forms_paste.png) zichtbaar. Ga nu naar het gewenste mappad en klik op Plakken ![aem6forms_paste](assets/aem6forms_paste.png) pictogram om het gekopieerde adaptieve formulier te plakken.
+Het klikken van de exemplaaractie verlaat automatisch de selectiewijze en maakt het deeg ![ aem6forms_paste ](assets/aem6forms_paste.png) pictogram zichtbaar. Ga nu naar de gewenste omslagweg en klik het deeg ![ aem6forms_paste ](assets/aem6forms_paste.png) pictogram om de gekopieerde adaptieve vorm te kleven.
 
-Als u plakt in dezelfde map of een ander bestand met dezelfde knooppuntnaam (waarmee het bestand is opgeslagen in de CRX-opslagruimte) bestaat in deze doelmap, wordt 1 toegevoegd aan het achtervoegsel (myaf wordt bijvoorbeeld myaf1 en als myaf1 op dezelfde locatie bestaat, wordt myaf myaf2. Alle andere eigenschappen blijven hetzelfde als het oorspronkelijke adaptieve formulier.
+Als u plakt in dezelfde map of een ander bestand met dezelfde knooppuntnaam (waarmee het bestand is opgeslagen in de CRX-opslagplaats) bestaat in deze doelmap, wordt 1 toegevoegd aan het achtervoegsel (myaf wordt bijvoorbeeld myaf1 en als myaf1 op dezelfde locatie bestaat, wordt myaf myaf2. Alle andere eigenschappen blijven hetzelfde als het oorspronkelijke adaptieve formulier.
 
-Na het klikken op de plakbewerking ![aem6forms_paste](assets/aem6forms_paste.png) pictogram, wordt het opnieuw verborgen. U kunt tegelijkertijd slechts één keer plakken. Als u opnieuw een kopie van hetzelfde element wilt maken, kopieert u het opnieuw.
+Na het klikken van het deeg ![ aem6forms_paste ](assets/aem6forms_paste.png) pictogram, zal het opnieuw verborgen worden. U kunt tegelijkertijd slechts één keer plakken. Als u opnieuw een kopie van hetzelfde element wilt maken, kopieert u het opnieuw.
 
 ### Inhoud van nieuw adaptief formulier wijzigen {#change-contents-of-new-adaptive-form}
 
 De inhoud van een geplakte adaptieve formulieren kan op de volgende manieren worden gewijzigd, zodat deze verschilt van het gekopieerde formulier:
 
-1. **Eigenschappen van metagegevens wijzigen:**
+1. **de meta-gegevenseigenschappen van de Verandering:**
 
-   U kunt de eigenschappen van metagegevens van het adaptieve formulier wijzigen, bijvoorbeeld de titel en beschrijving. Zie voor meer informatie over eigenschappen van metagegevens en hoe deze kunnen worden gewijzigd [Formuliermetagegevens beheren](/help/forms/using/manage-form-metadata.md)
+   U kunt de eigenschappen van metagegevens van het adaptieve formulier wijzigen, bijvoorbeeld de titel en beschrijving. Voor meer details over meta-gegevenseigenschappen en hoe zij kunnen worden veranderd, zie [ het Leiden Metagegevens van de Vorm ](/help/forms/using/manage-form-metadata.md)
 
-1. **XFA/XSD wijzigen voor adaptieve Forms op basis van XFA/XSD:**
+1. **Verandering XFA/XSD voor op XFA/XSD-Gebaseerde Aangepaste Forms:**
 
-   U kunt de XFA/XSD wijzigen die in adaptieve formulieren wordt gebruikt. Als u wilt weten hoe deze adaptieve formulieren kunnen worden gewijzigd, gaat u naar [Metagegevens van formulieren beheren](/help/forms/using/manage-form-metadata.md)
+   U kunt de XFA/XSD wijzigen die in adaptieve formulieren wordt gebruikt. Om te weten hoe deze adaptieve vormen kunnen worden veranderd, zie [ het Leiden vormmeta-gegevens ](/help/forms/using/manage-form-metadata.md)
 
-1. **Opnieuw publiceren:**
+1. **opnieuw publiceren:**
 
-   Het geplakte element verschilt van het gekopieerde element. U kunt de presentatie publiceren als een nieuw element, zodat deze beschikbaar is voor eindgebruikers. Als u wilt weten hoe u een element publiceert, raadpleegt u [Formulieren publiceren en verwijderen](/help/forms/using/publishing-unpublishing-forms.md)
+   Het geplakte element verschilt van het gekopieerde element. U kunt de presentatie publiceren als een nieuw element, zodat deze beschikbaar is voor eindgebruikers. Om te weten hoe te om activa te publiceren, zie [ Publiceren en unpublishing vormen ](/help/forms/using/publishing-unpublishing-forms.md)

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Plan de anatomie voor uw Interactieve Communicatie
 
-![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
+![ 02-creeer-adaptief-vorm-main-beeld ](assets/02-create-adaptive-form-main-image.png)
 
-Deze zelfstudie is een stap in de [Maak uw eerste interactieve communicatie](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [ creeer uw eerste Interactieve Communicatie ](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 De eerste stap in het plannen van een Interactieve Mededeling is de inhoud van de Interactieve Mededeling te voltooien. Experts met onderwerpen van afdelingen zoals juridische afdeling, financiën, ondersteuning of marketing kunnen u helpen de inhoud te voltooien. Nadat de inhoud wordt voltooid, moet u het analyseren om de diverse activatypes te identificeren die worden vereist om de Interactieve Mededeling tot stand te brengen.
 
@@ -28,19 +28,19 @@ De eerste stap in het plannen van een Interactieve Mededeling is de inhoud van d
 
 Een interactieve communicatie omvat de volgende elementen:
 
-* **Statische tekst** Het omvat vooral de delen van de interactieve communicatie die van generieke aard zijn en in communicatie aan alle klanten inbegrepen zijn. Bijvoorbeeld kop-, voettekst-, aanhef- of disclaimers.
-* **Gegevens afkomstig van een back-endsysteem (formuliergegevensmodel)** is klantspecifiek en wordt dynamisch samengevoegd met de interactieve communicatie. Het beleidsnummer of adres kan bijvoorbeeld worden opgehaald met het formuliergegevensmodel.
-* **Layout of sjablonen** voor de versie van de Druk en van het Web van de Interactieve Communicatie.
-* **Volgorde** waarin de verschillende tekstalinea&#39;s worden weergegeven in de interactieve communicatie.
-* **Gegevens ingegaan door een frontline werknemer (Agent UI)** wie de communicatie aanpast voordat deze wordt verzonden. Bijvoorbeeld de vervaldatum van de betaling.
+* **Statische tekst** omvat meestal de delen van de interactieve mededeling die algemeen in aard zijn en in mededeling aan alle klanten inbegrepen zijn. Bijvoorbeeld kop-, voettekst-, aanhef- of disclaimers.
+* **gegevens die van een achterste deelsysteem (model van vormgegevens)** worden gesourced is klant-specifiek en dynamisch met de interactieve mededeling samengevoegd. Het beleidsnummer of adres kan bijvoorbeeld worden opgehaald met het formuliergegevensmodel.
+* **Lay-out of malplaatjes** voor de versie van de Druk en van het Web van de Interactieve Mededeling.
+* **Orde** waarin de diverse tekstparagrafen in de Interactieve Mededeling verschijnen.
+* **Gegevens ingegaan door een frontline werknemer (Agent UI)** die de mededeling alvorens het uit te verzenden aanpast. Bijvoorbeeld de vervaldatum van de betaling.
 
-* **Voorwaardelijke gegevens** die wordt gevuld op basis van vooraf gedefinieerde voorwaarden. Bijvoorbeeld de datum waarop de interactieve communicatie wordt gegenereerd.
-* **Afbeeldingen die zijn opgeslagen in een opslagplaats**, zoals logo&#39;s en handtekeningafbeeldingen. Afbeeldingen zoals bedrijfslogo&#39;s worden in de meeste of alle interactieve communicatie weergegeven.
-* **Grafieken en tabellen** vereist om de weergave van complexe gegevens in een interactieve communicatie te vereenvoudigen
+* **Voorwaardelijke gegevens** die bevolkt worden gebaseerd op vooraf bepaalde voorwaarden. Bijvoorbeeld de datum waarop de interactieve communicatie wordt gegenereerd.
+* **Beelden die in een bewaarplaats** worden opgeslagen, zoals logo&#39;s en handtekeningsbeelden. Afbeeldingen zoals bedrijfslogo&#39;s worden in de meeste of alle interactieve communicatie weergegeven.
+* **Grafieken en lijsten** die worden vereist om de vertegenwoordiging van complexe gegevens in een Interactieve Mededeling te vereenvoudigen
 
 ## Anatomie van de interactieve communicatie {#anatomy-of-the-interactive-communication}
 
-Zodra u de inhoud en de elementen hebt voltooid die worden gebruikt om uw Interactieve Mededeling tot stand te brengen, kunt u een anatomie van de Interactieve Communicatie tot stand brengen. De anatomie moet de in de [Overwegingen bij de planning](/help/forms/using/planning-interactive-communications.md#planning-considerations) sectie. Gebaseerd op ons gebruiksgeval, is het volgende een voorbeeld van een anatomie van de maandelijkse rekening die een telecomexploitant aan zijn klanten verzendt.
+Zodra u de inhoud en de elementen hebt voltooid die worden gebruikt om uw Interactieve Mededeling tot stand te brengen, kunt u een anatomie van de Interactieve Communicatie tot stand brengen. De anatomie moet de details hebben die in de [ worden vermeld die Overwegingen van de Planning ](/help/forms/using/planning-interactive-communications.md#planning-considerations) sectie. Gebaseerd op ons gebruiksgeval, is het volgende een voorbeeld van een anatomie van de maandelijkse rekening die een telecomexploitant aan zijn klanten verzendt.
 
 De anatomie bevat gegevens met de volgende invoermodi:
 
@@ -50,7 +50,7 @@ De anatomie bevat gegevens met de volgende invoermodi:
 * Voorwaardelijke gegevens
 * Afbeeldingen
 
-In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Zie voor meer informatie [Formuliergegevensmodel maken](/help/forms/using/create-form-data-model0.md).
+In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Voor meer informatie, zie [ het model van vormgegevens ](/help/forms/using/create-form-data-model0.md) creëren.
 
 De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van interactieve communicatie:
 
@@ -66,7 +66,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
   <tr>
    <td>Bill Details</td>
    <td><p>Factuurnummer</p> <p>Bill Date</p> <p>Bill Period</p> <p>Uw abonnement</p> </td>
-   <td><p>Waarde voor <strong>Uw abonnement </strong>field</p> <p>Tabel - klant</p> </td>
+   <td><p>Waarde voor <strong> Uw gebied van het Plan </strong></p> <p>Tabel - klant</p> </td>
    <td><p>Waarden voor de volgende velden:</p>
     <ul>
      <li>Factuurnummer</li>
@@ -97,7 +97,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
   <tr>
    <td>Bill Summary</td>
    <td><p>Vorig saldo</p> <p>Betalingen</p> <p>Aanpassingen</p> <p>Lopende factuurperiode</p> <p>Te betalen bedrag</p> <p>Vervaldatum</p> </td>
-   <td><p>Waarde voor de <strong>Lopende factuurperiode </strong> field</p> <p>Tabel - rekeningen</p> </td>
+   <td><p>Waarde voor het <strong> gebied van de Winst huidige rekening </strong></p> <p>Tabel - rekeningen</p> </td>
    <td><p>Waarden voor de volgende velden:</p>
     <ul>
      <li>Vorig saldo</li>

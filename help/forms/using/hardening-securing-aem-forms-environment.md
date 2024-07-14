@@ -28,7 +28,7 @@ Het artikel is bedoeld voor consultants, beveiligingsspecialisten, systeemarchit
 
 De volgende afbeelding toont componenten en protocollen die worden gebruikt in een standaard AEM Forms-implementatie, inclusief de juiste firewalltopologie:
 
-![typische architectuur](assets/typical-architecture.png)
+![ typisch-architectuur ](assets/typical-architecture.png)
 
 AEM Forms is zeer aanpasbaar en kan in veel verschillende omgevingen werken. Sommige aanbevelingen zijn mogelijk niet van toepassing op uw organisatie.
 
@@ -101,7 +101,7 @@ U kunt de interne firewall vormen om bepaalde componenten van AEM Forms (bijvoor
 <table> 
  <tbody>
   <tr>
-   <td>Host<br /> </td> 
+   <td>Host <br /> </td> 
    <td>URI</td> 
   </tr>
   <tr>
@@ -139,32 +139,32 @@ In de bovenstaande scenario&#39;s worden de gegevens alleen opgeslagen voor geve
 
 ### Beveiligde gegevens opgeslagen door verzendactie van formulierportal {#secure-data-saved-by-forms-portal-submit-action}
 
-Standaard slaat de verzendactie van een portal Formulieren met aangepaste formulieren gegevens op in de lokale opslagplaats van het publicatieknooppunt. De gegevens worden opgeslagen op /content/forms/fp. **Het wordt afgeraden gegevens op te slaan in een publicatie-instantie.**
+Standaard slaat de verzendactie van een portal Formulieren met aangepaste formulieren gegevens op in de lokale opslagplaats van het publicatieknooppunt. De gegevens worden opgeslagen op /content/forms/fp. **het wordt niet geadviseerd om gegevens op te slaan publiceren instantie.**
 
 U kunt de opslagdienst vormen om over-de-draad naar de verwerkingscluster te verzenden zonder om het even wat plaatselijk op te slaan publiceer knoop. De verwerkingscluster bevindt zich in een veilige zone achter de privéfirewall en de gegevens blijven veilig.
 
-Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Gebruik de referenties van een niet-beheerbare gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Zie voor meer informatie [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md).
+Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Gebruik de referenties van een niet-beheerbare gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Voor meer informatie, zie [ het Vormen de opslagdiensten voor concepten en voorlegging ](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Beveiligde gegevens die worden verwerkt door FDM (Form Data Model) {#secure-data-handled-by-form-data-model-fdm}
 
 Gebruik gebruikersaccounts met minimaal vereiste rechten om gegevensbronnen voor het formuliergegevensmodel (FDM) te configureren. Het gebruik van een beheeraccount kan onbevoegde gebruikers toegang bieden tot metagegevens en schema-entiteiten.\
 De integratie van gegevens verstrekt ook methodes om FDM de dienstverzoeken toe te laten. U kunt machtigingsmechanismen vóór en na uitvoering invoegen om een aanvraag te valideren. De serviceaanvragen worden gegenereerd tijdens het vooraf invullen van een formulier, het verzenden van een formulier en het aanroepen van services via een regel.
 
-**Voorafgaande goedkeuring:** U kunt de pre-procesvergunning gebruiken om authentificatie van een verzoek te bevestigen alvorens het uit te voeren. U kunt input, de dienst en verzoekdetails gebruiken om uitvoering van het verzoek toe te staan of tegen te houden. U kunt een uitzondering OPERATION_ACCESS_DENIED van de gegevensintegratie terugkeren als de uitvoering wordt tegengehouden. U kunt ook de clientaanvraag wijzigen voordat u deze ter uitvoering verzendt. U kunt bijvoorbeeld de invoer wijzigen en aanvullende informatie toevoegen.
+**pre-procesvergunning:** u kunt de pre-procesvergunning gebruiken om authenticiteit van een verzoek te bevestigen alvorens het uit te voeren. U kunt input, de dienst en verzoekdetails gebruiken om uitvoering van het verzoek toe te staan of tegen te houden. U kunt een uitzondering OPERATION_ACCESS_DENIED van de gegevensintegratie terugkeren als de uitvoering wordt tegengehouden. U kunt ook de clientaanvraag wijzigen voordat u deze ter uitvoering verzendt. U kunt bijvoorbeeld de invoer wijzigen en aanvullende informatie toevoegen.
 
-**Toelating na de verwerking:** U kunt de postprocesvergunning gebruiken om de resultaten te bevestigen en te controleren alvorens de resultaten aan aanvrager terug te keren. U kunt ook aanvullende gegevens filteren, verwijderen en invoegen.
+**Post-proces vergunning:** u kunt de post-procesvergunning gebruiken om de resultaten te bevestigen en te controleren alvorens de resultaten aan aanvrager terug te keren. U kunt ook aanvullende gegevens filteren, verwijderen en invoegen.
 
 ### Gebruikerstoegang beperken {#limit-user-access}
 
 Voor auteur-, publicatie- en verwerkingsinstanties is een andere set met gebruikersinstellingen vereist. Voer geen enkel exemplaar met beheerdersreferenties uit.
 
-**Op een publicatie-instantie:**
+**op publiceer instantie:**
 
 * Alleen gebruikers van een groep met formuliergebruikers kunnen formulieren voorvertonen, ontwerpen maken en verzenden.
 * Alleen gebruikers van een cm-user-agent-groep kunnen een voorbeeld van correspondentiebeheerletters bekijken.
 * Alle niet-essentiële anonieme toegang uitschakelen.
 
-**Op een instantie van de auteur:**
+**op een auteursinstantie:**
 
 * Er is een andere set vooraf gedefinieerde groepen met specifieke rechten voor elke persoon. Wijs gebruikers toe aan groep.
 
@@ -181,7 +181,7 @@ Voor auteur-, publicatie- en verwerkingsinstanties is een andere set met gebruik
    * Een gebruiker van cm-user-agent groep kan correspondentiebeheerbrieven creëren, voorproef, en publiceren.
    * Een gebruiker van een groep workfloweditors kan een inbox-toepassing en workflowmodel maken.
 
-**Bij de verwerkingsauteur:**
+**op verwerkingsauteur:**
 
 * Voor het op afstand opslaan en verzenden van gebruiksgevallen maakt u een gebruiker met lees-, maak- en wijzigingsmachtigingen voor de inhoud/het formulier/fp-pad van de crx-gegevensopslagruimte.
 * Voeg gebruiker aan werkstroom-gebruikersgroep toe om een gebruiker toe te laten om AEM inbox toepassingen te gebruiken.
@@ -196,4 +196,4 @@ Een verwerkingscluster wordt uitgevoerd in de auteursmodus, maar gebruikt deze n
 
 ### Gebruik AEM beste praktijken om een milieu van AEM Forms te beveiligen {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Dit document bevat specifieke instructies voor de AEM Forms-omgeving. U zou moeten nemen om ervoor te zorgen dat uw onderliggende AEM installatie wanneer opgesteld veilig is. Zie voor gedetailleerde instructies [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md) documentatie.
+Dit document bevat specifieke instructies voor de AEM Forms-omgeving. U zou moeten nemen om ervoor te zorgen dat uw onderliggende AEM installatie wanneer opgesteld veilig is. Voor gedetailleerde instructies, zie [ AEM de documentatie van Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md).

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 # Maximale drempel voor open cursors in de database oracle {#oracle-database-maximum-open-cursors-threshold}
 
-Om een maximumwaarde voor open cursors in Oracle te vormen, kunt u deze waarde aan een aantal moeten stemmen dat voor uw toepassing aangewezen is. Het is duidelijk dat de gemiddelde openstaande cursors onder een gematigde belasting 2700 bedroeg. Het wordt aanbevolen te beginnen met een bovengrens van 3000. Ga voor meer informatie naar [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Om een maximumwaarde voor open cursors in Oracle te vormen, kunt u deze waarde aan een aantal moeten stemmen dat voor uw toepassing aangewezen is. Het is duidelijk dat de gemiddelde openstaande cursors onder een gematigde belasting 2700 bedroeg. Het wordt aanbevolen te beginnen met een bovengrens van 3000. Voor meer informatie, ga naar [ https://www.orafaq.com/node/758 ](https://www.orafaq.com/node/758).

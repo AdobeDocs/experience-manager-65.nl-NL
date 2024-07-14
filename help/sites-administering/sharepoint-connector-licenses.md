@@ -27,44 +27,44 @@ De volgende tabel bevat een lijst met bibliotheken van derden die in de kernbibl
 
 | Bibliotheek | Licentietype |
 |---|---|
-| annogeen | [Apache](#apache) |
-| axiom-api | [Apache](#apache) |
-| axiom | [Apache](#apache) |
-| axiom-impl | [Apache](#apache) |
-| axis2-adb | [Apache](#apache) |
-| axis2-kernel | [Apache](#apache) |
+| annogeen | [ Apache ](#apache) |
+| axiom-api | [ Apache ](#apache) |
+| axiom | [ Apache ](#apache) |
+| axiom-impl | [ Apache ](#apache) |
+| axis2-adb | [ Apache ](#apache) |
+| axis2-kernel | [ Apache ](#apache) |
 | Backport-util-concurrent | Openbaar domein |
-| commons-codec | [Apache](#apache) |
-| commons-collections | [Apache](#apache) |
-| commons-file uploaden | [Apache](#apache) |
-| commons-httpclient | [Apache](#apache) |
-| commons-io | [Apache](#apache) |
-| commons-lang | [Apache](#apache) |
-| gelijktijdige | [Gelijktijdig](#concurrent) (Openbaar domein) |
-| geronimo-activation_1.1_spec | [Apache](#apache) |
-| geronimo-stax-api_1.0_spec | [Apache](#apache) |
-| httpcore | [Apache](#apache) |
-| jackrabbit-jcr2spi | [Apache](#apache) |
-| jackrabbit-jcr-commons | [Apache](#apache) |
-| jubarijn-spi-commons | [Apache](#apache) |
-| jangobbyspi | [Apache](#apache) |
+| commons-codec | [ Apache ](#apache) |
+| commons-collections | [ Apache ](#apache) |
+| commons-file uploaden | [ Apache ](#apache) |
+| commons-httpclient | [ Apache ](#apache) |
+| commons-io | [ Apache ](#apache) |
+| commons-lang | [ Apache ](#apache) |
+| gelijktijdige | [ Gelijktijdig ](#concurrent) (Openbaar domein) |
+| geronimo-activation_1.1_spec | [ Apache ](#apache) |
+| geronimo-stax-api_1.0_spec | [ Apache ](#apache) |
+| httpcore | [ Apache ](#apache) |
+| jackrabbit-jcr2spi | [ Apache ](#apache) |
+| jackrabbit-jcr-commons | [ Apache ](#apache) |
+| jubarijn-spi-commons | [ Apache ](#apache) |
+| jangobbyspi | [ Apache ](#apache) |
 | jaxen | BSD |
-| log4j | [Apache](#apache) |
-| luceenkern | [Apache](#apache) |
-| neethi | [Apache](#apache) |
-| slf4j-api | [SLF4J.ORG](#slf-j-org) |
-| slf4j-jdk14 | [SLF4J.ORG](#slf-j-org) |
-| stax-api | [Apache](#apache) |
-| wsdl4j | [Apache](#apache) |
-| wstx-asl | [Apache](#apache) |
-| xalan | [Apache](#apache) |
-| xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (bevat delen die vallen onder licenties voor het publieke domein en W3C-software) |
-| XmlSchema | [Apache](#apache) |
+| log4j | [ Apache ](#apache) |
+| luceenkern | [ Apache ](#apache) |
+| neethi | [ Apache ](#apache) |
+| slf4j-api | [ SLF4J.ORG ](#slf-j-org) |
+| slf4j-jdk14 | [ SLF4J.ORG ](#slf-j-org) |
+| stax-api | [ Apache ](#apache) |
+| wsdl4j | [ Apache ](#apache) |
+| wstx-asl | [ Apache ](#apache) |
+| xalan | [ Apache ](#apache) |
+| xbean | [ Apache ](#apache) |
+| xml-apis | [ Apache ](#apache) (bevat die gedeelten door Openbaar Domein en de vergunningen van de Software W3C worden behandeld) |
+| XmlSchema | [ Apache ](#apache) |
 
 ## Overzicht van CRX-bibliotheken van derden {#overview-of-crx-rd-party-libraries}
 
-De volgende tabel bevat een lijst met bibliotheken van derden die in CRX worden gebruikt, samen met de licenties, copyrightmeldingen of disclaimers waarop deze betrekking hebben:
+De volgende tabel bevat een lijst met bibliotheken van derden die in CRX worden gebruikt, samen met de licenties, copyrightkennisgevingen of disclaimers waarop deze betrekking hebben:
 
 <table>
  <colgroup>

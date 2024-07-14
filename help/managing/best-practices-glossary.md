@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Verklarende woordenlijst{#glossary}
 
-In deze woordenlijst worden (alfabetisch) details weergegeven van alle te leveren documenten uit de [Projectchecklist](/help/managing/best-practices-checklist.md).
+Deze verklarende woordenlijst maakt een lijst (alfabetisch) details van alle Geleverbare documenten van [ Controlelijst van het Project ](/help/managing/best-practices-checklist.md).
 
 ## Aanvaarding door belanghebbenden uit het bedrijfsleven {#acceptance-from-business-stakeholders}
 
@@ -46,7 +46,7 @@ Ervoor zorgen dat de vereiste niveaus van systeemtoegang aan alle rollen zijn ve
 
 ### Beveiligingschecklist Adobe {#adobe-security-checklist}
 
-De [Beveiligingschecklist Adobe](/help/sites-administering/security-checklist.md) de officiële controlelijst wordt verstrekt om ervoor te zorgen dat Adobe Experience Manager (AEM) veilig is bij installatie. Het bevat de veiligheidsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te verzekeren.
+De [ Controlelijst van de Veiligheid van de Adobe ](/help/sites-administering/security-checklist.md) is officiële controlelijst wordt verstrekt om ervoor te zorgen dat Adobe Experience Manager (AEM) bij installatie veilig is. Het bevat de veiligheidsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te verzekeren.
 
 ### Adobe Support Portal Project instellen {#adobe-support-portal-project-set-up}
 
@@ -56,19 +56,19 @@ Er kunnen details worden geregistreerd, bijvoorbeeld over de geïmplementeerde t
 
 ### Beheerderstraining AEM {#aem-administrator-training}
 
-Opleiding voor administratief personeel van de oplossing. Zie de [Adobe Training](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie .
+Opleiding voor administratief personeel van de oplossing. Zie de [ Diensten van de Opleiding van de Adobe ](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
 
 ### AEM auteur-training {#aem-author-training}
 
-Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [Adobe Training](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie .
+Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [ Diensten van de Opleiding van de Adobe ](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
 
 ### Certificeringsexamen AEM {#aem-certification-exam}
 
-Ervoor zorgen dat de juiste personen geregistreerd zijn om de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Zorg ervoor dat de aangewezen personen worden geregistreerd om de relevante [ certificatieexamens ](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) te nemen.
 
 ### AEM gecertificeerd {#aem-certified}
 
-Ervoor zorgen dat de juiste persoon met goed gevolg de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Zorg ervoor dat de aangewezen persoon de relevante [ certificatieexamens ](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) heeft overgegaan.
 
 ### Technische training AEM {#aem-technical-training}
 
@@ -92,7 +92,7 @@ De routekaart van de Klant is samengesteld uit mijlpalen op hoog niveau en bedri
 
 ### Definitie toepassingsarchitectuur {#application-architecture-definition}
 
-De [toepassingsarchitectuur](/help/managing/best-practices.md#development-preparation) het gedrag van de voorgestelde toepassingen duidelijk moet omschrijven.
+De [ toepassingsarchitectuur ](/help/managing/best-practices.md#development-preparation) zou het gedrag van de voorgestelde toepassingen duidelijk moeten bepalen.
 
 Het is gericht op:
 
@@ -109,7 +109,8 @@ Zorg ervoor dat uw team bestaat uit personeel met de juiste training. Voor proje
 
 * minstens één AEM gecertificeerde lead Developer
 * ten minste één AEM gecertificeerde architect
-* minstens 75% van uw ontwikkelaars AEM gecertificeerd; hierdoor kunnen gecertificeerde ontwikkelaars mentor junior ontwikkelaars volgen en wordt kennis gedeeld en transparantie gegarandeerd
+* minstens 75% van uw ontwikkelaars AEM gecertificeerd;
+dit maakt het de gecertificeerde ontwikkelaars mogelijk om ondergeschikte ontwikkelaars te begeleiden en zorgt voor kennisuitwisseling en transparantie
 
 ### Architectuurdiagram {#architecture-diagram}
 
@@ -206,7 +207,8 @@ Bedrijfs KPIs bepaalt meetbare waarden die aantonen hoe effectief een bedrijf be
 
 Een document van bedrijfsvereisten (BRD) detailleert de bedrijfsoplossing voor een project, die een duidelijke specificatie van de bedrijfsbehoeften en de verwachtingen van de klant verstrekken. In de BRD wordt ook onderscheid gemaakt tussen de bedrijfsoplossing en de technische oplossing.
 
-Wanneer het onderzoeken van de bedrijfsoplossing zou de BRD de vraag moeten beantwoorden: &quot;Wat wil de zaken doen?&quot;
+Bij het onderzoeken van de bedrijfsoplossing moet de BHP de vraag beantwoorden:
+&quot;Wat wil het bedrijf doen?&quot;
 
 ### Zakelijke aanmelding voor alle vereiste aanpassingen van de oplossing of architectuur die zijn geïdentificeerd en zijn uitgelijnd op de verwachtingen van ROI en KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -502,7 +504,7 @@ Resultaten van een haalbaarheidsstudie voor zowel AEM als het ontwerp van de opl
 
 ### Eindcontract {#finalized-contract}
 
-Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op de [Concept](#contract-draft).
+Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op het [ Ontwerp van het Contract ](#contract-draft).
 
 ### Functionaliteit van de door belanghebbenden aanvaarde oplossing {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -871,7 +873,7 @@ Dit wordt vaak gebruikt in het Testen van de Erkenning van de Gebruiker (UAT).
 
 De concepttest (POC) wordt afgezet tegen de vereisten om ervoor te zorgen dat beide op elkaar zijn afgestemd.
 
-### Checklist voor na implementatie {#post-deployment-checklist}
+### Checklist voor Post-implementatie {#post-deployment-checklist}
 
 Een controlelijst om de reeks controles en taken te bepalen na elke plaatsing uit te voeren.
 
@@ -901,7 +903,7 @@ Bepaal het communicatie plan voor zowel bedrijfs belanghebbenden als het project
 
 ### Projectinspanningen - definitieve ramingen {#project-efforts-final-estimates}
 
-De [initiële ramingen](#project-efforts-initial-estimates) hoog waren en werden uitgevoerd overeenkomstig de hoge eisen voor de uitvoering.
+De [ aanvankelijke ramingen ](#project-efforts-initial-estimates) waren hoog niveau en gemaakt volgens de vereisten op hoog niveau voor de implementatie.
 
 Deze worden nu herzien, verfijnd en uitgebreid om de definitieve ramingen te verstrekken. De ramingen moeten worden verstrekt door elk geschikt projectleider, met inbegrip van projectbeheer, raadpleging, architectuur, tests, en ontwikkeling.
 
@@ -966,7 +968,7 @@ Deze wordt gebruikt met de Runbook om de installatiestappen en -controles voor e
 
 >[!NOTE]
 >
->Zie voor een voorbeeld de [Opmerkingen bij de release AEM](/help/release-notes/release-notes.md).
+>Voor een voorbeeld, zie [ AEM de Nota&#39;s van de Versie ](/help/release-notes/release-notes.md).
 
 ### Release die wordt uitgevoerd op productieomgeving {#release-running-on-production-environment}
 
@@ -1285,7 +1287,7 @@ Het het Testen Concept is het overzicht op hoog niveau van het testen voor het p
 
 ### Testplannen {#testing-plans}
 
-In deze plannen wordt een gedetailleerder overzicht gegeven van de uitvoering van tests voor elke ontwikkelingsfase en wordt uitgegaan van de [Teststrategie](#testing-strategy).
+Deze plannen schetsen meer in detail de uitvoering van tests voor elke fase van ontwikkeling en zijn gebaseerd op de [ Teststrategie ](#testing-strategy).
 
 ### Testbereik {#testing-scope}
 

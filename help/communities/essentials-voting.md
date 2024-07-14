@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Grondbeginselen van de stemming {#voting-essentials}
 
-De stemcomponent, a [tally](tally.md) subklasse, is een nuttig hulpmiddel dat leden toestaat om een bepaald stuk van inhoud te schatten door eenvoudig pijlen omhoog of onderaan te selecteren om hun mening te wijzen.
+De stemcomponent, a [ tally ](tally.md) subclass, is een nuttig hulpmiddel dat leden toestaat om een bepaald stuk van inhoud te schatten door eenvoudig pijlen te selecteren omhoog of neer om op hun mening te wijzen.
 
-Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan. Elke instantie moet zijn geconfigureerd met een unieke `tally name` eigenschap.
+Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan. Elke instantie moet zijn geconfigureerd met een unieke eigenschap `tally name` .
 
 Anonieme stemplaatsing wordt niet ondersteund. Sitebezoekers moeten zich slechts eenmaal registreren en aanmelden om deel te nemen aan het stemmen. De ondertekende bezoeker (lid) kan te allen tijde hun stem wijzigen.
 
@@ -29,19 +29,19 @@ Anonieme stemplaatsing wordt niet ondersteund. Sitebezoekers moeten zich slechts
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>sociaal/tally/onderdelen/hbs/stemming</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
-   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerp </i>mode</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
+   <td>Ja - de eigenschappen zijn editable op <i> ontwerp </i> wijze</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong> clientlibs </strong></a></td>
    <td> cq.social.hbs.voting</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td><p> /libs/social/tally/components/hbs/voting/voting.hbs<br /> /libs/social/tally/components/hbs/voting/activity-title.hbs</p> </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ Anonieme stemplaatsing wordt niet ondersteund. Sitebezoekers moeten zich slechts
   </tr>
   <tr>
    <td><strong>eigenschappen</strong></td>
-   <td><p>Zie <a href="voting.md">Stemmen gebruiken</a></p> </td>
+   <td><p>Zie <a href="voting.md"> Gebruikend Stemmen </a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -59,24 +59,24 @@ Anonieme stemplaatsing wordt niet ondersteund. Sitebezoekers moeten zich slechts
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Tally API&#39;s](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [ Tally APIs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Eindpunten tellen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [ Tally Endpoints ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Toegang tot gebste stemmen (UGC) {#accessing-posted-voting-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
+Zie [ het Moderteren van Gebruiker Gegenereerde Inhoud ](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
-**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
+**de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de opslagplaats.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [Refactoring voor sociale hulpmiddelen](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.
+* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - inleiding en overzicht van het opslagruimtegebruik.
+* [ SRP en Hoofdzaak UGC ](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen.
+* [ SocialUtils Refactoring ](socialutils.md) - verouderde nutsmethodes in kaart brengen aan huidige SRP nutsmethodes.

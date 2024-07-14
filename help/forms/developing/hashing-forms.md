@@ -38,15 +38,15 @@ Het grootste voordeel van het gebruik van hashes is dat u wachtwoorden niet rech
 
 >[!NOTE]
 >
->Er zijn enkele bekende beveiligingsproblemen (zogenaamde hash-botsingen) met MD4 of MD5. Vanwege die hash-botsingen en andere SHA-1-hacks (inclusief regenboogtafels) besloot ik me te concentreren op de SHA-256 hash-functie in het tweede voorbeeld. Zie de klasse [Botsing](https://en.wikipedia.org/wiki/Hash_collision) en [Regenboogtabel](https://en.wikipedia.org/wiki/Rainbow_table) pagina&#39;s van Wikipedia.
+>Er zijn enkele bekende beveiligingsproblemen (zogenaamde hash-botsingen) met MD4 of MD5. Vanwege die hash-botsingen en andere SHA-1-hacks (inclusief regenboogtafels) besloot ik me te concentreren op de SHA-256 hash-functie in het tweede voorbeeld. Voor meer informatie, zie de [ Botsing ](https://en.wikipedia.org/wiki/Hash_collision) en [ Regenbooglijst ](https://en.wikipedia.org/wiki/Rainbow_table) pagina&#39;s van Wikipedia.
 
 ## Scriptobjecten onderzoeken {#examining-script-objects}
 
 Wanneer u een van de twee beschikbare voorbeelden opent in AEM Forms op JEE Designer, vindt u de vier scriptobjecten in het palet Hiërarchie (zie onderstaande afbeelding).
 
-![Variabelen](assets/variables.jpg)
+![ Variabelen ](assets/variables.jpg)
 
-Als u de JavaScript-implementatie van de hash-functies in deze scriptobjecten wilt bekijken, selecteert u het scriptobject en verkent u de code in de Scripteditor. U kunt zien hoe elk van de volgende knoeiboelfuncties is uitgevoerd:
+Als u de JavaScript-implementatie van de hash-functies in deze scriptobjecten wilt bekijken, selecteert u het scriptobject en bekijkt u de code in de Scripteditor. U kunt zien hoe elk van de volgende knoeiboelfuncties is uitgevoerd:
 
 * soHASHING_MD4.hex_md4()
 * soHASHING_MD4.b64_md4()
@@ -61,7 +61,7 @@ Als u de JavaScript-implementatie van de hash-functies in deze scriptobjecten wi
 * soHASHING_SHA256.b64_sha256()
 * soHASHING_SHA256.str_sha256()
 
-Zoals u in deze lijst kunt zien, zijn er verschillende functies beschikbaar voor de verschillende uitvoertypen van de hash. U kunt kiezen tussen `hex_` voor hexadecimale cijfers, `b64_` voor Base64-gecodeerde uitvoer, of `str_` voor eenvoudige tekenreekscodering.
+Zoals u in deze lijst kunt zien, zijn er verschillende functies beschikbaar voor de verschillende uitvoertypen van de hash. U kunt kiezen tussen `hex_` voor hexadecimale cijfers, `b64_` voor Base64-gecodeerde uitvoer of `str_` voor eenvoudige tekenreekscodering.
 
 Afhankelijk van de gekozen hashfunctie varieert de lengte van de hash:
 
@@ -79,10 +79,10 @@ De voorbeeldbestanden voor dit artikel bevatten twee PDF forms. In het eerste vo
 Voer de onderstaande stappen uit om het eerste voorbeeld te proberen:
 
 1. Nadat u de voorbeeldbestanden hebt gedownload en uitgepakt, opent u hashing_forms_sample1.pdf met AEM Forms op JEE Designer. U kunt ook Adobe Reader of Adobe Acrobat Professional gebruiken om het voorbeeld te openen en weer te geven, maar u kunt de broncode niet zien.
-1. In het tekstveld met het label [!UICONTROL clear text] Typ een wachtwoord of een ander bericht dat u wilt hashed.
+1. Typ in het tekstveld [!UICONTROL clear text] een wachtwoord of een ander bericht dat u wilt hasheren.
 1. Klik op een van de vier knoppen om de hash voor MD4, MD5, SHA-1 of SHA-256 te genereren. Afhankelijk van de knop die u hebt ingedrukt, wordt een van de vier hashfuncties die hexadecimale uitvoer produceren aangeroepen en wordt uw tekenreeks of bericht gehasht.
 
-Het resultaat van de hash-bewerking wordt weergegeven in het veld met het label [!UICONTROL hash]. De lengte van de hash is afhankelijk van de gekozen hash-functie.
+Het resultaat van de hash-bewerking wordt weergegeven in het veld met het label [!UICONTROL hash] . De lengte van de hash is afhankelijk van de gekozen hash-functie.
 
 Alle steekproeven gebruiken hexadecimale cijfers als outputtype. U kunt de Redacteur van het Manuscript gebruiken om de steekproeven te wijzigen en het outputtype te veranderen in Base64 of eenvoudige Koord.
 
@@ -92,11 +92,11 @@ In het tweede voorbeeld ziet u hoe hashes op de achtergrond worden vergeleken, z
 
 Voer de onderstaande stappen uit om het tweede voorbeeld te proberen:
 
-1. Openen `hashing_forms_sample2.pdf` met AEM Forms op JEE Designer. U kunt ook Adobe Reader of Adobe Acrobat Professional gebruiken om het voorbeeld te openen en weer te geven, maar u kunt de broncode niet zien.
+1. Open `hashing_forms_sample2.pdf` met AEM Forms op JEE Designer. U kunt ook Adobe Reader of Adobe Acrobat Professional gebruiken om het voorbeeld te openen en weer te geven, maar u kunt de broncode niet zien.
 1. Kies een van de twee wachtwoordvelden met het label [!UICONTROL Password MAN] of [!UICONTROL Password WOMAN] en typ de wachtwoorden:
    1. Het wachtwoord voor de man is `bob`
    1. Het wachtwoord voor de vrouw is `alice`
-1. Wanneer u de focus uit de wachtwoordvelden verplaatst of op Enter drukt, wordt de hash van het ingevoerde wachtwoord automatisch gegenereerd en wordt deze vergeleken met de opgeslagen hash van het juiste wachtwoord op de achtergrond. De correcte, gehashte wachtwoorden worden opgeslagen in de onzichtbare tekstvelden met het label `passwd_man_hashed` en `passwd_woman_hashed`. Als u het juiste wachtwoord voor de man typt, worden de tekstvelden gelabeld `Man 1` en `Man 2` zijn toegankelijk gemaakt, zodat u er tekst in kunt typen. Hetzelfde gedrag geldt voor de velden van de vrouw.
+1. Wanneer u de focus uit de wachtwoordvelden verplaatst of op Enter drukt, wordt de hash van het ingevoerde wachtwoord automatisch gegenereerd en wordt deze vergeleken met de opgeslagen hash van het juiste wachtwoord op de achtergrond. De juiste, onderbroken wachtwoorden worden opgeslagen in de onzichtbare tekstvelden met de labels `passwd_man_hashed` en `passwd_woman_hashed` . Als u het juiste wachtwoord voor de man typt, worden de tekstvelden `Man 1` en `Man 2` toegankelijk gemaakt, zodat u er tekst in kunt typen. Hetzelfde gedrag geldt voor de velden van de vrouw.
 1. U kunt ook op de knop met het label &quot;Wachtwoorden verwijderen&quot; klikken. Hiermee worden de tekstvelden uitgeschakeld en wordt de rand van de velden gewijzigd.
 
 De code voor het vergelijken van de twee gehashte waarden en het inschakelen van de tekstvelden is eenvoudig:
@@ -114,13 +114,13 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 Waar heb je zoiets nodig? Neem bijvoorbeeld een PDF-formulier met velden die alleen door geautoriseerde personen moeten worden ingevuld. Als u deze velden beveiligt met een wachtwoord, dat nergens in het document in duidelijke tekst staat, zoals in Sample_2.pdf, kunt u ervoor zorgen dat deze velden alleen toegankelijk zijn voor gebruikers die het wachtwoord weten.
 
-Ik moedig u aan om de twee dossiers van de steekproefPDF verder te onderzoeken.  U kunt nieuwe knoeiboelwaarden met Sample_1.pdf produceren, en de geproduceerde waarden gebruiken om of het wachtwoord of de knoeiboelfunctie te veranderen die in Sample_2.pdf wordt gebruikt.  De bronnen in de sectie Kenmerken bieden ook aanvullende informatie over hashing en de specifieke JavaScript-implementaties die in dit artikel worden gebruikt.
+Ik moedig u aan om de twee dossiers van de steekproefPDF verder te onderzoeken.  U kunt nieuwe knoeiboelwaarden met Sample_1.pdf produceren, en de geproduceerde waarden gebruiken om of het wachtwoord of de knoeiboelfunctie te veranderen die in Sample_2.pdf wordt gebruikt.  De middelen die in de sectie van Attributen worden vermeld verstrekken ook extra informatie over het hakken en de specifieke implementaties van JavaScript die in dit artikel worden gebruikt.
 
 ## Attributen {#attributions}
 
-* [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
-* [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
-* [Hash-botsing](https://en.wikipedia.org/wiki/Hash_collision)
-* [Regenboogtafel](https://en.wikipedia.org/wiki/Rainbow_table)
-* [Introductiepagina van JavaScript MD5-project](https://pajhome.org.uk/crypt/md5/)
-* [homepage van jsSHA2-project](https://anmar.eu.org/projects/jssha2/)
+* [ Ronald Rivest ](https://en.wikipedia.org/wiki/Ron_Rivest)
+* [ NIST ](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
+* [ botsing van de Hash ](https://en.wikipedia.org/wiki/Hash_collision)
+* [ Regenbooglijst ](https://en.wikipedia.org/wiki/Rainbow_table)
+* [ JavaScript MD5 het projecthuis pagina ](https://pajhome.org.uk/crypt/md5/)
+* [ jsSHA2 het projecthuis pagina ](https://anmar.eu.org/projects/jssha2/)

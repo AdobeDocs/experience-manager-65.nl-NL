@@ -32,28 +32,28 @@ De inhoud kan vervolgens worden afgestemd op de behoeften en belangen van de bez
 
 ## Segmentatie gebruiken {#using-segmentation}
 
-Segmenten worden gedefinieerd in [Segmentatie configureren](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
+De segmenten worden bepaald in [ het Vormen Segmentatie ](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
 
 ## Gesegmenteerde terminologie {#segmentation-terminology}
 
 Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
 
-**Bezoeker** - Een bezoeker is een persoon die een website bezoekt. Het bezoek van die persoon begint gewoonlijk van een verwijzende pagina, dan gaat op één of meerdere paginameningen op uw eigen website over. Een gedragsprofiel kan worden gemaakt op basis van de details van het bezoek van die persoon.
+**Bezoeker** - een bezoeker is een persoon die een website bezoekt. Het bezoek van die persoon begint gewoonlijk van een verwijzende pagina, dan gaat op één of meerdere paginameningen op uw eigen website over. Een gedragsprofiel kan worden gemaakt op basis van de details van het bezoek van die persoon.
 
-**Gebruiker** - Een gebruiker is een bezoeker die zich bij de website registreert om een accountprofiel te ontvangen. Om hun profiel te genereren, bieden ze aanvullende identificatie, zoals een e-mailadres en geslacht. Er kan ook aanvullende informatie worden verzameld, zoals activiteiten in de gemeenschap en aankooppatronen, ook hier weer. Op basis van de informatie in het profiel kan een demografisch profiel worden gemaakt.
+**Gebruiker** - een gebruiker is een bezoeker die bij de website registreert om een rekeningsprofiel te ontvangen. Om hun profiel te genereren, bieden ze aanvullende identificatie, zoals een e-mailadres en geslacht. Er kan ook aanvullende informatie worden verzameld, zoals activiteiten in de gemeenschap en aankooppatronen, ook hier weer. Op basis van de informatie in het profiel kan een demografisch profiel worden gemaakt.
 
-**Trait** - Een eigenschap is een eigenschap of eigenschap van een bezoeker die kan worden gebruikt om het lidmaatschap van een bepaald segment te bepalen.
+**Spoor** - een bezit is een kenmerk of een bezit van een bezoeker dat kan worden gebruikt om lidmaatschap in een specifiek segment te bepalen.
 
-**Segment** - Een segment is een verzameling bezoekers die bepaalde kenmerken delen. Segmenten moeten onderscheidend zijn, met een minimum aan overlapping met andere segmenten.
+**Segment** - een segment is een inzameling van bezoekers die bepaalde eigenschappen delen. Segmenten moeten onderscheidend zijn, met een minimum aan overlapping met andere segmenten.
 
-**Gedragkarakteristieken** - Gedragskenmerken zijn die welke betrekking hebben op het gedrag van een bezoeker op de website. Deze omvatten:
+**de Behavioral Traits van het Gedrag** - De eigenschappen van het Gedrag zijn die op het gedrag van een bezoeker op de website betrekking hebben. Deze omvatten:
 
 * Interesse op uw website, inclusief bezochte pagina&#39;s en aangekochte producten.
 * Interesse op de verwijzende website; inclusief gebruikte zoektermen of aangeklikte advertenties.
 * Belang op andere sites; bepaald met behulp van hulpmiddelen zoals Spyjax.
 * loyaliteit van de bezoeker; duur van het bezoek, frequentie van de bezoeken.
 
-**Demografische kenmerken** - Dit zijn geselecteerde populatiekenmerken, waaronder:
+**Demografische Beelden** - Deze zijn geselecteerde bevolkingskenmerken met inbegrip van:
 
 * Leeftijd
 * Inkomens
@@ -62,22 +62,22 @@ Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
 * Geslacht
 * Locatie
 
-**Afgeleide transacties**
+**Voortgekomen Beetjes**
 
 Sommige demografische kenmerken zijn moeilijk te bepalen zonder registratie, maar kunnen worden afgeleid door gedrags- en demografische kenmerken te combineren.
 
-Bijvoorbeeld het combineren van de verwijzende URL (als gedragslijn) met demografische gegevens (verkregen met gereedschappen zoals [Google Ad Planner](https://www.google.com/adplanner/)) stelt de eigenaars van sites in staat demografische kenmerken van hun bezoekers af te leiden.
+Bijvoorbeeld, staat het combineren van verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [ worden verkregen Google Ad Planner ](https://www.google.com/adplanner/)) plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
 
-**Subsegment** - Een segment kan in verscheidene subsegmenten worden onderverdeeld. Dit wordt gedaan door extra eigenschappen te bepalen.
+**Subsegment** - een segment kan in verscheidene subsegmenten worden onderverdeeld. Dit wordt gedaan door extra eigenschappen te bepalen.
 
-**Teaserpagina** - Een teaspagina wordt gericht aan een specifiek publiek. Het bevat herbruikbare inhoud die in de teasalinea kan worden gebruikt.
+**de Pagina van het Taser** - een teaser pagina wordt geleid aan een specifiek publiek. Het bevat herbruikbare inhoud die in de teasalinea kan worden gebruikt.
 
-**Campagne** - Een campagne bestaat uit een verzameling teaserpagina&#39;s en e-mailmarketingpagina&#39;s, zoals nieuwsbrieven of uitnodigingen. Een campagne wordt doorgaans gedurende een beperkte periode uitgevoerd en wordt vervangen door een andere campagne.
+**Campagne** - een campagne is een inzameling van laserpagina&#39;s en e-mailmarketing pagina&#39;s, zoals nieuwsbrieven of uitnodigingen. Een campagne wordt doorgaans gedurende een beperkte periode uitgevoerd en wordt vervangen door een andere campagne.
 
-**Taser-alinea** - Dit is een paragraaf die inhoud van een andere pagina afhankelijk van een selectiestrategie trekt. Deze selectiestrategie kan segmenten en campagnes in overweging nemen.
+**Paragraaf van het Taser** - dit is een paragraaf die inhoud van een andere pagina afhankelijk van een selectiestrategie trekt. Deze selectiestrategie kan segmenten en campagnes in overweging nemen.
 
-**Lijst** - Een lijst is afkomstig uit een segment geregistreerde gebruikers. Bijvoorbeeld de locatie die wordt gebruikt om de inhoud van de teasalinea te sturen.
+**Lijst** - een lijst wordt gehaald uit een segment van geregistreerde gebruikers. Bijvoorbeeld de locatie die wordt gebruikt om de inhoud van de teasalinea te sturen.
 
 >[!NOTE]
 >
->Zie [Segmentering](/help/sites-administering/campaign-segmentation.md) voor meer informatie over segmenten in Adobe Experience Manager.
+>Zie [ Segmentatie ](/help/sites-administering/campaign-segmentation.md) voor verdere informatie over segmenten in Adobe Experience Manager.

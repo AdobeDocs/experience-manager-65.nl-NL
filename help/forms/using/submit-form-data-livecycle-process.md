@@ -24,27 +24,27 @@ Adaptieve formulieren ondersteunen het verzenden van gegevens naar AEM Forms ove
 
 Voer de volgende stappen uit zodat u uw AEM Forms Server kunt inschakelen om gegevens naar een AEM Forms op de JEE-server te verzenden:
 
-1. Ga naar AEM webconfiguratieconsole op https://[*host*]:[*poort*]/system/console/configMgr.
+1. Ga naar AEM console van de Webconfiguratie in https:// [*gastheer*]:[*haven*]/system/console/configMgr.
 
-1. Ga naar de **Adobe LiveCycle client SDK Configuration** component.
+1. Bepaal en klik de **component van de Configuratie van SDK van de Cliënt van het LiveCycle van de Adobe**.
 1. Klik hierop om de URL van de configuratieserver, de gebruikersnaam en het wachtwoord voor de AEM Forms op de JEE-server te bewerken.
-1. Controleer de instellingen en klik op **Opslaan**.
+1. Herzie de montages en klik **sparen**.
 
-![Adobe LiveCycle client SDK configuratie](assets/clientsdkconfiguration.jpg)
+![ de configuratie van SDK van de Cliënt van het LiveCycle van de Adobe ](assets/clientsdkconfiguration.jpg)
 
 ## Gegevens toewijzen aan procesvelden {#map-data-with-process-fields}
 
 Nadat u AEM Forms hebt geconfigureerd, wijst u de XML-gegevens en bijlagen van het verzonden formulier toe aan de velden in het AEM Forms on JEE-proces. Ga als volgt te werk:
 
-1. Klik in de AEM webconfiguratieconsole om de **Locator en aanroeper van procesprocessen voor hulplijnen** configuratie.
+1. In de AEM console van de Webconfiguratie, klik om de **Locator van het Proces van het LiveCycle van de Gids en de Configuratie van de Invoker** uit te geven.
 1. Geef de volgende parameters op:
 
-   * **Naam van de parameter data xml** (verplicht): geef het XML-eigenschappenbestand op van het AEM Forms on JEE-proces dat de verzonden gegevens moet verwerken. De standaardwaarde is **dataxml**.
+   * **Naam van de gegevensxml parameter** (verplicht): specificeer het het bezitsdossier van XML van AEM Forms op proces JEE dat de voorgelegde gegevens moet verwerken. De standaardwaarde is dataxml ****.
 
-   * **Naam van de parameter voor bestandsbijlagen** (optioneel): geef de lijst op met documentobjecten die het AEM Forms on JEE-proces moet verwerken. De standaardwaarde is **fileAttachmentsList**.
+   * **Naam van de parameter van dossiergehechtheid** (facultatief): specificeer de lijst van documentvoorwerpen die AEM Forms op JEE proces moet verwerken. De standaardwaarde is **fileAttachmentsList**.
 
-1. Controleer de instellingen en klik op **Opslaan**.
+1. Herzie de montages en klik **sparen**.
 
-![Locator en aanroeper van procesprocessen voor hulplijnen](assets/test3.jpg)
+![ Locator en Invoker van het Proces van de Gids LiveCycle ](assets/test3.jpg)
 
 Zodra gevormd, legt de Verzenden aan Forms Workflow actie een lijst voor van AEM Forms op JEE serverprocessen die de gespecificeerde gegevens xml parameter bevatten.

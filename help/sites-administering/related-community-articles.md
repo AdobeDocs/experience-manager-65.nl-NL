@@ -22,6 +22,6 @@ De Gemeenschap Adobe Experience Manager (AEM) heeft een reeks artikelen opgestel
 
 Hier volgt een overzicht van de beschikbare inhoud:
 
-* [Activeringsregels gebruiken in Adobe Experience Manager-webpagina&#39;s](https://helpx.adobe.com/experience-manager/using/dtm.html)
-* [AEM integreren met Adobe Analytics en Target met DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
-* [Adobe Experience Manager en Adobe Campaign Standard integreren om nieuwsbrieven te maken](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)
+* [ Gebruikend de regels van de Activering in Adobe Experience Manager Web-pagina&#39;s ](https://helpx.adobe.com/experience-manager/using/dtm.html)
+* [ Integrerend AEM met Adobe Analytics en Doel gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
+* [ Integrerend Adobe Experience Manager en Adobe Campaign Standard om Nieuwsbrieven ](https://helpx.adobe.com/experience-manager/using/aem_campaign.html) te creëren

@@ -36,7 +36,7 @@ HTML5 vormen kunnen volgende topologieën gebruiken om met de AEM servers te ver
 * Een topologie waar AEM Server of HTML5 vormen gegevens via POST naar de server verzenden.
 * Een topologie waar de volmachtsserver de gegevens van de POST naar de server verzendt.
 
-![HTML5 de volmachtstopologieën van de vormendienst](assets/topology.png)
+![ HTML5 de topologieën van de de dienstvolmacht van vormen ](assets/topology.png)
 
 HTML5 de volmachtstopologieën van de vormendienst
 
@@ -131,6 +131,6 @@ De verzendserviceproxy fungeert als een pass through als de verzender niet aanwe
 De voorgelegde de dienstvolmacht selecteert een topologie als voorlegger in de verzoekparameter aanwezig is.
 
 * Als AEM servers de gegevens posten, dienst van de volmacht als ervaart. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar runtime XFA.
-* Als de volmacht de gegevens post, gaat de volmachtsdienst alle parameters behalve submitUrl tot over */bin/xfaforms/submit* eindpunt en ontvangt xml bytes in response stream. Dan, post de volmachtsdienst de gegevens xml bytes aan submitUrl voor verwerking.
+* Als de volmacht de gegevens post, gaat de volmachtsdienst alle parameters behalve submitUrl tot het */bin/xfaforms/submitAction* eindpunt over en ontvangt xml bytes in reactiestream. Dan, post de volmachtsdienst de gegevens xml bytes aan submitUrl voor verwerking.
 
-* Voordat u gegevens (verzoek om POST) naar een server verzendt, controleren HTML5-formulieren de connectiviteit en beschikbaarheid van de server. Om connectiviteit en beschikbaarheid te verifiëren, verzenden de vormen van HTML een leeg hoofdverzoek naar de server. Als de server beschikbaar is, verzendt het formulier HTML5 gegevens (verzoek van de POST) naar de server. Als de server niet beschikbaar is, een foutbericht *Kan geen verbinding maken met de server.* wordt weergegeven. De detectie vooraf voorkomt dat gebruikers het formulier kunnen bijvullen. De volmachtsservlet behandelt hoofdverzoek en werpen geen uitzondering.
+* Voordat u gegevens (verzoek om POST) naar een server verzendt, controleren HTML5-formulieren de connectiviteit en beschikbaarheid van de server. Om connectiviteit en beschikbaarheid te verifiëren, verzenden de vormen van HTML een leeg hoofdverzoek naar de server. Als de server beschikbaar is, verzendt het formulier HTML5 gegevens (verzoek van de POST) naar de server. Als de server niet beschikbaar is, een foutenmelding, *Kon niet met de server verbinden,* wordt getoond. De detectie vooraf voorkomt dat gebruikers het formulier kunnen bijvullen. De volmachtsservlet behandelt hoofdverzoek en werpen geen uitzondering.

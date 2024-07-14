@@ -1,6 +1,6 @@
 ---
-title: De categorieën beheren die worden weergegeven in Workspace
-description: In Workspace worden de processen die een gebruiker kan starten, weergegeven in categorieën in het linkernavigatievenster. Leer hoe u deze categorieën kunt beheren die in Workspace worden weergegeven.
+title: De categorieën beheren die in Workspace worden weergegeven
+description: In Workspace worden de processen die een gebruiker kan starten, weergegeven in categorieën in het linkernavigatievenster. Leer hoe je deze rubrieken kunt beheren die in Workspace worden weergegeven.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 ---
 
-# De categorieën beheren die worden weergegeven in Workspace {#managing-the-categories-displayed-in-workspace}
+# De categorieën beheren die in Workspace worden weergegeven {#managing-the-categories-displayed-in-workspace}
 
 In Workspace worden de processen die een gebruiker kan starten, weergegeven in categorieën in het linkernavigatievenster. U kunt de categorieën instellen in de beheerconsole of procesontwerpers kunnen deze instellen in Workbench. Wanneer procesontwerpers processen creëren, wijzen zij hen aan categorieën toe.
 
-Als u categorienamen opgeeft, maakt u deze zo dat ze op de juiste wijze worden weergegeven in het navigatievenster Werkruimte. Standaard heeft het linkernavigatievenster een vaste breedte van 210 pixels (ongeveer 24 tekens). Als de opgegeven categorienaam te lang is om binnen de vaste breedte van het linkernavigatievenster te passen, wordt deze afgekapt. De volledige naam wordt alleen weergegeven wanneer de muisaanwijzer erop wordt gepauzeerd. Vermijd categorienamen die worden afgekapt. De volgende voorbeelden illustreren categorienamen die passen en categorienamen die worden afgekapt:
+Als u categorienamen opgeeft, maakt u deze zo dat ze op de juiste wijze worden weergegeven in het navigatievenster van Workspace. Standaard heeft het linkernavigatievenster een vaste breedte van 210 pixels (ongeveer 24 tekens). Als de opgegeven categorienaam te lang is om binnen de vaste breedte van het linkernavigatievenster te passen, wordt deze afgekapt. De volledige naam wordt alleen weergegeven wanneer de muisaanwijzer erop wordt gepauzeerd. Vermijd categorienamen die worden afgekapt. De volgende voorbeelden illustreren categorienamen die passen en categorienamen die worden afgekapt:
 
-**Categorienaam die past bij:** Aanwezigheid en verlaten
+**Naam van de Categorie die past:** Aanwezigheid &amp; Verlof
 
-**Categorienaam die is afgekapt:** Aanwezigheid en verlof (Verenigde Staten)
+**naam van de Categorie die wordt beknot:** Aanwezigheid &amp; Verlof (Verenigde Staten)
 
 In Workspace worden processen in een categorie doorgaans als kaarten weergegeven op de pagina Proces starten. Over het algemeen kunnen zes kaarten op het scherm voor een categorie worden weergegeven voordat de gebruiker moet schuiven om de resterende kaarten te bekijken. Omdat het scrollen het moeilijker maakt om een proces te vinden, denk na beperkt elke categorie tot zes processen of, afhankelijk van uw resolutie, het aantal processen dat op het scherm kan worden getoond zonder het vereisen van om het even welk scrollen.
 
@@ -37,7 +37,7 @@ Als u MySQL als uw AEM formulierdatabase gebruikt, kan de beheerconsole geen ond
 1. Typ in het vak Naam een naam voor de categorie en typ in het vak Beschrijving een beschrijving van de categorie.
 1. Klik toevoegen. De categorie wordt getoond op de pagina van het Beheer van de Categorie.
 
-   ***notitie **: U kunt maximaal vijf hiërarchische niveaus toevoegen wanneer u categorieën maakt.*
+   ***nota **: U kunt slechts tot vijf niveaus van hiërarchie toevoegen wanneer het creëren van categorieën.*
 
 ## Een categorie bewerken {#edit-a-category}
 

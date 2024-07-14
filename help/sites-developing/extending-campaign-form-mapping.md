@@ -29,14 +29,14 @@ U moet het volgende installeren:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Zie [AEM integreren met Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) voor meer informatie .
+Zie [ Integrerend AEM met Adobe Campaign Classic ](/help/sites-administering/campaignonpremise.md) voor meer informatie.
 
 ## Aangepaste formuliertoewijzingen maken {#creating-custom-form-mappings-2}
 
 Als u aangepaste formuliertoewijzingen wilt maken, moet u de volgende stappen op hoog niveau uitvoeren. Deze worden in de volgende secties uitgebreid beschreven:
 
 1. Een aangepaste tabel maken.
-1. Breid uit **zaad** tabel.
+1. Breid de **zaadlijst** uit.
 1. Een aangepaste toewijzing maken.
 1. Maak een levering op basis van de aangepaste toewijzing.
 1. Het formulier samenstellen in AEM, waarbij de gemaakte levering wordt gebruikt.
@@ -55,15 +55,15 @@ Begin door een douanetabel in Adobe Campaign te creëren. In dit voorbeeld gebru
 </element>
 ```
 
-Nadat u de gebeurtenissentabel hebt gemaakt, voert u de **Wizard Databasestructuur bijwerken** om de tabel te maken.
+Nadat u de gebeurtenislijst creeert, stel de **tovenaar van de het gegevensbestandstructuur van de Update** in werking om de lijst tot stand te brengen.
 
 ### De zaadtabel uitbreiden {#extending-the-seed-table}
 
-Selecteer in Adobe Campaign **Toevoegen** om een extensie van de **Zaadadressen (nms)** tabel.
+In Adobe Campaign, voegt de uitgezochte **** toe om een uitbreiding van **te creëren zaadadressen (nms)** lijst.
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![ chlimage_1-194 ](assets/chlimage_1-194.png)
 
-Gebruik nu de velden van de **event** tabel om de **zaad** tabel:
+Nu, gebruik de gebieden van de **gebeurtenis** lijst om de **zaadlijst** uit te breiden:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -74,56 +74,56 @@ Gebruik nu de velden van de **event** tabel om de **zaad** tabel:
  </element>
 ```
 
-Hierna voert u **Databasewizard bijwerken** om de wijzigingen toe te passen.
+Na dit, stel **de gegevensbestandtovenaar van de Update** in werking om de veranderingen toe te passen.
 
 ### Aangepaste doeltoewijzing maken {#creating-custom-target-mapping}
 
-In **Beheer/Campagne** t, ga **Doeltoewijzingen** en voeg een nieuwe T toe **Doeltoewijzing.**
+In **Beheer van het Beleid/van de Campagne** niet, ga **Toewijzingen van het Doel** en voeg een nieuwe t **doelafbeelding toe.**
 
 >[!NOTE]
 >
->Zorg ervoor dat u een betekenisvolle naam gebruikt voor **Interne naam**.
+>Zorg ervoor u een betekenisvolle naam voor **Interne naam** gebruikt.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![ chlimage_1-195 ](assets/chlimage_1-195.png)
 
 ### Een aangepaste leveringssjabloon maken {#creating-a-custom-delivery-template}
 
-In deze stap voegt u een leveringsmalplaatje toe dat gecreeerde gebruikt **Doeltoewijzing**.
+In deze stap, voegt u een leveringsmalplaatje toe dat de gecreeerde **afbeelding van het Doel** gebruikt.
 
-In **Bronnen/sjablonen**, navigeer naar de leveringssjabloon en dupliceer de bestaande AEM levering. Wanneer u op **Naar**, selecteert u de gebeurtenis create **Doeltoewijzing**.
+In **Middelen/Malplaatjes**, navigeer aan het Malplaatje van de Levering en dupliceer de bestaande AEM levering. Wanneer u **aan** klikt, selecteer creeer gebeurtenis **afbeelding van het Doel**.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![ chlimage_1-196 ](assets/chlimage_1-196.png)
 
 ### Het formulier samenstellen in AEM {#building-the-form-in-aem}
 
-In AEM, zorg ervoor u een Cloud Service binnen hebt gevormd **Pagina-eigenschappen**.
+In AEM, zorg ervoor u een Cloud Service in **Eigenschappen van de Pagina** hebt gevormd.
 
-Dan, in **Adobe Campaign** selecteert u de levering waarin [Een aangepaste leveringssjabloon maken](#creating-a-custom-delivery-template).
+Dan, in het **Adobe Campaign** lusje, selecteer de levering die in [ werd gecreeerd Creërend een Malplaatje van de Levering van de Douane ](#creating-a-custom-delivery-template).
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![ chlimage_1-197 ](assets/chlimage_1-197.png)
 
 Wanneer u de velden configureert, moet u unieke elementnamen opgeven voor de formuliervelden.
 
 Nadat de gebieden worden gevormd, moet u de afbeelding manueel veranderen.
 
-Ga in CRXDE-lite naar de **jcr:inhoud** (van de pagina) en wijzig de **acMapping** waarde voor de interne naam van de **Doeltoewijzing**.
+In CRXDE-lijst, ga **jcr:content** (van de pagina) knoop en verander de **acMapping** waarde aan de interne naam van de **afbeelding van het Doel**.
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![ chlimage_1-198 ](assets/chlimage_1-198.png)
 
 Controleer in de configuratie van het formulier of u het selectievakje inschakelt om te maken dat het formulier niet bestaat
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![ chlimage_1-199 ](assets/chlimage_1-199.png)
 
 ### Het formulier verzenden {#submitting-the-form}
 
 U kunt nu het formulier verzenden en op de Adobe Campaign valideren of de waarden zijn opgeslagen.
 
-![chlimage_1-200](assets/chlimage_1-200.png)
+![ chlimage_1-200 ](assets/chlimage_1-200.png)
 
 ## Problemen oplossen {#troubleshooting}
 
-**&quot;Ongeldig type voor waarde &#39;02/02/2015&#39; van element &#39;@eventdate&#39; (document van type &#39;Event ([adb:event])&#39;)&quot;**
+**&quot;Ongeldig type voor waarde &quot;02/02/2015&quot;van element &quot;@eventdate&quot;(document van type &quot;Gebeurtenis ([ adb:event ])&quot;)**
 
-Bij het verzenden van het formulier wordt deze fout in het dialoogvenster **error.log** in AEM.
+Wanneer het voorleggen van de vorm, wordt deze fout het programma geopend **error.log** in AEM.
 
-Dit wordt veroorzaakt door een ongeldige indeling voor het datumveld. De oplossing is om **jjjj-mm-dd** als de waarde.
+Dit wordt veroorzaakt door een ongeldige indeling voor het datumveld. De oplossing moet **jjjj-mm-dd** als waarde leveren.

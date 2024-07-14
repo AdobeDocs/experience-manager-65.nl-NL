@@ -22,13 +22,13 @@ Hardwarebeveiligingsmodules (HSM) en -netwerken zijn speciale, geharde en tamper
 
 Adobe Experience Manager Forms kan referenties gebruiken die zijn opgeslagen op een HSM of token om serverzijdige digitale handtekeningen elektronisch te ondertekenen of toe te passen op een document. Een HSM- of token-apparaat gebruiken met AEM Forms:
 
-1. [De DocAssurance-service inschakelen](#configuredocassurance).
-1. [Een alias maken voor het HSM- of token-apparaat in de AEM webconsole](#configuredeviceinaemconsole).
-1. [Gebruik de DocAssurance Service-API&#39;s om de documenten te ondertekenen of certificeren met digitale sleutels die op het apparaat zijn opgeslagen](#programatically).
+1. [ laat de dienst DocAssurance ](#configuredocassurance) toe.
+1. [ creeer een alias voor HSM of token apparaat in de Console van het AEM Web ](#configuredeviceinaemconsole).
+1. [ gebruik de Dienst DocAssurance APIs om de documenten met digitale sleutels te ondertekenen of te certificeren die op het apparaat ](#programatically) worden opgeslagen.
 
 ## Voordat u HSM configureert of de apparaten instelt met AEM Forms {#configurehsmetoken}
 
-* Installeer de [AEM Forms-invoegtoepassing](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pakket.
+* Installeer het [ toe:voegen-op ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pakket van AEM Forms.
 * Installeer en configureer HSM of installeer de clientsoftware op dezelfde computer als de AEM. De cliëntsoftware wordt vereist om met HSM en apparaten te communiceren.
 
 ## De DocAssurance-service inschakelen {#configuredocassurance}
@@ -37,11 +37,11 @@ De dienst DocAssurance is standaard niet ingeschakeld. Voer de volgende stappen 
 
 1. Stop de instantie Auteur van uw AEM Forms-omgeving.
 
-1. Open de [AEM_root]\crx-quickstart\conf\sling.properties.
+1. Open het [ AEM_root ] \crx-quickstart\conf\sling.properties- dossier uit te geven.
 
    >[!NOTE]
    >
-   >Als u het [AEM_root]\crx-quickstart\bin\start.bat om het AEM-exemplaar te starten, opent u het dialoogvenster [AEM_root]\crx-quickstart\sling.properties, bestand voor bewerking.
+   >Als u het [ AEM_root ] \crx-quickstart\bin\start.bat- dossier hebt gebruikt om de AEM instantie te beginnen, dan open [ AEM_root ] \ crx-quickstart \ sling.properties- dossier voor het uitgeven.
 
 1. Voeg de volgende eigenschappen toe of vervang de volgende eigenschappen aan het bestand sling.properties:
 
@@ -99,22 +99,22 @@ Perform the following steps to setup certificates:
 
 De alias bevat alle parameters die een HSM of token vereist. Voer de onderstaande instructies uit om een alias te maken voor elke HSM of voor de token-referentie die door eSign of Digital Signatures wordt gebruikt:
 
-1. Open de AEM console. De standaard-URL van de AEM console is https://&lt;host>:&lt;port>/system/console/configMgr
-1. Open de **Configuratieservice HSM Credentials** en geef waarden op voor de volgende velden:
+1. Open de AEM console. De standaard-URL van de AEM is https://&lt;host>:&lt;port>/system/console/configMgr
+1. Open de **Dienst van de Configuratie van de Credentials HSM** en specificeer waarden voor de volgende gebieden:
 
-   * **Credentiële alias**: Geef een tekenreeks op die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-   * **DLL-pad**: Geef het pad op van uw HSM- of toepassingsbibliotheek op de server. Bijvoorbeeld: `C:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet u ervoor zorgen dat alle servers in de cluster een identiek pad gebruiken.
-   * **HSM-punt**: Geef het wachtwoord op dat nodig is voor toegang tot de apparaattoets.
-   * **HSM-sleuf-id**: Geef een slot-id op van het type geheel getal. De groef ID wordt geplaatst op een cliënt-door-cliënt basis. Het wordt gebruikt om de groef op HSM te identificeren die de privé sleutel voor teken/certificatie bevat.
+   * **Referentie Alias**: Specificeer een koord dat wordt gebruikt om alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
+   * **Weg DLL**: Specificeer de weg van uw HSM of vastgestelde cliëntbibliotheek op de server. Bijvoorbeeld `C:\Program Files\LunaSA\cryptoki.dll` . In een gegroepeerde omgeving moet u ervoor zorgen dat alle servers in de cluster een identiek pad gebruiken.
+   * **Punt HSM**: Specificeer het wachtwoord dat wordt vereist om tot de apparatensleutel toegang te hebben.
+   * **Identiteitskaart van de Slot HSM**: Specificeer een groef herkenningsteken van type geheel. De groef ID wordt geplaatst op een cliënt-door-cliënt basis. Het wordt gebruikt om de groef op HSM te identificeren die de privé sleutel voor teken/certificatie bevat.
 
    >[!NOTE]
    >
    >Geef tijdens het configureren van Etoken een numerieke waarde op voor het veld Id van HSM-sleuf. Er is een numerieke waarde vereist om de handtekeningbewerkingen te laten werken.
 
-   * **Certificaat SHA1**: Geef de SHA1-waarde (miniafdruk) van het bestand public key (.cer) op voor de referentie die u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde.
-   * **Type HSM-apparaat**: Selecteer de fabrikant van de HSM (Luna of other) of het Symbolische apparaat.
+   * **Certificaat SHA1**: Specificeer de waarde SHA1 (duimdruk) van het openbare zeer belangrijke (.cer) dossier voor de referentie die u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde.
+   * **Type van Apparaat HSM**: Selecteer de fabrikant van HSM (Luna of andere) of Symbolisch apparaat.
 
-   Klikken **Opslaan**. De beveiligingsmodule voor hardware is geconfigureerd voor AEM Forms. U kunt nu de beveiligingsmodule voor hardware in AEM Forms gebruiken om documenten te ondertekenen of te certificeren.
+   Klik **sparen**. De beveiligingsmodule voor hardware is geconfigureerd voor AEM Forms. U kunt nu de beveiligingsmodule voor hardware in AEM Forms gebruiken om documenten te ondertekenen of te certificeren.
 
 ## Gebruik de DocAssurance Service-API&#39;s om een document te ondertekenen of certificeren met digitale sleutels die op het apparaat zijn opgeslagen  {#programatically}
 
@@ -415,4 +415,4 @@ Als u van AEM 6.0 Vorm of AEM 6.1 Forms hebt bevorderd, en u de dienst DocAssura
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Voor gedetailleerde informatie over APIs en steekproefcode van de dienst DocAssurance, zie [Programmaticaal AEM Document Services gebruiken](/help/forms/using/aem-document-services-programmatically.md).
+Voor gedetailleerde informatie over APIs en steekproefcode van de dienst DocAssurance, zie [ Programmatiatically Gebruikend AEM de Diensten van het Document ](/help/forms/using/aem-document-services-programmatically.md).

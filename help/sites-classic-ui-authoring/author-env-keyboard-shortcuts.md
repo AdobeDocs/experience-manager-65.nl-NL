@@ -18,15 +18,15 @@ ht-degree: 0%
 
 # Sneltoetsen voor consoles{#keyboard-shortcuts-for-consoles}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing op het gebruik van consoles, andere op [pagina bewerken](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn op het gebruik van consoles van toepassing, anderen op [ pagina die ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) uitgeven.
 
 >[!NOTE]
 >
 >Multi-select op een desktopapparaat:
 >
->* Windows: **Ctrl**+**klikken** op de vereiste onderdelen.
+>* Vensters: **CTRL** + **klik** op vereiste componenten.
 >
->* Mac: **Cmd**+**klikken** op de vereiste onderdelen.
+>* Mac: **Cmd** + **klik** op vereiste componenten.
 >
 
 ## Sneltoetsen {#keyboard-shortcuts}
@@ -41,9 +41,9 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing o
   <tr>
    <td>Console</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (op de vereiste pagina)</td>
-   <td>Open pagina in nieuw venster.<br /> <strong>Opmerking:</strong> dit is operationeel als de <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Gebruikerseigenschappen</a> worden ingesteld op Eén venster. Als Meerdere vensters wordt gebruikt, is dit het standaardgedrag.</td>
+   <td>Open pagina in nieuw venster.<br /> <strong> Nota:</strong> dit is operationeel als de <a href="/help/sites-classic-ui-authoring/author-env-user-props.md"> Eigenschappen van de Gebruiker </a> aan Één enkel Venster worden geplaatst; als de Veelvoudige Vensters dan dit het standaardgedrag is.</td>
   </tr>
  </tbody>
 </table>
 
-Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [paginaeditor](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) aan ontwerppagina&#39;s.
+Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [ paginaredacteur ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) aan auteurspagina&#39;s.

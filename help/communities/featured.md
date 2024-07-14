@@ -35,41 +35,41 @@ De mogelijkheid om inhoud te voorzien van functies is per component mogelijk toe
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 * Aanbevolen inhoud toevoegen aan een communitysite.
-* De montages van de configuratie voor de `Featured Content` component.
+* Configuration settings for the `Featured Content` component.
 
 ## Aanbevolen inhoud toevoegen aan een pagina {#adding-featured-content-to-a-page}
 
-Als u een `Featured Content` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
+Als u een component `Featured Content` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Featured Content`
 
 En sleep het naar de juiste plaats op een pagina waar de aanbevolen inhoud moet worden weergegeven.
 
-Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
 
-Wanneer de [vereiste clientbibliotheken](essentials-featured.md#essentials-for-client-side) worden opgenomen, is dit hoe `Featured Content` wordt weergegeven:
+Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-featured.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Featured Content` component verschijnt:
 
-![featuretisch](assets/featuredcontent.png)
+![ eigenschap ](assets/featuredcontent.png)
 
 ## Aanbevolen inhoud configureren {#configuring-featured-content}
 
-Selecteer de geplaatste `Featured Content` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste component `Featured Content` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![configure-new](assets/configure-new.png)
+![ vorm-nieuw ](assets/configure-new.png)
 
-![featuredcontent1](assets/featuredcontent1.png)
+![ featuredcontent1 ](assets/featuredcontent1.png)
 
 ### Het tabblad Instellingen {#settings-tab}
 
-Onder de **[!UICONTROL Settings]** , geeft u aan welke inhoud u wilt gebruiken:
+Geef op het tabblad **[!UICONTROL Settings]** aan welke inhoud u wilt gebruiken:
 
 * **[!UICONTROL Display Name]**
 
-  De titel voor de lijst met aanbevolen inhoud. Bijvoorbeeld: `Featured Questions` of `Featured Ideas`. Standaard is `Featured Content` indien leeg gelaten.
+  De titel voor de lijst met aanbevolen inhoud. Bijvoorbeeld `Featured Questions` of `Featured Ideas` . De standaardwaarde is `Featured Content` als deze leeg blijft.
 
 * **[!UICONTROL Location of the Featured Content]**
 
-  *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk wordt weergegeven (componenten van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld: `/content/sites/engage/en/forum`.
+  *(Vereist)* doorblader aan de pagina die de inhoud bevat die kan worden omvat die (de componenten van die pagina moeten worden gevormd om Aanbevolen Inhoud toe te staan). Bijvoorbeeld `/content/sites/engage/en/forum` .
 
 * **[!UICONTROL Display Limit]**
 
@@ -79,20 +79,20 @@ Onder de **[!UICONTROL Settings]** , geeft u aan welke inhoud u wilt gebruiken:
 
 De capaciteit om inhoud als kenmerkende inhoud te markeren vereist moderatorvoorrechten.
 
-Wanneer een moderator geposte inhoud bekijkt, hebben zij toegang tot de vlaggen van de in-context moderatie, die nieuwe omvat `Feature` markering.
+Wanneer een moderator geposte inhoud bekijkt, hebben zij toegang tot de vlaggen van de in-context moderatie, die de nieuwe `Feature` vlag omvat.
 
-![site-bezoeker](assets/site-visitor-experience.png)
+![ plaats-bezoeker-ervaring ](assets/site-visitor-experience.png)
 
-Nadat het als eigenschap wordt gemarkeerd, wordt de moderatiemarkering `Unfeature`.
+Nadat deze als een functie is gemarkeerd, verandert de moderatiemarkering in `Unfeature` .
 
-De pagina met de `Featured Content` bevat nu dit bericht.
+De pagina met de component `Featured Content` bevat nu dit bericht.
 
-![site-bezoeker-ervaring1](assets/site-visitor-experience1.png)
+![ plaats-bezoeker-ervaring1 ](assets/site-visitor-experience1.png)
 
-De `Read More` links naar de feitelijke advertentie.
+De `Read More` verwijst naar het daadwerkelijke bericht.
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie is te vinden op de [Aanbevolen inhoud](essentials-featured.md) pagina voor ontwikkelaars.
+Meer informatie kan op de [ Aanbevolen pagina van de Inhoud ](essentials-featured.md) voor ontwikkelaars worden gevonden.
 
-Zie voor het markeren van inhoud zoals aanbevolen [Door de gebruiker gegenereerde inhoud moderniseren](moderate-ugc.md).
+Voor het vlaggen van inhoud zoals voorzien, zie [ het Matigen van Gebruiker-Gegenereerde Inhoud ](moderate-ugc.md).

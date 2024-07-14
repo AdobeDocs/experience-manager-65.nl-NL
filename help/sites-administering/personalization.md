@@ -1,5 +1,5 @@
 ---
-title: Personalisatie
+title: Personalization
 description: Leer over verpersoonlijking in Adobe Experience Manager om de gebruiker van een op maat gemaakte milieu te voorzien die dynamische inhoud toont.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ---
 
-# Personalisatie {#personalization}
+# Personalization {#personalization}
 
-## Wat is personalisatie? {#what-is-personalization}
+## Wat is Personalization? {#what-is-personalization}
 
 Er is een steeds groter volume aan inhoud beschikbaar vandaag, of het nu op Internet, Extranet, of Intranetwebsites is.
 
-Bij personalisatie wordt de gebruiker voorzien van een op maat gemaakte omgeving waarin dynamische inhoud wordt weergegeven die op basis van de specifieke behoeften is geselecteerd. Hierbij wordt uitgegaan van vooraf gedefinieerde profielen, gebruikersselectie of interactief gebruikersgedrag.
+Personalization richt zich op het bieden van een op maat gemaakte omgeving waarin dynamische inhoud wordt weergegeven die is geselecteerd op basis van de specifieke behoeften van de gebruiker. Hierbij gaat het om vooraf gedefinieerde profielen, gebruikersselectie of interactief gebruikersgedrag.
 
 Er zijn drie hoofdelementen betrokken bij personalisatie:
 
@@ -43,7 +43,7 @@ Met andere woorden, de inhoud moet in zekere zin afhankelijk zijn van de gebruik
 
 * Bepaal hoe verpersoonlijking eigenlijk gebeurt - welke inhoud de gebruiker kan zien, en wanneer.
 
-Personalisatie kan een van de volgende zijn:
+Personalization kan:
 
 #### Expliciet {#explicit}
 
@@ -55,9 +55,9 @@ Personalisatie kan een van de volgende zijn:
 * Eenvoudig filteren: selecties worden gemaakt op basis van vooraf gedefinieerde profielen op gebruikers- en/of groepsniveau.
 * Filteren op samenwerking/aanbevelingen: gebruikersgedrag wordt geregistreerd volgens vooraf gedefinieerde regels. Deze regels zijn gebaseerd op gedrag dat wordt waargenomen met gelijkgestemde individuen. De verzamelde informatie wordt gebruikt om de informatie aan de gebruiker te maken, met name in de vorm van aanbevelingen.
 
-## Hoe en wanneer kan Personalisatie worden gebruikt? {#how-and-when-can-personalization-be-used}
+## Hoe en wanneer kan Personalization worden gebruikt? {#how-and-when-can-personalization-be-used}
 
-Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
+Personalization kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 ### Intranetpagina&#39;s {#intranet-pages}
 
@@ -79,12 +79,12 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 * Veel van de belangrijkste websites van zoekprogramma&#39;s beschikken over zeer krachtige analytische instrumenten waarmee het gedrag van gebruikers, de zoektermen die ze gebruiken en de websites die ze bezoeken, worden vastgelegd. Dit wordt vervolgens gebruikt om de aangeboden inhoud aan te passen, met name met betrekking tot het weergeven van advertenties.
 
-### Sterke punten van personalisatie en aandachtspunten {#strengths-of-personalization-and-points-to-consider}
+### Sterkte van Personalization en in overweging te nemen punten {#strengths-of-personalization-and-points-to-consider}
 
 De volgende redenen waarom personalisatie moet worden gebruikt:
 
 * Een gebruiker kan een comfortabele, gerichte website ervaren.
-* De verpersoonlijking kan worden gebruikt om toegang tot de recentste versie van inhoud automatisch te verspreiden.
+* Personalization kan worden gebruikt om toegang tot de recentste versie van inhoud automatisch te verspreiden.
 * De functies voor sociale samenwerking zijn beschikbaar voor gebruikers om met elkaar te communiceren, zoals ze door hun profielen kunnen worden geïdentificeerd.
 * Een gebruiker kan de inhoud krijgen die hij of zij nodig heeft om een bepaalde taak uit te voeren. Binnen het Intranet van een bedrijf kan dit een onschatbaar hulpmiddel verstrekken om informatie te verspreiden.
 * Een gebruiker kan worden voorzien van de inhoud die hij of zij nodig heeft, waardoor hij of zij minder tijd nodig heeft om zoekbewerkingen uit te voeren.
@@ -99,7 +99,7 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 #### Toestemming {#authorization}
 
-* Voor personalisatie is een aanmeldingsmechanisme vereist, omdat de website de gebruiker moet kunnen identificeren.
+* Personalization heeft een aanmeldingsmechanisme nodig omdat de website de gebruiker moet kunnen identificeren.
 
 #### Caching {#caching}
 
@@ -108,32 +108,32 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 >[!TIP]
 >
->Het effect van de aanpassing op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden verder besproken in het document [Optimalisatie van prestaties.](/help/sites-deploying/configuring-performance.md)
+>Het effect van Personalization op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden besproken verder in het document [ Optimalisering van Prestaties.](/help/sites-deploying/configuring-performance.md)
 
 #### Nauwkeurigheid van de regels {#accuracy}
 
-* Personalisatie die wordt gerealiseerd door het gedrag van de gebruiker te volgen, of regels te plaatsen die op het profiel van de gebruiker worden gebaseerd, moet nauwkeurig en logisch zijn.
+* Personalization dat wordt gerealiseerd door het gedrag van de gebruiker te volgen of door regels in te stellen die zijn gebaseerd op het profiel van de gebruiker, moet nauwkeurig en logisch zijn.
 * Er is niets frustrerender voor de gebruiker dan het hebben van inhoud gedwongen op, of ontkend aan, hen wegens de onnauwkeurige logica van een regel.
 * Daarom moeten de regels goed doordacht zijn - met de eisen van de gebruiker op de voorgrond. Dit kan veel moeite kosten en mag niet onderschat worden; het definiëren van de bedrijfsregels weegt vaak zwaarder dan de technische inspanning bij het implementeren van personalisatie.
 
 #### Wanneer gebruiken {#when-to-use}
 
-* Zoals vele eigenschappen op het Web, zou de verpersoonlijking met zorg moeten worden gebruikt. Zal het gebruik ervan de gebruiker echt ten goede komen? moet altijd de eerste overweging zijn - of dat het gewenste doel met minder moeite met een andere methode kan worden bereikt. Personalisatie kan het risico lopen om een eigenschap te zijn die de gebruikers één keer (om te zien hoe het werkt) en slechts één keer vormen - aangezien het hen geen echte voordelen brengt.
-* Personalisatie is alleen zinvol wanneer de inhoud dynamisch is, op een of andere manier afhankelijk van de gebruiker. Als alle gebruikers de zelfde inhoud zien, dan is de verpersoonlijking overtollig.
+* Zoals vele eigenschappen op het Web, zou de verpersoonlijking met zorg moeten worden gebruikt. Zal het gebruik ervan de gebruiker echt ten goede komen? moet altijd de eerste overweging zijn - of dat het gewenste doel met minder moeite met een andere methode kan worden bereikt. Personalization kan het risico lopen om een functie te zijn die gebruikers eenmaal configureren (om te zien hoe het werkt) en slechts eenmaal - omdat dit geen echte voordelen oplevert.
+* Personalization is alleen zinvol wanneer de inhoud dynamisch is - op een of andere manier afhankelijk van de gebruiker. Als alle gebruikers de zelfde inhoud zien, dan is de verpersoonlijking overtollig.
 
 #### Vertrouwelijkheid {#confidentiality}
 
 * Veel gebruikers maken zich zorgen over gegevensbescherming en beveiliging. Met name gegevens die worden opgehaald bij het volgen van hun gedrag bij surfen op het web.
 
-## Personalisatie en toegang {#personalization-and-access}
+## Personalization en Access {#personalization-and-access}
 
-Personalisatie moet los van toegangscontrole worden beschouwd, maar heeft wel een onderlinge relatie.
+Personalization moet apart van toegangscontrole worden beschouwd, maar ze houden wel verband met elkaar.
 
-Personalisatie zelf leidt tot geen vorm van toegangscontrole. Het is eenvoudig een manier om te sturen wat de gebruiker ziet; het beperkt de gebruiker niet om tot andere inhoud toegang te hebben en zoals met om het even welke inhoud, moeten zij de correcte toegangscontroles reeds toegewezen hebben.
+Personalization zelf maakt geen enkele vorm van toegangsbeheer. Het is eenvoudig een manier om te sturen wat de gebruiker ziet; het beperkt de gebruiker niet om tot andere inhoud toegang te hebben en zoals met om het even welke inhoud, moeten zij de correcte toegangscontroles reeds toegewezen hebben.
 
 Nochtans, kan de toegangscontrole worden gebruikt om een vorm van verpersoonlijking tot stand te brengen. Als u een gebruiker toegang tot inhoud toestaat of ontkent, beïnvloedt dit onvermijdelijk de keus van inhoud die zij beschikbaar hebben - zo personaliserend hun Web-ervaring.
 
-## Componenten beschikbaar voor personalisatie {#components-available-for-personalization}
+## Componenten beschikbaar voor Personalization {#components-available-for-personalization}
 
 Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebruikers kunnen zich aanmelden en hun profielen bewerken, andere (zoals Mijn Gadgets) kunnen gebruikers een specifieke pagina configureren:
 
@@ -168,11 +168,11 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 | Cloud labelen | Een labelcloud waarmee een grafisch weergegeven selectie van tags op uw website wordt getoond |
 | Teaser | Een stuk inhoud (gewoonlijk een beeld) die op een hoofdpagina wordt getoond om gebruikers tot de onderliggende inhoud &quot;te &quot;teweegbrengen&quot;. |
 
-## Personalisatie en community-inhoud {#personalization-and-community-content}
+## Personalization en Community Content {#personalization-and-community-content}
 
-Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC wordt ingevoerd in een publicatieomgeving die uit meerdere AEM bestaat (a [publicatiebedrijf](/help/communities/topologies.md)), was één belangrijke kwestie hoe te om UGC over alle instanties te synchroniseren.
+Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC in publiceer milieu is ingegaan dat uit veelvoudige AEM instanties bestaat (a [ landbouwbedrijf ](/help/communities/topologies.md) publiceert), is één belangrijke kwestie hoe te om UGC over alle instanties te synchroniseren geweest.
 
-Met [AEM Communities 6.1](/help/communities/overview.md) dit probleem is opgelost door een [gemeenschappelijke opslag voor UGC](/help/communities/working-with-srp.md). Wat personalisatie betreft, omvatten de Gemeenschappen [Sociale aanmelding](/help/communities/social-login.md) - de mogelijkheid voor bezoekers van de site om zich aan te melden bij Facebook en Twitter.
+Met [ AEM Communities 6.1 ](/help/communities/overview.md) uitbreiding, wordt deze kwestie opgelost door a [ gemeenschappelijke opslag voor UGC ](/help/communities/working-with-srp.md) te gebruiken. Met betrekking tot personalisatie, omvat de Gemeenschappen [ Sociale Login ](/help/communities/social-login.md) - de capaciteit om de optie voor plaatsbezoekers te verstrekken om binnen met Facebook en Twitter te ondertekenen.
 
 Zonder de uitbreiding van de Gemeenschappen zijn verschillende methodes om de kwestie van de consistentie van UGC te onderzoeken:
 

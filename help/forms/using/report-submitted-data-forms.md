@@ -21,7 +21,7 @@ AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergeg
 
 >[!NOTE]
 >
->Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de groep met revisoren, zoals wordt beschreven in [Verzendrevisoren koppelen aan een formulier](/help/forms/using/adding-reviewers-form.md).
+>De gebruikers die APIs zullen aanhalen moeten aan de recensentengroep worden toegevoegd zoals die in [ wordt beschreven Associerend voorleggingsrecensenten aan een vorm ](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -45,13 +45,13 @@ Het reactieobject bevat een JSON-array die formuliernamen en het pad naar de ops
 
 ### Voorbeeld {#example}
 
-**Aanvraag-URL**
+**Verzoek URL**
 
 ```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
 ```
 
-**Antwoord**
+**Reactie**
 
 ```json
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
@@ -73,31 +73,31 @@ Geef de volgende parameters op in de aanvraag-URL:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Hiermee geeft u het CRX-opslagpad op waar het formulier zich bevindt. Als u het formulierpad niet opgeeft, wordt een leeg antwoord geretourneerd.<br /> </td>
+   <td>Hier geeft u het pad op naar de CRX-opslagplaats waar het formulier zich bevindt. Als u het formulierpad niet opgeeft, wordt een leeg antwoord geretourneerd.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code><br /> (optioneel)</td>
-   <td>Geeft het beginpunt op in de index van de resultaatset. De standaardwaarde is <strong>0</strong>.</td>
+   <td>Geeft het beginpunt op in de index van de resultaatset. De standaardwaarde is <strong> 0 </strong>.</td>
   </tr>
   <tr>
    <td><code>limit</code><br /> (optioneel)</td>
-   <td>Hiermee beperkt u het aantal resultaten. De standaardwaarde is <strong>30</strong>.</td>
+   <td>Hiermee beperkt u het aantal resultaten. De standaardwaarde is <strong> 30 </strong>.</td>
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (optioneel)</td>
-   <td>Specifies the property for sorting results. De standaardwaarde is <strong>jcr:lastModified</strong>, die resultaten sorteert op basis van de laatste gewijzigde tijd.</td>
+   <td>Specifies the property for sorting results. De standaardwaarde is <strong> jcr:lastModified </strong>, die resultaten sorteert die op de laatste gewijzigde tijd worden gebaseerd.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (optioneel)</td>
-   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is <strong>desc</strong>en sorteert resulteert in aflopende volgorde. U kunt <code>asc</code> om de resultaten in oplopende volgorde te sorteren.</td>
+   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is desc </strong>, die resultaten in dalende orde sorteert. <strong> U kunt <code>asc</code> opgeven om de resultaten in oplopende volgorde te sorteren.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (optioneel)</td>
-   <td>Hiermee geeft u een door komma's gescheiden lijst met formuliereigenschappen op die in de resultaten moeten worden opgenomen. De standaardeigenschappen zijn:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Hiermee geeft u een door komma's gescheiden lijst met formuliereigenschappen op die in de resultaten moeten worden opgenomen. De standaardeigenschappen zijn: <br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (optioneel)</td>
-   <td>Zoekt de opgegeven waarde in formuliereigenschappen en retourneert formulieren met overeenkomende waarden. De standaardwaarde is <strong>""</strong>.</td>
+   <td>Zoekt de opgegeven waarde in formuliereigenschappen en retourneert formulieren met overeenkomende waarden. De standaardwaarde is <strong> ""</strong>.</td>
   </tr>
  </tbody>
 </table>
@@ -115,13 +115,13 @@ Het reactieobject bevat een JSON-array die details van de opgegeven formulieren 
 
 ### Voorbeeld {#example-1}
 
-**Aanvraag-URL**
+**Verzoek URL**
 
 ```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
 ```
 
-**Antwoord**
+**Reactie**
 
 ```json
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
@@ -146,13 +146,13 @@ Retourneert een opmerking-id bij het plaatsen van een opmerking.
 
 ### Voorbeeld {#example-2}
 
-**Aanvraag-URL**
+**Verzoek URL**
 
 ```http
 https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
-**Antwoord**
+**Reactie**
 
 ```java
 1403873422601300
@@ -184,13 +184,13 @@ Het reactieobject bevat een JSON-array die alle opmerkingen bevat die aan de opg
 
 ### Voorbeeld {#example-3}
 
-**Aanvraag-URL**
+**Verzoek URL**
 
 ```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
-**Antwoord**
+**Reactie**
 
 ```java
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
@@ -216,13 +216,13 @@ Retourneert een JSON-object met informatie over de geposte update.
 
 ### Voorbeeld {#example-4}
 
-**Aanvraag-URL**
+**Verzoek URL**
 
 ```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
-**Antwoord**
+**Reactie**
 
 ```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}

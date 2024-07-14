@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
 | AEM 6,5 | Dit artikel |
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan punten gebeurt die aan u voor die periode worden toegewezen.
@@ -39,17 +39,17 @@ U kunt item-delegatie scheiden op basis van de workflowmodellen. Bijvoorbeeld, k
 
 Voer de volgende stappen uit om de instelling Buiten-Office voor uw account in te schakelen en uw Inbox-items te delegeren aan een andere gebruiker:
 
-1. Meld u aan bij uw AEM. Selecteer de ![Inbox](assets/bell.svg) pictogram en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
-1. Selecteer de ![Kiezer weergeven](assets/viewlist.svg) of ![Kiezer weergeven](assets/calendar.svg) pictogram naast **[!UICONTROL Create]** en selecteert u **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
-1. Open de **[!UICONTROL Out of Office]** in het dialoogvenster Instellingen.
-1. Selecteer de **[!UICONTROL Enable/Disable]** knoop om uit Bureau het plaatsen toe te laten.
-1. Geef de **[!UICONTROL Start Time]**  en **[!UICONTROL End Time]** voor de instelling. De items worden alleen gedelegeerd tijdens de opgegeven periode. Laat de **[!UICONTROL End Time]** veld leeg om items voor onbepaalde tijd te delegeren.
-1. Selecteer de **[!UICONTROL Forward my items during this period]** selectievakje. Als je deze optie niet selecteert en geen ontvanger opgeeft, worden je objecten niet doorgestuurd naar een gebruiker. Hoewel u weg bent en het plaatsen wordt toegelaten, blijven de punten in uw Inbox.
-1. Selecteer **[!UICONTROL Add Assignee]**. Geef een gebruiker op in het dialoogvenster **[!UICONTROL Assignee]** zodat u de items kunt delegeren. Geef de **[!UICONTROL Workflow Model]** zodat kunt u delegeren aan de gespecificeerde gebruiker. U kunt meerdere workflowmodellen selecteren.
+1. Meld u aan bij uw AEM. Selecteer het ![ Inbox ](assets/bell.svg) pictogram en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
+1. Selecteer het ![ pictogram van de Selecteur van de Mening ](assets/viewlist.svg) of ![ van de Selecteur van de Mening ](assets/calendar.svg) naast de **[!UICONTROL Create]** knoop en selecteer **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
+1. Open het tabblad **[!UICONTROL Out of Office]** in het dialoogvenster met instellingen.
+1. Selecteer de knop **[!UICONTROL Enable/Disable]** om de instelling Buiten Office in te schakelen.
+1. Geef de **[!UICONTROL Start Time]** en **[!UICONTROL End Time]** voor de instelling op. De items worden alleen gedelegeerd tijdens de opgegeven periode. Laat het veld **[!UICONTROL End Time]** leeg om items voor onbepaalde tijd te delegeren.
+1. Schakel het selectievakje **[!UICONTROL Forward my items during this period]** in. Als je deze optie niet selecteert en geen ontvanger opgeeft, worden je objecten niet doorgestuurd naar een gebruiker. Hoewel u weg bent en het plaatsen wordt toegelaten, blijven de punten in uw Inbox.
+1. Selecteer **[!UICONTROL Add Assignee]**. Geef een gebruiker op in het veld **[!UICONTROL Assignee]** , zodat u de items kunt delegeren. Geef de waarde **[!UICONTROL Workflow Model]** op, zodat u deze kunt delegeren aan de opgegeven gebruiker. U kunt meerdere workflowmodellen selecteren.
 
-   Als u bovendien alle items aan een bepaalde gebruiker wilt toewijzen, ongeacht het workflowmodel, selecteert u **[!UICONTROL All Workflows]** in de vervolgkeuzelijst Werkstroommodel. <br>
+   Als u bovendien alle items, ongeacht het workflowmodel, aan een bepaalde gebruiker wilt toewijzen, selecteert u **[!UICONTROL All Workflows]** in de vervolgkeuzelijst Werkstroommodel. <br>
 
-   Als u items wilt toewijzen aan een bepaalde gebruiker voor alle workflowmodellen, behalve een paar, selecteert u **[!UICONTROL All Workflows]** in de vervolgkeuzelijst Werkstroommodel selecteert u **[!UICONTROL + Add Exceptions]**en geeft u de workflowmodellen op die u wilt uitsluiten.
+   Als u items aan een bepaalde gebruiker wilt toewijzen voor alle workflowmodellen, met uitzondering van enkele, selecteert u **[!UICONTROL All Workflows]** in de vervolgkeuzelijst Werkstroommodel, selecteert u **[!UICONTROL + Add Exceptions]** en geeft u de workflowmodellen op die u wilt uitsluiten.
    <br>
 
    Herhaal de stap zodat u meer toewijzingen kunt toevoegen. <br>
@@ -61,11 +61,11 @@ Voer de volgende stappen uit om de instelling Buiten-Office voor uw account in t
 1. Selecteer **[!UICONTROL Save]**. De instelling wordt van kracht op de opgegeven begindatum en -tijd. Als u zich aanmeldt terwijl u zich buiten het kantoor bevindt, wordt u pas overwogen op het kantoor wanneer u uw instellingen wijzigt.
 
 Nu, worden de punten die aan u tijdens uit de periode van het Bureau worden toegewezen automatisch toegewezen aan de gespecificeerde ontvanger.
-![Buiten kantoor](assets/out-of-office.png)
+![ uit-van-bureau ](assets/out-of-office.png)
 
 >[!NOTE]
 >
->(Alleen voor workflowitems die op Forms zijn gericht) Schakel de optie **Toestaan dat de geadresseerde kan delegeren met behulp van de instellingen &#39;Buiten het Bureau&#39;** van de **Taak toewijzen** in de workflow. Alleen items waarvoor de eerder vermelde optie is ingeschakeld, worden gedelegeerd aan andere gebruikers.
+>(Voor Forms-centric werkschemapunten slechts) laat **toe toegewezen om te delegeren gebruikend de montages van het Bureau** optie van **taak** stap in het werkschema toewijzen. Alleen items waarvoor de eerder vermelde optie is ingeschakeld, worden gedelegeerd aan andere gebruikers.
 
 ## Beperkingen {#limitations}
 

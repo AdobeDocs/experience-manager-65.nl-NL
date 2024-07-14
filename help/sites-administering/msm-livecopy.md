@@ -22,7 +22,7 @@ Een blauwdrukconfiguratie identificeert een bestaande website die u als bron voo
 
 >[!NOTE]
 >
->Met vervagingsconfiguraties kunt u wijzigingen in de inhoud doorvoeren in live kopieën. Zie [Actieve kopieën - Configuratie van bron, blauwdrukken en blauwdruk](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations).
+>Met vervagingsconfiguraties kunt u wijzigingen in de inhoud doorvoeren in live kopieën. Zie [ Levende Kopieën - Source, Blauwdrukken en de Configuraties van de Vervaging ](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations).
 
 Wanneer u een blauwdrukconfiguratie creeert, selecteert u een malplaatje dat de interne structuur van de blauwdruk bepaalt. In de standaardsjabloon voor blauwdrukken wordt ervan uitgegaan dat de bronwebsite de volgende kenmerken heeft:
 
@@ -36,44 +36,44 @@ Wanneer u een blauwdrukconfiguratie creeert, selecteert u een malplaatje dat de 
 
 Nadat u de blauwdrukconfiguratie creeert, vormt u de volgende eigenschappen:
 
-* **Naam**: De naam van de configuratie van de blauwdruk.
-* **Bronpad**: Het pad van de hoofdpagina van de site die u als bron gebruikt (blauwdruk).
+* **Naam**: De naam van de blauwdrukconfiguratie.
+* **Weg van Source**: De weg van de wortelpagina van de plaats die u als bron (blauwdruk) gebruikt.
 * **Beschrijving**. (Optioneel) Een beschrijving van de configuratie van de blauwdruk. De beschrijving wordt weergegeven in de lijst met blauwdrukconfiguraties waaruit u kunt kiezen bij het maken van een site.
 
-Wanneer uw blauwdrukconfiguratie wordt gebruikt, kunt u het met een rollout configuratie associëren die bepaalt hoe de levende exemplaren van de bron/de blauwdruk worden gesynchroniseerd. Zie [De te gebruiken rollout-configuraties opgeven](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
+Wanneer uw blauwdrukconfiguratie wordt gebruikt, kunt u het met een rollout configuratie associëren die bepaalt hoe de levende exemplaren van de bron/de blauwdruk worden gesynchroniseerd. Zie [ het specificeren van de Configuraties van de Output aan Gebruik ](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
 
 ### Een blauwdrukconfiguratie maken {#creating-a-blueprint-configuration}
 
 Een blauwdrukconfiguratie maken:
 
-1. [Navigeren](/help/sites-authoring/basic-handling.md#global-navigation) aan de **Gereedschappen** en selecteert u vervolgens de **Sites** -menu.
-1. Selecteren **Blauwdrukken** om de **Blauwdrukconfiguraties** console:
+1. [ navigeer ](/help/sites-authoring/basic-handling.md#global-navigation) aan het **Hulpmiddelen** menu, dan selecteer het **Sites** menu.
+1. Selecteer **Vervagen** om de **console van de Configuraties van de Vervaging** te openen:
 
-   ![Blauwdrukconfiguraties](assets/blueprint-configurations.png)
+   ![ configuraties van de Vervaging ](assets/blueprint-configurations.png)
 
-1. Selecteren **Maken**.
-1. Selecteer de blauwdruksjabloon en **Volgende** om door te gaan.
-1. Selecteer de bronpagina die als blauwdruk moet worden gebruikt; dan **Volgende** om door te gaan.
+1. Selecteer **creeer**.
+1. Selecteer het blauwdrukmalplaatje, dan **daarna** om verder te gaan.
+1. Selecteer de bronpagina die als blauwdruk moet worden gebruikt; dan **daarna** om verder te gaan.
 1. Definiëren:
 
    * **Titel**: verplichte titel voor de blauwdruk
-   * **Beschrijving**: een optionele beschrijving voor meer informatie.
+   * **Beschrijving**: een facultatieve beschrijving om meer details te verstrekken.
 
-1. **Maken** zal de configuratie van de blauwdruk tot stand brengen die op uw specificatie wordt gebaseerd.
+1. **creeer** zal tot de blauwdrukconfiguratie leiden die op uw specificatie wordt gebaseerd.
 
 ### Een configuratie van een blauwdruk bewerken of verwijderen {#editing-or-deleting-a-blueprint-configuration}
 
 U kunt een bestaande configuratie van de blauwdruk bewerken of verwijderen:
 
-1. [Navigeren](/help/sites-authoring/basic-handling.md#global-navigation) aan de **Gereedschappen** en selecteert u vervolgens de **Sites** -menu.
-1. Selecteren **Blauwdrukken** om de **Blauwdrukconfiguraties** console:
+1. [ navigeer ](/help/sites-authoring/basic-handling.md#global-navigation) aan het **Hulpmiddelen** menu, dan selecteer het **Sites** menu.
+1. Selecteer **Vervagen** om de **console van de Configuraties van de Vervaging** te openen:
 
-   ![Blauwdrukconfiguraties](assets/blueprint-configurations.png)
+   ![ configuraties van de Vervaging ](assets/blueprint-configurations.png)
 
 1. Selecteer de vereiste blauwdrukconfiguratie. De juiste acties worden beschikbaar op de werkbalk:
 
    * **Eigenschappen**; u kunt dit gebruiken om de eigenschappen van de configuratie te bekijken en dan uit te geven.
-   * **Verwijderen**
+   * **Schrapping**
 
 ## Een actieve kopie maken {#creating-a-live-copy}
 
@@ -82,32 +82,32 @@ U kunt een bestaande configuratie van de blauwdruk bewerken of verwijderen:
 U kunt een live kopie van elke pagina of vertakking maken. Wanneer u de live kopie maakt, kunt u de rollout-configuraties opgeven die moeten worden gebruikt voor het synchroniseren van de inhoud:
 
 * De geselecteerde rollout-configuraties zijn van toepassing op de live kopieerpagina en de onderliggende pagina&#39;s.
-* Als u geen rollout configuraties specificeert, bepaalt MSM welke rollout configuraties aan gebruik. Zie [De configuratie voor rollout opgeven die moet worden gebruikt](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
+* Als u geen rollout configuraties specificeert, bepaalt MSM welke rollout configuraties aan gebruik. Zie [ specificerend de Configuratie van de Uitvoer aan Gebruik ](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
 
 U kunt een live kopie van elke pagina maken:
 
-* Pagina&#39;s waarnaar wordt verwezen door een [blauwdrukconfiguratie](#creating-a-blueprint-configuration).
+* Pagina&#39;s die door a [ blauwdrukconfiguratie ](#creating-a-blueprint-configuration) van verwijzingen worden voorzien.
 * En pagina&#39;s die geen verbinding met een configuratie hebben.
 * AEM ondersteunt ook het maken van een live kopie op de pagina&#39;s van een andere live kopie.
 
-Het enige verschil is dat de **Uitrol** bevel op de bron/blauwdruk pagina&#39;s is afhankelijk van of de bron door een blauwdrukconfiguratie van verwijzingen wordt voorzien:
+Het enige verschil is dat de beschikbaarheid van het **bevel van de Uitvoer** op de bron/de blauwdruk pagina&#39;s afhankelijk is van of de bron door een blauwdrukconfiguratie van verwijzingen wordt voorzien:
 
-* Als u de live kopie maakt van een bronpagina die **is** die in een blauwdrukconfiguratie van verwijzingen worden voorzien, dan zal het bevel van de Uitvoer op de bron/blauwdruk pagina(s) beschikbaar zijn.
-* Als u de live kopie maakt van een bronpagina die **is niet** waarnaar in een blauwdrukconfiguratie wordt verwezen, is de opdracht Uitvoeren niet beschikbaar op de pagina(&#39;s) van de bron/blauwdruk.
+* Als u het levende exemplaar van een bronpagina creeert die **** in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan zal het bevel van de Uitvoer op de bron/de pagina(s) van de blauwdruk beschikbaar zijn.
+* Als u het levende exemplaar van een bronpagina creeert die **niet** in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan zal het bevel van de Uitvoer niet beschikbaar op de bron/blauwdruk pagina(s) zijn.
 
 Een live kopie maken:
 
-1. In de **Sites** console selecteren **Maken** vervolgens **Live kopie**.
+1. In de **console 1} uitgezochte** van Plaatsen **, dan** Levende Exemplaar **.**
 
-   ![Live kopie maken](assets/chlimage_1-212.png)
+   ![ creeer Levend Exemplaar ](assets/chlimage_1-212.png)
 
-1. Selecteer de bronpagina en klik op **Volgende**. Bijvoorbeeld:
+1. Selecteer de bronpagina dan klik **daarna**. Bijvoorbeeld:
 
-   ![Bronpagina selecteren](assets/chlimage_1-213.png)
+   ![ Uitgezochte bronpagina ](assets/chlimage_1-213.png)
 
-1. Geef het doelpad van de live kopie op (open de bovenliggende map of pagina van de live kopie) en klik vervolgens op **Volgende**.
+1. Specificeer de bestemmingspad van het levende exemplaar (open de ouderomslag/de pagina van het levende exemplaar) en klik dan **daarna**.
 
-   ![Doel opgeven](assets/chlimage_1-214.png)
+   ![ specificeer bestemming ](assets/chlimage_1-214.png)
 
    >[!NOTE]
    >
@@ -116,23 +116,23 @@ Een live kopie maken:
 1. Enter:
 
    * a **Titel** voor de pagina.
-   * a **Naam**, die wordt gebruikt in de URL.
+   * a **Naam**, die in URL wordt gebruikt.
 
-   ![Titel en naam invoeren](assets/chlimage_1-215.png)
+   ![ ga titel en naam ](assets/chlimage_1-215.png) in
 
-1. Gebruik de **Subpagina&#39;s uitsluiten** selectievakje:
+1. Gebruik **sluit subpagina&#39;s** checkbox uit:
 
    * Geselecteerd: alleen een live kopie van de geselecteerde pagina maken (oppervlakkige live kopie)
    * Niet geselecteerd: maak een live kopie die alle onderliggende elementen van de geselecteerde pagina bevat (diepe live kopie)
 
-1. (Optioneel) Als u een of meer rollout-configuraties wilt opgeven die voor de livecopy moeten worden gebruikt, gebruikt u de opdracht **Rollout Configs** vervolgkeuzelijst om ze te selecteren. Geselecteerde configuraties worden onder de keuzelijst weergegeven.
-1. Klikken **Maken**. Er wordt een bevestigingsbericht weergegeven. Hier kunt u een van de volgende opties selecteren **Openen** of **Gereed**.
+1. (Facultatief) om één of meerdere rollout configuraties aan gebruik voor de livecopy te specificeren, gebruik de **drop-down lijst van de Output vormt** om hen te selecteren; de geselecteerde configuraties worden getoond onder de drop-down selecteur.
+1. Klik **creëren**. Een bevestigingsbericht wordt getoond, van hier kunt u of **Open** selecteren of **Gereed**.
 
 ### Een live kopie van een site maken op basis van een blauwdrukconfiguratie {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
-Maak een live kopie met behulp van een blauwdrukconfiguratie om een site te maken op basis van de blauwdrukinhoud (bron). Wanneer u een levend exemplaar van een blauwdrukconfiguratie creeert, selecteert u één of meerdere taaltakken van de blauwdrukbron om te kopiëren, dan selecteert u de hoofdstukken om van de taaltakken te kopiëren. Zie [Een blauwdrukconfiguratie maken](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+Maak een live kopie met behulp van een blauwdrukconfiguratie om een site te maken op basis van de blauwdrukinhoud (bron). Wanneer u een levend exemplaar van een blauwdrukconfiguratie creeert, selecteert u één of meerdere taaltakken van de blauwdrukbron om te kopiëren, dan selecteert u de hoofdstukken om van de taaltakken te kopiëren. Zie [ Creërend een Configuratie van de Vervaging ](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
-Als u sommige taalvertakkingen of hoofdstukken van het levende exemplaar weglaat, kunt u hen later toevoegen; zie [Een actieve kopie maken in een live kopie (configuratie blauwdruk)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
+Als u sommige taaltakken of hoofdstukken van het levende exemplaar weglaat, kunt u hen later toevoegen; zie [ Creërend Levend Exemplaar binnen een Levend Exemplaar (de Configuratie van de Vervaging) ](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
 
 >[!CAUTION]
 >
@@ -140,32 +140,32 @@ Als u sommige taalvertakkingen of hoofdstukken van het levende exemplaar weglaat
 
 Geef bij het maken van de site waarden op voor de volgende eigenschappen:
 
-* **Oorspronkelijke talen**: De taalvertakkingen van de blauwdrukbron die in de live kopie moeten worden opgenomen.
-* **Oorspronkelijke hoofdstukken**: De onderliggende pagina&#39;s van de vertakkingen van de blauwdruktaal die in de live kopie moeten worden opgenomen.
-* **Doelpad**: De locatie van de hoofdpagina van de live kopieersite.
-* **Titel**: De titel van de hoofdpagina van de live-kopieersite.
-* **Naam**: (Optioneel) De naam van het JCR-knooppunt dat de hoofdpagina van de live kopie opslaat. De standaardwaarde is gebaseerd op de titel.
-* **Site-eigenaar**: (Optioneel)
-* **Live kopie**: Selecteer deze optie om een live relatie met de bronsite tot stand te brengen. Als u deze optie niet selecteert, wordt een kopie van de blauwdruk gemaakt, maar wordt deze niet gesynchroniseerd met de bron.
-* **Rollout Configs**: (Optioneel) Selecteer een of meer rollout-configuraties die u wilt gebruiken voor het synchroniseren van de livekopie. Standaard worden de rollout-configuraties overgeërfd van de blauwdruk. Zie [De te gebruiken configuraties voor rollout opgeven](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) voor meer informatie .
+* **Aanvankelijke Talen**: De taaltakken van de blauwdrukbron om in het levende exemplaar te omvatten.
+* **Aanvankelijke Hoofdstukken**: De kindpagina&#39;s van de de taaltakken van de blauwdruk om in het levende exemplaar te omvatten.
+* **Weg van de Bestemming**: De plaats van de wortelpagina van de levende exemplaarplaats.
+* **Titel**: De titel van de wortelpagina van de levende exemplaarplaats.
+* **Naam**: (Facultatief) de naam van de knoop JCR die de wortelpagina van het levende exemplaar opslaat. De standaardwaarde is gebaseerd op de titel.
+* **Eigenaar van de Plaats**: (Facultatief)
+* **Levende Exemplaar**: Selecteer deze optie om een levende verhouding met de bronplaats te vestigen. Als u deze optie niet selecteert, wordt een kopie van de blauwdruk gemaakt, maar wordt deze niet gesynchroniseerd met de bron.
+* **Rollout vormt**: (Facultatief) selecteer één of meerdere rollout configuraties om voor het synchroniseren van het levende exemplaar te gebruiken. Door gebrek, worden de rollout configuraties geërft van de blauwdruk; zie [ specificerend de Configuraties van de Output ](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) voor meer details te gebruiken.
 
 Een live kopie van een site maken op basis van een blauwdrukconfiguratie:
 
-1. In de **Sites** console, selecteren **Maken** vervolgens **Site** in de keuzelijst.
-1. Selecteer de blauwdrukconfiguratie die u als bron van de live kopie wilt gebruiken en ga verder met **Volgende**:
+1. In de **console van Plaatsen**, uitgezochte **creeert**, toen **Plaats** van de drop-down selecteur.
+1. Selecteer de blauwdrukconfiguratie als bron van het levende exemplaar te gebruiken en met **daarna** te werk te gaan:
 
-   ![Selecteer blauwdrukconfiguratie als bron van live kopie](assets/blueprint-configuration-select.png)
+   ![ Uitgezochte blauwdrukconfiguratie als bron van levend exemplaar ](assets/blueprint-configuration-select.png)
 
-1. Gebruik de **Oorspronkelijke talen** om de talen van de blauwdruksite op te geven die voor de live kopie moeten worden gebruikt.
+1. Gebruik de **Aanvankelijke Talen** selecteur om de talen van de blauwdrukplaats te specificeren voor het levende exemplaar te gebruiken.
 
-   Standaard zijn alle beschikbare talen geselecteerd. Als u een taal wilt verwijderen, klikt u op de knop **X** naast de taal.
+   Standaard zijn alle beschikbare talen geselecteerd. Om een taal te verwijderen, klik **X** die naast de taal verschijnt.
 
    Bijvoorbeeld:
 
-   ![Oorspronkelijke talen selecteren](assets/chlimage_1-217.png)
+   ![ Uitgezochte Eerste Talen ](assets/chlimage_1-217.png)
 
-1. Gebruik de **Oorspronkelijke hoofdstukken** vervolgkeuzelijst om de secties van de blauwdruk te selecteren die u in de actieve kopie wilt opnemen. Opnieuw zijn alle beschikbare hoofdstukken inbegrepen door gebrek, maar kunnen worden verwijderd.
-1. Geef waarden op voor de overige eigenschappen en selecteer **Maken**. Selecteer in het bevestigingsdialoogvenster de optie **Gereed** om terug te keren naar de **Sites** console, of **Site openen** om de hoofdpagina van de site te openen.
+1. Gebruik de **Aanvankelijke drop-down Hoofdstukken** om de secties van de blauwdruk te selecteren om in het levende exemplaar te omvatten. Opnieuw zijn alle beschikbare hoofdstukken inbegrepen door gebrek, maar kunnen worden verwijderd.
+1. Verstrek waarden voor de resterende eigenschappen en selecteer dan **creeer**. In het bevestigingsdialoogvakje, uitgezochte **Gedaan** om aan de **console van Plaatsen** terug te keren, of **Open Plaats** om de wortelpagina van de plaats te openen.
 
 ### Een actieve kopie maken in een live kopie (configuratie blauwdruk) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
@@ -177,8 +177,8 @@ Wanneer u een levende kopie binnen de bestaande live kopie (gemaakt met behulp v
 
 De eigenschappen van een pagina met live kopieën geven de volgende informatie over de live kopie weer:
 
-* **Bron**: De bronpagina van de pagina voor live kopiëren.
-* **Status**: De synchronisatiestatus van de live kopie. De status omvat of de live kopie up-to-date is met de bron, en wanneer de laatste synchronisatie heeft plaatsgevonden en wie de synchronisatie heeft uitgevoerd.
+* **Source**: De bronpagina van de levende exemplaarpagina.
+* **Status**: De synchronisatiestatus van het levende exemplaar. De status omvat of de live kopie up-to-date is met de bron, en wanneer de laatste synchronisatie heeft plaatsgevonden en wie de synchronisatie heeft uitgevoerd.
 * **Configuratie**:
 
    * Of de pagina nog steeds onderhevig is aan overerving van live-kopieën.
@@ -187,53 +187,53 @@ De eigenschappen van een pagina met live kopieën geven de volgende informatie o
 
 De eigenschappen weergeven:
 
-1. In de **Sites** selecteert u de pagina met live kopieën en opent u de eigenschappen.
-1. Selecteer de **Live kopie** tab.
+1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en open de eigenschappen.
+1. Selecteer het **Levende 1} lusje van het Exemplaar {.**
 
    Bijvoorbeeld:
 
-   ![Live kopie selecteren](assets/chlimage_1-218.png)
+   ![ Uitgezochte Levende Exemplaar ](assets/chlimage_1-218.png)
 
    >[!NOTE]
    >
-   >Zie ook het artikel in de Knowledge Base voor meer informatie [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Voor verdere details zie ook het artikel van de Kennisbank [ Livecopy statusbericht - Up-to-date/Green/In Synchronisatie ](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 ### De actieve kopieën van een vervagingspagina bekijken {#seeing-the-live-copies-of-a-blueprint-page}
 
-De pagina&#39;s van de blauwdruk (die in een blauwdrukconfiguratie van verwijzingen worden voorzien) verstrekken u een lijst van de levende exemplaarpagina&#39;s die de huidige (blauwdruk) pagina als bron gebruiken. Gebruik deze lijst om de live kopieën bij te houden. De lijst wordt weergegeven in de **Blauwdruk** tabblad van het [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md).
+De pagina&#39;s van de blauwdruk (die in een blauwdrukconfiguratie van verwijzingen worden voorzien) verstrekken u een lijst van de levende exemplaarpagina&#39;s die de huidige (blauwdruk) pagina als bron gebruiken. Gebruik deze lijst om de live kopieën bij te houden. De lijst verschijnt op het **Vervagen** lusje van de [ paginaeigenschappen ](/help/sites-authoring/editing-page-properties.md).
 
-![Tabblad Vervagen](assets/chlimage_1-219.png)
+![ het lusje van de Vervaging ](assets/chlimage_1-219.png)
 
 ## Live kopie synchroniseren {#synchronizing-your-live-copy}
 
 ### Een blauwdruk uitrollen {#rolling-out-a-blueprint}
 
-Leer een pagina van de blauwdruk uit om inhoudsveranderingen in levende exemplaren te duwen. A **Uitrol** handeling voert de rollout configuraties uit die gebruiken [Bij rollout](/help/sites-administering/msm-sync.md#rollout-triggers) trigger.
+Leer een pagina van de blauwdruk uit om inhoudsveranderingen in levende exemplaren te duwen. A **Rollout** actie voert de rollout configuraties uit die [ op de trekker ](/help/sites-administering/msm-sync.md#rollout-triggers) gebruiken van de Output.
 
 >[!NOTE]
 >
 >Conflicten kunnen optreden als er nieuwe pagina&#39;s met dezelfde paginanaam worden gemaakt in zowel de vertakking Verblauwdrukken als een afhankelijke vertakking voor live kopieën.
 >
->Dergelijke [conflicten moeten bij de uitrol worden afgehandeld en opgelost](/help/sites-administering/msm-rollout-conflicts.md).
+>Zulke [ conflicten moeten worden behandeld en op rollout ](/help/sites-administering/msm-rollout-conflicts.md) worden opgelost.
 >
 
 #### Een vervaging uitrollen uit pagina-eigenschappen {#rolling-out-a-blueprint-from-page-properties}
 
-1. In de **Sites** selecteert u de pagina in de blauwdruk en opent u de eigenschappen.
-1. Open de **Blauwdruk** tab.
-1. Selecteren **Uitrol**.
+1. In de **console van Plaatsen**, selecteer de pagina in de blauwdruk en open de eigenschappen.
+1. Open het **Vervagen** lusje.
+1. Selecteer **Uitvoer**.
 
-   ![Uitvoeren selecteren](assets/chlimage_1-220.png)
+   ![ Uitgezochte Uitvoer ](assets/chlimage_1-220.png)
 
 1. Geef de pagina&#39;s en eventuele subpagina&#39;s op en bevestig vervolgens met het vinkje:
 
-   ![Pagina&#39;s en subpagina&#39;s opgeven](assets/chlimage_1-221.png)
+   ![ specificeer pagina&#39;s en sub-pagina&#39;s ](assets/chlimage_1-221.png)
 
-1. Opgeven of de rollout-taak onmiddellijk moet worden uitgevoerd (**Nu**) of op een andere datum of tijd (**Later**).
+1. Specificeer als de rollout baan onmiddellijk (**nu**) of op een andere datum/tijd (**later**) zou moeten worden uitgevoerd.
 
-   ![Uitrolblauwdruk](assets/rollout-blueprint.png)
+   ![ Beeldscherm van de Uitvoer ](assets/rollout-blueprint.png)
 
-Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** > **Gereedschappen** > **Bewerkingen** > **Taken**
+Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0} Async {worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **[**
 
 >[!NOTE]
 >
@@ -241,45 +241,45 @@ Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd in 
 
 #### Een vervaging uitrollen vanuit de referentierail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In de **Sites** console, selecteer de pagina in het levende exemplaar en open **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)** van de werkbalk.
-1. Selecteer de **Blauwdruk** om de aan deze pagina gekoppelde blauwdrukken weer te geven.
+1. In de **console van Plaatsen**, selecteer de pagina in het levende exemplaar en open het **[paneel van Verwijzingen](/help/sites-authoring/basic-handling.md#references)** (van de toolbar).
+1. Selecteer de **Vervaging** optie van de lijst, om de blauwdrukken te tonen verbonden aan deze pagina.
 1. Selecteer de gewenste blauwdruk in de lijst.
-1. Klikken **Uitrol**.
+1. Klik **Uitvoer**.
 1. U wordt gevraagd de details van de rollout te bevestigen:
 
-   * **Uitrolbereik**:
+   * **werkingsgebied van de Uitvoer**:
 
      Geef op of het bereik alleen voor de geselecteerde pagina is of dat subpagina&#39;s moeten worden opgenomen.
 
-   * **Schema**:
+   * **Programma**:
 
-     Opgeven of de rollout-taak onmiddellijk moet worden uitgevoerd (**Nu**) of op een latere datum of tijd (**Later**).
+     Specificeer als de rollout baan onmiddellijk (**nu**) of bij een recentere datum/tijd (**later**) zou moeten worden uitgevoerd.
 
-     ![Het schema opgeven](assets/rollout-live-copy.png)
+     ![ specificeer het programma ](assets/rollout-live-copy.png)
 
-1. Nadat u deze details hebt bevestigd, selecteert u **Uitrol** om de handeling uit te voeren.
+1. Na het bevestigen van deze details, uitgezochte **Uitvoer** om de actie uit te voeren.
 
-Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** > **Gereedschappen** > **Bewerkingen** > **Taken**
+Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0} Async {worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **[**
 
 >[!NOTE]
 >
->Voor asynchrone rollout-verwerking is AEM 6.5.3.0 of hoger vereist. In vorige versies werden pagina&#39;s direct en synchroon verwerkt, tenzij de **Achtergronduitlijning** is ingeschakeld.
+>Voor asynchrone rollout-verwerking is AEM 6.5.3.0 of hoger vereist. In vorige versies, werden de pagina&#39;s verwerkt onmiddellijk en synchroon tenzij de **achtergrond rollout** optie werd gecontroleerd.
 
 #### Een vervaging uitrollen met het overzicht van Actieve kopie {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-De [De actie Uitvoeren is ook beschikbaar bij het Live Copy-overzicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer er een pagina Vervagen is geselecteerd.
+De [ actie van de Output is ook beschikbaar bij het Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer een pagina van de Vervaging wordt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een vervagingspagina.
-1. Selecteren **Uitrol** op de werkbalk.
+1. Open het [ Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Pagina van de Vervaging.
+1. Selecteer **Uitvoer** van de toolbar.
 1. Geef de pagina&#39;s en eventuele subpagina&#39;s op en bevestig vervolgens met het vinkje:
 
-   ![Pagina&#39;s en subpagina&#39;s selecteren](assets/chlimage_1-223.png)
+   ![ selecteer de pagina&#39;s en sub-pagina&#39;s ](assets/chlimage_1-223.png)
 
-1. Opgeven of de rollout-taak onmiddellijk moet worden uitgevoerd (**Nu**) of op een andere datum of tijd (**Later**).
+1. Specificeer als de rollout baan onmiddellijk (**nu**) of op een andere datum/tijd (**later**) zou moeten worden uitgevoerd.
 
-   ![Uitrolblauwdruk](assets/rollout-blueprint.png)
+   ![ Beeldscherm van de Uitvoer ](assets/rollout-blueprint.png)
 
-Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** > **Gereedschappen** > **Bewerkingen** > **Taken**
+Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0} Async {worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **[**
 
 >[!NOTE]
 >
@@ -295,28 +295,28 @@ Synchroniseer een live kopie om wijzigingen van de bron naar de livecopy over te
 
 >[!NOTE]
 >
->Synchroniseert voert de rollout configuraties uit die gebruiken [Bij rollout](/help/sites-administering/msm-sync.md#rollout-triggers) trigger.
+>Het synchroniseren voert de rollout configuraties uit die [ op de trekker van de Uitvoer ](/help/sites-administering/msm-sync.md#rollout-triggers) gebruiken.
 
-1. In de **Sites** selecteert u de pagina met live kopieën en opent u de eigenschappen.
-1. Open de **Live kopie** tab.
-1. Klikken **Synchroniseren**.
+1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en open de eigenschappen.
+1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Klik **synchroniseren**.
 
-   ![Synchroniseren](assets/chlimage_1-224.png)
+   ![ synchroniseren ](assets/chlimage_1-224.png)
 
-   Bevestiging wordt aangevraagd, gebruik **Sync** om verder te gaan.
+   De bevestiging zal worden gevraagd, gebruik **Synchronisatie** te werk te gaan.
 
 #### Een actieve kopie synchroniseren vanuit het overzicht Live kopie {#synchronize-a-live-copy-from-the-live-copy-overview}
 
-De [De actie Synchroniseren is ook beschikbaar via het Live Copy-overzicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer u een pagina voor live kopiëren hebt geselecteerd.
+De [ synchroniseer actie is ook beschikbaar bij het Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer een Levende pagina van het Exemplaar wordt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Live Copy-pagina.
-1. Selecteren **Synchroniseren** op de werkbalk.
-1. Bevestig de **Uitrol** Handeling in het dialoogvenster nadat u hebt opgegeven of u het volgende wilt opnemen:
+1. Open het [ Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Levende Pagina van het Exemplaar.
+1. Selecteer **Synchroniseer** van de toolbar.
+1. Bevestig de **actie van de Uitvoer** in de dialoog na het specificeren van of u wilt omvatten:
 
-   * **Pagina- en subpagina&#39;s**
-   * **Alleen pagina**
+   * **Pagina en Subpagina&#39;s**
+   * **slechts Pagina**
 
-   ![Uitvoer bevestigen](assets/chlimage_1-225.png)
+   ![ bevestig rollout ](assets/chlimage_1-225.png)
 
 ## Live kopie van inhoud wijzigen {#changing-live-copy-content}
 
@@ -335,18 +335,18 @@ Als u inhoud voor live kopieën wilt wijzigen, kunt u:
 >
 >Conflicten kunnen optreden als er nieuwe pagina&#39;s met dezelfde paginanaam worden gemaakt in zowel de vertakking Verblauwdrukken als een afhankelijke vertakking voor live kopieën.
 >
->Dergelijke [conflicten moeten bij de uitrol worden afgehandeld en opgelost](/help/sites-administering/msm-rollout-conflicts.md).
+>Zulke [ conflicten moeten worden behandeld en op rollout ](/help/sites-administering/msm-rollout-conflicts.md) worden opgelost.
 >
 
 ### Componenten toevoegen aan een Live Copy-pagina {#adding-components-to-a-live-copy-page}
 
 Voeg op elk gewenst moment componenten toe aan een pagina voor live kopieën. De overervingsstatus van de live kopie en het bijbehorende alineasysteem bepaalt niet hoe u componenten kunt toevoegen.
 
-Wanneer de pagina met live kopieën wordt gesynchroniseerd met de bronpagina, blijven de toegevoegde componenten ongewijzigd. Zie ook [De volgorde van componenten op een Live Copy-pagina wijzigen](#changing-the-order-of-components-on-a-live-copy-page).
+Wanneer de pagina met live kopieën wordt gesynchroniseerd met de bronpagina, blijven de toegevoegde componenten ongewijzigd. Zie ook [ Veranderend de Orde van Componenten op een Levende Pagina van het Exemplaar ](#changing-the-order-of-components-on-a-live-copy-page).
 
 >[!NOTE]
 >
->Wijzigingen die lokaal worden aangebracht in een component die als container is gemarkeerd, worden niet overschreven door de inhoud van de blauwdruk op een rollout. Zie [Aanbevolen MSM-procedures](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor meer informatie .
+>Wijzigingen die lokaal worden aangebracht in een component die als container is gemarkeerd, worden niet overschreven door de inhoud van de blauwdruk op een rollout. Zie ](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) Beste praktijken MSM [ voor meer informatie.
 
 ### Overerving voor een pagina onderbreken {#suspending-inheritance-for-a-page}
 
@@ -356,51 +356,51 @@ U kunt de overerving van live kopieën voor een live kopieerpagina opschorten, z
 
 >[!NOTE]
 >
->U kunt [een live kopie loskoppelen](#detaching-a-live-copy) van zijn blauwdruk om alle verbindingen te verwijderen. De handeling Loskoppelen is permanent en niet-omkeerbaar.
+>U kunt [ een levend exemplaar ](#detaching-a-live-copy) van zijn blauwdruk ook losmaken om alle verbindingen te verwijderen. De handeling Loskoppelen is permanent en niet-omkeerbaar.
 
 >[!NOTE]
 >
->Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [Aanbevolen MSM-procedures](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor aanvullende informatie.
+>Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [ Beste praktijken MSM ](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor extra informatie.
 
 #### Overerving van pagina-eigenschappen onderbreken {#suspending-inheritance-from-page-properties}
 
 Overerving op een pagina opschorten:
 
-1. Open de eigenschappen van de actieve kopieerpagina met de opdracht **Eigenschappen weergeven** de **Sites** console of gebruiken **Pagina-informatie** op de pagina-werkbalk.
-1. Klik op de knop **Live kopie** tab.
-1. Selecteren **Onderbreken** op de werkbalk. U kunt vervolgens een van de volgende opties selecteren:
+1. Open de eigenschappen van de levende exemplaarpagina of gebruikend het **bevel van de Eigenschappen van de Mening** van de **console van Plaatsen** of het gebruiken van **Informatie van de Pagina** op de paginatoolbar.
+1. Klik het **Levende Exemplaar** lusje.
+1. Selecteer **Onderbreking** van de toolbar. U kunt vervolgens een van de volgende opties selecteren:
 
-   * **Onderbreken**: alleen huidige pagina
-   * **Opschorting met kinderen**: huidige pagina samen met eventuele onderliggende pagina&#39;s
+   * **Uitstel**: huidige slechts pagina
+   * **Opschorting met kinderen**: huidige pagina samen met om het even welke kindpagina&#39;s
 
-1. Selecteren **Onderbreken** in het bevestigingsdialoogvenster.
+1. Selecteer **Onderbreking** op de bevestigingsdialoog.
 
 #### Overerving van het Live Copy-overzicht opschorten {#suspending-inheritance-from-the-live-copy-overview}
 
-De [Handeling voor schorsing is ook beschikbaar in het overzicht Live kopie](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer u een pagina voor live kopiëren hebt geselecteerd.
+De [ opschortende actie is ook beschikbaar bij het Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer een Levende pagina van het Exemplaar wordt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Live Copy-pagina.
-1. Selecteren **Onderbreken** op de werkbalk.
+1. Open het [ Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Levende Pagina van het Exemplaar.
+1. Selecteer **Onderbreking** van de toolbar.
 1. Selecteer de gewenste optie uit:
 
-   * **Onderbreken**
+   * **Suspend**
    * **Opschorting met kinderen**
 
-   ![Selecteer de gewenste optie Opschorten](assets/chlimage_1-226.png)
+   ![ Uitgezocht aangewezen Opschorting optie ](assets/chlimage_1-226.png)
 
-1. Bevestig de **Onderbreken** in de **Live kopie onderbreken** dialoogvenster:
+1. Bevestig **Onderbreking** actie in de **Levende dialoog van het Exemplaar** onderbreken:
 
-   ![Handeling opschorten](assets/chlimage_1-227.png)
+   ![ opschortende actie ](assets/chlimage_1-227.png)
 
 ### Overerving voor een pagina hervatten {#resuming-inheritance-for-a-page}
 
-Het onderbreken van overerving van live-kopieën voor een pagina is een tijdelijke handeling. Na de schorsing van de **Hervatten** Deze handeling wordt beschikbaar, zodat u de live relatie opnieuw kunt instellen.
+Het onderbreken van overerving van live-kopieën voor een pagina is een tijdelijke handeling. Zodra opgeschort wordt de **Hervatten** actie beschikbaar, toestaand u om de levende verhouding opnieuw op te nemen.
 
 Wanneer u overerving weer inschakelt, wordt de pagina niet automatisch gesynchroniseerd met de bron. U kunt een synchronisatie aanvragen, als dit vereist is:
 
-* In de **Hervatten**/**Vorige versie** dialoog; bijvoorbeeld:
+* In **hervat**/**keert** dialoog terug; bijvoorbeeld:
 
-  ![Hervatten of Vorige versie](assets/chlimage_1-228.png)
+  ![ hervatten of terugkeren ](assets/chlimage_1-228.png)
 
 * In een later stadium, door de synchronisatieactie manueel te selecteren.
 
@@ -410,19 +410,19 @@ Wanneer u overerving weer inschakelt, wordt de pagina niet automatisch gesynchro
 
 #### Overerving van pagina-eigenschappen hervatten {#resuming-inheritance-from-page-properties}
 
-Eenmaal [opgeschort](#suspending-inheritance-from-page-properties) de **Hervatten** Deze handeling wordt weergegeven op de werkbalk van de pagina-eigenschappen:
+Zodra [ ](#suspending-inheritance-from-page-properties) opgeschort **hervat** actie in de toolbar van de paginaeigenschappen wordt:
 
-![Hervatten](assets/chlimage_1-229.png)
+![ Hervatten ](assets/chlimage_1-229.png)
 
 Als deze optie is geselecteerd, wordt het dialoogvenster weergegeven. U kunt, indien nodig, een synchronisatie selecteren en de actie vervolgens bevestigen.
 
 #### Een Live Copy-pagina hervatten vanuit het Live Copy-overzicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
-De [Handeling voor hervatten is ook beschikbaar via het Live Copy-overzicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer u een pagina voor live kopiëren hebt geselecteerd.
+De [ actie van het Hervatten is ook beschikbaar bij het Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer een Levende pagina van het Exemplaar wordt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Live Copy-pagina die is opgeschort; deze wordt weergegeven als **OVERERVING GEANNULEERD**.
-1. Selecteren **Hervatten** op de werkbalk.
-1. Geef aan of u de pagina wilt synchroniseren nadat u de overerving hebt omgekeerd. Bevestig vervolgens de optie **Hervatten** in de **Live kopie hervatten** in.
+1. Open het [ Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Levende Pagina van het Exemplaar die is opgeschort; het wordt getoond als **GEANNULEERDE OVERERVING**.
+1. Selecteer **Hervatten** van de toolbar.
+1. Wijs erop of u de pagina na het terugkeren van overerving wilt synchroniseren, dan de **Actie van het Hervatten** in de **Levende dialoog van het Exemplaar van de Hervatten** bevestigen.
 
 ### Overervingsdiepte wijzigen (Ondiep/Ondiep) {#changing-inheritance-depth-shallow-deep}
 
@@ -434,7 +434,7 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen, dat wil ze
 
       * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan worden gemaakt.
 
-      * Hiermee verwijdert u alle afstammingen `LiveRelationships` zelfs als er geneste `LiveCopies`.
+      * Hiermee verwijdert u alle afstammingen `LiveRelationships`, zelfs als er `LiveCopies` is genest.
 
 * Schakelen naar een diepe live kopie:
 
@@ -443,13 +443,13 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen, dat wil ze
 
 * Het schakelen naar een oppervlakkige levende kopie, dan terug naar diep:
 
-   * Alle kinderen van de (vroegere) ondiepe levende kopie worden behandeld alsof zij manueel waren gecreeerd en daarom worden bewogen gebruikend `[oldname]_msm_moved name`.
+   * Alle onderliggende items van de (eerdere) oppervlakkige live kopie worden behandeld alsof ze handmatig zijn gemaakt en worden daarom met `[oldname]_msm_moved name` van de lijst verwijderd.
 
 U kunt als volgt de diepte opgeven of wijzigen:
 
-1. Open de eigenschappen van de actieve kopieerpagina met de opdracht **Eigenschappen weergeven** de **Sites** console of gebruiken **Pagina-informatie** op de pagina-werkbalk.
-1. Klik op de knop **Live kopie** tab.
-1. In de **Configuratie** de sectie instellen of wissen **Overerving van Actieve kopie** afhankelijk van of onderliggende pagina&#39;s worden opgenomen:
+1. Open de eigenschappen van de levende exemplaarpagina of gebruikend het **bevel van de Eigenschappen van de Mening** van de **console van Plaatsen** of het gebruiken van **Informatie van de Pagina** op de paginatoolbar.
+1. Klik het **Levende Exemplaar** lusje.
+1. In de **sectie van de Configuratie**, plaats of ontruim de **Levende optie van de Overerving van het Exemplaar** afhankelijk van of de kindpagina&#39;s inbegrepen zijn:
 
    * gecontroleerd - een diepe levende kopie (de kindpagina&#39;s worden omvat)
    * clear - een oppervlakkige live kopie (onderliggende pagina&#39;s zijn uitgesloten)
@@ -458,9 +458,9 @@ U kunt als volgt de diepte opgeven of wijzigen:
    >
    >Het overschakelen naar een oppervlakkige live kopie heeft onmiddellijk effect en is niet-omkeerbaar.
    >
-   >Zie [Actieve kopieën - Compositie](/help/sites-administering/msm.md#live-copies-composition) voor meer informatie .
+   >Zie [ Levende Exemplaren - Samenstelling ](/help/sites-administering/msm.md#live-copies-composition) voor meer informatie.
 
-1. Klikken **Opslaan** om uw updates voort te zetten.
+1. Klik **sparen** om uw updates voort te zetten.
 
 ### Overerving voor een component annuleren {#cancelling-inheritance-for-a-component}
 
@@ -468,7 +468,7 @@ Annuleer de overerving van de live kopie voor een component zodat de component n
 
 >[!NOTE]
 >
->Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [Aanbevolen MSM-procedures](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor aanvullende informatie.
+>Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [ Beste praktijken MSM ](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor extra informatie.
 
 >[!NOTE]
 >
@@ -478,21 +478,21 @@ Overerving annuleren om de inhoud van de component te wijzigen of de component t
 
 1. Klik op de component waarvoor u overerving wilt annuleren.
 
-   ![Component selecteren voor annuleringsovererving](assets/chlimage_1-230.png)
+   ![ Uitgezochte component voor annuleren overervingsactie ](assets/chlimage_1-230.png)
 
-1. Klik op de componentwerkbalk op de knop **Overerving annuleren** pictogram.
+1. Voor de componententoolbar, klik **annuleer Overerving** pictogram.
 
-   ![Overerving annuleren](do-not-localize/chlimage_1-8.png)
+   ![ annuleert Overerving ](do-not-localize/chlimage_1-8.png)
 
-1. Bevestig in het dialoogvenster Overerving annuleren de handeling met **Ja**.
+1. In het Cancel de dialoogvakje van de Overerving, bevestig de actie met **ja**.
 
    De werkbalk van de component wordt bijgewerkt en bevat alle (toepasselijke) bewerkingsopdrachten.
 
 ### Overerving voor een component opnieuw inschakelen {#re-enabling-inheritance-for-a-component}
 
-Als u overerving voor een component wilt inschakelen, klikt u op de knop **Overerving opnieuw inschakelen** op de werkbalk van de component.
+Om overerving voor een component toe te laten, klik **re-enable het pictogram van de Overerving** op de componententoolbar.
 
-![Overerving opnieuw inschakelen](do-not-localize/chlimage_1-9.png)
+![ re-enable overerving ](do-not-localize/chlimage_1-9.png)
 
 ### De volgorde van componenten op een Live Copy-pagina wijzigen {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -504,13 +504,13 @@ Als een live kopie componenten bevat die onderdeel zijn van een alineasysteem, w
 
 >[!NOTE]
 >
->Bij het terugkeren van een geannuleerde overerving op een alineasysteem, de volgorde van componenten **wordt niet automatisch hersteld** in de blauwdruk. U kunt handmatig een synchronisatie aanvragen als dit vereist is.
+>Wanneer het terugkeren van een geannuleerde overerving op een paragraafsysteem, zal de orde van componenten **niet automatisch worden hersteld** van de blauwdruk. U kunt handmatig een synchronisatie aanvragen als dit vereist is.
 
 Gebruik de volgende procedure om de overname van het alineasysteem te annuleren.
 
 1. Open de pagina voor live kopiëren.
 1. Sleep een bestaande component naar een nieuwe locatie op de pagina.
-1. In de **Overerving annuleren** de handeling bevestigen met **Ja**.
+1. In **annuleer Overerving** dialoogdoos, bevestig de actie met **ja**.
 
 ### Eigenschappen van een Live Copy-pagina overschrijven {#overriding-properties-of-a-live-copy-page}
 
@@ -518,11 +518,11 @@ De pagina-eigenschappen van een pagina van Live Copy worden standaard overgeërf
 
 U kunt overerving voor een eigenschap annuleren wanneer u de eigenschapswaarde voor de live kopie moet wijzigen. Een koppelingspictogram geeft aan dat overerving is ingeschakeld voor de eigenschap.
 
-![Overerving van eigenschap annuleren](assets/chlimage_1-231.png)
+![ annuleert overerving van bezit ](assets/chlimage_1-231.png)
 
 Wanneer u overerving annuleert, kunt u de waarde van de eigenschap wijzigen. Een pictogram voor verbroken koppelingen geeft aan dat overerving wordt geannuleerd.
 
-![Eigenschap wijzigen wanneer overerving is verbroken](assets/chlimage_1-232.png)
+![ bezit van de Verandering wanneer de erfenis gebroken ](assets/chlimage_1-232.png)
 
 U kunt overerving voor een eigenschap indien nodig later opnieuw inschakelen.
 
@@ -530,18 +530,18 @@ U kunt overerving voor een eigenschap indien nodig later opnieuw inschakelen.
 >
 >Wanneer u overerving opnieuw inschakelt, wordt de pagina-eigenschap voor live kopiëren niet automatisch gesynchroniseerd met de eigenschap source. U kunt handmatig een synchronisatie aanvragen als dit vereist is.
 
-1. Open de eigenschappen van de actieve kopieerpagina met behulp van de **Eigenschappen weergeven** van de **Sites** console of **Pagina-informatie** op de werkbalk Pagina.
+1. Open de eigenschappen van de levende exemplaarpagina gebruikend of de **optie van de Eigenschappen van de Mening** van de **console van Plaatsen** of **pictogram van de Informatie van de Pagina** op de paginaboolbar.
 1. Als u de overerving van een eigenschap wilt annuleren, klikt u op het koppelingspictogram rechts van de eigenschap.
 
-   ![Overerving van eigenschap annuleren](do-not-localize/chlimage_1-10.png)
+   ![ annuleert overerving van bezit ](do-not-localize/chlimage_1-10.png)
 
-1. In de **Overerving annuleren** bevestigingsvenster, klik **Ja**.
+1. In **annuleer de bevestigingsdialoog van de Overerving**, klik **ja**.
 
 ### Eigenschappen van een Live Copy-pagina herstellen {#revert-properties-of-a-live-copy-page}
 
-Als u overerving voor een eigenschap wilt inschakelen, klikt u op de knop **Overerving herstellen** wordt weergegeven naast de eigenschap.
+Om overerving voor een bezit toe te laten, klik het **Revert pictogram van de Overerving** dat naast het bezit verschijnt.
 
-![Overerving herstellen](do-not-localize/chlimage_1-11.png)
+![ keert Overerving ](do-not-localize/chlimage_1-11.png) terug
 
 ### Live Copy-pagina opnieuw instellen {#resetting-a-live-copy-page}
 
@@ -554,46 +554,46 @@ Het opnieuw instellen beïnvloedt de wijzigingen die u hebt aangebracht in pagin
 
 #### Een actieve pagina voor kopiëren herstellen vanuit de pagina-eigenschappen {#reset-a-live-copy-page-from-the-page-properties}
 
-1. In de **Sites** console, selecteer de levende exemplaarpagina en selecteer **Eigenschappen weergeven**.
-1. Open de **Live kopie** tab.
-1. Selecteren **Herstellen** op de werkbalk.
+1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en selecteer **Eigenschappen van de Mening**.
+1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Selecteer **Terugstellen** van de toolbar.
 
-   ![Herstellen](assets/chlimage_1-233.png)
+   ![ Terugstellen ](assets/chlimage_1-233.png)
 
-1. In de **Live kopie opnieuw instellen** dialoogvenster, bevestigen met **Herstellen**.
+1. In het **Levende de dialoogvakje van het Exemplaar van het Terugstellen**, bevestig met **Terugstellen**.
 
 #### Een Live Copy-pagina herstellen vanuit het Live Copy-overzicht {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-De [Handeling Herstellen is ook beschikbaar via het Live Copy-overzicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer u een pagina voor live kopiëren hebt geselecteerd.
+De [ actie van het Terugstellen is ook beschikbaar bij het Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer een Levende pagina van het Exemplaar wordt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Live Copy-pagina.
-1. Selecteren **Herstellen** op de werkbalk.
-1. Bevestig de **Herstellen** in de **Live kopie opnieuw instellen** dialoogvenster:
+1. Open het [ Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Levende Pagina van het Exemplaar.
+1. Selecteer **Terugstellen** van de toolbar.
+1. Bevestig de **1} actie van het Terugstellen {in de** Levende dialoog van het Exemplaar van het Terugstellen **:**
 
-   ![Herstellen bevestigen](assets/chlimage_1-234.png)
+   ![ Bevestig Terugstellen ](assets/chlimage_1-234.png)
 
 ## Een Live Copy-pagina vergelijken met een vervagingspagina {#comparing-a-live-copy-page-with-a-blueprint-page}
 
-Als u de aangebrachte wijzigingen wilt bijhouden, kunt u de blauwdrukpagina weergeven in **Verwijzingen** en deze vergelijken met de bijbehorende pagina voor live kopiëren:
+Om de veranderingen te volgen u hebt aangebracht, kunt u de blauwdrukpagina in **Verwijzingen** bekijken en het met zijn levende exemplaarpagina vergelijken:
 
-1. In de **Sites** console, [navigeer naar een blauwdruk- of live kopieerpagina en selecteer deze](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open de **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteer:
+1. In de **console van Plaatsen**, [ navigeert aan een blauwdruk of een levende exemplaarpagina en selecteert het ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open het **[paneel van Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteer:
 
-   * **Blauwdruk** (wanneer een pagina voor live kopiëren is geselecteerd)
-   * **Actieve kopieën** (wanneer een pagina met een blauwdruk is geselecteerd)
+   * **Vervaging** (wanneer een levende geselecteerde exemplaarpagina)
+   * **Levende Exemplaren** (wanneer een geselecteerde blauwdrukpagina)
 
 1. Selecteer vervolgens uw specifieke live kopie:
 
-   * **Vergelijken met vervaging** (wanneer een pagina voor live kopiëren is geselecteerd)
-   * **Vergelijken met Live kopie** (wanneer een pagina met een blauwdruk is geselecteerd)
+   * **vergelijk met Vervaging** (wanneer een levende exemplaarpagina selecteerde)
+   * **vergelijk met Levend Exemplaar** (wanneer een geselecteerde blauwdrukpagina)
 
    Bijvoorbeeld:
 
-   ![Ververgelijken](assets/chlimage_1-235.png)
+   ![ vergelijk ](assets/chlimage_1-235.png)
 
 1. De twee pagina&#39;s (live kopie en blauwdruk) worden naast elkaar geopend.
 
-   Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-authoring/page-diff.md).
+   Voor volledige informatie over het gebruiken van deze eigenschap zie [ Afschuiving van de Pagina ](/help/sites-authoring/page-diff.md).
 
 ## Een actieve kopie ontkoppelen {#detaching-a-live-copy}
 
@@ -603,24 +603,24 @@ Met Loskoppelen verwijdert u permanent de live relatie tussen een live kopie en 
 >
 >U kunt de live relatie niet meer herstellen nadat u de live kopie hebt losgekoppeld.
 >
->Als u de live relatie wilt verwijderen met de optie om deze later opnieuw te installeren, kunt u [overerving van live kopiëren annuleren](#suspending-inheritance-for-a-page) voor de pagina.
+>Om de levende verhouding met de optie van het later opnieuw opnemen van het te verwijderen, kunt u [ levende exemplaarovererving ](#suspending-inheritance-for-a-page) voor de pagina annuleren.
 
-Er zijn implicaties voor waar binnen de boom die u gebruikt **Loskoppelen**:
+Er zijn implicaties op waar binnen de boom die u **gebruikt losmaken**:
 
-* **Koppelen op een hoofdpagina van een LiveCopy**
+* **losmaken op een Wortel- Pagina van een LiveCopy**
 
   Wanneer deze bewerking wordt uitgevoerd op de hoofdpagina van een live kopie, wordt de live relatie tussen alle pagina&#39;s van de blauwdruk en de bijbehorende livecopy verwijderd.
 
-  Verdere wijzigingen op pagina&#39;s in de blauwdruk (zoals voorheen) **niet** heeft invloed op de livecopy (zoals voorheen).
+  Verdere veranderingen in pagina&#39;s in de blauwdruk (zoals was) **zullen niet** de livecopy (zoals was) beïnvloeden.
 
-* **Koppelen op een subpagina van een LiveCopy**
+* **losmaken op een Subpagina van een LiveCopy**
 
   Wanneer deze bewerking wordt uitgevoerd op een subpagina (of vertakking) binnen een live kopie:
 
    * de live relatie is verwijderd voor die subpagina (of vertakking)
    * en de (sub)pagina&#39;s in de levende exemplaartak worden behandeld alsof zij manueel waren gecreeerd.
 
-  *Echter*, zijn de subpagina&#39;s nog steeds onderhevig aan de live relatie van de bovenliggende vertakking, zodat een verdere uitrol van de blauwdrukpagina(&#39;s) beide:
+  *Nochtans*, zijn de subpagina&#39;s nog onderworpen aan de levende verhouding van de oudertak zodat zal een verdere uitrol van de blauwdrukpagina(s) allebei:
 
    1. Wijzig de naam van de losgekoppelde pagina(&#39;s):
 
@@ -630,26 +630,26 @@ Er zijn implicaties voor waar binnen de boom die u gebruikt **Loskoppelen**:
 
   >[!NOTE]
   >
-  >Zie [Conflicten MSM-rollout](/help/sites-administering/msm-rollout-conflicts.md) voor nadere bijzonderheden over dergelijke situaties.
+  >Zie {de Conflicten van de Uitvoer MSM ](/help/sites-administering/msm-rollout-conflicts.md) voor details van dergelijke situaties.[
 
 ### Een actieve pagina voor kopiëren loskoppelen van de pagina-eigenschappen {#detach-a-live-copy-page-from-the-page-properties}
 
 Een actieve kopie loskoppelen:
 
-1. In de **Sites** console, selecteer de levende exemplaarpagina en klik **Eigenschappen weergeven**.
-1. Open de **Live kopie** tab.
-1. Selecteer op de werkbalk de optie **Loskoppelen**.
+1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en klik **Eigenschappen van de Mening**.
+1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Voor de toolbar, uitgezochte **maak** los.
 
-   ![Loskoppelen](assets/chlimage_1-236.png)
+   ![ losmaken ](assets/chlimage_1-236.png)
 
-1. Er wordt een bevestigingsdialoogvenster weergegeven. Selecteer **Loskoppelen** om de actie te voltooien.
+1. Een bevestigingsdialoog wordt getoond, wordt uitgezocht **losgemaakt** om de actie te voltooien.
 
 ### Een Live Copy-pagina loskoppelen van het Live Copy-overzicht {#detach-a-live-copy-page-from-the-live-copy-overview}
 
-De [De actie Ontkoppelen is ook beschikbaar in het Live Copy-overzicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer u een pagina voor live kopiëren hebt geselecteerd.
+De [ ontkoppelde actie is ook beschikbaar bij het Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer een Levende pagina van het Exemplaar wordt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Live Copy-pagina.
-1. Selecteren **Loskoppelen** op de werkbalk.
-1. Bevestig de **Loskoppelen** in de **Live kopie ontkoppelen** dialoogvenster:
+1. Open het [ Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Levende Pagina van het Exemplaar.
+1. Selecteer **losmaken** van de toolbar.
+1. Bevestig **losmaken** actie in de **Levende dialoog van het Exemplaar** loskoppelen:
 
-   ![Ontkoppelen bevestigen](assets/chlimage_1-237.png)
+   ![ bevestig los ](assets/chlimage_1-237.png)

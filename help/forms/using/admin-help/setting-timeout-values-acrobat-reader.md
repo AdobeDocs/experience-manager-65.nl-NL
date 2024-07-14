@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Wanneer u werkt aan veel PDF-bestanden in Acrobat Reader DC Extensions, moet u ervoor zorgen dat de volgende time-outwaarden op de juiste wijze zijn ingesteld om te voorkomen dat taken op het juiste moment worden uitgevoerd en mislukken:
 
-**Tijdslimiet voor verwijdering van document**
+**Tijdslimiet van de Verplaatsing van het Document**
 
 Deze waarde kan in de beleidsconsole worden geplaatst. Klik op Instellingen > Core System Settings > Configurations en geef een waarde op voor Default Document Disposal Timeout.
 
-**Tijdslimiet voor AEM van gebruikersbeheer:** Deze waarde kan worden ingesteld door het bestand config.xml te bewerken. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren en klik vervolgens op Exporteren. Open het geëxporteerde bestand config.xml en bewerk de volgende regels:
+**Manager van de Gebruiker AEM vormOnderbreking:** Deze waarde kan worden geplaatst door het config.xml- dossier uit te geven. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren en klik vervolgens op Exporteren. Open het geëxporteerde bestand config.xml en bewerk de volgende regels:
 
 &lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot;/>
 
@@ -32,4 +32,4 @@ Deze waarde kan in de beleidsconsole worden geplaatst. Klik op Instellingen > Co
 
 Sla het bestand config.xml op en importeer het vervolgens weer in de beheerconsole.
 
-**Time-out sessie toepassingsserver:** Deze waarde kan op de toepassingsserver worden ingesteld. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.
+**Time-out van de Zitting van de Server van de Toepassing:** Deze waarde kan op de toepassingsserver worden geplaatst. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.

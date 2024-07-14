@@ -20,37 +20,37 @@ ht-degree: 0%
 
 Deze pagina bevat de essentiële informatie voor het werken met de functie Lederboard.
 
-Voordat u de leaderboard-component op een pagina plaatst, moet u [Scores en badges van gemeenschappen](implementing-scoring.md).
+Alvorens de leaderboard component op een pagina op te nemen, is het noodzakelijk om [ het Scoren Badges van Gemeenschappen te vormen ](implementing-scoring.md).
 
-Zie [Scores en Badges Essentials](configure-scoring.md).
+Zie [ het Scoren en de Hoofdzaak van Badges ](configure-scoring.md).
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceType</strong></td>
+   <td> <strong> resourceType </strong></td>
    <td>sociaal/gamificatie/componenten/hbs/leaderboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong> inbegrepen </strong></a></td>
    <td>Nee</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong> clientllibs </strong></a></td>
    <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong> malplaatjes </strong></td>
    <td> /libs/social/gamification/components/hbs/leaderboard/leaderboard.hbs<br /> </td>
   </tr>
   <tr>
-   <td> <strong>css</strong></td>
+   <td> <strong> css </strong></td>
    <td> /libs/social/gamification/components/hbs/leaderboard/clientlibs/leaderboard.css</td>
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie <a href="enabling-leaderboard.md">Leaderboard-functie</a></td>
+   <td>Zie </a> de Eigenschap van 0} Leaderboard<a href="enabling-leaderboard.md"></td>
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Zie [Scores en Badges Essentials](configure-scoring.md).
 
 ### Functie bestandsbibliotheek {#file-library-function}
 
-Een community-sitestructuur die de [Leaderboard, functie](functions.md#leaderboard-function)bevat een configuratie `leaderboard` component.
+Een communautaire plaatsstructuur die de [ functie van Leaderboard ](functions.md#leaderboard-function) omvat, omvat een gevormde `leaderboard` component.

@@ -45,17 +45,17 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ### Opties {#options}
 
-* **q (stille modus)** Schrijft niet de verzoeken aan het consolevenster. Gebruik deze optie als u de verbinding niet wilt vertragen of als u de uitvoer naar een bestand wilt vastleggen (zie de optie -logfile).
-* **b (binaire modus)** Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat de hexadecimale uitvoer en de tekenuitvoer.
-* **t (logbestandvermeldingen voor tijdstempel)** Hiermee voegt u een tijdstempel toe aan elk logbestand. Het tijdstempel is in seconden, zodat het mogelijk niet geschikt is voor het controleren van afzonderlijke aanvragen. Gebruik het om van gebeurtenissen de plaats te bepalen die in een specifiek ogenblik voorkwamen als u de volmachtsserver over een langere tijdspanne gebruikt.
-* **logbestand &lt;filename> (schrijven naar logbestand)** Schrijft het cliënt-server gesprek aan een logboekdossier. Deze parameter werkt ook in de stille modus.
-* **i &lt;numindentions> (inspringing toevoegen)** Elke actieve verbinding springt in voor betere leesbaarheid. De standaardwaarde is 16 niveaus. (Nieuw in proxy.jar versie 1.16).
+* **q (stille Wijze)** schrijft niet de verzoeken aan het consolevenster. Gebruik deze optie als u de verbinding niet wilt vertragen of als u de uitvoer naar een bestand wilt vastleggen (zie de optie -logfile).
+* **b (binaire Wijze)** als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat de hexadecimale uitvoer en de tekenuitvoer.
+* **t (de ingangen van het tijdstempellogboek)** voegt een tijdstempel aan elke logboekoutput toe. Het tijdstempel is in seconden, zodat het mogelijk niet geschikt is voor het controleren van afzonderlijke aanvragen. Gebruik het om van gebeurtenissen de plaats te bepalen die in een specifiek ogenblik voorkwamen als u de volmachtsserver over een langere tijdspanne gebruikt.
+* **logfile &lt;filename> (schrijf aan logboekdossier)** schrijft het cliënt-server gesprek aan een logboekdossier. Deze parameter werkt ook in de stille modus.
+* **i &lt;numIndentions> (voeg inspringing toe)** Elke actieve verbinding is ingesprongen voor betere leesbaarheid. De standaardwaarde is 16 niveaus. (Nieuw in proxy.jar versie 1.16).
 
 ## Gebruikt het gereedschap Proxyserver {#uses-of-the-proxy-server-tool}
 
 De volgende scenario&#39;s illustreren een paar van de doeleinden waarvoor het Hulpmiddel van de Server van de Volmacht kan worden gebruikt:
 
-**Controleren op cookies en de bijbehorende waarden**
+**Controle voor Cookies en hun Waarden**
 
 In het volgende voorbeeld van een logbestandvermelding worden alle cookies en hun waarden weergegeven die door de client worden verzonden via de zesde verbinding die sinds het starten van de proxy is geopend:
 
@@ -63,7 +63,7 @@ In het volgende voorbeeld van een logbestandvermelding worden alle cookies en hu
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Controleren op kopteksten en hun waarden** In het volgende voorbeeld van een logbestandvermelding wordt getoond dat de server in staat is een verbinding te maken waarbij de inhoud in leven blijft en dat de header van de lengte van de inhoud juist is ingesteld:
+**het Controleren op Kopballen en hun Waarden** het volgende voorbeeld van de logboekingang toont aan dat de server een houden-levende verbinding kan maken en de kopbal van de inhoudslengte behoorlijk plaatste was:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -71,9 +71,9 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**Controleren of Keep-Alive werkt**
+**het Controleren als Levend houden** werkt
 
-**Keep-Alive** betekent dat een client de verbinding met de server opnieuw gebruikt om meerdere bestanden te vervoeren (paginacode, afbeeldingen, stijlpagina&#39;s enzovoort). Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
+**Levend houden** betekent dat een cliënt de verbinding aan de server opnieuw gebruikt om veelvoudige dossiers (de paginacode, beelden, stijlbladen, etc.) te vervoeren. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
 Controleren of in leven houden werkt:
 
@@ -83,15 +83,15 @@ Controleren of in leven houden werkt:
 * Als houden-levend werkt, zou de verbindenteller nooit boven 5 tot 10 verbindingen moeten gaan.
 * Als houden-levend niet werkt, stijgt de verbindenteller snel.
 
-**Verzoeken om verlies zoeken**
+**Vindend Verzoeken Verloren**
 
-Als u verzoeken verliest in een complexe serverinstelling, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
+Als u aanvragen kwijtraakt in een complexe serverinstelling, bijvoorbeeld met een firewall en een Dispatcher, kunt u met de proxyserver achterhalen waar de aanvraag is verloren. Als er een firewall is:
 
 1. Een proxy starten voor een firewall
 1. Een andere proxy starten na een firewall
 1. Gebruik deze om te zien hoe ver de verzoeken krijgen.
 
-**Verzoeken wijzigen**
+**Verzoeken die** veranderen
 
 Als u van tijd tot tijd hangende verzoeken ervaart:
 
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
 * #00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
-* [GET &lt;?>] Dit is de inhoud van de aanvraag, in het voorbeeld een van de HTTP-headers (url).
+* [ GET &lt;?> ] is de inhoud van het verzoek, in het voorbeeld één van de kopballen van HTTP (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:
 
@@ -149,7 +149,7 @@ Als AEM wordt uitgevoerd op localhost:4303, start u de proxyserver als volgt:
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-U hebt toegang tot de server (`localhost:4303`) zonder de proxyserver, maar als u er toegang toe hebt via `localhost:4444`, de proxyserver de communicatie registreert. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk vervolgens naar het logbestand.
+U kunt tot de server (`localhost:4303`) zonder de volmachtsserver toegang hebben, maar als u het via `localhost:4444` toegang hebt, registreert de volmachtsserver de mededeling. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk vervolgens naar het logbestand.
 
 >[!NOTE]
 >
@@ -280,4 +280,4 @@ Het bovenstaande voorbeeld is relatief eenvoudig, omdat de twee verbindingen ope
 * eerst retourneert de server de HTML-code
 * vervolgens vraagt de browser de afbeelding op en wordt een nieuwe verbinding geopend
 
-In de praktijk kan een pagina vele parallelle verzoeken voor beelden, stijlbladen, dossiers JavaScript, etc. produceren. Dit betekent dat de logboeken overlappende vermeldingen van parallelle open verbindingen hebben. In dat geval beveelt de Adobe aan om optie -i te gebruiken om de leesbaarheid te verbeteren.
+In de praktijk kan een pagina veel parallelle aanvragen genereren voor afbeeldingen, stijlpagina&#39;s, JavaScript-bestanden enzovoort. Dit betekent dat de logboeken overlappende vermeldingen van parallelle open verbindingen hebben. In dat geval beveelt de Adobe aan om optie -i te gebruiken om de leesbaarheid te verbeteren.

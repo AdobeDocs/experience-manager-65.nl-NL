@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # SAML 2.0-verificatiehandler{#saml-authentication-handler}
 
-AEM schepen [SAML](https://saml.xml.org/saml-specifications) verificatiehandler. Deze handler ondersteunt de [SAML](https://saml.xml.org/saml-specifications) 2.0 het Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend `HTTP POST` binding.
+AEM schepen met a [ SAML ](https://saml.xml.org/saml-specifications) authentificatiemanager. Deze manager steunt het ](https://saml.xml.org/saml-specifications) 2.0 Protocol van het Verzoek van de Authentificatie van 0} SAML {(Web-SSO profiel) gebruikend de `HTTP POST` band.[
 
 Het steunt:
 
@@ -27,15 +27,15 @@ Het steunt:
 * groepen synchroniseren met bestaande groepen in AEM
 * Serviceleverancier en identiteitsprovider hebben verificatie gestart
 
-Deze handler slaat het gecodeerde SAML-responsbericht op in het user-node ( `usernode/samlResponse`) om de communicatie met een externe serviceprovider te vergemakkelijken.
+Deze handler slaat het gecodeerde SAML-antwoordbericht op in het user-node ( `usernode/samlResponse` ) om de communicatie met een externe serviceprovider te vergemakkelijken.
 
 >[!NOTE]
 >
->Zie [een demonstratie van AEM en SAML-integratie](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>Zie [ een demonstratie van AEM en integratie SAML ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 
 ## De SAML 2.0-verificatiehandler configureren {#configuring-the-saml-authentication-handler}
 
-De [Webconsole](/help/sites-deploying/configuring-osgi.md) verleent toegang tot [SAML](https://saml.xml.org/saml-specifications) 2.0 de geroepen Configuratie van de Handler van de Authentificatie **Adobe graniet SAML 2.0-verificatiehandler**. De volgende eigenschappen kunnen worden ingesteld.
+De [ console van het Web ](/help/sites-deploying/configuring-osgi.md) verleent toegang tot [ SAML ](https://saml.xml.org/saml-specifications) 2.0 de configuratie van de Handler van de Authentificatie geroepen **Adobe granite SAML 2.0 de Handler van de Authentificatie**. De volgende eigenschappen kunnen worden ingesteld.
 
 >[!NOTE]
 >
@@ -47,46 +47,46 @@ De [Webconsole](/help/sites-deploying/configuring-osgi.md) verleent toegang tot 
 
 >[!NOTE]
 >
->SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de Identiteitsprovider in de TrustStore opgeeft. Zie [Het IdP-certificaat toevoegen aan de TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) voor meer informatie.
+>SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de Identiteitsprovider in de TrustStore opgeeft. Zie [ Toevoegend het certificaat IdP aan de ](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) sectie TrustStore voor meer informatie.
 
-**Pad** Pad naar opslagplaats waarvoor deze verificatiehandler door Sling moet worden gebruikt. Als dit leeg is, zal de authentificatiemanager worden onbruikbaar gemaakt.
+**weg van de Weg** Bewaarplaats waarvoor deze authentificatiemanager door het Sling zou moeten worden gebruikt. Als dit leeg is, zal de authentificatiemanager worden onbruikbaar gemaakt.
 
-**Servicereeks** OSGi de Rangschikkende waarde van de Dienst van het Kader om op de orde te wijzen waarin om deze dienst te roepen. Dit is een geheel getal waarbij hogere waarden een hogere prioriteit aangeven.
+**OSGi van het Kader van de Dienst Rangschikkende waarde van de Dienst van 0} de Dienst { om op de orde te wijzen waarin om deze dienst te roepen.** Dit is een geheel getal waarbij hogere waarden een hogere prioriteit aangeven.
 
-**IdP-certificaatalias** De alias van het certificaat van IdP in globale truststore. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld. Zie het hoofdstuk &quot;Add the IdP Certificate to the AEM TrustStore&quot; hieronder over hoe u het instelt.
+**Alias van het Certificaat IDP** De alias van het certificaat IdP in globale truststore. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld. Zie het hoofdstuk &quot;Add the IdP Certificate to the AEM TrustStore&quot; hieronder over hoe u het instelt.
 
-**IDP-URL** URL van IDP waar het verzoek van de Authentificatie van SAML zou moeten worden verzonden naar. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld.
+**IDP URL** URL van IDP waar het Verzoek van de Authentificatie van SAML zou moeten worden verzonden naar. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld.
 
 >[!CAUTION]
 >
->De hostnaam van de identiteitsprovider moet worden toegevoegd aan de **Filter Apache Sling Referrer** OSGi-configuratie. Zie de [Webconsole](/help/sites-deploying/configuring-osgi.md) voor meer informatie.
+>De hostname van de Leverancier van de Identiteit moet aan de **Apache Verschuivende Filter** OSGi configuratie worden toegevoegd. Zie de [ console van het Web ](/help/sites-deploying/configuring-osgi.md) sectie voor meer informatie.
 
-**Entiteit Service Provider ID** Id die deze serviceprovider op unieke wijze identificeert met de identiteitsprovider. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld.
+{identiteitskaart van de Entiteit van de Leverancier van 0} **identiteitskaart die uniek deze dienstverlener met de identiteitsleverancier identificeert.** Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld.
 
-**Standaardomleiding** De standaardlocatie waarnaar moet worden omgeleid na geslaagde verificatie.
+**Gebrek richt** opnieuw om de standaardplaats aan na succesvolle authentificatie om te leiden.
 
 >[!NOTE]
 >
->Deze locatie wordt alleen gebruikt als de `request-path` cookie is niet ingesteld. Als u om het even welke pagina onder de gevormde weg zonder geldig login-teken verzoekt, wordt het gevraagde weg opgeslagen in een koekje
+>Deze locatie wordt alleen gebruikt als het cookie `request-path` niet is ingesteld. Als u om het even welke pagina onder de gevormde weg zonder geldig login-teken verzoekt, wordt het gevraagde weg opgeslagen in een koekje
 >en de browser wordt opnieuw omgeleid naar deze locatie nadat de verificatie is voltooid.
 
-**Kenmerk gebruikersnaam** De naam van het kenmerk met de gebruikers-id die wordt gebruikt voor het verifiëren en maken van de gebruiker in de CRX-opslagruimte.
+**gebruiker-identiteitskaart Attribuut** De naam van de attributen die gebruiker - identiteitskaart bevatten die wordt gebruikt om de gebruiker in de bewaarplaats van CRX voor authentiek te verklaren en tot stand te brengen.
 
 >[!NOTE]
 >
->De gebruikersnaam wordt niet overgenomen uit de `saml:Subject` knooppunt van de SAML-bewering, maar vanuit dit `saml:Attribute`.
+>De gebruikers-id wordt niet ontleend aan het knooppunt `saml:Subject` van de SAML-bewering, maar aan deze `saml:Attribute` .
 
-**Codering gebruiken** Of deze authentificatiemanager gecodeerde beweringen van SAML verwacht of niet.
+**Versleuteling van het Gebruik** Of of deze authentificatiemanager gecodeerde beweringen van SAML verwacht.
 
-**CRX-gebruikers automatisch maken** Al dan niet automatisch niet-bestaande gebruikers in de repository maken na succesvolle verificatie.
+**autocreate de Gebruikers van CRX** Al dan niet om automatisch niet-bestaande gebruikers in de bewaarplaats na succesvolle authentificatie tot stand te brengen.
 
 >[!CAUTION]
 >
 >Als het automatisch maken van CRX-gebruikers is uitgeschakeld, moeten de gebruikers handmatig worden gemaakt.
 
-**Toevoegen aan groepen** Of een gebruiker automatisch aan CRX groepen na succesvolle authentificatie zou moeten worden toegevoegd of niet.
+**voeg aan Groepen** toe al dan niet een gebruiker automatisch aan de groepen van CRX na succesvolle authentificatie zou moeten worden toegevoegd.
 
-**Groepslidmaatschap** The name of the sample:Attribute containing a list of CRX groups this user should be added to.
+**Lidmaatschap van de Groep** De naam van voorbeeld:Attribuut dat een lijst van de groepen van CRX bevat deze gebruiker zou moeten worden toegevoegd aan.
 
 ## Het IdP-certificaat toevoegen aan de AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
@@ -94,12 +94,12 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 
 1. Ga naar *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Druk op **[!UICONTROL Create TrustStore link]**
-1. Voer het wachtwoord voor de TrustStore in en druk op **[!UICONTROL Save]**.
-1. Klikken op **[!UICONTROL Manage TrustStore]**.
+1. Voer het wachtwoord voor de TrustStore in en druk op **[!UICONTROL Save]** .
+1. Klik op **[!UICONTROL Manage TrustStore]** .
 1. Upload het IdP-certificaat.
 1. Noteer het certificaat Alias. De alias is **[!UICONTROL admin#1436172864930]** in het onderstaande voorbeeld.
 
-   ![chlimage_1-372](assets/chlimage_1-372.png)
+   ![ chlimage_1-372 ](assets/chlimage_1-372.png)
 
 ## De sleutel en certificaatketen van de Serviceleverancier toevoegen aan het AEM sleutelarchief {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
@@ -107,9 +107,9 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 >
 >De onderstaande stappen zijn verplicht, anders wordt de volgende uitzondering gegenereerd: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
-1. Ga naar: [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
-1. Bewerk de `authentication-service` gebruiker.
-1. Een KeyStore maken door op **KeyStore maken** krachtens **Accountinstellingen**.
+1. Ga naar: [ http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
+1. Bewerk de gebruiker `authentication-service` .
+1. Creeer een KeyStore door **te klikken Create KeyStore** onder **de Montages van de Rekening**.
 
 >[!NOTE]
 >
@@ -123,20 +123,20 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 
    `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
 
-1. Upload het bestand met de persoonlijke sleutel door op **Bestand met persoonlijke sleutel selecteren**.
-1. Het certificaatbestand uploaden door op **Certificaatketenbestanden selecteren**.
+1. Upload het Persoonlijke zeer belangrijke dossier door **Uitgezochte Persoonlijke Zeer belangrijke Dossier** te klikken.
+1. Upload het certificaatdossier door **Uitgezochte Dossiers van de Keten van het Certificaat te klikken**.
 1. Een alias toewijzen, zoals hieronder wordt getoond:
 
-   ![chlimage_1-373](assets/chlimage_1-373.png)
+   ![ chlimage_1-373 ](assets/chlimage_1-373.png)
 
 ## Vorm Logger voor SAML {#configure-a-logger-for-saml}
 
 U kunt opstelling een Logger om het even welke kwesties te zuiveren die uit het misconfigureren van SAML zouden kunnen voortvloeien. U kunt dit doen door:
 
-1. Ga naar de webconsole, op *http://localhost:4502/system/console/configMgr*
-1. Zoeken naar en klikken op de aangeroepen vermelding **Logboekconfiguratie Apache Sling Logging**
+1. Ga naar de Console van het Web, in *http://localhost:4502/system/console/configMgr*
+1. Zoek naar en klik de ingang genoemd **Apache die de Configuratie van de Logger van het Logboek van het Registreren van de Sling**
 1. Maak een logger met de volgende configuratie:
 
-   * **Logniveau:** Foutopsporing
-   * **Logbestand:** logs/saml.log
+   * **Niveau van het Logboek:** zuivert
+   * **Dossier van het Logboek:** logs/saml.log
    * **Logger:** com.adobe.granite.auth.saml

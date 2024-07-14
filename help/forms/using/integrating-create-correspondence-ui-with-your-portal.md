@@ -31,7 +31,7 @@ U kunt de toepassing Correspondentie maken aanroepen vanuit een aangepast portaa
 * de URL naar de XML-gegevens die van de gewenste gegevensbron worden opgehaald (met de parameter cmDataUrl).
 
 Het aangepaste portaal bereidt bijvoorbeeld de URL voor als\
-`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, wat de href zou kunnen zijn van een link op het portaal.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]` , wat de href zou kunnen zijn van een koppeling op het portaal.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Het aangepaste portaal bereidt bijvoorbeeld de URL voor als\
 
 ## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
 
-Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om eenvoudig URL op https://&#39; te raken[server]:[poort]&#39;/[contextPath]/aem/forms/createcorrespondence.html, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als verzoek van de POST te roepen (het verbergen van hen voor het eind - gebruiker). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere (en een veiligere) manier om de Create toepassing van de Correspondentie te roepen zou kunnen zijn om URL in https://&#39; [ server ] eenvoudig te raken:[ haven ] &#39;/[ contextPath ] /aem/forms/createcorrespondence.html, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST te roepen verzoek (het verbergen van hen van het eind - gebruiker). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 
@@ -64,9 +64,9 @@ De volgorde van parameters in de tabel geeft de voorkeur aan parameters die word
    <td><strong>Beschrijving</strong></td> 
   </tr>
   <tr>
-   <td>cmDataUrl<br /> </td> 
+   <td>cmDataUrl <br /> </td> 
    <td>URL</td> 
-   <td>XML-gegevens uit een bronbestand met basisprotocollen zoals cq, ftp, http of file.<br /> </td> 
+   <td>De gegevens van XML van een brondossier gebruikend basisprotocollen zoals cq, ftp, http, of dossier.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
@@ -95,7 +95,7 @@ De volgorde van parameters in de tabel geeft de voorkeur aan parameters die word
   <tr>
    <td>cmPreview<br /> </td> 
    <td>Boolean</td> 
-   <td>True to open the letter in preview mode<br /> </td> 
+   <td>True to open the letter in preview mode <br /> </td> 
   </tr>
   <tr>
    <td>Willekeurig</td> 

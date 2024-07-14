@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Wanneer u een PDF-bestand uploadt naar de Acrobat Reader DC Extensions-webtoepassing, kunt u deze informatie bekijken om te zien of het bestand is uitgebreid met Reader, of er gebruiksrechten zijn toegepast en of de vervaldatums verlopen.
 
-1. Meld u aan bij de Acrobat Reader DC Extensions-webtoepassing op `http://[localhost]:[port]/ReaderExtensions` waarbij *[poort]* is het poortnummer van de toepassingsserver).
+1. Login aan de het Webtoepassing van Uitbreidingen van Acrobat Reader DC bij `http://[localhost]:[port]/ReaderExtensions` (waar *[haven]* het havenaantal van uw toepassingsserver is).
 1. Klik op Bladeren om het PDF-bestand te uploaden en klik vervolgens op Info. De informatie wordt onder de bestandsnaam weergegeven.
 
    Zie de Help bij Acrobat Reader DC Extensions voor meer informatie over het wijzigen van de gebruiksrechten van het bestand.

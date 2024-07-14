@@ -39,21 +39,21 @@ Onthoud dat u apparaatgroepen instelt:
 
 ## Configuratie {#configuration}
 
-Aangepaste renderingkiezers kunnen worden geconfigureerd voor bestaande apparaatgroepen of voor [groepen die u zelf hebt gemaakt.](/help/sites-developing/mobile.md#device-groups)
+De adaptieve teruggevende selecteurs kunnen voor bestaande apparatengroepen of aan [ groepen worden gevormd die u zelf hebt gecreeerd.](/help/sites-developing/mobile.md#device-groups)
 
-In dit voorbeeld gaat u de bestaande apparaatgroep configureren **Slimme telefoons** om een aangepaste renderingkiezer als onderdeel van de **Experience Page** template in We.Retail.
+Voor dit voorbeeld, gaat u de bestaande apparatengroep **Slimme Telefoons** vormen om een adaptieve teruggevende selecteur als deel van het **malplaatje van de Pagina van de Ervaring** binnen Wij.Retail te hebben.
 
 1. Bewerk de apparaatgroep waarvoor een adaptieve kiezer nodig is in `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
-   De optie instellen **Emulator uitschakelen** en opslaan.
+   Plaats de optie **maak Mededinger** onbruikbaar en bewaar.
 
-   ![chlimage_1-157](assets/chlimage_1-157.png)
+   ![ chlimage_1-157 ](assets/chlimage_1-157.png)
 
-1. De kiezer is beschikbaar voor de **BlackBerry®** en **IPHONE 4** voorzien de apparatengroep **Slimme telefoon** wordt in de volgende stappen toegevoegd aan de sjabloon- en paginastructuren.
+1. De selecteur is beschikbaar voor **BlackBerry®** en **iPhone 4** op voorwaarde dat de slimme Telefoon van de apparatengroep **** aan het malplaatje en de paginastructuren in de volgende stappen wordt toegevoegd.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
+   ![ chlimage_1-158 ](assets/chlimage_1-158.png)
 
-1. Met behulp van CRXDE Lite kunt u de apparaatgroep gebruiken op uw sjabloon door deze toe te voegen aan de eigenschap tekenreeks met meerdere waarden `cq:deviceGroups` over de structuur van de sjabloon.
+1. Met CRXDE Lite kunt u de apparaatgroep gebruiken voor uw sjabloon door deze toe te voegen aan de eigenschap voor een tekenreeks met meerdere waarden `cq:deviceGroups` op de structuur van uw sjabloon.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -61,22 +61,22 @@ In dit voorbeeld gaat u de bestaande apparaatgroep configureren **Slimme telefoo
 
    `/conf/we-retail/settings/wcm/templates/experience-page/structure/jcr:content`
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+   ![ chlimage_1-159 ](assets/chlimage_1-159.png)
 
-1. Met CRXDE Lite kunt u de apparaatgroep op uw site gebruiken door deze toe te voegen aan de eigenschap voor een tekenreeks met meerdere waarden `cq:deviceGroups` op de structuur van uw site.
+1. Met CRXDE Lite kunt u toestaan dat de apparaatgroep op uw site wordt gebruikt door deze toe te voegen aan de eigenschap multi-value string `cq:deviceGroups` op de structuur van uw site.
 
    `/content/<your-site>/jcr:content`
 
-   Als u bijvoorbeeld de opdracht **Slimme telefoon** apparaatgroep:
+   Bijvoorbeeld, als u de **Slimme het apparatengroep van de Telefoon** wilt toestaan:
 
    `/content/we-retail/jcr:content`
 
-   ![chlimage_1-160](assets/chlimage_1-160.png)
+   ![ chlimage_1-160 ](assets/chlimage_1-160.png)
 
-Nu wanneer u de opdracht [emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de pagina-editor (bijvoorbeeld wanneer [de lay-out wijzigen](/help/sites-authoring/responsive-layout.md)) en u kiest een apparaat van de geconfigureerde apparaatgroep, wordt de pagina weergegeven met een kiezer als onderdeel van de URL.
+Nu wanneer het gebruiken van de [ mededinger ](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de paginaredacteur (zoals wanneer [ wijzigend de lay-out ](/help/sites-authoring/responsive-layout.md)) en u een apparaat van de gevormde apparatengroep kiest, wordt de pagina teruggegeven met een selecteur als deel van URL.
 
-In dit voorbeeld wordt bij het bewerken van een pagina gebaseerd op de **Experience Page** sjabloon, en iPhone 4 kiezen in de emulator, wordt de pagina weergegeven inclusief de kiezer als `arctic-surfing-in-lofoten.smart.html` in plaats van `arctic-surfing-in-lofoten.html`
+In dit voorbeeld, wanneer het uitgeven van een pagina die op het **malplaatje van de Pagina van de Ervaring** wordt gebaseerd, en het kiezen van iPhone 4 in de mededinger, wordt de pagina teruggegeven met inbegrip van selecteur als `arctic-surfing-in-lofoten.smart.html` in plaats van `arctic-surfing-in-lofoten.html`
 
 De pagina kan ook rechtstreeks worden aangeroepen met deze kiezer.
 
-![chlimage_1-161](assets/chlimage_1-161.png)
+![ chlimage_1-161 ](assets/chlimage_1-161.png)

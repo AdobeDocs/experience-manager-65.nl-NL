@@ -32,7 +32,7 @@ Om ROI te maximaliseren, moeten de organisaties controleren hoe hun klanten met 
 
 ## De oplossing {#the-solution}
 
-AEM Forms kan worden geïntegreerd met [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) oplossingen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) en [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - waarmee u kunt controleren en analyseren hoe uw formulieren werken en waarmee u kunt experimenteren en vaststellen welke ervaring leidt tot een betere conversiesnelheid.
+AEM Forms integreert met [ Adobe Marketing Cloud ](https://www.adobe.com/marketing-cloud.html) oplossingen - [ Adobe Analytics ](https://www.adobe.com/marketing-cloud/web-analytics.html) en [ Adobe Target ](https://www.adobe.com/marketing-cloud/testing-targeting.html) - die u kunnen helpen controleren en analyseren hoe uw vormen presteren en u toelaten om de ervaring te experimenteren en te identificeren die tot betere omzettingspercentage leidt.
 
 ## De workflow {#the-workflow}
 
@@ -58,7 +58,7 @@ We gaan verder met de details over hoe u de prestaties kunt meten en de conversi
 
 #### Stap 1: Analyse en doel configureren in AEM Forms  {#step-configure-analytics-and-target-in-aem-forms-br}
 
-**Analyses configureren**
+**vorm Analytics**
 
 Om diepgaande inzichten in uw klanteninteractie met uw vormen te verkrijgen, moet u Analytics eerst in AEM Forms vormen. Voer de volgende stappen uit:
 
@@ -68,11 +68,11 @@ Om diepgaande inzichten in uw klanteninteractie met uw vormen te verkrijgen, moe
 1. Configuratieservice voor AEM Forms Analytics configureren in AEM
 1. Analyses inschakelen op het formulier in AEM
 
-Zie voor meer informatie [Analyses en rapporten voor adaptieve formulieren configureren](../../forms/using/configure-analytics-forms-documents.md).
+Voor gedetailleerde stappen, zie [ het Vormen analyses en rapporten voor adaptieve vormen ](../../forms/using/configure-analytics-forms-documents.md).
 
-**Doel configureren**
+**vorm Doel**
 
-Als u A/B-tests voor uw adaptieve formulieren wilt maken en uitvoeren, configureert u Target in AEM Forms zoals beschreven in [Doel instellen en integreren in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Om A/B tests voor uw adaptieve vormen tot stand te brengen en in werking te stellen, vorm Doel in AEM Forms zoals die in [ wordt beschreven Opstelling en integreer Doel in AEM Forms ](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### Stap 2: analyserapport weergeven {#step-view-analytics-report-br}
 
@@ -80,37 +80,37 @@ Aangezien uw klanten tot en met vormen toegang hebben waarop u Analytics hebt to
 
 U kunt een rapport vanuit AEM weergeven voor formulieren die analyses ondersteunen en gegevens analyseren. U kunt als volgt het rapport weergeven:
 
-1. Navigeer op AEM server naar **Forms > Forms &amp; Documents**.
+1. Op AEM server, navigeer aan **Forms > Forms &amp; Documenten**.
 1. Selecteer het formulier waarvoor u het analyserapport wilt gebruiken.
 1. Klik op het pictogram Analytische rapporten. Het rapport wordt weergegeven.
 
 Laten we eens kijken naar de gegevenspunten die Analytics verzamelt en rapporteert voor formulieren.
 
-**Forms Analytics-rapport**
+**Forms analyserapport**
 
 In het analyserapport voor adaptieve formulieren worden de volgende prestatiekernindicatoren (KPI&#39;s) op formulierniveau vastgelegd:
 
-* **Gemiddelde vultijd**: Gemiddelde tijd die is besteed aan het invullen van het formulier
-* **Impressies**: Het aantal keren dat het formulier in de zoekresultaten is weergegeven
+* **Gemiddelde vultijd**: Gemiddelde die tijd in het vullen van de vorm wordt doorgebracht
+* **Impressies**: Aantal tijden de vorm in de onderzoeksresultaten verscheen
 
-* **Uitvoeringen**: Aantal keer dat het formulier is gegenereerd of geopend
-* **Concepten**: Aantal keer dat het formulier is opgeslagen als concept
+* **Vertoningen**: Aantal tijden de vorm is teruggegeven of geopend
+* **Concepten**: Aantal tijden de vorm is bewaard als ontwerp
 
-* **Indieningen**: Aantal keer dat het formulier is ingediend
-* **Afbreken**: Aantal malen dat gebruikers het formulier hebben ingevuld
-* **Bezoeken/verzenden** Betreft: Verhouding van de bezoeken per indiening
+* **Voorleggen**: Aantal tijden de vorm is voorgelegd
+* **verlaat**: Aantal tijden gebruikers verlaten zonder de vorm te voltooien
+* **bezoeken/Voorleggen**: Verhouding van bezoeken per voorlegging
 
 Bovendien krijgt u de volgende details over elk paneel in de vorm:
 
-* **Tijd**: Gemiddelde tijd (seconden) die wordt doorgebracht aan het deelvenster en de bijbehorende velden
+* **Tijd**: Gemiddelde die tijd (seconden) op het paneel en zijn gebieden wordt doorgebracht
 
-* **Fout**: Het aantal fouten in het deelvenster en de bijbehorende velden per 1000 formulieruitvoeringen
+* **Fout**: Aantal fouten die op het paneel en zijn gebieden per 1000 vormvertoningen worden ontmoet
 
-* **Help**: Het aantal keren dat gebruikers de Help in de context voor het deelvenster en de bijbehorende velden hebben geopend per 1000 formulieruitvoeringen
+* **Hulp**: Aantal tijden hebben de gebruikers tot de in-context hulp voor het paneel en zijn gebieden per 1000 vormvertoningen toegang gehad
 
-![Een analyserapport voor een adaptief formulier](assets/summary-report.png)
+![ het rapport van de steekproefanalyse van A voor een adaptieve vorm ](assets/summary-report.png)
 
-Zie voor meer informatie over analyserapporten van formulieren [AEM Forms-analyserapporten weergeven en begrijpen](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+Voor meer details over de rapporten van de vormenanalyse, zie [ het Bekijken van en het begrip van de analyserapporten van AEM Forms ](../../forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
@@ -130,13 +130,13 @@ Als u deze gegevenspunten hebt geanalyseerd en tot een hypothese bent gekomen, b
 
 In deze stap valideert u de wijzigingen die u in het formulier hebt aangebracht en controleert u of deze van invloed zijn op de conversiesnelheid.
 
-**Een A/B-test uitvoeren**
+**stel een test A/B in werking**
 
 Dankzij de integratie van AEM Forms met Target kunnen A/B-tests voor adaptieve formulieren worden gemaakt. In tests A/B, presenteert u willekeurig verschillende ervaringen van een vorm aan uw klanten in echt - tijd om te weten welke ervaring werkt beter of veroorzaakt meer omzettingen. Zodra u significante gegevens hebt die op één ervaring wijzen die betere omzetting levert dan andere, kunt u dat ervaringen als winnaar verklaren, en de toekomst, het wordt de standaardervaring zichtbaar aan alle klanten.
 
-Zie voor meer informatie over het maken van een A/B-test voor een adaptief formulier [A/B testen van adaptieve formulieren](../../forms/using/ab-testing-adaptive-forms.md).
+Voor meer informatie over het creëren van een test A/B voor een adaptieve vorm, zie [ het testen A/B van adaptieve vormen ](../../forms/using/ab-testing-adaptive-forms.md).
 
-![Een steekproefsamenvattend verslag van de A/B-test voor een adaptief formulier](assets/ab-test-report-4.png)
+![ een steekproefsamenvattingsrapport van A/B test voor een adaptieve vorm ](assets/ab-test-report-4.png)
 
 ## Aanbevolen procedures {#best-practices}
 
@@ -144,7 +144,7 @@ De echte beste praktijken zijn degenen die u zich tijdens het uitvoeren van deze
 
 Sommige aanbevelingen voor het ontwerpen van formulieren en het uitvoeren van A/B-tests zijn als volgt:
 
-**Forms-ontwerp**
+**het ontwerp van Forms**
 
 * Houd het formulier eenvoudig, kort en eenvoudig om te navigeren. Gebruik richtingsaanwijzingen voor navigatie.
 * Standaardterminologie of algemene terminologie gebruiken voor formuliervelden.
@@ -153,7 +153,7 @@ Sommige aanbevelingen voor het ontwerpen van formulieren en het uitvoeren van A/
 * Lay-outs voor bureaublad en mobiele apparaten optimaliseren.
 * Gegevens automatisch invullen voor bekende gebruikers.
 
-**A/B-tests**
+**tests A/B**
 
 * Construeer een hypothese en identificeer succeswaarden voordat u de A/B-test uitvoert.
 * Voer minimale variaties (idealiter één voor één) uit in uw alternatieve ervaring om te weten wat de conversiesnelheid beïnvloedt.

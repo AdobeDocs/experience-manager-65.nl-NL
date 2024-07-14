@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Verbeter de prestaties van grote formulieren met het laden van de formulieren{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
 | AEM 6,5 | Dit artikel |
 
 ## Inleiding tot wazig laden {#introduction-to-lazy-loading}
@@ -34,18 +34,18 @@ Laten we eerst de vereisten en voorbereidende stappen begrijpen voordat u lazy l
 
 Voordat u het laden van fragmenten in het aangepaste formulier kunt configureren, is het belangrijk dat u strategieën definieert voor het maken van fragmenten, waarden identificeert die in scripts worden gebruikt of die in andere fragmenten worden doorverwezen, en regels definieert voor het beheren van de zichtbaarheid van velden in laaggeladen fragmenten.
 
-* **Fragmenten identificeren en maken**
+* **identificeer en creeer fragmenten**
 U kunt alleen adaptieve formulierfragmenten configureren voor wazig laden. Een fragment is een zelfstandig segment dat zich buiten een adaptief formulier bevindt en dat in verschillende formulieren opnieuw kan worden gebruikt. De eerste stap bij het implementeren van lui laden is het identificeren van logische secties in een formulier en het omzetten ervan in fragmenten. U kunt een geheel nieuw fragment maken of een bestaand formulierdeelvenster opslaan als fragment.
 
-  Zie voor meer informatie over het maken van fragmenten [Adaptieve formulierfragmenten](../../forms/using/adaptive-form-fragments.md).
+  Voor meer informatie over het creëren van fragmenten, zie [ Aangepaste vormfragmenten ](../../forms/using/adaptive-form-fragments.md).
 
-* **Algemene waarden identificeren en markeren**
+* **identificeer en merk globale waarden**
 Bij op Forms gebaseerde transacties worden dynamische elementen gebruikt om relevante gegevens van gebruikers vast te leggen en te verwerken om het invullen van formulieren te vereenvoudigen. Het formulier heeft bijvoorbeeld veld A in fragment X, waarvan de waarde de geldigheid van veld B in een ander fragment bepaalt. In dit geval moet, als fragment X is gemarkeerd voor lui laden, de waarde van veld A beschikbaar zijn om veld B te valideren, zelfs als fragment X niet is geladen. Hiertoe kunt u veld A markeren als globaal, zodat de waarde ervan beschikbaar is voor het valideren van veld B wanneer fragment X niet is geladen.
 
-  Voor informatie over hoe u een veldwaarde globaal kunt maken, raadpleegt u [Lazy laden configureren](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Voor informatie over hoe te om een gebiedswaarde globaal te maken, zie [ Vormend lui ladend ](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **Regels schrijven om de zichtbaarheid van velden te bepalen**
-Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebruikers en onder alle omstandigheden. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie [Regeleditor gebruiken](../../forms/using/rule-editor.md).
+* **schrijf regels om zicht van gebieden** te controleren
+Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebruikers en onder alle omstandigheden. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie [ Gebruikend regelredacteur ](../../forms/using/rule-editor.md).
 
   U kunt zichtbaarheidsregels gebruiken in de laaggeladen fragmenten, zodat voorwaardelijke velden alleen worden weergegeven wanneer ze vereist zijn. Markeer ook het voorwaardelijke veld globaal om ernaar te verwijzen in de zichtbaarheidsexpressie van het langzaam geladen fragment.
 
@@ -54,20 +54,20 @@ Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebrui
 Voer de volgende stappen uit om het laden van een adaptief formulierfragment in te schakelen:
 
 1. Open het adaptieve formulier in de ontwerpmodus dat het fragment bevat dat u wilt inschakelen voor wazig laden.
-1. Selecteer het adaptieve formulierfragment en selecteer ![cmppr](assets/cmppr.png).
-1. Schakel in de zijbalk de optie **[!UICONTROL Load fragment lazily]** en selecteert u **Gereed**.
+1. Selecteer het adaptieve vormfragment en selecteer ![ cmp ](assets/cmppr.png).
+1. In sidebar, laat **[!UICONTROL Load fragment lazily]** toe en selecteer **Gedaan**.
 
-   ![Lazy loading inschakelen voor het adaptieve formulierfragment](assets/lazy-loading-fragment.png)
+   ![ laat luie lading voor het adaptieve vormfragment toe ](assets/lazy-loading-fragment.png)
 
    Het fragment is nu ingeschakeld voor wazig laden.
 
 U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren, zodat deze beschikbaar zijn voor gebruik in scripts wanneer het bevattende fragment niet is geladen. Ga als volgt te werk:
 
 1. Open het adaptieve formulierfragment in de ontwerpmodus.
-1. Selecteer het veld waarvan u de waarde als globaal wilt markeren en selecteer vervolgens ![cmppr](assets/cmppr.png).
-1. Schakel in de zijbalk de optie **Waarde gebruiken tijdens laden van item**.
+1. Selecteer het gebied waarvan waarde u als globaal wilt merken, en dan ![ cmp ](assets/cmppr.png) selecteren.
+1. In sidebar, laat **waarde van het Gebruik tijdens luie lading** toe.
 
-   ![Lazy loading field in sidebar](assets/enable-lazy-loading.png)
+   ![ Lazy ladend gebied in sidebar ](assets/enable-lazy-loading.png)
 
    De waarde wordt nu gemarkeerd als globaal en is beschikbaar voor gebruik in scripts, zelfs wanneer het omvattende fragment wordt verwijderd.
 
@@ -76,7 +76,7 @@ U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren,
 Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet houden bij het werken met lazy laden zijn:
 
 * Gebruik op XSD-schema gebaseerde adaptieve formulieren via op XFA gebaseerde adaptieve formulieren voor het configureren van lazy loading op grote formulieren. De prestatiewinst als gevolg van de lazy loading-implementatie in op XFA gebaseerde adaptieve formulieren is relatief minder dan de toename in op XSD gebaseerde adaptieve formulieren.
-* Het laden van fragmenten in een adaptieve vorm die gebruikmaken van **[!UICONTROL Responsive -everything on one page without navigation]** layout voor het hoofddeelvenster. Als gevolg van de responsieve layoutconfiguratie worden alle fragmenten tegelijkertijd in een adaptieve vorm geladen. Het kan ook leiden tot verminderde prestaties.
+* Configureer lui laden niet op fragmenten in een adaptieve vorm die **[!UICONTROL Responsive -everything on one page without navigation]** -lay-out gebruiken voor het hoofddeelvenster. Als gevolg van de responsieve layoutconfiguratie worden alle fragmenten tegelijkertijd in een adaptieve vorm geladen. Het kan ook leiden tot verminderde prestaties.
 * Het wordt aanbevolen om het laden van het eerste fragment niet in een adaptieve vorm te configureren.
 * Het wordt aanbevolen het laden van fragmenten in het eerste deelvenster dat wordt weergegeven bij het laden van het adaptieve formulier, niet te configureren.
 * Lazy loading wordt ondersteund tot twee niveaus in de fragmenthiërarchie.

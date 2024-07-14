@@ -23,33 +23,33 @@ AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomg
 
 Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [koptekst](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#userpreferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Beginnen met toegang tot de [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de koptekst.
+Begin door tot de [ optie van de Gebruiker ](/help/sites-authoring/user-properties.md#user-settings) in de kopbal toegang te hebben.
 
 ## Gebruikersinstellingen {#user-settings}
 
-De **Gebruiker** In het dialoogvenster Instellingen hebt u toegang tot:
+Het **de montagedialoog van de Gebruiker** geeft u toegang tot:
 
 * Imiteren als
 
-   * Met de [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) een gebruiker namens een andere gebruiker kan werken.
+   * Met [ impersonate als ](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
 
 * Profiel
 
-   * Biedt een handige koppeling naar uw [gebruikersinstellingen](/help/sites-administering/security.md))
+   * Biedt een geschikte verbinding aan uw [ gebruikersmontages ](/help/sites-administering/security.md) aan)
 
 * [Mijn voorkeuren](/help/sites-authoring/user-properties.md#my-preferences)
 
    * Verschillende voorkeursinstellingen opgeven die uniek zijn voor uw gebruiker
 
-![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
+![ screen_shot_2018-03-20at103808 ](assets/screen_shot_2018-03-20at103808.png)
 
 ### Mijn voorkeuren {#my-preferences}
 
-De **Mijn voorkeuren** dialoogvenster is toegankelijk via de [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de koptekst.
+Het **Mijn dialoog van Voorkeur** is toegang via de [ gebruiker ](/help/sites-authoring/user-properties.md#user-settings) optie in de kopbal.
 
 Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
-![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
+![ scherm-shot_2019-03-05at100322 ](assets/screen-shot_2019-03-05at100322.png)
 
 * **Taal**
 
@@ -57,47 +57,47 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
   Deze configuratie wordt ook gebruikt voor klassieke UI.
 
-* **Vensterbeheer**
+* **Beheer van het Venster**
 
   Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
 
-   * **Meerdere vensters** (Standaard)
+   * **Veelvoudige Vensters** (Gebrek)
 
       * Pagina&#39;s worden geopend in een nieuw venster.
 
-   * **Eén venster**
+   * **Enig Venster**
 
       * Pagina&#39;s worden geopend in het huidige venster.
 
-* **Bureaubladhandelingen voor elementen weergeven**
+* **toon Desktopacties voor Assets**
 
   Voor deze optie is een AEM bureaubladtoepassing vereist.
 
-* **Annotatiekleur**
+* **Kleur van de Annotatie**
 
   Hiermee definieert u de standaardkleur die wordt gebruikt bij het maken van annotaties.
 
    * Klik op het kleurblok, zodat u de staalkiezer kunt openen en een kleur kunt selecteren.
    * U kunt ook de hexadecimale code voor de gewenste kleur in het veld invoeren.
 
-* **Relatieve datumpresentatie**
+* **Relatieve Presentatie van de Datum**
 
   Om de leesbaarheid te verbeteren, worden AEM datums binnen de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
   Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
-   * **Altijd exacte datum weergeven**: De exacte datum wordt altijd weergegeven (nooit een relatieve datum).
-   * **1 dag**: De relatieve datum wordt weergegeven voor datums binnen één dag, anders wordt een exacte datum weergegeven.
+   * **toont altijd nauwkeurige datum**: De nauwkeurige datum wordt altijd getoond (nooit een relatieve datum).
+   * **1 Dag**: De relatieve datum wordt getoond voor data binnen één dag, anders wordt een nauwkeurige datum getoond.
 
-   * **7 dagen (standaard)**: De relatieve datum wordt weergegeven voor datums binnen zeven dagen, anders wordt een exacte datum weergegeven.
+   * **7 Dagen (gebrek)**: De relatieve datum wordt getoond voor data binnen zeven dagen, anders wordt een nauwkeurige datum getoond.
 
-   * **1 maand**: De relatieve datum wordt weergegeven voor datums binnen een maand, anders wordt een exacte datum weergegeven.
+   * **1 Maand**: De relatieve datum wordt getoond voor data binnen één maand, anders wordt een nauwkeurige datum getoond.
 
-   * **1 jaar**: De relatieve datum wordt weergegeven voor data binnen een jaar, anders wordt een exacte datum vermeld.
+   * **1 Jaar**: De relatieve datum wordt getoond voor data binnen één jaar, anders wordt een nauwkeurige datum getoond.
 
-   * **Relatieve datum altijd weergeven**: Exacte datums worden nooit weergegeven en alleen relatieve datums worden weergegeven.
+   * **toont altijd relatieve datum**: De nauwkeurige data worden nooit getoond en slechts relatieve data worden getoond.
 
-* **Sneltoetsen inschakelen**
+* **laat Kortere weg** toe
 
   AEM ondersteunt verschillende sneltoetsen die het ontwerpen efficiënter maken.
 
@@ -106,14 +106,14 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
   Met deze optie schakelt u sneltoetsen in. Deze worden standaard ingeschakeld, maar kunnen worden uitgeschakeld, bijvoorbeeld als een gebruiker bepaalde toegankelijkheidsvereisten heeft.
 
-* **Klassieke ontwerpervaring gebruiken**
+* **De Klassieke Ervaring van het Gebruik Authoring**
 
-  Deze optie schakelt [klassieke gebruikersinterface](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-based page authoring. Standaard wordt de standaardinterface gebruikt.
+  Deze optie laat [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-Gebaseerde pagina authoring toe. Standaard wordt de standaardinterface gebruikt.
 
-* **Introductiepagina van middelen inschakelen**
+* **laat de Homepage van Assets** toe
 
-  Deze optie is alleen beschikbaar als uw systeembeheerder de functie Introductiepagina van middelen voor de hele organisatie heeft ingeschakeld.
+  Deze optie is alleen beschikbaar als uw systeembeheerder de Assets Home Page-ervaring voor de hele organisatie heeft ingeschakeld.
 
-* **Bestandsconfiguratie**
+* **Configuratie van de Beeld**
 
-  Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder heeft ingeschakeld [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md).
+  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [ integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.

@@ -22,7 +22,7 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op Exporteren en slaat u het configuratiebestand op een andere locatie op.
-1. Zoek in het bestand de locatie `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` knooppunt. Hier volgt een voorbeeld:
+1. In het dossier, bepaal de plaats van `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` knoop. Hier volgt een voorbeeld:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -37,7 +37,7 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
 
    Typ een waarde voor `bindpassword` en sla uw wijzigingen op.
 
-1. Zoek in het bestand de locatie `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` knooppunt. Hier volgt een voorbeeld:
+1. Zoek in het bestand de locatie van `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` knooppunt. Hier volgt een voorbeeld:
 
    ```xml
     <node name="LDAPUserConfig">

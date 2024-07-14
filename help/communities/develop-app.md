@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Sandbox-toepassing ontwikkelen  {#develop-sandbox-application}
 
-In deze sectie wordt de sjabloon ingesteld in het dialoogvenster [eerste toepassing](initial-app.md) en de eerste pagina&#39;s die zijn vastgesteld in de [initiële inhoud](initial-content.md) kunt u de toepassing ontwikkelen. U doet dit door stichtingsmanuscripten te gebruiken die de capaciteit omvatten om creatie met de componenten van de Gemeenschappen toe te laten. Aan het einde van deze sectie hebt u een volledig functionele website.
+In deze sectie, nu het malplaatje opstelling in de [ aanvankelijke toepassing ](initial-app.md) sectie is, en de aanvankelijke pagina&#39;s die in de [ worden gevestigd aanvankelijke inhoud ](initial-content.md) sectie, kunt u de toepassing ontwikkelen. U doet dit door stichtingsmanuscripten te gebruiken die de capaciteit omvatten om creatie met de componenten van de Gemeenschappen toe te laten. Aan het einde van deze sectie hebt u een volledig functionele website.
 
 ## Scripts voor basispagina&#39;s gebruiken {#using-foundation-page-scripts}
 
@@ -26,11 +26,11 @@ Het standaardmanuscript, dat wordt gecreeerd toen de component die het playpage 
 
 ### Type superbron {#super-resource-type}
 
-De eerste stap bestaat uit het toevoegen van een eigenschap van het type resource super aan de `/apps/an-scf-sandbox/components/playpage` knoop zodat het de manuscripten en de eigenschappen van het super type erft.
+De eerste stap bestaat uit het toevoegen van een eigenschap van het type resource super aan het knooppunt `/apps/an-scf-sandbox/components/playpage` , zodat dit de scripts en eigenschappen van het supertype overneemt.
 
 CRXDE Lite gebruiken:
 
-1. Knooppunt selecteren `/apps/an-scf-sandbox/components/playpage`.
+1. Selecteer knooppunt `/apps/an-scf-sandbox/components/playpage` .
 1. Voer op het tabblad Eigenschappen een nieuwe eigenschap in met de volgende waarden:
 
    Naam: `sling:resourceSuperType`
@@ -39,14 +39,14 @@ CRXDE Lite gebruiken:
 
    Waarde: `foundation/components/page`
 
-1. Klik op groen **[!UICONTROL +Add]** knop.
+1. Klik op de groene knop **[!UICONTROL +Add]** .
 1. Klik op **[!UICONTROL Save All]**.
 
-   ![pageScript](assets/page-script.png)
+   ![ pagina-manuscript ](assets/page-script.png)
 
 ### Scripts voor hoofd en lichaam {#head-and-body-scripts}
 
-1. In **CRXDE Lite** verkenner, deelvenster, navigeren naar `/apps/an-scf-sandbox/components/playpage` en dubbelklik op het bestand `playpage.jsp` openen in het bewerkvenster.
+1. In **CRXDE Lite** ontdekkingsruit, navigeer aan `/apps/an-scf-sandbox/components/playpage` en klik het dossier `playpage.jsp` tweemaal om het in Edit ruit te openen.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -65,9 +65,9 @@ CRXDE Lite gebruiken:
    %>
    ```
 
-1. Als u bekend bent met script-tags open/close, vervangt u &quot; // TODO ...&quot; door `includes` van scripts voor de kop en de hoofdtekst van &lt;html>.
+1. Omdat u bekend bent met scripttags open/close, vervangt u &quot; // TODO ...&quot; door `includes` scripts voor de kop en de hoofdtekst van &lt;html>.
 
-   Met een supertype van `foundation/components/page`, alle scripts die niet in dezelfde map zijn gedefinieerd, worden omgezet naar een script in `/apps/foundation/components/page` map (als deze bestaat) of anders naar een script in `/libs/foundation/components/page` map.
+   Bij het supertype `foundation/components/page` wordt elk script dat niet in dezelfde map is gedefinieerd, omgezet naar een script in de `/apps/foundation/components/page` -map (indien aanwezig) of naar een script in de `/libs/foundation/components/page` -map.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -87,19 +87,19 @@ CRXDE Lite gebruiken:
    </html>
    ```
 
-1. Het stichtingsscript overschrijven `head.jsp` is niet noodzakelijk, maar het stichtingsscript `body.jsp` is leeg.
+1. Het is niet nodig om het basatiescript `head.jsp` te bedekken, maar het stichtingsscript `body.jsp` is leeg.
 
-   Instellen voor ontwerpen, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
+   Als u wilt instellen voor ontwerpen, bedekt u `body.jsp` met een lokaal script en neemt u een alineasysteem (parsys) op in de hoofdtekst:
 
-   1. Navigeren naar `/apps/an-scf-sandbox/components`.
-   1. Selecteer de `playpage` knooppunt.
+   1. Navigeer naar `/apps/an-scf-sandbox/components` .
+   1. Selecteer het knooppunt `playpage` .
    1. Klik met de rechtermuisknop en selecteer `Create > Create File...`
 
       * Naam: **body.jsp**
 
    1. Klik op **[!UICONTROL Save All]**.
 
-   Openen `/apps/an-scf-sandbox/components/playpage/body.jsp` en plak in de volgende tekst:
+   Open `/apps/an-scf-sandbox/components/playpage/body.jsp` en plak in de volgende tekst:
 
    ```xml
    <%--
@@ -119,21 +119,21 @@ CRXDE Lite gebruiken:
 
 1. Klik op **[!UICONTROL Save All]**.
 
-**De pagina in een browser weergeven in de bewerkingsmodus:**
+**Mening de pagina in browser op geef wijze uit:**
 
 * Standaardinterface: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
-U moet niet alleen de kop zien **Community Play**, maar ook de gebruikersinterface voor het bewerken van pagina-inhoud.
+U zou niet alleen het rubriek **Communautaire Spel** moeten zien, maar ook UI voor het uitgeven van paginainhoud.
 
-Het paneel Middelen/component wordt weergegeven wanneer het zijpaneel geopend is en het venster breed genoeg is om zowel de inhoud als de pagina-inhoud weer te geven.
+Het zijpaneel van Assets/Component is zichtbaar wanneer zowel het zijpaneel open en het venster wijd genoeg voor zowel de zijinhoud als de pagina inhoud om wordt getoond wordt geschakeld.
 
-![weergavepagina](assets/view-page.png)
+![ mening-pagina ](assets/view-page.png)
 
 * Klassieke gebruikersinterface: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Hieronder ziet u hoe de afspeelpagina wordt weergegeven in de klassieke gebruikersinterface, inclusief in de zoekfunctie voor inhoud (cf):
 
-![play-page-view](assets/play-page-view.png)
+![ spel-pagina-mening ](assets/play-page-view.png)
 
 ## Community-componenten {#communities-components}
 
@@ -141,7 +141,7 @@ Om de componenten van Communities voor ontwerp toe te laten, begin door deze ins
 
 * [Toegang tot onderdelen van Gemeenschappen](basics.md#accessing-communities-components)
 
-In deze sandbox begint u hiermee **Gemeenschappen** componenten (inschakelen door het selectievakje in te schakelen):
+Voor deze zandbak, begin met deze **Communautaire** componenten (laat toe door doos te controleren):
 
 * Opmerkingen
 * Forum
@@ -150,7 +150,7 @@ In deze sandbox begint u hiermee **Gemeenschappen** componenten (inschakelen doo
 * Overzicht van revisies (weergave)
 * Stemming
 
-Kies bovendien **[!UICONTROL General]** componenten, zoals
+Kies bovendien **[!UICONTROL General]** -componenten, zoals
 
 * Afbeelding
 * Tabel
@@ -159,9 +159,9 @@ Kies bovendien **[!UICONTROL General]** componenten, zoals
 
 >[!NOTE]
 >
->De componenten die voor het paginapunt worden toegelaten worden opgeslagen in de bewaarplaats als waarde van `components` eigendom van de
+>De componenten die voor het paginapunt worden ingeschakeld, worden in de opslagplaats opgeslagen als de waarde van de eigenschap `components` van het
 >
->Knooppunt `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
+>Knooppunt `/etc/designs/an-scf-sandbox/jcr:content/playpage/par` .
 
 ## Openingspagina {#landing-page}
 
@@ -182,4 +182,4 @@ Wijzig de URL van de browser in de hoofdpagina: `http://localhost:4502/editor.ht
 
 Nadat de site is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 
-De laatste stap vóór het spelen met de componenten van Communities SCF moet een Omslag van de Bibliotheek van de Cliënt toevoegen (clientlibs)... [Clientlibs toevoegen](add-clientlibs.md)
+De laatste stap vóór het spelen met de componenten van Communities SCF moet een Omslag van de Bibliotheek van de Cliënt toevoegen (clientlibs)... [ voeg Clientlibs ](add-clientlibs.md) toe

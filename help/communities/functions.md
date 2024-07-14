@@ -19,47 +19,47 @@ ht-degree: 0%
 
 # Communautaire functies{#community-functions}
 
-Het type functies dat wordt verwacht van een community-ervaring is bekend. De communautaire eigenschappen zijn beschikbaar als communautaire functies. In wezen zijn ze een of meer pagina&#39;s die vooraf zijn bekabeld om een community-functie te implementeren. Hiervoor is meer nodig dan alleen het toevoegen van een component aan een pagina in de modus Schrijven. Zij zijn de bouwstenen die worden gebruikt om de structuur van een [sjabloon voor community-site](/help/communities/sites.md) waarvan sites uit de gemeenschap [gemaakt](/help/communities/sites-console.md).
+Het type functies dat wordt verwacht van een community-ervaring is bekend. De communautaire eigenschappen zijn beschikbaar als communautaire functies. In wezen zijn ze een of meer pagina&#39;s die vooraf zijn bekabeld om een community-functie te implementeren. Hiervoor is meer nodig dan alleen het toevoegen van een component aan een pagina in de modus Schrijven. Zij zijn de bouwstenen die worden gebruikt om de structuur van het malplaatje van de a [ communautaire plaats ](/help/communities/sites.md) te bepalen waarvan de communautaire plaatsen [ ](/help/communities/sites-console.md) worden gecreeerd.
 
-Nadat een communitysite is gemaakt, kan inhoud aan de resulterende pagina&#39;s worden toegevoegd met de standaard [AEM ontwerpmodus](/help/sites-authoring/editing-content.md). Verschillende communityfuncties zijn beschikbaar zoals in de console voor communityfuncties.
+Zodra een communautaire plaats wordt gecreeerd, kan de inhoud aan de resulterende pagina&#39;s worden toegevoegd gebruikend de standaard [ AEM auteurswijze ](/help/sites-authoring/editing-content.md). Verschillende communityfuncties zijn beschikbaar zoals in de console voor communityfuncties.
 
 >[!NOTE]
 >
->De consoles voor het creëren van [communitysites](/help/communities/sites-console.md), [communitysjablonen](/help/communities/sites.md), [communitygroepsjablonen](/help/communities/tools-groups.md), en [communautaire functies](/help/communities/functions.md) zijn alleen bestemd voor gebruik in de ontwerpomgeving.
+>De consoles voor de verwezenlijking van [ communautaire plaatsen ](/help/communities/sites-console.md), [ communautaire plaatssjablonen ](/help/communities/sites.md), [ communautaire groepsmalplaatjes ](/help/communities/tools-groups.md), en [ communautaire functies ](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
 
 ## Community-functieconsole {#community-functions-console}
 
 Om de console van communautaire functies in het auteursmilieu te bereiken:
 
-* Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
+* Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]** .
 
-![communautaire functies](assets/community-functions.png)
+![ gemeenschap-functies ](assets/community-functions.png)
 
 ## Vooraf gebouwde functies {#pre-built-functions}
 
-Hieronder volgt een korte beschrijving van de functies die bij AEM Communities worden geleverd. Elke functie bevat een of meer AEM pagina&#39;s die onderdelen van een Gemeenschappen bevatten die zijn samengevoegd tot een functie die eenvoudig in een [sjabloon voor community-site](/help/communities/sites.md).
+Hieronder volgt een korte beschrijving van de functies die bij AEM Communities worden geleverd. Elke functie omvat één of meerdere AEM pagina&#39;s die de componenten bevatten van Gemeenschappen samen in een eigenschap worden getelegrafeerd die gemakkelijk in het malplaatje van de a [ communautaire plaats ](/help/communities/sites.md) wordt opgenomen.
 
 Een communitysitesjabloon biedt de structuur voor een communitysite, zoals aanmeldingsgegevens, gebruikersprofielen, meldingen, berichten, berichten, het menu van de site, zoeken, thema&#39;s en brandingfuncties.
 
 ### Instellingen voor Titel en URL {#title-and-url-settings}
 
-**Titel** en **URL** zijn eigenschappen die alle functies van de gemeenschap gemeen hebben.
+**Titel** en **URL** zijn eigenschappen gemeenschappelijk voor alle communautaire functies.
 
-Wanneer een communautaire functie aan een malplaatje van de communautaire plaats wordt toegevoegd of wanneer toegevoegd [wijzigen](/help/communities/sites-console.md#modifying-site-properties) In de structuur van een communitysite wordt het dialoogvenster van de functie geopend, zodat de titel en de URL kunnen worden geconfigureerd.
+Wanneer een communautaire functie aan een malplaatje van de communautaire plaats wordt toegevoegd of toegevoegd wanneer [ het wijzigen ](/help/communities/sites-console.md#modifying-site-properties) de structuur van een communautaire plaats, opent de dialoog van de functie zodat de Titel en URL kunnen worden gevormd.
 
 #### Configuratiefunctie {#configuration-function-details}
 
-![title-url-details](assets/title-url-details.png)
+![ titel-url-details ](assets/title-url-details.png)
 
 * **Titel**
 
-  (*Vereist*) De tekst die wordt weergegeven in het menu met functies voor de site
+  (*Vereiste*) de tekst die in het menu van eigenschappen voor de plaats verschijnt
 
 * **URL**
 
-  (*Vereist*) De naam die wordt gebruikt om de URI te genereren. De naam moet overeenkomen met de [naamconventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
+  (*Vereiste*) de naam die wordt gebruikt om URI te produceren. De naam moet met de [ noemende overeenkomsten ](/help/sites-developing/naming-conventions.md) in overeenstemming zijn die door AEM en JCR worden opgelegd.
 
-Als u bijvoorbeeld de site gebruikt die u hebt gemaakt op basis van de [Aan de slag](/help/communities/getting-started.md) zelfstudie, als
+Bijvoorbeeld, gebruikend de plaats die van het volgen van [ wordt gecreeerd Begonnen ](/help/communities/getting-started.md) leerprogramma, als
 
 * Titel = webpagina
 * URL = pagina
@@ -68,318 +68,318 @@ De URL naar de pagina is vervolgens https://localhost:4503/content/sites/engage/
 
 en de menukoppeling voor de pagina wordt weergegeven als:
 
-![opengageren](assets/engage-page.png)
+![ in dienst nemen-pagina ](assets/engage-page.png)
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
-De functie activity stream is een pagina met een [Activiteitsstromen](/help/communities/activities.md) met alle geselecteerde weergaven (alle activiteiten, gebruikersactiviteiten en volgende). Zie ook [Essentiële elementen activiteitsstroom](/help/communities/essentials-activities.md) voor ontwikkelaars.
+De functie van de activiteitenstroom is een pagina met een [ component van de Streams van de Activiteit ](/help/communities/activities.md) met alle geselecteerde meningen (alle activiteiten, gebruikersactiviteiten, en het volgende). Zie ook {de Hoofdzaak van de Stroom van de Activiteit 0} ](/help/communities/essentials-activities.md) voor ontwikkelaars.[
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 #### Configuratiefunctie {#configuration-function-details-1}
 
-![functiedetails](assets/function-details.png)
+![ functie-details ](assets/function-details.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Weergave &quot;Mijn activiteiten&quot; weergeven**
+* **toon &quot;Mijn Activiteiten&quot;mening**
 
   Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die door het huidige lid binnen de gemeenschap worden gegenereerd. Standaard is geselecteerd.
 
-* **Weergave Alle activiteiten tonen**
+* **toon &quot;Alle Activiteiten&quot;mening**
 
   Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad dat alle binnen de gemeenschap gegenereerde activiteiten bevat waartoe het huidige lid toegang heeft. Standaard is geselecteerd.
 
-* **Weergave &quot;News Feed&quot; weergeven**
+* **toon &quot;News Feed&quot;mening**
 
   Als deze optie is geselecteerd, bevatten de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die het huidige lid volgt. Standaard is geselecteerd.
 
 ### Blogfunctie {#blog-function}
 
-De blogfunctie is een pagina met een [Blogcomponent](/help/communities/blog-feature.md) geconfigureerd voor labelen, het uploaden van bestanden, als volgt, leden die zichzelf moeten bewerken, stemmen en moderatie. Zie ook [Grondbeginselen van blogs](/help/communities/blog-developer-basics.md) voor ontwikkelaars.
+De blogfunctie is een pagina met de component van a [ Blog ](/help/communities/blog-feature.md) die voor het etiketteren wordt gevormd, uploadt het dossier, na, leden aan zelf-geeft uit te geven, te stemmen, en matiging. Zie ook [ Grondbeginselen van Blog ](/help/communities/blog-developer-basics.md) voor ontwikkelaars.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![blogcomponent](assets/blog-component.png)
+![ blog-component ](assets/blog-component.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Geprivilegieerde leden toestaan**
+* **staat Geprivilegieerde Leden** toe
 
-  Als deze optie is geselecteerd, kunnen geprivilegieerde leden alleen artikelen maken door de selectie van een [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. De optie Standaard is uitgeschakeld.
+  Als geselecteerd, staat blog slechts bevoorrechte leden toe om artikelen tot stand te brengen door selectie van a [ bevoorrechte ledengroep ](/help/communities/users.md#privileged-members-group) toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. De optie Standaard is uitgeschakeld.
 
-* **Uploaden van bestanden toestaan**
+* **staat Dossier toe uploadt**
 
   Als deze optie is geselecteerd, biedt de blog leden de mogelijkheid bestanden te uploaden. Standaard is geselecteerd.
 
-* **Reacties met verbindingen toestaan**
+* **staat Verbonden Antwoorden** toe
 
   Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
 
-* **Aanbevolen inhoud toestaan**
+* **sta Aanbevolen Inhoud** toe
 
-  Indien geselecteerd, wordt de blog geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Als geselecteerd, wordt blog geïdentificeerd als [ gekenmerkte inhoud ](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Kalenderfunctie {#calendar-function}
 
-De kalenderfunctie is een pagina met een [Kalendercomponent](/help/communities/calendar.md) geconfigureerd om tags toe te staan. Zie ook [Essentiële elementen van agenda](/help/communities/calendar-basics-for-developers.md) voor ontwikkelaars.
+De kalenderfunctie is een pagina met de component van de a [ Kalender ](/help/communities/calendar.md) wordt gevormd om het etiketteren toe te staan. Zie ook {de Hoofdzaak van de Kalender 0} ](/help/communities/calendar-basics-for-developers.md) voor ontwikkelaars.[
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![Kalender](assets/calendar-details.png)
+![ kalender-details ](assets/calendar-details.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Vastzetten toestaan**
+* **het Draaien** toestaan
 
   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
-* **Geprivilegieerde leden toestaan**
+* **staat Geprivilegieerde Leden** toe
 
-  Als deze optie is geselecteerd, kunnen geprivilegieerde leden alleen artikelen maken door de selectie van een [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. De optie Standaard is uitgeschakeld.
+  Als geselecteerd, staat blog slechts bevoorrechte leden toe om artikelen tot stand te brengen door selectie van a [ bevoorrechte ledengroep ](/help/communities/users.md#privileged-members-group) toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. De optie Standaard is uitgeschakeld.
 
-* **Uploaden van bestanden toestaan**
+* **staat Dossier toe uploadt**
 
   Als deze optie is geselecteerd, biedt de blog leden de mogelijkheid bestanden te uploaden. Standaard is geselecteerd.
 
-* **Reacties met verbindingen toestaan**
+* **staat Verbonden Antwoorden** toe
 
   Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
 
-* **Aanbevolen inhoud toestaan**
+* **sta Aanbevolen Inhoud** toe
 
-  Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Als geselecteerd, wordt zijn inhoud geïdentificeerd als [ gekenmerkte inhoud ](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Functie aanbevolen inhoud {#featured-content-function}
 
-De functie voor aanbevolen inhoud is een pagina met een [Aanbevolen inhoudscomponent](/help/communities/featured.md) geconfigureerd om opmerkingen toe te voegen en te verwijderen.
+De gekenmerkte inhoudsfunctie is een pagina met de component van de Inhoud van de a [ Aanbevolen ](/help/communities/featured.md) wordt gevormd om commentaren toe te staan om worden toegevoegd en worden geschrapt.
 
-De mogelijkheid om inhoud van kenmerken te voorzien, is mogelijk toegestaan of niet toegestaan voor elk onderdeel (zie [Blogfunctie](#blog-function), [Kalenderfunctie](#calendar-function), [Functie van forum](#forum-function), [Idealisatiefunctie](#ideation-function), en [QnA-functie](#qna-function)).
+De capaciteit om inhoud te voorzien kan worden toegestaan of worden verworpen per component (zie {de Functie van 0} Blog ](#blog-function), [ de Functie van de Kalender ](#calendar-function), [ Functie van het Forum ](#forum-function), [ Functie van de Ideatie ](#ideation-function), en [ Functie QnA ](#qna-function)).[
 
-Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor [Instellingen voor Titel en URL](#title-and-url-settings).
+Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor de [ Montages van de Titel en URL ](#title-and-url-settings).
 
 ### Functie bestandsbibliotheek {#file-library-function}
 
-De bestandsbibliotheekfunctie is een pagina met een [Bestandsbibliotheek, component](/help/communities/file-library.md) geconfigureerd om opmerkingen toe te voegen en te verwijderen.
+De functie van de dossierbibliotheek is een pagina met de component van de Bibliotheek van het a [ Dossier ](/help/communities/file-library.md) wordt gevormd om commentaren toe te staan om worden toegevoegd en worden geschrapt.
 
-Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor [Instellingen voor Titel en URL](#title-and-url-settings).
+Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor de [ Montages van de Titel en URL ](#title-and-url-settings).
 
 ### Functie van forum {#forum-function}
 
-De forumfunctie is een pagina met een [Forum-component](/help/communities/forum.md) geconfigureerd voor labelen, het uploaden van bestanden, als volgt, leden die zichzelf moeten bewerken, stemmen en moderatie.
+De forumfunctie is een pagina met de component van het a [ Forum ](/help/communities/forum.md) die voor het etiketteren wordt gevormd, uploadt het dossier, na, leden om zelf-uit te geven, te stemmen, en matiging.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 #### Configuratiefunctie {#configuration-function-details-2}
 
-![forum-component1](assets/forum-component1.png)
+![ forum-component1 ](assets/forum-component1.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Vastzetten toestaan**
+* **het Draaien** toestaan
 
   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
-* **Geprivilegieerde leden toestaan**
+* **staat Geprivilegieerde Leden** toe
 
-  Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+  Als geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van a [ bevoorrechte ledengroep ](/help/communities/users.md#privileged-members-group) toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **Uploaden van bestanden toestaan**
+* **staat Dossier toe uploadt**
 
   Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
 
-* **Reacties met verbindingen toestaan**
+* **staat Verbonden Antwoorden** toe
 
   Als deze optie niet is geselecteerd, staat het forum commentaar op een onderwerp toe, maar zijn antwoorden op deze opmerkingen niet toegestaan. Standaard is geselecteerd.
 
-* **Aanbevolen inhoud toestaan**
+* **sta Aanbevolen Inhoud** toe
 
-  Indien geselecteerd, wordt de inhoud van de component geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Als geselecteerd, wordt de inhoud van de component geïdentificeerd als [ gekenmerkte inhoud ](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Functie Groepen {#groups-function}
 
 >[!CAUTION]
 >
->De groepfunctie moet *niet* zijn *eerst of alleen* functioneren in de structuur van een site of in een sjabloon voor een community-site.
+>De groepsfunctie moet ** niet eerst *zijn noch de enige* functie in de structuur van een plaats of in een malplaatje van de communautaire plaats.
 >
->Elke andere functie, zoals de [page, functie](#page-function), moet worden opgenomen en als eerste worden vermeld.
+>Om het even welke andere functie, zoals de [ paginafunctie ](#page-function), moet worden omvat en eerst vermeld.
 
 De groepsfunctie biedt leden van de gemeenschap de mogelijkheid om subgemeenschappen binnen de gemeenschapssite in de publicatieomgeving te maken.
 
-Afhankelijk van [instellingen](/help/communities/sites-console.md#groupmanagement) wanneer de functie Groepen is opgenomen in een [sjabloon voor community-site](/help/communities/sites.md), kunnen de groepen openbaar of privé zijn en één of meerdere malplaatjes van de communautaire groep kunnen worden gevormd om een keus van malplaatjes te verstrekken wanneer de communautaire groep eigenlijk wordt gecreeerd (zoals van het publicatiemilieu). A [communitygroepsjabloon](/help/communities/tools-groups.md) Hiermee geeft u aan welke communautaire functies worden gemaakt voor de pagina&#39;s van de groep, zoals forums en kalenders.
+Afhankelijk van [ montages ](/help/communities/sites-console.md#groupmanagement) wanneer de functie van Groepen in a [ communautair plaatssjabloon ](/help/communities/sites.md) inbegrepen is, kunnen de groepen openbaar of privé zijn en één of meerdere malplaatjes van de communautaire groep kunnen worden gevormd om een keus van malplaatjes te verstrekken wanneer de communautaire groep eigenlijk wordt gecreeerd (zoals van het publicatiemilieu). A [ malplaatje van de communautaire groep ](/help/communities/tools-groups.md) specificeert welke eigenschappen van Gemeenschappen voor de groepspagina&#39;s, zoals forums en kalenders worden gecreeerd.
 
-Wanneer een communautaire groep wordt gecreeerd, wordt een lidgroep dynamisch gecreeerd voor de nieuwe groep, waaraan de leden kunnen worden toegewezen of zich aansluiten. Zie voor meer informatie [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).
+Wanneer een communautaire groep wordt gecreeerd, wordt een lidgroep dynamisch gecreeerd voor de nieuwe groep, waaraan de leden kunnen worden toegewezen of zich aansluiten. Voor meer informatie, zie [ het Leiden Gebruikers en de Groepen van de Gebruiker ](/help/communities/users.md).
 
-Vanaf Gemeenschappen [functiepakket 1](/help/communities/deploy-communities.md#latestfeaturepack), worden in de ontwerpomgeving groepen gemaakt met de [Community Sites Group-console](/help/communities/groups.md)en kan worden gemaakt in de publicatieomgeving wanneer deze is ingeschakeld.
+Vanaf de Gemeenschappen [ eigenschappak 1 ](/help/communities/deploy-communities.md#latestfeaturepack), worden de communautaire groepen gecreeerd in het auteursmilieu gebruikend de [ console van de Groepen van Plaatsen van Gemeenschappen ](/help/communities/groups.md), en kunnen in het publicatiemilieu wanneer toegelaten worden gecreeerd.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![group-template-config](assets/group-template-config.png)
+![ groep-malplaatje-config ](assets/group-template-config.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Groepssjablonen selecteren**
+* **Uitgezochte de Malplaatjes van de Groep**
 
   Een drop-down die selectie van één of meerdere toegelaten groepsmalplaatjes toestaat waarvan de toekomstige schepper van een nieuwe communautaire groep (in het publicatiemilieu) kan kiezen.
 
-* **Geprivilegieerde leden toestaan**
+* **staat Geprivilegieerde Leden** toe
 
-  Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [veiligheidsgroep van geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+  Als geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van de groep van de a [ bevoorrechte ledenveiligheid ](/help/communities/users.md#privileged-members-group) toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **Publiceren toestaan**
+* **staat Publish Creation** toe
 
   Als deze optie is geselecteerd, kunnen geautoriseerde leden van de gemeenschap een groep maken in de publicatieomgeving. Als deze optie niet is geselecteerd, kunnen alleen nieuwe groepen (subgemeenschappen) worden gemaakt in de auteursomgeving van de console Groepen van sites van de Gemeenschappen.
 Standaard is geselecteerd.
 
 ### Idealisatiefunctie {#ideation-function}
 
-De videofunctie is een pagina met één [Onderdeel voor ideeën](/help/communities/ideation-feature.md).
+De videofunctie is een pagina met één [ component van de Ideatie ](/help/communities/ideation-feature.md).
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
-![ideatie-functie](assets/ideation-function.png)
+![ plaats-functie ](assets/ideation-function.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Geprivilegieerde leden toestaan**
+* **staat Geprivilegieerde Leden** toe
 
-  Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [veiligheidsgroep van geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+  Als geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van de groep van de a [ bevoorrechte ledenveiligheid ](/help/communities/users.md#privileged-members-group) toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **Uploaden van bestanden toestaan**
+* **staat Dossier toe uploadt**
 
   Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
 
-* **Reacties met verbindingen toestaan**
+* **staat Verbonden Antwoorden** toe
 
   Als deze optie niet is geselecteerd, kunnen reacties (opmerkingen) op een onderwerp worden geplaatst, maar kunnen opmerkingen niet worden beantwoord. Standaard is geselecteerd.
 
-* **Aanbevolen inhoud toestaan**
+* **sta Aanbevolen Inhoud** toe
 
-  Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Als geselecteerd, wordt zijn inhoud geïdentificeerd als [ gekenmerkte inhoud ](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Leaderboard-functie {#leaderboard-function}
 
-De leaderboardfunctie is een pagina met één pagina [Leaderboard-component](/help/communities/enabling-leaderboard.md).
+De leaderboardfunctie is een pagina met één [ component Leaderboard ](/help/communities/enabling-leaderboard.md).
 
-**OPMERKING**: De component Leaderboard moet verder worden geconfigureerd *na* Er wordt een community-site gemaakt op basis van een communitysjabloon die de Leaderboard-functie bevat. De Leaderboard-componenten opgeven [regels](/help/communities/enabling-leaderboard.md#rules-tab), die afhankelijk zijn van de configuratie van [scoring en badges](/help/communities/implementing-scoring.md) voor de site van de community.
+**NOTA**: De component Leaderboard vereist verdere configuratie *nadat* een communautaire plaats van een communautair malplaatje wordt gecreeerd dat de functie omvat Leaderboard. Specificeer de 3} regels ](/help/communities/enabling-leaderboard.md#rules-tab) van de component Leaderboard [, die van configuratie van [ het scoren en badges ](/help/communities/implementing-scoring.md) voor de communautaire plaats afhangen.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
-![leaderboard-dialog](assets/leaderboard-dialog.png)
+![ leaderboard-dialog ](assets/leaderboard-dialog.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Badge weergeven**
+* **Badge van de Vertoning**
 
   Als deze optie is geselecteerd, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
 De optie Standaard is uitgeschakeld.
 
-* **Naam van badge weergeven**
+* **Naam van de Band van de Vertoning**
 
   Als deze optie is geselecteerd, wordt een kolom met de naam van de badge in het leaderboard opgenomen.
 De optie Standaard is uitgeschakeld.
 
-* **Avatar weergeven**
+* **Vertoning Avatar**
 
   Als deze optie is geselecteerd, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
 De optie Standaard is uitgeschakeld.
 
 ### Paginacode {#page-function}
 
-De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: login, menu, berichten, overseinen, thema en branding. Inhoud wordt aan de pagina toegevoegd met de [standaard AEM ontwerpmodus](/help/sites-authoring/editing-content.md).
+De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: login, menu, berichten, overseinen, thema en branding. De inhoud wordt toegevoegd aan de pagina gebruikend de [ standaard AEM auteurswijze ](/help/sites-authoring/editing-content.md).
 
-Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor [Instellingen voor Titel en URL](#title-and-url-settings).
+Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor de [ Montages van de Titel en URL ](#title-and-url-settings).
 
 ### QnA-functie {#qna-function}
 
-De functie QnA is een pagina met een [QnA-component](/help/communities/working-with-qna.md) geconfigureerd voor labelen, het uploaden van bestanden, als volgt, leden die zichzelf moeten bewerken, stemmen en moderatie.
+De functie QnA is een pagina met de component van a [ QnA ](/help/communities/working-with-qna.md) die voor het etiketteren wordt gevormd, uploadt het dossier, na, leden om zelf-uit te geven, te stemmen, en matiging.
 
 Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoorrechte leden toe:
 
-![qna-dialog](assets/qna-dialog.png)
+![ qna-dialog ](assets/qna-dialog.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Vastzetten toestaan**
+* **het Draaien** toestaan
 
   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
-* **Geprivilegieerde leden toestaan**
+* **staat Geprivilegieerde Leden** toe
 
-  Indien geselecteerd, staat het forum QnA slechts bevoorrechte leden toe om vragen te posten door selectie van toe te staan [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+  Als geselecteerd, staat het forum QnA slechts bevoorrechte leden toe om vragen te posten door selectie van a [ bevoorrechte ledengroep ](/help/communities/users.md#privileged-members-group) toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **Uploaden van bestanden toestaan**
+* **staat Dossier toe uploadt**
 
   Indien geselecteerd, omvat het forum QnA de capaciteit voor leden om dossiers te uploaden. Standaard is geselecteerd.
 
-* **Reacties met verbindingen toestaan**
+* **staat Verbonden Antwoorden** toe
 
   Als deze optie niet is geselecteerd, kan op het QnA-forum commentaar (antwoorden) worden gegeven op een geposte vraag, maar antwoorden op antwoorden zijn niet toegestaan. Standaard is geselecteerd.
 
-* **Aanbevolen inhoud toestaan**
+* **sta Aanbevolen Inhoud** toe
 
-  Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Als geselecteerd, wordt zijn inhoud geïdentificeerd als [ gekenmerkte inhoud ](/help/communities/featured.md). Standaard is geselecteerd.
 
 ## Community-functie maken {#create-community-function}
 
-De mogelijkheid om een gemeenschapsfunctie te maken, wordt bereikt door de `Create Community Function` pictogram boven aan de console voor communautaire functies. Er kunnen meerdere functies worden gemaakt die op dezelfde AEM blauwdruk zijn gebaseerd en vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus van de auteur.
+De mogelijkheid om een community-functie te maken, wordt bereikt door het pictogram `Create Community Function` boven aan de Community Function-console te selecteren. Er kunnen meerdere functies worden gemaakt die op dezelfde AEM blauwdruk zijn gebaseerd en vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus van de auteur.
 
-![create-community-function](assets/create-community-function.png)
+![ creeer-gemeenschap-functie ](assets/create-community-function.png)
 
 ### Community-functienaam {#community-function-name}
 
-![function-name](assets/function-name.png)
+![ functie-naam ](assets/function-name.png)
 
 In het deelvenster Community Function Name worden een naam, beschrijving en of de functie is ingeschakeld of uitgeschakeld geconfigureerd:
 
-* **Community-functienaam**
+* **Communautaire Naam van de Functie**
 
   De functienaam die wordt gebruikt voor weergave en opslag.
 
-* **Beschrijving van functie Gemeenschap**
+* **Beschrijving van de Functie van de Gemeenschap**
 
   De functiebeschrijving voor de weergave.
 
-* **Uitgeschakeld/Ingeschakeld**
+* **Gehandicapten/Toegelaten**
 
   Een schakeloptie die bepaalt of naar de functie kan worden verwezen.
 
 ### AEM {#aem-blueprint}
 
-![aem-blauwdruk](assets/aem-blueprint.png)
+![ aem-blauwdruk ](assets/aem-blueprint.png)
 
-Op de `AEM Blueprint` is het mogelijk de blauwdruk te selecteren die de onderliggende uitvoering van de communautaire functie is .
+In het deelvenster `AEM Blueprint` kunt u de blauwdruk selecteren die de onderliggende implementatie van de communautaire functie is.
 
-De functie van de gemeenschap is een mini plaats die één of meerdere pagina&#39;s omvat, die voor opneming in een communautaire plaats met inbegrip van login, gebruikersprofielen, berichten, overseinen, plaatsmenu, onderzoek, thema, en branding eigenschappen vooraf worden getelegrafeerd. Wanneer de functie is gemaakt, is het mogelijk om [open de functie](#open-community-function) in de bewerkingsmodus van de auteur en pas de pagina- of componentinstellingen aan.
+De functie van de gemeenschap is een mini plaats die één of meerdere pagina&#39;s omvat, die voor opneming in een communautaire plaats met inbegrip van login, gebruikersprofielen, berichten, overseinen, plaatsmenu, onderzoek, thema, en branding eigenschappen vooraf worden getelegrafeerd. Zodra de functie wordt gecreeerd, is het mogelijk om [ de functie ](#open-community-function) op auteur te openen uitgeeft wijze en de pagina of componentenmontages aan te passen.
 
-Aangezien de communautaire functie als [live kopie](/help/sites-administering/msm.md#live-copies) van een [blauwdruk](/help/sites-administering/msm-livecopy.md#creatingablueprint), is het mogelijk wijzigingen door te voeren die zijn aangebracht in een functie die van invloed is op alle pagina&#39;s van de gemeenschapssite die zijn gemaakt op basis van de [sjabloon voor community-site](/help/communities/sites.md) of [communitygroepsjabloon](/help/communities/tools-groups.md) dat de functie omvatte. Het is ook mogelijk om een pagina los te koppelen van de bovenliggende blauwdruk om wijzigingen op paginaniveau aan te brengen.
+Aangezien de communautaire functie als a [ levend exemplaar ](/help/sites-administering/msm.md#live-copies) van a [ blauwdruk ](/help/sites-administering/msm-livecopy.md#creatingablueprint) wordt uitgevoerd, is het mogelijk om veranderingen uit te voeren die aan een functie worden aangebracht die alle communautaire plaatspagina&#39;s beïnvloedt die van het [ malplaatje van de communautaire plaats ](/help/communities/sites.md) worden gecreeerd of [ communautair groepsmalplaatje ](/help/communities/tools-groups.md) dat de functie omvatte. Het is ook mogelijk om een pagina los te koppelen van de bovenliggende blauwdruk om wijzigingen op paginaniveau aan te brengen.
 
-Zie ook [Beheer van meerdere sites](/help/sites-administering/msm.md).
+Zie ook [ Meerdere Manager van de Plaats ](/help/sites-administering/msm.md).
 
 ### Miniatuur {#thumbnail}
 
-![functie-miniatuur](assets/funtion-thumbnail.png)
+![ functie-duimnagel ](assets/funtion-thumbnail.png)
 
-In het deelvenster Miniatuur kan een afbeelding worden geüpload om te worden weergegeven in het dialoogvenster [Community Functions-console](#community-functions-console).
+Op het paneel van Duimnagel, kan een beeld worden geupload om in de [ console van de Functies van de Gemeenschap ](#community-functions-console) te tonen.
 
 ## Community-functie openen {#open-community-function}
 
-![open functie](assets/open-function.png)
+![ open-function ](assets/open-function.png)
 
-Selecteer de `Open Community Function` pictogram om de bewerkingsmodus voor auteurs in te schakelen voor het ontwerpen van de pagina-inhoud en het wijzigen van de configuratie van de component(en) met functies.
+Selecteer het pictogram `Open Community Function` om de bewerkingsmodus voor auteurs te activeren voor het ontwerpen van de pagina-inhoud en het wijzigen van de configuratie van de functiecomponent(en).
 
 ### Componenten configureren {#configuring-components}
 
-Een communautaire functie wordt uitgevoerd als Levende Kopie van een AEM Blauwdruk, die details onder wordt gedocumenteerd [Beheer van meerdere sites](/help/sites-administering/msm.md).
+Een communautaire functie wordt uitgevoerd als Levend Exemplaar van een AEM Vervaging, details waarvan onder [ de Manager van de Multisite ](/help/sites-administering/msm.md) worden gedocumenteerd.
 
 Het is mogelijk om niet alleen pagina-inhoud te schrijven, maar componenten te configureren.
 
-Als het vormen van een component op een pagina van een gecreeerde communautaire plaats, kan het noodzakelijk zijn om te annuleren [overerving](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) om de component te configureren. De overerving moet worden hersteld wanneer de configuratie is voltooid.
+Als het vormen van een component op een pagina van een gecreeerde communautaire plaats, kan het noodzakelijk zijn om [ overerving ](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) te annuleren om de component te vormen. De overerving moet worden hersteld wanneer de configuratie is voltooid.
 
-Voor configuratiedetails, bezoek [Community-componenten](/help/communities/author-communities.md) voor auteurs.
+Voor configuratiedetails, bezoek {de Componenten van 0} Gemeenschappen ](/help/communities/author-communities.md) voor auteurs.[
 
 ## Community-functie bewerken {#edit-community-function}
 
-![bewerken, functie](assets/edit-function.png)
+![ geef-functie uit ](assets/edit-function.png)
 
-Selecteer de `Edit Community Function` pictogram om de eigenschappen van de functie te bewerken met dezelfde deelvensters als [gemeenschapsfunctie maken](#create-community-function), inclusief het inschakelen of uitschakelen van de functie.
+Selecteer het `Edit Community Function` pictogram om de eigenschappen van de functie uit te geven gebruikend de zelfde panelen zoals [ creërend een communautaire functie ](#create-community-function), met inbegrip van het toelaten van of het onbruikbaar maken van de functie.

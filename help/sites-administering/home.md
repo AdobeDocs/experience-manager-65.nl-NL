@@ -23,5 +23,5 @@ Ontdek meer over het beheren van AEM 6.5. Deze handleidingen behandelen websitef
 * [MSM en vertaling](/help/sites-administering/msm-and-translation.md)
 * [Operations-dashboard](/help/sites-administering/operations-dashboard.md)
 * [Back-up en herstel](/help/sites-administering/backup-and-restore.md)
-* [Personalisatie](/help/sites-administering/personalization.md)
+* [Personalization](/help/sites-administering/personalization.md)
 * [Integraties van derden](/help/sites-administering/third-party-services.md)

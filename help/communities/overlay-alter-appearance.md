@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## Het script wijzigen {#modify-the-script}
 
-De `comment.hbs` is verantwoordelijk voor het maken van de algemene HTML voor elke opmerking.
+Het script van `comment.hbs` is verantwoordelijk voor het maken van de algemene HTML voor elke opmerking.
 
 Als u de avatar niet naast elke geposte opmerking wilt weergeven:
 
-1. Kopiëren `comment.hbs`van `libs`tot `apps`
+1. `comment.hbs` kopiëren van `libs` naar `apps`
 
    1. Selecteren `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Selecteren **[!UICONTROL Copy]**
@@ -43,7 +43,7 @@ Als u de avatar niet naast elke geposte opmerking wilt weergeven:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Verwijder de lijnen of omring deze met `<!--` en `-->` dus je geeft je commentaar. Bovendien worden de tekens &#39;xxx&#39; toegevoegd als visuele indicator van waar de avatar zou zijn geweest.
+Verwijder de lijnen of omring deze met `<!--` en `-->` , zodat u ze weglaat. Bovendien worden de tekens &#39;xxx&#39; toegevoegd als visuele indicator van waar de avatar zou zijn geweest.
 
 ```xml
    xxx
@@ -58,18 +58,18 @@ Duw de bedekte commentaarcomponent aan de publicatieinstantie gebruikend het Hul
 
 >[!NOTE]
 >
->Een robuustere vorm van replicatie zou zijn om een pakket in de Manager van het Pakket te creëren en [activate](/help/sites-administering/package-manager.md#replicating-packages) het. Een pakket kan worden geëxporteerd en gearchiveerd.
+>Een robuustere vorm van replicatie zou een pakket in de Manager van het Pakket moeten tot stand brengen en [ ](/help/sites-administering/package-manager.md#replicating-packages) het activeren. Een pakket kan worden geëxporteerd en gearchiveerd.
 
-Selecteer in de globale navigatie de optie **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** en klik op **[!UICONTROL Activate Tree]**.
+Selecteer in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** en klik op **[!UICONTROL Activate Tree]** .
 
-Voer bij Beginpad het volgende in `/apps/social/commons` en selecteert u **[!UICONTROL Activate]**.
+Voer bij Beginpad `/apps/social/commons` in en selecteer **[!UICONTROL Activate]** .
 
-![verify-content-template](assets/verify-content-template.png)
+![ verifieer-inhoud-malplaatje ](assets/verify-content-template.png)
 
 ### Resultaten weergeven {#view-results}
 
 Als u zich als beheerder, bijvoorbeeld, https://localhost:4503/crx/de als admin/admin bij de publicatie-instantie aanmeldt, kunt u controleren of de bovenliggende componenten aanwezig zijn.
 
-Als u zich afmeldt en dan login als `aaron.mcdonald@mailinator.com/password` en vernieuwt u de pagina. U ziet dat een avatar niet wordt weergegeven met de geposte opmerking. In plaats daarvan wordt een eenvoudige &#39;xxx&#39; weergegeven.
+Als u zich afmeldt en zich vervolgens aanmeldt als `aaron.mcdonald@mailinator.com/password` en de pagina vernieuwt, ziet u dat een avatar niet wordt weergegeven met de geposte opmerking. In plaats daarvan wordt een eenvoudige &#39;xxx&#39; weergegeven.
 
-![create-template-component](assets/create-template-component.png)
+![ creeer-malplaatje-component ](assets/create-template-component.png)

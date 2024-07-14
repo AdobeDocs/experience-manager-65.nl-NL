@@ -22,13 +22,13 @@ ht-degree: 3%
 
 Het AEM platform in AEM 6 is gebaseerd op Apache Jackrabbit Oak.
 
-Apache Jackrabbit Oak is een poging om een schaalbare en krachtige hiërarchische opslagplaats voor inhoud te implementeren die als basis kan dienen voor moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen.
+Apache Jackrabbit Oak probeert een schaalbare en krachtige hiërarchische opslagplaats voor inhoud te implementeren die als basis kan dienen voor moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen.
 
-Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als standaard backend voor zijn inhoudsbewaarplaats, CRX.
+Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als de standaardobject voor de gegevensopslagruimte, CRX.
 
 ## Ontwerpbeginselen en -doelstellingen {#design-principles-and-goals}
 
-De eiken implementeert de [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) - specificatie. De belangrijkste ontwerpdoelstellingen zijn:
+Oak voert [ JSR-283 ](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) specificatie uit. De belangrijkste ontwerpdoelstellingen zijn:
 
 * Betere ondersteuning voor grote opslagplaatsen
 * Meerdere gedistribueerde clusterknooppunten voor hoge beschikbaarheid
@@ -37,7 +37,7 @@ De eiken implementeert de [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2
 
 ## Architectuurconcept {#architecture-concept}
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![ chlimage_1-84 ](assets/chlimage_1-84.png)
 
 ### Opslag {#storage}
 
@@ -47,9 +47,9 @@ Het doel van de opslaglaag is:
 * Opslag pluggable maken
 * Een clusteringsmechanisme bieden
 
-### Eak Core {#oak-core}
+### Oak Core {#oak-core}
 
-Met de Oak Core voegt u verschillende lagen toe aan de opslaglaag:
+De Oak Core voegt verschillende lagen toe aan de opslaglaag:
 
 * Besturingselementen op toegangsniveau
 * Zoeken en indexeren
@@ -57,18 +57,18 @@ Met de Oak Core voegt u verschillende lagen toe aan de opslaglaag:
 
 ### Oak JCR {#oak-jcr}
 
-Het hoofddoel van het JCR voor de eik is om de semantische eigenschappen van het JCR om te zetten in boombewerkingen. Zij is ook verantwoordelijk voor:
+Het hoofddoel van het GCO van Oak is de semantiek van het GCO om te zetten in boombewerkingen. Zij is ook verantwoordelijk voor:
 
 * De JCR-API implementeren
 * Bevat haken die JCR-beperkingen implementeren
 
-Bovendien zijn niet-Java-implementaties nu mogelijk en maken ze deel uit van het JCR-concept voor eik.
+Bovendien zijn niet-Java-implementaties nu mogelijk en maken ze deel uit van het JCR-concept van Oak.
 
 ## Overzicht van opslag {#storage-overview}
 
-De eiken-opslaglaag biedt een abstractielaag voor de werkelijke opslag van de inhoud.
+De Oak-opslaglaag biedt een abstractielaag voor de werkelijke opslag van de inhoud.
 
-Er zijn momenteel twee opslagimplementaties beschikbaar in AEM6: **Teeropslag** en **MongoDB-opslag**.
+Momenteel, zijn er twee opslagimplementaties beschikbaar in AEM6: **Opslag van de Tar** en **Opslag MongoDB**.
 
 ### Teeropslag {#tar-storage}
 
@@ -76,17 +76,17 @@ Voor de Tar-opslag worden teerbestanden gebruikt. De inhoud wordt opgeslagen als
 
 Er zijn verschillende basisprincipes voor het ontwerp waarop het is gebouwd:
 
-* **Onveranderbare segmenten**
+* **Immuable Segmenten**
 
 De inhoud wordt opgeslagen in segmenten die maximaal 256 kB kunnen zijn. Ze zijn onveranderlijk, waardoor het gemakkelijk wordt om vaak geopende segmenten in de cache op te slaan en systeemfouten die de opslagplaats kunnen beschadigen, worden verminderd.
 
 Elk segment wordt geïdentificeerd door een uniek herkenningsteken (UUID) en bevat een ononderbroken ondergroep van de inhoudsboom. Daarnaast kunnen segmenten verwijzen naar andere inhoud. Elk segment houdt een lijst van UUIDs van andere referenced segmenten bij.
 
-* **Locatie**
+* **Localiteit**
 
 Verwante verslagen zoals een knoop en zijn directe kinderen worden opgeslagen in het zelfde segment. Hierdoor verloopt het zoeken in de repository snel en worden de meeste cachefouten vermeden voor typische clients die per sessie toegang hebben tot meer dan één gerelateerd knooppunt.
 
-* **Compacte**
+* **Compactheid**
 
 De opmaak van records is geoptimaliseerd om de IO-kosten te verlagen en om zoveel mogelijk inhoud in caches te plaatsen.
 
@@ -118,14 +118,14 @@ Gegevens over actieve en inactieve clusterknooppunten worden in de database bewa
 
 Een standaard AEM clusterinstallatie met MongoDB-opslag:
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![ chlimage_1-85 ](assets/chlimage_1-85.png)
 
 ## Wat is er anders dan Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Omdat eiken achterwaarts compatibel is met de JCR 1.0-standaard, zijn er bijna geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden bij het instellen van een op eik gebaseerde AEM-installatie:
+Aangezien Oak achterwaarts compatibel is met de JCR 1.0-standaard, zijn er bijna geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden wanneer u een op Oak gebaseerde AEM-installatie instelt:
 
-* Met Eak worden niet automatisch indexen gemaakt. Daarom moeten aangepaste indexen worden gemaakt wanneer dat nodig is.
-* In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weerspiegelen, waarbij een sessie voor eik een stabiele weergave van de opslagplaats weerspiegelt vanaf het moment dat de sessie werd verkregen. De reden hiervoor is het MVCC-model waarop eiken is gebaseerd.
+* Oak maakt niet automatisch indexen. Daarom moeten aangepaste indexen worden gemaakt wanneer dat nodig is.
+* In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weergeven, weerspiegelt een sessie met Oak een stabiele weergave van de opslagplaats vanaf het moment dat de sessie werd verkregen. De reden hiervoor is het MVCC-model waarop Oak is gebaseerd.
 * SNS (Same Name siblings) wordt niet ondersteund in Oak.
 
 ## Overige documentatie over het platform {#other-platform-related-documentation}

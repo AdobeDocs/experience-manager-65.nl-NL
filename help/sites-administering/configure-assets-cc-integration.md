@@ -1,5 +1,5 @@
 ---
-title: AEM Assets-integratie configureren met Experience Cloud
+title: AEM Assets-integratie met Experience Cloud configureren
 description: Leer hoe u AEM Assets-integratie met Experience Cloud configureert.
 contentOwner: AG
 feature: Asset Management
@@ -7,26 +7,26 @@ role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 1%
+source-wordcount: '893'
+ht-degree: 0%
 
 ---
 
-# AEM Assets-integratie configureren met Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# AEM Assets-integratie met Experience Cloud configureren {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Als u een Adobe Experience Cloud-klant bent, kunt u uw middelen binnen Adobe Experience Manager Assets synchroniseren met Adobe Creative Cloud, en omgekeerd. U kunt uw elementen ook synchroniseren met Experience Cloud en omgekeerd. U kunt deze synchronisatie instellen via [!DNL Adobe I/O]. De bijgewerkte naam van [!DNL Adobe Marketing Cloud] is [!DNL Adobe Experience Cloud].
+Als u een Adobe Experience Cloud-klant bent, kunt u uw middelen in Adobe Experience Manager Assets synchroniseren met Adobe Creative Cloud en omgekeerd. U kunt uw elementen ook synchroniseren met Experience Cloud en omgekeerd. U kunt deze synchronisatie instellen via [!DNL Adobe I/O] . De bijgewerkte naam van [!DNL Adobe Marketing Cloud] is [!DNL Adobe Experience Cloud] .
 
 De workflow voor het instellen van deze integratie is:
 
-1. Een verificatie maken in [!DNL Adobe I/O] het gebruiken van een openbare gateway en krijgt een toepassingsidentiteitskaart
+1. Creeer een authentificatie in [!DNL Adobe I/O] gebruikend een openbare gateway en krijg toepassings identiteitskaart
 1. Maak een profiel op uw AEM Assets-instantie met de toepassings-id.
 1. Gebruik deze configuratie om uw elementen te synchroniseren.
 
-Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchroniseert dan de gegevens tussen Middelen en Experience Cloud.
+Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchroniseert dan de gegevens tussen Assets en Experience Cloud.
 
 >[!NOTE]
 >
->Deze functie is vervangen in [!DNL Assets]. Vervangingen zoeken in [Aanbevolen werkwijzen voor AEM en Creative Cloud-integratie](/help/assets/aem-cc-integration-best-practices.md). Als u vragen hebt, [contact opnemen met Adobe Klantenondersteuning](https://www.adobe.com/account/sign-in.supportportal.html).
+>Deze functie is vervangen in [!DNL Assets] . Vind vervangingen in [ AEM en de beste praktijken van de Integratie van het Creative Cloud ](/help/assets/aem-cc-integration-best-practices.md). Als u om het even welke vragen hebt, [ contacteer de Steun van de Klant van de Adobe ](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -38,86 +38,86 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 
 ## Een toepassing maken {#create-an-application}
 
-1. Open de Adobe Developer-gatewayinterface door u aan te melden bij [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/).
+1. Heb toegang tot de gatewayinterface van Adobe Developer door het programma te openen bij [ https://legacy-oauth.cloud.adobe.io ](https://legacy-oauth.cloud.adobe.io/).
 
    >[!NOTE]
    >
    >U hebt beheerdersrechten nodig om een toepassings-id te maken.
 
-1. Navigeer vanuit het linkervenster naar **[!UICONTROL Developer Tools]** > **[!UICONTROL Applications]** om een lijst met toepassingen weer te geven.
-1. Klikken **[!UICONTROL Add]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) om een toepassing te maken.
-1. Van de **[!UICONTROL Client Credentials]** list, selecteer **[!UICONTROL Service Account (JWT Assertion)]**, een communicatieservice van server naar server voor serververificatie.
+1. Navigeer in het linkervenster naar **[!UICONTROL Developer Tools]** > **[!UICONTROL Applications]** om een lijst met toepassingen weer te geven.
+1. Klik **[!UICONTROL Add]** ![ name_assets_addcircle_icon ](assets/aem_assets_addcircle_icon.png) om een toepassing tot stand te brengen.
+1. Selecteer in de lijst **[!UICONTROL Client Credentials]** de optie **[!UICONTROL Service Account (JWT Assertion)]** . Dit is een server-naar-server communicatieservice voor serververificatie.
 
-   ![chlimage_1-49](assets/chlimage_1-49.png)
+   ![ chlimage_1-49 ](assets/chlimage_1-49.png)
 
 1. Geef een naam voor de toepassing en een optionele beschrijving op.
-1. Van de **[!UICONTROL Organization]** selecteert u de organisatie waarvoor u elementen wilt synchroniseren.
-1. Van de **[!UICONTROL Scope]** list, selecteer **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]**, en **[!UICONTROL cc-share]**.
+1. Selecteer in de lijst **[!UICONTROL Organization]** de organisatie waarvoor u elementen wilt synchroniseren.
+1. Selecteer in de lijst **[!UICONTROL Scope]** de optie **[!UICONTROL dam-read]** , **[!UICONTROL dam-sync]** , **[!UICONTROL dam-write]** en **[!UICONTROL cc-share]** .
 1. Klik op **[!UICONTROL Create]**. Een bericht meldt dat de toepassing is gemaakt.
 
-   ![Melding van het feit dat de toepassing voor de integratie van AEM Assets met Creative Cloud is gemaakt](assets/chlimage_1-50.png)
+   ![ Bericht van succesvolle verwezenlijking van de toepassing om AEM Assets met Creative Cloud te integreren ](assets/chlimage_1-50.png)
 
-1. Kopieer de **[!UICONTROL Application ID]** die voor de nieuwe toepassing wordt gegenereerd.
+1. Kopieer de **[!UICONTROL Application ID]** die voor de nieuwe toepassing wordt geproduceerd.
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat u de **[!UICONTROL Application Secret]** in plaats van de **[!UICONTROL Application ID]**.
+   >Zorg ervoor dat u de **[!UICONTROL Application Secret]** niet per ongeluk kopieert in plaats van de **[!UICONTROL Application ID]** .
 
 ## Een nieuwe configuratie toevoegen aan Experience Cloud {#add-a-new-configuration}
 
-1. Klik op het AEM logo in de gebruikersinterface van uw lokale AEM Assets-exemplaar en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
+1. Klik op het AEM logo in de gebruikersinterface van uw lokale AEM Assets-instantie en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]** .
 
-1. Zoek de **[!UICONTROL Adobe Experience Cloud]** service. Als er geen configuraties bestaan, klikt u op **[!UICONTROL Configure Now]**. Als er configuraties zijn, klikt u op **[!UICONTROL Show Configurations]** en klik op `+` om een nieuwe configuratie toe te voegen.
+1. Zoek de service **[!UICONTROL Adobe Experience Cloud]** . Klik op **[!UICONTROL Configure Now]** als er geen configuraties bestaan. Als er configuraties bestaan, klikt u op **[!UICONTROL Show Configurations]** en klikt u op `+` om een nieuwe configuratie toe te voegen.
 
    >[!NOTE]
    >
    >Gebruik een Adobe ID-account met beheerdersrechten voor de organisatie.
 
-1. In de **[!UICONTROL Create Configuration]** een titel en naam voor de nieuwe configuratie op en klik op **[!UICONTROL Create]**.
+1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een titel en naam op voor de nieuwe configuratie en klik op **[!UICONTROL Create]** .
 
-   ![Geef een nieuwe configuratie de naam om AEM Assets en Creative Cloud te integreren](assets/aem-ec-integration-config1.png)
+   ![ Naam een nieuwe configuratie om AEM Assets en Creative Cloud te integreren ](assets/aem-ec-integration-config1.png)
 
-1. In de **[!UICONTROL Tenant URL]** -veld, geeft u de URL voor AEM Assets op. Als de URL in het verleden is gedefinieerd als `https://<tenant_id>.marketing.adobe.com`wijzigen in `https://<tenant_id>.experiencecloud.adobe.com`.
+1. Geef in het veld **[!UICONTROL Tenant URL]** de URL voor AEM Assets op. Als de URL in het verleden is gedefinieerd als `https://<tenant_id>.marketing.adobe.com` , wijzigt u deze in `https://<tenant_id>.experiencecloud.adobe.com` .
 
-   1. Navigeren naar **Gereedschappen > Cloud Services > Oudere Cloud Services**. Klik onder Adobe Experience Cloud op **Configuraties tonen**.
-   1. Selecteer de bestaande configuratie die u wilt bewerken. Configuratie bewerken en vervangen `marketing.adobe.com` tot `experiencecloud.adobe.com`.
+   1. Navigeer aan **Hulpmiddelen > Cloud Servicen > Verouderde Cloud Servicen**. Onder Adobe Experience Cloud, klik **tonen Configuraties**.
+   1. Selecteer de bestaande configuratie die u wilt bewerken. Bewerk de configuratie en vervang `marketing.adobe.com` door `experiencecloud.adobe.com` .
    1. Sla de configuratie op. Test de MAC-sync replicatiemiddelen.
 
-1. In de **[!UICONTROL Client ID]** veld, plak de toepassings-id die u aan het einde van de procedure hebt gekopieerd [een toepassing maken](#create-an-application).
+1. Op het **[!UICONTROL Client ID]** gebied, deeg toepassingsidentiteitskaart u aan het eind van de procedure [ kopieerde creeert een toepassing ](#create-an-application).
 
-   ![Geef de waarden voor de toepassings-id op die vereist zijn voor de integratie van AEM Assets en Creative Cloud](assets/cloudservices_tenant_info.png)
+   ![ verstrek de waarden van toepassingsidentiteitskaart die worden vereist om AEM Assets en Creative Cloud te integreren ](assets/cloudservices_tenant_info.png)
 
-1. Onder **[!UICONTROL Synchronization]** selecteren **[!UICONTROL Enabled]** om synchronisatie in te schakelen en klik **[!UICONTROL OK]**. Als u **uitgeschakeld** De synchronisatie werkt in één richting.
+1. Onder **[!UICONTROL Synchronization]** selecteert u **[!UICONTROL Enabled]** om synchronisatie in te schakelen en klikt u op **[!UICONTROL OK]** . Als u **gehandicapt** selecteert, werkt de synchronisatie in één enkele richting.
 
-1. Klik op de configuratiepagina op **[!UICONTROL Display Public Key]** om de openbare sleutel te tonen die voor uw instantie wordt geproduceerd. U kunt ook op **[!UICONTROL Download Public Key for OAuth Gateway]** om het bestand met de openbare sleutel te downloaden. Open vervolgens het bestand om de openbare sleutel weer te geven.
+1. Klik op de configuratiepagina op **[!UICONTROL Display Public Key]** om de openbare sleutel weer te geven die voor uw instantie is gegenereerd. U kunt ook op **[!UICONTROL Download Public Key for OAuth Gateway]** klikken om het bestand met de openbare sleutel te downloaden. Open vervolgens het bestand om de openbare sleutel weer te geven.
 
 ## Synchronisatie inschakelen {#enable-synchronization}
 
-1. De openbare sleutel weergeven met een van de volgende methoden die in de laatste stap van de procedure zijn vermeld [voeg een nieuwe configuratie aan Experience Cloud toe](#add-a-new-configuration). Klik op **[!UICONTROL Display Public Key]**.
+1. Toon de openbare sleutel gebruikend één van de volgende methodes die in de laatste stap van de procedure [ worden vermeld voeg een nieuwe configuratie aan Experience Cloud ](#add-a-new-configuration) toe. Klik op **[!UICONTROL Display Public Key]**.
 
-1. Kopieer de openbare sleutel en plak deze in de **[!UICONTROL Public Key]** gebied van configuratieinterface van de toepassing u in creeerde [een toepassing maken](#create-an-application).
+1. Kopieer de openbare sleutel en kleef het in het **[!UICONTROL Public Key]** gebied van configuratieinterface van de toepassing u in [ creeerde een toepassing ](#create-an-application).
 
-   ![chlimage_1-53](assets/chlimage_1-53.png)
+   ![ chlimage_1-53 ](assets/chlimage_1-53.png)
 
 1. Klik op **[!UICONTROL Update]**. Synchroniseer uw elementen nu met de AEM Assets-instantie.
 
 ## Synchronisatie testen {#test-the-synchronization}
 
-1. Klik op het AEM logo in de gebruikersinterface van uw lokale AEM Assets-exemplaar en navigeer naar **[!UICONTROL Tools]**> **[!UICONTROL Deployment]**> **[!UICONTROL Replication]**om van de replicatieprofielen de plaats te bepalen die voor synchronisatie worden gecreeerd.
-1. Ga naar de pagina **[!UICONTROL Replication]** en klik op **[!UICONTROL Agents on author]**.
+1. Klik het AEM embleem op het gebruikersinterface van uw lokale instantie van AEM Assets en navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > ** [!UICONTROL Replication] **om van de replicatieprofielen de plaats te bepalen die voor synchronisatie worden gecreeerd.
+1. Klik op de pagina **[!UICONTROL Replication]** op **[!UICONTROL Agents on author]** .
 1. Klik in de lijst met profielen op het standaard replicatieprofiel voor uw organisatie om dit te openen.
 1. Klik in het dialoogvenster op **[!UICONTROL Test Connection]**.
 
-   ![Verbinding testen en standaardreplicatieprofiel voor uw organisatie instellen](assets/chlimage_1-54.png)
+   ![ de verbinding van de Test en plaats het standaardreplicatieprofiel voor uw organisatie ](assets/chlimage_1-54.png)
 
 1. Wanneer de replicatierest voltooit, controleer een succesbericht aan het eind van de testresultaten.
 
-## Gebruikers toevoegen aan Experience Cloud {#add-users-to-experience-cloud}
+## Gebruikers aan Experience Cloud toevoegen {#add-users-to-experience-cloud}
 
-1. Meld u met beheerdersreferenties aan bij Experience Cloud.
-1. Ga van de rails naar **[!UICONTROL Administration]** en klik vervolgens op **[!UICONTROL Launch Enterprise Dashboard]**.
-1. Klik vanaf de spoorstaaf op **[!UICONTROL Users]** om de **[!UICONTROL User Management]** pagina.
-1. Klik op de werkbalk op **Toevoegen** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
+1. Meld u aan bij het Experience Cloud met beheerdersreferenties.
+1. Ga vanaf de rails naar **[!UICONTROL Administration]** en klik op **[!UICONTROL Launch Enterprise Dashboard]** .
+1. Klik in de track op **[!UICONTROL Users]** om de pagina **[!UICONTROL User Management]** te openen.
+1. Van de toolbar, klik **toevoegen** ![ aem_assets_add_icon ](assets/aem_assets_add_icon.png).
 1. Voeg een of meer gebruikers toe die u de mogelijkheid wilt bieden elementen te delen met Creative Cloud.
 
 <!-- TBD: Check.
@@ -130,16 +130,16 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 ## Wisselmiddelen tussen AEM Assets en Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Meld u aan bij AEM Assets.
-1. Maak een map in de middelenconsole en upload enkele bestanden naar deze map. Maak bijvoorbeeld een map **mc-demo** en uploadt u er een middel naar.
-1. Selecteer de map en klik op **Delen** ![assets_share](assets/do-not-localize/assets_share.png).
-1. Selecteer in het menu **[!UICONTROL Adobe Experience Cloud]** en klik op **[!UICONTROL Share]**. Een bericht meldt dat de map wordt gedeeld met Experience Cloud.
+1. Maak een map in de Assets-console en upload enkele bestanden naar de map. Bijvoorbeeld, creeer een omslag **mc-demo** en upload activa aan het.
+1. Selecteer de omslag en klik **Aandeel** ![ assets_share ](assets/do-not-localize/assets_share.png).
+1. Selecteer **[!UICONTROL Adobe Experience Cloud]** in het menu en klik op **[!UICONTROL Share]** . Een bericht meldt dat de map wordt gedeeld met Experience Cloud.
 
    >[!NOTE]
    >
-   >Een map Middelen van het type `sling:OrderedFolder`, wordt niet ondersteund in de context van delen in Adobe Experience Cloud. Als u een map wilt delen, moet u bij het maken ervan in AEM Assets de optie **[!UICONTROL Ordered]** optie.
+   >Het delen van een Assets-map van het type `sling:OrderedFolder` wordt niet ondersteund voor delen in Adobe Experience Cloud. Selecteer de optie **[!UICONTROL Ordered]** niet als u een map wilt delen wanneer u deze maakt in AEM Assets.
 
-1. Vernieuw de AEM Assets-gebruikersinterface. De map die u in de middelenconsole van uw lokale AEM Assets-instantie hebt gemaakt, wordt gekopieerd naar de gebruikersinterface van de Experience Cloud. Het middel dat u uploadt naar de omslag in AEM Assets verschijnt in het exemplaar van de omslag in Experience Cloud nadat het door de AEM server wordt verwerkt.
-1. U kunt ook elementen uploaden in de gekopieerde kopie van de map in Experience Cloud. Nadat het element is verwerkt, wordt het in de gedeelde map in AEM Assets weergegeven.
+1. Vernieuw de AEM Assets-gebruikersinterface. De map die u in de Assets-console van uw lokale AEM Assets-instantie hebt gemaakt, wordt gekopieerd naar de gebruikersinterface van het Experience Cloud. Het middel dat u naar de map in AEM Assets uploadt, wordt in de kopie van de map in het Experience Cloud weergegeven nadat deze door de AEM server is verwerkt.
+1. U kunt ook elementen uploaden in de gekopieerde kopie van de map in het Experience Cloud. Nadat het element is verwerkt, wordt het in de gedeelde map in AEM Assets weergegeven.
 
 <!-- Removing as per PM guidance via https://jira.corp.adobe.com/browse/CQDOC-16834?focusedCommentId=22881523&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-22881523.
 
@@ -170,4 +170,4 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 
 >[!MORELIKETHIS]
 >
->* [Aanbevolen werkwijzen voor het integreren van middelen en Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
+>* [ de integratie van Assets en van het Creative Cloud beste praktijken ](/help/assets/aem-cc-integration-best-practices.md)

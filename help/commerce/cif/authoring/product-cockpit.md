@@ -26,9 +26,9 @@ De gefaseerde productgegevens omvatten om het even welke mutatie in de toekomst 
 
 ## Configuratie {#configuration}
 
-Productcatalogi moeten in AEM worden geconfigureerd. Zie [configureren, winkel en catalogi](/help/commerce/cif/getting-started.md#catalog) voor meer informatie .
+Productcatalogi moeten in AEM worden geconfigureerd. Zie [ het vormen opslag en catalogi ](/help/commerce/cif/getting-started.md#catalog) voor meer informatie.
 
-Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [Aan de slag](/help/commerce/cif/getting-started.md) voor meer informatie .
+Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [ Begonnen het Worden ](/help/commerce/cif/getting-started.md) voor meer informatie.
 
 >[!NOTE]
 >
@@ -36,23 +36,23 @@ Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereis
 
 ## De productcockpit openen {#opening-product-cockpit}
 
-De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Commerce&#39; in AEM hoofdmenu. Het is ook mogelijk Omnsearch (search for Commerce) of Openen te gebruiken `https://<yourAEMInstance>/commerce.html`.
+De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Commerce&#39; in AEM hoofdmenu. Het is ook mogelijk Omnsearch (search for Commerce) of open `https://<yourAEMInstance>/commerce.html` te gebruiken.
 
-![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
+![ AEM menu ](/help/commerce/cif/assets/aem-menu.png)
 
 ## Bladeren door productcatalogi {#browsing-product-catalogs}
 
 De productcockpit is hiërarchisch geordend volgens de structuur van de productcatalogus. Het eerste niveau toont het cataloguswortelniveau van alle gevormde productcatalogi met inbegrip van meta-informatie van de handels achterkant.
 
-![Gevormde catalogi](/help/commerce/cif/assets/catalog-overview.png)
+![ Gevormde catalogi ](/help/commerce/cif/assets/catalog-overview.png)
 
 Als u op een categorie klikt, worden de onderliggende items van de categorie waarop u klikt, geladen.
 
-![Onderliggende categorieën](/help/commerce/cif/assets/catalog-category-children.png)
+![ kinderen van de Categorie ](/help/commerce/cif/assets/catalog-category-children.png)
 
 Als u op een product klikt, worden productvariaties geladen, indien beschikbaar.
 
-![Productvariaties](/help/commerce/cif/assets/catalog-product-variation.png)
+![ de variaties van het Product ](/help/commerce/cif/assets/catalog-product-variation.png)
 
 >[!NOTE]
 >
@@ -62,13 +62,13 @@ Als u op een product klikt, worden productvariaties geladen, indien beschikbaar.
 
 In het linkerfiltertabblad vindt u een zoekopdracht in volledige tekst over de volledige productcatalogus om snel producten te zoeken.
 
-![zoeken](/help/commerce/cif/assets/search-cockpit.png)
+![ onderzoek ](/help/commerce/cif/assets/search-cockpit.png)
 
 ## Bladeren door gefaseerde productcatalogus {#staged-product-catalogs}
 
 Standaard worden in de productcockpit de catalogusgegevens van het live product weergegeven. Met de &quot;STAGED CATALOG&quot; in het linkerfiltertabblad wordt de productcatalogus voor een geselecteerde datum geladen.
 
-![gefaseerde catalogus](/help/commerce/cif/assets/staged-cockpit.png)
+![ gefaseerde catalogus ](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Eigenschappen van productcatalogus {#catalog-properties}
 
@@ -78,10 +78,10 @@ Als u op het eigenschappenpictogram van een product of categorie klikt, wordt de
 
 De algemene en variantlusjes tonen vooraf bepaalde handelseigenschappen die uit de handelskorend achterste komen. Deze gegevens (inclusief varianten) is read-only gegevens in AEM aangezien het systeem van verslag de handelsafstand is. Het tabblad Variant wordt alleen weergegeven voor producten met varianten en bevat een lijst met alle varianten.
 
-![cataloguseigenschappen](/help/commerce/cif/assets/catalog-properties.png)
+![ cataloguseigenschappen ](/help/commerce/cif/assets/catalog-properties.png)
 
 ### Tabs Inhoud AEM {#content-tabs}
 
 Op deze tabbladen, gegroepeerd op AEM inhoudstypen (Experience Fragments, Content Fragments, Associated Assets), wordt AEM inhoud weergegeven die aan het commerceobject is gekoppeld. Met de handeling Details weergeven wordt een nieuw browsertabblad met de geselecteerde inhoud geopend.
 
-![inhoudseigenschappen](/help/commerce/cif/assets/content-properties.png)
+![ inhoudseigenschappen ](/help/commerce/cif/assets/content-properties.png)

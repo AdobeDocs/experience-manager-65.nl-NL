@@ -18,25 +18,25 @@ ht-degree: 0%
 
 # Programmatoegang tot het AEM JCR{#how-to-programmatically-access-the-aem-jcr}
 
-U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-opslagplaats, die deel uitmaakt van de Adobe Experience Cloud. Gebruik de JCR-API (Java™ Content Repository) om toegang te krijgen tot de CQ-opslagplaats. U kunt de Java™ JCR API gebruiken om (CRUD)-inhoud te maken, te vervangen, bij te werken en te verwijderen in de Adobe CQ-opslagplaats. Zie voor meer informatie over de Java™ JCR API [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-opslagplaats, die deel uitmaakt van de Adobe Experience Cloud. Gebruik de JCR-API (Java™ Content Repository) om toegang te krijgen tot de CQ-opslagplaats. U kunt de Java™ JCR API gebruiken om (CRUD)-inhoud te maken, te vervangen, bij te werken en te verwijderen in de Adobe CQ-opslagplaats. Voor meer informatie over Java™ JCR API, zie [ https://jackrabbit.apache.org/jcr/jcr-api.html ](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Dit ontwikkelingsartikel wijzigt de JCR van Adobe CQ van een externe toepassing Java™. U kunt het JCR daarentegen wijzigen vanuit een OSGi-bundel met behulp van de JCR API. Zie voor meer informatie [CQ-gegevens behouden in de Java™ Content Repository](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
+>Dit ontwikkelingsartikel wijzigt de JCR van Adobe CQ van een externe toepassing Java™. U kunt het JCR daarentegen wijzigen vanuit een OSGi-bundel met behulp van de JCR API. Voor details, zie [ Blijvend CQ- gegevens in de Bewaarplaats van de Inhoud Java™ ](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
->Als u de JCR API wilt gebruiken, voegt u de `jackrabbit-standalone-2.4.0.jar` naar het klassepad van uw Java™-toepassing. U kunt dit JAR-bestand verkrijgen via de Java™ JCR API-webpagina op [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Als u de JCR API wilt gebruiken, voegt u het `jackrabbit-standalone-2.4.0.jar` -bestand toe aan het klassepad van uw Java™-toepassing. U kunt dit JAR dossier van de Java™ JCR API Web-pagina in [ verkrijgen https://jackrabbit.apache.org/jcr/jcr-api.html ](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Ga voor meer informatie over het zoeken naar de Adobe CQ JCR met de JCR Query API [Adobe Experience Manager-gegevens opvragen met de JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>Leren hoe te om Adobe CQ JCR te vragen gebruikend de Vraag JCR API, zie [ het Vragen van de Gegevens van Adobe Experience Manager gebruikend JCR API ](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Een instantie Repository maken {#create-a-repository-instance}
 
-Hoewel er verschillende manieren zijn om verbinding te maken met een opslagplaats en een verbinding tot stand te brengen, gebruikt dit ontwikkelingsartikel een statische methode die tot de `org.apache.jackrabbit.commons.JcrUtils` klasse. De methode heet `getRepository`. Deze methode gebruikt een tekenreeksparameter die de URL van de Adobe CQ-server vertegenwoordigt. Bijvoorbeeld: `http://localhost:4503/crx/server`.
+Hoewel er verschillende manieren zijn om verbinding te maken met een gegevensopslagruimte en een verbinding tot stand te brengen, gebruikt dit ontwikkelingsartikel een statische methode die tot de klasse `org.apache.jackrabbit.commons.JcrUtils` behoort. De naam van de methode is `getRepository` . Deze methode gebruikt een tekenreeksparameter die de URL van de Adobe CQ-server vertegenwoordigt. Bijvoorbeeld `http://localhost:4503/crx/server` .
 
-De `getRepository` methode retourneert een `Repository` -instantie, zoals in het volgende codevoorbeeld wordt getoond.
+De methode `getRepository` retourneert een `Repository` -instantie, zoals in het volgende codevoorbeeld wordt getoond.
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
@@ -45,14 +45,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Een instantie Sessie maken {#create-a-session-instance}
 
-De `Repository` -instantie staat voor de CRX-opslagplaats. U gebruikt de `Repository` -instantie om een sessie met de gegevensopslagruimte tot stand te brengen. Als u een sessie wilt maken, roept u de opdracht `Repository` instantie `login` methode en een `javax.jcr.SimpleCredentials` object. De `login` methode retourneert een `javax.jcr.Session` -instantie.
+De `Repository` -instantie vertegenwoordigt de CRX-opslagplaats. U gebruikt de `Repository` -instantie om een sessie met de repository tot stand te brengen. Als u een sessie wilt maken, roept u de methode `login` van de `Repository` -instantie op en geeft u een `javax.jcr.SimpleCredentials` -object door. De methode `login` retourneert een `javax.jcr.Session` -instantie.
 
-U maakt een `SimpleCredentials` object door de constructor ervan te gebruiken en de volgende tekenreekswaarden door te geven:
+U maakt een `SimpleCredentials` -object door de constructor ervan te gebruiken en de volgende tekenreekswaarden door te geven:
 
 * de gebruikersnaam;
 * Het bijbehorende wachtwoord
 
-Roep bij het doorgeven van de tweede parameter het object String `toCharArray` methode. De volgende code laat zien hoe u de `login` methode die een `javax.jcr.Sessioninstance`.
+Roep de methode `toCharArray` van het object String aan wanneer u de tweede parameter doorgeeft. De volgende code laat zien hoe u de methode `login` aanroept die een `javax.jcr.Sessioninstance` retourneert.
 
 ```java
 //Create a Session instance
@@ -61,14 +61,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Een Node-instantie maken {#create-a-node-instance}
 
-Een `Session` instantie om een `javax.jcr.Node` -instantie. A `Node` Met instantie kunt u knooppuntbewerkingen uitvoeren. U kunt bijvoorbeeld een knooppunt maken. Als u een knooppunt wilt maken dat het hoofdknooppunt vertegenwoordigt, roept u het `Session` instantie `getRootNode` , zoals in de volgende coderegel wordt getoond.
+Gebruik een `Session` -instantie om een `javax.jcr.Node` -instantie te maken. Met een `Node` -instantie kunt u nodebewerkingen uitvoeren. U kunt bijvoorbeeld een knooppunt maken. Als u een knooppunt wilt maken dat het hoofdknooppunt vertegenwoordigt, roept u de methode `getRootNode` van de `Session` -instantie aan, zoals in de volgende coderegel wordt getoond.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Wanneer u een `Node` kunt u taken uitvoeren, zoals het maken van een ander knooppunt en het toevoegen van een waarde aan dat knooppunt. Met de volgende code worden bijvoorbeeld twee knooppunten gemaakt en een waarde toegevoegd aan het tweede knooppunt.
+Wanneer u een `Node` -instantie hebt gemaakt, kunt u taken uitvoeren zoals een ander knooppunt maken en er een waarde aan toevoegen. Met de volgende code worden bijvoorbeeld twee knooppunten gemaakt en een waarde toegevoegd aan het tweede knooppunt.
 
 ```java
 // Store content
@@ -78,7 +78,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Nodewaarden ophalen {#retrieve-node-values}
 
-Om een knoop en zijn waarde terug te winnen, haal `Node` instantie `getNode` methode en geef een koordwaarde door die volledig - gekwalificeerde weg aan de knoop vertegenwoordigt. Overweeg de knoopstructuur die in het vorige codevoorbeeld wordt gecreeerd. Als u het dagknooppunt wilt ophalen, geeft u adobe/day op, zoals in de volgende code wordt getoond:
+Als u een knooppunt en de bijbehorende waarde wilt ophalen, roept u de methode `getNode` van de instantie `Node` aan en geeft u een tekenreekswaarde door die het volledig gekwalificeerde pad naar het knooppunt vertegenwoordigt. Overweeg de knoopstructuur die in het vorige codevoorbeeld wordt gecreeerd. Als u het dagknooppunt wilt ophalen, geeft u adobe/day op, zoals in de volgende code wordt getoond:
 
 ```java
 // Retrieve content
@@ -89,7 +89,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Knooppunten maken in de Adobe CQ Repository {#create-nodes-in-the-adobe-cq-repository}
 
-Het volgende Java™-codevoorbeeld vertegenwoordigt een Java™-klasse die verbinding maakt met Adobe CQ, maakt een `Session` en voegt nieuwe knooppunten toe. Een knoop wordt toegewezen een gegevenswaarde en dan wordt de waarde van de knoop en zijn weg geschreven aan de console. Als u klaar bent met de sessie, moet u zich afmelden.
+Het volgende Java™-codevoorbeeld vertegenwoordigt een Java™-klasse die verbinding maakt met Adobe CQ, een `Session` -instantie maakt en nieuwe knooppunten toevoegt. Een knoop wordt toegewezen een gegevenswaarde en dan wordt de waarde van de knoop en zijn weg geschreven aan de console. Als u klaar bent met de sessie, moet u zich afmelden.
 
 ```java
 /*
@@ -141,6 +141,6 @@ try {
 }
 ```
 
-Nadat u het volledige codevoorbeeld in werking stelt en de knopen creeert, kunt u de nieuwe knopen in bekijken **[!UICONTROL CRXDE Lite]**, zoals in de volgende afbeelding wordt getoond.
+Nadat u het volledige codevoorbeeld in werking stelt en de knopen creeert, kunt u de nieuwe knopen in **[!UICONTROL CRXDE Lite]** bekijken, zoals aangetoond in de volgende afbeelding.
 
-![chlimage_1-68](assets/chlimage_1-68a.png)
+![ chlimage_1-68 ](assets/chlimage_1-68a.png)

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -37,13 +37,13 @@ Content Services kan de inhoud leveren als elementen, verpakte HTML (HTML/CSS/JS
 
 >[!CAUTION]
 >
->**Vereisten:**
+>**Eerste vereisten:**
 >
 >Alvorens u met de Diensten van de Inhoud begint, zorg ervoor dat u de vlag van de Diensten van de Inhoud toelaat. Als u het maken en beheren van modellen in uw app wilt inschakelen, schakelt u gegevensmodellen in de configuratiegrowser in.
 >
->Zie **[Inhoudsservices beheren](/help/mobile/developing-content-services.md)** en de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
+>Zie **[het Beheer van de Diensten van de Inhoud](/help/mobile/developing-content-services.md)** en [ Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie voor meer informatie.
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![ chlimage_1-143 ](assets/chlimage_1-143.png)
 
 Nadat u de vlag van de Diensten van de Inhoud, en toegelaten gegevensmodellen in Browser van de Configuratie hebt geplaatst, zie de middelen hieronder om met de Diensten van de Inhoud van AEM Mobile te beginnen. Word vertrouwd met de Concepten van de Diensten van de Inhoud zoals modelbeheer, entiteitbeheer gevolgd door inhoudlevering/het teruggeven voor de Diensten van de Inhoud van AEM Mobile.
 

@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Gebruik de pagina Uitgenodigde en lokale gebruikers om uw uitgenodigde en lokale gebruikers te beheren. Deze pagina wordt alleen weergegeven als aan de volgende voorwaarden is voldaan:
 
-* U bent een beheerder aan wie de rol Uitgenodigde van het Beheer van de documentveiligheid en Lokale Gebruikers en de rol van de Gebruiker van de beleidsconsole wordt toegewezen. (Zie [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
-* Uitgenodigde gebruikersregistratie is ingeschakeld. (Zie [Opgeroepen gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+* U bent een beheerder aan wie de rol Uitgenodigde van het Beheer van de documentveiligheid en Lokale Gebruikers en de rol van de Gebruiker van de beleidsconsole wordt toegewezen. (Zie [ Creërend en vormend rollen ](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+* Uitgenodigde gebruikersregistratie is ingeschakeld. (Zie [ Vormend uitgenodigde gebruikersregistratie ](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 De pagina Uitgenodigde en Lokale gebruikers bevat twee tabbladen waarmee u uitgenodigde en lokale gebruikersaccounts kunt zoeken, weergeven, bewerken, vergrendelen, ontgrendelen en verwijderen.
 
@@ -38,7 +38,7 @@ U kunt een of meer uitgenodigde gebruikersaccounts tegelijk toevoegen aan de doc
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik vervolgens op Nieuwe gebruiker uitnodigen.
 1. Typ het e-mailadres van de gebruikers die u wilt uitnodigen. Voer meerdere adressen op een regel in, gescheiden door een komma.
 
-   Het bericht dat u hebt gemaakt toen u de uitgenodigde gebruikersregistratie inschakelde, wordt naar de gebruikers verzonden. (Zie [Opgeroepen gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+   Het bericht dat u hebt gemaakt toen u de uitgenodigde gebruikersregistratie inschakelde, wordt naar de gebruikers verzonden. (Zie [ Vormend uitgenodigde gebruikersregistratie ](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Klik op OK.
 
@@ -63,7 +63,7 @@ Wanneer u een uitgenodigde gebruiker toevoegt, verzendt de documentveiligheid au
 
 U kunt wachtwoorden opnieuw instellen voor geactiveerde uitgenodigde gebruikers die zich bij documentveiligheid hebben geregistreerd maar hun wachtwoord vergeten. Wanneer u een wachtwoord opnieuw instelt, wordt een e-mail geproduceerd die een nieuw, tijdelijk wachtwoord voor de gebruiker bevat.
 
-Wanneer u het registratieproces voor uitgenodigde gebruikers hebt ingeschakeld, hebt u een e-mailbericht gemaakt dat wordt verzonden naar gebruikers die hen vragen hun wachtwoorden opnieuw in te stellen. (Zie [Opgeroepen gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+Wanneer u het registratieproces voor uitgenodigde gebruikers hebt ingeschakeld, hebt u een e-mailbericht gemaakt dat wordt verzonden naar gebruikers die hen vragen hun wachtwoorden opnieuw in te stellen. (Zie [ Vormend uitgenodigde gebruikersregistratie ](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik op het tabblad Lokale gebruikers.
 1. Selecteer de gewenste gebruiker in de gebruikerslijst.
@@ -75,13 +75,13 @@ U kunt lokale gebruikersaccounts uitschakelen om tijdelijk te voorkomen dat een 
 
 U kunt een lokale gebruikersaccount inschakelen die momenteel is uitgeschakeld. U kunt een uitgenodigde gebruikersrekening niet toelaten die als geregistreerd wordt vermeld. De geregistreerde status geeft aan dat de uitgenodigde gebruiker is geregistreerd, maar de account nog niet heeft geactiveerd via de koppeling in het activeringsbericht.
 
-**Gebruikersaccount beperken**
+**Beperk een gebruikersrekening**
 
 1. Klik in Beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik op het tabblad Lokale gebruikers.
 1. Selecteer de gewenste gebruiker in de gebruikerslijst.
 1. Klik op Account uitschakelen op de pagina Details lokale gebruiker.
 
-**Gebruikersaccounts opnieuw instellen**
+**herstelt een gebruikersrekening**
 
 1. Klik op Uitgenodigd en Lokale gebruikers en klik op het tabblad Lokale gebruikers.
 1. Selecteer de gewenste gebruiker in de gebruikerslijst.

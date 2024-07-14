@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Notities maken {#create-nodes}
 
-Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal bestanden te kopiëren dat nodig is van `/libs` in `/apps` en deze aan te passen `/apps`.
+Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal bestanden dat nodig is van `/libs` naar `/apps` te kopiëren en deze te wijzigen in `/apps` .
 
 >[!CAUTION]
 >
 >De inhoud van de map /libs wordt nooit bewerkt, omdat bij een nieuwe installatie of upgrade de map /libs kan worden verwijderd of vervangen terwijl de inhoud van de map /apps ongewijzigd blijft.
 
-Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) op een auteurinstantie, begin door een weg in de /apps omslag te creëren die aan de overlapte componenten in de /libs omslag identiek is.
+Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite.md) op een auteursinstantie, begin door een weg in de /apps omslag te creëren die aan de weg aan de beklede componenten in de /libs omslag identiek is.
 
 Het pad dat wordt gedupliceerd is:
 
@@ -32,55 +32,55 @@ Het pad dat wordt gedupliceerd is:
 
 Sommige knooppunten in het pad zijn mappen en andere componenten.
 
-1. Bladeren naar [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
+1. Blader naar [ http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 1. Maken `/apps/social` (als deze nog niet bestaat)
-   * Selecteren `/apps` node
+   * Knooppunt `/apps` selecteren
    * **[!UICONTROL Create > Folder]**
-      * Naam invoeren: `social`
-1. Selecteren `social` node
+      * Voer naam in: `social`
+1. Knooppunt `social` selecteren
    * **[!UICONTROL Create]** > **[!UICONTROL Folder]**
-      * Naam invoeren: `commons`
-1. Selecteren `commons` node
+      * Voer naam in: `commons`
+1. Knooppunt `commons` selecteren
    * **[!UICONTROL Create > Folder]**
-      * Naam invoeren: `components`
-1. Selecteren `components` node
+      * Voer naam in: `components`
+1. Knooppunt `components` selecteren
    * **[!UICONTROL Create > Folder]**.
-      * Naam invoeren: `hbs`
-1. Selecteren `hbs` node
+      * Voer naam in: `hbs`
+1. Knooppunt `hbs` selecteren
    * **[!UICONTROL Create]** > **[!UICONTROL Create Component]**
-      * Label invoeren: `comments`
-      * Titel invoeren: `Comments`
-      * Beschrijving invoeren: `List of comments without showing avatars`
+      * Voer label in: `comments`
+      * Voer titel in: `Comments`
+      * Voer beschrijving in: `List of comments without showing avatars`
       * Supertype: `social/commons/components/comments`
-      * Groep invoeren: `Communities`
-      * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
-1. Selecteren `comments` node
+      * Enter Group: `Communities`
+      * Klik op **[!UICONTROL Next]** tot **[!UICONTROL OK]**
+1. Knooppunt `comments` selecteren
 
    * **[!UICONTROL Create]** > **[!UICONTROL Create Component]**
 
-      * Label invoeren: `comment`
-      * Titel invoeren: `Comment`
-      * Beschrijving invoeren: `A comment instance without avatars`
+      * Voer label in: `comment`
+      * Voer titel in: `Comment`
+      * Voer beschrijving in: `A comment instance without avatars`
       * Supertype: `social/commons/components/comments/comment`
-      * Groep invoeren: `.hidden`
-      * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
+      * Enter Group: `.hidden`
+      * Klik op **[!UICONTROL Next]** tot **[!UICONTROL OK]**
    * Selecteren **[!UICONTROL Save All]**
 1. De standaardinstelling verwijderen `comments.jsp`
    * Knooppunt selecteren `/apps/social/commons/components/hbs/comments/comments.jsp`
    * Selecteren **[!UICONTROL Delete]**
 1. De standaardcomment.jsp verwijderen
-   * Selecteer knooppunt `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
+   * select node `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
    * Selecteren **[!UICONTROL Delete]**
    * Selecteren **[!UICONTROL Save All]**
 
 >[!NOTE]
 >
->Als u de overervingsketen wilt behouden, `Super Type` (eigenschap `sling:resourceSuperType`) van de bedekkingscomponenten op dezelfde waarde worden ingesteld als de `Super Type` van de onderdelen waarop de toepassing betrekking heeft, in dit geval:
+>Om de overervingsketen te behouden, worden de `Super Type` (eigenschap `sling:resourceSuperType` ) van de overlaycomponenten op dezelfde waarde ingesteld als de `Super Type` van de componenten die worden bedekt, in dit geval:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
 
-De eigen overlay `Type`(eigenschap `sling:resourceType`) moet een relatieve zelfverwijzing zijn, zodat de inhoud die niet wordt gevonden in /apps, wordt gezocht in /libs.
+De eigen `Type` eigenschap `sling:resourceType` (eigenschap) van de overlay moet een relatieve zelfverwijzing zijn, zodat de inhoud die niet wordt gevonden in /apps, vervolgens wordt gezocht in /libs.
 * Naam: `sling:resourceType`
 * Type: `String`
 * Waarde: `social/commons/components/hbs/comments`
@@ -92,4 +92,4 @@ De eigen overlay `Type`(eigenschap `sling:resourceType`) moet een relatieve zelf
 1. Groen selecteren `[+] Add`
    * Selecteren **[!UICONTROL Save All]**
 
-![create-nodes](assets/create-nodes.png)
+![ creeer-knopen ](assets/create-nodes.png)

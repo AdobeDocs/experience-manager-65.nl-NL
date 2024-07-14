@@ -22,9 +22,9 @@ In dit artikel wordt beschreven hoe u fouten in de AEM Forms-werkruimte kunt ops
 
 ## Kan het AEM Forms-werkruimtenpakket niet installeren {#unable-to-install-aem-forms-workspace-package}
 
-Nadat u de patch hebt geïnstalleerd, opent u de AEM Forms-werkruimte. Als u de fout Geen bron gevonden tegenkomt, opent u de CRX Package Manager en installeert u de `adobe-lc-workspace-pkg-<version>.zip` pakket.
+Nadat u de patch hebt geïnstalleerd, opent u de AEM Forms-werkruimte. Als u de fout Geen resource gevonden tegenkomt, opent u CRX Package Manager en installeert u het `adobe-lc-workspace-pkg-<version>.zip` -pakket opnieuw.
 
-Als er tijdens de installatie van het pakket een fout optreedt `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`Voer de volgende stappen uit:
+Voer tijdens het installeren van het pakket de volgende stappen uit als er een fout optreedt `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` :
 
 1. Meld u aan bij CRXDE Lite. De standaard-URL is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Verwijder het volgende knooppunt:
@@ -32,7 +32,7 @@ Als er tijdens de installatie van het pakket een fout optreedt `javax.jcr.nodety
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Ga naar Pakketbeheer. De standaard-URL is `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. Zoek en installeer de `adobe-lc-workspace-pkg-[version].zip` pakket.
+1. Zoek en installeer het `adobe-lc-workspace-pkg-[version].zip` -pakket.
 1. Start de toepassingsserver opnieuw.
 
 >[!NOTE]
@@ -45,9 +45,9 @@ U kunt logboeken op diverse niveaus produceren om het optimale oplossen van prob
 
 In de AEM Forms-werkruimte:
 
-* Om de logboekinformatie over een specifiek componentendossier te krijgen, voeg toe `/log/<ComponentFile>/<LogLevel>` in URL, en druk `Enter`. Alle logboekinformatie voor het componentendossier op het gespecificeerde logboekniveau wordt gedrukt op de console.
+* Voeg `/log/<ComponentFile>/<LogLevel>` toe aan de URL en druk op `Enter` om de logboekgegevens over een specifiek componentbestand op te halen. Alle logboekinformatie voor het componentendossier op het gespecificeerde logboekniveau wordt gedrukt op de console.
 
-* Om logboekinformatie van alle componentendossiers te krijgen, voeg toe `/log/all/trace` in URL, en druk `Enter`.
+* Als u logboekgegevens van alle deelbestanden wilt opvragen, voegt u `/log/all/trace` toe aan de URL en drukt u op `Enter` .
 
 * Logbestandsindeling: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -158,11 +158,11 @@ In de AEM Forms-werkruimte:
 
 Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
-* **Foutopsporing in IE**: Ga voor foutopsporing in de AEM Forms-werkruimte in IE naar: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **het Zuiveren in IE**: Om de werkruimte van AEM Forms in IE te zuiveren, zie: [ https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie ](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets Ctrl+Shift+I. Zie voor meer informatie: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **het Zuiveren in Chrome**: Om debugger in Chrome te openen, gebruik de kortere weg: Ctrl+Shift+I. Voor meer informatie, zie: [ https://developer.chrome.com/docs/extensions/mv3/tut_debugging/ ](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
-* **Foutopsporing in Firefox**: Er zijn verschillende invoegtoepassingen beschikbaar voor foutopsporing in scripts en stijlen in Firefox. Firebug is bijvoorbeeld een van deze hulpprogramma&#39;s voor foutopsporing ([https://getfirebug.com](https://getfirebug.com)).
+* **het Zuiveren in Firefox**: Verscheidene toe:voegen-ons zijn beschikbaar om manuscripten en stijlen in Firefox te zuiveren. Bijvoorbeeld, is het Vuurwerk één dergelijk het zuiveren nut ([ https://getfirebug.com ](https://getfirebug.com)).
 
 ## Veelgestelde vragen {#faqs}
 
@@ -170,9 +170,9 @@ Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
    1. Installeer de Adobe® Reader® plug-in.
    1. Open chrome://plugins in Chrome om beschikbare plug-ins weer te geven.
-   1. Schakel de insteekmodule Chrome PDF Viewer uit en schakel de insteekmodule Adobe Reader in.
+   1. Schakel de insteekmodule Chrome PDF Viewer uit en schakel de Adobe Reader-insteekmodule in.
 
-1. SWF-formulier of -hulplijn wordt niet weergegeven in Google Chrome.
+1. SWF formulier of Guide wordt niet weergegeven in Google Chrome.
 
    1. Open chrome://plugins in Chrome om beschikbare plug-ins weer te geven.
    1. Zie details voor Adobe Flash® Player plug-in.

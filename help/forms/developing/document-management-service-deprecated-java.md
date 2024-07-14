@@ -1,6 +1,6 @@
 ---
-title: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
-description: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
+title: Documentbeheerservice (afgekeurd)Java API Snel starten (SOAP)
+description: Documentbeheerservice (afgekeurd)Java API Snel starten (SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -22,7 +22,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 
 >[!NOTE]
 >
->Vanaf 5 augustus 2011 migreert Adobe Content Services ES-klanten naar de Adobe Digital Enterprise Platform Experience Services. Het product roadmap voor klanten die de Diensten van de Inhoud gebruiken is naar de nieuwe Diensten van de Ervaring van ADEP - Kern over te gaan, die een inheemse Bewaarplaats van de Inhoud omvat die op de moderne, modulaire CRX architectuur wordt voortgebouwd, die tijdens de aanschaf van de Software van de Adobe van Dag wordt verworven.
+>Vanaf 5 augustus 2011 migreert Adobe Content Services ES-klanten naar de Adobe Digital Enterprise Platform Experience Services. Het product roadmap voor klanten die de Diensten van de Inhoud gebruiken is naar de nieuwe Diensten van de Ervaring van ADEP - Kern over te gaan, die een inheemse Bewaarplaats van de Inhoud omvat die op de moderne, modulaire architectuur van CRX wordt voortgebouwd, die tijdens de aanschaf van de Software van de Adobe van Dag wordt verworven.
 
 [Snel starten (SOAP modus): Sites voor inhoudsservices maken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -44,11 +44,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->De snelle aanvang in Programmering met AEM vormen is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang in Programmering met AEM vormen is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): Sites voor inhoudsservices maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *Testmap* in Company Home. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
+Het volgende codevoorbeeld van Java leidt tot een nieuwe ruimte genoemd *Folder van de Test* in het Huis van het Bedrijf. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
 
 ```java
  /*
@@ -244,7 +244,7 @@ Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/
 
 ## Snel starten (SOAP modus): Inhoud toevoegen aan Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* aan een omslag genoemd /Company Huis/de Folder van de Test. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
+Het volgende de codevoorbeeld van Java voegt een PDF dossier genoemd *MortgaugeForm.pdf* aan een omslag genoemd /Company Huis/de Folder van de Test toe. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
 
 ```java
  /*
@@ -367,7 +367,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 ## Snel starten (SOAP modus): inhoud ophalen van Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *BijgewerkteMortgaugeForm.pdf*.
+Het volgende de codevoorbeeld van Java wint een PDF dossier genoemd *MortgaugeForm.pdf* van /Company Huis terug. Het dossier van PDF wordt bewaard aan het lokale dossiersysteem en wordt genoemd *UpdatedMortgaugeForm.pdf*.
 
 ```java
  /*
@@ -473,7 +473,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 ## Snel starten (SOAP modus): Inhoud van inhoudsservices verplaatsen met de Java API (afgekeurd) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Huis/de Folder van de Test aan /Company Huis. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
+Het volgende codevoorbeeld van Java beweegt een PDF dossier genoemd *MortgaugeForm.pdf* van /Company Huis/de Folder van de Test aan /Company Huis. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
 
 ```java
  /*
@@ -797,7 +797,7 @@ De volgende code van Java zoekt /Company Huis naar een document dat de tekst Mor
 
 ## Snel starten (SOAP modus): Machtigingen voor inhoudsservices instellen met de Java API (afgekeurd) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebruiker met de naam tony blue. Het opgegeven domein is het standaarddomein. De toestemming van de consument wordt gespecificeerd en de knoop is `/Company Home/Test Directory`.
+In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebruiker met de naam tony blue. Het opgegeven domein is het standaarddomein. De machtiging Consumer wordt opgegeven en het knooppunt is `/Company Home/Test Directory` .
 
 ```java
  /*

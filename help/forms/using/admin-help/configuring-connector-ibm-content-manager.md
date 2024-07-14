@@ -1,6 +1,6 @@
 ---
 title: Connector configureren voor IBM&reg; inhoudsbeheer
-description: Configureer de Connector voor IBM&reg; Inhoudsbeheer om communicatie tussen AEM formulieren en IBM&reg; Inhoudsbeheer in te schakelen.
+description: Configureer de Connector voor IBM&reg; Content Manager om communicatie tussen AEM formulieren en IBM&reg; Content Manager in te schakelen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Connector configureren voor IBM® Content Manager{#configuring-connector-for-ibm-content-manager}
 
-Connector voor IBM® Content Manager zorgt voor communicatie tussen AEM formulieren en IBM® Content Manager. Zie &quot;Connectors for ECM&quot; in [Servicereferentie](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector voor IBM® Content Manager zorgt voor communicatie tussen AEM formulieren en IBM® Content Manager. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## De verbinding met IBM® Content Manager configureren {#configure-the-ibm-content-manager-connection}
 

@@ -25,19 +25,19 @@ Dit document is bedoeld om klanten te helpen een keuze te maken over welke inter
 
 Belangenbeding:
 
-* **UI (of standaardinterface)**
+* **UI (of standaard UI)**
 Moderne gebruikersinterface die in 5.6.0 als technologievoorproef werd geïntroduceerd en in verdere versies werd uitgebreid. De interface is gebaseerd op de ervaring van één gebruiker voor de Adobe Experience Cloud, die voorheen wel een interface met aanraakbediening of een interface met aanraakbediening werd genoemd.
 
-* **Klassieke interface**
+* **Klassieke UI**
 Gebruikersinterface gebaseerd op ExtJS-technologie die in 2008 werd geïntroduceerd met CQ 5.1.
 
-* **Sitebeheerder**
+* **Admin van de Plaats**
 Mogelijkheden om de sitehiërarchie te beheren (verplaatsen, activeren, beheerde verwijzingen) en nieuwe pagina&#39;s te maken.
 
-* **Pagina&#39;s ontwerpen**
+* **pagina Authoring**
 Mogelijkheid om de inhoud van een pagina toe te voegen/te bewerken.
 
-* **DAM/Assets-beheerder**
+* **DAM/Assets Admin**
 Mogelijkheid om digitale elementen te beheren (zoals afbeeldingen, video, documenten, downloads).
 
 * **ContextHub**
@@ -68,66 +68,66 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
    <td>Gebruik de standaardinterface.</td>
   </tr>
   <tr>
-   <td><p>Heeft AEM een tijdje gebruikt.</p> <p>Gebruikt de productUI uit-van-de-doos en ontwikkelde douanecomponenten voor de plaatsen.<br /> </p> </td>
+   <td><p>Heeft AEM een tijdje gebruikt.</p> <p>Heeft product UI uit-van-de-doos gebruikt en douanecomponenten voor de plaatsen ontwikkeld.<br /> </p> </td>
    <td>
     <ol>
      <li>Bijwerken naar 6.5</li>
-     <li>De standaardinterface gebruiken voor sitebeheer, elementen.. enz.<br /> </li>
-     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</li>
+     <li>De standaardinterface gebruiken voor sitebeheer, elementen.. etc.<br /> </li>
+     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui"> Selecterend Uw UI </a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de <a href="/help/sites-developing/modernization-tools.md">AEM moderniseringsinstrumenten</a> om de componenten bij te werken.</li>
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. De Adobe adviseert gebruikend <a href="/help/sites-developing/modernization-tools.md"> AEM ModerniseringsHulpmiddelen </a> om de componenten bij te werken.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Heeft een site gemaakt die de ClientContext met integratie gebruikt.<br /> </td>
+   <td>Heeft een plaats gebouwd die de ClientContext met integratie gebruikt.<br /> </td>
    <td>
     <ol>
      <li>Bijwerken naar 6.5</li>
      <li>De standaardinterface gebruiken voor sitebeheer, elementen.. enz.</li>
-     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</li>
+     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui"> Selecterend Uw UI </a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de <a href="/help/sites-developing/modernization-tools.md">AEM moderniseringsinstrumenten</a> om de componenten bij te werken.</li>
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. De Adobe adviseert gebruikend <a href="/help/sites-developing/modernization-tools.md"> AEM ModerniseringsHulpmiddelen </a> om de componenten bij te werken.</li>
      <li>Vorm ContextHub (de vervanging voor de ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. ContextHub heeft een verenigbaarheidswijze die het laden van de opslag van de douaneClientContext toestaat.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><p>Heeft CQ/AEM jarenlang gebruikt.</p> <p>Bevat een uitgebreide interface voor het product (bijvoorbeeld Sitebeheer) en ingebouwde componenten met uitgebreide dialoogvensters voor bewerken.</p> </td>
-   <td><p>Update aan 6.5 en vorm klassieke UI als gebrek voor paginascreatie voor alle gebruikers. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</p> <p>Start vervolgens een project om de deeldialoogvensters aan te passen en te optimaliseren in de indeling Coral 3. Zie <a href="#resources-to-help">Hulpbronnen</a>.<br /> </p> </td>
+   <td><p>Update aan 6.5 en vorm klassieke UI als gebrek voor paginascreatie voor alle gebruikers. Zie <a href="#selecting-your-ui"> Selecterend Uw UI </a>.</p> <p>Start vervolgens een project om de deeldialoogvensters aan te passen en te optimaliseren in de indeling Coral 3. Zie <a href="#resources-to-help"> Middelen aan Hulp </a>.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Veelgestelde vragen {#faq}
 
-Zie het artikel in de Knowledge Base. [Veelgestelde vragen over Touch UI-authoring](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), voor meer informatie; inclusief informatie over het afbraakschema voor de klassieke interface.
+Zie het artikel van de Kennisbank, [ Aanraakinterface Authoring FAQ ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), voor details; met inbegrip van om het even welke informatie over het afbraakprogramma voor klassieke UI.
 
 ### Gebruikersinterface selecteren {#selecting-your-ui}
 
-Zie [Gebruikersinterface selecteren](/help/sites-authoring/select-ui.md) voor informatie over het configureren van uw systeem naar wens.
+Zie [ Selecterend Uw UI ](/help/sites-authoring/select-ui.md) voor informatie over het vormen van uw systeem zoals vereist.
 
 ### UI-status voor aanraking {#touch-enabled-ui-status}
 
-Zie voor meer informatie over de verbeteringen aan de interface met aanraakbediening in AEM 6.5 [Nieuwe functies](/help/release-notes/release-notes.md#what-s-new) in de opmerkingen bij de release.
+Voor details van de verhogingen die aan aanraking-toegelaten UI in AEM 6.5 worden aangebracht zien [ wat ](/help/release-notes/release-notes.md#what-s-new) in de Nota&#39;s van de Versie Nieuw is.
 
-Een volledig overzicht van de [Status van TouchUI-functie](/help/release-notes/touch-ui-features-status.md) page
+Een volledig overzicht ziet de ](/help/release-notes/touch-ui-features-status.md) pagina van de Status van de Eigenschap van 0} Aanraakinterface[
 
 ### Hulpbronnen {#resources-to-help}
 
 Voor achtergrondinformatie over basisverwerking:
 
-* [Pagina&#39;s ontwerpen](/help/sites-authoring/page-authoring.md).
+* [ Authoring Pagina&#39;s ](/help/sites-authoring/page-authoring.md).
 
 Voor gedetailleerde ontwikkelingsinformatie:
 
-* [Interface-architectuur met aanraakbediening](/help/sites-developing/touch-ui-concepts.md).
-* Gebruik de [AEM moderniseringsinstrumenten](/help/sites-developing/modernization-tools.md) Hiermee converteert u dialoogvensters voor bewerken van componenten van de klassieke gebruikersinterface naar de interface met aanraakbediening.
+* [ Aanraakgevoelige architectuur UI ](/help/sites-developing/touch-ui-concepts.md).
+* Gebruik de [ AEM Hulpmiddelen van de Modernisering ](/help/sites-developing/modernization-tools.md) om component uit te zetten geeft dialogen van klassieke UI in aanraking-toegelaten UI uit.
 
-* [Structuur van de interface met aanraakbediening](/help/sites-developing/touch-ui-structure.md).
+* [ Structuur van aanraking-toegelaten UI ](/help/sites-developing/touch-ui-structure.md).
 
-* [De consoles aanpassen in de interface met aanraakbediening](/help/sites-developing/customizing-consoles-touch.md) (bevat voorbeeldcode).
+* [ die de consoles in aanraking-toegelaten UI aanpassen ](/help/sites-developing/customizing-consoles-touch.md) (omvat steekproefcode).
 
-* [Het ontwerpen van pagina&#39;s aanpassen in de interface met aanraakbediening](/help/sites-developing/customizing-page-authoring-touch.md) (bevat voorbeeldcode).
+* [ het Aanpassen van pagina authoring in touch-enabled UI ](/help/sites-developing/customizing-page-authoring-touch.md) (omvat steekproefcode).
 
-* [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+* {de documentatie van 0} granite UI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).[

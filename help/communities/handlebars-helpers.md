@@ -16,21 +16,21 @@ ht-degree: 1%
 
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
 
-| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële elementen ⇐](essentials.md)** | **[Server-kant Aanpassing](server-customize.md)** |
 |---|---|
-|   | **[Aanpassing aan client-side bezig](client-customize.md)** |
+|   | **[Cliënt-kant Aanpassing](client-customize.md)** |
 
 Handlebars Helpers (helpers) zijn methodes callable van de manuscripten van Handlebars om het werken met componenten te vergemakkelijken SCF.
 
 De implementatie omvat een client-side en een server-side definitie. Ontwikkelaars kunnen ook aangepaste hulplijnen maken.
 
-De aangepaste SCF-hulplijnen die bij AEM Communities worden geleverd, zijn gedefinieerd in het dialoogvenster [clientbibliotheek](../../help/sites-developing/clientlibs.md):
+De douaneSCF helpers die met AEM Communities worden geleverd worden bepaald in de [ cliëntbibliotheek ](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
->Zorg ervoor dat u de [nieuwste edities pakket met functies](deploy-communities.md#latestfeaturepack).
+>Ben zeker om het [ recentste de eigenschappak van Gemeenschappen ](deploy-communities.md#latestfeaturepack) te installeren.
 
 ## Afkorting {#abbreviate}
 
@@ -44,15 +44,15 @@ Als safeString is ingesteld op true, is de geretourneerde tekenreeks een SafeStr
 
 ### Parameters {#parameters}
 
-* **context**: String
+* **context**: Koord
 
   (Optioneel) Standaard is de lege tekenreeks
 
-* **maxLength**: Number
+* **maxLength**: Aantal
 
   (Optioneel) Standaard is de lengte van de context.
 
-* **maxWords**: Number
+* **maxWords**: Aantal
 
   (Optioneel) De standaardwaarde is het aantal woorden in de bijgesneden tekenreeks.
 
@@ -92,19 +92,19 @@ Een hulpmiddel om twee reeksen onder een div toe te voegen, één voor de volled
 
 ### Parameters {#parameters-1}
 
-* **context**: String
+* **context**: Koord
 
   (Optioneel) Standaard is de lege tekenreeks.
 
-* **numChars**: Number
+* **numChars**: Aantal
 
   (Optioneel) Het aantal tekens dat moet worden weergegeven wanneer geen volledige tekst wordt weergegeven. De standaardwaarde is 100.
 
-* **moreText**: String
+* **moreText**: Koord
 
   (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er meer tekst moet worden weergegeven. Standaard is &quot;meer&quot;.
 
-* **ellipsesText**: String
+* **ellipsesText**: Koord
 
   (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er verborgen tekst is. Standaard is &quot;...&quot;.
 
@@ -132,13 +132,13 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
 ### Parameters {#parameters-2}
 
-* **context**: Number
+* **context**: Aantal
 
   (Optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
 
-* **format**: String
+* **formaat**: Koord
 
-  (Optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; en wordt het resultaat weergegeven als &quot;`2015-03-18T18:17:13-07:00`&quot;
+  (Optioneel) De datumnotatie die moet worden toegepast. De standaardwaarde is &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; en het resultaat verschijnt als &quot;`2015-03-18T18:17:13-07:00`&quot;
 
 ### Voorbeelden {#examples-1}
 
@@ -160,11 +160,11 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 ### Parameters {#parameters-3}
 
-* **lvalue**: String
+* **lvalue**: Koord
 
   De waarde die links moet worden vergeleken.
 
-* **tegenwaarde**: String
+* **waarde**: Koord
 
   De rechterwaarde die moet worden vergeleken.
 
@@ -180,17 +180,17 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Een blokhelper die de huidige waarde van test [WCM-modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) op een door een tekenreeks gescheiden lijst met modi.
+Een blokhelper die de huidige waarde van [ WCM wijze ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) tegen een koord gescheiden lijst van wijzen test.
 
 ### Parameters {#parameters-4}
 
-* **context**: String
+* **context**: Koord
 
   (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **mode**: String
+* **wijze**: Koord
 
-  (Optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) om te testen of deze is ingesteld.
+  (Facultatief) een komma-gescheiden lijst van [ wijzen WCM ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) om als reeks te testen.
 
 ### Voorbeeld {#example-2}
 
@@ -206,19 +206,19 @@ Een blokhelper die de huidige waarde van test [WCM-modus](https://developer.adob
 
 Deze hulp treedt helper &quot;i18n&quot;van Handlebars met voeten.
 
-Zie ook [Tekenreeksen internationaliseren in JavaScript-code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Zie ook [ Internationaliserend Koorden in de Code van JavaScript ](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parameters {#parameters-5}
 
-* **context**: String
+* **context**: Koord
 
   (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **default**: String
+* **gebrek**: Koord
 
   (Optioneel) De standaardtekenreeks die moet worden getransleerd. Vereist als er geen context is opgegeven.
 
-* **opmerking**: String
+* **commentaar**: Koord
 
   (Optioneel) Een vertaalhint
 
@@ -233,31 +233,31 @@ Zie ook [Tekenreeksen internationaliseren in JavaScript-code](../../help/sites-d
 
 Een hulpmiddel om een component als niet bestaand middel in een malplaatje te omvatten.
 
-Deze methode laat het middel programmatically worden aangepast gemakkelijker dan voor een middel dat als knoop JCR wordt toegevoegd mogelijk is. Zie [Een onderdeel van een Gemeenschappen toevoegen of opnemen](scf.md#add-or-include-a-communities-component).
+Deze methode laat het middel programmatically worden aangepast gemakkelijker dan voor een middel dat als knoop JCR wordt toegevoegd mogelijk is. Zie [ toevoegen of omvatten een Component van Gemeenschappen ](scf.md#add-or-include-a-communities-component).
 
 Er zijn slechts enkele onderdelen van de Gemeenschappen beschikbaar die u wilt opnemen. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit die lijkt op [cq:include](../../help/sites-developing/taglib.md) voor JSP-scripts.
+Deze helper, aangewezen slechts op server-kant, verstrekt functionaliteit gelijkend op [ cq:omvat ](../../help/sites-developing/taglib.md) voor manuscripten JSP.
 
 ### Parameters {#parameters-6}
 
-* **context**: String of object
+* **context**: Koord of voorwerp
 
   (Optioneel, tenzij een relatief pad wordt opgegeven)
 
-  Gebruiken `this` om de huidige context door te geven.
+  Gebruik `this` om de huidige context door te geven.
 
-  Gebruiken `this.id` om de bron te verkrijgen op `id` voor het renderen van het aangevraagde resourceType.
+  Gebruik `this.id` om de bron op `id` te verkrijgen voor het renderen van het aangevraagde resourceType.
 
-* **resourceType**: String
+* **resourceType**: Koord
 
   (Facultatief) middeltype gebreken aan middeltype van context.
 
-* **template**: String
+* **malplaatje**: Koord
 
   Pad naar componentscript.
 
-* **pad**: String
+* **weg**: Koord
 
   (Vereist) Het pad naar de bron. Als het pad relatief is, moet een context worden opgegeven, anders wordt de lege tekenreeks geretourneerd.
 
@@ -271,29 +271,29 @@ Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit di
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Bevat een nieuwe component comments op `this.id` + /comments.
+Bevat een nieuwe commentaarcomponent op `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
 Een helper die een AEM HTML- cliëntbibliotheek omvat, die een js, een css of een themabibliotheek kan zijn. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in het Handlebars-script.
 
-Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit die lijkt op [ui:includeClientLib](../../help/sites-developing/taglib.md) voor JSP-scripts.
+Deze helper, aangewezen slechts op server-kant, verstrekt functionaliteit gelijkend op [ ui:includeClientLib ](../../help/sites-developing/taglib.md) voor manuscripten JSP.
 
 ### Parameters {#parameters-7}
 
-* **categorieën**: String
+* **categorieën**: Koord
 
   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Alle JavaScript- en CSS-bibliotheken opnemen voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-* **thema**: String
+* **thema**: Koord
 
   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Alle themabibliotheken (zowel CSS als JS) opnemen voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-* **js**: String
+* **js**: Koord
 
-  (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Bevat alle JavaScript-bibliotheken voor de opgegeven categorieën.
+  (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Hiermee worden alle JavaScript-bibliotheken voor de opgegeven categorieën opgenomen.
 
-* **css**: String
+* **css**: Koord
 
   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Bevat alle CSS-bibliotheken voor de opgegeven categorieën.
 
@@ -348,11 +348,11 @@ Bijvoorbeeld:
 
 ### Parameters {#parameters-8}
 
-* **context**: Number
+* **context**: Aantal
 
   Een tijd in het verleden om te vergelijken met &quot;nu&quot;. Tijd wordt uitgedrukt als een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk).
 
-* **daysCutoff**: Number
+* **daysCutoff**: Aantal
 
   Het aantal dagen geleden voordat wordt overgeschakeld op een werkelijke datum. De standaardwaarde is 60.
 
@@ -380,7 +380,7 @@ OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het sc
 
 ### Parameters {#parameters-9}
 
-* **context**: object
+* **context**: voorwerp
 
   De te coderen HTML.
 
@@ -398,7 +398,7 @@ OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het sc
 
 ### Parameters {#parameters-10}
 
-* **context**: Object
+* **context**: Voorwerp
 
   De te coderen HTML.
 
@@ -410,13 +410,13 @@ OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het sc
 
 ## Xss-jsString {#xss-jsstring}
 
-Een hulpmiddel dat een bronkoord codeert voor het schrijven aan JavaScript koordinhoud helpen tegen XSS beschermen.
+Een hulpmiddel dat een bronkoord codeert voor het schrijven aan de koordinhoud van JavaScript helpen tegen XSS beschermen.
 
-OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het schrijven naar willekeurig JavaScript.
+OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het schrijven naar willekeurige JavaScript.
 
 ### Parameters {#parameters-11}
 
-* **context**: Object
+* **context**: Voorwerp
 
   De te coderen HTML.
 
@@ -434,7 +434,7 @@ OPMERKING: deze hulpfunctie kan een lege tekenreeks retourneren.
 
 ### Parameters {#parameters-12}
 
-* **context**: Object
+* **context**: Voorwerp
 
   De URL die moet worden ontsmet.
 
@@ -446,15 +446,15 @@ OPMERKING: deze hulpfunctie kan een lege tekenreeks retourneren.
 
 ## Handlebars.js Basic - Overzicht {#handlebars-js-basic-overview}
 
-* Een hulpvraag van Handlebars is eenvoudig herkenningsteken ( *name* van de helper), gevolgd door nul of meer door spaties gescheiden parameters.
+* Een hulpvraag van Handlebars is een eenvoudig herkenningsteken (de *naam* van helper), die door nul of meer ruimte-gescheiden parameters wordt gevolgd.
 * Parameters kunnen een eenvoudig String-, Number-, Boolean- of JSON-object zijn, en een optionele reeks sleutelwaardeparen (hash-argumenten) als de laatste parameters.
 * De sleutels in hakargumenten moeten eenvoudige herkenningstekens zijn.
 * De waarden in hashargumenten zijn Handlebars-expressies: eenvoudige id&#39;s, paden of Tekenreeksen.
-* De huidige context, `this`, is altijd beschikbaar voor de helpers van Handlebars.
+* De huidige context, `this`, is altijd beschikbaar aan helpers Handlebars.
 * De context kan een String, Number, boolean of een JSON-gegevensobject zijn.
-* Het is mogelijk een object door te geven dat in de huidige context als de context is genest, zoals `this.url` of `this.id` (zie de volgende voorbeelden van eenvoudige en blokhulplijnen).
+* Het is mogelijk om een object door te geven dat is genest binnen de huidige context als de context, zoals `this.url` of `this.id` (zie de volgende voorbeelden van eenvoudige en blokhulplijnen).
 
-* De helpers van het blok zijn functies die van overal in het malplaatje kunnen worden geroepen. Ze kunnen een blok van de sjabloon telkens nul of meer keer aanroepen met een andere context. Ze bevatten een context tussen `{{#*name*}}` en `{{/*name*}}`.
+* De helpers van het blok zijn functies die van overal in het malplaatje kunnen worden geroepen. Ze kunnen een blok van de sjabloon telkens nul of meer keer aanroepen met een andere context. Ze bevatten een context tussen `{{#*name*}}` en `{{/*name*}}` .
 
 * Handlebars verstrekken een definitieve parameter aan helpers genoemd &quot;opties&quot;. Het speciale object &#39;options&#39; bevat
 
@@ -488,7 +488,7 @@ template(context);
 Zou renderen:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Publiceren!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Een voorbeeld van een blokhelper van documentatie Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -523,7 +523,7 @@ Aangepaste helpers moeten aan de serverzijde en client-kant worden geïmplemente
 
 ### Aangepaste hulp op de server {#server-side-custom-helpers}
 
-Om een douaneSCF helper op de server uit te voeren en te registreren, voer eenvoudig de interface Java™ uit [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), maak er een [OSGi-service](../../help/sites-developing/the-basics.md#osgi) en installeer het als deel van een bundel OSGi.
+Om een hulp van douaneSCF op server-kant uit te voeren en te registreren, voer eenvoudig de interface Java™ [ TemplateHelper ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html) uit, maak het een [ OSGi Dienst ](../../help/sites-developing/the-basics.md#osgi) en installeer het als deel van een bundel OSGi.
 
 Bijvoorbeeld:
 
@@ -571,7 +571,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 
 ### Aangepaste hulp aan clientzijde {#client-side-custom-helpers}
 
-De helpers aan de clientzijde zijn Handlebars-scripts die zijn geregistreerd door het aanroepen van `Handlebars.registerHelper()`.
+De helpers aan de clientzijde zijn Handlebars-scripts die zijn geregistreerd door `Handlebars.registerHelper()` aan te roepen.
 Bijvoorbeeld:
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -592,12 +592,12 @@ function(Handlebars, SCF, $CQ) {
 De aangepaste client-side helpers moeten worden toegevoegd aan een aangepaste clientbibliotheek.
 Clilib moet:
 
-* Een afhankelijkheid opnemen van `cq.social.scf`.
+* Neem een afhankelijkheid van `cq.social.scf` op.
 * Laden nadat handgrepen zijn geladen.
-* zijn [inbegrepen](clientlibs.md).
+* Ben [ inbegrepen ](clientlibs.md).
 
-Opmerking: de SCF-helpers zijn gedefinieerd in `/etc/clientlibs/social/commons/scf/helpers.js`.
+Opmerking: de SCF-hulplijnen worden gedefinieerd in `/etc/clientlibs/social/commons/scf/helpers.js` .
 
-| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële elementen ⇐](essentials.md)** | **[Server-kant Aanpassing](server-customize.md)** |
 |---|---|
-|   | **[Aanpassing aan client-side bezig](client-customize.md)** |
+|   | **[Cliënt-kant Aanpassing](client-customize.md)** |

@@ -24,26 +24,26 @@ Deze benadering is fundamenteel verschillend van de manier het AEM platform plaa
 
 Het AEM platform gebruikt een knoopopslag die site-inhoud van auteur voor publicatie repliceert, terwijl AEM Communities één algemene opslag voor UGC gebruikt die nooit wordt gerepliceerd.
 
-Voor de gemeenschappelijke opslag UGC, is het noodzakelijk om een [Storage Resource Provider (SRP)](working-with-srp.md). De aanbevolen opties zijn:
+Voor de gemeenschappelijke opslag UGC, is het noodzakelijk om de leverancier van het a [ opslagmiddel (SRP) ](working-with-srp.md) te kiezen. De aanbevolen opties zijn:
 
 * [DSRP - Relational Database Storage Resource Provider](dsrp.md)
 * [MSRP - MongoDB Storage Resource Provider](msrp.md)
 * [ASRP - Adobe Storage Resource Provider](asrp.md)
 
-Een andere SRP-optie [JSRP - JCR Storage Resource Provider](jsrp.md), biedt geen ondersteuning voor een algemene UGC-opslag voor de auteur- en publicatieomgeving voor beide toegang.
+Één andere optie SRP, [ JSRP - Leverancier van het Middel van de Opslag JCR ](jsrp.md), steunt geen gemeenschappelijke opslag UGC voor de auteur en publiceert milieu&#39;s aan beide toegang.
 
 Het vereisen van een gemeenschappelijke opslagresultaten in de volgende geadviseerde topologieën.
 
 >[!NOTE]
 >
->Voor AEM Communities: [UGC wordt nooit herhaald](working-with-srp.md#ugc-never-replicated).
+>Voor AEM Communities, [ UGC wordt nooit herhaald ](working-with-srp.md#ugc-never-replicated).
 >
->Wanneer de implementatie geen [gemeenschappelijk archief](working-with-srp.md), is UGC alleen zichtbaar op de AEM publicatie- of auteurinstantie waarop het is ingevoerd.
+>Wanneer de plaatsing niet a [ gemeenschappelijke opslag ](working-with-srp.md) omvat, zal UGC slechts op AEM zichtbaar zijn publiceert of auteursinstantie waarop het was ingegaan.
 >
 
 >[!NOTE]
 >
->Ga voor meer informatie over het AEM [Aanbevolen implementaties](../../help/sites-deploying/recommended-deploys.md) en [Inleiding tot het AEM Platform](../../help/sites-deploying/data-store-config.md).
+>Voor meer informatie over het AEM platform, zie [ Geadviseerde Inzet ](../../help/sites-deploying/recommended-deploys.md) en [ Inleiding aan het AEM Platform ](../../help/sites-deploying/data-store-config.md).
 
 ## Voor productie {#for-production}
 
@@ -51,15 +51,15 @@ Het is van essentieel belang een gemeenschappelijke opslag voor UGC tot stand te
 
 Twee voorbeelden:
 
-1. Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus zijn [MSRP](msrp.md).
+1. Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus [ MSRP ](msrp.md) zijn.
 
-1. Voor optimale prestaties voor pagina-inhoud kiest u een [publicatiebedrijf](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ASRP](asrp.md) zou zorgen voor een optimale schaling van UGC met relatief eenvoudige bewerkingen.
+1. Voor optimale prestaties voor paginacontent, publiceert de keus van a [ landbouwbedrijf ](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ ASRP ](asrp.md) optimale het schrapen van UGC met vrij ongecompliceerde verrichtingen.
 
-Voor beide, kan de plaatsing op om het even welke OAK microkernel worden gebaseerd.
+Voor beide toepassingen kan de implementatie op elke OAK-microkernel zijn gebaseerd.
 
-Houd zorgvuldig rekening met het unieke [kenmerken](working-with-srp.md#characteristics-of-srp-options) van elk.
+Om de aangewezen gemeenschappelijke opslag te kiezen, overweeg zorgvuldig de unieke [ kenmerken ](working-with-srp.md#characteristics-of-srp-options) van elk.
 
-Ga voor meer informatie over eiken microkorrels naar [Aanbevolen implementaties](../../help/sites-deploying/recommended-deploys.md).
+Voor meer details op de microkoralen van Oak, bezoek [ Geadviseerde Plaatsingen ](../../help/sites-deploying/recommended-deploys.md).
 
 ### TarMK Publish Farm {#tarmk-publish-farm}
 
@@ -82,13 +82,13 @@ Wanneer de topologie publiceer landbouwbedrijf is, zijn de relevante onderwerpen
 | Implementatie | SITE-INHOUD | DOOR GEBRUIKER GEGENEREERDE INHOUD | OPSLAGRESOUREUVERLENER | ALGEMENE OPSLAG |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | TarMK Farm (standaard) | JCR | JCR | JSRP | Nee |
-| Eak-cluster | JCR | JCR | JSRP | Alleen voor publicatie-omgeving |
+| Oak Cluster | JCR | JCR | JSRP | Alleen voor publicatie-omgeving |
 
 ## Voor ontwikkeling {#for-development}
 
-Voor niet-productieomgevingen [JSRP](jsrp.md) biedt eenvoud bij het instellen van een ontwikkelomgeving met één auteurinstantie en één publicatie-instantie.
+Voor niet-productiemilieu&#39;s, [ JSRP ](jsrp.md) verstrekt eenvoud in vestiging een ontwikkelomgeving met één auteursinstantie en één publiceer instantie.
 
-Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie is het ook mogelijk om een vergelijkbare ontwikkelomgeving in te stellen met behulp van Adobe on-demand-opslag of MongoDB. Zie voor een voorbeeld [MongoDB voor demo instellen](demo-mongo.md).
+Als het kiezen van [ ASRP ](asrp.md), [ DSRP ](dsrp.md) of [ MSRP ](msrp.md) voor productie, is het ook mogelijk om een gelijkaardige ontwikkelomgeving te plaatsen gebruikend Adobe op bestelling opslag of MongoDB. Voor een voorbeeld, zie [ HowTo Opstelling MongoDB voor Manifestatie ](demo-mongo.md).
 
 ## Verwijzingen {#references}
 
@@ -100,13 +100,13 @@ Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie is het 
 
   Bespreekt de rollen van gebruikers en gebruikersgroepen in de auteur en publicatiemilieu&#39;s.
 
-* UGC [gemeenschappelijk archief](working-with-srp.md)
+* UGC [ gemeenschappelijke opslag ](working-with-srp.md)
 
   Beschrijft de opslag van communautaire inhoud afzonderlijk van plaatsinhoud.
 
 * [Node Stores and Data Stores](../../help/sites-deploying/data-store-config.md)
 
-  Inhoud van de site wordt in feite opgeslagen in een nodenarchief. Voor Middelen, kan een gegevensopslag worden gevormd om binaire gegevens op te slaan. Voor Gemeenschappen, moet een gemeenschappelijke opslag worden gevormd om SRP te selecteren.
+  Inhoud van de site wordt in feite opgeslagen in een nodenarchief. Voor Assets, kan een gegevensopslag worden gevormd om binaire gegevens op te slaan. Voor Gemeenschappen, moet een gemeenschappelijke opslag worden gevormd om SRP te selecteren.
 
 * [Opslagelementen](../../help/sites-deploying/storage-elements-in-aem-6.md)
 

@@ -28,20 +28,20 @@ Experience Manager Assets biedt afspeelondersteuning voor deze uitvoeringen op d
 
 Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en selecteert u het pictogram Algemene navigatie. Kies vervolgens **[!UICONTROL Renditions]** in de lijst.
 
-![chlimage_1-478](assets/chlimage_1-478.png)
+![ chlimage_1-478 ](assets/chlimage_1-478.png)
 
-De lijst met video-uitvoeringen wordt weergegeven in het dialoogvenster **[!UICONTROL Renditions]** deelvenster.
+De lijst met video-uitvoeringen wordt weergegeven in het deelvenster **[!UICONTROL Renditions]** .
 
-![chlimage_1-479](assets/chlimage_1-479.png)
+![ chlimage_1-479 ](assets/chlimage_1-479.png)
 
-De proxyserver configureren voor met DM gecodeerde uitvoeringen, [Dynamic Media Cloud-services configureren](config-dynamic.md).
+Om de volmachtsserver voor DM-Gecodeerde vertoningen te vormen, [ vormen de diensten van de Wolk van Dynamic Media ](config-dynamic.md).
 
-Video-uitvoeringen genereren met de gewenste parameters, [een overeenkomstig videoprofiel maken](video-profiles.md).
+Om videovertoningen met gewenste parameters te produceren, [ creeer een overeenkomstig videoprofiel ](video-profiles.md).
 
 Nadat u de proxyserver hebt geconfigureerd en videoprofielen hebt gemaakt, kunt u deze videovoorinstelling opnemen in een verwerkingsprofiel en het verwerkingsprofiel toepassen op een map.
 
 >[!NOTE]
 >
->Audio afspelen werkt niet voor OGG- en WAV-bestanden in Microsoft® Internet Explorer 11. Een fout `Invalid Source` wordt weergegeven op de pagina met elementdetails voor elementen met de extensie OGG of WAV.
+>Audio afspelen werkt niet voor OGG- en WAV-bestanden in Microsoft® Internet Explorer 11. Er wordt een fout `Invalid Source` weergegeven op de pagina met elementdetails voor elementen met de extensie OGG of WAV.
 >
 >In MS® Edge en iPad worden OGG-bestanden niet afgespeeld en wordt een niet-ondersteunde indelingsfout weergegeven.

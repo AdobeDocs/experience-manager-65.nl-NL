@@ -32,13 +32,13 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld: `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld `c:\Program Files\LunaSA\cryptoki.dll` . In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Klik op HSM-connectiviteit testen. Als AEM formulieren verbinding kunnen maken met het HSM-apparaat, wordt een bericht weergegeven met de mededeling dat de HSM beschikbaar is. Klik op Volgende.
 1. Gebruik of de Symbolische Naam, identiteitskaart van de Slot, of Index van de Lijst van de Slot om te identificeren waar de geloofsbrieven op HSM worden opgeslagen.
 
-   * **Tokennaam:** Komt overeen met de naam van de te gebruiken HSM-partitie (bijvoorbeeld HSMPART1).
-   * **Groef-id:** De sleuf-id is een sleuf-id van het gegevenstype long.
-   * **Slot List Index:** Als u Slot List Index selecteert, stelt u Slot Info in op een geheel getal dat overeenkomt met de sleuf. Dit is een op 0-gebaseerde index, zo betekent het dat als de cliënt met de verdeling HSMPART1 eerst wordt geregistreerd, HSMPART1 zal worden doorverwezen naar het gebruiken van waarde SlotListIndex 0.
+   * **Symbolische Naam:** beantwoordt aan de naam van de te gebruiken verdeling HSM (bijvoorbeeld, HSMPART1).
+   * **Identiteitskaart van de Slot:** identiteitskaart van de Slot is een groef herkenningsteken van type lang gegevenstype.
+   * **de Index van de Lijst van de Slot:** als u de Index van de Lijst van de Slot selecteert, plaats Info van de Slot aan een geheel dat aan de groef beantwoordt. Dit is een op 0-gebaseerde index, zo betekent het dat als de cliënt met de verdeling HSMPART1 eerst wordt geregistreerd, HSMPART1 zal worden doorverwezen naar het gebruiken van waarde SlotListIndex 0.
 
 1. Typ in het vak Symbolische punt het wachtwoord dat is vereist voor toegang tot de HSM-toets en klik op Volgende.
 1. Selecteer een referentie in het vak Referenties. Klik op Opslaan.
@@ -47,22 +47,22 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld: `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld `c:\Program Files\LunaSA\cryptoki.dll` . In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Schakel het selectievakje Offline profiel maken in. Klik op Volgende.
 1. Selecteer in de lijst HSM-apparaat de fabrikant van het HSM-apparaat waar de referentie is opgeslagen.
 1. Selecteer in de lijst Slot-type de optie Groef-id, Slot-index of Token-naam en geef een waarde op in het vak Slot-info. AEM formulieren gebruiken deze instellingen om te bepalen waar de referenties op de HSM worden opgeslagen.
 
-   * **Tokennaam:** Komt overeen met een verdelingsnaam (bijvoorbeeld, HSMPART1).
-   * **Groef-id:** De sleuf-id is een geheel getal dat overeenkomt met de sleuf en dat op zijn beurt weer overeenkomt met een partitie. Bijvoorbeeld, de cliënt (de Server van Forms) die met de verdeling HSMPART1 eerst wordt geregistreerd. Dit brengt groef 1 aan de verdeling HSMPART1, voor deze cliënt in kaart. Omdat HSMPART1 de eerste geregistreerde verdeling is, is identiteitskaart van de Slot 1 en u zou Informatie van de Slot aan 1 plaatsen.
+   * **Symbolische Naam:** beantwoordt aan een verdelingsnaam (bijvoorbeeld, HSMPART1).
+   * **identiteitskaart van de Slot:** identiteitskaart van de Slot is een geheel dat aan de groef beantwoordt, die beurtelings aan een verdeling beantwoordt. Bijvoorbeeld, de cliënt (de Server van Forms) die met de verdeling HSMPART1 eerst wordt geregistreerd. Dit brengt groef 1 aan de verdeling HSMPART1, voor deze cliënt in kaart. Omdat HSMPART1 de eerste geregistreerde verdeling is, is identiteitskaart van de Slot 1 en u zou Informatie van de Slot aan 1 plaatsen.
 
      De groef ID wordt geplaatst op een cliënt-door-cliënt basis. Als u een tweede machine aan een verschillende verdeling (bijvoorbeeld, HSMPART2 op het zelfde apparaat HSM) registreerde, dan zou groef 1 met de verdeling HSMPART2 voor die cliënt worden geassocieerd.
 
-   * **Slot-index:** Als u Slot Index selecteert, plaats de Info van de Slot aan een geheel dat aan de groef beantwoordt. Dit is een op 0 gebaseerde index, zo betekent het dat als de cliënt met de verdeling HSMPART1 eerst wordt geregistreerd, groef 1 aan HSMPART1 voor deze cliënt in kaart wordt gebracht. Omdat HSMPART1 de eerste geregistreerde verdeling is, is de Index van de Slot 0.
+   * **Index van de Slot:** als u de Index van de Slot selecteert, plaats Info van de Slot aan een geheel dat aan de groef beantwoordt. Dit is een op 0 gebaseerde index, zo betekent het dat als de cliënt met de verdeling HSMPART1 eerst wordt geregistreerd, groef 1 aan HSMPART1 voor deze cliënt in kaart wordt gebracht. Omdat HSMPART1 de eerste geregistreerde verdeling is, is de Index van de Slot 0.
 
 1. Selecteer een van deze opties en geef het pad op:
 
-   * **Certificaat**: (Niet vereist als het gebruiken van SHA1) Klik doorbladeren en van de weg naar de openbare sleutel voor de referentie de plaats bepalen u gebruikt.
-   * **Certificaat SHA1:** (Niet vereist als u een fysiek certificaat gebruikt) Typ SHA1-waarde (miniafdruk) van het bestand met de openbare sleutel (.cer) voor de referentie die u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde.
+   * **Certificaat**: (Niet vereist als het gebruiken van SHA1) klik doorbladert en van de weg naar de openbare sleutel voor de referentie de plaats bepalen u gebruikt.
+   * **Certificaat SHA1:** (Niet vereist als het gebruiken van een fysiek certificaat) waarde SHA1 van het Type (duimdruk) van het openbare zeer belangrijke (.cer) dossier voor referentie u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde.
 
 1. Typ in het vak Wachtwoord het wachtwoord dat is vereist voor toegang tot de HSM-sleutel voor de opgegeven sleufgegevens en klik op Opslaan.
 
@@ -98,9 +98,9 @@ Herstel de open verbindingen aan een apparaat HSM na om het even welke verstorin
 
 ## Externe HSM-ondersteuning configureren {#configure-remote-hsm-support}
 
-AEM vormen gebruiken een Web op diensten-Gebaseerd mechanisme IPC/RPC. Met dit mechanisme kunnen AEM formulieren een HSM gebruiken die op een externe computer is geïnstalleerd. Als u deze functionaliteit wilt gebruiken, installeert u de webservice op de externe computer waarop de HSM is geïnstalleerd. Zie [Het vormen HSM steun voor AEM vormen ES gebruikend Zon JDK op het platform met 64 bits van Vensters](https://kb2.adobe.com/cps/808/cpsid_80835.html)voor meer informatie .
+AEM vormen gebruiken een Web op diensten-Gebaseerd mechanisme IPC/RPC. Met dit mechanisme kunnen AEM formulieren een HSM gebruiken die op een externe computer is geïnstalleerd. Als u deze functionaliteit wilt gebruiken, installeert u de webservice op de externe computer waarop de HSM is geïnstalleerd. Zie [ Vormend steun HSM voor AEM vormen ES gebruikend Zon JDK op Vensters platform met 64 bits ](https://kb2.adobe.com/cps/808/cpsid_80835.html) voor meer informatie.
 
 Dit mechanisme ondersteunt het online maken van HSM-profielen of statuscontroles niet. Er zijn echter twee manieren om HSM-profielen te maken en statuscontroles uit te voeren:
 
-* Maak een clientreferentie voor AEM formulieren door deze door te geven in het certificaat van de ondertekenaar. Voer de stappen uit in [Het vormen HSM steun voor AEM vormen ES gebruikend Zon JDK op het platform met 64 bits van Vensters](https://kb2.adobe.com/cps/808/cpsid_80835.html). De locatie van de webservice wordt doorgegeven als een referentie-eigenschap. Offline HSM-profielen die zijn gemaakt met behulp van certificaatmodule of SHA-1-hexadecimale certificaat worden ook ondersteund. Als u echter een upgrade hebt uitgevoerd naar AEM formulieren uit een eerdere versie van AEM formulieren, brengt u wijzigingen aan op de client omdat de referentie gegevens van het certificaat en de webservice heeft meegevoerd.
-* De plaats van de Dienst van het Web wordt gespecificeerd in de beleidsconsole voor de dienst van de Handtekening. (Zie [Instellingen voor handtekeningenservice](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier droeg de client alleen de alias van het HSM-profiel in de vertrouwde opslag. U kunt deze optie naadloos gebruiken zonder wijzigingen op de client, zelfs als u een upgrade hebt uitgevoerd naar AEM formulieren van een eerdere versie van AEM formulieren. Deze optie ondersteunt geen HSM-profielen die gebruikmaken van certificaat SHA-1.
+* Maak een clientreferentie voor AEM formulieren door deze door te geven in het certificaat van de ondertekenaar. Volg de stappen in [ Vormend steun HSM voor AEM vormen ES gebruikend Zon JDK op het platform met 64 bits van Vensters ](https://kb2.adobe.com/cps/808/cpsid_80835.html). De locatie van de webservice wordt doorgegeven als een referentie-eigenschap. Offline HSM-profielen die zijn gemaakt met behulp van certificaatmodule of SHA-1-hexadecimale certificaat worden ook ondersteund. Als u echter een upgrade hebt uitgevoerd naar AEM formulieren uit een eerdere versie van AEM formulieren, brengt u wijzigingen aan op de client omdat de referentie gegevens van het certificaat en de webservice heeft meegevoerd.
+* De plaats van de Dienst van het Web wordt gespecificeerd in de beleidsconsole voor de dienst van de Handtekening. (Zie [ de dienstmontages van de Handtekening ](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier droeg de client alleen de alias van het HSM-profiel in de vertrouwde opslag. U kunt deze optie naadloos gebruiken zonder wijzigingen op de client, zelfs als u een upgrade hebt uitgevoerd naar AEM formulieren van een eerdere versie van AEM formulieren. Deze optie ondersteunt geen HSM-profielen die gebruikmaken van certificaat SHA-1.

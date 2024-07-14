@@ -22,7 +22,7 @@ Als u een taak opent in de AEM Forms-werkruimte, wordt in het deelvenster Taakov
 
 In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
 
-1. Creeer een Assign proces van de Taak in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [Workbench Help](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
+1. Creeer een Assign proces van de Taak in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [ Help Workbench ](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >
@@ -31,10 +31,10 @@ In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in he
 1. Configureer het veld Taakoverzicht-URL. U kunt een letterlijke waarde, een sjabloon, een variabele of een XPath-expressie opgeven.
 1. Hieronder ziet u een voorbeeld van het weergeven van de informatie op de pagina Taakoverzicht.
 
-   * Aanmelden bij CRXDE Lite-omgeving bij `https://'[server]:[port]'/lc/crx/de`.
-   * `Create a node`**SampleSummary** ` under `/content` with type `nt:ongestructureerd`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:lezen` privileges.`
-   * `Create a folder`**SampleSummary** krachtens `/apps`. In de lijst Toegangsbeheer van `/apps/SampleSummary`, een item toevoegen voor `PERM_WORKSPACE_USER` toestaan `jcr:readprivileges`.
-   * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
+   * Meld u aan bij de CRXDE Lite-omgeving op `https://'[server]:[port]'/lc/crx/de` .
+   * `Create a node`**SampleSummary** ` under `/content ` with type ` niet:ongestructureerde `. In the properties of this node, add ` helling:resourceType ` of type String and value ` SampleSummary `. In the Access Control List of this node, add an entry for ` PERM_WORKSPACE_USER ` allowing ` jcr:gelezen ` privileges.`
+   * `Create a folder`**SampleSummary** onder `/apps`. Voeg in de lijst Toegangsbeheer van `/apps/SampleSummary` een item toe voor `PERM_WORKSPACE_USER` allow `jcr:readprivileges` .
+   * `Create a file ` html.esp ` at `/apps/SampleSummary `. For example, add the following lines in ` html.esp `.`
 
    ```html
    <html>
@@ -49,5 +49,5 @@ In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in he
    </html>
    ```
 
-   * Stel de waarde van de taaksummiere URL in op `/lc/content/SampleSummary.html` in Taak toewijzen.
-   * Wanneer de taak die bij deze stap Taak toewijzen hoort, wordt geopend in de AEM Forms-werkruimte, wordt `html.esp` om `/apps/SampleSummary` wordt weergegeven in het taakoverzichtsvenster.
+   * Stel de waarde van de taaksummiere URL in op `/lc/content/SampleSummary.html` in de stap Taak toewijzen.
+   * Wanneer de taak die aan deze taakstap toewijzen is gekoppeld, wordt geopend in de AEM Forms-werkruimte, wordt de `html.esp` at `/apps/SampleSummary` weergegeven in het taakoverzichtsvenster.

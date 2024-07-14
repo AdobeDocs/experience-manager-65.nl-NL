@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Communities staat bedrijven toe om speciale ervaringen van de brandinggemeenschap van een bibliotheek van plaatssjablonen tot stand te brengen. Forums, groepen, blogs, bestanden delen, kalenders, activiteitenfeeds en uitgebreide gebruikersprofielen kunnen in uw website worden geïntegreerd om interacties tussen professionals, klanten en bedrijven te bevorderen.
 
-Hier volgt een zelfstudie over het snel instellen van een [betrokkenheidsgemeenschap](/help/communities/overview.md#engagement-community) voor demonstratie- of ontwikkelingsdoeleinden.
+Na is een leerprogramma bij snel vestiging een [ gemeenschap van de betrokkenheid ](/help/communities/overview.md#engagement-community) voor demonstratie of ontwikkelingsdoeleinden.
 
 * [Eerste instelling](/help/communities/setup.md)
 

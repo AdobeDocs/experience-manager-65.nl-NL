@@ -25,11 +25,11 @@ De taken worden ook gebruikt in projecten om het niveau van volledigheid van het
 
 ## Voortgang van project bijhouden {#tracking-project-progress}
 
-U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een project te bekijken dat door **Taken** tegel. De voortgang van het project kan worden bepaald door:
+U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een project te bekijken dat door de **wordt vertegenwoordigd van Taken** tegel. De voortgang van het project kan worden bepaald door:
 
-* **Taaktegel:** Een algemene vooruitgang van het project wordt getoond in de taaktegel, beschikbaar op de pagina van projectdetails.
+* **TaakTegel:** een algemene vooruitgang van het project wordt getoond in de taaktegel, beschikbaar op de pagina van projectdetails.
 
-* **Taaklijst:** Wanneer u op de taaktegel klikt, wordt een lijst met taken weergegeven. Deze lijst bevat gedetailleerde informatie over alle taken met betrekking tot het project.
+* **Lijst van de Taak:** wanneer het klikken van de taaktegel, wordt een lijst van taken getoond. Deze lijst bevat gedetailleerde informatie over alle taken met betrekking tot het project.
 
 Met beide opties worden workflowtaken en taken die u rechtstreeks in de takentegel maakt, weergegeven.
 
@@ -41,7 +41,7 @@ Als een project om het even welke verwante taken heeft, wordt een taaktegel geto
 * Percentage actieve taken
 * Percentage achterstallige taken
 
-![Taken](assets/project-tile-tasks.png)
+![ de tegel van Taken ](assets/project-tile-tasks.png)
 
 ### Het bekijken van of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -51,20 +51,20 @@ Naast het volgen van vooruitgang, kunt u meer informatie over het project willen
 
 Klik op de knop met de ellips rechtsonder in de takentegel om uw Postvak IN weer te geven dat op de taken met betrekking tot het project is gefilterd. De taakdetails worden getoond samen met meta-gegevens zoals vervaldatum, ontvanger, prioriteit, en status.
 
-![Projecttaak, Postvak IN](assets/project-tasks.png)
+![ de taak van het Project inbox ](assets/project-tasks.png)
 
 #### Taakdetails {#task-details}
 
-Voor meer informatie over een bepaalde taak klikt u in het Postvak IN op de taak die u wilt selecteren en klikt u vervolgens op **Openen** in de werkbalk.
+Voor meer informatie over een bepaalde taak, in inbox, klik de taak om het dan te selecteren **Open** in de toolbar te klikken.
 
-![Taakdetails](assets/project-task-detail.png)
+![ het detail van de Taak ](assets/project-task-detail.png)
 
 U kunt details aan de taak weergeven, bewerken of toevoegen via verschillende tabbladen.
 
 * **Taak** - Algemene taakinformatie
-* **Projectinfo** - Samenvatting van het project waaraan de taak is gekoppeld
-* **Workflowinfo** - Overzicht van de workflow waaraan de taak is gekoppeld (indien van toepassing)
-* **Opmerkingen** - Algemene opmerkingen over de taak zelf
+* **Info van het Project** - Samenvatting van het project dat de taak met wordt geassocieerd
+* **Werkschema binnen** - Samenvatting van het werkschema dat de taak met (indien van toepassing) wordt geassocieerd
+* **Commentaren** - Algemene commentaren op de taak zelf
 
 ### Taken toevoegen {#adding-tasks}
 
@@ -72,13 +72,13 @@ U kunt nieuwe taken aan projecten toevoegen. Deze taken worden vervolgens weerge
 
 Een taak toevoegen:
 
-1. Zoek in het project de locatie **Taken** tegel
-1. Klik op het neerwaartse chevron rechtsboven in de tegel en selecteer **Taak maken**.
-1. In de **Taak toevoegen** en geeft u taakdetails op, zoals prioriteit, toewijzing en vervaldatum.
+1. In het project, bepaal de plaats van de **tegel van 0} Taken {**
+1. Klik naar beneden chevron bij het hoogste recht van de tegel en selecteer **creëren Taak**.
+1. In **voeg het venster van de Taak** toe, verstrek taakdetails zoals prioriteit, toegewezen persoon, en vervaldatum.
 
-   ![Een taak toevoegen](assets/project-add-task.png)
+   ![ Toevoegend een taak ](assets/project-add-task.png)
 
-1. Klikken **Verzenden**.
+1. Klik **voorleggen**.
 
 ## Werken met taken in het Postvak In {#working-with-tasks-in-the-inbox}
 
@@ -86,6 +86,6 @@ In plaats van toegang tot van uw projecttaken van het project zelf, kunt u tot h
 
 Vanuit het Postvak IN kunt u de taken openen en de taakstatus instellen. De taken verschijnen ook in uw inbox wanneer zij aan een gebruikersgroep worden toegewezen die u tot behoort. In dat geval kan elk lid van de groep het werk uitvoeren en de taak voltooien.
 
-![Inbox](assets/project-inbox.png)
+![ Inbox ](assets/project-inbox.png)
 
-Selecteer de taak en klik op **Voltooid** in de werkbalk. Voeg informatie toe aan de taak en klik vervolgens op **Gereed**. Zie [Uw Postvak IN](/help/sites-authoring/inbox.md) voor meer informatie .
+Om een taak te voltooien, selecteer de taak en klik **Volledig** in de toolbar. Voeg informatie aan de taak toe en klik dan **Gereed**. Zie [ Uw Inbox ](/help/sites-authoring/inbox.md) voor meer informatie.

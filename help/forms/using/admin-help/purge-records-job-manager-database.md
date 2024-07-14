@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Procesgegevens die worden gegenereerd wanneer een langdurig proces wordt aangeroepen, kunnen te groot worden, wat resulteert in lagere AEM formulierprestaties en het gebruik van overbodige schijfruimte. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
 
-U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methoden voor het verwijderen van overbodige records worden besproken in [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
+U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methodes om verouderde verslagen te zuiveren worden besproken in [ het zuiveren procesgegevens ](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
-**De pagina Job Purge Scheduler openen**
+**heb toegang tot de pagina van de Planner van de Weigering van de Baan**
 
 1. Klik in de beheerconsole op Health Monitor rechtsboven op de pagina.
 1. Klik op het tabblad Planfunctie voor taakverwijdering.
@@ -33,7 +33,7 @@ De informatie over om het even welke momenteel geplande zuiveringen wordt getoon
 >
 >Als u op Planner stoppen klikt, worden in de toekomst geplande reinigingsprogramma&#39;s gestopt, maar wordt een taak die al wordt uitgevoerd, niet gestopt.
 
-**Eenmalige verwijdering plannen**
+**Plan een eenmalige zuivering**
 
 1. Selecteer slechts één keer.
 1. Geef in het gebied Filter Voltooide records wissen het aantal dagen of weken op waarna een record als verouderd en gereed voor verwijdering wordt beschouwd.
@@ -50,10 +50,10 @@ De informatie over om het even welke momenteel geplande zuiveringen wordt getoon
 
 1. Klik op Start Scheduler. Om het even welke eerder geplande plannermontages worden vervangen met de nieuwe montages.
 
-**Een schema voor automatisch leegmaken configureren**
+**vorm een automatisch zuiveringsprogramma**
 
 1. Selecteer Opnieuw uitvoeren om en geef het aantal dagen of weken tussen de purges op.
-1. Geef in het gebied Filter Voltooide records wissen het aantal dagen of weken op waarna een record als verouderd en gereed voor verwijdering wordt beschouwd. U kunt de waarde niet instellen op `0`.
+1. Geef in het gebied Filter Voltooide records wissen het aantal dagen of weken op waarna een record als verouderd en gereed voor verwijdering wordt beschouwd. U kunt de waarde niet instellen op `0` .
 
    >[!NOTE]
    >

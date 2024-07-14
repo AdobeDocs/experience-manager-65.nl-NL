@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Zelfstudie: interactieve communicatie maken {#tutorial-create-interactive-communication}
 
-![09-stijl-uw-adaptief-vorm-klein](assets/09-style-your-adaptive-form-small.png)
+![ 09-stijl-uw-adaptief-vorm-klein ](assets/09-style-your-adaptive-form-small.png)
 
-Deze zelfstudie is een stap in de [Maak uw eerste interactieve communicatie](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [ creeer uw eerste Interactieve Communicatie ](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 Nadat u alle bouwstenen voor de webversie hebt gemaakt, zoals het formuliergegevensmodel, documentfragmenten, sjablonen en thema&#39;s, kunt u een interactieve communicatie maken.
 
@@ -37,31 +37,31 @@ Dit leerprogramma begeleidt u door de stappen om interactieve mededelingen voor 
 
 Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die nodig zijn tijdens het maken van de interactieve communicatie voor het kanaal Afdrukken:
 
-**Afdruksjabloon:** [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
+**malplaatje van de Druk:** [ create_first_ic_print_template ](../../forms/using/create-templates-print-web.md)
 
-**Formuliergegevensmodel:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
+**Model van de Gegevens van de Vorm:** [ FDM_Create_First_IC ](../../forms/using/create-form-data-model0.md)
 
-**Documentfragmenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Fragments van het Document:** [ bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic ](../../forms/using/create-document-fragments.md)
 
-**Layoutfragmenten:** [table_lf](../../forms/using/create-templates-print-web.md)
+**Fragmenten van de Lay-out:** [ table_lf ](../../forms/using/create-templates-print-web.md)
 
-**Afbeeldingen:** PayNow en ValueAddedServices
+**Beelden:** PayNow en ValueAddedServices
 
-1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteren **Maken** en selecteert u **Interactieve communicatie**. De **Interactieve communicatie maken** wordt weergegeven.
-1. Opgeven **create_first_ic** in de **Titel** en de **Naam** veld. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en selecteer **Volgende**.
-1. In de **Kanalen** wizard:
+1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+1. Selecteer **creeer** en selecteer **Interactieve Communicatie**. **creeer Interactieve Communicatie** tovenaar wordt getoond.
+1. Specificeer **create_first_ic** in de **Titel** en het **gebied van de Naam**. Selecteer **FDM_Create_First_IC** als Model van de Gegevens van de Vorm en selecteer **daarna**.
+1. In de **tovenaar van Kanalen**:
 
-   1. Opgeven **create_first_ic_print_template** als de sjabloon Afdrukken en selecteer **Selecteren**. Zorg ervoor dat de **Afdrukken als origineel voor webkanaal gebruiken** selectievakje is niet ingeschakeld.
+   1. Specificeer **create_first_ic_print_template** als malplaatje van de Druk en selecteer **Uitgezocht**. Zorg ervoor dat het **Gebruik Druk als Meester voor het Kanaal van het Web** checkbox niet wordt geselecteerd.
 
-   1. Opgeven **Create_First_IC_templates** map > **Create_First_IC_Web_Template** als het malplaatje van het Web en selecteer **Selecteren**.
+   1. Specificeer **Create_First_IC_templates** omslag > **Create_First_IC_Web_Template** als malplaatje van het Web en selecteer **Uitgezocht**.
 
-   1. Selecteren **Maken**.
+   1. Selecteer **creeer**.
 
    Er wordt een bevestigingsbericht weergegeven dat de interactieve communicatie is gemaakt.
 
-1. Selecteren **Bewerken** om de Interactieve Communicatie in de juiste ruit te openen.
-1. Ga naar de **Activa** en pas het filter toe om alleen de documentfragmenten in het linkervenster weer te geven.
+1. Selecteer **uitgeven** om de Interactieve Mededeling in de juiste ruit te openen.
+1. Ga naar het **Assets** lusje en pas de filter toe om slechts de documentfragmenten in de linkerruit te tonen.
 1. Sleep de volgende documentfragmenten naar het doelgebied in de interactieve communicatie.
 
    | Documentfragment | Doelgebied |
@@ -71,61 +71,61 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
    | bill_summary_first_ic | BillSummary |
    | summary_charges_first_interactive_communication | Heffingen |
 
-   ![Documentfragmenten voor interactieve communicatie](assets/create_first_ic_doc_fragments_new.png)
+   ![ de fragmenten van het Document voor Interactieve Mededelingen ](assets/create_first_ic_doc_fragments_new.png)
 
-1. Selecteren **Grafieken** doelgebied en selecteer **+** om een **Diagram** component.
-1. Selecteer de component van de Grafiek en selecteer ![configure_icon](assets/configure_icon.png) (Configureren). De grafiekeigenschappen worden weergegeven in het linkerdeelvenster:
+1. Selecteer **doelgebied van Grafieken 1}, en selecteer** + **om de component van de a** Grafiek **toe te voegen.**
+1. Selecteer de component van de Grafiek en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). De grafiekeigenschappen worden weergegeven in het linkerdeelvenster:
 
    1. Geef een naam op voor het diagram.
-   1. Selecteren **Schijf** van de **Type diagram** vervolgkeuzelijst.
-   1. Selecteer de **calltype** eigenschap van de **oproepen** objecttype gegevensmodel in het dialoogvenster **X-as** sectie. Selecteren ![done_icon](assets/done_icon.png).
-   1. Selecteren **Frequentie** van de **Functie** vervolgkeuzelijst.
-   1. Selecteer de **calltype** eigenschap van de **oproepen** objecttype gegevensmodel in het dialoogvenster **Y-as** sectie. Selecteren ![done_icon](assets/done_icon.png).
-   1. Selecteren ![done_icon](assets/done_icon.png) om de eigenschappen van het diagram op te slaan.
+   1. Selecteer **Schijf** van de **drop-down lijst van het Type van Grafiek**.
+   1. Selecteer het **calltype** bezit van het **vraag** type van gegevensmodel in de **x-as** sectie. Selecteer ![ done_icon ](assets/done_icon.png).
+   1. Selecteer **Frequentie** van de **drop-down lijst van de Functie**.
+   1. Selecteer het **calltype** bezit van het **vraag** type van gegevensmodel in de **y-as** sectie. Selecteer ![ done_icon ](assets/done_icon.png).
+   1. Selecteer ![ done_icon ](assets/done_icon.png) om de grafiekeigenschappen te bewaren.
 
-1. Ga naar de **Activa** en pas het filter toe om alleen de layoutfragmenten in het linkerdeelvenster weer te geven. Sleep de **table_lf** lay-outfragment naar de **Gespecificeerde Vraag** doelgebied.
-1. Selecteer het tekstveld in het dialoogvenster **Datum** kolom en selecteer ![configure_icon](assets/configure_icon.png) (Configureren).
-1. Selecteren **Gegevensmodelobject** van de **Bindingstype** vervolgkeuzelijst en selecteer **oproepen** > **calldate**. Selecteren ![done_icon](assets/done_icon.png) twee keer om de eigenschappen op te slaan.
+1. Ga naar het **Assets** lusje en pas de filter toe om slechts de lay-outfragmenten in de linkerruit te tonen. Sleep-en-daling het **table_lf** lay-outfragment aan het **Gespecialiseerde Vraag** doelgebied.
+1. Selecteer het Gebied van de Tekst in de **kolom van de Datum** {en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm).
+1. Selecteer **ModelVoorwerp van Gegevens** van de **Bindende drop-down lijst van het Type** en selecteer **vraag** > **calldate**. Selecteer ![ done_icon ](assets/done_icon.png) tweemaal om de eigenschappen te bewaren.
 
-   Op dezelfde manier binding maken met **calltime**, **callnumber**, **callduration**, en **opvragingskosten** voor tekstvelden in het dialoogvenster **Tijd**, **Getal**, **Duur**, en **Heffingen** kolommen.
+   Op dezelfde manier creeer band met **calltime**, **callnumber**, **callduration**, en **callloads** voor tekstgebieden in de **Tijd**, **Aantal**, **Duur**, en **lading** kolommen.
 
-1. Selecteren **Nu betalen** doelgebied en selecteer **+** om een **Afbeelding** component.
-1. Selecteer de component Image en selecteer ![configure_icon](assets/configure_icon.png) (Configureren). De eigenschappen van de afbeelding worden weergegeven in het linkervenster:
+1. Selecteer **PayNow** doelgebied, en selecteer **+** om een **component van het Beeld** toe te voegen.
+1. Selecteer de component van het Beeld en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). De eigenschappen van de afbeelding worden weergegeven in het linkervenster:
 
-   1. Opgeven **Nu betalen** als de naam van de afbeelding in het dialoogvenster **Naam** veld.
-   1. Selecteren **Uploaden** selecteert u de afbeelding die op het lokale bestandssysteem is opgeslagen en selecteert u **Openen**.
-   1. Selecteren ![done_icon](assets/done_icon.png) om de eigenschappen van de afbeelding op te slaan.
+   1. Specificeer **PayNow** als naam van het beeld op het **3} gebied van de Naam {.**
+   1. Selecteer **uploaden**, selecteer het beeld dat op het lokale dossiersysteem wordt bewaard, en selecteer **Open**.
+   1. Selecteer ![ done_icon ](assets/done_icon.png) om de beeldeigenschappen te bewaren.
 
-1. De stappen 13 en 14 herhalen om toe te voegen **ValueAddedServices** aan de **ValueAddedServices** doelgebied.
+1. Herhaal stappen 13 en 14 om **beeld ValueAddedServices** aan het **** doelgebied toe te voegen ValueAddedServices.
 
 ### Interactieve communicatie voor webkanaal maken {#create-interactive-communication-for-web-channel}
 
 Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die nodig zijn tijdens het maken van de interactieve communicatie voor het webkanaal:
 
-**Websjabloon:** [Create_First_IC_Web_Template](../../forms/using/create-templates-print-web.md)
+**malplaatje van het Web:** [ Create_First_IC_Web_Template ](../../forms/using/create-templates-print-web.md)
 
-**Formuliergegevensmodel:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
+**Model van de Gegevens van de Vorm:** [ FDM_Create_First_IC ](../../forms/using/create-form-data-model0.md)
 
-**Documentfragmenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Fragments van het Document:** [ bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic ](../../forms/using/create-document-fragments.md)
 
-**Afbeeldingen:** PayNowWeb en ValueAddedServicesWeb
+**Beelden:** PayNowWeb en ValueAddedServicesWeb
 
-1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteren **Maken** en selecteert u **Interactieve communicatie**. De **Interactieve communicatie maken** wordt weergegeven.
-1. Opgeven **create_first_ic** in de **Titel** en de **Naam** veld. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en selecteer **Volgende**.
-1. In de **Kanalen** wizard:
+1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+1. Selecteer **creeer** en selecteer **Interactieve Communicatie**. **creeer Interactieve Communicatie** tovenaar wordt getoond.
+1. Specificeer **create_first_ic** in de **Titel** en het **gebied van de Naam**. Selecteer **FDM_Create_First_IC** als Model van de Gegevens van de Vorm en selecteer **daarna**.
+1. In de **tovenaar van Kanalen**:
 
-   1. Opgeven **create_first_ic_print_template** als de sjabloon Afdrukken en selecteer **Selecteren**. Zorg ervoor dat de **Afdrukken als origineel voor webkanaal gebruiken** selectievakje is niet ingeschakeld.
+   1. Specificeer **create_first_ic_print_template** als malplaatje van de Druk en selecteer **Uitgezocht**. Zorg ervoor dat het **Gebruik Druk als Meester voor het Kanaal van het Web** checkbox niet wordt geselecteerd.
 
-   1. Opgeven **Create_First_IC_templates** map > **Create_First_IC_Web_Template** als het malplaatje van het Web en selecteer **Selecteren**.
+   1. Specificeer **Create_First_IC_templates** omslag > **Create_First_IC_Web_Template** als malplaatje van het Web en selecteer **Uitgezocht**.
 
-   1. Selecteren **Maken**.
+   1. Selecteer **creeer**.
 
    Er wordt een bevestigingsbericht weergegeven dat de interactieve communicatie is gemaakt.
 
-1. Selecteren **Bewerken** om de Interactieve Communicatie in de juiste ruit te openen.
-1. Selecteer de **Kanalen** van het linkerpaneel en selecteer **Web**.
-1. Ga naar de **Activa** en pas het filter toe om alleen de documentfragmenten in het linkervenster weer te geven.
+1. Selecteer **uitgeven** om de Interactieve Mededeling in de juiste ruit te openen.
+1. Selecteer het **lusje van Kanalen** van de linkerruit en selecteer **Web**.
+1. Ga naar het **Assets** lusje en pas de filter toe om slechts de documentfragmenten in de linkerruit te tonen.
 1. Sleep de volgende documentfragmenten naar het doelgebied in de interactieve communicatie.
 
    | Documentfragment | Doelgebied |
@@ -135,66 +135,66 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
    | bill_summary_first_ic | BillSummary |
    | summary_charges_first_interactive_communication | Heffingen |
 
-1. Selecteren **Overzicht van heffingen** doelgebied en selecteer **+** om een **Diagram** component.
-1. Selecteer de component van de Grafiek en selecteer ![configure_icon](assets/configure_icon.png) (Configureren). De grafiekeigenschappen worden weergegeven in het linkerdeelvenster:
+1. Selecteer **Samenvatting van de Tarieven** doelgebied, en selecteer **+** om de component van de a **Grafiek** toe te voegen.
+1. Selecteer de component van de Grafiek en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). De grafiekeigenschappen worden weergegeven in het linkerdeelvenster:
 
    1. Geef een naam op voor het diagram.
-   1. Selecteren **Schijf** van de **Type diagram** vervolgkeuzelijst.
+   1. Selecteer **Schijf** van de **drop-down lijst van het Type van Grafiek**.
 
-   1. Selecteer de **calltype** eigenschap van de **oproepen** objecttype gegevensmodel in het dialoogvenster **X-as** sectie. Selecteren ![done_icon](assets/done_icon.png).
+   1. Selecteer het **calltype** bezit van het **vraag** type van gegevensmodel in de **x-as** sectie. Selecteer ![ done_icon ](assets/done_icon.png).
 
-   1. Selecteren **Frequentie** van de **Functie** vervolgkeuzelijst.
+   1. Selecteer **Frequentie** van de **drop-down lijst van de Functie**.
 
-   1. Selecteer de **calltype** eigenschap van de **oproepen** objecttype gegevensmodel in het dialoogvenster **Y-as** sectie. Selecteren ![done_icon](assets/done_icon.png).
+   1. Selecteer het **calltype** bezit van het **vraag** type van gegevensmodel in de **y-as** sectie. Selecteer ![ done_icon ](assets/done_icon.png).
 
-   1. Selecteren ![done_icon](assets/done_icon.png) om de eigenschappen van het diagram op te slaan.
+   1. Selecteer ![ done_icon ](assets/done_icon.png) om de grafiekeigenschappen te bewaren.
 
-1. Selecteer de **Gegevensbronnen** van het linkervenster en sleep-en-daling **oproepen** gegevensmodelobject naar het **Gespecificeerde Vraag** doelgebied. Alle eigenschappen in het dialoogvenster **oproepen** gegevensmodelobject wordt weergegeven als tabelkolommen in het dialoogvenster **Gespecificeerde Vraag** doelgebied in het rechterdeelvenster.
+1. Selecteer het **Bronnen van Gegevens** lusje van de linkerruit en belemmering-en-daling het **voorwerp van het vraag** gegevensmodel aan het **Getoonde Vraag** doelgebied. Alle eigenschappen in het **vraag** gegevensmodelvoorwerp wordt getoond als lijstkolommen in het **Gespecialiseerde het doelgebied van Vraag** in de juiste ruit.
 
    Gebaseerd op het gebruiksgeval, vereist u de Datum van de Vraag, de Tijd van de Vraag, het Aantal van de Vraag, de Duur van de Vraag, en de kolommen van de Heffingen van de Vraag in de lijst.
 
-   ![Tabel voor interactieve communicatie](assets/table_ic_web_new.png)
+   ![ Lijst voor Interactieve Communicatie ](assets/table_ic_web_new.png)
 
-1. Selecteren **Mobilenum** tabelkolomkop en selecteer **Meer opties** > **Kolom verwijderen**. Verwijder op dezelfde manier de **Calltype** kolom.
-1. Selecteer de **Bijschrift** tabelkolomkop en selecteer ![bewerken](assets/edit.png) (Bewerken) om de naam van de tekst te wijzigen in **Aanroepingsdatum**. Wijzig de naam van de andere kolomkoppen in de tabel.
-1. Voeg op basis van het geval van gebruik een **Nu betalen** in de interactieve communicatie die de gebruiker een optie biedt om de betaling uit te voeren door op de knop te klikken. Voer de volgende stappen uit om de knop in te voegen:
+1. Selecteer **Mobilenum** de kolomrubriek van de lijst en selecteer **Meer opties** > **kolom van de Schrapping**. Op dezelfde manier schrap **Calltype** kolom.
+1. Selecteer de **de kolomrubriek van de 0} Bijgestelde** lijst en selecteer ![ uitgeven ](assets/edit.png) (geef uit) om de tekst anders te noemen aan **Datum van de Vraag**. Wijzig de naam van de andere kolomkoppen in de tabel.
+1. Gebaseerd op het gebruiksgeval, neem a **nu betalen** knoop in de Interactieve Mededeling op die de gebruiker een optie verstrekt om de betaling te maken door de knoop te klikken. Voer de volgende stappen uit om de knop in te voegen:
 
-   1. Selecteren **Nu betalen** doelgebied en selecteer **+** om een **Tekst** component.
+   1. Selecteer **nu betalen** doelgebied, en selecteren **+** om de component van de a **Tekst** toe te voegen.
 
-   1. Selecteer de tekstcomponent en selecteer ![bewerken](assets/edit.png) (Bewerken).
-   1. De naam van de tekst wijzigen in **Nu betalen**.
+   1. Selecteer de tekstcomponent en selecteer ![ uitgeven ](assets/edit.png) (geef uit).
+   1. Wijzig de naam van de tekst aan **nu betalen**.
    1. Selecteer de tekst en selecteer het pictogram Hyperlink.
-   1. Geef de betalings-URL op in het dialoogvenster **Pad** veld.
-   1. Selecteren **Nieuw tabblad** van **Doel** vervolgkeuzelijst.
+   1. Specificeer betalings URL op het **gebied van de Weg**.
+   1. Selecteer **Nieuw Lusje** van **drop-down lijst van het Doel**.
 
-   1. Selecteren ![done_icon](assets/done_icon.png) om de eigenschappen van de hyperlink op te slaan.
+   1. Selecteer ![ done_icon ](assets/done_icon.png) om de hyperlinkeigenschappen te bewaren.
 
-1. Selecteren **Stijl** in de vervolgkeuzelijst naast de **Voorvertoning** -optie.
+1. Selecteer **Stijl** van de drop-down lijst naast de **optie van de Voorproef**.
 
-   ![Stijlmodus selecteren voor interactieve communicatie](assets/select_style_ic_web_new.png)
+   ![ Uitgezochte wijze van de Stijl voor Interactieve Communicatie ](assets/select_style_ic_web_new.png)
 
 1. Maak de hyperlinktekst zodanig op dat deze als een knop in de interactieve communicatie wordt weergegeven. Ga hierbij als volgt te werk:
 
-   1. Selecteer de tekstcomponent en selecteer ![bewerken](assets/edit.png) (Bewerken).
-   1. In de **Rand** sectie, specificeren **1,5 px** als **Randbreedte**, selecteert u **Effen** als **Randstijl** en geeft **46 px** als **Straal rand**.
+   1. Selecteer de tekstcomponent en selecteer ![ uitgeven ](assets/edit.png) (geef uit).
+   1. In de **sectie 0} Grens {, specificeer** 1.5px **als** Breedte van de Grens **, selecteer** Ononderbroken **als** Stijl van de Grens **, en specificeer** 46px **als** Straal van de Grens **.**
 
-   1. Selecteer Rood als achtergrondkleur voor de knop in het menu **Achtergrond** sectie.
-   1. In de **Marge** veld voor **Dimensionen en positie** selecteert u de **Gelijktijdig bewerken** en stelt de **Rechts** marge als **450 px**. De velden Boven, Onder en Links worden ingesteld als leeg.
+   1. Selecteer Rood als achtergrondkleur voor de knoop van de **Achtergrond** sectie.
+   1. Op het **gebied van de Marge** voor **Dimensionen &amp; de sectie van de Positie**, uitgezocht gelijktijdig **uitgeven** pictogram, en plaats de **juiste** marge als **450px**. De velden Boven, Onder en Links worden ingesteld als leeg.
 
-   ![Hyperlink invoegen in interactieve communicatie](assets/ic_web_hyperlink_new.png)
+   ![ hyperlink van het Tussenvoegsel in Interactieve Mededeling ](assets/ic_web_hyperlink_new.png)
 
-1. Selecteren **Nu betalen** doelgebied en selecteer **+** om een **Afbeelding** component.
-1. Selecteer de component Image en selecteer ![configure_icon](assets/configure_icon.png) (Configureren). De eigenschappen van de afbeelding worden weergegeven in het linkervenster:
+1. Selecteer **nu betalen** doelgebied, en selecteren **+** om een **component van het Beeld** toe te voegen.
+1. Selecteer de component van het Beeld en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). De eigenschappen van de afbeelding worden weergegeven in het linkervenster:
 
-   1. Opgeven **Nu betalen** als de naam van de afbeelding in het dialoogvenster **Naam** veld.
+   1. Specificeer **PayNow** als naam van het beeld op het **3} gebied van de Naam {.**
 
-   1. Selecteren **Uploaden**, selecteert u de **PayNowWeb** afbeelding opgeslagen in het lokale bestandssysteem en selecteer **Openen**.
+   1. Selecteer **uploaden**, selecteer het **** beeld PayNowWeb dat op het lokale dossiersysteem wordt bewaard, en selecteer **Open**.
 
-   1. Selecteren ![done_icon](assets/done_icon.png) om de eigenschappen van de afbeelding op te slaan.
+   1. Selecteer ![ done_icon ](assets/done_icon.png) om de beeldeigenschappen te bewaren.
 
-1. Voeg op basis van het geval van gebruik een **Abonneren** in de Interactieve Mededeling die de gebruiker een optie verstrekt om aan de diensten van de toegevoegde waarde in te schrijven door de knoop te klikken.
+1. Gebaseerd op het gebruiksgeval, neem a **in Abonneren** knoop in de Interactieve Mededeling die de gebruiker een optie verstrekt om aan de diensten van de toegevoegde waarde in te tekenen door de knoop te klikken.
 
-   Herhaal stap 13 - 17 om een **Abonneren** aan de **Services voor toegevoegde waarde** doelgebied en voeg de **ValueAddedServicesWeb** afbeelding.
+   Herhaal stappen 13 - 17 om a **toe te voegen onderteken** knoop aan de **Waarde Toegevoegde het doelgebied van de Diensten** en voeg het **** beeld ValueAddedServicesWeb toe.
 
 ## Interactieve communicatie voor afdrukken en web maken met automatische synchronisatie {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
@@ -202,34 +202,34 @@ U kunt ook een interactieve communicatie maken door automatische synchronisatie 
 
 Voer de volgende stappen uit om de inhoud van het Kanaal van het Web af te leiden gebruikend het kanaal van de Druk:
 
-1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteren **Maken** en selecteert u **Interactieve communicatie**. De **Interactieve communicatie maken** wordt weergegeven.
-1. Opgeven **create_first_ic** in de **Titel** en de **Naam** veld. Selecteren **FDM_Create_First_IC** als het formuliergegevensmodel en selecteer **Volgende**.
-1. In de **Kanalen** wizard:
+1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
+1. Selecteer **creeer** en selecteer **Interactieve Communicatie**. **creeer Interactieve Communicatie** tovenaar wordt getoond.
+1. Specificeer **create_first_ic** in de **Titel** en het **gebied van de Naam**. Selecteer **FDM_Create_First_IC** als Model van de Gegevens van de Vorm en selecteer **daarna**.
+1. In de **tovenaar van Kanalen**:
 
-   1. Opgeven **create_first_ic_print_template** als de sjabloon Afdrukken en selecteer **Selecteren**.
+   1. Specificeer **create_first_ic_print_template** als malplaatje van de Druk en selecteer **Uitgezocht**.
 
-   1. Selecteer de **Afdrukken als origineel voor webkanaal gebruiken** selectievakje.
-   1. Opgeven **Create_First_IC_templates** map > **Create_First_IC_Web_Template** als het malplaatje van het Web en selecteer **Selecteren**.
+   1. Selecteer het **Gebruik Druk als Meester voor het Kanaal van het Web** checkbox.
+   1. Specificeer **Create_First_IC_templates** omslag > **Create_First_IC_Web_Template** als malplaatje van het Web en selecteer **Uitgezocht**.
 
-   1. Selecteren **Maken**.
+   1. Selecteer **creeer**.
 
    Er wordt een bevestigingsbericht weergegeven dat de interactieve communicatie is gemaakt.
 
-1. Selecteren **Bewerken** om de Interactieve Communicatie in de juiste ruit te openen.
-1. Voer stap 6 - 15 uit van [Interactieve communicatie maken voor het afdrukkanaal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) sectie.
-1. Selecteer de **Kanalen** van het linkerpaneel en selecteer **Web** om automatisch inhoud voor het webkanaal te genereren via het kanaal Afdrukken.
-1. Als de **Afdrukken als origineel voor webkanaal gebruiken** Schakel het selectievakje in in stap 4. De inhoud en bindingen worden automatisch gegenereerd voor het webkanaal via het kanaal Afdrukken.
+1. Selecteer **uitgeven** om de Interactieve Mededeling in de juiste ruit te openen.
+1. Voer stappen 6 uit - 15 van [ creëren Interactieve Communicatie voor het kanaal van de Druk ](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) sectie.
+1. Selecteer het **lusje van Kanalen** van de linkerruit en selecteer **Web** om inhoud voor het kanaal van het Web van het kanaal van de Druk auto-produceren.
+1. Aangezien het **Gebruik Druk als Meester voor Kanaal van het Web** checkbox in stap 4 wordt geselecteerd, worden de inhoud en de banden auto-geproduceerd voor het kanaal van het Web van het kanaal van de Druk.
 
    De inhoud van het afdrukkanaal wordt ingevoegd onder de inhoud van de webkanaalsjabloon. Als u de inhoud van het webkanaal wilt wijzigen die automatisch is gegenereerd via het kanaal Afdrukken, kunt u de overerving voor elk doelgebied annuleren.
 
-   Houd de muisaanwijzer boven het desbetreffende doelgebied in het webkanaal en selecteer ![cancelovererving](assets/cancelinheritance.png) (Overerving annuleren) en vervolgens in het dialoogvenster **Overerving annuleren** dialoogvenster, selecteren **Ja**.
+   Beweeg over het relevante doelgebied in het Webkanaal en selecteer ![ annuleringserving ](assets/cancelinheritance.png) (Cancel Overerving) en dan in de **annuleert Overerving** dialoog, uitgezochte **ja**.
 
-   ![Overerving annuleren](assets/cancel_inheritance_web_channel_new.png)
+   ![ annuleert overerving ](assets/cancel_inheritance_web_channel_new.png)
 
-   Als u de overerving van een component hebt geannuleerd, kunt u deze opnieuw inschakelen. Als u overerving weer wilt inschakelen, plaatst u de cursor boven de grens van het desbetreffende doelgebied, dat de component omvat, en selecteert u ![reenableerbaarheid](assets/reenableinheritance.png).
+   Als u de overerving van een component hebt geannuleerd, kunt u deze opnieuw inschakelen. Om overerving re-toe te laten, houd over de grens van het relevante doelgebied, dat de component omvat, en selecteer ![ reenableinheritance ](assets/reenableinheritance.png) opnieuw in.
 
-1. Selecteer de **Inhoud** in het linkerdeelvenster.
+1. Selecteer het **lusje van de Inhoud** in de linkerruit.
 1. Sleep de automatisch gegenereerde webkanaalinhoud naar de bestaande deelvensters in de websjabloon met de inhoudsstructuur. Hieronder volgt een lijst met onderdelen die opnieuw moeten worden gerangschikt:
 
    * De component van Details van de rekening aan het paneel van Details van de Rekening
@@ -238,6 +238,6 @@ Voer de volgende stappen uit om de inhoud van het Kanaal van het Web af te leide
    * Samenvatting van de component van Laden aan Samenvatting van het paneel van Laden
    * Het fragment van de lay-out (lijst) aan het Gespecialiseerde paneel van Vraag
 
-   ![Webinhoud-structuur](assets/ic_web_content_tree_new.png)
+   ![ de inhoudsboom van het Web ](assets/ic_web_content_tree_new.png)
 
-1. Herhaal stap 13 - 18 van [Interactieve communicatie voor webkanaal maken](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) om de **Nu betalen** en **Abonneren** hyperlinks in het kanaal van het Web van de Interactieve Mededeling.
+1. Herhaal stappen 13 - 18 van [ creëren Interactieve Mededeling voor het kanaal van het Web ](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) om **nu te nemen betaal** en **onderteken** hyperlinks in het kanaal van het Web van de Interactieve Mededeling.

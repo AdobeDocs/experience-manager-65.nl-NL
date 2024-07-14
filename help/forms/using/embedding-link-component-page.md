@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-De koppelingscomponent is een lid van de categorie Document Services. Zorg ervoor dat de categorie Document Services zichtbaar is in de browser met AEM componenten. Als de categorie niet wordt vermeld, voert u de stappen uit die worden weergegeven op [portalcomponenten voor formulieren inschakelen](/help/forms/using/enabling-forms-portal-components.md).
+De koppelingscomponent is een lid van de categorie Document Services. Zorg ervoor dat de categorie Document Services zichtbaar is in de browser met AEM componenten. Als de categorie niet vermeld is, volg de stappen die bij [ worden vermeld toelatend vormen portalcomponenten ](/help/forms/using/enabling-forms-portal-components.md).
 
 ## Component koppelen {#link-component}
 
@@ -28,28 +28,28 @@ Met de component Koppeling kunnen auteurs van formulierportaalpagina&#39;s vanaf
 
 Voer de volgende stappen uit om een component van de Verbinding aan de pagina toe te voegen:
 
-1. Sleep de **Koppeling** op de pagina. Selecteer de component en selecteer ![cmppr](assets/cmppr.png). Het dialoogvenster Koppelingscomponent bewerken wordt geopend.
+1. Sleep de **component van de Verbinding** op de pagina. Selecteer de component en selecteer ![ cmp ](assets/cmppr.png). Het dialoogvenster Koppelingscomponent bewerken wordt geopend.
 
-   ![edit-link-component](assets/edit-link-component.png)
+   ![ uitgeven-verbinding-component ](assets/edit-link-component.png)
 
-1. In de **Weergave** kunt u het volgende opgeven:
+1. In het **lusje van de Vertoning**, specificeer het volgende:
 
-   * **Bijschrift koppelen**: Koppel tekst of bijschrift voor de koppeling.
-   * **Knopinfo koppeling**: Knopinfo voor de koppeling.
-   * **Lay-outsjabloon**: Sjabloon voor de lay-out van de component Koppeling.
+   * **Bijschrift van de Verbinding**: De tekst of de titel van de verbinding voor de verbinding.
+   * **Tooltip van de Verbinding**: Knopinfo voor de verbinding.
+   * **Malplaatje van de Lay-out**: Malplaatje voor de lay-out van de component van de Verbinding.
 
-1. Open de **Elementinfo** en geeft u het type element op. Een element kan een **formulier**. Afhankelijk van het geselecteerde type element worden de onderstaande opties weergegeven:
+1. Open het **lusje van Info van Activa** en specificeer het type van de activa. Een activa kan a **vorm** zijn. Afhankelijk van het geselecteerde type element worden de onderstaande opties weergegeven:
 
-   * **Middelpad**: Pad naar opslagplaats waar het element is opgeslagen.
+   * **Weg van Activa**: De weg van de Bewaarplaats waar het element wordt opgeslagen.
 
-   * **Rendertype**: De renderindeling—PDF, HTML of Automatisch. Met het rendertype Automatisch wordt de gebruikersomgeving gedetecteerd en wordt het formulier dienovereenkomstig weergegeven als HTML of als PDF. Als het formulier bijvoorbeeld wordt geopend vanaf een mobiel apparaat, geeft het rendertype Automatisch het formulier weer in HTML.
-   * **URL verzenden:**  URL aan servlet waar de vormgegevens worden voorgelegd.
-   * **HTML-profiel**: Profiel voor het weergeven van het formulier als HTML.
-   * **PDF-profiel**: Profiel voor het weergeven van het formulier als PDF-document.
+   * **geeft Type** terug: Teruggeven formaat-PDF, HTML, of Auto. Met het rendertype Automatisch wordt de gebruikersomgeving gedetecteerd en wordt het formulier dienovereenkomstig weergegeven als HTML of als PDF. Als het formulier bijvoorbeeld wordt geopend vanaf een mobiel apparaat, geeft het rendertype Automatisch het formulier weer in HTML.
+   * **legt URL voor:** URL aan servlet waar de vormgegevens worden voorgelegd.
+   * **Profiel van HTML**: Profiel voor het teruggeven van de vorm als HTML.
+   * **Profiel van PDF**: Profiel voor het teruggeven van de vorm als document van PDF.
 
-1. Open de **Geavanceerd** tab. U kunt de extra parameters in het sleutel-waarde paarformaat specificeren. Wanneer op de koppeling wordt geklikt, worden deze aanvullende parameters doorgegeven en samen met het formulier doorgegeven.
+1. Open het **Geavanceerde** lusje. U kunt de extra parameters in het sleutel-waarde paarformaat specificeren. Wanneer op de koppeling wordt geklikt, worden deze aanvullende parameters doorgegeven en samen met het formulier doorgegeven.
 
-   Selecteren **Gereed** om de configuratie op te slaan.
+   Selecteer **Gedaan** om de configuratie te bewaren.
 
 ## Aanbevolen procedures voor het gebruik van de component Koppeling {#best-practices-for-using-link-component-br}
 

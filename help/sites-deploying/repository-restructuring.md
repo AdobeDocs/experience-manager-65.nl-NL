@@ -46,7 +46,7 @@ Tijdens de planning voor een upgrade naar AEM 6.5, moet naar de volgende pagina&
 * [Herstructurering van de AEM Assets Dynamic Media-opslagplaats](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
 * [Herstructurering van AEM Forms-opslagplaats](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
 * [Herstructurering van AEM Communities-opslagplaats](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
-* [Herstructurering van de opslagplaats AEM](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+* [Herstructurering van de opslagplaats in Commerce AEM](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
 
 Elke pagina bevat twee secties die overeenkomen met de urgentie van de noodzakelijke wijzigingen. Om het even wat onder de &quot;Met 6.5 Verbetering&quot;sectie zou als deel van het AEM 6.5 verbeteringsproject moeten worden behandeld. Alles onder de &quot;Voorafgaande aan toekomstige upgrade&quot; kan optioneel worden uitgesteld tot na de upgrade.
 

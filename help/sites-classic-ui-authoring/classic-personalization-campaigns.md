@@ -35,17 +35,17 @@ In dit document worden de verschillende elementen beschreven waaruit campagnes b
 
 Het beheer van campagnes bestaat uit verschillende elementen:
 
-* **Merken**
-In Adobe Experience Manager (AEM) zijn merken de eenheid op hoofdniveau en vormen ze een verzameling van **Campagnes**.
+* **Banden**
+In Adobe Experience Manager (AEM), zijn de merken de top-level eenheid en vormen een inzameling van **Campagnes**.
 
 * **Campagnes**
-Een campagne is een collectie individuele **Ervaringen**.
+Een campagne is een inzameling van individuele **Ervaringen**.
 
 * **Ervaringen**
-De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker worden getoond op **Aanraakpunten**. Er zijn verschillende soorten ervaring beschikbaar:
+De geconcentreerde inhoud vormt de diverse ervaringen, die aan de bezoeker bij **Touchpoints** worden voorgesteld. Er zijn verschillende soorten ervaring beschikbaar:
 
    * **Teasers**
-     [Taserpagina&#39;s/alinea&#39;s](#teasers) worden gebruikt om specifieke bezoekers te sturen **Segmenten** inhoud die op hun belangen is gericht.
+     [ de Pagina&#39;s/de Alinea&#39;s van het Taser ](#teasers) worden gebruikt om specifieke bezoekers **Segmenten** aan inhoud te sturen die op hun belangen wordt geconcentreerd.
 
      Taserpagina&#39;s kunnen:
 
@@ -56,7 +56,7 @@ De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker worden
 
    * **Nieuwsbrieven**
 
-     [E-mailcommunicatie](#emailmarketing) worden gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze worden meestal verzonden in de vorm van een nieuwsbrief naar uw **Leads** (gegroepeerd in **Lijsten**). **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren. Aanbeveling is [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
+     [ E-mailMededelingen ](#emailmarketing) worden gebruikt om gebruikers in dienst te nemen en hen aan te moedigen om uw website te bezoeken. Deze nemen gewoonlijk de vorm van een nieuwsbrief, die naar uw **wordt verzonden leidt** (die in **Lijsten** worden gegroepeerd). **Nota:** de Adobe is niet van plan om dit vermogen verder te verbeteren. De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
    * **Adobe Target**
 
@@ -70,15 +70,15 @@ De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker worden
 
 * **Leads**
 
-  De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
+  De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Nota:** de Adobe is niet van plan om dit vermogen verder te verbeteren.
 
-  Aanbeveling is [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
+  De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
 
 * **Lijsten**
 
-  Leads worden gegroepeerd in lijsten, zodat u er gezamenlijk actie op kunt ondernemen. Opmerking: **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
+  Leads worden gegroepeerd in lijsten, zodat u er gezamenlijk actie op kunt ondernemen. Nota: **Nota:** de Adobe is niet van plan om dit vermogen verder te verbeteren.
 
-  Aanbeveling is [Adobe Campaign en de integratie in AEM gebruiken.](/help/sites-administering/campaign.md)
+  De aanbeveling moet [ Adobe Campaign en de integratie aan AEM gebruiken.](/help/sites-administering/campaign.md)
 
 * **Segmenten**
 
@@ -88,6 +88,6 @@ De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker worden
 
   De manager van de Campagne van de Marketing (MCM) is een console die u tot alle functionaliteit toegang heeft u uw campagnes, merken, ervaringen, touchpoints, lood, lijsten, segmenten, en rapporten moet tot stand brengen en controleren.
 
-  Het kan van diverse plaatsen worden betreden (geëtiketteerd als **Campagnes**), of met bijvoorbeeld de URL:
+  Het kan van diverse plaatsen worden betreden (geëtiketteerd als **Campagnes**), of met, bijvoorbeeld, URL:
 
   `http://localhost:4502/libs/mcm/content/admin.html`

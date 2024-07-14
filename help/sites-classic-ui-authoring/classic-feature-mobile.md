@@ -24,26 +24,26 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 >[!NOTE]
 >
->Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [Een actieve kopie maken voor verschillende kanalen](/help/sites-administering/msm-livecopy.md).)
+>Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [ Creërend Levend Exemplaar voor Verschillende Kanalen ](/help/sites-administering/msm-livecopy.md).)
 >
->AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [Apparaatgroepfilters maken.](/help/sites-developing/groupfilters.md))
+>AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [ Creërend de Filters van de Groep van het Apparaat.](/help/sites-developing/groupfilters.md))
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
-1. Ga in uw browser naar de **Siteadmin** console.
-1. Open de **Producten** pagina hieronder **Websites** >> **Site voor mobiele demo** >> **Engels**.
+1. In uw browser, ga naar de **Siteadmin** console.
+1. Open de **pagina van de Producten 1} hieronder** Websites **>** Mobiele Plaats van de Demo van de Geometrixx **>>** Engels **.**
 
 1. Schakel over naar een andere emulator. Hiervoor kunt u:
 
    * Klik op het apparaatpictogram boven aan de pagina.
-   * Klik op de knop **Bewerken** in de **Sidekick** en selecteert u het apparaat in het keuzemenu.
+   * Klik **uitgeven** knoop in de **Sidekick** en selecteer het apparaat in het drop-down menu.
 
-1. Sleep de **Tekst en afbeelding** van het tabblad Mobiel van de Sidekick naar de pagina.
-1. Bewerk de component en voeg wat tekst toe. Klikken **OK** om de wijzigingen op te slaan
+1. De belemmering en laat vallen de **Tekst &amp; component van het Beeld** van het Mobiele lusje van de Sidekick aan de pagina.
+1. Bewerk de component en voeg wat tekst toe. Klik **O.K.** om de veranderingen te bewaren.
 
 De pagina ziet er hetzelfde uit als:
 
-![mobileipademu](assets/mobileipademu.png)
+![ mobileipademu ](assets/mobileipademu.png)
 
 >[!NOTE]
 >

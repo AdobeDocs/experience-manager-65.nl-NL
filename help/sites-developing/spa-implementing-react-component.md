@@ -29,16 +29,16 @@ De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van 
 
 ## Inleiding {#introduction}
 
-Dankzij het eenvoudige en lichte contract dat AEM tussen de SPA en de SPA Editor vereist en tot stand brengt, is het eenvoudig om een bestaande JavaScript-toepassing te gebruiken en aan te passen voor gebruik met een SPA in AEM.
+Dankzij het eenvoudige en lichte contract dat door AEM wordt vereist en tussen de SPA en de SPA Editor tot stand is gebracht, is het eenvoudig om een bestaande JavaScript-toepassing te nemen en aan te passen voor gebruik met een SPA in AEM.
 
 Dit artikel illustreert het voorbeeld van de weercomponent op de Wij.Retail steekproef van het Dagboek SPA.
 
-U moet bekend zijn met de [structuur van een SPA aanvraag voor AEM](/help/sites-developing/spa-getting-started-react.md) voordat u dit artikel leest.
+U zou met de [ structuur van een SPA toepassing voor AEM ](/help/sites-developing/spa-getting-started-react.md) moeten vertrouwd zijn alvorens dit artikel te lezen.
 
 >[!CAUTION]
->In dit document worden de [We.Retail Journal-app](https://github.com/adobe/aem-sample-we-retail-journal) uitsluitend voor demonstratiedoeleinden. Gebruik het niet voor enig projectwerk.
+>Dit document gebruikt [ Wij.Retail app van het Dagboek ](https://github.com/adobe/aem-sample-we-retail-journal) slechts voor demonstratiedoeleinden. Gebruik het niet voor enig projectwerk.
 >
->Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten steunt die React of Angular gebruiken en SPA SDK gebruikt.
+>Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
 
 ## De component Weer {#the-weather-component}
 
@@ -46,36 +46,36 @@ De weercomponent staat linksboven in de app Web.Retail Journal. Het toont het hu
 
 ### De widget Weer gebruiken {#using-the-weather-widget}
 
-![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
+![ screen_shot_2018-06-08at143224 ](assets/screen_shot_2018-06-08at143224.png)
 
 Wanneer u inhoud van de SPA ontwerpt in de SPA Editor, wordt de weercomponent net als elke andere AEM weergegeven, compleet met een werkbalk en is deze bewerkbaar.
 
-![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
+![ screen_shot_2018-06-08at143304 ](assets/screen_shot_2018-06-08at143304.png)
 
 De plaats kan in een dialoog enkel als om het even welke andere AEM component worden bijgewerkt.
 
-![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
+![ screen_shot_2018-06-08at143446 ](assets/screen_shot_2018-06-08at143446.png)
 
 De wijziging blijft bestaan en de component wordt automatisch bijgewerkt met nieuwe weergegevens.
 
-![screen_shot_2018-06-08at143524](assets/screen_shot_2018-06-08at143524.png)
+![ screen_shot_2018-06-08at143524 ](assets/screen_shot_2018-06-08at143524.png)
 
 ### Implementatie van weercomponent {#weather-component-implementation}
 
-De weercomponent is gebaseerd op een openbaar beschikbare component React, genaamd [Geopend weefsel reageren](https://www.npmjs.com/package/react-open-weather). Het is aangepast om als component binnen de Wij.Retail SPA toepassing van de steekproef van het Dagboek te werken.
+De weercomponent is gebaseerd op een openbaar beschikbare component van het Reageren, genoemd [ Reageer Open Weer ](https://www.npmjs.com/package/react-open-weather). Het is aangepast om als component binnen de Wij.Retail SPA toepassing van de steekproef van het Dagboek te werken.
 
 Hieronder vindt u fragmenten uit de NPM-documentatie van het gebruik van de component React Open Weather.
 
-![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
+![ screen_shot_2018-06-08at144723 ](assets/screen_shot_2018-06-08at144723.png) ![ screen_shot_2018-06-08at144215 ](assets/screen_shot_2018-06-08at144215.png)
 
-De code van de aangepaste weercomponent bekijken ( `Weather.js`) in de toepassing We.Retail Journal:
+Het herzien van de code van de aangepaste weercomponent ( `Weather.js`) in de toepassing van het Dagboek Wij.Retail:
 
-* **Regel 16**: De widget Open Weer reageren wordt naar wens geladen.
-* **Regel 46**: De `MapTo` Deze React-component wordt aan een overeenkomende AEM gekoppeld, zodat deze kan worden bewerkt in de SPA Editor.
+* **Lijn 16**: Reageer Open widget van het Weer wordt geladen zoals vereist.
+* **Lijn 46**: De `MapTo` functie verwant deze React component aan een overeenkomstige AEM component zodat het in de SPARedacteur kan worden uitgegeven.
 
-* **Lijnen 22-29**: De `EditConfig` wordt gedefinieerd, wordt gecontroleerd of de stad is gevuld en wordt de waarde gedefinieerd als deze leeg is.
+* **Lijnen 22-29**: `EditConfig` wordt bepaald, controlerend als de stad is bevolkt en bepalend de waarde als leeg.
 
-* **Lijnen 31-44**: De component Weather breidt de `Component` en bevat de vereiste gegevens zoals gedefinieerd in de NPM-gebruiksdocumentatie voor de React Open Weather-component en geeft de component weer.
+* **Lijnen 31-44**: De component van het Weer breidt de `Component` klasse uit en verstrekt de vereiste gegevens zoals die in de NPM gebruiksdocumentatie voor de React Open component van het Weer worden bepaald en geeft de component terug.
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,4 +130,4 @@ Hoewel een achterste-eindcomponent reeds moet bestaan, kan de voorste-eindontwik
 
 ## Volgende stap {#next-step}
 
-Zie het artikel voor meer informatie over SPA ontwikkelen voor AEM [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architecture.md).
+Voor verdere informatie over het ontwikkelen van SPA voor AEM zie het artikel [ Ontwikkelend SPA voor AEM ](/help/sites-developing/spa-architecture.md).

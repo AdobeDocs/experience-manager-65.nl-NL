@@ -22,12 +22,12 @@ Op de pagina Betrouwbaar opslagbeheer kunt u de gebruikersnaam en het wachtwoord
 
 ## Gebruikersnaam en wachtwoordreferentie toevoegen {#add-a-user-name-and-password-credential}
 
-1. Klik in de beheerconsole op **[!UICONTROL Settings >Trust Store Management > User and Password Credentials]** en klik vervolgens op **[!UICONTROL Add]**.
-1. In de **[!UICONTROL Profile Name]** typt u een naam voor de referentie.
-1. In de **[!UICONTROL User Name]** typt u een unieke gebruikersnaam.
-1. In de **[!UICONTROL Password]** typt u een wachtwoord voor de gebruiker en klikt u op **[!UICONTROL OK]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings >Trust Store Management > User and Password Credentials]** en klik vervolgens op **[!UICONTROL Add]** .
+1. Typ in het vak **[!UICONTROL Profile Name]** een naam voor de referentie.
+1. Typ in het vak **[!UICONTROL User Name]** een unieke gebruikersnaam.
+1. Typ in het vak **[!UICONTROL Password]** een wachtwoord voor de gebruiker en klik op **[!UICONTROL OK]** .
 
 ## Gebruikersnaam en wachtwoordreferentie verwijderen {#delete-a-user-name-and-password-credential}
 
-1. Klik in de beheerconsole op **[!UICONTROL Settings > Trust Store Management > User and Password Credentials]**.
-1. Schakel de selectievakjes in voor de referenties die u wilt verwijderen en klik op **[!UICONTROL Delete]** en klik vervolgens op **[!UICONTROL OK]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > Trust Store Management > User and Password Credentials]** .
+1. Selecteer de selectievakjes voor de referenties die u wilt verwijderen, klik op **[!UICONTROL Delete]** en klik op **[!UICONTROL OK]** .

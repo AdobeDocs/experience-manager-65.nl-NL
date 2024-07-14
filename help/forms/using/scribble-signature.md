@@ -26,7 +26,7 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
 1. Open een formulier in Forms Designer.
 1. Sleep het veld Signature Scribble naar de pagina.
 
-   ![designer_scribble](assets/designer_scribble.png)
+   ![ designer_scripbble ](assets/designer_scribble.png)
 
    >[!NOTE]
    >
@@ -34,16 +34,16 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
 
 1. Configureer het veld Ondertekeningskrabbelen.
 
-   In het veld Ondertekeningskrabbelveld wordt informatie over de geolocatie standaard gemarkeerd als verplicht tijdens het ondertekeningsproces op iPad (en is optioneel voor andere apparaten). Dit standaardgedrag kan worden overschreven door de waarde van de optie `geoLocMandatoryOnIpad` eigenschap. Deze eigenschap wordt als extra&#39;s weergegeven in het veld Ondertekeningskrabbelen. De volgende stappen moeten worden gewijzigd:
+   In het veld Ondertekeningskrabbelveld wordt informatie over de geolocatie standaard gemarkeerd als verplicht tijdens het ondertekeningsproces op iPad (en is optioneel voor andere apparaten). Dit standaardgedrag kan worden overschreven door de waarde van de eigenschap `geoLocMandatoryOnIpad` te wijzigen. Deze eigenschap wordt als extra&#39;s weergegeven in het veld Ondertekeningskrabbelen. De volgende stappen moeten worden gewijzigd:
 
    1. Selecteer in het formulier het veld Scripting handtekening.
-   1. Selecteer de **XML-bron** tab.
+   1. Selecteer het **Source van XML** lusje.
 
       >[!NOTE]
       >
-      >Als u het tabblad XML-bron wilt openen, klikt u op **Weergave** > **XML-bron**.
+      >Om het lusje van Source van XML te openen, klik **Mening** > **Source van XML**.
 
-   1. Zoek de `<ui>` in de `<field>` de broncode als volgt labelen en wijzigen:
+   1. Zoek de tag `<ui>` in de tag `<field>` en wijzig de broncode om er als volgt uit te zien:
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -51,7 +51,7 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
       </extras>
       ```
 
-   1. Selecteer de **Ontwerpweergave** tab. Klik in het bevestigingsvak op **Ja**.
+   1. Selecteer het **lusje van de Mening van het Ontwerp**. Voor de bevestigingsdoos, klik ja ****.
    1. Sla het formulier op.
 
 1. Het formulier weergeven op een ondersteund apparaat/desktopbrowser.
@@ -62,9 +62,9 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
 
 Nadat een veld Handtekeningenkrabbels aan het formulier is toegevoegd en het is gegenereerd, wordt een dialoogvenster geopend wanneer u op het veld klikt of erop tikt. De gebruiker kan met een muis, vinger of stift een handtekening krabbelen in het tekengebied dat wordt aangegeven door een gestippelde rechthoek.
 
-![geolocatie](assets/geolocation.png)
+![ geolocation ](assets/geolocation.png)
 
-**A.** Penseel **B.** Gummetje **C.** Geolocation **D.** Geolocatie-informatie
+**A.** Penseel **B.** Gummetje **C.** Geolocatie **D.** Geolocatieinformatie
 
 ### Geo-tagging {#geo-tagging}
 
@@ -74,32 +74,32 @@ Wanneer u tijdens het maken van de krabbelmodule op het pictogram voor de geoloc
 >
 Op de iPad is het standaard verplicht om geolocatiegegevens in te sluiten.
 
-Op de iPad wordt het geolocatiepictogram niet standaard weergegeven en worden de geolocatiegegevens automatisch ingesloten wanneer u op **OK**.
+Op iPad, wordt het geolocatiepictogram niet getoond door gebrek, en de geolocatieinformatie wordt automatisch ingebed, wanneer u **O.K.** klikt.
 
-Voor iPads kunt u deze instelling wijzigen door de waarde van `geoLocManadatoryOnIpad` parameter to `0`in de init-parameters van het veld.
+Voor iPads kan deze instelling worden gewijzigd door de waarde van de parameter `geoLocManadatoryOnIpad` in de parameter init van het veld in te stellen op `0` .
 
-* Wanneer informatie over de geolocatie verplicht is, krijgt de gebruiker een kleiner tekengebied te zien. Geolocatietekst wordt toegevoegd wanneer de gebruiker klikt **OK** op het resterende gebied.
+* Wanneer informatie over de geolocatie verplicht is, krijgt de gebruiker een kleiner tekengebied te zien. De tekst van Geolocation wordt toegevoegd wanneer de gebruiker **O.K.** pictogram op het resterende gebied klikt.
 * In andere gevallen krijgt de gebruiker een volledig te tekenen gebied te zien. Als de gebruiker geolocatiegegevens insluit, wordt de grootte van dit gebied aangepast aan de tekst van de geolocatie.
 
 ### Een handtekening wissen {#clearing-a-signature}
 
-Tijdens het gebruik van deze functie kan een gebruiker op de knop **Gummetje** pictogram om het veld te wissen en opnieuw te beginnen. Als er geolocatiegegevens zijn toegevoegd, wordt deze ook gewist.
+Terwijl het gebruiken van deze eigenschap, kan een gebruiker het **pictogram van het Gummetje** klikken om het gebied te ontruimen, en opnieuw te beginnen. Als er geolocatiegegevens zijn toegevoegd, wordt deze ook gewist.
 
 ### Een handtekening opslaan {#saving-a-signature}
 
-Klik op de knop **OK** het script als een afbeelding in het veld wordt opgeslagen. Het beeld en de waarden kunnen aan server voor verdere verwerking worden voorgelegd. Nadat de gebruiker op de knop heeft geklikt **OK**, is het krabbelveld vergrendeld. De handtekening kan niet opnieuw worden bewerkt met de krabbelwidget.
+Het klikken van het **O.K.** pictogram bewaart het manuscript als beeld op het gebied. Het beeld en de waarden kunnen aan server voor verdere verwerking worden voorgelegd. Zodra een gebruiker **O.K.** heeft geklikt, is het krabbelgebied gesloten. De handtekening kan niet opnieuw worden bewerkt met de krabbelwidget.
 
 Als u op het veld Krabbelen tikt of erop klikt, wordt het dialoogvenster geopend in de modus Alleen-lezen.
 
-![3](assets/3.png)
+![ 3 ](assets/3.png)
 
 ### Pengte selecteren {#selecting-pen-size}
 
-Klik op de knop **Penselen** om een lijst weer te geven met beschikbare penformaten. Klik op een pengrootte om de bijbehorende pen te gebruiken.
+Klik het **pictogram van Borstels** om een lijst van beschikbare pengrootte te tonen. Klik op een pengrootte om de bijbehorende pen te gebruiken.
 
 ### Handtekeningen uit het formulier verwijderen {#delete-signatures-from-the-form}
 
 De handtekeningen uit het formulier verwijderen:
 
-* (Mobiele apparaten) Druk lang op het handtekeningveld en selecteer in het bevestigingsvenster **Ja**.
-* (Computer) Houd de muisaanwijzer boven het handtekeningveld en klik op de knop **Annuleren** en klikt u in het bevestigingsvenster op **Ja**.
+* (Mobiele apparaten) Lang druk het handtekeningsgebied, en op de bevestigingsdialoog, uitgezochte **ja**.
+* (Desktop) Beweeg over het handtekeningsgebied, klik **annuleer** pictogram, en op de bevestigingsdialoog, klik ja ****.

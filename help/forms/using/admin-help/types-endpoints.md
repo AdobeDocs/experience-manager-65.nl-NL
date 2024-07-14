@@ -26,21 +26,21 @@ Alvorens de dienst kan worden gebruikt, moet u een eindpunt vormen en toelaten. 
 
 De volgende soorten eindpunten kunnen aan de diensten worden toegevoegd. Niet alle services ondersteunen alle eindpunten:
 
-**E-mail:** Hiermee kan een gebruiker een service aanroepen door een e-mailbericht met een of meer bestandsbijlagen naar een opgegeven e-mailaccount te verzenden. Alvorens u een e-maileindpunt vormt, moet u de vereiste e-mailrekeningen vormen. (Zie E-maileindpunten configureren.)
+**E-mail:** laat een gebruiker toe om de dienst aan te halen door een e-mailbericht met één of meerdere dossiergehechtheid naar een gespecificeerde e-mailrekening te verzenden. Alvorens u een e-maileindpunt vormt, moet u de vereiste e-mailrekeningen vormen. (Zie E-maileindpunten configureren.)
 
-**Controlemap:** Laat een gebruiker toe om de dienst aan te halen door een dossier in een omslag te plaatsen, die met een bepaald interval wordt gescand. (Zie Gecontroleerde mapeindpunten configureren.)
+**Gecontroleerde Omslag:** laat een gebruiker toe om de dienst aan te halen door een dossier in een omslag te plaatsen, die bij een bepaald interval wordt gescand. (Zie Gecontroleerde mapeindpunten configureren.)
 
-**TaskManager:** Laat een gebruiker van de Werkruimte toe om de dienst aan te halen.
+**TaskManager:** laat een gebruiker van Workspace toe om de dienst aan te halen.
 
-**Verwijderen:** Hiermee kan een toepassing die met Flex is gebouwd, de service aanroepen met (Verouderd voor AEM formulieren) AEM formulieren Verwijderen. Een remoting eindpunt wordt automatisch gecreeerd voor elke geactiveerde dienst. Een bestemming van Flex die de zelfde naam zoals het eindpunt heeft wordt gecreeerd, en de cliënten van Flex kunnen verre voorwerpen tot stand brengen die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
+**het Verwijderen:** laat een toepassing toe die met Flex wordt gebouwd om de dienst aan te halen gebruikend (Vervangen voor AEM vormen) AEM het Verwijderen van vormen. Een remoting eindpunt wordt automatisch gecreeerd voor elke geactiveerde dienst. Een bestemming van Flex die de zelfde naam zoals het eindpunt heeft wordt gecreeerd, en de cliënten van Flex kunnen verre voorwerpen tot stand brengen die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
 
-**SOAP:** Hiermee wordt een clienttoepassing die is ontwikkeld met de API&#39;s voor het programmeren van AEM formulieren, ingeschakeld om de service aan te roepen in de SOAP-modus. Een SOAP eindpunt wordt automatisch gecreeerd voor elke geactiveerde dienst.
+**SOAP:** laat een cliënttoepassing toe die gebruikend de AEM vormen programmerings APIs wordt ontwikkeld om de dienst aan te halen gebruikend SOAP wijze. Een SOAP eindpunt wordt automatisch gecreeerd voor elke geactiveerde dienst.
 
-**notitie**: *De veiligheid kan uit de documenten van de documentveiligheid worden verwijderd wanneer het SOAP eindpunt wordt gebruikt terwijl het bekijken van de documenten in Adobe Acrobat of Adobe Reader. Voor details over hoe te om SOAP punten op uw documenten onbruikbaar te maken LCRM, zie [SOAP eindpunten voor documentbeveiligingsdocumenten uitschakelen](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**nota**: *de Veiligheid kan uit documenten van de documentveiligheid worden verwijderd wanneer het SOAP eindpunt terwijl het bekijken van de documenten in Adobe Acrobat of Adobe Reader wordt gebruikt. Voor details op hoe te om SOAP punten op uw documenten onbruikbaar te maken LCRM, zie [ SOAP eindpunten voor documenten van de documentveiligheid onbruikbaar maken](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
-**EJB:** Hiermee kan een clienttoepassing die is ontwikkeld met de API&#39;s voor het programmeren van AEM formulieren, de service aanroepen met de modus Enterprise JavaBeans (EJB). Een eindpunt EJB wordt automatisch gecreeerd voor elke geactiveerde dienst.
+**EJB:** laat een cliënttoepassing toe die gebruikend de AEM vormen wordt ontwikkeld APIs om de dienst aan te halen gebruikend de wijze van JavaBeans van de Onderneming (EJB). Een eindpunt EJB wordt automatisch gecreeerd voor elke geactiveerde dienst.
 
-**WSDL:** Laat een cliënttoepassing toe die gebruikend de AEM vormen wordt ontwikkeld APIs om de dienst aan te halen gebruikend de Taal van de Definitie van de Dienst van het Web (WSDL). De pagina Core Configurations bevat een optie om WSDL-generatie in te schakelen voor alle services die onderdeel zijn van AEM formulieren. (Zie Algemene instellingen voor AEM formulieren configureren.)
+**WSDL:** laat een cliënttoepassing toe die gebruikend de AEM vormen wordt ontwikkeld APIs om de dienst aan te halen gebruikend de Taal van de Definitie van de Dienst van het Web (WSDL). De pagina Core Configurations bevat een optie om WSDL-generatie in te schakelen voor alle services die onderdeel zijn van AEM formulieren. (Zie Algemene instellingen voor AEM formulieren configureren.)
 
 **REST:** De processen die in Workbench worden gecreeerd kunnen worden gevormd zodat u hen door de verzoeken van de Overdracht van de Staat van de Vertegenwoordiging (REST) kunt aanhalen. REST-aanvragen worden verzonden vanaf HTML-pagina&#39;s. Met andere woorden, u kunt een AEM formulierproces rechtstreeks vanaf een webpagina oproepen met behulp van een REST-aanvraag.
 

@@ -1,6 +1,6 @@
 ---
 title: API's die worden gebruikt in de AEM Forms-werkruimte
-description: Publieke Java&trade en JavaScript API's en methoden van de werkruimte van AEM Forms van het LiveCycle, beschikbaar voor aanpassing en automatisering.
+description: Openbare Java&handel; en JavaScript APIs en methodes van de werkruimte van AEM Forms van het LiveCycle, voor aanpassing en automatisering beschikbaar.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -232,9 +232,9 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Het verwijdert een gebruiker uit de lijst van gebruikers de waarvan rij voor de het programma geopende gebruiker toegankelijk is.</td>
   </tr>
   <tr>
-   <td>getAllQueues<br /> </td>
-   <td>ProcessManagementQueueService<br /> </td>
-   <td>getAllQueues<br /> </td>
+   <td>getAllQueues <br /> </td>
+   <td>ProcessManagementQueueService <br /> </td>
+   <td>getAllQueues <br /> </td>
    <td>Het krijgt alle rijen (eigen, gedeelde, en groepsrijen) toegankelijk voor de het programma geopende gebruiker.<br /> </td>
   </tr>
   <tr>
@@ -262,10 +262,10 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Het keert een lijst van alle procesnamen terug die door de het programma geopende gebruiker worden deelgenomen.</td>
   </tr>
   <tr>
-   <td>getProcessInstance<br /> </td>
-   <td>ProcessManagementProcessService<br /> </td>
-   <td>getProcessInstance<br /> </td>
-   <td>Er worden details van een procesinstantie opgehaald.<br /> </td>
+   <td>getProcessInstance <br /> </td>
+   <td>ProcessManagementProcessService <br /> </td>
+   <td>getProcessInstance <br /> </td>
+   <td>Het haalt details van een procesinstantie.<br /> </td>
   </tr>
   <tr>
    <td>getProcessInstances</td>
@@ -298,7 +298,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Inhoud wordt geretourneerd voor een zoeksjabloon.</td>
   </tr>
   <tr>
-   <td>findTasksJson<br /> </td>
+   <td>findTasksJson <br /> </td>
    <td>ProcessManagementQueryService</td>
    <td>findTasksJson</td>
    <td>Het zoekt en keert alle taken terug die aan alle voorwaarden van een onderzoeksmalplaatje voldoen.</td>
@@ -328,7 +328,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Het keert alle taken van directe rapporten van de het programma geopende manager terug.</td>
   </tr>
   <tr>
-   <td>getTaskOfDirectReport<br /> </td>
+   <td>getTaskOfDirectReport <br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
    <td>Het keert een taak van een gespecificeerd direct rapport van de het programma geopende manager terug.</td>
@@ -349,25 +349,25 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>getProperty</td>
    <td>WorkspacePropertyService</td>
    <td>getProperty</td>
-   <td>Het krijgt een bezit van de Werkruimte voor een gebruiker.</td>
+   <td>Er wordt een Workspace-eigenschap voor een gebruiker opgehaald.</td>
   </tr>
   <tr>
    <td>removeProperty</td>
    <td>WorkspacePropertyService</td>
    <td>delete</td>
-   <td>Het verwijdert een bezit van de Werkruimte voor een gebruiker.</td>
+   <td>Een Workspace-eigenschap voor een gebruiker wordt verwijderd.</td>
   </tr>
   <tr>
    <td>getProperties</td>
    <td>WorkspacePropertyService</td>
    <td>getPropertiesAsMap</td>
-   <td>Hiermee worden alle Workspace-eigenschappen voor een gebruiker geretourneerd.</td>
+   <td>Alle Workspace-eigenschappen worden voor een gebruiker geretourneerd.</td>
   </tr>
   <tr>
    <td>setProperty</td>
    <td>WorkspacePropertyService</td>
    <td>setProperty</td>
-   <td>Hiermee wordt een eigenschap Workspace voor een gebruiker ingesteld.</td>
+   <td>Hiermee wordt een Workspace-eigenschap voor een gebruiker ingesteld.</td>
   </tr>
   <tr>
    <td>getCurrentUserImageUrl</td>
@@ -388,7 +388,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Er wordt een notitie op de server geüpload voor een taak.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer (het wordt ook direct geroepen van HTML malplaatje)<br /> </td>
+   <td>uploadRMAToServer (het wordt ook direct geroepen van HTML malplaatje) <br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>Er wordt een bijlage geüpload naar de server voor een taak.</td>

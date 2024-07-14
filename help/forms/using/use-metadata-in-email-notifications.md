@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # Metagegevens gebruiken in een e-mailmelding {#use-metadata-in-an-email-notification}
 
-Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of groep. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of naar elk lid van de bepaalde groep. Een standaard [e-mailmelding](../../forms/using/use-custom-email-template-assign-task-step.md) bevat een koppeling van de toegewezen taak en informatie met betrekking tot de taak.
+Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of groep. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of naar elk lid van de bepaalde groep. Een typisch [ e-mailbericht ](../../forms/using/use-custom-email-template-assign-task-step.md) bevat verbinding van de toegewezen taak en informatie met betrekking tot de taak.
 
 U kunt metagegevens in een e-mailsjabloon gebruiken om gegevens in een e-mailbericht dynamisch in te vullen. De waarde van de titel, beschrijving, vervaldatum, prioriteit, workflow en laatste datum in het volgende e-mailbericht wordt bijvoorbeeld dynamisch geselecteerd tijdens de runtime (wanneer een e-mailmelding wordt gegenereerd).
 
-![Standaard e-mailsjabloon](assets/default_email_template_metadata_new.png)
+![ Standaard e-mailmalplaatje ](assets/default_email_template_metadata_new.png)
 
-Metagegevens worden opgeslagen in sleutelwaardeparen. U kunt de sleutel in het e-mailmalplaatje specificeren en de sleutel wordt vervangen met een waarde bij runtime (wanneer een e-mailbericht wordt geproduceerd). In het onderstaande codevoorbeeld wordt bijvoorbeeld &quot;$ {workitem_title} &quot; is een sleutel. Deze wordt tijdens de runtime vervangen door de waarde &quot;Loan-Request&quot;.
+Metagegevens worden opgeslagen in sleutelwaardeparen. U kunt de sleutel in het e-mailmalplaatje specificeren en de sleutel wordt vervangen met een waarde bij runtime (wanneer een e-mailbericht wordt geproduceerd). In het onderstaande codevoorbeeld is &quot;$ {workitem_title} &quot; bijvoorbeeld een sleutel. Deze wordt tijdens de runtime vervangen door de waarde &quot;Loan-Request&quot;.
 
 ```html
 subject=Task Assigned - ${workitem_title}
@@ -154,9 +154,9 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 ### ECMAScript gebruiken om aangepaste metagegevens toe te voegen  {#use-ecmascript-to-add-custom-metadata}
 
-[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
+[ ECMAScript ](https://en.wikipedia.org/wiki/ECMAScript) is een scripting taal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
 
-1. Meld u aan bij CRX DE met een beheeraccount. De URL is https://&#39;[server]:[poort]&#39;/crx/de/index.jsp
+1. Meld u aan bij CRX DE met een beheerdersaccount. URL is https://&#39; [ server ]:[ haven ] /crx/de/index.jsp
 
 1. Ga naar /apps/fd/dashboard/scripts/metadataScripts. Maak een bestand met de extensie .ecma. Bijvoorbeeld usermetadata.ecma
 
@@ -178,14 +178,14 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 1. Klik op Alles opslaan. Het script kan nu worden geselecteerd in AEM workflowmodel.
 
-   ![toewijzen-metagegevens](assets/assigntask-metadata.png)
+   ![ toewijzen taak-meta-gegevens ](assets/assigntask-metadata.png)
 
 1. (Optioneel) Geef de titel van het script op:
 
    Als u de titel niet opgeeft, wordt in het veld Aangepaste metagegevens het volledige pad van het ECMAScript-bestand weergegeven. Voer de volgende stappen uit om een betekenisvolle titel voor het script op te geven:
 
-   1. Breid de manuscriptknoop uit, klik met de rechtermuisknop aan **[!UICONTROL jcr:content]** en klik op **[!UICONTROL Mixins]**.
-   1. Tekstmix:titel in dialoogvenster Mixingen bewerken en klik op **+**.
+   1. Vouw het scriptknooppunt uit, klik met de rechtermuisknop op het knooppunt **[!UICONTROL jcr:content]** en klik op **[!UICONTROL Mixins]** .
+   1. Type mix:titel in het dialoogvenster Mixins bewerken en klik op **+** .
    1. Voeg een eigenschap met de volgende waarden toe.
 
       | Naam | jcr:titel |
@@ -197,7 +197,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van AEM Forms opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
 
-Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+Om een bundel OSGi met de interface van Java tot stand te brengen, voeg ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar van de Cliënt SDK van 0} AEM Forms en [ granite jar ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. [ U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar Bestand > Nieuw project.
 

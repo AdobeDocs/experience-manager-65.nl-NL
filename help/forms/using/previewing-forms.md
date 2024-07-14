@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Een voorbeeld van een formulier bekijken {#previewing-a-form}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -30,8 +30,8 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 <table>
  <tbody>
   <tr>
-   <td><strong>Type element</strong><br /> </td>
-   <td><strong>Beschikbare voorvertoningsopties</strong><br /> </td>
+   <td><strong> Type van Activa </strong><br /> </td>
+   <td><strong> Beschikbare voorproefopties </strong><br /> </td>
   </tr>
   <tr>
    <td>Document</td>
@@ -39,7 +39,7 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
   </tr>
   <tr>
    <td>PDF-formulier</td>
-   <td>PDF-voorvertoning en -voorvertoning met gegevens<br /> </td>
+   <td>PDF voorproef en Voorproef met Gegevens <br /> </td>
   </tr>
   <tr>
    <td>adaptieve vorm</td>
@@ -47,18 +47,18 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
   </tr>
   <tr>
    <td>Formuliersjabloon</td>
-   <td>PDF-voorvertoning, PDF-voorvertoning met gegevens, HTML-voorvertoning, HTML-voorvertoning met gegevens<br /> </td>
+   <td>PDF voorproef, PDF voorproef met Gegevens, HTML voorproef, HTML voorproef met Gegevens <br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Een voorbeeld van een formulier bekijken {#previewing-a-form-1}
 
-1. Selecteer een element waarvan u een voorvertoning wilt weergeven en klik op Voorvertoning ![aem6forms_preview](assets/aem6forms_preview.png) in de werkbalk Handelingen.
+1. Selecteer activa u wilt voorproef, en klik Voorproef ![ aem6forms_preview ](assets/aem6forms_preview.png) in de actietoolbar.
 
    >[!NOTE]
    >
-   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klikken ![aem6forms_viewlist](assets/aem6forms_viewlist.png) of ![aem6forms_viewcard](assets/aem6forms_viewcard.png) om van mening te veranderen.
+   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klik ![ aem6forms_viewlist ](assets/aem6forms_viewlist.png) of ![ aem6forms_viewcard ](assets/aem6forms_viewcard.png) om meningen te schakelen.
 
 1. Klik op Voorvertoning om de mogelijke voorvertoningsopties weer te geven die van toepassing zijn op het geselecteerde elementtype. Klik op de gewenste optie om het geselecteerde element op een nieuw tabblad weer te geven.
 
@@ -70,7 +70,7 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
 ## Voorvertonen met gegevens {#preview-with-data}
 
-Wanneer u **Voorvertonen met gegevens** U kunt zien hoe het formulier eruitziet met de werkelijke gegevens die erin zijn ingevoerd. Met de optie Voorvertonen met gegevens kunt u een XML uploaden die voorbeeldgebruikersgegevens bevat. De voorbeeldgebruikersgegevens worden gebruikt om het voorbeeldformulier in de door u gekozen indeling in te vullen.
+Wanneer u **Voorproef met Gegevens** selecteert, kunt u zien hoe de vorm met echte gegevens ingegaan in het kijkt. Met de optie Voorvertonen met gegevens kunt u een XML uploaden die voorbeeldgebruikersgegevens bevat. De voorbeeldgebruikersgegevens worden gebruikt om het voorbeeldformulier in de door u gekozen indeling in te vullen.
 
-1. Selecteer een element en klik op Voorvertoning ![aem6forms_preview](assets/aem6forms_preview.png)en selecteert u **Voorvertonen met gegevens**.
+1. Selecteer een activa, klik Voorproef ![ aem6forms_preview ](assets/aem6forms_preview.png), en selecteer **Voorproef met Gegevens**.
 1. Geef in het dialoogvenster Formulier voorvertonen de formuliergegevens op als een XML-bestand. Klik op Voorbeeld om het formulier te genereren met de samengevoegde gegevens van XML.

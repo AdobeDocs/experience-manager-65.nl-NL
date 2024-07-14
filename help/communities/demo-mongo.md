@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-In deze zelfstudie wordt beschreven hoe u het programma kunt instellen [MSRP](msrp.md) for *één auteur* instantie en *één publicatie* -instantie.
+Dit leerprogramma beschrijft hoe te opstelling [ MSRP ](msrp.md) voor *één auteur* instantie en *één publiceren* instantie.
 
 Met deze opstelling, is de communautaire inhoud toegankelijk van zowel auteur als publicatiemilieu&#39;s zonder het moeten voorwaarts of omgekeerd repliceren user-generated inhoud (UGC).
 
-Deze configuratie is geschikt voor *niet-productie* omgevingen zoals voor ontwikkeling en/of demonstratie.
+Deze configuratie is geschikt voor *niet-productie* milieu&#39;s zoals voor ontwikkeling en/of demonstratie.
 
-**A *productie* milieu:**
+**a *productie* milieu zou moeten:**
 
 * MongoDB uitvoeren met een replicaset
 * SolrCloud gebruiken
@@ -36,7 +36,7 @@ Deze configuratie is geschikt voor *niet-productie* omgevingen zoals voor ontwik
 
 ### MongoDB installeren {#install-mongodb}
 
-* MongoDB downloaden van [https://www.mongodb.com/](https://www.mongodb.com/)
+* Download MongoDB van [ https://www.mongodb.com/](https://www.mongodb.com/)
 
    * Keuze van besturingssysteem:
 
@@ -55,8 +55,8 @@ Deze configuratie is geschikt voor *niet-productie* omgevingen zoals voor ontwik
 
       * Het is niet nodig mongo&#39;s te configureren of te verschepen.
 
-   * De geïnstalleerde MongoDB-map wordt genoemd &lt;mongo-install>.
-   * Het gedefinieerde pad naar de gegevensmap wordt &lt;mongo-dbpath>.
+   * De geïnstalleerde map van MongoDB heet &lt;mongo-install>.
+   * Het gedefinieerde pad naar de gegevensmap wordt &lt;mongo-dbpath> genoemd.
 
 * MongoDB kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd.
 
@@ -70,7 +70,7 @@ Dit begint een server MongoDB gebruikend standaardhaven 27017.
 
 >[!NOTE]
 >
->Als MongoDB is gestart *na* AEM, **opnieuw opstarten** alles **AEM** instanties zodat ze verbinding maken met MongoDB.
+>Als MongoDB *na* AEM is begonnen, **nieuw begin** alle **AEM** instanties zodat verbinden zij behoorlijk met MongoDB.
 
 ### Optie voor demoproductie: Set MongoDB Replica instellen {#demo-production-option-setup-mongodb-replica-set}
 
@@ -94,7 +94,7 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
 
 ### Solo installeren {#install-solr}
 
-* Solr. downloaden van [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
+* Solr van de download van [ Apache Lucene ](https://archive.apache.org/dist/lucene/solr/):
 
    * Geschikt voor elk besturingssysteem.
    * Solr versie 7.0.
@@ -104,18 +104,18 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
 
    * Volg &#39;voorbeeld&#39; Solr instellen.
    * Er is geen service nodig.
-   * De geïnstalleerde map Solr wordt aangeroepen &lt;solr-install>.
+   * De geïnstalleerde map Solr heet &lt;solr-install>.
 
 ### Solr voor AEM Communities configureren {#configure-solr-for-aem-communities}
 
 Om een inzameling Solr voor MSRP voor demo te vormen, zijn er twee te nemen besluiten (selecteer de verbindingen aan belangrijkste documentatie voor details):
 
-1. Solr uitvoeren in zelfstandige of [SolrCloud-modus](msrp.md#solrcloudmode).
-1. Installeren [standaard](msrp.md#installingstandardmls) of [geavanceerd](msrp.md#installingadvancedmls) meertalig zoeken (MLS).
+1. Solr van de looppas in standalone of [ wijze SolrCloud ](msrp.md#solrcloudmode).
+1. Installeer [ standaard ](msrp.md#installingstandardmls) of [ geavanceerd ](msrp.md#installingadvancedmls) meertalig onderzoek (MLS).
 
 ### Zelfstandige zonne-energie {#standalone-solr}
 
-De methode voor het uitvoeren van Solr kan verschillen, afhankelijk van de versie en wijze van installatie. De [Solo-naslaggids](https://archive.apache.org/dist/lucene/solr/ref-guide/) is de gezaghebbende documentatie.
+De methode voor het uitvoeren van Solr kan verschillen, afhankelijk van de versie en wijze van installatie. De [ Solr verwijzingsgids ](https://archive.apache.org/dist/lucene/solr/ref-guide/) is de gebiedende documentatie.
 
 Voor het gemak, gebruikend versie 4.10 als voorbeeld, begin Solr op standalone wijze:
 
@@ -124,13 +124,13 @@ Voor het gemak, gebruikend versie 4.10 als voorbeeld, begin Solr op standalone w
 
 Dit proces begint een Solr server van HTTP gebruikend standaardhaven 8983. U kunt naar de Solr Console bladeren om een Solr console voor het testen te krijgen.
 
-* standaard solr-console: [http://localhost:8983/solr/](http://localhost:8983/solr/)
+* standaard de console van Solr: [ http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
 >Als Solr Console niet beschikbaar is, controleer de logboeken onder &lt;solrinstall>/example/logs. Kijk of SOLR probeert te binden aan een specifieke hostname die niet kan worden opgelost (bijvoorbeeld &quot;user-macbook-pro&quot;).
 >
-Zo ja, update `etc/hosts` bestand met een nieuwe vermelding voor deze hostnaam (bijvoorbeeld 127.0.0.1 user-macbook-pro) om ster Solr op de juiste wijze te openen.
+Als dat het geval is, werkt u het `etc/hosts` -bestand bij met een nieuw item voor deze hostnaam (bijvoorbeeld 127.0.0.1 user-macbook-pro) en geeft u het bestand de juiste naam.
 
 ### SolrCloud {#solrcloud}
 
@@ -144,36 +144,36 @@ Start de auteur en publiceer AEM indien nodig.
 
 Als AEM actief was voordat MongoDB werd gestart, moeten de AEM instanties opnieuw worden gestart.
 
-Volg de instructies op de hoofddocumentatiepagina: [MSRP - MongoDB Common Store](msrp.md)
+Volg de instructies op de belangrijkste documentatiepagina: [ MSRP - MongoDB Gemeenschappelijke Opslag ](msrp.md)
 
 ## Testen {#test}
 
 Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een opmerking op de publicatieinstantie en bekijkt u deze op de auteurinstantie. U ziet de UGC in MongoDB en Solr:
 
-1. Blader in de publicatie-instantie naar de [Community Components Guide](http://localhost:4503/content/community-components/en/comments.html) en selecteert u de component Opmerkingen.
+1. Voor publiceer instantie, doorblader aan de [ Communautaire pagina van de Gids van Componenten ](http://localhost:4503/content/community-components/en/comments.html) en selecteer de component van Commentaren.
 1. Meld u aan om een opmerking te plaatsen:
 1. Typ tekst in het tekstinvoervak voor opmerkingen en klik op **[!UICONTROL Post]**
 
-   ![postcommentaar](assets/post-comment.png)
+   ![ post-commentaar ](assets/post-comment.png)
 
-1. U kunt de opmerking alleen weergeven op de knop [auteurinstantie](http://localhost:4502/content/community-components/en/comments.html) (waarschijnlijk nog steeds aangemeld als beheerder/beheerder).
+1. Eenvoudig bekijk de commentaar op de [ auteursinstantie ](http://localhost:4502/content/community-components/en/comments.html) (waarschijnlijk nog ondertekend binnen als admin/admin).
 
-   ![view-comment](assets/view-comment.png)
+   ![ mening-commentaar ](assets/view-comment.png)
 
-   Opmerking: terwijl er JCR-knooppunten onder de *asipath* Op auteur, zijn deze knopen voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
+   Nota: Terwijl er knopen JCR onder *azipath* op auteur zijn, zijn deze knopen voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
 
-1. UGC weergeven in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
+1. De UGC in mongodb weergeven **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 
-   ![ugc-inhoud](assets/ugc-content.png)
+   ![ ugc-content ](assets/ugc-content.png)
 
 1. De UGC in Solr weergeven:
 
-   * Bladeren naar Solr-dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/).
-   * Gebruiker `core selector` om `collection1`.
-   * Selecteren `Query`.
-   * Selecteren `Execute Query`.
+   * Blader naar het dashboard Solr: [ http://localhost:8983/solr/ ](http://localhost:8983/solr/).
+   * Gebruiker `core selector` selecteert `collection1` .
+   * Selecteer `Query` .
+   * Selecteer `Execute Query` .
 
-   ![ugc-solr](assets/ugc-solr.png)
+   ![ ugc-solr ](assets/ugc-solr.png)
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -183,9 +183,9 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
 1. Zorg ervoor dat MSRP is gevormd om de standaardleverancier te zijn:
 
-   * Ga bij alle auteurs en publiceer AEM [Opslagconfiguratieconsole](srp-config.md)of controleer de AEM opslagplaats:
+   * Voor alle auteur en publiceer AEM instanties, herzie de [ console van de Configuratie van de Opslag ](srp-config.md), of controleer de AEM bewaarplaats:
 
-   * In JCR, als [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, betekent het dat de opslagleverancier JSRP is.
-   * Als het srpc-knooppunt bestaat en het knooppunt bevat [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), zouden de eigenschappen van de standaardconfiguratie MSRP moeten bepalen om de standaardleverancier te zijn.
+   * In JCR, als [/etc/socialconfig ](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) geen [ srpc ](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop bevat, betekent het dat de opslagleverancier JSRP is.
+   * Als de srpc knoop bestaat en knoop [ standaardconfiguratie ](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) bevat, zouden de eigenschappen van de standaardconfiguratie MSRP moeten bepalen om de standaardleverancier te zijn.
 
 1. Zorg ervoor dat AEM opnieuw begonnen was nadat MSRP selecteerde.

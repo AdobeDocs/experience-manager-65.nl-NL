@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 Artikelen, banners en verzamelingen worden weergegeven als cq:Pagina&#39;s in AEM.
 
@@ -30,7 +30,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 ## Algemene integratieeigenschappen {#common-integration-properties}
 
-| **Eigenschapnaam** | **Type** | **Standaardwaarden of Verwachte waarden** | **Beschrijving** |
+| **de Naam van het Bezit** | **Type** | **Gebreken of Verwachte Waarden** | **Beschrijving** |
 |---|---|---|---|
 | dps-id | String |  | toegewezen door AEM Mobile en opgeslagen door AEM zodra geüpload naar AEM Mobile of geïmporteerd uit AEM Mobile |
 | dps-resourceType | String | dps:Artikel | dps:banner | dps:Verzameling | eigenschap type entiteit |
@@ -49,28 +49,28 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 | dps-shortAbstract | String |  |
 | dps-afdeling | String |  |
 | dps-categorie | String |  |
-| dps-trefwoorden | String[] |  |
-| dps-internalKeywords | String[] |  |
-| dps-belang | String[] | Important from {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-trefwoorden | String [] |  |
+| dps-internalKeywords | String [] |  |
+| dps-belang | String [] | Important from {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artikelen {#articles}
 
-| **Eigenschapnaam** | **Type** | **Standaardwaarden of Verwachte waarden** |
+| **de Naam van het Bezit** | **Type** | **Gebreken of Verwachte Waarden** |
 |---|---|---|
 | dps-auteur | String |  |
 | dps-auteurURL | String |  |
 | dps-hideFromBrowsePage | Boolean |  |
 | dps-toegang | String | ProtectedAccess from {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
-| **Sociaal** |  |  |
+| **Sociale** |  |  |
 | dps-socialShareURL | String |  |
 | dps-articleText | String |  |
 | dps-url | String |  |
 
 ### Banners {#banners}
 
-| **Eigenschapnaam** | **Type** | **Standaardwaarden of Verwachte waarden** |
+| **de Naam van het Bezit** | **Type** | **Gebreken of Verwachte Waarden** |
 |---|---|---|
-| dps-tapAction |  | TapAction van {webLink} |
+| dps-tapAction |  | TapAction from {webLink} |
 | dps-tapActinUrl |  |  |
 
 ### Verzamelingen {#collections}
@@ -81,7 +81,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 | dps-readingPosition | String | from {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Boolean |  |
 | dps-allowDownload | Boolean |  |
-| dps-openDefault | String | from {&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-openDefault | String | van &quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps-lay-out | String |  |
 
 ## Inhoudsknooppunten {#content-nodes}

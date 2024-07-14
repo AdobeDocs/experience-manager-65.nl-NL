@@ -29,12 +29,12 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"> omvatten </a></td>
    <td>Nee</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md">clientllibs</a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.qna</td>
+   <td> <a href="clientlibs.md"> clientllibs </a></td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stemed<br /> cq.social.hbs.qna</td>
   </tr>
   <tr>
    <td> sjablonen</td>
@@ -46,7 +46,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
   </tr>
   <tr>
    <td> eigenschappen</td>
-   <td>Zie <a href="working-with-qna.md">Functie Vragen en antwoorden op forum</a></td>
+   <td>Zie {de Eigenschap van het Forum van 0} Q&amp;A </a><a href="working-with-qna.md"></td>
   </tr>
  </tbody>
 </table>
@@ -55,28 +55,28 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [QnA API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [ QnA API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [QnA-eindpunten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [ QnA Eindpunten ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### QnA-functie {#qna-function}
 
-Een community-sitestructuur die de [QnA-functie](functions.md#qna-function) heeft gevormd `QnA` en instellingen die invloed hebben op de matiging en codering. De functie QnA ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](users.md#privileged-members-group).
+Een communautaire plaatsstructuur die de [ functie QnA ](functions.md#qna-function) omvat heeft een gevormde `QnA` component, en montages die moderatie en het etiketteren beïnvloeden. De functie QnA steunt het identificeren van a [ bevoorrechte gebruikersgroep van het lidlid ](users.md#privileged-members-group).
 
 ### Toegang tot berichten van het Forum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door de gebruiker gegenereerde inhoud moderniseren](moderate-ugc.md).
+Zie [ het Modereren van user-Generated Inhoud ](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
-**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
+**de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de opslagplaats.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [Refactoring voor sociale hulpmiddelen](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.
+* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - inleiding en overzicht van het opslagruimtegebruik.
+* [ SRP en Hoofdzaak UGC ](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen.
+* [ SocialUtils Refactoring ](socialutils.md) - verouderde nutsmethodes in kaart brengen aan huidige SRP nutsmethodes.

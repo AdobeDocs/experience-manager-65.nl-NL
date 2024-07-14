@@ -20,21 +20,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
-De **`Manage App`** kunt u details over de toepassing bewerken met de tegel op het dashboard van de app. Klik op de pagina Details om deze te openen **`Manage App`** de detaillink van de tegel. Van binnen **`Manage App`** pagina, kunt u de montages van de Configuratie van de Toepassing van PhoneGap (config.xml) uitgeven en uw toepassing voor voorlegging aan de diverse toepassingsopslag voorbereiden.
+Met de tegel **`Manage App`** op het dashboard van de app kunt u gegevens over de toepassing bewerken. Als u de pagina Details wilt openen, klikt u op de detailkoppeling van de tegel van **`Manage App`** . Vanuit de **`Manage App`** -pagina kunt u de configuratie-instellingen (config.xml) van de PhoneGap-toepassing bewerken en uw toepassing voorbereiden voor verzending naar de verschillende opslagruimten van toepassingen.
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![ chlimage_1-116 ](assets/chlimage_1-116.png)
 
-## De `Manage App` tegel {#understanding-the-manage-app-tile}
+## De `Manage App` -tegel begrijpen {#understanding-the-manage-app-tile}
 
-U kunt in elke tegel in de **`Manage App`** U kunt een tegel toevoegen om details weer te geven of te bewerken door te klikken op &#39;...&#39; in de rechterbenedenhoek.
+U kunt in elke tegel in de tegel van **`Manage App`** boren om details te bekijken of uit te geven door &#39;...&#39; in de bodem-juiste hoek te klikken.
 
 ### Het tabblad Standaard {#the-basic-tab}
 
-U kunt de **Naam**, **Auteur**, **Korte beschrijving** en de **Beschrijving** voor uw app op dit tabblad.
+U kunt de **Naam**, **Auteur**, **Korte Beschrijving**, en **Beschrijving** voor uw app van dit lusje uitgeven.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![ chlimage_1-117 ](assets/chlimage_1-117.png)
 
 ### Het tabblad Geavanceerd {#the-advanced-tab}
 
@@ -55,15 +55,15 @@ Elke winkel van leverancierstoepassingen, bijvoorbeeld Apple App Store of Google
 >
 >Met de app AEM verifiëren kunt u schermafbeeldingen rechtstreeks in AEM naar uw toepassingsgegevens sturen.
 >
->Zie [Mobile QuickStart voor AEM verifiëren](/help/mobile/phonegap-mobile-quickstart.md) voor meer informatie .
+>Zie [ Mobiele QuickStart voor AEM verifiëren ](/help/mobile/phonegap-mobile-quickstart.md) voor meer details.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![ chlimage_1-118 ](assets/chlimage_1-118.png)
 
 ### Metagegevens {#metadata}
 
 >[!NOTE]
 >
->Als u eenmaal vertrouwd bent met de **`Manage App`** tegel, zie [App-metagegevens bewerken](/help/mobile/phonegap-editmetadata.md) om de metagegevens weer te geven en te bewerken.
+>Zodra u met de **`Manage App`** tegel vertrouwd bent, zie [ het Uitgeven Meta-gegevens van de Toepassing ](/help/mobile/phonegap-editmetadata.md) om de meta-gegevens te bekijken en uit te geven.
 
 #### Algemene metagegevens {#common-metadata}
 
@@ -73,13 +73,13 @@ Er zijn algemene configuratie en metagegevens voor alle platforms.
 
 In deze sectie definieert u de URL van de Content Update Server, de openingspagina voor uw mobiele toepassing, de PhoneGap-versie voor compilatie, uw toepassingsversie, naam, beschrijving en meer.
 
-**App-versie** is de werkende versie van uw toepassing. De beste manier is om een notatie met drie decimalen te gebruiken en onder 1,0,0 te beginnen voor de eerste release.
+**Versie van de Toepassing** is de werkende versie van uw toepassing. De beste manier is om een notatie met drie decimalen te gebruiken en onder 1,0,0 te beginnen voor de eerste release.
 
-**PhoneGap-versie** Dit is de versie waarin u uw toepassing wilt compileren met PhoneGap. De beste manier is om de huidige versie bij te houden zodat u de nieuwste en beste functies en oplossingen voor problemen krijgt.
+**Versie PhoneGap** is de versie waarin u wenst om uw toepassing met PhoneGap te compileren. De beste manier is om de huidige versie bij te houden zodat u de nieuwste en beste functies en oplossingen voor problemen krijgt.
 
-**URL van server voor bijwerken van inhoud** Dit is de URL die uw toepassing gebruikt om te vragen om ContentSync-updates. Deze moet worden ingesteld op de URL van uw verzender of, als u geen Dispatcher gebruikt, op een van uw publicatie-instanties die wordt gebruikt om ContentSync-updates aan uw toepassing te leveren.
+**URL van de Server van de Update van de Inhoud** is URL die uw toepassing gebruikt om voor updates te roepen ContentSync. Deze moet worden ingesteld op uw Dispatcher-URL of, als u geen Dispatcher gebruikt, op een van uw publicatie-instanties die wordt gebruikt om ContentSync-updates aan uw toepassing te leveren.
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![ chlimage_1-119 ](assets/chlimage_1-119.png)
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ In deze sectie definieert u de URL van de Content Update Server, de openingspagi
 
 Elk platform dat in PhoneGap config.xml wordt bepaald kan de eigenschappen van het douaneplatform bevatten. Een AEM ontwikkelaar moet de inhoudsstructuur bijdragen om deze eigenschappen vast te leggen. Een voorbeeld van platformspecifieke eigenschappen vindt u in iOS.
 
-Metagegevens voor alle geconfigureerde platforms worden nu tegelijkertijd weergegeven op het tabblad Geavanceerd van het dialoogvenster `Manage App` tegel.
+Metagegevens voor alle geconfigureerde platforms worden nu tegelijkertijd weergegeven op het tabblad Geavanceerd van het blok `Manage App` .
 
 >[!NOTE]
 >
@@ -103,27 +103,27 @@ Voor platforms die niet door AEM worden begrepen, is het nog mogelijk voor een A
 
 De Apple AppStore heeft extra metagegevens nodig om uw toepassing voor distributie te verzenden. In de sectie met iOS-metagegevens wordt geprobeerd de vereiste informatie te verzamelen die door het iTMSTransporter-hulpprogramma van Apple kan worden gebruikt om de metagegevens te publiceren naar de bijbehorende Apple-ontwikkelaarsaccount.
 
-Als u de specifieke metagegevens van Apple wilt opvragen, maakt u uw toepassing op [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Tijdens het maken van uw toepassing genereert Apple metagegevens die vereist zijn in de sectie met iOS-metagegevens als u de Apple iTMSTransporter-tool wilt gebruiken om de metagegevens te valideren en te uploaden naar itunesconnect.apple.com. Als u de te verzamelen metagegevens wilt verkrijgen, hoeft u de specifieke iOS-metagegevens niet in te vullen. U kunt nog steeds de metagegevens exporteren waarin de iOS en de algemene metagegevens worden samengevoegd en alle schermafbeeldingen verzamelen in een ZIP-bestand dat op elk gewenst moment kan worden gedownload.
+Om de specifieke meta-gegevens van Apple te verkrijgen, creeer uw toepassing op [ https://itunesconnect.apple.com ](https://itunesconnect.apple.com/). Tijdens het maken van uw toepassing genereert Apple metagegevens die vereist zijn in de sectie met iOS-metagegevens als u de Apple iTMSTransporter-tool wilt gebruiken om de metagegevens te valideren en te uploaden naar itunesconnect.apple.com. Als u de te verzamelen metagegevens wilt verkrijgen, hoeft u de specifieke iOS-metagegevens niet in te vullen. U kunt nog steeds de metagegevens exporteren waarin de iOS en de algemene metagegevens worden samengevoegd en alle schermafbeeldingen verzamelen in een ZIP-bestand dat op elk gewenst moment kan worden gedownload.
 
 Het gedownloade zip-bestand bevat een gps-bestand dat kan worden geïnspecteerd op metadata.xml. Het itmsp-bestand bevat de geëxporteerde metagegevens (in het bestand metadata.xml) en alle bijbehorende schermafbeeldingen.
 
 De exportfunctionaliteit wordt gebruikt om een handige manier te bieden om de schermafbeeldingen en metagegevens te verzamelen die kunnen worden doorgegeven aan de uitgever van de toepassing voor invoer in de leverancierspecifieke toepassingsopslag.
 
-![chlimage_1-120](assets/chlimage_1-120.png)
+![ chlimage_1-120 ](assets/chlimage_1-120.png)
 
-#### Metagegevens Android™ {#android-metadata}
+#### Android™-metagegevens {#android-metadata}
 
 Wanneer u het Android™-platform selecteert, zijn er op dit punt geen aangepaste metagegevens die kunnen worden ingesteld. Wanneer u op de knop Downloaden klikt, wordt een ZIP-bestand gegenereerd met een eigenschappenbestand dat alle metagegevens en de bijbehorende schermafbeeldingen bevat.
 
 De exportfunctionaliteit wordt gebruikt om een handige manier te bieden om de schermafbeeldingen en metagegevens te verzamelen die kunnen worden doorgegeven aan de uitgever van de toepassing voor invoer in de leverancierspecifieke toepassingsopslag.
 
-![chlimage_1-121](assets/chlimage_1-121.png)
+![ chlimage_1-121 ](assets/chlimage_1-121.png)
 
 ### URL van server voor bijwerken van inhoud {#content-update-server-url}
 
 Een van de belangrijkste functies van AEM Apps is de mogelijkheid om een mobiele toepassing nieuwe inhoud te laten aanvragen via ContentSync, waarbij inhoud uit HTML-bronnen, pagina&#39;s, video, afbeeldingen, tekst en meer kan bestaan. Nadat de auteur van de inhoud de inhoud heeft bijgewerkt en deze inhoud vervolgens heeft gepubliceerd, stelt de server de update van de inhoud beschikbaar voor de mobiele toepassing die deze kan downloaden.
 
-Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te publiceren instantie moet richten; of direct of door de Verzender of CDN. De indeling van de URL is eenvoudig:
+Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te publiceren instantie moet richten; of direct of door Dispatcher of CDN. De indeling van de URL is eenvoudig:
 
 `https://[hostname]:[port]`
 
@@ -133,25 +133,25 @@ Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te pu
 
 ### Het tabblad Plug-ins {#the-plugins-tab}
 
-De **Plug-ins** bevat een beschrijving van de plug-ins die aan uw app zijn gekoppeld. Deze informatie wordt gebruikt om de aangewezen stop in tijdens een bouwstijl terug te winnen.
+Het **lusje van Insteekmodules** beschrijft de stoppen verbonden aan uw app. Deze informatie wordt gebruikt om de aangewezen stop in tijdens een bouwstijl terug te winnen.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![ chlimage_1-122 ](assets/chlimage_1-122.png)
 
 ### Het tabblad Schermopnamen {#the-screenshots-tab}
 
-De **Screenshots** worden de ondersteunde schermresoluties op verschillende platforms weergegeven.
+Het **lusje van Screenshots** toont de gesteunde het schermschot resoluties op verschillende platforms.
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![ chlimage_1-123 ](assets/chlimage_1-123.png)
 
 >[!NOTE]
 >
->Als u schermafbeeldingen wilt toevoegen en verwijderen, raadpleegt u [App-metagegevens bewerken](/help/mobile/phonegap-editmetadata.md).
+>Om schermafbeeldingen toe te voegen en te verwijderen, zie [ het Uitgeven Metagegevens van de App ](/help/mobile/phonegap-editmetadata.md).
 
 ### Het tabblad Verificatie {#the-authentication-tab}
 
-De **Verificatie** kunt u een OAuth-client selecteren die u aan uw toepassing wilt koppelen en een ontwikkelaar in staat stellen Adobe Experience Manager OAuth-verificatie te gebruiken.
+Het **lusje van de Authentificatie** laat u een cliënt OAuth selecteren om met uw toepassing te associëren en laat een ontwikkelaar toe om de authentificatie van Adobe Experience Manager te gebruiken OAuth.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![ chlimage_1-124 ](assets/chlimage_1-124.png)
 
 ### De volgende stappen {#the-next-steps}
 

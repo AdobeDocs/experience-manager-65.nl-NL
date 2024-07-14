@@ -62,20 +62,20 @@ Wanneer u in de AEM Forms-werkruimte navigeert met een toetsenbord, voldoet de n
 
 U kunt de verschillende voorkeuren voor de AEM Forms-werkruimte in de volgende categorieën instellen:
 
-**Buiten kantoor:** Stel voorkeuren in om te bepalen hoe taken aan andere personen worden toegewezen terwijl u zich buiten het kantoor bevindt. Zie [Voorkeuren instellen voor Buiten het kantoor](todo-lists.md#setting-out-of-office-preferences).
+**uit Bureau:** plaats voorkeur om te controleren hoe de taken aan andere mensen worden toegewezen terwijl u uit het bureau bent. Zie [ Plaatsende uit-van-bureauvoorkeur ](todo-lists.md#setting-out-of-office-preferences).
 
-**Wachtrijen:** Stel voorkeuren in voor het delen van uw lijst Aan/Uit met andere gebruikers of voor het aanvragen van toegang tot de lijst van een andere gebruiker. Zie [Werken met taken uit groep en gedeelde wachtrijen](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Lijsten:** plaats voorkeur voor het delen van uw te doen lijst met andere gebruikers of voor het verzoeken van toegang tot de lijst van een andere gebruiker. Zie [ Werkend met taken van groep en gedeelde rijen ](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**UI-instellingen:** Stel voorkeuren in voor de interactie met de AEM Forms-werkruimte. Zie [Gebruikersinterfacevoorkeuren instellen](#set-user-interface-preferences).
+**Montages UI:** plaats voorkeur voor hoe u met de werkruimte van AEM Forms in wisselwerking staat. Zie [ plaatsen gebruikersinterfacevoorkeur ](#set-user-interface-preferences).
 
 ### Gebruikersinterfacevoorkeuren instellen {#set-user-interface-preferences}
 
 Stel de voorkeuren voor de gebruikersinterface in op het tabblad Voorkeuren > UI-instellingen. De volgende voorkeuren zijn beschikbaar.
 
-* **Startlocatie:** Hiermee geeft u de pagina op die wordt weergegeven wanneer u zich aanmeldt bij de AEM Forms-werkruimte. De vier beschikbare opties zijn Start Process, To Do, Tracking en Favorites.
-* **Afmeldingsvraag:** Hiermee geeft u aan of u wordt gevraagd te bevestigen dat u zich wilt afmelden nadat u op Afmelden hebt geklikt.
-* **Datumnotatie:** Hiermee geeft u de indeling op voor de datumweergave die wordt gebruikt in de AEM Forms-werkruimte.
-* **Tijdnotatie**: Geeft de weergaveformaat voor de tijd op die in de AEM Forms-werkruimte wordt gebruikt.
-* **Taakgebeurtenissen via e-mail op de hoogte stellen:** Hiermee geeft u aan of u e-mailmeldingen voor taakgebeurtenissen ontvangt, inclusief taaktoewijzingen, herinneringen en deadlines voor taken in de lijst Aan-taak en in de lijst Aan-uit-groep waartoe u behoort.
-* **Forms bijvoegen in e-mail:** Hiermee geeft u aan of een kopie van het formulier bij e-mailmeldingsberichten moet worden gevoegd. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
-* **Concepten periodiek opslaan:** Hiermee geeft u aan of uw formulierconcepten regelmatig automatisch worden opgeslagen. Als u uw concepten periodiek wilt opslaan, schakelt u deze optie in en stelt u de duur voor automatisch opslaan in op 1 tot 30 minuten. Wanneer automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen na het opgegeven aantal minuten. Het concept wordt alleen automatisch opgeslagen wanneer het concept is gewijzigd sinds de laatste keer dat het is opgeslagen of automatisch is opgeslagen. Wanneer het concept wordt opgeslagen, verschijnt er een waarschuwingsbericht op het scherm.
+* **Plaats van het Begin:** specificeert de pagina die wanneer u login aan de werkruimte van AEM Forms verschijnt. De vier beschikbare opties zijn Start Process, To Do, Tracking en Favorites.
+* **LogoutVragen:** specificeert of u wordt ertoe aangezet om te bevestigen dat u zich wilt afmelden nadat u Logout klikt.
+* **Formaat van de Datum:** specificeert het formaat van de datumvertoning dat over de werkruimte van AEM Forms wordt gebruikt.
+* **Formaat van de Tijd**: Specificeert het formaat van de tijdvertoning dat over de werkruimte van AEM Forms wordt gebruikt.
+* **breng de Gebeurtenissen van de Taak via E-mail op de hoogte:** specificeert of u e-mailberichten voor taakgebeurtenissen, met inbegrip van taaktaken, herinneringen, en termijnen voor taken in uw te doen lijst en in groep te doen lijsten ontvangt die u tot behoort.
+* **maak Forms in E-mail vast:** specificeert of een exemplaar van de vorm aan e-mailberichtberichten in bijlage is. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
+* **sparen ontwerp periodiek:** specificeert of uw vormconcepten auto-bewaarde periodiek of niet zijn. Als u uw concepten periodiek wilt opslaan, schakelt u deze optie in en stelt u de duur voor automatisch opslaan in op 1 tot 30 minuten. Wanneer automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen na het opgegeven aantal minuten. Het concept wordt alleen automatisch opgeslagen wanneer het concept is gewijzigd sinds de laatste keer dat het is opgeslagen of automatisch is opgeslagen. Wanneer het concept wordt opgeslagen, verschijnt er een waarschuwingsbericht op het scherm.

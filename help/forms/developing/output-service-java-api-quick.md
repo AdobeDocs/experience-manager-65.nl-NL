@@ -1,5 +1,5 @@
 ---
-title: Java API voor uitvoerservice, snel starten (SOAP)
+title: Java API voor uitvoerservice - Snel starten (SOAP)
 description: Met de Output service Java API Quick Start (SOAP) kunt u een PDF-document maken, een PDF-document maken op basis van een XDP-bestand van de toepassing, een PDF/A-document maken, documenten doorgeven aan de Output-service, een document doorgeven in de AEM Forms-opslagruimte aan de Output-service, een PDF-document maken op basis van fragmenten, afdrukken naar een bestand, een afdrukstream naar een netwerkprinter verzenden, meerdere PDF-bestanden maken, zoekregels maken, een PDF-document transformeren.
 contentOwner: admin
 content-type: reference
@@ -46,11 +46,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM forms are based on the Forms Server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM forms are based on the Forms Server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): een PDF-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *Lening.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+Het volgende de codevoorbeeld van Java leidt tot een PDF document genoemd *Loan.pdf*. Dit document van PDF is gebaseerd op een vormontwerp genoemd *Loan.xdp* en een het gegevensdossier van XML genoemd *Loan.xml*. *Loan.pdf* wordt geschreven aan de C:\Adobe omslag die op de J2EE toepassingsserver wordt gevestigd die AEM Forms, niet de cliëntcomputer ontvangt. (Zie [ Creërend de Documenten van PDF ](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
 ```java
  /*
@@ -168,11 +168,11 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *L
 
 ## Snel starten (SOAP modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *Lening.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. Het XDP-bestand wordt geïmplementeerd als onderdeel van een AEM Forms-toepassing met de naam `Applications/FormsApplication`. Het URI-pad is `repository:///Applications/FormsApplication/1.0/FormsFolder/`. De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+Het volgende de codevoorbeeld van Java leidt tot een PDF document genoemd *Loan.pdf*. Dit document van PDF is gebaseerd op een vormontwerp genoemd *Loan.xdp* en een het gegevensdossier van XML genoemd *Loan.xml*. Het XDP-bestand wordt geïmplementeerd als onderdeel van een AEM Forms-toepassing met de naam `Applications/FormsApplication` . Het URI-pad is `repository:///Applications/FormsApplication/1.0/FormsFolder/` . *Loan.pdf* wordt geschreven aan de C:\Adobe omslag die op de J2EE toepassingsserver wordt gevestigd die AEM Forms, niet de cliëntcomputer ontvangt. (Zie [ Creërend de Documenten van PDF ](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
 >[!NOTE]
 >
->Voordat u deze snelle start uitvoert, moet u eerst een AEM Forms-toepassing met de naam Applications/FormsApplication maken. Maak een map in de toepassing met de naam FormsFolder en plaats het XDP-bestand in de map. Zie voor meer informatie [Een PDF-document genereren ](/help/forms/developing/creating-document-output-streams.md)*.*
+>Voordat u deze snelle start uitvoert, moet u eerst een AEM Forms-toepassing met de naam Applications/FormsApplication maken. Maak een map in de toepassing met de naam FormsFolder en plaats het XDP-bestand in de map. Voor meer informatie, zie [ een document van de PDF ](/help/forms/developing/creating-document-output-streams.md)*produceren.*
 
 ```java
  /*
@@ -291,19 +291,19 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *L
 
 ## Snel starten (SOAP modus): een document in de gegevensopslagruimte doorgeven aan de uitvoerservice met behulp van de Java API {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
-De volgende Java-code haalt een XDP-bestand op uit de opslagplaats en geeft het door aan de uitvoerservice binnen `com.adobe.idp.Document` -instantie. Het XDP-bestand wordt geïmplementeerd als onderdeel van een AEM Forms-toepassing met de naam `Applications/FormsApplication`. Het URI-pad is `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
+De volgende Java-code haalt een XDP-bestand op uit de opslagplaats en geeft het bestand door aan de uitvoerservice in `com.adobe.idp.Document` -instantie. Het XDP-bestand wordt geïmplementeerd als onderdeel van een AEM Forms-toepassing met de naam `Applications/FormsApplication` . Het URI-pad is `repository:///Applications/FormsApplication/1.0/FormsFolder/` .
 
 >[!NOTE]
 >
->De Repository-API wordt gebruikt om het XDP-bestand van deze locatie op te halen. (Zie [Bronnen lezen](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+>De Repository-API wordt gebruikt om het XDP-bestand van deze locatie op te halen. (Zie [ Leesmiddelen ](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
-De hoofdwaarde van de inhoud wordt ook weergegeven `repository:///Applications/FormsApplication/1.0/FormsFolder/` wordt doorgegeven aan de `OutputClient` object `generatePDFOutput2` methode (de tweede parameter). Deze waarde wordt doorgegeven aan de service Uitvoer om de service Uitvoer te informeren dat formulierelementen, zoals afbeeldingen, op deze locatie worden opgeslagen.
+De hoofdwaarde van de inhoud `repository:///Applications/FormsApplication/1.0/FormsFolder/` wordt ook doorgegeven aan de methode `OutputClient` object `generatePDFOutput2` (de tweede parameter). Deze waarde wordt doorgegeven aan de service Uitvoer om de service Uitvoer te informeren dat formulierelementen, zoals afbeeldingen, op deze locatie worden opgeslagen.
 
 >[!NOTE]
 >
->U kunt de hoofdwaarde van de inhoud op dezelfde manier instellen wanneer u het dialoogvenster `generatePrintedOutput2` methode.
+>U kunt de hoofdwaarde van de inhoud op dezelfde manier instellen wanneer u de methode `generatePrintedOutput2` aanroept.
 
-De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms. (Zie [Documenten in de opslagplaats doorgeven aan de uitvoerservice](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service).)
+*Loan.pdf* wordt geschreven aan de C:\Adobe omslag die op de J2EE toepassingsserver wordt gevestigd die AEM Forms ontvangt. (Zie [ het overgaan van Documenten in de Bewaarplaats aan de Dienst van de Output ](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service).)
 
 >[!NOTE]
 >
@@ -443,7 +443,7 @@ De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserv
 
 ## Snel starten (SOAP modus): een PDF-document maken met de Java API {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *Lening.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. De *Lening.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+Het volgende de codevoorbeeld van Java leidt tot een PDF document genoemd *Loan.pdf*. Dit document van PDF is gebaseerd op een vormontwerp genoemd *Loan.xdp* en een het gegevensdossier van XML genoemd *Loan.xml*. *Loan.pdf* wordt geschreven aan de C:\Adobe omslag die op de J2EE toepassingsserver wordt gevestigd die AEM Forms, niet de cliëntcomputer ontvangt. (Zie [ Creërend de Documenten van PDF ](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
 ```java
  /*
@@ -553,7 +553,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt met de naam *L
 
 ## Snel starten (SOAP modus): een PDF/A-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF/A-document gemaakt met de naam *LoanArchive.pdf*. Dit PDF-document is gebaseerd op een formulierontwerp met de naam *Lening.xdp* en een XML-gegevensbestand met de naam *Lening.xml*. De *LoanArchive.pdf* wordt geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [PDF/A-documenten maken](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents).)
+Het volgende de codevoorbeeld van Java leidt tot een PDF/A document genoemd *LoanArchive.pdf*. Dit document van PDF is gebaseerd op een vormontwerp genoemd *Loan.xdp* en een het gegevensdossier van XML genoemd *Loan.xml*. *LoanArchive.pdf* wordt geschreven aan de C:\Adobe omslag die op de J2EE toepassingsserver wordt gevestigd die AEM Forms, niet de cliëntcomputer ontvangt. (Zie [ Creërend PDF/A Documenten ](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents).)
 
 ```java
  /*
@@ -671,7 +671,7 @@ In het volgende Java-codevoorbeeld wordt een PDF/A-document gemaakt met de naam 
 
 ## Snel starten (SOAP modus): documenten doorgeven aan de uitvoerservice met de Java API {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-Met de volgende snelle Java-start haalt u het bestand op *Lening.xdp* van Content Services. Dit XDP-bestand staat in het dialoogvenster `space /Company Home/Form Designs`. Het XDP-bestand wordt geretourneerd in een `com.adobe.idp.Document` -instantie. De `com.adobe.idp.Document` -instantie wordt doorgegeven aan de uitvoerservice. Het niet-interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *Loan.pdf *op de clientcomputer. Omdat de optie File URI is ingesteld, wordt het PDF-bestand *Loan.pdf *ook opgeslagen op de J2EE-toepassingsserver die als host fungeert voor AEM Forms. (Zie [Documenten in Content Services ES2 doorgeven aan de Output Service](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+Het volgende snelle begin van Java wint het dossier *Loan.xdp* van de Diensten van de Inhoud terug. Dit XDP-bestand bevindt zich in de map `space /Company Home/Form Designs` . Het XDP-bestand wordt geretourneerd in een `com.adobe.idp.Document` -instantie. De instantie `com.adobe.idp.Document` wordt doorgegeven aan de service Uitvoer. Het niet-interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *Loan.pdf *op de clientcomputer. Omdat de optie File URI is ingesteld, wordt het PDF-bestand *Loan.pdf *ook opgeslagen op de J2EE-toepassingsserver die als host fungeert voor AEM Forms. (Zie [ het overgaan van Documenten in Inhoud Services ES2 tot de Dienst van de Output ](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 ```java
  /*
@@ -810,7 +810,7 @@ Met de volgende snelle Java-start haalt u het bestand op *Lening.xdp* van Conten
 
 ## Snel starten (SOAP modus): een PDF-document maken op basis van fragmenten met de Java API {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt dat is gebaseerd op een formulierontwerp dat is samengesteld met de Assembler-service. De Assembler-service brengt fragmenten in meerdere XDP-bestanden samen tot één formulierontwerp. De logica van de toepassing die de dienst van de Assembler aanhaalt is in een user-defined methode genoemd `GetFormDesign`. Het niet-interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *Loan.pdf *op de clientcomputer. (Zie [PDF-documenten maken met behulp van fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
+In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt dat is gebaseerd op een formulierontwerp dat is samengesteld met de Assembler-service. De Assembler-service brengt fragmenten in meerdere XDP-bestanden samen tot één formulierontwerp. De logica van de toepassing die de dienst van de Assembler aanhaalt is in een user-defined methode genoemd `GetFormDesign`. Het niet-interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *Loan.pdf *op de clientcomputer. (Zie [ Creërend de Documenten van de PDF gebruikend Fragments ](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
 
 ```java
  /*
@@ -1018,7 +1018,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt dat is gebasee
 
 ## Snel starten (SOAP modus): Afdrukken naar een bestand met de Java API {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een uitvoerstream afgedrukt naar een PostScript-bestand met de naam *MortgaugeForm.ps*. (Zie [Afdrukken naar bestanden](/help/forms/developing/creating-document-output-streams.md#printing-to-files).)
+Het volgende codevoorbeeld van Java drukt een outputstroom aan een dossier van PostScript genoemd *MortgaugeForm.ps*. (Zie [ DRUKKEN aan Dossiers ](/help/forms/developing/creating-document-output-streams.md#printing-to-files).)
 
 ```java
  /*
@@ -1130,7 +1130,7 @@ In het volgende Java-codevoorbeeld wordt een uitvoerstream afgedrukt naar een Po
 
 ## Snel starten (SOAP modus): een afdrukstream naar een netwerkprinter verzenden met de Java API {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PostScript-afdrukstroom verzonden naar een netwerkprinter met de naam *\\Printer1\Printer*. Er worden twee exemplaren naar de printer verzonden. (Zie [Afdrukstromen naar printers verzenden](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers).)
+In het volgende Java-codevoorbeeld wordt een PostScript-afdrukstroom verzonden naar een netwerkprinter met de naam *\\Printer1\Printer* . Er worden twee exemplaren naar de printer verzonden. (Zie [ verzendend de Streams van de Druk aan Printers ](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers).)
 
 ```java
  /*
@@ -1255,7 +1255,7 @@ In het volgende Java-codevoorbeeld wordt een PostScript-afdrukstroom verzonden n
 
 ## Snel starten (SOAP modus): meerdere PDF-bestanden maken met de Java API {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
-De volgende Java-code maakt meerdere PDF-bestanden voor elke gegevensrecord in een XML-gegevensbestand met de naam *Loan_data_batch.xml*. De bestanden worden naar de map C:\Adobe geschreven. De PDF-bestanden worden geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [Meerdere uitvoerbestanden maken](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
+De volgende code van Java leidt tot veelvoudige PDF dossiers voor elk gegevensverslag dat in een het gegevensdossier van XML genoemd *Loan_data_batch.xml* is. De bestanden worden naar de map C:\Adobe geschreven. De PDF-bestanden worden geschreven naar de map C:\Adobe op de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet naar de clientcomputer. (Zie [ Creërend Veelvoudige Dossiers van de Output ](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
 
 ```java
  /*
@@ -1376,7 +1376,7 @@ De volgende Java-code maakt meerdere PDF-bestanden voor elke gegevensrecord in e
 
 ## Snel starten (SOAP modus): zoekregels maken met de Java API {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden twee tekstpatronen gemaakt waarnaar de uitvoerservice zoekt. Het eerste tekstpatroon is Hypotheek. Indien gevonden, gebruikt de uitvoerservice het formulierontwerp met de naam *Hypotheek.xdp*. Het tweede tekstpatroon is Automobile. Indien gevonden, gebruikt de uitvoerservice het formulierontwerp met de naam *AutoLoan.xdp*. Als geen van beide tekstpatronen wordt gevonden, gebruikt de Output-service het standaardformulierontwerp met de naam* Loan.xdp. *(Zie [Zoekregels maken](/help/forms/developing/creating-document-output-streams.md#creating-search-rules).)
+In het volgende Java-codevoorbeeld worden twee tekstpatronen gemaakt waarnaar de uitvoerservice zoekt. Het eerste tekstpatroon is Hypotheek. Indien gevonden, gebruikt de dienst van de Output het vormontwerp genoemd *Mortgauge.xdp*. Het tweede tekstpatroon is Automobile. Indien gevonden, gebruikt de dienst van de Output het vormontwerp genoemd *AutomobileLoan.xdp*. Als geen van beide tekstpatronen wordt gevonden, gebruikt de Output-service het standaardformulierontwerp met de naam* Loan.xdp. *(Zie [ Creërend de Regels van het Onderzoek ](/help/forms/developing/creating-document-output-streams.md#creating-search-rules).)
 
 ```java
  /*
@@ -1508,7 +1508,7 @@ In het volgende Java-codevoorbeeld worden twee tekstpatronen gemaakt waarnaar de
 
 ## Snel starten (SOAP modus): een PDF-document transformeren met de Java API {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een interactief PDF-document met de naam *Lening.pdf* naar een niet-interactief PDF-document met de naam *NonInteractiveLoan.pdf*. (Zie [PDF-documenten afvlakken](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Het volgende de codevoorbeeld van Java transformeert een interactief PDF document genoemd *Loan.pdf* aan een niet-interactief document van PDF genoemd *NonInteractiveLoan.pdf*. (Zie [ het Afvlakken de Documenten van PDF ](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 ```java
  /*

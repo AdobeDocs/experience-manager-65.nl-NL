@@ -20,13 +20,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
 >[!NOTE]
 >
->Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in online Help.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Hulp.
 
 >[!CAUTION]
 >
@@ -36,18 +36,18 @@ De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud b
 
 Inhoud zoals artikelen moet in alle auteurs en zelfs apps hetzelfde uiterlijk hebben. Het is daarom van essentieel belang dat scripts, CSS en lettertypen voor iedereen beschikbaar zijn. Deze verrichting verzendt dergelijke gedeelde middelen naar Mobiel On-Demand die dan kan worden verbruikt zoals nodig.
 
-Nadat u de app hebt geconfigureerd en gekoppeld aan een Cloud Configuration, kunt u uw gedeelde bronnen uploaden. Voor gedetailleerde stappen voor het koppelen van uw app aan een cloudconfiguratie klikt u op [hier](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Nadat u de app hebt geconfigureerd en gekoppeld aan een Cloud Configuration, kunt u uw gedeelde bronnen uploaden. Voor gedetailleerde stappen bij het associëren van uw app aan een wolkenconfiguratie, klik [ hier ](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
->De gedeelde Middelen gebruiken ContentSync om alle verschillende middelen te verzamelen. Zie [Mobiel met ContentSync](/help/mobile/mobile-ondemand-contentsync.md) voor meer informatie .
+>De gedeelde Middelen gebruiken ContentSync om alle verschillende middelen te verzamelen. Zie [ Mobiel met ContentSync ](/help/mobile/mobile-ondemand-contentsync.md) voor meer details.
 
 Voer de volgende stappen uit om uw gedeelde bronnen voor een artikel te uploaden:
 
-1. Selecteer het artikel uit **Artikelen beheren** tegel.
-1. Klikken **Gedeelde bronnen uploaden** om uw gedeelde HTML-bronnen te uploaden.
+1. Selecteer het artikel van **beheert de tegel van Artikelen**.
+1. Klik **uploaden Gedeelde Middelen** om uw gedeelde middelen van de HTML te uploaden.
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![ chlimage_1-133 ](assets/chlimage_1-133.png)
 
 ### De volgende stap {#the-next-step}
 

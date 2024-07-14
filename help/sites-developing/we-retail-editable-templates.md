@@ -29,18 +29,18 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. De moduskiezer beschikt niet meer over een ontwerpmodus. Alle pagina&#39;s voor We.Retail zijn gebaseerd op bewerkbare sjablonen en om het ontwerp van bewerkbare sjablonen te wijzigen, moeten deze worden bewerkt in de sjablooneditor.
-1. Van de **Pagina-informatie** menu selecteren **Sjabloon bewerken**.
+1. Van het **informatie van de Pagina** menu uitgezocht **geef Malplaatje** uit.
 1. U bewerkt nu de sjabloon voor de hoofdpagina.
 
    In de structuurmodus van de pagina kunt u de structuur van de sjabloon wijzigen. Dit geldt bijvoorbeeld voor de componenten die zijn toegestaan in de lay-outcontainer.
 
-   ![chlimage_1-138](assets/chlimage_1-138.png)
+   ![ chlimage_1-138 ](assets/chlimage_1-138.png)
 
 1. Configureer het beleid voor de container van de layout om te definiëren welke componenten zijn toegestaan in de container.
 
    Het beleid is het equivalent van ontwerpconfiguraties.
 
-   ![chlimage_1-139](assets/chlimage_1-139.png)
+   ![ chlimage_1-139 ](assets/chlimage_1-139.png)
 
 1. In het dialoogvenster Ontwerp van de container voor lay-outs kunt u
 
@@ -48,7 +48,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
    * Selecteer welke componenten zijn toegestaan in de container
    * De standaardcomponenten definiëren die moeten worden geplaatst wanneer een element naar de container wordt gesleept
 
-   ![chlimage_1-140](assets/chlimage_1-140.png)
+   ![ chlimage_1-140 ](assets/chlimage_1-140.png)
 
 1. In de sjablooneditor kunt u het beleid van de tekstcomponent in de lay-outcontainer bewerken.
 
@@ -64,14 +64,14 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
    Vele componenten die op de kerncomponenten worden gebaseerd staan de configuratie van opties op componentenniveau door de editable malplaatjes toe, die de behoefte aan aanpassing door ontwikkelaars verwijderen.
 
-   ![chlimage_1-141](assets/chlimage_1-141.png)
+   ![ chlimage_1-141 ](assets/chlimage_1-141.png)
 
-1. In de sjablooneditor kunt u de moduskiezer gebruiken om over te schakelen op **Oorspronkelijke inhoud** om te bepalen welke inhoud op de pagina wordt vereist.
+1. Terug in de malplaatjeredacteur, kunt u de wijzeselecteur gebruiken om in **Aanvankelijke wijze van de Inhoud** te veranderen om te bepalen welke inhoud op de pagina wordt vereist.
 
-   **Layout** Deze modus kan worden gebruikt zoals deze zich op een normale pagina bevindt om de indeling voor de sjabloon te definiëren.
+   **de wijze van de Lay-out** kan worden gebruikt aangezien het op een normale pagina is om de lay-out voor het malplaatje te bepalen.
 
 ## Meer informatie {#more-information}
 
-Zie het ontwerpdocument voor meer informatie [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
+Voor verdere informatie zie het auteursdocument [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md) of de Malplaatjes van het ontwikkelaarsdocument van de Pagina [ - editable ](/help/sites-developing/page-templates-editable.md) voor volledige technische details op editable malplaatjes.
 
-Misschien wilt u ook een onderzoek instellen [kerncomponenten](/help/sites-developing/we-retail-core-components.md). Zie het ontwerpdocument [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
+U kunt ook wensen om [ kerncomponenten ](/help/sites-developing/we-retail-core-components.md) te onderzoeken. Zie het auteursdocument [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [ het Ontwikkelen van de Componenten van de Kern ](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.

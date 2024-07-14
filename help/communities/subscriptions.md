@@ -20,37 +20,37 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Vanaf Gemeenschappen [FP1](deploy-communities.md#latestfeaturepack)kunnen leden van de gemeenschap via e-mail communiceren met de gemeenschap via een functie die abonnementen wordt genoemd.
+Vanaf de Gemeenschappen [ FP1 ](deploy-communities.md#latestfeaturepack), kunnen de communautaire leden met de gemeenschap door e-mail interactie aangaan gebruikend een eigenschap die als abonnementen wordt bedoeld.
 
-Abonnementen lijken op [meldingen](notifications.md) aangezien leden zich kunnen abonneren bij het volgen van blogartikelen, forumonderwerpen of QnA-vragen.
+De abonnementen zijn gelijkaardig aan [ berichten ](notifications.md) aangezien de leden kunnen intekenen wanneer het volgende blogartikelen, forumonderwerpen of vragen QnA.
 
 Abonnementen worden onderscheiden van meldingen:
 
 * Leden kunnen zich niet abonneren wanneer zij andere leden volgen.
-* De enige actie die leden kunnen ondernemen, is het selecteren van `Email Subscriptions` wanneer volgende.
+* De enige actie die leden kunnen ondernemen, is het selecteren van `Email Subscriptions` wanneer ze volgen.
 * Wanneer e-mailantwoord is geconfigureerd, kunnen leden inhoud effectief posten door eenvoudig te antwoorden op de ontvangen e-mail.
 
 ### Vereisten {#requirements}
 
-**E-mail configureren**
+**vorm E-mail**
 
 E-mail moet worden gevormd om abonnementen te functioneren en voor leden te antwoorden per e-mail.
 
-Voor instructies over het instellen van e-mailberichten raadpleegt u [E-mail configureren](email.md).
+Voor instructies bij vestiging e-mail, zie [ het Vormen E-mail ](email.md).
 
-**Abonnementen inschakelen en volgen**
+**laat Abonnementen toe en volgt**
 
-Componenten moeten worden geconfigureerd om abonnementen in te schakelen *en* volgende. Functies die abonnementen toestaan, zijn [blog](blog-feature.md), [forum](forum.md) en [QnA](working-with-qna.md).
+De componenten moeten worden gevormd om abonnementen *en* volgend toe te laten. De eigenschappen die abonnementen toestaan zijn [ blog ](blog-feature.md), [ forum ](forum.md) en [ QnA ](working-with-qna.md).
 
 ## Abonnementen van volgende {#subscriptions-from-following}
 
-![abonnement-volgende](assets/subscription-following.png)
+![ abonnement-volgend ](assets/subscription-following.png)
 
-De **Volgen** biedt een manier om vermeldingen als activiteiten, abonnementen en/of meldingen te volgen. Elke keer als **Volgen** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen.
+**volgt** knoop verstrekt een middel om ingangen als activiteiten, abonnementen en/of berichten te volgen. Telkens als **volgt** knoop wordt geselecteerd, is het mogelijk om op of van een selectie van een knevel te voorzien.
 
-Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **volgende**. Voor het gemak is het mogelijk `Unfollow All` om alle methoden uit te schakelen.
+Als om het even welke methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **volgend**. Voor het gemak is het mogelijk om `Unfollow All` te selecteren om alle methoden uit te schakelen.
 
-De **Volgen** bevat de knop `Email Subscriptions` optie slechts wanneer een forum, QnA, of blog wordt gevormd om e-mailabonnementen toe te laten. Deze knop wordt weergegeven:
+**volgt** knoop zal de `Email Subscriptions` optie omvatten slechts wanneer een forum, QnA, of blog wordt gevormd om e-mailabonnementen toe te laten. Deze knop wordt weergegeven:
 
 * Op de hoofdpagina met functies voor het ingeschakelde forum, stuurt QnA of blog een e-mail voor alle activiteiten onder die functie.
 
@@ -58,12 +58,12 @@ De **Volgen** bevat de knop `Email Subscriptions` optie slechts wanneer een foru
 
 ## Reageren per e-mail {#reply-by-email}
 
-Wanneer e-mail [geconfigureerd voor beantwoorden per e-mail](email.md#configure-polling-importer), ontvangt het lid dat zich heeft geabonneerd een e-mail met de geposte inhoud en een koppeling naar de online-inhoud.
+Wanneer e-mail [ voor het antwoorden door e-mail ](email.md#configure-polling-importer) wordt gevormd, zal het lid dat zich abonneert een e-mail met de geposte inhoud en een verbinding aan de online inhoud ontvangen.
 
 Als ze op het e-mailbericht reageren, wordt de inhoud die ze in het antwoord invoeren, online weergegeven als inhoud.
 
-![e-mailantwoord](assets/email-reply.png)
+![ e-mail-antwoord ](assets/email-reply.png)
 
-De tijd die nodig is om een antwoord te plaatsen, wordt bepaald door de [update-interval opiniepeilingimportmodule](email.md#configure-polling-importer).
+De hoeveelheid tijd het voor een te posten antwoord neemt wordt gecontroleerd door het [ pollende de updateinterval van de importeur ](email.md#configure-polling-importer).
 
-![QA](assets/qa.png)
+![ QA ](assets/qa.png)

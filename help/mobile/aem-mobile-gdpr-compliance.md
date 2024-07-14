@@ -27,11 +27,11 @@ AEM Mobile is bereid klanten te helpen bij hun verplichtingen om aan de GDPR-nor
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Het digitale publicatieproduct van Adobe (dat aan AEM Mobile voorafgaat) ondersteunt de GDPR-initiatieven van Adobe. Zie [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). Hieronder vindt u specifieke informatie over de ondersteuning van GDPR-functies in het product van de Digital Publishing Suite, zoals hoe met Adobe kan worden gewerkt om GDPR-aanvragen te initiëren.
+Het digitale publicatieproduct van Adobe (dat aan AEM Mobile voorafgaat) ondersteunt de GDPR-initiatieven van Adobe. Zie [ https://business.adobe.com/privacy/general-data-protection-regulation.html ](https://business.adobe.com/privacy/general-data-protection-regulation.html). Hieronder vindt u specifieke informatie over de ondersteuning van GDPR-functies in het product van de Digital Publishing Suite, zoals hoe met Adobe kan worden gewerkt om GDPR-aanvragen te initiëren.
 
 U kunt zich hier aanmelden bij het product van de Digital Publishing Suite om ervoor te zorgen dat AEM Mobile niet wordt verward met het oudere product van de Digital Publishing Suite:
 
-[https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
+[ https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Een GDPR-verzoek starten {#initiating-a-gdpr-request}
 
@@ -41,37 +41,37 @@ De volgende id&#39;s zijn vereist om klantgegevens te zoeken. Een ontvangen subs
 
 Verplicht:
 
-* Contractnummer van de klant: *dpsc-contractId*
+* Identiteitskaart van het contract van de klant: *dpsc-contractId*
 
 Geef ten minste 1 van de volgende gegevens op:
 
-* De klant van de eindgebruiker verstrekte OAuth identiteitskaart (identiteitskaart die in het directe machtigingssysteem van de klant wordt gebruikt): *dpsc-directEntitlementId*
-* Voor gebruikers van de Windows-app gebruikt u de App Store-id van de eindgebruiker: *dpsc-windowsAppStoreId*
-* Het e-mailadres dat de eindgebruiker heeft gebruikt om te communiceren met de DPS App: *email*
+* De klant van de eindgebruiker verstrekte OAuth identiteitskaart (identiteitskaart die in het directe het machtigingssysteem van de klant wordt gebruikt): *dpsc-directEntitlementId*
+* Voor Windows app gebruikers, identiteitskaart van App Store van de eindgebruiker: *dpsc-windowsAppStoreId*
+* Het e-mailadres de eindgebruiker gebruikte om met DPS App in wisselwerking te staan: *e-mail*
 
 ### Veelgestelde vragen (FAQ) {#frequently-asked-questions-faq}
 
-**Verwijdert Adobe mijn App Store-aankopen bij het starten van een DELETE-aanvraag?**
+**Adobe schrappend mijn aankopen van App Store wanneer het in werking stellen van een DELETE verzoek?**
 
 Adobe verwijdert informatie over aankopen in de App store (abonnementen, enzovoort), maar aankopen worden nog steeds geregistreerd in de App-winkels. Als de app (eindgebruiker) is aangemeld bij de App Store, worden deze ontvangstbewijzen opnieuw opgehaald en naar de Adobe verzonden. Later worden deze beschouwd als nieuwe aankopen en worden ze door de app hersteld, met nieuwe toegang.
 
-**Worden door de klant verschafte rechten door de Adobe verwijderd wanneer een DELETE-aanvraag wordt gestart?**
+**Adobe schrappend klant-Geleide rechten wanneer het in werking stellen van een verzoek van de DELETE?**
 
 De Adobe schrapt informatie die het van de extra directe toestemmingstoelagen van de klant heeft. Als de app (eindgebruiker) zich aanmeldt bij het OAuth-mechanisme dat de klant heeft gebruikt, stuurt het informatie naar de Adobe en halen de services de extra rechten opnieuw op.
 
-**Wat wordt van de eindgebruiker verwacht?**
+**wat van de eindgebruiker wordt verwacht?**
 
 Aangezien de sleutel voor het toewijzen van rechten aan de app zich op het apparaat bevindt als onderdeel van de viewersoftware, moet de eindgebruiker de toepassing verwijderen. De eindgebruiker moet zich realiseren dat als hij de app opnieuw installeert, bestaande aankopen (gekoppeld aan de gebruiker van de App store) en directe machtigingsrechten (gekoppeld aan de OAuth-gebruiker van de klant) nog steeds worden hersteld.
 
-**Wat gebeurt er als een app wordt gedeeld tussen mensen op een apparaat?**
+**wat gebeurt wanneer app tussen mensen op een apparaat wordt gedeeld?**
 
 De Adobe heeft minimale informatie die direct terug naar een specifieke gebruiker associeert. Het associeert de gegevens gebruikend een willekeurig gecreeerde UUID die in de gegevens van de App wordt gehouden en in elk verzoek wordt overgegaan App initieert. Dit betekent dat eindgebruikers die de app delen op hetzelfde apparaat dezelfde UUID gebruiken en dat alle gegevens worden beschouwd als eigendom van de persoon die het GDPR-verzoek indient. Voor zowel de Toegang als verzoeken van de Schrapping, beschouwt DPSC mensen die een App als één persoon delen.
 
-**Welke persoonlijke gegevens worden bij Analytics bijgehouden?**
+**wat Persoonlijke Gegevens met Analytics worden gevolgd?**
 
 Geen. Er worden gegevens bijgehouden, maar deze bevinden zich op toepassingsniveau (niet persoonlijk). Dit zijn gebeurtenissen zoals lanceringen, vastlopen, sluiten, activiteiten, aankopen of folio-overlays. Geografische locaties, namen, apparaat-id&#39;s of IP-adressen worden niet bijgehouden.
 
-**De eindgebruiker heeft zijn gegevens verstrekt, maar er is niets gevonden. Waarom niet?**
+**de eindgebruiker verstrekte hun informatie maar niets werd gevonden. Waarom niet?**
 
 Aangezien het product van de Digital Publishing Suite evolueerde, werden de de dienstimplementaties veranderd en meer gegevens werd verduisterd. Als er geen gegevens zijn gevonden met behulp van de door de gebruiker opgegeven gegevens, betekent dit dat de gegevens van de gebruiker niet naar die persoon kunnen worden bijgehouden.
 

@@ -22,70 +22,70 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 ## Uitproberen {#trying-it-out}
 
-1. Start Adobe Experience Manager (AEM) met de voorbeeldinhoud Web.Retail en open de [Componentenconsole](/help/sites-authoring/default-components-console.md).
+1. Het begin Adobe Experience Manager (AEM) met de wij.Retail steekproefinhoud en opent de [ Console van Componenten ](/help/sites-authoring/default-components-console.md).
 
-   **Algemene navigatie > Gereedschappen > Componenten**
+   **Globale Navigatie > Hulpmiddelen > Componenten**
 
 1. Wanneer u de rail opent in de componentenconsole, kunt u filteren voor een bepaalde componentgroep. De kerncomponenten vindt u in
 
    * `.core-wcm`: De standaard kerncomponenten
    * `.core-wcm-form`: De kerncomponenten voor het verzenden van formulieren
 
-   Kies `.core-wcm`.
+   Kies `.core-wcm` .
 
-   ![chlimage_1-162](assets/chlimage_1-162.png)
+   ![ chlimage_1-162 ](assets/chlimage_1-162.png)
 
-1. Alle kerncomponenten krijgen een naam **v1**, waaruit blijkt dat dit de eerste versie van deze kerncomponent is. Regelmatige versies worden uitgebracht, die versiecompatibel zijn met AEM en eenvoudig upgraden mogelijk maken, zodat u kunt profiteren van de nieuwste functies.
-1. Klikken **Tekst (v1)**.
+1. Alle kerncomponenten worden genoemd **v1**, die erop wijzen dat dit de eerste versie van deze kerncomponent is. Regelmatige versies worden uitgebracht, die versiecompatibel zijn met AEM en eenvoudig upgraden mogelijk maken, zodat u kunt profiteren van de nieuwste functies.
+1. Klik **Tekst (v1)**.
 
-   Zie de **Resourcetype** van de component `/apps/core/wcm/components/text/v1/text`. Kerncomponenten vindt u onder `/apps/core/wcm/components` en zijn versioned per component.
+   Zie dat het **Type van Middel** van de component `/apps/core/wcm/components/text/v1/text` is. De componenten van de kern worden gevonden onder `/apps/core/wcm/components` en zijn versioned per component.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   ![ chlimage_1-163 ](assets/chlimage_1-163.png)
 
-1. Klik op de knop **Documentatie** om de documentatie voor ontwikkelaars voor de component te zien.
+1. Klik het **Documentatie** lusje om de ontwikkelaardocumentatie voor de component te zien.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+   ![ chlimage_1-164 ](assets/chlimage_1-164.png)
 
-1. Ga terug naar de componentconsole. Filter voor de groep **Wij.Detailhandel** en selecteert u de **Tekst** component.
-1. Zie de **Resourcetype** punten naar een component zoals wordt verwacht onder `/apps/weretail` maar de **Super Type resource** verwijst terug naar de kerncomponent `/apps/core/wcm/components/text/v1/text`.
+1. Ga terug naar de componentconsole. Filter voor de groep **We.Retail** en selecteer de **3} component van de Tekst {.**
+1. Zie dat het **Type van Middel** aan een component zoals verwacht onder `/apps/weretail` maar het **Type van Super van het Middel** wijst terug naar de kerncomponent `/apps/core/wcm/components/text/v1/text`.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+   ![ chlimage_1-165 ](assets/chlimage_1-165.png)
 
-1. Klik op de knop **Live-gebruik** om te zien op welke pagina&#39;s deze component wordt gebruikt. Klik eerst **Bedankt** pagina om de pagina te bewerken.
+1. Klik het **Levende lusje van het Gebruik** om te zien op welke pagina&#39;s deze component wordt gebruikt. Klik eerste **Dank u** pagina om de pagina uit te geven.
 
-   ![chlimage_1-166](assets/chlimage_1-166.png)
+   ![ chlimage_1-166 ](assets/chlimage_1-166.png)
 
 1. Selecteer op de pagina Hartelijk dank de tekstcomponent en klik in het bewerkingsmenu van de component op het pictogram Overerving annuleren.
 
-   [We.Retail heeft een geglobaliseerde sitestructuur](/help/sites-developing/we-retail-globalized-site-structure.md) waar inhoud van taalstramienen naar [levende exemplaren door een mechanisme genoemd erfenis](/help/sites-administering/msm.md). Daarom moet overerving worden geannuleerd, zodat een gebruiker tekst handmatig kan bewerken.
+   [ Wij.Retail heeft een geglobaliseerde plaatsstructuur ](/help/sites-developing/we-retail-globalized-site-structure.md) waar de inhoud van taalmeesters aan [ levende exemplaren door een mechanisme genoemd erfenis ](/help/sites-administering/msm.md) wordt geduwd. Daarom moet overerving worden geannuleerd, zodat een gebruiker tekst handmatig kan bewerken.
 
-   ![chlimage_1-167](assets/chlimage_1-167.png)
+   ![ chlimage_1-167 ](assets/chlimage_1-167.png)
 
-1. De annulering bevestigen door op **Ja**.
+1. Bevestig de annulering door **ja** te klikken.
 
-   ![chlimage_1-168](assets/chlimage_1-168.png)
+   ![ chlimage_1-168 ](assets/chlimage_1-168.png)
 
-1. Nadat de overerving is geannuleerd en u de tekstcomponenten selecteert, zijn er veel meer opties beschikbaar. Klikken **Bewerken**.
+1. Nadat de overerving is geannuleerd en u de tekstcomponenten selecteert, zijn er veel meer opties beschikbaar. Klik **uitgeven**.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![ chlimage_1-169 ](assets/chlimage_1-169.png)
 
 1. U kunt nu zien welke bewerkingsopties beschikbaar zijn voor de tekstcomponent.
 
-   ![chlimage_1-170](assets/chlimage_1-170.png)
+   ![ chlimage_1-170 ](assets/chlimage_1-170.png)
 
-1. Van de **Pagina-informatie** menu, selecteert u **Sjabloon bewerken**.
-1. Klik in de Sjablooneditor van de pagina op de knop **Beleid** pictogram van de component Text in het deelvenster **Layout Container** van de pagina.
+1. Van het **menu van de Informatie van de Pagina**, uitgezocht **geef Malplaatje** uit.
+1. In de Redacteur van het Malplaatje van de pagina, klik het **pictogram van het Beleid** van de component van de Tekst in de **Container van de Lay-out** van de pagina.
 
-   ![chlimage_1-171](assets/chlimage_1-171.png)
+   ![ chlimage_1-171 ](assets/chlimage_1-171.png)
 
 1. Met de kerncomponenten kan een sjabloonauteur configureren welke eigenschappen beschikbaar zijn voor de auteurs van de pagina. Dit zijn onder andere functies zoals toegestane bronnen voor plakken, opmaakopties en beschikbare alineastijlen.
 
    Dergelijke ontwerpdialoogvensters zijn beschikbaar voor veel kerncomponenten en werken samen met de sjablooneditor. Zodra toegelaten, zijn zij beschikbaar aan de auteur door de componentenredacteurs.
 
-   ![chlimage_1-172](assets/chlimage_1-172.png)
+   ![ chlimage_1-172 ](assets/chlimage_1-172.png)
 
 ## Aanvullende informatie {#further-information}
 
-Raadpleeg het ontwerpdocument voor meer informatie over de kerncomponenten [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor een technisch overzicht.
+Voor verdere informatie over de kerncomponenten, zie de auteursdocument [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor een technisch overzicht.
 
-Mogelijk wilt u verder onderzoek uitvoeren [bewerkbare sjablonen](/help/sites-developing/we-retail-editable-templates.md). Verwijs naar het auteursdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige details over bewerkbare sjablonen.
+Ook kunt u wensen om [ editable malplaatjes ](/help/sites-developing/we-retail-editable-templates.md) verder te onderzoeken. Verwijs naar het auteursdocument [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md) of de Malplaatjes van het ontwikkelaarsdocument van de Pagina [ - editable ](/help/sites-developing/page-templates-editable.md) voor volledige details op editable malplaatjes.

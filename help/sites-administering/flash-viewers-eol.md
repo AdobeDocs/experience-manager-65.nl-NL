@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Eindbericht voor Flash Viewers{#flash-viewers-end-of-life-notice}
 
-*Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (voorheen Scene7) officieel de ondersteuning voor het viewerplatform voor Flash beëindigd.*
+{31 januari 2017 is op 31 januari 2017 van kracht geworden, Adobe Dynamic Media Classic (voorheen Scene7) heeft officieel steun voor het platform van de Flash-viewer beëindigd.**
 
 <!-- *For more information about this important change, see the following FAQ website:*
 

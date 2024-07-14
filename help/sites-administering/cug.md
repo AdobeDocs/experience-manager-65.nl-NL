@@ -23,13 +23,13 @@ Gesloten gebruikersgroepen (CUG&#39;s) worden gebruikt om de toegang te beperken
 
 U configureert een dergelijk gebied binnen uw website als volgt:
 
-* [de werkelijke gesloten gebruikersgroep maken en leden toewijzen](#creating-the-user-group-to-be-used).
+* [ creeer de daadwerkelijke gesloten gebruikersgroep en wijs leden ](#creating-the-user-group-to-be-used) toe.
 
-* [deze groep toepassen op de vereiste pagina&#39;s](#applying-your-closed-user-group-to-content-pages) en selecteer (of maak) de aanmeldingspagina voor gebruik door de leden van de CUG; ook opgegeven bij het toepassen van een CUG op een inhoudspagina.
+* [ pas deze groep op de vereiste pagina&#39;s ](#applying-your-closed-user-group-to-content-pages) toe en selecteer (of creeer) de login pagina voor gebruik door de leden van CUG; ook gespecificeerd wanneer het toepassen van een KUG op een inhoudspagina.
 
-* [een koppeling van een of andere vorm maken naar ten minste één pagina in het beschermde gebied](#linking-to-the-cug-pages)anders is het niet zichtbaar.
+* [ creeer een verbinding, van één of andere vorm, aan minstens één pagina binnen het beschermde gebied ](#linking-to-the-cug-pages), anders zal het niet zichtbaar zijn.
 
-* [de Dispatcher configureren](#configure-dispatcher-for-cugs) indien in gebruik.
+* [ vormt Dispatcher ](#configure-dispatcher-for-cugs) als in gebruik.
 
 >[!CAUTION]
 >
@@ -43,69 +43,69 @@ U configureert een dergelijk gebied binnen uw website als volgt:
 
 Een gesloten gebruikersgroep maken:
 
-1. Ga naar **Gereedschappen - Beveiliging** van het AEM huisdier.
+1. Ga naar **Hulpmiddelen - Veiligheid** van AEM homescreen.
 
    >[!NOTE]
    >
-   >Zie [Gebruikers en groepen beheren](/help/sites-administering/security.md#managing-users-and-groups) voor volledige informatie over het creëren van en het vormen van gebruikers en groepen.
+   >Zie [ het Leiden Gebruikers en Groepen ](/help/sites-administering/security.md#managing-users-and-groups) voor volledige informatie bij het creëren van en het vormen van gebruikers en groepen.
 
-1. Selecteer de **Groepen** van het volgende scherm.
+1. Selecteer de **kaart van Groepen** van het volgende scherm.
 
-   ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
+   ![ screenshot_2018-10-30at145502 ](assets/screenshot_2018-10-30at145502.png)
 
-1. Druk op **Maken** in de rechterbovenhoek om een groep te maken.
-1. Geef de nieuwe groep een naam, bijvoorbeeld `cug_access`.
+1. Druk **creeer** knoop in de hoogste juiste hoek, om een groep tot stand te brengen.
+1. Geef de nieuwe groep een naam, bijvoorbeeld `cug_access` .
 
-   ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
+   ![ screenshot_2018-10-30at151459 ](assets/screenshot_2018-10-30at151459.png)
 
-1. Ga naar de **Leden** en wijst u de vereiste gebruikers toe aan deze groep.
+1. Ga naar het **lusje van Leden** en wijs de vereiste gebruikers aan deze groep toe.
 
-   ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
+   ![ screenshot_2018-10-30at151808 ](assets/screenshot_2018-10-30at151808.png)
 
-1. Activeer om het even welke gebruikers die u aan uw CUG hebt toegewezen; in dit geval, alle leden van `cug_access`.
-1. Activeer de gesloten gebruikersgroep zodat deze beschikbaar is in de publicatieomgeving; in dit voorbeeld `cug_access`.
+1. Activeer alle gebruikers die u aan de CUG hebt toegewezen, in dit geval alle leden van `cug_access` .
+1. Activeer de gesloten gebruikersgroep zodat deze beschikbaar is in de publicatieomgeving; in dit voorbeeld `cug_access` .
 
 ## Gesloten gebruikersgroep toepassen op inhoudspagina&#39;s {#applying-your-closed-user-group-to-content-pages}
 
 De CUG toepassen op een pagina of pagina&#39;s:
 
 1. Navigeer naar de basispagina van de beperkte sectie die u aan uw CUG wilt toewijzen.
-1. Selecteer de pagina door op de bijbehorende miniatuur te klikken en vervolgens de pagina te selecteren **Eigenschappen** in de bovenste werkbalk.
+1. Selecteer de pagina door op zijn duimnagel te klikken en dan **Eigenschappen** in de hoogste toolbar te selecteren.
 
-   ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
+   ![ screenshot_2018-10-30at162632 ](assets/screenshot_2018-10-30at162632.png)
 
-1. Open in het volgende venster de **Geavanceerd** tab.
+1. In het volgende venster, open het **Geavanceerde** lusje.
 
-1. Omlaag schuiven naar de **Verificatievereiste** sectie.
+1. De rol neer aan de **sectie van de Vereiste van de Authentificatie**.
 
-   1. Activeer **Inschakelen** tickbox.
+   1. Activeer **toelaten** tickbox.
 
-   1. Voeg het pad toe aan uw **Aanmeldingspagina**.
+   1. Voeg de weg aan uw **Login Pagina** toe.
 Dit is optioneel als de standaardaanmeldingspagina leeg blijft.
 
-   ![CUG toegevoegd](assets/cug-authentication-requirement.png)
+   ![ toegevoegde GING ](assets/cug-authentication-requirement.png)
 
-1. Ga vervolgens naar de **Machtigingen** en selecteert u **Gesloten gebruikersgroep bewerken**.
+1. Daarna, ga naar het **lusje van Toestemmingen** en selecteer **uitgeven Gesloten Groep van de Gebruiker**.
 
-   ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
+   ![ screenshot_2018-10-30at163003 ](assets/screenshot_2018-10-30at163003.png)
 
    >[!NOTE]
    >
    >CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit rond wanneer het vormen van Levend Exemplaar.
    >
-   >Zie voor meer informatie [deze pagina](closed-user-groups.md#aem-livecopy).
+   >Voor meer informatie, zie [ deze pagina ](closed-user-groups.md#aem-livecopy).
 
-1. De **Gesloten gebruikersgroep bewerken** wordt geopend. Hier kunt u zoeken naar en uw CUG selecteren en vervolgens de groepselectie bevestigen met **Opslaan**.
+1. Het **geeft Gesloten dialoog van de Groep van de Gebruiker uit** opent. Hier kunt u zoeken naar, en selecteren, uw KUG, dan de groepsselectie met **bevestigen sparen**.
 
-   De groep wordt toegevoegd aan de lijst, bijvoorbeeld de groep **cug_access**.
+   De groep zal aan de lijst worden toegevoegd; bijvoorbeeld, de groep **cug_access**.
 
-   ![CUG toegevoegd](assets/cug-added.png)
+   ![ toegevoegde GING ](assets/cug-added.png)
 
-1. Wijzigingen bevestigen met **Opslaan en sluiten**.
+1. Bevestig de veranderingen met **sparen &amp; sluit**.
 
 >[!NOTE]
 >
->Zie [Identity Management](/help/sites-administering/identity-management.md) voor informatie over profielen in het publicatiemilieu en het verstrekken van vormen voor het programma openen en uit.
+>Zie [ Identity Management ](/help/sites-administering/identity-management.md) voor informatie over profielen in publiceren milieu en het verstrekken van vormen voor het programma openen en uit.
 
 ## Koppelen aan de CUG-pagina&#39;s {#linking-to-the-cug-pages}
 
@@ -113,17 +113,17 @@ Aangezien het doel van koppelingen naar de CUG-pagina&#39;s niet zichtbaar is vo
 
 Om dit te voorkomen, is het raadzaam om niet-beveiligde omleidingspagina&#39;s te maken die verwijzen naar pagina&#39;s in het gebied CUG. De navigatie-items worden vervolgens gerenderd zonder dat de koppelingencontrole problemen ondervindt. Alleen wanneer de omleidingspagina daadwerkelijk wordt geopend, wordt de gebruiker omgeleid binnen het CUG-gebied - nadat hij of zij zijn of haar aanmeldingsgegevens heeft opgegeven.
 
-## Dispatcher configureren voor CUG&#39;s {#configure-dispatcher-for-cugs}
+## Dispatcher voor CUG&#39;s configureren {#configure-dispatcher-for-cugs}
 
-Als u Dispatcher gebruikt, moet u een landbouwbedrijf van de Verzender met de volgende eigenschappen bepalen:
+Als u Dispatcher gebruikt, moet u een Dispatcher-farm met de volgende eigenschappen definiëren:
 
-* [virtuele hosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Komt overeen met het pad naar de pagina&#39;s waarop de CUG van toepassing is.
+* [ virtuele gastheren ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Gelijke de weg aan de pagina&#39;s die CUG op van toepassing is.
 * \sessionmanagement: zie hieronder.
-* [cachegeheugen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Een cachemap die is toegewezen aan de bestanden waarop de CUG van toepassing is.
+* [ geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Een geheim voorgeheugenfolder die aan de dossiers wordt gewijd die CUG op van toepassing is.
 
-### Sessiebeheer voor Dispatcher configureren voor CUG&#39;s {#configuring-dispatcher-session-management-for-cugs}
+### Dispatcher Session Management configureren voor CUG&#39;s {#configuring-dispatcher-session-management-for-cugs}
 
-Configureren [sessiebeheer in de dispatcher.any, bestand](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) voor de CUG. De authentificatiemanager die wordt gebruikt wanneer de toegang voor de pagina&#39;s van de CUG wordt gevraagd bepaalt hoe u zittingsbeheer vormt.
+Vorm [ zittingsbeheer in het dispatcher.any- dossier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) voor CUG. De authentificatiemanager die wordt gebruikt wanneer de toegang voor de pagina&#39;s van de CUG wordt gevraagd bepaalt hoe u zittingsbeheer vormt.
 
 ```xml
 /sessionmanagement
@@ -134,10 +134,10 @@ Configureren [sessiebeheer in de dispatcher.any, bestand](https://experienceleag
 
 >[!NOTE]
 >
->Wanneer een landbouwbedrijf van de Verzender zitting-beheer toegelaten heeft, alle pagina&#39;s die de landbouwbedrijfhandvatten niet in het voorgeheugen onder worden gebracht. Om pagina&#39;s in het voorgeheugen onder te brengen die buiten CUG zijn, creeer een tweede landbouwbedrijf in dispatcher.any
+>Wanneer een landbouwbedrijf van Dispatcher toegelaten zitting-beheer heeft, alle pagina&#39;s die de landbouwbedrijfhandvatten niet in het voorgeheugen onder worden gebracht. Om pagina&#39;s in het voorgeheugen onder te brengen die buiten CUG zijn, creeer een tweede landbouwbedrijf in dispatcher.any
 >die de niet-CUG-pagina&#39;s afhandelt.
 
-1. Configureren [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) door `/directory`; bijvoorbeeld:
+1. Configureer [ /sessionmanagement ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) door `/directory` te definiëren, bijvoorbeeld:
 
    ```xml
    /sessionmanagement
@@ -147,4 +147,4 @@ Configureren [sessiebeheer in de dispatcher.any, bestand](https://experienceleag
      }
    ```
 
-1. Set [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) tot `0`.
+1. Stel [ /allowAuthorized ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) in op `0` .

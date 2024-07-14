@@ -23,22 +23,22 @@ ht-degree: 0%
 
 AEM biedt:
 
-* [een raamwerk voor het testen van de gebruikersinterface voor componenten](/help/sites-developing/hobbes.md).
-* [een mechanisme voor het testen van en het opsporen van fouten in componenten](/help/sites-developing/developer-mode.md).
+* [ een kader voor het testen van component UI ](/help/sites-developing/hobbes.md).
+* [ een mechanisme om componenten ](/help/sites-developing/developer-mode.md) te testen en te zuiveren.
 
-Hieronder vindt u twee Open Source Testing-gereedschappen:
+Hieronder vindt u twee Open Source-testprogramma&#39;s:
 
 **Selenium**
 
 Selenium wordt gebruikt voor functietests in een browser met één gebruiker per activiteit. Het registreert teststappen (kliks) als of HTML lijsten of klassen Java™.
 
-Zie voor meer informatie [https://www.selenium.dev/](https://www.selenium.dev/).
+Voor meer informatie, zie [ https://www.selenium.dev/ ](https://www.selenium.dev/).
 
 **JMeter**
 
 JMeter wordt gebruikt om verzoeken bij te houden en kan worden gebruikt voor functionele, prestatie- en stresstests.
 
-Zie voor meer informatie [https://jmeter.apache.org/](https://jmeter.apache.org/).
+Voor meer informatie, zie [ https://jmeter.apache.org/ ](https://jmeter.apache.org/).
 
 Er zijn ook veel bedrijfseigen instrumenten voor het automatiseren van tests en het beheren van testplannen.
 
@@ -50,9 +50,9 @@ De volgende gereedschappen zijn gemakkelijk beschikbaar. Nochtans is een zeer be
 
 Een bug-volgsysteem dat aan uw eigen vereisten kan worden gevormd.
 
-**Werkbladen**
+**Spreadsheets**
 
-Hoewel spreadsheets niet specifiek een tool voor het bijhouden van fouten zijn, *mis* gebruikt voor dit doel omdat zij gemakkelijk te begrijpen zijn en de meeste gebruikers ervaring met hun functionaliteit hebben.
+Hoewel niet specifiek een insect-volgend hulpmiddel, spreadsheets vaak *verkeerd* worden gebruikt voor dit doel aangezien zij gemakkelijk zijn te begrijpen en de meeste gebruikers ervaring van hun functionaliteit hebben.
 
 Als deze spreadsheets worden gebruikt voor tracering, geldt het volgende:
 

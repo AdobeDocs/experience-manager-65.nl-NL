@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Formulieren en documenten publiceren en de publicatie ervan opheffen{#publishing-and-unpublishing-forms-and-documents}
 
-Met AEM Forms kunt u gemakkelijk formulieren maken, publiceren en verwijderen. Zie voor meer informatie over AEM Forms [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md).
+Met AEM Forms kunt u gemakkelijk formulieren maken, publiceren en verwijderen. Voor meer informatie over AEM Forms, zie [ Inleiding aan het beheren van vormen ](../../forms/using/introduction-managing-forms.md).
 
-De AEM Forms-server biedt twee instanties: Auteur en Publish. De instantie Auteur is bedoeld voor het maken en beheren van formulierelementen en -bronnen. Publish-instantie is bedoeld om middelen en gerelateerde bronnen beschikbaar te houden voor eindgebruikers. U kunt XDP en PDF forms op de wijze van de Auteur invoeren. Zie voor meer informatie [XDP- en PDF-documenten ophalen in AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+De AEM Forms-server biedt twee instanties: Auteur en Publish. De instantie Auteur is bedoeld voor het maken en beheren van formulierelementen en -bronnen. Publish-instantie is bedoeld om middelen en gerelateerde bronnen beschikbaar te houden voor eindgebruikers. U kunt XDP en PDF forms op de wijze van de Auteur invoeren. Voor meer informatie, zie [ Krijgend documenten XDP en PDF in AEM Forms ](../../forms/using/get-xdp-pdf-documents-aem.md).
 
 ## Ondersteunde elementen Â  {#supported-assets-nbsp}
 
@@ -59,34 +59,34 @@ Het is mogelijk dat uw Adaptieve Forms gebruik maakt van bepaalde configuraties,
 
 Middelen kunnen de volgende statussen hebben:
 
-* **Niet gepubliceerd:** An asset that has never been published (The unpublished state is apply only to Forms assets. De activa van het Beheer van de correspondentie hebben geen Unpublished staat.)
-* **Gepubliceerd**: Een middel dat is gepubliceerd en beschikbaar is op de instantie van Publish
-* **gewijzigd**: Een element dat na publicatie is gewijzigd
+* **Niet gepubliceerd:** een activa die nooit is gepubliceerd (de niet gepubliceerde staat is slechts op de activa van Forms van toepassing. De activa van het Beheer van de correspondentie hebben geen Unpublished staat.)
+* **Gepubliceerd**: Een middel dat is gepubliceerd en beschikbaar op de instantie van Publish is
+* **Gewijzigd**: An activa die na wordt gepubliceerd worden gewijzigd
 
 ## Publish een middel {#publish-an-asset}
 
 1. Log in bij de AEM Forms-server.
 1. Gebruik een van de volgende opties om een element te selecteren en te publiceren.
 
-   1. Plaats de aanwijzer op een element en selecteer **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Beweeg de wijzer over een activa en selecteer **[!UICONTROL Publish]** ![ aem6forms_globe ](assets/aem6forms_globe.pngasset.png).
    1. Voer een van de volgende handelingen uit en selecteer vervolgens Publish:
 
-      * Als u in de kaartweergave werkt, selecteert u **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)en selecteert u het element. Het element is geselecteerd.
+      * Als u in de kaartmening bent, selecteer **[!UICONTROL Enter Selection]** ![ aem6forms_check-circle ](assets/aem6forms_check-circle.png), en selecteer de activa. Het element is geselecteerd.
       * Als u zich in de lijstweergave bevindt, schakelt u het selectievakje van een element in. Het element is geselecteerd.
       * Selecteer een element om de details ervan weer te geven.
-      * De eigenschappen van een element weergeven door op Weergave-eigenschappen te tikken ![viewproperties](assets/viewproperties.png).
+      * De eigenschappen van de vertoning van activa door de Eigenschappen van de Mening ![ viewproperties ](assets/viewproperties.png) te tikken.
 
       >[!NOTE]
       >
       >Selecteer geen meerdere elementen. Het tegelijkertijd publiceren van meerdere elementen wordt niet ondersteund.
 
-1. Wanneer het Publish-proces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde middelen en middelen. Selecteer in het dialoogvenster dat gerelateerde elementen bevat de optie **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Publish Assets Success wordt weergegeven.
+1. Wanneer het Publish-proces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde middelen en middelen. Selecteer **[!UICONTROL Publish]** in het dialoogvenster dat gerelateerde elementen bevat. Het element wordt gepubliceerd en het dialoogvenster Publish Assets Success wordt weergegeven.
 
    >[!NOTE]
    >
    >Voor de adaptieve formulieren wordt naast de gerelateerde elementen ook de paginanaam Adaptief formulier weergegeven.
 
-   ![Een bevestigingsdialoogvenster met alle gerelateerde middelen en middelen](assets/p4.png)
+   ![ de bevestigingsdialoog van A met alle verwante activa en middelen ](assets/p4.png)
 
    Een bevestigingsdialoogvenster met alle gerelateerde middelen en middelen.
 
@@ -96,7 +96,7 @@ Middelen kunnen de volgende statussen hebben:
 
    Nadat een element is gepubliceerd, worden de metagegevenseigenschappen van het element naar de Publish-instantie gekopieerd en wordt de status van het element gewijzigd in Published. De status van de afhankelijke elementen die worden gepubliceerd, wordt ook gewijzigd in Gepubliceerd.
 
-   Nadat u middelen hebt gepubliceerd, kunt u de Forms Portal gebruiken om alle elementen op een webpagina weer te geven. Zie voor meer informatie [Inleiding tot het publiceren van formulieren op een portal](../../forms/using/introduction-publishing-forms.md).
+   Nadat u middelen hebt gepubliceerd, kunt u de Forms Portal gebruiken om alle elementen op een webpagina weer te geven. Voor meer informatie, zie [ Inleiding aan het publiceren van vormen op een portaal ](../../forms/using/introduction-publishing-forms.md).
 
 ## Publish all the Correspondent Management Assets {#publish-all-the-correspondence-management-assets}
 
@@ -105,51 +105,51 @@ Met AEM Forms kunt u alle Correspondence Management-elementen op een server in Ã
 Voer de volgende stappen uit om alle Correspondence Management-elementen op een server te publiceren:
 
 1. Log in bij de AEM Forms-server.
-1. Selecteren **Adobe Experience Manager** in de algemene navigatiebalk.
-1. Selecteren ![gereedschappen](assets/tools.png)en selecteer vervolgens **Forms**.
-1. Selecteren **Publish Correspondentenbeheermiddelen**.
+1. Selecteer **Adobe Experience Manager** in de globale navigatiebar.
+1. Selecteer ![ hulpmiddelen ](assets/tools.png), en selecteer dan **Forms**.
+1. Selecteer **Publish Correspondence Management Assets**.
 
-   ![publish-cmp-assets](assets/publish-cmp-assets.png)
+   ![ publiceren-cmp-activa ](assets/publish-cmp-assets.png)
 
-   De pagina Publish All Correspondence Management Assets wordt weergegeven met informatie over de laatste keer dat de Publish Correspondence Management Assets-procedure werd gestart.
+   De pagina Publish All Correspondence Management Assets wordt weergegeven en geeft de informatie weer over de laatste keer dat het Publish Correspondence Management Assets-proces is gestart.
 
-   ![publish-last-run-details](assets/publish-last-run-details.png)
+   ![ publiceren-last-looppas-details ](assets/publish-last-run-details.png)
 
-1. Selecteren **Publiceren** en, in het bevestigingsbericht, selecteer **OK**.
+1. Selecteer **Publish** en, in het bevestig bericht, uitgezocht **O.K.**.
 
    Nadat een batchproces is voltooid, kunt u de details van de laatste uitvoering weergeven. Dit omvat informatie zoals de login van de Beheerder en als de partij met succes of ontbrak.
 
    >[!NOTE]
    >
-   >Het Publish-proces kan niet worden geannuleerd nadat het is gestart. Zorg er tijdens de Publish-bewerking ook voor dat u geen elementen maakt, verwijdert, wijzigt of publiceert of dat u de bewerking Alle correspondentiebeheermiddelen exporteren start.
+   >Het Publish-proces kan niet worden geannuleerd nadat het is gestart. Zorg er tijdens de Publish-bewerking ook voor dat u geen elementen maakt, verwijdert, wijzigt of publiceert of dat u de bewerking Assets van het beheer van alle correspondentie exporteert.
 
 ## Publiceren en verwijderen voor Forms en documenten automatiseren {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-Met AEM Forms kunt u de publicatie van middelen en het ongedaan maken van publicaties voor Forms en Documenten plannen. U kunt het schema opgeven in de Metagegevenseditor. Zie voor meer informatie over het beheren van metagegevens van formulieren [Metagegevens van formulieren beheren.](../../forms/using/manage-form-metadata.md)
+Met AEM Forms kunt u de publicatie van middelen en het ongedaan maken van publicaties voor Forms en Documenten plannen. U kunt het schema opgeven in de Metagegevenseditor. Voor meer informatie over het beheren van vormmeta-gegevens, zie [ het Leiden vormmeta-gegevens.](../../forms/using/manage-form-metadata.md)
 
 Voer de volgende stappen uit om de datum en het tijdstip van publicatie en het verwijderen van de publicatie van Forms &amp; Documents-elementen te plannen:
 
-1. Selecteer een element en selecteer **[!UICONTROL View Properties]**. De pagina Eigenschappen van metagegevens wordt geopend.
-1. Selecteer op de pagina Eigenschappen van metagegevens de optie **[!UICONTROL Advanced]** en selecteer vervolgens **[!UICONTROL Edit]** ![illustrator_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. In de **[!UICONTROL Publish On Time]** en **[!UICONTROL Publish Off Time]** selecteert u de datum en tijd.\
-   Selecteren **[!UICONTROL Done]** ![aem6forms_check](assets/aem6forms_check.png).
+1. Selecteer een element en selecteer **[!UICONTROL View Properties]** . De pagina Eigenschappen van metagegevens wordt geopend.
+1. In de pagina van de Eigenschappen van Meta-gegevens, selecteer **[!UICONTROL Advanced]**, en selecteer dan **[!UICONTROL Edit]** ![ illustrator_penciltool_cur_edit_2_17 ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Selecteer in de velden **[!UICONTROL Publish On Time]** en **[!UICONTROL Publish Off Time]** de datum en tijd.\
+   Selecteer **[!UICONTROL Done]** ![ aem6forms_check ](assets/aem6forms_check.png).
 
 ## Een element verwijderen {#unpublish-an-asset}
 
-1. Selecteer een middel dat wordt gepubliceerd en selecteer **[!UICONTROL Unpublish]** ![ongedaan maken](assets/unpublish.png).
+1. Selecteer een activa die wordt gepubliceerd en **[!UICONTROL Unpublish]** ![ uitgezocht unpublish ](assets/unpublish.png).
 1. Gebruik een van de volgende opties om elementen te selecteren en de publicatie ervan ongedaan te maken.
 
-   1. Plaats de aanwijzer op een element en selecteer **[!UICONTROL Unpublish]** ![ongedaan maken](assets/unpublish.png).
+   1. Verplaats de wijzer over een activa en selecteer **[!UICONTROL Unpublish]** ![ unpublish ](assets/unpublish.png).
    1. Voer een van de volgende handelingen uit en selecteer vervolgens Publiceren ongedaan maken:
 
-      * Als u in de kaartweergave werkt, selecteert u **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)en selecteert u het element. Het element is geselecteerd.
+      * Als u in de kaartmening bent, selecteer **[!UICONTROL Enter Selection]** ![ aem6forms_check-circle ](assets/aem6forms_check-circle.png), en selecteer de activa. Het element is geselecteerd.
 
-      * Als u zich in de lijstweergave bevindt, houdt u de muisaanwijzer boven een element en selecteert u ![selectassetcheckmark](assets/selectassetcheckmark.png) . Het element is geselecteerd.
+      * Als u in de lijstmening bent, houd over een activa en selecteer ![ selectassetcheckmark ](assets/selectassetcheckmark.png). Het element is geselecteerd.
 
       * Selecteer een element om de details ervan weer te geven.
-      * De eigenschappen van een element weergeven door op Weergave-eigenschappen te tikken ![viewproperties](assets/viewproperties.png).
+      * De eigenschappen van de vertoning van activa door de Eigenschappen van de Mening ![ viewproperties ](assets/viewproperties.png) te tikken.
 
-1. Wanneer het Unpublish-proces wordt gestart, wordt een bevestigingsvenster weergegeven. Selecteren **[!UICONTROL Unpublish]**.
+1. Wanneer het Unpublish-proces wordt gestart, wordt een bevestigingsvenster weergegeven. Selecteer **[!UICONTROL Unpublish]** .
 
    >[!NOTE]
    >
@@ -163,8 +163,8 @@ Elke keer dat u een element of brief publiceert nadat u deze hebt bewerkt, wordt
 >
 >Keer geen brief aan een laatst gepubliceerde staat terug als om het even welk afhankelijk element dat in die gepubliceerde brief wordt gebruikt van het systeem wordt geschrapt.
 
-1. Selecteer een element en selecteer **[!UICONTROL Revert to Previously Published Version]** ![reverttopreviousouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Voordat het element wordt teruggedraaid, verschijnt er een bevestigingsvenster. Selecteren **[!UICONTROL Revert]**.
+1. Selecteer een activa en selecteer **[!UICONTROL Revert to Previously Published Version]** ![ reverttopreviousslypublishedversion ](assets/reverttopreviouslypublishedversion.png).
+1. Voordat het element wordt teruggedraaid, verschijnt er een bevestigingsvenster. Selecteer **[!UICONTROL Revert]** .
 
    Het element of de letter wordt teruggedraaid naar de eerder gepubliceerde versie.
 
@@ -174,17 +174,17 @@ Elke keer dat u een element of brief publiceert nadat u deze hebt bewerkt, wordt
 >
 >Als u een element verwijdert, wordt dit verwijderd uit de publicatie-instantie. Wanneer u elementen verwijdert, verwijdert u ook de versiehistorie, met uitzondering van de basisversie.
 
-1. Selecteer een element en selecteer **[!UICONTROL Delete]** ![delete](assets/delete.png).
+1. Selecteer een activa en selecteer **[!UICONTROL Delete]** ![ schrapping ](assets/delete.png).
 
    >[!NOTE]
    >
-   >De optie Verwijderen is ook beschikbaar als u elementdetails weergeeft door op een element te tikken of als u de eigenschappen van een element weergeeft door op Eigenschappen weergeven te tikken ![viewproperties](assets/viewproperties.png).
+   >De optie van de Schrapping is ook beschikbaar wanneer u activa details door activa te tikken of u toont de eigenschappen van een activa door de viewproperties van de Mening ![ te tikken ](assets/viewproperties.png).
 
-1. Voordat het element wordt verwijderd, verschijnt er een bevestigingsvenster. Selecteren **[!UICONTROL Delete]**.
+1. Voordat het element wordt verwijderd, verschijnt er een bevestigingsvenster. Selecteer **[!UICONTROL Delete]** .
 
    >[!NOTE]
    >
-   >Alleen het geselecteerde element wordt verwijderd en de afhankelijke elementen worden niet verwijderd. Als u verwijzingen naar een element wilt controleren, selecteert u ![verwijzingen](assets/references.png) en selecteer vervolgens een element.
+   >Alleen het geselecteerde element wordt verwijderd en de afhankelijke elementen worden niet verwijderd. Om verwijzingen van een activa te controleren, selecteer ![ verwijzingen ](assets/references.png) en selecteer dan een activa.
    >
    >
    >Als het element dat u wilt verwijderen, een onderliggend element van een ander element is, wordt het niet verwijderd. Als u een dergelijk element wilt verwijderen, verwijdert u verwijzingen van dit element uit andere elementen en probeert u het vervolgens opnieuw.
@@ -198,6 +198,6 @@ Om verificatie voor uw formulieren in te schakelen:
 1. Open configMgr in de publicatieinstantie in uw browser.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Klik in de Adobe Experience Manager Web Console Configuration op **Apache Sling Authentication Service** om het te vormen.
-1. Gebruik in het dialoogvenster Apache Sling Authentication Service dat wordt weergegeven de optie **+** om paden toe te voegen.\
+1. In de Configuratie van de Console van Adobe Experience Manager, klik **Apache die de Dienst van de Authentificatie van de Verkoop** om het te vormen.
+1. In het dialoogvenster Apache Sling Authentication Service dat wordt weergegeven, gebruikt u de knop **+** om paden toe te voegen.\
    Wanneer u een pad toevoegt, wordt de verificatieservice ingeschakeld voor formulieren in dat pad.

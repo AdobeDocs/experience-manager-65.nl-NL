@@ -1,6 +1,6 @@
 ---
-title: Gebruiksscenario's voor indexeren van eikenrun.jar
-description: Leer over de verschillende gebruikersgevallen voor het uitvoeren van indexering met het hulpmiddel van de Oak-looppas.
+title: Oak-run.jar Indexing Use cases
+description: Leer meer over de verschillende gebruikersgevallen voor het indexeren met het Oak-programma.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
@@ -16,18 +16,18 @@ ht-degree: 0%
 
 ---
 
-# Gebruiksscenario&#39;s voor indexeren van eikenrun.jar{#oak-run-jar-indexing-use-cases}
+# Oak-run.jar Indexing Use cases{#oak-run-jar-indexing-use-cases}
 
-De eiken-looppas steunt het indexeren van gebruiksgevallen op de bevellijn zonder het moeten de uitvoering van deze gebruiksgevallen door middel van AEM JMX console ordenen.
+Oak-in werking gestelde steunen het indexeren van gebruiksgevallen op de bevellijn zonder het moeten de uitvoering van deze gebruiksgevallen door middel van AEM JMX console organiseren.
 
-De overkoepelende voordelen van het gebruiken van de eak-looppas.jar de bevelbenadering van het indexbevel voor het beheren van indexen van het Eak zijn:
+De overkoepelende voordelen van het gebruik van de bevelbenadering van het eak-looppas.jar indexbevel voor het beheren van indexen van Oak zijn:
 
-1. De opdracht Indexeren wordt uitgevoerd en biedt een nieuwe indexeringsgereedschapset voor AEM 6.4.
-1. De eik-run vermindert tijd-aan-herdex die herindextijden op grotere bewaarplaatsen vermindert.
-1. Door de onderbreking vermindert u het verbruik van bronnen tijdens het opnieuw indexeren in AEM, wat resulteert in betere systeemprestaties.
-1. Oak-run zorgt voor out-of-band herindexering, ondersteunende situaties waarin productie beschikbaar moet zijn, en kan onderhoud of downtime die anders vereist is om opnieuw te indexeren, niet tolereren.
+1. Oak-run index command verstrekt een nieuwe het indexeren toolset voor AEM 6.4.
+1. Oak-run verkort tijd-aan-herdex die herindextijden op grotere bewaarplaatsen vermindert.
+1. Oak-run vermindert het verbruik van bronnen tijdens het opnieuw indexeren in AEM, wat resulteert in over het algemeen betere systeemprestaties.
+1. Oak-run biedt out-of-band herindexering, ondersteunende situaties waarin productie beschikbaar moet zijn, en kan geen onderhoud of downtime tolereren die anders vereist zijn om opnieuw te indexeren.
 
-Secties hieronder bieden voorbeeldopdrachten. De opdracht voor het uitvoeren van een index ondersteunt alle NodeStore- en BlobStore-instellingen. De voorbeelden hieronder zijn rond montages die FileDataStore en SegmentNodeStore hebben.
+Secties hieronder bieden voorbeeldopdrachten. Oak-run index command ondersteunt alle NodeStore- en BlobStore-instellingen. De voorbeelden hieronder zijn rond montages die FileDataStore en SegmentNodeStore hebben.
 
 ## Hoofdlettergebruik 1 - Consistentiecontrole index {#usercase1indexconsistencycheck}
 
@@ -37,13 +37,13 @@ Dit is een gebruiksgeval met betrekking tot indexcorruptie. Soms was het niet mo
 1. De werktuigen zijn ook bruikbaar als AEM niet toegankelijk is;
 1. Het is gebruiksvriendelijk.
 
-Controleren op beschadigde indexen kan worden uitgevoerd door `--index-consistency-check` bewerking:
+U kunt controleren op beschadigde indexen door de bewerking `--index-consistency-check` uit te voeren:
 
 ```shell
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-consistency-check
 ```
 
-Hiermee wordt een rapport gegenereerd in `indexing-result/index-consistency-check-report.txt`. Zie hieronder voor een voorbeeldrapport:
+Hiermee wordt een rapport gegenereerd in `indexing-result/index-consistency-check-report.txt` . Zie hieronder voor een voorbeeldrapport:
 
 ```
 Valid indexes :
@@ -85,11 +85,11 @@ Voor het diagnostiseren van sommige gevallen rond de Adobe van vraagprestaties v
 
 De bovenstaande bewerkingen kunnen nu worden uitgevoerd met de volgende opdrachten voor de bewerkingsindex:
 
-* `--index-info` - Verzamelt en dumpt diverse statistieken met betrekking tot indexen
+* `--index-info` - Verzamelt en dumpt verschillende statistieken met betrekking tot de indexen
 
 * `--index-definitions` - Verzamelt en dumpt indexdefinities
 
-* `--index-dump` - Dumpingindex-inhoud
+* `--index-dump` - Indexinhoud wordt gedumpt
 
 Zie hieronder een voorbeeld van hoe de bevelen in de praktijk werken:
 
@@ -97,7 +97,7 @@ Zie hieronder een voorbeeld van hoe de bevelen in de praktijk werken:
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-info --index-definitions --index-dump
 ```
 
-De verslagen worden opgesteld in `indexing-result/index-info.txt` en `indexing-result/index-definitions.json`
+De rapporten worden gegenereerd in `indexing-result/index-info.txt` en `indexing-result/index-definitions.json`
 
 Bovendien worden de zelfde details verstrekt door middel van de Console van het Web en zouden deel van de configuratiedumpit zip uitmaken. Ze kunnen op de volgende locatie worden benaderd:
 
@@ -109,31 +109,31 @@ Dit hulpmiddel laat het verzamelen van alle vereiste details met betrekking tot 
 
 ## Hoofdlettergebruik 3 - opnieuw indexeren {#usecase3reindexing}
 
-Afhankelijk van de [scenario&#39;s](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing)Soms moet opnieuw indexeren worden uitgevoerd. Op dit moment wordt het opnieuw indexeren uitgevoerd door het instellen van de optie `reindex` markeren naar `true` in de knoop van de indexdefinitie door middel van CRXDE of als gebruikersinterface van de Manager van de Index. Nadat de markering is ingesteld, wordt het opnieuw indexeren asynchroon uitgevoerd.
+Afhankelijk van de [ scenario&#39;s ](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), soms, moet het opnieuw indexeren worden uitgevoerd. Op dit moment wordt opnieuw indexeren uitgevoerd door de markering `reindex` in te stellen op `true` in het indexdefinitieknooppunt via CRXDE of via de gebruikersinterface van Indexbeheer. Nadat de markering is ingesteld, wordt het opnieuw indexeren asynchroon uitgevoerd.
 
 Enkele punten die u wilt opmerken bij het opnieuw indexeren:
 
-* Opnieuw indexeren gaat veel langzamer `DocumentNodeStore` instellingen vergeleken met `SegmentNodeStore` instellingen waar alle inhoud lokaal is;
+* Het opnieuw indexeren gaat veel langzamer bij `DocumentNodeStore` -instellingen dan bij `SegmentNodeStore` -instellingen waarbij alle inhoud lokaal is.
 
 * Met het huidige ontwerp, terwijl het opnieuw indexeren gebeurt, wordt async indexer geblokkeerd en alle andere async indexen worden verouderd en niet bijgewerkt tijdens het indexeren. Daarom kunnen gebruikers, als het systeem in gebruik is, geen bijgewerkte resultaten zien;
 * Bij de herindexering wordt de gehele gegevensopslagruimte doorkruist, wat een grote belasting kan betekenen voor de installatie van de AEM en zo van invloed kan zijn op de gebruikerservaring.
-* Voor een `DocumentNodeStore` installatie waar herindexering veel tijd in beslag kan nemen, als de verbinding met de Mongo-database halverwege de bewerking mislukt, moet de indexering vanaf nul opnieuw worden opgestart;
+* Voor een `DocumentNodeStore` -installatie waarbij het opnieuw indexeren aanzienlijk kan duren als de verbinding met de Mongo-database halverwege de bewerking mislukt, moet de indexering opnieuw van voren af aan worden gestart.
 
 * Soms kan het opnieuw indexeren veel tijd in beslag nemen door het extraheren van tekst. Dit is specifiek voor instellingen met veel PDF-bestanden, waarbij de tijd die aan tekstextractie wordt besteed invloed kan hebben op de indexatietijd.
 
 Om deze doelstellingen te bereiken, steunt het werktuig-looppas van de indexindex verschillende wijzen voor het opnieuw indexeren die kunnen worden gebruikt zoals vereist. De opdracht voor indexeren met eikenuitvoering biedt de volgende voordelen:
 
-* **out-of-band herindexering** - het opnieuw omdraaien van de eik kan los van de AEM worden uitgevoerd, zodat de gevolgen voor de AEM in gebruik tot een minimum worden beperkt;
+* **out-of-band het opnieuw indexeren** - het eik-looppas het opnieuw indexeren kan afzonderlijk van een lopende AEM opstelling worden gedaan en zo, minimaliseert het het effect op de AEM instantie die in gebruik is;
 
-* **rennen buiten de rijstrook** - De herindexering vindt plaats zonder gevolgen voor indexeringsbewerkingen. Dit betekent dat de asynchrone indexeerder andere indexen kan blijven indexeren;
+* **out-of-lane het opnieuw indexeren** - het opnieuw indexeren vindt plaats zonder het beïnvloeden van indexerende verrichtingen. Dit betekent dat de asynchrone indexeerder andere indexen kan blijven indexeren;
 
-* **Vereenvoudigde herindex voor DocumentNodeStore-installaties** - Voor `DocumentNodeStore` installaties, herindexering kan worden uitgevoerd met één opdracht die ervoor zorgt dat herindexering op de meest optimale manier wordt uitgevoerd;
+* **Vereenvoudigde herdex voor installaties DocumentNodeStore** - voor `DocumentNodeStore` installaties, kan het opnieuw indexeren met één enkel bevel worden gedaan dat ervoor zorgt dat het opnieuw indexeren op de meest optimale manier wordt gedaan;
 
-* **Ondersteunt het bijwerken van indexdefinities en het introduceren van nieuwe indexdefinities**
+* **Steunt het bijwerken van indexdefinities en het introduceren van nieuwe indexdefinities**
 
 ### Opnieuw indexeren - DocumentNodeStore {#reindexdocumentnodestore}
 
-Voor `DocumentNodeStore` installaties die opnieuw worden gecomprimeerd, kunnen worden uitgevoerd met één enkele opdracht voor het uitvoeren van een storing:
+Voor `DocumentNodeStore` -installaties kan opnieuw indexeren worden uitgevoerd met één enkele opdracht voor het uitvoeren van een eiken:
 
 ```shell
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore mongodb://server:port/aem
@@ -142,36 +142,36 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 Dit biedt de volgende voordelen:
 
 * Minimale invloed op het uitvoeren van AEM instanties. De meeste leest kan van secundaire servers worden gedaan en het lopen AEM de geheime voorgeheugens worden niet nadelig beïnvloed wegens al die traversal die voor het opnieuw indexeren wordt vereist;
-* Gebruikers kunnen ook een JSON van een nieuwe of bijgewerkte index opgeven via de `--index-definitions-file` -optie.
+* Gebruikers kunnen ook een JSON van een nieuwe of bijgewerkte index opgeven via de optie `--index-definitions-file` .
 
 ### Opnieuw indexeren - SegmentNodeStore {#reindexsegmentnodestore}
 
-Voor `SegmentNodeStore` installaties voor herkoppeling kunnen op een van de volgende manieren worden uitgevoerd :
+Voor `SegmentNodeStore` -installaties kan opnieuw indexeren op een van de volgende manieren worden uitgevoerd:
 
 #### Online opnieuw indexeren - SegmentNodeStore {#onlinereindexsegmentnodestore}
 
-Volg de vastgestelde manier waarop het opnieuw indexeren door middel van plaatsbepaling wordt gedaan `reindex` markering.
+Voer de markering `reindex` in op de gebruikelijke manier waarop opnieuw indexeren wordt uitgevoerd.
 
 #### Online opnieuw indexeren - SegmentNodeStore - De AEM-instantie wordt uitgevoerd {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
 
-Voor `SegmentNodeStore` installaties, kan slechts één proces tot segmentdossiers op read-write wijze toegang hebben. Daarom moeten er voor sommige bewerkingen in de indexering van eikels handmatige extra stappen worden gezet.
+Voor `SegmentNodeStore` -installaties heeft slechts één proces toegang tot segmentbestanden in de modus lezen-schrijven. Daarom moeten er voor sommige bewerkingen in de indexering van eikels handmatige extra stappen worden gezet.
 
 Dit zou het volgende inhouden:
 
 1. Staptekst
-1. Verbind de `oak-run` naar dezelfde gegevensopslagruimte die door AEM in alleen-lezen modus wordt gebruikt, en indexeren. Een voorbeeld van hoe u dit kunt bereiken:
+1. Verbind `oak-run` met de zelfde bewaarplaats die door AEM op read-only wijze wordt gebruikt en voer het indexeren uit. Een voorbeeld van hoe u dit kunt bereiken:
 
    ```shell
    java -jar oak-run-1.7.6.jar index --fds-path=/Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/datastore/ --checkpoint 26b7da38-a699-45b2-82fb-73aa2f9af0e2 --reindex --index-paths=/oak:index/lucene /Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/segmentstore/
    ```
 
-1. Importeer ten slotte de gemaakte indexbestanden via de `IndexerMBean#importIndex` bewerking vanaf het pad waar de indexeringsbestanden zijn opgeslagen nadat de bovenstaande opdracht is uitgevoerd.
+1. Ten slotte importeert u de gemaakte indexbestanden via de `IndexerMBean#importIndex` -bewerking vanaf het pad waar de indexeringsbestanden zijn opgeslagen nadat de bovenstaande opdracht is uitgevoerd.
 
 In dit scenario, moet u niet de server van de AEM tegenhouden of om het even welke nieuwe instantie verstrekken. Als indexering echter gepaard gaat met een verplaatsing van de hele opslagplaats, zou de I/O-belasting van de installatie toenemen, wat negatieve gevolgen zou hebben voor de prestaties bij uitvoering.
 
 #### Online opnieuw indexeren - SegmentNodeStore - de AEM instantie is gesloten {#onlinereindexsegmentnodestoreaeminstanceisdown}
 
-Voor `SegmentNodeStore` installaties, kan het opnieuw indexeren door één enkele eiken-loopbevel worden gedaan. De AEM instantie moet echter worden afgesloten.
+Voor `SegmentNodeStore` -installaties kan opnieuw indexeren worden uitgevoerd met één enkele opdracht voor het uitvoeren van een eiken. De AEM instantie moet echter worden afgesloten.
 
 U kunt het opnieuw indexeren met het volgende bevel teweegbrengen:
 
@@ -185,27 +185,27 @@ Het verschil tussen deze aanpak en de hierboven beschreven aanpak is dat het mak
 
 In dit geval kunt u opnieuw indexeren op een gekloonde instelling om de invloed op de actieve AEM te minimaliseren:
 
-1. Een controlepunt maken door middel van een JMX-bewerking. Je kunt dit doen door naar de [JMX-console](/help/sites-administering/jmx-console.md) en zoek naar `CheckpointManager`. Klik vervolgens op de knop **createCheckpoint(long p1)** een bewerking waarbij een hoge waarde wordt gebruikt voor de vervaldatum in seconden (bijvoorbeeld **2592000**).
-1. De `crx-quickstart` naar een nieuwe computer
+1. Een controlepunt maken door middel van een JMX-bewerking. U kunt dit doen door naar de [ Console JMX ](/help/sites-administering/jmx-console.md) te gaan en naar `CheckpointManager` te zoeken. Dan, klik **createCheckpoint (lange p1)** verrichting die een hoge waarde voor afloop in seconden gebruikt (bijvoorbeeld, **2592000**).
+1. Kopieer de map `crx-quickstart` naar een nieuwe computer
 1. Herindexeren uitvoeren met de opdracht Indexeren op einde
 
 1. De gegenereerde indexbestanden kopiëren naar AEM server
 
 1. Importeer de indexbestanden via JMX.
 
-In dit geval wordt aangenomen dat de Data Store toegankelijk is op een andere instantie die mogelijk niet mogelijk is `FileDataStore` wordt geplaatst op een op cloud gebaseerde opslagoplossing zoals EBS. Dit sluit het scenario uit waarin `FileDataStore` is ook gekloond. Als de indexdefinitie geen fullText indexeren uitvoert, dan toegang tot `DataStore` is niet vereist.
+In dit geval wordt aangenomen dat de Data Store toegankelijk is voor een andere instantie die mogelijk niet mogelijk is als `FileDataStore` wordt geplaatst op een opslagoplossing in de cloud, zoals EBS. Dit sluit het scenario uit waarin `FileDataStore` ook wordt gekloond. Als in de indexdefinitie geen fullText-indexering wordt uitgevoerd, is toegang tot `DataStore` niet vereist.
 
 ## Hoofdlettergebruik 4 - Indexdefinities bijwerken {#usecase4updatingindexdefinitions}
 
-U kunt indexdefinitiewijzigingen momenteel verzenden door [ACS Verzeker Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) pakket. Hierdoor kunnen de indexdefinities worden verzonden door middel van een inhoudspakket waarvoor later opnieuw indexeren moet worden uitgevoerd door het instellen van de `reindex` markeren naar `true`.
+Momenteel, kunt u de veranderingen van de indexdefinitie als [ ACS verschepen verzekeren het pakket van de Index ](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Hierdoor kunnen de indexdefinities worden verzonden door middel van een inhoudspakket, waarvoor later opnieuw indexeren moet worden uitgevoerd door de markering `reindex` in te stellen op `true` .
 
 Dit werkt goed voor kleinere installaties waar het opnieuw indexeren niet lang duurt. Voor grote gegevensbanken gebeurt herindexering echter veel langer. In dergelijke gevallen kunnen we nu de werkset voor indexen die op een eikel worden uitgevoerd, gebruiken.
 
-Oak-looppas steunt nu het verstrekken van indexdefinities in formaat JSON en de verwezenlijking van index in out-of-band wijze waar geen veranderingen op een levende instantie worden uitgevoerd.
+Oak-run biedt nu ondersteuning voor het opgeven van indexdefinities in JSON-indeling en het maken van index in out-of-band modus, waarbij geen wijzigingen worden uitgevoerd op een live instantie.
 
 Voor dit gebruiksgeval moet u rekening houden met het volgende:
 
-1. Een ontwikkelaar werkt de indexdefinities op een lokale instantie bij en genereert vervolgens een JSON-indexdefinitiebestand via de `--index-definitions` option
+1. Een ontwikkelaar werkt de indexdefinities bij voor een lokale instantie en genereert vervolgens een JSON-indexdefinitiebestand met de optie `--index-definitions`
 
 1. De bijgewerkte JSON wordt vervolgens aan de systeembeheerder gegeven
 1. Systeembeheerder volgt de out-of-band-benadering en bereidt de index voor op een andere installatie

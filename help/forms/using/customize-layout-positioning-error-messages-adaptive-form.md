@@ -33,25 +33,25 @@ Ga als volgt te werk om een aangepaste indeling toe te passen op een veld:
 
 ### Lay-out van één veld aanpassen {#customize-layout-of-a-single-field}
 
-1. Open het formulier in **Stijl** -modus. Als u het formulier in de stijlmodus wilt openen, selecteert u op de paginaboolbalk de optie ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
-1. In de zijbalk, onder **Formulierobjecten**, selecteert u het veld en selecteert u de knop Bewerken ![bewerken, knop](assets/edit-button.png).
+1. Open de vorm op **wijze van de Stijl**. Om de vorm op stijlwijze te openen, op de paginaboolbar selecteren ![ canvas-drop-down ](assets/canvas-drop-down.png) > **Stijl**.
+1. In sidebar, onder **Objecten van de Vorm**, selecteer het gebied en selecteer uitgeven knoop ![ uitgeven-knoop ](assets/edit-button.png).
 1. Selecteer de status van het veld dat u wilt aanpassen en geef de opmaak voor die status op.
 
-   ![Inline opmaak van een veld opgeven](assets/edit-error-state.png)
+   ![ het specificeren van gealigneerde het stileren van een gebied ](assets/edit-error-state.png)
 
 ### De indeling van alle velden van een formulier aanpassen {#customize-layout-of-all-the-fields-of-a-form}
 
-Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u de opmaak van formuliercomponenten op één locatie opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Zie voor meer informatie over thema&#39;s [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
+Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u de opmaak van formuliercomponenten op één locatie opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Voor meer informatie over thema&#39;s, zie [ Thema&#39;s in AEM Forms ](../../forms/using/themes.md).
 
 Maak een thema met de Thema-editor om de indeling van alle velden in het formulier aan te passen. Nadat u een thema hebt gemaakt, voert u de volgende stappen uit om het op een formulier toe te passen:
 
 1. Open het formulier in de bewerkingsmodus.
-1. Selecteer in de bewerkingsmodus een component en selecteer vervolgens ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en selecteer vervolgens ![cmppr](assets/cmppr.png).
+1. Op geef wijze uit, selecteer een component, dan uitgezocht ![ gebied-niveau ](assets/field-level.png) > **Aangepaste Container van de Vorm**, en selecteer dan ![ cmp ](assets/cmppr.png).
 1. Selecteer in het zijpaneel onder Adaptief formulierthema het thema dat u hebt gemaakt met de Thema-editor.
 
 ## Een aangepaste veldindeling maken {#create-a-custom-field-layout}
 
-1. Open CRXDE Lite. De standaard-URL is https://&#39;[server]:[poort]...
+1. Open CRXDE Lite. Het gebrek URL is https://&#39; [ server ]:[ haven ]&#39;/crx/de.
 1. Kopieer een veldindeling van het knooppunt /libs/fd/af/layouts/field (bijvoorbeeld defaultFieldLayout) naar het knooppunt /apps (bijvoorbeeld /apps/af-field-layout).
 1. Wijzig de naam van het gekopieerde knooppunt en het bestand defaultFieldLayout.jsp. Bijvoorbeeld errorOnRight.jsp.
 
@@ -81,7 +81,7 @@ Maak een thema met de Thema-editor om de indeling van alle velden in het formuli
    ```
 
 1. Als u de weergave en het gedrag wilt verbeteren, neemt u de clientbibliotheek op die in het lay-outbestand is gemaakt (errorOnRight.jsp).
-1. Open het dialoogvenster Bewerken van het veld en selecteer de optie **Stijlen** tab. In de **Veldlay-out configureren** keuzelijst, selecteert u de nieuwe layout en klikt u op **OK**.
+1. Open uitgeven dialoogdoos van het gebied en selecteer **het Stijlen** tabel. In **vorm de drop-down doos van de Lay-out van het Gebied**, selecteer de pas gecreëerde lay-out, en klik **O.K.**.
 
 Het pakket ErrorOnRight.zip bevat code waarmee foutberichten aan de rechterkant van velden worden weergegeven.
 

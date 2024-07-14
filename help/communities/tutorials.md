@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Tutorials {#tutorials}
 
-Dit zijn voorbeelden om te helpen bij het leren en werken met Adobe Experience Manager (AEM 6.1 Communities) [Sociaal-componentkader (SCF)](scf.md).
+Dit zijn voorbeelden helpen in het leren en het werken met Adobe Experience Manager (AEM) 6.1 Communautair [ sociaal componentenkader (SCF) ](scf.md).
 
 ## Aanpassing op de client {#client-side-customization}
 
@@ -34,19 +34,19 @@ Zie ook:
 
 ## Aanpassing op de server {#server-side-customization}
 
-Zie ook [SCF-serveraanpassing](server-customize.md).
+Zie ook [ SCF server-zijaanpassing ](server-customize.md).
 
-Voorbeeldcode is beschikbaar in het dialoogvenster [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) opslagplaats:
+De code van de steekproef is beschikbaar in [ Adobe Experience Cloud GitHub ](https://github.com/Adobe-Marketing-Cloud) bewaarplaats:
 
-* [Voorbeeld van SCF-component aanpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [ pas Steekproef van de Component SCF ](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize) aan
 
-* [Voorbeeld van SCF-component bedekken](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [ Steekproef van de Component van Bedekking SCF ](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [Voorbeeld van SCF-component uitbreiden](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
+* [ breid de Steekproef van de Component SCF ](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension) uit
 
 ## Instructies {#how-to-instructions}
 
-* [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [ AEM Communities Todo MVC ](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
   ToDo MVC demonstreert hoe u een SCF+SRP-component volledig kunt ontwikkelen.
 
@@ -60,13 +60,13 @@ Voorbeeldcode is beschikbaar in het dialoogvenster [Adobe Experience Cloud GitHu
 
 ## Demo-gebruikers {#demo-users}
 
-Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend). En, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om het programma geopende staat te simuleren wanneer het onderzoeken met [Community Components Guide](components-guide.md).
+Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend). En, zolang de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de [ gids van Communautaire Componenten ](components-guide.md).
 
-Voor een volledige lijst van de demogebruikers, navigeer het gebruiken van Rail aan **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]**. Of gebruik de klassieke gebruikersinterface [beveiligingsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
+Navigeer voor een volledig overzicht van de demogebruikers met Rail naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]** . Of gebruik de Klassieke UI [ veiligheidsconsole ](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
-Indien een [site voor community is gemaakt](getting-started.md), is het mogelijk demogebruikers aan zijn [gebruikersgroepen in de gemeenschap](users.md).
+Als a [ communautaire plaats ](getting-started.md) is gecreeerd, is het mogelijk demogebruikers aan zijn [ communautaire gebruikersgroepen ](users.md) toe te wijzen.
 
-***gebruikersnaam* / *password***:
+***gebruiker identiteitskaart* / *wachtwoord***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Met een Rich Text Editor (RTE) kunt u tekst met opmaak invoeren.
 
-Voor communautaire componenten, terwijl gelijkaardig aan [RTF-editor in de auteursomgeving](../../help/sites-authoring/rich-text-editor.md), heeft dit invloed op tekst die wordt ingevoerd in de publicatieomgeving.
+Voor de componenten van Gemeenschappen, terwijl gelijkend op de [ rijke tekstredacteur in het auteursmilieu ](../../help/sites-authoring/rich-text-editor.md), beïnvloedt het tekst ingegaan in het publicatiemilieu.
 
-![rich-text-editor](assets/rich-text-editor.png)
+![ rijk-text-redacteur ](assets/rich-text-editor.png)
 
 ## RTF-editor inschakelen {#enabling-rich-text-editor}
 
-De componenten van gemeenschappen die gebruiker geproduceerde inhoud (UGC) toestaan kunnen worden toegelaten om RTE toe te staan. Als de component aan een pagina is toegevoegd of binnen een [function](functions.md), RTE kan of niet door gebrek worden toegelaten.
+De componenten van gemeenschappen die gebruiker geproduceerde inhoud (UGC) toestaan kunnen worden toegelaten om RTE toe te staan. Als de component aan een pagina werd toegevoegd of inbegrepen binnen a [ functie ](functions.md), kan RTE of niet door gebrek worden toegelaten.
 
-Als deze optie niet is ingeschakeld, voert u gewoon de invoer in [bewerkingsmodus auteur](sites-console.md#authoring-site-content)selecteert u de component die u wilt bewerken en selecteert u de component `Rich Text Editor` selectievakje.
+Als niet toegelaten, ga eenvoudig [ auteur in geef wijze ](sites-console.md#authoring-site-content) uit, selecteer de component voor geef uit, en selecteer `Rich Text Editor` checkbox.
 
 RTE is beschikbaar voor de volgende componenten van de Gemeenschappen:
 
@@ -45,9 +45,9 @@ RTE is beschikbaar voor de volgende componenten van de Gemeenschappen:
 
 ## Aanpassing {#customization}
 
-Aanpassing van de rijke teksteditor is mogelijk omdat de implementatie is gebaseerd op [CKEditor](https://ckeditor.com/).
+De aanpassing van de rijke tekstredacteur is mogelijk aangezien de implementatie op [ CKEditor ](https://ckeditor.com/) wordt gebaseerd.
 
-De huidige configuratie voor communautaire componenten is in de `cq.social.  scf   clientlib`in de gegevensopslagruimte
+De huidige configuratie voor componenten van Communities bevindt zich in de `cq.social.  scf   clientlib` , in de repository op
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -59,7 +59,7 @@ Vanwege beveiligingsproblemen zijn de hyperlinkopties niet opgenomen in de set m
 
 De hyperlinkopties toevoegen aan de werkbalk:
 
-* Een werkbalk toevoegen met de naam &quot; `links`&quot;
+* Een werkbalk met de naam &quot; `links`&quot; toevoegen
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Selecteren **[!UICONTROL Save All]**
 

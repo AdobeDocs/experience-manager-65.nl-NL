@@ -23,7 +23,7 @@ ht-degree: 0%
 >`JAR` en `WAR` zijn de bestandstypen waarin Adobe Experience Manager (AEM) wordt vrijgegeven. Deze formaten worden kwaliteitsborgd om de Adobe van steunniveaus aan te passen.
 >
 
-In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [Ondersteunde platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor meer informatie over de specifieke supportniveaus die voor de afzonderlijke toepassingsservers zijn opgegeven.
+In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [ Gesteunde sectie van Platforms ](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) om over de specifieke steunniveaus te lezen die voor de individuele toepassingsservers worden verstrekt.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -36,7 +36,7 @@ Raadpleeg de documentatie bij de toepassingsserver voor meer informatie over het
 
 >[!NOTE]
 >
->Als u Dynamic Media gebruikt in een WAR-implementatie, raadpleegt u [Dynamic Media-documentatie](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Als u Dynamic Media in een plaatsing van de OORLOG gebruikt, zie {de documentatie van 0} Dynamic Media ](/help/assets/config-dynamic.md#enabling-dynamic-media).[
 
 ## Algemene beschrijving {#general-description}
 
@@ -46,22 +46,22 @@ AEM wordt geleverd als één oorlogsbestand dat moet worden geïmplementeerd.
 
 Indien opgesteld, gebeurt het volgende door gebrek:
 
-* de uitvoeringsmodus is `author`
-* de instantie (Repository, Felix OSGI-omgeving, bundels, enzovoort) is geïnstalleerd in `${user.dir}/crx-quickstart`waar `${user.dir}` Dit pad naar crx-quickstart wordt de huidige werkmap genoemd `sling.home`
+* de uitvoermodus is `author`
+* de instantie (Repository, Felix OSGI-omgeving, bundels, enzovoort) is geïnstalleerd in `${user.dir}/crx-quickstart` waar `${user.dir}` de huidige werkmap is. Dit pad naar crx-quickstart wordt `sling.home` genoemd.
 
-* de hoofdmap van de context is bijvoorbeeld de naam van het oorlogsbestand;  `aem-6`
+* de hoofdmap van de context is bijvoorbeeld de naam van het oorlogsbestand, `aem-6`
 
 #### Configuratie {#configuration}
 
 U kunt het standaardgedrag als volgt wijzigen:
 
-* run mode: configure `sling.run.modes` in de `WEB-INF/web.xml` dossier van het AEM oorlogsdossier vóór plaatsing
+* uitvoeringsmodus: configureer de parameter `sling.run.modes` in het `WEB-INF/web.xml` -bestand van het AEM-oorlogsbestand vóór de implementatie
 
-* sling.home: configureer de `sling.home` in de `WEB-INF/web.xml`dossier van het AEM oorlogsdossier vóór plaatsing
+* sling.home: vorm de `sling.home` parameter in het `WEB-INF/web.xml` dossier van het AEM oorlogsdossier vóór plaatsing
 
 * contextroot: naam van AEM oorlogsbestand wijzigen
 
-#### Installatie publiceren {#publish-installation}
+#### Publish-installatie {#publish-installation}
 
 Als u een publicatie-instantie wilt implementeren, moet u de uitvoeringsmodus instellen om te publiceren:
 
@@ -74,8 +74,8 @@ Als u een publicatie-instantie wilt implementeren, moet u de uitvoeringsmodus in
 
 Om te controleren of alles is geïnstalleerd, kunt u:
 
-* staart `error.log`bestand om te controleren of alle inhoud is geïnstalleerd
-* zoeken in `/system/console` dat alle bundels zijn geïnstalleerd
+* staart het `error.log` dossier om te zien dat al inhoud wordt geïnstalleerd
+* in `/system/console` alle bundels geïnstalleerd zijn
 
 #### Twee instanties op dezelfde toepassingsserver {#two-instances-on-the-same-application-server}
 
@@ -87,7 +87,7 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en 
 1. Wijzig sling.run.modes om te publiceren voor de publicatie-instantie.
 1. Herhaal het bestand web.xml.
 1. Wijzig de naam van de oorlogsbestanden, zodat ze verschillende namen hebben. De ene naam wordt bijvoorbeeld gewijzigd in aemauteur.war en de andere in aempublish.war.
-1. Gebruik hogere geheugeninstellingen. Standaard AEM instanties bijvoorbeeld `-Xmx3072m`
+1. Gebruik hogere geheugeninstellingen. Standaard AEM gebruiken bijvoorbeeld `-Xmx3072m`
 1. Implementeer de twee webtoepassingen.
 1. Na de Plaatsing houdt de twee Webtoepassingen tegen.
 1. In zowel auteur- als publicatieinstanties zorgt u ervoor dat in de bestanden sling.properties de eigenschap felix.service.urlhandlers=false is ingesteld op false (de standaardwaarde is dat deze is ingesteld op true).
@@ -97,9 +97,9 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en 
 
 ### WebSphere® 8.5 {#websphere}
 
-Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
+Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
 
-**Servervoorbereiding**
+**Voorbereiding van de Server**
 
 * Laat de Basiskopballen van de Auditie door overgaan:
 
@@ -108,7 +108,7 @@ Voordat een implementatie de [Algemene beschrijving](#general-description) hierb
 * set `"JAVA_OPTS= -Xmx2048m"`
 * Als u AEM wilt installeren met gebruik van contextroot = /, wijzigt u de basis van de context van de bestaande standaardwebtoepassing.
 
-**AEM webtoepassing implementeren**
+**opstellen AEM Webtoepassing**
 
 * AEM bestand downloaden
 * Stel uw configuraties in web.xml indien nodig in (zie hierboven in de Algemene beschrijving)
@@ -126,15 +126,15 @@ Voordat een implementatie de [Algemene beschrijving](#general-description) hierb
 
 #### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
+Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
 
-**JBoss®-server voorbereiden**
+**bereidt server JBoss®** voor
 
-Geheugenargumenten instellen in het conf-bestand (bijvoorbeeld `standalone.conf`)
+Geheugenargumenten in uw conf-bestand instellen (bijvoorbeeld `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-Als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, is het mogelijk verstandig om de `deployment-timeout,` voor die set `deployment-timeout` in het xml-bestand van uw instantie (bijvoorbeeld `configuration/standalone.xml)`:
+Als u de implementatiescanner gebruikt om de AEM webtoepassing te installeren, is het mogelijk goed om de waarde `deployment-timeout,` voor die set als attribuut `deployment-timeout` op te voeren in het XML-bestand van de instantie (bijvoorbeeld `configuration/standalone.xml)` :
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -142,7 +142,7 @@ Als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, 
 </subsystem>
 ```
 
-**AEM webtoepassing implementeren**
+**opstellen AEM Webtoepassing**
 
 * Upload de AEM webtoepassing in uw JBoss®-beheerconsole.
 
@@ -150,30 +150,30 @@ Als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, 
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
+Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
 
 Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
-**WebLogic-servervoorbereiding**
+**Voorbereiding van de Server WebLogic**
 
-* In `${myDomain}/config/config.xml`toevoegen aan de veiligheid-configuratie sectie:
+* In `${myDomain}/config/config.xml` voeg aan de veiligheid-configuratie sectie toe:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is OK)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [ https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd ](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is o.k.)
 
 * VM-geheugeninstellingen verhogen:
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) zoek naar WLS_MEM_ARGS, stel bijvoorbeeld een set in `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) zoekopdracht naar WLS_MEM_ARGS, stel bijvoorbeeld set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m` in
    * WebLogic Server opnieuw starten
 
-* Maken in `${myDomain}` een pakketmap en in een cq-map en daarin een overzichtsmap
+* Maak in `${myDomain}` een pakketmap en in een cq-map en maak er een overzichtsmap van
 
-**AEM webtoepassing implementeren**
+**opstellen AEM Webtoepassing**
 
 * AEM bestand downloaden
-* Zet het AEM oorlogsdossier in ${myDomain}/packages/cq folder
-* Configuraties maken in `WEB-INF/web.xml` indien nodig (zie hierboven in de algemene beschrijving)
+* Plaats het AEM oorlogsdossier in $ {myDomain}/packages/cq omslag
+* Maak uw configuraties in `WEB-INF/web.xml` indien nodig (zie hierboven in de Algemene beschrijving)
 
-   * Uitpakken `WEB-INF/web.xml`file
+   * `WEB-INF/web.xml` -bestand uitpakken
    * de parameter sling.run.modes wijzigen om te publiceren
    * uncomment sling.home aanvankelijke parameter en reeks dit weg zoals u nodig hebt (zie Algemene Beschrijving)
    * Het bestand web.xml herstellen
@@ -181,22 +181,22 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 * Implementeer AEM oorlogsbestand als een toepassing (voor de andere instellingen gebruikt u de standaardinstellingen)
 * De installatie kan tijd in beslag nemen...
 * Controleer of de installatie is voltooid zoals hierboven vermeld in de algemene beschrijving (bijvoorbeeld door te tikken op error.log)
-* U kunt de basisinhoud van de context wijzigen op het tabblad Configuratie van de webtoepassing in de WebLogic `/console`
+* U kunt de hoofdmap van de context wijzigen op het tabblad Configuratie van de webtoepassing in de WebLogic `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
+Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
 
-* **Tomcat-server voorbereiden**
+* **bereidt de Server van Tomcat voor**
 
    * VM-geheugeninstellingen verhogen:
 
-      * In `bin/catalina.bat` (resp. `catalina.sh` op UNIX®) voeg de volgende instelling toe:
+      * Voeg in `bin/catalina.bat` (resp. `catalina.sh` op UNIX®) de volgende instelling toe:
       * `set "JAVA_OPTS= -Xmx2048m`
 
-   * Tomcat biedt geen toegang voor beheerders of beheerders bij de installatie. Daarom moet u handmatig bewerken `tomcat-users.xml` deze rekeningen toegankelijk te maken:
+   * Tomcat biedt geen toegang voor beheerders of beheerders bij de installatie. Daarom moet u `tomcat-users.xml` handmatig bewerken om toegang toe te staan voor deze accounts:
 
-      * Bewerken `tomcat-users.xml` toegang voor beheerder en manager op te nemen. De configuratie zou gelijkaardig aan het volgende voorbeeld moeten kijken:
+      * Bewerk `tomcat-users.xml` om toegang voor beheerder en manager op te nemen. De configuratie zou gelijkaardig aan het volgende voorbeeld moeten kijken:
 
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
@@ -223,7 +223,7 @@ Voordat een implementatie de [Algemene beschrijving](#general-description) hierb
 
      `webapps/manager/WEB-INF/web.xml`
 
-     en vergroot de maximale bestandsgrootte en maximale aanvraaggrootte tot minstens 500 MB. Raadpleeg de volgende secties `multipart-config` voorbeeld van een dergelijke `web.xml` bestand.
+     en vergroot de max-file-size en max-request-size tot minstens 500 MB, zie het volgende `multipart-config` voorbeeld van zulk een `web.xml` dossier.
 
      ```xml
      <multipart-config>
@@ -234,7 +234,7 @@ Voordat een implementatie de [Algemene beschrijving](#general-description) hierb
      </multipart-config>
      ```
 
-* **AEM webtoepassing implementeren**
+* **opstellen AEM Webtoepassing**
 
    * Download AEM oorlogsbestand.
    * Maak uw configuraties in web.xml indien nodig (zie hierboven in de Algemene Beschrijving).

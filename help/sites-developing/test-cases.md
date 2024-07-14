@@ -21,12 +21,12 @@ ht-degree: 0%
 
 Uw testgevallen moeten zijn gebaseerd op:
 
-**Gevallen gebruiken**
+**Gevallen van het Gebruik**
 
 * Deze definiëren de vereiste functionaliteit in termen van de interactie tussen de actoren (rollen die bepaalde handelingen initiëren) en het systeem.
 * De gebruiksscenario&#39;s moeten door de klant worden gedefinieerd.
 
-**Gedetailleerde specificaties voor vereisten**
+**Gedetailleerde Specificatie van Vereisten**
 
 * Alle functionele en prestatie-eisen moeten worden getest.
 
@@ -52,16 +52,18 @@ Het automatiseren van testgevallen is echter een belangrijke investering, dus mo
 
 Bij het testen van AEM zijn enkele specifieke details van bijzonder belang:
 
-**Auteur- en publicatie-omgevingen**
+**Auteur en de Milieu&#39;s van Publish**
 
-Hoewel het [Omgevingen](/help/sites-developing/the-basics.md#environments)Het is de moeite waard om een doorslaggevende factor van AEM voor het testen te benadrukken.
+Hoewel behandeld in [ Milieu ](/help/sites-developing/the-basics.md#environments), is het de moeite waard het benadrukken van een beslissende factor van AEM betreffende het testen.
 
 AEM twee toepassingen:
 
-* de *Auteur* omgeving Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
+* het *milieu van de Auteur*
+Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
 Dit heeft een kleine (er), voorspelbare reeks gebruikers, voor wie specifieke functionaliteit en prestaties cruciaal zijn.
 
-* de *Publiceren* omgeving Deze instantie presenteert de website in de gepubliceerde vorm voor toegang door bezoekers.
+* het *milieu van Publish*
+Dit exemplaar presenteert de website in zijn gepubliceerde vorm voor toegang van bezoekers.
 Dit heeft gewoonlijk een grotere reeks gebruikers, waar het volume van verkeer niet altijd 100% voorspelbaar is. Prestaties zijn nog steeds van cruciaal belang - bij het beantwoorden van verzoeken. Overweeg ook caching en lading-in evenwicht brengen.
 
 Alhoewel dezelfde software als dusdanig:
@@ -74,15 +76,15 @@ Alhoewel dezelfde software als dusdanig:
 
 Met andere woorden, zij moeten afzonderlijk en met verschillende testgevallen worden getest.
 
-**Personalisatie**
+**Personalization**
 
 Wanneer het testen van verpersoonlijking elk individueel gebruiksgeval zou moeten worden herhaald gebruikend veelvoudige gebruikersrekeningen om gedrag te bewijzen.
 
 Schakel het in cache plaatsen ook in voor het juiste gedrag.
 
-**De verzender**
+**Dispatcher**
 
-De meeste projecten installeren Dispatcher voor caching en lading het in evenwicht brengen.
+De meeste projecten installeren de Dispatcher voor caching en lading het in evenwicht brengen.
 
 Testen is moeilijk (caching vindt plaats op verschillende niveaus en op verschillende locaties) en moet gebeuren op basis van een zwarte doos. De belangrijkste aspecten waarop u wilt testen zijn:
 

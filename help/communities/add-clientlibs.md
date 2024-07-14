@@ -1,6 +1,6 @@
 ---
 title: Clientlibs toevoegen
-description: Leer hoe u een ClientLibraryFolder (clientlibs) toevoegt die wordt gebruikt voor de JavaScript- en Cascading Style Sheets die worden gebruikt om de pagina's van uw site weer te geven.
+description: Leer hoe u een ClientLibraryFolder (clientlibs) toevoegt die wordt gebruikt om de JavaScript en Cascading Style Sheets te bevatten die worden gebruikt om de pagina's van uw site weer te geven.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -21,39 +21,39 @@ ht-degree: 0%
 
 ## Een ClientLibraryFolder (clientlibs) toevoegen {#add-a-clientlibraryfolder-clientlibs}
 
-Een ClientLibraryFolder maken met de naam `clientlibs` bevat de JavaScript- (JS) en CSS-stijlpagina&#39;s die worden gebruikt om de pagina&#39;s van uw site weer te geven.
+Maak een ClientLibraryFolder met de naam `clientlibs` die de JavaScript (JS) en de Cascading Styles Sheets (CSS) bevat die worden gebruikt om de pagina&#39;s van uw site weer te geven.
 
-De `categories` De eigenschapwaarde die aan deze clientbibliotheek wordt gegeven, is de id die wordt gebruikt om deze clientlib rechtstreeks vanaf een inhoudspagina in te sluiten of om deze in andere clientlibs in te sluiten.
+De waarde van de eigenschap `categories` die aan deze clientbibliotheek wordt gegeven, is de id die wordt gebruikt om deze clientlib rechtstreeks vanaf een inhoudspagina in te sluiten of om deze in andere clientlibs in te sluiten.
 
-1. Gebruiken **CRXDE Lite**, uitbreiden `/etc/designs`
+1. Gebruikend **CRXDE Lite**, breid `/etc/designs` uit
 
-1. Klikken met rechtermuisknop `an-scf-sandbox` en selecteert u `Create Node`
+1. Klik met de rechtermuisknop `an-scf-sandbox` en selecteer `Create Node`
 
-   * Naam: `clientlibs`
+   * Name : `clientlibs`
    * Type: `cq:ClientLibraryFolder`
 
-1. Klikken **OK**
+1. Klik **O.K.**
 
-![add-client-library](assets/add-client-library.png)
+![ toe:voegen-cliënt-bibliotheek ](assets/add-client-library.png)
 
-In de **Eigenschappen** tab voor de nieuwe `clientlibs` knoop, ga in **categorieën** eigenschap:
+In het **lusje van Eigenschappen** voor de nieuwe `clientlibs` knoop, ga het **categorieën** bezit in:
 
 * Naam: **categorieën**
-* Type: **String**
-* Waarde: **apps.an-scf-sandbox**
-* Klikken **Toevoegen**
-* Klikken **Alles opslaan**
+* Type: **Koord**
+* Waarde: **apps.an-scf-zandbak**
+* Klik **toevoegen**
+* Klik **sparen allen**
 
-Opmerking: geef de waarde voor categorieën een voorvoegsel met &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs. BELANGRIJK: tijdelijke aanduiding toevoegen `js.tx`t en **`css.txt`** bestanden. (Zonder deze bestanden is het officieel geen cq:ClientLibraryFolder.)
+Opmerking: geef de waarde voor categorieën een voorvoegsel met &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs. BELANGRIJK: voeg plaatsaanduidingen voor `js.tx` t- en **`css.txt`** -bestanden toe. (Zonder deze bestanden is het officieel geen cq:ClientLibraryFolder.)
 
 1. Klikken met rechtermuisknop **`/etc/designs/an-scf-sandbox/clientlibs`**
-1. Selecteren **Bestand maken...**
-1. Enter **Naam:** `css.txt`
-1. Selecteren **Bestand maken...**
-1. Enter **Naam:** `js.txt`
-1. Klikken **Alles opslaan**
+1. Selecteer **tot Dossier leiden...**
+1. Ga **Naam in:** `css.txt`
+1. Selecteer **tot Dossier leiden...**
+1. Ga **Naam in:** `js.txt`
+1. Klik **sparen allen**
 
-![clientlibs-css](assets/clientlibs-css.png)
+![ clientlibs-css ](assets/clientlibs-css.png)
 
 De eerste regel van css.txt en js.txt identificeert de basislocatie van waaruit de volgende lijsten met bestanden moeten worden gevonden.
 
@@ -74,7 +74,7 @@ Maak vervolgens een bestand onder clientlibs met de naam style.css en stel de in
 
 ### SCF-clips insluiten {#embed-scf-clientlibs}
 
-In de **Eigenschappen** tab voor de `clientlibs` node, voer de eigenschap String voor meerdere waarden in **insluiten**. Dit sluit de noodzakelijke [client-side bibliotheken (clientlibs) voor SCF-componenten](/help/communities/client-customize.md#clientlibs-for-scf). Voor deze zelfstudie worden veel van de clientlibs die nodig zijn voor de onderdelen Communities toegevoegd.
+In het **lusje van Eigenschappen** voor de `clientlibs` knoop, ga het bezit van het multi-waardeKoord **in bed** in. Dit sluit de noodzakelijke [ cliënt-zijbibliotheken (clientlibs) voor componenten SCF ](/help/communities/client-customize.md#clientlibs-for-scf) in. Voor deze zelfstudie worden veel van de clientlibs die nodig zijn voor de onderdelen Communities toegevoegd.
 
 Dit kan al dan niet de gewenste benadering voor een productiesite zijn aangezien er overwegingen van gemak tegenover grootte/snelheid van de clientlibs die voor elke pagina worden gedownload zijn.
 
@@ -84,12 +84,13 @@ Als u slechts één functie op één pagina gebruikt, kunt u de volledige client
 
 In dit geval, met inbegrip van hen allen en zo de meer basiscliënten SCF die de auteur clientlibs zijn worden geprefereerd:
 
-* Naam: **`embed`**
+* Name : **`embed`**
 * Type: **`String`**
 * Klikken **`Multi`**
 * Waarde: **`cq.social.scf`**
 
-   * Hiermee wordt een dialoogvenster weergegeven. Klik op **`+`** na elke vermelding om de volgende clientlib-categorieën toe te voegen:
+   * Er wordt een dialoogvenster weergegeven,
+Klik op **`+`** na elke vermelding om de volgende clientlib-categorieën toe te voegen:
 
       * **`cq.ckeditor`**
       * **`cq.social.author.hbs.comments`**
@@ -97,42 +98,42 @@ In dit geval, met inbegrip van hen allen en zo de meer basiscliënten SCF die de
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * Klikken **OK**
+      * Klik **O.K.**
 
-* Klikken **Alles opslaan**
+* Klik **sparen allen**
 
-![scf-clientlibs](assets/scf-clientlibs.png)
+![ scf-clientlibs ](assets/scf-clientlibs.png)
 
-Zo `/etc/designs/an-scf-sandbox/clientlibs` moet nu in de gegevensopslagruimte worden weergegeven:
+Zo wordt `/etc/designs/an-scf-sandbox/clientlibs` nu weergegeven in de opslagplaats:
 
-![scf-clientlibs-weergave](assets/scf-clientlibs1.png)
+![ scf-clientlibs-mening ](assets/scf-clientlibs1.png)
 
 ### Clientlibs opnemen in PlayPage-sjabloon {#include-clientlibs-in-playpage-template}
 
-Zonder de `apps.an-scf-sandbox` De categorie ClientLibraryFolder op de pagina is niet functioneel en is niet opgemaakt omdat de benodigde JavaScript- en CSS-stijlen niet beschikbaar zijn.
+Zonder de categorie `apps.an-scf-sandbox` ClientLibraryFolder op de pagina toe te voegen, zijn de SCF-componenten niet functioneel en niet opgemaakt omdat de benodigde JavaScript- en CSS-stijlen niet beschikbaar zijn.
 
 Bijvoorbeeld, zonder de clientlibs op te nemen, lijkt de SCF commentaarcomponent ongestileerd:
 
-![clientlibs-comment](assets/clientlibs-comment.png)
+![ clientlibs-commentaar ](assets/clientlibs-comment.png)
 
 Zodra apps.an-scf-sandbox clientlibs is opgenomen, wordt de stijl van de SCF-commentaarcomponent weergegeven:
 
-![clientlibs-comment-styled](assets/clientlibs-comment1.png)
+![ clientlibs-commentaar-gestileerde ](assets/clientlibs-comment1.png)
 
-De instructie include behoort tot de `head` van de `html` script. De standaardwaarde **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`**.
+De instructie include behoort tot de sectie `head` van het script van `html` . De standaardwaarde **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`** .
 
-**Kopieer koplibs.jsp en neem clientlibs op:**
+**Kopieer headlibs.jsp en omvat clientlibs:**
 
-1. Gebruiken **CRXDE Lite**, selecteert u **`/libs/foundation/components/page/headlibs.jsp`**
+1. Gebruikend **CRXDE Lite**, uitgezocht **`/libs/foundation/components/page/headlibs.jsp`**
 
-1. Klik met de rechtermuisknop en selecteer **Kopiëren** (Of selecteer Kopiëren op de werkbalk)
+1. Klik met de rechtermuisknop en selecteer **Exemplaar** (of selecteer Exemplaar van de toolbar)
 1. Selecteren **`/apps/an-scf-sandbox/components/playpage`**
-1. Klik met de rechtermuisknop en selecteer **Plakken** (of selecteer Plakken op de werkbalk)
-1. Dubbelklikken **`headlibs.jsp`** zodat u het kunt openen
+1. Klik met de rechtermuisknop en selecteer **Deeg** (of uitgezocht Deeg van de toolbar)
+1. Dubbelklik op **`headlibs.jsp`** om het te openen
 1. De volgende regel toevoegen aan het einde van het bestand
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. Klikken **Alles opslaan**
+1. Klik **sparen allen**
 
 ```xml
 <%@ page session="false" %><%
@@ -146,42 +147,42 @@ De instructie include behoort tot de `head` van de `html` script. De standaardwa
 
 Laad uw website in de browser en controleer of de achtergrond geen blauwe tint heeft.
 
-[https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
+[ https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![gemeenschapszin](assets/community-play.png)
+![ gemeenschap-spel ](assets/community-play.png)
 
 ### Uw werk tot nu toe opslaan {#saving-your-work-so-far}
 
 Op dit moment bestaat er een minimalistische zandbak. Het kan de moeite waard zijn om op te slaan als een pakket, zodat u tijdens het afspelen uw server kunt uitschakelen als uw opslagplaats beschadigd raakt en u opnieuw wilt beginnen. Wijzig vervolgens de naam van de map crx-quickstart/ of verwijder deze, schakel de server in, upload en installeer dit opgeslagen pakket en hoef deze basisstappen niet te herhalen.
 
-Dit pakket is beschikbaar op het tabblad [Een voorbeeldpagina maken](/help/communities/create-sample-page.md) zelfstudie voor mensen die niet kunnen wachten om binnen te springen en te beginnen met afspelen.
+Dit pakket bestaat op [ creeer een leerprogramma van de Pagina van de Steekproef ](/help/communities/create-sample-page.md) voor hen die niet kunnen wachten binnen te springen en beginnen speel.
 
 Een pakket maken:
 
-* Van CRXDE Lite, klik [Pakketpictogram](https://localhost:4502/crx/packmgr/)
-* Klikken **Pakket maken**
+* Van CRXDE Lite, klik het [ pictogram van het Pakket ](https://localhost:4502/crx/packmgr/)
+* Klik **Create Pakket**
 
    * Pakketnaam: an-scf-sandbox-minimum-pkg
    * Versie: 0.1
    * Groep: `leave as default`
-   * Klikken **OK**
+   * Klik **O.K.**
 
-* Klikken **Bewerken**
+* Klik **uitgeven**
 
-   * Selecteren **Filters** tab
+   * Selecteer **Filters** lusje
 
-      * Klikken **Filter toevoegen**
+      * Klik **toevoegen filter**
       * Hoofdpad: bladeren naar `/apps/an-scf-sandbox`
-      * Klikken **Gereed**
-      * Klikken **Filter toevoegen**
+      * Klik **Gereed**
+      * Klik **toevoegen filter**
       * Hoofdpad: bladeren naar `/etc/designs/an-scf-sandbox`
-      * Klikken **Gereed**
-      * Klikken **Filter toevoegen**
+      * Klik **Gereed**
+      * Klik **toevoegen filter**
       * Hoofdpad: bladeren naar `/content/an-scf-sandbox**`
-      * Klikken **Gereed**
+      * Klik **Gereed**
 
-   * Klikken **Opslaan**
+   * Klik **sparen**
 
-* Klikken **Opbouwen**
+* Klik **Bouwstijl**
 
-Nu kunt u **Downloaden** opslaan naar schijf en **Pakket uploaden** en selecteer **Meer > Repliceren** om de sandbox naar een publicatieinstantie van de localhost te duwen, zodat de sandbox meer ruimte krijgt.
+Nu kunt u **Download** selecteren om het aan schijf te bewaren en **Pakket** elders uploaden, en **selecteren Meer > Repliceert** om zandbak aan een localhost te duwen publiceer instantie om het domein van uw zandbak uit te breiden.

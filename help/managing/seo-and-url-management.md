@@ -19,7 +19,7 @@ ht-degree: 38%
 
 SEO (Search Engine Optimization, optimalisering van zoekprogramma&#39;s) is een belangrijk punt van zorg geworden voor veel marketers. Daarom moeten de zorgen van de SEO over vele AEM projecten worden aangepakt.
 
-In dit document worden eerst enkele [Best practices voor SEO](#seo-best-practices) en aanbevelingen voor een AEM uitvoering. Vervolgens wordt in dit document dieper ingegaan op enkele van de meer [complexe implementatiestappen](#aem-configurations) die in de eerste sectie aan bod komen.
+Dit document beschrijft eerst sommige [ SEO beste praktijken ](#seo-best-practices) en aanbevelingen op een AEM implementatie. Vervolgens wordt in dit document dieper ingegaan op enkele van de meer [complexe implementatiestappen](#aem-configurations) die in de eerste sectie aan bod komen.
 
 ## SEO Best practices {#seo-best-practices}
 
@@ -45,7 +45,7 @@ Hier volgen enkele algemene tips voor het samenstellen van URL&#39;s voor SEO:
 * Vermijd waar mogelijk het gebruik van queryparameters. Als deze toch nodig zijn, gebruik er dan maximaal twee.
 
    * Gebruik de mappenstructuur om de informatiearchitectuur aan te geven, indien beschikbaar.
-   * Als een mappenstructuur geen optie is, gebruikt u Selectoren voor delen in de URL in plaats van queryreeksen. Naast de SEO-waarde die ze bieden, zorgen slingende kiezers ervoor dat pagina&#39;s ook cacheable zijn voor de Dispatcher.
+   * Als een mappenstructuur geen optie is, gebruikt u Selectoren voor delen in de URL in plaats van queryreeksen. Naast de SEO-waarde die ze bieden, zorgen slingerkiezers ervoor dat pagina&#39;s ook in de cache kunnen worden geplaatst voor de Dispatcher.
 
 * Hoe beter een URL voor mensen leesbaar is, hoe beter. Trefwoorden aanwezig hebben in de URL verhoogt waarde.
 
@@ -78,14 +78,14 @@ heeft de voorkeur boven `mybrand.com/products/product-detail.1234.html`
 
 * Ondersteun hoofdlettergevoeligheid in URL-aanvragen.
 
-   * Vorm de Verzender om alle binnenkomende verzoeken als kleine letters te herschrijven.
+   * Configureer de Dispatcher om alle binnenkomende verzoeken als kleine letters te herschrijven.
    * Train contentauteurs om alle pagina&#39;s met kleine letters te maken.
 
 * Zorg ervoor dat elke pagina slechts vanaf één protocol wordt aangeboden.
 
-   * Soms worden sites aangeboden via `http` totdat een gebruiker een pagina bereikt met bijvoorbeeld een uitcheckformulier of een aanmeldingsformulier, waarna naar `https` wordt omgeschakeld. Wanneer de gebruiker een koppeling maakt vanaf deze pagina, als de gebruiker kan terugkeren naar `http` pagina&#39;s en open deze via `https`, worden deze door het zoekprogramma bijgehouden als twee afzonderlijke pagina&#39;s.
+   * Soms worden sites aangeboden via `http` totdat een gebruiker een pagina bereikt met bijvoorbeeld een uitcheckformulier of een aanmeldingsformulier, waarna naar `https` wordt omgeschakeld. Als de gebruiker bij het koppelen van deze pagina terug kan keren naar `http` pagina&#39;s en deze kan openen via `https` , worden deze door het zoekprogramma bijgehouden als twee aparte pagina&#39;s.
 
-   * Google geeft momenteel de voorkeur aan `https`-pagina&#39;s boven `http`-pagina&#39;s. Ze helpen het leven van iedereen makkelijker te maken om de hele site te bedienen `https`.
+   * Google geeft momenteel de voorkeur aan `https`-pagina&#39;s boven `http`-pagina&#39;s. Ze helpen het leven van iedereen makkelijker te maken om de hele site te bedienen `https` .
 
 ### Serverconfiguratie {#server-configuration}
 
@@ -111,7 +111,7 @@ De afgelopen jaren is het steeds vaker zo dat parameters werden verwijderd om UR
 
 * Verbeteren de leesbaarheid van URL&#39;s.
 * Hiermee kunt u uw pagina&#39;s in cache plaatsen op de Dispatcher en de beveiliging verbeteren.
-* Hiermee kunt u de inhoud rechtstreeks adresseren, in plaats van een algemeen servlet te hebben dat inhoud ophaalt. Het verleent u de voordelen van ACLs die u op uw bewaarplaats en filters toepast die u op de Verzender toepast.
+* Hiermee kunt u de inhoud rechtstreeks adresseren, in plaats van een algemeen servlet te hebben dat inhoud ophaalt. Het verleent u de voordelen van ACLs die u op uw bewaarplaats en filters toepast die u op Dispatcher toepast.
 
 #### Selectors voor servlets gebruiken {#using-selectors-for-servlets}
 
@@ -124,7 +124,7 @@ In de volgende voorbeelden ziet u hoe u servlets kunt registreren die zowel deze
 
 #### Bin servlets (één niveau omlaag) {#bin-servlets-one-level-down}
 
-**Bin**-servlets volgen het patroon dat vele ontwikkelaars kennen via J2EE-programmering. De servlet wordt geregistreerd op een specifiek pad dat, in AEM, gewoonlijk onder `/bin`en u extraheert de benodigde aanvraagparameters uit de queryreeks.
+**Bin**-servlets volgen het patroon dat vele ontwikkelaars kennen via J2EE-programmering. De servlet wordt geregistreerd bij een specifiek weg die, in AEM, gewoonlijk onder `/bin` is, en u haalt de noodzakelijke verzoekparameters uit het vraagkoord.
 
 De SCR-annotatie voor dit type servlet ziet er ongeveer als volgt uit:
 
@@ -145,9 +145,9 @@ De resulterende URL die wordt gebruikt, ziet er ongeveer als volgt uit:
 Met deze aanpak moeten enkele punten in overweging worden genomen:
 
 * De URL zelf verliest SEO-waarde. Gebruikers die toegang krijgen tot de site, inclusief zoekmachines, ontvangen geen semantische waarde van de URL, omdat de URL een programmatisch pad vertegenwoordigt en niet de contenthiërarchie.
-* De aanwezigheid van vraagparameters in URL betekent dat de Dispatcher niet de reactie in het voorgeheugen onder kan brengen.
+* De aanwezigheid van queryparameters in de URL betekent dat de Dispatcher de reactie niet in de cache kan plaatsen.
 * Als u deze servlet wilt beveiligen, implementeert u uw eigen aangepaste beveiligingslogica in de servlet.
-* Dispatcher moet (zorgvuldig) worden gevormd om bloot te stellen `/bin/myApp/myServlet`. Als `/bin` gewoon beschikbaar wordt gemaakt, is toegang mogelijk tot bepaalde servlets die niet toegankelijk mogen zijn voor bezoekers van de site.
+* De Dispatcher moet (zorgvuldig) zijn geconfigureerd om `/bin/myApp/myServlet` beschikbaar te maken. Als `/bin` gewoon beschikbaar wordt gemaakt, is toegang mogelijk tot bepaalde servlets die niet toegankelijk mogen zijn voor bezoekers van de site.
 
 #### Serlets verkopen (één niveau omlaag) {#sling-servlets-one-level-down}
 
@@ -159,7 +159,7 @@ De SCR-annotatie voor dit type servlet ziet er ongeveer als volgt uit:
 @SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
-In dit geval, het middel dat URL richt - een geval van `myPageType` resource - is automatisch toegankelijk in de servlet. Om tot het toegang te hebben, roept u het volgende:
+In dit geval is de bron die de URL-adressen - een instantie van de `myPageType` -bron - automatisch toegankelijk in het servlet. Om tot het toegang te hebben, roept u het volgende:
 
 ```
 Resource myPage = req.getResource();
@@ -173,8 +173,8 @@ De voordelen van deze aanpak zijn de volgende:
 
 * U kunt SEO-waarde &quot;inbakken&quot; die afkomstig is van de semantiek die aanwezig is in uw sitehiërarchie en paginanaam.
 * Aangezien er geen queryparameters aanwezig zijn, kan de Dispatcher de reactie in cache plaatsen. Als de pagina wordt geactiveerd en de geadresseerde pagina wordt bijgewerkt, wordt deze cache ongeldig.
-* Alle ACLs die op wordt toegepast `/content/my-brand/my-page` van kracht worden wanneer een gebruiker toegang probeert te krijgen tot deze servlet.
-* De Dispatcher is al geconfigureerd om deze inhoud te gebruiken als functie voor het bedienen van de website. Geen extra configuratie wordt vereist.
+* Alle ACLs die op `/content/my-brand/my-page` wordt toegepast komt in werking wanneer een gebruiker probeert om tot dit servlet toegang te hebben.
+* De Dispatcher is al geconfigureerd om deze inhoud te bedienen als functie van het bedienen van de website. Geen extra configuratie wordt vereist.
 
 ### URL herschrijven {#url-rewriting}
 
@@ -198,7 +198,7 @@ U kunt gelokaliseerde paginanamen aan gebruikers van vertaalde inhoud willen ton
 
 De uitdaging bij het lokaliseren van de naam van de pagina is dat veel van de lokalisatieprogramma&#39;s die beschikbaar zijn op het AEM-platform, erop vertrouwen dat de paginanamen in verschillende landinstellingen overeenkomen, zodat de inhoud gesynchroniseerd blijft.
 
-De `sling:alias` met eigenschap kunt u ook Adobe cake eten. U kunt `sling:alias` als een bezit aan om het even welke middel om voor een alias naam voor het middel toe te staan. In het vorige voorbeeld zou u het volgende hebben:
+Met de eigenschap `sling:alias` kunt u ook Adobe taart gebruiken. U kunt `sling:alias` als een eigenschap toevoegen aan elke bron om een aliasnaam voor de bron toe te staan. In het vorige voorbeeld zou u het volgende hebben:
 
 * Een pagina in het JCR op:
   `…/es/home`
@@ -233,9 +233,9 @@ In een standaard AEM-installatie:
 
 Toewijzingsdefinities kunnen op deze locatie worden toegevoegd om binnenkomende aanvragen toe te wijzen, URL&#39;s op pagina&#39;s in AEM te herschrijven of beide.
 
-Als u een toewijzing wilt maken, maakt u een `sling:Mapping` knooppunt op deze locatie onder `/http` of `/https`. Gebaseerd op de eigenschappen `sling:match` en `sling:internalRedirect` die op dit knooppunt zijn ingesteld, zal AEM al het verkeer voor de overeenkomstige URL omleiden naar de waarde die in de eigenschap `internalRedirect` is opgegeven.
+Als u een toewijzing wilt maken, maakt u een knooppunt `sling:Mapping` op deze locatie onder `/http` of `/https` . Gebaseerd op de eigenschappen `sling:match` en `sling:internalRedirect` die op dit knooppunt zijn ingesteld, zal AEM al het verkeer voor de overeenkomstige URL omleiden naar de waarde die in de eigenschap `internalRedirect` is opgegeven.
 
-Hoewel deze benadering wordt beschreven in de officiële documentatie AEM en Sling, is de reguliere-expressieondersteuning die door deze implementatie wordt geboden beperkt in omvang in vergelijking met de opties die beschikbaar zijn via de `SlingResourceResolver` rechtstreeks. Ook, kan het uitvoeren van afbeeldingen op deze manier tot kwesties met de het geheim voorgeheugenongeldigverklaring van de Verzender leiden.
+Hoewel deze benadering wordt beschreven in de officiële documentatie AEM en Sling, is de reguliere-expressieondersteuning die door deze implementatie wordt geboden beperkt in bereik in vergelijking met de opties die beschikbaar zijn via `SlingResourceResolver` rechtstreeks. Bovendien kan het op deze manier implementeren van toewijzingen leiden tot problemen met Dispatcher-cachevalidatie.
 
 Hier volgt een voorbeeld van hoe dit probleem optreedt:
 
@@ -243,9 +243,9 @@ Hier volgt een voorbeeld van hoe dit probleem optreedt:
 1. De Dispatcher stuurt dit verzoek door naar de publicatieserver.
 1. Met behulp van `/etc/map` zet de publicatieserver deze aanvraag om naar `/content/my-brand/my-page` en wordt de pagina gerenderd.
 
-1. De Dispatcher plaatst de reactie in het cachegeheugen `/my-page.html` en retourneert de reactie aan de gebruiker.
+1. De Dispatcher plaatst de reactie in cache op `/my-page.html` en geeft de reactie aan de gebruiker.
 1. Een auteur van inhoud wijzigt deze pagina en activeert deze.
-1. De Dispatcher flush-agent verzendt een verzoek tot ongeldigmaking voor `/content/my-brand/my-page`**.** Omdat de Dispatcher geen pagina heeft die in het cachegeheugen is opgeslagen op dit pad, blijft de oude inhoud in het cachegeheugen opgeslagen en is de inhoud standaard verouderd.
+1. De Dispatcher flush-agent verzendt een verzoek tot validatie voor `/content/my-brand/my-page`**.** Omdat de Dispatcher geen pagina heeft die in het cachegeheugen is opgeslagen op dit pad, blijft de oude inhoud in het cachegeheugen opgeslagen en is deze standaard niet beschikbaar.
 
 Er zijn manieren om aangepaste verstuurings-spoelregels te configureren die de kortere URL toewijzen aan de langere URL ten behoeve van cachevalidatie.
 
@@ -258,7 +258,7 @@ Er is echter ook een eenvoudigere manier om deze kwestie te beheren:
    * **Apache Sling Resource Resolver Factory**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-   De Adobe adviseert dat u de afbeeldingen bouwt die worden vereist om URLs als regelmatige uitdrukkingen te verkorten, dan deze configuraties onder een OsgiConfignode te bepalen, `config.publish` die in uw build is opgenomen.
+   De Adobe adviseert dat u de afbeeldingen bouwt die worden vereist om URLs als regelmatige uitdrukkingen te verkorten, dan deze configuraties onder een OsgiConfignode, `config.publish` te bepalen die in uw bouwstijl inbegrepen is.
 
    In plaats van uw toewijzingen te definiëren in `/etc/map`, kunt u deze rechtstreeks toewijzen aan de eigenschap **URL Mappings** (`resource.resolver.mapping`):
 
@@ -277,7 +277,7 @@ Er is echter ook een eenvoudigere manier om deze kwestie te beheren:
 
 1. **URL-uitvoer op pagina&#39;s toewijzen**
 
-   Nadat u de toewijzingen in de Apache Sling Resource Resolver hebt gedefinieerd, gebruikt u deze toewijzingen in uw componenten om ervoor te zorgen dat de URL&#39;s die u uitvoert op uw pagina&#39;s kort en getijdenig zijn. U kunt dit huishouden verwezenlijken door de kaartfunctie van te gebruiken `ResourceResolver`.
+   Nadat u de toewijzingen in de Apache Sling Resource Resolver hebt gedefinieerd, gebruikt u deze toewijzingen in uw componenten om ervoor te zorgen dat de URL&#39;s die u uitvoert op uw pagina&#39;s kort en getijdenig zijn. U kunt dit onderhoud uitvoeren met de kaartfunctie van de `ResourceResolver` .
 
    Als u bijvoorbeeld een aangepaste navigatiecomponent implementeerde die de onderliggende elementen van de huidige pagina opsomt, kunt u de toewijzingsmethode als volgt gebruiken:
 
@@ -292,7 +292,7 @@ Er is echter ook een eenvoudigere manier om deze kwestie te beheren:
 
 Tot nu toe hebt u toewijzingen geïmplementeerd samen met de logica in uw componenten om deze toewijzingen te gebruiken wanneer u URL&#39;s op pagina&#39;s uitvoert.
 
-Het laatste stuk aan de puzzel is het behandelen van deze verkorte URLs wanneer zij binnen aan de Dispatcher komen, die is waar `mod_rewrite` wordt in het spel gezet. Het grootste voordeel om te gebruiken `mod_rewrite` is dat de URL&#39;s weer in de lange vorm worden weergegeven *voor* ze worden naar de module Dispatcher verzonden. Deze stroom betekent dat de Dispatcher de lange URL opvraagt bij de publicatieserver en deze overeenkomstig in de cache plaatst. Daarom kan elke aanvraag voor het verwijderen van Dispatcher die afkomstig is van de publicatieserver, deze inhoud ongeldig maken.
+Het laatste stuk aan de puzzel is het afhandelen van deze verkorte URL&#39;s wanneer ze naar de Dispatcher komen, waar `mod_rewrite` in spel komt. Het grootste voordeel aan het gebruiken van `mod_rewrite` is dat URLs terug naar hun lange vorm *in kaart wordt gebracht alvorens* zij worden verzonden naar de module van Dispatcher. Deze stroom betekent dat de Dispatcher de lange URL opvraagt bij de publicatieserver en de URL overeenkomstig in de cache plaatst. Daarom kunnen alle Dispatcher-aanvragen die afkomstig zijn van de publicatieserver, deze inhoud ongeldig maken.
 
 Om deze regels te implementeren, kunt u `RewriteRule`-elementen toevoegen onder uw virtuele host in de Apache HTTP Server-configuratie. Als u de verkorte URL&#39;s uit het vorige voorbeeld wilt uitbreiden, kunt u een regel implementeren die er als volgt uitziet:
 
@@ -335,7 +335,7 @@ RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-Voeg ook het volgende toe boven aan het dialoogvenster `htaccess` bestand:
+Voeg ook het volgende toe boven aan het bestand `htaccess` :
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -355,23 +355,23 @@ Disallow: /
 
 In een liveomgeving kunt u ervoor kiezen om bepaalde paden die u niet wilt indexeren, niet toe te staan.
 
-Het caveat met het plaatsen van `robots.txt` bestand in de hoofdmap van de site is dat aanvragen voor het leegmaken van Dispatcher dit bestand kunnen wissen. In URL-toewijzingen wordt de hoofdmap van de site waarschijnlijk ook ergens anders geplaatst dan in de map `DOCROOT` zoals gedefinieerd in de configuratie van Apache HTTP Server. Daarom is het gebruikelijk om dit bestand op de auteurinstantie in de hoofdmap van de site te plaatsen en het te repliceren naar de publicatie-instantie.
+Het probleem met het plaatsen van het `robots.txt` -bestand in de hoofdmap van de site is dat Dispatcher-aanvragen dit bestand mogelijk wissen. URL-toewijzingen plaatsen de hoofdmap van de site waarschijnlijk ook ergens anders dan de `DOCROOT` , zoals gedefinieerd in de Apache HTTP Server-configuratie. Daarom is het gebruikelijk om dit bestand op de auteurinstantie in de hoofdmap van de site te plaatsen en het te repliceren naar de publicatie-instantie.
 
 ### Een XML-sitemap maken op AEM {#building-an-xml-sitemap-on-aem}
 
 Verkenners gebruiken XML-sitemaps om de structuur van websites beter te begrijpen. Hoewel er geen enkele garantie is dat het aanbieden van een sitemap leidt tot betere beoordelingen van de SEO, is het een overeengekomen beste praktijk. U kunt handmatig een XML-bestand op de webserver onderhouden dat u als sitemap wilt gebruiken. De Adobe raadt u echter aan de sitemap programmatisch te genereren om ervoor te zorgen dat de sitemap de wijzigingen automatisch weerspiegelt wanneer auteurs inhoud maken.
 
-AEM gebruikt de [Apache Sling Sitemap-module](https://github.com/apache/sling-org-apache-sling-sitemap) om XML-sitemaps te genereren. Hiermee beschikt u over een groot aantal opties waarmee ontwikkelaars en editors sites in XML-sitemap up-to-date kunnen houden.
+AEM gebruikt de [ module van de Sitemap van Apache Sling ](https://github.com/apache/sling-org-apache-sling-sitemap) om de sitemaps van XML te produceren, die een brede waaier van opties voor ontwikkelaars en redacteurs verstrekt om een sitemap van plaatsenXML bijgewerkt te houden.
 
 >[!NOTE]
 >
 >Beschikbaar als productfunctie sinds Adobe Experience Manager versie 6.5.11.0.
 > 
->Voor oudere versies kunt u een Sling Servlet zelf registreren, om naar een `sitemap.xml` vraag. Gebruik de bron die via de servlet-API wordt geleverd om de huidige pagina en de onderliggende componenten ervan op te zoeken om een `sitemap.xml` bestand.
+>Voor oudere versies kunt u zelf een Sling Server registreren om te luisteren naar een `sitemap.xml` oproep. Gebruik de bron die via de servlet-API wordt geleverd om de huidige pagina en de onderliggende elementen op te zoeken en een `sitemap.xml` -bestand uit te voeren.
 
-In de module Apache Sling Sitemap wordt onderscheid gemaakt tussen een sitemap op hoofdniveau en een geneste sitemap. Beide methoden worden gegenereerd voor elke bron met de `sling:sitemapRoot` eigenschap ingesteld op `true`. Over het algemeen worden sitemaps weergegeven met behulp van kiezers op het pad van de sitemap op hoofdniveau van de structuur. Dit is de bron die geen andere voorouder van de sitemap-hoofdmap heeft. Deze sitemap-hoofdmap op hoofdniveau stelt ook de sitemap-index beschikbaar, wat normaal is wat een site-eigenaar zou configureren in het configuratieportaal van de zoekmachine of zou toevoegen aan de site `robots.txt`.
+De module Apache Sling Sitemap maakt onderscheid tussen een sitemap op hoofdniveau en een geneste sitemap. Beide methoden worden gegenereerd voor elke bron waarvoor de eigenschap `sling:sitemapRoot` is ingesteld op `true` . Over het algemeen worden sitemaps weergegeven met behulp van kiezers op het pad van de sitemap op hoofdniveau van de structuur. Dit is de bron die geen andere voorouder van de sitemap-hoofdmap heeft. Deze sitemap-hoofdmap op hoofdniveau stelt ook de sitemap-index beschikbaar, wat normaal gesproken is wat een site-eigenaar zou configureren in het configuratieportaal van de zoekmachine of zou toevoegen aan de site `robots.txt` .
 
-Neem bijvoorbeeld een site die een sitemaproot op hoofdniveau definieert op `my-page` en een geneste sitemap-hoofdmap op `my-page/news`, om een speciale sitemap te genereren voor pagina&#39;s in de nieuwsubstructuur. De resulterende relevante URL&#39;s zouden
+Neem bijvoorbeeld een site die een sitemaproot op hoofdniveau in `my-page` en een geneste sitemaproot in `my-page/news` definieert om een speciale sitemap voor pagina&#39;s in de nieuwsubstructuur te genereren. De resulterende relevante URL&#39;s zouden
 
 * `https://www.mydomain.com/my-brand/my-page.sitemap-index.xml`
 * `https://www.mydomain.com/my-brand/my-page.sitemap.xml`
@@ -379,26 +379,26 @@ Neem bijvoorbeeld een site die een sitemaproot op hoofdniveau definieert op `my-
 
 >[!NOTE]
 >
->De kiezers `sitemap` en `sitemap-index` kan problemen opleveren met aangepaste implementaties. Als u de productfunctie niet wilt gebruiken, configureert u uw eigen servlet die deze kiezers bedient met een `service.ranking` hoger dan 0.
+>De kiezers `sitemap` en `sitemap-index` kunnen problemen opleveren met aangepaste implementaties. Als u de productfunctie niet wilt gebruiken, configureert u uw eigen servlet voor deze kiezers met een waarde `service.ranking` hoger dan 0.
 
-In de standaardconfiguratie biedt het dialoogvenster Pagina-eigenschappen een optie om een pagina te markeren als een sitemaproot en genereert u dus, zoals hierboven beschreven, een sitemap van zichzelf en de onderliggende elementen. Dit gedrag wordt geïmplementeerd door implementaties van de `SitemapGenerator` en kan worden uitgebreid door alternatieve implementaties toe te voegen. Aangezien de frequentie waarop de XML-sitemaps opnieuw moeten worden gegenereerd afhankelijk is van de workflows en werklasten voor het schrijven van inhoud, verzendt het product echter geen `SitemapScheduler` configuratie. Als zodanig maakt het de functie effectief opt-in.
+In de standaardconfiguratie biedt het dialoogvenster Pagina-eigenschappen een optie om een pagina te markeren als een sitemaproot en genereert u dus, zoals hierboven beschreven, een sitemap van zichzelf en de onderliggende elementen. Dit gedrag wordt geïmplementeerd door implementaties van de interface `SitemapGenerator` en kan worden uitgebreid door alternatieve implementaties toe te voegen. Aangezien de frequentie waarop de XML-sitemaps opnieuw moeten worden gegenereerd afhankelijk is van de workflows en werklasten voor het schrijven van inhoud, verzendt het product echter geen `SitemapScheduler` -configuratie. Als zodanig maakt het de functie effectief opt-in.
 
-Als u de achtergrondtaak die de XML-sitemaps genereert, wilt inschakelen: `SitemapScheduler` moet worden geconfigureerd. Om dit te doen, creeer een configuratie OSGI voor PID `org.apache.sling.sitemap.impl.SitemapScheduler`. De planneruitdrukking `0 0 0 * * ?` U kunt dit gebruiken als beginpunt om alle XML-sitemaps eenmaal per dag om middernacht opnieuw te genereren.
+Om de achtergrondtaak in te schakelen die de XML-sitemaps genereert, moet een `SitemapScheduler` zijn geconfigureerd. Hiertoe maakt u een OSGI-configuratie voor de PID `org.apache.sling.sitemap.impl.SitemapScheduler` . De plannerexpressie `0 0 0 * * ?` kan worden gebruikt als beginpunt om alle XML-sitemaps eenmaal per dag om middernacht opnieuw te genereren.
 
-![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
+![ Apache Sling Sitemap - Planner ](assets/sling-sitemap-scheduler.png)
 
-De sitemap-generatietaak kan zowel op auteur- als op publicatielagen worden uitgevoerd. Gewoonlijk wordt het aanbevolen de generatie uit te voeren op instanties van de publicatielaag, aangezien er alleen daar goede canonieke URL&#39;s kunnen worden gegenereerd (omdat de regels voor het toewijzen van resources aan slingerend doorgaans alleen aanwezig zijn op instanties van de publicatielaag). Het is echter mogelijk om een aangepaste implementatie van het externaliseringsmechanisme in te sluiten dat wordt gebruikt om de canonieke URL&#39;s te genereren door de implementatie van het [SitemapLinkExternalzer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) interface. Als een aangepaste implementatie de canonieke URL&#39;s van een sitemap kan genereren voor de instanties van de auteurslaag, wordt de `SitemapScheduler` kan voor de auteur in werking stellen wijze worden gevormd. En, kan de de generatiewerkbelasting van XML sitemap over de instanties van de cluster van de auteursdienst worden verdeeld. In dit scenario, moet de voorzichtigheid worden besteed aan de behandeling van inhoud die nog niet is gepubliceerd, is gewijzigd, of slechts zichtbaar aan een beperkte groep gebruikers is.
+De sitemap-generatietaak kan zowel op auteur- als op publicatielagen worden uitgevoerd. Gewoonlijk wordt het aanbevolen de generatie uit te voeren op instanties van de publicatielaag, aangezien er alleen daar goede canonieke URL&#39;s kunnen worden gegenereerd (omdat de regels voor het toewijzen van resources aan slingerend doorgaans alleen aanwezig zijn op instanties van de publicatielaag). Nochtans, is het mogelijk om in een douaneimplementatie van het externaliseringsmechanisme te stoppen dat wordt gebruikt om canonical URLs te produceren door de [ SitemapLinkExternalAlizer ](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) interface uit te voeren. Als een aangepaste implementatie de canonieke URL&#39;s van een sitemap kan genereren voor de instanties van de auteurslaag, kan `SitemapScheduler` worden geconfigureerd voor de modus voor uitvoeren van de auteur. En, kan de de generatiewerkbelasting van XML sitemap over de instanties van de cluster van de auteursdienst worden verdeeld. In dit scenario, moet de voorzichtigheid worden besteed aan de behandeling van inhoud die nog niet is gepubliceerd, is gewijzigd, of slechts zichtbaar aan een beperkte groep gebruikers is.
 
-AEM Sites bevat een standaardimplementatie van een `SitemapGenerator` Hiermee wordt een boomstructuur met pagina&#39;s doorlopen om een sitemap te genereren. Het is vooraf geconfigureerd om alleen de canonieke URL&#39;s van een site en eventuele taalalternatieven uit te voeren, indien beschikbaar. Het kan ook worden gevormd om de laatste gewijzigde datum van een pagina indien nodig te omvatten. Om dit te doen, laat _Laatst gewijzigd toevoegen_ van de _Adobe AEM SEO - Page Tree Sitemap Generator_ Configuratie en selecteer een _Laatst gewijzigd bron_. Wanneer de Sitemaps op de publicatielaag worden gegenereerd, wordt aangeraden de opdracht `cq:lastModified` datum.
+AEM Sites bevat een standaardimplementatie van een `SitemapGenerator` die een boomstructuur van pagina&#39;s doorloopt om een sitemap te genereren. Het is vooraf geconfigureerd om alleen de canonieke URL&#39;s van een site en eventuele taalalternatieven uit te voeren, indien beschikbaar. Het kan ook worden gevormd om de laatste gewijzigde datum van een pagina indien nodig te omvatten. Om dit te doen, laat _toe voeg Laatste Gewijzigde_ optie van de _Adobe AEM SEO toe - de Configuratie van de Sitemap van de Boom van de Pagina_ en selecteer a _Laatste Gewijzigde Source_. Wanneer de Sitemaps op de publicatielijst worden gegenereerd, wordt aangeraden de datum `cq:lastModified` te gebruiken.
 
-![Adobe AEM SEO - Configuratie van Sitemap van paginaboom Generator](assets/sling-sitemap-pagetreegenerator.png)
+![ Adobe AEM SEO - de Configuratie van de Generator van de Sitemap van de Paginaboom ](assets/sling-sitemap-pagetreegenerator.png)
 
 Om de inhoud van een sitemap te beperken, kunnen de volgende de dienstinterfaces worden uitgevoerd wanneer nodig:
 
-* de [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) kan worden geïmplementeerd om pagina&#39;s te verbergen voor XML-sitemaps die zijn gegenereerd door de specifieke sitemap-generator van AEM Sites
-* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) of [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kan worden geïmplementeerd om producten of categorieën te filteren uit XML-sitemaps die zijn gegenereerd door de [Commerce integration frameworken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) specifieke sitemapgeneratoren
+* [ SitemapPageFilter ](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) kan worden uitgevoerd om pagina&#39;s van de plaatsen van XML te verbergen die door de specifieke de sitemapgenerator van AEM Sites worden geproduceerd
+* a [ SitemapProductFilter ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) of [ SitemapCategoryFilter ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kan worden uitgevoerd om producten of categorieën van de sitemaps van XML uit te filteren die door de [ Commerce integration frameworken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) specifieke sitemapgenerators worden geproduceerd
 
-Als de standaardimplementaties niet werken aan een bepaald gebruiksgeval, of als de uitbreidingspunten niet flexibel genoeg zijn, voert u een douane uit `SitemapGenerator` volledige controle over de inhoud van een gegenereerde sitemap te verkrijgen. In het volgende voorbeeld wordt de logica van de standaardimplementatie voor AEM Sites gebruikt. Het gebruikt de [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) als beginpunt voor het doorlopen van een boomstructuur met pagina&#39;s:
+Als de standaardimplementaties niet werken aan een bepaald gebruiksgeval of als de extensiepunten niet flexibel genoeg zijn, implementeert u een aangepaste instructie `SitemapGenerator` om de volledige controle over de inhoud van een gegenereerde sitemap te verkrijgen. In het volgende voorbeeld wordt de logica van de standaardimplementatie voor AEM Sites gebruikt. Het gebruikt [ ResourceTreeSitemapGenerator ](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) als uitgangspunt om een boom van pagina&#39;s te oversteken:
 
 ```
 import java.util.Optional;
@@ -471,7 +471,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Bovendien kan de functionaliteit die voor de sitemaps van XML wordt uitgevoerd ook voor verschillende gebruiksgevallen worden gebruikt, bijvoorbeeld om de canonieke verbinding of de taalalternatieven aan het hoofd van een pagina toe te voegen. Zie [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface voor meer informatie.
+Bovendien kan de functionaliteit die voor de sitemaps van XML wordt uitgevoerd ook voor verschillende gebruiksgevallen worden gebruikt, bijvoorbeeld om de canonieke verbinding of de taalalternatieven aan het hoofd van een pagina toe te voegen. Zie [ SeoTags ](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface voor meer informatie.
 
 ### 301 omleidingen maken voor verouderde URL&#39;s {#creating-redirects-for-legacy-urls}
 

@@ -27,38 +27,38 @@ Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opge
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Settings - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Settings - Security - Users]** te bladeren of door rechtstreeks naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html` te bladeren
 
-   ![useradmin2](assets/useradmin2.png)
+   ![ useradmin2 ](assets/useradmin2.png)
 
 1. Zoek vervolgens naar de desbetreffende gebruiker door de naam in de zoekbalk boven aan de pagina te typen:
 
-   ![gebruikerszoekopdracht](assets/usersearch.png)
+   ![ gebruikersonderzoek ](assets/usersearch.png)
 
-1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tab.
+1. Open ten slotte het gebruikersprofiel door erop te klikken en controleer het vervolgens onder de tab **[!UICONTROL Details]** .
 
-   ![userprofile_small](assets/userprofile_small.png)
+   ![ userprofile_small ](assets/userprofile_small.png)
 
 ### HTTP-API {#http-api}
 
 Zoals vermeld, verstrekt de Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
-**UserProperties-API**
+**UserProperties API**
 
 ```shell
 curl -u user:password http://localhost:4502/libs/granite/security/search/profile.userproperties.json\?authId\=cavery
 ```
 
-**Verkopen-API**
+**het Verdelen API**
 
-*De startpagina van de gebruiker opzoeken:*
+*het ontdekken van het gebruikershuis:*
 
 ```xml
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*Gebruikersgegevens ophalen*
+*het Terugwinnen van gebruikersgegevens*
 
 Gebruikend de knoopweg van het huisbezit van de nuttige lading JSON die van het bovengenoemde bevel is teruggekeerd:
 
@@ -79,45 +79,45 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 1. Druk op de knop Uitschakelen in het bovenste menu om de gebruiker uit te schakelen:
 
-   ![userdisable](assets/userdisable.png)
+   ![ gebruikersdisable ](assets/userdisable.png)
 
 1. Bevestig ten slotte de actie:
 
-   ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
+   ![ image2018-2-6_1-40-58 ](assets/image2018-2-6_1-40-58.png)
 
    De gebruikersinterface geeft aan dat de gebruiker is gedeactiveerd door de profielkaart te verslepen en er een vergrendeling aan toe te voegen:
 
-   ![gehandicapte gebruiker](assets/disableduser.png)
+   ![ gehandicapte gebruiker ](assets/disableduser.png)
 
 ### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
 
-1. Meld u aan bij CRXDE Lite en zoek vervolgens naar de `[!UICONTROL userId]`:
+1. Meld u aan bij CRXDE Lite en zoek vervolgens naar `[!UICONTROL userId]` :
 
-   ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
+   ![ image2018-2-6_1-57-11 ](assets/image2018-2-6_1-57-11.png)
 
-1. Open het gebruikersknooppunt onder `[!UICONTROL /home/users]` standaard:
+1. Open het gebruikersknooppunt dat zich standaard onder `[!UICONTROL /home/users]` bevindt:
 
-   ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
+   ![ image2018-2-6_1-58-25 ](assets/image2018-2-6_1-58-25.png)
 
 1. Verwijder profielknooppunten en alle onderliggende knooppunten. Afhankelijk van de AEM versie zijn er twee indelingen voor de profielknooppunten:
 
    1. Het standaard privéprofiel onder `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, voor nieuwe profielen die zijn gemaakt met AEM 6.5.
+   1. `[!UICONTROL /profiles]` voor nieuwe profielen die zijn gemaakt met AEM 6.5.
 
-   ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
+   ![ image2018-2-6_2-0-4 ](assets/image2018-2-6_2-0-4.png)
 
 ### HTTP-API {#http-api-1}
 
-Bij de volgende procedures worden de `curl` opdrachtregelprogramma om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en profielen verwijderen van `cavery` die beschikbaar zijn op de standaardlocatie.
+In de volgende procedures wordt het opdrachtregelprogramma `curl` gebruikt om te tonen hoe u de gebruiker kunt uitschakelen met de profielen **[!UICONTROL cavery]** `userId` en delete `cavery` die beschikbaar zijn op de standaardlocatie.
 
-* *De startpagina van de gebruiker opzoeken*
+* *het ontdekken van het gebruikershuis*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *De gebruiker uitschakelen*
+* *onbruikbaar makend de gebruiker*
 
 Gebruikend de knoopweg van het huisbezit van de nuttige lading JSON die van het bovengenoemde bevel is teruggekeerd:
 
@@ -125,7 +125,7 @@ Gebruikend de knoopweg van het huisbezit van de nuttige lading JSON die van het 
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-* *Gebruikersprofielen verwijderen*
+* *het Schrappen van gebruikersprofielen*
 
 Het gebruiken van de knoopweg van het huisbezit van de nuttige lading JSON die van het bevel van de rekeningsontdekking en het gekende uit de knoopplaatsen van het kaderprofiel is teruggekeerd:
 

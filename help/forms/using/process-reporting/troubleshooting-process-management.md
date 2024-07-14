@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Problemen bij het maken van filters in Internet Explorer 9 op Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Als u filters maakt voor vooraf gedefinieerde rapporten, doen zich periodiek de volgende problemen voor op het tabblad **Internet Explorer 9** for **Microsoft Windows 7** milieu:
+Als u filters voor vooraf bepaalde rapporten creeert, komen de volgende kwesties periodiek op **Internet Explorer 9** voor **Microsoft Windows 7** milieu voor:
 
 * In de vervolgkeuzelijst in het veld Waarde worden unieke id&#39;s weergegeven in plaats van de waarden.
 * Met het besturingselement Kalender in het veld Waarde worden Japanse tekens weergegeven.

@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Vertaalprojecten maken voor inhoudsfragmenten {#creating-translation-projects-for-content-fragments}
 
-Naast elementen ondersteunt Adobe Experience Manager (AEM) Assets workflows voor het kopiëren van talen voor [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) (inclusief variaties). Er is geen extra optimalisatie vereist voor het uitvoeren van workflows voor het kopiëren van talen op inhoudsfragmenten. In elke werkstroom wordt het volledige inhoudsfragment verzonden voor vertaling.
+Naast activa, steunt Adobe Experience Manager (AEM) Assets de werkschema&#39;s van het taalexemplaar voor [ inhoudsfragmenten ](/help/assets/content-fragments/content-fragments.md) (met inbegrip van variaties). Er is geen extra optimalisatie vereist voor het uitvoeren van workflows voor het kopiëren van talen op inhoudsfragmenten. In elke werkstroom wordt het volledige inhoudsfragment verzonden voor vertaling.
 
 De typen workflows die u op inhoudsfragmenten kunt uitvoeren, lijken precies op de typen werkstromen die u voor elementen uitvoert. Bovendien komen de opties die beschikbaar zijn binnen elk workflowtype overeen met de opties die beschikbaar zijn onder de corresponderende workflowtypen voor elementen.
 
 U kunt de volgende typen werkstromen voor het kopiëren van talen uitvoeren op inhoudsfragmenten:
 
-**Maken en vertalen**
+**creeer en vertaal**
 
 In deze workflow worden inhoudsfragmenten die moeten worden vertaald, gekopieerd naar de hoofdmap van de taal waarnaar u wilt vertalen. Bovendien wordt, afhankelijk van de opties u kiest, een vertaalproject gecreeerd voor de inhoudsfragmenten in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
-**Taalkopieën bijwerken**
+**de taalexemplaren van de Update**
 
 Wanneer het broninhoudsfragment wordt bijgewerkt of gewijzigd, moet het bijbehorende taalspecifieke inhoudsfragment opnieuw worden vertaald. De workflow voor het kopiëren van de updatetaal zet een extra groep inhoudsfragmenten om en neemt deze op in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde inhoudsfragmenten toegevoegd aan de doelmap die al vertaalde inhoudsfragmenten bevat.
 
@@ -36,18 +36,18 @@ Wanneer het broninhoudsfragment wordt bijgewerkt of gewijzigd, moet het bijbehor
 
 De workflow Maken en vertalen bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
-* Alleen structuur maken: zie voor procedurestappen [Structuur alleen maken voor elementen](translation-projects.md#create-structure-only).
-* Een vertaalproject maken: zie voor procedurestappen [Een vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project).
-* Toevoegen aan bestaand vertaalproject: zie voor procedurestappen [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project).
+* Creeer slechts structuur: Voor procedurestappen, zie [ structuur slechts voor activa ](translation-projects.md#create-structure-only) creëren.
+* Creeer een vertaalproject: Voor procedurestappen, zie [ een vertaalproject voor activa ](translation-projects.md#create-a-new-translation-project) creëren.
+* Voeg aan bestaand vertaalproject toe: Voor procedurestappen, zie [ aan bestaand vertaalproject voor activa ](translation-projects.md#add-to-existing-translation-project) toevoegen.
 
 ## Workflow voor het kopiëren van talen bijwerken {#update-language-copies-workflow}
 
 De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
-* Een vertaalproject maken: zie voor procedurestappen [Een vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project) (updateworkflow).
-* Toevoegen aan bestaand vertaalproject: zie voor procedurestappen [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project) (updateworkflow).
+* Creeer een vertaalproject: Voor procedurestappen, zie [ een vertaalproject voor activa ](translation-projects.md#create-a-new-translation-project) (updatewerkschema) creëren.
+* Voeg aan bestaand vertaalproject toe: Voor procedurestappen, zie [ aan bestaand vertaalproject voor activa ](translation-projects.md#add-to-existing-translation-project) (updatewerkschema) toevoegen.
 
-U kunt ook tijdelijke-taalkopieën maken voor fragmenten, vergelijkbaar met de manier waarop u tijdelijke kopieën maakt voor elementen. Zie voor meer informatie [Tijdelijke taalkopieën maken voor elementen](translation-projects.md#creating-temporary-language-copies).
+U kunt ook tijdelijke-taalkopieën maken voor fragmenten, vergelijkbaar met de manier waarop u tijdelijke kopieën maakt voor elementen. Voor details, zie [ Creërend tijdelijke taalexemplaren voor activa ](translation-projects.md#creating-temporary-language-copies).
 
 ## Gemengde-mediafragmenten omzetten {#translating-mixed-media-fragments}
 
@@ -57,106 +57,106 @@ Als het inhoudsfragment een verzameling bevat, worden de elementen in de verzame
 
 Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst het standaardvertaalframework om de vertaling van inline-elementen en -verzamelingen met betrekking tot inhoudsfragmenten mogelijk te maken.
 
-1. Klik op het AEM logo en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]**.
-1. Zoeken **[!UICONTROL Translation Integration]** krachtens **[!UICONTROL Adobe Marketing Cloud]** en klik op **[!UICONTROL Show Configurations]**.
+1. Klik op het AEM logo en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]** .
+1. Zoek **[!UICONTROL Translation Integration]** onder **[!UICONTROL Adobe Marketing Cloud]** en klik op **[!UICONTROL Show Configurations]** .
 
-   ![chlimage_1-444](assets/chlimage_1-444.png)
+   ![ chlimage_1-444 ](assets/chlimage_1-444.png)
 
-1. Klik in de lijst met beschikbare configuraties op **[!UICONTROL Default configuration (Translation Integration configuration)]** om de **[!UICONTROL Default configuration]** pagina.
+1. Klik in de lijst met beschikbare configuraties op **[!UICONTROL Default configuration (Translation Integration configuration)]** om de pagina **[!UICONTROL Default configuration]** te openen.
 
-   ![chlimage_1-445](assets/chlimage_1-445.png)
+   ![ chlimage_1-445 ](assets/chlimage_1-445.png)
 
-1. Klikken **[!UICONTROL Edit]** van de werkbalk om de **[!UICONTROL Translation Config]** in.
+1. Klik op **[!UICONTROL Edit]** op de werkbalk om het dialoogvenster **[!UICONTROL Translation Config]** weer te geven.
 
-   ![chlimage_1-446](assets/chlimage_1-446.png)
+   ![ chlimage_1-446 ](assets/chlimage_1-446.png)
 
-1. Ga naar de **[!UICONTROL Assets]** en kiest u **[!UICONTROL Inline Media Assets and Associated Collections]** van de **[!UICONTROL Translate Content Fragment Assets]** lijst. Klikken **[!UICONTROL OK]** om de wijzigingen op te slaan
+1. Navigeer naar de tab **[!UICONTROL Assets]** en kies **[!UICONTROL Inline Media Assets and Associated Collections]** in de lijst **[!UICONTROL Translate Content Fragment Assets]** . Klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
 
-   ![chlimage_1-447](assets/chlimage_1-447.png)
+   ![ chlimage_1-447 ](assets/chlimage_1-447.png)
 
 1. Open vanuit de hoofdmap in het Engels een inhoudsfragment.
 
-   ![chlimage_1-448](assets/chlimage_1-448.png)
+   ![ chlimage_1-448 ](assets/chlimage_1-448.png)
 
-1. Klik op de knop **[!UICONTROL Insert Asset]** pictogram.
+1. Klik op het pictogram **[!UICONTROL Insert Asset]** .
 
-   ![chlimage_1-449](assets/chlimage_1-449.png)
+   ![ chlimage_1-449 ](assets/chlimage_1-449.png)
 
 1. Voeg een element in het inhoudsfragment in.
 
-   ![element invoegen in inhoudsfragment](assets/column-view.png)
+   ![ neem binnen activa op aan inhoudsfragment ](assets/column-view.png)
 
-1. Klik op de knop **[!UICONTROL Associate Content]** pictogram.
+1. Klik op het pictogram **[!UICONTROL Associate Content]** .
 
-   ![chlimage_1-451](assets/chlimage_1-451.png)
+   ![ chlimage_1-451 ](assets/chlimage_1-451.png)
 
 1. Klik op **[!UICONTROL Associate Content]**.
 
-   ![chlimage_1-452](assets/chlimage_1-452.png)
+   ![ chlimage_1-452 ](assets/chlimage_1-452.png)
 
 1. Selecteer een verzameling en neem deze op in het inhoudsfragment. Klik op **[!UICONTROL Save]**.
 
-   ![chlimage_1-453](assets/chlimage_1-453.png)
+   ![ chlimage_1-453 ](assets/chlimage_1-453.png)
 
-1. Selecteer het inhoudsfragment en klik op de knop **[!UICONTROL GlobalNav]** pictogram.
-1. Selecteren **[!UICONTROL References]** in het menu om de **[!UICONTROL References]** venster.
+1. Selecteer het inhoudsfragment en klik op het pictogram **[!UICONTROL GlobalNav]** .
+1. Selecteer **[!UICONTROL References]** in het menu om het deelvenster **[!UICONTROL References]** weer te geven.
 
-   ![chlimage_1-454](assets/chlimage_1-454.png)
+   ![ chlimage_1-454 ](assets/chlimage_1-454.png)
 
-1. Klikken **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]** om de taalkopieën weer te geven.
+1. Klik op **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]** om de taalkopieën weer te geven.
 
-   ![chlimage_1-455](assets/chlimage_1-455.png)
+   ![ chlimage_1-455 ](assets/chlimage_1-455.png)
 
-1. Klikken **[!UICONTROL Create & Translate]** van onderaan in het deelvenster om de **[!UICONTROL Create & Translate]** in.
+1. Klik onder in het deelvenster op **[!UICONTROL Create & Translate]** om het dialoogvenster **[!UICONTROL Create & Translate]** weer te geven.
 
-   ![chlimage_1-456](assets/chlimage_1-456.png)
+   ![ chlimage_1-456 ](assets/chlimage_1-456.png)
 
-1. Selecteer de doeltaal in het menu **[!UICONTROL Target Languages]** lijst.
+1. Selecteer de doeltaal in de lijst **[!UICONTROL Target Languages]** .
 
-   ![chlimage_1-457](assets/chlimage_1-457.png)
+   ![ chlimage_1-457 ](assets/chlimage_1-457.png)
 
-1. Selecteer het type vertaalproject in het menu **[!UICONTROL Project]** lijst.
+1. Selecteer het type vertaalproject in de lijst **[!UICONTROL Project]** .
 
-   ![chlimage_1-458](assets/chlimage_1-458.png)
+   ![ chlimage_1-458 ](assets/chlimage_1-458.png)
 
-1. Geef de titel van het project op in het dialoogvenster **[!UICONTROL Project Title]** en klik vervolgens op **Maken**.
+1. Specificeer de titel van het project in de **[!UICONTROL Project Title]** doos en klik dan **creeer**.
 
-   ![chlimage_1-459](assets/chlimage_1-459.png)
+   ![ chlimage_1-459 ](assets/chlimage_1-459.png)
 
-1. Ga naar de **[!UICONTROL Projects]** en open de projectmap voor het vertaalproject dat u hebt gemaakt.
+1. Navigeer naar de **[!UICONTROL Projects]** -console en open de projectmap voor het vertaalproject dat u hebt gemaakt.
 
-   ![chlimage_1-460](assets/chlimage_1-460.png)
+   ![ chlimage_1-460 ](assets/chlimage_1-460.png)
 
 1. Klik de projectegel om de pagina van projectdetails te openen.
 
-   ![chlimage_1-461](assets/chlimage_1-461.png)
+   ![ chlimage_1-461 ](assets/chlimage_1-461.png)
 
 1. Verifieer vanuit de tegel Vertaaltaak het aantal elementen dat moet worden vertaald.
-1. Van de **[!UICONTROL Translation Job]** tiel, start de vertaaltaak.
+1. Start de vertaaltaak vanaf de tegel **[!UICONTROL Translation Job]** .
 
-   ![chlimage_1-462](assets/chlimage_1-462.png)
+   ![ chlimage_1-462 ](assets/chlimage_1-462.png)
 
 1. Klik op de ovalen onder aan de tegel Vertaal-taak om de status van de vertaaltaak weer te geven.
 
-   ![chlimage_1-463](assets/chlimage_1-463.png)
+   ![ chlimage_1-463 ](assets/chlimage_1-463.png)
 
 1. Klik op het inhoudsfragment om het pad van de vertaalde gekoppelde elementen te controleren.
 
-   ![chlimage_1-464](assets/chlimage_1-464.png)
+   ![ chlimage_1-464 ](assets/chlimage_1-464.png)
 
 1. Herzie de taalexemplaar voor de inzameling in de console van Inzamelingen.
 
-   ![chlimage_1-465](assets/chlimage_1-465.png)
+   ![ chlimage_1-465 ](assets/chlimage_1-465.png)
 
    U ziet dat alleen de inhoud van de verzameling wordt vertaald. De verzameling zelf is niet vertaald.
 
 1. Navigeer naar het pad van het vertaalde gekoppelde element. Merk op dat het vertaalde element wordt opgeslagen onder de wortel van de doeltaal.
 
-   ![chlimage_1-466](assets/chlimage_1-466.png)
+   ![ chlimage_1-466 ](assets/chlimage_1-466.png)
 
 1. Navigeer naar de elementen in de verzameling die samen met het inhoudsfragment zijn vertaald. Merk op dat de vertaalde exemplaren van de activa bij de aangewezen doeltaalwortel worden opgeslagen.
 
-   ![chlimage_1-467](assets/chlimage_1-467.png)
+   ![ chlimage_1-467 ](assets/chlimage_1-467.png)
 
    >[!NOTE]
    >

@@ -28,16 +28,16 @@ In de volgende sectie worden de Adobe Experience Manager (AEM) Screens Players m
    <td><strong>iOS Player</strong></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.3+SP1+Schermen FP1(1.0.64_B002)</strong></td> 
-   <td><p><strong>3.2.72.</strong> - Beschikbaar in de Apple-winkel</p> <p> </p> </td> 
+   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
+   <td><p><strong> 3.2.72 </strong> - Beschikbaar op de opslag van Apple</p> <p> </p> </td> 
   </tr>
   <tr>
-   <td><strong><strong>AEM 6.3+SP1+Schermen FP2(1.0.298)</strong></strong></td> 
-   <td><p><strong>3.3.0.</strong> </p> <p> </p> </td> 
+   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
+   <td><p><strong> 3.3.0 </strong> </p> <p> </p> </td> 
   </tr>
   <tr>
    <td><strong>AEM 6,4</strong></td> 
-   <td><strong>3.3.0.</strong> </td> 
+   <td><strong> 3.3.0 </strong> </td> 
   </tr>
  </tbody>
 </table>
@@ -59,11 +59,11 @@ aem-screens-player-ios-3.3.0.ipa.zip
    <td><strong>Windows10 Player</strong></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.3+SP1+Schermen FP1(1.0.64_B002)</strong></td> 
-   <td><strong>1.0.12.</strong><br /> </td> 
+   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
+   <td><strong> 1.0.12 </strong><br /> </td> 
   </tr>
   <tr>
-   <td><strong><strong>AEM 6.3+SP1+Schermen FP2(1.0.298)</strong></strong></td> 
+   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
    <td><strong>1,0,48 </strong></td> 
   </tr>
   <tr>
@@ -81,17 +81,17 @@ aem-screens-player-windows-1.0.48-signed.exe.zip
 
 [Bestand ophalen](assets/aem-screens-player-windows-1048-signedexe.zip)
 
-## Android-speler {#android-player}
+## Android Player {#android-player}
 
-| **Versie AEM** | **Android-speler** |
+| **AEM de Versie van de Server** | **Speler van Android** |
 |---|---|
-| **AEM 6.3+SP1+Schermen FP1(1.0.64_B002)** | **3.2.68 -** (Beschikbaar op Macromedia Site) en Google Play Store |
-| **AEM 6.3+SP1+Schermen FP2(1.0.298)** | **3.3.0.** |
-| **AEM 6,4** | **3.3.0.** |
+| **AEM 6.3+SP1+Screens FP1 (1.0.64_B002)** | **3.2.68 -** (Beschikbaar op de Plaats van Macromedia) &amp; de Opslag van Google Play |
+| **AEM 6.3+SP1+Screens FP2 (1.0.298)** | **3.3.0** |
+| **AEM 6.4** | **3.3.0** |
 
 ### Koppeling downloaden {#download-link-2}
 
-Klik op de downloadkoppeling voor Android Player:
+Klik op downloadkoppeling voor Android Player:
 
 aem-screens-player-android-3.3.0.apk.zip
 
@@ -103,29 +103,29 @@ aem-screens-player-android-3.3.0.apk.zip
    <td><strong>Versie AEM</strong></td> 
    <td><strong>iOS Player</strong></td> 
    <td><strong>Windows10 Player</strong></td> 
-   <td><strong>Chrome OS Player</strong><br /> </td> 
-   <td><strong>Android-speler</strong></td> 
+   <td><strong> Chrome OS Player </strong><br /> </td> 
+   <td><strong>Android Player</strong></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.3+SP1+Schermen FP1(1.0.64_B002)</strong></td> 
-   <td><p><strong>3.2.72 - </strong>Beschikbaar in Apple-winkel</p> <p><strong>3.3.0.</strong> - Werkt niet</p> <p> </p> </td> 
-   <td><strong>1.0.12.</strong> - (Beschikbaar op Macromedia)</td> 
-   <td><p><strong>1.0.30 -</strong> Beschikbaar in de Chrome Store.</p> <p>Niet ondersteund met Feature Pack1</p> </td> 
-   <td><strong>3.2.68 -</strong> (Beschikbaar op Macromedia Site) en Google Play Store</td> 
+   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
+   <td><p><strong> 3.2.72 - </strong> Beschikbaar op de opslag van Apple</p> <p><strong> 3.3.0 </strong> - werkt niet</p> <p> </p> </td> 
+   <td><strong> 1.0.12 </strong> - (Beschikbaar op Macromedia)</td> 
+   <td><p><strong> 1.0.30 - </strong> Beschikbaar op de Opslag van Chrome.</p> <p>Niet ondersteund met Feature Pack1</p> </td> 
+   <td><strong> 3.2.68 - </strong> (Beschikbaar op de Plaats van Macromedia) &amp; de Opslag van Google Play</td> 
   </tr>
   <tr>
-   <td><strong><strong>AEM 6.3+SP1+Schermen FP2(1.0.298)</strong></strong></td> 
-   <td><p><strong>3.3.0.</strong> - <a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></p> <p>Publiceren op Apple Store</p> <p> </p> </td> 
-   <td><strong>1.0.48 -</strong> <a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></td> 
+   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
+   <td><p><strong> 3.3.0 </strong> - <a href="https://download.macromedia.com/screens/"> https://download.macromedia.com/screens/ </a></p> <p>Publiceren op Apple Store</p> <p> </p> </td> 
+   <td><strong> 1.0.48 - </strong> <a href="https://download.macromedia.com/screens/"> https://download.macromedia.com/screens/ </a></td> 
    <td><p><strong>1.0.42 - </strong></p> <p>Te publiceren in Chrome Store</p> </td> 
-   <td><strong>3.3.0 - </strong><a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></td> 
+   <td><strong> 3.3.0 - </strong> <a href="https://download.macromedia.com/screens/"> https://download.macromedia.com/screens/ </a></td> 
   </tr>
   <tr>
    <td><strong>AEM 6,4</strong></td> 
-   <td><p><strong>3.3.0.</strong> - <a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></p> <p>Publiceren op Apple Store</p> </td> 
-   <td><p><strong>1.0.48 -</strong><br /> </p> <p><a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></p> </td> 
+   <td><p><strong> 3.3.0 </strong> - <a href="https://download.macromedia.com/screens/"> https://download.macromedia.com/screens/ </a></p> <p>Publiceren op Apple Store</p> </td> 
+   <td><p><strong> 1.0.48 - </strong><br /> </p> <p><a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></p> </td> 
    <td><p><strong>1.0.42 - </strong></p> <p>Te publiceren in Chrome Store</p> </td> 
-   <td><strong>3.3.0 - </strong><a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></td> 
+   <td><strong> 3.3.0 - </strong> <a href="https://download.macromedia.com/screens/"> https://download.macromedia.com/screens/ </a></td> 
   </tr>
  </tbody>
 </table>

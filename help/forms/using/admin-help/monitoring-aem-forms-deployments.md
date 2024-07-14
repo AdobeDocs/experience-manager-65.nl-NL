@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Implementaties van AEM controleren {#monitoring-aem-forms-deployments}
 
-U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau controleren. U kunt gespecialiseerde beheersinstrumenten zoals HP OpenView, IBM® Tivoli, en CA UniCenter en een derdeJMX monitor gebruiken genoemd *JConsole* om specifiek toezicht te houden op Java™-activiteit. De implementatie van een monitoringstrategie verbetert de beschikbaarheid, betrouwbaarheid en prestaties van uw AEM formulieren.
+U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau controleren. U kunt specialistische beheersinstrumenten zoals HP OpenView, IBM® Tivoli, en CA UniCenter en een derdeJMX monitor gebruiken genoemd *JConsole* om Java™ activiteit specifiek te controleren. De implementatie van een monitoringstrategie verbetert de beschikbaarheid, betrouwbaarheid en prestaties van uw AEM formulieren.
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
@@ -26,8 +26,8 @@ U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau c
 
 AEM Forms biedt twee geregistreerde MBans die navigatie- en statistische informatie bieden. Deze delen zijn de enige MBans die voor integratie en inspectie worden gesteund:
 
-* **ServiceStatistic:** Dit MBean verstrekt informatie over de naam van de Dienst en zijn versie.
-* **OperationStatistic:** Dit MBean verstrekt de statistiek van de dienst van elke server van AEM Forms. Dit MBean is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, en aantal fouten kunnen krijgen.
+* **ServiceStatistic:** This MBean verstrekt informatie over de naam van de Dienst en zijn versie.
+* **OperationStatistic:** This MBean verstrekt de statistiek van de dienst van elke server van AEM Forms. Dit MBean is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, en aantal fouten kunnen krijgen.
 
 ### ServiceStatisticMbean, openbare interfaces {#servicestatisticmbean-public-interfaces}
 
@@ -71,41 +71,41 @@ Deze openbare interfaces van OperationStatistic MBean kunnen voor testdoeleinden
 
 Met behulp van een JMX-console (JConsole) zijn statistieken van OperationStatistic MBean beschikbaar. Deze statistieken zijn de attributen van MBean, en kunnen onder de volgende hiërarchieboom worden genavigeerd:
 
-**MBean tree**
+**MBean boom**
 
-**Domeinnaam Adobe:** Afhankelijk van de toepassingsserver. Als het domein niet wordt gedefinieerd door de toepassingsserver, is de standaardwaarde adobe.com.
+**Naam van het Domein van de Adobe:** hangt van de Server van de Toepassing af. Als het domein niet wordt gedefinieerd door de toepassingsserver, is de standaardwaarde adobe.com.
 
-**ServiceType:** AdobeService is de naam die wordt gebruikt om alle services weer te geven.
+**ServiceType:** AdobeService is de naam die wordt gebruikt om van alle diensten een lijst te maken.
 
-**AdobeServiceName:** Servicenaam of Service-id.
+**AdobeServiceName:** Naam van de Dienst, of identiteitskaart van de Dienst.
 
-**Versie:** Versie van de service.
+**Versie:** Versie van de dienst.
 
-**Bewerkingsstatistieken**
+**Statistieken van de Verrichting**
 
-**Aanroepingstijd:** Tijd die nodig is om de methode uit te voeren. Deze aanroep omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
+**de Tijd van de Oroeping:** Tijd die voor de uitvoering van de methode wordt genomen. Deze aanroep omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
 
-**Aantal aanroepen:** Het aantal tijden de dienst wordt aangehaald.
+**de telling van de Inroeping:** het aantal tijden de dienst wordt aangehaald.
 
-**Gemiddelde aanroepingstijd:** Gemiddelde tijd van alle aanroepen die zijn uitgevoerd sinds de server is gestart.
+**Gemiddelde aanroepingstijd:** Gemiddelde tijd van alle aanroepingen die hebben uitgevoerd aangezien de server was begonnen.
 
-**Maximale aanroepingstijd:** De duur van de langste aanroep die is uitgevoerd sinds de server is gestart.
+**Max aanroepingstijd:** de duur van de langste aanroeping die heeft uitgevoerd aangezien de server was begonnen.
 
-**Minimale aanroepingstijd:** De duur van de kortste aanroep die is uitgevoerd sinds de server is gestart.
+**Min oproepingstijd:** De duur van de kortste aanroeping die heeft uitgevoerd aangezien de server was begonnen.
 
-**Aantal uitzonderingen:** Aantal oproepen die tot mislukkingen hebben geleid.
+**Aantal van de Uitzondering:** Aantal aanroepen die in mislukkingen hebben geresulteerd.
 
-**Uitzonderingsbericht:** Het foutbericht van de laatste uitzondering die is opgetreden.
+**Bericht van de Uitzondering:** het foutenbericht van de laatste uitzondering die voorkwam.
 
-**Datum laatste monsterneming:** De datum van de laatste aanroeping.
+**Laatste Tijd van de Datum van de Steekproef:** de datum van de laatste aanroeping.
 
-**Tijdeenheid:** De standaardwaarde is millisecond.
+**Eenheid van de Tijd:** Gebrek is milliseconde.
 
 Voor JMX-bewaking hebben de toepassingsservers doorgaans een bepaalde configuratie nodig. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.
 
 ### Voorbeelden van het instellen van open JMX-toegang {#examples-of-how-to-set-up-open-jmx-access}
 
-**JBoss® 4.0.3/4.2.0 - het JVM-opstarten configureren**
+**JBoss® 4.0.3/4.2.0 - vorm het opstarten JVM**
 
 Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van de toepassingsserver. Zorg ervoor dat JBoss wordt gestart vanuit het bestand run.bat/sh.
 
@@ -116,9 +116,9 @@ Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van 
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-**WebLogic 9.2/10 - vorm het JVM opstarten**
+**WebLogic 9.2 /10 - vorm het opstarten JVM**
 
-1. Bewerk het startWebLogic.bat-bestand onder `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
+1. Bewerk het startWebLogic.bat-bestand onder `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin` .
 1. Zoek de lijn JAVA_OPTS en voeg het volgende toe:
 
    ```shell
@@ -131,12 +131,12 @@ Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van 
 >
 >Voor WebLogic kunt u toegang krijgen tot de MBean via extern of IOOP.
 
-**De MBean extern openen**
+**toegang ver MBean**
 
 1. Start JConsole voor nieuwe verbinding en klik op extern tabblad.
 1. Voer de hostnaam en poort in (9088, het nummer dat u opgeeft tijdens de startopties van JVM).
 
-**WebSphere® 6.1 - JVM-opstarten configureren**
+**WebSphere® 6.1 - vorm JVM opstarten**
 
 1. Voeg in de Admin Console (Toepassingsserver > server1 > Procesdefinitie > JVM) de volgende regel toe aan het veld voor Generic JVM-argument:
 
@@ -144,7 +144,7 @@ Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van 
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Voeg of verwijder commentaarde de volgende drie lijnen in het /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties- dossier toe (of &lt;your websphere=&quot;&quot; jre=&quot;&quot;>/ lib/management/management.properties):
+1. Voeg de volgende drie regels toe aan het bestand /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (of &lt;Your Websphere JRE>/ lib/management/management.properties) of verwijder de commentaarmarkering:
 
    ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect

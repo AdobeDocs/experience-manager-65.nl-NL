@@ -20,22 +20,22 @@ ht-degree: 0%
 
 Standaard worden in de lijst Taak-weergavenaam en -beschrijving van de AEM Forms-werkruimte weergegeven. U kunt echter andere gegevens toevoegen, zoals de aanmaakdatum en de einddatum. U kunt ook pictogrammen toevoegen en de stijl van de weergave wijzigen.
 
-![Een blik bij de Te doen lusje van de Werkruimte van de HTML die standaardconfiguratie tonen](assets/html-todo-list.png)
+![ A blik bij de HTML Workspace aan-doet lusje die standaardconfiguratie tonen ](assets/html-todo-list.png)
 
 In dit artikel worden de stappen beschreven die moeten worden uitgevoerd om informatie toe te voegen voor elke taak in de lijst AanDoe.
 
 ## Wat kan worden toegevoegd {#what-can-be-added}
 
-U kunt de informatie toevoegen die beschikbaar is in `task.json` verzonden door de server. De informatie kan als gewone tekst worden toegevoegd of u kunt stijlen gebruiken om de informatie te formatteren.
+U kunt de informatie toevoegen die beschikbaar is in `task.json` die door de server wordt verzonden. De informatie kan als gewone tekst worden toegevoegd of u kunt stijlen gebruiken om de informatie te formatteren.
 
-Zie voor meer informatie over de beschrijving van het JSON-object [dit](/help/forms/using/html-workspace-json-object-description.md) artikel.
+Voor meer informatie over de beschrijving van het Voorwerp JSON, zie [ dit ](/help/forms/using/html-workspace-json-object-description.md) artikel.
 
 ## Informatie weergeven over een taak {#displaying-information-on-a-task}
 
-1. Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../forms/using/generic-steps-html-workspace-customization.md).
-1. Om extra informatie voor een taak te tonen, moeten de overeenkomstige zeer belangrijk-waardeparen binnen het taakblok van worden toegevoegd `translation.json`.
+1. Volg de [ Algemene stappen voor de werkruimte van AEM Forms aanpassing ](../../forms/using/generic-steps-html-workspace-customization.md).
+1. Als u aanvullende informatie voor een taak wilt weergeven, moeten de corresponderende sleutel-waardeparen binnen het taakblok van `translation.json` worden toegevoegd.
 
-   Bijvoorbeeld, wijzigen `/apps/ws/locales/en-US/translation.json` voor het Engels:
+   Wijzig bijvoorbeeld `/apps/ws/locales/en-US/translation.json` voor Engels:
 
    ```json
    "task" : {
@@ -122,7 +122,7 @@ Zie voor meer informatie over de beschrijving van het JSON-object [dit](/help/fo
 
 ## CSS definiëren voor de nieuwe eigenschap {#defining-css-for-the-new-property}
 
-1. U kunt stijl toepassen op de informatie (eigenschap) die aan een taak is toegevoegd. Hiervoor moet u stijlinformatie toevoegen voor de nieuwe eigenschap die is toegevoegd aan `/apps/ws/css/newStyle.css`.
+1. U kunt stijl toepassen op de informatie (eigenschap) die aan een taak is toegevoegd. Hiervoor moet u stijlinformatie toevoegen voor de nieuwe eigenschap die aan `/apps/ws/css/newStyle.css` is toegevoegd.
 
    Bijvoorbeeld:
 
@@ -141,11 +141,11 @@ Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan d
 1. Kopiëren `task.html`:
 
    * van: `/libs/ws/js/runtime/templates/`
-   * tot: `/apps/ws/js/runtime/templates/`
+   * to: `/apps/ws/js/runtime/templates/`
 
-1. Nieuwe informatie toevoegen aan `/apps/ws/js/runtime/templates/task.html`.
+1. Voeg de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/task.html`.
 
-   Bijvoorbeeld, toevoegen onder `div class="taskProperties"`:
+   Voeg bijvoorbeeld toe onder `div class="taskProperties"` :
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

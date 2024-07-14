@@ -20,9 +20,9 @@ ht-degree: 0%
 
 De volgende onderwerpen beschrijven hoe te om specifieke AEM plaatsingstaken te verwezenlijken:
 
-* [De Log Viewer gebruiken](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [Workflows en het auditlogboek wissen](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+* [ hoe te om de Kijker van het Logboek te gebruiken ](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
+* [ hoe te Werkschema&#39;s en het Logboek van de Controle zuiveren ](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+* [ Prestaties die uitlijnen uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 * [Functies uit het welkomstscherm verwijderen](/help/sites-developing/customizing-the-welcome-console.md)
-* [De functie Locatiebeheer uitschakelen](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+* [ hoe te om de Eigenschap van de Tracker van de Plaats uit te zetten ](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

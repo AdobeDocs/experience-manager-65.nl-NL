@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Eigenschappen van Correspondentenbeheer {#correspondence-management-configuration-properties}
 
-Als u deze eigenschappen wilt configureren, opent u de volgende URL in een browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` en selecteert u **Correspondentiebeheerconfiguraties**.
+Om deze eigenschappen te vormen, open volgende URL in browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` en selecteer **Configuraties van het Beheer van de Correspondentie**.
 
 Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
 
@@ -162,8 +162,8 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
    <td>—<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Lettervarianten beheren bij publicatie</p> </td>
-   <td><p>De functie Letter beheren in-/uitschakelen (alleen van toepassing op publicatieserver)</p> </td>
+   <td><p>Letterlijke instanties beheren op Publish</p> </td>
+   <td><p>De functie Letter beheren in-/uitschakelen (alleen van toepassing op Publish Server)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -198,7 +198,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Publicatie-controle inschakelen</p> </td>
+   <td><p>Publish-controle inschakelen</p> </td>
    <td><p>De auditfunctionaliteit voor het publiceren van elementen inschakelen/uitschakelen</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -247,13 +247,13 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   </tr>
   <tr>
    <td><p>Grootte lettercache</p> </td>
-   <td><p>Geef het maximumaantal letters op dat in de cache moet worden opgeslagen.</p> <p>Als u deze waarde wijzigt, wordt de opdracht <code>in-memory</code> cache.</p> </td>
+   <td><p>Geef het maximumaantal letters op dat in de cache moet worden opgeslagen.</p> <p>Als u deze waarde wijzigt, wordt de cache van <code>in-memory</code> opgeschoond.</p> </td>
    <td><p>100</p> </td>
    <td><p>Willekeurige numerieke waarde</p> </td>
   </tr>
   <tr>
    <td><p>Lettercache inschakelen</p> </td>
-   <td><p>De lettercache in-/uitschakelen.</p> <p>Als u deze waarde wijzigt, wordt de opdracht <code>in-memory </code> cache.</p> </td>
+   <td><p>De lettercache in-/uitschakelen.</p> <p>Als u deze waarde wijzigt, wordt de cache van <code>in-memory </code> opgeschoond.</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -289,7 +289,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   </tr>
   <tr>
    <td><p>Foutopsporingsdirectory </p> <p> </p> </td>
-   <td>Locatie bestandssysteemmap voor foutopsporing. Als de map niet <code>exists</code>Er worden geen foutopsporingsdumps gegenereerd.</td>
+   <td>Locatie bestandssysteemmap voor foutopsporing. Als de map niet <code>exists</code> is, worden er geen foutopsporingsdumps gegenereerd.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

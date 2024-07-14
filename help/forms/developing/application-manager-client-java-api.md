@@ -1,6 +1,6 @@
 ---
-title: Application Manager Client JavaAPI Quick Start (SOAP)
-description: Application Manager Client JavaAPI Quick Start (SOAP)
+title: Application Manager Client JavaAPI Quick Start(SOAP)
+description: Application Manager Client JavaAPI Quick Start(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -40,7 +40,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->De snelle start in Programmeren met AEM Forms is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss® en het Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle start in Programmeren met AEM Forms is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss® en het Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): Toepassingsversie maken met de Java™ API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -442,7 +442,7 @@ public class GetApplication_SOAP {
 
 In het volgende Java™-codevoorbeeld worden de toepassingen opgehaald met de Java™ API.
 
-**Opmerking**: AEM Forms Application API ophalen, getApplications(), retourneert alleen geïmplementeerde toepassingen.
+**Nota**: Het krijgen van de Toepassing API van AEM Forms, getApplications (), keert slechts opgestelde toepassingen terug.
 
 ```java
 /*

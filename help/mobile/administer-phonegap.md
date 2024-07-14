@@ -20,15 +20,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
-An ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een app maken met AEM Mobile *wizard Maken* selecteert u doorgaans een van de gewenste toepassingssjablonen uit de referentiemonsters van de Adobe voor toepassingen die buiten de box vallen of (gewoonlijk) een aangepaste toepassingssjabloon die is gemaakt door *AEM ontwikkelaars*
+Een ***AEM beheerder*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de catalogus van AEM Mobile, of door app te creëren gebruikend de aanmaaktovenaar, of door een bestaande toepassing in te voeren. AEM beheerders die een toepassing gebruikend AEM Mobile *creatietovenaar* tot stand brengen, selecteer typisch één van de gewenste toepassingsmalplaatjes of van Adobe uit-van-de-doos verwijzingssteekproeven of (gewoonlijk) een douanemalplaatje van de app die door *AEM ontwikkelaars wordt gecreeerd.*
 
 Nadat u de mobiele toepassing hebt gemaakt met gebruik van HTML5 en PhoneGap, kunt u deze beheren in het Command Center. U kunt de HTML5-inhoud voor een native toepassing ook beheren in het Command Center met Cordova-webweergaven (zodat PhoneGap-plug-ins toegang hebben tot native functies).
 
 Met het AEM Apps Control Center kunt u uw mobiele toepassing maken en implementeren, toepassingsmetagegevens maken en bewerken voordat u uw mobiele toepassing publiceert, gezamenlijk nieuwe en relevante inhoud beheren en deze vaak publiceren zonder dat u de verzendingsprocessen van de winkel van de toepassing opnieuw hoeft te bekijken en de levenscyclus en gebruikswaarden van de toepassing moet analyseren om de conversie van klanten en de loyaliteit van het merk te verbeteren.
 
-Als u uw AEM Mobile-toepassing wilt maken, raadpleegt u de [Mobiele toepassingen maken](/help/mobile/building-app-mobile-phonegap.md) in de sectie Ontwikkelaars.
+Om uw toepassing van AEM Mobile te bouwen, zie de [ Bouwend Mobiele pagina van Toepassingen ](/help/mobile/building-app-mobile-phonegap.md), in de sectie van Ontwikkelaars.
 
 Om uw milieu te vestigen en met het Centrum van de Controle te beginnen,
 
@@ -37,11 +37,11 @@ Om uw milieu te vestigen en met het Centrum van de Controle te beginnen,
 1. [Adobe PhoneGap Build-Cloud Service configureren](/help/mobile/configure-phonegap-build-cloud.md)
 1. [Uw Adobe Analytics Cloud-service configureren](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
-Voor meer informatie over inhoudsdiensten raadpleegt u de inhoudsdiensten [Inhoudsservices beheren](/help/mobile/developing-content-services.md).
+Voor leren over de Diensten van de Inhoud van de inhoudsdiensten, zie [ het Beheer de Diensten van de Inhoud ](/help/mobile/developing-content-services.md).
 
 >[!NOTE]
 >
->De *AEM verifiëren* is een snelle en eenvoudige manier om uw AEM mobiele toepassingen op elk iOS- of Android™-mobiel apparaat uit te voeren. De *AEM verifiëren* is een mobiele app op uw apparaat en u maakt er verbinding mee met de server waarop de snelstart wordt uitgevoerd om een lijst met toepassingen weer te geven. Klikken [hier](/help/mobile/phonegap-mobile-quickstart.md) om de details weer te geven.
+>*AEM verifieer* is een snelle en gemakkelijke manier om uw AEM mobiele toepassingen op om het even welk iOS of Android™ mobiel apparaat in werking te stellen. *AEM verifieer* is een mobiele app, op uw apparaat en u verbindt het met de server die de snelstart in werking stelt om een lijst van te bekijken apps te krijgen. Klik [ hier ](/help/mobile/phonegap-mobile-quickstart.md) om de details te bekijken.
 
 ## Aanvullende bronnen {#additional-resources}
 

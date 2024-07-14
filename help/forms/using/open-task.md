@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Als de Adobe Experience Manager (AEM) Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd.
 
-Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [Concepten opslaan](/help/forms/using/save-as-draft.md).
+Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [ het Opslaan van een ontwerp ](/help/forms/using/save-as-draft.md).
 
-**Een taak openen**
+**om een taak** te openen
 
 1. Selecteer de taak in de takenlijst.
 
@@ -32,11 +32,11 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [
 
 1. Selecteer de taak om deze te openen.
 
-   U kunt **Overzicht weergeven** om aanvullende instructies weer te geven die zijn opgegeven in het Workbench-proces.
+   U kunt **Samenvatting van de Mening** selecteren om extra instructies te bekijken die in het proces Workbench worden gespecificeerd.
 
-**Een toepassing openen**
+**om een toepassing** te openen
 
-1. Selecteer de **toepassing** in de **Forms** tab.
+1. Selecteer de **toepassing** in **Forms** tabel.
 
    Wanneer u een toepassing selecteert, wordt de beschrijving van de toepassing onder de toepassingsnaam weergegeven. Na de beschrijving worden de gebruikershandeling/handelingen die aan de toepassing zijn gekoppeld, weergegeven.
 
@@ -45,4 +45,4 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [
 
 1. Selecteer de taak om deze te openen.
 
-   U kunt **Overzicht weergeven** om extra instructies te bekijken die voor de toepassing worden gespecificeerd.
+   U kunt **Samenvatting van de Mening** selecteren om extra instructies te bekijken die voor de toepassing worden gespecificeerd.

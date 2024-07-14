@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-Demand biedt een volledig geconfigureerde toepassingssjabloon, een artikelsjabloon en artikelcomponenten.
 
@@ -27,11 +27,11 @@ We.Unlimited App is een voorbeeldsjabloon die de shell van een volledig configur
 
 Als u deze voorbeeldsjabloon selecteert wanneer u een app maakt, wordt een dashboard met uitgebreide AEM Mobile-functies weergegeven.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![ chlimage_1-70 ](assets/chlimage_1-70.png)
 
 >[!NOTE]
 >
->Als u uw toepassing en inhoud voor mobiele apps wilt beheren vanuit AEM Mobile Apps Control Center, raadpleegt u de [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Om uw toepassing en mobiele toepassingsinhoud van het Centrum van de Controle van de Apps van AEM Mobile te beheren, zie het [ dashboard van de Toepassing van AEM Mobile ](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 ## App-sjablonen maken {#creating-app-templates}
 
@@ -43,71 +43,71 @@ Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u ee
 
 Stappen voor het maken van een app op basis van een toepassingssjabloon:
 
-1. Ga naar de AEM Mobile-toepassingscatalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Selecteren **Maken** > **App** zoals hieronder weergegeven
+1. Ga naar de AEM Mobile-app-catalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
+1. Selecteer **creëren** > **app** zoals hieronder getoond
 
-Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Als u artikelen, banners en verzamelingen opnieuw wilt bekijken, gaat u naar [Handelingen voor inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Om, verwezenlijking van artikelen, banners, en inzamelingen opnieuw te bezoeken, zie {de Acties van het Beheer van de Inhoud 0} ](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).[
 
 >[!NOTE]
 >
->U kunt ook een voorbeeldtoepassingssjabloon selecteren, bijvoorbeeld **Wij.Onbeperkt** , beschikbaar gesteld door een AEM ontwikkelaar. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
+>Alternatief, kunt u ook een malplaatje van de steekproefapp selecteren, bijvoorbeeld, **Wij.Unlimited** app, die aan u door een AEM ontwikkelaar ter beschikking wordt gesteld. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
 
 >[!CAUTION]
 >
->Instelling ***redirectTarget*** eigenschap
+>Het plaatsen ***redirectTarget*** bezit
 >
->Tijdens het gebruik van een van de toepassingssjablonen definieert de ontwikkelaar de inhoud van de toepassing. De ontwikkelaar moet zich echter bewust zijn van de plaats waar de toepassing wordt gemaakt in de jcr en de waarde van ***redirectTarget*** eigenschap.
+>Tijdens het gebruik van een van de toepassingssjablonen definieert de ontwikkelaar de inhoud van de toepassing. Nochtans, moet de ontwikkelaar zich bewust zijn waar de toepassing in jcr en de waarde van ***wordt gecreeerd redirectTarget*** bezit.
 >
->De ***redirectTarget*** wordt berekend als onderdeel van het maken van de app en probeert een pad op te lossen als er een eigenschap redirectTarget beschikbaar is als onderdeel van de toepassingssjabloon en de waarde van redirectTarget wordt gedefinieerd als relatief. Wanneer tijdens het maken van de app een relatieve waarde voor redirectTarget wordt gevonden in de toepassingssjabloon, wordt de waarde toegevoegd aan de opgeloste locatie waar de app is gemaakt.
+>***redirectTarget*** wordt berekend als deel van creeer app verrichting en pogingen om een weg op te lossen, als er een redirectTarget bezit beschikbaar als deel van het toepassingsmalplaatje is, en de waarde van redirectTarget wordt bepaald als met betrekking tot. Wanneer tijdens het maken van de app een relatieve waarde voor redirectTarget wordt gevonden in de toepassingssjabloon, wordt de waarde toegevoegd aan de opgeloste locatie waar de app is gemaakt.
 >
->Als een toepassingssjabloon bijvoorbeeld een ***redirectTarget*** met de waarde &quot;*lantaarnstramienen/nl*&quot;, en de app is gemaakt in &quot;*/content/mobileapps/fooApp*&quot;, is de uiteindelijke waarde voor redirectTarget nadat de app is gemaakt &quot;*/content/mobileapps/fooApp/language-masters/nl*&quot;.
+>Bijvoorbeeld, als een toepassingsmalplaatje a ***redirectTarget*** met een waarde van &quot;*taal-masters/en*&quot;bepaalt, en app werd gecreeerd in &quot;*/content/mobileapps/fooApp*&quot;, zal de definitieve waarde voor redirectTarget na app zoals gecreeerd &quot;*/content/mobileapps/fooApp/language-zijn stramienen/nl*&quot;.
 >
 
 ## Inhoudssjablonen maken {#creating-content-templates}
 
 Elk eenheidstype heeft twee out-of-the-box malplaatjes. Deze zijn:
 
-* **Standaardsjablonen:** gebruikt voor het maken van inhoud met de toepasselijke standaardeigenschappen/structuur
-* **Geïmporteerde sjablonen:** gebruikt voor het importeren van inhoud uit AEM Mobile met de toepasselijke standaardeigenschappen/structuur
+* **Standaard malplaatjes:** wordt gebruikt voor inhoudsverwezenlijking met toepasselijke standaardeigenschappen/structuur
+* **Geïmporteerde malplaatjes:** gebruikt voor het invoeren van inhoud van AEM Mobile met toepasselijke standaardeigenschappen/structuur
 
 ### Artikelsjablonen {#article-templates}
 
 Het artikel Onbeperkt is een voorbeeldsjabloon die een gebruikelijke lay-out van AEM Mobile On-Demand-artikelen vertegenwoordigt.
 
-1. In **Artikelen beheren**, selecteert u **+**  om een artikel te maken. U kunt een van de **Onbeperkt artikel** of **Rich Text Article**. In de onderstaande afbeelding ziet u de optie waarmee u een van deze twee artikelsjablonen kunt kiezen.
+1. In **beheert Artikelen**, uitgezocht **+** om een artikel tot stand te brengen. U kunt of een **Onbeperkt Artikel** of a **Rich Text Artikel** kiezen. In de onderstaande afbeelding ziet u de optie waarmee u een van deze twee artikelsjablonen kunt kiezen.
 
-1. Klikken **Volgende** om metagegevens van artikelen te definiëren, zoals artikelnaam/titel, beschrijving, auteur, abstract, afdeling, miniatuurafbeelding, artikeltoegang, enzovoort.
-1. Klikken **Volgende** om de Advertentie-eigenschappen in te vullen.
-1. Klikken **Volgende** om artikelafbeelding of afbeelding van sociale media in te voeren
-1. Klikken **Volgende** om een verzamelingskoppeling naar dit nieuwe artikel te kiezen.
-1. Klikken **Volgende** om de details voor sociaal delen in te voeren.
-1. Klikken **Maken** om het maken van een artikel met het voorbeeld te voltooien. U klikt op **Gereed** of **Artikel bewerken** om de eigenschappen van dit artikel te bewerken.
+1. Klik **daarna** om artmeta gegevens zoals de Naam/Titel van het Artikel, Beschrijving, Auteur, Abstract, Afdeling, het Beeld van de Duimnagel, de Toegang van het Artikel, etc. te bepalen.
+1. Klik **daarna** om de Eigenschappen van de Reclame in te vullen.
+1. Klik **daarna** om het Beeld van het Artikel of het Beeld van Sociale Media in te gaan
+1. Klik **daarna** om een inzamelingsverbinding te kiezen dit nieuwe artikel aan.
+1. Klik **daarna** om de details voor sociaal het delen in te gaan.
+1. Klik **creëren** om het proces te beëindigen om een artikel te creëren gebruikend de steekproef. U of klikt **Gedaan** of **geeft Artikel** uit om de eigenschappen van dit artikel uit te geven.
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![ chlimage_1-71 ](assets/chlimage_1-71.png)
 
 ### Componenten toevoegen aan artikel {#adding-components-to-article}
 
 Nadat een auteur is gemaakt, kan hij of zij de inhoud van een artikel bewerken door componenten zoals tekst en afbeeldingen toe te voegen. Artikelen zijn een uitbreiding van AEM paginasjablonen.
 
-Selecteer een artikel dat u wilt bewerken en klik op **Bewerken** om componenten aan het artikel toe te voegen.
+Selecteer een artikel u wilt uitgeven, dan klik **uitgeven** om componenten aan het artikel toe te voegen.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
+![ chlimage_1-72 ](assets/chlimage_1-72.png) ![ chlimage_1-73 ](assets/chlimage_1-73.png)
 
-Kies de &#39;**+**&#39; in het linkerdeelvenster om componenten aan uw artikel toe te voegen.
+Kies &quot;**+**&quot;op het linkerpaneel om componenten aan uw artikel toe te voegen.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![ chlimage_1-74 ](assets/chlimage_1-74.png)
 
 ### Sjablonen voor gebruik buiten de box maken {#creating-out-of-the-box-templates}
 
-Er zijn geen out-of-the-box de Malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanesjablonen zouden moeten uitbreiden, zie Geometrixx Unlimited App [Voorbeeld van een artikelsjabloon](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Er zijn geen uit-van-de-doos de Malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanemalplaatjes zouden moeten uitbreiden, zie het malplaatjesteekproef van het Artikel van de Toepassing van het Geometrixx Unlimited [ ](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
 
 De belangrijkste eigenschappen buiten de normale AEM vereiste eigenschappen omvatten;
 
-***dps-resourceType=&quot;dps:Article&quot;***
+***dps-resourceType= &quot;dps:Artikel&quot;***
 
 Deze eigenschap zorgt ervoor dat de AEM pagina wordt herkend als een voor AEM Mobile bedoelde artikelpagina.
 
-Net als AEM sjablonen kunt u standaardeigenschappen of onderliggende knooppunten toevoegen aan de sjablonen ***jcr:inhoud***.
+Zoals per AEM malplaatjes, kunt u om het even welke standaardeigenschappen of kindknopen aan jcr van het malplaatje ***toevoegen:inhoud***.
 
 ### Banner- en verzamelingssjablonen {#banner-and-collection-templates}
 
@@ -132,27 +132,27 @@ Aangepaste componenten kunnen echter niet correct naar AEM Mobile On-demand Serv
 
 Wanneer de component al op een AEM pagina is opgenomen, kunt u samen met enkele andere bouwsteencomponenten een andere component aan de pagina toevoegen of een bestaande component bewerken.
 
-**Een andere component aan de pagina toevoegen:**
+**om een andere component aan de pagina toe te voegen:**
 
 1. Kies die pagina en controleer of u in de modus Bewerken werkt. Ga hiervoor naar het vervolgkeuzemenu rechtsboven in de koptekst van de Editor.
 1. Zijpaneel in-/uitschakelen met het pictogram uiterst links in de koptekst van de Editor
-1. Selecteer de **Componenten** tab
+1. Selecteer het **lusje van Componenten**
 1. Sleep een van de beschikbare componenten naar de pagina
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![ chlimage_1-75 ](assets/chlimage_1-75.png)
 
-**Een bestaande component bewerken:**
+**om een bestaande component uit te geven:**
 
-1. Kies die pagina en zorg ervoor dat u zich in **Bewerken** en selecteert u de component
+1. Kies die pagina en zorg ervoor u op **bent geef** wijze uit en selecteer de component
 1. Selecteer het moersleutelpictogram om de component te configureren
 
 >[!NOTE]
 >
->U kunt een component maken in AEM en hetzelfde aanpassen met [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Nadat u de bestaande component naar wens hebt aangepast, kunt u deze op de pagina toevoegen met de opdracht **Bewerken** optie onder **Artikelen beheren** zoals aangegeven in bovenstaande figuur.
+>U kunt tot een component in AEM leiden en het zelfde aanpassen gebruikend [ Ontwikkelen met CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md). Zodra u de bestaande component als uw vereisten hebt aangepast, kunt u het in uw pagina toevoegen gebruikend **uitgeeft** optie onder **leidt Artikelen** zoals aangetoond in het cijfer hierboven.
 
 >[!NOTE]
 >
->Zie [Beste praktijken voor de Ontwikkeling van Malplaatjes en Componenten](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
+>Verwijs naar [ Beste praktijken voor de Ontwikkeling van Malplaatjes en van Componenten ](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
 
 ### De volgende stappen {#the-next-steps}
 

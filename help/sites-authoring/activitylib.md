@@ -19,7 +19,7 @@ ht-degree: 10%
 
 # Beheersactiviteiten{#managing-activities}
 
-Met de Activiteiten-console kunt u de marketing [activiteiten](/help/sites-authoring/personalization.md#activities) van uw merken:
+De console van Activiteiten laat u toe om, de marketing [ activiteiten ](/help/sites-authoring/personalization.md#activities) van uw merken tot stand te brengen te organiseren en te beheren:
 
 * Voeg merken toe.
 * Voor elk merk, voeg en vorm activiteiten toe.
@@ -27,11 +27,11 @@ Met de Activiteiten-console kunt u de marketing [activiteiten](/help/sites-autho
 
 >[!NOTE]
 >
->Als u Adobe Target gebruikt als de doelengine, kunt u ook [prestatiegegevens van uw activiteiten weergeven](#viewing-performance-and-converting-winning-experiences-a-b-test). Als u A/B test, kunt u [winnaars omzetten](#viewing-performance-and-converting-winning-experiences-a-b-test).
+>Als u Adobe Target als uw het richten motor gebruikt, kunt u prestaties gegevens van uw activiteiten ](#viewing-performance-and-converting-winning-experiences-a-b-test) ook [ bekijken. Als u A/B het testen gebruikt, kunt u [ winnaars ](#viewing-performance-and-converting-winning-experiences-a-b-test) omzetten.
 
-Op de Activity Console worden de activiteiten georganiseerd door merk. U kunt merken en mappen gebruiken om uw activiteiten te structureren. U navigeert aan de console van Activiteiten door te tikken/te klikken **Personalisatie** en tikken/klikken **Activiteiten**.
+Op de Activity Console worden de activiteiten georganiseerd door merk. U kunt merken en mappen gebruiken om uw activiteiten te structureren. U navigeert aan de console van Activiteiten door **Personalization** te tikken of te klikken en **Activiteiten** te tikken/te klikken.
 
-Activiteiten zijn beschikbaar in de modus Doel voor [ontwerpen, doelinhoud](/help/sites-authoring/content-targeting-touch.md), waar u ook activiteiten kunt maken. De activiteiten die u op het richten wijze creeert verschijnen in de console van Activiteiten.
+De activiteiten zijn beschikbaar op het richten wijze voor [ creërend gerichte inhoud ](/help/sites-authoring/content-targeting-touch.md), waar u activiteiten kunt ook tot stand brengen. De activiteiten die u op het richten wijze creeert verschijnen in de console van Activiteiten.
 
 De activiteiten worden getoond met een etiket beschrijvend welke soort activiteit wordt bepaald:
 
@@ -39,38 +39,38 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 * A/B - Adobe Target A/B-tests
 * AEM - Adobe Experience Manager-doelversie (context- of clientcontext-afhankelijk)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![ chlimage_1-114 ](assets/chlimage_1-114.png)
 
 >[!NOTE]
 >
 >Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
 >
->* Als de **alleen_xt** Deze optie is ingeschakeld in de Adobe Target-agent (clientcode) die aan de AEM zijde wordt gebruikt om verbinding te maken met Adobe Target. Vervolgens kunt u **alleen** XT-activiteiten in AEM.
+>* Als de **xt_only** optie op de huurder van Adobe Target (cliëntcode) wordt toegelaten die aan de AEM kant wordt gebruikt om met Adobe Target te verbinden, dan kunt u **slechts** activiteiten XT in AEM tot stand brengen.
 >
->* Als de **alleen_xt** opties zijn **niet** ingeschakeld in de Adobe Target-huurder (clientcode), kunt u vervolgens **beide** XT- en A/B-activiteiten in AEM.
+>* Als **xt_only** opties **** niet {op de huurder van Adobe Target (cliëntcode) wordt toegelaten, dan kunt u **zowel** XT als activiteiten A/B in AEM tot stand brengen.
 >
->**Aanvullende opmerking:** **alleen_xt** Deze opties zijn een instelling die wordt toegepast op een bepaalde doelgebruiker (clientcode) en kunnen alleen rechtstreeks in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
+>**Extra nota:** **xt_only** opties is het plaatsen die op een bepaalde huurder van het Doel wordt toegepast (clientcode) en kan slechts direct in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
 
 >[!CAUTION]
 >
->Het knooppunt met activiteiteninstellingen beveiligen **cq:ActivitySettings** op de publicatie-instantie zodat deze niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
+>Beveilig de knoop van activiteitenmontages **cq:ActivitySettings** op publiceer instantie zodat het voor normale gebruikers ontoegankelijk is. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
 >
->Zie [Vereisten voor integratie met Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) voor nadere informatie.
+>Zie [ Vereisten voor het Integreren met Adobe Target ](/help/sites-administering/target-requirements.md#securingtheactivitysettings) voor gedetailleerde informatie.
 
 ## Een merk maken met de activiteitenconsole {#creating-a-brand-using-the-activities-console}
 
 Maak een merk waarvoor u marketingactiviteiten wilt beheren.
 
-Wanneer u een merk maakt met de Activiteitenconsole, wordt dit ook weergegeven in het dialoogvenster [Aanbiedingsconsole](/help/sites-authoring/offerlib.md) waar u aanbiedingen kunt maken voor de ervaringen van uw activiteiten.
+Wanneer u een merk gebruikend de console van Activiteiten creeert, verschijnt het ook in de [ console van Aanbiedingen ](/help/sites-authoring/offerlib.md) waar u aanbiedingen voor de ervaringen van uw activiteiten kunt tot stand brengen.
 
-1. Klik in de navigatieconsole op **Personalisatie**. Klikken **Activiteiten**.
+1. In de console van de Navigatie, klik **Personalization**. Klik **Activiteiten**.
 
-   ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
+   ![ screen_shot_2018-03-21at151821 ](assets/screen_shot_2018-03-21at151821.png)
 
-1. Klik in de activiteitenconsole op **Maken** dan **Merk maken**.
-1. Selecteer de merksjabloon en klik op **Volgende**.
+1. In de console van Activiteiten, leidt de klik **tot** dan **merk**.
+1. Selecteer het merkmalplaatje en klik **daarna**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles Activiteiten en Aanbiedingen. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
-1. Klikken **Maken**. Uw merk wordt weergegeven in de Activiteitenconsole.
+1. Klik **creëren**. Uw merk wordt weergegeven in de Activiteitenconsole.
 
 ## Een activiteit toevoegen/bewerken met de activiteitenconsole {#adding-editing-an-activity-using-the-activities-console}
 
@@ -96,8 +96,8 @@ Voeg een activiteit toe of bewerk een bestaande activiteit om uw marketing inspa
 
 Een activiteit toevoegen:
 
-1. Klik op het merk waarvoor u de activiteit maakt en klik op **Maken** en vervolgens **Activiteit maken**. Als u bezig bent met bewerken, selecteert u de activiteit en klikt u op **Bewerken**.
-1. Geef de volgende informatie op en klik op **Volgende**:
+1. Klik het merk waarvoor u de activiteit creeert, **creeert** en dan **creeert Activiteit**. Als u uitgeeft, selecteer de activiteit en klik dan **uitgeven**.
+1. Verstrek de volgende informatie en klik dan **daarna**:
 
    * Een naam voor de activiteit.
    * De doelengine die moet worden gebruikt. ContextHub (AEM) wordt geselecteerd door gebrek. Als u Adobe Target moet gebruiken, maakt u de activiteit in de beoogde inhoudseditor.
@@ -105,35 +105,35 @@ Een activiteit toevoegen:
    * (Optioneel) Het doel of een beschrijving van de activiteit.
    * Selecteer het type activiteit.
 
-1. Voeg een of meer ervaringen toe aan de activiteit. Klikken **Ervaring toevoegen**.
+1. Voeg een of meer ervaringen toe aan de activiteit. Klik **toevoegen Ervaring**.
 1. Als u gebruikmaakt van AEM of Adobe Target-ervaring als doelwit:
 
    1. Klik **Selecteer het Publiek **en selecteer het segment dat uw ervaringsdoelstellingen.
-   1. Klikken **Ervaring toevoegen**, typt u een naam en klikt u op **OK**.
+   1. Klik **toevoegen Ervaring**, typ een naam, en klik **O.K.**.
 
    1. Klik op **Next**.
 
    Als u Adobe Target A/B Testen gebruikt:
 
    1. Klik op het potlood in het vak Soorten publiek om een publiek te selecteren.
-   1. Klikken **Ervaring toevoegen**, typt u een naam en klikt u op **OK**.
+   1. Klik **toevoegen Ervaring**, typ een naam, en klik **O.K.**.
 
    1. Ga het percentage van verkeer in dat elke ervaring toont.
    1. Klik op **Next**.
 
-1. Als u wilt opgeven wanneer de activiteit begint, gebruikt u de opdracht **Start** vervolgkeuzelijst om een van de volgende waarden te selecteren:
+1. Om te specificeren wanneer de activiteit begint, gebruik het **drop-down menu van het Begin** om één van de volgende waarden te selecteren:
 
-   * **Indien geactiveerd:** De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
-   * **Opgegeven datum en tijd:** Een specifieke tijd. Wanneer u deze optie selecteert, klikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te starten.
+   * **wanneer Geactiveerd:** de activiteit begint wanneer de pagina die de gerichte inhoud bevat wordt geactiveerd.
+   * **specificeerde Datum &amp; Tijd:** een specifieke tijd. Wanneer u deze optie selecteert, klikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te starten.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u het vervolgkeuzemenu Einde om een van de volgende waarden te selecteren:
 
-   * **Wanneer gedeactiveerd**: De activiteit eindigt wanneer de pagina die de beoogde inhoud bevat, wordt gedeactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
+   * **wanneer Gedeactiveerd**: De activiteit beëindigt wanneer de pagina die de gerichte inhoud bevat wordt gedeactiveerd.
+   * **specificeerde Datum &amp; Tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 
-1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal**, of **Hoog**.
-1. Als u Adobe Target gebruikt als de doelengine, selecteert u wat u met deze activiteit wilt meten. Zie [Het vormen van de Activiteit en het Plaatsen Doelstellingen](/help/sites-authoring/content-targeting-touch.md) voor meer informatie over de beschikbare succescijfers. Selecteer ten minste één doel.
-1. Klikken **Opslaan**.
+1. Om een prioriteit voor de activiteit te specificeren, gebruik de schuif om of **Laag**, **Normaal**, of **Hoog** te selecteren.
+1. Als u Adobe Target gebruikt als de doelengine, selecteert u wat u met deze activiteit wilt meten. Zie [ Vormend de Activiteit en Plaatsende Doelstellingen ](/help/sites-authoring/content-targeting-touch.md) voor meer informatie over de beschikbare succesmetriek. Selecteer ten minste één doel.
+1. Klik **sparen**.
 
    >[!NOTE]
    >
@@ -152,11 +152,11 @@ Om activiteiten te publiceren of unpublish:
 1. Klik op het merk en vervolgens op het gebied dat de activiteit bevat die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken.
 1. Klik op het pictogram naast de activiteit of activiteiten die u wilt publiceren of de publicatie ongedaan wilt maken.
 
-   ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
+   ![ scherm-shot_2019-03-05at123846 ](assets/screen-shot_2019-03-05at123846.png)
 
-1. Klik op **Publiceren**. Als u de publicatie ongedaan wilt maken, klikt u op **Publiceren ongedaan maken**. Uw activiteit of activiteiten worden gepubliceerd of niet gepubliceerd en hun statusveranderingen in de console van de Activiteiten (kan vereisen verfrissen).
+1. Om te publiceren, klik **Publish**. Om unpublish, klik **unpublish**. Uw activiteit of activiteiten worden gepubliceerd of niet gepubliceerd en hun statusveranderingen in de console van de Activiteiten (kan vereisen verfrissen).
 
-## Activiteiten met betrekking tot instanties Auteur en Publiceren {#activities-on-author-and-publish-instances}
+## Activiteiten op auteur- en Publish-instanties {#activities-on-author-and-publish-instances}
 
 Wanneer een activiteit wordt geactiveerd die de beoogde Adobe Target-engine gebruikt, wordt een tweede activiteit gemaakt op de publicatie-instantie:
 
@@ -169,24 +169,24 @@ U kunt de prestaties van elke Adobe Target-activiteit (XT of A/B) bekijken. Als 
 
 Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te zetten:
 
-1. In **Personalisatie**, klikt u op **Activiteiten** om naar de **Activiteiten** console.
+1. In **Personalization**, klik **Activiteiten** om aan de **console van Activiteiten** te navigeren.
 1. Klik op het merk waarvoor u activiteiten wilt zien.
-1. Selecteer de activiteit en klik **Eigenschappen weergeven** en klik op de knop **Rapporten** en selecteert u de activiteit waarvoor u de prestaties voor het winnen/omzetten van winnende ervaringen wilt bekijken. Prestatiedata worden weergegeven.
+1. Selecteer de activiteit en klik **Eigenschappen van de Mening** en klik het **lusje van Rapporten** en selecteer de activiteit die u prestaties voor wilt bekijken/het winnen ervaringen voor omzetten. Prestatiedata worden weergegeven.
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![ chlimage_1-115 ](assets/chlimage_1-115.png)
 
-1. Klik op de knop **Push-winnaar** een koppeling om die ervaring als de standaardervaring te gebruiken.
+1. Klik de **Push winnaar** verbinding om die ervaring als standaardervaring te duwen.
 
    Als u de winnaar omzet, gebeurt het volgende:
 
    * De huidige activiteit wordt uitgeschakeld
-   * Hiermee wijzigt u alle pagina&#39;s en vervangt u de doelinhoud door de feitelijke inhoud van de winnende ervaring. De inhoud van de winnende ervaring wordt onderdeel van de normale pagina **zonder** doelversie.
+   * Hiermee wijzigt u alle pagina&#39;s en vervangt u de doelinhoud door de feitelijke inhoud van de winnende ervaring. De inhoud van de het winnen ervaring wordt een deel van de normale pagina **zonder** het richten.
 
-   ![chlimage_1-116](assets/chlimage_1-116.png)
+   ![ chlimage_1-116 ](assets/chlimage_1-116.png)
 
    Een winnende ervaring is de ervaring die meer Lift in de rapporten produceert, die op de omrekeningskoers gebaseerd is.
 
-1. Klikken **Ja** om te bevestigen dat u de winnaar wilt converteren, de huidige ervaring uit te schakelen en deze te vervangen door de inhoud van de winnende ervaring.
+1. Klik **ja** om te bevestigen dat u de winnaar wilt omzetten, die de huidige ervaring onbruikbaar maakt en het vervangt met de inhoud van de het winnen ervaring.
 
 ## Synchroniseren van activiteiten met Adobe Target {#synchronizing-activities-with-adobe-target}
 
@@ -201,17 +201,17 @@ Deze voorwaarden gelden voor activiteiten met betrekking tot auteur- en publicat
 Wanneer een activiteit wordt gesynchroniseerd, wordt een overeenkomstige campagne gecreeerd in Adobe Target:
 
 * De activiteiten op het publicatieexemplaar hebben de zelfde naam zoals de overeenkomstige campagne van Adobe Target.
-* De activiteiten op de auteurinstantie corresponderen met de campagnes van het Doel van de zelfde naam met `_author` achtervoegsel.
+* De activiteiten op de auteurinstantie komen overeen met doelcampagnes met dezelfde naam en het achtervoegsel `_author` .
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![ chlimage_1-117 ](assets/chlimage_1-117.png)
 
 De _auteuractiviteiten worden onmiddellijk gesynchroniseerd wanneer de activiteit wordt gewijzigd. De directe synchronisatie laat de simulatie van activiteiten met de Context of ContextHub van de Cliënt toe.
 
-De publicatieactiviteiten worden gesynchroniseerd wanneer de activiteit wordt gepubliceerd naar de AEM-publicatie-instantie.
+Publish-activiteiten worden gesynchroniseerd wanneer de activiteit wordt gepubliceerd naar het AEM-publicatie-exemplaar.
 
 ## Synchronisatie van activiteiten voor probleemoplossing {#troubleshooting-activity-synchronization}
 
-Wanneer AEM een activiteit met Adobe Target synchroniseert, omvat AEM een bezit van de genoemde activiteit `thirdPartyId`. De waarde van deze eigenschap is gebaseerd op het pad van de activiteit in de AEM repository. Geen twee campagnes in Adobe Target kunnen de zelfde waarde voor `thirdPartyId` eigenschap. Daarom zal een activiteit er niet in slagen om te synchroniseren als een bestaande campagne (van een verschillend type AB, XT) in Adobe Target de zelfde waarde voor gebruikt `thirdPartyId`.
+Wanneer AEM een activiteit met Adobe Target synchroniseert, omvat AEM een bezit van de activiteit genoemd `thirdPartyId`. De waarde van deze eigenschap is gebaseerd op het pad van de activiteit in de AEM repository. Geen twee campagnes in Adobe Target kunnen dezelfde waarde hebben voor de eigenschap `thirdPartyId` . Daarom zal een activiteit er niet in slagen om te synchroniseren als een bestaande campagne (van een verschillend type AB, XT) in Adobe Target de zelfde waarde voor `thirdPartyId` gebruikt.
 
 Deze situatie kan zich voordoen in de volgende omstandigheden:
 
@@ -227,7 +227,7 @@ Gebruik altijd unieke namen voor activiteiten om synchronisatieproblemen te voor
 
 >[!NOTE]
 >
->Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId t`Op elke campagne. Wanneer u de campagne in Adobe Target verwijdert, `thirdPartyId` wordt niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. U kunt de campagnemenamen niet opnieuw gebruiken in verschillende typen campagnes.
+>Wanneer u een campagne in Adobe Target creeert, wijst het een bezit genoemd `thirdPartyId t` aan elke campagne toe. Wanneer u de campagne in Adobe Target verwijdert, wordt `thirdPartyId` niet verwijderd. U kunt `thirdPartyId` niet opnieuw gebruiken voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. U kunt de campagnemenamen niet opnieuw gebruiken in verschillende typen campagnes.
 >
 >Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
 >

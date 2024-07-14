@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
-* [Eerste stappen voor auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - een inleiding voor nieuwe auteurs
+* [ Eerste Stappen voor Auteurs ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - een inleiding voor nieuwe auteurs
 
 >[!NOTE]
 >
@@ -30,23 +30,23 @@ Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
 Om u te helpen bij het ontwerpen van pagina&#39;s, biedt de auteursomgeving functies zoals:
 
-* **Slepen en slepen**
+* **belemmering en daling**
 Componenten (zoals Tekst, Afbeelding) en digitale elementen (zoals afbeeldingen) kunnen eenvoudig op de pagina worden geplaatst door ze naar de gewenste locatie te slepen.
 
-* **Bewerken**
+* **het Uitgeven**
 Zodra gepositioneerd op de pagina, kan een componentspecifieke dialoog worden geopend om inhoud in te gaan en/of eigenschappen van die component (bijvoorbeeld, beeldgrootte) te vormen.
 
-* **Lokaal bewerken**
+* **Op plaats het Uitgeven**
 Componenten Tekst en Afbeelding kunnen rechtstreeks op de webpagina worden bewerkt zonder een dialoogvenster of een expliciete opslaghandeling te openen.
 
 * **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
 Een zwevend venster &quot;inspecteur&quot; dat wordt weergegeven op de bewerkbare pagina. Vanaf hier kunnen nieuwe componenten naar de pagina worden gesleept en kunnen paginaspecifieke handelingen worden uitgevoerd.
 
-* **[Inhoudzoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
+* **[de Vinder van de Inhoud](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
 Aan de linkerkant van elke pagina die kan worden geschreven, biedt de zoeker van inhoud snel toegang tot een reeks elementen, waaronder digitale elementen (zoals andere afbeeldingen, Flash-elementen en documenten), andere pagina&#39;s en alinea&#39;s. Deze items kunnen naar de pagina worden gesleept, bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
 
 * **Contextmenu**
 Als u met de rechtermuisknop op de meeste elementen op het scherm klikt (bijvoorbeeld alinea&#39;s op de pagina), wordt een contextmenu met de juiste actieopties weergegeven.
 
-* **Zoeken terwijl u typt**
+* **Onderzoek aangezien u** typt
 In bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die inhoud zoeken via de AEM interface, worden dynamische overeenkomsten weergegeven wanneer u de query typt.

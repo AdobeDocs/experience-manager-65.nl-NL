@@ -24,11 +24,11 @@ AEM Forms-werkruimte is SSO ingeschakeld. Als een gebruiker zich heeft aangemeld
 
 De onderbreking van de zitting voor een gebruiker kan in de Console van het Beleid worden gevormd.
 
-Meld u aan om de time-out in te stellen `https://'[server]:[port]'/adminui`, navigeer naar **Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren** en stelt de gewenste instellingen in.
+Om de onderbreking te plaatsen, login aan `https://'[server]:[port]'/adminui`, navigeer aan **Montages > Beheer van de Gebruiker > Configuratie > Vorm Geavanceerde Attributen van het Systeem**, en maak de gewenste montages.
 
 In de AEM Forms-werkruimte wordt de time-out verwerkt als:
 
-* De sessieduur voor een gebruiker is beschikbaar als reactie op `initialize` vraag die gebruikerszitting initialiseert.
+* De sessieduur voor een gebruiker is beschikbaar als reactie op een aanroep van `initialize` waarmee een gebruikerssessie wordt geïnitialiseerd.
 * Een pop-updialoogvenster geeft een melding aan de gebruiker dat de sessie bijna verlopen is, 15 seconden voor de sessievervaldatum.
 
 In dit pop-updialoogvenster:

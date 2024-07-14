@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # Interactieve PDF forms renderen {#rendering-interactive-pdf-forms}
 
-**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
+**de Steekproeven en de voorbeelden in dit document zijn slechts voor AEM Forms op milieu JEE.**
 
 De Forms-service rendert interactieve PDF forms naar clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. Nadat een interactief formulier is gegenereerd, kan een gebruiker gegevens invoeren in formuliervelden en op een verzendknop op het formulier klikken om informatie terug te sturen naar de Forms-service. Adobe Reader of Acrobat moet zijn geïnstalleerd op de computer die als host fungeert voor de webbrowser van de client om een interactief PDF-formulier zichtbaar te maken.
 
 >[!NOTE]
 >
->Voordat u een formulier kunt genereren met de Forms-service, moet u eerst een formulierontwerp maken. Doorgaans wordt een formulierontwerp gemaakt in Designer en opgeslagen als een XDP-bestand. Zie voor informatie over het maken van een formulierontwerp [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Voordat u een formulier kunt genereren met de Forms-service, moet u eerst een formulierontwerp maken. Doorgaans wordt een formulierontwerp gemaakt in Designer en opgeslagen als een XDP-bestand. Voor informatie over het creëren van een vormontwerp, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).
 
-**Voorbeeldleningaanvraag**
+**de lentetoepassing van de steekproef**
 
 Er wordt een voorbeeldtoepassing voor leningen geïntroduceerd om aan te tonen hoe de Forms-service interactieve formulieren gebruikt om informatie van gebruikers te verzamelen. Met deze toepassing kan een gebruiker een formulier invullen met gegevens die nodig zijn om een lening te beveiligen en vervolgens gegevens verzenden naar de Forms-service. In het volgende diagram wordt de logische stroom van de toepassing van de lening weergegeven.
 
-![ri_ri_finsrv_loanapp_v1](assets/ri_ri_finsrv_loanapp_v1.png)
+![ ri_ri_finsrv_loanapp_v1 ](assets/ri_ri_finsrv_loanapp_v1.png)
 
 In de volgende tabel worden de stappen in dit diagram beschreven.
 
@@ -45,42 +45,42 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>De <code>GetLoanForm</code> Java Servlet wordt aangeroepen vanaf een HTML-pagina. </p></td>
+   <td><p>De Java Server van <code>GetLoanForm</code> wordt aangehaald van een pagina van de HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>De <code>GetLoanForm</code> Java Servlet gebruikt de Forms Service Client API om het leningformulier te genereren naar de webbrowser van de client. (Zie <a href="#render-an-interactive-pdf-form-using-the-java-api">Een interactief PDF-formulier renderen met de Java API</a>.)</p></td>
+   <td><p>De <code>GetLoanForm</code> Java Server gebruikt de Forms Service Client API om het leningformulier te genereren naar de clientwebbrowser. (Zie <a href="#render-an-interactive-pdf-form-using-the-java-api"> een interactieve vorm van PDF teruggeven gebruikend Java API </a>.)</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>Nadat de gebruiker het leningsformulier heeft ingevuld en op de verzendknop klikt, worden gegevens verzonden naar de <code>HandleData</code> Java Servlet (Zie <i>"Leningen"</i>.)</p></td>
+   <td><p>Nadat de gebruiker het leningformulier heeft ingevuld en op de verzendknop klikt, worden gegevens verzonden naar de <code>HandleData</code> Java Server. (Zie <i> "Vorm van de Lening"</i>.)</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>De <code>HandleData</code> Java Servlet gebruikt de Forms Service Client API om de formulierverzending te verwerken en formuliergegevens op te halen. De gegevens worden dan opgeslagen in een ondernemingsgegevensbestand. (Zie <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">Verzendde Forms afhandelen</a>.)</p></td>
+   <td><p>De <code>HandleData</code> Java Server gebruikt de Forms Service Client API om de formulierverzending te verwerken en formuliergegevens op te halen. De gegevens worden dan opgeslagen in een ondernemingsgegevensbestand. (Zie <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms"> Behandelend Voorgelegde Forms </a>.)</p></td>
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>Een bevestigingsformulier wordt teruggestuurd naar de webbrowser. Gegevens zoals de voor- en achternaam van de gebruiker worden samengevoegd met het formulier voordat het wordt gegenereerd. (Zie <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Forms vooraf vullen met stroombare indelingen</a>.)</p></td>
+   <td><p>Een bevestigingsformulier wordt teruggestuurd naar de webbrowser. Gegevens zoals de voor- en achternaam van de gebruiker worden samengevoegd met het formulier voordat het wordt gegenereerd. (Zie <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md"> Prepopulating Forms met Stroombare Lay-outs </a>.)</p></td>
   </tr>
  </tbody>
 </table>
 
-**Lijnformulier**
+**vorm van de Lening**
 
-Dit interactieve leningformulier wordt gegenereerd door de voorbeeldleningaanvraag `GetLoanForm` Java Servlet
+Dit interactieve leningformulier wordt gegenereerd door de Java Servlet van de voorbeeldtoepassing. `GetLoanForm`
 
-![ri_ri_lanform](assets/ri_ri_loanform.png)
+![ ri_ri_loanform ](assets/ri_ri_loanform.png)
 
-**Bevestigingsformulier**
+**Bevestigingsvorm**
 
-Dit formulier wordt gegenereerd door de voorbeeldtoepassing van de leningaanvraag `HandleData` Java Servlet
+Dit formulier wordt gegenereerd door de Java Servlet van de voorbeeldtoepassing. `HandleData`
 
-![ri_ri_confirm](assets/ri_ri_confirm.png)
+![ ri_ri_confirm ](assets/ri_ri_confirm.png)
 
-De `HandleData` Java Servlet vult dit formulier vooraf in met de voor- en achternaam en de hoeveelheid van de gebruiker. Nadat het formulier vooraf is ingevuld, wordt het naar de webbrowser van de client verzonden. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+Met de Java Server `HandleData` wordt dit formulier vooraf ingevuld met de voor- en achternaam en de hoeveelheid van de gebruiker. Nadat het formulier vooraf is ingevuld, wordt het naar de webbrowser van de client verzonden. (Zie [ Prepopulating Forms met Stroombare Lay-outs ](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
-**Java Server**
+**Servlets Java**
 
 De voorbeeldtoepassing voor leningen is een voorbeeld van een Forms-servicetoepassing die als Java Servlet bestaat. Een Java Server is een Java-programma dat wordt uitgevoerd op een J2EE-toepassingsserver, zoals WebSphere, en bevat Forms Service Client API-code.
 
@@ -98,13 +98,13 @@ De volgende code toont de syntaxis van een Java-server met de naam GetLoanForm:
              }
 ```
 
-Normaal gesproken plaatst u geen Forms Service Client API-code in een Java Server `doGet` of `doPost` methode. Het is beter programmeren om deze code in een afzonderlijke klasse te plaatsen, de klasse vanuit de `doPost` of `doGet` methode) en roept de aangewezen methodes aan. Voor de beknoptheid van de code worden de codevoorbeelden in deze sectie echter tot een minimum beperkt en worden codevoorbeelden in de `doPost` methode.
+Normaal gesproken plaatst u de Forms Service Client API-code niet in een Java Server-methode `doGet` of `doPost` . Het is beter om deze code in een afzonderlijke klasse te plaatsen, de klasse vanuit de methode `doPost` (of methode `doGet` ) te instantiëren en de juiste methoden aan te roepen. Voor de beknoptheid van code worden de codevoorbeelden in deze sectie echter tot een minimum beperkt en worden codevoorbeelden in de methode `doPost` geplaatst.
 
 >[!NOTE]
 >
->Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
-**Overzicht van de stappen**
+**Samenvatting van stappen**
 
 Voer de volgende taken uit om een interactief PDF-formulier te genereren:
 
@@ -115,25 +115,25 @@ Voer de volgende taken uit om een interactief PDF-formulier te genereren:
 1. Een interactief PDF-formulier weergeven.
 1. Schrijf de gegevensstroom van het formulier naar de webbrowser van de client.
 
-**Projectbestanden opnemen**
+**omvat projectdossiers**
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, dient u de proxybestanden op te nemen.
 
-**Een Forms Client API-object maken**
+**creeer een voorwerp van Forms Cliënt API**
 
-Voordat u een Forms Service Client API-bewerking programmatisch kunt uitvoeren, moet u een Forms Client API-object maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient` object. Als u de Forms-webservice-API gebruikt, maakt u een `FormsService` object.
+Voordat u een Forms Service Client API-bewerking programmatisch kunt uitvoeren, moet u een Forms Client API-object maken. Maak een `FormsServiceClient` -object als u de Java API gebruikt. Maak een `FormsService` -object als u de Forms-API voor webservices gebruikt.
 
-**URI-waarden opgeven**
+**specificeer de waarden van URI**
 
-U kunt URI-waarden opgeven die de Forms-service nodig heeft om een formulier te genereren. Een formulierontwerp dat is opgeslagen als onderdeel van een Forms-toepassing, kan worden gebruikt door de URI-waarde van de inhoudsbasis te gebruiken `repository:///`. Neem bijvoorbeeld het volgende formulierontwerp met de naam *Lening.xdp* zich bevindt binnen een Forms-toepassing met de naam *FormsApplication*:
+U kunt URI-waarden opgeven die de Forms-service nodig heeft om een formulier te genereren. Naar een formulierontwerp dat is opgeslagen als onderdeel van een Forms-toepassing, kan worden verwezen met de URI-waarde van de inhoudsbasis `repository:///` . Bijvoorbeeld, overweeg het volgende vormontwerp genoemd *Loan.xdp* binnen een toepassing van Forms genoemd *FormsApplication* wordt gevestigd:
 
-![ri_ri_formrepository](assets/ri_ri_formrepository.png)
+![ ri_ri_formrepository ](assets/ri_ri_formrepository.png)
 
-Als u dit formulierontwerp wilt openen, geeft u `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` als de formuliernaam (de eerste parameter die aan de `renderPDFForm` methode) en `repository:///` als de URI-waarde van de inhoudsbasis.
+Als u toegang wilt tot dit formulierontwerp, geeft u `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` op als de formuliernaam (de eerste parameter die aan de methode `renderPDFForm` wordt doorgegeven) en `repository:///` als de URI-waarde van de inhoudsbasis.
 
 >[!NOTE]
 >
->Voor informatie over het maken van een Forms-toepassing met Workbench gaat u naar [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Voor informatie over het creëren van een toepassing van Forms die Workbench gebruikt, zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Het pad naar een bron in een Forms-toepassing is:
 
@@ -152,13 +152,13 @@ Wanneer u een interactief formulier genereert, kunt u URI-waarden definiëren, z
 
 Als de doel-URL is gedefinieerd in het formulierontwerp, mag u deze niet overschrijven met de Forms Service Client API. Met andere woorden, als u de doel-URL instelt met de Forms API, wordt de opgegeven URL in het formulierontwerp teruggezet naar de URL die is opgegeven met de API. Als u het PDF-formulier wilt verzenden naar de doel-URL die in het formulierontwerp is opgegeven, stelt u de doel-URL programmatisch in op een lege tekenreeks.
 
-Als u een formulier hebt dat een verzendknop en een berekeningsknop bevat (met een overeenkomstig script dat op de server wordt uitgevoerd), kunt u de URL programmatisch definiëren waarnaar het formulier wordt verzonden om het script uit te voeren. Met de knop Verzenden op het formulierontwerp geeft u de URL op waarnaar de formuliergegevens worden verzonden. (Zie [Formuliergegevens berekenen](/help/forms/developing/calculating-form-data.md).)
+Als u een formulier hebt dat een verzendknop en een berekeningsknop bevat (met een overeenkomstig script dat op de server wordt uitgevoerd), kunt u de URL programmatisch definiëren waarnaar het formulier wordt verzonden om het script uit te voeren. Met de knop Verzenden op het formulierontwerp geeft u de URL op waarnaar de formuliergegevens worden verzonden. (Zie [ Berekend de Gegevens van de Vorm ](/help/forms/developing/calculating-form-data.md).)
 
 >[!NOTE]
 >
->In plaats van een URL-waarde op te geven die naar een XDP-bestand verwijst, kunt u ook een `com.adobe.idp.Document` naar de Forms-service. De `com.adobe.idp.Document` -exemplaar bevat een formulierontwerp. (Zie [Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md).)
+>In plaats van een URL-waarde op te geven die naar een XDP-bestand verwijst, kunt u ook een `com.adobe.idp.Document` -instantie doorgeven aan de Forms-service. Het `com.adobe.idp.Document` -exemplaar bevat een formulierontwerp. (Zie [ het overgaan van Documenten tot de Dienst van Forms ](/help/forms/developing/passing-documents-forms-service.md).)
 
-**Bestanden aan het formulier koppelen**
+**maak dossiers aan de vorm** vast
 
 U kunt bestanden aan een formulier koppelen. Wanneer u een PDF-formulier met bestandsbijlagen genereert, kunnen gebruikers de bestandsbijlagen in Acrobat ophalen via het venster Bestandsbijlage. U kunt verschillende bestandstypen aan een formulier koppelen, zoals een tekstbestand, of aan een binair bestand, zoals een JPG-bestand.
 
@@ -166,13 +166,13 @@ U kunt bestanden aan een formulier koppelen. Wanneer u een PDF-formulier met bes
 >
 >Het koppelen van bestandsbijlagen aan een formulier is optioneel.
 
-**Een interactief PDF-formulier renderen**
+**geef een interactieve vorm van PDF** terug
 
-Als u een formulier wilt genereren, gebruikt u een formulierontwerp dat in Designer is gemaakt en als XDP- of PDF-bestand is opgeslagen. U kunt ook een formulier genereren dat is gemaakt met Acrobat en is opgeslagen als een PDF-bestand. Als u een interactief PDF-formulier wilt genereren, roept u de `FormsServiceClient` object `renderPDFForm` methode of `renderPDFForm2` methode.
+Als u een formulier wilt genereren, gebruikt u een formulierontwerp dat in Designer is gemaakt en als XDP- of PDF-bestand is opgeslagen. U kunt ook een formulier genereren dat is gemaakt met Acrobat en is opgeslagen als een PDF-bestand. Als u een interactief PDF-formulier wilt renderen, roept u de methode `renderPDFForm` of `renderPDFForm2` van het `FormsServiceClient` -object aan.
 
-De `renderPDFForm` gebruikt een `URLSpec` object. De inhoudsbasis wordt aan het XDP-bestand doorgegeven via de Forms-service `URLSpec` object `setContentRootURI` methode. De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameterwaarde. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen.
+In `renderPDFForm` wordt een `URLSpec` -object gebruikt. De hoofdmap van de inhoud wordt aan het XDP-bestand doorgegeven aan de Forms-service met de methode `setContentRootURI` van het object `URLSpec` . De naam van het formulierontwerp ( `formQuery` ) wordt doorgegeven als een afzonderlijke parameterwaarde. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen.
 
-De `renderPDFForm2` methode accepteert een `com.adobe.idp.Document` -instantie die het te renderen XDP- of PDF-document bevat.
+De methode `renderPDFForm2` accepteert een instantie `com.adobe.idp.Document` die het te renderen XDP- of PDF-document bevat.
 
 >[!NOTE]
 >
@@ -188,50 +188,50 @@ Een interactief PDF-formulier renderen met de Forms API (Java):
 
 1. Een Forms Client API-object maken
 
-   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat.
+   * Maak een `FormsServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
 1. URI-waarden opgeven
 
-   * Een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
-   * De `URLSpec` object `setApplicationWebRoot` en geeft een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-   * De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp zich in de URI van de inhoudsbasis bevindt. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de gegevensopslagruimte wilt verwijzen, geeft u `repository:///`.
-   * De `URLSpec` object `setTargetURL` en geeft een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
+   * Maak een `URLSpec` -object dat URI-waarden opslaat met behulp van de constructor.
+   * Roep de methode `setApplicationWebRoot` van het object `URLSpec` aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
+   * Roep de methode `setContentRootURI` van het `URLSpec` -object aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp zich in de URI van de inhoudsbasis bevindt. Als niet, werpt de dienst van Forms een uitzondering. Geef `repository:///` op om naar de gegevensopslagruimte te verwijzen.
+   * Roep de methode `setTargetURL` van het `URLSpec` -object aan en geef een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar de formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
 
 1. Bestanden aan het formulier koppelen
 
-   * Een `java.util.HashMap` -object om bestandsbijlagen op te slaan met behulp van de constructor.
-   * De `java.util.HashMap` object `put` voor elk bestand dat aan het gegenereerde formulier moet worden gekoppeld. Geef de volgende waarden door aan deze methode:
+   * Maak een `java.util.HashMap` -object om bestandsbijlagen op te slaan met behulp van de constructor.
+   * Roep de methode `put` van het object `java.util.HashMap` aan voor elk bestand dat aan het gegenereerde formulier moet worden gekoppeld. Geef de volgende waarden door aan deze methode:
 
       * Een tekenreekswaarde die de naam van de bestandsbijlage opgeeft, inclusief de bestandsnaamextensie.
 
-   * A `com.adobe.idp.Document` object dat de bestandsbijlage bevat.
+   * Een `com.adobe.idp.Document` -object dat de bestandsbijlage bevat.
 
    >[!NOTE]
    >
-   >Herhaal deze stap voor elk bestand dat u aan het formulier wilt koppelen. Deze stap is optioneel en u kunt `null` als u geen bestandsbijlagen wilt verzenden.
+   >Herhaal deze stap voor elk bestand dat u aan het formulier wilt koppelen. Deze stap is optioneel en u kunt `null` doorgeven als u geen bestandsbijlagen wilt verzenden.
 
 1. Een interactief PDF-formulier renderen
 
-   De `FormsServiceClient` object `renderPDFForm` en geeft de volgende waarden door:
+   Roep de methode `renderPDFForm` van het object `FormsServiceClient` aan en geef de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u een lege waarde door `com.adobe.idp.Document` object.
-   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` als u geen runtime opties wilt opgeven.
-   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
-   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` .
+   * Een `com.adobe.idp.Document` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Wanneer u geen gegevens wilt samenvoegen, geeft u een leeg `com.adobe.idp.Document` -object door.
+   * Een `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen runtime-opties wilt opgeven.
+   * Een `URLSpec` -object dat URI-waarden bevat die door de Forms-service worden vereist.
+   * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
 
-   De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
+   De methode `renderPDFForm` retourneert een `FormsResult` -object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object `getOutputContent` methode.
-   * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
-   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
-   * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
-   * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read` en de bytearray doorgeven als een argument.
-   * De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+   * Maak een `com.adobe.idp.Document` -object door de methode `FormsResult` object `getOutputContent` aan te roepen.
+   * Haal het inhoudstype van het object `com.adobe.idp.Document` op door de methode `getContentType` ervan aan te roepen.
+   * Stel het inhoudstype van het `javax.servlet.http.HttpServletResponse` -object in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het `com.adobe.idp.Document` -object door te geven.
+   * Maak een `javax.servlet.ServletOutputStream` -object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` object `getOutputStream` aan te roepen.
+   * Maak een `java.io.InputStream` -object door de methode `com.adobe.idp.Document` object `getInputStream` aan te roepen.
+   * Maak een bytearray en vul deze met de formuliergegevensstroom door de methode `read` van het object `InputStream` aan te roepen en de bytearray als een argument door te geven.
+   * Roep de methode `write` van het object `javax.servlet.ServletOutputStream` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write` .
 
 ## Een interactief PDF-formulier renderen met de webservice-API {#render-an-interactive-pdf-form-using-the-web-service-api}
 
@@ -244,23 +244,23 @@ Een interactief PDF-formulier renderen met de Forms API (webservice):
 
 1. Een Forms Client API-object maken
 
-   Een `FormsService` -object en stel verificatiewaarden in.
+   Maak een `FormsService` -object en stel de verificatiewaarden in.
 
 1. URI-waarden opgeven
 
-   * Een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
-   * De `URLSpec` object `setApplicationWebRoot` en geeft een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-   * De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp zich in de URI van de inhoudsbasis bevindt. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de gegevensopslagruimte wilt verwijzen, geeft u `repository:///`.
-   * De `URLSpec` object `setTargetURL` en geeft een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
+   * Maak een `URLSpec` -object dat URI-waarden opslaat met behulp van de constructor.
+   * Roep de methode `setApplicationWebRoot` van het object `URLSpec` aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
+   * Roep de methode `setContentRootURI` van het `URLSpec` -object aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp zich in de URI van de inhoudsbasis bevindt. Als niet, werpt de dienst van Forms een uitzondering. Geef `repository:///` op om naar de gegevensopslagruimte te verwijzen.
+   * Roep de methode `setTargetURL` van het `URLSpec` -object aan en geef een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar de formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
 
 1. Bestanden aan het formulier koppelen
 
-   * Een `java.util.HashMap` -object om bestandsbijlagen op te slaan met behulp van de constructor.
-   * De `java.util.HashMap` object `put` voor elk bestand dat aan het gegenereerde formulier moet worden gekoppeld. Geef de volgende waarden door aan deze methode:
+   * Maak een `java.util.HashMap` -object om bestandsbijlagen op te slaan met behulp van de constructor.
+   * Roep de methode `put` van het object `java.util.HashMap` aan voor elk bestand dat aan het gegenereerde formulier moet worden gekoppeld. Geef de volgende waarden door aan deze methode:
 
       * Een tekenreekswaarde die de naam van de bestandsbijlage opgeeft, inclusief de bestandsextensie
 
-   * A `BLOB` object dat de bestandsbijlage bevat
+   * Een `BLOB` -object dat de bestandsbijlage bevat
 
    >[!NOTE]
    >
@@ -268,30 +268,30 @@ Een interactief PDF-formulier renderen met de Forms API (webservice):
 
 1. Een interactief PDF-formulier renderen
 
-   De `FormsService` object `renderPDFForm` en geeft de volgende waarden door:
+   Roep de methode `renderPDFForm` van het object `FormsService` aan en geef de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null`.
-   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` als u geen runtime opties wilt opgeven.
-   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
-   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
-   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF formulier op.
-   * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.)
-   * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking zal bevatten.
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` .
+   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen.
+   * Een `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen runtime-opties wilt opgeven.
+   * Een `URLSpec` -object dat URI-waarden bevat die door de Forms-service worden vereist.
+   * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` -object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF formulier op.
+   * Een leeg `javax.xml.rpc.holders.LongHolder` -object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.)
+   * Een leeg `javax.xml.rpc.holders.StringHolder` -object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
 
-   De `renderPDFForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
+   Met de methode `renderPDFForm` wordt het `com.adobe.idp.services.holders.FormsResultHolder` -object dat als laatste argumentwaarde wordt doorgegeven, gevuld met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
-   * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
-   * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
-   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
-   * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
-   * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+   * Maak een `FormResult` -object door de waarde van het gegevenslid van het `com.adobe.idp.services.holders.FormsResultHolder` object `value` op te halen.
+   * Maak een `BLOB` -object dat formuliergegevens bevat door de methode `FormsResult` object `getOutputContent` aan te roepen.
+   * Haal het inhoudstype van het object `BLOB` op door de methode `getContentType` ervan aan te roepen.
+   * Stel het inhoudstype van het `javax.servlet.http.HttpServletResponse` -object in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het `BLOB` -object door te geven.
+   * Maak een `javax.servlet.ServletOutputStream` -object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` object `getOutputStream` aan te roepen.
+   * Maak een bytearray en vul deze door de methode `getBinaryData` van het object `BLOB` aan te roepen. Hierdoor wordt de inhoud van het `FormsResult` -object toegewezen aan de bytearray.
+   * Roep de methode `write` van het object `javax.servlet.http.HttpServletResponse` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write` .
 
-**De formuliergegevensstroom naar de webbrowser van de client schrijven**
+**schrijf de stroom van vormgegevens aan cliëntWeb browser**
 
 Wanneer de Forms-service een formulier genereert, wordt een formuliergegevensstroom geretourneerd die u naar de webbrowser van de client moet schrijven. Wanneer het formulier naar de webbrowser van de client wordt geschreven, is het zichtbaar voor de gebruiker.

@@ -31,12 +31,12 @@ ht-degree: 0%
   <tr>
    <td><p>Eigenschap: cq:cugEnabled</p> <p>Type knooppunt declareren: N.v.t., resteigenschap</p> </td>
    <td><p>Autorisatie:</p> <p>Node: rep:cugPolicy of node type rep:CugPolicy</p> <p>Type knooppunt declareren: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Verificatie:</p> <p>Mixintype: graniet:AuthenticationRequired</p> </td>
-   <td><p>Om leestoegang te beperken, wordt een specifiek beleid van de CUG toegepast op de doelknoop.</p> <p>NOTA: Het beleid kan slechts op de gevormde gesteunde wegen worden toegepast.</p> <p>Nodes met name rep:cugPolicy en type rep:CugPolicy zijn beschermd en kunnen niet worden geschreven gebruikend regelmatige vraag JCR API; gebruik in plaats daarvan het beheer van de toegangscontrole JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">deze pagina</a> voor meer informatie.</p> <p>Om authentificatievereiste op een knoop af te dwingen, is het voldoende om mixintype granite toe te voegen:AuthenticationRequired.</p> <p>NOTA: Slechts gerespecteerd onder de gevormde gesteunde wegen.</p> </td>
+   <td><p>Om leestoegang te beperken, wordt een specifiek beleid van de CUG toegepast op de doelknoop.</p> <p>NOTA: Het beleid kan slechts op de gevormde gesteunde wegen worden toegepast.</p> <p>Nodes met name rep:cugPolicy en type rep:CugPolicy zijn beschermd en kunnen niet worden geschreven gebruikend regelmatige vraag JCR API; gebruik in plaats daarvan het beheer van de toegangscontrole JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html"> deze pagina </a> voor meer info.</p> <p>Om authentificatievereiste op een knoop af te dwingen, is het voldoende om mixintype granite toe te voegen:AuthenticationRequired.</p> <p>NOTA: Slechts gerespecteerd onder de gevormde gesteunde wegen.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschap: cq:cugPrincipals</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
    <td><p>Eigenschap: rep:principalNames</p> <p>Type knooppunt declareren: rep:CugPolicy</p> </td>
-   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van reguliere JCR API-aanroepen. Gebruik in plaats daarvan het JCR-toegangsbeheer.</p> <p>Zie <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">deze pagina</a> voor meer informatie over de uitvoering.</p> </td>
+   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van reguliere JCR API-aanroepen. Gebruik in plaats daarvan het JCR-toegangsbeheer.</p> <p>Zie <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html"> deze pagina </a> voor meer details over de implementatie.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschap: cq:cugLoginPage</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
@@ -53,21 +53,21 @@ ht-degree: 0%
 
 ## Vergelijking van OSGi Services {#comparison-of-osgi-services}
 
-**Oudere AEM**
+**Oudere AEM Versies**
 
 Label: ondersteuning voor gesloten gebruikersgroep (CUG) bij Adobe Granite
 
 Naam: com.day.cq.auth.impl.CugSupportImpl
 
-**AEM 6,5**
+**AEM 6.5**
 
-* Label: Apache Jackrabbit Oak CUG Configuration
+* Label: Apache Jackrabbit Oak CUG-configuratie
 
   Naam: org.apache.jackrabbit.oak.spi.security.authentication.cug.impl.CugConfiguration
 
   ConfigurationPolicy = REQUIRED
 
-* Label: Apache Jackrabbit Oak CUG Exclusive List
+* Label: Uitsluitingslijst Apache Jackrabbit Oak CUG
 
   Naam: org.apache.jackrabbit.oak.spi.security.authentication.cug.impl.CugExcludeImpl
 
@@ -80,14 +80,14 @@ Naam: com.day.cq.auth.impl.CugSupportImpl
 
   ConfigurationPolicy = REQUIRED
 
-**Opmerkingen**
+**Commentaren**
 
 * Configuratie van de CUG-autorisatie en inschakelen/uitschakelen van de evaluatie.
 Dienst om uitsluitingslijsten van principes te configureren die niet door de CUG-autorisatie moeten worden beïnvloed.
 
   >[!NOTE]
   > 
-  >Als de `CugExcludeImpl` is niet geconfigureerd, `CugConfiguration` wordt de standaardwaarde hersteld.
+  >Als `CugExcludeImpl` niet wordt gevormd, valt `CugConfiguration` terug naar het gebrek.
 
   Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten als er speciale behoeften zijn.
 

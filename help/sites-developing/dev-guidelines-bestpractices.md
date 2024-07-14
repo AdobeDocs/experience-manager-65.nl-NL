@@ -51,11 +51,11 @@ De volgende algemene regels voor ontwikkelaars zijn zinvol voor de meest gebruik
 
 Wanneer u uw eigen componenten maakt of een bestaande component aanpast, is het vaak het eenvoudigst (en veiligst) om bestaande definities opnieuw te gebruiken. Dezelfde beginselen gelden ook voor andere elementen binnen AEM, bijvoorbeeld de fouthandler.
 
-Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie uit `/libs` tot `/apps/<your-project>`. Deze nieuwe definitie, in `/apps`, kan worden bijgewerkt naar wens.
+Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie van `/libs` naar `/apps/<your-project>` . Deze nieuwe definitie, in `/apps`, kan volgens uw vereisten worden bijgewerkt.
 
 >[!NOTE]
 >
->Zie [Bedekkingen gebruiken](/help/sites-developing/overlays.md) voor meer informatie .
+>Zie [ Gebruikend Bedekkingen ](/help/sites-developing/overlays.md) voor meer details.
 
 Bijvoorbeeld:
 
@@ -63,7 +63,7 @@ Bijvoorbeeld:
 
   Hiervoor moest een componentdefinitie worden bedekt:
 
-   * Een componentmap maken in `/apps/<website-name>/components/<MyComponent>` door een bestaande component te kopiëren:
+   * Maak een componentmap in `/apps/<website-name>/components/<MyComponent>` door een bestaande component te kopiëren:
 
       * Bijvoorbeeld om het de componentenexemplaar van de Tekst aan te passen:
 
@@ -81,14 +81,14 @@ Bijvoorbeeld:
 
 >[!CAUTION]
 >
->**Niet gebruiken** om het even wat in `/libs` pad.
+>**** verander niets in de `/libs` weg.
 >
->De reden is dat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >Voor configuratie en andere wijzigingen:
 >
->1. het item kopiëren in `/libs` tot `/apps`
->1. wijzigingen aanbrengen in `/apps`
+>1. het item kopiëren in `/libs` naar `/apps`
+>1. om het even welke veranderingen aanbrengen binnen `/apps`
 
 ## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt? {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
@@ -109,14 +109,14 @@ Gebruik voor het renderen van inhoud navigatie-toegang tot de inhoudsstructuur i
 
 >[!NOTE]
 >
->Als u het [Query Builder](/help/sites-developing/querybuilder-api.md)U kunt ook JCR-query&#39;s gebruiken terwijl de Query Builder JCR-query&#39;s onder de kap genereert.
+>Als u de [ Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) gebruikt, gebruikt u JCR Vragen, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
 >
 
 ## Beveiligingsoverwegingen {#security-considerations}
 
 >[!NOTE]
 >
->Het is ook de moeite waard te verwijzen naar de [beveiligingscontrolelijst](/help/sites-administering/security-checklist.md).
+>Het is ook nuttig om naar [ veiligheidscontrolelijst ](/help/sites-administering/security-checklist.md) te verwijzen.
 
 ### JCR-sessies (Repository) {#jcr-repository-sessions}
 
@@ -132,7 +132,7 @@ Met XSS (Cross-site scripting) kunnen aanvallers code injecteren in webpagina&#3
 
 AEM past het beginsel toe van het filtreren van alle gebruiker-geleverde inhoud op output. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
 
-Ook een webtoepassingsfirewall, zoals [mod_security voor Apache](https://modsecurity.org), kan betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
+Ook, kan een firewall van de Webtoepassing, zoals [ mod_security voor Apache ](https://modsecurity.org), betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
 
 >[!CAUTION]
 >
@@ -159,10 +159,10 @@ Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configura
 
 Foutpagina&#39;s kunnen voor AEM worden aangepast. Dit is aan te raden, zodat de instantie geen bewegingssporen weergeeft bij interne serverfouten.
 
-Zie [Foutpagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md) voor volledige informatie.
+Zie [ Aanpassen van de Pagina&#39;s van de Fout die door de Handler van de Fout ](/help/sites-developing/customizing-errorhandler-pages.md) voor volledige details worden getoond.
 
 ### Bestanden openen in het Java™-proces {#open-files-in-the-java-process}
 
-Omdat AEM toegang kan krijgen tot veel bestanden, wordt aanbevolen het aantal [bestanden openen voor een Java™-proces](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk worden gevormd voor AEM.
+Omdat AEM tot vele dossiers kan toegang hebben, wordt het geadviseerd dat het aantal [ open dossiers voor een proces Java™ ](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk voor AEM worden gevormd.
 
 Om dit probleem tot een minimum te beperken, moet bij de ontwikkeling ervoor worden gezorgd dat geopende bestanden correct worden gesloten wanneer dat (zinvol) mogelijk is.

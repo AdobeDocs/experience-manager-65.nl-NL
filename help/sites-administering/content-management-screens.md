@@ -1,6 +1,6 @@
 ---
-title: Inhoudsbeheer voor schermen
-description: Leer meer over de basisbeginselen van Inhoudsbeheer voor schermen.
+title: Inhoudsbeheer voor Screens
+description: Meer informatie over de basisbeginselen van Content Management voor Screens.
 contentOwner: Jyotika Syal
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Inhoudsbeheer voor schermen{#content-management-for-screens}
+# Inhoudsbeheer voor Screens{#content-management-for-screens}
 
-A ***Inhoudsbeheer*** voor AEM Screens is een creatieve professional die nauw samenwerkt met marketing en de campagne, het publiek en de gewenste focus kent. De inhoudsbeheerder is verantwoordelijk voor het maken en ordenen van ervaringen voor eindgebruikers door verschillende kanalen te ontwikkelen en reeksen toe te wijzen aan een getimede kanaalervaring.
+A ***de Manager van de Inhoud*** voor AEM Screens is een creatieve beroeps die nauw met marketing werkt en de campagne, het publiek, en de gewenste nadruk kent. De inhoudsbeheerder is verantwoordelijk voor het maken en ordenen van ervaringen voor eindgebruikers door verschillende kanalen te ontwikkelen en reeksen toe te wijzen aan een getimede kanaalervaring.
 
-Inhoudsbeheer voor schermontwerplocaties en -schema&#39;s, kanaalintegriteit handhaven, analyses en rapporten uitvoeren en videoprofielen onderhouden.
+Content Manager voor Screens-ontwerplocaties en -planningen, kanaalintegriteit handhaven, analyses en rapporten uitvoeren en videoprofielen onderhouden.
 
 Een AEM Screens-inhoudsbeheerder is verantwoordelijk voor de volgende taken:
 

@@ -21,26 +21,26 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
-De **Mobiele metrische tegel** in het opdrachtcentrum hebt u toegang tot realtime analyses voor uw mobiele toepassing.
+De **Mobiele Tegel van Metriek** op het bevelcentrum verstrekt analyses in real time voor uw mobiele toepassing.
 
-De [Mobiele Adobe-analyse](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK wordt beschikbaar gesteld via een PhoneGap-plug-in. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Op dat moment worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
+De [ Mobiele Analytics van de Adobe ](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK wordt ter beschikking gesteld door een elektrisch toestel PhoneGap. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Op dat moment worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
 
 Adobe Mobile Analytics SDK biedt het volgende:
 
-1. **Gegevensverzameling voor mobiele kanalen** - Verzamel uitgebreide gegevens voor uw mobiele websites en toepassingen op alle grote besturingssystemen.
-1. **Analyse van mobiele betrokkenheid** - Begrijp de betrokkenheid van gebruikers binnen uw mobiele app, website of video, inclusief hoe vaak consumenten het kanaal starten, of ze er aankopen van maken en meer.
-1. **Mobiele toepassingsdashboards en -rapporten** - Gebruik gebruiksrapporten die levenscyclusmetriek voor uw apps en de gegevens van de App store bevatten — zie trends voor gebruikers, lanceringen, gemiddelde zittingslengte, retentielengte, en neerstortingen.
-1. **Mobiele campagneanalyse** - De doeltreffendheid van specifieke campagnes voor mobiele apparaten, zoals SMS, mobiele zoekadvertenties, advertenties voor mobiele schermen en QR-codes, kwantificeren.
-1. **Geolocatieanalyse** - Zoek waar uw gebruikers van de app uw mobiele beleving kunnen starten en interactief kunnen gebruiken op basis van de GPS-locatie of -punten.
-1. **Padeanalyse** - Bekijk hoe gebruikers door uw app navigeren om te bepalen welke schermen en UI-elementen gebruikers aantrekken en welke ertoe leiden dat gebruikers wegvallen.
+1. **inzameling van Gegevens voor mobiele kanalen** - verzamel uitvoerige gegevens voor uw mobiele websites en apps op alle belangrijke werkende systemen.
+1. **Mobiele betrokkenheidsanalyse** - Begrijp gebruikersbetrokkenheid binnen uw mobiele app, website, of video, met inbegrip van hoe vaak de consumenten het kanaal lanceren, of zij kopen van het, en meer.
+1. **Mobiele app dashboards en rapporten** - krijg gebruiksrapporten die levenscyclusmetriek voor uw apps en de metriek van de toepassingsopslag omvatten — zie tendensen voor gebruikers, lanceringen, gemiddelde zittingslengte, behoudlengte, en neerstortingen.
+1. **Mobiele campagneanalyse** - kwantificeer de doeltreffendheid van mobiele-specifieke campagnes zoals SMS, mobiele onderzoeksadvertenties, mobiele vertoningsadvertenties, en QR codes.
+1. **Geolocatieanalyse** - vind waar uw toepassingsgebruikers lanceren en met uw mobiele ervaringen door GPS plaats of punten van belang interactie aangaan.
+1. **de analyse van het Schilderen** - zie hoe de gebruikers door uw app navigeren om te bepalen welke schermen en elementen UI gebruikers in dienst nemen en die gebruikers veroorzaken om weg te vallen.
 
 >[!CAUTION]
 >
->De **Metrische gegevens analyseren** De tegelweergave wordt alleen weergegeven in het dashboard als u de cloudservices hebt geconfigureerd.
+>De **Analyseer de vertoningen van Metriek** Tile in het dashboard, slechts als u de wolkendiensten hebt gevormd.
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![ chlimage_1-22 ](assets/chlimage_1-22.png)
 
 Metrische tegel AEM Command Center
 
@@ -48,32 +48,32 @@ Metrische tegel AEM Command Center
 
 Als u gebruik wilt maken van de Adobe Mobile Services Analytics, moet u de AEM Mobile Analytics Cloud Service configureren met uw Adobe Analytics-accountgegevens.
 
-1. Klik op het pictogram aan de rechterbovenzijde om de Cloud Servicen toe te voegen of te bewerken vanuit het menu **Cloud Servicen beheren** element uit het dashboard van de app.
+1. Klik op het hoogste rechterzijpictogram om de Cloud Servicen van **toe te voegen of uit te geven beheert Cloud Servicen** tegel van app dashboard.
 
-   ![chlimage_1-23](assets/chlimage_1-23.png)
+   ![ chlimage_1-23 ](assets/chlimage_1-23.png)
 
-1. De **Cloud Servicen toevoegen of bewerken** schermweergaven. Selecteren **Adobe mobiele services** en klik op **Volgende**.
+1. **voeg of geef Cloud Servicen** het schermvertoningen toe uit. Selecteer **de Mobiele Diensten van de Adobe Mobiele** en klik **daarna**.
 
-   ![chlimage_1-24](assets/chlimage_1-24.png)
+   ![ chlimage_1-24 ](assets/chlimage_1-24.png)
 
-1. Kies een bestaande configuratie in het menu **Mobiele services** of kies **Configuratie maken** om er een te maken.
+1. Kies een bestaande configuratie van de **Mobiele Diensten** of kies **creeer Configuratie** om te creëren.
 
-   Voor nieuwe configuratie voert u de **Eigenschappen van mobiele services** en klik op **Verifiëren.**
+   Voor nieuwe configuratie, ga de **Mobiele Eigenschappen van de Diensten** in en klik **verifieer.**
 
-   ![chlimage_1-25](assets/chlimage_1-25.png)
+   ![ chlimage_1-25 ](assets/chlimage_1-25.png)
 
-   Als de referenties zijn geverifieerd, worden de **Verifiëren** knop verandert in **Geverifieerd**. U kunt een mobiele service-app kiezen vanuit **Selecteer een Mobile App Service**.
+   Als de geloofsbrieven worden geverifieerd, verifieert **** knoopveranderingen in **Geverifieerd**. U kunt een mobiele dienst selecteren app van **een Mobiele Dienst van de App**.
 
-   Klikken **Verzenden** voor het instellen van uw configuratie.
+   Klik **voorleggen** voor vestiging uw configuratie.
 
-   ![chlimage_1-26](assets/chlimage_1-26.png)
+   ![ chlimage_1-26 ](assets/chlimage_1-26.png)
 
 1. Als u een cloudconfiguratie hebt ingesteld, kunt u deze ook in het dashboard weergeven.
 
-   ![chlimage_1-27](assets/chlimage_1-27.png)
+   ![ chlimage_1-27 ](assets/chlimage_1-27.png)
 
    >[!NOTE]
    >
-   >Nadat u de cloudconfiguratie hebt ingesteld, kunt u de **Metrische gegevens analyseren** Tegel in het dashboard van de app.
+   >Zodra u opstelling uw wolkenconfiguratie, kunt u **Analyseer Metriek** Tegel in uw app dashboard bekijken.
 
-   ![chlimage_1-28](assets/chlimage_1-28.png)
+   ![ chlimage_1-28 ](assets/chlimage_1-28.png)

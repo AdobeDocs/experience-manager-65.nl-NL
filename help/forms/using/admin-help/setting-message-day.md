@@ -18,30 +18,30 @@ ht-degree: 0%
 
 # Het bericht van de dag instellen {#setting-the-message-of-the-day}
 
-U kunt een bericht instellen dat op de welkomstpagina in de gebruikersinterface van Workspace moet worden weergegeven.
+U kunt een bericht instellen dat op de welkomstpagina in de Workspace-gebruikersinterface moet worden weergegeven.
 
 Indien nodig kunt u de HTML-tags gebruiken die worden ondersteund door Adobe Flash® Player om de weergave van de tekst op te maken:
 
-* &lt;a> Tag voor anker
+* &lt;a> Ankertag
 * &lt;b> Vet label
 * &lt;br> Tag voor einde
-* &lt;font> Font-tag
-* &lt;img> Tag voor afbeelding
+* Fonttag
+* &lt;img> Afbeeldingstag
 * &lt;i> Cursieve tag
 * &lt;li> Tag voor lijstitem
-* &lt;p> Tag voor alinea
-* &lt;span> Tag voor bereik
-* &lt;textformat> Tag voor tekstopmaak
-* &lt;u> Tag Onderstrepen
+* &lt;p> Alinealabel
+* &lt;span>-tag span
+* &lt;textformat> Tags voor tekstindeling
+* &lt;u> Tag onderstrepen
 
-Zie de definitie van de `htmlText` eigenschap voor de klasse TextField in de [Flex Language Reference](https://flex.apache.org/).
+Voor meer informatie over de gesteunde markeringen, zie de definitie van het `htmlText` bezit voor de klasse TextField in de [ Verwijzing van de Taal van Flex ](https://flex.apache.org/).
 
 ## Bericht van de dag instellen {#set-the-message-of-the-day}
 
-1. Klik in de beheerconsole op Services > Werkruimte > Bericht van de dag.
+1. Klik in de beheerconsole op Services > Workspace > Bericht van de dag.
 1. Geef in het vak Bericht van de dag de tekst op die in het welkomstscherm moet worden weergegeven.
 1. Klik op Opslaan.
 
 >[!NOTE]
 >
->De Flex Workspace is verouderd voor AEM formulierrelease.
+>De Flex Workspace is afgekeurd voor de release AEM formulieren.

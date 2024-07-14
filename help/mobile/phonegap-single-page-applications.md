@@ -20,13 +20,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
 
-[Toepassingen met één pagina](https://en.wikipedia.org/wiki/Single-page_application) (SPA) een kritische massa hebben bereikt, die algemeen wordt beschouwd als het meest effectieve patroon voor het opbouwen van naadloze ervaringen met webtechnologie. Door een SPA te volgen kunt u een toepassing maken die dezelfde prestaties levert als een bureaubladtoepassing of mobiele toepassing, maar die een groot aantal apparaatplatforms en formulierfactoren bereikt vanwege de basis in open webstandaarden.
+[ Toepassingen van één pagina ](https://en.wikipedia.org/wiki/Single-page_application) (SPA) hebben kritieke massa bereikt, wijd beschouwd als het meest efficiënte patroon voor de bouw van naadloze ervaringen met Webtechnologie. Door een SPA te volgen kunt u een toepassing maken die dezelfde prestaties levert als een bureaubladtoepassing of mobiele toepassing, maar die een groot aantal apparaatplatforms en formulierfactoren bereikt vanwege de basis in open webstandaarden.
 
-In het algemeen, SPA lijken krachtiger dan traditionele op pagina&#39;s gebaseerde websites omdat zij typisch een volledige pagina van de HTML laden **slechts één keer** (met inbegrip van CSS, JS, en het steunen doopvontinhoud), en laad dan slechts precies wat noodzakelijk is telkens als een verandering van staat in app voorkomt. Wat nodig is voor deze verandering van staat kan variëren gebaseerd op de gekozen reeks technologieën, maar omvat typisch één enkel fragment van HTML om de bestaande &quot;mening&quot;te vervangen, en de uitvoering van een blok van code JS om de nieuwe mening omhoog te telegraferen en om het even welke cliënt-zijmalplaatje uit te voeren die noodzakelijk kan zijn. De snelheid van deze statuswijziging kan zelfs nog verder worden verbeterd door mechanismen voor het in cache plaatsen van sjablonen te ondersteunen, of zelfs offline toegang tot sjablooninhoud als Adobe PhoneGap wordt gebruikt.
+Over het algemeen, SPA lijken krachtiger dan traditionele op pagina-gebaseerde websites omdat zij typisch een volledige pagina van de HTML **slechts eenmaal** (met inbegrip van CSS, JS, en het steunen doopvontinhoud) laden, en dan slechts precies laden wat noodzakelijk is telkens als een verandering van staat in app voorkomt. Wat nodig is voor deze verandering van staat kan variëren gebaseerd op de gekozen reeks technologieën, maar omvat typisch één enkel fragment van HTML om de bestaande &quot;mening&quot;te vervangen, en de uitvoering van een blok van code JS om de nieuwe mening omhoog te telegraferen en om het even welke cliënt-zijmalplaatje uit te voeren die noodzakelijk kan zijn. De snelheid van deze statuswijziging kan zelfs nog verder worden verbeterd door mechanismen voor het in cache plaatsen van sjablonen te ondersteunen, of zelfs offline toegang tot sjablooninhoud als Adobe PhoneGap wordt gebruikt.
 
-AEM 6.1 ondersteunt de bouw en het beheer van SPA via AEM Apps. Dit artikel biedt een inleiding op de concepten achter de SPA en hoe deze worden gebruikt [AngularJS](https://angularjs.org/) om uw merk naar de App Store en Google Play te brengen.
+AEM 6.1 ondersteunt de bouw en het beheer van SPA via AEM Apps. Dit artikel verstrekt een inleiding aan de concepten achter de SPA en hoe zij [ AngularJS ](https://angularjs.org/) gebruiken om uw merk aan App Store en Google Play te brengen.
 
 ## SPA in AEM apps {#spa-in-aem-apps}
 
@@ -38,7 +38,7 @@ AEM Apps behandelt veel van de configuratie AngularJS voor u, met inbegrip van h
 
 Een deel van de initialisatie van uw app bestaat uit het opgeven van welke AngularJS-modules de toepassing afhankelijk is. De lijst met modules die door uw app worden gebruikt, is opgegeven door een script op /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp en kan worden bedekt door de paginacomponent van uw eigen apps om extra AngularJS-modules in te schakelen die uw app nodig heeft. Als voorbeeld, vergelijk het bovengenoemde manuscript met de implementatie van de Geometrixx (die in /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp wordt gevestigd).
 
-Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het angular-app-module manuscript door alle afstammende pagina&#39;s van uw top-level app pagina om een reeks &quot;routes&quot;te produceren en elke weg op de dienst van $routeProvider van Angular te vormen. Bekijk voor een voorbeeld van hoe dit er in de praktijk uitziet, het angular-app-module-script dat is gegenereerd door het voorbeeld van de Geometrixx Outdoors-app: (koppeling vereist een lokale instantie) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het angular-app-module manuscript door alle afstammende pagina&#39;s van uw top-level app pagina om een reeks &quot;routes&quot;te produceren en elke weg op de dienst van $routeProvider van Angular te vormen. Voor een voorbeeld van hoe dit in praktijk kijkt, bekijk het angular-app-module manuscript door de Geometrixx Outdoors wordt geproduceerd app steekproef: (de verbinding vereist een lokale instantie) [ http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js ](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Door in te schrijven naar de gegenereerde AEMAngularApp, ziet u een reeks routes die als volgt worden opgegeven:
 
@@ -56,9 +56,9 @@ Het malplaatje te laden wanneer deze route wordt gevraagd wordt gespecificeerd d
 
 ## Paginacontrollers {#page-controllers}
 
-In de eigen woorden van Angular, &quot;is een Controlemechanisme een JavaScript aannemersfunctie die wordt gebruikt om het Toepassingsgebied van de Angular te verhogen.&quot; ([bron](https://docs.angularjs.org/guide/controller)) Elke pagina in een AEM wordt automatisch getelegrafeerd tot een controlemechanisme dat door om het even welke controlemechanisme kan worden uitgebreid die een specificeert `frameworkType` van `angular`. Bekijk de ng-text component als voorbeeld (/libs/mobileapps/components/angular/ng-text), met inbegrip van de cq:template knoop die ervoor zorgt telkens als deze component aan een pagina wordt toegevoegd het dit belangrijke bezit omvat.
+In de eigen woorden van Angulars, &quot;is een Controlemechanisme een de aannemersfunctie van JavaScript die wordt gebruikt om het Toepassingsgebied van de Angular te verhogen.&quot; ([ bron ](https://docs.angularjs.org/guide/controller)) Elke pagina in een AEM App wordt automatisch getelegrafeerd tot een controlemechanisme dat door om het even welk controlemechanisme kan worden uitgebreid dat a `frameworkType` van `angular` specificeert. Bekijk de ng-text component als voorbeeld (/libs/mobileapps/components/angular/ng-text), met inbegrip van de cq:template knoop die ervoor zorgt telkens als deze component aan een pagina wordt toegevoegd het dit belangrijke bezit omvat.
 
-Voor een complexer controllervoorbeeld opent u het script ng-template-page controller.jsp (op /apps/geometrixx-outdoor-app/components/angular/ng-template-page). Vooral de JavaScript-code die wordt gegenereerd wanneer deze wordt uitgevoerd, wordt als volgt gerenderd:
+Voor een complexer controllervoorbeeld opent u het script ng-template-page controller.jsp (op /apps/geometrixx-outdoor-app/components/angular/ng-template-page). Van bijzonder belang is de JavaScript-code die wordt gegenereerd wanneer deze wordt uitgevoerd, die als volgt wordt weergegeven:
 
 ```xml
 // Controller for page 'products'
@@ -81,10 +81,10 @@ Voor een complexer controllervoorbeeld opent u het script ng-template-page contr
 ])
 ```
 
-In het bovenstaande voorbeeld wordt de parameter van de `$routeParams` de service wordt uitgevoerd en vervolgens wordt gemaskeerd in de mappenstructuur waarin de JSON-gegevens zijn opgeslagen. Door de SKU te behandelen `id` op deze manier, kunt u één enkel malplaatje van het Product leveren dat de productgegevens voor potentieel duizenden verschillende producten kan teruggeven. Dit is een veel scalable model dat een individuele route voor elk punt in (potentieel) massaal productgegevensbestand vereist.
+In het bovenstaande voorbeeld wordt de parameter van de `$routeParams` -service genomen en vervolgens in de mappenstructuur gemasseerd waarin de JSON-gegevens zijn opgeslagen. Door SKU `id` op deze manier te behandelen, kunt u één enkel malplaatje van het Product leveren dat de productgegevens voor potentieel duizenden verschillende producten kan teruggeven. Dit is een veel scalable model dat een individuele route voor elk punt in (potentieel) massaal productgegevensbestand vereist.
 
-Er zijn hier ook twee componenten aan het werk: ng-product vergroot het toepassingsgebied met de gegevens die het uit het bovenstaande haalt `$http` vraag. Deze pagina bevat ook een ng-afbeelding die het bereik vergroot met de waarde die het ophaalt uit het antwoord. Op grond van de Angular `$http` de dienst, wacht elke component geduld tot het verzoek wordt gebeëindigd en de belofte het werd gecreeerd wordt voldaan.
+Er zijn hier ook twee componenten aan het werk: ng-product vergroot het werkingsgebied met de gegevens het uit bovengenoemde `$http` vraag haalt. Deze pagina bevat ook een ng-afbeelding die het bereik vergroot met de waarde die het ophaalt uit het antwoord. Dankzij de `$http` -service van de Angular wacht elke component geduldig tot het verzoek is afgehandeld en de gemaakte belofte is nagekomen.
 
 ## De volgende stappen {#the-next-steps}
 
-Als u meer hebt geleerd over de toepassingen voor één pagina, raadpleegt u [Apps ontwikkelen met PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md).
+Zodra u over de Enige Toepassingen van de Pagina hebt geleerd, zie [ Ontwikkelend Toepassingen met CLI PhoneGap ](/help/mobile/phonegap-apps-pg-cli.md).

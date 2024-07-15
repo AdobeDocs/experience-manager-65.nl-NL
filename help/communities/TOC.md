@@ -134,7 +134,7 @@ ht-degree: 6%
    + [Grondbeginselen van Community-componenten](basics.md)
    + [ Eigenschap van de Streams van de Activiteit ](activities.md)
    + [Blogonderdeel](blog-feature.md)
-   + ](calendar.md) de Eigenschap van 0} Kalender[
+   + [de Eigenschap van 0 Kalender](calendar.md)
    + [Opmerkingen gebruiken](comments.md)
    + [Functie voor aanbevolen inhoud](featured.md)
    + [Functie bestandsbibliotheek](file-library.md)

@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '5686'
 ht-degree: 0%
 
 ---
@@ -331,74 +331,9 @@ Door gebrek, voor een uit-van-de-doos AEM instantie, lopen de gezondheidscontrol
 
 U kunt de **Periode** met de [ configuratie vormen OSGi ](/help/sites-deploying/configuring-osgi.md) **Configuratie van de Controle van de Gezondheid van de Vraag** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
-## Toezicht met Nagios {#monitoring-with-nagios}
+## Controle met externe services {#monitoring-with-external-services}
 
-Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. In het onderstaande voorbeeld ziet u hoe u een controle toevoegt die gebruikt geheugen op de server waarop AEM wordt uitgevoerd.
-
-1. Stel Nagios in op de monitoringserver en installeer deze.
-1. Installeer vervolgens de Nagios Remote Plugin Exec (NRPE).
-
-   >[!NOTE]
-   >
-   >Voor meer informatie over hoe te om Nagios en NRPE op uw systeem te installeren, raadpleeg de [ Documentatie Nagios ](https://library.nagios.com/library/products/nagios-core/manuals//).
-
-1. Voeg een hostdefinitie voor de AEM server toe. U kunt deze taak door middel van de Interface van het Web Nagios XI, door de Manager van de Configuratie te gebruiken verwezenlijken:
-
-   1. Open een browser en wijs naar de Nagios-server.
-   1. Druk **vormen** knoop in het hoogste menu.
-   1. In de linkerruit, druk de **Manager Config van de Kern** onder **Geavanceerde Configuratie**.
-   1. Druk de **verbinding van Gastheren** onder de **Controle** sectie.
-   1. Voeg de hostdefinitie toe:
-
-   ![ chlimage_1-118 ](assets/chlimage_1-118.png)
-
-   Hieronder ziet u een voorbeeld van een hostconfiguratiebestand voor het geval u Nagios Core gebruikt:
-
-   ```xml
-   define host {
-      address 192.168.0.5
-      max_check_attempts 3
-      check_period 24x7
-      check-command check-host-alive
-      contacts admin
-      notification_interval 60
-      notification_period 24x7
-   }
-   ```
-
-1. Installeer Nagios en NRPE op de AEM server.
-1. Installeer de [ check_http_json ](https://github.com/phrawzty/check_http_json) insteekmodule op beide servers.
-1. Definieer een algemene JSON-controleopdracht op beide servers:
-
-   ```xml
-   define command{
-   
-       command_name    check_http_json-int
-   
-       command_line    /usr/lib/nagios/plugins/check_http_json --user "$ARG1$" --pass "$ARG2$" -u 'https://$HOSTNAME$:$ARG3$/$ARG4$' -e '$ARG5$' -w '$ARG6$' -c '$ARG7$'
-   
-   }
-   ```
-
-1. Voeg een dienst voor gebruikt geheugen op de AEM server toe:
-
-   ```xml
-   define service {
-   
-       use generic-service
-   
-       host_name my.remote.host
-   
-       service_description AEM Author Used Memory
-   
-       check_command  check_http_json-int!<cq-user>!<cq-password>!<cq-port>!system/sling/monitoring/mbeans/java/lang/Memory.infinity.json!{noname}.mbean:attributes.HeapMemoryUsage.mbean:attributes.used.mbean:value!<warn-threshold-in-bytes>!<critical-threshold-in-bytes>
-   
-       }
-   ```
-
-1. Controleer het dashboard Nagios op de nieuwe service:
-
-   ![ chlimage_1-119 ](assets/chlimage_1-119.png)
+Integratie is mogelijk met externe technologieën of leveranciers. Raadpleeg de documentatie bij de klant voor meer informatie.
 
 ## Diagnosetools {#diagnosis-tools}
 

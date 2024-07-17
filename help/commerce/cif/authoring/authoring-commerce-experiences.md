@@ -5,9 +5,9 @@ exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -72,9 +72,9 @@ CIF productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden we
 
 ![ RTE ](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[!NOTA] 
-    > 
-    >Als zowel de categorie als het product wordt geselecteerd, zal het product worden genomen.
+>[!NOTE]
+>
+>Als zowel de categorie als het product wordt geselecteerd, wordt het product gebruikt.
 
 Hierdoor wordt een koppeling voor plaatsaanduidingen gemaakt die wordt vervangen door een echte koppeling wanneer de pagina wordt weergegeven.
 
@@ -102,6 +102,6 @@ Het gebruik van Omnissearch is een gemakkelijke manier voor artsen om AEM inhoud
 
 Het resultaat wordt gegroepeerd op type.
 
-    >[!NOTE] 
-    > 
-    >Het full-text onderzoek in Onderzoek steunt geen bijbehorende Fragments van de Inhoud. SKU of UID van het gebruik om bijbehorende Fragments van de Inhoud te vinden.
+>[!NOTE]
+>
+>Bij zoeken in volledige tekst in Omnsearch worden geen bijbehorende inhoudsfragmenten ondersteund. Gebruik SKU of UID om bijbehorende inhoudsfragmenten te zoeken.

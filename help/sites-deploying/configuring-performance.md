@@ -9,7 +9,7 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >Voor meer informatie over het oplossen van problemen en het bevestigen van prestatieskwesties, zie ook de [ boom van Prestaties ](/help/sites-deploying/performance-tree.md).
 >
->Ook, kunt u een artikel van de Kennisbank op [ Prestaties herzien richtend Tips ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>Ook, kunt u een artikel van de Kennisbank op [ Prestaties herzien richtend Tips ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
 Een belangrijk probleem is de tijd die uw website nodig heeft om te reageren op bezoekersverzoeken. Hoewel deze waarde voor elke aanvraag varieert, kan een gemiddelde doelwaarde worden bepaald. Zodra deze waarde zowel haalbaar als houdbaar is, kan deze worden gebruikt om de prestaties van de website te controleren en de ontwikkeling van potentiële problemen aan te geven.
 
@@ -41,7 +41,7 @@ Deze omgeving bevat inhoud die u beschikbaar maakt voor uw gebruikers. Hier is h
 >[!NOTE]
 >
 >* Na het vormen voor prestatiesoptimalisering, volg de procedures in [ Dag van de Stevige ](/help/sites-developing/tough-day.md) om het milieu onder zware lading te testen.
->* Zie ook [ het stemmen van Prestaties uiteinden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>* Zie ook [ het stemmen van Prestaties uiteinden.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Methode voor optimalisatie van prestaties {#performance-optimization-methodology}
 

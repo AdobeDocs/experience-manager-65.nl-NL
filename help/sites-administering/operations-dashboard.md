@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
+source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
 workflow-type: tm+mt
-source-wordcount: '5686'
+source-wordcount: '5744'
 ht-degree: 0%
 
 ---
@@ -492,6 +492,8 @@ De volgende taken zijn beschikbaar in het Dashboard van Verrichtingen:
 1. De **taak van de Inzameling van de Opslag van Gegevens**, die onder het **wordt gevestigd Wekelijks het menu van het Venster van het Onderhoud**.
 1. De **taak van het Logonderhoud van de Controle**, die onder het **wordt gevestigd Wekelijks het menu van het Venster van het Onderhoud**.
 1. De **taak van het Onderhoud van de Woordenbelasting van de Versie**, die onder het **wordt gevestigd Wekelijks het menu van het Venster van het Onderhoud**.
+1. De **onderhoudstaak van de Waring van het Project**, die onder het **Wekelijks menu van het Venster van het Onderhoud** wordt gevestigd; het gebruiken van **voegt** optie toe.
+1. De **Woorden van ad hoc taken** onderhoudstaak, die onder het **Wekelijks menu van het Venster van het Onderhoud** wordt gevestigd; het gebruiken van **voegt** optie toe.
 
 De standaardtiming voor het dagelijkse onderhoudsvenster is 2:00 A.M. door 5:00 A.M. De taken die worden geconfigureerd om te worden uitgevoerd in het wekelijkse onderhoudsvenster, lopen op zaterdag tussen 1:00 A.M. en 2:00 A.M.
 
@@ -562,6 +564,26 @@ U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies
 >[!CAUTION]
 >
 >Om de grootte van de opslagplaats te optimaliseren die u zou moeten uitvoeren regelmatig de taak van de versiezuivering. De taak zou buiten kantooruren moeten worden gepland wanneer er een beperkte hoeveelheid verkeer is.
+
+### Project wissen {#project-purge}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`. See the Maintenance Window table below for additional configuration details.
+
+Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
+-->
+
+Vorm de eigenschappen OSGI onder **de Configuratie van de Weigering van de Projecten van de Adobe** (com.adobe.cq.projects.purge.Scheduler).
+
+### Opruiming van ad-hoctaken {#purge-of-ad-hoc-tasks}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`.
+
+See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it `granite_TaskPurgeTask`, with attribute `sling:resourceType` set to `granite/operations/components/maintenance/task` and attribute `granite.maintenance.name` set to `TaskPurge`. 
+-->
+
+Vorm de eigenschappen OSGI onder **Ad-hoc Taak zuiveren** (`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`).
 
 ## Aangepaste onderhoudstaken {#custom-maintenance-tasks}
 

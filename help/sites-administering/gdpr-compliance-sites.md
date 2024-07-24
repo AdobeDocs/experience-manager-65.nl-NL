@@ -9,9 +9,9 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -66,9 +66,9 @@ Door gebrek, wordt dit bezoeker-gegeven niet opgeslagen in AEM; AEM verzendt reg
 
 >[!NOTE]
 >
->Voorafgaand aan Adobe CQ 5.6, verzond de ClientContext (een vroegere versie van ContextHub) de gegevens naar de server, maar bewaarde hen niet.
+>Voorafgaand aan Adobe AEM (CQ) 5.6, verzond de ClientContext (een vroegere versie van ContextHub) de gegevens aan de server, maar bewaarde hen niet.
 >
->Adobe CQ 5.5 en eerder zijn nu EOL en worden niet door deze documentatie gedekt.
+>Adobe AEM 6.4 en eerdere versies zijn nu EOL en worden niet door deze documentatie gedekt. Zie [ Oudere versies van Adobe Experience Manager, CQ, en de documentatie van CRX ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Opt-in/Opt-out implementeren {#implementing-opt-in-opt-out}
 
@@ -85,19 +85,19 @@ Deze richtlijnen voeren opt-in als gebrek uit. Daarom moet een websitebezoeker h
 
 * Als een plaatsbezoeker de voorwaarden van de plaats goedkeurt, zou het opt-outkoekje ContextHub moeten worden verwijderd:
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   ```
 
 * Als een plaatsbezoeker niet de voorwaarden van de plaats goedkeurt, zou het opt-out van ContextHub koekje moeten worden geplaatst:
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
   ```
 
 * Om te controleren of ContextHub op opt-out wijze loopt, zou de volgende vraag in de browser console moeten worden gemaakt:
 
-  ```
+  ```java
   var isOptedOut = ContextHub.isOptedOut(true) === true;
   // if isOptedOut is true, ContextHub is running in opt-out mode
   ```
@@ -183,7 +183,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
 Als u bijvoorbeeld gegevens wilt weergeven die zijn opgeslagen in localStorage:
 
-```
+```java
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
 console.log(storage.getTree());
 ```
@@ -194,7 +194,7 @@ Om de persistentie te ontruimen ContextHub:
 
 * Om persistentie van momenteel geladen opslag te ontruimen:
 
-  ```
+  ```java
   // to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
@@ -207,7 +207,7 @@ Om de persistentie te ontruimen ContextHub:
 
 * Om een specifieke persistentielaag te ontruimen, bijvoorbeeld, sessionStorage:
 
-  ```
+  ```java
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
   storage.setItem('/store', null);
   storage.setItem('/_', null);

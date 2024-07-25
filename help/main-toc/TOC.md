@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
+source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
 workflow-type: tm+mt
-source-wordcount: '7456'
+source-wordcount: '7445'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ ht-degree: 1%
          + [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
          + [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md)
       + Paginaprestaties {#page-performance}
-         + [Inzicht van 0 Inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html) Inzicht van 0} Inhoud[
          + [Paginaprestaties analyseren](/help/sites-authoring/ci-analyze.md)
          + [Gegevens van paginaanalyse bekijken](/help/sites-authoring/pa-using.md)
       + Personalisatie {#personalization}
@@ -258,7 +258,7 @@ ht-degree: 1%
          + [Integreren met Livefyre](/help/sites-administering/livefyre.md)
       + Best practices voor {#bestpractices}
          + [Aanbevolen procedures](/help/sites-administering/administer-best-practices.md)
-         + [Beste praktijken van de Vertaling 0](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html) Beste praktijken van de Vertaling 0}[
          + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
          + [ Behandelend GDPR- Verzoeken om de AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
@@ -809,7 +809,7 @@ ht-degree: 1%
       + [Correspondentie maken](/help/forms/using/create-correspondence.md)
       + [Externe functies in Expression Builder](/help/forms/using/expression-builder.md)
       + [Afbeeldingen van handtekeningen van agent beheren](/help/forms/using/manage-agent-signature-images.md)
-      + [Post-verwerking van brieven en interactieve communicatie](/help/forms/using/submit-letter-topostprocess.md)
+      + [Nabewerking van brieven en interactieve communicatie](/help/forms/using/submit-letter-topostprocess.md)
       + [Aangepaste actie toevoegen aan de weergave Lijst met activa](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [Aangepaste actie/knop toevoegen in interface voor correspondentie maken](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [Aangepaste eigenschappen toevoegen aan Correspondentenbeheerelementen](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -1260,9 +1260,6 @@ ht-degree: 1%
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Ontwikkelen (algemeen)](/help/commerce/cif-classic/developing/generic.md)
          + [Ontwikkeling met SAP-Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Aan de slag met Edge Delivery](/help/edge/overview.md)
-   + [Edge Delivery gebruiken](/help/edge/using.md)
 + Koploos {#headless}
    + [AEM Headless Journeys](/help/journey-headless/overview.md)
    + AEM Headless Developer Journey {#developer}
@@ -1381,7 +1378,7 @@ ht-degree: 1%
          + Reizen zonder kop {#journeys}
             + Headless Developer Journey {#developer}
                + [ Begrijp Hoofdloos in AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
-               + [ Leer over CMS Hoofdloze Ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html)
+               + [ Leer over de Hoofdloze Ontwikkeling van CMS ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html)
                + [ Begonnen het worden met AEM as a Cloud Service Hoofdletters ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html)
                + [ Weg aan uw eerste ervaring gebruikend AEM Zwaartepunt ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html)
                + [ hoe te om uw inhoud als AEM Modellen van de Inhoud te modelleren ](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
@@ -1603,7 +1600,7 @@ ht-degree: 1%
          + [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
          + [CRX2Oak-migratiehulpprogramma gebruiken](/help/sites-deploying/using-crx2oak.md)
          + [Onderhoudstaken vóór upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Post-upgradecontroles en probleemoplossing](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Controles en probleemoplossing na upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Aangepast zoeken in Forms bijwerken](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Duurzame verbeteringen](/help/sites-deploying/sustainable-upgrades.md)
          + [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md)

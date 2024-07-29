@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
+source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7443'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ ht-degree: 1%
          + [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
          + [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md)
       + Paginaprestaties {#page-performance}
-         + [Inzicht van 0 Inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html) Inzicht van 0} Inhoud[
          + [Paginaprestaties analyseren](/help/sites-authoring/ci-analyze.md)
          + [Gegevens van paginaanalyse bekijken](/help/sites-authoring/pa-using.md)
       + Personalisatie {#personalization}
@@ -230,6 +230,7 @@ ht-degree: 1%
          + [Video bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
          + [HTTP2 Veelgestelde vragen over inhoud](/help/sites-administering/scene7-http2faq.md)
          + [Problemen met Adobe Campaign-integratie oplossen](/help/sites-administering/troubleshooting-campaignintegration.md)
+         + [SharePoint Connector](/help/sites-administering/sharepoint-connector.md)
          + [SharePoint-connectorlicenties, copyrightberichten en Disclaimers](/help/sites-administering/sharepoint-connector-licenses.md)
          + [Veelgestelde vragen over einde levensduur van DHTML Viewer](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [Integreren met Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
@@ -258,7 +259,7 @@ ht-degree: 1%
          + [Integreren met Livefyre](/help/sites-administering/livefyre.md)
       + Best practices voor {#bestpractices}
          + [Aanbevolen procedures](/help/sites-administering/administer-best-practices.md)
-         + [Beste praktijken van de Vertaling 0](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html) Beste praktijken van de Vertaling 0}[
          + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
          + [ Behandelend GDPR- Verzoeken om de AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
@@ -268,7 +269,6 @@ ht-degree: 1%
          + [Tags beheren](/help/sites-administering/tags.md)
          + [De pagina-exportfunctie](/help/sites-administering/page-exporter.md)
          + [Klassieke UI-tagconsole](/help/sites-administering/classic-console.md)
-         + [Inhoudsbeheer voor Screens](/help/sites-administering/content-management-screens.md)
          + [WebDAV-toegang](/help/sites-administering/webdav-access.md)
    + Klassieke UI-authoring {#classic-ui}
       + Inleiding tot Klassieke UI-authoring {#introduction}

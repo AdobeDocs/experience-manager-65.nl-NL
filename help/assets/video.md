@@ -11,7 +11,7 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11043'
 ht-degree: 1%
@@ -840,6 +840,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
    | Een aparte map maken voor elk element | Maak een map voor elk bijschriftbestand of audiotrackbestand dat u hebt geselecteerd om te downloaden. |
    | E-mail | Gebruik uw standaard e-mailprogramma om het .zip-bestand naar een opgegeven e-mailadres te verzenden. |
    | Assets | Hiermee geeft u het aantal bestanden op dat u downloadt en de gecombineerde totale grootte van alle geselecteerde bestanden. Als u deze optie uitschakelt, wordt de knop **[!UICONTROL Download]** gedimd (uitgeschakeld), zodat u geen bestand kunt downloaden. |
+
 1. Selecteer **[!UICONTROL Download]** .
 1. Publish the video. Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
 
@@ -1171,7 +1172,7 @@ Het volgende is een voorbeeld van bovengenoemde API gebruikend servlets die in *
 
 >[!BEGINTABS]
 
->[!TAB voegt gebiedsdeel in pom.xml toe]
+>[!TAB  voegt gebiedsdeel in pom.xml ] toe
 
 +++**voegt gebiedsdeel in pom.xml** toe
 

@@ -6,7 +6,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11687'
 ht-degree: 0%
@@ -93,7 +94,7 @@ In LiveCycle Designer is deze optie standaard ingeschakeld.
 
 ## Kies de juiste besturingselementen {#choose-right-controls}
 
-Wanneer u uw formulieren ontwerpt, gebruikt u ontwikkelingsobjecten op de tabbladen die beschikbaar zijn in de Objectbibliotheek van LiveCycle Designer. U kunt dit deelvenster weergeven door Venster > Objectbibliotheek te kiezen of op Shift+F12 te drukken (zie Figuur 1).
+Wanneer u uw formulieren ontwerpt, gebruikt u ontwikkelingsobjecten op de tabbladen die beschikbaar zijn in de LiveCycle Designer Object Library. U kunt dit deelvenster weergeven door Venster > Objectbibliotheek te kiezen of op Shift+F12 te drukken (zie Figuur 1).
 
 ![ het Comité van de Bibliotheek van Objecten ](/help/forms/using/assets/image-1.png)
 
@@ -154,7 +155,9 @@ Het label of bijschrift van een formulierbesturingselement geeft aan wat het for
 
 Het label dat door gebruikers van schermlezers wordt waargenomen, hoeft niet noodzakelijkerwijs hetzelfde te zijn als het visuele bijschrift. In sommige gevallen wilt u wellicht specifieker zijn over het doel van het besturingselement.
 Voor elk veldobject in een formulier kunt u met het palet Toegankelijkheid (zie Figuur 3) opgeven wat de schermlezer zal aankondigen om het specifieke formulierveld te identificeren.
+
 Voer de volgende stappen uit om het palet Toegankelijkheid te gebruiken:
+
 1. Geef het palet Toegankelijkheid weer door Venster > Toegankelijkheid te kiezen of door op Shift+F6 te drukken.
 1. Selecteer een object in het formulier. In het palet worden de toegankelijkheidseigenschappen van het object weergegeven.
 
@@ -185,9 +188,9 @@ Houd rekening met het volgende wanneer u het palet Toegankelijkheid gebruikt voo
 * Als u een beschrijving moet maken met de opties Knopinfo of Aangepaste Reader tekst, neemt u altijd het bijschrift op dat zichtbaar is op het formulier, behalve wanneer het zichtbare bijschrift geen betekenis heeft, bijvoorbeeld wanneer het bijschrift zelf wordt afgekort. Hierdoor kunnen gebruikers van schermlezers effectief communiceren met andere gebruikers over interface-elementen. Deze verschillende groepen gebruikers kunnen moeilijk hetzelfde interface-element identificeren als de bijschrifttekst afwijkt van de tekst voor Knopinfo of Aangepast scherm Reader.
 * Voor selectievakjes en besturingselementen voor vervolgkeuzelijsten in tabelcellen kondigt de schermlezer een bijschrift, knopinfo of aangepaste schermlezertekst aan die u voor het object opgeeft. Als u de kolomkop voor de alternatieve tekst voor deze objecten wilt gebruiken wanneer u deze in een tabel plaatst, moet u geen bijschrift, knopinfo of aangepaste schermlezertekst opgeven.
 * Als het besturingselement aanvullende instructies vereist, moet u ervoor zorgen dat deze ook in het tekstalternatief worden opgenomen. Neem voldoende gesproken informatie op voor gebruikers om te weten welke invoer wordt verwacht en hoe het veld correct moet worden ingevuld, maar vervaag gebruikers niet met overbodige informatie.
-* Verstrek niet onnodige informatie die beschrijft hoe te om controles in werking te stellen - laat de hulptechnologieën van de gebruiker dit voor de gebruiker behandelen. Gebruikers kunnen de uitgebreide configuratie aanpassen aan hun comfortniveau.
+* Verstrek onnodige informatie beschrijvend hoe te om controles in werking te stellen - laat de ondersteunende technologieën van de gebruiker dit voor de gebruiker behandelen. Gebruikers kunnen de uitgebreide configuratie aanpassen aan hun comfortniveau.
 
-Figuur 4 toont een voorbeeld van een tekstgebied met een visuele titel die voor sommige gebruikers van het schermlezer onduidelijk kan zijn. In dit voorbeeld is Aangepast scherm Readers Tekst ingesteld op Aantal pagina&#39;s en is de voorkeur voor Reader scherm ingesteld op Aangepaste tekst. Hierdoor wordt de werkelijke (visuele) bijschrifttekst (&quot;# pagina&#39;s&quot;) niet gebruikt door de schermlezer. U kunt ook een knopinfo opgeven.
+Figuur 4 toont een voorbeeld van een tekstgebied met een visuele titel die voor sommige gebruikers van het schermlezer onduidelijk kan zijn. In dit voorbeeld is Aangepast scherm Readers Tekst ingesteld op Aantal pagina&#39;s en is de voorkeur voor Readers scherm ingesteld op Aangepaste tekst. Hierdoor wordt de werkelijke (visuele) bijschrifttekst (&quot;# pagina&#39;s&quot;) niet gebruikt door de schermlezer. U kunt ook een knopinfo opgeven.
 
 ![ specificerend de Tekst van de Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is ](/help/forms/using/assets/image-4.png)
 
@@ -661,7 +664,7 @@ In het kader van het formulierontwerpproces kunnen formulierontwikkelaars script
 Houd bij het ontwerpen van scripts voor toegankelijkheid rekening met de volgende algemene richtlijnen:
 
 * Houd de formulierinhoud vrij van visuele onderbrekingen. Vermijd bijvoorbeeld functies die ervoor zorgen dat inhoud gaat flikkeren, knipperen of verplaatsen.
-* Zorg ervoor dat pop-upvensters alleen worden weergegeven als gevolg van handelingen die door de gebruiker zijn gestart. Op dezelfde manier mag u de huidige focus van het formulier (de huidige weergave van de gebruiker) niet wijzigen of de inhoud opnieuw weergeven, tenzij dit wordt geïnitieerd door de gebruiker. Als de gebruiker bijvoorbeeld velden invult in de onderste helft van het formulier, mag de focus niet veranderen naar de linkerbovenhoek van het formulier, tenzij de gebruiker naar deze locatie navigeert.
+* Zorg ervoor dat pop-upvensters alleen worden weergegeven als gevolg van handelingen die door de gebruiker zijn gestart. Op dezelfde manier mag u de huidige focus van het formulier (de huidige weergave van de gebruiker) niet wijzigen of de inhoud opnieuw weergeven, tenzij de gebruiker dit heeft geïnitieerd. Als de gebruiker bijvoorbeeld velden invult in de onderste helft van het formulier, mag de focus niet veranderen naar de linkerbovenhoek van het formulier, tenzij de gebruiker naar deze locatie navigeert.
 * Gehandicapte gebruikers hebben mogelijk meer tijd nodig om invoer in velden te kunnen leveren. Geef geen op tijd gebaseerde reacties op voor invoervelden.
 * Scripts op de client kunnen problemen opleveren met schermlezers en toetsenborden als het script de focus van de clienttoepassing wijzigt. De gebeurtenissen change en mouseEnter kunnen bijvoorbeeld bij vervolgkeuzelijsten of keuzelijsten onverwachte acties veroorzaken. Controleer of uw clientscripts geen problemen opleveren voor schermlezers en gebruikers met alleen het toetsenbord.
 * Gebruikers van ondersteunende hulpmiddelen hebben soms extra tijd nodig om taken uit te voeren. In elk geval waar een getimede routine op het punt staat te verlopen, toon een toegankelijk bericht om voor een uitbreiding toe te staan. Dringende vakken die via JavaScript zijn gemaakt, zijn bruikbaar voor ondersteunende hulpmiddelen. Een nieuw venster met een bericht alarmerend de gebruiker van een dreigende tijd uit kan ook worden opgesteld.

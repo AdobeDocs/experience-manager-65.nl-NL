@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
      <li>Wanneer een adaptief formulier van een Adobe Experience Manager Publish-exemplaar naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet worden opgeslagen in de workflow.  (FORMS-14209) </li>
      <li> Bij het installeren van AEM 6.5 Forms Service Pack 20-pakket (AEM Forms add-on pakket voor SP20), vertoont de AEM Sites-gebruikersinterface (UI) een aanzienlijke verslechtering van de prestaties.  (FORMS-13791) </li>
      <li>De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)</li>
+     <li>Configuraties die gebruikmaken van de oudere cloudservice voor Adobe Analytics met gebruikersverificatie op basis van referenties functioneren niet correct, waardoor de regels voor de analyse niet worden uitgevoerd. (FORMS-15428)
     </ul>
     </td>    
   </tr>

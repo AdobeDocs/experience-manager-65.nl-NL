@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
 workflow-type: tm+mt
-source-wordcount: '4309'
+source-wordcount: '4367'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 Hier volgt een lijst met verbeteringen die zijn opgenomen in deze release:
 
-* Het IPTC-tabblad ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended Description] -tekstvelden. (ASSETS-34918)
+* Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended Description] -tekstvelden. (ASSETS-34918)
 
 #### Oplossingen voor toegankelijkheid
 
@@ -550,6 +550,8 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
    1. Navigeer naar de map `/libs/fd/aemforms/install/` in CRXDE.
    1. Verwijder de bundel met de naam `com.adobe.granite.ui.commons-5.10.26.jar` .
    1. Start de AEM server opnieuw.
+
+* Wanneer een gebruiker AEM Forms Service Pack 20 (6.5.20.0) bijwerkt die met de Forms Add-On wordt geïnstalleerd, werken configuraties die de oude cloudservice voor Adobe Analytics gebruiken met gebruikersreferentie-verificatie niet correct, waardoor de regels voor de analyse niet worden uitgevoerd. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-15428)
 
 * Wanneer een gebruiker aan AEM Forms Service Pack 20 (6.5.20.0) op de server JEE bijwerkt en PDF gebruikend outputdiensten produceert, geven de PDF met toegankelijkheidskwesties terug. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3922112)
 * Wanneer een gebruiker Gelabelde PDF gebruikend de outputdienst op JEE produceert, toont het &quot;Onjuiste structuurwaarschuwing&quot;. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2038)

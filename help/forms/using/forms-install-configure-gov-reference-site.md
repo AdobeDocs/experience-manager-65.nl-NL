@@ -312,15 +312,15 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
    >[!NOTE]
    >
-   Na het testen van de diensten, annuleert de klik **** om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
+   >Na het testen van de diensten, annuleert de klik **** om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
 
    >[!NOTE]
    >
-   Er is gemeld dat een AEM Server opnieuw moet worden gestart voordat de Data Source een verbinding met FDM tot stand kan brengen.
+   >Er is gemeld dat een AEM Server opnieuw moet worden gestart voordat de Data Source een verbinding met FDM tot stand kan brengen.
 
    >[!NOTE]
    >
-   Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+   >Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 #### Het Forms-gegevensmodel testen (Derby) {#test-fdm-derby}
 
@@ -425,7 +425,7 @@ Beheerders kunnen gebruikers AEM analysebevoegdheden verlenen door de volgende h
 
 >[!NOTE]
 >
-AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
+>AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
 
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Selecteer de &quot;AEM Forms We.Gov-site&quot; om de sitepagina&#39;s weer te geven.
@@ -454,7 +454,7 @@ AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-config
 
 >[!NOTE]
 >
-AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
+>AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics Cloud-configuratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` -pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
 
 1. Navigeren naar
 
@@ -501,7 +501,7 @@ Manager linksboven > Gereedschappen > Beveiliging > Adobe IMS-configuratie.
 
 >[!NOTE]
 >
-Het certificaat dat in deze sectie wordt gemaakt, wordt gebruikt om de integratieservice in Adobe I/O te maken. Zodra de gebruikers in de integratieservice hebben gecreeerd kunnen de gebruikers die informatie van Adobe I/O gebruiken om de configuratie te beëindigen.
+>Het certificaat dat in deze sectie wordt gemaakt, wordt gebruikt om de integratieservice in Adobe I/O te maken. Zodra de gebruikers in de integratieservice hebben gecreeerd kunnen de gebruikers die informatie van Adobe I/O gebruiken om de configuratie te beëindigen.
 
 #### Integratie in Adobe I/O maken {#create-integration-adobeio}
 
@@ -800,7 +800,7 @@ Om hen te vormen om binnen het Werkschema worden toegelaten, moeten de gebruiker
 
    >[!NOTE]
    >
-   Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist aan opstelling een de dienstconfiguratie om met de externe gevraagde diensten te communiceren.
+   >Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist aan opstelling een de dienstconfiguratie om met de externe gevraagde diensten te communiceren.
 
    ![ wij gaan vormenpakket ](assets/aftia-configuration-options.jpg)
 

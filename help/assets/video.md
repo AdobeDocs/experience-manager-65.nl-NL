@@ -1172,7 +1172,7 @@ Het volgende is een voorbeeld van bovengenoemde API gebruikend servlets die in *
 
 >[!BEGINTABS]
 
->[!TAB  voegt gebiedsdeel in pom.xml ] toe
+>[!TAB  voegt gebiedsdeel in pom.xml toe]
 
 +++**voegt gebiedsdeel in pom.xml** toe
 

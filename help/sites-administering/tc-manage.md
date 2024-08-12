@@ -5,9 +5,9 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
 workflow-type: tm+mt
-source-wordcount: '3506'
+source-wordcount: '3519'
 ht-degree: 0%
 
 ---
@@ -188,9 +188,13 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
    ![ chlimage_1-251 ](assets/chlimage_1-251.png)
 
-1. Selecteer het woordenboek dat u wilt toevoegen, en klik dan toevoegen knoop.
+1. Selecteer de **Folder van de Wortel**, en woordenboek (indien nodig), die u wilt toevoegen, en dan selecteren **** toevoegen.
 
-   ![ chlimage_1-252 ](assets/chlimage_1-252.png)
+   ![ i18N Woordenboek ](assets/tc-manage-i18n-dictionary.png)
+
+1. Selecteer desgevraagd de aard van de update:
+
+   ![ vertaal ](assets/tc-manage-translate.png)
 
 Uw woordenboek staat nu in uw vertaalbaan.
 

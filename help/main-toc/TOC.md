@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
+source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
 workflow-type: tm+mt
-source-wordcount: '7443'
+source-wordcount: '7448'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ ht-degree: 1%
          + [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
          + [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md)
       + Paginaprestaties {#page-performance}
-         + [Inzicht van 0 Inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html) Inzicht van 0} Inhoud[
          + [Paginaprestaties analyseren](/help/sites-authoring/ci-analyze.md)
          + [Gegevens van paginaanalyse bekijken](/help/sites-authoring/pa-using.md)
       + Personalisatie {#personalization}
@@ -259,7 +259,7 @@ ht-degree: 1%
          + [Integreren met Livefyre](/help/sites-administering/livefyre.md)
       + Best practices voor {#bestpractices}
          + [Aanbevolen procedures](/help/sites-administering/administer-best-practices.md)
-         + [Beste praktijken van de Vertaling 0](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html) Beste praktijken van de Vertaling 0}[
          + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
          + [ Behandelend GDPR- Verzoeken om de AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
@@ -1231,6 +1231,7 @@ ht-degree: 1%
          + [URL&#39;s configureren voor SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [Cacheopties](/help/commerce/cif/configuring/caching.md)
          + [Aangepaste HTTP-headers](/help/commerce/cif/configuring/custom-http-headers.md)
+         + [Winkelwagentje en Dispatcher Setup](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
       + Ontwikkeling {#developing}
          + [Ontwikkelen met AEM](/help/commerce/cif/develop.md)
          + [CIF opmaken](/help/commerce/cif/customizing/style-cif-component.md)

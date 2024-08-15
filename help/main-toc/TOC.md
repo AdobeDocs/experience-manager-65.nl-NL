@@ -135,7 +135,7 @@ ht-degree: 1%
          + [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
          + [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md)
       + Paginaprestaties {#page-performance}
-         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html) Inzicht van 0} Inhoud[
+         + [Inzicht van 0 Inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
          + [Paginaprestaties analyseren](/help/sites-authoring/ci-analyze.md)
          + [Gegevens van paginaanalyse bekijken](/help/sites-authoring/pa-using.md)
       + Personalisatie {#personalization}
@@ -259,7 +259,7 @@ ht-degree: 1%
          + [Integreren met Livefyre](/help/sites-administering/livefyre.md)
       + Best practices voor {#bestpractices}
          + [Aanbevolen procedures](/help/sites-administering/administer-best-practices.md)
-         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html) Beste praktijken van de Vertaling 0}[
+         + [Beste praktijken van de Vertaling 0](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
          + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
          + [ Behandelend GDPR- Verzoeken om de AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)

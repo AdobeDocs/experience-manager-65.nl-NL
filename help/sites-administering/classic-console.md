@@ -10,9 +10,9 @@ exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 0%
 
 Deze sectie is voor de Classic UI Tagging Console.
 
-De aanraking-geoptimaliseerde UI Tagingconsole is [ hier ](/help/sites-administering/tags.md#tagging-console).
+>[!NOTE]
+>
+>Zie [ Beherende Markeringen ](/help/sites-administering/tags.md#tagging-console) voor details van de aanraking-geoptimaliseerde Console van het Tags van UI.
 
 De klassieke UI-tagingconsole openen:
 

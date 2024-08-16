@@ -10,9 +10,9 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ De curl-opdracht wordt onmiddellijk geretourneerd.
 
 De controle van de consistentie van de gegevensopslag zal om het even welke binaire getallen van de gegevensopslag melden die missen maar nog van verwijzingen voorzien zijn. Voer de volgende stappen uit om een consistentiecontrole te starten:
 
-1. Ga naar de JMX-console. Voor informatie over hoe te om de console te gebruiken JMX, zie [ dit artikel ](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Ga naar de JMX-console. Voor informatie over hoe te om de console te gebruiken JMX, zie {de Middelen van de Server van 0} Controle die de Console JMX ](/help/sites-administering/jmx-console.md#using-the-jmx-console) gebruiken.[
 1. Onderzoek naar **BlobGarbageCollection** en klik het.
 1. Klik op de koppeling `checkConsistency()` .
 

@@ -10,9 +10,9 @@ feature: Developing,Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ De `cq:OwnerTaggable` -mix, die overerft van `cq:Taggable` , geeft aan dat de in
 
 ### Node Type Notation (CND) {#node-type-notation-cnd}
 
-In de gegevensopslagruimte bestaan definities van knooppunttypen als CND-bestanden. De aantekening CND wordt bepaald als deel van de documentatie JCR [ hier ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+In de gegevensopslagruimte bestaan definities van knooppunttypen als CND-bestanden. De aantekening CND wordt bepaald als deel van de [ documentatie van het Jasje ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 De belangrijkste definities voor de in AEM opgenomen knooppunttypen zijn:
 

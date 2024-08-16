@@ -10,9 +10,9 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Dit is optioneel als de standaardaanmeldingspagina leeg blijft.
    >
    >CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit rond wanneer het vormen van Levend Exemplaar.
    >
-   >Voor meer informatie, zie [ deze pagina ](closed-user-groups.md#aem-livecopy).
+   >Voor meer informatie, zie [ Gesloten Gebruikersgroepen in AEM - Livecopy ](closed-user-groups.md#aem-livecopy).
 
 1. Het **geeft Gesloten dialoog van de Groep van de Gebruiker uit** opent. Hier kunt u zoeken naar, en selecteren, uw KUG, dan de groepsselectie met **bevestigen sparen**.
 

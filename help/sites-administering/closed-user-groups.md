@@ -10,9 +10,9 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '6650'
+source-wordcount: '6662'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ In tegenstelling tot de vorige implementatie, worden het nieuwe beleid van CUG a
 
 Naast een specifiek toegangsbeheerbeheer voor CUGs, laat het nieuwe vergunningsmodel u voorwaardelijk toestemmingsevaluatie voor zijn beleid toelaten. Dit laat u opstelling het beleid van de GIDS in een het opvoeren milieu, en laat slechts evaluatie van de efficiënte toestemmingen toe zodra herhaald aan het productiemilieu.
 
-De beoordeling van de toestemming voor het beleid van de CUG en de interactie met het gebrek of om het even welk extra vergunningsmodel volgen het patroon dat voor veelvoudige vergunningsmechanismen in Apache Jackrabbit Oak wordt ontworpen. Dat wil zeggen dat een bepaalde set machtigingen alleen wordt verleend als en alleen als alle modellen toegang verlenen. Zie [ deze pagina ](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) voor meer details.
+De beoordeling van de toestemming voor het beleid van de CUG en de interactie met het gebrek of om het even welk extra vergunningsmodel volgen het patroon dat voor veelvoudige vergunningsmechanismen in Apache Jackrabbit Oak wordt ontworpen. Dat wil zeggen dat een bepaalde set machtigingen alleen wordt verleend als en alleen als alle modellen toegang verlenen. Zie de [ Documentatie van Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) voor meer details.
 
 De volgende kenmerken zijn voor de toestemmingsevaluatie verbonden aan het vergunningsmodel van toepassing dat wordt ontworpen om het beleid van de CUG te behandelen en te evalueren:
 
@@ -129,7 +129,7 @@ Hetzelfde geldt voor de eigenschap `granite:loginPath` . Er wordt alleen aan vol
 
 Aangezien dit type van authentificatievereiste naar verwachting tot bepaalde looppaswijzen en tot een kleine ondergroep van bomen binnen de inhoudsbewaarplaats zal worden beperkt, is het volgen van het vereiste mixintype en de login wegeigenschappen voorwaardelijk. En, is het gebonden aan een overeenkomstige configuratie die de gesteunde wegen bepaalt (zie de Opties van de Configuratie hieronder). Daarom veroorzaken slechts veranderingen binnen het werkingsgebied van deze gesteunde wegen een update van de registratie OSGi, elders zowel het mixintype als het bezit worden genegeerd.
 
-De standaard AEM opstelling maakt nu gebruik van deze configuratie door toe te staan om de mixin op de wijze van de auteurslooppas te plaatsen maar het slechts van kracht te hebben op replicatie aan te publiceren instantie. Zie [ deze pagina ](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) voor details hoe het Sling de authentificatievereiste afdwingt.
+De standaard AEM opstelling maakt nu gebruik van deze configuratie door toe te staan om de mixin op de wijze van de auteurslooppas te plaatsen maar het slechts van kracht te hebben op replicatie aan te publiceren instantie. Zie de [ Verschuivende Authentificatie - de documentatie van het Kader ](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) voor details hoe het Sling het authentificatievereiste afdwingt.
 
 Wanneer u het mixintype `granite:AuthenticationRequired` toevoegt binnen de geconfigureerde ondersteunde paden, wordt de OSGi-registratie van de verantwoordelijke handler bijgewerkt met een nieuwe, aanvullende vermelding in de eigenschap `sling.auth.requirements` . Als een bepaalde autorisatieplicht de optionele `granite:loginPath` -eigenschap opgeeft, wordt de waarde ook geregistreerd bij de Authenticator met een &#39;-&#39;-voorvoegsel dat van autorisatievereiste moet worden uitgesloten.
 
@@ -187,7 +187,7 @@ Bij het bepalen van de verificatievereisten moet rekening worden gehouden met de
 
 ### Beleidsvertegenwoordiging CUG in de opslagplaats {#cug-policy-representation-in-the-repository}
 
-In de Oak-documentatie wordt beschreven hoe het nieuwe beleid van CUG wordt weerspiegeld in de inhoud van de opslagplaats. Voor meer informatie, raadpleeg [ deze pagina ](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+In de Oak-documentatie wordt beschreven hoe het nieuwe beleid van CUG wordt weerspiegeld in de inhoud van de opslagplaats. Voor meer informatie, raadpleeg de [ Documentatie van Jackrabbit Oak over het Leiden Toegang met CUGs ](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Verificatievereiste in de opslagplaats {#authentication-requirement-in-the-repository}
 

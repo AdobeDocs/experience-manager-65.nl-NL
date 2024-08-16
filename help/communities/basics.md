@@ -9,7 +9,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De componenten kunnen worden onderzocht gebruikend een AEM instantie en de inter
 
 Als tijdens het ontwerpen van pagina-inhoud de onderliggende sjabloon wijzigingen toestaat in het ontwerp van de pagina, is het mogelijk om componenten in te schakelen die nog niet beschikbaar zijn in de browser met componenten als onderdeel van het siteontwerp.
 
-De beschikbare componenten van Gemeenschappen zijn vermeld [ hier ](author-communities.md#available-communities-components).
+Zie de lijst onder [ Beschikbare Componenten van Gemeenschappen ](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >

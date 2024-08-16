@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -237,14 +237,14 @@ Maar anders worden absolute URL-afbeeldingen ondersteund voor img-tags die geen 
 
 ### Vraag-aan-actie componenten {#call-to-action-components}
 
-U kunt een deel van het landen pagina voor het invoeren als &quot;editable Vraag aan actiecomponent&quot;merken - dergelijke ingevoerde vraag-aan-actie componenten kunnen na het invoeren van de het landen pagina worden uitgegeven. AEM omvat de volgende componenten CTA:
+U kunt een deel van het landen pagina voor het invoeren als &quot;editable Vraag aan actiecomponent&quot;merken - dergelijke ingevoerde vraag-aan-actie componenten kunnen na het invoeren van de het landen pagina worden uitgegeven. AEM bevat de volgende CTA-componenten:
 
 * Klik via koppeling - Hiermee kunt u een tekstkoppeling toevoegen waarmee de bezoeker naar een doel-URL gaat wanneer erop wordt geklikt.
 * Grafische koppeling - Hiermee kunt u een afbeelding toevoegen die de bezoeker na het klikken naar een doel-URL stuurt.
 
 #### Klikken door koppeling {#click-through-link}
 
-Deze component CTA kan worden gebruikt om een tekstverbinding op de het landen pagina toe te voegen.
+Deze CTA-component kan worden gebruikt om een tekstkoppeling op de bestemmingspagina toe te voegen.
 
 Ondersteunde eigenschappen
 
@@ -276,7 +276,7 @@ Deze component kan in elke standalone toepassing worden gebruikt of uit zip word
 
 #### Grafische koppeling {#graphical-link}
 
-Deze component CTA kan worden gebruikt om het even welk grafisch beeld met verbinding op de het landen pagina toe te voegen. De afbeelding kan een eenvoudige knop zijn of een grafische afbeelding als achtergrond. Wanneer op de afbeelding wordt geklikt, gaat de gebruiker naar de doel-URL die in de componenteigenschappen is opgegeven. Het maakt deel uit van de &quot;Vraag aan Actie&quot;groep.
+Deze CTA-component kan worden gebruikt om grafische afbeeldingen met een koppeling op de bestemmingspagina toe te voegen. De afbeelding kan een eenvoudige knop zijn of een grafische afbeelding als achtergrond. Wanneer op de afbeelding wordt geklikt, gaat de gebruiker naar de doel-URL die in de componenteigenschappen is opgegeven. Het maakt deel uit van de &quot;Vraag aan Actie&quot;groep.
 
 Ondersteunde eigenschappen
 
@@ -318,13 +318,13 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 
 ### Voorloopformulier {#lead-form}
 
-Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegevens van een bezoeker/lead te verzamelen. Deze informatie kan later worden opgeslagen en gebruikt om een efficiënte marketing te doen die op de informatie wordt gebaseerd. Deze informatie omvat gewoonlijk titel, naam, e-mail, geboortedatum, adres, rente, enzovoort. Het maakt deel uit van de CTA Lead-groep.
+Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegevens van een bezoeker/lead te verzamelen. Deze informatie kan later worden opgeslagen en gebruikt om een efficiënte marketing te doen die op de informatie wordt gebaseerd. Deze informatie omvat gewoonlijk titel, naam, e-mail, geboortedatum, adres, rente, enzovoort. Het is onderdeel van de groep &#39;CTA Lead-formulier&#39;.
 
 **Gesteunde eigenschappen**
 
 * Vooraf gedefinieerde loodvelden: voornaam, achternaam, adres, dob, geslacht, about, userId, emailId, submit button zijn beschikbaar in het secundaire bestand. U hoeft alleen het vereiste onderdeel in het formulier voor lead te slepen.
 * Met behulp van deze componenten kan de auteur een zelfstandig hoofdformulier ontwerpen. Deze velden komen overeen met voorbeeldformuliervelden. In een zelfstandige of geïmporteerde ZIP-toepassing kan de gebruiker extra velden toevoegen met behulp van CQ:form- of CTA-voorbeeldformuliervelden, een naam geven en deze ontwerpen volgens de vereisten.
-* Velden voor lead toewijzen met behulp van specifieke vooraf gedefinieerde namen van CTA-lead-formulieren, bijvoorbeeld - firstName voor voornaam in lead-formulier, enzovoort.
+* Velden voor lead toewijzen met behulp van specifieke vooraf gedefinieerde namen van CTA lead-formulieren, bijvoorbeeld - firstName voor voornaam in lead-formulier, enzovoort.
 * Velden die niet zijn toegewezen voor het uitvoeren van formulierkaarten naar cq:formuliercomponenten - tekst, radio, selectievakje, vervolgkeuzelijst, verborgen, wachtwoord.
 * De gebruiker kan de titel opgeven met de tag &quot;label&quot; en kan de stijl toepassen met het kenmerk &quot;class&quot; van de stijl (alleen beschikbaar voor CTA-voorbeeldformuliercomponenten).
 * De pagina Bedankt en de abonnementenlijst kunnen worden opgegeven als een verborgen parameter van het formulier (aanwezig in index.htm) of kunnen worden toegevoegd/bewerkt in de bewerkbalk van het &quot;Formulier voor begin van lead&quot;.
@@ -443,7 +443,7 @@ Als er geen codering is opgegeven in de geïmporteerde HTML, is UTF-8 de standaa
 
 De sjabloon Lege landingspagina kan worden verwijderd door een sjabloon te maken op: `/apps/<appName>/designimporter/templates/<templateName>`
 
-De stappen voor het creëren van een malplaatje in AEM worden verklaard [ hier ](/help/sites-developing/templates.md).
+De stappen voor het creëren van een malplaatje in AEM worden verklaard onder [ Malplaatjes ](/help/sites-developing/templates.md).
 
 ### Een component vanuit de bestemmingspagina verwijzen {#referring-a-component-from-landing-page}
 

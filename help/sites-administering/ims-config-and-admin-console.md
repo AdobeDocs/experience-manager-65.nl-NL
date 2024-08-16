@@ -9,9 +9,9 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 6%
 
 ---
@@ -70,9 +70,9 @@ Zodra een klant als IMS Organisatie bestaat en AMS met levering van de klant voo
 
 >[!NOTE]
 >
->Voor meer informatie over de Adobe Identity Management Basics, met inbegrip van configuratie IDP zie het artikel [ deze pagina.](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html)
+>Voor meer informatie over de Adobe Identity Management Basics, met inbegrip van configuratie IDP zie het artikel over [ de identiteit van de Opstelling en Enige Sign-On ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
 >
->Voor meer informatie over het Beleid van de Onderneming en [!DNL Admin Console] zie het artikel [ deze pagina ](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html).
+>Voor meer informatie over het Beleid van de Onderneming en [!DNL Admin Console] zie het [ Onthaal aan de onderneming en de gids van teamadmin ](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html).
 
 ### Gebruikers aan boord nemen van [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
@@ -122,15 +122,16 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 
 >[!NOTE]
 >
->Voor meer informatie betreffende het Hulpmiddel van de Synchronisatie van de Gebruiker, zie de [ documentatiepagina ](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>Zie voor meer informatie:
 >
+>* het [ Hulpmiddel van de Synchronisatie van de Gebruiker - de Synchronisatie van de Gebruiker van de Adobe ](https://adobe-apiplatform.github.io/user-sync.py/en/)
 >
->Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe I/O registreren gebruikend de hier beschreven procedure [ ](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>* Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI registreren Adobe I/O gebruikend de procedure die onder [ Authentificatie voor API Toegang wordt beschreven ](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 >
->De documentatie van Adobe Developer Console kan [ hier ](https://developer.adobe.com/developer-console/docs/guides/) worden gevonden.
+>* de [ Documentatie van Adobe Developer Console ](https://developer.adobe.com/developer-console/docs/guides/).
 >
+>* de [ Documentatie van API van het Beheer van de Gebruiker ](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 >
->[!DNL User Management] API die door het Hulpmiddel van de Synchronisatie van de Gebruiker wordt gebruikt is behandeld bij deze [ plaats ](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >

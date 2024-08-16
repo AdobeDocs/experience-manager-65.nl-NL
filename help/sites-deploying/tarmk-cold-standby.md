@@ -10,9 +10,9 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -409,7 +409,7 @@ Het is belangrijk om afvalophaling op de instanties van de dossierdatastore van 
 1. Het koude reservebewaarplaatsonderhoud van de looppas zoals die in de sectie [ hierboven ](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance) wordt beschreven.
 1. Nadat het onderhoudsproces is voltooid en de instanties opnieuw zijn gestart:
 
-   * Op primair, stel de inzameling van het huisvuil van de gegevensopslag als relevante boon JMX in werking zoals die in [ wordt beschreven dit artikel ](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+   * Op primair, stel de inzameling van het huisvuil van de gegevensopslag als relevante boon JMX zoals die in [ wordt beschreven Lopende Inzameling van het huisvuil van de Opslag van Gegevens via de Console JMX ](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console) in werking.
    * Op reserve, is de inzameling van het huisvuil van de gegevensopslag beschikbaar slechts als **BlobGarbageCollection** MBean - `startBlobGC()`. **RepositoryManagement** MBean is niet beschikbaar op reserve.
 
    >[!NOTE]

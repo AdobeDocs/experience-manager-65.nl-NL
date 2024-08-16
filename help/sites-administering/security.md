@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5412'
 ht-degree: 0%
 
 ---
@@ -610,7 +610,7 @@ Om over gebruikerssynchronisatie te leren en hoe te om het toe te laten, zie [ S
 
 >[!NOTE]
 >
->De Adobe heeft een nieuwe Touch UI gebaseerde belangrijkste mening voor toestemmingenbeheer geïntroduceerd. Voor meer details op hoe te om het te gebruiken, zie [ deze pagina ](/help/sites-administering/touch-ui-principal-view.md).
+>De Adobe heeft een nieuwe Touch UI gebaseerde belangrijkste mening voor toestemmingenbeheer geïntroduceerd. Voor meer details op hoe te om het te gebruiken, zie [ Belangrijkste Mening voor het Beheer van Toestemmingen ](/help/sites-administering/touch-ui-principal-view.md).
 
 In deze sectie wordt beschreven hoe u machtigingen kunt instellen, inclusief replicatiebevoegdheden.
 

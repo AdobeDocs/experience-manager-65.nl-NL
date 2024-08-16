@@ -8,9 +8,9 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3461'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,9 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
 >[!CAUTION]
 >
->De nieuwere versies van Oak gebruiken een nieuw noemend regeling en formaat voor OSGi configuratiedossiers. De nieuwe noemende regeling vereist dat het configuratiedossier **.config** wordt genoemd en het nieuwe formaat vereist waarden worden getypt en [ hier ](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) wordt gedocumenteerd.
+>De nieuwere versies van Oak gebruiken een nieuw noemend regeling en formaat voor OSGi configuratiedossiers. Het nieuwe noemende schema vereist dat het configuratiedossier **.config** wordt genoemd en het nieuwe formaat vereist dat de waarden worden getypt. Voor details zie [ het Apache Sling Provisioning Model en Apache SlingStart - het StandaardFormaat van de Configuratie ](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Als u van een oudere versie van Oak bevordert, zorg ervoor dat u eerst een steun van de `crx-quickstart/install` omslag maakt. Na de verbetering, herstel de inhoud van de omslag aan de promotieinstallatie en wijzig de uitbreiding van de configuratiedossiers van **.cfg** aan **.config**.
->
->In het geval dat u dit artikel in voorbereiding op een verbetering van een **AEM 5.x** installatie leest, zorg ervoor dat u de [ verbetering ](https://experienceleague.adobe.com/docs/) documentatie eerst raadpleegt.
 
 ### Segmentknooppuntarchief {#segment-node-store}
 
@@ -372,7 +370,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
    * Als u S3 gebruikt als gegevensopslagruimte, maakt u een bestand met de naam `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` in de map `<aem-install>/crx-quickstart/install` , zoals hierboven.
 
-1. Wijzig de de configuratiedossiers van de gegevensopslag op elke instantie zodat richten zij aan de zelfde gegevensopslag. Voor meer informatie, zie [ dit artikel ](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Wijzig de de configuratiedossiers van de gegevensopslag op elke instantie zodat richten zij aan de zelfde gegevensopslag. Voor meer informatie, zie [ Configuraties van de Opslag van Gegevens ](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Als de instantie is gekloond vanaf een bestaande server, moet u de `clusterId` van de nieuwe instantie verwijderen met het nieuwste hulpprogramma voor het uitvoeren van een eiken terwijl de opslagplaats offline is. De opdracht die u moet uitvoeren is:
 
    ```xml

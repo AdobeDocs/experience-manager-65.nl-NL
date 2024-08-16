@@ -10,9 +10,9 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3187'
 ht-degree: 0%
 
 ---
@@ -434,7 +434,7 @@ Wanneer u een bewerkbare sjabloon maakt, wordt de waarde van het sjabloontype na
 
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
-1. Creeer een malplaatje zoals u om het even welk editable malplaatje [ zoals hier gedocumenteerd ](/help/sites-authoring/templates.md#creating-a-new-template-template-author), dat als basis van uw malplaatjetype kan dienen.
+1. Maak een sjabloon op dezelfde manier als elke bewerkbare sjabloon. Zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Dit kan als basis voor uw sjabloontype dienen.
 1. Gebruikend CRXDE Lite, kopieer het onlangs gecreeerde malplaatje van de `templates` knoop aan de `template-types` knoop onder de [ malplaatjeomslag ](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Schrap het malplaatje van de `templates` knoop onder de [ malplaatjeomslag ](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Verwijder in de kopie van de sjabloon onder het knooppunt `template-types` alle eigenschappen `cq:template` en `cq:templateType` uit alle `jcr:content` knooppunten.

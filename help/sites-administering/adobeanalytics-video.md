@@ -10,9 +10,9 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -379,7 +379,7 @@ Wanneer het gebruiken van de** erfenisseconden** methode, worden de vraag van Ad
 
    ![ seconden ](assets/lseconds.png)
 
-   *de vraag is gelijkaardig aan de vraag van de Mondiale Oudheid hierboven. Zie de informatie over pev3 **[daar wordt verstrekt](/help/sites-administering/adobeanalytics.md)**.*
+   *de vraag is gelijkaardig aan de vraag van de Mondiale Oudheid hierboven. Zie de informatie over pev3 die onder [ wordt verstrekt Integrerend met Adobe Analytics ](/help/sites-administering/adobeanalytics.md).*
 
 **Verwijzingen die in dit leerprogramma worden gebruikt:**
 

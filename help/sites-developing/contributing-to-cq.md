@@ -9,9 +9,9 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Achterwaartse compatibiliteit moet ook in aanmerking worden genomen met betrekki
 
 **instantie van de Auteur** - typisch, voor veiligheid, bestuur, en andere redenen, verdeelt een productiesite instanties van AEM in de instanties van de Auteur en van Publish. Raadpleeg de documentatie over AEM instanties voor meer informatie over de implementatiearchitectuur (inclusief de instanties van Auteur/Publish).
 
-**Caching, het bakken, en het bakken** - traditioneel, zijn de concepten bakken tegenover het bakken een belangrijk onderscheid tussen de verschillende Systemen van het Inhoudsbeheer van het Web. In CMS-jargon verwijst &quot;bakken&quot; naar het concept van het toewijzen van gegevens aan statische bestanden tijdens de publicatietijd, terwijl &quot;fritten&quot; verwijst naar het concept van het verwerken van gegevens voor de uiteindelijke presentatie op aanvraag-tijd (dat wil zeggen net op tijd).
+**Caching, het bakken, en het bakken** - traditioneel, zijn de concepten bakken tegenover het bakken een belangrijk onderscheid tussen de verschillende Systemen van het Inhoudsbeheer van het Web. In CMS jargon verwijst &quot;bakken&quot; naar het concept van het toewijzen van gegevens aan statische bestanden tijdens de publicatietijd, terwijl &quot;fritten&quot; verwijst naar het concept van het verwerken van gegevens voor de uiteindelijke presentatie op aanvraag-tijd (dat wil zeggen net op tijd).
 
 **het Groeperen en lading-in evenwicht brengen** - om beschikbaarheid te verhogen en de prestaties van een milieu van de Productie te verbeteren, is het gemeenschappelijk om veelvoudige Instanties van de Auteur en/of van Publish (in Clusters) te combineren, door of hen ter beschikking te stellen aan verschillende groepen gebruikers of door lading-in evenwicht brengend hen achter een configuratie van Dispatcher.
 
@@ -142,7 +142,7 @@ In wezen, is JCR een systeem van knopen en eigenschappen, waarin de knopen van a
 
 JCR heeft verscheidene vooraf bepaalde knooptypes en bezitstypes, maar over het algemeen is het typende systeem flexibel, en (inderdaad) één van de sterke punten van JCR is dat het gestructureerde en ongestructureerde inhoud om met gelijk gemak toelaat worden opgeslagen/worden beheerd. Dat wil zeggen dat JCR zeer gestructureerde gegevens kan verwerken, maar ook willekeurige dynamische gegevensstructuren zonder schemabeperkingen kan verwerken.
 
-JavaDoc voor Java™ API van JCR is [ hier ](https://jackrabbit.apache.org/jcr/jcr-api.html).
+JavaDoc voor Java™ API van JCR is beschikbaar bij de [ Stichting van de Software van Apache - JCR API ](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Alvorens te proberen om JavaDoc of de specificatie JCR zelf te lezen, zou u [ deze verklaring op hoog niveau ](/help/sites-developing/the-basics.md#java-content-repository) van JCR kunnen bekijken zoals die door de Diensten van de Ervaring van de Adobe wordt uitgevoerd.
 

@@ -5,9 +5,9 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: ddd411a5dde57cf66cbcb458578b0aa32139b649
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2305'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ De waarde van **ja** is een geheel van **1**. Dit is handig wanneer u de GraphQL
 
 >[!TIP]
 >
->Meer gedetailleerde documentatie over [ Adobe Commerce GraphQL kan hier ](https://devdocs.magento.com/guides/v2.4/graphql/index.html) worden gevonden.
+>Voor meer gedetailleerde documentatie over Adobe Commerce GraphQL zie het volgende [ overzicht van GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
@@ -386,7 +386,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    Wanneer u een methode van het Sling Model in HTML aanroept, wordt het `get` - en `is` -gedeelte van de methode verwijderd en wordt de eerste letter verlaagd. Dus `isShowBadge()` wordt `.showBadge` en `isEcoFriendly` wordt `.ecoFriendly` . Op basis van de Booleaanse waarde die door `.isEcoFriendly()` wordt geretourneerd, wordt bepaald of de `<span>Eco Friendly</span>` wordt weergegeven.
 
-   Meer informatie over `data-sly-test` en andere [ het blokverklaringen van HTML kan hier ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html) worden gevonden.
+   Voor meer informatie over `data-sly-test` en andere het blokverklaringen van HTML zien [ de Specificatie van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. Sparen de veranderingen en stel de updates in om AEM te gebruiken uw Maven vaardigheden, van een bevel-lijn terminal op te stellen:
 

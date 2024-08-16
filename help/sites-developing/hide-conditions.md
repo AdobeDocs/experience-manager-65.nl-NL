@@ -9,9 +9,9 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 
 1. De waarde van `disableChildren` wordt uit de ontwerpconfiguratie gehaald en de expressie `${cqDesign.disableChildren}` evalueert naar `false` , wat betekent dat de optie niet wordt gerenderd als onderdeel van de component.
 
-   U kunt de huidenuitdrukking als waarde van het `granite:hide` bezit [ in GitHub hier ](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40) bekijken.
+   U kunt de huidenuitdrukking als waarde van het `granite:hide` bezit [ in GitHub ](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40) bekijken.
 
 1. De optie **Pagina&#39;s van het Kind** wordt niet meer teruggegeven voor de paginaauteur wanneer het gebruiken van de lijstcomponent.
 

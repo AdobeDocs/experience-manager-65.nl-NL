@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Nadat een proces is gemaakt met de service Script uitvoeren, kunt u dit script g
 
 **Ongeveer de Uitvoeren Technologie van de Dienst van het Manuscript**
 
-Om te weten wat de capaciteiten en de beperkingen van de dienst van het Manuscript zijn, moet men de technologische steunen van de dienst kennen. AEM Forms on JEE gebruikt de parser Apache Xerces Document Object Model (DOM) om XML-variabelen in processen te maken en op te slaan. De middelen zijn een implementatie Java™ van het ModelSpecificatie van de Objecten van het Document van W3C; bepaald [ hier ](https://dom.spec.whatwg.org/). De DOM-specificatie is een standaardmanier om XML te manipuleren die al sinds 1998 bestaat. De Java™-implementatie van Xerces, Xerces-J, ondersteunt DOM Level 2 versie 1.0.
+Om te weten wat de capaciteiten en de beperkingen van de dienst van het Manuscript zijn, moet men de technologische steunen van de dienst kennen. AEM Forms on JEE gebruikt de parser Apache Xerces Document Object Model (DOM) om XML-variabelen in processen te maken en op te slaan. De middelen zijn een implementatie Java™ van het ModelSpecificatie van de Objecten van het Document van W3C [ ](https://dom.spec.whatwg.org/). De DOM-specificatie is een standaardmanier om XML te manipuleren die al sinds 1998 bestaat. De Java™-implementatie van Xerces, Xerces-J, ondersteunt DOM Level 2 versie 1.0.
 
 De klassen Java™ die worden gebruikt om XML-variabelen op te slaan zijn:
 
@@ -58,7 +58,7 @@ De klassen Java™ die worden gebruikt om XML-variabelen op te slaan zijn:
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl is een subklasse van NodeImpl, zodat kan worden verondersteld dat om het even welke procesvariabele van XML een afleiding NodeImpl is. U kunt de documentatie voor NodeImpl [ hier ](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) vinden.
+DocumentImpl is een subklasse van NodeImpl, zodat kan worden verondersteld dat om het even welke procesvariabele van XML een afleiding NodeImpl is. Zie de documentatie van [ NodeImpl ](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) voor meer details.
 
 **de BemonsteringsXML creatie die de Uitvoeren Dienst van het Manuscript gebruikt**
 

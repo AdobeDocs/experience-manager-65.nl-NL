@@ -1,5 +1,5 @@
 ---
-title: Post-upgradecontroles en probleemoplossing
+title: Controles en probleemoplossing na upgrade
 description: Leer hoe u problemen kunt oplossen die na een upgrade kunnen optreden.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
 
-# Post-upgradecontroles en probleemoplossing{#post-upgrade-checks-and-troubleshooting}
+# Controles en probleemoplossing na upgrade{#post-upgrade-checks-and-troubleshooting}
 
-## Post-upgradecontroles {#post-upgrade-checks}
+## Controles na upgrade {#post-upgrade-checks}
 
 Na de [ Verbetering op plaats ](/help/sites-deploying/in-place-upgrade.md) de volgende activiteiten zouden moeten worden uitgevoerd om de verbetering te voltooien. Men veronderstelt AEM is begonnen met 6.5 jar en dat de promotiecode basis is opgesteld.
 
@@ -103,7 +103,7 @@ Verscheidene eigenschappen in AEM vereisen extra stappen na de verbetering. Een 
 
 #### Opruiming van gegevensopslag inschakelen {#enable-data-store-garbage-collection}
 
-Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. De instructies worden geschetst [ hier ](/help/sites-administering/data-store-garbage-collection.md).
+Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. De instructies worden geschetst onder [ Opruiming van de Revisie ](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor da
 
 #### Onlinerevisie-opruiming inschakelen {#enable-online-revision-cleanup}
 
-Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, dient u ervoor te zorgen dat de Revision Clean Up-taak is ingeschakeld en toegevoegd aan de lijst Dagelijks onderhoud. De instructies schetsten [ hier ](/help/sites-deploying/revision-cleanup.md).
+Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, dient u ervoor te zorgen dat de Revision Clean Up-taak is ingeschakeld en toegevoegd aan de lijst Dagelijks onderhoud. De instructies worden geschetst onder [ Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md).
 
 ### Testplan uitvoeren {#execute-test-plan}
 

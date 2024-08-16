@@ -10,7 +10,7 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 0%
@@ -339,7 +339,7 @@ U kunt dit probleem verhelpen door de volgende stappen uit te voeren:
 
 Met de standaardserver voor het downloaden van middelen kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige, downloadverzoeken afgeven om ZIP-bestanden met elementen te maken. Door grote ZIP-archieven te maken, kunnen de server en het netwerk worden overbelast. Om het potentiële DoS-risico (Denial of Service) dat door dit gedrag wordt veroorzaakt, te beperken, wordt de `AssetDownloadServlet` OSGi-component standaard uitgeschakeld in [!DNL Experience Manager] -publicatie-instantie. Deze is standaard ingeschakeld voor de [!DNL Experience Manager] -instantie.
 
-Als u de downloadmogelijkheden niet nodig hebt, schakelt u de servlet uit bij het ontwerpen en publiceren van implementaties. Als uw opstelling vereist dat het vermogen van de activadownload wordt toegelaten, zie [ dit artikel ](/help/assets/download-assets-from-aem.md) voor meer informatie. Bovendien kunt u een maximale downloadlimiet definiëren die uw implementatie kan ondersteunen.
+Als u de downloadmogelijkheden niet nodig hebt, schakelt u de servlet uit bij het ontwerpen en publiceren van implementaties. Als uw opstelling vereist dat het vermogen van de activadownload wordt toegelaten, zie [ de activa van de Download van de Ervaring van de Adobe beheren ](/help/assets/download-assets-from-aem.md) voor meer informatie. Bovendien kunt u een maximale downloadlimiet definiëren die uw implementatie kan ondersteunen.
 
 ### WebDAV uitschakelen {#disable-webdav}
 
@@ -395,7 +395,7 @@ Standaard worden AEM systeemmetagegevens, zoals `jcr:createdBy` of `jcr:lastModi
 
 Net als alle gegevens in de opslagplaats worden deze eigenschappen gemedieerd door de Oak-machtigingenstapel. De toegang tot deze rechten dient te worden beperkt overeenkomstig het beginsel van de minst bevoorrechte behandeling.
 
-Om dit te steunen, verstrekt de Adobe een toestemmings het verharden pakket als basis voor klanten om op te bouwen. Het werkt door een &quot;ontkent&quot;toegangsbeheeringang bij de bewaarplaatswortel te installeren, die anonieme toegang tot algemeen gebruikte systeemeigenschappen beperkt. Het pakket is beschikbaar voor download [ hier ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) en kan op alle gesteunde versies van AEM worden geïnstalleerd.
+Om dit te steunen, verstrekt de Adobe een toestemmings het verharden pakket als basis voor klanten om op te bouwen. Het werkt door een &quot;ontkent&quot;toegangsbeheeringang bij de bewaarplaatswortel te installeren, die anonieme toegang tot algemeen gebruikte systeemeigenschappen beperkt. Het pakket kan [ worden gedownload ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) en op alle gesteunde versies van AEM worden geïnstalleerd.
 
 Om de veranderingen te illustreren, kunnen wij de knoopeigenschappen vergelijken die anoniem kunnen worden bekeken alvorens het pakket te installeren:
 

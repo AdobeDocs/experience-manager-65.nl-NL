@@ -10,9 +10,9 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -161,4 +161,4 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 Wanneer het gebruiken van een console, is een gemeenschappelijk gebruiksgeval wanneer de gebruiker uit middelen (bijvoorbeeld, pagina&#39;s, componenten, activa, etc.) moet selecteren. Dit kan bijvoorbeeld de vorm aannemen van een lijst waaruit de auteur een item moet kiezen.
 
-Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [ dit artikel ](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor details.
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [ het Aanpassen van de Authoring van de Pagina - het Filtreren Middelen ](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor details.

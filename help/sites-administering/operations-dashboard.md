@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 0%
 
 ---
@@ -507,7 +507,7 @@ U kunt de timing ook configureren door op het tandwielpictogram te drukken op ee
 
 ### Opschonen van revisie {#revision-clean-up}
 
-Voor meer informatie bij het uitvoeren van Opruimen van de Revisie, [ zie dit specifieke artikel ](/help/sites-deploying/revision-cleanup.md).
+Voor meer informatie, zie [ Overzichtsopruiming ](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
@@ -522,7 +522,7 @@ U kunt tot de taak van de Opruiming van de Bindingen van Lucene toegang hebben v
 
 ### Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
-Voor details op de Inzameling van het huisvuil van de Opslag van Gegevens, zie de specifieke [ documentatiepagina ](/help/sites-administering/data-store-garbage-collection.md).
+Voor details op de Inzameling van het huisvuil van de Opslag van Gegevens, zie de specifieke ](/help/sites-administering/data-store-garbage-collection.md) documentatiepagina van de Inzameling van het huisvuil van de Opslag van 0} Gegevens.[
 
 ### Werkstroom leegmaken {#workflow-purge}
 
@@ -533,7 +533,7 @@ Workflows kunnen ook worden gewist vanaf het onderhouddashboard. Voer de volgend
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie over het Onderhoud van het Werkschema, zie [ deze pagina ](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Voor meer gedetailleerde informatie over het Onderhoud van het Werkschema, zie [ het Beheer de Instanties van het Werkschema ](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Controle van logboekonderhoud {#audit-log-maintenance}
 

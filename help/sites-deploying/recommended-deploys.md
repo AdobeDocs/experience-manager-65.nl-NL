@@ -10,9 +10,9 @@ exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1756'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ De voordelen:
 
 >[!NOTE]
 >
->In het diagram hierboven, worden AEM Server 3 en AEM Server 4 voorgesteld met een inactieve status die een netwerklatentie tussen de AEM Servers in Centrum 2 van Gegevens en de primaire knoop MongoDB in Centrum 1 veronderstelt van Gegevens die hoger is dan het vereiste dat [ hier ](/help/sites-deploying/aem-with-mongodb.md#checklists) wordt gedocumenteerd. Als de maximumlatentie compatibel is met de vereisten, bijvoorbeeld door het gebruik van beschikbaarheidszones, dan kunnen de AEM servers in Datacenter 2 ook actief zijn, die tot een actief-actieve AEM cluster over veelvoudige datacenters leiden.
+>In het diagram hierboven, worden AEM Server 3 en AEM Server 4 voorgesteld met een inactieve status die een netwerklatentie tussen de AEM Servers in Centrum 2 van Gegevens en het primaire knooppunt MongoDB in Centrum 1 veronderstelt die hoger is dan het vereiste dat onder [ Adobe Experience Manager met MongoDB - Controlklists ](/help/sites-deploying/aem-with-mongodb.md#checklists) wordt gedocumenteerd. Als de maximumlatentie compatibel is met de vereisten, bijvoorbeeld door het gebruik van beschikbaarheidszones, dan kunnen de AEM servers in Datacenter 2 ook actief zijn, die tot een actief-actieve AEM cluster over veelvoudige datacenters leiden.
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Het is bijna onmogelijk om te voorspellen wat het precieze gelijktijdige model z
 
 >[!NOTE]
 >
->U kunt de lange dag gebruiken om de prestaties van de toepassing van de klant in de context van de geïmplementeerde hardwareconfiguratie te evalueren. Meer informatie over dit hulpmiddel is beschikbaar [ hier ](/help/sites-developing/tough-day.md).
+>[ Stevige Dag ](/help/sites-developing/tough-day.md) kan worden gebruikt om de prestaties van de toepassing van de klant in de context van de opgestelde hardwareconfiguratie te evalueren.
 
 Een minimumplaatsing met MongoDB zal typisch de volgende topologie impliceren:
 
@@ -184,9 +184,9 @@ Een reeks eerste vereisten en aanbevelingen is beschikbaar als u een plaatsing M
 
 **Sterke aanbevelingen voor plaatsingen MongoDB:**
 
-* Raadpleeg het MongoDB voor Adobe Experience Manager [ artikel ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Herzie de productie MongoDB [ checklist ](https://docs.mongodb.org/manual/administration/production-checklist/);
-* Bewerk hier een certificeringsklasse op MongoDB die online beschikbaar is [ ](https://university.mongodb.com/).
+* Raadpleeg het [ Overzicht van de Plaatsing MongoDB voor Adobe Experience Manager ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Herzie [ Checklist van de Verrichtingen MongoDB ](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Woon a [ certificatieklasse op MongoDB - beschikbaar online ](https://university.mongodb.com/) bij.
 
 >[!NOTE]
 >

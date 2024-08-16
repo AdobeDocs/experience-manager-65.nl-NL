@@ -5,9 +5,9 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1669'
 ht-degree: 5%
 
 ---
@@ -32,16 +32,14 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >
 >* **Replicatie/Replicatie**
 >  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
->
 
->[!NOTE]
->
->Als u niet over de vereiste rechten voor het publiceren van een specifieke pagina beschikt:
->
->* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
->* Dit [ werkschema kan ](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) door uw ontwikkelingsteam worden aangepast.
->* Er wordt kort een bericht weergegeven om u te laten weten dat de workflow is geactiveerd.
->
+## Onvoldoende rechten {#insufficient-privileges}
+
+Als u niet over de vereiste rechten voor het publiceren van een specifieke pagina beschikt:
+
+* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
+* Dit [ werkschema kan ](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) door uw ontwikkelingsteam worden aangepast.
+* Er wordt kort een bericht weergegeven om u te laten weten dat de workflow is geactiveerd.
 
 ## Pagina&#39;s publiceren {#publishing-pages-1}
 
@@ -185,7 +183,9 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    >[!NOTE]
    >
-   >De **stap van de Werkschema&#39;s** wordt getoond gebaseerd op welke rechten uw gebruiker kan of niet kan hebben. Zie de [ vorige nota op deze pagina ](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) betreffende het publiceren voorrechten en [ het Leiden Toegang tot Werkschema&#39;s ](/help/sites-administering/workflows-managing.md) en [ Toepassend Werkschema&#39;s op Pagina&#39;s ](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) voor details.
+   >De **stap van de Werkschema&#39;s** wordt getoond gebaseerd op welke rechten uw gebruiker kan of niet kan hebben.
+   >
+   >Zie de secties [ Onvoldoende Bevoegdheden ](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [ het Leiden Toegang tot Werkschema&#39;s ](/help/sites-administering/workflows-managing.md) en [ Toepassend Werkschema&#39;s op Pagina&#39;s ](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) voor details.
 
    De bronnen worden gegroepeerd op basis van de workflows die worden geactiveerd en elke optie heeft de volgende opties:
 

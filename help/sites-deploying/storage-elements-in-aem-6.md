@@ -10,9 +10,9 @@ exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -118,8 +118,8 @@ Red Hat® Linux® gebruikt een algoritme voor geheugenbeheer met de naam Transpa
 >
 >Raadpleeg de volgende bronnen:
 >
->* Voor meer informatie betreffende de Transparante Pagina&#39;s van de Groot op Rode Hoed® Linux®, zie dit [ artikel ](https://access.redhat.com/solutions/46111).
->* Voor Linux® het stemmen uiteinden, zie dit [ artikel ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>* Voor meer informatie betreffende de Transparante Pagina&#39;s van de Groot van de Lezing op Red Hat® Linux®, raadpleeg het volgende artikel van het Portaal van de Klant Red Hat®: [ gebruiken, controleren, en onbruikbaar maken transparante gezoempagina&#39;s in de Onderneming Linux 6, 7 en 8 van Red Hat?](https://access.redhat.com/solutions/46111)
+>* Voor Linux® het stemmen uiteinden, zie [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md).
 >
 
 ## Behoud van de opslagplaats {#maintaining-the-repository}

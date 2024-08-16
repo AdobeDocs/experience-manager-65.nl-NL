@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2937'
 ht-degree: 0%
 
 ---
@@ -429,7 +429,7 @@ Hieronder ziet u de architectuurrichtlijnen voor AEM sites en AEM Assets.
 
 ### TarMK Settings Guideline {#tarmk-settings-guideline}
 
-Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moeten volgen. Voor instructies op hoe te om de montages te veranderen, [ zie deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moeten volgen. Voor instructies op hoe te om de montages te veranderen, zie [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
@@ -539,7 +539,7 @@ Om goede prestaties te vestigen wanneer het gebruiken van MongoMK, zou u van de 
 
 ### Richtlijnen voor MongoMK-instellingen {#mongomk-settings-guidelines}
 
-Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moeten volgen. Voor instructies op hoe te om de montages te veranderen, [ zie deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moeten volgen. Voor instructies op hoe te om de montages te veranderen, zie [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>

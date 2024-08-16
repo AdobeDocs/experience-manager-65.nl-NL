@@ -10,9 +10,9 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2114'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ Er wordt een dialoogvenster gemaakt met de volgende structuur:
 
 U kunt het dialoogvenster nu aan uw wensen aanpassen door eigenschappen te wijzigen of knooppunten te maken.
 
-U kunt een dialoogvenster ook bewerken met de Dialoogeditor. Als u dubbelklikt op het dialoogvenster in CRXDE Lite, wordt de editor weergegeven. Meer informatie over de Redacteur van de Dialoog kan [ hier ](/help/sites-developing/dialog-editor.md) worden gevonden.
+U kunt een dialoogvenster ook bewerken met de Dialoogeditor. Als u dubbelklikt op het dialoogvenster in CRXDE Lite, wordt de editor weergegeven. Zie [ Redacteur van de Dialoog ](/help/sites-developing/dialog-editor.md) voor meer details.
 
 ## Een knooppunt maken {#creating-a-node}
 

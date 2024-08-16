@@ -5,7 +5,7 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 0%
@@ -363,7 +363,7 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 
 ## Kaderbeperkingen {#framework-limitations}
 
-De component RemotePage verwacht dat de implementatie activa-manifest zoals hier gevonden [ ](https://github.com/shellscape/webpack-manifest-plugin) verstrekt. De component RemotePage, echter, is slechts getest om met het kader van de Reactie (en Next.js via de ver-pagina-volgende component) te werken, en steunt daarom ver het laden van toepassingen van andere kaders, zoals Angular niet.
+De component RemotePage verwacht dat de implementatie activa-manifest zoals [ webpack-manifest-stop op GitHub ](https://github.com/shellscape/webpack-manifest-plugin) verstrekt. De component RemotePage, echter, is slechts getest om met het kader van de Reactie (en Next.js via de ver-pagina-volgende component) te werken, en steunt daarom ver het laden van toepassingen van andere kaders, zoals Angular niet.
 
 ## Aanvullende bronnen {#additional-resources}
 

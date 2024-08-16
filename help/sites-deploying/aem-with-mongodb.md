@@ -10,9 +10,9 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '6192'
+source-wordcount: '6216'
 ht-degree: 0%
 
 ---
@@ -488,7 +488,7 @@ U kunt deze uitschakelen door de onderstaande procedure te volgen:
 
 >[!NOTE]
 >
->Voor meer informatie over Transparante Grote Pagina&#39;s, raadpleeg dit [ artikel ](https://access.redhat.com/solutions/46111).
+>Voor meer informatie over Transparante Grote Pagina&#39;s, raadpleeg het volgende artikel van het Red Hat® Klantenportaal: [ gebruiken, controleren, en onbruikbaar maken transparante gezoempagina&#39;s in de Onderneming Linux 6, 7 en 8 van Red Hat?](https://access.redhat.com/solutions/46111).
 
 #### NUMA uitschakelen {#disable-numa}
 

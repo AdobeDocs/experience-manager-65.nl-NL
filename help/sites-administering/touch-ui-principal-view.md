@@ -10,9 +10,9 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ U kunt rechten toevoegen door te zoeken in het tekstveld en vervolgens te select
 
 >[!NOTE]
 >
->Voor een volledige lijst van voorrechten en beschrijvingen, zie [ deze pagina ](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Voor een volledige lijst van voorrechten en beschrijvingen, zie [ Gebruiker, Groep, en het Beleid van de Rechten van de Toegang ](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![ toestemming van het Onderzoek voor een bepaalde weg.](assets/image2019-3-21_0-5-47.png) ![ voeg Nieuwe Ingang voor &quot;dam-gebruikers&quot;zoals aangetoond door een weg toe die in verticale kolommen wordt geselecteerd.](assets/image2019-3-21_0-6-53.png)
 

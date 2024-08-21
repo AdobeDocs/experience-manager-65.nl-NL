@@ -9,9 +9,9 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,17 @@ Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formul
 
 Als AEM formulieren een gebruiker niet kunnen verifiëren met een van deze methoden, wordt de gebruiker omgeleid naar een aanmeldingspagina.
 
+* [SSO inschakelen met HTTP-headers](#enable-sso-using-http-headers)
+* [SSO inschakelen met SPNEGO](#enable-sso-using-spnego)
+* [Rollen toewijzen aan gebruikers en groepen](#assign-roles-to-users-groups)
+
 ## SSO inschakelen met HTTP-headers {#enable-sso-using-http-headers}
 
-U kunt de Poortconfiguratiepagina gebruiken om enige sign-on (SSO) tussen toepassingen en om het even welke toepassing toe te laten die het overbrengen van de identiteit over de kopbal van HTTP steunt. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
+U kunt de Poortconfiguratiepagina gebruiken om enige sign-on (SSO) tussen toepassingen en om het even welke toepassing toe te laten die het overbrengen van de identiteit over een kopbal van HTTP steunt. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
 U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [ SSO toelaten gebruikend SPNEGO ](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
-1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Portal kenmerken configureren.
+1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuration > Configure Portal Attributes.
 1. Selecteer Ja om SSO in te schakelen. Als u Nee selecteert, zijn de overige instellingen op de pagina niet beschikbaar.
 1. Stel de resterende opties op de pagina naar wens in en klik op OK:
 
@@ -51,6 +55,10 @@ U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [ SSO toelaten gebruikend
 ### Toegestane verwijzingen configureren {#configure-allowed-referers}
 
 Voor de stappen om toegestane verwijzers te vormen, zie [ toegelaten verwijzers ](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers) vormen.
+
+### Rollen toewijzen aan gebruikers en groepen
+
+Klik om de stappen te kennen om [ rollen aan gebruikers en groepen ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) toe te wijzen.
 
 ## SSO inschakelen met SPNEGO {#enable-sso-using-spnego}
 
@@ -167,3 +175,21 @@ Als de server wordt betreden door de computernaam, zoals https://lcserver:8080 t
    `lcserver.um.lc.com` - Vormt Firefox om SPNEGO voor uw specifieke server slechts toe te staan. Begin deze waarde niet met een punt (&quot;.&quot;).
 
 1. Test de configuratie door de toepassing te openen. De welkomstpagina voor de doeltoepassing moet worden weergegeven.
+
+Klik om de stappen te kennen om [ rollen aan gebruikers en groepen ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) toe te wijzen.
+
+## Rollen toewijzen aan gebruikers en groepen {#assign-roles-to-users-groups}
+
+1. Meld u aan bij uw AEM Forms op JEE Environment.
+1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
+1. Selecteer uw domeinconfiguratie, bijvoorbeeld, LDAP, en klik op het. U vindt alle gecreeerde gebruikers en groepen in de Folder. Indien nodig kunt u nieuwe gebruikers of groepen maken.
+   ![ het beheerspagina van het Domein ](/help/forms/using/assets/domain-mgmt-page.png)
+1. Klik op Verificatie en selecteer op de nieuwe pagina een verificatieprovider, zoals LDAP.
+1. Navigeer aan de pagina van het Beheer van het Domein, uitgezochte LDAP, en klik **nu SYN**, om de folder met de authentificatieregeling te synchroniseren u, voor AEM toegang vormde.
+   ![ synchroniseer ldap ](/help/forms/using/assets/sync-ldap.png)
+1. Ga naar Gebruikersbeheer en klik op Gebruikers en groepen.
+1. Zoek naar gebruikers of groepen met hun namen, zoals aangetoond in hieronder beeld.
+   ![ de gebruikersgroep van het Onderzoek ](/help/forms/using/assets/search-user-group.png)
+1. Wijs de rollen aan de gebruikers of de groepen toe zoals vereist.
+   ![ de roltaak van de Gebruiker ](/help/forms/using/assets/user-role-assign.png)
+

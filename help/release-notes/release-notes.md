@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
+source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
 workflow-type: tm+mt
-source-wordcount: '4367'
+source-wordcount: '4371'
 ht-degree: 0%
 
 ---
@@ -544,7 +544,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 * Na de upgrade naar AEM Forms Service Pack 6.5.21.0 kan de `PaperCapture` -service geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (CQDOC-21680)
 
-* Wanneer gebruikers van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0) of AEM 6.5 Forms Service Pack 21 (6.5.21.0) bijwerken, ontmoeten de gebruikers een JSP fout, die verhindert hen om adaptieve formulieren te openen of te creëren en veroorzaakt ook fouten met andere AEM interfaces zoals de paginaredacteur, AEM Forms UI, en AEM de redacteur van het Werkschema. (FORMS-15256)
+* Wanneer gebruikers van AEM 6.5 Forms Service Pack 18 (6.5.18.0) of AEM 6.5 Forms Service Pack 19 (6.5.19.0) aan AEM 6.5 Forms Service Pack 20 (6.5.20.0) of AEM 6.5 Forms Service Pack 21 (6.5.21.0) bijwerken, ontmoeten de gebruikers een JSP fout, die hen verhindert om adaptieve vormen te openen of te creëren en ook fouten met andere AEM interfaces zoals paginaredacteur, AEM Forms UI, AEM de redacteur van het Werkschema, en AEM het Overzicht UI van het Systeem veroorzaakt. (FORMS-15256)
 
   Voer de volgende stappen uit om een dergelijk probleem op te lossen:
    1. Navigeer naar de map `/libs/fd/aemforms/install/` in CRXDE.

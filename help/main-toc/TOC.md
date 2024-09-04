@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 1%
@@ -135,7 +135,7 @@ ht-degree: 1%
          + [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
          + [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md)
       + Paginaprestaties {#page-performance}
-         + [Inzicht van 0 Inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html) Inzicht van 0} Inhoud[
          + [Paginaprestaties analyseren](/help/sites-authoring/ci-analyze.md)
          + [Gegevens van paginaanalyse bekijken](/help/sites-authoring/pa-using.md)
       + Personalisatie {#personalization}
@@ -220,7 +220,7 @@ ht-degree: 1%
          + [Openingspagina&#39;s integreren met Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
       + Integratie {#integration}
          + [Integreren met services van derden](/help/sites-administering/third-party-services.md)
-         + [Integratie met Salesforce](/help/sites-administering/salesforce.md)
+         + [Integreren met Salesforce](/help/sites-administering/salesforce.md)
          + [Integreren met Adobe Target](/help/sites-administering/target.md)
          + [Integreren met Adobe Learning Manager](/help/sites-administering/adobe-learningmanager.md)
          + [Integreren met Adobe Analytics](/help/sites-administering/adobeanalytics.md)
@@ -259,7 +259,7 @@ ht-degree: 1%
          + [Integreren met Livefyre](/help/sites-administering/livefyre.md)
       + Best practices voor {#bestpractices}
          + [Aanbevolen procedures](/help/sites-administering/administer-best-practices.md)
-         + [Beste praktijken van de Vertaling 0](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html) Beste praktijken van de Vertaling 0}[
          + [ MSM Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR-gereedheid](/help/sites-administering/gdpr-compliance-sites.md)
          + [ Behandelend GDPR- Verzoeken om de AEM Stichting ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
@@ -536,7 +536,7 @@ ht-degree: 1%
          + [Referentie adaptieve formulierfragmenten](/help/forms/using/reference-adaptive-form-fragments.md)
          + [Referentiethema&#39;s](/help/forms/using/reference-themes.md)
          + [Referentielettersjablonen](/help/forms/using/reference-cm-layout-templates.md)
-         + [Configureer Microsoft Dynamics 365 voor de workflow voor hypothecair thuis van de website Web.Finance](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+         + [Vorm de Dynamiek 365 van Microsoft voor het huishypotheekwerkschema van de Web.Finance verwijzingsplaats](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
    + AEM Forms installeren en configureren {#install-aem-forms}
       + [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Een persistentietype kiezen voor een AEM Forms-installatie](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
@@ -620,7 +620,6 @@ ht-degree: 1%
       + [Een adaptief formulier op basis van kerncomponenten maken](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Aangepaste Forms-fragmenten maken en gebruiken in een adaptief formulier](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Thema&#39;s maken voor adaptieve Forms op basis van Core Components](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [Aangepaste functies maken en gebruiken in een adaptief formulier](/help/forms/using/create-and-use-custom-functions.md)
       + [Regeleditor](/help/forms/using/rule-editor-core-components.md)
       + [Aangepaste functies maken en gebruiken in een Adaptief Core-component](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Aangepaste fouthandler maken en gebruiken voor Adaptieve Forms op basis van Core Components](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 1%
       + [Adobe Sign integreren met AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Revisies voor elementen in formulieren maken en beheren](/help/forms/using/create-reviews-forms.md)
       + [Een adaptief formulier of interactieve communicatie insluiten in AEM Sites-toepassing voor één pagina](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [Aangepaste functies maken en gebruiken in een adaptief formulier](/help/forms/using/create-and-use-custom-functions.md)
       + [Aangepaste fouthandler maken en gebruiken voor Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + Interactieve communicatie {#interactive-communications}
       + [Inleiding tot Interactive Communication authoring UI](/help/forms/using/introduction-interactive-communication-authoring.md)

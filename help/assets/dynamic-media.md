@@ -1,6 +1,6 @@
 ---
 title: Werken met Dynamic Media
-description: Leer hoe u Dynamic Media kunt gebruiken om middelen te leveren voor gebruik op internet, mobiele apparaten en sociale sites.
+description: Leer hoe u de software kunt gebruiken voor het aanbieden van middelen voor websites, mobiele websites en sociale sites.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -9,26 +9,26 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
 # Werken met Dynamic Media {#working-with-dynamic-media}
 
-[ Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) hulp levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[ Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) hulp levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Gebruikend een reeks primaire bronactiva, produceert de software en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk.
 
-Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
+De software biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. De workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing worden op unieke wijze geïntegreerd om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
+## Wat u met de software kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [ Werk met digitale activa ](manage-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
+Met de software kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [ Werk met digitale activa ](manage-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
 
 Alleen Dynamic Media biedt de volgende functies:
 
@@ -53,23 +53,23 @@ Zie ook [ Opstelling Dynamic Media ](administering-dynamic-media.md).
 
 ## Dynamic Media ingeschakeld en Dynamic Media uitgeschakeld {#dynamic-media-on-versus-dynamic-media-off}
 
-U kunt zien of Dynamic Media is ingeschakeld (ingeschakeld) door de volgende kenmerken:
+U kunt zien of de software is ingeschakeld (ingeschakeld) door de volgende kenmerken:
 
 * Dynamische uitvoeringen zijn beschikbaar wanneer u elementen downloadt of een voorvertoning weergeeft.
 * Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar.
 * PTIFF-uitvoeringen worden gemaakt.
 
-Wanneer u een beeldactiva selecteert, is de mening van de activa verschillend met Dynamic Media [ toegelaten ](config-dynamic.md#enabling-dynamic-media). Dynamic Media gebruikt de HTML5-viewers op aanvraag.
+Wanneer u een beeldactiva selecteert, is de mening van de activa verschillend met de toegelaten software [ ](config-dynamic.md#enabling-dynamic-media). Er worden de HTML5-viewers op aanvraag gebruikt.
 
 ### Dynamische uitvoeringen {#dynamic-renditions}
 
-Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]** ) zijn beschikbaar wanneer Dynamic Media is ingeschakeld.
+Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]** ) zijn beschikbaar wanneer de software is ingeschakeld.
 
 ![ chlimage_1-358 ](assets/chlimage_1-358.png)
 
 ### Afbeeldingssets, spelensets, gemengde mediasets {#image-sets-spins-sets-mixed-media-sets}
 
-Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamic Media is ingeschakeld.
+Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als de software is ingeschakeld.
 
 ![ chlimage_1-359 ](assets/chlimage_1-359.png)
 
@@ -81,10 +81,10 @@ Tot de elementen die geschikt zijn voor Dynamic Media behoren `pyramid.tiffs` .
 
 ### Weergave van element wijzigen {#asset-views-change}
 
-Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook klikken om in te zoomen op een bepaald gebied. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld ziet er als volgt uit:
+Als de software is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook klikken om in te zoomen op een bepaald gebied. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Als de software ingeschakeld is, ziet het er als volgt uit:
 
 ![ chlimage_1-361 ](assets/chlimage_1-361.png)
 
-Met Dynamic Media uitgeschakeld kunt u in- en uitzoomen en terugkeren naar de oorspronkelijke grootte:
+Als de software is uitgeschakeld, kunt u in- en uitzoomen en terugkeren naar de oorspronkelijke grootte:
 
 ![ chlimage_1-362 ](assets/chlimage_1-362.png)

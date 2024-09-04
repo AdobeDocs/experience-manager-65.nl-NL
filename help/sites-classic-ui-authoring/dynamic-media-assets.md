@@ -9,7 +9,7 @@ exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
-Werken met Dynamic Media is niet beschikbaar in de klassieke gebruikersinterface. Zie [ Werk met Dynamic Media, ](/help/assets/dynamic-media.md) dat het aanraking-toegelaten gebruikersinterface behandelt.
+Werken met Dynamic Media is niet beschikbaar in de klassieke gebruikersinterface. Zie [ Werk met Dynamic Media ](/help/assets/dynamic-media.md), die het aanraking-toegelaten gebruikersinterface behandelt.
 
 >[!NOTE]
 >

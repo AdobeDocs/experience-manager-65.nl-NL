@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a4c95d604e63c4fd00f17d2fb99a9e46f823ca10
 workflow-type: tm+mt
-source-wordcount: '2959'
-ht-degree: 4%
+source-wordcount: '2974'
+ht-degree: 3%
 
 ---
 
@@ -63,22 +63,22 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen: U
 | --- | --- | --- |
 | Uitsnijden met pixels | Bulk uitsnijdafbeeldingen alleen op basis van afmetingen. | Als u deze optie wilt gebruiken, selecteert u **[!UICONTROL Pixel Crop]** in de vervolgkeuzelijst Uitsnijdopties.<br><br> om van de kanten van een beeld uit te snijden, gaat u het aantal pixel in om van om het even welke kant of elke kant van het beeld uit te snijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand.<br><br> het pixeluitsnijding van het Profiel van het Beeld geeft op de volgende manier terug:<br>・ De waarden zijn Boven, Onder, Links, en Rechts.<br>・ Linksboven wordt beschouwd als `0,0` en de pixeluitsnede wordt daar berekend.<br>・ Beginpunt voor uitsnijden: Links is X en Boven is Y <br>・ Horizontale berekening: horizontale pixelafmeting van de oorspronkelijke afbeelding min Links en vervolgens minus Rechts.<br>・ Verticale berekening: verticale pixelhoogte minus Boven en vervolgens minus Onder.<br><br> bijvoorbeeld, veronderstel u een 4000x 3000 pixelbeeld hebt. U gebruikt waarden: Top=250, Bottom=500, Left=300, Right=700.<br><br> van Linksboven (300.250) gewas gebruikend de vullingsruimte van (4000-300-700, 300-250-500, of 3000.2250). |
 | Slim uitsnijden | Bulk uitsnijdafbeeldingen op basis van hun visuele brandpunt. | Smart Crop maakt gebruik van de kracht van kunstmatige intelligentie in Adobe Sensei om het uitsnijden van afbeeldingen in bulk te automatiseren. Met Slim uitsnijden wordt automatisch het brandpunt in een afbeelding opgespoord en uitgesneden om het gewenste aandachtspunt vast te leggen, ongeacht de schermgrootte.</p> <p>Als u Slim uitsnijden wilt gebruiken, selecteert u **[!UICONTROL Smart Crop]** in de vervolgkeuzelijst Uitsnijdopties en schakelt u de functie in (schakel deze in) rechts van Uitsnijden van responsieve afbeelding.</p> <p>De standaardformaten voor breekpunten van Groot, Medium en Klein dekken over het algemeen het volledige bereik van formaten die de meeste afbeeldingen op mobiele apparaten en tablets, desktops en banners gebruiken. Desgewenst kunt u de standaardnamen van Groot, Medium en Klein bewerken.</p> <p>Als u meer onderbrekingspunten wilt toevoegen, selecteert u **[!UICONTROL Add Crop]** om een uitsnijding te verwijderen en selecteert u het pictogram met de prullenbak. |
-| Kleur en afbeeldingsstaal | Met Bulk wordt voor elke afbeelding een afbeeldingsstaal gegenereerd. | **Nota**: Het slimme Staal wordt niet gesteund in Dynamic Media Classic.<br><br> bepaal de plaats en produceert automatisch van uitstekende kwaliteit stalen van productbeelden die kleur of textuur tonen.<br><br> om het Staal van de Kleur en van het Beeld te gebruiken, selecteer **[!UICONTROL Smart Crop]** van de drop-down lijst van de Opties van het Uitsnijden, dan rechts van Kleur en het Monster van het Beeld, laat (zet) de eigenschap toe. Geef een pixelwaarde op in de tekstvakken Breedte en Hoogte.<br><br> terwijl alle beeldgewassen van het spoor van Vertoningen beschikbaar zijn, worden de monsters slechts gebruikt als eigenschap van het Exemplaar URL. Gebruik uw eigen weergavecomponent om het staal op uw site te renderen. (De uitzondering op deze regel zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.)<br><br>**Gebruikend beeldmonsters**<br> URL voor beeldmonsters is ongecompliceerd. Het is:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br> waar `:Swatch` aan het activaverzoek wordt toegevoegd.<br><br>**Gebruikend kleurenstalen**<br> om kleurenstalen te gebruiken, maakt u a `req=userdata` verzoek met het volgende:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br> Bijvoorbeeld, is het volgende een staalactiva in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br> en hier is het overeenkomstige de dienovereenkomstige `req=userdata` URL van de staalactiva:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br> De `req=userdata` reactie is als volgt:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br> u kunt een `req=userdata` reactie in of XML of formaat JSON, zoals in verzoeken respectieve URL voorbeelden:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota:** creeer uw eigen component WCM om een kleurenmonster te verzoeken en de `SmartSwatchColor` attributen te ontleden, die door een 24 beetjeRGB hexadecimale waarde worden vertegenwoordigd.<br><br> zie ook [`userdata` in de Gids van de Verwijzing van Kijkers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html). |
+| Kleur en afbeeldingsstaal | Met Bulk wordt voor elke afbeelding een afbeeldingsstaal gegenereerd. | **Nota**: Het slimme Staal wordt niet gesteund in Dynamic Media Classic.<br><br> bepaal de plaats en produceert automatisch van uitstekende kwaliteit stalen van productbeelden die kleur of textuur tonen.<br><br> om het Staal van de Kleur en van het Beeld te gebruiken, selecteer **[!UICONTROL Smart Crop]** van de drop-down lijst van de Opties van het Uitsnijden, dan rechts van Kleur en het Monster van het Beeld, laat (zet) de eigenschap toe. Geef een pixelwaarde op in de tekstvakken Breedte en Hoogte.<br><br> terwijl alle beeldgewassen van het spoor van Vertoningen beschikbaar zijn, worden de monsters slechts gebruikt als eigenschap van het Exemplaar URL. Gebruik uw eigen weergavecomponent om het staal op uw site te renderen. (De uitzondering op deze regel zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.)<br><br>**Gebruikend beeldmonsters**<br> URL voor beeldmonsters is ongecompliceerd. Het is:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br> waar `:Swatch` aan het activaverzoek wordt toegevoegd.<br><br>**Gebruikend kleurenstalen**<br> om kleurenstalen te gebruiken, maakt u a `req=userdata` verzoek met het volgende:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br> Bijvoorbeeld, is het volgende een staalactiva in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br> en hier is het overeenkomstige de dienovereenkomstige `req=userdata` URL van de staalactiva:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br> De `req=userdata` reactie is als volgt:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br> u kunt een `req=userdata` reactie in of XML of formaat JSON, zoals in verzoeken respectieve URL voorbeelden:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota:** creeer uw eigen component WCM om een kleurenmonster te verzoeken en de `SmartSwatchColor` attributen te ontleden, die door een 24 beetjeRGB hexadecimale waarde worden vertegenwoordigd.<br><br> zie ook [`userdata` in de Gids van de Verwijzing van Kijkers ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
 
 ## Onscherp masker {#unsharp-mask}
 
-U gebruikt **[!UICONTROL Unsharp mask]** om een verscherpingsfiltereffect op de definitieve gedownsampelde afbeelding nauwkeurig af te stemmen. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Dit effect gebruikt de zelfde opties zoals Adobe Photoshop *Onscherp filter van het Masker*.
+Met **[!UICONTROL Unsharp mask]** kunt u een verscherpingsfiltereffect op de uiteindelijke gedownsampelde afbeelding perfectioneren. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor contrast instellen die wordt genegeerd. Dit effect gebruikt de zelfde opties zoals Adobe Photoshop *Onscherp filter van het Masker*.
 
 >[!NOTE]
 >
->Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen binnen de titel niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
+>Het onscherp masker wordt alleen toegepast op geschaalde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen binnen het pad niet worden beïnvloed door het onscherpe masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
 
 In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
 
 | Optie | Beschrijving |
 | --- | --- |
-| Hoeveelheid | Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde is 1,75. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot maximaal 5. Beschouw Hoeveelheid als een maat voor de filterintensiteit. Bereik is 0-5. |
-| Straal | Hiermee bepaalt u het aantal pixels rondom de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een waarde in tussen 1 en 2. Met een lage waarde worden alleen de randpixels verscherpt; met een hoge waarde wordt een bredere reeks pixels verscherpt. De juiste waarde is afhankelijk van de grootte van de afbeelding. De standaardwaarde is 0,2. Bereik is 0-250. |
+| Hoeveelheid | Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde is 1,75. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot maximaal 5. Beschouw Hoeveelheid als een maat voor de filterintensiteit. Het bereik is 0-5. |
+| Straal | Hiermee bepaalt u het aantal pixels rondom de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een waarde in tussen 1 en 2. Met een lage waarde worden alleen de randpixels verscherpt; met een hoge waarde wordt een bredere reeks pixels verscherpt. De juiste waarde is afhankelijk van de grootte van de afbeelding. De standaardwaarde is 0,2. Het bereik is 0-250. |
 | Drempel | Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze als randpixels worden beschouwd en worden verscherpt. Experimenteer met waarden tussen 0 en 255 om ruis te voorkomen. |
 
 Verscherpen wordt beschreven in [ het Verscherpen Beelden ](/help/assets/assets/sharpening_images.pdf).
@@ -183,17 +183,20 @@ U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw u
 
 Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorgegeven overal waar u het uitsnijden voor de specifieke afbeeldingen gebruikt.
 
-U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnieuw wilt genereren.
+Herhaal de slimme uitsnijding om de extra uitsnijdingen indien nodig opnieuw te genereren.
 
 Zie ook [ uitgeven het slimme gewas of het slimme monster van veelvoudige beelden ](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **om het slimme gewas of slim monster van één enkel beeld uit te geven:**
 
 1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
-
 1. Selecteer de map zodat u de inhoud ervan kunt openen.
 1. Selecteer de afbeelding waarvan u de slimme uitsnijding of het slimme staal wilt aanpassen.
 1. Selecteer **[!UICONTROL Smart Crop]** in de werkbalk.
+
+   >[!TIP]
+   >
+   >Gebruik de sneltoets `s` om de slimme gewassen of slimme stalen te bewerken.
 
 1. Voer een van de volgende handelingen uit:
 
@@ -214,7 +217,7 @@ Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map,
 
 Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorgegeven overal waar u het uitsnijden voor de specifieke afbeeldingen gebruikt.
 
-U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnieuw wilt genereren.
+Herhaal de slimme uitsnijding om de extra uitsnijdingen indien nodig opnieuw te genereren.
 
 **om het slimme gewas of slim monster van veelvoudige beelden uit te geven:**
 

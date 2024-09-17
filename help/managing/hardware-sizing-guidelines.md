@@ -5,9 +5,9 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
+source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -89,8 +89,6 @@ De vereiste schijfruimte hangt sterk af van zowel het volume als het type van uw
 * de algemene groei van de inhoud in de loop der tijd
 
 De schijfruimte wordt onophoudelijk gecontroleerd tijdens Online, en Off-line, de Opruiming van de Revisie. Als de beschikbare schijfruimte onder een kritieke waarde daalt, wordt het proces geannuleerd. De kritieke waarde is 25% van de huidige schijfvoetafdruk van de opslagplaats en kan niet worden geconfigureerd. Adobe raadt aan de schijf ten minste twee of drie keer groter te maken dan de opslagplaats, inclusief de geschatte groei.
-
-Overweeg een installatie van redundante arrays van onafhankelijke schijven (RAID, bijvoorbeeld RAID10) voor gegevensredundantie.
 
 ### Virtualisatie {#virtualization}
 

@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 110636c0208a23e0b088e19fe47c38f28adb9bdd
+source-git-commit: fed35f2b90e2b8fd9e7240abf3b25e3650fa31c2
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 12%
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # [!DNL Assets] voorbereiden voor slimme tags {#configure-asset-tagging-using-the-smart-content-service}
 
-Voordat u met het labelen van uw middelen begint met Smart Content Services, moet u [!DNL Experience Manager Assets] integreren met Adobe Developer Console om de slimme service van [!DNL Adobe Sensei] te gebruiken. Zodra gevormd treig de dienst gebruikend een paar beelden en een markering.
+Voordat u met het labelen van uw middelen begint met Smart Content Services, moet u [!DNL Experience Manager Assets] integreren met Adobe Developer Console om de slimme service van [!DNL Adobe Sensei] te gebruiken. Als de service eenmaal is geconfigureerd, kunt u de service trainen met enkele afbeeldingen en een tag.
 
 >[!NOTE]
 >

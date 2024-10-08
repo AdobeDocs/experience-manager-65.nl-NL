@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot  [!DNL Adobe Experience Manager Assets]
-description: Maak, beheer, verwerk en distribueer digitale assets in Exerience Manager. In deze handleidingen worden aanbevolen methoden, toegankelijkheidsfuncties en het gebruik van AEM 6.5-elementen beschreven.
+description: Maak, beheer, verwerk en distribueer digitale assets in Experience Manager. In deze handleidingen worden aanbevolen methoden, toegankelijkheidsfuncties en het gebruik van AEM 6.5-elementen beschreven.
 hide: true
 feature: Asset Management
 role: Leader, Architect, User

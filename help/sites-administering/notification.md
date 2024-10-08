@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2141'
 ht-degree: 0%
 
 ---
@@ -299,8 +299,15 @@ Eerst, vorm de Dienst van de Post:
 
 Daarna, vorm uw leverancier SMTP OAuth door de hieronder procedure te volgen:
 
+>[!WARNING]
+>
+>Als, na de voltooiing van deze configuratie, u ** van de waarden in de configuratie OSGi **CQ van de Aannemer SMTP OAuth2** ooit verandert, dan moet u opnieuw na deze stappen opnieuw machtigen.
+>
+>Als deze niet worden uitgevoerd, zal het toegangstoken dat bij `/conf/global/settings/mailer/oauth` wordt opgeslagen ongeldig zijn en de verbinding OAuth2 aan de server SMTP zal ontbreken.
+
 1. Open de AEM webconsole door naar `http://serveraddress:serverport/system/console/configMgr` te gaan
 1. Zoek, dan klik **de Wijze SMTP OAuth2 Leverancier van de Aannemer CQ**
+
 1. Vul de vereiste informatie als volgt in:
    * Autorisatie-URL: `https://accounts.google.com/o/oauth2/auth`
    * Token-URL: `https://accounts.google.com/o/oauth2/token`
@@ -371,6 +378,12 @@ Om opnieuw te verpakken, moet u de volgende informatie hebben om OAuth2 voor de 
 **AEM Zijconfiguraties**
 
 Vervolgens integreert u uw OAuth2-instellingen met AEM:
+
+>[!WARNING]
+>
+>Als, na de voltooiing van deze configuratie, u ** van de waarden in de configuratie OSGi **CQ van de Aannemer SMTP OAuth2** ooit verandert, dan moet u opnieuw na deze stappen opnieuw machtigen.
+>
+>Als deze niet worden uitgevoerd, zal het toegangstoken dat bij `/conf/global/settings/mailer/oauth` wordt opgeslagen ongeldig zijn en de verbinding OAuth2 aan de server SMTP zal ontbreken.
 
 1. Ga naar de webconsole van uw lokale instantie door naar `http://serveraddress:serverport/system/console/configMgr` te bladeren
 1. Zoek en klik {de Dienst van de Post van 0} Dag CQ ****

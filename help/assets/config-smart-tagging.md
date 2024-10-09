@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
+source-git-commit: 7cc1722617b463fa5da5b965215cd91cc8ea8fb0
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 12%
+source-wordcount: '2045'
+ht-degree: 11%
 
 ---
 
@@ -31,6 +31,35 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
 * [ Lijn de Slimme Dienst van de Inhoud ](#training-the-smart-content-service).
 
 * Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+
+## SCS upgrade ter ondersteuning van Oauth voor Adobe Managed Services {#scs-upgrade-oauth-managed-services}
+
+**Nieuwe Gebruikers**
+
+Installeer Service Pack 21. Om Oauth integratie op Service Pack 21 te steunen, moet u [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installeren.
+
+Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
+
+**Bestaande gebruikers**
+
+Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
+
+Voor Service Pack 20 en ouder, moet u de tijdelijke stappen voor SCS uitvoeren om Oauth integratie te steunen. Zie [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md).
+
+## SCS verbetering om Oauth voor Op-premise gebruikers te steunen {#scs-upgrade-oauth-on-premise}
+
+**Nieuwe Gebruikers**
+
+Smart Content Services is niet meer beschikbaar voor nieuwe [!DNL Experience Manager Assets] gebruikers op locatie.
+
+**Bestaande gebruikers**
+
+Bestaande gebruikers op locatie die deze mogelijkheid al hebben ingeschakeld, kunnen services voor slimme inhoud blijven gebruiken.
+
+Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
+
+Voor Service Pack 20 en ouder, moet u de tijdelijke stappen voor SCS uitvoeren om Oauth integratie te steunen. Zie [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md).
+
 
 ## Integreren met Adobe Developer Console {#integrate-adobe-io}
 

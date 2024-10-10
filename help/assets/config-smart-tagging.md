@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 09f7cf283c67adcc0a14d6a3a75bfdeafc37d151
+source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1914'
 ht-degree: 12%
 
 ---
@@ -38,7 +38,7 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
 
 **Nieuwe Gebruikers**
 
-Installeer Service Pack 21. Om Oauth integratie op Service Pack 21 te steunen, moet u [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installeren.
+Installeer Service Pack 21. Om Oauth integratie op Service Pack 21 te steunen, moet u [ Hotfix voor Service Pack 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installeren.
 
 Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
 

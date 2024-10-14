@@ -10,10 +10,10 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 13%
+source-wordcount: '1097'
+ht-degree: 12%
 
 ---
 
@@ -158,7 +158,16 @@ Om een genestelde lancering van de **console van Plaatsen** tot stand te brengen
 
    Als u **Gereed** selecteert, keert u terug naar het spoor met **Referenties** van de **Sites**-console. Als u de juiste pagina selecteert, wordt de nieuwe startpagina weergegeven.
 
-### Een Starten verwijderen {#deleting-a-launch}
+### Een Starten klonen {#cloning-a-launch}
+
+U kunt een lancering van de [ lanceert console ](/help/sites-authoring/launches.md#the-launches-console) klonen:
+
+* Selecteer de start door op de miniatuur te tikken of te klikken.
+* De werkbalk wordt weergegeven. Selecteer Klonen.
+   * De kloon zal in de console worden gecreeerd en worden getoond.
+   * De **Titel van de Lancering** zal erop wijzen dat het een kloon is. U kunt de titel bijwerken door de [ Configuratie van de Lancering ](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) uit te geven (**Eigenschappen**).
+
+## Een Starten verwijderen {#deleting-a-launch}
 
 U kunt een lancering van de [ lanceert console ](/help/sites-authoring/launches.md#the-launches-console) schrappen:
 

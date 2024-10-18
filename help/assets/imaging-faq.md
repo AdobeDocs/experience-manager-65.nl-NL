@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 93e9f9318f71a0fd1004c49cc9b1b3d349a4c9ed
+source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 0%
@@ -138,7 +138,7 @@ DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliën
 
 ## Veelgestelde vragen {#fag}
 
-+++Zijn er licentiekosten verbonden aan Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++Zijn er licentiekosten verbonden aan Smart Imaging?
 
 Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en as a Cloud Service Experience Manager).
 
@@ -148,7 +148,7 @@ Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt
 
 +++
 
-+++Hoe werkt Smart Imaging? {#how-does-smart-imaging-work}
++++Hoe werkt Smart Imaging?
 
 Wanneer een consument om een afbeelding vraagt, analyseert Smart Imaging de gebruikerskenmerken en zet deze om in de juiste indeling op basis van de browser. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
 
@@ -170,7 +170,7 @@ Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging
 
 +++
 
-+++Welke afbeeldingsindelingen worden ondersteund? {#what-image-formats-are-supported}
++++Welke afbeeldingsindelingen worden ondersteund?
 
 De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
 
@@ -183,7 +183,7 @@ Voor afbeeldingsbestandsindelingen die transparantie ondersteunen, zoals PNG, ku
 
 +++
 
-+++Hoe werkt Smart Imaging met mijn bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
++++Hoe werkt Smart Imaging met mijn bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn?
 
 Slimme afbeeldingen worden naadloos geïntegreerd met uw bestaande voorinstellingen voor afbeeldingen, waarbij alle afbeeldingsinstellingen worden gerespecteerd.
 
@@ -195,7 +195,7 @@ Een voorinstelling voor een afbeelding geeft bijvoorbeeld een JPEG-indeling op v
 
 <!--
 
-### Do I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
+### Do I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? 
 
 No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add code to your website to detect a user's browser. All of this functionality is handled automatically.
 
@@ -207,13 +207,13 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-+++Werkt Slimme afbeelding met HTTPS? Hoe zit het met HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
++++Werkt Slimme afbeelding met HTTPS? Hoe zit het met HTTP/2?
 
 Slimme afbeeldingen werken met afbeeldingen die via HTTP of HTTPS worden geleverd. Bovendien werkt het ook via HTTP/2.
 
 +++
 
-+++Ben ik verkiesbaar om Slimme Beelden te gebruiken? {#am-i-eligible-to-use-smart-imaging}
++++Ben ik verkiesbaar om Slimme Beelden te gebruiken?
 
 Smart Imaging is direct beschikbaar voor alle klanten. Als u van de voordelen ervan wilt genieten, voegt u `bfc=on` of `dpr=on,dprValue` , of `network=on` , of alle drie parameterinstellingen toe aan uw bestaande URL&#39;s of voorinstellingen.
 
@@ -221,7 +221,7 @@ Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Med
 
 +++
 
-+++Wat is het proces om Smart Imaging voor een account in te schakelen? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
++++Wat is het proces om Smart Imaging voor een account in te schakelen?
 
 Als u Smart Imaging wilt gaan gebruiken, voegt u `bfc=on` , `dpr=on,dprValue` of `network=on` of alle drie parameterinstellingen toe aan uw bestaande URL&#39;s of voorinstellingen. Als u deze wijzigingen liever niet handmatig doorvoert, kunt u Smart Imaging standaard inschakelen door een ondersteuningscase te maken.
 
@@ -278,7 +278,7 @@ De TTL aanpassen:
 
 +++
 
-+++Wanneer kan ik verwachten dat een account wordt ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
++++Wanneer kan ik verwachten dat een account wordt ingeschakeld met Smart Imaging?
 
 De processen van de Steun van de klant verzoeken in de orde dat zij hen, na de Lijst van de Wacht ontvangen.
 
@@ -288,7 +288,7 @@ De processen van de Steun van de klant verzoeken in de orde dat zij hen, na de L
 
 +++
 
-+++Wat zijn de risico&#39;s met het schakelen over om Slimme Beeldvorming te gebruiken? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
++++Wat zijn de risico&#39;s met het schakelen over om Slimme Beeldvorming te gebruiken?
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de CDN-cache echter wel gewist. Bij deze bewerking gaat u naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media op Experience Manager.
 
@@ -296,7 +296,7 @@ Tijdens de eerste overgang raken de oorspronkelijke servers van de Adobe rechtst
 
 +++
 
-+++Hoe kan ik verifiëren of Slimme Beeldvorming zoals verwacht werkt?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
++++Hoe kan ik verifiëren of Slimme Beeldvorming zoals verwacht werkt?
 
 1. Wanneer uw account is geconfigureerd met Smart Imaging, laadt u een Dynamic Media Classic- of Adobe Experience Manager - Dynamic Media-afbeeldings-URL in de browser.
 1. Open het Chrome-ontwikkelaarsvenster door in de browser naar **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** te gaan. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
@@ -317,7 +317,7 @@ Tijdens de eerste overgang raken de oorspronkelijke servers van de Adobe rechtst
 
 +++
 
-+++Hoe ken ik de prestatiewinst? Is er een manier om de voordelen van Smart Imaging te kennen? {#benefits}
++++Hoe ken ik de prestatiewinst? Is er een manier om de voordelen van Smart Imaging te kennen?
 
 De koptekst Slimme afbeeldingen bepaalt de voordelen van Slimme afbeeldingen. Wanneer Slimme afbeeldingen is ingeschakeld, kunt u na een verzoek om een afbeelding onder de kop **[!UICONTROL Response Headers]** `-X-Adobe-Smart-Imaging` zien zoals in het volgende gemarkeerde voorbeeld:
 
@@ -342,13 +342,13 @@ Deze koptekst geeft het volgende aan:
 
 +++
 
-+++Hoe kan ik optimalisering AVIF in Slimme Beeldvorming onbruikbaar maken?{#disable-avif}
++++Hoe kan ik optimalisatie van AVIF in Slimme Beeldvorming onbruikbaar maken?
 
 Als u terug naar het dienen WebP door gebrek wilt schakelen, creeer een steungeval voor het zelfde. Zoals gebruikelijk, kunt u Smart Imaging uitzetten door de parameter `bfc=off` aan URL van het beeld toe te voegen. U kunt WebP of AVIF echter niet selecteren in de URL-optie voor Smart Imaging. Deze mogelijkheid blijft behouden op het niveau van uw bedrijfsaccount.
 
 +++
 
-+++Kan Smart Imaging voor om het even welk verzoek worden uitgezet?{#turning-off-smart-imaging}
++++Kan Smart Imaging voor een verzoek worden uitgeschakeld?
 
 Ja. U kunt Smart Imaging uitschakelen door een van de volgende opties toe te voegen:
 
@@ -358,7 +358,7 @@ Ja. U kunt Smart Imaging uitschakelen door een van de volgende opties toe te voe
 
 +++
 
-+++Wat is &quot;het stemmen&quot;beschikbaar? Zijn er instellingen of gedragingen die kunnen worden gedefinieerd? {#tuning-settings}
++++Wat is &quot;het stemmen&quot;beschikbaar? Zijn er instellingen of gedragingen die kunnen worden gedefinieerd?
 
 Slimme afbeeldingen hebben drie opties die u kunt in- of uitschakelen.
 
@@ -368,7 +368,7 @@ Slimme afbeeldingen hebben drie opties die u kunt in- of uitschakelen.
 
 +++
 
-+++I heeft een URL met fmt=tif op browser van het Web van Chrome. Maar mijn verzoek ontbreekt met een Fout ImageServer. Waarom? {#fmt-tif}
++++I heeft een URL met fmt=tif op browser van het Web van Chrome. Maar mijn verzoek ontbreekt met een Fout ImageServer. Waarom?
 
 Deze fout treedt niet op als Smart Imaging niet is ingeschakeld voor uw account. Slimme afbeeldingen werken alleen in de indeling JPEG of PNG.
 
@@ -380,7 +380,7 @@ U kunt deze fout voorkomen door:
 
 +++
 
-+++Ik wil een TIFF-afbeelding downloaden van de URL van een afbeelding. Hoe doe ik dat? {#download-tif}
++++Ik wil een TIFF-afbeelding downloaden van de URL van een afbeelding. Hoe doe ik dat?
 
 Voeg `fmt=tif` en `bfc=off` toe aan het URL-pad van de afbeelding.
 
@@ -392,43 +392,43 @@ Voor Smart Imaging worden zowel de indeling als de kwaliteit gebruikt. De overig
 
 +++
 
-+++Als Smart Imaging de kwaliteitsinstellingen beheert, zijn er dan minimum- en maximumwaarden die ik kan instellen? Met andere woorden, een kwaliteit die niet lager is dan 60 en niet hoger dan 80? {#quality-setting}
++++Als Smart Imaging de kwaliteitsinstellingen beheert, zijn er dan minimum- en maximumwaarden die ik kan instellen? Met andere woorden, een kwaliteit die niet lager is dan 60 en niet hoger dan 80?
 
 Op dit moment bestaat een dergelijke voorziening niet.
 
 +++
 
-+++Past Smart Imaging automatisch de uitvoerinstelling voor de percentagekwaliteit aan of is die instelling handmatig aangepast en van toepassing op alle afbeeldingen? Binnen welk bereik? {#percent-quality}
++++Past Smart Imaging automatisch de uitvoerinstelling voor de percentagekwaliteit aan of is die instelling handmatig aangepast en van toepassing op alle afbeeldingen? Binnen welk bereik?
 
 Met Slimme afbeeldingen wordt het kwaliteitspercentage automatisch aangepast. Deze kwaliteit wordt bepaald met behulp van een machinaal leeralgoritme dat door Adobe wordt ontwikkeld. Dit percentage is niet bereikspecifiek.
 
 +++
 
-+++Met Smart Imaging, welke opdrachten voor Image Serving worden ondersteund of genegeerd? {#support-ignore}
++++Met Smart Imaging, welke opdrachten voor Image Serving worden ondersteund of genegeerd?
 
 De enige opdrachten die worden genegeerd, zijn `fmt` en `qlt` . Alle resterende opdrachten worden ondersteund.
 
 +++
 
-+++Zijn alleen JPEG-afbeeldingen vervangen door slimme afbeeldingen? Wat als ik om een WebP, PNG, of iets anders verzoek? {#replace-request}
++++Zijn alleen JPEG-afbeeldingen vervangen door slimme afbeeldingen? Wat als ik om een WebP, PNG, of iets anders verzoek?
 
 Deze functionaliteit werkt alleen voor JPEG en PNG.
 
 +++
 
-+++Waarom wordt een JPEG-afbeelding soms geretourneerd naar Chrome in plaats van naar WebP? {#jpeg-returned}
++++Waarom wordt een JPEG-afbeelding soms geretourneerd naar Chrome in plaats van naar WebP?
 
 Slimme afbeeldingen bepalen of de conversie nuttig is. Het retourneert alleen de nieuwe afbeelding van de conversie.
 
 +++
 
-+++Waarom werkt de functionaliteit van de Pixelverhouding van het Apparaat (dpr) niet zoals verwacht bij samengestelde beelden? {#composite-images}
++++Waarom werkt de functionaliteit van de Pixelverhouding van het Apparaat (dpr) niet zoals verwacht bij samengestelde beelden?
 
 Als een samengestelde afbeelding te veel lagen bevat, kan de dpr-functionaliteit worden beïnvloed wanneer u een positiewijziging gebruikt. Dit probleem is bekend en moet worden opgelost in toekomstige versies van Smart Imaging. Als andere functies voor Smart Imaging niet naar behoren werken, kunt u een ondersteuningscase maken om het probleem te melden.
 
 +++
 
-+++Waarom wordt PNG van slimme afbeeldingen nog steeds omgezet in WebP/AVIF zonder verlies? {#convert-to-lossless}
++++Waarom wordt PNG van slimme afbeeldingen nog steeds omgezet in WebP/AVIF zonder verlies?
 
 Omdat PNG een indeling zonder gegevensverlies is, zijn eerdere WebP- en AVIF-bewerkingen zonder gegevensverlies uitgevoerd. Hierdoor is het bestand groter dan u had verwacht. Smart Imaging ondersteunt nu omzetten met verlies. U kunt de optie `cache=update` (slechts één keer) in een afbeeldingsaanvraag gebruiken om dit probleem op te lossen. Een voorbeeld van het gebruik van deze modifier:
 
@@ -438,7 +438,7 @@ Om het volledige geheime voorgeheugen ongeldig te maken, moet u een steungeval c
 
 +++
 
-+++Hoe kan ik PNG blijven gebruiken om zonder verlies te converteren in Smart Imaging? {#continue-using}
++++Hoe kan ik PNG blijven gebruiken om zonder verlies te converteren in Smart Imaging?
 
 Smart Imaging ondersteunt nu verliesconversie op basis van het kwaliteitsniveau. U kunt de omzetting zonder verlies blijven gebruiken door de kwaliteit in te stellen op 100, via de instellingen van uw bedrijf of door `qlt=100` toe te voegen aan het URL-pad van de afbeelding.
 

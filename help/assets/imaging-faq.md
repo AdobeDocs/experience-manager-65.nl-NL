@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
+source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3285'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Smart Imaging past de unieke weergavekenmerken van elke gebruiker toe om de juiste afbeeldingen te leveren die automatisch zijn geoptimaliseerd voor hun ervaring, wat resulteert in betere prestaties en betrokkenheid.
 
-## Wat is &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
+## Slimme afbeeldingen {#what-is-smart-imaging}
 
 Smart Imaging-technologie past Adobe Sensei AI-mogelijkheden toe en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot;. De functie verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling, grootte en kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
@@ -136,7 +136,7 @@ DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliën
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. In de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
 * Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd. Bijvoorbeeld, &quot;het Timing staat Oorsprong&quot;en &quot;x-Robot&quot;zoals gesuggereerd in [ voeg een waarde van de douanekop aan beeldreacties toe|Dynamic Media Classic ](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Veelgestelde vragen {#fag}
+## Veelgestelde vragen
 
 +++Zijn er licentiekosten verbonden aan Smart Imaging?
 

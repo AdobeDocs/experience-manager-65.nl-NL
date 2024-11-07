@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
 workflow-type: tm+mt
-source-wordcount: '7448'
+source-wordcount: '7450'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 1%
 + Opmerkingen bij de release {#release-notes}
    + [Opmerkingen bij de release](/help/release-notes/release-notes.md)
    + Opmerkingen bij vorige release {#service-pack}
+      + [6.5.21.](/help/release-notes/previous/6-5-21.md)
       + [ 6.5.20 ](/help/release-notes/previous/6-5-20.md)
       + [6.5.19.](/help/release-notes/previous/6-5-19.md)
       + [6.5.18.](/help/release-notes/previous/6-5-18.md)
@@ -536,7 +537,7 @@ ht-degree: 1%
          + [Referentie adaptieve formulierfragmenten](/help/forms/using/reference-adaptive-form-fragments.md)
          + [Referentiethema&#39;s](/help/forms/using/reference-themes.md)
          + [Referentielettersjablonen](/help/forms/using/reference-cm-layout-templates.md)
-         + [Vorm de Dynamiek 365 van Microsoft voor het huishypotheekwerkschema van de Web.Finance verwijzingsplaats](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+         + [Microsoft Dynamics 365 configureren voor de workflow voor hypothecaire woningen van de website Web.Finance](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
    + AEM Forms installeren en configureren {#install-aem-forms}
       + [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Een persistentietype kiezen voor een AEM Forms-installatie](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
@@ -610,7 +611,7 @@ ht-degree: 1%
    + Formuliergegevensmodel {#form-data-model}
       + [Inleiding tot AEM Forms Data Integration](/help/forms/using/data-integration.md)
       + [Gegevensbronnen configureren](/help/forms/using/configure-data-sources.md)
-      + [Configuratie Microsoft Dynamics Odata](/help/forms/using/ms-dynamics-odata-configuration.md)
+      + [Microsoft Dynamics Odata-configuratie](/help/forms/using/ms-dynamics-odata-configuration.md)
       + [Salesforce-integratie met OAuth 2.0-clientverificatiegegevens](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
       + [Formuliergegevensmodel maken](/help/forms/using/create-form-data-models.md)
       + [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md)

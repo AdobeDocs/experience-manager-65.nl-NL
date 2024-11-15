@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 83bebdd7b4813c4b0dea1e237b73a51d68699646
+source-git-commit: 28f8cbca33d8174d937da12d1854783cf75413c1
 workflow-type: tm+mt
-source-wordcount: '4491'
+source-wordcount: '4498'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ### Sites {#sites}
 
-[ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) is nu beschikbaar op AEM 6.5 voor hoofdloze gebruiksgevallen.
+[ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) is nu beschikbaar op AEM 6.5 voor hoofdloze gebruiksgevallen met de toepassing van een eigenschapspak.
 
 ### [!DNL Forms]
 

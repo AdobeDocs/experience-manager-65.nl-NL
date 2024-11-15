@@ -3,9 +3,10 @@ title: De Universal Editor
 description: Leer meer over de flexibiliteit van de Universal Editor en hoe deze uw ervaringen zonder kop kan helpen gebruiken met AEM 6.5.
 feature: Developing
 role: Developer
-source-git-commit: a088fcb3069fae7e63c7238710534d817a308eff
+exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
+source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -46,17 +47,17 @@ Zodra u de opstelling hebt voltooid, kunt u [ instrument uw toepassingen om de U
 
 ### AEM bijwerken {#update-aem}
 
-Service pack 21 en een functiepakket voor AEM zijn vereist om de Universal Editor met AEM 6.5 te kunnen gebruiken.
+Service pack 21 of 22 en een functiepakket voor AEM zijn vereist om de Universal Editor met AEM 6.5 te kunnen gebruiken.
 
 #### Nieuwste Service Pack toepassen {#latest}
 
-Zorg ervoor dat u minstens de dienstpak 21 voor AEM 6.5 in werking stelt. U kunt het recentste de dienstpak van [ Distributie van de Software downloaden.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Zorg ervoor dat u minstens de dienstpak 21 of 22 voor AEM 6.5 in werking stelt. U kunt het recentste de dienstpak van [ Distributie van de Software downloaden.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 #### Universal Editor-functiepakket installeren {#feature-pack}
 
 Installeer het **Universele Pak van de Eigenschap van de Redacteur voor AEM 6.5** [ beschikbaar op de Distributie van de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-Als u reeds de dienstpak 23 of hoger in werking stelt, is deze stap niet noodzakelijk.
+Als u reeds de dienstpak 23 of hoger in werking stelt, is het eigenschappak niet noodzakelijk.
 
 ### Services configureren {#configure-services}
 

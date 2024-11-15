@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
 # Metagegevens - Fragmenteigenschappen {#metadata-fragment-properties}
 
-Zie hoe u de eigenschappen van metagegevens voor Content Fragments in AEM kunt weergeven en bewerken om de inhoud zonder kop aan te passen.
+Zie hoe u de editor voor inhoudsfragmenten kunt gebruiken om de eigenschappen van metagegevens voor inhoudsfragmenten in AEM weer te geven en te bewerken om de inhoud zonder kop aan te passen.
 
 ## Eigenschappen/metagegevens bewerken {#editing-properties-meta-data}
 

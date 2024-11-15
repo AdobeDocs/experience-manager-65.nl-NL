@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '257'
 ht-degree: 4%
 
 ---
 
 # Gekoppelde inhoud{#associated-content}
 
-AEM de functie Gekoppelde inhoud biedt de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit verstrekt flexibiliteit voor uw inhoud zonder kop levering door [ te verstrekken die een waaier van activa verstrekken om toegang te hebben wanneer het gebruiken van het inhoudsfragment op een pagina, ](/help/sites-authoring/content-fragments.md#using-associated-content) terwijl ook het helpen om de tijd te verminderen die wordt vereist om naar de aangewezen activa te zoeken.
+AEM de functie Gekoppelde inhoud biedt de verbinding, zodat elementen (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit verstrekt flexibiliteit voor uw inhoud zonder kop levering door [ te verstrekken die een waaier van activa verstrekken om toegang te hebben wanneer het gebruiken van het inhoudsfragment op een pagina, ](/help/sites-authoring/content-fragments.md#using-associated-content) terwijl ook het helpen om de tijd te verminderen die wordt vereist om naar de aangewezen activa te zoeken. Om het even welke bijbehorende inhoud kan worden gevormd gebruikend de redacteur van het Fragment van de Inhoud.
 
 ## Gekoppelde inhoud toevoegen {#adding-associated-content}
 

@@ -4,7 +4,7 @@ description: Leer meer over de flexibiliteit van de Universal Editor en hoe deze
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
+source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Het eigenschappak installeert een aantal nieuwe pakketten waarvoor extra configu
 1. Open de Manager van de Configuratie.
    * `http://<host>:<port>/system/console/configMgr`
 1. Bepaal de plaats van **Adobe graniet Symbolische de Handler van de Authentificatie** in de lijst en klik **verander de configuratiewaarden**.
-1. In de dialoog, verander het **attribuut SameSite voor login-symbolische koekje** (`token.samesite.cookie.attr`) waarde in `Partitioned`.
+1. In de dialoog, verander het **attribuut SameSite voor login-symbolische koekjeswaarde** (`token.samesite.cookie.attr`) in `Partitioned`.
 1. Klik **sparen**.
 
 #### Verwijder de optie `SAMEORIGIN` Kopteksten X-Frame. {#sameorigin}

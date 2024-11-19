@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
+source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2149'
 ht-degree: 0%
 
 ---
@@ -119,9 +119,11 @@ This is an automatically generated message. Please do not reply.
 
 U kunt als volgt de Engelse e-mailsjabloon voor paginabeldingen aanpassen:
 
-1. Open het bestand in CRXDE:
+1. Creeer een bedekking voor [ de berichten van de Pagina ](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 
-   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
+1. Open het bestand:
+
+   `en.txt`
 
 1. Wijzig het bestand naar wens.
 1. Sla de wijzigingen op.
@@ -181,9 +183,11 @@ This is an automatically generated message. Please do not reply.
 
 U kunt als volgt de Engelse e-mailsjabloon voor workflowgebeurtenismeldingen aanpassen:
 
-1. Open het bestand in CRXDE:
+1. Creeer een bedekking voor [ berichten van het Werkschema ](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-   `/libs/settings/workflow/notification/email/default/en.txt`
+1. Open het bestand:
+
+   `en.txt`
 
 1. Wijzig het bestand naar wens.
 1. Sla de wijzigingen op.
@@ -239,11 +243,12 @@ De volgende variabelen kunnen binnen het e-mailmalplaatje worden gebruikt:
 
 Een sjabloon toevoegen voor een nieuwe taal:
 
-1. Voeg hieronder een bestand `<language-code>.txt` toe in CRXDE:
+1. Creeer een [ bekleding ](/help/sites-developing/overlays.md) zoals aangewezen.
 
-   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : voor paginameldingen
-   * `/libs/settings/workflow/notification/email/default` : voor workflowmeldingen
+   * [Paginameldingen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+   * [Workflowmeldingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
+1. Voeg een bestand toe `<language-code>.txt`.
 1. Pas het bestand aan de taal aan.
 1. Sla de wijzigingen op.
 

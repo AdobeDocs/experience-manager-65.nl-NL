@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
+source-git-commit: 917723f89c037756a74fef9a54df9237d4283c1d
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,13 +38,13 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
 
 **Nieuwe Gebruikers**
 
-Installeer Service Pack 21. Om Oauth integratie op Service Pack 21 te steunen, moet u [ Hotfix voor Service Pack 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) installeren.
+Installeer Service Pack 22. Om Oauth integratie op Service Pack 22 te steunen, moet u [ Hotfix voor Service Pack 22 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installeren.
 
 Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
 
 **Bestaande gebruikers**
 
-Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
+Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor Service Pack 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud. Als u aan Service Pack 22 bevordert, moet u dit [ Hotfix voor Service Pack 22 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installeren.
 
 Voor Service Pack 20 en ouder, moet u de tijdelijke stappen voor SCS uitvoeren om Oauth integratie te steunen. Zie [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md).
 
@@ -58,7 +58,7 @@ Smart Content Services is niet meer beschikbaar voor nieuwe [!DNL Experience Man
 
 Bestaande gebruikers op locatie die deze mogelijkheid al hebben ingeschakeld, kunnen services voor slimme inhoud blijven gebruiken.
 
-Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor SP 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud.
+Als u aan Service Pack 21 hebt bevorderd, installeer [ Hotfix voor Service Pack 21 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) om Oauth integratie te steunen. Elke bestaande configuratie wordt automatisch verwijderd. Volg de instructies in dit artikel aan opstellings de Slimme Diensten van de Inhoud. Als u aan Service Pack 22 bevordert, moet u dit [ Hotfix voor Service Pack 22 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip) installeren.
 
 Voor Service Pack 20 en ouder, moet u de tijdelijke stappen voor SCS uitvoeren om Oauth integratie te steunen. Zie [ het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth ](config-oauth.md).
 

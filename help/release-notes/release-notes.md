@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 9026b6777e4c3f030eae37491c823a68afe61270
+source-git-commit: 38271b27134afa2b350c6595cf0bdc335f110be3
 workflow-type: tm+mt
 source-wordcount: '5016'
 ht-degree: 0%
@@ -405,7 +405,7 @@ Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-
 
 ### UberJar{#uber-jar}
 
-UberJar voor [!DNL Experience Manager] 6.5.22.0 is beschikbaar in de [ Gemaakt Centrale bewaarplaats ](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.21/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar voor [!DNL Experience Manager] 6.5.22.0 is beschikbaar in de [ Gemaakt Centrale bewaarplaats ](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Om UberJar in een Geweven project te gebruiken, zie [ hoe te om UberJar ](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 

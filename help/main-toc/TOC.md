@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 7d07190d923cd4d7d2d6bac62baece18a7e068ee
+source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7454'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,9 @@ ht-degree: 1%
 # Adobe Experience Manager 6.5-documentatie {#content}
 
 + Opmerkingen bij de release {#release-notes}
-   + [Opmerkingen bij de release](/help/release-notes/release-notes.md)
+   + [ de nota&#39;s van de Versie ](/help/release-notes/release-notes.md)
    + Opmerkingen bij vorige release {#service-pack}
+      + [6.5.21.](/help/release-notes/previous/6-5-21.md)
       + [ 6.5.20 ](/help/release-notes/previous/6-5-20.md)
       + [6.5.19.](/help/release-notes/previous/6-5-19.md)
       + [6.5.18.](/help/release-notes/previous/6-5-18.md)

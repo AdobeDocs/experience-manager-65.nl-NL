@@ -9,9 +9,9 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2159'
 ht-degree: 0%
 
 ---
@@ -204,6 +204,22 @@ fragment="myFragment"/>
 </DDX>
 ```
 
+#### Referenties oplossen in CRX-opslagplaats {#resolve-references-on-crx-repository}
+
+U kunt selectief de bronverwijzing specificeren die u wilt oplossen door het crx weg van te geven
+fragmentverwijzing in de XDP-bron. In het onderstaande voorbeeld worden ook de fragmenten opgenomen
+opgelost.
+
+```xml
+<DDX xmlns="http://ns.adobe.com/DDX/1.0/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ns.adobe.com/DDX/1.0/ coldfusion_ddx.xsd">
+<XDP result="stitched.xdp">
+<XDP source="crx:///content/dam/formsanddocuments/test-xdp/sample.xdp" />
+</XDP>
+</DDX>
+```
+
 #### Absolute of relatieve verwijzingen selectief oplossen {#selectively-resolve-absolute-or-relative-references}
 
 U kunt absolute of relatieve verwijzingen selectief oplossen in alle of sommige brondocumenten, zoals aangetoond in het hieronder voorbeeld:
@@ -345,4 +361,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-Het gebruiken van DDX en de dienst van de Assembler om andere LiveC cyclusdiensten te roepen kan uw procesdiagram vereenvoudigen. Het kan zelfs de moeite die u besteedt aan het aanpassen van uw workflows verminderen. (Zie ook
+Het gebruiken van DDX en de dienst van de Assembler om andere LiveC cyclusdiensten te roepen kan uw procesdiagram vereenvoudigen. Het kan zelfs de moeite die u besteedt aan het aanpassen van uw workflows verminderen. (Zie ook)

@@ -9,9 +9,9 @@ role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2347'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Met de DocConverter-service kunt u een PDF-document omzetten in een PDF/A-docume
 De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk A en B. Het belangrijkste verschil tussen beide is de logische structuur (toegankelijkheid) die niet vereist is voor compatibiliteitsniveau B. Ongeacht het compatibiliteitsniveau, dicteert PDF/A-1 dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document. Op dit moment wordt alleen PDF/A-1b ondersteund voor validatie (en conversie).
 
 Hoewel PDF/A de standaard is voor het archiveren van PDF-documenten, is het niet verplicht dat PDF/A wordt gebruikt voor archivering als een standaard PDF-document voldoet aan de eisen van uw bedrijf. Het doel van de PDF/A-standaard is een PDF-bestand te maken dat is bedoeld voor archiverings- en documentbewaardoeleinden op lange termijn.
+
+De ondersteunde PDF/A-compatibiliteitsnormen omvatten PDF/A-1a, 1b, 2a, 2b, 3a en 3b.
 
 >[!NOTE]
 >

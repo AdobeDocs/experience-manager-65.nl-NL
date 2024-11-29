@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
+source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
 workflow-type: tm+mt
-source-wordcount: '7454'
+source-wordcount: '7477'
 ht-degree: 1%
 
 ---
@@ -624,6 +624,8 @@ ht-degree: 1%
       + [Regeleditor](/help/forms/using/rule-editor-core-components.md)
       + [Aangepaste functies maken en gebruiken in een Adaptief Core-component](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Aangepaste fouthandler maken en gebruiken voor Adaptieve Forms op basis van Core Components](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/using/add-versioning-reviews-comments.md)
+      + [Adaptieve Forms vergelijken](/help/forms/using/compare-forms-core-components.md)
    + Adaptief Forms - Basisontwerp {#adaptive-forms-basic-authoring}
       + [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md)
       + [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md)
@@ -631,6 +633,8 @@ ht-degree: 1%
       + [Adaptieve formulierfragmenten](/help/forms/using/adaptive-form-fragments.md)
       + [De handeling Verzenden configureren](/help/forms/using/configuring-submit-actions.md)
       + [CAPTCHA gebruiken in aangepaste vormen](/help/forms/using/captcha-adaptive-forms.md)
+      + [Captcha gebruiken in adaptieve vormen](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [Turnstile Captcha gebruiken in adaptieve vormen](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [Trefwoorden voor adaptieve formulieren](/help/forms/using/adaptive-forms-keywords.md)
       + [Tabellen in adaptieve formulieren](/help/forms/using/adaptive-forms-tables.md)
       + [Grafieken in adaptieve formulieren](/help/forms/using/adaptive-form-charts.md)

@@ -10,7 +10,7 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 4ce52d90f9d3300e543563ce3dc242f28e00912e
+source-git-commit: 89f807e1d31c5588d86e50160b0149e00422b78c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 0%
@@ -124,3 +124,4 @@ Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM
       1. Open Designer, ga Hulp, klik over ontwerper en u ziet de informatie van de ontwerpversie samen met de beetjeinformatie, bijvoorbeeld, wordt 64 beetje geschreven aan het eind van de versie zoals hier getoond:
          `6.5.21.20240522.1.161 | 64 bit`
       1. Open Designer. Linksboven ziet u dat een brandpictogram 64-bits informatie met de productnaam bevat.
+

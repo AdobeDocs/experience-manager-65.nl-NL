@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 27283286bd514c6f8902297cd9229b5e92a3c60d
 workflow-type: tm+mt
-source-wordcount: '6059'
+source-wordcount: '6078'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
 * [ PDF/A nalevingsverhogingen ](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): De gebruikers kunnen nu PDF in formaten PDF/A (1a, 2a, 3a) voor archiveringsdoeleinden omzetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
 
-* **Steun voor Auto het Grootte van Doopvont voor Statische documenten van de PDF**: AEM Forms Designer steunt nu Auto het Grootte van de Grootte eigenschappen in .xdp- dossiers. Gebruikers kunnen nu automatische grootten opgeven voor de tekstvelden, numerieke velden, wachtwoordvelden en datumtijdvelden in de XDP&#39;s om de inhoud van het tekstveld te renderen zonder deze velden in statische PDF-documenten af te kappen.
+* **Steun voor Auto het Rangschikken van Doopvont voor de Statische documenten van PDF**: AEM Forms Designer, OutputService en FormsService steunt nu auto sizing van doopvonten voor statische PDF. Als de gebruiker lettergrootte 0 in de sjabloon vermeldt voor velden zoals tekstveld, numeriek veld, wachtwoordveld of datumveld, wordt de tekengrootte automatisch binnen deze velden aangepast zonder dat de grootte van het veld zelf wordt gewijzigd. Als gebruikers de functie willen gebruiken, geven ze een markering door in de aangepaste xci: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>` .
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -223,7 +223,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-#### Forms {#forms-bug-fixes-sp22}
+### Forms {#forms-bug-fixes-sp22}
 
 * De URL&#39;s die voor bestandsbijlagen in opgeslagen concepten in AEM Forms worden gegenereerd, weerspiegelen niet de geconfigureerde Fabriekstoewijzingen van Apache Sling Resource Resolver. (FORMS-16949)
 * Wanneer een gebruiker op AEM Forms Service Pack 19 (6.5.19.0) een letter voorvertoont, wordt de inhoud niet goed uitgelijnd, omdat de spaties ontbreken en het teken ‘&#39;x&#39; op sommige locaties wordt weergegeven. (FORMS-16670)

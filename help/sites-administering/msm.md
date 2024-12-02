@@ -1,5 +1,5 @@
 ---
-title: "Inhoud opnieuw gebruiken: beheer van meerdere sites en actieve kopie"
+title: 'Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren'
 description: Leer meer over het opnieuw gebruiken van inhoud met Levende Exemplaren en de Multisite Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES

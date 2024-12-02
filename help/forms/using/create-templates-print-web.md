@@ -1,5 +1,5 @@
 ---
-title: "Zelfstudie: sjablonen maken"
+title: 'Zelfstudie: sjablonen maken'
 description: Afdruk- en websjablonen maken voor interactieve communicatie
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

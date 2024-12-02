@@ -1,5 +1,5 @@
 ---
-title: "IBM DB2-database: opdrachten uitvoeren voor regelmatig onderhoud"
+title: 'IBM DB2-database: opdrachten voor regelmatig onderhoud uitvoeren'
 description: Dit document bevat een lijst met IBM DB2-opdrachten die worden aanbevolen voor regelmatig onderhoud van de database met AEM formulieren.
 contentOwner: admin
 content-type: reference

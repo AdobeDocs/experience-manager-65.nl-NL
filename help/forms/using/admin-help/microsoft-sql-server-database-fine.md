@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL Server database: de configuratie afstemmen"
+title: 'Microsoft SQL Server-database: de configuratie verfijnen'
 description: Leer hoe u de configuratie van uw Microsoft SQL gegevensbestand van de Server kunt verfijnen.
 contentOwner: admin
 content-type: reference

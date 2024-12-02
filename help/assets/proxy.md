@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] proxyontwikkeling"
+title: '[!DNL Assets] proxyontwikkeling'
 description: Een volmacht is een  [!DNL Experience Manager]  instantie die volmachtsarbeiders gebruikt om banen te verwerken. Leer hoe te om een  [!DNL Experience Manager]  volmacht, gesteunde verrichtingen, volmachtscomponenten te vormen, en hoe te om een worker van de douanevolmacht te ontwikkelen.
 contentOwner: AG
 role: Admin, Architect

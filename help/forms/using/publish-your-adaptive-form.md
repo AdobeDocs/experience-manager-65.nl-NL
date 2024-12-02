@@ -1,5 +1,5 @@
 ---
-title: "Lesbestand: Publish uw adaptieve formulier"
+title: 'Zelfstudie: Publish uw adaptieve formulier'
 description: Publish het adaptieve formulier als een AEM pagina, sluit het formulier in op een AEM Sites-pagina of sluit het adaptieve formulier in op een externe webpagina
 contentOwner: khsingh
 topic-tags: introduction

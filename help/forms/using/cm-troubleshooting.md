@@ -1,5 +1,5 @@
 ---
-title: "Correspondentenbeheer: probleemoplossing"
+title: 'Correspondentenbeheer: Problemen oplossen'
 description: Leer hoe u fouten kunt verwerken die optreden tijdens het opslaan van een brief in een AEM Forms-omgeving.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

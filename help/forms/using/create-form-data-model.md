@@ -1,6 +1,6 @@
 ---
-title: "Zelfstudie: Formuliergegevensmodel maken"
-description: Leer hoe u MySQL als gegevensbron configureert, FDM (form data model) maakt, configureert en test voor AEM Forms.
+title: 'Zelfstudie: Formuliergegevensmodel maken '
+description: Leer hoe u MySQL als gegevensbron configureert, een formuliergegevensmodel (FDM) maakt, het configureert en test op AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Zelfstudie: Formuliergegevensmodel maken {#tutorial-create-form-data-model}
 
-![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
+![04-formulier-gegevensmodel-hoofd maken](assets/04-create-form-data-model-main.png)
 
 Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](../../forms/using/create-your-first-adaptive-form.md) reeksen. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
 
@@ -57,9 +57,9 @@ Ga als volgt te werk om uw [!DNL MySQL] -database te configureren:
 1. Installeer het JDBC-stuurprogramma voor de [!DNL MySQL] -database als een OSGi-bundel:
 
    1. Download [!DNL MySQL] OSGi-bundel voor JDBC-stuurprogramma van `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` . <!-- This URL is an insecure link but using https is not possible -->
-   1. Meld u aan bij AEM [!DNL Forms] Author Instance als beheerder en ga naar bundels met AEM-webconsoles. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Meld u aan bij AEM [!DNL Forms] Author Instance als beheerder en ga naar AEM webconsolebundels. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-   1. Selecteer **[!UICONTROL Install/Update]**. Er wordt een [!UICONTROL Upload / Install Bundles] dialoogvenster weergegeven.
+   1. Selecteer **[!UICONTROL Install/Update]**. Er verschijnt een [!UICONTROL Upload / Install Bundles] dialoogvenster.
 
    1. Selecteer **[!UICONTROL Choose File]** om door de bundel [!DNL MySQL] OSGi van het JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** en selecteer **[!UICONTROL Install or Update]** . Controleer of het [!DNL Oracle Corporation's] JDBC-stuurprogramma voor [!DNL MySQL] actief is. Het stuurprogramma is geïnstalleerd.
 
@@ -71,14 +71,14 @@ Ga als volgt te werk om uw [!DNL MySQL] -database te configureren:
 
       * **naam Datasource:** u kunt om het even welke naam specificeren. Bijvoorbeeld, specificeer **WeRetailMySQL**.
       * **Naam van het de dienstbezit DataSource**: specificeer naam van het de dienstbezit die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld, **datasource.name**.
-      * **JDBC bestuurdersklasse**: specificeer Java™ klassennaam van de bestuurder JDBC. Geef [!DNL MySQL] **voor database com.mysql.jdbc.Driver op**.
+      * **JDBC bestuurdersklasse**: specificeer Java™ klassennaam van de bestuurder JDBC. Geef **voor [!DNL MySQL] database com.mysql.jdbc.Driver** op.
       * **JDBC verbinding URI**: specificeer verbinding URL van het gegevensbestand. Voor [!DNL MySQL] -database die wordt uitgevoerd op poort 306 en schema `weretail` is de URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Wanneer de [!DNL MySQL] -database zich achter een firewall bevindt, is de hostnaam van de database geen openbare DNS. Het IP-adres van de database moet worden toegevoegd aan het */etc/hosts-bestand* van de AEM-hostcomputer.
+      > Wanneer de [!DNL MySQL] -database zich achter een firewall bevindt, is de hostnaam van de database geen openbare DNS. Het IP-adres van de database moet worden toegevoegd in het *bestand /etc/hosts* van de AEM hostmachine.
 
-      * **Gebruikersnaam:** Gebruikersnaam van de database. U moet het JDBC-stuurprogramma inschakelen om een verbinding met de database tot stand te brengen.
+      * **Gebruikersnaam:** Gebruikersnaam van de database. Het is vereist om het JDBC-stuurprogramma in te schakelen om een verbinding met de database tot stand te brengen.
       * **Wachtwoord:** Wachtwoord van het gegevensbestand. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
 
       >[!NOTE]
@@ -98,7 +98,7 @@ Ga als volgt te werk om uw [!DNL MySQL] -database te configureren:
 
 ## Stap 2: Formuliergegevensmodel maken {#create-fdm}
 
-AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface om een formuliergegevensmodel](data-integration.md) te [maken op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen in een formuliergegevensmodel gebruiken. In dit geval kunt u de geconfigureerde [!DNL MySQL] gegevensbron gebruiken.
+AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface om een formuliergegevensmodel](data-integration.md) te [maken op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor dit gebruik kunt u de geconfigureerde [!DNL MySQL] gegevensbron gebruiken.
 
 Ga als volgt te werk om een formuliergegevensmodel te maken:
 
@@ -136,7 +136,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
       * ShippingAddress
       * stad
       * state
-      * postcode
+      * Postcode
 
    * **Diensten:**
 
@@ -168,7 +168,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
    1. Selecteer **[!UICONTROL Done]** om de eigenschappen van het gegevensmodel op te slaan. Selecteer **[!UICONTROL Save]** vervolgens om het formuliergegevensmodel op te slaan.
 
-      De **[!UICONTROL get]** en **[!UICONTROL update]** services worden toegevoegd als standaardservices voor het gegevensmodelobject.
+      De **[!UICONTROL get]** services en **[!UICONTROL update]** worden toegevoegd als standaardservices voor het gegevensmodelobject.
 
       ![data-model-object](assets/data-model-object.png)
 
@@ -187,9 +187,9 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
         klantdetailschema
 
       * **serie van de Terugkeer**: Maak de **serie van de Terugkeer** optie onbruikbaar.
-      * **Argumenten**: selecteer het argument id ****.
+      * **Argumenten**: Selecteer een argument met de naam **ID.**
 
-      Selecteer **[!UICONTROL Done]**. De service voor het ophalen van klantgegevens uit de MySQL-database is geconfigureerd.
+      Selecteer **[!UICONTROL Done]**. Service om klantgegevens op te halen uit de MySQL-database is geconfigureerd.
 
       ![ verzendt-adres-herwinning ](assets/shiiping-address-retrieval.png)
 

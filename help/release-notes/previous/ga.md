@@ -1,6 +1,6 @@
 ---
 title: Algemene Nota's van de Versie voor  [!DNL Adobe Experience Manager]  6.5
-description: "[!DNL Adobe Experience Manager] 6.5 nota's schetsend de versieinformatie, wat nieuw is, hoe te, en gedetailleerde veranderingslijsten te installeren."
+description: In [!DNL Adobe Experience Manager] 6.5 worden de releasegegevens, de nieuwe functies, de installatie en gedetailleerde wijzigingslijsten beschreven.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information

@@ -1,6 +1,6 @@
 ---
 title: Mobiele apps
-description: "Mobiele apps"
+description: Mobiele apps
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

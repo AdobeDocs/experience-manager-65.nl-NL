@@ -1,5 +1,5 @@
 ---
-title: "Zelfstudie: interactieve communicatie maken "
+title: 'Zelfstudie: interactieve communicatie maken '
 description: Een interactieve communicatie maken met alle bouwstenen
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

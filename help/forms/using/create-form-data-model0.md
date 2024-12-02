@@ -1,5 +1,5 @@
 ---
-title: "Lesbestand: formuliergegevensmodel maken in AEM Forms"
+title: 'Zelfstudie: Een formuliergegevensmodel maken in AEM Forms'
 description: Formuliergegevensmodel maken voor interactieve communicatie
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

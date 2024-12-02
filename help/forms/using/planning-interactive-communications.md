@@ -1,5 +1,5 @@
 ---
-title: "Lesbestand: interactieve communicatie plannen"
+title: 'Lesbestand: interactieve communicatie plannen'
 description: Plan de anatomie voor uw Interactieve Communicatie
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

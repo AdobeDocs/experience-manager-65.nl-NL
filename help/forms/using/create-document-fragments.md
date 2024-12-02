@@ -1,5 +1,5 @@
 ---
-title: "Lesbestand: documentfragmenten maken"
+title: 'Zelfstudie: documentfragmenten maken'
 description: Documentfragmenten maken voor interactieve communicatie
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

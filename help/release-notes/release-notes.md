@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 36238364383c380269812641acc66e452e2362ba
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: 167d897cc5f44a2302a4ba932e238e6ba973635d
 workflow-type: tm+mt
-source-wordcount: '6078'
+source-wordcount: '6019'
 ht-degree: 0%
 
 ---
@@ -42,23 +43,23 @@ ht-degree: 0%
 
 De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
-* [ hCaptcha ](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) en [ de Turnstile Captcha diensten van de Wolk ](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms steunt de volgende diensten Captcha:
+* [ hCaptcha ](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) en [ Cloudflare Turnstile CAPTCHA diensten ](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms steunt de volgende diensten Captcha:
    * Captcha beschermt formulieren tegen bots, spam en automatisch misbruik door gebruikers uit te dagen met een widget selectievakjes. Het zorgt ervoor dat alleen menselijke gebruikers doorgaan, waardoor de beveiliging voor online transacties wordt verbeterd.
    * Cloudflare Turnstile biedt een beveiligingsmaatregel die tot doel heeft formulieren te beschermen tegen geautomatiseerde bots, kwaadaardige aanvallen, spam en ongewenst geautomatiseerd verkeer. Er wordt een selectievakje weergegeven bij het verzenden van formulieren om te controleren of het formulier menselijk is, voordat het formulier kan worden verzonden.
 
 * Adaptieve formulierversie:
-   * [ creeer veelvoudige versies van een AanpassingsVorm ](/help/forms/using/add-versioning-reviews-comments.md): De gebruikers kunnen nu variaties van bestaande vormen gemakkelijk beheren. Dit vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
+   * [ creeer veelvoudige versies van een AanpassingsVorm ](/help/forms/using/add-versioning-reviews-comments.md) - nu kunnen de gebruikers variaties van bestaande vormen gemakkelijk beheren. Dit proces vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
    * [ vergelijk Aangepaste Forms ](/help/forms/using/compare-forms-core-components.md): De gebruikers kunnen nu twee vormen gemakkelijk vergelijken om verschillen te identificeren. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
 
-* Toegevoegde steun om doopvont toe te laten die in [ Interactieve Communicatie Partij APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) inbedt: De Interactieve Mededelingen omvat nu steun voor het inbedden van de doopvonten van Adobe Ming en van Adobe Myungjo in PDF die door de Partij API worden geproduceerd. Deze verbetering zorgt voor nauwkeurige tekstrendering in gegenereerde documenten, zelfs bij het gebruik van fontsubsets, waardoor meertalige inhoud in PDF-uitvoer beter wordt ondersteund.
+* Toegevoegde steun om doopvont toe te laten die in [ Interactieve Communicatie Partij APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) inbedt - Interactieve Mededelingen omvat nu steun voor het inbedden van de doopvonten van Adobe Ming en van Adobe Myungjo in PDF die door de Partij API worden geproduceerd. Deze verbetering zorgt voor nauwkeurige tekstrendering in gegenereerde documenten, zelfs bij het gebruik van fontsubsets, waardoor meertalige inhoud in PDF-uitvoer beter wordt ondersteund.
 
-* [ Inhoudslijst API voor de Toegankelijkheid van PDF ](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api): AEM Forms op OSGi steunt nu de nieuwe TOC markering API om PDF voor toegankelijkheidsnormen te verbeteren. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
+* [ Inhoudslijst API voor de Toegankelijkheid van de PDF ](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - AEM Forms op OSGi steunt nu de nieuwe TOC markering API om PDF voor toegankelijkheidsnormen te verbeteren. Het maakt PDF toegankelijker voor gebruikers met ondersteunende hulpmiddelen.
 
-* [ de resolutie van het Fragment XDP ](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository): AEM Forms op OSGi lost nu Fragment XDPs op die in Hoofd XDPs wordt van verwijzingen wordt voorzien en in de Bewaarplaats van AEM CRX wordt opgeslagen.
+* [ de resolutie van het Fragment XDP ](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository) - AEM Forms op OSGi lost nu Fragment XDPs op die in Primaire XDPs wordt van verwijzingen wordt voorzien en in de Bewaarplaats van AEM CRX wordt opgeslagen.
 
-* [ PDF/A nalevingsverhogingen ](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): De gebruikers kunnen nu PDF in formaten PDF/A (1a, 2a, 3a) voor archiveringsdoeleinden omzetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
+* [ PDF/A nalevingsverhogingen ](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - nu kunnen de gebruikers PDF in formaten PDF/A (1a, 2a, 3a) voor archiveringsdoeleinden omzetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
 
-* **Steun voor Auto het Rangschikken van Doopvont voor de Statische documenten van PDF**: AEM Forms Designer, OutputService en FormsService steunt nu auto sizing van doopvonten voor statische PDF. Als de gebruiker lettergrootte 0 in de sjabloon vermeldt voor velden zoals tekstveld, numeriek veld, wachtwoordveld of datumveld, wordt de tekengrootte automatisch binnen deze velden aangepast zonder dat de grootte van het veld zelf wordt gewijzigd. Als gebruikers de functie willen gebruiken, geven ze een markering door in de aangepaste xci: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>` .
+* **Steun voor Auto het Grootte van Doopvont voor Statische documenten van PDF** - AEM Forms Designer, OutputService, en FormsService steunt nu auto het rangschikken van doopvonten voor statische PDF. Als de gebruiker de fontgrootte 0 instelt voor tekst-, numerieke, wachtwoord- of datetime velden, wordt de fontgrootte automatisch aangepast binnen deze velden zonder de algemene grootte van het veld te wijzigen. Als gebruikers de functie willen gebruiken, geven ze een markering door in de aangepaste XCI: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>` .
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -102,7 +103,7 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
    * **Uitgave van de Vergelijking van de Versie:** &quot;vergelijk met Huidige&quot;eigenschap slechts de huidige versie, zonder enige verschillen tussen versies te benadrukken. (SITES-23988)
 
 * Er verschijnt een onverwachte `<br>` -tag in het veld Rich Text Editor (RTE) wanneer u de `defaultPasteMode` set to `plaintext` gebruikt tijdens een kopieer- en plakactie. Dit resulteert in verschillende opmaakcodes voor dezelfde inhoud, wat ertoe leidt dat dezelfde tekstinhoud tweemaal wordt vertaald in het vertaalgeheugen van een klant. (SITES-23606)
-* In AEM 6.5.20.0, werd een functionaliteit kwestie ontmoet met **leidt de eigenschap van de Publicatie**. Wanneer het selecteren van een knoop en het plannen van het voor toekomstige publicatie, een foutenmelding—&quot;Kon de kindmiddelen voor geselecteerde punten niet terugwinnen&quot;-kon verschijnen wanneer het proberen om kindknopen te omvatten. Deze kwestie blokkeerde het gebruik van **omvat Kinderen** optie, verhinderend volledige publicatie van de voorgenomen inhoudshiërarchie. (SITES-23000)
+* In AEM 6.5.20.0, werd een functionaliteit kwestie ontmoet met **leidt de eigenschap van de Publicatie**. Wanneer het selecteren van een knoop en het plannen van het voor toekomstige publicatie, een foutenmelding - &quot;Kon de kindmiddelen voor geselecteerde punten niet terugwinnen&quot; - zou kunnen verschijnen wanneer het proberen om kindknopen te omvatten. Deze kwestie blokkeerde het gebruik van **omvat Kinderen** optie, verhinderend volledige publicatie van de voorgenomen inhoudshiërarchie. (SITES-23000)
 * De tijdstempel van een sjabloon &quot;Gepubliceerd&quot; is niet bijgewerkt in de auteursomgeving, ook al is de sjabloon gerepliceerd naar de publicatie-instanties. Het verwachte gedrag was dat de tijdstempel op de instantie van de auteur de meest recente publicatie weerspiegelde, maar deze update trad niet op zoals bedoeld. (SITES-21585)
 * Er was een discrepantie in het aantal Inkomende Verbindingen in het AEM auteursmilieu. In vergelijking met de klassieke gebruikersinterface waren er minder koppelingen aan de linkerkant. Ook, werken sommige Inkomende Verbindingen die wettig waren, niet. (SITES-24837)
 * Er zijn bijzonder lange laadtijden gemeld bij het weergeven van paginafersies in de tijdlijnweergave van AEM. Het duurde tot 19 minuten om versies weer te geven. Dit probleem was nog steeds aan de gang sinds de upgrade van AEM 6.4.8 naar 6.5.18, waardoor de efficiëntie van de workflow aanzienlijk werd verstoord. (SITES-22468 &amp; SITES-22467)
@@ -225,36 +226,36 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 ### Forms {#forms-bug-fixes-sp22}
 
 * De URL&#39;s die voor bestandsbijlagen in opgeslagen concepten in AEM Forms worden gegenereerd, weerspiegelen niet de geconfigureerde Fabriekstoewijzingen van Apache Sling Resource Resolver. (FORMS-16949)
-* Wanneer een gebruiker op AEM Forms Service Pack 19 (6.5.19.0) een letter voorvertoont, wordt de inhoud niet goed uitgelijnd, omdat de spaties ontbreken en het teken ‘&#39;x&#39; op sommige locaties wordt weergegeven. (FORMS-16670)
+* Wanneer een gebruiker op AEM Forms Service Pack 19 (6.5.19.0) een letter voorvertoont, wordt de inhoud niet goed uitgelijnd, omdat de spaties ontbreken en het teken `x` op sommige locaties wordt weergegeven. (FORMS-16670)
 * Wanneer een gebruiker met AEM Forms Service Pack 18 (6.5.18.0) de bestanden probeert af te drukken met CIF protocol, treedt de fout op: (FORMS-16629)
   `ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`.
 * Wanneer een gebruiker van AEM Forms Service Pack 17 (6.5.17.0) aan AEM Forms Service Pack 20 (6.5.20.0) bevordert, verschijnt het pictogram van de Redacteur van de Regel niet op het niveau van de Container van de Vorm. (FORMS-16430)
-* Wanneer een gebruiker een upgrade uitvoert van AEM Forms Service Pack 17 (6.5.17.0) naar AEM Forms Service Pack 21 (6.5.21.0), werkt het aangepaste pad voor het verzenden van een adaptief formulier niet. (FORMS15894)
+* Wanneer een gebruiker een upgrade uitvoert van AEM Forms Service Pack 17 (6.5.17.0) naar AEM Forms Service Pack 21 (6.5.21.0), werkt het aangepaste pad voor het verzenden van het formulier naar de URL niet. (FORMS15894)
 * Bij AEM Forms Service Pack 19 (6.5.19.0) mislukt de validatie van AEM Forms 6.5 PDF/A voor bepaalde bestanden met de fout `creation date and modification date mismatch with timezone` , terwijl de validatie bij Acrobat Pro PDF/A-validatie voor een compatibiliteitscontrole probleemloos wordt uitgevoerd. (FORMS-15840)
 * Wanneer een gebruiker formulierconcepten verwijdert met de component &quot;Concepten en verzendingen&quot; op een sitepagina in AEM Forms Service Pack 15 (6.5.15.0) op OSGi, mislukt het verwijderen. (FORMS-15755)
 * Wanneer een gebruiker een SharePoint-lijst heeft met meer dan 999 items en het formulier een bijlage bevat, mislukt het verzenden van het formulier. (FORMS-15057)
-* Wanneer een gebruiker twee componenten van de datumkiezer gebruikt die als Datum van het Begin en Einddatum worden geëtiketteerd, na het toevoegen van een bevestigingsregel om ervoor te zorgen dat de einddatum niet vroeger dan de begindatum is en het plaatsen van een bericht van de douanemanuscriptbevestiging, teweegbrengt de bevestiging niet teweeg als de einddatum vroeger dan de begindatum is. (FORMS-14757)
-* Wanneer een gebruiker de functie voor weergeven en verbergen aanpast aan een tabel, neemt de grootte van het veld af. De veldgrootte corrigeert zichzelf bij het toevoegen en verwijderen van een rij. (FORMS-14756)
+* Er wordt een validatieregel toegevoegd om ervoor te zorgen dat de einddatum niet eerder ligt dan de begindatum, samen met een aangepast script voor het validatiebericht. De validatie wordt echter niet geactiveerd wanneer de einddatum eerder valt dan de begindatum. (FORMS-14757)
+* Wanneer een gebruiker de functie voor weergeven/verbergen aanpast aan een tabel, neemt de grootte van het veld af. De veldgrootte corrigeert zichzelf bij het toevoegen en verwijderen van een rij. (FORMS-14756)
 * Wanneer een gebruiker formulieren afdrukt op AEM Forms Service Pack 19 (6.5.19.0), worden sommige formulieren niet correct weergegeven op de server, waardoor fouten optreden tijdens het afdrukproces. (FORMS14734)
-* Wanneer de gebruiker van AEM Forms Service Pack 15 (6.5.15.0) aan AEM Forms Service Pack 19 (6.5.19.0) bijwerkt, en een vorm gebruikt waar een bepaalde variabele als aantal wordt geplaatst en het patroon van de douanevertoning num {$zzz,zz9.99} wordt geplaatst, geeft het patroon niet correct in voorproef en Agent UI terug. (FORMS-14694)
+* Wanneer een gebruiker van AEM Forms Service Pack 15 (6.5.15.0) aan Service Pack 19 (6.5.19.0) bijwerkt, komt een kwestie voor. Een aangepast weergavepatroon dat is ingesteld als `num{$zzz,zz9.99}` wordt niet correct weergegeven in de voorvertoning en in de gebruikersinterface van de Agent. (FORMS-14694)
 * Wanneer een gebruiker een brief in een Interactieve Communicatie met opgeslagen gegeven XML voorvertolkt, wordt de brief geplakt in de &quot;Lading&quot;staat op AEM UI. Een nieuwe voorvertoning van de letter met dezelfde XML werkt prima. (FORMS-14521)
-* Wanneer een gebruiker met AEM Forms Service Pack 20 (6.5.20.0) een e-mail met een bijlage verzendt met de knop &quot;E-mail verzenden&quot; (actieknop Verzenden via e-mail) in een adaptieve vorm, wordt de naam van de bijlage weergegeven op de volgende regel in plaats van op inline. (FORMS-14426)
-* Wanneer een gebruiker een PDF in AEM Forms genereert met lijsten met opsommingstekens die zijn ingesteld op de standaardstijl &quot;Schijf&quot;, mislukt de PDF de Toegankelijkheidscontrole in Adobe Acrobat voor toegankelijkheidscontrole. Lijsten met opsommingstekens en vierkante stijlen slagen voor de toegankelijkheidscontrole. (FORMS-13802, LC-3922179)
-* Wanneer een gebruiker van AEMForms-6.5.0-0065 aan AEMForms-6.5.0-0087 op Standalone opstelling RHEL8 JBoss verbetert, ontbreekt het om met de de dienstcontainer van het LiveCycle te verbinden. (FORMS-15907) ・
-* Als een gebruiker in AEM Forms op JEE in AEM Workspace een eerder verzonden formulier selecteert en een nieuw formulierproces start, worden in formulieren met vooraf ingevulde gegevensprocessen alle eerder verzonden gegevens gewist en vervangen door de vooraf ingevulde gegevens. De velden die handmatig in het vorige formulier zijn ingevuld, blijven niet behouden. (FORMS-15376)
+* In AEM Forms Service Pack 20 (6.5.20.0) melden gebruikers die e-mailberichten met bijlagen verzenden met de knop &#39;E-mail verzenden&#39; in adaptieve formulieren een probleem. De naam van de bijlage wordt weergegeven op de volgende regel in plaats van op inline. (FORMS-14426)
+* Wanneer een gebruiker een PDF in AEM Forms genereert met lijsten met opsommingstekens die zijn ingesteld op de standaardstijl &quot;Schijf&quot;, mislukt de PDF de Toegankelijkheidscontrole in Adobe Acrobat voor toegankelijkheidscontrole. De lijst met de stijlen Opsommingsteken en Vierkant geeft de Toegankelijkheidscontrole door. (FORMS-13802, LC-3922179)
+* Wanneer een gebruiker van AEMForms-6.5.0-0065 aan AEMForms-6.5.0-0087 op Zelfstandige opstelling RHEL8 JBoss® bevordert, ontbreekt het om met de de dienstcontainer van het LiveCycle te verbinden. (FORMS-15907) *
+* In AEM Forms op JEE, in AEM Workspace, veroorzaakt het selecteren van een eerder verzonden formulier om een nieuw formulierproces te starten een probleem. Forms met vooraf ingevulde gegevens overschrijft alle eerder verzonden gegevens en verwijdert handmatig ingevulde velden. (FORMS-15376)
 * Op AEM Forms Service Pack 20 (6.5.20.0) wanneer een gebruiker een TIFF-bestand naar PDF converteert met gebruik van de PDFG-service, mislukt dit met de fout: (FORMS-14879) ALC-PDG-011-028-Error is opgetreden bij het converteren van het invoerafbeeldingsbestand naar PDF. com/sun/image/codec/jpeg/JPEGCodec
 * Voer een upgrade uit in AEM Forms op JEE Jar-bestanden: de `commons-collections:commons-collections:jar` -bibliotheek is nu inbegrepen om de resolutie en functionaliteit van afhankelijkheden in verschillende AEM Forms JEE-taken te verbeteren, zoals:
    * Verbetering van taakuitvoering in vergadering om de verwerking van taken en de foutafhandeling te verbeteren.
    * PDF Generator (PDFG)-taakverbetering om ervoor te zorgen dat de bewerkingen voor het genereren en converteren van documenten soepeler verlopen.
    * LC-Upgrade-taakverbetering om het upgradeproces te verbeteren en tegelijkertijd een stabiele overgang tussen versies te garanderen.
-   * Verbetering van de taken van het Rights Management om de verwerking van documenten en verbeterde mogelijkheden voor rechtenbeheer te beveiligen.
+   * Verbetering van de taakfunctie van Rights Managementen om de documentverwerking en verbeterde mogelijkheden voor Rights Management te beveiligen.
    * Verbetering van de taken voor procesbeheer voor betrouwbaardere taakverwerking en systeembeheer.
 
 
 #### XML {#forms-xmlfm-sp22}
 
 * In AEM Forms Service Pack 21 (6.5.21.0) wanneer een gebruiker niet-standaard markeringen aan PDF gebruikend XMLFM toevoegt, voldoet het document niet aan de specificatievereisten van PDF. (LC-3922484)
-* Wanneer een gebruiker een PDF genereert met de Output Service op AEM Forms Service Pack 20 (6.5.20.0), mislukt deze met CORBA.COMM_FAILURE en wordt de fout weergegeven: `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`. De service wordt succesvol doorgegeven wanneer de toegankelijkheidsrol &quot;Reference&quot; is uitgesloten van het subformulier van de XDP-sjabloon. deze rol is echter nodig om 508 naleving te garanderen . (LC-3922402)
+* Wanneer een gebruiker een PDF genereert met de Output Service op AEM Forms Service Pack 20 (6.5.20.0), mislukt deze met CORBA.COMM_FAILURE en wordt de fout weergegeven: `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`. De service gaat correct door wanneer de toegankelijkheidsrol &quot;Reference&quot; is uitgesloten van het subformulier van de XDP-sjabloon. deze rol is echter nodig om 508 naleving te garanderen . (LC-3922402)
 * Wanneer een gebruiker een XFA-formulier converteert naar een AcroForm PDF, mislukt het. (LC-3922363)
 * In AEM Forms Service Pack 19 (6.5.19.0) wanneer een gebruiker een XDP met de naamloze subformulieren maakt, is FS_DATA_SOM leeg voor naamloze subformulieren. (LC-392/2034)
 
@@ -264,7 +265,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * Wanneer een gebruiker de 32-bits AEM Forms Designer versie 6.5.20.0 verwijdert en AEM Forms Designer versie 6.5.21.0 installeert, kan Forms Designer niet starten. De foutenlogboeken tonen ontoereikende geheugentoewijzing voor de Runtime Milieu van Java (JRE). (LC-3922404)
 * Nadat een gebruiker AEM Forms Designer versie 6.5.20.0 heeft geïnstalleerd, wordt de optie Macro&#39;s niet weergegeven in het menu, wordt alleen de standaardmacro &#39;Toegankelijkheidscontrole&#39; weergegeven en wordt deze niet uitgevoerd. (LC-3922321)
 * Wanneer een gebruiker een nieuwe sjabloonlocatie toevoegt voor het maken van XDP&#39;s in AEM Forms Designer versie 6.5.20.0, loopt Forms Designer vast. (LC-3922316)
-* Wanneer een gebruiker output gebruikend methode ExportData in AEM Forms 6.5 Service Pack 15 (6.5.15.0) OSGI produceert, produceert het onvolledige en onjuiste gegevens. (LC-3922340)
+* Wanneer een gebruiker output gebruikend de methode ExportData in AEM Forms 6.5 Service Pack 15 (6.5.15.0) OSGI produceert, produceert het onvolledige en onjuiste gegevens. (LC-3922340)
 
 
 <!-- #### [!DNL Adaptive Forms] {#forms-6522}
@@ -613,8 +614,8 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 * In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, wordt het muntsymbool (zoals het dollarteken $) inconsistent getoond voor alle gebiedswaarden. Deze wordt weergegeven voor waarden tot en met 999, maar ontbreekt voor waarden van 1000 en hoger. (FORMS-16557)
 * Eventuele wijzigingen in de XDP van geneste lay-outfragmenten in een interactieve communicatie worden niet weerspiegeld in de IC-editor. (FORMS-16575)
 * In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, worden sommige berekende waarden niet correct getoond. (FORMS-16603)
-* Wanneer de brief in de Voorproef van de Druk wordt bekeken, wordt de inhoud veranderd. Dat wil zeggen dat sommige spaties verdwijnen en bepaalde letters worden vervangen door &#39;x&#39;. (FORMS-15681)
-* Wanneer een gebruiker een WebLogic 14c-instantie configureert, mislukt de PDFG-service in AEM Forms Service Pack 21 (6.5.21.0) op JEE die op JBoss wordt uitgevoerd vanwege klasseconflicten met betrekking tot de SLF4J-bibliotheek. De fout wordt als volgt weergegeven (CQDOC-22178):
+* Wanneer de brief in de Voorproef van de Druk wordt bekeken, wordt de inhoud veranderd. Dat wil zeggen dat sommige spaties verdwijnen en dat bepaalde letters worden vervangen door `x` . (FORMS-15681)
+* Wanneer een gebruiker een WebLogic 14c-instantie configureert, mislukt de PDFG-service in AEM Forms Service Pack 21 (6.5.21.0) op JEE die wordt uitgevoerd op JBoss® vanwege klasseconflicten met betrekking tot de SLF4J-bibliotheek. De fout wordt als volgt weergegeven (CQDOC-22178):
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"

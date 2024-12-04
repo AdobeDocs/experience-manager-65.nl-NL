@@ -9,21 +9,23 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: eac8a82c78d7f209512d32e7fcd7083bbebf1cb5
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Domeinen toevoegen {#adding-domains}
 
+Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
+
 ## Een ondernemingsdomein toevoegen {#add-an-enterprise-domain}
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op Nieuw Enterprise-domein.
 1. Typ in het vak Id een unieke id voor het domein en typ in het vak Naam een beschrijvende naam voor het domein. (Zie [ Belangrijke overwegingen voor domeinnamen en IDs ](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Geef op of accountvergrendeling moet worden ingeschakeld. (Zie [ de rekening-vergrendelende montages ](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings) vormen.) Standaard is het selectievakje Account vergrendelen inschakelen ingeschakeld.
+1. Geef op of accountvergrendeling moet worden ingeschakeld. (Zie [ de rekening-vergrendelingsmontages ](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings) vormen.) Door gebrek, laat het Vergrendelen van de Rekening toe wordt geselecteerd.
 1. Klik op Verificatie toevoegen en selecteer in de lijst Verificatieprovider een provider, afhankelijk van het verificatiemechanisme dat uw organisatie gebruikt. Mogelijke waarden zijn LDAP, Kerberos, SAML, of een leverancier van de douaneauthentificatie.
 
    Als u LDAP selecteert, kunt u de in uw directoryconfiguratie opgegeven LDAP-server gebruiken of kunt u een andere LDAP-server kiezen die u voor verificatie wilt gebruiken. Als u een andere server kiest, moeten uw gebruikers op beide LDAP-servers bestaan.
@@ -39,7 +41,7 @@ Na het creëren van een ondernemingsdomein, synchroniseer manueel de folder of c
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op Nieuw lokaal domein.
 1. Typ in het vak Id een unieke id voor het domein en typ in het vak Naam een beschrijvende naam voor het domein. (Zie [ Belangrijke overwegingen voor domeinnamen en IDs ](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Geef op of u accountvergrendeling wilt inschakelen en klik op OK. (Zie [ de rekening-vergrendelende montages ](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings) vormen.) Standaard is het selectievakje Account vergrendelen inschakelen ingeschakeld.
+1. Geef op of u accountvergrendeling wilt inschakelen en klik op OK. (Zie [ de rekening-vergrendelingsmontages ](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings) vormen.) Door gebrek, laat het Vergrendelen van de Rekening toe wordt geselecteerd.
 
 ## Een hybride domein toevoegen {#add-a-hybrid-domain}
 

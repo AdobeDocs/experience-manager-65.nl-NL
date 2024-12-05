@@ -9,9 +9,9 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2125'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,10 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
 
    1. Geef de configuratie a **Titel**.
    1. Selecteer het **malplaatje van de Configuratie van 0} Adobe Target.**
-   1. Klik **creëren**.
+
+      ![ Configuratie van Adobe Target ](assets/adobe-target-create-configuration.png)
+
+1. Klik **creëren**.
 
    Het dialoogvenster Bewerken wordt geopend.
 

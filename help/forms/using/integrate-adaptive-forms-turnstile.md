@@ -3,9 +3,10 @@ title: Hoe wordt Turnstile gebruikt in een AEM adaptieve vorm 6.5?
 description: Verbeter de formulierbeveiliging met de Turnstile-service zonder moeite. Stap-voor-stap gids binnen!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+exl-id: bed93ce3-89db-477a-8316-7598275e4bca
+source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,8 @@ ht-degree: 0%
 # Verbind uw AEM Forms-omgeving met Turnstift {#connect-your-forms-environment-with-turnstile-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview"> Deze functie valt onder het programma voor vroege adoptie. Als u interesse hebt in deelname aan ons programma voor vroege toegang tot deze functie, stuurt u een e-mail van uw officiële adres naar aem-forms-ea@adobe.com om toegang aan te vragen </span>
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
@@ -34,6 +31,8 @@ AEM Forms 6.5 ondersteunt de volgende CAPTCHA-oplossingen:
 ## AEM Forms-omgeving integreren met Turnstile Captcha
 
 Cloudflare Turnstile Captcha is een veiligheidsmaatregel die tot doel heeft formulieren en sites te beschermen tegen geautomatiseerde bots, kwaadaardige aanvallen, spam en ongewenst geautomatiseerd verkeer. Er wordt een selectievakje weergegeven bij het verzenden van formulieren om te controleren of het formulier menselijk is, voordat het formulier kan worden verzonden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Vereisten om de AEM Forms-omgeving te integreren met Turnstile Captcha {#prerequisite}
 

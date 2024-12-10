@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
+source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
 workflow-type: tm+mt
-source-wordcount: '7477'
+source-wordcount: '7480'
 ht-degree: 1%
 
 ---
@@ -626,6 +626,7 @@ ht-degree: 1%
       + [Aangepaste fouthandler maken en gebruiken voor Adaptieve Forms op basis van Core Components](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
       + [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/using/add-versioning-reviews-comments.md)
       + [Adaptieve Forms vergelijken](/help/forms/using/compare-forms-core-components.md)
+      + [Functie in-/uitschakelen](/help/forms/using/enable-feature-toggle.md)
    + Adaptief Forms - Basisontwerp {#adaptive-forms-basic-authoring}
       + [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md)
       + [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md)

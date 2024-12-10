@@ -3,9 +3,9 @@ title: Voeg versies, opmerkingen en annotaties toe die u in AEM 6.5 aanpasbare v
 description: Gebruik AEM 6.5 aangepaste basiscomponenten van formulieren om opmerkingen, annotaties en versies toe te voegen aan een adaptief formulier.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,11 @@ ht-degree: 0%
 # Versioning, revisie en opmerkingen op een adaptief formulier
 
 <!--
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+
 -->
 
-<span class="preview"> Deze functie valt onder het programma voor vroege adoptie. Als u interesse hebt in deelname aan ons programma voor vroege toegang tot deze functie, stuurt u een e-mail van uw officiële adres naar aem-forms-ea@adobe.com om toegang aan te vragen </span>
 
 Met Adaptieve Core-componenten van formulieren kunnen auteurs van formulieren versies, opmerkingen en annotaties toevoegen aan formulieren. Deze functies vereenvoudigen de ontwikkeling van formulieren doordat gebruikers meerdere versies kunnen maken en beheren, door opmerkingen kunnen samenwerken en notities kunnen toevoegen aan specifieke formuliersecties, waardoor het samenstellen van formulieren gemakkelijker wordt.
 

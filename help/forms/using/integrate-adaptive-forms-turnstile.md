@@ -4,18 +4,16 @@ description: Verbeter de formulierbeveiliging met de Turnstile-service zonder mo
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '794'
 ht-degree: 0%
 
 ---
 
 # Verbind uw AEM Forms-omgeving met Turnstift {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview"> Deze eigenschap is gebaseerd op identiteitskaart van de Knevel van de Eigenschap `FT_FORMS-12407`. Om de eigenschap toe te laten, volg de stappen die in [ worden gegeven toelaten het 1} artikel van de Knevel van de Eigenschap. </span>](/help/forms/using/enable-feature-toggle.md)
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
@@ -84,7 +82,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
    ![ Uitgezochte Container van de Configuratie ](assets/captcha-properties.png)
 
 1. Selecteer een adaptief formulier en klik op **[!UICONTROL Edit]** om het aangepaste formulier te openen in de editor.
-1. Sleep vanuit de browser van de component de component **[!UICONTROL Adaptive Form Turnstile]** naar het adaptieve formulier of voeg deze toe.
+1. Sleep de component **[!UICONTROL Captcha]** vanuit de componentbrowser naar het adaptieve formulier.
 1. Selecteer de **[!UICONTROL Adaptive Form Turnstile]** component en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg). Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende eigenschappen op:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->

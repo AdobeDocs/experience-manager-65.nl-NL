@@ -3,19 +3,17 @@ title: Hoe hCaptcha&amp gebruiken;reg; in een AEM 6.5 Forms?
 description: Verbeter de formulierbeveiliging met hCaptcha&reg; service zonder problemen. Stap-voor-stap gids binnen!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 25dfe85048184e34cc3afb5e7b08cc0e2f054a01
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # Sluit uw AEM Forms-omgeving aan met hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview"> Deze eigenschap is gebaseerd op identiteitskaart van de Knevel van de Eigenschap `FT_FORMS-12407`. Om de eigenschap toe te laten, volg de stappen die in [ worden gegeven toelaten het 1} artikel van de Knevel van de Eigenschap. </span>](/help/forms/using/enable-feature-toggle.md)
+
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
@@ -82,7 +80,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
    ![ Uitgezochte Container van de Configuratie ](/help/forms/using/assets/captcha-properties.png)
 
 1. Selecteer een adaptief formulier en klik op **[!UICONTROL Edit]** om het formulier in de editor te openen.
-1. Sleep vanuit de browser van de component de component **[!UICONTROL Adaptive Form hCaptcha®]** naar het adaptieve formulier of voeg deze toe.
+1. Sleep de component **[!UICONTROL Captcha]** vanuit de componentbrowser naar het adaptieve formulier.
 1. Selecteer de **[!UICONTROL Adaptive Form hCaptcha®]** component, en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg) om de eigenschappendialoog te openen. Geef de volgende eigenschappen op:
 
    ![ hCaptcha® v1 ](assets/config-hcaptcha-v1-img.png)

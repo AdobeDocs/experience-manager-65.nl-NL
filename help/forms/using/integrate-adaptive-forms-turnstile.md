@@ -4,9 +4,9 @@ description: Verbeter de formulierbeveiliging met de Turnstile-service zonder mo
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,13 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
 1. Selecteer een adaptief formulier en klik op **[!UICONTROL Properties]** . Selecteer in **[!UICONTROL Configuration Container]** de Cloud Configuration for Turnstile®.
 1. Klik op **[!UICONTROL Save & Close]**.
 
-   Als u geen dergelijke Container van de Configuratie hebt, zie sectie [ uw milieu van AEM Forms met Draaien ](#connect-your-forms-environment-with-turnstile-service) verbinden om te leren hoe te om een Container van de Configuratie tot stand te brengen.
+   Als u geen Container van de Configuratie hebt om de dienst te vormen Captcha, zie sectie [ Draaien ](#configure-turnstile-steps-to-configure-hcaptcha) om te leren hoe te om een Container van de Configuratie tot stand te brengen.
 
    ![ Uitgezochte Container van de Configuratie ](assets/captcha-properties.png)
 
 1. Selecteer een adaptief formulier en klik op **[!UICONTROL Edit]** om het aangepaste formulier te openen in de editor.
 1. Sleep de component **[!UICONTROL Captcha]** vanuit de componentbrowser naar het adaptieve formulier.
-1. Selecteer de **[!UICONTROL Adaptive Form Turnstile]** component en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg). Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende eigenschappen op:
+1. Selecteer de **[!UICONTROL Captcha]** component en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg). Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende eigenschappen op:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
    ![ de Draai van de Wolk v1 ](assets/turnstile-setting-v1.png)
@@ -95,7 +95,8 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
    * **[!UICONTROL Configuration Settings]:** selecteer uw Configuratie van de Wolk die voor Turnstile® wordt gevormd.
      >[!NOTE]
      >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen de dienst vermeld is, zie [ uw milieu van AEM Forms met Turnstile ](#connect-your-forms-environment-with-turnstile-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de Dienst van de Draai verbindt.
-   * **Bericht van de Fout:** verstrek het foutenbericht aan vertoning aan de gebruiker wanneer de voorlegging Captcha ontbreekt.
+
+   * **[!UICONTROL Error Message]:** Geef het foutbericht op dat aan de gebruiker moet worden weergegeven wanneer het verzenden van Captcha is mislukt.
    * **Grootte Captcha:** U kunt de vertoningsgrootte van de hCaptcha® uitdagingsdialoog selecteren. Gebruik de optie **[!UICONTROL Compact]** om een klein formaat weer te geven en de optie **[!UICONTROL Normal]** om een relatief groot hCaptcha®-uitdagingsdialoogvenster weer te geven.
 
 1. Selecteer **[!UICONTROL Done]** .

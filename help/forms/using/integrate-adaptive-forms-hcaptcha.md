@@ -3,9 +3,10 @@ title: Hoe hCaptcha&amp gebruiken;reg; in een AEM 6.5 Forms?
 description: Verbeter de formulierbeveiliging met hCaptcha&reg; service zonder problemen. Stap-voor-stap gids binnen!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -75,13 +76,13 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
 1. Selecteer in het **[!UICONTROL Configuration Container]** de Cloud Configuration for hCaptcha®.
 1. Klik op **[!UICONTROL Save & Close]**.
 
-   Als u geen dergelijke Container van de Configuratie hebt, zie sectie [ uw milieu van AEM Forms met hCaptcha® ](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te begrijpen hoe te om een Container van de Configuratie tot stand te brengen.
+   Als u geen Container van de Configuratie voor hCaptcha hebt, zie sectie [ uw milieu van AEM Forms met hCaptcha® ](#configure-hcaptcha-steps-to-configure-hcaptcha) verbinden om te leren hoe te om een Container van de Configuratie tot stand te brengen.
 
    ![ Uitgezochte Container van de Configuratie ](/help/forms/using/assets/captcha-properties.png)
 
-1. Selecteer een adaptief formulier en klik op **[!UICONTROL Edit]** om het formulier in de editor te openen.
+1. Selecteer een adaptief formulier en klik op **[!UICONTROL Edit]** om het formulier te openen in de editor.
 1. Sleep de component **[!UICONTROL Captcha]** vanuit de componentbrowser naar het adaptieve formulier.
-1. Selecteer de **[!UICONTROL Adaptive Form hCaptcha®]** component, en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg) om de eigenschappendialoog te openen. Geef de volgende eigenschappen op:
+1. Selecteer de **[!UICONTROL Captcha]** component, en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg) om de eigenschappendialoog te openen. Geef de volgende eigenschappen op:
 
    ![ hCaptcha® v1 ](assets/config-hcaptcha-v1-img.png)
 
@@ -91,13 +92,14 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
    * **[!UICONTROL Configuration Settings]:** selecteer uw Configuratie van de Wolk die voor hCaptcha® wordt gevormd.
      >[!NOTE]
      >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen dienst vermeld is, zie [ uw milieu van AEM Forms met hCaptcha® ](#connect-your-forms-environment-with-hcaptcha-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de dienst hCaptcha® verbindt.
-   * **Bericht van de Fout:** verstrek het foutenbericht aan vertoning aan de gebruiker wanneer de voorlegging Captcha ontbreekt.
-   * **Grootte Captcha:** U kunt de vertoningsgrootte van de hCaptcha® uitdagingsdialoog selecteren. Gebruik de optie **[!UICONTROL Compact]** om een klein formaat weer te geven en **[!UICONTROL Normal]** om een relatief groot hCaptcha®-provocatiedialoogvenster weer te geven of **[!UICONTROL Invisible]** om hCaptcha® te valideren zonder de widget selectievakje expliciet in de gebruikersinterface weer te geven.
+
+   * **[!UICONTROL Error Message]:** Geef het foutbericht op dat aan de gebruiker moet worden weergegeven wanneer het verzenden van Captcha is mislukt.
+   * **[!UICONTROL Captcha Size]:** U kunt de vertoningsgrootte van de hCaptcha®- uitdagingsdialoog selecteren. Gebruik de optie **[!UICONTROL Compact]** om een klein formaat weer te geven en **[!UICONTROL Normal]** om een relatief groot hCaptcha®-provocatiedialoogvenster weer te geven of **[!UICONTROL Invisible]** om hCaptcha® te valideren zonder de widget selectievakje expliciet in de gebruikersinterface weer te geven.
 
 1. Selecteer **[!UICONTROL Done]** .
 
 
-Alleen legitieme formulieren waarin de invuller van het formulier de uitdaging van de hCaptcha®-service met succes heeft verholpen, kunnen nu worden verzonden. hCaptcha®
+Alleen legitieme formulieren waarin de invuller van het formulier de uitdaging van de hCaptcha®-service met succes heeft verholpen, kunnen nu worden verzonden.
 
 **hCaptcha® is een geregistreerd handelsmerk van de Machines van de Intusie, Inc.**
 

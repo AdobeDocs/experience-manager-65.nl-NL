@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 26c1fe9d032729dd8d1737c922c4b2fab55f2d48
+source-git-commit: 9c58545406bc539dbd0c224b3c88365d3851deb8
 workflow-type: tm+mt
 source-wordcount: '6074'
 ht-degree: 0%
@@ -250,7 +250,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * LC-Upgrade-taakverbetering om het upgradeproces te verbeteren en tegelijkertijd een stabiele overgang tussen versies te garanderen.
    * Verbetering van de taakfunctie van Rights Managementen om de documentverwerking en verbeterde mogelijkheden voor Rights Management te beveiligen.
    * Verbetering van de taken voor procesbeheer voor betrouwbaardere taakverwerking en systeembeheer.
+* Beginnend AEM Forms OSGi 6.5.22, zal de renderPDFForm verrichting van de dienst van Forms cliënt-slechts (runAt=client) manuscripten op de server niet uitvoeren, slechts die duidelijk runAt=server of runAt=both zullen worden uitgevoerd zoals die in de lijst hieronder worden beschreven. (FORMS-16564)
 
+  | Script gemarkeerd runAt | Uitgevoerd op de server |
+  |---------------------|-------------------------|
+  | server | ja |
+  | beide | ja |
+  | client | nee |
 
 #### XML {#forms-xmlfm-sp22}
 
@@ -615,14 +621,6 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 * Eventuele wijzigingen in de XDP van geneste lay-outfragmenten in een interactieve communicatie worden niet weerspiegeld in de IC-editor. (FORMS-16575)
 * In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, worden sommige berekende waarden niet correct getoond. (FORMS-16603)
 * Wanneer de brief in de Voorproef van de Druk wordt bekeken, wordt de inhoud veranderd. Dat wil zeggen dat sommige spaties verdwijnen en bepaalde letters worden vervangen door &#39;x&#39;. (FORMS-15681)
-* Beginnend AEM Forms OSGi 6.5.22, zal de renderPDFForm verrichting van de dienst van Forms cliënt-slechts (runAt=client) manuscripten op de server niet uitvoeren, slechts die duidelijk runAt=server of runAt=both zullen worden uitgevoerd zoals die in de lijst hieronder worden beschreven. (FORMS-16564)
-
-  | Script gemarkeerd runAt | Uitgevoerd op de server |
-  |---------------------|-------------------------|
-  | server | ja |
-  | beide | ja |
-  | client | nee |
-
 * Wanneer een gebruiker een WebLogic 14c-instantie configureert, mislukt de PDFG-service in AEM Forms Service Pack 21 (6.5.21.0) op JEE die op JBoss wordt uitgevoerd vanwege klasseconflicten met betrekking tot de SLF4J-bibliotheek. De fout wordt als volgt weergegeven (CQDOC-22178):
 
   ```java

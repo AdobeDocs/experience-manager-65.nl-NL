@@ -3,9 +3,10 @@ title: Vergelijk twee verschillende adaptieve formulieren.
 description: Vergelijk twee verschillende formulieren op basis van de velden, inhoud en formuliercomponenten.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,8 @@ ht-degree: 0%
 <!--
 <span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
+
+<span class="preview"> Deze eigenschap wordt niet toegelaten door gebrek. U kunt van uw officieel adres aan aem-forms-ea@adobe.com schrijven om toegang tot de eigenschap te verzoeken.</span>
 
 Met de functie Vergelijken in Adaptive Forms Core Components kunnen formulierauteurs verschillen tussen twee formulieren vaststellen door velden, inhoud en componenten te analyseren.
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 9c58545406bc539dbd0c224b3c88365d3851deb8
+source-git-commit: 64bc2ecbb2b5ef5847af4449562240a7c1ec45e9
 workflow-type: tm+mt
-source-wordcount: '6074'
+source-wordcount: '6135'
 ht-degree: 0%
 
 ---
@@ -43,13 +43,7 @@ ht-degree: 0%
 
 De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
-* [ hCaptcha ](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) en [ Cloudflare Turnstile CAPTCHA diensten ](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms steunt de volgende diensten Captcha:
-   * Captcha beschermt formulieren tegen bots, spam en automatisch misbruik door gebruikers uit te dagen met een widget selectievakjes. Het zorgt ervoor dat alleen menselijke gebruikers doorgaan, waardoor de beveiliging voor online transacties wordt verbeterd.
-   * Cloudflare Turnstile biedt een beveiligingsmaatregel die tot doel heeft formulieren te beschermen tegen geautomatiseerde bots, kwaadaardige aanvallen, spam en ongewenst geautomatiseerd verkeer. Er wordt een selectievakje weergegeven bij het verzenden van formulieren om te controleren of het formulier menselijk is, voordat het formulier kan worden verzonden.
-
-* Adaptieve formulierversie:
-   * [ creeer veelvoudige versies van een AanpassingsVorm ](/help/forms/using/add-versioning-reviews-comments.md) - nu kunnen de gebruikers variaties van bestaande vormen gemakkelijk beheren. Dit proces vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
-   * [ vergelijk Aangepaste Forms ](/help/forms/using/compare-forms-core-components.md): De gebruikers kunnen nu twee vormen gemakkelijk vergelijken om verschillen te identificeren. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
+#### Nieuwe GA-functies in AEM Forms {#ga-aem-forms-sp22}
 
 * Toegevoegde steun om doopvont toe te laten die in [ Interactieve Communicatie Partij APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) inbedt - Interactieve Mededelingen omvat nu steun voor het inbedden van de doopvonten van Adobe Ming en van Adobe Myungjo in PDF die door de Partij API worden geproduceerd. Deze verbetering zorgt voor nauwkeurige tekstrendering in gegenereerde documenten, zelfs bij het gebruik van fontsubsets, waardoor meertalige inhoud in PDF-uitvoer beter wordt ondersteund.
 
@@ -60,6 +54,18 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 * [ PDF/A nalevingsverhogingen ](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - nu kunnen de gebruikers PDF in formaten PDF/A (1a, 2a, 3a) voor archiveringsdoeleinden omzetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
 
 * **Steun voor Auto het Grootte van Doopvont voor Statische documenten van PDF** - AEM Forms Designer, OutputService, en FormsService steunt nu auto het rangschikken van doopvonten voor statische PDF. Als de gebruiker de fontgrootte 0 instelt voor tekst-, numerieke, wachtwoord- of datetime velden, wordt de fontgrootte automatisch aangepast binnen deze velden zonder de algemene grootte van het veld te wijzigen. Als gebruikers de functie willen gebruiken, geven ze een markering door in de aangepaste XCI: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>` .
+
+#### Nieuwe Beta-functies in AEM Forms {#beta-aem-forms-sp22}
+
+De bètafunctie biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde innovaties en om hun ontwikkeling vorm te geven. Wilt u een bètafunctie voor uw omgevingen inschakelen? Verzend een e-mail van uw officiële adres naar aem-forms-ea@adobe.com met de lijst van mogelijkheden die u geinteresseerd bent.
+
+* [ hCaptcha ](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) en [ Cloudflare Turnstile CAPTCHA diensten ](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms steunt de volgende diensten Captcha:
+   * Captcha beschermt formulieren tegen bots, spam en automatisch misbruik door gebruikers uit te dagen met een widget selectievakjes. Het zorgt ervoor dat alleen menselijke gebruikers doorgaan, waardoor de beveiliging voor online transacties wordt verbeterd.
+   * Cloudflare Turnstile biedt een beveiligingsmaatregel die tot doel heeft formulieren te beschermen tegen geautomatiseerde bots, kwaadaardige aanvallen, spam en ongewenst geautomatiseerd verkeer. Er wordt een selectievakje weergegeven bij het verzenden van formulieren om te controleren of het formulier menselijk is, voordat het formulier kan worden verzonden.
+
+* Adaptieve formulierversie:
+   * [ creeer veelvoudige versies van een AanpassingsVorm ](/help/forms/using/add-versioning-reviews-comments.md) - nu kunnen de gebruikers variaties van bestaande vormen gemakkelijk beheren. Dit proces vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
+   * [ vergelijk Aangepaste Forms ](/help/forms/using/compare-forms-core-components.md): De gebruikers kunnen nu twee vormen gemakkelijk vergelijken om verschillen te identificeren. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -621,7 +627,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 * Eventuele wijzigingen in de XDP van geneste lay-outfragmenten in een interactieve communicatie worden niet weerspiegeld in de IC-editor. (FORMS-16575)
 * In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, worden sommige berekende waarden niet correct getoond. (FORMS-16603)
 * Wanneer de brief in de Voorproef van de Druk wordt bekeken, wordt de inhoud veranderd. Dat wil zeggen dat sommige spaties verdwijnen en bepaalde letters worden vervangen door &#39;x&#39;. (FORMS-15681)
-* Wanneer een gebruiker een WebLogic 14c-instantie configureert, mislukt de PDFG-service in AEM Forms Service Pack 21 (6.5.21.0) op JEE die op JBoss wordt uitgevoerd vanwege klasseconflicten met betrekking tot de SLF4J-bibliotheek. De fout wordt als volgt weergegeven (CQDOC-22178):
+* Wanneer een gebruiker een WebLogic 14c-instantie configureert, mislukt de PDFG-service in AEM Forms Service Pack 21 (6.5.21.0) op JEE die wordt uitgevoerd op JBoss® vanwege klasseconflicten met betrekking tot de SLF4J-bibliotheek. De fout wordt als volgt weergegeven (CQDOC-22178):
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"

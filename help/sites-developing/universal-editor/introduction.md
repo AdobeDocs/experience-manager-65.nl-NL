@@ -4,9 +4,9 @@ description: Leer meer over de flexibiliteit van de Universal Editor en hoe deze
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
+source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Leer meer over de flexibiliteit van de Universal Editor en hoe deze uw ervaringe
 De Universal Editor is een veelzijdige visuele editor die deel uitmaakt van Adobe Experience Manager Sites. Auteurs kunnen hiermee &#39;what-you-see-is-what-you-get&#39; (WYSIWYG)-bewerkingen uitvoeren voor een headless experience.
 
 * Auteurs profiteren van de flexibiliteit van de Universal Editor, omdat deze ondersteuning biedt voor dezelfde consistente visuele bewerking voor alle vormen van inhoud zonder kop.
-* Ontwikkelaars profiteren van de veelzijdigheid van de Universal Editor, omdat deze ook werkelijke ontkoppeling van de implementatie ondersteunt. Het stelt ontwikkelaars in staat om vrijwel elk kader of architectuur van hun keuze te gebruiken, zonder enige SDK of technologiebeperkingen op te leggen.
+* Ontwikkelaars profiteren van de veelzijdigheid van de Universal Editor, omdat deze ook werkelijke ontkoppeling van de implementatie ondersteunt. Het stelt ontwikkelaars in staat om vrijwel elk kader of elke architectuur van hun keuze te gebruiken, zonder SDK- of technologiebeperkingen op te leggen.
 
 Gelieve te zien de [ documentatie van AEM as a Cloud Service op de Universele Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) voor meer detail.
 
@@ -178,3 +178,11 @@ Wanneer u documentatie voor de Universal Editor met AEM as a Cloud Service volgt
 >[!TIP]
 >
 >Voor een uitvoerige gids voor ontwikkelaars die met de Universele Redacteur beginnen, te zien gelieve het document [ Universele Overzicht van de Redacteur voor AEM Ontwikkelaars ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) in de documentatie van AEM as a Cloud Service terwijl het houden van de noodzakelijke veranderingen nodig voor AEM 6.5 steun zoals vermeld in deze sectie.
+
+## Verschillen tussen AEM 6.5 en AEM as a Cloud Service {#differences}
+
+De Universele Redacteur in AEM 6.5 werkt globaal het zelfde als in AEM as a Cloud Service met inbegrip van UI en veel van de opstelling. Er zijn echter verschillen die moeten worden opgemerkt.
+
+* De Universele Redacteur in 6.5 steunt slechts de hoofdloze gebruikcase.
+* De opstelling van de Universele Redacteur varieert lichtjes voor 6.5 ([ zoals die ](#setup) in het huidige document wordt beschreven).
+* De Universal Editor in 6.5 gebruikt een andere elementkiezer en een andere contentfragmentkiezer dan AEM as a Cloud Service.

@@ -9,9 +9,9 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -61,10 +61,6 @@ Het **Levende Overzicht van het Exemplaar** kan worden geopend wanneer het bekij
    ![ lusje van de Vervaging - het Levende Overzicht van het Exemplaar ](assets/chlimage_1-360.png)
 
 1. Selecteer **Levend Overzicht van het Exemplaar** om het overzicht van alle levende exemplaren met betrekking tot de huidige blauwdruk te tonen en te gebruiken.
-
-   >[!NOTE]
-   >
-   >Voor verdere details zie ook het artikel van de Kennisbank [ Livecopy statusbericht - Up-to-date/Green/In Synchronisatie ](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 1. Het gebruik **dicht** om weg te gaan en aan de **console van Plaatsen** terug te keren.
 

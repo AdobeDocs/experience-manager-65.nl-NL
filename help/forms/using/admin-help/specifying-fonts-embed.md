@@ -9,14 +9,18 @@ exl-id: b2cbf5f3-ee13-47bf-bf7f-f6a1884cee66
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
 # Te insluiten fonts opgeven {#specifying-fonts-to-embed}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 U kunt opgeven welke lettertypen altijd worden ingesloten of nooit worden ingesloten met de formulieren die de Forms-service genereert. Als u fonts insluit, neemt de bestandsgrootte van de formulieren toe. Ongebruikelijke lettertypen die gebruikers zelden op hun systeem hebben, insluiten. Sluit geen algemene lettertypen in die ze doorgaans hebben geïnstalleerd.
 

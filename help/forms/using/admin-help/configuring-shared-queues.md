@@ -9,9 +9,9 @@ exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Zodra deze taken zijn gedeeld, kunnen deze door de gebruiker worden voltooid, me
 >De Flex Workspace is afgekeurd voor de release AEM formulieren.
 
 ### Toegang tot een geselecteerde gebruikerswachtrij configureren {#configuring-access-to-a-selected-user-queue}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
 1. Selecteer **de Diensten van 0} >** Forms Workflow **>** Gedeelde Rij **.**

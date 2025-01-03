@@ -9,9 +9,9 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1768'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,8 @@ De pagina Core Configurations in de beheerconsole biedt instellingen die de syst
 
 >[!NOTE]
 >
-> Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+> * Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
+> * U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 Voor informatie over het toelaten van veilige reservewijze, zie [ Toelatend en onbruikbaar makend veilige reservewijze ](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
@@ -122,4 +123,4 @@ Schakel deze optie in ontwikkelomgevingen in waarin ontwikkelaars de WSDL-genera
 
 **staat niet-beveiligde documentupload van de toepassingen van Flex** *ndash toe; Het dossier uploadt servlet die wordt gebruikt om documenten van de toepassingen van de Flex® van de Adobe aan AEM vormen te uploaden vereist dat de gebruikers voor authentiek worden verklaard en worden gemachtigd alvorens zij documenten kunnen uploaden. Aan de gebruiker moet de gebruikersrol Document Upload Application of een andere rol worden toegewezen die de machtiging Document uploaden bevat. Zo voorkomt u dat onbevoegde gebruikers documenten uploaden naar de AEM Forms-server. Selecteer deze optie als u deze beveiligingsfunctie wilt uitschakelen in een ontwikkelomgeving of voor achterwaartse compatibiliteit met eerdere versies van AEM formulieren. Deze optie is standaard niet geselecteerd. Zie &quot;AEM formulieren aanroepen met AEM formulieren verwijderen&quot; in Programmeren met AEM formulieren voor meer informatie.
 
-**staat niet-beveiligde documentupload van toepassingen van SDK van Java** *ndash toe; de uploads van HTTP DocumentManager moeten worden beveiligd. Standaard is voor HTTP-uploads verificatie en verificatie vereist voordat gebruikers documenten kunnen uploaden. De gebruiker moet de rol van de Gebruiker van de Diensten of een andere rol worden toegewezen die de Dienst bevat roept toestemming. Zo voorkomt u dat onbevoegde gebruikers documenten uploaden naar de Forms-server. Selecteer deze optie als u deze beveiligingsfunctie wilt uitschakelen in een ontwikkelomgeving, voor achterwaartse compatibiliteit met eerdere versies van AEM formulieren of op basis van uw firewallinstelling. Deze optie is standaard niet geselecteerd. Zie &quot;AEM formulieren aanroepen met de Java API&quot; in Programmeren met AEM formulieren voor meer informatie.
+**staat niet-beveiligde documentupload van de toepassingen van SDK van Java** *ndash toe; de uploads van HTTP DocumentManager moeten worden beveiligd. Standaard is voor HTTP-uploads verificatie en verificatie vereist voordat gebruikers documenten kunnen uploaden. De gebruiker moet de rol van de Gebruiker van de Diensten of een andere rol worden toegewezen die de Dienst bevat roept toestemming. Zo voorkomt u dat onbevoegde gebruikers documenten uploaden naar de Forms-server. Selecteer deze optie als u deze beveiligingsfunctie wilt uitschakelen in een ontwikkelomgeving, voor achterwaartse compatibiliteit met eerdere versies van AEM formulieren of op basis van uw firewallinstelling. Deze optie is standaard niet geselecteerd. Zie &quot;AEM formulieren aanroepen met de Java API&quot; in Programmeren met AEM formulieren voor meer informatie.

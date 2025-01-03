@@ -9,14 +9,18 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # SAML-serviceleverinstellingen configureren{#configure-saml-service-provider-settings}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 SAML (Security Assertion Markup Language) is een van de opties die u kunt selecteren wanneer u een machtiging voor een onderneming of hybride domein configureert. SAML wordt hoofdzakelijk gebruikt om SSO over veelvoudige domeinen te steunen. Als SAML is geconfigureerd als uw verificatieprovider, kunnen gebruikers zich aanmelden en zich via een opgegeven externe identiteitsprovider (IDP) verifiëren bij AEM formulieren.
 

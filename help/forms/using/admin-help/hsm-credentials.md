@@ -9,9 +9,9 @@ exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 >Nadat u de HSM-configuratie hebt gewijzigd, start u de AEM Forms Server opnieuw.
 
 ## Een alias maken voor een HSM-referentie wanneer het HSM-apparaat online is {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
@@ -103,4 +107,4 @@ AEM vormen gebruiken een Web op diensten-Gebaseerd mechanisme IPC/RPC. Met dit m
 Dit mechanisme ondersteunt het online maken van HSM-profielen of statuscontroles niet. Er zijn echter twee manieren om HSM-profielen te maken en statuscontroles uit te voeren:
 
 * Maak een clientreferentie voor AEM formulieren door deze door te geven in het certificaat van de ondertekenaar. Volg de stappen in [ Vormend steun HSM voor AEM vormen ES gebruikend Zon JDK op het platform met 64 bits van Vensters ](https://kb2.adobe.com/cps/808/cpsid_80835.html). De locatie van de webservice wordt doorgegeven als een referentie-eigenschap. Offline HSM-profielen die zijn gemaakt met behulp van certificaatmodule of SHA-1-hexadecimale certificaat worden ook ondersteund. Als u echter een upgrade hebt uitgevoerd naar AEM formulieren uit een eerdere versie van AEM formulieren, brengt u wijzigingen aan op de client omdat de referentie gegevens van het certificaat en de webservice heeft meegevoerd.
-* De plaats van de Dienst van het Web wordt gespecificeerd in de beleidsconsole voor de dienst van de Handtekening. (Zie [ de dienstmontages van de Handtekening ](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier droeg de client alleen de alias van het HSM-profiel in de vertrouwde opslag. U kunt deze optie naadloos gebruiken zonder wijzigingen op de client, zelfs als u een upgrade hebt uitgevoerd naar AEM formulieren van een eerdere versie van AEM formulieren. Deze optie ondersteunt geen HSM-profielen die gebruikmaken van certificaat SHA-1.
+* De plaats van de Dienst van het Web wordt gespecificeerd in de beleidsconsole voor de dienst van de Handtekening. (Zie [ de dienstmontages van de Handtekening ](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) hier, droeg de cliënt slechts alias van het profiel HSM in de vertrouwensopslag. U kunt deze optie naadloos gebruiken zonder wijzigingen op de client, zelfs als u een upgrade hebt uitgevoerd naar AEM formulieren van een eerdere versie van AEM formulieren. Deze optie ondersteunt geen HSM-profielen die gebruikmaken van certificaat SHA-1.

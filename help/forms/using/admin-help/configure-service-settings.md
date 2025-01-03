@@ -9,14 +9,18 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10824'
+source-wordcount: '10836'
 ht-degree: 0%
 
 ---
 
 # Servicemontages configureren {#configure-service-settings}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 U kunt de pagina van het Beheer van de Dienst gebruiken om montages voor elk van de diensten te vormen die deel van AEM vormen uitmaken. De beschikbare montages variëren afhankelijk van de dienst die wordt gevormd.
 
@@ -38,7 +42,7 @@ U kunt de pagina van het Beheer van de Dienst gebruiken om montages voor elk van
 
 ## Instellingen voor workflowservice controleren {#audit-workflow-service-settings}
 
-Workbench biedt de mogelijkheid om procesinstanties op te nemen terwijl ze bij uitvoering worden uitgevoerd en deze vervolgens af te spelen om het gedrag van het proces te observeren. (Zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).) Om ruimte op het het dossiersysteem van de Server van Forms te besparen, kunt u de hoeveelheid gegevens van de procesopname beperken die wordt opgeslagen. U kunt de volgende eigenschappen van de service Audit Workflow Service ( `AuditWorkflowService` ) configureren:
+Workbench biedt de mogelijkheid om procesinstanties op te nemen terwijl ze bij uitvoering worden uitgevoerd en deze vervolgens af te spelen om het gedrag van het proces te observeren. (Zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).) om ruimte op het het dossiersysteem van de Server van Forms te besparen, kunt u de hoeveelheid gegevens van de procesopname beperken die wordt opgeslagen. U kunt de volgende eigenschappen van de service Audit Workflow Service ( `AuditWorkflowService` ) configureren:
 
 **maxNumberOfRecordingInstances:** het maximumaantal opnamen dat wordt opgeslagen. Wanneer het maximumaantal wordt opgeslagen, wordt de oudste opname verwijderd uit het dossiersysteem wanneer een nieuwe opname wordt gecreeerd. Deze eigenschap is handig als u veel opnamen wilt maken en oude opnamen automatisch wilt verwijderen. De standaardwaarde is 50.
 

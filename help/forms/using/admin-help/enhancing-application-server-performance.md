@@ -9,9 +9,9 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1882'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ Een document dat groter is dan de maximale inline-grootte wordt opgeslagen in he
 Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlinegrootte), wordt de inhoud in de database opgeslagen als onderdeel van de serialisatielading van het document. Daarom kan het verhogen van de maximum gealigneerde grootte de gegevensbestandgrootte beïnvloeden.
 
 **verander de maximum gealigneerde grootte**
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Klik in de beheerconsole op Instellingen > Core System Settings > Configurations.
 1. Voer een waarde in het vak Max. inline-grootte van standaarddocument in en klik op OK.

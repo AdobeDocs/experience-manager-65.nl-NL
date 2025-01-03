@@ -9,14 +9,18 @@ exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
 # Zoeken naar procesinstanties{#searching-for-process-instances}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Gebruik de pagina van het Onderzoek van het Proces om onderzoekscriteria in te gaan om een procesgeval te vinden. U kunt de pagina van het Onderzoek van het Proces van de pagina van het vormwerkschema toegang hebben of door Onderzoek op de pagina van de Instantie van het Proces te klikken.
 

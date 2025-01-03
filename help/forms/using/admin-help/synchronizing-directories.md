@@ -9,12 +9,13 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
+
 
 # Mappen synchroniseren {#synchronizing-directories}
 
@@ -50,11 +51,13 @@ Gebruikersbeheer voert de volgende stappen uit wanneer de synchronisatie van de 
 
 >[!NOTE]
 >
->Gebruikers en groepen die uit de map zijn verwijderd, worden pas verwijderd uit de gebruikersbeheerdatabase als u een volledige directorysynchronisatie uitvoert.
+> * Gebruikers en groepen die uit de map zijn verwijderd, worden pas verwijderd uit de gebruikersbeheerdatabase als u een volledige directorysynchronisatie uitvoert.
+> * Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
+
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
-1. Schakel het selectievakje Delta Synch in en klik op Opslaan.
-1. Bewerk de directoryinstellingen voor elk van de ondernemingsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en voer `modify TimeStamp` in als waarde. Voor details over het uitgeven van ondernemingsdomeinen, zie [ het Uitgeven en het omzetten van bestaande domeinen ](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+2. Schakel het selectievakje Delta Synch in en klik op Opslaan.
+3. Bewerk de directoryinstellingen voor elk van de ondernemingsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en voer `modify TimeStamp` in als waarde. Voor details over het uitgeven van ondernemingsdomeinen, zie [ het Uitgeven en het omzetten van bestaande domeinen ](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Gedetailleerde logboekregistratie tijdens synchronisatie inschakelen of uitschakelen {#enable-or-disable-detailed-logging-during-synchronization}
 

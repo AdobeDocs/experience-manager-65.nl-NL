@@ -9,9 +9,9 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ U kunt de opdrachtregelinterface `LCBackupMode` -scripts gebruiken om AEM Forms 
    Zie het Leesmij-bestand in de map BackupRestoreCommandline voor meer informatie over de opdrachtregelinterface naar de back-upmodus.
 
 ### Back-upmodi verlaten {#leaving-backup-modes}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 U kunt of de beleidsconsole of bevel-lijn optie gebruiken om reservewijzen te verlaten.
 

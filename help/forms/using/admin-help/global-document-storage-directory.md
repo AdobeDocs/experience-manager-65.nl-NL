@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -82,13 +82,15 @@ U kunt de GDS-locatie wijzigen in de beheerconsole nadat de installatie van AEM 
 
 >[!NOTE]
 >
->Migreer de gegevens op de volgende manier of er treedt gegevensverlies op.
+> * Migreer de gegevens op de volgende manier of er treedt gegevensverlies op.
+> * Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
+
 
 1. Meld u aan bij de beheerconsole en klik op Instellingen > Core System Settings > Configurations.
-1. Voer in het vak Algemene opslagmap voor documenten het volledige pad naar de nieuwe GDS-map in en klik op OK.
-1. Sluit de toepassingsserver onmiddellijk af.
-1. Verplaats alle bestanden van de oude GDS-map naar de nieuwe locatie, waarbij de interne mapstructuur behouden blijft.
-1. Start de toepassingsserver opnieuw.
+2. Voer in het vak Algemene opslagmap voor documenten het volledige pad naar de nieuwe GDS-map in en klik op OK.
+3. Sluit de toepassingsserver onmiddellijk af.
+4. Verplaats alle bestanden van de oude GDS-map naar de nieuwe locatie, waarbij de interne mapstructuur behouden blijft.
+5. Start de toepassingsserver opnieuw.
 
 ## Informatie over implementatiebestanden {#about-deployment-files}
 

@@ -9,14 +9,18 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3808'
 ht-degree: 0%
 
 ---
 
 # E-maileindpunten configureren {#configuring-email-endpoints}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Met e-maileindpunten kunnen gebruikers de service aanroepen door een of meer documenten (als e-mailbijlagen) naar een opgegeven e-mailaccount te verzenden. Het e-mailpostvak fungeert als verzamelpunt voor de bijlagen. De service bewaakt de Postvak IN en verwerkt de bijlagen. De resultaten van de omzetting worden door:sturen aan de gebruiker die in het eindpunt wordt bepaald.
 
@@ -32,7 +36,7 @@ Alle e-maileindpunten zijn geconfigureerd met een geoorloofde gebruikersnaam en 
 
 Als uw gebruikers documenten met West-Europese taalkarakters in dossier en omzettingswegnamen verzenden, moeten zij een e-mailtoepassing gebruiken die de vereiste het coderen types (Latin1 [ ISO-8859-1 ], West-Europese [ Vensters ], of UTF-8) steunt. Voor meer informatie, zie *het Installeren van en het Opstellen van AEM vormen* document voor uw toepassingsserver.
 
-Alvorens u een e-maileindpunt vormt, vorm de E-maildienst. (Zie [ montages standaard e-maileindpunt ](configuring-email-endpoints.md#configure-default-email-endpoint-settings) vormen.) De configuratieparameters van de e-mailservice hebben twee doelen:
+Alvorens u een e-maileindpunt vormt, vorm de E-maildienst. (Zie [ de montages van het standaard e-maileindpunt ](configuring-email-endpoints.md#configure-default-email-endpoint-settings) vormen.) De de configuratieparameters van de E-mail dienst hebben twee doeleinden:
 
 * Om attributen te vormen die voor alle e-maileindpunten gemeenschappelijk zijn
 * Standaardwaarden opgeven voor alle e-maileindpunten

@@ -9,14 +9,18 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
 
 # Op certificaten gebaseerde verificatie configureren {#configuring-certificate-based-authentication}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Gebruikersbeheer voert meestal verificatie uit met een gebruikersnaam en wachtwoord. Gebruikersbeheer ondersteunt ook verificatie op basis van certificaten, waarmee u gebruikers kunt verifiëren via Acrobat of gebruikers programmatisch kunt verifiëren. Voor details over het voor authentiek verklaren van gebruikers programmatically, zie [ Programmerend met AEM vormen ](https://www.adobe.com/go/learn_aemforms_programming_63).
 
@@ -47,7 +51,7 @@ Wanneer u een certificaat test, uploadt Gebruikersbeheer de certificaatcontroles
 1. Klik op Nieuwe certificaattoewijzing en selecteer in de lijst Voor uitgever de certificaatalias zoals geconfigureerd in Betrouwbaarheidsopslagbeheer.
 1. Wijs een van de kenmerken van het certificaat toe aan het kenmerk van een gebruiker. U kunt bijvoorbeeld de algemene naam van het certificaat toewijzen aan de aanmeldings-id van de gebruiker.
 
-   Als de inhoud van het kenmerk in het certificaat afwijkt van de inhoud in het kenmerk van de gebruiker in de gebruikersbeheerdatabase, kunt u een reguliere Java-expressie (regex) gebruiken die overeenkomt met de twee kenmerken. Bijvoorbeeld, als de gemeenschappelijke namen van de certificaten namen zoals *Alex Roze (Authentificatie)* en *Alex Roze (Ondertekenend)* zijn en de gemeenschappelijke naam in het gegevensbestand van het Beheer van de Gebruiker is *Alex Roze*, gebruikt u een regex om het vereiste deel van de certificaatattributen (in dit voorbeeld, *Alex Roze* te halen.) De reguliere expressie die u opgeeft, moet voldoen aan de Java regex-specificatie.
+   Als de inhoud van het kenmerk in het certificaat afwijkt van de inhoud in het kenmerk van de gebruiker in de gebruikersbeheerdatabase, kunt u een reguliere Java-expressie (regex) gebruiken die overeenkomt met de twee kenmerken. Bijvoorbeeld, als de gemeenschappelijke namen van de certificaten namen zoals *Alex Roze (Authentificatie)* en *Alex Roze (Ondertekenend)* zijn en de gemeenschappelijke naam in het gegevensbestand van het Beheer van de Gebruiker is *Alex Roze*, gebruikt u een regex om het vereiste deel van het certificaatattribuut (in dit voorbeeld, *Alex Roze* te halen.) De regelmatige uitdrukking u specificeert moet aan Java in overeenstemming zijn regex-specificatie.
 
    U kunt de expressie transformeren door de volgorde van de groepen op te geven in het vak Aangepaste volgorde. De aangepaste volgorde wordt gebruikt met de methode `java.util.regex.Matcher.replaceAll()` . Het gedrag dat wordt weergegeven, komt overeen met het gedrag van die methode en de invoertekenreeks (de aangepaste volgorde) moet dienovereenkomstig worden opgegeven.
 

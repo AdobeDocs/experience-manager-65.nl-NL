@@ -9,14 +9,18 @@ exl-id: cfb81f5b-e018-43b1-b76e-bac56b8bd96d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
 # Het aantal items wijzigen dat op de pagina&#39;s Toepassingen en Services wordt weergegeven {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Op de pagina van de Voorkeur, kunt u het aantal diensten, eindpunten, categorieën, en archieven controleren die op elk van de Toepassingen en Web-pagina&#39;s van de Diensten worden getoond.
 

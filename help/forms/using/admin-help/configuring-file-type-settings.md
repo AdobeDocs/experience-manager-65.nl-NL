@@ -8,14 +8,18 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '5891'
+source-wordcount: '5903'
 ht-degree: 0%
 
 ---
 
 # Instellingen voor bestandstypen configureren {#configuring-file-type-settings}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 In PDF Generator kunt u de toepassingsinstellingen voor ondersteunde bestandstypen instellen. In Windows kunt u de toepassingsinstellingen voor elk ondersteund bestandstype instellen. In UNIX en Linux kunt u de toepassingsinstellingen voor HTML-naar-PDF en OpenOffice instellen.
 

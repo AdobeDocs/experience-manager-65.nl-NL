@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '7403'
+source-wordcount: '7415'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,10 @@ Afdruktaken mislukken als ze fonts hebben die niet kunnen worden ingesloten. Dez
 **Norm:** creeert de dossiers van PDF aan druk aan Desktopprinters of digitale kopieerapparaten, publiceren op CD, of verzenden naar een cliënt als het publiceren bewijs. Bij deze set opties worden compressie en downsampling gebruikt om de bestandsgrootte te beperken. Subsets met alle lettertypen die in het bestand worden gebruikt, worden geconverteerd naar sRGB en afgedrukt naar een gemiddelde resolutie om een redelijk nauwkeurige weergave van het oorspronkelijke document te maken. Subsets van Microsoft Windows-lettertypen worden niet standaard ingesloten. Deze PDF-bestanden kunnen worden geopend in Acrobat 5 en Acrobat Reader 5.0 en hoger.
 
 ## PDF-instellingen toevoegen of bewerken {#add-or-edit-pdf-settings}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 PDF-instellingen bepalen exact hoe bestanden worden geconverteerd en de resulterende PDF-structuur en -functies. Definieer een nieuwe PDF-instelling of bewerk een instelling die u eerder hebt gemaakt. U kunt vooraf gedefinieerde instellingen niet wijzigen, maar u kunt een instelling maken op basis van een bestaande instelling door de instelling te bewerken en onder een andere naam op te slaan.
 

@@ -9,9 +9,9 @@ exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1643'
 ht-degree: 0%
 
 ---
@@ -183,6 +183,10 @@ Wanneer u een bewerking opnieuw uitvoert, wordt een verzoek verzonden om de bewe
 1. Selecteer de bewerking en klik op Opnieuw.
 
 ## Werken met bewerkingen {#working-with-operations}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 De pagina van de Details van de Verrichting toont een overzicht van één verrichting in een proces en zijn huidige gebruikerstoewijzingen.
 

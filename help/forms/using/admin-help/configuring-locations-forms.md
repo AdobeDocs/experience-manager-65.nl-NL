@@ -9,14 +9,18 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
 # Locaties configureren voor Forms {#configuring-locations-for-forms}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 U kunt de URL, URI en bestandslocaties van kenmerken opgeven, zoals de hoofdmap van het web, de locatie van de formulieren die moeten worden opgehaald, het PDF-bestand van het zaadbestand dat wordt gebruikt in PDFForm-transformaties en de cachelocatie.
 
@@ -52,7 +56,7 @@ Waar `host name` en `port` de servernaam en het havenaantal van de server zijn d
 
 De standaardwaarde is een lege tekenreeks.
 
-**Wortel URI van het Web:** de het Webwortel van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), opgegeven via de SDK van AEM formulieren, om een absolute URL samen te stellen voor toegang tot toepassingsspecifieke webinhoud.
+**Wortel URI van het Web:** de het Webwortel van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), opgegeven via de AEM formulieren SDK, om een absolute URL samen te stellen voor toegang tot toepassingsspecifieke webinhoud.
 
 De standaardwaarde is een lege tekenreeks.
 

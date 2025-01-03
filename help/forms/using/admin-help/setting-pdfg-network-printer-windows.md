@@ -9,14 +9,18 @@ feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # Een PDFG-netwerkprinter instellen (alleen Windows) {#setting-up-a-pdfg-network-printer-windows-only}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Met PDFG-netwerkprinter kunnen gebruikers een PDF-document genereren vanuit elke toepassing die afdrukken ondersteunt. Nadat een gebruiker de Printer van het Netwerk PDFG installeert, verschijnt een nieuwe printer genoemd *PDF generator* in de sectie van Printers van het Controlebord van Vensters. Als er al een printer met dezelfde naam bestaat, wordt de gebruiker gevraagd een andere naam op te geven.
 

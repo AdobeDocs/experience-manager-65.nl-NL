@@ -9,19 +9,24 @@ exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 98cbaaf64c0268be1afe7196a7bbbf5c93f02148
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# Connector configureren voor Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
+
+# Connector configureren voor Microsoft SharePoint
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM formulieren en Microsoft SharePoint. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. Klik in de beheerconsole op Services > Connector voor Microsoft SharePoint.
-1. Geef de volgende instellingen op voor uw SharePoint-server:
+2. Geef de volgende instellingen op voor uw SharePoint-server:
 
    **de Naam van de Gastheer van de Server van SharePoint:** het de havenaantal van de gastheernaam van de Webtoepassing op de server van SharePoint, in het formaat `[hostname]:'port'`.
 
@@ -31,7 +36,7 @@ Connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM formu
 
    **Naam van het Domein:** Domein waar de server van SharePoint wordt gevestigd.
 
-1. Klik op Opslaan.
+3. Klik op Opslaan.
 
 ## Microsoft SharePoint-configuratieservice {#microsoft-sharepoint-configuration-service}
 

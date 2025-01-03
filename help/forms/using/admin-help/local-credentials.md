@@ -9,14 +9,18 @@ exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
 # Lokale referenties beheren {#managing-local-credentials}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Lokale referenties zijn persoonlijke sleutelgegevens die worden gehost in Betrouwbaarheidsbeheer. A *lokale referentie* identificeert waar de referentie van DES van een gebruiker wordt opgeslagen. Met Betrouwbaarheidsbeheer kunt u uw lokale gegevens importeren en beheren door bijvoorbeeld bestaande PFX-bestanden te gebruiken, zodat u lokale gegevens kunt importeren, bewerken en verwijderen.
 
@@ -37,7 +41,7 @@ Voor informatie en instructies met betrekking tot de Uitbreidingen van Acrobat R
 
    Voor informatie over het verkrijgen van referentie, zie [ Voorbereidend om AEM vormen ](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf) te installeren.
 
-1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC Extensions en de service Handtekening. Deze alias wordt ook gebruikt om de referentie via programmacode te benaderen met de SDK voor AEM formulieren.
+1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC Extensions en de service Handtekening. Deze alias wordt ook gebruikt om de referentie via programmacode te openen met de AEM formulieren SDK.
 
    >[!NOTE]
    >

@@ -9,9 +9,9 @@ exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ Als sommige gebruikers in uw organisatie verschillende niet-bedrijfsdagen hebben
 
    De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. Voor details bij vestiging domeinen, zie [ Toevoegend domeinen ](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Als u de agenda-toets voor deze gebruikers wilt instellen, voert u in het veld Business Calendar Key een tekenreeks in bij het toevoegen of bewerken van een gebruiker in Gebruikersbeheer. (Zie [ Toevoegend en vormend gebruikers ](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Vervolgens wijst u de zakelijke kalendersleutels (de tekenreeksen) toe aan zakelijke kalenders in de formulierwerkstroom. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Als u de agenda-toets voor deze gebruikers wilt instellen, voert u in het veld Business Calendar Key een tekenreeks in bij het toevoegen of bewerken van een gebruiker in Gebruikersbeheer. (Zie [ Toevoegend en vormend gebruikers ](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) U brengt dan de sleutels van de bedrijfskalender (de koorden) aan bedrijfscalenders in vormenwerkschema in kaart. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP, die het Beheer van de Gebruiker met het gegevensbestand van het Beheer van de Gebruiker synchroniseert. Hiermee kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Als bijvoorbeeld elk gebruikersrecord in uw map een veld &quot;Land&quot; bevat en u bedrijfscalenders wilt toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de veldnaam &quot;Land&quot; op in het veld Bedrijfscalenderoets wanneer u de gebruikersinstellingen voor de map opgeeft. (Zie [ het Vormen folders ](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Vervolgens kunt u de agenda-sleutels voor het bedrijf (de waarden die zijn gedefinieerd voor het veld &quot;Land&quot; in de LDAP-lijst) toewijzen aan de agenda&#39;s voor het bedrijf in de formulierworkflow. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP, die het Beheer van de Gebruiker met het gegevensbestand van het Beheer van de Gebruiker synchroniseert. Hiermee kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Als bijvoorbeeld elk gebruikersrecord in uw map een veld &quot;Land&quot; bevat en u bedrijfscalenders wilt toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de veldnaam &quot;Land&quot; op in het veld Bedrijfscalenderoets wanneer u de gebruikersinstellingen voor de map opgeeft. (Zie [ Vormende folders ](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) U kunt de sleutels van de bedrijfkalender (de waarden die voor het &quot;land&quot;gebied in de folder LDAP worden bepaald) aan bedrijfscalendars in vormenwerkschema dan in kaart brengen. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. Definieer in de formulierwerkstroom een kalender voor elke set gebruikers die dezelfde niet-werkdagen delen. (Zie [ creeer of werk een bedrijfskalender ](configuring-business-calendars.md#create-or-update-a-business-calendar) bij.)
 1. Wijs in de formulierwerkstroom de agenda- of groepslidmaatschappen voor elke kalender toe. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -64,26 +64,28 @@ Als uw organisatie verschillende reeksen gebruikers bevat die verschillende niet
 
 >[!NOTE]
 >
->Als u geen bedrijfsagenda maakt, wordt de standaardkalender gebruikt.
+> * Als u geen bedrijfsagenda maakt, wordt de standaardkalender gebruikt.
+> * Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
+
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Business Calendars.
-1. Om een nieuwe bedrijfskalender toe te voegen, klik ![ bus_cal_plus ](assets/bus_cal_plus.png). De tekst *Nieuwe Kalender* verschijnt in de drop-down lijst. Selecteer de tekst en typ een andere naam voor de kalender.
+2. Om een nieuwe bedrijfskalender toe te voegen, klik ![ bus_cal_plus ](assets/bus_cal_plus.png). De tekst *Nieuwe Kalender* verschijnt in de drop-down lijst. Selecteer de tekst en typ een andere naam voor de kalender.
 
    Als u een bestaande agenda wilt bewerken, selecteert u deze in de vervolgkeuzelijst.
 
-1. Selecteer onder Standaard niet-werkdagen elke weekdag, zoals weekends.
-1. [ Facultatieve ] Uitgezochte Van Bedrijfs het Gebruik Uren en specificeer de begin en eindtijden voor de bedrijfsdagen.
+3. Selecteer onder Standaard niet-werkdagen elke weekdag, zoals weekends.
+4. [ Facultatieve ] Uitgezochte Van Bedrijfs het Gebruik Uren en specificeer de begin en eindtijden voor de bedrijfsdagen.
 
    Als u deze optie selecteert, wordt een gebeurtenis die vóór de gespecificeerde tijdwaaier voorkomt verplaatst naar het begin van de tijdwaaier, en een gebeurtenis die voorkomt nadat de tijdwaaier wordt verplaatst naar de begintijd van de volgende werkdag.
 
    Neem bijvoorbeeld een situatie waarin een gebruiker een taak krijgt toegewezen om 2:00 uur &#39;s middags op een dinsdag en de herinnering voor die taak is ingesteld op twee werkdagen. Zonder kantooruren zou de herinnering om 2:00 uur op donderdag plaatsvinden. Als de kantooruren op 8:00 tot 17:00 uur worden geplaatst, zou de herinnering op donderdag worden verschoven naar 8:00 uur. Zonder kantooruren, als een herinneringsgebeurtenis om 18.00 uur op Dinsdag werd gecreeerd, zou de herinnering na kantooruren op Donderdag voorkomen. Als de kantooruren op 8:00 tot 17:00 worden geplaatst, zou de herinnering om 8:00 uur op Vrijdag plaatsvinden.
 
-1. Dubbelklik in de kalender aan de linkerkant op andere niet-werkdagen, zoals feestdagen. Je kunt geen dagen in het verleden selecteren. De niet-werkdagen die u selecteert, worden weergegeven in een lijst aan de rechterkant, waarbij de datum twee keer op één regel wordt weergegeven. Selecteer links de datum waarop u een naam of beschrijving voor de niet-werkdag wilt typen.
+5. Dubbelklik in de kalender aan de linkerkant op andere niet-werkdagen, zoals feestdagen. Je kunt geen dagen in het verleden selecteren. De niet-werkdagen die u selecteert, worden weergegeven in een lijst aan de rechterkant, waarbij de datum twee keer op één regel wordt weergegeven. Selecteer links de datum waarop u een naam of beschrijving voor de niet-werkdag wilt typen.
 
    Om een niet-bedrijfsdag uit de lijst te verwijderen, klik ![ bus_cal_trash ](assets/bus_cal_trash.png) naast de dag.
 
-1. [ Facultatief ] als deze kalender de standaardkalender moet zijn, uitgezochte StandaardKalender. De standaardkalender wordt gebruikt wanneer geen andere kalenderafbeelding voor gebruiker-bijbehorende gebeurtenissen bestaat of geen bedrijfskalender voor de Gebeurtenis van de Tijdopnemer of de Wacht Dienst wordt gespecificeerd. U kunt de standaardkalender niet verwijderen.
-1. Wanneer u klaar bent met het definiëren van de niet-werkdagen, selecteert u Kalender ingeschakeld om deze actief te maken en klikt u op Opslaan.
+6. [ Facultatief ] als deze kalender de standaardkalender moet zijn, uitgezochte StandaardKalender. De standaardkalender wordt gebruikt wanneer geen andere kalenderafbeelding voor gebruiker-bijbehorende gebeurtenissen bestaat of geen bedrijfskalender voor de Gebeurtenis van de Tijdopnemer of de Wacht Dienst wordt gespecificeerd. U kunt de standaardkalender niet verwijderen.
+7. Wanneer u klaar bent met het definiëren van de niet-werkdagen, selecteert u Kalender ingeschakeld om deze actief te maken en klikt u op Opslaan.
 
    Als u een bestaande kalender bijwerkt, wordt de nieuwe versie onmiddellijk van kracht en gebruikt voor alle bedrijfskalenderberekeningen, met inbegrip van taken die reeds lopen.
 

@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
 
 # Uitgenodigde en lokale gebruikersaccounts beheren {#managing-invited-and-local-user-accounts}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Gebruik de pagina Uitgenodigde en lokale gebruikers om uw uitgenodigde en lokale gebruikers te beheren. Deze pagina wordt alleen weergegeven als aan de volgende voorwaarden is voldaan:
 

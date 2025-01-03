@@ -9,14 +9,18 @@ exl-id: 734ed463-2441-49fc-bacb-deb40851af42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
 
 # De System Information Service instellen {#set-up-the-system-information-service}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 De systeeminformatiedienst verstrekt REST APIs om informatie terug te winnen. Om de dienst van de systeeminformatie te gebruiken, laat het eindpunt van REST van beleidsconsole toe. Voer de volgende stappen uit om het REST-eindpunt in te schakelen:
 

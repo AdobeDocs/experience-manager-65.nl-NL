@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,14 @@ De Trust Store kan meer dan één Acrobat Reader DC Extensions-referentie bevatt
 
 ## Een Acrobat Reader DC Extensions-referentie importeren {#import-a-acrobat-reader-dc-extensions-credential}
 
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
+
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Klik op Importeren en selecteer Acrobat Reader DC Extensions Credential onder Type vertrouwde winkel.
 1. (Optioneel) Selecteer Standaard om aan te geven dat deze referentie de standaardreferentie is voor gebruik met Acrobat Reader DC Extensions.
-1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC Extensions. Deze alias wordt ook gebruikt om de referentie via programmacode te benaderen met de SDK voor AEM formulieren.
+1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC Extensions. Deze alias wordt ook gebruikt om de referentie via programmacode te openen met de AEM formulieren SDK.
 
    >[!NOTE]
    >

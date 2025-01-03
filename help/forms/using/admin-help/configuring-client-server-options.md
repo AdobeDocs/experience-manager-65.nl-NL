@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
+source-wordcount: '10278'
 ht-degree: 0%
 
 ---
 
 # De beveiligingsserver voor het document configureren {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Serverconfiguratie.
 1. Configureer de instellingen en klik op OK.
@@ -308,9 +312,9 @@ U kunt gebeurteniscontrole in- en uitschakelen en de typen gebeurtenissen opgeve
 
 **Beleid van de Schakelaar op Document:** een gebruiker of een beheerder schakelt het beleid dat aan een document in bijlage is.
 
-**het Document van Publish als:** een nieuw document de waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben geen ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
+**het Document van Publish als:** een nieuw document de waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben geen ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de AEM formulieren SDK.
 
-**Interactief Document:** een nieuw document de waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben een ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
+**Interactief Document:** een nieuw document de waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben een ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de AEM formulieren SDK.
 
 **de gebeurtenissen van het Beleid**
 
@@ -366,7 +370,7 @@ Synchronisatie voltooid:** Deze informatie is niet beschikbaar op de pagina Gebe
 
 **Gesynchroniseerde de toepassing van de Cliënt** moet informatie met de server synchroniseren om voor off-line toegang toe te staan.
 
-**Verkeerde van de Versie:** een versie van de AEM vormen SDK die met de server onverenigbaar is probeerde om met de server te verbinden.
+**Verkeerde Versie:** een versie van de AEM vormen SDK die met de server onverenigbaar is probeerde om met de server te verbinden.
 
 **Informatie van de Synchronisatie van de Folder:** Deze informatie is niet beschikbaar bij de pagina van Gebeurtenissen. De huidige informatie van de foldersynchronisatie, met inbegrip van de huidige synchronisatiestatus en de tijd van de laatste synchronisatie, wordt getoond op de pagina van het Beheer van het Domein. Klik op Instellingen > Gebruikersbeheer > Domeinbeheer om de pagina Domeinbeheer in de beheerconsole te openen.
 
@@ -555,7 +559,7 @@ Met documentbeveiliging wordt automatisch een e-mailuitnodiging voor een registr
 
 Het registratiebericht bevat een koppeling naar een registratiepagina en informatie over de manier waarop u zich kunt registreren. Nadat de uitgenodigde gebruiker zich heeft geregistreerd, geeft de documentveiligheid een activeringse-mail met een verbinding aan een pagina van de Activering uit. Als de account is geactiveerd, blijft deze geldig totdat u de account deactiveert of verwijdert.
 
-Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [ een lokaal domein ](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) toevoegen en [ Creërend en vormend rollen ](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem van de gebruikersregistratie hebben die gebruikend de AEM vorm SDK wordt gecreeerd. Zie de hulp bij &quot;het Ontwikkelen van SPIs voor AEM vormen&quot;in [ Programmering met AEM vormen ](/help/forms/developing/introducing-java-api-soap-quick.md). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
+Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [ een lokaal domein ](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) en [ toevoegen Creërend en vormend rollen ](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem hebben van de gebruikersregistratie die gebruikend de AEM vormen SDK wordt gecreeerd. Zie de hulp bij &quot;het Ontwikkelen van SPIs voor AEM vormen&quot;in [ Programmering met AEM vormen ](/help/forms/developing/introducing-java-api-soap-quick.md). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
 
 **laat en vormt uitgenodigde gebruikersregistratie** toe
 
@@ -779,13 +783,13 @@ Wanneer clienttoepassingen proberen een koppeling tot stand te brengen met docum
 
 De ontkenningsinstellingen kunnen verschillende sets ontkenningsvoorwaarden bevatten. Als alle kenmerken van een set overeenkomen, krijgt de toepassing die het verzoek indient, geen toegang tot de documentbeveiligingsservices.
 
-De ontkenning-van-dienst eigenschap vereist dat de cliënttoepassingen de versie 8.2 of recenter van de SDK van de Cliënt van de documentveiligheid C++ gebruiken. De volgende producten van de Adobe verstrekken productinformatie wanneer het vragen van de diensten van de documentveiligheid:
+De ontkenning-van-dienst eigenschap vereist dat de cliënttoepassingen de document veiligheid C++ versie van SDK 8.2 of later gebruiken. De volgende producten van de Adobe verstrekken productinformatie wanneer het vragen van de diensten van de documentveiligheid:
 
 * Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard of hoger
 * Adobe Reader 9.0 en hoger
 * Acrobat Reader DC-extensies voor Microsoft Office 8.2 en hoger
 
-Clienttoepassingen gebruiken de client-API van de C++-client-SDK voor documentbeveiliging om services aan te vragen van documentbeveiliging. De client-API-aanvragen bevatten platform- en SDK-versiegegevens (vooraf gecompileerd in de client-API) en productgegevens die zijn verkregen van de clienttoepassing.
+Clienttoepassingen gebruiken de client-API van de C++ Client SDK voor documentbeveiliging om services aan te vragen bij documentbeveiliging. De client-API-aanvragen bevatten platform- en SDK-versiegegevens (vooraf gecompileerd in de client-API) en productgegevens die zijn verkregen van de clienttoepassing.
 
 De toepassingen of stop-ins van de cliënt verstrekken productinformatie in hun implementatie van een callback functie. De toepassing biedt de volgende informatie:
 

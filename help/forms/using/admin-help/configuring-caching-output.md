@@ -9,14 +9,18 @@ exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
 
 # Caching configureren voor Output  {#configuring-caching-for-output}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 De Output-service voegt XML-formuliergegevens samen met een formulierontwerp dat in Designer is gemaakt om een uitvoerstroom van een document in verschillende indelingen te maken.
 

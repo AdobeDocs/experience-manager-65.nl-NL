@@ -9,14 +9,18 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Tijdelijk beheer en vertraging{#work-manager-and-throttling}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 AEM formulieren (en eerdere versies) hebben JMS-wachtrijen gebruikt om bewerkingen asynchroon uit te voeren. In AEM formulieren zijn JMS-wachtrijen vervangen door Werkbeheer. Dit document bevat achtergrondinformatie over Werkbeheer en instructies voor het configureren van opties voor het vertragen van werkbeheer.
 
@@ -34,7 +38,7 @@ Asynchrone bewerkingen worden op deze manier afgehandeld:
 
 1. De Manager van het werk ontvangt een het werkpunt voor uitvoering.
 1. De Manager van het werk slaat het het werkpunt in een gegevensbestandlijst op en wijst een uniek herkenningsteken aan het het werkpunt toe. De databaserecord bevat alle informatie die nodig is om het werkitem uit te voeren.
-1. De draden van de Manager van het werk trekken in het werkpunten wanneer de draden vrij worden. Alvorens in de het werkpunten te trekken, kunnen de draden controleren of de vereiste diensten zijn begonnen, of er genoeg heapgrootte om in het volgende het werkpunt te trekken is, en of er genoeg cycli van cpu zijn om het het werkpunt te verwerken. De Manager van het werk evalueert ook attributen van het het werkpunt (zoals zijn prioriteit) wanneer het plannen van zijn uitvoering.
+1. De draden van de Manager van het werk trekken in het werkpunten wanneer de draden vrij worden. Alvorens in de het werkpunten te trekken, kunnen de draden controleren of de vereiste diensten zijn begonnen, of er genoeg heapgrootte om in het volgende het werkpunt te trekken is, en of er genoeg CPU cycli zijn om het het werkpunt te verwerken. De Manager van het werk evalueert ook attributen van het het werkpunt (zoals zijn prioriteit) wanneer het plannen van zijn uitvoering.
 
 AEM formulierbeheerders kunnen Health Monitor gebruiken om de statistieken van de Manager van het Werk te controleren, zoals het aantal werkpunten in de rij en hun status. U kunt Health Monitor ook gebruiken om het werkpunten te pauzeren, te hervatten, opnieuw te proberen of te schrappen. (Zie [ statistieken van de Mening met betrekking tot de Manager van het Werk ](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 

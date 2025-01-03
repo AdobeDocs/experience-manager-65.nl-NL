@@ -9,14 +9,18 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
 
 # Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld {#files-to-back-up-and-recover}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 De toepassings- en gegevensbestanden waarvan een back-up moet worden gemaakt, worden in de volgende secties gedetailleerder beschreven.
 
@@ -131,7 +135,7 @@ Voor meer informatie, zie [ Steun en herstel ](https://msdn.microsoft.com/en-us/
 
 ### MySQL {#mysql}
 
-Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand te vormen MySQL om op binaire logboekwijze te lopen. (Zie [ Binair registreren MySQL ](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Een hot backup-hulpprogramma voor MySQL is ook beschikbaar in de InnoBase-software. (Zie [ Innobase hete Steun ](https://www.innodb.com/hot-backup/features.md).)
+Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand te vormen MySQL om op binaire logboekwijze te lopen. (Zie [ Binair registreren MySQL ](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Een heet reservehulpmiddel voor MySQL is ook beschikbaar bij software InnoBase. (Zie [ Innobase hete Steun ](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >

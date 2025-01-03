@@ -9,14 +9,18 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
 
 # Werken met taken {#working-with-tasks}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Gebruik de pagina van het Onderzoek van de Taak aan onderzoek naar taken door gebruikersnaam of taakidentiteitskaart De zoekresultaten worden weergegeven op de pagina Taaklijst, waar u de geschiedenis van een taak kunt openen. U kunt een taak ook opnieuw toewijzen als één gebruiker te veel taken heeft of als een gebruiker een taak ten onrechte heeft toegewezen.
 

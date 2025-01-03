@@ -9,14 +9,18 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Gebruikersbeheer {#user-management}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Met Gebruikersbeheer kunt u SSO (Single Sign-On) inschakelen tussen AEM formuliermodules en toepassingen die door Netegrity SiteMinder zijn beveiligd door SAML (Security Assertion Markup Language) te gebruiken. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 

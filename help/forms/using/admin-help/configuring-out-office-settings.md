@@ -9,9 +9,9 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ De functie Buiten het Bureau laat gebruikers of beheerders toe om te specificere
 Wanneer het creëren van een proces, kan de gebruiker Workbench specificeren of een taak wegens uit de montages van het Bureau kan worden opnieuw gericht.
 
 ## De informatie van een gebruiker van het Bureau van de mening {#view-a-user-s-out-of-office-information}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom > Buiten Office.
 1. In de doos dichtbij de bovenkant van uit de pagina van het Bureau, kunt u één van het volgende doen:

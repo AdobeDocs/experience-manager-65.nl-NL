@@ -9,14 +9,18 @@ exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # Het licentietype voor de implementatie bijwerken {#update-the-license-type-for-the-deployment}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Als deel van het proces van de AEM vormeninstallatie, gebruikte u de Manager van de Configuratie om de AEM vormenmodules te vormen en op te stellen die u vereist. Door gebrek, worden die modules gevormd met een vergunning van de 60 dagevaluatie. Gebruik de pagina van de Vergunning van de Verandering in beleidsconsole om het licentietype voor de plaatsing te veranderen. De momenteel opgestelde modules worden getoond op de pagina van de Vergunning van de Verandering.
 

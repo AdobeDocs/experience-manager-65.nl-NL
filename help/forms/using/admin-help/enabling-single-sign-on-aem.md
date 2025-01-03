@@ -9,14 +9,18 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
 
 # Single Sign-On inschakelen in AEM formulieren{#enabling-single-sign-on-in-aem-forms}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 AEM formulieren bieden twee manieren om SSO (Single Sign-On) - HTTP-headers en SPNEGO in te schakelen.
 
@@ -71,7 +75,7 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [ SSO gebr
 >AEM Forms op JEE steunt het vormen SSO gebruikend Kerberos/SPNEGO in een veelvoudige milieu&#39;s van het kinddomein niet.
 
 1. Bepaal welk domein om SSO toe te laten te gebruiken. De AEM Forms-server en de gebruikers moeten deel uitmaken van hetzelfde Windows-domein of vertrouwde domein.
-1. In Actieve Folder, creeer een gebruiker die de Server van AEM Forms vertegenwoordigt. (Zie [ een gebruikersrekening ](enabling-single-sign-on-aem.md#create-a-user-account) creëren.) Als u meer dan één domein om SPNEGO te gebruiken vormt, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
+1. In Actieve Folder, creeer een gebruiker die de Server van AEM Forms vertegenwoordigt. (Zie [ een gebruikersrekening ](enabling-single-sign-on-aem.md#create-a-user-account) creëren.) Als u meer dan één domein vormt om SPNEGO te gebruiken, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
 1. Wijs de de dienstbelangrijkste naam toe. (Zie [ een Belangrijkste Naam van de Dienst in kaart brengen (SPN) ](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configureer de domeincontroller. (Zie [ verhinderen Kerberos integriteit-controle mislukkingen ](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Voeg of geef een ondernemingsdomein toe zoals die in [ wordt beschreven Toevoegend domeinen ](/help/forms/using/admin-help/adding-domains.md#adding-domains) of [ het Uitgeven en het omzetten van bestaande domeinen ](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Wanneer u creeert of het ondernemingsdomein uitgeeft, voer deze taken uit:

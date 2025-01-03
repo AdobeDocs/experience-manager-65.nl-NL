@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,10 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
 >OpenOffice moet zijn geïnstalleerd op een maplocatie waartoe alle PDFG-gebruikers toegang hebben. U kunt dit verifiëren door u aan te melden als gebruiker PDFG en te controleren of u OpenOffice zonder problemen kunt starten.
 
 ### Een gebruikersaccount toevoegen {#add-a-user-account}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
 1. Klik op Toevoegen en voer de gebruikersnaam en het wachtwoord in van een gebruiker die beheerdersrechten heeft op de Forms-server. Als u gebruikers voor OpenOffice vormt, verwerp de aanvankelijke activeringsdialoogvensters OpenOffice.

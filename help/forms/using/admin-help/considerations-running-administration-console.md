@@ -9,14 +9,18 @@ exl-id: e15dae6f-d30d-4770-a5ca-34f522a01d31
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
 # Overwegingen bij het uitvoeren van beheerconsole {#considerations-when-running-administrationconsole}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 Dit zijn sommige dingen om te overwegen wanneer het runnen van de Console van het Beleid:
 

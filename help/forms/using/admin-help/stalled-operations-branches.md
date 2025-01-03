@@ -9,14 +9,18 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
 
 # Werken met stilstaande bewerkingen en vertakkingen {#working-with-stalled-operations-and-branches}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 De gestalte pagina van Verrichtingen en de Geroepen pagina van Trappen tonen de processen die hebben vastgezet. Een proces kan stagneren wanneer een fout tijdens of na de uitvoering van een bewerking optreedt of als gevolg van een opzettelijke stallbewerking in het proces:
 

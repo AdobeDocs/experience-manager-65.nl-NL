@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,10 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 >De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
 ## Een rol maken {#create-a-role}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Nieuwe rol.
 1. Typ in het vak Rolnaam een naam voor de rol en typ desgewenst een beschrijving van de rol en klik op Volgende.

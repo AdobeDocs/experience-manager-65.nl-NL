@@ -9,14 +9,18 @@ exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
 # De categorieën beheren die in Workspace worden weergegeven {#managing-the-categories-displayed-in-workspace}
+
+>[!NOTE]
+> 
+> Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 In Workspace worden de processen die een gebruiker kan starten, weergegeven in categorieën in het linkernavigatievenster. U kunt de categorieën instellen in de beheerconsole of procesontwerpers kunnen deze instellen in Workbench. Wanneer procesontwerpers processen creëren, wijzen zij hen aan categorieën toe.
 

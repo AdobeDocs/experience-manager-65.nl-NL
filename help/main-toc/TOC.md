@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
+source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7475'
 ht-degree: 1%
 
 ---
@@ -1209,9 +1209,8 @@ ht-degree: 1%
       + [Oplossing voor problemen met RCE-kwetsbaarheden 2 voor Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Geen back-up van database tijdens upgrade naar 6.5.12.0 voor MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF-generatie kan geen groot aantal PDF op WorkBench afdrukken](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
-      + [Hoe kan ik AEM SDK op de juiste wijze opnieuw starten?](/help/forms/using/restart-aem-sdk.md)
+      + [SDK op de juiste manier opnieuw opstarten](/help/forms/using/restart-aem-sdk.md)
       + [De service Documentdigitalisering kan geen OCR&#39;s uitvoeren op PDF](/help/forms/using/papercapture-service-resolution.md)
-      + [AEM Forms Add-on-pakket verwijderen](/help/forms/using/uninstall-forms-addon-package.md)
    + Oudere documentatie {#legacy-documentation}
       + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](/help/forms/developing/building-xml.md)
       + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)

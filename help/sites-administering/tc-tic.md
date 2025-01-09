@@ -6,9 +6,9 @@ feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eb4c6ab188cc79eab66647433e60ba97eba6f257
+source-git-commit: 943a855f8eb46837e122c3bf2c2deb3f109b2ea9
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -25,25 +25,9 @@ Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Ve
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
-Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider. AEM biedt standaard de mogelijkheid verbinding te maken met Microsoft Translator.
-De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor de Vertaalprojecten. Koppelingen voor meer informatie over de integratie:
+Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider.
 
-* [ Translations.com ](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [ Lionbridge ](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [ Memsource ](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
-* [ de Wolk van XTM ](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
-* [ Lingotek ](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
-* [ RWS ](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
-* [ Smartling ](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* Microsoft (Microsoft Translator is vooraf geïnstalleerd in AEM)
-
->[!NOTE]
->
->Bekijk de volgende pagina&#39;s voor de meest recente lijst met aanbieders van vertalingen voor mensen en machines:
->
->* [ AEM Menselijke Vertaling ](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=aem+human+translation&amp;sort=RELEVANCE)
->* [ AEM de Vertaling van de Machine ](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&amp;product=All&amp;partnerLevel=All&amp;sort=RELEVANCE)
->
+AEM omvat het vermogen om [ met Vertaler Microsoft® ](/help/sites-administering/tc-msconf.md) door gebrek te verbinden. Andere verkopers van vertaaltechnologie met AEM schakelaars die lid van het de partnerprogramma van de Adobe Exchange zijn kunnen [ hier ](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE) worden gevonden.
 
 Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de Vertaalschakelaar van Microsoft, zie [ Integrerend met de Vertaler van Microsoft ](/help/sites-administering/tc-msconf.md).
 

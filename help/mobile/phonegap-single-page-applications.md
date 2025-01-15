@@ -9,18 +9,16 @@ exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
 
 # Toepassingen voor één pagina{#single-page-applications}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 [ Toepassingen van één pagina ](https://en.wikipedia.org/wiki/Single-page_application) (SPA) hebben kritieke massa bereikt, wijd beschouwd als het meest efficiënte patroon voor de bouw van naadloze ervaringen met Webtechnologie. Door een SPA te volgen kunt u een toepassing maken die dezelfde prestaties levert als een bureaubladtoepassing of mobiele toepassing, maar die een groot aantal apparaatplatforms en formulierfactoren bereikt vanwege de basis in open webstandaarden.
 

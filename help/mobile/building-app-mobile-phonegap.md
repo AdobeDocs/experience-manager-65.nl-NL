@@ -9,18 +9,16 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
 # Mobiele toepassingen maken{#building-mobile-applications}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Stel uw toepassing samen om deze op een apparaat of simulator te installeren voor testdoeleinden of voor publicatie in de App Store. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Build.
 
@@ -84,7 +82,7 @@ Om te bouwen gebruikend CLI PhoneGap, moet u Node.js en het de cliëntnut instal
    └── cordova@3.3.0-0.1.1 (...)
    ```
 
-1. (Optioneel) Vraag de SDK aan voor het mobiele platform waarvoor u het doelplatform wilt:
+1. (Optioneel) Vraag de SDK aan voor het mobiele platform waarop u zich richt:
 
    * Om apps voor het platform van iOS te bouwen, installeer de recentste versie van [ Xcode ](https://developer.apple.com/xcode/).
    * Om Android™ apps te bouwen, installeer [ Android™ SDK ](https://developer.android.com/).

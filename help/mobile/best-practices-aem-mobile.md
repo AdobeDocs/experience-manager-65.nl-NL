@@ -9,18 +9,16 @@ exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen procedures {#best-practices}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Het maken van een AEM Mobile On-demand Services-app is niet hetzelfde als het rechtstreeks maken van een app in de shell Cordova (of PhoneGap). De ontwikkelaars zouden met moeten vertrouwd zijn:
 

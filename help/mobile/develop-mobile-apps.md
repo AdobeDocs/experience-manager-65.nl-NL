@@ -9,18 +9,16 @@ exl-id: ffd2d029-b81a-4768-8e58-66aa5cf3772d
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
 # Mobiele apps{#mobile-apps}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Adobe Experience Manager (AEM) Mobile maakt deel uit van het AEM multikanaalsdigitale platform dat ook AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms gebruikt. AEM Mobile biedt een opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
 

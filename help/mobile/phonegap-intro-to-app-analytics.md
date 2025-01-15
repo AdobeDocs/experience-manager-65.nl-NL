@@ -9,18 +9,16 @@ exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
 
 # App-prestaties bijhouden met Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 U wilt hogere klantenomzettingen en loyaliteit drijven.
 
@@ -51,7 +49,7 @@ Tot slot [ AEM Beheerders ](#administrators) leren om:
 * creeer een mobiele dienst config en associeer een rapportreeks
 * associeer de mobiele dienst config aan een mobiele app
 * metriek weergeven via het AEM Apps Command Center
-* De configuratie van de AMS SDK toewijzen aan uw mobiele app
+* Wijs AMS SDK Config toe aan uw mobiele app
 
 ## Voor ontwikkelaars - Integreer Analytics in uw app {#for-developers-integrate-analytics-into-your-app}
 
@@ -93,13 +91,13 @@ Nu u de mobiele service config aan de AEM Mobile-app hebt gekoppeld, begint de t
 
 ### Adobe Mobile Services SDK Config-bestand {#adobe-mobile-services-sdk-config-file}
 
-Op dit moment is uw mobiele toepassing gekoppeld aan een cloudservice, maar de mobiele toepassing weet nog niet hoe de verzamelde mobiele meetgegevens naar Adobe Analytics moeten worden overgebracht. Als u de mobiele app wilt overbrengen naar Adobe Analytics, moet het configuratiebestand van de Adobe Mobile Services SDK worden toegevoegd aan Adobe Experience Manager.
+Op dit moment is uw mobiele toepassing gekoppeld aan een cloudservice, maar de mobiele toepassing weet nog niet hoe de verzamelde mobiele meetgegevens naar Adobe Analytics moeten worden overgebracht. Als u de mobiele app wilt bekabelen naar Adobe Analytics, moet het bestand Adobe Mobile Services SDK Config worden toegevoegd aan Adobe Experience Manager.
 
-Klik in de tegel Metrische gegevens analyseren op het pijlpictogram om de menu-items van AMS SDK Config downloaden/uploaden weer te geven.
+Klik in de tegel Metrische gegevens analyseren op het pijlpictogram om de items in het menu AMS SDK Config downloaden/uploaden weer te geven.
 
 ![ chlimage_1-130 ](assets/chlimage_1-130.png)
 
-De eerste stap is SDK Config van de Mobiele Diensten van de Adobe te verkrijgen. Klik op &#39;AMS SDK Config downloaden&#39; om te worden omgeleid naar de website van Adobe Mobile Services waar u het configuratiebestand kunt downloaden. Nadat u het bestand ADBMobileConfig.json hebt opgehaald, klikt u op &quot;AMS SDK Config uploaden&quot; om het configuratiebestand in AEM te uploaden.
+De eerste stap is het verkrijgen van SDK Config van de Adobe Mobiele Diensten. Klik op &#39;AMS SDK Config downloaden&#39; om te worden omgeleid naar de website van Adobe Mobile Services waar u het configuratiebestand kunt downloaden. Nadat u het bestand ADBMobileConfig.json hebt ontvangen, klikt u op &quot;AMS SDK Config uploaden&quot; om het configuratiebestand in AEM te uploaden.
 
 ![ chlimage_1-131 ](assets/chlimage_1-131.png)
 

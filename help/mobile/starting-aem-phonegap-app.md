@@ -9,18 +9,16 @@ exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
 # AEM PhoneGap starten {#starting-aem-phonegap}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Voor ontwikkelaars is het de beste plek om te beginnen de Adobe Experience Manager Mobile Starterkit in github te bekijken
 

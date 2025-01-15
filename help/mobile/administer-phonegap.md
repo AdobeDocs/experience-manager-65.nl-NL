@@ -9,18 +9,16 @@ exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
 # Inhoud voor Adobe PhoneGap Enterprise beheren met AEM {#administering-content-for-adobe-phonegap-enterprise-with-aem}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Een ***AEM beheerder*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de catalogus van AEM Mobile, of door app te creëren gebruikend de aanmaaktovenaar, of door een bestaande toepassing in te voeren. AEM beheerders die een toepassing gebruikend AEM Mobile *creatietovenaar* tot stand brengen, selecteer typisch één van de gewenste toepassingsmalplaatjes of van Adobe uit-van-de-doos verwijzingssteekproeven of (gewoonlijk) een douanemalplaatje van de app die door *AEM ontwikkelaars wordt gecreeerd.*
 

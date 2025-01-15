@@ -9,20 +9,18 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics toevoegen aan uw mobiele toepassing{#add-adobe-analytics-to-your-mobile-application}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-Wilt u aantrekkelijke en relevante ervaringen opbouwen voor gebruikers van mobiele toepassingen? Als u niet de Adobe Mobiele Diensten SDK gebruikt om toepassingslevenscyclus en gebruik te controleren en te meten, dan op wat baseert u uw besluiten? Waar zijn uw meest loyale klanten? Hoe kunt u ervoor zorgen u relevant blijft en omzettingen optimaliseert?
+Wilt u aantrekkelijke en relevante ervaringen opbouwen voor gebruikers van mobiele toepassingen? Als u de Adobe Mobile Services SDK niet gebruikt om de levenscyclus en het gebruik van de toepassing te controleren en te meten, waarop baseert u uw besluiten? Waar zijn uw meest loyale klanten? Hoe kunt u ervoor zorgen u relevant blijft en omzettingen optimaliseert?
 
 Hebben uw gebruikers toegang tot alle inhoud? Verlaten ze de app en zo ja, waar? Hoe vaak blijven ze in de app en hoe vaak komen ze terug om de app te gebruiken? Welke veranderingen kunt u introduceren en dan die verhoging behoud meten? Hoe zit het met crashsnelheden? crasht uw app voor uw gebruikers?
 
@@ -50,7 +48,7 @@ Nadat de account Analytics is ingesteld, maakt u een configuratie voor inhoudssy
 
 Zie Inhoud synchroniseren met inhoud configureren voor meer informatie. De configuratie moet de Synchronisatie van de Inhoud opdragen om ADBMobileConfig in de /www folder te zetten. In de Geometrixx Outdoors-app is de configuratie van Content Sync bijvoorbeeld: */content/phonegap/geometrixx-outdoor/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig* . Er is ook een configuratie voor ontwikkeling. Nochtans, is het identiek aan de niet-ontwikkelingsconfiguratie als er Geometrixx Outdoors zijn.
 
-Zie Analytics - Mobile Services - Adobe Mobile Services SDK Config File voor meer informatie over het downloaden van ADBMobileConfig vanuit het dashboard voor toepassingen voor mobiele toepassingen AEM toepassingen.
+Zie Analytics - Mobile Services - Adobe Mobile Services SDK Config File voor meer informatie over het downloaden van ADBMobileConfig vanuit het dashboard voor mobiele toepassingen AEM toepassingen.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"

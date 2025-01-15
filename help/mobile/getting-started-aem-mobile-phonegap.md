@@ -9,18 +9,16 @@ exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # AEM Adobe PhoneGap{#aem-adobe-phonegap}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee gebruikers met de inhoud kunnen werken. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps.
 

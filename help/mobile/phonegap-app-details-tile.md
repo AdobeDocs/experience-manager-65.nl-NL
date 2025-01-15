@@ -9,18 +9,16 @@ exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
 
 # App-tegel beheren{#manage-app-tile}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Met de tegel **`Manage App`** op het dashboard van de app kunt u gegevens over de toepassing bewerken. Als u de pagina Details wilt openen, klikt u op de detailkoppeling van de tegel van **`Manage App`** . Vanuit de **`Manage App`** -pagina kunt u de configuratie-instellingen (config.xml) van de PhoneGap-toepassing bewerken en uw toepassing voorbereiden voor verzending naar de verschillende opslagruimten van toepassingen.
 

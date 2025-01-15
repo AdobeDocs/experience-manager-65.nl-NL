@@ -8,18 +8,16 @@ exl-id: 50785534-5784-4354-b123-5e640b7c0242
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
 
 # Modellen - overzicht{#models-overview}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Modelbeheer omvat het maken en beheren van modellen voor het koppelen aan uiteindelijke gegevensobjecten. Elk model bevat alle eigenschappen en velddefinities die nodig zijn om het maken en renderen van objecten te vergemakkelijken.
 

@@ -5,9 +5,9 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Eerst, moet u de externe SPA aan uw AEM project uploaden.
 
 1. Vervang `src` in de `/ui.frontend` projectmap door de map `src` van de React-toepassing.
 1. Neem eventuele extra afhankelijkheden op in het bestand `/ui.frontend/package.json` van de app `package.json` .
-   * Zorg ervoor dat de SPAgebiedsdelen van SDK van [ geadviseerde versies ](spa-getting-started-react.md#dependencies) zijn.
+   * Zorg ervoor dat de SPA SDK gebiedsdelen van [ geadviseerde versies ](spa-getting-started-react.md#dependencies) zijn.
 1. Neem aanpassingen op in de map `/public` .
 1. Neem alle inlinescripts of stijlen op die in het `/public/index.html` -bestand zijn toegevoegd.
 
@@ -80,7 +80,7 @@ De instructie `initializationAsync` kan optioneel een `options` -object als para
 
 * `path` - Bij initialisatie wordt het model op het gedefinieerde pad opgehaald en opgeslagen in de `ModelStore` . Hiermee kunt u, indien nodig, de `rootModel` bij initialisatie ophalen.
 * `modelClient` - Hiermee kunt u een aangepaste client opgeven die het model ophaalt.
-* `model` - een `model` voorwerp dat als parameter typisch wordt overgegaan bevolkt wanneer [ gebruikend SSR.](spa-ssr.md)
+* `model` - Een `model` -object dat wordt doorgegeven als een parameter die doorgaans wordt gevuld bij gebruik van SSR.
 
 ### AEM authorable Leaf Components {#authorable-leaf-components}
 
@@ -375,4 +375,3 @@ Het volgende referentiemateriaal kan nuttig zijn om SPA in de context van AEM te
 * [Referentiematerialen SPA (API-referenties)](spa-reference-materials.md)
 * [SPA Bladeren en PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [SPA](spa-routing.md)
-* [SPA en rendering op de server](spa-ssr.md)

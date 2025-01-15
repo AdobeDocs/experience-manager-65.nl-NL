@@ -10,18 +10,16 @@ exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
 # Is uw hybride app gereed voor Adobe Experience Manager Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Dus u hebt uw Hybride PhoneGap- of Cordova-app geïmporteerd in AEM, wat nu? Waarschijnlijk wilt u authorable inhoud aan uw app toevoegen. Hiervoor hebt u een algemeen inzicht in de structuur van een AEM-app nodig. Een toepassing in AEM bestaat meestal uit twee delen. De &#39;shell&#39; en &#39;content&#39;. Het &#39;shell&#39; bestaat uit de statische delen van uw app, zoals de PhoneGap-configuratiebestanden, het app-framework en de navigatie-elementen. De inhoud van het archief dat u hebt geïmporteerd, wordt opgeslagen als onderdeel van de shell. In de context van dit document is de shell alle niet-AEM authored inhoud van uw Hybride toepassing PhoneGap die door de toepassingsontwikkelaar wordt gebouwd.
 

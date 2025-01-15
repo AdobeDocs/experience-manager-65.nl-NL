@@ -9,18 +9,16 @@ exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2550'
 ht-degree: 0%
 
 ---
 
 # Aanpassing van AEM Mobile-content{#aem-mobile-content-personalization}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -82,7 +80,7 @@ Het is noodzakelijk om een rekening van de Diensten van de Adobe Mobiele (AMS) a
 
 ### Clientcode {#client-code}
 
-Om aan login aan de diensten van AMS bezoek [ https://mobilemarketing.adobe.com ](https://mobilemarketing.adobe.com/), selecteer de mobiele toepassing en klik de montages. Zoek het veld SDK-doelopties en plaats de clientcode in het veld en klik op Opslaan.
+Om aan login aan de diensten van AMS bezoek [ https://mobilemarketing.adobe.com ](https://mobilemarketing.adobe.com/), selecteer de mobiele toepassing en klik de montages. Zoek het veld SDK-doelopties, plaats de clientcode in het veld en klik op Opslaan.
 
 ![ chlimage_1-41 ](assets/chlimage_1-41.png)
 

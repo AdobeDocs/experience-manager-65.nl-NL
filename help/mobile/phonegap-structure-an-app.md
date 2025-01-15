@@ -9,18 +9,16 @@ exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 # Een app structureren{#structure-an-app}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Een AEM Mobile-project omvat een aantal verschillende inhoudssoorten, waaronder pagina&#39;s, JavaScript- en CSS-clientbibliotheken, herbruikbare AEM componenten, configuraties voor inhoudssynchronisatie en inhoud van de shell van de PhoneGap-app. Het baseren van uw nieuwe AEM Mobile app op de [ Uitrusting van de Aanzet ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) is een goede manier om alle verschillende types van inhoud in onze geadviseerde structuur te krijgen om zowel portabiliteit als onderhoudbaarheid op de lange termijn te verlichten.
 

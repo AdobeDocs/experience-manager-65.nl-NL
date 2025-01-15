@@ -9,18 +9,16 @@ exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
 # App-metagegevens bewerken {#editing-app-metadata}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Het **leidt App** tegel en de &quot;Manage App&quot;pagina verstrekt een middel om toepassingsmeta-gegevens te bekijken en uit te geven. Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Dit kunnen algemene metagegevens, iOS-metagegevens en schermafbeeldingen zijn. Zie [ leiden AppTegel ](/help/mobile/phonegap-app-details-tile.md) voor verdere details op gemeenschappelijke en meta-gegevens van iOS.
 

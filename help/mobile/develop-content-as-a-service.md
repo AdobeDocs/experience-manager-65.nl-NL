@@ -8,18 +8,16 @@ exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
 
 # Inhoud leveren{#content-delivery}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Mobiele apps moeten alle inhoud in AEM kunnen gebruiken als dat nodig is om de beoogde app-ervaring te bieden.
 
@@ -95,7 +93,7 @@ Laten we de stappen opzij zetten die aangeven hoe de pagina momenteel via de API
 
 #### Een lijst met beschikbare asset-entiteiten ophalen {#getting-a-list-of-available-asset-entities}
 
-Een toepassingsontwikkelaar kan een lijst met beschikbare middelen krijgen door de activa te winnen entiteiten. Het de ruimteeindpunt van de Diensten van de Inhoud kan die informatie door de dienst API SDK van het Web verstrekken.
+Een toepassingsontwikkelaar kan een lijst met beschikbare middelen krijgen door de activa te winnen entiteiten. Het de ruimteeindpunt van de Diensten van de Inhoud kan die informatie door de dienst API SDK verstrekken.
 
 Het resultaat is een object in JSON-indeling dat een lijst met de elementen in de map &quot;icons&quot; bevat.
 

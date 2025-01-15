@@ -9,18 +9,16 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
 # Mobiele apps testen{#testing-mobile-apps}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Gezien het grote aantal apparaten op de markt en de apparaten die worden vrijgegeven, is het testen van uw Apps noodzakelijk geworden. Dit is een gebied waarop functionaliteit en bruikbaarheid lage revisies kunnen opleveren op een App Store, maar één fout kan ertoe leiden dat uw app wordt verwijderd. In uw testplannen en kwaliteitsborging moet zorgvuldig aandacht worden besteed. De volgende koppeling heeft betrekking op veel van de onderwerpen die in het algemeen moeten worden behandeld, zoals het identificeren van uw omgeving, het definiëren van testgevallen, typen tests, veronderstellingen en betrokkenheid van de klant. Ook worden de hulpmiddelen besproken om in de testende inspanning te helpen. De interne hulpmiddelen, zoals [ Hobbes ](/help/sites-developing/hobbes.md), kunnen met web-based het testen UI helpen. [ de Dag van de Hoek ](/help/sites-developing/tough-day.md) kan uw instanties met een gesimuleerde lading benadrukken. Als uw testomgeving al ervaring heeft met hulpmiddelen van derden, zoals Selenium, kunnen deze ook worden gebruikt.
 

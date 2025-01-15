@@ -9,18 +9,16 @@ exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2548'
 ht-degree: 0%
 
 ---
 
 # Paginasjablonen voor mobiele apps {#page-templates-for-mobile-apps}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ## Paginasjablonen voor mobiele apps {#page-templates-for-mobile-apps-1}
 

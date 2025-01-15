@@ -9,18 +9,16 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3135'
 ht-degree: 0%
 
 ---
 
 # Pushmeldingen{#push-notifications}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Het is van cruciaal belang dat gebruikers van mobiele apps van Adobe Experience Manager (AEM) onmiddellijk op de hoogte kunnen worden gesteld van belangrijke meldingen voor de waarde van een mobiele app en de marketingcampagnes. Hier worden de stappen beschreven die moeten worden uitgevoerd om uw app pushmeldingen te laten ontvangen. U leert ook hoe u pushes van AEM Mobile kunt configureren en verzenden naar de toepassing die op de telefoon is geïnstalleerd. Ook, beschrijft deze sectie hoe te om [ Deep het Verbinden ](#deeplinking) eigenschap aan uw duimberichten te vormen.
 

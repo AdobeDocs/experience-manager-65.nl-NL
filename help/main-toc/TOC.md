@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6,5
-source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '7475'
+source-wordcount: '7471'
 ht-degree: 1%
 
 ---
@@ -1447,7 +1447,6 @@ ht-degree: 1%
          + [De RemotePage-component](/help/sites-developing/spa-remote-page.md)
          + [Een externe SPA bewerken in AEM](/help/sites-developing/spa-edit-external.md)
          + [Samengestelde onderdelen in SPA](/help/sites-developing/spa-composite-component.md)
-         + [SPA en rendering op de server](/help/sites-developing/spa-ssr.md)
          + [ toelatend de Uitvoer JSON voor een Component ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
          + [Integratie starten](/help/sites-developing/spa-launch.md)
          + [Referentiematerialen SPA](/help/sites-developing/spa-reference-materials.md)

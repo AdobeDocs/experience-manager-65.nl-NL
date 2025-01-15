@@ -9,18 +9,16 @@ exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # Mobiele toepassingen ontwerpen{#authoring-mobile-applications}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Met het AEM Mobile-dashboard kunt u uw mobiele toepassing maken, bouwen en implementeren, toepassingsmetagegevens maken, verwijderen en bewerken. Zodra uw toepassing live is, kunt u toepassingsanalyses analyseren, waaronder levenscyclus en gebruiksmetriek om klantconversie en merkloyaliteit te verbeteren.
 
@@ -106,7 +104,7 @@ Alternatief, kunt u de apparatenbron downloaden om plaatselijk door CLI te bouwe
 >
 >Zie [ uw Cloud Service van de Diensten van de Adobe Mobiele ](/help/mobile/configure-adobe-mobile-cloud-service.md) voor details vormen.
 
-AEM Mobile integreert met Adobe Analytics door [ Adobe Mobiele Diensten SDK ](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
+AEM Mobile integreert met Adobe Analytics door [ de Mobiele Diensten SDK van de Adobe Mobiele ](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
 
 Het centrum van de Controle **Metriek Tile** toont summiere analyses die van AMS voor uw toepassing worden getrokken. U kunt naar het dashboard Analytics gaan door op &#39;...&#39; in de rechterbenedenhoek te klikken.
 

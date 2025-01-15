@@ -9,18 +9,16 @@ exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # Een AEM Mobile-app maken met een wizard maken{#creating-a-new-aem-mobile-app-using-create-wizard}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Mobile-toepassingen zijn gebaseerd op een blauwdruk die een paginastructuur en eigenschappen definieert. U kunt de volgende toepassingseigenschappen configureren:
 
@@ -33,10 +31,10 @@ AEM Mobile-toepassingen zijn gebaseerd op een blauwdruk die een paginastructuur 
 
 U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing wilt gebruiken, de configuratie PhoneGap Build selecteren die u wilt gebruiken en de analytische configuratie voor de mobiele app selecteren. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
 
-Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de plug-in Adobe Mobile Services SDK in uw app.
+Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de Adobe Mobile Services SDK-plug-in in uw app.
 
 * Samenstellen: klik hier op Configuraties beheren en stel de service voor het samenstellen van build.phonegap.com in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analytics: Klik beheert configuraties en opstelling uw ](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) de clouddienst van SDK van de Mobiele Diensten van de Adobe [. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analytics: Klik beheert configuraties en opstelling uw [ Adobe Mobiele Diensten de clouddienst van SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 ## App-sjablonen gebruiken {#using-app-templates}
 

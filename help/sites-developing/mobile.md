@@ -11,18 +11,16 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3701'
 ht-degree: 0%
 
 ---
 
 # Sites maken voor mobiele apparaten{#creating-sites-for-mobile-devices}
 
->[!NOTE]
->
->De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [ leer meer ](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Het maken van een mobiele site lijkt op het maken van een standaardsite, omdat sjablonen en componenten moeten worden gemaakt. Voor meer details bij het creëren van malplaatjes en componenten, zie de volgende pagina&#39;s: [ Malplaatjes ](/help/sites-developing/templates.md), [ Componenten ](/help/sites-developing/components.md), en [ Begonnen het Ontwikkelen van AEM Sites ](/help/sites-developing/getting-started.md). Het belangrijkste verschil bestaat erin de ingebouwde mobiele functies van Adobe Experience Manager (AEM) binnen de site mogelijk te maken. Dit wordt bereikt door een sjabloon te maken die afhankelijk is van het component voor mobiele pagina.
 
@@ -160,7 +158,7 @@ OF
 
 ### Emulators {#emulators}
 
-Emulatorgebaseerde authoring biedt auteurs de mogelijkheid om inhoudspagina&#39;s te maken die bedoeld zijn voor mobiele clients. Mobiele inhoud schrijven volgens hetzelfde principe als WYSIWYG bewerken. Auteurs kunnen de weergave van de pagina op een mobiel apparaat alleen zien als ze een pagina met mobiele inhoud bewerken met een apparaatemulator.
+Emulatorgebaseerde authoring biedt auteurs de mogelijkheid om inhoudspagina&#39;s te maken die bedoeld zijn voor mobiele clients. Bij het ontwerpen van mobiele inhoud wordt hetzelfde principe gehanteerd als bij het op locatie bewerken van WYSIWYG. Auteurs kunnen de weergave van de pagina op een mobiel apparaat alleen zien als ze een pagina met mobiele inhoud bewerken met een apparaatemulator.
 
 Mobiele apparaten emulators zijn gebaseerd op het generieke emulatorframework. Voor meer details, zie [ Medewerkers ](/help/sites-developing/emulators.md).
 

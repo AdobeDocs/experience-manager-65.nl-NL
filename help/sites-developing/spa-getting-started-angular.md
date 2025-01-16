@@ -9,12 +9,13 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
+
 
 # Aan de slag met SPA in AEM - Angular{#getting-started-with-spas-in-aem-angular}
 
@@ -26,9 +27,7 @@ De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van 
 >
 >Dit artikel is gebaseerd op het kader van de Angular. Voor het overeenkomstige document voor het Reageren kader zie [ Begonnen het worden met SPA in AEM - Reageer ](/help/sites-developing/spa-getting-started-react.md).
 
->[!NOTE]
->
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 
@@ -293,4 +292,4 @@ Voor verdere informatie over hoe te om zich te organiseren om SPA voor AEM te on
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt, zie het artikel [ Dynamisch Model aan de Afbeelding van de Component voor SPA ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diep duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1} artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)
+Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1} artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)

@@ -9,20 +9,19 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
+
 
 # SPA{#spa-blueprint}
 
 Om de auteur toe te laten om de AEM SPARedacteur te gebruiken om de inhoud van een SPA uit te geven, zijn er vereisten die de SPA moet vervullen, die in dit document worden beschreven.
 
->[!NOTE]
->
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 
@@ -60,7 +59,7 @@ Elk item in het model bevat een `:type` -veld dat een AEM-brontype weergeeft. Al
 
 #### Dynamisch model naar componenttoewijzing {#dynamic-model-to-component-mapping}
 
-Voor details over hoe het dynamische model aan componentenafbeelding in de SPA SDK van JavaScript voor AEM voorkomt zie het artikel [ Dynamische Model aan de Afbeelding van de Component voor SPA ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Voor details over hoe het dynamische model aan componentenafbeelding in JavaScript SPA SDK voor AEM voorkomt zie het artikel [ Dynamische Model aan de Afbeelding van de Component voor SPA ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Framework-specifieke laag {#framework-specific-layer}
 

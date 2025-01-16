@@ -10,12 +10,13 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1626'
 ht-degree: 0%
 
 ---
+
 
 # Overzicht SPA Editor{#spa-editor-overview}
 
@@ -23,9 +24,7 @@ Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor 
 
 De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Deze pagina geeft een overzicht van hoe SPA ondersteuning is gestructureerd in AEM, hoe de SPA Editor werkt en hoe het SPA framework en de AEM synchroon blijven.
 
->[!NOTE]
->
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 
@@ -167,7 +166,7 @@ De SPA Editor SDK ondersteunt de volgende minimale versies:
 * 16.x en hoger reageren
 * Angular 6.x en hoger
 
-Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, maar worden niet ondersteund.
+Eerdere versies van deze frameworks werken mogelijk samen met de AEM SPA Editor SDK, maar worden niet ondersteund.
 
 ### Aanvullende kaders {#additional-frameworks}
 

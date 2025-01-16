@@ -10,12 +10,13 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
+
 
 # Een component React implementeren voor SPA{#implementing-a-react-component-for-spa}
 
@@ -23,9 +24,7 @@ Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor 
 
 De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Dit artikel biedt een voorbeeld van hoe u een eenvoudige, bestaande React-component kunt aanpassen aan het werk met de AEM SPA Editor.
 
->[!NOTE]
->
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
+{{ue-over-spa}}
 
 ## Inleiding {#introduction}
 

@@ -10,12 +10,13 @@ exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2018'
 ht-degree: 0%
 
 ---
+
 
 # SPA ontwikkelen voor AEM{#developing-spas-for-aem}
 
@@ -23,9 +24,7 @@ Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor 
 
 Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen van een front-end ontwikkelaar om een SPA voor AEM te ontwikkelen en geeft een overzicht van de architectuur van AEM betreffende het opstellen van SPA op AEM.
 
->[!NOTE]
->
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
+{{ue-over-spa}}
 
 ## SPA ontwikkelingsbeginselen voor AEM {#spa-development-principles-for-aem}
 
@@ -82,17 +81,17 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
    <th><strong>Nadelen</strong></th>
   </tr>
   <tr>
-   <td>AEM wordt gebruikt als hoofdCMS zonder het <a href="/help/sites-developing/spa-reference-materials.md"> kader van SDK van SPA Redacteur te gebruiken.</a></td>
+   <td>AEM wordt gebruikt als headless CMS zonder het <a href="/help/sites-developing/spa-reference-materials.md"> SPA kader van SDK van de Redacteur te gebruiken.</a></td>
    <td>De front-end ontwikkelaar heeft volledige controle over de app.</td>
    <td><p>Inhoudsauteurs kunnen geen AEM gebruiken voor het schrijven van inhoud.</p> <p>De code is niet draagbaar of herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar aan de voorzijde bewerkbare sjablonen moet bijhouden via het JCR.</p> </td>
   </tr>
   <tr>
-   <td>De front-end ontwikkelaar gebruikt het SPA Editor SDK-framework, maar opent slechts enkele gebieden voor de auteur van de inhoud.</td>
+   <td>De front-end ontwikkelaar gebruikt het kader van SPA Editor SDK maar opent slechts enkele gebieden voor de auteur van de inhoud.</td>
    <td>De ontwikkelaar behoudt de controle over de app door alleen authoring in beperkte delen van de app in te schakelen.</td>
    <td><p>Inhoudsauteurs hebben slechts een beperkte AEM ervaring bij het schrijven van inhoud.</p> <p>De code riskeert noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar aan de voorzijde bewerkbare sjablonen via het JCR moet onderhouden.</p> </td>
   </tr>
   <tr>
-   <td>Het project gebruikt volledig de SPA Editor SDK en de frontend componenten worden ontwikkeld als bibliotheek en de inhoudsstructuur van de app wordt gedelegeerd aan AEM.</td>
+   <td>Het project gebruikt volledig de SPA Redacteur SDK en de frontend componenten worden ontwikkeld als bibliotheek en de inhoudsstructuur van app wordt gedelegeerd aan AEM.</td>
    <td><p>De app is herbruikbaar en draagbaar.</p> <p>De auteur van de inhoud kan de app bewerken via AEM ontwerpervaring voor inhoud.<br /> </p> <p>De SPA is compatibel met de sjablooneditor.</p> </td>
    <td><p>De ontwikkelaar heeft geen controle over de structuur van de app en het gedeelte van de inhoud dat aan AEM is gedelegeerd.</p> <p>De ontwikkelaar kan gedeelten van de app nog steeds reserveren voor de inhoud die niet is bedoeld om te worden gemaakt met AEM.</p> </td>
   </tr>
@@ -112,7 +111,7 @@ Ga als volgt te werk om uw bestaande SPA klaar te maken voor AEM.
 1. **maak uw componenten JS modulair.**
 
    Zorg ervoor dat ze in elke volgorde, positie en grootte kunnen worden gerenderd.
-1. **Gebruik de containers die door SDK van de Adobe worden verstrekt om uw componenten op het scherm te plaatsen.**
+1. **gebruik de containers die door SDK van de Adobe worden verstrekt om uw componenten op het scherm te plaatsen.**
 
    AEM biedt een pagina- en alineasysteem voor gebruik.
 1. **creeer een AEM component voor elke component JS.**
@@ -230,4 +229,4 @@ Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [ Begonnen het
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt, zie het artikel [ Dynamisch Model aan de Afbeelding van de Component voor SPA ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diep duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1} artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)
+Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1} artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)

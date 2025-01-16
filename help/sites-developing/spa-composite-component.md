@@ -5,12 +5,13 @@ exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 0%
 
 ---
+
 
 # Samengestelde onderdelen in SPA {#composite-components-in-spas}
 
@@ -19,6 +20,8 @@ Samengestelde componenten gebruiken de modulaire aard van AEM componenten door m
 Wanneer samengestelde componenten correct worden geïmplementeerd in het kader van de Editor (SPA) van AEM toepassing voor één pagina, kunnen de auteurs van de inhoud deze componenten slepen en neerzetten, net als elke andere component, maar kunnen ze toch elke component die de samengestelde component vormt afzonderlijk bewerken.
 
 Dit artikel laat zien hoe u een samengestelde component kunt toevoegen aan uw toepassing voor één pagina, zodat u naadloos kunt werken met de AEM SPA Editor.
+
+{{ue-over-spa}}
 
 ## Hoofdletters gebruiken {#use-case}
 

@@ -7,7 +7,7 @@ exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: d28019efcead89cb66edfa672d6b928cbb7bcc25
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 0%
@@ -256,3 +256,4 @@ Nu u de SPA het uitgeven ervaring in AEM begrijpt en hoe een SPA op de SPA Redac
 * [ Begonnen het Worden met SPA in AEM ](/help/sites-developing/spa-getting-started-react.md) toont hoe een basis SPA wordt gebouwd om met de SPA Redacteur in AEM te werken
 * [ SPA het Overzicht van de Redacteur ](/help/sites-developing/spa-overview.md) gaat in meer diepte in het communicatie model tussen AEM en de SPA.
 * [ het ontwikkelen SPA voor AEM ](/help/sites-developing/spa-architecture.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen en hoe SPA met AEM architectuur in wisselwerking staan.
+

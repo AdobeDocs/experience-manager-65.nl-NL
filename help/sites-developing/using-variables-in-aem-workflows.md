@@ -9,9 +9,9 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8305f77e895ad383a398cf8d4effa2b64cd45677
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1923'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Als u een variabele wilt maken,
    * Formuliergegevensmodel - Geef een formuliergegevensmodelpad op.
    * ArrayList - Geef een subtype op voor de verzameling.
 
-1. Specificeer een facultatieve beschrijving voor de variabele en selecteer ![ sparen pictogram dat door een vinkje binnen een doos wordt vermeld.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan. De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
+1. Specificeer een facultatieve beschrijving voor de variabele en selecteer ![ sparen pictogram dat door een vinkje binnen een doos wordt vermeld.](assets/Done_Icon.png) om de wijzigingen op te slaan. De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
 
 Houd rekening met de volgende werkwijzen wanneer u variabelen maakt:
 
@@ -93,10 +93,10 @@ U kunt ook specifieke elementen van een variabele van het type JSON of XML bijwe
 Ga als volgt te werk om toewijzingen tussen variabelen toe te voegen:
 
 1. Selecteer op de pagina voor workflowbewerking het pictogram Stappen dat beschikbaar is in de assistent van het workflowmodel.
-1. Sleep-en-daling de **Vastgestelde Veranderlijke** stap aan de werkschemaredacteur, selecteer de stap, en selecteer ![ pictogram vormen dat door een moersleutel wordt vermeld.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configureren).
+1. Sleep-en-daling de **Vastgestelde Veranderlijke** stap aan de werkschemaredacteur, selecteer de stap, en selecteer ![ pictogram vormen dat door een moersleutel wordt vermeld.](assets/configure_icon.png) (Configureren).
 1. Selecteer **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]** in het dialoogvenster Variabele instellen.
 1. In de **Variabele van de Kaart** sectie, selecteer de variabele om gegevens op te slaan, selecteer de afbeeldingswijze, en specificeer een waarde om in de variabele op te slaan. De toewijzingsmodi variëren op basis van het type variabele.
-1. Wijs meer variabelen toe zodat u een zinvolle uitdrukking kunt maken. Selecteer ![ sparen pictogram dat door een vinkje binnen een doos wordt vermeld.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan.
+1. Wijs meer variabelen toe zodat u een zinvolle uitdrukking kunt maken. Selecteer ![ sparen pictogram dat door een vinkje binnen een doos wordt vermeld.](assets/Done_Icon.png) om de wijzigingen op te slaan.
 
 ### Voorbeeld 1: Vraag een XML-variabele naar een waarde voor een tekenreeksvariabele {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -251,8 +251,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Een variabele bewerken {#edit-a-variable}
 
 1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
-1. Selecteer het ![ uitgeven pictogram dat door een potloodsymbool wordt vermeld.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
-1. Bewerk de veranderlijke informatie en selecteer ![ sparen pictogram dat door een vinkje wordt vermeld.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan. U kunt de velden **[!UICONTROL Name]** en **[!UICONTROL Type]** voor een variabele niet bewerken.
+1. Selecteer het ![ uitgeven pictogram dat door een potloodsymbool wordt vermeld.](assets/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
+1. Bewerk de veranderlijke informatie en selecteer ![ sparen pictogram dat door een vinkje wordt vermeld.](assets/Done_Icon.png) om de wijzigingen op te slaan. U kunt de velden **[!UICONTROL Name]** en **[!UICONTROL Type]** voor een variabele niet bewerken.
 
 ## Een variabele verwijderen {#delete-a-variable}
 
@@ -262,4 +262,4 @@ Om een variabele te schrappen,
 
 1. Selecteer op de pagina voor de bewerkingsworkflow het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
 1. Selecteer het pictogram Verwijderen naast de naam van de variabele die u wilt verwijderen.
-1. Selecteer ![ Gereed pictogram dat door een symbool van het vinkje wordt vermeld.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de variabele te bevestigen en te verwijderen.
+1. Selecteer ![ Gereed pictogram dat door een symbool van het vinkje wordt vermeld.](assets/Done_Icon.png) om de variabele te bevestigen en te verwijderen.

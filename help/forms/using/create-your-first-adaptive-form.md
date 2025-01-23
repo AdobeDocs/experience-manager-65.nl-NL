@@ -7,9 +7,9 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Doelstellingen:
 * Verzendactie maken om een e-mail met formulierinhoud te verzenden.
 * Een voorbeeld bekijken en een adaptief formulier verzenden.
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](create-adaptive-form.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Stap 2: Formuliergegevensmodel maken {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ Doelstellingen:
 * Configureer lees- en schrijfservices voor het model met formuliergegevens.
 * Het model van vormgegevens en de gevormde diensten van de test met testgegevens.
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](create-form-data-model.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Stap 3: Regels toepassen op adaptieve formuliervelden {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ Doelstellingen:
 * Maak regels en pas deze toe op adaptieve formuliervelden.
 * Gebruik regels om services van het formuliergegevensmodel te activeren om de gegevens bij te werken naar de database.
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](apply-rules-to-adaptive-form-fields.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Stap 4: Stijl uw adaptieve formulier {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ Doelstellingen:
 * Maak een thema voor een adaptief formulier met de themaeditor.
 * Gebruik Webben Fonts in een aangepast thema.
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](style-your-adaptive-form.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Stap 5: Publish uw adaptieve formulier {#step-publish-your-adaptive-form}
 
@@ -123,4 +123,4 @@ Doelstellingen:
 * Sluit het adaptieve formulier in een AEM [!DNL Sites] pagina in.
 * Sluit het adaptieve formulier in een externe webpagina in (een niet-AEM webpagina die buiten AEM wordt gehost).
 
-[![ zie de Gids ](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png) ](publish-your-adaptive-form.md)
+[![ zie de Gids ](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)

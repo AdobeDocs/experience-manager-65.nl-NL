@@ -5,9 +5,9 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 191c4b02274ca7e3e9d4622b72cd585870581f47
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1742'
 ht-degree: 2%
 
 ---
@@ -68,10 +68,11 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 
 | Gebied | Functie | Vervanging | Versie (SP) |
 |--- |--- |--- |--- |
+| Commerce | AEM Classic is verwijderd. | U zou aan [ moeten migreren AEM CIF ](/help/commerce/cif/migration.md). Als u nog CIF Klassiek nodig hebt, is een verenigbaarheidspakket gecreeerd, gelieve [ de Steun van de Klant van de Adobe ](https://experienceleague.adobe.com/?support-solution=General#support) te contacteren. | 6.5.22.0. |
 | Integratie met [!DNL Experience Cloud] | U kunt uw elementen synchroniseren met [!DNL Experience Cloud] door ze te configureren via [!DNL Adobe I/O] . [!DNL Adobe Experience Cloud] werd voorheen [!DNL Adobe Experience Cloud] genoemd. | Als u om het even welke vragen hebt, [ contacteer de Steun van de Klant van de Adobe ](https://experienceleague.adobe.com/?support-solution=General#support). |  |
 | Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. Gebruik het [ elektrisch toestel ActivityMap dat door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) wordt verstrekt. |  |
 | Integrations | De integratie ExactTarget is verwijderd uit de standaarddistributie (QuickStart) en het is niet meer beschikbaar. | Geen vervanging. |  |
-| Integrations | De integratie van de Kracht van Salesforce API is verwijderd uit de standaarddistributie (QuickStart) en is nu een extra pakket van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) te installeren. | De functie is nog steeds beschikbaar. |
+| Integrations | De integratie van de Kracht API van Salesforce is verwijderd uit de standaarddistributie (QuickStart) en is nu een extra pakket van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) te installeren. | De functie is nog steeds beschikbaar. |
 | Forms | De ondersteuning voor de Adobe Central Migration Bridge service is verwijderd omdat het Adobe Central product niet meer wordt ondersteund. | Geen vervanging. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Geen vervanging. |  |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Geen vervanging |  |

@@ -6,9 +6,9 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 01fa8cd75c00b04578fe103d07fa52553d2b6b93
 workflow-type: tm+mt
-source-wordcount: '3652'
+source-wordcount: '3656'
 ht-degree: 0%
 
 ---
@@ -196,9 +196,9 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 | **Platform** | **Niveau van de Steun** |
 |---|---|
-| **Linux®, die op de distributie van Red Hat®** wordt gebaseerd | A: Ondersteund `[1]` `[3]` |
-| Linux®, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[1]` `[2]` |
-| Linux®, gebaseerd op SUSE®-distributie | A: Ondersteund `[1]` |
+| **Linux®, gebaseerd op de Red Hat-distributie®** | A: Ondersteund `[1]` `[3]` |
+| Linux®, gebaseerd op Debian distributie incl. Ubuntu | A: Ondersteund `[1]` `[2]` |
+| Linux®, gebaseerd op SUSE-distributie® | A: Ondersteund `[1]` |
 | Microsoft® Windows Server 2019 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Niet ondersteund |
@@ -217,6 +217,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 (2.17 of hoger)
 
 1. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
 1. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
@@ -255,12 +256,12 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: Ondersteund |
 | Microsoft® IIS 10 (Internet Information Server) | A: Ondersteund |
-| Microsoft® IIS 8.5 (Internet Information Server) | Z: wordt niet ondersteund |
+| Microsoft® IIS 8.5 (Internet Information Server) | Z: Niet ondersteund |
 
-1. Webservers die zijn gebaseerd op de Apache httpd-broncode, worden net zo ondersteund als de httpd-versie waarop deze is gebaseerd. In geval van twijfel, vraag Adobe om bevestiging van het steunniveau met betrekking tot het respectieve serverproduct. De volgende gevallen:
+1. Webservers die zijn gebouwd op basis van de Apache httpd-broncode hebben evenveel ondersteuning als de versie van httpd waarop het is gebaseerd. Vraag Adobe in geval van twijfel om bevestiging van het ondersteuningsniveau met betrekking tot het betreffende serverproduct. De volgende gevallen:
 
-   1. De HTTP-server is gemaakt met alleen officiële Apache-brondistributies, of
-   1. De HTTP-server is geleverd als onderdeel van het besturingssysteem waarop deze wordt uitgevoerd. Voorbeelden: IBM® HTTP Server, Oracle HTTP Server
+   1. De HTTP-server is gebouwd met alleen officiële Apache-brondistributies, of
+   1. De HTTP-server is geleverd als onderdeel van het besturingssysteem waarop deze draait. Voorbeelden: IBM® HTTP Server, Oracle HTTP Server
 
 1. Dispatcher is niet beschikbaar voor Apache 2.4.x voor Windows-besturingssystemen.
 
@@ -268,7 +269,7 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 
 ### Ondersteunde browsers voor gebruikersinterface voor ontwerpen {#supported-browsers-for-authoring-user-interface}
 
-De Adobe Experience Manager-gebruikersinterface werkt met de volgende clientplatforms. Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
+De Adobe Experience Manager-gebruikersinterface werkt met de volgende clientplatforms. Alle browsers zijn getest met de standaardset plug-ins en add-ons.
 
 De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans laptops en desktopcomputers) en tabletvormfactoren (zoals Apple iPad of Microsoft® Surface). De telefoonvormfactor wordt niet ondersteund.
 
@@ -333,7 +334,7 @@ De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
  </tbody>
 </table>
 
-1. Uitgebreide ondersteuning voor Firefox [Meer informatie over mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Uitgebreide Versie van de Steun van Firefox [ Leer meer op mozilla.org ](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. ondersteuning voor Apple iPad
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
@@ -346,7 +347,7 @@ Over het algemeen is browserondersteuning voor websites die door AEM Sites worde
 
 Wanneer u verbinding maakt met Microsoft® Windows 7+ met een AEM die niet met SSL is beveiligd, moet de basisverificatie via een onbeveiligd netwerk in Windows zijn ingeschakeld. Het vereist een verandering in de Registratie van Vensters van WebClient:
 
-1. Zoek de subsleutel in het register:
+1. De registersubsleutel zoeken:
 
    * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 
@@ -358,17 +359,17 @@ Deze sectie biedt speciale notities en meer gedetailleerde informatie over het u
 
 ### IPv4 en IPv6 {#ipv-and-ipv}
 
-Alle elementen van Adobe Experience Manager (Instantie, Dispatcher) kunnen in zowel IPv4- als IPv6-netwerken worden geïnstalleerd.
+Alle elementen van Adobe Experience Manager (Instance, Dispatcher) kunnen in zowel IPv4 als IPv6 netwerken worden geïnstalleerd.
 
-De werking verloopt naadloos omdat er geen speciale configuratie vereist is. U kunt een IP-adres opgeven in de indeling die geschikt is voor uw netwerktype, indien nodig.
+De bewerking is naadloos omdat er geen speciale configuratie vereist is. U specificeert een IP adres gebruikend het formaat dat aan uw netwerktype, indien nodig aangewezen is.
 
-Wanneer u een IP-adres moet opgeven, kunt u de volgende opties selecteren (indien vereist):
+Wanneer een IP-adres moet worden opgegeven, kunt u (indien nodig) kiezen uit de volgende opties:
 
 * Een IPv6-adres. Bijvoorbeeld: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * Een IPv4-adres. Bijvoorbeeld: `https://123.1.1.4:4502`
 
-* Een servernaam. Bijvoorbeeld: `https://www.yourserver.com:4502`
+* De naam van een server. Bijvoorbeeld: `https://www.yourserver.com:4502`
 
 * Het standaardgeval van `localhost` wordt geïnterpreteerd voor zowel IPv4 als IPv6 netwerkinstallaties. Bijvoorbeeld: `https://localhost:4502`
 
@@ -376,7 +377,7 @@ Wanneer u een IP-adres moet opgeven, kunt u de volgende opties selecteren (indie
 
 AEM Dynamic Media is standaard uitgeschakeld. Zie hier om [ Dynamic Media ](/help/assets/config-dynamic.md#enabling-dynamic-media) toe te laten.
 
-Als Dynamic Media ingeschakeld is, zijn de volgende aanvullende technische voorschriften van toepassing.
+Als Dynamic Media is ingeschakeld, zijn de volgende aanvullende technische vereisten van toepassing.
 
 >[!NOTE]
 >
@@ -412,38 +413,38 @@ Als u Dynamic Media op Linux® gebruikt, moet aan de volgende voorwaarden worden
 
 >[!NOTE]
 >
->**NUMA-architectuur:** systemen met processors met AMD64 en Intel® EM64T zijn typisch geconfigureerd als numa-platforms (non-uniform memory architecture). Dat wil zeggen dat de kernel meerdere geheugenknooppunten samenstelt bij opstarttijd in plaats van één geheugenknooppunt te maken.
+>**architectuur NUMA:** Systemen met bewerkers die AMD64 en Intel® EM64T kenmerken worden gevormd typisch als niet-uniforme geheugenarchitectuur (NUMA) platforms. Dat wil zeggen dat de kernel meerdere geheugenknooppunten samenstelt bij opstarttijd in plaats van één geheugenknooppunt te maken.
 >
->De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
+>De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer het geheugen uitgeput raakt, kan de kernel besluiten om processen (bijvoorbeeld de Image Server of Platform Server) te beëindigen, ook al is er geheugen beschikbaar.
 >
->Daarom raadt Adobe aan dat als u een dergelijk systeem uitvoert dat u NUMA uitschakelt met de **optie numa=off** boot om te voorkomen dat de kernel deze processen doodt.
+>Daarom raadt Adobe aan dat als u een dergelijk systeem gebruikt, u NUMA uitschakelt met behulp van de **numa=off** boot-optie om te voorkomen dat de kernel deze processen doodt.
 
 >[!NOTE]
 >
->**Serverhostnaam moet oplossen:** zorg ervoor dat de hostnaam van de server kan worden omgezet in een IP-adres. Als dat niet mogelijk is, voeg je de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
+>**De hostnaam van de server moet worden omgezet:** Zorg ervoor dat de hostnaam van de server kan worden omgezet in een IP-adres. Als dat niet mogelijk is, voeg dan de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Ramen {#windows}
 
 * Microsoft® Windows Server 2016
-* Wissel ruimte die gelijk is aan ten minste tweemaal de hoeveelheid fysiek geheugen (RAM)
+* Wisselruimte gelijk aan ten minste twee keer de hoeveelheid fysiek geheugen (RAM)
 
-Als u Dynamische media wilt gebruiken in Windows, installeert u Microsoft® Visual Studio 2010, 2013 en 2015, opnieuw toe te wijzen voor x64 en x86.
+Als u Dynamic Media op Windows wilt gebruiken, installeert u Microsoft® Visual Studio 2010, 2013 en 2015 redistributable voor x64 en x86.
 
 Voor Windows x64:
 
-* Herdistribueerbare microsoft® Visual Studio 2010 ophalen bij [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Herdistribueerbare microsoft® Visual Studio 2013 ophalen bij [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Herdistribueerbare microsoft® Visual Studio 2015 ophalen bij [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* ® Microsoft Visual Studio 2010 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Krijg Microsoft® Visual Studio 2013 herdistribueerbaar op [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Krijg Microsoft® Visual Studio 2015 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=48145 ](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Voor Windows x86:
 
 * Krijg Microsoft® Visual Studio 2010 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=26999 ](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Krijg Microsoft® Visual Studio 2013 redistributable in [ https://www.microsoft.com/en-in/download/details.aspx?id=40769 ](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Herdistribueerbare microsoft® Visual Studio 2015 ophalen bij [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Krijg Microsoft® Visual Studio 2015 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=52685 ](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
-#### Mac OS {#macos}
+#### macOS {#macos}
 
 * 10.9.x en hoger
 * Alleen ondersteund voor proefversie en demo-doeleinden
@@ -463,7 +464,7 @@ Voor Windows x86:
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Nieuwste versie van Acrobat 2017 Classic (</a> verouderd)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -471,15 +472,15 @@ Voor Windows x86:
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 (verouderd)</td>
+   <td>Microsoft® Office 2016 (afgeschaft)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect 2020 <br /> </td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (Afgekeurd) <br /> </td>
+   <td>Microsoft® Office Visio 2016 (afgeschaft)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
   <tr>
@@ -516,8 +517,8 @@ Voor Windows x86:
 >* PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie naar het Windows-besturingssysteem.
 >* PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux®-besturingssysteem.
 >* PDF Generator biedt geen ondersteuning voor Microsoft® Office 365.
->* De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
->* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. Programmaticaal toegang tot de gebundelde versie slechts met AEM Forms, tijdens de duur van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* De functies OCR PDF, PDF optimaliseren en PDF exporteren worden alleen ondersteund op Windows.
+>* Een versie van Acrobat wordt gebundeld met AEM Forms om PDF Generator-functionaliteit mogelijk te maken. Programmaticaal toegang tot de gebundelde versie slechts met AEM Forms, tijdens de duur van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019. U kunt Microsoft® Visio 2016 blijven gebruiken om `.VSD` - en `.VSDX` -bestanden om te zetten.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019. U kunt Microsoft® Project 2016 blijven gebruiken om `.VSD` - en `.VSDX` -bestanden om te zetten.
@@ -526,15 +527,15 @@ Voor Windows x86:
 ### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 of Windows® 11
-* 1 GHz of snellere processor met ondersteuning voor PAE, NX en SSE2.
-* 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
-* 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
+* Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
+* 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssystemen
+* 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssystemen
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
-* 2,35 GB beschikbare ruimte op de harde schijf
-* Beeldschermresolutie van 1024 x 768 pixels of hoger
-* Hardwareversnelling voor video (optioneel)
+* 2,35 GB vrije ruimte op de harde schijf
+* Monitorresolutie van 1024 x 768 pixels of hoger
+* Videohardwareversnelling (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
-* Beheerdersrechten om Designer te installeren
+* Beheerdersrechten voor het installeren van Designer
 * Microsoft Visual C++ 2019 (VC 14.28 of groter) 32-bits runtime voor AEM Forms Designer met 32 bits
 * Microsoft Visual C++ 2019 (VC 14.28 of groter) runtime met 64 bits voor AEM Forms Designer met 64 bits (voor zowel de stapel OSGI als JEE)
 
@@ -542,7 +543,7 @@ Voor Windows x86:
 
 ### Vereisten voor het terugschrijven van metagegevens van AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-XMP-terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
+XMP terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 
 * **Werkende Systemen:**
 
@@ -551,8 +552,8 @@ XMP-terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms 
    * Windows Server
    * macOS X (64-bits)
 
-* **Bestandsindelingen**: JPEG, PNG, TIFF, PDF, INDD, AI en EPS.
+* **Formaten van het Dossier**: JPEG, PNG, TIFF, PDF, INDD, AI, en EPS.
 
-### Vereisten voor AEM Assets voor de verwerking van assets met veel metagegevens op Linux® {#assetsonlinux}
+### Vereisten voor AEM Assets om zwaar materiaal met metagegevens te verwerken op Linux® {#assetsonlinux}
 
 Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .

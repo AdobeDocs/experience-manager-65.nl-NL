@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5597'
 ht-degree: 0%
 
 ---
@@ -210,6 +210,7 @@ Overweeg de volgende aanbevolen procedures om prestatieproblemen met grote formu
 * Neem alleen de velden en deelvensters op in adaptieve formulieren die informatie van de gebruiker vastleggen. Houd statische inhoud minimaal of gebruik URL&#39;s om deze in een apart venster te openen.
 * Hoewel elk formulier is ontworpen voor een bepaald doel, zijn er in de meeste formulieren enkele gangbare segmenten. Bijvoorbeeld persoonlijke gegevens, adres, werkgelegenheidsgegevens enzovoort. Creeer [ adaptieve vormfragmenten ](/help/forms/using/adaptive-form-fragments.md) voor gemeenschappelijke vormelementen en secties en gebruik hen over vormen. U kunt een deelvenster in een bestaand formulier ook opslaan als een fragment. Elke wijziging in een fragment wordt weerspiegeld in alle bijbehorende adaptieve formulieren. Het bevordert samenwerkingscreatie aangezien de veelvoudige auteurs aan verschillende fragmenten gelijktijdig kunnen werken die omhoog een vorm maken.
 
+   * U kunt ook formulierfragmenten maken voor niet-herbruikbare secties tijdens het ontwerpen van formulieren. Naarmate formulieren groter en complexer worden, kan het opsplitsen ervan in fragmenten het ontwerpproces aanzienlijk vereenvoudigen en het formulier eenvoudiger te onderhouden maken. Op deze manier kunt u zich richten op kleinere, beter te beheren stukken van het formulier in plaats van het hele formulier tegelijk te verwerken.
    * Net als adaptieve formulieren wordt aangeraden dat alle fragmentspecifieke opmaak en aangepaste scripts in de clientbibliotheek worden gedefinieerd met behulp van het dialoogvenster Fragmentcontainer. Probeer ook zelf-voldoende fragmenten te maken die niet afhankelijk zijn van objecten buiten de fragmenten.
    * Gebruik geen cross-fragments-scripts. Als er een object is buiten het fragment waarnaar u moet verwijzen, probeert u dat object te maken tot onderdeel van het bovenliggende formulier. Als het object zich nog steeds in een ander fragment moet bevinden, kunt u het met de naam ervan in het script raadplegen.
 

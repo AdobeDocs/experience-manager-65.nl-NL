@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: 3f11bba91cfb699dc216cf312eaf93fd9bbfe121
+source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 6%
+source-wordcount: '939'
+ht-degree: 5%
 
 ---
 
@@ -39,12 +39,12 @@ Een configuratie OAuth vereist de volgende eerste vereisten:
 
 * Creeer een nieuwe integratie OAuth in [ Developer Console ](https://developer.adobe.com/console/user/servicesandapis). Gebruik de eigenschappen `ClientID` , `ClientSecret` , `OrgID` en andere eigenschappen in de onderstaande stappen:
 * De volgende bestanden zijn te vinden op dit pad `/apps/system/config in crx/de` :
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### OAuth-configuratie voor de bestaande AMS- en On prem-gebruikers {#steps-config-oauth-onprem}
 
-De onderstaande stappen kunnen door de systeembeheerder worden uitgevoerd. De klant van AMS kan uit aan de vertegenwoordiger van de Adobe bereiken of een steunkaartje na het [ steunproces voorleggen ](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+De hieronder stappen kunnen door systeemadmin in **CRXDE** worden uitgevoerd. De klant van AMS kan uit aan de vertegenwoordiger van de Adobe bereiken of een steunkaartje na het [ steunproces voorleggen ](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 1. Voeg de onderstaande eigenschappen toe of werk deze bij in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` :
 
@@ -56,6 +56,11 @@ De onderstaande stappen kunnen door de systeembeheerder worden uitgevoerd. De kl
    * Werk `auth.token.provider.client.id` met Cliënt identiteitskaart van de nieuwe configuratie OAuth bij.
    * `auth.access.token.request` bijwerken naar `"https://ims-na1.adobelogin.com/ims/token/v3"`
 1. Wijzig de naam van het bestand in `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config` .
+
+   >[!IMPORTANT]
+   >
+   >Vervang punt (.) door afbreekstreepje (-) als voorvoegsel naar `<randomnumber>` .
+
 1. Voer de onderstaande stappen uit in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config` :
    * Werk het bezit auth.ims.client.geheime met het Geheim van de Cliënt van de nieuwe integratie OAuth bij.
    * Naam van bestand wijzigen in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
@@ -64,7 +69,7 @@ De onderstaande stappen kunnen door de systeembeheerder worden uitgevoerd. De kl
 1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
 1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 -->
-1. Verwijder in `System/console/configMgr` de oude configuraties voor de naam van de `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` -provider en de Access Token-provider `adobe-ims-similaritysearch` .
+1. In `System/console/configMgr` kunt u zowel oudere als nieuwe configuratiebestanden zien. Verwijder de oudere configuraties voor de naam `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` en de provider van toegangstoken `adobe-ims-similaritysearch` . Zorg ervoor dat de bijgewerkte configuratie slechts op zijn plaats is, eerder dan de oudere configuraties.
 1. Start de console opnieuw.
 
 ## De configuratie valideren {#validate-the-configuration}
@@ -81,13 +86,19 @@ Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de conf
 
 De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
+>[!NOTE]
+>
+>Als de fout `unsupported_grant_type` optreedt, installeert u de hotfix voor graniet. Verwijs naar [ migratie van de Rekening van de Dienst (JWT) naar de geloofsbrieven van Server-aan-Server van OAuth ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660).
+
 ## Integreren met Adobe Developer Console {#integrate-adobe-io}
 
 Als nieuwe gebruiker, wanneer u met Adobe Developer Console integreert, verifieert de [!DNL Experience Manager] server uw de dienstgeloofsbrieven met de gateway van Adobe Developer Console alvorens uw verzoek aan de Slimme Dienst van de Inhoud door:sturen. Voor integratie hebt u een Adobe ID-account nodig met beheerdersrechten voor de organisatie en een licentie voor Smart Content Service die u hebt aangeschaft en ingeschakeld voor uw organisatie.
 
 Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
-1. Om een openbare sleutel te produceren, [ creeer een Slimme 1} configuratie van de Dienst van de Inhoud {in [!DNL Experience Manager]. ](#obtain-public-certificate) [ Download een openbaar certificaat ](#obtain-public-certificate) voor integratie OAuth.
+<!--![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)-->
+
+1. Om een openbare sleutel te produceren, [ creeer een Slimme 1} configuratie van de Dienst van de Inhoud {in [!DNL Experience Manager]. ](#oauth-config) [ Download een openbaar certificaat ](#oauth-config) voor integratie OAuth.
 
 1. *[niet toepasselijk als u een bestaande gebruiker]* [ bent creeer een integratie in Adobe Developer Console ](#create-adobe-i-o-integration).
 
@@ -128,7 +139,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op de Adobe Developer
    >
    >De URL die als [!UICONTROL Service URL] wordt opgegeven, is niet toegankelijk via de browser en genereert een fout van 404. De configuratie werkt OK met dezelfde waarde als de parameter [!UICONTROL Service URL] . Voor het algemene de dienststatus en onderhoudsprogramma, zie [ https://status.adobe.com ](https://status.adobe.com).
 
-1. Klik op **[!UICONTROL Download Public Certificate for OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt` . Bovendien hoeft u dit certificaat niet meer te uploaden naar de Adobe Developer Console.
+1. Klik op **[!UICONTROL Download Public Certificate for OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt` . Bovendien hoeft u dit certificaat niet meer te uploaden naar de Adobe Developer-console.
 
    ![ een vertegenwoordiging van de montages die voor de slimme het etiketteren dienst ](assets/smart-tags-download-public-cert1.png) worden gecreeerd
 
@@ -148,7 +159,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 1. Voeg de **[!UICONTROL Credential Name]** desgewenst toe of wijzig deze. Klik op **[!UICONTROL Next]**.
 
-1. Selecteer het productprofiel **[!UICONTROL Smart Content Services]** . Klik op **[!UICONTROL Save Configured API]**. De OAuth API wordt toegevoegd onder de aangesloten geloofsbrieven voor verder gebruik. U kunt de [!UICONTROL API key (Client ID)] of [!UICONTROL Generate access token] ervan kopiëren.
+1. Selecteer het productprofiel **[!UICONTROL Smart Content Services]** . Klik op **[!UICONTROL Save Configured API]**. De OAuth API wordt toegevoegd aan de verbonden geloofsbrieven voor verder gebruik. U kunt de [!UICONTROL API key (Client ID)] of [!UICONTROL Generate access token] ervan kopiëren.
 <!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 

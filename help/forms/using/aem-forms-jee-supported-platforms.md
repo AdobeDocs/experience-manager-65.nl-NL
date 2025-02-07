@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
-source-wordcount: '4010'
+source-wordcount: '4098'
 ht-degree: 0%
 
 ---
@@ -361,7 +361,7 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 1. CRX-repository ondersteunt persistentie van het type TarMK, MongoDB en relationele databases (RDBMK). U kunt geen twee verschillende databasesystemen hebben tussen de toepassingsserver en de CRX-opslagplaats. Op een AEM Forms op JEE-omgeving kunt u echter MongoMK gebruiken met CRX-repository en een ondersteunde relationele database met toepassingsserver.
 1. AEM Forms op JEE biedt geen ondersteuning voor WebSphere®-toepassingsserver op CentOS.
 1. AEM Forms on JEE biedt geen ondersteuning voor JBoss® op rollen gebaseerde toegangsbeheer (RBAC).
-1. AEM Forms on JEE biedt alleen ondersteuning voor Oracle Java™ SE 11 (64-bits) SDK voor de toepassingsserver JBoss® EAP 7.4.
+1. AEM Forms on JEE biedt alleen ondersteuning voor Oracle Java™ SE 11 (64-bits) SDK voor toepassingsserver JBoss® EAP 7.4.
 1. JDK-versies hoger dan 1.8.0_281 worden niet ondersteund voor WebLogic-server. (FORMS-8498)
 1. JDK 11.0.20 wordt niet ondersteund voor de installatie van AEM Forms op JEE Installer. Alleen JDK 11.0.19 of eerdere versies worden ondersteund voor de installatie van AEM Forms op JEE Installer.
 
@@ -486,7 +486,9 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >
 >Daarnaast:
 >
->- PDF Generator ondersteunt alleen de 32-bits versie in de detailhandel van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
+>- PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
+>- De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
+>- Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
 >- PDF Generator biedt geen ondersteuning voor Microsoft® Office 365.
 >- PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >- De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
@@ -494,7 +496,12 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >- PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
 >- PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
 >- PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.
->- Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
+
+PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
+
+De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
+
+Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->

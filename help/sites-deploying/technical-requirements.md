@@ -6,9 +6,9 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 01fa8cd75c00b04578fe103d07fa52553d2b6b93
+source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
-source-wordcount: '3656'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -514,15 +514,16 @@ Voor Windows x86:
 >
 >* De PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of versie 17.011.30078 van Acrobat 2017 om de omzetting uit te voeren.
 >* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
->* PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie naar het Windows-besturingssysteem.
->* PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux®-besturingssysteem.
+>* PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
+>* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
+>* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
+>* PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux-besturingssysteem®.
 >* PDF Generator biedt geen ondersteuning voor Microsoft® Office 365.
->* De functies OCR PDF, PDF optimaliseren en PDF exporteren worden alleen ondersteund op Windows.
->* Een versie van Acrobat wordt gebundeld met AEM Forms om PDF Generator-functionaliteit mogelijk te maken. Programmaticaal toegang tot de gebundelde versie slechts met AEM Forms, tijdens de duur van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
+>* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. Programmaticaal toegang tot de gebundelde versie slechts met AEM Forms, tijdens de duur van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
->* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019. U kunt Microsoft® Visio 2016 blijven gebruiken om `.VSD` - en `.VSDX` -bestanden om te zetten.
->* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019. U kunt Microsoft® Project 2016 blijven gebruiken om `.VSD` - en `.VSDX` -bestanden om te zetten.
->
+>* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
+>* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.
 
 ### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
 

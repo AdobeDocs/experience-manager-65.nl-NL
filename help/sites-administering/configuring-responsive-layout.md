@@ -10,22 +10,29 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1479'
 ht-degree: 0%
 
 ---
 
+
 # Container en lay-outmodus configureren{#configuring-layout-container-and-layout-mode}
+
+Leer hoe u de container van de lay-out en de lay-outmodus configureert.
+
+>[!TIP]
+>
+>Dit document biedt een overzicht van responsieve ontwerpen voor sitebeheerders en -ontwikkelaars waarin wordt beschreven hoe functies in AEM worden uitgevoerd.
+>
+>Voor inhoudsauteurs, zijn de details van hoe te om ontvankelijke ontwerpeigenschappen op een inhoudspagina te gebruiken beschikbaar in het document [ Responsieve lay-out voor uw inhoudspagina&#39;s.](/help/sites-authoring/responsive-layout.md)
+
+## Overzicht {#overview}
 
 [ Responsieve Lay-out ](/help/sites-authoring/responsive-layout.md) is een mechanisme om [ ontvankelijk Webontwerp ](https://en.wikipedia.org/wiki/Responsive_web_design) te realiseren. Hierdoor kan de gebruiker webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
 
->[!NOTE]
->
->Dit kan met de [ Mobiele mechanismen van het Web ](/help/sites-developing/mobile-web.md) worden vergeleken, die het adaptieve Webontwerp (hoofdzakelijk voor klassieke UI) gebruiken.
-
-AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
+AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
 
 * **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)component van de Container van 0} Lay-out[**
 
@@ -33,7 +40,7 @@ AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinati
 
    * De standaard **component van de Container van 0} Lay-out wordt bepaald onder:**
 
-     /libs/wcm/foundation/components/responsivegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * U kunt lay-outcontainers definiëren:
 
@@ -49,10 +56,6 @@ Zodra de lay-outcontainer op uw pagina wordt geplaatst kunt u de **3} wijze van 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
 
->[!CAUTION]
->
->Hoewel de **component van de Container van de Lay-out** in klassieke UI beschikbaar is, is zijn volledige functionaliteit slechts beschikbaar in touch-Toegelaten UI.
-
 Met deze responsieve rastermechanismen kunt u:
 
 * Gebruik onderbrekingspunten (die apparaatgroepering aangeven) om een verschillend gedrag voor de inhoud te definiëren op basis van de apparaatlay-out.
@@ -60,9 +63,17 @@ Met deze responsieve rastermechanismen kunt u:
 * Gebruik horizontale uitlijning op het raster (plaats componenten in het raster, wijzig de grootte naar wens en definieer wanneer ze naast elkaar of boven/onder moeten samenvouwen/opnieuw moeten plaatsen).
 * Kolombesturingselement realiseren.
 
+>[!TIP]
+>
+>Adobe verstrekt [ documentatie GitHub ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het net van AEM buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische modellen van HTML voor een toekomstige plaats van AEM.
+
 >[!NOTE]
 >
 >In een uit-van-de-doos installatie, is de ontvankelijke lay-out gevormd voor de [ Wij.Retail verwijzingsplaats ](/help/sites-developing/we-retail.md). [ activeer de component van de Container van de Lay-out ](#enable-the-layout-container-component-for-page) voor andere pagina&#39;s.
+
+>[!CAUTION]
+>
+>Hoewel de **component van de Container van de Lay-out** in klassieke UI beschikbaar is, is zijn volledige functionaliteit slechts beschikbaar in touch-Toegelaten UI.
 
 ## De responsieve emulator configureren {#configuring-the-responsive-emulator}
 
@@ -103,7 +114,7 @@ Deze procedures worden gebruikt om de **wijze van de Lay-out** op uw plaats toe 
 * Wordt overgeërfd van de hiërarchie van de ouderknoop en kan bij wil worden met voeten getreden.
 * Er is een gebrek (uit-van-de-doos) breekpunt dat alles boven het laatste *gevormde* breekpunt behandelt.
 
-Ze kunnen worden gedefinieerd met behulp van CRXDE Lite of XML.
+Ze kunnen worden gedefinieerd met CRXDE Lite of XML.
 
 >[!NOTE]
 >
@@ -120,7 +131,7 @@ Ze kunnen worden gedefinieerd met behulp van CRXDE Lite of XML.
 
 #### Onderbrekingspunten configureren met CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Navigeer met behulp van CRXDE Lite (of equivalent) naar:
+1. Met CRXDE Lite (of een equivalent) navigeert u naar:
 
    * Uw sjabloondefinitie.
    * The `jcr:content` node of your page.
@@ -148,7 +159,7 @@ Onderbrekingspunten bevinden zich in de `<jcr:content>` -sectie van `.context.ht
 
 Een voorbeelddefinitie:
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ De volgende twee voorbeelden illustreren de definitie:
 
 * **HTML:**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP:**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -200,11 +211,11 @@ De volgende twee voorbeelden illustreren de definitie:
 
 #### CSS voor onderbrekingspunten die MINDER gebruiken {#css-for-breakpoints-using-less}
 
-AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, moeten deze voor uw projecten worden omvat.
+AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, deze moeten voor uw projecten worden omvat.
 
 U zult ook a [ cliëntbibliotheek ](https://experienceleague.adobe.com/docs/) moeten creëren om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ U kunt het aantal beschikbare kolommen voor elke specifieke instantie van lay-ou
    * Componenten die aan de huidige component kunnen worden toegevoegd:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## Geneste responsieve rasters {#nested-responsive-grids}
+
+Het kan voorkomen dat u responsieve rasters moet nesten om de behoeften van uw project te ondersteunen. Houd er echter rekening mee dat de aanbevolen werkwijze van Adobe erin bestaat de structuur zo vlak mogelijk te houden.
+
+Zorg ervoor dat wanneer u het gebruik van geneste responsieve rasters niet kunt vermijden:
+
+* Alle containers (containers, tabbladen, accordeons, enz.) hebben de eigenschap `layout = responsiveGrid` .
+* Meng de eigenschap `layout = simple` niet in de containerhiërarchie.
+
+Dit omvat alle structurele containers van het paginasjabloon.
+
+Het kolomnummer van de binnencontainer mag nooit groter zijn dan dat van de buitencontainer. In het volgende voorbeeld wordt aan deze voorwaarde voldaan. Terwijl het kolomnummer van de buitencontainer 8 is voor het standaardscherm (bureaublad), is het kolomnummer van de binnencontainer 4.
+
+>[!BEGINTABS]
+
+>[!TAB  Structuur van de Knoop van het Voorbeeld ]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB  Voorbeeld resulterend HTML ]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]

@@ -4,9 +4,9 @@ description: Leer meer over de flexibiliteit van de Universal Editor en hoe deze
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
+source-git-commit: bf9dc1695be7f7a10cb76160b531c9adbbfc8c34
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
@@ -20,18 +20,18 @@ Leer meer over de flexibiliteit van de Universal Editor en hoe deze uw ervaringe
 
 De Universal Editor is een veelzijdige visuele editor die deel uitmaakt van Adobe Experience Manager Sites. Auteurs kunnen hiermee &#39;what-you-see-is-what-you-get&#39; (WYSIWYG)-bewerkingen uitvoeren voor een headless experience.
 
-* Auteurs profiteren van de flexibiliteit van de Universal Editor, omdat deze ondersteuning biedt voor dezelfde consistente visuele bewerking voor alle vormen van inhoud zonder kop.
+* Auteurs profiteren van de flexibiliteit van de Universal Editor, omdat deze ondersteuning biedt voor dezelfde visuele bewerking voor alle vormen van inhoud zonder kop in AEM.
 * Ontwikkelaars profiteren van de veelzijdigheid van de Universal Editor, omdat deze ook werkelijke ontkoppeling van de implementatie ondersteunt. Het stelt ontwikkelaars in staat om vrijwel elk kader of elke architectuur van hun keuze te gebruiken, zonder SDK- of technologiebeperkingen op te leggen.
 
 Gelieve te zien de [ documentatie van AEM as a Cloud Service op de Universele Redacteur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) voor meer detail.
 
 ## Architectuur {#architecture}
 
-De Universele Redacteur is de dienst die samen met AEM aan auteursinhoud volkomen werkt.
+De Universal Editor is een service die in combinatie met AEM werkt om inhoud zonder kop te schrijven.
 
 * De Universal Editor wordt gehost op `https://experience.adobe.com/#/aem/editor/canvas` en kan pagina&#39;s bewerken die zijn weergegeven door AEM 6.5.
-* De AEM pagina wordt gelezen door de Universal Editor via de verzender van de AEM auteur-instantie.
-* De Universal Editor Service, die op dezelfde host als de Dispatcher wordt uitgevoerd, schrijft wijzigingen terug naar de AEM auteur-instantie.
+* De AEM-pagina wordt gelezen door de Universal Editor via de verzender van de AEM-auteur-instantie.
+* De Universal Editor Service, die wordt uitgevoerd op dezelfde host als de Dispatcher, schrijft de wijzigingen terug naar de AEM-auteurinstantie.
 
 ![ stroom van de Auteur gebruikend de Universele Redacteur ](assets/author-flow.png)
 
@@ -39,7 +39,7 @@ De Universele Redacteur is de dienst die samen met AEM aan auteursinhoud volkome
 
 Als u de Universal Editor wilt testen, moet u:
 
-1. [Werk en vorm uw AEM auteursinstantie bij.](#update-configure-aem)
+1. [Werk uw AEM-ontwerpinstantie bij en configureer deze.](#update-configure-aem)
 1. [Stel een lokale Universal Editor-service in.](#set-up-ue)
 1. [Pas de verzender aan om de Universal Editor Service toe te staan.](#update-dispatcher)
 
@@ -47,7 +47,7 @@ Zodra u de opstelling hebt voltooid, kunt u [ instrument uw toepassingen om de U
 
 ### AEM bijwerken {#update-aem}
 
-Service pack 21 of 22 en een functiepakket voor AEM zijn vereist om de Universal Editor met AEM 6.5 te kunnen gebruiken.
+Servicepack 21 of 22 en een functiepakket voor AEM zijn vereist om de Universal Editor met AEM 6.5 te kunnen gebruiken.
 
 #### Nieuwste Service Pack toepassen {#latest}
 
@@ -67,7 +67,7 @@ Het eigenschappak installeert een aantal nieuwe pakketten waarvoor extra configu
 
 1. Open de Manager van de Configuratie.
    * `http://<host>:<port>/system/console/configMgr`
-1. Bepaal de plaats van **Adobe graniet Symbolische de Handler van de Authentificatie** in de lijst en klik **verander de configuratiewaarden**.
+1. Bepaal de plaats van **Adobe granite Symbolische Handler van de Authentificatie** in de lijst en klik **Verandering de configuratiewaarden**.
 1. In de dialoog, verander het **attribuut SameSite voor login-symbolische koekjeswaarde** (`token.samesite.cookie.attr`) in `Partitioned`.
 1. Klik **sparen**.
 
@@ -79,11 +79,11 @@ Het eigenschappak installeert een aantal nieuwe pakketten waarvoor extra configu
 1. Schrap de `X-Frame-Options=SAMEORIGIN` waarde van het **Extra attribuut van de reactiekopballen** (`sling.additional.response.headers`) als het bestaat.
 1. Klik **sparen**.
 
-#### Vorm de de authentificatiemanager van de Vraag van de Adobe Granite. {#query-parameter}
+#### Configureer de Adobe Granite Query Parameter Authentication Handler. {#query-parameter}
 
 1. Open de Manager van de Configuratie.
    * `http://<host>:<port>/system/console/configMgr`
-1. Bepaal de plaats van **Adobe granite de Handler van de Authentificatie van de Vraag** in de lijst en klik **geef de configuratiewaarden** uit.
+1. Bepaal de plaats van **de Verantwoorder van de Authentificatie van de Vraag van Adobe Granite** in de lijst en klik **geef de configuratiewaarden** uit.
 1. Op het **Pad** gebied (`path`), voeg `/` toe om toe te laten.
    * Een lege waarde maakt de authentificatiemanager onbruikbaar.
 1. Klik **sparen**.
@@ -97,11 +97,18 @@ Het eigenschappak installeert een aantal nieuwe pakketten waarvoor extra configu
    * Op het **Universele gebied van de Toewijzing van de Redacteur die** opent, verstrek de wegen waarvoor de Universele Redacteur wordt geopend.
    * In **Sling:resourceTypes die door Universeel gebied van de Redacteur** zal worden geopend, verstrek een lijst van middelen die direct door de Universele Redacteur worden geopend.
 1. Klik **sparen**.
+1. Controleer uw [ externalizer configuratie ](/help/sites-developing/externalizer.md) en zorg bij een minimum u de lokale, auteur, en publiceer milieu&#39;s hebt die zoals in het volgende voorbeeld worden geplaatst.
 
-AEM opent de Universal Editor voor pagina&#39;s die op deze configuratie zijn gebaseerd.
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+Zodra deze configuratiestappen volledig zijn, zal AEM de Universele Redacteur voor pagina&#39;s in de volgende orde openen.
 
 1. AEM controleert de toewijzingen onder `Universal Editor Opening Mapping` en als de inhoud zich onder de aldaar gedefinieerde paden bevindt, wordt de Universal Editor geopend.
-1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, AEM controleert als `resourceType` van de inhoud die in **worden bepaald Sling aanpast:resourceTypes die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
+1. Voor inhoud niet onder wegen die in `Universal Editor Opening Mapping` worden bepaald, controleert AEM als `resourceType` van de inhoud die in **worden bepaald Sling aanpast:resourceTypes die door Universele Redacteur** zullen worden geopend en als de inhoud één van die types aanpast, wordt de Universele Redacteur voor het bij `${author}${path}.html` geopend.
 1. Anders opent AEM de Pagina-editor.
 
 De volgende variabelen zijn beschikbaar om uw toewijzingen onder `Universal Editor Opening Mapping` te bepalen.
@@ -116,7 +123,7 @@ De volgende variabelen zijn beschikbaar om uw toewijzingen onder `Universal Edit
 
 Voorbeeldtoewijzingen:
 
-* Open alle pagina&#39;s onder `/content/foo` op de AEM Auteur:
+* Open alle pagina&#39;s onder `/content/foo` op de AEM-auteur:
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Dit leidt tot het openen van `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Open alle pagina&#39;s onder `/content/bar` op een externe NextJS-server, waarbij alle variabelen als informatie worden opgegeven
@@ -125,7 +132,7 @@ Voorbeeldtoewijzingen:
 
 ### Universal Editor-service instellen {#set-up-ue}
 
-Met AEM bijgewerkt en geconfigureerd, kunt u een lokale Universal Editor-service instellen voor uw eigen lokale ontwikkeling en testen.
+Met AEM bijgewerkt en geconfigureerd kunt u een lokale Universal Editor-service instellen voor uw eigen lokale ontwikkeling en tests.
 
 1. Installeer Node.js versie >=20.
 1. De download en unpack de recentste Universele Dienst van de Redacteur van [ Distributie van de Software ](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home)
@@ -136,7 +143,7 @@ Met AEM bijgewerkt en geconfigureerd, kunt u een lokale Universal Editor-service
 
 ### Dispatcher bijwerken {#update-dispatcher}
 
-Met AEM gevormd en een lokale Universele dienst die van de Redacteur in werking stellen, zult u een omgekeerde volmacht voor de nieuwe dienst [ in de dispatcher moeten toestaan.](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
+Met gevormde AEM en een lokale Universele dienst die van de Redacteur in werking stellen, zult u een omgekeerde volmacht voor de nieuwe dienst [ in de dispatcher moeten toestaan.](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Pas het hostbestand van de auteurinstantie aan om een reverse-proxy op te nemen.
 
@@ -155,11 +162,11 @@ Met AEM gevormd en een lokale Universele dienst die van de Redacteur in werking 
 
 ## Uw app Instrument {#instrumentation}
 
-Wanneer AEM bijgewerkt en een lokale Universal Editor-service actief is, kunt u inhoud zonder kop gaan bewerken met de Universal Editor.
+Als AEM is bijgewerkt en een lokale Universal Editor-service wordt uitgevoerd, kunt u inhoud zonder kop gaan bewerken met de Universal Editor.
 
 Uw app moet echter van instrumenten zijn voorzien om te kunnen profiteren van de Universal Editor. Hierbij moeten metatags worden opgenomen om de editor op te geven hoe en waar de inhoud moet blijven bestaan. De details van deze instrumentatie zijn beschikbaar in de [ Universele documentatie van de Redacteur voor AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
-Wanneer u documentatie voor de Universal Editor met AEM as a Cloud Service volgt, zijn de volgende wijzigingen van toepassing wanneer u deze gebruikt met AEM 6.5.
+Let op: wanneer u documentatie voor de Universal Editor met AEM as a Cloud Service volgt, gelden de volgende wijzigingen wanneer u deze gebruikt met AEM 6.5.
 
 * Het protocol in de metatag moet `aem65` in plaats van `aem` zijn.
 
@@ -177,11 +184,11 @@ Wanneer u documentatie voor de Universal Editor met AEM as a Cloud Service volgt
 
 >[!TIP]
 >
->Voor een uitvoerige gids voor ontwikkelaars die met de Universele Redacteur beginnen, te zien gelieve het document [ Universele Overzicht van de Redacteur voor AEM Ontwikkelaars ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) in de documentatie van AEM as a Cloud Service terwijl het houden van de noodzakelijke veranderingen nodig voor AEM 6.5 steun zoals vermeld in deze sectie.
+>Voor een uitvoerige gids voor ontwikkelaars die met de Universele Redacteur beginnen, te zien gelieve het document [ Universele Overzicht van de Redacteur voor de Ontwikkelaars van AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) in de documentatie van AEM as a Cloud Service terwijl het houden van de noodzakelijke veranderingen nodig voor AEM 6.5 steun zoals vermeld in deze sectie.
 
 ## Verschillen tussen AEM 6.5 en AEM as a Cloud Service {#differences}
 
-De Universele Redacteur in AEM 6.5 werkt globaal het zelfde als in AEM as a Cloud Service met inbegrip van UI en veel van de opstelling. Er zijn echter verschillen die moeten worden opgemerkt.
+De Universal Editor in AEM 6.5 werkt in grote lijnen hetzelfde als in AEM as a Cloud Service, inclusief de gebruikersinterface en een groot deel van de installatie. Er zijn echter verschillen die moeten worden opgemerkt.
 
 * De Universele Redacteur in 6.5 steunt slechts de hoofdloze gebruikcase.
 * De opstelling van de Universele Redacteur varieert lichtjes voor 6.5 ([ zoals die ](#setup) in het huidige document wordt beschreven).

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5
-source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
+source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
 workflow-type: tm+mt
-source-wordcount: '7474'
+source-wordcount: '7471'
 ht-degree: 1%
 
 ---
@@ -884,7 +884,7 @@ ht-degree: 1%
       + [ Referentie FormCalc van Designer ](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Krabbelen gebruiken in HTML5-formulieren](/help/forms/using/scribble-signature.md)
       + [Pagina-nulinhoud wijzigen in Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [ Beste praktijken van de Toegankelijkheid ]{#accessibility-best-practices}
+      + Aanbevolen werkwijzen voor toegankelijkheid {#accessibility-best-practices}
          + [Inleiding](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Aanbevolen procedures voor het maken van formulieren](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Technieken voor het testen van toegankelijkheid van formulieren](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1202,12 +1202,12 @@ ht-degree: 1%
       + [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Kan op XFA gebaseerde PDF forms niet openen in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer of Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [Kan CRX Repository niet herstellen](/help/forms/using/restore-crx-repository.md)
-      + [Service niet-beschikbare fouten na installatie van AEM 6.5.15.0-servicepack](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [Probleem met installatie van AEM Forms JEE 6.5.15.0-servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+      + [Service niet-beschikbare fouten na installatie van AEM 6.5.15.0 service pack](/help/forms/using/aem-service-pack-installation-solution.md)
+      + [Probleem met installatie van AEM Forms JEE 6.5.15.0 -servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Documenten verwerken, zelfs als de AEM Forms-server niet volledig wordt uitgevoerd](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Kan de Output-service, Forms-service of Document of Record-service (DoR) niet gebruiken](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Oplossing voor problemen met RCE-kwetsbaarheden 2 voor Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [Geen back-up van database tijdens upgrade naar 6.5.12.0 voor MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
+      + [Back-up maken van database mislukt tijdens upgrade naar 6.5.12.0 voor MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF Generation kan een groot aantal PDF&#39;s niet afdrukken op WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK op de juiste manier opnieuw opstarten](/help/forms/using/restart-aem-sdk.md)
       + [De service Documentdigitalisering kan geen OCR&#39;s uitvoeren op PDF&#39;s](/help/forms/using/papercapture-service-resolution.md)

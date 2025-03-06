@@ -1,6 +1,6 @@
 ---
-title: Video in Dynamic Media
-description: Leer hoe u in Dynamic Media met video kunt werken, zoals aanbevolen werkwijzen voor het coderen van video's, het toevoegen van meerdere audio- en bijschrifttracks aan video's en videominiaturen.
+title: Video in dynamische media
+description: Leer hoe u met video werkt in dynamische media, zoals aanbevolen werkwijzen voor het coderen van video's, het toevoegen van meerdere audio- en bijschrifttracks aan video's en videominiaturen.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,14 +11,14 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 93e5ae0c8b8528af9230eae51e66c91f2239edb0
+source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '10997'
+source-wordcount: '10369'
 ht-degree: 1%
 
 ---
 
-# Video in Dynamic Media {#video}
+# Video in dynamische media {#video}
 
 In deze sectie wordt het werken met video in Dynamic Media beschreven.
 
@@ -28,20 +28,20 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
 >[!IMPORTANT]
 >
->Zorg ervoor dat uw Adobe Experience Manager-beheerder Dynamic Media-Cloud Servicen heeft ingeschakeld en geconfigureerd in de modus Dynamic Media - Scene7 of in de hybride modus voordat u in Dynamic Media met video werkt.
+>Zorg ervoor dat uw Adobe Experience Manager-beheerder Dynamic Media Cloud Services heeft ingeschakeld en geconfigureerd in de modus Dynamische media - Scene7 of Hybride voordat u werkt met video in Dynamic Media.
 >
->* Zie [ de Cloud Servicen van Dynamic Media ](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) vormen in het Vormen Dynamic Media - de wijze van Scene7 en [ oplossen Dynamic Media - de wijze van Scene7 ](/help/assets/troubleshoot-dms7.md).
+>* Zie [ Dynamische Diensten van de Wolk van Media vormen ](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in het Vormen van Dynamische Media - wijze Scene7 en [ Los Dynamische Media problemen op - wijze Scene7 ](/help/assets/troubleshoot-dms7.md).
 >
->* Zie [ de Cloud Servicen van Dynamic Media ](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) vormen in het Vormen Dynamic Media - Hybride wijze.
+>* Zie [ Dynamische Diensten van de Wolk van Media vormen ](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in het Vormen van Dynamische Media - Hybride wijze.
 >
->Huidige bekende videoplaybackkwestie in Dynamic Media *op Experience Manager 6.5.9.0 slechts*:
+>Huidige bekende videoplaybackkwestie in Dynamische Media *op Experience Manager 6.5.9.0 slechts*:
 >
 >* Als een gepubliceerde video wordt bijgewerkt, moet deze opnieuw worden gepubliceerd om wijzigingen in de levering te weerspiegelen.
 >
 
-1. **upload uw video&#39;s van Dynamic Media** door het volgende te doen:
+1. **upload uw Dynamische video&#39;s van Media** door het volgende te doen:
 
-   * Maak uw eigen videocoderingsprofiel. Of, kunt u het vooraf bepaalde _Aangepaste Video Coderen_ profiel eenvoudig gebruiken dat met Dynamic Media komt.
+   * Maak uw eigen videocoderingsprofiel. Of, kunt u het vooraf bepaalde _Aangepaste Video Coderen_ profiel eenvoudig gebruiken dat met Dynamische Media komt.
 
       * [ creeer een video het coderen profiel ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * De maximale resolutie voor videocodering van de uitvoer is 8,192 × 4,320 of 4,320 × 8,192,md.
@@ -55,7 +55,7 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
-      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 × 25.
+      * Dynamische media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 × 25.
       * De maximale ondersteunde invoervideoresolutie is 16,384 × 16,384.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [ upload uw video&#39;s ](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
@@ -63,7 +63,7 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
    * Monitor hoe [ video het coderen ](#monitoring-video-encoding-and-youtube-publishing-progress) of van de activa of werkschemamening vooruitgaat.
 
-1. **beheer uw video&#39;s van Dynamic Media** door om het even welke volgend te doen:
+1. **beheer uw Dynamische video&#39;s van Media** door om het even welke volgend te doen:
 
    * Video-elementen organiseren, doorbladeren en zoeken
 
@@ -80,7 +80,7 @@ Leer meer over [ Beste praktijken voor het organiseren van uw digitale activa vo
         [ beheer videovertoningen ](manage-assets.md#managing-renditions)
 
       * [Voorinstellingen voor viewers beheren](managing-viewer-presets.md)
-      * [Publish-middelen](publishing-dynamicmedia-assets.md)
+      * [Elementen publiceren](publishing-dynamicmedia-assets.md)
 
    * Werken met videometagegevens
 
@@ -103,7 +103,7 @@ Leer meer over [ Beste praktijken voor het organiseren van uw digitale activa vo
       * [Mapmiddelen controleren](bulk-approval.md)
       * [Projecten](../sites-authoring/projects.md)
 
-1. **Publish uw video&#39;s van Dynamic Media** door één van het volgende te doen:
+1. **publiceer uw Dynamische video&#39;s van Media** door één van het volgende te doen:
 
    * Als u Adobe Experience Manager gebruikt als beheersysteem voor webinhoud, kunt u video&#39;s rechtstreeks aan uw webpagina&#39;s toevoegen.
 
@@ -121,9 +121,9 @@ Leer meer over [ Beste praktijken voor het organiseren van uw digitale activa vo
 
    * [ voegt titels aan de video ](#adding-captions-to-video) toe.
 
-## Werken met video in Dynamic Media {#working-with-video-in-dynamic-media}
+## Werken met video in dynamische media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is een end-to-end oplossing die het gemakkelijk maakt om hoogwaardige adaptieve video voor het stromen over veelvoudige schermen, met inbegrip van Desktop, iOS, Android™, BlackBerry®, en de mobiele apparaten van Vensters te publiceren. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. De desktopcomputer of het mobiele apparaat detecteert de beschikbare bandbreedte.
+Video in Dynamic Media is een end-to-end oplossing die het gemakkelijk maakt om adaptieve video van hoge kwaliteit te publiceren voor streaming op meerdere schermen, waaronder desktopcomputers, iOS, Android™, BlackBerry® en mobiele Windows-apparaten. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. De desktopcomputer of het mobiele apparaat detecteert de beschikbare bandbreedte.
 
 Op een mobiel iOS-apparaat wordt bijvoorbeeld een bandbreedte gedetecteerd, zoals 3G, 4G of Wi-Fi. Vervolgens wordt automatisch de naar rechts gecodeerde video geselecteerd bij de verschillende bitsnelheden van de video in de adaptieve videoset. De video wordt gestreamd naar desktops, mobiele apparaten of tablets.
 
@@ -150,13 +150,13 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
 * Lever Adaptieve videosets naar het web en naar desktops en mobiele apparaten, zoals de iPhone, iPad, Android™, BlackBerry® en Windows-telefoon.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie {de Gids van de Verwijzing van de Kijkers van Dynamic Media 0} ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).[
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie {de Gids van de Verwijzing van de Kijkers van 0} Dynamische Media ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).[
 
-Dynamic Media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
+Dynamische media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
 U kunt de apparaten vinden van Vensters die dit videoformaat bij het volgende steunen: [ Gesteunde media codecs voor Telefoon 8 van Vensters ](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
-* Speel de video terug gebruikend de Voorinstellingen van de VideoKijker van Dynamic Media, met inbegrip van:
+* Speel de video terug gebruikend Dynamische Media VideoKijker vooraf instelt, met inbegrip van het volgende:
 
    * Enkele videoviewers.
    * Gemengde Media-viewers die zowel video- als afbeeldingsinhoud combineren.
@@ -166,25 +166,25 @@ U kunt de apparaten vinden van Vensters die dit videoformaat bij het volgende st
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Zie ook [ Kijkers voor Experience Manager Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) en [ Kijkers voor slechts de activa van de Experience Manager ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Zie ook [ Kijkers voor Experience Manager Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) en [ Kijkers voor slechts de activa van Experience Manager ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Tips en trucs: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
-De Dynamic Media HTML5-voorinstellingen voor videoviewers zijn robuuste videospelers. U kunt deze gebruiken om veel voorkomende problemen te voorkomen die samenhangen met het afspelen van HTML5-video. En problemen met mobiele apparaten, zoals een gebrek aan adaptieve streaminglevering met bitsnelheid en een beperkt bereik van de desktopbrowser.
+Dynamische media HTML5-voorinstellingen voor videoviewers zijn robuuste videospelers. U kunt ze gebruiken om veel voorkomende problemen te voorkomen die samenhangen met het afspelen van HTML5-video. En problemen met mobiele apparaten, zoals een gebrek aan adaptieve streaminglevering met bitsnelheid en een beperkt bereik van de desktopbrowser.
 
-Aan de ontwerpkant van de speler, kunt u de functionaliteit van de videospeler ontwerpen gebruikend standaardWeb ontwikkelingshulpmiddelen. U kunt bijvoorbeeld de knoppen, besturingselementen en de achtergrond van een aangepaste posterafbeelding ontwerpen met behulp van HTML5 en CSS om u te helpen uw klanten te bereiken met een aangepaste weergave.
+Aan de ontwerpkant van de speler, kunt u de functionaliteit van de videospeler ontwerpen gebruikend standaardWeb ontwikkelingshulpmiddelen. U kunt bijvoorbeeld de knoppen, besturingselementen en de achtergrond van een aangepaste posterafbeelding ontwerpen met HTML5 en CSS om u te helpen uw klanten te bereiken met een aangepaste weergave.
 
 Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de browser gedetecteerd. Vervolgens wordt de video weergegeven met HLS (Live HTTP-streaming) of DASH (Dynamic Adaptive Streaming via HTTP), ook wel adaptieve bitsnelheidstreaming genoemd. Of als deze leveringsmethoden niet aanwezig zijn, wordt in plaats daarvan HTML5 progressief gebruikt.
 
 Door het volgende te combineren in één speler:
 
-* De mogelijkheid om de afspeelcomponenten te ontwerpen met behulp van HTML5 en CSS
+* De mogelijkheid om de afspeelcomponenten te ontwerpen met HTML5 en CSS
 * Ingesloten afspelen hebben
 * Adaptieve en progressieve streaming gebruiken, afhankelijk van de browsermogelijkheden
 
 U vergroot het bereik van uw rijke media-inhoud tot zowel desktopgebruikers als mobiele gebruikers en zorgt voor een gestroomlijnde videobeleving.
 
-Zie ook [ Ongeveer HTML5 Kijkers ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Zie ook [ Ongeveer Kijkers HTML5 ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Video afspelen op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -273,15 +273,11 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->*Als u DASH wilt gebruiken voor uw video&#39;s, moet de Technische ondersteuning van de Adobe deze eerst inschakelen voor uw account. Zie [ DASH op uw rekening van Dynamic Media ](#enable-dash) toelaten.
+## Architectuur van Dynamic Media-video-oplossing {#architecture-of-dynamic-media-video-solution}
 
-## Architectuur van Dynamic Media-videooplossing {#architecture-of-dynamic-media-video-solution}
+In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s die via de DMGateway (in de modus Dynamische media hybride) zijn geüpload en gecodeerd en voor openbare consumptie beschikbaar zijn.
 
-In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s die via de DMGateway (in de Dynamic Media Hybrid-modus) zijn geüpload en gecodeerd en voor openbare consumptie beschikbaar zijn.
-
-![ Architectuur van de videooplossing van Dynamic Media.](assets/chlimage_1-427.png)
+![ Architectuur van Dynamische de videooplossing van Media.](assets/chlimage_1-427.png)
 
 ## Hybride publicatiearchitectuur voor video&#39;s {#hybrid-publishing-architecture-for-videos}
 
@@ -289,7 +285,7 @@ In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s di
 
 ## Aanbevolen werkwijzen voor het coderen van video&#39;s {#best-practices-for-encoding-videos}
 
-Het **Dynamic Media codeert Video** werkschema codeert video als u Dynamic Media en de diensten van de opstellingsvideowolk hebt toegelaten. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Als u Dynamic Media hebt ingeschakeld en cloudservices voor video hebt ingesteld, wordt de **[!UICONTROL Dynamic Media Encode Video]** -workflow automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt de **[!UICONTROL DAM Update Asset]** -workflow van kracht.)
+De **Dynamische Media codeert Video** werkschema codeert video als u Dynamische Media en de diensten van de opstellingsvideowolk hebt toegelaten. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Als u Dynamic Media hebt ingeschakeld en cloudservices voor video hebt ingesteld, wordt de **[!UICONTROL Dynamic Media Encode Video]** -workflow automatisch van kracht wanneer u een video uploadt. (Als u geen gebruik maakt van Dynamische media, wordt de **[!UICONTROL DAM Update Asset]** -workflow van kracht.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -301,7 +297,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
-* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 × 25.
+* Dynamische media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 × 25.
 * U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
 
 In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
@@ -427,67 +423,13 @@ Stel dat uw bronvideo bijvoorbeeld 1920 × 1080 is. In de volgende tabel bieden 
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
 
-Dynamic Media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebruiken. Omdat MP4-bestanden de H.264-videocodec gebruiken, biedt deze video van hoge kwaliteit, maar met een gecomprimeerde bestandsgrootte.
-
-### Ondersteuning voor DASH, meerdere bijschriften en audiotracks inschakelen voor uw Dynamic Media-account {#enable-dash}
-
-**Ongeveer toelatend DASH op uw rekening**
-DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. U kunt ook kiezen voor beide opties met automatische schakelen tussen spelers als **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling van de viewer.
-
-Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
-
-* Pakketvideo voor aangepaste bitsnelheidstreaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.
-* Bij voor browsers geoptimaliseerde streaming met Dynamic Media-spelers wordt geschakeld tussen HLS- en DASH-streaming voor de beste kwaliteit van de service. De videospeler schakelt automatisch over naar HLS wanneer een Safari-browser wordt gebruikt.
-* U kunt uw voorkeursstreamingsmethode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.
-* Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl DASH-mogelijkheden worden ingeschakeld. Er wordt één set videocoderingen gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.
-* Helpt de levering van video toegankelijker te maken voor uw klanten.
-* U kunt de URL voor streaming ook ophalen via API&#39;s.
-
-Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
-
-* Dynamic Media configureren voor gebruik van DASH, wat u eenvoudig zelf kunt doen.
-* Het vormen van Experience Manager 6.5 om DASH te gebruiken die door een geval van de Steun van de Klant van de Adobe wordt gedaan dat u creeert en voorlegt.
-
-Wanneer u een Adobe Support-case maakt om DASH voor uw account in te schakelen, wordt automatisch ook ondersteuning voor meerdere bijschriften en audiotracks ingeschakeld. Als deze optie is geactiveerd, worden alle nieuw geüploade video&#39;s verwerkt met behulp van een bijgewerkte back-endarchitectuur die het toevoegen van meerdere bijschriften en audiotracks ondersteunt.
-
->[!IMPORTANT]
->
->Om het even welke video&#39;s die u *alvorens* toelatend veelvoudige titel en audiospoorsteun op uw rekening van Dynamic Media uploadde, [ moet worden opnieuw verwerkt ](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
-
-**om DASH, veelvoudige titel en veelvoudige audio spoorsteun op uw rekening van Dynamic Media toe te laten:**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. Begin door **het vormen Dynamic Media voor DASH** - van Experience Manager, navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-
-1. Van de **[!UICONTROL Adobe Experience Manager Web Console Configuration]** pagina, scrol aan de naam *AEM Assets Dynamic Media Video Geavanceerde het Streamen Vlag van de Eigenschap*.
-
-1. Schakel links van de naam het selectievakje in om DASH in te schakelen (inschakelen).
-
-1. Selecteer **[!UICONTROL Save]** .
-
-1. Nu, gebruik de Admin Console om de [ verwezenlijking van een nieuw steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te beginnen.
-1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
-
-   * Primaire contactpersoon, e-mail, telefoon.
-   * Naam van je Dynamic Media-account.
-   * Geef op of u ondersteuning voor DASH, meerdere bijschriften en meerdere audiotracks wilt inschakelen voor uw Dynamic Media-account, op Experience Manager 6.5.
-
-1. De Steun van de Klant van de Adobe voegt u aan de Klant toe wachtlijst op basis van de orde waarin de verzoeken worden voorgelegd.
-1. Wanneer de Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor enablement te coördineren en te plaatsen.
-1. De steun van de klant brengt u na voltooiing op de hoogte.
-1. U kunt nu een van de volgende twee handelingen uitvoeren:
-
-   * Creeer uw [ vooraf ingestelde videokijker ](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) zoals gebruikelijk.
-   * [ voeg veelvoudige titel en audiosporen ](#add-msma) aan uw video toe.
+Dynamische media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebruiken. Omdat MP4-bestanden de H.264-videocodec gebruiken, biedt deze video van hoge kwaliteit, maar met een gecomprimeerde bestandsgrootte.
 
 ## Videorapporten weergeven {#viewing-video-reports}
 
 >[!NOTE]
 >
->Videorapporten zijn alleen beschikbaar wanneer u de modus Dynamic Media - Hybride uitvoert.
+>Videorapporten zijn alleen beschikbaar wanneer u Dynamische media - hybride modus uitvoert.
 
 De videoRapporten tonen verscheidene gezamenlijke metriek over een gespecificeerde tijd om u te helpen controleren dat *gepubliceerde* individuele en gezamenlijke video&#39;s zoals verwacht presteren. De volgende statistische gegevens worden geaggregeerd voor alle gepubliceerde video&#39;s op uw gehele website:
 
@@ -503,7 +445,7 @@ Wanneer u een videonaam in de lijst selecteert, wordt het rapport voor het vasth
 
 Als de video buiten Adobe Experience Manager Dynamic Media is gecodeerd, zijn het diagram voor het vasthouden van het publiek (drop-off) en de gegevens voor het afspeelpercentage in de tabel niet beschikbaar.
 
-Zie ook [ vormen de Cloud Servicen van Dynamic Media ](/help/assets/config-dynamic.md).
+Zie ook [ de Dynamische Diensten van de Wolk van Media vormen ](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
@@ -511,11 +453,11 @@ Zie ook [ vormen de Cloud Servicen van Dynamic Media ](/help/assets/config-dynam
 
 Door gebrek, de eerste keer u VideoRapporten ingaat, toont het rapport videogegevens die bij de eerste van de huidige maand beginnen en met de datum van de huidige maand beëindigen. U kunt het standaarddatumbereik echter overschrijven door uw eigen datumbereik op te geven. De volgende keer dat u Video-rapporten invoert, wordt het opgegeven datumbereik gebruikt.
 
-Videorapporten werken alleen correct als er automatisch een rapportsuite-id wordt gemaakt wanneer Dynamic Media-Cloud Servicen zijn geconfigureerd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de Publish-server, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter wel vereist dat de Publish-server al is ingesteld. Als de Publish-server niet is ingesteld, kunt u toch publiceren om het videoverslag te bekijken. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en **[!UICONTROL OK]** selecteren.
+Videorapporten werken alleen correct als er automatisch een rapportsuite-id wordt gemaakt wanneer Dynamic Media Cloud Services is geconfigureerd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter wel vereist dat de publicatieserver al is ingesteld. Als de publicatieserver niet is ingesteld, kunt u toch publiceren om het videoverslag te zien. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en **[!UICONTROL OK]** selecteren.
 
 **aan meningsvideorapporten:**
 
-1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en klik vervolgens in de linkertrack op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]** .
+1. Selecteer in de linkerbovenhoek van Experience Manager het Experience Manager-logo en klik vervolgens in de linkertrack op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]** .
 1. Voer een van de volgende handelingen uit op de pagina Videorapporten:
 
    * Vlak de hoger-juiste hoek, selecteer **verfrissen Videopictogram van het Rapport**.
@@ -528,13 +470,13 @@ Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en selecteer
 
 1. Selecteer in de tabel met de bovenste gepubliceerde video&#39;s een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
 
-### Videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Video-rapporten weergeven op basis van een videoviewer die u hebt gemaakt met de Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Als u een uit-van-doos videoviewer gebruikt die door Dynamic Media wordt verstrekt, of als u een vooraf ingestelde douaneviewer creeerde die op een uit-van-doos videokijker wordt gebaseerd, dan worden geen extra stappen vereist om VideoRapporten te bekijken. Als u echter uw eigen videoviewer hebt gemaakt op basis van de HTML5 Viewer SDK API, voert u de volgende stappen uit om ervoor te zorgen dat uw videoviewer traceergebeurtenissen verzendt naar Dynamic Media Video Reports.
+Als u een uit-van-doos videoviewer gebruikt die door Dynamische Media wordt verstrekt, of als u een vooraf ingestelde douaneviewer creeerde die op een uit-van-doos videokijker wordt gebaseerd, dan worden geen extra stappen vereist om VideoRapporten te bekijken. Als u echter uw eigen videoviewer hebt gemaakt op basis van de HTML5 Viewer SDK API, voert u de volgende stappen uit om ervoor te zorgen dat uw videoviewer traceergebeurtenissen verzendt naar Dynamic Media Video-rapporten.
 
-Gebruik de [ Gids van de Verwijzing van de Kijkers van Dynamic Media van de Adobe ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) en de [ HTML5 Kijker SDK API ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) om uw eigen videokijkers tot stand te brengen.
+Gebruik de [ Gids van de Verwijzing van de Kijkers van de Media van Adobe Dynamische ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) en [ SDK API van de Kijker HTML5 ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) om uw eigen videokijkers tot stand te brengen.
 
-**aan meningsvideorapporten die op een videokijker worden gebaseerd die u gebruikend Dynamic Media HTML5 Viewer SDK creeerde:**
+**aan meningsvideorapporten die op een videokijker worden gebaseerd die u gebruikend de Dynamische Kijker HTML5 van Media SDK creeerde:**
 
 1. Navigeer naar een gepubliceerd video-element.
 1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de assetpagina de optie **[!UICONTROL Viewers]**.
@@ -543,7 +485,7 @@ Gebruik de [ Gids van de Verwijzing van de Kijkers van Dynamic Media van de Adob
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Met de parameter `config2` kunt u afbeeldingen bijhouden in HTML5 Viewers. Het is ook een bedrijf-specifieke vooraf ingesteld die de configuratieinformatie voor Video die, en voor klant-specifieke configuraties van Adobe Analytics bevat meldt.
+   De parameter `config2` schakelt tracering in HTML5 Viewers in. Het is ook een bedrijf-specifieke vooraf ingesteld die de configuratieinformatie voor Video die, en voor klant-specifieke configuraties van Adobe Analytics bevat meldt.
 
    De juiste waarde voor de config2-parameter wordt gevonden in zowel de functie **[!UICONTROL Embed Code]** als de functie copy **[!UICONTROL URL]** . In de URL van de opdracht copy **[!UICONTROL URL]** is de parameter die moet worden gezocht `&config2=<value>` . De waarde is bijna altijd `companypreset`, maar in sommige gevallen ook `companypreset-1`, `companypreset-2`, enz.
 
@@ -594,11 +536,11 @@ Gebruik de [ Gids van de Verwijzing van de Kijkers van Dynamic Media van de Adob
 
 
 
-## Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in Dynamic Media{#about-msma}
+## Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in dynamische media{#about-msma}
 
 Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere ondertitels en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
-![ Bijschriften en audiosporen lusje in Dynamic Media samen met een lijst die geuploade `.vtt` bijschriftdossiers en geupload .MP3 audiospoordossiers voor een video tonen.](assets-dm/msma-subtitle-audiotracks-tab2.png)
+![ Bijschriften en audiosporen lusje in Dynamische Media samen met een lijst die geuploade `.vtt` bijschriftdossiers en geupload .MP3 audiospoordossiers voor een video tonen.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
 Een aantal van de gebruiksscenario&#39;s die u kunt gebruiken voor het toevoegen van meerdere bijschriften en audiotracks aan uw primaire video zijn onder meer:
 
@@ -610,23 +552,22 @@ Een aantal van de gebruiksscenario&#39;s die u kunt gebruiken voor het toevoegen
 |  | Commentaartracks |
 |  | Beschrijvende audio |
 
-Alle [ video formaten die in Dynamic Media ](/help/assets/assets-formats.md) worden gesteund en alle videokijkers van Dynamic Media - behalve de Dynamic Media *Video_360* kijker - worden gesteund voor gebruik met veelvoudige titel en audiosporen.
+Alle [ video formaten die in Dynamische Media ](/help/assets/assets-formats.md) worden gesteund en alle Dynamische videokijkers van Media - behalve de Dynamische 2} Video_360 *kijker van Media - worden gesteund voor gebruik met veelvoudige titel en audiosporen.*
 
-U kunt meerdere bijschriften en audiotracks gebruiken voor uw Dynamic Media-account via een functieschakeloptie die door de Adobe Klantenondersteuning moet worden ingeschakeld (ingeschakeld).
+U kunt voor uw Dynamic Media-account meerdere bijschriften en audiotracks gebruiken via een functiewissel dat moet worden ingeschakeld (ingeschakeld) door de Adobe-klantenondersteuning.
 
 ### Meerdere bijschriften en audiotracks toevoegen aan uw video {#add-msma}
 
 Voordat u meerdere bijschriften en audiotracks aan uw video toevoegt, moet u controleren of u al over het volgende beschikt:
 
-* Dynamic Media wordt ingesteld in een AEM omgeving.
-* A [ wordt het Videoprofiel van Dynamic Media toegepast op de omslag waar uw video&#39;s ](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) worden opgenomen.
-* [ de Veelvoudige titel en audiospoor worden toegelaten op uw rekening van Dynamic Media ](#enable-dash).
+* Dynamic Media wordt ingesteld in een AEM-omgeving.
+* Het profiel van A [ Dynamische Video van Media wordt toegepast op de omslag waar uw video&#39;s ](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) worden opgenomen.
 
 Toegevoegde bijschriften en bijschriften worden ondersteund in de indelingen WebVTT en Adobe `.vtt` . Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
 
 >[!IMPORTANT]
 >
->Om het even welke video&#39;s die u *alvorens* toelatend veelvoudige titel en audiospoorsteun op uw rekening van Dynamic Media uploadde, [ moet worden opnieuw verwerkt ](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+>Om het even welke video&#39;s die u *alvorens* toelatend veelvoudige titel en audiospoorsteun op uw Dynamische rekening van Media uploadde, [ moet worden opnieuw verwerkt ](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
 **om veelvoudige titel en audiosporen aan uw video toe te voegen:**
 
@@ -641,7 +582,7 @@ Toegevoegde bijschriften en bijschriften worden ondersteund in de indelingen Web
    >Als u het tabblad **[!UICONTROL Captions & Audio Tracks]** niet ziet, betekent dit een van de volgende twee dingen:
    >
    >* Aan de map waarin de geselecteerde video zich bevindt, is geen videoprofiel toegewezen. In welk geval, zie [ een videoprofiel op de omslag ](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders) toepassen.
-   >* Of Dynamic Media moet de video opnieuw verwerken. In welk geval, zie [ activa in een omslag ](/help/assets/processing-profiles.md#reprocessing-assets) opnieuw verwerken.
+   >* Of dynamische media moeten de video opnieuw verwerken. In welk geval, zie [ activa in een omslag ](/help/assets/processing-profiles.md#reprocessing-assets) opnieuw verwerken.
    >
    >Als u een van de bovenstaande taken hebt uitgevoerd, gaat u terug naar deze stappen.
 
@@ -683,13 +624,13 @@ Toegevoegde bijschriften en bijschriften worden ondersteund in de indelingen Web
 
 1. (Optioneel) Als u **[!UICONTROL Save & Close]** in de vorige stap hebt geselecteerd in plaats van **[!UICONTROL Save]** te selecteren, kunt u nog steeds de verwerkingsstatus van de geüploade bestanden bekijken. Zie [ Mening de levenscyclusstatus van geupload titels en audiospoordossiers ](#lifecycle-status-video).
 1. (Optioneel) Geef een voorvertoning van de video weer voordat u de video publiceert, zodat de bijschriften en audio naar behoren werken. Zie [ Voorproef een video die veelvoudige titel en audiosporen ](#preview-video-audio-subtitle) heeft
-1. Publish the video. Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
+1. Publiceer de video. Zie [ activa ](publishing-dynamicmedia-assets.md) publiceren.
 
 #### Bijschrift- en audiotrackbestanden toevoegen aan een video die al is gepubliceerd
 
-Als u aanvullende bijschriftbestanden of audiotrackbestanden uploadt naar een reeds gepubliceerde video, wordt de status `Processed` toegewezen aan die bestanden. Deze status wordt toegepast nadat de bestanden na het uploaden zijn voorbereid. Op dat moment kunt u de video voorvertonen in Dynamic Media om de nieuw geüploade bestanden te bekijken of te horen.
+Als u aanvullende bijschriftbestanden of audiotrackbestanden uploadt naar een reeds gepubliceerde video, wordt de status `Processed` toegewezen aan die bestanden. Deze status wordt toegepast nadat de bestanden na het uploaden zijn voorbereid. Op dat punt kunt u de video voorvertonen in Dynamic Media om de nieuw geüploade bestanden te bekijken of te horen.
 
-Na voorproef, echter, moet u *de video opnieuw voor de onlangs toegevoegde titel of audiospoordossiers publiceren die, ook moeten worden gepubliceerd.* Na publicatie worden de bijschriften of audio beschikbaar via de openbare Dynamic Media-URL.
+Na voorproef, echter, moet u *de video opnieuw voor de onlangs toegevoegde titel of audiospoordossiers publiceren die, ook moeten worden gepubliceerd.* Na publicatie worden de bijschriften of audio beschikbaar via de URL van de openbare dynamische media.
 
 >[!NOTE]
 >
@@ -703,7 +644,7 @@ In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publicere
 
 #### Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie
 
-Dynamic Media ondersteunt het toevoegen van één bijschrift met video via een URL-modifier. Zie [ titels aan video ](#adding-captions-to-video) toevoegen.
+Dynamische media ondersteunt het toevoegen van één bijschrift met video via een URL-modifier. Zie [ titels aan video ](#adding-captions-to-video) toevoegen.
 
 Meerdere bijschriftwijzigingen hebben voorrang op een bijschrift dat is toegevoegd via een URL-modifier voor gepubliceerde video&#39;s.
 
@@ -711,7 +652,7 @@ Meerdere bijschriftwijzigingen hebben voorrang op een bijschrift dat is toegevoe
 
 1. Upload het bijschriftbestand dat al als een modifier aan de video is toegevoegd, zodat u het bestand expliciet kunt beheren.
 1. U kunt desgewenst aanvullende bijschriftbestanden uploaden.
-1. Publish de video zoals gewoonlijk.
+1. Publiceer de video op de gebruikelijke wijze.
 De bestaande URL met de optie caption kan nu meerdere bijschriften laden.
 
 ### De levenscyclusstatus van geüploade bijschriften en audiotrackbestanden weergeven{#lifecycle-status-video}
@@ -729,7 +670,7 @@ U kunt de levenscyclusstatus bekijken van elk bijschrift of audiotrackbestand da
 | --- | --- |
 | Verwerking | Wanneer een nieuw bijschrift of audiotrackbestand wordt toegevoegd en opgeslagen, verandert dit in de status &quot;Verwerking&quot;. Dynamic Media verwerkt het bestand door het streamingmanifest aan de primaire video te koppelen. |
 | Verwerkt | Nadat de verwerking is voltooid, worden het bijschrift of audiotrackbestand, of de oorspronkelijke audiotrack die is gekoppeld aan de primaire video, weergegeven in de status &quot;Verwerkt&quot;. U kunt voorproef titel en audiospoordossiers die als &quot;Bewerkt&quot;*verschijnen alvorens* u de video live publiceert. |
-| Gepubliceerd | De status &quot;Gepubliceerd&quot; vertegenwoordigt een vergelijkbare status als &quot;Gepubliceerd&quot; voor een primaire video. Assets wordt gepubliceerd wanneer de primaire video wordt gepubliceerd en is beschikbaar op de openbare URL van Dynamic Media. |
+| Gepubliceerd | De status &quot;Gepubliceerd&quot; vertegenwoordigt een vergelijkbare status als &quot;Gepubliceerd&quot; voor een primaire video. Assets wordt gepubliceerd wanneer de primaire video wordt gepubliceerd en is beschikbaar op de openbare URL voor dynamische media. |
 | Mislukt | De status &quot;Mislukt&quot; betekent dat de verwerking van een bijschrift of audiotrackbestand niet is voltooid. Verwijder het bijschrift of het audiotrackbestand en upload het opnieuw. |
 | Ongepubliceerd | Wanneer een gepubliceerde primaire video niet expliciet wordt gepubliceerd, worden alle bijschriften of audiotrackbestanden die u aan de video hebt toegevoegd, ook niet gepubliceerd. |
 
@@ -761,21 +702,21 @@ In de **Reeks als standaard** dialoogdoos, uitgezochte **[!UICONTROL Replace]**.
    ![ de rubriek van Audiosporen met een geselecteerde audiospoordossier - naam en benadrukte &quot;Reeks als gebrek&quot;knoop.](assets-dm/msma-defaultaudiotrack2.png)*plaatsend het standaard audiospoor voor een video.*
 
 1. Selecteer **[!UICONTROL Save & Close]** in de rechterbovenhoek.
-1. Publish the video. Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
+1. Publiceer de video. Zie [ activa ](publishing-dynamicmedia-assets.md) publiceren.
 
 ### Een voorvertoning weergeven van een video met meerdere bijschriften en audiotracks{#preview-video-audio-subtitle}
 
-Nadat bijschriftbestanden en audiotrackbestanden naar een video zijn geüpload en zijn verwerkt, kunt u de Dynamic Media-videoviewer (of andere viewertypen indien gewenst) gebruiken om een voorvertoning van alle verschillende tracks weer te geven. Door een voorvertoning weer te geven, kunt u zien hoe uw video er uitziet en hoe de video eruit ziet en klinkt. Zo weet u zeker dat de video zich naar behoren gedraagt.
+Nadat bijschriftbestanden en audiotrackbestanden naar een video zijn geüpload en zijn verwerkt, kunt u met de Dynamic Media-videoviewer (of andere viewertypen, indien gewenst) een voorvertoning van alle verschillende tracks weergeven. Door een voorvertoning weer te geven, kunt u zien hoe uw video er uitziet en hoe de video eruit ziet en klinkt. Zo weet u zeker dat de video zich naar behoren gedraagt.
 
 Wanneer u met de video wordt tevreden, kunt u het ](publishing-dynamicmedia-assets.md) publiceren gebruikend om het even welke volgende methodes.[
 
 Zie [ de Video of Kijker van het Beeld op een Web-pagina ](/help/assets/embed-code.md) inbedden.
 Zie [ Verbinding URLs aan uw Webtoepassing ](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
-Zie [ Dynamic Media Assets aan pagina&#39;s ](/help/assets/adding-dynamic-media-assets-to-pages.md) toevoegen.
+Zie [ Dynamische Media Assets aan pagina&#39;s ](/help/assets/adding-dynamic-media-assets-to-pages.md) toevoegen.
 
 >[!NOTE]
 >
->Op het standaardtabblad Voorvertoning van Experience Manager worden niet meerdere bijschriften en audiotracks weergegeven. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
+>Het standaardtabblad Experience Manager Preview geeft geen bijschrift en audiotracks weer. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
 
 **aan voorproef een video die veelvoudige titels en audiosporen heeft:**
 
@@ -815,7 +756,7 @@ De oorspronkelijke audiotrack die uit een primaire video is geëxtraheerd, kan n
    * De AudioSporen - onder de **Audiosporen** rubriek, selecteer één of meerdere audiospoordossiers die u van de video wilt schrappen, dan selecteren **[!UICONTROL Delete]**.
 
 1. Selecteer **[!UICONTROL OK]** in het dialoogvenster Verwijderen.
-1. Publish the video.
+1. Publiceer de video.
 
 ### Bijschrift- of audiotrackbestanden downloaden die naar een video zijn geüpload
 
@@ -844,7 +785,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
    | Assets | Hiermee geeft u het aantal bestanden op dat u downloadt en de gecombineerde totale grootte van alle geselecteerde bestanden. Als u deze optie uitschakelt, wordt de knop **[!UICONTROL Download]** gedimd (uitgeschakeld), zodat u geen bestand kunt downloaden. |
 
 1. Selecteer **[!UICONTROL Download]** .
-1. Publish the video. Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
+1. Publiceer de video. Zie [ activa ](publishing-dynamicmedia-assets.md) publiceren.
 
 
 
@@ -852,10 +793,6 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 
 ## Gesloten bijschriften toevoegen aan een video {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->De Adobe adviseert dat u [ veelvoudige titel en audiospoorvermogen ](#enable-dash) op uw rekening van Dynamic Media toelaat. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Bijschriften in vreemde talen worden weergegeven zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
@@ -865,9 +802,9 @@ Ondertiteling met gesloten deuren maakt ook een betere toegankelijkheid mogelijk
 >
 >De videospeler die u gebruikt moet de vertoning van titels steunen.
 
-Zie ook [ Toegankelijkheid in Dynamic Media ](/help/assets/accessibility-dm.md).
+Zie ook [ Toegankelijkheid in Dynamische Media ](/help/assets/accessibility-dm.md).
 
-Dynamic Media converteert bijschriftbestanden naar de JSON-indeling (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud vervolgens verkennen en indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
+Met Dynamische media worden bijschriftbestanden omgezet in de JSON-indeling (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud vervolgens verkennen en indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
 Zie [ statische (niet beeld) inhoud van de Server ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) voor meer informatie over het gebruiken van de functie JSON in een URL.
 
@@ -879,7 +816,7 @@ Zie [ statische (niet beeld) inhoud van de Server ](https://experienceleague.ado
 
    Zie [ WebVTT: Het formaat van de Tracks van de Tekst van het Web Video ](https://w3c.github.io/webvtt/).
 
-   Er zijn vele websites die zowel gratis als premiumtools en -services bieden die u kunt gebruiken om WebVTT-bijschriften/bijschriftbestanden buiten Dynamic Media te maken. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Er zijn vele websites die zowel gratis als premiumhulpmiddelen en de diensten aanbieden die u aan auteurWebVTT caption/caption dossiers buiten Dynamische Media kunt gebruiken. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -900,11 +837,11 @@ Zie [ statische (niet beeld) inhoud van de Server ](https://experienceleague.ado
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*.
 
-   Zie [ de activa van Publish ](/help/assets/publishing-dynamicmedia-assets.md).
+   Zie [ activa ](/help/assets/publishing-dynamicmedia-assets.md) publiceren.
 
 1. Voer een van de volgende handelingen uit:
 
-   * Klik op **[!UICONTROL URL]** voor een ervaring met een pop-upvideo. Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord en passeer de URL naar een eenvoudige teksteditor. Voeg de gekopieerde URL van de video toe met de volgende syntaxis:
+   * Klik op **[!UICONTROL URL]** voor een pop-upviewerervaring voor video. Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord en passeer de URL naar een eenvoudige teksteditor. Voeg de gekopieerde URL van de video toe met de volgende syntaxis:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -922,9 +859,9 @@ U kunt lange-vormvideo&#39;s gemakkelijker bekijken en navigeren door hoofdstukm
 
 >[!NOTE]
 >
->De gebruikte videospeler moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
+>De gebruikte videospeler moet het gebruik van hoofdstukmarkeringen steunen. Dynamische media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
-Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Raadpleeg voor instructies over het maken van uw eigen HTML5-viewer met hoofdstuknavigatie in de Adobe HTML SDK API de kop &quot;Gedrag aanpassen met wijzigingstoetsen&quot; onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber` . Zie [ HTML5 de API van de Kijker SDK ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentatie.
+Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Voor instructies over het maken van uw eigen HTML5-viewer met hoofdstuknavigatie verwijst u in de Adobe HTML5 Viewer SDK API naar de kop &quot;Gedrag aanpassen met wijzigingstoetsen&quot; onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber` . Zie [ HTML5 de 1} documentatie van SDK API van de Kijker.](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -996,11 +933,11 @@ Zie [ WebVTT: Het formaat van de Tracks van de Tekst van het Web Video ](https:/
      </tbody>
    </table>
 
-## Informatie over videominiaturen in de modus Dynamic Media - Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## Ongeveer videoduimnagels in Dynamische Media - wijze Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 Een videominiatuur is een verkleinde versie van een videoframe of een afbeeldingselement dat de video voor de klant vertegenwoordigt. De miniatuur moedigt een klant aan om de video te selecteren.
 
-Aan alle video&#39;s in de Experience Manager moet een miniatuur zijn gekoppeld. Als u een miniatuur verwijdert, moet u deze vervangen. Wanneer u een video uploadt naar Experience Manager, wordt standaard het eerste frame gebruikt als miniatuur. U kunt de miniatuur echter aanpassen voor bijvoorbeeld branding of visuele zoekopdracht. Wanneer u een videominiatuur aanpast, kunt u de video afspelen en pauzeren op het frame dat u wilt gebruiken. Of, kunt u een beeldactiva selecteren die u reeds hebt geupload en *gepubliceerd* in uw digitale activamanager.
+Aan alle video&#39;s in Experience Manager moet een miniatuur zijn gekoppeld. Als u een miniatuur verwijdert, moet u deze vervangen. Wanneer u een video uploadt naar Experience Manager, wordt standaard het eerste frame gebruikt als miniatuur. U kunt de miniatuur echter aanpassen voor bijvoorbeeld branding of visuele zoekopdracht. Wanneer u een videominiatuur aanpast, kunt u de video afspelen en pauzeren op het frame dat u wilt gebruiken. Of, kunt u een beeldactiva selecteren die u reeds hebt geupload en *gepubliceerd* in uw digitale activamanager.
 
 Een aangepaste videominiatuurafbeelding die u selecteert uit een video, wordt niet geëxtraheerd en in de DAM opgeslagen als een afzonderlijk en afzonderlijk element. Een aangepaste videominiatuur die u selecteert uit een bestaand afbeeldingselement, wordt echter opgeslagen in de tekenherkenning. Het pad van het geselecteerde element wordt opgeslagen onder het knooppunt van het video-element, zoals in het volgende voorbeeldpad:
 
@@ -1008,11 +945,11 @@ Een aangepaste videominiatuurafbeelding die u selecteert uit een video, wordt ni
 
 De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat u een videoprofiel hebt toegepast op de map waarin de video zich bevindt.
 
-Zie ook [ Ongeveer videoduimnagels in Dynamic Media - Hybride wijze ](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
+Zie ook [ Ongeveer videoduimnagels in Dynamische Media - Hybride wijze ](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
 ### Een aangepaste videominiatuur toevoegen {#adding-a-custom-video-thumbnail}
 
-Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in de modus &quot;Dynamicmedia_Scene7&quot;.
+Deze stappen zijn alleen van toepassing op dynamische media die in de modus &quot;Dynamicmedia_Scene7&quot; worden uitgevoerd.
 
 **om een duimnagel van de douanevideo toe te voegen:**
 
@@ -1044,11 +981,11 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 1. Selecteer **[!UICONTROL Save Change]** op de pagina Miniatuur wijzigen.
 1. Selecteer **[!UICONTROL Save & Close]** in de rechterbovenhoek van de pagina Eigenschappen van video.
 
-## Informatie over videominiaturen in Dynamic Media - hybride modus {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+## Informatie over videominiaturen in de modus Dynamische media - Hybride {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-U kunt kiezen uit een van de tien miniatuurafbeeldingen die automatisch door Dynamic Media worden gegenereerd om aan uw video toe te voegen. De videospeler geeft de geselecteerde miniatuur weer wanneer een video-element wordt gebruikt met de Dynamic Media-component in de ontwerpomgeving van Experience Manager Sites, Experience Manager Mobile of Experience Managers Screens. De miniatuur fungeert als een statisch beeld dat de inhoud van de gehele video het beste vertegenwoordigt en dat gebruikers verder aanmoedigt om op de knop Afspelen te klikken.
+U kunt kiezen uit een van de tien miniatuurafbeeldingen die automatisch door Dynamic Media worden gegenereerd om aan uw video toe te voegen. De videospeler geeft de geselecteerde miniatuur weer wanneer een video-element wordt gebruikt met de component Dynamic Media in de ontwerpomgeving van Experience Manager Sites, Experience Manager Mobile of Experience Manager Screens. De miniatuur fungeert als een statisch beeld dat de inhoud van de gehele video het beste vertegenwoordigt en dat gebruikers verder aanmoedigt om op de knop Afspelen te klikken.
 
-Dynamic Media legt tien (standaard)miniatuurafbeeldingen vast op basis van de totale tijd van de video. Het systeem legt beelden met de volgende videointervallen vast:
+Dynamische media legt tien (standaard)miniatuurafbeeldingen vast op basis van de totale tijd van de video. Het systeem legt beelden met de volgende videointervallen vast:
 
 * 1%
 * 11%
@@ -1061,17 +998,17 @@ Dynamic Media legt tien (standaard)miniatuurafbeeldingen vast op basis van de to
 * 81%
 * 91%
 
-De tien miniaturen blijven bestaan. Dit betekent dat als u een andere miniatuur kiest, u de reeks niet opnieuw hoeft te genereren. U bekijkt een voorvertoning van de tien miniatuurafbeeldingen en selecteert vervolgens de miniatuurafbeelding die u voor de video wilt gebruiken. Als u wilt veranderen in het gebrek, kunt u CRXDE Lite gebruiken om het tijdinterval te vormen dat duimnagelbeelden worden geproduceerd. Als u bijvoorbeeld alleen een reeks van vier miniatuurafbeeldingen met gelijkmatige tussenruimte uit uw video wilt genereren, kunt u de intervaltijd instellen op 24%, 49%, 74% en 99%.
+De tien miniaturen blijven bestaan. Dit betekent dat als u een andere miniatuur kiest, u de reeks niet opnieuw hoeft te genereren. U bekijkt een voorvertoning van de tien miniatuurafbeeldingen en selecteert vervolgens de miniatuurafbeelding die u voor de video wilt gebruiken. Als u de standaardinstelling wilt wijzigen, kunt u CRXDE Lite gebruiken om het tijdsinterval te configureren dat miniatuurafbeeldingen worden gegenereerd. Als u bijvoorbeeld alleen een reeks van vier miniatuurafbeeldingen met gelijkmatige tussenruimte uit uw video wilt genereren, kunt u de intervaltijd instellen op 24%, 49%, 74% en 99%.
 
 In het ideale geval kunt u een videominiatuur toevoegen nadat u de video hebt geüpload, maar voordat u de video op uw website publiceert.
 
-Desgewenst kunt u een aangepaste miniatuur uploaden die uw video vertegenwoordigt in plaats van een miniatuur die door Dynamic Media is gegenereerd. U kunt bijvoorbeeld een aangepaste miniatuurafbeelding maken met de titel van uw video, een opvallende openingsafbeelding of een specifieke afbeelding die u van uw video hebt vastgelegd. De aangepaste videominiatuurafbeelding die u uploadt, moet een maximale resolutie van 1280 × 720 pixels (minimale breedte van 640 pixels) hebben en mag niet groter zijn dan 2 MB.
+Desgewenst kunt u een aangepaste miniatuur uploaden om uw video te vertegenwoordigen in plaats van een miniatuur te gebruiken die is gegenereerd door Dynamic Media. U kunt bijvoorbeeld een aangepaste miniatuurafbeelding maken met de titel van uw video, een opvallende openingsafbeelding of een specifieke afbeelding die u van uw video hebt vastgelegd. De aangepaste videominiatuurafbeelding die u uploadt, moet een maximale resolutie van 1280 × 720 pixels (minimale breedte van 640 pixels) hebben en mag niet groter zijn dan 2 MB.
 
-Zie ook [ Ongeveer videoduimnagels in Dynamic Media - de wijze van Scene7 ](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+Zie ook [ Ongeveer videoduimnagels in Dynamische Media - wijze Scene7 ](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### Een videominiatuur toevoegen {#adding-a-video-thumbnail}
 
-Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in de hybride modus.
+Deze stappen zijn alleen van toepassing op dynamische media die in de hybride modus worden uitgevoerd.
 
 **om een videoduimnagel toe te voegen:**
 
@@ -1081,14 +1018,14 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 1. Selecteer **[!UICONTROL Change Thumbnail]** op de pagina Eigenschappen van video.
 1. Selecteer op de pagina Miniatuur wijzigen op de werkbalk de optie **[!UICONTROL Select Frame]** .
 
-   Dynamic Media genereert een reeks miniatuurafbeeldingen van uw video op basis van het standaardtijdinterval of -interval dat u hebt aangepast.
+   Dynamische media genereert een reeks miniatuurafbeeldingen van uw video op basis van het standaardtijdinterval of tijdinterval dat u hebt aangepast.
 
 1. Geef een voorvertoning van de gegenereerde miniatuurafbeeldingen weer en selecteer de miniatuurafbeelding die u aan de video wilt toevoegen.
 1. Selecteer **[!UICONTROL Save Change]** .
 
    De miniatuurafbeelding van de video wordt bijgewerkt zodat deze de geselecteerde miniatuur gebruikt. Als u later besluit de miniatuurafbeelding te wijzigen, gaat u terug naar de pagina **[!UICONTROL Change Thumbnail]** en selecteert u een nieuwe pagina.
 
-   Als u nieuwe standaardtijdintervallen instelt of een nieuwe video uploadt om bestaande te vervangen, zorg ervoor dat Dynamic Media de duimnagels opnieuw produceert.
+   Als u nieuwe standaardtijdintervallen instelt of een nieuwe video uploadt om bestaande te vervangen, zorg ervoor dat de Dynamische Media de duimnagels opnieuw produceert.
 
    Zie [ het standaardtijdinterval vormen dat de videoduimnagels ](#configuring-the-default-time-interval-that-video-thumbnails-are-generated) worden geproduceerd.
 
@@ -1102,7 +1039,7 @@ Zie [ een videoduimnagel ](#adding-a-video-thumbnail) toevoegen.
 
 1. Selecteer in Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** .
 
-1. Navigeer op de pagina CRXDE Lite in het mappenvenster aan de linkerkant naar `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. Navigeer op de CRXDE Lite-pagina in het mappenvenster links naar `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    als het mappendeelvenster niet zichtbaar is, selecteert u het pictogram >> links van het tabblad Start.
 
@@ -1114,13 +1051,13 @@ Zie [ een videoduimnagel ](#adding-a-video-thumbnail) toevoegen.
    * Selecteer het pictogram pijl-omhoog en pijl-omlaag als u de intervalwaarden opnieuw wilt rangschikken.
 
 1. Selecteer **[!UICONTROL OK]** en ga terug naar het tabblad Eigenschappen.
-1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de pagina CRXDE Lite en selecteer vervolgens het pictogram Startpagina Vorige in de linkerbovenhoek om terug te keren naar de Experience Manager.
+1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de CRXDE Lite-pagina en selecteer vervolgens het pictogram Home Terug in de linkerbovenhoek om terug te keren naar Experience Manager.
 
    Zie [ een videoduimnagel ](#adding-a-video-thumbnail) toevoegen.
 
 ### Een aangepaste videominiatuur toevoegen {#adding-a-custom-video-thumbnail-1}
 
-Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in de hybride modus.
+Deze stappen zijn alleen van toepassing op dynamische media die in de hybride modus worden uitgevoerd.
 
 **om een duimnagel van de douanevideo toe te voegen:**
 
@@ -1129,14 +1066,14 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 1. Selecteer op de werkbalk het pictogram **[!UICONTROL View Properties]** (een cirkel met een &quot;i&quot; erin).
 1. Selecteer **[!UICONTROL Change Thumbnail]** op de pagina Eigenschappen van video.
 1. Selecteer op de pagina Miniatuur wijzigen op de werkbalk de optie **[!UICONTROL Upload New Thumbnail]** .
-1. Navigeer naar een miniatuurafbeelding die u wilt gebruiken, selecteer deze en selecteer vervolgens **[!UICONTROL Open]** om de afbeelding naar de Experience Manager te uploaden. Na het uploaden moet u de afbeelding publiceren.
+1. Navigeer naar een miniatuurafbeelding die u wilt gebruiken, selecteer deze en selecteer vervolgens **[!UICONTROL Open]** om de afbeelding naar Experience Manager te uploaden. Na het uploaden moet u de afbeelding publiceren.
 1. Selecteer **[!UICONTROL Save Changes]** nadat u de afbeelding hebt geüpload en gepubliceerd op de pagina Miniatuur wijzigen.
 
    De aangepaste miniatuur wordt toegevoegd aan uw video.
 
-## De Dynamic Media-URL voor Dynamic Media-elementen wijzigen {#manifest-urls}
+## De URL van dynamische media voor dynamische media-elementen wijzigen {#manifest-urls}
 
-Video&#39;s die in Dynamic Media zijn verwerkt, kunnen worden gebruikt met viewers die niet in de verpakking zijn opgenomen. Of door de manifest-URL&#39;s te openen en deze af te spelen in aangepaste viewers. Hier volgt de API voor het ophalen van manifest-URL&#39;s voor een video.
+Video&#39;s die in dynamische media worden verwerkt, kunnen worden gebruikt met viewers die niet in de box staan. Of door de manifest-URL&#39;s te openen en deze af te spelen in aangepaste viewers. Hier volgt de API voor het ophalen van manifest-URL&#39;s voor een video.
 
 ### Over de getVideoManifestURI-API
 
@@ -1162,15 +1099,15 @@ Deze API heeft de volgende drie parameters:
 
 | Parameter | Beschrijving |
 | --- | --- |
-| `resource` | De bron die correspondeert met de video die Dynamic Media heeft gegeten. |
+| `resource` | De bron die correspondeert met de video die Dynamic Media heeft ingeslikt. |
 | `manifestType` | Kan `ManifestType.DASH` of `ManifestType.HLS` zijn |
 | `onlyIfPublished` | Ingesteld op true voor het geval dat de manifest-uri alleen wordt gegenereerd als deze wordt gepubliceerd en beschikbaar is op de leveringslaag. |
 
-Om manifest URLs voor video&#39;s te halen die de methode hierboven gebruiken, voeg a [ video het coderen profiel ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) aan een &quot;upload video&quot;omslag toe. Dynamic Media verwerkt deze video&#39;s op basis van de coderingen in het videocoderingsbestand dat aan de map is toegewezen. Nu kunt u de bovenstaande API aanroepen voor het ophalen van manifest-URL&#39;s voor de geüploade video&#39;s.
+Om manifest URLs voor video&#39;s te halen die de methode hierboven gebruiken, voeg a [ video het coderen profiel ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) aan een &quot;upload video&quot;omslag toe. Dynamische media verwerkt deze video&#39;s op basis van de coderingen in het videocoderingsbestand dat aan de map is toegewezen. Nu kunt u de bovenstaande API aanroepen voor het ophalen van manifest-URL&#39;s voor de geüploade video&#39;s.
 
 ### Foutscenario&#39;s
 
-De API retourneert null als er fouten zijn. Uitzonderingen worden geregistreerd in foutenlogboeken voor Experience Managers. Dergelijke geregistreerde fouten beginnen met `Could not generate Video Manifest URI`. Dergelijke fouten kunnen in de volgende scenario&#39;s optreden:
+De API retourneert null als er fouten zijn. Uitzonderingen worden aangemeld bij Experience Manager-foutenlogboeken. Dergelijke geregistreerde fouten beginnen met `Could not generate Video Manifest URI`. Dergelijke fouten kunnen in de volgende scenario&#39;s optreden:
 
 * Een `IllegalArgumentException` wordt geregistreerd voor om het even welke volgend:
 
@@ -1178,9 +1115,9 @@ De API retourneert null als er fouten zijn. Uitzonderingen worden geregistreerd 
    * De doorgegeven parameter `resource` is geen video.
    * De doorgegeven parameter `manifestType` is null.
    * De parameter `onlyIfPublished` wordt doorgegeven als true, maar de video wordt niet gepubliceerd.
-   * De video is niet opgenomen met een adaptieve videoset uit Dynamic Media.
+   * De video is niet opgenomen met een adaptieve videoset van Dynamic Media.
 
-* `IOException` wordt geregistreerd als er een probleem is met de verbinding met Dynamic Media.
+* `IOException` wordt geregistreerd wanneer er een probleem is met de verbinding met dynamische media.
 * `UnsupportedOperationException` wordt geregistreerd wanneer een doorgegeven `manifestType` parameter `ManifestType.DASH` is, terwijl de video niet is verwerkt met de DASH-indeling.
 
 Het volgende is een voorbeeld van bovengenoemde API gebruikend servlets die in de ** specificatie HTTPWhiteBoard worden geschreven. Selecteer elk tabblad voor de codesyntaxis.
@@ -1466,5 +1403,66 @@ U kunt de servlet op de volgende manieren aanroepen:
 | HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br> als de levering van DASH wordt toegelaten:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br> als de levering van DASH gehandicapt is:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
 | DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br> als de levering van DASH wordt toegelaten:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br> als de levering van DASH gehandicapt is:<br>`{}` |
 | Fout: middelenpad is onjuist | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+<!-- OBSOLETE. REMOVED AS PER EMAIL FROM RIYA MIDHA ON WEDNESDAY, MARCH 5, 2025
+
+### Enable DASH, multiple caption and audio track support on your Dynamic Media account {#enable-dash}
+
+**About enabling DASH on your account**
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+Enabling DASH on your account requires two steps: 
+
+* Configuring Dynamic Media to use DASH, which you can easily do yourself.
+* Configuring Experience Manager 6.5 to use DASH which is done by way of an Adobe Customer Support case that you create and submit.
+
+When you create an Adobe Support case to enable DASH on your account, multiple caption and audio track support is automatically enabled as well. Once activated, all newly uploaded videos are processed using an updated backend architecture that supports adding multiple caption and audio tracks.
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To enable DASH, multiple caption and multiple audio track support on your Dynamic Media account:**
+
+<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
+1. To enable (turn on) DASH, select the checkbox.
+1. Begin by **configuring Dynamic Media for DASH** - From Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+
+1. From the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page, scroll to the name *AEM Assets Dynamic Media Video Advanced Streaming Feature Flag*.
+
+1. To the left of the name, select the checkbox to enable (turn on) DASH.
+
+1. Select **[!UICONTROL Save]**.
+
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. To create a support case, follow the instructions while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH, multiple caption and multiple audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the Customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
+1. Customer support notifies you after completion.
+1. Now, you can do either one of the following:
+
+    * Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
+    * [Add multiple caption and audio tracks](#add-msma) to your video. -->
+
+
 
 

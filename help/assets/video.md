@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10369'
+source-wordcount: '10340'
 ht-degree: 1%
 
 ---
@@ -553,8 +553,6 @@ Een aantal van de gebruiksscenario&#39;s die u kunt gebruiken voor het toevoegen
 |  | Beschrijvende audio |
 
 Alle [ video formaten die in Dynamische Media ](/help/assets/assets-formats.md) worden gesteund en alle Dynamische videokijkers van Media - behalve de Dynamische 2} Video_360 *kijker van Media - worden gesteund voor gebruik met veelvoudige titel en audiosporen.*
-
-U kunt voor uw Dynamic Media-account meerdere bijschriften en audiotracks gebruiken via een functiewissel dat moet worden ingeschakeld (ingeschakeld) door de Adobe-klantenondersteuning.
 
 ### Meerdere bijschriften en audiotracks toevoegen aan uw video {#add-msma}
 
@@ -1389,7 +1387,7 @@ U roept de servlet aan door een `GET` -bewerking bij `/dmSample/dynamicmedia/vid
 | `manifestType` | Optioneel. De parameter kan DASH of HLS zijn. Als het niet wordt overgegaan, blijft het aan DASH in gebreke. |
 | `onlyIfPublished` | Optioneel. Als de waarde wordt doorgegeven, wordt de waarde `manifestUrl` alleen geretourneerd als de video is gepubliceerd. |
 
-In dit voorbeeld, laten wij de volgende opstelling veronderstellen:
+In dit voorbeeld, veronderstel de volgende opstelling:
 
 * Het bedrijf is `samplecompany` .
 * De ontwerpinstantie is `http://sample-aem-author.com` .

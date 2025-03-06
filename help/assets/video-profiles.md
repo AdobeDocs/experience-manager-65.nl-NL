@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3548'
 ht-degree: 6%
 
 ---
@@ -301,7 +301,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van de geava
    <td><code>audioBitrateCustom</code></td>
    <td>Stel waarde in op <code>true</code> om een constante bitsnelheid voor de audiostream te forceren, indien ondersteund door audiocodec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>De standaardwaarde is <code>false</code> .</p> <p>De aanbevolen waarde voor DASH of HLS is <code>false</code> . (Als u DASH wilt gebruiken voor uw video's, moet deze eerst zijn ingeschakeld op uw account. Zie <a href="/help/assets/video.md#enable-dash"> DASH op uw rekening </a> toelaten.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>De standaardwaarde is <code>false</code> .</p> <p>De aanbevolen waarde voor DASH of HLS is <code>false</code> .</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

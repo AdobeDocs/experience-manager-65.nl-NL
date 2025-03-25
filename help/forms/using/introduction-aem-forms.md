@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot AEM Forms
-description: Met deze AEM 6.5-handleiding kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren en vind meer informatie over het ontwerpen van adaptieve formulieren.
+description: Met deze AEM 6.5-handleiding kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij installeren, upgraden en configureren en lees meer over het ontwerpen van adaptieve formulieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
@@ -21,7 +21,7 @@ ht-degree: 3%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
-| AEM 6,5 | Dit artikel |
+| AEM 6.5 | Dit artikel |
 
 Voor informatie over recentste eigenschappen en verhogingen in AEM Forms, zie [ wat in AEM Forms ](../../forms/using/whats-new.md) nieuw is.
 
@@ -39,7 +39,7 @@ AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptiev
 >
 >De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
-![ AEM vormen mogelijkheden ](do-not-localize/4th-draft-updated.gif)
+![ de vormenmogelijkheden van AEM ](do-not-localize/4th-draft-updated.gif)
 
 ### Belangrijkste mogelijkheden {#key-capabilities}
 
@@ -53,20 +53,20 @@ Samenvattend biedt AEM Forms krachtige functies voor formulierbeheer, zoals de v
 * Integratie met eSign services van Adobe Document Cloud of Scriptservice voor het elektronisch ondertekenen van documenten die vertrouwelijke informatie bevatten
 * Geautomatiseerde mogelijkheden voor het publiceren van formulieren en de mogelijkheid om tijdige, gepersonaliseerde en consistente communicatie via meerdere kanalen te leveren
 
-## Formuliertypen AEM {#aem-form-types}
+## AEM-formuliertypen {#aem-form-types}
 
 Met AEM Forms kunt u nieuwe en bestaande formulieren uitbreiden om te maken:
 
-* pixelperfecte, gepagineerde HTML en PDF forms die er bijna als papier uitzien, of
+* Pixel Perfect, gepagineerde HTML en PDF forms die er bijna als papier uitzien, of
 * adaptieve formulieren die automatisch worden weergegeven voor het apparaat en de browser van de gebruiker.
 
 **PDF forms**
 
-PDF forms kunnen offline worden ingevuld, lokaal worden opgeslagen en formuliergegevens worden verzonden wanneer u de volgende keer online bent. U kunt tweedimensionale streepjescodes gebruiken om formuliergegevens vast te leggen en digitale handtekeningen gebruiken om de authenticiteit voor gebruikers te valideren.
+PDF forms kan offline worden ingevuld, lokaal worden opgeslagen en formuliergegevens worden verzonden wanneer u de volgende keer online bent. U kunt tweedimensionale streepjescodes gebruiken om formuliergegevens vast te leggen en digitale handtekeningen gebruiken om de authenticiteit voor gebruikers te valideren.
 
-**HTML vormen**
+**de vormen van HTML**
 
-HTML5 browserformulieren kunnen zowel op mobiele apparaten als in desktopbrowsers worden weergegeven. U kunt HTML-formulieren elektronisch ondertekenen met behulp van de services Krabbelen of eSign.
+Op HTML5-browsers gebaseerde formulieren kunnen zowel op mobiele apparaten als in desktopbrowsers worden weergegeven. U kunt HTML-formulieren elektronisch ondertekenen met de services Krabbelen of elektronisch ondertekenen.
 
 **Aangepaste vormen**
 
@@ -98,8 +98,8 @@ Met name voor mensen in het veld is het handig om gegevens offline vast te legge
 * Gebruiksvriendelijke HTML-werkruimtetoepassing voor taaktoewijzing en -opvolging
 * Workflowontwerpomgeving voor slepen en neerzetten
 * ECM (Enterprise Content Management Connectors)
-* Ondersteuning voor open standaarden, waaronder XML en SOAP om formuliergegevens te verbinden met bedrijfssystemen
-* De uit-van-de-doos rapporten van de HTML controleren achterstand, werkrijen, en Zeer belangrijke Indicatoren van Prestaties (KPIs)
+* Ondersteuning voor open standaarden, waaronder XML en SOAP, voor het verbinden van formuliergegevens met bedrijfssystemen
+* De uit-van-de-doos HTML rapporten controleren achterstand, werkrijen, en Zeer belangrijke Indicatoren van Prestaties (KPIs)
 * Aanpasbare dashboards voor real-time inzicht in bedrijfsverrichtingen
 * API voor verbinding met rapportagehulpprogramma&#39;s van derden
 

@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
+source-git-commit: bc67c991d7498beafd20fa7a9f20cbd901d79045
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,26 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
   <tbody>
   <tr>
     <td><strong>Datum</strong></td>
-    <td><strong>Hotfix-downloadkoppeling (AEM koppeling voor softwaredistributie)</strong></td>
+    <td><strong>Hotfix-downloadkoppeling (AEM-koppeling voor softwaredistributie)</strong></td>
     <td><strong>Opgeloste problemen</strong></td>
+  </tr>
+  <tr>
+    <td>26 maart 2025 </br> </br> Volg de instructies <a href="/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md"> De kwetsbaarheden van het Voorjaarsframework voor AEM Forms op JEE verminderen </a> om deze correctie te installeren.</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-win-jboss.tar.gz"> Hotfix voor AEM Service Pack 6.5.22.0 op Vensters voor server JBoss JEE </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-jboss.tar.gz"> Hotfix voor AEM Service Pack 6.5.22.0 op Linux voor JBoss JEE server </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-win-weblogic.tar.gz"> Hotfix voor AEM Service Pack 6.5.22.0 op Windows for Weblogic JEE-server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-weblogic.tar.gz"> Hotfix voor AEM Service Pack 6.5.22.0 op Linux voor Weblogic JEE server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-win-websphere.tar.gz"> Hotfix voor AEM Service Pack 6.5.22.0 op Vensters voor server Websphere JEE </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-websphere.tar.gz"> Hotfix voor AEM Service Pack 6.5.22.0 op Linux voor server Websphere JEE </a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Risico's van het voorjaarskader voor AEM Forms op JEE verminderen</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>10 juli 2024</td>
@@ -35,14 +53,14 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip"> Hotfix voor AEM Service Pack 6.5.21.0 op Vensters voor server JBoss JEE </a> </li>
       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz"> Hotfix voor AEM Service Pack 6.5.21.0 op Linux voor JBoss JEE server </a> </li>
-       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip"> Hotfix voor AEM Service Pack 6.5.21.0 op Vensters voor de server van JEE van de Ruimte van de Websfeer </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip"> Hotfix voor AEM Service Pack 6.5.21.0 op Vensters voor de server van de JEE van Webampère </a> </li>
         <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz"> Hotfix voor AEM Service Pack 6.5.21.0 op Linux voor de server van JEE van de Ruimte van de Websfeer </a> </li>
-        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip"> Hotfix voor AEM Service Pack 6.5.21.0 op Vensters voor Weblogic JEE server </a> </li>
-        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz"> Hotfix voor AEM Service Pack 6.5.21.0 op Linux voor de server van de Weblogic JEE </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip"> Hotfix voor AEM Service Pack 6.5.21.0 op Windows for Weblogic JEE-server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz"> Hotfix voor AEM Service Pack 6.5.21.0 op Linux voor Weblogic JEE server </a> </li>
      </ul>
      </td>
     <td>
-    <ul><li>Wanneer een gebruiker aan AEM Forms Service Pack 20 (6.5.20.0) op de server JEE bijwerkt en PDF gebruikend outputdiensten produceert, geven de PDF met toegankelijkheidskwesties terug. (LC-3922112)</li><li>Op gelabelde PDF die zijn gegenereerd met de uitvoerservice op AEM Forms JEE, wordt "Onjuiste structuurwaarschuwing" weergegeven. (LC-392/2038)</li><li>Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. (LC-392/2017)</li><li>Wanneer een gebruiker in een Linux-omgeving een adaptief formulier (op JEE) in HTML rendert, wordt het formulier niet correct weergegeven. (LC-3921957)</li><li>Wanneer een gebruiker een XTG-bestand naar PostScript-indeling converteert met de Output Service op AEM Forms JEE, mislukt het bestand met de fout: AEM_OUT_001_003: Onverwachte uitzondering: PAExecute failure: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Na de upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server, kan een gebruiker een formulier niet verzenden en kunnen er geen HTML of PDF forms en XMLFM-crashes worden weergegeven. (LC-3921718)
+    <ul><li>Wanneer een gebruiker AEM Forms Service Pack 20 (6.5.20.0) bijwerkt op de JEE-server en PDF's genereert met behulp van uitvoerservices, worden de PDF's weergegeven met toegankelijkheidsproblemen. (LC-3922112)</li><li>Gecodeerde PDF's die zijn gegenereerd met behulp van een uitvoerservice op AEM Forms JEE tonen "Onjuiste structuurwaarschuwing". (LC-392/2038)</li><li>Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. (LC-392/2017)</li><li>Wanneer een gebruiker in een Linux-omgeving een adaptief formulier (in JEE) rendert in HTML, wordt het formulier niet correct weergegeven. (LC-3921957)</li><li>Wanneer een gebruiker een XTG-bestand naar PostScript-indeling converteert met de Output Service op AEM Forms JEE, treedt de fout op: AEM_OUT_001_003: Onverwachte uitzondering: PAExecute failure: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Na de upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server kan een gebruiker die een formulier verzendt, HTML5 of PDF forms en XMLFM niet genereren. (LC-3921718)
     </ul>
     </td>    
   </tr>
@@ -50,15 +68,15 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <td>21 juni 2024</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 op server JBoss JEE </a> </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 op JBoss JEE server </a> </li>
       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 op Weblogic JEE-server </a> </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 op de server van de JEE van de Ruimte van de Websfeer </a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 op de server van de JEE van Webampère </a> </li>
         <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 op server OSGi </a> </li>
      </ul>
      </td>
     <td>
     <ul>
-    <li> Na de upgrade naar AEM Forms Service Pack 6.5.21.0 kan de service Documentdigitalisering geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. Raadpleeg het artikel <a href="/help/forms/using/papercapture-service-resolution.md"> Problemen oplossen </a> voor installatie-instructies.(CQDOC-21680) </li>
+    <li> Na de upgrade naar AEM Forms Service Pack 6.5.21.0 kan de service Documentdigitalisering geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF's. Raadpleeg het artikel <a href="/help/forms/using/papercapture-service-resolution.md"> Problemen oplossen </a> voor installatie-instructies.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -89,8 +107,8 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <li>In een adaptief formulier dat is gebaseerd op een XDP met ingesloten scripts in selectievakjes, worden de scripts niet uitgevoerd voor elementen na dergelijke selectievakjes. Er is een hotfix beschikbaar voor dit probleem. (FORMS-14244) </li>
      <li> Rijen in de datumkiezer-widget worden afgebroken tijdens het doorlopen van maanden in de pop-upwidget voor velden met het bewerkings-/weergavepatroon. Er is een hotfix beschikbaar voor dit probleem. (FORMS-13620) </li>
      <li>Formulierverzendingen mislukken wanneer wordt geprobeerd de DOR-service (Document of Record) op de achtergrond te gebruiken. Het foutbericht dat wordt aangetroffen, is: "Handeling verzenden kan niet worden voltooid omdat de formulierbron niet correct is toegewezen." (FORMS-13798) </li>
-     <li>Wanneer een adaptief formulier van een Adobe Experience Manager Publish-exemplaar naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet worden opgeslagen in de workflow.  (FORMS-14209) </li>
-     <li> Bij het installeren van AEM 6.5 Forms Service Pack 20-pakket (AEM Forms add-on pakket voor SP20), vertoont de AEM Sites-gebruikersinterface (UI) een aanzienlijke verslechtering van de prestaties.  (FORMS-13791) </li>
+     <li>Wanneer een adaptief formulier van een Adobe Experience Manager-publicatie-instantie naar een Adobe Experience Manager-workflow wordt verzonden, kunnen de bijlagen niet in de workflow worden opgeslagen.  (FORMS-14209) </li>
+     <li> Bij het installeren van het AEM 6.5 Forms Service Pack 20-pakket (AEM Forms add-on pakket voor SP20), vertoont de AEM Sites-gebruikersinterface (UI) een aanzienlijke verslechtering van de prestaties.  (FORMS-13791) </li>
      <li>De prefill dienst ontbreekt met een ongeldige wijzeruitzondering in Interactieve Mededelingen. (CQDOC-21355)</li>
      <li>Configuraties die gebruikmaken van de oudere cloudservice voor Adobe Analytics met gebruikersverificatie op basis van referenties functioneren niet correct, waardoor de regels voor de analyse niet worden uitgevoerd. (FORMS-15428)
     </ul>

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5
-source-git-commit: c878a4d21a7f6197261ac86b27fbdc76eefa589f
+source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
 workflow-type: tm+mt
-source-wordcount: '7471'
+source-wordcount: '7480'
 ht-degree: 1%
 
 ---
@@ -1211,6 +1211,7 @@ ht-degree: 1%
       + [PDF Generation kan een groot aantal PDF&#39;s niet afdrukken op WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK op de juiste manier opnieuw opstarten](/help/forms/using/restart-aem-sdk.md)
       + [De service Documentdigitalisering kan geen OCR&#39;s uitvoeren op PDF&#39;s](/help/forms/using/papercapture-service-resolution.md)
+      + [Risico&#39;s van het voorjaarskader voor AEM Forms op JEE verminderen](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
    + Oudere documentatie {#legacy-documentation}
       + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](/help/forms/developing/building-xml.md)
       + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)

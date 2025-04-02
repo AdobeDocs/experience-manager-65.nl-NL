@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e67f19784abae1cd41819dd2a763ddd064beee08
+source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,6 @@ Nadat een proces is gemaakt met de service Script uitvoeren, kunt u dit script g
 >
 > Als de JAVA-scriptcode langer is dan 10 regels, wordt het aanbevolen de code toe te voegen aan aangepaste DSC&#39;s (Document Service Components) in plaats van deze rechtstreeks in het proces te schrijven. Aangepaste DSC&#39;s verbeteren het onderhoud, de herbruikbaarheid en de prestaties door de workflows lichtgewicht te houden. Verwijzen naar deze componenten in werkschema&#39;s verzekert betere uitvoeringsefficiency en verhindert potentiële vertragingen die door het verwerken van grote codeblokken binnen het werkschema worden veroorzaakt.
 
->[!NOTE]
->
-> Als de JAVA-scriptcode langer is dan 10 regels, wordt het aanbevolen de code toe te voegen aan aangepaste DSC&#39;s (Document Service Components) in plaats van deze rechtstreeks in het proces te schrijven. Aangepaste DSC&#39;s verbeteren het onderhoud, de herbruikbaarheid en de prestaties door de workflows lichtgewicht te houden. Verwijzen naar deze componenten in werkschema&#39;s verzekert betere uitvoeringsefficiency en verhindert potentiële vertragingen die door het verwerken van grote codeblokken binnen het werkschema worden veroorzaakt.
 
 **Ongeveer de Uitvoeren Technologie van de Dienst van het Manuscript**
 

@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: ee990092f3174a8c29443eb451d7188c1e27fa7d
+source-git-commit: e67f19784abae1cd41819dd2a763ddd064beee08
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,10 @@ Zodra het proces met de &quot;Uitvoeren de bepaalde activiteit van de Dienst van
 ## XML maken met de Scriptservice uitvoeren {#create-xml-execute-script-service}
 
 Nadat een proces is gemaakt met de service Script uitvoeren, kunt u dit script gebruiken om XML te maken. U kunt de scripts schrijven die hieronder worden beschreven in het tekstvak dat wordt beschreven in het gedeelte Een script toevoegen aan het proces met de sectie `Execute Script` Service hierboven.
+
+>[!NOTE]
+>
+> Als de JAVA-scriptcode langer is dan 10 regels, wordt het aanbevolen de code toe te voegen aan aangepaste DSC&#39;s (Document Service Components) in plaats van deze rechtstreeks in het proces te schrijven. Aangepaste DSC&#39;s verbeteren het onderhoud, de herbruikbaarheid en de prestaties door de workflows lichtgewicht te houden. Verwijzen naar deze componenten in werkschema&#39;s verzekert betere uitvoeringsefficiency en verhindert potentiële vertragingen die door het verwerken van grote codeblokken binnen het werkschema worden veroorzaakt.
 
 >[!NOTE]
 >

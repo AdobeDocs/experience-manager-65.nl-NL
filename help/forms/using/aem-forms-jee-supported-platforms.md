@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 8fda6635ec0e28b95209431bd12d191f36df943b
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '4197'
+source-wordcount: '4216'
 ht-degree: 0%
 
 ---
@@ -317,7 +317,7 @@ Adobe Experience Manager Forms vereist dat een Java™ Virtual Machine wordt uit
    <td><p>Servicepacks, cumulatieve patches en kritieke beveiligingsupdates</p> </td>
   </tr>
   <tr>
-   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64-bits)</p> </td>
+   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64-bits) </p> </td>
    <td><p>A: Ondersteund</p> </td>
    <td><p>Servicepacks, cumulatieve patches en kritieke beveiligingsupdates</p> </td>
   </tr>
@@ -467,9 +467,9 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 
 ### Eisen voor PDF Generator
 
-- Voor het testen van PDF-conversies op de SUSE® Linux®-server moet u de volgende configuraties hebben:
+- Voor het testen van PDF-conversies op SUSE® Linux® (SLES 15 SP6 of hoger) server, moet u de volgende configuraties hebben:
    - Navigeer naar het `/etc/profile` -bestand en stel de `OpenOffice_PATH` omgevingsvariabele in op `/opt/openoffice4` om deze globaal te configureren.
-   - De 32-bits versie van OpenOffice installeren op het Linux®-besturingssysteem
+   - Installeer de 32-bits versie van OpenOffice.
 
 ### Softwareondersteuning voor PDF Generator {#software-support-for-pdf-generator}
 
@@ -508,6 +508,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >
 >Daarnaast:
 >
+>- PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
 >- PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
 >- De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >- Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.

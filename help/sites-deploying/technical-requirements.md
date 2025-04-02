@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 0%
 
 ---
@@ -452,9 +452,9 @@ Voor Windows x86:
 
 ### Eisen voor AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* Voor het testen van PDF-conversies op de SUSE® Linux®-server moet u de volgende configuraties hebben:
+* Voor het testen van PDF-conversies op SUSE® Linux® (SLES 15 SP6 of hoger) server, moet u de volgende configuraties hebben:
    * Navigeer naar het `/etc/profile` -bestand en stel de `OpenOffice_PATH` omgevingsvariabele in op `/opt/openoffice4` om deze globaal te configureren.
-   * De 32-bits versie van OpenOffice installeren op het Linux®-besturingssysteem
+   * Installeer de 32-bits versie van OpenOffice.
 
 ### Softwareondersteuning voor PDF Generator {#software-support-for-pdf-generator}
 
@@ -517,7 +517,7 @@ Voor Windows x86:
 >
 >Daarnaast
 >
->* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of versie 17.011.30078 van Acrobat 2017 om de omzetting uit te voeren.
+>* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
 >* PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
 >* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.

@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
+source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2154'
 ht-degree: 0%
 
 ---
@@ -39,14 +39,14 @@ Wanneer een gebruiker op de hoogte wordt gesteld, ontvangt hij een e-mail in de 
 
 ## De e-mailservice configureren {#configuring-the-mail-service}
 
-Voor AEM om e-mails te kunnen verzenden, moet de **Dienst van de Post van CQ van de Dag** behoorlijk worden gevormd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Voor AEM om e-mail te kunnen verzenden, moet de **Dienst van de Post van CQ van de Dag** behoorlijk worden gevormd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 De volgende beperkingen zijn van toepassing:
 
 * De **SMTP serverhaven** moet 25 of hoger zijn.
 
 * De **SMTP naam van de servergastheer** moet niet leeg zijn.
-* Het **&quot;van&quot;adres** moet niet leeg zijn.
+* Het **&quot;van&quot;adres** moet niet leeg zijn en u moet de standaardwaarde &quot;<noreply@day.com>&quot;veranderen.
 
 Om u te helpen een kwestie met de **Dienst van de Post van de Dag CQ** zuiveren, kunt u op de logboeken van de dienst letten:
 
@@ -60,7 +60,7 @@ De configuratie kijkt als volgt in de console van het Web:
 
 Wanneer u zich abonneert op berichten voor pagina- of forumgebeurtenissen, wordt het e-mailadres van het formulier standaard ingesteld op `no-reply@acme.com` . U kunt deze waarde veranderen door de **E-maildienst van het Bericht E-mailKanaal** in de Console van het Web te vormen.
 
-Als u het e-mailadres wilt configureren, voegt u een knooppunt `sling:OsgiConfig` toe aan de gegevensopslagruimte. Gebruik de volgende procedure om de knoop direct toe te voegen gebruikend CRXDE Lite:
+Als u het e-mailadres wilt configureren, voegt u een knooppunt `sling:OsgiConfig` toe aan de gegevensopslagruimte. Gebruik de volgende procedure om het knooppunt rechtstreeks met CRXDE Lite toe te voegen:
 
 1. Voeg in CRXDE Lite een map met de naam `config` onder de toepassingsmap toe.
 1. Voeg in de configuratiemap een knooppunt met de naam:
@@ -84,7 +84,7 @@ Gebruik de volgende procedure om het knooppunt in de bronmappen van het inhoudsp
 
 ## De Workflow Email Notification Service configureren {#configuring-the-workflow-email-notification-service}
 
-Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van de e-mail als het URL-voorvoegsel van de host ingesteld op standaardwaarden. U kunt deze waarden veranderen door de **Dienst van het Bericht E-mail van het Bericht van het Werkschema van CQ van de Dag te vormen** in de Console van het Web. Als u dat doet, wordt aanbevolen de wijziging in de opslagplaats voort te zetten.
+Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van de e-mail als het URL-voorvoegsel van de host ingesteld op standaardwaarden. U kunt deze waarden veranderen door de **Dienst van het Bericht E-mail van het Bericht van het Werkschema van CQ van de Dag te vormen** in de Console van het Web. Als u dat doet, moet u de wijziging in de opslagplaats voortzetten.
 
 De standaardconfiguratie kijkt als volgt in de Console van het Web:
 
@@ -254,25 +254,25 @@ Een sjabloon toevoegen voor een nieuwe taal:
 
 >[!NOTE]
 >
->De `<language-code>` die als bestandsnaam voor de e-mailsjabloon wordt gebruikt, moet een taalcode in kleine letters van twee letters zijn die door AEM wordt herkend. Voor taalcodes is AEM gebaseerd op ISO-639-1.
+>De `<language-code>` die als bestandsnaam voor de e-mailsjabloon wordt gebruikt, moet een taalcode in kleine letters zijn die door AEM wordt herkend. AEM is voor taalcodes afhankelijk van ISO-639-1.
 
 ## E-mailberichten voor AEM Assets configureren {#assetsconfig}
 
-Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebruikers e-mailmeldingen ontvangen van AEM. Voer de volgende stappen uit om e-mailmeldingen te configureren.
+Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebruikers e-mailberichten van AEM ontvangen. Voer de volgende stappen uit om e-mailmeldingen te configureren.
 
 1. Vorm de e-maildienst, zoals hierboven beschreven in [ Vormend de Dienst van de Post ](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. Meld u aan bij AEM als beheerder. Klik **Hulpmiddelen** > **Verrichtingen** > **Console van het Web** om de Configuratie van de Console van het Web te openen.
+1. Meld u als beheerder aan bij AEM. Klik **Hulpmiddelen** > **Verrichtingen** > **Console van het Web** om de Configuratie van de Console van het Web te openen.
 1. Bewerk **DAM Server van de Inzameling van het Middel van de Dag CQ DAM**. Selecteer **verzenden e-mail**. Klik **sparen**.
 
 ## OAuth instellen {#setting-up-oauth}
 
-AEM biedt OAuth2 steun voor zijn geïntegreerde Dienst van de Aannemer, om organisaties toe te staan om e-mailvereisten te beveiligen.
+AEM biedt OAuth2-ondersteuning voor de geïntegreerde Mailer Service, zodat organisaties zich kunnen houden aan de vereisten voor beveiligde e-mail.
 
 U kunt OAuth configureren voor meerdere e-mailproviders, zoals hieronder wordt beschreven.
 
 >[!NOTE]
 >
->Deze procedure is een voorbeeld voor een Publish-instantie. Als u e-mailmeldingen wilt inschakelen voor een auteur, moet u dezelfde stappen uitvoeren voor de auteur.
+>Deze procedure is een voorbeeld voor een instantie Publish. Als u e-mailmeldingen wilt inschakelen voor een auteur, moet u dezelfde stappen uitvoeren voor de auteur.
 
 ### Gmail {#gmail}
 
@@ -286,7 +286,7 @@ U kunt OAuth configureren voor meerdere e-mailproviders, zoals hieronder wordt b
 1. Er wordt een nieuw venster geopend met daarin de client-id en het clientgeheim.
 1. Sla deze gegevens op.
 
-**AEM Zijconfiguraties**
+**de Zijconfiguraties van AEM**
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ U kunt OAuth configureren voor meerdere e-mailproviders, zoals hieronder wordt b
 
 Eerst, vorm de Dienst van de Post:
 
-1. Open de AEM webconsole door naar `http://serveraddress:serverport/system/console/configMgr` te gaan
+1. Open de AEM-webconsole op `http://serveraddress:serverport/system/console/configMgr`
 1. Zoek, dan klik de **Dienst van de Post van 0} Dag CQ {**
 1. Voeg de volgende instellingen toe:
    * SMTP-serverhostnaam: `smtp.gmail.com`
@@ -310,7 +310,7 @@ Daarna, vorm uw leverancier SMTP OAuth door de hieronder procedure te volgen:
 >
 >Als deze niet worden uitgevoerd, zal het toegangstoken dat bij `/conf/global/settings/mailer/oauth` wordt opgeslagen ongeldig zijn en de verbinding OAuth2 aan de server SMTP zal ontbreken.
 
-1. Open de AEM webconsole door naar `http://serveraddress:serverport/system/console/configMgr` te gaan
+1. Open de AEM-webconsole op `http://serveraddress:serverport/system/console/configMgr`
 1. Zoek, dan klik **de Wijze SMTP OAuth2 Leverancier van de Aannemer CQ**
 
 1. Vul de vereiste informatie als volgt in:
@@ -340,7 +340,7 @@ Activeer nu de OAuth-componenten. U kunt dit doen door:
 
 Bevestig ten slotte de configuratie door:
 
-1. Ga naar het adres van de Publish-instantie en meld u aan als beheerder.
+1. Ga naar het adres van de instantie Publiceren en meld u aan als beheerder.
 1. Open een nieuw tabblad in de browser en ga naar `http://serveraddress:serverport/services/mailer/oauth2/authorize` . Dit zal u aan de pagina van uw leverancier SMTP, in dit geval Gmail opnieuw richten.
 1. Aanmelding en toestemming voor het verlenen van de vereiste machtigingen
 1. Na instemming wordt het token opgeslagen in de opslagplaats. U hebt toegang tot de URL onder `accessToken` door deze URL rechtstreeks te openen in uw publicatieexemplaar: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
@@ -372,7 +372,7 @@ Bevestig ten slotte de configuratie door:
 1. Daarna, ga naar **Certificaten en geheimen**, klik **Nieuw cliëntgeheim** en volg de op het scherm stappen om een geheim tot stand te brengen. Let op dit geheim voor later gebruik
 1. Pers **Overzicht** in de linkerhand ruit en kopieer de waarden voor **identiteitskaart van de Toepassing (cliënt)** en **Folder (huurder) identiteitskaart** voor recenter gebruik
 
-Om opnieuw te verpakken, moet u de volgende informatie hebben om OAuth2 voor de dienst van de Aannemer op de AEM te vormen:
+Om opnieuw te verpakken, moet u de volgende informatie hebben om OAuth2 voor de dienst van de Aannemer op de kant van AEM te vormen:
 
 * Auth URL, die met huurderidentiteitskaart zal worden geconstrueerd. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * De token-URL, die wordt samengesteld met de huurder-id. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
@@ -380,7 +380,7 @@ Om opnieuw te verpakken, moet u de volgende informatie hebben om OAuth2 voor de 
 * Client-id
 * Het clientgeheim
 
-**AEM Zijconfiguraties**
+**de Zijconfiguraties van AEM**
 
 Vervolgens integreert u uw OAuth2-instellingen met AEM:
 
@@ -429,7 +429,7 @@ Activeer nu de OAuth-componenten. U kunt dit doen door:
 
 Bevestig ten slotte de configuratie door:
 
-1. Ga naar het adres van de Publish-instantie en meld u aan als beheerder.
+1. Ga naar het adres van de instantie Publiceren en meld u aan als beheerder.
 1. Open een nieuw tabblad in de browser en ga naar `http://serveraddress:serverport/services/mailer/oauth2/authorize` . Dit zal u aan de pagina van uw leverancier SMTP, in dit geval Vooruitzichten opnieuw richten.
 1. Aanmelding en toestemming voor het verlenen van de vereiste machtigingen
 1. Na instemming wordt het token opgeslagen in de opslagplaats. U hebt toegang tot de URL onder `accessToken` door deze URL rechtstreeks te openen in uw publicatieexemplaar: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`

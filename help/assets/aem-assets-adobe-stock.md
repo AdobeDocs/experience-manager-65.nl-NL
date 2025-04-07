@@ -7,10 +7,10 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 18dd655887293188224f51fa713d0345991d20d7
 workflow-type: tm+mt
-source-wordcount: '2291'
-ht-degree: 2%
+source-wordcount: '2001'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 2%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
-| AEM 6,5 | Dit artikel |
+| AEM 6.5 | Dit artikel |
 
 <!-- old content
 
-[!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager]. 
+[!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].. 
 
 Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of [!DNL Experience Manager].
 
@@ -45,32 +45,51 @@ Organisaties kunnen hun [!DNL Adobe Stock] Enterprise-plan integreren met [!DNL 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
 -->
 
-## Integeren [!DNL Experience Manager] en [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+## Vereisten om te integreren [!DNL Experience Manager] en [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager Assets] biedt gebruikers de mogelijkheid om [!DNL Adobe Stock] -elementen rechtstreeks vanuit [!DNL Experience Manager] te zoeken, te bekijken, op te slaan en in licentie te geven.
 
-**Eerste vereisten**
+Voldoe aan de volgende vereisten om deze integratie toe te laten:
 
-De integratie vereist:
-
-* Een [ ondernemings  [!DNL Adobe Stock]  plan ](https://stockenterprise.adobe.com/)
-* Een gebruiker met machtigingen in Admin Console naar het standaardprofiel voor het product Stock
-* Een gebruiker met machtigingen voor het Developer Access-profiel voor het maken van integratie in Adobe Developer Console
+* An enterprise [!DNL Adobe Stock] plan.
+* Een gebruiker met machtigingen in [!DNL Admin Console] voor het standaardproductprofiel Stock.
+* Een gebruiker met machtigingen voor de [!DNL Developer Access profile] voor het maken van integratie in [!DNL Adobe Developer Console] .
 
 An enterprise [!DNL Adobe Stock] plan,
 
-* Biedt productmachtigingen voor [!DNL Adobe Stock] (voorraden die zijn verbonden met Experience Manager)
-* Crediteringen die zijn aangeschaft in de [!DNL Adobe Admin Console] voor uw aandelenrechten
-* Hiermee schakelt u JWT-verificatie (Service Account) binnen [!DNL Adobe Developer Console] in voor uw aandelenrechten
-* Hiermee kunt u de credits en licenties globaal beheren vanuit [!DNL Adobe Admin Console]
+* Biedt productrechten voor [!DNL Adobe Stock] (Voorraden die zijn verbonden met Experience Manager).
+* Crediteringen die zijn aangeschaft in de [!DNL Adobe Admin Console] voor uw aandelenrechten.
+* Hiermee kunt u de credits en licenties globaal beheren vanuit [!DNL Adobe Admin Console] .
 
-Binnen de machtiging bestaat er een standaardproductprofiel voor [!DNL Adobe Stock] in [!DNL Admin Console] . Er kunnen meerdere profielen worden gemaakt en deze profielen bepalen wie een licentie voor de activa van Stock kan verkrijgen. Een gebruiker die rechtstreeks toegang heeft tot het productprofiel kan tot [ https://stock.adobe.com/ ](https://stock.adobe.com/) toegang hebben en de activa van de vergunningsVoorraad. Terwijl er een andere methode is om de Developer Access te gebruiken voor het maken van integratie (API) voor het verifiëren van communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock] .
+Binnen de machtiging bestaat er een standaardproductprofiel voor [!DNL Adobe Stock] in [!DNL Admin Console] . Er kunnen meerdere profielen worden gemaakt en deze profielen bepalen wie een licentie voor de activa van Stock kan verkrijgen. Een gebruiker die een directe toegang tot het productprofiel heeft kan tot [ https://stock.adobe.com/ ](https://stock.adobe.com/) toegang hebben en de activa van de Beeld van de vergunning. Terwijl er een andere methode is om de Toegang van de Ontwikkelaar te gebruiken om een integratie (API) tot stand te brengen. Deze integratie verifieert de communicatie tussen [!DNL Experience Manager Assets] en [!DNL Adobe Stock].
+
+<!-- old content
+## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+
+[!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
+
+**Prerequisites**
+
+The integration requires: 
+
+* An [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
+* A user with permissions in Admin Console to the default Stock product profile
+* A user with permissions to the Developer Access profile for creating integration in Adobe Developer Console
+
+An enterprise [!DNL Adobe Stock] plan,
+
+* Provides product entitlement for [!DNL Adobe Stock] (Stocks connected to Experience Manager)
+* Credits purchased into the [!DNL Adobe Admin Console] for your stock entitlement
+* Enables Service Account (JWT) authentication within [!DNL Adobe Developer Console] for your stock entitlement
+* Enables managing the credits and licensing globally from within [!DNL Adobe Admin Console]
+
+Within the entitlement, a default product profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having access directly to the product profile can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create integration (API) to authenticate communication between [!DNL Experience Manager] and [!DNL Adobe Stock].
 
 >[!NOTE]
 >
->De beurswaarde van de &quot;Stock Service Account&quot; (JWT) wordt geleverd met de beurswaarde van de onderneming.
+>The Stock service account (JWT) authentication comes with the enterprise Stock entitlement.
 >
->De integratie ondersteunt geen Oauth-authenticatie voor aandelenrechten voor bedrijven.
+>The integration does not support Oauth authentication for enterprise Stock entitlement.
 
 <!-- old content
 To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock], create an IMS configuration and an [!DNL Adobe Stock] configuration in [!DNL Experience Manager].
@@ -80,157 +99,218 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 >Only [!DNL Experience Manager] administrators and [!DNL Admin Console] administrators for an organization can perform the integration as it requires administrator privileges.
 -->
 
-## Stappen voor integratie [!DNL Experience Manager] en [!DNL Adobe Stock] {#integration-steps}
+## Integeren [!DNL Experience Manager] en [!DNL Adobe Stock] {#integrate-adobe-stock-with-aem-assets}
 
-Voer de volgende stappen uit in de vermelde reeks om [!DNL Experience Manager] en [!DNL Adobe Stock] te integreren:
+Als ontwikkelaar voert u de volgende stappen uit om [!DNL Adobe Experience Manager] en [!DNL Adobe Stock] te integreren.
 
-1. [Openbaar certificaat verkrijgen](#public-certificate)
+1. [Een programma instellen in  [!DNL Developer Console]](#set-up-a-program-in-developer-console)
+1. [Voeg configuratie in de  [!DNL AEM]  auteursinstantie toe](#add-configuration-in-the-aem-author-instance)
 
-   Maak in [!DNL Experience Manager] een IMS-account en genereren een openbaar certificaat (openbare sleutel).
+### Een programma instellen in [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
-1. [ creeer de dienstrekening (JWT) verbinding ](#createnewintegration)
+Voer de volgende stappen uit om een programma in te stellen in de [!DNL Developer Console] :
+1. Navigeer naar [[!DNL Adobe Developer Console] ](https://developer.adobe.com/console/14431/user/servicesandapis) en login aan uw organisatie.
+1. Selecteer **[!UICONTROL Create new project]** beschikbaar op het **[!UICONTROL Projects]** -dashboard.
+   ![ integreert a activa met de voorraad van Adobe ](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
+1. Klik op **[!UICONTROL Add to project]** en selecteer **[!UICONTROL API]** .
+1. Selecteer **[!UICONTROL Adobe Stock]** en klik op **[!UICONTROL Next]** .
+1. Geef een **[!UICONTROL Credential name]** op, controleer of **[!UICONTROL OAuth Server-to-Server]** is geselecteerd en klik op **[!UICONTROL Next]** .
+1. Selecteer **[!UICONTROL AEM Assets]** **[!UICONTROL Product profile]** en klik op **[!UICONTROL Save Configured API]** . Er wordt een succesbericht weergegeven om te bevestigen dat u een project hebt gemaakt in de [!DNL Developer Console] . Het dashboard van uw project wordt geopend en de projectnaam wordt bovenaan weergegeven, **[!UICONTROL Adobe Stock]** onder **[!UICONTROL APIS]** en **[!UICONTROL AEM Assets]** onder **[!UICONTROL Product profile]** en **[!UICONTROL OAuth Server-to-Server]** de referentiekaart onder **[!UICONTROL Connected credentials]** .
+   ![ integreert a.activa en de voorraad van de adobe ](/help/assets/assets/adc-project-name.png)
+1. Selecteer **[!UICONTROL OAuth Server-to-Server]** geloofsbrieven kaart en **[!UICONTROL Credential details]** toont. Gebruik deze [!DNL OAuth Server-to-Server] credentiedetails van uw project zoals **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]**, **[!UICONTROL Scope]**, **[!UICONTROL Credential Name]**, **[!UICONTROL Technical Account ID]**, **[!UICONTROL Organization ID]** aan [ toevoegen configuratie in de de auteursinstantie van AEM ](#add-configuration-in-the-aem-author-instance).
+   ![ aem activa en de voorraad van de adobe ](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
-   Maak in [!DNL Adobe Developer Console] een project voor uw [!DNL Adobe Stock] -organisatie. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening (JWT) tot stand te brengen. Krijg de geloofsbrieven van de de dienstrekening en JWT payload informatie.
+### Configuratie toevoegen in de ontwerpinstantie van [!DNL AEM] {#add-configuration-in-the-aem-author-instance}
 
-1. [IMS-account configureren](#create-ims-account-configuration)
+Voer de volgende stappen uit om configuratie toe te voegen in uw [!DNL AEM] auteurinstantie:
 
-   Configureer in [!DNL Experience Manager] de IMS-account met behulp van de gegevens van de serviceaccount en de JWT-payload.
+1. [Opstelling een nieuw  [!DNL Adobe Stock IMS configuration]  in uw  [!DNL AEM]  auteursinstantie](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [De Cloudinstellingen toevoegen waarmee u verbinding wilt maken  [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
-1. [Cloudservice configureren](#configure-the-cloud-service)
+#### Nieuwe [!DNL Adobe Stock IMS configuration] instellen in uw [!DNL AEM author] -instantie {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
-   Configureer in [!DNL Experience Manager] een [!DNL Adobe Stock] -cloudservice met behulp van de IMS-account.
+Voer de volgende stappen uit om een nieuwe [!DNL Adobe Stock IMS configuration] in uw [!DNL AEM] auteurinstantie in te stellen:
+1. Navigeer naar de auteurinstantie van [!DNL AEM] .
+1. Klik ![ noem activa en de voorraad van de adobe ](/help/assets/assets/Hammer.svg), selecteer **[!UICONTROL Security]** en selecteer **[!UICONTROL Adobe IMS Configurations]**.
+1. Klik op **[!UICONTROL Create]** om een nieuwe IMS-configuratie te maken. Op de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** worden meerdere velden weergegeven, zoals **[!UICONTROL Cloud Solution]** , **[!UICONTROL Title]** , **[!UICONTROL Authorization Server]** , **[!UICONTROL Client ID]** , **[!UICONTROL Client Secret]** , **[!UICONTROL Scope]** en **[!UICONTROL Org ID]** . Volg deze instructies om de details in deze gebieden te specificeren:
+   * **[!UICONTROL Cloud Solution]**: Selecteer **[!UICONTROL Adobe Stock]** .
+   * **[!UICONTROL Title]**: geef een naam op voor deze integratie.
+   * **[!UICONTROL Authorization Server]**: voeg [ https://ims-na1.adobelogin.com/ ](https://ims-na1.adobelogin.com/) als vergunningsserver toe.
+   * **[!UICONTROL Client ID]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Client ID]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
 
+   * **[!UICONTROL Client Secret]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, klik **[!UICONTROL Retrieve Client Secret]**, kopieer **[!UICONTROL client secret]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
 
-### Een IMS-configuratie maken {#create-an-ims-configuration}
+   * **[!UICONTROL Scope]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Scope]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
 
-De IMS-configuratie verifieert de [!DNL Experience Manager Assets] auteurinstantie met de [!DNL Adobe Stock] -machtiging.
+   * **[!UICONTROL Org ID]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Organization ID]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
+     ![ aem activa en de voorraad van de adobe ](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+1. Klik op **[!UICONTROL Create]** , de pagina **[!UICONTROL Adobe IMS Configurations]** wordt geopend en de integratie van [!DNL Adobe Stock] die u hebt gemaakt, wordt weergegeven.
 
-De IMS-configuratie omvat twee stappen:
+#### De cloudconfiguratie toevoegen waarmee u verbinding wilt maken [!DNL Adobe Stock] {#add-cloud-configuration-to-connect-adobe-stock}
 
-* [Openbaar certificaat verkrijgen](#public-certificate)
-* [IMS-account configureren](#create-ims-account-configuration)
+Voer de volgende stappen uit om de wolkenconfiguratie toe te voegen om met [!DNL Adobe Stock] te verbinden:
 
-### Openbaar certificaat verkrijgen {#public-certificate}
-
-Met de openbare sleutel (certificaat) wordt uw productprofiel in Adobe Developer Console geverifieerd.
-
-1. Meld u aan bij de auteurinstantie van [!DNL Experience Manager Assets] . De standaard-URL is `http://localhost:4502/aem/start.html` .
-
-1. Navigeer in het deelvenster **[!UICONTROL Tools]** naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]** .
-
-1. Klik op **[!UICONTROL Create]** op de pagina Adobe IMS Configurations. De pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** wordt geopend.
-
-1. Selecteer op het tabblad **[!UICONTROL Certificate]** **[!UICONTROL Adobe Stock]** in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** .
-
-1. U kunt een certificaat maken of een bestaand certificaat opnieuw gebruiken voor de configuratie.
-
-   Om een certificaat tot stand te brengen, selecteer het **[!UICONTROL Create new certificate]** controlevakje en specificeer een **alias** voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
-
-1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens op **[!UICONTROL OK]** om de openbare sleutel te genereren.
-
-1. Klik op het pictogram **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (.crt) op uw computer op. De openbare sleutel wordt later gebruikt om API voor uw Brand Portal huurder te vormen en de geloofsbrieven van de de dienstrekening in Adobe Developer Console te produceren.
-
-   Klik op **[!UICONTROL Next]**.
-
-   ![ produceren-certificaat ](assets/stock-integration-ims-account.png)
-
-1. In het **lusje van de Rekening**, wordt de rekening van Adobe IMS gecreeerd die de geloofsbrieven van de de dienstrekening vereist.
-
-   Open een nieuw lusje en [ creeer een de dienstrekening (JWT) verbinding in Adobe Developer Console ](#createnewintegration).
-
-### Verbinding voor serviceaccount (JWT) maken {#createnewintegration}
-
-In Adobe Developer Console worden projecten en API&#39;s geconfigureerd op organisatieniveau. Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. In dit voorbeeld worden de gegevens van de serviceaccount gegenereerd door de openbare sleutel te uploaden.
-
-Om de geloofsbrieven van de de dienstrekening en JWT lading te produceren:
-
-1. Meld u aan bij Adobe Developer Console met systeembeheerdersrechten. Het gebrek URL is [ https://www.adobe.com/go/devs_console_ui ](https://www.adobe.com/go/devs_console_ui).
-
-
-   Controleer of u de juiste IMS-organisatie (Stock Entitlement) hebt geselecteerd in de vervolgkeuzelijst (organisatie).
-
-1. Klik op **[!UICONTROL Create new project]**. Er wordt een leeg project met een door het systeem gegenereerde naam gemaakt voor uw organisatie.
-
-   Klik op **[!UICONTROL Edit project]**. Werk **[!UICONTROL Project Title]** en **[!UICONTROL Description]** bij en klik vervolgens op **[!UICONTROL Save]** .
-
-1. Klik op het tabblad **[!UICONTROL Project overview]** op **[!UICONTROL Add API]** .
-
-1. Selecteer **[!UICONTROL Adobe Stock]** in de **[!UICONTROL Add an API window]** . Klik op **[!UICONTROL Next]**.
-
-1. Selecteer **[!UICONTROL Service Account (JWT)]** -verificatie in het **[!UICONTROL Configure API]** -venster. Klik op **[!UICONTROL Next]**.
-
-   ![ creeer-jwt-geloofsbrieven ](assets/aem-stock-jwt.png)
-
-1. Klik op **[!UICONTROL Upload your public key]**. Klik **[!UICONTROL Select a File]** en upload de openbare sleutel (.crt dossier) die u in [ hebt gedownload verkrijgen openbare certificaat ](#public-certificate) sectie. Klik op **[!UICONTROL Next]**.
-
-1. Controleer de openbare sleutel en klik op **[!UICONTROL Next]** .
-
-1. Selecteer het standaardproductprofiel van **[!UICONTROL Adobe Stock]** en klik op **[!UICONTROL Save configured API]** .
-
-1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Klik in de linkernavigatie onder **[!UICONTROL Credentials]** op de optie **[!UICONTROL Service Account (JWT)]** . Hier, kunt u de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, en terugwinnen cliëntgeheim.
-
-1. Kopieer de **[!UICONTROL client ID]** vanaf de tab **[!UICONTROL Client Credentials]** .
-
-   Klik op **[!UICONTROL Retrieve Client Secret]** en kopieer de **[!UICONTROL client secret]** .
-
-   ![ produceren-jwt-geloofsbrieven ](assets/aem-stock-jwt-credential.png)
-
-1. Navigeer naar het tabblad **[!UICONTROL Generate JWT]** en kopieer de **[!UICONTROL JWT Payload]** -gegevens.
-
-U kunt cliëntidentiteitskaart (API sleutel), cliëntgeheim, en JWT nuttige lading nu gebruiken om [ de rekening IMS ](#create-ims-account-configuration) in [!DNL Experience Manager Assets] te vormen.
-
-### IMS-account configureren {#create-ims-account-configuration}
-
-U moet het [ certificaat ](#public-certificate) hebben en [ de dienstrekening (JWT) geloofsbrieven ](#createnewintegration) om de rekening te vormen IMS.
-
-De IMS-account configureren:
-
-1. Open de IMS-configuratie en ga naar het tabblad **[!UICONTROL Account]** . U hield de pagina open terwijl [ het openbare certificaat ](#public-certificate) verkrijgen.
-
-1. Geef een **[!UICONTROL Title]** op voor het IMS-account.
-
-   Op het **[!UICONTROL Authorization Server]** gebied, ga URL in: [ https://ims-na1.adobelogin.com/ ](https://ims-na1.adobelogin.com/).
-
-   Ga cliëntidentiteitskaart op het **[!UICONTROL API key]** gebied, **[!UICONTROL Client Secret]**, en **[!UICONTROL Payload]** (JWT nuttige lading) in die u terwijl [ het creëren van de de dienstrekening (JWT) verbinding ](#createnewintegration) hebt gekopieerd.
-
-1. Klik op **[!UICONTROL Create]**. Er wordt een IMS-accountconfiguratie gemaakt.
-
-   ![ vorm-ims-rekening ](assets/aem-stock-ims-config.png)
-
-1. Selecteer de IMS-accountconfiguratie en klik op **[!UICONTROL Check Health]** .
-
-   Klik op **[!UICONTROL Check]** in het dialoogvenster. Voor succesvolle configuratie, lijkt een bericht dat het *Symbolische met succes* wordt teruggewonnen.
-
-   ![ gezondheid-controle ](assets/aem-stock-healthcheck.png)
-
-
-### Cloudservice configureren {#configure-the-cloud-service}
-
-U kunt als volgt de cloudservice van [!DNL Adobe Stock] configureren:
-
-1. Navigeer in de gebruikersinterface van [!DNL Experience Manager] naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]** .
-
-1. Klik op **[!UICONTROL Create]** op de pagina [!DNL Adobe Stock Configurations] .
-
-1. Geef een **[!UICONTROL Title]** voor de cloudconfiguratie op.
-
-   Selecteer de configuratie IMS die u terwijl [ het vormen van de rekening IMS ](#create-ims-account-configuration) hebt gecreeerd.
-
-   Selecteer de landinstelling in de vervolgkeuzelijst.
-
-   ![ aem-stock-cloud-config ](assets/aem-stock-cloud-config.png)
-
+1. Navigeer naar de instantie [!DNL AEM author] .
+1. Klik ![ noem activa en de voorraad van de adobe ](/help/assets/assets/Hammer.svg), selecteer **[!UICONTROL Cloud Services]**, doorblader en selecteer **[!UICONTROL Adobe Stock]**.
+   ![ gebruikend adobe stock met aem ](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
+1. Klik op **[!UICONTROL Create]** en op de pagina **[!UICONTROL Adobe Stock Configuration]** worden meerdere velden weergegeven. Volg deze instructies om de details in deze gebieden te specificeren:
+   * **[!UICONTROL Title]**: Navigeer aan de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina (zie [ stap 3 ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)), kopieer de titel en kleef het hier.
+   * **[!UICONTROL Associated Adobe IMS Configuration]**: selecteer de [!DNL Adobe Stock] -integratie die u hebt gemaakt.
+   * **[!UICONTROL Locale]**: Selecteer **[!UICONTROL English (United States)]** .
 1. Klik op **[!UICONTROL Save & Close]**.
+   ![ gebruikend adobe stock met aem ](/help/assets/assets/adobe-stock-config-page.png)
+<!-- old content
+## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
 
-   De auteur-instantie [!DNL Experience Manager Assets] is nu geïntegreerd met [!DNL Adobe Stock] . U kunt meerdere [!DNL Adobe Stock] -configuraties maken (bijvoorbeeld configuraties op basis van landinstellingen). U kunt de elementen van [!DNL Adobe Stock] nu openen, zoeken en licentiëren vanuit de gebruikersinterface van [!DNL Experience Manager] .
+To integrate [!DNL Experience Manager] and [!DNL Adobe Stock], perform the following steps in the listed sequence: 
 
-   ![ onderzoek-voorraad-activa ](assets/aem-stock-searchstocks.png)
+1. [Obtain public certificate](#public-certificate)
+   
+   In [!DNL Experience Manager], create an IMS account and generate a public certificate (public key).
 
-   >[!NOTE]
-   >
-   >In deze fase van integratie hebben alleen beheerders toegang tot de [!DNL Adobe Stock] -elementen, kunnen ze de Stock-elementen doorzoeken (met behulp van het besturingssysteem) en een licentie voor de [!DNL Adobe Stock] -elementen verkrijgen.
-   >
-   >Beheerders kunnen gebruikers of groepen verder toevoegen aan de [!DNL Adobe Stock] cloud-service en deze gebruikers die geen beheerder zijn in [!DNL Experience Manager] machtigingen geven om toegang te krijgen tot de Stock-configuratie.
+1. [Create service account (JWT) connection](#createnewintegration) 
+   
+   In [!DNL Adobe Developer Console], create a project for your [!DNL Adobe Stock] organization. Under the project, configure an API using the public key to create a service account (JWT) connection. Get the service account credentials and JWT payload information.
+
+1. [Configure IMS account](#create-ims-account-configuration)
+
+   In [!DNL Experience Manager], configure the IMS account using the service account credentials and JWT payload.
+
+1. [Configure cloud service](#configure-the-cloud-service)
+
+   In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
+
+
+### Create an IMS configuration {#create-an-ims-configuration}
+
+The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
+
+IMS configuration includes two steps:
+
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
+
+### Obtain public certificate {#public-certificate}
+
+The public key (certificate) authenticates your product profile in Adobe Developer Console.
+
+1. Log in to your [!DNL Experience Manager Assets] author instance. The default URL is `http://localhost:4502/aem/start.html`.
+
+1. From the **[!UICONTROL Tools]** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. The **[!UICONTROL Adobe IMS Technical Account Configuration]** page opens. 
+
+1. In the **[!UICONTROL Certificate]** tab, select **[!UICONTROL Adobe Stock]** from the **[!UICONTROL Cloud Solution]** dropdown list.  
+
+1. You can create a certificate or reuse an existing certificate for the configuration. 
+
+   To create a certificate, select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
+
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
+
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine. The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.
+
+   Click **[!UICONTROL Next]**.
+
+   ![generate-certificate](assets/stock-integration-ims-account.png)
+
+1. In the **Account** tab, Adobe IMS account is created which requires the service account credentials.
+
+   Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration). 
+
+### Create service account (JWT) connection {#createnewintegration}
+
+In Adobe Developer Console, projects and APIs are configured at organization level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. In this example, the service account credentials are generated by uploading the public key.
+
+To generate the service account credentials and JWT payload:
+
+1. Log in to Adobe Developer Console with system administrator privileges. The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+
+
+   Ensure that you have selected the correct IMS organization (Stock entitlement) from the dropdown (organization) list.
+
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
+
+   Click **[!UICONTROL Edit project]**. Update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and then click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
+
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL Adobe Stock]**. Click **[!UICONTROL Next]**. 
+
+1. In the **[!UICONTROL Configure API]** window, select **[!UICONTROL Service Account (JWT)]** authentication. Click **[!UICONTROL Next]**.
+
+   ![create-jwt-credentials](assets/aem-stock-jwt.png)
+
+1. Click **[!UICONTROL Upload your public key]**. Click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. Click **[!UICONTROL Next]**.
+
+1. Verify the public key and click **[!UICONTROL Next]**.
+
+1. Select the default **[!UICONTROL Adobe Stock]** product profile and click **[!UICONTROL Save configured API]**. 
+
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option. Here, you can view the credentials and perform actions such as generate JWT tokens, copy credential details, and retrieve client secret.
+
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
+
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![generate-jwt-credentials](assets/aem-stock-jwt-credential.png)
+
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
+
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in [!DNL Experience Manager Assets].
+
+### Configure IMS account {#create-ims-account-configuration}
+
+You must have the [certificate](#public-certificate) and [service account (JWT) credentials](#createnewintegration) to configure the IMS account.
+
+To configure the IMS account: 
+
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. You kept the page open while [obtaining the public certificate](#public-certificate).
+
+1. Specify a **[!UICONTROL Title]** for the IMS account.
+
+   In the **[!UICONTROL Authorization Server]** field, enter the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).  
+
+   Enter the client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
+
+1. Click **[!UICONTROL Create]**. An IMS account configuration is created. 
+
+   ![configure-ims-acount](assets/aem-stock-ims-config.png)
+   
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
+
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
+
+   ![health-check](assets/aem-stock-healthcheck.png)
+
+
+### Configure cloud service {#configure-the-cloud-service}
+
+To configure the [!DNL Adobe Stock] cloud service:
+
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+
+1. In the [!DNL Adobe Stock Configurations] page, click **[!UICONTROL Create]**.
+
+1. Specify a **[!UICONTROL Title]** for the cloud configuration. 
+
+   Select the IMS configuration that you have created while [configuring the IMS account](#create-ims-account-configuration).
+
+   Select your locale from the dropdown list.
+
+   ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
+
+1. Click **[!UICONTROL Save & Close]**. 
+ -->
+De auteur-instantie [!DNL Experience Manager Assets] is nu geïntegreerd met [!DNL Adobe Stock] . U kunt meerdere [!DNL Adobe Stock] -configuraties maken (bijvoorbeeld configuraties op basis van landinstellingen). U kunt de elementen van [!DNL Adobe Stock] nu openen, zoeken en licentiëren vanuit de gebruikersinterface van [!DNL Experience Manager] .
+
+![ onderzoek-voorraad-activa ](assets/aem-stock-searchstocks.png)
+
+>[!NOTE]
+>
+>In deze fase van integratie hebben alleen beheerders toegang tot de [!DNL Adobe Stock] -elementen, kunnen ze de Stock-elementen doorzoeken (met behulp van het besturingssysteem) en een licentie voor de [!DNL Adobe Stock] -elementen verkrijgen.
+>
+>Beheerders kunnen gebruikers of groepen verder toevoegen aan de [!DNL Adobe Stock] cloud-service en deze gebruikers die geen beheerder zijn in [!DNL Experience Manager] machtigingen geven om toegang te krijgen tot de Stock-configuratie.
 
 1. Als u gebruikers of groepen wilt toevoegen, selecteert u de [!DNL Adobe Stock] wolkenconfiguratie en klikt u op **[!UICONTROL Properties]** .
 
@@ -273,7 +353,7 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
 
 **om toegang tot een gebruiker van [!DNL User Admin Console] te verlenen:**
 
-1. Open de Admin Console Gebruiker van [!DNL Experience Manager] . De standaard-URL is `http://localhost:4502/userdamin` .
+1. Open de [!DNL Experience Manager] User Admin Console. De standaard-URL is `http://localhost:4502/userdamin` .
 
 1. Zoek in het linkerdeelvenster naar de gebruiker door de waarde `user_id` of `name` in te voeren. Dubbelklik om de gebruikerseigenschappen te openen.
 
@@ -290,7 +370,6 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
    ![ toewijzen-gebruiker-in-gebruiker-admin ](assets/aem-stock-user-admin-console.png)
 
 1. Voeg de gebruiker of de groep toe aan de cloudconfiguratie van [!DNL Adobe Stock] .
-
 
 ## Adobe Stock-middelen openen {#access-stock-assets}
 
@@ -374,13 +453,13 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 ## Bekende beperkingen {#known-limitations}
 
-* **Kwesties in integratie met [!DNL Experience Manager] Service Pack 6.5.7.0 en hierboven**: Een onverwachte kwestie wordt geïdentificeerd tijdens integratie met [!DNL Experience Manager] 6.5.7.0 en hierboven. Het probleem wordt momenteel getest en zal naar verwachting beschikbaar zijn in [!DNL Experience Manager] 6.5.11.0. Neem contact op met [!DNL Customer Support] voor een directe hotfix.
+* **Kwesties in integratie met [!DNL Experience Manager] Service Pack 6.5.7.0 en hierboven**: Een onverwachte kwestie wordt geïdentificeerd tijdens integratie met [!DNL Experience Manager] 6.5.7.0 en hierboven. Het probleem wordt momenteel getest en is naar verwachting beschikbaar in [!DNL Experience Manager] 6.5.11.0 . Neem contact op met [!DNL Customer Support] voor een directe hotfix.
 
 * **Functionaliteit om gebruikers van vergunning te beperken werkt niet behoorlijk**: Alle gebruikers die `read` toestemmingen aan de voorraadconfiguratie hebben worden toegestaan om de [!DNL Adobe Stock] activa te zoeken en vergunning te geven.
 
 * **niet-admin gebruikers moeten manueel de [!DNL Adobe Stock] wolkenconfiguratie** activeren: in het **[!UICONTROL User Preferences]** venster, toont **[!UICONTROL Stock Configuration]** de [!DNL Adobe Stock] wolkenconfiguratie zoals toegelaten maar het werkt niet voor een niet-admin gebruiker. De gebruiker moet op de knop **[!UICONTROL Accept]** klikken om de voorraadconfiguratie te activeren. Als deze stap ontbreekt, geeft het systeem een foutbericht weer over de toegang tot **[!UICONTROL Assets]** .
 
-* **de redactionele beeldwaarschuwing wordt niet getoond**: Wanneer het verlenen van een vergunning van een beeld, kunnen de gebruikers niet controleren of een beeld Uitgeeflente slechts van het Gebruik is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele activa van de Admin Console uitzetten.
+* **de redactionele beeldwaarschuwing wordt niet getoond**: Wanneer het verlenen van een vergunning van een beeld, kunnen de gebruikers niet controleren of een beeld Uitgeeflente slechts van het Gebruik is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele middelen van de Admin Console uitschakelen.
 
 * **Verkeerd licentietype wordt getoond**: Het is mogelijk dat een onjuist licentietype in [!DNL Experience Manager] voor een element wordt getoond. Gebruikers kunnen zich aanmelden bij de [!DNL Adobe Stock] -website om het type licentie te zien.
 

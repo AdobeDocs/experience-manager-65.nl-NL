@@ -9,9 +9,9 @@ exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Beheerders moeten veelvoorkomende taken in elk systeem vaak automatiseren of vereenvoudigen. In AEM bijvoorbeeld, zijn het leiden van gebruikers, het installeren van pakketten, en het beheren van bundels OSGi taken die algemeen moeten worden gedaan.
 
-Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden uitgevoerd met een URL-aanroep. cURL kan worden gebruikt om dergelijke URL vraag uit te voeren en kan een nuttig hulpmiddel voor AEM beheerders zijn.
+Wegens de RESTful aard van het Sling kader waarop AEM wordt gebouwd, kunnen de meeste taken met een vraag worden gedaan URL. cURL kan worden gebruikt om dergelijke URL vraag uit te voeren en kan een nuttig hulpmiddel voor beheerders van AEM zijn.
 
 ## Wat is cURL {#what-is-curl}
 
@@ -28,11 +28,11 @@ cURL is een opensource opdrachtregelprogramma voor het uitvoeren van URL-bewerki
 
 cURL is een gevestigde en wijdverspreide hulpmiddel om gegevens te krijgen of te verzenden gebruikend de syntaxis URL en oorspronkelijk vrijgegeven in 1997. De naam cURL betekende oorspronkelijk &quot;zie URL.&quot;
 
-Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep, die kan worden uitgevoerd met cURL. [ de manipulatietaken van de Inhoud ](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) zoals het activeren van pagina&#39;s, en het beginnen werkschema&#39;s en [ operationele taken ](/help/sites-administering/curl.md#common-operational-aem-curl-commands) zoals pakketbeheer en het beheren van gebruikers kunnen worden geautomatiseerd gebruikend cURL. Bovendien kunt u [ uw eigen cURL ](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) bevelen voor de meeste taken in AEM tot stand brengen.
+Wegens het RESTful karakter van het Sling kader waarop AEM wordt gebouwd, kunnen de meeste taken tot een vraag worden beperkt URL, die met cURL kan worden uitgevoerd. [ de manipulatietaken van de Inhoud ](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) zoals het activeren van pagina&#39;s, en het beginnen werkschema&#39;s en [ operationele taken ](/help/sites-administering/curl.md#common-operational-aem-curl-commands) zoals pakketbeheer en het beheren van gebruikers kunnen worden geautomatiseerd gebruikend cURL. Bovendien kunt u [ uw eigen cURL ](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) bevelen voor de meeste taken in AEM tot stand brengen.
 
 >[!NOTE]
 >
->Elke AEM die via cURL wordt uitgevoerd, moet net als elke gebruiker worden geautoriseerd om te AEM. Alle ACLs en toegangsrechten worden gerespecteerd wanneer het gebruiken van cURL om een AEM bevel uit te voeren.
+>Elke AEM-opdracht die via cURL wordt uitgevoerd, moet op dezelfde manier worden geautoriseerd als elke gebruiker aan AEM. Alle ACLs en toegangsrechten worden gerespecteerd wanneer het gebruiken van cURL om een bevel van AEM uit te voeren.
 
 ## cURL downloaden {#downloading-curl}
 
@@ -40,11 +40,11 @@ cURL is een standaardonderdeel van macOS en sommige Linux-distros. Deze is echte
 
 cURL&#39;s bronbewaarplaats kan ook op GitHub worden gevonden.
 
-## Een URL-klaar AEM-opdracht maken {#building-a-curl-ready-aem-command}
+## Een AEM-opdracht maken die geschikt is voor cURL {#building-a-curl-ready-aem-command}
 
 cURL-opdrachten kunnen worden samengesteld voor de meeste bewerkingen in AEM, zoals workflows activeren, OSGi-configuraties controleren, JMX-opdrachten activeren, replicatieagents maken en nog veel meer.
 
-Om het nauwkeurige bevel te vinden u voor uw bepaalde verrichting nodig hebt, moet u de ontwikkelaarshulpmiddelen in uw browser gebruiken om de vraag van de POST aan de server te vangen wanneer u het AEM bevel uitvoert.
+Als u de exacte opdracht wilt vinden die u voor een bepaalde bewerking nodig hebt, moet u de ontwikkelaarsgereedschappen in uw browser gebruiken om de POST-aanroep naar de server vast te leggen wanneer u de AEM-opdracht uitvoert.
 
 In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld een nieuwe pagina in de Chrome-browser te maken.
 
@@ -57,7 +57,7 @@ In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld e
    ![ chlimage_1-67 ](assets/chlimage_1-67a.png)
 
 1. Klik **creëren** in **creëren de tovenaar van de Pagina** om het werkschema eigenlijk tot stand te brengen.
-1. Klik de resulterende actie van de POST met de rechtermuisknop aan en selecteer **Exemplaar** > **Exemplaar als cURL**.
+1. Klik de resulterende POST actie met de rechtermuisknop aan en selecteer **Exemplaar** > **Exemplaar als cURL**.
 
    ![ chlimage_1-68 ](assets/chlimage_1-68a.png)
 
@@ -69,13 +69,13 @@ In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld e
 
    ![ chlimage_1-70 ](assets/chlimage_1-70a.png)
 
-## Gemeenschappelijke operationele AEM cURL-opdrachten {#common-operational-aem-curl-commands}
+## Algemene AEM cURL-opdrachten {#common-operational-aem-curl-commands}
 
 Hier volgt een lijst met AEM cURL-opdrachten voor algemene beheertaken en operationele taken.
 
 >[!NOTE]
 >
->In de volgende voorbeelden wordt ervan uitgegaan dat AEM op `localhost` on port `4502` wordt uitgevoerd en de gebruiker `admin` met wachtwoord `admin` wordt gebruikt. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
+>In de volgende voorbeelden wordt ervan uitgegaan dat AEM wordt uitgevoerd op `localhost` on port `4502` en dat de gebruiker `admin` met wachtwoord `admin` wordt gebruikt. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
 
 ### Pakketbeheer {#package-management}
 
@@ -316,13 +316,13 @@ Zie [ Opting in Adobe Analytics en Adobe Target ](/help/sites-administering/opt-
 
 Zie [ Enig Teken ](/help/sites-deploying/single-sign-on.md) voor details.
 
-## Algemene AEM-URL-opdrachten voor bewerken van inhoud {#common-content-manipulation-aem-curl-commands}
+## Algemene AEM cURL-opdrachten voor Manipulatie van inhoud {#common-content-manipulation-aem-curl-commands}
 
 Hier volgt een lijst met AEM cURL-opdrachten voor het manipuleren van inhoud.
 
 >[!NOTE]
 >
->In de volgende voorbeelden wordt ervan uitgegaan dat AEM op `localhost` on port `4502` wordt uitgevoerd en de gebruiker `admin` met wachtwoord `admin` wordt gebruikt. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
+>In de volgende voorbeelden wordt ervan uitgegaan dat AEM wordt uitgevoerd op `localhost` on port `4502` en dat de gebruiker `admin` met wachtwoord `admin` wordt gebruikt. Extra plaatsaanduidingen voor opdrachten worden ingesteld tussen punthaken.
 
 ### Paginabeheer {#page-management}
 
@@ -361,6 +361,30 @@ curl -u <user>:<password> -X POST -F cmd="unlockPage" -F path="/content/path/to/
 ```shell
 curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
 ```
+
+### Een oppervlakkige uitrol uitvoeren {#shallow-rollout}
+
+Als u AEM as a Cloud Service gebruikt, kan het gebeuren dat u één specifieke pagina moet implementeren zonder de subpagina&#39;s ervan te verspreiden. Als deze optie niet correct is geconfigureerd, bevat de standaardopdracht voor het uitrollen van pagina&#39;s mogelijk per ongeluk subpagina&#39;s. In deze sectie wordt beschreven hoe u de opdracht Krullen aanpast om een ondiepe rollout van een opgegeven pagina te maken en extra subpagina&#39;s uit te sluiten.
+
+Voer de volgende stappen uit om een oppervlakkige rollout uit te voeren:
+
+1. Wijzig de bestaande curl-opdracht door de parameter van `type=deep` in `type=page` te wijzigen.
+1. Gebruik de volgende syntaxis voor de krullopdracht:
+
+```shell
+curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand" \
+   -d type=page \
+   -d operation=asyncRollout \
+   -d cmd=rollout \
+   -d path="/content/<your-path>"
+```
+
+Controleer ook het volgende:
+
+1. Vervang `<token>` door uw huidige verificatietoken en `<instance-url>` door uw specifieke instantie-URL.
+1. Vervang `/content/<your-path>` door het pad van de specifieke pagina die u wilt uitrollen.
+
+Door `type=page` in te stellen, richt de opdracht zich alleen op de opgegeven pagina, met uitzondering van subpagina&#39;s. Als dusdanig, laat deze configuratie nauwkeurige controle over inhoudsplaatsing toe, die ervoor zorgt dat slechts de voorgenomen veranderingen over milieu&#39;s worden verspreid. Bovendien wordt deze aanpassing ook afgestemd op de manier waarop rollouts worden beheerd via de AEM GUI bij het selecteren van afzonderlijke pagina&#39;s.
 
 ### Workflows {#workflows}
 

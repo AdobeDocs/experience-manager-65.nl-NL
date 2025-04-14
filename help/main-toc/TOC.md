@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5
-source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
+source-git-commit: 47dc4ffa98d680970b72d488067c834123ea722b
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7487'
 ht-degree: 1%
 
 ---
@@ -1212,6 +1212,7 @@ ht-degree: 1%
       + [AEM SDK op de juiste manier opnieuw opstarten](/help/forms/using/restart-aem-sdk.md)
       + [De service Documentdigitalisering kan geen OCR&#39;s uitvoeren op PDF&#39;s](/help/forms/using/papercapture-service-resolution.md)
       + [Risico&#39;s van het voorjaarskader voor AEM Forms op JEE verminderen](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
+      + [Logboek4j2-kwetsbaarheden voor Experience Manager Forms verminderen](/help/forms/using/aem-forms-vulnerability-cve.md)
    + Oudere documentatie {#legacy-documentation}
       + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](/help/forms/developing/building-xml.md)
       + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)

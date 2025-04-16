@@ -1,14 +1,14 @@
 ---
-title: Nota's van de versie voor  [!DNL Adobe Experience Manager]  6.5
+title: Release-opmerkingen voor [!DNL Adobe Experience Manager] 6.5
 description: Vind versieinformatie, wat nieuw is, installeer hoe te, en een gedetailleerde veranderingslijst voor  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
+source-git-commit: 461ec6a48bc41d46338c2c0162869525e49de97f
 workflow-type: tm+mt
-source-wordcount: '6150'
+source-wordcount: '6127'
 ht-degree: 0%
 
 ---
@@ -95,18 +95,18 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
    * Starten
    * Taalkopie
    * Map
-   * CSV-verslag (SITES-2874)
+   * CSV-rapport (SITES-2874)
 
-* Voor AEM Core Web Content Management is een toegankelijkheidslabel voor hyperlinks in de Rich Text Editor vereist. Wanneer een hyperlink wordt gebruikt in de tekstcomponent, moet de ankertag het kenmerk `aria-label` bevatten om ervoor te zorgen dat schermlezers de koppelingstekst correct kunnen lezen en overbrengen voor toegankelijkheidsdoeleinden. (SITES-11511)
+* Voor AEM Core Web Content Management is een toegankelijkheidslabel voor hyperlinks in de RTF-editor vereist. Wanneer een hyperlink wordt gebruikt in de tekstcomponent, moet de ankertag het `aria-label` kenmerk bevatten om ervoor te zorgen dat schermlezers de linktekst nauwkeurig kunnen lezen en overbrengen voor toegankelijkheidsdoeleinden. (SITES-11511)
 * In AEM hebben interactieve elementen in de tabelkop in de lijstweergave niet de vereiste rol &#39;knop&#39;. Als dusdanig, kondigt het het schermlezer NVDA niet de verwachte knooprollen voor de volgende lijstkopballen aan: Titel, Naam, Gewijzigd, Gepubliceerd, Voorproef, Malplaatje, Verrichting, Werkschema. Aan elk interactief element in de tabelkoptekst moet een knoprol worden toegewezen om ervoor te zorgen dat het compatibel is met ondersteunende hulpmiddelen, zoals NVDA. (SITES-10962)
 
 
-#### Gebruikersinterface Admin{#sites-adminui-6522}
+#### Gebruikersinterface voor beheerders{#sites-adminui-6522}
 
-* In sommige gevallen van AEM werkten de versievoorvertoning en vergelijkingsfuncties niet zoals verwacht op verschillende pagina&#39;s. Specifiek:
+* In sommige gevallen van AEM werkten de versievoorbeeld- en vergelijkingsfunctionaliteiten niet zoals verwacht op meerdere pagina&#39;s. Specifiek:
 
-   * **Uitgave van de Voorproef:** wanneer het proberen om een paginaversie voor te vertonen, verschijnt een fout aanvankelijk. Na het opnieuw proberen, resulteert de voorproef in een lege pagina.
-   * **Uitgave van de Vergelijking van de Versie:** &quot;vergelijk met Huidige&quot;eigenschap slechts de huidige versie, zonder enige verschillen tussen versies te benadrukken. (SITES-23988)
+   * **Probleem met voorbeeld:** wanneer u een voorbeeld van een paginaversie probeert te bekijken, verschijnt er in eerste instantie een fout. Na een nieuwe poging resulteert het voorbeeld in een lege pagina.
+   * **Probleem met versievergelijking:** De functie &quot;Vergelijken met huidig&quot; gaf alleen de huidige versie weer, zonder eventuele verschillen tussen versies te markeren. (SITES-23988)
 
 * Er verschijnt een onverwachte `<br>` -tag in het veld Rich Text Editor (RTE) wanneer u de `defaultPasteMode` set to `plaintext` gebruikt tijdens een kopieer- en plakactie. Dit resulteert in verschillende opmaakcodes voor dezelfde inhoud, wat ertoe leidt dat dezelfde tekstinhoud tweemaal wordt vertaald in het vertaalgeheugen van een klant. (SITES-23606)
 * In AEM 6.5.20.0, werd een functionaliteit kwestie ontmoet met **leidt de eigenschap van de Publicatie**. Wanneer het selecteren van een knoop en het plannen van het voor toekomstige publicatie, een foutenmelding - &quot;Kon de kindmiddelen voor geselecteerde punten niet terugwinnen&quot; - zou kunnen verschijnen wanneer het proberen om kindknopen te omvatten. Deze kwestie blokkeerde het gebruik van **omvat Kinderen** optie, verhinderend volledige publicatie van de voorgenomen inhoudshiërarchie. (SITES-23000)
@@ -185,17 +185,17 @@ Wanneer het toevoegen van de activa van het Fragment van de Ervaring die het eti
 LinkCheckerTask slaagt er niet in voor authentiek te verklaren omdat de cliënt van HTTP NTLM vóór Basisauthentificatie probeert, veroorzakend de volmacht om gebruikers na veelvoudige ontbroken pogingen te blokkeren. Het systeem zou BasisAuthentificatie in plaats daarvan moeten gebruiken om tegen de volmacht voor authentiek te verklaren, toestaand de diensten LinkCheckerTask om correct te functioneren. (SITES-25034)
 
 
-#### MSM - Actieve kopieën{#sites-msm-live-copies-6522}
+#### MSM - Live kopieën{#sites-msm-live-copies-6522}
 
-* Wanneer SEO Robots-tags worden toegepast op de primaire kopie en worden uitgevouwen naar Live Copy-pagina&#39;s, worden de waarden op de juiste wijze weergegeven in `crx/de` . De waarden worden echter niet weerspiegeld in de gebruikersinterface onder Pagina-eigenschappen van de Live Copy-pagina&#39;s. (SITES-23475)
+* Wanneer SEO Robots-tags worden toegepast op de primaire kopie en worden uitgerold naar Live Copy-pagina&#39;s, werden de waarden correct weergegeven in `crx/de`. De waarden werden echter niet weerspiegeld in de gebruikersinterface onder de pagina-eigenschappen van de Live Copy-pagina&#39;s. (SITES-23475)
 * Er werden fouten met betrekking tot Starten weergegeven toen werd geprobeerd een Starten te promoten via de gebruikersinterface. De wizard Opstarten bevorderen is leeg gebleven, waardoor het promotieproces niet kan worden voltooid. (SITES-19718)
 * Er zijn problemen opgetreden met Experience Fragments in AEM na pogingen om Actieve kopieën te maken en rollouts uit te voeren. Het probleem trad op wanneer gebruikers een `NotFound` -fout tegenkwamen tijdens een poging vanuit het scherm Rollout terug te navigeren naar het scherm Experience Fragments management. (SITES-21933)
 
 
 #### Pagina-editor{#sites-pageeditor-6522}
 
-* Met de knop Ongedaan maken hebt u de positie van de component gewijzigd en de tekst gewijzigd in de laatste versie. (SITES-17465)
-* Wanneer een gekopieerde containercomponent werd geplakt, werd deze twee keer visueel weergegeven, wat drie exemplaren op de pagina tot gevolg had. Na het vernieuwen van de pagina is het duplicaat echter verdwenen, wat erop wijst dat het probleem waarschijnlijk tijdelijk visueel schittert. (SITES-21890)
+* De knop Ongedaan maken veranderde de positie van de component en veranderde de tekst naar de laatste versie. (SITES-17465)
+* Wanneer een gekopieerd containeronderdeel werd geplakt, werd het twee keer visueel weergegeven, wat resulteerde in drie exemplaren op de pagina. Na het vernieuwen van de pagina verdween het duplicaat echter, wat suggereert dat het probleem waarschijnlijk een tijdelijke visuele storing was. (SITES-21890)
 * Tijdens het navigeren door het linkerdeelvenster Componenten met de Tab-toets of de toetscombinatie Shift+Tab, waren meerdere tekstelementen niet duidelijk zichtbaar, zowel visueel als in de tabmodus. Dit probleem betrof de toegankelijkheid, waardoor het moeilijk werd om deze componenten tijdens toetsenbordnavigatie te identificeren of ermee te communiceren. (SITES-2266)
 
 #### Replicatie{#sites-replication-6522}
@@ -209,7 +209,7 @@ In AEM 6.5.18 en 6.5.19 zijn bij het deactiveren van een bovenliggende pagina me
 * Problemen met de publicatiestatus van het element wanneer u elementen verplaatst van de ene locatie naar de andere in Experience Manager. (ASSETS-41158)
 * Als u elementen uploadt via de API, verschijnt er een `unclosed resource resolver` foutbericht. (ASSETS-41049)
 * Issues with `AssetReferenceResolverImpl` reference query after upgrade to Adobe Experience Manager, Service Pack 21. (ASSETS-40384)
-* In AEM versie 6.5.19 wordt een optie uit de resultaten van het deelvenster Zoeken verwijderd, maar worden ook alle andere beschikbare selectievakjes uitgeschakeld. (ASSETS-37335)
+* In AEM versie 6.5.19 wordt een optie uit de resultaten van het deelvenster Zoeken verwijderd, maar worden ook alle andere beschikbare selectievakjes uitgeschakeld. (ACTIVA-37335)
 * De waarden van de spronk worden getoond in de output van Excel terwijl het uitvoeren van de bulkmeta-gegevensuitvoer. (ASSETS-37260)
 * Wanneer u in AEM versie 6.5.19 een SVG-bestand in UTF-8-indeling uploadt, wordt de uitvoer vaag. (ASSETS-36616)
 * De optie `Fetch original rendition for Dynamic Media Connected Assets` ontbreekt in de Connected Assets-configuratie. (ASSETS-41726)
@@ -246,17 +246,17 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * Wanneer een gebruiker van AEM Forms Service Pack 15 (6.5.15.0) aan Service Pack 19 (6.5.19.0) bijwerkt, komt een kwestie voor. Een aangepast weergavepatroon dat is ingesteld als `num{$zzz,zz9.99}` wordt niet correct weergegeven in de voorvertoning en in de gebruikersinterface van de Agent. (FORMS-14694)
 * Wanneer een gebruiker een brief in een Interactieve Communicatie met opgeslagen gegeven XML voorvertolkt, wordt de brief geplakt in de &quot;Lading&quot;staat op de UI van AEM. Een nieuwe voorvertoning van de letter met dezelfde XML werkt prima. (FORMS-14521)
 * In AEM Forms Service Pack 20 (6.5.20.0) melden gebruikers die e-mailberichten met bijlagen verzenden met de knop &#39;E-mail verzenden&#39; in adaptieve formulieren een probleem. De naam van de bijlage wordt weergegeven op de volgende regel in plaats van op inline. (FORMS-14426)
-* Wanneer een gebruiker een PDF genereert in AEM Forms met lijsten met opsommingstekens die zijn ingesteld op de standaardstijl &quot;Schijf&quot;, mislukt de PDF voor toegankelijkheidscontrole in Adobe Acrobat. De lijst met de stijlen Opsommingsteken en Vierkant geeft de Toegankelijkheidscontrole door. (FORMS-13802, LC-3922179)
-* Wanneer een gebruiker van AEMForms-6.5.0-0065 aan AEMForms-6.5.0-0087 op Standalone opstelling RHEL8 JBoss® upgradet, ontbreekt het om met de LiveCycle de dienstcontainer te verbinden. (FORMS-15907) *
+* Wanneer een gebruiker een PDF genereert in AEM Forms met lijsten met opsommingstekens die zijn ingesteld op de standaardstijl &quot;Schijf&quot;, mislukt de PDF voor toegankelijkheidscontrole in Adobe Acrobat. De lijst met de stijlen Opsommingsteken en Vierkant geeft de Toegankelijkheidscontrole door. (FORMULIEREN-13802, LC-3922179)
+* Wanneer een gebruiker een upgrade uitvoert van AEMForms-6.5.0-0065 naar AEMForms-6.5.0-0087 op Standalone RHEL8 JBoss-installatie®, kan deze geen verbinding maken met de LiveCycle-servicecontainer. (FORMULIEREN-15907) *
 * In AEM Forms op JEE, in AEM Workspace, geeft het selecteren van een eerder verzonden formulier om een nieuw formulierproces te starten een probleem. Forms met vooraf ingevulde gegevens overschrijft alle eerder verzonden gegevens en verwijdert handmatig ingevulde velden. (FORMS-15376)
 * Op AEM Forms Service Pack 20 (6.5.20.0) wanneer een gebruiker het dossier van Tiff in PDF gebruikend de dienst PDFG omzet, ontbreekt het met de fout: (FORMS-14879) ALC-PDG-011-028-Fout voorkwam terwijl het omzetten van het dossier van het inputbeeld in PDF. com/sun/image/codec/jpeg/JPEGCodec
 * Voer een upgrade uit in AEM Forms op JEE Jar-bestanden: de `commons-collections:commons-collections:jar` -bibliotheek is nu inbegrepen om de resolutie en functionaliteit van afhankelijkheden in verschillende AEM Forms JEE-taken te verbeteren, zoals:
-   * Verbetering van taakuitvoering in vergadering om de verwerking van taken en de foutafhandeling te verbeteren.
+   * Verbetering van de assemblertaak om de taakverwerking en foutafhandeling te verbeteren.
    * PDF Generator (PDFG)-taakverbetering voor vloeiendere bewerkingen voor het genereren en converteren van documenten.
    * LC-Upgrade-taakverbetering om het upgradeproces te verbeteren en tegelijkertijd een stabiele overgang tussen versies te garanderen.
-   * Rights Management Job-uitbreiding om de verwerking van documenten en verbeterde Rights Management-mogelijkheden te beveiligen.
-   * Verbetering van de taken voor procesbeheer voor betrouwbaardere taakverwerking en systeembeheer.
-* Beginnend AEM Forms OSGi 6.5.22, zal de renderPDFForm verrichting van de dienst van Forms cliënt-slechts (runAt=client) manuscripten op de server niet uitvoeren, slechts die duidelijk runAt=server of runAt=both zullen worden uitgevoerd zoals die in de lijst hieronder worden beschreven. (FORMS-16564)
+   * Taakverbetering voor rechtenbeheer om de documentverwerking te beveiligen en de mogelijkheden voor rechtenbeheer te verbeteren.
+   * Procesbeheer Taakverbetering voor een betrouwbaardere taakverwerking en systeembeheer.
+* Vanaf AEM Forms OSGi 6.5.22 worden met de renderPDFForm-bewerking van de Forms-service geen client-only (runAt=client) scripts op de server uitgevoerd, alleen de scripts die zijn gemarkeerd als runAt=server of runAt=both worden uitgevoerd zoals beschreven in de onderstaande tabel. (FORMS-16564)
 
   | Script gemarkeerd runAt | Uitgevoerd op de server |
   |---------------------|-------------------------|
@@ -266,7 +266,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### XML {#forms-xmlfm-sp22}
 
-* Wanneer een gebruiker in AEM Forms Service Pack 21 (6.5.21.0) niet-standaardcodes toevoegt aan PDF&#39;s die XMLFM gebruiken, voldoet het document niet aan de PDF-specificatievereisten. (LC-3922484)
+* Wanneer een gebruiker in AEM Forms Service Pack 21 (6.5.21.0) niet-standaardcodes toevoegt aan PDF&#39;s met behulp van XMLFM, voldoet het document niet aan de PDF-specificatievereisten. (LC-3922484)
 * Wanneer een gebruiker een PDF genereert met de Output Service op AEM Forms Service Pack 20 (6.5.20.0), mislukt deze met CORBA.COMM_FAILURE en wordt de fout weergegeven: `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"` . De service gaat correct door wanneer de toegankelijkheidsrol &quot;Reference&quot; is uitgesloten van het subformulier van de XDP-sjabloon. deze rol is echter nodig om 508 naleving te garanderen . (LC-3922402)
 * Wanneer een gebruiker een XFA-formulier converteert naar een AcroForm PDF, mislukt het. (LC-3922363)
 * Als een gebruiker in AEM Forms Service Pack 19 (6.5.19.0) een XDP maakt met de naamloze subformulieren, wordt FS_DATA_SOM leeg weergegeven voor naamloze subformulieren. (LC-392/2034)
@@ -352,8 +352,8 @@ In ![ pictogram van de Hammer ](https://spectrum.adobe.com/static/icons/workflow
 #### Platform{#foundation-platform-6522}
 
 * De Enterprise Information Management Tracking die in AEM 6.5.18 is geïntroduceerd, heeft anomalieën veroorzaakt bij de berekening van de scores voor productacceptatie. De Adobe Metrics-bibliotheek heeft dit probleem veroorzaakt door het overschrijven van gebruikersgegevens die zijn verstrekt door de Omega tracking-bibliotheek. Als gevolg daarvan zijn de cijfers voor de acceptatie van veel klanten van AEM Sites en AEM Assets vanaf februari 2024 tot nul gedaald. (CQ-4358438)
-* Er is een kritiek probleem geïdentificeerd in de productieomgeving waar de afvalophaler de labels op onjuiste wijze afhandelde. Met name wanneer een tag werd verplaatst of hernoemd, kon de eigenschap `cq:MovedTo` van de garbage collector niet worden bijgewerkt, waardoor de tag uit pagina&#39;s verdween. (CQ-4358/293)
-* Een probleem met ContextHub in AEM 6.5.19 veroorzaakte segmenten om verkeerd op te lossen wanneer een contextweg aan een instantie van AEM werd toegevoegd. De kwestie beïnvloedde specifiek het gebied URL binnen de voorwerpen van JavaScript die door de paginacomponent worden geproduceerd, waar de vereiste prefix van het contextpad ontbrak. Door deze weglating functioneerden segmenten niet zoals verwacht. (SITES-21852)
+* Er is een kritiek probleem geïdentificeerd in de productieomgeving waar de afvalophaler de labels op onjuiste wijze afhandelde. Met name wanneer een tag werd verplaatst of hernoemd, kon de Garbage Collector de `cq:MovedTo` eigenschap niet bijwerken, waardoor de tag van pagina&#39;s verdween. (CQ-4358/293)
+* Een probleem met ContextHub in AEM 6.5.19 zorgde ervoor dat segmenten onjuist werden opgelost wanneer een contextpad werd toegevoegd aan een AEM exemplaar. Het probleem had specifiek betrekking op het URL-veld in de JavaScript-objecten die door het paginaonderdeel werden gegenereerd, waar het vereiste voorvoegsel voor het contextpad ontbrak. Door deze weglating konden segmenten niet functioneren zoals verwacht. (SITES-21852)
 * Bijgewerkte AEM QuickStart voor het gebruik van de bibliotheek `commons-collections-3.2.2-adobe-2` . De update zorgt ervoor dat de toepassing probleemloos kan worden uitgevoerd. (NPR-42150)
 * De SMTP OAuth2 opstelling in AEM 6.5 verschilt beduidend van wat in AEM as a Cloud Service wordt gebruikt. Om configuratie te stroomlijnen en consistentie te verzekeren, moest de opstelling in AEM 6.5 worden gericht aan de normen die in AEM as a Cloud Service worden gebruikt. (GRANITE-53273)
 * Een kwestie werd gevonden wanneer u ![ pictogram van de Kompas ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Compass_18_N.svg) > ![ pictogram van het Project ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Project_18_N.svg) Projecten klikte, toen uw muiswijzer over ![ Linkerpictogram van het Spoorspoor ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![ sloot onderaan pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), verscheen een een gravend accent vóór de tekst van tooltip &quot;Inhoud slechts.&quot; (CQ-4356633)
@@ -361,7 +361,7 @@ In ![ pictogram van de Hammer ](https://spectrum.adobe.com/static/icons/workflow
 #### Beveiliging{#foundation-security-6522}
 
 * Er zijn problemen opgetreden met een verouderde JSAFE-cryptografische bibliotheek (versie 6.0.0) in AEM. AEM 6.5.22 bevat een patchbundel met JSAFE versie 6.2.5. (NPR-42006)
-* Wanneer het bevestigen van toegestane protocollen tijdens controles XSS, vergelijken de managers tegen &quot;http&quot; en &quot;https.&quot; De eigenschap `protocol` van een URL-object heeft deze waarden echter geretourneerd met een dubbele punt, zoals `http:` en `https:` . Dit probleem heeft validatieproblemen veroorzaakt. Om nauwkeurige ontleding te verzekeren, moest de protocolcontrole aan rekening voor de dubbelepunten of de vergelijkingslogica dienovereenkomstig aanpassen.  (NPR-42119)
+* Wanneer het bevestigen van toegestane protocollen tijdens controles XSS, vergelijken de managers tegen &quot;http&quot; en &quot;https.&quot; De eigenschap `protocol` van een URL-object heeft deze waarden echter geretourneerd met een dubbele punt, zoals `http:` en `https:` . Deze mismatch veroorzaakte validatieproblemen. Om een nauwkeurige parsing te garanderen, moest de protocolcontrole rekening houden met de dubbele punt of de vergelijkingslogica dienovereenkomstig aanpassen.  (NPR-42119)
 * Na de installatie van AEM 6.5.21 (de vorige versie was AEM 6.5.19) op IBM® WebSphere® Liberty Profile en Semeru Java 8.0, konden geen pagina&#39;s worden geopend. Foutlogboeken geven problemen aan met betrekking tot servletversies die verschillende bundels vereisen. Om dit probleem aan te pakken, moest de afhankelijkheid van `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` worden teruggedraaid omdat het met het probleem verwant was. (NPR-42116)
 * Verscheidene browsers elimineren steun voor **SameSite=None** koekjes, die worden gebruikt om dwars-plaats toegang tot koekjes toe te staan. Als alternatief, **Gepartitioneerde koekjes** worden geïntroduceerd. Deze cookies isoleren de opslag door de context waarin ze worden gebruikt, waardoor de privacy en beveiliging worden verbeterd door het bijhouden van gegevens op verschillende sites te voorkomen terwijl cookies nog steeds binnen specifieke partities kunnen werken, zoals ingesloten inhoud van derden. (GRANITE-51953)
 
@@ -447,13 +447,13 @@ Om de platforms te kennen die om met deze versie worden verklaard te werken, zie
 
 1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.22.20 of hoger (Webconsole gebruiken: `/system/console/bundles` ). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE. CHECK WITH SAMEER DHAWAN -->
 
-### Service Pack installeren voor [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
+### Service Pack voor [!DNL Experience Manager] formulieren installeren{#install-aem-forms-add-on-package}
 
-Voor instructies om het Service Pack op Experience Manager Forms te installeren, zie [ de installatieinstructies van het Pak van de Dienst van Experience Manager Forms ](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Zie [de installatie-instructies](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) van Experience Manager Forms Service Pack voor instructies voor het installeren van het Service Pack op Experience Manager Forms.
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De functie Adaptieve formulieren, beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), is alleen ontworpen voor verkennings- en evaluatiedoeleinden. Voor productiegebruik is het essentieel om een geldige licentie voor AEM Forms te verkrijgen, aangezien de functionaliteit van Adaptive Forms de juiste licenties vereist.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -487,7 +487,7 @@ Om UberJar in een Geweven project te gebruiken, zie [ hoe te om UberJar ](/help/
 >UberJar en de andere verwante artefacten zijn beschikbaar op Centrale Bewaarplaats van de Bewaarplaats van Adobe Public Maven (`repo.adobe.com`). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar` . Er is dus geen `classifier` , met `apis` als waarde, voor de tag `dependency` .
 
 
-## Verouderde en verwijderde functies{#removed-deprecated-features}
+## Afgeschafte en verwijderde functies{#removed-deprecated-features}
 
 Zie [ Vervangen en verwijderde eigenschappen ](/help/release-notes/deprecated-removed-features.md/).
 
@@ -595,13 +595,12 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6522}
 
-* Als de HTML naar PDF-conversie mislukt op de SUSE® Linux®-server (SLES 15 SP6 of hoger) met de fout: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57` .
-Voer de volgende stappen uit om het probleem op te lossen:
-   1. Start de server en stel de omgevingsvariabele `OPENSSL_CONF` in met de volgende opdracht:
-      `export OPENSSL_CONF=/etc/ssl`
-U kunt ook de omgevingsvariabele instellen terwijl u de server start:
-      `-e OPENSSL_CONF=/etc/ssl`
-   1. Start de server opnieuw.
+* Als de HTML naar PDF-conversie mislukt op een SUSE® Linux® (SLES 15 SP6 en hoger)-server met de volgende fout:
+
+  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
+Stel vervolgens de volgende omgevingsvariabele in en start de server opnieuw:
+  `OPENSSL_CONF=/etc/ssl`
+
 * Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, voert u de volgende stappen uit om het probleem op te lossen als u dubbele vermeldingen van Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de map `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) vindt:
 
    1. Stop de locators, als zij lopen.
@@ -613,9 +612,9 @@ U kunt ook de omgevingsvariabele instellen terwijl u de server start:
 
 * Als een gebruiker een voorvertoning probeert te bekijken van een conceptbrief met opgeslagen XML-gegevens, blijft deze voor bepaalde letters vastzitten in de status `Loading` . Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-14521)
 
-* Na de upgrade naar AEM Forms Service Pack 6.5.21.0 voert de `PaperCapture` -service geen OCR-bewerkingen (Optical Character Recognition) uit op PDF&#39;s. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (CQDOC-21680)
+* Na de upgrade naar AEM Forms Service Pack 6.5.21.0 voert de `PaperCapture` -service geen OCR-bewerkingen (Optical Character Recognition) uit op PDF&#39;s. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Als u de hotfix wilt downloaden en installeren, raadpleegt u het [artikel Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) . (CQDOC-21680)
 
-* Toen gebruikers van AEM 6.5 Forms Service Pack 18 of 19 aan Service Pack 20 of 21 bevorderden, ontmoetten zij een fout van de JSP compilatie. Door deze fout konden ze geen aangepaste formulieren openen of maken. Het veroorzaakte ook problemen met andere interfaces van AEM. Die interfaces omvatten de paginaredacteur, UI van AEM Forms, de redacteur van het Werkschema, en het Overzicht UI van het Systeem. (FORMS-15256)
+* Wanneer gebruikers een upgrade uitvoerden van AEM 6.5 Forms Service Pack 18 of 19 naar Service Pack 20 of 21, traden ze een JSP-compilatiefout op. Door deze fout konden ze geen adaptieve formulieren openen of maken. Het veroorzaakte ook problemen met andere interfaces van AEM. Die interfaces omvatten de paginaredacteur, UI van AEM Forms, de redacteur van het Werkschema, en het Overzicht UI van het Systeem. (FORMS-15256)
 
   Voer de volgende stappen uit om een dergelijk probleem op te lossen:
    1. Navigeer naar de map `/libs/fd/aemforms/install/` in CRXDE.
@@ -625,8 +624,8 @@ U kunt ook de omgevingsvariabele instellen terwijl u de server start:
 * Na het bijwerken aan AEM Forms Service Pack 20 (6.5.20.0) met Forms toe:voegen-On, configuraties die zich op de erfenisDienst van Adobe Analytics Cloud baseren gebruikend op referentie-gebaseerde authentificatieophouden werkend. Hierdoor konden de analyseregels niet correct worden uitgevoerd. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-15428)
 
 * Wanneer een gebruiker AEM Forms Service Pack 20 (6.5.20.0) op de JEE server bijwerkt en PDFs gebruikend de outputdiensten produceert, geven PDFs met toegankelijkheidskwesties terug. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3922112)
-* Wanneer een gebruiker gecodeerde PDF&#39;s genereert met de uitvoerservice op JEE, wordt &quot;Onjuiste structuurwaarschuwing&quot; weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2038)
-* Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2017)
+* Wanneer een gebruiker gecodeerde PDF&#39;s genereert met de uitvoerservice op JEE, wordt &quot;Onjuiste structuurwaarschuwing&quot; weergegeven. Als u de hotfix wilt downloaden en installeren, raadpleegt u het [artikel Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) . (LC-392/2038)
+* Wanneer een formulier wordt ingediend op AEM Forms JEE, worden de exemplaren van een herhalend XML-element uit de gegevens verwijderd. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2017)
 * Wanneer een gebruiker in een Linux®-omgeving een adaptief formulier (in JEE) rendert in HTML, wordt het formulier niet correct weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921957)
 * Wanneer een gebruiker een XTG-bestand in PostScript-indeling converteert met de Output Service op AEM Forms JEE, mislukt dit met de fout: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE` . Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921720)
 * Na upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server, kan een gebruiker een formulier verzenden waardoor HTML5 of PDF forms en XMLFM niet vastlopen. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921718)

@@ -5,9 +5,9 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1567'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,13 @@ Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaal
    * om een wijziging die u hebt aangebracht in de pagina ongedaan te maken.
 * Vergelijk de huidige versie van een pagina met een vorige versie:
    * om verschillen in de tekst en afbeeldingen te benadrukken.
+
+>[!NOTE]
+>
+>Alleen inhoud wordt versioned in de AEM-opslagplaats. Dynamische bronnen zoals code, CSS en JavaScript hebben geen versiebeheer.
+>
+>* Wanneer u versies weergeeft, wordt de inhoud weergegeven met de huidige code, CSS en JavaScript van de opslagplaats.
+>* Bij het herstellen van versies wordt alleen de inhoud hersteld en worden de huidige code, CSS en JavaScript van de opslagplaats erop toegepast.
 
 ## Een nieuwe versie maken {#creating-a-new-version}
 
@@ -196,7 +203,7 @@ De tijdverdraaiing is een eigenschap die wordt ontworpen om de *gepubliceerde* s
 
 >[!TIP]
 >
->[ Tijdverdraaiing kan ook met Lanceringen worden gebruikt om de toekomst ](/help/sites-authoring/launches.md) te voorproef wanneer het lopen AEM 6.5.10.0 of later.
+>[ Tijdverdraaiing kan ook met Lanceringen worden gebruikt om toekomstige ](/help/sites-authoring/launches.md) te voorproef wanneer het runnen van AEM 6.5.10.0 of later.
 
 Het maken van inhoud is een doorlopend en gezamenlijk proces. Het doel van Timewarp is auteurs toe te staan om de gepubliceerde website in tijd te volgen, om hen te helpen begrijpen hoe de inhoud is veranderd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen:
 

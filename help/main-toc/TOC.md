@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Gebruik de documentatie van Adobe Experience Manager 6.5 om te leren hoe het werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM 6.5
-source-git-commit: 8009e4cf7da17afbcfae7f90009157d32ee261fa
+source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
 workflow-type: tm+mt
-source-wordcount: '7494'
+source-wordcount: '7520'
 ht-degree: 1%
 
 ---
@@ -1213,6 +1213,9 @@ ht-degree: 1%
       + [De service Documentdigitalisering kan geen OCR&#39;s uitvoeren op PDF&#39;s](/help/forms/using/papercapture-service-resolution.md)
       + [Risico&#39;s van het voorjaarskader voor AEM Forms op JEE verminderen](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Logboek4j2-kwetsbaarheden voor Experience Manager Forms verminderen](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [Problemen weergeven voor op XFA gebaseerde PDF forms en documenten die met een beleid zijn beveiligd](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+      + [Hoe kan ik op XFA gebaseerde PDF forms openen op Firefox en Chrome?](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [XML External Entity (XXE)-kwetsbaarheid in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [EAR-implementatie mislukt op JEE WebLogic-server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Oudere documentatie {#legacy-documentation}
       + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](/help/forms/developing/building-xml.md)

@@ -1,27 +1,28 @@
 ---
-title: Probleemoplossing voor artikel om het probleem op te lossen wanneer de PaperCapture-service geen OCR-bewerkingen (Optical Character Recognition) op PDF uitvoert.
-description: Leer de stappen om het probleem op te lossen waarbij de service Documentdigitalisering geen OCR-bewerkingen (Optical Character Recognition) uitvoert op PDF.
+title: Probleemoplossing voor artikel om het probleem op te lossen wanneer de PaperCapture-service geen OCR-bewerkingen (Optical Character Recognition) uitvoert op PDF's.
+description: Leer de stappen om het probleem op te lossen waarbij de service Documentdigitalisering geen OCR-bewerkingen (Optical Character Recognition) uitvoert op PDF's.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: e030a71a0f52e22a803597122369cb111774f49b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
 
-# De service PaperCature kan geen OCR-bewerking uitvoeren op PDF
+# De service PaperCature kan geen OCR-bewerking uitvoeren op PDF&#39;s
 
 ## Probleem
 
-Na de upgrade naar AEM Forms Service Pack 6.5.21.0 kan de `PaperCapture` -service geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF. De service genereert geen uitvoer in de vorm van een PDF- of logbestand.
+Na een upgrade naar AEM Forms Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 kan de `PaperCapture` -service geen OCR-bewerkingen (Optical Character Recognition) uitvoeren op PDF&#39;s. De service genereert geen uitvoer in de vorm van een PDF- of logbestand.
 
 ## Van toepassing op
 
 Deze oplossing geldt voor:
+
 * AEM Forms op alle JEE-servers (JBoss, Weblogic, Websphere)
 * AEM Forms op OSGi-servers
 
@@ -38,10 +39,10 @@ Deze oplossing geldt voor:
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **OSGi opstelling**:\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
-1. Stop de AEM toepassingsserver.
+1. Stop de AEM-toepassingsserver.
 1. Vervang de bestaande inhoud van de map `PaperCaptureSvc` door de gekopieerde inhoud.
-1. Start de AEM toepassingsserver opnieuw.
+1. Start de AEM-toepassingsserver opnieuw.
 
    >[!NOTE]
    >
-   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+   > U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM-ontwikkelomgeving.

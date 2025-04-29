@@ -1,13 +1,13 @@
 ---
 title: Modellen van inhoudsfragmenten
-description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
+description: Leer hoe Content Fragment Models fungeert als basis voor inhoud zonder kop in AEM en hoe u inhoudsfragmenten met gestructureerde inhoud maakt.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c361d62beb93fc546f3ef2e53f52ff50bdcdc530
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2343'
 ht-degree: 1%
 
 ---
@@ -105,6 +105,13 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
    * Voeg een of meer velden van één regel tekst toe. De maximumlengte kan worden gedefinieerd
 * **Meerdere lijntekst**
    * Een tekstgebied dat RTF-tekst, platte tekst of Markering kan zijn
+
+     >[!NOTE]
+     >
+     Vanwege de prestaties is het niet raadzaam meer dan tien RTF-velden in één model op te nemen.
+     >
+     Indien nodig, wordt het geadviseerd dat u [ genestelde de Fragmenten van de Inhoud ](#fragment-reference-nested-fragments) gebruikt om de lading te verspreiden.
+
 * **Aantal**
    * Een of meer numerieke velden toevoegen
 * **Van Boole**
@@ -125,7 +132,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
       * Een inhoudsfragment maken op basis van het juiste model
 * **voorwerp JSON**
    * Hiermee kan de auteur van het inhoudsfragment JSON-syntaxis invoeren in de overeenkomende elementen van een fragment.
-      * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd en gekleefd.
+      * AEM toestaan direct JSON op te slaan dat u hebt gekopieerd en geplakt van een andere service.
       * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
 * **Placeholder van het Lusje**
@@ -135,7 +142,7 @@ In de fragmenteditor wordt elke instantie weergegeven als een tab.
 
      >[!NOTE]
      >
-     Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
+     Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het AEM GraphQL-schema.
 
 ## Eigenschappen {#properties}
 
@@ -383,7 +390,7 @@ De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als v
 
 * Het **Beleid** voor **Toegestane Modellen van het Fragment van de Inhoud**.
 * Als dit leeg is, kunt u het beleid bepalen met behulp van de overervingsregels.
-* Als de overervingsketen geen resultaat levert, dan bekijk de **Cloud Servicen** configuratie voor die omslag (ook eerst direct en dan via overerving).
+* Als de overervingsketen geen resultaat levert, dan bekijk de **configuratie van de Diensten van de Wolk** voor die omslag (ook eerst direct en dan via overerving).
 * Als geen van de bovenstaande resultaten worden behaald, zijn er geen modellen toegestaan voor die map.
 
 ## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
@@ -412,7 +419,7 @@ Een fragmentmodel voor inhoud publiceren:
 1. Navigeer aan **Hulpmiddelen**, **Assets**, dan open **Modellen van het Fragment van de Inhoud**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
-1. Selecteer uw model, dat door **wordt gevolgd Publish** van de toolbar.
+1. Selecteer uw model, dat door **wordt gevolgd publiceert** van de toolbar.
 De gepubliceerde status wordt vermeld in de console.
 
    >[!NOTE]

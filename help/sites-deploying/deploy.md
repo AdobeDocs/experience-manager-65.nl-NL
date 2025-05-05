@@ -140,7 +140,7 @@ Terwijl de productieinstanties in werking worden gesteld op specifieke machines 
 
 Om vertrouwd te raken en zich op AEM te ontwikkelen, is het gebruikelijk om een instantie te gebruiken die op uw lokale computer wordt geïnstalleerd die OS X of Desktopversies van Microsoft® Windows of Linux® in werking stelt.
 
-Op cliënt-kant, AEM werken met alle moderne browsers (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; **, **Firefox &#x200B;** 47+, **Safari** 8+) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
+Op cliënt-kant, AEM werken met alle moderne browsers (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; &#x200B;**, **Firefox &#x200B;** 47+, **Safari** 8+) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
 
 ### De software ophalen {#getting-the-software}
 

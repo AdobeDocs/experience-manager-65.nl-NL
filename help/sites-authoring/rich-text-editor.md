@@ -16,8 +16,8 @@ ht-degree: 0%
 
 De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele inhoud in AEM. Het vormt de basis van verschillende componenten, waaronder:
 
-* [ Tekst ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [ Lijst ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [ Tekst ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/text)
+* [ Lijst ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Plaatselijk bewerken {#in-place-editing}
 

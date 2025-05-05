@@ -28,8 +28,8 @@ Het maken van een AEM Mobile On-demand Services-app is niet hetzelfde als het re
 >
 >Zie de volgende bronnen voor meer informatie over plug-ins:
 >
->* [ Gebruikend stop-ins Cordova in AEM Mobile ](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [ Gebruikend AEM Mobile specifieke Cordova-Toegelaten stop-ins ](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [ Gebruikend stop-ins Cordova in AEM Mobile ](https://helpx.adobe.com/nl/digital-publishing-solution/help/cordova-api.html)
+>* [ Gebruikend AEM Mobile specifieke Cordova-Toegelaten stop-ins ](https://helpx.adobe.com/nl/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Sjablonen die plug-infunctionaliteit gebruiken, moeten zo worden geschreven dat ze nog steeds in de browser kunnen worden geschreven, zonder dat de plug-inbridge aanwezig is.

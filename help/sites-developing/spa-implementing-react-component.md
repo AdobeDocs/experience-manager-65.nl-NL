@@ -37,7 +37,7 @@ U zou met de [ structuur van een SPA toepassing voor AEM ](/help/sites-developin
 >[!CAUTION]
 >Dit document gebruikt [ Wij.Retail app van het Dagboek ](https://github.com/adobe/aem-sample-we-retail-journal) slechts voor demonstratiedoeleinden. Gebruik het niet voor enig projectwerk.
 >
->Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
+>Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
 
 ## De component Weer {#the-weather-component}
 

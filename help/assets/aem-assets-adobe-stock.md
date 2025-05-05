@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 <!-- old content
@@ -468,9 +468,9 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 >[!MORELIKETHIS]
 >
->* [ Videozelfstudie bij het gebruiken van  [!DNL Adobe Stock]  activa met  [!DNL Experience Manager Assets] ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [[!DNL Adobe Stock]  hulp van het ondernemingsplan ](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock]  Veelgestelde vragen ](https://helpx.adobe.com/stock/faq.html)
+>* [ Videozelfstudie bij het gebruiken van  [!DNL Adobe Stock]  activa met  [!DNL Experience Manager Assets] ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=nl-NL)
+>* [[!DNL Adobe Stock]  hulp van het ondernemingsplan ](https://helpx.adobe.com/nl/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock]  Veelgestelde vragen ](https://helpx.adobe.com/nl/stock/faq.html)
 
 
 <!--old content

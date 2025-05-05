@@ -32,7 +32,7 @@ Dynamic Media-elementen worden door de CDN (Content Delivery Network) in cache g
 
 **om het CDN geheime voorgeheugen als Dynamic Media Classic ongeldig te maken:**
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), dan login aan uw rekening.
+1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=nl-NL#system-requirements-dmc-app), dan login aan uw rekening.
 
    Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met de Klantenondersteuning van de Adobe als u deze informatie niet hebt.
 

@@ -123,7 +123,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * CQ - Wordt gebruikt door [!DNL Experience Manager Assets] .
 * DAM - Wordt gebruikt door [!DNL Experience Manager Assets] .
 * DEX - [!DNL Optima SC Description explorer] is een verzameling gereedschappen voor metagegevens en bestandsbeheer voor Windows-besturingssystemen.
-* CRS - [ Ruwe Adobe Photoshop Camera ](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [ Ruwe Adobe Photoshop Camera ](https://helpx.adobe.com/nl/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom] .
 * MediaPro - [ iView MediaPro ](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto en MP - Microsoft Photo.

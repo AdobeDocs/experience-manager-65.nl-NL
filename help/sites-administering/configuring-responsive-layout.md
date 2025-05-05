@@ -213,7 +213,7 @@ De volgende twee voorbeelden illustreren de definitie:
 
 AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, deze moeten voor uw projecten worden omvat.
 
-U zult ook a [ cliëntbibliotheek ](https://experienceleague.adobe.com/docs/) moeten creëren om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
+U zult ook a [ cliëntbibliotheek ](https://experienceleague.adobe.com/docs/?lang=nl-NL) moeten creëren om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";

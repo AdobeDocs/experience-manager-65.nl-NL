@@ -30,9 +30,9 @@ De inzamelingen vertegenwoordigen een duidelijk bepaalde *emmer* gevuld met inho
 >
 >Zie de volgende bronnen in de online Help voor meer informatie over de volgende onderwerpen in AEM Mobile-apps:
 >
->* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
 >
->* [ het Leiden Inzamelingen ](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+>* [ het Leiden Inzamelingen ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Een verzameling maken {#creating-a-collection}

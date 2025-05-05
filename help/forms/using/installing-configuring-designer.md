@@ -38,7 +38,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >* De 64-bits versie van de ontwerper werd geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
->* De versie met 32 bits van de ontwerper wordt afgekeurd sinds de versie van [ AEM Forms Service Pack 21 (6.5.21.0) ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+>* De versie met 32 bits van de ontwerper wordt afgekeurd sinds de versie van [ AEM Forms Service Pack 21 (6.5.21.0) ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 > * De ondersteunde platformen voor Forms Designer worden uitgelijnd met de door AEM Forms ondersteunde platforms. Om over de gesteunde platforms voor Forms Designer te leren, [ klik hier ](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Voor meer informatie betreffende installatie van Forms Designer, bezoek [ vaak gestelde vragen ](#fandq).
@@ -94,15 +94,15 @@ Er zijn twee gevallen bij het bijwerken van de nieuwste versie van AEM Forms Des
 Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM Forms Designer gebruikt:
 
 1. Alvorens **AEM Forms Designer 6.5.16.0** te installeren, moeten de gebruikers om het even welke vorige versies verwijderen.
-1. De download en installeert [ AEM Forms Designer 6.5.15.0 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) van de AEM Pagina van de Versies van de Vorm.
-1. Na succesvolle installatie van **AEM Forms Designer 6.5.15.0**, download en installeer [ AEM Forms Designer 6.5.16.0 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) door op het gedownloade installerdossier tweemaal te klikken.
+1. De download en installeert [ AEM Forms Designer 6.5.15.0 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) van de AEM Pagina van de Versies van de Vorm.
+1. Na succesvolle installatie van **AEM Forms Designer 6.5.15.0**, download en installeer [ AEM Forms Designer 6.5.16.0 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) door op het gedownloade installerdossier tweemaal te klikken.
 
 +++
 
 +++**wanneer de gebruiker 6.5.15.0 versie van AEM Forms Designer** heeft
 
 Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM Forms Designer gebruikt:
-1. De recentste versie van AEM Forms Designer van de download [ portal van de softwaredistributie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+1. De recentste versie van AEM Forms Designer van de download [ portal van de softwaredistributie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL).
 1. Installeer de nieuwste versie van AEM Forms Designer door te dubbelklikken op het gedownloade installatiebestand.
 
 +++

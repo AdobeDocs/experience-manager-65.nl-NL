@@ -24,7 +24,7 @@ Een beheerder installeert FMPEG afzonderlijk om ervoor te zorgen dat de juiste t
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. De Adobe adviseert het gebruiken van de [ Componenten van de Kern Embed Component ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. De Adobe adviseert het gebruiken van de [ Componenten van de Kern Embed Component ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=nl-NL) in plaats daarvan.
 
 >[!CAUTION]
 >

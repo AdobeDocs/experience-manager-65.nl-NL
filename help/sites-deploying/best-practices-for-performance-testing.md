@@ -75,7 +75,7 @@ De [ documentatie van de Prestaties van de Controle ](/help/sites-deploying/moni
 
 **de Wijze van de Ontwikkelaar in Aanraak UI**
 
-Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [ CQ Gems presentatie ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [ CQ Gems presentatie ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=nl-NL).
 
 **Gebruikend rlog.jar om de verzoeklogboeken** te lezen
 
@@ -120,7 +120,7 @@ De **ObservationQueueMaxLength** sectie toont het aantal gebeurtenissen in de de
 1. Plaats de toepassing onder de map /crx-quickstart/install.
 
 >[!NOTE]
->Zie [AEM 6.x | Tips voor afstemmen van prestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>Zie [AEM 6.x | Tips voor afstemmen van prestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL)
 
 De standaardinstelling is 10.000, maar de meeste implementaties moeten deze verhogen tot 20.000 of 50.000.
 
@@ -148,7 +148,7 @@ Nadat u prestatietests op de auteur hebt uitgevoerd, moeten eventuele problemen 
 * Bekijk het foutenlogboek voor fouten of waarschuwingen. Voor meer informatie, zie [ het Registreren ](/help/sites-deploying/configure-logging.md).
 * Hardwarebronnen van het systeem controleren, zoals geheugen- en CPU-gebruik, schijf-I/O of netwerk-I/O. Deze middelen zijn vaak de oorzaken van prestatiesknelpunten.
 * Optimaliseer de architectuur van de pagina&#39;s en hoe zij worden gericht om het gebruik van URL parameters te minimaliseren om voor zoveel mogelijk caching mogelijk toe te staan.
-* Volg de [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) en [ het stemmen van Prestaties uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) documentatie.
+* Volg de [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) en [ het stemmen van Prestaties uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL) documentatie.
 
 * Als er problemen optreden bij het bewerken van bepaalde pagina&#39;s of componenten op auteur-instanties, gebruikt u de TouchUI-ontwikkelaarsmodus om de pagina in kwestie te inspecteren. Dit geeft een indeling van elk inhoudsgebied op de pagina en de laadtijd.
 * Alle JS en CSS op de site miniaturen. Zie dit [ blogbericht ](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

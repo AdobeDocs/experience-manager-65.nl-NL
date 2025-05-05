@@ -40,8 +40,8 @@ Om de tokens te gebruiken, moet u het binaire getal HMAC aan alle instanties in 
 >
 >Zorg ervoor u ook de noodzakelijke de configuratieveranderingen van Dispatcher aanbrengt om het Kader van de Bescherming te gebruiken CSRF:
 >
->* [ Vormend Adobe Experience Manager Dispatcher om Aanvallen te verhinderen CSRF ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
->* [ het Overzicht van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
+>* [ Vormend Adobe Experience Manager Dispatcher om Aanvallen te verhinderen CSRF ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [ het Overzicht van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >

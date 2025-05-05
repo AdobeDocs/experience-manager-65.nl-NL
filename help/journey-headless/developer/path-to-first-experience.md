@@ -139,7 +139,7 @@ Wij willen dat u op deze grondkennis voortbouwt om de kracht en de flexibiliteit
 Wat uw het leren stijl ook moge zijn, de Adobe wil dat u slaagt als u aan de slag gaat met uw AEM headless project.
 
 * Als u verkiest om **over headless concepten en AEM te blijven leren zonder kop technologieën**, zou u uw AEM zonder kop reis moeten voortzetten door het document [ te herzien hoe te Uw Inhoud als Modellen van de Inhoud te modelleren ](model-your-content.md) waar u leert hoe te om uw inhoudsstructuur in AEM te modelleren.
-* Als u verkiest om **te leren door** te doen, kunt u aan [ springen Begonnen met AEM Hoofdloze hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) waar u direct in AEM Ontwikkelt zonder Titel door een eenvoudig project uit te voeren om AEM inhoud zonder kop bloot te stellen.
+* Als u verkiest om **te leren door** te doen, kunt u aan [ springen Begonnen met AEM Hoofdloze hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) waar u direct in AEM Ontwikkelt zonder Titel door een eenvoudig project uit te voeren om AEM inhoud zonder kop bloot te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -147,11 +147,11 @@ Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless on
 
 * [ AEM Headless Vertaalreis ](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
 * [ Zwaarloze Ontwikkeling voor AEM Sites ](/help/sites-developing/headless/introduction.md) - een snelle inleiding om de ontwikkelaar van de Zwaarteloze AEM met de noodzakelijke eigenschappen te richten
-* [ AEM Tutorials zonder kop ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
-* [ Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs ](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
+* [ AEM Tutorials zonder kop ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
+* [ Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs ](https://experienceleague.adobe.com/nl?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
 * [ AEM Guides WKND - GraphQL ](https://github.com/adobe/aem-guides-wknd-graphql) - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
 * [ Koploze Begonnen Gids ](/help/sites-developing/headless/introduction.md#getting-started) - een snelle inleiding aan AEM koploze eigenschappen voor gebruikers reeds vertrouwd van AEM.
 * [ creeer de Modellen van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie over de Modellen van het Fragment van de Inhoud
 * [ creeer de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) - Technische documentatie over de Fragmenten van de Inhoud
 * [ inhoud van de Vraag met GraphQL ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technische documentatie op GraphQL API
-* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)

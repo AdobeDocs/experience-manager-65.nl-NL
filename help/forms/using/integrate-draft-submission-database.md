@@ -26,7 +26,7 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 >[!NOTE]
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
->* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst van beschikbare pakketten, zie de [ versies van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
+>* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst van beschikbare pakketten, zie de [ versies van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) artikel.
 >* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptive Forms.
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}

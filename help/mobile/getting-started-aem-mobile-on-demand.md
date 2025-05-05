@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 AEM biedt verschillende gereedschappen waarmee u uw inhoud kunt integreren in mobiele toepassingen.
 
@@ -32,7 +32,7 @@ AEM Preflight-app kan worden beschouwd als een testomgeving voor het voorvertone
 
 >[!NOTE]
 >
->Om diepgaand over Preflight te leren app, zie [ Gebruikend Preflight app van de AEM ](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) in de Hulp van AEM Mobile On-demand Services.
+>Om diepgaand over Preflight te leren app, zie [ Gebruikend Preflight app van de AEM ](https://helpx.adobe.com/nl/digital-publishing-solution/help/preflight-app.html) in de Hulp van AEM Mobile On-demand Services.
 
 ![ chlimage_1-171 ](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ Om met de rollen en de verantwoordelijkheden van een Auteur begonnen te worden, 
 
 >[!NOTE]
 >
->Een AEM auteur is ook verantwoordelijk voor het instellen van machtigingen, het maken van kaarten en lay-outs en het verzenden van pushberichten. Ook, voor meer informatie over methodes voor auteursinhoud; het beheren van artikelen en inzamelingen; het creëren van banners, kaarten, en lay-outs in AEM Mobile, zie [ AEM Mobile Portaal On-Demand ](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Een AEM auteur is ook verantwoordelijk voor het instellen van machtigingen, het maken van kaarten en lay-outs en het verzenden van pushberichten. Ook, voor meer informatie over methodes voor auteursinhoud; het beheren van artikelen en inzamelingen; het creëren van banners, kaarten, en lay-outs in AEM Mobile, zie [ AEM Mobile Portaal On-Demand ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html#dynamicpod_reference_2).

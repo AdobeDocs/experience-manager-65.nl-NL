@@ -35,7 +35,7 @@ De controleur van de Verbinding bevestigt zowel [ interne verbindingen ](#intern
 Interne koppelingen zijn koppelingen naar andere inhoud in uw AEM. Interne koppelingen kunnen worden toegevoegd met de padkiezer voor de RTE of met een aangepaste component. Bijvoorbeeld:
 
 * Uw pagina `/content/wknd/us/en/adventures/ski-touring.html`
-* Bevat een verbinding aan `/content/wknd/us/en/adventures/extreme-ironing.html` in de Component van de a [ Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* Bevat een verbinding aan `/content/wknd/us/en/adventures/extreme-ironing.html` in de Component van de a [ Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL)
 
 Interne koppelingen worden gevalideerd zodra de auteur van de inhoud een interne koppeling naar een pagina toevoegt. Als de koppeling ongeldig wordt:
 
@@ -49,7 +49,7 @@ Interne koppelingen worden gevalideerd zodra de auteur van de inhoud een interne
 Externe koppelingen zijn koppelingen naar inhoud buiten de AEM opslagplaats. De externe verbindingen kunnen worden toegevoegd gebruikend RTE of gebruikend een douanecomponent. Bijvoorbeeld:
 
 * Uw pagina `/content/wknd/us/en/adventures/ski-touring.html`
-* Bevat een verbinding aan `https://bunwarmerthermalunderwear.com` in de Component van de a [ Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* Bevat een verbinding aan `https://bunwarmerthermalunderwear.com` in de Component van de a [ Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL)
 
 Externe koppelingen worden gevalideerd voor syntaxis en door de beschikbaarheid ervan te controleren. Deze controle wordt asynchroon gedaan bij een configureerbare intern. Als de koppelingencontrole een externe koppeling ongeldig vindt:
 

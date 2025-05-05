@@ -60,10 +60,10 @@ U kunt ook adaptieve formulieren in cache plaatsen bij Dispatcher voor een extra
 
 Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen en te configureren op Dispatcher:
 
-1. Open volgende URL voor elk publiceer geval van uw milieu en [ laat flush agent voor toe publiceer instanties van uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Open volgende URL voor elk publiceer geval van uw milieu en [ laat flush agent voor toe publiceer instanties van uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [ voeg het volgende aan uw dispatcher.any- dossier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) toe:
+1. [ voeg het volgende aan uw dispatcher.any- dossier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#automatically-invalidating-cached-files) toe:
 
    ```JSON
       /invalidate
@@ -92,7 +92,7 @@ Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen e
    * Een adaptief formulier blijft in de cache totdat een bijgewerkte versie van het formulier niet wordt gepubliceerd.
 
    * Wanneer een nieuwere versie van een bron waarnaar in een adaptief formulier wordt verwezen, wordt gepubliceerd, worden de beïnvloede adaptieve formulieren automatisch ongeldig gemaakt. Er zijn enkele uitzonderingen op de automatische ongeldigmaking van bronnen waarnaar wordt verwezen. Voor alternerende actie aan uitzonderingen, zie de [ het oplossen van problemen](#troubleshooting) sectie.
-1. [ voeg hieronder regels dispatcher.any of het dossier van douaneregels ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache) toe. De URL&#39;s die caching niet ondersteunen, worden uitgesloten. Bijvoorbeeld interactieve communicatie.
+1. [ voeg hieronder regels dispatcher.any of het dossier van douaneregels ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-documents-to-cache) toe. De URL&#39;s die caching niet ondersteunen, worden uitgesloten. Bijvoorbeeld interactieve communicatie.
 
    ```JSON
       /0000 {
@@ -116,7 +116,7 @@ Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen e
       }
    ```
 
-1. [ voeg de volgende parameters aan de negeer URL parameterlijst ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters) toe:
+1. [ voeg de volgende parameters aan de negeer URL parameterlijst ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#ignoring-url-parameters) toe:
 
    ```JSON
       /ignoreUrlParams {
@@ -126,7 +126,7 @@ Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen e
       }
    ```
 
-Uw AEM-omgeving is geconfigureerd om adaptieve formulieren in de cache op te slaan. Alle typen adaptieve formulieren worden in het cachegeheugen opgeslagen. Als u een controle van de toestemmingen van de gebruikerstoegang voor een pagina vereist alvorens de caching pagina te leveren, zie [ caching beveiligde inhoud ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+Uw AEM-omgeving is geconfigureerd om adaptieve formulieren in de cache op te slaan. Alle typen adaptieve formulieren worden in het cachegeheugen opgeslagen. Als u een controle van de toestemmingen van de gebruikerstoegang voor een pagina vereist alvorens de caching pagina te leveren, zie [ caching beveiligde inhoud ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL).
 
 ## Problemen oplossen {#troubleshooting}
 

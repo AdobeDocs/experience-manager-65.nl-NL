@@ -46,7 +46,7 @@ Om AEM inhoud te vormen om in een portaal te verschijnen, zie [ Installerend, Vo
 
 >[!CAUTION]
 >
->De AEM Portal Director is vanaf AEM 6.4 verouderd. Zie [ Vervangen en Verwijderde Eigenschappen ](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>De AEM Portal Director is vanaf AEM 6.4 verouderd. Zie [ Vervangen en Verwijderde Eigenschappen ](https://helpx.adobe.com/nl/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Het AEM inhoudsportfolio beheren {#administering-the-aem-content-portlet}
 

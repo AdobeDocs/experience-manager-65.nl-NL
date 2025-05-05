@@ -43,7 +43,7 @@ Om activa voor gebruik met de kijker van het Beeld te uploaden Panorama, zie [ A
 
 De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voorinstellingen voor de Panoramische afbeeldingsviewer synchroniseert met de specifieke metagegevens voor Dynamic Media Classic en Dynamic Media Classic, zodat de viewervoorinstellingen worden bijgewerkt in het JCR. Voor deze synch configureert u Dynamic Media Classic als volgt:
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw rekening.
+1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
 1. Selecteer in de rechterbovenhoek van de pagina **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]** .
 1. Selecteer **[!UICONTROL Image Serving]** in het vervolgkeuzemenu boven in de Publish-pagina voor afbeeldingsserver.**[!UICONTROL Publish Context]**

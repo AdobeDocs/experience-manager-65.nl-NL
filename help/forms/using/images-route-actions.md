@@ -29,7 +29,7 @@ Om de beelden aan te passen die in routeacties worden gebruikt, voer de stappen 
 
    >[!NOTE]
    >
-   >Voor meer informatie, zie [ Toegang WebDAV ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Voor meer informatie, zie [ Toegang WebDAV ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=nl-NL).
 
    >[!NOTE]
    >

@@ -24,7 +24,7 @@ Documentbeveiliging zorgt ervoor dat alleen geautoriseerde gebruikers uw documen
 * Adobe PDF-bestanden
 * Microsoft® Word-, Excel- en PowerPoint-bestanden
 
-Voor meer informatie over hoe het beleid gesteunde dossiertypes beschermt, zie [ meer informatie van de documentveiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
+Voor meer informatie over hoe het beleid gesteunde dossiertypes beschermt, zie [ meer informatie van de documentveiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=nl-NL).
 
 Met documentbeveiliging kunt u eenvoudig vooraf gedefinieerde instellingen voor vertrouwelijkheid maken, opslaan en toepassen op uw documenten. Als u wilt voorkomen dat gegevens buiten uw bereik worden verspreid, kunt u ook controleren en bepalen hoe ontvangers uw documenten gebruiken nadat u ze hebt verspreid.
 

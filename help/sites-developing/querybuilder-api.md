@@ -32,15 +32,15 @@ De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worde
 
 >[!NOTE]
 >
->De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR van Adobe Experience Manager door de JCR API te gebruiken vanuit een OSGi-bundel. Voor informatie, zie [ Adobe Experience Manager gebruikend JCR API ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html).
+>De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR van Adobe Experience Manager door de JCR API te gebruiken vanuit een OSGi-bundel. Voor informatie, zie [ Adobe Experience Manager gebruikend JCR API ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=nl-NL).
 
 ## Gem-sessie {#gem-session}
 
-[ Adobe Experience Manager (AEM) Gems ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van de Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is nuttig voor een overzicht en gebruik van het hulpmiddel.
+[ Adobe Experience Manager (AEM) Gems ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=nl-NL) is een reeks technische diepe duiken in Adobe Experience Manager die door de deskundigen van de Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is nuttig voor een overzicht en gebruik van het hulpmiddel.
 
 >[!NOTE]
 >
->AEM de zitting van Gem [ vormen van het Onderzoek gemakkelijk met AEM querybuilder ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) voor een gedetailleerd overzicht van de vraagbouwer worden gemaakt.
+>AEM de zitting van Gem [ vormen van het Onderzoek gemakkelijk met AEM querybuilder ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=nl-NL) voor een gedetailleerd overzicht van de vraagbouwer worden gemaakt.
 
 ## Voorbeeldquery&#39;s {#sample-queries}
 

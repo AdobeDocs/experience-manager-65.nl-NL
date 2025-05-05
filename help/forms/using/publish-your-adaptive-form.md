@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![ Hero-beeld ](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 Nadat het aangepaste formulier gereed is, kunt u het publiceren en beschikbaar maken voor eindgebruikers. De eindgebruikers kunnen het gepubliceerde formulier openen op elk apparaat en in de internetbrowser. Wanneer een adaptief formulier wordt gepubliceerd, worden het formulier en de bijbehorende inhoud gekopieerd van een AEM auteur naar een AEM publicatie-exemplaar. Het formulier wordt via het publicatieexemplaar beschikbaar gesteld voor de eindgebruiker.
 
@@ -31,8 +31,8 @@ U kunt op de volgende manieren een adaptief formulier publiceren:
 
 ## Voordat u begint {#before-you-start}
 
-* **[opstelling AEM Forms publiceert instantie ](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: De publiceer instantie is een openbaar onder ogen ziende instantie van AEM [!DNL Forms] die op publicatiewijze lopen. In een productieomgeving bevindt de publicatie-instantie zich buiten de firewall van de organisatie.
-* **[de replicatie van de opstelling en omgekeerde replicatie ](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**: De replicatie kopieert inhoud van de auteursinstantie aan publiceer instantie en keert gebruikersinput (bijvoorbeeld, vorminput) van terug publiceer instantie aan de auteursinstantie.
+* **[opstelling AEM Forms publiceert instantie ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: De publiceer instantie is een openbaar onder ogen ziende instantie van AEM [!DNL Forms] die op publicatiewijze lopen. In een productieomgeving bevindt de publicatie-instantie zich buiten de firewall van de organisatie.
+* **[de replicatie van de opstelling en omgekeerde replicatie ](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-deploying/replication.html)**: De replicatie kopieert inhoud van de auteursinstantie aan publiceer instantie en keert gebruikersinput (bijvoorbeeld, vorminput) van terug publiceer instantie aan de auteursinstantie.
 
 ## Het adaptieve formulier Publish als AEM pagina {#publish-the-adaptive-form-as-an-aem-page}
 
@@ -54,7 +54,7 @@ AEM [!DNL Forms] levert een component, AEM [!DNL Forms] Container, voor het insl
 
    U kunt het adaptieve formulier ook insluiten in een bestaande Web.Retail [!DNL Site's] -pagina. Bijvoorbeeld, ONDER Amerikaanse pagina [ https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html ](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Hiermee bespaart u de tijd om een pagina te maken. In de onderstaande stappen wordt de nieuwe pagina gebruikt.
 
-   De website We.Retail wordt verzonden met AEM. Als u niet de wij.Retail geïnstalleerde plaats hebt, zie [ Wij.Retail de Implementatie van de Verwijzing ](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) installeren de plaats.
+   De website We.Retail wordt verzonden met AEM. Als u niet de wij.Retail geïnstalleerde plaats hebt, zie [ Wij.Retail de Implementatie van de Verwijzing ](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-developing/we-retail.html) installeren de plaats.
 
 1. Selecteer ![ eigenschappen ](assets/properties.png) paginainformatie en selecteer de **[!UICONTROL Edit Template]** optie in de pas gecreëerde Web.Retail plaatspagina. De sjabloon van de pagina wordt geopend op een nieuw tabblad van de browser.
 1. Selecteer binnen de **[!UICONTROL layout container]** doos en selecteer ![ terugkoppel ](assets/feedmanagement.png). In het **[!UICONTROL Allowed Components]** lusje, breid **[!UICONTROL General]** accordion uit, selecteer de **[!UICONTROL AEM Form]** optie, en selecteer ![ save_icon ](assets/save_icon.svg). De AEM [!DNL Forms] Container-component is ingeschakeld voor de pagina.

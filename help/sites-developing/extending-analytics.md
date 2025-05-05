@@ -105,7 +105,7 @@ Opslagspecifiek:
 
 >[!NOTE]
 >
->Zie ook de volledige [ Verwijzing van ContextHub API ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Zie ook de volledige [ Verwijzing van ContextHub API ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## Recordcallbacks toevoegen {#adding-record-callbacks}
 

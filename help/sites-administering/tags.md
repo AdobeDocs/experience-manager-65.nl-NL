@@ -50,8 +50,8 @@ Enkele eigenschappen van markeringen binnen AEM omvatten:
    * Een tag die geen containertag is, wordt aangeduid als een bladtag
    * Een tagnaamruimte is een bladtag of een containertag
 
-* De markeringen worden gebruikt door de [ component van het Onderzoek ](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) om het vinden van inhoud te vergemakkelijken.
-* De markeringen worden gebruikt door de [ component van het Teaser ](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), die de de markeringswolk van een gebruiker controleert om gerichte inhoud te verstrekken.
+* De markeringen worden gebruikt door de [ component van het Onderzoek ](https://helpx.adobe.com/nl/experience-manager/core-components/using/quick-search.html) om het vinden van inhoud te vergemakkelijken.
+* De markeringen worden gebruikt door de [ component van het Teaser ](https://helpx.adobe.com/nl/experience-manager/core-components/using/teaser.html), die de de markeringswolk van een gebruiker controleert om gerichte inhoud te verstrekken.
 * Als labelen een belangrijk aspect van uw inhoud is
 
    * zorg ervoor dat de labels worden verpakt met de pagina&#39;s die deze gebruiken

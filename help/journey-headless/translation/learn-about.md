@@ -82,5 +82,5 @@ Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze v
 
 * [ MSM en Vertaling ](/help/sites-administering/msm-and-translation.md) - de details van AEM Meerdere-Plaats Manager en hoe het met zijn vertaalhulpmiddelen werkt
 * Een [ Inleiding aan AEM als Zwaartepunt CMS ](/help/sites-developing/headless/introduction.md)
-* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)

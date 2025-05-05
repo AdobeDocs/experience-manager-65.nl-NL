@@ -213,8 +213,8 @@ Bewerk de volgende Dynamic Media-instellingen door **[!UICONTROL Edit]** in de c
 
   Met viewermodifiers kunt u bijvoorbeeld het volgende doen:
 
-   * Koppel een bijschriftdossier met een video: [ titel ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Koppel een navigatiedossier met een video: [ navigatie ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Koppel een bijschriftdossier met een video: [ titel ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=nl-NL)
+   * Koppel een navigatiedossier met een video: [ navigatie ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=nl-NL)
 
      U kunt de volgende geavanceerde instellingen bewerken door **[!UICONTROL Edit]** te selecteren in de component.
 
@@ -359,9 +359,9 @@ Zie [ HTTP2 Levering van Inhoud ](/help/assets/http2.md) voor volledige details 
 
 >[!MORELIKETHIS]
 >
->* [ Gebruik de videospeler in Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
->* [ Interactieve Video van het Gebruik met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
->* [ Begrijp de Kijker van Activa met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
->* [ Gebruik een duimnagel van de douanevideo met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
->* [ Begrijp kleurenbeheer met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html)
->* [ Gebruikend beeld verscherpen met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
+>* [ Gebruik de videospeler in Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html?lang=nl-NL)
+>* [ Interactieve Video van het Gebruik met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html?lang=nl-NL)
+>* [ Begrijp de Kijker van Activa met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html?lang=nl-NL)
+>* [ Gebruik een duimnagel van de douanevideo met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html?lang=nl-NL)
+>* [ Begrijp kleurenbeheer met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html?lang=nl-NL)
+>* [ Gebruikend beeld verscherpen met Experience Manager Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html?lang=nl-NL)

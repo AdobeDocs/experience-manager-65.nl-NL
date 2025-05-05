@@ -24,7 +24,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -33,7 +33,7 @@ Met Adaptive Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve f
 
 Voordat u begint, moet u meer weten over het type Forms-componenten waarover u beschikt:
 
-* [ Aangepaste Componenten van de Kern van Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dit zijn gestandaardiseerde gegevens vangen componenten. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijving. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. Adobe beveelt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen.
+* [ Aangepaste Componenten van de Kern van Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL): Dit zijn gestandaardiseerde gegevens vangen componenten. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijving. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. Adobe beveelt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen.
 
 * [ Aangepaste Componenten van de Stichting van Forms ](creating-adaptive-form.md): Dit zijn klassieke (oude) gegevens vangen componenten. U kunt deze blijven gebruiken om uw bestaande basiscomponenten te bewerken op basis van adaptief formulier. Als u vormen creeert, adviseert de Adobe gebruikend [ Aangepaste Componenten van de Kern van Forms ](/help/forms/using/create-adaptive-form.md) om een Aangepaste Forms tot stand te brengen.
 
@@ -43,13 +43,13 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 * **laat de Aangepaste Componenten van de Kern van Forms voor uw milieu** toe: AEM Versie van het Archetype project 41 of recenter wordt vereist om [ de Componenten van de Kern voor uw milieu ](/help/forms/using/enable-adaptive-forms-core-components.md) toe te laten. Bij het toelaten van de Componenten van de Kern voor uw milieu, worden het **Aangepaste Forms (de Component van de Kern)** malplaatje en het thema van het Canvas toegevoegd aan uw milieu.
 
-* **een Adaptief malplaatje van de Vorm**: Een malplaatje verstrekt een basisstructuur en bepaalt verschijning (lay-outs en stijlen) van een Aangepast Vorm. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier. U kunt [ steekproefmalplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) aan uw milieu ook opstellen. Hiermee kunt u snel formulieren maken.
+* **een Adaptief malplaatje van de Vorm**: Een malplaatje verstrekt een basisstructuur en bepaalt verschijning (lay-outs en stijlen) van een Aangepast Vorm. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier. U kunt [ steekproefmalplaatjes ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL) aan uw milieu ook opstellen. Hiermee kunt u snel formulieren maken.
 
   >[!NOTE]
   >
   > Als u niet hebt, **Aangepaste Forms (de Component van de Kern)** malplaatje op uw milieu, [ laat de Aangepaste Componenten van de Kern van Forms voor uw milieu ](/help/forms/using/enable-adaptive-forms-core-components.md) toe. Bij het toelaten van de Componenten van de Kern voor uw milieu, wordt het **Aangepaste Forms (de Component van de Kern)** malplaatje toegevoegd aan uw milieu.
 
-* **een Adaptief thema van de Vorm**: Een thema bevat het stileren details voor de componenten en de panelen. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten.  Het thema `Canvas` wordt standaard toegevoegd wanneer u kerncomponenten inschakelt voor uw omgeving. U kunt [ de standaardthema&#39;s ](create-or-customize-themes-for-adaptive-forms-core-components.md) downloaden en aanpassen. Voor **uit de doos** thema&#39;s kunt u [ steekproefthema&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) aan uw milieu opstellen. Deze hulp u begint uw vormen te stileren en een basisstructuur te verstrekken om een thema tot stand te brengen of aan te passen volgens uw bedrijfsvereisten.
+* **een Adaptief thema van de Vorm**: Een thema bevat het stileren details voor de componenten en de panelen. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten.  Het thema `Canvas` wordt standaard toegevoegd wanneer u kerncomponenten inschakelt voor uw omgeving. U kunt [ de standaardthema&#39;s ](create-or-customize-themes-for-adaptive-forms-core-components.md) downloaden en aanpassen. Voor **uit de doos** thema&#39;s kunt u [ steekproefthema&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL) aan uw milieu opstellen. Deze hulp u begint uw vormen te stileren en een basisstructuur te verstrekken om een thema tot stand te brengen of aan te passen volgens uw bedrijfsvereisten.
 
 * **Toestemmingen**: Voeg uw gebruikers aan [!DNL forms-users] groep toe. De leden van de groep [!DNL forms-users] hebben machtigingen om een adaptief formulier te maken. Voor gedetailleerde lijst van vorm-specifieke gebruikersgroepen, zie [ Groepen en toestemmingen ](forms-groups-privileges-tasks.md).
 
@@ -57,12 +57,12 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Een adaptief formulier maken {#create-an-adaptive-form}
 
-1. Login aan uw lokale [ AEM auteursinstantie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
+1. Login aan uw lokale [ AEM auteursinstantie ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=nl-NL#author-and-publish-installs).
 
 1. Ga uw geloofsbrieven op de Experience Manager login pagina in. Nadat u zich hebt aangemeld, selecteert u in de linkerbovenhoek **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
@@ -86,7 +86,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 ## Gebruik Adaptieve Forms Core-componenten om uw formulier te maken
 
-Nadat u het formulier hebt geopend voor bewerking, kunt u met de beschikbare Adaptive Forms Core Components formuliervelden toevoegen aan uw formulier. U kunt slepen-en-daling of gebruiken + [ tussenvoegselcomponent ] optie om deze componenten aan een vorm toe te voegen. Zie, AEM de documentatie van de Componenten van de Kern om over beschikbare [ Aangepaste Componenten van de Kern van Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) te leren. U kunt [ https://aemcomponents.dev/ ](https://aemcomponents.dev/) ook bezoeken om beschikbare kerncomponenten in actie te bekijken.
+Nadat u het formulier hebt geopend voor bewerking, kunt u met de beschikbare Adaptive Forms Core Components formuliervelden toevoegen aan uw formulier. U kunt slepen-en-daling of gebruiken + [ tussenvoegselcomponent ] optie om deze componenten aan een vorm toe te voegen. Zie, AEM de documentatie van de Componenten van de Kern om over beschikbare [ Aangepaste Componenten van de Kern van Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL#components) te leren. U kunt [ https://aemcomponents.dev/ ](https://aemcomponents.dev/) ook bezoeken om beschikbare kerncomponenten in actie te bekijken.
 
 ## Handeling verzenden voor een adaptief formulier configureren {#configure-submit-action-for-form}
 
@@ -202,4 +202,4 @@ Voer de volgende stappen uit om de naam van een adaptief formulier te wijzigen:
 
 * [Een adaptief formulier op basis van kerncomponenten maken](create-an-adaptive-form-core-components.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [ de themasjablonen van de Steekproef en modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [ de themasjablonen van de Steekproef en modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL)

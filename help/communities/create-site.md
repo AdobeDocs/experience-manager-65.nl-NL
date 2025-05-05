@@ -119,7 +119,7 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->[ de dienst van de Tunnel ](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) staat selectie van leden en groepen toe die slechts in publiceren milieu bestaan.
+>[ de dienst van de Tunnel ](https://helpx.adobe.com/nl/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) staat selectie van leden en groepen toe die slechts in publiceren milieu bestaan.
 
 ![ gebruikersrollen in nieuwe plaats ](assets/site-admin-1.png)
 

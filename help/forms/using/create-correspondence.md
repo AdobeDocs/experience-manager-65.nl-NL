@@ -57,7 +57,7 @@ Selecteer de brief aan voorproef gebruikend de volgende stappen:
 
    >[!NOTE]
    >
-   >Voor meer informatie bij het schakelen tussen de vertoningswijze van de HTML of van de PDF vertoning van brievenvoorproef, zie [ de vertoningswijze van de Vertoning van de Verandering van brief ](#changerenditionmode). Voor meer informatie over de steun van PDF in het Beheer en AEM van de Correspondentie, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Voor meer informatie bij het schakelen tussen de vertoningswijze van de HTML of van de PDF vertoning van brievenvoorproef, zie [ de vertoningswijze van de Vertoning van de Verandering van brief ](#changerenditionmode). Voor meer informatie over de steun van PDF in het Beheer en AEM van de Correspondentie, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/nl/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Gegevens invoeren {#enterdata}
 
@@ -375,7 +375,7 @@ Voor meer informatie bij scripting steun in vormen HTML5, zie [ Scripting steun 
 
 Standaard gebruikt de gebruikersinterface Correspondentie maken de HTML- of mobiele formulieren om de lettertypevoorvertoning weer te geven. De voorvertoning van mobiele formulieren geeft in geen enkele browser een renderingprobleem omdat deze de native plug-in van de browser gebruikt en geen extra plug-ins nodig heeft. U kunt de modus voor lettertypevoorvertoning wijzigen in PDF. Browserbeperkingen kunnen echter problemen veroorzaken voor verschillende functies van de interactieve PDF-voorvertoning van de letter.
 
-Voor meer informatie over browser verenigbaarheid met brievenvoorproef, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Voor meer informatie over browser verenigbaarheid met brievenvoorproef, zie [ Sluiting van NPAPI browser stop-ins en zijn effect ](https://helpx.adobe.com/nl/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Voer de volgende stappen uit om de modus Voorvertoning van de letter te wijzigen:
 

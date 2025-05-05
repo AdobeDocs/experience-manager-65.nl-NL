@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-* Het begrip van AEM [ Malplaatje van de Pagina ](/help/sites-authoring/templates.md) en [ Aangepaste Authoring van de Vorm ](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Het begrip van AEM [ Malplaatje van de Pagina ](/help/sites-authoring/templates.md) en [ Aangepaste Authoring van de Vorm ](https://helpx.adobe.com/nl/aem-forms/6-1/introduction-forms-authoring.html)
 
 * Begrip van AEM [ Klantenzijbibliotheken ](/help/sites-developing/clientlibs.md)
 

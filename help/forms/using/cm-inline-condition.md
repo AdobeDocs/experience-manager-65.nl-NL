@@ -200,7 +200,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
    * Een voorbeeld-XML-gegevensbestand dat is gemaakt op basis van het relevante gegevenswoordenboek terwijl de letter wordt voorvertoond met voorbeeldgegevens.
    * Een XML-gegevensbestand dat is gekoppeld aan het desbetreffende gegevenswoordenboek.
 
-   Voor meer informatie, zie [ Woordenboek van Gegevens ](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
+   Voor meer informatie, zie [ Woordenboek van Gegevens ](https://helpx.adobe.com/nl/aem-forms/6-2/data-dictionary.html).
 
    ![ 6_repeatOutputPreview ](assets/6_repeatoutputpreview.png)
 

@@ -77,7 +77,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stap 4</strong></td>
    <td>Worden verzoeken afkomstig van de Dispatcher?</td>
-   <td><p>Om te zien of zijn de verzoeken behoorlijk in het voorgeheugen ondergebracht, controleer de <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#debugging"> Dispatcher het zuiveren documentatie </a>.<br /> </p> </td>
+   <td><p>Om te zien of zijn de verzoeken behoorlijk in het voorgeheugen ondergebracht, controleer de <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#debugging"> Dispatcher het zuiveren documentatie </a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 5</strong></td>
@@ -107,7 +107,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stappen 10 en 29</strong></td>
    <td>Onderzoek netwerklaag</td>
-   <td><p>Onderzoek de netwerklaag voor verzadiging en latentiekwesties.</p> <p>Voor de auteurslaag, adviseert men dat de latentie 100 milliseconden niet overschrijdt.</p> <p>Voor meer informatie over de uiteinden van de prestatiesoptimalisering, zie <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html"> deze pagina </a>.</p> </td>
+   <td><p>Onderzoek de netwerklaag voor verzadiging en latentiekwesties.</p> <p>Voor de auteurslaag, adviseert men dat de latentie 100 milliseconden niet overschrijdt.</p> <p>Voor meer informatie over de uiteinden van de prestatiesoptimalisering, zie <a href="https://helpx.adobe.com/nl/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html"> deze pagina </a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Stap 11</strong></td>
@@ -152,7 +152,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stap 19</strong></td>
    <td>100% CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html</a></td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL</a></td>
   </tr>
   <tr>
    <td><strong>Stap 20</strong></td>
@@ -161,7 +161,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Onvoldoende geheugen</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">Mijn toepassing genereert fouten vanwege onvoldoende geheugen</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html"> analyseer de Problemen van het Geheugen.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL"> analyseer de Problemen van het Geheugen.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -184,7 +184,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
    <td>Afstelling in opslagplaats</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Tips voor afstemmen van prestaties</a></li>
+     <li><a href="https://helpx.adobe.com/nl/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Tips voor afstemmen van prestaties</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configureren voor prestaties</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Afstelling van prestaties opslagplaats</a></li>
     </ul> </td>
@@ -212,7 +212,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Assets Synchronization Service</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Meerdere DAM-instanties</a></li>
-     <li>Het stemmen van prestaties het puntenartikel <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html"> hier </a>.<br /> </li>
+     <li>Het stemmen van prestaties het puntenartikel <a href="https://helpx.adobe.com/nl/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html"> hier </a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,20 +228,20 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stap 31</strong></td>
    <td>CDN gebruiken vóór Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn"> Gebruikend Dispatcher met een CDN </a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL#using-dispatcher-with-a-cdn"> Gebruikend Dispatcher met een CDN </a><br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 32</strong></td>
    <td>Gebruik sessiebeheer op Dispatcher-niveau om de AEM server te offloaden</td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Beveiligde sessies inschakelen</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-secure-sessions-sessionmanagement">Beveiligde sessies inschakelen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Stap 33</strong></td>
    <td>Verzoeken in cache plaatsen</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html">Algemene Dispatcher-configuratie</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Dispatcher Cache configureren</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL">Algemene Dispatcher-configuratie</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache">Dispatcher Cache configureren</a></li>
     </ol> <p>Hoe te om geheim voorgeheugenverhouding te verbeteren; maak verzoeken geheim voorgeheugen-geschikt (de beste praktijken van Dispatcher)</p> <p>Overweeg ook de onderstaande instellingen om uw cacheconfiguraties te optimaliseren <br /> </p>
     <ol>
      <li>Een no-cache-regel instellen voor een HTTP-aanvraag die geen GET is</li>
@@ -253,26 +253,26 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stap 34</strong></td>
    <td>Dispatcher-versie upgraden</td>
-   <td><p>U kunt de nieuwste versie van Dispatcher downloaden van:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html">Koppeling volgen</a></p> </td>
+   <td><p>U kunt de nieuwste versie van Dispatcher downloaden van:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=nl-NL">Koppeling volgen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Stap 35</strong></td>
    <td>Dispatcher configureren</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html"> Vormend Dispatcher </a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL"> Vormend Dispatcher </a><br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 36</strong></td>
    <td>Onvalidatie van cache controleren</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidatie van cache voor de auteurslaag;</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Cache Invalidation for the Publish tier.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidatie van cache voor de auteurslaag;</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-a-publishing-instance">Cache Invalidation for the Publish tier.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Stappen 37 en 38</strong></td>
    <td>Lazy-loading</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html"> zie de Zitting van Gem op AEM Prestaties van het Web.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=nl-NL"> zie de Zitting van Gem op AEM Prestaties van het Web.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 39</strong></td>
@@ -292,7 +292,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stap 49</strong></td>
    <td>Belastingsgrootte verkleinen</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md"> laat Gzip </a> toe en <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html"> krimpt de beeldgrootte </a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md"> laat Gzip </a> toe en <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=nl-NL"> krimpt de beeldgrootte </a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stappen 42 en 43</strong></td>
@@ -324,7 +324,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
   <tr>
    <td><strong>Stappen 50 en 51</strong></td>
    <td>JS-code blokkeren</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=nl-NL">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=nl-NL</a></td>
   </tr>
  </tbody>
 </table>

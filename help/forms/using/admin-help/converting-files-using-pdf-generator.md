@@ -116,7 +116,7 @@ U kunt de dossiers van PDF naar diverse dossierformaten uitvoeren, zoals die in 
 
    De omzettingstijd die wordt weergegeven wanneer het bestand wordt geconverteerd, kan groter zijn dan de waarde die u hier opgeeft. De Tijd van de Omzetting omvat de tijd die besteed aan het wachten op de draad of het proces, tijd wordt genomen om het dossier om te zetten, en de tijd die door de reserve omzetter (indien van toepassing) wordt genomen. tijd. De waarde bij Time-out opgeven is alleen de tijd die nodig is om het bestand om te zetten.
 
-1. (Facultatief) in **specificeer het profiel van Preflight** optie, doorbladert de klik, en selecteert a [ profiel van Preflight ](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight-profielen worden alleen gebruikt bij het converteren van documenten naar de indeling PDF/A (PDF archive).
+1. (Facultatief) in **specificeer het profiel van Preflight** optie, doorbladert de klik, en selecteert a [ profiel van Preflight ](https://helpx.adobe.com/nl/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight-profielen worden alleen gebruikt bij het converteren van documenten naar de indeling PDF/A (PDF archive).
 1. Klik op Export. Wanneer de conversie is voltooid, wordt een koppeling naar het geëxporteerde bestand weergegeven.
 1. Klik op de koppeling om het omgezette bestand weer te geven.
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Referentiethema&#39;s{#reference-themes}
 
-[ Thema&#39;s ](../../forms/using/themes.md) laat u uw vormen zonder diepe kennis van CSS opmaken. Naast het standaardthema, kunt u de volgende thema&#39;s krijgen door het [ toe:voegen-op pakket van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) te installeren:
+[ Thema&#39;s ](../../forms/using/themes.md) laat u uw vormen zonder diepe kennis van CSS opmaken. Naast het standaardthema, kunt u de volgende thema&#39;s krijgen door het [ toe:voegen-op pakket van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) te installeren:
 
 * Beryl
 * Exec

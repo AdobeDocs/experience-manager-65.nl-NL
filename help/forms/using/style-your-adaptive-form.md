@@ -19,11 +19,11 @@ Leer een aangepast thema te maken, afzonderlijke onderdelen op te maken en Webbe
 
 ![ held-beeld ](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
+Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
 
 ## Over de zelfstudie  {#about-the-tutorial}
 
-U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt kant-en-klare thema&#39;s toepassen die worden geleverd met de adaptieve formuliereditor of zelf aangepaste thema&#39;s maken. AEM [!DNL Forms] verstrekken a [ themaredacteur ](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) om douanethema&#39;s tot stand te brengen. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
+U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt kant-en-klare thema&#39;s toepassen die worden geleverd met de adaptieve formuliereditor of zelf aangepaste thema&#39;s maken. AEM [!DNL Forms] verstrekken a [ themaredacteur ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/themes.html) om douanethema&#39;s tot stand te brengen. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
 
 Aan het einde van de zelfstudie moet u het volgende kunnen doen:
 

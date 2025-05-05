@@ -34,7 +34,7 @@ Als u aan een online tijdschrift denkt, omvat de belangrijkste inhoud artikelen,
 
 >[!NOTE]
 >
->Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Hulp.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html) in Online Hulp.
 
 ## Inhoud maken en beheren {#creating-and-managing-content}
 

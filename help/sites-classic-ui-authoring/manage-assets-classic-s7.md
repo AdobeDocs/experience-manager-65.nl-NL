@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Dynamic Media Classic-functies (Scene7) toevoegen aan uw pagina{#adding-scene-features-to-your-page}
 
-[ Adobe Dynamic Media Classic (Scene7) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) is een ontvangen oplossing voor het beheren, verbeteren, publiceren, en het leveren van rijke media activa aan Web, mobiel, e-mail, en Internet-Verbonden vertoningen en druk.
+[ Adobe Dynamic Media Classic (Scene7) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=nl-NL) is een ontvangen oplossing voor het beheren, verbeteren, publiceren, en het leveren van rijke media activa aan Web, mobiel, e-mail, en Internet-Verbonden vertoningen en druk.
 
 U kunt Experience Manager-elementen die in Dynamic Media Classic (Scene7) zijn gepubliceerd, in verschillende viewers weergeven:
 

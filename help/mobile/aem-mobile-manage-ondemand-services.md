@@ -42,7 +42,7 @@ Met de Preflight-app Mobiel op aanvraag kunt u alle projecten weergeven waartoe 
 
 >[!NOTE]
 >
->De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren door pagina&#39;s. Om diepgaand over Preflight App te leren, klik [ hier ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren door pagina&#39;s. Om diepgaand over Preflight App te leren, klik [ hier ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Aan de slag {#getting-ahead}

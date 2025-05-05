@@ -28,7 +28,7 @@ AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschill
 
 * Als u AEM Forms gebruikt op OSGi:
 
-   * Installeer [ het pakket van de Indexer van de Veiligheid van het Document van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
+   * Installeer [ het pakket van de Indexer van de Veiligheid van het Document van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
 
    * Controleer of een AEM Forms op de JEE-server actief is en of documentbeveiliging op de overeenkomstige AEM Forms op de JEE-server is geïnstalleerd. Het AEM Formulier op de JEE-server is vereist om het beveiligde document te indexeren.
 

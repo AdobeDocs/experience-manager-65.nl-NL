@@ -45,7 +45,7 @@ Het inschakelen van de HTTPS-transportlaag op zowel auteur- als publicatieinstan
 
 ### Beveiligingshotfixes installeren {#install-security-hotfixes}
 
-Zorg ervoor dat u recentste [ Hotfixes van de Veiligheid hebt geïnstalleerd die door Adobe ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) wordt verstrekt.
+Zorg ervoor dat u recentste [ Hotfixes van de Veiligheid hebt geïnstalleerd die door Adobe ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL) wordt verstrekt.
 
 ### Standaardwachtwoorden voor de AEM- en OSGi-console-beheeraccounts wijzigen {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -110,11 +110,11 @@ Adobe raadt aan aangepaste fouthandlerpagina&#39;s te definiëren, met name voor
 
 >[!NOTE]
 >
->Zie [ hoe ik douanemanuscripten of foutenmanagers ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) voor meer details kan tot stand brengen.
+>Zie [ hoe ik douanemanuscripten of foutenmanagers ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=nl-NL) voor meer details kan tot stand brengen.
 
 ### Dispatcher-beveiligingscontrolelijst voltooien {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. De Adobe adviseert dat u de [ veiligheid checklist van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) voltooit.
+AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. De Adobe adviseert dat u de [ veiligheid checklist van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=nl-NL) voltooit.
 
 >[!CAUTION]
 >

@@ -39,7 +39,7 @@ Zie ook [ een Configuratie van Dynamic Media in Cloud Servicen ](/help/assets/co
 
 U begint een Dynamic Media-bedrijf aliasaccount te configureren door eerst een Support-case in te dienen. Deze stap is vereist.
 
-1. [ Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
+1. [ Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * De aliasnaam van het Dynamic Media-bedrijf die u wilt gebruiken. De naam moet *slechts* brieven bevatten (het gemengde toe te staan casing), aantallen, koppeltekens, en onderstrepingstekens.

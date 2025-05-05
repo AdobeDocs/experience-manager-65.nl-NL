@@ -87,7 +87,7 @@ De schakelaar steunt het volgende:
 
 ### Standaardinstallatie {#standard-installation}
 
-Softwaredistributie wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Voor details, zie de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
+Softwaredistributie wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Voor details, zie de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL#software-distribution).
 
 
 #### Integreren met AEM {#integrating-with-aem}

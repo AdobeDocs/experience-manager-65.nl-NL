@@ -47,7 +47,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 >[!NOTE]
 >
->Deze codesteekproef is verwant met de zitting van AEM Gems op [ het Aanpassen van de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>Deze codesteekproef is verwant met de zitting van AEM Gems op [ het Aanpassen van de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=nl-NL).
 
 ## Gerelateerde bronnen {#related-resources}
 

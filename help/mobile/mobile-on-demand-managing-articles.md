@@ -30,9 +30,9 @@ Artikelen vertegenwoordigen de tekst die samen met illustraties wordt gebaseerd 
 >
 >Zie de volgende bronnen in de online Help voor meer informatie over de volgende onderwerpen in AEM Mobile-apps:
 >
->* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
 >
->* [ het leiden van Artikelen ](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+>* [ het leiden van Artikelen ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Een artikel maken {#creating-an-article}

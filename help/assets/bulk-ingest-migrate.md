@@ -37,7 +37,7 @@ Zie ook [ vormen Dynamic Media - de wijze van Scene7 ](/help/assets/config-dms7.
 
 1. Navigeer in de instantie Experience Manager naar **[!UICONTROL Tool]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** en selecteer **[!UICONTROL Create User]** . Deze de dienstgebruiker moet *toestemmingen `/content/dam.` lezen/schrijven* hebben.
 1. Op de **[!UICONTROL ID]** en **[!UICONTROL Password]** gebieden, ga een gebruikersnaam en wachtwoord in; bijvoorbeeld, **Gebruiker van FTP**. Deze naam wordt in de tijdlijn weergegeven als de gebruiker die het element heeft gemaakt. Wanneer een element wordt geüpload vanaf FTP, wordt een element beschouwd als gemaakt wanneer het naar de FTP-server wordt geüpload en naar de Experience Manager wordt geduwd.
-1. De Steun van de Klant van de Adobe van het contact [ voor Experience Manager ](https://experienceleague.adobe.com/?support-solution=General#support) om toegang tot eigenschappak 18912 voor het downloaden te verzoeken. U hebt mogelijk de volgende informatie nodig wanneer u contact opneemt met de ondersteuningsafdeling:
+1. De Steun van de Klant van de Adobe van het contact [ voor Experience Manager ](https://experienceleague.adobe.com/nl?support-solution=General#support) om toegang tot eigenschappak 18912 voor het downloaden te verzoeken. U hebt mogelijk de volgende informatie nodig wanneer u contact opneemt met de ondersteuningsafdeling:
 
    * IP van de server adres voor uw instantie van de Auteur, met inbegrip van het havenaantal (door gebrek, is het havenaantal 4502.)
    * Gebruikersnaam en wachtwoord van de Experience Manager-service uit de vorige stap.

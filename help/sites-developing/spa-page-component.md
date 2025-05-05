@@ -91,7 +91,7 @@ De eigenschappen van de meta-bron die de SPA inhoud beschrijven:
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Niet gebruiken voor projectwerk.
 >
->Om het even welk AEM project zou het [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.Alle SPA projecten op AEM zouden op het Maven Archetype voor SPA Uitrusting van de Aanzet moeten worden gebaseerd.
+>Om het even welk AEM project zou het [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.Alle SPA projecten op AEM zouden op het Maven Archetype voor SPA Uitrusting van de Aanzet moeten worden gebaseerd.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 

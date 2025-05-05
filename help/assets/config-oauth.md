@@ -27,7 +27,7 @@ Verwijs naar [ configuratie van de slimme inhoudsdiensten ](#integrate-adobe-io)
 
 >[!NOTE]
 >
->Indien vereist, kunt u een steunkaartje na het [ steunproces ](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support) voorleggen.
+>Indien vereist, kunt u een steunkaartje na het [ steunproces ](https://experienceleague.adobe.com/nl?lang=en&amp;support-tab=home#support) voorleggen.
 
 ## OAuth-configuratie voor de bestaande AMS-gebruikers {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ Een configuratie OAuth vereist de volgende eerste vereisten:
 
 ### OAuth-configuratie voor de bestaande AMS- en On prem-gebruikers {#steps-config-oauth-onprem}
 
-De hieronder stappen kunnen door systeemadmin in **CRXDE** worden uitgevoerd. De klant van AMS kan uit aan de vertegenwoordiger van de Adobe bereiken of een steunkaartje na het [ steunproces voorleggen ](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+De hieronder stappen kunnen door systeemadmin in **CRXDE** worden uitgevoerd. De klant van AMS kan uit aan de vertegenwoordiger van de Adobe bereiken of een steunkaartje na het [ steunproces voorleggen ](https://experienceleague.adobe.com/nl?lang=en&amp;support-tab=home#support).
 
 1. Voeg de onderstaande eigenschappen toe of werk deze bij in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` :
 
@@ -89,7 +89,7 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
 >[!NOTE]
 >
->Als de fout `unsupported_grant_type` optreedt, installeert u de hotfix voor graniet. Verwijs naar [ migratie van de Rekening van de Dienst (JWT) naar de geloofsbrieven van Server-aan-Server van OAuth ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660).
+>Als de fout `unsupported_grant_type` optreedt, installeert u de hotfix voor graniet. Verwijs naar [ migratie van de Rekening van de Dienst (JWT) naar de geloofsbrieven van Server-aan-Server van OAuth ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-24660).
 
 ## Integreren met Adobe Developer Console {#integrate-adobe-io}
 
@@ -198,4 +198,4 @@ Als u de integratie wilt configureren, gebruikt u de waarden van de velden [!UIC
 >
 >* [ Overzicht en hoe te om Slimme Markeringen ](enhanced-smart-tags.md) te trainen
 >* [ vorm slimme het etiketteren ](config-smart-tagging.md)
->* [ Videozelfstudie over slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [ Videozelfstudie over slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=nl-NL)

@@ -19,17 +19,17 @@ ht-degree: 0%
 
 De steekproeven en de voorbeelden in dit document helpen u begrijpen en gebruiken AEM de Diensten van het Document op een AEM Forms op milieu OSGi. Zie voor voorbeelden en voorbeelden voor AEM Forms over JEE-omgeving
 
-* [ de Dienst van de Handtekening Java API Snelle Begin ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+* [ de Dienst van de Handtekening Java API Snelle Begin ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=nl-NL&#programming-aem-forms-jee)
 
-* [ Snelle Begin van de Dienst van de Encryptie Java API ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+* [ Snelle Begin van de Dienst van de Encryptie Java API ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=nl-NL&#developer-reference)
 
-* [ de uitbreidingenDienst Java API Snelle Begin van de Extensie van Acrobat Reader ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
+* [ de uitbreidingenDienst Java API Snelle Begin van de Extensie van Acrobat Reader ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=nl-NL&#developer-reference)
 
 ## Vereiste {#prerequisite}
 
 * Alvorens de dienst DocAssurance APIs te gebruiken, [ vormt de dienst DocAssurance ](/help/forms/using/install-configure-document-services.md).
 
-* De download en vormt [ de Cliënt SDK van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) met u AEM in kaart gebracht project. De cliëntklassen die worden vereist om Geweven Projecten te bouwen gebruikend AEM de Diensten van het Document zijn beschikbaar in de [ Cliënt SDK van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* De download en vormt [ de Cliënt SDK van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) met u AEM in kaart gebracht project. De cliëntklassen die worden vereist om Geweven Projecten te bouwen gebruikend AEM de Diensten van het Document zijn beschikbaar in de [ Cliënt SDK van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html)
 
 * Leer [ hoe te om uw AEM project te bouwen gebruikend Maven ](/help/sites-developing/ht-projects-maven.md)
 
@@ -71,7 +71,7 @@ U kunt de volgende verrichtingen uitvoeren gebruikend de dienst DocAssurance:
 
 >[!NOTE]
 >
->Al deze diensten gebruiken het voorwerp van het Document als inputparameter waarvoor Javadoc bij URL [ https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html ](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html) kan worden gevonden
+>Al deze diensten gebruiken het voorwerp van het Document als inputparameter waarvoor Javadoc bij URL [ https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/index.html ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/index.html) kan worden gevonden
 
 ### Een onzichtbaar handtekeningveld toevoegen {#adding-an-invisible-signature-field}
 
@@ -4466,7 +4466,7 @@ De service PDF Generator biedt API&#39;s waarmee native bestandsindelingen kunne
 De GeneratePDFService verstrekt APIs om diverse dossierformaten zoals .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (afgekeurd), .jpg, .bmp, .tif, .png, .html, en vele andere dossierformaten om te PDF. Het verstrekt ook APIs om PDF naar diverse dossierformaten uit te voeren en PDF te optimaliseren. De service ondersteunt de volgende API&#39;s:
 
 * **createPDF**: Zet een gesteund dossiertype in een document van PDF om. Bestandsindelingen worden ondersteund, zoals Microsoft Word, Microsoft PowerPoint, Microsoft Excel en Microsoft Project. Naast deze toepassingen, kan om het even welk derdegenerisch PDF die toepassingstype produceren ook in API worden gestopt.
-* **exportPDF**: Converteert een document van PDF naar een gesteund dossiertype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling. U kunt een PDF-document exporteren in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 met CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG 2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word-document ( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint-presentatie( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a (sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3a(sRGB), /A-3b(sRGB). U kunt [ profielen van de douanePreflight ](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) voor de output van PDF ook specificeren.
+* **exportPDF**: Converteert een document van PDF naar een gesteund dossiertype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling. U kunt een PDF-document exporteren in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 met CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG 2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word-document ( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint-presentatie( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a (sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3a(sRGB), /A-3b(sRGB). U kunt [ profielen van de douanePreflight ](https://helpx.adobe.com/nl/acrobat/using/preflight-profiles-acrobat-pro.html) voor de output van PDF ook specificeren.
 
 * **optimizePDF**: Optimizes het document van de PDF en zet ook een document van de PDF van één type in een andere om. De methode accepteert een PDF-document als invoer.
 * **htmlToPdf2**: Zet een pagina van HTML in een document van PDF om. De URL van de HTML-pagina wordt als invoer geaccepteerd.

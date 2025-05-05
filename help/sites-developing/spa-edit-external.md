@@ -28,9 +28,9 @@ In dit document worden de aanbevolen stappen beschreven voor het uploaden van ee
 De voorwaarden zijn eenvoudig.
 
 * Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd.
-* Creeer een basis AEM SPA project gebruikend [ het Archetype van het Project van de AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
+* Creeer een basis AEM SPA project gebruikend [ het Archetype van het Project van de AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL&#available-properties).
    * Dit vormt de basis van het AEM project dat zal worden bijgewerkt met de externe SPA.
-   * De steekproeven in dit document gebruiken het uitgangspunt van [ het WKND SPA project ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
+   * De steekproeven in dit document gebruiken het uitgangspunt van [ het WKND SPA project ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL#spa-editor).
 * Heb de werkende, externe Reactie SPA die u bij hand wilt integreren.
 
 ## SPA uploaden naar AEM project {#upload-spa-to-aem-project}
@@ -372,8 +372,8 @@ De component RemotePage verwacht dat de implementatie activa-manifest zoals [ we
 
 Het volgende referentiemateriaal kan nuttig zijn om SPA in de context van AEM te begrijpen.
 
-* [ The AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [ het WKND SPA project ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
+* [ The AEM Project Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
+* [ het WKND SPA project ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL)
 * [Aan de slag met SPA in AEM Reageren gebruiken](spa-getting-started-react.md)
 * [Referentiematerialen SPA (API-referenties)](spa-reference-materials.md)
 * [SPA Bladeren en PageModelManager](spa-blueprint.md#pagemodelmanager)

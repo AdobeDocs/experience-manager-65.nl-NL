@@ -20,13 +20,13 @@ ht-degree: 0%
 
 U kunt een directe upgrade uitvoeren van AEM 6.3 Forms of AEM 6.4 Forms naar AEM 6.5 Forms.
 
-De directe verbeteringsweg van **AEM 6.0 Forms, AEM 6.1 Forms**, en **AEM 6.2 Forms** aan AEM 6.5 Forms is niet beschikbaar. Voer een tussenliggende [ verbetering aan AEM 6.2 Forms ](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html) uit, [ verbetering aan AEM 6.3 Forms ](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html), of [ verbetering aan AEM 6.4 Forms ](/help/forms/using/upgrade.md) en dan verbetering van AEM 6.3 Forms, of AEM 6.4 Forms aan AEM 6.5.
+De directe verbeteringsweg van **AEM 6.0 Forms, AEM 6.1 Forms**, en **AEM 6.2 Forms** aan AEM 6.5 Forms is niet beschikbaar. Voer een tussenliggende [ verbetering aan AEM 6.2 Forms ](https://helpx.adobe.com/nl/experience-manager/6-2/forms/using/upgrade.html) uit, [ verbetering aan AEM 6.3 Forms ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/upgrade.html), of [ verbetering aan AEM 6.4 Forms ](/help/forms/using/upgrade.md) en dan verbetering van AEM 6.3 Forms, of AEM 6.4 Forms aan AEM 6.5.
 
 Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 Forms naar AEM 6.5 Forms:
 
 1. Upgrade de bestaande AEM naar AEM 6.5. De stappen worden hieronder weergegeven:
 
-   1. Installeer het nieuwste servicepakket en de nieuwste patches voor AEM 6.3 Forms of AEM 6.4 Forms. Voor details, zie [ AEM de Hub van de Aanpassing ](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+   1. Installeer het nieuwste servicepakket en de nieuwste patches voor AEM 6.3 Forms of AEM 6.4 Forms. Voor details, zie [ AEM de Hub van de Aanpassing ](https://helpx.adobe.com/nl/experience-manager/aem-releases-updates.html).
    1. Bereid de broninstantie voor de verbetering voor. Voor gedetailleerde stappen, zie [ Bevorderend aan AEM 6.5 ](/help/sites-deploying/upgrade.md).
    1. Download [ AEM 6.5 QuickStart ](/help/sites-deploying/deploy.md#getting%20the%20software).
    1. **(Unix/Linux-Gebaseerde installaties slechts)** als u UNIX of Linux als onderliggend werkend systeem gebruikt, open het eindvenster, navigeer aan de omslag die crx-quickstart bevat, en stel het volgende bevel in werking:
@@ -49,10 +49,10 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
       1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
       1. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
    1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-   1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+   1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
    1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [ wordt vermeld versies van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
+      U kunt het pakket ook downloaden gebruikend de directe verbinding die in [ wordt vermeld versies van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) artikel.
 
       >[!NOTE]
       >
@@ -70,7 +70,7 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 
      Het migratiehulpprogramma maakt de adaptieve formulieren en het beheer van correspondentie van eerdere versies compatibel met AEM 6.5-formulieren. U kunt het hulpprogramma downloaden van AEM softwaredistributie. Voor geleidelijke informatie om het migratienut te vormen en te gebruiken, zie [ migratienut ](../../forms/using/migration-utility.md).
 
-     Als u [ Steekproef voor het integreren van concepten &amp; voorleggingscomponent ](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
+     Als u [ Steekproef voor het integreren van concepten &amp; voorleggingscomponent ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en de bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am

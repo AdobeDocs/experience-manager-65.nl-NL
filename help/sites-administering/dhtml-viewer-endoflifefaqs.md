@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Met ingang van 31 januari 2014 is het DHTML-viewerplatform officieel levenseinde.
 
-Zie de [ Gids van de Verwijzing van de Kijkers van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) voor de recentste gesteunde kijkers.
+Zie de [ Gids van de Verwijzing van de Kijkers van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=nl-NL) voor de recentste gesteunde kijkers.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
@@ -131,5 +131,5 @@ Although you can still be live in production with DHTML-based viewers, it is imp
 
 **Who do I contact for more information?**
 
-If this FAQ did not answer all of your questions, [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
+If this FAQ did not answer all of your questions, [use the Admin Console to create a support case](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
  -->

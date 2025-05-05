@@ -39,7 +39,7 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 >U kunt de [ component van de Verwijzing ](/help/sites-authoring/default-components-foundation.md#reference) ook gebruiken om één enkele pagina of paragraaf opnieuw te gebruiken. Houd echter rekening met:
 >
 >* MSM is flexibeler en staat fijnkorrelige controle over toe welke inhoud wordt gesynchroniseerd en wanneer.
->* {de componenten van 0} Kern [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden nu geadviseerd over de stichtingscomponenten.
+>* {de componenten van 0} Kern [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) worden nu geadviseerd over de stichtingscomponenten.
 >
 
 ## Live Copy-bronnen en configuraties voor blauwdrukken {#live-copy-sources-and-blueprint-configurations}

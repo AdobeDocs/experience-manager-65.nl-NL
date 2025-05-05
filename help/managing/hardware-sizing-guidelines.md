@@ -107,7 +107,7 @@ Terwijl alle systemen actief zijn, zijn er betere computerprestaties beschikbaar
 De schatting van het aantal clusterknooppunten dat nodig is, is gebaseerd op de basisvereisten en de specifieke gebruiksgevallen van het specifieke webproject:
 
 * Vanuit het perspectief van mislukken-veiligheid, is het noodzakelijk om, voor alle milieu&#39;s te bepalen hoe kritieke mislukking en de tijd van de mislukkingscompensatie is gebaseerd op hoe lang het voor een clusterknoop vergt om terug te krijgen.
-* Voor het aspect van scalability, is het aantal schrijfverrichtingen fundamenteel de belangrijkste factor. Het in evenwicht brengen van de lading kan voor verrichtingen worden gevestigd die tot het systeem slechts toegang hebben om gelezen verrichtingen te verwerken; zie [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor details.
+* Voor het aspect van scalability, is het aantal schrijfverrichtingen fundamenteel de belangrijkste factor. Het in evenwicht brengen van de lading kan voor verrichtingen worden gevestigd die tot het systeem slechts toegang hebben om gelezen verrichtingen te verwerken; zie [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) voor details.
 
 ### Hardware Recommendations {#hardware-recommendations}
 

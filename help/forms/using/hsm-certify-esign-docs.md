@@ -28,7 +28,7 @@ Adobe Experience Manager Forms kan referenties gebruiken die zijn opgeslagen op 
 
 ## Voordat u HSM configureert of de apparaten instelt met AEM Forms {#configurehsmetoken}
 
-* Installeer het [ toe:voegen-op ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pakket van AEM Forms.
+* Installeer het [ toe:voegen-op ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) pakket van AEM Forms.
 * Installeer en configureer HSM of installeer de clientsoftware op dezelfde computer als de AEM. De cliëntsoftware wordt vereist om met HSM en apparaten te communiceren.
 
 ## De DocAssurance-service inschakelen {#configuredocassurance}

@@ -183,9 +183,9 @@ Voor gedetailleerde configuraties van de stop-ins van RTE, zie [ hoe te om de st
 
 >[!NOTE]
 >
->De [ de tekstcomponent van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) staat malplaatjeredacteurs toe om vele steekmodules van RTE in een GUI als inhoudsbeleid te vormen, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven.
+>De [ de tekstcomponent van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL#the-text-component-and-the-rich-text-editor) staat malplaatjeredacteurs toe om vele steekmodules van RTE in een GUI als inhoudsbeleid te vormen, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven.
 >
->Voor meer informatie, zie de [ montages van RTE UI en de inhoud ](/help/sites-administering/rich-text-editor.md) sectie van dit document en [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md) en de [ de ontwikkelaarsdocumentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+>Voor meer informatie, zie de [ montages van RTE UI en de inhoud ](/help/sites-administering/rich-text-editor.md) sectie van dit document en [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md) en de [ de ontwikkelaarsdocumentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=nl-NL).
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ De beschikbare opties in RTE stromen stroomafwaarts van de configuraties van het
 * Als de gebruikersinterfaceconfiguratie van RTE verwijderde of geen punt toelaat, kan het inhoudsbeleid niet het vormen.
 * Een auteur heeft toegang tot slechts dergelijke functionaliteit die door de gebruikersinterfaceconfiguraties en het inhoudsbeleid ter beschikking wordt gesteld.
 
-Als voorbeeld, kunt u de [ documentatie van de Component van de Kern van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor) zien.
+Als voorbeeld, kunt u de [ documentatie van de Component van de Kern van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=nl-NL#the-text-component-and-the-rich-text-editor) zien.
 
 ## Toewijzing aanpassen tussen werkbalkpictogrammen en -opdrachten {#iconstoolbar}
 

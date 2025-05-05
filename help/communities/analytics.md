@@ -87,17 +87,17 @@ Om Analytics voor de eigenschappen van Gemeenschappen te vormen, is het noodzake
 
 ## Adobe Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
-Gebruikend de Manager van de Reeks van het Rapport van Adobe Experience Cloud [&#128279;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html), kunnen de het rapportsuites van Analytics worden gevormd zodat een communautaire plaats kan worden toegelaten om rapporten voor de eigenschappen van Gemeenschappen te verstrekken.
+Gebruikend de Manager van de Reeks van het Rapport van Adobe Experience Cloud [&#128279;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=nl-NL), kunnen de het rapportsuites van Analytics worden gevormd zodat een communautaire plaats kan worden toegelaten om rapporten voor de eigenschappen van Gemeenschappen te verstrekken.
 
-Door binnen aan [ Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) met [ Naam van het Bedrijf en Naam van de Gebruiker ](/help/communities/analytics.md#prerequisites) te ondertekenen, is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
+Door binnen aan [ Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=nl-NL) met [ Naam van het Bedrijf en Naam van de Gebruiker ](/help/communities/analytics.md#prerequisites) te ondertekenen, is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
 
-* [ 11 de Variabelen van de Omzetting ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) (eVars)
+* [ 11 de Variabelen van de Omzetting ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=nl-NL) (eVars)
 
    * **`evar1`** tot en met **`evar11`** ingeschakeld
 
    * Kan bestaande eVars opnieuw gebruiken (naam wijzigen) of bestaande eVars maken voor gebruik door communautaire functies
 
-* [ 7 Gebeurtenissen van het Succes ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) (gebeurtenissen)
+* [ 7 Gebeurtenissen van het Succes ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=nl-NL) (gebeurtenissen)
 
    * **`event1`** tot en met **`event7`** ingeschakeld
 
@@ -107,7 +107,7 @@ Door binnen aan [ Adobe Experience Cloud ](https://experienceleague.adobe.com/do
 
    * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
-* [ Videobeheer ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [ Videobeheer ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL)
 
    * Video Reporting-console
 
@@ -655,10 +655,10 @@ Bijvoorbeeld: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 ## Gebruikersgegevens beheren in Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen. Voor meer informatie, zie [ Verzoeken van de Toegang voorleggen en van de Schrapping ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html).
+Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen. Voor meer informatie, zie [ Verzoeken van de Toegang voorleggen en van de Schrapping ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=nl-NL).
 
 ## Bronnen {#resources}
 
-* Adobe Experience Cloud: [ de Hulp en Verwijzing van Analytics ](https://experienceleague.adobe.com/docs/analytics.html)
+* Adobe Experience Cloud: [ de Hulp en Verwijzing van Analytics ](https://experienceleague.adobe.com/docs/analytics.html?lang=nl-NL)
 * AEM: [ Integrerend met Adobe Analytics ](/help/sites-administering/adobeanalytics.md)
 * AEM: [ Analytics met Externe Leveranciers ](/help/sites-administering/external-providers.md)

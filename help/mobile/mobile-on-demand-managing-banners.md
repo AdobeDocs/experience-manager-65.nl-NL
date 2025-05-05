@@ -30,9 +30,9 @@ Banners vertegenwoordigen doorgaans grafische promotionele koppelingen.
 >
 >Zie de volgende bronnen in de online Help voor meer informatie over de volgende onderwerpen in AEM Mobile-apps:
 >
->* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
 >
->* [ Creërend Banners ](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>* [ Creërend Banners ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Een banner maken {#creating-a-banner}

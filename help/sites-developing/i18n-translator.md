@@ -385,4 +385,4 @@ Ook het testen van woordenboektekenreeksen moet worden uitgevoerd als onderdeel 
 
 >[!NOTE]
 >
->Wanneer het gebruiken van Dispatcher, moet u [ ongeldig maken caching pagina&#39;s ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) om nieuwe dicationaire koorden in teruggegeven componentenkoorden te omvatten.
+>Wanneer het gebruiken van Dispatcher, moet u [ ongeldig maken caching pagina&#39;s ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html) om nieuwe dicationaire koorden in teruggegeven componentenkoorden te omvatten.

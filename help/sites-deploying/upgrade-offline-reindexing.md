@@ -180,7 +180,7 @@ U wordt aangeraden het productiesysteem te klonen en de offline index te maken m
 
 ### Een runbook en proefversie voorbereiden {#prepare-a-runbook-and-trial-run}
 
-Het wordt geadviseerd om a [ runbook ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) voor te bereiden en een paar proeven uit te voeren alvorens de verbetering in productie in werking te stellen.
+Het wordt geadviseerd om a [ runbook ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=nl-NL#building-the-upgrade-and-rollback-runbook) voor te bereiden en een paar proeven uit te voeren alvorens de verbetering in productie in werking te stellen.
 
 ### Doc Traversal Mode with Offline Indexing {#doc-traversal-mode-with-offline-indexing}
 

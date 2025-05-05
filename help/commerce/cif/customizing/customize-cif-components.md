@@ -184,7 +184,7 @@ Daarna, breidt u de bedrijfslogica van de Teaser van het Product door een het Ve
 
 Het verkopen Modellen wordt uitgevoerd als Java™ en kan in de **kern** module van het geproduceerde project worden gevonden.
 
-Gebruik [ winde van uw keus ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
+Gebruik [ winde van uw keus ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL&#microsoft-visual-studio-code).
 
 1. In uw winde, navigeer onder de **kern** module aan: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
@@ -324,9 +324,9 @@ Dit is een nieuwe methode om de logica in te kapselen om erop te wijzen als het 
 
 ## De opmaak van de producttaser aanpassen {#customize-markup-product-teaser}
 
-Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Dit wordt gedaan door het [ manuscript van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) met voeten te treden dat de component gebruikt om zijn prijsverhoging terug te geven. De Taal van het Malplaatje van de HTML (HTL), is een lichtgewichtmalplaatjetaal die AEM componenten gebruiken om prijsverhoging dynamisch terug te geven die op authored inhoud wordt gebaseerd, toestaand de componenten om worden opnieuw gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
+Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Dit wordt gedaan door het [ manuscript van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) met voeten te treden dat de component gebruikt om zijn prijsverhoging terug te geven. De Taal van het Malplaatje van de HTML (HTL), is een lichtgewichtmalplaatjetaal die AEM componenten gebruiken om prijsverhoging dynamisch terug te geven die op authored inhoud wordt gebaseerd, toestaand de componenten om worden opnieuw gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
 
-In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat het product &quot;Milieuvriendelijk&quot;gebaseerd op een douaneattribuut is. Het ontwerppatroon voor [ die de prijsverhoging ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component aanpassen is standaard voor alle AEM Componenten, niet alleen voor de AEM Componenten van de Kern CIF.
+In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat het product &quot;Milieuvriendelijk&quot;gebaseerd op een douaneattribuut is. Het ontwerppatroon voor [ die de prijsverhoging ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=nl-NL#customizing-the-markup) van een component aanpassen is standaard voor alle AEM Componenten, niet alleen voor de AEM Componenten van de Kern CIF.
 
 >[!NOTE]
 >
@@ -346,7 +346,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
        componentGroup="Venia - Commerce"/>
    ```
 
-   De componentdefinitie voor de Product Teaser Component in dit project is hierboven. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` . Dit is een voorbeeld van het creëren van de component van de Volmacht van de a [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van alle HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u de `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
+   De componentdefinitie voor de Product Teaser Component in dit project is hierboven. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` . Dit is een voorbeeld van het creëren van de component van de Volmacht van de a [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=nl-NL#create-proxy-components). In plaats van alle HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u de `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
 
 1. Open het bestand `productteaser.html` . Dit is een exemplaar van het `productteaser.html` dossier van de [ CIF Taser van het Product ](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -386,7 +386,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    Wanneer u een methode van het Sling Model in HTML aanroept, wordt het `get` - en `is` -gedeelte van de methode verwijderd en wordt de eerste letter verlaagd. Dus `isShowBadge()` wordt `.showBadge` en `isEcoFriendly` wordt `.ecoFriendly` . Op basis van de Booleaanse waarde die door `.isEcoFriendly()` wordt geretourneerd, wordt bepaald of de `<span>Eco Friendly</span>` wordt weergegeven.
 
-   Voor meer informatie over `data-sly-test` en andere het blokverklaringen van HTML zien [ de Specificatie van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   Voor meer informatie over `data-sly-test` en andere het blokverklaringen van HTML zien [ de Specificatie van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=nl-NL).
 
 1. Sparen de veranderingen en stel de updates in om AEM te gebruiken uw Maven vaardigheden, van een bevel-lijn terminal op te stellen:
 
@@ -490,9 +490,9 @@ Herzie de functionaliteit van de **Nieuwe** badge die reeds in de Teaser van het
 
 ## Aanvullende bronnen {#additional-resources}
 
-- [AEM Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL)
 - [ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components)
 - [ Aanpassen AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components)
-- [ het Aanpassen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [ het Aanpassen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=nl-NL)
+- [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
 - [Gebruik van CIF product- en rubriekkiezer](use-cif-pickers.md)

@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van de Adobe. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
@@ -27,7 +27,7 @@ Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatist
 
 Als u met [!DNL Assets] inzichten gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Om Assets Insights gebruiksstatistieken voor activa te laten weergeven, configureert u eerst de functie voor het ophalen van rapportgegevens uit Adobe Analytics. Voor details, zie [ de Inzichten van Assets ](/help/assets/configure-asset-insights.md) vormen. Als u deze functie in een on-premise installatie wilt gebruiken, moet u de [!DNL Adobe Analytics] -licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen een [!DNL Analytics] -licentie die is gebundeld met [!DNL Experience Manager] . Zie [ Managed Services productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Om Assets Insights gebruiksstatistieken voor activa te laten weergeven, configureert u eerst de functie voor het ophalen van rapportgegevens uit Adobe Analytics. Voor details, zie [ de Inzichten van Assets ](/help/assets/configure-asset-insights.md) vormen. Als u deze functie in een on-premise installatie wilt gebruiken, moet u de [!DNL Adobe Analytics] -licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen een [!DNL Analytics] -licentie die is gebundeld met [!DNL Experience Manager] . Zie [ Managed Services productbeschrijving ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >

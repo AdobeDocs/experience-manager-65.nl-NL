@@ -37,11 +37,11 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
   </tr>
   <tr>
    <td><p>Algemene informatie over AEM Forms en de wijze waarop het geïntegreerd is met andere Adobe producten</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en"> het Overzicht van AEM Forms </a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=nl-NL"> het Overzicht van AEM Forms </a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Alle documentatie die beschikbaar is voor AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en"> documentatie van AEM Forms </a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=nl-NL"> documentatie van AEM Forms </a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Reparatie-updates, technische notities en aanvullende informatie over deze productversie</p> </td>
@@ -191,7 +191,7 @@ Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meesta
 
 ### Instellingen voor time-out configureren {#configuring-timeout-settings}
 
-Workbench is na twee uur standaard uitgevallen, ongeacht de activiteit of inactiviteit. Om onderbreking uit te geven die, zie &quot;het Vormen Beheer van de Gebruiker > Geavanceerde systeemattributen&quot;in de <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html"> hulp van de beleidsconsole </a> vormt.
+Workbench is na twee uur standaard uitgevallen, ongeacht de activiteit of inactiviteit. Om onderbreking uit te geven die, zie &quot;het Vormen Beheer van de Gebruiker > Geavanceerde systeemattributen&quot;in de <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=nl-NL"> hulp van de beleidsconsole </a> vormt.
 
 ### Workbench configureren voor verbinding via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

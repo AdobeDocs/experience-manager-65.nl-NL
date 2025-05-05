@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 De video-indeling is een essentieel onderdeel van digitale middelen van een organisatie. [!DNL Adobe Experience Manager] biedt geavanceerde aanbiedingen en functies om de volledige levenscyclus van uw video-elementen te beheren nadat deze zijn gemaakt.
@@ -44,7 +44,7 @@ In [!DNL Assets] kunt u standaard geen elementen uploaden die groter zijn dan 2 
 Wijzig, naast de [!DNL Assets] -configuratie, de volgende configuraties om grote elementen te uploaden:
 
 * Verhoog de vervaltijd van het token. Zie [!UICONTROL Adobe Granite CSRF Servlet] in webconsole op `https://[aem_server]:[port]/system/console/configMgr` . Voor meer informatie, zie {bescherming 0} CSRF [&#128279;](/help/sites-developing/csrf-protection.md).
-* Verhoog de `receiveTimeout` in Dispatcher-configuratie. Voor meer informatie, zie {de configuratie van Dispatcher van de Experience Manager 0} [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Verhoog de `receiveTimeout` in Dispatcher-configuratie. Voor meer informatie, zie {de configuratie van Dispatcher van de Experience Manager 0} [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#renders-options).
 
 >[!NOTE]
 >
@@ -439,7 +439,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 1. Klik in de rechterbovenhoek van de eigenschappenpagina van de video op **[!UICONTROL Save and Close]** .
 1. Klik op **[!UICONTROL Quick Publish]** op de werkbalk.
 
-   Zie ook [ Gebruikend het Beheer van de Publicatie met Experience Manager Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
+   Zie ook [ Gebruikend het Beheer van de Publicatie met Experience Manager Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=nl-NL).
 
    U kunt desgewenst de gepubliceerde video op uw YouTube-kanaal verifiëren.
 

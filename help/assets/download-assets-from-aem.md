@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit [!DNL Adobe Experience Manager Assets] verzenden. Gedownloade elementen worden opgenomen in een ZIP-bestand. Het gecomprimeerde ZIP-bestand heeft een maximale bestandsgrootte van 1 GB voor de exporttaak. Er zijn maximaal 500 totale elementen per exporttaak toegestaan.
@@ -80,13 +80,13 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 `Asset Download Servlet` kan op een [!DNL Experience Manager] Publish-instantie worden uitgeschakeld door de configuratie van de verzender bij te werken om aanvragen voor het downloaden van middelen te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
-1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [ filtersectie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter) toe. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [ filtersectie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#defining-a-filter) toe. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Om de component OSGi op een instantie van Publish onbruikbaar te maken, heb toegang tot de Console OSGi bij `http://[aem_server]:[port]/system/console/components`. Zoek `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` en klik op **[!UICONTROL Disable]** .
 
 >[!MORELIKETHIS]
 >
->* [ de activa van de Download gebruikend Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [ de activa van de Download gebruikend Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=nl-NL)
 >* [ Download DRM beschermde activa ](drm.md).
->* [ de activa van de Download gebruikend Desktop app van de Experience Manager op de Desktop van Win of van Mac ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
+>* [ de activa van de Download gebruikend Desktop app van de Experience Manager op de Desktop van Win of van Mac ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#download-assets).
 >* [ de activa van de Download gebruikend de Verbinding van Assets van de Adobe van binnen gesteunde apps van Adobe Creative Cloud ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).

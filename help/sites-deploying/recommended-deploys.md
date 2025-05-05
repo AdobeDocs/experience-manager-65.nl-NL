@@ -190,7 +190,7 @@ Een reeks eerste vereisten en aanbevelingen is beschikbaar als u een plaatsing M
 
 >[!NOTE]
 >
->Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren {de Zorg van de Klant van de Adobe 0} [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren {de Zorg van de Klant van de Adobe 0} [&#128279;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html).
 
 ### Overwegingen voor AEM Communities {#considerations-for-aem-communities}
 

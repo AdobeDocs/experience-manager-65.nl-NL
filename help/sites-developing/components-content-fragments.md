@@ -32,7 +32,7 @@ Zie het [ Beheer API van het Fragment van de Inhoud - cliënt-kant ](/help/sites
 
 >[!CAUTION]
 >
->De [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) wordt nu geadviseerd. Zie [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer details.
+>De [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL) wordt nu geadviseerd. Zie [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor meer details.
 >
 >Deze sectie detailleert de originele die component voor gebruik met inhoudsfragmenten (**wordt geleverd het Fragment van de Inhoud** in de **Algemene** groep).
 

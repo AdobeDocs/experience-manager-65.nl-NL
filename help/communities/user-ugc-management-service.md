@@ -29,7 +29,7 @@ Voor verdere informatie zie de [ pagina GDPR bij het Centrum van de Privacy van 
 
 >[!NOTE]
 >
->Als u [ Adobe Analytics in AEM Communities ](/help/communities/analytics.md) plaats vormde, wordt het gevangen gebruikersgegeven verzonden naar de server van Adobe Analytics. Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen en die voldoen aan GDPR. Voor meer informatie, zie [ Verzoeken van de Toegang voorleggen en van de Schrapping ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>Als u [ Adobe Analytics in AEM Communities ](/help/communities/analytics.md) plaats vormde, wordt het gevangen gebruikersgegeven verzonden naar de server van Adobe Analytics. Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen en die voldoen aan GDPR. Voor meer informatie, zie [ Verzoeken van de Toegang voorleggen en van de Schrapping ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=nl-NL).
 
 Om deze APIs aan gebruik te zetten, moet u het `/services/social/ugcmanagement` eindpunt toelaten door de dienst te activeren UserUgcManagement. Om deze dienst te activeren, installeer [ steekproefservlet ](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) beschikbaar op [ GitHub.com ](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Dan, slag het eindpunt op publiceer geval van uw communautaire plaats met aangewezen parameters gebruikend een HTTP- verzoek, gelijkend op:
 
@@ -61,7 +61,7 @@ Als u bijvoorbeeld de UGC wilt verwijderen van een gebruiker met de machtigbare 
 
 ### UGC verwijderen uit Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Om gebruikersgegevens van Adobe Analytics te schrappen, volg het [ GDPR Analytics werkschema ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); aangezien API gebruikersgegevens van Adobe Analytics niet schrapt.
+Om gebruikersgegevens van Adobe Analytics te schrappen, volg het [ GDPR Analytics werkschema ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=nl-NL); aangezien API gebruikersgegevens van Adobe Analytics niet schrapt.
 
 Raadpleeg de volgende afbeelding voor Adobe Analytics-variabeletoewijzingen die AEM Communities gebruikt:
 

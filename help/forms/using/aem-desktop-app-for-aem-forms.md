@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Met AEM bureaubladtoepassing kunt u de binaire bestanden van Adobe Experience Manager (AEM) Assets en AEM Forms toewijzen aan een netwerkmap op uw systeem. U kunt de gesynchroniseerde elementen en binaire bestanden weergeven in een bestandsverkenner en verschillende apps gebruiken om de bestanden naar wens te bewerken. Behalve het bekijken van de bestanden kunt u ook binaire bestanden maken, uploaden en verwijderen. U kunt bestanden ook rechtstreeks vanuit de software openen, bewerken en opslaan. U kunt bijvoorbeeld een XDP-bestand rechtstreeks vanuit Designer openen en bewerken. De wijzigingen die u lokaal aanbrengt in de elementen worden weerspiegeld in de AEM Assets-opslagplaats en de AEM Forms-gebruikersinterface.
 
-U kunt de app downloaden van een AEM. Voor gedetailleerde informatie over het downloaden van app, zie [ AEM de Nota&#39;s van de Versie van de Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
+U kunt de app downloaden van een AEM. Voor gedetailleerde informatie over het downloaden van app, zie [ AEM de Nota&#39;s van de Versie van de Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL).
 
 ## AEM Forms-middelen die worden ondersteund in AEM bureaubladtoepassing {#aem-forms-assets-supported-in-aem-desktop-app}
 

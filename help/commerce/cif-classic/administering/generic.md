@@ -168,7 +168,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 >
 >`/etc/commerce/products/...`
 >
->Dit betekent dat, door gebrek, zij door [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) worden geblokkeerd, zo zonodig vormen.
+>Dit betekent dat, door gebrek, zij door [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL) worden geblokkeerd, zo zonodig vormen.
 
 #### Productinformatie bewerken - Voor aanraking geoptimaliseerde gebruikersinterface {#editing-product-information-touch-optimized-ui}
 

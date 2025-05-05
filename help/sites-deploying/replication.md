@@ -108,7 +108,7 @@ De volgende agenten zijn beschikbaar in een standaard AEM installatie:
 Wordt gebruikt voor replicatie van auteur naar Publish.
 
 * Dispatcher Flush
-Dit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [ het Invalideren van het Geheime voorgeheugen van Dispatcher van het Authoring Milieu ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) en [ het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie.
+Dit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [ het Invalideren van het Geheime voorgeheugen van Dispatcher van het Authoring Milieu ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-the-authoring-environment) en [ het Invalideren van het Geheime voorgeheugen van Dispatcher van een het Publiceren Instantie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie.
 
 * [ Omgekeerde Replicatie ](#reverse-replication-publish-to-author)
 Wordt gebruikt voor replicatie van Publish naar Auteur. Reverse-replicatie wordt niet gebruikt voor functies van Gemeenschappen, zoals forums, blogs en opmerkingen. De optie is in feite uitgeschakeld omdat de Postvak UIT niet is ingeschakeld. Het gebruik van omgekeerde replicatie zou douaneconfiguratie vereisen.
@@ -356,7 +356,7 @@ Van het lusje van Hulpmiddelen in het milieu van de Auteur, kunt u replicatieage
 
 >[!NOTE]
 >
->Wanneer een Dispatcher HTTP-aanvragen voor auteur- of Publish-instanties afhandelt, moet de HTTP-aanvraag van de replicatieagent de PATH-header bevatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de lijst van Dispatcher van cliëntkopballen toevoegen. Zie [/clientheaders (de Kopballen van de Cliënt) ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+>Wanneer een Dispatcher HTTP-aanvragen voor auteur- of Publish-instanties afhandelt, moet de HTTP-aanvraag van de replicatieagent de PATH-header bevatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de lijst van Dispatcher van cliëntkopballen toevoegen. Zie [/clientheaders (de Kopballen van de Cliënt) ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Heb toegang tot het **lusje van Hulpmiddelen** in AEM.

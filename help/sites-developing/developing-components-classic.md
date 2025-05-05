@@ -29,7 +29,7 @@ De klassieke UI gebruikt ExtJS om widgets tot stand te brengen die het blik-en-g
 >
 >Hoewel zowel de Taal van het Malplaatje van de HTML (HTML) als JSP voor het ontwikkelen van componenten voor klassieke UI kan worden gebruikt, illustreert deze pagina ontwikkeling met JSP. Dit is uitsluitend het gevolg van de geschiedenis van het gebruik van JSP in de klassieke UI.
 >
->HTML is nu de aanbevolen scripttaal voor AEM. Zie [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) en [ het Ontwikkelen AEM Componenten ](/help/sites-developing/developing-components.md) om methodes te vergelijken.
+>HTML is nu de aanbevolen scripttaal voor AEM. Zie [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) en [ het Ontwikkelen AEM Componenten ](/help/sites-developing/developing-components.md) om methodes te vergelijken.
 
 ## Structuur {#structure}
 

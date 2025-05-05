@@ -23,8 +23,8 @@ ht-degree: 0%
 
 <div class="preview">
 
-Adobe heeft a [ volledige installateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) met AEM 6.5 Forms Service Pack 18 (6.5.18.0) op JEE samen met de flardinstallateurs vrijgegeven. Het volledige installatieprogramma ondersteunt nieuwe platforms, terwijl het installatieprogramma van de patch alleen foutoplossingen bevat.
-Als u een nieuwe installatie uitvoert of van plan bent de nieuwste software te gebruiken voor uw AEM 6.5 Forms on JEE-omgeving, raadt Adobe aan AEM 6.5.18.0 Forms on JEE het volledige installatieprogramma[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) te gebruiken dat op 31 augustus 2023 is uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 is uitgebracht of AEM 6.5.12 Forms Installer dat op 3 maart 2022 is uitgebracht.
+Adobe heeft a [ volledige installateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) met AEM 6.5 Forms Service Pack 18 (6.5.18.0) op JEE samen met de flardinstallateurs vrijgegeven. Het volledige installatieprogramma ondersteunt nieuwe platforms, terwijl het installatieprogramma van de patch alleen foutoplossingen bevat.
+Als u een nieuwe installatie uitvoert of van plan bent de nieuwste software te gebruiken voor uw AEM 6.5 Forms on JEE-omgeving, raadt Adobe aan AEM 6.5.18.0 Forms on JEE het volledige installatieprogramma[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) te gebruiken dat op 31 augustus 2023 is uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 is uitgebracht of AEM 6.5.12 Forms Installer dat op 3 maart 2022 is uitgebracht.
 
 </div>
 
@@ -476,7 +476,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hieronder volgen de platformspec
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
+   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -504,7 +504,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hieronder volgen de platformspec
 >
 >Daarnaast:
 >
->- PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
+>- PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
 >- PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
 >- De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >- Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
@@ -512,7 +512,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hieronder volgen de platformspec
 >- PDF Generator ondersteunt de 32-bits versie van OpenOffice op het Linux®-besturingssysteem.
 >- PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >- De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
->- Een versie van Acrobat is gebundeld met AEM Forms om de functionaliteit van PDF Generator mogelijk te maken. De gebundelde versie mag alleen programmatisch worden geopend met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Zie voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- Een versie van Acrobat is gebundeld met AEM Forms om de functionaliteit van PDF Generator mogelijk te maken. De gebundelde versie mag alleen programmatisch worden geopend met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Zie voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([On-Premise](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >- De PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
 >- PDF Generator kan geen bestanden converteren met Microsoft® Visio 2019.
 >- PDF Generator kan geen bestanden converteren met Microsoft® Project 2019.
@@ -770,7 +770,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/nl/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -853,7 +853,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/nl/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -930,7 +930,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Toegevoegde ondersteuning | Verwijderde ondersteuning | Verouderde ondersteuning |
 | -------------- | --------------- | ------------------- |
-| Oracle Java™ SE 11 (64-bits) SDK voor toepassingsserver JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - De basisondersteuning voor Adobe Acrobat 2017 eindigt op 6 juni 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html) |
+| Oracle Java™ SE 11 (64-bits) SDK voor toepassingsserver JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - De basisondersteuning voor Adobe Acrobat 2017 eindigt op 6 juni 2022.](https://helpx.adobe.com/nl/support/programs/eol-matrix.html) |
 |  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64-bits) |
 |  | | Microsoft® Windows Server 2016 (64-bits) |
 |  | | Microsoft® Office 2016 |

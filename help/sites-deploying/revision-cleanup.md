@@ -24,7 +24,7 @@ Bij elke update van de opslagplaats wordt een inhoudsrevisie gemaakt. Als gevolg
 
 Met AEM 6.3 en hoger werd een onlineversie van deze functie genaamd Online Revision Cleanup geïntroduceerd. In vergelijking met de offlinerevisie Cleanup, waarbij de AEM instantie moet worden afgesloten, kan Online revisie Cleanup worden uitgevoerd terwijl de AEM online is. Onlinerevisie opschonen is standaard ingeschakeld en is de aanbevolen manier om een revisie op te schonen.
 
-**Nota**: [ zie de Video ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) voor een inleiding en hoe te om Online Opruiming van de Revisie te gebruiken.
+**Nota**: [ zie de Video ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=nl-NL) voor een inleiding en hoe te om Online Opruiming van de Revisie te gebruiken.
 
 Het proces van de revisieschoonmaak bestaat uit drie fasen: **raming**, **samenperking**, en **schoonmaak**. Schatting bepaalt of de volgende fase (compensatie) al dan niet wordt uitgevoerd op basis van hoeveel huisvuil kan worden verzameld. Tijdens de samenstellingsfase worden de segmenten en de teerdossiers herschreven verlaten om het even welke ongebruikte inhoud. De opschoningsfase verwijdert vervolgens de oude segmenten, inclusief eventuele ongewenste details die deze bevatten. In de offlinemodus kan doorgaans meer ruimte worden vrijgemaakt, omdat in de onlinemodus AEM werkset moet worden opgenomen waarin extra segmenten van de verzameling behouden blijven.
 
@@ -494,7 +494,7 @@ Soms vertraagt het opruimen door het afwisselen tussen de eindmodus en de volled
     <ol>
      <li>Een toepassing die de aanbevolen toegangsmechanismen omzeilt (zoals Sling en de JCR API) en een API/SPI op een lager niveau gebruikt om toegang te krijgen tot de opslagplaats en vervolgens de retentietijd van een segment overschrijdt. Dat wil zeggen dat een verwijzing naar een entiteit langer wordt bewaard dan de retentietijd die is toegestaan door de Online Revision Cleanup (standaard 24 uur). Dit geval is van voorbijgaande aard en leidt niet tot gegevenscorruptie. Om te herstellen, zou het eiken-loophulpmiddel moeten worden gebruikt om de voorbijgaande aard van de uitzondering te bevestigen (de eiken-loopcontrole zou geen fouten moeten melden). Hiervoor moet de instantie offline worden gezet en daarna opnieuw worden gestart.</li>
      <li>Een externe gebeurtenis veroorzaakte de corruptie van de gegevens op de schijf. Dit kan een schijffout, een gebrek aan schijfruimte of een toevallige wijziging van de vereiste gegevensdossiers zijn. In dit geval moet de instantie offline worden genomen en worden gerepareerd met behulp van de eikenrun-controle. Voor meer details op hoe te om de eiken-looppas controle uit te voeren, lees de volgende <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank"> documentatie van Apache </a>.</li>
-     <li>Adres alle andere voorkomen door de <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank"> Zorg van de Klant van de Adobe </a>.</li>
+     <li>Adres alle andere voorkomen door de <a href="https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support" target="_blank"> Zorg van de Klant van de Adobe </a>.</li>
     </ol> </td>
    <td> </td>
   </tr>

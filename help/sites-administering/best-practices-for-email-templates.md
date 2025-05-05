@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Dit artikel is op de afgekeurde Componenten van de Stichting van toepassing die AEM e-mailcomponenten worden gebaseerd.
 >
->De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL)
 
 In dit document worden enkele van de aanbevolen procedures beschreven voor het ontwerpen van e-mailberichten. Dit resulteert in een goed ontwikkelde sjabloon voor e-mailcampagnes.
 

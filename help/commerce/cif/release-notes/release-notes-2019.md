@@ -52,7 +52,7 @@ ht-degree: 4%
 
 * Volledig bruikbare sjablonen voor de pagina met productdetails en de pagina met productlijsten. Auteurs kunnen nu sjablonen maken en de productlijst en productdetailcomponenten naar deze sjablonen slepen en neerzetten. Naast het toevoegen van andere componenten, kunnen de auteurs de lay-out van deze malplaatjes nu veranderen, die hen onbeperkte vrijheid geven om verbazende ervaringen tot stand te brengen die marketing en handelsinhoud combineren.
 
-* Alle auteursvriendelijk CIF kern-componenten zijn verbeterd om [ AEM het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) te steunen. Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
+* Alle auteursvriendelijk CIF kern-componenten zijn verbeterd om [ AEM het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=nl-NL) te steunen. Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
 
 * React-based cliënt-zijcomponenten voor rekeningsbeheer. Deze release ondersteunt de volgende functies: Aanmelden, Wachtwoord vergeten en Account maken.
 

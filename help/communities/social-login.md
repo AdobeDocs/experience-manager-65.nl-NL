@@ -116,12 +116,12 @@ De [ Adobe granite OAuth Application en de 1&rbrace; instantie van de Leverancie
    ![ fbsocialloginconfigpng ](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL Title]** (*Vereist*) ga een vertoningstitel in die Facebook App identificeert. Gebruik de zelfde naam ingegaan als *Naam van de Vertoning* voor Facebook app.
-   * **[!UICONTROL App ID/API Key]** (*Vereiste*) ga ***identiteitskaart van de Toepassing*** voor Facebook App in. Dit identificeert de [ Adobe granite OAuth Application en 1&rbrace; instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
+   * **[!UICONTROL App ID/API Key]** (*Vereiste*) ga ***identiteitskaart van de Toepassing*** voor Facebook App in. Dit identificeert de [ Adobe granite OAuth Application en 1&rbrace; instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
    * **[!UICONTROL App Secret]** (*Vereiste*) ga ***Geheime app*** voor Facebook App in.
    * **[!UICONTROL Create Users]** Als deze optie is ingeschakeld, wordt bij het aanmelden met een Facebook-account een AEM gebruikervermelding gemaakt en toegevoegd aan de geselecteerde gebruikersgroep(en).  Standaard is ingeschakeld (sterk aanbevolen).
    * **[!UICONTROL Mask User IDs]**: Laat deze optie uitgeschakeld.
    * **[!UICONTROL Scope Email]**: e-mailadres van gebruiker moet worden opgehaald uit Facebook.
-   * **[!UICONTROL Add to User Groups]** uitgezocht voeg de Groep van de Gebruiker toe om één of meerdere [ lidgroepen ](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) voor de communautaire plaats te kiezen waaraan de gebruikers zullen worden toegevoegd.
+   * **[!UICONTROL Add to User Groups]** uitgezocht voeg de Groep van de Gebruiker toe om één of meerdere [ lidgroepen ](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/users.html) voor de communautaire plaats te kiezen waaraan de gebruikers zullen worden toegevoegd.
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ De [ Adobe granite OAuth Application en de 1&rbrace; instantie van de Leverancie
    * Selecteer **[!UICONTROL SAVE]** .
    * **[!UICONTROL Publish]**.
 
-Het resultaat is een [ Adobe granite OAuth Application en de instantie van de Leverancier ](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) die geen verdere wijziging vereist tenzij het toevoegen van extra werkingsgebied (toestemmingen). Het standaardbereik is de standaardmachtigingen voor Facebook-aanmelding. Als extra werkingsgebied wordt gewenst, is het noodzakelijk om de configuratie direct uit te geven OSGI. Als er aanpassingen rechtstreeks via systeem/console worden uitgevoerd, moet u de configuraties van de cloudservice niet via de interface van de aanraakinterface bewerken om te voorkomen dat deze worden overschreven.
+Het resultaat is een [ Adobe granite OAuth Application en de instantie van de Leverancier ](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) die geen verdere wijziging vereist tenzij het toevoegen van extra werkingsgebied (toestemmingen). Het standaardbereik is de standaardmachtigingen voor Facebook-aanmelding. Als extra werkingsgebied wordt gewenst, is het noodzakelijk om de configuratie direct uit te geven OSGI. Als er aanpassingen rechtstreeks via systeem/console worden uitgevoerd, moet u de configuraties van de cloudservice niet via de interface van de aanraakinterface bewerken om te voorkomen dat deze worden overschreven.
 
 ### AEM Communities Facebook OAuth Provider {#aem-communities-facebook-oauth-provider}
 
@@ -270,7 +270,7 @@ De [ Adobe granite OAuth Application en de 1&rbrace; instantie van de Leverancie
 
    * **[!UICONTROL Consumer Key]**
 
-     (*Vereiste*) ga **Verbruikssleutel (API)** voor Twitter in app. Dit identificeert de [ Adobe granite OAuth Application en 1&rbrace; instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
+     (*Vereiste*) ga **Verbruikssleutel (API)** voor Twitter in app. Dit identificeert de [ Adobe granite OAuth Application en 1&rbrace; instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
 
    * **[!UICONTROL Consumer Secret]**
 
@@ -286,7 +286,7 @@ De [ Adobe granite OAuth Application en de 1&rbrace; instantie van de Leverancie
 
    * **[!UICONTROL Add to User Groups]**
 
-     Selecteer toevoegen de Groep van de Gebruiker om één of meerdere [ lidgroepen ](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) voor de communautaire plaats te kiezen waaraan de gebruikers zullen worden toegevoegd.
+     Selecteer toevoegen de Groep van de Gebruiker om één of meerdere [ lidgroepen ](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/users.html) voor de communautaire plaats te kiezen waaraan de gebruikers zullen worden toegevoegd.
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ De [ Adobe granite OAuth Application en de 1&rbrace; instantie van de Leverancie
 
 1. Selecteer **[!UICONTROL SAVE]** en **[!UICONTROL Publish]** .
 
-Het resultaat is een [ Adobe granite OAuth Application en de instantie van de Leverancier ](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) die geen verdere wijziging vereist. Het standaardwerkingsgebied is de standaardtoestemmingen voor login van de Twitter.
+Het resultaat is een [ Adobe granite OAuth Application en de instantie van de Leverancier ](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) die geen verdere wijziging vereist. Het standaardwerkingsgebied is de standaardtoestemmingen voor login van de Twitter.
 
 ### AEM Communities Twitter OAuth Provider {#aem-communities-twitter-oauth-provider}
 
@@ -346,7 +346,7 @@ De volgende stappen zijn hetzelfde voor zowel Facebook als Twitter:
 
 ### AEM Communities Sites Console {#aem-communities-sites-console}
 
-Zodra een wolkendienst wordt gevormd, kan het voor de relevante Sociale Login worden toegelaten die voor een communautaire plaats plaatst gebruikend het [&#128279;](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) sub-paneel van de Montages van het Beheer van de Gebruiker 1&rbrace; tijdens communautaire plaats [ creatie ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) of [ beheer ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
+Zodra een wolkendienst wordt gevormd, kan het voor de relevante Sociale Login worden toegelaten die voor een communautaire plaats plaatst gebruikend het [&#128279;](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) sub-paneel van de Montages van het Beheer van de Gebruiker 1&rbrace; tijdens communautaire plaats [ creatie ](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) of [ beheer ](https://helpx.adobe.com/nl/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
 1. Kies de context van uw siteconfiguratie waarin u uw inlogconfiguraties voor sociale media hebt opgeslagen.
 

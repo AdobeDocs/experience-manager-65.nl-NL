@@ -65,7 +65,7 @@ Om het even welk statisch verpletterend werk tegen het [ beginsel van portabilit
 
 ## Projectarchetype AEM {#aem-project-archetype}
 
-Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
+Om het even welk AEM project zou [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
 
 ## SPA ontwerpmodellen {#spa-design-models}
 

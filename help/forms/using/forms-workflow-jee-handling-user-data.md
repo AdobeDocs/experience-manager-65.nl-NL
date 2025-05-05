@@ -127,7 +127,7 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
 1. Maak een instantie van de openbare `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager` ) met behulp van een `ServiceClientFactory` -instantie met de juiste verbindingsinstellingen.
 
-   Voor meer informatie, zie Java™ API verwijzing voor [ ProcessManager van de Klasse ](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Voor meer informatie, zie Java™ API verwijzing voor [ ProcessManager van de Klasse ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controleer de status van de workflowinstantie. Als de status anders is dan 2 (COMPLETE) of 4 (TERMINATED), beëindigt u de instantie eerst door de volgende methode aan te roepen:
 

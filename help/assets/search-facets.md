@@ -18,7 +18,7 @@ ht-degree: 11%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 Een bedrijfsbrede implementatie van [!DNL Adobe Experience Manager Assets] heeft de capaciteit om vele activa op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van [!DNL Experience Manager] gebruikt.

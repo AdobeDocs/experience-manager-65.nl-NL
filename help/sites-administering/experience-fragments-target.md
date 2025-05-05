@@ -48,7 +48,7 @@ AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte
 >Zie ook voor meer informatie:
 >
 >* [ de ontwikkeling van Adobe Target ](https://developers.adobetarget.com/)
->* [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+>* [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL)
 >
 
 ## Vereisten {#prerequisites}
@@ -100,7 +100,7 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
    >
    >Zie de kerncomponent:
    >
-   >[ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+   >[ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL)
 
    Onder **Adobe Target** uitgezocht:
 
@@ -170,7 +170,7 @@ Een ervaringsfragment van AEM naar doel exporteren (nadat u de Cloud-configurati
 
 ## Uw ervaringsfragmenten in Adobe Target gebruiken {#using-your-experience-fragments-in-adobe-target}
 
-Nadat u de voorgaande taken hebt uitgevoerd, wordt het Experience Fragment weergegeven op de pagina Offers in Adobe Target. Bekijk de [ specifieke documentatie van het Doel ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) om over te leren wat u daar kunt bereiken.
+Nadat u de voorgaande taken hebt uitgevoerd, wordt het Experience Fragment weergegeven op de pagina Offers in Adobe Target. Bekijk de [ specifieke documentatie van het Doel ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=nl-NL) om over te leren wat u daar kunt bereiken.
 
 >[!NOTE]
 >

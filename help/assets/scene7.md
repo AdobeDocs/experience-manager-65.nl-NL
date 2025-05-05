@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Dynamic Media Classic-functies toevoegen aan pagina&#39;s {#adding-scene-features-to-your-page}
 
-[ Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) is een ontvangen oplossing voor het leiden, het verbeteren, het publiceren, en het leveren van rijke media activa aan Web, mobiel, e-mail, en Internet-Verbonden vertoningen en druk.
+[ Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=nl-NL) is een ontvangen oplossing voor het leiden, het verbeteren, het publiceren, en het leveren van rijke media activa aan Web, mobiel, e-mail, en Internet-Verbonden vertoningen en druk.
 
 U kunt in Dynamic Media Classic gepubliceerde Experience Managers weergeven in verschillende viewers:
 
@@ -179,13 +179,13 @@ Met de Dynamic Media Classic **[!UICONTROL Image]** -component kunt u Dynamic Me
 
 **[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Het scherpen wordt verklaard in detail in [ Vooraf ingesteld Beeld beste praktijken ](/help/assets/managing-image-presets.md#image-preset-options) en [ het verscherpen beste praktijken ](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor Dynamic Media Classic-afbeeldingen in te voeren. Deze bevelen worden beschreven in [ Beeld stelt ](/help/assets/managing-image-presets.md) vooraf in en de [ verwijzing van het Bevel ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor Dynamic Media Classic-afbeeldingen in te voeren. Deze bevelen worden beschreven in [ Beeld stelt ](/help/assets/managing-image-presets.md) vooraf in en de [ verwijzing van het Bevel ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=nl-NL).
 
 **[!UICONTROL Breakpoints]** - Als uw website reageert, wilt u de onderbrekingspunten aanpassen. Onderbrekingspunten moeten worden gescheiden door komma&#39;s ( , ).
 
 ### Afbeeldingssjabloon {#image-template}
 
-[ de Malplaatjes van het Beeld van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) zijn gelaagde inhoud van Photoshop die in Dynamic Media Classic werd ingevoerd, waar de inhoud en de eigenschappen voor variabiliteit werden bepaald. Met de component **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in Experience Manager wijzigen. Daarnaast kunt u de component **[!UICONTROL Image template]** zo configureren dat waarden van de clientcontext worden gebruikt, dat elke gebruiker de afbeelding op een gepersonaliseerde manier ervaart.
+[ de Malplaatjes van het Beeld van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=nl-NL) zijn gelaagde inhoud van Photoshop die in Dynamic Media Classic werd ingevoerd, waar de inhoud en de eigenschappen voor variabiliteit werden bepaald. Met de component **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in Experience Manager wijzigen. Daarnaast kunt u de component **[!UICONTROL Image template]** zo configureren dat waarden van de clientcontext worden gebruikt, dat elke gebruiker de afbeelding op een gepersonaliseerde manier ervaart.
 
 Selecteer **[!UICONTROL Edit]** als u de component wilt configureren. U kunt [ montages vormen gemeenschappelijk voor alle componenten van Dynamic Media Classic ](#settings-common-to-all-scene-components) en andere montages die in deze sectie worden beschreven.
 

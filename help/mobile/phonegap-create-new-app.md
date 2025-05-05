@@ -34,7 +34,7 @@ U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing 
 Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de Adobe Mobile Services SDK-plug-in in uw app.
 
 * Samenstellen: klik hier op Configuraties beheren en stel de service voor het samenstellen van build.phonegap.com in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analytics: Klik beheert configuraties en opstelling uw [ Adobe Mobiele Diensten de clouddienst van SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analytics: Klik beheert configuraties en opstelling uw [ Adobe Mobiele Diensten de clouddienst van SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL). Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 ## App-sjablonen gebruiken {#using-app-templates}
 

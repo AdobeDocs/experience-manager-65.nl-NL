@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u geen AEM als uw bron van het inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u geen AEM als uw bron van het inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >

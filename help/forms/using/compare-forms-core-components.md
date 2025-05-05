@@ -23,7 +23,7 @@ Met de functie Vergelijken in Adaptive Forms Core Components kunnen formulieraut
 
 ## Vereiste {#prerequisite-versioning}
 
-Om eigenschap in een Aangepaste Vorm te gebruiken die op de Componenten van de Kern wordt gebaseerd, zorg ervoor dat de [ Aangepaste Componenten van de Kern van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw AEM 6.5 milieu van Forms wordt toegelaten.
+Om eigenschap in een Aangepaste Vorm te gebruiken die op de Componenten van de Kern wordt gebaseerd, zorg ervoor dat de [ Aangepaste Componenten van de Kern van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw AEM 6.5 milieu van Forms wordt toegelaten.
 
 ## Verschillende adaptieve formulieren vergelijken {#compare-af-65}
 

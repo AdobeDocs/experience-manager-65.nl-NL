@@ -66,7 +66,7 @@ Omdat HTML de aangewezen technologie voor het ontwikkelen van AEM plaatsen is, z
 
 ### HTML gebruiken {#using-htl}
 
-In HTML, worden de cliëntbibliotheken geladen door een helpermalplaatje dat door AEM wordt verstrekt, dat door [`data-sly-use` kan worden betreden ](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Er zijn drie sjablonen beschikbaar in dit bestand, dat kan worden aangeroepen via [`data-sly-call` ](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call) :
+In HTML, worden de cliëntbibliotheken geladen door een helpermalplaatje dat door AEM wordt verstrekt, dat door [`data-sly-use` kan worden betreden ](https://helpx.adobe.com/nl/experience-manager/htl/using/block-statements.html#use). Er zijn drie sjablonen beschikbaar in dit bestand, dat kan worden aangeroepen via [`data-sly-call` ](https://helpx.adobe.com/nl/experience-manager/htl/using/block-statements.html#template-call) :
 
 * **css** - laadt slechts de CSS dossiers van de referenced cliëntbibliotheken.
 * **js** - Laadt slechts de dossiers van JavaScript van de referenced cliëntbibliotheken.
@@ -74,7 +74,7 @@ In HTML, worden de cliëntbibliotheken geladen door een helpermalplaatje dat doo
 
 Elke hulpsjabloon verwacht een `categories` optie voor het verwijzen naar de gewenste clientbibliotheken. Deze optie kan ofwel een array van tekenreekswaarden zijn, ofwel een tekenreeks met een lijst met door komma&#39;s gescheiden waarden.
 
-Voor verdere details en voorbeeld van gebruik, zie het document [ Begonnen het worden met de Taal van het Malplaatje van HTML ](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Voor verdere details en voorbeeld van gebruik, zie het document [ Begonnen het worden met de Taal van het Malplaatje van HTML ](https://helpx.adobe.com/nl/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### JSP gebruiken {#using-jsp}
 

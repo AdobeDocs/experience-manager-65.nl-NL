@@ -31,7 +31,7 @@ Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Mana
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten
-* Wordt ontwikkeld gebruikend [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (geadviseerd) of JSP.
+* Wordt ontwikkeld gebruikend [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) (geadviseerd) of JSP.
 * Kan worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -63,7 +63,7 @@ De verstrekte componenten en hun gebruik binnen de [ steekproefWij.Retail websit
 
 Er zijn twee reeksen Adobe-Geleverde AEM beschikbare componenten:
 
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [Elementaire componenten](/help/sites-authoring/default-components-foundation.md)
 
 {de Componenten van 0} Kern **werden geïntroduceerd met AEM 6.3 en bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan.** De [ Wij.Retail verwijzingsplaats ](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige best-praktijken van componentenontwikkeling vertegenwoordigen.
@@ -72,7 +72,7 @@ Er zijn twee reeksen Adobe-Geleverde AEM beschikbare componenten:
 
 >[!NOTE]
 >
->[ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
+>[ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
 >
 >[ AEM Moderniseringshulpmiddelen ](modernization-tools.md) kan de migratie aan de Componenten van de Kern helpen.
 
@@ -105,7 +105,7 @@ De volgende pagina&#39;s verstrekken meer gedetailleerde informatie over het ont
 * [Componenten voor inhoudsfragmenten](/help/sites-developing/components-content-fragments.md)
 * [Pagina-informatie ophalen in JSON-indeling](/help/sites-developing/pageinfo.md)
 * [Internationaliserende componenten](/help/sites-developing/i18n.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [Voorwaarden verbergen gebruiken](/help/sites-developing/hide-conditions.md)
 * Klassieke interface
 

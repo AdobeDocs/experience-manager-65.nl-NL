@@ -41,7 +41,7 @@ Om LDAP te hebben werkend met AEM, moet u drie configuraties tot stand brengen O
 
 >[!NOTE]
 >
->Controle [ de Externe Login Module van Oak - voor authentiek verklaren met LDAP en voorbij ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) om Externe Login Modules te duiken.
+>Controle [ de Externe Login Module van Oak - voor authentiek verklaren met LDAP en voorbij ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=nl-NL) om Externe Login Modules te duiken.
 >
 >Om een voorbeeld te lezen van het vormen van Experience Manager met Apache DS, zie [ het Vormen Adobe Experience Manager 6.5 om de Dienst van de Folder te gebruiken Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 

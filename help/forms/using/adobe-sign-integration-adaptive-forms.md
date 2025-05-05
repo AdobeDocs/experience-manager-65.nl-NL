@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # [!DNL Adobe Sign] integreren met AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=nl-NL#adobe-acrobat-sign-for-government) |
 | AEM 6,5 | Dit artikel |
 
 Met [!DNL Adobe Sign] kunt u workflows voor e-handtekeningen inschakelen voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
@@ -91,7 +91,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/nl/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 1. Openen **[!UICONTROL Forms Common Configuration Service].**
 1. Op het **[!UICONTROL Allow]** gebied, **uitgezocht** Alle gebruikers - Alle gebruikers, anoniem of het programma geopend, kunnen voorproef gehechtheid, vormen verifiëren en ondertekenen, en **[!UICONTROL Save]klikken.** De instantie Auteur is geconfigureerd voor gebruik van [!DNL Adobe Sign] .
 1. Publish de configuratie.
-1. De replicatie van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op het corresponderen te creëren publiceert instanties.
+1. De replicatie van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=nl-NL) om identieke configuratie op het corresponderen te creëren publiceert instanties.
 
 [!DNL Adobe Sign] is nu geïntegreerd met AEM [!DNL Forms] en klaar voor gebruik in adaptieve formulieren. Om [ de dienst van Adobe Sign in een adaptieve vorm ](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form) te gebruiken, specificeer de configuratiecontainer hierboven in adaptieve vormeigenschappen wordt gecreeerd die.
 
@@ -240,7 +240,7 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/nl/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -262,7 +262,7 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 1. Op het **[!UICONTROL Allow]** gebied, **uitgezocht** Alle gebruikers - Alle gebruikers, anoniem of het programma geopend, kunnen voorproef gehechtheid, vormen verifiëren en ondertekenen, en **[!UICONTROL Save]klikken.** De instantie Auteur is geconfigureerd voor gebruik van [!DNL Adobe Sign] .
 
 1. Publish de configuratie.
-1. De replicatie van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op het corresponderen te creëren publiceert instanties.
+1. De replicatie van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=nl-NL) om identieke configuratie op het corresponderen te creëren publiceert instanties.
 
 Nu, kunt u [ gebruiken toevoegt de gebieden van Adobe Acrobat Sign in een AanpassingsVorm ](working-with-adobe-sign.md) of [ AEM Werkschema ](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Zorg ervoor dat u de configuratiecontainer die voor de configuratie van de Cloud Service wordt gebruikt toevoegt aan al Adaptive Forms die voor [!DNL Adobe Acrobat Sign] wordt toegelaten. U kunt een configuratiecontainer opgeven met de eigenschappen van een adaptief formulier.
 

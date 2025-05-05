@@ -180,7 +180,7 @@ Adobe raadt u aan deze instructies op volgorde uit te voeren om een interactieve
 
 De functie Opslaan als concept is niet standaard ingeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Voer [ ccrDocumentInstance ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Interface van de Dienstverlener uit (SPI).
+1. Voer [ ccrDocumentInstance ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Interface van de Dienstverlener uit (SPI).
 
    SPI laat u toe om de ontwerp versie van de Interactieve Mededeling aan het gegevensbestand met een ontwerpidentiteitskaart als uniek herkenningsteken te bewaren. Deze instructies veronderstellen dat u vroegere kennis op hoe te om een bundel te bouwen OSGi gebruikend een Geweven project hebt.
 

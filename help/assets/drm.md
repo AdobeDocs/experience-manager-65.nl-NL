@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 Digitale middelen zijn vaak gekoppeld aan een licentie die de gebruiksvoorwaarden en -duur bepaalt. Omdat [!DNL Adobe Experience Manager Assets] volledig geïntegreerd is met het [!DNL Experience Manager] -platform, kunt u op efficiënte wijze informatie over het verlopen van elementen en de status van elementen beheren. U kunt ook licentiegegevens aan elementen koppelen.

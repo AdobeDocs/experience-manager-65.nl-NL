@@ -176,4 +176,4 @@ Als een gebruiker zonder de vereiste AEM en CQ-machtigingen zich probeert aan te
 
 CQ verstrekt een mechanisme om standaard 404 manager jsp met voeten te treden.
 
-Voor details op hoe te om de fout behandelende pagina aan te passen, zie [ Aanpassende Pagina&#39;s die door de Handler van de Fout ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) in de documentatie van Adobe Experience Manager worden getoond.
+Voor details op hoe te om de fout behandelende pagina aan te passen, zie [ Aanpassende Pagina&#39;s die door de Handler van de Fout ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=nl-NL) in de documentatie van Adobe Experience Manager worden getoond.

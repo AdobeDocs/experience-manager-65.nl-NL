@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -45,7 +45,7 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM [!
 
 ### Vereiste {#prerequisite}
 
-* Opstelling een [ AEM auteursinstantie ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* Opstelling een [ AEM auteursinstantie ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=nl-NL#author-and-publish-installs)
 * Installeer [ toe:voegen-on van AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md) op auteursinstantie.
 * Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op [!DNL MySQL] gegevensbestand en gebruiken [!DNL Oracle's] [ MySQL JDBC gegevensbestandbestuurder ](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

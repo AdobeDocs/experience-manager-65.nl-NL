@@ -106,7 +106,7 @@ In de volgende tabel worden enkele mogelijke benaderingen beschreven om beveilig
  </tbody> 
 </table>
 
-Voor extra veiligheidsinformatie voor uw werkend systeem, zie [ &quot;de veiligheidsinformatie van het werkende systeem&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Voor extra veiligheidsinformatie voor uw werkend systeem, zie [ &quot;de veiligheidsinformatie van het werkende systeem&quot;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Installatie {#installation}
 
@@ -268,11 +268,11 @@ Configuration Manager maakte gebruik van een servlet die op uw toepassingsserver
 
 Met Configuratiebeheer kunt u een Acrobat Reader DC-extensie uploaden die is gecrediteerd aan de AEM Forms in de JEE-vertrouwde opslag. Dit betekent dat de toegang tot de Dienst van de Referentie van de Opslag van het Vertrouwen over verre protocollen (SOAP en EJB) door gebrek is toegelaten. Deze toegang is niet meer noodzakelijk nadat u de credentie van Rechten gebruikend de Manager van de Configuratie hebt geupload of als u besluit om de Console van het Beleid later te gebruiken om geloofsbrieven te beheren.
 
-U kunt verre toegang tot alle diensten van de Opslag van het Vertrouwen onbruikbaar maken door de stappen in de sectie [ te volgen onbruikbaar makend niet-essentiële verre toegang tot de diensten ](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+U kunt verre toegang tot alle diensten van de Opslag van het Vertrouwen onbruikbaar maken door de stappen in de sectie [ te volgen onbruikbaar makend niet-essentiële verre toegang tot de diensten ](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **maak al niet essentiële anonieme toegang** onbruikbaar
 
-Sommige diensten van de Server van Forms hebben verrichtingen die door een anonieme bezoeker kunnen worden aangehaald. Als de anonieme toegang tot deze diensten niet wordt vereist, maak het onbruikbaar door de stappen in [ te volgen onbruikbaar makend niet-essentiële anonieme toegang tot de diensten ](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Sommige diensten van de Server van Forms hebben verrichtingen die door een anonieme bezoeker kunnen worden aangehaald. Als de anonieme toegang tot deze diensten niet wordt vereist, maak het onbruikbaar door de stappen in [ te volgen onbruikbaar makend niet-essentiële anonieme toegang tot de diensten ](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Het standaardbeheerderswachtwoord wijzigen {#change-the-default-administrator-password}
 
@@ -408,7 +408,7 @@ Als toegevoegde voorzorg, zou u het gebruiken van gegevensbestand verkoper-speci
 * Sleutel voor versleuteling HSM PIN-code opslaan
 * Hashes lokaal gebruikerswachtwoord
 
-Voor informatie over verkoper-specifieke hulpmiddelen, zie [ &quot;de veiligheidsinformatie van het Gegevensbestand&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Voor informatie over verkoper-specifieke hulpmiddelen, zie [ &quot;de veiligheidsinformatie van het Gegevensbestand&quot;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP-beveiliging {#ldap-security}
 

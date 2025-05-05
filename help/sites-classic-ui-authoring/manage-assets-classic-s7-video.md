@@ -23,7 +23,7 @@ Assets biedt gecentraliseerd beheer van video-elementen waarmee u video&#39;s re
 Dynamic Media Classic-videointegratie breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische detectie van apparaat en bandbreedte).
 
 * De Dynamic Media Classic-videocomponent voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en videokwaliteit van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
-* Assets - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktopcomputers, iOS, Android™, BlackBerry® en mobiele Windows-apparaten. Zie {de documentatie van 0} Dynamic Media Classic over adaptieve videoreeksen voor meer informatie [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
+* Assets - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktopcomputers, iOS, Android™, BlackBerry® en mobiele Windows-apparaten. Zie {de documentatie van 0} Dynamic Media Classic over adaptieve videoreeksen voor meer informatie [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html?lang=nl-NL#video).
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -64,7 +64,7 @@ Als u een workflow of versie voor uw elementen nodig hebt, moet u eerst uploaden
 
 Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen uploaden naar Dynamic Media Classic. Hieronder vindt u de aanbevolen workflow:
 
-1. In de Desktop app van Dynamic Media Classic, [ opstelling een geplande FTP uploadend en het coderen aan Dynamic Media Classic (systeem geautomatiseerd) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+1. In de Desktop app van Dynamic Media Classic, [ opstelling een geplande FTP uploadend en het coderen aan Dynamic Media Classic (systeem geautomatiseerd) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-options).
 1. In Experience Manager hebt u toegang tot video-elementen in WCM op het tabblad **[!UICONTROL Dynamic Media Classic]** van de Inhoudszoeker.
 1. Auteur met het Dynamic Media Classic-videoonderdeel.
 
@@ -81,7 +81,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen up
 
    >[!NOTE]
    >
-   >Voor meer informatie over wat video vooraf instelt betekent, zie [ Video vooraf instelt voor het coderen van videodossiers ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Voor meer informatie over wat video vooraf instelt betekent, zie [ Video vooraf instelt voor het coderen van videodossiers ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#video-presets-for-encoding-video-files).
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 

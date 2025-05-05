@@ -68,11 +68,11 @@ Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstue
 
 #### Ontmoeten - Niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
-Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Dit kan op het **Alternatieve gebied van de Tekst** worden gedaan. Zie, bijvoorbeeld, het Beeld van de Component van de Kern **[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**.
+Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Dit kan op het **Alternatieve gebied van de Tekst** worden gedaan. Zie, bijvoorbeeld, het Beeld van de Component van de Kern **[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL)**.
 
 >[!NOTE]
 >
->Sommige uit-van-de-doos Componenten van de Kern, zoals **[Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)** verstrekken geen **Alternatieve 4&rbrace; gebied van de Tekst om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er het** 6&rbrace; gebied van het Etiket **[(](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)** lusje van de Toegankelijkheid) voor de volledige component is.**&#x200B;**
+>Sommige uit-van-de-doos Componenten van de Kern, zoals **[Carrousel ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=nl-NL)** verstrekken geen **Alternatieve 4&rbrace; gebied van de Tekst om afwisselende tekstbeschrijvingen aan individuele beelden toe te voegen, hoewel er het** 6&rbrace; gebied van het Etiket **[(](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=nl-NL#accessibility-tab)** lusje van de Toegankelijkheid) voor de volledige component is.**&#x200B;**
 >
 >Wanneer het uitvoeren van versies van deze voor uw AEM instantie, moet uw ontwikkelingsteam dergelijke componenten vormen om het `alt` attribuut te steunen zodat de auteurs het aan de inhoud (zie [ Toevoegend Steun voor Extra Elementen en Attributen van de HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)) kunnen toevoegen.
 

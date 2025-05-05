@@ -158,4 +158,4 @@ U kunt API&#39;s ook gebruiken om knooppunten en eigenschappen te openen en te v
 
 * [Programmatoegang tot het AEM JCR](/help/sites-developing/access-jcr.md)
 * [ het Verwijderen van Knoop en Eigenschappen ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [ API verwijzing ](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [ API verwijzing ](https://helpx.adobe.com/nl/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

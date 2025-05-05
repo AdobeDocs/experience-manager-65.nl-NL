@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [ Aangepast vormfragment ](../../forms/using/adaptive-form-fragments.md) is een groep gebieden, of een paneel dat een groep gebieden bevat die u kunt gebruiken wanneer u een vorm creeert. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het vervolgens bewerken in de formuliereditor.
 
-Voor adaptieve vormauteurs, worden de verwijzingsfragmenten verstrekt in het [ toe:voegen-op pakket van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Het bevat de volgende fragmenten:
+Voor adaptieve vormauteurs, worden de verwijzingsfragmenten verstrekt in het [ toe:voegen-op pakket van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL). Het bevat de volgende fragmenten:
 
 * Adres
 * Contactgegevens

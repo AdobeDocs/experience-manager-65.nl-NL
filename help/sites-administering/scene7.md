@@ -420,8 +420,8 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 
 Voordat u elementen naar Dynamic Media Classic kunt duwen zonder ze te publiceren, moet u het volgende instellen:
 
-1. [ Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen. In het geval van ondersteuning kunt u vragen of een beveiligde voorvertoning voor uw Dynamic Media Classic-account is ingeschakeld.
-1. [ Opstelling veilige voorproef voor uw rekening van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
+1. [ Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen. In het geval van ondersteuning kunt u vragen of een beveiligde voorvertoning voor uw Dynamic Media Classic-account is ingeschakeld.
+1. [ Opstelling veilige voorproef voor uw rekening van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL).
 
 Dit zijn dezelfde stappen die u zou volgen om een veilige testinstallatie in Dynamic Media Classic te maken.
 
@@ -454,7 +454,7 @@ Houd rekening met de volgende beperkingen als u deze functie gebruikt:
 1. Selecteer de tab **[!UICONTROL Advanced]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Enable Secure View]** de optie **[!UICONTROL Upon AEM Publish Activation]** om elementen naar Dynamic Media Classic te verplaatsen zonder ze te publiceren. (Deze waarde wordt standaard ingesteld op **[!UICONTROL Immediately]** , waarbij Dynamic Media Classic-elementen direct worden gepubliceerd.)
 
-   Zie {de documentatie van 0} Dynamic Media Classic [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) voor meer informatie over het testen van activa alvorens hen openbaar te maken.
+   Zie {de documentatie van 0} Dynamic Media Classic [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=nl-NL) voor meer informatie over het testen van activa alvorens hen openbaar te maken.
 
    ![ chlimage_1-302 ](assets/chlimage_1-302.png)
 
@@ -569,7 +569,7 @@ Specifiek, vormt u het erkende dossierformaat door MIME type in het OSGi (Open h
 
    Bijvoorbeeld `psprocess="rasterize"&psresolution=120` .
 
-   Zie [ het Systeem API van de Productie van het Beeld van Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) voor meer uploadbaanparameters u kunt gebruiken.
+   Zie [ het Systeem API van de Productie van het Beeld van Adobe Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=nl-NL) voor meer uploadbaanparameters u kunt gebruiken.
 
    >[!NOTE]
    >

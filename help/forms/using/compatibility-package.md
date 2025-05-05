@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Om brieven in AEM Forms 6.5 te blijven gebruiken, moet u het recentste [ pakket van de Verenigbaarheid AEMFD ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) installeren.
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Om brieven in AEM Forms 6.5 te blijven gebruiken, moet u het recentste [ pakket van de Verenigbaarheid AEMFD ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) installeren.
 
 Het pakket van de Verenigbaarheid AEMFD laat u [ ook de volgende activa van AEM Forms 6.4, 6.3 en 6.2 op AEM Forms 6.5 gebruiken:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -36,9 +36,9 @@ Voor meer informatie, zie [ Assets compatibel gemaakt met AEM Forms 6.5 door het
 
 Nadat u een upgrade hebt uitgevoerd, voert u de volgende handelingen uit om het compatibiliteitspakket voor AEMFD te installeren en uw elementen compatibel te maken met 6.5:
 
-Zorg ervoor dat u [ AEM het pakket van de Verenigbaarheid ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd hebt.
+Zorg ervoor dat u [ AEM het pakket van de Verenigbaarheid ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd hebt.
 
-1. Installeer het recentste 6.5 [ pakket van de Verenigbaarheid ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Installeer het recentste 6.5 [ pakket van de Verenigbaarheid ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html).
 
    Voor meer informatie bij het uploaden en het installeren van het pakket, zie [ hoe te met pakketten ](/help/sites-administering/package-manager.md) werken.
 

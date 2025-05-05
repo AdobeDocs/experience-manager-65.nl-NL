@@ -104,7 +104,7 @@ Alternatief, kunt u de apparatenbron downloaden om plaatselijk door CLI te bouwe
 >
 >Zie [ uw Cloud Service van de Diensten van de Adobe Mobiele ](/help/mobile/configure-adobe-mobile-cloud-service.md) voor details vormen.
 
-AEM Mobile integreert met Adobe Analytics door [ de Mobiele Diensten SDK van de Adobe Mobiele ](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
+AEM Mobile integreert met Adobe Analytics door [ de Mobiele Diensten SDK van de Adobe Mobiele ](https://experienceleague.adobe.com/docs/mobile.html?lang=nl-NL) (AMS).
 
 Het centrum van de Controle **Metriek Tile** toont summiere analyses die van AMS voor uw toepassing worden getrokken. U kunt naar het dashboard Analytics gaan door op &#39;...&#39; in de rechterbenedenhoek te klikken.
 

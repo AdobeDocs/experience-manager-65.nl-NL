@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u niet de Ervaring gebruikt van de Adobe leidt (AEM) als uw bron van inhoudsbeheer, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u niet de Ervaring gebruikt van de Adobe leidt (AEM) als uw bron van inhoudsbeheer, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 ## AEM-beheerder {#aem-administrator}
 
@@ -36,7 +36,7 @@ Een ***AEM beheerder*** is verantwoordelijk voor het toevoegen van een toepassin
 
 >[!NOTE]
 >
->Voor meer informatie bij vestiging AEM Groepen en Toestemmingen, klik [ Creërend de Rollen van de Gebruiker en het Verlenen van Toegang ](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) in Online Hulp.
+>Voor meer informatie bij vestiging AEM Groepen en Toestemmingen, klik [ Creërend de Rollen van de Gebruiker en het Verlenen van Toegang ](https://helpx.adobe.com/nl/digital-publishing-solution/help/account-admin-dps.html) in Online Hulp.
 
 Een AEM beheerder is verantwoordelijk voor de volgende taken wanneer u een app maakt met AEM Mobile On-demand Services:
 

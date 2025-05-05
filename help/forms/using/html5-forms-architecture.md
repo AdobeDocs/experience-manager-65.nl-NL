@@ -33,7 +33,7 @@ Voor details op REST eindpunt en gesteunde verzoekparameters, zie [ Teruggevend 
 
 Wanneer een gebruiker een verzoek indient van een clientapparaat zoals een iOS- of Android™-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Van dit Knoop van Profiel, leest het **sling:resourceSuperType** en **sling:resourceType** om alle beschikbare manuscripten te bepalen die deze Vorm kunnen behandelen geeft verzoek terug. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst Forms OSGi.
 
-Voor meer details bij het sling van manuscriptresolutie, zie [ AEM het Schuiven het Blad van de Cheat ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) of [ Apache het Schuiven Url decomposition ](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
+Voor meer details bij het sling van manuscriptresolutie, zie [ AEM het Schuiven het Blad van de Cheat ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) of [ Apache het Schuiven Url decomposition ](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
 #### Typische stroom van de de vraagvraag van de vormverwerking {#typical-form-processing-call-flow}
 
@@ -178,7 +178,7 @@ De knoop van het Profiel heeft een bezit **sling:resourceSuperType** met waarde 
 * **xfaforms.profile**: Deze bibliotheek bevat implementatie voor de motor van Scripting XFA en van de Lay-out.
 
 Deze bibliotheken zijn gemodelleerd als CQ-clientbibliotheken die gebruikmaken van de mogelijkheden voor automatische samenvoeging, minificatie en compressie van de JavaScript-bibliotheken van het CQ-framework.
-Voor meer informatie over de Bibliotheken van de Cliënt CQ, zie {de Documentatie van de Clientlib van 0} CQ [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
+Voor meer informatie over de Bibliotheken van de Cliënt CQ, zie {de Documentatie van de Clientlib van 0} CQ [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
 
 Zoals hierboven beschreven, roept de profielrenderer JSP de Dienst van Forms via het verbinden omvat. Dit JSP plaatst ook diverse zuivert opties die op adminconfiguratie of verzoekparameters worden gebaseerd.
 

@@ -188,7 +188,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
    * Processen voor elke omgeving, bijvoorbeeld vereisten voor implementatie en onderhoud
    * Onderhoudsactiviteiten (GC voor datastore, TarPM-optimalisatie, enzovoort)
-   * [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) caching
+   * [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) caching
    * [ het Groeperen ](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * Prestaties voor de client-side (JS minify, concat, css sprites, totaal aantal http-aanvragen, enzovoort)
 
@@ -239,7 +239,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   Voor ontwikkeling, zouden alle steunprocessen die worden vereist om, versie, test, en rapportkwesties op te stellen, op zijn plaats moeten worden geplaatst.
 
-  Zie ook het [ Portaal van de Steun van de Adobe ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support).
+  Zie ook het [ Portaal van de Steun van de Adobe ](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support).
 
 ### Operationele planning en operaties {#operations-planning-and-operations}
 
@@ -628,8 +628,8 @@ Daarnaast zijn de volgende onderdelen van AEM documentatie van bijzonder belang 
 
       * [Ontwikkeling - de basisbeginselen](/help/sites-developing/the-basics.md)
       * [MSM-concepten](/help/sites-administering/msm.md)
-      * [ Taal van het Malplaatje van HTML (HTML) ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [ Taal van het Malplaatje van HTML (HTML) ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
 
 * Verwante documentatie
 
-   * Adobe Experience Cloud - [ Planning voor Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [ Planning voor Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=nl-NL)

@@ -372,7 +372,7 @@ De volgende details en resoluties zijn mogelijk:
    * Als dit het probleem niet verhelpt en de uitzonderingen `AsyncIndexUpdate` blijven bestaan:
 
       1. [ herindexeer ](#how-to-re-index) de foutenindex
-      1. Ook dossier een [&#128279;](https://helpx.adobe.com/support.html) kaartje van de Steun van de Adobe 0&rbrace; &lbrace;
+      1. Ook dossier een [&#128279;](https://helpx.adobe.com/nl/support.html) kaartje van de Steun van de Adobe 0&rbrace; &lbrace;
 
 ### Opnieuw indexeren {#how-to-re-index}
 

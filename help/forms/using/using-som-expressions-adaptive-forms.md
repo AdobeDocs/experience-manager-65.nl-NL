@@ -46,4 +46,4 @@ In deelvensters hebt u toegang tot de functie via de werkbalk van het deelvenste
 
 SOM-expressies extraheren met de werkbalk van het deelvenster
 
-Sommige APIs die in [ worden vermeld GuideBridge ](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) gebruikt de uitdrukking SOM van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus` API in `guideBridge` .
+Sommige APIs die in [ worden vermeld GuideBridge ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html) gebruikt de uitdrukking SOM van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus` API in `guideBridge` .

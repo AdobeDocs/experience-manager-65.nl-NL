@@ -65,7 +65,7 @@ Het gedrag van de omslag kan ook volledig worden geregeld.
 
 Het is mogelijk om het gedrag van de omsluitende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
 
-Voor verdere informatie over het ontwikkelen in HTML zie de [ documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
+Voor verdere informatie over het ontwikkelen in HTML zie de [ documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL).
 
 #### Beslissingsboom {#decision-tree}
 

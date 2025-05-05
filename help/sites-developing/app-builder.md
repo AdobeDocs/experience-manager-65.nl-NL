@@ -30,7 +30,7 @@ App Builder is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners v
 
 >[!NOTE]
 >
->Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+>Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=nl-NL).
 
 ## Architectuur {#architecture}
 

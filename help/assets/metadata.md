@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ Metagegevens zijn aanvullende informatie over het element die kan worden doorzoc
 
 U kunt de volgende methoden gebruiken om metagegevens toe te voegen aan digitale elementen:
 
-* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Bijvoorbeeld, [ Acrobat voegt sommige meta-gegevens ](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) aan PDF dossiers toe of een camera voegt sommige basismeta-gegevens aan de foto&#39;s toe. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. Bijvoorbeeld, kunt u [ meta-gegevens IPTC in Adobe Lightroom ](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html) toevoegen.
+* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Bijvoorbeeld, [ Acrobat voegt sommige meta-gegevens ](https://helpx.adobe.com/nl/acrobat/using/pdf-properties-metadata.html) aan PDF dossiers toe of een camera voegt sommige basismeta-gegevens aan de foto&#39;s toe. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. Bijvoorbeeld, kunt u [ meta-gegevens IPTC in Adobe Lightroom ](https://helpx.adobe.com/nl/lightroom-classic/help/metadata-basics-actions.html) toevoegen.
 
-* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u een element uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te [ werken met meta-gegevens in  [!DNL Adobe Bridge] ](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en zie het [ paneel van markeringen voor  [!DNL Adobe Bridge] ](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u een element uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te [ werken met meta-gegevens in  [!DNL Adobe Bridge] ](https://helpx.adobe.com/nl/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en zie het [ paneel van markeringen voor  [!DNL Adobe Bridge] ](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
 * In [!DNL Experience Manager Assets] kunt u metagegevens van elementen handmatig toevoegen of bewerken op de pagina [!UICONTROL Properties] .
 
@@ -241,7 +241,7 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICON
 >
 >* [ concepten van Meta-gegevens en begrip ](metadata-concepts.md).
 >* [ geef meta-gegevenseigenschappen van veelvoudige inzamelingen ](manage-collections.md#editing-collection-metadata-in-bulk) uit
->* [ de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [ de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=nl-NL)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

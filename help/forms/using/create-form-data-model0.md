@@ -25,7 +25,7 @@ Dit leerprogramma is een stap in [ creeer uw eerste Interactieve Communicatie ](
 
 Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, op SOAP gebaseerde webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
-Voor meer informatie over de integratie van vormgegevens en model van vormgegevens, zie [ de Integratie van Gegevens van AEM Forms ](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+Voor meer informatie over de integratie van vormgegevens en model van vormgegevens, zie [ de Integratie van Gegevens van AEM Forms ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html).
 
 Deze zelfstudie begeleidt u door de stappen om een formuliergegevensmodel voor te bereiden, te maken, te configureren en aan een interactieve communicatie te koppelen. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -46,7 +46,7 @@ Het formuliergegevensmodel ziet er ongeveer als volgt uit:
 Voordat u begint, moet u het volgende doen:
 
 * MySQL gegevensbestand met steekproefgegevens zoals die in [ worden verklaard opstelling de gegevensbestand ](../../forms/using/create-form-data-model0.md#step-set-up-the-database) sectie.
-* OSGi bundel voor MySQL JDBC bestuurder zoals die in [ wordt verklaard die de Bestuurder van het Gegevensbestand JDBC bundelt ](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
+* OSGi bundel voor MySQL JDBC bestuurder zoals die in [ wordt verklaard die de Bestuurder van het Gegevensbestand JDBC bundelt ](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Stap 1: De database instellen {#step-set-up-the-database}
 
@@ -113,7 +113,7 @@ De **rekeningen** lijst omvat de rekeningsdetails zoals rekeningsdatum, rekening
 
 ## Stap 2: Vorm MySQL gegevensbestand als gegevensbron {#step-configure-mysql-database-as-data-source}
 
-U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zult u het gegevensbestand vormen MySQL dat met steekproefgegevens wordt gevormd en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [ de Integratie van Gegevens van AEM Forms ](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zult u het gegevensbestand vormen MySQL dat met steekproefgegevens wordt gevormd en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [ de Integratie van Gegevens van AEM Forms ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html).
 
 Ga als volgt te werk om uw MySQL-database te configureren:
 
@@ -155,7 +155,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 ## Stap 3: Een formuliergegevensmodel maken {#step-create-form-data-model}
 
-AEM Forms verstrekt een intuïtief gebruikersinterface om [ tot een wijze van vormgegevens ](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585) l van gevormde gegevensbronnen te leiden. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
+AEM Forms verstrekt een intuïtief gebruikersinterface om [ tot een wijze van vormgegevens ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585) l van gevormde gegevensbronnen te leiden. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 

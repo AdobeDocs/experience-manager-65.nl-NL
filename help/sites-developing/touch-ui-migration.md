@@ -121,7 +121,7 @@ Dialoogvensters zijn een belangrijke factor bij het migreren van uw componenten:
 
    * Er is een compatibiliteitslaag in aanraak UI om een klassiek UI-dialoogvenster te openen binnen een &quot;Touch UI-wrapper&quot;, maar deze heeft beperkte functionaliteit en wordt niet aanbevolen voor de lange termijn.
 
-* [ het Aanpassen van de Gebieden van de Dialoog in Aanraak UI ](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [ het Aanpassen van de Gebieden van de Dialoog in Aanraak UI ](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Een nieuwe graniet-UI-veldcomponent maken](/help/sites-developing/granite-ui-component.md)
 * [ het Aanpassen van de Authoring van de Pagina ](/help/sites-developing/customizing-page-authoring-touch.md) (met touch-enabled UI)
 
@@ -136,8 +136,8 @@ U kunt ook de consoles aanpassen:
 Hoewel er niet rechtstreeks verband is met een migratie naar de aanraakinterface, zijn er verwante problemen die u tegelijkertijd moet overwegen, zoals ook aanbevolen wordt:
 
 * [ Malplaatjes ](/help/sites-developing/templates.md) - [ Bewerkbare malplaatjes ](/help/sites-developing/page-templates-editable.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
 
 >[!NOTE]
 >
@@ -149,9 +149,9 @@ Voor volledige informatie over het ontwikkelen AEM zie de inzameling van middele
 
 * [Gebruikershandleiding ontwikkelen](/help/sites-developing/getting-started.md)
 * [ de Documentatie van graniet UI ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [ AEM 6.5 Tutorials en Video&#39;s van Plaatsen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [ AEM 6.5 Tutorials en Video&#39;s van Plaatsen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=nl-NL)
 * [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](/help/sites-developing/getting-started.md)
-* [ AEM Gems ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [ AEM Gems ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=nl-NL)
 * [AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

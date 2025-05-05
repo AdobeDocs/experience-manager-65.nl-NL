@@ -45,7 +45,7 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
 #### Nieuwe GA-functies in AEM Forms {#ga-aem-forms-sp22}
 
-* Toegevoegde steun om doopvont toe te laten die in [ Interactieve Communicatie Band APIs ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) inbedt - Interactieve Mededelingen omvat nu steun voor het inbedden van de doopvonten van Adobe Ming en van Adobe Myungjo in PDFs die door de Band API wordt geproduceerd. Deze verbetering zorgt voor nauwkeurige tekstrendering in gegenereerde documenten, zelfs bij het gebruik van fontsubsets, waardoor meertalige inhoud in PDF-uitvoerbestanden beter wordt ondersteund.
+* Toegevoegde steun om doopvont toe te laten die in [ Interactieve Communicatie Band APIs ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) inbedt - Interactieve Mededelingen omvat nu steun voor het inbedden van de doopvonten van Adobe Ming en van Adobe Myungjo in PDFs die door de Band API wordt geproduceerd. Deze verbetering zorgt voor nauwkeurige tekstrendering in gegenereerde documenten, zelfs bij het gebruik van fontsubsets, waardoor meertalige inhoud in PDF-uitvoerbestanden beter wordt ondersteund.
 
 * [ Inhoudslijst API voor de Toegankelijkheid van PDF ](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - AEM Forms op OSGi steunt nu de nieuwe TOC markering API om PDF voor toegankelijkheidsnormen te verbeteren. PDF&#39;s worden toegankelijker gemaakt voor gebruikers met ondersteunende hulpmiddelen.
 
@@ -453,7 +453,7 @@ Zie [de installatie-instructies](/help/release-notes/aem-forms-current-service-p
 
 >[!NOTE]
 >
->De functie Adaptieve formulieren, beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), is alleen ontworpen voor verkennings- en evaluatiedoeleinden. Voor productiegebruik is het essentieel om een geldige licentie voor AEM Forms te verkrijgen, aangezien de functionaliteit van Adaptive Forms de juiste licenties vereist.
+>De functie Adaptieve formulieren, beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), is alleen ontworpen voor verkennings- en evaluatiedoeleinden. Voor productiegebruik is het essentieel om een geldige licentie voor AEM Forms te verkrijgen, aangezien de functionaliteit van Adaptive Forms de juiste licenties vereist.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -590,7 +590,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6522}
 
-* Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+* Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6522}
@@ -655,10 +655,10 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
 >* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)

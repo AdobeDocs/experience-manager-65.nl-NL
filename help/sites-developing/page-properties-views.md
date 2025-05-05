@@ -50,7 +50,7 @@ Bijvoorbeeld, zie de montages voor gebieden die onder **worden gegroepeerd Meer 
 
 >[!TIP]
 >
->Zie het [ Uitbreiden van de zelfstudie van de Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) voor een gids aan het aanpassen van paginaeigenschappen.
+>Zie het [ Uitbreiden van de zelfstudie van de Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=nl-NL) voor een gids aan het aanpassen van paginaeigenschappen.
 
 ## De pagina-eigenschappen configureren {#configuring-your-page-properties}
 

@@ -300,7 +300,7 @@ In de volgende tabel ziet u een voorbeeld van de waarden die worden weergegeven 
 | SocialSecurityNumber | 1234567 | text{999-99-9999} | 23-4567 | Het aantal cijfers in het veld Standaardwaarde is kleiner dan het aantal cijfers in het veld Patroon. Het patroon wordt toegepast op de 7 beschikbare cijfers. |
 | SocialSecurityNumber | 1234567890 | text{999-99-9999} | 1234567890 | Het aantal cijfers in het veld Standaardwaarde is groter dan het aantal cijfers in het veld Patroon. Het resultaat is dat de weergavewaarde niet wordt gewijzigd. |
 
-Als een vertoningspatroon niet voor een variabele of een modelelement van vormgegevens wordt gespecificeerd, wordt de [ globale configuratie van het documentfragment ](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) gebruikt door gebrek.
+Als een vertoningspatroon niet voor een variabele of een modelelement van vormgegevens wordt gespecificeerd, wordt de [ globale configuratie van het documentfragment ](https://helpx.adobe.com/nl//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) gebruikt door gebrek.
 
 Als u geen weergavepatroon toepast op een variabele van het gegevenstype Number, wordt in de afdrukvoorbeeld het patroon weergegeven op basis van de algemene configuratie van het documentfragment. Als u veranderingen op de standaard globale configuratie van het documentfragment toepast, toont de UI van de Agent nog het patroon volgens de standaardseparators die voor de scène worden bepaald.
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Als u de uitvoer in een andere indeling wilt genereren, geeft u het type uitvoerindeling op. Verwijs naar [ PrintChannel API ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) voor de lijst van gesteunde types van outputformaat.
+Als u de uitvoer in een andere indeling wilt genereren, geeft u het type uitvoerindeling op. Verwijs naar [ PrintChannel API ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) voor de lijst van gesteunde types van outputformaat.
 
 U kunt bijvoorbeeld het volgende voorbeeld gebruiken om PCL als uitvoerindeling voor een interactieve communicatie te definiëren:
 

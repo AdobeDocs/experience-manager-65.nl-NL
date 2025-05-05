@@ -30,7 +30,7 @@ Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdie
 
 >[!NOTE]
 >
->De hier beschreven functionaliteit is beschikbaar voor alle Componenten van de Kern sinds [ versie 1.1.0 van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+>De hier beschreven functionaliteit is beschikbaar voor alle Componenten van de Kern sinds [ versie 1.1.0 van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
 
 ## JSON-exportfunctie met kerncomponenten van inhoudsfragment {#json-exporter-with-content-fragment-core-components}
 
@@ -102,4 +102,4 @@ Zie voor meer informatie:
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
 
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [ component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en de [ component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL)

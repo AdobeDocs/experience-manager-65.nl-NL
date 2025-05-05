@@ -28,7 +28,7 @@ ht-degree: 6%
 
 Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers beschikbaar worden gesteld, met elke andere extensie Experience Platform Tags die afkomstig is van een Adobe of een derde.
 
-Meer over Adobe uitbreidingen of derdeuitbreidingen leren, zie {de uitbreidingen van de Adobe 0} [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) in de Gids van de Gebruiker van de Markeringen van de Experience Platform.
+Meer over Adobe uitbreidingen of derdeuitbreidingen leren, zie {de uitbreidingen van de Adobe 0} [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=nl-NL) in de Gids van de Gebruiker van de Markeringen van de Experience Platform.
 
 **Dit onderwerp is voorgenomen voor het volgende:** de beheerders van de Plaats, Ontwikkelaars op het Experience Platform, en mensen in Verrichtingen.
 
@@ -37,7 +37,7 @@ Meer over Adobe uitbreidingen of derdeuitbreidingen leren, zie {de uitbreidingen
 * Integratie van Experience Platform-tags voor Dynamic Media-viewers werkt niet in het knooppunt van de auteur van de Experience Manager. U kunt geen het volgen van een pagina zien WCM tot het wordt gepubliceerd.
 * Integratie van Experience Platform-tags voor Dynamic Media-viewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt verkregen via de knop &quot;URL&quot; op de pagina Asset Details.
 * Integratie van Experience Platform Tags kan niet gelijktijdig worden gebruikt met de integratie van verouderde viewers Analytics (via de parameter `config2=` ).
-* De steun voor video het volgen is beperkt tot &quot;kern playback&quot;het volgen slechts, zoals die in [ het Volgen Overzicht ](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en) wordt beschreven. Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
+* De steun voor video het volgen is beperkt tot &quot;kern playback&quot;het volgen slechts, zoals die in [ het Volgen Overzicht ](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=nl-NL) wordt beschreven. Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 * De configuratie van de Duur van de opslag voor de Elementen van Gegevens wordt niet gesteund voor Elementen van Gegevens gebruikend de *1&rbrace; uitbreiding van de Kijkers van Dynamic Media.* Opslagduur moet zijn ingesteld op **[!UICONTROL None]** .
 
 ### Gebruik de integratiegevallen {#use-cases-for-the-integration}
@@ -74,7 +74,7 @@ Met de extensie Dynamic Media Viewer worden de waarden van de Data Elements auto
 
 Nadat u het hebt bepaald, kan een Element van Gegevens in andere plaatsen van de Tags UI van het Experience Platform worden gebruikt, gebruikend de plukker van het Element van Gegevens widget. Met name wordt in de regel naar gegevenselementen die zijn gedefinieerd voor het bijhouden van Dynamic Media Viewers verwezen door de extensie Handeling voor variabelen instellen van Adobe Analytics (zie hieronder).
 
-Zie [ elementen van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html).
+Zie [ elementen van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=nl-NL).
 
 #### Informatie over Regels in Experience Platform-tags {#about-rules-in-adobe-launch}
 
@@ -100,7 +100,7 @@ In de sectie van Acties, wordt het vereist dat u a *Vastgestelde Variabelen* act
 
 De *Vastgestelde Variabelen* actie moet door a *worden gevolgd verzendt baken* actie. De *verzendt baken* actie verzendt eigenlijk gegevens naar de analytische volgende server. Beide acties, *Reeks Variabelen* en *verzenden Bandbeeld*, komen uit de uitbreiding van Adobe Analytics.
 
-Zie [ Regels ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html).
+Zie [ Regels ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=nl-NL).
 
 #### Voorbeeldconfiguratie {#sample-configuration}
 
@@ -134,7 +134,7 @@ Wanneer een rekening van het Experience Cloud wordt ingetekend om Adobe Analytic
 
 Zie [ Installatie en opstelling van uitbreidingen ](#installing-and-setup-of-extensions).
 
-Momenteel, is de steun voor video het volgen beperkt tot &quot;kern playback&quot;het volgen slechts, zoals die in [ het Volgen overzicht ](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en) wordt beschreven. Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
+Momenteel, is de steun voor video het volgen beperkt tot &quot;kern playback&quot;het volgen slechts, zoals die in [ het Volgen overzicht ](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=nl-NL) wordt beschreven. Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 
 ## De extensie Dynamic Media Viewers gebruiken {#using-the-dynamic-media-viewers-extension}
 
@@ -158,7 +158,7 @@ Voltooi de configuratiestappen van [ vormen Adobe Analytics ](#configuring-adobe
 
 Na de juiste configuratie kunt u ondersteuning voor Experience Platform-tags toevoegen aan een webpagina met een Dynamic Media-viewer.
 
-Zie [ de Markeringen van het Experience Platform toevoegen bed Code ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html) in om meer over te leren hoe te om de bibliotheek van de Markeringen van het Experience Platform te gebruiken bed code in.
+Zie [ de Markeringen van het Experience Platform toevoegen bed Code ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html?lang=nl-NL) in om meer over te leren hoe te om de bibliotheek van de Markeringen van het Experience Platform te gebruiken bed code in.
 
 <!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
@@ -206,7 +206,7 @@ Als deze optie is geselecteerd, maakt de Data Element-editor een formulier met t
 
 ![ image2019-7-22_12-5-46 ](assets/image2019-7-22_12-5-46.png)
 
-Zie de [ de verwijzingsgids van de Kijkers van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) voor de lijst van gesteunde gebeurtenissen door elk kijkerstype; ga naar specifieke kijkerssectie, dan uitgezochte Steun voor Adobe Analytics volgende onderafdeling. Op dit moment worden in de naslaggids voor Dynamic Media Viewers geen gebeurtenisargumenten vastgelegd.
+Zie de [ de verwijzingsgids van de Kijkers van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=nl-NL#viewers-aem-assets-dmc) voor de lijst van gesteunde gebeurtenissen door elk kijkerstype; ga naar specifieke kijkerssectie, dan uitgezochte Steun voor Adobe Analytics volgende onderafdeling. Op dit moment worden in de naslaggids voor Dynamic Media Viewers geen gebeurtenisargumenten vastgelegd.
 
 Overweeg nu de levenscyclus van het Element van Gegevens van de Kijkers van Dynamic Media **. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende Dynamic Media-viewergebeurtenis op de pagina plaatsvindt. Stel dat het gegevenselement verwijst naar de gebeurtenis &#x200B;** [!UICONTROL LOAD] **&#x200B; en het argument &#39;asset&#39; ervan. In dat geval ontvangt de waarde van een dergelijk gegevenselement geldige gegevens nadat de viewer de gebeurtenis &#x200B;** [!UICONTROL LOAD] **&#x200B; voor de eerste keer uitvoert. Als het gegevenselement naar de gebeurtenis &#x200B;** [!UICONTROL ZOOM] **&#x200B; en het bijbehorende argument &quot;scale&quot; verwijst, blijft de waarde van een dergelijk gegevenselement leeg totdat de viewer een &#x200B;** [!UICONTROL ZOOM]** -gebeurtenis voor het eerst verzendt.
 
@@ -242,7 +242,7 @@ Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor he
 
 In elk geval worden de waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, niet opgeslagen op de lokale opslag of op de server. In plaats daarvan worden ze alleen bewaard in de tagbibliotheek van het client-side Experience Platform. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
-Over het algemeen, steunt de redacteur van het Element van Gegevens {de selectie van de 0} opslagduur [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element).  Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de optie voor de opslagduur van **[!UICONTROL None]** . Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer behoudt tijdens de volledige levenscyclus van de viewer.
+Over het algemeen, steunt de redacteur van het Element van Gegevens {de selectie van de 0} opslagduur [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=nl-NL#create-a-data-element).  Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de optie voor de opslagduur van **[!UICONTROL None]** . Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer behoudt tijdens de volledige levenscyclus van de viewer.
 
 ### Over Regels in de extensie Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -436,7 +436,7 @@ Nadat u Adobe Analytics hebt geconfigureerd, wordt het volgende voor integratie 
 * De Variabelen van de Analyse zijn beschikbaar om het volgen gegevens te ontvangen.
 * Rapporten zijn beschikbaar voor het weergeven van verzamelde gegevens in Adobe Analytics.
 
-Zie ook {de Gids van de Implementatie van 0} Analytics [&#128279;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
+Zie ook {de Gids van de Implementatie van 0} Analytics [&#128279;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=nl-NL).
 
 **om Adobe Analytics voor de integratie te vormen:**
 
@@ -454,7 +454,7 @@ Zie ook {de Gids van de Implementatie van 0} Analytics [&#128279;](https://exper
 
    Als er geen rapportsuite beschikbaar is, moet u of uw Adobe Analytics-beheerder er een maken voordat u verder kunt gaan met de configuratie.
 
-   Zie [ Rapporten en de Reeksen van het Rapport ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html) en [ leiden tot een rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
+   Zie [ Rapporten en de Reeksen van het Rapport ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=nl-NL) en [ leiden tot een rapportreeks ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=nl-NL).
 
    In Adobe Analytics worden rapportsuites beheerd onder **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** .
 
@@ -468,7 +468,7 @@ Zie ook {de Gids van de Implementatie van 0} Analytics [&#128279;](https://exper
 
    U kunt elk type variabele gebruiken dat door Adobe Analytics wordt ondersteund. Het besluit over het veranderlijke type (als de steunen van het Verkeer van de Douane &rbrack;, de eVar van de Omzetting [ ]) wordt gedreven door de specifieke behoeften van uw implementatie van Analytics.&lbrack;
 
-   Zie [ Overzicht van steunen en eVars ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
+   Zie [ Overzicht van steunen en eVars ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=nl-NL#vars).
 
    In het kader van deze documentatie wordt alleen een variabele Custom Traffic (props) gebruikt, omdat deze binnen een paar minuten nadat een handeling op een webpagina heeft plaatsgevonden, beschikbaar komt in een Analytics-rapport.
 
@@ -516,7 +516,7 @@ Nadat u de Markeringen van het Experience Platform vormt, wordt het volgende ops
 
 Een bezit in de Markeringen van het Experience Platform is een genoemde configuratie die al uw montages bij elkaar houdt. Er wordt een bibliotheek met de configuratie-instellingen gegenereerd en gepubliceerd op verschillende milieuniveaus (ontwikkeling, staging en productie).
 
-Zie ook [ tot een bezit van Markeringen ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html) leiden.
+Zie ook [ tot een bezit van Markeringen ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=nl-NL) leiden.
 
 1. Selecteer **[!UICONTROL New Property]** bij Experience Platform-tags.
 1. Typ in het dialoogvenster **[!UICONTROL Create Property]** in het veld **[!UICONTROL Name]** een beschrijvende naam, zoals de titel van uw website. Bijvoorbeeld: `DynamicMediaViewersProp.`
@@ -541,7 +541,7 @@ Waar nodig moeten de volgende extensies worden geïnstalleerd en geconfigureerd:
 
 Geen extra configuratie is nodig, keur voor om het even welke voorgestelde waarden goed. Als u klaar bent, moet u **[!UICONTROL Save]** selecteren.
 
-Zie [ de uitbreiding van de Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html).
+Zie [ de uitbreiding van de Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=nl-NL).
 
 * (Vereist) *Adobe Analytics* uitbreiding
 
@@ -561,7 +561,7 @@ Vouw op de pagina **[!UICONTROL Install Extension]** **[!UICONTROL General]** ui
 
 Selecteer **[!UICONTROL Save]** .
 
-Zie [ uitbreiding van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
+Zie [ uitbreiding van Adobe Analytics ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=nl-NL).
 
 * (Facultatief; vereist slechts als video het volgen nodig is) *Analytics van Adobe Media voor Audio en Video* uitbreiding
 
@@ -569,7 +569,7 @@ Vul het veld Trackingserver in. De volgende server voor *Adobe Media Analytics v
 
 Alle andere velden zijn optioneel.
 
-Zie [ Analytics van Adobe Media voor Audio en Video uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
+Zie [ Analytics van Adobe Media voor Audio en Video uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=nl-NL).
 
 * (Vereist) *de Kijkers van Dynamic Media* uitbreiding
 
@@ -599,7 +599,7 @@ Om de configuratie van de Markeringen van het Experience Platform (met inbegrip 
 
 De Markeringen van het Experience Platform kunnen veelvoudige milieu&#39;s van de Ontwikkeling, één het Opvoeren milieu, en één milieu van de Productie potentieel hebben. Door gebrek wijst de Configuratie van de Wolk van de Markeringen van het Experience Platform in Experience Manager de Experience Manager auteurknoop aan het milieu van het Stadium van de Markeringen van het Experience Platform. Het knooppunt Experience Manager Publish wijst naar de productieomgeving van Experience Platform-tags. Dit betekent dat met de standaardinstellingen voor Experience Managers, de bibliotheek met Experience Platform-tags moet worden gepubliceerd naar de testomgeving. Zo kunt u het gebruiken in de auteur van de Experience Manager. U kunt het dan publiceren in het milieu van de Productie zodat het in Experience Manager kan worden gebruikt publiceren.
 
-Zie [ Milieu&#39;s ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) voor meer informatie over de milieu&#39;s van de Markeringen van het Experience Platform.
+Zie [ Milieu&#39;s ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=nl-NL) voor meer informatie over de milieu&#39;s van de Markeringen van het Experience Platform.
 
 Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoerd:
 
@@ -657,7 +657,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
    ![ image2019-7-15_16-8-9 ](assets/image2019-7-15_16-8-9.png)
 
-   Zie [ het Publiceren ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) voor meer informatie over het het publiceren proces in de Markeringen van het Experience Platform.
+   Zie [ het Publiceren ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=nl-NL) voor meer informatie over het het publiceren proces in de Markeringen van het Experience Platform.
 
 ## Adobe Experience Manager configureren voor integratie {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -856,4 +856,4 @@ Deze wordt echter wel ondersteund in het publicatieknooppunt Experience Manager.
 
 Het is mogelijk om deze beperking te omzeilen. Geef de ontwikkelings- of staging-URL van de bibliotheek Platform Tags op in de Cloud-configuratie voor Experience Platforms voor het publicatieknooppunt van de Experience Manager hierboven. Dit maakt de Experience Manager publicatieknooppunt gebruiken de versie van de Markeringen van het Experience Platform van de Ontwikkeling of van het Staging.
 
-Zie [ Experience Manager met de Markeringen van het Experience Platform als  [!DNL Adobe Developer Console] integreren ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) voor meer informatie over de Configuratie van de Wolk van de Markeringen van het Experience Platform.
+Zie [ Experience Manager met de Markeringen van het Experience Platform als  [!DNL Adobe Developer Console] integreren ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=nl-NL) voor meer informatie over de Configuratie van de Wolk van de Markeringen van het Experience Platform.

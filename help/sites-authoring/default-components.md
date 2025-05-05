@@ -52,7 +52,7 @@ De [ Console van Componenten ](/help/sites-authoring/default-components-console.
 
 De volgende pagina&#39;s bevatten koppelingen naar enkele aanvullende, belangrijke informatie over componenten:
 
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) - de Componenten van de Kern bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan, die essentiële inhoudstypes verstrekt om pagina&#39;s tot stand te brengen.
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) - de Componenten van de Kern bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan, die essentiële inhoudstypes verstrekt om pagina&#39;s tot stand te brengen.
 
 * [ Gemeenschappen ](/help/communities/author-communities.md) - de Componenten verstrekken interactieve eigenschappen voor een website, zoals forums en commentaren. Veel van deze componenten zijn inbegrepen wanneer de Plaats van de a [ Gemeenschap ](/help/communities/overview.md) wordt gecreeerd.
 

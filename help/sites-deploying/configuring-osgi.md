@@ -174,7 +174,7 @@ Aangezien de zelfde configuratieparameter op verscheidene plaatsen is, is het sy
 
 >[!NOTE]
 >
->Lees ook [ hoe te om een op bewaarplaats-gebaseerde configuratie voor een specifieke instantie slechts ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html) te bepalen.
+>Lees ook [ hoe te om een op bewaarplaats-gebaseerde configuratie voor een specifieke instantie slechts ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=nl-NL) te bepalen.
 
 ### Een nieuwe configuratie toevoegen aan de opslagplaats {#adding-a-new-configuration-to-the-repository}
 

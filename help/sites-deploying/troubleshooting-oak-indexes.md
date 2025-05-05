@@ -53,7 +53,7 @@ Een gedwongen sluiting resulteert in AEM het opschorten van asynchrone indexerin
 
 >[!NOTE]
 >
->Voor AEM 6.1, zorg ervoor dat [ AEM 6.1 GFP 11 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) geïnstalleerd is.
+>Voor AEM 6.1, zorg ervoor dat [ AEM 6.1 GFP 11 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) geïnstalleerd is.
 
 In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asynchrone indexering te beheren overbelast worden. Om het het indexeren proces te isoleren, kan een draadpool worden gevormd om ander AEM werk te verhinderen zich in het vermogen van Oak te mengen om inhoud op geschikte wijze te indexeren. Voer in dergelijke gevallen de volgende handelingen uit:
 
@@ -128,7 +128,7 @@ Ga als volgt te werk om een vast opnieuw indexeringsproces te identificeren en t
 1. Na het verzamelen van alle informatie die in Stap 1 wordt geschetst, begin AEM opnieuw.
 
    * Het opnieuw opstarten van AEM kan het probleem oplossen als er een hoge gelijktijdige belasting is (overloop van de waarnemingswachtrij of iets dergelijks).
-   * Als een nieuw begin niet het probleem oplost, open een kwestie met [ de Zorg van de Klant van de Adobe ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) en verstrekt alle informatie die in Stap 1 wordt verzameld.
+   * Als een nieuw begin niet het probleem oplost, open een kwestie met [ de Zorg van de Klant van de Adobe ](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support) en verstrekt alle informatie die in Stap 1 wordt verzameld.
 
 ## Asynchrone herindexering veilig afbreken {#safely-aborting-asynchronous-re-indexing}
 

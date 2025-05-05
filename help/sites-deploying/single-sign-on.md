@@ -80,13 +80,13 @@ Om SSO voor een AEM instantie te vormen, vormt u de [ manager van de Authentific
 
 >[!NOTE]
 >
->Als u ook [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) met de Server van de Informatie van Microsoft® Internet (IIS) gebruikt, dan wordt de extra configuratie vereist binnen:
+>Als u ook [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) met de Server van de Informatie van Microsoft® Internet (IIS) gebruikt, dan wordt de extra configuratie vereist binnen:
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >In `disp_iis.ini` set:
->(zie [ installerend Dispatcher met de Server van de Informatie van Microsoft® Internet ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) voor volledige details)
+>(zie [ installerend Dispatcher met de Server van de Informatie van Microsoft® Internet ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=nl-NL#microsoft-internet-information-server) voor volledige details)
 >
 >* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
 >* `replaceauthorization=1` (vervangt een header met de naam &quot;Authorization&quot; (behalve &quot;Basic&quot;) door de waarde &quot;Basic&quot; (equivalent))

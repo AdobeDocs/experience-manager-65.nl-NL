@@ -61,7 +61,7 @@ De voordelen van bewerkbare sjablonen:
 
 >[!NOTE]
 >
->Zie [ Gebruikend Bewerkbare Malplaatjes van de Pagina om een plaats van de Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) te ontwikkelen.
+>Zie [ Gebruikend Bewerkbare Malplaatjes van de Pagina om een plaats van de Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL) te ontwikkelen.
 
 ### Statische sjablonen {#static-templates}
 

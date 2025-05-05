@@ -92,7 +92,7 @@ In de overzichtssectie op formulierniveau kunt u zien hoe het formulier de volge
 * **Concepten**: Aantal tijden de vorm is bewaard als ontwerp
 * **Voorleggen**: Aantal tijden de vorm is voorgelegd
 * **Afbreken**: Aantal tijden begonnen de gebruikers de vorm te vullen en dan verlaten zonder de vorm te voltooien
-* **Unieke Bezoekers**: Aantal tijden de vorm wordt &quot;teruggegeven door unieke bezoekers. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bebezoeken, en klantengedrag ](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Unieke Bezoekers**: Aantal tijden de vorm wordt &quot;teruggegeven door unieke bezoekers. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bebezoeken, en klantengedrag ](https://helpx.adobe.com/nl/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![ Uitgebreide vorm-vlakke samenvattingsanalyse rapport ](assets/analytics-report.png)
 

@@ -33,7 +33,7 @@ De Trust Store kan meer dan één Acrobat Reader DC Extensions-referentie bevatt
 
 >[!NOTE]
 >
->U kunt geloofsbrieven ook invoeren en schrappen programmatically. (Zie [ Programmering met AEM vormen ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).)
+>U kunt geloofsbrieven ook invoeren en schrappen programmatically. (Zie [ Programmering met AEM vormen ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).)
 
 ## Een Acrobat Reader DC Extensions-referentie importeren {#import-a-acrobat-reader-dc-extensions-credential}
 

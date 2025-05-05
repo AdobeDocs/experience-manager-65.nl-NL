@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >

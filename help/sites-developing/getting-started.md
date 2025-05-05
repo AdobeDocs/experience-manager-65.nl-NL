@@ -30,16 +30,16 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren A
 
 ![ WKND ](assets/screen_shot_2018-11-23at152453.png)
 
-[ het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) en leidt u door het creëren van een AEM project gebruikend de recentste technologieën en beste praktijken.
+[ het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) en leidt u door het creëren van een AEM project gebruikend de recentste technologieën en beste praktijken.
 
 ## Basisconcepten {#core-concepts}
 
 De zelfstudie-implementatie gebruikt veel krachtige functies voor AEM. De site wordt geïmplementeerd met:
 
-* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
 * [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
 * [Aanraakinterface](/help/sites-developing/touch-ui-concepts.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [Bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md)
 
 Voortgang door het leerprogramma alvorens in de bovengenoemde concepten in detail te duiken.

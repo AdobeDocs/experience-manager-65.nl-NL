@@ -19,7 +19,7 @@ Adobe Dynamic Tag Management is een hulpmiddel waarmee u uw digitale marketingto
 
 >[!CAUTION]
 >
->Adobe DTM wordt afgekeurd ten gunste van [!DNL Adobe Experience Platform] en zal spoedig [ eind van leven ](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. De Adobe adviseert dat u  [!DNL Adobe Experience Platform]  voor activa inzichten [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) gebruikt.
+>Adobe DTM wordt afgekeurd ten gunste van [!DNL Adobe Experience Platform] en zal spoedig [ eind van leven ](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. De Adobe adviseert dat u  [!DNL Adobe Experience Platform]  voor activa inzichten [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=nl-NL) gebruikt.
 
 Voer deze stappen uit om Assets Insights in te schakelen via DTM.
 
@@ -33,7 +33,7 @@ Voer deze stappen uit om Assets Insights in te schakelen via DTM.
 
    * Selecteer de tab **[!UICONTROL Web Properties]** en klik op **[!UICONTROL Add Property]** .
 
-   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]** . Zie [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]** . Zie [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL).
 
    ![ creeer uitgeven Webbezit ](assets/Create-edit-web-property.png)
 

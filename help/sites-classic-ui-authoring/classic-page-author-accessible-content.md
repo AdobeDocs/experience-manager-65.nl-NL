@@ -312,7 +312,7 @@ Exacte details over het maken van video met audioverichting vallen buiten het be
 
 * [ Begrip Criteria 1.2.3 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [ hoe te om Criteria 1.2.3 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [ Adobe Encore CS5 ](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
+* [ Adobe Encore CS5 ](https://helpx.adobe.com/nl/premiere-pro/using/whats-new.html)
 
 ### Bijschriften (live) (1.2.4)  {#captions-live}
 

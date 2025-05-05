@@ -180,7 +180,7 @@ Voor gebruikersbeheer binnen AEM (met inbegrip van toewijzing van toegangsrechte
 
 Dispatcher is een Adobe Experience Manager-programma voor caching, taakverdeling of beide. Het kan met een onderneming-klasse Webserver worden gebruikt.
 
-Zie [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) voor volledige details, in het bijzonder [ Vormend Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) voor verdere configuratiedetails.
+Zie [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) voor volledige details, in het bijzonder [ Vormend Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL) voor verdere configuratiedetails.
 
 ### Configuratie van AEM LiveCycle-connector {#configuring-aem-livecycle-connector}
 

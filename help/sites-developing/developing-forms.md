@@ -39,7 +39,7 @@ Naast [ het ontwikkelen van nieuwe componenten ](/help/sites-developing/developi
 
 >[!NOTE]
 >
->Dit document concentreert zich bij het ontwikkelen van vormen gebruikend de [ Componenten van de Stichting ](/help/sites-authoring/default-components-foundation.md) in klassieke UI. De Adobe adviseert gebruikend de nieuwe [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [ Verberg Voorwaarden ](/help/sites-developing/hide-conditions.md) voor vormontwikkeling in touch-Toegelaten UI.
+>Dit document concentreert zich bij het ontwikkelen van vormen gebruikend de [ Componenten van de Stichting ](/help/sites-authoring/default-components-foundation.md) in klassieke UI. De Adobe adviseert gebruikend de nieuwe [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en [ Verberg Voorwaarden ](/help/sites-developing/hide-conditions.md) voor vormontwikkeling in touch-Toegelaten UI.
 
 ## Formulierwaarden vooraf laden {#preloading-form-values}
 

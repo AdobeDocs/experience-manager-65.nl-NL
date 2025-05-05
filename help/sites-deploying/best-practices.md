@@ -98,7 +98,7 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   </tr>
   <tr>
    <td>Dispatcher gebruiken met een CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a></td>
    <td>Een CDN (Content Delivery Network), zoals Akamai Edge Delivery of Amazon Cloud Front, levert inhoud op een locatie die dicht bij de eindgebruiker ligt.</td>
   </tr>
   <tr>

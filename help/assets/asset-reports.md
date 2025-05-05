@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets] -implementatie beoordelen. Met [!DNL Assets] kunt u verschillende rapporten genereren voor uw digitale elementen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.

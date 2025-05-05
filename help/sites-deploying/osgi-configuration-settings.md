@@ -37,7 +37,7 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 >[!NOTE]
 >
->Het gereedschap van Diff van de Configuratie OSGi, een deel van [ AEM Hulpmiddelen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), kan worden gebruikt om van de standaard configuraties OSGi een lijst te maken.
+>Het gereedschap van Diff van de Configuratie OSGi, een deel van [ AEM Hulpmiddelen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=nl-NL), kan worden gebruikt om van de standaard configuraties OSGi een lijst te maken.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats 
 
 >[!CAUTION]
 >
->Wanneer het veranderen van het plaatsen voor of **&#x200B;**&#x200B;of **Gzip**, schrap de inhoud van cliëntlibgeheime voorgeheugen. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) voor details.
+>Wanneer het veranderen van het plaatsen voor of **&#x200B;**&#x200B;of **Gzip**, schrap de inhoud van cliëntlibgeheime voorgeheugen. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=nl-NL) voor details.
 
 >[!NOTE]
 >

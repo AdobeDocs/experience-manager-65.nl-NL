@@ -76,7 +76,7 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
 
 1. Controleer of de laatste code is geïnstalleerd:
 
-* [ AEM platformupdates ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
+* [ AEM platformupdates ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL)
 * [AEM Communities-updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}

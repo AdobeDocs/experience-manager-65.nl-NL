@@ -192,7 +192,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 ### Wat is er nieuw? {#what-is-new-april}
 
-* De montages van de configuratie voor CIF Schakelaar zijn verenigd en vereenvoudigd. Voor meer details controle [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) of [ Nieuwe AEM CIF de Opstelling van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
+* De montages van de configuratie voor CIF Schakelaar zijn verenigd en vereenvoudigd. Voor meer details controle [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=nl-NL) of [ Nieuwe AEM CIF de Opstelling van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=nl-NL)
 
 ### Verbeterde functies {#what-is-improved-april}
 

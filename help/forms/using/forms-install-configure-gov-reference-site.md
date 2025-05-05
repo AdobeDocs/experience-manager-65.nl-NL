@@ -88,7 +88,7 @@ Deze sectie bevat informatie over het installeren van het demopakket.
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer **wij-gov-forms.pkg.all-&lt;version>.zip** pakketnaam, selecteer **[!UICONTROL Accept EULA Terms]**, en selecteer **[!UICONTROL Download]**.
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
    ![ wij gaan vormenpakket ](assets/wegov_forms_package.jpg)
@@ -226,7 +226,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 **Verwijzingen:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [ het Vormen Dynamica Microsoft® voor AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
+1. [ het Vormen Dynamica Microsoft® voor AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=nl-NL)
 
 #### MS® Dynamics OData cloudservice {#ms-dynamics-odata-cloud-service}
 
@@ -480,7 +480,7 @@ Voor het installeren en configureren van AEM Forms met de Adobe Forms moeten geb
 
 Lees het volgende voordat u verdere instructies leest:
 
-* [De service voor automatische conversie van formulieren configureren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
+* [De service voor automatische conversie van formulieren configureren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL)
 
 #### Een IMS-configuratie maken, deel 1 {#creating-ims-config}
 
@@ -579,7 +579,7 @@ Nadat de IMS-configuratie is voltooid, kunt u de wolkenconfiguratie in AEM contr
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
-   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service) vormen.
+   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
 
 #### Cloud Configuration (wij.Finance AFC Production) configureren {#configure-cloud-configuration-wefinance}
 
@@ -609,7 +609,7 @@ Zodra de configuratie IMS volledig is, kunnen wij te werk gaan om de wolkenconfi
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
-   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service) vormen.
+   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
 
 #### De formulierconversie testen (Web.Gov-inschrijvingstoepassing) {#test-forms-conversion}
 
@@ -649,7 +649,7 @@ Wanneer de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF
 
 #### Bekende problemen en notities {#known-issues-notes}
 
-De dienst van de Automatede form conversion omvat bepaalde [ beste praktijken, bekende complexe patronen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), en [ bekende kwesties ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Bekijk deze voordat je AEM Forms Automatede form conversion-service gaat gebruiken.
+De dienst van de Automatede form conversion omvat bepaalde [ beste praktijken, bekende complexe patronen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=nl-NL), en [ bekende kwesties ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=nl-NL). Bekijk deze voordat je AEM Forms Automatede form conversion-service gaat gebruiken.
 
 1. Genereer het formulier met Aangepaste formulieren genereren zonder gegevensbindingen ingeschakeld als u het formulier na conversie aan een FDM wilt binden.
 

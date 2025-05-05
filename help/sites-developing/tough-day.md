@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Wat is Hoest Dag 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; is een toepassing waarmee u de grenzen van uw AEM kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt op [ deze opname ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) voor een presentatie van de toepassing letten.
+&quot;Tough Day 2&quot; is een toepassing waarmee u de grenzen van uw AEM kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt op [ deze opname ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=nl-NL) voor een presentatie van de toepassing letten.
 
 >[!CAUTION]
 >

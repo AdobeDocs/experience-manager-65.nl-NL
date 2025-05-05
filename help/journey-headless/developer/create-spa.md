@@ -129,4 +129,4 @@ Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde c
 * [ SPA het Overzicht van de Redacteur ](/help/sites-developing/spa-overview.md) - Details van hoe de Redacteur van de SPA werkt
 * [ SPA de Documenten van de Verwijzing ](/help/sites-developing/spa-reference-materials.md) - de verwijzingen van JavaScript API en verbindingen aan de open-bron AEM projecten GitHub SPA
 * [ Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) - hoe te om de Fragmenten van de Inhoud tot stand te brengen
-* [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Geweven malplaatje dat tot een minimaal, best-practices-gebaseerd project van Adobe Experience Manager (AEM) als uitgangspunt voor uw website leidt
+* [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) - Geweven malplaatje dat tot een minimaal, best-practices-gebaseerd project van Adobe Experience Manager (AEM) als uitgangspunt voor uw website leidt

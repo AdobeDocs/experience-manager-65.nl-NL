@@ -101,7 +101,7 @@ De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zi
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Zie [ hoe te om de Dumpen van de Verbinding van een JVM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) documentatie voor meer informatie te nemen
+Zie [ hoe te om de Dumpen van de Verbinding van een JVM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL) documentatie voor meer informatie te nemen
 
 ### Controleren op niet-afgesloten JCR-sessies {#checking-for-unclosed-jcr-sessions}
 

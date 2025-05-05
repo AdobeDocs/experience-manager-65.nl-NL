@@ -117,13 +117,13 @@ Om dit te voorkomen, is het raadzaam om niet-beveiligde omleidingspagina&#39;s t
 
 Als u Dispatcher gebruikt, moet u een Dispatcher-farm met de volgende eigenschappen definiëren:
 
-* [ virtuele gastheren ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Gelijke de weg aan de pagina&#39;s die CUG op van toepassing is.
+* [ virtuele gastheren ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#identifying-virtual-hosts-virtualhosts): Gelijke de weg aan de pagina&#39;s die CUG op van toepassing is.
 * \sessionmanagement: zie hieronder.
-* [ geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Een geheim voorgeheugenfolder die aan de dossiers wordt gewijd die CUG op van toepassing is.
+* [ geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache): Een geheim voorgeheugenfolder die aan de dossiers wordt gewijd die CUG op van toepassing is.
 
 ### Dispatcher Session Management configureren voor CUG&#39;s {#configuring-dispatcher-session-management-for-cugs}
 
-Vorm [ zittingsbeheer in het dispatcher.any- dossier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) voor CUG. De authentificatiemanager die wordt gebruikt wanneer de toegang voor de pagina&#39;s van de CUG wordt gevraagd bepaalt hoe u zittingsbeheer vormt.
+Vorm [ zittingsbeheer in het dispatcher.any- dossier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-secure-sessions-sessionmanagement) voor CUG. De authentificatiemanager die wordt gebruikt wanneer de toegang voor de pagina&#39;s van de CUG wordt gevraagd bepaalt hoe u zittingsbeheer vormt.
 
 ```xml
 /sessionmanagement
@@ -137,7 +137,7 @@ Vorm [ zittingsbeheer in het dispatcher.any- dossier ](https://experienceleague.
 >Wanneer een landbouwbedrijf van Dispatcher toegelaten zitting-beheer heeft, alle pagina&#39;s die de landbouwbedrijfhandvatten niet in het voorgeheugen onder worden gebracht. Om pagina&#39;s in het voorgeheugen onder te brengen die buiten CUG zijn, creeer een tweede landbouwbedrijf in dispatcher.any
 >die de niet-CUG-pagina&#39;s afhandelt.
 
-1. Configureer [ /sessionmanagement ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) door `/directory` te definiëren, bijvoorbeeld:
+1. Configureer [ /sessionmanagement ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-secure-sessions-sessionmanagement) door `/directory` te definiëren, bijvoorbeeld:
 
    ```xml
    /sessionmanagement
@@ -147,4 +147,4 @@ Vorm [ zittingsbeheer in het dispatcher.any- dossier ](https://experienceleague.
      }
    ```
 
-1. Stel [ /allowAuthorized ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) in op `0` .
+1. Stel [ /allowAuthorized ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#caching-when-authentication-is-used) in op `0` .

@@ -44,7 +44,7 @@ Dit document leidt u door elk van deze stappen in detail.
 
 * Toegang tot Adobe Campaign Classic voor beheerders
    * Om de integratie uit te voeren, hebt u een werkende instantie van Adobe Campaign Classic, met inbegrip van een gevormd gegevensbestand nodig.
-   * Als u extra details op nodig hebt om Adobe Campaign Classic op te zetten en te vormen zie de [ documentatie van Adobe Campaign Classic, ](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) vooral de gids van de Installatie en van de Configuratie.
+   * Als u extra details op nodig hebt om Adobe Campaign Classic op te zetten en te vormen zie de [ documentatie van Adobe Campaign Classic, ](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=nl-NL) vooral de gids van de Installatie en van de Configuratie.
 * Toegang tot AEM beheerder
 
 ## Het AEM integratiepakket in de campagne installeren {#install-package}
@@ -119,7 +119,7 @@ Het integratiepakket maakt automatisch de operator `aemserver` die AEM gebruikt 
    >
    >Door gebrek, is er geen veiligheidsstreek die voor de exploitant wordt gevormd. Als u AEM verbinding wilt maken met Adobe Campaign, moet u een zone selecteren zoals in de vorige stappen wordt beschreven.
    >
-   >Adobe beveelt ten zeerste aan een veiligheidszone in te stellen die is gewijd aan AEM om veiligheidsproblemen te voorkomen. Voor meer over dit onderwerp, zie de [ documentatie van Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe beveelt ten zeerste aan een veiligheidszone in te stellen die is gewijd aan AEM om veiligheidsproblemen te voorkomen. Voor meer over dit onderwerp, zie de [ documentatie van Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=nl-NL)
 
 1. In de cliënt van de Campagne, terugkeer aan de `aemserver` exploitant en selecteer het **Algemene** lusje.
 

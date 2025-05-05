@@ -304,7 +304,7 @@ In AEM kunnen binaire gegevens onafhankelijk van inhoudsknooppunten worden opges
 
 >[!CAUTION]
 >
->De relationele Database Micro Kernel wordt beperkt ondersteund. De Zorg van de Klant van de Adobe van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) alvorens dit type van Micro Kernel te gebruiken.
+>De relationele Database Micro Kernel wordt beperkt ondersteund. De Zorg van de Klant van de Adobe van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support) alvorens dit type van Micro Kernel te gebruiken.
 
 ![ chlimage_1-3 ](assets/chlimage_1-3a.png)
 

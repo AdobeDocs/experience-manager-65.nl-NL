@@ -35,7 +35,7 @@ Eerst moet een Sling Model voor de component worden bepaald.
 
 >[!NOTE]
 >
->Voor een voorbeeld om het Verdelen Modellen te gebruiken, zie [ het Ontwikkelen van het Verdelen ModelExporters in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+>Voor een voorbeeld om het Verdelen Modellen te gebruiken, zie [ het Ontwikkelen van het Verdelen ModelExporters in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=nl-NL).
 
 De implementatieklasse Sling Model moet met het volgende worden geannoteerd:
 
@@ -77,7 +77,7 @@ De modelinterface moet behoorlijk worden geannoteerd om te bepalen welke methode
 
 ## Voorbeeld {#example}
 
-De Componenten van de Kern hebben de uitvoer JSON sinds versie [ 1.1.0 van de kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) gesteund en kunnen als verwijzing worden gebruikt.
+De Componenten van de Kern hebben de uitvoer JSON sinds versie [ 1.1.0 van de kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) gesteund en kunnen als verwijzing worden gebruikt.
 
 Een voorbeeld vindt u in de implementatie Sling Model van de Image Core-component en de bijbehorende geannoteerde interface.
 
@@ -92,9 +92,9 @@ U kunt de code van deze pagina op GitHub vinden
 
 Raadpleeg de volgende secties voor meer informatie:
 
-* Het [ onderwerp van de Fragmenten van de Inhoud in de gebruikersgids van Assets ](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Het [ onderwerp van de Fragmenten van de Inhoud in de gebruikersgids van Assets ](https://helpx.adobe.com/nl/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-exportfunctie voor services voor inhoud](/help/sites-developing/json-exporter.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [ component van het Fragment van de Inhoud ](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en de [ component van het Fragment van de Inhoud ](https://helpx.adobe.com/nl/experience-manager/core-components/using/content-fragment-component.html)

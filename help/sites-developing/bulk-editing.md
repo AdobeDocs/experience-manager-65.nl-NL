@@ -62,7 +62,7 @@ De gebieden worden toegelaten op de paginacomponent (*niet* op het malplaatje):
 
    >[!NOTE]
    >
-   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Zie de [ documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor meer informatie.
+   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Zie de [ documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) voor meer informatie.
 
 1. Navigeer naar het vereiste veld binnen de definitie van `cq:dialog` .
 1. Definieer de volgende eigenschap op het veldknooppunt:

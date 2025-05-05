@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Voor gebruik van klassieke UI, zie [ AEM 6.3 documentatie ](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) voor verwijzing.
+>Voor gebruik van klassieke UI, zie [ AEM 6.3 documentatie ](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-developing/workflows-models.html) voor verwijzing.
 
 U creeert het model van het a [ werkschema ](/help/sites-developing/workflows.md#model) om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
 

@@ -155,7 +155,7 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
 * Lever Adaptieve videosets naar het web en naar desktops en mobiele apparaten, zoals de iPhone, iPad, Android™, BlackBerry® en Windows-telefoon.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie {de Gids van de Verwijzing van de Kijkers van 0} Dynamische Media [&#128279;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie {de Gids van de Verwijzing van de Kijkers van 0} Dynamische Media [&#128279;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamische media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -171,7 +171,7 @@ U kunt de apparaten vinden van Vensters die dit videoformaat bij het volgende st
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Zie ook [ Kijkers voor Experience Manager Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) en [ Kijkers voor slechts de activa van Experience Manager ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Zie ook [ Kijkers voor Experience Manager Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) en [ Kijkers voor slechts de activa van Experience Manager ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Tips en trucs: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
@@ -189,7 +189,7 @@ Door het volgende te combineren in één speler:
 
 U vergroot het bereik van uw rijke media-inhoud tot zowel desktopgebruikers als mobiele gebruikers en zorgt voor een gestroomlijnde videobeleving.
 
-Zie ook [ Ongeveer Kijkers HTML5 ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Zie ook [ Ongeveer Kijkers HTML5 ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Video afspelen op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -479,7 +479,7 @@ Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en selecteer
 
 Als u een uit-van-doos videoviewer gebruikt die door Dynamische Media wordt verstrekt, of als u een vooraf ingestelde douaneviewer creeerde die op een uit-van-doos videokijker wordt gebaseerd, dan worden geen extra stappen vereist om VideoRapporten te bekijken. Als u echter uw eigen videoviewer hebt gemaakt op basis van de HTML5 Viewer SDK API, voert u de volgende stappen uit om ervoor te zorgen dat uw videoviewer traceergebeurtenissen verzendt naar Dynamic Media Video-rapporten.
 
-Gebruik de [ Gids van de Verwijzing van de Kijkers van de Media van Adobe Dynamische ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) en [ SDK API van de Kijker HTML5 ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) om uw eigen videokijkers tot stand te brengen.
+Gebruik de [ Gids van de Verwijzing van de Kijkers van de Media van Adobe Dynamische ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources) en [ SDK API van de Kijker HTML5 ](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) om uw eigen videokijkers tot stand te brengen.
 
 **aan meningsvideorapporten die op een videokijker worden gebaseerd die u gebruikend de Dynamische Kijker HTML5 van Media SDK creeerde:**
 
@@ -809,7 +809,7 @@ Zie ook [ Toegankelijkheid in Dynamische Media ](/help/assets/accessibility-dm.m
 
 Met Dynamische media worden bijschriftbestanden omgezet in de JSON-indeling (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud vervolgens verkennen en indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
-Zie [ statische (niet beeld) inhoud van de Server ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) voor meer informatie over het gebruiken van de functie JSON in een URL.
+Zie [ statische (niet beeld) inhoud van de Server ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) voor meer informatie over het gebruiken van de functie JSON in een URL.
 
 **om gesloten titels aan een video toe te voegen:**
 
@@ -1451,7 +1451,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

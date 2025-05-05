@@ -27,7 +27,7 @@ Zorg ervoor om de [ recentste vormversie ](https://github.com/adobe/aem-core-for
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | Dit artikel |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
 
 ## Inleiding
 
@@ -355,7 +355,7 @@ OF
 
 ### Een clientbibliotheek maken met het AEM Project Archetype{#create-client-library-archetype}
 
-U kunt douanefuncties toevoegen door een cliëntbibliotheek aan het gecreeerde project toe te voegen [ gebruikend het AEM Archetype van het Project ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+U kunt douanefuncties toevoegen door een cliëntbibliotheek aan het gecreeerde project toe te voegen [ gebruikend het AEM Archetype van het Project ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Als u een bestaand project <!--and have already the project structure as shown in the image below,--> hebt kunt u [ douanefuncties ](#create-add-custom-function) aan uw lokaal project direct toevoegen.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -572,7 +572,7 @@ Bekijk een voorbeeld van het formulier om te zien hoe de aangepaste functies wor
 
 >[!NOTE]
 >
-> U kunt naar de volgende [ omslag van douanefuncties ](/help/forms/using/assets/customfunctions.zip) verwijzen. Download en installeer deze omslag in uw AEM instantie gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> U kunt naar de volgende [ omslag van douanefuncties ](/help/forms/using/assets/customfunctions.zip) verwijzen. Download en installeer deze omslag in uw AEM instantie gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Ondersteuning voor asynchrone functies in aangepaste functies {#support-of-async-functions}
 

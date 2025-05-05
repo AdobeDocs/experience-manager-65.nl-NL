@@ -20,9 +20,9 @@ ht-degree: 0%
 
 AEM 6.5.18.0 Forms op JEE biedt twee typen installatieprogramma&#39;s: volledig installatieprogramma en Patch-installatieprogramma.
 
-**Volledige installateur**: U kunt [ AEM 6.5.18.0 op volledig installatieprogramma JEE ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) gebruiken om nieuwe instanties van AEM Forms op te zetten of verbeteringen van AEM 6.5.x.x Forms op JEE aan AEM 6.5.18.0 Forms op JEE uit te voeren.
+**Volledige installateur**: U kunt [ AEM 6.5.18.0 op volledig installatieprogramma JEE ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) gebruiken om nieuwe instanties van AEM Forms op te zetten of verbeteringen van AEM 6.5.x.x Forms op JEE aan AEM 6.5.18.0 Forms op JEE uit te voeren.
 
-**installateur van het Patch**: [ AEM 6.5.18.0 op JEE flardinstallateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) is voor klanten die reeds AEM 6.5.x.x versies gebruiken. U kunt het installatieprogramma van de patch gebruiken om een upgrade uit te voeren naar de nieuwste versie van AEM Forms.
+**installateur van het Patch**: [ AEM 6.5.18.0 op JEE flardinstallateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) is voor klanten die reeds AEM 6.5.x.x versies gebruiken. U kunt het installatieprogramma van de patch gebruiken om een upgrade uit te voeren naar de nieuwste versie van AEM Forms.
 
 In de volgende tabel ziet u de scenario&#39;s voor het gebruik van het installatieprogramma voor volledige patches en patches.
 

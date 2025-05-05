@@ -769,7 +769,7 @@ Om het in cache plaatsen van persisted query&#39;s mogelijk te maken, zijn de vo
   >
   >De Dispatcher voegt het achtervoegsel `.json` toe aan alle blijvende query-URL&#39;s, zodat het resultaat in de cache kan worden opgeslagen.
   >
-  >Hiermee zorgt u ervoor dat de query voldoet aan de Dispatcher-vereisten voor documenten die in cache kunnen worden geplaatst. Voor verdere details zie [ Hoe keert Dispatcher documenten terug?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
+  >Hiermee zorgt u ervoor dat de query voldoet aan de Dispatcher-vereisten voor documenten die in cache kunnen worden geplaatst. Voor verdere details zie [ Hoe keert Dispatcher documenten terug?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=nl-NL#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -959,7 +959,7 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
 >[!NOTE]
 >
->Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM, zie [ het Delen van het Middel van de Cross-Origin begrijpen (CORS) ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
+>Voor een gedetailleerd overzicht van het CORS middel delend beleid in AEM, zie [ het Delen van het Middel van de Cross-Origin begrijpen (CORS) ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL#understand-cross-origin-resource-sharing-(cors)).
 
 Om tot het eindpunt van GraphQL toegang te hebben, vorm een beleid CORS in de bewaarplaats van de Kit van de klant. Deze configuratie wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor één of meerdere gewenste eindpunten toe te voegen.
 
@@ -1098,4 +1098,4 @@ In de toekomst, is AEM van plan om in AEM GraphQL API te investeren.*&quot;
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
 
-Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met AEM Zwaartepunt en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een hoofdCMS scenario.
+Op zoek naar een praktische zelfstudie? Controle uit [ Begonnen het Worden met AEM Zwaartepunt en GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) leerprogramma van begin tot eind illustrerend hoe te om inhoud op te bouwen en bloot te stellen gebruikend AEM GraphQL APIs en verbruikt door een externe app, in een hoofdCMS scenario.

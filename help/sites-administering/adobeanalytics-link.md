@@ -141,7 +141,7 @@ s.linkTrackVars= 'prop4';
 
 ## Configuratie voorbeeldkoppeling bijhouden {#example-link-tracking-configuration}
 
-Voer de volgende procedures uit om het gedrag van het verbinden volgen van de integratie van Adobe Analytics te onderzoeken. De procedures tonen resultaten van [ Debugger van Adobe Marketing Cloud ](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+Voer de volgende procedures uit om het gedrag van het verbinden volgen van de integratie van Adobe Analytics te onderzoeken. De procedures tonen resultaten van [ Debugger van Adobe Marketing Cloud ](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=nl-NL).
 
 ### Algemene configuratie {#general-configuration}
 

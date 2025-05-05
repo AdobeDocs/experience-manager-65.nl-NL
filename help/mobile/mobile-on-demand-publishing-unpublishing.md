@@ -24,7 +24,7 @@ Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en 
 
 >[!NOTE]
 >
->Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
 
 ## De inhoud publiceren/publiceren ongedaan maken {#publishing-unpublishing-the-content}
 

@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 Met [!DNL Adobe Experience Manager Assets] kunt u vertaalworkflows automatiseren voor elementen (inclusief binaire gegevens, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.

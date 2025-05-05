@@ -108,7 +108,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
         <tr>
         <td>pictogram</td>
         <td>String</td>
-        <td>icon-download <br /> <br /> Het pictogram dat Correspondence Management links van uw opdracht/menu weergeeft. Voor verschillende beschikbare pictogrammen en montages, zie <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank"> documentatie van Pictogrammen CoralUI </a>.<br /> </td>
+        <td>icon-download <br /> <br /> Het pictogram dat Correspondence Management links van uw opdracht/menu weergeeft. Voor verschillende beschikbare pictogrammen en montages, zie <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL" target="_blank"> documentatie van Pictogrammen CoralUI </a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -277,7 +277,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
    1. Dubbelklik het {**dossier 0} POST.jsp om het in CRX te openen.**
    1. Voeg de volgende code aan POST.jsp- dossier toe en klik **sparen allen**:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg de Java™-bibliotheken van dat element aan deze code toe voor andere elementen. Voor meer informatie over AEM Forms APIs, zie [ AEM Forms API ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg de Java™-bibliotheken van dat element aan deze code toe voor andere elementen. Voor meer informatie over AEM Forms APIs, zie [ AEM Forms API ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
 
       Voor meer informatie over AEM bibliotheken, zie AEM [ Componenten ](/help/sites-developing/components.md).
 

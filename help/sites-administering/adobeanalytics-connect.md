@@ -51,7 +51,7 @@ Voordat u verdergaat, moet u ervoor zorgen dat u zich bij Adobe Analytics kunt a
 
 ### AEM configureren voor het gebruik van uw Adobe Analytics-datacenters {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [ gegevenscentra ](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) verzamelen, verwerken, en slaan gegevens verbonden aan uw het rapportreeks van Adobe Analytics op. Configureer AEM om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportenpakket. Het datacenter wordt vermeld in uw contract. Neem voor deze informatie contact op met een beheerder in uw organisatie.
+Adobe Analytics [ gegevenscentra ](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=nl-NL) verzamelen, verwerken, en slaan gegevens verbonden aan uw het rapportreeks van Adobe Analytics op. Configureer AEM om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportenpakket. Het datacenter wordt vermeld in uw contract. Neem voor deze informatie contact op met een beheerder in uw organisatie.
 
 Gebruik indien nodig het volgende om naar het juiste datacenter te worden geleid: `https://api.omniture.com/` .
 
@@ -86,7 +86,7 @@ Gebruik de [ Console van het Web om de bundel OSGi ](/help/sites-deploying/confi
 >
 >Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen.
 >
->De [ insteekmodule ActivityMap die door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) wordt verstrekt zou nu moeten worden gebruikt.
+>De [ insteekmodule ActivityMap die door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.
 
 ## Configureren voor de Activity Map {#configuring-for-the-activity-map}
 
@@ -94,7 +94,7 @@ Gebruik de [ Console van het Web om de bundel OSGi ](/help/sites-deploying/confi
 >
 >Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen.
 >
->De [ insteekmodule ActivityMap die door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) wordt verstrekt zou nu moeten worden gebruikt.
+>De [ insteekmodule ActivityMap die door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.
 
 ## Een Adobe Analytics-framework maken {#creating-a-adobe-analytics-framework}
 
@@ -183,7 +183,7 @@ Afstammingen van de pagina nemen de koppeling met het framework over. Wanneer u 
 1. Selecteer **sparen &amp; Sluiten**.
 1. Om de pagina en om het even welke verbonden configuraties/dossiers te activeren, **[Publish](/help/sites-authoring/publishing-pages.md)** de pagina.
 1. De definitieve stap is de pagina op te bezoeken publiceert instantie en onderzoek naar een sleutelwoord (bijvoorbeeld, augplant) gebruikend de **component van het Onderzoek**.
-1. U kunt dan de vraag controleren die aan Adobe Analytics wordt gemaakt gebruikend een aangewezen hulpmiddel; bijvoorbeeld, [ Debugger van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
+1. U kunt dan de vraag controleren die aan Adobe Analytics wordt gemaakt gebruikend een aangewezen hulpmiddel; bijvoorbeeld, [ Debugger van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL).
 1. Gebruikend het voorgelegde voorbeeld, zou de vraag de ingegane waarde (d.w.z., augplant) in eVar7 moeten bevatten en de gebeurtenislijst zou event3 moeten bevatten.
 
 ### Paginaweergaven {#page-views}

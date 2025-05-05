@@ -19,7 +19,7 @@ ht-degree: 0%
 
 In Correspondence Management bevat een lettertypesjabloon typische formuliervelden, indelingsfuncties zoals een kop- en voettekst en lege &quot;doelgebieden&quot; voor de plaatsing van inhoud.
 
-Het Beheer van de correspondentie verstrekt brievenmalplaatjes in het [ toe:voegen-op pakket van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en zakelijke behoeften. Het pakket bevat de volgende sjablonen:
+Het Beheer van de correspondentie verstrekt brievenmalplaatjes in het [ toe:voegen-op pakket van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en zakelijke behoeften. Het pakket bevat de volgende sjablonen:
 
 * Klassiek
 * Klassiek eenvoudig

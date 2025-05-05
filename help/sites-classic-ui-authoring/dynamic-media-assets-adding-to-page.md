@@ -93,7 +93,7 @@ Deze optie is alleen beschikbaar als u afbeeldingssets, centrifuges of gemengde 
 
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-**[!UICONTROL Image Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor afbeeldingen in te voeren. Deze bevelen worden beschreven in [ het Leiden Beeld vooraf instelt ](/help/assets/managing-viewer-presets.md) en de [ verwijzing van het Bevel ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Image Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor afbeeldingen in te voeren. Deze bevelen worden beschreven in [ het Leiden Beeld vooraf instelt ](/help/assets/managing-viewer-presets.md) en de [ verwijzing van het Bevel ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=nl-NL).
 
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
@@ -139,7 +139,7 @@ U kunt de volgende [!UICONTROL Advanced] -instellingen bewerken door op **[!UICO
 
 In Experience Manager 6.2, wanneer u [ FP-13480 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installeert, kunt u controleren of een video over een veilige SSL verbinding (HTTPS) of een onveilige verbinding (HTTP) wordt geleverd. Standaard wordt het video-leveringsprotocol automatisch overgenomen van het protocol van de ingesloten webpagina. Als de webpagina via HTTPS wordt geladen, wordt de video ook via HTTPS geleverd. Omgekeerd geldt dat als de webpagina zich op HTTP bevindt, de video via HTTP wordt geleverd. Gewoonlijk is dit standaardgedrag prima en hoeft de configuratie niet te worden gewijzigd. U kunt dit standaardgedrag echter overschrijven. Voeg `VideoPlayer.ssl=on` toe aan het einde van een URL-pad of aan de lijst met andere parameters voor viewerconfiguratie in een ingesloten codefragment. Beide acties dwingen de veilige videoverzending.
 
-Voor meer informatie over veilige videolevering en het gebruiken van het `VideoPlayer.ssl` configuratieattribuut in uw weg URL, zie [ Veilige VideoLevering ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) in de Gids van de Verwijzing van Kijkers. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
+Voor meer informatie over veilige videolevering en het gebruiken van het `VideoPlayer.ssl` configuratieattribuut in uw weg URL, zie [ Veilige VideoLevering ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=nl-NL) in de Gids van de Verwijzing van Kijkers. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
 
 ### Interactieve media-component {#interactive-media-component}
 

@@ -166,7 +166,7 @@ Dit probleem kan meerdere oorzaken hebben:
 U kunt de volgende oplossingen uitproberen:
 
 * Zorg ervoor de klantencode die de DTM-als bibliotheken laadt (die beurtelings de bibliotheken van het Doel laden) synchroon in het [ paginakop ](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages) wordt uitgevoerd.
-* als de plaats wordt gevormd om DTM te gebruiken om de bibliotheken van het Doel te leveren ervoor zorgen dat de **Clientlib die door DTM** optie wordt geleverd in de [ configuratie van het Doel ](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) voor de plaats wordt gecontroleerd.
+* als de plaats wordt gevormd om DTM te gebruiken om de bibliotheken van het Doel te leveren ervoor zorgen dat de **Clientlib die door DTM** optie wordt geleverd in de [ configuratie van het Doel ](https://helpx.adobe.com/nl/experience-manager/6-3/sites/administering/using/target-configuring.html) voor de plaats wordt gecontroleerd.
 
 ### Een standaardaanbieding wordt altijd getoond in plaats van correcte aanbieding wanneer het gebruiken van AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -211,7 +211,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Als de reactie de lijn `a4tEnabled:false` bevat, de Zorg van de Klant van de Adobe [&#128279;](https://helpx.adobe.com/contact.html) om uw rekening te krijgen die correct wordt voorzien.
+Als de reactie de lijn `a4tEnabled:false` bevat, de Zorg van de Klant van de Adobe [&#128279;](https://helpx.adobe.com/nl/contact.html) om uw rekening te krijgen die correct wordt voorzien.
 
 ### Nuttige doel-API&#39;s {#helpful-target-apis}
 

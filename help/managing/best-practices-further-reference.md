@@ -33,7 +33,7 @@ Wanneer het uitvoeren van AEM (in het bijzonder voor de eerste keer), herzie de 
 Houd rekening met de functies van AEM die u gebruikt en met de invloed op uw ontwerp, bijvoorbeeld:
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [ Screens ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [ Screens ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=nl-NL)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Beheer en vertaling van meerdere sites](/help/sites-administering/msm-and-translation.md)

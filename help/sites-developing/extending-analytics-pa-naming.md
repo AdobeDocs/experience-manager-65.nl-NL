@@ -42,7 +42,7 @@ De service `DefaultPageNameProvider` bepaalt welke van deze CQ-variabelen wordt 
 
 * `pagedata.navTitle`: de service gebruikt `page.getNavigationTitle()`
 
-Het `page` -object is het Java-object [`com.day.cq.wcm.api.Page` ](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) voor de pagina.
+Het `page` -object is het Java-object [`com.day.cq.wcm.api.Page` ](https://helpx.adobe.com/nl/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) voor de pagina.
 
 Als u geen CQ-variabele toewijst aan de eigenschap `s.pageName` in het framework, wordt de waarde voor `s.pageName` gegenereerd vanuit het paginapad. De pagina met het pad `/content/geometrixx/en` gebruikt bijvoorbeeld de waarde `content:geometrixx:en` for `s.pageName` .
 

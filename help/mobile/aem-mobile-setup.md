@@ -32,7 +32,7 @@ Voer de volgende stappen uit om AEM Mobile in te stellen, zodat de gebruiker de 
 
 Om aan de slag te gaan met het instellen van AEM Mobile, moet u:
 
-* **verzoek een API sleutel**: Om tot de On-Demand API van de Diensten toegang te hebben, moet u om een API sleutel verzoeken. Om de API sleutel aan te vragen, voltooi de [ vorm van de PDF ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Verzend de voltooide vorm naar de Steun van Adobe Developer: [ wwds@adobe.com](mailto:wwds@adobe.com)
+* **verzoek een API sleutel**: Om tot de On-Demand API van de Diensten toegang te hebben, moet u om een API sleutel verzoeken. Om de API sleutel aan te vragen, voltooi de [ vorm van de PDF ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Verzend de voltooide vorm naar de Steun van Adobe Developer: [ wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **produceer identiteitskaart van het Apparaat en Symbolisch van het Apparaat**: Zodra u uw API sleutel hebt ontvangen, kunt u apparatenidentiteitskaart en apparatenteken produceren. Ga naar `https://aex.aemmobile.adobe.com` en voer de volgende handelingen uit:
 
@@ -46,7 +46,7 @@ Als aan alle voorwaarden wordt voldaan, worden een apparaat-id en apparaattoken 
 
 >[!NOTE]
 >
->De Adobe ID moet toegang krijgen tot een AEM Mobile-project. Zie [ Beleid van de Rekening voor AEM Mobile ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
+>De Adobe ID moet toegang krijgen tot een AEM Mobile-project. Zie [ Beleid van de Rekening voor AEM Mobile ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
 
 ## Projecten maken voor AEM Mobile {#creating-projects-for-aem-mobile}
 
@@ -56,7 +56,7 @@ Voor het maken van een project moet u zich aanmelden bij het portal On-Demand Se
 
 >[!NOTE]
 >
->Meer over het Creëren van Projecten in AEM Mobile leren, klik [ hier ](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html).
+>Meer over het Creëren van Projecten in AEM Mobile leren, klik [ hier ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-projects.html).
 
 ## Een AEM Mobile-connector configureren {#configuring-an-aem-mobile-connector}
 
@@ -117,7 +117,7 @@ In de ontwikkeling van AEM Mobile-apps bestaan drie verschillende rollen:
 * Developer
 * Auteur
 
-Voor meer informatie bij het creëren van rollen met verschillende toestemmingen zoals voor app het bouwen of voor het creëren van en het publiceren van inhoud, klik [ Creërend de Rollen van de Gebruiker en het Verlenen van Toegang ](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) in de Hulp van AEM Mobile.
+Voor meer informatie bij het creëren van rollen met verschillende toestemmingen zoals voor app het bouwen of voor het creëren van en het publiceren van inhoud, klik [ Creërend de Rollen van de Gebruiker en het Verlenen van Toegang ](https://helpx.adobe.com/nl/digital-publishing-solution/help/account-admin-dps.html) in de Hulp van AEM Mobile.
 
 >[!NOTE]
 >

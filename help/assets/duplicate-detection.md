@@ -31,4 +31,4 @@ De functie Dupliceren detecteren is nu ingeschakeld in [!DNL Assets] . Wanneer e
 >[!MORELIKETHIS]
 >
 >* [ Dupliceer activa in bestaande bewaarplaats (een leerprogramma van een communautair lid) ](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [ ontdekt dubbele activa in AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [ ontdekt dubbele activa in AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=nl-NL)

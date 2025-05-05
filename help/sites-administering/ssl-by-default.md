@@ -195,7 +195,7 @@ Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaa
 
 >[!NOTE]
 >
->Zie [ Gebruikend cURL met AEM ](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
+>Zie [ Gebruikend cURL met AEM ](https://helpx.adobe.com/nl/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
 
 U kunt de SSL/TLS-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
 

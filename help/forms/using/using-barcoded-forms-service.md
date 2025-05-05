@@ -137,9 +137,9 @@ U kunt de **AEMFD Barcoded Dienst van Forms** in AEM Console gebruiken om eigens
 
 Barcoded Forms Service biedt de volgende twee API&#39;s:
 
-* **[decoderen ](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodeert alle streepjescodes beschikbaar in een document van de input PDF of tiff beeld. Er wordt een ander XML-document geretourneerd dat gegevens bevat die zijn opgehaald uit alle streepjescodes die beschikbaar zijn in het invoerdocument of de afbeelding.
+* **[decoderen ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Decodeert alle streepjescodes beschikbaar in een document van de input PDF of tiff beeld. Er wordt een ander XML-document geretourneerd dat gegevens bevat die zijn opgehaald uit alle streepjescodes die beschikbaar zijn in het invoerdocument of de afbeelding.
 
-* **[extractToXML ](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Zet gegevens gedecodeerd gebruikend decode API in de gegevens van XML om. Deze XML-gegevens kunnen worden samengevoegd met een XFA-formulier. Er wordt een lijst met XML-documenten geretourneerd, één voor elke streepjescode.
+* **[extractToXML ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Zet gegevens gedecodeerd gebruikend decode API in de gegevens van XML om. Deze XML-gegevens kunnen worden samengevoegd met een XFA-formulier. Er wordt een lijst met XML-documenten geretourneerd, één voor elke streepjescode.
 
 ### De Dienst BCF met JSP of Servlets gebruiken {#using-bcf-service-with-a-jsp-or-servlets}
 

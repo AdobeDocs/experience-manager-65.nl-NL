@@ -56,7 +56,7 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 >* Betere implementatieopties voor toepassingen van één pagina
 >* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan doel.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=nl-NL -->
 
 ### Voorziene eigenschappen van doelframework {#provisioned-target-framework-properties}
 
@@ -119,7 +119,7 @@ Handmatig integreren met Adobe Target in plaats van de wizard Optie gebruiken.
 >
 >U kunt AT.js of mbox.js in het **de bibliotheek van de Cliënt** drop-down menu selecteren.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=nl-NL -->
 
 ### Een doelcloud-configuratie maken {#creating-a-target-cloud-configuration}
 
@@ -224,7 +224,7 @@ Uw framework is gemaakt. Om het kader aan te herhalen publiceer instantie, gebru
 
 ### Activiteiten koppelen aan de doelcloud-configuratie  {#associating-activities-with-the-target-cloud-configuration}
 
-Koppel uw [ AEM activiteiten ](/help/sites-authoring/activitylib.md) met uw de wolkenconfiguratie van het Doel zodat u de activiteiten in [ Adobe Target ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html) kunt weerspiegelen.
+Koppel uw [ AEM activiteiten ](/help/sites-authoring/activitylib.md) met uw de wolkenconfiguratie van het Doel zodat u de activiteiten in [ Adobe Target ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=nl-NL) kunt weerspiegelen.
 
 >[!NOTE]
 >

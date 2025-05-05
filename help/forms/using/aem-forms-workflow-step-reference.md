@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 U gebruikt workflowmodellen om een bedrijfslogica om te zetten in een geautomatiseerd, zich herhalend proces. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse AEM stappen van het Werkschema in een model omvatten om de bedrijfslogica ](/help/sites-developing/workflows-models.md#extending-aem) te bereiken.
@@ -89,7 +89,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
    * **sparen lay-outmalplaatje gebruikend:** sparen het lay-outmalplaatje gebruikend een weg die met betrekking tot de lading is of het opslaat in een variabele van het gegevenstype van het Document. Het [ lay-outmalplaatje ](../../forms/using/layout-design-details.md) verwijst naar een XDP dossier dat u gebruikend Forms Designer creeert. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
 
 * **toewijzen de Wijs opties toe:** specificeer de methode om de taak aan een gebruiker toe te wijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM gebruiker of groep.
-* **Kiezer van de Deelnemer:** de optie is beschikbaar wanneer **dynamisch aan een gebruiker of een groep** optie op het Assign optiesgebied wordt geselecteerd. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ dynamisch een werkschema toewijzen aan de gebruikers ](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [ Creërend een stap van de Dynamische Deelnemer van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **Kiezer van de Deelnemer:** de optie is beschikbaar wanneer **dynamisch aan een gebruiker of een groep** optie op het Assign optiesgebied wordt geselecteerd. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ dynamisch een werkschema toewijzen aan de gebruikers ](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [ Creërend een stap van de Dynamische Deelnemer van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&amp;CID=RedirectAEMCommunityKautuk)
 
 * **Deelnemers:** het gebied is beschikbaar wanneer de **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** optie op het **de Chooser van de Deelnemer** gebied wordt geselecteerd. In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 

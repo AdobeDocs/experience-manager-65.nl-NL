@@ -28,9 +28,9 @@ Als deel van het integratieproces, vorm het **DAM de werkschema van de Activa va
 
 >[!NOTE]
 >
->U kunt sjablonen voor InDesigns genereren op basis van InDesigns voordat u ze importeert in AEM Assets. Voor details, zie [ Werkend met dossiers en malplaatjes ](https://helpx.adobe.com/indesign/using/files-templates.html).
+>U kunt sjablonen voor InDesigns genereren op basis van InDesigns voordat u ze importeert in AEM Assets. Voor details, zie [ Werkend met dossiers en malplaatjes ](https://helpx.adobe.com/nl/indesign/using/files-templates.html).
 >
->U kunt de elementen in uw sjablonen van InDesigns toewijzen aan XML-labels. De toegewezen labels worden als eigenschappen weergegeven wanneer u in Catalog Producer producteigenschappen toewijst aan sjablooneigenschappen. Om over XML te leren etiketterend in de dossiers van het InDesign, zie [ het Etiketteren inhoud voor XML ](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
+>U kunt de elementen in uw sjablonen van InDesigns toewijzen aan XML-labels. De toegewezen labels worden als eigenschappen weergegeven wanneer u in Catalog Producer producteigenschappen toewijst aan sjablooneigenschappen. Om over XML te leren etiketterend in de dossiers van het InDesign, zie [ het Etiketteren inhoud voor XML ](https://helpx.adobe.com/nl/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >

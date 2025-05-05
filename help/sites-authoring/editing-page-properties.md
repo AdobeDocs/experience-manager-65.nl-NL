@@ -49,7 +49,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Branding**
 
-  Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+  Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 
    * **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
       * De waarde wordt geërft door om het even welke kindpagina&#39;s tenzij zij ook hun **vastgestelde waarden van de Overschrijving** hebben.
@@ -98,7 +98,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   >* Deze mag niet op een bestaande pagina worden ingesteld.
   >
 
-  Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ Toelatend Toegang tot Vanity URLs ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
+  Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ Toelatend Toegang tot Vanity URLs ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
 
 * **Redirect Vanity URL**
 
@@ -190,7 +190,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **Sociale Media die** delen
 
-  Definieert de opties voor delen die beschikbaar zijn op de pagina. Toont de opties die aan [ beschikbaar zijn delend kerncomponent ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Definieert de opties voor delen die beschikbaar zijn op de pagina. Toont de opties die aan [ beschikbaar zijn delend kerncomponent ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=nl-NL).
 
    * **laat gebruiker toe delend voor Facebook**
    * **laat gebruiker toe delend voor Pinterest**

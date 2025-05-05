@@ -49,7 +49,7 @@ In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewe
 >[!NOTE]
 >
 >De volgende zelfstudie kan ook van belang zijn voor het instellen van een bewerkbare paginasjabloon in een nieuw project:
->[Begonnen het worden met AEM Sites Deel 2 - Creërend een Pagina en een Malplaatje van de Basis ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>[Begonnen het worden met AEM Sites Deel 2 - Creërend een Pagina en een Malplaatje van de Basis ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=nl-NL)
 
 ## Een nieuwe sjabloon maken {#creating-a-new-template}
 
@@ -73,7 +73,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Met de structuur kunt u componenten en inhoud voor de sjabloon definiëren.
    * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 
-      * Als u een malplaatje in een douanemap buiten de `We.Retail` steekproefinhoud creeert, kunt u de Componenten van de Stichting kiezen of [ Componenten van de Kern gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+      * Als u een malplaatje in een douanemap buiten de `We.Retail` steekproefinhoud creeert, kunt u de Componenten van de Stichting kiezen of [ Componenten van de Kern gebruiken ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL).
 
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
@@ -132,7 +132,7 @@ Bij het maken van een bewerkbare sjabloon:
 
 >[!TIP]
 >
->Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden, wordt de [ lokalisatieeigenschap van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) geadviseerd.
+>Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden, wordt de [ lokalisatieeigenschap van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=nl-NL) geadviseerd.
 
 >[!NOTE]
 >

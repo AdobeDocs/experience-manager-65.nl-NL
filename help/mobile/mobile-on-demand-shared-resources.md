@@ -24,7 +24,7 @@ De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud b
 
 >[!NOTE]
 >
->Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Hulp.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html) in Online Hulp.
 
 >[!CAUTION]
 >

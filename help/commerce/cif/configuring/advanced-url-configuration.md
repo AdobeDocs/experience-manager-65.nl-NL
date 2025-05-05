@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten de zorgen van de SEO over vele AEM projecten worden aangepakt. Zie [ SEO en de Beste praktijken van het Beheer URL ](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) voor extra informatie.
+>SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten de zorgen van de SEO over vele AEM projecten worden aangepakt. Zie [ SEO en de Beste praktijken van het Beheer URL ](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=nl-NL) voor extra informatie.
 
 [ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) verstrekt geavanceerde configuraties om URLs voor product en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om de `UrlProvider` Dienst en eigenschappen van [ het Schipen Afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs voor product en categoriepagina&#39;s aan te passen.
 
@@ -110,5 +110,5 @@ Het [&#128279;](https://github.com/adobe/aem-cif-guides-venia) project van de op
 ## Aanvullende bronnen
 
 * [ de opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia)
-* [ AEM Middel in kaart brengen ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [ AEM Middel in kaart brengen ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=nl-NL)
 * [ Sling Mappings ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

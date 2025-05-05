@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 In [!DNL Adobe Experience Manager Assets] kunt u meer doen dan uw elementen opslaan en beheren. [!DNL Experience Manager] biedt mogelijkheden voor bedrijfsmiddelenbeheer. U kunt elementen bewerken en delen, geavanceerde zoekopdrachten uitvoeren en meerdere uitvoeringen van tientallen ondersteunde bestandsindelingen maken. U kunt ook versies en digitale rechten beheren, de verwerking van elementen automatiseren, metagegevens beheren en besturen, samenwerken met annotaties en nog veel meer.
@@ -103,7 +103,7 @@ Ga naar `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.s
 
 >[!CAUTION]
 >
->Het uploaden van de brok wordt teweeggebracht wanneer de standaardwaarde 500 MB is en de brokgrootte 50 MB is. Als u [ Apache Jackrabbit Oak TokenConfiguration ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) uitgeeft en `timeout configuration` aan minder dan de tijd plaatst het voor activa aan upload neemt, ontmoet u een situatie van de zittingsonderbreking terwijl de activa uploadt lopend is. Wijzig daarom de `chunkUploadMinFileSize` en `chunksize` zodanig dat elke segmentaanvraag de sessie vernieuwt.
+>Het uploaden van de brok wordt teweeggebracht wanneer de standaardwaarde 500 MB is en de brokgrootte 50 MB is. Als u [ Apache Jackrabbit Oak TokenConfiguration ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=nl-NL) uitgeeft en `timeout configuration` aan minder dan de tijd plaatst het voor activa aan upload neemt, ontmoet u een situatie van de zittingsonderbreking terwijl de activa uploadt lopend is. Wijzig daarom de `chunkUploadMinFileSize` en `chunksize` zodanig dat elke segmentaanvraag de sessie vernieuwt.
 >
 >Op basis van de time-out bij verlopen van de referentie, de latentie, de bandbreedte en de verwachte gelijktijdige uploads, is de hoogste waarde waarmee u ervoor kunt zorgen dat het volgende wordt gekozen:
 >
@@ -170,7 +170,7 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 
 >[!NOTE]
 >
->Als u elementen wilt uploaden via FTP in de modus Dynamic Media - Scene7, installeert u Feature Pack 18912 op de auteur-exemplaren van [!DNL Experience Manager] . De Steun van de Klant van de Adobe van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General#support) om toegang tot FP-18912 te krijgen en de opstelling van uw rekening van FTP te voltooien.  Voor meer informatie, zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-migrate.md) installeren.
+>Als u elementen wilt uploaden via FTP in de modus Dynamic Media - Scene7, installeert u Feature Pack 18912 op de auteur-exemplaren van [!DNL Experience Manager] . De Steun van de Klant van de Adobe van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support) om toegang tot FP-18912 te krijgen en de opstelling van uw rekening van FTP te voltooien.  Voor meer informatie, zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-migrate.md) installeren.
 >
 >Als u FTP gebruikt om elementen te uploaden, worden de uploadinstellingen die in [!DNL Experience Manager] zijn opgegeven, genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
@@ -178,7 +178,7 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 
 1. Meld u met uw keuze voor een FTP-client aan bij de FTP-server met de FTP-gebruikersnaam en -wachtwoord die u van de e-mail met de provisioning hebt ontvangen. Upload in de FTP-client bestanden of mappen naar de FTP-server.
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), dan login aan uw rekening.
+1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=nl-NL#system-requirements-dmc-app), dan login aan uw rekening.
 
    Uw aanmeldingsgegevens en aanmelding zijn door de Adobe opgegeven op het moment van levering. Neem contact op met de Klantenondersteuning van de Adobe als u deze informatie niet hebt.
 
@@ -883,7 +883,7 @@ In de volgende gevallen kunt u versies maken in [!DNL Experience Manager] :
 * Upload een element met dezelfde bestandsnaam die op dezelfde locatie bestaat. Dit kan een nieuw element of een gewijzigde versie van hetzelfde element zijn.
 * Bewerk een afbeelding in [!DNL Experience Manager] en sla de wijzigingen op.
 * Bewerk de metagegevens van een element.
-* Gebruik [!DNL Experience Manager] Desktop app om bestaande activa uit te checken, het uit te geven, en [ uploadt uw veranderingen ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Gebruik [!DNL Experience Manager] Desktop app om bestaande activa uit te checken, het uit te geven, en [ uploadt uw veranderingen ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#edit-assets-upload-updated-assets).
 
 U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
@@ -958,4 +958,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Om meer te weten, zie hoe te [ activa doorbladeren DAM gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [ hoe te om de Verbinding van Activa van de Adobe te gebruiken ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Om meer te weten, zie hoe te [ activa doorbladeren DAM gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets) en [ hoe te om de Verbinding van Activa van de Adobe te gebruiken ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).

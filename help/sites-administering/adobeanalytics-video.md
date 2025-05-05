@@ -139,7 +139,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
 
 1. Als u de CQ-variabelen wilt toewijzen aan Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
 
-   Voor informatie over het optimaliseren van de afbeeldingen, zie [ het Meten Video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) gids.
+   Voor informatie over het optimaliseren van de afbeeldingen, zie [ het Meten Video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL) gids.
 
 1. [ voeg het kader ](/help/sites-administering/adobeanalytics.md) aan de pagina toe.
 1. Om de opstelling op **wijze van de Voorproef** te testen, speel de video om de vraag van Adobe Analytics te krijgen om teweeg te brengen.
@@ -274,7 +274,7 @@ eventdata.events.milestoneXX
 
 1. Als u de CQ-variabelen wilt toewijzen aan Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
 
-   Voor informatie over het optimaliseren van de afbeeldingen, zie [ het Meten Video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) gids.
+   Voor informatie over het optimaliseren van de afbeeldingen, zie [ het Meten Video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL) gids.
 
 1. [ voeg het kader ](/help/sites-administering/adobeanalytics.md) aan de pagina toe.
 1. Om de opstelling op **wijze van de Voorproef** te testen, speel de video om de vraag van Adobe Analytics te krijgen om teweeg te brengen.
@@ -383,4 +383,4 @@ Wanneer het gebruiken van de **&#x200B; erfenisseconden** methode, worden de vra
 
 **Verwijzingen die in dit leerprogramma worden gebruikt:**
 
-[ 0 ] [ https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+[ 0 ] [ https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL)

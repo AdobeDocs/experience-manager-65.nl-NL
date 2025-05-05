@@ -377,8 +377,8 @@ Nu u hebt geleerd om tot uw hoofdloze inhoud toegang te hebben en te vragen gebr
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
    * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [ Begrijp het Middel dat van de dwars-Oorsprong (CORS) deelt ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
-* [ Begonnen het Worden met AEM Zwaartepunt ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - een korte videoles die een overzicht geven van het gebruiken van AEM zonder kop eigenschappen, met inbegrip van inhoud modelleren en GraphQL.
+* [ Begrijp het Middel dat van de dwars-Oorsprong (CORS) deelt ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL#understand-cross-origin-resource-sharing-(cors))
+* [ Begonnen het Worden met AEM Zwaartepunt ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=nl-NL) - een korte videoles die een overzicht geven van het gebruiken van AEM zonder kop eigenschappen, met inbegrip van inhoud modelleren en GraphQL.
 
 <!--
 * [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

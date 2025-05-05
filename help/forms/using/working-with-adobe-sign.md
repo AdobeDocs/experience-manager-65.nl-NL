@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # [!DNL Adobe Sign] gebruiken in een adaptieve vorm{#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -140,7 +140,7 @@ Voer de volgende stappen uit om velden toe te voegen aan een adaptief formulier 
 
 1. Selecteer het **[!UICONTROL Adobe Sign]Gebied** ![ aem_6_3_adobesign ](assets/aem_6_3_adobesign.png) pictogram. Er worden opties weergegeven voor het selecteren en toevoegen van [!DNL Adobe Sign] -velden.
 
-   Vouw het **[!UICONTROL Type]** drop-down gebied uit om een [!DNL Adobe Sign] gebied te selecteren en het Gedaan ![ te selecteren aem_6_3_forms_save ](assets/aem_6_3_forms_save.png) pictogram om het geselecteerde gebied aan [!DNL Adobe Sign] blok toe te voegen. Het vervolgkeuzeveld **[!UICONTROL Type]** bevat de typen Handtekening, Ondertekenaarinformatie en Gegevensveld. [!DNL Adobe Sign] integratie met AEM [!DNL Forms] -ondersteuningsvelden die alleen in de vervolgkeuzelijst [!UICONTROL Type] worden weergegeven. Voor gedetailleerde informatie over [!DNL Adobe Sign] gebieden, zie [ documentatie van Adobe Sign ](https://helpx.adobe.com/sign/help/field-types.html).
+   Vouw het **[!UICONTROL Type]** drop-down gebied uit om een [!DNL Adobe Sign] gebied te selecteren en het Gedaan ![ te selecteren aem_6_3_forms_save ](assets/aem_6_3_forms_save.png) pictogram om het geselecteerde gebied aan [!DNL Adobe Sign] blok toe te voegen. Het vervolgkeuzeveld **[!UICONTROL Type]** bevat de typen Handtekening, Ondertekenaarinformatie en Gegevensveld. [!DNL Adobe Sign] integratie met AEM [!DNL Forms] -ondersteuningsvelden die alleen in de vervolgkeuzelijst [!UICONTROL Type] worden weergegeven. Voor gedetailleerde informatie over [!DNL Adobe Sign] gebieden, zie [ documentatie van Adobe Sign ](https://helpx.adobe.com/nl/sign/help/field-types.html).
 
    ![ adobe-sign-block-fields-options ](assets/adobe-sign-block-fields-options.png)
 
@@ -148,7 +148,7 @@ Voer de volgende stappen uit om velden toe te voegen aan een adaptief formulier 
 
    Als u **[!UICONTROL Digital Signature]** selecteert in de vervolgkeuzelijst, kunt u digitale handtekeningen toepassen op het aangepaste formulier:
 
-   * Online gebruikend wolkenhandtekeningen om met a [ digitale identiteitskaart ](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) te ondertekenen die door een vertrouwde dienstverlener wordt ontvangen.
+   * Online gebruikend wolkenhandtekeningen om met a [ digitale identiteitskaart ](https://helpx.adobe.com/nl/sign/kb/digital-certificate-providers.html) te ondertekenen die door een vertrouwde dienstverlener wordt ontvangen.
    * Lokaal door het document te downloaden met Adobe Acrobat of Reader met een smartcard, USB-token of een op een bestand gebaseerde digitale id.
 
 ### [!DNL Adobe Sign] inschakelen voor een adaptief formulier {#enableadobsignforanadaptiveform}
@@ -258,7 +258,7 @@ Na [ het uitgeven van adaptieve vormeigenschappen voor het teken van de Adobe ](
 
    Digitale handtekeningen toepassen op het adaptieve formulier met:
 
-   * De handtekeningen van de wolk: Teken met a [ digitale identiteitskaart ](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) die door een vertrouwde dienstverlener wordt ontvangen. De optie Cloud Signature is niet beschikbaar voor Adobe Acrobat Sign Solutions for Government.
+   * De handtekeningen van de wolk: Teken met a [ digitale identiteitskaart ](https://helpx.adobe.com/nl/sign/kb/digital-certificate-providers.html) die door een vertrouwde dienstverlener wordt ontvangen. De optie Cloud Signature is niet beschikbaar voor Adobe Acrobat Sign Solutions for Government.
 
    * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of digitale id op basis van een bestand.
 
@@ -332,7 +332,7 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 **Ans:** de adaptieve vorm die gebruikend het geavanceerde malplaatje wordt gecreeerd wordt gevormd om te gebruiken [!DNL Adobe Sign]. U lost de fout op door een [!DNL Adobe Sign] cloud-configuratie te maken en te selecteren en een [!DNL Adobe Sign] -ondertekenaar voor het aangepaste formulier te configureren.
 
 **Q:** Kan ik [!DNL Adobe Sign] tekstmarkeringen in een statische tekstcomponent van een adaptieve vorm gebruiken?
-**Ans:** ja, kunt u tekstmarkeringen in een tekstcomponent gebruiken om [!DNL Adobe Sign] gebieden aan a [ Document van Verslag ](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Auto geproduceerde document van verslagoptie slechts) toe te voegen toegelaten adaptieve vorm. Om over de procedure en de regels te leren om een tekstmarkering tot stand te brengen, zie [ Documentatie van Adobe Sign ](https://helpx.adobe.com/sign/using/text-tag.html). Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. U kunt de tekstmarkeringen gebruiken om slechts die gebieden tot stand te brengen die [ het Blok van Adobe Sign ](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) steunt.
+**Ans:** ja, kunt u tekstmarkeringen in een tekstcomponent gebruiken om [!DNL Adobe Sign] gebieden aan a [ Document van Verslag ](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Auto geproduceerde document van verslagoptie slechts) toe te voegen toegelaten adaptieve vorm. Om over de procedure en de regels te leren om een tekstmarkering tot stand te brengen, zie [ Documentatie van Adobe Sign ](https://helpx.adobe.com/nl/sign/using/text-tag.html). Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. U kunt de tekstmarkeringen gebruiken om slechts die gebieden tot stand te brengen die [ het Blok van Adobe Sign ](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) steunt.
 
 **Q:** AEM [!DNL Forms] verstrekt zowel [!UICONTROL Adobe Sign block] als de stapcomponenten van de Handtekening. Kunnen deze gelijktijdig in een adaptieve vorm worden gebruikt?
 **Ans:** u kunt beide componenten gelijktijdig in een vorm gebruiken. Hier volgen enkele aanbevelingen voor het gebruik van deze componenten:

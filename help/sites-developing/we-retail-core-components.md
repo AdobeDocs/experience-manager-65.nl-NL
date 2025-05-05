@@ -86,6 +86,6 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 ## Aanvullende informatie {#further-information}
 
-Voor verdere informatie over de kerncomponenten, zie de auteursdocument [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor een technisch overzicht.
+Voor verdere informatie over de kerncomponenten, zie de auteursdocument [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor een technisch overzicht.
 
 Ook kunt u wensen om [ editable malplaatjes ](/help/sites-developing/we-retail-editable-templates.md) verder te onderzoeken. Verwijs naar het auteursdocument [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md) of de Malplaatjes van het ontwikkelaarsdocument van de Pagina [ - editable ](/help/sites-developing/page-templates-editable.md) voor volledige details op editable malplaatjes.

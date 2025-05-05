@@ -134,8 +134,8 @@ De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/` .
 
 De volgende API&#39;s zijn beschikbaar voor gebruik:
 
-* [ com.adobe.cq.social.scoring.api in 6.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
-* [ com.adobe.cq.social.badging.api in 6.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+* [ com.adobe.cq.social.scoring.api in 6.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
+* [ com.adobe.cq.social.badging.api in 6.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
 
 De recentste JavaDocs voor het geïnstalleerde eigenschappak zijn beschikbaar aan ontwikkelaars van de bewaarplaats van de Adobe. Zie [ Gebruikend Gemaakt voor Gemeenschappen: JavaDocs ](/help/communities/maven.md#javadocs).
 

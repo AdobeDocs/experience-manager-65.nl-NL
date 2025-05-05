@@ -47,7 +47,7 @@ AEM 6.5 is een flexibel instrument voor het model van de implementatie zonder ko
 1. Inhoud-API voor levering
    * De AEM GraphQL API ondersteunt de levering van inhoudsfragmenten.
    * De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
-   * De directe inhoudslevering is ook mogelijk met de [ uitvoer van JSON van de Component van de Component van het Fragment van de Inhoud.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+   * De directe inhoudslevering is ook mogelijk met de [ uitvoer van JSON van de Component van de Component van het Fragment van de Inhoud.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL)
 
 ## Uw eerste stappen met AEM zonder kop {#first-steps}
 
@@ -57,5 +57,5 @@ Er zijn verschillende bronnen beschikbaar waarmee u aan de slag kunt gaan met AE
 |---|---|---|---|---|
 | [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) | **voor gebruikers nieuw aan AEM en headless** technologieën, begin hier voor een uitvoerige inleiding aan AEM en zijn headless eigenschappen van de theorie van headless door het gaan met uw eerste headless project leven. | Hulplijn | De ontwikkelaars **nieuw aan AEM en zonder kop** | 1 uur |
 | [ Koploze Begonnen Gids ](/help/sites-developing/headless/getting-started/introduction.md) | **voor ervaren AEM gebruikers** die een korte samenvatting van de belangrijkste AEM zonder kop eigenschappen nodig hebben, controleer dit snelle beginoverzicht. | Snel starten | De ontwikkelaars, Beheerders **met AEM ervaring** | 20 minuten |
-| [ Begonnen het worden met AEM Hoofdloze hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **als u een hands-on benadering verkiest en met AEM** vertrouwd bent, duikt dit leerprogramma direct in het creëren van een eenvoudig headless project. | Zelfstudie | Ontwikkelaars | 2 uur |
-| [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html) | Deze inzameling van middelen wordt verstrekt voor zowel **nieuwe** als **ervaren** ontwikkelaars. | Inzameling van middelen | Ontwikkelaars | |
+| [ Begonnen het worden met AEM Hoofdloze hands-on leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=nl-NL) | **als u een hands-on benadering verkiest en met AEM** vertrouwd bent, duikt dit leerprogramma direct in het creëren van een eenvoudig headless project. | Zelfstudie | Ontwikkelaars | 2 uur |
+| [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL) | Deze inzameling van middelen wordt verstrekt voor zowel **nieuwe** als **ervaren** ontwikkelaars. | Inzameling van middelen | Ontwikkelaars | |

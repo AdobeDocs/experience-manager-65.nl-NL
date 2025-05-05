@@ -20,7 +20,7 @@ ht-degree: 29%
 
 * [ Statische malplaatjes ](page-templates-static.md) aan [ editable malplaatjes ](page-templates-editable.md)
 * [ configuraties van het Ontwerp ](page-templates-static.md) aan [ beleid ](page-templates-editable.md)
-* [ Componenten van de Stichting ](/help/sites-authoring/default-components-foundation.md) aan [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ Componenten van de Stichting ](/help/sites-authoring/default-components-foundation.md) aan [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [ Klassieke UI ](website.md) aan [ aanraking-Toegelaten UI ](touch-ui-concepts.md)
 
 Voor verdere informatie over het gebruik van deze hulpmiddelen, [ zie hun documentatie ](https://opensource.adobe.com/aem-modernize-tools/).

@@ -228,13 +228,13 @@ Moderatiehandelingen worden hier geregistreerd.
    * `error.log`
 Foutberichten (van verschillende ernst) worden hier geregistreerd.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=nl-NL)
 Dit logbestand wordt alleen gebruikt als [!DNL Dynamic Media] is ingeschakeld. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
 
    * `request.log`
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [`s7access-<yyyy>-<mm>-<dd>.log` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=nl-NL)
 Dit logbestand wordt alleen gebruikt als [!DNL Dynamic Media] is ingeschakeld. In het s7access-logboek wordt elke aanvraag vastgelegd die aan [!DNL Dynamic Media] tot en met `/is/image` en `/is/content` is gedaan.
 
    * `stderr.log`
@@ -1098,9 +1098,9 @@ Hieronder volgt een lijst met suggesties voor het controleren of er bepaalde pre
 >
 >Zie ook de volgende artikelen voor meer informatie:
 >
->* [ Dempingsdumps ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
->* [ analyseer geheugenproblemen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
->* [ analyseert gebruikend ingebouwde analyse ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [ Dempingsdumps ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL)
+>* [ analyseer geheugenproblemen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL)
+>* [ analyseert gebruikend ingebouwde analyse ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=nl-NL)
 >* [ analyseert langzaam en geblokkeerde processen ](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1125,7 +1125,7 @@ Controleer in deze gevallen:
 * De montages JVM die aan [ worden gebruikt beginnen AEM ](/help/sites-deploying/deploy.md#getting-started)
 * De Knowledge Base:
 
-   * [ Analyseer de Problemen van het Geheugen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+   * [ Analyseer de Problemen van het Geheugen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL)
 
 ### I/O schijf {#disk-i-o}
 
@@ -1143,7 +1143,7 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem, of als u merkt dat
 * Of en hoe u Versie zuiveren [hebt geconfigureerd](/help/sites-deploying/version-purging.md)
 * De Knowledge Base:
 
-   * [ Te veel open Dossiers ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+   * [ Te veel open Dossiers ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=nl-NL)
    * [ Dagboek verbruikt teveel diskspace ](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Regelmatige afbraak van prestaties {#regular-performance-degradation}

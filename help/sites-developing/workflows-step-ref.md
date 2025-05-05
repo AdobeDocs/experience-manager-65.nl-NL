@@ -188,7 +188,7 @@ De **Vastgestelde Veranderlijke** stap loopt herhaaldelijk, die de waarde van **
 
 >[!NOTE]
 >
->Zie [ OF Gesplitste stap ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Zie [ OF Gesplitste stap ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=nl-NL#use-a-variable)
 
 ![ Vertakkend gebruikend OF Gesplitst ](assets/variables_orsplit_new.png)
 

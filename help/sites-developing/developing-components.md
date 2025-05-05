@@ -80,7 +80,7 @@ Uw component zal met [ HTML ](https://www.w3schools.com/htmL/html_intro.asp) wor
 
 ### De HTML Sjabloontaal gebruiken {#using-the-html-template-language}
 
-De [ Templating Templating Taal van de HTML (HTML) ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), die met AEM 6.0 wordt geïntroduceerd, neemt de plaats van JSP (de Pagina&#39;s van JavaServer) als aangewezen en geadviseerd server-zijmalplaatjesysteem voor HTML. Voor webontwikkelaars die robuuste bedrijfswebsites moeten maken, helpt HTL om meer beveiliging en ontwikkelingsefficiëntie te bereiken.
+De [ Templating Templating Taal van de HTML (HTML) ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL), die met AEM 6.0 wordt geïntroduceerd, neemt de plaats van JSP (de Pagina&#39;s van JavaServer) als aangewezen en geadviseerd server-zijmalplaatjesysteem voor HTML. Voor webontwikkelaars die robuuste bedrijfswebsites moeten maken, helpt HTL om meer beveiliging en ontwikkelingsefficiëntie te bereiken.
 
 >[!NOTE]
 >
@@ -94,11 +94,11 @@ Het mechanisme om logica en verschijning te scheiden helpt verduidelijken wat vo
 
 ### Java gebruiken {#using-java}
 
-[ HTML Java gebruiken-API laat een HTML- dossier toe om helpermethodes in een klasse van douaneJava ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) toegang te hebben. Hiermee kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+[ HTML Java gebruiken-API laat een HTML- dossier toe om helpermethodes in een klasse van douaneJava ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=nl-NL) toegang te hebben. Hiermee kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 
 ### JavaScript gebruiken {#using-javascript}
 
-[ HTML JavaScript gebruiken-API laat een HTML- dossier toe om tot helpercode toegang te hebben die in JavaScript ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) wordt geschreven. Hiermee kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+[ HTML JavaScript gebruiken-API laat een HTML- dossier toe om tot helpercode toegang te hebben die in JavaScript ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=nl-NL) wordt geschreven. Hiermee kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 
 ### Client-Side HTML-bibliotheken gebruiken {#using-client-side-html-libraries}
 
@@ -197,7 +197,7 @@ Zie voor voorbeelden:
 >
 >Zie:
 >
->* De AEM Gems zitting op [ Aanpassen de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>* De AEM Gems zitting op [ Aanpassen de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=nl-NL).
 >* de verwante steekproefcode die onder [ Steekproef van de Code wordt behandeld - hoe te de Gebieden van de Dialoog aanpassen ](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -429,7 +429,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 >[!NOTE]
 >
->De automatische verwezenlijking van componenteninstanties kan nu gemakkelijk binnen UI worden gevormd wanneer het gebruiken van [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en Bewerkbare Malplaatjes. Zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) voor meer informatie over het bepalen van welke componenten automatisch met bepaalde media types worden geassocieerd.
+>De automatische verwezenlijking van componenteninstanties kan nu gemakkelijk binnen UI worden gevormd wanneer het gebruiken van [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en Bewerkbare Malplaatjes. Zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) voor meer informatie over het bepalen van welke componenten automatisch met bepaalde media types worden geassocieerd.
 
 ## De extensie AEM accolades gebruiken {#using-the-aem-brackets-extension}
 
@@ -438,7 +438,7 @@ De [ AEM Uitbreiding van Brackets ](/help/sites-developing/aem-brackets.md) vers
 De extensie:
 
 * Vereenvoudigt synchronisatie (geen Maven of File Vault vereist) om de efficiëntie van ontwikkelaars te verhogen en helpt ook front-end ontwikkelaars met beperkte AEM kennis om aan projecten deel te nemen.
-* Verstrekt wat [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) steun, de malplaatjetaal die wordt ontworpen om componentenontwikkeling te vereenvoudigen en veiligheid te verhogen.
+* Verstrekt wat [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) steun, de malplaatjetaal die wordt ontworpen om componentenontwikkeling te vereenvoudigen en veiligheid te verhogen.
 
 >[!NOTE]
 >
@@ -450,7 +450,7 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
 
 * HTL
 
-   * Het gebruik van [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) is niet verplicht, maar als uw component dan moet bijwerken is het een ideale tijd om te overwegen [ migrerend van JSP aan HTML ](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * Het gebruik van [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) is niet verplicht, maar als uw component dan moet bijwerken is het een ideale tijd om te overwegen [ migrerend van JSP aan HTML ](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Onderdelen
 
@@ -463,9 +463,9 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
    * Maak een dialoogvenster voor gebruik in de interface met aanraakbediening. Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening echter gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
    * De [ AEM Moderniseringshulpmiddelen ](/help/sites-developing/modernization-tools.md) worden verstrekt om u te helpen bestaande componenten uitbreiden.
    * [ Afbeelding ExtJS aan de Componenten van Granite UI ](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) verstrekt een geschikt overzicht van xtypes ExtJS en knooptypes van ExtJS met hun gelijkwaardige middeltypes van Granite UI.
-   * Het aanpassen van gebieden, voor meer informatie zie de zitting van AEM Gems op [ het Aanpassen van de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * Het aanpassen van gebieden, voor meer informatie zie de zitting van AEM Gems op [ het Aanpassen van de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=nl-NL).
    * Migreer van vtypes aan [ bevestiging van graniet UI ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Gebruikend JS luisteraars, voor meer informatie zie [ Behandelende Gebeurtenissen van het Gebied ](#handling-field-events) en de zitting van AEM Gems op [ het Aanpassen van de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * Gebruikend JS luisteraars, voor meer informatie zie [ Behandelende Gebeurtenissen van het Gebied ](#handling-field-events) en de zitting van AEM Gems op [ het Aanpassen van de Gebieden van de Dialoog ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=nl-NL).
 
 ### cq:listenercode migreren {#migrating-cq-listener-code}
 

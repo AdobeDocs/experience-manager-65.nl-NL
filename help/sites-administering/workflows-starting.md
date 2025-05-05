@@ -35,7 +35,7 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 >
 >* [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md)
 >* [ hoe te om werkschema&#39;s op activa toe te passen DAM ](/help/assets/assets-workflow.md)
->* [ AEM Forms ](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [ AEM Forms ](https://helpx.adobe.com/nl/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [ de Projecten van de Vertaling ](/help/sites-administering/tc-manage.md)
 >
 

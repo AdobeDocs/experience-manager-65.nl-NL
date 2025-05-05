@@ -61,7 +61,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch gedaan voor u.
 
-1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [ een steunkaartje ](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support) openen.
+1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [ een steunkaartje ](https://experienceleague.adobe.com/nl?support-solution=General&amp;lang=en&amp;support-tab=home#support) openen.
 
    1. Geef de volgende informatie op in uw supportverzoek:
 

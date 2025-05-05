@@ -87,7 +87,7 @@ AEM 6.5 Communautaire algemene vergadering omvat het communautaire pakket. Meer 
 
 Vanaf AEM 6.4 worden updates aan de Gemeenschappen geleverd als onderdeel van AEM Cumulative Fix Packs en Service Packs.
 
-Voor de recentste updates aan AEM 6.5, zie [ Adobe Experience Manager 6.4 Cumulatieve Packs en de Packs van de Dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) bevestigen.
+Voor de recentste updates aan AEM 6.5, zie [ Adobe Experience Manager 6.4 Cumulatieve Packs en de Packs van de Dienst ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) bevestigen.
 
 ### Versiehistorie {#version-history}
 
@@ -301,7 +301,7 @@ bijvoorbeeld:
 
 >[!CAUTION]
 >
->Als een andere veiligheidseigenschap reeds is gevormd die op de crypto sleutels gebaseerd is, dan het herhalen van de crypto sleutels kon de configuratie beschadigen. Voor hulp, [ de zorg van de contactklant ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support).
+>Als een andere veiligheidseigenschap reeds is gevormd die op de crypto sleutels gebaseerd is, dan het herhalen van de crypto sleutels kon de configuratie beschadigen. Voor hulp, [ de zorg van de contactklant ](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support).
 
 #### Replicatie opslagplaats {#repository-replication}
 
@@ -365,8 +365,8 @@ Let vooral op dat u de juiste servernaam gebruikt, niet `localhost` in de map `R
 
 Als u een Dispatcher gebruikt, raadpleegt u:
 
-* AEM [ Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) documentatie
-* [ Installerend Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* AEM [ Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) documentatie
+* [ Installerend Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Dispatcher for Communities configureren](/help/communities/dispatcher.md)
 * [Bekende problemen](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

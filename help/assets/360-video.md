@@ -40,7 +40,7 @@ Selecteer [ Post 360 van de Ruimte ](https://s7d1.scene7.com/s7viewers/html5/Vid
 
 Met Adobe Premier Pro kunt u 360/VR-beeldmateriaal weergeven en bewerken. U kunt bijvoorbeeld logo&#39;s en tekst op de juiste wijze in een scène plaatsen en effecten en overgangen toepassen die specifiek zijn ontworpen voor rechthoekige media.
 
-Zie [ video 360/VR ](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html) uitgeven.
+Zie [ video 360/VR ](https://helpx.adobe.com/nl/premiere-pro/how-to/edit-360-vr-video.html) uitgeven.
 
 ## Elementen uploaden voor gebruik met de 360-videoviewer {#uploading-assets-for-use-with-the-video-viewer}
 

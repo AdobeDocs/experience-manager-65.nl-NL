@@ -31,7 +31,7 @@ Deze handler slaat het gecodeerde SAML-antwoordbericht op in het user-node ( `us
 
 >[!NOTE]
 >
->Zie [ een demonstratie van AEM en integratie SAML ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>Zie [ een demonstratie van AEM en integratie SAML ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=nl-NL).
 
 ## De SAML 2.0-verificatiehandler configureren {#configuring-the-saml-authentication-handler}
 

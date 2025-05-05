@@ -40,7 +40,7 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >
 >* Deelnemend aan werkschema&#39;s, zie [ Gebruikend Werkschema&#39;s ](/help/sites-authoring/workflows.md).
 >* Het beheren van werkschema&#39;s en werkschemainstanties, zie [ het Beheer Werkschema&#39;s ](/help/sites-administering/workflows.md).
->* Voor een Communautair Artikel van begin tot eind, zie [ Wijzigend Digitale Assets gebruikend de Workflows van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)
+>* Voor een Communautair Artikel van begin tot eind, zie [ Wijzigend Digitale Assets gebruikend de Workflows van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=nl-NL)
 >* Zie [ vragen de AEM Deskundigen Webinar op Werkschema&#39;s ](https://communities.adobeconnect.com/p5s33iburd54/).
 >* De veranderingen in de plaatsen van informatie zien &lbrace;de Herstructurering van de Bewaarplaats in AEM 6.5 [&#128279;](/help/sites-deploying/repository-restructuring.md) en [ Beste praktijken van het Werkschema - Punten ](/help/sites-developing/workflows-best-practices.md#locations).
 >
@@ -206,7 +206,7 @@ Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
 
 ### Workflows en Forms {#workflows-and-forms}
 
-Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan met de [ kerncomponenten zijn componenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) beschikbaar in een standaard AEM instantie, of met de [ oplossing van AEM Forms ](/help/forms/using/aem-forms-workflow.md).
+Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Het kan met de [ kerncomponenten zijn componenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=nl-NL) beschikbaar in een standaard AEM instantie, of met de [ oplossing van AEM Forms ](/help/forms/using/aem-forms-workflow.md).
 
 Bij het maken van een formulier kan het verzenden van het formulier eenvoudig worden gekoppeld aan een workflowmodel. Bijvoorbeeld om de inhoud op een bepaalde locatie van de gegevensopslagruimte op te slaan of om een gebruiker op de hoogte te stellen van het verzenden van het formulier en de inhoud ervan.
 

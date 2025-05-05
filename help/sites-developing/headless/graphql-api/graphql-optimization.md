@@ -66,7 +66,7 @@ Verschillende methoden voor het in cache plaatsen kunnen ook worden gebruikt voo
 
 **Aanbeveling**
 
-[ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is het eerste niveaugeheime voorgeheugen binnen de AEM dienst, vóór CDN geheime voorgeheugen.
+[ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) is het eerste niveaugeheime voorgeheugen binnen de AEM dienst, vóór CDN geheime voorgeheugen.
 
 **Verdere Verwijzing**
 
@@ -84,7 +84,7 @@ GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst a
 
 Zie:
 
-* [ Gebruikend CDN in AEM ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [ Gebruikend CDN in AEM ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL#using-dispatcher-with-a-cdn)
 
 #### HTTP-cachebeheerkoppen instellen {#set-http-cache-control-headers}
 

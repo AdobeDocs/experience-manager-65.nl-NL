@@ -31,7 +31,7 @@ Voordat u uw AEM ontwikkelingsproject start, moet u eerst de volgende aanbevolen
 * [Codepitten](/help/sites-developing/code-pitfalls.md)
 * [JCR-interactie](/help/sites-developing/jcr-integration.md)
 * [OSGi-bundels](/help/sites-developing/osgi-bundles.md)
-* [ Java API Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [ Java API Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=nl-NL)
 
 ### Aanvullende informatie over aanbevolen procedures {#additional-best-practices-information}
 
@@ -95,8 +95,8 @@ HTML Sjabloontaal (HTL) is een nieuw sjabloonsysteem voor HTML, dat is geïntrod
 
 |  |  |  |
 |---|---|---|
-| HTML-overzicht | [ overzicht en syntaxis HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | In dit document wordt beschreven wat HTML is, hoe u naar HTML kunt gaan, een voorbeeldproject, syntaxis, expressies en instructies |
-| API gebruiken in Java | [ HTML Java gebruiken-API ](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | De HTML Java Use-API stelt een HTML-bestand in staat toegang te krijgen tot hulplijnmethoden in een aangepaste Java-klasse. |
+| HTML-overzicht | [ overzicht en syntaxis HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) | In dit document wordt beschreven wat HTML is, hoe u naar HTML kunt gaan, een voorbeeldproject, syntaxis, expressies en instructies |
+| API gebruiken in Java | [ HTML Java gebruiken-API ](https://helpx.adobe.com/nl/experience-manager/htl/using/use-api.html) | De HTML Java Use-API stelt een HTML-bestand in staat toegang te krijgen tot hulplijnmethoden in een aangepaste Java-klasse. |
 
 >[!NOTE]
 >

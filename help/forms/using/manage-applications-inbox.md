@@ -140,7 +140,7 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices door middel van een AEM pakket. U kunt een [ AEM Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project gebruiken om een plaatsbaar AEM pakket tot stand te brengen. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen Archetype:
+   * Implementeer de indices door middel van een AEM pakket. U kunt een [ AEM Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=nl-NL) project gebruiken om een plaatsbaar AEM pakket tot stand te brengen. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen Archetype:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +150,8 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [ creeer een Index van het Bezit en plaats het aan waar ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [ creeer een Index van het Bezit en plaats het aan waar ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=nl-NL#the-property-index).
 
 1. Na het vormen van indexen in CRX DE of het opstellen via een pakket, [ re-index de bewaarplaats ](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=nl-NL

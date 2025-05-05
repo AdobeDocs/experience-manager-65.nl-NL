@@ -30,6 +30,6 @@ Voor meer informatie over [!DNL AEM Forms] integratie met [!DNL Adobe Sign], zie
 
 Gebruikersgegevens worden verzameld binnen de overeenkomst, maar niet opgeslagen in een van de servicetabellen. Met [!DNL Adobe Sign] kunnen beheerders hun eigen keuzes maken voor het beheer van de gegevens die ze in de service beheren. Privacy-beheerders van de [!DNL Adobe Sign] -service kunnen op basis van het e-mailadres van een aanvrager overeenkomsten weergeven of verwijderen.
 
-[!DNL Adobe Sign] biedt een webtoepassing waarmee u overeenkomsten door deelnemers kunt zoeken en deze zo nodig kunt verwijderen. Voor meer informatie, zie [ Adobe Sign - Eigenschap: de Informatie van de Gebruiker van de Schrapping ](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
+[!DNL Adobe Sign] biedt een webtoepassing waarmee u overeenkomsten door deelnemers kunt zoeken en deze zo nodig kunt verwijderen. Voor meer informatie, zie [ Adobe Sign - Eigenschap: de Informatie van de Gebruiker van de Schrapping ](https://helpx.adobe.com/nl/sign/help/adobesign_gdpr_user_deletion.html).
 
 Overeenkomstgegevens voor adaptieve formulieren die zijn geconfigureerd voor het gebruik van de handeling Forms Portal verzenden, worden ook opgeslagen in de Forms Portal-gegevensopslag. Om tot gegevens van de Poortgegevensopslag van Forms toegang te hebben en te schrappen, zie [ Forms Portal | Behandeling van gebruikersgegevens ](/help/forms/using/forms-portal-handling-user-data.md).

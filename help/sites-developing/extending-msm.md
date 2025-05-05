@@ -32,8 +32,8 @@ Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitb
 >Deze pagina zou samen met [ het Hergebruiken Inhoud moeten worden gelezen: De multi Manager van de Plaats ](/help/sites-administering/msm.md).
 >
 >De volgende onderdelen van de herstructurering van de effectenbewaarinstelling zouden ook van belang kunnen zijn:
->* [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations) de Configuraties van de Vervaging van de Manager van 0&rbrace; multi-plaats
->* [ de Configuraties van de Output van de Manager van de Multisite ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
+>* [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=nl-NL#multi-site-manager-blueprint-configurations) de Configuraties van de Vervaging van de Manager van 0&rbrace; multi-plaats
+>* [ de Configuraties van de Output van de Manager van de Multisite ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=nl-NL#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >

@@ -26,7 +26,7 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
 * **modelvoorwerpen van Gegevens**: De gegevenseigenschappen gebruiken een achtereind gegevensbron.
 * **regel gebaseerde inhoud**: De delen van inhoud in een tekst die verschijnen of verborgen gebaseerd op een regel worden. Een regel kan ook worden gebaseerd op eigenschappen en variabelen van het formuliergegevensmodel.
 * **Variabelen**: In het fragment van het tekstdocument, zijn de variabelen niet verbindend aan een achterste gegevensbron. De agent vult in/selecteert waarden in variabelen of bindt de variabelen aan gegevensbronnen terwijl het voorbereiden van de Interactieve Mededeling voor het voorleggen van het aan een postproces.
-* **Herhaal**: U kunt dynamische informatie in uw Interactieve Mededeling, zoals transacties in een verklaring van de creditcard hebben, waarvan het aantal voorkomen met elke geproduceerde Interactieve Mededeling kan blijven veranderen. Met Herhaling kunt u dergelijke dynamische informatie opmaken en structureren. Voor meer informatie, zie [ Gealigneerde voorwaarde en herhaal ](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Herhaal**: U kunt dynamische informatie in uw Interactieve Mededeling, zoals transacties in een verklaring van de creditcard hebben, waarvan het aantal voorkomen met elke geproduceerde Interactieve Mededeling kan blijven veranderen. Met Herhaling kunt u dergelijke dynamische informatie opmaken en structureren. Voor meer informatie, zie [ Gealigneerde voorwaarde en herhaal ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Tekst maken {#createtext}
 

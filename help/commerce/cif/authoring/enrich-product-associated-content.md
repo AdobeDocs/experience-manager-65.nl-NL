@@ -19,7 +19,7 @@ Leer hoe marketers productgegevens kunnen verrijken met bijbehorende inhoud uit 
 
 ## Digital Assets
 
->[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447315/?quality=12&learn=on&captions=dut)
 
 Digitale middelen kunnen aan één of meerdere product SKUs worden geassocieerd. Wanneer het digitale element is gekoppeld, kan het worden gedetecteerd met trefwoordzoekopdrachten op basis van de SKU. Het element wordt automatisch ook weergegeven als gekoppelde inhoud wanneer u een pagina bewerkt die het relevante product bevat, waardoor het nog eenvoudiger wordt om uw volgende digitale ervaring te maken
 
@@ -31,7 +31,7 @@ De Fragmenten van de ervaring zijn een eigenschap van Adobe Experience Manager d
 
 ## Inhoudsfragmenten
 
->[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452163/?quality=12&learn=on&captions=dut)
 
 De Fragmenten van de inhoud zijn een eigenschap van Adobe Experience Manager die een teller toestaat om **gestructureerde** herbruikbare inhoud tot stand te brengen. Inhoudsfragmenten kunnen worden gekoppeld aan een product-SKU of catalogus-id. Zodra verbonden, kunnen de marketers verwante fragmenten gemakkelijk ontdekken die op producten worden gebaseerd die op een pagina worden getoond. U kunt inhoudsfragmenten ook dynamisch opnemen op een productcataloguspagina via een tijdelijke aanduiding en koppeling.
 

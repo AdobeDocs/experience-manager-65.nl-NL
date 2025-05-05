@@ -326,7 +326,7 @@ Het huidige formulier of de interactieve communicatie in het Thema Editor Canvas
 
 1. In het paneel van de EDITOR van het THEMA, klik **![ thema-opties ](assets/theme-options.png) >** vormen **van de Opties van het Thema.**
 
-1. Op het Algemene lusje, doorblader en selecteer een vorm of interactieve mededeling voor het **Aangepaste 1} gebied van de Vorm/van het Document.**
+1. Op het Algemene lusje, doorblader en selecteer een vorm of interactieve mededeling voor het **Aangepaste 1&rbrace; gebied van de Vorm/van het Document.**
 
 ### Opnieuw/Ongedaan maken {#redo-undo}
 
@@ -460,7 +460,7 @@ Voer de volgende stappen uit om de opmaak voor een bepaalde component aan te pas
 
 1. Selecteer **Numerieke Widget van de Doos**.
 1. De titel van het zijpaneel verandert in de widget Numerieke vak en bevat opties waarmee u de vormgeving kunt aanpassen.
-De optie van het Dimension en van de Positie van het gebruik **** in sidebar om grootte van de component aan te passen. Zorg ervoor dat de Staat **Gebrek** is.
+De optie van het Dimension en van de Positie van het gebruik **&#x200B;**&#x200B;in sidebar om grootte van de component aan te passen. Zorg ervoor dat de Staat **Gebrek** is.
 
 In plaats van het selecteren van **Numerieke Widget van de Doos**, uitgezochte **Widget van het Gebied** in de componententoolbar, en voer de stappen hierboven uit. Wanneer u afmetingen voor **optie van Widget van het Gebied** selecteert, hebben alle tekstvakjes behalve de numerieke doos de zelfde grootte.
 
@@ -630,7 +630,7 @@ Wanneer u stijlen voor componenten opgeeft in de Thema-editor, wordt een CSS geg
 De gegenereerde CSS kunt u met de volgende opties zien:
 
 * **CSS van de Mening** optie in sidebar: Wanneer u een component in het Thema selecteert, kunt u de WEERGAVE CSS optie in sidebar zien. De gegenereerde CSS wordt weergegeven, inclusief CSS voor `::before` - en `::after` pseudo-elementen.
-* **optie van het Thema van 0} Mening CSS {in de canvastoolbar: In de Toolbar van het Canvas, klik ![ thema-opties ](assets/theme-options.png) >** het Thema CSS van de Mening **.** U kunt het volledige thema CSS zien die van de eigenschappen wordt geproduceerd u in de Redacteur van het Thema bepaalt.
+* **optie van het Thema van 0&rbrace; Mening CSS &lbrace;in de canvastoolbar: In de Toolbar van het Canvas, klik ![ thema-opties ](assets/theme-options.png) >** het Thema CSS van de Mening **.** U kunt het volledige thema CSS zien die van de eigenschappen wordt geproduceerd u in de Redacteur van het Thema bepaalt.
 
 ## Problemen oplossen, aanbevelingen en aanbevolen procedures {#troubleshooting-recommendations-and-best-practices}
 

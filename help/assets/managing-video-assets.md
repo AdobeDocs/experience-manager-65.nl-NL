@@ -43,8 +43,8 @@ In [!DNL Assets] kunt u standaard geen elementen uploaden die groter zijn dan 2 
 
 Wijzig, naast de [!DNL Assets] -configuratie, de volgende configuraties om grote elementen te uploaden:
 
-* Verhoog de vervaltijd van het token. Zie [!UICONTROL Adobe Granite CSRF Servlet] in webconsole op `https://[aem_server]:[port]/system/console/configMgr` . Voor meer informatie, zie {bescherming 0} CSRF ](/help/sites-developing/csrf-protection.md).[
-* Verhoog de `receiveTimeout` in Dispatcher-configuratie. Voor meer informatie, zie {de configuratie van Dispatcher van de Experience Manager 0} ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).[
+* Verhoog de vervaltijd van het token. Zie [!UICONTROL Adobe Granite CSRF Servlet] in webconsole op `https://[aem_server]:[port]/system/console/configMgr` . Voor meer informatie, zie {bescherming 0} CSRF [&#128279;](/help/sites-developing/csrf-protection.md).
+* Verhoog de `receiveTimeout` in Dispatcher-configuratie. Voor meer informatie, zie {de configuratie van Dispatcher van de Experience Manager 0} [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >

@@ -59,13 +59,13 @@ Voor een bespreking van hoe de off-line huur en synchronisatie werken, zie [ Pri
 
 Als u deze optie selecteert, kunnen clienttoepassingen uitgebreide verificatie gebruiken. Uitgebreide verificatie biedt aangepaste verificatieprocessen en verschillende verificatieopties die op de AEM Forms-server zijn geconfigureerd. Bijvoorbeeld, kunnen de gebruikers de op SAML-Gebaseerde authentificatie in plaats van AEM vormen gebruikersbenaming/Wachtwoord, van Acrobat en de Cliënt van de Reader nu ervaren. Door gebrek, bevat het Openen URL *localhost* als servernaam. Vervang de servernaam door een volledig gekwalificeerde hostnaam. De hostnaam in de bestemmings-URL wordt automatisch ingevuld vanaf de basis-URL als uitgebreide verificatie nog niet is ingeschakeld. Zie [ de uitgebreide authentificatieleverancier ](configuring-client-server-options.md#add-the-extended-authentication-provider) toevoegen.
 
-***nota **: Uitgebreide authentificatie wordt gesteund op Apple Mac OS X met versie 11.0.6 van Adobe Acrobat en hierboven.*
+***nota &#x200B;**: Uitgebreide authentificatie wordt gesteund op Apple Mac OS X met versie 11.0.6 van Adobe Acrobat en hierboven.*
 
 **Voorkeur de Breedte van de Controle van de HTML voor Uitgebreide Authentificatie** specificeert de breedte van de uitgebreide authentificatiedialoog die in Acrobat voor het ingaan van gebruikersgeloofsbrieven opent.
 
 **Gewenste Hoogte van de Controle van de HTML voor Uitgebreide Authentificatie** specificeer de hoogte van de uitgebreide authentificatiedialoog die in Acrobat voor het ingaan van gebruikersgeloofsbrieven opent.
 
-***nota **: De grenzen van de breedte en de hoogte voor dit dialoogvakje zijn als volgt:*
+***nota &#x200B;**: De grenzen van de breedte en de hoogte voor dit dialoogvakje zijn als volgt:*
 Breedte: minimaal = 400, maximaal = 900
 
 Hoogte: minimaal = 450; maximaal = 800
@@ -88,7 +88,7 @@ De zichtbare gebruiker en de groepslijst zijn zichtbaar aan de coördinator van 
 
 1. Nadat u de AEM formulieromgeving hebt geïnstalleerd en geconfigureerd met documentbeveiliging, stelt u alle relevante domeinen in Gebruikersbeheer in. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***nota **: Creërend domeinen moet worden gedaan alvorens om het even welk beleid kan worden gecreeerd.*
+   ***nota &#x200B;**: Creërend domeinen moet worden gedaan alvorens om het even welk beleid kan worden gecreeerd.*
 
 1. Klik in de beheerconsole op Services > Documentbeheer > Beleid en klik vervolgens op het tabblad Beleidssets.
 1. Selecteer Globale beleidsset en klik op het tabblad Zichtbare gebruikers en groepen.
@@ -489,7 +489,7 @@ U kunt dynamische watermerksjablonen maken. Deze sjablonen blijven beschikbaar a
 1. Klik op Nieuw.
 1. Typ in het vak Naam een naam voor het nieuwe watermerk.
 
-   ***nota **: U kunt sommige speciale karakters in de namen of de beschrijvingen van watermerken of watermerkelementen niet gebruiken. Zie de beperkingen die in [ worden vermeld Overwegingen voor het uitgeven van beleid ](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***nota &#x200B;**: U kunt sommige speciale karakters in de namen of de beschrijvingen van watermerken of watermerkelementen niet gebruiken. Zie de beperkingen die in [ worden vermeld Overwegingen voor het uitgeven van beleid ](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. Voer onder Naam naast het plusteken een betekenisvolle naam in voor het watermerkelement, zoals Koptekst, voeg een beschrijving toe en vouw het plusteken uit om de opties weer te geven.
 1. Selecteer onder Source het type watermerk als Tekst of PDF.
@@ -498,11 +498,11 @@ U kunt dynamische watermerksjablonen maken. Deze sjablonen blijven beschikbaar a
    * Selecteer de typen watermerken die u wilt opnemen. Als u Aangepaste tekst selecteert, typt u in het aangrenzende vak de tekst die u voor het watermerk wilt weergeven. Onthoud de tekstlengte die als watermerk wordt weergegeven.
    * Geef de tekstopmaakeigenschappen op, zoals lettertypenaam, tekengrootte, voorgrondkleur en achtergrondkleur voor de tekstinhoud van de watermerktekst. Geef de voor- en achtergrondkleur op als hexadecimale waarden.
 
-     ***nota **: Als u de het schrapen optie zoals Aanpassen aan Pagina selecteert, is het bezit van de doopvontgrootte niet beschikbaar voor het uitgeven.*
+     ***nota &#x200B;**: Als u de het schrapen optie zoals Aanpassen aan Pagina selecteert, is het bezit van de doopvontgrootte niet beschikbaar voor het uitgeven.*
 
-1. Als u PDF voor rijke watermerkopties selecteerde, doorbladert de klik **** naast Uitgezochte PDF van het Watermerk om het document van de PDF te selecteren dat u als watermerk wilt gebruiken.
+1. Als u PDF voor rijke watermerkopties selecteerde, doorbladert de klik **&#x200B;**&#x200B;naast Uitgezochte PDF van het Watermerk om het document van de PDF te selecteren dat u als watermerk wilt gebruiken.
 
-   ***nota **: Gebruik geen wachtwoord-beschermd document van PDF. Als u een wachtwoord-beschermde PDF als watermerkelement specificeert, wordt het watermerk niet toegepast.*
+   ***nota &#x200B;**: Gebruik geen wachtwoord-beschermd document van PDF. Als u een wachtwoord-beschermde PDF als watermerkelement specificeert, wordt het watermerk niet toegepast.*
 
 1. Selecteer Ja of Nee onder Als achtergrond gebruiken.
 
@@ -584,9 +584,9 @@ U kunt de registratie met documentbeveiliging voor bepaalde externe gebruikers o
 
 De volgende instellingen bevinden zich in het gebied Filter e-mailbeperking van de pagina Invited User Registration.
 
-**Uitsluiting:** Type het e-mailadres van een gebruiker of een groep om uit te sluiten. Als u meerdere gebruikers of groepen wilt uitsluiten, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt uitsluiten die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt uitsluiten, typt u &amp;ast;.example.com.
+**Uitsluiting:** Type het e-mailadres van een gebruiker of een groep om uit te sluiten. Als u meerdere gebruikers of groepen wilt uitsluiten, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt uitsluiten die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt uitsluiten, typt u &ast;.example.com.
 
-**Opname:** Type het e-mailadres van een gebruiker of een groep om te omvatten. Als u meerdere gebruikers of groepen wilt opnemen, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt opnemen die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt opnemen, typt u &amp;ast;.example.com.
+**Opname:** Type het e-mailadres van een gebruiker of een groep om te omvatten. Als u meerdere gebruikers of groepen wilt opnemen, typt u elk e-mailadres op een nieuwe regel. Als u alle gebruikers wilt opnemen die tot een bepaald domein behoren, voert u een jokerteken en de domeinnaam in. Als u bijvoorbeeld alle gebruikers in het domein example.com wilt opnemen, typt u &ast;.example.com.
 
 ### Parameters van server- en registratierekeningen {#server-and-registration-account-parameters}
 
@@ -951,7 +951,7 @@ In dit voorbeeld worden alle aanvragen van een Microsoft PowerPoint 2007- of Mic
 
 Standaard kunt u maximaal vijf elementen in een watermerk opgeven. Bovendien is de maximale bestandsgrootte van het PDF-document dat u als watermerk wilt gebruiken, beperkt tot 100 kB. U kunt deze parameters in het config.xml- dossier veranderen.
 
-***nota **: U zou deze parameters met voorzichtigheid moeten veranderen.*
+***nota &#x200B;**: U zou deze parameters met voorzichtigheid moeten veranderen.*
 
 1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [ manueel het uitgeven van het dossier van de documentveiligheidsconfiguratie ](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Open het configuratiebestand in een editor en zoek het knooppunt `ServerSettings` .

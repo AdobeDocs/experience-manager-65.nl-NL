@@ -63,7 +63,7 @@ Om tot de diverse consoles van Gemeenschappen toegang te hebben, van globale nav
 
 * [Rapporten](reports.md)
 
-  De console van Rapporten is waar de rapporten over taken, paginameningen, en gepost inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats Adobe Analytics [ ](sites-console.md#analytics) heeft toegelaten. De console is alleen beschikbaar in de Auteur-omgeving.
+  De console van Rapporten is waar de rapporten over taken, paginameningen, en gepost inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats Adobe Analytics [&#128279;](sites-console.md#analytics) heeft toegelaten. De console is alleen beschikbaar in de Auteur-omgeving.
 
 ## Tools Console {#tools-console}
 

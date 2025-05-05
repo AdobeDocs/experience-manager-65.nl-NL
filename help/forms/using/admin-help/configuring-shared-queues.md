@@ -45,7 +45,7 @@ Zodra deze taken zijn gedeeld, kunnen deze door de gebruiker worden voltooid, me
 > Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteer **de Diensten van 0} >** Forms Workflow **>** Gedeelde Rij **.**
+1. Selecteer **de Diensten van 0&rbrace; >** Forms Workflow **>** Gedeelde Rij **.**
 
 1. Zoek op het tabblad Toegang tot een gebruiker beheren naar de gebruiker wiens wachtrij u wilt delen en selecteer deze. Op elk gewenst moment wordt in het rechterondervenster de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij.
 1. Zoek en selecteer de gebruiker in het deelvenster linksonder. Klik op Delen.
@@ -54,7 +54,7 @@ Zodra deze taken zijn gedeeld, kunnen deze door de gebruiker worden voltooid, me
 ### Toegang tot een geselecteerde gebruikerswachtrij intrekken {#revoking-access-to-a-selected-user-queue}
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteer **de Diensten van 0} >** Forms Workflow **>** Gedeelde Rij **.**
+1. Selecteer **de Diensten van 0&rbrace; >** Forms Workflow **>** Gedeelde Rij **.**
 
 1. Zoek op het tabblad Toegang tot een gebruiker beheren naar de gebruiker wiens wachtrij u wilt beheren en selecteer deze.
 1. In het rechterbenedendeelvenster wordt de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij. Selecteer de gebruiker en klik op Intrekken.
@@ -73,7 +73,7 @@ Zodra deze taken zijn toegewezen, kunnen deze door de gebruiker met Workspace wo
 ### Toegang verlenen tot een geselecteerde gebruikerswachtrij {#granting-access-to-a-selected-user-queue}
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteer **de Diensten van 0} >** Forms Workflow **>** Gedeelde Rij **.**
+1. Selecteer **de Diensten van 0&rbrace; >** Forms Workflow **>** Gedeelde Rij **.**
 
 1. Zoek op het tabblad Toegang tot gebruiker beheren naar de gebruiker waarvan u de wachtrij wilt delen en selecteer deze. Op elk gewenst moment wordt in het rechterondervenster de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij.
 1. Zoek en selecteer in het linkerbenedendeelvenster gebruikerswachtrijen die u met de geselecteerde gebruiker wilt delen. Klik op Delen.
@@ -82,7 +82,7 @@ Zodra deze taken zijn toegewezen, kunnen deze door de gebruiker met Workspace wo
 ### Toegang tot een geselecteerde gebruikerswachtrij intrekken {#revoking_access_to_a_selected_user_queue-1}
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteer **de Diensten van 0} >** Forms Workflow **>** Gedeelde Rij **.**
+1. Selecteer **de Diensten van 0&rbrace; >** Forms Workflow **>** Gedeelde Rij **.**
 
 1. Zoek op het tabblad Toegang beheren door een gebruiker naar de gebruiker wiens wachtrij u wilt beheren en selecteer deze.
 1. In het rechterbenedendeelvenster wordt de lijst weergegeven met gebruikerswachtrijen die aan de geselecteerde gebruiker zijn toegewezen. Selecteer de gebruikerswachtrij en klik op Intrekken.

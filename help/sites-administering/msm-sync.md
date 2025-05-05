@@ -378,7 +378,7 @@ U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wann
 
 1. Gebruik de **console van Plaatsen** om de levende exemplaarpagina te selecteren.
 1. Selecteer **Eigenschappen** van de toolbar.
-1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Open het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 
    De **sectie van de Configuratie** toont de rollout configuraties die de pagina erft.
 

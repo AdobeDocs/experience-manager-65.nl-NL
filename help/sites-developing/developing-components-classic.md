@@ -106,7 +106,7 @@ Er zijn drie methodes om tot inhoud in AEM WCM toegang te hebben:
 
 De CQ- en Sling-tagbibliotheken geven u toegang tot specifieke functies voor gebruik in het JSP-script van uw sjablonen en componenten.
 
-Voor meer informatie, zie de Bibliotheken van de Markering van het document [ ](/help/sites-developing/taglib.md).
+Voor meer informatie, zie de Bibliotheken van de Markering van het document [&#128279;](/help/sites-developing/taglib.md).
 
 ## Client-Side HTML-bibliotheken gebruiken {#using-client-side-html-libraries}
 

@@ -24,7 +24,7 @@ De component `Voting` is een handig hulpmiddel waarmee leden van de gemeenschap 
 
 Gebruik de componentbrowser om een component `Voting` in de modus Auteur aan een pagina toe te voegen. Zoek `Communities / Voting` en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie waar gebruikers op kunnen stemmen.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-voting.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Voting` component verschijnt.
 

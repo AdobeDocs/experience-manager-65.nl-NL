@@ -69,7 +69,7 @@ Voer de volgende stappen uit om het probleem op te lossen:
 
    URL: https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
 
-1. In het **lusje van het Geheime voorgeheugen van het 0} Hand {, klik** + **knoop om een weg van CRX toe te voegen.**
+1. In het **lusje van het Geheime voorgeheugen van het 0&rbrace; Hand &lbrace;, klik** + **knoop om een weg van CRX toe te voegen.**
 1. In **voeg een Nieuw gebied van het Middel** toe, type: /etc.clientlibs/fd/xfaforms/I18N/en_US.js en klik **toevoegen**.
 1. Klik **sparen**.
 

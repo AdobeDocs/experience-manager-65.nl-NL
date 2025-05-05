@@ -45,7 +45,7 @@ We.Retail is gebouwd met een geglobaliseerde sitestructuur die een taalmaster bi
 
    ![ chlimage_1-91 ](assets/chlimage_1-91.png)
 
-1. Tik checkbox naast het **etiket van de Kopieën van de Taal 0} {om alle taalexemplaren te selecteren.** In de **de taalexemplaren van de Update** sectie van het spoor, selecteer de optie om **een nieuw vertaalproject** tot stand te brengen. Verstrek een naam voor het project en klik **Update**.
+1. Tik checkbox naast het **etiket van de Kopieën van de Taal 0&rbrace; &lbrace;om alle taalexemplaren te selecteren.** In de **de taalexemplaren van de Update** sectie van het spoor, selecteer de optie om **een nieuw vertaalproject** tot stand te brengen. Verstrek een naam voor het project en klik **Update**.
 
    ![ chlimage_1-92 ](assets/chlimage_1-92.png)
 

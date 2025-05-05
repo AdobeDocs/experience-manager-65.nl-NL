@@ -52,12 +52,12 @@ Voer de volgende stappen uit om een component Concepten en verzendingen toe te v
   <tr>
    <td> </td>
    <td>Stijltype</td>
-   <td>Hiermee wordt de stijl van de component opgegeven. U kunt <strong> Geen Stijl </strong> specificeren, <strong> StandaardStijl </strong>, of <strong> de Stijl van de Douane </strong> voor het van een lijst maken van de vormen. Voor de Optie van de Stijl van de Douane, kunt u de weg van douaneCSS dossier op het </strong> gebied van de Weg van de Stijl 0} specificeren <strong>.</strong><strong></td>
+   <td>Hiermee wordt de stijl van de component opgegeven. U kunt <strong> Geen Stijl </strong> specificeren, <strong> StandaardStijl </strong>, of <strong> de Stijl van de Douane </strong> voor het van een lijst maken van de vormen. Voor de Optie van de Stijl van de Douane, kunt u de weg van douaneCSS dossier op het </strong> gebied van de Weg van de Stijl 0&rbrace; specificeren <strong>.</strong><strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Pad aangepaste stijl</td>
-   <td>Als u </strong> optie van de Stijl van 0} Douane op het <strong> 3} gebied van het Type van Stijl {kiest, gebruik het <strong> Pad van de Stijl van de Douane </strong> gebied om de weg van douaneCSS dossier te specificeren.<strong></strong> </td>
+   <td>Als u </strong> optie van de Stijl van 0&rbrace; Douane op het <strong> 3&rbrace; gebied van het Type van Stijl &lbrace;kiest, gebruik het <strong> Pad van de Stijl van de Douane </strong> gebied om de weg van douaneCSS dossier te specificeren.<strong></strong> </td>
   </tr>
   <tr>
    <td> </td>

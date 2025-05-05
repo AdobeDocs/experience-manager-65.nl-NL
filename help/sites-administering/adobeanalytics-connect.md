@@ -35,11 +35,11 @@ Als u AEM gegevens in Adobe Analytics wilt bijhouden, moet u een geldige Adobe E
 De Adobe Analytics-account moet:
 
 * Heb **voorrechten van de Beheerder**
-* Wordt toegewezen aan de **gebruikersgroep van de Toegang van de Dienst van 0} Web.**
+* Wordt toegewezen aan de **gebruikersgroep van de Toegang van de Dienst van 0&rbrace; Web.**
 
 >[!CAUTION]
 >
->Het verstrekken van **voorrechten van de Beheerder** (binnen Adobe Analytics) is niet genoeg om een gebruiker toe te staan om van AEM met Adobe Analytics te verbinden. De rekening moet ook **voorrechten hebben van de Toegang van de Dienst van het 0} Web.**
+>Het verstrekken van **voorrechten van de Beheerder** (binnen Adobe Analytics) is niet genoeg om een gebruiker toe te staan om van AEM met Adobe Analytics te verbinden. De rekening moet ook **voorrechten hebben van de Toegang van de Dienst van het 0&rbrace; Web.**
 
 ![ chlimage_1-67 ](assets/chlimage_1-67.png)
 

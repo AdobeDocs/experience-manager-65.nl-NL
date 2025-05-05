@@ -113,7 +113,7 @@ Voordat u de opschoonfunctie voor gegevensopslag uitvoert, moet u controleren of
 
    ![ chlimage_1-64 ](assets/chlimage_1-64.png)
 
-1. Selecteer de **taak van de Inzameling van de Winkel van 0} Gegevens {en klik dan het** looppas **pictogram.**
+1. Selecteer de **taak van de Inzameling van de Winkel van 0&rbrace; Gegevens &lbrace;en klik dan het** looppas **pictogram.**
 
    ![ chlimage_1-65 ](assets/chlimage_1-65.png)
 
@@ -182,7 +182,7 @@ De curl-opdracht wordt onmiddellijk geretourneerd.
 
 De controle van de consistentie van de gegevensopslag zal om het even welke binaire getallen van de gegevensopslag melden die missen maar nog van verwijzingen voorzien zijn. Voer de volgende stappen uit om een consistentiecontrole te starten:
 
-1. Ga naar de JMX-console. Voor informatie over hoe te om de console te gebruiken JMX, zie {de Middelen van de Server van 0} Controle die de Console JMX ](/help/sites-administering/jmx-console.md#using-the-jmx-console) gebruiken.[
+1. Ga naar de JMX-console. Voor informatie over hoe te om de console te gebruiken JMX, zie {de Middelen van de Server van 0} Controle die de Console JMX [&#128279;](/help/sites-administering/jmx-console.md#using-the-jmx-console) gebruiken.
 1. Onderzoek naar **BlobGarbageCollection** en klik het.
 1. Klik op de koppeling `checkConsistency()` .
 

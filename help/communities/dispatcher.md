@@ -24,7 +24,7 @@ Voor AEM Communities, is het noodzakelijk om Dispatcher te vormen om het behoorl
 
 Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
-* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)[
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
 
 Zie ook de belangrijkste [ documentatie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 

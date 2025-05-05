@@ -103,6 +103,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    * `Client-ID` is een cliëntID u het gebruiken van om het even welke generator kunt produceren GUID.
    * `redirect-uri` is de URL naar de Microsoft Dynamics OData-cloudservice op AEM Forms. De standaardcloudservice die wordt geïnstalleerd met het AEM Forms-pakket, wordt geïmplementeerd op de volgende URL:
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Voer de volgende opdracht uit om toegang te verlenen op de AD FS-computer:
@@ -120,11 +121,11 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 De **Cloud Service van de Dynamiek van MS OData (Dienst OData)** configuratie komt met standaard configuratie OData. Ga als volgt te werk om de instantie te configureren voor verbinding met uw Microsoft Dynamics.
 
 1. Navigeer naar **[!UICONTROL Tools > Cloud Services > Data Sources]** en selecteer de configuratiemap van `global` .
-1. Selecteer {de Cloud Service van de Dynamiek van 0} MS OData (Dienst OData) **configuratie en selecteer **[!UICONTROL Properties]**.** Het dialoogvenster voor de configuratie-eigenschap van de cloudservice wordt geopend.
+1. Selecteer {de Cloud Service van de Dynamiek van 0} MS OData (Dienst OData) **configuratie en selecteer &#x200B;** [!UICONTROL Properties]&#x200B;**.** Het dialoogvenster voor de configuratie-eigenschap van de cloudservice wordt geopend.
 
    In het **lusje van de Montages van de Authentificatie**:
 
-   1. Ga de waarde voor het **gebied van de Wortel van de Dienst 0} in.** Ga naar de instantie van de Dynamiek en navigeer aan **Middelen van de Ontwikkelaar** om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld https://&lt;huurder-name>/api/data/v9.1/
+   1. Ga de waarde voor het **gebied van de Wortel van de Dienst 0&rbrace; in.** Ga naar de instantie van de Dynamiek en navigeer aan **Middelen van de Ontwikkelaar** om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld https://&lt;huurder-name>/api/data/v9.1/
 
    1. Vervang de standaardwaarden in **Identiteitskaart van de Cliënt** (ook als **identiteitskaart van de Toepassing** wordt bedoeld), **Geheime Cliënt**, **OAuth URL**, **verfrist Symbolische URL**, **Symbolische URL van de Toegang**, en **gebieden van het Middel met waarden van uw de dienstconfiguratie van de Dynamiek van Microsoft.** Het is verplicht om de dynamische instantie URL op het **gebied van het Middel** te specificeren om de Dynamiek van Microsoft met een model van vormgegevens te vormen. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld, [ https://org.crm.dynamics.com ](https://org.crm.dynamics.com/).
 
@@ -159,4 +160,4 @@ Vervolgens kunt u een adaptief formulier maken op basis van het formuliergegeven
 
 Het wordt aanbevolen een kopie te maken van het formuliergegevensmodel dat bij het AEM Forms-pakket wordt geleverd en gegevensmodellen en -services naar wens te configureren. Zo weet u zeker dat toekomstige updates van het pakket het gegevensmodel van het formulier niet overschrijven.
 
-Voor meer informatie over het creëren van en het gebruiken van het model van vormgegevens in bedrijfswerkschema&#39;s, zie {de Integratie van 0} Gegevens ](../../forms/using/data-integration.md).[
+Voor meer informatie over het creëren van en het gebruiken van het model van vormgegevens in bedrijfswerkschema&#39;s, zie {de Integratie van 0} Gegevens [&#128279;](../../forms/using/data-integration.md).

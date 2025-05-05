@@ -227,7 +227,7 @@ Een site koppelen aan een gebied:
 
    ![ chlimage_1-283 ](assets/chlimage_1-283.png)
 
-1. Selecteer het gebied van de **drop-down menu van de Verwijzing van het 0} Gebied en klik** sparen **.**
+1. Selecteer het gebied van de **drop-down menu van de Verwijzing van het 0&rbrace; Gebied en klik** sparen **.**
 
    ![ chlimage_1-284 ](assets/chlimage_1-284.png)
 

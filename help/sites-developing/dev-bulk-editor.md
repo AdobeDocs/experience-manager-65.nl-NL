@@ -28,7 +28,7 @@ Als u bijvoorbeeld het volgende typt in de URL van uw browser:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-De vertoningen van de Redacteur van het Bulk zonder het **gebied van de Weg van de Wortel 1} als hrp=true verbergt het gebied.** Met de parameter hrp=false wordt het veld weergegeven (de standaardwaarde).
+De vertoningen van de Redacteur van het Bulk zonder het **gebied van de Weg van de Wortel 1&rbrace; als hrp=true verbergt het gebied.** Met de parameter hrp=false wordt het veld weergegeven (de standaardwaarde).
 
 Hieronder volgt een lijst met queryparameters voor de Bulk Editor:
 

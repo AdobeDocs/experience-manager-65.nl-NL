@@ -33,7 +33,7 @@ Clientcontext bestaat hoofdzakelijk uit de volgende aspecten:
 
 Om een standalone zittingsopslag tot stand te brengen en het toe te voegen aan de Context van de Cliënt, of een zittingsopslag te creëren die aan een component van de Opslag van de Context gebonden is. Adobe Experience Manager (AEM) installeert diverse Context Store-componenten die u direct kunt gebruiken. U kunt deze componenten als basis voor uw componenten gebruiken.
 
-Voor informatie over het openen van de Context van de Cliënt, die de informatie vormen die het toont, en het simuleren van de gebruikerservaring, zie {de Context van de Cliënt 0} ](/help/sites-administering/client-context.md).[
+Voor informatie over het openen van de Context van de Cliënt, die de informatie vormen die het toont, en het simuleren van de gebruikerservaring, zie {de Context van de Cliënt 0} [&#128279;](/help/sites-administering/client-context.md).
 
 ## Sessiewinkels {#session-stores}
 

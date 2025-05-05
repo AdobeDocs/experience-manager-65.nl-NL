@@ -80,7 +80,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 * `datasource.name:` De naam van de gegevensbron. De standaardwaarde is `oak` .
 
-* `url:` De URL-tekenreeks van de database die moet worden gebruikt met JDBC. Elk databasetype heeft een eigen URL-tekenreeksindeling. Voor meer info, zie {de Formaten van het Koord van 0} URL ](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) hieronder.[
+* `url:` De URL-tekenreeks van de database die moet worden gebruikt met JDBC. Elk databasetype heeft een eigen URL-tekenreeksindeling. Voor meer info, zie {de Formaten van het Koord van 0} URL [&#128279;](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) hieronder.
 
 * `driverClassName:` De naam van de JDBC-stuurprogrammaklasse. Dit verschilt afhankelijk van de database die u wilt gebruiken en vervolgens van het stuurprogramma dat nodig is om verbinding met de database te maken. Hieronder ziet u de klassenamen voor alle databases die worden ondersteund door AEM:
 

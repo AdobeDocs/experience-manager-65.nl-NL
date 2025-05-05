@@ -63,7 +63,7 @@ Selecteer het zoekpictogram aan de linkerkant van de koptekst van `Members` om h
 
 ### Statistieken van de lidstaten {#member-statistics}
 
-De kolommen die `Views`, `Posts`, `Follows` en `Likes` tonen worden bijgewerkt wanneer de gebruiker een lid van één of meerdere communautaire plaatsen met Adobe Analytics [ ](sites-console.md#analytics) toegelaten is.
+De kolommen die `Views`, `Posts`, `Follows` en `Likes` tonen worden bijgewerkt wanneer de gebruiker een lid van één of meerdere communautaire plaatsen met Adobe Analytics [&#128279;](sites-console.md#analytics) toegelaten is.
 
 ### CSV exporteren {#export-csv}
 
@@ -130,7 +130,7 @@ Een lid heeft volledige toegang tot de site van de community.
 
   Als deze optie is ingeschakeld, is de mogelijkheid voor leden om inhoud te posten beperkt.
 Het gebrek hangt van de configuratie van bijdragegrenzen af.
-Zie {de grenzen van de Bijdrage van 0} Lid ](limits.md).[
+Zie {de grenzen van de Bijdrage van 0} Lid [&#128279;](limits.md).
 
 * **[!UICONTROL Change Password]**
 

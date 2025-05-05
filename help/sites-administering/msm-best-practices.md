@@ -39,7 +39,7 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 >U kunt de [ component van de Verwijzing ](/help/sites-authoring/default-components-foundation.md#reference) ook gebruiken om één enkele pagina of paragraaf opnieuw te gebruiken. Houd echter rekening met:
 >
 >* MSM is flexibeler en staat fijnkorrelige controle over toe welke inhoud wordt gesynchroniseerd en wanneer.
->* {de componenten van 0} Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden nu geadviseerd over de stichtingscomponenten.[
+>* {de componenten van 0} Kern [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden nu geadviseerd over de stichtingscomponenten.
 >
 
 ## Live Copy-bronnen en configuraties voor blauwdrukken {#live-copy-sources-and-blueprint-configurations}
@@ -128,7 +128,7 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
 * **het Schrappen van** pagina&#39;s in een blauwdruk zal in overeenkomstige pagina&#39;s resulteren die van levende exemplaren na rollout met standaard rollout configuratie worden geschrapt.
 
-* **het bewegen** pagina&#39;s in een blauwdruk zal **** niet in overeenkomstige pagina&#39;s resulteren die in levende exemplaren na rollout met standaard rollout configuratie worden bewogen:
+* **het bewegen** pagina&#39;s in een blauwdruk zal **&#x200B;**&#x200B;niet in overeenkomstige pagina&#39;s resulteren die in levende exemplaren na rollout met standaard rollout configuratie worden bewogen:
 
    * De reden voor dit gedrag is dat een paginabeweging impliciet een pagina-verwijdering bevat. Dit kan mogelijk leiden tot onverwacht gedrag bij het publiceren, omdat bij het verwijderen van pagina&#39;s bij de auteur de bijbehorende inhoud bij het publiceren automatisch wordt gedeactiveerd. Dit kan ook een domino-effect hebben op verwante items zoals koppelingen, bladwijzers en andere.
    * Inhoudsovererving op de respectievelijke pagina&#39;s met live kopieën wordt bijgewerkt om de nieuwe locatie van de bronnen in de blauwdruk te weerspiegelen.

@@ -613,7 +613,7 @@ Alleen-lezen.
 
 **traversalCheck** reizen en naar keuze moeilijke inconsistenties in een subtree die bij een specifieke knoop begint. Dit wordt uitvoerig besproken in de documentatie over persistentiemanagers.
 
-**Controles 0} ConsistentCheck {en naar keuze fixes consistentie in de Datastore.** Dit wordt uitvoerig besproken in de documentatie op de Datastore.
+**Controles 0&rbrace; ConsistentCheck &lbrace;en naar keuze fixes consistentie in de Datastore.** Dit wordt uitvoerig besproken in de documentatie op de Datastore.
 
 ## Statistieken opslagplaats (TimeSeries) {#repository-statistics-timeseries}
 
@@ -691,7 +691,7 @@ Controleer de diensten voor elke replicatieagent. Wanneer u een replicatieagent 
 * **Domein:** com.adobe.granite.replication
 * **Type:** agent
 * **Naam:** geen waarde
-* **Eigenschappen:** {id= &quot;*Naam*&quot;, waar *Naam* de waarde van het bezit van de Naam van de agent is.
+* **Eigenschappen:** &lbrace;id= &quot;*Naam*&quot;, waar *Naam* de waarde van het bezit van de Naam van de agent is.
 
 ### Attributen {#attributes-3}
 

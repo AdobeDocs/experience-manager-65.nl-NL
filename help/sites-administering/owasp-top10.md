@@ -30,7 +30,7 @@ Deze worden hieronder vermeld, samen met een uitleg van hoe CRX ermee omgaat.
 
 ## 2. XSS (Cross-Site Scripting) {#cross-site-scripting-xss}
 
-De algemene matigingspraktijk moet al output van gebruiker-geproduceerde inhoud coderen gebruikend een server-kantXSS beschermingsbibliotheek die op [ wordt gebaseerd Codeur van het ASPIS 1} en [ AntiSamy ](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).](https://owasp.org/www-project-java-encoder/)
+De algemene matigingspraktijk moet al output van gebruiker-geproduceerde inhoud coderen gebruikend een server-kantXSS beschermingsbibliotheek die op [&#128279;](https://owasp.org/www-project-java-encoder/) wordt gebaseerd Codeur van het ASPIS 1&rbrace; en [ AntiSamy ](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
 XSS is een hoogste prioriteit tijdens zowel het testen als de ontwikkeling, en om het even welke gevonden kwesties worden (typisch) onmiddellijk opgelost.
 

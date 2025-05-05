@@ -27,13 +27,13 @@ Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [
 
 Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, moet u de segmenten en de strategieën bepalen nodig voor uw gerichte inhoud.
 
-Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud wordt gehandhaafd in de [ Personalization ](/help/sites-authoring/personalization.md) sectie van de website. {de activiteiten van 0} die ](/help/sites-authoring/activitylib.md) hier worden bepaald kunnen op om het even welke pagina worden omvat en bepalen welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.[
+Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud wordt gehandhaafd in de [ Personalization ](/help/sites-authoring/personalization.md) sectie van de website. {de activiteiten van 0} die [&#128279;](/help/sites-authoring/activitylib.md) hier worden bepaald kunnen op om het even welke pagina worden omvat en bepalen welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
 Met AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het laat u ook de resultaten van uw segmentdefinities verifiëren.
 
 ## Segmenten openen {#accessing-segments}
 
-De ](/help/sites-authoring/managing-audiences.md) console van 0} Soorten publiek {wordt gebruikt om segmenten voor ContextHub of de Context en het publiek van de Cliënt voor uw rekening van Adobe Target te beheren. [ Deze documentatie behandelt het beheren van segmenten voor ContextHub. Voor [ segmenten van de Context van de Cliënt ](/help/sites-administering/campaign-segmentation.md) en de segmenten van Adobe Target, zie de relevante documentatie.
+De [&#128279;](/help/sites-authoring/managing-audiences.md) console van 0&rbrace; Soorten publiek &lbrace;wordt gebruikt om segmenten voor ContextHub of de Context en het publiek van de Cliënt voor uw rekening van Adobe Target te beheren.  Deze documentatie behandelt het beheren van segmenten voor ContextHub. Voor [ segmenten van de Context van de Cliënt ](/help/sites-administering/campaign-segmentation.md) en de segmenten van Adobe Target, zie de relevante documentatie.
 
 Om tot uw segmenten toegang te hebben moet u uw configuratie selecteren. In globale navigatie selecteert **Navigatie > Personalization > Soorten publiek**. De beschikbare configuraties worden weergegeven:
 
@@ -51,7 +51,7 @@ De **Redacteur van het Segment** laat u gemakkelijk een segment wijzigen. Om een
 
 Gebruikend de componentenbrowser kunt u **EN** en **OF** containers toevoegen om de segmentlogica te bepalen, dan extra componenten toevoegen om eigenschappen en waarden of verwijzingsmanuscripten en andere segmenten te vergelijken om de selectiecriteria (zie [ Creërend een Nieuw Segment ](#creating-a-new-segment)) te bepalen om het nauwkeurige scenario voor het selecteren van het segment te bepalen.
 
-Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. Als er veelvoudige toepasselijke segmenten zijn, dan wordt de **1} factor van de Verhoging {ook gebruikt.** Zie [ Creërend een Nieuw Segment ](#creating-a-new-segment) voor details op [ hefboomfactor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. Als er veelvoudige toepasselijke segmenten zijn, dan wordt de **1&rbrace; factor van de Verhoging &lbrace;ook gebruikt.** Zie [ Creërend een Nieuw Segment ](#creating-a-new-segment) voor details op [ hefboomfactor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -154,7 +154,7 @@ Het nieuwe segment definiëren:
 
    ![ screen_shot_2012-02-02at103135am ](assets/screen_shot_2012-02-02at103135ama.png)
 
-   Plaats altijd het Type van Gegevens van a **** indien mogelijk om ervoor te zorgen dat uw vergelijkingen behoorlijk worden geëvalueerd. Zie [ Vergelijkingen ](/help/sites-administering/segmentation.md#comparisons) voor meer informatie.
+   Plaats altijd het Type van Gegevens van a **&#x200B;**&#x200B;indien mogelijk om ervoor te zorgen dat uw vergelijkingen behoorlijk worden geëvalueerd. Zie [ Vergelijkingen ](/help/sites-administering/segmentation.md#comparisons) voor meer informatie.
 
 1. Klik **O.K.** om uw definitie te bewaren:
 1. Voeg desgewenst meer componenten toe. U kunt booleaanse uitdrukkingen formuleren gebruikend de containercomponenten voor EN en OF vergelijkingen (zie [ Gebruikend EN en of Containers ](/help/sites-administering/segmentation.md#using-and-and-or-containers) hieronder). Met de segmentredacteur kunt u componenten schrappen niet meer nodig, of hen slepen aan nieuwe posities binnen de verklaring.
@@ -227,7 +227,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Naar een script verwijzen {#referencing-a-script}
 
 1. Creeer segment ContextHub.
-1. Voeg **component van de Verwijzing van 0} Manuscript {in de gewenste plaats van het segment toe.**
+1. Voeg **component van de Verwijzing van 0&rbrace; Manuscript &lbrace;in de gewenste plaats van het segment toe.**
 1. Open uitgeven dialoog van de **component van de Verwijzing van het Manuscript**. Als [ behoorlijk gevormd ](/help/sites-administering/segmentation.md#defining-a-script-to-reference), het manuscript in de **naam van het Manuscript** drop-down zou moeten beschikbaar zijn.
 
 ## Segmenten ordenen {#organizing-segments}
@@ -255,6 +255,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 1. De map wordt weergegeven in de lijst met segmenten.
    * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map verschijnt.
    * U kunt op de kolomkoppen klikken om de sortering aan te passen.
+
      ![ De nieuwe omslag ](assets/contexthub-folder.png)
 
 ### Bestaande mappen wijzigen {#modify-folders}

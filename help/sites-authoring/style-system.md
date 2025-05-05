@@ -62,7 +62,7 @@ Het volgende diagram illustreert de architectuur van het Systeem van de Stijl.
 
 ## Gebruiken {#use}
 
-Om de eigenschap aan te tonen, zullen wij [ WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) implementatie van de 2} titelcomponent van de kerncomponent ](https://www.adobe.com/go/aem_cmp_title_v2) als voorbeeld gebruiken.[
+Om de eigenschap aan te tonen, zullen wij [ WKND ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) implementatie van de 2&rbrace; titelcomponent van de kerncomponent [&#128279;](https://www.adobe.com/go/aem_cmp_title_v2) als voorbeeld gebruiken.
 
 De volgende secties [ als Inhoudsauteur ](#as-a-content-author) en [ als Auteur van het Malplaatje ](#as-a-template-author) beschrijven hoe te om de functionaliteit van het Systeem van de Stijl te testen gebruikend het Systeem van de Stijl van WKND.
 

@@ -48,7 +48,7 @@ Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe
 1. Sla de **[!UICONTROL DAM Update Asset]** -workflow op met het watermerk.
 1. Upload een voorbeeldelement vanuit de gebruikersinterface van [!DNL Assets] . Het watermerk wordt weergegeven met de tekengrootte, kleur, enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
 
-Om PDF documenten van het watermerk programmatically of met dynamische informatie te, denk na gebruikend ](/help/forms/using/overview-aem-document-services.md) het aanbieden van de Diensten van het Document van de Experience Manager 0}.[
+Om PDF documenten van het watermerk programmatically of met dynamische informatie te, denk na gebruikend [&#128279;](/help/forms/using/overview-aem-document-services.md) het aanbieden van de Diensten van het Document van de Experience Manager 0&rbrace;.
 
 ## Tips en beperkingen {#tips-limitations}
 

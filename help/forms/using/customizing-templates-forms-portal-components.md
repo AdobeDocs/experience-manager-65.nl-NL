@@ -88,11 +88,11 @@ Forms Portal biedt een syntaxis voor plaatsaanduidingen voor het weergeven van m
 
 Om een herhaalbare ingang te omvatten, vorm de waarde van de attributen **gegeven-herhaalbare** aan **waar**.
 
-*in het besproken voorbeeld, zijn twee elementen Div aanwezig bij de bovenkant in het douanemalplaatje. De eerste, met de CSS-klasse &quot;__FP_boxes-container&quot;, werkt als een containerelement voor de formulieren die worden weergegeven. De tweede, met de CSS-klasse &quot;__FP_boxes&quot;, is een sjabloon voor de basisentiteiten, in dit geval een Form. Het **gegeven-herhaalbare**attribuut huidig in het element van Div heeft de waarde **waar**.*
+*in het besproken voorbeeld, zijn twee elementen Div aanwezig bij de bovenkant in het douanemalplaatje. De eerste, met de CSS-klasse &quot;__FP_boxes-container&quot;, werkt als een containerelement voor de formulieren die worden weergegeven. De tweede, met de CSS-klasse &quot;__FP_boxes&quot;, is een sjabloon voor de basisentiteiten, in dit geval een Form. Het **gegeven-herhaalbare**&#x200B;attribuut huidig in het element van Div heeft de waarde **waar**.*
 
 Elke plaatsaanduiding heeft een exclusieve set metagegevens die buiten het vak vallen. Om douanemetagegevens bij een bepaalde plaats op de vorm te tonen, voeg **$ {metadata_prop} bezit** bij de plaats toe.
 
-*in het voorbeeld, wordt het meta-gegevensbezit gebruikt bij veelvoudige instanties. Bijvoorbeeld, wordt het gebruikt in **beschrijving**,**naam**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, en **weg**op de voorgeschreven manier.*
+*in het voorbeeld, wordt het meta-gegevensbezit gebruikt bij veelvoudige instanties. Bijvoorbeeld, wordt het gebruikt in **beschrijving**,**naam**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, en **weg**&#x200B;op de voorgeschreven manier.*
 
 ## Metagegevens uit het vak {#out-of-the-box-metadata}
 
@@ -173,7 +173,7 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 1. Gebruik geen enkel aanhalingsteken (&#39;) in enige douanemalplaatje.
 1. Voor douanemetagegevens, sla dit bezit op **jcr op:inhoud/meta-gegevens** slechts knoop. Als u de metagegevens op een andere plaats opslaat, kunnen ze niet worden weergegeven op Forms Portal.
 1. Zorg ervoor dat de naam van aangepaste metagegevens of bestaande metagegevens geen dubbele punt ( : ) bevat. Als dit het geval is, kunt u het niet weergeven in de gebruikersinterface.
-1. **gegeven-herhaalbare** heeft geen betekenis voor de component van de Verbinding van de a ****. De Adobe adviseert dat u vermijdt gebruikend dit bezit in het malplaatje voor een component van de Verbinding.
+1. **gegeven-herhaalbare** heeft geen betekenis voor de component van de Verbinding van de a **&#x200B;**. De Adobe adviseert dat u vermijdt gebruikend dit bezit in het malplaatje voor een component van de Verbinding.
 
 ## Verwante artikelen
 

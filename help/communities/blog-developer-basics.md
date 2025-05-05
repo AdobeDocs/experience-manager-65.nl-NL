@@ -59,7 +59,7 @@ De blogeigenschap is samengesteld uit twee belangrijkste componenten die beschik
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>zie </a> de Eigenschap van 0} Blog<a href="/help/communities/blog-feature.md"></td>
+   <td>zie </a> de Eigenschap van 0&rbrace; Blog<a href="/help/communities/blog-feature.md"></td>
   </tr>
  </tbody>
 </table>
@@ -72,7 +72,7 @@ De blogeigenschap is samengesteld uit twee belangrijkste componenten die beschik
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **malplaatjes** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **eigenschappen** | zie ](/help/communities/blog-feature.md) de Eigenschap van 0} Blog[ |
+| **eigenschappen** | zie [&#128279;](/help/communities/blog-feature.md) de Eigenschap van 0&rbrace; Blog |
 
 * [Aanpassingen aan de clientzijde](/help/communities/client-customize.md)
 

@@ -102,7 +102,7 @@ Hieronder ziet u een voorbeeld van een tekstcomponent op een bestemmingspagina:
 
 #### Titel {#title}
 
-Met de titelcomponent kunt u een titel weergeven en de grootte configureren (h1-6). Zie {de component van de Titel 0} ](/help/sites-authoring/default-components.md#title) voor meer informatie.[
+Met de titelcomponent kunt u een titel weergeven en de grootte configureren (h1-6). Zie {de component van de Titel 0} [&#128279;](/help/sites-authoring/default-components.md#title) voor meer informatie.
 
 ![ chlimage_1-25 ](assets/chlimage_1-25.png)
 
@@ -200,7 +200,7 @@ Formuliervelden en -elementen kunnen tekstvakken, keuzerondjes, afbeeldingen enz
 * **Componenten van het Profiel**
 Profielcomponenten hebben betrekking op bezoekersprofielen die worden gebruikt voor sociale samenwerking en andere gebieden waar personalisatie van bezoekers vereist is.
 
-Het voorafgaande toont een voorbeeldvorm; het wordt samengesteld uit de **1} component van de Vorm van de Lood {(begin en eind), met** Voornaam **en** E-mailId **gebieden die voor input worden gebruikt en a** legt **gebied voor**
+Het voorafgaande toont een voorbeeldvorm; het wordt samengesteld uit de **1&rbrace; component van de Vorm van de Lood &lbrace;(begin en eind), met** Voornaam **en** E-mailId **gebieden die voor input worden gebruikt en a** legt **gebied voor**
 
 Van sidekick, zijn de volgende componenten beschikbaar voor de CTA Lood Vorm:
 
@@ -254,11 +254,11 @@ De volgende sectie beschrijft de componenten beschikbaar aan vraag-aan-actie lei
 
 ![ chlimage_1-39 ](assets/chlimage_1-39.png)
 
-**De gebruikers van 0} Geslacht {kunnen hun geslacht van een dropdown lijst selecteren.**
+**De gebruikers van 0&rbrace; Geslacht &lbrace;kunnen hun geslacht van een dropdown lijst selecteren.**
 
 ![ chlimage_1-40 ](assets/chlimage_1-40.png)
 
-**de Gebruikers van de Achternaam 0} {kunnen de informatie van de Familienaam ingaan.**
+**de Gebruikers van de Achternaam 0&rbrace; &lbrace;kunnen de informatie van de Familienaam ingaan.**
 
 ![ chlimage_1-41 ](assets/chlimage_1-41.png)
 
@@ -358,7 +358,7 @@ Voordat u het ontwerp van de bestemmingspagina kunt importeren, moet u bijvoorbe
 
 Een openingspagina maken:
 
-1. Ga naar de **** console van Websites.
+1. Ga naar de **&#x200B;**&#x200B;console van Websites.
 1. Selecteer de campagne in het linkerdeelvenster.
 1. Klik **Nieuw** om **te openen creeer het venster van de Pagina**.
 1. Selecteer het **malplaatje van de Pagina van de Importeur** en voeg naar keuze een titel en een naam toe, en klik **creeer**.
@@ -438,7 +438,7 @@ Tijdens het wissen van de openingspagina kunt u de wijzigingen in de inhoud verw
 
 >[!NOTE]
 >
->Als u besluit om de inhoudsveranderingen te verwijderen, dan worden alle veranderingen die u op de ingevoerde landende pagina en alle paginaeigenschappen aanbracht verloren wanneer u **** klikt Duidelijk.
+>Als u besluit om de inhoudsveranderingen te verwijderen, dan worden alle veranderingen die u op de ingevoerde landende pagina en alle paginaeigenschappen aanbracht verloren wanneer u **&#x200B;**&#x200B;klikt Duidelijk.
 
 ### Componenten wijzigen en toevoegen op een bestemmingspagina {#modifying-and-adding-components-on-a-landing-page}
 

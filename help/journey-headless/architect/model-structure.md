@@ -52,7 +52,7 @@ De optie **laat model** toe wordt geactiveerd door gebrek. Dit betekent dat uw m
 
 ![ creeer het Model van het Fragment van de Inhoud ](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-Bevestig met **creeer** en u kunt **dan** uw model openen {beginnen de structuur te bepalen.
+Bevestig met **creeer** en u kunt **dan** uw model openen &lbrace;beginnen de structuur te bepalen.
 
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
@@ -103,7 +103,7 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 
 Zodra een model wordt gepubliceerd is het *gesloten* in een LEZEN-ONLY wijze op auteur. Dit is bedoeld om wijzigingen te voorkomen die zouden leiden tot fouten in bestaande GraphQL-schema&#39;s en query&#39;s, met name in de publicatieomgeving. Het wordt vermeld in de console door **Vergrendelde**.
 
-Wanneer het model **** (op LEZEN-ONLY wijze) wordt gesloten, kunt u de inhoud en de structuur van modellen zien maar u kunt hen niet direct uitgeven; hoewel u **Vergrendelde** modellen van of de console, of de modelredacteur kunt beheren.
+Wanneer het model **&#x200B;**&#x200B;(op LEZEN-ONLY wijze) wordt gesloten, kunt u de inhoud en de structuur van modellen zien maar u kunt hen niet direct uitgeven; hoewel u **Vergrendelde** modellen van of de console, of de modelredacteur kunt beheren.
 
 ## Volgende functies {#whats-next}
 

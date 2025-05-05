@@ -70,7 +70,7 @@ Het Pakket van de inhoud staat de AEM App Author toe om paginacontent in AEM te 
 
 Met Inhoudspakket wordt voor elke update een ZIP-bestand gemaakt, dat wordt beschouwd als een pakket met de inhoudsversie. Deze pakketten bevatten HTML-bronnen en HTML-pagina&#39;s die tijdens het renderen van de app worden gegenereerd en zijn intelligent genoeg om alleen die bestanden te verpakken die sinds de laatste update zijn gewijzigd.
 
-De Manage de kolomvertoningen van het Type van het Pakket van de Inhoud **** van het Pakket van de Inhoud {of &quot;App&quot;om de inhoud van Shell van de Toepassing, bijvoorbeeld, kader of infrastructuur van app te betekenen die door een ontwikkelaar wordt geleid of, &quot;Inhoud&quot;die pagina inhoud vertegenwoordigt die door de inhoudauteur wordt beheerd.
+De Manage de kolomvertoningen van het Type van het Pakket van de Inhoud **&#x200B;**&#x200B;van het Pakket van de Inhoud &lbrace;of &quot;App&quot;om de inhoud van Shell van de Toepassing, bijvoorbeeld, kader of infrastructuur van app te betekenen die door een ontwikkelaar wordt geleid of, &quot;Inhoud&quot;die pagina inhoud vertegenwoordigt die door de inhoudauteur wordt beheerd.
 
 Inhoud kan worden weergegeven als een taal of als een bepaald deel van de app waarin meerdere pakketten voor inhoudsrelease worden gebruikt door de app. De manier waarop u uw inhoud bundelt, is flexibel en volledig geschikt voor het beheren van inhoud voor uw toepassing.
 
@@ -80,7 +80,7 @@ De **Gelaagde** kolom toont toen de laatste inhoudsupdate werd gecreeerd. Als u 
 
 De **Gepubliceerde** kolom toont toen de laatste inhoudsupdate werd gepubliceerd en beschikbaar voor consumptie door uw klanten werd gemaakt. Als u inhoud wilt publiceren, moet u eerst die inhoud in het werkgebied plaatsen en de update vervolgens publiceren door naar deze tegel te boren en deze te publiceren via de detailconsole van de inhoudsrelease.
 
-](assets/chlimage_1-139.png) ![ het pakket ContentSync van de Versie van de Inhoud 1} ![ Inhoud {](do-not-localize/chlimage_1-5.png)
+![&#128279;](assets/chlimage_1-139.png)  het pakket ContentSync van de Versie van de Inhoud 1&rbrace; ![ Inhoud &lbrace;](do-not-localize/chlimage_1-5.png)
 
 Dit pictogram vertegenwoordigt een pakket met de inhoudsversie voor de app-shell
 

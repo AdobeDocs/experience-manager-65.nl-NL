@@ -26,7 +26,7 @@ Voor een andere manier om huidige tendensen te identificeren, bezoek [ Trends va
 
 Op deze pagina worden de dialooginstellingen van de component `Social Tag Cloud` gedocumenteerd en wordt de gebruikerservaring beschreven.
 
-Voor gedetailleerde informatie voor ontwikkelaars, zie {de Hoofdzaak van de Markering 0} ](tag.md).[
+Voor gedetailleerde informatie voor ontwikkelaars, zie {de Hoofdzaak van de Markering 0} [&#128279;](tag.md).
 
 Zie [ het Beheer Markeringen ](../../help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
 
@@ -34,7 +34,7 @@ Zie [ het Beheer Markeringen ](../../help/sites-administering/tags.md) voor info
 
 Als u een component `Social Tag Cloud` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / Social Tag Cloud` te zoeken en sleept u deze naar de gewenste locatie op een pagina voor de tagcloud.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](tag.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Social Tag Cloud` component verschijnt:
 

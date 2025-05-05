@@ -45,7 +45,7 @@ Voor informatie over het toelaten van veilige reservewijze, zie [ Toelatend en o
 >
 >Zorg ervoor dat de tijdelijke map zich op het lokale bestandssysteem bevindt. AEM formulieren ondersteunen geen tijdelijke map op een externe locatie.
 
-***ndash de Globale folder van de documentopslag van het 0} document de wortelfolder van de documentopslag (GDS) wordt gebruikt voor de volgende doeleinden:**
+***ndash de Globale folder van de documentopslag van het 0&rbrace; document de wortelfolder van de documentopslag (GDS) wordt gebruikt voor de volgende doeleinden:**
 
 * Langlevende documenten opslaan. Langlevende documenten hebben geen verlooptijd en blijven bestaan totdat ze worden verwijderd (bijvoorbeeld de PDF-bestanden die in een werkstroomproces worden gebruikt). De langlevende documenten zijn een kritiek deel van de algemene systeemstaat. Als sommige of al deze documenten verloren gaan of beschadigd raken, kan de Forms-server instabiel worden. Daarom is het belangrijk dat deze map wordt opgeslagen op een RAID-apparaat.
 * Tijdelijke documenten opslaan die nodig zijn tijdens de verwerking.
@@ -77,7 +77,7 @@ Voor extra informatie over de GDS folder, zie [ Voorbereidend om AEM vormen (É�
 
 **Plaats van de folder van de Doopvonten van de Klant** *ndash; Type de weg aan een folder die extra doopvonten bevat die u wilt gebruiken.
 
-***nota **: De doopvonten worden genomen van het geheime voorgeheugen van de systeemdoopvont van Vensters en een systeemnieuw begin wordt vereist om het geheime voorgeheugen bij te werken. Nadat u de lettertypemap voor de klant hebt opgegeven, dient u het systeem waarop AEM formulieren zijn geïnstalleerd opnieuw te starten.*
+***nota &#x200B;**: De doopvonten worden genomen van het geheime voorgeheugen van de systeemdoopvont van Vensters en een systeemnieuw begin wordt vereist om het geheime voorgeheugen bij te werken. Nadat u de lettertypemap voor de klant hebt opgegeven, dient u het systeem waarop AEM formulieren zijn geïnstalleerd opnieuw te starten.*
 
 **Plaats van de folder van de Doopvonten van het Systeem** *ndash; Type de weg aan de doopvontenfolder die uw werkend systeem verstrekte. Er kunnen meerdere mappen worden toegevoegd, gescheiden door een puntkomma **;** .
 

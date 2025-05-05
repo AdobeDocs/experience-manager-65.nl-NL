@@ -28,7 +28,7 @@ ht-degree: 6%
 
 Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers beschikbaar worden gesteld, met elke andere extensie Experience Platform Tags die afkomstig is van een Adobe of een derde.
 
-Meer over Adobe uitbreidingen of derdeuitbreidingen leren, zie {de uitbreidingen van de Adobe 0} ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) in de Gids van de Gebruiker van de Markeringen van de Experience Platform.[
+Meer over Adobe uitbreidingen of derdeuitbreidingen leren, zie {de uitbreidingen van de Adobe 0} [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) in de Gids van de Gebruiker van de Markeringen van de Experience Platform.
 
 **Dit onderwerp is voorgenomen voor het volgende:** de beheerders van de Plaats, Ontwikkelaars op het Experience Platform, en mensen in Verrichtingen.
 
@@ -38,7 +38,7 @@ Meer over Adobe uitbreidingen of derdeuitbreidingen leren, zie {de uitbreidingen
 * Integratie van Experience Platform-tags voor Dynamic Media-viewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt verkregen via de knop &quot;URL&quot; op de pagina Asset Details.
 * Integratie van Experience Platform Tags kan niet gelijktijdig worden gebruikt met de integratie van verouderde viewers Analytics (via de parameter `config2=` ).
 * De steun voor video het volgen is beperkt tot &quot;kern playback&quot;het volgen slechts, zoals die in [ het Volgen Overzicht ](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en) wordt beschreven. Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
-* De configuratie van de Duur van de opslag voor de Elementen van Gegevens wordt niet gesteund voor Elementen van Gegevens gebruikend de *1} uitbreiding van de Kijkers van Dynamic Media.* Opslagduur moet zijn ingesteld op **[!UICONTROL None]** .
+* De configuratie van de Duur van de opslag voor de Elementen van Gegevens wordt niet gesteund voor Elementen van Gegevens gebruikend de *1&rbrace; uitbreiding van de Kijkers van Dynamic Media.* Opslagduur moet zijn ingesteld op **[!UICONTROL None]** .
 
 ### Gebruik de integratiegevallen {#use-cases-for-the-integration}
 
@@ -48,7 +48,7 @@ Zie [ de kijkers van Dynamic Media van het Spoor in Experience Manager Sites ](#
 
 Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts Experience Manager Assets, of Dynamic Media Classic gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de productie-URL voor de bibliotheek met Experience Platform-tags op uit Experience Platform-tags en voegt u deze handmatig toe aan de webpaginacode.
 
-Zie {de kijkers van Dynamic Media van het 0} Spoor gebruikend bed code ](#tracking-dynamic-media-viewers-using-embed-code) in.[
+Zie {de kijkers van Dynamic Media van het 0} Spoor gebruikend bed code [&#128279;](#tracking-dynamic-media-viewers-using-embed-code) in.
 
 <!-- Path on internal wiki [About tracking Dynamic Media viewers using embed code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode). -->
 
@@ -208,7 +208,7 @@ Als deze optie is geselecteerd, maakt de Data Element-editor een formulier met t
 
 Zie de [ de verwijzingsgids van de Kijkers van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) voor de lijst van gesteunde gebeurtenissen door elk kijkerstype; ga naar specifieke kijkerssectie, dan uitgezochte Steun voor Adobe Analytics volgende onderafdeling. Op dit moment worden in de naslaggids voor Dynamic Media Viewers geen gebeurtenisargumenten vastgelegd.
 
-Overweeg nu de levenscyclus van het Element van Gegevens van de Kijkers van Dynamic Media **. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende Dynamic Media-viewergebeurtenis op de pagina plaatsvindt. Stel dat het gegevenselement verwijst naar de gebeurtenis **[!UICONTROL LOAD]** en het argument &#39;asset&#39; ervan. In dat geval ontvangt de waarde van een dergelijk gegevenselement geldige gegevens nadat de viewer de gebeurtenis **[!UICONTROL LOAD]** voor de eerste keer uitvoert. Als het gegevenselement naar de gebeurtenis **[!UICONTROL ZOOM]** en het bijbehorende argument &quot;scale&quot; verwijst, blijft de waarde van een dergelijk gegevenselement leeg totdat de viewer een **[!UICONTROL ZOOM]** -gebeurtenis voor het eerst verzendt.
+Overweeg nu de levenscyclus van het Element van Gegevens van de Kijkers van Dynamic Media **. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende Dynamic Media-viewergebeurtenis op de pagina plaatsvindt. Stel dat het gegevenselement verwijst naar de gebeurtenis &#x200B;** [!UICONTROL LOAD] **&#x200B; en het argument &#39;asset&#39; ervan. In dat geval ontvangt de waarde van een dergelijk gegevenselement geldige gegevens nadat de viewer de gebeurtenis &#x200B;** [!UICONTROL LOAD] **&#x200B; voor de eerste keer uitvoert. Als het gegevenselement naar de gebeurtenis &#x200B;** [!UICONTROL ZOOM] **&#x200B; en het bijbehorende argument &quot;scale&quot; verwijst, blijft de waarde van een dergelijk gegevenselement leeg totdat de viewer een &#x200B;** [!UICONTROL ZOOM]** -gebeurtenis voor het eerst verzendt.
 
 Op dezelfde manier worden de waarden van data-elementen automatisch bijgewerkt wanneer de viewer een overeenkomstige gebeurtenis op de pagina verzendt. De waarde-update gebeurt zelfs als de specifieke gebeurtenis niet in de regelconfiguratie is opgegeven. Stel dat het gegevenselement **[!UICONTROL ZoomScale]** is gedefinieerd voor de parameter &quot;scale&quot; van de ZOOM-gebeurtenis. De enige regel in de configuratie Rule wordt echter geactiveerd door de gebeurtenis **[!UICONTROL LOAD]** . De waarde van **[!UICONTROL ZoomScale]** wordt nog steeds bijgewerkt wanneer een gebruiker inzoomt in de viewer.
 
@@ -242,7 +242,7 @@ Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor he
 
 In elk geval worden de waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, niet opgeslagen op de lokale opslag of op de server. In plaats daarvan worden ze alleen bewaard in de tagbibliotheek van het client-side Experience Platform. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
-Over het algemeen, steunt de redacteur van het Element van Gegevens {de selectie van de 0} opslagduur ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element). [ Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de optie voor de opslagduur van **[!UICONTROL None]** . Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer behoudt tijdens de volledige levenscyclus van de viewer.
+Over het algemeen, steunt de redacteur van het Element van Gegevens {de selectie van de 0} opslagduur [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element).  Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de optie voor de opslagduur van **[!UICONTROL None]** . Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer behoudt tijdens de volledige levenscyclus van de viewer.
 
 ### Over Regels in de extensie Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -436,7 +436,7 @@ Nadat u Adobe Analytics hebt geconfigureerd, wordt het volgende voor integratie 
 * De Variabelen van de Analyse zijn beschikbaar om het volgen gegevens te ontvangen.
 * Rapporten zijn beschikbaar voor het weergeven van verzamelde gegevens in Adobe Analytics.
 
-Zie ook {de Gids van de Implementatie van 0} Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).[
+Zie ook {de Gids van de Implementatie van 0} Analytics [&#128279;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
 
 **om Adobe Analytics voor de integratie te vormen:**
 
@@ -466,7 +466,7 @@ Zie ook {de Gids van de Implementatie van 0} Analytics ](https://experienceleagu
 
 1. Wijs een of meer Adobe Analytics-variabelen aan die u wilt gebruiken om het gedrag van Dynamic Media Viewers op de webpagina bij te houden.
 
-   U kunt elk type variabele gebruiken dat door Adobe Analytics wordt ondersteund. Het besluit over het veranderlijke type (als de steunen van het Verkeer van de Douane ], de eVar van de Omzetting [ ]) wordt gedreven door de specifieke behoeften van uw implementatie van Analytics.[
+   U kunt elk type variabele gebruiken dat door Adobe Analytics wordt ondersteund. Het besluit over het veranderlijke type (als de steunen van het Verkeer van de Douane &rbrack;, de eVar van de Omzetting [ ]) wordt gedreven door de specifieke behoeften van uw implementatie van Analytics.&lbrack;
 
    Zie [ Overzicht van steunen en eVars ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
@@ -537,7 +537,7 @@ Selecteer **[!UICONTROL Install]** als u een extensie wilt installeren. Voer zo 
 
 Waar nodig moeten de volgende extensies worden geïnstalleerd en geconfigureerd:
 
-* (Vereist) *uitbreiding van de Dienst van identiteitskaart van 0} Experience Cloud.*
+* (Vereist) *uitbreiding van de Dienst van identiteitskaart van 0&rbrace; Experience Cloud.*
 
 Geen extra configuratie is nodig, keur voor om het even welke voorgestelde waarden goed. Als u klaar bent, moet u **[!UICONTROL Save]** selecteren.
 
@@ -575,7 +575,7 @@ Zie [ Analytics van Adobe Media voor Audio en Video uitbreiding ](https://experi
 
 Schakel **[!UICONTROL enable Adobe Analytics for Video]** in om het bijhouden van videorecorders in te schakelen.
 
-Vanaf dit het schrijven, is de *uitbreiding van de Kijkers van Dynamic Media 0} slechts beschikbaar als het Bezit van de Markeringen van het Experience Platform voor ontwikkeling wordt gecreeerd.*
+Vanaf dit het schrijven, is de *uitbreiding van de Kijkers van Dynamic Media 0&rbrace; slechts beschikbaar als het Bezit van de Markeringen van het Experience Platform voor ontwikkeling wordt gecreeerd.*
 
 Zie [ een bezit in de Markeringen van het Experience Platform ](#creating-a-property-in-adobe-launch) creëren.
 
@@ -728,7 +728,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
 
    ![ 2019-07-25_14-16-33 ](assets/2019-07-25_14-16-33.png)
 
-1. Er wordt een pagina met integratiedetails weergegeven, die **** lijkt op het volgende:
+1. Er wordt een pagina met integratiedetails weergegeven, die **&#x200B;**&#x200B;lijkt op het volgende:
 
    >[!NOTE]
    >

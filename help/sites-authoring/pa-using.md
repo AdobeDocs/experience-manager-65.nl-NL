@@ -131,7 +131,7 @@ Gebruik **toon het pictogram van Montages** om de **dialoog van de Montages van 
 
 ![ a-04-1 ](assets/aa-04-1.png)
 
-De **dialoog van de Montages van de Activity Map 0} {verstrekt een waaier van opties op drie lusjes:**
+De **dialoog van de Montages van de Activity Map 0&rbrace; &lbrace;verstrekt een waaier van opties op drie lusjes:**
 
 ![ a-06 ](assets/aa-06.png)
 

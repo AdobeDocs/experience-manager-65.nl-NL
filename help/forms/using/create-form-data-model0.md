@@ -215,7 +215,7 @@ Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op ba
 Gebaseerd op het gebruiksgeval, creeer het **gebruiksheadingen** kind gegevens verwerkt bezit in het **rekeningen** gegevensmodelvoorwerp gebruikend de volgende wiskundige uitdrukking:
 
 * gebruikskosten = gesprekskosten + gesprekskosten + sms-tarieven + mobiele internettarieven + roaming nationaal + roaming internationaal + VAS (al deze eigenschappen zijn te vinden in het factuurgegevensmodelobject)
-Voor meer informatie over het **kind gegevens verwerkte bezit 0} gebruikslasten {, zie [ Plan de Interactieve Mededeling ](/help/forms/using/planning-interactive-communications.md).**
+Voor meer informatie over het **kind gegevens verwerkte bezit 0&rbrace; gebruikslasten &lbrace;, zie [ Plan de Interactieve Mededeling ](/help/forms/using/planning-interactive-communications.md).**
 
 Voer de volgende stappen uit om berekende onderliggende eigenschappen voor het modelobject van rekeningen te maken:
 
@@ -369,7 +369,7 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
    * Selecteer **Gereed**.
    * Selecteer **sparen** om het model van vormgegevens te bewaren.
 
-   ](assets/update_service_properties_new.png) de diensteigenschappen van 0} Update![
+   ![&#128279;](assets/update_service_properties_new.png) de diensteigenschappen van 0&rbrace; Update
 
 ## Stap 5: Model en services voor het testen van formuliergegevens {#step-test-form-data-model-and-services}
 

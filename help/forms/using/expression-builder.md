@@ -34,7 +34,7 @@ De operatoren die beschikbaar zijn voor gebruik in expressies zijn beschikbaar i
 
 Hier zijn een paar algemeen gebruikte JSP EL voorbeelden die u in uw oplossing van het Beheer van de Correspondentie kunt gebruiken:
 
-* Twee getallen toevoegen: ${number1 + number 
+* Twee getallen toevoegen: $&lbrace;number1 + number 
 * Twee tekenreeksen aaneenschakelen: ${str1} $ {str2}
 * Twee getallen vergelijken: ${age &lt; 18}
 

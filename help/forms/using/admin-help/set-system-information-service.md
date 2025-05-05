@@ -28,4 +28,4 @@ De systeeminformatiedienst verstrekt REST APIs om informatie terug te winnen. Om
 1. Ga naar Services > Toepassingen en services > Servicebeheer.
 1. Voor de pagina van het Beheer van de Dienst, klik de **SystemInfo** dienst.
 1. In de lijst op het lusje van Eindpunten, uitgezochte REST, en klik **voeg** toe.
-1. Voor het Add REST Eindpuntscherm, voegt de klik **** toe.
+1. Voor het Add REST Eindpuntscherm, voegt de klik **&#x200B;**&#x200B;toe.

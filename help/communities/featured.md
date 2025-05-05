@@ -45,7 +45,7 @@ Als u een component `Featured Content` in de ontwerpmodus aan een pagina wilt to
 
 En sleep het naar de juiste plaats op een pagina waar de aanbevolen inhoud moet worden weergegeven.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-featured.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Featured Content` component verschijnt:
 

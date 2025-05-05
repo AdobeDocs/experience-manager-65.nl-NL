@@ -43,7 +43,7 @@ Het **lusje van de Configuratie** wordt gebruikt voor het vormen van de bundels 
 
 >[!NOTE]
 >
->Zie {Configuratie 0} OSGi met de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.[
+>Zie {Configuratie 0} OSGi met de Console van het Web [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
 
 Het **lusje van de Configuratie** kan door één van beide worden betreden:
 
@@ -122,7 +122,7 @@ Met dit tabblad kunt u:
 
 * **installeer of Update**
 
-  U kunt **doorbladeren** om het dossier te vinden dat uw bundel bevat en te specificeren of het **** onmiddellijk Begin zou moeten **en waarop** het Niveau van het Begin.
+  U kunt **doorbladeren** om het dossier te vinden dat uw bundel bevat en te specificeren of het **&#x200B;**&#x200B;onmiddellijk Begin zou moeten **en waarop** het Niveau van het Begin.
 
 * **herladen**
 

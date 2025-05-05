@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Responsieve lay-out uitproberen in We.Detailhandel{#trying-out-responsive-layout-in-we-retail}
 
-Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de **2} wijze van de Lay-out** in de paginaredacteur, die u laat uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven.
+Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de **2&rbrace; wijze van de Lay-out** in de paginaredacteur, die u laat uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven.
 
 ## Uitproberen {#trying-it-out}
 

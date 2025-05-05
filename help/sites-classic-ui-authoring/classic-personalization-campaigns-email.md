@@ -249,7 +249,7 @@ Een nieuwsbrief sturen vanuit de campagne:
    >
    >[ het testen van de Vlucht ](#flight-testing-newsletters) nieuwsbrief alvorens wordt het verzenden geadviseerd.
 
-1. Bij de bovenkant van nieuwsbrief, verzendt de klik ****. De wizard Nieuwsbrief wordt geopend.
+1. Bij de bovenkant van nieuwsbrief, verzendt de klik **&#x200B;**. De wizard Nieuwsbrief wordt geopend.
 
 1. In de lijst van de ontvanger, selecteer de lijst u nieuwsbrief wilt ontvangen en **daarna** klikken.
 

@@ -42,13 +42,13 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing 
 
 >[!NOTE]
 >
->&amp;ast; Zodra de gebruiker begint te communiceren met de pagina in de modus Voorbeeld, is de sneltoets `Ctrl-Shift-m` niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar wanneer de gebruiker op de bovenste editor-balk klikt of terugkeert naar de modus Bewerken.
+>&ast; Zodra de gebruiker begint te communiceren met de pagina in de modus Voorbeeld, is de sneltoets `Ctrl-Shift-m` niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar wanneer de gebruiker op de bovenste editor-balk klikt of terugkeert naar de modus Bewerken.
 
 Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [ consoles ](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
-De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [ consolekortere weg ](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
+>De toetsenbordkortere weg van de redacteur is altijd actief ongeacht als de [ consolekortere weg ](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) is gedeactiveerd.
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 

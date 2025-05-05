@@ -30,7 +30,7 @@ In AEM Communities kunnen gebruikers zichzelf registreren en hun profielen bewer
 
 De gebruikers in publiceren milieu worden geregistreerd worden over het algemeen bedoeld als *communautaire leden (leden)* om hen van *gebruikers* in het auteursmilieu te onderscheiden.
 
-De toestemmingen worden verleend door leden aan één van de [ lid (gebruiker) groepen ](#publish-group-roles) toe te wijzen dynamisch gecreeerd wanneer de communautaire plaats [ ](sites-console.md) of [ gewijzigd ](sites-console.md#modifying-site-properties) van het auteursmilieu wordt gecreeerd. Wanneer het werken van het auteursmilieu, zijn de leden zichtbaar van het publicatiemilieu door middel van de [ tunneldienst ](#tunnel-service).
+De toestemmingen worden verleend door leden aan één van de [ lid (gebruiker) groepen ](#publish-group-roles) toe te wijzen dynamisch gecreeerd wanneer de communautaire plaats [&#128279;](sites-console.md) of [ gewijzigd ](sites-console.md#modifying-site-properties) van het auteursmilieu wordt gecreeerd. Wanneer het werken van het auteursmilieu, zijn de leden zichtbaar van het publicatiemilieu door middel van de [ tunneldienst ](#tunnel-service).
 
 Door ontwerp, leden en lidgroepen die in het publicatiemilieu worden gecreeerd zouden niet in het auteursmilieu moeten verschijnen. Gebruikers en gebruikersgroepen die in de auteursomgeving zijn gemaakt, moeten ook in de auteursomgeving blijven.
 
@@ -42,11 +42,11 @@ Voor a [ publiceer landbouwbedrijf ](topologies.md), moeten de registratie en de
 
 Ter bescherming tegen spam is het mogelijk de frequentie van het plaatsen van inhoud door leden te beperken. Bovendien is het mogelijk de bijdragen van nieuw geregistreerde leden automatisch te beperken.
 
-Voor details, zie {de Limieten van de Bijdrage van 0} Lid ](limits.md).[
+Voor details, zie {de Limieten van de Bijdrage van 0} Lid [&#128279;](limits.md).
 
 ### Dynamisch gemaakte gebruikersgroepen {#dynamically-created-user-groups}
 
-Wanneer een nieuwe communautaire plaats wordt gecreeerd, worden de nieuwe gebruikersgroepen dynamisch gecreeerd met unieke identiteitskaart (uid) en toestemmingen aangewezen voor diverse administratieve functies noodzakelijk om de communautaire plaats of in het auteursmilieu (zie {de Rollen van de Groep van de 0} Auteur ](#author-group-roles)) of het publicatiemilieu (zie [ Rollen van de Groep van Publish ](#publish-group-roles)) te beheren.[
+Wanneer een nieuwe communautaire plaats wordt gecreeerd, worden de nieuwe gebruikersgroepen dynamisch gecreeerd met unieke identiteitskaart (uid) en toestemmingen aangewezen voor diverse administratieve functies noodzakelijk om de communautaire plaats of in het auteursmilieu (zie {de Rollen van de Groep van de 0} Auteur [&#128279;](#author-group-roles)) of het publicatiemilieu (zie [ Rollen van de Groep van Publish ](#publish-group-roles)) te beheren.
 
 De namen van de groepen worden geproduceerd van de naam die de plaats tijdens [ wordt gegeven de verwezenlijking van de communautaire plaats ](sites-console.md#step13asitetemplate). Unieke id&#39;s vermijden naamgevingsconflicten voor sites met dezelfde naam en groepen van gemeenschappen op dezelfde server.
 
@@ -58,7 +58,7 @@ Bijvoorbeeld, als de plaatsnaam &quot;**&quot;voor een plaats genoemd &quot;Inge
 
 ### Tunnelservice {#tunnel-service}
 
-Wanneer het gebruiken van het auteursmilieu om plaatsen ](sites-console.md) te creëren, [ wijzig plaatseigenschappen ](sites-console.md#modifying-site-properties) en [ beheer communautaire leden en lidgroepen ](members.md), is het noodzakelijk om tot gebruikers en gebruikersgroepen toegang te hebben die in het publicatiemilieu worden geregistreerd.[
+Wanneer het gebruiken van het auteursmilieu om plaatsen [&#128279;](sites-console.md) te creëren, [ wijzig plaatseigenschappen ](sites-console.md#modifying-site-properties) en [ beheer communautaire leden en lidgroepen ](members.md), is het noodzakelijk om tot gebruikers en gebruikersgroepen toegang te hebben die in het publicatiemilieu worden geregistreerd.
 
 De tunneldienst verleent deze toegang gebruikend de replicatieagent op auteur.
 
@@ -192,7 +192,7 @@ Er zijn vier afzonderlijke consoles beschikbaar slechts in het auteursmilieu:
 
 ### Rol van communautaire beheerders {#community-administrators-role}
 
-Zoals vermeld in de ](#author-group-roles) grafiek van de Rollen van de Groep van de Auteur [, kunnen de leden van de groep van Communautaire Beheerders communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap), en gematigde inhoud verbieden.
+Zoals vermeld in de [&#128279;](#author-group-roles) grafiek van de Rollen van de Groep van de Auteur , kunnen de leden van de groep van Communautaire Beheerders communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap), en gematigde inhoud verbieden.
 
 Voer dezelfde stappen uit als het maken en toewijzen van een gebruiker aan de rol van enablement Manager, maar voeg C `ommunity-administrators` -groep toe onder het tabblad Groepen van de gebruiker.
 
@@ -237,7 +237,7 @@ Wanneer het bespreken van groepen, zijn er twee verschillende onderwerpen:
 
 * **[Communautaire groepen](overview.md#communitygroups)**
 
-  Communautaire groepen zijn de subgemeenschappen die kunnen worden gecreëerd in de publicatieomgeving voor een communautaire site die de oprichting van groepen van gemeenschappen ondersteunt. Als u een community maakt, worden er meer pagina&#39;s toegevoegd aan de website en worden deze beheerd op een manier die vergelijkbaar is met de bovenliggende community-site. Voor meer informatie bezoekt {de Hoofdzaak van de Groep van de Gemeenschap 0} ](essentials-groups.md) voor ontwikkelaars en [ Communautaire Groep ](creating-groups.md) voor auteurs.[
+  Communautaire groepen zijn de subgemeenschappen die kunnen worden gecreëerd in de publicatieomgeving voor een communautaire site die de oprichting van groepen van gemeenschappen ondersteunt. Als u een community maakt, worden er meer pagina&#39;s toegevoegd aan de website en worden deze beheerd op een manier die vergelijkbaar is met de bovenliggende community-site. Voor meer informatie bezoekt {de Hoofdzaak van de Groep van de Gemeenschap 0} [&#128279;](essentials-groups.md) voor ontwikkelaars en [ Communautaire Groep ](creating-groups.md) voor auteurs.
 
 * **[de groepen van het Lid](../../help/sites-administering/security.md)**
 

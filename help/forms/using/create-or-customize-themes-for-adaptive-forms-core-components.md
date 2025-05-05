@@ -109,7 +109,7 @@ Het maken of aanpassen van een thema is een proces met meerdere stappen. Voer de
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-De voorbeelden die in het document worden verstrekt zijn gebaseerd op het **** thema van het Canvas, maar u kunt om het even welk thema klonen en het aanpassen gebruikend de zelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
+De voorbeelden die in het document worden verstrekt zijn gebaseerd op het **&#x200B;**&#x200B;thema van het Canvas, maar u kunt om het even welk thema klonen en het aanpassen gebruikend de zelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
 
 #### 1. Kloont de Git-gegevensopslagruimte van het thema {#clone-git-repo-of-theme}
 

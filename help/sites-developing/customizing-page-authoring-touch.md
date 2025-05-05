@@ -54,7 +54,7 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 
 >[!CAUTION]
 >
->****** verander niets in de `/libs` weg.
+>**&#x200B;**&#x200B;** verander niets in de `/libs` weg.
 >
 >De reden hiervoor is dat de inhoud van `/libs` wordt overschreven, de volgende keer dat u een upgrade uitvoert van uw exemplaar (en dat u deze mogelijk overschrijft wanneer u een hotfix- of functiepakket toepast).
 >
@@ -71,7 +71,7 @@ Wanneer u een pagina uitgeeft, zijn er diverse [ beschikbare wijzen ](/help/site
 
 Een standaard AEM instantie verstrekt de laag MSM. Dit heeft toegang tot gegevens met betrekking tot [ multisite beheer ](/help/sites-administering/msm.md) en benadrukt het in de laag.
 
-Om het in actie te zien, kunt u om het even welke ](/help/sites-developing/we-retail-globalized-site-structure.md) pagina van het wij.Retail taalexemplaar [ uitgeven (of een andere levende exemplaarpagina) en de **Levende wijze van de Status van het Exemplaar** selecteren.
+Om het in actie te zien, kunt u om het even welke [&#128279;](/help/sites-developing/we-retail-globalized-site-structure.md) pagina van het wij.Retail taalexemplaar  uitgeven (of een andere levende exemplaarpagina) en de **Levende wijze van de Status van het Exemplaar** selecteren.
 
 U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
@@ -240,13 +240,13 @@ U kunt de code van deze pagina op GitHub vinden
 
 Het uit-van-de-dooswerkschema, **Verzoek om Activering**:
 
-* Zal automatisch op het aangewezen menu verschijnen wanneer een inhoudsauteur **** niet de aangewezen replicatierechten heeft, maar **heeft** lidmaatschap van DAM-Gebruikers en Auteurs.
+* Zal automatisch op het aangewezen menu verschijnen wanneer een inhoudsauteur **&#x200B;**&#x200B;niet de aangewezen replicatierechten heeft, maar **heeft** lidmaatschap van DAM-Gebruikers en Auteurs.
 
 * Anders wordt er niets weergegeven, omdat de replicatierechten zijn verwijderd.
 
 Om aangepast gedrag op dergelijke activering te hebben, kunt u het **Verzoek om het werkschema van de Activering** bedekken:
 
-1. In `/apps` bedekking de **2} tovenaar van Plaatsen {:**
+1. In `/apps` bedekking de **2&rbrace; tovenaar van Plaatsen &lbrace;:**
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 

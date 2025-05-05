@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Voor AEM Communities kan de moderatie rechtstreeks door beheerders en leden van een vertrouwde gemeenschap worden uitgevoerd op de gepubliceerde pagina waar de community-inhoud is geplaatst.
 
-Wanneer het gebruiken van de matigingsconsole van a [ ](moderation.md), omvat de informatie die voor de inhoud wordt getoond een verbinding aan de gepubliceerde pagina om toegang tot extra beschikbare moderatieacties toe te staan wanneer het modereren in-context.
+Wanneer het gebruiken van de matigingsconsole van a [&#128279;](moderation.md), omvat de informatie die voor de inhoud wordt getoond een verbinding aan de gepubliceerde pagina om toegang tot extra beschikbare moderatieacties toe te staan wanneer het modereren in-context.
 
 ## Moderatiehandelingen {#moderation-actions}
 
@@ -38,7 +38,7 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 ## Voorbeeld {#example}
 
-Gebruikend de ](http://localhost:4503/content/sites/engage/en.html) gemaakte plaats van de Bouw van 0} Geometrixx {wanneer [ Begonnen het worden met AEM Communities ](getting-started.md), is het mogelijk aan opstelling een draad in een forum waarop om diverse matigingsactiviteiten in het milieu van Publish te ervaren. [ Zie hieronder.
+Gebruikend de [&#128279;](http://localhost:4503/content/sites/engage/en.html) gemaakte plaats van de Bouw van 0&rbrace; Geometrixx &lbrace;wanneer [ Begonnen het worden met AEM Communities ](getting-started.md), is het mogelijk aan opstelling een draad in een forum waarop om diverse matigingsactiviteiten in het milieu van Publish te ervaren.  Zie hieronder.
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) werd geïdentificeerd als vertrouwd gemeenschapslid door hem toe te voegen aan de gemeenschap-in gesprek-moderatorgroep toen het creëren van de plaats.
 

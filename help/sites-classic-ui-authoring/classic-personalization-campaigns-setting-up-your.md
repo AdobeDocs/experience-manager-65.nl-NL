@@ -112,7 +112,7 @@ De procedure voor het creëren van een ervaring is afhankelijk van het type erva
 
 >[!NOTE]
 >
->Zoals met vorige versies is het nog mogelijk om de ervaring als pagina in de **** console van Websites tot stand te brengen {(en om het even welke die pagina&#39;s in vorige versies worden gecreeerd worden nog volledig gesteund).
+>Zoals met vorige versies is het nog mogelijk om de ervaring als pagina in de **&#x200B;**&#x200B;console van Websites tot stand te brengen &lbrace;(en om het even welke die pagina&#39;s in vorige versies worden gecreeerd worden nog volledig gesteund).
 >
 >Het wordt nu aanbevolen om de MCM te gebruiken voor het maken van ervaringen.
 
@@ -196,7 +196,7 @@ Aan actieve of deactieve leads:
 
 1. In AEM, navigeer aan MCM en klik **Leads**.
 
-1. Selecteer de lood u wilt activeren of deactiveren en **klikken activeert** of **** deactivate.
+1. Selecteer de lood u wilt activeren of deactiveren en **klikken activeert** of **&#x200B;**&#x200B;deactivate.
 
    ![ screen_shot_2012-02-21at120620pm ](assets/screen_shot_2012-02-21at120620pm.png)
 
@@ -217,7 +217,7 @@ Om lood van een komma-gescheiden lijst te importeren:
    >U kunt ook leads importeren door een van de volgende handelingen uit te voeren:
    >
    >* In het dashboard, klik **de Hangt van de Invoer** in de **ruit van Lijsten**
-   >* Klik **Lijsten** en in het **** menu van Hulpmiddelen, uitgezochte **Leads van de Invoer**.
+   >* Klik **Lijsten** en in het **&#x200B;**&#x200B;menu van Hulpmiddelen, uitgezochte **Leads van de Invoer**.
 
 1. In het **menu van Hulpmiddelen**, uitgezochte **Invoer** **leidt**.
 
@@ -278,7 +278,7 @@ Bestaande lead-informatie wijzigen:
    >
    >U kunt slechts één lead tegelijk bewerken. Als u regels moet wijzigen die deel uitmaken van dezelfde lijst, kunt u de lijst wijzigen.
 
-1. Klik **uitgeven**. Het **geeft 1} venster van de Lood uit opent.**
+1. Klik **uitgeven**. Het **geeft 1&rbrace; venster van de Lood uit opent.**
 
    ![ screen_shot_2012-02-21at124609pm ](assets/screen_shot_2012-02-21at124609pm.png)
 

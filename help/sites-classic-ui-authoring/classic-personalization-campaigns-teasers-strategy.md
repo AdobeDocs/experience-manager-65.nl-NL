@@ -111,7 +111,7 @@ En wij gebruiken de volgende teasdefinities:
 
 Als we dit vervolgens toepassen op een bezoeker waar:
 
-* **S1**, **S2, en **S6** met succes oplossen
+* **S1**, **S2, en &#x200B;** S6** met succes oplossen
 
 * de markering **marketing** heeft drie klappen
 * de markering **zaken** heeft zes treffers

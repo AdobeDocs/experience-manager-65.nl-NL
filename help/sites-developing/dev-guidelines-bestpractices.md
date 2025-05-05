@@ -81,7 +81,7 @@ Bijvoorbeeld:
 
 >[!CAUTION]
 >
->**** verander niets in de `/libs` weg.
+>**&#x200B;** verander niets in de `/libs` weg.
 >
 >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >

@@ -72,7 +72,7 @@ U kunt nieuwe taken aan projecten toevoegen. Deze taken worden vervolgens weerge
 
 Een taak toevoegen:
 
-1. In het project, bepaal de plaats van de **tegel van 0} Taken {**
+1. In het project, bepaal de plaats van de **tegel van 0&rbrace; Taken &lbrace;**
 1. Klik naar beneden chevron bij het hoogste recht van de tegel en selecteer **creëren Taak**.
 1. In **voeg het venster van de Taak** toe, verstrek taakdetails zoals prioriteit, toegewezen persoon, en vervaldatum.
 

@@ -19,7 +19,7 @@ ht-degree: 20%
 
 # Gereedschapsconsoles{#tools-consoles}
 
-De **hulpmiddelen** consoles verlenen toegang tot verscheidene gespecialiseerde hulpmiddelen die u helpen uw websites, digitale activa, en andere aspecten van uw inhoudsbewaarplaats beheren. Er zijn momenteel twee vloeren van de **** console van Hulpmiddelen afhankelijk van UI u gebruikt:
+De **hulpmiddelen** consoles verlenen toegang tot verscheidene gespecialiseerde hulpmiddelen die u helpen uw websites, digitale activa, en andere aspecten van uw inhoudsbewaarplaats beheren. Er zijn momenteel twee vloeren van de **&#x200B;**&#x200B;console van Hulpmiddelen afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)

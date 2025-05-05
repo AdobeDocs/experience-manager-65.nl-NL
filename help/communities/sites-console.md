@@ -266,7 +266,7 @@ De globale instelling voor het modereren van door de gebruiker gegenereerde inho
 
 * **laat Analytics** toe
 
-  Slechts beschikbaar wanneer Adobe Analytics [ ](/help/communities/analytics.md) voor de eigenschappen van Gemeenschappen is gevormd.
+  Slechts beschikbaar wanneer Adobe Analytics [&#128279;](/help/communities/analytics.md) voor de eigenschappen van Gemeenschappen is gevormd.
 De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een extra selectiemenu weergegeven:
 
 ![ plaats-analytics-toelaat ](assets/site-analytics-enable.png)

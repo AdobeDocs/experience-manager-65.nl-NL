@@ -24,7 +24,7 @@ Met de elementkiezer kunt u in [!DNL Adobe Experience Manager] Assets door eleme
 
 Momenteel, kunt u de verzoekparameters `assettype` (*Beeld/Video/Tekst*) en selectie `mode` (*Enige/Veelvoudige*) als contextuele informatie voor de activaselecteur overgaan, die door de selectie intact blijft.
 
-De activaselecteur gebruikt het HTML5 **** bericht Window.postMessage om gegevens voor de geselecteerde activa naar de ontvanger te verzenden.
+De activaselecteur gebruikt het HTML5 **&#x200B;**&#x200B;bericht Window.postMessage om gegevens voor de geselecteerde activa naar de ontvanger te verzenden.
 
 De assetkiezer is gebaseerd op de woordenlijst van de grondkiezer van Granite. De elementenkiezer werkt standaard in de modus Bladeren. U kunt echter filters toepassen met behulp van de ervaring van Omngonderzoek om uw zoekopdracht naar bepaalde elementen te verfijnen.
 

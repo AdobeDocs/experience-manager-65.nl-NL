@@ -36,7 +36,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 
 >[!NOTE]
 >
->Wanneer een gebruiker geen [ ](/help/sites-administering/security.md#actions) toestemmingen van de Schrapping heeft, werkt de redacteur van het Fragment van de Inhoud op *read-only* wijze.
+>Wanneer een gebruiker geen [&#128279;](/help/sites-administering/security.md#actions) toestemmingen van de Schrapping heeft, werkt de redacteur van het Fragment van de Inhoud op *read-only* wijze.
 
 >[!NOTE]
 >

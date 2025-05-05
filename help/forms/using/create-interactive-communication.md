@@ -131,7 +131,7 @@ Voor meer informatie over de Interactieve Communicatie auteursinterface, zie [ I
 
 U kunt de binding tussen een doelgebied en een documentfragment ook vervangen door het nieuwe fragment op het doelgebied neer te zetten met de tab **[!UICONTROL Assets]** . De blauwe kleurschaduw van het doelgebied tijdens het slepen van het fragment geeft aan dat het documentfragment naar het doelgebied kan worden neergezet.
 
-Voor meer informatie over documentfragmenten, zie {de Fragmenten van het 0} Document ](/help/forms/using/document-fragments.md).[
+Voor meer informatie over documentfragmenten, zie {de Fragmenten van het 0} Document [&#128279;](/help/forms/using/document-fragments.md).
 
 Met de ontwerpinterface kunt u onderscheid maken tussen de niet-gebonden en gebonden velden en variabelen in een interactieve communicatie. De interface markeert de niet-gebonden velden en variabelen met een oranje rand.
 
@@ -161,7 +161,7 @@ Selecteer het documentfragment, selecteer ![ configure_icon ](assets/configure_i
 
    Voorbeeld: een lay-outtabel waarin de brutopremie, de loyaliteitskorting % en de beschikbaarheid van noodhulp langs de weg voor het oude en het nieuwe beleid worden weergegeven.
 
-   Voor meer informatie over lay-outfragmenten, zie {de Fragmenten van het 0} Document ](/help/forms/using/document-fragments.md).[
+   Voor meer informatie over lay-outfragmenten, zie {de Fragmenten van het 0} Document [&#128279;](/help/forms/using/document-fragments.md).
 
 1. Selecteer het afdrukkanaal en pas het filter op het tabblad **[!UICONTROL Assets]** toe op de weergave van afbeeldingen. Sleep de vereiste afbeeldingen naar de interactieve communicatie, bijvoorbeeld voor het bedrijfslogo.
 
@@ -499,11 +499,11 @@ Voer de volgende stappen uit om een component van het Comité aan het Webkanaal 
 
 1. Tussenvoegsel de **component van het Comité** in het Webkanaal gebruikend om het even welke volgende opties:
 
-   * Selecteer een component, selecteer **+** en selecteer de **3} component van het Comité {.**
+   * Selecteer een component, selecteer **+** en selecteer de **3&rbrace; component van het Comité &lbrace;.**
 
-   * Van het **paneel van de Component** browser, belemmering-daling de **3} component van het Comité {op de Interactieve Mededeling.**
+   * Van het **paneel van de Component** browser, belemmering-daling de **3&rbrace; component van het Comité &lbrace;op de Interactieve Mededeling.**
 
-   * Selecteer het **Comité** in het **3} browser paneel van de Inhoud {en uitgezocht** voeg het Comité van het Kind **toe.** Het selecteren van **voegt het Comité van het Kind** optie toe toont **voeg de dialoogdoos van het Comité van het Kind** toe. Voer de titel en een optionele beschrijving en naam voor de component Panel in.
+   * Selecteer het **Comité** in het **3&rbrace; browser paneel van de Inhoud &lbrace;en uitgezocht** voeg het Comité van het Kind **toe.** Het selecteren van **voegt het Comité van het Kind** optie toe toont **voeg de dialoogdoos van het Comité van het Kind** toe. Voer de titel en een optionele beschrijving en naam voor de component Panel in.
 
 1. Selecteer het paneel van de **browser van de Inhoud** om extra acties op het Comité uit te voeren zoals vorm, geef regels uit, exemplaar, schrap, en neem component op.
 

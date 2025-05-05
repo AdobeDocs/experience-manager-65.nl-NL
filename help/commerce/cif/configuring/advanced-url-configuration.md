@@ -101,7 +101,7 @@ URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_
 
 ## Voorbeeld
 
-Het ](https://github.com/adobe/aem-cif-guides-venia) project van de opslag van de Verwijzing van 0} Venia {omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen. [ Hierdoor kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Er wordt een combinatie van CIF `UrlProvider` en Sling Mappings gebruikt, zoals hierboven beschreven.
+Het [&#128279;](https://github.com/adobe/aem-cif-guides-venia) project van de opslag van de Verwijzing van 0&rbrace; Venia &lbrace;omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen.  Hierdoor kan elk project afzonderlijke URL-patronen instellen voor product- en categoriepagina&#39;s op basis van hun SEO-behoeften. Er wordt een combinatie van CIF `UrlProvider` en Sling Mappings gebruikt, zoals hierboven beschreven.
 
 >[!NOTE]
 >

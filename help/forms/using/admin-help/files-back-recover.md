@@ -95,7 +95,7 @@ Als u een back-up van de database in real-time wilt maken, moet u de modus Momen
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie {het document van de de levenscyclus van het 0} product van de Adobe ](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).[
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie {het document van de de levenscyclus van het 0} product van de Adobe [&#128279;](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -118,7 +118,7 @@ Maak back-ups van momentopnamen of configureer de database van het Oracle voor u
 
 [ de Steun en Terugwinning van het Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken om de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en rapportering meer in detail te gebruiken, en het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
 
-{de Gids van de Gebruiker van het Gegevensbestand van 0} Oracle en van de Terugwinning:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) verstrekt diepgaande informatie over architectuur RMAN, steun en terugwinningsconcepten en mechanismen, geavanceerde terugwinningstechnieken zoals punt-in-tijd terugwinning en gegevensbestand flashback eigenschappen, en steun en terugwinningsprestaties het stemmen. [ Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
+{de Gids van de Gebruiker van het Gegevensbestand van 0} Oracle en van de Terugwinning:[&#128279;](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) verstrekt diepgaande informatie over architectuur RMAN, steun en terugwinningsconcepten en mechanismen, geavanceerde terugwinningstechnieken zoals punt-in-tijd terugwinning en gegevensbestand flashback eigenschappen, en steun en terugwinningsprestaties het stemmen.  Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
 
 [ de Steun en Verwijzing van het Gegevensbestand van het Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) verstrekt volledige informatie over syntaxis en semantiek voor alle bevelen RMAN, en beschrijft de gegevensbestandmeningen die voor het melden van steun en terugwinningsactiviteiten beschikbaar zijn.
 

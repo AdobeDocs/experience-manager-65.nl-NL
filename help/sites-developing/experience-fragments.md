@@ -110,9 +110,11 @@ Om een malplaatje van het ervaringsfragment tot stand te brengen dat door **word
 1. Beide:
 
    1. Het middeltype van het malplaatje (de aanvankelijke knoop) moet erven van:
+
       `cq/experience-fragments/components/xfpage`
 
    1. De naam van de sjabloon moet beginnen met:
+
       `experience-fragments`
 Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments, aangezien de eigenschap `cq:allowedTemplates` van deze map alle sjablonen bevat die een naam hebben die begint met `experience-fragment` . Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
 

@@ -40,7 +40,7 @@ Vorm Adobe Target in AEM om het met adaptieve vormen en interactieve mededelinge
 Uw merk wordt nu vermeld op de pagina Activiteiten.
 
 1. Selecteer uw merk op de pagina Activiteiten.
-1. In HoofdGebied van uw merk, creeert de uitgezochte **** > **Activiteit**.
+1. In HoofdGebied van uw merk, creeert de uitgezochte **&#x200B;**&#x200B;> **Activiteit**.
 
    Wanneer u een activiteit creeert, specificeert u zijn details, doel, en montages.
 
@@ -72,7 +72,7 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
 
 1. Als u het doelframework voor adaptieve formulieren wilt inschakelen, navigeert u naar het formulier of de interactieve communicatie en opent u het in de bewerkingsmodus.
 
-   Om een vorm of interactieve mededeling op uit te geven wijze te openen, uitgezocht **** en dan te selecteren **Open**.
+   Om een vorm of interactieve mededeling op uit te geven wijze te openen, uitgezocht **&#x200B;**&#x200B;en dan te selecteren **Open**.
 
    U kunt ook vier knoppen weergeven wanneer u de muisaanwijzer op het formulier of het interactieve communicatiepictogram plaatst zonder dat u dit selecteert. U kunt **selecteren geeft** knoop uit die verschijnt, om de vorm op uit te geven wijze te openen.
 

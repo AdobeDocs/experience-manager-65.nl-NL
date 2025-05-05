@@ -32,7 +32,7 @@ Voor informatie over klassieke UI zie [ AEM Componenten voor Klassieke UI ](/hel
 >
 >Om u te helpen uw componenten analyseren, testen en zuiveren, AEM verstrekt:
 >
->* ](/help/sites-developing/developer-mode.md) de Wijze van de Ontwikkelaar 0}[
+>* [&#128279;](/help/sites-developing/developer-mode.md) de Wijze van de Ontwikkelaar 0&rbrace;
 >* a [ kader voor het automatiseren van tests, die op de bibliotheek Hobbes.js ](/help/sites-developing/hobbes.md) worden gebaseerd
 >
 

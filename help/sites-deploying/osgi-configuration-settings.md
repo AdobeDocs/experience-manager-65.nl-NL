@@ -273,7 +273,7 @@ Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats 
 
 >[!CAUTION]
 >
->Wanneer het veranderen van het plaatsen voor of **** of **Gzip**, schrap de inhoud van cliëntlibgeheime voorgeheugen. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) voor details.
+>Wanneer het veranderen van het plaatsen voor of **&#x200B;**&#x200B;of **Gzip**, schrap de inhoud van cliëntlibgeheime voorgeheugen. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) voor details.
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Wanneer het gebruiken van [ gesloten gebruikersgroepen ](/help/sites-administeri
 * **Uitspraak van HTTP**
 * De **Standaard Login Pagina**
 
-**Controle van de Dienst van de Controle van de Verbinding van 0} Dag CQ en indien nodig vormen:**
+**Controle van de Dienst van de Controle van de Verbinding van 0&rbrace; Dag CQ en indien nodig vormen:**
 
 * **de Periode van de Planner** om het interval te bepalen waarbij de externe verbindingen automatisch moeten worden gecontroleerd.
 
@@ -295,7 +295,7 @@ Wanneer het gebruiken van [ gesloten gebruikersgroepen ](/help/sites-administeri
 
 **CQ van de Verbinding van de Dag CQ Taak** vormt montages voor één enkele taak van de verbindingscontroleur (een taak die een externe verbinding controleert):
 
-* Controle de intervallen die in **worden bepaald het Interval van de Test van de Verbinding 1} en** het Onjuiste Interval van de Test van de Verbinding ****
+* Controle de intervallen die in **worden bepaald het Interval van de Test van de Verbinding 1&rbrace; en** het Onjuiste Interval van de Test van de Verbinding **&#x200B;**
 
 * De verschillende parameters met betrekking tot proxy&#39;s voor internettoegang en NTLM die nodig zijn voor externe toegang bij het controleren van een koppeling.
 
@@ -303,7 +303,7 @@ Wanneer het gebruiken van [ gesloten gebruikersgroepen ](/help/sites-administeri
 
 **Dag CQ MCM- Bulletin** vormt de diverse montages die met nieuwsbrief worden gebruikt.
 
-**vormt de Toewijzing van de Wortel van 0} Dag CQ:**
+**vormt de Toewijzing van de Wortel van 0&rbrace; Dag CQ:**
 
 * **Weg van het Doel** om te bepalen waar een verzoek aan &quot; `/`&quot;wordt opnieuw gericht aan.
 
@@ -375,15 +375,15 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 >
 >Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
 
-**Vorm van de Configurator van de Controle van de Verbinding van 0} Dag CQ WCM:**
+**Vorm van de Configurator van de Controle van de Verbinding van 0&rbrace; Dag CQ WCM:**
 
 * **Lijst van herschrijven configuraties** om een lijst van plaatsen voor op inhoud-gebaseerde configuraties van de verbindingscontrole te specificeren. De configuraties kunnen op looppaswijze worden gebaseerd. Dit is belangrijk om onderscheid te maken tussen auteur- en publicatieomgevingen, omdat de instellingen voor koppelingencontrole kunnen verschillen.
 
-**vormt de Factory van de Manager van de Pagina WCM van 0} Dag CQ:**
+**vormt de Factory van de Manager van de Pagina WCM van 0&rbrace; Dag CQ:**
 
 * **Controle van de Activering van de Subboom van de Pagina** voor een gebruiker (zonder replicatiemachtigingen) om pagina&#39;s te schrappen of te bewegen (zelfs als de pagina&#39;s niet worden geactiveerd).
 
-**Vorm van de Bewerker van de Pagina van 0} Dag CQ WCM:**
+**Vorm van de Bewerker van de Pagina van 0&rbrace; Dag CQ WCM:**
 
 * **Wegen**, een lijst van plaatsen waar het systeem op paginawijzigingen alvorens a `jcr:Event` te teweegbrengen luistert.
 
@@ -409,7 +409,7 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 >
 >Zie [ de Indrukking van de Pagina ](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie.
 
-**Controle van de Manager van de Versie van WCM van 0} Dag CQ WCM als, en hoe, de versies in uw systeem worden beheerd:**
+**Controle van de Manager van de Versie van WCM van 0&rbrace; Dag CQ WCM als, en hoe, de versies in uw systeem worden beheerd:**
 
 * **creeer Versie op Activering**, die in een standaardinstallatie wordt toegelaten
 * **laat het Opschonen** toe
@@ -421,7 +421,7 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 
 * **Max de Versies van het Aantal**, het maximumaantal versies om te houden
 
-Zie ](/help/sites-deploying/version-purging.md) het Opheffen van de Versie 0} {voor meer informatie.[
+Zie [&#128279;](/help/sites-deploying/version-purging.md) het Opheffen van de Versie 0&rbrace; &lbrace;voor meer informatie.
 
 **de Dienst van het Bericht van het E-mail van het Werkschema van de Dag CQ** vormt de e-mailmontages voor berichten die door een werkschema worden verzonden.
 

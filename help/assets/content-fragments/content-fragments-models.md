@@ -77,9 +77,9 @@ Het model van het inhoudsfragment bepaalt effectief de structuur van de resulter
 
         >[!CAUTION]
         >
-        Wanneer manueel het bijwerken van de naam van het bezit **** voor een gegevenstype, moeten de namen slechts a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+        >Wanneer manueel het bijwerken van de naam van het bezit **&#x200B;**&#x200B;voor een gegevenstype, moeten de namen slechts a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
         >
-        Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
+        >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
      Bijvoorbeeld:
 
@@ -108,9 +108,9 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
      >[!NOTE]
      >
-     Vanwege de prestaties is het niet raadzaam meer dan tien RTF-velden in één model op te nemen.
+     >Vanwege de prestaties is het niet raadzaam meer dan tien RTF-velden in één model op te nemen.
      >
-     Indien nodig, wordt het geadviseerd dat u [ genestelde Fragments van de Inhoud ](#fragment-reference-nested-fragments) gebruikt.
+     >Indien nodig, wordt het geadviseerd dat u [ genestelde Fragments van de Inhoud ](#fragment-reference-nested-fragments) gebruikt.
 
 * **Aantal**
    * Een of meer numerieke velden toevoegen
@@ -142,7 +142,7 @@ In de fragmenteditor wordt elke instantie weergegeven als een tab.
 
      >[!NOTE]
      >
-     Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het AEM GraphQL-schema.
+     >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het AEM GraphQL-schema.
 
 ## Eigenschappen {#properties}
 
@@ -151,11 +151,11 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **de Naam van het Bezit**
 
-  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **** *slechts* a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **&#x200B;**&#x200B;*slechts* a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
 
   >[!CAUTION]
   >
-  Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
+  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
 * **geeft terug als**
 De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hier kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken.
@@ -181,15 +181,15 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
-  Bijvoorbeeld, het 1} gebied van de a **Enige lijntekst {in het Model van het Fragment van de Inhoud kan niet de waarde `Japan` in twee afhankelijke Fragmenten van de Inhoud hebben.**`Country` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+  Bijvoorbeeld, het 1&rbrace; gebied van de a **Enige lijntekst &lbrace;in het Model van het Fragment van de Inhoud kan niet de waarde `Japan` in twee afhankelijke Fragmenten van de Inhoud hebben.**`Country` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
 
   >[!NOTE]
   >
-  Er wordt gezorgd voor uniformiteit per taalwortel.
+  >Er wordt gezorgd voor uniformiteit per taalwortel.
 
   >[!NOTE]
   >
-  De variaties kunnen de zelfde *unieke* waarde zoals variaties van het zelfde fragment hebben, maar niet de zelfde waarde zoals die in om het even welke variatie van andere fragmenten wordt gebruikt.
+  >De variaties kunnen de zelfde *unieke* waarde zoals variaties van het zelfde fragment hebben, maar niet de zelfde waarde zoals die in om het even welke variatie van andere fragmenten wordt gebruikt.
 
 * Zie **[Verwijzing van de Inhoud](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 
@@ -232,18 +232,18 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 
      >[!NOTE]
      >
-     Deze methode is van bijzonder belang met [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
+     >Deze methode is van bijzonder belang met [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
    * Het kan voor één verwijzing of veelvoudige verwijzingen (in het resulterende fragment) worden gevormd.
 
 >[!NOTE]
 >
-AEM heeft een terugkerende bescherming voor:
+>AEM heeft een terugkerende bescherming voor:
 >
-* Content References
-Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+>* Content References
+>Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
-* Fragmentverwijzingen in GraphQL
-Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze functie null bij de eerste instantie.
+>* Fragmentverwijzingen in GraphQL
+>Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze functie null bij de eerste instantie.
 
 ### Content Reference {#content-reference}
 
@@ -285,7 +285,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-Dit is van bijzonder belang met [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
+>Dit is van bijzonder belang met [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
@@ -311,9 +311,9 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
 >[!NOTE]
 >
-Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+>Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
-Er is ook een herhalingsbescherming voor fragmentverwijzingen in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, keert het ongeldig terug.
+>Er is ook een herhalingsbescherming voor fragmentverwijzingen in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, keert het ongeldig terug.
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 
@@ -362,7 +362,7 @@ Om inhoudsbeheer uit te voeren, kunt u **Beleid** op een omslag van Assets vorme
 
 >[!NOTE]
 >
-Het mechanisme is gelijkaardig aan [ toestaand paginasjablonen ](/help/sites-authoring/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
+>Het mechanisme is gelijkaardig aan [ toestaand paginasjablonen ](/help/sites-authoring/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
 
 Om het **Beleid** voor **toegelaten Modellen van het Fragment van de Inhoud te vormen**:
 
@@ -397,7 +397,7 @@ De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als v
 
 >[!CAUTION]
 >
-Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
+>Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
 
 Een inhoudsfragmentmodel verwijderen:
 
@@ -408,7 +408,7 @@ Een inhoudsfragmentmodel verwijderen:
 
    >[!NOTE]
    >
-   Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de nodige maatregelen uit.
+   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de nodige maatregelen uit.
 
 ## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
@@ -424,7 +424,7 @@ De gepubliceerde status wordt vermeld in de console.
 
    >[!NOTE]
    >
-   Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, geeft een selectielijst dit aan en wordt het model gepubliceerd met het fragment.
+   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, geeft een selectielijst dit aan en wordt het model gepubliceerd met het fragment.
 
 ## Publicatie van een inhoudsfragmentmodel ongedaan maken {#unpublishing-a-content-fragment-model}
 

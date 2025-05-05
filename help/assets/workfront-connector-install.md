@@ -30,7 +30,7 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] installeer
 >
 >* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Om de verbeterde schakelaarversie te controleren, navigeer aan de `digital.hoodoo` groep beschikbaar in de linkerruit in [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
->* Zie [ de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar ](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen ](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).[
+>* Zie [ de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar ](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen [&#128279;](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 Voer de volgende stappen uit om de aansluiting te installeren:
 
@@ -45,10 +45,11 @@ Voer de volgende stappen uit om de aansluiting te installeren:
    * `/apps/dam/cfm/models/editor/components/datatypeproperties`
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
-1. Installeer het pakket met [!UICONTROL Package Manager] . Om te weten hoe te om pakketten te installeren, zie {de documentatie van de Manager van het 0} Pakket ](/help/sites-administering/package-manager.md).[
+1. Installeer het pakket met [!UICONTROL Package Manager] . Om te weten hoe te om pakketten te installeren, zie {de documentatie van de Manager van het 0} Pakket [&#128279;](/help/sites-administering/package-manager.md).
 1. Maak `wf-workfront-users` in [!DNL Experience Manager] Gebruikersgroep en wijs de machtiging `jcr:all` toe aan `/content/dam` .
 1. Voeg een aangepaste eigenschap toe aan de waarde voor de index van het vak voor **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`** . Voer de volgende stappen uit:
    * Voeg een eigenschap **`nt:unstructured`** genaamd **`wfReferenceNumber`** toe aan:
+
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Wijzig de index van de `index /oak:index/ntFolderDamLucene` door de herindexmarkering om te draaien naar `true` .
 
@@ -75,4 +76,4 @@ Met Experience Manager Assets kunt u [!DNL Workfront for Experience Manager enha
 Ga als volgt te werk om [!DNL Workfront for Experience Manager enhanced connector] bij te werken naar de meest recente versie:
 
 1. Download de recentste versie van de verbeterde schakelaar van [[!DNL Software Distribution]  verbinding ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-1. Installeer het pakket met [!UICONTROL Package Manager] . Om te weten hoe te om pakketten te installeren, zie {de documentatie van de Manager van het 0} Pakket ](/help/sites-administering/package-manager.md).[
+1. Installeer het pakket met [!UICONTROL Package Manager] . Om te weten hoe te om pakketten te installeren, zie {de documentatie van de Manager van het 0} Pakket [&#128279;](/help/sites-administering/package-manager.md).

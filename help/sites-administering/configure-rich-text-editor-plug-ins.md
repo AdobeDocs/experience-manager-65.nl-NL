@@ -352,17 +352,17 @@ Schakel eerst de paraformat-plug-in in:
 
 >[!NOTE]
 >
-Als de plug-in niet verder is geconfigureerd, zijn de volgende standaardindelingen ingeschakeld:
+>Als de plug-in niet verder is geconfigureerd, zijn de volgende standaardindelingen ingeschakeld:
 >
-* Alinea ( `<p>`)
-* Kop 1 ( `<h1>`)
-* Kop 2 ( `<h2>`)
-* Kop 3 ( `<h3>`)
+>* Alinea ( `<p>`)
+>* Kop 1 ( `<h1>`)
+>* Kop 2 ( `<h2>`)
+>* Kop 3 ( `<h3>`)
 >
 
 >[!CAUTION]
 >
-Wanneer het vormen van het paragraafformaat van RTE, verwijder niet de paragraafmarkering &lt;p> als het formatteren optie. Als de `<p>` markering wordt verwijderd, dan kan de inhoudauteur niet de **Indelingen van de Paragraaf** optie selecteren zelfs als er extra gevormde formaten zijn.
+>Wanneer het vormen van het paragraafformaat van RTE, verwijder niet de paragraafmarkering &lt;p> als het formatteren optie. Als de `<p>` markering wordt verwijderd, dan kan de inhoudauteur niet de **Indelingen van de Paragraaf** optie selecteren zelfs als er extra gevormde formaten zijn.
 
 ### Beschikbare alineaopmaak opgeven {#paraformatsindropdown}
 
@@ -399,7 +399,7 @@ Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 
 >[!CAUTION]
 >
-Als u aangepaste indelingen definieert, worden de standaardindelingen ( `<p>` , `<h1>` , `<h2>` en `<h3>` ) verwijderd. Maak de `<p>` -indeling opnieuw omdat dit de standaardindeling is.
+>Als u aangepaste indelingen definieert, worden de standaardindelingen ( `<p>` , `<h1>` , `<h2>` en `<h3>` ) verwijderd. Maak de `<p>` -indeling opnieuw omdat dit de standaardindeling is.
 
 ## Speciale tekens configureren {#spchar}
 
@@ -409,7 +409,7 @@ U kunt RTE vormen om uw eigen selectie van karakters beschikbaar te maken; of do
 
 >[!CAUTION]
 >
-Als u uw eigen speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer deze tekens desgewenst in uw eigen selectie of definieer ze opnieuw.
+>Als u uw eigen speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer deze tekens desgewenst in uw eigen selectie of definieer ze opnieuw.
 
 ### Eén teken definiëren {#definesinglechar}
 
@@ -460,10 +460,12 @@ In CRXDE, zodra het bezit wordt bewaard, wordt het vertegenwoordigde karakter ge
 1. Voeg onder dit knooppunt (benoemd op basis van uw speciale tekenbereik) de volgende twee eigenschappen toe:
 
    * **Naam** `rangeStart`
+
      **Type** `Long`
      **Waarde** de [ vertegenwoordiging van Unicode ](https://unicode.org/) (decimaal) van het eerste karakter in de waaier
 
    * **Naam** `rangeEnd`
+
      **Type** `Long`
      **Waarde** de [ vertegenwoordiging van Unicode ](https://unicode.org/) (decimaal) van het laatste karakter in de waaier
 
@@ -483,11 +485,11 @@ Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook
 
 >[!NOTE]
 >
-U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
+>U kunt stijlen alleen definiëren voor tabellen en cellen voor klassieke gebruikersinterface.
 
 >[!NOTE]
 >
-Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
+>Het kopiëren en het kleven van lijsten in of van de component van RTE is browser-afhankelijk. De functie wordt niet in het vak ondersteund voor alle browsers. Afhankelijk van de tabelstructuur en de browser krijgt u mogelijk verschillende resultaten. Wanneer u bijvoorbeeld een tabel kopieert en plakt in een RTE-component in Mozilla Firefox in Classic UI en Touch UI, blijft de indeling van de tabel niet behouden.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/table` . Maak de knooppunten als deze niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
 1. Maak de eigenschap `features` op het knooppunt `table` :
@@ -498,13 +500,13 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
 
    >[!NOTE]
    >
-   Als u niet alle tabelfuncties wilt inschakelen, kunt u de eigenschap `features` maken als volgt:
+   >Als u niet alle tabelfuncties wilt inschakelen, kunt u de eigenschap `features` maken als volgt:
    >
-   * **Type** `String[]`
+   >* **Type** `String[]`
    >
-   * **Waarde** één, of allebei, van het volgende, zoals vereist:
-   * `table` om het bewerken van tabeleigenschappen mogelijk te maken, inclusief de stijlen.
-   * `cellprops` gebruiken om celeigenschappen, waaronder de stijlen, te kunnen bewerken.
+   >* **Waarde** één, of allebei, van het volgende, zoals vereist:
+   >* `table` om het bewerken van tabeleigenschappen mogelijk te maken, inclusief de stijlen.
+   >* `cellprops` gebruiken om celeigenschappen, waaronder de stijlen, te kunnen bewerken.
 
 1. Definieer de locatie van CSS-stijlpagina&#39;s zodat u deze kunt raadplegen. Zie [ het specificeren van de plaats van uw stijlblad ](#locationofstylesheet) aangezien dit het zelfde als wanneer het bepalen van [ stijlen voor tekst ](#textstyles) is. De locatie kan worden gedefinieerd als u andere stijlen hebt gedefinieerd.
 1. Maak onder het knooppunt `table` de volgende nieuwe knooppunten (naar wens):
@@ -566,7 +568,7 @@ Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE w
 
 >[!NOTE]
 >
-Het bericht `Spell checking failed` wordt weergegeven als wordt geprobeerd een taal te controleren die niet is geïnstalleerd. De standaardwoordenboeken staan op `/libs/cq/spellchecker/dictionaries`, samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
+>Het bericht `Spell checking failed` wordt weergegeven als wordt geprobeerd een taal te controleren die niet is geïnstalleerd. De standaardwoordenboeken staan op `/libs/cq/spellchecker/dictionaries`, samen met de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
 Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en_us`) en Brits Engels (`en_gb`). Voer de volgende stappen uit om meer woordenboeken toe te voegen.
 
@@ -581,16 +583,16 @@ Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en
 
    >[!CAUTION]
    >
-   Alleen woordenboeken in de `MySpell` -indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
+   >Alleen woordenboeken in de `MySpell` -indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
 
 1. Zoek de bestanden `.aff` en `.dic` . Bestandsnaam in kleine letters behouden. Bijvoorbeeld `de_de.aff` en `de_de.dic` .
 1. Laad de `.aff` - en `.dic` -bestanden in de opslagplaats op `/apps/cq/spellchecker/dictionaries` .
 
 >[!NOTE]
 >
-De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Klik op [!UICONTROL Spellchecker] op de werkbalk om de spellingcontrole uit te voeren. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
+>De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Klik op [!UICONTROL Spellchecker] op de werkbalk om de spellingcontrole uit te voeren. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
 >
-Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Klik nogmaals op de knop Spellingcontrole om de spellingcontrole uit te voeren.
+>Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Klik nogmaals op de knop Spellingcontrole om de spellingcontrole uit te voeren.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 
@@ -626,7 +628,7 @@ Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspri
 
 >[!NOTE]
 >
-Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst), maar heeft geen invloed op de inspringing van feitelijke lijsten.
+>Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst), maar heeft geen invloed op de inspringing van feitelijke lijsten.
 
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/lists` . Maak deze knooppunten als deze niet bestaan. Voor meer details, zie [ een elektrisch toestel ](#activateplugin) activeren.
 1. Maak in het knooppunt `lists` de parameter `indentSize` :
@@ -639,7 +641,7 @@ Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst),
 
 >[!NOTE]
 >
-Dit is alleen van toepassing wanneer u de RTE gebruikt in een dialoogvenster (niet tijdens het bewerken op locatie in een klassieke UI).
+>Dit is alleen van toepassing wanneer u de RTE gebruikt in een dialoogvenster (niet tijdens het bewerken op locatie in een klassieke UI).
 
 U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster van de component wordt weergegeven:
 
@@ -651,7 +653,7 @@ U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster 
 
    >[!NOTE]
    >
-   Hiermee wijzigt u de hoogte van het dialoogvenster niet.
+   >Hiermee wijzigt u de hoogte van het dialoogvenster niet.
 
 1. Sla de wijzigingen op.
 
@@ -672,13 +674,13 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
 
    >[!NOTE]
    >
-   Het knooppunt `../items/text` heeft de eigenschap:
+   >Het knooppunt `../items/text` heeft de eigenschap:
    >
-   * **Naam** `xtype`
-   * **Type** `String`
-   * **Waarde** `richtext`
+   >* **Naam** `xtype`
+   >* **Type** `String`
+   >* **Waarde** `richtext`
    >
-   De locatie van het knooppunt `../items/text` kan variëren, afhankelijk van de structuur van het dialoogvenster. Twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text` .
+   >De locatie van het knooppunt `../items/text` kan variëren, afhankelijk van de structuur van het dialoogvenster. Twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text` .
 
 1. Maak onder `htmlRules` een knooppunt.
 

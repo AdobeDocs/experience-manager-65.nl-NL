@@ -210,11 +210,11 @@ Als u Dynamic Media wilt inschakelen, moet u de Dynamic Media-uitvoeringsmodus i
    >
    >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analytische gegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
    >
-   Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2020-07-25.log`
+   >Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2020-07-25.log`
    >
-   * s7access-&lt;yyyy>&lt;dd>.log - Het s7access-logboek registreert elke aanvraag die aan Dynamic Media is gedaan via `/is/image` en `/is/content`.
+   >* s7access-&lt;yyyy>&lt;dd>.log - Het s7access-logboek registreert elke aanvraag die aan Dynamic Media is gedaan via `/is/image` en `/is/content`.
    >
-   Deze logboeken worden alleen gebruikt als Dynamic Media is ingeschakeld. Zij zijn niet inbegrepen in het **Volledige** pakket van de Download dat van de `system/console/status-Bundlelist` pagina wordt geproduceerd; wanneer het roepen van de Steun van de Klant als u een kwestie van Dynamic Media hebt, voeg beide logboeken aan de kwestie toe.
+   >Deze logboeken worden alleen gebruikt als Dynamic Media is ingeschakeld. Zij zijn niet inbegrepen in het **Volledige** pakket van de Download dat van de `system/console/status-Bundlelist` pagina wordt geproduceerd; wanneer het roepen van de Steun van de Klant als u een kwestie van Dynamic Media hebt, voeg beide logboeken aan de kwestie toe.
 
 ### Als u Experience Manager op een andere haven of een contextweg installeerde... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -229,11 +229,11 @@ In Experience Manager:
 * Het **zelf-domein** in [ ExternalAlizer ](/help/sites-developing/externalizer.md) wordt gebruikt om zowel het havenaantal als contextweg terug te winnen.
 * Als geen **zelf-domein** wordt gevormd, worden het havenaantal en de contextweg teruggewonnen van de dienst van HTTP van Jetty.
 
-In een plaatsing van de OORLOG van Experience Manager QuickStart, kunnen het havenaantal en de contextweg niet worden afgeleid, daarom moet u a **zelf-domein** vormen. Zie {de documentatie van 0} ExternalAlizer ](/help/sites-developing/externalizer.md) op hoe te om **zelf-domein** te vormen.[
+In een plaatsing van de OORLOG van Experience Manager QuickStart, kunnen het havenaantal en de contextweg niet worden afgeleid, daarom moet u a **zelf-domein** vormen. Zie {de documentatie van 0} ExternalAlizer [&#128279;](/help/sites-developing/externalizer.md) op hoe te om **zelf-domein** te vormen.
 
 >[!NOTE]
 >
-In een [ Experience Manager QuickStart stand-alone plaatsing ](/help/sites-deploying/deploy.md), a **zelf-domein** moet over het algemeen niet worden gevormd omdat het havenaantal en de contextweg auto-gevormd kunnen zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **zelf-domein** vormen.
+>In een [ Experience Manager QuickStart stand-alone plaatsing ](/help/sites-deploying/deploy.md), a **zelf-domein** moet over het algemeen niet worden gevormd omdat het havenaantal en de contextweg auto-gevormd kunnen zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **zelf-domein** vormen.
 
 ## Dynamic Media uitschakelen  {#disabling-dynamic-media}
 
@@ -255,9 +255,9 @@ Als u Dynamic Media wilt uitschakelen nadat u deze hebt ingeschakeld, verwijdert
 
    >[!NOTE]
    >
-   Nadat de Dynamic Media-uitvoeringsmodus is uitgeschakeld, wordt de workflowstap die de `cqdam.pyramid.tiff` -uitvoering genereert, automatisch overgeslagen. De functie schakelt ook ondersteuning voor dynamische uitvoeringen en andere Dynamic Media-functies uit.
+   >Nadat de Dynamic Media-uitvoeringsmodus is uitgeschakeld, wordt de workflowstap die de `cqdam.pyramid.tiff` -uitvoering genereert, automatisch overgeslagen. De functie schakelt ook ondersteuning voor dynamische uitvoeringen en andere Dynamic Media-functies uit.
    >
-   Houd er ook rekening mee dat wanneer de Dynamic Media-uitvoeringsmodus wordt uitgeschakeld nadat de Experience Manager-server is geconfigureerd, alle middelen die in die uitvoeringsmodus zijn geüpload, nu ongeldig zijn.
+   >Houd er ook rekening mee dat wanneer de Dynamic Media-uitvoeringsmodus wordt uitgeschakeld nadat de Experience Manager-server is geconfigureerd, alle middelen die in die uitvoeringsmodus zijn geüpload, nu ongeldig zijn.
 
 ## (Optioneel) Dynamic Media-voorinstellingen en -configuraties migreren van 6,3 naar 6,5 Nul downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -265,7 +265,7 @@ Als u Experience Manager - Dynamic Media van 6.3 aan 6.5 bevordert (die nu de ca
 
 >[!NOTE]
 >
-Als u de Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
+>Als u de Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
 
 Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de standaard, out-of-box viewer vooraf instelt kopiëren die oorspronkelijk met Dynamic Media door het volgende Linux® krullbevel in werking te stellen kwam:
 
@@ -290,13 +290,13 @@ Nadat u de replicatieagent hebt gevormd, moet u [ bevestigen en testen dat het m
 
 >[!NOTE]
 >
-De standaardgeheugenlimiet voor het maken van PTIFF is 3 GB voor alle workflows. U kunt bijvoorbeeld één afbeelding verwerken die 3 GB geheugen vereist terwijl andere workflows worden gepauzeerd, of u kunt 10 afbeeldingen parallel verwerken die elk 300 MB geheugen vereisen.
+>De standaardgeheugenlimiet voor het maken van PTIFF is 3 GB voor alle workflows. U kunt bijvoorbeeld één afbeelding verwerken die 3 GB geheugen vereist terwijl andere workflows worden gepauzeerd, of u kunt 10 afbeeldingen parallel verwerken die elk 300 MB geheugen vereisen.
 >
-De geheugenlimiet is configureerbaar en past bij de beschikbaarheid van systeembronnen en het type afbeeldingsinhoud dat wordt verwerkt. Als u vele grote activa hebt en genoeg geheugen op het systeem hebt, kunt u deze grens verhogen om ervoor te zorgen dat de beelden parallel worden verwerkt.
+>De geheugenlimiet is configureerbaar en past bij de beschikbaarheid van systeembronnen en het type afbeeldingsinhoud dat wordt verwerkt. Als u vele grote activa hebt en genoeg geheugen op het systeem hebt, kunt u deze grens verhogen om ervoor te zorgen dat de beelden parallel worden verwerkt.
 >
-Een afbeelding waarvoor meer dan de maximale geheugenlimiet nodig is, wordt afgewezen.
+>Een afbeelding waarvoor meer dan de maximale geheugenlimiet nodig is, wordt afgewezen.
 >
-Als u de geheugenlimiet voor het maken van PTIFF wilt wijzigen, navigeert u naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** en wijzigt u de waarde **[!UICONTROL maxMemory]** .
+>Als u de geheugenlimiet voor het maken van PTIFF wilt wijzigen, navigeert u naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** en wijzigt u de waarde **[!UICONTROL maxMemory]** .
 
 ### Verificatie instellen {#setting-up-authentication}
 
@@ -320,7 +320,7 @@ Stel replicatieverificatie in bij de auteur, zodat u afbeeldingen kunt replicere
 
    >[!NOTE]
    >
-   Herinner het wachtwoord omdat u het moet opnieuw ingaan wanneer u de Agent van de Replicatie later vormt.
+   >Herinner het wachtwoord omdat u het moet opnieuw ingaan wanneer u de Agent van de Replicatie later vormt.
 
    ![ chlimage_1-508 ](assets/chlimage_1-508.png)
 
@@ -379,10 +379,10 @@ Replication test succeeded
 
 >[!NOTE]
 >
-U kunt ook op een van de volgende manieren controleren:
+>U kunt ook op een van de volgende manieren controleren:
 >
-* Controleer de replicatielogboeken om ervoor te zorgen dat het middel wordt herhaald.
-* Publish an image. Selecteer de afbeelding en selecteer **[!UICONTROL Viewers]** in het keuzemenu en selecteer vervolgens een voorinstelling voor de viewer. Selecteer **[!UICONTROL URL]**. Kopieer en plak het URL-pad in de browser om te controleren of de afbeelding zichtbaar is.
+>* Controleer de replicatielogboeken om ervoor te zorgen dat het middel wordt herhaald.
+>* Publish an image. Selecteer de afbeelding en selecteer **[!UICONTROL Viewers]** in het keuzemenu en selecteer vervolgens een voorinstelling voor de viewer. Selecteer **[!UICONTROL URL]**. Kopieer en plak het URL-pad in de browser om te controleren of de afbeelding zichtbaar is.
 >
 
 ### Verificatie problemen oplossen {#troubleshooting-authentication}
@@ -545,7 +545,7 @@ Als onderdeel van de configuratie moet u een registratie-id, een URL voor de vid
 
 >[!NOTE]
 >
-Voordat u Dynamic Media-Cloud Servicen instelt, moet u eerst uw publicatieexemplaar hebben ingesteld. U moet ook replicatie hebben opstelling alvorens de Cloud Servicen van Dynamic Media te vormen.
+>Voordat u Dynamic Media-Cloud Servicen instelt, moet u eerst uw publicatieexemplaar hebben ingesteld. U moet ook replicatie hebben opstelling alvorens de Cloud Servicen van Dynamic Media te vormen.
 
 **om de Cloud Servicen van Dynamic Media te vormen:**
 
@@ -686,7 +686,7 @@ Zie [ de kijker van Publish stelt ](/help/assets/managing-viewer-presets.md#publ
 
 >[!NOTE]
 >
-Standaard geeft het systeem verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert en verschillende voorinstellingen voor viewers wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal dat u ziet verhogen of verlagen. Zie [ verhogen het aantal beeld vooraf instelt die ](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) worden getoond of [ verhoogt het aantal kijker vooraf instelt die ](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display) worden getoond.
+>Standaard geeft het systeem verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert en verschillende voorinstellingen voor viewers wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal dat u ziet verhogen of verlagen. Zie [ verhogen het aantal beeld vooraf instelt die ](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) worden getoond of [ verhoogt het aantal kijker vooraf instelt die ](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display) worden getoond.
 
 ## Elementen filteren voor replicatie {#filtering-assets-for-replication}
 
@@ -749,7 +749,7 @@ Als u Dynamic Media voor (1) beeld in productie *of* (2) beeld en video gebruikt
 
 >[!NOTE]
 >
-Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie hebben.
+>Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie hebben.
 
 ### Elementfilters instellen voor alleen-video-implementaties {#setting-up-asset-filters-for-video-only-deployments}
 
@@ -791,9 +791,9 @@ Deze stappen plaatsen opstelling de Experience Manager publiceer instantie om de
 
 >[!NOTE]
 >
-Als er vele verschillende filters in een auteur zijn, heeft elke agent een verschillende gebruiker nodig die aan het wordt toegewezen. De granietcode dwingt het model van één filter per gebruiker af. Zorg altijd voor een andere gebruiker voor elke filterinstelling.
+>Als er vele verschillende filters in een auteur zijn, heeft elke agent een verschillende gebruiker nodig die aan het wordt toegewezen. De granietcode dwingt het model van één filter per gebruiker af. Zorg altijd voor een andere gebruiker voor elke filterinstelling.
 >
-Gebruikt u meer dan één filter op een server? Bijvoorbeeld, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery. Als zo, dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in de `jcr:content` knoop wordt toegewezen. Zie de volgende afbeelding:
+>Gebruikt u meer dan één filter op een server? Bijvoorbeeld, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery. Als zo, dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in de `jcr:content` knoop wordt toegewezen. Zie de volgende afbeelding:
 
 ![ beeld-2018-01-16-10-26-28-465 ](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -844,7 +844,7 @@ Als u de Dynamic Media Image Server configureert, moet u de Adobe CQ Scene7 Imag
 
 >[!NOTE]
 >
-Dynamic Media werkt uit-van-de-doos [ nadat het ](#enabling-dynamic-media) wordt toegelaten. U kunt echter desgewenst de installatie verfijnen door Dynamic Media Image Server te configureren om aan bepaalde specificaties of vereisten te voldoen.
+>Dynamic Media werkt uit-van-de-doos [ nadat het ](#enabling-dynamic-media) wordt toegelaten. U kunt echter desgewenst de installatie verfijnen door Dynamic Media Image Server te configureren om aan bepaalde specificaties of vereisten te voldoen.
 
 **Vereiste** - *vóór* u de Server van het Beeld van Dynamic Media vormt, zorg ervoor dat uw VM van Windows® een installatie van de Visuele C++ Bibliotheken Microsoft® omvat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [ Microsoft® Visuele C++ 2010 Redistributable Pakket (x64) hier downloaden ](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
@@ -863,7 +863,7 @@ Dynamic Media Image Server-instellingen configureren:
 
    >[!NOTE]
    >
-   Gewoonlijk hoeven de standaardwaarden niet te worden gewijzigd. Als u de standaardwaarden echter wijzigt, moet u de bundel opnieuw starten voordat de wijzigingen van kracht worden.
+   >Gewoonlijk hoeven de standaardwaarden niet te worden gewijzigd. Als u de standaardwaarden echter wijzigt, moet u de bundel opnieuw starten voordat de wijzigingen van kracht worden.
 
    | Eigenschap | Standaardwaarde | Beschrijving |
    | --- | --- | --- |
@@ -880,7 +880,7 @@ Dynamic Media Image Server-instellingen configureren:
 
    >[!NOTE]
    >
-   Dynamic Media Image Server gebruikt een eigen schijfcache om reacties in de cache op te slaan. De Experience Manager HTTP-cache en de Dispatcher kunnen niet worden gebruikt om reacties van Dynamic Media Image Server in cache te plaatsen.
+   >Dynamic Media Image Server gebruikt een eigen schijfcache om reacties in de cache op te slaan. De Experience Manager HTTP-cache en de Dispatcher kunnen niet worden gebruikt om reacties van Dynamic Media Image Server in cache te plaatsen.
 
    | Eigenschap | Standaardwaarde | Beschrijving |
    |---|---|---|
@@ -939,7 +939,7 @@ Gevallen voor geavanceerd gebruik kunnen de optie `icc=` handmatig configureren 
 
 >[!NOTE]
 >
-De standaardreeks van de kleurenprofielen van de Adobe is slechts beschikbaar als u [ Pak 12445 van de Eigenschap van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) geïnstalleerd hebt. Alle eigenschapspakken en de dienstpakken zijn beschikbaar bij [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 biedt kleurprofielen van de Adobe.
+>De standaardreeks van de kleurenprofielen van de Adobe is slechts beschikbaar als u [ Pak 12445 van de Eigenschap van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) geïnstalleerd hebt. Alle eigenschapspakken en de dienstpakken zijn beschikbaar bij [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 biedt kleurprofielen van de Adobe.
 
 
 ### Functiepakket 12445 installeren {#installing-feature-pack}
@@ -1041,7 +1041,7 @@ Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaar
 
 >[!NOTE]
 >
-Namen van eigenschappen zijn hoofdlettergevoelig en moeten allemaal kleine letters zijn.
+>Namen van eigenschappen zijn hoofdlettergevoelig en moeten allemaal kleine letters zijn.
 
 **Lijst van het Profiel van de Kleur**
 
@@ -1252,23 +1252,23 @@ Zie [ leverend Dynamic Media Assets ](/help/assets/delivering-dynamic-media-asse
   <tr>
    <td>Insluitcode van een viewer kopiëren</td>
    <td><p>In het dialoogvenster Code insluiten kopiëren wordt een codefragment weergegeven dat lijkt op het volgende (codevoorbeeld is alleen bedoeld voor demonstratiedoeleinden):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       #s7basiczoom_div.s7basiczoomviewer{
+       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
        width:100%;
        height:auto;
-       }
+       &rbrace;
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
        "containerId" : "s7basiczoom_div",
-       "params" : {
+       "params" : &lbrace;
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" }
-       }).init();
+       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
+       &rbrace;).init();
        &lt;/script&gt;</code></p> <p>Waar <code>PUBLISHNODE</code> verwijst naar het publicatieknooppunt van de gewone Experience Manager en <code>IMAGESERVICEPUBLISHNODE</code> naar de URL van de afbeeldingsservice.</p> <p>Zie ook <a href="/help/assets/delivering-dynamic-media-assets.md"> leverend Dynamic Media Assets </a>.</p> </td>
   </tr>
  </tbody>

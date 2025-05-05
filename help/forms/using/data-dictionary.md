@@ -63,7 +63,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 
 1. (Facultatief) om een XSD schemadefinitie voor uw gegevenswoordenboek, onder de ruit van de Structuur van het Woordenboek van Gegevens te uploaden, uitgezochte **upload het Schema van XML**. Blader naar XSD dossier, selecteer het, en selecteer **Open**. Er wordt een gegevenswoordenboek gemaakt op basis van het geüploade XML-schema. U moet de weergavenamen en beschrijvingen van de elementen in het gegevenswoordenboek aanpassen. U doet dit door de namen van de elementen te selecteren door erop te tikken en de beschrijvingen, weergavenamen en andere details in de velden in het rechterdeelvenster te bewerken.
 
-   Voor meer informatie over Berekende Elementen DD, zie {de Elementen van het Woordenboek van Gegevens 0} Berekende ](#computedddelements).[
+   Voor meer informatie over Berekende Elementen DD, zie {de Elementen van het Woordenboek van Gegevens 0} Berekende [&#128279;](#computedddelements).
 
    >[!NOTE]
    >
@@ -90,9 +90,9 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    * Een bovenliggende DDE (composiet) kan geen twee onderliggende elementen met dezelfde naam hebben.
    * Cijfers bevatten alleen primitieve tekenreekstypen.
 
-   Voor meer informatie over Samengesteld, Inzameling, en Primitieve elementen en het werken met de elementen van het gegevenswoordenboek, zie {de Elementen van het Woordenboek van 0} het Toewijzen van Gegevens aan het Schema van XML ](#mappingddetoschema).[
+   Voor meer informatie over Samengesteld, Inzameling, en Primitieve elementen en het werken met de elementen van het gegevenswoordenboek, zie {de Elementen van het Woordenboek van 0} het Toewijzen van Gegevens aan het Schema van XML [&#128279;](#mappingddetoschema).
 
-   Voor informatie over bevestigingen in het Woordenboek van Gegevens, zie {de bevestigingen van de Redacteur van het Woordenboek van 0} Gegevens ](#ddvalidations).[
+   Voor informatie over bevestigingen in het Woordenboek van Gegevens, zie {de bevestigingen van de Redacteur van het Woordenboek van 0} Gegevens [&#128279;](#ddvalidations).
 
    ![ 2_addddpropertiesbasic ](assets/2_addddpropertiesbasic.png)
 

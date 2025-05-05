@@ -146,7 +146,7 @@ Wanneer bestanden in de controlemap worden neergezet, worden de bestanden in de 
 
 **wacht Tijd:** de tijd, in milliseconden, om te wachten alvorens u een omslag of een dossier aftasten nadat het wordt gecreeerd. Als de wachttijd bijvoorbeeld 3.600.000 milliseconden (een uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepikt nadat 59 minuten zijn verstreken. De standaardwaarde is 0.
 
-Deze instelling is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&amp;ast;60 &amp;ast;1000 milliseconden. Zo voorkomt u dat de gecontroleerde map het bestand scant als het nog geen tien minuten oud is.
+Deze instelling is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&ast;60 &ast;1000 milliseconden. Zo voorkomt u dat de gecontroleerde map het bestand scant als het nog geen tien minuten oud is.
 
 **sluit het Patroon van het Dossier uit:** een puntkomma **;** afgebakende lijst van patronen die een gelete op omslag gebruikt om te bepalen welke dossiers en omslagen om af te tasten en op te nemen. Bestanden of mappen met dit patroon worden niet gescand voor verwerking.
 
@@ -154,29 +154,29 @@ Deze instelling is handig wanneer de invoer een map met meerdere bestanden is. D
 
 U kunt bestandspatronen gebruiken om uit te sluiten:
 
-* Bestanden met specifieke bestandsextensies, bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Bestanden met specifieke namen, bijvoorbeeld gegevens.&amp;ast; zou dossiers en omslagen genoemd *data1*, *data2* uitsluiten, etc.
+* Bestanden met specifieke bestandsextensies, bijvoorbeeld &ast;.dat, &ast;.xml, &ast;.pdf.
+* Bestanden met specifieke namen, bijvoorbeeld gegevens.&ast; zou dossiers en omslagen genoemd *data1*, *data2* uitsluiten, etc.
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens [0-9] [ 0-9 ][0-9].[ dD ][aA] &quot;haven&quot;
-   * &amp;ast;.[ dD ][Aa] &quot;haven&quot;
-   * &amp;ast;.[xx] [ MM ][Ll]
+   * &ast;.[ dD ][Aa] &quot;haven&quot;
+   * &ast;.[xx] [ MM ][Ll]
 
 Voor meer informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**omvat het Patroon van het Dossier:** (Verplicht) een puntkomma **;** afgebakende lijst van patronen die de gecontroleerde omslag gebruikt om te bepalen welke omslagen en dossiers om af te tasten en op te nemen. Als het Include-bestandspatroon bijvoorbeeld input&amp;amp is;ast; worden alle bestanden en mappen opgehaald die overeenkomen met de invoer&amp;ast;. Dit omvat bestanden en mappen met de naam input1, input2, enzovoort.
+**omvat het Patroon van het Dossier:** (Verplicht) een puntkomma **;** afgebakende lijst van patronen die de gecontroleerde omslag gebruikt om te bepalen welke omslagen en dossiers om af te tasten en op te nemen. Als het Include-bestandspatroon bijvoorbeeld input&amp;amp is;ast; worden alle bestanden en mappen opgehaald die overeenkomen met de invoer&ast;. Dit omvat bestanden en mappen met de naam input1, input2, enzovoort.
 
 De standaardwaarde is &amp;ast en geeft alle bestanden en mappen aan.
 
 U kunt bestandspatronen gebruiken om het volgende op te nemen:
 
-* Bestanden met specifieke bestandsextensies, bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Bestanden met specifieke namen, bijvoorbeeld gegevens.&amp;ast; zou dossiers en omslagen genoemd *data1* omvatten, *data2*, etc.
+* Bestanden met specifieke bestandsextensies, bijvoorbeeld &ast;.dat, &ast;.xml, &ast;.pdf.
+* Bestanden met specifieke namen, bijvoorbeeld gegevens.&ast; zou dossiers en omslagen genoemd *data1* omvatten, *data2*, etc.
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens [0-9] [ 0-9 ][0-9].[ dD ][aA] &quot;haven&quot;
-   * &amp;ast;.[ dD ][Aa] &quot;haven&quot;
-   * &amp;ast;.[xx] [ MM ][Ll]
+   * &ast;.[ dD ][Aa] &quot;haven&quot;
+   * &ast;.[xx] [ MM ][Ll]
 
 Voor meer informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -228,7 +228,7 @@ De waarde -1 dagen geeft aan dat u de resultatenmap nooit wilt verwijderen. De s
 
 **Letterlijk:** de gecontroleerde omslag gebruikt de waarde ingegaan op het gebied aangezien het wordt getoond. Alle basistypen van Java worden ondersteund. Als een API bijvoorbeeld invoer gebruikt zoals String, long, int en Boolean, wordt de tekenreeks omgezet in het juiste type en wordt de service aangeroepen.
 
-**Variabele:** de ingegane waarde is een dossierpatroon dat de gecontroleerde omslag gebruikt om de input te kiezen. Als er bijvoorbeeld de coderingswachtwoordservice is, waarbij het invoerdocument een PDF-bestand moet zijn, kan de gebruiker &amp;ast;.pdf gebruiken als bestandspatroon. De gecontroleerde map pakt alle bestanden in de gecontroleerde map op die overeenkomen met dit patroon en roept de service voor elk bestand aan. Wanneer een variabele wordt gebruikt, worden alle invoerbestanden geconverteerd naar documenten. Alleen API&#39;s die Document als invoertype gebruiken, worden ondersteund.
+**Variabele:** de ingegane waarde is een dossierpatroon dat de gecontroleerde omslag gebruikt om de input te kiezen. Als er bijvoorbeeld de coderingswachtwoordservice is, waarbij het invoerdocument een PDF-bestand moet zijn, kan de gebruiker &ast;.pdf gebruiken als bestandspatroon. De gecontroleerde map pakt alle bestanden in de gecontroleerde map op die overeenkomen met dit patroon en roept de service voor elk bestand aan. Wanneer een variabele wordt gebruikt, worden alle invoerbestanden geconverteerd naar documenten. Alleen API&#39;s die Document als invoertype gebruiken, worden ondersteund.
 
 **Toewijzingen van de Parameter van de Output:** Gebruikt om de output van de dienst en de verrichting te vormen. Welke instellingen beschikbaar zijn, is afhankelijk van de service die het gecontroleerde mapeindpunt gebruikt.
 
@@ -242,13 +242,13 @@ De gecontroleerde output van de Omslag kan één enkel document, een lijst van d
 
 Beheerders kunnen het type bestand opgeven dat een service kan aanroepen. Voor elke gecontroleerde map kunnen meerdere bestandspatronen worden ingesteld. Een bestandspatroon kan een van de volgende bestandseigenschappen zijn:
 
-* Bestanden met specifieke bestandsextensies. Bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* Bestanden met specifieke namen. Bijvoorbeeld gegevens.&amp;ast;
+* Bestanden met specifieke bestandsextensies. Bijvoorbeeld &ast;.dat, &ast;.xml, &ast;.pdf
+* Bestanden met specifieke namen. Bijvoorbeeld gegevens.&ast;
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens [0-9] [ 0-9 ][0-9].[ dD ][aA] &quot;haven&quot;
-   * &amp;ast;.[ dD ][Aa] &quot;haven&quot;
-   * &amp;ast;.[xx] [ MM ][Ll]
+   * &ast;.[ dD ][Aa] &quot;haven&quot;
+   * &ast;.[xx] [ MM ][Ll]
 
 De beheerder kan het bestandspatroon van de uitvoermap definiëren waarin de resultaten worden opgeslagen. Voor de uitvoermappen (resultaat, behoud en fout) kan de beheerder een van de volgende bestandspatronen opgeven:
 
@@ -374,11 +374,11 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
 * Als u een gecontroleerde omslag op Vensters hebt die beelddossiers verwerkt, specificeer waarden voor de Include optie van het Patroon van het Dossier of van de Uitsluiting van het Patroon van het Dossier om de Vensters auto-geproduceerde Thumbs.db- dossier te verhinderen door de gecontroleerde omslag worden gepolled.
 * Wanneer een uitsnijdexpressie wordt opgegeven, wordt het herhalingsinterval genegeerd. Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 * De batch-grootte is het aantal bestanden of mappen dat wordt opgehaald in elke scan van de gecontroleerde map. Als de batchgrootte is ingesteld op twee en tien bestanden of mappen die in de controlemap worden neergezet, worden er slechts twee opgehaald in elke scan. In de volgende scan, die zal plaatsvinden na de tijd die is opgegeven in het herhalingsinterval, worden de volgende twee bestanden opgehaald.
-* Voor bestandspatronen kunnen beheerders reguliere expressies opgeven met extra ondersteuning voor jokertekenpatronen om bestandspatronen op te geven. Gecontroleerde map wijzigt de reguliere expressie ter ondersteuning van jokertekenpatronen zoals &amp;ast;.&amp;ast; of &amp;ast;.pdf. Deze jokertekenpatronen worden niet ondersteund door de reguliere expressies.
+* Voor bestandspatronen kunnen beheerders reguliere expressies opgeven met extra ondersteuning voor jokertekenpatronen om bestandspatronen op te geven. Gecontroleerde map wijzigt de reguliere expressie ter ondersteuning van jokertekenpatronen zoals &ast;.&ast; of &ast;.pdf. Deze jokertekenpatronen worden niet ondersteund door de reguliere expressies.
 * Gecontroleerde map scant de invoermap op de invoer en weet niet of het bronbestand of de bronmap volledig naar de invoermap is gekopieerd voordat het bestand of de map wordt verwerkt. Ga als volgt te werk om ervoor te zorgen dat het bronbestand of de bronmap volledig naar de invoermap van de gecontroleerde map wordt gekopieerd voordat het bestand of de map wordt opgepakt:
 
-   * De Wacht van het gebruik, die de tijd in milliseconden is die de Gecontroleerde Omslag van de laatste gewijzigde tijd wacht. Gebruik deze functie als u grote bestanden wilt verwerken. Als het downloaden van een bestand bijvoorbeeld 10 minuten duurt, geeft u de wachttijd op als 10&amp;ast;60 &amp;ast;1000 milliseconden. Hierdoor wordt voorkomen dat gecontroleerde map het bestand ophaalt als het niet zo oud is als 10 minuten.
-   * Gebruik bestandspatroon uitsluiten en bestandspatroon opnemen. Als het bestandspatroon voor uitsluiten bijvoorbeeld `ex*` is en het bestandspatroon voor opnemen `in*` is, worden met Gecontroleerde map de bestanden opgehaald die beginnen met &#39;in&#39; en worden de bestanden die beginnen met &#39;ex&#39; niet opgepakt. Als u grote bestanden of mappen wilt kopiëren, wijzigt u eerst de naam van het bestand of de map, zodat de naam begint met &quot;ex&quot;. Nadat het bestand of de map met de naam &quot;ex&quot; volledig naar de gecontroleerde map is gekopieerd, wijzigt u de naam in &quot;in&amp;ast;&quot;.
+   * De Wacht van het gebruik, die de tijd in milliseconden is die de Gecontroleerde Omslag van de laatste gewijzigde tijd wacht. Gebruik deze functie als u grote bestanden wilt verwerken. Als het downloaden van een bestand bijvoorbeeld 10 minuten duurt, geeft u de wachttijd op als 10&ast;60 &ast;1000 milliseconden. Hierdoor wordt voorkomen dat gecontroleerde map het bestand ophaalt als het niet zo oud is als 10 minuten.
+   * Gebruik bestandspatroon uitsluiten en bestandspatroon opnemen. Als het bestandspatroon voor uitsluiten bijvoorbeeld `ex*` is en het bestandspatroon voor opnemen `in*` is, worden met Gecontroleerde map de bestanden opgehaald die beginnen met &#39;in&#39; en worden de bestanden die beginnen met &#39;ex&#39; niet opgepakt. Als u grote bestanden of mappen wilt kopiëren, wijzigt u eerst de naam van het bestand of de map, zodat de naam begint met &quot;ex&quot;. Nadat het bestand of de map met de naam &quot;ex&quot; volledig naar de gecontroleerde map is gekopieerd, wijzigt u de naam in &quot;in&ast;&quot;.
 
 * Gebruik de purgeduur om de resultatenmap schoon te houden. Met Gecontroleerde map worden alle bestanden gewist die ouder zijn dan de duur die in de purgeduur is vermeld. De duur is in dagen.
 * Wanneer u een eindpunt van een gecontroleerde map toevoegt, wordt na het selecteren van de naam van de bewerking de invoerparametertoewijzing gevuld. Voor elke invoer van de bewerking wordt één toewijzingsveld voor de invoerparameter gegenereerd. Hier volgen voorbeelden van invoerparametertoewijzingen:
@@ -397,7 +397,7 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
 
    * Workaround 1
 
-      1. Geef een patroon op voor Bestandspatroon uitsluiten, zoals tijdelijk&amp;ast;.ps.
+      1. Geef een patroon op voor Bestandspatroon uitsluiten, zoals tijdelijk&ast;.ps.
       1. Kopieer bestanden die beginnen met temp (bijvoorbeeld temp1.ps) naar de gecontroleerde map.
       1. Nadat het bestand volledig naar de gecontroleerde map is gekopieerd, wijzigt u de naam van het bestand in overeenstemming met het patroon dat is opgegeven voor Inclusief bestandspatroon. Controlemap verplaatst het voltooide bestand vervolgens naar het werkgebied.
 

@@ -58,7 +58,7 @@ Duw de bedekte commentaarcomponent aan de publicatieinstantie gebruikend het Hul
 
 >[!NOTE]
 >
->Een robuustere vorm van replicatie zou een pakket in de Manager van het Pakket moeten tot stand brengen en [ ](/help/sites-administering/package-manager.md#replicating-packages) het activeren. Een pakket kan worden geëxporteerd en gearchiveerd.
+>Een robuustere vorm van replicatie zou een pakket in de Manager van het Pakket moeten tot stand brengen en [&#128279;](/help/sites-administering/package-manager.md#replicating-packages) het activeren. Een pakket kan worden geëxporteerd en gearchiveerd.
 
 Selecteer in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** en klik op **[!UICONTROL Activate Tree]** .
 

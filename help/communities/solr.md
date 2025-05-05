@@ -24,7 +24,7 @@ Een [ installatie van Apache Solr ](https://solr.apache.org/) kan tussen de [ kn
 
 Als zowel de Oak als SRP inzamelingen intensief worden gebruikt, kan tweede Solr om prestatiesredenen worden geïnstalleerd.
 
-Voor productiemilieu&#39;s, ](#solrcloud-mode) de wijze van SolrCloud [ verstrekt betere prestaties over standalone wijze (enige, lokale opstelling Solr).
+Voor productiemilieu&#39;s, [&#128279;](#solrcloud-mode) de wijze van SolrCloud  verstrekt betere prestaties over standalone wijze (enige, lokale opstelling Solr).
 
 ### Vereisten {#requirements}
 
@@ -46,7 +46,7 @@ Download en installeer Apache Solr:
 
 ## SolrCloud-modus {#solrcloud-mode}
 
-](https://solr.apache.org/guide/6_6/solrcloud.html) de wijze van 0} SolrCloud {wordt geadviseerd voor productiemilieu&#39;s. [ Wanneer de SolrCloud-modus actief is, moet SolrCloud worden geïnstalleerd en geconfigureerd voordat u MLS (Multilingual Search) kunt installeren.
+[&#128279;](https://solr.apache.org/guide/6_6/solrcloud.html) de wijze van 0&rbrace; SolrCloud &lbrace;wordt geadviseerd voor productiemilieu&#39;s.  Wanneer de SolrCloud-modus actief is, moet SolrCloud worden geïnstalleerd en geconfigureerd voordat u MLS (Multilingual Search) kunt installeren.
 
 U wordt aangeraden de installatie-instructies voor SolrCloud op te volgen:
 
@@ -85,11 +85,11 @@ Referentie:
 
 Gebruik:
 ./bin/solr create \
-- c *mijnverzameling-naam*\
+&#x200B;- c *mijnverzameling-naam*\
 -d *config-dir* \
 -n *myconfig-name* \
-- p *haven*\
-- s *aantal-van-schepen* \
+&#x200B;- p *haven*\
+&#x200B;- s *aantal-van-schepen* \
 -rf *aantal-van-replica&#39;s*
 
 #### 3. Koppel een verzameling aan een configuratieset {#link-a-collection-to-a-configuration-set}
@@ -103,7 +103,7 @@ Gebruik:
 sh./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
 -zkhost *server:haven* \
-- inzameling *mijnverzameling-naam* \
+&#x200B;- inzameling *mijnverzameling-naam* \
 -confname *myconfig-name*
 
 ### Vergelijking van standaard en geavanceerde MLS {#comparison-of-standard-and-advanced-mls}
@@ -236,7 +236,7 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
    * **solrconfig.xml**
    * **stopwords/** omslag
    * **profielen/** omslag
-   * **omslag 0} extra-libs**
+   * **omslag 0&rbrace; extra-libs**
 
 1. Een nieuwe configuratie voorbereiden:
 

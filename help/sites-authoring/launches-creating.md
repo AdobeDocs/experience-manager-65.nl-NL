@@ -31,7 +31,7 @@ U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de 
 
 U kunt een lancering van of Sites of de console van Lanceringen tot stand brengen:
 
-1. Open de **Sites** of **3} console van Lanceringen {.**
+1. Open de **Sites** of **3&rbrace; console van Lanceringen &lbrace;.**
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    Als u de console terugkeert (met **Gedaan**) kunt u (en toegang) uw lancering van één van beiden zien:
 
    * [**Lanceert** console ](/help/sites-authoring/launches.md#the-launches-console)
-   * de [**Verwijzingen** in de **3} console van Plaatsen ](/help/sites-authoring/launches.md#launches-in-references-sites-console)**
+   * de [**Verwijzingen** in de **3&rbrace; console van Plaatsen ](/help/sites-authoring/launches.md#launches-in-references-sites-console)**
 
 ### Starten met nieuwe sjabloon maken {#create-launch-with-new-template}
 
@@ -136,7 +136,7 @@ Door een geneste opstart te maken (opstart binnen een opstart) kunt u een opstar
 
 Creërend een genestelde lancering van de **console van Lanceringen** is fundamenteel het zelfde als het creëren van een andere vorm van lancering, met de uitzondering die u aan de lanceringstak `/content/launches` moet navigeren:
 
-1. In de **console van 1} Lanceringen** selecteert creeer **.**
+1. In de **console van 1&rbrace; Lanceringen** selecteert creeer **.**
 1. Selecteer **Pagina&#39;s toevoegen** en ga naar de startvertakking door `/content/launches` in het filter op te geven. Selecteer de vereiste start en bevestig dit met **Selecteren**:
 
    ![ Uitgezochte lancering ](assets/chlimage_1-230.png)

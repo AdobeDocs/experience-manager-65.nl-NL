@@ -27,7 +27,7 @@ Het overseinen wordt toegelaten voor een communautaire plaats door een doos tijd
 
 Deze pagina bevat informatie over de standaardconfiguratie en mogelijke aanpassingen.
 
-Voor extra informatie voor ontwikkelaars, zie {de Hoofdzaak van het 0} Overseinen ](/help/communities/essentials-messaging.md).[
+Voor extra informatie voor ontwikkelaars, zie {de Hoofdzaak van het 0} Overseinen [&#128279;](/help/communities/essentials-messaging.md).
 
 ## Service voor berichtenverkeer {#messaging-operations-service}
 
@@ -125,7 +125,7 @@ Om een configuratie toe te voegen, selecteer plus &quot;**+**&quot;pictogram naa
 
 * **Lijst van gewenste personen van het Gebied**
 
-  De Lijst van gewenste personen van de Gebieden van het Bericht van het gebruik ****.
+  De Lijst van gewenste personen van de Gebieden van het Bericht van het gebruik **&#x200B;**.
 
 >[!CAUTION]
 >

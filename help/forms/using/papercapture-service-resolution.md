@@ -32,8 +32,10 @@ Deze oplossing geldt voor:
 1. Extraheer en kopieer de inhoud van de gedownloade map.
 1. Navigeer naar de onderstaande paden voor de overeenkomende toepassingsservers:
    * **jreliëf**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **weblogic**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **websphere**:\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

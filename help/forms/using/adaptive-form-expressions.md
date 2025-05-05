@@ -203,7 +203,7 @@ Er zijn meerdere validatiepatronen beschikbaar voor een veld. Om een validatiepa
 
 ### Validatie-expressies {#validation-expressions}
 
-De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3} lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
+De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3&rbrace; lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
 
 ## Aanvullende informatie {#additional-information}
 

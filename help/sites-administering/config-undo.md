@@ -111,7 +111,7 @@ De volgende lijst maakt een lijst van de eigenschappen zoals getoond in de conso
 * **Goede componenten**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Beschrijving**: Een lijst van componenten die u door wilt worden beïnvloed ongedaan maken en bevelen opnieuw doen. Voeg componentpaden toe aan deze lijst wanneer deze correct werken met ongedaan maken/opnieuw uitvoeren. Een sterretje (&amp;ast;) toevoegen om een groep componenten op te geven:
+   * **Beschrijving**: Een lijst van componenten die u door wilt worden beïnvloed ongedaan maken en bevelen opnieuw doen. Voeg componentpaden toe aan deze lijst wanneer deze correct werken met ongedaan maken/opnieuw uitvoeren. Een sterretje (&ast;) toevoegen om een groep componenten op te geven:
 
       * Met de volgende waarde wordt de stichtingstekstcomponent opgegeven:
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Integratie met Adobe Sign | Gebruikersgegevens verwerken {#integration-with-adobe-sign-handling-user-data}
 
-[!DNL AEM Forms] kan worden geïntegreerd met [!DNL  Adobe Sign] om workflows voor e-handtekeningen in adaptieve formulieren in te schakelen voor het verwerken van formulieren of overeenkomsten voor juridische workflows, verkoop, salarisverwerking en workflows voor personeelsbeheer. Het staat voor enig en multiuser het ondertekenen, opeenvolgende en gelijktijdige het ondertekenen werkschema&#39;s toe, het ondertekenen van formulieren als anonieme of het programma geopende gebruiker, en veelvoudige manieren om gebruikers voor authentiek te verklaren.
+[!DNL AEM Forms] kan worden geïntegreerd met [!DNL &#x200B; Adobe Sign] om workflows voor e-handtekeningen in adaptieve formulieren in te schakelen voor het verwerken van formulieren of overeenkomsten voor juridische workflows, verkoop, salarisverwerking en workflows voor personeelsbeheer. Het staat voor enig en multiuser het ondertekenen, opeenvolgende en gelijktijdige het ondertekenen werkschema&#39;s toe, het ondertekenen van formulieren als anonieme of het programma geopende gebruiker, en veelvoudige manieren om gebruikers voor authentiek te verklaren.
 
 Wanneer een ondertekenaar of meerdere ondertekenaars een adaptief formulier ondertekenen en verzenden, wordt een [!DNL Adobe Sign] -overeenkomst gegenereerd die informatie over de ondertekenaars bevat.
 

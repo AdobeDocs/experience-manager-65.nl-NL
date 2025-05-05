@@ -141,7 +141,7 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    Klik nu op de map newlogo.png, dubbelklik vervolgens op jcr:content (grijze optie) en stel het type nt:resource in. Als deze niet aanwezig is, maakt u een eigenschap met de naam jcr:content.
 
-1. In Edit jcr:gegevensdialoog, doorbladert de klik **** en selecteert het beelddossier u als embleem (hier CustomLogo.png) wilt gebruiken.
+1. In Edit jcr:gegevensdialoog, doorbladert de klik **&#x200B;**&#x200B;en selecteert het beelddossier u als embleem (hier CustomLogo.png) wilt gebruiken.
 
    De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt om toegang te krijgen tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
 

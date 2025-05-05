@@ -19,7 +19,7 @@ AEM Forms biedt een set OSGi-services om verschillende bewerkingen op documentni
 
 * **Assembler-service:** Hiermee kunt u PDF- en XDP-documenten combineren, herschikken en uitbreiden en informatie over PDF-documenten verkrijgen. Het helpt ook bij het converteren en valideren van PDF-documenten naar de PDF/A-standaard, het transformeert PDF-formulieren, XML-formulieren en PDF-formulieren naar PDF/A-1b, PDF/A-2b en PDFA/A-3b. Zie [Assembler Service](/help/forms/using/assembler-service.md) voor meer informatie.
 
-* **ConvertPDF-service:** Hiermee kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). Zie ConvertPDF-service](/help/forms/using/using-convertpdf-service.md) voor meer informatie[.
+* **ConvertPDF-service:** Hiermee kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). Zie ConvertPDF-service[&#128279;](/help/forms/using/using-convertpdf-service.md) voor meer informatie.
 
 * **Barcoded Forms-service:** Hiermee kunt u gegevens extraheren uit elektronische afbeeldingen van barcodes. De service accepteert TIFF- en PDF-bestanden die een of meer barcodes als invoer bevatten en extraheert de barcodegegevens. Zie [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md) voor meer informatie.
 
@@ -47,7 +47,7 @@ AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn
 
 ## Implementatietopologie {#deployment-topology}
 
-AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Over het algemeen hebt u slechts één AEM instantie (auteur of publicatie) nodig om AEM Forms-documentservices uit te voeren. De volgende topologie wordt aanbevolen om AEM Forms-documentservices uit te voeren. Zie Architectuur en implementatietopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md) voor gedetailleerde informatie over topologieën[.
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Over het algemeen hebt u slechts één AEM instantie (auteur of publicatie) nodig om AEM Forms-documentservices uit te voeren. De volgende topologie wordt aanbevolen om AEM Forms-documentservices uit te voeren. Zie Architectuur en implementatietopologieën voor AEM Forms[&#128279;](/help/forms/using/aem-forms-architecture-deployment.md) voor gedetailleerde informatie over topologieën.
 
 ![Architectuur- en implementatietopologieën voor AEM Forms](do-not-localize/document-services.png)
 
@@ -59,7 +59,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Ov
 
 Voordat u de documentservices van AEM Forms gaat installeren en configureren, moet u ervoor zorgen dat:
 
-* Er is een hardware- en software-infrastructuur aanwezig. Zie technische vereisten](/help/sites-deploying/technical-requirements.md) voor een gedetailleerde lijst met ondersteunde hardware en software.[
+* Er is een hardware- en software-infrastructuur aanwezig. Zie technische vereisten[&#128279;](/help/sites-deploying/technical-requirements.md) voor een gedetailleerde lijst met ondersteunde hardware en software.
 
 * Het installatiepad van het AEM exemplaar bevat geen spaties.
 * Een AEM instantie is actief en actief. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteurs- of publicatiemodus wordt uitgevoerd. Over het algemeen hebt u slechts één AEM exemplaar (auteur of publicatie) nodig om AEM Forms-documentservices uit te voeren:
@@ -485,7 +485,7 @@ In Microsoft® Windows gebruikt de PDF Generator-service Adobe Acrobat om onders
 
       Acrobat is geconfigureerd om te worden uitgevoerd met de PDF Generator-service.
 
-1. Voer System Readiness Tool (SRT)](#SRT) uit [om de installatie van Acrobat te valideren.
+1. Voer System Readiness Tool (SRT) [&#128279;](#SRT) uit om de installatie van Acrobat te valideren.
 
 ### (Alleen Windows) Primaire route configureren voor conversie van HTML naar PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -659,7 +659,7 @@ Voordat u de volgende controles uitvoert, moet u ervoor zorgen dat [de System Re
 
 * Verzeker slechts [ gesteunde versie ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Microsoft® Office (met 32 bits) en Adobe Acrobat wordt geïnstalleerd en het openen van dialogen wordt geannuleerd.
 * Controleer of Adobe Acrobat Update Service is uitgeschakeld.
-* Zorg ervoor dat het {](#configure-acrobat-for-the-pdf-generator-service) partijdossier 0} Acrobat_for_PDFG_Configuration.bat met beheerdervoorrechten in werking werd gesteld.[
+* Zorg ervoor dat het {[&#128279;](#configure-acrobat-for-the-pdf-generator-service) partijdossier 0} Acrobat_for_PDFG_Configuration.bat met beheerdervoorrechten in werking werd gesteld.
 * Zorg ervoor dat een PDF Generator-gebruiker wordt toegevoegd in de gebruikersinterface van de PDF-configuratie.
 * Zorg ervoor dat de [machtiging Een token](#grant-the-replace-a-process-level-token-privilege) op procesniveau vervangen is toegevoegd voor de gebruiker van de PDF-generator.
 * Zorg ervoor dat de Acrobat PDFMaker Office COM-invoegtoepassing is ingeschakeld voor Microsoft Office-toepassingen.

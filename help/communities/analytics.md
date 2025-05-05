@@ -52,7 +52,7 @@ In deze sectie van de documentatie wordt beschreven hoe u een serie Analytics-ra
 
 1. [ Repliceer crypto sleutel ](#replicate-the-crypto-key) zodat kunt u ervoor zorgen dat de encryptie/de decryptie correct op alle AEM instanties voorkomt
 1. Bereid een Adobe Analytics [ rapportreeks ](#adobe-analytics-report-suite-for-video-reporting) voor
-1. Creeer de dienst van de Wolk van de Analyse van de AEM [ ](#aem-analytics-cloud-service-configuration) en [ kader ](#aem-analytics-framework-configuration)
+1. Creeer de dienst van de Wolk van de Analyse van de AEM [&#128279;](#aem-analytics-cloud-service-configuration) en [ kader ](#aem-analytics-framework-configuration)
 
 1. [ laat Analytics ](#enable-analytics-for-a-community-site) voor een communautaire plaats toe
 1. [**verifieer**](#verify-analytics-to-aem-variable-mapping) Analyses aan AEM veranderlijke afbeelding
@@ -87,7 +87,7 @@ Om Analytics voor de eigenschappen van Gemeenschappen te vormen, is het noodzake
 
 ## Adobe Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
-Gebruikend de Manager van de Reeks van het Rapport van Adobe Experience Cloud [ ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html), kunnen de het rapportsuites van Analytics worden gevormd zodat een communautaire plaats kan worden toegelaten om rapporten voor de eigenschappen van Gemeenschappen te verstrekken.
+Gebruikend de Manager van de Reeks van het Rapport van Adobe Experience Cloud [&#128279;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html), kunnen de het rapportsuites van Analytics worden gevormd zodat een communautaire plaats kan worden toegelaten om rapporten voor de eigenschappen van Gemeenschappen te verstrekken.
 
 Door binnen aan [ Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) met [ Naam van het Bedrijf en Naam van de Gebruiker ](/help/communities/analytics.md#prerequisites) te ondertekenen, is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
 
@@ -248,7 +248,7 @@ De instellingen opslaan:
 
 Nadat de basisverbinding met Adobe Analytics met succes is geconfigureerd, moet u een framework voor de communitysite maken of bewerken. Het doel van het kader is om de eigenschapvariabelen van de Gemeenschappen (AEM) aan (rapportreeks) variabelen Analytics in kaart te brengen.
 
-* Selecteer het pictogram `[+]` naast **[!UICONTROL  Available Frameworks]** , zodat u een framework kunt maken.
+* Selecteer het pictogram `[+]` naast **[!UICONTROL &#x200B; Available Frameworks]** , zodat u een framework kunt maken.
 
   ![ analyse-kader ](assets/analytics-framework.png)
 
@@ -370,7 +370,7 @@ Voor a **generische AEM plaats** die de componenten van de Gemeenschappen omvat,
 
 Analytics wordt automatisch gebruikt voor verschillende functies van de Gemeenschappen.
 
-De configuratie van OSGi van het auteursmilieu [ ](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Component Configuration`, verstrekt een lijst van de componenten die van instrumenten voor Analytics zijn voorzien. De automatische toewijzing van variabelen wordt bepaald door de vermelde componenten.
+De configuratie van OSGi van het auteursmilieu [&#128279;](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Component Configuration`, verstrekt een lijst van de componenten die van instrumenten voor Analytics zijn voorzien. De automatische toewijzing van variabelen wordt bepaald door de vermelde componenten.
 
 Als nieuwe douanecomponenten worden gecreeerd die voor Analytics van instrumenten worden voorzien, zouden zij aan deze lijst van gevormde componenten moeten worden toegevoegd.
 
@@ -543,7 +543,7 @@ Als Communities Vars en events toewijzingen overschrijven die al in de rapportsu
 
 >[!CAUTION]
 >
->Het is belangrijk om opnieuw in kaart te brengen alvorens de communautaire plaats [ ](#publishing-the-community-site) met toegelaten Analytics wordt gepubliceerd, anders is er risico van gegevensverlies.
+>Het is belangrijk om opnieuw in kaart te brengen alvorens de communautaire plaats [&#128279;](#publishing-the-community-site) met toegelaten Analytics wordt gepubliceerd, anders is er risico van gegevensverlies.
 
 #### Voorbeeldstap 1: Analytics evar14 naar toewijzingstabel slepen {#example-step-dragging-analytics-evar-into-mapping-table}
 
@@ -608,7 +608,7 @@ Nadat de dienst van Analytics Cloud voor een communautaire plaats wordt toegelat
 
 ### Rapportbeheer {#report-management}
 
-De auteur en de primaire configuratie van OSGi van de uitgever [ ](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Report Management`, wordt gebruikt aan vraagAnalytics.
+De auteur en de primaire configuratie van OSGi van de uitgever [&#128279;](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Report Management`, wordt gebruikt aan vraagAnalytics.
 
 Bij de auteur zijn de vragen voor real-time rapporten.
 
@@ -618,7 +618,7 @@ Het vraaginterval blijft aan 10 seconden in gebreke.
 
 ### Rapportimportmodule {#report-importer}
 
-Zodra een Analytics toegelaten communautaire plaats is gepubliceerd, kan de configuratie van OSGi van de primaire uitgever [ ](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Report Importer`, worden gevormd om het standaardpolling interval voor die configuraties te plaatsen die niet individueel in CRXDE worden gevormd.
+Zodra een Analytics toegelaten communautaire plaats is gepubliceerd, kan de configuratie van OSGi van de primaire uitgever [&#128279;](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Report Importer`, worden gevormd om het standaardpolling interval voor die configuraties te plaatsen die niet individueel in CRXDE worden gevormd.
 
 Het opiniepeilingsinterval controleert de frequentie van verzoeken aan Adobe Analytics voor gegevens die moeten worden getrokken en in [ SRP ](/help/communities/working-with-srp.md) worden bewaard.
 

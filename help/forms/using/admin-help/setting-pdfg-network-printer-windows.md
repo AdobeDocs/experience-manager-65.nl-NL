@@ -69,6 +69,6 @@ Gebruikers met de rol PDFG-beheerder of PDFG-gebruiker kunnen een PDFG-netwerkpr
 
 1. Klik op de koppeling onder Installatie van PDFG-netwerkprinter. Geef bij de aanwijzing voor gegevens van gebruikersaccounts de gebruikersnaam en het wachtwoord op die u in stap 1 hebt gebruikt voor aanmelding. Er verschijnt een bericht met de mededeling dat de printer is geïnstalleerd.
 
-   ***nota **: Als het wachtwoord van de gebruiker verandert, dan moeten de gebruikers de Printer van het Netwerk PDFG op hun computers opnieuw installeren. U kunt niet het wachtwoord van beleidsconsole bijwerken.*
+   ***nota &#x200B;**: Als het wachtwoord van de gebruiker verandert, dan moeten de gebruikers de Printer van het Netwerk PDFG op hun computers opnieuw installeren. U kunt niet het wachtwoord van beleidsconsole bijwerken.*
 
 1. Klik op OK.

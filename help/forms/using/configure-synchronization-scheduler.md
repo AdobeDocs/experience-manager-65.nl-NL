@@ -42,7 +42,7 @@ U kunt **gebruiken synchroniseer Assets van de optie van de Bewaarplaats** om de
 
    **Cijfer:** *gebruikersinterface van AEM Forms*
 
-1. Klik het {](assets/aem6forms_sync.png) pictogram 0} aem6forms_sync in de toolbar. ![ Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik **Begin** om de synchronisatie in werking te stellen.
+1. Klik het {![&#128279;](assets/aem6forms_sync.png) pictogram 0} aem6forms_sync in de toolbar.  Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik **Begin** om de synchronisatie in werking te stellen.
 
    ![ de dialoogdoos van de Synchronisatie ](assets/migrate-and-syncronize.png)
 

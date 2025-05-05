@@ -201,7 +201,7 @@ Deze procedure uploadt en configureert de demonstratiewinkel - Geometrixx Online
    * gebruikersnaam: admin
    * wachtwoord: nimda
 
-1. Van de sidebar navigatie, breid **Systeem {en** Hulpmiddelen **uit.** Dan uitgezochte **Invoer** om de **Tovenaar te openen: CSV Importeert** venster.
+1. Van de sidebar navigatie, breid **Systeem &lbrace;en** Hulpmiddelen **uit.** Dan uitgezochte **Invoer** om de **Tovenaar te openen: CSV Importeert** venster.
 1. In het **lusje van de Configuratie**, **upload** het volgende **dossier van de Invoer**:
 
 [Bestand ophalen](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)

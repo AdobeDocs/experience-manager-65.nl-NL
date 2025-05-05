@@ -30,7 +30,7 @@ De component `Following` geeft alleen de leden weer die het huidige lid volgen o
 
 Als u een component `Following` wilt toevoegen aan een pagina in de ontwerpmodus, zoekt u de component `Communities / Following` en sleept u deze naar de plaats op een pagina waar de sociale grafiek moet verschijnen.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-socialgraph.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Following` component verschijnt:
 
@@ -42,4 +42,4 @@ Op dit moment is het nodig om de eigenschap in te stellen om te bepalen of de co
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](essentials-socialgraph.md) pagina van de Hoofdzaak van de Grafiek worden gevonden 0} Sociale.[
+Meer informatie kan op de [&#128279;](essentials-socialgraph.md) pagina van de Hoofdzaak van de Grafiek worden gevonden 0&rbrace; Sociale.

@@ -260,7 +260,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [ CQ.Ext.CycleButton ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)
 
-  Een gespecialiseerde SplitButton die een menu van [ CQ.Ext.menu.CheckItem ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem) elementen bevat. De knoop cycli automatisch door elk menupunt op klik, die de 1} gebeurtenis van de verandering van de knoop [ opheffen {of de 2} changeHandler ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) functie van de knoop roepen {, indien verstrekt) voor het actieve menupunt.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)[
+  Een gespecialiseerde SplitButton die een menu van [ CQ.Ext.menu.CheckItem ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem) elementen bevat. De knoop cycli automatisch door elk menupunt op klik, die de 1&rbrace; gebeurtenis van de verandering van de knoop [ opheffen {of de 2} changeHandler ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) functie van de knoop roepen &lbrace;, indien verstrekt) voor het actieve menupunt.[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)
 
 * gegevensweergave
 
@@ -278,13 +278,13 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [ CQ.Ext.menu.DateMenu ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu)
 
-  Een menu dat een {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) Component 0} CQ.Ext.DatePicker bevat.[
+  Een menu dat een {[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) Component 0} CQ.Ext.DatePicker bevat.
 
 * datepicker
 
   [ CQ.Ext.DatePicker ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker)
 
-  Een kiezer voor de pop-updatum. Deze klasse wordt gebruikt door de [ ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) klasse DateField om het doorbladeren en de selectie van geldige data toe te staan.
+  Een kiezer voor de pop-updatum. Deze klasse wordt gebruikt door de [&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) klasse DateField om het doorbladeren en de selectie van geldige data toe te staan.
 
 * datetime
 
@@ -638,7 +638,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [ CQ.Ext.grid.PropertyGrid ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
 
-  Een gespecialiseerde netimplementatie bedoeld om het traditionele bezitsnet zoals typisch gezien in ontwikkeling IDEs na te bootsen. Elke rij in het net vertegenwoordigt een bezit van één of ander voorwerp, en het gegeven wordt opgeslagen als reeks naam/waardeparen in ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord) CQ.Ext.grid.PropertyRecord.[
+  Een gespecialiseerde netimplementatie bedoeld om het traditionele bezitsnet zoals typisch gezien in ontwikkeling IDEs na te bootsen. Elke rij in het net vertegenwoordigt een bezit van één of ander voorwerp, en het gegeven wordt opgeslagen als reeks naam/waardeparen in [&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord) CQ.Ext.grid.PropertyRecord.
 
 * propraster
 
@@ -650,7 +650,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   [ CQ.Ext.QuickTip ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip)
 
-  @xtype quicktip A gespecialiseerde tooltip klasse voor tooltips die in prijsverhoging kunnen worden gespecificeerd en automatisch door de globale {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) instantie 0} CQ.Ext.QuickTips worden geleid. [ Zie de QuickTips-klasseheader voor meer gebruiksdetails en voorbeelden.
+  @xtype quicktip A gespecialiseerde tooltip klasse voor tooltips die in prijsverhoging kunnen worden gespecificeerd en automatisch door de globale {[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) instantie 0} CQ.Ext.QuickTips worden geleid.  Zie de QuickTips-klasseheader voor meer gebruiksdetails en voorbeelden.
 
 * radio
 
@@ -750,7 +750,7 @@ Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
   De diapresentatie bevat een component die kan worden gebruikt om een set afbeeldingen en afbeeldingstitels te definiëren en te bewerken die als een diapresentatie kunnen worden weergegeven.
 
-  De component Slideshow is gebaseerd op de {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage) component 0} CQ.form.SmartImage.[
+  De component Slideshow is gebaseerd op de {[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage) component 0} CQ.form.SmartImage.
 
 * smartfile
 

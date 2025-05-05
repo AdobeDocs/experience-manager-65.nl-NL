@@ -122,6 +122,7 @@ Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor AEM
    * Er zijn twee manieren om de Forms Designer-versie te controleren:
 
       1. Open Designer, ga Hulp, klik over ontwerper en u ziet de informatie van de ontwerpversie samen met de beetjeinformatie, bijvoorbeeld, wordt 64 beetje geschreven aan het eind van de versie zoals hier getoond:
+
          `6.5.21.20240522.1.161 | 64 bit`
       1. Open Designer. Linksboven ziet u dat een brandpictogram 64-bits informatie met de productnaam bevat.
 

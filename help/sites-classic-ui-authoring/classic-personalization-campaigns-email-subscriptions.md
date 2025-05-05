@@ -23,7 +23,7 @@ ht-degree: 0%
 >De Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
 >De aanbeveling moet [ Adobe Campaign en zijn AEM integratie ](/help/sites-administering/campaign.md) gebruiken.
 
-De gebruikers kunnen worden gevraagd om aan **het posteren lijsten 1} van de E-mailDienstverlener {met hulp van de** 3} component in te tekenen van de Vorm {die op een AEM Web-pagina wordt gebruikt. **** Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
+De gebruikers kunnen worden gevraagd om aan **het posteren lijsten 1&rbrace; van de E-mailDienstverlener {met hulp van de** 3} component in te tekenen van de Vorm &lbrace;die op een AEM Web-pagina wordt gebruikt. **&#x200B;**&#x200B;Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
 
 ## Configuratie van e-mailservice toepassen op een pagina {#applying-email-service-configuration-to-a-page}
 
@@ -97,7 +97,7 @@ Om een auto-antwoordapparaat e-mail voor een abonnee te vormen:
 1. Open de pagina-eigenschappen van de AEM pagina die het aanmeldingsformulier hebben om auto responder voor een lead te configureren.
 1. Pas de configuratie ExactTarget op de pagina toe.
 
-1. Voeg de component van de a **Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelaar aan ontwerpwijze en laat de **1} groep van de Vorm {toe.**
+1. Voeg de component van de a **Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelaar aan ontwerpwijze en laat de **1&rbrace; groep van de Vorm &lbrace;toe.**
 1. Klik **uitgeven** in het **Begin van de bar van de Vorm** en navigeer aan **Geavanceerd** tabel.
 1. In het **drop-down menu van de Vorm**, uitgezochte **E-mailDienst: verzend auto antwoordapparaat e-mail.**
 1. **selecteer een e-mail** (dit is de post die als auto-antwoordapparaat e-mail wordt verzonden).

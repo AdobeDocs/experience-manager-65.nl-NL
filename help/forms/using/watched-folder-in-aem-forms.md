@@ -402,7 +402,7 @@ Als de structuur van een payload anders is dan de structuur van de gecontroleerd
 
 #### Een aangepast Payload Mapper-filter maken {#creating-a-custom-payload-mapper-filter}
 
-1. De Cliënt SDK van de Adobe van de download [ ](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
+1. De Cliënt SDK van de Adobe van de download [&#128279;](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
 1. Opstelling de cliënt SDK in de bouwstijlweg van het op maven-gebaseerde project. Om aan de slag te gaan, kunt u het volgende op maven gebaseerde project downloaden en openen in IDE van uw keuze.
 1. Bewerk de filtercode voor de payload mapper die beschikbaar is in de voorbeeldbundel, naar wens.
 1. Gebruik maven om een bundel van de aangepaste Filter van de Toewijzing van de Payload tot stand te brengen.

@@ -158,7 +158,7 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
 **voeg een gehechtheid** toe
 
-1. In het **lusje van Bijlagen**, doorbladert de klik **** om het dossier te selecteren om vast te maken.
+1. In het **lusje van Bijlagen**, doorbladert de klik **&#x200B;**&#x200B;om het dossier te selecteren om vast te maken.
 1. Selecteer het **niveau van Toestemmingen** voor de gehechtheid voor andere gebruikers die aan het proces deelnemen. Als u **Gelezen** selecteert, kunnen andere gebruikers het dossier plaatselijk bewaren. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
 
    >[!NOTE]
@@ -298,7 +298,7 @@ Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit de lijst Aa
 
 1. Klik **Voorkeur**.
 1. In **breng de Gebeurtenissen van de Taak via E-mail** lijst op de hoogte, uitgezocht **ja**.
-1. Om de vorm en de gegevens met het e-mailbericht, in **te omvatten sluit Forms in E-mail** lijst, ja **** aan.
+1. Om de vorm en de gegevens met het e-mailbericht, in **te omvatten sluit Forms in E-mail** lijst, ja **&#x200B;**&#x200B;aan.
 
 ## Deelnemen aan taken via mobiele apparaten {#participating-in-tasks-through-mobile-devices}
 

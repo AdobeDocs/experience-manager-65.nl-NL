@@ -155,7 +155,7 @@ De eerste vraag die u moet stellen bij het maken of optimaliseren van indexen is
 
 Nadat u een index hebt gemaakt, moet de index ook worden bijgewerkt telkens wanneer de geïndexeerde gegevens worden bijgewerkt. Aangezien dit prestatiesimplicaties voor het systeem draagt, zouden indexen slechts moeten worden gecreeerd wanneer zij worden vereist.
 
-Bovendien zijn indexen alleen nuttig als de gegevens in de index uniek genoeg zijn om ze te rechtvaardigen. Overweeg een index in een boek en de onderwerpen die het behandelt. Wanneer het indexeren van een reeks onderwerpen in een tekst, gewoonlijk zullen er honderden of duizenden ingangen zijn, die u aan een ondergroep van pagina&#39;s laat snel springen om de informatie snel te vinden die u zoekt. Als die index slechts twee of drie items bevat, die u elk op honderden pagina&#39;s aanwijzen, is de index niet nuttig. Hetzelfde concept geldt voor database-indexen. Als er slechts een paar unieke waarden zijn, is de index niet nuttig. Een index kan echter ook te groot worden om nuttig te zijn. Om indexstatistieken te bekijken, zie ](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) hierboven Statistieken van 0} Index.[
+Bovendien zijn indexen alleen nuttig als de gegevens in de index uniek genoeg zijn om ze te rechtvaardigen. Overweeg een index in een boek en de onderwerpen die het behandelt. Wanneer het indexeren van een reeks onderwerpen in een tekst, gewoonlijk zullen er honderden of duizenden ingangen zijn, die u aan een ondergroep van pagina&#39;s laat snel springen om de informatie snel te vinden die u zoekt. Als die index slechts twee of drie items bevat, die u elk op honderden pagina&#39;s aanwijzen, is de index niet nuttig. Hetzelfde concept geldt voor database-indexen. Als er slechts een paar unieke waarden zijn, is de index niet nuttig. Een index kan echter ook te groot worden om nuttig te zijn. Om indexstatistieken te bekijken, zie [&#128279;](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) hierboven Statistieken van 0&rbrace; Index.
 
 ### Luidens- of eigenschapsindexen? {#lucene-or-property-indexes}
 
@@ -220,13 +220,13 @@ Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, 
 
 Deze sectie schetst **slechts** aanvaardbare redenen om de indexen van Oak opnieuw te indexeren.
 
-Buiten de hieronder geschetste redenen, in werking stellend herindexen van de indexen van Oak **** verandert gedrag niet of lost kwesties op, en verhoogt onnodig ladingen op AEM.
+Buiten de hieronder geschetste redenen, in werking stellend herindexen van de indexen van Oak **&#x200B;**&#x200B;verandert gedrag niet of lost kwesties op, en verhoogt onnodig ladingen op AEM.
 
 Herindexering van Oak-indexen moet worden vermeden, tenzij daarvoor in onderstaande tabellen een reden is opgegeven.
 
 >[!NOTE]
 >
->Voorafgaand aan het raadplegen van de lijsten hieronder om te bepalen als het opnieuw indexeren nuttig is, **** verifieert altijd:
+>Voorafgaand aan het raadplegen van de lijsten hieronder om te bepalen als het opnieuw indexeren nuttig is, **&#x200B;**&#x200B;verifieert altijd:
 >
 >* de vraag correct is
 >* de vraag lost aan de verwachte index op (gebruikend [ Verklaar Vraag ](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
@@ -306,7 +306,7 @@ De volgende details en resoluties zijn mogelijk:
 
 In de volgende tabel worden de enige aanvaardbare fouten en uitzonderlijke situaties beschreven waarin het probleem wordt opgelost door de indexen van Oak opnieuw te indexeren.
 
-Als een kwestie op AEM wordt ervaren die niet de hieronder geschetste criteria aanpast, **** geen indexen herindexeert, aangezien het niet de kwestie zal oplossen.
+Als een kwestie op AEM wordt ervaren die niet de hieronder geschetste criteria aanpast, **&#x200B;**&#x200B;geen indexen herindexeert, aangezien het niet de kwestie zal oplossen.
 
 De volgende details en resoluties zijn mogelijk:
 
@@ -372,7 +372,7 @@ De volgende details en resoluties zijn mogelijk:
    * Als dit het probleem niet verhelpt en de uitzonderingen `AsyncIndexUpdate` blijven bestaan:
 
       1. [ herindexeer ](#how-to-re-index) de foutenindex
-      1. Ook dossier een ](https://helpx.adobe.com/support.html) kaartje van de Steun van de Adobe 0} {[
+      1. Ook dossier een [&#128279;](https://helpx.adobe.com/support.html) kaartje van de Steun van de Adobe 0&rbrace; &lbrace;
 
 ### Opnieuw indexeren {#how-to-re-index}
 

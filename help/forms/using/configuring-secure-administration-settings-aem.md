@@ -41,11 +41,11 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
 
 1. Klik **de Diensten > Toepassingen en de Diensten > Voorkeur**.
 1. Stel de voorkeuren in om maximaal 200 services en eindpunten op dezelfde pagina weer te geven.
-1. Klik **de Diensten van 0} >** Toepassingen en de Diensten **>** Beheer van het Eindpunt **.**
-1. Selecteer **EJB** van de **3} lijst van de Leverancier {en klik dan** Filter **.**
+1. Klik **de Diensten van 0&rbrace; >** Toepassingen en de Diensten **>** Beheer van het Eindpunt **.**
+1. Selecteer **EJB** van de **3&rbrace; lijst van de Leverancier &lbrace;en klik dan** Filter **.**
 1. Om alle EJB eindpunten onbruikbaar te maken, selecteer de controledoos naast elk in de lijst en klik **onbruikbaar maken**.
 1. Klik **daarna** en herhaal de vorige stap voor alle EJB eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
-1. Selecteer **SOAP** van de **3} lijst van de Leverancier {en klik dan** Filter **.**
+1. Selecteer **SOAP** van de **3&rbrace; lijst van de Leverancier &lbrace;en klik dan** Filter **.**
 1. Om SOAP eindpunten te verwijderen, selecteer de controledoos naast elk in de lijst en klik **verwijderen**. Verwijder de volgende eindpunten niet:
 
    * AuthenticationManagerService

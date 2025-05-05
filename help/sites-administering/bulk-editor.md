@@ -31,7 +31,7 @@ Met de Bulkeditor kunt u op efficiënte wijze pagina&#39;s bewerken wanneer de c
 >
 >U kunt inhoud in de bewaarplaats ook invoeren, maar door gebrek is dit gehandicapt voor de BulkRedacteur zoals beschikbaar in de **console van Hulpmiddelen**.
 
-Deze sectie beschrijft hoe te met de BulkRedacteur in de **console van Hulpmiddelen** te werken. Gewoonlijk gebruiken beheerders de Bulk-editor om meerdere items te zoeken en bewerken. Dit wordt gedaan door de lijst te bevolken gebruikend een vraag GQL en dan door de inhoudspunten te selecteren om aan te werken. De auteurs gebruiken over het algemeen de Redacteur van het Bulk als deel van een aangepaste toepassing van de Redacteur van het Bulk die door de ](/help/sites-authoring/default-components.md#productlist) component van de lijst van 0} product {toegankelijk is.[
+Deze sectie beschrijft hoe te met de BulkRedacteur in de **console van Hulpmiddelen** te werken. Gewoonlijk gebruiken beheerders de Bulk-editor om meerdere items te zoeken en bewerken. Dit wordt gedaan door de lijst te bevolken gebruikend een vraag GQL en dan door de inhoudspunten te selecteren om aan te werken. De auteurs gebruiken over het algemeen de Redacteur van het Bulk als deel van een aangepaste toepassing van de Redacteur van het Bulk die door de [&#128279;](/help/sites-authoring/default-components.md#productlist) component van de lijst van 0&rbrace; product &lbrace;toegankelijk is.
 
 >[!CAUTION]
 >

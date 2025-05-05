@@ -51,7 +51,7 @@ AEM Forms-gebruikers kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA
 1. Creeer een [ API sleutel ](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) en de sleutel van de a [ plaats voor websites ](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Configuratiecontainer maken voor cloudservices.
 
-   1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** . Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+   1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** . Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
    1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
       1. Selecteer de map **[!UICONTROL global]** in de Configuration Browser en selecteer **[!UICONTROL Properties]** .
       1. Schakel in het dialoogvenster Configuration Properties **[!UICONTROL Cloud Configurations]** in.
@@ -65,7 +65,7 @@ AEM Forms-gebruikers kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA
    1. Op uw de auteursinstantie van de Experience Manager, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Selecteer **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die in de vorige stap is gemaakt en selecteer **[!UICONTROL Create]** .
    1. Selecteer versie als reCAPTCHA Enterprise en geef Naam; Project ID, Site Key en API-sleutel (verkregen in stap 2 en 3) op voor de reCAPTCHA Enterprise-service.
-   1. Selecteer zeer belangrijk type, zou het zeer belangrijke type als plaats sleutel moeten zijn die in het google wolkenproject wordt gevormd, bijvoorbeeld, **of** Score-based plaatstoets **van 0} Checkbox.**
+   1. Selecteer zeer belangrijk type, zou het zeer belangrijke type als plaats sleutel moeten zijn die in het google wolkenproject wordt gevormd, bijvoorbeeld, **of** Score-based plaatstoets **van 0&rbrace; Checkbox.**
    1. Specificeer een drempelscore in waaier 0-1 ([ klik om meer over score ](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores) te weten te komen). Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
 
       > Opmerking:
@@ -85,7 +85,7 @@ Zodra de reCAPTCHA Enterprise-service is ingeschakeld, is deze beschikbaar voor 
 
 1. Verkrijg [ reCAPTCHA API zeer belangrijk paar ](https://www.google.com/recaptcha/admin) van Google. Het omvat a **plaats sleutel** en a **geheime sleutel**.
 1. Configuratiecontainer maken voor cloudservices.
-   1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** . Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+   1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** . Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
    1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
       1. Selecteer de map **[!UICONTROL global]** in de Configuration Browser en selecteer **[!UICONTROL Properties]** .

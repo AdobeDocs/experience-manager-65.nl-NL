@@ -1391,7 +1391,7 @@ U kunt deze weergeven via het menu Configuratie van de webconsole (bijvoorbeeld 
 ### Basisservice (CQ-rapportconfiguratie op de dag) {#basic-service-day-cq-reporting-configuration}
 
 * **Tijdzone** bepaalt de historische gegevens van de tijdzone waarvoor wordt gecreeerd. Dit moet ervoor zorgen dat de historische grafiek de zelfde gegevens voor elke gebruiker over de wereld toont.
-* **bepaalt de Plaats van 0} {de scène die met** Tijdzone **voor historische gegevens moet worden gebruikt.** De landinstelling wordt gebruikt om bepaalde landspecifieke kalenderinstellingen te bepalen (bijvoorbeeld of de eerste dag van een week zondag of maandag is).
+* **bepaalt de Plaats van 0&rbrace; &lbrace;de scène die met** Tijdzone **voor historische gegevens moet worden gebruikt.** De landinstelling wordt gebruikt om bepaalde landspecifieke kalenderinstellingen te bepalen (bijvoorbeeld of de eerste dag van een week zondag of maandag is).
 
 * **de weg van de Momentopname** bepaalt de wortelweg waar de momentopnamen voor historische grafieken worden opgeslagen.
 * **Weg aan rapporten** bepaalt de weg waar de rapporten worden gevestigd. Dit wordt gebruikt door de momentopnameservice om de rapporten te bepalen om momentopnamen voor eigenlijk te nemen.

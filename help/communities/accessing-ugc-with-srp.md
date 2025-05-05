@@ -66,9 +66,9 @@ Methoden om te voorkomen:
 
 ### Zoekverzamelingen gebruiken {#use-search-collections}
 
-Verschillende SRPs kan verschillende inheemse vraagtalen hebben. De methodes van het gebruik van het {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pakket 0} com.adobe.cq.social.ugc.api om de aangewezen vraagtaal in werking te stellen.[
+Verschillende SRPs kan verschillende inheemse vraagtalen hebben. De methodes van het gebruik van het {[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pakket 0} com.adobe.cq.social.ugc.api om de aangewezen vraagtaal in werking te stellen.
 
-Voor meer informatie, zie {de Hoofdzaak van het 0} Onderzoek ](/help/communities/search-implementation.md).[
+Voor meer informatie, zie {de Hoofdzaak van het 0} Onderzoek [&#128279;](/help/communities/search-implementation.md).
 
 ## Bronnen {#resources}
 

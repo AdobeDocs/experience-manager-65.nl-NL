@@ -27,7 +27,7 @@ De console van Activiteiten laat u toe om, de marketing [ activiteiten ](/help/s
 
 >[!NOTE]
 >
->Als u Adobe Target als uw het richten motor gebruikt, kunt u prestaties gegevens van uw activiteiten ](#viewing-performance-and-converting-winning-experiences-a-b-test) ook [ bekijken. Als u A/B het testen gebruikt, kunt u [ winnaars ](#viewing-performance-and-converting-winning-experiences-a-b-test) omzetten.
+>Als u Adobe Target als uw het richten motor gebruikt, kunt u prestaties gegevens van uw activiteiten [&#128279;](#viewing-performance-and-converting-winning-experiences-a-b-test) ook  bekijken. Als u A/B het testen gebruikt, kunt u [ winnaars ](#viewing-performance-and-converting-winning-experiences-a-b-test) omzetten.
 
 Op de Activity Console worden de activiteiten georganiseerd door merk. U kunt merken en mappen gebruiken om uw activiteiten te structureren. U navigeert aan de console van Activiteiten door **Personalization** te tikken of te klikken en **Activiteiten** te tikken/te klikken.
 
@@ -47,7 +47,7 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 >
 >* Als de **xt_only** optie op de huurder van Adobe Target (cliëntcode) wordt toegelaten die aan de AEM kant wordt gebruikt om met Adobe Target te verbinden, dan kunt u **slechts** activiteiten XT in AEM tot stand brengen.
 >
->* Als **xt_only** opties **** niet {op de huurder van Adobe Target (cliëntcode) wordt toegelaten, dan kunt u **zowel** XT als activiteiten A/B in AEM tot stand brengen.
+>* Als **xt_only** opties **&#x200B;**&#x200B;niet &lbrace;op de huurder van Adobe Target (cliëntcode) wordt toegelaten, dan kunt u **zowel** XT als activiteiten A/B in AEM tot stand brengen.
 >
 >**Extra nota:** **xt_only** opties is het plaatsen die op een bepaalde huurder van het Doel wordt toegepast (clientcode) en kan slechts direct in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
 
@@ -80,7 +80,7 @@ Voeg een activiteit toe of bewerk een bestaande activiteit om uw marketing inspa
 * **Targeting engine:** [AEM](/help/sites-authoring/personalization.md#aem) of [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) als de engine voor gerichte content.
 
 * **Een doelconfiguratie selecteren:** (alleen voor Adobe Target) De cloudconfiguratie die deze activiteit moet gebruiken om verbinding te maken met Adobe Target. Deze optie wordt alleen weergegeven als Adobe Target is geselecteerd als doelengine.
-* **Type activiteit: **Het type activiteit - A/B-test of -ervaring gericht op
+* **Type activiteit: &#x200B;** Het type activiteit - A/B-test of -ervaring gericht op
 * **Doelstelling:** (optioneel) Een beschrijving van de activiteit.
 * **Ervaringen:** Toewijzingen tussen doelgroepnamen en de marketingsegmenten waarop u zich richt.
 * **Verkeerspercentages:** Als A/B-test is geselecteerd, kunt u aanpassen hoeveel verkeer (in percenten) naar elke ervaring gaat.
@@ -108,7 +108,7 @@ Een activiteit toevoegen:
 1. Voeg een of meer ervaringen toe aan de activiteit. Klik **toevoegen Ervaring**.
 1. Als u gebruikmaakt van AEM of Adobe Target-ervaring als doelwit:
 
-   1. Klik **Selecteer het Publiek **en selecteer het segment dat uw ervaringsdoelstellingen.
+   1. Klik **Selecteer het Publiek &#x200B;** en selecteer het segment dat uw ervaringsdoelstellingen.
    1. Klik **toevoegen Ervaring**, typ een naam, en klik **O.K.**.
 
    1. Klik op **Next**.

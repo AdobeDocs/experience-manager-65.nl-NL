@@ -37,7 +37,7 @@ Wanneer u een reeks van de Rotatie creeert, adviseert de Adobe de volgende beste
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/limitations.md).[
+Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitations.md).
 
 ## Snel starten: centrifuges {#quick-start-spin-sets}
 
@@ -128,7 +128,7 @@ Wanneer u een reeks van de Rotatie creeert, adviseert de Adobe de volgende beste
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/limitations.md).[
+Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitations.md).
 
 **om een Reeks van de Draai tot stand te brengen:**
 
@@ -226,6 +226,7 @@ Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebru
    * Als u een element wilt verwijderen, selecteert u het en selecteert u **[!UICONTROL Delete Asset]** .
    * Als u een voorinstelling wilt toepassen, selecteert u het pictogram Voorinstelling en selecteert u een voorinstelling.
    * Als u een volledige centrifugeset wilt verwijderen, navigeert u naar de centrifugeset, selecteert u deze en selecteert u **[!UICONTROL Delete]**
+
    >[!NOTE]
    >
    >U kunt de afbeeldingen in een centrifugeset bewerken door naar de set te navigeren, **[!UICONTROL Set Members]** in de linkertrack te selecteren en vervolgens het potloodpictogram op een afzonderlijk element te selecteren om het bewerkingsvenster te openen.

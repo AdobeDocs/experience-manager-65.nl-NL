@@ -45,7 +45,7 @@ De standaard-URL van CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.js
 
    De volgende voorbeelden bevatten het bestand translatie.json voor Engelse en Franse landinstellingen van de AEM Forms-werkruimte.
 
-   ](assets/translation_json_in_en.png) ![ translatie_json_in_fr ![ ](assets/translation_json_in_fr.png)
+   ![&#128279;](assets/translation_json_in_en.png)  translatie_json_in_fr ![ ](assets/translation_json_in_fr.png)
 
 ## Samengevouwen categorieën, wachtrijen en processen lokaliseren {#localizing-collapsed-categories-queues-and-processes}
 
@@ -78,7 +78,7 @@ Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
    }
    ```
 
-1. Voer alle semantische veranderingen uit die in het [ ](../../forms/using/introduction-customizing-html-workspace.md) artikel van de Aanpassing van Workspace worden vermeld.
+1. Voer alle semantische veranderingen uit die in het [&#128279;](../../forms/using/introduction-customizing-html-workspace.md) artikel van de Aanpassing van Workspace worden vermeld.
 1. Navigeer aan *js/runtime/nut* omslag en open het {*dossier 2} usersessie.js voor het uitgeven.*
 1. Bepaal de plaats van de code die in het originele codeblok wordt vermeld en voeg de voorwaarde *lang toe!== &quot;nw&quot;* aan de if verklaring:
 

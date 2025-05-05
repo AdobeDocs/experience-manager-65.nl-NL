@@ -31,7 +31,7 @@ Gebruik de volgende procedure om een framework voor het bijhouden van video&#39;
 
 >[!NOTE]
 >
->Voor nieuwe implementaties, adviseert men dat u **niet** de erfenisopties voor video het volgen gebruikt. Gebruik in plaats hiervan de **methode 0} Mijlpalen.**
+>Voor nieuwe implementaties, adviseert men dat u **niet** de erfenisopties voor video het volgen gebruikt. Gebruik in plaats hiervan de **methode 0&rbrace; Mijlpalen.**
 
 ## Gemeenschappelijke stappen {#common-steps}
 
@@ -80,7 +80,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>De variabelen die aan dit worden in kaart gebracht zullen de <strong> gebruikersvriendelijke </strong> naam (<strong> Titel </strong>) van de video bevatten als reeks in DAM; als dit niet wordt geplaatst, zal het 4} dossier van de video </strong> in plaats daarvan worden verzonden. <strong> Slechts één keer verzonden, aan het begin van het afspelen van een video.</td>
+   <td>De variabelen die aan dit worden in kaart gebracht zullen de <strong> gebruikersvriendelijke </strong> naam (<strong> Titel </strong>) van de video bevatten als reeks in DAM; als dit niet wordt geplaatst, zal het 4&rbrace; dossier van de video </strong> in plaats daarvan worden verzonden. <strong> Slechts één keer verzonden, aan het begin van het afspelen van een video.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -227,7 +227,7 @@ De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit m
 
 ![ chlimage_1-128 ](assets/chlimage_1-128.png)
 
-*dit is de **eerste vraag**die aan Adobe Analytics wordt gemaakt die de volgende waarden bevatten:*
+*dit is de **eerste vraag**&#x200B;die aan Adobe Analytics wordt gemaakt die de volgende waarden bevatten:*
 
 * *prop1 en eVar1 voor eventdata.a.media.name,*
 * *props2-4, samen met eVar2 en eVar3 die contentType (video) en segment (1 :O: 1-4) bevatten*
@@ -235,7 +235,7 @@ De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit m
 
 ![ chlimage_1-129 ](assets/chlimage_1-129.png)
 
-*dit is de **derde vraag**die aan Adobe Analytics wordt gemaakt:*
+*dit is de **derde vraag**&#x200B;die aan Adobe Analytics wordt gemaakt:*
 
 * *prop1 en eVar1 bevatten a.media.name;*
 * *event1 omdat een segment is bekeken*
@@ -297,7 +297,7 @@ Deze methode is gelijkaardig aan de methode van Mijlpalen met het verschil dat d
  <tbody>
   <tr>
    <td>eventData.videoName <br /> </td>
-   <td>De variabelen die aan dit worden in kaart gebracht zullen de <strong> gebruikersvriendelijke </strong> naam (<strong> Titel </strong>) van de video bevatten als reeks in DAM; als de Titel niet wordt geplaatst, zal het 4} dossier van de video </strong> in plaats daarvan worden verzonden. <strong> Slechts één keer verzonden, aan het begin van het spelen van een video.<br /> </td>
+   <td>De variabelen die aan dit worden in kaart gebracht zullen de <strong> gebruikersvriendelijke </strong> naam (<strong> Titel </strong>) van de video bevatten als reeks in DAM; als de Titel niet wordt geplaatst, zal het 4&rbrace; dossier van de video </strong> in plaats daarvan worden verzonden. <strong> Slechts één keer verzonden, aan het begin van het spelen van een video.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -322,7 +322,7 @@ Deze methode is gelijkaardig aan de methode van Mijlpalen met het verschil dat d
 
    ![ lmilestone1 ](assets/lmilestones1.png)
 
-   *de **pev3**variabele die in de vraag wordt verzonden bevat de volgende informatie:*
+   *de **pev3**&#x200B;variabele die in de vraag wordt verzonden bevat de volgende informatie:*
 
    * *Naam* - de naam van het videodossier (*film.avi*)
 
@@ -338,7 +338,7 @@ Deze methode is gelijkaardig aan de methode van Mijlpalen met het verschil dat d
 
 ## Verouderde seconden {#legacy-seconds}
 
-Wanneer het gebruiken van de** erfenisseconden** methode, worden de vraag van Adobe Analytics teweeggebracht om de n-de seconde, waar N op het Spoor compensatieveld wordt gespecificeerd.
+Wanneer het gebruiken van de **&#x200B; erfenisseconden** methode, worden de vraag van Adobe Analytics teweeggebracht om de n-de seconde, waar N op het Spoor compensatieveld wordt gespecificeerd.
 
 1. Stel de verschuiving van track in op een willekeurig aantal seconden,
 
@@ -354,7 +354,7 @@ Wanneer het gebruiken van de** erfenisseconden** methode, worden de vraag van Ad
  <tbody>
   <tr>
    <td>eventData.videoName <br /> </td>
-   <td>De variabelen die aan dit worden in kaart gebracht zullen de <strong> gebruikersvriendelijke </strong> naam (<strong> Titel </strong>) van de video bevatten als reeks in DAM; als de Titel niet wordt geplaatst, zal het 4} dossier van de video </strong> in plaats daarvan worden verzonden. <strong> Slechts één keer verzonden, aan het begin van het spelen van een video.<br /> </td>
+   <td>De variabelen die aan dit worden in kaart gebracht zullen de <strong> gebruikersvriendelijke </strong> naam (<strong> Titel </strong>) van de video bevatten als reeks in DAM; als de Titel niet wordt geplaatst, zal het 4&rbrace; dossier van de video </strong> in plaats daarvan worden verzonden. <strong> Slechts één keer verzonden, aan het begin van het spelen van een video.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>

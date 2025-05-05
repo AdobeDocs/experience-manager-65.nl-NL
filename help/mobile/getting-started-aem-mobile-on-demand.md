@@ -90,7 +90,7 @@ Om met de rollen en de verantwoordelijkheden van de Ontwikkelaar te beginnen, zi
 
 ## AEM auteur {#aem-author}
 
-Een ***AEM Auteur* (of *Markering*) **gebruikt de douane ontwikkelde of uit-van-de-doos malplaatjes en componenten om pagina&#39;s toe te voegen en uit te geven, componenten te slepen en neer te zetten en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toe te voegen. AEM ingebouwde inhoudsredacteur wordt dan gebruikt door *AEM Auteurs* om rijke en relevante ervaringen binnen app, met inbegrip van integratie met de rest van Adobe Experience Cloud tot stand te brengen.
+Een ***AEM Auteur* (of *Markering*) &#x200B;** gebruikt de douane ontwikkelde of uit-van-de-doos malplaatjes en componenten om pagina&#39;s toe te voegen en uit te geven, componenten te slepen en neer te zetten en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toe te voegen. AEM ingebouwde inhoudsredacteur wordt dan gebruikt door *AEM Auteurs* om rijke en relevante ervaringen binnen app, met inbegrip van integratie met de rest van Adobe Experience Cloud tot stand te brengen.
 
 Een AEM auteur moet de volgende onderwerpen begrijpen wanneer hij een app maakt met AEM Mobile On-demand Services:
 

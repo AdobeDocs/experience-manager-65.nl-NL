@@ -22,7 +22,7 @@ Hoewel de meeste mogelijkheden aanwezig zijn in de interface met aanraakbedienin
 
 In de volgende lijst wordt de status van de mogelijkheden weergegeven, zoals geïmplementeerd in AEM 6.5.
 
-Voor aanbevelingen voor klanten die aan AEM 6.5 bevorderen, zie {de aanbevelingen van het 0} gebruikersinterface voor klanten ](/help/sites-deploying/ui-recommendations.md).[
+Voor aanbevelingen voor klanten die aan AEM 6.5 bevorderen, zie {de aanbevelingen van het 0} gebruikersinterface voor klanten [&#128279;](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >

@@ -79,7 +79,7 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
    </DDX>
    ```
 
-   Voor informatie bij het aanpassen van de watermerkverschijning, de tekst, en de groepering, zie het Toevoegen van en het verwijderen van watermerken en achtergronden in de [ Dienst van de Assembler en het 1} document van de Verwijzing DDX.](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf)
+   Voor informatie bij het aanpassen van de watermerkverschijning, de tekst, en de groepering, zie het Toevoegen van en het verwijderen van watermerken en achtergronden in de [ Dienst van de Assembler en het 1&rbrace; document van de Verwijzing DDX.](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf)
 
    >[!NOTE]
    >

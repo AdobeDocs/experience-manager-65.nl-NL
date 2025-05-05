@@ -136,8 +136,8 @@ Zie [ Dynamic Media Assets aan pagina&#39;s ](/help/assets/adding-dynamic-media-
 
 Publish de 360 Video zodat u deze kunt gebruiken. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de wolk van Dynamic Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 
-Zie {de activa van Dynamic Media van 0} Publish ](/help/assets/publishing-dynamicmedia-assets.md) voor details op hoe te om 360 Video te publiceren.
-[
+Zie {de activa van Dynamic Media van 0} Publish  voor details op hoe te om 360 Video te publiceren.
+[&#128279;](/help/assets/publishing-dynamicmedia-assets.md)
 Zie ook [ bed de Video of Kijker van het Beeld op een Web-pagina ](/help/assets/embed-code.md) in.
 Zie ook [ Verbinding URLs aan uw Webtoepassing ](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
 Zie ook [ activa van Dynamic Media aan pagina&#39;s ](/help/assets/adding-dynamic-media-assets-to-pages.md) toevoegen.

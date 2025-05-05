@@ -90,7 +90,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
 
 1. Heb toegang tot de algemene parameters van de vorm gebruikend **uitgeeft** knoop die bij het begin van de vorm wordt gevonden. Het **lusje van de Vorm** laat u een dank u pagina selecteren waaraan de gebruiker na het bevestigen van de vorm opnieuw zal worden gericht.
 
-   Het **Geavanceerde** vorm laat u het type van vorm selecteren. Het **gebied van Opties van 0} Post {geeft u de keus tussen drie types van de vormen van Adobe Campaign:**
+   Het **Geavanceerde** vorm laat u het type van vorm selecteren. Het **gebied van Opties van 0&rbrace; Post &lbrace;geeft u de keus tussen drie types van de vormen van Adobe Campaign:**
 
    * **Adobe Campaign: sparen profiel**: laat u tot een ontvanger in Adobe Campaign (standaardwaarde) leiden of bijwerken.
    * **Adobe Campaign: Abonneer aan de Diensten**: laat u de abonnementen van een ontvanger in Adobe Campaign beheren.
@@ -98,7 +98,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
 
    Het **gebied van de Configuratie van de Actie** laat u specificeren al dan niet u het ontvankelijke profiel in het gegevensbestand van Adobe Campaign zou willen tot stand brengen als het nog niet bestaat. Om dit te doen, controleer **creeer gebruiker als niet bestaande** optie.
 
-1. Voeg de geselecteerde componenten toe door deze vanuit de gereedschapset te slepen en neer te zetten op het formulier. Voor meer informatie over de beschikbare specifieke componenten van Adobe Campaign, zie {de Componenten van de Vorm van 0} Adobe ](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).[
+1. Voeg de geselecteerde componenten toe door deze vanuit de gereedschapset te slepen en neer te zetten op het formulier. Voor meer informatie over de beschikbare specifieke componenten van Adobe Campaign, zie {de Componenten van de Vorm van 0} Adobe [&#128279;](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
    ![ chlimage_1-188 ](assets/chlimage_1-188.png)
 

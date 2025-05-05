@@ -60,7 +60,7 @@ Alternatief, als u de revisie schoonmaakbeurttaak manueel wilt in werking stelle
 
 1. Ga naar **Hulpmiddelen - Verrichtingen - Dashboard - Onderhoud** of doorblader direct aan `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
 1. Klik het **Dagelijkse Venster van het Onderhoud**.
-1. Beweeg over het **pictogram van de Opruiming van de Herziening 0} {.**
+1. Beweeg over het **pictogram van de Opruiming van de Herziening 0&rbrace; &lbrace;.**
 1. Klik **Looppas**.
 
    ![ chlimage_1-93 ](assets/chlimage_1-93.png)

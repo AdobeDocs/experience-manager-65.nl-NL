@@ -48,7 +48,7 @@ Plaats AEM Forms in de modus voor veilige back-up (momentopname) of in de modus 
 Daarnaast moet u de volgende richtlijnen voor het back-up-/herstelproces in acht nemen.
 
 * Maak een back-up van de GDS-map met behulp van een beschikbaar besturingssysteem of een back-uphulpprogramma van derden. (Zie [ GDS plaats ](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
-* (Optioneel) Maak een back-up van de hoofdmap van de Content Storage met behulp van een beschikbaar besturingssysteem of een externe back-up en hulpprogramma. (Zie {de plaats van de Wortel van de Opslag van 0} Inhoud (stand-alone milieu) ](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) of [ de Hoofdplaats van de Opslag van de Inhoud (gegroepeerd milieu) ](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)[
+* (Optioneel) Maak een back-up van de hoofdmap van de Content Storage met behulp van een beschikbaar besturingssysteem of een externe back-up en hulpprogramma. (Zie {de plaats van de Wortel van de Opslag van 0} Inhoud (stand-alone milieu) [&#128279;](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) of [ de Hoofdplaats van de Opslag van de Inhoud (gegroepeerd milieu) ](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
 * Terug   auteur- en publicatieinstanties ( crx -repository backup).
 
   Aan file voert het milieu van de Oplossing van het Beheer van de Correspondentie, de stappen op de auteur uit en publiceert instanties zoals die in [ Steun en herstel ](/help/sites-administering/backup-and-restore.md) worden beschreven.

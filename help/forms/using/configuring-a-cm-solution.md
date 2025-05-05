@@ -51,4 +51,4 @@ Voer de volgende stappen uit, zodat u de Publish-instantie-URL voor het openbare
 
 1. Klik op **[!UICONTROL Save]**.
 
-Voor meer informatie over het vormen van het Beheer van de Correspondentie, zie {de Eigenschappen van de Configuratie van het Beheer van de Correspondentie ](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).[
+Voor meer informatie over het vormen van het Beheer van de Correspondentie, zie &lbrace;de Eigenschappen van de Configuratie van het Beheer van de Correspondentie [&#128279;](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).

@@ -120,7 +120,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **sparen commentaar in variabele:** sparen de commentaar in een variabele van het gegevenstype van het Koord. Deze optiesvertoningen slechts als u **selecteert staan toegewezen toe om commentaar** checkbox toe te voegen.
 
 * **staat toegewezen toe om gehechtheid(s) aan de taak** toe te voegen: Selecteer deze optie om gehechtheid voor de taak toe te laten. Een toegewezen persoon kan de bijlagen toevoegen vanuit AEM Postvak In op het moment dat de taak wordt verzonden.
-* **sparen de gehechtheid van de outputtaak gebruikend**: Specificeer de plaats van gehechtheidsomslag. U kunt uitvoertaakbijlagen opslaan met een pad dat is gebaseerd op de laadbewerking of met een variabele van een array van documentgegevenstype. Deze optiesvertoningen slechts als u **verkiest toewees toe te voegen om gehechtheid(s) aan de taak** checkbox toe te voegen en **Aangepaste vorm** te selecteren, **Gelezen-slechts adaptieve vorm**, of **Niet-interactief PDF document** van de **Type** drop-down lijst in de **Vorm/het 1} tabel.**
+* **sparen de gehechtheid van de outputtaak gebruikend**: Specificeer de plaats van gehechtheidsomslag. U kunt uitvoertaakbijlagen opslaan met een pad dat is gebaseerd op de laadbewerking of met een variabele van een array van documentgegevenstype. Deze optiesvertoningen slechts als u **verkiest toewees toe te voegen om gehechtheid(s) aan de taak** checkbox toe te voegen en **Aangepaste vorm** te selecteren, **Gelezen-slechts adaptieve vorm**, of **Niet-interactief PDF document** van de **Type** drop-down lijst in de **Vorm/het 1&rbrace; tabel.**
 
 >[!NOTE]
 >

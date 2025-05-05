@@ -481,7 +481,7 @@ Het ontwerpdialoog voor het paragraafsysteem (bijvoorbeeld, parsys) is een speci
 
 Nadat een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een alineasysteem, kunt u:
 
-1. Open ](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0} {voor een pagina en laat de vereiste component toe.[
+1. Open [&#128279;](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0&rbrace; &lbrace;voor een pagina en laat de vereiste component toe.
 1. Voeg de vereiste componenten onder aan de eigenschap `components` van uw sjabloondefinitie toe:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
@@ -599,7 +599,7 @@ Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in** CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
+* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in **&#x200B; CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

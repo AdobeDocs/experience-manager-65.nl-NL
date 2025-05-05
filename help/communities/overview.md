@@ -98,9 +98,9 @@ In het auteursmilieu, verleent de globale navigatieconsole toegang tot de [ cons
    * Site maken
    * Site bewerken
    * Sitebeheer
-   * ](/help/communities/groups.md) console van de Groepen van 0} Gemeenschap {[
+   * [&#128279;](/help/communities/groups.md) console van de Groepen van 0&rbrace; Gemeenschap &lbrace;
 
-* ](/help/communities/moderation.md) console van 0} Moderatie[
+* [&#128279;](/help/communities/moderation.md) console van 0&rbrace; Moderatie
 
    * Gemeenschappelijke bulkmoderatie UI voor de milieu&#39;s van de Auteur en van Publish.
    * Nieuwe filtercriteria.
@@ -121,7 +121,7 @@ De globale hulpmiddelenconsole verleent toegang tot de volgende hulpmiddelen van
 
    * Sjablonen voor communitysites maken en beheren.
 
-* ](/help/communities/tools.md#grouptemplatesconsole) console van de Malplaatjes van 0} Groep[
+* [&#128279;](/help/communities/tools.md#grouptemplatesconsole) console van de Malplaatjes van 0&rbrace; Groep
 
    * Creëer en beheer communitygroepssjablonen.
 
@@ -129,7 +129,7 @@ De globale hulpmiddelenconsole verleent toegang tot de volgende hulpmiddelen van
 
    * Creëer en beheer communityfuncties.
 
-* ](/help/communities/tools.md#storageconfiguratonconsole) console van de Configuratie van de Opslag 0}[
+* [&#128279;](/help/communities/tools.md#storageconfiguratonconsole) console van de Configuratie van de Opslag 0&rbrace;
 
    * Selecteer en vorm de [ gemeenschappelijke opslag ](/help/communities/working-with-srp.md) voor de plaats.
 

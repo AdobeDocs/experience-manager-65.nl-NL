@@ -29,7 +29,7 @@ Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolco
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}
 
-Een ***AEM Auteur* (of *Markering*) **kan uit-van-de-doos malplaatjes en componenten gebruiken om pagina&#39;s toe te voegen en uit te geven. U kunt componenten slepen en neerzetten, en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toevoegen.
+Een ***AEM Auteur* (of *Markering*) &#x200B;** kan uit-van-de-doos malplaatjes en componenten gebruiken om pagina&#39;s toe te voegen en uit te geven. U kunt componenten slepen en neerzetten, en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toevoegen.
 
 Zie de volgende bronnen:
 

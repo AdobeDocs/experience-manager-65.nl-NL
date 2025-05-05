@@ -38,7 +38,7 @@ Als u een component `Leaderboard` in de ontwerpmodus aan een pagina wilt toevoeg
 
 En sleep het naar de juiste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
@@ -145,6 +145,6 @@ Configuratie van de component Leaderboard:
 
 ### Aanvullende informatie {#additional-information}
 
-De meer informatie kan op de ](/help/communities/leaderboard.md) pagina van de Hoofdzaak van 0} worden gevonden Leaderboard {voor ontwikkelaars.[
+De meer informatie kan op de [&#128279;](/help/communities/leaderboard.md) pagina van de Hoofdzaak van 0&rbrace; worden gevonden Leaderboard &lbrace;voor ontwikkelaars.
 
 De instructies voor het creëren van regels worden verstrekt op de [ Scoring van Gemeenschappen en de pagina van Badges ](/help/communities/implementing-scoring.md) voor beheerders.

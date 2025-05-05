@@ -50,7 +50,7 @@ Met dit opdrachtscript wordt:
 
    >[!NOTE]
    >
-   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] -bestand rendert. Het wordt opgeslagen als samengeperst pakket gebruikend [ ZIP ](https://www.techterms.com/definition/zip) compressie. Voor meer informatie, zie {de Formaten INX en IDML van de Uitwisseling van het InDesign 0} ](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).[
+   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] -bestand rendert. Het wordt opgeslagen als samengeperst pakket gebruikend [ ZIP ](https://www.techterms.com/definition/zip) compressie. Voor meer informatie, zie {de Formaten INX en IDML van de Uitwisseling van het InDesign 0} [&#128279;](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >

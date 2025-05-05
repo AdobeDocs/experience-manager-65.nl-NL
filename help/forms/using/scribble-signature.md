@@ -51,7 +51,7 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
       </extras>
       ```
 
-   1. Selecteer het **lusje van de Mening van het Ontwerp**. Voor de bevestigingsdoos, klik ja ****.
+   1. Selecteer het **lusje van de Mening van het Ontwerp**. Voor de bevestigingsdoos, klik ja **&#x200B;**.
    1. Sla het formulier op.
 
 1. Het formulier weergeven op een ondersteund apparaat/desktopbrowser.
@@ -72,7 +72,7 @@ Wanneer u tijdens het maken van de krabbelmodule op het pictogram voor de geoloc
 
 >[!NOTE]
 >
-Op de iPad is het standaard verplicht om geolocatiegegevens in te sluiten.
+>Op de iPad is het standaard verplicht om geolocatiegegevens in te sluiten.
 
 Op iPad, wordt het geolocatiepictogram niet getoond door gebrek, en de geolocatieinformatie wordt automatisch ingebed, wanneer u **O.K.** klikt.
 
@@ -102,4 +102,4 @@ Klik het **pictogram van Borstels** om een lijst van beschikbare pengrootte te t
 De handtekeningen uit het formulier verwijderen:
 
 * (Mobiele apparaten) Lang druk het handtekeningsgebied, en op de bevestigingsdialoog, uitgezochte **ja**.
-* (Desktop) Beweeg over het handtekeningsgebied, klik **annuleer** pictogram, en op de bevestigingsdialoog, klik ja ****.
+* (Desktop) Beweeg over het handtekeningsgebied, klik **annuleer** pictogram, en op de bevestigingsdialoog, klik ja **&#x200B;**.

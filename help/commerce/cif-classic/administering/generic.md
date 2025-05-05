@@ -501,7 +501,7 @@ Een catalogus genereren:
    Bijvoorbeeld, open het **Codes/Trefwoorden** gebied om Activiteit te selecteren, dan het zwemmen van de Geometrixx-Buiten sectie.
 
 1. Klik **O.K.** zodat uw eigenschappen worden bewaard; de voorbeeldproducten worden getoond onder de **Criteria van de Selectie van het Product** op de blauwdrukpagina.
-1. Klik **Veranderingen van de Uitvoer...**, selecteer **pagina van de Uitvoer en alle subpagina&#39;s**, dan klik **daarna** toen **Uitdraaiing**. Zodra de rollout met succes wordt voltooid, toont de **1} indicator van de Status {als groen.**
+1. Klik **Veranderingen van de Uitvoer...**, selecteer **pagina van de Uitvoer en alle subpagina&#39;s**, dan klik **daarna** toen **Uitdraaiing**. Zodra de rollout met succes wordt voltooid, toont de **1&rbrace; indicator van de Status &lbrace;als groen.**
 1. U kunt **dicht** nu klikken en de nieuwe catalogussectie controleren; bijvoorbeeld, op en onder:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
@@ -625,7 +625,7 @@ Als u een voucher niet beschikbaar wilt maken voor klanten, kunt u:
 * Deactiveer de voucher - deze blijft beschikbaar in de auteursomgeving zodat u deze later opnieuw kunt activeren.
 * Verwijder het volledig.
 
-Beide acties kunnen van de **** console van Websites worden gedaan.
+Beide acties kunnen van de **&#x200B;**&#x200B;console van Websites worden gedaan.
 
 ### Vouchers wijzigen {#modifying-vouchers}
 

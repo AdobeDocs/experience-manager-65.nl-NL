@@ -35,7 +35,7 @@ Hieronder vindt u verschillende codeerrichtlijnen en aanbevolen procedures voor 
 ### Scripts {#scripts}
 
 * [ Getrouwde Componenten van Gemeenschappen ](sideloading.md) - hoe te om een component dynamisch toe te voegen nadat de pagina laadt.
-* {de Hoofdzaak van de Redacteur van de Tekst van 0} Rich ](rte.md) - hoe te om de rijke tekst UI aan leden voor het posten van inhoud aan te passen.[
+* {de Hoofdzaak van de Redacteur van de Tekst van 0} Rich [&#128279;](rte.md) - hoe te om de rijke tekst UI aan leden voor het posten van inhoud aan te passen.
 
 ### IDE {#ide}
 

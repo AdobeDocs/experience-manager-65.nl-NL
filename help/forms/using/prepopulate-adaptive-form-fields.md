@@ -391,9 +391,11 @@ U kunt de AEM Forms-server zo configureren dat de handeling voor het samenvoegen
    1. Schakel de optie Configuration.af.clinentside.datamerge.enabled.name in
 * U kunt als volgt vanaf de opdrachtregel in- of uitschakelen:
    * Voer de volgende opdracht cURL uit om in te schakelen:
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * Als u deze optie wilt uitschakelen, voert u de volgende opdracht cURL uit:
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   Om volledig voordeel van prepopulate gegevens bij cliëntoptie te nemen, werk uw prefill dienst bij om [ FileAttachmentMap ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) en [ CustomContext ](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) terug te keren

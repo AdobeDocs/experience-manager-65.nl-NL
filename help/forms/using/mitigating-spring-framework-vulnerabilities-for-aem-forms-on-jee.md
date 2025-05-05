@@ -34,7 +34,7 @@ Dit document biedt richtlijnen voor het verhelpen van twee kritieke kwetsbaarhed
 
 | AEM Forms-versie | Vereiste actie |
 |-------------------|-----------------|
-| 6.5.22.0 | 1. [ Download hotfix voor uw milieu ](/help/release-notes/aem-forms-hotfix.md). </br> 2. Om deze moeilijke situatie te installeren, volg de instructies om het Pak van de Dienst op een Vorm van AEM op JEE ](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) te installeren.[ |
+| 6.5.22.0 | 1. [ Download hotfix voor uw milieu ](/help/release-notes/aem-forms-hotfix.md). </br> 2. Om deze moeilijke situatie te installeren, volg de instructies om het Pak van de Dienst op een Vorm van AEM op JEE [&#128279;](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) te installeren. |
 | 6.5.17.0 - 6.5.21.0 | [ pas handmatige matigingsstappen ](#manual-mitigation-steps) toe. |
 | 6.5 - 6.5.16.0 | 1. [ installeer het recentste de dienstpak ](/help/release-notes/release-notes.md)<br> 2. [ voert de aangewezen oplossing ](#version-specific-solutions) uit die op uw bijgewerkte versie wordt gebaseerd. |
 

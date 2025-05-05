@@ -61,7 +61,7 @@ Ga als volgt te werk om een XDP-sjabloon voor het afdrukkanaal te maken:
 
 1. Open Forms Designer, uitgezochte **Dossier** > **Nieuw** > **Gebruik een lege vorm,** selecteer **daarna**, en selecteer dan **Afwerking** om de vorm voor malplaatjeverwezenlijking te openen.
 
-   Zorg ervoor dat de **Bibliotheek van Objecten** en **3} opties van Objecten {van het** Venster **menu worden geselecteerd.**
+   Zorg ervoor dat de **Bibliotheek van Objecten** en **3&rbrace; opties van Objecten &lbrace;van het** Venster **menu worden geselecteerd.**
 
 1. Sleep-en-daling de **Subform** component van de **Bibliotheek van Objecten** aan de vorm.
 1. Selecteer subform zodat kunt u de opties voor subform in het **venster van Objecten** in de juiste ruit zien.
@@ -98,10 +98,10 @@ Ga als volgt te werk om een XDP-sjabloon voor het afdrukkanaal te maken:
 
    Als u tijd wilt besparen, kunt u ook bestaande subformulieren kopiëren en plakken om aanvullende subformulieren te maken.
 
-   Om het **subform van Hart** aan het recht van het subformulier van Helden te verschuiven, selecteer het **subform van Grafieken** van de linkerruit, selecteer het **Lay-out** lusje, en specificeer een waarde voor het **AnchorX** gebied. De waarde moet groter zijn dan de waarde voor het **1} gebied van de Breedte {voor het** subform van Heffingen **.** Selecteer het **subformulier van Heffingen** en selecteer het **3} lusje van de Lay-out {zodat kunt u de waarde van het** Breedte **gebied bekijken.**
+   Om het **subform van Hart** aan het recht van het subformulier van Helden te verschuiven, selecteer het **subform van Grafieken** van de linkerruit, selecteer het **Lay-out** lusje, en specificeer een waarde voor het **AnchorX** gebied. De waarde moet groter zijn dan de waarde voor het **1&rbrace; gebied van de Breedte {voor het** subform van Heffingen **.** Selecteer het **subformulier van Heffingen** en selecteer het **3} lusje van de Lay-out &lbrace;zodat kunt u de waarde van het** Breedte **gebied bekijken.**
 
 1. Sleep-en-daling het **voorwerp van de Tekst** van de **Bibliotheek van Objecten** aan de vorm en ga **Wijzerplaat XXXX in om** tekst in de doos in te tekenen.
-1. Klik het tekstvoorwerp in de linkerruit met de rechtermuisknop aan, uitgezocht **noem Voorwerp** anders, en ga de naam van het tekstvoorwerp in aangezien **** intekent.
+1. Klik het tekstvoorwerp in de linkerruit met de rechtermuisknop aan, uitgezocht **noem Voorwerp** anders, en ga de naam van het tekstvoorwerp in aangezien **&#x200B;**&#x200B;intekent.
 
    ![ XDP malplaatje ](assets/print_xdp_template_subform_new.png)
 
@@ -127,7 +127,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
 1. Open Forms Designer, uitgezochte **Dossier** > **Nieuw** > **Gebruik een lege vorm,** selecteer **daarna**, en selecteer dan **Afwerking** om de vorm voor malplaatjeverwezenlijking te openen.
 
-   Zorg ervoor dat de **Bibliotheek van Objecten** en **3} opties van Objecten {van het** Venster **menu worden geselecteerd.**
+   Zorg ervoor dat de **Bibliotheek van Objecten** en **3&rbrace; opties van Objecten &lbrace;van het** Venster **menu worden geselecteerd.**
 
 1. Sleep-en-daling de **component van de Lijst** van de **Bibliotheek van Objecten** aan de vorm.
 1. In het dialoogvenster Tabel invoegen:
@@ -153,7 +153,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
    ![ gebied van de Tekst voor lay-outfragment ](assets/layout_fragment_print_text_field_new.png)
 
-   Op dezelfde manier belemmering-en-daling de **component van het Gebied van de Tekst** {aan de **Tijd**, **Aantal**, **Duur**, en **de rijen van de Laden**.
+   Op dezelfde manier belemmering-en-daling de **component van het Gebied van de Tekst** &lbrace;aan de **Tijd**, **Aantal**, **Duur**, en **de rijen van de Laden**.
 
 1. Selecteer **Dossier** > **sparen als** om het dossier op het lokale dossiersysteem op te slaan:
 
@@ -162,7 +162,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
    1. Selecteer **sparen**.
 
-   Zodra u een malplaatje XDP voor lay-outfragment gebruikend Forms Designer hebt gecreeerd, moet u [ ](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) het aan de Server van AEM Forms uploaden zodat het malplaatje voor gebruik terwijl het creëren van lay-outfragmenten beschikbaar is.
+   Zodra u een malplaatje XDP voor lay-outfragment gebruikend Forms Designer hebt gecreeerd, moet u [&#128279;](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) het aan de Server van AEM Forms uploaden zodat het malplaatje voor gebruik terwijl het creëren van lay-outfragmenten beschikbaar is.
 
 ## Een sjabloon maken voor het webkanaal {#create-template-for-web-channel}
 
@@ -180,8 +180,8 @@ Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakt
 Ga als volgt te werk om een map voor de bewerkbare sjablonen te maken:
 
 1. Selecteer **Hulpmiddelen** ![ hammer-pictogram ](assets/hammer-icon.svg) > **Browser van de Configuratie**.
-   * Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
-1. In Browser van de Configuratie pagina, creeer de uitgezochte ****.
+   * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
+1. In Browser van de Configuratie pagina, creeer de uitgezochte **&#x200B;**.
 1. In **creeer de dialoog van de Configuratie**, specificeer **Create_First_IC_templates** als titel voor de omslag, controleer **Bewerkbare Malplaatjes**, en selecteer **creeer**.
 
    ![ vorm Webmalplaatjes ](assets/create_first_ic_web_template_new.png)
@@ -208,7 +208,7 @@ Om een malplaatje voor het kanaal van het Web in de **te creëren Create_First_I
 
 1. Navigeer aan de aangewezen malplaatjeomslag door **Hulpmiddelen** te selecteren > **Malplaatjes** > **Create_First_IC_templates** omslag.
 1. Selecteer **creeer**.
-1. Op **kies een 1} configuratietovenaar van het Type van Malplaatje {, uitgezochte** Interactieve Communicatie - het Kanaal van het Web **en selecteer** daarna **.**
+1. Op **kies een 1&rbrace; configuratietovenaar van het Type van Malplaatje &lbrace;, uitgezochte** Interactieve Communicatie - het Kanaal van het Web **en selecteer** daarna **.**
 1. Op de **tovenaar van de de configuratiedetails van het Malplaatje**, specificeer **Create_First_IC_Web_Template** als malplaatjetitel. Specificeer een facultatieve beschrijving en selecteer **creëren**.
 
    Een bevestigingsbericht dat **Create_First_IC_Web_Template** wordt getoond.
@@ -264,10 +264,10 @@ Ga als volgt te werk om de websjabloon in te schakelen:
 
 ### Knoppen inschakelen in Interactieve communicatie {#enabling-buttons-in-interactive-communications}
 
-Gebaseerd op het gebruiksgeval, moet u **nu betalen** omvatten en **3} knopen (adaptieve vormencomponenten) in Interactieve Communicatie intekenen.** Ga als volgt te werk om het gebruik van deze knoppen in de interactieve communicatie in te schakelen:
+Gebaseerd op het gebruiksgeval, moet u **nu betalen** omvatten en **3&rbrace; knopen (adaptieve vormencomponenten) in Interactieve Communicatie intekenen.** Ga als volgt te werk om het gebruik van deze knoppen in de interactieve communicatie in te schakelen:
 
 1. Selecteer **Structuur** van de drop-down lijst naast de **optie van de Voorproef**.
-1. Selecteer het **wortelpaneel van de Container van het 0} Document {gebruikend de inhoudsboom en selecteer** Beleid **om de componenten te selecteren die voor gebruik in de Interactieve Mededeling worden toegestaan.**
+1. Selecteer het **wortelpaneel van de Container van het 0&rbrace; Document &lbrace;gebruikend de inhoudsboom en selecteer** Beleid **om de componenten te selecteren die voor gebruik in de Interactieve Mededeling worden toegestaan.**
 
    ![ vorm beleid ](assets/structure_configure_policy_new.png)
 

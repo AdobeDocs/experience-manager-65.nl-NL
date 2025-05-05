@@ -299,7 +299,7 @@ In de enkelvoudige selectiemodus is het mogelijk:
 * [Weigeren](#deny)
 * [Verwijderen](#delete)
 * [Sluiten](#close)
-* De Geschiedenis van de Moderatie van de mening [ ](#moderation-history)
+* De Geschiedenis van de Moderatie van de mening [&#128279;](#moderation-history)
 * [Details weergeven](#viewdetails)
 
 De tekst van de post op de kaartweergave boven de mageractiepictogrammen is de tekst van de post en hieronder staan de gegevens die aangeven:

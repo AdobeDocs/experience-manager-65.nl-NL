@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Communautaire functies{#community-functions}
 
-Het type functies dat wordt verwacht van een community-ervaring is bekend. De communautaire eigenschappen zijn beschikbaar als communautaire functies. In wezen zijn ze een of meer pagina&#39;s die vooraf zijn bekabeld om een community-functie te implementeren. Hiervoor is meer nodig dan alleen het toevoegen van een component aan een pagina in de modus Schrijven. Zij zijn de bouwstenen die worden gebruikt om de structuur van het malplaatje van de a [ communautaire plaats ](/help/communities/sites.md) te bepalen waarvan de communautaire plaatsen [ ](/help/communities/sites-console.md) worden gecreeerd.
+Het type functies dat wordt verwacht van een community-ervaring is bekend. De communautaire eigenschappen zijn beschikbaar als communautaire functies. In wezen zijn ze een of meer pagina&#39;s die vooraf zijn bekabeld om een community-functie te implementeren. Hiervoor is meer nodig dan alleen het toevoegen van een component aan een pagina in de modus Schrijven. Zij zijn de bouwstenen die worden gebruikt om de structuur van het malplaatje van de a [ communautaire plaats ](/help/communities/sites.md) te bepalen waarvan de communautaire plaatsen [&#128279;](/help/communities/sites-console.md) worden gecreeerd.
 
 Zodra een communautaire plaats wordt gecreeerd, kan de inhoud aan de resulterende pagina&#39;s worden toegevoegd gebruikend de standaard [ AEM auteurswijze ](/help/sites-authoring/editing-content.md). Verschillende communityfuncties zijn beschikbaar zoals in de console voor communityfuncties.
 
@@ -72,7 +72,7 @@ en de menukoppeling voor de pagina wordt weergegeven als:
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
-De functie van de activiteitenstroom is een pagina met een [ component van de Streams van de Activiteit ](/help/communities/activities.md) met alle geselecteerde meningen (alle activiteiten, gebruikersactiviteiten, en het volgende). Zie ook {de Hoofdzaak van de Stroom van de Activiteit 0} ](/help/communities/essentials-activities.md) voor ontwikkelaars.[
+De functie van de activiteitenstroom is een pagina met een [ component van de Streams van de Activiteit ](/help/communities/activities.md) met alle geselecteerde meningen (alle activiteiten, gebruikersactiviteiten, en het volgende). Zie ook {de Hoofdzaak van de Stroom van de Activiteit 0} [&#128279;](/help/communities/essentials-activities.md) voor ontwikkelaars.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
@@ -122,7 +122,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 ### Kalenderfunctie {#calendar-function}
 
-De kalenderfunctie is een pagina met de component van de a [ Kalender ](/help/communities/calendar.md) wordt gevormd om het etiketteren toe te staan. Zie ook {de Hoofdzaak van de Kalender 0} ](/help/communities/calendar-basics-for-developers.md) voor ontwikkelaars.[
+De kalenderfunctie is een pagina met de component van de a [ Kalender ](/help/communities/calendar.md) wordt gevormd om het etiketteren toe te staan. Zie ook {de Hoofdzaak van de Kalender 0} [&#128279;](/help/communities/calendar-basics-for-developers.md) voor ontwikkelaars.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
@@ -154,7 +154,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 De gekenmerkte inhoudsfunctie is een pagina met de component van de Inhoud van de a [ Aanbevolen ](/help/communities/featured.md) wordt gevormd om commentaren toe te staan om worden toegevoegd en worden geschrapt.
 
-De capaciteit om inhoud te voorzien kan worden toegestaan of worden verworpen per component (zie {de Functie van 0} Blog ](#blog-function), [ de Functie van de Kalender ](#calendar-function), [ Functie van het Forum ](#forum-function), [ Functie van de Ideatie ](#ideation-function), en [ Functie QnA ](#qna-function)).[
+De capaciteit om inhoud te voorzien kan worden toegestaan of worden verworpen per component (zie {de Functie van 0} Blog [&#128279;](#blog-function), [ de Functie van de Kalender ](#calendar-function), [ Functie van het Forum ](#forum-function), [ Functie van de Ideatie ](#ideation-function), en [ Functie QnA ](#qna-function)).
 
 Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor de [ Montages van de Titel en URL ](#title-and-url-settings).
 
@@ -261,7 +261,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met d
 
 De leaderboardfunctie is een pagina met één [ component Leaderboard ](/help/communities/enabling-leaderboard.md).
 
-**NOTA**: De component Leaderboard vereist verdere configuratie *nadat* een communautaire plaats van een communautair malplaatje wordt gecreeerd dat de functie omvat Leaderboard. Specificeer de 3} regels ](/help/communities/enabling-leaderboard.md#rules-tab) van de component Leaderboard [, die van configuratie van [ het scoren en badges ](/help/communities/implementing-scoring.md) voor de communautaire plaats afhangen.
+**NOTA**: De component Leaderboard vereist verdere configuratie *nadat* een communautaire plaats van een communautair malplaatje wordt gecreeerd dat de functie omvat Leaderboard. Specificeer de 3&rbrace; regels [&#128279;](/help/communities/enabling-leaderboard.md#rules-tab) van de component Leaderboard , die van configuratie van [ het scoren en badges ](/help/communities/implementing-scoring.md) voor de communautaire plaats afhangen.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
@@ -376,7 +376,7 @@ Het is mogelijk om niet alleen pagina-inhoud te schrijven, maar componenten te c
 
 Als het vormen van een component op een pagina van een gecreeerde communautaire plaats, kan het noodzakelijk zijn om [ overerving ](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) te annuleren om de component te vormen. De overerving moet worden hersteld wanneer de configuratie is voltooid.
 
-Voor configuratiedetails, bezoek {de Componenten van 0} Gemeenschappen ](/help/communities/author-communities.md) voor auteurs.[
+Voor configuratiedetails, bezoek {de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/author-communities.md) voor auteurs.
 
 ## Community-functie bewerken {#edit-community-function}
 

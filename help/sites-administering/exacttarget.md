@@ -41,7 +41,7 @@ Om een configuratie ExactTarget in Cloud Servicen tot stand te brengen:
 
    ![ chlimage_1-19 ](assets/chlimage_1-19.png)
 
-1. Ga een titel en naar keuze, een naam in en klik **creëren**. Het **ExactTarget 1} configuratievenster van Montages opent.**
+1. Ga een titel en naar keuze, een naam in en klik **creëren**. Het **ExactTarget 1&rbrace; configuratievenster van Montages opent.**
 
    ![ chlimage_1 ](assets/chlimage_1.jpeg)
 
@@ -66,7 +66,7 @@ Om een configuratie ExactTarget in Hulpmiddelen tot stand te brengen:
 
 1. Voor de welkomstpagina, klik **Hulpmiddelen**. Of navigeer daar rechtstreeks door naar `https://<hostname>:<port>/misadmin#/etc` te gaan.
 1. Selecteer **Hulpmiddelen**, toen **de Configuraties van Cloud Servicen,** toen **ExactTarget**.
-1. Klik **Nieuw** om **Create Pagina **venster te openen.
+1. Klik **Nieuw** om **Create Pagina &#x200B;** venster te openen.
 
    ![ chlimage_1-34 ](assets/chlimage_1-3.jpeg)
 

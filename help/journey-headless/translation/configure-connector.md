@@ -77,7 +77,7 @@ Een vertaalconfiguratie maken:
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
    * In dit geval zou een configuratie globaal kunnen worden gemaakt om op alle inhoud, of enkel voor het WKND project van toepassing te zijn.
 
-   {de configuratielocatie van 0} Vertaling ](assets/translation-configuration-location.png)![
+   {de configuratielocatie van 0} Vertaling ![&#128279;](assets/translation-configuration-location.png)
 
 1. Verstrek de volgende informatie op de gebieden en klik dan **creëren**.
    1. Selecteer **Type van Configuratie** in drop-down. Selecteer **Integratie van de Vertaling** van de lijst.

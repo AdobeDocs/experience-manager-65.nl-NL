@@ -381,7 +381,7 @@ Ondersteunt facetextractie. Verstrekt emmers voor elke unieke bezitswaarde in de
 
 * **diepte**
 
-  Aantal jokertekenniveaus waaronder de eigenschap/het relatieve pad kan bestaan (bijvoorbeeld `property=size depth=2` controleert knooppunt/grootte, knooppunt/&amp;ast;/size en knooppunt/&amp;ast;/&amp;ast;/&amp;ast;/size).
+  Aantal jokertekenniveaus waaronder de eigenschap/het relatieve pad kan bestaan (bijvoorbeeld `property=size depth=2` controleert knooppunt/grootte, knooppunt/&ast;/size en knooppunt/&ast;/&ast;/&ast;/size).
 
 ### rangeproperty {#rangeproperty}
 
@@ -479,7 +479,7 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 
    * **volledig**:
 
-     JSON-rendering van het knooppunt splitsen, met `jcr:path` die het pad van de hit aangeeft: standaard worden alleen de directe eigenschappen van het knooppunt weergegeven, inclusief een diepere structuur met `p.nodedepth=N` , die 0 staat voor de gehele, oneindige substructuur; voeg `p.acls=true` toe om de JCR-machtigingen van de huidige sessie voor het opgegeven resultaatitem op te nemen (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove` = }).
+     JSON-rendering van het knooppunt splitsen, met `jcr:path` die het pad van de hit aangeeft: standaard worden alleen de directe eigenschappen van het knooppunt weergegeven, inclusief een diepere structuur met `p.nodedepth=N` , die 0 staat voor de gehele, oneindige substructuur; voeg `p.acls=true` toe om de JCR-machtigingen van de huidige sessie voor het opgegeven resultaatitem op te nemen (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove` = &rbrace;).
 
    * **selectief**:
 

@@ -213,7 +213,7 @@ Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertal
 
    ![ chlimage_1-216 ](assets/chlimage_1-216.png)
 
-   * Dubbelklik het **Koord** of **3} gebieden van de Commentaar {voor het vereiste koord om** te openen geef koord **dialoog uit, geef de vertaling(en) zoals vereist uit, dan klik O.K.** **om de dialoog te sluiten:**
+   * Dubbelklik het **Koord** of **3&rbrace; gebieden van de Commentaar &lbrace;voor het vereiste koord om** te openen geef koord **dialoog uit, geef de vertaling(en) zoals vereist uit, dan klik O.K.** **om de dialoog te sluiten:**
 
    ![ chlimage_1-217 ](assets/chlimage_1-217.png)
 
@@ -320,7 +320,7 @@ Na het bepalen van een woordenboek voor een taal nieuw aan uw AEM instantie moet
        and update as required.
       ```
 
-1. Om de taal beschikbaar te maken in **Voorkeur** van de **** console van Websites moet u de volgende veranderingen in uw toepassing aanbrengen:
+1. Om de taal beschikbaar te maken in **Voorkeur** van de **&#x200B;**&#x200B;console van Websites moet u de volgende veranderingen in uw toepassing aanbrengen:
 
    1. Maak een bedekking voor de structuur onder:
 

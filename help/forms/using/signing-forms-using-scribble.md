@@ -26,7 +26,7 @@ ht-degree: 0%
 | AEM 6,5 | Dit artikel |
 
 
-U kunt de **component van de Handtekening van 0} Krabbelen en** component van de Stap van de Handtekening **gebruiken om (Krabbelen) handtekening op een adaptieve vorm te trekken.** De component Handtekeningstap geeft een PDF-versie van het adaptieve formulier weer. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de component Handtekeningstap te kunnen gebruiken.
+U kunt de **component van de Handtekening van 0&rbrace; Krabbelen en** component van de Stap van de Handtekening **gebruiken om (Krabbelen) handtekening op een adaptieve vorm te trekken.** De component Handtekeningstap geeft een PDF-versie van het adaptieve formulier weer. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de component Handtekeningstap te kunnen gebruiken.
 
 ![ Scripttekendialoog ](/help/forms/using/assets/scribble-signature.png)
 
@@ -55,7 +55,7 @@ U kunt **selecteren vormt** ![ ](assets/configure.png) pictogram om de aspectver
 ## Een adaptief formulier configureren voor het gebruik van de Krabbelhandtekening {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Maak een Document of Record-optie ingeschakeld of een adaptief formulier op basis van een formuliersjabloon. Voor geleidelijke informatie, zie [ Creërend een adaptieve vorm ](../../forms/using/creating-adaptive-form.md).
-1. De belemmering-en-daling de **component van de Handtekening van 0} Krabbelen {van componentenbrowser aan de adaptieve vorm.**
+1. De belemmering-en-daling de **component van de Handtekening van 0&rbrace; Krabbelen &lbrace;van componentenbrowser aan de adaptieve vorm.**
 1. Selecteer **vormen** ![ ](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de component Krabbelen handtekening worden weergegeven. Configureer eigenschappen van de component Krabbelhandtekening.
 1. Sleep de component Signature Step van de componentbrowser naar het aangepaste formulier.
 
@@ -64,7 +64,7 @@ U kunt **selecteren vormt** ![ ](assets/configure.png) pictogram om de aspectver
    >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
    >
 
-1. In browser van de Inhoud, de uitgezochte **Container van de Vorm**, en selecteert **** ![ vormt ](/help/forms/using/assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeer aan **Aangepaste Container van de Vorm** > **Elektronische Ondertekening** en schrap **toelaten Adobe Sign** optie. Selecteer het Gedaan ![ a_6_3_forms_save ](assets/aem_6_3_forms_save.png) pictogram om de veranderingen te bewaren.
+1. In browser van de Inhoud, de uitgezochte **Container van de Vorm**, en selecteert **&#x200B;**&#x200B;![ vormt ](/help/forms/using/assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeer aan **Aangepaste Container van de Vorm** > **Elektronische Ondertekening** en schrap **toelaten Adobe Sign** optie. Selecteer het Gedaan ![ a_6_3_forms_save ](assets/aem_6_3_forms_save.png) pictogram om de veranderingen te bewaren.
 
    >[!NOTE]
    >

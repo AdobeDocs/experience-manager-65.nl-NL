@@ -43,7 +43,7 @@ Een HTML5-formulier kan meerdere externe bronnen bevatten, zoals afbeeldings-, J
 Daarom is het verkleinen van de omvang van de externe middelen en het gebruik van alleen de absoluut noodzakelijke middelen de voorkeursmethode om de prestaties van de formulieren te verbeteren. U kunt de volgende optimalisaties uitvoeren op een XFA-formulier om de grootte van externe bronnen van een formulier te beperken:
 
 * Gebruik [ samengeperste beelden ](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Het vermindert de netwerkactiviteit en de hoeveelheid geheugen die nodig is om een formulier te genereren. Daarom neemt de laadtijd van het formulier aanzienlijk af.
-* Gebruik de minify optie in AEM Configuration Manager (Day CQ HTML Library Manager) om JavaScript- en CSS-bestanden te comprimeren. Voor details, zie {de Montages van de Configuratie 0} OSGi ](/help/sites-deploying/osgi-configuration-settings.md).[
+* Gebruik de minify optie in AEM Configuration Manager (Day CQ HTML Library Manager) om JavaScript- en CSS-bestanden te comprimeren. Voor details, zie {de Montages van de Configuratie 0} OSGi [&#128279;](/help/sites-deploying/osgi-configuration-settings.md).
 * Webcompressie inschakelen. Hiermee verkleint u de grootte van de aanvragen en reacties die afkomstig zijn van een formulier. Voor details, zie [ Prestaties het stemmen van de Server van AEM Forms ](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Houd de interesse levend, toon alleen de vereiste velden  {#keep-the-interest-alive-show-only-required-fields}

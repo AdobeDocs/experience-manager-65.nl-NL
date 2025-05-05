@@ -49,7 +49,7 @@ Nadat u alle stappen hebt uitgevoerd, moeten de pagina&#39;s er als volgt uitzie
 
 **Download het definitieve resultaat**
 
-Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM inhoudspakket dat de resultaten van deze zelfstudie bevat. De Manager van het Pakket van het gebruik [ ](/help/sites-administering/package-manager.md) om het pakket aan uw auteursinstantie te installeren.
+Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM inhoudspakket dat de resultaten van deze zelfstudie bevat. De Manager van het Pakket van het gebruik [&#128279;](/help/sites-administering/package-manager.md) om het pakket aan uw auteursinstantie te installeren.
 
 **NOTA:** het installeren van dit pakket beschrijft om het even welke middelen op uw auteursinstantie die u gebruikend dit leerprogramma hebt gecreeerd.
 
@@ -165,7 +165,7 @@ Creeer de *component* die de inhoud bepaalt en de pagina&#39;s teruggeeft die he
 
    Deze correspondentie verbindt het malplaatje met de component en is kritiek aan het correcte functioneren van de website.
 
-1. Klik **daarna** tot het Toegestane paneel van Kinderen van de dialoog verschijnt, en klik dan O.K. ****. In CRXDE Lite, klik **sparen allen**.
+1. Klik **daarna** tot het Toegestane paneel van Kinderen van de dialoog verschijnt, en klik dan O.K. **&#x200B;**. In CRXDE Lite, klik **sparen allen**.
 
    De structuur ziet er nu als volgt uit:
 
@@ -329,7 +329,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
 
 1. Maak het bestand `left.jsp` onder `/apps/mywebsite/components/contentpage` in CRXDE Lite:
 
-   1. Klik de knoop `/apps/mywebsite/components/contentpage` met de rechtermuisknop aan, dan uitgezocht **creeer **dan **creeer Dossier**.
+   1. Klik de knoop `/apps/mywebsite/components/contentpage` met de rechtermuisknop aan, dan uitgezocht **creeer &#x200B;** dan **creeer Dossier**.
 
    1. In het venster, type `left.jsp` als **Naam** en klik **O.K.**.
 
@@ -416,7 +416,7 @@ Wanneer u klaar bent, zou uw hoogste navigatie als volgt moeten kijken:
 
 #### De bovenste navigatiecomponent maken {#creating-the-top-navigation-component-1}
 
-1. In CRXDE Lite, klik `/apps/mywebsite/components` met de rechtermuisknop aan, creeer ****, dan **creeer Component**.
+1. In CRXDE Lite, klik `/apps/mywebsite/components` met de rechtermuisknop aan, creeer **&#x200B;**, dan **creeer Component**.
 1. In **creeer het venster van de Component**, ga het volgende in:
 
    * **Etiket**: `topnav`
@@ -712,7 +712,7 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina die twee spec
 
 De component listchildren maken:
 
-1. In CRXDE Lite, klik `/apps/mywebsite/components` met de rechtermuisknop aan, creeer ****, dan **creeer Component**.
+1. In CRXDE Lite, klik `/apps/mywebsite/components` met de rechtermuisknop aan, creeer **&#x200B;**, dan **creeer Component**.
 1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op Volgende:
 
    * Label: listchildren.
@@ -866,7 +866,7 @@ Voer de volgende stappen uit om het logo-onderdeel te maken:
    * Titel: `My Logo Component`.
    * Beschrijving: `This is My Logo Component`.
 
-1. Klik daarna tot u het definitieve paneel van de dialoog bereikt en dan klikken O.K. ****.
+1. Klik daarna tot u het definitieve paneel van de dialoog bereikt en dan klikken O.K. **&#x200B;**.
 
 #### Logoscript maken {#creating-the-logo-script}
 
@@ -1271,7 +1271,7 @@ Wanneer u wordt gebeëindigd, zou uw vakje van de onderzoeksinput als volgt op d
 
 #### De zoekcomponent maken {#creating-the-search-component-1}
 
-1. In CRXDE Lite, klik `/apps/mywebsite/components` met de rechtermuisknop aan, creeer ****, dan **creeer Component**.
+1. In CRXDE Lite, klik `/apps/mywebsite/components` met de rechtermuisknop aan, creeer **&#x200B;**, dan **creeer Component**.
 1. Gebruik het dialoogvenster om de component te configureren:
 
    1. Geef in één eerste deelvenster de volgende eigenschapswaarden op:
@@ -1530,6 +1530,6 @@ Voor deze component kunt u verschillende parameters instellen in zowel de bewerk
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina** Products** opnieuw in uw browser. De hele pagina ziet er als volgt uit:
+1. Laad de pagina **&#x200B; Products** opnieuw in uw browser. De hele pagina ziet er als volgt uit:
 
    ![ chlimage_1-5 ](assets/chlimage_1-5.jpeg)

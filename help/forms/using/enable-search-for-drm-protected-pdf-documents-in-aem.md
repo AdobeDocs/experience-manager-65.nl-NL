@@ -41,7 +41,7 @@ AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschill
 * Voeg het {*pakket 0} sun.util.endar aan de lijst van gewenste personen toe.* Voer de volgende stappen uit om het pakket aan de lijst van gewenste personen toe te voegen:
 
    1. Open AEM webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-   1. Bepaal en open **Configuratie van de Firewall 0} Deserialization.**
+   1. Bepaal en open **Configuratie van de Firewall 0&rbrace; Deserialization.**
 
    1. Voeg het pakket sun.util.agenda aan de Gevoegde op lijst van gewenste personen klassen of het pakket prefixes gebied toe en klik **sparen**.
 
@@ -68,7 +68,7 @@ U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot st
 
 1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [ CAC en Wederzijdse Authentificatie ](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
 1. Open AEM webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-1. Zoek en open de **Bundel van de Cliënt SDK van het LiveCycle van de Adobe van 0}.** Geef waarde op voor de volgende eigenschappen:
+1. Zoek en open de **Bundel van de Cliënt SDK van het LiveCycle van de Adobe van 0&rbrace;.** Geef waarde op voor de volgende eigenschappen:
 
    * **Server URL**: specificeer HTTPS URL van AEM Forms op server JEE. Start de AEM opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
    * **laat 2-wegs SSL** toe: Laat 2-wegsSSL optie toe.

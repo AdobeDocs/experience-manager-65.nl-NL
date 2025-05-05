@@ -121,7 +121,7 @@ Wanneer u de handleiding gebruikt op een publicatie-instantie, kunt u de compone
 
 >[!NOTE]
 >
->Ben zich bewust, als SRP aan [ JSRP ](jsrp.md) wordt verlaten, dan zal UGC ingegaan op publiceer instantie slechts op zichtbaar zijn publiceren, en ** niet [ van de ](moderate-ugc.md) console van de moderatie {op de auteursinstantie zichtbaar zijn.
+>Ben zich bewust, als SRP aan [ JSRP ](jsrp.md) wordt verlaten, dan zal UGC ingegaan op publiceer instantie slechts op zichtbaar zijn publiceren, en ** niet [ van de ](moderate-ugc.md) console van de moderatie &lbrace;op de auteursinstantie zichtbaar zijn.
 
 ## Client-Side bibliotheken {#client-side-libraries}
 

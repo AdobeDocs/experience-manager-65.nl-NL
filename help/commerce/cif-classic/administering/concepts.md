@@ -150,7 +150,7 @@ Hoewel gewoonlijk moet een project hun eigen, aangepaste, handelsleverancier ont
 >
 >De Geometrixx-importeurs gebruiken CSV-bestanden. De opmerkingen boven hun implementatie bevatten een beschrijving van het geaccepteerde schema (met aangepaste eigenschappen toegestaan).
 
-[ ProductServicesManager ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) handhaaft (door [ OSGi ](/help/sites-deploying/configuring.md#osgi-configuration-settings)) een lijst van implementaties van [ ProductImporter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [ CatalogBluprintImporter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Deze worden vermeld in het **dropdown gebied van de Importer** Importer/van de Leverancier van Commerce {van de tovenaar van de Importeur (gebruikend het `commerceProvider` bezit als naam).
+[ ProductServicesManager ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) handhaaft (door [ OSGi ](/help/sites-deploying/configuring.md#osgi-configuration-settings)) een lijst van implementaties van [ ProductImporter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [ CatalogBluprintImporter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Deze worden vermeld in het **dropdown gebied van de Importer** Importer/van de Leverancier van Commerce &lbrace;van de tovenaar van de Importeur (gebruikend het `commerceProvider` bezit als naam).
 
 Wanneer een specifieke importeur/handelsleverancier beschikbaar is in de vervolgkeuzelijst, moeten eventuele aanvullende gegevens die hij nodig heeft, worden gedefinieerd (afhankelijk van het type importeur) in:
 
@@ -514,7 +514,7 @@ Vouchers zijn een beproefde methode om kortingen aan te bieden om klanten aan te
 In AEM:
 
 * Een voucher is een op pagina gebaseerde component die wordt gemaakt/bewerkt met de websiteconsole.
-* De **component 0} Voucher verstrekt:**
+* De **component 0&rbrace; Voucher verstrekt:**
 
    * Een renderer voor voucherbeheer. Hier worden de vouchers weergegeven die zich momenteel in de kar bevinden.
    * De bewerkingsdialoogvensters (formulier) voor het beheren (toevoegen/verwijderen) van de vouchers.

@@ -46,7 +46,7 @@ Deze pagina bevat de basisinformatie voor het werken met de bestandsbibliotheekf
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie </a> de Eigenschap van de Bibliotheek van 0} Dossier<a href="file-library.md"></td>
+   <td>Zie </a> de Eigenschap van de Bibliotheek van 0&rbrace; Dossier<a href="file-library.md"></td>
   </tr>
  </tbody>
 </table>

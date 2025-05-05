@@ -119,7 +119,7 @@ Voer gedetailleerd testplan tegen zoals bepaald [ uit Bevorderend Code en Aanpas
 
 ### Replication-agents inschakelen {#enable-replication-agents}
 
-Zodra publicatiemilieu volledig is bevorderd en bevestigd, laat replicatieagenten op het Milieu van de Auteur toe. Verifieer dat de agenten met respectieve instanties van Publish kunnen verbinden. Zie de Procedure van de rang U ](/help/sites-deploying/upgrade-procedure.md) [ voor meer details op orde van gebeurtenissen.
+Zodra publicatiemilieu volledig is bevorderd en bevestigd, laat replicatieagenten op het Milieu van de Auteur toe. Verifieer dat de agenten met respectieve instanties van Publish kunnen verbinden. Zie de Procedure van de rang U [&#128279;](/help/sites-deploying/upgrade-procedure.md)  voor meer details op orde van gebeurtenissen.
 
 ### Aangepaste geplande taken inschakelen {#enable-custom-scheduled-jobs}
 

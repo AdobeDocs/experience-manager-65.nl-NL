@@ -141,7 +141,7 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 >[!MORELIKETHIS]
 >
->* [ Desktop app van Adobe Experience Manager van het Gebruik {](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [ Desktop app van Adobe Experience Manager van het Gebruik &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [ vorm de Acties van de Desktop in Adobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [ creeer Gekoppelde Slimme Voorwerpen in Adobe Photoshop ](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [ grafiek van de Plaats in Adobe InDesign ](https://helpx.adobe.com/indesign/using/placing-graphics.html)

@@ -197,7 +197,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van AEM Forms opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
 
-Om een bundel OSGi met de interface van Java tot stand te brengen, voeg ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar van de Cliënt SDK van 0} AEM Forms en [ granite jar ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. [ U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+Om een bundel OSGi met de interface van Java tot stand te brengen, voeg [&#128279;](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar van de Cliënt SDK van 0&rbrace; AEM Forms en [ granite jar ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject toe.  U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar Bestand > Nieuw project.
 

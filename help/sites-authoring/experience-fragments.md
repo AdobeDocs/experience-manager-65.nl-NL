@@ -315,7 +315,7 @@ U kunt de bouwsteen naar het alineasysteem van om het even welk fragment slepen,
 
 Details van het fragment kunt u zien:
 
-1. De details worden getoond in alle meningen van de **console van Fragmenten van de 1} Ervaring, met de** Mening van de Lijst **met inbegrip van details van een [ uitvoer naar Doel ](/help/sites-administering/experience-fragments-target.md):**
+1. De details worden getoond in alle meningen van de **console van Fragmenten van de 1&rbrace; Ervaring, met de** Mening van de Lijst **met inbegrip van details van een [ uitvoer naar Doel ](/help/sites-administering/experience-fragments-target.md):**
 
    ![ ef-03 ](assets/ef-03.png)
 
@@ -343,7 +343,7 @@ Details van het fragment kunt u zien:
       * **Totaal aantal varianten** - slechts informatie
 
       * **Aantal Webvarianten** - slechts informatie
-      * **Aantal niet-Web varianten** - slechts de slechts formatie van inf ****
+      * **Aantal niet-Web varianten** - slechts de slechts formatie van inf **&#x200B;**
 
       * **Aantal pagina&#39;s die dit fragment** gebruiken - slechts informatie
 

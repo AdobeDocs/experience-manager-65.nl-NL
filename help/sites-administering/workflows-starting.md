@@ -113,7 +113,7 @@ Een workflowpakket:
 
 ## Een opstartconfiguratie maken {#creating-a-launcher-configuration}
 
-1. Navigeer aan de **console van de Lanceertoestellen van het 0} Werkschema gebruikend** Hulpmiddelen **,** Werkschema **, toen** Lanceertoestellen **.**
+1. Navigeer aan de **console van de Lanceertoestellen van het 0&rbrace; Werkschema gebruikend** Hulpmiddelen **,** Werkschema **, toen** Lanceertoestellen **.**
 1. Selecteer **creeer**, dan **voegt Lanceertoestel** toe om de dialoogdoos te openen:
 
    ![ wf-105 ](assets/wf-105.png)

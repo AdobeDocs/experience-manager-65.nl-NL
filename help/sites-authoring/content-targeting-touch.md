@@ -297,7 +297,7 @@ Als het uitgeven van gerichte inhoud, moet u **Begin richtend** klikken alvorens
    >De beheerders kunnen beslissen of het plaatsen van deze configuratie wordt vereist in **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   Als u wilt dat gebruikers een locatie moeten invoeren, schakelt u het selectievakje **Locatie forceren ** in.
+   >Als u wilt dat gebruikers een locatie moeten invoeren, schakelt u het selectievakje **Locatie forceren &#x200B;** in.
 
 1. Selecteer de ervaring waarvoor u de aanbieding wilt maken.
 1. Maak het voorstel:
@@ -530,7 +530,7 @@ Gebruik de geavanceerde montages om te bepalen wat **gebeurt nadat** een gebruik
  </tbody>
 </table>
 
-Zie {de documentatie van 0} Adobe Target ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) voor meer informatie over succesmetriek.[
+Zie {de documentatie van 0} Adobe Target [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) voor meer informatie over succesmetriek.
 
 ### Instellingen configureren (AEM gericht) {#configuring-settings-aem-targeting}
 
@@ -579,13 +579,13 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 
    >[!NOTE]
    >
-   Er moet ten minste één doel zijn gedefinieerd.
+   >Er moet ten minste één doel zijn gedefinieerd.
 
    ![ chlimage_1-34 ](assets/chlimage_1-34.png)
 
    >[!NOTE]
    >
-   Als er informatie ontbreekt in metrisch, omringt een rode lijn metrisch.
+   >Als er informatie ontbreekt in metrisch, omringt een rode lijn metrisch.
 
 1. Klik **toevoegen een Nieuwe Metrische** om extra succesmetriek te vormen.
 
@@ -593,7 +593,7 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 
    >[!NOTE]
    >
-   U kunt extra doelstellingen verwijderen door de drie punten te klikken of te tikken en **Schrapping** te klikken of te tikken. AEM vereist dat u ten minste één doel hebt gedefinieerd.
+   >U kunt extra doelstellingen verwijderen door de drie punten te klikken of te tikken en **Schrapping** te klikken of te tikken. AEM vereist dat u ten minste één doel hebt gedefinieerd.
 
 1. Als u meer controle over wilt hoe de succesmetriek worden geteld, klik **Geavanceerde Montages** om tot die toegang te hebben.
 1. Klik **sparen**.
@@ -616,7 +616,7 @@ Als er onverwachte inhoud op de pagina wordt weergegeven wanneer u een profiel l
 
 >[!NOTE]
 >
-Als u A/B het testen gebruikt, wanneer het simuleren van ervaringen wordt getoond gebaseerd op verkeerspercentage. Dit wordt gecontroleerd door Adobe Target, wat tot onverwachte resultaten voor auteurs kan leiden. (De _auteuractiviteit is gesynchroniseerd met specifieke montages die herevaluatie tijdens simulatie toestaan.) De auteurs kunnen moeten verfrissen om de andere ervaringen te zien die op hun verkeersmontages worden gebaseerd.
+>Als u A/B het testen gebruikt, wanneer het simuleren van ervaringen wordt getoond gebaseerd op verkeerspercentage. Dit wordt gecontroleerd door Adobe Target, wat tot onverwachte resultaten voor auteurs kan leiden. (De _auteuractiviteit is gesynchroniseerd met specifieke montages die herevaluatie tijdens simulatie toestaan.) De auteurs kunnen moeten verfrissen om de andere ervaringen te zien die op hun verkeersmontages worden gebaseerd.
 
 Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
 
@@ -710,7 +710,7 @@ Als u Adobe Target als engine selecteert:
 
 >[!NOTE]
 >
-Wanneer u een component selecteert en deze doelbaar maakt, vervangt AEM ook de component en injecteert een Adobe Target-component. (De Adobe Target-component wordt niet alleen gebruikt wanneer u deze handmatig aan de pagina toevoegt, maar ook wanneer u een bestaande component als doel instelt.)
+>Wanneer u een component selecteert en deze doelbaar maakt, vervangt AEM ook de component en injecteert een Adobe Target-component. (De Adobe Target-component wordt niet alleen gebruikt wanneer u deze handmatig aan de pagina toevoegt, maar ook wanneer u een bestaande component als doel instelt.)
 
 Als u Client Context (clientzijde) selecteert als de engine:
 

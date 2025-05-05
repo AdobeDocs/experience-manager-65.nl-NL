@@ -52,6 +52,7 @@ De hieronder stappen kunnen door systeemadmin in **CRXDE** worden uitgevoerd. De
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Werk `auth.token.provider.client.id` met Cliënt identiteitskaart van de nieuwe configuratie OAuth bij.
    * `auth.access.token.request` bijwerken naar `"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -98,7 +99,7 @@ Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
 <!--![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)-->
 
-1. Om een openbare sleutel te produceren, [ creeer een Slimme 1} configuratie van de Dienst van de Inhoud {in [!DNL Experience Manager]. ](#oauth-config) [ Download een openbaar certificaat ](#oauth-config) voor integratie OAuth.
+1. Om een openbare sleutel te produceren, [ creeer een Slimme 1&rbrace; configuratie van de Dienst van de Inhoud &lbrace;in [!DNL Experience Manager]. ](#oauth-config) [ Download een openbaar certificaat ](#oauth-config) voor integratie OAuth.
 
 1. *[niet toepasselijk als u een bestaande gebruiker]* [ bent creeer een integratie in Adobe Developer Console ](#create-adobe-i-o-integration).
 

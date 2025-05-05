@@ -124,7 +124,7 @@ Wanneer het e-mailkanaal is ingeschakeld, ontvangt het lid een e-mail met een ko
 
 De organisaties kunnen de e-mailberichten aanpassen door [ bedekkend ](/help/communities/client-customize.md#overlays) de malplaatjes bij **/libs/settings/community/templates/email/html**.
 
-Bijvoorbeeld, om de herinneringen e-mailberichten (voor een component van gemeenschappen) te wijzigen voeg **toe als** voorwaarde voor werkwoord **** in de malplaatjes van de componenten vermeldt waarvoor u **@mtations** steun toeliet.
+Bijvoorbeeld, om de herinneringen e-mailberichten (voor een component van gemeenschappen) te wijzigen voeg **toe als** voorwaarde voor werkwoord **&#x200B;**&#x200B;in de malplaatjes van de componenten vermeldt waarvoor u **@mtations** steun toeliet.
 
 Om het malplaatje van e-mailberichten voor @genoemd in blogcommentaren te wijzigen, plaats uit het vakje malplaatje bij: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/nl**
 

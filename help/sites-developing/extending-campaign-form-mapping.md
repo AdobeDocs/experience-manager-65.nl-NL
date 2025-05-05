@@ -59,7 +59,7 @@ Nadat u de gebeurtenislijst creeert, stel de **tovenaar van de het gegevensbesta
 
 ### De zaadtabel uitbreiden {#extending-the-seed-table}
 
-In Adobe Campaign, voegt de uitgezochte **** toe om een uitbreiding van **te creëren zaadadressen (nms)** lijst.
+In Adobe Campaign, voegt de uitgezochte **&#x200B;**&#x200B;toe om een uitbreiding van **te creëren zaadadressen (nms)** lijst.
 
 ![ chlimage_1-194 ](assets/chlimage_1-194.png)
 

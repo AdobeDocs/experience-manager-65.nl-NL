@@ -59,7 +59,7 @@ Voor eigenaars van inhoud die ook verantwoordelijk zijn voor vertaling, is het v
 1. Selecteer de taalwortel van uw project. In dit geval is `/content/dam/wknd/en` geselecteerd.
 1. Klik de spoorselecteur en toon het **paneel van Verwijzingen**.
 1. Klik **Exemplaren van de Taal**.
-1. Controleer het **checkbox van de Kopieën van de Taal 0}.**
+1. Controleer het **checkbox van de Kopieën van de Taal 0&rbrace;.**
 1. Breid de sectie **Exemplaren van de Taal van de Update** bij de bodem van het verwijzingenpaneel uit.
 1. In het **drop-down van het Project**, uitgezochte **creeer Omzettingsproject(en)**.
 1. Geef een geschikte titel op voor uw vertaalproject.
@@ -87,7 +87,7 @@ Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhou
    ![ creeer projectomslag ](assets/create-project-folder.png)
 
 1. Klik op de map om de map te openen.
-1. In uw nieuwe projectomslag, creeer **** > **Project**.
+1. In uw nieuwe projectomslag, creeer **&#x200B;**&#x200B;> **Project**.
 1. Projecten zijn gebaseerd op sjablonen. Klik het **malplaatje van het Project van de Vertaling** om het te selecteren en dan **daarna** te klikken.
 
    ![ Uitgezochte malplaatje van het vertaalproject ](assets/select-translation-project-template.png)
@@ -139,13 +139,13 @@ U kunt als volgt de details van de inhoud zonder kop in dit project bekijken:
 1. Klik op het selectievak voor een regelitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles van Inhoud of Assets weer te geven.
    ![ de opties van de Taak van de Vertaling ](assets/translation-job-options.png)
 
-Typisch begint de inhoud voor de vertaalbaan in de **staat van het Ontwerp** zoals die door de **wordt vermeld 3} kolom van de Staat {in het** venster van de Baan van de Vertaling **.**
+Typisch begint de inhoud voor de vertaalbaan in de **staat van het Ontwerp** zoals die door de **wordt vermeld 3&rbrace; kolom van de Staat &lbrace;in het** venster van de Baan van de Vertaling **.**
 
-Om de vertaalbaan te beginnen, terugkeer aan het overzicht van het vertaalproject en klik de knoop van de chevron bij de bovenkant van de **kaart van de Baan van de Vertaling {en selecteer** Begin **.**
+Om de vertaalbaan te beginnen, terugkeer aan het overzicht van het vertaalproject en klik de knoop van de chevron bij de bovenkant van de **kaart van de Baan van de Vertaling &lbrace;en selecteer** Begin **.**
 
 ![ de vertaalbaan van het Begin ](assets/start-translation-job.png)
 
-AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de vooruitgang van de vertaling bekijken door aan het **venster van de VertaalBaan** terug te keren en de **3} kolom van de Staat {van de ingangen te bekijken.**
+AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de vooruitgang van de vertaling bekijken door aan het **venster van de VertaalBaan** terug te keren en de **3&rbrace; kolom van de Staat &lbrace;van de ingangen te bekijken.**
 
 ![ Goedgekeurde Taak van de Vertaling ](assets/translation-job-approved.png)
 
@@ -188,13 +188,13 @@ Inhoud toevoegen aan een vertaaltaak:
 
 U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle talen (banen) voor het project toe te voegen. Nadat u alle inhoud hebt geselecteerd, kunt u de vertaling starten.
 
-Typisch begint de inhoud voor de vertaalbaan in de **staat van het Ontwerp** zoals die door de **wordt vermeld 3} kolom van de Staat {in het** venster van de Baan van de Vertaling **.**
+Typisch begint de inhoud voor de vertaalbaan in de **staat van het Ontwerp** zoals die door de **wordt vermeld 3&rbrace; kolom van de Staat &lbrace;in het** venster van de Baan van de Vertaling **.**
 
-Om de vertaalbaan te beginnen, terugkeer aan het overzicht van het vertaalproject en klik de knoop van de chevron bij de bovenkant van de **kaart van de Baan van de Vertaling {en selecteer** Begin **.**
+Om de vertaalbaan te beginnen, terugkeer aan het overzicht van het vertaalproject en klik de knoop van de chevron bij de bovenkant van de **kaart van de Baan van de Vertaling &lbrace;en selecteer** Begin **.**
 
 ![ de vertaalbaan van het Begin ](assets/start-translation-job-manual.png)
 
-AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de vooruitgang van de vertaling bekijken door aan het **venster van de VertaalBaan** terug te keren en de **3} kolom van de Staat {van de ingangen te bekijken.**
+AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de vooruitgang van de vertaling bekijken door aan het **venster van de VertaalBaan** terug te keren en de **3&rbrace; kolom van de Staat &lbrace;van de ingangen te bekijken.**
 
 ![ Goedgekeurde Taak van de Vertaling ](assets/translation-job-approved-manual.png)
 

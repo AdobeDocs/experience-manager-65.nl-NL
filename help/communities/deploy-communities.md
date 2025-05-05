@@ -144,7 +144,7 @@ De geavanceerde MLS-download (ook wel `phasetwo` genoemd) is beschikbaar in de g
    * Versie 1.2.40, 6 april 2016
    * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
-Voor details en installatieinformatie, bezoek ](/help/communities/solr.md) Configuratie 0} Solr voor SRP.[
+Voor details en installatieinformatie, bezoek [&#128279;](/help/communities/solr.md) Configuratie 0&rbrace; Solr voor SRP.
 
 ### Info over Koppelingen naar pakket delen {#about-links-to-package-share}
 
@@ -245,7 +245,7 @@ In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort v
 
 ### Tunnelservice op auteur {#tunnel-service-on-author}
 
-Wanneer het gebruiken van het auteursmilieu om plaatsen ](/help/communities/sites-console.md) te creëren, [ wijzig plaatseigenschappen ](/help/communities/sites-console.md#modifying-site-properties) of [ beheer communautaire leden ](/help/communities/members.md), is het noodzakelijk om tot leden (gebruikers) toegang te hebben die in het publicatiemilieu worden geregistreerd, niet gebruikers die bij auteur worden geregistreerd.[
+Wanneer het gebruiken van het auteursmilieu om plaatsen [&#128279;](/help/communities/sites-console.md) te creëren, [ wijzig plaatseigenschappen ](/help/communities/sites-console.md#modifying-site-properties) of [ beheer communautaire leden ](/help/communities/members.md), is het noodzakelijk om tot leden (gebruikers) toegang te hebben die in het publicatiemilieu worden geregistreerd, niet gebruikers die bij auteur worden geregistreerd.
 
 De tunneldienst verleent deze toegang gebruikend de replicatieagent op auteur.
 
@@ -335,7 +335,7 @@ Gebruikend [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md):
 
   ![ graniet-crypto ](assets/granite-crypto.png)
 
-* Na een ogenblik, zou de dialoog van het Succes van a **** moeten verschijnen:
+* Na een ogenblik, zou de dialoog van het Succes van a **&#x200B;**&#x200B;moeten verschijnen:
   `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}

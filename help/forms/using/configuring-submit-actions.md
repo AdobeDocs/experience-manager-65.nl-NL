@@ -52,12 +52,12 @@ De standaardverzendacties die beschikbaar zijn in aangepaste formulieren zijn:
 
 >[!NOTE]
 >
->Zorg ervoor dat de {] \crx-quickstart\temp\datamanager\ASM omslag 0} AEM_Installation_Directory[
+>Zorg ervoor dat de {&rbrack; \crx-quickstart\temp\datamanager\ASM omslag 0} AEM_Installation_Directory&lbrack;
 >bestaat. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
 
 >[!CAUTION]
 >
->Als u [ ](../../forms/using/prepopulate-adaptive-form-fields.md) een vormmalplaatje, model van vormgegevens, of schema gebaseerde adaptieve vorm met XML of JSON gegevensklacht aan een schema (het schema van XML, JSON schema, vormmalplaatje, of model van vormgegevens) vooraf instelt dat geen gegevens &lt;afData>, &lt;afBoundData>, en &lt;/afUnboundData> markeringen bevat, dan zijn de gegevens van onbegrensde gebieden De actieve vormgebieden zonder [ bindref ](../../forms/using/prepopulate-adaptive-form-fields.md) bezit) van de adaptieve vorm wordt verloren.
+>Als u [&#128279;](../../forms/using/prepopulate-adaptive-form-fields.md) een vormmalplaatje, model van vormgegevens, of schema gebaseerde adaptieve vorm met XML of JSON gegevensklacht aan een schema (het schema van XML, JSON schema, vormmalplaatje, of model van vormgegevens) vooraf instelt dat geen gegevens &lt;afData>, &lt;afBoundData>, en &lt;/afUnboundData> markeringen bevat, dan zijn de gegevens van onbegrensde gebieden De actieve vormgebieden zonder [ bindref ](../../forms/using/prepopulate-adaptive-form-fields.md) bezit) van de adaptieve vorm wordt verloren.
 
 U kunt een aangepaste verzendactie schrijven voor aangepaste formulieren om aan uw gebruiksscenario te voldoen. Voor meer informatie, zie [ het Schrijven van douane verzendt actie voor adaptieve vormen ](../../forms/using/custom-submit-action-form.md).
 
@@ -77,7 +77,7 @@ Rest Endpoint-verzendhandeling configureren
 
 >[!NOTE]
 >
-Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velden verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters zijn geplaatst.
+>Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velden verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters zijn geplaatst.
 
 ### Post heeft gegevens naar een bron of een extern eindpunt voor de rusttijd verzonden  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ In dit voorbeeld slaat `data` de XML-gegevens op en slaat `att` de gegevens in d
 
 >[!NOTE]
 >
-Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als ze op verschillende deelvensters zijn geplaatst), om formuliergegevens op te nemen in een e-mailbericht.
+>Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als ze op verschillende deelvensters zijn geplaatst), om formuliergegevens op te nemen in een e-mailbericht.
 
 ## PDF verzenden via e-mail {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als ze op v
 
 >[!NOTE]
 >
-Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die de sjabloon Document of Record hebben.
+>Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die de sjabloon Document of Record hebben.
 
 ## Een Forms Workflow aanroepen {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ Met de handeling Verzenden wordt het volgende op de laadlocatie van de workflow 
 
 >[!NOTE]
 >
-Variabelen kunnen worden gebruikt, ongeacht of het workflowmodel is gemarkeerd voor externe gegevensopslag.
+>Variabelen kunnen worden gebruikt, ongeacht of het workflowmodel is gemarkeerd voor externe gegevensopslag.
 
 * **Gehechtheid**: U kunt de **[!UICONTROL Attachment Path]** optie gebruiken om de omslagnaam te specificeren om de gehechtheid op te slaan die aan de Aangepaste Vorm wordt geupload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
@@ -173,7 +173,7 @@ Na een succesvolle configuratie, gebruik [ aanhaalt een Macht Microsoft® stroom
 
 >[!NOTE]
 >
-De functie Verzenden naar Microsoft® SharePoint List is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+>De functie Verzenden naar Microsoft® SharePoint List is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 Met de handeling **[!UICONTROL Submit to SharePoint]** Verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
 
@@ -199,7 +199,7 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 
      >[!NOTE]
      >
-     Het **cliënt geheime** gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
+     >Het **cliënt geheime** gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
 
 1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt het bericht `Connection Successful` weergegeven.
 1. Selecteer **[!UICONTROL SharePoint Site]** en **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst.
@@ -218,16 +218,16 @@ Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven 
 
 >[!NOTE]
 >
-In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
-* afbeeldingskolom
-* metagegevenskolom
-* persoonlijke kolom
-* kolom externe gegevens
+>In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
+>* afbeeldingskolom
+>* metagegevenskolom
+>* persoonlijke kolom
+>* kolom externe gegevens
 
 
 >[!NOTE]
 >
-Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend de AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van de Cloud Service op.
+>Om waarden van een configuratie te plaatsen, [ produceer OSGi Configuraties gebruikend de AEM SDK ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [ stel de configuratie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) aan uw instantie van de Cloud Service op.
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt
 
 >[!NOTE]
 >
-Servervalidatie valideert het formuliermodel. Het wordt aanbevolen een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML styling en DOM-bewerking in dezelfde clientbibliotheek.
+>Servervalidatie valideert het formuliermodel. Het wordt aanbevolen een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML styling en DOM-bewerking in dezelfde clientbibliotheek.
 
 ### Aangepaste functies ondersteunen in validatie-expressies {#supporting-custom-functions-in-validation-expressions-br}
 

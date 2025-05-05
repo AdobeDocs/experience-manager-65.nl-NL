@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Pagina&#39;s maken en ordenen{#creating-and-organizing-pages}
 
-Deze sectie beschrijft om pagina&#39;s met Adobe Experience Manager (AEM) tot stand te brengen en te beheren zodat u inhoud ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) op die pagina&#39;s kunt dan [ tot stand brengen.
+Deze sectie beschrijft om pagina&#39;s met Adobe Experience Manager (AEM) tot stand te brengen en te beheren zodat u inhoud [&#128279;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) op die pagina&#39;s kunt dan  tot stand brengen.
 
 >[!NOTE]
 >
@@ -101,21 +101,21 @@ Gebruik enkel deze karakters als u zeker van hen wilt zijn die worden goedgekeur
 
 #### Titel {#title}
 
-Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, AEM leidt de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. In beide UIs zal het gebied van de Titel van de a **** dat ongeldige karakters bevat worden goedgekeurd, maar de afgeleide naam zal de ongeldige karakters vervangen hebben. Bijvoorbeeld:
+Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, AEM leidt de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. In beide UIs zal het gebied van de Titel van de a **&#x200B;**&#x200B;dat ongeldige karakters bevat worden goedgekeurd, maar de afgeleide naam zal de ongeldige karakters vervangen hebben. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Naam {#name}
 
 Als u een pagina **Naam** wanneer het creëren van een pagina levert, AEM [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
-In Klassieke UI kunt u **geen ongeldige karakters** op het **3} gebied van de Naam {ingaan.**
+In Klassieke UI kunt u **geen ongeldige karakters** op het **3&rbrace; gebied van de Naam &lbrace;ingaan.**
 
 >[!NOTE]
->In aanraking-toegelaten UI kunt u **geen ongeldige karakters** op het **3} gebied van de Naam {voorleggen.** Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
+>In aanraking-toegelaten UI kunt u **geen ongeldige karakters** op het **3&rbrace; gebied van de Naam &lbrace;voorleggen.** Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * Verstrek a **Naam**; dit wordt gebruikt om URI te produceren. Als deze niet wordt opgegeven, wordt de naam afgeleid van de titel.
 
       * Als u een pagina **Naam** wanneer het creëren van een pagina levert, AEM [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
-      * In klassieke UI kunt u **geen ongeldige karakters** op het **3} gebied van de Naam {ingaan.**
+      * In klassieke UI kunt u **geen ongeldige karakters** op het **3&rbrace; gebied van de Naam &lbrace;ingaan.**
 
    * Klik op de sjabloon die u wilt gebruiken om de nieuwe pagina te maken.
 
@@ -296,7 +296,7 @@ Een pagina verplaatsen of hernoemen:
 
    >[!NOTE]
    >
-   >Als de pagina al is geactiveerd, wordt deze automatisch gedeactiveerd wanneer u de pagina verplaatst. Door gebrek, zal het worden opnieuw geactiveerd wanneer de beweging volledig is, maar dit kan worden veranderd door het **** gebied voor de pagina in het **** venster van de Beweging ongedaan te maken.
+   >Als de pagina al is geactiveerd, wordt deze automatisch gedeactiveerd wanneer u de pagina verplaatst. Door gebrek, zal het worden opnieuw geactiveerd wanneer de beweging volledig is, maar dit kan worden veranderd door het **&#x200B;**&#x200B;gebied voor de pagina in het **&#x200B;**&#x200B;venster van de Beweging ongedaan te maken.
 
 1. Klik **Beweging**. Bevestiging is vereist. Klik **O.K.** om te bevestigen.
 

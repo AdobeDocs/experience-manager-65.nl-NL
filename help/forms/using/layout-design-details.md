@@ -60,7 +60,7 @@ Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
 1. Open Forms Designer, uitgezochte **Dossier** > **Nieuw** > **Gebruik een lege vorm**, selecteer **daarna**, en selecteer dan **Afwerking** om de vorm voor malplaatjeverwezenlijking te openen.
 
-   Zorg ervoor dat de **Bibliotheek van Objecten** en **3} opties van Objecten {van het** Venster **menu worden geselecteerd.**
+   Zorg ervoor dat de **Bibliotheek van Objecten** en **3&rbrace; opties van Objecten &lbrace;van het** Venster **menu worden geselecteerd.**
 
 1. Sleep-en-daling de **Subform** component van de **Bibliotheek van Objecten** aan de vorm.
 
@@ -104,7 +104,7 @@ Gebruik Afbeeldingsveld of Subformulier in de XDP-sjabloon en voeg een afbeeldin
 
 Voer de volgende stappen uit om de component van het Gebied van het Beeld in een malplaatje te gebruiken XDP:
 
-1. De belemmering-en-daling de **component van het Gebied van het Beeld 1} van de** Bibliotheek van Objecten **aan de vorm.**
+1. De belemmering-en-daling de **component van het Gebied van het Beeld 1&rbrace; van de** Bibliotheek van Objecten **aan de vorm.**
 1. Selecteer subform om de opties voor subform in het **venster van Objecten** in de juiste ruit te tonen.
 1. In het **Bindende** lusje:
 

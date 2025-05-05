@@ -172,5 +172,5 @@ Houd bij het insluiten van een adaptief formulier in een webpagina rekening met 
 ## AEM Forms toestaan om adaptieve formulieren te gebruiken voor een interdomeinsite {#cross-site}
 
 1. Ga bij AEM publicatieexemplaar naar AEM Web Console Configuration Manager op `https://'[server]:[port]'/system/console/configMgr` .
-1. Zoek en open de **configuratie van de Filter van de Verwijzing van 0} Apache het Verdelen.**
+1. Zoek en open de **configuratie van de Filter van de Verwijzing van 0&rbrace; Apache het Verdelen.**
 1. Geef in het veld Toegestane gastheren het domein op waar de webpagina zich bevindt. Het laat de gastheer toe om POST verzoeken aan de AEM server te doen. U kunt ook de reguliere expressie gebruiken om een reeks externe toepassingsdomeinen op te geven.

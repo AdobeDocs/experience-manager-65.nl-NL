@@ -24,7 +24,7 @@ ht-degree: 0%
 <div class="preview">
 
 Adobe heeft a [ volledige installateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) met AEM 6.5 Forms Service Pack 18 (6.5.18.0) op JEE samen met de flardinstallateurs vrijgegeven. Het volledige installatieprogramma ondersteunt nieuwe platforms, terwijl het installatieprogramma van de patch alleen foutoplossingen bevat.
-Als u een nieuwe installatie uitvoert of van plan bent de nieuwste software te gebruiken voor uw AEM 6.5 Forms on JEE-omgeving, raadt Adobe aan AEM 6.5.18.0 Forms on JEE het volledige installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) te gebruiken [dat op 31 augustus 2023 is uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 is uitgebracht of AEM 6.5.12 Forms Installer dat op 3 maart 2022 is uitgebracht.
+Als u een nieuwe installatie uitvoert of van plan bent de nieuwste software te gebruiken voor uw AEM 6.5 Forms on JEE-omgeving, raadt Adobe aan AEM 6.5.18.0 Forms on JEE het volledige installatieprogramma[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) te gebruiken dat op 31 augustus 2023 is uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 is uitgebracht of AEM 6.5.12 Forms Installer dat op 3 maart 2022 is uitgebracht.
 
 </div>
 
@@ -393,7 +393,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
 - AEM Forms op JEE ondersteunt TarMK Cold Standby niet.
 - AEM Forms op JEE bieden geen ondersteuning voor verticale clustering.
 - AEM Forms op JEE biedt geen ondersteuning voor MySQL-database in een geclusterde omgeving.
-- Zie het document AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md) voor de lijst met verwijderde of bijgewerkte platforms.[
+- Zie het document AEM 6.5 Forms New Feature Summary[&#128279;](../../forms/using/whats-new.md) voor de lijst met verwijderde of bijgewerkte platforms.
 
 ### LDAP-servers (optioneel) {#ldap-servers-optional}
 
@@ -684,7 +684,7 @@ Voor aanvullende vereisten zie:
 >Enkele browsergerelateerde uitzonderingen voor desktops zijn de volgende:
 >
 >- Safari wordt alleen ondersteund op Macintosh OS X.
->- Workspace ondersteunt Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of latere versies. Zie https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html) voor meer informatie over de compatibiliteit van Safari 5.1 met Adobe Reader en Acrobat[.
+>- Workspace ondersteunt Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of latere versies. Zie https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html[&#128279;](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html) voor meer informatie over de compatibiliteit van Safari 5.1 met Adobe Reader en Acrobat.
 >- Beheerconsole wordt niet ondersteund in Safari.
 >- Correspondence Management ondersteunt geen Windows® Internet Explorer 9.0 voor AEM 6.1-formulieren.
 >- Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
@@ -748,7 +748,7 @@ AEM Forms op de referentieplatforms van derden van JEE vermelden het specifieke 
 
 Adobe ondersteunt dringende of aanbevolen patches die door externe leveranciers worden uitgegeven bij de release, ervan uitgaande dat externe leveranciers achterwaartse compatibiliteit garanderen met de versies die door AEM Forms op JEE worden ondersteund. Adobe biedt alleen ondersteuning voor patches die zijn uitgebracht na het minimale patchniveau dat wordt vermeld in de AEM Forms on JEE-documentatie.
 
-Soms biedt Adobe geen ondersteuning voor updates van derden die de belangrijkste functionaliteit wijzigen en dus geen volledige achterwaartse compatibiliteit ondersteunen. Zie Ondersteunde patchdefinities](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) voor specifieke leveranciersproducten en de patchtypen die Adobe ondersteunt, voor [meer informatie over de ondersteunde updates.
+Soms biedt Adobe geen ondersteuning voor updates van derden die de belangrijkste functionaliteit wijzigen en dus geen volledige achterwaartse compatibiliteit ondersteunen. Zie Ondersteunde patchdefinities[&#128279;](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) voor specifieke leveranciersproducten en de patchtypen die Adobe ondersteunt, voor meer informatie over de ondersteunde updates.
 
 Onder omstandigheden buiten de controle van Adobe kunnen patches van derden die achterwaartse compatibiliteit claimen, een negatieve invloed hebben op de Adobe-producten of klantomgevingen. In dergelijke gevallen raadt Adobe klanten aan de impact van een dringende patch van een derde partij te beoordelen voordat deze wordt toegepast op kritieke systemen. Adobe werkt samen met derden en levert redelijke zakelijke inspanningen om dergelijke problemen op te lossen, hetzij via normale Adobe-ondersteuningsprogramma&#39;s, hetzij via derden die het probleem in hun patch verhelpen. Dit garandeert niet dat een nieuw uitgebrachte patch van derden die door Adobe wordt ondersteund, werkt zoals gedocumenteerd door de leverancier of met AEM Forms op JEE.
 

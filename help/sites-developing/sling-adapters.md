@@ -135,7 +135,7 @@ In het eerste geval kunnen de Java™-documenten aangeven wat `adaptTo-targets` 
    <td>Als deze bron een script is (bijvoorbeeld jsp-bestand) waarvoor een scriptengine is geregistreerd met sling of als dit een servlet-resource is.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html"> Koord </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html"> Van Boole </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html"> Lang </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html"> tweemaal </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html"> Kalender </a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Waarde </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html"> Koord [] </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html"> Van Boole [] </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html"> Lang [] </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html"> Kalender [] </a><br /> 9} <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Waarde [] </a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html"> Koord </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html"> Van Boole </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html"> Lang </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html"> tweemaal </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html"> Kalender </a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Waarde </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html"> Koord [] </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html"> Van Boole [] </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html"> Lang [] </a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html"> Kalender [] </a><br /> 9&rbrace; <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Waarde [] </a></td>
    <td>Retourneert de waarden als dit een op JCR-eigenschap gebaseerde resource (en de value-fit) is.</td>
   </tr>
   <tr>
@@ -338,7 +338,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### Beveiliging {#security}
 
-**Toegelaten**, **Gebruiker, en **Groep** past aan:
+**Toegelaten**, **Gebruiker, en &#x200B;** Groep** past aan:
 
 | [ Knoop ](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retourneert het thuisknooppunt van de gebruiker/groep. |
 |---|---|

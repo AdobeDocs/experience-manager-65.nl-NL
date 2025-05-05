@@ -345,7 +345,7 @@ U kunt kiezen om de configuratie van preprocessoren per clientbibliotheek of sys
 
 * De eigenschappen multivalue `cssProcessor` en `jsProcessor` toevoegen aan het clientbibliotheekknooppunt
 
-* Of bepaal de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek 0} HTML**
+* Of bepaal de systeem standaardconfiguratie via de **configuratie OSGi van de Manager van de Bibliotheek 0&rbrace; HTML**
 
 Een preprocessorconfiguratie op de clientlib knoop neemt belangrijkheid over de configuratie OSGI.
 
@@ -395,7 +395,7 @@ YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit o
 
 1. Ga naar de Manager van Configuratie van de Felix van Apache in [ https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Vind en geef **de Manager van de Bibliotheek van Adobe Granite HTML** uit.
-1. Laat **toe** optie {indien niet reeds toegelaten).
+1. Laat **toe** optie &lbrace;indien niet reeds toegelaten).
 1. Plaats het Standaard van de Bewerker van waarde **JS vormt** aan `min:gcc`.
 
    Opties kunnen worden doorgegeven als deze worden gescheiden met een puntkomma, bijvoorbeeld `min:gcc;obfuscate=true` .

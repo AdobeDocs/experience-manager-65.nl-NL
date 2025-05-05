@@ -100,7 +100,7 @@ De naam van de Solr-verzameling.
 
 >[!NOTE]
 >
->Het mongoDB gegevensbestand, dat aan de naam `communities` in gebreke blijft, zou niet aan de naam van een gegevensbestand moeten worden geplaatst dat voor [ knoopopslag of gegevens (binair) opslag ](../../help/sites-deploying/data-store-config.md) wordt gebruikt. Zie ook {de Elementen van de Opslag 0} in AEM 6.5 ](../../help/sites-deploying/storage-elements-in-aem-6.md).[
+>Het mongoDB gegevensbestand, dat aan de naam `communities` in gebreke blijft, zou niet aan de naam van een gegevensbestand moeten worden geplaatst dat voor [ knoopopslag of gegevens (binair) opslag ](../../help/sites-deploying/data-store-config.md) wordt gebruikt. Zie ook {de Elementen van de Opslag 0} in AEM 6.5 [&#128279;](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### MongoDB Replica-set {#mongodb-replica-set}
 
@@ -108,7 +108,7 @@ Voor het productiemilieu, wordt het sterk geadviseerd om een replicaset, een clu
 
 Om meer over replicasets te leren, bezoek de [ documentatie van de Replicatie van MongoDB ](https://docs.mongodb.org/manual/replication/).
 
-Om met replicasets te werken en te leren hoe te om verbindingen tussen toepassingen en instanties te bepalen MongoDB, bezoek de ](https://docs.mongodb.org/manual/reference/connection-string/) documentatie van het Formaat URI van het Koord van de Verbinding van MongoDB [.
+Om met replicasets te werken en te leren hoe te om verbindingen tussen toepassingen en instanties te bepalen MongoDB, bezoek de [&#128279;](https://docs.mongodb.org/manual/reference/connection-string/) documentatie van het Formaat URI van het Koord van de Verbinding van MongoDB .
 
 #### Voorbeeld-URL voor verbinding maken met een replicaset  {#example-url-for-connecting-to-a-replica-set}
 
@@ -126,7 +126,7 @@ Een Solr installatie kan tussen de knoopopslag (Oak) en gemeenschappelijke opsla
 
 Als zowel de Oak als de inzamelingen MSRP intensief worden gebruikt, kan tweede Solr om prestatiesredenen worden geïnstalleerd.
 
-Voor productiemilieu&#39;s, ](solr.md#solrcloud-mode) de wijze van SolrCloud [ verstrekt betere prestaties over standalone wijze (enige, lokale opstelling Solr).
+Voor productiemilieu&#39;s, [&#128279;](solr.md#solrcloud-mode) de wijze van SolrCloud  verstrekt betere prestaties over standalone wijze (enige, lokale opstelling Solr).
 
 Voor configuratiedetails, zie [ Configuratie Solr voor SRP ](solr.md).
 

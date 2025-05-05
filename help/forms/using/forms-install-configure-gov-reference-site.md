@@ -153,7 +153,7 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 1. De opstellingsdocumentatie van het overzicht [ Vormend E-mailbericht ](/help/sites-administering/notification.md)
 1. Meld u aan als beheerder voor deze taak.
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. Bepaal en klik de **dienst van de Post van 0} Dag CQ {om te vormen.**
+1. Bepaal en klik de **dienst van de Post van 0&rbrace; Dag CQ &lbrace;om te vormen.**
 
    ![ vorm de Dienst van de Post van de Dag CQ ](assets/day_cq_mail_service.jpg)
 
@@ -312,7 +312,7 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
    >[!NOTE]
    >
-   >Na het testen van de diensten, annuleert de klik **** om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
+   >Na het testen van de diensten, annuleert de klik **&#x200B;**&#x200B;om ervoor te zorgen dat de onvrijwillige veranderingen niet aan het Model van de Gegevens van de Vorm worden verspreid.
 
    >[!NOTE]
    >
@@ -629,7 +629,7 @@ Wanneer de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF
 
 1. Zodra de knop is geselecteerd, krijgen gebruikers de volgende opties te zien
 
-   * Zorg ervoor dat de gebruikers de {*configuratie 1} van de Productie 0} Web.Gov selecteren*
+   * Zorg ervoor dat de gebruikers de {*configuratie 1} van de Productie 0&rbrace; Web.Gov selecteren*
 
    ![ montages van de Omzetting ](assets/aftia-conversion-settings.jpg)
 

@@ -91,7 +91,7 @@ Het [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-arche
 >
 >Het gebruik [ AEM Archetype 25 van het Project of recenter ](https://github.com/adobe/aem-project-archetype/releases) om het project te produceren.
 
-Zie AEM het gebruiksinstructies van de Archetype van het Project [ ](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een AEM project te produceren. Als u CIF wilt opnemen in het project, gebruikt u de optie `includeCommerce` .
+Zie AEM het gebruiksinstructies van de Archetype van het Project [&#128279;](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een AEM project te produceren. Als u CIF wilt opnemen in het project, gebruikt u de optie `includeCommerce` .
 
 Bijvoorbeeld:
 

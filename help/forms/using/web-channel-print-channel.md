@@ -50,7 +50,7 @@ Voer de volgende stappen uit om een webkanaalsjabloon te maken:
 1. Maak een sjabloonmap om uw interactieve communicatiesweb-sjablonen te behouden, als u dat nog niet hebt. Voor meer informatie, zie de Omslagen van het Malplaatje in [ Malplaatjes van de Pagina - editable ](/help/sites-developing/page-templates-editable.md).
 
    1. Selecteer **[!UICONTROL Tools]** ![ hulpmiddelen ](assets/tools.png) > **[!UICONTROL Configuration Browser]**.
-      * Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+      * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
    1. Selecteer **[!UICONTROL Create]** op de pagina Configuration Browser.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map, controleer **[!UICONTROL Editable Templates]** en selecteer **[!UICONTROL Create]** .
 

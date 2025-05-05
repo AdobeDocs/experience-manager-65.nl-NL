@@ -49,7 +49,7 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Scree
 |  | `Backspace` | Verwijderen |
 | Eigenschappenpagina&#39;s | `Ctrl+s` | Opslaan |
 
-De belangrijkste combinaties zijn vermeld met de 20} bepalingssleutels van Vensters ](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys).[
+De belangrijkste combinaties zijn vermeld met de 20&rbrace; bepalingssleutels van Vensters [&#128279;](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys).
 
 Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [ paginaredacteur ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) aan auteurspagina&#39;s.
 

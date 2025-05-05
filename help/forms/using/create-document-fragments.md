@@ -99,7 +99,7 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
 
    ![ Statische teksten ](assets/variable_bill_details_static_text_new.png)
 
-1. Plaats de curseur naast het **Factuur Nr** gebied en klik de **InvoiceNumber** variabele van het **** lusje van Variabelen {in de linkerruit tweemaal.
+1. Plaats de curseur naast het **Factuur Nr** gebied en klik de **InvoiceNumber** variabele van het **&#x200B;**&#x200B;lusje van Variabelen &lbrace;in de linkerruit tweemaal.
 1. Plaats de curseur naast het **gebied van de Periode van de Rekening** en klik de **Billperiod** variabele tweemaal.
 1. Plaats de curseur naast het **gebied van de Datum van de Rekening** en klik de **Datum van de Rekening** variabele tweemaal.
 1. Selecteer het **ModelVoorwerpen van Gegevens** lusje in de linkerruit.
@@ -164,10 +164,10 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
    ![ de details van de Klant statische teksten ](assets/customer_details_static_text_new.png)
 
 1. Plaats de curseur naast het **Mobiele gebied van het Aantal** en klik de **klant** > **mobiel** bezit tweemaal.
-1. Plaats de curseur naast het **Afwisselende 1} gebied van het Aantal van het Contact {en klik het** klant** >** afwisselend enumber **bezit tweemaal.**
-1. Plaats de curseur naast het **gebied van het Aantal van de Verhouding 0} {en klik de** klant **>** verhouding aantal **bezit tweemaal.**
+1. Plaats de curseur naast het **Afwisselende 1&rbrace; gebied van het Aantal van het Contact &lbrace;en klik het** klant **&#x200B; >** afwisselend enumber **bezit tweemaal.**
+1. Plaats de curseur naast het **gebied van het Aantal van de Verhouding 0&rbrace; &lbrace;en klik de** klant **>** verhouding aantal **bezit tweemaal.**
 1. Selecteer het **lusje van Variabelen**, plaats de curseur naast de **Plaats van het gebied van de Levering** en klik de **Placesupply** variabele tweemaal.
-1. Plaats de curseur naast het **gebied van de Code van de Staat 0} en klik de** **variabele Statecode tweemaal.**
+1. Plaats de curseur naast het **gebied van de Code van de Staat 0&rbrace; en klik de** **variabele Statecode tweemaal.**
 1. Plaats de curseur naast het **Aantal Verbindingen** gebied en klik de **variabele van Numberconnections** tweemaal.
 
    ![ de details van de Klant ](assets/customer_details_df2_new.png)
@@ -284,9 +284,9 @@ Ga als volgt te werk om statische tekst te maken en elementen van het formulierg
 
 1. Selecteer de **Modelvoorwerpen van Gegevens** tabel.
 1. Plaats de curseur naast het **gebied van de Heffingen van de Vraag** en klik de **rekeningen** > **callladings** bezit tweemaal.
-1. Plaats de curseur naast het **gebied van de Vraag van de 1} Conferentie laden van de Vraag en klik de** rekeningen **>** confcallladings **bezit tweemaal.**
+1. Plaats de curseur naast het **gebied van de Vraag van de 1&rbrace; Conferentie laden van de Vraag en klik de** rekeningen **>** confcallladings **bezit tweemaal.**
 1. Plaats de curseur naast het **gebied van de Heffingen van SMS** en dubbelklik de **rekeningen** > **smaakten** bezit.
-1. Plaats de curseur naast het **gebied van de Tarieven van 0} Mobiel Internet en klik de** rekeningen **>** onderlinge verbindings van netwerkenlasten **bezit tweemaal.**
+1. Plaats de curseur naast het **gebied van de Tarieven van 0&rbrace; Mobiel Internet en klik de** rekeningen **>** onderlinge verbindings van netwerkenlasten **bezit tweemaal.**
 1. Plaats de curseur naast het **Nationale Roaming Charges** gebied en klik de **rekeningen** > **roamingnational** bezit tweemaal.
 1. Plaats de curseur naast het **Internationale Roaming Charges** gebied en klik de **rekeningen** > **roamingintnl** bezit tweemaal.
 1. Plaats de curseur naast de **Waarde Toegevoegde het gebied van de Lasten van de Diensten** en dubbelklik de **rekeningen** > **vas** bezit.

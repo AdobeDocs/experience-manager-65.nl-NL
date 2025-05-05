@@ -28,11 +28,11 @@ U kunt de modus Lay-out gebruiken om het formaat van componenten te wijzigen voo
 
 ## Modus Toegang tot layout {#access-layout-mode}
 
-Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptieve vorm auteursinterface naast de **3} optie van de Voorproef {verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
+Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptieve vorm auteursinterface naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
 
 1. Login aan de AEM auteursinstantie en navigeer aan **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
 1. Creeer een [ adaptieve vorm ](../../forms/using/creating-adaptive-form.md) of open bestaande.
-1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3} optie van de Voorproef {verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
+1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
 
    ![ wijze van de Lay-out ](assets/layout_mode_ic_new.png)
 
@@ -106,8 +106,8 @@ Schakel het nieuwe responsieve raster in voor formulieren die u maakt met AEM Fo
 
 Voer de volgende stappen uit om het nieuwe responsieve raster in te schakelen:
 
-1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3} optie van de Voorproef {verschijnt.** Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
-1. Selecteer **ja** om de **3} wijze van de Lay-out {voor de vorm toe te laten.**
+1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
+1. Selecteer **ja** om de **3&rbrace; wijze van de Lay-out &lbrace;voor de vorm toe te laten.**
 
 ### Een oud fragment insluiten in een adaptief formulier met nieuwe responsieve indeling {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -117,7 +117,7 @@ Met de nieuwe responsieve indeling voor het adaptieve formulier kunt u een adapt
 
 Als u een fragment met de nieuwe responsieve indeling insluit in een adaptief formulier met een oude responsieve indeling, wordt u gevraagd de modus Indeling in te schakelen voor het formulier en het fragment opnieuw in te sluiten.
 
-Om de wijze van de Lay-out toe te laten, uitgezochte **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3} optie van de Voorproef {verschijnt en selecteert** ja **om te bevestigen.** Selecteer **uitgeven** wijze om het fragment opnieuw in te bedden.
+Om de wijze van de Lay-out toe te laten, uitgezochte **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt en selecteert** ja **om te bevestigen.** Selecteer **uitgeven** wijze om het fragment opnieuw in te bedden.
 
 ## Lay-outmodus uitschakelen voor formulieren met oude responsieve indeling {#disable-layout-mode-for-forms-with-old-responsive-layout}
 

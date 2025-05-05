@@ -40,7 +40,7 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 1. Het bovenliggende element van het deelvenster, dat moet worden herhaald, moet knoppen voor toevoegen en verwijderen bevatten om instanties van de herhaalbare deelvensters te beheren. Voer de volgende stappen uit om knoppen in te voegen in het bovenliggende element en om scripts in de knoppen in te schakelen:
 
    1. Sleep vanuit het zijpaneel een knopcomponent naar het bovenliggende element van het deelvenster. Selecteer de component en selecteer ![ uitgeven-regels ](assets/edit-rules.png). De regels van de knoop open in de regelredacteur.
-   1. In het venster van de Redacteur van de Regel, leidt de klik **** tot.
+   1. In het venster van de Redacteur van de Regel, leidt de klik **&#x200B;**&#x200B;tot.
 
       Selecteer **Visuele Redacteur** in de rij van Objecten en van Functies van de Vorm.
 

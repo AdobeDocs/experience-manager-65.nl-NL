@@ -64,7 +64,7 @@ Voor elk platform moet ADBMobileConfig naar een specifieke locatie worden gekopi
 
 Als het bouwen met CLI PhoneGap dit met cordova kan worden gedaan bouwen hamanuscripten. Dit kan in buitenGeometrixx App in worden gezien:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Voor iOS moet het dossier aan de folder van Middelen van het XCode- project **** worden gekopieerd (bijvoorbeeld, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android™, is het pad naar kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor verdere details bij het gebruiken van haken tijdens de bouwstijl PhoneGap CLI, zie [ Drie haken uw Cordova/het projectbehoeften van PhoneGap ](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Voor iOS moet het dossier aan de folder van Middelen van het XCode- project **&#x200B;**&#x200B;worden gekopieerd (bijvoorbeeld, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android™, is het pad naar kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor verdere details bij het gebruiken van haken tijdens de bouwstijl PhoneGap CLI, zie [ Drie haken uw Cordova/het projectbehoeften van PhoneGap ](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

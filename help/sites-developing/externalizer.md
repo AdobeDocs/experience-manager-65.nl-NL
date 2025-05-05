@@ -78,7 +78,7 @@ Om een domeinafbeelding voor de **Externalalizer** dienst te bepalen:
 
 ### De service ExternalAlizer gebruiken {#using-the-externalizer-service}
 
-Deze sectie toont een paar voorbeelden van hoe de **** dienst Externalzer kan worden gebruikt:
+Deze sectie toont een paar voorbeelden van hoe de **&#x200B;**&#x200B;dienst Externalzer kan worden gebruikt:
 
 1. **om de dienst Externalzer in JSP te krijgen:**
 

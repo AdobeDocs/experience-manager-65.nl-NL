@@ -197,7 +197,7 @@ Hoewel de configuratieopties variëren, zijn het volgende gemeenschappelijk voor
 * **Breedte** - laat u de breedte plaatsen.
 * **Hoogte** - laat u de hoogte plaatsen.
 
-U plaatst deze configuratieopties door (het tweemaal klikken) een component van Dynamic Media Classic (Scene7) te openen, bijvoorbeeld, wanneer u a **** component van het Gezoem opent:
+U plaatst deze configuratieopties door (het tweemaal klikken) een component van Dynamic Media Classic (Scene7) te openen, bijvoorbeeld, wanneer u a **&#x200B;**&#x200B;component van het Gezoem opent:
 
 ![ chlimage_1-52 ](assets/chlimage_1-52.png)
 
@@ -395,7 +395,7 @@ Standaard zoekt de Experience Manager naar de geselecteerde map en naar alle sub
 >* In klassieke UI, kunt u ook naar **Flash** en **FXG** zoeken. Filteren voor deze twee termen in de interface met geoptimaliseerde aanrakingen wordt niet ondersteund.
 >
 >* Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke uitvoering (alleen &#42; .mp4) en de gecodeerde uitvoering.
-* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
+>* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
 >
 
 **Status van Publish** - u kunt voor activa filtreren die op publicatiestatus worden gebaseerd: Niet gepubliceerd of Gepubliceerd. Als u geen Publish-status selecteert, zoekt de Experience Manager standaard naar alle publicatiestatus.

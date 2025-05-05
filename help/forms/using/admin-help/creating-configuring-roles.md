@@ -78,7 +78,7 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 
 **AEM vormen Workspace Beheerder:** kan montages van de pagina van Workspace in de Console van het Beleid bekijken en wijzigen
 
-***nota **: De Werkruimte van Flex wordt afgekeurd voor AEM vormenversie.*
+***nota &#x200B;**: De Werkruimte van Flex wordt afgekeurd voor AEM vormenversie.*
 
 **Gebruiker van Workspace:** kan login aan de eindgebruikertoepassing van Workspace
 

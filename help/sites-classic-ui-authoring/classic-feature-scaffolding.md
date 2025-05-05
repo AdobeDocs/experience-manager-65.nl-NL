@@ -45,7 +45,7 @@ De basispagina-eigenschappen zijn:
 
 * **Tekst van de Titel**: Dit is de naam van deze steigerpagina zelf. In dit voorbeeld heet het &#39;Nieuws&#39;.
 * **Beschrijving**: Dit verschijnt onder de titel op de steigerpagina.
-* **Malplaatje van het Doel**: Dit is het malplaatje dat dit subold zal gebruiken wanneer het tot een pagina leidt. In dit voorbeeld, is het a *malplaatje van de Pagina van de Inhoud van 0} Geometrixx.*
+* **Malplaatje van het Doel**: Dit is het malplaatje dat dit subold zal gebruiken wanneer het tot een pagina leidt. In dit voorbeeld, is het a *malplaatje van de Pagina van de Inhoud van 0&rbrace; Geometrixx.*
 * **Weg van het Doel**: Dit is de weg van de ouderpagina waarbeneden dit subold pagina tot pagina&#39;s zal leiden. In dit voorbeeld is het pad */content/geometrixx/nl/news* .
 
 Het lichaam van het substraat is de vorm. Wanneer een gebruiker een pagina wil tot stand brengen gebruikend het substraat vult uit de vorm en klikt *creeert*, bij de bodem. In het **Voorbeeld van het Nieuws** boven de vorm heeft de volgende gebieden:
@@ -136,7 +136,7 @@ De vaste waarde die voor deze eigenschap is opgegeven, is
 
 `foundation/components/textimage`
 
-Dit specificeert dat de component die moet worden gebruikt om de tekstinhoud van deze paragraaf terug te geven is de *component van het Beeld van de Tekst 0} {.* Met de Booleaanse waarde `isRichText` die in het andere verborgen veld is opgegeven, kan de component de werkelijke tekenreeks die op `./jcr:content/par/text/text` is opgeslagen, op de gewenste manier renderen.
+Dit specificeert dat de component die moet worden gebruikt om de tekstinhoud van deze paragraaf terug te geven is de *component van het Beeld van de Tekst 0&rbrace; &lbrace;.* Met de Booleaanse waarde `isRichText` die in het andere verborgen veld is opgegeven, kan de component de werkelijke tekenreeks die op `./jcr:content/par/text/text` is opgeslagen, op de gewenste manier renderen.
 
 ### Basisstructuur met MSM-overerving {#scaffolding-with-msm-inheritance}
 

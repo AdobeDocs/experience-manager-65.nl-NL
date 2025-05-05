@@ -36,7 +36,7 @@ Als u een component `Calendar` in de ontwerpmodus aan een pagina wilt toevoegen,
 
 En sleep het op zijn plaats op een pagina, zoals een positie met betrekking tot de eigenschap voor gebruikers om te herzien.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Calendar` component verschijnt.
 
@@ -92,7 +92,7 @@ Onder het **lusje van Montages**, specificeer of om markeringen toe te staan om 
 
 * **Max de Grootte van het Dossier van het Beeld van de Band**
 
-  Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152****(2 MB).
+  Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152&#x200B;**&#x200B;**(2 MB).
 
 * **Toegestane Types van Beeld van de Omslag**
 
@@ -156,7 +156,7 @@ Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de gepost
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen worden toegepast, indien toegestaan onder het **3} lusje van Montages {, beperkt volgens gekozen namespaces.**
+Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen worden toegepast, indien toegestaan onder het **3&rbrace; lusje van Montages &lbrace;, beperkt volgens gekozen namespaces.**
 
 * **Toegestane Namespaces**
 
@@ -164,7 +164,7 @@ Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen word
 
 * **de Grens van de Suggestie**
 
-  Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De standaardwaarde is **-**1 (geen limieten).
+  Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De standaardwaarde is **-**&#x200B;1 (geen limieten).
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte kalendergebeurtenis
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](/help/communities/calendar-basics-for-developers.md) pagina van de Hoofdzaak van de Kalender [ worden gevonden voor ontwikkelaars.
+Meer informatie kan op de [&#128279;](/help/communities/calendar-basics-for-developers.md) pagina van de Hoofdzaak van de Kalender  worden gevonden voor ontwikkelaars.
 
 Voor moderatie van kalendergebeurtenissen en commentaren, zie [ het Mativeren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
 

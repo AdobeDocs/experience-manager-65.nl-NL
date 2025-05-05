@@ -42,9 +42,9 @@ Voer de volgende stappen uit om AEM Forms Workspace in een Deel van het Web te i
    >
    >44299 is het standaardpoortnummer voor de SharePoint-server. Het poortnummer is afhankelijk van uw installatie van SharePoint Server.
 
-1. Op de hoger-juiste kant van de Web-pagina, klik {de Acties van de Plaats **en selecteer** uitgeven Pagina **.**
+1. Op de hoger-juiste kant van de Web-pagina, klik &lbrace;de Acties van de Plaats **en selecteer** uitgeven Pagina **.**
 1. Klik **toevoegen een Deel van het Web** knoop.
-1. In Add de Delen van het Web - de dialoogdoos van de Web-pagina, onder Dialoogvenster, selecteert het **Deel van het Web van de Kijker van de Pagina 0} en klikt dan** **toevoegen.**
+1. In Add de Delen van het Web - de dialoogdoos van de Web-pagina, onder Dialoogvenster, selecteert het **Deel van het Web van de Kijker van de Pagina 0&rbrace; en klikt dan** **toevoegen.**
 1. In de doos van het Deel van het Web van de Kijker van de Pagina, geeft de klik **uit en selecteert** Gedeeld Deel van het Web **wijzigen.**
 
    >[!NOTE]

@@ -626,12 +626,12 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
   </tr>
   <tr>
    <td><p>Instructies in het dialoogvenster Toepassingsspecifiek</p></td>
-   <td><p>Geeft aan hoe moet worden gereageerd op toepassingsspecifieke dialoogvensters. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>```[appname]` </i>.dialog.<i>`` [locale]`</i>.xml (bijvoorbeeld, appmon.word.en_US.xml).</p></td>
+   <td><p>Geeft aan hoe moet worden gereageerd op toepassingsspecifieke dialoogvensters. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>&grave;&grave;&grave;[appname]` </i>.dialog.<i>` ` [locale]`</i>.xml (bijvoorbeeld, appmon.word.en_US.xml).</p></td>
    <td><p>Wijzig dit bestand niet. </p><p>Om de instructies van de dialoogdoos voor een nieuwe inheemse toepassing toe te voegen, zie <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application"> Creërend of wijzigend een extra dossier van dialoogXML voor een inheemse toepassing </a>.</p></td>
   </tr>
   <tr>
    <td><p>Aanvullende toepassingsspecifieke dialoogvensterinstructies </p></td>
-   <td><p>Hiermee geeft u overschrijvingen en toevoegingen aan de instructies in het specifieke dialoogvenster voor de toepassing op. De sectie bevat een voorbeeld van dergelijke informatie. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>```[appname]` </i>.adding.<i>```[locale]`</i>.xml. Een voorbeeld is appmon.adding.nl_NL.xml.</p></td>
+   <td><p>Hiermee geeft u overschrijvingen en toevoegingen aan de instructies in het specifieke dialoogvenster voor de toepassing op. De sectie bevat een voorbeeld van dergelijke informatie. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>```[appname]` </i>.adding.<i>```[locale]&grave;</i>.xml. Een voorbeeld is appmon.adding.nl_NL.xml.</p></td>
    <td><p>Bestanden van dit type kunnen worden gemaakt en gewijzigd met een XML-bewerkingstoepassing. (Zie <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application"> Creërend of wijzigend een extra dossier van dialoogXML voor een inheemse toepassing </a>.) </p><p><strong> Belangrijk </strong>: Creeer extra toepassing-specifieke de dialoogvakje instructies voor elke inheemse toepassing uw server zal steunen. </p></td>
   </tr>
  </tbody>
@@ -923,8 +923,8 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
 1. In het de dialoogvakje van de Eigenschappen van het Systeem, klik het **Geavanceerde** lusje en klik dan **de Variabelen van het Milieu**.
 1. Onder de Variabelen van het Systeem in de de dialoogdoos van de Variabelen van het Milieu, klik **Nieuw**.
 1. In het Nieuwe de dialoogvakje van de Variabele van het Systeem, in de **Veranderlijke naam** doos, typ een naam die het formaat `[applicationname]_PATH` gebruikt.
-1. In de **Veranderlijke waarde** doos, typ de volledige weg en de dossiernaam van het uitvoerbare dossier van de toepassing en klik dan O.K. ****. Typ bijvoorbeeld: `c:\windows\Notepad.exe`
-1. In het de dialoogvakje van de Variabelen van het Milieu, klik O.K. ****.
+1. In de **Veranderlijke waarde** doos, typ de volledige weg en de dossiernaam van het uitvoerbare dossier van de toepassing en klik dan O.K. **&#x200B;**. Typ bijvoorbeeld: `c:\windows\Notepad.exe`
+1. In het de dialoogvakje van de Variabelen van het Milieu, klik O.K. **&#x200B;**.
 
 **creeer een systeemvariabele van de bevellijn**
 

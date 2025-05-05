@@ -34,7 +34,7 @@ Hoewel Experience Manager op verschillende platformen wordt ondersteund, biedt A
 
 ### Tijdelijke map {#temp-folder}
 
-Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. Bijvoorbeeld, in Amazon EC2, kan een ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) aandrijving van de 1} aandrijving 0} worden gebruikt voor de tijdelijke omslag.[
+Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. Bijvoorbeeld, in Amazon EC2, kan een [&#128279;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) aandrijving van de 1&rbrace; aandrijving 0&rbrace; worden gebruikt voor de tijdelijke omslag.
 
 Ervan uitgaande dat de server over voldoende geheugen beschikt, configureert u een RAM-station. Voer in Linux de volgende opdrachten uit om een 8 GB RAM-station te maken:
 

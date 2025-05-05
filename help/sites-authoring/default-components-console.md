@@ -22,7 +22,7 @@ Het kan van **Hulpmiddelen worden betreden >** **Algemeen >** **Componenten**. I
 
 >[!NOTE]
 >
->In de componentconsole worden alle componenten in het systeem weergegeven. Browser van de Component ](/help/sites-authoring/author-environment-tools.md#components-browser) toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode ( `.`) beginnen.[
+>In de componentconsole worden alle componenten in het systeem weergegeven. Browser van de Component [&#128279;](/help/sites-authoring/author-environment-tools.md#components-browser) toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode ( `.`) beginnen.
 
 ## Zoeken {#searching}
 

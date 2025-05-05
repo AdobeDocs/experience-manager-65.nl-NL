@@ -52,7 +52,7 @@ Als er geen selectie wordt gemaakt, is de standaardinstelling de AEM opslagplaat
 
 JCR is *niet* een gemeenschappelijke opslag die door de milieu&#39;s van de Auteur en van Publish wordt gedeeld. Community-inhoud is alleen zichtbaar in de auteur- of Publish-omgeving waarin deze is gemaakt.
 
-Bezoek {de Opslag van 0} JCR ](jsrp.md) voor extra informatie.[
+Bezoek {de Opslag van 0} JCR [&#128279;](jsrp.md) voor extra informatie.
 
 >[!NOTE]
 >

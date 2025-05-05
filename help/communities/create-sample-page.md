@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Vanaf AEM 6.1 Gemeenschappen is de eenvoudigste manier om een voorbeeldpagina te maken een eenvoudige gemeenschapssite te maken, die bestaat uit een functie Pagina.
 
-Dit omvat een component parsys zodat u componenten voor creatie ](basics.md#accessing-communities-components) kunt [ toelaten.
+Dit omvat een component parsys zodat u componenten voor creatie [&#128279;](basics.md#accessing-communities-components) kunt  toelaten.
 
 Een andere optie voor exploratie met steekproefcomponenten moet de eigenschappen gebruiken die in de [ Gids van Communautaire Componenten ](components-guide.md) worden voorgesteld.
 

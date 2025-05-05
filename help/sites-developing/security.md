@@ -58,4 +58,4 @@ Met de standaardmachtigingen:
 
 ## Protect tegen aanvallen van smeedmachines voor aanvragen voor meerdere sites {#protect-against-cross-site-request-forgery-attacks}
 
-Voor meer informatie over de veiligheidsmechanismen AEM aanwenden om aanvallen te verlichten CSRF, zie de ](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) sectie van de Filter van de Verwijzer van 0} Verschuiving van de Controle van de Veiligheid en de [ documentatie van het Kader van de Bescherming CSRF ](/help/sites-developing/csrf-protection.md).[
+Voor meer informatie over de veiligheidsmechanismen AEM aanwenden om aanvallen te verlichten CSRF, zie de [&#128279;](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) sectie van de Filter van de Verwijzer van 0&rbrace; Verschuiving van de Controle van de Veiligheid en de [ documentatie van het Kader van de Bescherming CSRF ](/help/sites-developing/csrf-protection.md).

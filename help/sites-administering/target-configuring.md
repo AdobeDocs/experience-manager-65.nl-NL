@@ -88,9 +88,9 @@ Hiervoor geeft u op met welke A4T-cloudconfiguratie uw Adobe Target-cloudconfigu
    >Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
    >
    >1. Navigeer aan **Hulpmiddelen** > **Algemeen** > **CRXDE Lite**.
-   1. Navigeer aan de [ Dialoog van de Configuratie van de Analyse A4T ](#a4t-analytics-config-dialog) (zie hieronder)
-   1. Plaats het bezit **onbruikbaar maken** aan **vals**.
-   1. Klik **sparen allen**.
+   >1. Navigeer aan de [ Dialoog van de Configuratie van de Analyse A4T ](#a4t-analytics-config-dialog) (zie hieronder)
+   >1. Plaats het bezit **onbruikbaar maken** aan **vals**.
+   >1. Klik **sparen allen**.
 
 #### Dialoogvenster Configuratie A4T-analyse {#a4t-analytics-config-dialog}
 
@@ -108,16 +108,16 @@ Handmatig integreren met Adobe Target in plaats van de wizard Optie gebruiken.
 
 >[!NOTE]
 >
-Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen. De Adobe adviseert dat u AT.js in plaats van mbox.js als cliëntbibliotheek gebruikt.
+>Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen. De Adobe adviseert dat u AT.js in plaats van mbox.js als cliëntbibliotheek gebruikt.
 >
-AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
+>AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
 >
-* Verbeterde laadtijden voor webimplementaties
-* Verbeterde beveiliging
-* Betere implementatieopties voor toepassingen van één pagina
-* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan target.js
+>* Verbeterde laadtijden voor webimplementaties
+>* Verbeterde beveiliging
+>* Betere implementatieopties voor toepassingen van één pagina
+>* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan target.js
 >
-U kunt AT.js of mbox.js in het **de bibliotheek van de Cliënt** drop-down menu selecteren.
+>U kunt AT.js of mbox.js in het **de bibliotheek van de Cliënt** drop-down menu selecteren.
 
 <!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
@@ -139,7 +139,7 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
 1. In **creeer de dialoog van de Configuratie**:
 
    1. Geef de configuratie a **Titel**.
-   1. Selecteer het **malplaatje van de Configuratie van 0} Adobe Target.**
+   1. Selecteer het **malplaatje van de Configuratie van 0&rbrace; Adobe Target.**
 
       ![ Configuratie van Adobe Target ](assets/adobe-target-create-configuration.png)
 
@@ -151,12 +151,12 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
 
    >[!NOTE]
    >
-   Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
+   >Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
    >
-   1. Navigeer aan **Hulpmiddelen** > **Algemeen** > **CRXDE Lite**.
-   1. Navigeer naar **/libs/cq/analytics/components/testandtargetPage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   1. Plaats het bezit **onbruikbaar maken** aan **vals**.
-   1. Klik **sparen allen**.
+   >1. Navigeer aan **Hulpmiddelen** > **Algemeen** > **CRXDE Lite**.
+   >1. Navigeer naar **/libs/cq/analytics/components/testandtargetPage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   >1. Plaats het bezit **onbruikbaar maken** aan **vals**.
+   >1. Klik **sparen allen**.
 
 1. Geef in het dialoogvenster waarden op voor deze eigenschappen.
 
@@ -175,13 +175,13 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
 
    >[!NOTE]
    >
-   Wanneer u zich aanmeldt bij de Adobe Target-configuratietovenaar, wordt Accurate gericht inschakelen.
+   >Wanneer u zich aanmeldt bij de Adobe Target-configuratietovenaar, wordt Accurate gericht inschakelen.
    >
-   Nauwkeurige het richten betekent dat de de dienstconfiguratie van de wolk op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
+   >Nauwkeurige het richten betekent dat de de dienstconfiguratie van de wolk op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
    >
-   Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Nochtans, op publiceer instantie kunt u verkiezen om nauwkeurige gericht uit te zetten globaal door het vinkje naast Accurate het richten in de configuratie van de wolkendienst (**http://localhost:4502/etc/cloudservices.html**) te ontruimen. U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
+   >Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Nochtans, op publiceer instantie kunt u verkiezen om nauwkeurige gericht uit te zetten globaal door het vinkje naast Accurate het richten in de configuratie van de wolkendienst (**http://localhost:4502/etc/cloudservices.html**) te ontruimen. U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
    >
-   Als u ***reeds*** gecreeerd gerichte componenten hebt en u dit het plaatsen verandert, beïnvloeden uw veranderingen niet die componenten. Wijzig deze componenten rechtstreeks.
+   >Als u ***reeds*** gecreeerd gerichte componenten hebt en u dit het plaatsen verandert, beïnvloeden uw veranderingen niet die componenten. Wijzig deze componenten rechtstreeks.
 
 1. Klik **verbinden met Doel** om de verbinding met Doel te initialiseren. Als de verbinding succesvol is, wordt het bericht **succesvolle Verbinding** getoond. Klik **O.K.** op het bericht en dan **O.K.** op de dialoog.
 
@@ -202,11 +202,11 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel creëren. 
 
    ![ Componenten voor kader ](assets/chlimage_1-162.png)
 
-1. Sleep de component van de Context van de Cliënt die de gegevens vertegenwoordigt die u voor afbeelding aan het dalingsdoel wilt gebruiken. Alternatief, sleep de {**component 1} ContextHub van 0} aan het kader.**
+1. Sleep de component van de Context van de Cliënt die de gegevens vertegenwoordigt die u voor afbeelding aan het dalingsdoel wilt gebruiken. Alternatief, sleep de {**component 1} ContextHub van 0&rbrace; aan het kader.**
 
    >[!NOTE]
    >
-   Bij toewijzing worden parameters via eenvoudige tekenreeksen aan een box doorgegeven. U kunt geen series van ContextHub in kaart brengen.
+   >Bij toewijzing worden parameters via eenvoudige tekenreeksen aan een box doorgegeven. U kunt geen series van ContextHub in kaart brengen.
 
    Bijvoorbeeld, om **Gegevens van het Profiel** over uw plaatsbezoekers te gebruiken om uw campagne van het Doel te controleren, sleep de **component van de Gegevens van het Profiel** aan de pagina. De variabelen van profielgegevens die voor afbeelding aan de parameters van het Doel beschikbaar zijn verschijnen.
 
@@ -218,7 +218,7 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel creëren. 
 
    >[!NOTE]
    >
-   Het synchroniseren van parameters is slechts één manier - van AEM naar Adobe Target.
+   >Het synchroniseren van parameters is slechts één manier - van AEM naar Adobe Target.
 
 Uw framework is gemaakt. Om het kader aan te herhalen publiceer instantie, gebruik **activeer Kader** optie van sidekick.
 
@@ -228,14 +228,14 @@ Koppel uw [ AEM activiteiten ](/help/sites-authoring/activitylib.md) met uw de w
 
 >[!NOTE]
 >
-Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
+>Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
 >
 >
-* Als de **xt_only** optie op de huurder van Adobe Target (cliëntcode) wordt toegelaten die aan de AEM kant wordt gebruikt om met Adobe Target te verbinden, dan kunt u **slechts** activiteiten XT in AEM tot stand brengen.
+>* Als de **xt_only** optie op de huurder van Adobe Target (cliëntcode) wordt toegelaten die aan de AEM kant wordt gebruikt om met Adobe Target te verbinden, dan kunt u **slechts** activiteiten XT in AEM tot stand brengen.
 >
-* Als de **xt_only** optie **niet** op de huurder van Adobe Target (cliëntcode) wordt toegelaten, dan kunt u **zowel** XT als activiteiten A/B in AEM tot stand brengen.
+>* Als de **xt_only** optie **niet** op de huurder van Adobe Target (cliëntcode) wordt toegelaten, dan kunt u **zowel** XT als activiteiten A/B in AEM tot stand brengen.
 >
-**Extra nota:** **xt_only** optie is het plaatsen die op een bepaalde huurder van het Doel wordt toegepast (clientcode) en kan slechts direct in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
+>**Extra nota:** **xt_only** optie is het plaatsen die op een bepaalde huurder van het Doel wordt toegepast (clientcode) en kan slechts direct in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
 
 ### Het doelframework koppelen aan uw site {#associating-the-target-framework-with-your-site}
 
@@ -255,14 +255,14 @@ Wanneer u een pagina aan het framework koppelt, nemen de onderliggende pagina&#3
 
    >[!NOTE]
    >
-   Zorg ervoor dat u het specifieke **kader** selecteert dat u en niet de de wolkenconfiguratie creeerde van het Doel waaronder het werd gecreeerd.
+   >Zorg ervoor dat u het specifieke **kader** selecteert dat u en niet de de wolkenconfiguratie creeerde van het Doel waaronder het werd gecreeerd.
 
 1. Klik **Gedaan**.
 1. Activeer de hoofdpagina van de website zodat u deze naar de publicatieserver kopieert. (Zie [ hoe te de Pagina&#39;s van Publish ](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
    >
-   Als het framework dat u aan de pagina hebt gekoppeld nog niet is geactiveerd, wordt een wizard geopend waarmee u het ook kunt publiceren.
+   >Als het framework dat u aan de pagina hebt gekoppeld nog niet is geactiveerd, wordt een wizard geopend waarmee u het ook kunt publiceren.
 
 ## Problemen met doelverbinding oplossen {#troubleshooting-target-connection-problems}
 

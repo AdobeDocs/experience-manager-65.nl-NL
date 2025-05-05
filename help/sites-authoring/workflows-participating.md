@@ -280,7 +280,7 @@ Om de lading, en middelen, van de werkschemainstantie te bekijken:
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (klik op de miniatuur).
 1. Selecteer **Payload van de Mening** van de toolbar om de dialoog te openen.
 
-   Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **component van de Definitie van het Middel 0} {om nieuwe ingangen toe te voegen.**
+   Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **component van de Definitie van het Middel 0&rbrace; &lbrace;om nieuwe ingangen toe te voegen.**
 
    ![ wf-78 ](assets/wf-78.png)
 

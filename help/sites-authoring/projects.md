@@ -101,7 +101,7 @@ Klik op de ellipsknop rechtsonder in een tegel om de gegevens van de tegel te op
 
 ### Assets {#assets}
 
-In de **tegel van 0} Assets {, kunt u alle activa verzamelen die u voor een bepaald project gebruikt.**
+In de **tegel van 0&rbrace; Assets &lbrace;, kunt u alle activa verzamelen die u voor een bepaald project gebruikt.**
 
 ![ de tegel van Assets ](assets/project-tile-assets.png)
 
@@ -117,7 +117,7 @@ Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juis
 
 ### Ervaringen {#experiences}
 
-De **tegel van de Ervaring 0} laat u een mobiele app, een website, of een publicatie aan het project toevoegen.**
+De **tegel van de Ervaring 0&rbrace; laat u een mobiele app, een website, of een publicatie aan het project toevoegen.**
 
 ![ de tegel van Ervaring ](assets/project-tile-experiences.png)
 
@@ -136,13 +136,13 @@ U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en de miniatuur
 
 ### Projectinfo {#project-info}
 
-De **tegel van de Informatie van het 0} Project {verstrekt algemene informatie over het project met inbegrip van een beschrijving, projectstatus (inactief of actief), een vervaldatum, en leden.** Bovendien kunt u een projectduimnagel toevoegen, die op de belangrijkste pagina van Projecten wordt getoond.
+De **tegel van de Informatie van het 0&rbrace; Project &lbrace;verstrekt algemene informatie over het project met inbegrip van een beschrijving, projectstatus (inactief of actief), een vervaldatum, en leden.** Bovendien kunt u een projectduimnagel toevoegen, die op de belangrijkste pagina van Projecten wordt getoond.
 
 ![ de informatietegel van het Project ](assets/project-tile-info.png)
 
 ### Vertaaltaak {#translation-job}
 
-De **tegel van de Baan van 0} Vertaling {is waar u een vertaling begint en ook waar u het statuut van uw vertalingen ziet.**
+De **tegel van de Baan van 0&rbrace; Vertaling &lbrace;is waar u een vertaling begint en ook waar u het statuut van uw vertalingen ziet.**
 
 ![ de baantegel van de Vertaling ](assets/project-tile-translation.png)
 
@@ -184,7 +184,7 @@ Deze worden beschreven in [ Werkend met de Werkschema&#39;s van het Project.](/h
 
 ### Lanceringen {#launches}
 
-De **tegel van 0} Lanceringen {toont om het even welke lanceringen die met het werkschema van de Lancering van het a [ Verzoek zijn gevraagd.](/help/sites-authoring/projects-with-workflows.md)**
+De **tegel van 0&rbrace; Lanceringen &lbrace;toont om het even welke lanceringen die met het werkschema van de Lancering van het a [ Verzoek zijn gevraagd.](/help/sites-authoring/projects-with-workflows.md)**
 
 ![ de tegel van Lanceringen ](assets/project-tile-launches.png)
 

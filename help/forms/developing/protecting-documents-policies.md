@@ -355,7 +355,7 @@ Voordat u via programmacode een bewerking voor documentbeveiliging kunt uitvoere
 
 **wint een bestaand beleid** terug
 
-Haal een bestaand beleid op om het te wijzigen. Om een beleid terug te winnen, specificeer de beleidsnaam en het beleid dat wordt geplaatst waartot het beleid behoort. Als u een `null` waarde voor de naam van de beleidsreeks specificeert, wordt het beleid teruggewonnen van *Mijn 2} beleidsreeks van Beleid.*
+Haal een bestaand beleid op om het te wijzigen. Om een beleid terug te winnen, specificeer de beleidsnaam en het beleid dat wordt geplaatst waartot het beleid behoort. Als u een `null` waarde voor de naam van de beleidsreeks specificeert, wordt het beleid teruggewonnen van *Mijn 2&rbrace; beleidsreeks van Beleid.*
 
 **plaats de attributen van het beleid**
 

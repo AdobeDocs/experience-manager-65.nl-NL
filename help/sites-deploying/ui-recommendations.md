@@ -111,7 +111,7 @@ Zie [ Selecterend Uw UI ](/help/sites-authoring/select-ui.md) voor informatie ov
 
 Voor details van de verhogingen die aan aanraking-toegelaten UI in AEM 6.5 worden aangebracht zien [ wat ](/help/release-notes/release-notes.md#what-s-new) in de Nota&#39;s van de Versie Nieuw is.
 
-Een volledig overzicht ziet de ](/help/release-notes/touch-ui-features-status.md) pagina van de Status van de Eigenschap van 0} Aanraakinterface[
+Een volledig overzicht ziet de [&#128279;](/help/release-notes/touch-ui-features-status.md) pagina van de Status van de Eigenschap van 0&rbrace; Aanraakinterface
 
 ### Hulpbronnen {#resources-to-help}
 
@@ -130,4 +130,4 @@ Voor gedetailleerde ontwikkelingsinformatie:
 
 * [ het Aanpassen van pagina authoring in touch-enabled UI ](/help/sites-developing/customizing-page-authoring-touch.md) (omvat steekproefcode).
 
-* {de documentatie van 0} granite UI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).[
+* {de documentatie van 0} granite UI [&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).

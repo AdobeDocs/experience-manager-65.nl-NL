@@ -18,7 +18,7 @@ Leer hoe u bepaalde functionaliteit voor inhoudsfragmenten in de configuratiegro
 
 ## Functionaliteit van inhoudsfragment inschakelen voor uw instantie {#enable-content-fragment-functionality-instance}
 
-Alvorens Inhoudsfragmenten te gebruiken, gebruik Browser van de Configuratie **** om het volgende toe te laten:
+Alvorens Inhoudsfragmenten te gebruiken, gebruik Browser van de Configuratie **&#x200B;**&#x200B;om het volgende toe te laten:
 
 * **Modellen van het Fragment van de Inhoud** - verplicht
 * **de Blijvende Vragen van GraphQL** - facultatief
@@ -37,7 +37,7 @@ U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schak
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Om [ bepaalde functionaliteit van het Fragment van de Inhoud ](#creating-a-content-fragment-model) te gebruiken, moet u **** eerst hen als **Browser van de Configuratie** toelaten:
+Om [ bepaalde functionaliteit van het Fragment van de Inhoud ](#creating-a-content-fragment-model) te gebruiken, moet u **&#x200B;**&#x200B;eerst hen als **Browser van de Configuratie** toelaten:
 
 >[!NOTE]
 >

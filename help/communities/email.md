@@ -182,9 +182,9 @@ Voor de e-mail die naar de gegevensopslagplaats moet worden gebracht, is het noo
 
 * **[!UICONTROL URL]**
 
-  *(Vereist)* De uitgaande postserver. Bijvoorbeeld `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****` .
+  *(Vereist)* De uitgaande postserver. Bijvoorbeeld `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**` .
 
-* **[!UICONTROL Import to Path]**&amp;ast;
+* **[!UICONTROL Import to Path]**&ast;
 
   *(Required)* Reeks aan `/content/usergenerated/mailFolder/postEmails`
 door aan de `postEmails` omslag te doorbladeren en **O.K.** te selecteren.

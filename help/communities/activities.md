@@ -38,7 +38,7 @@ Als u een component `Activity Streams` in de ontwerpmodus aan een pagina wilt to
 
 En sleep het naar zijn plaats op een pagina waar de activiteitenstromen zouden moeten verschijnen.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-activities.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Activity Streams` component verschijnt:
 

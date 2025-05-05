@@ -31,7 +31,7 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
 1. In uw browser, ga naar de **Siteadmin** console.
-1. Open de **pagina van de Producten 1} hieronder** Websites **>** Mobiele Plaats van de Demo van de Geometrixx **>>** Engels **.**
+1. Open de **pagina van de Producten 1&rbrace; hieronder** Websites **>** Mobiele Plaats van de Demo van de Geometrixx **>>** Engels **.**
 
 1. Schakel over naar een andere emulator. Hiervoor kunt u:
 

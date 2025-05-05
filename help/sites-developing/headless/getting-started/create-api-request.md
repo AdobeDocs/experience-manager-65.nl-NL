@@ -37,6 +37,7 @@ De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerp
    * In het linkerdeelvenster kunt u een query maken.
    * De resultaten worden weergegeven in het rechterdeelvenster.
    * De vraagredacteur kenmerkt codevoltooiing en hotkeys om de vraag gemakkelijk uit te voeren.
+
      ![ GraphiQL redacteur ](assets/graphiql.png)
 
 1. Ervan uitgaande dat het model dat u hebt gemaakt `person` is aangeroepen met velden `firstName` , `lastName` en `position` , kunt u een eenvoudige query maken om de inhoud van het inhoudsfragment op te halen.
@@ -67,6 +68,7 @@ De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerp
    * **Dokken** bij het hoogste recht van de pagina om in-context documentatie te tonen om u te helpen uw vragen bouwen die aan uw eigen modellen aanpassen.
    * **Geschiedenis** in de hoogste toolbar om vorige vragen te tonen.
    * **sparen als** en **sparen** om uw vragen te bewaren, waarna u hen van het **Persisted paneel van Vragen** en **Publish** kunt een lijst maken en terugwinnen.
+
      ![ documentatie GraphiQL ](assets/graphiql-documentation.png)
 
 GraphQL laat gestructureerde vragen toe die niet alleen specifieke gegevensreeksen of individuele gegevensvoorwerpen kunnen richten, maar ook specifieke elementen van de voorwerpen, genestelde resultaten, biedt steun voor vraagvariabelen, en veel meer kunnen leveren.

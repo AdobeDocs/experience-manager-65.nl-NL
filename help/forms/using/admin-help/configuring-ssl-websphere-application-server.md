@@ -57,11 +57,11 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 1. Klik **Gebruikers**, klik de gebruiker met de rechtermuisknop aan u creeerde en selecteer **Eigenschappen**.
 1. Klik het **Lid van** lusje en klik dan **toevoegen**.
 1. Typ `Administrators` in het vak Geef de objectnamen op die u wilt selecteren en klik op Namen controleren om na te gaan of de groepsnaam correct is.
-1. Klik **O.K.** en klik dan O.K. **** opnieuw.
+1. Klik **O.K.** en klik dan O.K. **&#x200B;**&#x200B;opnieuw.
 1. Selecteer **Begin > Controlebord > Administratieve Hulpmiddelen > Lokaal Beleid van de Veiligheid > Lokale Beleid**.
 1. Klik op Toewijzing gebruikersrechten en klik vervolgens met de rechtermuisknop op Handelen als onderdeel van het besturingssysteem en selecteer Eigenschappen.
 1. Klik **toevoegen Gebruiker of Groep**.
-1. In ga de Namen van Objecten in om doos te selecteren, typ de naam van de gebruiker u in stap 4 creeerde, klik **Namen van de Controle** om ervoor te zorgen dat de naam correct is, en klik dan O.K. ****.
+1. In ga de Namen van Objecten in om doos te selecteren, typ de naam van de gebruiker u in stap 4 creeerde, klik **Namen van de Controle** om ervoor te zorgen dat de naam correct is, en klik dan O.K. **&#x200B;**.
 1. Klik **O.K.** om de Akte als deel van de de dialoogdoos van de Eigenschappen van het Werkende Systeem te sluiten.
 
 ### WebSphere configureren om de nieuwe gebruiker als beheerder te gebruiken {#configure-websphere-to-use-the-newly-created-user-as-administrator}
@@ -71,7 +71,7 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 1. Onder Administratieve veiligheid, uitgezochte **Administratieve gebruikersrollen**.
 1. Klik op Toevoegen en voer de volgende handelingen uit:
 
-   1. Typ **&amp;ast;** in het zoekvak en klik op Zoeken.
+   1. Typ **&ast;** in het zoekvak en klik op Zoeken.
    1. Klik **Beheerder** onder rollen.
    1. Voeg de pas gecreëerde gebruiker aan Toegewezen aan rol toe en wijs het aan Beheerder toe.
 

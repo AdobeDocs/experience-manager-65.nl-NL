@@ -97,7 +97,7 @@ De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 
 Nadat de lokale ontwikkelomgeving is ingesteld, kunt u inhoud die in de React-app wordt gebruikt, simuleren door een statische Node-server lokaal te implementeren.
 
-Om een meer diepgaande blik te krijgen bij vestiging een lokale ontwikkelomgeving en alle gebiedsdelen nodig voor inhoudsvoorproef, zie {de documentatie van de Plaatsing van de 0} Productie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).[
+Om een meer diepgaande blik te krijgen bij vestiging een lokale ontwikkelomgeving en alle gebiedsdelen nodig voor inhoudsvoorproef, zie {de documentatie van de Plaatsing van de 0} Productie [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Uw AEM toepassing zonder koppen voorbereiden voor Go-Live {#prepare-your-aem-headless-application-for-golive}
 

@@ -52,7 +52,7 @@ Stel dat u een afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegeweze
 
 U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking de eerste keer is mislukt. Zelfs als u geen verwerkingsprofiel hebt bewerkt of geen verwerkingsprofiel hebt toegepast, kunt u de workflow voor het opnieuw verwerken van een map met middelen op elk moment uitvoeren.
 
-U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Het 1} werkschema van Assets van het opnieuw verwerken {op een omslag, worden de activa gegroepeerd in partijen, dan verzonden naar de server van Dynamic Media voor verwerking._ Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op Experience Manager. Als de partij groot is, kan er een vertraging optreden bij de verwerking. Als de batch te klein is, kunnen er te veel ronde overgangen naar de Dynamic Media-server plaatsvinden.
+U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Het 1&rbrace; werkschema van Assets van het opnieuw verwerken &lbrace;op een omslag, worden de activa gegroepeerd in partijen, dan verzonden naar de server van Dynamic Media voor verwerking._ Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op Experience Manager. Als de partij groot is, kan er een vertraging optreden bij de verwerking. Als de batch te klein is, kunnen er te veel ronde overgangen naar de Dynamic Media-server plaatsvinden.
 
 Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
 

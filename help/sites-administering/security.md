@@ -449,7 +449,7 @@ Gebruikers en groepen verbergen:
 
 Een gebruiker of groep maken:
 
-1. In de **lijst van de de consoleboom van de Veiligheid** {, geeft de klik **** uit en of **leidt tot Gebruiker** of **tot Groep**.
+1. In de **lijst van de de consoleboom van de Veiligheid** &lbrace;, geeft de klik **&#x200B;**&#x200B;uit en of **leidt tot Gebruiker** of **tot Groep**.
 
    ![ cqseruityeditcontextmenu ](assets/cqseruityeditcontextmenu.png)
 
@@ -550,7 +550,7 @@ Om leden aan een groep bij in een bepaalde weg toe te voegen:
 
    ![ chlimage_1-113 ](assets/chlimage_1-113.png)
 
-1. Selecteer de controledoos in de **1} kolom van het Lid {voor de leden die u toestemmingen aan die weg wilt hebben.** Schakel het selectievakje uit voor het lid waarvoor u machtigingen wilt verwijderen. Er verschijnt een rood driehoekje in de cel die u hebt gewijzigd.
+1. Selecteer de controledoos in de **1&rbrace; kolom van het Lid &lbrace;voor de leden die u toestemmingen aan die weg wilt hebben.** Schakel het selectievakje uit voor het lid waarvoor u machtigingen wilt verwijderen. Er verschijnt een rood driehoekje in de cel die u hebt gewijzigd.
 1. Klik **O.K.** om uw veranderingen te bewaren.
 
 ### Gebruikers of groepen verwijderen uit groepen {#removing-users-or-groups-from-groups}
@@ -597,7 +597,7 @@ Om leden uit een groep bij een bepaalde weg te verwijderen:
 
    ![ chlimage_1-114 ](assets/chlimage_1-114.png)
 
-1. Selecteer de controledoos in de **1} kolom van het Lid {voor de leden die u toestemmingen aan die weg wilt hebben.** Schakel het selectievakje uit voor het lid waarvoor u machtigingen wilt verwijderen. Er verschijnt een rood driehoekje in de cel die u hebt gewijzigd.
+1. Selecteer de controledoos in de **1&rbrace; kolom van het Lid &lbrace;voor de leden die u toestemmingen aan die weg wilt hebben.** Schakel het selectievakje uit voor het lid waarvoor u machtigingen wilt verwijderen. Er verschijnt een rood driehoekje in de cel die u hebt gewijzigd.
 1. Klik **O.K.** om uw veranderingen te bewaren.
 
 ### Gebruikerssynchronisatie {#user-synchronization}
@@ -720,7 +720,7 @@ Gebruikers of beheerders de rechten geven om andere gebruikers te verwijderen, a
 
    ![ cqsecurityAddDomain ](assets/cqsecurityaddmembertoadmin.png)
 
-1. In het 1} lusje van de Toestemmingen van de gebruiker **{, navigeer aan &quot;/&quot; en in de kolom van de Replicatie, selecteer de controledoos om replicatie bij &quot;/&quot; toe te staan en** te klikken sparen **.**
+1. In het 1&rbrace; lusje van de Toestemmingen van de gebruiker **&lbrace;, navigeer aan &quot;/&quot; en in de kolom van de Replicatie, selecteer de controledoos om replicatie bij &quot;/&quot; toe te staan en** te klikken sparen **.**
 
    ![ cqsecurityReplicatepermissions ](assets/cqsecurityreplicatepermissions.png)
 

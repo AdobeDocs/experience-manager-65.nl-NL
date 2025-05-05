@@ -30,7 +30,7 @@ De beste werkwijzen zijn:
 
 * Documentatie die op [ wordt gebaseerd checklist ](/help/managing/best-practices-checklist.md) die details:
 
-   * ](#projectheartbeat) analyse van het HartStroke van het project van 0}.[
+   * [&#128279;](#projectheartbeat) analyse van het HartStroke van het project van 0&rbrace;.
    * [ Status door het overzicht van de Rol ](#status-by-role).
    * [ Fases en Mijlpalen ](#phases-and-milestones).
    * [ Zeer belangrijke Persoon ](#persona) en hun betrokkenheid in elk (relevant) stadium.
@@ -40,7 +40,7 @@ De beste werkwijzen zijn:
 
 ## Projectkopslagdashboard {#project-heartbeat-dashboard}
 
-Het **aantekenvel van het Hart van het Project van 0} verstrekt een grafisch overzicht van kritieke metriek voor uw project:**
+Het **aantekenvel van het Hart van het Project van 0&rbrace; verstrekt een grafisch overzicht van kritieke metriek voor uw project:**
 
 * **Kwaliteit van de Fase**
 
@@ -56,7 +56,7 @@ Het **aantekenvel van het Hart van het Project van 0} verstrekt een grafisch ove
 
 ## Status op rol {#status-by-role}
 
-De **Status door Werkblad van de Rol** toont gedetailleerde uitsplitsing van [**Gezondheid**, **Kwaliteit, en **Voltooiing**](#projectheartbeat) door **[Fase](#phases-and-milestones)** en **[Persona](#persona)**.
+De **Status door Werkblad van de Rol** toont gedetailleerde uitsplitsing van [**Gezondheid**, **Kwaliteit, en &#x200B;** Voltooiing&#x200B;**](#projectheartbeat) door &#x200B;** [Fase](#phases-and-milestones)**&#x200B; en &#x200B;** [Persona](#persona)**.
 
 ## Fasen en mijlpalen {#phases-and-milestones}
 

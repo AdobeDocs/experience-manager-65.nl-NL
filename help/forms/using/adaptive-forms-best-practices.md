@@ -152,7 +152,7 @@ De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur v
       * `field.enabled` om een veld in of uit te schakelen.
       * `field.visible` om de zichtbaarheid van een veld te wijzigen.
 
-* Auteurs van adaptieve formulieren moeten mogelijk JavaScript-code schrijven om bedrijfslogica in een formulier te maken. Hoewel JavaScript krachtig en effectief is, is het waarschijnlijk dat het de veiligheidsverwachtingen in gevaar kan brengen. Daarom moet u ervoor zorgen dat de auteur van het formulier een vertrouwd persoon is en dat er processen zijn om de JavaScript-code te controleren en goed te keuren voordat een formulier in productie wordt genomen. De beheerder kan de toegang tot de toegang van de regelredacteur tot gebruikersgroepen beperken die op hun rol of functie wordt gebaseerd. Zie {de toegang van de de regelredacteur van 0} Verlenen tot uitgezochte gebruikersgroepen ](/help/forms/using/rule-editor-access-user-groups.md).[
+* Auteurs van adaptieve formulieren moeten mogelijk JavaScript-code schrijven om bedrijfslogica in een formulier te maken. Hoewel JavaScript krachtig en effectief is, is het waarschijnlijk dat het de veiligheidsverwachtingen in gevaar kan brengen. Daarom moet u ervoor zorgen dat de auteur van het formulier een vertrouwd persoon is en dat er processen zijn om de JavaScript-code te controleren en goed te keuren voordat een formulier in productie wordt genomen. De beheerder kan de toegang tot de toegang van de regelredacteur tot gebruikersgroepen beperken die op hun rol of functie wordt gebaseerd. Zie {de toegang van de de regelredacteur van 0} Verlenen tot uitgezochte gebruikersgroepen [&#128279;](/help/forms/using/rule-editor-access-user-groups.md).
 * U kunt expressies in regels gebruiken om adaptieve formulieren dynamisch te maken. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor meer informatie over uitdrukkingen en beste praktijken rond hen, zie [ Aangepaste vormuitdrukkingen ](/help/forms/using/adaptive-form-expressions.md).
 
 * Adobe raadt u aan synchrone bewerkingen uit JavaScript te gebruiken in plaats van asynchrone bewerkingen wanneer u regels maakt met de regeleditor. Het gebruik van asynchrone bewerkingen wordt sterk afgeraden. Als u zich echter in een situatie bevindt waarin asynchrone bewerkingen onvermijdelijk zijn, is het van essentieel belang dat u de afsluitfuncties van JavaScript implementeert. Door dit te doen, kunt u effectief tegen om het even welke potentiële rassenvoorwaarden beschermen, ervoor zorgen uw regelimplementaties optimale prestaties leveren en stabiliteit handhaven door heel.
@@ -346,7 +346,7 @@ Vaak moet u AEM-projecten van de ene omgeving naar de andere verplaatsen. Enkele
 * Implementeer productpakketten en patches handmatig en in de opgegeven volgorde in de nieuwe omgeving.
 * Implementeer projectspecifieke codepakketten en -bundels handmatig en als een afzonderlijk pakket of bundel op de nieuwe AEM-server.
 * (*AEM Forms op JEE slechts*) stelt LCAs en DSCs manueel op de server van Forms Workflow op.
-* Het gebruik ](/help/forms/using/import-export-forms-templates.md) functionaliteit van de uitvoer-Invoer [ om activa naar het nieuwe milieu te bewegen. U kunt de replicatieagent ook vormen en de activa publiceren.
+* Het gebruik [&#128279;](/help/forms/using/import-export-forms-templates.md) functionaliteit van de uitvoer-Invoer  om activa naar het nieuwe milieu te bewegen. U kunt de replicatieagent ook vormen en de activa publiceren.
 * Wanneer u een upgrade uitvoert, vervangt u alle verouderde API&#39;s en functies door nieuwe API&#39;s en functies.
 
 ### AEM configureren {#configuring-aem}
@@ -397,11 +397,11 @@ Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk 
 
 De AEM Forms Rule Editor biedt een visuele interface voor het maken en beheren van regels, waardoor er minder behoefte is aan uitgebreide codering. Het kan vooral nuttig voor bedrijfsgebruikers of vormontwerpers zijn die geen geavanceerde programmeringsvaardigheden kunnen hebben maar bedrijfsregels binnen de vormen moeten bepalen en handhaven, hier bespreken wij weinig gebruiksgevallen waar de regelredacteur u toestaat:
 
-* <!-- Allows you --> Om bedrijfsregels voor uw vormen zonder de behoefte aan uitgebreide programmering te bepalen.
-* <!-- Use the Rule Editor when you need --> Voorwaardelijke logica implementeren in uw formulieren. Dit omvat het tonen of verbergen van formulierelementen, het wijzigen van veldwaarden op basis van bepaalde voorwaarden of het dynamisch wijzigen van het gedrag van uw formulieren.
-* <!--When you want --> Om de regels van de gegevensbevestiging op vormbijdragen af te dwingen, kan de Redacteur van de Regel worden gebruikt om bevestigingsvoorwaarden te bepalen.
-* <!-- When you need --> Als u uw formulieren wilt integreren met externe gegevensbronnen (FDM) of services, kunt u in de Regeleditor regels definiëren voor het ophalen, weergeven of bewerken van gegevens tijdens formulierinteracties.
-* <!-- If you want -->Als u dynamische en interactieve formulieren wilt maken die reageren op handelingen van gebruikers, kunt u in de Regeleditor regels definiëren die het gedrag van formulierelementen in real-time bepalen.
+* &#x200B;<!-- Allows you --> Om bedrijfsregels voor uw vormen zonder de behoefte aan uitgebreide programmering te bepalen.
+* &#x200B;<!-- Use the Rule Editor when you need --> Voorwaardelijke logica implementeren in uw formulieren. Dit omvat het tonen of verbergen van formulierelementen, het wijzigen van veldwaarden op basis van bepaalde voorwaarden of het dynamisch wijzigen van het gedrag van uw formulieren.
+* &#x200B;<!--When you want --> Om de regels van de gegevensbevestiging op vormbijdragen af te dwingen, kan de Redacteur van de Regel worden gebruikt om bevestigingsvoorwaarden te bepalen.
+* &#x200B;<!-- When you need --> Als u uw formulieren wilt integreren met externe gegevensbronnen (FDM) of services, kunt u in de Regeleditor regels definiëren voor het ophalen, weergeven of bewerken van gegevens tijdens formulierinteracties.
+* &#x200B;<!-- If you want -->Als u dynamische en interactieve formulieren wilt maken die reageren op handelingen van gebruikers, kunt u in de Regeleditor regels definiëren die het gedrag van formulierelementen in real-time bepalen.
 
 De Redacteur van de regel is beschikbaar voor zowel de Componenten van de Stichting van AEM Forms als de Componenten van de Kern.
 

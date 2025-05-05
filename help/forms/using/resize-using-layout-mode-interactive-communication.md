@@ -24,11 +24,11 @@ U kunt de modus Lay-out gebruiken om het formaat van componenten te wijzigen voo
 
 ## Modus Toegang tot layout {#access-layout-mode}
 
-Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de Interactieve Communicatie auteursinterface naast de **3} optie van de Voorproef {verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
+Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de Interactieve Communicatie auteursinterface naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
 
 1. Login aan de AEM auteursinstantie en navigeer aan **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
 1. Creeer een [ Interactieve Communicatie ](../../forms/using/create-interactive-communication.md) of open bestaande.
-1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3} optie van de Voorproef {verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
+1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de **3&rbrace; optie van de Voorproef &lbrace;verschijnt.** Het formulier wordt weergegeven in de modus Indeling.
 
    ![ wijze van de Lay-out voor Interactieve Mededelingen ](assets/layout_mode_ic_new.png)
 

@@ -62,7 +62,7 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 
    >[!NOTE]
    >
-   Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+   >Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 1. Nainstallatie uitvoeren.
 
@@ -111,4 +111,4 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 
    >[!NOTE]
    >
-   In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [ Herstructurering van de Bewaarplaats van Forms in AEM ](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   >In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Voor de volledige lijst van veranderde wegen, zie [ Herstructurering van de Bewaarplaats van Forms in AEM ](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).

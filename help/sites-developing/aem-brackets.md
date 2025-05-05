@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De AEM Uitbreiding van de Brackets verstrekt een vlotte werkstroom om AEM componenten en cliëntbibliotheken uit te geven, en gebruikt de macht van de ](https://brackets.io/) coderedacteur 0} Brackets {, die toegang van binnen de coderedacteur aan de dossiers en de lagen van Photoshop geeft. [ De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM kennis ook om aan projecten deel te nemen. Deze uitbreiding verleent ook wat steun voor de [ Taal van het Malplaatje van de HTML (HTML) ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), die de ingewikkeldheid van JSP wegneemt om componentenontwikkeling gemakkelijker en veiliger te maken.
+De AEM Uitbreiding van de Brackets verstrekt een vlotte werkstroom om AEM componenten en cliëntbibliotheken uit te geven, en gebruikt de macht van de [&#128279;](https://brackets.io/) coderedacteur 0&rbrace; Brackets &lbrace;, die toegang van binnen de coderedacteur aan de dossiers en de lagen van Photoshop geeft.  De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM kennis ook om aan projecten deel te nemen. Deze uitbreiding verleent ook wat steun voor de [ Taal van het Malplaatje van de HTML (HTML) ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), die de ingewikkeldheid van JSP wegneemt om componentenontwikkeling gemakkelijker en veiliger te maken.
 
 ![ chlimage_1-53 ](assets/chlimage_1-53a.png)
 
@@ -72,7 +72,7 @@ Het project moet ten minste het volgende bevatten:
 
 1. a `filter.xml` dossier (bijvoorbeeld, `myproject/META-INF/vault/filter.xml`); voor meer details over de structuur van het `filter.xml` dossier zie de [ definitie van de Filter van Workspace ](https://jackrabbit.apache.org/filevault/filter.html).
 
-In het 1} menu van het Dossier van de Brackets {**, kies** Open Omslag... **en kies of de `jcr_root` omslag, of de ouderprojectomslag.**
+In het 1&rbrace; menu van het Dossier van de Brackets &lbrace;**, kies** Open Omslag... **en kies of de `jcr_root` omslag, of de ouderprojectomslag.**
 
 >[!NOTE]
 >

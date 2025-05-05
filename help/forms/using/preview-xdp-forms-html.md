@@ -67,7 +67,7 @@ De [ beschermde wijze ](../../forms/using/get-xdp-pdf-documents-aem.md) is, door
 ### Geef details van de AEM Forms-server op {#provide-details-of-aem-forms-server}
 
 1. In Designer, ga naar **Hulpmiddelen** > **Opties**.
-1. In het venster van Opties, uitgezochte **pagina van de Opties van de Server 0} {, verstrek de volgende details, en klik** O.K. **.**
+1. In het venster van Opties, uitgezochte **pagina van de Opties van de Server 0&rbrace; &lbrace;, verstrek de volgende details, en klik** O.K. **.**
 
    * **Server URL**: De server URL van AEM Forms.
 

@@ -172,7 +172,7 @@ De reactiesparser kan worden gevormd om de eigenschappen en de attributen te bep
 
 1. Vorm de bundel OSGi:
 
-   **De Parser van de Reactie van de Standaard van Commerce van de Dag CQ {**
+   **De Parser van de Reactie van de Standaard van Commerce van de Dag CQ &lbrace;**
 (`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
 
    Hier kunt u verschillende opties en kenmerken definiëren die nodig zijn voor laden en toewijzen.
@@ -356,7 +356,7 @@ Een of meer producten uit de catalogus verwijderen:
    >
    >Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor volledige details. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
-1. Initialiseer de importer door twee stijgende updates uit te voeren (zie {de Invoer van de Catalogus 0} ](#catalog-import)):[
+1. Initialiseer de importer door twee stijgende updates uit te voeren (zie {de Invoer van de Catalogus 0} [&#128279;](#catalog-import)):
 
    * De eerste runtime resulteert in een reeks gewijzigde producten - die in de logboeklijst worden vermeld.
    * Voor de tweede keer mogen geen producten worden bijgewerkt.
@@ -380,7 +380,7 @@ Een of meer producten uit de catalogus verwijderen:
    * Zoeken naar `Cajamara`
    * Selecteer dit product en wijzig de goedkeuringsstatus in `unapproved`
 
-1. Voer een andere stijgende update uit (zie {de Invoer van de Catalogus 0} ](#catalog-import)). [ In het logbestand wordt het verwijderde product weergegeven.
+1. Voer een andere stijgende update uit (zie {de Invoer van de Catalogus 0} [&#128279;](#catalog-import)).  In het logbestand wordt het verwijderde product weergegeven.
 1. [ Uitvoer ](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) de aangewezen catalogus. De product- en productpagina zijn uit AEM verwijderd.
 
    Bijvoorbeeld:
@@ -414,7 +414,7 @@ Om ordegeschiedenis aan de [ cliëntcontext ](/help/sites-developing/client-cont
    * Open een pagina voor het uitgeven, dan open de cliëntcontext gebruikend **CTRL-alt-c** (vensters) of **controle-optie-c** (Mac). Gebruik het potloodpictogram in de hoogste-linkerhoek van de cliëntcontext om **de pagina van het het ontwerpontwerp van de ClientContext** te openen.
    * Navigeer direct aan [ http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
-1. [ voeg de **2} component van de Geschiedenis van de Orde ](/help/sites-administering/client-context.md#adding-a-property-component) aan** toe het Shopping Auto **niet component van de cliëntcontext.**
+1. [ voeg de **2&rbrace; component van de Geschiedenis van de Orde ](/help/sites-administering/client-context.md#adding-a-property-component) aan** toe het Shopping Auto **niet component van de cliëntcontext.**
 1. U kunt bevestigen dat de context van de client details van uw ordergeschiedenis weergeeft. Bijvoorbeeld:
 
    1. Open de [ cliëntcontext ](/help/sites-administering/client-context.md).
@@ -437,4 +437,4 @@ Om ordegeschiedenis aan de [ cliëntcontext ](/help/sites-developing/client-cont
    >
    >* Klik het segment ([ http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html ](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
    >
-   >* Het segment wordt gebouwd gebruikend het **spoor van het Bezit van de Geschiedenis van de orde 0}.**
+   >* Het segment wordt gebouwd gebruikend het **spoor van het Bezit van de Geschiedenis van de orde 0&rbrace;.**

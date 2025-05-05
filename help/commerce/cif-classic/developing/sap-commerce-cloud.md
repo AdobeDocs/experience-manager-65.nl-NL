@@ -198,7 +198,7 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 
    * De referenced producten zijn beschikbaar in een **Online** catalogusversie voor andere pagina&#39;s (bijvoorbeeld, campagnepagina&#39;s).
 
-* De geactiveerde productpagina&#39;s moeten tot de online **versie van de productgegevens** toegang hebben {(d).
+* De geactiveerde productpagina&#39;s moeten tot de online **versie van de productgegevens** toegang hebben &lbrace;(d).
 
 * De AEM Publish-instantie vereist toegang tot hybris voor het ophalen van product en gepersonaliseerde gegevens (d).
 
@@ -533,7 +533,7 @@ Het eCommerce-project bevat een standaardzoekcomponent in:
 
 ![ chlimage_1-14 ](/help/sites-developing/assets/chlimage_1-14a.png)
 
-Dit gebruikt onderzoek API om de geselecteerde handelingsmotor (zie {de Selectie van de Motor van de Handel 0} eCommerce ](#ecommerce-engine-selection)) te vragen:[
+Dit gebruikt onderzoek API om de geselecteerde handelingsmotor (zie {de Selectie van de Motor van de Handel 0} eCommerce [&#128279;](#ecommerce-engine-selection)) te vragen:
 
 #### Zoeken in API {#search-api}
 

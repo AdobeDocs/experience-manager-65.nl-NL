@@ -71,7 +71,7 @@ Bijvoorbeeld, door gebrek leidt [**tot de tovenaar van de Pagina** ](/help/sites
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   >Nochtans, moet u ****** niets in de `/libs` weg veranderen.
+   >Nochtans, moet u **&#x200B;**&#x200B;** niets in de `/libs` weg veranderen.
    >
    >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >

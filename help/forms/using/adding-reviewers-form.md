@@ -66,8 +66,8 @@ Zorg ervoor dat u de groep toevoegt u als lid van de uit-van-de-doos gebruikersg
 Gebruikersgroepen koppelen aan een adaptief formulier:
 
 1. Op de auteurswijze, navigeer aan **Forms** > **Forms &amp; Documenten**.
-1. Gebruik **Select **optie om een adaptieve vorm te selecteren, en **Eigenschappen van de Mening** te klikken.
-1. In het venster van Eigenschappen van de vorm, geeft de klik **** uit, en klikt dan **GEAVANCEERD**.
+1. Gebruik **Select &#x200B;** optie om een adaptieve vorm te selecteren, en **Eigenschappen van de Mening** te klikken.
+1. In het venster van Eigenschappen van de vorm, geeft de klik **&#x200B;**&#x200B;uit, en klikt dan **GEAVANCEERD**.
 1. Ga de groep op het gebied van de de vraagcontroleersgroep in, en klik **Gereed**.
 
    Het veld Subrevisorgroep wordt weergegeven met de naam die u hebt opgegeven in het bewerkte metagegevensschema van adaptieve formulieren.

@@ -90,7 +90,7 @@ Het rapport Bounces bevat een grafiek die het aantal grenzen aangeeft dat zich t
 
 ## Het activiteitenverslag van de campagne {#the-campaign-activity-report}
 
-Voor elke campagne waarvoor de pagina actief is, verschijnt een rapport genoemd *Activiteit van de Naam van de Campagne 0}.* Het rapport toont paginamonpressies en omzettingen voor elk segment waarvoor een aanbieding wordt verstrekt.
+Voor elke campagne waarvoor de pagina actief is, verschijnt een rapport genoemd *Activiteit van de Naam van de Campagne 0&rbrace;.* Het rapport toont paginamonpressies en omzettingen voor elk segment waarvoor een aanbieding wordt verstrekt.
 
 ![ chlimage_1-316 ](assets/chlimage_1-316.png)
 

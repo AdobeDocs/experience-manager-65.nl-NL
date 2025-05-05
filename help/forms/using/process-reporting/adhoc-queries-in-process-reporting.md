@@ -57,7 +57,7 @@ U gebruikt Proces/Taak Onderzoek om filters te bepalen voor het vragen van proce
    ![ my_filters_panel ](assets/my_filters_panel.png)
 
 1. Om een bestaande vraag uit te voeren, klikt u eenvoudig de vraag in het **Mijn paneel van Filters**.
-1. Om een vraag tot stand te brengen, voegt de klik **** toe (+).
+1. Om een vraag tot stand te brengen, voegt de klik **&#x200B;**&#x200B;toe (+).
 
    **creeer het paneelvertoningen van de Filter**.
 
@@ -101,7 +101,7 @@ Nadat u een vraag creeert, gebruik de opties in de hogere juiste hoek van **cree
 
 ### Opties in het deelvenster Mijn filters {#options-in-my-filters-panel}
 
-Gebruik de opties in het **Mijn paneel van Filters** **** ![ lc_pr_add_filter ](assets/lc_pr_add_filter.png) toevoegen, **** ![ lc_pr_delete_filter ](assets/lc_pr_delete_filter.png), of **Schrapping** ![ lc_pr_edit_filter ](assets/lc_pr_edit_filter.png) een ad-hoc vraag.
+Gebruik de opties in het **Mijn paneel van Filters** **&#x200B;**&#x200B;![ lc_pr_add_filter ](assets/lc_pr_add_filter.png) toevoegen, **&#x200B;**&#x200B;![ lc_pr_delete_filter ](assets/lc_pr_delete_filter.png), of **Schrapping** ![ lc_pr_edit_filter ](assets/lc_pr_edit_filter.png) een ad-hoc vraag.
 
 ![ my_filters_options ](assets/my_filters_options.png)
 
@@ -149,7 +149,7 @@ Gebruik de opties in het **Mijn paneel van Filters** **** ![ lc_pr_add_filter ](
    ![ task_search_result ](assets/task_search_result.png)
 
 1. Klik de spoorknoop ![ lc_pr_rail_button ](assets/lc_pr_rail_button.png) op upper-left om de **Mijn ruit van Filters** samen te vouwen en breidt de ruimte beschikbaar voor het **Rapport** paneel uit.
-1. Gebruik de opties in de hogere juiste hoek van het **Rapport **paneel om verrichtingen op het vraagresultaat uit te voeren.
+1. Gebruik de opties in de hogere juiste hoek van het **Rapport &#x200B;** paneel om verrichtingen op het vraagresultaat uit te voeren.
 
    * **verfrist zich**: Verfrist het rapport met recentste gegevens die in de opslag liggen
 

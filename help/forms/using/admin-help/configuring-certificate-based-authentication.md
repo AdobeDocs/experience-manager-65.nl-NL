@@ -60,7 +60,7 @@ Wanneer u een certificaat test, uploadt Gebruikersbeheer de certificaatcontroles
    U kunt de volgende tekens in de regex gebruiken:
 
    * . (om het even welk karakter)
-   * &amp;ast; (0 of meer exemplaren)
+   * &ast; (0 of meer exemplaren)
    * () (geef de groep tussen haakjes op)
    * \ (wordt gebruikt om een regex-teken te verwijderen uit een normaal teken)
    * $n (wordt gebruikt om naar de negende groep te verwijzen)
@@ -69,21 +69,21 @@ Wanneer u een certificaat test, uploadt Gebruikersbeheer de certificaatcontroles
 
    * &quot;Alex Pink&quot; uit &quot;Alex Pink (Authentication)&quot; extraheren
 
-     **Regex:** (.&amp;ast;) \(Authentificatie\)
+     **Regex:** (.&ast;) \(Authentificatie\)
 
    * &quot;Alex Pink&quot; uit &quot;Alex (Authentication) Pink&quot; extraheren
 
-     **Regex:** (.&amp;ast;)\(Authentificatie\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentificatie\) (.&ast;)
 
    * &quot;Roze Alex&quot; extraheren uit &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&amp;ast;)\(Authentificatie\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentificatie\) (.&ast;)
 
      Aangepaste volgorde: $2 $1 (tweede groep retourneren, samengevoegd met eerste groep, vastgelegd door teken voor witruimte)
 
    * &quot;apink@sampleorg.com&quot; extraheren uit &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp: (.&amp;ast;)
+     **Regex:** smtp: (.&ast;)
 
    Voor details bij het gebruiken van regelmatige uitdrukkingen, zie [ zelfstudie van Java over regelmatige uitdrukkingen ](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

@@ -28,12 +28,14 @@ MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen wo
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Gebruik deze optie op een blauwdrukpagina om de lijst op te halen met alle Live-kopieën die eraan zijn gekoppeld, met extra statusinformatie voor Live Copy.
    * bijvoorbeeld:
+
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Gebruik deze optie op Live Copy-pagina&#39;s om geavanceerde informatie op te halen over de verbinding met de bijbehorende pagina&#39;s. Als de pagina geen live kopie is, wordt er niets geretourneerd.
    * bijvoorbeeld:
+
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Deze servers genereren FOUTOPSPORING-logberichten via het logbestand `com.day.cq.wcm.msm` dat ook nuttig kan zijn.
@@ -73,7 +75,7 @@ Zie [ MSM Beste praktijken ](msm-best-practices.md) voor meer informatie over di
 
 ### Hoe kan ik rollout toestemmingen voor een groep auteurs verwijderen? {#remove-rollout-permissions}
 
-Er is geen **voorrecht van 0} rollout {dat voor AEM hoofden (gebruikers of groepen) kan worden geplaatst of worden verwijderd.**
+Er is geen **voorrecht van 0&rbrace; rollout &lbrace;dat voor AEM hoofden (gebruikers of groepen) kan worden geplaatst of worden verwijderd.**
 
 Als alternatief kunt u:
 

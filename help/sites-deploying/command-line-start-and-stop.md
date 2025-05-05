@@ -94,7 +94,7 @@ Voer een van de volgende handelingen uit om AEM te stoppen:
    * Als u AEM van of een manuscript of de bevellijn begon, druk **Ctrl+C** om de server te sluiten.
    * Als u het beginmanuscript op UNIX® hebt gebruikt, moet u het stopmanuscript gebruiken om AEM tegen te houden.
 
-* Als u AEM door het jar dossier tweemaal te klikken begon, klik **** knoop op het startvenster (de knoop verandert dan in **weg**) om de server te sluiten.
+* Als u AEM door het jar dossier tweemaal te klikken begon, klik **&#x200B;**&#x200B;knoop op het startvenster (de knoop verandert dan in **weg**) om de server te sluiten.
 
   ![ chlimage_1-63 ](assets/chlimage_1-63.png)
 

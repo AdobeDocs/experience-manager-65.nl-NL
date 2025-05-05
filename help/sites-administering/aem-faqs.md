@@ -93,7 +93,7 @@ Voor AEM 6.4, **Hulpmiddelen** > **Cloud Servicen** > **de diensten van de Wolk 
 
 #### Hoe te om een AEM component onbruikbaar te maken die exponentiële groei voor AEM SegmentStore (AEM 6.3.1.1) veroorzaakt? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
-U kunt de Component onbruikbaar maken OSGi. Om deze dienst te gebruiken, zie {de Disabler van de Component 0} OSGi ](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).[
+U kunt de Component onbruikbaar maken OSGi. Om deze dienst te gebruiken, zie {de Disabler van de Component 0} OSGi [&#128279;](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
 
 Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebruikersinterface of via een opdracht `curl` (voorbeeld hieronder), na elke AEM opnieuw opstarten.
 

@@ -29,7 +29,7 @@ Inhoud wordt lineair gesynchroniseerd tussen de primaire instantie en de stand-b
 
 >[!NOTE]
 >
->De eigenschap van de Reserve van de Koude wordt bedoeld om scenario&#39;s te beveiligen waar de hoge beschikbaarheid op **** instanties van de Auteur wordt vereist. Voor situaties waar de hoge beschikbaarheid op **Publish** instanties gebruikend Tar Micro Kernel wordt vereist, adviseert de Adobe gebruikend publiceer landbouwbedrijf.
+>De eigenschap van de Reserve van de Koude wordt bedoeld om scenario&#39;s te beveiligen waar de hoge beschikbaarheid op **&#x200B;**&#x200B;instanties van de Auteur wordt vereist. Voor situaties waar de hoge beschikbaarheid op **Publish** instanties gebruikend Tar Micro Kernel wordt vereist, adviseert de Adobe gebruikend publiceer landbouwbedrijf.
 >
 >Voor info over meer beschikbare plaatsingen, zie de [ Geadviseerde pagina van Inzet ](/help/sites-deploying/recommended-deploys.md).
 
@@ -325,7 +325,7 @@ De geadviseerde manier om hotfixes op een koude stand-by opstelling toe te passe
 
 U kunt dit doen door de hieronder beschreven stappen te volgen:
 
-1. Stop het synchronisatieproces op de koude stand-by instantie door naar de JMX Console te gaan en de status **org.apache.jackrabbit.oak: (&quot;Standby&quot;)**bean te gebruiken. Voor meer informatie over hoe te om dit te doen, zie de sectie over [ Controle ](#monitoring).
+1. Stop het synchronisatieproces op de koude stand-by instantie door naar de JMX Console te gaan en de status **org.apache.jackrabbit.oak: (&quot;Standby&quot;)**&#x200B;bean te gebruiken. Voor meer informatie over hoe te om dit te doen, zie de sectie over [ Controle ](#monitoring).
 1. Stop de koude stand-by instantie.
 1. Installeer de hotfix op de primaire instantie. Voor meer details op hoe te om hotfix te installeren, zie [ hoe te met Pakketten ](/help/sites-administering/package-manager.md) werken.
 1. Test de instantie op problemen na de installatie.

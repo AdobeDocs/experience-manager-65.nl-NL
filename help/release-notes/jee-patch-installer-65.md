@@ -56,7 +56,7 @@ Navigeer naar de juiste map en typ `./aem65_cfp_install.bin` vanaf een opdrachtp
 1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie-updates toe te passen op de geïnstalleerde bestanden.
 
 1. **[slechts voor Vensters ]:** doe het volgende:
-   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Voer **Manager van de Configuratie** in werking door het {**dossier 3} te gebruiken 2} ConfigurationManager.bat in `[aem-forms root]\configurationManager\bin`.**
+   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Voer **Manager van de Configuratie** in werking door het {**dossier 3} te gebruiken 2&rbrace; ConfigurationManager.bat in `[aem-forms root]\configurationManager\bin`.**
 
    * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Alvorens **Manager van de Configuratie in werking te stellen** gebruikend **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer aan *`<AEMForms_Install_Dir>\configurationManager\bin`* folder en vervang **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** met recentste [ ConfigurationManager.lax ](/help/assets/ConfigurationManager.lax) en [ ConfigurationManager_IPV6.lax ](/help/assets/ConfigurationManager_IPv6.lax) dossiers, Onderzoek, en vervang **as-1.4.1.1.jar** met **as-1.4.1.2.jar** in deze twee dossiers.
 
@@ -67,7 +67,7 @@ Navigeer naar de juiste map en typ `./aem65_cfp_install.bin` vanaf een opdrachtp
 
 1. **[voor op unix-Gebaseerd slechts ]:**
 
-   * De **controledoos van de Manager van de Configuratie van het 0} Begin wordt geselecteerd door gebrek.** Klik **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen onmiddellijk of **de Manager van de Configuratie** later in werking te stellen, schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. U kunt **Manager van de Configuratie** later beginnen gebruikend het aangewezen manuscript in de `[AEM_forms_root]/configurationManager/bin` folder.
+   * De **controledoos van de Manager van de Configuratie van het 0&rbrace; Begin wordt geselecteerd door gebrek.** Klik **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen onmiddellijk of **de Manager van de Configuratie** later in werking te stellen, schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. U kunt **Manager van de Configuratie** later beginnen gebruikend het aangewezen manuscript in de `[AEM_forms_root]/configurationManager/bin` folder.
 
 1. Afhankelijk van uw toepassingsserver, kies één van de volgende documenten en volg de instructies in *het Vormen en het Opstellen van AEM vormen* sectie.
 

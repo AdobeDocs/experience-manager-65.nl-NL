@@ -40,7 +40,7 @@ In de documentatie wordt beschreven:
 
 Als u een component `QnA` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / QnA` te zoeken en sleept u deze naar de juiste plaats op een pagina waarop het forum QnA moet worden weergegeven.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/qna-essentials.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `QnA` component verschijnt:
 
@@ -92,7 +92,7 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen (vragen)
 
 * **Toestaan Tags**
 
-  Als gecontroleerd, sta leden toe om markeringsetiketten aan hun posten toe te voegen (zie {het gebied van de Markering **tabel).** De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, sta leden toe om markeringsetiketten aan hun posten toe te voegen (zie &lbrace;het gebied van de Markering **tabel).** De optie Standaard is uitgeschakeld.
 
 * **staat Dossier toe uploadt**
 
@@ -202,7 +202,7 @@ Als deze optie ingeschakeld is, stelt u moderatoren aan de publiczijde in staat 
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen worden toegepast, indien toegestaan onder het **3} lusje van Montages {, beperkt volgens gekozen namespaces.**
+Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen worden toegepast, indien toegestaan onder het **3&rbrace; lusje van Montages &lbrace;, beperkt volgens gekozen namespaces.**
 
 * **Toegestane Namespaces**
 
@@ -210,7 +210,7 @@ Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen word
 
 * **de Grens van de Suggestie**
 
-  Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde **-**1 betekent geen limieten. De standaardwaarde is 0.
+  Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde **-**&#x200B;1 betekent geen limieten. De standaardwaarde is 0.
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 

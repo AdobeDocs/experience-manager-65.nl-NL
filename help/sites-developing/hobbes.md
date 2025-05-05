@@ -108,7 +108,7 @@ Voor volledige details over het creëren van uw eigen Suites van de Test, zie de
 
 1. Open CRXDE Lite. ([ https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Klik met de rechtermuisknop op de `/etc/clientlibs` map en klik op **Maken > Map maken** . Het type `myTests` voor de naam en klikt **O.K.**.
-1. Klik met de rechtermuisknop op de `/etc/clientlibs/myTests` map en klik op **Maken > Knoop maken** . Gebruik de volgende bezitswaarden en klik dan O.K. ****:
+1. Klik met de rechtermuisknop op de `/etc/clientlibs/myTests` map en klik op **Maken > Knoop maken** . Gebruik de volgende bezitswaarden en klik dan O.K. **&#x200B;**:
 
    * Naam: `myFirstTest`
    * Type: `cq:ClientLibraryFolder`

@@ -214,7 +214,7 @@ Ga als volgt te werk om een map te maken:
 
    De `template-authors` -groep is de standaardgroep die moet worden toegewezen. Zie de volgende sectie [ ACLs en Groepen ](/help/sites-developing/page-templates-editable.md#acls-and-groups) voor details.
 
-   Zie ](/help/sites-administering/user-group-ac-admin.md#access-right-management) het Rechterbeheer van de Toegang [ voor volledige details bij het beheren van en het toewijzen van toegangsrechten.
+   Zie [&#128279;](/help/sites-administering/user-group-ac-admin.md#access-right-management) het Rechterbeheer van de Toegang  voor volledige details bij het beheren van en het toewijzen van toegangsrechten.
 
 ### De configuratiebrowser gebruiken {#using-the-configuration-browser}
 
@@ -234,7 +234,7 @@ Ga als volgt te werk om een map te maken:
 >
 >In Browser van de Configuratie, kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u malplaatjes binnen deze omslag wilt tot stand brengen. Dit is echter geen aanbevolen beste praktijk.
 >
->Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+>Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
 
 ### ACLs en Groepen {#acls-and-groups}
 
@@ -581,6 +581,7 @@ Het beleid van de pagina laat u het [ inhoudsbeleid ](#content-policies) voor de
    * Setting the status property on the `jcr:content` node.
 
       * Bijvoorbeeld op:
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieer de eigenschap:
@@ -593,6 +594,7 @@ Het beleid van de pagina laat u het [ inhoudsbeleid ](#content-policies) voor de
 
    * [ bepaalt de Toegestane wegen van het Malplaatje op de **Eigenschappen van de Pagina**](/help/sites-authoring/templates.md#allowing-a-template-author) van de aangewezen pagina of wortelpagina van een subtak.
    * Stel de eigenschap in:
+
      `cq:allowedTemplates`
 Op het `jcr:content` -knooppunt van de vereiste vertakking.
 

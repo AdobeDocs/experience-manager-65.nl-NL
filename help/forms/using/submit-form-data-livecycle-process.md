@@ -39,7 +39,7 @@ Nadat u AEM Forms hebt geconfigureerd, wijst u de XML-gegevens en bijlagen van h
 1. In de AEM console van de Webconfiguratie, klik om de **Locator van het Proces van het LiveCycle van de Gids en de Configuratie van de Invoker** uit te geven.
 1. Geef de volgende parameters op:
 
-   * **Naam van de gegevensxml parameter** (verplicht): specificeer het het bezitsdossier van XML van AEM Forms op proces JEE dat de voorgelegde gegevens moet verwerken. De standaardwaarde is dataxml ****.
+   * **Naam van de gegevensxml parameter** (verplicht): specificeer het het bezitsdossier van XML van AEM Forms op proces JEE dat de voorgelegde gegevens moet verwerken. De standaardwaarde is dataxml **&#x200B;**.
 
    * **Naam van de parameter van dossiergehechtheid** (facultatief): specificeer de lijst van documentvoorwerpen die AEM Forms op JEE proces moet verwerken. De standaardwaarde is **fileAttachmentsList**.
 

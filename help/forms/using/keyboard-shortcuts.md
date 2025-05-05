@@ -29,18 +29,18 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 | Sluit de eigenschappenbrowser voor de geselecteerde adaptieve formuliercomponent | Ctrl+Alt+W | Command+Alt+W |
 | Wijzigingen opslaan in de eigenschappenbrowser voor de geselecteerde adaptieve formuliercomponent | Ctrl+S | Command+S |
 | Regel bewerken voor de geselecteerde adaptieve formuliercomponent | Ctrl+Alt+Enter | Command+Alt+Return |
-| Schakelen tussen Voorvertoning en de momenteel geselecteerde modus (bijvoorbeeld Bewerken en Basisstructuur) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
-| Laatste wijziging ongedaan maken | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Laatste wijziging opnieuw | Ctrl+Y | Ctrl+Y&amp;ast; |
+| Schakelen tussen Voorvertoning en de momenteel geselecteerde modus (bijvoorbeeld Bewerken en Basisstructuur) | Ctrl+Shift+M | Ctrl+Shift+M&ast; |
+| Laatste wijziging ongedaan maken | Ctrl+Z | Ctrl+Z&ast; |
+| Laatste wijziging opnieuw | Ctrl+Y | Ctrl+Y&ast; |
 | Meerdere componenten selecteren | Shift+klikken | Shift+klikken |
-| Geselecteerde component kopiëren | Ctrl-C | Ctrl-C&amp;ast; |
-| Geselecteerde componenten knippen. De component cut verdwijnt pas als deze op de nieuwe locatie wordt geplakt. | Ctrl-X | Ctrl-X&amp;ast; |
+| Geselecteerde component kopiëren | Ctrl-C | Ctrl-C&ast; |
+| Geselecteerde componenten knippen. De component cut verdwijnt pas als deze op de nieuwe locatie wordt geplakt. | Ctrl-X | Ctrl-X&ast; |
 | Componenten plakken | Ctrl+V | Ctrl+V |
-| Geselecteerde componenten verwijderen | Ctrl+Del | Ctrl+Del&amp;ast; |
-| Geselecteerde componenten verwijderen | Ctrl+Backspace | Ctrl+Backspace&amp;ast; |
-| Tekst vet maken terwijl u de component Rich Text Editor in de modus Voorbeeld gebruikt | Ctrl+B | Ctrl+B&amp;ast; |
-| Tekst cursief maken terwijl de component Rich Text Editor in de modus Voorbeeld wordt gebruikt | Ctrl+I | Ctrl+I&amp;ast; |
-| Tekst vet maken terwijl u de component Rich Text Editor in de modus Voorbeeld gebruikt | Ctrl+U | Ctrl+U&amp;ast; |
+| Geselecteerde componenten verwijderen | Ctrl+Del | Ctrl+Del&ast; |
+| Geselecteerde componenten verwijderen | Ctrl+Backspace | Ctrl+Backspace&ast; |
+| Tekst vet maken terwijl u de component Rich Text Editor in de modus Voorbeeld gebruikt | Ctrl+B | Ctrl+B&ast; |
+| Tekst cursief maken terwijl de component Rich Text Editor in de modus Voorbeeld wordt gebruikt | Ctrl+I | Ctrl+I&ast; |
+| Tekst vet maken terwijl u de component Rich Text Editor in de modus Voorbeeld gebruikt | Ctrl+U | Ctrl+U&ast; |
 
 >[!NOTE]
 >
@@ -48,10 +48,10 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 >[!NOTE]
 >
-Multi-select op een desktopapparaat:
+>Multi-select op een desktopapparaat:
 >
-* Windows: Ctrl + klikken op de vereiste componenten.
-* macOS: Command + klikken op de vereiste componenten.
+>* Windows: Ctrl + klikken op de vereiste componenten.
+>* macOS: Command + klikken op de vereiste componenten.
 >
 
 ## Thema-editor  {#themeeditor}
@@ -60,13 +60,13 @@ Multi-select op een desktopapparaat:
 |---|---|---|
 | De eigenschappenbrowser openen voor de geselecteerde component in een thema | Alt+Enter | Alt+Return |
 | De eigenschappenbrowser sluiten voor de geselecteerde component in een thema | Ctrl+Alt+W | Command+Alt+W |
-| Laatste wijziging ongedaan maken | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Laatste wijziging opnieuw | Ctrl+Y | Ctrl+Y&amp;ast; |
-| Wijzigingen opslaan in de eigenschappenbrowser voor de geselecteerde component in een thema | Ctrl+S | Ctrl+S&amp;ast; |
+| Laatste wijziging ongedaan maken | Ctrl+Z | Ctrl+Z&ast; |
+| Laatste wijziging opnieuw | Ctrl+Y | Ctrl+Y&ast; |
+| Wijzigingen opslaan in de eigenschappenbrowser voor de geselecteerde component in een thema | Ctrl+S | Ctrl+S&ast; |
 
 >[!NOTE]
 >
-Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets op macOS.
+>Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets op macOS.
 
 ## Content Browser  {#contentbrowser}
 

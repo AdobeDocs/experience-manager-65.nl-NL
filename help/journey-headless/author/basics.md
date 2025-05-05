@@ -71,7 +71,7 @@ Binnen de console kunt u mappen selecteren om naar het inhoudsfragment te navige
 
 ### Handelingen, selecteren, weergeven {#actions-selecting-viewing}
 
-De **console van 0} Assets {heeft** Toolbars van de Actie **gewijd, en** Snelle Acties **die u na het selecteren van een middel (bijvoorbeeld, een omslag of inhoudsfragment) kunt gebruiken.**
+De **console van 0&rbrace; Assets &lbrace;heeft** Toolbars van de Actie **gewijd, en** Snelle Acties **die u na het selecteren van een middel (bijvoorbeeld, een omslag of inhoudsfragment) kunt gebruiken.**
 
 De Snelle Acties zijn beschikbaar voor één enkel middel, zie **Bazel** in het voorbeeld hieronder:
 
@@ -105,7 +105,7 @@ U kunt dit doen door een reeks omslagen binnen **te creëren Dossiers** sectie v
 
 ![ creeer de optie van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Een dialoog opent waar u de details kunt ingaan, dan bevestig met **** creëren:
+Een dialoog opent waar u de details kunt ingaan, dan bevestig met **&#x200B;**&#x200B;creëren:
 
 ![ creeer de dialoog van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 

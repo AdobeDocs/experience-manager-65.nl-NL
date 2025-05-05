@@ -42,7 +42,7 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Markeringen/Trefwoorden** gebied in te gaan.
 
-Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3} venster van de Eigenschappen van de Pagina gebruiken `Tags/Keywords` gebied trekkracht-onderaan om van de lijst van markeringen te selecteren die voor de pagina worden toegelaten.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
+Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3&rbrace; venster van de Eigenschappen van de Pagina gebruiken `Tags/Keywords` gebied trekkracht-onderaan om van de lijst van markeringen te selecteren die voor de pagina worden toegelaten.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
 
 ![ chlimage_1-2 ](assets/chlimage_1-2a.png)
 

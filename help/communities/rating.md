@@ -24,7 +24,7 @@ De component `Rating` wordt gebruikt op zichzelf of met andere functies van een 
 
 Als u een component `Rating` in de modus Schrijven aan een pagina wilt toevoegen, zoekt u de component `Communities / Rating` en sleept u deze naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die leden kunnen toekennen.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](rating-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Rating` component verschijnt.
 
@@ -55,4 +55,4 @@ Anonieme detachering van een rating wordt niet ondersteund. Site-bezoekers moete
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](rating-basics.md) pagina van de Hoofdzaak van de Classificatie [ worden gevonden voor ontwikkelaars.
+Meer informatie kan op de [&#128279;](rating-basics.md) pagina van de Hoofdzaak van de Classificatie  worden gevonden voor ontwikkelaars.

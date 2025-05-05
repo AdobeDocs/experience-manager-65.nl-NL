@@ -201,7 +201,7 @@ Omvat in de bètaversie zijn twee geavanceerde het scoren regels voor de [ forum
 **Nota&#39;s:**
 
 * Zowel `rules` als `sub-rules` knooppunten zijn van het type `cq:Page` .
-* `subRules` is een attribuut van typeKoord `[]` op de 2} knoop van de regel.`jcr:content`
+* `subRules` is een attribuut van typeKoord `[]` op de 2&rbrace; knoop van de regel.`jcr:content`
 * `sub-rules` kan worden gedeeld door verschillende scoreregels.
 * `rules` moet zich op een repository locatie bevinden met leesmachtigingen voor iedereen.
 * Regelnamen moeten uniek zijn, ongeacht de locatie.

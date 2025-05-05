@@ -33,7 +33,7 @@ De capaciteit om een communautaire groep tot stand te brengen baseert zich op he
 
 De voorbeelden die volgen gebruiken de communautaire plaats die van `Reference Site Template` wordt gecreeerd zoals die in [ wordt beschreven Begonnen het Worden met AEM Communities ](/help/communities/getting-started.md) leerprogramma.
 
-Dit is de pagina die op publiceert laadt wanneer het **1} menupunt van Groepen {wordt geselecteerd:**
+Dit is de pagina die op publiceert laadt wanneer het **1&rbrace; menupunt van Groepen &lbrace;wordt geselecteerd:**
 
 ![ nieuw-groep ](assets/new-group.png)
 
@@ -91,6 +91,6 @@ De component `Community Group Member List` is bedoeld voor gebruik door ontwikke
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](/help/communities/essentials-groups.md) pagina van de Hoofdzaak van de Groep van de Gemeenschap [ voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#128279;](/help/communities/essentials-groups.md) pagina van de Hoofdzaak van de Groep van de Gemeenschap  voor ontwikkelaars worden gevonden.
 
 Voor andere informatie met betrekking tot communautaire groepen, bezoek [ het Leiden Gebruikers en de Groepen van de Gebruiker ](/help/communities/users.md).

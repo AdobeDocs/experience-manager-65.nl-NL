@@ -110,7 +110,7 @@ Voeg de volgende eigenschap toe aan het knooppunt `cq:Component` om van een van 
 
 ### De standaardtitel en -beschrijving opgeven voor instanties Step {#specifying-the-default-title-and-description-for-step-instances}
 
-Gebruik de volgende procedure om standaardwaarden voor de **Titel** en **3} gebieden van de Beschrijving {op het** Gemeenschappelijke **lusje te specificeren.**
+Gebruik de volgende procedure om standaardwaarden voor de **Titel** en **3&rbrace; gebieden van de Beschrijving &lbrace;op het** Gemeenschappelijke **lusje te specificeren.**
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Gebruik de volgende procedure om standaardwaarden voor de **Titel** en **3} gebi
 
 1. Voeg `String` eigenschappen van de volgende namen toe aan het knooppunt `cq:formParameters` :
 
-   * `jcr:title`: De waarde vult het **2} gebied van de Titel** van het **Gemeenschappelijke** lusje.
+   * `jcr:title`: De waarde vult het **2&rbrace; gebied van de Titel** van het **Gemeenschappelijke** lusje.
    * `jcr:description`: De waarde vult het **Beschrijving** gebied van het **Gemeenschappelijke** lusje.
 
 ### Eigenschapwaarden opslaan in werkstroommetagegevens {#saving-property-values-in-workflow-metadata}
@@ -203,7 +203,7 @@ Om de component voor gebruik in een specifiek werkschemascenario te concentreren
 
 ### Forms en dialoogvensters toevoegen aan stappen van deelnemers {#adding-forms-and-dialogs-to-participant-steps}
 
-Pas uw component van de deelnemersstap aan om eigenschappen te verstrekken die in de [ Stap van de Stap van de Deelnemer van de Vorm ](/help/sites-developing/workflows-step-ref.md#form-participant-step) en [ 3} componenten van de Stap van de Deelnemer van de Dialoog worden gevonden:](/help/sites-developing/workflows-step-ref.md#dialog-participant-step)
+Pas uw component van de deelnemersstap aan om eigenschappen te verstrekken die in de [ Stap van de Stap van de Deelnemer van de Vorm ](/help/sites-developing/workflows-step-ref.md#form-participant-step) en [ 3&rbrace; componenten van de Stap van de Deelnemer van de Dialoog worden gevonden:](/help/sites-developing/workflows-step-ref.md#dialog-participant-step)
 
 * Een formulier presenteren aan de gebruiker wanneer deze het gegenereerde werkitem opent.
 * Presenteer een aangepast dialoogvenster aan de gebruiker wanneer deze het gegenereerde werkitem voltooit.
@@ -317,7 +317,7 @@ De workflow `MetaDataMap` is beschikbaar voor Java- en ECMA-scriptprocesimplemen
 
 ### Voorbeeld: de argumenten van de processtapcomponent ophalen {#example-retrieving-the-arguments-of-the-process-step-component}
 
-De Edit dialoog van de **component van de Stap van het Proces 0} {omvat het** Argumenten **bezit.** De waarde van het **bezit van Argumenten** wordt opgeslagen in de werkschemameta-gegevens, en wordt geassocieerd met de `PROCESS_ARGS` sleutel.
+De Edit dialoog van de **component van de Stap van het Proces 0&rbrace; &lbrace;omvat het** Argumenten **bezit.** De waarde van het **bezit van Argumenten** wordt opgeslagen in de werkschemameta-gegevens, en wordt geassocieerd met de `PROCESS_ARGS` sleutel.
 
 In het volgende diagram, is de waarde van het **bezit van Argumenten** `argument1, argument2`:
 
@@ -392,7 +392,7 @@ Een processtap definiëren als een OSGI-servicecomponent (Java-bundel):
 
 1. Voeg de SCR-eigenschap `process.label` toe en stel de waarde naar wens in. Dit zal de naam zijn die uw processtap zoals wanneer het gebruiken van de generische **component van de Stap van het Proces** vermeld is. Zie het onderstaande voorbeeld.
 1. In de **Modellen** redacteur, voeg de processtap aan het werkschema toe gebruikend de generische **component van de Stap van het Proces**.
-1. In geef dialoog uit (van de **Stap van het Proces**), ga naar het **3} lusje van het Proces {en selecteer uw procesimplementatie.**
+1. In geef dialoog uit (van de **Stap van het Proces**), ga naar het **3&rbrace; lusje van het Proces &lbrace;en selecteer uw procesimplementatie.**
 1. Als u argumenten in uw code gebruikt, plaats de **Argumenten van het Proces**. Bijvoorbeeld: false.
 1. Sla de wijzigingen op voor zowel de stap als het workflowmodel (linksboven in de modeleditor).
 
@@ -528,7 +528,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 Het script gebruiken:
 
 1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het hieronder op in de opslagplaats `//apps/workflow/scripts/`
-1. Om een titel te specificeren die het manuscript in de **uitgeeft dialoog van de Stap van het 0} Proces identificeert, voeg de volgende eigenschappen aan de `jcr:content` knoop van uw manuscript toe:**
+1. Om een titel te specificeren die het manuscript in de **uitgeeft dialoog van de Stap van het 0&rbrace; Proces identificeert, voeg de volgende eigenschappen aan de `jcr:content` knoop van uw manuscript toe:**
 
    | Naam | Type | Waarde |
    |---|---|---|
@@ -645,7 +645,7 @@ function getParticipant() {
 ```
 
 1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het hieronder op in de opslagplaats `//apps/workflow/scripts`
-1. Om een titel te specificeren die het manuscript in de **uitgeeft dialoog van de Stap van het 0} Proces identificeert, voeg de volgende eigenschappen aan de `jcr:content` knoop van uw manuscript toe:**
+1. Om een titel te specificeren die het manuscript in de **uitgeeft dialoog van de Stap van het 0&rbrace; Proces identificeert, voeg de volgende eigenschappen aan de `jcr:content` knoop van uw manuscript toe:**
 
    | Naam | Type | Waarde |
    |---|---|---|
@@ -861,7 +861,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
 #### Het bepalen van Stap vormt Dialoogvenster {#defining-the-step-configure-dialog}
 
-Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **** dialoog als volgt:
+Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **&#x200B;**&#x200B;dialoog als volgt:
 
 1. Configureer de eigenschappen op het knooppunt `cq:editConfig` als volgt:
 
@@ -883,7 +883,7 @@ Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **** dia
 
    * `jcr:title`
 
-     Plaatst de standaardtitel op de stappenkaart in de modelkaart en in het **1} gebied van de Titel {van 2} Mijn Douane - de configuratiedialoog van de Eigenschappen van de Stap**.****
+     Plaatst de standaardtitel op de stappenkaart in de modelkaart en in het **1&rbrace; gebied van de Titel {van 2} Mijn Douane - de configuratiedialoog van de Eigenschappen van de Stap**.**&#x200B;**
 
    * U kunt ook uw eigen aangepaste eigenschappen definiëren.
 
@@ -908,7 +908,7 @@ Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **** dia
 
    ![ wf-41 ](assets/wf-41.png)
 
-1. U kunt nu een instantie van uw stap toevoegen aan een workflowmodel. Wanneer u **** vormt de stap u de dialoog zult zien:
+1. U kunt nu een instantie van uw stap toevoegen aan een workflowmodel. Wanneer u **&#x200B;**&#x200B;vormt de stap u de dialoog zult zien:
 
    ![ wf-42 ](assets/wf-42.png) ![ wf-43 ](assets/wf-43.png)
 

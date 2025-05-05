@@ -57,7 +57,7 @@ U kunt **Arctic Surfing in** fragment selecteren en uitgeven Lofoten:
 
 * [ http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Hier kunt u ](/help/assets/content-fragments/content-fragments.md) uw fragment uitgeven en beheren [ gebruikend de lusjes (linkerzijpaneel):
+Hier kunt u [&#128279;](/help/assets/content-fragments/content-fragments.md) uw fragment uitgeven en beheren  gebruikend de lusjes (linkerzijpaneel):
 
 <!--![cf-45-aa](do-not-localize/cf-45-aa.png) ![cf-45-a](do-not-localize/cf-45-a.png) ASSET does not exist-->
 

@@ -33,7 +33,7 @@ Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt de Adobe de volge
 | --- | --- | --- |
 | Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/limitations.md).[
+Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitations.md).
 
 <!-- CQDOC-16069 for paragraph directly below -->
 

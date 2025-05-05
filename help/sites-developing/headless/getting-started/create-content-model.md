@@ -37,7 +37,7 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 1. In het bevestigingsvenster, klik **Open** om uw model te vormen.
 
    ![ Bevestigingsvenster ](assets/models-confirmation.png)
-1. Gebruikend de **ModelRedacteur van het Fragment van de Inhoud**, bouwt uw Model van het Fragment van de Inhoud door gebieden van de **3} kolom van de Types van Gegevens te slepen en te laten vallen.**
+1. Gebruikend de **ModelRedacteur van het Fragment van de Inhoud**, bouwt uw Model van het Fragment van de Inhoud door gebieden van de **3&rbrace; kolom van de Types van Gegevens te slepen en te laten vallen.**
 
    ![ belemmering en dalingsgebieden ](assets/models-drag-and-drop.png)
 
@@ -48,9 +48,9 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 
 1. De wijze van het pas gecreëerde model hangt van af of u **Model** selecteerde toen het creëren van het model:
    * geselecteerd - het nieuwe model is reeds **Toegelaten**
-   * niet geselecteerd - het nieuwe model wordt gecreeerd op **1} wijze van het Ontwerp {**
+   * niet geselecteerd - het nieuwe model wordt gecreeerd op **1&rbrace; wijze van het Ontwerp &lbrace;**
 
-1. Als niet reeds toegelaten, moet het model **** worden toegelaten om het te gebruiken.
+1. Als niet reeds toegelaten, moet het model **&#x200B;**&#x200B;worden toegelaten om het te gebruiken.
    1. Selecteer het model dat u creeerde, en klik dan **toelaten**.
 
       ![ toelatend het model ](assets/models-enable.png)

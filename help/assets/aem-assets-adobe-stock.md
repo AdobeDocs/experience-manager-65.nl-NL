@@ -143,6 +143,7 @@ Voer de volgende stappen uit om een nieuwe [!DNL Adobe Stock IMS configuration] 
    * **[!UICONTROL Scope]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Scope]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
 
    * **[!UICONTROL Org ID]**: Navigeer aan uw projectdashboard, klik **[!UICONTROL OAuth Server-to-Server]** optie beschikbaar in de linkerruit, selecteer **[!UICONTROL Credential details]**, kopieer **[!UICONTROL Organization ID]** en kleef het hier (zie [ stap 7 ](#set-up-a-program-in-developer-console)).
+
      ![ aem activa en de voorraad van de adobe ](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. Klik op **[!UICONTROL Create]** , de pagina **[!UICONTROL Adobe IMS Configurations]** wordt geopend en de integratie van [!DNL Adobe Stock] die u hebt gemaakt, wordt weergegeven.
 

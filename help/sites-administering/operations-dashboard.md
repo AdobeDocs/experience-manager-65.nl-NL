@@ -359,7 +359,7 @@ U kunt vormen wat door logboekconfiguraties van de hogere linkertandknoop in UI 
 
 Voorbeelden:
 
-* Als u van plan bent om alle **** berichten van de FOUT te vangen - geen configuratie wordt vereist. Alle FOUTberichten worden standaard vastgelegd.
+* Als u van plan bent om alle **&#x200B;**&#x200B;berichten van de FOUT te vangen - geen configuratie wordt vereist. Alle FOUTberichten worden standaard vastgelegd.
 * Als u op het vangen van alle **FOUT** van plan bent, **WAARSCHUWING** en **INFO** berichten - de logboeknaam zou moeten worden geplaatst aan: &quot;**wortel**&quot;, en het registreerniveau aan: **INFO**.
 
 * Als u alle berichten wilt vastleggen die afkomstig zijn uit een bepaald pakket (bijvoorbeeld com.adobe.granite), moet de naam van het logger worden ingesteld op: &quot;com.adobe.granite&quot;. En, het logboekniveau dat aan wordt geplaatst: **DEBUG** (doet dit vangt alle **FOUT**, **WARN**, **INFO**, en **DEBUG** berichten), zoals aangetoond in het beeld hieronder.
@@ -452,7 +452,7 @@ Het schoppen van **omvat uitvoeringstijd** doos alvorens de vraag in werking te 
 
 Het doel van Indexbeheer is het vereenvoudigen van indexbeheer, zoals het onderhouden van indexen of het bekijken van hun status.
 
-Het kan worden betreden door naar **Hulpmiddelen te gaan - Verrichtingen - Diagnose **van het Welkome Scherm, en dan het klikken van de **knoop van de Manager van de Index**.
+Het kan worden betreden door naar **Hulpmiddelen te gaan - Verrichtingen - Diagnose &#x200B;** van het Welkome Scherm, en dan het klikken van de **knoop van de Manager van de Index**.
 
 U kunt het bestand ook rechtstreeks openen via de volgende URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -511,7 +511,7 @@ Voor meer informatie, zie [ Overzichtsopruiming ](/help/sites-deploying/revision
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
-Door de taak van de Opruiming van de Bindingen van Lucene te gebruiken, kunt u lucene binaries zuiveren en het de groottevereiste van de lopende gegevensopslag verminderen. Het binaire koord van Lucene wordt teruggewonnen dagelijks in plaats van het vroegere gebiedsdeel op een succesvolle ](/help/sites-administering/data-store-garbage-collection.md) looppas van de huisvuilinzameling van de 0} gegevensopslag.[
+Door de taak van de Opruiming van de Bindingen van Lucene te gebruiken, kunt u lucene binaries zuiveren en het de groottevereiste van de lopende gegevensopslag verminderen. Het binaire koord van Lucene wordt teruggewonnen dagelijks in plaats van het vroegere gebiedsdeel op een succesvolle [&#128279;](/help/sites-administering/data-store-garbage-collection.md) looppas van de huisvuilinzameling van de 0&rbrace; gegevensopslag.
 
 Hoewel de onderhoudstaak werd ontwikkeld om op Lucene betrekking hebbende revisiehuisvuil te verminderen, zijn er algemene efficiëntiewinsten wanneer het runnen van de taak:
 
@@ -522,7 +522,7 @@ U kunt tot de taak van de Opruiming van de Bindingen van Lucene toegang hebben v
 
 ### Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
-Voor details op de Inzameling van het huisvuil van de Opslag van Gegevens, zie de specifieke ](/help/sites-administering/data-store-garbage-collection.md) documentatiepagina van de Inzameling van het huisvuil van de Opslag van 0} Gegevens.[
+Voor details op de Inzameling van het huisvuil van de Opslag van Gegevens, zie de specifieke [&#128279;](/help/sites-administering/data-store-garbage-collection.md) documentatiepagina van de Inzameling van het huisvuil van de Opslag van 0&rbrace; Gegevens.
 
 ### Werkstroom leegmaken {#workflow-purge}
 

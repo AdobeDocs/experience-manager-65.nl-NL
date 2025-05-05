@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Procedure voor het dynamisch vullen van vervolgkeuzelijsten {#procedure-to-dynamically-populate-drop-down-lists}
 
-Overweeg een scenario waar u de **drop-down lijst wilt bevolken van de Staat** die op een waarde wordt gebaseerd die u in de **3} drop-down lijst van het Land {selecteert.** Als u Australië in de **drop-down lijst van het Land** selecteert, toont de **3} drop-down lijst van de Staat {de staten binnen Australië.** De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
+Overweeg een scenario waar u de **drop-down lijst wilt bevolken van de Staat** die op een waarde wordt gebaseerd die u in de **3&rbrace; drop-down lijst van het Land {selecteert.** Als u Australië in de **drop-down lijst van het Land** selecteert, toont de **3} drop-down lijst van de Staat &lbrace;de staten binnen Australië.** De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
 
 1. Creeer een project met de volgende modules:
 

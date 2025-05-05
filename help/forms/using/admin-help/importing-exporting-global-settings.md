@@ -142,6 +142,6 @@ De aangepaste naam definiëren:
 
 >[!NOTE]
 >
->Voor de toepassing van de Demo, is de standaardvertoningsnaam **Burger**. Voor een douanetoepassing die u creeert, is de standaardvertoningsnaam de Rekening van de Context van het Systeem ****.
+>Voor de toepassing van de Demo, is de standaardvertoningsnaam **Burger**. Voor een douanetoepassing die u creeert, is de standaardvertoningsnaam de Rekening van de Context van het Systeem **&#x200B;**.
 >
 >**client_idleTimeout:** Wanneer een gebruiker voor een specifieke hoeveelheid tijd inactief blijft, verloopt de zitting van AEM Forms Workspace. Om de eigenschap toe te laten, voeg een ingang aan Globale Montages &lt;client_idleTimeout> *IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout> toe. U kunt waarde 0 opgeven om de time-out bij inactiviteit uit te schakelen. De hoeveelheid tijd wordt opgegeven in seconden.

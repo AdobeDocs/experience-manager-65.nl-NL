@@ -48,7 +48,7 @@ Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 
 ## De verbindingstegel beheren {#the-manage-connection-tile}
 
-Het **beheert de 1} tegels van de Verbinding {toont de de verbindingsinformatie van AEM Mobile On-demand Services:**
+Het **beheert de 1&rbrace; tegels van de Verbinding &lbrace;toont de de verbindingsinformatie van AEM Mobile On-demand Services:**
 
 * Naam van cloudconfiguratie
 * Projectnaam en -id

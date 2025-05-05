@@ -53,7 +53,7 @@ Als u het formulierontwerp ophaalt vanaf een vaste locatie, zoals het bestandssy
 
 Als u een URI-waarde wilt doorgeven die de locatie van het formulierontwerp opgeeft wanneer u een PDF-document maakt, gebruikt u de methode `generatePDFOutput` . Op dezelfde manier kunt u de methode `generatePDFOutput2` gebruiken om een `com.adobe.idp.Document` -instantie door te geven aan de uitvoerservice wanneer u een PDF-document maakt.
 
-Wanneer u een uitvoerstream naar een netwerkprinter verzendt, kunt u ook een van de twee technieken gebruiken. Om een outputstroom naar een printer te verzenden door een `com.adobe.idp.Document` instantie over te gaan die een vormontwerp bevat, gebruik de `sendToPrinter2` methode. Om een outputstroom naar een printer te verzenden door een waarde van URI over te gaan, gebruik de `sendToPrinter` methode. Het *verzenden van de Streams van de Druk aan de 1} sectie van Printers {gebruikt de `sendToPrinter` methode.*
+Wanneer u een uitvoerstream naar een netwerkprinter verzendt, kunt u ook een van de twee technieken gebruiken. Om een outputstroom naar een printer te verzenden door een `com.adobe.idp.Document` instantie over te gaan die een vormontwerp bevat, gebruik de `sendToPrinter2` methode. Om een outputstroom naar een printer te verzenden door een waarde van URI over te gaan, gebruik de `sendToPrinter` methode. Het *verzenden van de Streams van de Druk aan de 1&rbrace; sectie van Printers &lbrace;gebruikt de `sendToPrinter` methode.*
 
 U kunt deze taken uitvoeren met de service Uitvoer:
 
@@ -342,7 +342,7 @@ Maak een PDF-document met de Output API (webservice):
 
 1. Een PDF-document genereren.
 
-   Creeer een document van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp {aan te halen en de volgende waarden over te gaan:
+   Creeer een document van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp &lbrace;aan te halen en de volgende waarden over te gaan:
 
    * Een opsommingswaarde `TransformationFormat` . Als u een PDF-document wilt genereren, geeft u `TransformationFormat.PDF` op.
    * Een tekenreekswaarde waarmee de naam van het formulierontwerp wordt opgegeven.
@@ -504,7 +504,7 @@ Een PDF/A-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >De versie van PDF van een PDF/A- document is 1.4 ongeacht welke waarde u voor de `setPdfVersion`*methode van 0} objecten {specificeert.*`RenderOptionsSpec`
+   >De versie van PDF van een PDF/A- document is 1.4 ongeacht welke waarde u voor de `setPdfVersion`*methode van 0&rbrace; objecten &lbrace;specificeert.*`RenderOptionsSpec`
 
 1. Een PDF/A-document genereren.
 
@@ -597,7 +597,7 @@ Een PDF/A-document maken met de Output API (webservice):
 
 1. Een PDF/A-document genereren.
 
-   Creeer een document van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp {aan te halen en de volgende waarden over te gaan:
+   Creeer een document van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp &lbrace;aan te halen en de volgende waarden over te gaan:
 
    * Een opsommingswaarde van TransformationFormat. Als u een PDF-document wilt genereren, geeft u `TransformationFormat.PDFA` op.
    * Een tekenreekswaarde waarmee de naam van het formulierontwerp wordt opgegeven.
@@ -1908,7 +1908,7 @@ Meerdere PDF-bestanden maken met de Output API (webservice):
 
 1. Genereer meerdere PDF-bestanden.
 
-   Creeer veelvoudige dossiers van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp {aan te halen en de volgende waarden over te gaan:
+   Creeer veelvoudige dossiers van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp &lbrace;aan te halen en de volgende waarden over te gaan:
 
    * Een opsommingswaarde van TransformationFormat. Als u een PDF-document wilt genereren, geeft u `TransformationFormat.PDF` op.
    * Een tekenreekswaarde waarmee de naam van het formulierontwerp wordt opgegeven.
@@ -2161,7 +2161,7 @@ Maak zoekregels met de Output API (webservice):
 
 1. Een PDF-document genereren
 
-   Creeer een document van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp {aan te halen en de volgende waarden over te gaan:
+   Creeer een document van de PDF door de `generatePDFOutput` methode van het `OutputServiceService` voorwerp &lbrace;aan te halen en de volgende waarden over te gaan:
 
    * Een opsommingswaarde `TransformationFormat` . Als u een PDF-document wilt genereren, geeft u `TransformationFormat.PDF` op.
    * Een tekenreekswaarde waarmee de naam van het formulierontwerp wordt opgegeven.

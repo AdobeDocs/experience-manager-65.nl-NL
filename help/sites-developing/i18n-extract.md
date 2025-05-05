@@ -66,7 +66,7 @@ Het patroongedeelte van een regel wordt gebruikt om de namen van de bestanden di
 | Voorvoegsel | Effect |
 |---|---|
 | / | Geeft een JCR-pad aan. Dit voorvoegsel komt daarom overeen met bestanden onder de map jcr_root. |
-| &amp;ast; | Geeft een normaal bestand op het bestandssysteem aan. |
+| &ast; | Geeft een normaal bestand op het bestandssysteem aan. |
 | none | Geen voorvoegsel of patroon dat begint met een map of bestandsnaam, geeft een normaal bestand op het bestandssysteem aan. |
 
 Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aan; het teken komt overeen met alles. In de volgende tabel staan verschillende voorbeeldregels.

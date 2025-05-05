@@ -41,7 +41,7 @@ Deze stappen tonen hoe te om het wachtwoord SMTP voor de dienst van de Post te c
 
    ![ screen_shot_2018-08-01at113417am ](assets/screen_shot_2018-08-01at113417am.png)
 
-1. Op het **gebied van de Tekst van 0} Ononderbroken {, ga de tekst van de gevoelige gegevens in u wilt beschermen.**
+1. Op het **gebied van de Tekst van 0&rbrace; Ononderbroken &lbrace;, ga de tekst van de gevoelige gegevens in u wilt beschermen.**
 1. Selecteer **Protect**. De beveiligde tekst wordt weergegeven als gecodeerde tekst.
 
    ![ screen_shot_2018-08-01at113844am ](assets/screen_shot_2018-08-01at113844am.png)

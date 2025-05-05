@@ -171,7 +171,7 @@ U kunt deze bundel bij uitvoering implementeren of toevoegen aan de portlet-webt
 Nadat het geheime voorgeheugen wordt opgesteld, plaatst portlet inhoud van publicatieinstantie in het voorgeheugen. De portletcache kan ongeldig worden gemaakt door een dispatcher uit AEM te spoelen. Om portlet te vormen om zijn eigen geheime voorgeheugen te gebruiken:
 
 1. Vorm een replicatieagent in auteur die de poortserver richt.
-1. Ervan uitgaande dat de looppas van de poortserver op gastheer **localhost**, **port 8080 **en de AEM portlet Webtoepassing in de context **cqportlet** wordt opgezet, is de url om het geheime voorgeheugen te leegmaken `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Gebruik GET als methode.
+1. Ervan uitgaande dat de looppas van de poortserver op gastheer **localhost**, **port 8080 &#x200B;** en de AEM portlet Webtoepassing in de context **cqportlet** wordt opgezet, is de url om het geheime voorgeheugen te leegmaken `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Gebruik GET als methode.
    **Nota:** In plaats van het gebruiken van een verzoekparameter, kunt u een HTTP- kopbal verzenden genoemd **Weg**.
 
 #### Het spoelen van het Geheime voorgeheugen via de Agent van de Replicatie {#flushing-the-cache-via-replication-agent}
@@ -216,7 +216,7 @@ Om een replicatieagent voor het portaal te vormen:
 
 1. Op het **gebied van de Methode van HTTP**, type **GET**.
 1. Op het **gebied van de Kopballen van HTTP**, klik **+** om een nieuwe ingang en type **Weg toe te voegen: {path}**.
-1. Indien nodig, klik het **lusje van de Volmacht 0} {en ga volmachtsinformatie aan de agent in.**
+1. Indien nodig, klik het **lusje van de Volmacht 0&rbrace; &lbrace;en ga volmachtsinformatie aan de agent in.**
 1. Klik **O.K.** om veranderingen te bewaren.
 1. Om de verbinding te testen, klik de **verbinding van de Test**. Een logboekbericht verschijnt dat erop wijst of de replicatietest succesvol was. Bijvoorbeeld:
 
@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Een aangepaste indeling installeren {#installing-a-custom-layout}
 
-Als u een aangepaste indeling wilt installeren, opent u de OSGI Web-console **Bundles **section van de portlet en uploadt u de bundel.
+Als u een aangepaste indeling wilt installeren, opent u de OSGI Web-console **Bundles &#x200B;** section van de portlet en uploadt u de bundel.
 
 #### Pakketten {#packages}
 
@@ -668,7 +668,7 @@ Het AEM QuickStart JAR-bestand bevat de portlet-componentbestanden. Als u de bes
 Voeg de portletcomponent aan het paragraafsysteem toe zodat het aan auteurs beschikbaar is.
 
 1. Klik in Sidekick op het liniaalpictogram om de ontwerpmodus te activeren.
-1. Naast de `Design of par` rubriek boven de eerste paragraaf, geeft de klik **** uit.
+1. Naast de `Design of par` rubriek boven de eerste paragraaf, geeft de klik **&#x200B;**&#x200B;uit.
 
 1. In de **Algemene** componentencategorie, selecteer de controledoos naast de component Portlet en klik O.K.
 
@@ -715,7 +715,7 @@ Met de component Portal kunt u een portletvenster toevoegen aan uw webpagina. Ge
 
 1. Dubbelklik op de component om de eigenschappen Portlet te openen.
 1. In het **drop-down menu van de Entiteit van de Portlet**, selecteer portlet van de lijst.
-1. Schakel het selectievakje **Titelbalk verbergen ** in of uit, afhankelijk van de vraag of u de titelbalk van de portlet wilt zien.
+1. Schakel het selectievakje **Titelbalk verbergen &#x200B;** in of uit, afhankelijk van de vraag of u de titelbalk van de portlet wilt zien.
 1. Op het **gebied van het Venster van de Portlet**, ga unieke identiteitskaart van het Venster van Portlet in, indien gewenst.
 
    >[!NOTE]
@@ -771,7 +771,7 @@ Om portlet te vormen:
 
 1. Navigeer naar de OSGI-beheerconsole voor de portlet. De standaardlocatie is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr` . De standaardgebruikersbenaming/het wachtwoord is **admin/admin**.
 
-1. Selecteer de **configuratie van de Configuratie van de Server van Director CQ van 0} Dag Portal en geef de volgende waarden uit:**
+1. Selecteer de **configuratie van de Configuratie van de Server van Director CQ van 0&rbrace; Dag Portal en geef de volgende waarden uit:**
 
    * **Basis URL van de Auteur**: De basis URL voor de AEM auteursinstantie.
    * **Basis URL van Publish**: De basis URL voor AEM publiceer instantie.

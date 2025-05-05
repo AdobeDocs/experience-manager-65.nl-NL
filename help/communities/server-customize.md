@@ -123,7 +123,7 @@ De code van de steekproef is beschikbaar in [ Adobe Experience Cloud GitHub ](ht
 
 Bekijk de [ sectie van de Richtlijnen van de Codering ](code-guide.md) voor diverse coderingsrichtlijnen en beste praktijken voor de ontwikkelaars van AEM Communities.
 
-Zie ook {de Leverancier van het Middel van 0} Opslag (SRP) voor UGC ](srp.md) om over de toegang tot van gebruiker geproduceerde inhoud te leren.[
+Zie ook {de Leverancier van het Middel van 0} Opslag (SRP) voor UGC [&#128279;](srp.md) om over de toegang tot van gebruiker geproduceerde inhoud te leren.
 
 | **[Essentiële elementen ⇐](essentials.md)** | **[Cliënt-kant Aanpassing](client-customize.md)** |
 |---|---|

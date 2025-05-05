@@ -44,7 +44,7 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Markeringen/Trefwoorden** gebied in te gaan.
 
-Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3} venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
+Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3&rbrace; venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
 
 ![ Uitgezochte het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen ](assets/chlimage_1-41.png) te schrappen
 

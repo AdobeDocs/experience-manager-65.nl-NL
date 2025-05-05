@@ -44,7 +44,7 @@ In de vorige fase van de Headless Journey hebt u geleerd hoe u de AEM GraphQL AP
 
 Waarom is er dus nog een API nodig?
 
-De HTTP API van Assets laat u **** lezen uw inhoud, maar het laat u ook **** creëren, **Update** en **schrapt** inhoud - acties die niet met GraphQL API mogelijk zijn.
+De HTTP API van Assets laat u **&#x200B;**&#x200B;lezen uw inhoud, maar het laat u ook **&#x200B;**&#x200B;creëren, **Update** en **schrapt** inhoud - acties die niet met GraphQL API mogelijk zijn.
 
 De Assets REST-API is beschikbaar voor elke installatie van een recente Adobe Experience Manager-versie die buiten de box valt.
 
@@ -224,8 +224,8 @@ Als u bijvoorbeeld toegang wilt krijgen tot `/content/dam/wknd/en/adventures/cyc
 >[!NOTE]
 >Toegang over:
 >
->* `/api/assets` **** nodig niet het gebruik van `.model` selecteur.
->* `/content/path/to/page` **** vereist het gebruik van `.model` selecteur.
+>* `/api/assets` **&#x200B;**&#x200B;nodig niet het gebruik van `.model` selecteur.
+>* `/content/path/to/page` **&#x200B;**&#x200B;vereist het gebruik van `.model` selecteur.
 
 ### Bewerking {#operation}
 

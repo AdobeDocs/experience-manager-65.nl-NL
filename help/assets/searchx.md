@@ -143,7 +143,7 @@ Een voorspelling van eigenschappen maken:
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt **cq:editConfig** van het primaire type **cq:EditConfig** toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden **cq:actions** met één waarde van **DELETE** toe te voegen.
 1. Navigeer aan uw browser, en op uw steekproefpagina (bijvoorbeeld, **press.html**) schakelaar aan ontwerpwijze en laat uw nieuwe component voor het predikaat paragraafsysteem (bijvoorbeeld, **verlaten**) toe.
 
-1. Op **geef** wijze uit, is de nieuwe component nu beschikbaar in sidekick (die in de **wordt gevonden 3} groep van het Onderzoek {).** Tussenvoegsel de component in **voorspelt** kolom en typ een onderzoekswoord, bijvoorbeeld, **Ruitje** en klik het vergrootglas om het onderzoek te beginnen.
+1. Op **geef** wijze uit, is de nieuwe component nu beschikbaar in sidekick (die in de **wordt gevonden 3&rbrace; groep van het Onderzoek &lbrace;).** Tussenvoegsel de component in **voorspelt** kolom en typ een onderzoekswoord, bijvoorbeeld, **Ruitje** en klik het vergrootglas om het onderzoek te beginnen.
 
    >[!NOTE]
    >
@@ -246,7 +246,7 @@ Om een groep te bouwen predikaat:
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt **cq:editConfig** van het primaire type **cq:EditConfig** toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden **cq:actions** met één waarde van **DELETE** toe te voegen.
 1. Navigeer aan uw browser, en op uw steekproefpagina (bijvoorbeeld, **press.html**) schakelaar aan ontwerpwijze en laat uw nieuwe component voor het predikaat paragraafsysteem (bijvoorbeeld, **verlaten**) toe.
-1. Op **geef** wijze uit, is de nieuwe component nu beschikbaar in sidekick (die in de **wordt gevonden 3} groep van het Onderzoek {).** Tussenvoegsel de component in de **Predicates** kolom.
+1. Op **geef** wijze uit, is de nieuwe component nu beschikbaar in sidekick (die in de **wordt gevonden 3&rbrace; groep van het Onderzoek &lbrace;).** Tussenvoegsel de component in de **Predicates** kolom.
 
 ## Vooraf geïnstalleerde widgets {#installed-predicate-widgets}
 

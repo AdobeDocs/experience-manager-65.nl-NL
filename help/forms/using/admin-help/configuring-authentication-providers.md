@@ -159,7 +159,7 @@ Zonder just-in-time levering, wanneer een gebruiker met succes voor authentiek w
 1. Als u een domein wilt maken, klikt u op Nieuw Enterprise-domein of Nieuw hybride domein. Als u een bestaand domein wilt bewerken, klikt u op de naam van het domein.
 1. Selecteer Enable Just In Time Provisioning.
 
-   ***nota **: Als Enable enkel in checkbox van de Levering van de Tijd mist, klik Huis > Montages > de Configuratie van het Beheer van de Gebruiker > de Geavanceerde Attributen van het Systeem en klik dan opnieuw laden.*
+   ***nota &#x200B;**: Als Enable enkel in checkbox van de Levering van de Tijd mist, klik Huis > Montages > de Configuratie van het Beheer van de Gebruiker > de Geavanceerde Attributen van het Systeem en klik dan opnieuw laden.*
 
 1. Voeg verificatieproviders toe. Tijdens het toevoegen van authentificatieleveranciers, op het Nieuwe scherm van de Authentificatie, selecteer een geregistreerde Maker van de Identiteit en een Leverancier van de Toewijzing. (Zie [ het Vormen authentificatieleveranciers ](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Sla het domein op.

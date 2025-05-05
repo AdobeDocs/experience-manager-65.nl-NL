@@ -84,6 +84,7 @@ Inhoudsfragmenten met gestructureerde inhoud (gebaseerd op een inhoudsfragmentmo
 * Alle inhoud wordt opgeslagen onder het knooppunt `jcr:content/data` van het element:
 
    * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
+
      `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:
@@ -133,7 +134,7 @@ Voor verdere details zie [ het Fragment van de Inhoud - Schrap Overwegingen ](/h
 >
 >De [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) wordt nu geadviseerd. Zie [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer details.
 
-Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **kerncomponent van het Fragment van de Inhoud[** ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [ component die u inhoudsfragmenten op uw pagina&#39;s ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt ook uitbreiden, dit **kerncomponent van het Fragment van 0} Inhoud {.**
+Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **kerncomponent van het Fragment van de Inhoud[*&#128279;*](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [ component die u inhoudsfragmenten op uw pagina&#39;s ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt ook uitbreiden, dit &#x200B;** kerncomponent van het Fragment van 0&rbrace; Inhoud &lbrace;.**
 
 * De component gebruikt de eigenschap `fragmentPath` om naar het daadwerkelijke inhoudsfragment te verwijzen. De eigenschap `fragmentPath` wordt op dezelfde manier afgehandeld als soortgelijke eigenschappen van andere elementtypen, bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 

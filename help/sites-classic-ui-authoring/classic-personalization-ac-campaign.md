@@ -80,11 +80,11 @@ Daarnaast moet u mogelijk ook de Adobe Campaign-sjabloon selecteren en het onder
 
    ![ chlimage_1-174 ](assets/chlimage_1-174.png)
 
-1. Selecteer de configuratie die uw instantie van Adobe Campaign van de drop-down lijst aanpast, dan klik O.K. ****.
+1. Selecteer de configuratie die uw instantie van Adobe Campaign van de drop-down lijst aanpast, dan klik O.K. **&#x200B;**.
 
    >[!NOTE]
    >
-   >Ben zeker om **O.K.** te klikken of **** na het toevoegen van de wolkendienst van toepassing is. Dit laat het **Adobe Campaign** lusje toe om behoorlijk te werken.
+   >Ben zeker om **O.K.** te klikken of **&#x200B;**&#x200B;na het toevoegen van de wolkendienst van toepassing is. Dit laat het **Adobe Campaign** lusje toe om behoorlijk te werken.
 
 1. Als u een specifiek malplaatje van de e-maillevering (van Adobe Campaign), buiten het standaard **post** malplaatje zou willen toepassen, selecteer **eigenschappen van de Pagina** opnieuw. In het **Adobe Campaign** lusje, ga de interne naam van het malplaatje van de e-maillevering in de verwante instantie van Adobe Campaign in.
 
@@ -117,7 +117,7 @@ Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 * Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld, voornaam, achternaam, of om het even welke gegevens van de doeldimensie) zal aanpassen.
 * Adobe Campaign-verpersoonlijkingsblokken. Dit zijn blokken vooraf gedefinieerde inhoud die niet gerelateerd zijn aan de gegevens van de ontvanger, zoals een merklogo of een koppeling naar een spiegel.
 
-Zie {de Componenten van 0} Adobe Campaign ](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) voor een volledige beschrijving van de componenten van de Campagne.[
+Zie {de Componenten van 0} Adobe Campaign [&#128279;](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) voor een volledige beschrijving van de componenten van de Campagne.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Deze out-of-the-box werkstroom heeft twee stappen: revisie dan goedkeuring, of r
 
 ![ chlimage_1-182 ](assets/chlimage_1-182.png)
 
-Om inhoud voor Adobe Campaign goed te keuren, pas het werkschema toe door **Werkschema** in sidekick te selecteren en **te selecteren keurt voor Adobe Campaign** goed en klik **Werkschema van het Begin**. Doorloop de stappen en keur de inhoud goed. U kunt de inhoud ook verwerpen door **te selecteren verwerp** in plaats van **** in de laatste werkschemastap goedkeuren.
+Om inhoud voor Adobe Campaign goed te keuren, pas het werkschema toe door **Werkschema** in sidekick te selecteren en **te selecteren keurt voor Adobe Campaign** goed en klik **Werkschema van het Begin**. Doorloop de stappen en keur de inhoud goed. U kunt de inhoud ook verwerpen door **te selecteren verwerp** in plaats van **&#x200B;**&#x200B;in de laatste werkschemastap goedkeuren.
 
 ![ chlimage_1-183 ](assets/chlimage_1-183.png)
 

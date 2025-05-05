@@ -65,7 +65,7 @@ U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt ge
 1. Selecteer in de websiteconsole de pagina die u wilt activeren.
 1. Selecteer **activeren**, of van het hoogste menu, of het drop-down menu op het geselecteerde paginapunt.
 
-   Om de inhoud van de pagina en al zijn sub-pagina&#39;s te activeren gebruiken de **console van Hulpmiddelen[** ](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Om de inhoud van de pagina en al zijn sub-pagina&#39;s te activeren gebruiken de **console van Hulpmiddelen[*&#128279;*](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![ screen_shot_2012-02-08at13817pm ](assets/screen_shot_2012-02-08at13817pm.png)
 

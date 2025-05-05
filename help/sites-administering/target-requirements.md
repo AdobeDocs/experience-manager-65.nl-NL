@@ -31,7 +31,7 @@ De clientcode identificeert de Adobe Target-klantenaccount wanneer de Adobe Targ
 >
 >Uw account moet ook zijn ingeschakeld door het Target-team om de integratie te kunnen gebruiken.
 >
->Als het niet het geval is, contacteer ](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html) de Zorg van de Klant van de Adobe 0}.[
+>Als het niet het geval is, contacteer [&#128279;](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html) de Zorg van de Klant van de Adobe 0&rbrace;.
 
 ## De agent voor doelreplicatie inschakelen {#enabling-the-target-replication-agent}
 
@@ -40,7 +40,7 @@ De Test en van het Doel [ replicatieagent ](/help/sites-deploying/replication.md
 1. Op de AEM homepage, klik **Hulpmiddelen** > **Plaatsing** > **Replicatie**.
 1. Klik **Agenten op Auteur**.
 1. Klik de **Test en Doel (test en doel)** replicatieagent, en klik dan **uitgeven**.
-1. Selecteer de Toegelaten optie, dan klik O.K. ****.
+1. Selecteer de Toegelaten optie, dan klik O.K. **&#x200B;**.
 
    >[!NOTE]
    >

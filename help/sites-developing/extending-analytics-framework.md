@@ -122,7 +122,7 @@ De code die u toevoegt, wordt toegevoegd aan het bestand analytics.sitecatalyst.
 
 `s.prop10= 'CONSTANT';`
 
-De code in het {](/help/sites-developing/extending-analytics-components.md) dossier 0} analytics.sitecatalyst.js (die de inhoud van het Adobe Analytics `s-code.js` dossier omvat) bevat de volgende code:[
+De code in het {[&#128279;](/help/sites-developing/extending-analytics-components.md) dossier 0} analytics.sitecatalyst.js (die de inhoud van het Adobe Analytics `s-code.js` dossier omvat) bevat de volgende code:
 
 `if (s.usePlugins) s.doPlugins(s)`
 
@@ -172,7 +172,7 @@ De volgende waarden worden bijvoorbeeld gegenereerd in Adobe Analytics:
 
 ### Global Custom Code toevoegen voor alle Adobe Analytics-frameworks {#adding-global-custom-code-for-all-adobe-analytics-frameworks}
 
-Aangepaste JavaScript-code opgeven die in alle Adobe Analytics-frameworks is geïntegreerd. Wanneer het kader van Adobe Analytics van een pagina geen douane [ vrij-vorm JavaScript ](/help/sites-administering/adobeanalytics.md) bevat, wordt JavaScript dat het manuscript /libs/cq/analytics/components/sitecatalyst/config.js.jsp produceert toegevoegd aan het {](/help/sites-administering/adobeanalytics.md) dossier 2} analytics.sitecatalyst.js. [ Het script heeft standaard geen effect omdat het geen opmerkingen bevat. De code stelt ook `s.usePlugins` in op `false` :
+Aangepaste JavaScript-code opgeven die in alle Adobe Analytics-frameworks is geïntegreerd. Wanneer het kader van Adobe Analytics van een pagina geen douane [ vrij-vorm JavaScript ](/help/sites-administering/adobeanalytics.md) bevat, wordt JavaScript dat het manuscript /libs/cq/analytics/components/sitecatalyst/config.js.jsp produceert toegevoegd aan het {[&#128279;](/help/sites-administering/adobeanalytics.md) dossier 2} analytics.sitecatalyst.js.  Het script heeft standaard geen effect omdat het geen opmerkingen bevat. De code stelt ook `s.usePlugins` in op `false` :
 
 ```
 /* Plugin Config */

@@ -81,7 +81,7 @@ De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met
 
 De redenen voor slechte latentie en productie in NAS zijn netwerktopologie of NAS overgebruik door andere diensten.
 
-{de 1} over-gebruikte netwerk-in bijlage van het 0} Netwerk In bijlage opslagsystemen kunnen een serie van problemen veroorzaken:****
+{de 1} over-gebruikte netwerk-in bijlage van het 0&rbrace; Netwerk In bijlage opslagsystemen kunnen een serie van problemen veroorzaken:**&#x200B;**
 
 * Weinig schijfruimte is een vaak aangetroffen probleem dat kan worden voorkomen door een DAM-project naar behoren te rangschikken.
 * De hoge schijflatentie verspreidt zich in langzame toegangstijden voor CRX en kan in interactieve prestatiesproblemen resulteren.

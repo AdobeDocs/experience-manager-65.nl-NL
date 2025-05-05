@@ -71,7 +71,7 @@ De typische AEM toepassingsstructuur ondersteunt alle responsieve ontwerpimpleme
 
 Met mediaquery&#39;s kunt u CSS-stijlen selectief gebruiken voor het weergeven van pagina&#39;s. AEM ontwikkelingshulpmiddelen en eigenschappen laten u toe om media vragen in uw toepassingen effectief en efficiënt uit te voeren.
 
-De W3C groep verstrekt de ](https://www.w3.org/TR/mediaqueries-3/) aanbeveling van de Vragen van Media 0} {die deze CSS3 eigenschap en de syntaxis beschrijft.[
+De W3C groep verstrekt de [&#128279;](https://www.w3.org/TR/mediaqueries-3/) aanbeveling van de Vragen van Media 0&rbrace; &lbrace;die deze CSS3 eigenschap en de syntaxis beschrijft.
 
 ### Het CSS-bestand maken {#creating-the-css-file}
 
@@ -116,17 +116,17 @@ In de volgende tabel worden de bestanden in de onderliggende css-map weergegeven
   <tr>
    <td>responsive-768px-979px.css</td>
    <td>Stijlen voor media die tussen 768 pixels en 979 pixels breed zijn. </td>
-   <td><p>@media (min-width: 768 px) en (max-width: 979 px) <br /> ...<br /> }</p> </td>
+   <td><p>@media (min-width: 768 px) en (max-width: 979 px) <br /> ...<br /> &rbrace;</p> </td>
   </tr>
   <tr>
    <td>responsive-767px-max.css</td>
    <td>Stijlen voor alle media die minder dan 768 pixels breed zijn.</td>
-   <td><p>@media (max-width: 767 px) <br /> ...<br /> }</p> </td>
+   <td><p>@media (max-width: 767 px) <br /> ...<br /> &rbrace;</p> </td>
   </tr>
   <tr>
    <td>responsive-480px.css</td>
    <td>Stijlen voor alle media die minder dan 481 pixels breed zijn.</td>
-   <td>@media (max-width: 480 px) <br /> ...<br /> }</td>
+   <td>@media (max-width: 480 px) <br /> ...<br /> &rbrace;</td>
   </tr>
  </tbody>
 </table>
@@ -260,7 +260,7 @@ Implementaties van de [ interface MediaQueryList ](https://drafts.csswg.org/csso
 
 Het W3C [ beeldelement ](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) gebruikt media vragen om de bron te bepalen voor beeldelementen te gebruiken. Het afbeeldingselement gebruikt elementkenmerken om mediaquery&#39;s te koppelen aan afbeeldingspaden.
 
-De vrij beschikbare bibliotheek 0} picturefill.js ](https://github.com/scottjehl/picturefill) verstrekt gelijkaardige functionaliteit zoals het voorgestelde `picture` element, en gebruikt een gelijkaardige strategie. [ De bibliotheek picturefill.js roept `window.matchMedia` aan om de mediaquery&#39;s te evalueren die voor een set `div` -elementen zijn gedefinieerd. Elk `div` -element geeft ook een afbeeldingsbron op. De bron wordt gebruikt wanneer de mediaquery van het element `div` `true` retourneert.
+De vrij beschikbare bibliotheek 0&rbrace; picturefill.js [&#128279;](https://github.com/scottjehl/picturefill) verstrekt gelijkaardige functionaliteit zoals het voorgestelde `picture` element, en gebruikt een gelijkaardige strategie.  De bibliotheek picturefill.js roept `window.matchMedia` aan om de mediaquery&#39;s te evalueren die voor een set `div` -elementen zijn gedefinieerd. Elk `div` -element geeft ook een afbeeldingsbron op. De bron wordt gebruikt wanneer de mediaquery van het element `div` `true` retourneert.
 
 De `picturefill.js` -bibliotheek vereist HTML-code die vergelijkbaar is met het volgende voorbeeld:
 
@@ -543,7 +543,7 @@ De klasse `AbstractImageServlet` biedt de methode `doGet` die de HTTP-aanvraag v
 
 >[!NOTE]
 >
->De {](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) klasse 0} com.day.cq.commons.DownloadResource verstrekt `getFileReference method`, die de waarde van het 3} bezit van het middel terugwint.[`fileReference`
+>De {[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) klasse 0} com.day.cq.commons.DownloadResource verstrekt `getFileReference method`, die de waarde van het 3&rbrace; bezit van het middel terugwint.`fileReference`
 
 De klasse `AdaptiveImageComponentServlet` overschrijft de methode `createLayer` . De methode verkrijgt de weg van de beeldbron en de gevraagde beeldbreedte van het `ImageContext` voorwerp. Vervolgens worden de methoden van de klasse `info.geometrixx.commons.impl.AdaptiveImageHelper` aangeroepen, die de werkelijke schaling van de afbeelding uitvoert.
 
@@ -605,7 +605,7 @@ Het afbeeldingspad, de afmetingen en de kwaliteitswaarden moeten worden opgeslag
 
 Wanneer het ontwerpen van een pagina, gebruik **Sidekick** om het beeld te specificeren en de `image` knoop aan de paginaeigenschappen toe te voegen:
 
-1. In **Sidekick**, klik het **** lusje van de Pagina, en klik dan **Eigenschappen van de Pagina**.
+1. In **Sidekick**, klik het **&#x200B;**&#x200B;lusje van de Pagina, en klik dan **Eigenschappen van de Pagina**.
 1. Klik het **lusje van het Beeld** en specificeer het beeld.
 1. Klik **OK**.
 
@@ -656,7 +656,7 @@ De klasse `AbstractImageServlet` biedt de methode `doGet` die de HTTP-aanvraag v
 De klasse `ImageReferenceModificationServlet` overschrijft de methode `createLayer` en implementeert de logica die de afbeeldingsbron bepaalt die moet worden gerenderd. De methode haalt een onderliggende node op van de node `jcr:content` van de pagina met de naam `image` . Een [ voorwerp van het Beeld ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) wordt gecreeerd van deze `image` knoop, en de `getFileReference` methode keert de weg aan het beelddossier van het `fileReference` bezit van de beeldknoop terug.
 
 >[!NOTE]
->De {](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) klasse 0} com.day.cq.commons.DownloadResource verstrekt getFileReferenceMethod.[
+>De {[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) klasse 0} com.day.cq.commons.DownloadResource verstrekt getFileReferenceMethod.
 >
 
 ## Een dynamisch raster ontwikkelen {#developing-a-fluid-grid}
@@ -713,7 +713,7 @@ In het volgende voorbeeld is CSS een subset van deze stijlen. Deze subset richt 
 
 >[!NOTE]
 >
->De steekproef van Geometrixx Media integreert het ](https://getbootstrap.com/2.0.2/) kader van JavaScript van de Bootstrap [ {in zijn dynamische netimplementatie. Het framework Bootstrap biedt het bestand bootstrap.css.
+>De steekproef van Geometrixx Media integreert het [&#128279;](https://getbootstrap.com/2.0.2/) kader van JavaScript van de Bootstrap  &lbrace;in zijn dynamische netimplementatie. Het framework Bootstrap biedt het bestand bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */

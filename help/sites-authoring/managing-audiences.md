@@ -65,7 +65,7 @@ Wanneer u meer dan één regel gebruikt, worden deze regels gecombineerd door de
 
 >[!NOTE]
 >
->Als u niet **creeer de Audience van het Doel **in **creeert** menu ziet, hebt u niet de noodzakelijke toestemmingen om een publiek tot stand te brengen. U hebt schrijfmachtigingen nodig onder **/etc/segmentation** om een publiek te kunnen maken. De makers van groepscontent hebben standaard schrijfmachtigingen.
+>Als u niet **creeer de Audience van het Doel &#x200B;** in **creeert** menu ziet, hebt u niet de noodzakelijke toestemmingen om een publiek tot stand te brengen. U hebt schrijfmachtigingen nodig onder **/etc/segmentation** om een publiek te kunnen maken. De makers van groepscontent hebben standaard schrijfmachtigingen.
 
 Een Adobe Target-publiek maken:
 
@@ -73,7 +73,7 @@ Een Adobe Target-publiek maken:
 
    ![ scherm-shot_2019-03-05at124139 ](assets/screen-shot_2019-03-05at124139.png)
 
-1. In de console van het publiek, creeer de klik **** en dan** creeer Doelpubliek**.
+1. In de console van het publiek, creeer de klik **&#x200B;**&#x200B;en dan **&#x200B; creeer Doelpubliek**.
 
    ![ chlimage_1-168 ](assets/chlimage_1-168.png)
 
@@ -91,11 +91,11 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 | **Attribuut** | **Beschrijving** | **voor meer informatie** |
 |---|---|---|
 | **Mobiel** | Het doel mobiele apparaten die op parameters zoals mobiel apparaat, type van apparaat, apparatenverkoper, het schermafmetingen (door pixel) worden gebaseerd, en meer. | Zie [ Mobiele documentatie ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) bij Adobe Target. |
-| **Douane** | Aangepaste parameters zijn parameters mbox. Als u om het even welke mbox parameters tot dozen, of de targetPageParams functie doorgeeft, verschijnen die parameters hier voor gebruik in publiek. | Zie {de documentatie van Parameters van de Douane 0} ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) bij Adobe Target.[ |
+| **Douane** | Aangepaste parameters zijn parameters mbox. Als u om het even welke mbox parameters tot dozen, of de targetPageParams functie doorgeeft, verschijnen die parameters hier voor gebruik in publiek. | Zie {de documentatie van Parameters van de Douane 0} [&#128279;](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) bij Adobe Target. |
 | **OS** | U kunt zich richten op bezoekers die een bepaald besturingssysteem gebruiken. | Doelgebruikers die Linux®, Macintosh of Windows gebruiken. |
-| **Pagina&#39;s van de Plaats** | Doelbezoekers die zich op een specifieke pagina bevinden of een specifieke parameter mbox hebben. | Zie {de documentatie van de Pagina&#39;s van 0} Plaats ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) in Adobe Target.[ |
+| **Pagina&#39;s van de Plaats** | Doelbezoekers die zich op een specifieke pagina bevinden of een specifieke parameter mbox hebben. | Zie {de documentatie van de Pagina&#39;s van 0} Plaats [&#128279;](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) in Adobe Target. |
 | **Browser** | U kunt zich richten op gebruikers die een specifieke browser of specifieke browseropties gebruiken wanneer zij uw pagina bezoeken. | Zie [ Browser optiesdocumentatie ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) bij Adobe Target. |
-| **Profiel van de Bezoeker** | Doelbezoekers die voldoen aan specifieke profielparameters. | Zie {de documentatie van het Profiel van 0} Bezoeker ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) bij Adobe Target.[ |
+| **Profiel van de Bezoeker** | Doelbezoekers die voldoen aan specifieke profielparameters. | Zie {de documentatie van het Profiel van 0} Bezoeker [&#128279;](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) bij Adobe Target. |
 | **Bronnen van het Verkeer** | Doelbezoekers op basis van het zoekprogramma of de bestemmingspagina die hen naar uw site verwijst. | Zie [ documentatie van de Bronnen van het Verkeer ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) bij Adobe Target. |
 
 ## Een publiek wijzigen in de console Soorten publiek {#modifying-an-audience-in-the-audiences-console}
@@ -108,4 +108,4 @@ U kunt om het even welk Contextpubliek van ContextHub of van de Cliënt van de c
 
 1. In de console van de Navigatie, klik **Personalization**. Klik **Soorten publiek**.
 1. Klik het pictogram naast het segment van de ContextHub of van de Cliënt Context u uitgeven, en **klikken geeft** uit.
-1. Breng om het even welke veranderingen in de segmentredacteur aan. Zie ](/help/sites-administering/campaign-segmentation.md) of [ ContextHub ](/help/sites-developing/ch-configuring.md) documentatie van de Cliënt 0}.[
+1. Breng om het even welke veranderingen in de segmentredacteur aan. Zie [&#128279;](/help/sites-administering/campaign-segmentation.md) of [ ContextHub ](/help/sites-developing/ch-configuring.md) documentatie van de Cliënt 0&rbrace;.

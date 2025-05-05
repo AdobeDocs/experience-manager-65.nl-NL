@@ -58,7 +58,7 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >
 >* Vaste sessies zijn ingeschakeld, of
 >
->* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet in situaties zullen worden gesteund waar de managers **** gebruikers tijdens het synchronisatieproces creëren.
+>* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet in situaties zullen worden gesteund waar de managers **&#x200B;**&#x200B;gebruikers tijdens het synchronisatieproces creëren.
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
 

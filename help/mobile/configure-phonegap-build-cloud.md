@@ -97,7 +97,7 @@ phonegap run ios (or android, ...)
 >
 >Toevoegen — emuleren aan het einde van deze regel als u deze niet wilt uitvoeren op het aangesloten apparaat.
 
-Zodra u hebt geverifieerd dat de bovenstaande werken, gebruik de **Tegel van 0} PhoneGapen Build {aan** Download Source **.** Sla het bestand op en decomprimeer het naar uw lokale systeem. Zodra dat gebeurt:
+Zodra u hebt geverifieerd dat de bovenstaande werken, gebruik de **Tegel van 0&rbrace; PhoneGapen Build &lbrace;aan** Download Source **.** Sla het bestand op en decomprimeer het naar uw lokale systeem. Zodra dat gebeurt:
 
 * naar dat opgeslagen bestand (map) navigeren
 * run &#39;phonegap run ios&#39; (of android, enzovoort)

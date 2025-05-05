@@ -55,7 +55,7 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan de repl
    1. Klik op &quot;Gereedschappen&quot; in het bovenste menu.
    1. Klik op de vergrootglasknop.
    1. Selecteer XPath als Type.
-   1. Voer in het vak &quot;Query&quot; deze query/jcr:root/var/eventing/jobs//element({0,slingevent:Job)-volgorde in door @slingevent:created&#42;
+   1. Voer in het vak &quot;Query&quot; deze query/jcr:root/var/eventing/jobs//element(&lbrace;0,slingevent:Job)-volgorde in door @slingevent:created&#42;
    1. Klik op Zoeken.
    1. In de resultaten zijn de belangrijkste items de meest recente slingerende taken. Klik op elke kopie en zoek de geplakte replicaties die overeenkomen met wat boven in de wachtrij wordt weergegeven.
 

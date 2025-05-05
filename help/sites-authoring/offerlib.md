@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Aanbiedingen maken en beheren{#creating-and-managing-offers}
 
-Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen ](/help/sites-authoring/content-targeting-touch.md) kunt [ gebruiken. Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
+Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen [&#128279;](/help/sites-authoring/content-targeting-touch.md) kunt  gebruiken. Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
 
 * Maak het aanbod eenmaal in de bibliotheek en gebruik het in meerdere ervaringen met uw merkactiviteiten.
 * Wijzig de aanbieding in de bibliotheek en de wijziging is van invloed op alle ervaringen die met de wijziging zijn opgedaan.
@@ -68,7 +68,7 @@ Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 
    ![ scherm-shot_2019-03-05at124557-1 ](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Selecteer het **malplaatje van de Pagina van 0} Aanbieding {en klik dan** daarna **.**
+1. Selecteer het **malplaatje van de Pagina van 0&rbrace; Aanbieding &lbrace;en klik dan** daarna **.**
 1. Typ een titel voor de aanbieding en selecteer of typ naar keuze één of meerdere markeringen aan vennoot met de aanbieding, dan klik **creeer**.
 1. In de bevestigingsdialoogdoos, om de aanbieding voor het uitgeven te openen klik **Open Pagina**.
 
@@ -95,7 +95,7 @@ U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibli
 1. Als de aanbieding in een of meer ervaringen wordt gebruikt, verschijnt er een dialoogvenster waarin wordt aangegeven dat naar de aanbieding wordt verwezen:
 
    * Om de aanbieding te schrappen en het uit de ervaringen te verwijderen, klik **Schrapping** dwingen.
-   * Om de aanbieding te houden, annuleert de klik ****.
+   * Om de aanbieding te houden, annuleert de klik **&#x200B;**.
 
 ## Zoeken naar voorstellen {#searching-for-offers}
 

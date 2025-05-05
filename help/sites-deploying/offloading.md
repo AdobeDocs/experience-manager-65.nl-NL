@@ -208,7 +208,7 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 | Taakonderwerp | Service PID | Beschrijving |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Geïnstalleerd met Apache Sling. Verwerkt banen die OSGi gebeurtenisadmin, voor achterwaartse verenigbaarheid produceert. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen repliceert. |
+| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen repliceert. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Gebruik Webconsole of een knooppunt `sling:OsgiConfig` om de volgende eigenschap
 
 | Eigenschapnaam in webconsole | OSGi-id | Beschrijving |
 |---|---|---|
-| Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
+| Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
 | Topic lijst van gewezen personen | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
 
 ## Replication-agents voor offloaden maken {#creating-replication-agents-for-offloading}
@@ -302,7 +302,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Het creëren van de outbox agent {#creating-the-outbox-agent}
 
-1. Creeer de Agent van de Replicatie van a **** op de arbeidersinstantie. (Zie de [ documentatie voor replicatieagenten ](/help/sites-deploying/replication.md).) Specificeer om het even welke **Titel**. De **Naam** moet `offloading_outbox` zijn.
+1. Creeer de Agent van de Replicatie van a **&#x200B;**&#x200B;op de arbeidersinstantie. (Zie de [ documentatie voor replicatieagenten ](/help/sites-deploying/replication.md).) Specificeer om het even welke **Titel**. De **Naam** moet `offloading_outbox` zijn.
 1. Creeer de agent gebruikend de volgende eigenschappen.
 
    | Eigenschap | Waarde |

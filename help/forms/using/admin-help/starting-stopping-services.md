@@ -35,7 +35,7 @@ AEM formuliermodules (bijvoorbeeld Forms, Rights Management, Output) werken als 
 >
 > U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-1. In beleidsconsole klik **de Diensten van 0} >** Toepassingen en de Diensten **>** Beheer van de Dienst **.**
+1. In beleidsconsole klik **de Diensten van 0&rbrace; >** Toepassingen en de Diensten **>** Beheer van de Dienst **.**
 1. Voor de pagina van het Beheer van de Dienst, selecteer de controledoos naast de dienst om te stoppen of te beginnen en Einde of Begin te klikken.
 
 ## De diensten van het begin of van het einde voor de toepassingsserver en gegevensbestand {#start-or-stop-services-for-the-application-server-and-database}

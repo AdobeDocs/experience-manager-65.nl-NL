@@ -63,8 +63,8 @@ Deze handler moet worden toegevoegd aan elke AEM ContentSync Config voor Apps.
 
 * ***type - Koord - mobiele inhoudList***
 * ***weg*** - Koord - houdt leeg, moet aanwezig zijn om als geldige manager worden gezien maar de weg wordt afgeleid om het huidige geheime voorgeheugen te zijn ContentSync. Deze waarde wordt genegeerd.
-* ***targetRootDirectory* - **Koord - de prefix om aan wegen als doelwortel voor inhoudsupdate voor deze manager toe te voegen.
-* ***orde - Lang* - **Orde voor ContentSync om deze manager uit te voeren. Dit aantal zou hoger dan alle andere managers zoals 100 moeten worden geplaatst. Deze moet worden uitgevoerd na traditionele inhoudshandlers.
+* ***targetRootDirectory* - &#x200B;** Koord - de prefix om aan wegen als doelwortel voor inhoudsupdate voor deze manager toe te voegen.
+* ***orde - Lang* - &#x200B;** Orde voor ContentSync om deze manager uit te voeren. Dit aantal zou hoger dan alle andere managers zoals 100 moeten worden geplaatst. Deze moet worden uitgevoerd na traditionele inhoudshandlers.
 
 ```xml
 {
@@ -89,9 +89,9 @@ Deze handler moet worden toegevoegd aan elke AEM ContentSync Config voor Apps.
 De manager zou op AEM App Shell ContentSync Config (knoop met pge-type=app-instance) moeten worden gebruikt
 
 * ***type - Koord - mobiel ContentPackageslisting***
-* ***weg **-**Koord*** - Weg aan app shell (knoop met pge-type=app-instantie).
+* ***weg &#x200B;**-**Koord*** - Weg aan app shell (knoop met pge-type=app-instantie).
 * ***targetRootDirectory - Koord*** - de prefix om aan wegen als doelwortel voor inhoudsupdate voor deze manager toe te voegen.
-* ***orde - Lang* - **Orde voor ContentSync om deze manager uit te voeren. Dit aantal zou hoger dan alle andere managers zoals 100 moeten worden geplaatst. Deze moet worden uitgevoerd na traditionele inhoudshandlers.
+* ***orde - Lang* - &#x200B;** Orde voor ContentSync om deze manager uit te voeren. Dit aantal zou hoger dan alle andere managers zoals 100 moeten worden geplaatst. Deze moet worden uitgevoerd na traditionele inhoudshandlers.
 
 >[!NOTE]
 >
@@ -123,8 +123,8 @@ De manager zou op AEM App Shell ContentSync Config (knoop met pge-type=app-insta
 
 Deze manager zou op een AEM moeten worden gebruikt App Shell ContentSync config (knoop met pge-type= [ app-instantie ]).
 
-* ** *type - Koord* - **widgetconfig
-* ***weg **-**Koord*** - Weg aan om het even welke app shell kindknoop (knoop met pge-type= [ app-instantie ]).
+* **&#x200B; *type - Koord* - &#x200B;** widgetconfig
+* ***weg &#x200B;**-**Koord*** - Weg aan om het even welke app shell kindknoop (knoop met pge-type= [ app-instantie ]).
 * ***targetRootDirectory - Koord*** - de prefix om aan wegen als doelwortel voor inhoudsupdate voor deze manager toe te voegen.
 * ***targetIconDirectory - Koord*** - de folder om de pictogrammen voor app te plaatsen
 
@@ -165,7 +165,7 @@ AEM eigenschappen zijn de eigenschappen met naamruimte &quot;cq&quot;, &quot;sli
 
 * ***type - Koord*** - app-activa
 
-* ***weg **-**Koord*** - weg aan een plaats onder een toepassingsinstantie waar app de activa worden opgeslagen
+* ***weg &#x200B;**-**Koord*** - weg aan een plaats onder een toepassingsinstantie waar app de activa worden opgeslagen
 
 **mobileappoffers** Een nieuwe manager van de inhoudssynchronisatie is geïntroduceerd voor het gebruiksgeval van Personalization om gerichte inhoud terug te geven. De handler &#39;mobileappoffers&#39; weet hoe de gekoppelde doelaanbiedingen die door de auteur van de inhoud zijn gemaakt, moeten worden weergegeven. De handler mobileappoffers breidt de handler voor abstracte pagina&#39;s bijwerken uit, zodat veel eigenschappen vergelijkbaar zijn. De details van de handler mobileappoffers hebben de volgende eigenschappen.
 
@@ -178,7 +178,7 @@ De handler mobileappsoffers breidt de handler mobileappspages uit en voegt de vo
 
 **mobileappconfig** De mobileappconfig manager van de inhoudssynchronisatie verstrekt een manier om JSON- gegevens in MobileAppsConfig.json te injecteren. Als ontwikkelaars van een providerklasse een provider-klasse willen registreren, voegen zij hun MobileAppsInfoProvider-klasse toe aan de lijst met providers. De handler doorloopt de lijst met MobileAppsInfoProviders en stelt de provider in staat gegevens te injecteren in het resulterende JSON-bestand. De lijst met eigenschappen die door deze handler worden ondersteund, is:
 
-* ***weg **-**Koord*** - de weg aan een knoop van de toepassingsinstantie met pge-type=app-instance of RT die /libs/mobileapps/core/components/instance uitbreidt
+* ***weg &#x200B;**-**Koord*** - de weg aan een knoop van de toepassingsinstantie met pge-type=app-instance of RT die /libs/mobileapps/core/components/instance uitbreidt
 * ***leveranciers - Koord*** `[]` - de lijst van volledig - gekwalificeerde MobileAppsInfoProviders
 * ***targetRootDirectory - Koord*** - de folder waar te om het MobileAppsConfig.json- dossier te schrijven aan.
 * **fileName - Koord** - facultatieve naam van het dossier om JSON aan te schrijven, gebreken aan MobileAppsConfig.json

@@ -29,7 +29,7 @@ App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het proje
 
 ## Architectuur {#architecture}
 
-Voor een gedetailleerde beschrijving, zie de [ ](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sectie PageModelManager van het document van de SPA Vervaging.
+Voor een gedetailleerde beschrijving, zie de [&#128279;](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sectie PageModelManager van het document van de SPA Vervaging.
 
 ## ModelRouter {#modelrouter}
 
@@ -41,7 +41,7 @@ Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zo
 
 >[!NOTE]
 >
->Het {](https://github.com/adobe/aem-sample-we-retail-journal) steekproefReageer project van het Dagboek van 0} Wij.Retail illustreert de geautomatiseerde benadering terwijl het project van de Angular handboek illustreert. [ Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
+>Het {[&#128279;](https://github.com/adobe/aem-sample-we-retail-journal) steekproefReageer project van het Dagboek van 0} Wij.Retail illustreert de geautomatiseerde benadering terwijl het project van de Angular handboek illustreert.  Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
 
 >[!CAUTION]
 >

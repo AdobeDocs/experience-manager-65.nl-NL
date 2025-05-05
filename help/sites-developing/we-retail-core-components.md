@@ -46,7 +46,7 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
    ![ chlimage_1-164 ](assets/chlimage_1-164.png)
 
-1. Ga terug naar de componentconsole. Filter voor de groep **We.Retail** en selecteer de **3} component van de Tekst {.**
+1. Ga terug naar de componentconsole. Filter voor de groep **We.Retail** en selecteer de **3&rbrace; component van de Tekst &lbrace;.**
 1. Zie dat het **Type van Middel** aan een component zoals verwacht onder `/apps/weretail` maar het **Type van Super van het Middel** wijst terug naar de kerncomponent `/apps/core/wcm/components/text/v1/text`.
 
    ![ chlimage_1-165 ](assets/chlimage_1-165.png)

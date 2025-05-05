@@ -123,9 +123,9 @@ U kunt de interne firewall vormen om bepaalde componenten van AEM Forms (bijvoor
 
 Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iedereen. Alleen-lezen toegang is ingeschakeld voor alle elementen. Het is vereist anonieme toegang toe te laten. Als u de formulierweergave wilt beperken en alleen voor geverifieerde gebruikers toegang wilt geven, gebruikt u een algemene groep om alleen geverifieerde gebruikers alleen-lezentoegang te geven tot de elementen die beschikbaar zijn op de publicatieknooppunten. De volgende locaties/mappen bevatten formulierelementen die verharding vereisen (alleen-lezen toegang voor geverifieerde gebruikers):
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/&ast;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&ast;
 
 ## Formuliergegevens veilig verwerken  {#securely-handle-forms-data}
 

@@ -95,14 +95,14 @@ U kunt AEM gebruikersprofiel vormen gebruikend de Configuratie van de Verbinding
 
 >[!NOTE]
 >
-Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
+>Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
 
 Alle configuraties van de cloudservice in AEM worden geconsolideerd in de map `/conf` in AEM opslagplaats. Standaard bevat de map `conf` de map `global` waarin u cloudserviceconfiguraties kunt maken. U moet deze optie echter handmatig inschakelen voor cloudconfiguraties. U kunt ook extra mappen maken in `conf` om configuraties voor cloudservices te maken en in te delen.
 
 De map configureren voor configuraties van cloudservices:
 
 1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]** .
-   * Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+   * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer in **[!UICONTROL Configuration Browser]** de map `global` en selecteer **[!UICONTROL Properties]** .
@@ -167,7 +167,7 @@ Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te
 
 ## Webservices configureren SOAP {#configure-soap-web-services}
 
-Op SOAP gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) ](https://www.w3.org/TR/wsdl). [ Als u op SOAP gebaseerde webservice wilt configureren in AEM cloudservices, moet u de WSDL-URL voor de webservice hebben en het volgende doen:
+Op SOAP gebaseerde Webdiensten worden beschreven gebruikend {de specificaties van de Beschrijving van de Diensten van het Web van 0} van de Taal (WSDL) [&#128279;](https://www.w3.org/TR/wsdl).  Als u op SOAP gebaseerde webservice wilt configureren in AEM cloudservices, moet u de WSDL-URL voor de webservice hebben en het volgende doen:
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -193,8 +193,8 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 
 >[!NOTE]
 >
-Het gegevensmodel van de vorm steunt [ OData versie 4 ](https://www.odata.org/documentation/).
-Voor geleidelijke gids om Dynamiek 365 van Microsoft, online of op-gebouw te vormen, zie {de Configuratie van de Dynamica OData van 0} Microsoft ](/help/forms/using/ms-dynamics-odata-configuration.md).[
+>Het gegevensmodel van de vorm steunt [ OData versie 4 ](https://www.odata.org/documentation/).
+>Voor geleidelijke gids om Dynamiek 365 van Microsoft, online of op-gebouw te vormen, zie {de Configuratie van de Dynamica OData van 0} Microsoft [&#128279;](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -208,7 +208,7 @@ Voor geleidelijke gids om Dynamiek 365 van Microsoft, online of op-gebouw te vor
 
    >[!NOTE]
    >
-   Selecteer OAuth 2.0 authentificatietype om met de diensten van de Dynamiek van Microsoft te verbinden gebruikend eindpunt OData als de de dienstwortel.
+   >Selecteer OAuth 2.0 authentificatietype om met de diensten van de Dynamiek van Microsoft te verbinden gebruikend eindpunt OData als de de dienstwortel.
 
 1. Selecteer **creeer** om de wolkenconfiguratie voor de dienst te creëren OData.
 

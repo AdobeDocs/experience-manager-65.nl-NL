@@ -60,8 +60,8 @@ Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
    >Wanneer u een volmacht gebruikt, worden de volgende configuratieveranderingen vereist:
    >
    >* Toegang: *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * De configuratie voor het filter Apache Sling Reference bewerken
-   * Voeg in de sectie Hosts toestaan de vermelding voor de proxyserver toe
+   >* De configuratie voor het filter Apache Sling Reference bewerken
+   >* Voeg in de sectie Hosts toestaan de vermelding voor de proxyserver toe
 
 1. Compressie inschakelen.
 

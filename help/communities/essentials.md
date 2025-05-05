@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Componenten, functies en essentiële functies  {#component-function-and-feature-essentials}
 
-De eigenschappen van Adobe Experience Manager (AEM) van Gemeenschappen vereisen plaatsbezoekers om leden en login aan de [ communautaire plaats ](overview.md#communitiessites) te worden alvorens inhoud te kunnen posten. Aldus, {de malplaatjes van de 0} communautaire plaats ](sites.md), waarvan een communautaire plaats [ ](sites-console.md) wordt gecreeerd, worden ontworpen om een login eigenschap en gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.[
+De eigenschappen van Adobe Experience Manager (AEM) van Gemeenschappen vereisen plaatsbezoekers om leden en login aan de [ communautaire plaats ](overview.md#communitiessites) te worden alvorens inhoud te kunnen posten. Aldus, {de malplaatjes van de 0} communautaire plaats [&#128279;](sites.md), waarvan een communautaire plaats [&#128279;](sites-console.md) wordt gecreeerd, worden ontworpen om een login eigenschap en gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.
 
 Een communautaire plaats steunt leden die communautaire groepen creëren wanneer de [ functie van communautaire groepen ](functions.md#groups-function) in het geselecteerde malplaatje van de communautaire plaats inbegrepen is.
 

@@ -22,7 +22,7 @@ Dit artikel bespreekt strategieën en beste praktijken die u kunt uitvoeren om k
 
 ## Cacheinstellingen {#cache-settings}
 
-U kunt de caching strategie voor AEM Forms vormen en controleren gebruikend de **component van de Configuraties van 0} Mobiele Forms in de Console van de Configuratie van het AEM Web bij:**
+U kunt de caching strategie voor AEM Forms vormen en controleren gebruikend de **component van de Configuraties van 0&rbrace; Mobiele Forms in de Console van de Configuratie van het AEM Web bij:**
 
 * (AEM Forms op OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms op JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -171,5 +171,5 @@ Om de prestaties te verbeteren, kunt u de antivirussoftware zo instellen dat de 
 >
 >* Als u een verschillende plaats voor GDS en tijdelijke folder gebruikt, open AdminUI bij `https://'[server]:[port]'/adminui`, navigeer aan **Huis > Montages > de Montages van het Systeem van de Kern > de Configuraties van de Kern** om de plaats in gebruik te bevestigen.
 >
-* Als de AEM Forms-server traag werkt, zelfs nadat de voorgestelde mappen zijn uitgesloten, sluit u ook het uitvoerbare bestand van Java™ (java.exe) uit.
+>* Als de AEM Forms-server traag werkt, zelfs nadat de voorgestelde mappen zijn uitgesloten, sluit u ook het uitvoerbare bestand van Java™ (java.exe) uit.
 >

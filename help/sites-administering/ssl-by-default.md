@@ -236,7 +236,7 @@ U kunt de server een certificaatketen sturen door de parameter certificateFile a
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Zodra u het bevel hebt uitgevoerd, verifieer dat alle certificaten het aan keystore maakten. Controleer de **1} ingangen van het Toetsenarchief {van:
+Zodra u het bevel hebt uitgevoerd, verifieer dat alle certificaten het aan keystore maakten. Controleer de **1&rbrace; ingangen van het Toetsenarchief &lbrace;van:
 [ http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)**
 
 ### Een TLS 1.3-verbinding inschakelen {#enabling-tls-connection}

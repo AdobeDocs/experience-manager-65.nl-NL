@@ -41,7 +41,7 @@ Als u MySQL als uw AEM formulierdatabase gebruikt, kan de beheerconsole geen ond
 1. Typ in het vak Naam een naam voor de categorie en typ in het vak Beschrijving een beschrijving van de categorie.
 1. Klik toevoegen. De categorie wordt getoond op de pagina van het Beheer van de Categorie.
 
-   ***nota **: U kunt slechts tot vijf niveaus van hiërarchie toevoegen wanneer het creëren van categorieën.*
+   ***nota &#x200B;**: U kunt slechts tot vijf niveaus van hiërarchie toevoegen wanneer het creëren van categorieën.*
 
 ## Een categorie bewerken {#edit-a-category}
 

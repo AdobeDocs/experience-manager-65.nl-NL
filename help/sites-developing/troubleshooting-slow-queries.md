@@ -24,7 +24,7 @@ Er zijn drie belangrijke classificaties van langzame vragen in AEM, die door str
 
 1. **index-minder vragen**
 
-   * De vragen die **** niet oplossen aan een index en de inhoud van JCR doorlopen om resultaten te verzamelen
+   * De vragen die **&#x200B;**&#x200B;niet oplossen aan een index en de inhoud van JCR doorlopen om resultaten te verzamelen
 
 1. **Poortelijk beperkte (of scoped) vragen**
 
@@ -48,7 +48,7 @@ In AEM 6.3, door gebrek, wanneer een traversal van 100.000 wordt bereikt, ontbre
 
 #### Tijdens de ontwikkeling {#during-development}
 
-Verklaar **alle** vragen en zorg ervoor dat hun vraagplannen niet **bevatten/&amp;ast; traverse** verklaring in hen. Voorbeeld dat queryplan doorloopt:
+Verklaar **alle** vragen en zorg ervoor dat hun vraagplannen niet **bevatten/&ast; traverse** verklaring in hen. Voorbeeld dat queryplan doorloopt:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -59,7 +59,7 @@ Verklaar **alle** vragen en zorg ervoor dat hun vraagplannen niet **bevatten/&am
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Dit bericht wordt slechts geregistreerd als geen index beschikbaar is, en als de vraag potentieel vele knopen oversteekt. De berichten worden niet geregistreerd als een index beschikbaar is, maar het bedrag aan het oversteken is klein, en zo snel.
 
-* Bezoek de AEM ](/help/sites-administering/operations-dashboard.md#query-performance) de verrichtingenconsole van de Prestaties van de Vraag 0} {en [ verklaar ](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen die traversal of geen verklaringen van de indexvraag zoeken.[
+* Bezoek de AEM [&#128279;](/help/sites-administering/operations-dashboard.md#query-performance) de verrichtingenconsole van de Prestaties van de Vraag 0&rbrace; &lbrace;en [ verklaar ](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen die traversal of geen verklaringen van de indexvraag zoeken.
 
 ### Slecht beperkte query&#39;s detecteren {#detecting-poorly-restricted-queries}
 
@@ -132,7 +132,7 @@ Een nuttige manier om te identificeren als de index van Lucene vele resultaten t
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* Bezoek de AEM ](/help/sites-administering/operations-dashboard.md#query-performance) verrichtingenconsole van de Prestaties van de Vraag 0} {en [ verklaar ](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen zoekend vraagplannen die vraagbezitsbeperkingen aan de regels van het indexbezit niet oplossen.[
+* Bezoek de AEM [&#128279;](/help/sites-administering/operations-dashboard.md#query-performance) verrichtingenconsole van de Prestaties van de Vraag 0&rbrace; &lbrace;en [ verklaar ](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen zoekend vraagplannen die vraagbezitsbeperkingen aan de regels van het indexbezit niet oplossen.
 
 ### Detecteren van query&#39;s voor grote resultaatsets {#detecting-large-result-set-queries}
 

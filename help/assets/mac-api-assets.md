@@ -92,7 +92,7 @@ De [!DNL Assets] HTTP API bevat de volgende functies:
 * [ wint een omslaglijst ](#retrieve-a-folder-listing) terug.
 * [ creeer een omslag ](#create-a-folder).
 * [ creeer een activa ](#create-an-asset).
-* [ de activa binaire van de Update {](#update-asset-binary).
+* [ de activa binaire van de Update &lbrace;](#update-asset-binary).
 * [ de activameta-gegevens van de Update ](#update-asset-metadata).
 * [ creeer een activa vertoning ](#create-an-asset-rendition).
 * [ werk een activavertoning ](#update-an-asset-rendition) bij.

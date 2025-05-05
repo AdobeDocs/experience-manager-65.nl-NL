@@ -45,6 +45,7 @@ Een campagne is een inzameling van individuele **Ervaringen**.
 De geconcentreerde inhoud vormt de diverse ervaringen, die aan de bezoeker bij **Touchpoints** worden voorgesteld. Er zijn verschillende soorten ervaring beschikbaar:
 
    * **Teasers**
+
      [ de Pagina&#39;s/de Alinea&#39;s van het Taser ](#teasers) worden gebruikt om specifieke bezoekers **Segmenten** aan inhoud te sturen die op hun belangen wordt geconcentreerd.
 
      Taserpagina&#39;s kunnen:

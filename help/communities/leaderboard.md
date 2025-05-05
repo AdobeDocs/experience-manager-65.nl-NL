@@ -50,7 +50,7 @@ Zie [ het Scoren en de Hoofdzaak van Badges ](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie </a> de Eigenschap van 0} Leaderboard<a href="enabling-leaderboard.md"></td>
+   <td>Zie </a> de Eigenschap van 0&rbrace; Leaderboard<a href="enabling-leaderboard.md"></td>
   </tr>
  </tbody>
 </table>

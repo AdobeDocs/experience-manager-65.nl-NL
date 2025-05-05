@@ -192,7 +192,7 @@ Assets heeft bestaande eigenschapswaarden die kunnen worden weergegeven in de al
       >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
    1. Selecteer de vorm en klik het pictogram van de Eigenschappen van de Mening ![ e_reviewmode_properties_n ](assets/e_reviewmode_properties_n.png) dat in de toolbar verschijnt.
-   1. Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het {](assets/aem6forms_eye_viewon.png) oogpictogram 0} aem6forms_eye_viewon op het hogere recht, en klik dan Eigenschappen in de lijst onder het.![
+   1. Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het {![&#128279;](assets/aem6forms_eye_viewon.png) oogpictogram 0} aem6forms_eye_viewon op het hogere recht, en klik dan Eigenschappen in de lijst onder het.
 
 1. De bezitspagina die opent toont een schema dat slechts die meta-gegevenseigenschappen bevat die één of andere waarde houden.
 

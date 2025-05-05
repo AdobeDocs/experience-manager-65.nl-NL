@@ -28,7 +28,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Titel**
 
-  De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld, de **het tablijst van Websites** en de **3} kaart/lijstmeningen van Plaatsen {.**
+  De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld, de **het tablijst van Websites** en de **3&rbrace; kaart/lijstmeningen van Plaatsen &lbrace;.**
 
   Dit is een verplicht veld.
 

@@ -295,7 +295,7 @@ U kunt OAuth configureren voor meerdere e-mailproviders, zoals hieronder wordt b
 Eerst, vorm de Dienst van de Post:
 
 1. Open de AEM-webconsole op `http://serveraddress:serverport/system/console/configMgr`
-1. Zoek, dan klik de **Dienst van de Post van 0} Dag CQ {**
+1. Zoek, dan klik de **Dienst van de Post van 0&rbrace; Dag CQ &lbrace;**
 1. Voeg de volgende instellingen toe:
    * SMTP-serverhostnaam: `smtp.gmail.com`
    * SMTP-serverpoort: `25` of `587` , afhankelijk van de vereisten
@@ -306,7 +306,7 @@ Daarna, vorm uw leverancier SMTP OAuth door de hieronder procedure te volgen:
 
 >[!WARNING]
 >
->Als, na de voltooiing van deze configuratie, u ** van de waarden in de configuratie OSGi **CQ van de Aannemer SMTP OAuth2** ooit verandert, dan moet u opnieuw na deze stappen opnieuw machtigen.
+>Als, na de voltooiing van deze configuratie, u **&#x200B; van de waarden in de configuratie OSGi &#x200B;** CQ van de Aannemer SMTP OAuth2** ooit verandert, dan moet u opnieuw na deze stappen opnieuw machtigen.
 >
 >Als deze niet worden uitgevoerd, zal het toegangstoken dat bij `/conf/global/settings/mailer/oauth` wordt opgeslagen ongeldig zijn en de verbinding OAuth2 aan de server SMTP zal ontbreken.
 
@@ -365,7 +365,7 @@ Bevestig ten slotte de configuratie door:
    * `Mail.Send`
    * `openid`
    * `offline_access`
-1. Ga naar **Authentificatie** - **voeg een platform** toe - **Web**, en in de **Redirect Urls** sectie, voeg volgende URL voor het opnieuw richten van de code OAuth toe, dan druk **** vormt:
+1. Ga naar **Authentificatie** - **voeg een platform** toe - **Web**, en in de **Redirect Urls** sectie, voeg volgende URL voor het opnieuw richten van de code OAuth toe, dan druk **&#x200B;**&#x200B;vormt:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Het bovenstaande voor elke publicatie-instantie herhalen
 1. Configureer de instellingen volgens uw vereisten
@@ -386,12 +386,12 @@ Vervolgens integreert u uw OAuth2-instellingen met AEM:
 
 >[!WARNING]
 >
->Als, na de voltooiing van deze configuratie, u ** van de waarden in de configuratie OSGi **CQ van de Aannemer SMTP OAuth2** ooit verandert, dan moet u opnieuw na deze stappen opnieuw machtigen.
+>Als, na de voltooiing van deze configuratie, u **&#x200B; van de waarden in de configuratie OSGi &#x200B;** CQ van de Aannemer SMTP OAuth2** ooit verandert, dan moet u opnieuw na deze stappen opnieuw machtigen.
 >
 >Als deze niet worden uitgevoerd, zal het toegangstoken dat bij `/conf/global/settings/mailer/oauth` wordt opgeslagen ongeldig zijn en de verbinding OAuth2 aan de server SMTP zal ontbreken.
 
 1. Ga naar de webconsole van uw lokale instantie door naar `http://serveraddress:serverport/system/console/configMgr` te bladeren
-1. Zoek en klik {de Dienst van de Post van 0} Dag CQ ****
+1. Zoek en klik {de Dienst van de Post van 0} Dag CQ **&#x200B;**
 1. Voeg de volgende instellingen toe:
    * SMTP-serverhostnaam: `smtp.office365.com`
    * SMTP-gebruiker: uw gebruikersnaam in e-mailindeling
@@ -415,7 +415,7 @@ Vervolgens integreert u uw OAuth2-instellingen met AEM:
 
 Zodra gevormd, zouden de montages als dit moeten kijken:
 
-![ de voltooide configuratie van de Wijzer SMTP OAuth2 van CQ {](assets/oauth-outlook-smptconfig.png)
+![ de voltooide configuratie van de Wijzer SMTP OAuth2 van CQ &lbrace;](assets/oauth-outlook-smptconfig.png)
 
 Activeer nu de OAuth-componenten. U kunt dit doen door:
 

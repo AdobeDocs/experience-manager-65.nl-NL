@@ -283,4 +283,4 @@ Voor verdere informatie over hoe te om zich te organiseren om SPA voor AEM te on
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt, zie het artikel [ Dynamisch Model aan de Afbeelding van de Component voor SPA ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1} artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)
+Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1&rbrace; artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)

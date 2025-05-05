@@ -53,7 +53,7 @@ U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te 
    ![ screenshot-2018-2-5pattern-detector ](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **via een reactieve die tekst of regelmatige interface JSON** wordt gebaseerd
-* **Via een reactieve JSON-lijninterface, **dat een afzonderlijk JSON-document in elke regel genereert.
+* **Via een reactieve JSON-lijninterface, &#x200B;** dat een afzonderlijk JSON-document in elke regel genereert.
 
 Beide methoden worden hieronder beschreven:
 

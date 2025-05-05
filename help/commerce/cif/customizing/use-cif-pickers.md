@@ -53,7 +53,7 @@ Ook worden standaardeigenschappen van dialoogvelden zoals `name` , `fieldLabel` 
 >
 >Vanaf CIF Core Components versie 2.0.0 is de ondersteuning voor `id` verwijderd en vervangen door `uid` . Adobe raadt u aan `sku` of `slug` als product-id te gebruiken. Adobe blijft `id` alleen ondersteunen voor projecten met CIF Core Components versie 1.x.
 
-Een volledig werkend voorbeeld van `cifproductfield` kan in het [ 2} project van de Componenten van de Kern van CIF {worden gevonden. ](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) Zie ook [ het Aanpassen Dialogen ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) van de documentatie van de Componenten van de Kern van AEM.
+Een volledig werkend voorbeeld van `cifproductfield` kan in het [ 2&rbrace; project van de Componenten van de Kern van CIF &lbrace;worden gevonden. ](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) Zie ook [ het Aanpassen Dialogen ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) van de documentatie van de Componenten van de Kern van AEM.
 
 ## Categoriekiezer {#category-picker}
 
@@ -83,4 +83,4 @@ Ook worden standaardeigenschappen van dialoogvelden zoals `name` , `fieldLabel` 
 >
 >Vanaf CIF Core Components versie 2.0.0 is de ondersteuning voor `id` verwijderd en vervangen door `uid` . Adobe raadt u aan `uid` of `urlPath` als categorie-id te gebruiken. Adobe blijft `id` &amp; `idAndUrlPath` alleen ondersteunen voor projecten met CIF Core Components versie 1.x.
 
-Een volledig werkend voorbeeld van `cifcategoryfield` kan in het [ 2} project van de Componenten van de Kern van CIF {worden gevonden.](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml)
+Een volledig werkend voorbeeld van `cifcategoryfield` kan in het [ 2&rbrace; project van de Componenten van de Kern van CIF &lbrace;worden gevonden.](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml)

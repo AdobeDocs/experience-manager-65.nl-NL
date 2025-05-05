@@ -36,7 +36,7 @@ Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
    Om uw vorm in te openen geef wijze, in de vormenmanager uit, selecteer uw vorm en selecteer **Open**.
 1. Op geef wijze uit, selecteer een component, uitgezocht ![ gebied-niveau ](assets/field-level.png) > **Aangepaste Container van de Vorm**, en selecteer dan ![ cmp ](assets/cmppr.png).
 1. In sidebar, klik **Meta-gegevens**.
-1. In de sectie van Meta-gegevens, voegt de klik **** toe.
+1. In de sectie van Meta-gegevens, voegt de klik **&#x200B;**&#x200B;toe.
 1. Voeg scripts toe in het veld Waarde van het tabblad Metagegevens. Met de scripts die u toevoegt, worden gegevens verzameld uit elementen op het formulier en worden waarden berekend die worden doorgegeven aan de metagegevens.
 
    Bijvoorbeeld, **waar** wordt het programma geopend in de meta-gegevens als de ingegane leeftijd groter is dan 21, en **vals** wordt geregistreerd als het minder dan 21 is. U voert het volgende script in op het tabblad Metagegevens:

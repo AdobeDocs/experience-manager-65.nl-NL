@@ -107,7 +107,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 
 1. Ga naar **Looppas > geef Configuraties** uit
 1. Beweeg **+** en selecteer **Ver JSR45**
-1. In de configuratiedialoog, vormt de uitgezochte **** naast **Server van de Toepassing** en vormt een Generische server
+1. In de configuratiedialoog, vormt de uitgezochte **&#x200B;**&#x200B;naast **Server van de Toepassing** en vormt een Generische server
 1. Stel de startpagina in op een geschikte URL als u een browser wilt openen wanneer u de foutopsporing start
 1. Verwijder alle **vóór lancering** taken als u vlt autosync gebruikt, of vorm aangewezen Gegraveerde taken als u niet
 1. Op de **Startup/Verbinding** ruit, pas de haven, indien nodig aan

@@ -41,7 +41,7 @@ Als u een component `Ideation` in de ontwerpmodus aan een pagina wilt toevoegen,
 
 En sleep het naar zijn plaats op een pagina waar het idee zou moeten verschijnen.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/ideation.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Ideation` component verschijnt:
 
@@ -235,7 +235,7 @@ Als het idee eenmaal is gepubliceerd, kunnen andere leden zich aanmelden, het id
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](/help/communities/ideation.md) pagina van de Hoofdzaak van de Ideatie [ voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#128279;](/help/communities/ideation.md) pagina van de Hoofdzaak van de Ideatie  voor ontwikkelaars worden gevonden.
 
 Voor moderatie van geposte onderwerpen en commentaren, zie [ het Modereren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
 

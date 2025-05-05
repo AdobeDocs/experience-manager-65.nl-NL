@@ -116,7 +116,7 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 ## Structuurniveaus (geneste fragmenten) {#levels-of-structure-nested-fragments}
 
-Voor inhoud die het **gegevenstype modelleren van de Verwijzing van het 0} Fragment laat u veelvoudige niveaus van structuur en verhoudingen tot stand brengen.**
+Voor inhoud die het **gegevenstype modelleren van de Verwijzing van het 0&rbrace; Fragment laat u veelvoudige niveaus van structuur en verhoudingen tot stand brengen.**
 
 Met deze verwijzing kunt u *diverse Modellen van het Fragment van de Inhoud* verbinden om onderlinge verhoudingen te vertegenwoordigen. Hierdoor kan de toepassing zonder kop de verbindingen volgen en zo nodig toegang krijgen tot de inhoud.
 

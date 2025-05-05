@@ -313,7 +313,7 @@ De basisvorm van een kopie van het origineel is:
 Wanneer u een live kopie in AEM maakt, kunt u de live kopie van de vertakking zien en door deze vertakking navigeren. Ook kunt u de normale AEM gebruiken voor de live kopie van de vertakking. Dit betekent dat u (of een proces) bronnen (pagina&#39;s, alinea&#39;s of beide) binnen de actieve kopieervertakking kunt maken. Bijvoorbeeld `myCanadaOnlyProduct` .
 
 * Dergelijke bronnen hebben geen live relatie met de bron-/blauwdrukpagina&#39;s en zijn niet gesynchroniseerd.
-* De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in zowel de vertakking van de bron/blauwdruk als de vertakking van de actieve kopie. Voor dergelijke situaties, zie {de Conflicten van de Uitvoer MSM ](/help/sites-administering/msm-rollout-conflicts.md) voor meer informatie.[
+* De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in zowel de vertakking van de bron/blauwdruk als de vertakking van de actieve kopie. Voor dergelijke situaties, zie &lbrace;de Conflicten van de Uitvoer MSM [&#128279;](/help/sites-administering/msm-rollout-conflicts.md) voor meer informatie.
 
 ![ Conflicten van de Output ](assets/chlimage_1-368.png)
 

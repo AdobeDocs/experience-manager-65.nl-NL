@@ -46,7 +46,7 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie </a> de Eigenschap van 0} Ideatie<a href="ideation-feature.md"></td>
+   <td>Zie </a> de Eigenschap van 0&rbrace; Ideatie<a href="ideation-feature.md"></td>
   </tr>
  </tbody>
 </table>

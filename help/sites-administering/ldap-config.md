@@ -244,7 +244,7 @@ Zelfondertekende certificaten kunnen worden gebruikt bij het configureren van AE
 
 1. Zorg ervoor dat u een SSL-bibliotheek hebt geïnstalleerd en werkt. Bij deze procedure wordt OpenSSL als voorbeeld gebruikt.
 
-1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Deze configuratie kan worden gedaan door het standaard **openssl.cnf **configuratiedossier te kopiëren en het aan te passen. Op UNIX®-systemen staat deze op `/usr/lib/ssl/openssl.cnf`
+1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Deze configuratie kan worden gedaan door het standaard **openssl.cnf &#x200B;** configuratiedossier te kopiëren en het aan te passen. Op UNIX®-systemen staat deze op `/usr/lib/ssl/openssl.cnf`
 
 1. Ga aan het creëren van de wortelsleutel van CA door het hieronder bevel in een terminal in werking te stellen:
 
@@ -280,12 +280,12 @@ Om te toelaten zuivert registreren, moet u het volgende doen:
 
 * Logniveau: Foutopsporing
 * Logbestand logs/ldap.log
-* Berichtpatroon: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Berichtpatroon: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Logniveau: Foutopsporing
 * Logbestand: logs/external.log
-* Berichtpatroon: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Berichtpatroon: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Een woord over groepsverbinding {#a-word-on-group-affiliation}

@@ -41,7 +41,7 @@ Zie ook [ bed de Video of kijker van het Beeld van Dynamic Media op een Web-pagi
 >* Voorinstellingen voor afbeeldingen en viewervoorinstellingen moeten worden geactiveerd en gepubliceerd voor live levering.
 >
 
-Voor gedetailleerde informatie bij het publiceren van een reeks of activa, zie {de activa van Publish van 0} ](manage-assets.md).[
+Voor gedetailleerde informatie bij het publiceren van een reeks of activa, zie {de activa van Publish van 0} [&#128279;](manage-assets.md).
 
 ## HTTP/2 levering van Dynamic Media-middelen {#http-delivery-of-dynamic-media-assets}
 

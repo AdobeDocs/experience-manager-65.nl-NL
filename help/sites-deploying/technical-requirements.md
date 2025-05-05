@@ -376,7 +376,7 @@ Wanneer een IP-adres moet worden opgegeven, kunt u (indien nodig) kiezen uit het
 
 ### Vereisten voor AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media is standaard uitgeschakeld. Kijk hier om Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media) in te [schakelen.
+AEM Dynamic Media is standaard uitgeschakeld. Kijk hier om Dynamic Media[&#128279;](/help/assets/config-dynamic.md#enabling-dynamic-media) in te schakelen.
 
 Als Dynamic Media is ingeschakeld, zijn de volgende aanvullende technische vereisten van toepassing.
 

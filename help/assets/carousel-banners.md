@@ -298,6 +298,7 @@ Zie ook [ beeldkaarten ](/help/assets/image-maps.md) toevoegen.
    * Selecteer **[!UICONTROL Hyperlink]** .
 
       * Als u een Experience Manager Sites-klant bent, selecteert u het pictogram Sitekiezer (map) om naar een URL te navigeren.
+
         >[!NOTE]
         >
         >De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.

@@ -109,7 +109,7 @@ s.linkLeaveQueryString= false;
 
 ## Variabelegegevens verzenden met klikken op koppeling {#sending-variable-data-with-link-clicks}
 
-U kunt AEM configureren om gebeurtenis- en variabele gegevens naar Adobe Analytics te verzenden wanneer een gebruiker op een koppeling klikt. De **eigenschappen van de Configuratie van de 1} Verbinding het Volgen van de Configuratie** laten u toe om de gebeurtenissen en de variabelen van Adobe Analytics te specificeren om te volgen wanneer de verbinding klikt voorkomen.
+U kunt AEM configureren om gebeurtenis- en variabele gegevens naar Adobe Analytics te verzenden wanneer een gebruiker op een koppeling klikt. De **eigenschappen van de Configuratie van de 1&rbrace; Verbinding het Volgen van de Configuratie** laten u toe om de gebeurtenissen en de variabelen van Adobe Analytics te specificeren om te volgen wanneer de verbinding klikt voorkomen.
 
 De frameworktoewijzingen bepalen de gebeurtenis- en de veranderlijke waarden. U kunt Adobe Analytics-variabelen toewijzen aan de variabelen van de inhoudscomponenten die de gegevens opslaan die u wilt bijhouden wanneer op koppelingen wordt geklikt.
 
@@ -207,7 +207,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
 
 ### Externe koppelingstracering configureren {#configure-external-link-tracking}
 
-1. In uw kader, breid het **gebied van de Configuratie van de Verbinding 0} het volgen {uit.**
+1. In uw kader, breid het **gebied van de Configuratie van de Verbinding 0&rbrace; het volgen &lbrace;uit.**
 1. Deselecteer **Downloads van het Spoor**.
 
 1. Selecteer **Extern Spoor**.
@@ -228,7 +228,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
        eVar1,eVar2
    ```
 
-1. Op de pagina die met het kader wordt geassocieerd, voeg de component van de Tekst van de a **** toe. Binnen de **component van de Tekst**, voeg een hyperlink toe die aan het volgende adres richt:
+1. Op de pagina die met het kader wordt geassocieerd, voeg de component van de Tekst van de a **&#x200B;**&#x200B;toe. Binnen de **component van de Tekst**, voeg een hyperlink toe die aan het volgende adres richt:
 
    `https://search.yahoo.com/?p=this`
 
@@ -244,7 +244,7 @@ De aangeroepen oproep ziet er zo uit als u deze bekijkt met de Adobe Marketing C
 
 ### De URL-parameter opnemen {#include-the-url-parameter}
 
-1. In het kader, breid het **gebied van de Configuratie van de Verbinding van 0} het Volgen {uit.**
+1. In het kader, breid het **gebied van de Configuratie van de Verbinding van 0&rbrace; het Volgen &lbrace;uit.**
 1. Laat **Koord van de Vraag van het Verlof** toe.
 1. Laad de paginavoorvertoning opnieuw en klik op de koppeling.
 
@@ -264,7 +264,7 @@ Bij het bijhouden van ad-hockoppelingen kunt u downloadkoppelingen, externe kopp
 
 Als u ad-hockoppelingen wilt bijhouden, moet u:
 
-* [ associeer de pagina die de **2} component van de Tekst {met het kader ](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework) bevat.**
+* [ associeer de pagina die de **2&rbrace; component van de Tekst &lbrace;met het kader ](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework) bevat.**
 * [ vorm het kader van Adobe Analytics om ad-hoc verbinding het volgen ](#enabling-ad-hoc-link-tracking) toe te laten.
 * [ vorm Verbinding het Volgen voor een component van de Tekst ](#configuring-link-tracking-for-a-text-component).
 
@@ -315,11 +315,11 @@ Configureer uw Adobe Analytics-framework om het bijhouden van ad-hockoppelingen 
 Alvorens u ad hoc verbinding het volgen voor **componenten van de Tekst** kunt vormen zelf, moeten de volgende configuraties reeds uitgevoerd zijn:
 
 * Het [ kader van Adobe Analytics wordt gevormd om ad hoc verbinding het volgen ](#enabling-ad-hoc-link-tracking) toe te laten.
-* De [ pagina die de **2} component van de Tekst {bevat wordt geassocieerd met het kader ](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).**
+* De [ pagina die de **2&rbrace; component van de Tekst &lbrace;bevat wordt geassocieerd met het kader ](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).**
 
 Gebruik de volgende procedure om verbinding het volgen voor de component van de a **Tekst** te vormen:
 
-1. Open de pagina op geef wijze uit en geef de **** component van de Tekst uit.
+1. Open de pagina op geef wijze uit en geef de **&#x200B;**&#x200B;component van de Tekst uit.
 
 1. Selecteer de tekst die u als hypertekst wilt gebruiken en klik op de knop Hyperlink.
 

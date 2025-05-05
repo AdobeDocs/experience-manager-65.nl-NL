@@ -30,7 +30,7 @@ U kunt keytool uitvoeren met één opdracht die alle informatie bevat die nodig 
 
 1. In een bevelherinnering, navigeer aan *`[JAVA HOME]`*/bin en typ het volgende bevel om het certificaat en keystore tot stand te brengen:
 
-   *`, OU=`* de Naam van de Groep *`, O=`* Naam van het Bedrijf *`,L=`* Naam van de Stad *`, S=`* Staat *`, C=`* Code van het Land *`" -alias`* &quot;Cert LC&quot;*`-keypass``key`* _** sleutelwoord `-keystore`*storename* `.keystore``keytool -genkey -keyalg RSA -dname "CN=`**
+   *`, OU=`* de Naam van de Groep *`, O=`* Naam van het Bedrijf *`,L=`* Naam van de Stad *`, S=`* Staat *`, C=`* Code van het Land *`" -alias`* &quot;Cert LC&quot;*`-keypass` `key`* _ **&#x200B; sleutelwoord `-keystore`*storename* `.keystore` `keytool -genkey -keyalg RSA -dname "CN=`**
 
    >[!NOTE]
    >

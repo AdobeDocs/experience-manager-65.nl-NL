@@ -101,10 +101,10 @@ U kunt het volgende proberen om het probleem op te lossen:
 * Controleer ACLs op `/etc/cloudservices`. ACLs zou moeten zijn:
 
    * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/defaults`
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * allow; jcr:read; all; `rep:glob:`&amp;ast;`/public`
+   * allow; jcr:read; all; `rep:glob:`&ast;`/defaults/`&ast;
+   * allow; jcr:read; all; `rep:glob:`&ast;`/defaults`
+   * allow; jcr:read; all; `rep:glob:`&ast;`/public/`&ast;
+   * allow; jcr:read; all; `rep:glob:`&ast;`/public`
 
 Voor meer informatie over het beheren van ACLs, lees het [ Beleid van de Gebruiker en de pagina van de Veiligheid ](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -191,7 +191,7 @@ adobe.target.getOffer({
 
 ### De pagina van Doelstellingen &amp; van Montages toont niet de sectie van Rapporteringsbronnen {#the-goals-settings-page-does-not-show-the-reporting-sources-section}
 
-Deze kwestie is zeer waarschijnlijk een [ A4T Analytics Cloud 1} leveringskwestie van de Configuratie van de Configuratie.](/help/sites-administering/target-configuring.md)
+Deze kwestie is zeer waarschijnlijk een [ A4T Analytics Cloud 1&rbrace; leveringskwestie van de Configuratie van de Configuratie.](/help/sites-administering/target-configuring.md)
 
 #### Oplossing {#solution-7}
 
@@ -211,7 +211,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Als de reactie de lijn `a4tEnabled:false` bevat, de Zorg van de Klant van de Adobe [ ](https://helpx.adobe.com/contact.html) om uw rekening te krijgen die correct wordt voorzien.
+Als de reactie de lijn `a4tEnabled:false` bevat, de Zorg van de Klant van de Adobe [&#128279;](https://helpx.adobe.com/contact.html) om uw rekening te krijgen die correct wordt voorzien.
 
 ### Nuttige doel-API&#39;s {#helpful-target-apis}
 

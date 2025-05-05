@@ -63,7 +63,7 @@ Wat MSRP en Solr betreft:
 * Ingesloten Solr voor het AEM platform wordt niet gebruikt voor MSRP.
 * Als het gebruiken van verre Solr voor het AEM platform, kan het met MSRP worden gedeeld, maar zij zouden verschillende inzamelingen moeten gebruiken.
 * Solr kan voor standaardonderzoek of voor meertalige onderzoek (MLS) worden gevormd.
-* Voor configuratiedetails, zie ](msrp.md#solr-configuration) Configuratie 0} Solr voor MSRP.[
+* Voor configuratiedetails, zie [&#128279;](msrp.md#solr-configuration) Configuratie 0&rbrace; Solr voor MSRP.
 
 De het onderzoekseigenschappen van de douane zouden het [ UGC onderzoek API ](#ugc-search-api) moeten gebruiken.
 

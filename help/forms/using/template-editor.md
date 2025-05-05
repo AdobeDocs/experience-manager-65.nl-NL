@@ -37,7 +37,7 @@ U wilt bijvoorbeeld dat alle formulierauteurs bepaalde tekstvakken, navigatiekno
 
 ## Werken met sjablonen {#working-with-templates}
 
-U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan **Adobe Experience Manager > Hulpmiddelen > Malplaatjes** te navigeren. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen. AEM biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje ](/help/sites-developing/page-templates-editable.md).[
+U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan **Adobe Experience Manager > Hulpmiddelen > Malplaatjes** te navigeren. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen. AEM biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje [&#128279;](/help/sites-developing/page-templates-editable.md).
 
 Nadat u hebt opgegeven dat u een map wilt openen, verschijnt er een knop Maken waarmee u een sjabloon voor adaptieve formulieren kunt maken.
 
@@ -45,7 +45,7 @@ Nadat u hebt opgegeven dat u een map wilt openen, verschijnt er een knop Maken w
 
 Nadat u een map hebt gemaakt, opent u de map en voert u de volgende stappen uit om een sjabloon te maken:
 
-1. In de console van het Malplaatje, creeer **** binnen de omslag u hebt gecreeerd.
+1. In de console van het Malplaatje, creeer **&#x200B;**&#x200B;binnen de omslag u hebt gecreeerd.
 1. In de Keuze een sectie van het Type van Malplaatje, selecteer **Aangepast Malplaatje van de Vorm** en selecteer **daarna**.
 
 1. In de sectie van de Details van het Malplaatje, verstrek een Titel van het Malplaatje en selecteer **creeer**.
@@ -64,7 +64,7 @@ Bevat de volgende opties:
    * **Informatie van de Pagina**: Laat u informatie zoals publiceren/unpublish tijd, duimnagels, cliënt-zijbibliotheken, paginabeleid, en cliënt-zijbibliotheek van het paginaontwerp specificeren.
    * **Mededinger**: Laat u simuleren en het blik voor verschillende apparaten aanpassen.
    * **selecteur van de Laag:** laat u de laag veranderen.
-U kunt **laag van de Structuur 1} of** Aanvankelijke Inhoud **kiezen.** Met de structuurlaag kunt u de kop- en voettekst toevoegen en aanpassen. Met de eerste laag Inhoud kunt u de formulierinhoud aanpassen.
+U kunt **laag van de Structuur 1&rbrace; of** Aanvankelijke Inhoud **kiezen.** Met de structuurlaag kunt u de kop- en voettekst toevoegen en aanpassen. Met de eerste laag Inhoud kunt u de formulierinhoud aanpassen.
 
    * **Voorproef:** laat u voorproef hoe het malplaatje kijkt wanneer u het publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
 
@@ -190,10 +190,10 @@ Voer de volgende stappen uit om sjablonen weer te geven en te verbergen:
    >
    >URL van AEM Webconsole is https://&#39;[ server ]:[ haven ]&#39;/system/console/configMgr
 
-1. Zoek en open de **montages van de Configuratie 0} FormsManager:**
+1. Zoek en open de **montages van de Configuratie 0&rbrace; FormsManager:**
 
    * Om uit de doos adaptieve vormenmalplaatje te tonen of te verbergen, controleer of uncheck **omvat uit de doos AF en de optie van de Malplaatjes van de ADVERTENTIE**.
-   * Om uit de doos adaptieve vormmalplaatjes te tonen of te verbergen die in AEM 6.0 Forms of AEM 6.1 versies van Forms werden toegevoegd maar nu verouderd zijn, controleer of uncheck **omvat AEM 6.0 de Malplaatjes van AF** optie. Als deze optie wordt gecontroleerd, om van kracht te worden, vereist het **omvat uit doos AF en de 1} configuratie van de Malplaatjes van de ADVERTENTIE {worden toegelaten.**
+   * Om uit de doos adaptieve vormmalplaatjes te tonen of te verbergen die in AEM 6.0 Forms of AEM 6.1 versies van Forms werden toegevoegd maar nu verouderd zijn, controleer of uncheck **omvat AEM 6.0 de Malplaatjes van AF** optie. Als deze optie wordt gecontroleerd, om van kracht te worden, vereist het **omvat uit doos AF en de 1&rbrace; configuratie van de Malplaatjes van de ADVERTENTIE &lbrace;worden toegelaten.**
 
 1. Klik **sparen**. De weergaveopties voor de out van de vaksjablonen worden gewijzigd.
 

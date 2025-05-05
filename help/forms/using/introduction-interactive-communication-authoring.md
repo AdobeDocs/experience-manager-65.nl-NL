@@ -38,7 +38,7 @@ Wanneer u [ creeert of een bestaande Interactieve Mededeling ](../../forms/using
 
 ![ Sidebar ](assets/sidebar-comps-2.png)
 
-**A.** browser van het Kanaal **B.** browser van de Inhoud **C.** browser van Eigenschappen **D.** browser van Activa **E.** browser van Componenten 10} F.**browser van Gegevensbronnen - het Model van Gegevens** G.**Browser van Gegevensbronnen - HoofdInhoud**
+**A.** browser van het Kanaal **B.** browser van de Inhoud **C.** browser van Eigenschappen **D.** browser van Activa **E.** browser van Componenten 10&rbrace; F.**browser van Gegevensbronnen - het Model van Gegevens** G.**Browser van Gegevensbronnen - HoofdInhoud**
 
 <!-- Click to enlarge
 
@@ -64,7 +64,7 @@ Hiermee kunt u verschillende typen inhoud segmenteren, zoals lay-outfragmenten, 
 * **browser van Componenten**
 Bevat componenten die u kunt gebruiken om de afdruk- en webkanalen van een document samen te stellen. U kunt componenten aan de Interactieve Mededeling slepen om elementen toe te voegen, en toegevoegde element te vormen zoals aan de vereisten. In de volgende tabel worden de componenten beschreven die in de browser Components worden weergegeven voor afdrukken en webkanalen:
 
-| **Component** | **Kanaal van de Druk** | **Kanaal van 0} Web** | **Functionaliteit** |
+| **Component** | **Kanaal van de Druk** | **Kanaal van 0&rbrace; Web** | **Functionaliteit** |
 |---|---|---|---|
 | Diagram | ✓ | ✓ | Hiermee voegt u een grafiek toe die u in een interactieve communicatie kunt gebruiken voor de visuele weergave van tweedimensionale gegevens die zijn opgehaald uit een verzamelitem van een formuliergegevensmodel. |
 | Documentfragment | ✓ | ✓ | Hiermee kunt u een herbruikbare component, tekst, lijst of voorwaarde toevoegen aan een interactieve communicatie. De herbruikbare component die u toevoegt aan een interactieve communicatie kan gebaseerd zijn op een formuliergegevensmodel of geen formuliergegevensmodel. |
@@ -100,7 +100,7 @@ De belangrijkste punten wanneer het werken met interactieve communicatie compone
 
 Wanneer u een component selecteert, ziet u een werkbalk waarmee u ermee kunt werken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
-A.**vormt**: Wanneer u **** selecteert, zijn de componenteneigenschappen zichtbaar in sidebar.
+A.**vormt**: Wanneer u **&#x200B;**&#x200B;selecteert, zijn de componenteneigenschappen zichtbaar in sidebar.
 
 B. **geeft Regels** uit: Wanneer u uitgezocht geef Regels uit, verschijnt de Redacteur van de Regel waarin u regels voor de geselecteerde component kunt uitgeven en creëren. In de Regeleditor kunt u ook andere formulierobjecten (componenten) selecteren en regels voor die formulierobjecten bewerken/maken.
 

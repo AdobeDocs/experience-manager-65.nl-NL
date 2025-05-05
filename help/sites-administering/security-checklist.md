@@ -324,7 +324,7 @@ Om misbruik van DosS te helpen voorkomen, kunt u het volgende doen:
 >
 >Deze beperking moet alleen worden uitgevoerd op AEM omgevingen die geen Forms gebruiken.
 
-Omdat AEM geen out-of-the-box indexen voor `FormChooserServlet` verstrekt, kan het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, die gewoonlijk de AEM instantie aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het formulier **&amp;ast;.form.&amp;ast;** koord in vragen.
+Omdat AEM geen out-of-the-box indexen voor `FormChooserServlet` verstrekt, kan het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, die gewoonlijk de AEM instantie aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het formulier **&ast;.form.&ast;** koord in vragen.
 
 U kunt dit probleem verhelpen door de volgende stappen uit te voeren:
 

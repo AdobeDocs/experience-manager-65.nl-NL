@@ -30,7 +30,7 @@ Nadat u een filter creeert, kunt u het in de [ groepsconfiguratie gebruiken.](/h
 
 ## De Filter Java™-klasse {#the-filter-java-class}
 
-Een filter van de apparatengroep is een component OSGi die de {](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface 0} com.day.cq.wcm.mobile.api.device.DeviceGroupFilter uitvoert. [ Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
+Een filter van de apparatengroep is een component OSGi die de {[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface 0} com.day.cq.wcm.mobile.api.device.DeviceGroupFilter uitvoert.  Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
 
 De oplossing die in dit artikel wordt beschreven gebruikt Apache Felix Maven SCR Insteekmodule om de ontwikkeling van de component en de dienst te vergemakkelijken. Daarom gebruikt de voorbeeldJava™-klasse de `@Component` - en `@Service` -annotaties. De klasse heeft de volgende structuur:
 
@@ -94,7 +94,7 @@ De functie `matches` retourneert `true` als de mogelijkheden van het apparaat aa
 * De naam van de gebruikersagent
 * Een object Map dat de apparaatmogelijkheden bevat. De sleutels van de Kaart zijn de WURFL™ bezitsnamen en de waarden zijn de overeenkomstige waarden van het WURFL™ gegevensbestand.
 
-De {](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface 0} com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants bevat een ondergroep van de WURFL™ vermogensnamen op statische gebieden. [ Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
+De {[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface 0} com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants bevat een ondergroep van de WURFL™ vermogensnamen op statische gebieden.  Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
 
 In het volgende codevoorbeeld wordt bijvoorbeeld bepaald of het apparaat CSS ondersteunt:
 

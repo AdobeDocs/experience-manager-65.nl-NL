@@ -44,7 +44,7 @@ Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste pr
 
 ‡ De beste manier is om geen dubbele elementen in een set te hebben. De limiet is 20 duplicaten voor één element. Als u nog een duplicaat voor dat element toevoegt (binnen die set), geeft de aanvraag een fout of wordt het duplicaat genegeerd.
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/limitations.md).[
+Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitations.md).
 
 ## Snel starten: Afbeeldingssets {#quick-start-image-sets}
 
@@ -149,7 +149,7 @@ Wanneer u een Reeks van het Beeld creeert, beveelt de Adobe de volgende beste pr
 
 ‡ De beste manier is om geen dubbele elementen in een set te hebben. De limiet is 20 duplicaten voor één element. Als u nog een duplicaat voor dat element toevoegt (binnen die set), geeft de aanvraag een fout of wordt het duplicaat genegeerd.
 
-Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/limitations.md).[
+Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitations.md).
 
 **om een Reeks van het Beeld tot stand te brengen:**
 
@@ -248,6 +248,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
    * Als u elementen opnieuw wilt rangschikken, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, selecteert u de kolomkop.
    * Selecteer **[!UICONTROL Add Asset]** als u een element wilt toevoegen of een bestaand element wilt bijwerken. Navigeer naar een element, selecteer het en selecteer vervolgens **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
+
      >[!NOTE]
      >
      >Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.

@@ -52,7 +52,7 @@ Zie ook [ Facultatief - Opstelling en configuratie van Dynamic Media - de wijzem
    * [ Illustrator ](#illustrator-tab) lusje
 
    ![ Dynamic Media Algemene pagina van Montages ](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media Algemene pagina van Montages, met het **[!UICONTROL Image Editing]**geselecteerde lusje.*<br><br>
+   *Dynamic Media Algemene pagina van Montages, met het **[!UICONTROL Image Editing]**&#x200B;geselecteerde lusje.*<br><br>
 
 1. Wanneer u klaar bent, selecteert u **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 

@@ -151,6 +151,7 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 1. Optioneel:
 
    * Als u extra gegevens wilt stoppen, moet u a [ PageInforProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a schrijven
+
      `pageInfoProviderType` eigenschap.
 
    Bijvoorbeeld, zie hieronder de klasse/de bundel in bijlage (van GitHub).

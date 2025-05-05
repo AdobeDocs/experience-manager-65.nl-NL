@@ -393,7 +393,7 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
 1. U hebt toegang tot AEM Postvak IN nodig om Form-Centric-workflows uit te voeren en te controleren op AEM Forms OSGi en HTML Workspace om AEM Forms JEE Workflows uit te voeren en te controleren.
 1. Systeemeigen AEM Forms Document Services zijn zowel beschikbaar voor Form-centric AEM Workflows op OSGi als voor AEM Forms op JEE Workflows. AEM Workflow gebruikt native documentservices voor Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows (Process Management).
 1. AEM Forms JEE Workflows kunnen alleen een adaptief formulier weergeven. Het ondersteunt het weergeven van een adaptief formulier als een PDF-document niet.
-1. AEM JEE Workflows hebben geen aparte stap voor Adobe Sign. U hebt een adaptief formulier met Adobe Sign-functionaliteit nodig voor AEM JEE Workflows. Voor meer details, zie {de documentatie van 0} Adobe Sign ](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).[
+1. AEM JEE Workflows hebben geen aparte stap voor Adobe Sign. U hebt een adaptief formulier met Adobe Sign-functionaliteit nodig voor AEM JEE Workflows. Voor meer details, zie {de documentatie van 0} Adobe Sign [&#128279;](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
 1. U kunt [ gebruiken aanhaalt de ModelDienst van Gegevens van de Vorm ](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) stap om een Web-dienst aan te halen en gegevens van een derdetoepassing te posten of terug te winnen.
 1. U kunt [ gebruiken verzendt e-mail ](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) stap om e-mail te verzenden.
 

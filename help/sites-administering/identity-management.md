@@ -124,7 +124,7 @@ U kunt velden toevoegen aan de profieldefinitie. Als u bijvoorbeeld een veld Fav
 1. Dubbelklik de **Mijn pagina van het Profiel** om het voor het uitgeven te openen.
 1. In het **lusje van Componenten** van sidekick breidt de **sectie van de Vorm** uit.
 1. Sleep a **Dropdown Lijst** van sidekick aan de vorm, enkel onder **Ongeveer me** gebied.
-1. Dubbelklik de **component van de Lijst 0} Dropdown {om de dialoog voor configuratie te openen en binnen te gaan:**
+1. Dubbelklik de **component van de Lijst 0&rbrace; Dropdown &lbrace;om de dialoog voor configuratie te openen en binnen te gaan:**
 
    * **Naam van het Element** - `favoriteColor`
    * **Titel** - `Favorite Color`
@@ -140,7 +140,7 @@ U kunt velden toevoegen aan de profieldefinitie. Als u bijvoorbeeld een veld Fav
 
    Het gebied zal onder de **profiel** sectie van de relevante gebruikersrekening worden bewaard:
 
-   {de gegevens van de Parker van 0} Verbinding in CRXDE ](assets/aparkercrxdelite.png)![
+   {de gegevens van de Parker van 0} Verbinding in CRXDE ![&#128279;](assets/aparkercrxdelite.png)
 
 ## Profielstatussen {#profile-states}
 

@@ -123,7 +123,7 @@ De volgende methoden moeten worden toegepast:
 
 Hier volgt een voorbeeldsjabloon:
 
-package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot;&amp;ast; @scr.service&amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
+package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot;&ast; @scr.service&ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
 
 De interface en de klassen omvatten:
 

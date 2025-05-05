@@ -44,7 +44,7 @@ Met het hulpprogramma ANDI (Accessible Name and Description Inspector) kunt u co
 * Detecteert problemen met toetsenbordtoegankelijkheid en kleurcontrast
 * Hiermee wordt de inhoud van de schermlezer duidelijk geïdentificeerd in overeenstemming met de normen
 
-ANDI werkt met alle grote internetbrowsers. Zie {de documentatie van 0} ANDI ](https://www.ssa.gov/accessibility/andi/help/install.html) voor gedetailleerde instructies op hoe te om het hulpmiddel te vormen en te gebruiken.[
+ANDI werkt met alle grote internetbrowsers. Zie {de documentatie van 0} ANDI [&#128279;](https://www.ssa.gov/accessibility/andi/help/install.html) voor gedetailleerde instructies op hoe te om het hulpmiddel te vormen en te gebruiken.
 
 ### Download en installeer het Ultramarine-Toegankelijke thema
 
@@ -112,7 +112,7 @@ Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
 ![ de opties van de Toegankelijkheid in vormcomponenten ](assets/accessibility-options.png)
 
-**de auteurs van de Vorm van de Tekst van 0} de Douane van de Tekst van de Tekst van de Tekst van de Tekst van de Aangepast van de 0} {.** De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
+**de auteurs van de Vorm van de Tekst van 0&rbrace; de Douane van de Tekst van de Tekst van de Tekst van de Tekst van de Aangepast van de 0&rbrace; &lbrace;.** De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
 
 **Korte beschrijving** voor een meerderheid van de componenten, verschijnt de korte beschrijving bij runtime wanneer de gebruiker de wijzer over de component beweegt. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
 
@@ -185,5 +185,5 @@ De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adapti
 Met de Accessible Name and Description Inspector (ANDI) kunt u compatibiliteitsproblemen met betrekking tot toegankelijkheid in een adaptieve vorm identificeren en corrigeren. Met ANDI de toegankelijkheidsproblemen in een adaptieve vorm zoeken:
 
 1. Open het adaptieve formulier in de voorbeeldmodus.
-1. Klik op het pictogram van het gereedschap ANDI met bladwijzer. Het ANDI-gereedschap analyseert het adaptieve formulier en geeft toegankelijkheidsproblemen weer. Voor details op hoe te om het hulpmiddel te gebruiken, zie {de documentatie van 0} ANDI ](https://www.ssa.gov/accessibility/andi/help/howtouse.html).[
+1. Klik op het pictogram van het gereedschap ANDI met bladwijzer. Het ANDI-gereedschap analyseert het adaptieve formulier en geeft toegankelijkheidsproblemen weer. Voor details op hoe te om het hulpmiddel te gebruiken, zie {de documentatie van 0} ANDI [&#128279;](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
 1. De door ANDI gemelde problemen beoordelen en oplossen.

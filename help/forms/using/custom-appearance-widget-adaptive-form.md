@@ -130,9 +130,9 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> <code class="code">{
+   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br /> In dit voorbeeld wordt getoond dat <code>blur</code> een HTML-gebeurtenis is en <code>XFA_EXIT_EVENT</code> de bijbehorende XFA-gebeurtenis. </td>
+      &rbrace;</code><br /> In dit voorbeeld wordt getoond dat <code>blur</code> een HTML-gebeurtenis is en <code>XFA_EXIT_EVENT</code> de bijbehorende XFA-gebeurtenis. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

@@ -98,7 +98,7 @@ Ga als volgt te werk om uw [!DNL MySQL] -database te configureren:
 
 ## Stap 2: Formuliergegevensmodel maken {#create-fdm}
 
-AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface om een formuliergegevensmodel](data-integration.md) te [maken op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor dit gebruik kunt u de geconfigureerde [!DNL MySQL] gegevensbron gebruiken.
+AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface om een formuliergegevensmodel[&#128279;](data-integration.md) te maken op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor dit gebruik kunt u de geconfigureerde [!DNL MySQL] gegevensbron gebruiken.
 
 Ga als volgt te werk om een formuliergegevensmodel te maken:
 

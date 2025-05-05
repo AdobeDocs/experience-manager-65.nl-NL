@@ -136,7 +136,7 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
   Geeft aan of de replicatieagent is ingeschakeld.
 
-  Wanneer de agent **** wordt toegelaten, wordt de rij getoond als:
+  Wanneer de agent **&#x200B;**&#x200B;wordt toegelaten, wordt de rij getoond als:
 
    * **Actief** wanneer de punten worden verwerkt.
    * **nutteloos** wanneer de rij leeg is.
@@ -433,6 +433,7 @@ Om replicatie van inhoud voor een extra instantie van Publish te vormen, creeer 
    * In het **Vervoer** lusje:
 
       * Voer de vereiste URI in voor de nieuwe Publish-instantie, bijvoorbeeld
+
         `https://localhost:4504/bin/receive`.
 
       * Voer de sitespecifieke gebruikersaccount in die voor replicatie wordt gebruikt.
@@ -476,6 +477,7 @@ De standaardagenten zijn inbegrepen met de installatie. Nochtans, is een bepaald
    * In het **Vervoer** lusje:
 
       * Voer de vereiste URI in voor de nieuwe Publish-instantie, bijvoorbeeld
+
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Voer de sitespecifieke gebruikersaccount in die voor replicatie wordt gebruikt.
@@ -488,9 +490,9 @@ De standaardagenten zijn inbegrepen met de installatie. Nochtans, is een bepaald
    >Als u AEM in een context buiten de geadviseerde standaardcontext hebt geïnstalleerd, vorm de [ Kopballen van HTTP ](#extended) in **Uitgebreide** tabel.
 
 1. Klik **OK**.
-1. Terugkeer aan het **lusje van Hulpmiddelen**, van hier kunt u **** de **Vlek van Dispatcher** agent (**Agenten op Publish**) activeren.
+1. Terugkeer aan het **lusje van Hulpmiddelen**, van hier kunt u **&#x200B;**&#x200B;de **Vlek van Dispatcher** agent (**Agenten op Publish**) activeren.
 
-De **replicatieagent van de Flush van 0} Dispatcher is niet actief op de Auteur.** U hebt toegang tot dezelfde pagina in de Publish-omgeving met behulp van de equivalente URI, bijvoorbeeld `https://localhost:4503/etc/replication/agents.publish/flush.html` .
+De **replicatieagent van de Flush van 0&rbrace; Dispatcher is niet actief op de Auteur.** U hebt toegang tot dezelfde pagina in de Publish-omgeving met behulp van de equivalente URI, bijvoorbeeld `https://localhost:4503/etc/replication/agents.publish/flush.html` .
 
 ### Toegang tot replicatieagents beheren {#controlling-access-to-replication-agents}
 

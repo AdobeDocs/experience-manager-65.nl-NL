@@ -261,7 +261,7 @@ Terwijl het uitgeven van uw inhoudsfragment AEM creeert automatisch versies om e
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
 3. Als de gebruiker de bewerking annuleert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt de token verwijderd om de bewerkingssessie te beëindigen.
-4. Als de gebruiker **** selecteert sparen uitgeeft, blijven de bijgewerkte elementen/de variaties voortbestaan en het teken wordt verwijderd om de het uitgeven zitting te beëindigen.
+4. Als de gebruiker **&#x200B;**&#x200B;selecteert sparen uitgeeft, blijven de bijgewerkte elementen/de variaties voortbestaan en het teken wordt verwijderd om de het uitgeven zitting te beëindigen.
 
 ## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
@@ -352,7 +352,7 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
   Selecteer de vereiste versie, dan terugkeren **aan deze** actie van Versie.
 
-* Terwijl [ het vergelijken van een versie aan de huidige versie ](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **** aan de geselecteerde versie kunt terugkeren.
+* Terwijl [ het vergelijken van een versie aan de huidige versie ](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **&#x200B;**&#x200B;aan de geselecteerde versie kunt terugkeren.
 
 ## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 

@@ -81,7 +81,7 @@ Om eerder gepubliceerde (of geactiveerde) inhoud niet op uw openbare website te 
 
 ### Een pagina verwijderen {#deleting-a-page}
 
-Als een pagina niet meer nodig is zou u de pagina ](/help/sites-authoring/managing-pages.md#deleting-a-page) kunnen willen [ schrappen.
+Als een pagina niet meer nodig is zou u de pagina [&#128279;](/help/sites-authoring/managing-pages.md#deleting-a-page) kunnen willen  schrappen.
 
 ### Pagina-eigenschappen instellen {#setting-the-page-properties}
 

@@ -68,7 +68,7 @@ Een anatomie maken voor de interactieve communicatie met de volgende gegevensinv
 * Voorwaardelijke gegevens
 * Afbeeldingen
 
-[](/help/forms/using/planning-interactive-communications.md)
+[&#128279;](/help/forms/using/planning-interactive-communications.md)
 
 ## Stap 2: Een formuliergegevensmodel maken {#step-create-form-data-model}
 
@@ -87,7 +87,7 @@ Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden me
 * Voorbeeldgegevens bewerken
 * Formuliergegevensmodel testen en geconfigureerde services met testgegevens
 
-[](/help/forms/using/create-form-data-model0.md)
+[&#128279;](/help/forms/using/create-form-data-model0.md)
 
 ## Stap 3: documentfragmenten maken {#step-create-document-fragments}
 
@@ -101,7 +101,7 @@ Documentfragmenten zijn herbruikbare componenten van een correspondentie die wor
 * Variabelen maken
 * Regels maken en toepassen
 
-[](/help/forms/using/create-document-fragments.md)
+[&#128279;](/help/forms/using/create-document-fragments.md)
 
 ## Stap 4: Sjablonen maken {#step-create-templates}
 
@@ -119,7 +119,7 @@ De malplaatjes voor het kanaal van het Web worden gecreeerd in AEM. Sjabloonaute
 * De XDP-sjablonen uploaden naar de AEM Forms-server
 * Sjablonen voor het webkanaal maken en inschakelen
 
-[](/help/forms/using/create-templates-print-web.md)
+[&#128279;](/help/forms/using/create-templates-print-web.md)
 
 ## Stap 5: Maak een interactieve communicatie {#step-create-an-interactive-communication}
 
@@ -138,7 +138,7 @@ De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Druk en W
 * Creeer een grafiek in de versie van het Web van Interactieve Communicatie
 * Hyperlinks maken in de webversie van Interactieve communicatie
 
-[](/help/forms/using/create-interactive-communication0.md)
+[&#128279;](/help/forms/using/create-interactive-communication0.md)
 
 ## Stap 6: Publish uw interactieve communicatie {#step-publish-your-interactive-communication}
 

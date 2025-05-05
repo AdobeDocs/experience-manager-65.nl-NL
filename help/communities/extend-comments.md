@@ -32,7 +32,7 @@ Stel dat de koptekst van de commentaarcomponent op de ene site van de AEM instan
 
 Om deze oplossing uit te voeren, creeer een component die (met voeten treedt) bestaande uitbreidt en het manuscript van Handlebars wijzigt. Het gebied van de site dat de nieuwe opmerkingen gebruikt, kan de uitgebreide versie gebruiken, terwijl de sites die de standaardweergave gebruiken, ongewijzigd blijven.
 
-De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Aldus, zijn er twee componenten om uit te breiden: *commentaren* en *commentaar*. Het manuscript om uit te geven is in het *2} dossier van de commentaar{* component {, terwijl de ouder *commentaren* component (het commentaarsysteem) is wat een auteur eigenlijk aan de pagina toevoegt.`header.hbs`
+De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Aldus, zijn er twee componenten om uit te breiden: *commentaren* en *commentaar*. Het manuscript om uit te geven is in het *2&rbrace; dossier van de commentaar&lbrace;* component &lbrace;, terwijl de ouder *commentaren* component (het commentaarsysteem) is wat een auteur eigenlijk aan de pagina toevoegt.`header.hbs`
 
 Als u opmerkingen wilt uitbreiden, moet u:
 

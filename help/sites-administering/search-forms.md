@@ -67,7 +67,7 @@ De beschikbare standaardconfiguraties zijn:
 
   Deze configuratie definieert de beschikbare opties bij het zoeken naar Scene7-bronnen in de middelenbrowser (bij het bewerken van een pagina).
 
-* **Rail van het Onderzoek van Plaatsbeheer 1}:**
+* **Rail van het Onderzoek van Plaatsbeheer 1&rbrace;:**
 
   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het gebruiken van de onderzoekslijn van de console van Plaatsen.
 
@@ -394,7 +394,7 @@ Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes 
 * **Publish en de Levende Namen van het Bezit van het Exemplaar**
 De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifieke predikaat van Plaatsen.
 
-* &amp;ast; op de gebiedslabels op het **lusje van Montages** betekent dat de gebieden worden vereist en als verlaten leeg verschijnt een foutenmelding.
+* &ast; op de gebiedslabels op het **lusje van Montages** betekent dat de gebieden worden vereist en als verlaten leeg verschijnt een foutenmelding.
 
 ## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
 
@@ -497,7 +497,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    >[!NOTE]
    >
-   >Wijzig ****** niets in de `/libs` weg.
+   >Wijzig **&#x200B;**&#x200B;** niets in de `/libs` weg.
    >
    >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >

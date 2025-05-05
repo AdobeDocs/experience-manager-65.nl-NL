@@ -69,4 +69,4 @@ Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakeli
 
 Voor details bij vestiging het scoren en het intekenen van regels, zie [ het Scoreren en Badges ](/help/communities/implementing-scoring.md).
 
-Voor het beheren van badges voor leden, zie {de Console van 0} Leden ](/help/communities/members.md).[
+Voor het beheren van badges voor leden, zie {de Console van 0} Leden [&#128279;](/help/communities/members.md).

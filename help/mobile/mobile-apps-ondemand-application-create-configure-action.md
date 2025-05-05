@@ -66,7 +66,7 @@ Zie [ Associerend uw app aan de Configuratie van de Wolk ](/help/mobile/mobile-o
 
 ### Aan de slag {#getting-ahead}
 
-Zodra u met het creëren van een toepassing op bestelling vertrouwd bent en zo associerend die app aan een wolkenconfiguratie, zie {de Acties van het Beheer van de Inhoud 0} ](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).[
+Zodra u met het creëren van een toepassing op bestelling vertrouwd bent en zo associerend die app aan een wolkenconfiguratie, zie {de Acties van het Beheer van de Inhoud 0} [&#128279;](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 **de Acties van het Beheer van de Inhoud** impliceren verwezenlijking en beheer van volgende inhoud:
 

@@ -79,7 +79,7 @@ Het volgende beeld toont de folderstructuur van de `android` omslag in de `src` 
    ![ eclipse project na de bouw app ](assets/eclipsebuildmws.png)
 
 1. Selecteer **[!UICONTROL Import Project (Eclipse ADT, Gradle, Etc.)]** in Android™ Studio.
-1. In de projectontdekkingsreiziger, selecteer de wortelfolder van het project dat u in het **de tekstvakje van de Folder van de 1} wortel wilt bouwen**:
+1. In de projectontdekkingsreiziger, selecteer de wortelfolder van het project dat u in het **de tekstvakje van de Folder van de 1&rbrace; wortel wilt bouwen**:
 
    **voor de gebruikers van Mac:** [ User_Home ]/Projecten/MobileWorkspace/src/android
 

@@ -95,17 +95,17 @@ De **console van Websites** verstrekt twee ruiten voor u om uw pagina&#39;s te n
 
   Hier worden de pagina&#39;s weergegeven (op de locatie die in het linkervenster is geselecteerd) en u kunt deze gebruiken om actie te ondernemen.
 
-Van hier kunt u uw pagina&#39;s ](/help/sites-authoring/managing-pages.md) beheren gebruikend of de toolbar, een contextmenu of door een pagina voor verdere acties te openen.[
+Van hier kunt u uw pagina&#39;s [&#128279;](/help/sites-authoring/managing-pages.md) beheren gebruikend of de toolbar, een contextmenu of door een pagina voor verdere acties te openen.
 
 >[!NOTE]
 >
->De basisafhandeling is voor alle consoles hetzelfde. Deze sectie concentreert zich op de **** console van Websites aangezien het de primaire console is die wanneer het ontwerpen wordt gebruikt.
+>De basisafhandeling is voor alle consoles hetzelfde. Deze sectie concentreert zich op de **&#x200B;**&#x200B;console van Websites aangezien het de primaire console is die wanneer het ontwerpen wordt gebruikt.
 
 ![ chlimage_1-9 ](assets/chlimage_1-9a.png)
 
 ## Toegang tot Help {#accessing-help}
 
-Op diverse consoles (bijvoorbeeld, Websites), is de knoop van de Hulp van de a **** beschikbaar. Het klikken van **Hulp** opent of het Aandeel van het Pakket of de documentatieplaats.
+Op diverse consoles (bijvoorbeeld, Websites), is de knoop van de Hulp van de a **&#x200B;**&#x200B;beschikbaar. Het klikken van **Hulp** opent of het Aandeel van het Pakket of de documentatieplaats.
 
 ![ chlimage_1-10 ](assets/chlimage_1-10a.png)
 
@@ -145,7 +145,7 @@ De **Websites** console maakt een lijst van uw pagina&#39;s van inhoud in een bo
 
 ## Pagina-informatie op de websiteconsole {#page-information-on-the-websites-console}
 
-De juiste ruit van de **** console Websites verstrekt een lijstmening met informatie over pagina&#39;s:
+De juiste ruit van de **&#x200B;**&#x200B;console Websites verstrekt een lijstmening met informatie over pagina&#39;s:
 
 ![ pagina-info ](assets/page-info.png)
 

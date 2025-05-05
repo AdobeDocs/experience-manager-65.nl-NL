@@ -274,7 +274,7 @@ Nadat een pakket is geüpload naar AEM, kunt u de instellingen wijzigen.
 
 1. Klik **sparen** om te bewaren.
 
-U kunt het pakket ](#building-a-package) moeten herbouwen om zijn inhoud bij te werken die op de veranderingen wordt gebaseerd u aanbracht.[
+U kunt het pakket [&#128279;](#building-a-package) moeten herbouwen om zijn inhoud bij te werken die op de veranderingen wordt gebaseerd u aanbracht.
 
 ### Een pakket opnieuw inpakken {#rewrapping-a-package}
 
@@ -347,7 +347,7 @@ Het Aandeel van het pakket was een gecentraliseerde openbare dienst om inhoudspa
 
 1. Klik **O.K.** en het geselecteerde pakket wordt geupload en de pakketlijst wordt dienovereenkomstig bijgewerkt.
 
-De pakketinhoud bestaat nu op AEM, maar om de inhoud voor gebruik beschikbaar te maken, ben zeker om het pakket ](#installing-packages) te installeren.[
+De pakketinhoud bestaat nu op AEM, maar om de inhoud voor gebruik beschikbaar te maken, ben zeker om het pakket [&#128279;](#installing-packages) te installeren.
 
 ### Pakketten valideren {#validating-packages}
 
@@ -440,7 +440,7 @@ Validatie moet altijd plaatsvinden na het uploaden van het pakket, maar voordat 
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
-1. Om het pakket te bevestigen, klik **Meer** > **** bevestigen,
+1. Om het pakket te bevestigen, klik **Meer** > **&#x200B;**&#x200B;bevestigen,
 
 1. In het modale dialoogvakje dat dan verschijnt, gebruik checkboxes om het type (de) bevestiging te selecteren en met de bevestiging te beginnen door **te klikken bevestigt**.
 

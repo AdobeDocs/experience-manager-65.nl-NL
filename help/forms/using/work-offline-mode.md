@@ -48,4 +48,4 @@ U configureert als volgt de offline component aan de serverzijde van de AEM Form
    * **Geldigheid van het Geheime voorgeheugen**: Specificeert de geldigheidsperiode voor het server-kant off-line geheime voorgeheugen.
    * **Paden van de Waarneming van het Middel**: Specificeert wegen waar de off-line dienst voor middelveranderingen controleert. Als er wijzigingen optreden in de opgegeven paden, wordt de offlinecache van alle afhankelijke formulieren bijgewerkt. Bijvoorbeeld `/etc/clientlibs/fd,/content/dam/images` .
 
-1. In het **lusje van het Geheime voorgeheugen van het 1} Hand van het Middel**, specificeer de vorm gebiedsdelen off-line dienst niet kan identificeren. U kunt bronnen opgeven, zoals afbeeldingen die vanuit JavaScript worden geladen. De AEM Forms-app downloadt deze bronnen ook voor de offline modus.
+1. In het **lusje van het Geheime voorgeheugen van het 1&rbrace; Hand van het Middel**, specificeer de vorm gebiedsdelen off-line dienst niet kan identificeren. U kunt bronnen opgeven, zoals afbeeldingen die vanuit JavaScript worden geladen. De AEM Forms-app downloadt deze bronnen ook voor de offline modus.

@@ -240,12 +240,12 @@ Meer details over de knopen en hun eigenschappen zijn:
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>vereist</p> </td>
-     <td>De titel van de variatie (die in het 0} wordt getoond van de fragmentredacteur {</strong> lusje van de Variatie (linkerspoor)).<strong></td>
+     <td>De titel van de variatie (die in het 0&rbrace; wordt getoond van de fragmentredacteur &lbrace;</strong> lusje van de Variatie (linkerspoor)).<strong></td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>optioneel</p> <p>default: ""</p> </td>
-     <td>Een tekst die een beschrijving van de variatie <span> (getoond in het 1} Verandering </strong> lusje van de fragmentredacteur (linkerspoor)) verstrekt.<strong></code></td>
+     <td>Een tekst die een beschrijving van de variatie <span> (getoond in het 1&rbrace; Verandering </strong> lusje van de fragmentredacteur (linkerspoor)) verstrekt.<strong></code></td>
     </tr>
    </tbody>
   </table>

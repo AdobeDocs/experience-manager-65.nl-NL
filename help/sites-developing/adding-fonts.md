@@ -22,7 +22,7 @@ Met AEM kunt u afbeeldingen genereren waarin tekst dynamisch wordt overgenomen v
 
 Hiervoor kunt u ook uw eigen lettertypen laden en gebruiken.
 
-Momenteel steunen alle implementaties van het Platform van Java [ ](https://en.wikipedia.org/wiki/Truetype) doopvonten TrueType.
+Momenteel steunen alle implementaties van het Platform van Java [&#128279;](https://en.wikipedia.org/wiki/Truetype) doopvonten TrueType.
 
 1. Open CRXDE Lite en navigeer naar de projecttoepassingsmap:
 

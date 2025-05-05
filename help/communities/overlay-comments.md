@@ -37,7 +37,7 @@ Als u opmerkingen wilt bedekken, moet u:
 
 Veronderstel u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door [ bedekkend ](/help/communities/client-customize.md#overlays) de malplaatjes bij `/libs/settings/community/templates/email/html`.
 
-Stel dat u de e-mailmeldingen voor vermeldingen wilt bewerken (voor een specifiek onderdeel Community waarin UGC is gemaakt). In dergelijke gevallen, voeg een **toe als** voorwaarde voor werkwoord **** in de malplaatjes van de componenten vermeldt waarvoor u **@mtations** steun toeliet.
+Stel dat u de e-mailmeldingen voor vermeldingen wilt bewerken (voor een specifiek onderdeel Community waarin UGC is gemaakt). In dergelijke gevallen, voeg een **toe als** voorwaarde voor werkwoord **&#x200B;**&#x200B;in de malplaatjes van de componenten vermeldt waarvoor u **@mtations** steun toeliet.
 
 ```java
 {{#equals this.verb "mention"}}\

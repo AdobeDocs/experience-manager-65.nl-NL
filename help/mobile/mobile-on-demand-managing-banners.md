@@ -78,7 +78,7 @@ Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen o
 De workflow voor het bewerken van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer een AEM banner uit de tegel** Banners beheren**.
+1. Selecteer een AEM banner uit de tegel **&#x200B; Banners beheren**.
 1. Klik op de gemarkeerde banner in de lijstweergave om deze te openen in de inhoudseditor.
 1. Gebruik de inhoudeditor om bannerinhoud (manuscripten, afbeeldingen, tekst, enzovoort) te slepen.
 

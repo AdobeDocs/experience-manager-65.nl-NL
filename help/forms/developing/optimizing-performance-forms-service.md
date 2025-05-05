@@ -117,7 +117,7 @@ Een formulier met optimale prestaties renderen met de Forms API (Java):
    * Maak een `javax.servlet.ServletOutputStream` -object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
    * Maak een `com.adobe.idp.Document` -object door de methode `FormsResult` object &#39;s `getOutputContent` aan te roepen.
    * Maak een `java.io.InputStream` -object door de methode `com.adobe.idp.Document` object `getInputStream` aan te roepen.
-   * Creeer een byteserie en bevolk het met de stroom van vormgegevens door de `read` methode van objecten `InputStream` aan te halen {en de byteserie als argument over te gaan.
+   * Creeer een byteserie en bevolk het met de stroom van vormgegevens door de `read` methode van objecten `InputStream` aan te halen &lbrace;en de byteserie als argument over te gaan.
    * Roep de methode `write` van het object `javax.servlet.ServletOutputStream` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write` .
 
 **zie ook**

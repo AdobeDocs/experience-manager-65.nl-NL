@@ -84,7 +84,7 @@ u wordt aangeraden deze speciale tekens niet te gebruiken:
 ## Labels activeren en deactiveren {#activating-and-deactivating-tags}
 
 1. Selecteer in het rechterdeelvenster de naamruimte of tag die u wilt activeren (publiceren) of deactiveren (publiceren ongedaan maken).
-1. Klik **activeren** of **** desactivate zoals vereist.
+1. Klik **activeren** of **&#x200B;**&#x200B;desactivate zoals vereist.
 
 ## Lijst - tonen waar naar tags wordt verwezen {#list-showing-where-tags-are-referenced}
 

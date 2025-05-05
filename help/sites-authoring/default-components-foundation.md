@@ -259,7 +259,7 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 >
 >Deze Foundation-component is vervangen. De Adobe adviseert in plaats daarvan gebruikend de [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html).
 
-{de fragmenten van 0} Inhoud ](/help/sites-authoring/content-fragments.md) worden gecreeerd en als pagina-onafhankelijke activa beheerd. [ Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
+{de fragmenten van 0} Inhoud [&#128279;](/help/sites-authoring/content-fragments.md) worden gecreeerd en als pagina-onafhankelijke activa beheerd.  Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
 ### Design Importer {#design-importer}
 
@@ -334,7 +334,7 @@ Met de component Flash kunt u een Flash film laden. U kunt een Flash-element van
 
 * **Flash**
 
-   * {de film van 0} Flash ****
+   * {de film van 0} Flash **&#x200B;**
 
      Het Flash-filmbestand. Sleep een element van de zoeker naar de inhoud of klik om een bladervenster te openen.
 
@@ -530,7 +530,7 @@ Met de component List kunt u zoekcriteria configureren voor het weergeven van ee
 
      Hier kunt u het aantal lijstitems opgeven dat in één keer moet worden weergegeven. Een lijst met meer items dan opgegeven gebruikt paginering om de lijst in verschillende delen weer te geven.
 
-Het volgende voorbeeld toont de component van de Lijst van de a **** de manier dat het een lijst van kindpagina&#39;s kan tonen (het ontwerp wordt gecontroleerd door de douaneCSS definities van een plaatsontwerp).
+Het volgende voorbeeld toont de component van de Lijst van de a **&#x200B;**&#x200B;de manier dat het een lijst van kindpagina&#39;s kan tonen (het ontwerp wordt gecontroleerd door de douaneCSS definities van een plaatsontwerp).
 
 ![ dc_list_use ](assets/dc_list_use.png)
 
@@ -679,7 +679,7 @@ Als u bijvoorbeeld `Geometrixxe` typt, geeft het systeem &quot;Bedoelde u? Geome
 
      De tekst die naast onderzoeken naar verwante termijnen en onderwerpen verschijnt.
 
-   * **Tekst van de Trends van het Onderzoek van 0}**
+   * **Tekst van de Trends van het Onderzoek van 0&rbrace;**
 
      De titel boven de zoektermen die een gebruiker invoert.
 
@@ -812,7 +812,7 @@ Voor meer informatie over het toepassen van markeringen, bezoek [ Gebruikend Mar
 
 >[!NOTE]
 >
->De **Component van de Stichting van de Tekst** {is gebaseerd op de [ Rijke redacteur van de Tekst ](/help/sites-authoring/rich-text-editor.md), zoals de **Lijst** Component van de Stichting is.
+>De **Component van de Stichting van de Tekst** &lbrace;is gebaseerd op de [ Rijke redacteur van de Tekst ](/help/sites-authoring/rich-text-editor.md), zoals de **Lijst** Component van de Stichting is.
 
 De component van de Tekst laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door de [ Rich redacteur van de Tekst ](/help/sites-authoring/rich-text-editor.md) wordt verstrekt. Met een selectie pictogrammen kunt u de tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing.
 
@@ -827,7 +827,7 @@ De opgemaakte tekst wordt weergegeven op de pagina. Het daadwerkelijke ontwerp i
 
 ![ dc_text_use ](assets/dc_text_use.png)
 
-Voor meer gedetailleerde informatie over de component van de Tekst en de functionaliteit die door de Rich redacteur van de Tekst wordt verstrekt, zie de ](/help/sites-authoring/rich-text-editor.md) pagina van de Redacteur van de Tekst 0} Rich.[
+Voor meer gedetailleerde informatie over de component van de Tekst en de functionaliteit die door de Rich redacteur van de Tekst wordt verstrekt, zie de [&#128279;](/help/sites-authoring/rich-text-editor.md) pagina van de Redacteur van de Tekst 0&rbrace; Rich.
 
 #### Op plaats bewerken {#inplace-editing}
 
@@ -839,7 +839,7 @@ Naast op dialoog-gebaseerde Rich Tekst het uitgeven wijze, verstrekt AEM ook [ h
 >
 >Deze Foundation-component is vervangen. Adobe adviseert het gebruiken van de [ Component van de Kern van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) en [ van de Tekst ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) in plaats daarvan.
 
-De component Tekst en afbeelding voegt een tekstblok en een afbeelding toe. U kunt ook afzonderlijk tekst en afbeeldingen toevoegen en bewerken. Zie de [ Tekst ](#text) en [ 3} componenten van het Beeld {voor details.](#image)
+De component Tekst en afbeelding voegt een tekstblok en een afbeelding toe. U kunt ook afzonderlijk tekst en afbeeldingen toevoegen en bewerken. Zie de [ Tekst ](#text) en [ 3&rbrace; componenten van het Beeld &lbrace;voor details.](#image)
 
 ![ chlimage_1-99 ](assets/chlimage_1-99.png)
 
@@ -1094,7 +1094,7 @@ Dit veld is verplicht en mag alleen de volgende tekens bevatten:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. De Adobe adviseert in plaats daarvan gebruikend de ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) Component van de Kern van de Container van de Vorm [.
+>Deze Foundation-component is vervangen. De Adobe adviseert in plaats daarvan gebruikend de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) Component van de Kern van de Container van de Vorm .
 
 De component van de Vorm bepaalt zowel het begin als het eind van een vorm gebruikend het **Begin van de Vorm** en **Eind van de Vorm** elementen. Het begin en einde worden altijd aan elkaar gekoppeld om ervoor te zorgen dat het formulier correct is gedefinieerd.
 

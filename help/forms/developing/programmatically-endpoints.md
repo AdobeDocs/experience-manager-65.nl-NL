@@ -331,7 +331,7 @@ De volgende lijst specificeert configuratiewaarden die wanneer programmatically 
 * **userName**: De gebruikersnaam die wanneer het aanhalen van een doeldienst van de Gecontroleerde Omslag wordt gebruikt. Deze waarde is verplicht. De standaardwaarde is SuperAdmin.
 * **domainName**: Het domein van de gebruiker. Deze waarde is verplicht. De standaardwaarde is DefaultDom.
 * **batchSize**: Het aantal dossiers of omslagen dat per aftasten moet worden opgenomen. Gebruik deze waarde om overbelasting op het systeem te voorkomen. Als u te veel bestanden tegelijk scant, kan dit tot gevolg hebben dat de toepassing vastloopt. De standaardwaarde is 2.
-* **waitTime**: De tijd, in milliseconden, te wachten alvorens een omslag of een dossier na verwezenlijking af te tasten. Als de wachttijd bijvoorbeeld 36.000.000 milliseconden (één uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepakt nadat 59 minuten zijn verstreken. Dit kenmerk is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&amp;ast;60 &amp;ast;1000 milliseconden. Met deze instelling voorkomt u dat de gecontroleerde map het bestand scant als het nog tien minuten niet heeft gewacht. De standaardwaarde is 0.
+* **waitTime**: De tijd, in milliseconden, te wachten alvorens een omslag of een dossier na verwezenlijking af te tasten. Als de wachttijd bijvoorbeeld 36.000.000 milliseconden (één uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepakt nadat 59 minuten zijn verstreken. Dit kenmerk is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&ast;60 &ast;1000 milliseconden. Met deze instelling voorkomt u dat de gecontroleerde map het bestand scant als het nog tien minuten niet heeft gewacht. De standaardwaarde is 0.
 * **excludeFilePattern**: Het patroon dat een gecontroleerde omslag gebruikt om te bepalen welke dossiers en omslagen aan aftasten en op te nemen. Bestanden of mappen met dit patroon worden niet gescand voor verwerking. Deze instelling is handig wanneer de invoer een map is die meerdere bestanden bevat. De inhoud van de map kan worden gekopieerd naar een map met een naam die wordt opgepakt door de gecontroleerde map. Met deze stap wordt voorkomen dat de gecontroleerde map een map opneemt die moet worden verwerkt voordat de map volledig is gekopieerd naar de invoermap. Als de waarde excludeFilePattern bijvoorbeeld `data*` is, worden niet alle bestanden en mappen opgehaald die overeenkomen met `data*` . Dit omvat bestanden en mappen met de naam `data1` , `data2` , enzovoort. Bovendien kan het patroon met vervangingspatronen worden aangevuld om dossierpatronen te specificeren. De gecontroleerde map wijzigt de reguliere expressie om jokertekenpatronen zoals `*.*` en `*.pdf` te ondersteunen. Deze jokertekenpatronen worden niet ondersteund door reguliere expressies.
 * **includeFilePattern**: Het patroon dat de gecontroleerde omslag gebruikt om te bepalen welke omslagen en dossiers aan aftasten en op te nemen. Als deze waarde bijvoorbeeld `*` is, worden alle bestanden en mappen opgehaald die overeenkomen met `input*` . Dit omvat bestanden en mappen met de naam `input1` , `input2` , enzovoort. De standaardwaarde is `*` . Deze waarde geeft alle bestanden en mappen aan. Bovendien kan het patroon met vervangingspatronen worden aangevuld om dossierpatronen te specificeren. De gecontroleerde map wijzigt de reguliere expressie om jokertekenpatronen zoals `*.*` en `*.pdf` te ondersteunen. Deze jokertekenpatronen worden niet ondersteund door reguliere expressies. Deze waarde is verplicht.
 * **resultFolderName**: De omslag waar de bewaarde resultaten worden opgeslagen. Deze locatie kan een absoluut of relatief mappad zijn. Als de resultaten niet in deze map worden weergegeven, controleert u de map met foutmeldingen. Alleen-lezen bestanden worden niet verwerkt en worden opgeslagen in de map met foutmeldingen. De standaardwaarde is `result/%Y/%M/%D/` . Dit is de resultatenmap in de controlemap.
@@ -429,7 +429,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
    * Een tekenreekswaarde die de naam van de invoerparameter opgeeft. De naam van de invoerparameter voor de EncryptDocument-service is bijvoorbeeld `InDoc` .
    * Een tekenreeks die het gegevenstype van de invoerparameter opgeeft. Het gegevenstype van de invoerparameter `InDoc` is bijvoorbeeld `com.adobe.idp.Document` .
    * Een tekenreekswaarde die het toewijzingstype aangeeft. U kunt bijvoorbeeld `variable` opgeven.
-   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &amp;ast;.pdf opgeven als bestandspatroon.
+   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &ast;.pdf opgeven als bestandspatroon.
 
    >[!NOTE]
    >
@@ -566,7 +566,7 @@ De volgende configuratiewaarden worden geplaatst wanneer programmatically het to
 * **userName**: De gebruikersnaam die wanneer het aanhalen van een doeldienst van e-mail wordt gebruikt. De standaardwaarde is `SuperAdmin` .
 * **domainName**: Een verplichte configuratiewaarde. De standaardwaarde is `DefaultDom` .
 * **domainPattern**: Specificeert de domeinpatronen van inkomende e-mail die de leverancier goedkeurt. Als `adobe.com` bijvoorbeeld wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt en wordt e-mail van andere domeinen genegeerd.
-* **filePattern**: Specificeert de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Hiertoe behoren bestanden met specifieke bestandsextensies (&amp;ast;.dat, &amp;ast;.xml), bestanden met specifieke namen (gegevens) en bestanden met samengestelde expressies in de naam en extensie (&amp;ast;..[ dD ][aA] &quot;haven&quot;). De standaardwaarde is `*` .
+* **filePattern**: Specificeert de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Hiertoe behoren bestanden met specifieke bestandsextensies (&ast;.dat, &ast;.xml), bestanden met specifieke namen (gegevens) en bestanden met samengestelde expressies in de naam en extensie (&ast;..[ dD ][aA] &quot;haven&quot;). De standaardwaarde is `*` .
 * **receivingSuccessfulJob**: Een e-mailadres waarnaar de berichten worden verzonden om op succesvolle banen te wijzen. Standaard wordt altijd een bericht met een geslaagde taak naar de afzender verzonden. Als u `sender` typt, worden de e-mailresultaten verzonden naar de afzender. Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, die elk worden gescheiden door een komma. Laat deze waarde leeg als u deze optie wilt uitschakelen. In sommige gevallen wilt u wellicht een proces activeren en geen e-mailmelding van het resultaat. De standaardwaarde is `sender` .
 * **receivingFailedJob**: Een e-mailadres waarnaar de berichten worden verzonden om ontbroken banen te wijzen. Standaard wordt een mislukte taakbericht altijd naar de afzender verzonden. Als u `sender` typt, worden de e-mailresultaten verzonden naar de afzender. Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, die elk worden gescheiden door een komma. Laat deze waarde leeg als u deze optie wilt uitschakelen. De standaardwaarde is `sender` .
 * **inboxHost**: De naam van de inbox gastheer of IP adres voor de e-mailleverancier om af te tasten.
@@ -674,7 +674,7 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
    * Een tekenreekswaarde die de naam van de invoerparameter opgeeft. De naam van de invoerparameter voor de EncryptDocument-service is bijvoorbeeld `InDoc` .
    * Een tekenreeks die het gegevenstype van de invoerparameter opgeeft. Het gegevenstype van de invoerparameter `InDoc` is bijvoorbeeld `com.adobe.idp.Document` .
    * Een tekenreekswaarde die het toewijzingstype aangeeft. U kunt bijvoorbeeld `variable` opgeven.
-   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &amp;ast;.pdf opgeven als bestandspatroon.
+   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &ast;.pdf opgeven als bestandspatroon.
 
    >[!NOTE]
    >
@@ -801,7 +801,7 @@ Om een Remoting eindpunt voor de dienst tot stand te brengen, specificeer de vol
 * **Beschrijving**: Specificeert de beschrijving van het eindpunt.
 * **Naam**: Specificeert de naam van het eindpunt.
 * **het herkenningsteken van de Dienst**: Specificeert de dienst waartot het eindpunt behoort. Als u bijvoorbeeld een eindpunt Verwijderen wilt toevoegen aan het proces dat in deze sectie wordt geïntroduceerd (een proces wordt een service wanneer het binnen Workbench wordt geactiveerd), geeft u `EncryptDocument` op.
-* **de naam van de Verrichting**: Specificeert de naam van de verrichting die door het eindpunt te gebruiken wordt aangehaald. Geef bij het maken van een eindpunt Remoting een jokerteken op (&amp;ast;).
+* **de naam van de Verrichting**: Specificeert de naam van de verrichting die door het eindpunt te gebruiken wordt aangehaald. Geef bij het maken van een eindpunt Remoting een jokerteken op (&ast;).
 
 **creeer een Verwijderend eindpunt**
 
@@ -839,7 +839,7 @@ Voeg een Remoting eindpunt toe door Java API te gebruiken:
    * Geef de beschrijving van het eindpunt op door de methode `setDescription` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
    * Geef de naam van het eindpunt op door de methode `setName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
    * Geef de service op waartoe het eindpunt behoort door de methode `setServiceId` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
-   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` en geef een tekenreekswaarde door die de naam van de bewerking aangeeft. Geef voor een eindpunt Verwijderen een jokerteken op (&amp;ast;).
+   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` en geef een tekenreekswaarde door die de naam van de bewerking aangeeft. Geef voor een eindpunt Verwijderen een jokerteken op (&ast;).
 
 1. Maak een eindpunt Verwijderen.
 

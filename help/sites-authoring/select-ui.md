@@ -18,7 +18,7 @@ De UI met aanraakbediening van Adobe Experience Manager (AEM) is nu de standaard
 
 >[!NOTE]
 >
->Voor details op het statuut van eigenschappariteit met klassieke UI, zie het ](/help/release-notes/touch-ui-features-status.md) document van de Pariteit van de Eigenschap van 0} Aanraakinterface.[
+>Voor details op het statuut van eigenschappariteit met klassieke UI, zie het [&#128279;](/help/release-notes/touch-ui-features-status.md) document van de Pariteit van de Eigenschap van 0&rbrace; Aanraakinterface.
 
 Er zijn verschillende locaties waar u kunt definiëren welke interface moet worden gebruikt:
 
@@ -108,9 +108,11 @@ De montages die door een gebruiker of systeembeheerder worden bepaald kunnen doo
 * Bij het ontwerpen van pagina&#39;s:
 
    * Het gebruik van de klassieke editor wordt geforceerd wanneer u de pagina opent met `cf#` in de URL. Bijvoorbeeld:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Het gebruik van de aanraakeditor wordt geforceerd wanneer u `/editor.html` in de URL gebruikt of wanneer u een aanraakapparaat gebruikt. Bijvoorbeeld:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Elke forcering is tijdelijk en is alleen geldig voor de browsersessie

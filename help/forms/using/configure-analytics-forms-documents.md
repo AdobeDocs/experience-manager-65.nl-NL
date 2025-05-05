@@ -59,7 +59,7 @@ Voer de volgende stappen uit om een rapportsuite te maken.
    Nieuwe rapportsuite maken
 
 1. Zorg ervoor de eerste dropdown lijst wordt geplaatst aan **creeer van een Malplaatje** en selecteer dan **Commerce**.
-1. Bepaal de plaats van het **gebied van identiteitskaart van de Reeks van het 0} Rapport en voeg nieuwe identiteitskaart van de Reeks van het Rapport toe.** JJEsquire. Een rapportsuite-id wordt weergegeven onder het veld Report Suite-id. Het omvat een automatisch voorvoegsel, dat vaak de bedrijfsnaam is.
+1. Bepaal de plaats van het **gebied van identiteitskaart van de Reeks van het 0&rbrace; Rapport en voeg nieuwe identiteitskaart van de Reeks van het Rapport toe.** JJEsquire. Een rapportsuite-id wordt weergegeven onder het veld Report Suite-id. Het omvat een automatisch voorvoegsel, dat vaak de bedrijfsnaam is.
 1. Voeg nieuwe **Titel van de Plaats** toe. JJEsquire Getting Started Suite. Deze titel wordt gebruikt binnen Analytics UI. Gebruik de rapportsuite-id in de code.
 1. Selecteer de Zone van de a **Tijd** van dropdown. Alle gegevens die in deze rapportreeks komen worden geregistreerd gebaseerd op bepaalde tijdzone.
 1. Verlaat **Basis URL** en **GebrekPagina** gebieden leeg. Deze twee waarden worden alleen via de Adobe Marketing Cloud-interface gebruikt om een koppeling naar uw website te maken.
@@ -163,7 +163,7 @@ Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-var
 1. Specificeer aangewezen waarden voor de volgende gebieden en klik **sparen**.
 
    * **Kader van de SiteCatalyst**: Selecteer het kader/de configuratie die u in Opstelling een kader voor het volgen van sectie bepaalde.
-   * **tijd die basislijn van het Gebied {** volgen: Specificeer de duur, in seconden, waarna het gebiedsbezoek moet worden gevolgd. De standaardwaarde is 0. Wanneer de waarde groter is dan 0 (nul), worden twee afzonderlijke volggebeurtenissen verzonden naar de Adobe Analytics-server. De eerste gebeurtenis geeft de analyseserver de opdracht het verlaten veld niet meer te volgen. De tweede gebeurtenis wordt verzonden nadat de opgegeven tijdsduur is verstreken. De tweede gebeurtenis geeft de analyseserver de opdracht het bezochte veld te volgen. Het gebruik van twee afzonderlijke gebeurtenissen helpt de tijd die aan een veld wordt doorgebracht nauwkeurig te meten. Wanneer de waarde 0 (nul) is, wordt een enkele volggebeurtenis verzonden naar de Adobe Analytics-server.
+   * **tijd die basislijn van het Gebied &lbrace;** volgen: Specificeer de duur, in seconden, waarna het gebiedsbezoek moet worden gevolgd. De standaardwaarde is 0. Wanneer de waarde groter is dan 0 (nul), worden twee afzonderlijke volggebeurtenissen verzonden naar de Adobe Analytics-server. De eerste gebeurtenis geeft de analyseserver de opdracht het verlaten veld niet meer te volgen. De tweede gebeurtenis wordt verzonden nadat de opgegeven tijdsduur is verstreken. De tweede gebeurtenis geeft de analyseserver de opdracht het bezochte veld te volgen. Het gebruik van twee afzonderlijke gebeurtenissen helpt de tijd die aan een veld wordt doorgebracht nauwkeurig te meten. Wanneer de waarde 0 (nul) is, wordt een enkele volggebeurtenis verzonden naar de Adobe Analytics-server.
 
    * **Analytics rapport synchroon**: Specificeer cron uitdrukking voor het halen van rapporten van Adobe Analytics. De standaardwaarde is 0 0 2? &#42; &#42; .
 

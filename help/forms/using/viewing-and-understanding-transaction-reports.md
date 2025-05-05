@@ -26,7 +26,7 @@ De functie Transactierapporten is beschikbaar als onderdeel van het add-on pakke
 * Omgekeerde replicatie inschakelen voor alle publicatievarianten
 * Transactierapporten inschakelen
 * Rechten opgeven om een transactierapport te bekijken
-* (Optioneel) Transactie-uitstelperiode en -uitvakken configureren [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Optioneel) Transactie-uitstelperiode en -uitvakken configureren [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >
@@ -58,13 +58,13 @@ Alleen leden van de groep fd-administrator kunnen transactierapporten weergeven.
 Transacties worden in het geheugen opgeslagen voordat ze in de opslagplaats worden opgeslagen. Het proces wordt gevolgd om ervoor te zorgen dat er niet vaak naar de gegevensopslagplaats wordt geschreven. Standaard is de cacheperiode (Transactie Flush Period) ingesteld op 60 seconden. U kunt de standaardperiode aanpassen aan uw omgeving. Voer de volgende stappen uit om de standaardcaching periode te veranderen:
 
 1. Meld u als beheerder aan bij de instanties van de auteur. Ga naar **Hulpmiddelen** > **Verrichtingen** > **Console van het Web**.
-1. Zoek en open de **dienst van de Opslag van de Opslag van de Opslag van de Transactie van 0} Forms.**
+1. Zoek en open de **dienst van de Opslag van de Opslag van de Opslag van de Transactie van 0&rbrace; Forms.**
 1. Specificeer het aantal seconden op het **gebied van de Periode van de Duw van de Transactie**. Klik **sparen**.
 
 De omgekeerde replicatie kopieert transactiegegevens aan standaardoutbox van de auteursinstanties. U kunt transactiegegevens in een douane outbox plaatsen. Voer de volgende stappen uit om een aangepast outbox te specificeren:
 
 1. Meld u als beheerder aan bij de instanties van de auteur. Ga naar **Hulpmiddelen** > **Verrichtingen** > **Console van het Web**.
-1. Zoek en open de **dienst van de Opslag van de Opslag van de Opslag van de Transactie van 0} Forms.**
+1. Zoek en open de **dienst van de Opslag van de Opslag van de Opslag van de Transactie van 0&rbrace; Forms.**
 1. Specificeer de naam van douanecontourbox het **Outboxes** gebied. Klik **sparen**. Er wordt een uitsnijdvak met de opgegeven naam gemaakt op alle instanties van de auteur.
 
 ## Het transactierapport weergeven {#viewing-the-transaction-report}

@@ -56,7 +56,7 @@ Als u een blog wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de c
 
 En sleep ze naar de juiste plaats op een pagina waarop de blog moet worden weergegeven.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/blog-developer-basics.md#essentials-for-client-side) inbegrepen zijn, verschijnt de `Blog` component als volgt:
 
@@ -134,7 +134,7 @@ Onder het **lusje van Montages**, specificeer de basiseigenschappen van blog:
 
 * **Toestaan Tags**
 
-  Als gecontroleerd, sta leden toe om markeringsetiketten aan hun posten toe te voegen (zie {het gebied van de Markering **tabel).** De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, sta leden toe om markeringsetiketten aan hun posten toe te voegen (zie &lbrace;het gebied van de Markering **tabel).** De optie Standaard is uitgeschakeld.
 
 * **staat Dossier toe uploadt**
 

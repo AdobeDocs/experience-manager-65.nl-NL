@@ -144,7 +144,7 @@ De **Verwijzing van het Fragment**:
 
 Om u te helpen bij het ontwerpen en ontwikkelen van modellen van inhoudsfragmenten, kunt u een voorbeeld van JSON-uitvoer weergeven in de Content Fragment Editor.
 
-](assets/cfm-model-json-preview.png " Voorproef JSON ")![
+![&#128279;](assets/cfm-model-json-preview.png " Voorproef JSON ")
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}

@@ -568,7 +568,7 @@ Deze opties zijn toegankelijk als chevron naast het **gebied van de Commentaar**
 
 ### Verwijzingen {#references}
 
-**Verwijzingen** tonen om het even welke verbindingen aan het geselecteerde middel. Bijvoorbeeld, in de **console [ verwijzingen ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) van de Plaatsen** {voor pagina&#39;s toont:
+**Verwijzingen** tonen om het even welke verbindingen aan het geselecteerde middel. Bijvoorbeeld, in de **console [ verwijzingen ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) van de Plaatsen** &lbrace;voor pagina&#39;s toont:
 
 * [Lanceringen](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live kopieën](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)

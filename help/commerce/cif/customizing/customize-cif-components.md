@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Adobe Experience Manager CIF Core-componenten aanpassen {#customize-cif-components}
 
-Het [ CIF Project van Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components). In dit leerprogramma, breidt u verder de ](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component van Teaser van het 0} Product uit om een douanekenmerk van Adobe Commerce te tonen. [ U leert ook meer over de GraphQL-integratie tussen Adobe Experience Manager (AEM) en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
+Het [ CIF Project van Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components). In dit leerprogramma, breidt u verder de [&#128279;](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component van Teaser van het 0&rbrace; Product uit om een douanekenmerk van Adobe Commerce te tonen.  U leert ook meer over de GraphQL-integratie tussen Adobe Experience Manager (AEM) en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste
 
 1. Navigeer aan de **Pagina van het Huis** van de plaats: [ http://localhost:4502/editor.html/content/acme/us/en.html ](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-2. Tussenvoegsel een nieuwe **Component van het Teaser van het 0} Product in de belangrijkste lay-outcontainer op de pagina.**
+2. Tussenvoegsel een nieuwe **Component van het Teaser van het 0&rbrace; Product in de belangrijkste lay-outcontainer op de pagina.**
 
    ![ Taser van het Product van het Tussenvoegsel ](../assets/customize-cif-components/product-teaser-add-component.png)
 
@@ -188,7 +188,7 @@ Gebruik [ winde van uw keus ](https://experienceleague.adobe.com/docs/experience
 
 1. In uw winde, navigeer onder de **kern** module aan: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
-   {IDE van de plaatsIDE van 0} Kern ](../assets/customize-cif-components/core-location-ide.png)![
+   {IDE van de plaatsIDE van 0} Kern ![&#128279;](../assets/customize-cif-components/core-location-ide.png)
 
    `MyProductTeaser.java` is een Interface Java™ die de CIF [ ProductTeaser ](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface uitbreidt.
 
@@ -346,7 +346,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
        componentGroup="Venia - Commerce"/>
    ```
 
-   De componentdefinitie voor de Product Teaser Component in dit project is hierboven. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` . Dit is een voorbeeld van het creëren van de component van de Volmacht van de a [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van alle HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u de `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
+   De componentdefinitie voor de Product Teaser Component in dit project is hierboven. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` . Dit is een voorbeeld van het creëren van de component van de Volmacht van de a [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van alle HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u de `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
 
 1. Open het bestand `productteaser.html` . Dit is een exemplaar van het `productteaser.html` dossier van de [ CIF Taser van het Product ](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -430,7 +430,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
 Op dit punt werkt de logica voor wanneer om **vriendschappelijk Eco** badge te tonen, nochtans kon de gewone tekst sommige stijlen gebruiken. Voeg vervolgens een pictogram en stijlen toe aan de module `ui.frontend` om de implementatie te voltooien.
 
-1. Download het {](../assets/customize-cif-components/eco_friendly.svg) dossier 0} eco_Vriendelijk.svg. [ Dit wordt gebruikt als **Milieuvriendelijk** badge.
+1. Download het {[&#128279;](../assets/customize-cif-components/eco_friendly.svg) dossier 0} eco_Vriendelijk.svg.  Dit wordt gebruikt als **Milieuvriendelijk** badge.
 1. Ga terug naar de IDE en navigeer naar de map `ui.frontend` .
 1. Voeg het bestand `eco_friendly.svg` toe aan de map `ui.frontend/src/main/resources/images` :
 

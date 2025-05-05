@@ -44,7 +44,7 @@ Stappen voor het maken van een app op basis van een toepassingssjabloon:
 1. Ga naar de AEM Mobile-app-catalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Selecteer **creëren** > **app** zoals hieronder getoond
 
-Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Om, verwezenlijking van artikelen, banners, en inzamelingen opnieuw te bezoeken, zie {de Acties van het Beheer van de Inhoud 0} ](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).[
+Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Om, verwezenlijking van artikelen, banners, en inzamelingen opnieuw te bezoeken, zie {de Acties van het Beheer van de Inhoud 0} [&#128279;](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Kies &quot;**+**&quot;op het linkerpaneel om componenten aan uw artikel toe te v
 
 ### Sjablonen voor gebruik buiten de box maken {#creating-out-of-the-box-templates}
 
-Er zijn geen uit-van-de-doos de Malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanemalplaatjes zouden moeten uitbreiden, zie het malplaatjesteekproef van het Artikel van de Toepassing van het Geometrixx Unlimited [ ](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Er zijn geen uit-van-de-doos de Malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanemalplaatjes zouden moeten uitbreiden, zie het malplaatjesteekproef van het Artikel van de Toepassing van het Geometrixx Unlimited [&#128279;](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
 
 De belangrijkste eigenschappen buiten de normale AEM vereiste eigenschappen omvatten;
 

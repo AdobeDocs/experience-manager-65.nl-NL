@@ -40,7 +40,7 @@ U kunt **uitgeven** elk segment om a **Titel**, **Beschrijving** en **factor van
 
 ## Verhoging van factor {#boost-factor}
 
-Elk segment heeft a **** parameter van de Verhoging die als wegingsfactor wordt gebruikt; een hoger aantal wijst erop dat het segment in voorkeur aan een segment met een lager aantal zal worden geselecteerd.
+Elk segment heeft a **&#x200B;**&#x200B;parameter van de Verhoging die als wegingsfactor wordt gebruikt; een hoger aantal wijst erop dat het segment in voorkeur aan een segment met een lager aantal zal worden geselecteerd.
 
 * Minimumwaarde: `0`
 * Maximumwaarde: `1000000`
@@ -109,7 +109,7 @@ De volgende segmentkenmerken zijn beschikbaar buiten het vak; ze kunnen van het 
 
 U kunt deze eigenschappen combineren gebruikend de booleaanse exploitanten OF EN (zie [ Creërend een Nieuw Segment ](#creating-a-new-segment)) om het nauwkeurige scenario te bepalen voor het selecteren van dit segment.
 
-Wanneer de volledige verklaring aan waar evalueert dan heeft dit segment opgelost. Als er veelvoudige toepasselijke segmenten zijn, dan wordt de **[1} factor van de Verhoging {ook gebruikt.](/help/sites-administering/campaign-segmentation.md#boost-factor)**
+Wanneer de volledige verklaring aan waar evalueert dan heeft dit segment opgelost. Als er veelvoudige toepasselijke segmenten zijn, dan wordt de **[1&rbrace; factor van de Verhoging &lbrace;ook gebruikt.](/help/sites-administering/campaign-segmentation.md#boost-factor)**
 
 >[!CAUTION]
 >
@@ -138,7 +138,7 @@ Het nieuwe segment definiëren:
    ![ Uitgevend een component in de Redacteur van het Segment ](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Klik **O.K.** om uw definitie te bewaren:
-1. U kunt **** de segmentdefinitie uitgeven om het a **Titel**, **Beschrijving** en **[factor van de Verhoging](#boost-factor)** te geven:
+1. U kunt **&#x200B;**&#x200B;de segmentdefinitie uitgeven om het a **Titel**, **Beschrijving** en **[factor van de Verhoging](#boost-factor)** te geven:
 
    ![ Uitgevend de segmentmontages in de Redacteur van het Segment ](assets/screen_shot_2012-02-02at103547am.png)
 

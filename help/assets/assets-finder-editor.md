@@ -206,7 +206,7 @@ Als u de pagina Asset Editor maakt, is het verstandig de pagina direct onder de 
 Een pagina voor de Editor van middelen maken:
 
 1. In het **[!UICONTROL Websites]** lusje, navigeer aan de plaats waar u een pagina van de Redacteur van Activa wilt creëren en **Nieuw** klikken.
-1. Selecteer **de Redacteur van Activa van 0} Geometrixx en klik** creeer **.** De nieuwe pagina wordt gecreeerd en de pagina is vermeld in de **Websites** tabel.
+1. Selecteer **de Redacteur van Activa van 0&rbrace; Geometrixx en klik** creeer **.** De nieuwe pagina wordt gecreeerd en de pagina is vermeld in de **Websites** tabel.
 
 ![ screen_shot_2012-04-23at15858pm ](assets/screen_shot_2012-04-23at15858pm.png)
 
@@ -224,7 +224,7 @@ Nadat u de aangepaste pagina Asset Editor hebt gemaakt, dient u ervoor te zorgen
 
 De pagina Asset Editor instellen:
 
-1. In de pagina van het Aandeel van Activa, geeft de klik **** naast de Bouwer van de Vraag uit.
+1. In de pagina van het Aandeel van Activa, geeft de klik **&#x200B;**&#x200B;naast de Bouwer van de Vraag uit.
 
 ![ screen_shot_2012-04-23at20123pm ](assets/screen_shot_2012-04-23at20123pm.png)
 
@@ -264,13 +264,13 @@ Elementbewerkingscomponenten toevoegen:
 
 #### Metagegevensformulier en tekstveld - De component Metagegevens weergeven configureren {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Het metagegevensformulier is een formulier met een begin- en eindactie. In tussen, gaat u **gebieden van de Tekst 0} in.** Zie [ Forms ](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie bij het werken met vormen.
+Het metagegevensformulier is een formulier met een begin- en eindactie. In tussen, gaat u **gebieden van de Tekst 0&rbrace; in.** Zie [ Forms ](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie bij het werken met vormen.
 
 1. Creeer een beginactie door **te klikken geeft** op het gebied van het Begin van de vorm uit. U kunt desgewenst een titel voor een vak invoeren. Door gebrek, is de titel van de Doos **Meta-gegevens**. Schakel het selectievakje Clientvalidatie in als u de JavaScript-clientcode voor validatie wilt genereren.
 
 ![ screen_shot_2012-04-23at22911pm ](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Creeer een actie van het Eind door **te klikken geeft** op het gebied van het Eind van de vorm uit. U kunt bijvoorbeeld een **[!UICONTROL Submit]** -optie maken waarmee gebruikers hun wijzigingen in metagegevens kunnen verzenden. Naar keuze, kunt u de optie van het Terugstellen van de a **** toevoegen die de meta-gegevens aan zijn originele staat terugstelt.
+1. Creeer een actie van het Eind door **te klikken geeft** op het gebied van het Eind van de vorm uit. U kunt bijvoorbeeld een **[!UICONTROL Submit]** -optie maken waarmee gebruikers hun wijzigingen in metagegevens kunnen verzenden. Naar keuze, kunt u de optie van het Terugstellen van de a **&#x200B;**&#x200B;toevoegen die de meta-gegevens aan zijn originele staat terugstelt.
 
 ![ screen_shot_2012-04-23at23138pm ](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -352,7 +352,7 @@ Standaard bevindt het bestand zich in de modus Alleen-lezen, zodat gebruikers he
 
 ![ screen_shot_2012-04-23at35100pm ](assets/screen_shot_2012-04-23at35100pm.png)
 
-Als de Titel kan worden uitgegeven, kunt u een titel en een beschrijving toevoegen door het Potlood te klikken om het **venster van de Eigenschappen van 0} Activa te openen {.** Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
+Als de Titel kan worden uitgegeven, kunt u een titel en een beschrijving toevoegen door het Potlood te klikken om het **venster van de Eigenschappen van 0&rbrace; Activa te openen &lbrace;.** Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
 
 Wanneer het uitgeven van [!UICONTROL Title], kunnen de gebruikers de **Titel**, **Beschrijving** veranderen, en **ingaan** en **van Tijden** om de activa aan en weg te zetten.
 
@@ -393,7 +393,7 @@ Met [!DNL Experience Manager Assets] kunt u verschillende elementen tegelijk wij
 
 Elementen bewerken via de pagina Asset Editor:
 
-1. Open de Geometrixx **pagina van het Centrum van de Pers 1}:**
+1. Open de Geometrixx **pagina van het Centrum van de Pers 1&rbrace;:**
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Selecteer de elementen:
@@ -403,7 +403,7 @@ Elementen bewerken via de pagina Asset Editor:
 
    Als u een reeks elementen wilt selecteren, klikt u op het eerste element en `Shift + click` op het laatste element.
 
-1. Klik **uitgeven Meta-gegevens** op het **3} gebied van Acties {(linkerdeel van de pagina).**
+1. Klik **uitgeven Meta-gegevens** op het **3&rbrace; gebied van Acties &lbrace;(linkerdeel van de pagina).**
 1. De Geometrixx **pagina van de Redacteur van de Activa van het Centrum van de pers** opent in een nieuw lusje. De metagegevens van de elementen worden als volgt weergegeven:
 
    * Een label-dat niet op alle activa maar slechts op slechts enkelen van toepassing is - wordt getoond in cursief.

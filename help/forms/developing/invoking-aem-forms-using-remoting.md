@@ -132,7 +132,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 
 >[!NOTE]
 >
-als AEM Forms zo is geconfigureerd dat onbeveiligde documenten kunnen worden geüpload, kunt u een gebruiker die niet over de gebruikersrol Document Upload Application beschikt, gebruiken om een document te uploaden. Een gebruiker kan ook beschikken over de machtiging Document uploaden. Als AEM Forms echter is geconfigureerd om alleen beveiligde documenten toe te staan, moet u ervoor zorgen dat de gebruiker beschikt over de rol Gebruiker van Document uploaden of de machtiging Uploaden document. (Zie [ Vormend AEM Forms om veilige en onveilige documenten ](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents) goed te keuren.
+>als AEM Forms zo is geconfigureerd dat onbeveiligde documenten kunnen worden geüpload, kunt u een gebruiker die niet over de gebruikersrol Document Upload Application beschikt, gebruiken om een document te uploaden. Een gebruiker kan ook beschikken over de machtiging Document uploaden. Als AEM Forms echter is geconfigureerd om alleen beveiligde documenten toe te staan, moet u ervoor zorgen dat de gebruiker beschikt over de rol Gebruiker van Document uploaden of de machtiging Uploaden document. (Zie [ Vormend AEM Forms om veilige en onveilige documenten ](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents) goed te keuren.
 
 U gebruikt de standaard uploadmogelijkheden voor Flash voor de opgegeven upload-URL: `https://SERVER:PORT/remoting/lcfileupload` . Vervolgens kunt u het object `DocumentReference` gebruiken wanneer een invoerparameter van het type `Document` wordt verwacht
 ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }` het Verwijderen Snelle Begin gebruikt het Verwijderen uploadt servlet om een dossier van de PDF tot het `MyApplication/EncryptDocument` proces over te gaan. (Zie [ Aanroepend een kortstondig proces door een onbeveiligd document over te gaan gebruikend (Vervangen voor AEM vormen) AEM Forms die ](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) verwijdert.)
@@ -197,7 +197,7 @@ Als u een AEM Forms-proces wilt aanroepen vanuit een toepassing die is gebouwd m
 
 >[!NOTE]
 >
-In deze sectie wordt besproken hoe u een AEM Forms-proces kunt aanroepen en een document kunt uploaden wanneer AEM Forms is geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over hoe te om processen van AEM Forms aan te halen en veilige documenten te uploaden en hoe te AEM Forms vormen om veilige en onveilige documenten goed te keuren, zie [ het overgaan veilige documenten om processen aan te halen gebruikend het Verwijderen ](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+>In deze sectie wordt besproken hoe u een AEM Forms-proces kunt aanroepen en een document kunt uploaden wanneer AEM Forms is geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over hoe te om processen van AEM Forms aan te halen en veilige documenten te uploaden en hoe te AEM Forms vormen om veilige en onveilige documenten goed te keuren, zie [ het overgaan veilige documenten om processen aan te halen gebruikend het Verwijderen ](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **Creërend mx:instantie RemoteObject**
 
@@ -303,7 +303,7 @@ Voor douaneauthentificatie, verzendt de server een fout naar de cliënt om erop 
 
 >[!NOTE]
 >
-Voor informatie over het uitvoeren van authentificatie gebruikend de tokens van HTTP, zie [ Creërend de toepassingen van de Flash Builder die authentificatie uitvoeren SSO gebruikend de tokens van HTTP ](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
+>Voor informatie over het uitvoeren van authentificatie gebruikend de tokens van HTTP, zie [ Creërend de toepassingen van de Flash Builder die authentificatie uitvoeren SSO gebruikend de tokens van HTTP ](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### Aangepaste verificatie gebruiken {#using-custom-authentication}
 
@@ -311,7 +311,7 @@ U laat douaneauthentificatie in beleidsconsole toe door de authentificatiemethod
 
 >[!NOTE]
 >
-In de vorige versie van AEM Forms hebt u referenties naar een doel verzonden door de methode `RemoteObject.setCredentials` aan te roepen. De methode `setCredentials` gaf de gegevens pas daadwerkelijk door aan de server als de component voor het eerst probeert verbinding te maken met de server. Daarom als de component een foutengebeurtenis uitbracht, kon u niet zeker zijn als de fout wegens een authentificatiefout, of om een andere reden gebeurde. De methode `ChannelSet.login` maakt verbinding met de server wanneer u deze aanroept, zodat u een verificatieprobleem direct kunt afhandelen. Hoewel u de methode `setCredentials` kunt blijven gebruiken, wordt aangeraden de methode `ChannelSet.login` te gebruiken.
+>In de vorige versie van AEM Forms hebt u referenties naar een doel verzonden door de methode `RemoteObject.setCredentials` aan te roepen. De methode `setCredentials` gaf de gegevens pas daadwerkelijk door aan de server als de component voor het eerst probeert verbinding te maken met de server. Daarom als de component een foutengebeurtenis uitbracht, kon u niet zeker zijn als de fout wegens een authentificatiefout, of om een andere reden gebeurde. De methode `ChannelSet.login` maakt verbinding met de server wanneer u deze aanroept, zodat u een verificatieprobleem direct kunt afhandelen. Hoewel u de methode `setCredentials` kunt blijven gebruiken, wordt aangeraden de methode `ChannelSet.login` te gebruiken.
 
 Omdat de veelvoudige bestemmingen de zelfde kanalen, en het overeenkomstige voorwerp kunnen gebruiken ChannelSet, het programma openen aan één bestemmings login de gebruiker aan een andere bestemming die het zelfde kanaal of de kanalen gebruikt. Als twee componenten verschillende geloofsbrieven op het zelfde voorwerp toepassen ChannelSet, worden de laatste toegepaste geloofsbrieven gebruikt. Als meerdere componenten hetzelfde geverifieerde ChannelSet-object gebruiken, worden bij het aanroepen van de methode `logout` alle componenten uit de doelen uitgecheckt.
 
@@ -457,7 +457,7 @@ Wanneer een AEM Forms-service wordt aangeroepen met (Vervangen voor AEM formulie
 
 >[!NOTE]
 >
-Als een cookie ongeldig is of ontbreekt, wordt niet impliciet omgeleid naar een aanmeldingspagina. Daarom kunt u nog een anonieme dienst roepen.
+>Als een cookie ongeldig is of ontbreekt, wordt niet impliciet omgeleid naar een aanmeldingspagina. Daarom kunt u nog een anonieme dienst roepen.
 
 U kunt het AEM Forms-mechanisme voor eenmalige aanmelding omzeilen door een clienttoepassing te schrijven die zich zelfstandig aanmeldt en zich afmeldt. Als u het Single Sign-On mechanisme omzeilt, kunt u of basis of douaneauthentificatie met uw toepassing gebruiken.
 
@@ -552,7 +552,7 @@ Wanneer het overgaan van een veilig document, gebruik enig sign-on en specificee
 
 >[!NOTE]
 >
-Wanneer u een rol maakt en u wilt dat leden van die rol beveiligde documenten uploaden, controleert u of u de machtiging Document uploaden hebt opgegeven.
+>Wanneer u een rol maakt en u wilt dat leden van die rol beveiligde documenten uploaden, controleert u of u de machtiging Document uploaden hebt opgegeven.
 
 AEM Forms ondersteunt een bewerking met de naam `getFileUploadToken` die een token retourneert dat is doorgegeven aan het uploadservlet. De methode `DocumentReference.constructRequestForUpload` vereist een URL naar AEM Forms, samen met het token dat door de methode `LC.FileUploadAuthenticator.getFileUploadToken` wordt geretourneerd. Deze methode retourneert een `URLRequest` -object dat wordt gebruikt in de aanroep naar het uploadservlet. De volgende code demonstreert deze toepassingslogica.
 
@@ -621,8 +621,8 @@ U kunt beheerconsole gebruiken om op te geven of documenten veilig zijn wanneer 
 
 >[!NOTE]
 >
-* Als u AEM Forms wilt configureren voor het accepteren van onbeveiligde documenten, selecteert u de optie Niet-beveiligde documenten mogen worden geüpload vanuit Flex-toepassingen. Start vervolgens een toepassing of service opnieuw om ervoor te zorgen dat de instelling van kracht wordt.
-* Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
+>* Als u AEM Forms wilt configureren voor het accepteren van onbeveiligde documenten, selecteert u de optie Niet-beveiligde documenten mogen worden geüpload vanuit Flex-toepassingen. Start vervolgens een toepassing of service opnieuw om ervoor te zorgen dat de instelling van kracht wordt.
+>* Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 
 ### Snel starten: Een kortstondig proces aanroepen door een beveiligd document door te geven met Verwijderen {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -977,7 +977,7 @@ De velden van de klasse ActionScript komen overeen met de velden die bij het com
 
 >[!NOTE]
 >
-Een goede manier om de gebiedsnamen te bepalen die tot een complex type van Forms behoren is WSDL van de dienst in Webbrowser te bekijken. Een WSDL specificeert de complexe types van de dienst en de overeenkomstige gegevensleden. De volgende WSDL wordt gebruikt voor de klantenservice: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
+>Een goede manier om de gebiedsnamen te bepalen die tot een complex type van Forms behoren is WSDL van de dienst in Webbrowser te bekijken. Een WSDL specificeert de complexe types van de dienst en de overeenkomstige gegevensleden. De volgende WSDL wordt gebruikt voor de klantenservice: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 De klasse van het ActionScript van de Klant behoort tot een pakket genoemd klant. U wordt aangeraden alle klassen van het ActionScript die zijn toegewezen aan complexe AEM Forms-gegevenstypen in hun eigen pakket te plaatsen. Maak een map in de bronmap van het Flex-project en plaats het ActionScript in de map, zoals in de volgende afbeelding wordt getoond.
 
@@ -989,7 +989,7 @@ Het volgende codevoorbeeld roept de dienst van de Klant aan en leidt tot een kla
 
 >[!NOTE]
 >
-Voordat u deze snelle start kunt uitvoeren, moet u de aangepaste component Bank maken en implementeren.
+>Voordat u deze snelle start kunt uitvoeren, moet u de aangepaste component Bank maken en implementeren.
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>

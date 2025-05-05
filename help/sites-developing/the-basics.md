@@ -44,7 +44,7 @@ De norm van de Bewaarplaats van de Inhoud Java™ (JCR), [ JSR 283 ](https://dev
 
 Specificatie lead is in handen van Adobe Research (Zwitserland) AG.
 
-Het [ JCR API 2.0 ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, javax.jcr.&amp;ast; wordt gebruikt voor directe toegang tot en bewerking van inhoud in de opslagplaats.
+Het [ JCR API 2.0 ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, javax.jcr.&ast; wordt gebruikt voor directe toegang tot en bewerking van inhoud in de opslagplaats.
 
 ## Experience Server (CRX) en Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -285,7 +285,7 @@ Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw
 
 ### Verkopen-API {#sling-api}
 
-Dit gebruikt het Sling API-pakket, org.apache.sling.&amp;ast; en tagbibliotheken.
+Dit gebruikt het Sling API-pakket, org.apache.sling.&ast; en tagbibliotheken.
 
 ### Verwijzen naar bestaande elementen met gebruik van sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -316,7 +316,7 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Sling, en daarom CQ5, gebruikt de ](https://felix.apache.org/documentation/index.html) implementatie 0} Apache Felix van OSGI (Open het initiatief van de Gateway van de Diensten) en is gebaseerd op Versie 4 van Versie 4.2 van het Platform van de Dienst OSGi. [ Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Sling, en daarom CQ5, gebruikt de [&#128279;](https://felix.apache.org/documentation/index.html) implementatie 0&rbrace; Apache Felix van OSGI (Open het initiatief van de Gateway van de Diensten) en is gebaseerd op Versie 4 van Versie 4.2 van het Platform van de Dienst OSGi.  Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 

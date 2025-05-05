@@ -61,7 +61,7 @@ Afhankelijk van de schaal van uw systeem kan de ontwikkelomgeving beschikken ove
 
 ### Kwaliteitsborging {#quality-assurance}
 
-Dit milieu wordt gebruikt door het team van de kwaliteitsborging om [ ](/help/sites-developing/test-plan.md) uw nieuw systeem volledig te testen; zowel ontwerp als functie. De omgeving moet beschikken over auteur- en publicatieomgevingen met geschikte content. Ook moet het alle noodzakelijke services bieden om een volledige reeks tests mogelijk te maken.
+Dit milieu wordt gebruikt door het team van de kwaliteitsborging om [&#128279;](/help/sites-developing/test-plan.md) uw nieuw systeem volledig te testen; zowel ontwerp als functie. De omgeving moet beschikken over auteur- en publicatieomgevingen met geschikte content. Ook moet het alle noodzakelijke services bieden om een volledige reeks tests mogelijk te maken.
 
 ### Staging {#staging}
 

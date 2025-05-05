@@ -30,11 +30,11 @@ Met Creative Project kunt u de volgende taken stroomlijnen in uw fotoopnameswork
 
 >[!NOTE]
 >
->Zie {de Rollen van de Gebruiker van het 0} Project voor informatie ](/help/sites-authoring/projects.md#user-roles-in-a-project) bij het toewijzen van gebruikersrollen en werkschema&#39;s aan bepaalde soorten gebruikers.[
+>Zie {de Rollen van de Gebruiker van het 0} Project voor informatie [&#128279;](/help/sites-authoring/projects.md#user-roles-in-a-project) bij het toewijzen van gebruikersrollen en werkschema&#39;s aan bepaalde soorten gebruikers.
 
 ## Workflows voor foto&#39;s van producten  {#exploring-product-photo-shoot-workflows}
 
-Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvereisten te voldoen. Het **malplaatje van het Project van de Opname van de Foto van het 0} Product {is beschikbaar uit de doos.** Deze sjabloon bevat workflows voor fotoopname waarmee u aanvragen voor productfotoshoot kunt starten en beheren. Het omvat ook een reeks taken waarmee u digitale afbeeldingen voor producten kunt verkrijgen via de juiste controle- en goedkeuringsprocedures.
+Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvereisten te voldoen. Het **malplaatje van het Project van de Opname van de Foto van het 0&rbrace; Product &lbrace;is beschikbaar uit de doos.** Deze sjabloon bevat workflows voor fotoopname waarmee u aanvragen voor productfotoshoot kunt starten en beheren. Het omvat ook een reeks taken waarmee u digitale afbeeldingen voor producten kunt verkrijgen via de juiste controle- en goedkeuringsprocedures.
 
 ## Een fotofotoproject voor een product maken {#create-a-product-photo-shoot-project}
 
@@ -42,7 +42,7 @@ Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvere
 
    ![ creeer projectknoop ](assets/chlimage_1-132a.png)
 
-1. In **creeer Project** pagina, selecteer het **malplaatje van het Project van de Foto van het Product** en klik daarna ****.
+1. In **creeer Project** pagina, selecteer het **malplaatje van het Project van de Foto van het Product** en klik daarna **&#x200B;**.
 
    ![ tovenaar van het Project ](assets/chlimage_1-133a.png)
 
@@ -74,7 +74,7 @@ Het **Web van de Foto van het Product (de Integratie van Commerce)** werkschema 
 * Reviseren en goedkeuren
 * Verplaatsen naar productietaak
 
-Als de productinformatie niet beschikbaar in AEM is, gebruik het **werkschema van de Foto van het 0} Product {om beeldactiva met de producten in kaart te brengen die op de details worden gebaseerd u in een Csv- dossier uploadt.** Het CSV-bestand moet basisproductinformatie bevatten, zoals product-id, categorie en beschrijving. De workflow haalt goedgekeurde middelen voor de producten op.
+Als de productinformatie niet beschikbaar in AEM is, gebruik het **werkschema van de Foto van het 0&rbrace; Product &lbrace;om beeldactiva met de producten in kaart te brengen die op de details worden gebaseerd u in een Csv- dossier uploadt.** Het CSV-bestand moet basisproductinformatie bevatten, zoals product-id, categorie en beschrijving. De workflow haalt goedgekeurde middelen voor de producten op.
 
 Deze workflow omvat de volgende taken:
 
@@ -121,11 +121,11 @@ Deze taak omvat het toewijzen van workflowstappen aan gebruikers op basis van hu
 Om het **werkschema van de Foto van het Product te vormen**:
 
 1. Navigeer aan **Hulpmiddelen** > **Werkschema&#39;s**, en selecteer dan de **Modellen** tegel om de **Modellen van het Werkschema** pagina te openen.
-1. Selecteer het **werkschema van de Foto van het 0} Product van de Foto, en selecteer** uitgeven **pictogram van de toolbar om het op uit te geven wijze te openen.**
+1. Selecteer het **werkschema van de Foto van het 0&rbrace; Product van de Foto, en selecteer** uitgeven **pictogram van de toolbar om het op uit te geven wijze te openen.**
 
    ![ Model van de Opname van de Foto van het Product ](assets/chlimage_1-138a.png)
 
-1. In de **pagina van het Werkschema van de Opname van de Foto van het 0} Product {, open een projecttaak.** Bijvoorbeeld, open de **Upload Opname van de Lijst** taak.
+1. In de **pagina van het Werkschema van de Opname van de Foto van het 0&rbrace; Product &lbrace;, open een projecttaak.** Bijvoorbeeld, open de **Upload Opname van de Lijst** taak.
 
    ![ geef model ](assets/project-photo-shoot-workflow-model.png) uit
 
@@ -195,7 +195,7 @@ De workflow voor fotograferen bevat verschillende taken. Elke taak wordt toegewe
 
    ![ Van de Mening ontsproten lijst ](assets/chlimage_1-148a.png)
 
-   Om de bestaande gegevens uit te geven of nieuwe gegevens toe te voegen, **uitgeeft** van de toolbar. Slechts zijn **Product **en **Beschrijving** gebieden editable.
+   Om de bestaande gegevens uit te geven of nieuwe gegevens toe te voegen, **uitgeeft** van de toolbar. Slechts zijn **Product &#x200B;** en **Beschrijving** gebieden editable.
 
    ![ geeft ontsproten lijst ](assets/chlimage_1-149a.png) uit
 
@@ -312,7 +312,7 @@ Met deze taak verplaatst u de goedgekeurde middelen naar de map voor productie, 
 
    ![ Beweging aan productie ](assets/chlimage_1-160a.png)
 
-1. Om de goedgekeurde activa voor de fotospruit te bekijken alvorens hen aan productie klaar omslag te bewegen, klik de **Mening Goedgekeurde verbinding van Assets** onder de projectduimnagel op de **beweging aan de 3} taakpagina van de Productie {.**
+1. Om de goedgekeurde activa voor de fotospruit te bekijken alvorens hen aan productie klaar omslag te bewegen, klik de **Mening Goedgekeurde verbinding van Assets** onder de projectduimnagel op de **beweging aan de 3&rbrace; taakpagina van de Productie &lbrace;.**
 
    ![ Beweging aan de pagina van de productietaak ](assets/chlimage_1-161a.png)
 
@@ -340,7 +340,7 @@ U kunt de **werkschema&#39;s aanpassen van de Foto van het Project** die op uw v
 
    ![ creeer op rol-gebaseerde projecttaak ](assets/project-model-role-based.png)
 
-1. Open de **Rol Gebaseerde 1} stap van de Taak.**
+1. Open de **Rol Gebaseerde 1&rbrace; stap van de Taak.**
 1. Op het **lusje van de Taak**, verstrek een naam voor de taak die in de taaklijst zal tonen. U kunt de taak aan een rol ook toewijzen, de standaardprioriteit plaatsen, een beschrijving verstrekken, en een tijd specificeren wanneer de taak verschuldigd is.
 
    ![ vorm werkschemastap ](assets/project-task-step.png)

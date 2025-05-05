@@ -42,7 +42,7 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >* Het beheren van werkschema&#39;s en werkschemainstanties, zie [ het Beheer Werkschema&#39;s ](/help/sites-administering/workflows.md).
 >* Voor een Communautair Artikel van begin tot eind, zie [ Wijzigend Digitale Assets gebruikend de Workflows van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)
 >* Zie [ vragen de AEM Deskundigen Webinar op Werkschema&#39;s ](https://communities.adobeconnect.com/p5s33iburd54/).
->* De veranderingen in de plaatsen van informatie zien {de Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/repository-restructuring.md) en [ Beste praktijken van het Werkschema - Punten ](/help/sites-developing/workflows-best-practices.md#locations).[
+>* De veranderingen in de plaatsen van informatie zien &lbrace;de Herstructurering van de Bewaarplaats in AEM 6.5 [&#128279;](/help/sites-deploying/repository-restructuring.md) en [ Beste praktijken van het Werkschema - Punten ](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
 ## Model {#model}

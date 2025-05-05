@@ -19,7 +19,7 @@ U kunt meldingen ontvangen van verschillende AEM, zoals workflows en projecten, 
 * Taken:
 
    * deze kunnen ook op diverse punten binnen AEM UI, bijvoorbeeld, onder **Projecten** worden gecreeerd,
-   * deze kunnen het product van een werkschema **zijn creeert Taak** of **creeer de 3} stap van de Taak van het Project {.**
+   * deze kunnen het product van een werkschema **zijn creeert Taak** of **creeer de 3&rbrace; stap van de Taak van het Project &lbrace;.**
 
 * Workflows:
 

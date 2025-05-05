@@ -406,7 +406,7 @@ Het eCommerce-project bevat een standaardzoekcomponent in:
 
 ![ chlimage_1-34 ](/help/sites-developing/assets/chlimage_1-34a.png)
 
-Dit gebruik onderzoek API om de geselecteerde handelingsmotor (zie {de Selectie van de Motor van de Handel 0} eCommerce ](#ecommerce-engine-selection)) te vragen:[
+Dit gebruik onderzoek API om de geselecteerde handelingsmotor (zie {de Selectie van de Motor van de Handel 0} eCommerce [&#128279;](#ecommerce-engine-selection)) te vragen:
 
 #### Zoeken in API {#search-api}
 

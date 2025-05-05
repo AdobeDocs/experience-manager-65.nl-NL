@@ -32,7 +32,7 @@ Het rapport Lange actieve processen geeft de AEM Forms-processen weer die meer d
 
 ### Een lang lopend procesrapport uitvoeren {#to-execute-a-long-running-process-report}
 
-1. Om de lijst van vooraf bepaalde rapporten in Proces Meldend te bekijken, op het **Proces Meldend** boommening, klik de **3} knoop van Rapporten {.**
+1. Om de lijst van vooraf bepaalde rapporten in Proces Meldend te bekijken, op het **Proces Meldend** boommening, klik de **3&rbrace; knoop van Rapporten &lbrace;.**
 1. Klik de **Lange Lange Lange Lopende knoop van Processen** rapport.
 
    ![ long_running_node ](assets/long_running_node.png)
@@ -65,8 +65,8 @@ In het rapport Procesduur wordt het aantal instanties van een Forms-proces weerg
 
 ### Een rapport over de procesduur uitvoeren {#to-execute-a-process-duration-report}
 
-1. Om de vooraf bepaalde rapporten in Proces Meldend te bekijken, over het **Proces Meldend** boommening, klik de **3} knoop van Rapporten {.**
-1. Klik de **rapportknoop van de Duur van 0} Processen {.**
+1. Om de vooraf bepaalde rapporten in Proces Meldend te bekijken, over het **Proces Meldend** boommening, klik de **3&rbrace; knoop van Rapporten &lbrace;.**
+1. Klik de **rapportknoop van de Duur van 0&rbrace; Processen &lbrace;.**
 
    ![ process_duration_node ](assets/process_duration_node.png)
 
@@ -96,8 +96,8 @@ Het workflowvolutrapport geeft het aantal exemplaren van een AEM Forms-proces da
 
 ### Een workflowvolutrapport uitvoeren {#to-execute-a-workflow-volume-report}
 
-1. Om de vooraf bepaalde rapporten in Proces Meldend te bekijken, over het **Proces Meldend** boommening, klik de **3} knoop van Rapporten {.**
-1. Klik de **rapportknoop van het Volume van het 0} Werkschema {.**
+1. Om de vooraf bepaalde rapporten in Proces Meldend te bekijken, over het **Proces Meldend** boommening, klik de **3&rbrace; knoop van Rapporten &lbrace;.**
+1. Klik de **rapportknoop van het Volume van het 0&rbrace; Werkschema &lbrace;.**
 
    ![ workflow_volume_node ](assets/workflow_volume_node.png)
 

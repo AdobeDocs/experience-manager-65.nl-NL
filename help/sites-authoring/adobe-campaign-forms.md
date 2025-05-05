@@ -103,7 +103,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
 
    ![ chlimage_1-47 ](assets/chlimage_1-47a.png)
 
-1. Voeg zo nodig componenten aan het formulier toe, zoals een tekstveld, een datumveld, een veld Selectievakje, een veld Optie enzovoort. Zie {de Componenten van de Vorm van 0} Adobe Campaign ](/help/sites-authoring/adobe-campaign-components.md) voor meer informatie over elke component.[
+1. Voeg zo nodig componenten aan het formulier toe, zoals een tekstveld, een datumveld, een veld Selectievakje, een veld Optie enzovoort. Zie {de Componenten van de Vorm van 0} Adobe Campaign [&#128279;](/help/sites-authoring/adobe-campaign-components.md) voor meer informatie over elke component.
 1. Klik het pictogram van de Configuratie om de component te openen. Bijvoorbeeld, in **Gebied van de Tekst (Campagne)** component, verander de titel en de tekst.
 
    Klik **Adobe Campaign** om het vormgebied aan een de meta-gegevensvariabele van Adobe Campaign in kaart te brengen. Wanneer u het formulier verzendt, wordt het toegewezen veld bijgewerkt in Adobe Campaign. Alleen velden met overeenkomende typen zijn beschikbaar in de variabele kiezer (bijvoorbeeld tekenreeksvariabelen voor tekstvelden).

@@ -54,7 +54,7 @@ Het resulterende `export.csv` -bestand kan worden geopend in Excel of een andere
 
 ![ etc-01 ](assets/etc-01.png)
 
-Creëer **optie van het Rapport CSV** is beschikbaar wanneer het doorbladeren van de **3} console van Plaatsen {(in de mening van de Lijst): het is een optie van** creeer **drop-down menu:**
+Creëer **optie van het Rapport CSV** is beschikbaar wanneer het doorbladeren van de **3&rbrace; console van Plaatsen &lbrace;(in de mening van de Lijst): het is een optie van** creeer **drop-down menu:**
 
 ![ etc-02 ](assets/etc-02.png)
 

@@ -53,7 +53,7 @@ Momenteel, wordt de Op plaats het Uitgeven wijze toegelaten voor pagina-elemente
 
 >[!NOTE]
 >
->De component [!UICONTROL Title] is ontworpen om een korte tekst zonder regeleinden te bevatten. Wanneer het uitgeven van een titel op Op plaats het Uitgeven Wijze, opent het ingaan van een linebreak een nieuwe **component van de Tekst** {onder de titel.
+>De component [!UICONTROL Title] is ontworpen om een korte tekst zonder regeleinden te bevatten. Wanneer het uitgeven van een titel op Op plaats het Uitgeven Wijze, opent het ingaan van een linebreak een nieuwe **component van de Tekst** &lbrace;onder de titel.
 
 ## Functies van de Rich Text Editor {#features-of-the-rich-text-editor}
 
@@ -208,7 +208,7 @@ De zoekopdracht begint altijd op de huidige cursorpositie in de tekst. Wanneer h
 
 ![ cq55_rte_find_use ](assets/cq55_rte_find_use.png)
 
-**vervangt** optie laat u **** vinden, dan **vervangen** een individuele instantie met de gespecificeerde tekst, of **alle** instanties in de huidige component vervangen.
+**vervangt** optie laat u **&#x200B;**&#x200B;vinden, dan **vervangen** een individuele instantie met de gespecificeerde tekst, of **alle** instanties in de huidige component vervangen.
 
 ![ cq55_rte_findreplace_use ](assets/cq55_rte_findreplace_use.png)
 

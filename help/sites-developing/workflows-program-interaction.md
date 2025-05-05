@@ -403,7 +403,7 @@ De `uri` die in de resultaten wordt weergegeven, kan als de instantie `id` in an
 
 ### Hoe te om de Titel van het Werkschema te veranderen {#how-to-change-the-workflow-title}
 
-Om de **Titel van het Werkschema** te veranderen die in het **3} lusje van Instanties {van de werkschemaconsole wordt getoond, verzend a `POST` bevel:**
+Om de **Titel van het Werkschema** te veranderen die in het **3&rbrace; lusje van Instanties &lbrace;van de werkschemaconsole wordt getoond, verzend a `POST` bevel:**
 
 * to: `http://localhost:4502/etc/workflow/instances/{id}`
 

@@ -63,7 +63,7 @@ Sinds AEM 6.0 zijn wijzigingen aangebracht in de manier waarop overlays worden g
 
 De bekledingen zijn de geadviseerde methode voor vele veranderingen, zoals [ vormend uw consoles ](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) of [ creërend uw selectiecategorie aan activa browser in het zijpaneel ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (gebruikt wanneer het ontwerpen van pagina&#39;s). Zij zijn vereist als:
 
-* ***maak geen* veranderingen in de `/libs` tak **Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
+* ***maak geen* veranderingen in de `/libs` tak &#x200B;** Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
 
    * upgrade uitvoeren op uw exemplaar
    * een hotfix toepassen

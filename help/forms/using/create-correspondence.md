@@ -95,7 +95,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    De standaardspellingcontrole in uw browser controleert spelling in de redacteur van de Tekst. Als u de spelling en grammatica wilt controleren, kunt u de instellingen voor spellingcontrole van uw browser bewerken of browserinsteekmodules/invoegtoepassingen installeren om de spelling en de grammatica te controleren.
 
-   U kunt ook de verschillende sneltoetsen in de teksteditor gebruiken voor het beheren, bewerken en opmaken van tekst. Voor meer informatie over ](/help/forms/using/keyboard-shortcuts.md#correspondence-management) toetsenbordkortere weg van de Redacteur van de Tekst van 0} {in de Sneltoetsen van het Beheer van de Correspondentie.[
+   U kunt ook de verschillende sneltoetsen in de teksteditor gebruiken voor het beheren, bewerken en opmaken van tekst. Voor meer informatie over [&#128279;](/help/forms/using/keyboard-shortcuts.md#correspondence-management) toetsenbordkortere weg van de Redacteur van de Tekst van 0&rbrace; &lbrace;in de Sneltoetsen van het Beheer van de Correspondentie.
 
    ![ 5_edittextmodule ](assets/5_edittextmodule.png)
 

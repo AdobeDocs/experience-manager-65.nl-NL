@@ -385,9 +385,9 @@ De component wordt als volgt weergegeven:
 
 #### Voorbeeld 1: Aangepaste widget voor meerdere velden {#example-custom-multifield-widget}
 
-De **op widget-Gebaseerde dialoog van 0} Douane Multifield {toont een venster met één tabel.** De tab heeft een aangepaste widget met meerdere velden die, in tegenstelling tot de standaard widget met één veld, twee velden heeft: een vervolgkeuzemenu met twee opties en een tekstveld.
+De **op widget-Gebaseerde dialoog van 0&rbrace; Douane Multifield &lbrace;toont een venster met één tabel.** De tab heeft een aangepaste widget met meerdere velden die, in tegenstelling tot de standaard widget met één veld, twee velden heeft: een vervolgkeuzemenu met twee opties en een tekstveld.
 
-De **op widget-Gebaseerde dialoog van 0} Douane Multifield {:**
+De **op widget-Gebaseerde dialoog van 0&rbrace; Douane Multifield &lbrace;:**
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
 * Hiermee wordt één `tabpanel` -widget (knooppunttype = `cq:Widget` , xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)` ) weergegeven die een deelvenster bevat (knooppunttype = `cq:Widget` , xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
@@ -395,6 +395,7 @@ De **op widget-Gebaseerde dialoog van 0} Douane Multifield {:**
 * De `multifield` -widget heeft een fieldconfig (knooppunttype = `nt:unstructured` , xtype = `ejstcustom` , optionsProvider = `Ejst.x3.provideOptions` ) dat is gebaseerd op het aangepaste xtype &#39; `ejstcustom`&#39;:
    * &#39; `fieldconfig`&#39; is een configuratieoptie van het ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)` -object.
    * &#39; `optionsProvider`&#39; is een configuratie van de `ejstcustom` -widget. Deze wordt ingesteld met de methode `Ejst.x3.provideOptions` die wordt gedefinieerd in `exercises.js` at:
+
      `/apps/extjstraining/clientlib/js/exercises.js`
 en retourneert twee opties.
 * Wordt gedefinieerd door het knooppunt `multifield` op:
@@ -417,7 +418,7 @@ De aangepaste `multifield` widget (xtype = `ejstcustom`):
 * Registreert zichzelf als xtype &#39; `ejstcustom`&#39;:
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
 
-De **op widget-Gebaseerde de dialoogvertoningen van 0} Douane Multifield {als volgt:**
+De **op widget-Gebaseerde de dialoogvertoningen van 0&rbrace; Douane Multifield &lbrace;als volgt:**
 
 ![ screen_shot_2012-02-01at115840am ](assets/screen_shot_2012-02-01at115840am.png)
 
@@ -491,7 +492,7 @@ De RTE-plug-in:
   `CQ.form.rte.plugins.PluginRegistry.register("inserttext", Ejst.InsertTextPlugin);`
 * het `Ejst.InsertTextPlugin.Dialog` -object definieert het dialoogvenster dat wordt geopend wanneer op de insteekmodule wordt geklikt. De dialoog bestaat uit een paneel, een vorm, een textfield, en twee knopen (**O.K.** en **annuleert**).
 
-Om de **gebaseerde dialoog te gebruiken van de Redacteur van de Tekst van 0} Rich (RTE):**
+Om de **gebaseerde dialoog te gebruiken van de Redacteur van de Tekst van 0&rbrace; Rich (RTE):**
 
 1. Vervang de dialoog van de **component van de Douane Widgets** met de **Rich Text Editor (RTE) stop-in** gebaseerde dialoog:
 volg de stappen die voor [ worden beschreven Voorbeeld 2: Enige Dialoog van het Comité ](#example-single-panel-dialog)
@@ -517,7 +518,7 @@ Ga als volgt te werk om de **boomstructuuroverzichtscomponent** op de voorbeeldp
 1. Voeg de **4 toe. Boomstructuuroverzichtscomponent** naar de voorbeeldpagina vanaf het **tabblad ExtJS-widgets** gebruiken in de **sidekick**.
 1. In de component wordt het volgende weergegeven:
    * een titel, met tekst
-   * a **verbinding 0} EIGENSCHAPPEN {: klik om de eigenschappen van de paragraaf te tonen die in de bewaarplaats wordt opgeslagen.** Klik nogmaals om de eigenschappen te verbergen.
+   * a **verbinding 0&rbrace; EIGENSCHAPPEN &lbrace;: klik om de eigenschappen van de paragraaf te tonen die in de bewaarplaats wordt opgeslagen.** Klik nogmaals om de eigenschappen te verbergen.
    * een zwevend venster met een boomrepresentatie van de opslagplaats die kan worden uitgebreid.
 
 De component wordt als volgt weergegeven:
@@ -545,6 +546,7 @@ De JavaScript-code die is ingesloten in de JSP van de component:
 * Als het venster dat de boom toont niet bestaat, `treePanel` ([ CQ.Ext.tree.TreePanel ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) wordt gecreeerd:
    * `treePanel` bevat de gegevens die worden gebruikt om het venster te maken.
    * De gegevens worden teruggewonnen door servlet te roepen die bij wordt geregistreerd:
+
      `/bin/wcm/siteadmin/tree.json`
 * De listener `beforeload` zorgt ervoor dat het geselecteerde knooppunt wordt geladen.
 * Met het `root` -object wordt het pad `apps/extjstraining` ingesteld als de hoofdmap van de structuur.
@@ -584,7 +586,7 @@ De component Rasteroverzicht opnemen in de voorbeeldpagina:
 1. Voeg **5 toe. Het Overzicht van het net** component aan de steekproefpagina van **Gebruikend Widgets ExtJS** lusje in de **Sidekick**.
 1. De component wordt weergegeven:
    * een titel met tekst
-   * a **verbinding 0} EIGENSCHAPPEN {: klik om de eigenschappen van de paragraaf te tonen die in de bewaarplaats wordt opgeslagen.** Klik nogmaals om de eigenschappen te verbergen.
+   * a **verbinding 0&rbrace; EIGENSCHAPPEN &lbrace;: klik om de eigenschappen van de paragraaf te tonen die in de bewaarplaats wordt opgeslagen.** Klik nogmaals om de eigenschappen te verbergen.
    * een zwevend venster met gegevens in tabelvorm.
 
 De component wordt als volgt weergegeven:
@@ -631,19 +633,21 @@ Het JavaScript-bestand ( `defaultgrid.js` ) waarnaar wordt verwezen in de compon
   `store.load();`
 * `gridPanel` is een ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` -object dat `store` gebruikt:
    * De kolombreedten worden altijd opnieuw proportioneel:
+
      `forceFit: true`
    * u kunt slechts één rij tegelijk selecteren:
+
      `singleSelect:true`
 
 #### Voorbeeld 2: referentieraster voor zoeken {#example-reference-search-grid}
 
-Wanneer u het pakket installeert, `content.jsp` van de **2} component van het Overzicht van het Net {toont een net dat op statische gegevens gebaseerd is.** Het is mogelijk om de component te wijzigen om een raster met de volgende kenmerken weer te geven:
+Wanneer u het pakket installeert, `content.jsp` van de **2&rbrace; component van het Overzicht van het Net &lbrace;toont een net dat op statische gegevens gebaseerd is.** Het is mogelijk om de component te wijzigen om een raster met de volgende kenmerken weer te geven:
 
 * Bevat drie kolommen.
 * Is gebaseerd op gegevens die van de bewaarplaats door een servlet te roepen worden teruggewonnen.
 * De cellen van de laatste kolom kunnen worden bewerkt. De waarde blijft bestaan in een eigenschap `test` onder het knooppunt dat wordt gedefinieerd door het pad dat in de eerste kolom wordt weergegeven.
 
-Zoals in de voorgaande sectie wordt uitgelegd, haalt het vensterobject het ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` -object op door de methode `getGridPanel()` aan te roepen die in het `defaultgrid.js` -bestand op `/apps/extjstraining/components/gridoverview/defaultgrid.js` is gedefinieerd. De component **Grid-overzicht **biedt een andere implementatie voor de methode `getGridPanel()` , gedefinieerd in het `referencesearch.js` bestand at `/apps/extjstraining/components/gridoverview/referencesearch.js` . Door het .js dossier te schakelen dat in component jsp van verwijzingen wordt voorzien, is het net gebaseerd op gegevens die van de bewaarplaats worden teruggewonnen.
+Zoals in de voorgaande sectie wordt uitgelegd, haalt het vensterobject het ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` -object op door de methode `getGridPanel()` aan te roepen die in het `defaultgrid.js` -bestand op `/apps/extjstraining/components/gridoverview/defaultgrid.js` is gedefinieerd. De component **Grid-overzicht &#x200B;** biedt een andere implementatie voor de methode `getGridPanel()` , gedefinieerd in het `referencesearch.js` bestand at `/apps/extjstraining/components/gridoverview/referencesearch.js` . Door het .js dossier te schakelen dat in component jsp van verwijzingen wordt voorzien, is het net gebaseerd op gegevens die van de bewaarplaats worden teruggewonnen.
 
 Van .js dossier schakelen dat in component jsp van verwijzingen wordt voorzien:
 
@@ -673,6 +677,7 @@ De kolomcellen van de &quot;Test&quot;kunnen worden uitgegeven aangezien zij met
 * `gridPanel` is een ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` -object dat kan worden bewerkt:
    * het is gebaseerd op het vooraf gedefinieerde `store` en op het kolommodel `cm`
    * u kunt slechts één rij tegelijk selecteren:
+
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * de `afteredit` luisteraar zorgt ervoor dat na een cel in de &quot;**Test**&quot;kolom is uitgegeven:
       * het bezit &quot; `test`&quot;van de knoop bij de weg die door &quot;**wordt bepaald jcr:path**&quot;kolom wordt geplaatst in de bewaarplaats met de waarde van de cel

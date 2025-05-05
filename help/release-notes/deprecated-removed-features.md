@@ -35,7 +35,7 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | Gebied | Functie | Vervanging | Versie (SP) |
 |---|---|---|---|
 |   |   |   |   |
-| Sites | De **Adobe AEM Beheerde 1} dienst van de Configuratie van de Opiniepeiling: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`** | De **Adobe AEM Analytics Report Sling Importer** dienst. Zie Verbinden met Adobe Analytics en Creërend Kader - [ Vormend het Interval van de Invoer ](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19,0 |
+| Sites | De **Adobe AEM Beheerde 1&rbrace; dienst van de Configuratie van de Opiniepeiling: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`** | De **Adobe AEM Analytics Report Sling Importer** dienst. Zie Verbinden met Adobe Analytics en Creërend Kader - [ Vormend het Interval van de Invoer ](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19,0 |
 | Screens | ActiveMQ in Adobe Experience Manager (AEM). ActiveMQ is gebruikt voor communicatie tussen twee AEM Publish-instanties. | Adobe raadt klanten aan een taakverdelingsmechanisme te gebruiken. | 6.5.18.0. |
 | De eigenschappen van Fragmenten van de ervaring voor **Sociale Status van Media**. |   | 6.5.11.0. |
 | [!DNL Sites] | Inhoudsfragmentsjablonen voor het maken van eenvoudige inhoudsfragmenten. | [ Model-Gebaseerde gestructureerde inhoudsfragmenten ](/help/assets/content-fragments/content-fragments-models.md) nu. | 6.5.11.0. |

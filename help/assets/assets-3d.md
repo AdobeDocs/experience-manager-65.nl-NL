@@ -257,7 +257,7 @@ In **[!UICONTROL Card View]** wordt een klein globpictogram direct onder de naam
 
 Als u Experience Manager als uw WCM gebruikt, gebruikt u deze publicatiemethode om de Dynamic Media 3D-elementen rechtstreeks op uw webpagina toe te voegen.
 
-Zie ook {de activa van Dynamic Media van 0} Publish ](publishing-dynamicmedia-assets.md).[
+Zie ook {de activa van Dynamic Media van 0} Publish [&#128279;](publishing-dynamicmedia-assets.md).
 
 Zie ook [ pagina&#39;s van Publish ](/help/sites-authoring/publishing-pages.md).
 

@@ -625,7 +625,7 @@ Implementatie van de ontworpen workflows.
 Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoering. De Commissie dient te overwegen:
 
 * Bewerkingen
-*  Onderhoud
+* Onderhoud
 * Compatibiliteit
 * Herbruikbaarheid
 * Beveiliging

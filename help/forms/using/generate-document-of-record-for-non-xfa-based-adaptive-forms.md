@@ -421,6 +421,7 @@ Voor informatie over hoe te om pagina onderbrekingen toe te passen en veelvoudig
 
 * **[!UICONTROL BASIC]**
    * **Malplaatje:** u kunt het malplaatjeGebrek of Douane selecteren.
+
      ![ alt tekst ](image.png)
    * **de Kleur van de Actie:** u kunt de malplaatjeKleur van [!UICONTROL Document of Record] vooraf bepalen.
    * **Familie van de Doopvont:** selecteer het type van Doopvont voor de [!UICONTROL Document of Record] teksten.
@@ -433,6 +434,7 @@ Voor informatie over hoe te om pagina onderbrekingen toe te passen en veelvoudig
       * verticaal
       * Horizontaal
       * Hetzelfde als adaptief formulier
+
      >[!NOTE]
      > Verticale en horizontale uitlijning is alleen van toepassing voor     Keuzerondje en selectievakje
 * **[!UICONTROL MASTER PAGE PROPERTIES]** klik voor meer informatie over [ eigenschappen van de Hoofdpagina ](#master-page-properties-master-page-properties)

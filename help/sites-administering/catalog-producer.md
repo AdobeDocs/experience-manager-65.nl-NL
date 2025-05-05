@@ -41,7 +41,7 @@ Als deel van het integratieproces, vorm het **DAM de werkschema van de Activa va
 De Producent van de Catalogus gebruikt de gegevens van het productinformatiebeheer (PIM) om producteigenschappen met de eigenschappen in kaart te brengen van XML die in het malplaatje worden getoond. Voer de volgende stappen uit om een catalogus te maken:
 
 1. Van het gebruikersinterface van Assets, klik het **AEM embleem**, en ga naar **Assets > Catalogi**.
-1. In de **pagina van Catalogi**, klik **** van de toolbar creëren, en selecteer dan **Catalogus** van de lijst.
+1. In de **pagina van Catalogi**, klik **&#x200B;**&#x200B;van de toolbar creëren, en selecteer dan **Catalogus** van de lijst.
 1. In **creeer de pagina van de Catalogus**, ga een naam en een beschrijving (facultatief) voor de catalogus in en specificeer markeringen, als om het even welk. U kunt ook een miniatuurafbeelding toevoegen voor de catalogus.
 
    ![ create_catalog ](assets/create_catalog.png)

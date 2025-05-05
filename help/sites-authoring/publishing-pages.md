@@ -141,7 +141,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    Het klikken van de Add knoop van de Inhoud begint [ wegbrowser ](/help/sites-authoring/author-environment-tools.md#path-browser) om inhoudselectie toe te staan.
 
-   Selecteer de vereiste pagina&#39;s en klik dan **Uitgezocht** om de inhoud aan de tovenaar toe te voegen of **Cancel **om de selectie te annuleren en aan de tovenaar terug te keren.
+   Selecteer de vereiste pagina&#39;s en klik dan **Uitgezocht** om de inhoud aan de tovenaar toe te voegen of **Cancel &#x200B;** om de selectie te annuleren en aan de tovenaar terug te keren.
 
    Terug in de tovenaar, kunt u een punt in de lijst selecteren om zijn verdere opties zoals te vormen:
 
@@ -250,7 +250,7 @@ U kunt [ gebruiken beheert Publicatie ](/help/sites-authoring/publishing-pages.m
 
    ![ chlimage_1-7 ](assets/chlimage_1-7.png)
 
-1. De **beheert 1} tovenaar van de Publicatie {maakt een lijst van de inhoud van de boom voor overzicht.** U kunt de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
+1. De **beheert 1&rbrace; tovenaar van de Publicatie &lbrace;maakt een lijst van de inhoud van de boom voor overzicht.** U kunt de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
 
    ![ screen_shot_2018-03-21at154237 ](assets/screen_shot_2018-03-21at154237.png)
 

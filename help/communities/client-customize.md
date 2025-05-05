@@ -34,7 +34,7 @@ Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
 Het bedekken van een component is een methode om wijzigingen aan een standaardcomponent aan te brengen en alle instanties te beïnvloeden die het gebrek gebruiken.
 
-De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in te wijzigen /**apps** folder, eerder dan de originele component in de {**folder te wijzigen.** De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
+De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in te wijzigen /**apps** folder, eerder dan de originele component in de &lbrace;**folder te wijzigen.** De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
 
 De map /apps is de eerste plaats die wordt gezocht om aanvragen op te lossen. Als deze niet wordt gevonden, wordt de standaardversie in de map /libs gebruikt.
 

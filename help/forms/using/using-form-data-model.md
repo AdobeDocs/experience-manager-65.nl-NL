@@ -97,7 +97,7 @@ Een voorvertoning weergeven van een interactieve communicatie met voorbeeldgegev
 
 1. Navigeer naar **[!UICONTROL Forms > Forms & Documents]** bij AEM auteurinstantie.
 1. Selecteer een interactieve communicatie en selecteer **[!UICONTROL Preview]** in de werkbalk om **[!UICONTROL Web Channel]** , **[!UICONTROL Print Channel]** of **[!UICONTROL Both Channels]** te selecteren voor een voorvertoning van de interactieve communicatie.
-1. In de 2} dialoog van de Voorproef [*kanaal*], zorg ervoor dat **[!UICONTROL Test Data of Form Data Model]** wordt geselecteerd en **[!UICONTROL Preview]** selecteert.
+1. In de 2&rbrace; dialoog van de Voorproef [*kanaal*], zorg ervoor dat **[!UICONTROL Test Data of Form Data Model]** wordt geselecteerd en **[!UICONTROL Preview]** selecteert.
 
 De interactieve communicatie wordt geopend met vooraf ingevulde voorbeeldgegevens.
 

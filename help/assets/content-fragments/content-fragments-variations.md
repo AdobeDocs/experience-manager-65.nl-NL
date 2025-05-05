@@ -57,7 +57,7 @@ U kunt:
       * zie meer het uitgeven opties (voor [ Rich Text ](#rich-text) formaat)
       * toegang tot een waaier van [ acties ](#actions)
 
-   * Voor **gebieden van de Verwijzing van het 0} Fragment {, kan de [ Edit optie van het Fragment van de Inhoud ](#fragment-references-edit-content-fragment), afhankelijk van de modeldefinitie beschikbaar zijn.**
+   * Voor **gebieden van de Verwijzing van het 0&rbrace; Fragment &lbrace;, kan de [ Edit optie van het Fragment van de Inhoud ](#fragment-references-edit-content-fragment), afhankelijk van de modeldefinitie beschikbaar zijn.**
 
 * Wijs **Markeringen** aan de huidige variatie toe; de markeringen kunnen worden toegevoegd, worden bijgewerkt, en worden verwijderd
 
@@ -150,7 +150,7 @@ Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegeven
 
 >[!NOTE]
 >
->Voor volledige informatie, zie de ](/help/assets/content-fragments/content-fragments-markdown.md) documentatie van de Vermindering [.
+>Voor volledige informatie, zie de [&#128279;](/help/assets/content-fragments/content-fragments-markdown.md) documentatie van de Vermindering .
 
 Hiermee kunt u de tekst opmaken met behulp van een markering. U kunt het volgende definiëren:
 
@@ -436,7 +436,7 @@ Een bestaande variatie een andere naam geven:
 
 1. Open uw fragment en selecteer **Variaties** van het zijpaneel.
 1. Selecteer de gewenste variatie.
-1. Selecteer **anders noemen** van **** drop-down Acties.
+1. Selecteer **anders noemen** van **&#x200B;**&#x200B;drop-down Acties.
 
 1. Voer in het dialoogvenster dat verschijnt de nieuwe **titel** en/of **beschrijving** in.
 
@@ -468,7 +468,7 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 
 >[!CAUTION]
 >
->De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
+>De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**&#x200B;naar de variatie* te kopiëren.
 >
 >Alleen het huidige element van de variatie wordt gesynchroniseerd.
 >

@@ -88,7 +88,7 @@ U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
 </table>
 
 1. Wijs deze belichte kenmerken toe aan alle Adobe Analytics-variabelen van de zoeker naar inhoud. Het framework is nu gebruiksklaar.
-1. U kunt een het landen pagina of een bestaande het landen pagina met bestaande componenten nu tot stand brengen CTA en **lusje van Cloud Servicen {in** Eigenschappen van de Pagina **van sidekick (in aanraking-geoptimaliseerde UI, uitgezochte** Open Eigenschappen **en klik** Cloud Servicen **) en vormt het kader om met het landen van pagina te gebruiken.** Selecteer het framework in de vervolgkeuzelijst.
+1. U kunt een het landen pagina of een bestaande het landen pagina met bestaande componenten nu tot stand brengen CTA en **lusje van Cloud Servicen &lbrace;in** Eigenschappen van de Pagina **van sidekick (in aanraking-geoptimaliseerde UI, uitgezochte** Open Eigenschappen **en klik** Cloud Servicen **) en vormt het kader om met het landen van pagina te gebruiken.** Selecteer het framework in de vervolgkeuzelijst.
 
    ![ chlimage_1-25 ](assets/chlimage_1-25a.png)
 

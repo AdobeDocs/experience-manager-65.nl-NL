@@ -52,7 +52,7 @@ De badges worden in UGC gedifferentieerd, ongeacht of zij volgens de regels zijn
 
 ### Bandenbeheer-gebruikersinterface {#badge-management-ui}
 
-De console van de Banden van Gemeenschappen [ ](/help/communities/badges.md) laat u douanebadges toevoegen die voor een lid kunnen worden getoond wanneer verdiend (toegekend) of wanneer zij een specifieke rol in de (toegewezen) gemeenschap nemen.
+De console van de Banden van Gemeenschappen [&#128279;](/help/communities/badges.md) laat u douanebadges toevoegen die voor een lid kunnen worden getoond wanneer verdiend (toegekend) of wanneer zij een specifieke rol in de (toegewezen) gemeenschap nemen.
 
 ### Toegewezen badges {#assigned-badges}
 
@@ -79,7 +79,7 @@ Op basis van beloningen ontvangen de leden van de gemeenschap een toegangspasje 
 
 Om badges als beloning voor activiteit te laten verschijnen, moeten er twee dingen gebeuren:
 
-* Het badging moet [ ](#enableforcomponent) voor de eigenschapcomponent worden toegelaten.
+* Het badging moet [&#128279;](#enableforcomponent) voor de eigenschapcomponent worden toegelaten.
 * Het scoren en het merkteken de regels moeten [ worden toegepast ](#applytopage) op de pagina (of voorvader) waarop de component wordt geplaatst.
 
 De release bevat drie beloningsbadges:
@@ -292,7 +292,7 @@ Omvat in de versie zijn twee het scoren regels voor de [ Functie van het Forum ]
 
 * Zowel `rules` als `sub-rules` knooppunten zijn van het type cq:Page.
 
-* `subRules` is een attribuut van typeKoord [] op de 2} knoop van de regel.`jcr:content`
+* `subRules` is een attribuut van typeKoord [] op de 2&rbrace; knoop van de regel.`jcr:content`
 
 * `sub-rules` kan worden gedeeld door verschillende scoreregels.
 * `rules` moet zich op een repository locatie bevinden met leesmachtigingen voor iedereen.
@@ -648,4 +648,4 @@ Meer informatie kan op de [ het Scoren van de Hoofdzaak van Badges ](/help/commu
 
 Voor informatie over de geavanceerde het scoren motor, zie [ Geavanceerde het Scoreren en Badges ](/help/communities/advanced.md).
 
-De configureerbare component van Leaderboard [ ](/help/communities/enabling-leaderboard.md) en [ functie ](/help/communities/functions.md#leaderboard-function) vereenvoudigt de vertoning van leden en hun scores op een communautaire plaats.
+De configureerbare component van Leaderboard [&#128279;](/help/communities/enabling-leaderboard.md) en [ functie ](/help/communities/functions.md#leaderboard-function) vereenvoudigt de vertoning van leden en hun scores op een communautaire plaats.

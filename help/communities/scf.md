@@ -142,7 +142,7 @@ De toegang van HTTP tot .hbs dossiers kan niet worden verboden.
 
 ### Een onderdeel van een Gemeenschappen toevoegen of opnemen {#add-or-include-a-communities-component}
 
-De meeste componenten van Gemeenschappen moeten *worden toegevoegd* als het Verzenden adresseerbare middel. Een uitgezochte paar componenten van Gemeenschappen kan ** in een malplaatje als niet bestaand middel {worden omvat om voor dynamische opneming en aanpassing van de plaats toe te staan waarbij om gebruiker-geproduceerde inhoud (UGC) te schrijven.
+De meeste componenten van Gemeenschappen moeten *worden toegevoegd* als het Verzenden adresseerbare middel. Een uitgezochte paar componenten van Gemeenschappen kan ** in een malplaatje als niet bestaand middel &lbrace;worden omvat om voor dynamische opneming en aanpassing van de plaats toe te staan waarbij om gebruiker-geproduceerde inhoud (UGC) te schrijven.
 
 In één van beide geval, moeten de van de component [ vereiste cliëntbibliotheken ](clientlibs.md) ook aanwezig zijn.
 
@@ -180,7 +180,7 @@ De [ Communautaire Gids van Componenten ](components-guide.md) staat includible 
 
 >[!NOTE]
 >
->Om een component aan een pagina dynamisch toe te voegen, in plaats van het toe te voegen of het op te nemen in een malplaatje, zie ](sideloading.md) het Schuiven van de Component 0}.[
+>Om een component aan een pagina dynamisch toe te voegen, in plaats van het toe te voegen of het op te nemen in een malplaatje, zie [&#128279;](sideloading.md) het Schuiven van de Component 0&rbrace;.
 
 ### Handlebars Helpers {#handlebars-helpers}
 
@@ -221,4 +221,4 @@ De extra ontwikkelaarinformatie kan in de [ sectie van de Richtlijnen van de Cod
 
 ## Problemen oplossen {#troubleshooting}
 
-De gemeenschappelijke zorgen en bekende kwesties worden beschreven in de [ 1} sectie van het Oplossen van problemen.](troubleshooting.md)
+De gemeenschappelijke zorgen en bekende kwesties worden beschreven in de [ 1&rbrace; sectie van het Oplossen van problemen.](troubleshooting.md)

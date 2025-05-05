@@ -304,7 +304,7 @@ In AEM kunnen binaire gegevens onafhankelijk van inhoudsknooppunten worden opges
 
 >[!CAUTION]
 >
->De relationele Database Micro Kernel wordt beperkt ondersteund. De Zorg van de Klant van de Adobe van het contact ](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) alvorens dit type van Micro Kernel te gebruiken.[
+>De relationele Database Micro Kernel wordt beperkt ondersteund. De Zorg van de Klant van de Adobe van het contact [&#128279;](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) alvorens dit type van Micro Kernel te gebruiken.
 
 ![ chlimage_1-3 ](assets/chlimage_1-3a.png)
 
@@ -320,7 +320,7 @@ Voor verdere details over de beschikbare configuratieopties, zie [ het Vormen Kn
 >
 >Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan rechtstreeks met de cloud provider te werken. Of werk met een van de partners van de Adobe die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur zij steunen om aan uw specifieke prestaties, lading, scalability, en veiligheidseisen te voldoen.
 >
->>Zie ook de [ technische vereisten ](/help/sites-deploying/technical-requirements.md#supported-platforms) pagina.
+>&#x200B;>Zie ook de [ technische vereisten ](/help/sites-deploying/technical-requirements.md#supported-platforms) pagina.
 
 ### Zoeken {#search-features}
 
@@ -399,7 +399,7 @@ Dit hoofdstuk geeft algemene prestatiesrichtlijnen voor TarMK die de minimumarch
 
 De Adobe adviseert TarMK om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel de AEM Auteur als de instanties van Publish wordt gebruikt.
 
-Voor meer informatie over TarMK, zie {de Scenario&#39;s van de Plaatsing 1} en [ Opslag van de Tar ](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).[](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
+Voor meer informatie over TarMK, zie {de Scenario&#39;s van de Plaatsing 1} en [ Opslag van de Tar ](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).[&#128279;](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
 
 ### Richtlijnen voor minimale architectuur van TarMK {#tarmk-minimum-architecture-guidelines}
 
@@ -417,7 +417,7 @@ Hieronder ziet u de architectuurrichtlijnen voor AEM sites en AEM Assets.
 
 >[!NOTE]
 >
->Binair-less replicatie zou **** moeten worden gedraaid als de Datastore van het Dossier wordt gedeeld.
+>Binair-less replicatie zou **&#x200B;**&#x200B;moeten worden gedraaid als de Datastore van het Dossier wordt gedeeld.
 
 **de Richtlijnen van de Architectuur van de Tar voor AEM Sites**
 
@@ -516,7 +516,7 @@ De benchmarktests werden uitgevoerd op de volgende specificaties:
 
 De primaire reden voor het kiezen van de MongoMK persistence backend over TarMK is de instanties horizontaal te schalen. Deze mogelijkheid houdt in dat twee of meer actieve auteur-instanties altijd worden uitgevoerd en dat MongoDB wordt gebruikt als het opslagsysteem voor persistentie. De noodzaak om meer dan één auteurinstantie in werking te stellen vloeit over het algemeen voort uit het feit dat de cpu en geheugencapaciteit van één enkele server, die alle gezamenlijke auteursactiviteiten steunt, niet meer duurzaam is.
 
-Voor meer informatie over TarMK, zie {de Scenario&#39;s van de Plaatsing 1} en [ Mongo Opslag ](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).[](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
+Voor meer informatie over TarMK, zie {de Scenario&#39;s van de Plaatsing 1} en [ Mongo Opslag ](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).[&#128279;](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
 
 ### Richtlijnen voor minimale architectuur van MongoMK {#mongomk-minimum-architecture-guidelines}
 
@@ -533,7 +533,7 @@ Om goede prestaties te vestigen wanneer het gebruiken van MongoMK, zou u van de 
 
 >[!NOTE]
 >
->Binair-less replicatie zou **** moeten worden gedraaid als de Datastore van het Dossier wordt gedeeld.
+>Binair-less replicatie zou **&#x200B;**&#x200B;moeten worden gedraaid als de Datastore van het Dossier wordt gedeeld.
 
 ![ chlimage_1-9 ](assets/chlimage_1-9a.png)
 

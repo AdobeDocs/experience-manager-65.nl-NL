@@ -97,7 +97,7 @@ Met de inhoudsfragmenten kunt u:
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
-Open de de dialoogdoos van de Configuratie van het fragment **** zodat kunt u het fragment voor gebruik op de huidige pagina vormen. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
+Open de de dialoogdoos van de Configuratie van het fragment **&#x200B;**&#x200B;zodat kunt u het fragment voor gebruik op de huidige pagina vormen. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
 
 In het aangewezen de dialoogvakje van de Configuratie, kunt u de beschikbare parameters selecteren, die omvatten:
 

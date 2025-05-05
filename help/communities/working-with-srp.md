@@ -37,7 +37,7 @@ Voor details betreffende het gebruik van SRP voor UGC, zie [ Overzicht van de Le
 >
 >Vanaf AEM 6.1, [ UGC wordt nooit herhaald ](#ugc-never-replicated).
 >
->Wanneer de plaatsing geen gemeenschappelijke opslag, zoals de standaard [ ](/help/communities/topologies.md#jsrp) topologie JSRP omvat, zal UGC slechts op AEM zichtbaar zijn publiceert of auteursinstantie waarop het was ingegaan. Alleen als de topologie een publicatiecluster bevat, is de UGC zichtbaar op elke publicatieinstantie.
+>Wanneer de plaatsing geen gemeenschappelijke opslag, zoals de standaard [&#128279;](/help/communities/topologies.md#jsrp) topologie JSRP omvat, zal UGC slechts op AEM zichtbaar zijn publiceert of auteursinstantie waarop het was ingegaan. Alleen als de topologie een publicatiecluster bevat, is de UGC zichtbaar op elke publicatieinstantie.
 
 ## Kenmerken van SRP-opties {#characteristics-of-srp-options}
 

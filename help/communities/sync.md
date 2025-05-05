@@ -59,7 +59,7 @@ Voor gedetailleerde, geleidelijke instructies op hoe te om synchronisatie over t
 
 ### Publish-site van de Sites-console van Gemeenschappen {#publish-site-from-communities-sites-console}
 
-Op Auteur, wanneer een communautaire plaats van de [ console van de Plaatsen van Gemeenschappen ](/help/communities/sites-console.md) wordt gepubliceerd, moet het effect [ ](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) de bijbehorende pagina&#39;s herhalen, en het Sling verspreidt dynamisch de gecreeerde communautaire gebruikersgroepen, met inbegrip van hun lidmaatschap.
+Op Auteur, wanneer een communautaire plaats van de [ console van de Plaatsen van Gemeenschappen ](/help/communities/sites-console.md) wordt gepubliceerd, moet het effect [&#128279;](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) de bijbehorende pagina&#39;s herhalen, en het Sling verspreidt dynamisch de gecreeerde communautaire gebruikersgroepen, met inbegrip van hun lidmaatschap.
 
 ### Gebruiker is gemaakt of bewerkt profiel op Publish {#user-is-created-or-edits-profile-on-publish}
 
@@ -85,7 +85,7 @@ Voor gebruiker-geproduceerde inhoud (UGC), worden de gegevens ingegaan op public
 
 ## Aanbevolen procedures {#bestpractices}
 
-Door gebrek, wordt de gebruikerssynchronisatie onbruikbaar gemaakt ****. Het toelaten van gebruikerssynchronisatie impliceert het wijzigen van *bestaande* configuraties OSGi. Er mogen geen nieuwe configuraties worden toegevoegd als gevolg van het inschakelen van gebruikerssynchronisatie.
+Door gebrek, wordt de gebruikerssynchronisatie onbruikbaar gemaakt **&#x200B;**. Het toelaten van gebruikerssynchronisatie impliceert het wijzigen van *bestaande* configuraties OSGi. Er mogen geen nieuwe configuraties worden toegevoegd als gevolg van het inschakelen van gebruikerssynchronisatie.
 
 De gebruikerssynchronisatie is afhankelijk van de auteursomgeving voor het beheer van de gegevensdistributies van de gebruiker, ook al worden de gebruikersgegevens niet op auteur gecreeerd.
 

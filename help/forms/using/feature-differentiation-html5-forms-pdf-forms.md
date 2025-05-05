@@ -35,7 +35,7 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
   </tr>
   <tr>
    <td>Handtekeningveld <br /> </td>
-   <td><strong> Digitale Handtekeningen </strong> worden niet gesteund maar een nieuw <strong> Krabbelt gebied van de Handtekening </strong> wordt toegevoegd voor papier als handtekeningen. Men kan hun handtekening op de vorm krabbelen gebruikend het </strong> gebied van de Handtekening van 0} Krabbelen. <strong> De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt geolocatieinformatie op het <strong> Krabbelen </strong> gebied van de Handtekening bewaren.</td>
+   <td><strong> Digitale Handtekeningen </strong> worden niet gesteund maar een nieuw <strong> Krabbelt gebied van de Handtekening </strong> wordt toegevoegd voor papier als handtekeningen. Men kan hun handtekening op de vorm krabbelen gebruikend het </strong> gebied van de Handtekening van 0&rbrace; Krabbelen. <strong> De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt geolocatieinformatie op het <strong> Krabbelen </strong> gebied van de Handtekening bewaren.</td>
    <td>Het gebied van de handtekening beschikbaar voor <strong> Digitale Handtekeningen </strong>.</td>
   </tr>
   <tr>

@@ -43,7 +43,7 @@ Als u een component `Forum` in de ontwerpmodus aan een pagina wilt toevoegen, ge
 
 En sleep het naar zijn plaats op een pagina waar het forum zou moeten verschijnen.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-forum.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Forum` component verschijnt:
 
@@ -92,7 +92,7 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen en antwo
 
 * **Toestaan Tags**
 
-  Als gecontroleerd, sta leden toe om markeringsetiketten aan hun posten toe te voegen (zie {het gebied van de Markering **tabel).** De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, sta leden toe om markeringsetiketten aan hun posten toe te voegen (zie &lbrace;het gebied van de Markering **tabel).** De optie Standaard is uitgeschakeld.
 
 * **staat Dossier toe uploadt**
 
@@ -211,7 +211,7 @@ Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de gepost
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen worden toegepast, indien toegestaan onder het **3} lusje van Montages {, beperkt volgens gekozen namespaces.**
+Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen worden toegepast, indien toegestaan onder het **3&rbrace; lusje van Montages &lbrace;, beperkt volgens gekozen namespaces.**
 
 * **Toegestane Namespaces**
 
@@ -219,7 +219,7 @@ Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen word
 
 * **de Grens van de Suggestie**
 
-  Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De standaardwaarde is **-**1 (geen limieten).
+  Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De standaardwaarde is **-**&#x200B;1 (geen limieten).
 
 #### Tabblad Vertaling {#translation-tab}
 
@@ -249,7 +249,7 @@ Onder het **lusje van de Montages van de Soort**, specificeer hoe de geposte com
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](/help/communities/essentials-forum.md) pagina van de Hoofdzaak van het Forum [ voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#128279;](/help/communities/essentials-forum.md) pagina van de Hoofdzaak van het Forum  voor ontwikkelaars worden gevonden.
 
 Voor moderatie van geposte onderwerpen en commentaren, zie [ het Modereren van Gebruiker-Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
 

@@ -353,7 +353,7 @@ Als u terug naar het dienen WebP door gebrek wilt schakelen, creeer een steungev
 Ja. U kunt Smart Imaging uitschakelen door een van de volgende opties toe te voegen:
 
 * `bfc=off` om Browser Format Conversion uit te schakelen. Zie ook [ Browser de Omzetting van het Formaat ](#bfc).
-* `dpr=off` om de pixelverhouding van het apparaat uit te schakelen. Zie ook {de Verhouding van het Pixel van 0} Apparaat ](#dpr).[
+* `dpr=off` om de pixelverhouding van het apparaat uit te schakelen. Zie ook {de Verhouding van het Pixel van 0} Apparaat [&#128279;](#dpr).
 * `network=off` om netwerkbandbreedte uit te schakelen. Zie ook [ Bandbreedte van het Netwerk ](#network).
 
 +++

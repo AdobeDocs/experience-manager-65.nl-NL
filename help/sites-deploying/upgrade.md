@@ -41,7 +41,7 @@ Om gemakkelijker te kunnen verwijzen naar de AEM gevallen die bij deze procedure
 
 >[!NOTE]
 >
->Als onderdeel van de inspanningen om de betrouwbaarheid van upgrades te verbeteren, heeft AEM een alomvattende herstructurering van de opslagplaats ondergaan. Voor meer informatie over hoe te om met de nieuwe structuur te richten, zie {de Herstructurering van de Bewaarplaats 0} in AEM.](/help/sites-deploying/repository-restructuring.md)[
+>Als onderdeel van de inspanningen om de betrouwbaarheid van upgrades te verbeteren, heeft AEM een alomvattende herstructurering van de opslagplaats ondergaan. Voor meer informatie over hoe te om met de nieuwe structuur te richten, zie {de Herstructurering van de Bewaarplaats 0} in AEM.[&#128279;](/help/sites-deploying/repository-restructuring.md)
 
 ## Wat is er veranderd? {#what-has-changed}
 
@@ -63,7 +63,7 @@ De opdrachtregelgebruiksopties voor het gereedschap crx2oak zijn gewijzigd en zi
 
 De controles na de upgrade zijn ook automatiseringsvriendelijk gemaakt.
 
-De periodieke vuilinzameling van revisies en de inzameling van het huisvuil van de gegevensopslag zijn nu routinematige onderhoudstaken die periodiek moeten worden uitgevoerd. Met de introductie van AEM 6.3 biedt Adobe ondersteuning voor en raadt u aan om de revisie online op te schonen. Zie ](/help/sites-deploying/revision-cleanup.md) van de Opruiming van de Revisie [ voor informatie over hoe te om deze taken te vormen.
+De periodieke vuilinzameling van revisies en de inzameling van het huisvuil van de gegevensopslag zijn nu routinematige onderhoudstaken die periodiek moeten worden uitgevoerd. Met de introductie van AEM 6.3 biedt Adobe ondersteuning voor en raadt u aan om de revisie online op te schonen. Zie [&#128279;](/help/sites-deploying/revision-cleanup.md) van de Opruiming van de Revisie  voor informatie over hoe te om deze taken te vormen.
 
 AEM introduceert onlangs de [ Detector van het Patroon ](/help/sites-deploying/pattern-detector.md) voor beoordeling van ingewikkeldheid van de verbetering aangezien u voor de verbetering begint te plannen. 6.5 heeft ook een sterke nadruk op [ achterwaartse verenigbaarheid ](/help/sites-deploying/backward-compatibility.md) van eigenschappen. Tot slot worden de beste praktijken voor [ duurzame verbeteringen ](/help/sites-deploying/sustainable-upgrades.md) ook toegevoegd.
 

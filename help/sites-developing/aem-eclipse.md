@@ -156,7 +156,7 @@ Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informati
 * De [ sectie van het Oplossen van problemen ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * De [ Bekende lijst van kwesties ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-De volgende officiële ](https://www.eclipse.org/) documentatie van de Verduistering [ kan helpen aan opstelling uw milieu:
+De volgende officiële [&#128279;](https://www.eclipse.org/) documentatie van de Verduistering  kan helpen aan opstelling uw milieu:
 
 * [ Begonnen het worden met Verduistering ](https://eclipseide.org/getting-started/)
 * [ Eclipse Luna Help System ](https://help.eclipse.org/latest/index.jsp)

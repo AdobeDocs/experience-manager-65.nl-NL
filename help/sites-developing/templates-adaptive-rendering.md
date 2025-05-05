@@ -49,7 +49,7 @@ Voor dit voorbeeld, gaat u de bestaande apparatengroep **Slimme Telefoons** vorm
 
    ![ chlimage_1-157 ](assets/chlimage_1-157.png)
 
-1. De selecteur is beschikbaar voor **BlackBerry®** en **iPhone 4** op voorwaarde dat de slimme Telefoon van de apparatengroep **** aan het malplaatje en de paginastructuren in de volgende stappen wordt toegevoegd.
+1. De selecteur is beschikbaar voor **BlackBerry®** en **iPhone 4** op voorwaarde dat de slimme Telefoon van de apparatengroep **&#x200B;**&#x200B;aan het malplaatje en de paginastructuren in de volgende stappen wordt toegevoegd.
 
    ![ chlimage_1-158 ](assets/chlimage_1-158.png)
 

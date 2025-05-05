@@ -83,6 +83,6 @@ De pagina met taakdetails aanpassen:
 
 >[!NOTE]
 >
->Om de pagina van taakdetails met taken aan te passen die in het **1} lusje van het Proces van het Begin van de werkruimte van AEM Forms worden gecreeerd, voeg de nieuwe informatie aan `/apps/ws/js/runtime/templates/startprocess.html` toe.**
+>Om de pagina van taakdetails met taken aan te passen die in het **1&rbrace; lusje van het Proces van het Begin van de werkruimte van AEM Forms worden gecreeerd, voeg de nieuwe informatie aan `/apps/ws/js/runtime/templates/startprocess.html` toe.**
 >
 >Om nieuwe stijlen voor de informatie toe te voegen die in de detailspagina wordt toegevoegd, wijzig het CSS dossier door de *sectie van de Veranderingen van het gebruikersinterface* in [ Aanpassing van Workspace ](changing-locale-user-interface.md) te gebruiken.

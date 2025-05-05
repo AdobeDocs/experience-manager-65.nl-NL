@@ -136,7 +136,7 @@ Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om 
 Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. Het gebrek URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
-1. Onderzoek en open **Configuratie van de Firewall 0} Deserialization.**
+1. Onderzoek en open **Configuratie van de Firewall 0&rbrace; Deserialization.**
 1. Voeg het {**pakket 0} sun.util.endar aan het** lijst van gewenste personen **gebied toe.** Klik op Opslaan.
 1. Herhaal stap 1-3 voor alle auteur- en Publish-instanties.
 
@@ -163,7 +163,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeli
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).[
+   Sla het bestand op en sluit het. Voor gedetailleerde informatie over filters, zie {de documentatie van 0} Dispatcher [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
 
 1. Configureer de referentiefilterservice:
 

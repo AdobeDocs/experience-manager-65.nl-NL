@@ -153,7 +153,7 @@ De volgende groepen zijn eveneens opgenomen:
    ![ selectie FDM ](assets/aftia-select-fdm.jpg)
 
 1. Camila klikt de **output** omslag, selecteert de adaptieve vorm, en klikt **uitgeven** om de voltooide vorm te openen We.Gov.
-1. Camila selecteert een adaptief vormgebied en klikt ![ vormt pictogram ](assets/configure-icon.svg) en leidt tot het binden met de modelentiteiten van vormgegevens gebruikend het **Bind 3} gebied van de Verwijzing.** Camila herhaalt deze stap voor alle velden in het adaptieve formulier.
+1. Camila selecteert een adaptief vormgebied en klikt ![ vormt pictogram ](assets/configure-icon.svg) en leidt tot het binden met de modelentiteiten van vormgegevens gebruikend het **Bind 3&rbrace; gebied van de Verwijzing.** Camila herhaalt deze stap voor alle velden in het adaptieve formulier.
 
 ### Toegankelijkheidstest formulier (Camila) {#form-accessibility-testing}
 
@@ -312,7 +312,7 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 1. Klik in de rechterbovenhoek op het pictogram Melding (bel).
 1. Klik **Mening allen** om aan Inbox te navigeren.
-1. Van Inbox, open de recentste **taak van het Overzicht van de Toepassing van de Voordelen van de Gezondheid 0}.**
+1. Van Inbox, open de recentste **taak van het Overzicht van de Toepassing van de Voordelen van de Gezondheid 0&rbrace;.**
 
    ![ Controle van de Toepassing van de Voordelen van de Gezondheid ](/help/forms/using/assets/health_benefits.png)
 
@@ -416,7 +416,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
    *https://&lt;aemserver>:&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&amp;mode=preview&amp;wcmmode=disabled*
 
-   ](/help/forms/using/assets/welcome_benefits_handbook.png) ![ Interactieve Communicatie Verbinding van de Voordelen van 0} het Welkom Handboek ](/help/forms/using/assets/interactive_communication.png)![
+   ![&#128279;](/help/forms/using/assets/welcome_benefits_handbook.png) ![ Interactieve Communicatie Verbinding van de Voordelen van 0&rbrace; het Welkom Handboek ](/help/forms/using/assets/interactive_communication.png)
 
 ## Herinnering burger (Aya) {#renewal-reminder-citizen-aya}
 

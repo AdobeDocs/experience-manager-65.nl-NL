@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat het voor u als Adobe klant betekent, zie ](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0} {.[
+>Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat het voor u als Adobe klant betekent, zie [&#128279;](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0&rbrace; &lbrace;.
 
 De Adobe verstrekt documentatie en procedures (met APIs wanneer beschikbaar), voor de beheerder van de klantenprivacy of AEM beheerder om de verzoeken van de gegevensbescherming en van de gegevensprivacy te behandelen. Het kan u helpen om aan deze verordeningen te voldoen. De gedocumenteerde procedures laten klanten de regelgevende verzoeken manueel in werking stellen of door in APIs, waar beschikbaar, van een extern portaal of de dienst te roepen.
 
@@ -37,7 +37,7 @@ De Adobe verstrekt documentatie en procedures (met APIs wanneer beschikbaar), vo
 >
 >Gegevens van een andere Adobe On-demand-dienst, samen met eventuele gerelateerde privacyverzoeken, vereisen dat op die dienst maatregelen worden genomen.
 >
->Voor meer informatie, zie ](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0}.[
+>Voor meer informatie, zie [&#128279;](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0&rbrace;.
 
 ## Inleiding {#introduction}
 

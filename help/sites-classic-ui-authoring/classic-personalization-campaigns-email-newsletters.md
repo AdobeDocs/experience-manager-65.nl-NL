@@ -144,7 +144,7 @@ E-mails/nieuwsbrieven kunnen aan uw E-maildienst worden gepubliceerd door deze s
 1. Open het e-mailbericht.
 1. Voordat u een e-mailbericht publiceert, moet u controleren of u de juiste configuratie op uw e-mail hebt toegepast.
 1. Klik **Publish**. Dit opent het **Nieuwsbrief van Publish aan E-mailDienstverlener** venster.
-1. Vul het **gebied van de Naam van het 0} Nieuwsbrief in.** Het e-mailbericht/de nieuwsbrief wordt gepubliceerd aan E-mail Service Provider met deze naam. Als er geen e-mailnaam wordt opgegeven, wordt de e-mail gepubliceerd met de paginanaam van de nieuwsbrief in AEM.
+1. Vul het **gebied van de Naam van het 0&rbrace; Nieuwsbrief in.** Het e-mailbericht/de nieuwsbrief wordt gepubliceerd aan E-mail Service Provider met deze naam. Als er geen e-mailnaam wordt opgegeven, wordt de e-mail gepubliceerd met de paginanaam van de nieuwsbrief in AEM.
 1. Klik **Publish**.
 
    ![ chlimage_1-6 ](assets/chlimage_1-6.jpeg)

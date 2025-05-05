@@ -93,7 +93,7 @@ Formulierscripts in de gebeurtenis form:ready worden slechts eenmaal uitgevoerd 
 
 >[!NOTE]
 >
-Op een formulier met meerdere pagina&#39;s worden wijzigingen die door JavaScript zijn aangebracht in een pagina niet behouden als u naar een andere pagina gaat.
+>Op een formulier met meerdere pagina&#39;s worden wijzigingen die door JavaScript zijn aangebracht in een pagina niet behouden als u naar een andere pagina gaat.
 
 U kunt aangepaste scripts aanroepen voordat u een formulier verzendt. Deze functie werkt op alle beschikbare browsers. Deze kan echter alleen worden gebruikt wanneer gebruikers het HTML-formulier weergeven waarvoor de eigenschap `Output Type` is ingesteld op `Form Body` . De functie werkt niet wanneer de waarde `Output Type` `Full HTML` is. Zie Formulieren configureren in de Help voor het beheer voor stappen om deze functie te configureren.
 
@@ -167,7 +167,7 @@ In het volgende script wordt de waarde `fillColor` van een veld behouden op basi
 
 >[!NOTE]
 >
-Statische objecten worden niet weergegeven in een gerenderde HTML-vorm wanneer ze in een tabelcel zijn genest. Een cirkel en rechthoek die in een tabelcel zijn genest, worden bijvoorbeeld niet weergegeven in een HTML-formulier voor renderen. Dezelfde statische objecten worden echter correct weergegeven wanneer deze zich buiten de tabel bevinden.
+>Statische objecten worden niet weergegeven in een gerenderde HTML-vorm wanneer ze in een tabelcel zijn genest. Een cirkel en rechthoek die in een tabelcel zijn genest, worden bijvoorbeeld niet weergegeven in een HTML-formulier voor renderen. Dezelfde statische objecten worden echter correct weergegeven wanneer deze zich buiten de tabel bevinden.
 
 ## HTML-formulieren digitaal ondertekenen {#digitally-signing-html-forms}
 
@@ -190,7 +190,7 @@ Het wordt aanbevolen om het gebruik van validatieregels voor formuliervelden te 
 
 >[!NOTE]
 >
-Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -226,11 +226,11 @@ HTTP-URL&#39;s waarnaar formuliergegevens worden verzonden, kunnen worden opgege
 
 >[!NOTE]
 >
-Het weergeven van een HTML-formulier met een werkbalk is optioneel.
+>Het weergeven van een HTML-formulier met een werkbalk is optioneel.
 
 >[!NOTE]
 >
-Als u een AHTML-formulier genereert, wordt u aangeraden geen werkbalk aan het formulier toe te voegen.
+>Als u een AHTML-formulier genereert, wordt u aangeraden geen werkbalk aan het formulier toe te voegen.
 
 **geef een vorm van HTML** terug
 
@@ -282,7 +282,7 @@ Een HTML-formulier renderen met de Forms API (Java):
 
    >[!NOTE]
    >
-   Forms wordt niet gerenderd in HTML als de `StandAlone` -optie `true` is en de `ApplicationWebRoot` verwijst naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` -waarde wordt opgegeven met het `URLSpec` -object dat wordt doorgegeven aan de `FormsServiceClient` objectmethode `(Deprecated) renderHTMLForm` ). Wanneer `ApplicationWebRoot` een andere server is van de server die als host fungeert voor AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. U doet dit door u aan te melden bij de beheerconsole, op Services > Forms te klikken en de Web Root URI in te stellen als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
+   >Forms wordt niet gerenderd in HTML als de `StandAlone` -optie `true` is en de `ApplicationWebRoot` verwijst naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` -waarde wordt opgegeven met het `URLSpec` -object dat wordt doorgegeven aan de `FormsServiceClient` objectmethode `(Deprecated) renderHTMLForm` ). Wanneer `ApplicationWebRoot` een andere server is van de server die als host fungeert voor AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. U doet dit door u aan te melden bij de beheerconsole, op Services > Forms te klikken en de Web Root URI in te stellen als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
 
 1. Een HTML-formulier renderen
 
@@ -340,7 +340,7 @@ Een HTML-formulier renderen met de Forms API (webservice):
 
    >[!NOTE]
    >
-   Forms wordt niet gerenderd in HTML als de `StandAlone` -optie `true` is en de `ApplicationWebRoot` verwijst naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` -waarde wordt opgegeven met het `URLSpec` -object dat wordt doorgegeven aan de `FormsServiceClient` objectmethode `(Deprecated) renderHTMLForm` ). Wanneer `ApplicationWebRoot` een andere server is van de server die als host fungeert voor AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. U doet dit door u aan te melden bij de beheerconsole, op Services > Forms te klikken en de Web Root URI in te stellen als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
+   >Forms wordt niet gerenderd in HTML als de `StandAlone` -optie `true` is en de `ApplicationWebRoot` verwijst naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` -waarde wordt opgegeven met het `URLSpec` -object dat wordt doorgegeven aan de `FormsServiceClient` objectmethode `(Deprecated) renderHTMLForm` ). Wanneer `ApplicationWebRoot` een andere server is van de server die als host fungeert voor AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. U doet dit door u aan te melden bij de beheerconsole, op Services > Forms te klikken en de Web Root URI in te stellen als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
 
 1. Een HTML-formulier renderen
 

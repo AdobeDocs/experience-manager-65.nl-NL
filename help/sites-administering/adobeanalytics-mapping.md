@@ -172,7 +172,7 @@ Het nemen van het bovengenoemde beeld als voorbeeld, heeft de **AEM mening** de 
 
 ![ a-24 ](assets/aa-24.png)
 
-1. Deze mening kan worden betreden door aan het **** lusje van de mening van Analytics op het kader te schakelen.
+1. Deze mening kan worden betreden door aan het **&#x200B;**&#x200B;lusje van de mening van Analytics op het kader te schakelen.
 1. Linkerkant: Inhoudszoeker (cf#) gevuld met CQ-variabelen op basis van de componenten die in de CQ-weergave naar het framework zijn gesleept.
 1. De kopballen van het lusje (**AEM mening** en **de mening van de Analyse**): gebruik deze om tussen de twee meningen te schakelen.
 

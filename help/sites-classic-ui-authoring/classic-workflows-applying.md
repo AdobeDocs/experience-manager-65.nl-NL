@@ -36,7 +36,7 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagina bewerkt, vanuit de Sidekick.
 
-De **kolom van de Status** in de **** console van Websites wijst erop of een werkschema op een pagina is toegepast:
+De **kolom van de Status** in de **&#x200B;**&#x200B;console van Websites wijst erop of een werkschema op een pagina is toegepast:
 
 ![ workflowstatus ](assets/workflowstatus.png)
 

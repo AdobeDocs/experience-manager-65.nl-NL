@@ -63,7 +63,7 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 
    * De **lanceerpad/startomslag**. U kunt het verwijderen door de volgende opdracht in de terminal uit te voeren: `rm -rf crx-quickstart/launchpad/startup`
 
-   * Het {**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`**
+   * Het &lbrace;**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`**
 
    * Het **dossier BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 

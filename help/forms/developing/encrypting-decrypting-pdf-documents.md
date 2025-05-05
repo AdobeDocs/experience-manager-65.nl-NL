@@ -428,7 +428,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
    * Vul het `BLOB` -object door de inhoud van de bytearray toe te wijzen aan het gegevenslid van het `BLOB` object `MTOM` .
    * Wijs het `BLOB` -object toe dat het certificaat opslaat naar het gegevenslid van het `Recipient` object `x509Cert` .
    * Maak een `CertificateEncryptionIdentity` -object dat certificaatinformatie opslaat met behulp van de constructor.
-   * Wijs het `Recipient` voorwerp toe dat het certificaat aan het `CertificateEncryptionIdentity` ontvankelijke gegevenslid van objecten {opslaat.
+   * Wijs het `Recipient` voorwerp toe dat het certificaat aan het `CertificateEncryptionIdentity` ontvankelijke gegevenslid van objecten &lbrace;opslaat.
    * Maak een array `Object` en wijs het object `CertificateEncryptionIdentity` toe aan het eerste element van de array `Object` . Deze `Object` -array wordt als een parameter aan de `encryptPDFUsingCertificates` -methode doorgegeven.
 
 1. Stel opties voor codering tijdens runtime in.

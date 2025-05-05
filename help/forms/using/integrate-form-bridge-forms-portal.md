@@ -80,10 +80,10 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    >De &lt;div id= &quot;rightdiv&quot;> markering op **lijn 18** bevat het fragment van HTML van de vorm XFA.
    >
    >
-   De pagina wordt gestileerd in twee containers: **verlaten** en **juist**. De juiste container heeft het formulier. De linkercontainer heeft twee invoervelden en een deel van de externe HTML-pagina.
+   >De pagina wordt gestileerd in twee containers: **verlaten** en **juist**. De juiste container heeft het formulier. De linkercontainer heeft twee invoervelden en een deel van de externe HTML-pagina.
    >
    >
-   De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
+   >De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
 
    ![ portaal ](assets/portal.jpg)
 
@@ -93,7 +93,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
 
    Hier volgt een voorbeeldscript dat u kunt toevoegen om waarden in een formulierveld in te stellen.
 
-   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **** en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
+   Bijvoorbeeld, als u **EmployeeName** wilt plaatsen gebruikend de waarden op de Voornaam van Gebieden **&#x200B;**&#x200B;en **Familienaam**, roep de {**functie 6} window.formBridge.setFieldValue.**
 
    Op dezelfde manier kunt u de waarde lezen door **window.formBridge.getFieldValue** API te roepen.
 

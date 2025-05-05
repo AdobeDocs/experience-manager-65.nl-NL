@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Als onbekend met de leverancier van het opslagmiddel (SRP) en zijn verhouding aan gebruiker-geproduceerde inhoud (UGC), bezoek {de Opslag van de Inhoud van de Gemeenschap 1} en [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md).[](working-with-srp.md)
+Als onbekend met de leverancier van het opslagmiddel (SRP) en zijn verhouding aan gebruiker-geproduceerde inhoud (UGC), bezoek {de Opslag van de Inhoud van de Gemeenschap 1} en [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md).[&#128279;](working-with-srp.md)
 
 Deze sectie van de documentatie verstrekt wat essentiële informatie over SRP en UGC.
 

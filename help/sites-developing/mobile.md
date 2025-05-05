@@ -195,7 +195,7 @@ De groepen van het apparaat worden bepaald als inhoudspagina&#39;s onder `/etc/m
 
 Wanneer u een mobiele site maakt, moet u apparaatgroepen aan uw site toewijzen. AEM biedt drie apparaatgroepen, afhankelijk van de HTML- en JavaScript-rendermogelijkheden van het apparaat:
 
-* **telefoons van de Eigenschap 0}, voor eigenschapapparaten zoals Sony Ericsson W800 met steun voor basis HTML maar geen steun voor beelden en JavaScript.**
+* **telefoons van de Eigenschap 0&rbrace;, voor eigenschapapparaten zoals Sony Ericsson W800 met steun voor basis HTML maar geen steun voor beelden en JavaScript.**
 * **Slimme** telefoons, voor apparaten zoals BlackBerry® met steun voor fundamentele HTML en beelden, maar geen steun voor JavaScript.
 
 * **aanraak** telefoons, voor apparaten zoals iPad met volledige steun voor HTML, beelden, JavaScript, en apparatenomwenteling.
@@ -225,7 +225,7 @@ Wanneer AEM een HTTP-aanvraag van een apparaat ontvangt, vergelijkt elk filter d
 Apparaatgroepen kunnen nul of meer filters gebruiken voor capaciteitsdetectie. Een filter kan ook worden gebruikt met meerdere apparaatgroepen. AEM verstrekt een standaardfilter dat bepaalt of het apparaat de mogelijkheden heeft die voor een groep worden geselecteerd:
 
 * CSS
-* - en PNG-afbeeldingen JPG
+* &#x200B;- en PNG-afbeeldingen JPG
 * JavaScript
 * Apparaatrotatie
 

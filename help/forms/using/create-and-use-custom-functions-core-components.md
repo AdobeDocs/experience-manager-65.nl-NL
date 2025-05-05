@@ -444,7 +444,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
    `<filter root="/apps/experience-league" />`
 1. Sla het bestand op.
 
-   ![ de filter xml van de douanefunctie {](assets/custom-function-filterxml.png)
+   ![ de filter xml van de douanefunctie &lbrace;](assets/custom-function-filterxml.png)
 
 1. Bouw de pas gecreëerde omslag van de cliëntbibliotheek aan uw AEM milieu door de stappen te volgen die in [ worden gegeven hoe te sectie ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build) bouwen.
 

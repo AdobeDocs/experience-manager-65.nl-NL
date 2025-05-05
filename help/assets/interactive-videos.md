@@ -512,7 +512,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
 ## Publish interactieve video-elementen {#publishing-interactive-video-assets}
 
-Zie {de activa van 0} Publish ](/help/assets/publishing-dynamicmedia-assets.md) voor details op hoe te om interactieve videoactiva te publiceren.[
+Zie {de activa van 0} Publish [&#128279;](/help/assets/publishing-dynamicmedia-assets.md) voor details op hoe te om interactieve videoactiva te publiceren.
 
 ## Een interactieve video integreren met uw website {#integrating-an-interactive-video-with-your-website}
 
@@ -660,27 +660,27 @@ Het proces om QuickView URL te construeren is tegengesteld aan het proces om dui
   <tbody>
   <tr>
     <td><p>Enige SKU, die in het vraagkoord wordt gevonden</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>Enkele SKU, gevonden in het pad URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>SKU en categorie-id in de queryreeks</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>

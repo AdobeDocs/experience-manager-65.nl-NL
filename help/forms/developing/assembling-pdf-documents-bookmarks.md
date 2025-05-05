@@ -79,7 +79,7 @@ Op basis van het DDX-document dat in deze sectie is opgegeven en het XML-bladwij
 
 ![ aw_aw_bmark ](assets/aw_aw_bmark.png)
 
-Wanneer een gebruiker op *klikt Open de 1} referentie van de Details van de Lening {, wordt LoanDetails.pdf geopend.* Eveneens, wanneer de gebruiker op de *1} bookmark van de Lancering NotePad {klikt, is NotePad begonnen.*
+Wanneer een gebruiker op *klikt Open de 1&rbrace; referentie van de Details van de Lening {, wordt LoanDetails.pdf geopend.* Eveneens, wanneer de gebruiker op de *1} bookmark van de Lancering NotePad &lbrace;klikt, is NotePad begonnen.*
 
 >[!NOTE]
 >

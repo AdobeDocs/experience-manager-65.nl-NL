@@ -55,7 +55,7 @@ Nadat een proces is gemaakt met de service Script uitvoeren, kunt u dit script g
 
 **Ongeveer de Uitvoeren Technologie van de Dienst van het Manuscript**
 
-Om te weten wat de capaciteiten en de beperkingen van de dienst van het Manuscript zijn, moet men de technologische steunen van de dienst kennen. AEM Forms on JEE gebruikt de parser Apache Xerces Document Object Model (DOM) om XML-variabelen in processen te maken en op te slaan. De middelen zijn een implementatie Java™ van het ModelSpecificatie van de Objecten van het Document van W3C [ ](https://dom.spec.whatwg.org/). De DOM-specificatie is een standaardmanier om XML te manipuleren die al sinds 1998 bestaat. De Java™-implementatie van Xerces, Xerces-J, ondersteunt DOM Level 2 versie 1.0.
+Om te weten wat de capaciteiten en de beperkingen van de dienst van het Manuscript zijn, moet men de technologische steunen van de dienst kennen. AEM Forms on JEE gebruikt de parser Apache Xerces Document Object Model (DOM) om XML-variabelen in processen te maken en op te slaan. De middelen zijn een implementatie Java™ van het ModelSpecificatie van de Objecten van het Document van W3C [&#128279;](https://dom.spec.whatwg.org/). De DOM-specificatie is een standaardmanier om XML te manipuleren die al sinds 1998 bestaat. De Java™-implementatie van Xerces, Xerces-J, ondersteunt DOM Level 2 versie 1.0.
 
 De klassen Java™ die worden gebruikt om XML-variabelen op te slaan zijn:
 

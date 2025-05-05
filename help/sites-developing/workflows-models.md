@@ -108,7 +108,7 @@ Wanneer u een model uitgeeft, verschijnen de beschikbare stappen in de diverse g
 
 >[!NOTE]
 >
->Voor informatie over de primaire stapcomponenten die met AEM geïnstalleerd zijn, zie {de Verwijzing van de Stappen van het 0} Werkschema ](/help/sites-developing/workflows-step-ref.md).[
+>Voor informatie over de primaire stapcomponenten die met AEM geïnstalleerd zijn, zie {de Verwijzing van de Stappen van het 0} Werkschema [&#128279;](/help/sites-developing/workflows-step-ref.md).
 
 Stappen toevoegen aan uw workflowmodel:
 
@@ -143,7 +143,7 @@ Stappen toevoegen aan uw workflowmodel:
 
 ### Een workflowstap configureren {#configuring-a-workflow-step}
 
-U kunt **vormen** en het gedrag van een werkschemastap aanpassen gebruikend de **3} dialoogvensters van de Eigenschappen van de Stap {.**
+U kunt **vormen** en het gedrag van een werkschemastap aanpassen gebruikend de **3&rbrace; dialoogvensters van de Eigenschappen van de Stap &lbrace;.**
 
 1. Om de **dialoog van de Eigenschappen van de Stap** voor een stap te openen of:
 
@@ -153,7 +153,7 @@ U kunt **vormen** en het gedrag van een werkschemastap aanpassen gebruikend de *
 
    >[!NOTE]
    >
-   >Voor informatie over de primaire stapcomponenten die met AEM geïnstalleerd zijn, zie {de Verwijzing van de Stappen van het 0} Werkschema ](/help/sites-developing/workflows-step-ref.md).[
+   >Voor informatie over de primaire stapcomponenten die met AEM geïnstalleerd zijn, zie {de Verwijzing van de Stappen van het 0} Werkschema [&#128279;](/help/sites-developing/workflows-step-ref.md).
 
 1. Vorm de **Eigenschappen van de Stap** zoals vereist; de beschikbare eigenschappen hangen van het stappentype af, kunnen er verscheidene beschikbare lusjes ook zijn. Bijvoorbeeld, de standaard **Stap van de Deelnemer**, in een nieuw werkschema als `Step 1` aanwezig:
 
@@ -300,7 +300,7 @@ U configureert als volgt de workflow die met het formulier moet worden gebruikt:
 
 1. Maak een pagina en open deze voor bewerking.
 1. Voeg de component van de a **Vorm** aan de pagina toe.
-1. **vormt** de **3} component van het Begin van de Vorm {die in de pagina verscheen.**
+1. **vormt** de **3&rbrace; component van het Begin van de Vorm &lbrace;die in de pagina verscheen.**
 1. Het Werkschema van het Begin van het gebruik **om het gewenste werkschema van die beschikbare te selecteren:**
 
    ![ wf-12 ](assets/wf-12.png)
@@ -415,6 +415,7 @@ Ga als volgt te werk om een OR-regel te definiëren:
    * Bepaal dit als **StandaardRoute** door de **Waarde** aan `true` te plaatsen.
 
    * Als **Regel**, plaats de weg aan het manuscript. Bijvoorbeeld:
+
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -424,6 +425,7 @@ Ga als volgt te werk om een OR-regel te definiëren:
 1. Bewerk de eigenschappen van **Tak 2** van **OF Splitst**.
 
    * Als **Regel**, plaats de weg aan het andere manuscript. Bijvoorbeeld:
+
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Stel de eigenschappen van de afzonderlijke stappen in elke vertakking in. Zorg ervoor de **Gebruiker/Groep** wordt geplaatst.

@@ -36,7 +36,7 @@ Raadpleeg de documentatie bij de toepassingsserver voor meer informatie over het
 
 >[!NOTE]
 >
->Als u Dynamic Media in een plaatsing van de OORLOG gebruikt, zie {de documentatie van 0} Dynamic Media ](/help/assets/config-dynamic.md#enabling-dynamic-media).[
+>Als u Dynamic Media in een plaatsing van de OORLOG gebruikt, zie {de documentatie van 0} Dynamic Media [&#128279;](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Algemene beschrijving {#general-description}
 

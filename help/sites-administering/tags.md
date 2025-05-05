@@ -30,7 +30,7 @@ Naast pagina&#39;s en elementen worden tags gebruikt voor AEM Communities-functi
 
 * gebruiker produceerde inhoud (zie [ Tagend UGC) ](/help/communities/tag-ugc.md)
 
-* De Middelen van Enablement (zie {de Middelen van 0} Tagging Enablement ](/help/communities/functions.md#catalog-function))[
+* De Middelen van Enablement (zie {de Middelen van 0} Tagging Enablement [&#128279;](/help/communities/functions.md#catalog-function))
 
 ## Functies voor tags {#tag-features}
 
@@ -55,7 +55,7 @@ Enkele eigenschappen van markeringen binnen AEM omvatten:
 * Als labelen een belangrijk aspect van uw inhoud is
 
    * zorg ervoor dat de labels worden verpakt met de pagina&#39;s die deze gebruiken
-   * zorg ervoor {de toestemmingen van 0} markering ](#setting-tag-permissions) leestoegang toelaten[
+   * zorg ervoor {de toestemmingen van 0} markering [&#128279;](#setting-tag-permissions) leestoegang toelaten
 
 ## Tagingsconsole {#tagging-console}
 
@@ -173,7 +173,7 @@ Zodra de vereiste informatie is ingevoerd
 
 ![ chlimage_1-195 ](assets/chlimage_1-195.png)
 
-Wanneer een namespace of een andere markering wordt geselecteerd, is het mogelijk om de Titel, Beschrijving te veranderen, en localisaties van de Titel te verstrekken door het **`Edit`**pictogram te selecteren.
+Wanneer een namespace of een andere markering wordt geselecteerd, is het mogelijk om de Titel, Beschrijving te veranderen, en localisaties van de Titel te verstrekken door het **`Edit`**&#x200B;pictogram te selecteren.
 
 Nadat wordt aangebracht uitgeeft, uitgezocht **sparen**.
 
@@ -189,7 +189,7 @@ Wanneer een naamruimte of een andere tag wordt geselecteerd en u het pictogram *
 
 >[!NOTE]
 >
->Het wordt geadviseerd dat de Auteurs slechts worden toegestaan ](#editing-tags) uit te geven de markering `title`, om geen markeringen te bewegen of anders te noemen.[
+>Het wordt geadviseerd dat de Auteurs slechts worden toegestaan [&#128279;](#editing-tags) uit te geven de markering `title`, om geen markeringen te bewegen of anders te noemen.
 
 ![ chlimage_1-198 ](assets/chlimage_1-198.png)
 
@@ -258,7 +258,7 @@ De toestemmingen van de markering zijn [ &quot;veilig (door gebrek)&quot;](/help
       * blader bijvoorbeeld naar http://localhost:4502/useradmin
 
    * in de linkerruit, selecteer de groep (of de gebruiker) waarvoor [ leest toestemming ](/help/sites-administering/security.md#permissions) moet worden verleend
-   * Zoek in het rechterdeelvenster het **Pad **naar de tagnaamruimte
+   * Zoek in het rechterdeelvenster het **Pad &#x200B;** naar de tagnaamruimte
 
       * bijvoorbeeld, `/content/cq:tags/mycommunity`
 
@@ -285,7 +285,7 @@ Het `title` bezit van een markering kan in veelvoudige talen worden vertaald. Zo
 
 Het volgende beschrijft hoe te om `title` van de markering **Dieren** van Engels in Duits en Frans te vertalen.
 
-Begin door de markering onder de **Fotografie van de Voorraad** te selecteren namespace en het pictogram ** `Edit` **te selecteren (zie [ het Uitgeven van Markeringen ](#editing-tags) sectie).
+Begin door de markering onder de **Fotografie van de Voorraad** te selecteren namespace en het pictogram **&#x200B; `Edit` &#x200B;** te selecteren (zie [ het Uitgeven van Markeringen ](#editing-tags) sectie).
 
 In het deelvenster Tag bewerken kunt u talen kiezen waarin de titel van de tag moet worden gelokaliseerd.
 

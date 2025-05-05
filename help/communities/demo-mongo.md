@@ -130,7 +130,7 @@ Dit proces begint een Solr server van HTTP gebruikend standaardhaven 8983. U kun
 >
 >Als Solr Console niet beschikbaar is, controleer de logboeken onder &lt;solrinstall>/example/logs. Kijk of SOLR probeert te binden aan een specifieke hostname die niet kan worden opgelost (bijvoorbeeld &quot;user-macbook-pro&quot;).
 >
-Als dat het geval is, werkt u het `etc/hosts` -bestand bij met een nieuw item voor deze hostnaam (bijvoorbeeld 127.0.0.1 user-macbook-pro) en geeft u het bestand de juiste naam.
+>Als dat het geval is, werkt u het `etc/hosts` -bestand bij met een nieuw item voor deze hostnaam (bijvoorbeeld 127.0.0.1 user-macbook-pro) en geeft u het bestand de juiste naam.
 
 ### SolrCloud {#solrcloud}
 

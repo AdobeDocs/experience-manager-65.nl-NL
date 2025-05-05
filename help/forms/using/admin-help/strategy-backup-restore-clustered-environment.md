@@ -133,7 +133,7 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
    1. Verwijder het bestand clusterNode/revision.log op het knooppunt.
    1. Verwijder de .lock op het knooppunt, indien aanwezig.
    1. Verwijder de map repository/system.id op het knooppunt, indien aanwezig.
-   1. &amp;Bestandsnaam verwijderen;ast;&amp;ast;/listener.properties op het knooppunt, indien aanwezig.
+   1. &amp;Bestandsnaam verwijderen;ast;&ast;/listener.properties op het knooppunt, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]
@@ -163,7 +163,7 @@ Voer de volgende stappen uit als de volledige cluster mislukt als gevolg van fou
    1. Verwijder het bestand clusterNode/revision.log op alle clusterknooppunten.
    1. Verwijder de .lock op alle clusterknooppunten, indien aanwezig.
    1. Verwijder repository/system.id alle clusterknooppunten, indien aanwezig.
-   1. De bestanden &amp;amp verwijderen;ast;&amp;ast;/listener.properties op alle clusterknooppunten, indien aanwezig.
+   1. De bestanden &amp;amp verwijderen;ast;&ast;/listener.properties op alle clusterknooppunten, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]

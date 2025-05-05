@@ -43,7 +43,7 @@ Het kiezen van of **Gebruikers** of **Groepen** van de console van Hulpmiddelen 
 
   ![ de beheersconsole van de Gebruiker ](assets/chlimage_1-74a.png)
 
-  De **consolelijsten van 0} Groepen {:**
+  De **consolelijsten van 0&rbrace; Groepen &lbrace;:**
 
    * de groepsnaam
    * de groepsbeschrijving
@@ -133,7 +133,7 @@ U kunt de rekening als of **actief** of **inactief** markeren.
 
    ![ de dialoog van de Montages van de Rekening ](assets/chlimage_1-76a.png)
 
-1. Het **dialoogvenster van het Wachtwoord van de Verandering 0} opent.** Voer het nieuwe wachtwoord en het wachtwoord in en typ het opnieuw. Gebruik **O.K.** om de veranderingen te bevestigen.
+1. Het **dialoogvenster van het Wachtwoord van de Verandering 0&rbrace; opent.** Voer het nieuwe wachtwoord en het wachtwoord in en typ het opnieuw. Gebruik **O.K.** om de veranderingen te bevestigen.
 
    ![ het wachtwoorddialoog van de Verandering ](assets/chlimage_1-77a.png)
 

@@ -129,7 +129,7 @@ Tijdens het renderen wordt het FormCalc-script vertaald (en in cache geplaatst) 
 
 Deze scriptengine gebruikt een deel van de functie van ECMAScript5, zoals Object.defineProperty. De motor/de bibliotheek wordt geleverd als Bibliotheek van de Cliënt CQ met de categorienaam **xfaforms.profile**. Het verstrekt ook **FormBridge API** om externe portals of apps toe te laten om met vorm in wisselwerking te staan. Met FormBridge kan een externe toepassing via programmacode bepaalde elementen verbergen, de waarden ervan ophalen of instellen of de kenmerken ervan wijzigen.
 
-Voor meer details, zie het ](/help/forms/using/form-bridge-apis.md) artikel van Bridge van de Vorm 0} {.[
+Voor meer details, zie het [&#128279;](/help/forms/using/form-bridge-apis.md) artikel van Bridge van de Vorm 0&rbrace; &lbrace;.
 
 #### Layout Engine {#layout-engine}
 
@@ -178,7 +178,7 @@ De knoop van het Profiel heeft een bezit **sling:resourceSuperType** met waarde 
 * **xfaforms.profile**: Deze bibliotheek bevat implementatie voor de motor van Scripting XFA en van de Lay-out.
 
 Deze bibliotheken zijn gemodelleerd als CQ-clientbibliotheken die gebruikmaken van de mogelijkheden voor automatische samenvoeging, minificatie en compressie van de JavaScript-bibliotheken van het CQ-framework.
-Voor meer informatie over de Bibliotheken van de Cliënt CQ, zie {de Documentatie van de Clientlib van 0} CQ ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).[
+Voor meer informatie over de Bibliotheken van de Cliënt CQ, zie {de Documentatie van de Clientlib van 0} CQ [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
 
 Zoals hierboven beschreven, roept de profielrenderer JSP de Dienst van Forms via het verbinden omvat. Dit JSP plaatst ook diverse zuivert opties die op adminconfiguratie of verzoekparameters worden gebaseerd.
 

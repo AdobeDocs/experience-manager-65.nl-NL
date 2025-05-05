@@ -91,7 +91,7 @@ De volgende eigenschappen kunnen worden geconfigureerd:
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 
-Voor complexere montages die veelvoudige AEM plaatsstructuren gebruiken die met verschillende handelscatalogi worden gecombineerd zien het ](configuring/multi-store-setup.md) leerprogramma van de Opstelling van de multi-Opslag van Commerce 0} {.[
+Voor complexere montages die veelvoudige AEM plaatsstructuren gebruiken die met verschillende handelscatalogi worden gecombineerd zien het [&#128279;](configuring/multi-store-setup.md) leerprogramma van de Opstelling van de multi-Opslag van Commerce 0&rbrace; &lbrace;.
 
 ## Aanvullende bronnen {#additional-resources}
 

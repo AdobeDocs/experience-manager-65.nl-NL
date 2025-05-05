@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # A/B-test voor adaptieve formulieren maken en beheren{#create-and-manage-a-b-test-for-adaptive-forms}
 
-[!BADGE  beëindigde ]{type=negative tooltip="Deze functie is nu levenseinde"}
+[!BADGE &#x200B; beëindigde &#x200B;]{type=negative tooltip="Deze functie is nu levenseinde"}
 
 <div class="preview"> De functie voor het testen van adaptieve formulieren in A/B is aan het einde van de levensduur verstreken en wordt niet meer ondersteund. </div>
 
@@ -109,7 +109,7 @@ U kunt de doelgroep selecteren wanneer u A/B-tests voor een formulier configuree
 1. Klik het **Uitgezochte** hulpmiddel in de toolbar en selecteer de adaptieve vorm.
 1. Klik **Meer** in de toolbar en selecteer **A/B het Testen** vormen. De Configure A/B testende pagina opent.
 
-[](assets/ab-test-configure-1.png)
+[&#128279;](assets/ab-test-configure-1.png)
 
 1. Specificeer een **Naam van de Activiteit** voor de test A/B.
 
@@ -153,7 +153,7 @@ Het testrapport A/B weergeven en analyseren:
 
 1. Selecteer de adaptieve vorm, klik **Meer**, en klik dan **het Testen van A/B Rapport**. Het rapport wordt weergegeven.
 
-[](assets/ab-test-report-3.png)
+[&#128279;](assets/ab-test-report-3.png)
 
 1. Analyseer het rapport en controleer of u genoeg gegevenspunten hebt om één van de beter presterende ervaringen als winnaar te verklaren. U kunt ervoor kiezen om dezelfde A/B-test langer te blijven uitvoeren of een winnaar te declareren en de A/B-test te beëindigen.
 1. Om een winnaar te verklaren en de test te beëindigen A/B, klik het **Eind A/B test** knoop op het rapporteringsdashboard. In een dialoogvenster wordt u gevraagd een van de twee ervaringen als winnaar op te geven. Kies een winnaar en bevestig om de A/B-test te beëindigen.

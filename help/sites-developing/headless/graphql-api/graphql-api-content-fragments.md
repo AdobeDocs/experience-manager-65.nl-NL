@@ -180,7 +180,7 @@ Voor Inhoudsfragmenten, zijn de schema&#39;s van GraphQL (structuur en types) ge
 
 >[!CAUTION]
 >
->Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die ****) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
+>Alle schema&#39;s van GraphQL (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **&#x200B;**) zijn toegelaten zijn leesbaar door het eindpunt van GraphQL.
 >
 >Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden gelekt. Het bevat bijvoorbeeld informatie die als veldnamen aanwezig kan zijn in de modeldefinitie.
 
@@ -1045,7 +1045,7 @@ Als u bijvoorbeeld toegang wilt verlenen voor aanvragen bij de Referenter `my.do
 
 >[!CAUTION]
 >
->Alle schema&#39;s van GraphQL [ ](#schema-generation) (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **** zijn toegelaten) zijn leesbaar door het eindpunt van GraphQL.
+>Alle schema&#39;s van GraphQL [&#128279;](#schema-generation) (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **&#x200B;**&#x200B;zijn toegelaten) zijn leesbaar door het eindpunt van GraphQL.
 >
 >Deze functionaliteit houdt in dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden gelekt. Het bevat bijvoorbeeld informatie die als veldnamen aanwezig kan zijn in de modeldefinitie.
 

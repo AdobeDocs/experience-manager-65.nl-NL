@@ -70,7 +70,7 @@ De indeling is gebaseerd op de schermindeling met aanbevolen werkwijzen van HTML
 
 >[!NOTE]
 >
->Bij een minimum, moet het ontwerppakket **** een **index.html** dossier op het wortelniveau bevatten. In het geval dat de landende pagina om moet worden ingevoerd een mobiele versie heeft eveneens, dan moet zip a **mobile.index.html** samen met **index.html** op het wortelniveau bevatten.
+>Bij een minimum, moet het ontwerppakket **&#x200B;**&#x200B;een **index.html** dossier op het wortelniveau bevatten. In het geval dat de landende pagina om moet worden ingevoerd een mobiele versie heeft eveneens, dan moet zip a **mobile.index.html** samen met **index.html** op het wortelniveau bevatten.
 
 ### De HTML van de bestemmingspagina voorbereiden {#preparing-the-landing-page-html}
 
@@ -470,7 +470,7 @@ Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voo
 Dit komt omdat er na het importeren extra HTML-elementen zoals de &lt;div>-tag worden toegevoegd aan de gegenereerde HTML.
 
 * Scripts die op de hierboven beschreven structuur vertrouwen, worden ook niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor conversie naar AEM componenten.
-* Het gebruik van stijlen op de opmaakcodes voor componentconversie zoals &lt;div data-cq-component=&quot;&amp;ast;&quot;> wordt niet aanbevolen.
+* Het gebruik van stijlen op de opmaakcodes voor componentconversie zoals &lt;div data-cq-component=&quot;&ast;&quot;> wordt niet aanbevolen.
 * De ontwerplay-out moet de beste praktijken van HTML5 Boilerplate volgen. Lees meer over: [ https://html5boilerplate.com/ ](https://html5boilerplate.com/).
 
 ## OSGI-modules configureren {#configuring-osgi-modules}
@@ -531,7 +531,7 @@ In de onderstaande tabel worden de eigenschappen kort beschreven:
 >
 >Als de standaardconfiguratie bijvoorbeeld
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >En u moet `CQ_DESIGN_PATH` vervangen door `VIPURL` in het zoekpatroon, dan moet uw zoekpatroon er als volgt uitzien:
 >

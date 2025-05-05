@@ -117,7 +117,7 @@ Zowel zijn de volmacht als de configuraties van de volmachtsarbeider beschikbaar
 
 >[!NOTE]
 >
->Zie {de configuratie van de Werknemer van de Volmacht van 0} InDesign Server ](indesign.md#configuring-the-proxy-worker-for-indesign-server) en [ configuratie van Cloud Servicen ](../sites-developing/extending-cloud-config.md) voor meer informatie.[
+>Zie {de configuratie van de Werknemer van de Volmacht van 0} InDesign Server [&#128279;](indesign.md#configuring-the-proxy-worker-for-indesign-server) en [ configuratie van Cloud Servicen ](../sites-developing/extending-cloud-config.md) voor meer informatie.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 

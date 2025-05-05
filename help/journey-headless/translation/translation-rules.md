@@ -78,6 +78,7 @@ In de **Configuratie van de Vertaling** UI, zijn er verscheidene opties beschikb
    1. Klik **toevoegen**.
    1. Herhaal deze stappen voor alle velden die u moet vertalen.
    1. Klik **sparen**.
+
       ![ voeg bezit ](assets/add-property.png) toe
 
 U hebt nu uw vertaalregels geconfigureerd.

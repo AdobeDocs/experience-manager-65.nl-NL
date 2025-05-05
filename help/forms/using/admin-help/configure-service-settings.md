@@ -74,11 +74,11 @@ De volgende instellingen zijn beschikbaar voor de service voor formulieren met s
 
 De Central Migration Bridge-service ( `CentralMigrationBridge` ) roept een subset van de Adobe Central Pro Output Server-functionaliteit (Central) aan, die de opdrachten JFMERGE, JFTRANS en XMLIMPORT bevat. Met Bridge-services voor centrale migratie kunt u de volgende Central-elementen opnieuw gebruiken in AEM formulieren:
 
-* sjabloonontwerp (&amp;ast;.ifd)
-* uitvoersjablonen (&amp;ast;.mdf)
-* gegevensbestanden (&amp;ast;.dat-bestanden)
-* preambule, bestanden (&amp;ast;.pre-bestanden)
-* gegevensdefinitiebestanden (&amp;ast;.tdf)
+* sjabloonontwerp (&ast;.ifd)
+* uitvoersjablonen (&ast;.mdf)
+* gegevensbestanden (&ast;.dat-bestanden)
+* preambule, bestanden (&ast;.pre-bestanden)
+* gegevensdefinitiebestanden (&ast;.tdf)
 
 De volgende instelling is beschikbaar voor de Central Migration Bridge-service.
 
@@ -162,7 +162,7 @@ U kunt nieuwe instellingen maken via de gebruikersinterface van de PDF Generator
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie {het document van de de levenscyclus van het 0} product van de Adobe ](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).[
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie {het document van de de levenscyclus van het 0} product van de Adobe [&#128279;](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 Met de service Documentbeheer ( `DocumentManagementService` ) kunnen processen de functionaliteit voor inhoudsbeheer gebruiken die wordt geboden door Content Services (Afgekeurd). De verrichtingen van het Beheer van het document verstrekken basistaken die worden vereist om ruimten en inhoud in het systeem van het inhoudsbeheer te handhaven. Voorbeelden van dergelijke taken zijn kopiëren, verwijderen, verplaatsen, ophalen en opslaan, spaties en koppelingen maken en inhoudskenmerken ophalen en instellen.
 

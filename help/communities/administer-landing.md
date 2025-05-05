@@ -41,7 +41,7 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
    * [Leden en groepsbeheer](members.md)
    * [Rapporten](reports.md)
 
-* De middelen van gemeenschappen [**](tools.md):
+* De middelen van gemeenschappen [*&#128279;*](tools.md):
 
    * [Sitesjablonen](sites.md)
    * [Groepssjablonen](tools-groups.md)

@@ -56,7 +56,7 @@ Wij.Detailhandel wordt geleverd als AEM inhoud van het monster. Om te gebruiken,
 
 ### Laatste versie {#latest-version}
 
-Hoewel wij.Retail met de AEM release wordt gedistribueerd, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk om [ de recentste versie van GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) te downloaden en dan [ ](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) te uploaden en [ te installeren ](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw AEM instantie.
+Hoewel wij.Retail met de AEM release wordt gedistribueerd, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk om [ de recentste versie van GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) te downloaden en dan [&#128279;](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) te uploaden en [ te installeren ](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw AEM instantie.
 
 ### Eerste stappen {#first-steps}
 

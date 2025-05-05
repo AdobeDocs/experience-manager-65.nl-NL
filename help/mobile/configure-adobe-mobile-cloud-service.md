@@ -60,7 +60,7 @@ Als u gebruik wilt maken van de Adobe Mobile Services Analytics, moet u de AEM M
 
    ![ chlimage_1-25 ](assets/chlimage_1-25.png)
 
-   Als de geloofsbrieven worden geverifieerd, verifieert **** knoopveranderingen in **Geverifieerd**. U kunt een mobiele dienst selecteren app van **een Mobiele Dienst van de App**.
+   Als de geloofsbrieven worden geverifieerd, verifieert **&#x200B;**&#x200B;knoopveranderingen in **Geverifieerd**. U kunt een mobiele dienst selecteren app van **een Mobiele Dienst van de App**.
 
    Klik **voorleggen** voor vestiging uw configuratie.
 

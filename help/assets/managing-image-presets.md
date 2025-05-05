@@ -344,7 +344,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
      <strong> TIFF met alpha </strong> verstrekt deze extra optie:
     </div>
     <ul>
-     <li><strong> Compressie </strong> - selecteer een compressiealgoritme. De opties van het algoritme voor PDF zijn <strong> niets </strong>, <strong> Zip </strong>, en <strong> Jpeg </strong>; voor TIFF zijn de opties <strong> niets </strong>, <strong> LZW </strong>, <strong> Jpeg </strong>, en <strong> Zip </strong>; en voor TIFF met Alpha zijn <strong> 4} niets </strong>, <strong> LZW </strong>, en <strong> Zip </strong>.</li>
+     <li><strong> Compressie </strong> - selecteer een compressiealgoritme. De opties van het algoritme voor PDF zijn <strong> niets </strong>, <strong> Zip </strong>, en <strong> Jpeg </strong>; voor TIFF zijn de opties <strong> niets </strong>, <strong> LZW </strong>, <strong> Jpeg </strong>, en <strong> Zip </strong>; en voor TIFF met Alpha zijn <strong> 4&rbrace; niets </strong>, <strong> LZW </strong>, en <strong> Zip </strong>.</li>
     </ul> <p>Het kiezen van <strong> PNG </strong>, <strong> PNG met Alpha, </strong> of <strong> EPS </strong> verstrekt geen extra opties.</p> </td>
   </tr>
   <tr>

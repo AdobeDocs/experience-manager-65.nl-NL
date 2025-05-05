@@ -120,6 +120,7 @@ Zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-mi
 1. Wanneer de verbinding is gelukt, stelt u het volgende in. Koppen met een sterretje (*) zijn vereist:
 
    * **[!UICONTROL Company]** - de naam van de Dynamic Media-account.
+
      >[!IMPORTANT]
      >
      >Slechts één Configuratie van Dynamic Media in Cloud Servicen wordt gesteund op een geval van Experience Manager; voeg niet meer dan één configuratie toe. De veelvoudige Configuraties van Dynamic Media op een instantie van de Experience Manager worden _niet_ gesteund of door Adobe geadviseerd.
@@ -146,7 +147,7 @@ Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een spe
    * **[!UICONTROL Dynamic Media sync mode]**
       * **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
-Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren, selecteert u eerst een elementmap en vervolgens op de werkbalk **[!UICONTROL Properties]** . Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Selecteer **[!UICONTROL Save]** als u klaar bent. *Herinner me: deze drie opties zijn niet beschikbaar als u **[!UICONTROL Sync all content]**vroeger selecteerde.* zie ook [ Werk met Selectieve Publish op het omslagniveau in Dynamic Media ](/help/assets/selective-publishing.md).
+Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren, selecteert u eerst een elementmap en vervolgens op de werkbalk **[!UICONTROL Properties]** . Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Selecteer **[!UICONTROL Save]** als u klaar bent. *Herinner me: deze drie opties zijn niet beschikbaar als u **[!UICONTROL Sync all content]**&#x200B;vroeger selecteerde.* zie ook [ Werk met Selectieve Publish op het omslagniveau in Dynamic Media ](/help/assets/selective-publishing.md).
          * **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde voor de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont dit als knopinfo.
          * **[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
          * **[!UICONTROL Disabled for subfolders]** - Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media.
@@ -258,7 +259,7 @@ Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebr
   >
   >Configureer de opslag van Azure Blob met een toegangstoets en een geheime sleutel omdat deze grote uploadfunctie niet wordt ondersteund met AzureSas in de opslagconfiguratie van Blob.
 
-* De download van de Toegang van Oak [ de Directe Binaire ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) wordt toegelaten (het 2} Directe Binaire upload van de Toegang van Oak *wordt niet vereist).*
+* De download van de Toegang van Oak [ de Directe Binaire ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) wordt toegelaten (het 2&rbrace; Directe Binaire upload van de Toegang van Oak *wordt niet vereist).*
 
   Om het Directe Binaire downloaden van de Toegang toe te laten, plaats bezit `presignedHttpDownloadURIExpirySeconds > 0` in de datastore configuratie. De waarde moet lang genoeg zijn om grotere binaire bestanden te downloaden en het opnieuw te proberen.
 

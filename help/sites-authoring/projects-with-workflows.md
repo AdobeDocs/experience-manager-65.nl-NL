@@ -25,7 +25,7 @@ De projectworkflows die beschikbaar zijn uit het vak zijn onder andere:
 * **de Lancering van het Verzoek** - een werkschema de verzoeken om een lancering.
 * **Verzoek het Landen Pagina** - Dit werkschema vraagt een het landen pagina.
 * **Verzoek E-mail** - Werkschema voor het verzoeken van een e-mail.
-* **van de Foto van het 0} Product foto en van de Foto van het Product Opname (Commerce)** - Kaarten activa met producten
+* **van de Foto van het 0&rbrace; Product foto en van de Foto van het Product Opname (Commerce)** - Kaarten activa met producten
 * **DAM leidt tot en vertaalt exemplaar en DAM leidt het Exemplaar van de Taal** - creeert vertaalde binaire getallen, meta-gegevens, en markeringen voor activa en omslagen.
 
 Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows beschikbaar:
@@ -39,12 +39,12 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 | Verzoek starten | x |  |  |  |
 | Openingspagina aanvragen | x |  |  |  |
 | E-mail aanvragen | x |  |  |  |
-| DAM Create Language Copy&amp;ast; |  |  |  | x |
+| DAM Create Language Copy&ast; |  |  |  | x |
 | DAM &amp;Create and Translate Language Copy;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [ Creërend de Kopieën van de Taal voor Assets.](/help/sites-administering/tc-manage.md)
+>&ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [ Creërend de Kopieën van de Taal voor Assets.](/help/sites-administering/tc-manage.md)
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -81,7 +81,7 @@ De **werkschema&#39;s van de Foto van het Product** (zowel handel als zonder han
 In het **werkschema van de Goedkeuring van het Project**, wijst u inhoud aan een gebruiker toe, herziet, en keurt dan de inhoud goed.
 
 1. In een eenvoudig project, klik de neerwaartse chevron bij het hoogste recht van de **tegel van de Werkschema&#39;s** en selecteer **Werkschema van het Begin**.
-1. In de tovenaar van het werkschema selecteert **de Goedkeuring van het 0} Project en klikt** daarna **.**
+1. In de tovenaar van het werkschema selecteert **de Goedkeuring van het 0&rbrace; Project en klikt** daarna **.**
 1. Voer een titel in en selecteer aan wie de titel moet worden toegewezen. Voer, indien van toepassing, een beschrijving, een inhoudspad, een taakprioriteit en een vervaldatum in.
 
    ![ het goedkeuringswerkschema van het Project ](assets/project-approval-workflow.png)

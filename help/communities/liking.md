@@ -28,7 +28,7 @@ Als u een component `Liking` in de ontwerpmodus aan een pagina wilt toevoegen, g
 
 En sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers leuk kunnen vinden.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-liking.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Liking` component verschijnt.
 

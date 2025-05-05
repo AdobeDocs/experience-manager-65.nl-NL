@@ -134,7 +134,7 @@ Hieronder volgt een overzicht van de stappen die een front-end ontwikkelaar moet
 
    Zodra componenten zijn overeengekomen en het JSON-model is geïmplementeerd, kan de front-end ontwikkelaar de SPA vrij ontwikkelen en eenvoudig toegang krijgen tot het JSON-model via `this.props.cqModel` .
 
-1. `render()` methode van de component van 0} uitvoeren ****
+1. `render()` methode van de component van 0&rbrace; uitvoeren **&#x200B;**
 
    De front-end ontwikkelaar implementeert de `render()` -methode naar eigen inzicht en kan de velden van de `cqModel` -eigenschap gebruiken. Hiermee worden het DOM en de HTML-fragmenten uitgevoerd die in de pagina worden ingevoegd. Dit is de standaardmanier om een app te maken in React.
 
@@ -229,4 +229,4 @@ Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [ Begonnen het
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt, zie het artikel [ Dynamisch Model aan de Afbeelding van de Component voor SPA ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1} artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)
+Als u wenst om SPA in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe SPA SDK voor AEM werkt, zie het [ SPA 1&rbrace; artikel van de Vervaging.](/help/sites-developing/spa-blueprint.md)

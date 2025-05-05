@@ -55,13 +55,13 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    De standaardspellingcontrole in uw browser controleert spelling in de redacteur van de Tekst. Als u de spelling en grammatica wilt controleren, kunt u de instellingen voor spellingcontrole van uw browser bewerken of browserinsteekmodules/invoegtoepassingen installeren om de spelling en de grammatica te controleren.
 
-   U kunt ook de verschillende sneltoetsen in de teksteditor gebruiken voor het beheren, bewerken en opmaken van tekst. Voor meer informatie over ](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) toetsenbordkortere weg van de Redacteur van de Tekst van 0} {in de Sneltoetsen van het Beheer van de Correspondentie.[
+   U kunt ook de verschillende sneltoetsen in de teksteditor gebruiken voor het beheren, bewerken en opmaken van tekst. Voor meer informatie over [&#128279;](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) toetsenbordkortere weg van de Redacteur van de Tekst van 0&rbrace; &lbrace;in de Sneltoetsen van het Beheer van de Correspondentie.
 
 1. Er wordt een teksteditor geopend en u voert de tekst in. Gebruik de werkbalk boven aan de pagina om de tekst, invoegvoorwaarden, koppeling en pagina-einden op te maken.
 
    ![ Toolbar ](assets/advancedediting.png)
 
-   * **Verbinding**: De hypertext van het Tussenvoegsel [ ](#insert-hyperlink) verbinding in de tekst.
+   * **Verbinding**: De hypertext van het Tussenvoegsel [&#128279;](#insert-hyperlink) verbinding in de tekst.
    * **Herhaal**: Herhaal het element van de drukinzameling in het Woordenboek van Gegevens gebruikend een afbakening.
    * **Voorwaarde**: Uitgezocht om een voorwaarde op te nemen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
    * **voeg Beschrijving** toe: Voeg aantekening aan een stuk van tekst toe. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
@@ -76,7 +76,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    ![ de toolbar van de Paragraaf ](assets/fonteditingtoolbar.png)
 
    Alinea, werkbalk
-   ](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png) de toolbar van de Groepering van de 1} Uitlijning[![
+   [&#128279;](assets/paragrapheditingtoolbar.png)![&#128279;](assets/paragrapheditingtoolbar-1.png) de toolbar van de Groepering van de 1&rbrace; Uitlijning
 
    ![ van de Lijst toolbar ](assets/bulleteditingtoolbar.png)
 
@@ -273,7 +273,7 @@ Om de orde van de activa binnen de lijst te veranderen, selecteer en houd het pi
    * **Inspringing:** u kunt het inkepingsniveau van elke module/inhoud veranderen die als deel van de Lijst wordt geselecteerd. De inspringing wordt opgegeven in termen van niveaus (te beginnen met nul), zodat elk inspringingsniveau overeenkomt met een opvulling van 36 punten.
    * **Samengesteld:** wanneer geselecteerd, wordt de samengestelde nummering toegepast als combinatie van de stijl van de buitenste (ouder) Lijst en zijn eigen stijl. De samengestelde nummering in deze geneste lijst is gebaseerd op de volgorde waarin deze geneste lijst wordt weergegeven in de buitenste lijst.
    * **negeert lijststijl:** als de Samengestelde optie van de Nummering wordt geschrapt, dan wordt de optie om de Stijl van de Lijst te negeren toegelaten. Bij deze selectie wordt de eigen stijl van de geneste lijst genegeerd. De nummering gaat verder vanaf de buitenste lijst. Daarom worden de modules van de genestelde lijst behandeld als deel van de buitenlijst zelf, die om het even welke stijlen veronachtzamen die op de genestelde Lijst worden gespecificeerd. Als de optie Lijststijl negeren is uitgeschakeld voor een geneste lijst, hebben de modules die deel uitmaken van die geneste lijst een eigen nummeringsstijl.
-   * **houd met daarna:** plaatst de pagina onderbreking voor de activa in een lijst. Als u het Levensonderhoud met Volgende bezit van één activa van een lijst aan **** plaatst, blijven dat activa en de volgende activa op de zelfde pagina. Dit houdt in dat de inhoud van het geselecteerde element en het volgende element niet worden verdeeld over pagina&#39;s.
+   * **houd met daarna:** plaatst de pagina onderbreking voor de activa in een lijst. Als u het Levensonderhoud met Volgende bezit van één activa van een lijst aan **&#x200B;**&#x200B;plaatst, blijven dat activa en de volgende activa op de zelfde pagina. Dit houdt in dat de inhoud van het geselecteerde element en het volgende element niet worden verdeeld over pagina&#39;s.
 
 1. Selecteer **sparen**.
 
@@ -294,7 +294,7 @@ Op basis van de opties die u kiest, wordt alleen de eerste expressie die op basi
 
 ### Uitvoeringsvoorwaarden {#implementing-conditions}
 
-De redacteur van de Voorwaarde komt met een ](/help/forms/using/expression-builder.md) gebruikersinterface van de Bouwer van de Uitdrukking 0} die het creëren van uitdrukkingen gebruikend zowel veelvoudige placeholders als elementen van het Woordenboek van Gegevens steunt. [ In dergelijke expressies kunt u algemene operanden en lokale/algemene functies gebruiken. Elke expressie kan aan bepaalde inhoud worden gekoppeld en optioneel kan er een standaardsectie zijn als geen van de expressies true oplevert. Alle expressies worden geëvalueerd in de volgorde waarin ze zijn gedefinieerd en de eerste expressies die true retourneren worden geselecteerd en de bijbehorende inhoud wordt geretourneerd door die voorwaardelijke module.
+De redacteur van de Voorwaarde komt met een [&#128279;](/help/forms/using/expression-builder.md) gebruikersinterface van de Bouwer van de Uitdrukking 0&rbrace; die het creëren van uitdrukkingen gebruikend zowel veelvoudige placeholders als elementen van het Woordenboek van Gegevens steunt.  In dergelijke expressies kunt u algemene operanden en lokale/algemene functies gebruiken. Elke expressie kan aan bepaalde inhoud worden gekoppeld en optioneel kan er een standaardsectie zijn als geen van de expressies true oplevert. Alle expressies worden geëvalueerd in de volgorde waarin ze zijn gedefinieerd en de eerste expressies die true retourneren worden geselecteerd en de bijbehorende inhoud wordt geretourneerd door die voorwaardelijke module.
 
 Als de tekst van de voorwaarden in een brief bijvoorbeeld verschilt, afhankelijk van de status waarin de klant zich bevindt en het gegevenswoordenboek een element bevat met de naam &quot;state&quot;, kunt u de voorwaarde als volgt toevoegen:
 * state = NY, selecteer T&amp;C_NY tekstparagraaf
@@ -495,7 +495,7 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 
    Selecteer vervolgens DD en exporteer voorbeeldgegevens. Het XML-bestand dat u krijgt, bevat werknemersgegevens en drie instanties voor Nomine_details (standaard worden 3 instanties gedownload. U kunt toevoegen of verwijderen (afhankelijk van uw vereiste). Werk de waarden bij en importeer vervolgens de testgegevens in DD. Het CMP-bestand is het pakket en bevat de DD. Zo, voer DD in Correspondence Management in.
 
-   Voor meer informatie bij het werken met het Woordenboek van Gegevens en testgegevens, zie {het Woordenboek van 0} Gegevens ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).[
+   Voor meer informatie bij het werken met het Woordenboek van Gegevens en testgegevens, zie {het Woordenboek van 0} Gegevens [&#128279;](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
    ![ de woordenboekstructuur van Gegevens ](assets/dd.jpeg)
 

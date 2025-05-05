@@ -49,13 +49,13 @@ Zie ook [ Facultatief - Opstelling en configuratie van Dynamic Media - de wijzem
 1. Gebruik de vijf lusjes om het gebrek te vormen publiceer contextmontages.
 
    * [ Veiligheid ](#security-tab) tabel
-   * ](#catalog-management-tab) lusje van het Beheer van de Catalogus 0} {[
+   * [&#128279;](#catalog-management-tab) lusje van het Beheer van de Catalogus 0&rbrace; &lbrace;
    * [ Attributen van het Verzoek ](#request-attributes-tab) lusje
    * [ Gemeenschappelijke Attributen van de Duimnagel ](#common-thumbnail-attributes-tab) lusje
    * [ Attributen van het Beheer van de Kleur ](#color-management-attributes-tab) tabel
 
    ![ de pagina van de Opstelling van Dynamic Media Publish ](/help/assets/assets-dm/dm-publish-setup.png)
-   *de pagina van de Opstelling van Dynamic Media Publish, met het **[!UICONTROL Request Attributes]**geselecteerde lusje.*<br><br>
+   *de pagina van de Opstelling van Dynamic Media Publish, met het **[!UICONTROL Request Attributes]**&#x200B;geselecteerde lusje.*<br><br>
 
 1. Als u klaar bent, klikt u in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** .
 
@@ -112,7 +112,7 @@ Deze instellingen hebben betrekking op de standaardweergave en -uitlijning van m
 | **[!UICONTROL Default background color for thumbnail]** | Hiermee geeft u de RGB-waarde op die wordt gebruikt om het gebied te vullen van een miniatuurafbeelding die geen werkelijke afbeeldingsgegevens bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instelling is ingesteld op **[!UICONTROL Fit]** of **[!UICONTROL Texture]** .<br> zie ook de [ ThumbBkgColor ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor) parameter in de Gids van de Verwijzing van de Kijkers van Dynamic Media. |
 | **[!UICONTROL Horizontal alignment]** | Geeft de horizontale uitlijning op van de miniatuurafbeelding in de rechthoek van de antwoordafbeelding die wordt opgegeven door `wid=` - en `hei=` -waarden.<br> Gebruikt slechts voor duimnagelverzoeken (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** het plaatsen aan **[!UICONTROL Fit]** wordt geplaatst.<br> Er zijn drie horizontale uitlijningen te kiezen van: **[!UICONTROL Center alignment]**, **[!UICONTROL Left alignment]**, en **[!UICONTROL Right alignment]**.<br> zie ook de [ ThumbHorizAlign ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign) parameter in de Gids van de Verwijzing van de Kijkers van Dynamic Media. |
 | **[!UICONTROL Vertical alignment]** | Geeft de verticale uitlijning op van de miniatuurafbeelding in de rechthoek van de antwoordafbeelding die wordt opgegeven door `wid=` - en `hei=` -waarden. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instelling is ingesteld op **[!UICONTROL Fit]** .<br> Er zijn drie verticale uitlijningen te kiezen van: **[!UICONTROL Top alignment]**, **[!UICONTROL Center alignment]**, en **[!UICONTROL Bottom alignment]**.<br> zie ook de [ ThumbVertAlign ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign) parameter in de Gids van de Verwijzing van de Kijkers van Dynamic Media. |
-| **[!UICONTROL Default cache time to live]** | Er wordt een standaardvervalinterval gegeven in uren als een bepaalde catalogusrecord geen geldige waarde voor Verlopen catalogus bevat. Ingesteld op `-1` om te markeren als nooit verlopen. <br> zie ook de [ 2} parameter van de Vervalsing {in de Gids van de Verwijzing van de Kijkers van Dynamic Media.](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration) |
+| **[!UICONTROL Default cache time to live]** | Er wordt een standaardvervalinterval gegeven in uren als een bepaalde catalogusrecord geen geldige waarde voor Verlopen catalogus bevat. Ingesteld op `-1` om te markeren als nooit verlopen. <br> zie ook de [ 2&rbrace; parameter van de Vervalsing &lbrace;in de Gids van de Verwijzing van de Kijkers van Dynamic Media.](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration) |
 | **[!UICONTROL Default thumbnail type]** | Er wordt een standaardinstelling voor het miniatuurtype gegeven als een bepaalde catalogusrecord geen geldige waarde voor ThumbType-catalogus bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`).<br> Er zijn drie miniatuurtypen waaruit u kunt kiezen: **[!UICONTROL Crop]** , **[!UICONTROL Fit]** en **[!UICONTROL Texture]** .<br> zie ook de [ ThumbType ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype) parameter in de Gids van de Verwijzing van de Kijkers van Dynamic Media. |
 | **[!UICONTROL Default thumbnail resolution]** | Er wordt een standaardinstelling voor de resolutie van het miniatuurobject gegeven als een bepaalde catalogusrecord geen geldige waarde voor ThumbRes in de catalogus bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer de instelling **[!UICONTROL Default thumbnail type]** is ingesteld op **[!UICONTROL Texture]** .<br> zie ook de [ ThumbRes ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres) parameter in de Gids van de Verwijzing van de Kijkers van Dynamic Media. |
 
@@ -120,7 +120,7 @@ Deze instellingen hebben betrekking op de standaardweergave en -uitlijning van m
 
 Deze instellingen bepalen welke ICC-kleurprofielen worden gebruikt voor afbeeldingen.
 
-**Teruggevende Intentie van de Omzetting van de Kleur 1}
+**Teruggevende Intentie van de Omzetting van de Kleur 1&rbrace;
 Met een rendering intent voor kleurconversie kunt u de standaard rendering intent van de werkprofielen overschrijven om te bepalen hoe de bronkleuren worden aangepast.** Wordt gebruikt als:
 
 1. Een van de standaard-ICC-profielen is de doelkleurruimte van een kleuromzetting.
@@ -129,7 +129,7 @@ Met een rendering intent voor kleurconversie kunt u de standaard rendering inten
 
 Bij verschillende rendering intents worden verschillende regels gebruikt om te bepalen hoe de bronkleuren worden aangepast.
 
-Zie ook de [ ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent) parameter IccRenderIntent in de Gids van de Verwijzing van de Kijkers van Dynamic Media.
+Zie ook de [&#128279;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent) parameter IccRenderIntent in de Gids van de Verwijzing van de Kijkers van Dynamic Media.
 
 >[!NOTE]
 >

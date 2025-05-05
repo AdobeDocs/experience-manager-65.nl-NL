@@ -32,7 +32,7 @@ Een beheerder installeert FMPEG afzonderlijk om ervoor te zorgen dat de juiste t
 
 ## Videoprofielen configureren {#configure-video-profiles}
 
-Definieer videoprofielen voor gebruik van HTML5-elementen. De hier gekozen methoden worden op volgorde gebruikt. Om toegang te hebben, gebruik ](/help/sites-authoring/default-components-designmode.md) de Wijze van het Ontwerp van 0} (Klassieke UI slechts) en selecteer het **[!UICONTROL Profiles]** lusje:[
+Definieer videoprofielen voor gebruik van HTML5-elementen. De hier gekozen methoden worden op volgorde gebruikt. Om toegang te hebben, gebruik [&#128279;](/help/sites-authoring/default-components-designmode.md) de Wijze van het Ontwerp van 0&rbrace; (Klassieke UI slechts) en selecteer het **[!UICONTROL Profiles]** lusje:
 
 ![ chlimage_1-317 ](assets/chlimage_1-317.png)
 

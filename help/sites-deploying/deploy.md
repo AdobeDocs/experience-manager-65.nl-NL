@@ -130,7 +130,7 @@ Met AEM Managed Services kunnen klanten de volgende voordelen realiseren:
 
 **Cloud Manager**: Cloud Manager, een deel van het aanbieden van Adobe Experience Manager Managed Services is een zelfbedieningsportaal dat verder organisaties toelaat om Adobe Experience Manager in de wolk zelf-te beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor Adobe Managed Service-klanten.
 
-Meer over de Manager van de Wolk en zijn middelen leren, zie {de Gids van de Gebruiker van 0} Cloud Manager **](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).[**
+Meer over de Manager van de Wolk en zijn middelen leren, zie {de Gids van de Gebruiker van 0} Cloud Manager **[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).**
 
 ## Aan de slag {#getting-started}
 
@@ -140,7 +140,7 @@ Terwijl de productieinstanties in werking worden gesteld op specifieke machines 
 
 Om vertrouwd te raken en zich op AEM te ontwikkelen, is het gebruikelijk om een instantie te gebruiken die op uw lokale computer wordt geïnstalleerd die OS X of Desktopversies van Microsoft® Windows of Linux® in werking stelt.
 
-Op cliënt-kant, AEM werken met alle moderne browsers (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
+Op cliënt-kant, AEM werken met alle moderne browsers (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; **, **Firefox &#x200B;** 47+, **Safari** 8+) op zowel Desktop als tablet werkende systemen. Zie [ Ondersteunde Platforms van de Cliënt ](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor details.
 
 ### De software ophalen {#getting-the-software}
 

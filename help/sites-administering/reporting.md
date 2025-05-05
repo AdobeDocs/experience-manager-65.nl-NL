@@ -108,7 +108,7 @@ Wanneer u de cursor over het cirkeldiagram verplaatst, wordt de samengevoegde wa
 
 ### Filters en aggregaten {#filters-and-aggregates}
 
-Op aangewezen kolommen, kunt u {de Montages van de Filter **en/of** Aggregates **van het [ drop-down menu van de kolom ](#column-drop-down-menu) ook vormen.**
+Op aangewezen kolommen, kunt u &lbrace;de Montages van de Filter **en/of** Aggregates **van het [ drop-down menu van de kolom ](#column-drop-down-menu) ook vormen.**
 
 #### Filters {#filters}
 
@@ -283,7 +283,7 @@ Als u selecteert om gegevens handmatig te vernieuwen, betekent dit dat:
 
 ### Voltooien (rapport) {#finish-report}
 
-Wanneer u **** beëindigt het rapport:
+Wanneer u **&#x200B;**&#x200B;beëindigt het rapport:
 
 * De rapportdefinitie *vanaf dat punt in tijd* wordt gebruikt voor het nemen van momentopnamen. Daarna, kunt u aan een rapportdefinitie blijven werken omdat het van de momentopnamen gescheiden is.
 * Eventuele bestaande momentopnamen worden verwijderd.
@@ -528,7 +528,7 @@ Het door de gebruiker gegenereerde inhoudsrapport is bijvoorbeeld te vinden onde
 
 Dit rapport bevat nu gegevens die zijn verzameld uit de Publish-omgeving.
 
-Aangezien geen rapportconfiguratie in het milieu van Publish wordt toegestaan, geeft **** uit en **beëindigt** knopen zijn niet beschikbaar. Nochtans, kunt u de **Periode** en **Interval** voor de **Historische gegevens** rapporten selecteren als de momentopnamen worden verzameld.
+Aangezien geen rapportconfiguratie in het milieu van Publish wordt toegestaan, geeft **&#x200B;**&#x200B;uit en **beëindigt** knopen zijn niet beschikbaar. Nochtans, kunt u de **Periode** en **Interval** voor de **Historische gegevens** rapporten selecteren als de momentopnamen worden verzameld.
 
 ![ rapportSheetPublish ](assets/reportsucgpublish.png)
 

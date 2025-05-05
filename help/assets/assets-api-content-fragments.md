@@ -76,8 +76,8 @@ Als u bijvoorbeeld toegang wilt krijgen tot `/content/dam/wknd/en/adventures/cyc
 >[!NOTE]
 >Toegang over:
 >
->* `/api/assets` **** nodig niet het gebruik van `.model` selecteur.
->* `/content/path/to/page` **** vereist het gebruik van `.model` selecteur.
+>* `/api/assets` **&#x200B;**&#x200B;nodig niet het gebruik van `.model` selecteur.
+>* `/content/path/to/page` **&#x200B;**&#x200B;vereist het gebruik van `.model` selecteur.
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
 

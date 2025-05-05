@@ -34,7 +34,7 @@ U kunt als volgt deze wizard openen:
 
    ![ chlimage_1-11 ](assets/chlimage_1-11.jpeg)
 
-1. De **Volgende** knoop brengt u aan **** stap van de tovenaar vormen. Hier kunt u talen toevoegen of verwijderen en de vertaalmethode selecteren.
+1. De **Volgende** knoop brengt u aan **&#x200B;**&#x200B;stap van de tovenaar vormen. Hier kunt u talen toevoegen of verwijderen en de vertaalmethode selecteren.
 
    ![ chlimage_1-12 ](assets/chlimage_1-12.jpeg)
 

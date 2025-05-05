@@ -35,7 +35,7 @@ De inhoud wordt toegevoegd gebruikend [ componenten ](/help/sites-authoring/defa
 
 >[!NOTE]
 >
->Wanneer op **** wijze uitgeeft, zijn de verbindingen in uw inhoud zichtbaar, maar **niet toegankelijk**. De wijze van de Voorproef van het gebruik ](#previewingpagestouchoptimizedui) als u wilt navigeren gebruikend de verbindingen in uw inhoud.[
+>Wanneer op **&#x200B;**&#x200B;wijze uitgeeft, zijn de verbindingen in uw inhoud zichtbaar, maar **niet toegankelijk**. De wijze van de Voorproef van het gebruik [&#128279;](#previewingpagestouchoptimizedui) als u wilt navigeren gebruikend de verbindingen in uw inhoud.
 
 ## Werkbalk Pagina {#page-toolbar}
 
@@ -475,7 +475,7 @@ Bijvoorbeeld:
 
 Er zijn twee opties voor het voorvertonen van een pagina:
 
-* ](#preview-mode) de Wijze van de Voorproef van 0} - snel, op zijn plaats voorproef[
+* [&#128279;](#preview-mode) de Wijze van de Voorproef van 0&rbrace; - snel, op zijn plaats voorproef
 
 * [ Mening zoals Gepubliceerd ](#view-as-published) - een volledige voorproef die de pagina in een nieuw lusje opent
 
@@ -496,7 +496,7 @@ Wanneer het uitgeven van inhoud, kunt u voorproef de pagina gebruikend de voorpr
 
 * U kunt verschillende bewerkingsmechanismen verbergen, zodat u snel kunt zien hoe de pagina eruitziet wanneer deze wordt gepubliceerd.
 * Gebruik koppelingen om te navigeren.
-* Het verfrist **** niet de pagina inhoud.
+* Het verfrist **&#x200B;**&#x200B;niet de pagina inhoud.
 
 Tijdens het ontwerpen is de voorvertoningsmodus beschikbaar met het pictogram rechtsboven in de pagina-editor:
 

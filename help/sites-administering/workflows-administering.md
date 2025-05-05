@@ -93,7 +93,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 ## Fouten in werkstroominstantie herstellen {#fixing-workflow-instance-failures}
 
-Wanneer een werkschema ontbreekt, AEM verstrekt de **** console Failures om u te laten onderzoeken en aangewezen actie voeren zodra de originele oorzaak is behandeld:
+Wanneer een werkschema ontbreekt, AEM verstrekt de **&#x200B;**&#x200B;console Failures om u te laten onderzoeken en aangewezen actie voeren zodra de originele oorzaak is behandeld:
 
 * **Details van de Mislukking**
 Opent een venster om het **Bericht van de Mislukking**, **Stap**, en **Stapel van de Mislukking** te tonen.
@@ -117,7 +117,7 @@ Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, 
 
 Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen.
 
-Vorm **de Configuratie van de Wrijving van het Werkschema van 0} Adobe granite om werkschemainstanties volgens hun leeftijd en status te zuiveren.** U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
+Vorm **de Configuratie van de Wrijving van het Werkschema van 0&rbrace; Adobe granite om werkschemainstanties volgens hun leeftijd en status te zuiveren.** U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel opschoont wanneer deze langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na een bepaald aantal dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 

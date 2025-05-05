@@ -34,7 +34,7 @@ Formuliersets worden ook ondersteund in de AEM Forms-app, zodat uw medewerkers i
 
 U kunt verschillende XDP&#39;s of formuliersjablonen, gemaakt met Designer, koppelen aan een formulierset. Formuliersets kunnen vervolgens selectief worden gebruikt om de XDP&#39;s te renderen op basis van waarden die de gebruikers hebben ingevoerd in eerste formulieren en hun profielen.
 
-Het gebruikersinterface van AEM Forms van het gebruik [ ](../../forms/using/introduction-managing-forms.md) om al uw vormen, vormreeksen, en verwante activa te beheren.
+Het gebruikersinterface van AEM Forms van het gebruik [&#128279;](../../forms/using/introduction-managing-forms.md) om al uw vormen, vormreeksen, en verwante activa te beheren.
 
 ### Een formulierset maken {#create-a-form-set}
 

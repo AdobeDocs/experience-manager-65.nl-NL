@@ -70,7 +70,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
    Nadat de voorwaarde is ingevoegd, kunt u de muisaanwijzer boven de greep aan de linkerkant van de voorwaarde houden om de voorwaarde weer te geven. U kunt de handgreep selecteren om het pop-upmenu van de voorwaarde weer te geven. Hiermee kunt u de voorwaarde bewerken of verwijderen.
 
-   ](assets/3_hoverhandle.png) ![ ](assets/4_editconditionremoveconditionpopup.png)![
+   ![&#128279;](assets/3_hoverhandle.png) ![ ](assets/4_editconditionremoveconditionpopup.png)
 
 1. Voeg een vergelijkbare voorwaarde in door de tekst te selecteren `Ma'am` .
 

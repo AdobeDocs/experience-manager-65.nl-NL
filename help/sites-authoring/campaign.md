@@ -140,7 +140,7 @@ E-mailinhoud bewerken:
 
    ![ chlimage_1-23 ](assets/chlimage_1-23a.png)
 
-   Zie {de Componenten van 0} Adobe Campaign ](/help/sites-authoring/adobe-campaign-components.md) voor een gedetailleerde beschrijving van elke component.[
+   Zie {de Componenten van 0} Adobe Campaign [&#128279;](/help/sites-authoring/adobe-campaign-components.md) voor een gedetailleerde beschrijving van elke component.
 
    ![ chlimage_1-24 ](assets/chlimage_1-24a.png)
 
@@ -151,7 +151,7 @@ Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 * Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld, voornaam, achternaam, of om het even welke gegevens van de doeldimensie) aanpassen.
 * Adobe Campaign-verpersoonlijkingsblokken. Dit zijn blokken vooraf gedefinieerde inhoud die niet gerelateerd zijn aan de gegevens van de ontvanger, zoals een merklogo of een koppeling naar een spiegel.
 
-Zie {de Componenten van 0} Adobe Campaign ](/help/sites-authoring/adobe-campaign-components.md) voor een volledige beschrijving van de componenten van de Campagne.[
+Zie {de Componenten van 0} Adobe Campaign [&#128279;](/help/sites-authoring/adobe-campaign-components.md) voor een volledige beschrijving van de componenten van de Campagne.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Deze out-of-the-box werkstroom heeft twee stappen: revisie dan goedkeuring, of r
 
 ![ chlimage_1-31 ](assets/chlimage_1-31a.png)
 
-Om inhoud voor Adobe Campaign goed te keuren, pas het werkschema toe door **Werkschema** te selecteren en **te selecteren keur voor Adobe Campaign** goed en klik **Werkschema van het Begin**. Doorloop de stappen en keur de inhoud goed. U kunt de inhoud ook verwerpen door **te selecteren verwerp** in plaats van **** in de laatste werkschemastap goedkeuren.
+Om inhoud voor Adobe Campaign goed te keuren, pas het werkschema toe door **Werkschema** te selecteren en **te selecteren keur voor Adobe Campaign** goed en klik **Werkschema van het Begin**. Doorloop de stappen en keur de inhoud goed. U kunt de inhoud ook verwerpen door **te selecteren verwerp** in plaats van **&#x200B;**&#x200B;in de laatste werkschemastap goedkeuren.
 
 ![ chlimage_1-32 ](assets/chlimage_1-32a.png)
 
@@ -232,7 +232,7 @@ In Adobe Campaign Classic:
 
 >[!NOTE]
 >
-Niet-goedgekeurde inhoud kan worden gesynchroniseerd met een levering in Adobe Campaign, maar de levering kan niet worden uitgevoerd. Alleen goedgekeurde inhoud kan via campagneleveringen worden verzonden.
+>Niet-goedgekeurde inhoud kan worden gesynchroniseerd met een levering in Adobe Campaign, maar de levering kan niet worden uitgevoerd. Alleen goedgekeurde inhoud kan via campagneleveringen worden verzonden.
 
 ## AEM met Adobe Campaign Standard en Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
@@ -256,7 +256,7 @@ Zo kunt u de inhoud leveren. U ziet of een nieuwsbrief met één enkele levering
 
 >[!NOTE]
 >
-Als een nieuwsbrief aan verscheidene leveringen wordt verbonden, het aantal verbonden leveringen (maar niet elke identiteitskaart wordt getoond).
+>Als een nieuwsbrief aan verscheidene leveringen wordt verbonden, het aantal verbonden leveringen (maar niet elke identiteitskaart wordt getoond).
 
 Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campaign:
 
@@ -272,7 +272,7 @@ Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campai
 
    >[!NOTE]
    >
-   Als de **Verbinding met een Adobe Experience Manager** optie niet op de actiebar verschijnt, controleer dat de **Inhoud het uitgeven wijze** correct wordt gevormd geplaatst aan **Adobe Experience Manager** in de e-maileigenschappen.
+   >Als de **Verbinding met een Adobe Experience Manager** optie niet op de actiebar verschijnt, controleer dat de **Inhoud het uitgeven wijze** correct wordt gevormd geplaatst aan **Adobe Experience Manager** in de e-maileigenschappen.
 
    ![ chlimage_1-38 ](assets/chlimage_1-38a.png)
 
@@ -287,7 +287,7 @@ Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campai
 
    >[!NOTE]
    >
-   Standaard is de inhoud die al met een levering is gesynchroniseerd, verborgen. U kunt deze echter wel weergeven en gebruiken. Als u bijvoorbeeld inhoud wilt gebruiken als een sjabloon voor meerdere leveringen.
+   >Standaard is de inhoud die al met een levering is gesynchroniseerd, verborgen. U kunt deze echter wel weergeven en gebruiken. Als u bijvoorbeeld inhoud wilt gebruiken als een sjabloon voor meerdere leveringen.
 
    Als het e-mailbericht is gekoppeld aan AEM inhoud, kan de inhoud niet worden bewerkt in Adobe Campaign.
 
@@ -296,11 +296,11 @@ Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campai
 
    >[!NOTE]
    >
-   Als de inhoud in AEM wordt bijgewerkt terwijl deze aan een e-mailbericht is gekoppeld, wordt deze tijdens de analyse automatisch bijgewerkt in Adobe Campaign. De synchronisatie kan ook manueel worden uitgevoerd gebruikend **verfrist de inhoud van Adobe Experience Manager** van de bar van de inhoudsactie.
+   >Als de inhoud in AEM wordt bijgewerkt terwijl deze aan een e-mailbericht is gekoppeld, wordt deze tijdens de analyse automatisch bijgewerkt in Adobe Campaign. De synchronisatie kan ook manueel worden uitgevoerd gebruikend **verfrist de inhoud van Adobe Experience Manager** van de bar van de inhoudsactie.
    >
-   U kunt het verband tussen een e-mail en AEM inhoud annuleren gebruikend **Schrap de verbinding met de inhoud van Adobe Experience Manager** van de bar van de inhoudsactie. Deze knop is alleen beschikbaar als de inhoud al is gekoppeld aan de levering. Als u een andere inhoud aan een levering wilt koppelen, moet u de huidige inhoudskoppeling verwijderen voordat u een nieuwe koppeling kunt maken.
+   >U kunt het verband tussen een e-mail en AEM inhoud annuleren gebruikend **Schrap de verbinding met de inhoud van Adobe Experience Manager** van de bar van de inhoudsactie. Deze knop is alleen beschikbaar als de inhoud al is gekoppeld aan de levering. Als u een andere inhoud aan een levering wilt koppelen, moet u de huidige inhoudskoppeling verwijderen voordat u een nieuwe koppeling kunt maken.
    >
-   Wanneer de koppeling wordt verwijderd, wordt de lokale inhoud bewaard en bewerkbaar in Adobe Campaign. Als u de inhoud opnieuw koppelt nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.
+   >Wanneer de koppeling wordt verwijderd, wordt de lokale inhoud bewaard en bewerkbaar in Adobe Campaign. Als u de inhoud opnieuw koppelt nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.
 
 ### In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
@@ -319,11 +319,11 @@ Als een nieuwsbrief AEM is gekoppeld aan één levering, wordt de leveringscode 
 
 >[!NOTE]
 >
-Als de nieuwsbrief aan verscheidene leveringen wordt gekoppeld, het aantal verbonden leveringen (maar niet elke identiteitskaart wordt getoond).
+>Als de nieuwsbrief aan verscheidene leveringen wordt gekoppeld, het aantal verbonden leveringen (maar niet elke identiteitskaart wordt getoond).
 >
-[!NOTE]
+>[!NOTE]
 >
-De stap van het Werkschema **Publish aan Adobe Campaign** wordt afgekeurd in AEM 6.1. Deze stap maakte deel uit van de integratie van AEM 6.0 met Adobe Campaign en is niet langer nodig.
+>De stap van het Werkschema **Publish aan Adobe Campaign** wordt afgekeurd in AEM 6.1. Deze stap maakte deel uit van de integratie van AEM 6.0 met Adobe Campaign en is niet langer nodig.
 
 In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
 
@@ -335,7 +335,7 @@ In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
 
    >[!NOTE]
    >
-   Als de **Synchroniseer** optie niet op de toolbar van de levering verschijnt, controleer dat het **Inhoud het uitgeven van wijze** gebied correct in **AEM** door **Eigenschappen** te selecteren > **Geavanceerd** wordt gevormd.
+   >Als de **Synchroniseer** optie niet op de toolbar van de levering verschijnt, controleer dat het **Inhoud het uitgeven van wijze** gebied correct in **AEM** door **Eigenschappen** te selecteren > **Geavanceerd** wordt gevormd.
 
    ![ chlimage_1-41 ](assets/chlimage_1-41a.png)
 
@@ -350,7 +350,7 @@ In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
 
    >[!NOTE]
    >
-   Standaard is de inhoud die al met een levering is gesynchroniseerd, verborgen. U kunt deze echter wel weergeven en gebruiken. Als u bijvoorbeeld inhoud wilt gebruiken als een sjabloon voor meerdere leveringen.
+   >Standaard is de inhoud die al met een levering is gesynchroniseerd, verborgen. U kunt deze echter wel weergeven en gebruiken. Als u bijvoorbeeld inhoud wilt gebruiken als een sjabloon voor meerdere leveringen.
 
    ![ chlimage_1-42 ](assets/chlimage_1-42a.png)
 
@@ -360,8 +360,8 @@ In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
 
    >[!NOTE]
    >
-   * Nadat de levering en de inhoud zijn gesynchroniseerd, wordt de leveringsinhoud in Adobe Campaign alleen-lezen. Het onderwerp en de inhoud van de e-mail kunnen niet meer worden gewijzigd.
-   * Als de inhoud in AEM wordt bijgewerkt terwijl deze aan een levering in Adobe Campaign is gekoppeld, wordt deze tijdens de leveringsanalyse automatisch bijgewerkt in de levering. De synchronisatie kan ook manueel worden uitgevoerd gebruikend **verfrist inhoud nu** knoop.
-   * U kunt synchronisatie tussen een levering en AEM inhoud annuleren gebruikend **desynchronize** knoop. Dit is alleen beschikbaar als de inhoud al is gesynchroniseerd met de levering. Als u andere inhoud wilt synchroniseren met een levering, moet u de huidige inhoudssynchronisatie annuleren voordat u een nieuwe koppeling kunt maken.
-   * Als de synchronisatie van de lokale inhoud is opgeheven, wordt de lokale inhoud bewaard en wordt deze bewerkbaar in Adobe Campaign. Als u de inhoud opnieuw synchroniseert nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.
-   * Voor terugkomende en ononderbroken leveringen wordt synchronisatie met AEM inhoud gestopt telkens wanneer de levering wordt uitgevoerd.
+   >* Nadat de levering en de inhoud zijn gesynchroniseerd, wordt de leveringsinhoud in Adobe Campaign alleen-lezen. Het onderwerp en de inhoud van de e-mail kunnen niet meer worden gewijzigd.
+   >* Als de inhoud in AEM wordt bijgewerkt terwijl deze aan een levering in Adobe Campaign is gekoppeld, wordt deze tijdens de leveringsanalyse automatisch bijgewerkt in de levering. De synchronisatie kan ook manueel worden uitgevoerd gebruikend **verfrist inhoud nu** knoop.
+   >* U kunt synchronisatie tussen een levering en AEM inhoud annuleren gebruikend **desynchronize** knoop. Dit is alleen beschikbaar als de inhoud al is gesynchroniseerd met de levering. Als u andere inhoud wilt synchroniseren met een levering, moet u de huidige inhoudssynchronisatie annuleren voordat u een nieuwe koppeling kunt maken.
+   >* Als de synchronisatie van de lokale inhoud is opgeheven, wordt de lokale inhoud bewaard en wordt deze bewerkbaar in Adobe Campaign. Als u de inhoud opnieuw synchroniseert nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.
+   >* Voor terugkomende en ononderbroken leveringen wordt synchronisatie met AEM inhoud gestopt telkens wanneer de levering wordt uitgevoerd.

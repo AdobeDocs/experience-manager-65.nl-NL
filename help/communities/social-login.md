@@ -96,7 +96,7 @@ Zoek de instellingen **[!UICONTROL App ID]** en **[!UICONTROL App Secret]** nada
 
 ### Een Facebook Connect-Cloud Service maken {#create-a-facebook-connect-cloud-service}
 
-De [ Adobe granite OAuth Application en de 1} instantie van de Leverancier, die door een configuratie van de wolkendienst te creëren wordt geconcretiseerd, identificeert de toepassing van Facebook en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.](#adobe-granite-oauth-application-and-provider)
+De [ Adobe granite OAuth Application en de 1&rbrace; instantie van de Leverancier, die door een configuratie van de wolkendienst te creëren wordt geconcretiseerd, identificeert de toepassing van Facebook en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.](#adobe-granite-oauth-application-and-provider)
 
 1. Meld u aan bij de AEM auteur-instantie met beheerdersrechten.
 1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Facebook Social login configuration]** bij globale navigatie.
@@ -109,14 +109,14 @@ De [ Adobe granite OAuth Application en de 1} instantie van de Leverancier, die 
 
    ![ config-bezit ](assets/config-propertiespng.png)
 
-   * Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+   * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
 
 1. **creeer/geef** de wolkendienstconfiguratie van Facebook uit.
 
    ![ fbsocialloginconfigpng ](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL Title]** (*Vereist*) ga een vertoningstitel in die Facebook App identificeert. Gebruik de zelfde naam ingegaan als *Naam van de Vertoning* voor Facebook app.
-   * **[!UICONTROL App ID/API Key]** (*Vereiste*) ga ***identiteitskaart van de Toepassing*** voor Facebook App in. Dit identificeert de [ Adobe granite OAuth Application en 1} instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
+   * **[!UICONTROL App ID/API Key]** (*Vereiste*) ga ***identiteitskaart van de Toepassing*** voor Facebook App in. Dit identificeert de [ Adobe granite OAuth Application en 1&rbrace; instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
    * **[!UICONTROL App Secret]** (*Vereiste*) ga ***Geheime app*** voor Facebook App in.
    * **[!UICONTROL Create Users]** Als deze optie is ingeschakeld, wordt bij het aanmelden met een Facebook-account een AEM gebruikervermelding gemaakt en toegevoegd aan de geselecteerde gebruikersgroep(en).  Standaard is ingeschakeld (sterk aanbevolen).
    * **[!UICONTROL Mask User IDs]**: Laat deze optie uitgeschakeld.
@@ -245,7 +245,7 @@ Het enige REST verzoek dat voor sociale login wordt gemaakt is *[rekening van de
 
 ### Een Twitter Connect-Cloud Service maken {#create-a-twitter-connect-cloud-service}
 
-De [ Adobe granite OAuth Application en de 1} instantie van de Leverancier, die door een configuratie van de wolkendienst te creëren wordt geconcretiseerd, identificeert de toepassing van de Twitter en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.](#adobe-granite-oauth-application-and-provider)
+De [ Adobe granite OAuth Application en de 1&rbrace; instantie van de Leverancier, die door een configuratie van de wolkendienst te creëren wordt geconcretiseerd, identificeert de toepassing van de Twitter en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.](#adobe-granite-oauth-application-and-provider)
 
 1. Meld u aan met beheerdersrechten voor de auteurinstantie.
 1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Twitter Social login configuration]** bij globale navigatie.
@@ -258,7 +258,7 @@ De [ Adobe granite OAuth Application en de 1} instantie van de Leverancier, die 
 
    ![ twitterconfigpping ](assets/twitterconfigproppng.png)
 
-   * Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+   * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
 
 1. Configuratie cloudservice Twitter maken/bewerken.
 
@@ -270,7 +270,7 @@ De [ Adobe granite OAuth Application en de 1} instantie van de Leverancier, die 
 
    * **[!UICONTROL Consumer Key]**
 
-     (*Vereiste*) ga **Verbruikssleutel (API)** voor Twitter in app. Dit identificeert de [ Adobe granite OAuth Application en 1} instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
+     (*Vereiste*) ga **Verbruikssleutel (API)** voor Twitter in app. Dit identificeert de [ Adobe granite OAuth Application en 1&rbrace; instantie van de Leverancier die van de dialoog wordt gecreeerd.](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)
 
    * **[!UICONTROL Consumer Secret]**
 
@@ -346,7 +346,7 @@ De volgende stappen zijn hetzelfde voor zowel Facebook als Twitter:
 
 ### AEM Communities Sites Console {#aem-communities-sites-console}
 
-Zodra een wolkendienst wordt gevormd, kan het voor de relevante Sociale Login worden toegelaten die voor een communautaire plaats plaatst gebruikend het ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) sub-paneel van de Montages van het Beheer van de Gebruiker 1} tijdens communautaire plaats [ creatie ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) of [ beheer ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).[
+Zodra een wolkendienst wordt gevormd, kan het voor de relevante Sociale Login worden toegelaten die voor een communautaire plaats plaatst gebruikend het [&#128279;](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) sub-paneel van de Montages van het Beheer van de Gebruiker 1&rbrace; tijdens communautaire plaats [ creatie ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) of [ beheer ](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
 1. Kies de context van uw siteconfiguratie waarin u uw inlogconfiguraties voor sociale media hebt opgeslagen.
 
@@ -474,21 +474,21 @@ Op een instantie van de auteur, aangemeld met beheerdersrechten:
 1. Wijzig de eigenschappen van node ntBaseLucene-oauth:
 
    * **[!UICONTROL indexPath]**: `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL name]**: `oauthid-123****`
+   * **[!UICONTROL name]**: `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL reindex]**: `true`
    * **[!UICONTROL reindexCount]**: `1`
 
 1. Onder node/oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
    * Verwijder alle onderliggende knooppunten, behalve cqTags.
-   * Naam van cqTags wijzigen in `oauthid-123****`
-   * De eigenschappen van het knooppunt wijzigen `oauthid-123****`
+   * Naam van cqTags wijzigen in `oauthid-123**&#x200B;**`
+   * De eigenschappen van het knooppunt wijzigen `oauthid-123**&#x200B;**`
 
-      * **[!UICONTROL name]**: `oauthid-123****`
+      * **[!UICONTROL name]**: `oauthid-123&#x200B;**&#x200B;**`
 
    * Selecteer **[!UICONTROL Save All]** .
 
-* Voor de **naam** `oauthid-123`, vervang *123* met Facebook ***identiteitskaart van de Toepassing*** of Twitter ***Verbruiks (API) Sleutel*** die de waarde van **identiteitskaart van de Cliënt** in de [ Adobe Granite OAuth Toepassing en 12} configuratie is.](social-login.md#adobe-granite-oauth-application-and-provider)
+* Voor de **naam** `oauthid-123`, vervang *123* met Facebook ***identiteitskaart van de Toepassing*** of Twitter ***Verbruiks (API) Sleutel*** die de waarde van **identiteitskaart van de Cliënt** in de [ Adobe Granite OAuth Toepassing en 12&rbrace; configuratie is.](social-login.md#adobe-granite-oauth-application-and-provider)
 
   ![ graniteoauth-crxde ](assets/graniteoauth-crxde.png)
 

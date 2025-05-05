@@ -61,7 +61,7 @@ Terwijl een beheerder van de Experience Manager het volgende doet:
 
 Ga naar de pagina van Apple [ hier ](https://developer.apple.com/documentation/usernotifications#//apple_ref/doc/uid/TP40008194-CH8-SW1) vertrouwd te worden met de Dienst van het Bericht van de Duw van Apple.
 
-Om APNs te gebruiken, hebt u het dossier van het a **Certificaat** (a.cer dossier), een duw **Persoonlijke Sleutel** (a.p12 dossier), en het Wachtwoord van de Persoonlijke Sleutel van a **** van Apple nodig. Instructies op hoe te om dat te doen kunnen worden gevonden [ hier ](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
+Om APNs te gebruiken, hebt u het dossier van het a **Certificaat** (a.cer dossier), een duw **Persoonlijke Sleutel** (a.p12 dossier), en het Wachtwoord van de Persoonlijke Sleutel van a **&#x200B;**&#x200B;van Apple nodig. Instructies op hoe te om dat te doen kunnen worden gevonden [ hier ](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
 #### De Google Cloud Messaging (GCM)-service gebruiken {#using-the-google-cloud-messaging-gcm-service}
 
@@ -337,7 +337,7 @@ Maak het bericht, voeg een knoptekst en koppelingspad toe voor de optionele kopp
 
    ![ chlimage_1-110 ](assets/chlimage_1-110.png)
 
-   Één u uw configuratie voorlegt, de **tegelvertoningen van de Berichten van de Duw** {in het dashboard.
+   Één u uw configuratie voorlegt, de **tegelvertoningen van de Berichten van de Duw** &lbrace;in het dashboard.
 
    ![ chlimage_1-111 ](assets/chlimage_1-111.png)
 

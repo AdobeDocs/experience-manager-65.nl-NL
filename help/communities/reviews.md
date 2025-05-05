@@ -30,7 +30,7 @@ De component `Reviews Summary (Display)` geeft een overzicht van een actieve of 
 
 Als u een `Reviews` -component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / Reviews` te zoeken en sleept u deze naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers kunnen bekijken.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](reviews-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Reviews` component verschijnt.
 
@@ -156,7 +156,7 @@ Als u een component `Reviews Summary (Display)` in de ontwerpmodus aan een pagin
 
 En sleep de revisie naar de juiste plaats op een pagina waarop een overzicht van een actieve of gesloten revisie moet worden weergegeven.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](reviews-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Reviews Summary (Display)` component verschijnt.
 
@@ -212,7 +212,7 @@ Geef onder het tabblad **[!UICONTROL Resource Types]** het aangepaste resourceTy
 
 * **[!UICONTROL Comment System Resource Type]**
 
-  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [ ](scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper ](handlebars-helpers.md#include) .
+  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [&#128279;](scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper ](handlebars-helpers.md#include) .
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -237,7 +237,7 @@ Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte revisies lezen, dez
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](reviews-basics.md) pagina van de Hoofdzaak van het Overzicht [ {voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#128279;](reviews-basics.md) pagina van de Hoofdzaak van het Overzicht  &lbrace;voor ontwikkelaars worden gevonden.
 
 Voor moderatie van geposte commentaren, zie [ het Modereren van Gebruiker Gegenereerde Inhoud ](moderate-ugc.md).
 

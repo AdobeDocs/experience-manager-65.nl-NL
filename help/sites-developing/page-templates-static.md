@@ -159,14 +159,14 @@ Ga als volgt te werk om een lijst met alle sjablonen in de repository weer te ge
 1. Op het tabblad Query
 1. Als **Type**, uitgezochte **XPath**.
 
-1. Op het **inputgebied van de Vraag** {, ga volgende koord in:
+1. Op het **inputgebied van de Vraag** &lbrace;, ga volgende koord in:
 //element(&#42; , cq:Template)
 
 1. Klik **uitvoeren**. De lijst wordt weergegeven in het vak Resultaat.
 
 Gewoonlijk gebruikt u een bestaande sjabloon en ontwikkelt u een nieuwe sjabloon voor eigen gebruik. Zie [ het Ontwikkelen van de Malplaatjes van de Pagina ](#developing-page-templates) voor meer informatie.
 
-Om een bestaand malplaatje voor uw website toe te laten en u het in **wilt worden getoond leidt de dialoog van de Pagina** wanneer het creëren van een paginerecht onder **Websites** van de **** console Websites, plaats het allowedPaths bezit van de malplaatjeknoop aan: **/content (/.&#42;)?**
+Om een bestaand malplaatje voor uw website toe te laten en u het in **wilt worden getoond leidt de dialoog van de Pagina** wanneer het creëren van een paginerecht onder **Websites** van de **&#x200B;**&#x200B;console Websites, plaats het allowedPaths bezit van de malplaatjeknoop aan: **/content (/.&#42;)?**
 
 ## Hoe sjabloonontwerpen worden toegepast {#how-template-designs-are-applied}
 
@@ -303,17 +303,17 @@ Een sjabloon maken op basis van een bestaande sjabloon:
    >De veranderingen die aan **worden aangebracht/apps/&lt;website>/templates/&lt;template-name>** knoop beïnvloeden de malplaatjeinstantie (zoals in de selectielijst).
    >
    >
-   De veranderingen die aan de **worden aangebracht/apps/&lt;website>/components/&lt;component-name>** knoop beïnvloeden de inhoudspagina die wordt gecreeerd wanneer het malplaatje wordt gebruikt.
+   >De veranderingen die aan de **worden aangebracht/apps/&lt;website>/components/&lt;component-name>** knoop beïnvloeden de inhoudspagina die wordt gecreeerd wanneer het malplaatje wordt gebruikt.
 
    U kunt nu een pagina binnen uw website maken met de nieuwe sjabloon.
 
 >[!NOTE]
 >
-In de clientbibliotheek van de editor wordt ervan uitgegaan dat de naamruimte `cq.shared` aanwezig is in inhoudspagina&#39;s. Als deze ontbreekt, resulteert de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined` .
+>In de clientbibliotheek van de editor wordt ervan uitgegaan dat de naamruimte `cq.shared` aanwezig is in inhoudspagina&#39;s. Als deze ontbreekt, resulteert de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined` .
 >
-Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared` , dus alle inhoud die hierop is gebaseerd, bevat automatisch `cq.shared` . Als u echter besluit uw eigen inhoudspagina&#39;s helemaal zelf te maken zonder deze te baseren op voorbeeldinhoud, moet u de naamruimte `cq.shared` wel invoegen.
+>Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared` , dus alle inhoud die hierop is gebaseerd, bevat automatisch `cq.shared` . Als u echter besluit uw eigen inhoudspagina&#39;s helemaal zelf te maken zonder deze te baseren op voorbeeldinhoud, moet u de naamruimte `cq.shared` wel invoegen.
 >
-Zie [ Gebruikend Cliënt-Kant Bibliotheken ](/help/sites-developing/clientlibs.md) voor verdere informatie.
+>Zie [ Gebruikend Cliënt-Kant Bibliotheken ](/help/sites-developing/clientlibs.md) voor verdere informatie.
 
 ## Een bestaande sjabloon beschikbaar maken {#making-an-existing-template-available}
 

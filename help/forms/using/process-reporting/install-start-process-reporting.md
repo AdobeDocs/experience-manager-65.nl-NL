@@ -87,7 +87,7 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
 1. Meld u aan bij de WebLogic-beheerconsole. Het standaardadres van de WebLogic-beheerconsole is `https://[hostname]:[port]/console` .
 1. Onder het Centrum van de Verandering, klik **Slot &amp; geef** uit.
 1. Onder de Structuur van het Domein, klik **Milieu** > **Servers** en, in de juiste ruit, klik de beheerde servernaam.
-1. Voor het volgende scherm, klik het **lusje van de Configuratie** {> **Begin van de Server** tabel.
+1. Voor het volgende scherm, klik het **lusje van de Configuratie** &lbrace;> **Begin van de Server** tabel.
 1. Voeg in het vak Argumenten het JVM-argument `-Dreporting.publisher.cron = <expression>` toe.
 
    **Voorbeeld**: De volgende kroonuitdrukking veroorzaakt het Rapport van het Proces om de gegevens van AEM Forms aan de Opslagplaats van de Rapportering van het Proces om de vijf uur te publiceren:

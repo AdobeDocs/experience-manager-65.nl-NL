@@ -188,7 +188,7 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
    ![ chlimage_1-251 ](assets/chlimage_1-251.png)
 
-1. Selecteer de **Folder van de Wortel**, en woordenboek (indien nodig), die u wilt toevoegen, en dan selecteren **** toevoegen.
+1. Selecteer de **Folder van de Wortel**, en woordenboek (indien nodig), die u wilt toevoegen, en dan selecteren **&#x200B;**&#x200B;toevoegen.
 
    ![ i18N Woordenboek ](assets/tc-manage-i18n-dictionary.png)
 
@@ -377,7 +377,7 @@ Taalkopieën vergelijken met de taalmaster:
 1. In de **console van Plaatsen**, navigeer aan het taalexemplaar u wilt vergelijken.
 1. Open het **[paneel van Verwijzingen](/help/sites-authoring/basic-handling.md#references)**.
 1. Onder de **koppen** kopbal selecteren **de Kopieën van de Taal.**
-1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met stramien **of op **Vergelijken met vorige **indien van toepassing.
+1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met stramien &#x200B;** of op **Vergelijken met vorige &#x200B;** indien van toepassing.
 
    ![ chlimage_1-37 ](assets/chlimage_1-37.jpeg)
 

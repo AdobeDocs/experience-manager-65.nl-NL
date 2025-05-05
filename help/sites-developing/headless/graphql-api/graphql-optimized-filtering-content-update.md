@@ -30,7 +30,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
 
 1. [ vorm de montages OSGi ](/help/sites-deploying/configuring-osgi.md) voor de **Configuratie van de Baan van de Migratie van het Fragment van de Inhoud**:
 
-   ![ OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud 1} OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud ")](assets/cfm-graphql-update-01.png "
+   ![ OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud 1&rbrace; OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud ")] (assets/cfm-graphql-update-01.png "
 
 1. Stel deze twee parameters in het dialoogvenster als volgt in:
 

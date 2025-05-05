@@ -38,7 +38,7 @@ AEM biedt nu twee basistypen sjablonen voor het maken van pagina&#39;s:
 
 >[!NOTE]
 >
->Wanneer het gebruiken van een malplaatje om een pagina ](/help/sites-authoring/managing-pages.md#creating-a-new-page) tot stand te brengen [, is er geen zichtbaar verschil (aan de paginaauteur) en geen aanwijzing van het type van malplaatje dat wordt gebruikt.
+>Wanneer het gebruiken van een malplaatje om een pagina [&#128279;](/help/sites-authoring/managing-pages.md#creating-a-new-page) tot stand te brengen , is er geen zichtbaar verschil (aan de paginaauteur) en geen aanwijzing van het type van malplaatje dat wordt gebruikt.
 
 ### Bewerkbare sjablonen {#editable-templates}
 

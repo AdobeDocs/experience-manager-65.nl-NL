@@ -101,7 +101,7 @@ De uitvoeringsmodus wordt aangegeven met een achtervoegsel op de mapnaam. Hierme
 
   Gebruikt voor de toepasselijke looppaswijze; bijvoorbeeld config
 
-Zie {Configuratie 0} OSGi in de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) voor verdere details bij het bepalen van de individuele configuratieknopen binnen deze omslagen en voor het creëren van configuraties voor combinaties veelvoudige looppaswijzen.[
+Zie {Configuratie 0} OSGi in de Bewaarplaats [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) voor verdere details bij het bepalen van de individuele configuratieknopen binnen deze omslagen en voor het creëren van configuraties voor combinaties veelvoudige looppaswijzen.
 
 >[!NOTE]
 >
@@ -121,8 +121,8 @@ Deze mappen zijn van het type `nt:folder` en moeten de juiste bundel bevatten.
 Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepalen welke op opstarten moet worden gebruikt. Er zijn verschillende methoden om op te geven welke uitvoeringsmodus moet worden gebruikt. De volgorde van resolutie is:
 
 1. [systeemeigenschappen (](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [Bestandsnaamdetectie](#filename-detection-renaming-the-jar-file)
 
 Wanneer u een toepassingsserver gebruikt kunt u ook [ de looppaswijze in web.xml ](#defining-the-run-mode-in-web-xml-with-application-server) bepalen.

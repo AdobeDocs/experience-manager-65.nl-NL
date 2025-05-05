@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Met AEM Forms kunnen ontwikkelaars van formulieren adaptieve formulieren en interactieve communicatie naadloos insluiten in een AEM Sites Single Page Application (SPA). Het ingesloten adaptieve formulier en de interactieve communicatie zijn volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd communiceren met het adaptieve formulier of de interactieve communicatie.
 
-In de Toepassing van de Enige Pagina van AEM Sites, kunt u een adaptieve vorm of een Interactieve Mededeling toevoegen gebruikend de [ component van de SPAContainer van AEM Forms ](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Het is een AEM Forms-component voor AEM Sites-SPA die u kunt toevoegen aan uw sitepagina.
+In de Toepassing van de Enige Pagina van AEM Sites, kunt u een adaptieve vorm of een Interactieve Mededeling toevoegen gebruikend de [ component van de SPAContainer van AEM Forms ](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Het is een AEM Forms-component voor AEM Sites-SPA die u kunt toevoegen aan uw sitepagina.
 
 Voor informatie over het inbedden van een adaptieve vorm in een niet-SPA AEM Sites, zie [ een adaptieve vorm of interactieve mededeling in de pagina van AEM Sites ](/help/forms/using/embed-adaptive-form-aem-sites.md) inbedden.
 
@@ -41,12 +41,12 @@ Als u een adaptief formulier of interactieve communicatie wilt insluiten in AEM 
 Voer de volgende stappen uit om de AEM Forms SPA Container-component te installeren:
 
 1. [ Kloon of download de component van AEM Forms voor SPA ](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa).
-1. Installeer de AEM Forms-component voor SPA. De instructies om de component te installeren zijn beschikbaar in het {](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component) dossier 0} README.md.[
+1. Installeer de AEM Forms-component voor SPA. De instructies om de component te installeren zijn beschikbaar in het {[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component) dossier 0} README.md.
 
    De component omvat de component van het a [ steekproefReact ](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) die kan worden gebruikt om SPA containercomponent met een React-Gebaseerd SPA project te integreren.
 
 1. [ Kloon of download een React-Gebaseerd SPA project ](https://github.com/adobe/aem-sample-we-retail-journal).
-1. Integreer SPA containercomponent met een React-Gebaseerd SPA project gebruikend de instructies beschikbaar in het {](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) dossier 0} README.md.[
+1. Integreer SPA containercomponent met een React-Gebaseerd SPA project gebruikend de instructies beschikbaar in het {[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) dossier 0} README.md.
 
    Nadat u de AEM Forms SPA Container-component hebt geïnstalleerd en de component hebt geïntegreerd met een React-gebaseerd SPA-project, kunt u adaptieve formulieren en interactieve communicatie insluiten in de AEM Sites-pagina.
 

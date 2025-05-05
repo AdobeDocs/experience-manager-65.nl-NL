@@ -47,7 +47,7 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 ### Gegevens invoeren {#enter-data}
 
-1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte gebieden duidelijk met een asterisk (&amp;ast;) om **toe te laten legt** knoop voor.
+1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte gebieden duidelijk met een asterisk (&ast;) om **toe te laten legt** knoop voor.
 
    Selecteer een waarde voor een gegevensveld in de voorvertoning Interactieve communicatie om het bijbehorende gegevensveld op het tabblad Gegevens te markeren of om de andere reden.
 

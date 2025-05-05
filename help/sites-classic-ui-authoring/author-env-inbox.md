@@ -30,7 +30,7 @@ U ontvangt deze meldingen in twee Postvakken, die worden gescheiden door het typ
 
 Om uw meldingen weer te geven:
 
-1. Open het bericht in doos: in de **** console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
+1. Open het bericht in doos: in de **&#x200B;**&#x200B;console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
 
    ![ screen_shot_2012-02-08at105226am ](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -52,7 +52,7 @@ Om uw meldingen weer te geven:
 
 Abonneren op meldingen:
 
-1. Open het bericht in doos: in de **** console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
+1. Open het bericht in doos: in de **&#x200B;**&#x200B;console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
 
    ![ screen_shot_2012-02-08at105226am-1 ](assets/screen_shot_2012-02-08at105226am-1.png)
 

@@ -56,7 +56,7 @@ Component zoeken en labelen op een pagina met rasterlay-out
 
 Het deelvenster Lijst is een gebied waarin uw formulieren worden weergegeven. De component Zoeken en register bevat verschillende configuratieopties waarmee u de weergave van formulieren in het deelvenster Lijst kunt bepalen.
 
-Om de ruit van de Lijst te vormen, selecteer de component van het Onderzoek en van de Registratie en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster **[!UICONTROL  Edit Component]** wordt geopend.
+Om de ruit van de Lijst te vormen, selecteer de component van het Onderzoek en van de Registratie en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster **[!UICONTROL &#x200B; Edit Component]** wordt geopend.
 
 ![ ruit van de Lijst op geeft wijze uit ](assets/edit-list.png)
 

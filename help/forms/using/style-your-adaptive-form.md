@@ -479,7 +479,7 @@ U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpe
 9. Ga naar de nieuwe map `clientlibs` en voeg de eigenschappen `allowProxy` en `categories` toe.
 10. Navigeer naar `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` en maak een css-map.
 11. Ga naar de gemaakte CSS-map en maak een bestand. Maak bijvoorbeeld een bestand als `fonts.css` en plak de insluitcode samen met de URL.
-   ![ de structuur van de Omslag ](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![ de structuur van de Omslag ](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Sla de wijzigingen op.
 
 >[!NOTE]

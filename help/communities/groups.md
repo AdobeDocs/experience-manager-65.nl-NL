@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Console van groepen Gemeenschap {#community-groups-console}
 
-De console van Groepen verleent toegang tot het creëren van communautaire groepen wanneer de het malplaatjestructuur van een communautaire plaats [ ](/help/communities/sites-console.md#step1) de [ groepsfunctie ](/help/communities/functions.md#groups-function) omvat.
+De console van Groepen verleent toegang tot het creëren van communautaire groepen wanneer de het malplaatjestructuur van een communautaire plaats [&#128279;](/help/communities/sites-console.md#step1) de [ groepsfunctie ](/help/communities/functions.md#groups-function) omvat.
 
 * AEM Communities ondersteunt het nesten van groepen binnen andere groepen. Het nesten van de groep is mogelijk wanneer de [ structuur van de nieuwe groep ](/help/communities/tools-groups.md) de groepsfunctie bevat.
 * Alleen voor de auteursomgeving is er een wizard voor het maken van groepen die lijkt op de wizard voor het maken van sites.
@@ -99,9 +99,10 @@ De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar elke lo
    * Controleer de naam nogmaals omdat deze niet gemakkelijk kan worden gewijzigd nadat de groep is gemaakt.
    * De basis-URL wordt onder de `Community Group Name` weergegeven.
    * Voor een geldige URL voegt u &quot;.html&quot; toe
+
      *bijvoorbeeld*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
-* **menu van het Malplaatje van de Groep van 0} Gemeenschap**
+* **menu van het Malplaatje van de Groep van 0&rbrace; Gemeenschap**
 
   Gebruik drop-down om een beschikbaar [ malplaatje van de communautaire groep ](/help/communities/tools.md) te kiezen.
 

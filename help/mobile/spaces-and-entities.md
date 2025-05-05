@@ -45,7 +45,7 @@ Nadat u de spaties in het dashboard hebt geconfigureerd, voert u de volgende sta
 
    ![ chlimage_1-83 ](assets/chlimage_1-83.png)
 
-1. Kies **creeer** om een ruimte tot stand te brengen. Ga **Titel 0},** Naam **, en** Beschrijving **voor de ruimte in.**
+1. Kies **creeer** om een ruimte tot stand te brengen. Ga **Titel 0&rbrace;,** Naam **, en** Beschrijving **voor de ruimte in.**
 
    Klik **creëren**.
 
@@ -100,7 +100,7 @@ De ruimten kunnen omslagen omvatten om ruimteinhoud en activa verder te organise
 >
 >Taalkopie is niet volledig functioneel voor deze release. De structuur wordt alleen ingesteld.
 
-Het **bezit van het Exemplaar van de Taal 0} {staat auteurs toe om hun hoofdExemplaar van de Taal te kopiëren en dan een Project en een Werkschema tot stand te brengen om de inhoud automatisch te vertalen.** Met Taalkopie maakt u de juiste structuur. Nadat u een map in een ruimte hebt toegevoegd, kunt u het taalexemplaar aan de ruimte toevoegen.
+Het **bezit van het Exemplaar van de Taal 0&rbrace; &lbrace;staat auteurs toe om hun hoofdExemplaar van de Taal te kopiëren en dan een Project en een Werkschema tot stand te brengen om de inhoud automatisch te vertalen.** Met Taalkopie maakt u de juiste structuur. Nadat u een map in een ruimte hebt toegevoegd, kunt u het taalexemplaar aan de ruimte toevoegen.
 
 >[!NOTE]
 >
@@ -237,7 +237,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
 U hebt de optie om **de Boom van Publish** of **Snelle Publish** te kiezen om uw entiteit te publiceren.
 
-1. Selecteer een entiteit in de lijst met ruimteconsole en klik op **Publish Tree **om die entiteit en de onderliggende items te publiceren.
+1. Selecteer een entiteit in de lijst met ruimteconsole en klik op **Publish Tree &#x200B;** om die entiteit en de onderliggende items te publiceren.
 
    ![ chlimage_1-105 ](assets/chlimage_1-105.png)
 

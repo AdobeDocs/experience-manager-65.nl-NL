@@ -31,7 +31,7 @@ In deze procedure:
 
 1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om de referentie en keystore tot stand te brengen:
 
-   *`, OU=`* Naam van de Groep *`, O=`* Naam van het Bedrijf *`,L=`* Naam van de Stad *`, S=`* Staat *`, C=` Code van het Land `-alias "AEMForms Cert"``-keyalg RSA -keypass`* key_password *`-keystore`* keystorename *`.keystore``keytool -genkey -dname "CN=`*
+   *`, OU=`* Naam van de Groep *`, O=`* Naam van het Bedrijf *`,L=`* Naam van de Stad *`, S=`* Staat *`, C=` Code van het Land `-alias "AEMForms Cert"` `-keyalg RSA -keypass`* key_password *`-keystore`* keystorename *`.keystore` `keytool -genkey -dname "CN=`*
 
    >[!NOTE]
    >
@@ -89,7 +89,7 @@ In deze procedure:
 
    * Servercluster - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. 
+1. &#x200B;
    * **voor enige server,** in het lc_&lt;dbaname/tunkey>.xml- dossier, voeg het volgende na &lt;security-realms> sectie toe:
 
    ```xml
@@ -167,7 +167,7 @@ In deze procedure:
 
 1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om keystore en sleutel tot stand te brengen:
 
-   *`, OU=`* de Naam van de Groep *`, O=`* Naam van het Bedrijf *`, L=`* Naam van de Stad *`, S=`* Staat *`, C=`* Code van het Land *`-alias "AEMForms Cert"` `-keyalg RSA -keypass` -* key_password *`-keystore`* keystorename *`.keystore``keytool -genkey -dname "CN=`*
+   *`, OU=`* de Naam van de Groep *`, O=`* Naam van het Bedrijf *`, L=`* Naam van de Stad *`, S=`* Staat *`, C=`* Code van het Land *`-alias "AEMForms Cert"` `-keyalg RSA -keypass` -* key_password *`-keystore`* keystorename *`.keystore` `keytool -genkey -dname "CN=`*
 
    >[!NOTE]
    >

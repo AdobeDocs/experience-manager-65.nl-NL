@@ -51,7 +51,7 @@ AEM Forms verstrekt een out-of-the-box integratie om [ formuliergegevens direct 
 
 #### Ondersteuning voor het configureren van Document of Record-eigenschappen voor adaptieve formulierfragmenten
 
-U kunt uw Adaptieve fragmenten van de Vorm en zijn gebieden in de Adaptieve redacteur van de Vorm ](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) nu gemakkelijk aanpassen.[
+U kunt uw Adaptieve fragmenten van de Vorm en zijn gebieden in de Adaptieve redacteur van de Vorm [&#128279;](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) nu gemakkelijk aanpassen.
 
 #### Inclusief 64-bits versie van XMLFM
 

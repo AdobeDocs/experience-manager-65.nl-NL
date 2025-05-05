@@ -40,7 +40,7 @@ Zie het [ Beheer API van het Fragment van de Inhoud - cliënt-kant ](/help/sites
 >
 >Zie ook [ de Fragmenten die van de Inhoud Componenten vormen voor het Teruggeven ](/help/sites-developing/content-fragments-config-components-rendering.md) voor verdere informatie.
 
-Adobe Experience Manager (AEM) inhoudsfragmenten worden [ gecreeerd en geleid als pagina-onafhankelijke activa ](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [ u kunt deze fragmenten, en hun variaties dan gebruiken, wanneer het ontwerpen van uw inhoudspagina&#39;s ](/help/sites-authoring/content-fragments.md). U kunt een bestaand element van het inhoudsfragment ook gebruiken door het van activa browser aan pagina ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) te slepen (zoals voor andere op activa-gebaseerde componenten, zoals het Beeld van de stichtingscomponent). [ De uit-van-de-doos component van het inhoudsfragment toont slechts één [ element ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het referenced inhoudsfragment. Gebruikend de componentendialoog kunt u het [ element, de variatie en de waaier van fragmentparagrafen ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) bepalen die u op de pagina wilt tonen.
+Adobe Experience Manager (AEM) inhoudsfragmenten worden [ gecreeerd en geleid als pagina-onafhankelijke activa ](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [ u kunt deze fragmenten, en hun variaties dan gebruiken, wanneer het ontwerpen van uw inhoudspagina&#39;s ](/help/sites-authoring/content-fragments.md). U kunt een bestaand element van het inhoudsfragment ook gebruiken door het van activa browser aan pagina [&#128279;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) te slepen (zoals voor andere op activa-gebaseerde componenten, zoals het Beeld van de stichtingscomponent).  De uit-van-de-doos component van het inhoudsfragment toont slechts één [ element ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het referenced inhoudsfragment. Gebruikend de componentendialoog kunt u het [ element, de variatie en de waaier van fragmentparagrafen ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) bepalen die u op de pagina wilt tonen.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Adobe Experience Manager (AEM) inhoudsfragmenten worden [ gecreeerd en geleid al
 
 ### Definitie {#definition}
 
-De **component van het Fragment van 0} Inhoud {wordt gebruikt om een verwijzing naar een activa van het inhoudsfragment (effectief verbeterde tekstactiva) te houden.** Het middeltype voor het inhoudsfragment is:
+De **component van het Fragment van 0&rbrace; Inhoud &lbrace;wordt gebruikt om een verwijzing naar een activa van het inhoudsfragment (effectief verbeterde tekstactiva) te houden.** Het middeltype voor het inhoudsfragment is:
 
 `dam/cfm/components/contentfragment/contentfragment`
 
@@ -120,7 +120,7 @@ Intern wordt de Sling Rewriter gebruikt voor die rendering. De respectievelijke 
 >
 >* `/libs/dam/config/rewriter/cfm`
 >
->Dan moet `serializerType` **** worden bijgewerkt aan:
+>Dan moet `serializerType` **&#x200B;**&#x200B;worden bijgewerkt aan:
 >
 >* `serializerType="html5-serializer"`
 

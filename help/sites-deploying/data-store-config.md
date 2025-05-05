@@ -38,7 +38,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
    >[!NOTE]
    >
-   >Zie {de Configuraties van de Opslag van 0} Knoop ](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.[
+   >Zie {de Configuraties van de Opslag van 0} Knoop [&#128279;](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.
 
 1. Start AEM.
 
@@ -329,7 +329,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 1. Installeer de auteur en publiceer instanties en zorg ervoor zij behoorlijk begonnen zijn.
 1. Ga naar de montages van de replicatieagent, door een pagina aan *https://localhost:4502/etc/replication/agents.author/publish.html* te openen.
 1. Druk **uitgeven** knoop in de **sectie van Montages**.
-1. Verander de **typeoptie van de Serienummering** {in **Binair minder**.
+1. Verander de **typeoptie van de Serienummering** &lbrace;in **Binair minder**.
 
 1. Voeg de parameter &quot; `binaryless`= `true`&quot; toe aan de transporturi. Na de wijziging moet de uri er ongeveer als volgt uitzien:
 

@@ -191,7 +191,7 @@ Noteer GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; in het pad.
 
 Als ontwikkelaar van PhoneGap, wordt de inhoud die u betrokken bent gevestigd onder de folder www. Gebruik relatieve paden om toegang te krijgen tot de elementen van de app.
 
-Uw PhoneGap-toepassing gebruikt het toepassingspatroon (SPA) van één pagina om het probleem te verhelpen, zodat de basis-URI (exclusief de hash) nooit wordt gewijzigd. Daarom moet elk middel, malplaatje, of manuscript dat u **van verwijzingen voorziet met betrekking tot uw top-level pagina zijn. **De pagina op hoofdniveau initialiseert het verpletteren van de Angular en controlemechanismen door `*<name>*.angular-app-module.js` en `*<name>*.angular-app-controllers.js`. Deze pagina zou de dichtstbijzijnde pagina moeten zijn van de basis van de repository die *geen *extend een sling:redirect.
+Uw PhoneGap-toepassing gebruikt het toepassingspatroon (SPA) van één pagina om het probleem te verhelpen, zodat de basis-URI (exclusief de hash) nooit wordt gewijzigd. Daarom moet elk middel, malplaatje, of manuscript dat u **van verwijzingen voorziet met betrekking tot uw top-level pagina zijn. &#x200B;** De pagina op hoofdniveau initialiseert het verpletteren van de Angular en controlemechanismen door `*<name>*.angular-app-module.js` en `*<name>*.angular-app-controllers.js`. Deze pagina zou de dichtstbijzijnde pagina moeten zijn van de basis van de repository die *geen *extend een sling:redirect.
 
 Er zijn verschillende helpermethoden beschikbaar voor het omgaan met relatieve paden:
 

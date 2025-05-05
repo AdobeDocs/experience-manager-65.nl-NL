@@ -82,4 +82,4 @@ HTML5-formulieren ondersteunen drie methoden voor het doorgeven van renderparame
 
 ### Parameters verzenden {#submit-parameters}
 
-HTML5-formulieren verzenden gegevens; uitvoeren serverscripts en webservices op AEM servers. Voor gedetailleerde informatie over parameters die worden gebruikt om server-zijmanuscripten en Web-diensten op AEM servers uit te voeren, zie {de Volmacht van de Dienst van 0} HTML5 vormenDienst ](/help/forms/using/service-proxy.md).[
+HTML5-formulieren verzenden gegevens; uitvoeren serverscripts en webservices op AEM servers. Voor gedetailleerde informatie over parameters die worden gebruikt om server-zijmanuscripten en Web-diensten op AEM servers uit te voeren, zie {de Volmacht van de Dienst van 0} HTML5 vormenDienst [&#128279;](/help/forms/using/service-proxy.md).

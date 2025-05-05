@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Werken met inhoudsfragmenten {#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM), laten de Fragmenten van de Inhoud u, pagina-onafhankelijke inhoud ](/help/sites-authoring/content-fragments.md) ontwerpen tot stand brengen, leiden en [ publiceren. Hiermee kunt u inhoud voorbereiden en gebruiken op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop.
+Met Adobe Experience Manager (AEM), laten de Fragmenten van de Inhoud u, pagina-onafhankelijke inhoud [&#128279;](/help/sites-authoring/content-fragments.md) ontwerpen tot stand brengen, leiden en  publiceren. Hiermee kunt u inhoud voorbereiden en gebruiken op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop.
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 
@@ -133,7 +133,7 @@ Inhoudsfragmenten zijn:
 
 * Gebruikt in de [ paginaredacteur met de component van het Fragment van de Inhoud ](/help/sites-authoring/content-fragments.md) (van verwijzingen voorzien component):
 
-   * De **component van het Fragment van 0} Inhoud {is beschikbaar aan paginaauteurs.** Hiermee kunnen ze naar het vereiste inhoudsfragment verwijzen en dit leveren in HTML- of JSON-indeling.
+   * De **component van het Fragment van 0&rbrace; Inhoud &lbrace;is beschikbaar aan paginaauteurs.** Hiermee kunnen ze naar het vereiste inhoudsfragment verwijzen en dit leveren in HTML- of JSON-indeling.
 
 * Toegankelijk gebruikend [ AEM GraphQL API ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
@@ -254,7 +254,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Wordt gecreeerd als exemplaren van **Hoofd**, maar kan dan worden uitgegeven zoals vereist; er is inhoudsoverlap tussen de variaties zelf.
    * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
-   * De variaties kunnen [ ](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met Hoofd worden gesynchroniseerd als de Hoofdinhoud is bijgewerkt.
+   * De variaties kunnen [&#128279;](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met Hoofd worden gesynchroniseerd als de Hoofdinhoud is bijgewerkt.
    * Kan [ worden samengevat ](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst aan een vooraf bepaalde lengte snel te beknotten.
    * Beschikbaar onder het [ lusje van Variaties ](/help/assets/content-fragments/content-fragments-variations.md) van de fragmentredacteur.
 

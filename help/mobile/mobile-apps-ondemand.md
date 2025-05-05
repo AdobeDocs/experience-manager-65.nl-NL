@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## AEM Mobile-auteur {#aem-mobile-author}
 
-Een ***AEM Auteur* (of *Markering*) **gebruikt douane-ontwikkelde of uit-van-de-doos malplaatjes en componenten om pagina&#39;s toe te voegen en uit te geven, componenten te slepen en neer te zetten en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toe te voegen. AEM ingebouwde inhoudsredacteur wordt dan gebruikt door *AEM Auteurs* om rijke en relevante ervaringen binnen app, met inbegrip van integratie met de rest van Adobe Experience Cloud tot stand te brengen.
+Een ***AEM Auteur* (of *Markering*) &#x200B;** gebruikt douane-ontwikkelde of uit-van-de-doos malplaatjes en componenten om pagina&#39;s toe te voegen en uit te geven, componenten te slepen en neer te zetten en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toe te voegen. AEM ingebouwde inhoudsredacteur wordt dan gebruikt door *AEM Auteurs* om rijke en relevante ervaringen binnen app, met inbegrip van integratie met de rest van Adobe Experience Cloud tot stand te brengen.
 
 Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On-demand Services.
 

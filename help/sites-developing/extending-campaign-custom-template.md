@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat ](/help/sites-authoring/adobe-campaign-components.md) componenten gebruikt van de Vorm van 0} Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (`/apps/geometrixx-outdoors/components/page_campaign_profile`) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.[
+Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat [&#128279;](/help/sites-authoring/adobe-campaign-components.md) componenten gebruikt van de Vorm van 0&rbrace; Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (`/apps/geometrixx-outdoors/components/page_campaign_profile`) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.
 
 >[!NOTE]
 >

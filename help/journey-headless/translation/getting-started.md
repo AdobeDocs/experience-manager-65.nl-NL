@@ -88,6 +88,7 @@ Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke 
 1. De **ModelRedacteur van het Fragmentmodel van de Inhoud** opent.
    1. De linkerkolom bevat de velden van het model. Deze kolom interesseert ons.
    1. De rechterkolom bevat de velden die aan het model kunnen worden toegevoegd. Deze kolom kunnen wij negeren.
+
       ![ de ModelRedacteur van het Fragment van de Inhoud ](assets/content-fragment-model-editor.png)
 1. Klik op een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
    ![ de details van de ModelRedacteur van het Fragment van de Inhoud ](assets/content-fragment-model-editor-detail.png)

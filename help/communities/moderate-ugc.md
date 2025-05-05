@@ -221,7 +221,7 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 
 1. Open [ Console van het Web ](https://localhost:4502/system/console/configMgr), door naar `/system/console/configMgr` te gaan.
 
-1. Bepaal de plaats **configuratie van de Moderatie van 0} AEM Communities Auto, en geef het uit.**
+1. Bepaal de plaats **configuratie van de Moderatie van 0&rbrace; AEM Communities Auto, en geef het uit.**
 1. Voeg de vermelding **[!UICONTROL SpamProcess]** toe.
 
 ![ spamprocess ](assets/spamprocess.png)

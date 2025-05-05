@@ -79,7 +79,7 @@ U kunt meerdere notities toevoegen, de geschreven notities bewerken en deze verw
 * Geen toegang
 
 1. Open een taak en klik het **Nota&#39;s** lusje, als het proces het toestaat.
-1. Typ een titel voor de nota in het **vakje van de Titel**, en typ de tekst van de nota in het **3} vakje van de Nota {.**
+1. Typ een titel voor de nota in het **vakje van de Titel**, en typ de tekst van de nota in het **3&rbrace; vakje van de Nota &lbrace;.**
 1. Selecteer het **niveau van Toestemmingen** voor de nota voor andere gebruikers die aan het proces deelnemen.
 1. Klik **OK**. Een tekstbestand dat uw notitie bevat, wordt aan het formulier gekoppeld. U kunt een notitie bijwerken door erop te klikken en de tekst rechtstreeks te wijzigen. U kunt een nota schrappen door **te klikken schrapt** knoop ![ Beeld van een afval kan ](assets/icondelete.png) naast de nota.
 

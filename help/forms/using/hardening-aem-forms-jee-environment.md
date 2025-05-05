@@ -292,7 +292,7 @@ Wanneer AEM Forms op JEE wordt geïnstalleerd, wordt één enkele standaardgebru
 
    **9080 WebSphere.**
 
-1. Op het **gebied van de Naam van 0} Gebruiker {, type `administrator` en, op het** 4} gebied van het Wachtwoord {, type `password`.****
+1. Op het **gebied van de Naam van 0&rbrace; Gebruiker {, type `administrator` en, op het** 4} gebied van het Wachtwoord &lbrace;, type `password`.**&#x200B;**
 1. Klik **Montages** > **Gebruikersbeheer** > **Gebruikers en Groepen**.
 1. Het type `administrator` op het **Vondst** gebied, en klikt **Vondst**.
 1. Klik **Beheerder van de Leverancier** van de lijst van gebruikers.

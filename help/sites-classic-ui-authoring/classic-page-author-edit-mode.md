@@ -29,7 +29,7 @@ Sommige zijn onmiddellijk beschikbaar door sidekick, diverse anderen zijn ook be
 >
 >Afhankelijk van uw instantie, kunt u aangepaste componenten hebben die uitdrukkelijk voor uw vereisten worden ontwikkeld. Deze douanecomponenten kunnen zelfs de zelfde naam hebben zoals sommige hier besproken componenten.
 
-De componenten zijn beschikbaar wanneer [ het uitgeven van een pagina ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) van het **3} lusje van Componenten {van sidekick en** Nieuwe Component van het Tussenvoegsel **selecteur (wanneer u in het** de componenten of activa van de Belemmering hier **gebied tweemaal klikt).**
+De componenten zijn beschikbaar wanneer [ het uitgeven van een pagina ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) van het **3&rbrace; lusje van Componenten &lbrace;van sidekick en** Nieuwe Component van het Tussenvoegsel **selecteur (wanneer u in het** de componenten of activa van de Belemmering hier **gebied tweemaal klikt).**
 
 U kunt een component selecteren en het slepen aan de vereiste plaats op uw pagina en dan [ geeft Inhoud en Eigenschappen ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) uit.
 
@@ -193,7 +193,7 @@ Optioneel. Het maximumaantal items dat u in de carrousel wilt gebruiken.
 
 >[!NOTE]
 >
-U kunt een aangepaste carrouselcomponent voor Adobe Experience Manager maken die digitale elementen weergeeft in de AEM DAM.
+>U kunt een aangepaste carrouselcomponent voor Adobe Experience Manager maken die digitale elementen weergeeft in de AEM DAM.
 
 ### Diagram {#chart}
 
@@ -228,11 +228,11 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 
 >[!CAUTION]
 >
-De volledige functionaliteit van Content Fragment Management is alleen beschikbaar met de geoptimaliseerde interface voor aanraken.
+>De volledige functionaliteit van Content Fragment Management is alleen beschikbaar met de geoptimaliseerde interface voor aanraken.
 >
-De component van het Fragment van de Inhoud kan in het klassieke hulpje UI worden gezien, maar de verdere functies zijn niet beschikbaar.
+>De component van het Fragment van de Inhoud kan in het klassieke hulpje UI worden gezien, maar de verdere functies zijn niet beschikbaar.
 
-{de fragmenten van 0} Inhoud ](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) worden gecreeerd en als pagina-onafhankelijke activa beheerd. [ Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
+{de fragmenten van 0} Inhoud [&#128279;](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) worden gecreeerd en als pagina-onafhankelijke activa beheerd.  Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
 ### Design Importer {#design-importer}
 
@@ -282,7 +282,7 @@ De externe toepassing is geïntegreerd in het alineasysteem van de AEM pagina, b
 
 >[!NOTE]
 >
-Afhankelijk van uw gebruiksgeval, zijn andere opties beschikbaar voor integratie van externe toepassingen, bijvoorbeeld, de [ Integratie van Portlets ](/help/sites-administering/aem-as-portal.md).
+>Afhankelijk van uw gebruiksgeval, zijn andere opties beschikbaar voor integratie van externe toepassingen, bijvoorbeeld, de [ Integratie van Portlets ](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -290,7 +290,7 @@ Met de component Flash kunt u een Flash film laden. U kunt een Flash-element van
 
 * **Flash**
 
-   * {de film van 0} Flash ****
+   * {de film van 0} Flash **&#x200B;**
 
      Het Flash-filmbestand. Sleep een element van de zoeker naar de inhoud of klik om een bladervenster te openen.
 
@@ -336,11 +336,11 @@ U kunt of een beeld van de [ Vinder van de Inhoud ](/help/sites-classic-ui-autho
 
 >[!NOTE]
 >
-De voortgang van het uploaden kan niet worden gecontroleerd met Internet Explorer.
+>De voortgang van het uploaden kan niet worden gecontroleerd met Internet Explorer.
 >
-De gebruikers van Internet Explorer moeten het beeld uploaden en **O.K.** klikken, dan het beeld opnieuw openen om het geuploade dossier in de voorproef te zien en wijzigingen (namelijk gewas) kunnen uitvoeren.
+>De gebruikers van Internet Explorer moeten het beeld uploaden en **O.K.** klikken, dan het beeld opnieuw openen om het geuploade dossier in de voorproef te zien en wijzigingen (namelijk gewas) kunnen uitvoeren.
 >
-Zie de [ Verklaarde sectie van Platforms ](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5 eigenschappen die door AEM worden gebruikt.
+>Zie de [ Verklaarde sectie van Platforms ](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5 eigenschappen die door AEM worden gebruikt.
 
 Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
@@ -392,7 +392,7 @@ Het definitieve beeld (met **Titel** en **Beschrijving**) kan als worden getoond
 
 >[!CAUTION]
 >
-Hoewel de component Layout Container beschikbaar is in de klassieke gebruikersinterface, is de volledige functionaliteit alleen beschikbaar in de interface met aanraakbediening. Voor details zie [ Responsieve Lay-out ](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+>Hoewel de component Layout Container beschikbaar is in de klassieke gebruikersinterface, is de volledige functionaliteit alleen beschikbaar in de interface met aanraakbediening. Voor details zie [ Responsieve Lay-out ](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Lijst {#list}
 
@@ -459,7 +459,7 @@ Geef een pad handmatig of met de kiezer op. Laat leeg als u de huidige pagina al
 
      Hier kunt u het aantal lijstitems opgeven dat in één keer moet worden weergegeven. Een lijst met meer items dan opgegeven gebruikt paginering om de lijst in verschillende delen weer te geven.
 
-Het volgende voorbeeld toont de component van de Lijst van de a **** op de manier dat het een lijst van kindpagina&#39;s kan tonen (het ontwerp wordt gecontroleerd door de douaneCSS definities van een plaatsontwerp).
+Het volgende voorbeeld toont de component van de Lijst van de a **&#x200B;**&#x200B;op de manier dat het een lijst van kindpagina&#39;s kan tonen (het ontwerp wordt gecontroleerd door de douaneCSS definities van een plaatsontwerp).
 
 ![ dc_list_use ](assets/dc_list_use.png)
 
@@ -588,7 +588,7 @@ Als u bijvoorbeeld `Geometrixxe` typt, geeft het systeem &quot;Bedoelde u? Geome
 
      De tekst die naast onderzoeken naar verwante termijnen en onderwerpen verschijnt.
 
-   * **Tekst van de Trends van het Onderzoek van 0}**
+   * **Tekst van de Trends van het Onderzoek van 0&rbrace;**
 
      De titel boven de zoektermen die een gebruiker invoert.
 
@@ -656,9 +656,9 @@ In de diapresentatie-component worden vervolgens herhaaldelijk alle elementen in
 
 >[!NOTE]
 >
-De **component van de Lijst** is gebaseerd op de [ Rich redacteur van de Tekst ](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), zoals de **[](#text)** component van de Tekst is.
+>De **component van de Lijst** is gebaseerd op de [ Rich redacteur van de Tekst ](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), zoals de **[&#128279;](#text)** component van de Tekst is.
 >
-De Adobe adviseert dat u de **component van de Lijst** voor lijsten gebruikt, hoewel zij ook met de **** component van de Tekst kunnen worden geconstrueerd.
+>De Adobe adviseert dat u de **component van de Lijst** voor lijsten gebruikt, hoewel zij ook met de **&#x200B;**&#x200B;component van de Tekst kunnen worden geconstrueerd.
 
 De **component van de Lijst** wordt preconfigured om u te laten, een lijst construeren vullen en formatteren. Gebruikend de dialoog, kunt u uw lijst vormen en de inhoud van kras tot stand brengen, of door een spreadsheet of een lijst van een externe redacteur, zoals Excel, OpenOffice, of Blocnote te kopiëren en te kleven.
 
@@ -691,9 +691,9 @@ Voor meer informatie over het toepassen van markeringen, bezoek [ Gebruikend Mar
 
 >[!NOTE]
 >
-De **component van de Tekst** is gebaseerd op de [ Rich redacteur van de Tekst ](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), zoals de **[Lijst](#table)** component is.
+>De **component van de Tekst** is gebaseerd op de [ Rich redacteur van de Tekst ](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), zoals de **[Lijst](#table)** component is.
 >
-De Adobe adviseert dat u de **component van de Lijst** voor lijsten gebruikt, hoewel zij ook met de **** component van de Tekst kunnen worden geconstrueerd.
+>De Adobe adviseert dat u de **component van de Lijst** voor lijsten gebruikt, hoewel zij ook met de **&#x200B;**&#x200B;component van de Tekst kunnen worden geconstrueerd.
 
 De component van de Tekst laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door de [ Rich redacteur van de Tekst ](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) wordt verstrekt. Met een selectie pictogrammen kunt u de tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing.
 
@@ -708,7 +708,7 @@ De opgemaakte tekst wordt vervolgens op de pagina weergegeven. Het daadwerkelijk
 
 ![ dc_text_use ](assets/dc_text_use.png)
 
-Voor meer gedetailleerde informatie over de component van de Tekst en de functionaliteit die door de Rich redacteur van de Tekst wordt verstrekt, zie de ](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) pagina van de Redacteur van de Tekst 0} Rich.[
+Voor meer gedetailleerde informatie over de component van de Tekst en de functionaliteit die door de Rich redacteur van de Tekst wordt verstrekt, zie de [&#128279;](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) pagina van de Redacteur van de Tekst 0&rbrace; Rich.
 
 #### Op plaats bewerken {#inplace-editing}
 
@@ -716,7 +716,7 @@ Naast op dialoog-gebaseerde Rich Tekst het uitgeven wijze, verstrekt AEM ook [ h
 
 ### Tekst en afbeelding {#text-image}
 
-De component Tekst en afbeelding voegt een tekstblok en een afbeelding toe. U kunt ook afzonderlijk tekst en afbeeldingen toevoegen en bewerken. Zie de [ Tekst ](#text) en [ 3} componenten van het Beeld {voor details.](#image)
+De component Tekst en afbeelding voegt een tekstblok en een afbeelding toe. U kunt ook afzonderlijk tekst en afbeeldingen toevoegen en bewerken. Zie de [ Tekst ](#text) en [ 3&rbrace; componenten van het Beeld &lbrace;voor details.](#image)
 
 ![ chlimage_1-12 ](assets/chlimage_1-12.png) ![ chlimage_1-13 ](assets/chlimage_1-13.png)
 
@@ -803,11 +803,11 @@ Nadat u een instantie van de component op de pagina hebt geplaatst, kunt u het v
 
 >[!NOTE]
 >
-Ondersteunde indelingen zijn onder andere:
+>Ondersteunde indelingen zijn onder andere:
 >
-* `.mp4`
-* `Ogg`
-* `FLV` (video Flash)
+>* `.mp4`
+>* `Ogg`
+>* `FLV` (video Flash)
 >
 
 ## Kolommen {#columns}
@@ -842,7 +842,7 @@ Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers i
 
 >[!NOTE]
 >
-Zie [ Hulp van AEM Forms ](/help/forms/using/introduction-aem-forms.md) voor informatie over AEM Forms.
+>Zie [ Hulp van AEM Forms ](/help/forms/using/introduction-aem-forms.md) voor informatie over AEM Forms.
 
 Forms is opgebouwd uit verschillende onderdelen:
 
@@ -864,7 +864,7 @@ Hieronder ziet u een voorbeeldformulier. Het is samengesteld uit de **component 
 
 >[!NOTE]
 >
-De informatie over het ontwikkelen van en het aanpassen van uw vormen is beschikbaar op [ het Ontwikkelen van de pagina van Forms ](/help/sites-developing/developing-forms.md). Dit formulier aanpassen omvat onder andere het toevoegen van handelingen, beperkingen, het vooraf laden van velden en het gebruik van scripts om een service aan een actie aan te roepen.
+>De informatie over het ontwikkelen van en het aanpassen van uw vormen is beschikbaar op [ het Ontwikkelen van de pagina van Forms ](/help/sites-developing/developing-forms.md). Dit formulier aanpassen omvat onder andere het toevoegen van handelingen, beperkingen, het vooraf laden van velden en het gebruik van scripts om een service aan een actie aan te roepen.
 
 ### Algemene instellingen voor (veel) formuliercomponenten {#settings-common-to-many-form-components}
 
@@ -890,7 +890,7 @@ Wanneer u een van de formuliercomponenten configureert, zijn de volgende tabblad
 
 >[!NOTE]
 >
-De velden die u ziet, variëren aanzienlijk, afhankelijk van de afzonderlijke component.
+>De velden die u ziet, variëren aanzienlijk, afhankelijk van de afzonderlijke component.
 
 Deze lusjes voorzien u van de noodzakelijke parameters. De tabbladen zijn afhankelijk van het afzonderlijke componenttype, maar kunnen het volgende bevatten:
 
@@ -1199,9 +1199,9 @@ U kunt verschillende parameters opgeven, zoals een titel, beschrijving en elemen
 
 >[!NOTE]
 >
-Gebruikend **Pad van de Lading van Punten** kunt u de lijst van de controledoos groep met waarden vooraf laden.
+>Gebruikend **Pad van de Lading van Punten** kunt u de lijst van de controledoos groep met waarden vooraf laden.
 >
-Zie [ het Voorladen van de Gebieden van de Vorm met Veelvoudige Waarden ](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Zie [ het Voorladen van de Gebieden van de Vorm met Veelvoudige Waarden ](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Creditcardgegevens {#credit-card-details}
 
@@ -1219,9 +1219,9 @@ U kunt een titel en items opgeven die in de lijst moeten worden weergegeven. Met
 
 >[!NOTE]
 >
-Gebruikend **Pad van de Lading van Punten** kunt u de drop-down lijst met waarden vooraf laden.
+>Gebruikend **Pad van de Lading van Punten** kunt u de drop-down lijst met waarden vooraf laden.
 >
-Zie [ het Voorladen van de Gebieden van de Vorm met Veelvoudige Waarden ](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Zie [ het Voorladen van de Gebieden van de Vorm met Veelvoudige Waarden ](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Bestand uploaden {#file-upload}
 
@@ -1239,9 +1239,9 @@ Met deze component kunt u een verborgen veld maken. Deze verborgen velden kunnen
 
 >[!NOTE]
 >
-U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is.
+>U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is.
 >
-Zie [ tonen en Hiding de Componenten van de Vorm ](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+>Zie [ tonen en Hiding de Componenten van de Vorm ](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Afbeeldingsknop {#image-button}
 
@@ -1290,9 +1290,9 @@ U kunt de elementnaam samen met een titel en een beschrijving opgeven. Met de kn
 
 >[!NOTE]
 >
-Gebruikend **Pad van de Lading van Punten** kunt u de radiobroep met waarden vooraf laden.
+>Gebruikend **Pad van de Lading van Punten** kunt u de radiobroep met waarden vooraf laden.
 >
-Zie [ het Voorladen van de Gebieden van de Vorm met Veelvoudige Waarden ](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Zie [ het Voorladen van de Gebieden van de Vorm met Veelvoudige Waarden ](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Verzendknop {#submit-button}
 

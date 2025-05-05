@@ -196,7 +196,7 @@ In UI, kunt u controleren/uncheck **vertalen** in het **Eigenschappen** lusje.
 
 **updateDestinationLanguage** Dit attribuut wordt gebruikt voor eigenschappen die geen tekst maar taalcodes, bijvoorbeeld, jcr hebben:taal. De gebruiker vertaalt geen tekst maar de taallandinstelling van bron tot doel. Dergelijke eigenschappen worden niet verzonden voor vertaling.
 
-In UI, kunt u controleren/uncheck **** in het **lusje van Eigenschappen** vertalen, maar voor de specifieke eigenschappen die taalcodes als waarde hebben.
+In UI, kunt u controleren/uncheck **&#x200B;**&#x200B;in het **lusje van Eigenschappen** vertalen, maar voor de specifieke eigenschappen die taalcodes als waarde hebben.
 
 Voor meer duidelijkheid over het verschil tussen `updateDestinationLanguage` en `translate` is dit een eenvoudig voorbeeld van een context met slechts twee regels:
 

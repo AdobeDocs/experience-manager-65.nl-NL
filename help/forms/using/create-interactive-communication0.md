@@ -73,7 +73,7 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
 
    ![ de fragmenten van het Document voor Interactieve Mededelingen ](assets/create_first_ic_doc_fragments_new.png)
 
-1. Selecteer **doelgebied van Grafieken 1}, en selecteer** + **om de component van de a** Grafiek **toe te voegen.**
+1. Selecteer **doelgebied van Grafieken 1&rbrace;, en selecteer** + **om de component van de a** Grafiek **toe te voegen.**
 1. Selecteer de component van de Grafiek en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). De grafiekeigenschappen worden weergegeven in het linkerdeelvenster:
 
    1. Geef een naam op voor het diagram.
@@ -84,7 +84,7 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
    1. Selecteer ![ done_icon ](assets/done_icon.png) om de grafiekeigenschappen te bewaren.
 
 1. Ga naar het **Assets** lusje en pas de filter toe om slechts de lay-outfragmenten in de linkerruit te tonen. Sleep-en-daling het **table_lf** lay-outfragment aan het **Gespecialiseerde Vraag** doelgebied.
-1. Selecteer het Gebied van de Tekst in de **kolom van de Datum** {en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm).
+1. Selecteer het Gebied van de Tekst in de **kolom van de Datum** &lbrace;en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm).
 1. Selecteer **ModelVoorwerp van Gegevens** van de **Bindende drop-down lijst van het Type** en selecteer **vraag** > **calldate**. Selecteer ![ done_icon ](assets/done_icon.png) tweemaal om de eigenschappen te bewaren.
 
    Op dezelfde manier creeer band met **calltime**, **callnumber**, **callduration**, en **callloads** voor tekstgebieden in de **Tijd**, **Aantal**, **Duur**, en **lading** kolommen.
@@ -92,11 +92,11 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
 1. Selecteer **PayNow** doelgebied, en selecteer **+** om een **component van het Beeld** toe te voegen.
 1. Selecteer de component van het Beeld en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). De eigenschappen van de afbeelding worden weergegeven in het linkervenster:
 
-   1. Specificeer **PayNow** als naam van het beeld op het **3} gebied van de Naam {.**
+   1. Specificeer **PayNow** als naam van het beeld op het **3&rbrace; gebied van de Naam &lbrace;.**
    1. Selecteer **uploaden**, selecteer het beeld dat op het lokale dossiersysteem wordt bewaard, en selecteer **Open**.
    1. Selecteer ![ done_icon ](assets/done_icon.png) om de beeldeigenschappen te bewaren.
 
-1. Herhaal stappen 13 en 14 om **beeld ValueAddedServices** aan het **** doelgebied toe te voegen ValueAddedServices.
+1. Herhaal stappen 13 en 14 om **beeld ValueAddedServices** aan het **&#x200B;**&#x200B;doelgebied toe te voegen ValueAddedServices.
 
 ### Interactieve communicatie voor webkanaal maken {#create-interactive-communication-for-web-channel}
 
@@ -156,7 +156,7 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
    ![ Lijst voor Interactieve Communicatie ](assets/table_ic_web_new.png)
 
 1. Selecteer **Mobilenum** de kolomrubriek van de lijst en selecteer **Meer opties** > **kolom van de Schrapping**. Op dezelfde manier schrap **Calltype** kolom.
-1. Selecteer de **de kolomrubriek van de 0} Bijgestelde** lijst en selecteer ![ uitgeven ](assets/edit.png) (geef uit) om de tekst anders te noemen aan **Datum van de Vraag**. Wijzig de naam van de andere kolomkoppen in de tabel.
+1. Selecteer de **de kolomrubriek van de 0&rbrace; Bijgestelde** lijst en selecteer ![ uitgeven ](assets/edit.png) (geef uit) om de tekst anders te noemen aan **Datum van de Vraag**. Wijzig de naam van de andere kolomkoppen in de tabel.
 1. Gebaseerd op het gebruiksgeval, neem a **nu betalen** knoop in de Interactieve Mededeling op die de gebruiker een optie verstrekt om de betaling te maken door de knoop te klikken. Voer de volgende stappen uit om de knop in te voegen:
 
    1. Selecteer **nu betalen** doelgebied, en selecteren **+** om de component van de a **Tekst** toe te voegen.
@@ -176,7 +176,7 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
 1. Maak de hyperlinktekst zodanig op dat deze als een knop in de interactieve communicatie wordt weergegeven. Ga hierbij als volgt te werk:
 
    1. Selecteer de tekstcomponent en selecteer ![ uitgeven ](assets/edit.png) (geef uit).
-   1. In de **sectie 0} Grens {, specificeer** 1.5px **als** Breedte van de Grens **, selecteer** Ononderbroken **als** Stijl van de Grens **, en specificeer** 46px **als** Straal van de Grens **.**
+   1. In de **sectie 0&rbrace; Grens &lbrace;, specificeer** 1.5px **als** Breedte van de Grens **, selecteer** Ononderbroken **als** Stijl van de Grens **, en specificeer** 46px **als** Straal van de Grens **.**
 
    1. Selecteer Rood als achtergrondkleur voor de knoop van de **Achtergrond** sectie.
    1. Op het **gebied van de Marge** voor **Dimensionen &amp; de sectie van de Positie**, uitgezocht gelijktijdig **uitgeven** pictogram, en plaats de **juiste** marge als **450px**. De velden Boven, Onder en Links worden ingesteld als leeg.
@@ -186,15 +186,15 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
 1. Selecteer **nu betalen** doelgebied, en selecteren **+** om een **component van het Beeld** toe te voegen.
 1. Selecteer de component van het Beeld en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm). De eigenschappen van de afbeelding worden weergegeven in het linkervenster:
 
-   1. Specificeer **PayNow** als naam van het beeld op het **3} gebied van de Naam {.**
+   1. Specificeer **PayNow** als naam van het beeld op het **3&rbrace; gebied van de Naam &lbrace;.**
 
-   1. Selecteer **uploaden**, selecteer het **** beeld PayNowWeb dat op het lokale dossiersysteem wordt bewaard, en selecteer **Open**.
+   1. Selecteer **uploaden**, selecteer het **&#x200B;**&#x200B;beeld PayNowWeb dat op het lokale dossiersysteem wordt bewaard, en selecteer **Open**.
 
    1. Selecteer ![ done_icon ](assets/done_icon.png) om de beeldeigenschappen te bewaren.
 
 1. Gebaseerd op het gebruiksgeval, neem a **in Abonneren** knoop in de Interactieve Mededeling die de gebruiker een optie verstrekt om aan de diensten van de toegevoegde waarde in te tekenen door de knoop te klikken.
 
-   Herhaal stappen 13 - 17 om a **toe te voegen onderteken** knoop aan de **Waarde Toegevoegde het doelgebied van de Diensten** en voeg het **** beeld ValueAddedServicesWeb toe.
+   Herhaal stappen 13 - 17 om a **toe te voegen onderteken** knoop aan de **Waarde Toegevoegde het doelgebied van de Diensten** en voeg het **&#x200B;**&#x200B;beeld ValueAddedServicesWeb toe.
 
 ## Interactieve communicatie voor afdrukken en web maken met automatische synchronisatie {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 

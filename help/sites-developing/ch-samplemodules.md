@@ -50,7 +50,7 @@ Configureer de contexthub.base UI-module met behulp van een JavaScript-object in
 * **titel:** een titel voor de module UI. De titel wordt weergegeven wanneer de aanwijzer op het pictogram van de gebruikersinterface wordt gepauzeerd.
 * **volledig scherm:** een booleaanse waarde die erop wijst of de module UI volledig-schermwijze steunt. Gebruik `true` om het volledige scherm te ondersteunen en `false` om de modus Volledig scherm te voorkomen.
 
-* **malplaatje:** A [ 3} malplaatje Handlebars {dat de inhoud specificeert in de toolbar ContextHub terug te geven. ](https://handlebarsjs.com/) Gebruik maximaal twee `<p>` -tags.
+* **malplaatje:** A [ 3&rbrace; malplaatje Handlebars &lbrace;dat de inhoud specificeert in de toolbar ContextHub terug te geven. ](https://handlebarsjs.com/) Gebruik maximaal twee `<p>` -tags.
 
 * **storeMapping:** een sleutel/opslagafbeelding. Gebruik de sleutel in malplaatjes Handlebar om tot de bijbehorende ContextHub opslaggegevens toegang te hebben.
 * **lijst:** een serie van punten om als lijst in popover te tonen wanneer de module UI wordt geklikt. Als u dit item opneemt, neemt u geen popoverTemplate op. De waarde is een array van objecten met de volgende toetsen:
@@ -87,7 +87,7 @@ Het volgende voorbeeld vormt een module van contexthub.base UI aan vertoningsinf
 
 ## Type van module contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-In de UI-module contextthub.browserinfo wordt informatie over de webbrowser en het besturingssysteem van de client weergegeven. De informatie wordt verkregen van de surferinfo opslag, die op de {](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) opslagkandidaat 0} wordt gebaseerd contexthub.surferinfo.[
+In de UI-module contextthub.browserinfo wordt informatie over de webbrowser en het besturingssysteem van de client weergegeven. De informatie wordt verkregen van de surferinfo opslag, die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) opslagkandidaat 0} wordt gebaseerd contexthub.surferinfo.
 
 ![ chlimage_1-77 ](assets/chlimage_1-77a.png)
 
@@ -108,7 +108,7 @@ Voor instanties van de module Contextthub.browserinfo UI is geen waarde vereist 
 
 ## Het type van de module contextthub.datetime {#contexthub-datetime-ui-module-type}
 
-De contexthub.datetime UI module toont de datum en de tijd die in een opslag genoemd datetime wordt opgeslagen die op de {](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) opslagkandidaat 0} contextthub.datetime {gebaseerd is.[
+De contexthub.datetime UI module toont de datum en de tijd die in een opslag genoemd datetime wordt opgeslagen die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) opslagkandidaat 0} contextthub.datetime &lbrace;gebaseerd is.
 
 ![ chlimage_1-78 ](assets/chlimage_1-78a.png)
 
@@ -133,7 +133,7 @@ Voor instanties van de module Contextthub.datetime UI is geen waarde vereist voo
 
 ## Contextthub.location UI Module Type {#contexthub-location-ui-module-type}
 
-In de module contexthub.location UI worden de lengte en breedte van de client weergegeven. De module biedt een pop-up die een Google-kaart weergeeft waarop u kunt klikken om de huidige locatie te wijzigen. De module verkrijgt informatie van een opslag ContextHub genoemd geolocation die op de {](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) opslagkandidaat 0} contexthub.geolocation gebaseerd is.[
+In de module contexthub.location UI worden de lengte en breedte van de client weergegeven. De module biedt een pop-up die een Google-kaart weergeeft waarop u kunt klikken om de huidige locatie te wijzigen. De module verkrijgt informatie van een opslag ContextHub genoemd geolocation die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) opslagkandidaat 0} contexthub.geolocation gebaseerd is.
 
 ![ chlimage_1-80 ](assets/chlimage_1-80a.png)
 
@@ -200,7 +200,7 @@ Instanties van de contexthub.screen-orientation UI module vereisen geen waarde v
 
 ## Contextthub.tagcloud-UI-moduletype {#contexthub-tagcloud-ui-module-type}
 
-In de module Contextthub.tagcloud UI wordt informatie over tags weergegeven. In de werkbalk wordt in de gebruikersinterface het aantal codes weergegeven. De pop-up onthult een geëtiketteerde wolk en een texbox voor het toevoegen van nieuwe markeringen. De module UI verkrijgt informatie van een opslag ContextHub genoemd tagcloud die op de {](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) opslagkandidaat 0} contexthub.tagcloud gebaseerd is.[
+In de module Contextthub.tagcloud UI wordt informatie over tags weergegeven. In de werkbalk wordt in de gebruikersinterface het aantal codes weergegeven. De pop-up onthult een geëtiketteerde wolk en een texbox voor het toevoegen van nieuwe markeringen. De module UI verkrijgt informatie van een opslag ContextHub genoemd tagcloud die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) opslagkandidaat 0} contexthub.tagcloud gebaseerd is.
 
 ![ chlimage_1-82 ](assets/chlimage_1-82a.png)
 
@@ -224,7 +224,7 @@ Voor instanties van de module Contextthub.tagcloud UI is geen waarde vereist voo
 
 ## Type module granite.profile {#granite-profile-ui-module-type}
 
-De granite.profile module ContextHub UI toont de vertoningsnaam van de huidige gebruiker. De pop-up openbaart de login naam van de gebruiker en laat u toe om de waarde van de vertoningsnaam te veranderen. De module UI verkrijgt informatie van een opslag ContextHub genoemd profiel dat op de {](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) opslagkandidaat 0} granite.profile gebaseerd is.[
+De granite.profile module ContextHub UI toont de vertoningsnaam van de huidige gebruiker. De pop-up openbaart de login naam van de gebruiker en laat u toe om de waarde van de vertoningsnaam te veranderen. De module UI verkrijgt informatie van een opslag ContextHub genoemd profiel dat op de {[&#128279;](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) opslagkandidaat 0} granite.profile gebaseerd is.
 
 ![ chlimage_1-83 ](assets/chlimage_1-83a.png)
 

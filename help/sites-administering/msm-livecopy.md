@@ -92,12 +92,12 @@ U kunt een live kopie van elke pagina maken:
 
 Het enige verschil is dat de beschikbaarheid van het **bevel van de Uitvoer** op de bron/de blauwdruk pagina&#39;s afhankelijk is van of de bron door een blauwdrukconfiguratie van verwijzingen wordt voorzien:
 
-* Als u het levende exemplaar van een bronpagina creeert die **** in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan zal het bevel van de Uitvoer op de bron/de pagina(s) van de blauwdruk beschikbaar zijn.
+* Als u het levende exemplaar van een bronpagina creeert die **&#x200B;**&#x200B;in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan zal het bevel van de Uitvoer op de bron/de pagina(s) van de blauwdruk beschikbaar zijn.
 * Als u het levende exemplaar van een bronpagina creeert die **niet** in een blauwdrukconfiguratie van verwijzingen wordt voorzien, dan zal het bevel van de Uitvoer niet beschikbaar op de bron/blauwdruk pagina(s) zijn.
 
 Een live kopie maken:
 
-1. In de **console 1} uitgezochte** van Plaatsen **, dan** Levende Exemplaar **.**
+1. In de **console 1&rbrace; uitgezochte** van Plaatsen **, dan** Levende Exemplaar **.**
 
    ![ creeer Levend Exemplaar ](assets/chlimage_1-212.png)
 
@@ -188,7 +188,7 @@ De eigenschappen van een pagina met live kopieën geven de volgende informatie o
 De eigenschappen weergeven:
 
 1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en open de eigenschappen.
-1. Selecteer het **Levende 1} lusje van het Exemplaar {.**
+1. Selecteer het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 
    Bijvoorbeeld:
 
@@ -229,7 +229,7 @@ Leer een pagina van de blauwdruk uit om inhoudsveranderingen in levende exemplar
 
    ![ Beeldscherm van de Uitvoer ](assets/rollout-blueprint.png)
 
-Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0} Async {worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **[**
+Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard [&#128279;](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0&rbrace; Async &lbrace;worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **&#x200B;**
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard ](asy
 
 1. Na het bevestigen van deze details, uitgezochte **Uitvoer** om de actie uit te voeren.
 
-Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0} Async {worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **[**
+Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard [&#128279;](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0&rbrace; Async &lbrace;worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **&#x200B;**
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ De [ actie van de Output is ook beschikbaar bij het Levende Overzicht van het Ex
 
    ![ Beeldscherm van de Uitvoer ](assets/rollout-blueprint.png)
 
-Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard ](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0} Async {worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **[**
+Rollouts worden verwerkt als asynchrone banen en kunnen in het **dashboard [&#128279;](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) van de Banen van 0&rbrace; Async &lbrace;worden gecontroleerd** Globale Navigatie **>** Hulpmiddelen **>** Verrichtingen **>** Banen **&#x200B;**
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ Synchroniseer een live kopie om wijzigingen van de bron naar de livecopy over te
 >Het synchroniseren voert de rollout configuraties uit die [ op de trekker van de Uitvoer ](/help/sites-administering/msm-sync.md#rollout-triggers) gebruiken.
 
 1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en open de eigenschappen.
-1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Open het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. Klik **synchroniseren**.
 
    ![ synchroniseren ](assets/chlimage_1-224.png)
@@ -342,7 +342,7 @@ Wanneer de pagina met live kopieën wordt gesynchroniseerd met de bronpagina, bl
 
 >[!NOTE]
 >
->Wijzigingen die lokaal worden aangebracht in een component die als container is gemarkeerd, worden niet overschreven door de inhoud van de blauwdruk op een rollout. Zie ](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) Beste praktijken MSM [ voor meer informatie.
+>Wijzigingen die lokaal worden aangebracht in een component die als container is gemarkeerd, worden niet overschreven door de inhoud van de blauwdruk op een rollout. Zie [&#128279;](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) Beste praktijken MSM  voor meer informatie.
 
 ### Overerving voor een pagina onderbreken {#suspending-inheritance-for-a-page}
 
@@ -406,7 +406,7 @@ Wanneer u overerving weer inschakelt, wordt de pagina niet automatisch gesynchro
 
 #### Overerving van pagina-eigenschappen hervatten {#resuming-inheritance-from-page-properties}
 
-Zodra [ ](#suspending-inheritance-from-page-properties) opgeschort **hervat** actie in de toolbar van de paginaeigenschappen wordt:
+Zodra [&#128279;](#suspending-inheritance-from-page-properties) opgeschort **hervat** actie in de toolbar van de paginaeigenschappen wordt:
 
 ![ Hervatten ](assets/chlimage_1-229.png)
 
@@ -551,7 +551,7 @@ Het opnieuw instellen beïnvloedt de wijzigingen die u hebt aangebracht in pagin
 #### Een actieve pagina voor kopiëren herstellen vanuit de pagina-eigenschappen {#reset-a-live-copy-page-from-the-page-properties}
 
 1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en selecteer **Eigenschappen van de Mening**.
-1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Open het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. Selecteer **Terugstellen** van de toolbar.
 
    ![ Terugstellen ](assets/chlimage_1-233.png)
@@ -564,7 +564,7 @@ De [ actie van het Terugstellen is ook beschikbaar bij het Levende Overzicht van
 
 1. Open het [ Levende Overzicht van het Exemplaar ](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Levende Pagina van het Exemplaar.
 1. Selecteer **Terugstellen** van de toolbar.
-1. Bevestig de **1} actie van het Terugstellen {in de** Levende dialoog van het Exemplaar van het Terugstellen **:**
+1. Bevestig de **1&rbrace; actie van het Terugstellen &lbrace;in de** Levende dialoog van het Exemplaar van het Terugstellen **:**
 
    ![ Bevestig Terugstellen ](assets/chlimage_1-234.png)
 
@@ -626,14 +626,14 @@ Er zijn implicaties op waar binnen de boom die u **gebruikt losmaken**:
 
   >[!NOTE]
   >
-  >Zie {de Conflicten van de Uitvoer MSM ](/help/sites-administering/msm-rollout-conflicts.md) voor details van dergelijke situaties.[
+  >Zie &lbrace;de Conflicten van de Uitvoer MSM [&#128279;](/help/sites-administering/msm-rollout-conflicts.md) voor details van dergelijke situaties.
 
 ### Een actieve pagina voor kopiëren loskoppelen van de pagina-eigenschappen {#detach-a-live-copy-page-from-the-page-properties}
 
 Een actieve kopie loskoppelen:
 
 1. In de **console van Plaatsen**, selecteer de levende exemplaarpagina en klik **Eigenschappen van de Mening**.
-1. Open het **Levende 1} lusje van het Exemplaar {.**
+1. Open het **Levende 1&rbrace; lusje van het Exemplaar &lbrace;.**
 1. Voor de toolbar, uitgezochte **maak** los.
 
    ![ losmaken ](assets/chlimage_1-236.png)

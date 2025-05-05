@@ -78,7 +78,7 @@ Er zijn verschillende aspecten om een pagina te zoeken. U kunt navigeren en/of z
 
    ![ qgtap-01 ](assets/qgtap-01.png)
 
-1. U kunt [ ](/help/sites-authoring/search.md) voor een pagina ook zoeken. U kunt de pagina selecteren in de weergegeven resultaten.
+1. U kunt [&#128279;](/help/sites-authoring/search.md) voor een pagina ook zoeken. U kunt de pagina selecteren in de weergegeven resultaten.
 
    ![ qgtap-03 ](assets/qgtap-03.png)
 
@@ -165,20 +165,20 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
    * [De eigenschappen van een bestaande component configureren](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Open de componentwerkbalk met een van de twee klikken. Gebruik **vormen** (moersleutel) pictogram {om de dialoog te openen.
+      * Open de componentwerkbalk met een van de twee klikken. Gebruik **vormen** (moersleutel) pictogram &lbrace;om de dialoog te openen.
 
    * [ Beweeg een component ](/help/sites-authoring/editing-content.md#moving-a-component) of:
 
       * Sleep de vereiste component naar de nieuwe locatie.
-      * Open de componentwerkbalk met een van de twee klikken. Gebruik **besnoeiing** toen **** pictogrammen van het Deeg waar nodig.
+      * Open de componentwerkbalk met een van de twee klikken. Gebruik **besnoeiing** toen **&#x200B;**&#x200B;pictogrammen van het Deeg waar nodig.
 
    * [ Exemplaar (en Deeg) ](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component:
 
-      * Open de componentwerkbalk met een van de twee klikken. Gebruik **toen** **pictogrammen van het Exemplaar** {van het Deeg zoals vereist.
+      * Open de componentwerkbalk met een van de twee klikken. Gebruik **toen** **pictogrammen van het Exemplaar** &lbrace;van het Deeg zoals vereist.
 
    >[!NOTE]
    >
-   >U kunt **componenten van 0} Deeg {aan of de zelfde pagina, of een verschillende pagina.** Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet de pagina worden vernieuwd.
+   >U kunt **componenten van 0&rbrace; Deeg &lbrace;aan of de zelfde pagina, of een verschillende pagina.** Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet de pagina worden vernieuwd.
 
    * [ Schrap ](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component:
 

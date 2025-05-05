@@ -212,7 +212,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
       * type: `String[]`
       * waarde: een lijst met onderliggende knooppunten (zoals gedefinieerd in `/libs`) die moeten worden verborgen of genegeerd
 
-      Jokerteken&amp;ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
+      Jokerteken&ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
 
 * **opnieuw ordenen knopen**
 

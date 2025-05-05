@@ -21,7 +21,7 @@ Wanneer het ontwerpen van Web-pagina&#39;s en het toevoegen van inhoud aan de pa
 
 Om deze eigenschappen te vormen en aan te passen, [ vormen de stoppen RTE ](#configure-the-plugin-features) voor de component. Met de insteekmodule `paraformat` kunt u bijvoorbeeld extra semantische elementen op blokniveau toevoegen, zoals het uitbreiden van het aantal kopniveaus dat wordt ondersteund buiten de standaard `H1` , `H2` en `H3` geboden.
 
-RTE is beschikbaar in een verscheidenheid van componenten voor aanraking-toegelaten gebruikersinterface en het Klassieke gebruikersinterface. Nochtans, is de primaire component om RTE te gebruiken de **** component van de Tekst die voor beide interfaces beschikbaar is. De volgende afbeeldingen tonen de RTE met een bereik van ingeschakelde plug-ins, waaronder `paraformat` :
+RTE is beschikbaar in een verscheidenheid van componenten voor aanraking-toegelaten gebruikersinterface en het Klassieke gebruikersinterface. Nochtans, is de primaire component om RTE te gebruiken de **&#x200B;**&#x200B;component van de Tekst die voor beide interfaces beschikbaar is. De volgende afbeeldingen tonen de RTE met een bereik van ingeschakelde plug-ins, waaronder `paraformat` :
 
 ![ component van de Tekst (RTE) op volledig-scherm-wijze in aanraking-toegelaten UI.](assets/chlimage_1-206.png)
 
@@ -70,7 +70,7 @@ In sommige gevallen, zullen de inhoudsauteurs het noodzakelijk vinden om de HTML
 
 ## Ondersteuning toevoegen voor meer HTML-elementen en -kenmerken {#add-support-for-more-html-elements-and-attributes}
 
-Om de toegankelijkheidseigenschappen van AEM verder uit te breiden, is het mogelijk om de bestaande componenten uit te breiden die op RTE (zoals de **Tekst** en **3} componenten van de Lijst) met extra elementen en attributen worden gebaseerd.**
+Om de toegankelijkheidseigenschappen van AEM verder uit te breiden, is het mogelijk om de bestaande componenten uit te breiden die op RTE (zoals de **Tekst** en **3&rbrace; componenten van de Lijst) met extra elementen en attributen worden gebaseerd.**
 
 De volgende procedure illustreert hoe te om de **component van de Lijst** met a **het element van de Titel** uit te breiden dat informatie over een gegevenslijst aan hulptechnologiegebruikers verstrekt:
 

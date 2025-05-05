@@ -30,7 +30,7 @@ In AEM moeten beheerders en ontwikkelaars eerst de omgeving voorbereiden, zodat 
 
 [ AEM beheerders ](#administrator) worden vereist om een verbinding tussen AEM Mobile en de Cloud Service van Adobe Target te vestigen.
 
-Ondertussen, moeten de ontwikkelaars van AEM Mobile ](#developer) hun bestaande manuscripten uitgeven om gerichte inhoud het schrijven te vergemakkelijken.[
+Ondertussen, moeten de ontwikkelaars van AEM Mobile [&#128279;](#developer) hun bestaande manuscripten uitgeven om gerichte inhoud het schrijven te vergemakkelijken.
 
 ## Voor beheerders {#for-administrators}
 

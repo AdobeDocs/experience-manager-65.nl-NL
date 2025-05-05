@@ -47,7 +47,7 @@ Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het beva
 >
 >* [ Reguliere uitdrukkingen ](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [ Gebied groeperen ](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
->* [ het Van een poot {](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+>* [ het Van een poot &lbrace;](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
 Voer het onderzoek uit door **Onderzoek** bij de bodem van de ruit te klikken. Klik **Terugstellen** om de onderzoekscriteria te ontruimen.
@@ -63,7 +63,7 @@ Op verschillende locaties kan een filter worden ingesteld (en gewist) om de weer
 In de **console van Websites** a **vindt &amp; vervangt** menuoptie laat u naar, en vervangt veelvoudige instanties van een koord, binnen een sectie van de website zoeken.
 
 1. Selecteer de hoofdpagina, of map, waar de zoek- en vervangactie moet plaatsvinden.
-1. Selecteer **toen de Hulpmiddelen van 0}** Vondst &amp; vervangt **:**
+1. Selecteer **toen de Hulpmiddelen van 0&rbrace;** Vondst &amp; vervangt **:**
 
    ![ screen_shot_2012-02-15at120346pm ](assets/screen_shot_2012-02-15at120346pm.png)
 

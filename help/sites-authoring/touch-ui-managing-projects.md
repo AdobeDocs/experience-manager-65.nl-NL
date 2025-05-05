@@ -108,7 +108,7 @@ Assets wordt in de trein weergegeven. Gebruik de spoorkiezer om terug te keren n
 
 ### Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-Om tussen uw actieve en [ inactieve projecten van een knevel te voorzien, ](#making-projects-inactive-or-active) in de **console van Projecten**, klik het **** pictogram van de Wisselen Actieve Projecten {in de toolbar.
+Om tussen uw actieve en [ inactieve projecten van een knevel te voorzien, ](#making-projects-inactive-or-active) in de **console van Projecten**, klik het **&#x200B;**&#x200B;pictogram van de Wisselen Actieve Projecten &lbrace;in de toolbar.
 
 ![ Wissel actieve projectenpictogram ](assets/projects-toggle-active.png)
 
@@ -140,7 +140,7 @@ Voer de volgende stappen uit om een project inactief te maken.
 
 1. Open het **venster van de Eigenschappen van het Project** van het project.
    * U kunt dit van de console doen door het project of van binnen het project via de **Info van het Project** tegel te selecteren.
-1. In het **venster van de Eigenschappen van het 0} Project {, verander de** 3} schuif van de Status van het Project {van **Actieve** aan **Inactief**.****
+1. In het **venster van de Eigenschappen van het 0&rbrace; Project {, verander de** 3} schuif van de Status van het Project &lbrace;van **Actieve** aan **Inactief**.**&#x200B;**
 
    ![ de statusselecteur van het Project in eigenschappen venster ](assets/project-status.png)
 

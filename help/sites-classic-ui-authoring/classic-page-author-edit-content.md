@@ -73,7 +73,7 @@ Een nieuwe component invoegen:
 
 1. Er zijn verschillende methoden om het type alinea te selecteren dat u wilt invoegen:
 
-   * Dubbelklik het gebied geëtiketteerd **componenten of activa van de Belemmering hier..** - de **Nieuwe 3} toolbar van de Component van het Tussenvoegsel {opent.** Selecteer een component en klik **OK**.
+   * Dubbelklik het gebied geëtiketteerd **componenten of activa van de Belemmering hier..** - de **Nieuwe 3&rbrace; toolbar van de Component van het Tussenvoegsel &lbrace;opent.** Selecteer een component en klik **OK**.
 
    * Sleep een component van de zwevende werkbalk (sidekick genoemd) om een nieuwe alinea in te voegen.
    * Klik met de rechtermuisknop op een bestaande alinea en selecteer **Nieuw..** - de werkbalk Nieuwe component invoegen wordt geopend. Selecteer een component en klik **OK**.
@@ -242,7 +242,7 @@ Een pagina vergrendelen:
 
    ![ screen_shot_2012-02-08at15750pm ](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien in de juiste ruit van de **** console Websites, AEM WCM toont de pagina als gesloten en wijst op welke gebruiker de pagina heeft gesloten.
+   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien in de juiste ruit van de **&#x200B;**&#x200B;console Websites, AEM WCM toont de pagina als gesloten en wijst op welke gebruiker de pagina heeft gesloten.
 
    ![ screen_shot_2012-02-08at20657pm ](assets/screen_shot_2012-02-08at20657pm.png)
 

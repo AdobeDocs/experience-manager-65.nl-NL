@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # SAML 2.0-verificatiehandler{#saml-authentication-handler}
 
-AEM schepen met a [ SAML ](https://saml.xml.org/saml-specifications) authentificatiemanager. Deze manager steunt het ](https://saml.xml.org/saml-specifications) 2.0 Protocol van het Verzoek van de Authentificatie van 0} SAML {(Web-SSO profiel) gebruikend de `HTTP POST` band.[
+AEM schepen met a [ SAML ](https://saml.xml.org/saml-specifications) authentificatiemanager. Deze manager steunt het [&#128279;](https://saml.xml.org/saml-specifications) 2.0 Protocol van het Verzoek van de Authentificatie van 0&rbrace; SAML &lbrace;(Web-SSO profiel) gebruikend de `HTTP POST` band.
 
 Het steunt:
 
@@ -51,7 +51,7 @@ De [ console van het Web ](/help/sites-deploying/configuring-osgi.md) verleent t
 
 **weg van de Weg** Bewaarplaats waarvoor deze authentificatiemanager door het Sling zou moeten worden gebruikt. Als dit leeg is, zal de authentificatiemanager worden onbruikbaar gemaakt.
 
-**OSGi van het Kader van de Dienst Rangschikkende waarde van de Dienst van 0} de Dienst { om op de orde te wijzen waarin om deze dienst te roepen.** Dit is een geheel getal waarbij hogere waarden een hogere prioriteit aangeven.
+**OSGi van het Kader van de Dienst Rangschikkende waarde van de Dienst van 0&rbrace; de Dienst &lbrace; om op de orde te wijzen waarin om deze dienst te roepen.** Dit is een geheel getal waarbij hogere waarden een hogere prioriteit aangeven.
 
 **Alias van het Certificaat IDP** De alias van het certificaat IdP in globale truststore. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld. Zie het hoofdstuk &quot;Add the IdP Certificate to the AEM TrustStore&quot; hieronder over hoe u het instelt.
 

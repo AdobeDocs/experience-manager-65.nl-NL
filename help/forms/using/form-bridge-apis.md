@@ -88,7 +88,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
       * **widgetConfig:** staat de gebruiker toe om het gebrek widgets in de vorm met douanewidgets met voeten te treden. De configuratie wordt als volgt overschreven:
 
-        *formBridge.registerConfig (&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig (&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
 
       * **pagingConfig:** staat de gebruiker toe om het standaardgedrag met voeten te treden om slechts de eerste pagina terug te geven. De configuratie wordt als volgt overschreven:
 

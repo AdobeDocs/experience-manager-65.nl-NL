@@ -300,7 +300,7 @@ Deze informatie wordt gebruikt voor het tonen van de vooruitgang van een werksch
 
 ### Stap in paginaproces activeren {#activate-page-process-step}
 
-De **activeer 1} stap van het Proces van de Pagina {zal pagina&#39;s voor u activeren, maar het zal automatisch om het even welke referenced activa van DAM niet vinden en zal die ook activeren.**
+De **activeer 1&rbrace; stap van het Proces van de Pagina &lbrace;zal pagina&#39;s voor u activeren, maar het zal automatisch om het even welke referenced activa van DAM niet vinden en zal die ook activeren.**
 
 Dit is iets om in mening te houden als u deze stap als deel van een werkschemamodel wilt gebruiken.
 

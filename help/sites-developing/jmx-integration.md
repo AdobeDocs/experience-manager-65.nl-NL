@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Maak en implementeer MBans om services te beheren met de JMX-console. Stel de dienstattributen en verrichtingen bloot om beleidstaken toe te laten om worden uitgevoerd.
 
-Voor informatie over het gebruiken van de Console JMX, zie {de Middelen van de Server van 0} Controle die de Console JMX ](/help/sites-administering/jmx-console.md) gebruiken.[
+Voor informatie over het gebruiken van de Console JMX, zie {de Middelen van de Server van 0} Controle die de Console JMX [&#128279;](/help/sites-administering/jmx-console.md) gebruiken.
 
 ## JMX Framework in Felix en CQ5 {#the-jmx-framework-in-felix-and-cq}
 
@@ -38,7 +38,7 @@ Naast het bepalen van de beheersinterface, bepaalt de interface ook de OSGi de d
 
 ### Het gebruiken van Annotaties om Informatie MBean te verstrekken {#using-annotations-to-provide-mbean-information}
 
-Het {](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) pakket 0} com.adobe.granite.jmx.annotation verstrekt verscheidene annotaties en klassen voor het gemakkelijk verstrekken van meta-gegevens MBean aan de console JMX. [ Gebruik deze annotaties en klassen in plaats van rechtstreeks informatie toe te voegen aan het MBean-object MBeanInfo.
+Het {[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) pakket 0} com.adobe.granite.jmx.annotation verstrekt verscheidene annotaties en klassen voor het gemakkelijk verstrekken van meta-gegevens MBean aan de console JMX.  Gebruik deze annotaties en klassen in plaats van rechtstreeks informatie toe te voegen aan het MBean-object MBeanInfo.
 
 **Annotaties**
 

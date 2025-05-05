@@ -53,7 +53,7 @@ Wanneer u met middelen in deze oplossing werkt, doet u één van het volgende:
 * Upload activa direct aan Dynamic Media Classic en dan toegang als **Dynamic Media Classic** inhoudsbrowser voor paginaontwerp of
 * Upload aan Experience Manager Assets en laat dan automatisch het publiceren aan Dynamic Media Classic toe; u hebt toegang via **Assets** inhoudbrowser voor paginaontwerp
 
-De componenten u voor deze integratie gebruikt worden gevonden in het **** componentengebied van Dynamic Media Classic op [ wijze van het Ontwerp ](/help/sites-authoring/author-environment-tools.md#page-modes).
+De componenten u voor deze integratie gebruikt worden gevonden in het **&#x200B;**&#x200B;componentengebied van Dynamic Media Classic op [ wijze van het Ontwerp ](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -394,7 +394,7 @@ Wanneer een element aan Experience Manager Assets wordt toegevoegd, wordt het au
 
    ![ screen_shot_2018-03-15at52501pm ](assets/screen_shot_2018-03-15at52501pm.jpg)
 
-1. Navigeer terug naar de welkomstpagina van de Experience Manager en selecteer **[!UICONTROL Workflows]** . Dubbelklik het **werkschema van de Activa van de Update van 0} DAM {zodat opent het.**
+1. Navigeer terug naar de welkomstpagina van de Experience Manager en selecteer **[!UICONTROL Workflows]** . Dubbelklik het **werkschema van de Activa van de Update van 0&rbrace; DAM &lbrace;zodat opent het.**
 1. Navigeer in de assistent naar de **[!UICONTROL Workflow]** -componenten en selecteer **[!UICONTROL Dynamic Media Classic]** . Sleep **[!UICONTROL Dynamic Media Classic]** naar de workflow en selecteer **[!UICONTROL Save]** . Assets die in de doelmap aan Experience Manager Assets is toegevoegd, wordt automatisch naar Dynamic Media Classic geüpload.
 
    ![ chlimage_1-301 ](assets/chlimage_1-301.png)
@@ -454,7 +454,7 @@ Houd rekening met de volgende beperkingen als u deze functie gebruikt:
 1. Selecteer de tab **[!UICONTROL Advanced]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Enable Secure View]** de optie **[!UICONTROL Upon AEM Publish Activation]** om elementen naar Dynamic Media Classic te verplaatsen zonder ze te publiceren. (Deze waarde wordt standaard ingesteld op **[!UICONTROL Immediately]** , waarbij Dynamic Media Classic-elementen direct worden gepubliceerd.)
 
-   Zie {de documentatie van 0} Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) voor meer informatie over het testen van activa alvorens hen openbaar te maken.[
+   Zie {de documentatie van 0} Dynamic Media Classic [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) voor meer informatie over het testen van activa alvorens hen openbaar te maken.
 
    ![ chlimage_1-302 ](assets/chlimage_1-302.png)
 

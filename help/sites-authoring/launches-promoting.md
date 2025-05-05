@@ -96,7 +96,7 @@ U kunt lanceringen van of de **console van Plaatsen** of de **console van Lancer
 
 ## Starten van pagina&#39;s tijdens bewerken bevorderen {#promoting-launch-pages-when-editing}
 
-Wanneer u een lanceringspagina uitgeeft, **bevordert de 1} actie van de Lancering {ook beschikbaar bij** Informatie van de Pagina **.** Hierdoor wordt de wizard geopend die de benodigde informatie verzamelt.
+Wanneer u een lanceringspagina uitgeeft, **bevordert de 1&rbrace; actie van de Lancering &lbrace;ook beschikbaar bij** Informatie van de Pagina **.** Hierdoor wordt de wizard geopend die de benodigde informatie verzamelt.
 
 ![ bevorderen Lanceer ](assets/chlimage_1-103.png)
 
@@ -110,7 +110,7 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de b
 
 ![ Overzicht van het bevorderen van een genestelde lancering ](assets/chlimage_1-104.png)
 
-1. Zoals met [ Creërend een Genestelde Lancering ](#creatinganestedlaunchlaunchwithinalaunch), navigeer aan en selecteer de vereiste lancering in of de **3} console van Lanceringen {of het** spoor van Verwijzingen **.**
+1. Zoals met [ Creërend een Genestelde Lancering ](#creatinganestedlaunchlaunchwithinalaunch), navigeer aan en selecteer de vereiste lancering in of de **3&rbrace; console van Lanceringen &lbrace;of het** spoor van Verwijzingen **.**
 1. Selecteer **Bevorderen lancering** om de tovenaar te openen.
 
 1. Voer de vereiste gegevens in:

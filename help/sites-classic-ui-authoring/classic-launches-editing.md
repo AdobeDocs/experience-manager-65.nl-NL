@@ -62,6 +62,6 @@ Wanneer u een lancering van een pagina uitgeeft, verschijnt de informatie over d
 * De naam van de opstart.
 * De tijd sinds de laatste wijziging.
 * De gebruiker die de laatste wijziging heeft uitgevoerd.
-* De status van de **Klaar 1} vlag van de Productie {(orange=niet plaats; green=set).**
+* De status van de **Klaar 1&rbrace; vlag van de Productie &lbrace;(orange=niet plaats; green=set).**
 
 ![ chlimage_1-186 ](assets/chlimage_1-186.png)

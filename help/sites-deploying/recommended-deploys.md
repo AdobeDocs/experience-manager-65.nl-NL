@@ -127,7 +127,7 @@ De voordelen:
 
 >[!NOTE]
 >
->Voor extra informatie over de architecturale concepten MongoDB die in deze sectie worden beschreven, zie {de Replicatie van 0} MongoDB ](https://docs.mongodb.org/manual/replication/).[
+>Voor extra informatie over de architecturale concepten MongoDB die in deze sectie worden beschreven, zie {de Replicatie van 0} MongoDB [&#128279;](https://docs.mongodb.org/manual/replication/).
 
 ## Microkorrels: één voor gebruik {#microkernels-which-one-to-use}
 
@@ -190,7 +190,7 @@ Een reeks eerste vereisten en aanbevelingen is beschikbaar als u een plaatsing M
 
 >[!NOTE]
 >
->Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren {de Zorg van de Klant van de Adobe 0} ](https://helpx.adobe.com/marketing-cloud/contact-support.html).[
+>Voor alle extra vragen over deze richtlijnen, eerste vereisten, en aanbevelingen contacteren {de Zorg van de Klant van de Adobe 0} [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 ### Overwegingen voor AEM Communities {#considerations-for-aem-communities}
 

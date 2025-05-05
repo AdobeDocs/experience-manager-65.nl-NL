@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Interactieve communicatie configuratieeigenschappen{#interactive-communications-configuration-properties}
 
-De interactieve Mededelingen omvat eigenschappen die automatisch na het installeren van het [ toe:voegen-op ](../../forms/using/installing-configuring-aem-forms-osgi.md) pakket van AEM Forms worden gevormd. De interactieve auteurs van de Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend de **pagina van de Configuratie van de Console van het Web 0} Adobe Experience Manager.**
+De interactieve Mededelingen omvat eigenschappen die automatisch na het installeren van het [ toe:voegen-op ](../../forms/using/installing-configuring-aem-forms-osgi.md) pakket van AEM Forms worden gevormd. De interactieve auteurs van de Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend de **pagina van de Configuratie van de Console van het Web 0&rbrace; Adobe Experience Manager.**
 
 Open de **pagina van de Configuratie van de Console van het Web van Adobe Experience Manager** gebruikend volgende URL:
 
@@ -123,7 +123,7 @@ Selecteer **de AanpassingsVorm en Interactieve Configuratie van het Kanaal van d
 
 ## Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Selecteer **de Adaptieve Configuratie van het Thema van de Vorm en Interactieve Communicatie van het Web van het Kanaal van de Vorm** {op de **pagina van de Configuratie van de Console van Adobe Experience Manager** om de configuratieeigenschappen voor Adaptieve Forms en Interactieve Communicatie de kanaalthema&#39;s van het Web te bekijken.
+Selecteer **de Adaptieve Configuratie van het Thema van de Vorm en Interactieve Communicatie van het Web van het Kanaal van de Vorm** &lbrace;op de **pagina van de Configuratie van de Console van Adobe Experience Manager** om de configuratieeigenschappen voor Adaptieve Forms en Interactieve Communicatie de kanaalthema&#39;s van het Web te bekijken.
 
 <table>
  <tbody> 

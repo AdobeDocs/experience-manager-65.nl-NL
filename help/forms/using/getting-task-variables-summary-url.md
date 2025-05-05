@@ -21,7 +21,7 @@ Op de overzichtspagina wordt informatie over taken weergegeven. In dit artikel w
 
 In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofaanvraag in. Het aanvraagformulier gaat vervolgens ter goedkeuring naar de manager van de werknemer.
 
-1. Creeer een HTML van de steekproef renderer (html.esp) voor _0} Werknemers/PtoApplication **.**
+1. Creeer een HTML van de steekproef renderer (html.esp) voor _0&rbrace; Werknemers/PtoApplication **.**
 
    De renderer gaat ervan uit dat de volgende eigenschappen op het knooppunt moeten worden ingesteld:
 
@@ -70,7 +70,7 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
 
       Ook, voeg a **sling toe:resourceType** sleutel met waarde **Werknemers/PtoApplication** in de kaart.
 
-   1. Gebruik subprocess **storeContent** van de **** dienst ContentRepositoryConnector in **creeer PTO summiere** proces. Dit subproces maakt een CRX-knooppunt.
+   1. Gebruik subprocess **storeContent** van de **&#x200B;**&#x200B;dienst ContentRepositoryConnector in **creeer PTO summiere** proces. Dit subproces maakt een CRX-knooppunt.
 
       Er zijn drie invoervariabelen voor nodig:
 

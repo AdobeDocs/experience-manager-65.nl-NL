@@ -59,7 +59,7 @@ Een campagne maken:
 Zo creëert u ervaringen voor segmenten:
 
 1. Open de **pagina van de Campagne** u creeerde.
-1. Creeer ervaringen voor uw segmenten door **te klikken creëren Pagina** en een titel voor uw pagina in te gaan, bijvoorbeeld, Male aangezien u een ervaring voor het Mannelijke segment creeert, en selecteer het **3} malplaatje van de Ervaring {.**
+1. Creeer ervaringen voor uw segmenten door **te klikken creëren Pagina** en een titel voor uw pagina in te gaan, bijvoorbeeld, Male aangezien u een ervaring voor het Mannelijke segment creeert, en selecteer het **3&rbrace; malplaatje van de Ervaring &lbrace;.**
 1. Open de pagina voor het maken van ervaring.
 1. Klik **uitgeven**, dan onder Segmenten klikt **Punt** toevoegen.
 1. Ga de weg aan het mannelijke segment in, bijvoorbeeld, `/etc/segmentation/ac-segments/male` en klik **O.K.**. Het volgende bericht zou moeten verschijnen: *de Ervaring wordt gericht op: Mannelijk*

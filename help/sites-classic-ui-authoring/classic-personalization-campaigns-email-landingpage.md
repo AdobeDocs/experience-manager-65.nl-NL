@@ -65,7 +65,7 @@ In het volgende voorbeeld wordt een formulier gemaakt op https://localhost:4502/
 
 ### Een pagina voor bedankt maken {#creating-a-thank-you-page}
 
-Wanneer de gebruikers **** klikken nu abonneren, wilt u bedankt u pagina om automatisch te openen. Maak de pagina Bedankt op de pagina Geometrixx Newsletter. Nadat u het nieuwsbrief formulier hebt gemaakt, bewerkt u de component Formulier en voegt u het pad toe aan de pagina Hartelijk dank.
+Wanneer de gebruikers **&#x200B;**&#x200B;klikken nu abonneren, wilt u bedankt u pagina om automatisch te openen. Maak de pagina Bedankt op de pagina Geometrixx Newsletter. Nadat u het nieuwsbrief formulier hebt gemaakt, bewerkt u de component Formulier en voegt u het pad toe aan de pagina Hartelijk dank.
 
 Het voorleggen van het verzoek neemt de gebruiker aan a **Dank u** pagina waarna zij een e-mail zullen ontvangen. Deze pagina Bedankt is gemaakt op /content/geometrixx/nl/toolbar/nieuwsbrief/bedankje.
 

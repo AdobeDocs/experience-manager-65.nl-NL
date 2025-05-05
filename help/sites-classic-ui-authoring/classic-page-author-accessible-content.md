@@ -83,13 +83,13 @@ Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstue
 
 #### Ontmoeten - Niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
-Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode wordt gedaan op het **gebied van de Tekst van 0} Alt {:**
+Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode wordt gedaan op het **gebied van de Tekst van 0&rbrace; Alt &lbrace;:**
 
 >[!NOTE]
 >
 >Sommige standaardcomponenten, zoals **Carrousel** en **Diapresentatie**, bieden geen manier om alternatieve tekstbeschrijvingen aan afbeeldingen toe te voegen. Wanneer het uitvoeren van versies van deze componenten voor uw AEM instantie, zou uw ontwikkelingsteam dergelijke componenten moeten vormen om het `alt` attribuut te steunen. Dit zorgt ervoor dat de auteurs het aan de inhoud (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)) kunnen toevoegen.
 
-Het **gebied van de Tekst van 0} Alt {is beschikbaar in het** Geavanceerde **beeldeigenschappen lusje van de** de componentendialoog van het Beeld **:**
+Het **gebied van de Tekst van 0&rbrace; Alt &lbrace;is beschikbaar in het** Geavanceerde **beeldeigenschappen lusje van de** de componentendialoog van het Beeld **:**
 
 ![ geeft dialoog van de component van het Beeld in klassieke UI uit; toont het gebied van de Tekst van Alt.](assets/chlimage_1-17a.png)
 
@@ -97,15 +97,15 @@ AEM voegt een **Tekst van Alt** aan uw beelden door gebrek toe. Voor klassieke U
 
 * Bestand:
 
-  Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een beeldcomponent aan een pagina toevoegt en dan een beeld van uw harde aandrijving, of een andere bron kiest, is de standaardwaarde voor **de Tekst van Alt** `file`. Deze waarde moet op het **Geavanceerde** beeld eigenschappen tabel worden veranderd. Nogmaals, wordt deze waarde niet getoond op het **** gebied van de Tekst van Alt, maar wanneer de waarde wordt veranderd, wordt de nieuwe waarde getoond op het gebied.
+  Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een beeldcomponent aan een pagina toevoegt en dan een beeld van uw harde aandrijving, of een andere bron kiest, is de standaardwaarde voor **de Tekst van Alt** `file`. Deze waarde moet op het **Geavanceerde** beeld eigenschappen tabel worden veranderd. Nogmaals, wordt deze waarde niet getoond op het **&#x200B;**&#x200B;gebied van de Tekst van Alt, maar wanneer de waarde wordt veranderd, wordt de nieuwe waarde getoond op het gebied.
 
 * Element:
 
-  Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een beeld van de digitale activabewaarplaats aan een Web-pagina sleept, dan worden de **Titel** en **de 3} waarden van de Tekst van Alt {voor dat beeld genomen van de meta-gegevens voor dat beeld.**
+  Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een beeld van de digitale activabewaarplaats aan een Web-pagina sleept, dan worden de **Titel** en **de 3&rbrace; waarden van de Tekst van Alt &lbrace;voor dat beeld genomen van de meta-gegevens voor dat beeld.**
 
 >[!NOTE]
 >
->In beide bovengenoemde scenario&#39;s, is de standaard **waarde van de Tekst van 0} Alt {niet zichtbaar in de** Geavanceerde Eigenschappen van het Beeld **tabel.** Om de standaardwaarde te veranderen, ga eenvoudig een nieuwe waarde op het **Gebied van de Tekst van Alt** in.
+>In beide bovengenoemde scenario&#39;s, is de standaard **waarde van de Tekst van 0&rbrace; Alt &lbrace;niet zichtbaar in de** Geavanceerde Eigenschappen van het Beeld **tabel.** Om de standaardwaarde te veranderen, ga eenvoudig een nieuwe waarde op het **Gebied van de Tekst van Alt** in.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * Grafieken en grafieken:
 
-  Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Indien noodzakelijk, ook verstrek een meer gedetailleerde beschrijving in tekst gebruikend het **1} gebied van de Beschrijving {op het** Geavanceerde **beeldeigenschappen tabel.** U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
+  Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Indien noodzakelijk, ook verstrek een meer gedetailleerde beschrijving in tekst gebruikend het **1&rbrace; gebied van de Beschrijving &lbrace;op het** Geavanceerde **beeldeigenschappen tabel.** U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
 
   ![ Voorbeeld van een grafiek. Hieronder is de beste benadering om een alternatief te verstrekken.](assets/chlimage_1-2a.jpeg)
 
@@ -156,11 +156,11 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
   >
   >Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Gebruik de **component van het Beeld**, eerder dan de `img src` hierboven gebruikte verwijzing.
 
-  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3} gebieden van de Beschrijving in de de configuratiedialoog van het beeld - zoals in [ gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) ](#how-to-meet-non-text-content) ontmoeten.**
+  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3&rbrace; gebieden van de Beschrijving in de de configuratiedialoog van het beeld - zoals in [ gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) ](#how-to-meet-non-text-content) ontmoeten.**
 
 * Kaarten, diagrammen, stroomdiagrammen:
 
-  Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten, die een volledig tekstequivalent verstrekken zal waarschijnlijk onpraktisch zijn, maar als de kaart als manier wordt verstrekt om mensen te helpen hun manier aan een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding *Kaart van X* kort wijzen, dan richtingen aan die plaats elders in de pagina of door het **3} gebied van de Beschrijving in het** Geavanceerde **lusje van de** component verstrekken **.**
+  Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten, die een volledig tekstequivalent verstrekken zal waarschijnlijk onpraktisch zijn, maar als de kaart als manier wordt verstrekt om mensen te helpen hun manier aan een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding *Kaart van X* kort wijzen, dan richtingen aan die plaats elders in de pagina of door het **3&rbrace; gebied van de Beschrijving in het** Geavanceerde **lusje van de** component verstrekken **.**
 
 * CAPTCHA&#39;s:
 
@@ -409,9 +409,9 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
   >RTE in een standaard AEM installatie is opstelling aan gebruik:
   >
   >* &lt;b> for &lt;strong>
-  * &lt;i> voor &lt;em>
+  >* &lt;i> voor &lt;em>
   >
-  Ze zijn in feite hetzelfde, maar &lt;strong> en &lt;em> hebben de voorkeur omdat ze semantisch correct html zijn. Uw ontwikkelingsteam kan RTE vormen om &lt;strong> en &lt;em> (in plaats van &lt;b> en &lt;i>) te gebruiken wanneer het ontwikkelen van uw projectinstantie.
+  >Ze zijn in feite hetzelfde, maar &lt;strong> en &lt;em> hebben de voorkeur omdat ze semantisch correct html zijn. Uw ontwikkelingsteam kan RTE vormen om &lt;strong> en &lt;em> (in plaats van &lt;b> en &lt;i>) te gebruiken wanneer het ontwikkelen van uw projectinstantie.
 
 * **Lijsten gebruiken:** Met HTML kunt u drie verschillende typen lijsten opgeven:
 
@@ -427,7 +427,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  Het element `<dl>` wordt niet ondersteund door de RTE.
+  >Het element `<dl>` wordt niet ondersteund door de RTE.
 
 * **de lijsten van het Gebruik**:
 
@@ -440,7 +440,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  De lijsten zouden met de **component van de Lijst** moeten worden gerealiseerd. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
+  >De lijsten zouden met de **component van de Lijst** moeten worden gerealiseerd. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
 
   Toegankelijke tabellen gebruiken ook de volgende elementen en kenmerken:
 
@@ -450,7 +450,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in het **de dialoogvakje van de Eigenschappen van de Lijst toe te voegen** (zie [ Toevoegend Steun voor Extra Elementen en Attributen van de HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in het **de dialoogvakje van de Eigenschappen van de Lijst toe te voegen** (zie [ Toevoegend Steun voor Extra Elementen en Attributen van de HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   Wanneer het toevoegen van a **Lijst**, kunt u **eigenschappen van de Lijst** vormen gebruikend de dialoog.
 
@@ -469,11 +469,11 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  Het kenmerk id is niet beschikbaar in een installatie buiten de box. Het kan worden toegelaten door de regels van HTML en serializer in RTE te vormen.
+  >Het kenmerk id is niet beschikbaar in een installatie buiten de box. Het kan worden toegelaten door de regels van HTML en serializer in RTE te vormen.
 
   >[!NOTE]
   >
-  De lijsten zouden met de **component van de Lijst** moeten worden gerealiseerd. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
+  >De lijsten zouden met de **component van de Lijst** moeten worden gerealiseerd. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
 
   ```xml
   <table>
@@ -506,7 +506,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  Deze functionaliteit is niet onmiddellijk beschikbaar in een standaardinstallatie. Het vereist configuratie van RTE; de regels van HTML en serializer.
+  >Deze functionaliteit is niet onmiddellijk beschikbaar in een standaardinstallatie. Het vereist configuratie van RTE; de regels van HTML en serializer.
 
 #### Meer informatie - Informatie en relaties (1.3.1) {#more-information-info-and-relationships}
 
@@ -527,7 +527,7 @@ Ook informatie die onderscheid moet maken tussen verschillende geluiden (bijvoor
 
 >[!NOTE]
 >
-Voor vereisten met betrekking tot alternatieven aan kleur, zie [ Gebruik van Kleur ](#use-of-color).
+>Voor vereisten met betrekking tot alternatieven aan kleur, zie [ Gebruik van Kleur ](#use-of-color).
 
 #### Voldoen aan sensorische kenmerken (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -538,7 +538,7 @@ Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pag
 
 >[!NOTE]
 >
-Het gebruik van beschrijvende termen is aanvaardbaar als ze in een niet-visuele context zinvol worden geacht. Bijvoorbeeld, zou het gebruiken van *hierboven* en *hieronder* over het algemeen aanvaardbaar zijn, aangezien zij inhoud vóór en na een bepaald punt van inhoud impliceren. Het zou nog steeds zinvol zijn als de inhoud hardop wordt gesproken.
+>Het gebruik van beschrijvende termen is aanvaardbaar als ze in een niet-visuele context zinvol worden geacht. Bijvoorbeeld, zou het gebruiken van *hierboven* en *hieronder* over het algemeen aanvaardbaar zijn, aangezien zij inhoud vóór en na een bepaald punt van inhoud impliceren. Het zou nog steeds zinvol zijn als de inhoud hardop wordt gesproken.
 
 #### Meer informatie - Sensorische kenmerken (1.3.3) {#more-information-sensory-characteristics}
 
@@ -557,7 +557,7 @@ Het gebruik van beschrijvende termen is aanvaardbaar als ze in een niet-visuele 
 
 >[!NOTE]
 >
-Dit succescriterium richt zich specifiek op kleurwaarneming. Andere vormen van perceptie worden behandeld in [ Aangepast (1.3) ](#adaptable); met inbegrip van programmatic toegang tot kleur en andere visuele presentatiecodes.
+>Dit succescriterium richt zich specifiek op kleurwaarneming. Andere vormen van perceptie worden behandeld in [ Aangepast (1.3) ](#adaptable); met inbegrip van programmatic toegang tot kleur en andere visuele presentatiecodes.
 
 #### Doel - Gebruik van kleur (1.4.1) {#purpose-use-of-color}
 
@@ -621,7 +621,7 @@ Mensen met een bepaalde visuele handicap kunnen mogelijk geen onderscheid maken 
 
 >[!NOTE]
 >
-Tekst die uitsluitend voor decoratiedoeleinden wordt gebruikt, valt niet onder dit succescriterium.
+>Tekst die uitsluitend voor decoratiedoeleinden wordt gebruikt, valt niet onder dit succescriterium.
 
 #### Hoe kan ik-contrast (minimaal) (1.4.3) {#how-to-meet-contrast-minimum}
 
@@ -653,7 +653,7 @@ Als het niet mogelijk is om aan de aanbevolen contrastniveaus te voldoen, geef d
 
 >[!NOTE]
 >
-Logotypen (tekst die deel uitmaakt van een logo of merknaam) worden als essentieel beschouwd.
+>Logotypen (tekst die deel uitmaakt van een logo of merknaam) worden als essentieel beschouwd.
 
 #### Doel - Afbeeldingen van tekst (1.4.5) {#purpose-images-of-text}
 
@@ -726,7 +726,7 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 >[!NOTE]
 >
-Omdat inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (of deze nu wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [ Vereiste van de Conformiteit 5: Niet-interferentie ](https://www.w3.org/TR/WCAG20/#cc5).
+>Omdat inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (of deze nu wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [ Vereiste van de Conformiteit 5: Niet-interferentie ](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Doel - Drie Flash of onder de drempelwaarde (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -812,7 +812,7 @@ John Smith's publications
 
 >[!NOTE]
 >
-Het bovengenoemde fragment is een illustratie, wordt het geadviseerd om de **component van het Beeld** te gebruiken.
+>Het bovengenoemde fragment is een illustratie, wordt het geadviseerd om de **component van het Beeld** te gebruiken.
 
 Hoewel het raadzaam is om koppelingstekst te verstrekken die het doel van de verbinding zonder extra context identificeert, wordt erkend dat dit niet altijd mogelijk is. De vrij verbindingen van de context kunnen in de volgende gevallen worden gebruikt, waarvan de voorbeelden van HTML in [ worden gevonden hoe te om het Criterium 2.4.4 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
@@ -898,7 +898,7 @@ Het kenmerk `lang` kan worden gebruikt om wijzigingen in de taal van de inhoud t
 
 >[!NOTE]
 >
-Blockquotes worden niet ondersteund in een out-of-the-box-instantie. Een aangepaste component kan worden ontwikkeld ter ondersteuning van de functie.
+>Blockquotes worden niet ondersteund in een out-of-the-box-instantie. Een aangepaste component kan worden ontwikkeld ter ondersteuning van de functie.
 
 Op dezelfde manier kan de browser een ongewoon woord of ongebruikelijke woordgroep correct weergeven als het element `span` als volgt wordt gebruikt:
 
@@ -908,7 +908,7 @@ Op dezelfde manier kan de browser een ongewoon woord of ongebruikelijke woordgro
 
 >[!NOTE]
 >
-Het is niet noodzakelijk om dit succescriterium te volgen wanneer het omvatten van namen of steden in verschillende talen, of wanneer het gebruiken van leningswoorden of uitdrukkingen die algemeen in de standaardtaal (zoals *schadenfreude* in het Engels) zijn geworden.
+>Het is niet noodzakelijk om dit succescriterium te volgen wanneer het omvatten van namen of steden in verschillende talen, of wanneer het gebruiken van leningswoorden of uitdrukkingen die algemeen in de standaardtaal (zoals *schadenfreude* in het Engels) zijn geworden.
 
 Om het spanwijdtelement, met een aangewezen taal toe te voegen, kunt u uw prijsverhoging van de HTML op de bron uitgeven wijze van RTE zodat het zoals hierboven leest. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie [ Toevoegend Steun voor Extra Elementen en Attributen van de HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

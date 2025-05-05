@@ -47,4 +47,4 @@ Om de tokens te gebruiken, moet u het binaire getal HMAC aan alle instanties in 
 >
 >Als u het duidelijke geheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;ast toevoegt;**&quot;aan manifest om ervoor te zorgen het teken niet de symbolische generatievraag CSRF offline neemt. Voor meer informatie, raadpleeg deze [ verbinding ](https://www.w3.org/TR/offline-webapps/).
 >
-Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie de [ pagina van het Verzoek van de Versmeding van de Versmeding van de Departerie OWASP ](https://owasp.org/www-community/attacks/csrf).
+>Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie de [ pagina van het Verzoek van de Versmeding van de Versmeding van de Departerie OWASP ](https://owasp.org/www-community/attacks/csrf).

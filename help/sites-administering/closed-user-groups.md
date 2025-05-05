@@ -488,7 +488,7 @@ Zie ook de CUG-afbeelding documentatie voor een uitvoerige afbeelding van de con
 
 ### Autorisatie: Instellen en configureren {#authorization-setup-and-configuration}
 
-De nieuwe, op vergunning betrekking hebbende delen zijn bevat in de **** bundel van de Vergunning van de CUG van Oak ( `org.apache.jackrabbit.oak-authorization-cug`), die deel van de AEM standaardinstallatie uitmaakt. De bundel bepaalt een gescheiden vergunningsmodel dat wordt opgesteld als extra manier om gelezen toegang te beheren.
+De nieuwe, op vergunning betrekking hebbende delen zijn bevat in de **&#x200B;**&#x200B;bundel van de Vergunning van de CUG van Oak ( `org.apache.jackrabbit.oak-authorization-cug`), die deel van de AEM standaardinstallatie uitmaakt. De bundel bepaalt een gescheiden vergunningsmodel dat wordt opgesteld als extra manier om gelezen toegang te beheren.
 
 #### CUG-autorisatie instellen {#setting-up-cug-authorization}
 
@@ -716,7 +716,7 @@ De nieuwe implementatie kan volledig worden uitgeschakeld als een bepaalde insta
 
 ### CUG-autorisatie uitschakelen {#disable-cug-authorization}
 
-Raadpleeg de ](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) documentatie 0} van de PAGINA pluggability {voor details op hoe te om het de vergunningsmodel van de KUG van de samengestelde vergunningsopstelling te verwijderen.[
+Raadpleeg de [&#128279;](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) documentatie 0&rbrace; van de PAGINA pluggability &lbrace;voor details op hoe te om het de vergunningsmodel van de KUG van de samengestelde vergunningsopstelling te verwijderen.
 
 ### De verificatievereiste uitschakelen {#disable-the-authentication-requirement}
 

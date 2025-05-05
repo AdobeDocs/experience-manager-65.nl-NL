@@ -341,7 +341,7 @@ Bijvoorbeeld, kunt u een gegevens verwerkt bezit **FullName** tot stand brengen 
 
 In de diensten van OData, navigatie worden de eigenschappen gebruikt om verenigingen tussen twee voorwerpen van het gegevensmodel te bepalen. Deze eigenschappen worden gedefinieerd op een entiteitstype of een complex type. Bijvoorbeeld, in het volgende uittreksel van het meta-gegevensdossier van de steekproef [ TripPin ](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData steekproefdiensten, bevat de persoonentiteit drie navigatie-eigenschappen - Vrienden, BestFriend, en Reizen.
 
-Voor meer informatie over navigatie eigenschappen, zie {documentatie 0} OData ](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).[
+Voor meer informatie over navigatie eigenschappen, zie {documentatie 0} OData [&#128279;](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
 
 ```xml
 <edmx:Edmx xmlns:edmx="https://docs.oasis-open.org/odata/ns/edmx" Version="4.0">

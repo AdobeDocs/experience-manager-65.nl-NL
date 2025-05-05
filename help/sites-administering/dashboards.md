@@ -24,7 +24,7 @@ Wanneer u AEM gebruikt, kunt u een groot aantal verschillende typen inhoud beher
 >
 >AEM dashboards worden gecreeerd op een per gebruikersbasis, zodat kan een gebruiker tot hun eigen dashboard slechts toegang hebben.
 >
->Nochtans, {de malplaatjes van 0} Dashboard ](#creating-a-dashboard-template) kunnen worden gebruikt om gemeenschappelijke configuratie en lay-out te delen Dashboard.[
+>Nochtans, {de malplaatjes van 0} Dashboard [&#128279;](#creating-a-dashboard-template) kunnen worden gebruikt om gemeenschappelijke configuratie en lay-out te delen Dashboard.
 
 ![ chlimage_1-22 ](assets/chlimage_1-22.jpeg)
 
@@ -111,7 +111,7 @@ Elke component definieert ook specifieke instellingen.
 
 ![ chlimage_1-26 ](assets/chlimage_1-26a.png)
 
-**Eenheid van de Tijd van de Korreligheid van de Datum van 0} {(bijvoorbeeld, dag, uur).**
+**Eenheid van de Tijd van de Korreligheid van de Datum van 0&rbrace; &lbrace;(bijvoorbeeld, dag, uur).**
 
 **Metriek** de lijst van gebeurtenissen u wilt tonen.
 
@@ -147,7 +147,7 @@ Deze component geeft een grafiek weer met de meer bezochte sectie van een websit
 
 ![ chlimage_1-30 ](assets/chlimage_1-30a.png)
 
-**Eenheid van de Tijd van de Korreligheid van de Datum van 0} {(bijvoorbeeld, dag, uur).**
+**Eenheid van de Tijd van de Korreligheid van de Datum van 0&rbrace; &lbrace;(bijvoorbeeld, dag, uur).**
 
 **Metriek** de gebeurtenis u wilt tonen.
 

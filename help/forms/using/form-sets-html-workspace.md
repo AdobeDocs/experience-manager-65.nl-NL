@@ -34,7 +34,7 @@ De AEM Forms-werkruimte ondersteunt formsets. Met formsets kunnen meerdere formu
 
    ![ 2-1 ](assets/2-1.png)
 
-1. Klik het **Formatteren** lusje, selecteer de relevante formset van de lijst, en klik dan O.K. ****.
+1. Klik het **Formatteren** lusje, selecteer de relevante formset van de lijst, en klik dan O.K. **&#x200B;**.
 
 1. Implementeer de toepassing nadat u andere relevante proceseigenschappen hebt bijgewerkt.
 

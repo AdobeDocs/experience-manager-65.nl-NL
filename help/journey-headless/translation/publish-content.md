@@ -70,7 +70,7 @@ Onder dit pad hebt u submappen voor elke vertaaltaal en kunt u kiezen welke taal
 1. Hier ziet u de hoofdmap van de taal en alle andere taalmappen. Selecteer de gelokaliseerde taal of talen die u wilt publiceren.
    ![ Uitgezochte taalomslag ](assets/select-language-folder.png)
 1. Klik **leiden Publicatie**.
-1. In het **beheer Publicatie** venster, zorg ervoor dat **Publish** automatisch onder **Actie** wordt geselecteerd en dat **** nu onder **het Plannen** wordt geselecteerd. Klik op **Next**.
+1. In het **beheer Publicatie** venster, zorg ervoor dat **Publish** automatisch onder **Actie** wordt geselecteerd en dat **&#x200B;**&#x200B;nu onder **het Plannen** wordt geselecteerd. Klik op **Next**.
    ![ beheer publicatieopties ](assets/manage-publication-options.png)
 1. In het volgende **leidt het venster van de Publicatie**, bevestig dat de juiste weg(en) wordt/worden geselecteerd. Klik **Publish**.
    ![ beheer publicatiewerkingsgebied ](assets/manage-publication-scope.png)
@@ -99,7 +99,7 @@ Het proces verschilt echter enigszins als u ervoor kiest om uw vertaalproject au
 1. Selecteer de taalwortel van uw project. In dit geval is `/content/dam/wknd/en` geselecteerd.
 1. Klik de spoorselecteur en toon het **paneel van Verwijzingen**.
 1. Klik **Exemplaren van de Taal**.
-1. Controleer het **checkbox van de Kopieën van de Taal 0}.**
+1. Controleer het **checkbox van de Kopieën van de Taal 0&rbrace;.**
 1. Breid de sectie **Exemplaren van de Taal van de Update** bij de bodem van het verwijzingenpaneel uit.
 1. In **drop-down van het Project**, uitgezocht **voeg aan een bestaand Vertaal Project** toe.
 1. In het **Bestaande drop-down Project van de Vertaling**, selecteer het project dat voor de aanvankelijke vertaling wordt gecreeerd.

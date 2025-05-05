@@ -36,7 +36,7 @@ Als u een component `File Library` in de ontwerpmodus aan een pagina wilt toevoe
 
 En sleep het naar de juiste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-file-library.md#essentials-for-client-side) inbegrepen zijn, is het hoe de `File Library` component verschijnt:
 
@@ -166,7 +166,7 @@ Instellen als standaard
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de ](/help/communities/essentials-file-library.md) pagina van de Hoofdzaak van de Bibliotheek van het 0} Dossier {voor ontwikkelaars worden gevonden.[
+Meer informatie kan op de [&#128279;](/help/communities/essentials-file-library.md) pagina van de Hoofdzaak van de Bibliotheek van het 0&rbrace; Dossier &lbrace;voor ontwikkelaars worden gevonden.
 
 Voor moderatie van geposte onderwerpen en commentaren, zie [ het Modereren van Gebruiker-Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
 

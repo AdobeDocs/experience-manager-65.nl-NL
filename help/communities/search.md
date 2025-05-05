@@ -34,7 +34,7 @@ De zoekfunctie kan worden gebruikt met elke andere functie waarmee bezoekers en 
 
 Als u een component `Search` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / Search` te zoeken en naar de juiste plaats op een pagina te slepen. Voor het gebruik van `Search` is een tweede pagina vereist voor de `Search Results.`
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search` -component.
 
@@ -70,7 +70,7 @@ en sleep het naar de juiste plaats op een pagina. In tegenstelling tot de zoekco
 
 Als u Zoeken elders in de website gebruikt, is deze ene pagina met `Search Results` mogelijk geconfigureerd als de `Result Page` voor een of alle instanties van `Search` .
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
 Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search Result` -component:
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Voorwaarden verbergen gebruiken {#using-hide-conditions}
 
-De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld van dit zou zijn wanneer een malplaatjeauteur de de lijstcomponent van de Component van de Kern [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) in de [ malplaatjedacteur ](/help/sites-authoring/templates.md) vormt en besluit om de opties onbruikbaar te maken om de lijst te bouwen die op kindpagina&#39;s wordt gebaseerd. Als u deze optie in het dialoogvenster Ontwerp uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
+De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld van dit zou zijn wanneer een malplaatjeauteur de de lijstcomponent van de Component van de Kern [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) in de [ malplaatjedacteur ](/help/sites-authoring/templates.md) vormt en besluit om de opties onbruikbaar te maken om de lijst te bouwen die op kindpagina&#39;s wordt gebaseerd. Als u deze optie in het dialoogvenster Ontwerp uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
 
 ## Overzicht {#overview}
 

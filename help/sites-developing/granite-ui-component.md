@@ -50,7 +50,7 @@ De generieke graniet UI-component `field` bestaat uit twee belangwekkende bestan
 * `init.jsp` : verwerkt de algemene verwerking, de labels, beschrijving en de formulierwaarde die u nodig hebt bij het weergeven van het veld.
 * `render.jsp`: dit is de plaats waar de werkelijke rendering van het veld wordt uitgevoerd en moet worden overschreven voor uw aangepaste veld; wordt opgenomen door `init.jsp` .
 
-Zie {de documentatie van 0} granite UI - Gebied ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) voor details.[
+Zie {de documentatie van 0} granite UI - Gebied [&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) voor details.
 
 Zie voor voorbeelden:
 

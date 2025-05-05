@@ -127,7 +127,7 @@ U kunt het element ook naar het **[!UICONTROL Drop in Collection]** -gebied op d
 
 De slimme inzamelingen worden gebouwd door een onderzoek te bewaren zodat kunt u hun inhoud veranderen door de onderzoeksparameters van het [ bewaarde onderzoek ](#saved-searches) te wijzigen.
 
-1. In het [!DNL Assets] gebruikersinterface, klik de 1} onderzoeksoptie van de onderzoeksoptie ](assets/do-not-localize/search_icon.png) van de toolbar.![
+1. In het [!DNL Assets] gebruikersinterface, klik de 1&rbrace; onderzoeksoptie van de onderzoeksoptie ![&#128279;](assets/do-not-localize/search_icon.png) van de toolbar.
 1. Selecteer de `Return` -toets terwijl de cursor in het vak Onderzoek staat.
 1. Open in de interface [!DNL Experience Manager] het deelvenster Filters.
 1. Selecteer in de lijst met **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.

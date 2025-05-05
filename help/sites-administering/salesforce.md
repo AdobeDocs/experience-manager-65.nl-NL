@@ -110,7 +110,7 @@ Als u AEM gebruikers wilt exporteren als leider van Salesforce:
 
    ![ chlimage_1-76 ](assets/chlimage_1-76.png)
 
-1. Selecteer de AEM gebruiker die u als lood als **nuttige lading** voor dit werkschema (huis > gebruikers) wilt tot stand brengen. Ben zeker om de profielknoop van de gebruiker te selecteren aangezien het informatie als **givenName** bevat, en **familyName**, die aan 4} FirstName **en** **gebieden van Salesforce lood in kaart worden gebracht.**
+1. Selecteer de AEM gebruiker die u als lood als **nuttige lading** voor dit werkschema (huis > gebruikers) wilt tot stand brengen. Ben zeker om de profielknoop van de gebruiker te selecteren aangezien het informatie als **givenName** bevat, en **familyName**, die aan 4&rbrace; FirstName **en** **gebieden van Salesforce lood in kaart worden gebracht.**
 
    ![ chlimage_1-77 ](assets/chlimage_1-77.png)
 
@@ -199,7 +199,7 @@ U kunt gebruikersgegevens van Salesforce in de Context van de Cliënt laden voor
 
    ![ chlimage_1-18 ](assets/chlimage_1-18.jpeg)
 
-1. Sleep de **component van de Gegevens van het Profiel van 0} Salesforce {aan de cliëntcontext.**
+1. Sleep de **component van de Gegevens van het Profiel van 0&rbrace; Salesforce &lbrace;aan de cliëntcontext.**
 
    ![ chlimage_1-19 ](assets/chlimage_1-19.jpeg)
 

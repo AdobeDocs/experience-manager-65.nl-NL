@@ -76,7 +76,7 @@ Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerk
 Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden overwogen:
 
 * [ Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor een configureerbare, toe:voegen-op SaaS aan [!DNL Experience Manager Assets] om activa te publiceren.
-* De oplossingen van de douane worden gecreeerd gebaseerd op ](https://adobe-marketing-cloud.github.io/asset-share-commons/) de codebasis van het Aandeel van activa 0}.[
+* De oplossingen van de douane worden gecreeerd gebaseerd op [&#128279;](https://adobe-marketing-cloud.github.io/asset-share-commons/) de codebasis van het Aandeel van activa 0&rbrace;.
 * [!DNL Experience Manager] [ verbindingsaandeel ](/help/assets/link-sharing.md) om activa te delen op bestelling gebruikend verbindingen.
 * [ het Webinterface van Experience Manager Assets ](/help/assets/manage-assets.md) met gebieden voor externe partijen die door [!DNL Experience Manager] worden beveiligd toegangsbeheeropstelling en met noodzakelijke aanpassingen van IT/netwerkconfiguratie, die deze externe gebruikers toegang geven tot [!DNL Experience Manager].
 
@@ -98,7 +98,7 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 
 * Zie [ Desktop app beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Zie [ de integratie van Adobe Stock ](aem-assets-adobe-stock.md)
-* Zie {de Verbinding van Activa van 0} Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)[
+* Zie {de Verbinding van Activa van 0} Adobe [&#128279;](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
 Dit is een korte samenvatting van aanbevolen procedures voor [!DNL Experience Manager] en [!DNL Creative Cloud] integratie. Lees de rest van dit document voor een gedetailleerd begrip hiervan.
 

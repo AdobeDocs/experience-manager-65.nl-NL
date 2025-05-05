@@ -53,7 +53,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
 1. Op AEM [!DNL Forms] auteursinstantie, navigeer aan **Hulpmiddelen** ![ hamer ](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
 1. Selecteer op de pagina **[!UICONTROL Configuration Browser]** de optie **[!UICONTROL Create]** .
-   * Zie Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie 0} {voor meer informatie.[
+   * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
 1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een **[!UICONTROL Title]** voor de configuratie op, schakel **[!UICONTROL Cloud Configurations]** in en selecteer **[!UICONTROL Create]** . Er wordt een configuratiecontainer gemaakt.
 1. Navigeer aan **Hulpmiddelen** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** en selecteer de configuratiecontainer u in de bovengenoemde stap creeerde.
 
@@ -63,7 +63,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
    >[!NOTE]
    >
-   Zorg ervoor dat URL van de Pagina van de Configuratie van Cloud Servicen met **HTTPS** begint. Als niet, [ laat SSL ](/help/sites-administering/ssl-by-default.md) voor AEM [!DNL Forms] server toe.
+   >Zorg ervoor dat URL van de Pagina van de Configuratie van Cloud Servicen met **HTTPS** begint. Als niet, [ laat SSL ](/help/sites-administering/ssl-by-default.md) voor AEM [!DNL Forms] server toe.
 
 
 1. Tik op de configuratiepagina op **[!UICONTROL Create]** om [!DNL Adobe Sign] configuration in AEM [!DNL Forms] te maken.
@@ -91,12 +91,12 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
-   * Houd **creeer de Configuratie van Adobe Acrobat Sign** open pagina. Sluit het bestand niet. U kunt **Identiteitskaart van de Cliënt terugwinnen** en **Geheime cliënt** na het vormen van montages OAuth voor de [!DNL Adobe Acrobat Sign] toepassing zoals die in volgende stappen wordt beschreven.
-   * Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie over Adobe Sign OAuth URL en Access Token URL.
+   >* Houd **creeer de Configuratie van Adobe Acrobat Sign** open pagina. Sluit het bestand niet. U kunt **Identiteitskaart van de Cliënt terugwinnen** en **Geheime cliënt** na het vormen van montages OAuth voor de [!DNL Adobe Acrobat Sign] toepassing zoals die in volgende stappen wordt beschreven.
+   >* Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie over Adobe Sign OAuth URL en Access Token URL.
 
 1. Configureer OAuth-instellingen voor de [!DNL Adobe Sign] -toepassing:
 
@@ -112,7 +112,7 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
    * widget_write
    * workflow_read
 
-   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2} de ontwikkelaarsdocumentatie van de toepassing {vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
+   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Sign] toepassing te vormen en de sleutels te verkrijgen, zie [ montages van Auth voor de 2&rbrace; de ontwikkelaarsdocumentatie van de toepassing &lbrace;vormen.](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)
 
    ![ OAuth Config ](assets/oauthconfig_new.png)
 
@@ -147,13 +147,13 @@ Voer de volgende stappen uit nadat aan de voorwaarden is voldaan om [!DNL Adobe 
 1. Openen **[!UICONTROL Forms Common Configuration Service].**
 1. Op het **[!UICONTROL Allow]** gebied, **uitgezocht** Alle gebruikers - Alle gebruikers, anoniem of het programma geopend, kunnen voorproef gehechtheid, vormen verifiëren en ondertekenen, en **[!UICONTROL Save]klikken.** De instantie Auteur is geconfigureerd voor gebruik van [!DNL Adobe Sign] .
 1. Publish de configuratie.
-1. De replicatie van het gebruik [ ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op het corresponderen te creëren publiceert instanties.
+1. De replicatie van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op het corresponderen te creëren publiceert instanties.
 
 [!DNL Adobe Sign] is nu geïntegreerd met AEM [!DNL Forms] en klaar voor gebruik in adaptieve formulieren. Om [ de dienst van Adobe Sign in een adaptieve vorm ](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form) te gebruiken, specificeer de configuratiecontainer hierboven in adaptieve vormeigenschappen wordt gecreeerd die.
 
 >[!NOTE]
 >
-Om de zandbak van Adobe Sign te vormen, kunt u de zelfde configuratiestappen volgen zoals die in [ Adobe Sign ](#adobe-sign) worden verklaard.
+>Om de zandbak van Adobe Sign te vormen, kunt u de zelfde configuratiestappen volgen zoals die in [ Adobe Sign ](#adobe-sign) worden verklaard.
 
 ## Connect AEM Forms met Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
@@ -189,8 +189,8 @@ Voordat u AEM Forms gaat verbinden met Adobe Acrobat Sign Solution,
 >[!NOTE]
 >
 >
-* A `re-direct URL` zou a [ top-level ](https://en.wikipedia.org/wiki/Top-level_domain) domein moeten bevatten. Bijvoorbeeld: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
-* Gebruik geen lokale URL als `re-direct URL`. Bijvoorbeeld `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global` .
+>* A `re-direct URL` zou a [ top-level ](https://en.wikipedia.org/wiki/Top-level_domain) domein moeten bevatten. Bijvoorbeeld: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+>* Gebruik geen lokale URL als `re-direct URL`. Bijvoorbeeld `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global` .
 
 
 #### De omleiding van URL en bereik delen met het team van Adobe Sign en referenties ontvangen
@@ -240,13 +240,13 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
    waarbij:
 
-   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** verwijst naar het standaardgegevensbestandaandeel. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL &#x200B; Adobe Acrobat Sign] Configuraties van de Wolk aan [ correct richten deelt ](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
-   * Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie over de Adobe Sign Auth URL en Access Token URL.
+   >* Nadat u zich hebt aangemeld bij uw Adobe Sign-account, navigeert u naar **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** voor toegang tot informatie over de Adobe Sign Auth URL en Access Token URL.
 
-1. Gebruik de geloofsbrieven die door Adobe Acrobat Sign voor de vertegenwoordiger van de Oplossing van de Overheid ([ Adobe Professional Services teamlid ]) in de vorige sectie als [**[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** worden gedeeld.
+1. Gebruik de geloofsbrieven die door Adobe Acrobat Sign voor de vertegenwoordiger van de Oplossing van de Overheid ([ Adobe Professional Services teamlid ]) in de vorige sectie als &lbrack;**[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** worden gedeeld.
 
 1. Selecteer de optie **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** om bestanden die zijn gekoppeld aan een adaptief formulier, toe te voegen aan het corresponderende [!DNL Adobe Acrobat Sign] -document dat ter ondertekening is verzonden.
 
@@ -262,7 +262,7 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 1. Op het **[!UICONTROL Allow]** gebied, **uitgezocht** Alle gebruikers - Alle gebruikers, anoniem of het programma geopend, kunnen voorproef gehechtheid, vormen verifiëren en ondertekenen, en **[!UICONTROL Save]klikken.** De instantie Auteur is geconfigureerd voor gebruik van [!DNL Adobe Sign] .
 
 1. Publish de configuratie.
-1. De replicatie van het gebruik [ ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op het corresponderen te creëren publiceert instanties.
+1. De replicatie van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op het corresponderen te creëren publiceert instanties.
 
 Nu, kunt u [ gebruiken toevoegt de gebieden van Adobe Acrobat Sign in een AanpassingsVorm ](working-with-adobe-sign.md) of [ AEM Werkschema ](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Zorg ervoor dat u de configuratiecontainer die voor de configuratie van de Cloud Service wordt gebruikt toevoegt aan al Adaptive Forms die voor [!DNL Adobe Acrobat Sign] wordt toegelaten. U kunt een configuratiecontainer opgeven met de eigenschappen van een adaptief formulier.
 

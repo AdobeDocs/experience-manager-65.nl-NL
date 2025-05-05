@@ -40,7 +40,7 @@ Als u een component `Comments` in de ontwerpmodus aan een pagina wilt toevoegen,
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie waar gebruikers opmerkingen over kunnen plaatsen, of gewoon onder aan de pagina.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-comments.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Comments` component verschijnt.
 
@@ -178,7 +178,7 @@ Onder het **lusje van de Types van Middel**, specificeer douane resourceType voo
 
 * **Type van Middel van het Systeem van de Commentaar**
 
-  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [ ](/help/communities/scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper ](/help/communities/handlebars-helpers.md#include) .
+  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [&#128279;](/help/communities/scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper ](/help/communities/handlebars-helpers.md#include) .
 
 ### Ervaring met sitebezoekers {#site-visitor-experience}
 

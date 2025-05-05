@@ -70,7 +70,7 @@ Hieronder vindt u de bouwstenen die nodig zijn voor het maken van interactieve c
 
 ## Interactieve communicatie Vs Correspondentenbeheer {#interactive-communications-vs-correspondence-management}
 
-De interactieve Communicatie is het gebrek en geadviseerde benadering om klantenmededelingen tot stand te brengen. Om de brieven te blijven gebruiken die in AEM 6.3 Forms en AEM 6.2 Forms creëren, moet u een verenigbaarheidspakket ](/help/forms/using/compatibility-package.md) installeren. [ Hier volgt een vergelijking tussen de mogelijkheden van interactieve communicatie en de letters.
+De interactieve Communicatie is het gebrek en geadviseerde benadering om klantenmededelingen tot stand te brengen. Om de brieven te blijven gebruiken die in AEM 6.3 Forms en AEM 6.2 Forms creëren, moet u een verenigbaarheidspakket [&#128279;](/help/forms/using/compatibility-package.md) installeren.  Hier volgt een vergelijking tussen de mogelijkheden van interactieve communicatie en de letters.
 
 <table>
  <tbody>

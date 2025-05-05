@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Stijl AEM CIF Core-componenten {#style-aem-cif-core-components}
 
-Het [ Project van CIF Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U zult ook een stijl tot stand brengen gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0} Product.**
+Het [ Project van CIF Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U zult ook een stijl tot stand brengen gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0&rbrace; Product.**
 
 >[!TIP]
 >

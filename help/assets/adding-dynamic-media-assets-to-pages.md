@@ -25,7 +25,7 @@ U kunt Dynamic Media-elementen rechtstreeks aan de pagina toevoegen als u Adobe 
 
 >[!NOTE]
 >
->Zorg ervoor dat u elementen publiceert voordat u deze in Experience Manager aan pagina&#39;s toevoegt. Zie {de activa van Dynamic Media van 0} Publish ](/help/assets/publishing-dynamicmedia-assets.md).[
+>Zorg ervoor dat u elementen publiceert voordat u deze in Experience Manager aan pagina&#39;s toevoegt. Zie {de activa van Dynamic Media van 0} Publish [&#128279;](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Een Dynamic Media-component aan een pagina toevoegen {#adding-a-dynamic-media-component-to-a-page}
 

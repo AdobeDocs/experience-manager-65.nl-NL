@@ -39,7 +39,7 @@ Zie [ Configuratie Analytics voor de Eigenschappen van Gemeenschappen ](/help/co
 
 Als u een `Community Activity List` -component in de ontwerpmodus aan een pagina wilt toevoegen, zoekt u de component `Communities / Community Activity List` en sleept u deze naar de juiste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen ](/help/communities/basics.md).[
+Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 

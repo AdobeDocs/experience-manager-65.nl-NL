@@ -50,7 +50,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
    1. Ga naar `https://'[server]:[port]'/crx/explorer/index.jsp` . Meld u indien nodig aan als beheerder.
    1. Klik **Ontdekkingsreiziger van de Inhoud**. De Inhoudsverkenner wordt in een nieuw venster geopend.
-   1. Navigeer in Content Explorer naar de map cmUserRoot en selecteer deze. Klik met de rechtermuisknop op de **omslag 0} cmUserRoot en selecteer** Nieuwe Knoop **.**
+   1. Navigeer in Content Explorer naar de map cmUserRoot en selecteer deze. Klik met de rechtermuisknop op de **omslag 0&rbrace; cmUserRoot en selecteer** Nieuwe Knoop **.**
 
       ![ Nieuwe knoop in cmUserRoot ](assets/2_cmuserroot_newnode.png)
 

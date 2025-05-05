@@ -53,7 +53,7 @@ U kunt [ het profiel ](#resetting-the-profile-to-the-current-user) aan dat van d
 
 De context van de Cliënt kan de volgende eigenschappen ([ afhankelijk van tonen wat gebruikend uitgeeft ](#adding-a-property-component) is geselecteerd):
 
-**toont de Informatie van de Opslag van 0} de volgende cliënt-zijinformatie:**
+**toont de Informatie van de Opslag van 0&rbrace; de volgende cliënt-zijinformatie:**
 
 * het **IP adres**
 * **sleutelwoorden** voor verwijzing van de onderzoeksmotor worden gebruikt
@@ -69,7 +69,7 @@ De context van de Cliënt kan de volgende eigenschappen ([ afhankelijk van tonen
 
 De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt gewoonlijk geselecteerd gebaseerd op segmentatie.
 
-**toont het Kart van 0} winkelwagentinformatie met inbegrip van productingangen (titel, hoeveelheid, priceFormatted, etc.), opgeloste promoties (titel, bericht, etc.) en vouchers (code, beschrijving, etc.).**
+**toont het Kart van 0&rbrace; winkelwagentinformatie met inbegrip van productingangen (titel, hoeveelheid, priceFormatted, etc.), opgeloste promoties (titel, bericht, etc.) en vouchers (code, beschrijving, etc.).**
 
 De opslag van de wortelzitting brengt de server ook op de hoogte van opgeloste bevorderingsveranderingen (die op segmenteringsveranderingen worden gebaseerd) gebruikend ClientContextCartServlet.
 
@@ -117,7 +117,7 @@ Hiermee wordt bijvoorbeeld aangegeven of de muis zich momenteel op het linker- o
 
 >[!NOTE]
 >
-Labels die zijn ingesteld op DAM-elementen die worden weergegeven op de bezochte pagina&#39;s, worden niet meegeteld.
+>Labels die zijn ingesteld op DAM-elementen die worden weergegeven op de bezochte pagina&#39;s, worden niet meegeteld.
 
 **Opslag van Technologieën** Deze component is afhankelijk van uw installatie.
 
@@ -129,7 +129,7 @@ Voor extra informatie, zie [ Context van de Cliënt in Detail ](/help/sites-deve
 
 >[!NOTE]
 >
-Paginagegevens bevinden zich niet meer in de clientcontext als een standaardcomponent. Indien nodig, kunt u dit toevoegen door de cliëntcontext uit te geven, toevoegend de **Algemene component van de Eigenschappen van de Opslag**, dan vormend dit om de **Opslag** als `pagedata` te bepalen.
+>Paginagegevens bevinden zich niet meer in de clientcontext als een standaardcomponent. Indien nodig, kunt u dit toevoegen door de cliëntcontext uit te geven, toevoegend de **Algemene component van de Eigenschappen van de Opslag**, dan vormend dit om de **Opslag** als `pagedata` te bepalen.
 
 ## Het clientcontextprofiel wijzigen {#changing-the-client-context-profile}
 
@@ -217,7 +217,7 @@ Nadat u de **het ontwerppagina van de ClientContext** hebt geopend, kunt u **ook
 
 ### Een component Property verwijderen {#removing-a-property-component}
 
-Nadat u de **pagina van het het ontwerpontwerp van de ClientContext** hebt geopend, kunt u **** a bezit ook verwijderen als niet meer vereist. Dit omvat eigenschappen die uit-van-de-doos worden verstrekt; **het Terugstellen** zal deze opnieuw opnemen als zij zijn verwijderd.
+Nadat u de **pagina van het het ontwerpontwerp van de ClientContext** hebt geopend, kunt u **&#x200B;**&#x200B;a bezit ook verwijderen als niet meer vereist. Dit omvat eigenschappen die uit-van-de-doos worden verstrekt; **het Terugstellen** zal deze opnieuw opnemen als zij zijn verwijderd.
 
 ## Gegevens opslaan in clientcontext via JSONP {#storing-data-in-client-context-via-jsonp}
 

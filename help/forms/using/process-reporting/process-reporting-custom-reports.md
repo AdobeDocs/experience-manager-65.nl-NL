@@ -141,7 +141,7 @@ De voorwaarde om de dienst tot stand te brengen die de bouwer van de Vraag API g
 
 ### Voorbeeld van service {#service-example}
 
-Het volgende de dienstvoorbeeld telt instanties van een proces dat in **** en **COMPLETE** staat aan eind van elke maand, elk kwartaal, en jaar is.
+Het volgende de dienstvoorbeeld telt instanties van een proces dat in **&#x200B;**&#x200B;en **COMPLETE** staat aan eind van elke maand, elk kwartaal, en jaar is.
 
 ```java
 package custom.reporting.service;

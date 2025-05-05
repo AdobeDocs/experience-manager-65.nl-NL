@@ -69,7 +69,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
    1. Klik het acmExtensionsConfig.xml- dossier met de rechtermuisknop aan en selecteer **Exemplaar**.
 
-      ![ ExtensionsConfig.xml van het Exemplaar {](assets/3_acmextensionsconfig_xml_copy.png)
+      ![ ExtensionsConfig.xml van het Exemplaar &lbrace;](assets/3_acmextensionsconfig_xml_copy.png)
 
    1. Klik met de rechtermuisknop op de **defaultApp** omslag bij &quot;/apps/fd/cm/config/defaultApp/,&quot;en selecteer **Deeg**.
    1. Klik **sparen allen**.
@@ -348,7 +348,7 @@ Het proces LCA loopt op de server van het LiveCycle en vereist het serveradres e
    * **Gebruikersnaam**: Admin gebruikersnaam van de server LC
    * **Wachtwoord**: Wachtwoord van Admin gebruikersnaam
 
-   {de Configuratie van SDK van de Cliënt van het LiveCycle van 0} Adobe ](assets/3_clientsdkconfiguration.png)![
+   {de Configuratie van SDK van de Cliënt van het LiveCycle van 0} Adobe ![&#128279;](assets/3_clientsdkconfiguration.png)
 
 #### LiveCycle archiveren (LCA) installeren {#install-livecycle-archive-lca}
 

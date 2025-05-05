@@ -48,7 +48,7 @@ ht-degree: 6%
 
 * Een nieuwe component van de carrousel van de Categorie werd toegevoegd om bedrijfsgebruikers toe te laten om deze component op AEM inhoudspagina&#39;s te slepen en te laten vallen om inhoudspagina&#39;s met handelsgegevens te verrijken.
 
-* CIF kerncomponenten uitgebreid om de Laag van Gegevens van de Cliënt van de Adobe te bevrijden door handelsgegevens te verzenden. De gegevenslaag van de Cliënt van de Adobe is een gestandaardiseerde methode om gegevens te verzamelen en de gegevens aan Digitale Analytics en het melden van servers mee te delen. Voor meer details, zie {de Gegevens Laag van de Cliënt van 0} Adobe ](https://github.com/adobe/adobe-client-data-layer/wiki).[
+* CIF kerncomponenten uitgebreid om de Laag van Gegevens van de Cliënt van de Adobe te bevrijden door handelsgegevens te verzenden. De gegevenslaag van de Cliënt van de Adobe is een gestandaardiseerde methode om gegevens te verzamelen en de gegevens aan Digitale Analytics en het melden van servers mee te delen. Voor meer details, zie {de Gegevens Laag van de Cliënt van 0} Adobe [&#128279;](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pagina&#39;s met productdetails en productlijsten die zijn uitgebreid om automatisch SEO-metagegevens (zoals titel, meta-beschrijving, metatrefwoorden) te vullen die zijn geconfigureerd vanuit de Adobe Commerce-beheerinterface
 

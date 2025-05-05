@@ -104,7 +104,7 @@ AEM is standaard niet ingeschakeld in e-mailsjablonen van Adobe Campaign. Config
 
    ![ Dubbel element ](assets/acs-copy-template.png)
 
-1. In de **Bevestiging** dialoog, bevestigt de klik **** om het malplaatje te dupliceren.
+1. In de **Bevestiging** dialoog, bevestigt de klik **&#x200B;**&#x200B;om het malplaatje te dupliceren.
 
    ![ de dialoog van de Bevestiging ](assets/acs-confirmation.png)
 
@@ -202,7 +202,7 @@ U hebt de Externalzer geconfigureerd en Adobe Campaign heeft nu toegang tot uw i
 
 >[!NOTE]
 >
-De publicatie-instantie moet bereikbaar zijn vanaf de Adobe Campaign-server. Als het verwijst naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden afbeeldingen van AEM niet weergegeven in de Adobe Campaign-console.
+>De publicatie-instantie moet bereikbaar zijn vanaf de Adobe Campaign-server. Als het verwijst naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden afbeeldingen van AEM niet weergegeven in de Adobe Campaign-console.
 
 ## Vorm de campagne-verre Gebruiker in AEM {#campaign-remote-user}
 

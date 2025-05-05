@@ -23,7 +23,7 @@ Het toelaten van toegang tot een bewaarplaats van CRX impliceert verscheidene on
 * [ Rechten van de Toegang ](#how-access-rights-are-evaluated) - de concepten hoe zij worden bepaald en geëvalueerd
 * [ Beleid van de Gebruiker ](#user-administration) - het beheren van de individuele rekeningen die voor toegang worden gebruikt
 * [ Beleid van de Groep ](#group-administration) - vereenvoudig gebruikersbeheer door groepen te vormen
-* ](#access-right-management) het Juiste Beheer van de Toegang [ - bepalend beleid dat controleert hoe deze gebruikers en groepen tot middelen kunnen toegang hebben
+* [&#128279;](#access-right-management) het Juiste Beheer van de Toegang  - bepalend beleid dat controleert hoe deze gebruikers en groepen tot middelen kunnen toegang hebben
 
 De basiselementen zijn:
 
@@ -304,7 +304,7 @@ Als een account een andere account nastreeft, is het moeilijk te zien. De logboe
 U kunt **Eigenschappen** voor of nieuwe of bestaande rekeningen bepalen:
 
 1. Open de **dialoog van het Beleid van de Gebruiker** voor de aangewezen rekening.
-1. Bepaal a **naam van het Bezit 0} {.**
+1. Bepaal a **naam van het Bezit 0&rbrace; &lbrace;.**
 1. Selecteer het **Type** van de drop-down lijst.
 1. Bepaal de **Waarde**.
 1. Klik op Opslaan (groen kliksymbool) voor de nieuwe eigenschap.
@@ -414,7 +414,7 @@ De **Geërfte** kolom wijst op lidmaatschap dat als resultaat van lidmaatschap v
 U kunt Eigenschappen definiëren voor nieuwe of bestaande accounts:
 
 1. Open de **dialoog van het Beleid van de Groep** voor de aangewezen rekening.
-1. Bepaal a **naam van het Bezit 0} {.**
+1. Bepaal a **naam van het Bezit 0&rbrace; &lbrace;.**
 1. Selecteer het **Type** van de drop-down lijst.
 1. Bepaal de **Waarde**.
 1. Klik op Opslaan (groen verdeelstreepje) voor de nieuwe eigenschap.
@@ -479,7 +479,7 @@ Het beleid kan worden geselecteerd voor:
 
   U kunt of in de **Belangrijkste** naam typen of het pictogram aan het recht van het gebied klikken om **Uitgezochte Belangrijkste** dialoogdoos te openen.
 
-  Dit laat u **van het 0} Onderzoek {voor a** Gebruiker **of** Groep **.** Selecteer het vereiste hoofd van de resulterende lijst, dan klik O.K. **om de waarde terug naar het vorige dialoogvakje te dragen.**
+  Dit laat u **van het 0&rbrace; Onderzoek &lbrace;voor a** Gebruiker **of** Groep **.** Selecteer het vereiste hoofd van de resulterende lijst, dan klik O.K. **om de waarde terug naar het vorige dialoogvakje te dragen.**
 
 ![ crx_acccontrol_selectprincipal ](assets/crx_accesscontrol_selectprincipal.png)
 

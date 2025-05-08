@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
+source-git-commit: 6be26e991da6d53f2433991cb9e4919b46c494a8
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3600'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 | **systeem van het Dossier met de dossiers van TAR** `[1]` | Bewaarplaats | A: Ondersteund |
 | **systeem van het Dossier met Datastore** `[1]` | Binden | A: Ondersteund |
 | Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `[1]` | Binden | Z: Niet ondersteund voor productie |
-| Amazone S3 | Binden | A: Ondersteund |
+| Amazon S3 | Binden | A: Ondersteund |
 | Microsoft® Azure Blob Storage | Binden | A: Ondersteund |
 | MongoDB Enterprise 6.0 | Bewaarplaats | A: Ondersteund `[3, 4]` |
 | MongoDB Enterprise 5.0 | Bewaarplaats | A: Ondersteund `[3, 4]` |
@@ -148,9 +148,9 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 >[!NOTE]
 >
->MongoDB is een programma van derden en is niet opgenomen in het AEM-licentiepakket. Zie de [pagina met het licentiebeleid van](https://www.mongodb.com/licensing/server-side-public-license/faq) MongoDB voor meer informatie.
+>MongoDB is een programma van derden en is niet opgenomen in het AEM-licentiepakket. Voor meer informatie, zie [ MongoDB het verlenen van vergunningen beleid ](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
 >
->Om het meeste uit uw AEM-implementatie met MongoDB te halen, raadt Adobe aan een licentie te kopen voor de MongoDB Enterprise-versie om te profiteren van professionele ondersteuning. Zie [ Geadviseerde Inzet ](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie.
+>Om optimaal gebruik te kunnen maken van uw AEM-implementatie met MongoDB, raadt Adobe aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat deze profiteert van professionele ondersteuning. Zie [ Geadviseerde Inzet ](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie.
 >
 >De licentie bevat een standaard replicaset, die bestaat uit één primaire en twee secundaire instanties die kunnen worden gebruikt voor de auteur of de publicatieimplementaties.
 >
@@ -171,11 +171,11 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 ### Servlet-engines/toepassingsservers {#servlet-engines-application-servers}
 
-Adobe Experience Manager kan worden uitgevoerd als een zelfstandige server (het quickstart JAR-bestand) of als een webtoepassing binnen een toepassingsserver van derden (het WAR-bestand).
+Adobe Experience Manager kan worden uitgevoerd als een zelfstandige server (het QuickStart JAR-bestand) of als een webtoepassing binnen een externe toepassingsserver (het WAR-bestand).
 
 De minimaal vereiste Servlet API-versie is Servlet 3.1
 
-| Perron | Ondersteuningsniveau |
+| Platform | Ondersteuningsniveau |
 |---|---|
 | **Quickstart ingebouwde Motor van Servlet (Jetty 9.4)** | A: Ondersteund |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Niet ondersteund |
@@ -200,15 +200,16 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | **Linux®, die op de distributie van Red Hat®** wordt gebaseerd | A: Ondersteund `[1]` `[3]` |
 | Linux®, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[1]` `[2]` |
 | Linux®, gebaseerd op SUSE®-distributie | A: Ondersteund `[1]` |
+| Microsoft® Windows Server 2022 | R: Beperkte ondersteuning |
 | Microsoft® Windows Server 2019 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
-| Microsoft® Windows Server 2016 `[4]` | A: Beperkte ondersteuning voor nieuwe contracten `[5]` |
+| Microsoft® Windows Server 2016 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Niet ondersteund |
-| Orakel Solaris™ 11 | Z: Niet ondersteund |
+| Oracle Solaris™ 11 | Z: Niet ondersteund |
 | IBM® AIX® 7.2 | Z: Niet ondersteund |
 
 1. Linux® Kernel 2.6, 3. x, 4. x, 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, CentOS, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
-1. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
-1. Linux®-distributie ondersteund door Adobe Managed Services.
+2. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
+3. Linux®-distributie ondersteund door Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -220,13 +221,13 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 of hoger)
 
-1. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
-1. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
-1. AEM Forms heeft de ondersteuning voor Microsoft® Windows Server 2016 verwijderd.
+4. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
+5. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
+6. AEM Forms heeft de ondersteuning voor Microsoft® Windows Server 2016 verwijderd.
 
 >[!NOTE]
 >
->Als u AEM Forms 6.5 installeert, moet u ervoor zorgen dat u de volgende 32-bits Microsoft® Visual C++ herdistribueerbare versie hebt geïnstalleerd.
+>Als u AEM Forms 6.5 installeert, zorg ervoor u volgende 32 beetje Microsoft® Visuele C++ redistributable geïnstalleerd hebt.
 >
 >* Microsoft® Visual C++ 2008 herdistribueerbaar
 >* Microsoft® Visual C++ 2010 herdistribueerbaar
@@ -237,9 +238,9 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 ### Virtuele en cloud computeromgevingen {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager wordt ondersteund door te draaien in een virtuele machine in cloudcomputingomgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
+Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) voor details.
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -249,7 +250,7 @@ Adobe raadt u aan om voor aanbevelingen over het implementeren van AEM in Azure 
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=nl-NL). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
+De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -259,9 +260,9 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 | Microsoft® IIS 10 (Internet Information Server) | A: Ondersteund |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: Niet ondersteund |
 
-1. Webservers die zijn gebouwd op basis van de Apache httpd-broncode hebben evenveel ondersteuning als de versie van httpd waarop het is gebaseerd. Vraag Adobe bij twijfel om bevestiging van het ondersteuningsniveau met betrekking tot het betreffende serverproduct. De volgende gevallen:
+1. Webservers die zijn gebaseerd op de Apache httpd-broncode, worden net zo ondersteund als de httpd-versie waarop deze is gebaseerd. In geval van twijfel, vraag Adobe om bevestiging van het steunniveau met betrekking tot het respectieve serverproduct. De volgende gevallen:
 
-   1. De HTTP-server is gebouwd met alleen officiële Apache-brondistributies, of
+   1. De HTTP-server is gemaakt met alleen officiële Apache-brondistributies, of
    1. De HTTP-server is geleverd als onderdeel van het besturingssysteem waarop deze wordt uitgevoerd. Voorbeelden: IBM® HTTP Server, Oracle HTTP Server
 
 1. Dispatcher is niet beschikbaar voor Apache 2.4.x voor Windows-besturingssystemen.
@@ -270,15 +271,15 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 
 ### Ondersteunde browsers voor gebruikersinterface voor ontwerpen {#supported-browsers-for-authoring-user-interface}
 
-De gebruikersinterface van Adobe Experience Manager werkt met de volgende clientplatforms. Alle browsers worden getest met de standaard set plug-ins en add-ons.
+De Adobe Experience Manager-gebruikersinterface werkt met de volgende clientplatforms. Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 
-De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (meestal notebooks en desktopcomputers) en tabletvormfactor (zoals Apple iPad of Microsoft® Surface). De vormfactor van de telefoon wordt niet ondersteund.
+De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans laptops en desktopcomputers) en tabletvormfactoren (zoals Apple iPad of Microsoft® Surface). De telefoonvormfactor wordt niet ondersteund.
 
 >[!NOTE]
 >
->**Ondersteuning voor browsers met snelle releasecycli:**
+>**Steun voor browsers met snelle versiecycli:**
 >
->Mozilla Firefox, Google Chrome en Microsoft® Edge brengen om de paar maanden updates uit. Adobe streeft ernaar updates voor Adobe Experience Manager te leveren om het ondersteuningsniveau te handhaven zoals hieronder vermeld voor toekomstige versies van deze browsers.
+>De release van Mozilla Firefox, Google Chrome en Microsoft® Edge wordt elke paar maanden bijgewerkt. Adobe heeft zich ertoe verbonden updates voor Adobe Experience Manager beschikbaar te stellen om het supportniveau te handhaven zoals hieronder vermeld in de komende versies van deze browsers.
 
 <table>
  <tbody>
@@ -340,7 +341,7 @@ De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (meestal not
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
 
-Over het algemeen is browserondersteuning voor websites die door AEM Sites worden geleverd, afhankelijk van de implementatie van AEM paginasjablonen, het ontwerp en de uitvoer van componenten, en is daarom in de controle van de partij die deze onderdelen implementeert.
+Over het algemeen is browserondersteuning voor websites die door AEM Sites worden weergegeven afhankelijk van de implementatie van AEM-paginasjablonen, het ontwerp en de uitvoer van componenten. Deze ondersteuning is daarom in handen van de partij die deze onderdelen implementeert.
 
 ### WebDAV-clients {#webdav-clients}
 
@@ -352,7 +353,7 @@ Wanneer u verbinding maakt met Microsoft® Windows 7+ naar een AEM-instantie die
 
    * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 
-1. Voeg de registervermelding BasicAuthLevel toe aan deze subsleutel met een waarde van 2 of meer.
+1. Voeg de BasisAuthLevel registratieingang aan deze subkey toe gebruikend een waarde van 2 of meer.
 
 ## Aanvullende platformnotities {#additional-platform-notes}
 
@@ -362,9 +363,9 @@ Deze sectie biedt speciale notities en meer gedetailleerde informatie over het u
 
 Alle elementen van Adobe Experience Manager (Instance, Dispatcher) kunnen in zowel IPv4 als IPv6 netwerken worden geïnstalleerd.
 
-De bediening is naadloos omdat er geen speciale configuratie nodig is. U geeft indien nodig een IP-adres op in de indeling die geschikt is voor uw netwerktype.
+De bewerking is naadloos omdat er geen speciale configuratie vereist is. U specificeert een IP adres gebruikend het formaat dat aan uw netwerktype, indien nodig aangewezen is.
 
-Wanneer een IP-adres moet worden opgegeven, kunt u (indien nodig) kiezen uit het volgende:
+Wanneer een IP adres moet worden gespecificeerd, kunt u (zoals vereist) van het volgende selecteren:
 
 * Een IPv6-adres. Bijvoorbeeld: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
@@ -376,15 +377,15 @@ Wanneer een IP-adres moet worden opgegeven, kunt u (indien nodig) kiezen uit het
 
 ### Vereisten voor AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media is standaard uitgeschakeld. Kijk hier om Dynamic Media[&#128279;](/help/assets/config-dynamic.md#enabling-dynamic-media) in te schakelen.
+AEM Dynamic Media is standaard uitgeschakeld. Zie hier om [ Dynamische Media ](/help/assets/config-dynamic.md#enabling-dynamic-media) toe te laten.
 
-Als Dynamic Media is ingeschakeld, zijn de volgende aanvullende technische vereisten van toepassing.
+Als Dynamische media ingeschakeld is, zijn de volgende aanvullende technische voorschriften van toepassing.
 
 >[!NOTE]
 >
->Deze systeemvereisten **zijn alleen** van toepassing als u Dynamic Media - Hybride modus gebruikt; Dynamische media - De hybride modus heeft een ingebouwde beeldserver, die alleen op bepaalde besturingssystemen is gecertificeerd.
+>Deze systeemvereisten **zijn slechts** van toepassing als u Dynamische Media - Hybride wijze gebruikt; Dynamische Media - de Hybride wijze heeft een ingebedde beeldserver, die slechts op bepaalde werkende systemen wordt verklaard.
 >
->Voor klanten van Dynamic Media die Dynamic Media - Scene7-modus uitvoeren (dat wil zeggen, **dynamicmedia_scene7** run-modus), zijn er geen aanvullende systeemvereisten; alleen dezelfde systeemvereisten als AEM. Dynamische media - De architectuur van de scène7-modus maakt gebruik van de cloudgebaseerde afbeeldingsservice en niet van de service die is ingesloten in AEM.
+>Voor Dynamische klanten van Media die Dynamische Media in werking stellen - wijze Scene7 (namelijk **dynamicmedia_scene7** looppas wijze), zijn er geen extra systeemvereisten; slechts de zelfde systeemvereisten zoals AEM. Dynamische media - Scene7 modusarchitectuur gebruikt de op wolk-gebaseerde beelddienst en niet de dienst ingebed in AEM.
 
 #### Hardware {#hardware}
 
@@ -408,7 +409,7 @@ Als u Dynamic Media gebruikt op Linux®, moet aan de volgende voorwaarden worden
 
 >[!NOTE]
 >
->**SELinux uitschakelen:** Image Serving werkt niet als SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. U verhelpt dit probleem door het bestand **/etc/selinux/config** te bewerken en de SELinux-waarde te wijzigen van:
+>**onbruikbaar makend SELinux:** Beeld Serving werkt niet met SELinux aangezet. Deze optie is standaard ingeschakeld. U verhelpt dit probleem door het bestand **/etc/selinux/config** te bewerken en de SELinux-waarde te wijzigen van:
 >
 >`SELINUX=enforcing` **aan** `SELINUX=disabled`
 
@@ -418,11 +419,11 @@ Als u Dynamic Media gebruikt op Linux®, moet aan de volgende voorwaarden worden
 >
 >De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
 >
->Daarom raadt Adobe aan om, als u een dergelijk systeem gebruikt, NUMA uit te schakelen met de **opstartoptie numa=off** om te voorkomen dat de kernel deze processen doodt.
+>Daarom adviseert Adobe dat als u zulk een systeem in werking stelt dat u NUMA gebruikend de **numa=off** laarsoptie uitzet om kernel te vermijden die deze processen doden.
 
 >[!NOTE]
 >
->**Serverhostnaam moet worden omgezet:** Zorg ervoor dat de hostnaam van de server kan worden omgezet naar een IP-adres. Als dat niet mogelijk is, voeg dan de volledig gekwalificeerde hostnaam en het IP-adres toe aan **/etc/hosts**:
+>**de gastheernaam van de Server moet oplossen:** ervoor zorgen dat de gastheernaam van de server aan een IP adres oplosbaar is. Als dat niet mogelijk is, voeg volledig - gekwalificeerde gastheernaam en het IP adres aan **/etc/hosts** toe:
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -448,7 +449,7 @@ Voor Windows x86:
 #### macOS {#macos}
 
 * 10.9.x en hoger
-* Alleen ondersteund voor proef- en demodoeleinden
+* Alleen ondersteund voor proefversie en demo-doeleinden
 
 ### Eisen voor AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
@@ -461,11 +462,11 @@ Voor Windows x86:
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> nieuwste versie</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -473,7 +474,7 @@ Voor Windows x86:
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 (Afgeschaft)</td>
+   <td>Microsoft® Office 2016 (afgekeurd)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
@@ -489,11 +490,11 @@ Voor Windows x86:
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2016 (afgeschaft)<br /> </td>
-   <td>BAR</td>
+   <td>Microsoft® Publisher 2016 (Afgekeurd) <br /> </td>
+   <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016 (Afgeschaft)<br /> </td>
+   <td>Microsoft® Project 2016 (Afgekeurd) <br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
@@ -513,7 +514,7 @@ Voor Windows x86:
 >
 >Daarnaast
 >
->* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
+>* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
 >* PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
 >* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
@@ -521,7 +522,7 @@ Voor Windows x86:
 >* PDF Generator ondersteunt Microsoft® Office 365 niet.
 >* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
->* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service biedt geen ondersteuning voor Microsoft® Windows 10.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.
@@ -547,7 +548,7 @@ Voor Windows x86:
 
 Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 
-* **Besturingssystemen:**
+* **Werkende Systemen:**
 
    * Linux® (32-bits en 32-bits toepassingsondersteuning op 64-bits systemen). Voor stappen om cliëntbibliotheken met 32 bits te installeren, zie [ hoe te de extractie van XMP en schrijven-terug op Rode Hoed® Linux® met 64 bits ](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) toelaten.
 
@@ -558,4 +559,4 @@ Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platf
 
 ### Vereisten voor AEM Assets om zwaar materiaal met metagegevens te verwerken op Linux® {#assetsonlinux}
 
-Het XMPFilesProcessor-proces vereist dat de bibliotheek GLIBC_2.14 werkt om te werken. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Het gebruik van een eerdere versie van GLIBC leidt tot fouten in logboeken die beginnen met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .

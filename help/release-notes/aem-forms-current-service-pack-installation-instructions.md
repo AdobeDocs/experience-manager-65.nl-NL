@@ -113,7 +113,7 @@ Navigeer naar de juiste map en van een shell en type `./aem65_cfp_install.bin` .
 1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie-updates toe te passen op de geïnstalleerde bestanden.
 1. **[slechts voor Vensters ]:** voer één van de volgende stap uit:
 
-   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Voer **Manager van de Configuratie** in werking door het {**dossier 3} te gebruiken 2} ConfigurationManager.bat in `[aem-forms root]\configurationManager\bin`.**
+   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Voer **Manager van de Configuratie** in werking door het {**dossier 3} te gebruiken 2&rbrace; ConfigurationManager.bat in `[aem-forms root]\configurationManager\bin`.**
 
    * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Alvorens **Manager van de Configuratie in werking te stellen** gebruikend **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer aan *`<AEMForms_Install_Dir>\configurationManager\bin`* folder en vervang **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** met recentste [ ConfigurationManager.lax ](/help/assets/ConfigurationManager.lax) en [ ConfigurationManager_IPV6.lax ](/help/assets/ConfigurationManager_IPv6.lax) dossiers, Onderzoek, en vervang **as- 1.4.1.1 .jar** met **as- 1.4.1.2 .jar** in deze twee dossiers.
 

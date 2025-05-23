@@ -381,7 +381,7 @@ In ![ pictogram van de Hammer ](https://spectrum.adobe.com/static/icons/workflow
 
 * De `coralui-component-dialog` heeft de plaatsing van `cq-dialog-actions` gewijzigd, wat mogelijk van invloed is op de lay-out of het gedrag van actieknoppen in dialoogvensters in AEM. (NPR-42294)
 * De functie van de kleurkiezer in AEM functioneerde niet goed. Als u deze optie opent, wordt een leeg modaal item weergegeven, zodat de kleur niet kan worden geselecteerd. Dit probleem is ontstaan na de installatie van AEM 6.5.20 in de Stage-omgeving. De kleurenplukker werkte correct *voorafgaand* aan de update. (NPR-42163)
-* In ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **Hulpmiddelen** > **Werkschema** > **Modellen** > selecteert om het even welk model > **Werkschema van het Begin**, het Browse pictogram mist van het gebied van de Lading in het **de dialoogvakje van het Werkschema van de Looppas**. ![ (NPR-42162)
+* In ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **Hulpmiddelen** > **Werkschema** > **Modellen** > selecteert om het even welk model > **Werkschema van het Begin**, het Browse pictogram mist van het gebied van de Lading in het **de dialoogvakje van het Werkschema van de Looppas**.  (NPR-42162)
 
 
 <!-- #### WCM{#foundation-wcm-6522}
@@ -399,7 +399,7 @@ In ![ pictogram van de Hammer ](https://spectrum.adobe.com/static/icons/workflow
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.22.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip).
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.22.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]

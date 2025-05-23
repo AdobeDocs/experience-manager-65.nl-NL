@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 952b4d675d2f0291d1761cf2e7d9e459362ac404
+source-git-commit: e1a8a73e10101a380183658d64f08a7dc5933ee0
 workflow-type: tm+mt
-source-wordcount: '7747'
+source-wordcount: '7757'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,7 @@ Probleem verholpen met Dynamic Media - hybride implementaties waarbij updates va
 
 **Download Hybride toe:voegen-op pakket**
 
-Het Hybrid Add-on-pakket is beschikbaar op Software Distribution en is openbaar toegankelijk wanneer AEM 6.5.23 officieel op 22 mei 2025 wordt uitgebracht.
-
-[ Download Dynamische Media - Hybride toe:voegen-op pakket ](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip).
+De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media {** in de Distributie van de Software.
 
 
 ## Einde van ondersteuning voor SSL 2.0 en 3.0 en TLS 1.0 en 1.1.
@@ -237,11 +235,11 @@ Als u Dynamische media wilt inschakelen, moet u de uitvoermodus Dynamische media
    >
    >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analytische gegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
    >
-   >Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2020-07-25.log`
+   Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2020-07-25.log`
    >
-   >* s7access-&lt;yyyy>&lt;dd>.log - In het s7access-logboek wordt elke aanvraag vastgelegd die via `/is/image` en `/is/content` aan Dynamic Media is gedaan.
+   * s7access-&lt;yyyy>&lt;dd>.log - In het s7access-logboek wordt elke aanvraag vastgelegd die via `/is/image` en `/is/content` aan Dynamic Media is gedaan.
    >
-   >Deze logboeken worden alleen gebruikt wanneer Dynamische media is ingeschakeld. Zij zijn niet inbegrepen in het **Volledige** pakket van de Download dat van de `system/console/status-Bundlelist` pagina wordt geproduceerd; wanneer het roepen van de Steun van de Klant als u een Dynamische kwestie van Media hebt, voeg beide logboeken aan de kwestie toe.
+   Deze logboeken worden alleen gebruikt wanneer Dynamische media is ingeschakeld. Zij zijn niet inbegrepen in het **Volledige** pakket van de Download dat van de `system/console/status-Bundlelist` pagina wordt geproduceerd; wanneer het roepen van de Steun van de Klant als u een Dynamische kwestie van Media hebt, voeg beide logboeken aan de kwestie toe.
 
 ### Als u Experience Manager op een andere poort of een ander contextpad hebt geïnstalleerd... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -256,11 +254,11 @@ In Experience Manager:
 * Het **zelf-domein** in [ ExternalAlizer ](/help/sites-developing/externalizer.md) wordt gebruikt om zowel het havenaantal als contextweg terug te winnen.
 * Als geen **zelf-domein** wordt gevormd, worden het havenaantal en de contextweg teruggewonnen van de dienst van HTTP van Jetty.
 
-In een plaatsing van de OORLOG van Experience Manager QuickStart, kunnen het havenaantal en de contextweg niet worden afgeleid, daarom moet u a **zelf-domein** vormen. Zie {de documentatie van 0} ExternalAlizer [&#128279;](/help/sites-developing/externalizer.md) op hoe te om **zelf-domein** te vormen.
+In een plaatsing van de OORLOG van Experience Manager QuickStart, kunnen het havenaantal en de contextweg niet worden afgeleid, daarom moet u a **zelf-domein** vormen. Zie {de documentatie van 0} ExternalAlizer ](/help/sites-developing/externalizer.md) op hoe te om **zelf-domein** te vormen.[
 
 >[!NOTE]
 >
->In een [ Experience Manager Quickstart stand-alone plaatsing ](/help/sites-deploying/deploy.md), a **zelf-domein** moet over het algemeen niet worden gevormd omdat het havenaantal en de contextweg auto-gevormd kunnen zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **zelf-domein** vormen.
+In een [ Experience Manager Quickstart stand-alone plaatsing ](/help/sites-deploying/deploy.md), a **zelf-domein** moet over het algemeen niet worden gevormd omdat het havenaantal en de contextweg auto-gevormd kunnen zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **zelf-domein** vormen.
 
 ## Dynamische media uitschakelen  {#disabling-dynamic-media}
 
@@ -282,9 +280,9 @@ Als u Dynamische media wilt uitschakelen nadat u deze hebt ingeschakeld, verwijd
 
    >[!NOTE]
    >
-   >Nadat de uitvoeringsmodus Dynamische media is uitgeschakeld, wordt de workflowstap die de uitvoering van `cqdam.pyramid.tiff` genereert, automatisch overgeslagen. De functie schakelt ook ondersteuning voor dynamische uitvoering en andere functies voor dynamische media uit.
+   Nadat de uitvoeringsmodus Dynamische media is uitgeschakeld, wordt de workflowstap die de uitvoering van `cqdam.pyramid.tiff` genereert, automatisch overgeslagen. De functie schakelt ook ondersteuning voor dynamische uitvoering en andere functies voor dynamische media uit.
    >
-   >Wanneer de uitvoeringsmodus Dynamische media is uitgeschakeld nadat de Experience Manager-server is geconfigureerd, zijn alle elementen die in die uitvoeringsmodus zijn geüpload nu ongeldig.
+   Wanneer de uitvoeringsmodus Dynamische media is uitgeschakeld nadat de Experience Manager-server is geconfigureerd, zijn alle elementen die in die uitvoeringsmodus zijn geüpload nu ongeldig.
 
 ## (Optioneel) Dynamische voorinstellingen en configuraties van media migreren van 6,3 naar 6,5 Nul downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -292,7 +290,7 @@ Als u Experience Manager - Dynamic Media upgradet van 6.3 naar 6.5 (die nu de mo
 
 >[!NOTE]
 >
->Als u uw Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
+Als u uw Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
 
 Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de standaard, out-of-box kijker vooraf instelt kopiëren die oorspronkelijk met Dynamische Media door het volgende Linux® krullbevel in werking te stellen kwam:
 
@@ -317,13 +315,13 @@ Nadat u de replicatieagent hebt gevormd, moet u [ bevestigen en testen dat het m
 
 >[!NOTE]
 >
->De standaardgeheugenlimiet voor het maken van PTIFF is 3 GB voor alle workflows. U kunt bijvoorbeeld één afbeelding verwerken die 3 GB geheugen vereist terwijl andere workflows worden gepauzeerd, of u kunt 10 afbeeldingen parallel verwerken die elk 300 MB geheugen vereisen.
+De standaardgeheugenlimiet voor het maken van PTIFF is 3 GB voor alle workflows. U kunt bijvoorbeeld één afbeelding verwerken die 3 GB geheugen vereist terwijl andere workflows worden gepauzeerd, of u kunt 10 afbeeldingen parallel verwerken die elk 300 MB geheugen vereisen.
 >
->De geheugenlimiet is configureerbaar en past bij de beschikbaarheid van systeembronnen en het type afbeeldingsinhoud dat wordt verwerkt. Als u vele grote activa hebt en genoeg geheugen op het systeem hebt, kunt u deze grens verhogen om ervoor te zorgen dat de beelden parallel worden verwerkt.
+De geheugenlimiet is configureerbaar en past bij de beschikbaarheid van systeembronnen en het type afbeeldingsinhoud dat wordt verwerkt. Als u vele grote activa hebt en genoeg geheugen op het systeem hebt, kunt u deze grens verhogen om ervoor te zorgen dat de beelden parallel worden verwerkt.
 >
->Een afbeelding waarvoor meer dan de maximale geheugenlimiet nodig is, wordt afgewezen.
+Een afbeelding waarvoor meer dan de maximale geheugenlimiet nodig is, wordt afgewezen.
 >
->Als u de geheugenlimiet voor het maken van PTIFF wilt wijzigen, navigeert u naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** en wijzigt u de waarde **[!UICONTROL maxMemory]** .
+Als u de geheugenlimiet voor het maken van PTIFF wilt wijzigen, navigeert u naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** en wijzigt u de waarde **[!UICONTROL maxMemory]** .
 
 ### Verificatie instellen {#setting-up-authentication}
 
@@ -347,7 +345,7 @@ Stel replicatieverificatie in bij de auteur, zodat u afbeeldingen kunt replicere
 
    >[!NOTE]
    >
-   >Herinner het wachtwoord omdat u het moet opnieuw ingaan wanneer u de Agent van de Replicatie later vormt.
+   Herinner het wachtwoord omdat u het moet opnieuw ingaan wanneer u de Agent van de Replicatie later vormt.
 
    ![ chlimage_1-508 ](assets/chlimage_1-508.png)
 
@@ -406,10 +404,10 @@ Replication test succeeded
 
 >[!NOTE]
 >
->U kunt ook op een van de volgende manieren controleren:
+U kunt ook op een van de volgende manieren controleren:
 >
->* Controleer de replicatielogboeken om ervoor te zorgen dat het middel wordt herhaald.
->* Publiceer een afbeelding. Selecteer de afbeelding en selecteer **[!UICONTROL Viewers]** in het keuzemenu en selecteer vervolgens een voorinstelling voor de viewer. Selecteer **[!UICONTROL URL]**. Kopieer en plak het URL-pad in de browser om te controleren of de afbeelding zichtbaar is.
+* Controleer de replicatielogboeken om ervoor te zorgen dat het middel wordt herhaald.
+* Publiceer een afbeelding. Selecteer de afbeelding en selecteer **[!UICONTROL Viewers]** in het keuzemenu en selecteer vervolgens een voorinstelling voor de viewer. Selecteer **[!UICONTROL URL]**. Kopieer en plak het URL-pad in de browser om te controleren of de afbeelding zichtbaar is.
 >
 
 ### Verificatie problemen oplossen {#troubleshooting-authentication}
@@ -572,7 +570,7 @@ Als onderdeel van de configuratie moet u een registratie-id, een URL voor de vid
 
 >[!NOTE]
 >
->Voordat u Dynamic Media Cloud Services instelt, moet u de publicatie-instantie instellen. U moet ook replicatie-instellingen hebben voordat u Dynamic Media Cloud Services kunt configureren.
+Voordat u Dynamic Media Cloud Services instelt, moet u de publicatie-instantie instellen. U moet ook replicatie-instellingen hebben voordat u Dynamic Media Cloud Services kunt configureren.
 
 **om de Dynamische Diensten van de Wolk van Media te vormen:**
 
@@ -713,7 +711,7 @@ Zie [ publiceren kijker vooraf instelt ](/help/assets/managing-viewer-presets.md
 
 >[!NOTE]
 >
->Standaard geeft het systeem verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert en verschillende voorinstellingen voor viewers wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal dat u ziet verhogen of verlagen. Zie [ verhogen het aantal beeld vooraf instelt die ](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) worden getoond of [ verhoogt het aantal kijker vooraf instelt die ](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display) worden getoond.
+Standaard geeft het systeem verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert en verschillende voorinstellingen voor viewers wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal dat u ziet verhogen of verlagen. Zie [ verhogen het aantal beeld vooraf instelt die ](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) worden getoond of [ verhoogt het aantal kijker vooraf instelt die ](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display) worden getoond.
 
 ## Elementen filteren voor replicatie {#filtering-assets-for-replication}
 
@@ -776,7 +774,7 @@ Als u Dynamische Media voor (1) beeld in productie *of* (2) beeld en video gebru
 
 >[!NOTE]
 >
->Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie hebben.
+Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie hebben.
 
 ### Elementfilters instellen voor alleen-video-implementaties {#setting-up-asset-filters-for-video-only-deployments}
 
@@ -818,9 +816,9 @@ Met deze stappen stelt u de Experience Manager-publicatie-instantie zo in dat de
 
 >[!NOTE]
 >
->Als er vele verschillende filters in een auteur zijn, heeft elke agent een verschillende gebruiker nodig die aan het wordt toegewezen. De granietcode dwingt het model van één filter per gebruiker af. Zorg altijd voor een andere gebruiker voor elke filterinstelling.
+Als er vele verschillende filters in een auteur zijn, heeft elke agent een verschillende gebruiker nodig die aan het wordt toegewezen. De granietcode dwingt het model van één filter per gebruiker af. Zorg altijd voor een andere gebruiker voor elke filterinstelling.
 >
->Gebruikt u meer dan één filter op een server? Bijvoorbeeld, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery. Als zo, dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in de `jcr:content` knoop wordt toegewezen. Zie de volgende afbeelding:
+Gebruikt u meer dan één filter op een server? Bijvoorbeeld, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery. Als zo, dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in de `jcr:content` knoop wordt toegewezen. Zie de volgende afbeelding:
 
 ![ beeld-2018-01-16-10-26-28-465 ](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -871,7 +869,7 @@ Het vormen van de Dynamische Server van het Beeld van Media impliceert het uitge
 
 >[!NOTE]
 >
->De dynamische Media werken uit-van-de-doos [ nadat het ](#enabling-dynamic-media) wordt toegelaten. Nochtans, kunt u naar keuze verkiezen om uw installatie te verfijnen door de Dynamische Server van het Beeld van Media te vormen om aan bepaalde specificaties of vereisten te voldoen.
+De dynamische Media werken uit-van-de-doos [ nadat het ](#enabling-dynamic-media) wordt toegelaten. Nochtans, kunt u naar keuze verkiezen om uw installatie te verfijnen door de Dynamische Server van het Beeld van Media te vormen om aan bepaalde specificaties of vereisten te voldoen.
 
 **Vereiste** - *vóór* u de Dynamische Server van het Beeld van Media vormt, zorg ervoor dat uw VM van Windows® een installatie van de Visuele C++ Bibliotheken Microsoft® omvat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [ Microsoft® Visuele C++ 2010 Redistributable Pakket (x64) hier downloaden ](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
@@ -890,7 +888,7 @@ Dynamische instellingen voor Media Image Server configureren:
 
    >[!NOTE]
    >
-   >Gewoonlijk hoeven de standaardwaarden niet te worden gewijzigd. Als u de standaardwaarden echter wijzigt, moet u de bundel opnieuw starten voordat de wijzigingen van kracht worden.
+   Gewoonlijk hoeven de standaardwaarden niet te worden gewijzigd. Als u de standaardwaarden echter wijzigt, moet u de bundel opnieuw starten voordat de wijzigingen van kracht worden.
 
    | Eigenschap | Standaardwaarde | Beschrijving |
    | --- | --- | --- |
@@ -907,7 +905,7 @@ Dynamische instellingen voor Media Image Server configureren:
 
    >[!NOTE]
    >
-   >De dynamische Server van het Beeld van Media gebruikt zijn eigen schijfgeheime voorgeheugen om reacties in het voorgeheugen onder te brengen. De Experience Manager HTTP-cache en de Dispatcher kunnen niet worden gebruikt om reacties van Dynamic Media Image Server in cache op te slaan.
+   De dynamische Server van het Beeld van Media gebruikt zijn eigen schijfgeheime voorgeheugen om reacties in het voorgeheugen onder te brengen. De Experience Manager HTTP-cache en de Dispatcher kunnen niet worden gebruikt om reacties van Dynamic Media Image Server in cache op te slaan.
 
    | Eigenschap | Standaardwaarde | Beschrijving |
    |---|---|---|
@@ -938,14 +936,14 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
 
 | Eigenschap | Standaardwaarde | Beschrijving |
 | --- | --- | --- |
-| `bkgcolor` | `FFFFFF` | Standaardachtergrondkleur. RGB-waarde die wordt gebruikt om elk gebied van een antwoordafbeelding dat geen werkelijke afbeeldingsgegevens bevat, in te vullen. Zie ook [ BkgColor ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
-| `defaultpix` | `300,300` | Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.<br> specificeerde als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.<br> zie ook [ DefaultPix ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient.<br> gewoonlijk, echter, gebruikt u een kijker vooraf ingesteld of beeld vooraf ingesteld om activa te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken. |
-| `defaultthumbpix` | `100,100` | Standaardminiatuurgrootte. Gebruikt in plaats van kenmerk::DefaultPix voor miniatuurverzoeken (`req=tmb`).<br> de server beperkt antwoordbeelden om niet groter te zijn dan deze breedte en hoogte. Deze actie is waar als een miniatuurverzoek (`req=tmb`) niet expliciet de grootte opgeeft en niet expliciet de weergavegrootte opgeeft met `wid=` , `hei=` of `scl=` .<br> specificeerde als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden.<br> is niet op genestelde/ingebedde verzoeken van toepassing.<br> zie ook [ DefaultThumbPix ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
-| `expiration` | `36000000` | De standaardtijd voor de clientcache om te live gaan. Biedt een standaardvervalinterval voor het geval dat een bepaalde catalogusrecord geen geldige catalogus bevat::Expiration value.<br> Echte aantal, 0 of groter. Aantal milliseconden tot aan vervaldatum sinds de antwoordgegevens werden geproduceerd. Reeks aan 0 om altijd het antwoordbeeld onmiddellijk te verlopen, dat effectief cliënt caching onbruikbaar maakt. Deze waarde wordt standaard ingesteld op 10 uur. Als een nieuwe afbeelding wordt gepubliceerd, duurt het tien uur voordat de oude afbeelding de cache van de gebruiker verlaat. Neem contact op met de Klantenondersteuning als u de cache sneller moet wissen.<br> zie ook [ Vervalsing ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=nl-NL) in het Beeld dat API dient. |
-| `jpegquality` | `80` | Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.<br> Geheel getal en vlag van het Geheel, die door een komma wordt gescheiden. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 om de downsampling van RGB-chromaticiteit door JPEG-coders uit te schakelen.<br> zie ook [ JpegQuality ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
-| `maxpix` | `2000,2000` | Limiet voor afbeeldingsgrootte beantwoorden. Maximale breedte en hoogte van antwoordafbeelding die aan de client worden geretourneerd.<br> de server keert een fout terug als een verzoek een antwoordbeeld veroorzaakt waarvan breedte of hoogte groter is dan attribuut::MaxPix.<br> zie ook [ MaxPix ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
-| `resmode` | `SHARP2` | Standaardmodus voor opnieuw berekenen van pixels. Hiermee geeft u de standaardkenmerken voor resampling en interpolatie op die moeten worden gebruikt voor het schalen van afbeeldingsgegevens.<br> Gebruikt wanneer `resMode=` niet in een verzoek wordt gespecificeerd.<br> Toegestane waarden zijn `BILIN`, `BICUB` of `SHARP2` .<br> Enum. Stel dit in op 2 voor de interpolatiemodus `bilin` , 3 voor `bicub` of 4 voor `sharp2` . Gebruik `sharp2` voor de beste resultaten.<br> zie ook [ ResMode ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
-| `resolution` | `72` | Standaardobjectresolutie. Biedt een standaardobjectresolutie voor het geval een bepaalde catalogusrecord geen geldige catalogus bevat::resolutiewaarde.<br> Echte aantal, groter dan 0. Doorgaans uitgedrukt als pixels per inch, maar ook in andere eenheden, zoals pixels per meter.<br> zie ook [ Resolutie ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
+| `bkgcolor` | `FFFFFF` | Standaardachtergrondkleur. RGB-waarde die wordt gebruikt om elk gebied van een antwoordafbeelding dat geen werkelijke afbeeldingsgegevens bevat, in te vullen. Zie ook [ BkgColor ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) in het Beeld dat API dient. |
+| `defaultpix` | `300,300` | Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.<br> specificeerde als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.<br> zie ook [ DefaultPix ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) in het Beeld dat API dient.<br> gewoonlijk, echter, gebruikt u een kijker vooraf ingesteld of beeld vooraf ingesteld om activa te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken. |
+| `defaultthumbpix` | `100,100` | Standaardminiatuurgrootte. Gebruikt in plaats van kenmerk::DefaultPix voor miniatuurverzoeken (`req=tmb`).<br> de server beperkt antwoordbeelden om niet groter te zijn dan deze breedte en hoogte. Deze actie is waar als een miniatuurverzoek (`req=tmb`) niet expliciet de grootte opgeeft en niet expliciet de weergavegrootte opgeeft met `wid=` , `hei=` of `scl=` .<br> specificeerde als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden.<br> is niet op genestelde/ingebedde verzoeken van toepassing.<br> zie ook [ DefaultThumbPix ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) in het Beeld dat API dient. |
+| `expiration` | `36000000` | De standaardtijd voor de clientcache om te live gaan. Biedt een standaardvervalinterval voor het geval dat een bepaalde catalogusrecord geen geldige catalogus bevat::Expiration value.<br> Echte aantal, 0 of groter. Aantal milliseconden tot aan vervaldatum sinds de antwoordgegevens werden geproduceerd. Reeks aan 0 om altijd het antwoordbeeld onmiddellijk te verlopen, dat effectief cliënt caching onbruikbaar maakt. Deze waarde wordt standaard ingesteld op 10 uur. Als een nieuwe afbeelding wordt gepubliceerd, duurt het tien uur voordat de oude afbeelding de cache van de gebruiker verlaat. Neem contact op met de Klantenondersteuning als u de cache sneller moet wissen.<br> zie ook [ Vervalsing ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in het Beeld dat API dient. |
+| `jpegquality` | `80` | Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.<br> Geheel getal en vlag van het Geheel, die door een komma wordt gescheiden. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 om de downsampling van RGB-chromaticiteit door JPEG-coders uit te schakelen.<br> zie ook [ JpegQuality ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) in het Beeld dat API dient. |
+| `maxpix` | `2000,2000` | Limiet voor afbeeldingsgrootte beantwoorden. Maximale breedte en hoogte van antwoordafbeelding die aan de client worden geretourneerd.<br> de server keert een fout terug als een verzoek een antwoordbeeld veroorzaakt waarvan breedte of hoogte groter is dan attribuut::MaxPix.<br> zie ook [ MaxPix ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) in het Beeld dat API dient. |
+| `resmode` | `SHARP2` | Standaardmodus voor opnieuw berekenen van pixels. Hiermee geeft u de standaardkenmerken voor resampling en interpolatie op die moeten worden gebruikt voor het schalen van afbeeldingsgegevens.<br> Gebruikt wanneer `resMode=` niet in een verzoek wordt gespecificeerd.<br> Toegestane waarden zijn `BILIN`, `BICUB` of `SHARP2` .<br> Enum. Stel dit in op 2 voor de interpolatiemodus `bilin` , 3 voor `bicub` of 4 voor `sharp2` . Gebruik `sharp2` voor de beste resultaten.<br> zie ook [ ResMode ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) in het Beeld dat API dient. |
+| `resolution` | `72` | Standaardobjectresolutie. Biedt een standaardobjectresolutie voor het geval een bepaalde catalogusrecord geen geldige catalogus bevat::resolutiewaarde.<br> Echte aantal, groter dan 0. Doorgaans uitgedrukt als pixels per inch, maar ook in andere eenheden, zoals pixels per meter.<br> zie ook [ Resolutie ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) in het Beeld dat API dient. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Deze waarden vertegenwoordigen een momentopname van videoplaytime en tot [ encoding.com ](https://www.encoding.com/) overgegaan. Zie [ Ongeveer videoduimnagel ](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) voor meer informatie. |
 
 ## Dynamisch kleurbeheer voor media configureren {#configuring-dynamic-media-color-management}
@@ -960,13 +958,13 @@ U kunt Dynamisch mediakleurbeheer configureren en voorinstellingen voor afbeeldi
 
 Gevallen voor geavanceerd gebruik kunnen de optie `icc=` handmatig configureren gebruiken om expliciet een kleurprofiel voor de uitvoer te selecteren:
 
-* `icc` - [ https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=nl-NL ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=nl-NL)
+* `icc` - [ https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` - [ https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=nl-NL ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=nl-NL)
+* `iccEmbed` - [ https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 >
->De standaardreeks van Adobe kleurenprofielen is slechts beschikbaar als u [ Pak 12445 van de Eigenschap van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) geïnstalleerd hebt. Alle eigenschapspakken en de dienstpakken zijn beschikbaar bij [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 biedt Adobe-kleurprofielen.
+De standaardreeks van Adobe kleurenprofielen is slechts beschikbaar als u [ Pak 12445 van de Eigenschap van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) geïnstalleerd hebt. Alle eigenschapspakken en de dienstpakken zijn beschikbaar bij [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 biedt Adobe-kleurprofielen.
 
 
 ### Functiepakket 12445 installeren {#installing-feature-pack}
@@ -1010,55 +1008,55 @@ Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaar
    <td><strong>Beschrijving</strong></td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=nl-NL">iccprofilergb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard RGB-kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=nl-NL">icprofilecmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">icprofilecmyk</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard CMYK-kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=nl-NL">icprofilegray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">icprofilegray</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaardkleurprofiel Grijs.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=nl-NL">iccprofilesrcrgb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard RGB-kleurprofiel dat wordt gebruikt voor RGB-afbeeldingen zonder ingesloten kleurprofiel</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=nl-NL">iccprofilesrcmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrcmyk</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard CMYK-kleurprofiel dat wordt gebruikt voor CMYK-afbeeldingen zonder ingesloten kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=nl-NL">iccprofilesrcgray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard grijskleurprofiel dat wordt gebruikt voor CMYK-afbeeldingen zonder ingesloten kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=nl-NL">icblackpointcompensatie</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">icblackpointcompensatie</a></td>
    <td>Boolean</td>
    <td>Waar</td>
    <td>Hiermee wordt opgegeven of zwartpuntcompensatie wordt toegepast tijdens kleurcorrectie. Adobe raadt aan dat deze instelling is ingeschakeld.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=nl-NL">icdithering</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">icdithering</a></td>
    <td>Boolean</td>
    <td>Onwaar</td>
    <td>Hiermee bepaalt u of dithering wordt toegepast tijdens kleurcorrectie.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=nl-NL">iccrenderintent</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
    <td>String</td>
    <td>relatief</td>
    <td><p>Geeft de render-intentie aan. Acceptabele waarden zijn: <strong> perceptual, relative, saturation, absolute. </strong><i></i> Adobe adviseert <strong> relatief </strong><i></i> als gebrek.</p> </td>
@@ -1068,7 +1066,7 @@ Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaar
 
 >[!NOTE]
 >
->Namen van eigenschappen zijn hoofdlettergevoelig en moeten allemaal kleine letters zijn.
+Namen van eigenschappen zijn hoofdlettergevoelig en moeten allemaal kleine letters zijn.
 
 **Lijst van het Profiel van de Kleur**
 
@@ -1279,23 +1277,23 @@ Zie [ leverend Dynamische Media Assets ](/help/assets/delivering-dynamic-media-a
   <tr>
    <td>Insluitcode van een viewer kopiëren</td>
    <td><p>In het dialoogvenster Code insluiten kopiëren wordt een codefragment weergegeven dat lijkt op het volgende (codevoorbeeld is alleen bedoeld voor demonstratiedoeleinden):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>Waar <code>PUBLISHNODE</code> verwijst naar het normale Experience Manager-publicatieknooppunt en <code>IMAGESERVICEPUBLISHNODE</code> naar de URL van de Image Service.</p> <p>Zie ook <a href="/help/assets/delivering-dynamic-media-assets.md"> leverend Dynamische Media Assets </a>.</p> </td>
   </tr>
  </tbody>

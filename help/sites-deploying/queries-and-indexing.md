@@ -10,9 +10,9 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3051'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit artikel gaat over het vormen van indexen in AEM 6. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>Dit artikel gaat over het configureren van indexen in AEM 6. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Inleiding {#introduction}
 
@@ -212,6 +212,10 @@ Het enige gevonden document dat beide termen bevat, is 200, zoals in het onderst
 
 Wanneer meerdere items worden gevonden, worden deze op score gesorteerd.
 
+>[!NOTE]
+>
+>Het zoekmechanisme dat in deze sectie wordt beschreven gebruikt Lucene indexering, niet gedeeltelijke aanpassing zoals het Linux `grep` bevel.
+
 ### De index van de eigenschap Lucene {#the-lucene-property-index}
 
 Sinds **Oak 1.0.8**, kan Lucene worden gebruikt om indexen tot stand te brengen die bezitsbeperkingen impliceren die niet full-text zijn.
@@ -362,13 +366,13 @@ Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestand
 
 Het doel van de index Solr is full-text onderzoek maar het kan ook worden gebruikt om onderzoek door weg, bezitsbeperkingen, en primaire typebeperkingen te indexeren. Dit betekent dat de Solr-index in Oak kan worden gebruikt voor elk type JCR-query.
 
-De integratie in AEM gebeurt op het niveau van de opslagplaats zodat Solr één van de mogelijke indexen is die in Oak kunnen worden gebruikt, de nieuwe opbergingsimplementatie die met AEM wordt verscheept.
+De integratie in AEM gebeurt op het niveau van de repository, zodat Solr een van de mogelijke indexen is die gebruikt kunnen worden in Oak, de nieuwe implementatie van de repository die geleverd wordt met AEM.
 
-Het kan worden gevormd om als verre server met de AEM instantie te werken.
+Het kan worden gevormd om als verre server met de instantie van AEM te werken.
 
-### AEM configureren met één externe Solr-server {#configuring-aem-with-a-single-remote-solr-server}
+### AEM configureren met één externe server {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstantie:
+AEM kan ook worden geconfigureerd voor een externe Solr-serverinstantie:
 
 1. Download en extraheer de nieuwste versie van Solr. Voor meer informatie over hoe te om dit te doen, zie de [ documentatie van de Installatie van Apache Solr ](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elk segment in de map waarin Solr is uitgepakt:
@@ -413,7 +417,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
    ```
 
 1. Nadat beide kaarten zijn gestart, test u of alles in gebruik is door verbinding te maken met de Solr-interface op `http://localhost:8983/solr/#/`
-1. AEM starten en naar de webconsole gaan op `http://localhost:4502/system/console/configMgr`
+1. Start AEM en ga naar de webconsole op `http://localhost:4502/system/console/configMgr`
 1. Plaats de volgende configuratie onder **de verre serverconfiguratie van Oak Solr**:
 
    * Kies HTTP-URL: `http://localhost:8983/solr/`
@@ -431,7 +435,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
 
 #### Aanbevolen configuratie voor Solr {#recommended-configuration-for-solr}
 
-Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. Het past de specifieke bezitsindexen aan die reeds in AEM aanwezig zijn; gebruik niet met andere toepassingen.
+Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. De toegewezen eigenschapsindexen die al in AEM aanwezig zijn, worden aangepast en worden niet gebruikt met andere toepassingen.
 
 Om het behoorlijk te gebruiken, moet u de inhoud van het archief in de Solr Folder van het Huis direct plaatsen. Als er multi-knoopplaatsingen zijn, zou het direct onder de wortelomslag van elke knoop moeten gaan.
 
@@ -439,14 +443,14 @@ Aanbevolen Solr-configuratiebestanden
 
 [Bestand ophalen](assets/recommended-conf.zip)
 
-### Gereedschappen voor AEM indexeren {#aem-indexing-tools}
+### AEM Indexeringsgereedschappen {#aem-indexing-tools}
 
-AEM 6.1 integreert ook twee indexerende hulpmiddelen aanwezig in AEM 6.0 als deel van Adobe Consulting Services Commons toolset:
+AEM 6.1 integreert ook twee indexeringshulpmiddelen aanwezig in AEM 6.0 als deel van Adobe Consulting Services Commons toolset:
 
 1. **verklaar Vraag**, een hulpmiddel dat wordt ontworpen om beheerders te helpen begrijpen hoe de vragen worden uitgevoerd;
 1. **de Manager van de Index van Oak**, een Gebruikersinterface van het Web voor het handhaven van bestaande indexen.
 
-U kunt hen nu bereiken door naar **Hulpmiddelen te gaan - Verrichtingen - Dashboard - Diagnose** van het AEM Welkomstscherm.
+U kunt hen nu bereiken door naar **Hulpmiddelen te gaan - Verrichtingen - Dashboard - Diagnose** van het Welkome scherm van AEM.
 
 Voor meer informatie over hoe te om hen te gebruiken, zie de [ documentatie van het Dashboard van Verrichtingen ](/help/sites-administering/operations-dashboard.md).
 

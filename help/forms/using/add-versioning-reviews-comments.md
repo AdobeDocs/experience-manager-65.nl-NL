@@ -1,12 +1,12 @@
 ---
-title: Voeg versies, opmerkingen en annotaties toe die u in AEM 6.5 aanpasbare vorm wilt gebruiken.
-description: Gebruik AEM 6.5 aangepaste basiscomponenten van formulieren om opmerkingen, annotaties en versies toe te voegen aan een adaptief formulier.
+title: Voeg versies, opmerkingen en annotaties toe aan het adaptieve formulier AEM 6.5.
+description: Gebruik AEM 6.5-componenten voor aangepaste formulieren om opmerkingen, annotaties en versies toe te voegen aan een adaptief formulier.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
+source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,20 @@ ht-degree: 0%
 # Versioning, revisie en opmerkingen op een adaptief formulier
 
 <!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+<span class="preview"> This feature is under the early adopter program. If you're interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
 
 <span class="preview"> Deze eigenschap wordt niet toegelaten door gebrek. U kunt van uw officieel adres aan aem-forms-ea@adobe.com schrijven om toegang tot de eigenschap te verzoeken.</span>
 
 Met Adaptieve Core-componenten van formulieren kunnen auteurs van formulieren versies, opmerkingen en annotaties toevoegen aan formulieren. Deze functies vereenvoudigen de ontwikkeling van formulieren doordat gebruikers meerdere versies kunnen maken en beheren, door opmerkingen kunnen samenwerken en notities kunnen toevoegen aan specifieke formuliersecties, waardoor het samenstellen van formulieren gemakkelijker wordt.
 
+Bekijk deze stapsgewijze video voor versioning, opmerkingen en annotatiefuncties in een adaptief formulier.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463265)
+
 ## Vereiste {#prerequisite-versioning}
 
-Om versioning, het becommentariëren, en annotatieeigenschappen in een Aanpassings Vorm te gebruiken, zorg ervoor dat de [ Aangepaste Componenten van de Kern van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw AEM 6.5 milieu van Forms wordt toegelaten.
+Om versioning, het becommentariëren, en annotatieeigenschappen in een Aanpassings Vorm te gebruiken, zorg ervoor dat de [ Aangepaste Componenten van de Kern van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw milieu van AEM 6.5 Forms wordt toegelaten.
 
 ## Adaptieve formulierversie {#adaptive-form-versioning}
 

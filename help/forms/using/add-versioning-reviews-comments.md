@@ -27,7 +27,7 @@ Bekijk deze stapsgewijze video voor versioning, opmerkingen en annotatiefuncties
 
 ## Vereiste {#prerequisite-versioning}
 
-Om versioning, het becommentariëren, en annotatieeigenschappen in een Aanpassings Vorm te gebruiken, zorg ervoor dat de [ Aangepaste Componenten van de Kern van de Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw milieu van AEM 6.5 Forms wordt toegelaten.
+Om versioning, het becommentariëren, en annotatieeigenschappen in een Aanpassings Vorm te gebruiken, zorg ervoor dat de [ Aangepaste Componenten van de Kern van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw milieu van AEM 6.5 Forms wordt toegelaten.
 
 ## Adaptieve formulierversie {#adaptive-form-versioning}
 

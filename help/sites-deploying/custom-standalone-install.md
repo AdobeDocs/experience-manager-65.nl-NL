@@ -1,22 +1,22 @@
 ---
 title: Aangepaste standalone installatie
-description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM.
+description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM-instantie.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
 
 # Aangepaste standalone installatie{#custom-standalone-install}
 
-In deze sectie worden de opties beschreven die beschikbaar zijn wanneer u een zelfstandige AEM installeert. U kunt ook [ Elementen van de Opslag ](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie lezen bij het kiezen van het type van de achterste opslagplaats na het vers installeren van AEM 6.
+In deze sectie worden de beschikbare opties beschreven voor het installeren van een zelfstandige AEM-instantie. U kunt ook [ Elementen van de Opslag ](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie lezen bij het kiezen van het type van de achterste opslagplaats na nieuw het installeren van AEM 6.
 
 ## Het veranderen van het Aantal van de Haven door het Dossier anders te noemen {#changing-the-port-number-by-renaming-the-file}
 
@@ -46,7 +46,7 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 
 ### Overwegingen bij Java 11 {#java-considerations}
 
-Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, moeten de extra schakelaars aan uw bevellijn worden toegevoegd wanneer het beginnen van AEM.
+Als u Oracle Java 11 uitvoert (of doorgaans versies van Java nieuwer dan 8), moeten extra switches aan uw opdrachtregel worden toegevoegd wanneer u AEM start.
 
 * De volgende switches - `-add-opens` moeten worden toegevoegd om te voorkomen dat gerelateerde berichten over weerspiegelingstoegang worden toegevoegd aan het dialoogvenster `stdout.log`
 
@@ -56,7 +56,7 @@ Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in we
 
 * Daarnaast moet u de `-XX:+UseParallelGC` -switch gebruiken om mogelijke prestatieproblemen te verhelpen.
 
-Hieronder ziet u een voorbeeld van hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 11:
+Hieronder ziet u hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 11:
 
 ```shell
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
@@ -68,7 +68,7 @@ Tot slot als u een instantie in werking stelt die van AEM 6.3 wordt bevorderd, z
 
 ## Modi uitvoeren {#run-modes}
 
-**de wijzen van de Looppas** laten u uw AEM instantie voor een specifiek doel stemmen; bijvoorbeeld, auteur of publiceert, test, ontwikkeling, Intranet, etc. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
+**de wijzen van de Looppas** laten u uw instantie van AEM voor een specifiek doel stemmen; bijvoorbeeld, auteur of publiceert, test, ontwikkeling, Intranet, etc. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
 
 * [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md)
 
@@ -86,10 +86,6 @@ Dit is vooral interessant voor verschillende gebruiksgevallen:
 * Als er iets mis gaat, zijn de webconsole en de opslagplaats niet bereikbaar. Met dit kunt u extra bundels in deze folder zetten en zij zouden moeten worden geïnstalleerd.
 * De map `crx-quickstart/install` kan worden gemaakt voordat de snelstartprocedure wordt gestart en er kunnen extra pakketten worden geplaatst.
 
->[!NOTE]
->
->Zie ook [ hoe te om de pakketten van CRX automatisch op serveropstarten ](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) voor voorbeelden te installeren.
-
 ## Adobe Experience Manager installeren en starten als Windows-service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
@@ -98,7 +94,7 @@ Dit is vooral interessant voor verschillende gebruiksgevallen:
 >
 >Het worden het programma geopend als gebruiker met beheerdervoorrechten is **ontoereikend**. Als u niet als Beheerder wanneer het voltooien van deze stappen wordt het programma geopend ontvangt u **Afgewezen Toegang** fouten.
 
-Om AEM als dienst van Vensters te installeren en te beginnen:
+AEM installeren en starten als Windows-service:
 
 1. Open het bestand crx-quickstart\opt\helpers\instsrv.bat in een teksteditor.
 1. Als u een 64-bits Windows-server configureert, vervangt u alle exemplaren van prunsrv door een van de volgende opdrachten, afhankelijk van het besturingssysteem:
@@ -128,7 +124,7 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
    ![ chlimage_1-12 ](assets/chlimage_1-12.png)
 
-1. De vensters wijst erop dat de dienst loopt. AEM wordt gestart en het uitvoerbare bestand van de prunsrv wordt weergegeven in Taakbeheer. Navigeer in uw webbrowser naar AEM, bijvoorbeeld `https://localhost:4502` om AEM te gebruiken.
+1. De vensters wijst erop dat de dienst loopt. AEM wordt gestart en het uitvoerbare bestand van de prunsrv wordt weergegeven in Taakbeheer. Navigeer in uw webbrowser naar AEM, bijvoorbeeld `https://localhost:4502` , om AEM te gaan gebruiken.
 
    ![ chlimage_1-13 ](assets/chlimage_1-13.png)
 
@@ -140,7 +136,7 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 >
 >Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` via Configuration Manager.
 
-Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** &lbrace;of van de lijst in de bevellijn wanneer u `net start` typt.
+Om de dienst te desinstalleren, of klik **Einde** in het **de controlepaneel van de Diensten** of in de bevellijn, navigeer aan de omslag en type `instsrv.bat -uninstall cq5`. De dienst wordt verwijderd uit de lijst in het **de controlepaneel van de Diensten** {of van de lijst in de bevellijn wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -274,11 +270,11 @@ Log files
 
 ## AEM installeren in de Amazon EC2-omgeving {#installing-aem-in-the-amazon-ec-environment}
 
-Wanneer het installeren van AEM op een instantie van de Compute Cloud van Amazon (EC2), als u zowel auteur installeert als op de instantie EC2 publiceert, wordt de instantie van de Auteur geïnstalleerd correct door de procedure op [ te volgen die Instanties van AEM Manager ](#installinginstancesofaemmanager) installeert; nochtans, wordt de instantie van Publish Auteur.
+Wanneer het installeren van AEM op een Elastic Compute Cloud (EC2) instantie van Amazon, als u zowel auteur installeert als op de instantie EC2 publiceert, wordt de instantie van de Auteur geïnstalleerd correct door de procedure op [ te volgen die Instanties van de Manager van AEM ](#installinginstancesofaemmanager) installeert; nochtans, wordt de Publish instantie Auteur.
 
-Ga als volgt te werk voordat u de Publish-instantie op uw EC2-omgeving installeert:
+Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installeert:
 
-1. Pak het jar-bestand voor de Publish-instantie uit voordat u de instantie voor de eerste keer start. Als u het bestand wilt uitpakken, gebruikt u de volgende opdracht:
+1. Pak het jar-bestand voor de instantie Publish uit voordat u de instantie voor de eerste keer start. Als u het bestand wilt uitpakken, gebruikt u de volgende opdracht:
 
    ```xml
    java -jar quickstart.jar -unpack
@@ -296,7 +292,7 @@ Ga als volgt te werk voordat u de Publish-instantie op uw EC2-omgeving installee
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat u de instantie eerst uitvoert nadat u deze hebt uitgepakt door de bovenstaande opdracht uit te voeren. Anders wordt de vulling quickstart.properties niet gegenereerd. Zonder dit bestand zullen toekomstige AEM upgrades mislukken.
+   >Zorg ervoor dat u de instantie eerst uitvoert nadat u deze hebt uitgepakt door de bovenstaande opdracht uit te voeren. Anders wordt de vulling quickstart.properties niet gegenereerd. Zonder dit bestand zullen toekomstige AEM-upgrades mislukken.
 
 1. In de **bak** omslag, open het **begin** manuscript en controleer de volgende sectie:
 
@@ -333,16 +329,16 @@ De webconsole.
 Hoewel er vele mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties moeten worden ondernomen, of minstens onmiddellijk na installatie herzien:
 
 * Raadpleeg [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) voor taken die worden vereist om ervoor te zorgen dat uw systeem veilig blijft.
-* Herzie de lijst van standaardgebruikers en groepen die met AEM WCM geïnstalleerd zijn. Controle of u actie op een andere rekeningen wilt ondernemen - zie [ Veiligheid en het Beleid van de Gebruiker ](/help/sites-administering/security.md) voor verdere details.
+* Controleer de lijst met standaardgebruikers en -groepen die bij AEM WCM zijn geïnstalleerd. Controle of u actie op een andere rekeningen wilt ondernemen - zie [ Veiligheid en het Beleid van de Gebruiker ](/help/sites-administering/security.md) voor verdere details.
 
 ## Toegang tot CRXDE Lite en de webconsole {#accessing-crxde-lite-and-the-web-console}
 
-Nadat AEM WCM is gestart, hebt u ook toegang tot:
+Nadat u AEM WCM hebt gestart, hebt u ook toegang tot:
 
 * [ CRXDE Lite ](#accessing-crxde-lite) - gebruikt om tot de bewaarplaats toegang te hebben en te leiden
 * [ Console van het Web ](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
 
-### Toegang tot CRXDE Lite {#accessing-crxde-lite}
+### CRXDE Lite openen {#accessing-crxde-lite}
 
 Om CRXDE Lite te openen kunt u **CRXDE Lite** van het welkome scherm selecteren of uw browser gebruiken om te navigeren
 
@@ -357,7 +353,7 @@ Bijvoorbeeld:
 
 #### Toegang tot de webconsole {#accessing-the-web-console}
 
-Om tot de console van het Web van Adobe CQ toegang te hebben kunt u **Console OSGi** van het welkomstscherm selecteren of uw browser gebruiken om te navigeren aan
+Om tot de console van het Web van Adobe toegang te hebben CQ kunt u **Console OSGi** van het welkome scherm selecteren of uw browser gebruiken om te navigeren
 
 ```
  https://<host>:<port>/system/console
@@ -370,7 +366,7 @@ of voor de pagina Bundles
 
 ![ chlimage_1-14 ](assets/chlimage_1-14.png)
 
-Zie {Configuratie 0} OSGi met de Console van het Web [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
+Zie {Configuratie 0} OSGi met de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.[
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -380,12 +376,12 @@ Voor informatie over het behandelen van kwesties die tijdens installatie kunnen 
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 
-Aangezien AEM in één map installeert, is een hulpprogramma voor verwijderen niet nodig. Het verwijderen van de installatiemap kan eenvoudig zijn, maar hoe u de installatiemap verwijdert, hangt AEM af van wat u wilt bereiken en van welke permanente opslag u gebruikt.
+Aangezien AEM in één map installeert, is een hulpprogramma voor het verwijderen van de installatie niet nodig. Het verwijderen van de installatiemap kan eenvoudig zijn, bijvoorbeeld wanneer u de gehele installatiemap verwijdert. De manier waarop u AEM verwijdert, hangt echter af van wat u wilt bereiken en van de permanente opslag die u gebruikt.
 
 Als permanente opslag is ingesloten in de installatiemap, bijvoorbeeld in de standaard-TarPM-installatie, worden bij het verwijderen van mappen ook gegevens verwijderd.
 
 >[!NOTE]
 >
->Adobe raadt u ten zeerste aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
+>Adobe raadt u ten zeerste aan een back-up van uw opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
 
-Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een databaseserver, worden de gegevens niet automatisch verwijderd wanneer u een map verwijdert. De opslagconfiguratie wordt echter wel verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.
+Als bij de installatie van AEM bijvoorbeeld externe opslag wordt gebruikt, wordt bij het verwijderen van een map de gegevens niet automatisch verwijderd, maar wordt de opslagconfiguratie verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.

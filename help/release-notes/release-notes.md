@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6766bd8a1d7569f3913fc20384796b885ed68138
+source-git-commit: 29fa88495225f1314acea2a954737f00d98df468
 workflow-type: tm+mt
-source-wordcount: '5282'
+source-wordcount: '4414'
 ht-degree: 0%
 
 ---
@@ -193,11 +193,11 @@ Onverwachte `<br>` -tags corrigeren in de RTF-editor met de Plaintext-plakmodus.
 
 ### [!DNL Assets]{#assets-6523}
 
-* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**&#x200B;voor, navigerend aan **[!UICONTROL Search Adobe Stock]**&#x200B;omslag, en het selecteren van een voorraadbeeld:
+* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**voor, navigerend aan **[!UICONTROL Search Adobe Stock]**omslag, en het selecteren van een voorraadbeeld:
    * De geselecteerde voorraadafbeelding kan geen licentie krijgen en worden opgeslagen omdat een leeg vervolgkeuzemenu wordt weergegeven wanneer u op **[!UICONTROL License & Save]** klikt.
    * Als u de Stock-afbeelding selecteert of de URL van de voorraadpagina opnieuw invoert, wordt de startpagina van [!DNL AEM] weergegeven, zodat de Adobe Stock-afbeelding niet toegankelijk is. (ASSETS-48687)
 * Problemen tijdens het beheren van mappen als de naam van de map een `/` bevat in de naam op de navigatiepagina [!DNL AEM] Op locatie (6.5.22.0 ). (ASSETS-46740)
-* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**&#x200B;toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
+* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
 * Problemen met integratie met [!DNL InDesign] als `Day CQ DAM Mime Type OSGI` Service identificeren [!DNL InDesign] bestanden onjuist als `x-adobe-indesign` in plaats van `x-indesign` . (ASSETS-45953)
 * [!DNL AEM 6.5.21] -sessilek komt overeen met de workflowstap uit de box **[!UICONTROL Scheduled publish to Brand Portal]** . (ASSETS-44104)
 * **[!UICONTROL Out of Memory (OOM)]** fouten worden in [!DNL AEM] weergegeven bij het verwerken en publiceren van afbeeldingen. Dit probleem is veroorzaakt door vervangen methoden in workflows, zoals **[!DNL Dam Asset update]** en **[!DNL Dynamic Media: Reprocess assets]** . (ASSETS-43343)
@@ -231,18 +231,18 @@ Probleem verholpen met Dynamic Media - hybride implementaties waarbij updates va
 
 **Download Hybride toe:voegen-op pakket**
 
-De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media &lbrace;** in de Distributie van de Software.
+De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media {** in de Distributie van de Software.
 
 
-### [!DNL Forms]{#forms-6523}
+<!--### [!DNL Forms]{#forms-6523}
 
-Correcties in [!DNL Experience Manager] Forms worden één week na de geplande releasedatum van [!DNL Experience Manager] Service Pack via een afzonderlijk invoegpakket geleverd. In dit geval is de invoegtoepassing AEM 6.5.23.0 Forms gepland voor donderdag 29 mei 2025. Er wordt een lijst met Forms-correcties en -verbeteringen toegevoegd aan deze sectie na de release.
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.23.0 Forms add-on package release is scheduled for Thursday, May 29, 2025. A list of Forms fixes and enhancements is added to this section post the release.
+ 
+#### Forms Captcha {#forms-captcha-6523} 
 
-#### Forms Captcha {#forms-captcha-6523}
-
-* Verbeterde reCAPTCHA-waarschuwingen in Adaptive Forms door het bijwerken van de verzendfoutcodes naar 400. Ook, verfijnde logboekalarm om tussen onderbrekingen, verlopen, en beide mislukkingen van de ontdekkingsopsporing te onderscheiden, die het verbeteren van het oplossen van problemennauwkeurigheid en systeemwaarneming verbeteren. (FORMS-19240)
-* Een niet-gesloten `ResourceResolver` -instantie in `ReCaptchaConfigurationServiceImpl` gesloten om mogelijke bronlekken te voorkomen en de stabiliteit van het systeem te verbeteren bij gebruik van reCAPTCHA-integratie in AEM Forms. (FORMS-19242)
-* Verbeterde CAPTCHA-configuratieverwerking voor AEM Forms door ervoor te zorgen dat de juiste configuratie aan elk formulier wordt gekoppeld wanneer er meerdere items in de map `/conf/global` aanwezig zijn. Voorkomt onbedoeld gebruik van onjuiste CAPTCHA-instellingen wanneer de configuratiecontainer niet expliciet is geselecteerd. (FORMS-19239)
+* Improved reCAPTCHA alerting in Adaptive Forms by updating submit error codes to 400. Also, refined log alerts to distinguish between timeouts, expirations, and bot detection failures, enhancing troubleshooting accuracy and system observability. (FORMS-19240) 
+* Closed an unclosed `ResourceResolver` instance in `ReCaptchaConfigurationServiceImpl` to prevent potential resource leaks and improve system stability when using reCAPTCHA integrations in AEM Forms. (FORMS-19242) 
+* Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239)-->
 
 
 <!--
@@ -368,7 +368,7 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.23.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.23.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -422,7 +422,7 @@ Voor instructies om het Service Pack op Experience Manager Forms te installeren,
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -567,61 +567,56 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6523}
 
-* Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
+<!--### Known issues for AEM Forms {#known-issues-aem-forms-6523}
 
-
-### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6523}
-
-* Als de HTML naar PDF-conversie mislukt op een SUSE® Linux® (SLES 15 SP6 en hoger)-server met de volgende fout:
-
+* If the HTML to PDF conversion fails on a SUSE&reg; Linux&reg; (SLES 15 SP6 onwards) server with the following error:
+  
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-Stel vervolgens de volgende omgevingsvariabele in en start de server opnieuw:
-  `OPENSSL_CONF=/etc/ssl`
+  then set the following environment variable and restart the server:
+    `OPENSSL_CONF=/etc/ssl`
 
-* Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, voert u de volgende stappen uit om het probleem op te lossen als u dubbele vermeldingen van Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de map `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) vindt:
+* After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
-   1. Stop de locators, als zij lopen.
-   1. Stop de AEM-server.
-   1. Ga naar de `<AEM_Forms_Installation>/lib/caching/lib` .
-   1. Verwijder alle Geode-patchbestanden behalve `geode-*-1.15.1.2.jar` . Bevestig dat alleen de Geode-jars met `version 1.15.1.2` aanwezig zijn.
-   1. Open de opdrachtprompt in de beheerdermodus.
-   1. Installeer de Geode-patch met het `geode-*-1.15.1.2.jar` -bestand.
+  1. Stop the locators, if they are running.
+  1. Stop the AEM Server. 
+  1. Go to the `<AEM_Forms_Installation>/lib/caching/lib`. 
+  1. Remove all the Geode patch files except `geode-*-1.15.1.2.jar`. Confirm that only the Geode jars with `version 1.15.1.2` are present.
+  1. Open the command prompt in administrator mode.  
+  1. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
 
-* Als een gebruiker een voorvertoning probeert te bekijken van een conceptbrief met opgeslagen XML-gegevens, blijft deze voor bepaalde letters vastzitten in de status `Loading` . Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-14521)
+* If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-14521)
+  
+* After upgrading to AEM Forms Service Pack 6.5.21.0, the `PaperCapture` service fails to perform OCR (Optical Character Recognition) operations on PDFs. The service does not generate output in the form of a PDF or a log file. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (CQDOC-21680)
 
-* Na de upgrade naar AEM Forms Service Pack 6.5.21.0 voert de `PaperCapture` -service geen OCR-bewerkingen (Optical Character Recognition) uit op PDF&#39;s. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (CQDOC-21680)
+* When users upgraded from AEM 6.5 Forms Service Pack 18 or 19 to Service Pack 20 or 21, they encountered a JSP compilation error. This error prevented them from opening or creating adaptive forms. It also caused issues with other AEM interfaces. Those interfaces included the Page Editor, AEM Forms UI, Workflow editor, and System Overview UI. (FORMS-15256)
 
-* Toen gebruikers van AEM 6.5 Forms Service Pack 18 of 19 aan Service Pack 20 of 21 bevorderden, ontmoetten zij een fout van de JSP compilatie. Door deze fout konden ze geen aangepaste formulieren openen of maken. Het veroorzaakte ook problemen met andere interfaces van AEM. Die interfaces omvatten de Redacteur van de Pagina, UI van AEM Forms, de redacteur van het Werkschema, en het Overzicht UI van het Systeem. (FORMS-15256)
+  If you face such an issue, perform the following steps to resolve it:
+    1. Navigate to the directory `/libs/fd/aemforms/install/` in CRXDE.
+    1. Delete the bundle with the name `com.adobe.granite.ui.commons-5.10.26.jar`.
+    1. Restart your AEM Server.
 
-  Voer de volgende stappen uit om een dergelijk probleem op te lossen:
-   1. Navigeer naar de map `/libs/fd/aemforms/install/` in CRXDE.
-   1. Verwijder de bundel met de naam `com.adobe.granite.ui.commons-5.10.26.jar` .
-   1. Start de AEM-server opnieuw.
+* After updating to AEM Forms Service Pack 20 (6.5.20.0) with the Forms Add-On, configurations relying on the legacy Adobe Analytics Cloud Service using credential-based authentication stop working. This issue prevented analytics rules from executing correctly. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-15428)
 
-* Na het bijwerken aan AEM Forms Service Pack 20 (6.5.20.0) met Forms toe:voegen-On, configuraties die zich op de erfenisDienst van Adobe Analytics Cloud baseren gebruikend op referentie-gebaseerde authentificatieophouden werkend. Hierdoor konden de analyseregels niet correct worden uitgevoerd. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-15428)
-
-* Wanneer een gebruiker AEM Forms Service Pack 20 (6.5.20.0) op de JEE server bijwerkt en PDFs gebruikend de outputdiensten produceert, geven PDFs met toegankelijkheidskwesties terug. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3922112)
-* Wanneer een gebruiker gecodeerde PDF&#39;s genereert met de uitvoerservice op JEE, wordt &quot;Onjuiste structuurwaarschuwing&quot; weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2038)
-* Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2017)
-* Wanneer een gebruiker in een Linux®-omgeving een adaptief formulier (op JEE) rendert in HTML, wordt het formulier niet correct weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921957)
-* Wanneer een gebruiker een XTG-bestand in PostScript-indeling converteert met de Output Service op AEM Forms JEE, mislukt dit met de fout: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE` . Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921720)
-* Na upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server, kan een gebruiker een formulier verzenden waardoor HTML5 of PDF forms en XMLFM niet vastlopen. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921718)
-* In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, wordt het muntsymbool (zoals het dollarteken $) inconsistent getoond voor alle gebiedswaarden. Deze wordt weergegeven voor waarden tot en met 999, maar ontbreekt voor waarden van 1000 en hoger. (FORMS-16557)
-* Eventuele wijzigingen in de XDP van geneste lay-outfragmenten in een interactieve communicatie worden niet weerspiegeld in de IC-editor. (FORMS-16575)
-* In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, worden sommige berekende waarden niet correct getoond. (FORMS-16603)
-* Wanneer de brief in de Voorproef van de Druk wordt bekeken, wordt de inhoud veranderd. Dat wil zeggen dat sommige spaties verdwijnen en dat bepaalde letters worden vervangen door `x` . (FORMS-15681)
-* Wanneer een gebruiker een instantie WebLogic 14c vormt, ontbreekt de dienst PDFG in AEM Forms Service Pack 21 (6.5.21.0) op JEE die op JBoss® loopt toe te schrijven aan klasseconflicten die de bibliotheek SLF4J impliceren. De fout wordt als volgt weergegeven (CQDOC-22178):
-
-  ```java
-  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
-  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
-  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
-  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
-  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
-  ```
-
-
+* When a user updates to AEM Forms Service Pack 20 (6.5.20.0) on the JEE server and generates PDFs using output services, the PDFs render with accessibility issues. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922112)
+* When a user generates Tagged PDFs using the output service on JEE, it shows "Inappropriate structure warning." To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922038)
+* When a form is submitted on AEM Forms JEE, the instances of a repeating XML element are removed from the data. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922017)
+* When a user in a Linux&reg; environment renders an Adaptive Form (on JEE) in HTML, it fails to render properly. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921957)
+* When a user converts an XTG file to PostScript format using the Output Service on AEM Forms JEE, it fails with the error: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921720)
+* After upgrading to AEM Forms Service Pack 18 (6.5.18.0) on JEE server, when a user submits a form, it fails to render HTML5 or PDF Forms and XMLFM crashes. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921718)
+* In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above. (FORMS-16557)
+* Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
+* In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
+* When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with `x`. (FORMS-15681)
+* When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss&reg; fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
+  
+    ```java
+    Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
+    the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
+    @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
+    (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
+    have different Class objects for the type org/slf4j/ILoggerFactory used in the signature-->
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 
@@ -630,17 +625,15 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 * [ Lijst van bundels OSGi inbegrepen in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [ Lijst met inhoudspakketten die zijn opgenomen in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
-
-
 ## Beperkte websites{#restricted-sites}
 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
+>* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)

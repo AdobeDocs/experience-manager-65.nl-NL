@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 8cbf7188baf8cc997e0747be366f13c3b6c2c632
+source-git-commit: 6aacd4454bc8b4b86e07acf7ec22f42ef761c3ae
 workflow-type: tm+mt
-source-wordcount: '4562'
+source-wordcount: '6724'
 ht-degree: 0%
 
 ---
@@ -69,13 +69,9 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
    * Microsoft® SQL Server JDBC-stuurprogramma 12.8
 
-   * Microsoft® Office 2021
-
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64-bits) 
 
-
-
-* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
+* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -219,11 +215,11 @@ Onverwachte `<br>` -tags corrigeren in de RTF-editor met de Plaintext-plakmodus.
 
 ### [!DNL Assets]{#assets-6523}
 
-* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**&#x200B;voor, navigerend aan **[!UICONTROL Search Adobe Stock]**&#x200B;omslag, en het selecteren van een voorraadbeeld:
+* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**voor, navigerend aan **[!UICONTROL Search Adobe Stock]**omslag, en het selecteren van een voorraadbeeld:
    * De geselecteerde voorraadafbeelding kan geen licentie krijgen en worden opgeslagen omdat een leeg vervolgkeuzemenu wordt weergegeven wanneer u op **[!UICONTROL License & Save]** klikt.
    * Als u de Stock-afbeelding selecteert of de URL van de voorraadpagina opnieuw invoert, wordt de startpagina van [!DNL AEM] weergegeven, zodat de Adobe Stock-afbeelding niet toegankelijk is. (ASSETS-48687)
 * Problemen tijdens het beheren van mappen als de naam van de map een `/` bevat in de naam op de navigatiepagina [!DNL AEM] Op locatie (6.5.22.0 ). (ASSETS-46740)
-* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**&#x200B;toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
+* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
 * Problemen met integratie met [!DNL InDesign] als `Day CQ DAM Mime Type OSGI` Service identificeren [!DNL InDesign] bestanden onjuist als `x-adobe-indesign` in plaats van `x-indesign` . (ASSETS-45953)
 * [!DNL AEM 6.5.21] -sessilek komt overeen met de workflowstap uit de box **[!UICONTROL Scheduled publish to Brand Portal]** . (ASSETS-44104)
 * **[!UICONTROL Out of Memory (OOM)]** fouten worden in [!DNL AEM] weergegeven bij het verwerken en publiceren van afbeeldingen. Dit probleem is veroorzaakt door vervangen methoden in workflows, zoals **[!DNL Dam Asset update]** en **[!DNL Dynamic Media: Reprocess assets]** . (ASSETS-43343)
@@ -257,108 +253,102 @@ Probleem verholpen met Dynamic Media - hybride implementaties waarbij updates va
 
 **Download Hybride toe:voegen-op pakket**
 
-De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media &lbrace;** in de Distributie van de Software.
+De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media {** in de Distributie van de Software.
 
 
-<!--### [!DNL Forms]{#forms-6523}
+### [!DNL Forms]{#forms-6523}
 
+#### Forms Designer
 
-#### Forms Designer 
+* Wanneer een gebruiker de gegevens voor een op XFA gebaseerde PDF exporteert met behulp van de exportDataAPI, toont de resulterende XML discrepanties in vergelijking met de XML-gegevens die handmatig worden geëxporteerd met behulp van Acrobat Reader. De waarden van sommige velden ontbraken in de uitvoer in vergelijking met de uitvoer van Acrobat Reader. (LC-3922791)
 
-* When a user exports the data for an XFA-based PDF using the exportDataAPI, the resulting XML shows discrepancies when compared with the XML data exported manually using Acrobat Reader. Values of some fields were missing in the output compared to the output generated from Acrobat Reader. (LC-3922791).  
+* In AEM Forms 6.5.22.0 bevat de resulterende PDF een extra label onder de referentietag in het inhoudsopgave-item wanneer een gebruiker probeert een gelabelde PDF te genereren met de Output Service in Workbench. (LC-3922756)
 
-* On AEM Forms 6.5.22.0, when a user attempts to generate a tagged PDF using the Output Service in Workbench, the resulting PDF contains an extra label tag under the reference tag in the table of content item. (LC-3922756) 
+* Wanneer een gebruiker bijschriften van velden met de uitlijning onder of rechts uitlijnt in AEM Forms Designer, bevat de codestructuur alleen het bijschrift zonder de bijbehorende waarde. Dit leidt tot onvolledige toegankelijkheidscodes. (LC-3922619)
 
-* When a user places field captions with bottom or right alignment in AEM Forms Designer, the tag tree includes only the caption without the corresponding value, leading to incomplete accessibility tagging. (LC-3922619). 
+* Bij een upgrade van AEM Forms 6.5 Service Pack 6 naar AEM Forms Service Pack 20 worden de QR-codes in gegenereerde PDF&#39;s onleesbaar. De alternatieve tekst voor de QR-codes mislukt ook toegankelijkheidstests, wat van invloed is op de compatibiliteit van schermlezers. (LC-3922551)
 
-* On upgrading from AEM Forms 6.5 Service Pack 6 to AEM Forms Service Pack 20, the QR codes in generated PDFs become unreadable. The alternative text for the QR codes also fails accessibility testing, affecting screen reader compatibility. (LC-3922551). 
-
-* When a user renders a letter in Agent UI on AEM Forms Service Pack 18, the content fails to display correctly due to the FormService.render() API. (LC-3922461). 
-
- 
+* Wanneer een gebruiker een brief in de UI van de Agent op AEM Forms Service Pack 18 teruggeeft, ontbreekt de inhoud om correct wegens FormService.render () API te tonen. (LC-392461).
 
 #### Forms
 
-* When a user enables "Allow Rich Text for Title" on the root panel in an AEM Forms Adaptive Form, the "Exclude Title from Document of Record" setting on a nested panel incorrectly hides the root panel's title in the auto-generated Document of Record. (FORMS-19696). 
+* Wanneer een gebruiker &#39;RTF-tekst toestaan voor titel&#39; inschakelt in het hoofdvenster van een AEM Forms adaptief formulier, wordt met de instelling &#39;Titel uitsluiten van document van record&#39; in een genest deelvenster de titel van het hoofdvenster in het automatisch gegenereerde document van record onjuist verborgen. (FORMS-19696).
 
-* When a user attempts to assign a custom sling:resourceType to a core component using the aem:afProperties in a JSON schema on an on-premise AEM 6.5 instance, the custom resource type is not applied. (FORMS-19691). 
+* Wanneer een gebruiker probeert om een douane toe te wijzen die:resourceType aan een kerncomponent gebruikend aem:afProperties in een schema JSON op een ongebouwAEM 6.5 instantie, wordt het type van douanemiddel niet toegepast. (FORMS-19691).
 
-* When a user submits an Adaptive Form with prefilled attachments using URIs, the form submission fails with a NullPointerException due to missing binary data. (FORMS-19371) (FORMS-19486). 
+* Wanneer een gebruiker een adaptief formulier met vooraf gevulde bijlagen verzendt met behulp van URI&#39;s, mislukt het verzenden van het formulier met een NullPointerException vanwege ontbrekende binaire gegevens. (FORMS 19371) (FORMS 19486).
 
-* When a user uploads a PDF under the 'Forms and Documents' section in AEM 6.5 Forms, the timeline feature stops functioning. (FORMS-19407)(FORMS-19234). 
+* Wanneer een gebruiker een PDF uploadt onder de sectie &#39;Forms en Documenten&#39; in AEM 6.5 Forms, werkt de tijdlijnfunctie niet meer. (FORMS-19407) (FORMS-19234).
 
-* When a user uploads files using the out-of-the-box (OOTB) file attachment component in AEM Forms, security vulnerabilities are identified. This leads to potential interception of the submission process by unauthorized entities. (FORMS-19271). 
+* Wanneer een gebruiker bestanden uploadt met de OOTB-component (out-of-the-box) voor bestandsbijlagen in AEM Forms, worden beveiligingskwetsbaarheden geïdentificeerd. Dit leidt tot mogelijke onderschepping van het indieningsproces door onbevoegde entiteiten. (FORMS-19271).
 
-* When a user configures an out-of-the-box Adaptive Form in AEM Forms to automatically generate a Document of Record (DoR), the "Title" field in Acrobat Reader's Document Properties does not display the captured DoR title, and the form title does not appear by default in place of the filename. (FORMS-19263). 
+* Wanneer een gebruiker een uit-de-doos Aangepast Formulier in AEM Forms configureert om automatisch een Document van Verslag (DoR) te produceren, toont het gebied van de &quot;Titel&quot;in de Eigenschappen van het Document van Acrobat Reader niet de gevangen Titel van DoR, en de vormtitel verschijnt niet door gebrek in plaats van filename. (FORMS-19263).
 
-* When a user opens an Interactive Communication in Agent UI, the prefilled data cannot be completely erased; upon removal, it automatically refills with the same data. (FORMS-19151). 
+* Wanneer een gebruiker een Interactieve Communicatie in Agent UI opent, kunnen de vooraf ingevulde gegevens niet volledig worden gewist; op verwijdering, vult het automatisch met de zelfde gegevens. (FORMS-19151).
 
-* When a user previews a date field in the Agent UI, the date unexpectedly changes due to time zone discrepancies between the VM's UTC setting and the system's interpretation of the date. (FORMS-19115). 
+* Wanneer een gebruiker een datumgebied in de UI van de Agent vooraf bekijkt, verandert de datum onverwachts toe te schrijven aan tijdzoneverschillen tussen het plaatsen van UTC van VM en de interpretatie van het systeem van de datum. (FORMS-1915).
 
-* When a user submits a form, file attachments may duplicate leading to multiple uploads of the same file. (FORMS-19045)(FORMS-19051). 
+* Wanneer een gebruiker een formulier verzendt, kunnen bestandsbijlagen worden gedupliceerd, wat kan leiden tot meerdere uploads van hetzelfde bestand. (FORMS-19045) (FORMS-19051).
 
-* Adding coordinators to policy sets in AEM 6.5 Document Security fails across both production and lower environments. (FORMS-18603, FORMS-18212, FORMS-19697). 
+* Het toevoegen van coördinatoren aan beleidssets in AEM 6.5 Document Security mislukt in zowel de productie- als de lagere omgeving. (FORMS-18603, FORMS-18212, FORMS-19697)
 
-* When a user clicks the "datepicker-calendar-icon" in desktop mode with an empty field in AEM Forms Service Pack 22, an error occurs due to the undefined _$focusedDate variable, disrupting associated custom scripts. (FORMS-18483)(FORMS-18268). 
+* Wanneer een gebruiker in de bureaubladmodus met een leeg veld in AEM Forms Service Pack 22 op het pictogram &quot;datepicker-agenda&quot; klikt, treedt een fout op vanwege de ongedefinieerde variabele _$focusedDate, waardoor gekoppelde aangepaste scripts worden verstoord. (FORMS-18483) (FORMS-18268).
 
-* On AEM Forms Service Pack 19 (6.5.19.0), when a customer previews a letter, the 'Amount in words' field fails to display or update number values incorrectly, leading to misalignment and missing spaces in the content. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004) 
+* In AEM Forms Service Pack 19 (6.5.19.0), wanneer een klant een letter voorvertoond, geeft het veld &#39;Bedrag in woorden&#39; de getalwaarden niet correct weer of werkt het niet bij. Dit leidt tot onjuiste uitlijning en ontbrekende spaties in de inhoud. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848, FORMS-19614, LC-3922004)
 
-* When a customer previews a saved letter in AEM Forms 6.5 SP19 on RHEL, the content misaligns, spaces are missing, and unexpected characters like 'x' appear. (FORMS-18422)(FORMS-17641). 
+* Wanneer een klant een voorvertoning weergeeft van een opgeslagen brief in AEM Forms 6.5 SP19 op RHEL, worden de inhoud verkeerd uitgelijnd, ontbreken spaties en worden onverwachte tekens zoals &#39;x&#39; weergegeven. (FORMS-18422)(FORMS-17641).
 
-* When a user navigates between tabs in AEM Forms, selecting components on the first tab becomes unresponsive. (FORMS-18345). 
+* Wanneer een gebruiker in AEM Forms tussen tabbladen navigeert, reageert het selecteren van componenten op het eerste tabblad niet meer. (FORMS-18345).
 
-* In AEM Forms 6.5.21.0, when a user converts an HTML file to PDF using the WebToPDF option, the output PDF is missing the header section, including metadata and title tags. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224). 
+* Wanneer een gebruiker in AEM Forms 6.5.21.0 een HTML-bestand naar PDF converteert met de optie WebToPDF, ontbreekt in de uitvoer-PDF de koptekstsectie, inclusief metagegevens en titeltags. (FORMS-1823, FORMS-17835, FORMS-19642, FORMS-18224).
 
-* In the AEM JEE Process Manager SDK, when a user invokes the retryAction(long actionOid) method, the system incorrectly retries the first action found in the tb_action_instance table. This occurs even when a specific action ID is provided or when the ID is null, resulting in unintended behavior. (FORMS-18187). 
+* Wanneer een gebruiker in AEM JEE Process Manager SDK de methode retryAction(long actionOid) aanroept, probeert het systeem ten onrechte de eerste actie in de tabel tb_action_instance. Dit gebeurt zelfs wanneer een specifieke actie-id wordt opgegeven of wanneer de id null is, wat leidt tot onbedoeld gedrag. (FORMS-18187).
 
-* After updating to SP22, a user encounters issues where the save draft and submission functionalities fail without displaying any error message. (FORMS-18069). 
+* Na het bijwerken naar SP22, ontmoet een gebruiker kwesties waar sparen ontwerp en voorleggingsfuncties mislukken zonder enige foutenmelding te tonen. (FORMS-18069).
 
-* In AEM 6.5.21.0, transitioning from XSD-based foundation components to core components prevents the implementation of cross-file references in JSON schemas, impacting Adaptive Forms migration. (FORMS-18065). 
+* In AEM 6.5.21.0 voorkomt de overgang van XSD-gebaseerde basiscomponenten naar basiscomponenten de implementatie van bestandsoverschrijvingen in JSON-schema&#39;s, wat invloed heeft op de migratie van Adaptive Forms. (FORMS-18065).
 
-* When a user previews a letter in the Agent UI, the date field shows an incorrect value due to IC time conversion issues. These discrepancies arise from time zone differences between the VM environment and the system's interpretation of time (UTC vs. local time). (FORMS-17988) (FORMS-17248). 
+* Wanneer een gebruiker een brief in de Agent UI previews, toont het datumgebied een onjuiste waarde toe te schrijven aan de kwesties van de tijdomzetting van IC. Deze verschillen zijn het gevolg van verschillen in tijdzone tussen de VM-omgeving en de interpretatie van de tijd van het systeem (UTC versus lokale tijd). (FORMS-17988) (FORMS-17248)
 
-* When a user previews letters using Notice IC templates in AEM Forms, PDF generation times vary significantly, from 1.5 seconds to more than 10 seconds, even on the same server. This inconsistency affects business critical workflows. (FORMS-17951). 
+* Wanneer een gebruiker voorvertoningen van letters gebruikt gebruikend de malplaatjes van Notice IC in AEM Forms, variëren de generatietijden van PDF beduidend, van 1.5 seconden tot meer dan 10 seconden, zelfs op de zelfde server. Deze inconsistentie beïnvloedt bedrijfskritieke werkstromen. (FORMS-17951).
 
-* When a user binds a Scribble Signature object in an Adaptive Form to an XDP using the 'Data Sources' option, changes cannot be saved due to persistent aspect ratio validation errors, even when using valid values. (FORMS-17587). 
+* Wanneer een gebruiker een scripthandtekeningobject in een adaptief formulier aan een XDP bindt met de optie &#39;Gegevensbronnen&#39;, kunnen wijzigingen niet worden opgeslagen vanwege permanente validatiefouten voor de hoogte-breedteverhouding, zelfs niet bij het gebruik van geldige waarden. (FORMS-17587).
 
-* When a user uses a specific XDP with many hidden fields for document fragments, AEM creates CRX nodes with the cm:optional property set to false, which causes the Interactive Communication (IC) submission to fail. (FORMS-17538). 
+* Wanneer een gebruiker een specifieke XDP met vele verborgen gebieden voor documentfragmenten gebruikt, leidt AEM tot de knopen van CRX met cm:facultatieve bezit die aan vals wordt geplaatst, die de Interactieve Communicatie (IC) voorlegging veroorzaakt om te ontbreken. (FORMS-17538).
 
-* On AEM Forms 6.5.19.0, when a customer previews a letter, the numeric box field fails to handle negative values correctly when digit limits for Lead and Frac are defined. This issue occurs due to the use of parseFloat, which treats the minus sign as part of the number. (FORMS-17451). 
+* In AEM Forms 6.5.19.0 worden negatieve waarden in het veld numeriek vak niet correct verwerkt wanneer cijferlimieten voor lead en frame zijn gedefinieerd. Dit probleem treedt op als gevolg van het gebruik van parseFloat, dat het minteken als onderdeel van het getal behandelt. (FORMS-17451).
 
-* On AEM Forms 6.5, when a letter is previewed, the use of the "*" wildcard in the Adobe.json file is noticed, raising a concern about its purpose and potential modification (FORMS-17317). 
+* Op AEM Forms 6.5 wordt, wanneer een voorvertoning van een brief wordt weergegeven, het gebruik van de jokerteken &quot;*&quot; in het bestand Adobe.json opgemerkt, wat aanleiding geeft tot bezorgdheid over het doel en de mogelijke wijziging ervan (FORMS-17317).
 
-* When a user uses a screen reader on the "Apply for a Fixed Rate Saver joint account", the headings are incorrectly announced as 'clickable', causing accessibility issues. (FORMS-17038). 
+* Wanneer een gebruiker een schermlezer gebruikt op de &quot;Apply for a Fixed Rate Saver joint account&quot;, worden de koppen ten onrechte aangekondigd als &#39;clickable&#39;, wat toegankelijkheidsproblemen veroorzaakt. (FORMS-17038).
 
-* When a form is embedded, the generated iframe is missing a title attribute, leading to an accessibility compliance issue. (FORMS-17010). 
+* Wanneer een formulier wordt ingesloten, ontbreekt in het gegenereerde iframe een titelkenmerk, wat leidt tot een compatibiliteitsprobleem met betrekking tot de toegankelijkheid. (FORMS-17010).
 
-* It is not possible to download a form using the Forms Manager UI without including associated dependencies such as themes and fragments. (FORMS-15811). 
+* U kunt een formulier niet downloaden met de gebruikersinterface van Forms Manager zonder de bijbehorende afhankelijkheden zoals thema&#39;s en fragmenten op te nemen. (FORMS-15811).
 
-* When a user accesses the form on mobile devices (iOS and Android), the 'next' and 'previous' buttons on the first page are disabled, but the screen reader does not identify them as disabled. (FORMS-15773). 
+* Wanneer een gebruiker het formulier opent op mobiele apparaten (iOS en Android), worden de knoppen &#39;Volgende&#39; en &#39;Vorige&#39; op de eerste pagina uitgeschakeld, maar worden ze door de schermlezer niet als uitgeschakeld herkend. (FORMS-15773).
 
-* When a user saves a large form with fragments and lazy loading enabled, it fails to retrieve drafts, disrupting the workflow. (FORMS-19890, FORMS-19808). 
+* Wanneer een gebruiker een groot formulier opslaat met fragmenten en het laden van de laadproblemen is ingeschakeld, worden concepten niet opgehaald, waardoor de workflow wordt verstoord. (FORMS 19890, FORMS 19808).
 
- 
+#### Forms JEE
 
-#### Forms JEE 
+* Wanneer een gebruiker de database in AEM Forms opnieuw configureert, mislukt de verbinding als gevolg van hardcoded parameters. (FORMS-19568, FORMS-17621)
 
-* When a user reconfigures the database in AEM Forms, the connection fails due to hardcoded parameters. (FORMS-19568, FORMS-17621) 
+* Wanneer een gebruiker AEM 6.5 instelt met MySQL 8.4 met behulp van de partiële kant-en-klare methode, kan de LiveCycle Configuration Manager (LCM) het vereiste MySQL-verbindingsstuurprogramma niet herkennen tijdens de databaseverbindingstest, waardoor de installatie mislukt. (FORMS-19442).
 
-* When a user sets up AEM 6.5 with MySQL 8.4 using the partial turnkey method, the LiveCycle Configuration Manager (LCM) fails to recognize the required MySQL connector driver during the database connection test, causing the setup to fail. (FORMS-19442). 
+* Wanneer een gebruiker LCM met JDBC 12.8.1 op JRE 11 in een milieu JEE in werking stelt, ontbreekt de opstelling wegens onverenigbaarheidskwesties.(FORMS-19276).
 
-* When a user runs LCM with JDBC 12.8.1 on JRE 11 in a JEE environment, the setup fails due to incompatibility issues.(FORMS-19276). 
+* Wanneer een gebruiker een taak opent in AEM On-Premise, voert het systeem het Profiel van de Actie van het Begin van Workspace in plaats van AssignedUserProfile uit. (FORMS-19065).
 
-* When a user opens a task in AEM On-Premise, the system executes the Workspace Start Action Profile instead of the AssignedUserProfile. (FORMS-19065). 
+* Wanneer een gebruiker de methode retryAction(long actionOid) in AEM JEE Process Manager gebruikt, treedt onverwacht gedrag op. (FORMS-18357)(FORMS-18187).
 
-* When a user uses the retryAction(long actionOid) method in the AEM JEE Process Manager, unexpected behavior occurs. (FORMS-18357)(FORMS-18187). 
+* In AEM Forms 6.5.21.0 mislukt de PDFG-conversie met de onderstaande fout: (FORMS-16851) (FORMS-14613).
 
-* On AEM Forms 6.5.21.0, the PDFG conversion fails with the error below: (FORMS-16851)(FORMS-14613).   
- 
-#### Forms Captcha {#forms-captcha-6523} 
+#### Forms Captcha {#forms-captcha-6523}
 
-* Improved reCAPTCHA alerting in Adaptive Forms by updating submit error codes to 400. Also, refined log alerts to distinguish between timeouts, expirations, and bot detection failures, enhancing troubleshooting accuracy and system observability. (FORMS-19240) 
-* Closed an unclosed `ResourceResolver` instance in `ReCaptchaConfigurationServiceImpl` to prevent potential resource leaks and improve system stability when using reCAPTCHA integrations in AEM Forms. (FORMS-19242) 
-* Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239)-->
-
+* Verbeterde reCAPTCHA-waarschuwingen in Adaptive Forms door het bijwerken van de verzendfoutcodes naar 400. Ook, verfijnde logboekalarm om tussen onderbrekingen, verlopen, en beide mislukkingen van de ontdekkingsopsporing te onderscheiden, die het verbeteren van het oplossen van problemennauwkeurigheid en systeemwaarneming verbeteren. (FORMS-19240)
+* Een niet-gesloten `ResourceResolver` -instantie in `ReCaptchaConfigurationServiceImpl` gesloten om mogelijke bronlekken te voorkomen en de stabiliteit van het systeem te verbeteren bij gebruik van reCAPTCHA-integratie in AEM Forms. (FORMS-19242)
+* Verbeterde CAPTCHA-configuratieverwerking voor AEM Forms door ervoor te zorgen dat de juiste configuratie aan elk formulier wordt gekoppeld wanneer er meerdere items in de map `/conf/global` aanwezig zijn. Voorkomt onbedoeld gebruik van onjuiste CAPTCHA-instellingen wanneer de configuratiecontainer niet expliciet is geselecteerd. (FORMS-19239)
 
 <!--
 #### XMLFM {#forms-xmlfm-6523}
@@ -483,7 +473,7 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.23.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.23.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -537,7 +527,7 @@ Voor instructies om het Service Pack op Experience Manager Forms te installeren,
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -682,58 +672,60 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6523}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
-<!--### Known issues for AEM Forms {#known-issues-aem-forms-6523}
+### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6523}
 
-* When a customer upgrades from Struts 2.x to 6.x, stricter type checking can cause silent failures—especially when checkbox components return false and are bound to a List *Integer*. This value mismatch must be handled explicitly to avoid deserialization errors.
+* Wanneer een klantenverbeteringen van Struts 2.x aan 6.x, kan het striktere type controleren stille mislukkingen-vooral veroorzaken wanneer checkbox componenten vals terugkeren en aan een Geheel van de Lijst ** verbindend zijn. Deze waardecisiewanverhouding moet uitdrukkelijk worden behandeld om deserialisatiefouten te vermijden. (FORMS-20203)
 
-* If the HTML to PDF conversion fails on a SUSE&reg; Linux&reg; (SLES 15 SP6 onwards) server with the following error:
-  
+* Als de HTML naar PDF-conversie mislukt op een SUSE® Linux® (SLES 15 SP6 en hoger)-server met de volgende fout:
+
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-  then set the following environment variable and restart the server:
-    `OPENSSL_CONF=/etc/ssl`
+Stel vervolgens de volgende omgevingsvariabele in en start de server opnieuw:
+  `OPENSSL_CONF=/etc/ssl`
 
-* After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
+* Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, voert u de volgende stappen uit om het probleem op te lossen als u dubbele vermeldingen van Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de map `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) vindt:
 
-  1. Stop the locators, if they are running.
-  1. Stop the AEM Server. 
-  1. Go to the `<AEM_Forms_Installation>/lib/caching/lib`. 
-  1. Remove all the Geode patch files except `geode-*-1.15.1.2.jar`. Confirm that only the Geode jars with `version 1.15.1.2` are present.
-  1. Open the command prompt in administrator mode.  
-  1. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
+   1. Stop de locators, als zij lopen.
+   1. Stop de AEM-server.
+   1. Ga naar de `<AEM_Forms_Installation>/lib/caching/lib` .
+   1. Verwijder alle Geode-patchbestanden behalve `geode-*-1.15.1.2.jar` . Bevestig dat alleen de Geode-jars met `version 1.15.1.2` aanwezig zijn.
+   1. Open de opdrachtprompt in de beheerdermodus.
+   1. Installeer de Geode-patch met het `geode-*-1.15.1.2.jar` -bestand.
 
-* If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-14521)
-  
-* After upgrading to AEM Forms Service Pack 6.5.21.0, the `PaperCapture` service fails to perform OCR (Optical Character Recognition) operations on PDFs. The service does not generate output in the form of a PDF or a log file. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (CQDOC-21680)
+* Als een gebruiker een voorvertoning probeert te bekijken van een conceptbrief met opgeslagen XML-gegevens, blijft deze voor bepaalde letters vastzitten in de status `Loading` . Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-14521)
 
-* When users upgraded from AEM 6.5 Forms Service Pack 18 or 19 to Service Pack 20 or 21, they encountered a JSP compilation error. This error prevented them from opening or creating adaptive forms. It also caused issues with other AEM interfaces. Those interfaces included the Page Editor, AEM Forms UI, Workflow editor, and System Overview UI. (FORMS-15256)
+* Na de upgrade naar AEM Forms Service Pack 6.5.21.0 voert de `PaperCapture` -service geen OCR-bewerkingen (Optical Character Recognition) uit op PDF&#39;s. De service genereert geen uitvoer in de vorm van een PDF- of logbestand. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (CQDOC-21680)
 
-  If you face such an issue, perform the following steps to resolve it:
-    1. Navigate to the directory `/libs/fd/aemforms/install/` in CRXDE.
-    1. Delete the bundle with the name `com.adobe.granite.ui.commons-5.10.26.jar`.
-    1. Restart your AEM Server.
+* Toen gebruikers van AEM 6.5 Forms Service Pack 18 of 19 aan Service Pack 20 of 21 bevorderden, ontmoetten zij een fout van de JSP compilatie. Door deze fout konden ze geen aangepaste formulieren openen of maken. Het veroorzaakte ook problemen met andere interfaces van AEM. Die interfaces omvatten de Redacteur van de Pagina, UI van AEM Forms, de redacteur van het Werkschema, en het Overzicht UI van het Systeem. (FORMS-15256)
 
-* After updating to AEM Forms Service Pack 20 (6.5.20.0) with the Forms Add-On, configurations relying on the legacy Adobe Analytics Cloud Service using credential-based authentication stop working. This issue prevented analytics rules from executing correctly. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-15428)
+  Voer de volgende stappen uit om een dergelijk probleem op te lossen:
+   1. Navigeer naar de map `/libs/fd/aemforms/install/` in CRXDE.
+   1. Verwijder de bundel met de naam `com.adobe.granite.ui.commons-5.10.26.jar` .
+   1. Start de AEM-server opnieuw.
 
-* When a user updates to AEM Forms Service Pack 20 (6.5.20.0) on the JEE server and generates PDFs using output services, the PDFs render with accessibility issues. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922112)
-* When a user generates Tagged PDFs using the output service on JEE, it shows "Inappropriate structure warning." To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922038)
-* When a form is submitted on AEM Forms JEE, the instances of a repeating XML element are removed from the data. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922017)
-* When a user in a Linux&reg; environment renders an Adaptive Form (on JEE) in HTML, it fails to render properly. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921957)
-* When a user converts an XTG file to PostScript format using the Output Service on AEM Forms JEE, it fails with the error: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921720)
-* After upgrading to AEM Forms Service Pack 18 (6.5.18.0) on JEE server, when a user submits a form, it fails to render HTML5 or PDF Forms and XMLFM crashes. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921718)
-* In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above. (FORMS-16557)
-* Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
-* In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
-* When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with `x`. (FORMS-15681)
-* When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss&reg; fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
-  
-    ```java
-    Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
-    the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
-    @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
-    (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
-    have different Class objects for the type org/slf4j/ILoggerFactory used in the signature-->
+* Na het bijwerken aan AEM Forms Service Pack 20 (6.5.20.0) met Forms toe:voegen-On, configuraties die zich op de erfenisDienst van Adobe Analytics Cloud baseren gebruikend op referentie-gebaseerde authentificatieophouden werkend. Hierdoor konden de analyseregels niet correct worden uitgevoerd. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-15428)
+
+* Wanneer een gebruiker AEM Forms Service Pack 20 (6.5.20.0) op de JEE server bijwerkt en PDFs gebruikend de outputdiensten produceert, geven PDFs met toegankelijkheidskwesties terug. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3922112)
+* Wanneer een gebruiker gecodeerde PDF&#39;s genereert met de uitvoerservice op JEE, wordt &quot;Onjuiste structuurwaarschuwing&quot; weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2038)
+* Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2017)
+* Wanneer een gebruiker in een Linux®-omgeving een adaptief formulier (op JEE) rendert in HTML, wordt het formulier niet correct weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921957)
+* Wanneer een gebruiker een XTG-bestand in PostScript-indeling converteert met de Output Service op AEM Forms JEE, mislukt dit met de fout: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE` . Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921720)
+* Na upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server, kan een gebruiker een formulier verzenden waardoor HTML5 of PDF forms en XMLFM niet vastlopen. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921718)
+* In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, wordt het muntsymbool (zoals het dollarteken $) inconsistent getoond voor alle gebiedswaarden. Deze wordt weergegeven voor waarden tot en met 999, maar ontbreekt voor waarden van 1000 en hoger. (FORMS-16557)
+* Eventuele wijzigingen in de XDP van geneste lay-outfragmenten in een interactieve communicatie worden niet weerspiegeld in de IC-editor. (FORMS-16575)
+* In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, worden sommige berekende waarden niet correct getoond. (FORMS-16603)
+* Wanneer de brief in de Voorproef van de Druk wordt bekeken, wordt de inhoud veranderd. Dat wil zeggen dat sommige spaties verdwijnen en dat bepaalde letters worden vervangen door `x` . (FORMS-15681)
+* Wanneer een gebruiker een instantie WebLogic 14c vormt, ontbreekt de dienst PDFG in AEM Forms Service Pack 21 (6.5.21.0) op JEE die op JBoss® loopt toe te schrijven aan klasseconflicten die de bibliotheek SLF4J impliceren. De fout wordt als volgt weergegeven (CQDOC-22178):
+
+  ```java
+  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
+  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
+  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
+  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
+  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
+  ```
+
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 
@@ -747,10 +739,10 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
+>* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)

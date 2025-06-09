@@ -85,7 +85,7 @@ Om een archetype van AEM te creëren 41 of [ later ](https://github.com/adobe/ae
 
 1. (Alleen voor projecten die zijn gebaseerd op Archetype versie 41) Nadat het AEM Archetype-project is gemaakt, schakelt u thema&#39;s in voor op Core Components gebaseerde Adaptive Forms. Thema&#39;s inschakelen:
 
-   1. Open de ] /ui.apps/src/main/content/jcr_root/apps/__appId__ /components/adaptiveForm/page/customheaderlibs.html van het Project van de Archetype van AEM [.
+   1. Open de &rbrack; /ui.apps/src/main/content/jcr_root/apps/__appId__ /components/adaptiveForm/page/customheaderlibs.html van het Project van de Archetype van AEM &lbrack;.
 
    1. Voeg de volgende code toe op regel 21:
 

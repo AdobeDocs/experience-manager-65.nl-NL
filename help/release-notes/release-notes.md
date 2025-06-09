@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6aacd4454bc8b4b86e07acf7ec22f42ef761c3ae
+source-git-commit: dbee0e382bad460746416dac5206843ed67bdf04
 workflow-type: tm+mt
-source-wordcount: '6724'
+source-wordcount: '6487'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64-bits) 
 
-* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
+* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -215,11 +215,11 @@ Onverwachte `<br>` -tags corrigeren in de RTF-editor met de Plaintext-plakmodus.
 
 ### [!DNL Assets]{#assets-6523}
 
-* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**&#x200B;voor, navigerend aan **[!UICONTROL Search Adobe Stock]**&#x200B;omslag, en het selecteren van een voorraadbeeld:
+* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**voor, navigerend aan **[!UICONTROL Search Adobe Stock]**omslag, en het selecteren van een voorraadbeeld:
    * De geselecteerde voorraadafbeelding kan geen licentie krijgen en worden opgeslagen omdat een leeg vervolgkeuzemenu wordt weergegeven wanneer u op **[!UICONTROL License & Save]** klikt.
    * Als u de Stock-afbeelding selecteert of de URL van de voorraadpagina opnieuw invoert, wordt de startpagina van [!DNL AEM] weergegeven, zodat de Adobe Stock-afbeelding niet toegankelijk is. (ASSETS-48687)
 * Problemen tijdens het beheren van mappen als de naam van de map een `/` bevat in de naam op de navigatiepagina [!DNL AEM] Op locatie (6.5.22.0 ). (ASSETS-46740)
-* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**&#x200B;toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
+* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
 * Problemen met integratie met [!DNL InDesign] als `Day CQ DAM Mime Type OSGI` Service identificeren [!DNL InDesign] bestanden onjuist als `x-adobe-indesign` in plaats van `x-indesign` . (ASSETS-45953)
 * [!DNL AEM 6.5.21] -sessilek komt overeen met de workflowstap uit de box **[!UICONTROL Scheduled publish to Brand Portal]** . (ASSETS-44104)
 * **[!UICONTROL Out of Memory (OOM)]** fouten worden in [!DNL AEM] weergegeven bij het verwerken en publiceren van afbeeldingen. Dit probleem is veroorzaakt door vervangen methoden in workflows, zoals **[!DNL Dam Asset update]** en **[!DNL Dynamic Media: Reprocess assets]** . (ASSETS-43343)
@@ -253,7 +253,7 @@ Probleem verholpen met Dynamic Media - hybride implementaties waarbij updates va
 
 **Download Hybride toe:voegen-op pakket**
 
-De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media &lbrace;** in de Distributie van de Software.
+De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media {** in de Distributie van de Software.
 
 
 ### [!DNL Forms]{#forms-6523}
@@ -473,7 +473,7 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.23.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.23.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -527,7 +527,7 @@ Voor instructies om het Service Pack op Experience Manager Forms te installeren,
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -672,7 +672,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6523}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6523}
 
@@ -705,13 +705,6 @@ Stel vervolgens de volgende omgevingsvariabele in en start de server opnieuw:
    1. Start de AEM-server opnieuw.
 
 * Na het bijwerken aan AEM Forms Service Pack 20 (6.5.20.0) met Forms toe:voegen-On, configuraties die zich op de erfenisDienst van Adobe Analytics Cloud baseren gebruikend op referentie-gebaseerde authentificatieophouden werkend. Hierdoor konden de analyseregels niet correct worden uitgevoerd. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (FORMS-15428)
-
-* Wanneer een gebruiker AEM Forms Service Pack 20 (6.5.20.0) op de JEE server bijwerkt en PDFs gebruikend de outputdiensten produceert, geven PDFs met toegankelijkheidskwesties terug. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3922112)
-* Wanneer een gebruiker gecodeerde PDF&#39;s genereert met de uitvoerservice op JEE, wordt &quot;Onjuiste structuurwaarschuwing&quot; weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2038)
-* Wanneer een formulier wordt verzonden op AEM Forms JEE, worden de instanties van een herhalend XML-element verwijderd uit de gegevens. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-392/2017)
-* Wanneer een gebruiker in een Linux®-omgeving een adaptief formulier (op JEE) rendert in HTML, wordt het formulier niet correct weergegeven. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921957)
-* Wanneer een gebruiker een XTG-bestand in PostScript-indeling converteert met de Output Service op AEM Forms JEE, mislukt dit met de fout: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE` . Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921720)
-* Na upgrade naar AEM Forms Service Pack 18 (6.5.18.0) op de JEE-server, kan een gebruiker een formulier verzenden waardoor HTML5 of PDF forms en XMLFM niet vastlopen. Om hotfix te downloaden en te installeren, verwijs naar [ Hotfixes van Adobe Experience Manager Forms ](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artikel. (LC-3921718)
 * In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, wordt het muntsymbool (zoals het dollarteken $) inconsistent getoond voor alle gebiedswaarden. Deze wordt weergegeven voor waarden tot en met 999, maar ontbreekt voor waarden van 1000 en hoger. (FORMS-16557)
 * Eventuele wijzigingen in de XDP van geneste lay-outfragmenten in een interactieve communicatie worden niet weerspiegeld in de IC-editor. (FORMS-16575)
 * In de Voorproef van de Druk van de Interactieve Communicatie Agent UI, worden sommige berekende waarden niet correct getoond. (FORMS-16603)
@@ -739,10 +732,10 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
+>* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)

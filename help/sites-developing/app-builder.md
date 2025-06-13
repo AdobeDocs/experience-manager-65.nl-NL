@@ -28,7 +28,7 @@ App Builder biedt klanten de mogelijkheid om Adobe Experience Manager in verschi
 
 >[!NOTE]
 >
->Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+>Voor klanten van AEM as a Cloud Service, die App Builder willen gebruiken, zie [ Uitbreidend Adobe Experience Manager as a Cloud Service gebruikend Adobe Developer App Builder ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=nl-NL).
 
 ## Architectuur {#architecture}
 

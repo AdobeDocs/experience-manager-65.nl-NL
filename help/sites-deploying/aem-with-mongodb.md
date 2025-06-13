@@ -595,7 +595,7 @@ Omdat de Dispatcher geen status heeft, kan deze eenvoudig horizontaal worden ges
 
 Als u AEM uitvoert zonder Dispatcher, moet SSL worden afgesloten en moet de taakverdeling door een andere toepassing worden uitgevoerd. Dit is vereist omdat sessies affiniteit moeten hebben met de AEM-instantie waarop ze zijn gemaakt, een concept dat sticky connections wordt genoemd. De reden hiervoor is dat updates van de inhoud minimale vertraging vertonen.
 
-Controleer de [ documentatie van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) voor meer informatie over hoe te om het te vormen.
+Controleer de [ documentatie van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) voor meer informatie over hoe te om het te vormen.
 
 ### Aanvullende configuratie {#additional-configuration}
 

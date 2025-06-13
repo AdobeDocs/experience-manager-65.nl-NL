@@ -101,7 +101,7 @@ De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zi
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Zie [ hoe te om de Dumpen van de Verbinding van een JVM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) documentatie voor meer informatie te nemen
+Zie [ hoe te om de Dumpen van de Verbinding van een JVM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL) documentatie voor meer informatie te nemen
 
 ### Controleren op niet-afgesloten JCR-sessies {#checking-for-unclosed-jcr-sessions}
 
@@ -111,7 +111,7 @@ Wanneer functionaliteit is ontwikkeld voor AEM WCM, kunnen JCR-sessies worden ge
 * U kunt veel van CacheManager zien: resizeAll ingangen in het logboekdossier; het volgende aantal (grootte=&lt;x>) toont het aantal geheime voorgeheugens, elke zitting opent verscheidene geheime voorgeheugens.
 * Van tijd tot tijd heeft het systeem onvoldoende geheugen (na een paar uur, dagen of weken - afhankelijk van de ernst).
 
-Beginnen unclosed zittingen te analyseren, zie het artikel van de Kennisbank [ Unclosed Resolver van het Middel ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Beginnen unclosed zittingen te analyseren, zie het artikel van de Kennisbank [ Unclosed Resolver van het Middel ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### De Adobe Experience Manager-webconsole gebruiken {#using-the-adobe-experience-manager-web-console}
 

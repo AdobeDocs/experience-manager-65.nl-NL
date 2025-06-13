@@ -64,7 +64,7 @@ De volgende locatie in de `/libs` -structuur kan bijvoorbeeld worden bedekt:
 
 >[!NOTE]
 >
->Zie het artikel van de Kennisbank, [ het Oplossen van problemen AEM TouchUI ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
+>Zie het artikel van de Kennisbank, [ het Oplossen van problemen AEM TouchUI ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
 
 ## De standaardweergave voor een console aanpassen {#customizing-the-default-view-for-a-console}
 

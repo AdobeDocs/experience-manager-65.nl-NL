@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Elementsjablonen zijn een speciale klasse elementen die het snel opnieuw gebruiken van visueel rijke inhoud voor digitale media en gedrukte media mogelijk maken. Een activamalplaatje omvat twee delen, de vaste overseinensectie en de editable sectie. De sectie met vaste berichten kan eigen inhoud bevatten, zoals merklogo en copyrightinformatie die zijn uitgeschakeld voor bewerking. De bewerkbare sectie kan visuele en tekstuele inhoud bevatten in velden die kunnen worden bewerkt om berichten aan te passen.
 
-Dankzij de flexibiliteit om beperkte bewerkingen uit te voeren en de globale handtekening te beveiligen, zijn asset templates ideaal voor het maken van bouwstenen voor snelle aanpassing en distributie van inhoud als inhoudsartefacten voor verschillende functies. Door inhoud te hergebruiken, worden de kosten voor het beheer van afdruk- en digitale kanalen verlaagd en kunnen holistische en consistente ervaringen op deze kanalen worden opgedaan.
+Asset-sjablonen bieden de flexibiliteit om beperkte bewerkingen uit te voeren en tegelijkertijd de wereldwijde handtekening veilig te houden. Hierdoor zijn ze ideaal als bouwstenen voor het snel aanpassen en distribueren van inhoud over verschillende functies. Door inhoud te hergebruiken, worden de kosten voor het beheer van afdruk- en digitale kanalen verlaagd en kunnen holistische en consistente ervaringen op deze kanalen worden opgedaan.
 
-Als markeerteken kunt u sjablonen opslaan en beheren binnen [!DNL Experience Manager Assets] en één basissjabloon gebruiken om eenvoudig meerdere persoonlijke afdrukervaringen te maken. U kunt diverse soorten marketing onderpand, met inbegrip van brochures, vliegers, postcards, visitekaartjes, etc. tot stand brengen, om uw marketing bericht aan klanten lucently over te brengen. U kunt ook uitvoer van meerdere pagina&#39;s samenstellen op basis van bestaande of nieuwe afdrukuitvoerbestanden. Met name kunt u tegelijkertijd eenvoudig zowel digitale als afdrukervaringen bieden, zodat gebruikers een consistente, geïntegreerde ervaring hebben.
+Als markeerteken kunt u sjablonen opslaan en beheren binnen [!DNL Experience Manager Assets] en één basissjabloon gebruiken om eenvoudig meerdere persoonlijke afdrukervaringen te maken. U kunt diverse soorten marketing onderpand, met inbegrip van brochures, vliegers, postcards, visitekaartjes, etc. tot stand brengen, om uw marketing bericht aan klanten duidelijk over te brengen. U kunt ook uitvoer van meerdere pagina&#39;s samenstellen op basis van bestaande of nieuwe afdrukuitvoerbestanden. Met name kunt u tegelijkertijd eenvoudig zowel digitale als afdrukervaringen bieden, zodat gebruikers een consistente, geïntegreerde ervaring hebben.
 
 Elementsjablonen zijn meestal [!DNL Adobe InDesign] -bestanden, maar de ervaring in [!DNL Adobe InDesign] vormt geen belemmering voor het maken van stellaire artefacten. U hoeft de velden van uw [!DNL Adobe InDesign] -sjabloon niet toe te wijzen aan productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Als u echter wilt dat [!DNL Adobe InDesign] uw bewerkingswijzigingen verwerkt, moet u [!DNL Experience Manager Assets] eerst configureren voor integratie met [!DNL Adobe InDesign Server] .
 
@@ -67,7 +67,7 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
 ## Een hulpstuk bewerken {#editing-a-collateral}
 
-U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het ook openen vanaf de pagina [!UICONTROL Templates] of de elementpagina.
+U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het bestand ook openen vanaf de pagina [!UICONTROL Templates] of de pagina Element.
 
 1. Voer een van de volgende handelingen uit om het onderpand te openen voor bewerking:
 
@@ -90,7 +90,7 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het ook ope
 
    >[!NOTE]
    >
-   >Zorg ervoor dat uw [!DNL Experience Manager] -implementatie is geïntegreerd met een [!DNL InDesign Server] om [!DNL Experience Manager Assets] in staat te stellen gegevens te extraheren uit de [!DNL InDesign] -sjabloon en deze beschikbaar te maken voor bewerking. Voor details, zie [ Experience Manager Assets met InDesign Server ](/help/assets/indesign.md) integreren.
+   >Integreer uw [!DNL Experience Manager] -implementatie met een [!DNL InDesign Server] zodat [!DNL Experience Manager Assets] gegevens kan extraheren uit de [!DNL InDesign] -sjabloon en deze beschikbaar kan maken voor bewerking. Voor details, zie [ Experience Manager Assets met InDesign Server ](/help/assets/indesign.md) integreren.
 
 1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
 
@@ -124,12 +124,11 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het ook ope
    >
    >Ga als volgt te werk om [!DNL Experience Manager] in te schakelen om afbeeldingen op te lossen:
    >
-   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/nl/indesign/using/graphics-links.html)).
-   >* Koppel [!DNL Experience Manager] aan uw lokale bestandssysteem en wijs vervolgens ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager] .
+   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Koppel [!DNL Experience Manager] aan uw lokale bestandssysteem en wijs de ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager] .
    >
-   >Voor meer informatie rond het werken met [!DNL InDesign] documenten, zie [ beste praktijken om met de documenten van het InDesign in Experience Manager ](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html) te werken.
 
-1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de Acrobat-optie in het dialoogvenster en klikt u op **[!UICONTROL Continue]** .
+1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]** .
 1. Het hulpstuk wordt gecreeerd in de omslag die u met begon. Als u de vertoningen wilt weergeven, opent u het desbetreffende element en kiest u **[!UICONTROL Renditions]** in de lijst GlobalNav.
 
    ![ chlimage_1-118 ](assets/chlimage_1-323.png)
@@ -165,7 +164,7 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het ook ope
 
    ![ chlimage_1-126 ](assets/chlimage_1-331.png)
 
-1. Geef in het scherm [!UICONTROL Configure Template] een naam op voor het element. U kunt desgewenst tags opgeven die u geschikt acht. Selecteer **[!UICONTROL Acrobat (.PDF)]** als u de uitvoer in PDF-indeling wilt exporteren. Standaard wordt het onderpand geëxporteerd in JPG en [!DNL InDesign] -indeling. Klik op **[!UICONTROL Change Thumbnail]** als u de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element wilt wijzigen.
+1. Geef in het scherm [!UICONTROL Configure Template] een naam op voor het element. U kunt desgewenst tags opgeven die u geschikt acht. Selecteer **[!UICONTROL Acrobat (.PDF)]** als u de uitvoer in PDF-indeling wilt exporteren. Standaard wordt het onderpand geëxporteerd in JPG- en [!DNL InDesign] -indeling. Klik op **[!UICONTROL Change Thumbnail]** als u de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element wilt wijzigen.
 
    ![ chlimage_1-127 ](assets/chlimage_1-332.png)
 

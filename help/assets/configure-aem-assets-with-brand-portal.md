@@ -10,9 +10,9 @@ role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
+source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal) |
+| AEM 6.5 | Dit artikel |
 
 Met Adobe Experience Manager Assets Brand Portal kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets naar Brand Portal publiceren en deze aan de Brand Portal-gebruikers distribueren.
 
@@ -43,7 +43,7 @@ AEM Assets is geconfigureerd met Brand Portal via Adobe Developer Console, dat e
 >
 >***slechts voor bestaande klanten***
 >
->De Adobe adviseert dat u de bestaande oudere configuratie van de Gateway OAuth blijft gebruiken. Als u problemen met erfenisconfiguratie OAuth van de Gateway tegenkomt, schrap de bestaande configuratie en creeer een configuratie door middel van Adobe Developer Console.
+>Adobe raadt u aan de bestaande OAuth Gateway-configuratie te blijven gebruiken. Als u problemen met erfenisconfiguratie OAuth van de Gateway tegenkomt, schrap de bestaande configuratie en creeer een configuratie door middel van Adobe Developer Console.
 
 <!--
 This help describes the following two use-cases:
@@ -65,31 +65,31 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 * URL Brand Portal-gebruiker
 * Een gebruiker met systeembeheerdersrechten voor de IMS-organisatie van de Brand Portal-huurder
 
-[Download en installeer AEM 6.5](#aemquickstart)
+[AEM 6.5 downloaden en installeren](#aemquickstart)
 
 [Download en installeer de nieuwste AEM Service Pack](#servicepack)
 
-### Download en installeer AEM 6.5 {#aemquickstart}
+### AEM 6.5 downloaden en installeren {#aemquickstart}
 
-Het wordt aanbevolen AEM 6.5 te hebben om een AEM instantie Auteur in te stellen. Als u niet AEM, download het van de volgende plaatsen:
+Het wordt aanbevolen om AEM 6.5 te hebben om een AEM Author-instantie in te stellen. Als AEM niet actief is, kunt u het downloaden van de volgende locaties:
 
-* Als u een bestaande AEM klant bent, download AEM 6.5 van de [ vergunningswebsite van de Adobe ](https://licensing.adobe.com).
+* Als u een bestaande klant van AEM bent, download AEM 6.5 van de [ Adobe Vergunnende website ](https://licensing.adobe.com).
 
-* Als u een partner van de Adobe bent, gebruik het [ Programma van de Opleiding van de Partner van de Adobe ](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.5 te verzoeken.
+* Als u een Adobe-partner bent, gebruikt u het Adobe Partner Training Program om AEM 6.5 aan te vragen.
 
-Nadat u AEM, voor instructies aan opstelling een AEM instantie van de Auteur downloadt, zie [ het opstellen en het handhaven van ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=nl-NL#default-local-install).
+Nadat u AEM downloadt, voor instructies aan opstelling een instantie van de Auteur van AEM, zie [ het opstellen en het handhaven ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy#default-local-install).
 
-### Download en installeer AEM nieuwste Service Pack {#servicepack}
+### Download en installeer AEM latest Service Pack {#servicepack}
 
-Voor gedetailleerde instructies, zie de huidige [ AEM 6.5 Nota&#39;s van de Versie van het Pak van de Dienst ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=nl-NL).
+Voor gedetailleerde instructies, zie de huidige [ AEM 6.5 Nota&#39;s van de Versie van het Pak van de Dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes).
 
-**de Steun van de Klant van de Adobe van het Contact** als u niet het recentste AEM pakket of Service Pack kunt vinden.
+**contacteer de Klantenondersteuning van Adobe** als u niet het recentste pakket van AEM of Service Pack kunt vinden.
 
 ## Configuratie maken {#configure-new-integration-65}
 
 >[!NOTE]
 >
->U kunt vanaf juni 2024 geen nieuwe JWT-referenties maken. Voortaan worden alleen OAuth-referenties gemaakt. Zie meer creërend een configuratie OAuth.
+>U kunt vanaf juni 2024 geen nieuwe JWT-referenties maken. Voortaan worden alleen OAuth-referenties gemaakt. Zie meer bij het creëren van een configuratie OAuth.
 
 Voor het configureren van AEM Assets met Brand Portal zijn configuraties vereist in zowel de AEM Assets Author-instantie als de Adobe Developer Console.
 
@@ -123,11 +123,11 @@ Voer de volgende stappen in de opgegeven reeks uit om Experience Manager Assets 
 
 #### De OAuth-referenties configureren in de Adobe Developer Console {#config-oauth}
 
-[ vorm de geloofsbrieven OAuth in Adobe Developer Console ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) en selecteer Brand Portal API.
+[ vorm de geloofsbrieven OAuth in Adobe Developer Console ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) en selecteer Brand Portal API.
 
 #### Nieuwe Adobe IMS-integratie maken met OAuth {#create-ims-account-configuration}
 
-[ creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) en selecteer Brand Portal van de drop down.
+[ creeer een nieuwe Integratie van Adobe IMS gebruikend OAuth ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) en selecteer Brand Portal van drop-down.
 
 #### Cloudservice configureren {#configure-cloud-service}
 
@@ -370,20 +370,20 @@ To configure the IMS account:
    >
    >Avoid disabling any of the replication agents, as it can cause the replication of the assets (running-in-queue) to fail.
    >
-   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=nl-NL#connection-timeout).
+   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
    >
    >Do not modify any autogenerated settings.
 
 You can now:
 
 * [Publish assets from AEM Assets to Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=nl-NL) - Asset Sourcing in Brand Portal 
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal 
 * [Publish folders from AEM Assets to Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publish collections from AEM Assets to Brand Portal](../assets/brand-portal-publish-collection.md) 
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=nl-NL)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=nl-NL)
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=nl-NL) for more information.
+See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 -->
 <!--

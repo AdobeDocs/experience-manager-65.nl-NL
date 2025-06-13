@@ -8,10 +8,10 @@ role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '5593'
-ht-degree: 3%
+source-wordcount: '5619'
+ht-degree: 2%
 
 ---
 
@@ -19,22 +19,22 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets) |
+| AEM 6.5 | Dit artikel |
 
-[!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het detecteren van elementen die u helpen een hogere snelheid van de inhoud te bereiken. Uw teams kunnen tijd aan markt met naadloze, intelligente onderzoekservaring verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via de gebruikersinterface van [!DNL Assets] of andere apps en oppervlakken helpen deze gebruiksgevallen te verhelpen.
+[!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het detecteren van elementen die u helpen een hogere snelheid van de inhoud te bereiken. Uw teams kunnen tijd aan markt met een naadloze, intelligente onderzoekservaring verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via de gebruikersinterface van [!DNL Assets] of andere apps en oppervlakken helpen deze gebruiksgevallen te verhelpen.
 
 [!DNL Experience Manager Assets] steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
 | Middelen zoeken | Zoekfuncties configureren en beheren | Werken met zoekresultaten |
 |---|---|---|
 | [ Basisonderzoeken ](#searchbasics) | [ index van het Onderzoek ](#searchindex) | [ de resultaten van de Soort ](#sort) |
-| [ Begrijp onderzoek UI ](#searchui) | [ Visuele of gelijkenis onderzoek ](#configvisualsearch) | [ de eigenschappen en meta-gegevens van de Controle van activa ](#checkinfo) |
+| [ Begrijp onderzoek UI ](#searchui) | [ Visuele of gelijkenis onderzoek ](#configvisualsearch) | [ Controle de eigenschappen en de meta-gegevens van een activa ](#checkinfo) |
 | [ suggesties van het Onderzoek ](#searchsuggestions) | [ Verplichte meta-gegevens ](#mandatorymetadata) | [ Download ](#download) |
 | [ begrijp onderzoeksresultaten en gedrag ](#searchbehavior) | [ wijzig onderzoeksfacetten ](#searchfacets) | [ Bulk meta-gegevensupdates ](#metadataupdates) |
 | [ rang van het Onderzoek en het opvoeren ](#searchrank) | [ extractie van de Tekst ](#extracttextupload) | [ Slimme inzamelingen ](#collections) |
 | [ Geavanceerd onderzoek: het filtreren en werkingsgebied van onderzoek ](#scope) | [ de Voorspelden van de Douane ](#custompredicates) | [ begrijp en los onverwachte resultaten ](#unexpected-results) problemen op |
-| [ Onderzoek van andere oplossingen en apps ](#search-assets-other-surfaces):<ul><li>[ de Verbinding van Activa van de Adobe ](#aal)</li><li>[ Brand Portal ](#brand-portal)</li><li>[ Desktop app van de Experience Manager ](#desktop-app)</li><li>[ de beelden van Adobe Stock ](#adobe-stock)</li><li>[ de activa van Dynamic Media ](#dynamic-media)</li></ul> | | |
+| [ Onderzoek van andere oplossingen en apps ](#search-assets-other-surfaces):<ul><li>[ de Verbinding van Activa van Adobe ](#aal)</li><li>[ Brand Portal ](#brand-portal)</li><li>[ Experience Manager Desktop app ](#desktop-app)</li><li>[ de beelden van Adobe Stock ](#adobe-stock)</li><li>[ Dynamische activa van Media ](#dynamic-media)</li></ul> | | |
 | [ selecteur van Activa ](#asset-picker) | | |
 | [ Beperkingen ](#limitations) en [ Uiteinden ](#tips) | | |
 | [ Afgedrukte voorbeelden ](#samples) | | |
@@ -88,7 +88,7 @@ Standaard worden in [!DNL Experience Manager] de zoektermen gecombineerd met een
 * `woman-running`
 
 De query `woman -running` retourneert echter elementen zonder `running` in de metagegevens.
-Als u Slimme tags gebruikt, wordt een extra `OR` -component toegevoegd om een zoekterm te zoeken als de toegepaste slimme tags. Een element dat is gelabeld met `woman` of `running` met slimme tags, wordt ook weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Als u slimme tags gebruikt, voegt u een extra `OR` -component toe om een zoekterm te zoeken als de toegepaste slimme tags. Een element dat is gelabeld met `woman` of `running` en dat slimme tags gebruikt, wordt ook weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
 * Assets met `woman` en `running` trefwoorden in de metagegevens (standaardgedrag).
 
@@ -101,7 +101,7 @@ Wanneer u trefwoorden begint te typen, stelt [!DNL Experience Manager] de mogeli
 * Elementlabels. (afbeeldingen `jcr:content/metadata/cq:tags` )
 * Titel van element. (afbeeldingen `jcr:content/metadata/dc:title` )
 * Beschrijving van element. (afbeeldingen `jcr:content/metadata/dc:description` )
-* Titel in de gegevensopslagruimte van het JCR. De waarde wordt mogelijk toegewezen aan de titel van het element. (afbeeldingen `jcr:content/jcr:title` )
+* Titel in de gegevensopslagruimte van het JCR. De waarde wordt mogelijk toegewezen aan de titel Element. (afbeeldingen `jcr:content/jcr:title` )
 * Beschrijving in de gegevensopslagruimte van de JCR. De waarde wordt mogelijk toegewezen aan de beschrijving van het element. (afbeeldingen `jcr:content/jcr:description` )
 
 Als u suggesties voor meerdere zoektrefwoorden wilt ontvangen, blijft u alle trefwoorden typen zonder een suggestie voor één trefwoord te selecteren.
@@ -124,9 +124,9 @@ U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoeko
 1. Geef in het vak **[!UICONTROL Search Promote]** een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik vervolgens op **[!UICONTROL Add]** . U kunt meerdere trefwoorden op dezelfde manier opgeven.
 1. Klik op **[!UICONTROL Save & Close]**. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
 
-U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Voor gedetailleerde info, zie [ onderzoek in  [!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL).
+U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Voor gedetailleerde info, zie [ onderzoek in  [!DNL Experience Manager] ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
->[!VIDEO](https://video.tv.adobe.com/v/3444067/?quality=6&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: Begrijp hoe de onderzoeksresultaten gerangschikt zijn en hoe de rang kan worden beïnvloed.*
 
@@ -154,7 +154,7 @@ Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker gesel
 
 Van binnen het [!DNL Experience Manager] gebruikersinterface, kunnen de gebruikers [ activa van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md) zoeken en de vereiste activa vergunning geven. Voeg `Location: Adobe Stock` toe in de balk Zoeken. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer.
 
-### Dynamic Media-middelen {#dmassets}
+### Dynamische media-elementen {#dmassets}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filter en toont activa zoals beeldreeksen, carrousels, gemengde media reeksen, en spin reeksen.
 
@@ -169,7 +169,7 @@ U kunt zoeken naar digitale elementen op basis van exacte waarden van metagegeve
 | Locatie | locatie:NA |
 | Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
 | Gereedschap Maker | creatortool:&quot;Adobe Photoshop&quot; |
-| Copyrighteigenaar | copyrightowner:&quot;Adobe Systems&quot; |
+| Copyrighteigenaar | copyrightowner:&quot;Adobe Inc&quot; |
 | Medewerker | contribuant:John |
 | Gebruiksvoorwaarden | usageterms:&quot;CopyRights Reserved&quot; |
 | Gemaakt | gemaakt:YYYY-MM-DDTHH |
@@ -178,7 +178,7 @@ U kunt zoeken naar digitale elementen op basis van exacte waarden van metagegeve
 | Uit-tijd | offtime:YYYY-MM-DDTHH |
 | Tijdsbereik (verloopt dateontime, offtime) | facet field : lowerbound..bovenaan |
 | Pad | /content/dam/&lt;naam map> |
-| PDF-titel | pdftitle:&quot;Document Adoben&quot; |
+| PDF-titel | pdftitle:&quot;Adobe-document&quot; |
 | Onderwerp | onderwerp: &quot;Opleiding&quot; |
 | Tags | tags:&quot;Locatie en reizen&quot; |
 | Type | type:&quot;image\png&quot; |
@@ -201,23 +201,23 @@ Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 * Elementen weergeven waarvan de eigenschapswaarden beginnen met een specifieke tekenreeks (bijvoorbeeld: title is Scott Reynolds): `title:Scott*`
 * Elementen met eigenschapswaarden die eindigen met een specifieke tekenreeks (bijvoorbeeld: title is Scott Reynolds) weergeven: `title:*Reynolds`
 * Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: title = Basel Meeting Room): `title:*Meeting*`
-* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoeken naar Adobe van tekenreeks in elementen met de naam title=Jan Smit): `*Adobe* title:"John Doe"`
+* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoeken naar tekenreeks Adobe in elementen met de naam title=Jan Smit): `*Adobe* title:"John Doe"`
 
 ## Digitale elementen zoeken vanuit andere [!DNL Experience Manager] -aanbiedingen of -interfaces {#search-assets-other-surfaces}
 
-[!DNL Adobe Experience Manager] maakt een verbinding tussen DAM-opslagplaats en verschillende andere [!DNL Experience Manager] -oplossingen om sneller toegang te krijgen tot digitale middelen en de creatieve workflows te stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige zoekmethoden veranderen als het doelpubliek, de gebruiksgevallen en de gebruikersinterface voor de [!DNL Experience Manager] -oplossingen. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
+[!DNL Adobe Experience Manager] verbindt de DAM-opslagplaats met verschillende andere [!DNL Experience Manager] -oplossingen om snellere toegang tot digitale middelen te bieden en de creatieve workflows te stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige zoekmethoden veranderen als het doelpubliek, de gebruiksgevallen en de gebruikersinterface voor de [!DNL Experience Manager] -oplossingen. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
 
-### Digitale elementen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
+### Digitale middelen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
 
-Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets] zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve personen kunnen naadloos door elementen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de apps: [!DNL Adobe Photoshop] , [!DNL Adobe Illustrator] en [!DNL Adobe InDesign] . [!DNL Adobe Creative Cloud] Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [ onderzoek en doorblader activa ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) gebruikend de Verbinding van Activa van de Adobe.
+Creatieve professionals kunnen nu met Adobe Asset Link toegang krijgen tot inhoud die is opgeslagen in [!DNL Experience Manager Assets] zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve personen kunnen naadloos door elementen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de apps: [!DNL Adobe Photoshop] , [!DNL Adobe Illustrator] en [!DNL Adobe InDesign] . [!DNL Adobe Creative Cloud] Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [ onderzoek en doorblader activa ](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) gebruikend de Verbinding van Activa van Adobe.
 
 ### Digitale middelen zoeken in de [!DNL Experience Manager] bureaubladtoepassing {#desktop-app}
 
-Creatieve professionals gebruiken de desktop-app om [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar en beschikbaar te maken op hun lokale bureaublad (Win of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt standaardzoekopdrachten met een of meer trefwoorden, `*` en `?` jokertekens en `AND` operator. Zie [ doorbladeren, onderzoek, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets) in Desktop app.
+Creative-professionals gebruiken de bureaubladtoepassing om de [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar te maken en beschikbaar te maken op hun lokale bureaublad (Win of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt standaardzoekopdrachten met een of meer trefwoorden, `*` en `?` jokertekens en `AND` operator. Zie [ doorbladeren, onderzoek, en voorproefactiva ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) in Desktop app.
 
 ### Digitale middelen zoeken in [!DNL Brand Portal] {#brand-portal}
 
-Line-of-business gebruikers en marketers gebruiken Brand Portal om de goedgekeurde digitale middelen efficiënt en veilig te delen met hun uitgebreide interne teams, partners en wederverkopers. Zie [ onderzoeksactiva op Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=nl-NL).
+Line-of-business gebruikers en marketers gebruiken Brand Portal om de goedgekeurde digitale middelen efficiënt en veilig te delen met hun uitgebreide interne teams, partners en wederverkopers. Zie [ onderzoeksactiva op Brand Portal ](https://experienceleague.adobe.com/en/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
 
 ### [!DNL Adobe Stock] afbeeldingen zoeken {#adobe-stock1}
 
@@ -239,7 +239,7 @@ De zoekfunctie van [!DNL Experience Manager] ondersteunt het zoeken naar verzame
 
 >[!NOTE]
 >
->De selecteur van activa werd genoemd [ activa plukker ](https://helpx.adobe.com/nl/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Adobe Experience Manager].
+>De activa selecteur werd genoemd [ activa plukker ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) in vroegere versies van [!DNL Adobe Experience Manager].
 
 Met de functie Asset Selector kunt u de DAM-middelen op een speciale manier zoeken, filteren en doorbladeren. Asset Selector is beschikbaar via `https://[aem_server]:[port]/aem/assetpicker.html` . U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
 
@@ -257,7 +257,7 @@ Geef de volgende aanvraagparameters in een URL door om de elementenkiezer in een
 | `assettype` | Afbeeldingen, documenten, multimedia, archieven. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Gebruik de optie om elementtypen te filteren op basis van de opgegeven waarde. |
 | `mimetype` | MIME-type (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Gebruik deze optie om elementen te filteren op basis van het MIME-type. |
 
-Ga naar `https://[aem_server]:[port]/aem/assetpicker` als u de interface van de elementenkiezer wilt openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
+Ga naar `https://[aem_server]:[port]/aem/assetpicker` als u de interface van de elementenkiezer wilt openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook zoeken naar het gewenste element in het vak Onderzoek, het filter toepassen zoals is vereist en het vervolgens selecteren.
 
 ![ doorbladert en selecteert activa in de activaselecteur ](assets/assetpicker.png)
 
@@ -276,7 +276,7 @@ De zoekfunctie in [!DNL Experience Manager Assets] heeft de volgende beperkingen
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
 * Het visuele onderzoek werkt het best met een grote bewaarplaats. Hoewel er geen minimaal aantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen minder goed dan de overeenkomsten met een grote opslagplaats.
-* U kunt het model of de training [!DNL Experience Manager] niet wijzigen om vergelijkbare afbeeldingen te zoeken. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden wel uitgesloten van de visueel vergelijkbare zoekresultaten.
+* U kunt het model of de training [!DNL Experience Manager] niet wijzigen om vergelijkbare afbeeldingen te zoeken. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden uitgesloten van de visueel vergelijkbare zoekresultaten.
 
 De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#39;s:
 
@@ -285,7 +285,7 @@ De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#
 ## Zoektips {#tips}
 
 * Gebruik bij het controleren van de revisiestatus van de middelen de juiste optie om te bepalen welke middelen zijn goedgekeurd of welke activa nog moeten worden goedgekeurd.
-* Gebruik de Insights-voorspelling om te zoeken naar ondersteunde middelen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd onder Gebruiksscore, Impressies, Klikken en Mediakanalen waar de elementen categorieën weergeven.
+* Gebruik de Insights-voorspelling om te zoeken naar ondersteunde middelen op basis van hun gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd onder Gebruiksscore, Impressies, Klikken en Mediakanalen waar de elementen categorieën weergeven.
 * Schakel het selectievakje **[!UICONTROL Select All]** in om de gezochte elementen te selecteren. In [!DNL Experience Manager] worden in eerste instantie 100 elementen weergegeven in de kaartweergave en 200 elementen in de lijstweergave. Er worden meer elementen geladen wanneer u door de zoekresultaten schuift. U kunt meer elementen selecteren dan de geladen elementen. Het aantal geselecteerde elementen wordt in de rechterbovenhoek van de pagina met zoekresultaten weergegeven. U kunt de selectie bijvoorbeeld activeren door de geselecteerde elementen te downloaden, de eigenschappen van metagegevens voor de geselecteerde elementen bulksgewijs bij te werken of de geselecteerde elementen aan een verzameling toe te voegen. Wanneer er meer elementen zijn geselecteerd dan worden weergegeven, wordt een actie toegepast op alle geselecteerde elementen of wordt in een dialoogvenster het aantal elementen weergegeven waarop de actie wordt toegepast. Als u een handeling wilt toepassen op de elementen die niet zijn geladen, moet u ervoor zorgen dat alle elementen expliciet zijn geselecteerd.
 * Om naar activa te zoeken die niet de verplichte meta-gegevens bevatten, zie [ verplichte meta-gegevens ](#mandatorymetadata).
 * Zoeken gebruikt alle metagegevensvelden. Een generieke zoekopdracht, zoals zoeken naar 12, retourneert doorgaans veel resultaten. Voor betere resultaten gebruikt u dubbele (geen enkele) aanhalingstekens of zorgt u ervoor dat het getal aangrenzend is aan een woord zonder speciaal teken (bijvoorbeeld `shoe12` ).
@@ -339,7 +339,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ### Indexconfiguraties zoeken {#searchindex}
 
-Asset Discovery is afhankelijk van indexering van de DAM-inhoud, inclusief de metagegevens. Snellere en nauwkeurige detectie van bedrijfsmiddelen is afhankelijk van geoptimaliseerde indexering en geschikte configuraties. Zie [ onderzoeksindex ](/help/assets/performance-tuning-guidelines.md#search-indexes), [ vragen en het indexeren ](/help/sites-deploying/queries-and-indexing.md), en [ beste praktijken ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Asset Discovery is afhankelijk van indexering van de DAM-inhoud, inclusief de metagegevens. Snellere en nauwkeurige detectie van bedrijfsmiddelen is afhankelijk van geoptimaliseerde indexering en geschikte configuraties. Zie [ onderzoeksindex ](/help/assets/performance-tuning-guidelines.md#search-indexes), [ Oak vragen en het indexeren ](/help/sites-deploying/queries-and-indexing.md), en [ beste praktijken ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 Gebruik de eigenschap `excludedPath` in de Lucene-index om specifieke elementen uit te sluiten van zoekresultaten.
 
@@ -365,11 +365,11 @@ Bij visueel zoeken worden slimme tags gebruikt. Voer de volgende stappen uit nad
    Sla de wijzigingen op.
 
 1. Open `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` en voeg `similarityTags` eigenschap van het type `Boolean` toe met de waarde van `true` .
-1. Pas slimme tags toe op de elementen in de [!DNL Experience Manager] -opslagplaats. Zie [ hoe te om slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=nl-NL#configuring) te vormen.
+1. Pas slimme tags toe op de elementen in de [!DNL Experience Manager] -opslagplaats. Zie [ hoe te om slimme markeringen ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/tagging#configuring) te vormen.
 1. In CRXDE stelt u in het knooppunt `/oak-index/damAssetLucene` de eigenschap `reindex` in op `true` . Sla de wijzigingen op.
 1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het knooppunt `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items` . Sla de wijzigingen op.
 
-Voor verwante informatie, zie [ slimme markeringen in Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=nl-NL) begrijpen en [ hoe te om slimme markeringen ](/help/assets/enhanced-smart-tags.md) te beheren.
+Voor verwante informatie, zie [ slimme markeringen in Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags) begrijpen en [ hoe te om slimme markeringen ](/help/assets/enhanced-smart-tags.md) te beheren.
 
 >[!CAUTION]
 >
@@ -387,7 +387,7 @@ Zakelijke gebruikers, beheerders of DAM-bibliotheken kunnen bepaalde metagegeven
 
 U kunt [!DNL Experience Manager] zo configureren dat de tekst uit de elementen wordt gehaald wanneer gebruikers elementen uploaden, zoals PSD- of PDF-bestanden. [!DNL Experience Manager] indexeert de geëxtraheerde tekst en helpt gebruikers deze elementen te doorzoeken op basis van de geëxtraheerde tekst. Zie [ activa ](/help/assets/manage-assets.md#uploading-assets) uploaden.
 
-Als de tekstextractie te middel-intensief voor uw plaatsing wordt, overweeg [ onbruikbaar makend tekstextractie ](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
+Als de tekstextractie te hulpbronnenintensief wordt voor uw implementatie, kunt u de tekstextractie uitschakelen.
 
 ### Aangepaste voorspelling van filterzoekresultaten {#custompredicates}
 
@@ -400,7 +400,7 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 | MIME-typen | Afbeeldingen, Documenten, Multimedia, Archieven of Overige. |
 | Laatst gewijzigd | Uur, Dag, Week, Maand of Jaar. |
 | Bestandsgrootte | Klein, Medium of Groot |
-| Publish-status | Gepubliceerd of Niet gepubliceerd. |
+| Status publiceren | Gepubliceerd of Niet gepubliceerd. |
 | Goedgekeurde status | Goedgekeurd of geweigerd. |
 | Afdrukstand | Horizontaal, Verticaal of Vierkant. |
 | Stijl | Kleur, of Zwart-wit. |
@@ -429,7 +429,7 @@ U kunt de volgende handelingen uitvoeren met de elementen die u hebt gezocht in 
 
 U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten alleen sorteren in de lijstweergave en als u **[[!UICONTROL Files]](#searchui)** in het deelvenster **[!UICONTROL Filters]** selecteert. [!DNL Assets] gebruikt sorteren op de server om snel alle elementen (hoe talrijk ook) in een map of resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensionen, Grootte, Classificatie, Gebruik, Gemaakt, Gewijzigd, Gepubliceerd, Workflow en Uitgecheckt.
+In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensies, Grootte, Classificatie, Gebruik, Gemaakt, Gewijzigd, Gepubliceerd, Workflow en Uitgecheckt.
 
 Voor beperkingen van soortfunctionaliteit, zie [ beperkingen ](#limitations).
 
@@ -439,7 +439,7 @@ Op de pagina met zoekresultaten kunt u gedetailleerde informatie over een doorzo
 
 Als u alle metagegevens van een element wilt weergeven, selecteert u het element en klikt u op **[!UICONTROL properties]** in de werkbalk.
 
-Als u de opmerkingen over een asset of de versiegeschiedenis van een asset wilt controleren, klikt u op de asset om een voorvertoning op grote grootte te openen. Open de tijdlijn in het linkerspoor en selecteer **[!UICONTROL Comments]** of **[!UICONTROL Versions]**. U kunt de tijdlijnactiviteit zoals opmerkingen of versies ook in chronologische volgorde sorteren.
+Als u de opmerkingen over een element of de versiegeschiedenis van een element wilt controleren, klikt u op het element om een voorvertoning op grote grootte te openen. Open de tijdlijn in de linkertrack en selecteer **[!UICONTROL Comments]** of **[!UICONTROL Versions]** . U kunt de tijdlijnactiviteit zoals opmerkingen of versies ook in chronologische volgorde sorteren.
 
 ![ de chronologieingangen van de Soort voor een onderzoeksactiva ](assets/sort_timeline_search_results.gif)
 
@@ -485,13 +485,13 @@ Verwante en losse elementen die in de zoekresultaten worden weergegeven. Selecte
 | Onverwante of gedeeltelijk verwante zoekresultaten. | Wijzigingen in zoekgedrag met slimme tags. | Begrijp [ hoe het onderzoek na slim etiketteren ](#withsmarttags) verandert. |
 | Geen suggesties voor automatisch aanvullen van elementen. | Nieuw geüploade elementen zijn nog niet geïndexeerd. De metagegevens zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk typt. | [!DNL Experience Manager] wacht tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegt de metagegevens vervolgens toe aan de lijst met suggesties. |
 | Geen zoekresultaten. | <ul><li>Assets die overeenkomt met uw query, bestaat niet. </li><li> Whitespace toegevoegd vóór de zoekquery. </li><li> Niet-ondersteund metagegevensveld bevat het trefwoord waarnaar u hebt gezocht.</li><li> Zoeken tijdens offline uitvoering van een element. </li></ul> | <ul><li>Zoeken met een ander trefwoord. U kunt ook slim labelen of zoeken op basis van gelijkenis gebruiken om de zoekresultaten te verbeteren. </li><li>[ Bekende beperking ](#limitations).</li><li>Niet alle metagegevensvelden worden in aanmerking genomen voor zoekopdrachten. Zie [ werkingsgebied ](#scope).</li><li>Later zoeken of on-time en off-time wijzigen voor de vereiste elementen.</li></ul> |
-| Zoekfilter of voorspelling is niet beschikbaar. | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen beschikbaar zijn of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de [!DNL Assets] -implementatie die u gebruikt.</li></ul> |
+| Er is geen zoekfilter of voorspelling beschikbaar. | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing die u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen al dan niet beschikbaar zijn.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de [!DNL Assets] -implementatie die u gebruikt.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding. | <ul><li>Afbeelding is niet beschikbaar in [!DNL Experience Manager] .</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan [!DNL Assets] .</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven. | Visuele zoekfunctionaliteit. | In [!DNL Experience Manager] worden zoveel mogelijk relevante elementen weergegeven. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
 | Wanneer u zoekresultaten selecteert en gebruikt, wordt niet op alle gezochte elementen ingegaan. | Met de optie [!UICONTROL Select All] selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. | |
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager]  gids van de onderzoeksimplementatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=nl-NL)
->* [ Geavanceerde configuratie om onderzoeksresultaten ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=nl-NL) op te voeren
->* [ vorm slimme vertaalonderzoek ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
+>* [[!DNL Experience Manager]  gids van de onderzoeksimplementatie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* [ Geavanceerde configuratie om onderzoeksresultaten ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost) op te voeren
+
